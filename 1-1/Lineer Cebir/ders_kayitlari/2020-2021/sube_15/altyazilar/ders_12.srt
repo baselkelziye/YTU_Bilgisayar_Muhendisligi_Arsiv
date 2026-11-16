@@ -1,0 +1,1535 @@
+1
+00:09:51,604 --> 00:09:53,364
+Good morning everyone, can you hear me?
+
+2
+00:10:04,244 --> 00:11:34,244
+Bu, bu
+
+3
+00:11:34,244 --> 00:11:51,144
+And dimensional vector space and two ordinate bases of this vector space. Let me write here two ordinate bases for the given vector space. In each space, sorry, sorry, sorry, sorry, sorry, sorry.
+
+4
+00:11:51,144 --> 00:12:04,644
+Just let me have a vector space and dimensional vector space and a basis, an order of bases for this space and W be any vector in this space. Okay.
+
+5
+00:12:06,104 --> 00:12:17,204
+Since V1, V2, Vm are linearly independent and V is a basis for vector space V, any vector in V can be written as a linear combination of the element, base element.
+
+6
+00:12:17,204 --> 00:12:32,403
+So we can write as a linear combination, we can write W as a linear combination of base elements. We can solve X1, X2, Xn uniquely because V1, V2, Vm are linearly independent.
+
+7
+00:12:32,403 --> 00:12:49,504
+So this non-homogeneous system has a unique solution. Okay. We can solve X1, X2, Xn. And in general for X, Y, Z or X1, X2, Xn in the, let me write for a general vector.
+
+8
+00:12:49,504 --> 00:13:19,504
+Let me write Y1, Y1, Y2, Y1
+
+9
+00:13:19,504 --> 00:13:32,183
+with respect to a given base. Let's write here W sub B will be equal to X1, X2, XN.
+
+10
+00:13:32,183 --> 00:13:48,663
+Okay. This vector is called coordinate vector of W with respect to B. In the first place W in B given the coordinate of W in B given with respect to standard bases of B.
+
+11
+00:13:48,663 --> 00:13:50,344
+Okay. Standard bases.
+
+12
+00:13:50,344 --> 00:13:50,663
+Okay.
+
+13
+00:13:55,700 --> 00:14:24,580
+What is standard basis of v? Let's say b0. The elements of standard basis are e1, e2, e sub n. Here e sub i is a vector, just i coordinate is one and all the other
+
+14
+00:14:30,995 --> 00:14:33,316
+Koordinates, R0. Okay.
+
+15
+00:14:36,515 --> 00:14:44,115
+This is a special base for a vector space. For any vector space, we have a standard basis.
+
+16
+00:14:44,115 --> 00:14:54,755
+The length of each vector in the standard base is one and we say these vectors as unit vectors and for different ij.
+
+17
+00:14:59,283 --> 00:15:06,283
+İnanar
+
+18
+00:15:06,283 --> 00:15:08,283
+Bu bazı
+
+19
+00:15:08,283 --> 00:15:11,283
+Orthonormal
+
+20
+00:15:11,283 --> 00:15:12,283
+Bazı
+
+21
+00:15:12,283 --> 00:15:13,283
+Vector
+
+22
+00:15:13,283 --> 00:15:14,283
+Spaces
+
+23
+00:15:14,283 --> 00:15:15,283
+Bazı
+
+24
+00:15:15,283 --> 00:15:17,283
+Vector
+
+25
+00:15:17,283 --> 00:15:18,283
+J
+
+26
+00:15:18,283 --> 00:15:19,283
+Ok
+
+27
+00:15:19,283 --> 00:19:21,284
+İ
+
+28
+00:19:01,140 --> 00:19:05,740
+We solve for general form of vectors in R3.
+
+29
+00:19:06,080 --> 00:19:07,720
+We find x1, x2, x3.
+
+30
+00:19:10,120 --> 00:19:12,120
+By means of x, y, z.
+
+31
+00:19:12,120 --> 00:19:21,020
+And then we will replace x by 1, y by 2 and z by 3 to find the coordinate vector of W.
+
+32
+00:19:21,360 --> 00:19:21,480
+Okay.
+
+33
+00:19:22,720 --> 00:19:25,840
+So the coordinate vector of W.
+
+34
+00:19:25,840 --> 00:19:34,200
+Here, as a metric, we give the general solution for the coordinate vector in R3.
+
+35
+00:19:34,280 --> 00:19:36,920
+But you need not to follow this way.
+
+36
+00:19:36,920 --> 00:19:42,480
+You can just find for vector 1, 2, 3 for vector W.
+
+37
+00:19:42,800 --> 00:19:51,400
+So the coordinate vector of W here is just minus 2, 0 and 3 with respect to given basis.
+
+38
+00:19:51,800 --> 00:19:52,040
+Okay.
+
+39
+00:19:52,220 --> 00:19:53,019
+This is the coordinate.
+
+40
+00:19:53,140 --> 00:19:54,440
+And this vector is unique.
+
+41
+00:19:54,440 --> 00:20:01,680
+This identify uniquely vector W with respect to given basis.
+
+42
+00:20:02,300 --> 00:20:02,540
+Okay.
+
+43
+00:20:03,560 --> 00:20:16,400
+Now, if you have a vector space and two different ordered basis, then how we can transform a vector
+
+44
+00:20:16,400 --> 00:20:19,560
+from first space to the second space?
+
+45
+00:20:19,800 --> 00:20:20,060
+Okay.
+
+46
+00:20:20,940 --> 00:20:22,700
+Now we can do this process.
+
+47
+00:20:22,700 --> 00:20:27,960
+So we can do this by change of basis or base transition matrix.
+
+48
+00:20:28,200 --> 00:20:38,820
+I want to give a special example, an explicit, small example in order to give the main motivation
+
+49
+00:20:38,820 --> 00:20:39,720
+behind this fact.
+
+50
+00:20:39,720 --> 00:20:40,019
+Okay.
+
+51
+00:20:40,019 --> 00:20:55,500
+Let's see.
+
+52
+00:20:55,500 --> 00:20:56,500
+Okay.
+
+53
+00:20:56,500 --> 00:20:56,740
+Let's see.
+
+54
+00:20:56,740 --> 00:20:58,740
+Okay.
+
+55
+00:20:58,740 --> 00:21:00,740
+This is our y-axis and here we have x-axis.
+
+56
+00:21:00,740 --> 00:21:01,740
+Let's.
+
+57
+00:21:01,740 --> 00:21:06,880
+We have standard phases for this.
+
+58
+00:21:06,880 --> 00:21:08,500
+Coordinate system.
+
+59
+00:21:08,500 --> 00:21:15,740
+Let me write here e1 as 0,1 and here e sub 2 as 1,0.
+
+60
+00:21:15,740 --> 00:21:19,880
+This is the element of standard phases.
+
+61
+00:21:19,880 --> 00:21:20,880
+Let's say d1.
+
+62
+00:21:24,220 --> 00:21:30,380
+e1 equal to 1,0 and e2 will be 0,1.
+
+63
+00:21:30,380 --> 00:21:31,380
+Okay.
+
+64
+00:21:31,380 --> 00:21:37,500
+And that we have here a square in this vector space.
+
+65
+00:21:37,500 --> 00:21:40,500
+this coordinate or.
+
+66
+00:21:40,500 --> 00:21:42,500
+It will be 1,1.
+
+67
+00:21:42,500 --> 00:21:43,500
+Okay.
+
+68
+00:21:43,500 --> 00:21:47,500
+The area of this square is just 1.
+
+69
+00:21:47,500 --> 00:21:48,500
+Area.
+
+70
+00:21:48,500 --> 00:21:49,500
+Is 1.
+
+71
+00:21:49,500 --> 00:21:53,500
+And if you transform.
+
+72
+00:21:53,500 --> 00:21:57,500
+If you transform this.
+
+73
+00:21:57,500 --> 00:22:18,500
+This.
+
+74
+00:22:10,675 --> 00:22:38,475
+Okay, I want to give another basis score for R². Let right here, let this be our x-axis and this be y-axis. We have here the angle between x and y is pi over 2, but here we have an angle alpha smaller than, strictly smaller than pi over 2.
+
+75
+00:22:38,475 --> 00:22:50,475
+Okay, this is another coordinate system for R². Also, our vector space here is R². And let me write here our...
+
+76
+00:22:54,963 --> 00:23:22,183
+Base elements as, just, I want to use another color, let, this will be our V1, with the given coordinates 2, 1, okay, and this is as V2, with the given coordinates 1, 2, okay.
+
+77
+00:23:28,564 --> 00:23:35,204
+So, I want to transform this square from the left side to the right side.
+
+78
+00:23:35,984 --> 00:23:40,144
+What will be the form of, the shape of square at the right side?
+
+79
+00:23:40,144 --> 00:23:47,024
+Okay, and what about the area of the new shape at the right side?
+
+80
+00:23:47,444 --> 00:23:52,584
+Okay, at the left side we have a unit square with area one,
+
+81
+00:23:52,584 --> 00:24:00,764
+but I want to determine the shape of this unit square at the right hand side
+
+82
+00:24:00,764 --> 00:24:05,683
+and the connection between area of right hand side and left hand side.
+
+83
+00:24:05,683 --> 00:24:09,264
+What is the proportion of these two areas?
+
+84
+00:24:09,644 --> 00:24:16,024
+Okay, so I need to write here our second phase.
+
+85
+00:24:16,304 --> 00:24:19,684
+Let me write here, V sub 2 is equal to.
+
+86
+00:24:19,684 --> 00:24:49,684
+V sub 2, V sub 2, V sub 2, V sub 2, V sub 2, V sub 2, V sub 2, V sub 2, V sub 2, V sub 2, V sub 2, V sub 2, V sub 2, V sub 2, V sub 2, V sub 2, V sub 2, V sub 2, V sub 2, V sub 2, V sub 2, V sub 2, V sub 2, V sub 2, V sub 2, V sub 2, V sub 2, V sub 2, V sub 2, V sub 2, V sub 2, V sub 2, V sub 2, V sub 2, V sub 2, V sub 2, V sub 2, V sub 2, V sub 2, V sub 2, V sub 2, V sub 2, V sub 2, V sub 2, V sub 2, V sub 2, V sub 2, V sub 2, V sub 2, V sub 2, V sub 2, V sub 2, V sub 2, V sub 2, V sub 2, V sub 2
+
+87
+00:24:49,684 --> 00:26:09,804
+V sub 2, V sub 2, V sub 2, V sub 2, V sub 2, V sub 2, V sub 2, V sub 2, V sub 2, V sub 2, V sub 2, V sub 2, V sub 2, V sub 2, V sub 2, V sub 2, V sub 2, V sub 2, V sub 2, V sub 2, V sub 2, V sub 2, V sub 2, V sub 2, V sub 2, V sub 2, V sub 2, V sub 2, V sub 2, V sub 2, V sub 2, V sub 2, V sub 2, V sub 2, V sub 2, V sub 2, V sub 2, V sub 2, V sub 2, V sub 2, V sub 2, V sub 2, V sub 2, V sub 2, V sub 2, V sub 2, V sub 2, V sub 2, V sub 2, V sub 2, V sub 2, V sub 2, V sub 2, V sub 2, V sub 2, V
+
+88
+00:26:12,819 --> 00:26:21,359
+With respect to new base, then we will let's say A times 2, 1 plus B times 1, 2.
+
+89
+00:26:21,980 --> 00:26:27,480
+Then we will get non-homogeneous system.
+
+90
+00:26:27,939 --> 00:26:34,240
+2A plus B is equal to 0 and A plus 2B is equal to 1.
+
+91
+00:26:34,240 --> 00:26:45,700
+If we solve this system, we will find A is minus 1 over 3 and B is equal to 2 over 3.
+
+92
+00:26:45,700 --> 00:27:04,539
+Okay, so the coordinate factor of E1, let me write here, 1, 0, B2 is equal to 2 over 3 minus 1 over 3.
+
+93
+00:27:04,539 --> 00:27:16,199
+And the coordinate factor of 0, 1 with respect to B2 is equal to minus 1 over 3, 2 over 3.
+
+94
+00:27:18,419 --> 00:27:25,220
+So, we can easily see that the coordinate factor of 0 is itself.
+
+95
+00:27:25,740 --> 00:27:29,259
+This transformation transforms origin to the origin again.
+
+96
+00:27:29,259 --> 00:27:30,559
+Okay, okay, okay.
+
+97
+00:27:30,799 --> 00:27:34,720
+We find three vertices of new shape.
+
+98
+00:27:35,059 --> 00:27:38,379
+Okay, we need to find the coordinate factor of 1, 1.
+
+99
+00:27:43,155 --> 00:27:48,155
+Sadece me help me compute all these vectors.
+
+100
+00:28:04,276 --> 00:28:24,496
+So, similarly, if you solve, if you write 1,1 as a linear combination of given vectors, given second phase element, let's write here, t times 2.1 plus s times 1,2,
+
+101
+00:28:24,496 --> 00:28:35,696
+then you will get here 2t plus s is 1 and t plus 2s also is 1.
+
+102
+00:28:35,916 --> 00:28:44,696
+If you solve this system, you will find t is equal to 1 over 3 and also s is equal to 1 over 3.
+
+103
+00:28:44,696 --> 00:28:49,556
+So, now we can transform our square to the right-hand side.
+
+104
+00:28:49,956 --> 00:28:50,076
+Okay.
+
+105
+00:28:52,456 --> 00:28:54,456
+Let me choose another color.
+
+106
+00:28:54,496 --> 00:29:00,516
+This is, this point is actually 0,0.
+
+107
+00:29:00,875 --> 00:29:01,155
+Okay.
+
+108
+00:29:01,336 --> 00:29:02,216
+Our first one.
+
+109
+00:29:02,776 --> 00:29:11,756
+And we transform e1 to 2 over 3 minus 1 over 3.
+
+110
+00:29:12,696 --> 00:29:16,196
+2 over 3 from x-axis.
+
+111
+00:29:17,036 --> 00:29:18,976
+Here, we have 2.
+
+112
+00:29:19,635 --> 00:29:20,976
+So, here is 1.
+
+113
+00:29:21,896 --> 00:29:24,036
+And 2 over 3 here.
+
+114
+00:29:24,236 --> 00:29:24,375
+Okay.
+
+115
+00:29:24,496 --> 00:29:26,896
+And minus 1 over 3.
+
+116
+00:29:27,676 --> 00:29:31,256
+Minus 1 over 3 from y-axis.
+
+117
+00:29:32,216 --> 00:29:34,336
+Let's say here as 1.
+
+118
+00:29:34,716 --> 00:29:36,615
+So, minus 1 over 3 is here.
+
+119
+00:29:36,976 --> 00:29:38,216
+Okay.
+
+120
+00:29:38,216 --> 00:29:53,196
+So, the intersection of these two points will be our coordinate factor of 1,0 with respect to mu base.
+
+121
+00:29:53,196 --> 00:29:53,635
+Okay.
+
+122
+00:29:53,635 --> 00:29:58,016
+This is our coordinate factor with respect to mu base.
+
+123
+00:29:58,016 --> 00:30:00,196
+Our coordinate factor of e1.
+
+124
+00:30:00,196 --> 00:30:00,596
+Okay.
+
+125
+00:30:00,596 --> 00:30:04,196
+Let's find the coordinate factor of e sub 2.
+
+126
+00:30:05,316 --> 00:30:11,416
+So, our first component will be 1 over 3.
+
+127
+00:30:11,416 --> 00:30:12,796
+Let me write here.
+
+128
+00:30:12,796 --> 00:30:13,916
+Minus 1 over 3.
+
+129
+00:30:13,916 --> 00:30:16,836
+And here you have 2 over 3.
+
+130
+00:30:17,176 --> 00:30:17,976
+Right here.
+
+131
+00:30:18,176 --> 00:30:20,296
+1, 2 over 3.
+
+132
+00:30:20,296 --> 00:30:33,736
+This will be our coordinate factor of e2 with respect to given bases.
+
+133
+00:30:33,736 --> 00:30:34,176
+Okay.
+
+134
+00:30:34,916 --> 00:30:37,496
+And the coordinate factor of e2.
+
+135
+00:30:37,496 --> 00:30:38,496
+So, let's go.
+
+136
+00:30:38,496 --> 00:30:41,676
+Let me write here.
+
+137
+00:30:40,852 --> 00:30:51,592
+1, 1, here let write 1 over 3, 1 over 3, and the new vector is this vector.
+
+138
+00:30:52,272 --> 00:30:59,592
+So, the shape of square will be, let's use, my drawing is not,
+
+139
+00:31:04,788 --> 00:31:34,788
+Bu, bu
+
+140
+00:31:34,788 --> 00:31:40,627
+is transformation matrix. Let me write here the transformation matrix from
+
+141
+00:31:46,516 --> 00:31:48,916
+Denote by m sub
+
+142
+00:31:54,099 --> 00:31:56,839
+B2, B1
+
+143
+00:32:00,531 --> 00:32:30,531
+Çünkü, bu bölümde, ilk bölümde, ilk bölümde, ilk bölümde, ilk bölümde, ilk bölümde, ilk bölümde, ilk bölümde, ilk bölümde, ilk bölümde, ilk bölümde, ilk bölümde, ilk bölümde, ilk bölümde, ilk bölümde, ilk bölümde, ilk bölümde, ilk bölümde, ilk bölümde, ilk bölümde, ilk bölümde, ilk bölümde, ilk bölümde, ilk bölümde, ilk bölümde, ilk bölümde, ilk bölümde, ilk bölümde, ilk bölümde, ilk bölümde, ilk bölümde, ilk bölümde, ilk bölümde, ilk bölümde, ilk bölümde, ilk bölümde, ilk bölümde, ilk bölümde, ilk bölümde, ilk bölümde, ilk bölümde, ilk bölümde, ilk bölümde, ilk bölümde, ilk
+
+144
+00:32:30,531 --> 00:32:54,851
+if you want to get the coordinate vector of any vector in the right hand side, you need to multiply this vector by this matrix. So, result will be your coordinate vector at the right hand side. And if you want, if you want to get the coordinate vector of any vector at the left hand side, at the right hand side, you need to multiply
+
+145
+00:32:54,851 --> 00:33:18,411
+your coordinate vector with the inverse of this matrix. Let's say M sub B1, B2. This is the coordinate vector, the transition matrix from base B1 to the base B2. This is the inverse of this matrix. Okay. The inverse of this matrix is equal to
+
+146
+00:33:18,411 --> 00:33:24,611
+B2. B2
+
+147
+00:33:32,756 --> 00:33:47,416
+For example, if you multiply 1, 1 with this, sorry, sorry, I need to change this notation, this is, okay, and b2, b1, this is b1, b2.
+
+148
+00:33:56,819 --> 00:33:58,819
+B1, B2
+
+149
+00:33:58,819 --> 00:34:00,980
+and this is B2, B1
+
+150
+00:34:00,980 --> 00:34:05,379
+if you multiply
+
+151
+00:34:05,379 --> 00:34:07,079
+the vector
+
+152
+00:34:07,079 --> 00:34:09,079
+by this matrix you will get
+
+153
+00:34:09,079 --> 00:34:10,319
+the first
+
+154
+00:34:10,319 --> 00:34:12,779
+the elements of first row of this matrix
+
+155
+00:34:12,779 --> 00:34:15,059
+actually this is the coordinate vector of this matrix
+
+156
+00:34:15,059 --> 00:34:17,119
+also if you multiply
+
+157
+00:34:17,119 --> 00:34:19,239
+this matrix by 0, 1
+
+158
+00:34:19,239 --> 00:34:20,639
+you will get the second row
+
+159
+00:34:20,639 --> 00:34:22,199
+second row is the coordinate
+
+160
+00:34:22,199 --> 00:34:25,139
+vector of E2
+
+161
+00:34:25,139 --> 00:34:26,400
+in the right hand side
+
+162
+00:34:26,400 --> 00:34:28,940
+if you transform
+
+163
+00:34:28,940 --> 00:34:31,219
+if you want transform 2, 1
+
+164
+00:34:31,219 --> 00:34:32,519
+to the left hand side
+
+165
+00:34:32,519 --> 00:34:33,900
+you need to multiply
+
+166
+00:34:33,900 --> 00:34:36,960
+this matrix part by the base elements
+
+167
+00:34:36,960 --> 00:34:37,840
+respectively
+
+168
+00:34:37,840 --> 00:34:39,360
+just a minute please
+
+169
+00:35:34,164 --> 00:35:37,484
+Tamam. Şimdi bu koncept koncept.
+
+170
+00:35:37,484 --> 00:35:41,044
+O main motivasyonla basit birçok,
+
+171
+00:35:41,044 --> 00:35:45,444
+özellikle kalcumlus 2,
+
+172
+00:35:45,444 --> 00:39:46,404
+birçok,
+
+173
+00:39:31,103 --> 00:39:56,463
+So, just like our small example, if we store all these coordinate vectors as a column elements of a square matrix, let's say A, the first column of A will be the coordinate vector of first base element, the first element of first base, okay, with respect to second base.
+
+174
+00:39:56,463 --> 00:40:01,983
+A11, A21, and An1.
+
+175
+00:40:03,423 --> 00:40:16,864
+Also, the second column is the coordinate vector of V2 with respect to second base, A12, A22, and here we have A sub-N2.
+
+176
+00:40:20,500 --> 00:40:45,820
+In the same manner, A sub 1M, A sub 2M, A sub N, will be the last column of our matrix A. We denote this matrix by M sub B1, B2. This is transition matrix from base B1 to B2.
+
+177
+00:40:45,820 --> 00:41:12,039
+Okay. Transition matrix from B1 to B2. Just like in our example. Let's check again. We find our coordinate vectors with respect to second base as 2 over 3 minus 1 over 3. This is the first column of our transition matrix from B1 to B2.
+
+178
+00:41:12,039 --> 00:41:17,039
+And if we take the inverse of B2. And if we take the inverse of this matrix, we will get the base transition matrix from B2 to B1.
+
+179
+00:41:17,039 --> 00:41:44,039
+From right to left. Okay. Okay.
+
+180
+00:41:44,039 --> 00:41:44,280
+Okay.
+
+181
+00:41:52,052 --> 00:42:22,052
+Ve bu,
+
+182
+00:42:22,052 --> 00:42:31,251
+So, as a result of this fact you can find coordinate vector of W1, W2, W2, Wm with respect to first base B1.
+
+183
+00:42:31,892 --> 00:42:48,692
+So, we can form transition matrix as each column of this transition matrix will be the coordinate vector of each base element with respect to first base.
+
+184
+00:42:48,692 --> 00:42:54,731
+Okay, this is the coordinate vector of W1 with respect to B1.
+
+185
+00:42:55,271 --> 00:42:59,271
+This is the coordinate vector of W2 with respect to B1.
+
+186
+00:42:59,271 --> 00:43:03,852
+And this is the coordinate vector of W sub M with respect to B1.
+
+187
+00:43:04,092 --> 00:43:04,392
+Okay.
+
+188
+00:43:08,916 --> 00:43:09,756
+Any question?
+
+189
+00:43:19,764 --> 00:43:34,483
+In your final examination, I think you will encounter questions related to channel basis and base transition matrices at these two questions.
+
+190
+00:43:34,483 --> 00:43:34,804
+Okay.
+
+191
+00:43:37,923 --> 00:43:49,443
+And in our second problem set, you have some related examples or questions, problems.
+
+192
+00:43:49,764 --> 00:43:50,764
+Thank you.
+
+193
+00:43:54,099 --> 00:44:02,460
+So, there exists a close connection between base transition matrix from B1 to B2 and B2 to B1.
+
+194
+00:44:02,460 --> 00:44:05,679
+These two matrices inverses to each other.
+
+195
+00:44:06,299 --> 00:44:13,059
+Let we have an n-dimensional vector space with given two ordered bases.
+
+196
+00:44:13,699 --> 00:44:16,819
+Here the notion ordered is much more important.
+
+197
+00:44:16,819 --> 00:44:26,719
+If we change the order of elements, then we cannot talk about base transition matrices or coordinate vector of a vector.
+
+198
+00:44:26,719 --> 00:44:34,059
+Okay, that we have an n-dimensional vector space and two ordered bases for this space.
+
+199
+00:44:34,619 --> 00:44:42,259
+And base transition matrices from B1 to B2 as, let's say, A and from B2 to B1 as, let's say, B.
+
+200
+00:44:42,259 --> 00:44:54,319
+Then, AB, the multiplication of A, because A and B both n-square matrices, we can multiply A with B, also B with A.
+
+201
+00:44:54,659 --> 00:44:57,679
+The result is identity matrix of order n.
+
+202
+00:44:57,679 --> 00:45:07,159
+So, this says that A is equal to B inverse and B is equal to A inverse.
+
+203
+00:45:07,159 --> 00:45:07,860
+Okay.
+
+204
+00:45:09,860 --> 00:45:13,099
+These two matrices are inverses for each other.
+
+205
+00:45:16,019 --> 00:45:31,500
+Also, if you have a coordinate vector or a vector, you let be an arbitrary vector in V.
+
+206
+00:45:31,500 --> 00:45:47,900
+And if you have a coordinate vector of U with respect to second base, then this is equal to M B1 B2 times U B1.
+
+207
+00:45:47,900 --> 00:46:04,380
+If you multiply the coordinate vector of U with respect to B1 by the, at the right-hand side, by the base transition from B1 B2, you will get the coordinate vector of U with respect to B2.
+
+208
+00:46:04,380 --> 00:46:04,739
+Okay.
+
+209
+00:46:04,739 --> 00:46:11,179
+Also, if you have, sorry, if you have coordinate vector V.
+
+210
+00:46:11,179 --> 00:46:11,619
+If you have, sorry, if you have, sorry, if you have, sorry, if you have, sorry, if you have, sorry, if you have, sorry, if you have, sorry, if you have, sorry, if you have, sorry, if you have, sorry, if you have, sorry, if you have, sorry, if you have, sorry, if you have, sorry, if you have, sorry, if you have, sorry, if you have, sorry, if you have, sorry, if you have, sorry, if you have, sorry, if you have, sorry, if you have, sorry, if you have, sorry, if you have, sorry, if you have, sorry, if you have, sorry, if you have, sorry, if you have, sorry, if you have, sorry, if you have, sorry, if you have, sorry, if you have, sorry, if you have, sorry, if you have, sorry, if you have, sorry, if you have, sorry, if you have, sorry
+
+211
+00:46:16,244 --> 00:46:19,764
+Coordinate Factor of V with respect to B2.
+
+212
+00:46:20,724 --> 00:46:21,923
+Let me write in V1.
+
+213
+00:46:23,384 --> 00:46:27,564
+Also V is a vector, any vector in V.
+
+214
+00:46:28,044 --> 00:46:29,764
+Then this is AQ2.
+
+215
+00:46:30,524 --> 00:46:33,963
+In order to get the Coordinate Factor of V with respect to B1,
+
+216
+00:46:33,963 --> 00:46:38,804
+you need to multiply the transition matrix from B2 to B1
+
+217
+00:46:38,804 --> 00:46:43,564
+by the Coordinate Factor of V with respect to B2.
+
+218
+00:46:43,764 --> 00:46:44,024
+Okay.
+
+219
+00:46:44,024 --> 00:46:49,064
+If you have the Coordinate Factor of V with respect to B2
+
+220
+00:46:49,064 --> 00:46:52,184
+and the transition matrix from B2 to B1,
+
+221
+00:46:52,504 --> 00:46:56,463
+if you multiply these two guys,
+
+222
+00:46:56,564 --> 00:47:01,384
+you will get the Coordinate Factor of V with respect to B1.
+
+223
+00:47:01,384 --> 00:47:02,224
+Okay.
+
+224
+00:47:04,504 --> 00:47:07,864
+Also, if you multiply at the right-hand side
+
+225
+00:47:07,864 --> 00:47:13,184
+this AQ2 by the Inverse of M, B1, B2,
+
+226
+00:47:13,184 --> 00:47:15,504
+this is actually M, B2, B1,
+
+227
+00:47:15,504 --> 00:47:18,544
+then you will get, let me write here,
+
+228
+00:47:19,104 --> 00:47:22,463
+M sub B1, B2
+
+229
+00:47:23,344 --> 00:47:27,344
+times U sub B2
+
+230
+00:47:27,344 --> 00:47:30,704
+will be equal to U sub B1.
+
+231
+00:47:30,704 --> 00:47:34,544
+Also, same thing is valid for the second part.
+
+232
+00:47:34,544 --> 00:47:35,544
+Uh...
+
+233
+00:47:35,544 --> 00:47:50,544
+...
+
+234
+00:47:42,356 --> 00:48:01,656
+M sub, let me write it inverse, M sub B2, B1 inverse, times V sub B1, will be equal to V sub B2.
+
+235
+00:48:01,656 --> 00:48:22,176
+This is, this matrix is, this matrix is equal to M sub B2, B1, and also this matrix is equal to M sub B1, B2.
+
+236
+00:48:23,996 --> 00:48:25,256
+Any question?
+
+237
+00:48:25,256 --> 00:48:36,416
+Now we will give two examples related to change of basis and space transition matrices.
+
+238
+00:48:40,500 --> 00:48:43,500
+Örneğin, bir örnek olarak, bu örnek olarak,
+
+239
+00:48:43,500 --> 00:48:46,500
+bir örnek olarak, bu örnek olarak,
+
+240
+00:48:46,500 --> 00:49:58,500
+bir örnek olarak,
+
+241
+00:49:58,500 --> 00:50:00,500
+ve örnek olarak,
+
+242
+00:50:00,500 --> 00:50:12,500
+bir örnek olarak,
+
+243
+00:50:12,500 --> 00:50:14,500
+ile örnek olarak,
+
+244
+00:50:14,500 --> 00:50:38,500
+bir örnek olarak,
+
+245
+00:50:38,500 --> 00:50:39,500
+e3,
+
+246
+00:50:39,500 --> 00:50:40,500
+ok.
+
+247
+00:50:40,500 --> 00:50:41,500
+Bu,
+
+248
+00:50:41,500 --> 00:51:06,500
+o,
+
+249
+00:51:06,500 --> 00:51:07,500
+o, o,
+
+250
+00:50:53,012 --> 00:50:57,251
+So first find the transition matrix from B1 to B2.
+
+251
+00:50:57,251 --> 00:51:03,812
+Ok, to do this just write elements of first space as a linear combination of elements of second space
+
+252
+00:51:03,812 --> 00:51:10,372
+and for each element of first space do this process.
+
+253
+00:51:10,372 --> 00:51:17,572
+And find coordinate basal each first space element with respect to second space element.
+
+254
+00:51:17,572 --> 00:51:22,852
+So you can store these coordinate vectors as columns of a 3x3 matrix.
+
+255
+00:51:22,852 --> 00:51:26,612
+This matrix will be transition matrix from B1 to B2.
+
+256
+00:51:26,612 --> 00:51:33,572
+Ok, and then the inverse of this matrix will be our transition matrix from B2 to B1.
+
+257
+00:51:33,572 --> 00:51:42,052
+Or also equivalently you can write each element of second space as a linear combination of element of first space
+
+258
+00:51:42,052 --> 00:51:57,172
+and then you need to solve these three non-homogeneous systems to find in order to find coordinate vector of each element of second space
+
+259
+00:51:59,172 --> 00:52:00,771
+with respect to first space.
+
+260
+00:52:00,772 --> 00:52:19,492
+Ok, and find the, in order to find the coordinate vector of U with respect to B1, the first method we need to write U as a linear combination of first space element.
+
+261
+00:52:19,492 --> 00:52:27,892
+But this is the first, only method because our vector given with respect to standard bases.
+
+262
+00:52:27,892 --> 00:52:34,772
+So we need to write this vector as a linear combination of first space element.
+
+263
+00:52:34,772 --> 00:52:49,972
+Or if we know the base transition matrix from B2 to B1 and B2 to B1, we need to multiply this by U sub B2.
+
+264
+00:52:51,092 --> 00:52:54,292
+The coordinate vector of U with respect to second space.
+
+265
+00:52:54,292 --> 00:53:01,092
+In order to find this vector we need to solve a non-homogeneous system.
+
+266
+00:53:01,092 --> 00:53:12,132
+We need to write U as a linear combination of W1, W2, W3 and then we need to multiply this by M sub B2, B1, uh, upper B1.
+
+267
+00:53:12,132 --> 00:53:12,372
+Ok.
+
+268
+00:53:14,052 --> 00:53:24,132
+Also, uh, the coordinate vector of U with respect to B2, same, uh, symmetric operation, uh,
+
+269
+00:53:24,932 --> 00:53:26,692
+in the third item.
+
+270
+00:53:26,692 --> 00:53:27,012
+Ok.
+
+271
+00:53:29,252 --> 00:53:40,052
+In order to find transition matrix from B1 to B2, we write, uh, elements of first space as a linear combination of elements of second space.
+
+272
+00:53:40,052 --> 00:53:51,252
+And we do for each element in this process that we find coordinate vectors of each, uh, elements of first space with respect to second space.
+
+273
+00:53:52,132 --> 00:53:53,412
+Ok.
+
+274
+00:53:53,412 --> 00:53:58,771
+So, here we find our first coordinate vector.
+
+275
+00:53:58,771 --> 00:54:04,612
+This will be, uh, first column of transition matrix.
+
+276
+00:54:04,612 --> 00:54:04,852
+Ok.
+
+277
+00:54:05,572 --> 00:54:06,771
+Here we have V1,
+
+278
+00:54:06,771 --> 00:54:12,132
+Me2 as 1, Me2 as 1, minus 1, 0.
+
+279
+00:54:12,132 --> 00:54:15,012
+This is the first column of our transition matrix.
+
+280
+00:54:17,012 --> 00:54:19,731
+And same thing for V sub 2.
+
+281
+00:54:19,731 --> 00:54:19,912
+And then we have V1, we have V1, we have V1, we have V1, we have V1, we have V1, we have V1, we have V1, we have V1, we have V1, we have V1, we have V1, we have V1, we have V1, we have V1, we have V1, we have V1, we have V1, we have V1, we have V1, we have V1, we have V1, we have V1, we have V1, we have V1, we have V1, we have V1, we have V1, we have V1, we have V1, we have V1, we have V1, we have V1, we have V1, we have V1, we have V1, we have V1, we have V1, we have V1, we have V1, we have V1, we have V1, we have V1, we have V1
+
+282
+00:54:23,956 --> 00:54:31,216
+We write V2 as a linear combination of W1, W2, W3, the elements of second place.
+
+283
+00:54:31,216 --> 00:54:36,596
+And we saw A1 to A2 to A3 to.
+
+284
+00:54:37,155 --> 00:54:45,856
+In order to avoid transposition, we just write the coefficient, coordinate vector in this way.
+
+285
+00:54:46,155 --> 00:54:46,256
+Okay.
+
+286
+00:54:49,635 --> 00:54:51,256
+We write columns of matrix.
+
+287
+00:54:51,256 --> 00:55:08,756
+So the coordinate vector of V2 with respect to coordinate vector of V2 with respect to V2 is equal to 9 over 5 minus 4 over 5 and minus 6 over 5.
+
+288
+00:55:09,476 --> 00:55:16,635
+This is just the solution of this non-homogeneous system, unique solution, because V1, V2, V3 are linearly independent.
+
+289
+00:55:16,635 --> 00:55:19,476
+So this system must have a unique solution.
+
+290
+00:55:21,256 --> 00:55:32,436
+The matrix formed by W1, W2, W3 has an inverse and you have, you can write this non-homogeneous system.
+
+291
+00:55:32,436 --> 00:55:40,776
+Let me write here V2 transpose as a matrix equation.
+
+292
+00:55:40,776 --> 00:55:51,436
+And since we have A has an inverse, then you can multiply at the left-hand side by inverse of A to get unknowns.
+
+293
+00:55:51,436 --> 00:55:54,776
+A1 to A2 to A2 to A2 to A2 to A2 to A2 to A2 to A2.
+
+294
+00:55:54,776 --> 00:55:55,236
+Okay.
+
+295
+00:55:55,716 --> 00:56:00,076
+This is another way to find, to solve this non-homogeneous system.
+
+296
+00:56:00,076 --> 00:56:10,516
+Also, we do the same thing for V3 and we find the coordinate vector of V3 with respect to second base.
+
+297
+00:56:10,516 --> 00:56:24,036
+V3 is equal to V3 is equal to V3 is equal to 8 over 5 minus 3 over 5 and minus 2 over 5.
+
+298
+00:56:24,036 --> 00:56:29,376
+This is the last column of our transition matrix.
+
+299
+00:56:29,376 --> 00:56:48,056
+So, the base transition matrix from V1 to V2 will be a 3 by 3 square matrix with the formed pi coordinate factors of first phase elements.
+
+300
+00:56:48,056 --> 00:56:48,615
+Okay.
+
+301
+00:56:48,615 --> 00:56:56,096
+The inverse of this matrix is the inverse of this matrix.
+
+302
+00:56:56,096 --> 00:57:08,195
+And V1, V2 inverse is equal to V2, V1.
+
+303
+00:57:08,195 --> 00:57:13,716
+Or you can do same thing as in the first case.
+
+304
+00:57:13,716 --> 00:57:14,155
+Okay.
+
+305
+00:57:14,155 --> 00:57:21,056
+You can write each W as a linear combination of V sub 1, sub 2, sub 3.
+
+306
+00:57:21,056 --> 00:57:32,155
+And you can solve all these three non-homogeneous systems in order to find coordinate factors or elements of second phase with respect to first phase.
+
+307
+00:57:36,244 --> 00:57:50,264
+So, we choose, using inverse method, then we find m sub 2 upper b1, the base transition from b2 to b1.
+
+308
+00:57:50,264 --> 00:57:58,124
+Okay, base transition from b2 to b1. This is the inverse of m sub b1 upper b2.
+
+309
+00:58:00,844 --> 00:58:02,144
+Any questions?
+
+310
+00:58:18,195 --> 00:58:19,435
+Arkadaşlar, siz burada?
+
+311
+00:58:26,547 --> 00:58:35,167
+Do you have any question related to base transition? I think this is the most complicated topic of this time.
+
+312
+00:58:40,371 --> 00:59:10,371
+Çünkü, bazıları, bazıları, bazıları, bazıları, bazıları, bazıları, bazıları, bazıları, bazıları, bazıları, bazıları, bazıları, bazıları, bazıları, bazıları, bazıları, bazıları, bazıları, bazıları, bazıları, bazıları, bazıları, bazıları, bazıları, bazıları, bazıları, bazıları, bazıları, bazıları, bazıları, bazıları, bazıları, bazıları, bazıları, bazıları, bazıları, bazıları, bazıları, bazıları, bazıları, bazıları, bazıları, bazıları, bazıları, bazıları, bazıları, bazıları, bazıları, bazıları, bazıları, bazıları, bazıları, bazıları, bazıları, bazıları, baz
+
+313
+00:59:10,371 --> 00:59:34,851
+We can get the coordinate vector of u with respect to first base. We need to write u as a linear combination of first base element and we need to solve y sub one, y sub two and y sub three from this vector equation. This is actually a non-homogeneous system and because we want e to e to e to e to e to are linearly independent, this system has a unique solution.
+
+314
+00:59:34,851 --> 00:59:54,152
+And by the definition of coordinate vector, we know that coordinate vector over vector is unique. There is no any other coordinate vector, different coordinate vector for a given basis. Okay.
+
+315
+00:59:54,152 --> 01:00:16,152
+So u was given as two, three and five and if we solve this system, we will find the coordinate vector of u with respect to, I omit computations because our topic is not solving homogeneous system or non-homogeneous system.
+
+316
+01:00:16,152 --> 01:00:30,652
+The idea of the topic is not solving homogeneous system. The idea of the topic is find the transition matrix or transform coordinate vector over vector from left side to right side or right side to left side. Okay.
+
+317
+01:00:30,652 --> 01:00:42,652
+So I omit computations because we have already know about how we can solve linear system equations. Okay.
+
+318
+01:00:42,652 --> 01:00:47,652
+Or how we can find the inverse of s square matrix.
+
+319
+01:00:47,652 --> 01:01:08,652
+So if you solve this system, then our coordinate vector will be the coordinate vector of u with respect to first base will be minus 30 or 4 minus, excuse me, 1 or 4 and 19 or 4.
+
+320
+01:01:08,652 --> 01:01:13,652
+This is the coordinate vector of u with respect to first base. Okay.
+
+321
+01:01:13,652 --> 01:01:22,652
+This is the coordinate vector of u with respect to usual basis or standard basis or rq.
+
+322
+01:01:22,652 --> 01:01:23,652
+Okay.
+
+323
+01:01:23,652 --> 01:01:33,652
+So if you multiply this vector by our transition matrix, we will get u sub b sub 2. Okay.
+
+324
+01:01:33,652 --> 01:01:38,652
+The coordinate vector of u with respect to second base.
+
+325
+01:01:38,652 --> 01:01:49,652
+Also, as a another solution, you can write u as a linear combination of second base elements and you can try to solve this system.
+
+326
+01:01:49,652 --> 01:01:53,652
+Also, this is a non-homogeneous system, has a unique solution.
+
+327
+01:01:53,652 --> 01:01:55,652
+This is another method.
+
+328
+01:01:55,652 --> 01:01:56,652
+So if you multiply this, you can write it.
+
+329
+01:01:56,652 --> 01:01:57,652
+Okay.
+
+330
+01:01:57,652 --> 01:02:07,652
+The result of this is just 24 over 5, 1 over 5 and minus 11 over 5.
+
+331
+01:02:07,652 --> 01:02:12,652
+So by using matrices, also we can compute this.
+
+332
+01:02:12,652 --> 01:02:23,652
+You know that u sub b1 is equal to the coordinate vector of u with respect to b1 is equal to coordinate vector of u with respect to b1 is equal to coordinate vector of u with respect to b1 is equal to coordinate vector of u with respect to b1.
+
+333
+01:02:23,652 --> 01:02:30,652
+Here we need to...
+
+334
+01:02:32,755 --> 01:02:48,675
+Write each element, so second base as a linear combination of first base element, and solve all these three, for RQ, all these three non-homogeneous systems.
+
+335
+01:02:48,675 --> 01:03:02,935
+Okay, but in general, if you have an n-dimensional vector space, you need to solve n-homogeneous system for each column, in order to obtain each column of transition matrix.
+
+336
+01:03:02,935 --> 01:03:03,556
+Okay.
+
+337
+01:03:08,179 --> 01:03:23,819
+So, you multiply base transition matrix from B2 to B1, and at the left-hand side with the coordinate vector of U with respect to B2, then result is coordinate vector of U with respect to B1.
+
+338
+01:03:24,000 --> 01:03:29,599
+We have already found by Solink, non-material system. Also, the inverse is correct.
+
+339
+01:03:29,599 --> 01:03:42,480
+If you multiply transition matrix from B2 to B1 by the coordinate vector of U with respect to B1, then we will get coordinate vector of U with respect to B2.
+
+340
+01:03:42,480 --> 01:03:43,440
+Okay.
+
+341
+01:03:51,827 --> 01:03:55,827
+Bir example daha önce de base-transition matrices.
+
+342
+01:03:55,827 --> 01:04:01,827
+Bir baktık bir baktık bir baktık bir baktık bir baktık bir baktık bir baktık bir baktık bir baktık.
+
+343
+01:04:01,827 --> 01:04:05,827
+Bu baktık bir baktık bir baktık bir baktık.
+
+344
+01:04:05,827 --> 01:04:10,827
+Bir baktık bir baktık var.
+
+345
+01:04:10,827 --> 01:04:40,827
+Bir baktık bir baktık bir baktık bir baktık bir baktık bir baktık bir baktık bir baktık bir baktık bir baktık bir baktık bir baktık bir baktık bir baktık bir baktık bir baktık bir baktık bir baktık bir baktık bir baktık bir baktık bir baktık bir baktık bir baktık bir baktık bir baktık bir baktık bir baktık bir baktık bir baktık bir baktık bir baktık bir baktık bir baktık bir baktık bir baktık bir baktık bir baktık bir baktık bir baktık bir baktık bir baktık bir baktık bir baktık bir baktık bir baktık bir baktık bir baktık bir baktık bir baktık bir baktık bir baktık bir baktık bir baktık bir baktık bir bakt
+
+346
+01:04:40,827 --> 01:05:10,827
+ve bu baktık bir baktık bir baktık bir baktık bir baktık bir baktık bir baktık bir baktık bir baktık bir baktık bir baktık bir baktık bir baktık bir baktık bir baktık bir baktık bir baktık bir baktık bir baktık bir baktık bir baktık bir baktık bir baktık bir baktık bir baktık bir baktık bir baktık bir baktık bir baktık bir baktık bir baktık bir baktık bir baktık bir baktık bir baktık bir baktık bir baktık bir baktık bir baktık bir baktık bir baktık bir baktık bir baktık bir baktık bir baktık bir baktık bir baktık bir baktık bir baktık bir baktık bir baktık bir baktık bir baktık bir baktık bir baktık
+
+347
+01:05:10,827 --> 01:05:40,827
+bir baktık bir baktık bir baktık bir baktık bir baktık bir baktık bir baktık bir baktık bir baktık bir baktık bir baktık bir baktık bir baktık bir baktık bir baktık bir baktık bir baktık bir baktık bir baktık bir baktık bir baktık bir baktık bir baktık bir baktık bir baktık bir baktık bir baktık bir baktık bir baktık bir baktık bir baktık bir baktık bir baktık bir baktık bir baktık bir baktık bir baktık bir baktık bir baktık bir baktık bir baktık bir baktık bir baktık bir baktık bir baktık bir baktık bir baktık bir baktık bir baktık bir baktık bir baktık bir baktık bir baktık bir baktık bir baktık bir
+
+348
+01:05:40,827 --> 01:06:10,827
+bu baktık bir baktık bir baktık bir baktık bir baktık bir baktık bir baktık bir baktık bir baktık bir baktık bir baktık bir baktık bir baktık bir baktık bir baktık bir baktık bir baktık bir baktık bir baktık bir baktık bir baktık bir baktık bir baktık bir baktık bir baktık bir baktık bir baktık bir baktık bir baktık bir baktık bir baktık bir baktık bir baktık bir baktık bir baktık bir baktık bir baktık bir baktık bir baktık bir baktık bir baktık bir baktık bir baktık bir baktık bir baktık bir baktık bir baktık bir baktık bir baktık bir baktık bir baktık bir baktık bir baktık bir baktık bir baktık bir
+
+349
+01:06:10,827 --> 01:06:40,827
+baktık bir baktık bir baktık bir baktık bir baktık bir baktık bir baktık bir baktık bir baktık bir baktık bir baktık bir baktık bir baktık bir baktık bir baktık bir baktık bir baktık bir baktık bir baktık bir baktık bir baktık bir baktık bir baktık bir baktık bir baktık bir baktık bir baktık bir baktık bir baktık bir baktık bir baktık bir baktık bir baktık bir baktık bir baktık bir baktık bir baktık bir baktık bir baktık bir baktık bir baktık bir baktık bir baktık bir baktık bir baktık bir baktık bir baktık bir baktık bir baktık bir baktık bir baktık bir baktık bir baktık bir baktık bir baktık bir bak
+
+350
+01:06:40,827 --> 01:07:10,807
+M sub v1 upper v2 will be equal to just transpose the coefficients for each v sub 1 v sub 2 v sub 3. The first column will be the transpose or coordinate vector of v1. Here the coordinate vector of v1 with respect to v2 is equal to 1 1 minus 1 because of the coefficients.
+
+351
+01:07:10,827 --> 01:07:38,708
+of this linear combination and the coordinate vector of v2 with respect to v2 is equal to 2 minus 1 1 because of the coefficients of this linear combination and the coordinate vector of v sub 3 with respect to v2 will be 1 0 2. Okay.
+
+352
+01:07:38,708 --> 01:07:49,347
+this is the coordinate vector of v3 is equal to v3 is equal to v3 is equal to v3 is equal to v3 is equal to v3 is equal to v3 is equal to v3 is equal to v3 is equal to v3 is equal to v3 is equal to v3 is equal to v3 is equal to v3 is equal to v3 is equal to v3 is equal to v3 is equal to v3 is equal to v3 is equal to v3 is equal to v3 is equal to v3 is equal to v3 is equal to v3 is equal to v3 is equal to v3 is equal to v3 is equal to v3 is equal to v3 is equal to v3 is equal to v3 is equal to v3 is equal to v3 is equal to v3 is equal to v3 is equal to v3 is equal to v3 is equal to v3 is equal to v3 is equal to v3 is equal to v3 is equal to v3 is equal to v3 is equal to
+
+353
+01:07:50,260 --> 01:07:52,720
+Transition matrix from B1 to B2.
+
+354
+01:07:53,960 --> 01:07:55,760
+And this is the second column.
+
+355
+01:07:56,420 --> 01:07:58,960
+2, minus 1, 1.
+
+356
+01:07:59,520 --> 01:08:03,340
+And the last column will be 1, 0, 2.
+
+357
+01:08:03,760 --> 01:08:04,060
+Okay.
+
+358
+01:08:08,148 --> 01:08:11,148
+Bu sorun ilk parçası.
+
+359
+01:08:12,148 --> 01:08:16,148
+İlk parçası, bu sorunla alınçı.
+
+360
+01:08:16,148 --> 01:08:26,148
+Bu sorunla alınçı.
+
+361
+01:08:26,148 --> 01:08:34,148
+A'ın alınçı.
+
+362
+01:08:34,148 --> 01:09:04,148
+B'ı
+
+363
+01:09:04,148 --> 01:09:14,148
+The matrix 3x3 square matrix placed in place of I3 will be inverse of A.
+
+364
+01:09:14,148 --> 01:09:23,148
+Okay, so M sub the transition matrix from B to B1 will be inverse of A.
+
+365
+01:09:23,148 --> 01:09:27,148
+Actually this matrix is here.
+
+366
+01:09:27,148 --> 01:09:39,148
+And in the third item says that find the coordinate vector of U with respect to B2.
+
+367
+01:09:39,148 --> 01:09:46,148
+But this point is important here we have the coordinate vector of U with respect to B1.
+
+368
+01:09:46,148 --> 01:09:54,148
+If here the coordinate vector of U with respect to standard base were given
+
+369
+01:09:54,148 --> 01:09:59,148
+So even then we need to transform U to B1.
+
+370
+01:09:59,148 --> 01:10:06,148
+Or we need to directly transform U to B2.
+
+371
+01:10:06,148 --> 01:10:11,148
+Okay, we need to write U as a linear combination of elements in B2.
+
+372
+01:10:11,148 --> 01:10:40,148
+Okay.
+
+373
+01:10:16,180 --> 01:10:28,079
+So, just multiply UB1 with the transition matrix from B1 to B2 to get the coordinate vector of U with respect to B2.
+
+374
+01:10:33,555 --> 01:10:49,555
+You can write here, don't confuse about transposition, this is not important, you can write transpose over record instead of itself, we omit this situation.
+
+375
+01:10:51,315 --> 01:11:00,515
+You can write u sub b2 as 4 1 5, okay. Also you can take transpose over this, you need to put here transpose.
+
+376
+01:11:07,252 --> 01:11:25,731
+Also V sub B1, in order to get V sub B1, we need to multiply transition matrix from B2 to B1 at the right hand side with the V sub B2, the coordinate vector of V with respect to B2.
+
+377
+01:11:25,731 --> 01:11:40,731
+Okay, so result will be a desired coordinate vector. This is the last example of this week. Okay, do we have any questions?
+
+378
+01:11:40,731 --> 01:11:58,731
+We combined our two lectures all today. So we left just one week for this semester. In the next week we will conduct our last course of this semester.
+
+379
+01:11:58,731 --> 01:12:08,731
+The topics of next week will be eigenvalues, eigenvectors and K.D. Hamilton theorem for the square matrices.
+
+380
+01:12:08,731 --> 01:12:16,731
+Actually, in order to find eigenvalues, eigenvectors, we need to solve homogeneous systems also.
+
+381
+01:12:16,731 --> 01:12:25,731
+The main frame of this course is solving linear system of equations, homogeneous or non-homogeneous.
+
+382
+01:12:25,731 --> 01:12:30,731
+Okay, and basic or matrices. Do you have any questions?
+
+383
+01:12:30,731 --> 01:12:35,731
+If you have any questions, you can name me.
+
+384
+01:12:35,731 --> 01:12:45,731
+And thank you for listening. I want to close today's course. Thank you for listening. See you next week. Bye-bye.

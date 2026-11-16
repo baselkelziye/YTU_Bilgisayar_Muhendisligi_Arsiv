@@ -1,0 +1,2875 @@
+1
+00:07:35,956 --> 00:07:37,556
+Good morning folks, how are you?
+
+2
+00:07:44,372 --> 00:08:14,372
+Bu, bu
+
+3
+00:08:14,372 --> 00:08:32,132
+linear equation with two unknowns that right here a special specific linear equation with two unknowns 2x plus 3y is equal 1 and x minus y is equal 2.
+
+4
+00:08:32,132 --> 00:08:44,132
+By applying elementary operations to this two equation you can solve x and y from this equation if you multiply
+
+5
+00:08:44,372 --> 00:08:56,772
+a second equation by three then adding up both equation you will get 3x here we cancel y so is seven
+
+6
+00:08:57,971 --> 00:09:11,331
+3x is seven x is a seven over three and by putting x in any equation you can find y so let's put substitute in
+
+7
+00:09:11,331 --> 00:09:24,292
+second equation y is equal to two plus seven over three this will be uh 13 or three okay but if you have
+
+8
+00:09:24,292 --> 00:09:31,652
+here we have two number of two two unknowns in the system this is a linear equation the first one is
+
+9
+00:09:31,652 --> 00:09:39,412
+a linear equation a second one is a linear equation it two uh together is called a system of linear equations okay
+
+10
+00:09:39,412 --> 00:09:47,812
+and if the number of uh these elements are known uh called as unknowns of the system unknowns
+
+11
+00:09:49,971 --> 00:09:59,331
+of system and this constants these are are called constants of the equation
+
+12
+00:10:01,412 --> 00:10:05,251
+cost constants uh sorry coefficients excuse me
+
+13
+00:10:05,251 --> 00:10:10,132
+coefficients of the equations
+
+14
+00:10:13,572 --> 00:10:17,331
+and this is called the constant of the equation
+
+15
+00:10:18,692 --> 00:10:24,292
+constant and if the number of equations for for the large number of
+
+16
+00:10:24,292 --> 00:10:51,172
+and this is called the constant of the equation
+
+17
+00:10:52,148 --> 00:10:57,768
+Eğer bir yöntemde bir yöntemde ve ekranlarımızın
+
+18
+00:10:57,768 --> 00:11:07,108
+bu metodoluşu bir metodoluşu daha çok daha
+
+19
+00:11:10,388 --> 00:11:23,788
+We will represent linear system of equations by matrices and then using a special matrix related to a given linear system of equations to solve the system.
+
+20
+00:11:24,668 --> 00:11:40,368
+First we will put this matrix in the reduced row echelon form or row echelon form and then by using this matrix we will get a new linear system of equation but a simplified version of the first case and then we will get the solution.
+
+21
+00:11:40,388 --> 00:11:43,888
+Or we will examine the solution of the system.
+
+22
+00:11:45,067 --> 00:12:03,908
+So for the two indeterminate case this equation that write here 2x plus 3y equal 1 this is a line in the r square.
+
+23
+00:12:03,908 --> 00:12:14,888
+Okay so depending on geometric interpretation of two lines let's write here L1.
+
+24
+00:12:15,427 --> 00:12:21,288
+This will be our first line and second equation our second line.
+
+25
+00:12:21,888 --> 00:12:24,188
+Let me write in a clear way.
+
+26
+00:12:24,187 --> 00:12:51,187
+Thank you.
+
+27
+00:12:49,971 --> 00:13:11,711
+Here we have L1, our first line, 2x-3y is 1, and L2, x-y is 5, I mean, okay, 5, okay.
+
+28
+00:13:11,711 --> 00:13:26,351
+And here our solution set, that writes S1, S2, or x-y, 7 over 5.
+
+29
+00:13:35,283 --> 00:13:39,224
+Sorry, let me put it here, 2.
+
+30
+00:13:41,563 --> 00:13:42,543
+Okay, 2.
+
+31
+00:13:46,864 --> 00:13:51,624
+7 over 5 and 17 over 5.
+
+32
+00:13:51,884 --> 00:13:53,744
+This is our solution for the system.
+
+33
+00:13:55,943 --> 00:13:59,384
+So, this is a unique solution case.
+
+34
+00:13:59,463 --> 00:14:01,144
+Our system is consistent.
+
+35
+00:14:02,943 --> 00:14:04,663
+We have 3 cases.
+
+36
+00:14:05,283 --> 00:14:08,543
+First case, unique solution.
+
+37
+00:14:13,364 --> 00:14:29,903
+So, our lines in the space, two-dimensional space, let me write here y and x, we have two lines, l1 and l2, and these two lines intersect in a point.
+
+38
+00:14:30,584 --> 00:14:40,764
+For this example, s1, s2, or intersection point. This is the solution of the system, that right here l1 and here l2.
+
+39
+00:14:40,764 --> 00:14:47,884
+Okay. The second case, the second case, infinitely many solutions.
+
+40
+00:14:57,652 --> 00:15:09,932
+So, if you take just one line, 2x minus 3y is 1, let examine the solution of L1, 2x minus 3y is 1.
+
+41
+00:15:09,932 --> 00:15:21,192
+So, here we have 2x, or let just take the second one, this is the solution, the second one is easiest to find than the first one.
+
+42
+00:15:21,432 --> 00:15:27,211
+Let's take second one, let's try to solve x and y in the second equation.
+
+43
+00:15:27,652 --> 00:15:43,312
+x minus 1 is 2, here x is equal to 2 plus y, so if you choose y as a real number, t, then x will be 2 plus t, and y is t.
+
+44
+00:15:43,912 --> 00:15:46,752
+Depending on any t, you will get a solution.
+
+45
+00:15:47,072 --> 00:15:51,552
+In this case, you have infinitely many solutions depending on one parameter.
+
+46
+00:15:51,552 --> 00:15:54,451
+So, we have two lines.
+
+47
+00:15:59,956 --> 00:16:04,956
+We have two lines, L1 and L2, or...
+
+48
+00:16:15,028 --> 00:16:29,728
+I need to fix my system with respect to second one, let right here, 4x minus 6y equal to 2.
+
+49
+00:16:29,908 --> 00:16:39,508
+Okay, two times over the first line. In this case, our two lines coincide to each other. L1 is parallel to L2.
+
+50
+00:16:39,508 --> 00:16:46,868
+This means that these two lines are coincide to each other. All the points on the lines are the same.
+
+51
+00:16:46,868 --> 00:16:51,368
+Okay, the intersection of L1, L2 is L1 or L2.
+
+52
+00:16:53,128 --> 00:16:54,868
+And third case...
+
+53
+00:17:00,179 --> 00:17:03,959
+Third case, there is no solution.
+
+54
+00:17:08,915 --> 00:17:13,415
+Bu durumda, sistemler için ikonsistim.
+
+55
+00:17:13,415 --> 00:17:15,415
+İnkonsistim.
+
+56
+00:17:21,428 --> 00:17:27,228
+So in this case our lines are parallel.
+
+57
+00:17:28,228 --> 00:17:31,188
+Let me write here L1, L2.
+
+58
+00:17:32,628 --> 00:17:34,948
+Excuse me, excuse me.
+
+59
+00:17:35,748 --> 00:17:38,628
+I need to change this.
+
+60
+00:17:38,628 --> 00:17:41,528
+L1 is a multiple OL2.
+
+61
+00:17:41,948 --> 00:17:47,008
+L1, your T is any element of I.
+
+62
+00:17:47,008 --> 00:17:54,308
+In the second case, L1 and L2 are coincide in each point.
+
+63
+00:17:54,308 --> 00:17:58,868
+And in the third case, we have no solution for the given system.
+
+64
+00:17:58,868 --> 00:18:00,828
+That's right here L1 and L2.
+
+65
+00:18:01,288 --> 00:18:03,868
+L1 is parallel to L2.
+
+66
+00:18:04,368 --> 00:18:06,928
+There is no points in the intersection.
+
+67
+00:18:08,488 --> 00:18:13,648
+The intersection of L1 and L2 is antiseptic.
+
+68
+00:18:13,648 --> 00:18:22,668
+Here the intersection of L1 and L2 is equal to L2 or L1.
+
+69
+00:18:25,008 --> 00:18:36,208
+And for the first case, the intersection of L1 and L2 here, L1, L2 is equal to S1, S2.
+
+70
+00:18:37,468 --> 00:18:39,628
+Just one point in the intersection.
+
+71
+00:18:39,628 --> 00:18:47,948
+We can generalize this concept to three-dimensional case.
+
+72
+00:18:47,948 --> 00:18:57,648
+In the three-dimensional case, we have three linear equations with three unknowns.
+
+73
+00:18:57,648 --> 00:19:09,728
+Let me write here A11, X plus A12, Y plus A13, Z as B1.
+
+74
+00:19:11,008 --> 00:19:14,568
+Our L, not L, here we have planes.
+
+75
+00:19:15,268 --> 00:19:18,628
+Let me write here P1, P2.
+
+76
+00:19:18,628 --> 00:19:29,108
+A21, X plus A21, X plus A22, Y plus A23, Z as B2 and B3.
+
+77
+00:19:29,828 --> 00:19:37,628
+Because this is the general equation of a plane in the three-dimensional space.
+
+78
+00:19:37,628 --> 00:19:52,088
+We have another system with three unknowns and three equations.
+
+79
+00:19:52,748 --> 00:19:58,807
+Here each equation determines a plane in the three-dimensional space.
+
+80
+00:19:58,807 --> 00:20:10,228
+So we can also examine the solution, the unique solution, infinitely many solution and no solution case for the three-dimensional case.
+
+81
+00:20:10,228 --> 00:20:16,228
+The first case, if our planes...
+
+82
+00:20:22,708 --> 00:20:28,708
+İzlediğiniz için, sadece bir nokta ile ilgili.
+
+83
+00:20:28,708 --> 00:20:30,708
+Ok, let me write here P1.
+
+84
+00:20:30,708 --> 00:20:45,708
+This will be our P1, this P2, and you can consider your room, and P3, the ceiling of your room, and P1, P2, the walls.
+
+85
+00:20:45,708 --> 00:20:57,708
+So, here we have an intersection point for 3 plane, let me write here P3, the orange one is P3, plane 3.
+
+86
+00:20:57,708 --> 00:21:06,708
+So just we have intersection of P1, P2, and P3, one element.
+
+87
+00:21:06,708 --> 00:21:19,708
+Let me write here S1, let me write here S1, S2, and S3.
+
+88
+00:21:19,708 --> 00:21:34,708
+If you put here A11, A11, S1 plus A12, S2 plus A13, S3 must be P1.
+
+89
+00:21:34,708 --> 00:21:39,708
+So S1, S1, S1, S2, S2, S2, S3 is a solution for the first equation.
+
+90
+00:21:39,708 --> 00:21:44,708
+Also must be a solution for the second and third equation.
+
+91
+00:21:44,708 --> 00:21:51,708
+This means that S1 is a point on the first plane, second plane, and the third plane.
+
+92
+00:21:51,708 --> 00:21:53,708
+Ok.
+
+93
+00:21:53,708 --> 00:21:57,708
+For this second case, infinitely many solution case.
+
+94
+00:22:12,243 --> 00:22:14,983
+İnfiniteli-many solution case in R cubed.
+
+95
+00:22:16,124 --> 00:22:30,763
+We have three planes, and all these three planes intersect along a line.
+
+96
+00:22:32,624 --> 00:22:32,923
+Okay.
+
+97
+00:22:33,823 --> 00:22:38,163
+You can consider your book, the page of a book.
+
+98
+00:22:42,483 --> 00:22:44,923
+Let me put another plane here.
+
+99
+00:22:49,395 --> 00:22:50,635
+And one more play.
+
+100
+00:22:57,940 --> 00:23:00,100
+Bu, bu, P3.
+
+101
+00:23:04,276 --> 00:23:06,276
+P1
+
+102
+00:23:07,276 --> 00:23:10,276
+ve P2
+
+103
+00:23:10,276 --> 00:23:20,276
+These three planes intersect along the orange line at right as L1
+
+104
+00:23:20,276 --> 00:23:22,276
+L1
+
+105
+00:23:22,276 --> 00:23:24,276
+The intersection of
+
+106
+00:23:26,276 --> 00:23:28,276
+P1
+
+107
+00:23:28,276 --> 00:23:30,276
+P2
+
+108
+00:23:30,276 --> 00:23:32,276
+P3 is just L1
+
+109
+00:23:32,276 --> 00:23:38,276
+The points on the L1 are common in each plane
+
+110
+00:23:38,276 --> 00:23:42,276
+In this case we have infinitely many solution points in L1
+
+111
+00:23:42,276 --> 00:23:46,276
+So in the intersection we have infinitely many solutions
+
+112
+00:23:46,276 --> 00:23:48,276
+Excuse me, infinitely many points
+
+113
+00:23:48,276 --> 00:23:50,276
+The third case
+
+114
+00:23:50,276 --> 00:23:52,276
+Third case
+
+115
+00:23:52,276 --> 00:23:54,276
+No solution case
+
+116
+00:23:54,276 --> 00:23:56,276
+For three dimension
+
+117
+00:24:09,364 --> 00:24:13,864
+We have three planes.
+
+118
+00:24:18,932 --> 00:24:21,491
+All these three planes are parallel to each other.
+
+119
+00:24:23,312 --> 00:24:32,211
+You have another one, P2, and P3.
+
+120
+00:24:37,428 --> 00:24:51,928
+All these three planes have no common points. P1 intersect, P2, P3 is empty set. There is no common points in the intersection.
+
+121
+00:24:56,819 --> 00:25:09,539
+So, for general case, let me have n linear equations. Each of these equations are called n linear equations.
+
+122
+00:25:09,539 --> 00:25:17,539
+a sub ij's are called coefficients of the equation.
+
+123
+00:25:22,099 --> 00:25:24,099
+Coefecians
+
+124
+00:25:24,099 --> 00:25:25,099
+Of the
+
+125
+00:25:25,099 --> 00:25:27,099
+Let me write here
+
+126
+00:25:27,099 --> 00:25:28,099
+L1
+
+127
+00:25:28,099 --> 00:25:29,099
+First Equation
+
+128
+00:25:35,092 --> 00:25:44,211
+and x1, x2, xn are called unknowns, unknowns.
+
+129
+00:25:47,508 --> 00:25:52,107
+ve b'ye kaltı bir koncentral ekonomik.
+
+130
+00:25:52,107 --> 00:25:54,908
+Let's write with another color.
+
+131
+00:25:54,908 --> 00:26:00,307
+This is the constant of equation.
+
+132
+00:26:07,635 --> 00:26:09,336
+Constatow, first approach.
+
+133
+00:26:12,788 --> 00:26:25,788
+Ok, if we put an equation with an unknowns, then we will get a linear system of equations with an unknowns.
+
+134
+00:26:25,788 --> 00:26:28,788
+Ok, this is a linear system of equation.
+
+135
+00:26:28,788 --> 00:26:36,788
+If our constants, at least one constant is non-zero, then this system is called a non-homogeneous system.
+
+136
+00:26:36,788 --> 00:26:42,788
+If all constants are zero, in this case we will get a homogeneous system.
+
+137
+00:26:42,788 --> 00:26:44,788
+But this is the general form.
+
+138
+00:26:44,788 --> 00:26:48,788
+All B sub i's can be zero or non-zero.
+
+139
+00:26:48,788 --> 00:26:54,788
+If at least one B sub i is non-zero, then our system is called a non-homogeneous system.
+
+140
+00:26:54,788 --> 00:27:01,788
+But if all B i's are zero, in this case we have a homogeneous system.
+
+141
+00:27:01,788 --> 00:27:10,788
+So, for the solution of this system, if you have elements, let's write here S.
+
+142
+00:27:10,788 --> 00:27:39,788
+Thank you.
+
+143
+00:27:15,155 --> 00:27:21,336
+with n element S1, S2, Sn.
+
+144
+00:27:22,135 --> 00:27:37,755
+If for each equation A11, S1 plus A12, S2 plus A1 and Sn is equal to B1,
+
+145
+00:27:37,755 --> 00:27:41,995
+in this case we say that S is a solution set for first equation.
+
+146
+00:27:41,995 --> 00:27:46,596
+If this is like for each equation in the system,
+
+147
+00:27:47,375 --> 00:27:51,695
+then we can say that S is a solution set for the given system.
+
+148
+00:27:51,995 --> 00:27:56,875
+Okay, if there is no such solution set, then there is no solution for the system
+
+149
+00:27:56,875 --> 00:28:00,515
+and this system is called an inconsistent system.
+
+150
+00:28:01,296 --> 00:28:09,155
+Okay, so we can represent our system by a matrix multiplication.
+
+151
+00:28:09,155 --> 00:28:14,576
+We just store all the coefficients in a matrix A.
+
+152
+00:28:15,415 --> 00:28:19,715
+The columns of A comes from the constant O.
+
+153
+00:28:19,715 --> 00:28:26,135
+The first column is the coefficient of the first unknown, S1.
+
+154
+00:28:26,895 --> 00:28:33,155
+Second column of A is the coefficient of the second unknown.
+
+155
+00:28:33,695 --> 00:28:42,155
+And the last column is the coefficient of the last unknown, S sub n.
+
+156
+00:28:42,155 --> 00:28:46,796
+So this matrix is called the coefficient matrix of the given system.
+
+157
+00:28:47,415 --> 00:28:50,355
+A is called the coefficient matrix of the system.
+
+158
+00:28:51,735 --> 00:28:58,115
+Also, we have vector of unknowns by Bolt X, capital Bolt X.
+
+159
+00:28:58,695 --> 00:29:00,816
+We have n unknowns in the system.
+
+160
+00:29:00,816 --> 00:29:10,556
+We store all our unknowns in a vector, in a column vector and all constants in a column vector also.
+
+161
+00:29:10,556 --> 00:29:14,556
+This is called the vector of constants.
+
+162
+00:29:14,556 --> 00:29:25,556
+So this is called the coefficient matrix.
+
+163
+00:29:25,556 --> 00:29:35,556
+So this is called the coefficient matrix matrix.
+
+164
+00:29:29,683 --> 00:29:31,683
+Vector of Armini.
+
+165
+00:29:33,683 --> 00:29:40,683
+By using these matrices, we can rewrite our system in one.
+
+166
+00:29:40,683 --> 00:29:43,683
+We put here an equation number.
+
+167
+00:29:43,683 --> 00:29:48,683
+We can represent this system by a matrix multiplication.
+
+168
+00:29:48,683 --> 00:29:51,683
+A times x is equal to b.
+
+169
+00:29:51,683 --> 00:29:57,683
+The simplest way to represent a huge linear system of equation.
+
+170
+00:29:57,683 --> 00:30:04,683
+Okay, so we will use a matrix related to this matrix equation.
+
+171
+00:30:04,683 --> 00:30:07,683
+This is called a matrix equation.
+
+172
+00:30:11,892 --> 00:30:17,092
+Depending on coefficient matrix and the vector of constants, we will solve this system.
+
+173
+00:30:17,892 --> 00:30:18,112
+Okay.
+
+174
+00:30:19,832 --> 00:30:32,352
+So, the matrix AB, we just append the vector of constant as the last column of the matrix.
+
+175
+00:30:32,532 --> 00:30:35,292
+We just append at the right side of coefficient matrix.
+
+176
+00:30:35,432 --> 00:30:38,352
+This matrix is called the augmented matrix of the system.
+
+177
+00:30:38,352 --> 00:30:45,152
+Augmented matrix of the system.
+
+178
+00:30:49,779 --> 00:30:55,660
+We use this matrix to solve a linear system equation.
+
+179
+00:30:56,119 --> 00:30:56,359
+Okay.
+
+180
+00:30:57,500 --> 00:30:58,599
+Let's give an example.
+
+181
+00:31:00,339 --> 00:31:01,940
+2x
+
+182
+00:31:06,291 --> 00:31:09,891
+yi'ye equal to minus 1
+
+183
+00:31:09,891 --> 00:31:13,891
+and x plus 2y'ye equal to 1
+
+184
+00:31:13,891 --> 00:31:20,091
+Here we have a linear system of equations with two equations and two unknowns
+
+185
+00:31:20,091 --> 00:31:24,091
+So our coefficient matrix A
+
+186
+00:31:24,091 --> 00:31:28,692
+is just 2 1 1 2
+
+187
+00:31:28,692 --> 00:31:31,692
+Our vector of unknowns
+
+188
+00:31:31,692 --> 00:31:33,692
+is xy
+
+189
+00:31:33,692 --> 00:31:38,692
+and vector constants
+
+190
+00:31:38,692 --> 00:31:41,692
+minus 1 1
+
+191
+00:31:41,692 --> 00:31:44,692
+If you multiply A by x
+
+192
+00:31:44,692 --> 00:31:52,692
+Ax is equal to 2 1 1 2 times xy
+
+193
+00:31:52,692 --> 00:31:55,692
+Result will be
+
+194
+00:31:55,692 --> 00:32:01,692
+Here we have a 2 by 2 square matrix and a 2 by 1
+
+195
+00:32:01,692 --> 00:32:04,692
+matrix
+
+196
+00:32:04,692 --> 00:32:09,692
+Result will be a 2 by 1 matrix also
+
+197
+00:32:09,692 --> 00:32:11,692
+2 times x plus 1 times y
+
+198
+00:32:11,692 --> 00:32:16,692
+Our first entry will be 2x plus
+
+199
+00:32:16,692 --> 00:32:24,692
+2x plus y and the second one will be x plus 2y
+
+200
+00:32:24,692 --> 00:32:26,692
+This is equal to
+
+201
+00:32:26,692 --> 00:32:28,692
+b
+
+202
+00:32:28,692 --> 00:32:32,692
+b is just minus 1 1
+
+203
+00:32:32,692 --> 00:32:35,692
+By the matrix equality
+
+204
+00:32:35,692 --> 00:32:37,692
+corresponding entries must be equal
+
+205
+00:32:37,692 --> 00:32:42,692
+The dimension and the corresponding entries of both matrices must be equal
+
+206
+00:32:42,692 --> 00:32:45,692
+So we have 2x plus y
+
+207
+00:32:45,692 --> 00:32:49,692
+Equal minus 1 and x plus 2y is 1
+
+208
+00:32:49,692 --> 00:32:52,692
+So
+
+209
+00:32:52,692 --> 00:32:55,692
+There is a representation
+
+210
+00:32:55,692 --> 00:32:57,692
+We can
+
+211
+00:32:57,692 --> 00:33:02,692
+represent each linear system of equation by a matrix multiplication
+
+212
+00:33:02,692 --> 00:33:06,692
+And if you have a matrix multiplication in this form
+
+213
+00:33:06,692 --> 00:33:07,692
+Then we can
+
+214
+00:33:07,692 --> 00:33:10,692
+Write a linear system of equations
+
+215
+00:33:10,692 --> 00:33:11,692
+Okay
+
+216
+00:33:11,692 --> 00:33:15,692
+And the augmented matrix of this system
+
+217
+00:33:15,692 --> 00:33:16,692
+That's right here
+
+218
+00:33:16,692 --> 00:33:17,692
+For this example
+
+219
+00:33:17,692 --> 00:33:19,692
+Special example
+
+220
+00:33:19,692 --> 00:33:23,692
+Is a 2 by 3 matrix
+
+221
+00:33:23,692 --> 00:33:24,692
+2 1
+
+222
+00:33:24,692 --> 00:33:25,692
+1 2
+
+223
+00:33:25,692 --> 00:33:26,692
+And just put here a bar
+
+224
+00:33:26,692 --> 00:33:28,692
+Vertical bar and minus 1 1
+
+225
+00:33:28,692 --> 00:33:30,692
+This is our augmented matrix
+
+226
+00:33:30,692 --> 00:33:32,692
+For the
+
+227
+00:33:32,692 --> 00:33:33,692
+Given system
+
+228
+00:33:33,692 --> 00:33:34,692
+Okay
+
+229
+00:33:34,692 --> 00:33:35,692
+Any question here?
+
+230
+00:33:35,692 --> 00:33:36,692
+Okay
+
+231
+00:33:36,692 --> 00:33:37,692
+Any question here?
+
+232
+00:33:37,692 --> 00:33:38,692
+Okay
+
+233
+00:33:38,692 --> 00:33:58,692
+Any question here?
+
+234
+00:33:57,940 --> 00:34:20,460
+We have already known about the rank of a matrix, that we have a matrix A, and we applied some elementary operations to A, get the reduced, the row echelon form of A, and at right here C, C is reduced row echelon form of A also.
+
+235
+00:34:20,460 --> 00:34:28,619
+Rank of A, rank of A, is equal to the number of,
+
+236
+00:34:32,916 --> 00:34:49,916
+Number of nonzero rows in D or C. This number is equal. The nonzero rows in D or C are equal.
+
+237
+00:34:49,916 --> 00:35:00,916
+Okay. So the number of nonzero rows in the row echelon form or reduced row echelon form of a matrix is called the rank of this matrix. This is the rank of A.
+
+238
+00:35:05,876 --> 00:35:25,336
+Here we have an example. A 4x5 matris, we just put it in the row echelon form. This is the row echelon form OA, because we have two leading terms. Leading terms are the only non-zero elements of its column.
+
+239
+00:35:25,336 --> 00:35:48,836
+And we have two all-zero rows at the bottom of the matris. So, the number of non-zero rows, first and second rows, are non-zero. It's two. So, the rank OA is two. If you put C in the reduced row echelon form, excuse me, this is in reduced row echelon form.
+
+240
+00:35:48,836 --> 00:36:06,536
+Also, the row echelon form OA has two non-zero rows. In the row echelon form, instead of this zero, you may have a non-zero entry. This doesn't affect the number of non-zero rows. Okay.
+
+241
+00:36:10,708 --> 00:36:25,847
+Let's give the Gauss-Jordan elimination. We have, that we have a linear system of equation in the matrix for A of x equal to b. Here A is a n by n matrix.
+
+242
+00:36:25,847 --> 00:36:46,947
+X is a, right here, x sub i is a n by 1 matrix and b, let me write here b sub j, is a n by 1 matrix. Okay.
+
+243
+00:36:46,947 --> 00:37:03,968
+First, form the augmented matrix of A, given system, A, B, and put A, B in the reduced row echelon form or row echelon form.
+
+244
+00:37:04,628 --> 00:37:06,228
+Let me write here c, d.
+
+245
+00:37:19,795 --> 00:37:33,135
+If, depending on the rank of A and rank of AB, we will examine the solution of the system.
+
+246
+00:37:33,135 --> 00:37:44,556
+First case, if rank of A is different from rank of AB.
+
+247
+00:37:49,012 --> 00:37:52,912
+Then, there is no solution.
+
+248
+00:38:00,148 --> 00:38:02,148
+Bu durum, bu durum, sayestet.
+
+249
+00:38:09,172 --> 00:38:11,572
+System is inconsistent.
+
+250
+00:38:14,172 --> 00:38:19,172
+The system is inconsistent.
+
+251
+00:38:24,307 --> 00:38:33,947
+Ok, this is our first case. For a non-homogeneous system. Ok, here B is non-zero, our system is non-homogeneous.
+
+252
+00:38:37,967 --> 00:38:47,847
+We form the augmented matrix of the system and we put it into reduced row echelon or row echelon form and we find the rank of A.
+
+253
+00:38:47,847 --> 00:38:59,307
+rank of A will be the non-zero rows of C and rank of AB non-zero rows in CD, the extended version of the matrix A.
+
+254
+00:39:00,088 --> 00:39:06,148
+So if these two parameters are different to each other, in this case system is inconsistent. There is no solution.
+
+255
+00:39:08,047 --> 00:39:10,987
+Second case.
+
+256
+00:39:12,748 --> 00:39:13,148
+If
+
+257
+00:39:13,148 --> 00:39:15,347
+rank of A
+
+258
+00:39:15,347 --> 00:39:18,847
+is equal to rank of AB.
+
+259
+00:39:25,460 --> 00:39:28,960
+Solutyon, or solutions.
+
+260
+00:39:30,960 --> 00:39:32,159
+Let me write.
+
+261
+00:39:36,659 --> 00:39:39,659
+Bu, bu iki tane tane.
+
+262
+00:39:39,659 --> 00:39:46,659
+Bu,
+
+263
+00:39:50,900 --> 00:40:13,660
+Solution or solutions. The first case, let's write it to that one. If rank of a, rank of a, because rank of a is equal to rank of a, b, let's call this as r, is equal to number of unknowns, because in the vector x we have n rows, so we have n unknowns.
+
+264
+00:40:19,603 --> 00:40:21,603
+We have unique solution in this case.
+
+265
+00:40:21,884 --> 00:40:23,003
+We have unique solution.
+
+266
+00:40:27,284 --> 00:40:42,744
+And if the rank of A is, are smaller than, strictly smaller than, and the number of unknowns, let me write here, the number of unknowns.
+
+267
+00:40:50,643 --> 00:41:01,683
+N is the number of unknowns in the given system, or is the number of equations in the reduced form of the system.
+
+268
+00:41:02,243 --> 00:41:05,723
+Okay, not in the first case, in the reduced form.
+
+269
+00:41:06,683 --> 00:41:12,623
+Because some equations may be the multiple of each other, may be linearly dependent.
+
+270
+00:41:12,623 --> 00:41:22,263
+In this case, or the second case, we have infinitely many solutions.
+
+271
+00:41:29,652 --> 00:41:31,152
+Depending on...
+
+272
+00:41:34,963 --> 00:41:43,683
+n-r parametre. n is bigger than r, so n-r is positive n-r parametre.
+
+273
+00:41:46,003 --> 00:41:52,443
+Okay. We have three cases for the solution of a non-homogeneous system.
+
+274
+00:41:53,143 --> 00:41:59,364
+Inconsistent case, there is no solution, unique solution case and infinitely many solution case.
+
+275
+00:41:59,364 --> 00:42:18,623
+But if we choose b as an all zero matrix, excuse me, all zero row or vector, in this case, each type, rank of a is equal to rank of a, because all zero column doesn't affect the rank of a.
+
+276
+00:42:18,623 --> 00:42:28,003
+So, rank of a is equal to rank of a, b, and we will have a solution or solutions.
+
+277
+00:42:28,623 --> 00:42:36,183
+For the non-homogeneous, excuse me, homogeneous system, inconsistent case is not a case.
+
+278
+00:42:36,603 --> 00:42:37,523
+It doesn't occur.
+
+279
+00:42:37,983 --> 00:42:38,143
+Okay.
+
+280
+00:42:39,423 --> 00:42:40,443
+Let's give an example.
+
+281
+00:42:40,443 --> 00:42:48,724
+For the, this, all this process, all this process, known as the Gauss-Jordan elimination method.
+
+282
+00:42:48,724 --> 00:42:49,284
+Okay.
+
+283
+00:42:50,364 --> 00:43:03,643
+Just form the augmented matrix, put it into reduced row echelon form or row echelon form, and then examine the new form of the matrix
+
+284
+00:43:03,643 --> 00:43:10,483
+to decide the solution or non-solution of the given system.
+
+285
+00:43:11,244 --> 00:43:24,224
+Here we have a linear system of equation, a, in the matrix for a, x equal to b, and here we have c, x equal to d.
+
+286
+00:43:24,563 --> 00:43:31,384
+Because of a, b is equivalent to c, d, a, x equal to d has same solution with the c, x equal to d.
+
+287
+00:43:31,384 --> 00:43:34,003
+We have a complicated system.
+
+288
+00:43:34,123 --> 00:43:41,603
+We apply some elementary row operations, just, we can apply row operations, and we get a reduced form of the first case.
+
+289
+00:43:41,943 --> 00:43:46,344
+A simplest case of the, x equal to b.
+
+290
+00:43:46,784 --> 00:43:54,364
+So, this is, this, this, this system is very, very simplified.
+
+291
+00:43:54,844 --> 00:43:57,003
+It is much more closer to the solution.
+
+292
+00:43:57,344 --> 00:43:57,543
+Okay.
+
+293
+00:43:58,983 --> 00:44:00,784
+Let's give an example.
+
+294
+00:44:01,384 --> 00:44:04,244
+For the Gauss-Jordan elimination.
+
+295
+00:44:11,539 --> 00:44:34,539
+Here we have a system. Note that in the system one, all equations are in the normal form. At the left hand side we have some multiple unknowns and at the right hand side we have constants. Excuse me.
+
+296
+00:44:38,771 --> 00:44:50,931
+So, here we have some unknowns times some constants, and we add all these terms, and at the right-hand side we have a constant.
+
+297
+00:44:50,931 --> 00:45:00,371
+This form is called the normal form of an equation. Normal form of an equation.
+
+298
+00:45:01,052 --> 00:45:07,112
+In order to write in the matrix form, our all equations must be in the normal form.
+
+299
+00:45:07,112 --> 00:45:16,331
+Okay, maybe if you write here minus b1 equal to zero, this equation is not in the normal form.
+
+300
+00:45:16,331 --> 00:45:21,891
+We need to put b1 at the right-hand side. Okay.
+
+301
+00:45:33,235 --> 00:45:39,675
+Here we have a system, linear system of equation with three unknowns and three equations.
+
+302
+00:45:40,275 --> 00:45:43,295
+Our first equation is in the normal form.
+
+303
+00:45:43,295 --> 00:45:50,915
+Let's write here x minus y plus 3z equal to 1.
+
+304
+00:45:50,975 --> 00:45:59,135
+If you multiply any of this equation by minus 1, this doesn't affect the solution of the system.
+
+305
+00:45:59,536 --> 00:45:59,635
+Okay.
+
+306
+00:45:59,635 --> 00:46:05,795
+Our second equation, y is equal to minus 2x plus 5.
+
+307
+00:46:06,255 --> 00:46:09,455
+This equation is not in the normal form.
+
+308
+00:46:09,455 --> 00:46:13,675
+So we need to put equation in the normal form.
+
+309
+00:46:13,835 --> 00:46:19,875
+Just convey minus 2x to the left side of the equation.
+
+310
+00:46:20,315 --> 00:46:26,655
+So here we have 2x plus y is equal to 5.
+
+311
+00:46:26,655 --> 00:46:30,536
+Because 0 times c, you can write here 0 times c.
+
+312
+00:46:31,536 --> 00:46:40,635
+And the last equation, in the last equation, 9z minus x minus 5, 5 plus 7 equal to 0.
+
+313
+00:46:40,735 --> 00:46:42,516
+This is also in not normal form.
+
+314
+00:46:42,516 --> 00:46:49,375
+So you need to rearrange the order of unknowns.
+
+315
+00:46:49,895 --> 00:46:53,855
+This is important when we write the coefficient matrix.
+
+316
+00:46:54,135 --> 00:47:00,115
+We just take the coefficient of the first unknown, second unknown, and the third unknown or the last unknown.
+
+317
+00:47:00,115 --> 00:47:05,435
+So the order of unknowns is important in the normal form.
+
+318
+00:47:05,695 --> 00:47:08,775
+We cannot mix the order of unknowns.
+
+319
+00:47:08,775 --> 00:47:15,955
+So let me write this as I want to get a positive constant.
+
+320
+00:47:15,955 --> 00:47:28,175
+So I will move these unknowns at the right-hand side of the equation to get x plus 5y minus 9z equal to 7.
+
+321
+00:47:28,175 --> 00:47:31,935
+This is a system in the normal form.
+
+322
+00:47:32,835 --> 00:47:40,335
+So we can write this system by matrix language, by matrix multiplication.
+
+323
+00:47:40,895 --> 00:47:51,536
+Our coefficient matrix is just right as the first column, the constant of the first unknown, x, 1, 2, 1.
+
+324
+00:47:51,536 --> 00:48:00,375
+And the coefficient of the y second unknown is minus 1, 1, and 5.
+
+325
+00:48:00,975 --> 00:48:07,715
+And the coefficient of the last unknown, z, we have 3, 0, and minus 9.
+
+326
+00:48:08,115 --> 00:48:10,775
+Okay, this is our coefficient matrix.
+
+327
+00:48:17,907 --> 00:48:19,327
+Matris O, sistem.
+
+328
+00:48:23,891 --> 00:48:36,431
+Our unknowns are x, y, z, and the vector of constants 1, 5, 7.
+
+329
+00:48:36,431 --> 00:48:37,611
+Okay.
+
+330
+00:48:38,451 --> 00:48:46,251
+So, we can rewrite this system by matrix multiplication.
+
+331
+00:48:46,911 --> 00:48:49,571
+A times x is equal to b.
+
+332
+00:48:49,571 --> 00:48:54,371
+This is the matrix representation of the given system.
+
+333
+00:49:10,579 --> 00:49:14,380
+Let's try to solve the solution of this system.
+
+334
+00:49:14,920 --> 00:49:20,440
+To do this, first we need to form the augmented matrix of the system, AB.
+
+335
+00:49:23,000 --> 00:49:28,440
+Rewrite A and just append the vector of constants at the right hand side.
+
+336
+00:49:30,039 --> 00:49:34,579
+At the end of the matrix as the last column of the matrix.
+
+337
+00:49:34,579 --> 00:49:46,440
+Minus 1, 1, 5 and here we have, please follow carefully in any mistake, let me know.
+
+338
+00:49:48,019 --> 00:49:49,500
+3, 0, minus 9.
+
+339
+00:49:49,679 --> 00:49:54,059
+Okay, and here we have 1, 5, 7.
+
+340
+00:49:56,199 --> 00:50:04,340
+I will apply row operations to put this matrix in the row echelon form and then reduce row echelon form.
+
+341
+00:50:04,579 --> 00:50:11,279
+To do this, we need to remove these two elements because here we have a leading one.
+
+342
+00:50:11,699 --> 00:50:18,920
+Leading one must be the only non-zero entries of its column, so we need to remove 2 and 1.
+
+343
+00:50:19,579 --> 00:50:33,880
+To do this, just apply minus 2 R1 plus R2 as our new R2 and minus R1 plus R2 as our, excuse me, R3, our new R3.
+
+344
+00:50:34,579 --> 00:50:38,900
+And get an equivalent form of the augmented matrix.
+
+345
+00:50:38,900 --> 00:50:58,900
+And get an equivalent form of the matrix.
+
+346
+00:50:47,507 --> 00:50:48,268
+Any questions?
+
+347
+00:50:59,668 --> 00:51:04,988
+Bir soru, 1-1, 3.
+
+348
+00:51:05,668 --> 00:51:08,208
+Ve bir bir bar var, 1.
+
+349
+00:51:09,548 --> 00:51:10,488
+Yine de 0.
+
+350
+00:51:10,827 --> 00:51:16,327
+2-2, 2-2, 2-2, 2-2, 2-2, 3.
+
+351
+00:51:17,048 --> 00:51:20,168
+Yine de 6.
+
+352
+00:51:21,228 --> 00:51:23,568
+6-6, 0-6.
+
+353
+00:51:23,708 --> 00:51:29,128
+Ve yine de 2, 5-3.
+
+354
+00:51:29,668 --> 00:51:58,668
+Ve yine de 6.
+
+355
+00:51:51,923 --> 00:51:58,123
+We need to normalize first entry of second row and the last row.
+
+356
+00:51:58,123 --> 00:52:11,923
+And to do this just multiply 1 over 3 by R2 as your new R2 and 1 over 6 R3 your new R3.
+
+357
+00:52:11,923 --> 00:52:16,923
+And get a acquired form of the matrix.
+
+358
+00:52:16,923 --> 00:52:20,923
+Just copy first row.
+
+359
+00:52:20,923 --> 00:52:29,923
+Our second row is 0, 1, minus 2, 1.
+
+360
+00:52:29,923 --> 00:52:37,923
+Here we have 0, 1, minus 2, 1 also.
+
+361
+00:52:37,923 --> 00:52:44,923
+Please notice that second and last rows of the matrix are the same.
+
+362
+00:52:44,923 --> 00:52:52,923
+So by applying one operation we can get all 0 row at the bottom of the matrix.
+
+363
+00:52:52,923 --> 00:52:58,923
+Minus R2 plus R3 will be our new R3.
+
+364
+00:53:07,027 --> 00:53:21,027
+1-1, 3, 1, 0, 1-2, 1, and here we have 0, 0, 0, 0.
+
+365
+00:53:21,027 --> 00:53:22,027
+Ok.
+
+366
+00:53:23,027 --> 00:53:29,027
+We get row echelon form of the augmented matrix.
+
+367
+00:53:29,027 --> 00:53:31,027
+This is the row echelon form.
+
+368
+00:53:31,027 --> 00:53:41,027
+You can use row echelon form to get the solution, but you need to do more operations on the new system.
+
+369
+00:53:41,027 --> 00:53:44,027
+Let's apply one more operation.
+
+370
+00:53:44,027 --> 00:53:49,027
+Here we can find the rank of A and rank of AB.
+
+371
+00:53:49,027 --> 00:54:00,027
+The rank of A is the number of non-zero entries in the first part and the rank of AB is the number of non-zero rows in the whole matrix.
+
+372
+00:54:00,027 --> 00:54:01,027
+Ok.
+
+373
+00:54:03,027 --> 00:54:06,027
+You can see the rank is 2 for both matrices.
+
+374
+00:54:08,027 --> 00:54:10,027
+We need to remove this element.
+
+375
+00:54:10,027 --> 00:54:18,027
+Just add first and second row R1 plus R2 as your new R2.
+
+376
+00:54:26,099 --> 00:54:40,239
+Here you have 1, 0, 1, 2, 0, 1, minus 2, 1, and all 0 rho at the bottom.
+
+377
+00:54:41,639 --> 00:54:45,380
+This is our reduced rho echelon form.
+
+378
+00:54:45,380 --> 00:54:47,960
+Okay.
+
+379
+00:54:50,799 --> 00:54:57,400
+Let's use rho echelon form and reduce rho echelon form to find the solution.
+
+380
+00:54:57,519 --> 00:55:00,719
+We can use each matrices.
+
+381
+00:55:05,364 --> 00:55:30,364
+Depending on rho echelon form, let's rewrite our system. Let me denote this form as D' or C' D' and this matrix as CD, the reduced rho echelon form of the augmented matrix.
+
+382
+00:55:30,364 --> 00:55:49,364
+So, we have two new linear systems which are, has the same solution with the A' x equal to B. Here we have C' x equal to D' and here we have C' x equal to D.
+
+383
+00:55:49,364 --> 00:55:57,364
+The solution of C' x d' and C' x equal to D will be the same as with A' x equal to D.
+
+384
+00:55:57,364 --> 00:56:04,364
+Okay. Let's rewrite our systems and try to find the solution.
+
+385
+00:56:04,364 --> 00:56:16,364
+Our new system will be by the first rho of the C' D' we have x minus y because this is the coefficient of x.
+
+386
+00:56:16,364 --> 00:56:23,364
+The second column will be the coefficient of y and the third column will be the coefficient of z.
+
+387
+00:56:23,364 --> 00:56:33,364
+Plus 3z will be equal to 1 and here we have y minus 2z equal to 1.
+
+388
+00:56:33,364 --> 00:56:43,364
+We, our 1 equation, when you should, or these operations, these rho operations.
+
+389
+00:56:43,364 --> 00:56:56,364
+We have all 0 rho, so we lost our 1 equation. At the beginning we have 3 equation, we have 3 equations, excuse me, we have 3 equations.
+
+390
+00:56:56,364 --> 00:57:03,364
+At the beginning and we applied some elementary rho operations. In the rho echelon form we have 2 equations.
+
+391
+00:57:03,364 --> 00:57:17,364
+And also in the reduced rho form of the augmented matrix we also have 2 equations.
+
+392
+00:57:17,364 --> 00:57:22,364
+You are right. R1 plus R2 must be R1. Thank you, [öğrenci].
+
+393
+00:57:22,364 --> 00:57:42,364
+R1. Thank you, [öğrenci].
+
+394
+00:57:30,579 --> 00:57:56,000
+So, we will try to solve x, y, z in this system. This is as simple, simplest case, if you compare with the beginning. Here we have a little bit complicated system than the system derived from the row echelon form.
+
+395
+00:57:56,000 --> 00:58:04,239
+So, here we have y is equal to 1 plus 2 z. And, use back substitution.
+
+396
+00:58:09,684 --> 00:58:11,684
+and x is equal to
+
+397
+00:58:11,684 --> 00:58:14,644
+instead of y just write
+
+398
+00:58:14,644 --> 00:58:15,964
+1 plus 2z
+
+399
+00:58:15,964 --> 00:58:18,464
+1 plus 2 minus 1
+
+400
+00:58:18,464 --> 00:58:20,403
+minus 2z plus 3z
+
+401
+00:58:20,403 --> 00:58:22,304
+will be minus 1
+
+402
+00:58:22,304 --> 00:58:24,344
+plus z and
+
+403
+00:58:24,344 --> 00:58:28,284
+just convey these
+
+404
+00:58:28,284 --> 00:58:30,244
+entries at the right hand side
+
+405
+00:58:30,244 --> 00:58:32,044
+you will get 2 minus z
+
+406
+00:58:32,044 --> 00:58:34,024
+ok 2 minus
+
+407
+00:58:34,024 --> 00:58:35,684
+and z is z
+
+408
+00:58:35,684 --> 00:58:40,284
+so if you choose
+
+409
+00:58:40,284 --> 00:58:42,044
+z as a free parameter
+
+410
+00:58:42,044 --> 00:58:43,964
+here because we have
+
+411
+00:58:43,964 --> 00:58:45,264
+rank o
+
+412
+00:58:45,264 --> 00:58:46,664
+let me write here
+
+413
+00:58:46,664 --> 00:58:49,144
+rank o a
+
+414
+00:58:49,144 --> 00:58:51,384
+is equal to rank o
+
+415
+00:58:51,384 --> 00:58:53,184
+a b
+
+416
+00:58:53,184 --> 00:58:56,504
+this number is 2
+
+417
+00:58:56,504 --> 00:58:58,544
+the number of non-zero rows
+
+418
+00:58:58,544 --> 00:59:01,484
+in row echelon form or reduced row echelon form
+
+419
+00:59:01,484 --> 00:59:02,664
+this number is 2
+
+420
+00:59:02,664 --> 00:59:04,504
+this is the number of
+
+421
+00:59:04,504 --> 00:59:07,504
+equations in the new system
+
+422
+00:59:07,504 --> 00:59:08,544
+we have 2
+
+423
+00:59:08,544 --> 00:59:10,784
+equations in the new system
+
+424
+00:59:10,784 --> 00:59:12,984
+so we have 3 unknowns
+
+425
+00:59:12,984 --> 00:59:14,084
+depending on
+
+426
+00:59:14,084 --> 00:59:15,403
+3 minus 2
+
+427
+00:59:15,403 --> 00:59:16,544
+one parameter
+
+428
+00:59:16,544 --> 00:59:17,923
+we have
+
+429
+00:59:17,923 --> 00:59:19,644
+infinitely many solutions
+
+430
+00:59:19,644 --> 00:59:20,604
+let's choose
+
+431
+00:59:20,604 --> 00:59:21,704
+z as t
+
+432
+00:59:21,704 --> 00:59:24,744
+an arbitrary real number
+
+433
+00:59:24,744 --> 00:59:25,964
+so our
+
+434
+00:59:25,964 --> 00:59:31,324
+unknowns will be
+
+435
+00:59:31,324 --> 00:59:32,264
+x will be
+
+436
+00:59:32,264 --> 00:59:33,264
+2 minus t
+
+437
+00:59:33,264 --> 00:59:35,264
+y is
+
+438
+00:59:35,264 --> 00:59:36,344
+1 plus
+
+439
+00:59:36,344 --> 00:59:37,484
+2t
+
+440
+00:59:37,484 --> 00:59:38,524
+and z is t
+
+441
+00:59:38,524 --> 00:59:40,004
+so
+
+442
+00:59:40,004 --> 00:59:42,624
+by writing this in the matrix form
+
+443
+00:59:42,624 --> 00:59:43,844
+let me write here
+
+444
+00:59:43,844 --> 00:59:45,324
+x y z
+
+445
+00:59:45,324 --> 00:59:47,324
+will be
+
+446
+00:59:47,324 --> 00:59:48,044
+equal to
+
+447
+00:59:48,044 --> 00:59:49,724
+2 minus t
+
+448
+00:59:49,724 --> 00:59:51,084
+1 plus
+
+449
+00:59:51,084 --> 00:59:51,804
+2t
+
+450
+00:59:51,804 --> 00:59:52,923
+and t
+
+451
+00:59:52,923 --> 00:59:54,844
+and we can
+
+452
+00:59:54,844 --> 00:59:56,144
+separate this
+
+453
+00:59:56,144 --> 00:59:58,664
+matrix
+
+454
+00:59:58,664 --> 01:00:01,423
+or we can rewrite
+
+455
+01:00:01,423 --> 01:00:02,423
+in this form
+
+456
+01:00:02,423 --> 01:00:02,923
+2
+
+457
+01:00:02,923 --> 01:00:03,824
+1 0
+
+458
+01:00:03,824 --> 01:00:05,264
+plus
+
+459
+01:00:05,264 --> 01:00:06,524
+t times
+
+460
+01:00:06,524 --> 01:00:08,604
+minus 1
+
+461
+01:00:08,604 --> 01:00:10,024
+2 1
+
+462
+01:00:10,024 --> 01:00:10,884
+ok
+
+463
+01:00:10,884 --> 01:00:13,084
+here t is a real number
+
+464
+01:00:13,084 --> 01:00:16,444
+for
+
+465
+01:00:16,444 --> 01:00:18,423
+each t
+
+466
+01:00:18,423 --> 01:00:19,564
+you will have a solution
+
+467
+01:00:19,564 --> 01:00:20,423
+if you choose
+
+468
+01:00:20,423 --> 01:00:21,004
+t as
+
+469
+01:00:21,004 --> 01:00:21,984
+as 0
+
+470
+01:00:21,984 --> 01:00:22,724
+your solution
+
+471
+01:00:22,724 --> 01:00:23,403
+will be
+
+472
+01:00:23,403 --> 01:00:24,624
+2 1 0
+
+473
+01:00:24,624 --> 01:00:25,564
+if you choose
+
+474
+01:00:25,564 --> 01:00:26,704
+t as 1
+
+475
+01:00:26,704 --> 01:00:27,423
+your solution
+
+476
+01:00:27,423 --> 01:00:28,044
+will be
+
+477
+01:00:28,044 --> 01:00:28,644
+1
+
+478
+01:00:28,644 --> 01:00:31,204
+3 1
+
+479
+01:00:31,204 --> 01:00:33,684
+for each t
+
+480
+01:00:33,684 --> 01:00:35,104
+you will have a solution
+
+481
+01:00:35,104 --> 01:00:36,384
+in this case
+
+482
+01:00:36,384 --> 01:00:36,964
+we have
+
+483
+01:00:36,964 --> 01:00:38,903
+infinitely many solutions
+
+484
+01:00:38,903 --> 01:00:40,784
+depending on
+
+485
+01:00:40,784 --> 01:00:41,524
+one parameter
+
+486
+01:00:41,524 --> 01:00:42,324
+our parameter
+
+487
+01:00:42,324 --> 01:00:42,984
+is t
+
+488
+01:00:42,984 --> 01:00:43,664
+we just
+
+489
+01:00:43,664 --> 01:00:44,964
+assign z
+
+490
+01:00:44,964 --> 01:00:45,564
+as t
+
+491
+01:00:45,564 --> 01:00:46,344
+you can
+
+492
+01:00:46,344 --> 01:00:47,584
+you can choose
+
+493
+01:00:47,584 --> 01:00:49,064
+any
+
+494
+01:00:49,064 --> 01:00:50,504
+unknown
+
+495
+01:00:50,504 --> 01:00:51,824
+as your free parameter
+
+496
+01:00:51,824 --> 01:00:52,664
+in this case
+
+497
+01:00:52,664 --> 01:00:53,084
+we have
+
+498
+01:00:53,084 --> 01:00:54,224
+one free parameter
+
+499
+01:00:54,224 --> 01:00:55,164
+because of
+
+500
+01:00:55,164 --> 01:00:56,444
+this fact
+
+501
+01:00:56,444 --> 01:00:57,844
+we have
+
+502
+01:00:57,844 --> 01:00:58,624
+three unknowns
+
+503
+01:00:58,624 --> 01:00:59,444
+and we have
+
+504
+01:00:59,444 --> 01:01:01,204
+two equations
+
+505
+01:01:01,204 --> 01:01:02,384
+in the reduced form
+
+506
+01:01:02,384 --> 01:01:03,384
+of the system
+
+507
+01:01:03,384 --> 01:01:04,064
+so
+
+508
+01:01:04,064 --> 01:01:05,224
+depending on
+
+509
+01:01:05,224 --> 01:01:07,124
+this parameter
+
+510
+01:01:07,124 --> 01:01:08,684
+3 minus 2
+
+511
+01:01:08,684 --> 01:01:09,084
+1
+
+512
+01:01:09,084 --> 01:01:11,404
+depending on
+
+513
+01:01:11,404 --> 01:01:12,224
+one parameter
+
+514
+01:01:12,224 --> 01:01:12,684
+we have
+
+515
+01:01:12,684 --> 01:01:13,423
+infinitely many
+
+516
+01:01:13,423 --> 01:01:13,964
+solutions
+
+517
+01:01:13,964 --> 01:01:15,824
+this is the solution
+
+518
+01:01:15,824 --> 01:01:16,684
+which is derived
+
+519
+01:01:16,684 --> 01:01:17,244
+from the
+
+520
+01:01:17,244 --> 01:01:18,264
+row echelon form
+
+521
+01:01:18,264 --> 01:01:19,304
+by using
+
+522
+01:01:19,304 --> 01:01:20,624
+reduced row echelon form
+
+523
+01:01:20,624 --> 01:01:21,064
+we can
+
+524
+01:01:21,064 --> 01:01:21,644
+also
+
+525
+01:01:21,644 --> 01:01:23,204
+obtain the solution
+
+526
+01:01:23,204 --> 01:01:23,844
+of the system
+
+527
+01:01:23,844 --> 01:01:24,684
+let's rewrite
+
+528
+01:01:24,684 --> 01:01:26,484
+the new equation
+
+529
+01:01:26,484 --> 01:01:27,264
+our
+
+530
+01:01:27,264 --> 01:01:28,903
+first equation
+
+531
+01:01:28,903 --> 01:01:29,824
+will be
+
+532
+01:01:29,824 --> 01:01:30,244
+1
+
+533
+01:01:30,244 --> 01:01:31,004
+plus
+
+534
+01:01:31,004 --> 01:01:31,423
+x
+
+535
+01:01:31,423 --> 01:01:32,304
+x plus
+
+536
+01:01:32,304 --> 01:01:32,564
+c
+
+537
+01:01:32,564 --> 01:01:33,084
+equal to
+
+538
+01:01:33,084 --> 01:01:33,544
+2
+
+539
+01:01:33,544 --> 01:01:37,764
+and use
+
+540
+01:01:37,764 --> 01:01:39,004
+reduce
+
+541
+01:01:39,004 --> 01:01:40,884
+row echelon form
+
+542
+01:01:40,884 --> 01:01:41,544
+1
+
+543
+01:01:41,544 --> 01:01:42,444
+2
+
+544
+01:01:42,444 --> 01:01:42,504
+1
+
+545
+01:01:42,504 --> 01:01:43,004
+2
+
+546
+01:01:43,004 --> 01:01:43,584
+1
+
+547
+01:01:43,584 --> 01:01:46,844
+2
+
+548
+01:01:46,844 --> 01:01:47,124
+3
+
+549
+01:01:47,124 --> 01:01:47,724
+2
+
+550
+01:01:47,724 --> 01:01:48,264
+3
+
+551
+01:01:48,264 --> 01:01:48,584
+2
+
+552
+01:01:48,584 --> 01:01:49,124
+3
+
+553
+01:01:45,684 --> 01:01:49,684
+x plus z is equal to 2. This is our first equation.
+
+554
+01:01:50,884 --> 01:01:55,684
+And second equation will be y minus 2z equal to 1.
+
+555
+01:01:56,684 --> 01:02:00,684
+y minus 2z equal to 1.
+
+556
+01:02:04,884 --> 01:02:09,784
+This system is a little bit simpler than the previous one.
+
+557
+01:02:10,423 --> 01:02:23,043
+So, we have y as 1 plus 2z, and x as 2 minus z.
+
+558
+01:02:23,043 --> 01:02:42,744
+Take z as t, a free parameter in real numbers, then your system will be, the solution of your system will be 2 minus 2 minus t, and y will be 1 plus 2t, and z is equal to t.
+
+559
+01:02:42,744 --> 01:03:01,844
+We obtain directly the solution from the system, but in the previous case, we used back substitution to get the y u o x depending on z, in order to remove y in the equation.
+
+560
+01:03:02,443 --> 01:03:07,764
+We just use one back substitution in the row echelon form case.
+
+561
+01:03:07,764 --> 01:03:08,224
+Okay.
+
+562
+01:03:08,224 --> 01:03:23,144
+Also, this will be 2 minus 2, and z is equal to 2 minus t, and z is equal to 2 minus t, 1 plus 2t, and t.
+
+563
+01:03:24,423 --> 01:03:27,023
+Here t is a, any real number.
+
+564
+01:03:27,744 --> 01:03:37,764
+And also rewrite in the matrix form, excuse me, vector form 2, 1, 0, plus t times, minus 1, 2, 1.
+
+565
+01:03:41,907 --> 01:03:42,728
+Any question?
+
+566
+01:03:55,795 --> 01:04:06,556
+I want to leave a homework to you, just write here a negative sign and try to solve system again.
+
+567
+01:04:15,443 --> 01:04:19,384
+In this case, you will see there is a unique solution for the system.
+
+568
+01:04:20,083 --> 01:04:30,784
+Just take here a negative sign, put here a negative sign and form the augmented matrix, put it into reduced row echelon form.
+
+569
+01:04:31,503 --> 01:04:36,384
+Then you will get a rank of A will be equal to rank of AB as 3.
+
+570
+01:04:37,123 --> 01:04:40,324
+So in this case, you will have a unique solution.
+
+571
+01:04:41,344 --> 01:04:41,603
+Okay.
+
+572
+01:05:16,052 --> 01:05:20,052
+Çünkü bu konuları biraz daha fazla konuları var.
+
+573
+01:05:27,443 --> 01:05:36,503
+If all constants are zero in the given system with m unknowns and n equation,
+
+574
+01:05:36,503 --> 01:05:39,264
+then this system is called a homogeneous system.
+
+575
+01:05:40,143 --> 01:05:44,963
+For a homogeneous system, inconsistency, not a case.
+
+576
+01:05:45,864 --> 01:05:53,384
+We have, for each homogeneous system, we have solution or solutions,
+
+577
+01:05:53,804 --> 01:05:56,284
+unique solution or infinitely many solutions.
+
+578
+01:05:56,284 --> 01:06:04,284
+And if you have unique solution for the homogeneous system,
+
+579
+01:06:04,583 --> 01:06:07,183
+our vector must be all zero vector.
+
+580
+01:06:09,503 --> 01:06:18,923
+This is because if the rank of a, all time is equal to rank of a, b,
+
+581
+01:06:19,623 --> 01:06:20,903
+rank of a, b.
+
+582
+01:06:20,903 --> 01:06:27,724
+This is because b doesn't affect the rank of a, b or a.
+
+583
+01:06:28,043 --> 01:06:29,844
+This is an all zero column.
+
+584
+01:06:30,344 --> 01:06:32,943
+So rank of a is equal to rank of a, b.
+
+585
+01:06:33,304 --> 01:06:42,003
+This guarantee that we have a solution for all systems, all homogeneous systems.
+
+586
+01:06:42,003 --> 01:06:49,003
+And if the rank of a is equal to number of unknowns,
+
+587
+01:06:49,003 --> 01:06:55,704
+unknowns, in this case, a is equivalent to identity matrix.
+
+588
+01:06:55,704 --> 01:06:58,003
+This says that a has an inverse.
+
+589
+01:06:58,003 --> 01:07:02,163
+So you can multiply at the right hand side, left hand side,
+
+590
+01:07:02,704 --> 01:07:06,003
+this both sides of equation by a inverse.
+
+591
+01:07:06,804 --> 01:07:07,103
+Okay.
+
+592
+01:07:07,503 --> 01:07:14,083
+This means that the result, our unknowns, vector of unknowns is all zero vector.
+
+593
+01:07:14,344 --> 01:07:17,364
+This case is called zero solution case.
+
+594
+01:07:17,364 --> 01:07:24,103
+In a homogeneous system, if you have unique solution, your solution must be zero solution.
+
+595
+01:07:24,503 --> 01:07:26,684
+This solution is called a trivial solution.
+
+596
+01:07:28,284 --> 01:07:30,943
+This solution, in this case, is not interesting.
+
+597
+01:07:31,364 --> 01:07:37,364
+But if the rank of a is smaller than number of unknowns,
+
+598
+01:07:37,364 --> 01:07:41,704
+in this case, we have that, let's say this parameter as R,
+
+599
+01:07:42,304 --> 01:07:52,003
+we have infinitely many solution depending on number of unknowns minus the number of remaining
+
+600
+01:07:52,003 --> 01:07:55,423
+non-zero equation in the system.
+
+601
+01:07:55,784 --> 01:07:55,884
+Okay.
+
+602
+01:07:58,103 --> 01:08:02,423
+Let give an example for homogeneous case.
+
+603
+01:08:02,423 --> 01:08:08,703
+I just adapt our previous example to homogeneous case.
+
+604
+01:08:09,503 --> 01:08:15,744
+This is the same example in non-homogeneous case,
+
+605
+01:08:15,884 --> 01:08:19,863
+but except for all constants are zero.
+
+606
+01:08:20,863 --> 01:08:26,363
+So our coefficient matrix is just one.
+
+607
+01:08:26,503 --> 01:08:30,163
+Let me multiply last equation by minus one.
+
+608
+01:08:30,163 --> 01:08:31,724
+This doesn't affect the solution.
+
+609
+01:08:31,724 --> 01:08:36,564
+You can multiply any equation by a constant.
+
+610
+01:08:37,384 --> 01:08:38,884
+This doesn't affect the solution.
+
+611
+01:08:38,884 --> 01:08:39,384
+So...
+
+612
+01:08:39,384 --> 01:08:40,884
+Thank you.
+
+613
+01:08:46,996 --> 01:08:51,636
+And here we have 1, 5 and minus 9.
+
+614
+01:08:52,615 --> 01:09:03,136
+And apply same operations with the previous example to get the row echelon form and reduce row echelon form of this matrix.
+
+615
+01:09:03,136 --> 01:09:08,756
+We don't put here all zero column because this doesn't affect the result.
+
+616
+01:09:09,235 --> 01:09:15,195
+So we need not to use the augmented form of the matrix.
+
+617
+01:09:16,996 --> 01:09:18,775
+Just use these operations.
+
+618
+01:09:19,336 --> 01:09:27,655
+Minus 2 R1 plus R2 as your new R2 and minus R1 plus R3 as your new R3.
+
+619
+01:09:28,216 --> 01:09:31,475
+And get an equivalent form of matrix A.
+
+620
+01:09:32,275 --> 01:09:35,016
+Leave unchanged first row.
+
+621
+01:09:35,756 --> 01:09:36,676
+Here we have zero.
+
+622
+01:09:37,456 --> 01:09:38,315
+Here we have three.
+
+623
+01:09:38,596 --> 01:09:40,935
+And here we have minus six.
+
+624
+01:09:42,475 --> 01:09:43,195
+Zero.
+
+625
+01:09:43,456 --> 01:09:44,496
+Here we have zero.
+
+626
+01:09:45,935 --> 01:09:46,615
+Six.
+
+627
+01:09:46,996 --> 01:09:49,036
+And minus 12.
+
+628
+01:09:49,435 --> 01:09:49,655
+Okay.
+
+629
+01:09:51,115 --> 01:09:56,296
+And normalize second and third row.
+
+630
+01:09:57,016 --> 01:10:05,576
+One over three R2 your new R2 and one over six R3 your new R3.
+
+631
+01:10:06,655 --> 01:10:09,155
+And get an equivalent form of this matrix.
+
+632
+01:10:09,155 --> 01:10:20,836
+And that's what we have.
+
+633
+01:10:12,851 --> 01:10:24,532
+1-1, 3, 0, 1-2, vektör, 0, 1-2, vektör, 1-2, yine.
+
+634
+01:10:32,275 --> 01:10:40,275
+We need one more, two more operations, minus R2 plus R3, your new R3.
+
+635
+01:10:48,756 --> 01:10:52,756
+I just multiply by minus 1. This doesn't affect the result best there.
+
+636
+01:10:55,556 --> 01:11:03,316
+I want to see positive elements. Here we have 1, 5 and minus 9. I just multiply by minus 1.
+
+637
+01:11:03,316 --> 01:11:06,356
+Okay, this doesn't affect the result. You can multiply.
+
+638
+01:11:11,123 --> 01:11:14,403
+I want to see positive elements in the first color.
+
+639
+01:11:15,603 --> 01:11:15,863
+Okay.
+
+640
+01:11:17,203 --> 01:11:25,283
+1, minus 1, 3, 0, 1, minus 2, and all 0 row.
+
+641
+01:11:30,003 --> 01:11:33,903
+Bu, bu, eşelon form, matris A.
+
+642
+01:11:40,020 --> 01:11:50,140
+And we have one more element which need to be removed in order to get reduced row echelon form.
+
+643
+01:11:51,140 --> 01:12:00,620
+R2 plus R1 assign as your new R1 and get an equivalent form of the matrix.
+
+644
+01:12:00,620 --> 01:12:10,380
+So this is 1, 0. Here we have 1 again and 0, 1, minus 2, 0, 0, 0.
+
+645
+01:12:13,200 --> 01:12:21,040
+You can use row echelon form or reduced row echelon form to get the solution of the system.
+
+646
+01:12:21,040 --> 01:12:26,240
+But if you use row echelon form, you need to use back substitution.
+
+647
+01:12:27,160 --> 01:12:31,680
+You need to do a little bit operations on the new system.
+
+648
+01:12:32,720 --> 01:12:41,560
+Our system here is x minus y plus 3z equal to 0 because our all constants are 0.
+
+649
+01:12:41,680 --> 01:12:45,820
+And here we have y minus 2z as 0.
+
+650
+01:12:45,820 --> 01:12:53,840
+This is the new system derived from row echelon form of the coefficient matrix,
+
+651
+01:12:54,220 --> 01:12:57,140
+which has same solution with the first system.
+
+652
+01:12:57,140 --> 01:13:10,540
+And the system obtained from the reduced row echelon form will be x plus z equal to 0 and y minus 2z equal to 0.
+
+653
+01:13:10,540 --> 01:13:16,300
+This is a little bit simpler than the row echelon form case.
+
+654
+01:13:16,300 --> 01:13:16,980
+Okay.
+
+655
+01:13:17,620 --> 01:13:25,620
+So here we have x equal to minus z and y is equal to 2z.
+
+656
+01:13:26,420 --> 01:13:34,300
+Choose z as t, your solutions, and z is z because z is free.
+
+657
+01:13:34,300 --> 01:13:49,980
+Our solution vector will be x, y, z minus t, 2t and t.
+
+658
+01:13:51,440 --> 01:13:54,840
+Just factor out t out of the vector.
+
+659
+01:13:55,140 --> 01:13:58,400
+We have minus 1, 2 and 1.
+
+660
+01:13:58,780 --> 01:14:02,180
+Depending on t, you have infinitely many solutions.
+
+661
+01:14:02,180 --> 01:14:04,380
+t is our parameter.
+
+662
+01:14:04,780 --> 01:14:05,940
+Here we have one parameter.
+
+663
+01:14:06,120 --> 01:14:09,420
+Depending on one parameter, we have infinitely many solutions.
+
+664
+01:14:09,940 --> 01:14:10,060
+Okay.
+
+665
+01:14:11,460 --> 01:14:22,600
+If at the end, we obtain a matrix just with one non-zero row.
+
+666
+01:14:23,660 --> 01:14:24,900
+Let me rewrite here.
+
+667
+01:14:25,800 --> 01:14:46,640
+Let's take the second row as 0.
+
+668
+01:14:41,043 --> 01:15:11,043
+Bu bir bir örneğin bir örneğin, bu örneğin bir örneğin bir örneğin bir örneğin bir örneğin bir örneğin bir örneğin bir örneğin bir örneğin bir örneğin bir örneğin bir örneğin bir örneğin bir örneğin bir örneğin bir örneğin bir örneğin bir örneğin bir örneğin bir örneğin bir örneğin bir örneğin bir örneğin bir örneğin bir örneğin bir örneğin bir örneğin bir örneğin bir örneğin bir örneğin bir örneğin bir örneğin bir örneğin bir örneğin bir örneğin bir örneğin bir örneğin bir örneğin bir örneğin bir örneğin bir örneğin bir örneğin bir örneğin bir örneğin bir örneğin bir örneğin bir örneğin bir örneğin bir örneğin bir örneğin bir örneğin bir örneğin bir örneğin
+
+669
+01:15:11,043 --> 01:15:26,503
+Y and Z are free parameters. In this case you need to take Y as S and Z as T as two free parameters in real numbers. Let me write.
+
+670
+01:15:30,292 --> 01:15:50,972
+S and t are arbitrary real numbers. And then your solution vector will be x, y, z, minus t, y is s. Instead of y, I need to put s. And here we have t.
+
+671
+01:15:50,972 --> 01:16:07,172
+So, we can separate this matrix again. This is equal to s time 0, 1, 0 plus t times minus 1, 0, 1.
+
+672
+01:16:09,231 --> 01:16:20,692
+Okay. Here we have two free parameters. Because in the reduced row echelon form, the rank of a, rank of a,
+
+673
+01:16:20,972 --> 01:16:33,092
+is 1, is 1. And this is smaller than the number of unknowns. So, depending on 3 minus 1, 2 parameters, we have infinitely many solutions.
+
+674
+01:16:34,271 --> 01:16:44,492
+For the couple of s and t, for arbitrarily couple of s and t, you will get a solution for this system.
+
+675
+01:16:44,492 --> 01:16:51,492
+In this case, we say that system. In this case, we say that system has infinitely many solutions depending on 2, 3 parameters.
+
+676
+01:16:51,492 --> 01:16:53,652
+Okay. Any question?
+
+677
+01:17:00,916 --> 01:17:17,716
+Let we have a homogenous system. I want to give an example for the inconsistent case. Let we have a linear system of equations with the matrix form.
+
+678
+01:17:17,716 --> 01:17:31,716
+The augmented matrix of the system will be AB and we put it in the reduced row echelon form. Let's write here CD and CD be a matrix that we have a 3 by 3 coefficient matrix.
+
+679
+01:17:31,716 --> 01:17:40,716
+Three unknowns and three equations at the first place and we apply some operations, we get a matrix in this form.
+
+680
+01:17:40,716 --> 01:17:53,716
+Here we have some non-zero entries B1, B2 and Bn. Here we have an all zero row.
+
+681
+01:17:53,716 --> 01:17:58,716
+Okay. And here we have something non-zero.
+
+682
+01:17:58,716 --> 01:18:14,716
+At the last equation you will have zero times zero times x1 plus zero times x2 plus zero times xn equal to Bn. Bn is non-zero.
+
+683
+01:18:14,716 --> 01:18:29,716
+So here we have zero is equal to Bn, non-zero. This is a contradiction. So inconsistency comes from this fact.
+
+684
+01:18:29,716 --> 01:18:44,716
+In this case we say that this system is inconsistent. In Turkish we say to tarsus. Because zero is equal to non-zero. And this is nonsense. Mathematically this is not correct.
+
+685
+01:18:44,716 --> 01:18:52,716
+Okay. This is the inconsistent case of the given system. Any question?
+
+686
+01:18:52,716 --> 01:18:56,716
+Let's give you a small example for this.
+
+687
+01:18:56,716 --> 01:18:57,716
+Uh...
+
+688
+01:18:57,716 --> 01:19:07,716
+X plus y is equal to 1. And x plus y is equal to minus 1.
+
+689
+01:19:07,716 --> 01:19:16,716
+The augmented matrix of this system will be 1, 1, 1, 1, 1, 1, 1, minus 1.
+
+690
+01:19:16,716 --> 01:19:30,716
+And if you use elementary row operations, just adding up the minus 1 multiple of the first row to the second row, you will get 1, 1, 1, 1, 1, here we have 0, 0.
+
+691
+01:19:30,716 --> 01:19:33,716
+And here we have minus 2.
+
+692
+01:19:33,716 --> 01:19:36,716
+Let's rewrite the system.
+
+693
+01:19:36,716 --> 01:19:41,716
+X plus y is equal to y and 0 is equal to minus 2.
+
+694
+01:19:41,716 --> 01:19:44,716
+This is a contradiction.
+
+695
+01:19:44,716 --> 01:19:47,716
+Zero cannot be equal to minus 2.
+
+696
+01:19:47,716 --> 01:19:50,716
+So this system is inconsistent.
+
+697
+01:19:50,716 --> 01:19:52,716
+There is no solution.
+
+698
+01:19:52,716 --> 01:19:54,716
+The system is inconsistent.
+
+699
+01:19:54,716 --> 01:20:21,716
+So this system is inconsistent.
+
+700
+01:20:05,300 --> 01:20:08,079
+Bu anlamda, bu sistem yok.
+
+701
+01:20:17,268 --> 01:20:22,387
+If you take a solution for the first one, then this doesn't satisfy the second one.
+
+702
+01:20:22,488 --> 01:20:27,188
+If you take a solution for the second one, this doesn't satisfy the first one.
+
+703
+01:20:27,188 --> 01:20:35,847
+The solution of a system is a set of some elements which satisfy all the equations.
+
+704
+01:20:37,188 --> 01:20:38,988
+Okay, any question?
+
+705
+01:20:38,988 --> 01:20:55,688
+I have shared the solution already, your first problem set, and you can download from my Avesis page.
+
+706
+01:20:55,688 --> 01:21:01,148
+If you have any question, please mail me about the first problem set.
+
+707
+01:21:01,148 --> 01:21:13,148
+Unfortunately, the solutions are in Turkish, if any non-Turkish students can mail me for the solutions.
+
+708
+01:21:13,148 --> 01:21:19,368
+But I cannot, I have no time to translate in English in these days.
+
+709
+01:21:21,707 --> 01:21:23,068
+Thank you for listening.
+
+710
+01:21:23,288 --> 01:21:27,127
+If you have no questions, I will close the course of this week.
+
+711
+01:21:28,068 --> 01:21:28,307
+Okay.
+
+712
+01:21:28,307 --> 01:21:31,207
+See you next week.
+
+713
+01:21:35,060 --> 01:21:38,539
+Teacher, can I ask a question about midterm exam?
+
+714
+01:21:39,800 --> 01:21:41,420
+Please, please, sure.
+
+715
+01:21:42,440 --> 01:21:46,420
+Will we have a classical exam or a test exam?
+
+716
+01:21:47,020 --> 01:21:55,700
+A test exam, a multiple choice test exam with three 20 questions and each question has five choices.
+
+717
+01:21:55,700 --> 01:21:56,120
+Okay.
+
+718
+01:21:58,480 --> 01:22:01,460
+Okay, thank you for the answer and the lesson.
+
+719
+01:22:05,060 --> 01:22:06,920
+See you next week. Bye-bye.
