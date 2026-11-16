@@ -4,6 +4,7 @@
 
 ### 📋 Genel Bilgiler
 * **Ders:** Veri Madenciliği (BLM4800)
+* **Hoca:** Bulunamadı
 * **Dönem:** Güz
 * **Akademik Yıl:** 2022-2023
 * **Şube:** BLM4800 - 1

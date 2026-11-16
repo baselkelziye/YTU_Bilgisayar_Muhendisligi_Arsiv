@@ -2,6 +2,8 @@
 
 Bu klasör, 2024-2025 eğitim öğretim yılı Güz dönemindeki İş Sağlığı ve Güvenliği 1 (BLM1991 - 1. şube) ders kayıtlarının altyazılarını içerir.
 
+* **Dersi Veren Akademisyen:** Bulunamadı
+
 Kayıt arşivindeki ilk ders kaydı 16 Ekim 2024 Çarşamba gününe aittir. Dosya adlarındaki `ders_x.srt` ifadesinde `x`, ders haftasını değil, ilgili kaydın kayıt arşivindeki ders sıra numarasını gösterir. Tarihler YTÜ Video Ambarı kayıt tablosundan alınmıştır. Altyazılardaki öğrenci adları `[öğrenci]` ile maskelenmiştir.
 
 ## Hafta Bilgisi

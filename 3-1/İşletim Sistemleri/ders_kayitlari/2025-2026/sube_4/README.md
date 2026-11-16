@@ -4,6 +4,7 @@
 
 ### 📋 Genel Bilgiler
 * **Ders:** İşletim Sistemleri (BLM3011)
+* **Hoca:** Bulunamadı
 * **Dönem:** Güz
 * **Akademik Yıl:** 2025-2026
 * **Şube:** BLM3011 - 4

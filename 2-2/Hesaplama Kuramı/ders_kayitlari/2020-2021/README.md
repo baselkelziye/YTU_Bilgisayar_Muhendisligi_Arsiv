@@ -4,5 +4,5 @@
 
 | Şube | Dönem | Hoca | Klasör |
 | :---: | :---: | :--- | :--- |
-| 1 | Bahar | — | [sube_1/](sube_1/) |
+| 1 | Bahar | Bulunamadı | [sube_1/](sube_1/) |
 | 2 | Bahar | Dr. Oğuz Altun | [sube_2/](sube_2/) |

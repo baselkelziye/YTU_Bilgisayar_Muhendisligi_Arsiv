@@ -4,6 +4,7 @@
 
 ### 📋 Genel Bilgiler
 * **Ders:** İş Sağlığı ve Güvenliği 2 (BLM1992)
+* **Hoca:** Bulunamadı
 * **Dönem:** BAHAR
 * **Akademik Yıl:** 2024-2025
 * **Şube:** BLM1992 - 1

@@ -4,5 +4,5 @@
 
 | Şube | Dönem | Hoca | Klasör |
 | :---: | :---: | :--- | :--- |
-| 1 | Güz | — | [sube_1/](sube_1/) |
+| 1 | Güz | Bulunamadı | [sube_1/](sube_1/) |
 | 2 | Güz | Dr. Oğuz Altun | [sube_2/](sube_2/) |
