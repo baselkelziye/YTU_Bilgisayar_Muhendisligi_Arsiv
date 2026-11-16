@@ -4,7 +4,7 @@
 
 ### 📋 Genel Bilgiler
 * **Ders:** İşletim Sistemleri (BLM3011)
-* **Hoca:** Bulunamadı
+* **Hoca:** Ziya Cihan Taysi
 * **Dönem:** Güz
 * **Akademik Yıl:** 2025-2026
 * **Şube:** BLM3011 - 4
