@@ -9,3 +9,4 @@
 | 10 | Güz | Nurullah Arvas | [sube_10/](sube_10/) |
 | 18 | Güz | Hilal Tufan | [sube_18/](sube_18/) |
 | 19 | Güz | Arzuhan Kocabaş | [sube_19/](sube_19/) |
+| 20 | Güz | Cemile İnan | [sube_20/](sube_20/) |
