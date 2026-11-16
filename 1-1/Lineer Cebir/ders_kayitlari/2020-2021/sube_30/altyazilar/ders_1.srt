@@ -1,0 +1,2631 @@
+1
+00:00:35,124 --> 00:00:37,044
+Arkadaşlar, merhaba, duyuyor musunuz beni?
+
+2
+00:00:40,404 --> 00:00:41,844
+Duyuyorum hocam ben.
+
+3
+00:00:43,144 --> 00:00:44,584
+[öğrenci] sen mi duyuyorsun?
+
+4
+00:00:44,864 --> 00:00:45,884
+Evet, ben duyuyorum.
+
+5
+00:00:47,624 --> 00:00:49,364
+Evet, duyuyormuş arkadaşlar.
+
+6
+00:00:53,076 --> 00:00:55,636
+Ekranı açacak mısınız hocam? Böyle mi devam edeceğiz?
+
+7
+00:00:56,736 --> 00:01:01,316
+Ekran paylaşacağım sizle arkadaşlar. Biraz bir sohbet edelim. Birkaç dakika.
+
+8
+00:01:08,500 --> 00:01:27,219
+Şimdi ders İngilizce zaten ben öyle bir Türkçe merhaba diyeyim dedim. Türkçe anlamayan arkadaşlarımız oluyor. Önceki derste öyle oldu. O yüzden İngilizce konuşacağım. Sizler de sorularınızı Türkçe ve İngilizce olarak sorabilirsiniz. Herhangi bir problem yok.
+
+9
+00:01:27,219 --> 00:01:39,180
+Ok. Welcome to all. My name is Ismail Aydoldo. I'm a research assistant at the Department of Mathematics.
+
+10
+00:01:40,180 --> 00:01:53,739
+We will together at this lecture in this semester. Our course is near algebra. Math 13, 20.
+
+11
+00:01:57,219 --> 00:01:58,640
+Any algebra?
+
+12
+00:02:01,780 --> 00:02:04,980
+We have two exams for this lecture.
+
+13
+00:02:06,359 --> 00:02:08,780
+One midterm...
+
+14
+00:02:14,548 --> 00:02:17,828
+ve bir final exam.
+
+15
+00:02:20,628 --> 00:02:22,707
+Total score, or final score,
+
+16
+00:02:25,747 --> 00:02:27,828
+will sum of
+
+17
+00:02:34,132 --> 00:02:40,132
+30% is of your midterm exam score.
+
+18
+00:02:42,632 --> 00:02:43,331
+And
+
+19
+00:02:48,147 --> 00:02:53,228
+70% of your final exam score.
+
+20
+00:02:57,812 --> 00:03:03,492
+You can follow the weekly topics of this lectures from the Bologna page.
+
+21
+00:03:04,492 --> 00:03:18,432
+So for this, you have to write mat 1320, linear algebra.
+
+22
+00:03:25,171 --> 00:03:27,171
+Bologna
+
+23
+00:03:27,171 --> 00:03:31,171
+ve bu konuda
+
+24
+00:03:31,171 --> 00:03:33,171
+bu konuda
+
+25
+00:03:33,171 --> 00:03:53,171
+ve bu konuda
+
+26
+00:03:53,876 --> 00:04:05,676
+Yildos.edu.tr, you can ask your questions or comments by email.
+
+27
+00:04:05,676 --> 00:04:16,475
+And I also upload my lecture notes, with the lecture notes at my webpage, which is
+
+28
+00:04:16,475 --> 00:04:21,516
+at Aresiz,
+
+29
+00:04:23,136 --> 00:04:24,475
+Smile Aydodu.
+
+30
+00:04:31,028 --> 00:04:33,028
+ve lecture notes,
+
+31
+00:04:35,028 --> 00:04:36,028
+has a password,
+
+32
+00:04:38,028 --> 00:04:39,028
+our password will
+
+33
+00:04:46,612 --> 00:04:56,252
+Group to sub-the announcement
+
+34
+00:05:00,915 --> 00:05:04,755
+Aspont, title,
+
+35
+00:05:15,156 --> 00:05:17,716
+or lecture title.
+
+36
+00:05:18,915 --> 00:05:19,795
+For example,
+
+37
+00:05:21,076 --> 00:05:23,475
+the password of
+
+38
+00:05:25,475 --> 00:05:26,435
+the first week
+
+39
+00:05:36,627 --> 00:05:37,127
+Kıptır.
+
+40
+00:05:43,283 --> 00:05:49,283
+Mertsis'in
+
+41
+00:05:49,283 --> 00:05:51,283
+anonsumlu
+
+42
+00:05:51,283 --> 00:05:53,283
+bu week
+
+43
+00:05:55,283 --> 00:05:57,283
+I
+
+44
+00:05:57,283 --> 00:05:59,283
+kullanımlar
+
+45
+00:05:59,283 --> 00:06:01,283
+ve Mertemek Kerova
+
+46
+00:06:01,283 --> 00:06:03,283
+ve
+
+47
+00:06:03,283 --> 00:06:05,283
+bazı
+
+48
+00:06:05,283 --> 00:06:07,283
+onları
+
+49
+00:06:07,283 --> 00:06:09,283
+ok
+
+50
+00:06:09,283 --> 00:06:13,283
+do you have any questions or comments for the lecture or
+
+51
+00:06:13,283 --> 00:06:15,283
+for anything
+
+52
+00:06:15,283 --> 00:06:17,283
+you
+
+53
+00:06:19,603 --> 00:06:21,144
+[öğrenci] öyle, yapacak bir şey yok.
+
+54
+00:06:28,148 --> 00:06:29,648
+Okay, do we have any questions?
+
+55
+00:06:33,427 --> 00:06:35,427
+Bu sorunlar için bir sorunlar.
+
+56
+00:06:37,427 --> 00:06:41,427
+Bu sorunlar, bu sorunlar.
+
+57
+00:06:41,427 --> 00:06:45,427
+Bir sorunlar, grup 2 annoncılın titrile.
+
+58
+00:06:45,427 --> 00:06:51,427
+Bu sorunlar, her hafta bir sorunlar.
+
+59
+00:06:51,427 --> 00:06:55,427
+Bu sorunlar, bu sorunlar.
+
+60
+00:06:55,427 --> 00:06:57,427
+Evet, bu sorunlar.
+
+61
+00:06:57,427 --> 00:06:59,427
+Bu sorunlar.
+
+62
+00:06:59,427 --> 00:07:01,427
+Ah, ok.
+
+63
+00:07:01,427 --> 00:07:03,427
+Bu sorunlar.
+
+64
+00:07:03,427 --> 00:07:07,427
+Bu sorunlar, ilk sorunlar.
+
+65
+00:07:07,427 --> 00:07:11,427
+Evet, bu sorunlar.
+
+66
+00:07:11,427 --> 00:07:41,427
+[öğrenci], bu sorunlar.
+
+67
+00:07:41,427 --> 00:07:45,427
+[öğrenci], [öğrenci], [öğrenci].
+
+68
+00:07:45,427 --> 00:07:47,427
+[öğrenci], bu sorunlar.
+
+69
+00:07:51,987 --> 00:07:54,408
+[öğrenci], sen benden ders mi aldın geçen dönem?
+
+70
+00:07:58,196 --> 00:08:00,196
+Niye sordun anlamadım.
+
+71
+00:08:05,939 --> 00:08:09,719
+%94 geçti [öğrenci]. İyi mi?
+
+72
+00:08:14,036 --> 00:08:14,495
+Peki.
+
+73
+00:08:18,675 --> 00:08:21,355
+Hocam şeyden herhalde ya bazen oluyor ya
+
+74
+00:08:21,355 --> 00:08:22,975
+%13 falan geçiyor.
+
+75
+00:08:24,235 --> 00:08:24,755
+Yok yok.
+
+76
+00:08:25,536 --> 00:08:25,735
+Yani
+
+77
+00:08:25,735 --> 00:08:28,635
+inerji bir dersi kolay bir ders.
+
+78
+00:08:28,855 --> 00:08:31,115
+[öğrenci]. O yüzden şey olmuyor.
+
+79
+00:08:31,456 --> 00:08:32,995
+Yani öyle sıkıntı yaşamazsınız.
+
+80
+00:08:33,196 --> 00:08:34,795
+Matematik 1'de belki ama o da
+
+81
+00:08:34,795 --> 00:08:37,235
+yani sıkıntı yok yani
+
+82
+00:08:37,235 --> 00:08:37,836
+rahat ol. Tamam.
+
+83
+00:08:38,696 --> 00:08:40,216
+Ya ben biraz meraktan
+
+84
+00:08:40,216 --> 00:08:42,795
+yok yok ben takılıyorum ya sıkıntı yok.
+
+85
+00:08:42,795 --> 00:08:43,336
+Yok hayır.
+
+86
+00:08:45,836 --> 00:08:46,895
+Birinci sınıfım
+
+87
+00:08:46,895 --> 00:08:48,495
+ama hani mat 1'i geçmedim.
+
+88
+00:08:48,675 --> 00:08:50,956
+Mat 1'i tamamını böyle
+
+89
+00:08:50,956 --> 00:08:53,216
+anlamamış birisi. Linerde zorlanır mı?
+
+90
+00:08:53,696 --> 00:08:54,975
+Yoksa lise matematiği
+
+91
+00:08:54,975 --> 00:08:56,875
+yeterli olur mu? Yok yok.
+
+92
+00:08:56,995 --> 00:08:58,855
+Linerci bir kolay bir ders. Zaten
+
+93
+00:08:58,855 --> 00:09:00,375
+dersi takip edersen ben
+
+94
+00:09:00,375 --> 00:09:03,076
+aynı lisedeki gibi anlatacağım size. Tek tek
+
+95
+00:09:03,076 --> 00:09:04,915
+anlatacağım. İlk defa görüyorsunuz. Mat 1'i
+
+96
+00:09:04,915 --> 00:09:06,576
+daha önce görmediniz herhalde. Değil mi?
+
+97
+00:09:07,175 --> 00:09:07,475
+Hı hı.
+
+98
+00:09:08,855 --> 00:09:10,355
+Ben mat 1'i görmedim.
+
+99
+00:09:10,355 --> 00:09:12,316
+Mat 1'i bitirmedim. Linerci
+
+100
+00:09:12,316 --> 00:09:14,115
+bir de ne var? Hiçbir bilgim yok. Tamam.
+
+101
+00:09:14,556 --> 00:09:16,296
+Sen dersi takip et geçersin. Hiç
+
+102
+00:09:16,296 --> 00:09:17,415
+şey yapma sıkıntı yapma.
+
+103
+00:09:17,415 --> 00:09:21,235
+[öğrenci] [öğrenci]
+
+104
+00:09:21,235 --> 00:09:24,216
+I haven't
+
+105
+00:09:24,216 --> 00:09:25,816
+upload the lecture
+
+106
+00:09:25,816 --> 00:09:26,755
+not yet. Okey.
+
+107
+00:09:27,936 --> 00:09:29,456
+I will upload
+
+108
+00:09:29,456 --> 00:09:30,596
+after the lecture.
+
+109
+00:09:32,275 --> 00:09:33,655
+Hocam sesim geliyor mu?
+
+110
+00:09:34,135 --> 00:09:34,995
+Evet [öğrenci] söyle.
+
+111
+00:09:34,995 --> 00:09:37,436
+Hocam ben bu dersi
+
+112
+00:09:37,436 --> 00:09:39,855
+ikinci defa alıyorum da daha önce vermiştim ama
+
+113
+00:09:39,855 --> 00:09:42,076
+devam zorunluluğum var mı yok mu acaba?
+
+114
+00:09:42,395 --> 00:09:44,956
+Şimdi devam zorunluluğuyla
+
+115
+00:09:44,956 --> 00:09:46,675
+alakalı benim yapacağım ya da
+
+116
+00:09:46,675 --> 00:09:47,875
+söyleyeceğim hiçbir şey yok [öğrenci].
+
+117
+00:09:48,336 --> 00:09:50,216
+Online olduğu için sistem otomatik
+
+118
+00:09:50,216 --> 00:09:51,076
+olduğu yoklamaları.
+
+119
+00:09:51,076 --> 00:09:57,216
+yani şimdiye kadar kimse kalmadı
+
+120
+00:09:57,216 --> 00:09:59,475
+şeyden devamsızlıktan ama mümkün
+
+121
+00:09:59,475 --> 00:10:01,296
+olunca girmeye çalışsan olur yani.
+
+122
+00:10:01,536 --> 00:10:02,855
+Ben garanti veremiyorum ama.
+
+123
+00:10:03,515 --> 00:10:05,975
+Biraz ortalamamı yükseltmek için aldım da hocam dersi.
+
+124
+00:10:06,895 --> 00:10:10,735
+Anladım ben seni de yani benim yapabileceğim bir şey yok ya da diyebileceğim bir şey yok.
+
+125
+00:10:10,735 --> 00:10:12,296
+Ama şimdiye kadar kimse kalmadı.
+
+126
+00:10:12,655 --> 00:10:12,995
+Yoklamadan.
+
+127
+00:10:12,995 --> 00:10:14,035
+Tamam teşekkürler hocam.
+
+128
+00:10:14,096 --> 00:10:14,196
+Tamam.
+
+129
+00:10:15,355 --> 00:10:16,296
+Sorry about that.
+
+130
+00:10:16,816 --> 00:10:20,515
+About the midterm exam and the final exam as you said.
+
+131
+00:10:21,296 --> 00:10:23,475
+For example for the midterm exam.
+
+132
+00:10:23,735 --> 00:10:23,915
+Yeah.
+
+133
+00:10:24,296 --> 00:10:25,456
+And we have to pass
+
+134
+00:10:25,456 --> 00:10:27,635
+and the minimum score
+
+135
+00:10:27,635 --> 00:10:28,716
+we want to pass
+
+136
+00:10:28,716 --> 00:10:29,956
+No no no.
+
+137
+00:10:30,036 --> 00:10:32,235
+You do not need to pass
+
+138
+00:10:32,235 --> 00:10:34,355
+minimum score.
+
+139
+00:10:36,036 --> 00:10:36,635
+Yeah yeah.
+
+140
+00:10:36,735 --> 00:10:37,296
+I got to understand.
+
+141
+00:10:37,415 --> 00:10:39,015
+But minimum score we want
+
+142
+00:10:39,015 --> 00:10:40,576
+is 30% of that.
+
+143
+00:10:40,735 --> 00:10:45,096
+30%
+
+144
+00:10:45,096 --> 00:10:45,615
+No no no.
+
+145
+00:10:46,956 --> 00:10:47,816
+You have to
+
+146
+00:10:47,816 --> 00:10:48,855
+if you
+
+147
+00:10:48,855 --> 00:10:50,395
+got
+
+148
+00:10:50,395 --> 00:10:51,956
+the 30%
+
+149
+00:10:51,956 --> 00:10:52,935
+of the midterm
+
+150
+00:10:52,935 --> 00:10:53,495
+plus
+
+151
+00:10:53,495 --> 00:10:55,235
+70%
+
+152
+00:10:55,235 --> 00:10:55,915
+of the
+
+153
+00:10:55,915 --> 00:10:57,036
+final
+
+154
+00:10:57,036 --> 00:10:57,956
+and
+
+155
+00:10:57,956 --> 00:10:59,255
+if your score
+
+156
+00:10:59,255 --> 00:11:00,235
+is less than
+
+157
+00:11:00,235 --> 00:11:01,076
+40
+
+158
+00:11:01,076 --> 00:11:02,515
+then
+
+159
+00:11:02,515 --> 00:11:03,316
+you
+
+160
+00:11:03,316 --> 00:11:03,895
+fail.
+
+161
+00:11:04,855 --> 00:11:05,175
+And
+
+162
+00:11:05,175 --> 00:11:05,875
+if your score
+
+163
+00:11:05,875 --> 00:11:06,816
+is more than
+
+164
+00:11:06,816 --> 00:11:07,495
+40
+
+165
+00:11:07,495 --> 00:11:07,915
+then
+
+166
+00:11:07,915 --> 00:11:08,615
+you pass.
+
+167
+00:11:08,755 --> 00:11:10,935
+Okay.
+
+168
+00:11:11,435 --> 00:11:12,235
+You mean you
+
+169
+00:11:12,235 --> 00:11:13,495
+have to
+
+170
+00:11:13,495 --> 00:11:15,155
+we have to
+
+171
+00:11:15,155 --> 00:11:16,235
+achieve at least
+
+172
+00:11:16,235 --> 00:11:17,696
+40
+
+173
+00:11:17,696 --> 00:11:31,336
+Yeah.
+
+174
+00:11:31,336 --> 00:11:32,395
+Notları yüklemedim.
+
+175
+00:11:32,495 --> 00:11:33,135
+[öğrenci] [öğrenci].
+
+176
+00:11:34,355 --> 00:11:35,355
+Onlar Türkçe grup için.
+
+177
+00:11:37,096 --> 00:11:38,735
+Sınavlarınız büyük ihtimalle
+
+178
+00:11:38,735 --> 00:11:40,775
+şey olacak.
+
+179
+00:11:42,316 --> 00:11:42,975
+Test olacak.
+
+180
+00:11:46,035 --> 00:11:47,415
+Yani online olacak.
+
+181
+00:11:48,395 --> 00:11:51,316
+Hocam bizde Türkçe notları indirip yararlansak olur mu?
+
+182
+00:11:52,235 --> 00:11:52,716
+Olur.
+
+183
+00:11:52,915 --> 00:11:53,596
+Neden olmasın?
+
+184
+00:11:54,056 --> 00:11:55,015
+Onların da şifresini.
+
+185
+00:11:55,096 --> 00:11:56,495
+Onların da şeyi
+
+186
+00:11:56,495 --> 00:11:59,056
+şifresi.
+
+187
+00:11:59,316 --> 00:12:00,175
+Tamam yazayım şuraya.
+
+188
+00:12:04,788 --> 00:12:09,288
+Password for the Turkish course.
+
+189
+00:12:15,028 --> 00:12:28,067
+[şifre]
+
+190
+00:12:33,652 --> 00:12:34,612
+matrisler.
+
+191
+00:12:40,467 --> 00:12:40,927
+Ok.
+
+192
+00:12:45,364 --> 00:12:53,264
+I haven't uploaded the lecture notes yet. I will upload after the lecture. Okay.
+
+193
+00:12:59,892 --> 00:13:10,052
+[öğrenci], bana göre ders notları yeterli olur. Ama isterseniz de linerce bir kitabı var, Göksel Ağırgün'ün.
+
+194
+00:13:18,548 --> 00:13:19,947
+Books for the
+
+195
+00:13:24,371 --> 00:13:26,371
+For the course,
+
+196
+00:13:42,131 --> 00:13:45,851
+I use the elementary
+
+197
+00:13:53,812 --> 00:13:56,892
+Elementar Algebra, Elementar Linear Algebra
+
+198
+00:14:20,340 --> 00:14:29,500
+I use this book for this lecture. Bernard Coleman and David Tilt, Diner Algebra, Elemental Diner Algebra.
+
+199
+00:14:30,440 --> 00:14:33,740
+And if you want, you can also use the Turkish book.
+
+200
+00:14:39,668 --> 00:14:41,668
+...which is...
+
+201
+00:14:46,995 --> 00:14:49,096
+Lineer Cebir ve çözümlü problemleri.
+
+202
+00:14:52,275 --> 00:14:54,415
+Yes, [öğrenci], this is English.
+
+203
+00:14:57,696 --> 00:15:00,295
+Tabii tabii, Türkçe sorabilirsiniz, problem yok.
+
+204
+00:15:03,155 --> 00:15:03,895
+Lineer Cebir.
+
+205
+00:15:52,403 --> 00:16:02,264
+[öğrenci], I recommend Equation Bank, which is Turkish, this one, Lineer Cebir ve Çözümlük Problemleri.
+
+206
+00:16:04,124 --> 00:16:06,543
+Yes, yes, we have a lesson today.
+
+207
+00:16:08,283 --> 00:16:18,524
+And I also upload some sample exam questions for the previous years for our department.
+
+208
+00:16:18,524 --> 00:16:24,024
+And I also upload some exercises for you.
+
+209
+00:16:25,024 --> 00:16:34,323
+But you can, if you know Turkish, you can use also this book, this Turkish book, because it has a lot of sample questions.
+
+210
+00:16:34,323 --> 00:16:35,323
+Okay.
+
+211
+00:16:42,932 --> 00:16:52,091
+So, if you don't have any questions, we will start our lecture.
+
+212
+00:16:53,292 --> 00:16:53,772
+Amit Fahd.
+
+213
+00:16:53,772 --> 00:16:54,611
+Sorry about that.
+
+214
+00:16:54,912 --> 00:16:55,812
+Sorry about the interruption.
+
+215
+00:16:56,331 --> 00:17:00,211
+For the password, I am now trying to download some things.
+
+216
+00:17:00,772 --> 00:17:04,092
+I can't because the password is wrong.
+
+217
+00:17:04,692 --> 00:17:07,511
+For the Turkish one or for the...
+
+218
+00:17:07,511 --> 00:17:13,152
+Now, I haven't uploaded the lecture notes.
+
+219
+00:17:14,511 --> 00:17:18,011
+That one was the Turkish lecture notes.
+
+220
+00:17:19,312 --> 00:17:20,011
+Okay, okay.
+
+221
+00:17:20,812 --> 00:17:21,132
+Okay?
+
+222
+00:17:21,731 --> 00:17:22,271
+Okay, okay.
+
+223
+00:17:22,632 --> 00:17:22,971
+I learned.
+
+224
+00:17:24,251 --> 00:17:27,731
+[öğrenci], bu Bolonya'da haftalık ders konuları var.
+
+225
+00:17:28,112 --> 00:17:29,491
+Yani çok işinize yaramaz belki de.
+
+226
+00:17:29,832 --> 00:17:31,392
+Merak ederseniz bakın diye yazdım.
+
+227
+00:17:32,172 --> 00:17:32,471
+Tamam.
+
+228
+00:17:37,460 --> 00:17:54,600
+Valla [öğrenci]'ye ders sonunda Türkçe özet geçmem çok mümkün olmaz. Çünkü zaman kalmıyor. Yani ders biraz yoğun maalesef. Ama ders sırasında sorabilirsiniz anlamadığınız yeri. Hemen sorun yani. Çekinmeyin. Tamam mı?
+
+229
+00:17:58,099 --> 00:18:17,559
+Yok, haftalık vermeyeceğim Berkan. Mesela grup 2, alt tere şey, ne derler, her zaman var. Anons mutluğunda, duyuruda hangi başlık varsa, mesela matris istiyor ya, matris olacak, işte öbür hafta atıyorum, matris matriplikationsa, buraya matris matriplikations yazacaksın.
+
+230
+00:18:21,299 --> 00:18:27,159
+Ama duyuru da nasıl yazıyorsa, mesela burada küçük harfle yazdıysam öyle yaz, büyük harfle yazdıysam büyük harfle.
+
+231
+00:18:27,740 --> 00:18:28,059
+Okey.
+
+232
+00:18:30,059 --> 00:18:34,480
+If you don't have any questions, any other questions, then we will start our lecture.
+
+233
+00:18:37,659 --> 00:18:38,079
+Do you have?
+
+234
+00:18:41,079 --> 00:18:41,559
+Okey.
+
+235
+00:19:04,660 --> 00:19:13,420
+Fret, I don't know what is the last edition of, you mean the, you mean the, you mean the,
+
+236
+00:19:18,132 --> 00:19:21,711
+But I think all editions are the same.
+
+237
+00:19:22,792 --> 00:19:25,991
+But there is no big difference.
+
+238
+00:19:26,312 --> 00:19:26,572
+Okay.
+
+239
+00:19:28,312 --> 00:19:31,152
+So you can use all editions.
+
+240
+00:19:35,988 --> 00:19:40,408
+Yes, yes, yes. General meaning of linear algebra.
+
+241
+00:19:46,996 --> 00:20:12,996
+I upload my colleagues Mehmet Emin Keralus' notes to my analysis page. But here, I also use my ARM notes. So, if you want, you can also write my notes.
+
+242
+00:20:15,955 --> 00:20:22,255
+Ok, let us start with the matrices.
+
+243
+00:20:36,948 --> 00:20:56,028
+Actually, matris are very useful for solving the linear equations and we use matrices to solve the linear equations by computer.
+
+244
+00:20:56,028 --> 00:21:11,428
+So, in this lesson, we will introduce the matrix and some operations on matrices and some spatial matrices.
+
+245
+00:21:12,648 --> 00:21:20,488
+Actually, a matrix is a rectangular array.
+
+246
+00:21:23,955 --> 00:21:45,955
+ve n by n, this. ve n by n matris, A, ve usually denot the matrices by the capital letters A, B, C, etc. ve n by n matris A, is a rectangular array.
+
+247
+00:22:02,675 --> 00:22:20,615
+m times n real, or complex numbers, which are arranged in,
+
+248
+00:22:25,299 --> 00:22:26,599
+Hori zonta uroş.
+
+249
+00:22:34,451 --> 00:22:39,731
+ve n vertical kolumns.
+
+250
+00:22:45,779 --> 00:22:46,220
+Son.
+
+251
+00:22:53,779 --> 00:22:57,720
+We show a matrix A like this.
+
+252
+00:23:02,003 --> 00:23:02,644
+En
+
+253
+00:23:07,412 --> 00:23:31,932
+A11, A12, A1 to the n, A21, A22, A2 to the n, AM1, AM2, AM, n.
+
+254
+00:23:31,932 --> 00:23:53,271
+These are A11, A12. These are the elements of the entries of the matrix. We denote by Aij, which is the element.
+
+255
+00:23:58,036 --> 00:23:59,036
+Onda
+
+256
+00:24:02,451 --> 00:24:32,451
+it row, and j column of the matrix A. So this is the element on the first row and the first column. This is the element on the first row and the second column. So i is the number of
+
+257
+00:24:32,451 --> 00:24:44,451
+row and j shows the number of columns. okay
+
+258
+00:24:46,867 --> 00:24:51,107
+ve say, bu hem bay,
+
+259
+00:24:54,771 --> 00:25:01,771
+m by n matrix.
+
+260
+00:25:02,771 --> 00:25:11,771
+Which means that it has m rows and n columns.
+
+261
+00:25:13,771 --> 00:25:14,771
+So,
+
+262
+00:25:17,771 --> 00:25:19,771
+here for this matrix A,
+
+263
+00:25:19,771 --> 00:25:24,771
+the I draw of
+
+264
+00:25:31,155 --> 00:25:56,755
+[öğrenci], these notes are not in the lecture notes. So if you can write, then it is good for you. Okay. Or, or, or, I will also share these notes with others. Okay. So no need to write. Okay. I will also share these notes for you.
+
+265
+00:25:56,755 --> 00:25:59,395
+And the password is the same?
+
+266
+00:26:00,015 --> 00:26:01,195
+Yeah, yeah, yeah.
+
+267
+00:26:01,195 --> 00:26:01,316
+Yeah.
+
+268
+00:26:01,796 --> 00:26:02,096
+Okay.
+
+269
+00:26:03,955 --> 00:26:06,596
+I will combine them and then share with you.
+
+270
+00:26:09,056 --> 00:26:09,635
+And
+
+271
+00:26:14,867 --> 00:26:17,687
+[öğrenci], I will share on my avasys page.
+
+272
+00:26:18,827 --> 00:26:20,947
+The password is [şifre].
+
+273
+00:26:21,167 --> 00:26:22,288
+Also, we are group2.
+
+274
+00:26:22,528 --> 00:26:23,327
+Yes, yes.
+
+275
+00:26:23,587 --> 00:26:25,127
+No, no, you are not group2.
+
+276
+00:26:26,028 --> 00:26:26,947
+You are not group2.
+
+277
+00:26:28,387 --> 00:26:31,407
+I will make the password like this.
+
+278
+00:26:31,528 --> 00:26:33,627
+Okay.
+
+279
+00:26:34,167 --> 00:26:36,587
+But we are which group?
+
+280
+00:26:37,647 --> 00:26:40,107
+I don't know which group.
+
+281
+00:26:40,947 --> 00:26:42,087
+Oh, okay.
+
+282
+00:26:42,087 --> 00:26:43,967
+I have five groups.
+
+283
+00:26:43,967 --> 00:26:47,008
+So, I don't remember the number of the groups.
+
+284
+00:26:47,187 --> 00:26:47,327
+Okay.
+
+285
+00:26:49,127 --> 00:26:50,347
+Yeah, I don't understand.
+
+286
+00:26:50,347 --> 00:26:52,987
+And the lessons which we selected.
+
+287
+00:26:53,327 --> 00:26:53,727
+Okay, okay.
+
+288
+00:26:56,467 --> 00:26:57,107
+So,
+
+289
+00:26:58,387 --> 00:27:03,167
+the matrix A,
+
+290
+00:27:04,447 --> 00:27:08,447
+the matrix A has an M rows
+
+291
+00:27:08,447 --> 00:27:11,807
+and N columns.
+
+292
+00:27:11,807 --> 00:27:13,087
+these are
+
+293
+00:27:13,087 --> 00:27:19,207
+these are the rows of the matrix.
+
+294
+00:27:19,207 --> 00:27:25,427
+These are the rows of the matrix.
+
+295
+00:27:25,236 --> 00:27:31,496
+Wall, and this is the column of the matris.
+
+296
+00:27:36,372 --> 00:27:38,572
+So, the Ith rule
+
+297
+00:27:48,372 --> 00:27:49,292
+Haydi's.
+
+298
+00:27:54,644 --> 00:28:08,644
+A i1, A i2, A i n, and j column of...
+
+299
+00:28:17,652 --> 00:28:18,971
+A is...
+
+300
+00:28:22,996 --> 00:28:31,896
+A1J, A2J, AMJ
+
+301
+00:28:37,587 --> 00:28:38,207
+Yes.
+
+302
+00:28:42,740 --> 00:28:56,740
+If the number of rows are equal to the number of columns of the matrix, then we say the matrix is secure.
+
+303
+00:28:56,740 --> 00:28:59,740
+So, if
+
+304
+00:29:02,516 --> 00:29:14,596
+M equals N, we say, matris A, A is a square matris.
+
+305
+00:29:20,211 --> 00:29:21,211
+Ok.
+
+306
+00:29:23,211 --> 00:29:25,211
+With number of columns.
+
+307
+00:29:31,955 --> 00:29:44,275
+is the same as the number of rows of a matrix, then this matrix is a skeur matrix. Skeur matrix of order.
+
+308
+00:29:51,635 --> 00:29:54,036
+So, if A is a schermatrix,
+
+309
+00:29:57,811 --> 00:30:08,431
+A has n rows and n columns, a11, a12, a1n,
+
+310
+00:30:17,587 --> 00:30:33,768
+am1, am2, ann, bu n by n matrix, a is square matrix, then,
+
+311
+00:30:43,667 --> 00:30:48,707
+Then the elements, or the entries, or the numbers,
+
+312
+00:31:01,332 --> 00:31:08,332
+which are on the same row and the same column are called the main diagonal of A.
+
+313
+00:31:10,332 --> 00:31:11,332
+The numbers
+
+314
+00:31:14,332 --> 00:31:15,332
+or the entries
+
+315
+00:31:19,155 --> 00:31:33,036
+A11, A22, ANN, form, domain label.
+
+316
+00:31:41,875 --> 00:31:46,375
+A.
+
+317
+00:31:47,375 --> 00:31:48,875
+So, for the square matrix,
+
+318
+00:31:51,875 --> 00:31:55,076
+these numbers form the main
+
+319
+00:31:57,175 --> 00:31:58,076
+diagonal.
+
+320
+00:32:03,731 --> 00:32:11,251
+Ok, so we have the main diagonal only for the square matrices.
+
+321
+00:32:14,132 --> 00:32:19,011
+Yes, [öğrenci]. This case is only for the square matrix.
+
+322
+00:32:21,091 --> 00:32:21,412
+And
+
+323
+00:32:24,771 --> 00:32:26,291
+we refer the number
+
+324
+00:32:29,172 --> 00:32:30,132
+aij
+
+325
+00:32:37,940 --> 00:32:38,940
+I draw
+
+326
+00:32:42,483 --> 00:32:45,884
+and J column
+
+327
+00:32:50,516 --> 00:33:18,936
+of a, we also say for this element, the ij element of a, or ij entry of a.
+
+328
+00:33:18,936 --> 00:33:34,615
+and so, we write the matrix a as, we often write this matrix as a i j.
+
+329
+00:33:37,355 --> 00:33:38,615
+for example,
+
+330
+00:33:47,124 --> 00:33:48,764
+Hocam, yukarıda ne yazdınız?
+
+331
+00:33:50,403 --> 00:33:50,804
+Nerede?
+
+332
+00:33:52,423 --> 00:33:55,284
+Elemento, A'nın altında bir tane daha yazdınız ya.
+
+333
+00:33:55,723 --> 00:33:56,124
+Entry.
+
+334
+00:33:56,723 --> 00:33:57,864
+Entry, teşekkür ederim.
+
+335
+00:34:05,715 --> 00:34:09,976
+Ij element of A or Ij entry of A.
+
+336
+00:34:10,976 --> 00:34:13,215
+For example, for the matrisis A,
+
+337
+00:34:30,996 --> 00:34:33,316
+A, B
+
+338
+00:34:53,076 --> 00:34:54,076
+C
+
+339
+00:35:12,692 --> 00:35:13,172
+D
+
+340
+00:35:38,483 --> 00:35:38,963
+I
+
+341
+00:35:44,692 --> 00:35:45,692
+And if
+
+342
+00:35:58,996 --> 00:35:59,456
+Ok.
+
+343
+00:36:13,396 --> 00:36:14,836
+Oldu mu? [öğrenci].
+
+344
+00:36:24,019 --> 00:36:26,480
+Let us talk about these matches.
+
+345
+00:36:32,884 --> 00:36:49,644
+A has 1, 2 rows, so 2 by and has 1, 2, 3 columns, so A is 2 by 3 matrix.
+
+346
+00:36:49,644 --> 00:37:05,063
+1, 4A, the entry on the first row at the first column, which is A1, 1, is 1.
+
+347
+00:37:07,204 --> 00:37:16,043
+And the entry on the first row at the second column, which is A1, 2, is 2.
+
+348
+00:37:16,043 --> 00:37:29,224
+And this is the element on the first row at the third column, which is A1, 3, is 3.
+
+349
+00:37:29,764 --> 00:37:40,123
+Similarly, this is the entry or the element on the second row at the first column, so A2, 1, is minus 1.
+
+350
+00:37:41,364 --> 00:37:44,144
+This is the entry A2, 2.
+
+351
+00:37:46,043 --> 00:37:47,543
+0.
+
+352
+00:37:48,943 --> 00:37:58,724
+And this is the element on the third column at the first, second row, so this is A2, 3.
+
+353
+00:37:59,724 --> 00:38:00,403
+Okay.
+
+354
+00:38:00,403 --> 00:38:08,583
+For the matrix A, all entries or all elements are real numbers.
+
+355
+00:38:09,603 --> 00:38:19,144
+For the matrix B, which has two rows and two columns, so this is 2 by 2 matrix, so it is also a square matrix.
+
+356
+00:38:19,144 --> 00:38:30,543
+And it has entries with complex numbers, so we say later, this matrix is complex matrix.
+
+357
+00:38:30,543 --> 00:38:31,043
+And this is the number of matrix B, which is the number of matrix B, which is the number of matrix B, which is the number of matrix B, which is the number of matrix B, which is the number of matrix B, which is the number of matrix B, which is the number of matrix B, which is the number of matrix B, which is the number of matrix B, which is the number of matrix B, which is the number of matrix B, which is the number of matrix B, which is the number of matrix B, which is the number of matrix B, which is the number of matrix B, which is the number of matrix B, which is the number of matrix B, which is the number of matrix B, which is the number of matrix B, which is the number of matrix B, which is the number of matrix B, which is the number of matrix B, which is the number of matrix B, which is the number of matrix B, which is the number of matrix B, which is the number of matrix B, which is the number
+
+358
+00:38:36,211 --> 00:39:02,612
+And for C, C has 1, 2, 3 rows and 1 column. So this is 3 by 1 matrix. You also see this is a column matrix. Okay. This is a column matrix. And for D, D is 3 by 3 matrix.
+
+359
+00:39:02,612 --> 00:39:17,012
+So it is a square matrix. And for the square matrix, these are the main diagonal of D.
+
+360
+00:39:20,596 --> 00:39:47,896
+mean diagonal. E is 1 by 1 matrix. So, we can look at all real numbers or all complex numbers as the 1 by 1 matrix. Okay. So, E is also a matrix which has the size 1 by 1.
+
+361
+00:39:50,596 --> 00:39:56,416
+[öğrenci], onların şifrelerini hiç hatırlamıyorum. Hatırlayınca vereceğim. Olur mu?
+
+362
+00:39:58,536 --> 00:40:07,675
+And the last one, for the last one, f is which one?
+
+363
+00:40:13,492 --> 00:40:14,772
+B is 2x2.
+
+364
+00:40:20,436 --> 00:40:30,996
+And for the last one, F has, sorry, F will be like this.
+
+365
+00:40:39,411 --> 00:41:04,422
+F'nin bir sıra bir sıra bir sıra bir sıra bir sıra bir sıra bir sıra bir sıra bir sıra bir sıra bir sıra bir sıra bir sıra bir sıra bir sıra bir sıra bir sıra bir sıra bir sıra bir sıra bir sıra bir sıra bir sıra bir sıra bir sıra bir sıra bir sıra bir sıra bir sıra bir sıra bir sıra bir sıra bir sıra bir sıra bir sıra bir sıra bir sıra bir sıra bir sıra bir sıra bir sıra bir sıra bir sıra bir sıra bir sıra bir sıra bir sıra bir sıra bir sıra bir sıra bir sıra bir sıra bir sıra bir sıra bir sıra bir sıra bir sıra bir sıra bir sıra bir sıra bir sıra bir sıra bir sıra bir sıra bir sıra bir sıra bir sıra bir sıra bir sıra bir sıra bir sıra bir sıra bir sıra bir
+
+366
+00:41:07,795 --> 00:41:08,835
+Kanon matriks
+
+367
+00:41:14,516 --> 00:41:19,516
+ve bu, ROW matris.
+
+368
+00:41:26,835 --> 00:41:35,835
+D'deki çaprazlama main diagonalı ifade ediyor, [öğrenci]. Esas köşegeni ifade ediyor. Yukarıda tanımını verdim ya.
+
+369
+00:41:51,572 --> 00:41:52,572
+Evet, aynı mürre.
+
+370
+00:41:55,172 --> 00:42:00,332
+Row matris has only rows, ns, and the column matris has only columns.
+
+371
+00:42:05,940 --> 00:42:24,220
+And we also say, we often say, n by one matrix which are column matrices as the vectors.
+
+372
+00:42:25,139 --> 00:42:30,139
+We will see the vectors in the next section spot.
+
+373
+00:42:30,139 --> 00:42:34,900
+And n by one matrix also.
+
+374
+00:42:39,059 --> 00:42:43,059
+Also called M vektör.
+
+375
+00:42:45,059 --> 00:42:50,059
+Or
+
+376
+00:42:51,059 --> 00:42:53,059
+Vektör of
+
+377
+00:42:54,059 --> 00:42:55,059
+Length
+
+378
+00:43:02,036 --> 00:43:04,456
+Lektor of length and.
+
+379
+00:43:06,076 --> 00:43:06,416
+Ok.
+
+380
+00:43:10,739 --> 00:43:16,859
+And another definition about matrices.
+
+381
+00:43:27,347 --> 00:43:49,608
+İz, 2, n by n matris, yes, yes, humam, you, 1, 2, 3, bize,
+
+382
+00:43:53,715 --> 00:43:54,715
+Tree Rector
+
+383
+00:44:04,532 --> 00:44:05,032
+Ok.
+
+384
+00:44:07,652 --> 00:44:09,552
+So, m at sys.
+
+385
+00:44:14,195 --> 00:44:16,295
+A and B are equal
+
+386
+00:44:28,755 --> 00:44:49,275
+Evet, [öğrenci], we also say 1 by n matrix as a vector, we can use, but more generally, we only say n by 1 matrix as a vector, but you can also say 1 by n matrix as a vector. This is not a problem.
+
+387
+00:44:49,275 --> 00:44:56,475
+2 by n matrix as a and b are equal
+
+388
+00:45:04,052 --> 00:45:14,652
+Eğer, if they agree, entry by entry.
+
+389
+00:45:21,780 --> 00:45:38,720
+Which means that, or which is, or that is, if aij equals bij for all,
+
+390
+00:45:42,675 --> 00:45:49,076
+i equals 1 to do and sorry and
+
+391
+00:45:55,795 --> 00:46:14,515
+and j equals 1 to the n. So, if to, we also say, this has a size of the matrix. Okay.
+
+392
+00:46:25,139 --> 00:46:42,359
+If the size of two matris are same, and if all elements on the corresponding entries are the same, so we say that these two matris are equal. For example,
+
+393
+00:46:47,443 --> 00:46:48,443
+net AB
+
+394
+00:46:58,516 --> 00:47:13,896
+1, 2, minus 1, 2, minus 3, 4, 0, minus 4, 5.
+
+395
+00:47:19,539 --> 00:47:21,539
+B is...
+
+396
+00:47:21,539 --> 00:47:22,739
+Yes, [öğrenci].
+
+397
+00:47:29,043 --> 00:47:47,103
+and b, 1, 2, w, 2, x, 4, y-4, z.
+
+398
+00:47:47,103 --> 00:47:49,324
+then
+
+399
+00:47:49,324 --> 00:47:52,304
+if
+
+400
+00:47:52,304 --> 00:47:54,963
+a and b are equal
+
+401
+00:47:59,539 --> 00:48:03,659
+if a equals b, then find
+
+402
+00:48:10,931 --> 00:48:16,831
+X, Y, Z, and W.
+
+403
+00:48:18,831 --> 00:48:19,271
+So,
+
+404
+00:48:23,764 --> 00:48:53,604
+If two, if these two matches are equal, so they agree entry by entry. It means that this is A11, A12, A13, A21, A22, A23, and A31, A32,
+
+405
+00:48:53,764 --> 00:49:16,084
+A33. So, they agree entry by entry. It means that A11 has to be equal to the B11. Yes. And A12 has to be equal to the B12. And also,
+
+406
+00:49:22,195 --> 00:49:42,155
+Since a equals b, then a13 has to be equal to the p13, which is w, so minus 1 equals w.
+
+407
+00:49:42,155 --> 00:49:48,375
+And similarly, x is
+
+408
+00:49:52,628 --> 00:50:03,688
+Minus 3, y is 0, and z is 5.
+
+409
+00:50:05,688 --> 00:50:06,148
+Ok?
+
+410
+00:50:08,928 --> 00:50:12,468
+Evet [öğrenci], aynen öyle. Bütün elemanları eşit olmalı.
+
+411
+00:50:18,516 --> 00:50:23,675
+And another important definition for the matrices is the trace of the matrix.
+
+412
+00:50:31,603 --> 00:50:35,603
+If A is a square matrix
+
+413
+00:50:45,204 --> 00:50:49,403
+n by n, matris.
+
+414
+00:50:53,940 --> 00:51:04,200
+A is square matrix of order and
+
+415
+00:51:10,963 --> 00:51:12,963
+33'e
+
+416
+00:51:28,820 --> 00:51:42,500
+vektör uzayları, a, which we do not buy, t r a, is defined as,
+
+417
+00:51:49,139 --> 00:51:50,139
+Sum of
+
+418
+00:51:54,164 --> 00:51:55,304
+All elements
+
+419
+00:52:03,668 --> 00:52:05,168
+On the main day you're gonna love.
+
+420
+00:52:16,019 --> 00:52:17,559
+A.
+
+421
+00:52:18,559 --> 00:52:24,900
+So, it means that if A is a square matrix, and by M matrix,
+
+422
+00:52:28,916 --> 00:52:31,916
+A11, A12,
+
+423
+00:52:43,668 --> 00:52:48,228
+An1, An2, to the Ann.
+
+424
+00:52:52,052 --> 00:52:54,972
+Sonra, a'ın
+
+425
+00:53:07,764 --> 00:53:20,764
+The trace is equal to the sum of elements, all elements on the main diagonal.
+
+426
+00:53:20,764 --> 00:53:24,764
+So, what are the elements on the main diagonal of A?
+
+427
+00:53:24,764 --> 00:53:30,764
+These are, this is the main diagonal.
+
+428
+00:53:30,764 --> 00:53:46,764
+So, the trace of A is the sum of the elements on the main diagonal, which are A11 plus A22 plus A33 plus A and N.
+
+429
+00:53:46,764 --> 00:53:53,764
+So, we give the definition of a trace for only the square matrices.
+
+430
+00:53:53,764 --> 00:54:04,764
+Okay, if you have a square matrix, which means that the number of the rows are, the number of the rows is equal to the number of columns.
+
+431
+00:54:04,764 --> 00:54:12,764
+And the elements, the sum of the elements on the main diagonal is called the trace of the matrix.
+
+432
+00:54:12,764 --> 00:54:14,764
+Okay.
+
+433
+00:54:14,764 --> 00:54:23,764
+Now, I give the matrix addition.
+
+434
+00:54:35,507 --> 00:54:42,467
+matris operations, the first operation is matris edition.
+
+435
+00:54:58,291 --> 00:54:59,011
+Let.
+
+436
+00:55:01,331 --> 00:55:08,351
+Daha ara vermeyeceğiz. Zaten çok zamanımız yok. Olur mu? Buçukla bitiriyorum zaten. Bir buçuk saat ders yapıyorum.
+
+437
+00:55:18,099 --> 00:55:22,920
+Let, or if A and B are,
+
+438
+00:55:26,356 --> 00:55:29,356
+Matrisi, aynı size.
+
+439
+00:55:45,139 --> 00:55:45,859
+A bot.
+
+440
+00:55:50,068 --> 00:55:52,068
+ve n matrisler.
+
+441
+00:55:56,467 --> 00:56:00,467
+or it is same or
+
+442
+00:56:07,891 --> 00:56:16,211
+A and B are of same size.
+
+443
+00:56:18,251 --> 00:56:18,652
+Okay.
+
+444
+00:56:20,172 --> 00:56:24,611
+Then the sum of A and B,
+
+445
+00:56:27,091 --> 00:56:28,652
+then the sum
+
+446
+00:56:32,500 --> 00:56:34,940
+a plus b.
+
+447
+00:56:37,300 --> 00:56:38,440
+Yes, [öğrenci].
+
+448
+00:56:39,320 --> 00:56:42,320
+We can only add matris, if they are the same size.
+
+449
+00:56:44,800 --> 00:56:49,900
+Then the sum a plus b equals,
+
+450
+00:56:52,119 --> 00:56:52,380
+or,
+
+451
+00:56:57,380 --> 00:56:57,820
+is an,
+
+452
+00:57:01,331 --> 00:57:02,871
+I'm my amacisyonu.
+
+453
+00:57:12,532 --> 00:57:15,632
+XC, A, Y,
+
+454
+00:57:19,411 --> 00:57:20,692
+which is defined by
+
+455
+00:57:28,659 --> 00:57:42,500
+cij equals aij plus bi j first i want to do
+
+456
+00:57:45,299 --> 00:57:54,339
+m and j want to do n so it means that if you want to
+
+457
+00:57:54,339 --> 00:58:04,899
+obtain sum of two matches which are which have the same sizes you and you only add the corresponding
+
+458
+00:58:05,779 --> 00:58:08,500
+entries so you write here
+
+459
+00:58:11,539 --> 00:58:12,259
+to obtain
+
+460
+00:58:15,460 --> 00:58:22,339
+the sum of
+
+461
+00:58:21,907 --> 00:58:22,907
+AMP
+
+462
+00:58:22,907 --> 00:58:25,867
+mi ön
+
+463
+00:58:31,699 --> 00:58:39,099
+at corresponding entries.
+
+464
+00:58:45,108 --> 00:58:45,827
+For example,
+
+465
+00:58:53,139 --> 00:58:58,139
+again, not that.
+
+466
+00:59:05,331 --> 00:59:06,391
+Birçam on me.
+
+467
+00:59:11,603 --> 00:59:15,083
+Birka, on ne, et
+
+468
+00:59:19,380 --> 00:59:20,920
+Matrices
+
+469
+00:59:38,547 --> 00:59:46,787
+with the same size. Okay, for example, let's add minus two, three.
+
+470
+00:59:56,019 --> 01:00:01,019
+Bu konuların internet konucunda, kanı mı şimdi?
+
+471
+01:00:03,019 --> 01:00:05,019
+[öğrenci], [öğrenci], [öğrenci].
+
+472
+01:00:05,019 --> 01:00:06,019
+Ok, ok, ok.
+
+473
+01:00:12,596 --> 01:00:25,295
+1, minus 2, 3, 2, minus 1, 4, and let B.
+
+474
+01:00:35,123 --> 01:00:43,743
+0, 2, 1, 1, 3, minus 4.
+
+475
+01:00:43,743 --> 01:00:46,743
+Then...
+
+476
+01:00:51,860 --> 01:00:53,220
+a plus b.
+
+477
+01:00:57,748 --> 01:01:00,588
+We only add the corresponding entries.
+
+478
+01:01:04,692 --> 01:01:18,692
+A11, A12, A13, A21, A22, A23.
+
+479
+01:01:22,675 --> 01:01:25,835
+B11, B12
+
+480
+01:01:30,291 --> 01:01:37,371
+A13 and B21, B22, B23.
+
+481
+01:01:37,791 --> 01:01:41,351
+So, they are both the same size.
+
+482
+01:01:42,731 --> 01:01:46,351
+It means that we can add these two matrices.
+
+483
+01:01:46,632 --> 01:01:47,731
+This is 2x3.
+
+484
+01:01:49,371 --> 01:01:52,891
+And this is also 2x3 matrices.
+
+485
+01:01:53,632 --> 01:01:56,351
+So, we only add the corresponding entries.
+
+486
+01:01:56,351 --> 01:02:11,152
+Which means that A11 plus B11, 1 plus 0, minus 2 plus 2, 3 plus 1.
+
+487
+01:02:11,152 --> 01:02:29,431
+And for this row, 2 plus 1, minus 1 plus 3, and 4 plus minus 4.
+
+488
+01:02:29,431 --> 01:02:34,672
+Which gives 1, 0, 4.
+
+489
+01:02:41,076 --> 01:02:44,295
+3, 2, 0.
+
+490
+01:02:45,155 --> 01:02:49,155
+So this is also 2y3, matris.
+
+491
+01:02:51,076 --> 01:02:51,436
+Okay.
+
+492
+01:02:56,692 --> 01:03:02,192
+We can also add more than two matches.
+
+493
+01:03:06,547 --> 01:03:07,907
+Also note that,
+
+494
+01:03:18,452 --> 01:03:19,652
+We can also
+
+495
+01:03:23,956 --> 01:03:26,496
+et, more than,
+
+496
+01:03:30,356 --> 01:03:31,496
+To matris.
+
+497
+01:03:36,052 --> 01:03:38,052
+So if...
+
+498
+01:03:40,052 --> 01:03:42,052
+No, no, no, no.
+
+499
+01:03:44,052 --> 01:03:46,052
+It means that if...
+
+500
+01:03:48,052 --> 01:03:54,052
+If A, B, and C are...
+
+501
+01:03:56,980 --> 01:03:58,980
+Dometris
+
+502
+01:04:09,684 --> 01:04:39,504
+with the same size, then we have A plus B plus C. Okay. You cannot add two matrices, which is the first one 2 by 3 and the other one 3 by 4. If you want to add two matrices, they have to be same size.
+
+503
+01:04:39,684 --> 01:04:42,504
+or same type. Okay.
+
+504
+01:04:56,115 --> 01:05:00,115
+Another operation for the matris is scalar multiplication.
+
+505
+01:05:31,539 --> 01:05:42,340
+If A is, if A is N, N by N matrix,
+
+506
+01:05:52,596 --> 01:05:56,315
+ağır, üzeri yınlanmış
+
+507
+01:06:04,980 --> 01:06:11,340
+Or, it means that R is a scalar, or constant.
+
+508
+01:06:20,532 --> 01:06:21,052
+Dön!
+
+509
+01:06:27,411 --> 01:06:28,951
+The scale of multiple of a
+
+510
+01:06:44,211 --> 01:06:55,532
+Yr, which we limit by Ra, is a gain.
+
+511
+01:06:59,219 --> 01:07:00,359
+Anlayan matris.
+
+512
+01:07:06,835 --> 01:07:07,755
+Matrix C
+
+513
+01:07:16,724 --> 01:07:18,724
+which is defined by
+
+514
+01:07:36,659 --> 01:07:38,460
+Cij equals
+
+515
+01:07:42,963 --> 01:08:02,344
+R times A i j i equals to 1 to the m and j equals to the 1 to the n. So it means that the matrix C,
+
+516
+01:08:06,900 --> 01:08:09,300
+c is obtained by a.
+
+517
+01:08:23,380 --> 01:08:26,020
+Obtink, boy matplank.
+
+518
+01:08:32,724 --> 01:08:40,444
+Each element of, sorry, each element of A,
+
+519
+01:08:46,484 --> 01:08:49,124
+A, B, A, S
+
+520
+01:08:49,124 --> 01:08:50,184
+So
+
+521
+01:08:54,068 --> 01:08:58,588
+If A is an M by M matrix,
+
+522
+01:09:23,028 --> 01:09:25,228
+Başka bir matrisle çarpmayı da göreceğiz [öğrenci].
+
+523
+01:09:28,819 --> 01:09:29,819
+ileride.
+
+524
+01:09:39,539 --> 01:09:41,939
+r times a equals
+
+525
+01:09:46,292 --> 01:09:53,692
+vektör uzayları, çeğmantı, A, Y, H
+
+526
+01:10:05,108 --> 01:10:05,927
+For example,
+
+527
+01:10:15,539 --> 01:10:17,539
+if a is
+
+528
+01:10:20,340 --> 01:10:23,539
+2 minus 4 minus 2 minus 3
+
+529
+01:10:27,507 --> 01:10:34,247
+[öğrenci] örnekle bakalım şimdi, küçükleyen olayını şimdi anlayacağım. Anlamazsan tekrar sor, tamam mı? Örneğe bir bak.
+
+530
+01:10:45,171 --> 01:10:46,551
+Eğer a is
+
+531
+01:10:50,676 --> 01:11:04,456
+4, minus 2, minus 3, 7, minus 3, and 2.
+
+532
+01:11:08,627 --> 01:11:15,407
+If you multiply this matrix by minus 2, so r is minus 2,
+
+533
+01:11:20,659 --> 01:11:32,840
+Evet, [öğrenci] olabilir ama onun için ne yapacağım bilmiyorum. Bazen bağırarak konuşuyorum, sesim daha rahat gelsin diye. Artık gider yedim. Olmaz mı?
+
+534
+01:11:40,532 --> 01:11:53,412
+Minus 2 times A equals, we multiply each element of A by minus 2.
+
+535
+01:11:53,412 --> 01:12:19,271
+Minus 2 times 4, minus 2 times, minus 2, minus 2 times, minus 3, minus 2 times 7, minus 2 times, minus 3, minus 2 times 2.
+
+536
+01:12:19,271 --> 01:12:30,192
+It gives minus 8, minus 4, minus 6, minus 4.
+
+537
+01:12:31,412 --> 01:12:38,971
+We only multiply each element by the constant or by the scalar 2, minus 2, sorry.
+
+538
+01:12:41,971 --> 01:12:47,891
+And this is also 2 by,
+
+539
+01:12:49,271 --> 01:12:50,231
+3 matrix.
+
+540
+01:12:52,632 --> 01:12:53,592
+Okay, [öğrenci].
+
+541
+01:12:54,811 --> 01:12:55,372
+Did you understand?
+
+542
+01:13:03,220 --> 01:13:25,360
+Now, I will, oh, we can also define the difference between two matrices, because we learn the matrix addition, and also we learn the scalar multiple of a matrix.
+
+543
+01:13:28,000 --> 01:13:28,579
+If,
+
+544
+01:13:32,979 --> 01:13:35,799
+A and B are matrices.
+
+545
+01:13:41,779 --> 01:13:45,979
+Or,
+
+546
+01:13:50,771 --> 01:13:52,771
+M by M atsis.
+
+547
+01:13:58,131 --> 01:14:21,751
+Then, we can write, or we write, a plus minus one times b equals, or s, a minus b.
+
+548
+01:14:21,751 --> 01:14:28,491
+And, call this.
+
+549
+01:14:33,395 --> 01:14:34,395
+...
+
+550
+01:14:44,756 --> 01:14:47,796
+A and B.
+
+551
+01:14:49,076 --> 01:14:49,996
+For example,
+
+552
+01:15:05,524 --> 01:15:08,923
+Let A and B are like this.
+
+553
+01:15:41,844 --> 01:15:49,163
+ve
+
+554
+01:15:49,971 --> 01:15:53,391
+A-P, or the difference between A and P.
+
+555
+01:15:58,484 --> 01:16:02,784
+It is also the same as the sum of A.
+
+556
+01:16:06,996 --> 01:16:28,496
+with the negative of b or the minus one scalar, sorry, minus one multiple of b. So it means, or we have a minus b.
+
+557
+01:16:32,212 --> 01:16:36,912
+We subtract the corresponding entries, 2 minus 2.
+
+558
+01:16:40,180 --> 01:16:58,100
+3 minus, minus 1, minus 5, minus 3, 4 minus 3, 2 minus 5, 1 minus, minus 2.
+
+559
+01:16:58,100 --> 01:17:12,780
+So, we have, a minus b, 0, 4, minus 8, 1, minus 3, 3.
+
+560
+01:17:12,780 --> 01:17:12,800
+3.
+
+561
+01:17:14,240 --> 01:17:15,000
+Okay.
+
+562
+01:17:17,140 --> 01:17:25,240
+And, for the last one, I'll give the,
+
+563
+01:17:25,240 --> 01:17:30,000
+Definition of summation notation.
+
+564
+01:17:31,420 --> 01:17:32,140
+Most probably,
+
+565
+01:17:32,579 --> 01:17:36,539
+Most of them know this notation.
+
+566
+01:17:38,539 --> 01:17:40,280
+I only remind.
+
+567
+01:17:43,780 --> 01:17:44,760
+Summation notation.
+
+568
+01:17:55,060 --> 01:18:05,560
+We will use these notation in our calculations, especially in matrix multiplication. So this is important.
+
+569
+01:18:07,680 --> 01:18:14,560
+It is showed by the Greek alphabet sigma.
+
+570
+01:18:20,595 --> 01:18:22,395
+This is the index of summation.
+
+571
+01:18:24,175 --> 01:18:26,955
+I equals 1 to the n.
+
+572
+01:18:28,315 --> 01:18:29,355
+A i.
+
+573
+01:18:31,355 --> 01:18:32,395
+Means.
+
+574
+01:18:36,275 --> 01:18:51,836
+At all terms of a, 1 to the n. So this is a1 plus a2 plus plus plus a n.
+
+575
+01:18:54,235 --> 01:18:57,055
+I is an index of summation.
+
+576
+01:19:05,011 --> 01:19:10,631
+And this is a dummy variable.
+
+577
+01:19:11,311 --> 01:19:13,351
+So you can change this variable
+
+578
+01:19:13,351 --> 01:19:18,331
+or you can replace another variable by i.
+
+579
+01:19:18,331 --> 01:19:19,371
+For example,
+
+580
+01:19:24,572 --> 01:19:33,731
+i1 to the n ui equals j1 to the n uj.
+
+581
+01:19:33,731 --> 01:19:42,072
+And this is also equal to k1 to the n uj.
+
+582
+01:19:44,652 --> 01:19:46,211
+For example,
+
+583
+01:19:49,051 --> 01:19:50,951
+i1 to the 4,
+
+584
+01:19:53,032 --> 01:20:01,731
+a i equals a1 plus a2 plus a3 plus a2.
+
+585
+01:20:11,539 --> 01:20:21,439
+Ve bu çok önemli bir şey var.
+
+586
+01:20:21,439 --> 01:20:30,569
+Bu, bu
+
+587
+01:20:37,779 --> 01:20:39,139
+Transponsors of a matrix
+
+588
+01:20:39,139 --> 01:20:42,639
+If A is
+
+589
+01:20:55,604 --> 01:20:58,463
+M by M matrix.
+
+590
+01:21:02,868 --> 01:21:04,488
+Then the transpose of A
+
+591
+01:21:14,452 --> 01:21:28,891
+Which we denote by a to the t equals a i j transpose
+
+592
+01:21:33,587 --> 01:21:36,547
+is the en bay
+
+593
+01:21:42,323 --> 01:21:43,323
+Amadris
+
+594
+01:21:46,868 --> 01:21:48,508
+And the fight by...
+
+595
+01:21:54,963 --> 01:21:58,104
+A, I, J, transpose, Ecos
+
+596
+01:22:03,252 --> 01:22:06,872
+A, C, I
+
+597
+01:22:06,872 --> 01:22:14,912
+Doğukan burada T, transpoz demek. Şimdi söylüyorum, devam ediyorum. Biraz daha dinle. Yine anlamazsan sor.
+
+598
+01:22:16,552 --> 01:22:16,972
+So
+
+599
+01:22:20,948 --> 01:22:27,468
+If A is M by M matrix, then
+
+600
+01:22:31,060 --> 01:22:34,660
+The transpose of A will be
+
+601
+01:22:34,660 --> 01:22:39,660
+m by m matrix.
+
+602
+01:22:45,619 --> 01:22:46,619
+So, obtain
+
+603
+01:22:46,619 --> 01:22:50,899
+the transpose of A
+
+604
+01:23:07,796 --> 01:23:13,676
+v, to obtain a transpose of a, v interchange,
+
+605
+01:23:20,372 --> 01:23:24,372
+The columns, the rows, and...
+
+606
+01:23:34,547 --> 01:23:35,568
+Trolls and
+
+607
+01:23:42,036 --> 01:23:45,195
+Columns of A.
+
+608
+01:23:48,979 --> 01:24:06,739
+So, the transponsor of a matrix means that you can write the rows of A as a columns of A transpose, and you write the columns of A as the rows of A transpose.
+
+609
+01:24:06,739 --> 01:24:07,459
+For example,
+
+610
+01:24:13,908 --> 01:24:19,307
+Evet [öğrenci], aynen öyle. Satırlarla sütunlar yer değiştiriyor.
+
+611
+01:24:19,307 --> 01:24:22,428
+For example.
+
+612
+01:24:31,220 --> 01:24:33,320
+Bu, bu
+
+613
+01:25:21,268 --> 01:25:22,268
+Let's see.
+
+614
+01:26:07,539 --> 01:26:13,140
+Let us find the transpose of these five matrices.
+
+615
+01:26:16,979 --> 01:26:36,879
+Now, for the A transpose, from the definition, it says the transpose of the matrix is obtained from the matrix by interchanging the valves and the columns.
+
+616
+01:26:36,879 --> 01:26:51,219
+So, for the A transpose, we write the valves of A as the columns of A transpose.
+
+617
+01:26:51,219 --> 01:26:55,779
+So, the first row of A will be the first column of A transpose.
+
+618
+01:26:56,539 --> 01:27:01,679
+So, this is the first column, 4, minus 2, 3.
+
+619
+01:27:01,679 --> 01:27:07,859
+And the second row will be the second column of A transpose.
+
+620
+01:27:08,399 --> 01:27:13,739
+So, this is 0, 5, minus 2.
+
+621
+01:27:15,399 --> 01:27:20,819
+And A is 2 by 3 matrix.
+
+622
+01:27:21,579 --> 01:27:27,979
+And the transpose of A is 3 by 2 matrix.
+
+623
+01:27:27,979 --> 01:27:40,519
+It's also the same as interchanging the valves with columns or columns with valves for B transpose.
+
+624
+01:27:44,307 --> 01:28:00,368
+Now, let us rewrite the columns as the rows. This is the first column of the B. So, we write the first row for the B transpose.
+
+625
+01:28:03,891 --> 01:28:08,391
+And this is the second row for the B transpose.
+
+626
+01:28:16,532 --> 01:28:21,532
+vektör,
+
+627
+01:28:27,764 --> 01:28:29,764
+B transpose.
+
+628
+01:28:31,764 --> 01:28:32,764
+And
+
+629
+01:28:34,264 --> 01:28:36,264
+For C transpose
+
+630
+01:28:37,764 --> 01:28:38,764
+We write this
+
+631
+01:28:39,764 --> 01:28:41,764
+Column to the first row
+
+632
+01:28:47,956 --> 01:28:56,115
+vekiz
+
+633
+01:29:00,115 --> 01:29:02,015
+This is 3 by 3.
+
+634
+01:29:04,756 --> 01:29:11,395
+And this is 2 by 3 since C is 3 by 2.
+
+635
+01:29:12,155 --> 01:29:13,935
+And what about D and E?
+
+636
+01:29:14,395 --> 01:29:15,895
+D is a row matrix.
+
+637
+01:29:16,676 --> 01:29:21,975
+So the transpose of a row matrix will be a column matrix.
+
+638
+01:29:21,975 --> 01:29:29,515
+So D transpose, we write this row as the column of D transpose.
+
+639
+01:29:30,115 --> 01:29:31,256
+which is 3,
+
+640
+01:29:31,256 --> 01:29:33,456
+minus 5,
+
+641
+01:29:33,456 --> 01:29:34,975
+1,
+
+642
+01:29:34,975 --> 01:29:57,275
+and
+
+643
+01:29:41,619 --> 01:29:42,619
+[öğrenci].
+
+644
+01:29:52,212 --> 01:30:10,912
+And last one, since e is a n-vektör or three-vektör or column matrix, then transpose of e will be the row matrix, which is 2, minus 1, 3.
+
+645
+01:30:13,432 --> 01:30:14,072
+Okay.
+
+646
+01:30:16,732 --> 01:30:21,312
+Do you have any questions about the transpose or another thing?
+
+647
+01:30:22,212 --> 01:30:23,992
+For this lecture, for this lesson.
+
+648
+01:30:28,627 --> 01:30:37,627
+I finished the lesson here, then we will continue next year with the matrix multiplication.
+
+649
+01:30:38,467 --> 01:30:47,127
+Thank you, teacher. And I have one question. Do you upload this notes to the, or this lecture to the hours?
+
+650
+01:30:47,688 --> 01:30:48,127
+Yeah.
+
+651
+01:30:48,927 --> 01:30:49,627
+Okay, thank you.
+
+652
+01:30:50,987 --> 01:30:52,427
+Okay. Thank you, [öğrenci].
+
+653
+01:30:56,819 --> 01:31:03,619
+Ok, we will continue with the matrix multiplication on next week.
+
+654
+01:31:04,739 --> 01:31:08,579
+Do you have any questions or comments for this lesson?
+
+655
+01:31:14,068 --> 01:31:17,068
+Hayır, benim için açık.
+
+656
+01:31:44,068 --> 01:31:51,568
+Bir şey yapacağım, bir çıkar yol bulacağım. Çünkü böyle ders çok ilerlemiyor yani. Zor oluyor. Benim için de zor oluyor. Tamam.
+
+657
+01:31:52,307 --> 01:32:04,688
+Okey. So if you don't have any question, then we will see next week and have a nice day for all of you.
+
+658
+01:32:07,387 --> 01:32:08,967
+Okey. See you.

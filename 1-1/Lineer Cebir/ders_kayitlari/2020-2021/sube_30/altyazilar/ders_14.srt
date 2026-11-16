@@ -1,0 +1,3107 @@
+1
+00:01:22,036 --> 00:01:24,316
+Merhaba, İslam. Günaydın.
+
+2
+00:01:26,195 --> 00:01:28,195
+Good afternoon to everyone.
+
+3
+00:01:37,811 --> 00:01:42,292
+Bu, bu, last lecture of the semester.
+
+4
+00:01:45,551 --> 00:01:53,271
+So, I think, or I hope you are sad to hear that.
+
+5
+00:01:54,652 --> 00:02:01,231
+Or maybe you are very happy that lectures are finished.
+
+6
+00:02:03,691 --> 00:02:04,971
+On Saturday,
+
+7
+00:02:07,811 --> 00:02:11,651
+We had a lecture, but unfortunately,
+
+8
+00:02:13,632 --> 00:02:17,471
+a small number of students
+
+9
+00:02:18,252 --> 00:02:20,252
+during that lecture, but
+
+10
+00:02:21,432 --> 00:02:23,051
+it was very important.
+
+11
+00:02:28,243 --> 00:02:45,524
+Today, I summarize first the transition matrices because I think it is hard to understand this topic for most of the students.
+
+12
+00:02:48,024 --> 00:02:56,884
+And I want to say that unfortunately I didn't look, I didn't check your exam scores, but today or tomorrow,
+
+13
+00:02:58,243 --> 00:03:05,444
+I will check and send an email if there's anything wrong or not.
+
+14
+00:03:06,704 --> 00:03:08,723
+So sorry about that.
+
+15
+00:03:11,563 --> 00:03:18,663
+Now first, let us begin with the transition matrices and coordinate vectors.
+
+16
+00:03:22,484 --> 00:03:24,604
+We have a little space to be...
+
+17
+00:03:28,723 --> 00:03:40,584
+And two bases of this vector space, let us say B1 and B2 are bases for the vector space V.
+
+18
+00:03:40,584 --> 00:03:46,584
+We know that every vector V...
+
+19
+00:03:51,092 --> 00:04:01,652
+can be uniquely written as the linear combination of the vectors in its basis.
+
+20
+00:04:02,852 --> 00:04:17,891
+So we can write the vector v in any vector v in the vector space v as a linear combination of the elements in b1 or in b2.
+
+21
+00:04:17,891 --> 00:04:37,331
+And also, since the basis vectors are the vectors in v, we can write each vector in the basis v1 as the linear combination of the vectors in basis v2.
+
+22
+00:04:37,331 --> 00:04:47,331
+So we can write v1 as a11w1 plus a21w2 plus am1wn.
+
+23
+00:04:47,331 --> 00:04:57,331
+And also, we can write all other vectors as a linear combination of the vectors in the basis v2.
+
+24
+00:04:57,331 --> 00:05:03,331
+Writing these coefficients
+
+25
+00:05:03,331 --> 00:05:29,331
+And then, we can write the vector v2.
+
+26
+00:05:07,507 --> 00:05:09,327
+As a column of the matrix,
+
+27
+00:05:17,779 --> 00:05:19,779
+We have a transition matrix.
+
+28
+00:05:28,180 --> 00:05:38,560
+matris, from, from, to basis P1.
+
+29
+00:05:42,004 --> 00:05:45,204
+So, the basis B2.
+
+30
+00:05:47,244 --> 00:05:52,004
+And make sure that we denote this matrix S,
+
+31
+00:05:53,764 --> 00:05:54,164
+M,
+
+32
+00:05:56,004 --> 00:05:57,283
+from B1 to the
+
+33
+00:05:59,204 --> 00:06:06,244
+B2. It means that we write each vector in the basis B1,
+
+34
+00:06:06,244 --> 00:06:12,484
+as the linear combination of the vectors in B2.
+
+35
+00:06:17,172 --> 00:06:39,872
+And we say, we say each column in this matrix, this is the coordinate vector of V1 with respect to the basis B1, this column.
+
+36
+00:06:39,872 --> 00:07:01,872
+So, it means that writing V1 as the linear combination of the vectors in the basis B2, then we have here A11, A21, A21, M1 coefficients.
+
+37
+00:07:01,872 --> 00:07:09,872
+So, writing these coefficients in a column matrix, then we have...
+
+38
+00:07:13,204 --> 00:07:17,924
+The coordinate vector of V1
+
+39
+00:07:21,363 --> 00:07:27,803
+with respect to the basis B1.
+
+40
+00:07:30,123 --> 00:07:39,063
+And the transition matrix, and transition matrix has some important properties.
+
+41
+00:07:39,063 --> 00:07:52,443
+Similarly, you can write each element of each vector of the basis B2 as the linear combination of the vectors in the basis B1.
+
+42
+00:07:52,443 --> 00:08:02,103
+So, finding, or solving this linear system, and finding these coefficients,
+
+43
+00:08:04,203 --> 00:08:11,563
+you have found that, or you will find that, this matrix is a transition matrix,
+
+44
+00:08:14,063 --> 00:08:21,823
+from the basis B2 to the basis B1.
+
+45
+00:08:22,443 --> 00:08:26,443
+and transition matrices.
+
+46
+00:08:30,963 --> 00:08:41,604
+has very important property that it is non-singular matrix and the inverse of the transition matrix
+
+47
+00:08:43,283 --> 00:08:54,323
+from the from b2 basis to the b1 basis is another transition matrix which is
+
+48
+00:08:54,323 --> 00:09:03,524
+b1 from b1 basis to the b2 basis okay
+
+49
+00:09:07,124 --> 00:09:10,004
+and also and also
+
+50
+00:09:12,403 --> 00:09:19,604
+the coordinate vector of u with respect to the b1 basis
+
+51
+00:09:19,604 --> 00:09:27,283
+or with respect to the basis b1 is equal to the
+
+52
+00:09:29,364 --> 00:09:39,443
+the transition matrix from the basis b2 to the basis b1 times the coordinate vector of u
+
+53
+00:09:40,244 --> 00:09:47,203
+with respect to the basis b2 and again similarly the coordinate vectors
+
+54
+00:09:47,203 --> 00:09:53,443
+with respect to the b2 is equal to the transition matrix
+
+55
+00:09:56,083 --> 00:10:03,443
+from basis b1 to the basis b2 times the coordinate vector of v
+
+56
+00:10:06,563 --> 00:10:12,803
+with respect to the basis b1 so please be careful to write this equation
+
+57
+00:10:12,803 --> 00:10:22,323
+the basis have to be same maybe you can write this easily from looking at this
+
+58
+00:10:23,043 --> 00:10:26,803
+this have to be same on the right okay
+
+59
+00:10:38,227 --> 00:10:42,507
+So, look at the example.
+
+60
+00:10:48,275 --> 00:10:49,675
+Find each of the following.
+
+61
+00:10:58,772 --> 00:11:05,212
+[öğrenci], şimdi bu bir example.
+
+62
+00:11:05,212 --> 00:11:05,552
+Tamam.
+
+63
+00:11:08,692 --> 00:11:14,172
+Please be careful in solving the example.
+
+64
+00:11:14,612 --> 00:11:17,892
+And if you don't understand anything, please ask.
+
+65
+00:11:18,272 --> 00:11:27,692
+Now, we are looking for, or we want to write or we want to find the transition matrix.
+
+66
+00:11:28,772 --> 00:11:38,032
+From the basis B1 to the basis B2.
+
+67
+00:11:38,812 --> 00:11:51,372
+So it means that write, write each element of B1, which are B1, B2 and B3.
+
+68
+00:11:52,211 --> 00:11:57,892
+Is the linear combination of the basis vectors in the basis B2.
+
+69
+00:11:57,892 --> 00:12:19,711
+So we have to write B1 is equal to A1 times W1 plus A2 times W2 plus A3 times W3.
+
+70
+00:12:19,711 --> 00:12:24,892
+So these coefficients are.
+
+71
+00:12:24,892 --> 00:12:42,892
+So we have to write.
+
+72
+00:12:29,331 --> 00:12:42,011
+After solving this linear system, these coefficients are the first column of the transition matrix.
+
+73
+00:12:42,011 --> 00:12:42,711
+Okay.
+
+74
+00:12:45,471 --> 00:12:46,891
+And for
+
+75
+00:12:51,220 --> 00:12:58,560
+Again, we write V2 as the linear combination of the basis, the vectors in the basis V2.
+
+76
+00:12:58,560 --> 00:13:10,519
+So, V1, W1 plus V2, W2 plus V3, W3.
+
+77
+00:13:10,519 --> 00:13:29,180
+So, these coefficients, after solving this linear system, gives the second column of the transition matrix from the basis V1 to the basis V2.
+
+78
+00:13:33,556 --> 00:13:35,556
+ve v3
+
+79
+00:13:35,556 --> 00:13:37,556
+v3
+
+80
+00:13:37,556 --> 00:13:39,556
+c1
+
+81
+00:13:39,556 --> 00:13:41,556
+w1
+
+82
+00:13:41,556 --> 00:13:43,556
+c2
+
+83
+00:13:43,556 --> 00:13:45,556
+w2
+
+84
+00:13:45,556 --> 00:13:47,556
+c3
+
+85
+00:13:47,556 --> 00:13:49,556
+w3
+
+86
+00:13:49,556 --> 00:13:51,556
+so
+
+87
+00:13:51,556 --> 00:14:03,556
+v3
+
+88
+00:13:59,668 --> 00:14:06,908
+This coefficient gives the last column of the transition matrix.
+
+89
+00:14:09,148 --> 00:14:10,227
+Okay.
+
+90
+00:14:11,668 --> 00:14:21,827
+So, we only solve these linear systems.
+
+91
+00:14:21,827 --> 00:14:23,347
+You can solve.
+
+92
+00:14:28,244 --> 00:14:52,324
+You can solve this linear system separately or distinctly, or we said that you can combine all of these linear systems in one linear system, S, because of the coefficients matrices are same, we write this system as
+
+93
+00:14:57,683 --> 00:15:23,024
+W1, W2, W3, V1, V2, V3. So, I said on Saturday that we can denote this matrix, this transition matrix as P
+
+94
+00:15:30,196 --> 00:15:51,596
+B1, from B1 basis to the B2 basis, write, write the vectors on the second basis on the left, and the vectors of the B1 on the right.
+
+95
+00:15:52,596 --> 00:15:54,576
+Okay, we denote also.
+
+96
+00:15:58,676 --> 00:16:06,336
+Transition Matrix, from basis B1 to basis B2, like this.
+
+97
+00:16:08,796 --> 00:16:21,016
+Okay, now, you can solve this linear system separately, or you can solve this linear system in one system.
+
+98
+00:16:21,016 --> 00:16:26,016
+Writing the vectors W1, W2, and W3.
+
+99
+00:16:26,276 --> 00:16:27,176
+What is W1?
+
+100
+00:16:27,576 --> 00:16:29,676
+Zero, two, three.
+
+101
+00:16:36,884 --> 00:16:57,364
+So, the system is 0, 2, 1, minus 1, 0, 1, minus 1, 3, 0, and write V1, V2, and V3.
+
+102
+00:16:57,364 --> 00:17:05,604
+Actually, these are the matrices, like the matrices AX is equal to B.
+
+103
+00:17:05,604 --> 00:17:08,124
+So, these are like the matrices B.
+
+104
+00:17:08,903 --> 00:17:09,243
+Okay.
+
+105
+00:17:11,024 --> 00:17:14,683
+V1, V2, and V3.
+
+106
+00:17:19,700 --> 00:17:23,559
+V1, 1, 2, 0.
+
+107
+00:17:29,076 --> 00:17:30,576
+201
+
+108
+00:17:35,667 --> 00:17:40,247
+And, one, two, one.
+
+109
+00:17:48,180 --> 00:17:48,940
+Evet şöyle.
+
+110
+00:17:51,900 --> 00:17:53,420
+Evet, yes, aleyna.
+
+111
+00:17:57,619 --> 00:18:21,659
+Actually, the solution of this linear system gives, because when solving a linear system, we put the coefficient matrix into the reduced row echelon form, and the matrix on the right gives the solution for the system.
+
+112
+00:18:21,659 --> 00:18:47,739
+So, putting this matrix into the reduced row echelon form gives identity matrix, and on the right, we have transition matrix from the basis B1 to the basis B2.
+
+113
+00:18:47,739 --> 00:19:07,739
+Okay. So, let us put this matrix into the reduced row echelon form. We have leading one in the third row, so changing or replacing the third row by the first row, we have...
+
+114
+00:19:12,435 --> 00:19:23,395
+1, 1, 0, 0, 1, 1.
+
+115
+00:19:23,395 --> 00:19:31,855
+And second row is 2, 0, 3, 2, 0, 2.
+
+116
+00:19:31,855 --> 00:19:44,615
+And third row, 0, minus 1, minus 1, 1, 2, 1.
+
+117
+00:19:44,615 --> 00:19:49,215
+Let us put this matrix into the reduced row echelon form.
+
+118
+00:19:49,215 --> 00:19:53,895
+I delete, I write the entries on this matrix.
+
+119
+00:19:53,895 --> 00:20:00,695
+So please help me to putting this matrix in the reduced row echelon form.
+
+120
+00:20:00,695 --> 00:20:08,455
+We multiply the first row by minus 2 and add it to the second row because we want to make
+
+121
+00:20:08,455 --> 00:20:09,455
+this 0.
+
+122
+00:20:09,455 --> 00:20:12,635
+So this is 0.
+
+123
+00:20:12,635 --> 00:20:16,015
+We multiply this by minus 2.
+
+124
+00:20:16,015 --> 00:20:21,556
+So this is minus 2, 2, 3.
+
+125
+00:20:21,556 --> 00:20:22,735
+This is minus 2.
+
+126
+00:20:26,387 --> 00:20:27,947
+And this is zero.
+
+127
+00:20:29,647 --> 00:20:33,207
+Now, we want to make this one.
+
+128
+00:20:34,548 --> 00:20:39,288
+We can divide this by minus one over two,
+
+129
+00:20:39,447 --> 00:20:42,747
+but it seems that it is more complicated.
+
+130
+00:20:43,947 --> 00:20:48,467
+Instead of this, we multiply the third row by minus three
+
+131
+00:20:48,467 --> 00:20:51,007
+and add it to the second row.
+
+132
+00:20:51,007 --> 00:20:55,627
+We have, multiply this third row by minus three,
+
+133
+00:20:56,387 --> 00:21:07,247
+and add it to the second row gives one minus three times minus one, three,
+
+134
+00:21:08,247 --> 00:21:13,187
+six, this is minus one,
+
+135
+00:21:14,407 --> 00:21:23,627
+this is minus eight, and this is minus three.
+
+136
+00:21:23,627 --> 00:21:34,087
+Now, we can make this and this zero using this row.
+
+137
+00:21:35,367 --> 00:21:38,147
+Adding second row to the third row we have.
+
+138
+00:21:38,147 --> 00:21:58,507
+And this row we have.
+
+139
+00:21:43,092 --> 00:21:57,692
+0, 5, 0, minus 6, minus 2.
+
+140
+00:21:57,692 --> 00:22:13,412
+And multiplying the second row by minus 1 and add it to the first row, we have 0, minus 6, 1.
+
+141
+00:22:17,299 --> 00:22:18,059
+9
+
+142
+00:22:18,059 --> 00:22:20,480
+2
+
+143
+00:22:26,132 --> 00:22:27,012
+Yes, 9.
+
+144
+00:22:30,932 --> 00:22:32,932
+ve özvektör.
+
+145
+00:22:34,531 --> 00:22:35,531
+Now,
+
+146
+00:22:39,028 --> 00:23:04,708
+We want to make this 0. The only way making this entry 0 is dividing this by 1 over 5. So it gives 1 minus 5 over minus 6 over 5 and minus 2 over 5.
+
+147
+00:23:04,708 --> 00:23:27,708
+Now, we make this and this entry 0. So multiplying the third row by minus 6 and add it to the second row, we have 0. We multiply this by minus 6. So this is...
+
+148
+00:23:32,468 --> 00:23:36,668
+Minus 4 over 5
+
+149
+00:23:42,324 --> 00:23:48,084
+ve bu bölümde bu bölümde
+
+150
+00:23:54,483 --> 00:23:56,063
+Minus 3 over 5.
+
+151
+00:24:01,460 --> 00:24:28,140
+And for the first row, we want to make this entry 0, so multiplying the third row by 6 and add it to the first row, we have 0. We multiply this by 6, so 9 minus 36 over 5 gives 9 over 5.
+
+152
+00:24:28,140 --> 00:24:46,920
+And the last entry, we multiply this by 6, so 4 minus 12 over 5 minus 8 over 6.
+
+153
+00:24:50,259 --> 00:24:50,819
+5.
+
+154
+00:24:52,200 --> 00:24:52,879
+So,
+
+155
+00:24:53,720 --> 00:24:54,460
+so,
+
+156
+00:24:56,000 --> 00:24:58,400
+this gives
+
+157
+00:24:58,400 --> 00:25:01,720
+the transition matrix
+
+158
+00:25:01,720 --> 00:25:04,180
+from
+
+159
+00:25:04,180 --> 00:25:06,740
+the basis B1 to the
+
+160
+00:25:06,740 --> 00:25:10,539
+basis B2.
+
+161
+00:25:16,147 --> 00:25:20,028
+Only, okay, thank you.
+
+162
+00:25:22,607 --> 00:25:25,007
+One, minus one, zero.
+
+163
+00:25:30,579 --> 00:25:31,679
+9 over 5.
+
+164
+00:25:48,051 --> 00:25:49,932
+This is the transition matrix.
+
+165
+00:25:57,844 --> 00:26:05,224
+This is a transition matrix from the basis B1 to the basis B2.
+
+166
+00:26:06,084 --> 00:26:06,384
+Okay.
+
+167
+00:26:08,384 --> 00:26:23,183
+Or, instead of this, you can compute each column with solving each linear system, as in the presentation.
+
+168
+00:26:23,183 --> 00:26:29,963
+First, write B1 as linear combination of the W1, W2, and W3.
+
+169
+00:26:30,504 --> 00:26:34,443
+So, find here, from here, A11, A21, A31.
+
+170
+00:26:35,044 --> 00:26:46,844
+So, you will find the solution of this system as A111, A21-1, and A31-0.
+
+171
+00:26:46,844 --> 00:26:49,364
+So, this is the first column.
+
+172
+00:26:52,948 --> 00:27:21,208
+And similarly find the second column of the transition matrix, which solving this linear system. And the last linear system gives the last column of the transition matrix. But I think the way I solve this example is more simple than this way.
+
+173
+00:27:21,208 --> 00:27:28,388
+You can use both of them.
+
+174
+00:27:35,604 --> 00:27:48,124
+Ok, so, we will find, we find, the transition matrix, from the basis B1 to the basis B2, is this.
+
+175
+00:27:49,124 --> 00:28:02,183
+And, the transition matrix, from the basis B2 to the basis B1, is the inverse of,
+
+176
+00:28:06,163 --> 00:28:14,003
+The transition matrix from the basis B1 to the basis B2.
+
+177
+00:28:14,003 --> 00:28:18,003
+So, taking the inverse of this matrix gives...
+
+178
+00:28:23,347 --> 00:28:30,028
+The transition matrix from the basis B2 to the basis B1.
+
+179
+00:28:31,167 --> 00:28:31,508
+Okay.
+
+180
+00:28:35,827 --> 00:28:53,627
+And first, let us find the coordinate vector of u, what is u? The coordinate vector of u with respect to the basis p1.
+
+181
+00:28:53,627 --> 00:29:07,627
+So, we have to find the constants y1, y2, and y3, such that we can write the vector u as the linear combination of the vectors in the basis p1.
+
+182
+00:29:07,627 --> 00:29:27,008
+So, solving this linear system, we have y1 is minus 13 over 4, and y2 is 1 over 4, and y3 is 19 over 4.
+
+183
+00:29:29,228 --> 00:29:36,327
+Therefore, the coordinate vector of u with respect to the p1 is this.
+
+184
+00:29:37,627 --> 00:29:46,127
+Actually, this can be written like a column vector.
+
+185
+00:29:52,115 --> 00:30:21,016
+So, using, using this coordinate vector, and we know that from the term that the coordinate vector of u with respect to the basis b2 is equal to the transition matrix from the basis b1 to the basis b2.
+
+186
+00:30:22,115 --> 00:30:39,076
+times the coordinate vector of u with respect to the basis b1. We have this and we have this so you can find the coordinate vector with respect to the b2.
+
+187
+00:30:40,695 --> 00:30:41,556
+Okay.
+
+188
+00:30:53,748 --> 00:31:16,807
+I think this example, this example is very, very important because most probably you will see a very similar question in the final exam. I think this is my opinion.
+
+189
+00:31:16,807 --> 00:31:30,228
+Now, we have two ordered basis of a vector space V, but in this example, the vectors of the basis are not given.
+
+190
+00:31:31,548 --> 00:31:34,587
+Only the relation between them is given.
+
+191
+00:31:34,587 --> 00:31:49,468
+So, we have to find the coordinate, the transition matrix from the basis B1 to the basis B2.
+
+192
+00:31:49,468 --> 00:31:54,367
+So, it missed it, it missed it.
+
+193
+00:31:57,779 --> 00:32:16,420
+Transition matrix from the basis B1 to the basis B2 means that write each element of B1, which are B1, B2 and B3, B1 is equal to the linear combination of the vectors in B2.
+
+194
+00:32:16,420 --> 00:32:43,819
+A1, W1 plus A2, W2 plus A3, W3 and each element of B1, B2 is equal to B1, W1 plus B2, W2 plus B3, W3.
+
+195
+00:32:43,819 --> 00:32:57,619
+And W3 is equal to C1, W1 plus C2, W2 plus C3, W3.
+
+196
+00:32:57,619 --> 00:33:03,200
+So these coefficients gives transition matrix.
+
+197
+00:33:04,720 --> 00:33:11,519
+But in the equation, we have already have these coefficients, right?
+
+198
+00:33:11,519 --> 00:33:15,720
+So what is A1, A2, A3?
+
+199
+00:33:16,299 --> 00:33:18,980
+This one, 1, 1 minus 1.
+
+200
+00:33:18,980 --> 00:33:23,879
+So we can write the transition matrix easily.
+
+201
+00:33:23,879 --> 00:33:43,879
+So the transition matrix.
+
+202
+00:33:43,879 --> 00:33:56,879
+From the basis B1 to the B2.
+
+203
+00:33:56,879 --> 00:33:58,879
+Is this matrix.
+
+204
+00:33:58,879 --> 00:33:59,879
+Okay.
+
+205
+00:33:59,879 --> 00:34:24,880
+Is there any question here?
+
+206
+00:34:13,204 --> 00:34:23,824
+And the transition matrix from the basis B2 to the basis B1 is the inverse of this matrix. So you only take the inverse of this one.
+
+207
+00:34:26,864 --> 00:34:27,604
+And
+
+208
+00:34:38,931 --> 00:34:54,791
+If the coordinate vector of u, if the coordinate vector of u with respect to the basis p1 is this, and find the coordinate vector of u with respect to the basis p2.
+
+209
+00:34:54,791 --> 00:35:11,791
+So, again, from the theorem, we know that the coordinate vector of u with respect to the basis p2 is equal to the transition matrix from the basis p2.
+
+210
+00:35:19,603 --> 00:35:23,603
+[öğrenci], transition?
+
+211
+00:35:27,860 --> 00:35:34,160
+I don't understand what do you say, lineer. Türkçe mi anlatayım, onu mu diyorsun?
+
+212
+00:35:43,668 --> 00:36:13,668
+Segulde question, yes
+
+213
+00:36:13,668 --> 00:36:36,788
+A times a joint A. So you already know how to find the inverse of the matrix. Okay. So we have, unfortunately, not enough time to find the inverse of the matrix. We have already known this. Okay.
+
+214
+00:36:43,284 --> 00:36:48,443
+Bu sadece bu metriksiyonu, bu metriksiyonu, bu metriksiyonu, ok?
+
+215
+00:36:52,052 --> 00:36:58,572
+Now, the coordinate vectors
+
+216
+00:37:04,244 --> 00:37:05,364
+U'un,
+
+217
+00:37:05,963 --> 00:37:07,903
+with respect to the basis B2,
+
+218
+00:37:08,024 --> 00:37:09,084
+is equal to the
+
+219
+00:37:09,084 --> 00:37:13,344
+transition matrix
+
+220
+00:37:13,344 --> 00:37:16,584
+from the basis B1
+
+221
+00:37:16,584 --> 00:37:18,544
+to the basis B2
+
+222
+00:37:18,544 --> 00:37:19,264
+times
+
+223
+00:37:19,264 --> 00:37:24,084
+the coordinate vector of U
+
+224
+00:37:24,084 --> 00:37:25,923
+with respect to the
+
+225
+00:37:25,923 --> 00:37:28,844
+basis B1.
+
+226
+00:37:29,724 --> 00:37:32,084
+So we have the transition matrix
+
+227
+00:37:32,084 --> 00:37:35,884
+1, 1,
+
+228
+00:37:36,064 --> 00:37:36,864
+minus 1,
+
+229
+00:37:37,384 --> 00:37:39,504
+2, minus 1,
+
+230
+00:37:39,644 --> 00:37:39,963
+1,
+
+231
+00:37:41,004 --> 00:37:42,784
+1, 0, 2
+
+232
+00:37:42,784 --> 00:37:45,744
+times we have also the transition
+
+233
+00:37:45,744 --> 00:37:48,024
+the coordinate vector of U
+
+234
+00:37:48,024 --> 00:37:49,544
+with respect to the B1 is
+
+235
+00:37:49,544 --> 00:37:53,943
+1, 0, 3
+
+236
+00:37:53,943 --> 00:37:57,304
+so we have
+
+237
+00:38:00,692 --> 00:38:12,972
+1, 4, 1, minus 1, 6, 5.
+
+238
+00:38:14,351 --> 00:38:21,751
+This is the coordinate vector of u, with respect to the b2.
+
+239
+00:38:25,652 --> 00:38:36,311
+Okay, for [öğrenci], let us compute the transition matrix from the basis B2 to the basis B1.
+
+240
+00:38:36,311 --> 00:38:42,331
+So we have to take the inverse of this matrix.
+
+241
+00:38:44,112 --> 00:38:50,972
+So what is determinant A? Determinant A is minus 2.
+
+242
+00:38:54,643 --> 00:38:57,043
+0, plus 1,
+
+243
+00:39:03,860 --> 00:39:04,940
+Minus 1
+
+244
+00:39:10,164 --> 00:39:11,284
+Minus 4.
+
+245
+00:39:13,804 --> 00:39:15,084
+So, it gives
+
+246
+00:39:15,084 --> 00:39:18,844
+Minus 6.
+
+247
+00:39:21,104 --> 00:39:21,544
+Now,
+
+248
+00:39:23,364 --> 00:39:23,884
+Let us
+
+249
+00:39:23,884 --> 00:39:27,064
+Determinant is
+
+250
+00:39:27,064 --> 00:39:29,844
+Minus 6.
+
+251
+00:39:31,984 --> 00:39:34,684
+Let us compute the adjunct A.
+
+252
+00:39:38,739 --> 00:39:51,739
+Ajoin A, A11, A21, A31,
+
+253
+00:40:01,427 --> 00:40:02,167
+Onsuri.
+
+254
+00:40:27,668 --> 00:40:37,688
+Now, we compute all of these cofactors using this matrix.
+
+255
+00:40:46,675 --> 00:41:11,115
+A11 is equal to minus 1 over 1 plus 1. We delete the first row and the first column and take the determinant, delete this column and this row. So this is minus 2, minus 0, minus 2. And this is
+
+256
+00:41:17,972 --> 00:41:47,972
+Bu, A11'e bu, A11'e bu, A21'e bu, A21'e bu, A21'e bu, A21'e bu, A21'e bu, A21'e bu, A21'e bu, A21'e bu, A21'e bu, A21'e bu, A21'e bu, A21'e bu, A21'e bu, A21'e bu, A21'e bu, A21'e bu, A21'e bu, A21'e bu, A21'e bu, A21'e bu, A21'e bu, A21'e bu, A21'e bu, A21'e bu, A21'e bu, A21'e bu, A21'e bu, A21'e bu, A21'e bu, A21'e bu, A21'e bu, A21'e bu, A21'e bu, A21'e bu, A21'e bu
+
+257
+00:41:47,972 --> 00:42:08,232
+A21'e bu, A21'e bu, A21'e bu, A21'e bu, A21'e bu, A21'e bu, A21'e bu, A21'e bu, A21'e bu, A21'e bu, A21'e bu, A21'e bu, A21'e bu, A21'e bu, A21'e bu, A21'e bu, A21'e bu, A21'e bu, A21'e bu, A21'e bu, A21'e bu, A21'e bu, A21'e bu, A21'e bu, A21'e bu, A21'e bu, A21'e bu, A21'e bu, A21'e bu, A21'e bu, A21'e bu, A21'e bu, A21'e bu, A21'e bu, A21' bu, A21' bu, A21' bu, A21
+
+258
+00:42:16,820 --> 00:42:36,780
+A12, we delete the first row and the second column, 2. This is negative because minus 1 over 1 plus 2 is negative. This is minus 2.
+
+259
+00:42:36,780 --> 00:42:57,059
+A12, and for A22, we delete the second row and the second column, and the determinant of this is 2 plus 1 gives 3, and this is positive, 3.
+
+260
+00:42:57,059 --> 00:43:16,039
+And A32, we delete the third row and the second column, so this is 0 minus 1, and in front of the determinant we have minus 1, so this is 1.
+
+261
+00:43:17,460 --> 00:43:18,420
+And last row.
+
+262
+00:43:31,572 --> 00:43:38,231
+3rd column, determine bu, 1, minus 1, 0.
+
+263
+00:43:41,452 --> 00:43:50,532
+We delay the second row and the third column, determine bu, this is 1, plus 2, 3.
+
+264
+00:43:51,192 --> 00:43:53,612
+And this is negative, minus 3.
+
+265
+00:43:55,452 --> 00:43:56,612
+And the last entry.
+
+266
+00:44:00,148 --> 00:44:10,648
+We delay the third row and the third column, gives minus 1, minus 2, minus 3. And this is positive minus 3.
+
+267
+00:44:12,148 --> 00:44:15,648
+Therefore, the inverse of this matrix is...
+
+268
+00:44:32,755 --> 00:44:40,755
+The universe of this matrix gives the transition matrix from the basis B2 to the basis B1.
+
+269
+00:44:48,403 --> 00:44:53,344
+1 over determinant A, 1 over minus 6.
+
+270
+00:44:53,344 --> 00:45:18,384
+So, divide each entry by minus 6 gives 1 over 3, 1 over 2, minus 1 over 6, 1 over 3, minus 1 over 2, minus 1 over 6, 1 over 3, minus 1 over 2, minus 1 over 6.
+
+271
+00:45:18,403 --> 00:45:27,244
+0, 1 over 2, minus 1 over 2.
+
+272
+00:45:34,228 --> 00:45:34,728
+Ok.
+
+273
+00:45:44,916 --> 00:45:46,256
+Zişer, one question.
+
+274
+00:45:46,676 --> 00:45:46,976
+Yes.
+
+275
+00:45:47,976 --> 00:46:05,536
+If we have, for example, the coordinate from B1 to B2, then from inverse of matrix, we can calculate B2 to B1, change basis, change basis.
+
+276
+00:46:05,536 --> 00:46:09,096
+Always, always.
+
+277
+00:46:09,476 --> 00:46:21,676
+If you have the transition matrix from basis B2 to the basis B1, the inverse of this gives this one, and the inverse of gives this one.
+
+278
+00:46:22,756 --> 00:46:24,056
+Okay.
+
+279
+00:46:25,056 --> 00:46:25,756
+Thank you.
+
+280
+00:46:32,788 --> 00:46:42,068
+So, this example is very important to understand the transition matrix and coordinate vectors.
+
+281
+00:46:43,987 --> 00:46:52,228
+Okay, this is actually the matrix we found, the inverse of A.
+
+282
+00:46:55,108 --> 00:46:59,668
+Okay, any questions here?
+
+283
+00:47:05,108 --> 00:47:07,228
+No questions? Good.
+
+284
+00:47:11,764 --> 00:47:24,244
+Now, we talk about eigenvalues, eigenvektörs, and Kylie-Hamilton theorem.
+
+285
+00:47:29,556 --> 00:47:42,635
+Please, please look at these two titles, are not included in the exam. Oops.
+
+286
+00:48:06,003 --> 00:48:10,003
+Ok, so don't look at these two topics.
+
+287
+00:48:12,963 --> 00:48:17,284
+Now, Teje, what about the six?
+
+288
+00:48:19,203 --> 00:48:22,324
+Yes, we will see the six.
+
+289
+00:48:23,203 --> 00:48:23,804
+Ah, ok.
+
+290
+00:48:23,804 --> 00:48:31,683
+It is also a very important topic in exam and in also other applications of the engineering.
+
+291
+00:48:44,052 --> 00:48:49,092
+eigenvektör ve eigenvektör ve eigenvektör
+
+292
+00:48:53,396 --> 00:49:07,324
+We have an M by M matrix A.
+
+293
+00:49:11,347 --> 00:49:18,927
+The scalar lambda is called an eigenvalue of the matrix A.
+
+294
+00:49:22,612 --> 00:49:31,851
+if there is a non-trivial solution or if there is a non-zero vector
+
+295
+00:49:41,748 --> 00:49:44,508
+x such that
+
+296
+00:49:44,508 --> 00:49:51,427
+a times x is equal to
+
+297
+00:49:51,427 --> 00:49:53,947
+lambda times
+
+298
+00:49:53,947 --> 00:49:55,847
+x.
+
+299
+00:49:57,847 --> 00:49:58,148
+So,
+
+300
+00:49:59,628 --> 00:50:02,228
+here, lambda is called
+
+301
+00:50:02,228 --> 00:50:05,008
+ayamalya
+
+302
+00:50:05,008 --> 00:50:09,467
+and x is called
+
+303
+00:50:09,467 --> 00:50:12,788
+ayıgan vektörsün
+
+304
+00:50:30,579 --> 00:50:31,920
+Ayrıca ayran veriyor.
+
+305
+00:50:36,275 --> 00:50:36,835
+Lambda.
+
+306
+00:50:39,056 --> 00:50:41,536
+Actually, Ayrgün comes from the German.
+
+307
+00:50:50,804 --> 00:50:54,884
+German word, and means proper.
+
+308
+00:51:00,275 --> 00:51:26,036
+So, if you have an n by n matrix n, then if you can find the non-zero vector x such that a times x is equal to lambda times x, then the scalar lambda is called the eigenvalue of a and such a vector x is called the eigenvector associated with this eigenvalue.
+
+309
+00:51:34,068 --> 00:51:51,708
+Here, it's also important to note that we cannot take the eigenvector as the zero vector, because in the definition, it is said it has a non-trivial solution, or it means that x is a non-zero vector.
+
+310
+00:51:51,708 --> 00:52:17,768
+But the eigenvalue of a matrix can be zero, but in this case, in this case, if the eigenvalue of a matrix is zero, then this matrix is non-invertible, or the square matrix A is invertible,
+
+311
+00:52:17,768 --> 00:52:26,768
+if and only if zero is not an eigenvalue of a.
+
+312
+00:52:26,768 --> 00:52:28,908
+Okay.
+
+313
+00:52:35,923 --> 00:52:43,884
+The set of all eigenvektors of the matrix A is called eigenspace of A.
+
+314
+00:52:43,884 --> 00:52:54,143
+The set of all eigenvektors of A is called eigenspace for the matrix A.
+
+315
+00:52:59,476 --> 00:53:15,736
+Before talking about the characteristic equation, let us look at this example, 1, 1, minus 2, 4.
+
+316
+00:53:30,036 --> 00:53:40,036
+Let us find all of the eigenvalues of an eigenvektors of this matrix. So we are looking for
+
+317
+00:53:43,556 --> 00:53:45,155
+a scalar lambda
+
+318
+00:53:47,316 --> 00:53:56,836
+and non-zero vector x such that a times x is equal to lambda times x.
+
+319
+00:53:56,836 --> 00:54:04,836
+Since a is 2 by 2 matrix, then let us take x as
+
+320
+00:54:04,836 --> 00:54:24,836
+x as
+
+321
+00:54:09,139 --> 00:54:12,139
+x1, x2.
+
+322
+00:54:15,476 --> 00:54:18,396
+So, a times x
+
+323
+00:54:37,619 --> 00:54:41,019
+is equal to lambda times x
+
+324
+00:54:45,300 --> 00:54:47,960
+So, this equation gives
+
+325
+00:54:51,668 --> 00:55:12,847
+x1 plus x2 is equal to lambda times x1 and minus 2x1 plus 4x2 is equal to lambda times x2.
+
+326
+00:55:12,847 --> 00:55:36,228
+So writing x1 or taking x1 and x2 on the left side of the equation, we have 1 minus lambda times x1 plus x2 is equal to 0.
+
+327
+00:55:36,228 --> 00:55:48,488
+And minus 2 times x1 plus 4 minus lambda x2 is equal to 0.
+
+328
+00:55:48,488 --> 00:56:07,168
+So this is homogeneous system and we want that this homogeneous system has non-trivial solution because if it has a non-trivial solution, it means that x1 and x2 are 0.
+
+329
+00:56:07,168 --> 00:56:14,548
+But in the definition of the eigenvector, the eigenvector must be non-zero vector.
+
+330
+00:56:14,548 --> 00:56:22,708
+So we have to look for or we are looking for a non-zero.
+
+331
+00:56:27,731 --> 00:56:35,672
+Solution for this homogenee system.
+
+332
+00:56:45,235 --> 00:56:46,655
+What do you mean, [öğrenci]?
+
+333
+00:56:49,115 --> 00:56:49,375
+To?
+
+334
+00:56:55,284 --> 00:56:56,704
+Ne demek istiyorsun anlamadım.
+
+335
+00:57:00,115 --> 00:57:04,496
+Tamam, bulacağız şimdi. Onu arıyoruz zaten. Bilmiyorum, belki de ikidir.
+
+336
+00:57:08,628 --> 00:57:19,307
+So we have to find the solution for this homogenous system, but this solution must be the non-zero solution.
+
+337
+00:57:19,307 --> 00:57:37,347
+So we know that from the homogenous solution for the homogenous system, if the determinant of the coefficients matrix of the homogenous system is equal to zero, then the system has infinitely many solutions.
+
+338
+00:57:37,347 --> 00:57:42,068
+So what is the coefficient matrix of this system?
+
+339
+00:57:42,068 --> 00:57:54,668
+1 minus lambda, 1 minus 2, 4 minus lambda is equal to zero for non-zero solution.
+
+340
+00:57:54,668 --> 00:58:06,288
+So it gives 1 minus lambda times 4 minus lambda plus 2 is equal to zero.
+
+341
+00:58:06,288 --> 00:58:23,827
+So it gives lambda square minus lambda minus 4 lambda minus 5 lambda plus 4 plus 2 plus 6 is equal to zero.
+
+342
+00:58:23,827 --> 00:58:39,128
+So from this polynomial, we have lambda minus 2 times lambda minus 3 is equal to zero.
+
+343
+00:58:39,128 --> 00:58:55,028
+So from here, lambda 1 is equal to 2 and lambda 2 is equal to 3 are eigenvalues.
+
+344
+00:58:55,028 --> 00:59:02,028
+Now let us find...
+
+345
+00:59:02,028 --> 00:59:24,028
+Let us find...
+
+346
+00:59:10,675 --> 00:59:12,675
+Ayrıgan vektör,
+
+347
+00:59:14,755 --> 00:59:16,755
+ve süşeyi tıptır.
+
+348
+00:59:21,972 --> 00:59:24,672
+Lambda 1, 2.
+
+349
+00:59:26,252 --> 00:59:32,952
+So, we write, we write, Lambda S2 in this equation.
+
+350
+00:59:34,872 --> 00:59:47,272
+So, we are looking for x, a times x is equal to 2 times x.
+
+351
+00:59:47,272 --> 01:00:01,992
+So, from here, or from this, sorry, from in this linear system, objiany system, write, Lambda S2.
+
+352
+01:00:02,132 --> 01:00:08,172
+So, this gives minus x1 plus x2.
+
+353
+01:00:21,876 --> 01:00:26,636
+Minus 2 x1 plus 2 x2 is equal to zero.
+
+354
+01:00:28,956 --> 01:00:38,856
+So, it gives x1 is equal to x2 and x2 is any real number r.
+
+355
+01:00:40,076 --> 01:00:48,796
+So, the solution for this homogenous system is the eigenvector x1, which is
+
+356
+01:00:48,796 --> 01:00:54,356
+r, r, or
+
+357
+01:00:54,356 --> 01:00:58,816
+r times
+
+358
+01:00:58,816 --> 01:01:00,816
+1, 1.
+
+359
+01:01:01,496 --> 01:01:03,576
+So, maybe in the exam,
+
+360
+01:01:04,396 --> 01:01:05,776
+in the choices,
+
+361
+01:01:07,396 --> 01:01:10,876
+which one of the following is the eigenvector
+
+362
+01:01:10,876 --> 01:01:13,176
+with respect, which associated
+
+363
+01:01:13,176 --> 01:01:16,816
+with the lambda 1, 2 is maybe
+
+364
+01:01:16,816 --> 01:01:20,956
+one of the choices is 1, 1, 1, or
+
+365
+01:01:20,956 --> 01:01:23,336
+the multiple of this vector.
+
+366
+01:01:23,596 --> 01:01:23,796
+Okay.
+
+367
+01:01:24,576 --> 01:01:25,816
+This is one of the
+
+368
+01:01:27,416 --> 01:01:28,396
+eigenvectors
+
+369
+01:01:28,396 --> 01:01:30,496
+associated with lambda 1, 2.
+
+370
+01:01:33,296 --> 01:01:34,756
+And for lambda
+
+371
+01:01:34,756 --> 01:01:35,716
+2,
+
+372
+01:01:35,716 --> 01:01:46,796
+lambda 2,
+
+373
+01:01:39,923 --> 01:02:06,724
+Fraad, because we want to, we want to solve, where, where is the, okay, here. Now, we want to solve this homogenous system. Okay, this is homogenous system. But, but, if you, if you find the zero solution for this system, it means that
+
+374
+01:02:06,724 --> 01:02:27,264
+X1 and X2 are zero. But, in the definition of, eigenvector, it means that, it said that, the vector X is, non-zero, or, if there is a non-trivial solution. So,
+
+375
+01:02:28,724 --> 01:02:35,384
+to have a non-trivial solution, the determinant of this homogenous system must be zero.
+
+376
+01:02:36,724 --> 01:02:50,724
+Because, because if this homogenous, because if this homogenous system is non-zero, it means that, this system has only trivial or zero solution. Okay.
+
+377
+01:03:00,115 --> 01:03:22,255
+Easily, we can find the eigenvector, which is associated with lambda 2, 3. Writing here, 3, we have minus 2x1 plus x2 is equal to 0.
+
+378
+01:03:22,255 --> 01:03:29,835
+2x2 and 2x1 plus x2.
+
+379
+01:03:35,411 --> 01:03:43,692
+This is minus, sorry, this is minus x1. We write 3 here, you. Okay, okay.
+
+380
+01:03:47,635 --> 01:03:53,875
+equal to zero. It means that, it means that,
+
+381
+01:03:59,347 --> 01:04:12,547
+Solution for this system is x1 is equal to 1 over x2, and x2 is any real number r.
+
+382
+01:04:13,907 --> 01:04:23,347
+So the eigenvector with respect to the or with associated with 3, the eigenvalue 3 is
+
+383
+01:04:31,123 --> 01:04:45,203
+R, R over 2, or R times 1 over 2, 1.
+
+384
+01:04:45,203 --> 01:05:04,903
+Actually, in many examples, or in many questions, take R as 2, and one of the eigenvectors, which speak to the eigenvalue 3, is 1, 2.
+
+385
+01:05:06,903 --> 01:05:10,903
+Taking R as 2, we have this eigenvector.
+
+386
+01:05:10,903 --> 01:05:11,563
+Vector.
+
+387
+01:05:13,543 --> 01:05:13,823
+Okay.
+
+388
+01:05:16,823 --> 01:05:19,023
+Now,
+
+389
+01:05:19,683 --> 01:05:21,123
+Actually, we make,
+
+390
+01:05:21,743 --> 01:05:23,523
+Or we did this example,
+
+391
+01:05:24,123 --> 01:05:25,043
+To understand,
+
+392
+01:05:25,884 --> 01:05:27,523
+Why the characteristic polynomial,
+
+393
+01:05:27,743 --> 01:05:29,323
+Characteristic equation,
+
+394
+01:05:30,323 --> 01:05:33,423
+Is,
+
+395
+01:05:33,603 --> 01:05:35,583
+Obtained from the determinant.
+
+396
+01:05:37,063 --> 01:05:42,423
+The determinant comes from,
+
+397
+01:05:42,423 --> 01:05:43,384
+The non-zero,
+
+398
+01:05:43,384 --> 01:05:48,183
+Solution of the homogeneous system.
+
+399
+01:05:48,183 --> 01:05:49,384
+Now,
+
+400
+01:05:49,384 --> 01:05:53,243
+We have,
+
+401
+01:05:53,243 --> 01:05:54,543
+A x,
+
+402
+01:05:54,543 --> 01:05:58,063
+Is equal to the lambda times x.
+
+403
+01:05:58,863 --> 01:06:00,103
+So from here,
+
+404
+01:06:00,203 --> 01:06:00,903
+We can write,
+
+405
+01:06:01,223 --> 01:06:03,623
+A x minus lambda x is equal to 0.
+
+406
+01:06:03,623 --> 01:06:05,723
+In some books,
+
+407
+01:06:05,723 --> 01:06:11,983
+It is written as lambda x minus x is equal to 0.
+
+408
+01:06:11,983 --> 01:06:13,223
+Make sure it is the same.
+
+409
+01:06:13,223 --> 01:06:13,403
+So from here,
+
+410
+01:06:13,403 --> 01:06:15,823
+It is written as lambda x minus x is equal to 0.
+
+411
+01:06:15,823 --> 01:06:17,163
+Actually, it is the same.
+
+412
+01:06:17,163 --> 01:06:17,903
+So from here,
+
+413
+01:06:17,903 --> 01:06:19,823
+It is written as lambda x minus x is equal to 0.
+
+414
+01:06:20,371 --> 01:06:37,731
+So, from here, vektör uzay, x in this equation, we have A minus lambda times identity matrix times x is equal to zero.
+
+415
+01:06:39,811 --> 01:06:47,652
+So, you can find, you can find the eigenvalue of a matrix,
+
+416
+01:06:47,652 --> 01:07:10,931
+by computing the determinant of A minus lambda i and find the roots of this equation.
+
+417
+01:07:12,531 --> 01:07:13,652
+Make sure this is zero.
+
+418
+01:07:20,275 --> 01:07:24,495
+And this is called the characteristic equation.
+
+419
+01:07:27,195 --> 01:07:37,755
+And determinant A minus lambda identifix is called characteristic polynomial.
+
+420
+01:07:47,476 --> 01:07:50,476
+This note is very very important.
+
+421
+01:07:54,195 --> 01:07:58,715
+Especially, this equation.
+
+422
+01:07:59,476 --> 01:08:21,496
+For 2x2 matrix, we have the characteristic polynomial of 2x2 matrix is equal to lambda square minus trace of this matrix times lambda plus the determinant of matrix A.
+
+423
+01:08:21,496 --> 01:08:30,095
+So, this equation is very, very important.
+
+424
+01:08:31,615 --> 01:08:46,036
+Because we can find the characteristic polynomial of a matrix by using the trace and the determinant of this matrix, if the matrix is 2x2.
+
+425
+01:08:50,131 --> 01:08:57,311
+Now, we have an algorithm to compute.
+
+426
+01:09:00,819 --> 01:09:02,819
+The eigenvalues and eigenvectors.
+
+427
+01:09:04,819 --> 01:09:07,319
+First, find the characteristic polynomial.
+
+428
+01:09:08,539 --> 01:09:10,819
+Karakteristik polynomial is equal to the...
+
+429
+01:09:15,899 --> 01:09:19,420
+Möret, bu konular zor da bu konulardan çıkacak sınavda ağırlıklı.
+
+430
+01:09:19,519 --> 01:09:26,500
+Yani çünkü ikinci sınavdan sonra hangi konular gördüyseniz ağırlıklı onlardan gelir.
+
+431
+01:09:26,500 --> 01:09:31,380
+O yüzden tekrar dersten sonra bunlara bakmanız lazım.
+
+432
+01:09:35,123 --> 01:09:38,623
+Hepsinden sorulur bunlar şimdi yani. Sorulmayacak bir şey yok burada.
+
+433
+01:09:41,363 --> 01:09:44,344
+First, do you find the characteristic polynomial?
+
+434
+01:09:45,783 --> 01:09:46,804
+Karakteristik question.
+
+435
+01:09:46,923 --> 01:09:47,623
+Yes, yes.
+
+436
+01:09:48,043 --> 01:09:52,503
+In the exam, we must focus on the topics after the midterm two.
+
+437
+01:09:52,884 --> 01:09:54,403
+Midterm two, yeah, yeah, yeah.
+
+438
+01:09:55,043 --> 01:10:02,443
+You have to focus on first the topics on after we study, after the midterm two.
+
+439
+01:10:02,443 --> 01:10:02,844
+Okay.
+
+440
+01:10:04,384 --> 01:10:05,423
+Okay, thank you.
+
+441
+01:10:07,003 --> 01:10:08,823
+Find the characteristic polynomial.
+
+442
+01:10:10,644 --> 01:10:16,684
+Characteristic polynomial is equal to the determinant A minus lambda identity matrix.
+
+443
+01:10:17,963 --> 01:10:25,603
+And, and if you take this zero, then
+
+444
+01:10:25,603 --> 01:10:39,384
+the roots of the characteristic polynomial gives the eigenvalues of A.
+
+445
+01:10:39,384 --> 01:10:46,603
+And writing, because we have, we have A minus lambda identity matrix.
+
+446
+01:10:46,603 --> 01:10:51,203
+X is equal to the root of A minus lambda, X is equal to the root of A minus lambda, X is equal to zero.
+
+447
+01:10:51,203 --> 01:10:58,523
+And writing each eigenvalue on its place in this equation.
+
+448
+01:10:58,523 --> 01:11:05,724
+Find each eigenvector associated with the eigenvalue.
+
+449
+01:11:05,724 --> 01:11:08,923
+And it's over.
+
+450
+01:11:08,923 --> 01:11:09,523
+Okay.
+
+451
+01:11:09,523 --> 01:11:24,003
+This note is also very, very important because it is said here that the eigenvalues of a triangular matrix.
+
+452
+01:11:27,604 --> 01:11:30,104
+Lauer, or upper, it doesn't matter.
+
+453
+01:11:31,963 --> 01:11:39,524
+The eigenvalues of a triangular matrix are the entries on its main diagonal.
+
+454
+01:11:40,764 --> 01:11:42,564
+This is very important.
+
+455
+01:11:42,944 --> 01:11:43,104
+Okay.
+
+456
+01:11:45,864 --> 01:11:52,804
+And if the characteristic polynomial has multiple roots, it means that it has multiple eigenvalues.
+
+457
+01:11:52,804 --> 01:11:55,104
+It means that if you have...
+
+458
+01:12:00,851 --> 01:12:06,492
+So, Lambda 1 is equal to Lambda 2 and this is equal to 2.
+
+459
+01:12:08,591 --> 01:12:13,751
+Actually, this example is not interesting, I think.
+
+460
+01:12:15,671 --> 01:12:19,751
+Before this example, I make another example.
+
+461
+01:12:23,923 --> 01:12:26,543
+Let a, 1, 2, minus 1.
+
+462
+01:12:42,163 --> 01:12:43,163
+01
+
+463
+01:12:51,667 --> 01:12:52,707
+4, minus 4
+
+464
+01:12:57,587 --> 01:12:58,007
+Five.
+
+465
+01:13:01,876 --> 01:13:20,576
+For this matrix A, find all the eigenvalues and eigenvectors and also, okay, find all the eigenvalues and eigenvectors of the matrix A.
+
+466
+01:13:20,576 --> 01:13:30,596
+So, first we have to compute the characteristic polynomial, which is
+
+467
+01:13:30,596 --> 01:13:40,556
+determinant A minus lambda times identifometrics
+
+468
+01:13:40,556 --> 01:13:46,976
+is equal to zero, gives
+
+469
+01:13:46,976 --> 01:13:50,976
+characteristic
+
+470
+01:13:50,976 --> 01:13:58,076
+polynomial, sorry, this gives the characteristic polynomial
+
+471
+01:13:58,076 --> 01:14:00,076
+and
+
+472
+01:14:00,076 --> 01:14:01,376
+finding
+
+473
+01:14:01,376 --> 01:14:25,376
+and
+
+474
+01:14:07,636 --> 01:14:10,636
+vekutörler,
+
+475
+01:14:13,268 --> 01:14:21,768
+P lambda means that P lambda is equal to zero, then find lambda, gives eigenvalues.
+
+476
+01:14:27,956 --> 01:14:50,556
+So, what is determinant A minus lambda, lambda times identif matrix? Since this is 3x3 matrix, lambda times identif matrix gives lambda 0, 0, 0, lambda 0, 0, 0, lambda.
+
+477
+01:14:50,556 --> 01:14:57,155
+So, A minus this matrix gives determinant,
+
+478
+01:15:06,612 --> 01:15:28,471
+1 minus lambda, 2 minus 1, 1, 0 minus lambda, minus lambda, 1, 4 minus 4, 5 minus lambda.
+
+479
+01:15:31,132 --> 01:15:34,771
+So, what is the determinant of this matrix?
+
+480
+01:15:36,612 --> 01:15:55,471
+I write first minus lambda times 1 minus lambda, 5 minus lambda, plus 8 plus 4.
+
+481
+01:16:00,372 --> 01:16:01,532
+minus
+
+482
+01:16:02,332 --> 01:16:03,412
+for lambda
+
+483
+01:16:08,851 --> 01:16:22,891
+Minus 2 times 5 minus Lambda, and plus 4 times 1 minus Lambda.
+
+484
+01:16:22,891 --> 01:16:52,532
+Therefore, we have, this is equal to minus Lambda times Lambda squared minus Lambda minus 5 Lambda minus 6 Lambda plus 5 plus 12 minus 4 Lambda minus 10.
+
+485
+01:16:52,891 --> 01:16:53,891
+Minus 3.5.
+
+486
+01:16:58,195 --> 01:16:59,996
+Plus 2 lamba
+
+487
+01:17:03,731 --> 01:17:06,532
+Plus 4, minus 4, lambda.
+
+488
+01:17:06,532 --> 01:17:10,171
+So, the characteristic polynomial is
+
+489
+01:17:10,171 --> 01:17:14,072
+Uh...
+
+490
+01:17:17,876 --> 01:17:35,396
+minus lambda cube plus 6 lambda square. This gives minus 5 lambda minus 9 lambda.
+
+491
+01:17:39,155 --> 01:17:50,115
+minus 7, minus 11, minus 11, lambda, 12, 2, 6, plus 6.
+
+492
+01:17:50,115 --> 01:17:55,655
+So the characteristic polynomial of this matrix is this one.
+
+493
+01:17:55,655 --> 01:18:08,456
+Now, the roots of this polynomial gives the eigenvalues of the matrix.
+
+494
+01:18:08,456 --> 01:18:09,635
+So
+
+495
+01:18:14,515 --> 01:18:39,055
+If P is equal to 0, we can multiply both sides by minus 1, so it gives lambda cube minus 6 lambda square plus 11 lambda minus 6 is equal to 0.
+
+496
+01:18:42,771 --> 01:19:04,612
+We well know, to factorize the polynomials of degree 2, but the polynomials of degree 3 is some complicated. You have to find one root of this polynomial.
+
+497
+01:19:04,612 --> 01:19:22,051
+Actually, you have to check first minus plus 1 and the roots of the constants, which is minus plus 2, minus plus 3.
+
+498
+01:19:22,771 --> 01:19:33,811
+It means that writing these numbers into the polynomial, check if the polynomial or if the equation holds or not.
+
+499
+01:19:34,612 --> 01:19:35,171
+For lambda,
+
+500
+01:19:39,283 --> 01:20:04,623
+is equal to 1, we have 1 minus 6 plus 11 minus 6, gives 11 minus 11, 0. So, lambda 1, lambda is equal to 1, is a root for this polynomial.
+
+501
+01:20:04,623 --> 01:20:20,163
+and also it means that lambda 1, equal to 1, is an eigenvalue for this matrix. Now, we have to find the other roots for this polynomial.
+
+502
+01:20:20,163 --> 01:20:26,943
+For this, we divide this polynomial to the
+
+503
+01:20:30,804 --> 01:20:51,123
+We divide this polynomial, which is, lambda cube minus 6 lambda square plus 11 lambda minus 6.
+
+504
+01:20:54,579 --> 01:21:06,380
+to the lambda minus 1, because 1 is a root of this polynomial. So we find the other factors of this polynomial.
+
+505
+01:21:07,059 --> 01:21:18,739
+So if you multiply lambda by lambda square, you have lambda cube and minus lambda square.
+
+506
+01:21:22,355 --> 01:21:34,435
+Subtracting this from this, we have minus 5 lambda squared plus 11 lambda minus 6.
+
+507
+01:21:35,895 --> 01:21:41,555
+Multiplying this by minus 5 lambda, you have
+
+508
+01:21:45,427 --> 01:21:51,507
+Lambda squared plus 5 Lambda.
+
+509
+01:21:51,507 --> 01:21:58,648
+Again, subtracting this from this, we have 6 Lambda minus 6.
+
+510
+01:21:58,648 --> 01:22:07,688
+So, multiplying Lambda by 6, we have 6 Lambda minus 6.
+
+511
+01:22:07,867 --> 01:22:09,367
+So, this gives 0.
+
+512
+01:22:09,367 --> 01:22:20,768
+So, it means that Lambda cubed minus Lambda 6 Lambda squared plus 11 Lambda minus 6 is
+
+513
+01:22:20,768 --> 01:22:34,768
+equal to Lambda 1 minus 1 times Lambda squared minus 5 Lambda plus 6.
+
+514
+01:22:34,768 --> 01:22:44,667
+So, we can factorize this polynomial which is Lambda minus 2 Lambda minus 3.
+
+515
+01:22:44,667 --> 01:22:57,047
+So, the other eigenvalues, Lambda 1 is 1, Lambda 2 is 2 and Lambda 3 is 3 are the eigenvalues
+
+516
+01:22:57,047 --> 01:23:02,948
+of the matrix A.
+
+517
+01:23:02,948 --> 01:23:13,948
+Now, let us find, let us find the eigenvector X1.
+
+518
+01:23:13,948 --> 01:23:41,847
+So, let us find the eigenvector X1.
+
+519
+01:23:24,083 --> 01:23:27,783
+ve, associated with Lambda 1, 1.
+
+520
+01:23:39,060 --> 01:23:49,720
+Mistake, take lambda 1, is 1, we have, what is a?
+
+521
+01:23:56,180 --> 01:23:57,720
+1, 2, minus 1.
+
+522
+01:24:06,228 --> 01:24:08,228
+101
+
+523
+01:24:15,252 --> 01:24:16,632
+4-4
+
+524
+01:24:20,659 --> 01:24:22,659
+5
+
+525
+01:24:24,420 --> 01:24:28,420
+minus identimetrics
+
+526
+01:24:35,188 --> 01:24:39,807
+x1, x2, x3
+
+527
+01:24:39,807 --> 01:24:41,847
+is equal to
+
+528
+01:24:41,847 --> 01:24:44,427
+0.
+
+529
+01:24:45,488 --> 01:24:46,807
+So from here
+
+530
+01:24:46,807 --> 01:24:48,608
+we have
+
+531
+01:24:48,608 --> 01:24:50,047
+0.
+
+532
+01:24:51,087 --> 01:24:53,927
+So x1 times 0 gives 0.
+
+533
+01:24:53,927 --> 01:24:55,627
+2 x2
+
+534
+01:24:55,627 --> 01:24:59,387
+minus x3
+
+535
+01:24:59,387 --> 01:25:00,768
+is equal to 0.
+
+536
+01:25:01,847 --> 01:25:04,148
+This gives x1
+
+537
+01:25:04,148 --> 01:25:07,188
+minus x2
+
+538
+01:25:07,188 --> 01:25:10,887
+plus x3
+
+539
+01:25:10,887 --> 01:25:12,967
+gives 0.
+
+540
+01:25:13,148 --> 01:25:14,568
+And 4 x1
+
+541
+01:25:14,568 --> 01:25:18,528
+minus 4 x2
+
+542
+01:25:18,528 --> 01:25:22,007
+plus 4 x3
+
+543
+01:25:22,007 --> 01:25:23,688
+is equal to
+
+544
+01:25:23,688 --> 01:25:24,847
+0.
+
+545
+01:25:27,068 --> 01:25:29,387
+Solving this homogeneous system
+
+546
+01:25:29,387 --> 01:25:32,627
+we have
+
+547
+01:25:32,627 --> 01:25:37,288
+here
+
+548
+01:25:37,288 --> 01:25:41,068
+2 x2
+
+549
+01:25:41,068 --> 01:25:43,108
+is equal to x3
+
+550
+01:25:43,108 --> 01:25:45,507
+so x2 is equal to
+
+551
+01:25:45,507 --> 01:25:47,948
+x3 over 2.
+
+552
+01:25:47,948 --> 01:25:49,608
+So from here
+
+553
+01:25:49,608 --> 01:25:50,408
+we have
+
+554
+01:25:50,408 --> 01:25:54,167
+x1 is equal to
+
+555
+01:25:54,167 --> 01:25:56,427
+x2 minus
+
+556
+01:25:56,427 --> 01:25:57,988
+x3
+
+557
+01:25:57,988 --> 01:25:58,467
+so
+
+558
+01:25:58,467 --> 01:26:00,708
+x3
+
+559
+01:26:00,708 --> 01:26:01,868
+over 2
+
+560
+01:26:01,868 --> 01:26:03,167
+minus x3
+
+561
+01:26:03,167 --> 01:26:04,108
+gives minus
+
+562
+01:26:04,108 --> 01:26:04,868
+x3
+
+563
+01:26:04,868 --> 01:26:06,087
+over 2.
+
+564
+01:26:06,467 --> 01:26:07,748
+The solution for this
+
+565
+01:26:07,748 --> 01:26:08,908
+homogeneous system
+
+566
+01:26:08,908 --> 01:26:09,587
+is
+
+567
+01:26:09,587 --> 01:26:12,467
+minus
+
+568
+01:26:12,467 --> 01:26:18,488
+r over 2
+
+569
+01:26:18,488 --> 01:26:19,587
+r
+
+570
+01:26:30,676 --> 01:26:32,916
+1 over 2, 1.
+
+571
+01:26:35,316 --> 01:26:35,716
+So,
+
+572
+01:26:37,155 --> 01:26:38,276
+the eigenvector,
+
+573
+01:26:39,236 --> 01:26:41,076
+associated with lambda 1,
+
+574
+01:26:45,395 --> 01:26:47,395
+Aydın vektör.
+
+575
+01:26:56,051 --> 01:26:57,391
+Asusiyatet beat.
+
+576
+01:27:02,003 --> 01:27:04,264
+Lambda 1, 1.
+
+577
+01:27:05,003 --> 01:27:06,543
+Bu şekilde, böyle.
+
+578
+01:27:08,304 --> 01:27:11,543
+Most probably, in the choices, in the exam, you have
+
+579
+01:27:11,543 --> 01:27:16,123
+R as 2, so
+
+580
+01:27:16,123 --> 01:27:21,983
+if you take R as 2, this gives minus 1,
+
+581
+01:27:22,983 --> 01:27:24,884
+1, 2.
+
+582
+01:27:26,403 --> 01:27:27,064
+Okay.
+
+583
+01:27:31,572 --> 01:27:43,172
+So, you can find the other eigenvektörs using, writing the lambdas in its place here.
+
+584
+01:27:44,112 --> 01:27:49,172
+So, solving this homogenous system, you'll find the other eigenvektörs.
+
+585
+01:27:50,292 --> 01:27:50,532
+Okay.
+
+586
+01:27:54,387 --> 01:27:55,908
+Now, in this question,
+
+587
+01:27:57,387 --> 01:28:00,467
+the matrix is actually
+
+588
+01:28:00,467 --> 01:28:02,728
+upper triangular matrix,
+
+589
+01:28:02,948 --> 01:28:04,547
+so, we know that
+
+590
+01:28:04,547 --> 01:28:07,028
+the entries on the main diagonal
+
+591
+01:28:07,028 --> 01:28:09,747
+are
+
+592
+01:28:13,332 --> 01:28:23,592
+eigenvalues of this matrix. So, this is lambda 1, this is lambda 2, and this is lambda 3. So, you can also
+
+593
+01:28:23,592 --> 01:28:35,872
+find these eigenvalues using the characteristic polynomial, and also you can find the eigenvectors
+
+594
+01:28:35,872 --> 01:28:42,632
+associated with this eigenvalues using the characteristic equation.
+
+595
+01:29:00,532 --> 01:29:15,332
+Now, Kaley Hamilton theorem, which is very important theorem, and it says, Kaley Hamilton theorem says,
+
+596
+01:29:19,592 --> 01:29:29,452
+each M by M matrix A satisfies its characteristic equation.
+
+597
+01:29:30,532 --> 01:29:39,292
+So, if a matrix A has a characteristic equation or characteristic polynomial,
+
+598
+01:29:55,347 --> 01:30:05,707
+Then writing A as lambda, this equation also holds.
+
+599
+01:30:05,707 --> 01:30:22,467
+So write A as lambda, then we have A to the power M plus A minus A M minus 1 times A to the M minus 1 blah blah is equal to 0.
+
+600
+01:30:22,467 --> 01:30:33,988
+So every M by M matrix satisfies its characteristic equation and it's called Kiley-Hamilton theorem.
+
+601
+01:30:34,747 --> 01:30:48,747
+We use Kiley-Hamilton theorem to compute the inverse of a matrix and also to compute any power of a matrix.
+
+602
+01:30:48,747 --> 01:31:12,507
+Because from this equation, from this equation, we have A zero times identity matrix is equal to minus A to the M plus A M minus 1.
+
+603
+01:31:19,347 --> 01:31:38,547
+We are looking for, we are looking for first A-unverse, so multiplying both sides by A-unverse, we have A0 times A-unverse is equal to minus
+
+604
+01:31:42,323 --> 01:32:05,643
+m-1, plus m-1, a to the m-2, a1 times, identity matrix. So, a inverse,
+
+605
+01:32:09,363 --> 01:32:09,943
+Svali.
+
+606
+01:32:19,956 --> 01:32:25,256
+A inverse is equal to the minus 1 over A0.
+
+607
+01:32:38,739 --> 01:32:50,260
+Ok, we can find A inverse using Kiley-Hamilton theorem, and also we can find the n power of matrix A.
+
+608
+01:32:52,420 --> 01:32:58,739
+For example, from this equation we have A to the power m is equal to the minus
+
+609
+01:33:05,779 --> 01:33:23,880
+A to the m power is equal to this summation. Okay. So how to use the Kiley-Hamilton theorem? First, you have to find the characteristic polynomial of a matrix.
+
+610
+01:33:25,460 --> 01:33:27,880
+This is not...
+
+611
+01:33:30,292 --> 01:33:32,852
+related to our picture.
+
+612
+01:33:34,771 --> 01:33:35,172
+Now,
+
+613
+01:33:37,412 --> 01:33:40,452
+for example, in the example, if you asked to find the
+
+614
+01:33:42,532 --> 01:33:46,452
+fifth power of a, maybe you can, you can
+
+615
+01:33:50,292 --> 01:34:00,132
+compute the fifth power by first compute this and this and this and this
+
+616
+01:34:00,292 --> 01:34:03,092
+and this but if you ask
+
+617
+01:34:05,092 --> 01:34:15,572
+a to the power 25. So it is very hard to compute this by using by multiple by
+
+618
+01:34:16,932 --> 01:34:25,652
+making multiplication step by step. So the Kiley Hamilton theorem is an easy way to compute
+
+619
+01:34:26,212 --> 01:34:33,332
+to any power of the matrix and also it is very easy to find the inverse of a matrix by using
+
+620
+01:34:34,212 --> 01:34:40,452
+Kiley Hamilton theorem. So first, first
+
+621
+01:34:42,932 --> 01:34:43,172
+we
+
+622
+01:34:47,172 --> 01:34:49,012
+find the characteristic polynomial
+
+623
+01:34:53,908 --> 01:35:18,828
+Determinant, A minus lambda, gives 0, sorry, sorry, sorry, 1 minus lambda, 4, 2, 3 minus lambda, equal to 0.
+
+624
+01:35:18,828 --> 01:35:28,148
+So, 1 minus lambda times, [öğrenci] ara yok, bitiyor artık zaten, ne arası?
+
+625
+01:35:31,148 --> 01:35:43,448
+1 minus lambda times, 3 minus lambda, minus 8 is equal to 0. So, it gives lambda square.
+
+626
+01:35:47,315 --> 01:36:14,576
+3, minus 4, lambda, 3, minus 5, is equal to 0. So it means that, lambda, minus 5, lambda plus 1, is equal to 0. So the eigenvalues are, lambda 1, minus 1, lambda 2, 5.
+
+627
+01:36:19,252 --> 01:36:44,552
+And eigenvektörs, for lambda 1, minus 1, we have A, writing lambda as minus 1, we have lambda plus x is equal to 0, gives, what is A, is 2,
+
+628
+01:36:44,552 --> 01:37:09,832
+x1 plus 4 x2 is equal to 0, and 2 x1 plus 4 x2 is equal to 0. It means that the eigenvektör associated with lambda 1 minus 1 is, solving this system we have,
+
+629
+01:37:09,832 --> 01:37:20,152
+x2 is equal to x2, x2 is equal to x2, so the eigenvektör for lambda 1 is,
+
+630
+01:37:23,032 --> 01:37:27,712
+r, r, and for 5,
+
+631
+01:37:32,212 --> 01:37:39,212
+Lambda minus five times identifix gives...
+
+632
+01:37:45,716 --> 01:38:03,956
+Minus 4, x1, plus 4, x2, is equal to 0, and 2, x1, plus, sorry, minus.
+
+633
+01:38:08,564 --> 01:38:10,463
+2x2 is 0.
+
+634
+01:38:12,024 --> 01:38:20,144
+So from here, again, or maybe I can, I did something wrong.
+
+635
+01:38:20,384 --> 01:38:22,804
+Okay, you can find the eigenvektors.
+
+636
+01:38:24,084 --> 01:38:26,804
+First we find the...
+
+637
+01:38:30,452 --> 01:38:42,952
+Oh, okay, this one is wrong, I think, the first one, I did wrong, sorry, and the second one is R11.
+
+638
+01:38:42,952 --> 01:38:45,112
+Now,
+
+639
+01:39:15,731 --> 01:39:22,372
+Now we find the inverse of A by using Kylie Hamilton theorem and also we find
+
+640
+01:39:25,971 --> 01:39:27,411
+a to the power of 5,
+
+641
+01:39:30,612 --> 01:39:32,451
+we find, we found,
+
+642
+01:39:34,692 --> 01:39:36,931
+the characteristic polynomial is,
+
+643
+01:39:46,100 --> 01:39:54,860
+P lambda is equal to lambda suker minus 4 lambda minus 5.
+
+644
+01:39:55,500 --> 01:40:07,320
+So the Kiley-Hamilton theorem says every matrix satisfies its characteristic polynomial.
+
+645
+01:40:07,320 --> 01:40:19,940
+It means that A suker minus 4A minus 5 times identifix is equal to 0.
+
+646
+01:40:22,440 --> 01:40:26,440
+So we are looking for first A inverse.
+
+647
+01:40:26,440 --> 01:40:41,340
+5 times identifix is equal to A suker minus 4A multiplying both sides by A inverse.
+
+648
+01:40:42,340 --> 01:40:47,320
+Multiply by A inverse.
+
+649
+01:40:47,320 --> 01:40:57,000
+We have 5A inverse is equal to multiplying A suker by A inverse.
+
+650
+01:40:57,100 --> 01:41:07,180
+We have A minus A inverse times A inverse multiple by A gives the identifix.
+
+651
+01:41:11,180 --> 01:41:15,320
+So 5A inverse is equal to what is A?
+
+652
+01:41:15,320 --> 01:41:16,760
+This one.
+
+653
+01:41:19,280 --> 01:41:27,720
+1, 4, 2, 3 minus 4, 0, 0, 4.
+
+654
+01:41:28,720 --> 01:41:31,320
+So A inverse is equal to...
+
+655
+01:41:36,243 --> 01:42:01,043
+This gives minus 3, minus 3 over 5, 4 over 5, 3 over 5, this is minus 1 over 5.
+
+656
+01:42:01,043 --> 01:42:02,523
+Ok.
+
+657
+01:42:06,387 --> 01:42:19,307
+Ve bu 5'e a'ı'
+
+658
+01:42:22,804 --> 01:42:42,884
+4A plus 5 times, identif
+
+659
+01:42:42,884 --> 01:42:46,804
+a squared plus 5 times a,
+
+660
+01:42:49,564 --> 01:42:50,923
+multiply by
+
+661
+01:42:53,243 --> 01:42:54,344
+a, both sides.
+
+662
+01:42:55,203 --> 01:42:58,163
+We also know that a squared is equal to
+
+663
+01:42:58,884 --> 01:43:00,043
+this one, so
+
+664
+01:43:02,764 --> 01:43:03,444
+we have
+
+665
+01:43:05,163 --> 01:43:07,764
+4 times, a squared is 4a
+
+666
+01:43:09,163 --> 01:43:09,724
+plus
+
+667
+01:43:11,604 --> 01:43:12,324
+5
+
+668
+01:43:12,884 --> 01:43:14,404
+identif
+
+669
+01:43:14,404 --> 01:43:14,804
+matrix
+
+670
+01:43:14,804 --> 01:43:16,884
+plus
+
+671
+01:43:16,884 --> 01:43:21,444
+5 times a, so this is equal to
+
+672
+01:43:21,444 --> 01:43:23,484
+16a
+
+673
+01:43:23,484 --> 01:43:25,524
+plus 5a
+
+674
+01:43:25,524 --> 01:43:26,243
+21
+
+675
+01:43:26,243 --> 01:43:28,283
+a plus
+
+676
+01:43:28,283 --> 01:43:30,484
+20
+
+677
+01:43:30,484 --> 01:43:31,963
+identif
+
+678
+01:43:31,963 --> 01:43:32,324
+matrix.
+
+679
+01:43:34,163 --> 01:43:34,564
+Now,
+
+680
+01:43:36,364 --> 01:43:37,324
+a to the 4
+
+681
+01:43:37,324 --> 01:43:38,324
+1
+
+682
+01:43:38,324 --> 01:43:38,844
+2
+
+683
+01:43:38,844 --> 01:43:38,923
+1
+
+684
+01:43:38,923 --> 01:43:39,324
+2
+
+685
+01:43:39,324 --> 01:43:39,923
+3
+
+686
+01:43:39,923 --> 01:43:40,003
+2
+
+687
+01:43:40,003 --> 01:43:40,923
+3
+
+688
+01:43:40,923 --> 01:43:41,043
+4
+
+689
+01:43:41,524 --> 01:43:51,044
+Multiplying both sides by A, we have A to the 4 is equal to 21 A square plus 28.
+
+690
+01:43:51,784 --> 01:44:10,484
+Also, we know that A square is equal to 4 A plus 5 identifluks, 21 times 4 A plus 5 identifluks, plus 28.
+
+691
+01:44:11,524 --> 01:44:16,963
+So, A to the 4 is equal to
+
+692
+01:44:23,891 --> 01:44:52,891
+84, 104, a plus 105, identifluğumatik, and lastly, finally, multiply both sides by a, we have a to the 5 is equal to 104, a square plus
+
+693
+01:44:52,891 --> 01:45:01,171
+105, a, and a square is equal to 4, a plus
+
+694
+01:45:05,460 --> 01:45:07,260
+5 identimatrix,
+
+695
+01:45:11,699 --> 01:45:13,699
+So, it gives...
+
+696
+01:45:20,884 --> 01:45:21,884
+İlk kelsz
+
+697
+01:45:33,235 --> 01:45:43,855
+521A, thank you [öğrenci], 520 identity matrix.
+
+698
+01:45:49,555 --> 01:46:03,355
+Okay, so you can find any power of a matrix by using Kiley-Hamilton theorem.
+
+699
+01:46:03,355 --> 01:46:12,515
+So this is the end of the lecture and end of this semester. Do you have any questions or comments?
+
+700
+01:46:23,507 --> 01:46:25,148
+I wish all of you
+
+701
+01:46:29,619 --> 01:46:34,539
+Have a good days, have a good years, and have a good exams in your life.
+
+702
+01:46:36,199 --> 01:46:39,859
+And I want to thank all of you.
+
+703
+01:46:45,076 --> 01:46:45,895
+For everything.
+
+704
+01:46:47,756 --> 01:46:48,935
+Evet arkadaşlar yani
+
+705
+01:46:48,935 --> 01:46:50,796
+iki kelimede
+
+706
+01:46:50,796 --> 01:46:52,336
+Türkçe edeyim.
+
+707
+01:46:53,076 --> 01:46:54,296
+Zaten herhalde herkes anlıyor.
+
+708
+01:46:55,735 --> 01:46:56,756
+Bir dönemi
+
+709
+01:46:56,756 --> 01:46:58,975
+anlattık, beraber geçirdik.
+
+710
+01:46:59,096 --> 01:47:01,076
+Her ne kadar yüz yüze görüşemesek de
+
+711
+01:47:01,836 --> 01:47:03,076
+gönül istersen
+
+712
+01:47:03,076 --> 01:47:07,176
+yüz yüze görüşelim ama olsun. Böyle de fena olmadı.
+
+713
+01:47:09,195 --> 01:47:10,756
+İnşallah faydalı olmuştur
+
+714
+01:47:10,756 --> 01:47:12,315
+sizler için.
+
+715
+01:47:12,315 --> 01:47:16,515
+Sınavlarınızda başarılar diliyorum.
+
+716
+01:47:18,796 --> 01:47:20,576
+Şu pandemi dönemi sürece geçer
+
+717
+01:47:20,576 --> 01:47:22,836
+inşallah. O zaman hepinizi bekliyorum
+
+718
+01:47:22,836 --> 01:47:24,555
+inşallah. Buyurun gelin
+
+719
+01:47:24,555 --> 01:47:26,256
+sohbet edelim, konuşalım,
+
+720
+01:47:26,615 --> 01:47:27,096
+tanışalım.
+
+721
+01:47:30,096 --> 01:47:32,336
+Herhangi bir sorunuz olursa yine her zaman
+
+722
+01:47:32,336 --> 01:47:35,096
+ulaşabilirsiniz arkadaşlar. Mail atabilirsiniz.
+
+723
+01:47:36,796 --> 01:47:37,515
+Çekinmeyin.
+
+724
+01:47:37,515 --> 01:47:42,235
+Ok. Do you have any comments
+
+725
+01:47:42,235 --> 01:47:43,935
+or questions about the lecture
+
+726
+01:47:43,935 --> 01:47:45,275
+or about the exam?
+
+727
+01:47:48,216 --> 01:47:49,876
+This semester is finished.
+
+728
+01:47:51,655 --> 01:47:53,155
+So it is
+
+729
+01:47:53,155 --> 01:47:56,195
+I recommend you to first
+
+730
+01:47:56,195 --> 01:47:56,796
+study
+
+731
+01:47:56,796 --> 01:48:00,435
+the lectures
+
+732
+01:48:00,435 --> 01:48:01,395
+or the topics
+
+733
+01:48:01,395 --> 01:48:03,336
+after the second midterm
+
+734
+01:48:03,336 --> 01:48:05,176
+and then
+
+735
+01:48:05,176 --> 01:48:08,655
+study
+
+736
+01:48:08,655 --> 01:48:09,836
+the topics
+
+737
+01:48:09,836 --> 01:48:12,036
+between the
+
+738
+01:48:12,036 --> 01:48:13,555
+first
+
+739
+01:48:13,555 --> 01:48:14,376
+midterm
+
+740
+01:48:14,376 --> 01:48:15,416
+and the second midterm
+
+741
+01:48:15,416 --> 01:48:16,555
+and
+
+742
+01:48:16,555 --> 01:48:17,235
+lastly
+
+743
+01:48:17,235 --> 01:48:19,735
+study
+
+744
+01:48:19,735 --> 01:48:20,655
+the topics
+
+745
+01:48:20,655 --> 01:48:21,735
+on the first
+
+746
+01:48:21,735 --> 01:48:21,996
+part.
+
+747
+01:48:22,155 --> 01:48:22,275
+Ok.
+
+748
+01:48:25,176 --> 01:48:26,256
+Thank you [öğrenci].
+
+749
+01:48:27,096 --> 01:48:28,096
+I thank
+
+750
+01:48:28,096 --> 01:48:28,775
+all of you.
+
+751
+01:48:29,376 --> 01:48:30,296
+At the first
+
+752
+01:48:30,296 --> 01:48:31,015
+we have to
+
+753
+01:48:31,015 --> 01:48:32,115
+study
+
+754
+01:48:32,115 --> 01:48:33,036
+the
+
+755
+01:48:33,036 --> 01:48:34,496
+topics
+
+756
+01:48:34,496 --> 01:48:35,916
+from last
+
+757
+01:48:35,916 --> 01:48:37,055
+these
+
+758
+01:48:37,055 --> 01:48:39,036
+after the second
+
+759
+01:48:39,036 --> 01:48:39,416
+term
+
+760
+01:48:39,416 --> 01:48:41,216
+and then
+
+761
+01:48:41,216 --> 01:48:41,815
+before
+
+762
+01:48:41,815 --> 01:48:42,836
+before the second
+
+763
+01:48:42,836 --> 01:48:43,136
+term
+
+764
+01:48:43,136 --> 01:48:43,716
+and then
+
+765
+01:48:43,716 --> 01:48:44,895
+first term.
+
+766
+01:48:45,176 --> 01:48:45,395
+Am I right?
+
+767
+01:48:45,695 --> 01:48:47,195
+Yes.
+
+768
+01:48:48,576 --> 01:48:49,395
+Ok teacher.
+
+769
+01:48:49,655 --> 01:48:50,076
+Thank you.
+
+770
+01:48:50,275 --> 01:48:50,996
+Thank you for everything.
+
+771
+01:48:52,395 --> 01:48:52,876
+Ok.
+
+772
+01:48:55,876 --> 01:48:56,975
+Hope to see you
+
+773
+01:48:56,975 --> 01:48:58,015
+in the near future
+
+774
+01:48:58,015 --> 01:48:58,615
+and
+
+775
+01:48:58,615 --> 01:48:59,756
+have best
+
+776
+01:48:59,756 --> 01:49:00,576
+all of you.
+
+777
+01:49:00,576 --> 01:49:00,636
+Thank you.

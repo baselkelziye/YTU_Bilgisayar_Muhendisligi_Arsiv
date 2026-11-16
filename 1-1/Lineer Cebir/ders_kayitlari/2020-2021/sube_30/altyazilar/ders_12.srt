@@ -1,0 +1,3607 @@
+1
+00:01:20,308 --> 00:01:21,708
+Bu defne montajer, vadi.
+
+2
+00:01:42,835 --> 00:01:48,896
+Hida, the terms that you don't know is not related to the exam.
+
+3
+00:01:49,075 --> 00:01:49,295
+Okay.
+
+4
+00:01:50,096 --> 00:01:51,695
+Like, span, eigenvaria.
+
+5
+00:02:46,259 --> 00:02:47,340
+Can you hear me now?
+
+6
+00:02:50,867 --> 00:02:51,867
+Ok, ok.
+
+7
+00:02:54,147 --> 00:03:00,567
+[öğrenci], I said that they are not important, they are not included in the exam.
+
+8
+00:03:02,747 --> 00:03:06,768
+So, relax, be relaxed.
+
+9
+00:03:08,627 --> 00:03:14,847
+There is no anything that you don't study in the exam.
+
+10
+00:03:14,847 --> 00:03:21,168
+Ok, now we will have a quick review in this lecture.
+
+11
+00:03:21,548 --> 00:03:27,247
+Then if we have a time, then we will solve some sample exam questions.
+
+12
+00:03:27,907 --> 00:03:36,387
+Because I have uploaded all of the sample exam questions to the lesson world next week.
+
+13
+00:03:37,627 --> 00:03:38,967
+Sorry, the previous week.
+
+14
+00:03:38,967 --> 00:03:48,268
+So, I think you have already solved these questions.
+
+15
+00:03:48,268 --> 00:03:51,967
+Now.
+
+16
+00:03:57,491 --> 00:04:02,131
+First, we start with the Linear Equation Systems.
+
+17
+00:04:08,436 --> 00:04:12,516
+If we have a linear equation system,
+
+18
+00:04:21,331 --> 00:04:25,572
+M-Eqeation in M-Anmose, 5-years.
+
+19
+00:04:26,451 --> 00:04:36,451
+Then we have three methods to solve this linear equation system.
+
+20
+00:04:38,211 --> 00:04:44,611
+First, you have to write its coefficient matrix.
+
+21
+00:04:44,611 --> 00:04:51,411
+We write the coefficient matrix A of this linear equation system.
+
+22
+00:04:54,372 --> 00:05:03,651
+Writing the coefficient of each equation on the rows of the matrix.
+
+23
+00:05:03,651 --> 00:05:12,611
+So the first row consists of the coefficients of the first equation for
+
+24
+00:05:12,611 --> 00:05:24,052
+A11, A12 and A1n and the second row consists of the second coefficient of the second equation and so on.
+
+25
+00:05:25,651 --> 00:05:28,932
+This is the coefficient matrix of the given
+
+26
+00:05:31,572 --> 00:05:39,971
+linear equation system which has M-Eqeation and M-Unknown's.
+
+27
+00:05:39,971 --> 00:05:56,132
+Then adding, adding the matrix B which is on the right side of the equation, the matrix B.
+
+28
+00:05:59,491 --> 00:06:07,812
+Adding matrix B on the right side of the coefficient matrix, we have the augmented matrix of the
+
+29
+00:06:07,812 --> 00:06:09,891
+linear system.
+
+30
+00:06:10,611 --> 00:06:12,132
+Okay, now.
+
+31
+00:06:14,851 --> 00:06:16,451
+How can we solve.
+
+32
+00:06:18,771 --> 00:06:20,851
+A linear equation system.
+
+33
+00:06:21,971 --> 00:06:26,932
+Which have M-Eqeation in M-Anmose.
+
+34
+00:06:27,812 --> 00:06:28,611
+But first.
+
+35
+00:06:28,611 --> 00:06:29,812
+Yes.
+
+36
+00:06:29,812 --> 00:06:33,891
+Sorry about the interruption.
+
+37
+00:06:34,611 --> 00:06:41,731
+Can you also please upload this file to lesson world because I can't see that right now.
+
+38
+00:06:43,731 --> 00:06:47,012
+I have uploaded the Turkish version.
+
+39
+00:06:47,891 --> 00:06:49,731
+Yes.
+
+40
+00:06:49,731 --> 00:06:52,771
+But I have a lack of lack of language.
+
+41
+00:06:52,771 --> 00:06:54,771
+I see.
+
+42
+00:06:54,771 --> 00:06:55,091
+Okay.
+
+43
+00:06:55,731 --> 00:07:00,292
+After after after lecture, I will I will upload this to the lesson.
+
+44
+00:07:00,292 --> 00:07:01,572
+Okay.
+
+45
+00:07:01,572 --> 00:07:02,131
+Thank you.
+
+46
+00:07:04,851 --> 00:07:16,211
+The first method is gas Jordan reduction.
+
+47
+00:07:12,084 --> 00:07:15,684
+Gauss-Jorden, Döntsün, metod,
+
+48
+00:07:19,220 --> 00:07:26,940
+We write the augmented matrix of the linear system and using elementary row operations.
+
+49
+00:07:26,940 --> 00:07:32,240
+We use only row operations for solving the linear system, only row operations.
+
+50
+00:07:33,100 --> 00:07:42,820
+Using elementary row operations, we put this matrix into the row echelon form or radius row echelon form.
+
+51
+00:07:42,820 --> 00:07:59,020
+So, looking at the row echelon form or radius row echelon form of the matrix, we can talk about the rank of this matrix.
+
+52
+00:07:59,020 --> 00:08:10,080
+The rank of the matrix is the number of non-zero rows on its reduced row echelon form or row echelon form.
+
+53
+00:08:10,080 --> 00:08:34,080
+Therefore, looking at the reduced row echelon form of this matrix, if the rank of AB is different from rank A, then we compute that the system has no solution.
+
+54
+00:08:34,080 --> 00:08:40,080
+No solution or the system is inconsistent.
+
+55
+00:08:40,080 --> 00:08:52,080
+If the rank of AB is equal to the rank A, which is shape R, then...
+
+56
+00:08:52,080 --> 00:09:10,080
+...
+
+57
+00:08:55,508 --> 00:09:01,508
+The system has a solution or the system is consistent.
+
+58
+00:09:01,508 --> 00:09:04,508
+Here we have two cases.
+
+59
+00:09:04,508 --> 00:09:14,508
+If the rank is equal to the number of unknowns, then the system has a unique solution.
+
+60
+00:09:14,508 --> 00:09:32,508
+With respect to the M-R arbitrary variables.
+
+61
+00:09:32,508 --> 00:09:34,508
+Okay.
+
+62
+00:09:34,508 --> 00:09:48,508
+And if the numbers or coefficients on the right side of the linear system are all zero, if
+
+63
+00:09:48,508 --> 00:09:57,508
+B1, B2, and B1 are all zero, then we have homogenous system.
+
+64
+00:09:57,508 --> 00:10:05,508
+This system is called homogenous system and the homogenous system always has a solution.
+
+65
+00:10:05,508 --> 00:10:17,508
+Because rank A0 here, B0, rank A0 is always equal to rank A.
+
+66
+00:10:17,508 --> 00:10:23,508
+So for the homogenous systems, we have always solution.
+
+67
+00:10:23,508 --> 00:10:26,508
+Okay.
+
+68
+00:10:26,508 --> 00:10:35,508
+Now, if we have always solution, one is the trivial or zero solution.
+
+69
+00:10:35,508 --> 00:10:41,508
+The other is non-trivial or non-zero solution.
+
+70
+00:10:41,508 --> 00:10:45,508
+Very similar to the non-homogenous systems.
+
+71
+00:10:45,508 --> 00:10:55,508
+If the rank of the system or the augmented matrix is equal to the number of unknowns, the homogenous
+
+72
+00:10:55,508 --> 00:10:59,508
+system has only zero solution.
+
+73
+00:10:59,508 --> 00:11:04,508
+It means that x1, x2, and xn are all zero.
+
+74
+00:11:04,508 --> 00:11:13,508
+This solution is called zero solution or trivial solution.
+
+75
+00:11:13,508 --> 00:11:23,508
+If the rank of the system is smaller than the number of unknowns, then the number of unknowns,
+
+76
+00:11:23,508 --> 00:11:24,508
+is the same.
+
+77
+00:11:24,508 --> 00:11:26,508
+The number of unknowns, the number of unknowns, the number of unknowns, the number of unknowns,
+
+78
+00:11:26,508 --> 00:11:34,508
+the number of unknowns, the number of unknowns, the number of unknowns, the number of unknowns,
+
+79
+00:11:34,508 --> 00:11:36,508
+the number of unknowns, the number of unknowns, the number of unknowns, the number of unknowns, the number of unknowns,
+
+80
+00:11:30,899 --> 00:11:40,019
+The homogenous system has infinite many solutions with respect to the m minus r arbitrary variables.
+
+81
+00:11:41,299 --> 00:11:51,299
+So, for homogenous systems, we have always solution. One of them is a trivial solution or zero solution,
+
+82
+00:11:52,179 --> 00:12:00,179
+which takes place in where r is equal to the n and the other one is non-trivial solution.
+
+83
+00:12:01,779 --> 00:12:04,019
+When the number of
+
+84
+00:12:06,179 --> 00:12:10,339
+Unmose is bigger than the rank of the system.
+
+85
+00:12:11,620 --> 00:12:13,620
+Okay.
+
+86
+00:12:15,860 --> 00:12:27,800
+So, we have two other methods to solve linear systems, but these are some, these methods meet some spatial conditions.
+
+87
+00:12:28,800 --> 00:12:44,620
+Using kramerskru or solving by inverse of a coefficient matrix, we must have n equations in n almost.
+
+88
+00:12:44,620 --> 00:12:57,560
+So, in these cases, or if you want to use the kramerskru or if you want to solve the system by the inverse of the coefficient matrix,
+
+89
+00:12:58,480 --> 00:13:07,500
+the coefficient of coefficient matrix of the given linear system must be a secure matrix.
+
+90
+00:13:07,500 --> 00:13:10,320
+Okay, this is the first condition.
+
+91
+00:13:12,580 --> 00:13:15,740
+And as the second condition,
+
+92
+00:13:15,740 --> 00:13:24,279
+the determinant of the coefficient matrix A must be non-zero.
+
+93
+00:13:25,279 --> 00:13:25,680
+Okay.
+
+94
+00:13:29,908 --> 00:13:42,908
+If these two conditions hold, then you can use the Kramas rule or you can use the inverse of the coefficient matrix.
+
+95
+00:13:43,908 --> 00:13:54,908
+If the term of the coefficient matrix is non-zero, then the system has a unique solution.
+
+96
+00:14:00,755 --> 00:14:24,456
+But, but, this is also very, very important that if the determinant of A is 0, then be careful here, because if the determinant of A is 0, then you cannot say, you cannot say anything about the solution of this linear system.
+
+97
+00:14:24,456 --> 00:14:44,655
+If the determinant of A is 0, you can solve, you cannot solve this system by Kramas rule or by the inverse of the coefficient matrix. You solve this linear system by Graz-Jordan reduction.
+
+98
+00:14:51,028 --> 00:14:55,268
+Tamam, of course, I will give you an example now.
+
+99
+00:14:57,348 --> 00:14:58,067
+Okay.
+
+100
+00:15:26,740 --> 00:15:35,279
+Using Kramas rule, we find X1 to the Xn by using this determinant.
+
+101
+00:15:35,940 --> 00:15:39,899
+X1 is equal to the determinant A1 over the determinant A.
+
+102
+00:15:40,720 --> 00:15:45,600
+And Xn is equal to the determinant An over the determinant A.
+
+103
+00:15:45,600 --> 00:15:49,320
+Here, A is the coefficient matrix.
+
+104
+00:15:49,320 --> 00:16:00,440
+A1 is the matrix which we replace the first column of the coefficient matrix A by B.
+
+105
+00:16:02,100 --> 00:16:04,460
+And the others are the same.
+
+106
+00:16:04,460 --> 00:16:07,879
+And so we require the inverse of the coefficient matrix.
+
+107
+00:16:08,460 --> 00:16:12,279
+We have a linear system AX is equal to B.
+
+108
+00:16:12,600 --> 00:16:15,840
+Multiplying both sides by A inverse.
+
+109
+00:16:15,840 --> 00:16:20,940
+We have X is equal to A inverse times B.
+
+110
+00:16:21,100 --> 00:16:26,840
+So here, look at the Kramas rule and inverse method.
+
+111
+00:16:27,680 --> 00:16:35,559
+We say that for using these two methods, the determinant of the coefficient matrix must be non-zero.
+
+112
+00:16:36,279 --> 00:16:38,680
+So here, we have determinant A.
+
+113
+00:16:38,680 --> 00:16:42,860
+If determinant A is zero, then this is undefined.
+
+114
+00:16:43,659 --> 00:16:53,259
+And the second, for the inverse of the matrix, if the determinant of A is zero, sorry, then you cannot find X inverse.
+
+115
+00:16:53,940 --> 00:17:14,299
+Okay.
+
+116
+00:17:02,419 --> 00:17:05,319
+Now, examples.
+
+117
+00:17:24,627 --> 00:17:42,627
+Here, it is asked to you that the only system for which values of t
+
+118
+00:17:45,748 --> 00:18:15,728
+is the system inconsistent, has a unique solution, and has infinitely many solutions. So we will find the numbers t, which the system is inconsistent in A, in B, the system has a unique solution,
+
+119
+00:18:15,748 --> 00:18:20,867
+and say the system has infinitely many solutions.
+
+120
+00:18:28,819 --> 00:18:29,279
+Son.
+
+121
+00:18:34,900 --> 00:18:46,600
+We will use Gauss-Shordon reduction, line, the augmented matris of this system.
+
+122
+00:18:58,228 --> 00:19:25,648
+First, we have unknowns x, y, and z. So, writing the coefficient matrix 3, 4, minus 2t, 2, 3, minus t, t, t plus 1, minus 6. And this is the matrix B.
+
+123
+00:19:25,648 --> 00:19:45,188
+Here, 0, 1, minus 1. Using elemental row operations, we write, we put this matrix into the row echelon form.
+
+124
+00:20:20,819 --> 00:20:23,619
+Su, altır.
+
+125
+00:20:34,579 --> 00:20:43,419
+Can you hear me? Is there any problem in the system? Okay, okay.
+
+126
+00:20:47,827 --> 00:20:55,827
+After applying elemental row operations, we put this matrix into the
+
+127
+00:21:00,276 --> 00:21:01,156
+eşelon form.
+
+128
+00:21:03,635 --> 00:21:05,236
+Now it is in the eşelon form.
+
+129
+00:21:12,180 --> 00:21:25,380
+This is matrix A and this is B.
+
+130
+00:21:30,387 --> 00:21:45,528
+Actually, you can put this matrix into the radius row echelon form, but no need to write it in the radius row echelon form, because we are looking for its rank.
+
+131
+00:21:45,528 --> 00:21:53,567
+So, you can determine the rank of the matrix by its row echelon form.
+
+132
+00:21:53,567 --> 00:22:00,567
+So, this is in the row echelon form.
+
+133
+00:22:00,567 --> 00:22:09,567
+First, we want to make this system inconsistent.
+
+134
+00:22:09,567 --> 00:22:10,567
+So,
+
+135
+00:22:13,491 --> 00:22:42,491
+A, rank of A is not equal to rank AB. So, this is the matrix A. If here is 0 and this is different from 0, the rank of A is different from rank of AB.
+
+136
+00:22:43,491 --> 00:23:02,591
+Therefore, if t is 3 or t is minus 2, then this is 0, but for t is 3 or t is minus 2, this is not 0.
+
+137
+00:23:02,591 --> 00:23:15,491
+It means that for t is 3 or t is minus 2, the rank of A is 2, but the rank of AB is 3.
+
+138
+00:23:15,491 --> 00:23:31,351
+Therefore, therefore, therefore, therefore, for t is equal to minus 2 or t is equal to 3, the system has no solution.
+
+139
+00:23:40,852 --> 00:23:42,772
+What about B?
+
+140
+00:23:48,500 --> 00:23:51,940
+B says the system has a unique solution.
+
+141
+00:23:52,759 --> 00:23:59,359
+So, rank of A must be equal to rank of AB.
+
+142
+00:24:00,480 --> 00:24:02,319
+So, the system has a solution.
+
+143
+00:24:03,700 --> 00:24:05,519
+Say this rank is R.
+
+144
+00:24:06,039 --> 00:24:11,119
+If number of almos n, which is here, x, y, and z3,
+
+145
+00:24:12,019 --> 00:24:15,400
+if 3 is equal to R, then we have a unique solution.
+
+146
+00:24:15,400 --> 00:24:24,140
+So, it means that this is not equal to 0.
+
+147
+00:24:24,619 --> 00:24:34,380
+So, if t is not equal to 3 and minus 2, this is not 0.
+
+148
+00:24:34,640 --> 00:24:38,220
+And this is also, this is not important, sorry.
+
+149
+00:24:38,759 --> 00:24:39,619
+This is not 0.
+
+150
+00:24:39,619 --> 00:24:53,140
+So, it means that, it means that, for c is all real numbers, different from minus 2 and 3,
+
+151
+00:24:53,880 --> 00:24:58,119
+the rank A is equal to the number of unknowns.
+
+152
+00:24:58,119 --> 00:25:02,539
+So, in this case, the system has a unique solution.
+
+153
+00:25:15,731 --> 00:25:17,632
+From the last case,
+
+154
+00:25:24,500 --> 00:25:27,339
+Bu sistem has infinitely many solutions.
+
+155
+00:25:33,203 --> 00:26:03,203
+bu, bu, R' bu, R' bu, 3' bu
+
+156
+00:26:03,203 --> 00:26:18,003
+solutions, but there is no such a t which makes this block, this and this zero because if you take t as 4, this is zero but this is not zero.
+
+157
+00:26:18,763 --> 00:26:26,543
+If you take t as 3, this is zero but this is not zero. If you take t as minus 2, this is zero but this is not zero.
+
+158
+00:26:26,543 --> 00:26:31,543
+So for the case, there is no such a...
+
+159
+00:26:39,347 --> 00:26:47,347
+T
+
+160
+00:27:09,875 --> 00:27:39,235
+Okay. This example is very important. Do you have any questions or comments? I have one question. Yeah. Teacher, what if we put 4 instead of t? But I cannot hear you. What if we put 4 instead of t? Then what will be the value of a, what will be the rank of a, b? Please, please repeat your question again, please.
+
+161
+00:27:39,235 --> 00:27:54,995
+What if we put 4 instead of t? Then what will be the value of a, b? If we put 4? Yes. Then what will be the rank of a, b?
+
+162
+00:27:54,995 --> 00:27:58,996
+What will be the rank of a, b?
+
+163
+00:28:01,940 --> 00:28:30,980
+t is 4, then we have 1, 1, minus 4, minus 1, 1, 1, 4, 3, and 0, 0. This is 1, if we put t is 4, this is 1, this is 6, 4, this is 6, and 0.
+
+164
+00:28:30,980 --> 00:28:33,019
+What is the rank of this matrix?
+
+165
+00:28:43,852 --> 00:28:44,852
+3, 3.
+
+166
+00:28:48,307 --> 00:28:49,807
+So,
+
+167
+00:28:52,147 --> 00:28:59,647
+we look at the rank of the matrix in Gauss-Gordon reduction.
+
+168
+00:29:02,548 --> 00:29:03,147
+Now,
+
+169
+00:29:05,968 --> 00:29:06,968
+another example.
+
+170
+00:29:20,723 --> 00:29:27,364
+Again, it is very similar to that equation. We have a linear equation system.
+
+171
+00:29:32,644 --> 00:29:41,364
+For what values of m and n, the system has a unit collision.
+
+172
+00:29:46,163 --> 00:29:49,983
+And in B, infinite minus relations.
+
+173
+00:29:58,867 --> 00:30:00,867
+ve in C,
+
+174
+00:30:00,867 --> 00:30:02,867
+there is no solution
+
+175
+00:30:02,867 --> 00:30:06,867
+in the whole system.
+
+176
+00:30:08,867 --> 00:30:10,867
+So,
+
+177
+00:30:10,867 --> 00:30:14,867
+form or construct its automatic matrix
+
+178
+00:30:14,867 --> 00:30:18,867
+which is
+
+179
+00:30:18,867 --> 00:30:20,867
+1, 1, 2,
+
+180
+00:30:20,867 --> 00:30:22,867
+2,
+
+181
+00:30:22,867 --> 00:30:24,867
+1, 1,
+
+182
+00:30:24,867 --> 00:30:26,867
+3,
+
+183
+00:30:26,867 --> 00:30:28,867
+m plus 2,
+
+184
+00:30:28,867 --> 00:30:30,867
+oh, it is
+
+185
+00:30:30,867 --> 00:30:32,867
+written wrong here,
+
+186
+00:30:32,867 --> 00:30:34,867
+this is m plus 2.
+
+187
+00:30:39,635 --> 00:30:41,096
+Okey, cüzdan püleler.
+
+188
+00:30:44,475 --> 00:30:45,036
+Maybe.
+
+189
+00:30:50,259 --> 00:30:50,660
+Ok.
+
+190
+00:30:56,692 --> 00:31:00,011
+Or maybe this is fine.
+
+191
+00:31:04,372 --> 00:31:12,672
+Now, 1, minus 1, and minus 3, using elemental block operations.
+
+192
+00:31:16,756 --> 00:31:29,636
+3 x this by minus 2, and 8 to this one, and minus 1, and 8 to this one. Yes, this is for m plus 5, so this is m plus 5.
+
+193
+00:31:30,636 --> 00:31:35,396
+Therefore, we have, we have,
+
+194
+00:31:38,516 --> 00:31:41,796
+the wrong issue of form of this matrix like this.
+
+195
+00:31:41,796 --> 00:31:44,196
+Okay.
+
+196
+00:31:46,476 --> 00:31:48,016
+This is A,
+
+197
+00:31:50,016 --> 00:31:52,216
+and this is AB.
+
+198
+00:31:58,355 --> 00:32:04,635
+First, just ask the Unix solution.
+
+199
+00:32:05,796 --> 00:32:12,316
+So, the rank of A must be the rank of AB.
+
+200
+00:32:13,915 --> 00:32:16,455
+And this is equal to the N.
+
+201
+00:32:16,455 --> 00:32:17,496
+What is N?
+
+202
+00:32:18,816 --> 00:32:22,215
+We have X1, X2, X3, 3 unknowns.
+
+203
+00:32:22,955 --> 00:32:23,836
+So N is 3.
+
+204
+00:32:23,836 --> 00:32:41,556
+It means that for the rank of A is equal to the rank of AB and this is equal to the 3.
+
+205
+00:32:41,756 --> 00:32:46,895
+It means that for A, M is not equal to 0.
+
+206
+00:32:49,195 --> 00:32:51,935
+Sorry, M is not equal to minus 1.
+
+207
+00:32:51,935 --> 00:32:57,076
+Because if M is minus 1, then the rank of A is 2.
+
+208
+00:32:57,375 --> 00:32:59,895
+So the system has no solution.
+
+209
+00:33:00,895 --> 00:33:01,115
+Okay.
+
+210
+00:33:02,215 --> 00:33:07,816
+So only condition for A is M is not equal to minus 1.
+
+211
+00:33:08,076 --> 00:33:13,016
+Because if this is 0, the rank of the system is again 3.
+
+212
+00:33:13,016 --> 00:33:22,596
+Now, in B, infinitely many solutions.
+
+213
+00:33:22,596 --> 00:33:34,276
+So the rank of the system must be smaller than N, which is 3.
+
+214
+00:33:34,276 --> 00:33:38,195
+So M must be minus 1.
+
+215
+00:33:41,336 --> 00:33:45,036
+And also N must be 6.
+
+216
+00:33:45,135 --> 00:33:48,476
+Because if you take M as minus 1, this is 0.
+
+217
+00:33:48,615 --> 00:33:52,235
+And if you take M as 6, this is 0.
+
+218
+00:33:52,756 --> 00:33:57,155
+The rank of the system is 2, which is smaller than 3.
+
+219
+00:33:57,155 --> 00:34:02,816
+So the system has infinitely many solutions in this case.
+
+220
+00:34:03,375 --> 00:34:03,615
+Okay.
+
+221
+00:34:05,175 --> 00:34:06,556
+And what is C?
+
+222
+00:34:09,815 --> 00:34:22,056
+Incon system says the rank of A is not equal to rank of AB.
+
+223
+00:34:22,056 --> 00:34:27,215
+It takes place when M is minus 1.
+
+224
+00:34:29,275 --> 00:34:34,295
+And N is not equal to 6.
+
+225
+00:34:34,295 --> 00:34:41,115
+Because taking M as minus 1, we have the rank of A is 2.
+
+226
+00:34:41,615 --> 00:34:46,275
+And if N is equal to 6, the rank of AB is 3.
+
+227
+00:34:46,275 --> 00:34:51,675
+Therefore, in this case, the system has more solution.
+
+228
+00:34:58,260 --> 00:34:58,640
+Ok?
+
+229
+00:35:14,516 --> 00:35:17,816
+Does it make sense? Anlaştık?
+
+230
+00:35:27,860 --> 00:35:28,480
+Kırıç.
+
+231
+00:35:37,204 --> 00:35:43,084
+[öğrenci], inşallah you will stay clear in the exam also.
+
+232
+00:35:51,219 --> 00:35:53,219
+Okey, bu on.
+
+233
+00:35:56,219 --> 00:35:58,219
+Sen Türkçe biliyorsun, i da.
+
+234
+00:36:10,900 --> 00:36:13,139
+Zaten herkes Türkçe'yi biliyor, bile mi bilmiyorum herhalde.
+
+235
+00:36:14,000 --> 00:36:14,360
+Neyse.
+
+236
+00:36:52,115 --> 00:36:54,916
+This is again the same question.
+
+237
+00:37:06,900 --> 00:37:16,820
+It's a linear system, which is, which has three equations and x, y, z, three unknowns.
+
+238
+00:37:18,740 --> 00:37:23,940
+For what values of A and B, the system is inconsistent.
+
+239
+00:37:30,291 --> 00:37:32,291
+As a unique solution
+
+240
+00:37:36,947 --> 00:37:58,067
+İnfinitliy
+
+241
+00:37:47,059 --> 00:38:15,779
+So, like its augmented matrix, which is 1, minus 3, 1, 1, minus 1, 2, 1, 1, b plus 1, 1, 8, 5.
+
+242
+00:38:21,396 --> 00:38:23,396
+ve İlkelerle
+
+243
+00:38:23,396 --> 00:38:51,396
+İlkelerle
+
+244
+00:38:47,188 --> 00:38:48,028
+Teşekkürler.
+
+245
+00:38:59,603 --> 00:39:07,003
+Yes. Consider the following linear system, finding, find, why?
+
+246
+00:39:18,996 --> 00:39:21,916
+Fakat yi, by using Kramas rule.
+
+247
+00:39:21,916 --> 00:39:30,155
+So, first, we have to write its coefficient matrix because we use Kramas rule.
+
+248
+00:39:32,155 --> 00:39:41,476
+We have four equations in four unknowns, so we can use Kramas rule, but we also have to check its determinant.
+
+249
+00:39:41,476 --> 00:39:46,675
+So, the coefficient matrix of this system is
+
+250
+00:39:51,251 --> 00:39:52,251
+1
+
+251
+00:39:54,251 --> 00:40:05,251
+Please write the unknowns in order above x, y, z, and w
+
+252
+00:40:05,251 --> 00:40:09,251
+because we have to write the coefficients in order.
+
+253
+00:40:09,251 --> 00:40:14,251
+So this is 1, 2, 3
+
+254
+00:40:14,251 --> 00:40:22,251
+there is no w in the first equation, but the coefficient of w is 0
+
+255
+00:40:22,251 --> 00:40:29,251
+and the second equation, we have there is no x for 0
+
+256
+00:40:29,251 --> 00:40:31,251
+1
+
+257
+00:40:31,251 --> 00:40:33,251
+2
+
+258
+00:40:33,251 --> 00:40:35,251
+minus 1
+
+259
+00:40:35,251 --> 00:40:39,251
+in third equation, 0
+
+260
+00:40:39,251 --> 00:40:41,251
+1
+
+261
+00:40:41,251 --> 00:40:44,251
+minus 5
+
+262
+00:40:47,251 --> 00:40:48,251
+2
+
+263
+00:40:49,251 --> 00:40:50,251
+0
+
+264
+00:40:51,251 --> 00:40:52,251
+minus 1
+
+265
+00:40:52,251 --> 00:40:53,251
+minus 2
+
+266
+00:40:54,251 --> 00:40:56,251
+So, you have to compute
+
+267
+00:40:58,251 --> 00:41:01,251
+you have to compute the determinant of this matrix
+
+268
+00:41:04,251 --> 00:41:09,251
+Maybe, if you multiply the first row by minus 2
+
+269
+00:41:09,251 --> 00:41:14,251
+and add it to the last row, then this makes 0
+
+270
+00:41:17,251 --> 00:41:22,251
+So you can use the Laplace expansion and onto the first column
+
+271
+00:41:25,251 --> 00:41:38,251
+Yes, then the determinant of the coefficient matrix is 16, which is different from 0. So we can compute from here, there,
+
+272
+00:41:38,251 --> 00:41:43,251
+that the system has a unique solution.
+
+273
+00:41:43,251 --> 00:42:06,251
+So this is the solution.
+
+274
+00:41:48,371 --> 00:42:08,871
+It is asking the patient to find y. Y is the second unknown. So we have to find the determinant of A2. A2 is the matrix which we replace the second column of the coefficient matrix A by the matrix B.
+
+275
+00:42:08,871 --> 00:42:18,172
+So writing the B on second column, we have the determinant of A2 is minus 80.
+
+276
+00:42:19,831 --> 00:42:28,632
+So the unknown y is equal to the determinant A2 over the determinant A which is equal to the minus 5.
+
+277
+00:42:31,031 --> 00:42:33,751
+Okay, this is the Kramas rule.
+
+278
+00:43:08,788 --> 00:43:37,788
+There's a linear system, again, find the solution of the system, where the inverse of the coefficient matrix. Here, it is important, it is only important to find the inverse of the coefficient matrix. First, write the coefficient matrix of this linear system, which is 2, 1, minus 1, 1, 1,
+
+279
+00:43:37,788 --> 00:44:05,387
+minus 2. And compute the inverse of this matrix, which is 1 over the term of A times A joint A. Determine of this matrix is 3, which is not 0. So, we have, we say that A inverse exists. So, find A inverse,
+
+280
+00:44:05,387 --> 00:44:10,887
+multiplying A inverse, multiplying A inverse by the matrix B.
+
+281
+00:44:16,436 --> 00:44:30,436
+Then, you have the unknown matrix Xs , means that this is X, this is Y, and this is Z.
+
+282
+00:44:32,115 --> 00:44:32,436
+Okay.
+
+283
+00:44:38,260 --> 00:44:56,620
+So, we solve linear equations both by Gauss-Shorten reduction, by Kramers-Tool, and also by, via the inverse of the coefficient matrix.
+
+284
+00:44:58,780 --> 00:45:04,460
+Now, what about two vectors?
+
+285
+00:45:40,148 --> 00:46:06,928
+For the points P and Q in RQ, we can write vector PQ, which is the initial point of the vectors and Q is the terminal point.
+
+286
+00:46:06,928 --> 00:46:11,188
+So, we'll make this Q Q.
+
+287
+00:46:14,900 --> 00:46:27,019
+A1-A0, B1-B0, C1-C0.
+
+288
+00:46:27,019 --> 00:46:37,920
+And the magnitude or the norm of this vector in R3 can be fine using this formula.
+
+289
+00:46:37,920 --> 00:46:50,920
+If the norm of the magnitude of the vectors is 1, then we say that this vector is a unit.
+
+290
+00:46:50,920 --> 00:46:54,920
+Vector.
+
+291
+00:46:57,235 --> 00:47:09,275
+V can be written as a unit vector by dividing it to its norm.
+
+292
+00:47:09,275 --> 00:47:16,915
+So, for a non-unit vector V, V over norm V is a unique vector.
+
+293
+00:47:16,915 --> 00:47:19,355
+Okay.
+
+294
+00:47:23,155 --> 00:47:38,496
+And for the basis vectors i, j, and k in R³, we can write each vector v in R³ in anaesthetic form.
+
+295
+00:47:38,496 --> 00:47:50,815
+So if v is a, b, c, then you can write v as v is equal to a, i plus b, j plus c, k.
+
+296
+00:48:00,083 --> 00:48:15,723
+İngiltere, or inner product, is very very important and all others, I write here some important properties, but all of the properties are very important.
+
+297
+00:48:30,931 --> 00:48:32,071
+So, piri's.
+
+298
+00:48:36,115 --> 00:48:46,436
+Be careful in scalars or inners or in the product of the vektörs.
+
+299
+00:48:57,012 --> 00:48:58,952
+Sceler products is defined
+
+300
+00:49:05,204 --> 00:49:07,824
+All are to the end.
+
+301
+00:49:09,824 --> 00:49:16,744
+The result of an inner product, the result is a real number.
+
+302
+00:49:19,024 --> 00:49:28,844
+Okay, the result of a scalar product of two vectors is a real number or scalar.
+
+303
+00:49:28,964 --> 00:49:32,304
+So the name scalar comes from its result.
+
+304
+00:49:32,304 --> 00:49:45,344
+If you have two vectors u and v in r to the n, then scalar product, which is denoted by like this, is equal to this one.
+
+305
+00:49:52,148 --> 00:50:04,448
+Some special, some important properties of the inner product is given here. This is very, very, very important.
+
+306
+00:50:06,528 --> 00:50:19,648
+The scalar product of the vectors u and v is equal to norm u times norm v times cosine theta, where the theta is the angle between the vectors u and v.
+
+307
+00:50:19,648 --> 00:50:28,408
+So you can find the angle between these two vectors by using this formula here.
+
+308
+00:50:29,408 --> 00:50:46,528
+This is also very important that if the inner product of these two vectors is zero, then these two vectors are perpendicular to each other.
+
+309
+00:50:46,528 --> 00:50:48,088
+Okay.
+
+310
+00:50:55,188 --> 00:51:04,827
+Mu is, alt-algonad, or, 12-30-os.
+
+311
+00:51:09,300 --> 00:51:16,300
+ve
+
+312
+00:51:16,300 --> 00:52:08,300
+u
+
+313
+00:52:28,596 --> 00:52:30,596
+vektör uzayları,
+
+314
+00:52:37,012 --> 00:52:38,012
+Of course, pull up a red.
+
+315
+00:52:43,956 --> 00:52:47,956
+nefine
+
+316
+00:53:00,659 --> 00:53:06,179
+R3, it is very important.
+
+317
+00:53:06,179 --> 00:53:09,779
+And the result of
+
+318
+00:53:14,771 --> 00:53:16,771
+Result is
+
+319
+00:53:18,771 --> 00:53:21,771
+A vector
+
+320
+00:53:22,771 --> 00:53:25,771
+So, the result of the
+
+321
+00:53:25,771 --> 00:53:29,771
+Inner product of two vectors is a real number
+
+322
+00:53:29,771 --> 00:53:31,771
+The result of
+
+323
+00:53:31,771 --> 00:53:37,771
+A vector product or cross product of two vectors is a vector
+
+324
+00:53:37,771 --> 00:53:42,771
+The inner product is defined all of the r to the n
+
+325
+00:53:42,771 --> 00:53:50,771
+But the vector of cross product is only defined in r cube
+
+326
+00:53:50,771 --> 00:53:52,771
+Okay
+
+327
+00:53:52,771 --> 00:53:54,771
+And the cross product
+
+328
+00:53:56,771 --> 00:53:58,771
+Is denoted by
+
+329
+00:54:00,771 --> 00:54:02,771
+u times v
+
+330
+00:54:04,771 --> 00:54:07,771
+This cross product is
+
+331
+00:54:07,771 --> 00:54:13,771
+Both perpendicular to u and v
+
+332
+00:54:13,771 --> 00:54:17,771
+So, if you want to find a vector
+
+333
+00:54:17,771 --> 00:54:43,771
+And the vector
+
+334
+00:54:22,867 --> 00:54:34,027
+Bu, bu ve bu
+
+335
+00:54:39,668 --> 00:54:43,708
+ve bu formula'ı,
+
+336
+00:54:44,068 --> 00:54:45,988
+kompetent cross-produkt,
+
+337
+00:54:50,516 --> 00:54:54,115
+We use Laplace expansion in the first row.
+
+338
+00:54:55,416 --> 00:55:07,615
+U1, U2, U3 are the entries of the vector U and B1, V2, D3 are the entries of the vector V.
+
+339
+00:55:09,916 --> 00:55:20,215
+And very, very important term for a cross product is
+
+340
+00:55:20,516 --> 00:55:20,916
+Cheers.
+
+341
+00:55:44,436 --> 00:55:58,175
+Normal, the magnitude of the cross product of u and v is equal to normal u times normal v times sine theta, where theta is the angle between u and v.
+
+342
+00:55:58,175 --> 00:56:08,175
+So, you can find the angle between these two vectors u and v by using these two theorems.
+
+343
+00:56:08,175 --> 00:56:24,615
+And this theorem also gives if u and v are vectors, adjacent vectors like this, it means that the adjacent vector means that the initial points are the same.
+
+344
+00:56:25,736 --> 00:56:33,976
+So, these two vectors determine the parallelogram right here.
+
+345
+00:56:33,976 --> 00:56:41,316
+The area of the parallelogram determined by u and v is 2b.
+
+346
+00:56:41,316 --> 00:56:42,256
+Okay.
+
+347
+00:56:43,996 --> 00:57:00,316
+And the area 2b, which we say A, of a parallelogram with adjacent sides u and v is the norm of...
+
+348
+00:57:03,572 --> 00:57:19,452
+Normal, the cross product of u and v. And the triangle, triangle, which determined by the vectors u and v is half of this area.
+
+349
+00:57:22,900 --> 00:57:23,340
+Ok.
+
+350
+00:57:33,172 --> 00:57:35,172
+ve açıkları birçok
+
+351
+00:57:38,172 --> 00:57:42,172
+birçokları birçokları
+
+352
+00:57:42,172 --> 00:57:47,172
+ve birçokları
+
+353
+00:57:50,172 --> 00:57:52,172
+ve
+
+354
+00:57:52,172 --> 00:57:57,172
+birçokları
+
+355
+00:57:57,172 --> 00:57:59,172
+ve
+
+356
+00:57:59,172 --> 00:58:01,172
+birçokları
+
+357
+00:58:01,172 --> 00:58:03,172
+çok önemli
+
+358
+00:58:03,172 --> 00:58:27,172
+birçokları
+
+359
+00:58:06,867 --> 00:58:19,188
+condition, that if the scalar triple product of the vectors u, v, and w is zero,
+
+360
+00:58:21,587 --> 00:58:28,067
+which is actually, in other words, it means that if the volume of the perler pipe
+
+361
+00:58:28,067 --> 00:58:41,987
+determined by the vectors u, v, and w is zero, then these three vectors lie in the same plane.
+
+362
+00:58:42,547 --> 00:58:50,067
+This is, this property is very, very important. Okay, if the volume of the perler pipe is zero,
+
+363
+00:58:50,067 --> 00:58:59,027
+then the, like, these three vectors lie in the same plane. And we have, uh,
+
+364
+00:59:11,731 --> 00:59:16,231
+vektör triplu product, ve dekir bu.
+
+365
+00:59:28,947 --> 00:59:29,387
+Kutuzi.
+
+366
+00:59:46,643 --> 00:59:48,963
+A unit vektör A
+
+367
+00:59:52,692 --> 01:00:18,692
+which is perpendicular to W, so A is orthogonal to W, and parallel to the plane, or parallel to the plane, generated by the vectors U and V.
+
+368
+01:00:22,068 --> 01:00:35,788
+A is perpendicular to W, and parallel to the plane generated by the vectors U and V.
+
+369
+01:00:35,788 --> 01:00:47,008
+So, we have two vectors U and V in the plane.
+
+370
+01:00:47,008 --> 01:01:06,768
+If we have, if we have, sorry, if we take the cross product of these two, U and these two vectors U and V,
+
+371
+01:01:11,188 --> 01:01:31,028
+Since A is parallel to this plane, A is orthogonal to or perpendicular to U vector product V.
+
+372
+01:01:31,028 --> 01:01:43,028
+Because we know that U vector product V is perpendicular to both U and V.
+
+373
+01:01:43,028 --> 01:01:56,028
+Since A is parallel to this plane, so A must be orthogonal to the U vector product V.
+
+374
+01:01:56,028 --> 01:02:17,028
+Therefore, we can take A as the vector product of W and U vector product V.
+
+375
+01:02:17,028 --> 01:02:22,028
+Ok.
+
+376
+01:02:22,028 --> 01:02:24,028
+So...
+
+377
+01:02:26,068 --> 01:02:30,068
+A as this vector product.
+
+378
+01:02:32,068 --> 01:02:34,068
+This is actually...
+
+379
+01:02:35,068 --> 01:02:39,068
+First, maybe you can find your vector product V.
+
+380
+01:02:40,068 --> 01:02:42,068
+And then,
+
+381
+01:02:43,068 --> 01:02:44,068
+you can
+
+382
+01:02:47,068 --> 01:02:50,068
+find A like this.
+
+383
+01:02:50,068 --> 01:02:52,068
+Or you can use
+
+384
+01:02:53,068 --> 01:02:54,068
+you can use
+
+385
+01:02:56,068 --> 01:02:58,068
+this is equal to
+
+386
+01:03:00,068 --> 01:03:03,068
+V in the product V
+
+387
+01:03:04,068 --> 01:03:06,068
+U minus
+
+388
+01:03:07,068 --> 01:03:08,068
+W
+
+389
+01:03:08,068 --> 01:03:10,068
+in the product U
+
+390
+01:03:11,068 --> 01:03:15,068
+with A. You can also find A using this formula.
+
+391
+01:03:15,068 --> 01:03:17,068
+But it is important here.
+
+392
+01:03:17,068 --> 01:03:19,068
+Find the unit vectors.
+
+393
+01:03:20,068 --> 01:03:22,068
+We find A
+
+394
+01:03:23,068 --> 01:03:24,068
+here like this
+
+395
+01:03:24,068 --> 01:03:28,068
+but the norm of this vector is not one.
+
+396
+01:03:29,068 --> 01:03:30,068
+So,
+
+397
+01:03:30,068 --> 01:03:33,068
+we have to write this in a unit vector form
+
+398
+01:03:34,068 --> 01:03:37,068
+by dividing it to its norm.
+
+399
+01:03:37,068 --> 01:03:38,068
+So,
+
+400
+01:03:39,068 --> 01:03:41,068
+what is the norm of this vector?
+
+401
+01:03:42,068 --> 01:03:44,068
+16 plus 4 plus 4.
+
+402
+01:03:44,068 --> 01:03:45,068
+4 plus 4
+
+403
+01:03:45,068 --> 01:03:47,068
+is square root 6.
+
+404
+01:03:47,068 --> 01:03:50,068
+No, not square root 2.
+
+405
+01:03:50,068 --> 01:03:52,068
+2 times square root 6.
+
+406
+01:03:53,068 --> 01:03:54,068
+Then,
+
+407
+01:03:54,068 --> 01:03:55,068
+this is a
+
+408
+01:03:56,068 --> 01:03:57,068
+unit vector
+
+409
+01:03:58,068 --> 01:04:00,068
+that we want.
+
+410
+01:04:01,068 --> 01:04:31,068
+Okay.
+
+411
+01:04:12,532 --> 01:04:12,852
+Ok?
+
+412
+01:04:21,139 --> 01:04:22,279
+Can you hear me?
+
+413
+01:04:27,123 --> 01:04:29,823
+Evet, evet, evet, we can hear you.
+
+414
+01:04:30,143 --> 01:04:30,863
+Okey, okey.
+
+415
+01:04:32,543 --> 01:04:34,443
+Yani, bu, anlaşılıyor, sanırım.
+
+416
+01:04:34,903 --> 01:04:35,363
+Anlaşılıyor?
+
+417
+01:04:37,603 --> 01:04:38,283
+Evet.
+
+418
+01:04:38,884 --> 01:04:40,043
+[öğrenci], is it clear?
+
+419
+01:04:58,612 --> 01:05:22,912
+For the vectors a, b, and c, if a in a product with b minus c is 0, and the norm of, sorry, a is equal to 2b, and this norm of c is equal to 2 times norm b, find the angle between a and c.
+
+420
+01:05:26,516 --> 01:05:29,356
+So, we have an inner product here.
+
+421
+01:05:31,476 --> 01:05:38,396
+First, using the properties of inner product, we can write this equation as, this is equal to
+
+422
+01:05:39,596 --> 01:05:49,076
+a inner product b minus a inner product c is equal to zero, means that
+
+423
+01:05:49,076 --> 01:05:57,036
+a inner product b is equal to a inner product c.
+
+424
+01:05:58,596 --> 01:06:07,916
+We are looking for an angle between the vectors a and c, so we use this theorem or this property.
+
+425
+01:06:07,916 --> 01:06:18,796
+the inner product of a and c is equal to norm a times norm c times cosine theta,
+
+426
+01:06:21,996 --> 01:06:24,476
+so cosine theta is equal to
+
+427
+01:06:29,043 --> 01:06:51,203
+A in a product C over norm A times norm C. Here, we know that A in a product C is equal to A in a product B.
+
+428
+01:06:51,203 --> 01:07:00,643
+So, what is A in a product B? Since A is equal to 2B,
+
+429
+01:07:06,164 --> 01:07:21,824
+A, inner product B, is the contour, to B, inner product B, which is the contour, to B, more sugar.
+
+430
+01:07:32,755 --> 01:07:52,715
+So, writing a in a product b in here, in its place, cos theta is equal to 2 binom square dollars.
+
+431
+01:07:52,715 --> 01:08:01,275
+And we also know that a is equal to 2 binom square.
+
+432
+01:08:05,172 --> 01:08:09,672
+So, the norm of A is equal to V.
+
+433
+01:08:15,635 --> 01:08:19,216
+Norm of C is equal to 2 times norm B.
+
+434
+01:08:22,996 --> 01:08:39,536
+So, we have cosine theta is 1 over 2 means that theta is 60 degrees.
+
+435
+01:08:39,536 --> 01:08:41,815
+Okay.
+
+436
+01:09:18,899 --> 01:09:33,759
+If the norm of u is 10 and norm of v is 4 and the inner product of u and v is 12, find the magnitude of u vector product v.
+
+437
+01:09:33,759 --> 01:09:47,899
+So we know that the norm of u vector product v is equal to norm v times sine theta.
+
+438
+01:09:48,899 --> 01:10:09,039
+Okay, and from here we know that u in a product v is equal to, which is 12, which is given in the creation, norm u times norm v times cosine theta.
+
+439
+01:10:09,039 --> 01:10:13,039
+So we have norm u and norm v.
+
+440
+01:10:13,039 --> 01:10:19,039
+Therefore, cosine theta here is 12.
+
+441
+01:10:19,039 --> 01:10:22,039
+12.
+
+442
+01:10:22,039 --> 01:10:29,039
+Overage norm u times norm v, which is 10 times 2, 20.
+
+443
+01:10:29,039 --> 01:10:39,039
+Factor width 4 divs 3 over 5.
+
+444
+01:10:39,039 --> 01:10:40,039
+5.
+
+445
+01:10:40,039 --> 01:10:46,039
+Stop cosine theta is 3 over 5.
+
+446
+01:10:46,039 --> 01:10:50,039
+For the nickels.
+
+447
+01:10:50,039 --> 01:11:20,039
+Strangle.
+
+448
+01:10:58,195 --> 01:11:28,175
+This is 3, this is 4, sorry. This is Theta, and this is Hypotenesis 5, so this is 4. We are looking for this one, because, sorry, Theta, we can say that Sin Theta is 4 over 2.
+
+449
+01:11:28,195 --> 01:11:38,635
+5, Mon Mu is 10, Mon Mu is 12, and Sin Theta is 4 or 5.
+
+450
+01:11:44,148 --> 01:11:44,788
+16.
+
+451
+01:11:47,908 --> 01:11:48,208
+Ok.
+
+452
+01:11:55,220 --> 01:11:55,940
+Teacher?
+
+453
+01:11:56,619 --> 01:11:57,199
+Yes.
+
+454
+01:11:57,680 --> 01:11:58,260
+Bir soru.
+
+455
+01:11:58,800 --> 01:12:02,119
+When you say norm, norm equals to magnitude.
+
+456
+01:12:02,600 --> 01:12:03,159
+Am I right?
+
+457
+01:12:03,340 --> 01:12:04,119
+Yes, yes.
+
+458
+01:12:04,460 --> 01:12:05,119
+Ah, okay.
+
+459
+01:12:05,960 --> 01:12:07,360
+Norm equals to the magnitude.
+
+460
+01:12:09,480 --> 01:12:10,300
+Thank you.
+
+461
+01:12:11,940 --> 01:12:12,500
+You're welcome.
+
+462
+01:12:13,260 --> 01:12:16,480
+Then, look at location 4.
+
+463
+01:12:17,539 --> 01:12:22,920
+Determine 83 vectors, A, B, and C, Y.
+
+464
+01:12:22,920 --> 01:12:26,600
+In the same plane of norm.
+
+465
+01:12:27,840 --> 01:12:44,579
+We say that if the volume of the parallel pipe determined by the adjacent sides, adjacent vectors, A, B, and C is equal to zero, that these three values lie in the same plane.
+
+466
+01:12:47,039 --> 01:12:52,440
+So, what is the volume of the parallel pipe, which is given with the scalar triple-parallel?
+
+467
+01:12:52,920 --> 01:12:59,579
+A, inner product, B, vector product, C.
+
+468
+01:13:00,659 --> 01:13:03,420
+Which we can compute by the determinant.
+
+469
+01:13:04,619 --> 01:13:11,900
+Write the first, write the entry for the first vector in the first row.
+
+470
+01:13:11,900 --> 01:13:24,300
+1, 4, minus 7, B, here's 2, minus 1, 4, minus 0, minus 9, 18.
+
+471
+01:13:24,860 --> 01:13:30,380
+If this determinant is equal to zero, then they lie in the same plane.
+
+472
+01:13:30,380 --> 01:13:36,220
+If the determinant is equal to zero, then they lie in the same plane.
+
+473
+01:13:37,740 --> 01:13:50,640
+So, writing this determinant, we find, we found determinant is zero, so they lie in the same plane.
+
+474
+01:13:50,640 --> 01:13:52,600
+Okay?
+
+475
+01:13:52,600 --> 01:14:20,260
+Okay.
+
+476
+01:13:59,091 --> 01:14:02,631
+And last example.
+
+477
+01:14:06,868 --> 01:14:13,868
+ve bu
+
+478
+01:14:13,868 --> 01:15:58,868
+bu
+
+479
+01:16:01,108 --> 01:16:07,628
+Now, we will talk about the vector species.
+
+480
+01:16:16,819 --> 01:16:18,319
+Bu, diye ödüldü spesiz.
+
+481
+01:16:37,235 --> 01:16:48,235
+We have a set V and we have two operations on this set, vector addition and scalar multiplication.
+
+482
+01:16:48,235 --> 01:17:01,235
+If the set V satisfies all these 10 conditions with respect to the scalar multiplication and vector addition,
+
+483
+01:17:01,235 --> 01:17:10,235
+then we say that V is a vector space with these two operations.
+
+484
+01:17:10,235 --> 01:17:16,235
+These operations are very important.
+
+485
+01:17:16,235 --> 01:17:22,235
+Now, we talk about some of them.
+
+486
+01:17:22,235 --> 01:17:32,235
+If for u and v in v, u plus v is in v, then we say that the set V is closed under addition.
+
+487
+01:17:32,235 --> 01:17:36,235
+Okay.
+
+488
+01:17:36,235 --> 01:17:46,235
+If u plus v is equal to v plus u, then we say that...
+
+489
+01:17:46,804 --> 01:18:16,804
+ve ve
+
+490
+01:18:23,572 --> 01:18:53,572
+on this scalar multiplication. So we have to check, we have to check all of these 10 conditions to determine what a given set is a vector space or not. But, but it is recommended to check first, check first,
+
+491
+01:18:53,572 --> 01:19:05,811
+if a given set is closed under the given vector of addition and if it is a closed under given scalar multiplication.
+
+492
+01:19:09,268 --> 01:19:25,228
+Then check, secondly, check if this set has an additive identity with respect to the given vector edition.
+
+493
+01:19:26,688 --> 01:19:38,828
+So, if these three conditions hold, then you have to check all of the others, but if one of these three conditions doesn't hold,
+
+494
+01:19:39,268 --> 01:19:45,507
+Then you see that this vector, this set is not a vector space.
+
+495
+01:19:45,507 --> 01:19:46,247
+Okay.
+
+496
+01:19:49,971 --> 01:19:55,291
+Here are some examples of vector spaces.
+
+497
+01:19:58,291 --> 01:19:59,051
+Teacher?
+
+498
+01:20:00,311 --> 01:20:03,532
+Actually, we have already gave this train.
+
+499
+01:20:05,612 --> 01:20:05,931
+Yes.
+
+500
+01:20:06,851 --> 01:20:11,811
+Teacher, those conditions for the subsets, am I right?
+
+501
+01:20:12,171 --> 01:20:13,051
+Yes, I listen to you.
+
+502
+01:20:13,051 --> 01:20:13,891
+Please.
+
+503
+01:20:27,380 --> 01:20:32,500
+We have already these examples of vector spaces in the lecture, but
+
+504
+01:20:37,811 --> 01:20:39,891
+Can you hear me now?
+
+505
+01:20:41,332 --> 01:20:48,211
+Teacher, yes, we can hear you, but I think, I don't know, that's my problem or that's the zoom problem.
+
+506
+01:20:49,791 --> 01:20:55,131
+Please say your problem. If you don't say your problem, we cannot solve it, right?
+
+507
+01:20:55,811 --> 01:21:02,692
+Teacher, about that condition you said, these are for the subsets.
+
+508
+01:21:05,032 --> 01:21:06,072
+Which one?
+
+509
+01:21:06,072 --> 01:21:13,671
+Those conditions and that's multiplicity and multiplication and the sum of them.
+
+510
+01:21:14,671 --> 01:21:37,652
+Yes.
+
+511
+01:21:19,283 --> 01:21:22,844
+And these are also we can use for the subsets or not.
+
+512
+01:21:24,844 --> 01:21:25,723
+Subspace.
+
+513
+01:21:27,363 --> 01:21:32,603
+Okay, we will be using the subspace also, we have a term in subspaces.
+
+514
+01:21:33,043 --> 01:21:33,603
+We cannot.
+
+515
+01:21:35,163 --> 01:21:37,043
+Now we are talking about vector spaces.
+
+516
+01:21:37,483 --> 01:21:40,523
+We have a term in subspaces part.
+
+517
+01:21:41,643 --> 01:21:48,884
+Also, if these two, if these two conditions fall,
+
+518
+01:21:49,283 --> 01:21:52,523
+for the subset of the vector space,
+
+519
+01:21:52,643 --> 01:21:55,223
+then we say that the subset is a vector,
+
+520
+01:21:55,403 --> 01:21:57,723
+subspace for the vector space.
+
+521
+01:21:57,863 --> 01:21:58,003
+Okay?
+
+522
+01:21:59,563 --> 01:22:01,304
+Okay, thank you.
+
+523
+01:22:06,515 --> 01:22:13,515
+Bu bir example, bu bir de bu da
+
+524
+01:22:13,515 --> 01:22:21,515
+Bu bir de bu da
+
+525
+01:22:21,515 --> 01:22:42,515
+Bu da
+
+526
+01:22:29,747 --> 01:22:31,867
+Uyuzi matrisler.
+
+527
+01:22:38,931 --> 01:22:59,492
+So, determining q, whether a vector space or not, first looking at the checking list, if it is closed under addition, yes, checking to
+
+528
+01:23:02,868 --> 01:23:04,148
+Relational Numbers
+
+529
+01:23:07,636 --> 01:23:25,276
+A plus B, additional two rational numbers is also rational numbers, but for C in R and or Lambda, say this is Lambda.
+
+530
+01:23:25,276 --> 01:23:43,436
+Lambda in R and A in Q, Lambda times A is not always an element of Q.
+
+531
+01:23:43,436 --> 01:24:00,336
+For example, if we take Lambda as square root 2, square root 2 times any rational number is not a rational number, so this is not closed under multiplication.
+
+532
+01:24:01,336 --> 01:24:12,216
+Therefore, we say that Q is not a vector space under the usual addition and usual multiplication.
+
+533
+01:24:13,436 --> 01:24:15,816
+Okay.
+
+534
+01:24:15,816 --> 01:24:19,576
+Now,
+
+535
+01:24:23,028 --> 01:24:24,868
+subspace of electric space
+
+536
+01:24:53,300 --> 01:25:07,300
+We have a theorem determining a subset, given subset, whether a subspace or not, let v be a vector space.
+
+537
+01:25:25,524 --> 01:25:28,963
+W is a subset of this vector space.
+
+538
+01:25:45,619 --> 01:25:55,880
+If these two conditions hold, then we say that w is a subspace of the vector space of the weight.
+
+539
+01:25:55,880 --> 01:25:58,159
+If
+
+540
+01:26:02,739 --> 01:26:25,960
+U, V in W, U plus V is also in W, and for C in R, and U in W, C, skated or skated multiplication by U is also in W.
+
+541
+01:26:25,960 --> 01:26:31,099
+So this is the term of the subspace test, very important test.
+
+542
+01:26:32,739 --> 01:26:41,619
+We determine the subset of a vector space is a subspace or not using this term.
+
+543
+01:26:42,179 --> 01:26:48,659
+Okay, now look at the examples.
+
+544
+01:27:05,876 --> 01:27:25,876
+Look at the example 8. Let M2 by 3 be the set of all 2 by 3 matrisis. Show that the set W, which is defined by...
+
+545
+01:27:29,619 --> 01:27:33,460
+is a subspace of vector space M23.
+
+546
+01:27:34,460 --> 01:27:38,699
+So, most probably in the exam,
+
+547
+01:27:39,699 --> 01:27:42,140
+the question will be like this.
+
+548
+01:27:43,599 --> 01:27:47,279
+Let M23 be the set of all the vector space
+
+549
+01:27:47,279 --> 01:27:50,500
+of all three by three, two by three matrices.
+
+550
+01:27:52,199 --> 01:27:54,939
+Which of the following statement or statements
+
+551
+01:27:54,939 --> 01:27:59,579
+are true about the given subsets.
+
+552
+01:28:00,220 --> 01:28:03,319
+So, the first subset W is defined as this.
+
+553
+01:28:03,939 --> 01:28:05,579
+And it is asking the patient
+
+554
+01:28:05,579 --> 01:28:09,019
+if W is a vector space or not.
+
+555
+01:28:09,019 --> 01:28:11,840
+So, taking two elements,
+
+556
+01:28:12,720 --> 01:28:15,059
+we use, we will use the term
+
+557
+01:28:15,059 --> 01:28:18,380
+that gives the subspace of vector space.
+
+558
+01:28:18,380 --> 01:28:30,059
+First, if for AB in W,
+
+559
+01:28:31,420 --> 01:28:37,739
+A plus B belongs to the W.
+
+560
+01:28:37,739 --> 01:28:43,220
+And secondly, for C is ring number
+
+561
+01:28:43,220 --> 01:28:45,779
+and A is in W.
+
+562
+01:28:46,579 --> 01:28:48,819
+C times A
+
+563
+01:28:48,819 --> 01:28:53,579
+belongs to W or not.
+
+564
+01:28:54,720 --> 01:28:57,899
+So, take two elements,
+
+565
+01:28:58,119 --> 01:29:00,279
+A and B in W.
+
+566
+01:29:00,279 --> 01:29:08,399
+So, this is on the form of A1, B1, C1, D1, E1 and F1.
+
+567
+01:29:08,939 --> 01:29:13,460
+And also, A1 is equal to minus two C1
+
+568
+01:29:13,460 --> 01:29:16,920
+and F1 is equal to two E1 plus D1.
+
+569
+01:29:17,140 --> 01:29:17,380
+Okay.
+
+570
+01:29:17,979 --> 01:29:21,340
+Because these elements are from W.
+
+571
+01:29:21,340 --> 01:29:28,819
+We are looking for if A plus B is in W or not.
+
+572
+01:29:29,319 --> 01:29:30,539
+What is A plus B?
+
+573
+01:29:31,559 --> 01:29:32,579
+The set of,
+
+574
+01:29:33,099 --> 01:29:37,859
+the set of all two by three matrices
+
+575
+01:29:37,859 --> 01:29:42,380
+is a vector space under matrix addition
+
+576
+01:29:42,380 --> 01:29:47,680
+and a scalar multiplication of a matrix by a scale.
+
+577
+01:29:47,680 --> 01:29:52,359
+So, we use addition,
+
+578
+01:29:52,819 --> 01:29:55,420
+we use matrix addition here
+
+579
+01:29:55,420 --> 01:29:57,800
+as the vector of addition.
+
+580
+01:30:05,332 --> 01:30:13,332
+a plus b is equal to a1 plus a2 b1 b2 bla bla.
+
+581
+01:30:14,271 --> 01:30:20,092
+Now, we have to check, we have to check a plus b is this.
+
+582
+01:30:20,672 --> 01:30:29,352
+We have to check if a is equal to minus 2c and f is equal to 2e plus d.
+
+583
+01:30:29,352 --> 01:30:35,512
+If this satisfies, then we say that a plus b is in w.
+
+584
+01:30:38,212 --> 01:30:54,832
+So, here a is this one and c is this one and d, f and b.
+
+585
+01:30:54,832 --> 01:31:05,832
+So, a1 plus a2, we know that a1 is equal to minus 2c1 and also a2 is minus 2c2.
+
+586
+01:31:05,832 --> 01:31:09,832
+So, it's equal to minus 2c1 plus c2.
+
+587
+01:31:10,832 --> 01:31:17,832
+Also, f1 plus f2 is equal to f1 is equal to this one and f2 is equal to this one.
+
+588
+01:31:17,832 --> 01:31:20,832
+So, this condition also satisfies.
+
+589
+01:31:21,832 --> 01:31:28,832
+Therefore, a plus b is in w.
+
+590
+01:31:28,832 --> 01:31:29,832
+Okay.
+
+591
+01:31:30,832 --> 01:31:38,832
+And second condition say that for a scalar k or c, k times a is in w or not.
+
+592
+01:31:38,832 --> 01:31:56,832
+k times a is a matrix like this for, we have to check if k times a1 is equal to k minus 2 times k times c1.
+
+593
+01:31:56,832 --> 01:32:00,832
+We know that a1 is equal to minus 2c1.
+
+594
+01:32:01,832 --> 01:32:08,832
+So, this is equal to minus 2k c1 and also the other conditions are satisfied.
+
+595
+01:32:08,832 --> 01:32:10,832
+Therefore,
+
+596
+01:32:14,707 --> 01:32:17,167
+Vabunyu ise subspace of...
+
+597
+01:32:20,500 --> 01:32:22,500
+1, 2, 3
+
+598
+01:32:27,444 --> 01:32:27,824
+Ok.
+
+599
+01:32:38,420 --> 01:32:49,960
+This example is very similar to the previous one, so I skip it, maybe another.
+
+600
+01:33:20,724 --> 01:33:25,724
+Ok, look at example 13.
+
+601
+01:33:31,380 --> 01:33:44,859
+Let W be the set of all vectors in R square. So we can take R square as the set of all and by two matrices.
+
+602
+01:33:52,180 --> 01:34:22,180
+Ve bu şekilde bu ve
+
+603
+01:34:22,180 --> 01:34:26,920
+ve bu ve
+
+604
+01:34:29,939 --> 01:34:34,939
+Aditive Identity.
+
+605
+01:34:34,939 --> 01:34:37,939
+So, what is Aditive Identity?
+
+606
+01:34:41,427 --> 01:35:10,307
+U O plus say the additive identity is E, E is equal to U. Therefore, since this is a vector space, no need to write U O plus E is equal to E O plus U and this equal to U,
+
+607
+01:35:10,307 --> 01:35:19,887
+because we know that this is a vector space, so it has a commutative property. It's only enough to check this one.
+
+608
+01:35:21,528 --> 01:35:26,887
+Therefore, U is in the form X1, X2.
+
+609
+01:35:33,363 --> 01:35:39,803
+Since E is also a vector in, Arşikar is on the form.
+
+610
+01:35:44,467 --> 01:35:54,387
+e1, e2, and this is equal to the u which is x1, x2.
+
+611
+01:35:55,427 --> 01:36:00,867
+So, apply this operation which is defined as
+
+612
+01:36:00,867 --> 01:36:26,787
+this is equal to x1 plus e1 plus 1, x2 plus e2 minus 1, which is equal to
+
+613
+01:36:26,787 --> 01:36:40,867
+x1, x2. We are looking for the entries of the vector e which is e1 and e2. So,
+
+614
+01:36:42,627 --> 01:36:50,387
+x1 plus e1 plus 1 is equal to x1. Therefore, e1 is equal to
+
+615
+01:36:53,028 --> 01:36:53,747
+minus 1.
+
+616
+01:36:57,188 --> 01:37:05,827
+From here, x2 plus e2 minus 1 is equal to x2. So,
+
+617
+01:37:08,467 --> 01:37:19,108
+e2 is 1. Therefore, the relative identity of this vector space under the operation
+
+618
+01:37:19,108 --> 01:37:29,747
+defined here is a minus 1, 1.
+
+619
+01:37:29,747 --> 01:37:33,507
+Okay.
+
+620
+01:37:38,131 --> 01:37:42,791
+And what about the second one?
+
+621
+01:37:50,387 --> 01:38:17,587
+Find the additive universe of the element or entry or sorry, the vector u. So what is the additive universe? U O plus say this vector S v is equal to the additive identity which we say as
+
+622
+01:38:17,587 --> 01:38:22,988
+I OV C O O Z.
+
+623
+01:38:29,811 --> 01:38:30,671
+Därfor,
+
+624
+01:38:34,452 --> 01:38:55,912
+x1, x2, plus say v as v1, v2, is equal to the additive identity or 0 of this rectal space, which is minus 1, 1.
+
+625
+01:38:55,912 --> 01:39:25,372
+Therefore, applying this addition, we have x1 plus v1 plus 1 is equal to minus 1 and x2 plus v2 minus 1 is equal to 1.
+
+626
+01:39:25,912 --> 01:39:32,132
+We are looking for v1 and v2.
+
+627
+01:39:32,132 --> 01:39:51,132
+So, v1 is equal to minus 2 minus x1 and v2 is equal to...
+
+628
+01:39:54,739 --> 01:40:20,420
+2 minus x2, therefore, we minus 2 minus x1, 2 minus x2 is the additive inverse of the u, which is x1, x2.
+
+629
+01:40:27,444 --> 01:40:28,444
+Okay.
+
+630
+01:40:30,644 --> 01:40:32,644
+Today is over.
+
+631
+01:40:33,844 --> 01:40:40,644
+I wish you a good exam and have good luck in your exam today.
+
+632
+01:40:42,644 --> 01:40:51,644
+And hope to hear you in next week with good exam scores, inshaAllah.
+
+633
+01:40:54,579 --> 01:40:59,800
+Any commands or questions?
+
+634
+01:41:03,475 --> 01:41:03,996
+Hocam.
+
+635
+01:41:04,955 --> 01:41:05,215
+Evet.
+
+636
+01:41:08,135 --> 01:41:11,235
+Biraz yüksek konuşursanız çok yiyemiyorum sesimi.
+
+637
+01:41:14,836 --> 01:41:15,396
+Pardon.
+
+638
+01:41:19,444 --> 01:41:20,764
+Evet dinliyorum seni.
+
+639
+01:41:21,084 --> 01:41:21,844
+Konuşan arkadaşım.
+
+640
+01:41:22,024 --> 01:41:23,524
+Bitiriyor musunuz şu anda?
+
+641
+01:41:24,084 --> 01:41:25,004
+Evet bitti ders.
+
+642
+01:41:25,464 --> 01:41:26,844
+Şey soracağım o zaman.
+
+643
+01:41:27,423 --> 01:41:30,484
+Bu seferki sınavda havuz sistemi var ya.
+
+644
+01:41:30,923 --> 01:41:32,584
+Hiç böyle sınava girmedim de.
+
+645
+01:41:32,684 --> 01:41:33,864
+Biraz bilgi verir misiniz?
+
+646
+01:41:34,024 --> 01:41:35,404
+Sorulara geri dönecek miyiz?
+
+647
+01:41:35,524 --> 01:41:38,064
+Tekrar dört yanmış bir doğru götürüyor mu?
+
+648
+01:41:38,064 --> 01:41:39,064
+Ya da...
+
+649
+01:41:39,824 --> 01:41:41,564
+Bir ders söyle anlamadım.
+
+650
+01:41:42,264 --> 01:41:45,684
+Hocam bu seferki sınavda havuz sistemi olacakmış ya.
+
+651
+01:41:46,084 --> 01:41:46,324
+Evet.
+
+652
+01:41:46,324 --> 01:41:50,044
+Ben hiç öyle sınava girmedim birinci vizelerde.
+
+653
+01:41:50,144 --> 01:41:51,504
+O yüzden sistemi bilmiyorum.
+
+654
+01:41:51,664 --> 01:41:52,124
+Biraz bilgi verir misiniz?
+
+655
+01:41:52,124 --> 01:41:54,724
+Birinci vizede girmedin mi sınava?
+
+656
+01:41:54,944 --> 01:41:58,124
+Birinci vizede sınava girdim ama havuz sistemi değildi.
+
+657
+01:41:58,184 --> 01:41:58,364
+Evet.
+
+658
+01:41:58,604 --> 01:41:59,524
+Havuz diyorsun.
+
+659
+01:41:59,984 --> 01:42:01,584
+Yok havuzun sizinle bir ilgisi yok.
+
+660
+01:42:01,684 --> 01:42:02,344
+Sistem aynı.
+
+661
+01:42:03,004 --> 01:42:04,624
+Geçen seferkiyle aynı girildi.
+
+662
+01:42:04,624 --> 01:42:05,284
+Aynı aynı.
+
+663
+01:42:05,284 --> 01:42:06,444
+Sadece şu demek.
+
+664
+01:42:07,423 --> 01:42:09,404
+Her öğrenciye farklı soru gelecek.
+
+665
+01:42:09,544 --> 01:42:10,524
+Havuzda sorular var.
+
+666
+01:42:11,004 --> 01:42:12,004
+Yani aynı sorular gelmeyecek.
+
+667
+01:42:12,004 --> 01:42:19,044
+Orada soru soru hani sınavın üstüne tıklandığında soru soru gözüküyor da hani böyle soru soru gelmeyecek önümüze.
+
+668
+01:42:19,184 --> 01:42:20,324
+Geri dönebileceğiz yani.
+
+669
+01:42:20,644 --> 01:42:21,944
+Tabii tabii geri döneceksiniz.
+
+670
+01:42:22,384 --> 01:42:24,704
+Geri döneceksiniz.
+
+671
+01:42:25,364 --> 01:42:26,504
+20 tane soru olacak.
+
+672
+01:42:28,884 --> 01:42:29,724
+Bir deney.
+
+673
+01:42:29,724 --> 01:42:31,344
+Dört yanlışlık bir doğruyu götürecek.
+
+674
+01:42:31,404 --> 01:42:34,344
+Orada zaten yazar büyük ihtimal şeydi sınavda uyarı kısmında.
+
+675
+01:42:35,744 --> 01:42:37,024
+Sorular zor [öğrenci].
+
+676
+01:42:37,024 --> 01:42:59,024
+Dört yanlışlık bir doğruyu.
+
+677
+01:42:40,979 --> 01:42:44,519
+Evet, başka var mı? Yani sistemde bir değişiklik yok.
+
+678
+01:42:46,379 --> 01:42:47,599
+Tamam hocam, teşekkür ederim.
+
+679
+01:42:47,619 --> 01:42:59,359
+Tamam, yani onu dert etmeyin. Arkadaşlar, zaten sorular zor diye böyle çok şey yapıyormuşsunuz. Siz değil de, tabii siz yapmazsınız, benim öğrencilerim yapmaz. Başka öğrencilerdir onlar.
+
+680
+01:43:02,099 --> 01:43:09,359
+Yakınıyormuşsunuz. Yani şimdi de öyle, bakın. [kişisel bilgi]
+
+681
+01:43:09,359 --> 01:43:17,519
+Sınav var diye derse geldim, sizler mağdur olmayın diye. Şunu söyleyeceğim, burada mağdur edebiyatı yapayım diye değil.
+
+682
+01:43:18,319 --> 01:43:20,839
+Türkçe anlamayan arkadaşlar da kusuruma bakmasınlar.
+
+683
+01:43:22,979 --> 01:43:29,199
+Şey, ne diyordum? Sınavda olabilecek, sorulabilecek, ben burada her şeyi göstermeye çalışıyorum.
+
+684
+01:43:29,359 --> 01:43:35,859
+Onu da bırakın, zaten ders notlarınız var. Onu da bırakın, kaç tane çözülmüş sorular yükledim.
+
+685
+01:43:35,859 --> 01:43:39,859
+Yani bunlara bakan, bunları çözülmüş sorular yükledim.
+
+686
+01:43:39,859 --> 01:43:42,799
+Yani sınavdan kötü alması mümkün değil, bence.
+
+687
+01:43:44,019 --> 01:43:45,519
+Bilmiyorum, siz ne diyorsunuz.
+
+688
+01:43:46,019 --> 01:43:47,339
+Yani sınav soruları zor değil.
+
+689
+01:43:48,559 --> 01:43:52,779
+Ama bazı şeyleri bilmiyorsanız zor gelebilir tabii.
+
+690
+01:43:53,639 --> 01:43:55,739
+Ona da yapabilecek bir şey yok.
+
+691
+01:43:56,859 --> 01:43:58,299
+Tamam mı? Sınav soruları kolay.
+
+692
+01:43:58,299 --> 01:43:59,879
+Hepsini biliyorsunuz arkadaşlar.
+
+693
+01:44:00,619 --> 01:44:02,799
+Hatta şu kadarını söyleyeyim.
+
+694
+01:44:03,219 --> 01:44:04,199
+Yani biraz şey oldu ama.
+
+695
+01:44:04,979 --> 01:44:07,039
+Şimdiye kadar hiçbir derse girmemiş,
+
+696
+01:44:07,479 --> 01:44:09,919
+bugünkü derse katılmış olan birisi bile
+
+697
+01:44:09,919 --> 01:44:13,839
+bu sınavda çok yüksek bir notadır bence yani.
+
+698
+01:44:14,759 --> 01:44:16,619
+Çünkü hepsini özetlediklerine kaldı yani.
+
+699
+01:44:17,479 --> 01:44:18,000
+Kaldı mı bir şey?
+
+700
+01:44:19,459 --> 01:44:21,979
+İlk sınav kolaydı tabii. İlk sınav zor muydu bana?
+
+701
+01:44:23,079 --> 01:44:26,059
+Hocam 5-6 sorusu çok zordu da onun dışında kolaydı.
+
+702
+01:44:26,059 --> 01:44:26,979
+Hangisi zordu?
+
+703
+01:44:26,979 --> 01:44:27,739
+Bir tanesini söyle.
+
+704
+01:44:28,819 --> 01:44:29,979
+Bir saniye.
+
+705
+01:44:30,500 --> 01:44:31,479
+Şurada bakayım.
+
+706
+01:44:32,819 --> 01:44:36,179
+Bir ay oldu da hocam o yüzden talolara hatırlayamıyorum.
+
+707
+01:44:36,199 --> 01:44:38,159
+Yok yok tamam mesela aklına geliyordur.
+
+708
+01:44:38,239 --> 01:44:41,059
+Bir tanesini mesela zor olan bir tanesini de göz arasını.
+
+709
+01:44:42,419 --> 01:44:44,059
+Hocam gelmiyor kusura bakmayın.
+
+710
+01:44:44,059 --> 01:44:44,859
+Yok yok.
+
+711
+01:44:45,159 --> 01:44:46,079
+Şunu zordu.
+
+712
+01:44:47,519 --> 01:44:49,559
+Mesela 4x4 bir matris vermişti.
+
+713
+01:44:49,639 --> 01:44:51,399
+Bununla alakalı sorular vardı aşağıda.
+
+714
+01:44:51,779 --> 01:44:52,379
+Diyordu ki şey.
+
+715
+01:44:52,979 --> 01:44:54,279
+İşte bunun tersi vardır.
+
+716
+01:44:54,279 --> 01:44:56,919
+İşte ne derler.
+
+717
+01:44:56,919 --> 01:45:01,779
+İşte indirgenmiş eşelon fondaki şeyi birim maksı eşittir.
+
+718
+01:45:01,839 --> 01:45:02,559
+Onlar mı zorluyor?
+
+719
+01:45:03,759 --> 01:45:04,399
+Evet.
+
+720
+01:45:05,299 --> 01:45:05,899
+Biri oydu.
+
+721
+01:45:06,739 --> 01:45:09,179
+Bir tane soru vardı.
+
+722
+01:45:09,839 --> 01:45:11,679
+Hocam bir yerde ben karıştırdım bir şeyi.
+
+723
+01:45:12,319 --> 01:45:15,579
+Sonra iki sayfa bir daha temizlemek için uğraştım onu.
+
+724
+01:45:15,879 --> 01:45:17,119
+Bak bunu şunun için söylüyorum.
+
+725
+01:45:17,119 --> 01:45:19,759
+ben o sınavdan önce size dedim ki
+
+726
+01:45:19,759 --> 01:45:22,819
+bu sorular böyle sorulabilir.
+
+727
+01:45:22,899 --> 01:45:24,799
+Hatta o 4x4 bir soru benim sorum.
+
+728
+01:45:24,859 --> 01:45:25,599
+Onu ben hazırladım.
+
+729
+01:45:25,719 --> 01:45:26,279
+Onu söyleyeyim.
+
+730
+01:45:26,719 --> 01:45:29,539
+Ve de onu sınavdan bir hafta önce dedim ki
+
+731
+01:45:29,539 --> 01:45:30,899
+bakın böyle sorarlar.
+
+732
+01:45:30,979 --> 01:45:32,259
+Siz boşu boşuna uğraşmayın.
+
+733
+01:45:32,439 --> 01:45:34,199
+Sadece determinantına bakacaksınız dedim.
+
+734
+01:45:34,899 --> 01:45:36,759
+Tabii siz şey yapmadığınız için.
+
+735
+01:45:36,759 --> 01:45:39,399
+Hocam ben dersleri şeyden direkt dinlemiyorum.
+
+736
+01:45:39,399 --> 01:45:40,500
+Sizin şeylerden.
+
+737
+01:45:40,939 --> 01:45:42,319
+Genellikle arkadan geliyorum.
+
+738
+01:45:42,539 --> 01:45:44,119
+Ben şu anlamda söylüyorum.
+
+739
+01:45:44,479 --> 01:45:46,679
+Artık ben ilk sınavda da öyle.
+
+740
+01:45:46,759 --> 01:45:48,059
+İkinci sınavda da öyle arkadaşlar.
+
+741
+01:45:48,399 --> 01:45:48,539
+Yani
+
+742
+01:45:48,539 --> 01:45:51,479
+işi olarak söylemiyorum.
+
+743
+01:45:51,599 --> 01:45:52,399
+Bunlar benim kadar
+
+744
+01:45:52,399 --> 01:45:53,399
+elbette.
+
+745
+01:45:53,399 --> 01:45:54,919
+Elbette bütün hocalar gayret ediyor ama
+
+746
+01:45:54,919 --> 01:45:57,159
+ben bir tık daha fazla gayret ediyorum.
+
+747
+01:45:57,379 --> 01:45:58,759
+Sizler daha başarılı olun diye.
+
+748
+01:45:59,459 --> 01:46:01,399
+Siz de biraz gayret ederseniz olur yani.
+
+749
+01:46:01,519 --> 01:46:02,139
+Sorular zor değil.
+
+750
+01:46:02,379 --> 01:46:02,679
+Tamam mı?
+
+751
+01:46:03,459 --> 01:46:05,099
+Mesela biraz önce de bir şey yaptım.
+
+752
+01:46:05,399 --> 01:46:07,119
+Bak ne anlattım.
+
+753
+01:46:07,299 --> 01:46:08,179
+Bakın ne anlattım.
+
+754
+01:46:08,259 --> 01:46:08,519
+Orada
+
+755
+01:46:08,519 --> 01:46:09,299
+dedim ki
+
+756
+01:46:09,299 --> 01:46:11,279
+aynı düzende olabilmesi için
+
+757
+01:46:11,279 --> 01:46:12,219
+3 tane vektörün
+
+758
+01:46:12,219 --> 01:46:14,279
+bazı koşullar gerekli falan filan.
+
+759
+01:46:14,939 --> 01:46:16,059
+Şimdi ben bunları söylüyorum.
+
+760
+01:46:16,059 --> 01:46:17,359
+birçok özellik söylüyorum.
+
+761
+01:46:17,359 --> 01:46:19,239
+Eğer siz bunları anlamazsanız
+
+762
+01:46:19,239 --> 01:46:20,359
+ya da bunları öğrenmezseniz
+
+763
+01:46:20,979 --> 01:46:22,359
+sınavda karşınıza çıkar
+
+764
+01:46:22,359 --> 01:46:24,079
+ya bu nasıl olacak ki falan diye
+
+765
+01:46:24,079 --> 01:46:25,239
+böyle kara kara düşünürsünüz.
+
+766
+01:46:26,439 --> 01:46:27,000
+Öyle değil mi?
+
+767
+01:46:29,259 --> 01:46:30,559
+Öyle herhalde.
+
+768
+01:46:31,099 --> 01:46:31,319
+Peki.
+
+769
+01:46:31,419 --> 01:46:31,639
+Neyse.
+
+770
+01:46:32,467 --> 01:46:34,707
+Evet, aslında, mesela,
+
+771
+01:46:34,707 --> 01:46:37,108
+for the previous midterm exam,
+
+772
+01:46:37,108 --> 01:46:40,547
+I solved all of your questions
+
+773
+01:46:40,547 --> 01:46:42,707
+and all of I can do.
+
+774
+01:46:42,707 --> 01:46:47,747
+But I don't know why I got a bad mark.
+
+775
+01:46:47,747 --> 01:46:50,867
+I think because of the question in the exam.
+
+776
+01:46:50,867 --> 01:46:55,507
+The question in the exam is so much different from yours.
+
+777
+01:46:55,507 --> 01:46:57,347
+So much different.
+
+778
+01:46:57,347 --> 01:47:01,667
+OK, if you say like this, it's true.
+
+779
+01:47:01,667 --> 01:47:05,268
+I think, but it is very, very similar to the exam.
+
+780
+01:47:05,268 --> 01:47:07,028
+All of the...
+
+781
+01:47:07,028 --> 01:47:09,347
+The concept was same, wasn't it?
+
+782
+01:47:09,347 --> 01:47:14,787
+We have also a sample exam before the midterm exam one.
+
+783
+01:47:14,787 --> 01:47:17,268
+And this is also very similar to the exam, I think.
+
+784
+01:47:18,707 --> 01:47:24,387
+But I don't know why you didn't get a good score.
+
+785
+01:47:24,387 --> 01:47:28,707
+Maybe the first exam must be...
+
+786
+01:47:28,707 --> 01:47:30,467
+It is different for you.
+
+787
+01:47:30,467 --> 01:47:32,307
+But in the second one,
+
+788
+01:47:32,307 --> 01:47:39,587
+I know that you will get good marks.
+
+789
+01:47:39,587 --> 01:47:40,387
+OK?
+
+790
+01:47:40,387 --> 01:47:43,667
+Thank you.
+
+791
+01:47:43,667 --> 01:47:46,707
+I think that the answer is a bit different from the exam.
+
+792
+01:47:46,707 --> 01:47:48,307
+But I think that the answer is a bit different from the exam.
+
+793
+01:47:48,307 --> 01:47:50,867
+I think that the answer is a bit different from the exam.
+
+794
+01:47:50,867 --> 01:47:58,707
+But I think that the answer is a bit different from the exam.
+
+795
+01:47:58,707 --> 01:48:00,707
+So, I think that the answer is a bit different from the exam.
+
+796
+01:48:00,707 --> 01:48:05,188
+I think that the answer is a bit different from the exam.
+
+797
+01:48:05,188 --> 01:48:07,188
+Yok, hiç bakamadım.
+
+798
+01:48:07,188 --> 01:48:35,188
+Yok, yok.
+
+799
+01:48:35,188 --> 01:48:38,188
+Bir tanesi de skaler çarpımla alakalı.
+
+800
+01:48:38,188 --> 01:48:42,188
+Bunu bilmiyorsanız zaten hepsi zor gelir vektörlerle alakalı.
+
+801
+01:48:42,188 --> 01:48:43,188
+Tamam.
+
+802
+01:48:43,188 --> 01:48:45,188
+Yani o yüzden bazı noktaları bilmeniz lazım.
+
+803
+01:48:45,188 --> 01:48:47,188
+Bu ezberi olacak bir şey değil.
+
+804
+01:48:47,188 --> 01:48:48,188
+Öğrenmeniz lazım.
+
+805
+01:48:48,188 --> 01:48:50,188
+Yani test sınavının öyle bir dezavantajı var.
+
+806
+01:48:50,188 --> 01:48:53,188
+Yani bilmeden yapamazsınız arkadaşlar.
+
+807
+01:48:53,188 --> 01:48:54,188
+Bilmeniz gerekiyor.
+
+808
+01:48:54,188 --> 01:48:56,188
+Bir şey daha sorabilir miyim acaba?
+
+809
+01:48:56,188 --> 01:48:58,188
+Konuların herhangi bir yer...
+
+810
+01:48:58,188 --> 01:49:01,188
+Sınav konularını paylaştınız mı ders duvarında?
+
+811
+01:49:01,188 --> 01:49:04,188
+Evet, ders duvarında her şey var.
+
+812
+01:49:04,188 --> 01:49:05,188
+Tamam.
+
+813
+01:49:05,188 --> 01:49:07,188
+Yok, ben bakmamıştım da...
+
+814
+01:49:07,188 --> 01:49:11,188
+İşte bakmazsınız olmaz arkadaşlar.
+
+815
+01:49:11,188 --> 01:49:12,188
+Yani hani...
+
+816
+01:49:12,188 --> 01:49:13,188
+Evet hocam, haklısınız.
+
+817
+01:49:13,188 --> 01:49:14,188
+Yok, ben şey değil...
+
+818
+01:49:14,188 --> 01:49:15,188
+Ne derler?
+
+819
+01:49:15,188 --> 01:49:17,188
+Ben sizin için üzülüyorum.
+
+820
+01:49:17,188 --> 01:49:18,188
+Yoksa problem değil.
+
+821
+01:49:18,188 --> 01:49:20,188
+Ben sonuçta yapmam gerekeni yapıyorum.
+
+822
+01:49:20,188 --> 01:49:24,188
+Ama orada mesela bugün yaptığım bir review konusu yine diyorum.
+
+823
+01:49:24,188 --> 01:49:27,188
+Arkadaşlar hiçbir şey bilmiyorsanız o review'a bakarak bile...
+
+824
+01:49:27,188 --> 01:49:29,188
+Yani sınavdan...
+
+825
+01:49:29,188 --> 01:49:32,188
+Abartmayayım ama yani 80 üstünden not almanız gerekir yani bana göre.
+
+826
+01:49:32,188 --> 01:49:33,188
+Bilmiyorum yani.
+
+827
+01:49:33,188 --> 01:49:34,188
+Bende mi problem var?
+
+828
+01:49:35,188 --> 01:49:37,188
+Yani ben anlatamıyorum herhalde.
+
+829
+01:49:37,188 --> 01:49:39,188
+Yani bilmiyorum yani.
+
+830
+01:49:39,188 --> 01:49:41,188
+Yok hocam estağfurullah.
+
+831
+01:49:41,188 --> 01:49:43,188
+[öğrenci] burada mı?
+
+832
+01:49:43,188 --> 01:49:45,188
+[öğrenci] sen Türkçe anlıyor musun konuştuklarıma?
+
+833
+01:49:45,188 --> 01:49:46,188
+[öğrenci] gitti mi?
+
+834
+01:49:46,188 --> 01:49:47,188
+[öğrenci] 100 aldı mesela.
+
+835
+01:49:49,188 --> 01:49:51,188
+[öğrenci] herhalde Türkçe bilmiyor ya da gitti.
+
+836
+01:49:51,188 --> 01:49:52,188
+Ha burada.
+
+837
+01:49:52,188 --> 01:49:53,188
+[öğrenci] Türkçe biliyor musun sen?
+
+838
+01:49:54,188 --> 01:49:58,188
+Bir arkadaşlara mikrofonum varsa nasıl 100 aldığını söyler misin?
+
+839
+01:49:58,188 --> 01:50:00,188
+Hocam 100 almak değil konu.
+
+840
+01:50:00,188 --> 01:50:01,188
+Bende 80 aldım.
+
+841
+01:50:01,188 --> 01:50:02,188
+Hayır hayır.
+
+842
+01:50:02,188 --> 01:50:03,188
+Şuna zor değildi.
+
+843
+01:50:03,188 --> 01:50:05,188
+5-6 sorusu sadece zordu.
+
+844
+01:50:05,188 --> 01:50:07,188
+Şunun için soruyorum arkadaşlar.
+
+845
+01:50:07,188 --> 01:50:09,188
+Şimdi zor diyenleri dinledim ya.
+
+846
+01:50:09,188 --> 01:50:12,188
+Bir de bakalım 100 alan nasıl gelmiş sorular.
+
+847
+01:50:12,188 --> 01:50:15,188
+Onu sormak için yoksa sizi kıyaslamak için değil.
+
+848
+01:50:15,188 --> 01:50:17,188
+Yanlış anlamadım.
+
+849
+01:50:17,188 --> 01:50:19,188
+İngilizce konuşabilir miyim?
+
+850
+01:50:19,188 --> 01:50:20,188
+Tabii tabii İngilizce konuş.
+
+851
+01:50:20,188 --> 01:50:21,188
+İngilizce konuşabilir miyim?
+
+852
+01:50:21,188 --> 01:50:24,188
+Um, when I sat for the exam it was, it was good.
+
+853
+01:50:24,188 --> 01:50:25,188
+It was not...
+
+854
+01:50:25,844 --> 01:50:28,583
+Bir average studentu bir şey var.
+
+855
+01:50:28,944 --> 01:50:30,203
+Ve ben de tamamen başladık.
+
+856
+01:50:30,283 --> 01:50:32,364
+Bir sonraki bir soru var.
+
+857
+01:50:32,543 --> 01:51:23,024
+Bir sonraki soru var.
+
+858
+01:51:23,024 --> 01:51:28,364
+And other sources to study to the exam.
+
+859
+01:51:28,904 --> 01:51:34,904
+Or you only study with our lecture notes and sample exam equations.
+
+860
+01:51:35,783 --> 01:51:38,764
+Only the examples I get from class.
+
+861
+01:51:38,823 --> 01:51:39,684
+It's just the method.
+
+862
+01:51:39,864 --> 01:51:41,144
+The method is a little different.
+
+863
+01:51:41,543 --> 01:51:43,444
+Because what I see is that a lot of Turkish people,
+
+864
+01:51:43,944 --> 01:51:46,323
+they just, whenever they need to solve a question,
+
+865
+01:51:46,423 --> 01:51:48,304
+they look back at the lecture notes.
+
+866
+01:51:48,604 --> 01:51:49,583
+Well, they shouldn't do that.
+
+867
+01:51:49,583 --> 01:51:52,264
+They should actually, first of all, look at the lecture notes.
+
+868
+01:51:52,264 --> 01:51:52,663
+Yes.
+
+869
+01:51:52,663 --> 01:51:54,743
+Have all that they need from the lecture notes.
+
+870
+01:51:54,743 --> 01:51:55,524
+Written down.
+
+871
+01:51:55,524 --> 01:51:57,423
+Like on a piece of paper.
+
+872
+01:51:57,423 --> 01:52:00,323
+So it's like a summary of the whole lesson down on a piece of paper.
+
+873
+01:52:00,323 --> 01:52:01,123
+Yes.
+
+874
+01:52:01,123 --> 01:52:03,663
+Because writing also helps people to memorize things.
+
+875
+01:52:03,663 --> 01:52:05,123
+And then start doing the exercise.
+
+876
+01:52:05,123 --> 01:52:07,503
+So the first step is summarizing everything.
+
+877
+01:52:07,503 --> 01:52:08,364
+and then working.
+
+878
+01:52:09,543 --> 01:52:09,864
+Okay.
+
+879
+01:52:10,444 --> 01:52:11,703
+Thank you, [öğrenci].
+
+880
+01:52:12,064 --> 01:52:12,444
+Thank you.
+
+881
+01:52:12,444 --> 01:52:12,764
+You're welcome.
+
+882
+01:52:12,764 --> 01:52:18,163
+I again wish you a good exam.
+
+883
+01:52:19,604 --> 01:52:27,944
+And hope to see all of you next week with good scores and smile in your faces.
+
+884
+01:52:30,764 --> 01:52:32,423
+Arkadaşlar, dikkat edin kendinize.
+
+885
+01:52:34,364 --> 01:52:36,384
+İnşallah sınavınız da güzel geçer.
+
+886
+01:52:36,804 --> 01:52:37,944
+Siz de hocam, teşekkürler.
+
+887
+01:52:37,944 --> 01:52:38,203
+Evet.
+
+888
+01:52:38,423 --> 01:52:38,984
+Şey yapmayın.
+
+889
+01:52:39,104 --> 01:52:40,283
+Yani sınav soruları zor değil.
+
+890
+01:52:40,444 --> 01:52:42,444
+Sadece biraz böyle şey yapmanız lazım.
+
+891
+01:52:42,764 --> 01:52:45,344
+Hani soruyu anlayın, sonra çözmeye çalışın.
+
+892
+01:52:45,404 --> 01:52:46,904
+Hemen direkt böyle çözmeye çalışmayın.
+
+893
+01:52:47,064 --> 01:52:47,384
+Olur mu?
+
+894
+01:52:48,344 --> 01:52:49,083
+Yani zor değil.
+
+895
+01:52:49,224 --> 01:52:49,923
+Hiçbiri zor değil.
+
+896
+01:52:50,224 --> 01:52:50,604
+Emin olun.
+
+897
+01:52:51,543 --> 01:52:53,944
+Ben de hepinizin de çok iyi not alacağından eminim.
+
+898
+01:52:55,623 --> 01:52:56,963
+Haftaya inşallah görüşürüz.
+
+899
+01:52:57,064 --> 01:52:57,963
+Dikkat edin kendinize.
+
+900
+01:52:58,163 --> 01:52:58,944
+Sağlıcakla kalın.
+
+901
+01:52:59,144 --> 01:52:59,864
+Teşekkürler hocam.
+
+902
+01:52:59,904 --> 01:53:00,243
+İyi günler.
