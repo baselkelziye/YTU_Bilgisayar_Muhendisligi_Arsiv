@@ -19,6 +19,7 @@
 | 26 | Güz | Yusuf Zeren | [sube_26/](sube_26/) |
 | 28 | Güz | Pınar Albayrak | [sube_28/](sube_28/) |
 | 29 | Güz | Ayşen (soyadı bulunamadı) | [sube_29/](sube_29/) |
+| 31 | Güz | Bulunamadı | [sube_31/](sube_31/) |
 | 36 | Güz | Bulunamadı | [sube_36/](sube_36/) |
 | 53 | Güz | Elif Demir | [sube_53/](sube_53/) |
 | 55 | Güz | Sebahat Ebru Daş | [sube_55/](sube_55/) |
