@@ -11,3 +11,4 @@
 | 19 | Güz | Arzuhan Kocabaş | [sube_19/](sube_19/) |
 | 20 | Güz | Cemile İnan | [sube_20/](sube_20/) |
 | 22 | Güz | Bulunamadı | [sube_22/](sube_22/) |
+| 23 | Güz | Arzuhan Kocabaş | [sube_23/](sube_23/) |
