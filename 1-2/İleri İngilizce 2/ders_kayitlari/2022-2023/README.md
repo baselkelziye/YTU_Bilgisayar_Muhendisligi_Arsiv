@@ -22,3 +22,4 @@
 | 35 | Bahar | Zeynep Attar | [sube_35/](sube_35/) |
 | 38 | Bahar | Bulunamadı | [sube_38/](sube_38/) |
 | 39 | Bahar | Ezgi Aydemir Altaş | [sube_39/](sube_39/) |
+| 41 | Bahar | Arzu Ekoç Özçelik | [sube_41/](sube_41/) |
