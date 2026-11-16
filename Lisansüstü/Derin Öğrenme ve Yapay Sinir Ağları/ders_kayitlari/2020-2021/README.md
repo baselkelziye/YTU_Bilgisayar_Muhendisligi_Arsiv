@@ -4,6 +4,7 @@
 
 ### 📋 Genel Bilgiler
 * **Ders:** Derin Öğrenme ve Yapay Sinir Ağları (BLM5135)
+* **Hoca:** Bulunamadı
 * **Dönem:** Güz
 * **Akademik Yıl:** 2020-2021
 * **Şube:** BLM5135 - 1

@@ -2,6 +2,8 @@
 
 Bu klasör, 2022-2023 eğitim öğretim yılı Bahar dönemindeki İLERİ İNGİLİZCE 2 (MDB1032 - 24. şube) ders kayıtlarının altyazılarını içerir. Aynı yılın diğer şube ya da dönem kayıtları bir üst klasördedir (`../`).
 
+* **Dersi Veren Akademisyen:** Bulunamadı
+
 Kayıt arşivindeki ilk ders kaydı 1 Mart 2023 Çarşamba gününe aittir. Dosya adlarındaki `ders_x.srt` ifadesinde `x`, ders haftasını değil, ilgili kaydın kayıt arşivindeki ders sıra numarasını gösterir. Tarihler YTÜ Video Ambarı kayıt tablosundan alınmıştır. Altyazılardaki öğrenci adları `[öğrenci]` ile maskelenmiştir.
 
 ## Hafta Bilgisi

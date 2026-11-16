@@ -2,6 +2,8 @@
 
 Bu klasör, 2021-2022 eğitim öğretim yılı Güz dönemindeki Veri İletişimi ve Bilgisayar Ağları (BLM3051 - 3. şube) ders kayıtlarının altyazılarını içerir. Aynı yılın diğer şube ya da dönem kayıtları bir üst klasördedir (`../`).
 
+* **Dersi Veren Akademisyen:** Ziya Cihan Taysi ve Furkan Çakmak
+
 * **Dersi Veren Akademisyenler:** Dr. Ziya Cihan Tayşi (vize öncesi, `ders_1` - `ders_12`), Dr. Furkan Çakmak (vize sonrası, `ders_14` - `ders_19`)
 
 Dersler 11 Ekim 2021 Pazartesi günü başlamıştır. Ders haftada bir gün (Pazartesi) online olarak yapılmıştır. Dosya adlarındaki `ders_x.srt` ifadesinde `x`, ilgili kaydın kayıt arşivindeki ders sıra numarasını gösterir.
