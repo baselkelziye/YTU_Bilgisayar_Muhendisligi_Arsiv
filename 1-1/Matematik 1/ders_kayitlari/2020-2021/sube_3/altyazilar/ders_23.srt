@@ -1,0 +1,5751 @@
+1
+00:00:11,316 --> 00:00:25,975
+Günaydın arkadaşlar. Saati unuttum. Öyle bir 5 dakika geç girdim. Arkadaşlarınız giriş yaparken ben tahtayı temizleyerek başlayayım.
+
+2
+00:00:35,956 --> 00:00:36,956
+Ne yapacaksınız acaba?
+
+3
+00:00:37,676 --> 00:00:38,636
+Soru çözeceğim.
+
+4
+00:00:40,636 --> 00:00:42,615
+Öyle konuşmuştuk ya.
+
+5
+00:00:42,996 --> 00:00:43,636
+Evet hocam.
+
+6
+00:00:44,316 --> 00:00:50,356
+Bugün, bu hafta sınavlarınız var diye soru çözecektim. Konu anlatımı yapmayacağım.
+
+7
+00:00:52,196 --> 00:00:56,076
+O yüzden isteyen girer, isteyen girmeyebilir.
+
+8
+00:00:57,656 --> 00:00:58,856
+Teşekkürler hocam.
+
+9
+00:00:59,376 --> 00:01:00,276
+Size bırakıyorum.
+
+10
+00:01:06,644 --> 00:01:12,764
+Bakalım, 41 kişiyiz. Ben size dosyayı yükleyeyim. Yeni dosyayı.
+
+11
+00:02:03,219 --> 00:02:22,960
+2 tane dosya yükledim. Buradaki soruları çözeceğiz. Şu ikinci dosyada 2011 yılına ait sorular var ama güzel sorular bunlar. Hatta bu senede sorulabilecek tarzda sorular onlar çok.
+
+12
+00:02:22,960 --> 00:02:34,159
+A ve B grubu olarak sınavı yapmışlar. Ben bir grubu çözeceğim, öbür grubu da siz kendiniz çözersiniz. Sizin için de alıştırma olur bu.
+
+13
+00:02:36,560 --> 00:02:51,240
+Hazırsak ben başlayayım. Bu arada benden istediğiniz bir şey var mı? Hani şu konuya ağırlık versek gibi düşünceleriniz, istekleriniz varsa bunları da iletebilirsiniz bana.
+
+14
+00:02:52,960 --> 00:03:20,099
+Anladım hocam.
+
+15
+00:03:26,419 --> 00:03:30,299
+Dersle ilgili dosyaları AVSİS'e de yükledim.
+
+16
+00:03:31,379 --> 00:03:32,659
+Şeyi kontrol ettim.
+
+17
+00:03:33,839 --> 00:03:35,759
+Nedir bu asimtotlar?
+
+18
+00:03:36,279 --> 00:03:42,019
+Sadece o dosyada eksik olan şey EİK asimtotu nasıl bulacağımız.
+
+19
+00:03:42,019 --> 00:03:46,399
+Ben derste anlatmıştım ama yazılı olarak o AVSİS'te yok.
+
+20
+00:03:47,099 --> 00:03:51,560
+O yüzden bir hatırlatmayla başladım bu notlara.
+
+21
+00:03:51,560 --> 00:03:57,219
+Yani bu hatırlatmada EİK asimtotun nasıl bulunacağıyla ilgili.
+
+22
+00:03:59,060 --> 00:04:00,120
+Şöyle diyelim.
+
+23
+00:04:01,680 --> 00:04:04,399
+Bir efeks fonksiyonumuz var.
+
+24
+00:04:04,399 --> 00:04:25,399
+EİK asimtotun.
+
+25
+00:04:10,259 --> 00:04:28,180
+y diyelim, y eşit ax artı b. Burada a sıfırdan farklı olmalı. Eğer ax artı b doğrusu fx fonksiyonunun e ilk asimptotu ise o zaman ne olmalıdır?
+
+26
+00:04:28,180 --> 00:04:40,719
+limit x sonsuza giderken fx bölü y limiti sıfıra eşit olmalı.
+
+27
+00:04:43,060 --> 00:04:48,279
+Bu limitin, pardon, pardon, pardon, yanlış yazdım.
+
+28
+00:04:53,684 --> 00:05:18,064
+fx eksi y yani ax eksi b bu limit sıfıra eşit olmalı veya eksi sonsuza giderken x bu limit sıfıra eşit olmalı ya da dedik ki iki durumda söz konusu olabilir.
+
+29
+00:05:18,064 --> 00:05:26,124
+Yani şunlardan bir tanesinin olması e-k asintot olması için yeterli. İki durumda aynı anda gerçekleşebilir.
+
+30
+00:05:26,684 --> 00:05:35,884
+Eğer şu durum varsa ax artı b'ye e-k asintot diyoruz ya da bu e-k asintot ise bunların limiti sıfıra eşittir diyoruz.
+
+31
+00:05:35,884 --> 00:05:39,004
+Burada a ve b'yi nasıl buluyoruz?
+
+32
+00:05:39,004 --> 00:05:51,064
+Eğer verilen fonksiyon iki polinomun oranı şeklinde bir rasyonel ifade değilse o zaman a sayısını şöyle buluyoruz.
+
+33
+00:05:51,984 --> 00:05:53,784
+Onlar için de bu geçerli.
+
+34
+00:05:53,864 --> 00:06:00,403
+Hani rasyonel fonksiyonlar için de geçerli ama rasyonel fonksiyonlarda biz kolayına kaçıyoruz.
+
+35
+00:06:00,403 --> 00:06:09,444
+Ne yapıyoruz? Eğer rasyonel bir ifade ise ve payın derecesi paydanın derecesinden bir derece büyükse e-k asintot vardır diyorduk.
+
+36
+00:06:09,944 --> 00:06:15,124
+Ve o e-k asintotu da bildiğimiz polinom bölmesi yaparak bulabiliyorduk.
+
+37
+00:06:16,104 --> 00:06:26,804
+Diğer türlü a sayısını fx bölü y limiti olarak hesaplıyoruz.
+
+38
+00:06:26,804 --> 00:06:33,204
+Bu limit a'yı veriyor. Bu limit ne olmalı? Sıfırdan farklı olmalı.
+
+39
+00:06:33,964 --> 00:06:34,484
+Tamam mı?
+
+40
+00:06:36,544 --> 00:06:47,304
+Şimdi bu limit eğer sıfırdan farklıysa f fonksiyonunun e-k asintotu olabilir anlamına geliyor.
+
+41
+00:06:47,724 --> 00:06:51,403
+Vardır kesinlikle e-k asintotu vardır anlamına gelmiyor.
+
+42
+00:06:52,064 --> 00:06:53,544
+Olabilir anlamına geliyor.
+
+43
+00:06:53,544 --> 00:06:56,604
+Bunu yaptıktan sonra bir de şuna bakıyoruz.
+
+44
+00:06:56,804 --> 00:07:03,124
+Limit x sonsuza giderken
+
+45
+00:07:13,363 --> 00:07:18,783
+fx, eksi, şurada bulduğumuz a değeri için bundan ax'i çıkarıyoruz.
+
+46
+00:07:20,383 --> 00:07:24,103
+Şu limitin sonucunu da b olarak alıyoruz.
+
+47
+00:07:24,103 --> 00:07:39,783
+Eğer şurası, yani b olarak yazdığımız şu limit sonsuz veya eksi sonsuz çıkarsa o zaman f fonksiyonunun e2 asimptotu yoktur anlamına geliyor bu.
+
+48
+00:07:39,783 --> 00:07:42,943
+Burası bir sayı çıkarsa sıfırda olabilir.
+
+49
+00:07:43,663 --> 00:07:54,683
+Sıfır veya sıfırdan farklaya hangi bir sayı çıkarsa o zaman y eşit a x artı b bir eğik asimptotudur demek oluyor bu.
+
+50
+00:07:55,463 --> 00:07:58,103
+Bunları bir hatırlattım.
+
+51
+00:07:58,743 --> 00:08:00,683
+Ondan sonra bir de örnek yapalım.
+
+52
+00:08:21,331 --> 00:08:49,552
+Yineyi de daha önce bu galiba size ödev verdiğim, daha doğrusu alıştırma olarak verdiğim sorulardan birini benzettim ama galiba o soruydu. Şöyle diyelim, y eşit x çarpı e üzeri x bölüm x kare artı e üzeri x ya da benzeri bir sorudur. E ilisinin asimptotlarını bulunuz.
+
+53
+00:08:54,740 --> 00:09:02,740
+Bütün asimptotları inceleyeceğiz. Dik asimptotu, eğik asimptotu, yatay asimptotu bunların hangileri var onlara bakacağız.
+
+54
+00:09:02,740 --> 00:09:05,740
+Bir kere...
+
+55
+00:09:08,980 --> 00:09:25,139
+Burada paydayı sıfır yapan, rasyonel bir ifade bu. Paydayı sıfır yapan herhangi bir sayı, rel sayı olmadığı için ne diyeceğiz? Bunun dik asimptotu ya da dikey asimptotu yok.
+
+56
+00:09:32,467 --> 00:09:39,887
+Bu yukarıdaki fonksiyon da x çarpı e üzeri x olduğu için e üzeri x daima pozitif olan bir fonksiyon.
+
+57
+00:09:40,247 --> 00:09:44,367
+Yani tanımsız değil, x de öyle.
+
+58
+00:09:44,507 --> 00:09:48,867
+Dolayısıyla bu fonksiyonu tanımsız yapan bir x değeri yok.
+
+59
+00:09:48,867 --> 00:09:56,347
+Ama başka bir örnekte, yani bunun gibi bir örnekte, burada e üzeri x değil de ln x vardı.
+
+60
+00:09:56,347 --> 00:10:02,527
+ln x olduğu zaman bunu tanımsız yapan değerler oluyordu değil mi?
+
+61
+00:10:02,587 --> 00:10:10,247
+ln x fonksiyonunu tanımsız yapan, daha doğrusu sonsuz yapan değerler vardı ki ne oluyordu?
+
+62
+00:10:10,247 --> 00:10:18,627
+x'i sıfır aldığınızda paydayı sıfır yapmadığı halde sıfır ln x'den dolayı sonsuz oluyordu.
+
+63
+00:10:18,767 --> 00:10:23,947
+Dolayısıyla sıfır bir asimtot oluyordu o fonksiyon için.
+
+64
+00:10:23,947 --> 00:10:27,548
+onu derslerde yapmıştım, şimdi tam olarak hatırlamıyorum fonksiyonu.
+
+65
+00:10:28,307 --> 00:10:32,687
+nikey asimtotu yok, yatay asimtotu var mı? Ona bakalım.
+
+66
+00:10:32,687 --> 00:10:39,367
+Yatay asimtotta sesim normal geliyor değil mi sizin?
+
+67
+00:10:40,367 --> 00:10:40,907
+Tamam.
+
+68
+00:10:47,923 --> 00:10:50,524
+Yatay asimtot içinde şuna bakıyordum.
+
+69
+00:10:51,043 --> 00:10:57,783
+Limit x artı veya eksi sonsuza yaklaşırkenki limitine bakıyoruz.
+
+70
+00:10:58,744 --> 00:11:03,163
+Burada önce şöyle yapalım ayrı ayrı bakalım.
+
+71
+00:11:03,663 --> 00:11:10,423
+Çünkü ev üzeri x fonksiyonu x sonsuza giderken sonsuz olur limiti.
+
+72
+00:11:10,624 --> 00:11:13,323
+Eksi sonsuza giderken limiti sıfır olur.
+
+73
+00:11:13,483 --> 00:11:17,004
+O yüzden iki duruma da ayrı ayrı bakmak gerekiyor.
+
+74
+00:11:17,004 --> 00:11:22,543
+Bazen eksi ya da eksi artı sonsuza giderken fark etmiyor.
+
+75
+00:11:23,004 --> 00:11:26,943
+O zaman şuraya artı eksi sonsuz koyup o şekilde bakıyoruz.
+
+76
+00:11:28,983 --> 00:11:33,223
+x çarpı e üzeri x x kare artı e üzeri x.
+
+77
+00:11:35,163 --> 00:11:36,483
+Burada ne vardır?
+
+78
+00:11:36,703 --> 00:11:39,463
+Sonsuz bölü sonsuz belirsizliği var.
+
+79
+00:11:39,463 --> 00:11:45,764
+Bu belirsizliği böyle yazacağınız gibi kitapta şöyle vardı.
+
+80
+00:11:45,764 --> 00:11:47,403
+onu da kullanabilirsiniz.
+
+81
+00:11:47,764 --> 00:11:50,423
+Ne oldu?
+
+82
+00:11:55,764 --> 00:11:56,943
+bilgisayara bir şey olur mu?
+
+83
+00:12:00,659 --> 00:12:05,600
+Böyle olunca rapiter kuralı uygulayabiliyorduk. Ben bir dakikanızı rica edeceğim.
+
+84
+00:12:30,100 --> 00:12:38,100
+...
+
+85
+00:12:46,227 --> 00:12:53,267
+Döndüm. [kişisel bilgi]
+
+86
+00:12:54,847 --> 00:12:59,827
+Aynen öyle. Bana laf yetiştirme şimdi de.
+
+87
+00:12:59,827 --> 00:13:11,007
+Burada arka arkaya L'Hospital uygulamamız gerekecek. Ben bunları tek tek yapmayacağım.
+
+88
+00:13:11,007 --> 00:13:17,288
+Arka arkaya L'Hospital uyguladığımızda sonucu sonsuz çıkacak.
+
+89
+00:13:20,187 --> 00:13:27,867
+Burada sanki yatay asimptot yokmuş gibi gözüküyor ama eksi sonsuza da bakmamız gerekiyor.
+
+90
+00:13:28,687 --> 00:13:31,187
+Ki onda mevcut olacak.
+
+91
+00:13:31,367 --> 00:13:35,247
+Çünkü e üzeri x'in eksi sonsuzdaki limiti sıfıra eşit.
+
+92
+00:13:35,247 --> 00:13:41,788
+Dolayısıyla x e üzeri x'in e üzeri x.
+
+93
+00:13:41,788 --> 00:13:45,647
+Yine tabii ki sonsuz bölü sonsuz belirsizliğimiz var.
+
+94
+00:13:46,147 --> 00:13:48,067
+L'Hospital uyguluyoruz.
+
+95
+00:13:52,019 --> 00:14:21,939
+x kare artı 2x, f'
+
+96
+00:14:20,628 --> 00:14:25,208
+Bu da tabi payda da yine x olduğu için, 2x olduğu için
+
+97
+00:14:40,947 --> 00:14:42,947
+Bir saniye ben şey yapmışım.
+
+98
+00:14:54,995 --> 00:14:57,475
+şu x'i aşağı almışız sadece.
+
+99
+00:15:11,700 --> 00:15:17,440
+Şuradayken alsaydım daha güzel olacaktı aslında. Neyse, fark etmez.
+
+100
+00:15:30,580 --> 00:15:33,660
+Galiba bir kez daha L'Hospital uygulamamız gerekecek.
+
+101
+00:15:33,660 --> 00:15:36,660
+Bir kez daha L'Hospital uygularsak...
+
+102
+00:15:41,043 --> 00:15:50,644
+Buraya yazmayayım ben. Şuraya yazayım. Burası ne olacak? Limit x, eksi sonsuza giderken bir bölüm.
+
+103
+00:16:02,580 --> 00:16:04,060
+şu ifade olacak.
+
+104
+00:16:05,860 --> 00:16:06,480
+Evzeli
+
+105
+00:16:15,572 --> 00:16:42,672
+x kare artı 2x, f'
+
+106
+00:16:25,940 --> 00:16:29,060
+burada ne olacak? x sonsuza gidiyor. Sonsuz.
+
+107
+00:16:30,500 --> 00:16:32,040
+Şurası sıfır olur.
+
+108
+00:16:33,720 --> 00:16:34,880
+Şurası da
+
+109
+00:16:34,880 --> 00:16:37,580
+sonsuz olur. Değil mi?
+
+110
+00:16:44,788 --> 00:16:50,168
+sonsuz. Oradan böyle yapınca biraz karıştı gibi.
+
+111
+00:17:09,172 --> 00:17:12,491
+Şunu doğru 1 olarak yazmışız zaten.
+
+112
+00:17:20,051 --> 00:17:22,871
+aşağı oldu. Kafam karıştı birden.
+
+113
+00:17:26,708 --> 00:17:28,788
+şunu aslında e üzeri x.
+
+114
+00:17:32,180 --> 00:17:38,920
+2x'i 2x gibi alırsak, x'i sonsuz. Dolayısıyla şurası sonsuz olacak.
+
+115
+00:17:58,483 --> 00:18:22,403
+L'Hospital almadan şunu da silelim. Karıştı. X'i sonsuza giderken şunu x bölü x kare e üzeri x x artı 1 olarak yazdık. Sonsuz, şurası da sonsuz, sonsuz bölü sonsuz. L'Hospital aldık.
+
+116
+00:18:26,771 --> 00:18:46,951
+1 bölü, burası ne olacak? 2x, eksi, x kare, e üzeri eksi x. Onu da diğer kalmadı başa yazalım. Şimdi bakalım.
+
+117
+00:19:10,036 --> 00:19:12,655
+Şuranın niye sıfır olduğunu göremiyorum ben.
+
+118
+00:19:22,291 --> 00:19:28,111
+y üzeri x olarak yukarı çıksa 2x eksi x kare olacak değil mi?
+
+119
+00:19:34,900 --> 00:19:36,900
+bir kez daha L'Hospital alırsak
+
+120
+00:19:44,564 --> 00:19:46,183
+2x, 2x olur.
+
+121
+00:19:50,228 --> 00:19:51,508
+şurası sıfır.
+
+122
+00:20:22,324 --> 00:20:23,324
+çimiri ki oku.
+
+123
+00:20:29,364 --> 00:20:31,544
+Şu e üzeri eksi x sıfır olmaz.
+
+124
+00:20:31,663 --> 00:20:32,683
+Bu da eksi sonsuz.
+
+125
+00:20:32,784 --> 00:20:34,463
+Oradan kafam karıştı.
+
+126
+00:20:34,744 --> 00:20:35,244
+Tamamdır.
+
+127
+00:20:36,584 --> 00:20:39,163
+Zaten bu e üzeri eksi x.
+
+128
+00:20:39,483 --> 00:20:40,923
+Bu da eksi sonsuza gidiyor.
+
+129
+00:20:41,044 --> 00:20:42,463
+Dolayısıyla burası ne olacak?
+
+130
+00:20:42,983 --> 00:20:44,804
+E üzeri sonsuz olacağı için
+
+131
+00:20:44,804 --> 00:20:46,764
+şurası sonsuz olacak.
+
+132
+00:20:47,604 --> 00:20:49,764
+Sayı bölü sonsuzda ne olacak?
+
+133
+00:20:50,024 --> 00:20:50,663
+Sıfır olacak.
+
+134
+00:20:51,244 --> 00:20:52,483
+Kafam karıştı orada.
+
+135
+00:20:52,604 --> 00:20:53,824
+Sıfır olduğunu göremedim.
+
+136
+00:20:55,104 --> 00:20:56,824
+E üzeri eksi x olduğu için
+
+137
+00:20:56,824 --> 00:21:00,004
+ben onun limitine hep sıfır sıfır sıfır
+
+138
+00:21:00,004 --> 00:21:01,604
+diye şartlanmışım.
+
+139
+00:21:02,324 --> 00:21:02,744
+Değil.
+
+140
+00:21:03,384 --> 00:21:06,124
+Eksi eksi olunca artı olacağı için
+
+141
+00:21:06,124 --> 00:21:07,584
+onun limiti sıfır olacak.
+
+142
+00:21:07,784 --> 00:21:10,124
+Dolayısıyla burada ne görüyoruz?
+
+143
+00:21:10,203 --> 00:21:12,483
+y eşit sıfır yatay
+
+144
+00:21:12,483 --> 00:21:15,044
+asimtot olacak.
+
+145
+00:21:16,723 --> 00:21:18,344
+E ilk asimtotumuz var mı?
+
+146
+00:21:18,463 --> 00:21:19,244
+Ona da bakalım.
+
+147
+00:21:20,044 --> 00:21:21,384
+Hocam bir şey sorabilir miyim?
+
+148
+00:21:21,864 --> 00:21:22,384
+Sor.
+
+149
+00:21:22,384 --> 00:21:23,983
+O üst tarafı silmeden önce
+
+150
+00:21:23,983 --> 00:21:26,344
+orada nasıl sonsuz çıkıyor hocam?
+
+151
+00:21:26,344 --> 00:21:27,264
+ben onu anlamadım da
+
+152
+00:21:27,264 --> 00:21:29,223
+iki çıkacakmış gibi geliyor sanki bana.
+
+153
+00:21:30,703 --> 00:21:31,183
+Öyle mi?
+
+154
+00:21:31,324 --> 00:21:32,124
+Dur bir bakalım.
+
+155
+00:21:34,524 --> 00:21:35,903
+Devam etmemişiz zaten.
+
+156
+00:21:36,463 --> 00:21:38,064
+Arka arkaya alınca
+
+157
+00:21:38,064 --> 00:21:43,324
+şimdi birinci türevi aldığımızda
+
+158
+00:21:43,324 --> 00:21:45,764
+yani L'Hopital uygulamış olalım buna.
+
+159
+00:21:45,923 --> 00:21:46,264
+Tamam mı?
+
+160
+00:21:46,284 --> 00:21:48,183
+Bunun sonsuz bölü sonsuz olduğunu görüyoruz.
+
+161
+00:21:48,564 --> 00:21:49,044
+Ne olacak?
+
+162
+00:21:49,044 --> 00:21:50,384
+x'in türevi bir
+
+163
+00:21:50,384 --> 00:21:51,963
+e üzeri x artı
+
+164
+00:21:51,963 --> 00:21:55,144
+e üzeri x'in türevi kendisi
+
+165
+00:21:55,144 --> 00:21:56,703
+x çarpı e üzeri x oldu.
+
+166
+00:21:57,423 --> 00:21:58,324
+Burası da
+
+167
+00:21:58,324 --> 00:22:01,324
+2x artı e üzeri x oldu.
+
+168
+00:22:02,084 --> 00:22:02,724
+Yine bakın
+
+169
+00:22:02,724 --> 00:22:04,124
+sonsuz sonsuz.
+
+170
+00:22:04,284 --> 00:22:06,463
+Tekrar sonsuz bölü sonsuz olduğu için
+
+171
+00:22:06,463 --> 00:22:09,344
+bir kez daha L'Hopital kuralı uygularız.
+
+172
+00:22:09,344 --> 00:22:11,804
+Bir daha türevi aldığımızda
+
+173
+00:22:11,804 --> 00:22:13,764
+e üzeri x
+
+174
+00:22:13,764 --> 00:22:16,824
+aynı şekilde
+
+175
+00:22:16,824 --> 00:22:18,064
+e üzeri x
+
+176
+00:22:18,064 --> 00:22:19,943
+yani iki tane e üzeri x
+
+177
+00:22:19,943 --> 00:22:20,744
+artı
+
+178
+00:22:20,744 --> 00:22:22,983
+x çarpı e üzeri x olacak.
+
+179
+00:22:23,844 --> 00:22:24,663
+Burası da
+
+180
+00:22:24,663 --> 00:22:26,064
+2
+
+181
+00:22:26,064 --> 00:22:27,584
+artı
+
+182
+00:22:27,584 --> 00:22:29,144
+e üzeri x oldu.
+
+183
+00:22:29,144 --> 00:22:29,963
+Tamam hocam ben
+
+184
+00:22:29,963 --> 00:22:31,624
+x'i götürmüşüm yanlışlıkla.
+
+185
+00:22:32,244 --> 00:22:33,223
+x hiç kaybolmuyor
+
+186
+00:22:33,223 --> 00:22:33,903
+anladın hocam.
+
+187
+00:22:34,324 --> 00:22:34,604
+Tamam.
+
+188
+00:22:35,064 --> 00:22:36,344
+Böyle olunca zaten
+
+189
+00:22:36,344 --> 00:22:37,724
+sonsuz şekilde görülüyor.
+
+190
+00:22:41,619 --> 00:22:42,619
+e-zire
+
+191
+00:22:50,195 --> 00:22:52,775
+E üzeri x olduğu için bu x hep kalıyor.
+
+192
+00:22:54,715 --> 00:22:56,815
+Şimdi gelelim e2 asimtota.
+
+193
+00:22:59,415 --> 00:23:04,115
+a0'dan farklı çıkarsa e2 asimtot olabilir.
+
+194
+00:23:05,175 --> 00:23:06,955
+Limit. Bunun için neye bakıyoruz?
+
+195
+00:23:06,955 --> 00:23:12,596
+x sonsuza giderken y bölüm x oranının limitine bakıyoruz.
+
+196
+00:23:15,596 --> 00:23:18,815
+Şunu x'e bölersek x gidecek.
+
+197
+00:23:18,815 --> 00:23:20,735
+Burası e üzeri x kalacak.
+
+198
+00:23:20,895 --> 00:23:23,895
+Burası da x kare artı e üzeri x kalacak.
+
+199
+00:23:23,895 --> 00:23:48,975
+Burası da x kalacak.
+
+200
+00:23:28,276 --> 00:23:38,056
+Sonsuz bölü sonsuz olduğu için yine L'Hospital uygularsak e üzeri x bölü 2x artı e üzeri x.
+
+201
+00:23:38,476 --> 00:23:44,476
+Bir kez daha L'Hospital uyguladığımızda hatta bir değil iki kez uygulayacağız.
+
+202
+00:23:50,579 --> 00:23:53,960
+e üzeri x, 2 artı e üzeri x.
+
+203
+00:23:55,839 --> 00:23:57,460
+Bir daha uygularsak,
+
+204
+00:24:02,036 --> 00:24:04,016
+Bu da ne çıkacak? 1 çıkacak.
+
+205
+00:24:04,115 --> 00:24:07,016
+e üzeri x bölü, e üzeri x, 1 olacak.
+
+206
+00:24:07,476 --> 00:24:08,916
+Sıfırdan farklıdır.
+
+207
+00:24:09,895 --> 00:24:12,776
+Dolayısıyla bunun e k asimptotu olabilir.
+
+208
+00:24:13,296 --> 00:24:14,375
+a'yı 1 bulduk.
+
+209
+00:24:15,916 --> 00:24:17,615
+Şimdi b'yi de bulalım.
+
+210
+00:24:18,836 --> 00:24:26,196
+Limit x sonsuza giderken y-ax limitine bakıyorduk şimdi de.
+
+211
+00:24:26,196 --> 00:24:27,996
+Ya da fx-ax.
+
+212
+00:24:32,500 --> 00:24:33,660
+x burada
+
+213
+00:24:41,652 --> 00:24:54,572
+a1 çıktığı için buraya x yazacağım. Burada payda eşitlediğimizde x çarpı en üzeri x'ler birbirini götürecek. Sadece ne kalacak? Yukarıda eksi x küp kalacak.
+
+214
+00:25:06,612 --> 00:25:13,392
+Bu da nedir? Sonsuz bölü sonsuzdur yine. Burada arka arkaya yine L'Hospital uygularsak.
+
+215
+00:25:17,844 --> 00:25:21,884
+Başka da kısa yolu var mı onun?
+
+216
+00:25:28,819 --> 00:25:33,099
+Arka arkaya L'Hospital uygulayacağız. En sonunda ne olacak?
+
+217
+00:25:34,559 --> 00:25:48,559
+Üçüncü türevini aldığında 6, birinci türevinde x kare gelecek, ikinci türevinde x olacak, üçüncü türevinde ise 6 bölü e üzeri x olacak.
+
+218
+00:25:49,079 --> 00:25:56,539
+Sayı bölü sonsuzda ne olacak? Sıfır olacak. Arka arkaya L'Hospital uyguladığınızda sıfır çıkacak.
+
+219
+00:25:56,539 --> 00:26:04,399
+O halde y eşit x doğrusu e'ye x asimptot olacak.
+
+220
+00:26:09,844 --> 00:26:14,663
+alttaki örneği, onu size bırakıyorum. Siz kendiniz bakarsınız.
+
+221
+00:26:21,556 --> 00:26:31,076
+Şimdi klasik sınavda bir tane eğri çizimi sorduğumuzda 3-4 tane konuyu taramış oluyorduk.
+
+222
+00:26:31,675 --> 00:26:38,056
+Eğri çizimi sorduğumuz zaman bir kere tanım kümesini yazması gerekiyor öğrencinin.
+
+223
+00:26:38,056 --> 00:26:41,596
+Asimptotları 3'ünü birden araştırması gerekiyor.
+
+224
+00:26:42,115 --> 00:26:49,996
+Yani asimptot buluyorsunuz, konkallığını belirliyorsunuz, kritik noktalarını buluyorsunuz.
+
+225
+00:26:49,996 --> 00:26:56,016
+Varsa ekstrem değerlerini belirliyorsunuz, artan azalan olduğu aralıkları belirliyorsunuz.
+
+226
+00:26:56,316 --> 00:27:01,996
+Yani 5 tane ayrı işlemi yaptıktan sonra da eğriyi çiziyorsunuz.
+
+227
+00:27:02,736 --> 00:27:07,496
+Yani bir soruyla 6 tane konuyu böyle taramış oluyorsunuz.
+
+228
+00:27:07,736 --> 00:27:15,716
+Ama şimdi teste tabii ki bu mümkün olmadığı için bunların her biri ayrı bir soru olarak karşınıza gelecek.
+
+229
+00:27:15,716 --> 00:27:17,716
+O yüzden hani şu çıkmaz bu mümkün olmadığı için her şey sorulabilir.
+
+230
+00:27:17,716 --> 00:27:21,875
+O yüzden hani şu çıkmaz bu teste nasıl sorulur falan demeyin.
+
+231
+00:27:22,296 --> 00:27:25,836
+Her şey sorulabilir, her şey karşınıza gelebilir.
+
+232
+00:27:28,716 --> 00:27:30,976
+Şimdi eğri çizimi yapalım.
+
+233
+00:27:31,895 --> 00:27:33,415
+Örneğimiz de şu olsun.
+
+234
+00:27:35,415 --> 00:27:37,716
+Örnek demeyin de artık soru diyelim bunlara.
+
+235
+00:27:37,716 --> 00:28:07,696
+Örnek demeyin de.
+
+236
+00:27:48,596 --> 00:28:00,736
+fx fonksiyonumuz şu olsun, ln x artı 1 bölü x eksi 2 fonksiyonu. Bunun değişimini inceleyip grafiğini çizelim.
+
+237
+00:28:06,579 --> 00:28:17,519
+değişimini inceleyin derken demin saydığım bütün o maddeleri tek tek hesaplamamız, onları incelememiz gerekiyor.
+
+238
+00:28:19,000 --> 00:28:30,419
+Her zaman eğri çizimlerinde de, konkavlıkta da, yani türev gereken yerlerde öncelikle tanım kümesini yazın, fonksiyonun tanım kümesini yazın.
+
+239
+00:28:36,884 --> 00:28:37,443
+nedir?
+
+240
+00:28:40,723 --> 00:28:52,544
+Logaritma fonksiyonu pozitif sayılar için tanımlıdır. Ancak şurası iki tane polinomun oranı olduğu için pi'deyi sıfır yapan değer de tanımsız olacak değil mi?
+
+241
+00:28:53,104 --> 00:29:00,784
+x eşit 2 olursa 0 olacağından tanımsız oluyor. Bir kere 2x, 2 de tanımsız.
+
+242
+00:29:00,784 --> 00:29:16,304
+logaritma olduğu için x eşit eksi 1 olursa ln sıfır sonsuz yine tanımsız olacak.
+
+243
+00:29:16,304 --> 00:29:26,163
+O halde x eşit eksi 1 de tanımsız. Bu iki noktayı tanım kümesinden çıkarırsak df kümesi ne olur?
+
+244
+00:29:26,163 --> 00:29:33,163
+r fark eksi 1. Ya da bunu aralık olarak yazmak isterseniz.
+
+245
+00:29:33,163 --> 00:29:42,824
+ya da bunu aralık olarak yazmak isterseniz eksi sonsuz eksi 1 eksi 1 araya birleşim koymak lazım.
+
+246
+00:29:42,824 --> 00:29:44,203
+Hocam bir şey sorabilir miyim?
+
+247
+00:29:44,264 --> 00:29:44,943
+Tabii canım.
+
+248
+00:29:45,644 --> 00:29:49,524
+x artı 1 bölü x eksi 2 sıfırdan büyük olmak zorunda değil mi?
+
+249
+00:29:49,524 --> 00:29:58,703
+x artı 1 bölü x eksi 2 bölü x eksi 2 evet büyük sıfır olmalı.
+
+250
+00:30:02,228 --> 00:30:09,067
+Peki eksi 1'den farklı aldığım zaman, eksi 1 aldığım zaman şurası sıfır oluyor.
+
+251
+00:30:10,428 --> 00:30:12,148
+Hatta burası da eksi oluyor.
+
+252
+00:30:12,288 --> 00:30:13,788
+Yani anlamsız bir şey çıkıyor.
+
+253
+00:30:13,908 --> 00:30:15,628
+X eşit eksi 1'de tanımsız.
+
+254
+00:30:18,908 --> 00:30:22,688
+Şunu 2'yi çıkardık bir de aralıkta.
+
+255
+00:30:23,208 --> 00:30:25,307
+2 sonsuz aralığı oldu.
+
+256
+00:30:25,307 --> 00:30:34,108
+1 ile 2 arasındaki değerler içinde tanımsız bu.
+
+257
+00:30:34,508 --> 00:30:35,548
+Dolayısıyla değil mi?
+
+258
+00:30:37,008 --> 00:30:40,327
+Örneğin x'i sıfır alırsanız ne olacak?
+
+259
+00:30:40,608 --> 00:30:42,508
+Eksi 1 bölü 2 olacak.
+
+260
+00:30:42,827 --> 00:30:43,948
+Tanımsız oluyor.
+
+261
+00:30:44,548 --> 00:30:48,048
+Yani şuranın negatif olmaması gerekecek.
+
+262
+00:30:48,048 --> 00:30:56,048
+Dolayısıyla aralık olarak yazdığımda bakın eksi 1 ile 2 aralığını çıkardım.
+
+263
+00:30:57,128 --> 00:31:02,248
+Eğer o aralıkta da tanımlı olsaydı burayı nasıl yazacaktım?
+
+264
+00:31:02,248 --> 00:31:03,807
+Eksi sonsuz.
+
+265
+00:31:03,928 --> 00:31:07,468
+Eksi 1.
+
+266
+00:31:08,628 --> 00:31:09,587
+2.
+
+267
+00:31:11,148 --> 00:31:14,248
+2 sonsuz olarak yazmam gerekecekti.
+
+268
+00:31:15,288 --> 00:31:16,408
+Ancak burada nedir?
+
+269
+00:31:16,408 --> 00:31:21,628
+Şu aralıkta fonksiyon tanımsız olduğu için o aralığı tümden çıkarıyorum.
+
+270
+00:31:22,108 --> 00:31:27,768
+Dolayısıyla tanım aralığı aslında bunu şöyle yazmak hatalı.
+
+271
+00:31:28,188 --> 00:31:31,248
+Burada sadece 2 noktayı çıkarmak anlamına geliyor.
+
+272
+00:31:31,988 --> 00:31:33,288
+Bunu mu kastettin sen?
+
+273
+00:31:34,528 --> 00:31:35,608
+Evet hocam.
+
+274
+00:31:35,648 --> 00:31:38,327
+Evet onu hatalı yazmışım şimdi fark ettim.
+
+275
+00:31:38,588 --> 00:31:42,708
+Çünkü öyle yazınca sadece o 2 noktayı çıkarmış oluyorum.
+
+276
+00:31:42,708 --> 00:31:45,708
+Oysa ben aralığı çıkardım.
+
+277
+00:31:46,408 --> 00:31:49,988
+Eksi 1 ile 2 noktası arasındaki aralığı çıkardım.
+
+278
+00:31:50,648 --> 00:31:53,948
+Dolayısıyla tanım kümesi şu aralık oldu.
+
+279
+00:31:54,248 --> 00:31:55,088
+Yanlış yansın.
+
+280
+00:31:55,087 --> 00:32:15,847
+Evet.
+
+281
+00:32:06,259 --> 00:32:29,039
+fonksiyon kümesini yazdık. Sonra grafik çizerken biz hem fonksiyondan hem fonksiyonun birinci türevinden hem de ikinci türevinden yararlanarak bazı bilgiler elde ediyorduk. Onların dışında da grafik çiziyorduk. Sizinle grafik çizimi az yaptım. O yüzden bu derste grafik çizimine ağırlık vereceğim bugün.
+
+282
+00:32:29,039 --> 00:32:38,700
+fonksiyonun tanımı kullanılarak daha doğrusu fonksiyon kullanılarak başka neler elde edebiliriz? Asimptotlar.
+
+283
+00:32:42,099 --> 00:32:51,660
+Asimptotları da asimptotlar. Bunu da fonksiyonun kendisinden elde ediyoruz. Bir kere ne var burada?
+
+284
+00:32:51,660 --> 00:33:07,940
+x eşit eksi 1 ve x eşit 2'de fonksiyonun tanımsız olduğu için bu eksi 1 ve 2 noktaları dik asimptot olabilir mi?
+
+285
+00:33:08,400 --> 00:33:17,079
+Onu incelememiz gerekiyor değil mi? Bakalım limit x eksi 1'e yaklaşırken
+
+286
+00:33:23,316 --> 00:33:26,196
+Bu limit nereye yaklaşacaktır?
+
+287
+00:33:29,415 --> 00:33:29,816
+Pardon.
+
+288
+00:33:32,635 --> 00:33:33,776
+Şöyle diyelim.
+
+289
+00:33:35,415 --> 00:33:39,875
+x1'e yaklaşıyorum ama x1'e nereden yaklaşamam ben?
+
+290
+00:33:40,496 --> 00:33:42,175
+Sağdan yaklaşamam değil mi?
+
+291
+00:33:44,675 --> 00:33:49,175
+Sağdan yaklaşırsam x1'den küçük değerler...
+
+292
+00:33:49,175 --> 00:33:52,175
+Bir saniye.
+
+293
+00:33:53,316 --> 00:33:58,415
+Hocam sağdan yaklaşırsak fonksiyon negatif olduğu için şey yapamıyoruz.
+
+294
+00:33:58,655 --> 00:34:01,056
+Negatif olacağı için tanımsız olacak.
+
+295
+00:34:01,816 --> 00:34:04,076
+Dolayısıyla sağdan yaklaşamayacağım.
+
+296
+00:34:04,615 --> 00:34:06,196
+Soldan yaklaşabileceğim.
+
+297
+00:34:06,336 --> 00:34:11,235
+x1'e, x1'e soldan yaklaşırken bu limit de nereye yaklaşacak?
+
+298
+00:34:12,295 --> 00:34:14,896
+x1'e sonsuza yaklaşacak.
+
+299
+00:34:15,336 --> 00:34:19,195
+0 olacağı için x1'e sonsuza yaklaşacak.
+
+300
+00:34:19,195 --> 00:34:22,496
+Elan 0 biliyorsunuz x1'e sonsuza yaklaşır.
+
+301
+00:34:23,315 --> 00:34:26,436
+2 için bakalım.
+
+302
+00:34:34,291 --> 00:34:37,451
+Yine ikiye de nereden yaklaşamayacağım?
+
+303
+00:34:38,052 --> 00:34:40,411
+İkiye de soldan yaklaşamayacağım.
+
+304
+00:34:41,391 --> 00:34:43,471
+Sağdan yaklaşmam gerekecek.
+
+305
+00:34:44,371 --> 00:34:48,791
+Aynı şekilde şey oluyor çünkü, tanımsız oluyor, negatif oluyor.
+
+306
+00:34:49,891 --> 00:34:57,491
+Elen x artı 1 bölü x eksi 2 dersek, bu yine bu sefer de ne olacak?
+
+307
+00:34:58,031 --> 00:34:59,791
+Ha yine eksi sonsuza gidecek.
+
+308
+00:35:09,460 --> 00:35:11,039
+Artı sonsuza gitmiyor mu hocam?
+
+309
+00:35:11,159 --> 00:35:12,019
+Artı artı.
+
+310
+00:35:20,884 --> 00:35:40,364
+Gördüğünüz gibi x eşit x1 ve x eşit 2. Doğruları nedir? Dik asimptot ya da dikey asimptot ya da düşeği asimptot diyoruz bunlara. Dikey asimptotlardır. İki tane asimptotumuz var.
+
+311
+00:35:40,364 --> 00:35:58,563
+yalnız bunlar tek taraflı asimptotlar. Bakın, eksi bire soldan yaklaşırken bu eksi sonsuz oluyor. Buna da sağdan yaklaşabiliyorum sonsuz oluyor.
+
+312
+00:35:58,563 --> 00:36:09,784
+Tek taraflı asimptotlar oluyor. Yani ikinin solunda değil sağında asimptot olacak. E ilk asimptotu var mı bunun?
+
+313
+00:36:10,364 --> 00:36:17,364
+tek bir elen? Tekrar incelemeye de gerek yok.
+
+314
+00:36:17,364 --> 00:36:33,364
+Şimdi ne yapacağım? Fonksiyonu kullanarak eğer varsa eksenleri kestiği noktaları belirleriz ama burada logaritma fonksiyonunu 0 yapan değer yok değil mi?
+
+315
+00:36:33,364 --> 00:36:40,364
+Yani x'e 0 zaten alamıyorum.
+
+316
+00:36:40,364 --> 00:36:53,644
+Tanım kümesine dahil değil x eşit 0. Logaritma fonksiyonunun 0 olduğu başka bir x değeri de yok. Yani 0 olmuyor ama 0'a yaklaşıyor bu.
+
+317
+00:36:54,123 --> 00:37:00,244
+Şeye bakmadık. Dik asimptota baktım. Yatay asimptotu var mı ona bakalım.
+
+318
+00:37:00,244 --> 00:37:06,244
+Limit x artı eksenler.
+
+319
+00:37:06,244 --> 00:37:07,244
+Artı eksenler.
+
+320
+00:37:07,244 --> 00:37:16,244
+Eksi sonsuza yaklaşırken elen x artı 1 x eksi 2.
+
+321
+00:37:16,244 --> 00:37:24,184
+Eksi sonsuza da artı sonsuza da yaklaşırken x artı 1 bölü x eksi 2'nin limiti ne olur?
+
+322
+00:37:24,184 --> 00:37:26,184
+1 olur değil mi?
+
+323
+00:37:26,184 --> 00:37:29,184
+Bunlar polinomlar olduğu için bunun limiti 1'dir.
+
+324
+00:37:29,184 --> 00:37:32,184
+Elen 1 değeri de nedir?
+
+325
+00:37:32,184 --> 00:37:34,184
+0'dır.
+
+326
+00:37:34,184 --> 00:37:35,184
+1.
+
+327
+00:37:35,184 --> 00:37:36,184
+2.
+
+328
+00:37:36,184 --> 00:37:37,184
+1.
+
+329
+00:37:37,184 --> 00:37:39,184
+2.
+
+330
+00:37:39,184 --> 00:37:41,184
+3.
+
+331
+00:37:41,184 --> 00:37:43,184
+4.
+
+332
+00:37:43,184 --> 00:37:47,184
+5.
+
+333
+00:37:47,184 --> 00:37:49,184
+6.
+
+334
+00:37:49,184 --> 00:37:51,184
+7.
+
+335
+00:37:51,184 --> 00:37:53,184
+8.
+
+336
+00:37:53,184 --> 00:37:55,184
+9.
+
+337
+00:37:55,184 --> 00:37:56,184
+10.
+
+338
+00:37:56,184 --> 00:37:57,184
+9.
+
+339
+00:37:57,184 --> 00:38:02,184
+10.
+
+340
+00:37:39,092 --> 00:37:47,711
+Dolayısıyla y eşit sıfır yatay asimptot olacak.
+
+341
+00:37:48,372 --> 00:37:50,311
+Yatay asimptotu bulduk.
+
+342
+00:37:50,652 --> 00:37:52,872
+Dik asimptotlarımız var, bulduk.
+
+343
+00:37:53,811 --> 00:37:57,372
+Artık fonksiyonla yapabileceğim bir şey yok.
+
+344
+00:37:58,271 --> 00:37:59,952
+Ne yapacağım? Türeve geçeceğim.
+
+345
+00:38:00,251 --> 00:38:02,211
+Bunları da mecburen sileceğim ben.
+
+346
+00:38:09,139 --> 00:38:26,539
+fonksiyonun türevini alalım. 3'teyiz galiba. Türev ne olacak? Şunun türevi, bunun türevi bölü kendisi. Dolayısıyla ben şu türevi direkt yazayım. Bir daha hesaplamayalım.
+
+347
+00:38:26,539 --> 00:38:28,440
+eksi 3 bölü
+
+348
+00:38:28,440 --> 00:38:32,719
+x artı 1 çarpı
+
+349
+00:38:32,719 --> 00:38:34,000
+x eksi 2
+
+350
+00:38:38,579 --> 00:38:42,940
+türevini aldığınızda, düzenlediğinizde bu karşımıza çıkacak.
+
+351
+00:38:43,319 --> 00:38:47,460
+Şimdi bakın şurada başka bir x değişkeni yok. Bu sabit.
+
+352
+00:38:47,900 --> 00:38:53,000
+Dolayısıyla işareti de eksi. Demek ki bu x'in her değeri için.
+
+353
+00:38:53,360 --> 00:38:55,840
+Aşağıdan da ne geliyor?
+
+354
+00:38:59,840 --> 00:39:02,480
+x'lerin çarpımları gelecek.
+
+355
+00:39:02,480 --> 00:39:06,360
+Tanım kümesi içerisindeki her x değeri için.
+
+356
+00:39:06,799 --> 00:39:12,099
+Eksi 1 ile 2 aralığındaki sayılar tanım kümesine dahil değil.
+
+357
+00:39:12,699 --> 00:39:16,519
+Dolayısıyla tanım kümesindeki her x için.
+
+358
+00:39:16,900 --> 00:39:21,000
+x'ler negatif olunca aşağısı pozitif olacak.
+
+359
+00:39:21,500 --> 00:39:24,440
+x'ler pozitif olunca da yine pozitif olacak.
+
+360
+00:39:24,719 --> 00:39:27,360
+Dolayısıyla bunun işareti hep eksi olacak.
+
+361
+00:39:27,360 --> 00:39:33,360
+Yani buna tanım kümesi içerisinde azalan fonksiyon diyoruz.
+
+362
+00:39:33,360 --> 00:39:38,239
+Ya da her yerde daima azalan fonksiyon da diyebiliriz.
+
+363
+00:39:44,052 --> 00:39:47,172
+her x değeri için tanım kümesindeki tabii ki
+
+364
+00:39:56,115 --> 00:40:06,076
+x küçük sıfır. Böyle daima azalan bir fonksiyon çıkarsa ya da daima artan bir fonksiyon çıkarsa bu ne demektir?
+
+365
+00:40:06,556 --> 00:40:10,855
+Türevi sıfır yapan değerler yani kritik noktalar yok.
+
+366
+00:40:18,835 --> 00:40:22,695
+yapsız yapan değerlerde zaten tanım kümesine ait değil.
+
+367
+00:40:23,235 --> 00:40:30,655
+x1 ve artı 2 noktaları da tanım kümesine ait olmadığı için kritik noktalar yok diyoruz.
+
+368
+00:40:32,435 --> 00:40:36,715
+Kritik noktalar olmadığı için ekstremum değerler de yok.
+
+369
+00:40:42,612 --> 00:40:52,372
+O halde başka da yapacak bir şey yok. Bunları tabloda gösterip bulduğumuz şeylerin grafiğini çizeceğiz.
+
+370
+00:41:01,204 --> 00:41:03,204
+ah
+
+371
+00:41:09,844 --> 00:41:14,463
+şarjım bitmek üzere, fişi takmayı unutmuşum. Ben şu fişi takmayı unutmuşum.
+
+372
+00:41:22,675 --> 00:41:27,476
+Şimdi fark ettim fişi takmadığımı. Niye uyarı veriyor diyorum ben de.
+
+373
+00:41:29,956 --> 00:41:35,516
+Ekstrem değerler yok dedik. Şimdi ne yapacağız? Bunları tabloda göstereceğiz.
+
+374
+00:41:48,659 --> 00:42:11,619
+Olduğu noktalar, eksi 1, artı 2. Eksenleri kestiği nokta yok. Türevi sıfır yapan nokta yok. Şu iki değerden başka, burada göstereceğim hiçbir değer yok. Bunlar da tanımsız olduğu için çift çizgiyle gösterdim. Hem fonksiyon tanımsız hem de türevi tanımsız.
+
+375
+00:42:11,619 --> 00:42:21,960
+türevi neydi? Demin yaptık. Şu aralıkta fonksiyon tanımsız. Dolayısıyla şu aralıklar yok.
+
+376
+00:42:26,708 --> 00:42:30,748
+1'in soluna, 2'nin de sağına bakacağım.
+
+377
+00:42:31,927 --> 00:42:35,168
+Türev daima negatifti.
+
+378
+00:42:35,628 --> 00:42:37,407
+Dolayısıyla işaretini koydum.
+
+379
+00:42:37,548 --> 00:42:41,268
+Fonksiyon azalan fonksiyonunu bunu da yapmıştık.
+
+380
+00:42:41,268 --> 00:42:43,988
+Sadece burada yapmadığım şu var.
+
+381
+00:42:45,568 --> 00:42:48,668
+2. türevi alıp konkallığına bakmak.
+
+382
+00:42:49,688 --> 00:42:51,088
+Onu yapmadım.
+
+383
+00:42:51,088 --> 00:42:57,968
+Daima azalan fonksiyonlarda 2. türevi almadan da fonksiyonun grafiğini çizebilirsiniz.
+
+384
+00:42:59,307 --> 00:43:02,608
+Ya da daima artan fonksiyonlar için de bu geçerli.
+
+385
+00:43:04,008 --> 00:43:10,148
+İhtiyaç duyduğunuzda, konkallığına ihtiyaç duyarsanız 2. türevi buraya katabilirsiniz.
+
+386
+00:43:10,827 --> 00:43:13,088
+Ya da çizersiniz.
+
+387
+00:43:13,088 --> 00:43:13,887
+Burada ne var?
+
+388
+00:43:14,068 --> 00:43:16,088
+Eksi 1 ve 2.
+
+389
+00:43:17,168 --> 00:43:18,427
+X eşit eksi 1.
+
+390
+00:43:18,427 --> 00:43:22,887
+X eşit 2.
+
+391
+00:43:24,788 --> 00:43:27,307
+Bunlar dik asintotlarımızdı.
+
+392
+00:43:27,968 --> 00:43:31,748
+Y eşit 0'dı galiba.
+
+393
+00:43:31,907 --> 00:43:33,048
+Yani X ekseni.
+
+394
+00:43:33,628 --> 00:43:34,108
+Bu da ne?
+
+395
+00:43:34,807 --> 00:43:36,407
+Yatay asintotumuzdu.
+
+396
+00:43:37,268 --> 00:43:38,708
+Onu biraz kalın çizdim.
+
+397
+00:43:40,387 --> 00:43:44,367
+Dolayısıyla yatay asintot ne anlama geliyordu?
+
+398
+00:43:44,367 --> 00:43:49,148
+X artı ya da eksi sonsuza giderken onun yaklaştığı değer.
+
+399
+00:43:49,148 --> 00:43:55,068
+O halde eksi sonsuzdaki X değerleri için fonksiyon değerleri neye yakınmış?
+
+400
+00:43:55,508 --> 00:43:56,228
+Asintota.
+
+401
+00:43:56,588 --> 00:43:58,028
+Yani 0'a yakın olacak.
+
+402
+00:43:59,008 --> 00:44:05,788
+Daima azalan 0'dan, eksi sonsuzdan fonksiyon eksi 1'e doğru azalarak geliyor.
+
+403
+00:44:06,307 --> 00:44:13,867
+Eksi sonsuzdan, X eşit eksi 1'e azalarak geldiğinde, eksi 1'deki değerler nereye yaklaşıyor?
+
+404
+00:44:14,367 --> 00:44:17,288
+Sonsuza yaklaşıyor değil mi?
+
+405
+00:44:17,688 --> 00:44:20,148
+O yüzden bunu şöyle...
+
+406
+00:44:20,148 --> 00:44:24,907
+Hocam, yatay asintot 1 bulmamış mıydık?
+
+407
+00:44:25,668 --> 00:44:29,648
+Limitin eksi ve artı sonsuza giderken.
+
+408
+00:44:31,648 --> 00:44:32,228
+Yok.
+
+409
+00:44:32,887 --> 00:44:37,708
+Eksi 1 ve 2 çıktı diye hatırlıyorum.
+
+410
+00:44:37,867 --> 00:44:38,887
+Evet, eksi 1 ve 2.
+
+411
+00:44:38,887 --> 00:44:44,528
+Yatay asintotu mu diyorsunuz?
+
+412
+00:44:44,528 --> 00:44:45,548
+Evet, yatay, yatay.
+
+413
+00:44:45,648 --> 00:44:46,827
+Dikey değil hocam, yatay.
+
+414
+00:44:47,347 --> 00:44:49,088
+Yatay asintot 0.
+
+415
+00:44:49,508 --> 00:44:49,768
+Yok.
+
+416
+00:44:50,327 --> 00:44:54,528
+X artı eksi sonsuza giderken, bir kere şunun limiti nedir?
+
+417
+00:44:55,088 --> 00:44:56,248
+Sonsuza giderken.
+
+418
+00:44:56,668 --> 00:44:57,387
+1'dir değil mi?
+
+419
+00:44:57,887 --> 00:45:02,867
+Payın derecesi, paydanın derecesine eşit olduğu için kat sayıları oranıdır ki o da 1'dir.
+
+420
+00:45:02,867 --> 00:45:04,407
+Elen 1'de nedir?
+
+421
+00:45:04,748 --> 00:45:05,327
+Sıfırdır.
+
+422
+00:45:07,148 --> 00:45:08,347
+Sıfır bulduk.
+
+423
+00:45:08,867 --> 00:45:09,948
+Yatay asintotu.
+
+424
+00:45:10,208 --> 00:45:10,807
+Aynen, aynen.
+
+425
+00:45:10,948 --> 00:45:11,448
+Tamam hocam.
+
+426
+00:45:11,668 --> 00:45:12,528
+Yanlış hatırlamışım.
+
+427
+00:45:12,528 --> 00:45:33,528
+Yatay asintotu.
+
+428
+00:45:16,307 --> 00:45:40,807
+Bir parçası bu. İkinci parçada nerede? 2'nin sağında. Şuradaki şeylere bakacağız. Burada da ne var? Fonksiyon x değerleri yani 2'den sonsuza doğru artarken fonksiyon ne olacak? Azalacak. Peki nereden nereye azalacak?
+
+429
+00:45:40,807 --> 00:46:08,027
+2, bunun dik asimptotu olduğu için onu sonsuz yapan değer. Değerleri sonsuzdan nereye doğru azalıyor? Sıfıra doğru azalıyor. Çünkü x sonsuza yaklaşınca fonksiyonda neye yaklaşıyordu? Sıfıra yaklaşıyordu limit olarak. Yani yatay asimptota yaklaşacağım. Şöyle gelecek. Asimptota yaklaşarak böyle devam edecek.
+
+430
+00:46:08,027 --> 00:46:10,027
+İşte elen nereye azalacak.
+
+431
+00:46:10,027 --> 00:46:16,088
+İşte elen nereye x artı 1'e x artı 1 bölü x eksi 2'nin grafiğini bu şekilde çiziyoruz.
+
+432
+00:46:16,088 --> 00:46:30,208
+Şimdi biraz ara verelim. Başka da grafiklerimiz var. Size her türden fonksiyon için örnek vermeye çalıştım ama tabii ki hepsini alamadım.
+
+433
+00:46:30,947 --> 00:46:34,927
+Köklü ifadeler için sadece burada örnek hiç almamışım.
+
+434
+00:46:34,927 --> 00:47:04,907
+Sadece burada örnek vermeye çalıştım.
+
+435
+00:47:04,927 --> 00:47:06,927
+Onlar için de bir tane grafik bulurum.
+
+436
+00:47:06,927 --> 00:47:08,168
+Onlar için de bir tane grafik bulurum size.
+
+437
+00:47:12,275 --> 00:47:15,675
+Şimdi biraz ara verelim. Aradan sonra devam edelim.
+
+438
+00:59:35,123 --> 00:59:36,023
+Şimdi devam edelim.
+
+439
+00:59:38,583 --> 00:59:42,443
+Arkadaşlar, bir diğer sorumuz şu.
+
+440
+00:59:53,427 --> 00:59:56,047
+tüx bölü x-1
+
+441
+01:00:00,724 --> 01:00:02,704
+Bu fonksiyonun grafiğini çizelim.
+
+442
+01:00:22,900 --> 01:00:48,619
+Yine öncelikle tanım kümesine bakacağız. Tanım kümesi ne olacak? Üstel fonksiyon her yerde tanımlı ancak üstündeki ifade nedir? Bir rasyonel ifade dolayısıyla x eşit 1 için bu tanımsız olacak. O halde tanım kümesi rel sayılardan bir noktasını çıkardığımızda kalan küme olacak.
+
+443
+01:00:48,619 --> 01:01:12,780
+İkinci olarak asimptotlarına bakalım. x eşit 1 bunu tanımsız yaptığı için buna ne diyebiliriz? x 1'e yaklaşırken fx sonsuz olacağı için x eşit 1 bizim dik asimptotumuz olacak.
+
+444
+01:01:17,619 --> 01:01:31,480
+Yatay asimptot içinde şu limite bakıyorduk. x giderken sonsuza, burası x bölü x artı 1 olduğu için artı eksi sonsuza, ikisinde de aynı şey çıkacak.
+
+445
+01:01:31,480 --> 01:01:36,440
+e üzeri x bölü x eksi 1'in limiti ne olur?
+
+446
+01:01:37,039 --> 01:01:47,579
+Şurası x bölü x eksi 1'in limiti 1 olduğu için e üzeri 1 olacak yani e'ye eşit olacak.
+
+447
+01:01:47,579 --> 01:01:53,579
+Bu da ne demektir? y eşit e doğrusu yatay asimptot olacak.
+
+448
+01:02:10,068 --> 01:02:14,848
+Başka da yine burada eksenleri kestiği nokta olmayacak.
+
+449
+01:02:15,348 --> 01:02:20,268
+E üstel fonksiyonu olduğu için hiçbir x değeri için 0 olmaz.
+
+450
+01:02:21,408 --> 01:02:24,208
+Ancak x 0 değeri için tanımlıdır.
+
+451
+01:02:24,688 --> 01:02:26,568
+Kestiği noktalar yok demeyelim.
+
+452
+01:02:26,708 --> 01:02:28,968
+Çünkü x 0 için tanımlıdır.
+
+453
+01:02:29,828 --> 01:02:31,068
+3 diyelim şöyle.
+
+454
+01:02:31,528 --> 01:02:33,768
+Y 0 olmaz ama x 0 olabiliyor.
+
+455
+01:02:33,768 --> 01:02:39,848
+x eşit 0 için y neye eşit olacak?
+
+456
+01:02:40,728 --> 01:02:43,048
+E üzeri 0 1'e eşit olacak.
+
+457
+01:02:45,208 --> 01:02:53,088
+Yani grafiğimiz bu fonksiyonun grafiği 0 1 noktasında geçecek.
+
+458
+01:02:54,807 --> 01:02:57,268
+Artık fonksiyonla yapabileceğim bir şey yok.
+
+459
+01:02:57,428 --> 01:02:59,148
+O yüzden türevine bakıyorum.
+
+460
+01:03:00,288 --> 01:03:01,528
+Türevini aldım.
+
+461
+01:03:02,788 --> 01:03:04,508
+Şunun türevi ne olacak?
+
+462
+01:03:04,768 --> 01:03:07,568
+x bölü x eksi 1'in türevi neye eşit olur?
+
+463
+01:03:07,568 --> 01:03:10,008
+x eksi 1 eksi x.
+
+464
+01:03:10,148 --> 01:03:11,348
+x'ler gider.
+
+465
+01:03:11,348 --> 01:03:17,688
+eksi 1 bölü 1 eksi x kare olur orası değil mi?
+
+466
+01:03:20,288 --> 01:03:21,948
+Ya x eksi 1'in karesi.
+
+467
+01:03:22,008 --> 01:03:22,648
+1 eksi değil.
+
+468
+01:03:22,807 --> 01:03:24,368
+x eksi 1'in karesi.
+
+469
+01:03:24,688 --> 01:03:29,807
+Çarpı e üzeri x bölü x eksi 1 olur.
+
+470
+01:03:29,807 --> 01:03:31,888
+türevimiz bu.
+
+471
+01:03:31,888 --> 01:03:37,028
+Bu türevde nedir?
+
+472
+01:03:37,708 --> 01:03:45,188
+Şu e üzeri x bölü x eksi 1 değeri en fazla ne olabiliyor?
+
+473
+01:03:45,188 --> 01:03:49,208
+Yani x'i 0 aldığımızda 1 oluyor.
+
+474
+01:03:49,828 --> 01:03:53,348
+Onun haricinde burası hep pozitif bir değer alacak.
+
+475
+01:03:54,408 --> 01:03:57,468
+Dolayısıyla payda da daima pozitif.
+
+476
+01:03:57,468 --> 01:04:03,028
+O halde tanım kümesindeki her x değeri için f fonksiyonu nedir?
+
+477
+01:04:03,948 --> 01:04:06,688
+Türevi 0'dan küçüktür.
+
+478
+01:04:07,448 --> 01:04:08,388
+Şöyle diyelim.
+
+479
+01:04:08,868 --> 01:04:16,628
+Her x eleman df için f üstü x küçük 0'dır.
+
+480
+01:04:16,908 --> 01:04:18,128
+Bu da ne anlama geliyor?
+
+481
+01:04:18,307 --> 01:04:26,328
+Yine bu fonksiyonun azalan tanım kümesi içerisinde azalan bir fonksiyon olduğu anlamına geliyor.
+
+482
+01:04:26,328 --> 01:04:56,328
+Bu da ne?
+
+483
+01:04:31,027 --> 01:04:39,207
+Azalan bir fonksiyon olduğu için, yani daima azalan bir fonksiyon olduğu için ne yoktur? Kritik noktalar yok.
+
+484
+01:04:43,092 --> 01:04:50,352
+Tek bir kritik nokta, paydayı soru yapan şu değer x eşit 1 değeri olabilirdi.
+
+485
+01:04:50,932 --> 01:04:58,972
+x eşit 1 nedir? Tanım kümesine ait olmadığı için kritik nokta yoktur.
+
+486
+01:05:08,115 --> 01:05:34,655
+bir tanım kümesine ait olmadığında kritik nokta değildir. Dolayısıyla kritik noktamız yok. Yani ekstrem değerler de yok. Bunların hiçbiri yok. Böyle olduğu zaman bu daima azalan bir fonksiyon ise, hani ikinci türevi yapsanız da olur, yapmasanız da olur.
+
+487
+01:05:34,655 --> 01:05:59,416
+Konkallığı için yapabilirsiniz ya da zaten tabloyu yaptığınızda kendiliğinden çıkıyor. Bunları tabloda gösterelim. Ne alacağız? x eşit 1'de sadece tanımsız çıktı değil mi?
+
+488
+01:06:04,659 --> 01:06:06,980
+tabloya da koyacağım başka hiçbir diğer yok.
+
+489
+01:06:16,019 --> 01:06:17,619
+f üstü diyelim.
+
+490
+01:06:18,719 --> 01:06:20,000
+Şurası da f olsun.
+
+491
+01:06:25,235 --> 01:06:33,215
+Türevi neydi? Birinci türevi hep eksiydi. Dolayısıyla daima azalan bir fonksiyonu. Her iki bölgede de azalan olacak.
+
+492
+01:06:33,996 --> 01:06:49,496
+Sadece şu birinin sağında ve solundaki davranışını incelemek gerekecek. Bir neydi? Asimptot, dik asimptot yani çift taraflı bir asimptot mu oluyor? Ona bakmak gerek.
+
+493
+01:07:04,083 --> 01:07:09,643
+bire soldan yaklaşırsam, yani şu solunda ne olacaktır?
+
+494
+01:07:10,123 --> 01:07:10,903
+Bunun birlikte
+
+495
+01:07:16,980 --> 01:07:18,860
+soldan yaklaşınca
+
+496
+01:07:18,860 --> 01:07:25,199
+birden küçük değerler olacağı için negatif olacak.
+
+497
+01:07:26,579 --> 01:07:28,219
+Dolayısıyla bu
+
+498
+01:07:28,219 --> 01:07:31,420
+sonsuz. Sayı bölü
+
+499
+01:07:31,420 --> 01:07:36,599
+sonsuz neydi? Sıfırdı. Ama bu zaten sıfıra gittiği için
+
+500
+01:07:40,052 --> 01:07:50,711
+Şurası negatif olacak. 1 bölü 0, sayı bölü 0 sonsuz ama negatif olduğu için eksi sonsuz olacak.
+
+501
+01:07:51,092 --> 01:07:56,652
+E üzeri eksi sonsuz da neye eşitti? 0'a eşitti.
+
+502
+01:08:12,019 --> 01:08:17,319
+Biz demin bire giderkenki limitine bakmış mıydık? Bakmamıştık.
+
+503
+01:08:19,479 --> 01:08:28,300
+x bire sağdan yaklaşınca pozitif olacağı için e üzeri sonsuz, sonsuz olacak.
+
+504
+01:08:38,355 --> 01:08:54,536
+Dolayısıyla şu asimptot soldan asimptot değil, sağdan asimptot olacak. Yani şöyle diyelim, x değerleri bire yaklaşınca y'nin değeri ya da fx'in değeri neye yaklaşıyormuş? Burada sıfıra yaklaşıyormuş.
+
+505
+01:08:54,536 --> 01:09:09,916
+x değerleri sağdan bire yaklaştığında fonksiyonun değeri de nereye yaklaşıyormuş? Sonsuza yaklaşıyormuş. Yani sonsuzdan azalarak gelecek demek ki.
+
+506
+01:09:10,695 --> 01:09:13,795
+Şunlara göre grafiği çizersek,
+
+507
+01:09:15,795 --> 01:09:18,135
+biraz daha uzatalım.
+
+508
+01:09:23,828 --> 01:09:35,508
+Asimptotlarımızı koyalım. x eşit 1, dik asimptotumuzdu. Yatay asimptotumuz da vardı. y eşit e idi değil mi?
+
+509
+01:09:38,748 --> 01:09:48,628
+Şurası e değeri olsun. y eşit e de yatay asimptotumuz olacak. Ben şunu sileyim. Şu grafiği biraz daha büyüteyim çünkü.
+
+510
+01:09:48,888 --> 01:09:50,168
+Hocam bir şey sorabilir miyim?
+
+511
+01:09:50,388 --> 01:09:50,688
+Tabii.
+
+512
+01:09:50,688 --> 01:10:00,648
+Daha yeni sildiniz ama orada sanki e üzeri 1 bölü 0 eksi gibi bir değer vardı. O eksi sonsuza gidiyordu gibi geldi de bana.
+
+513
+01:10:01,068 --> 01:10:04,008
+Eksi sonsuza gittiği için limiti 0 oluyor.
+
+514
+01:10:07,699 --> 01:10:11,639
+Yani e üzeri eksi sonsuz oluyor. Bu da sıfır oluyor.
+
+515
+01:10:12,159 --> 01:10:13,139
+Tamam, tamam hocam.
+
+516
+01:10:13,139 --> 01:10:22,679
+O yüzden bu limit 1'in solundaki limit sıfır, sağındaki limit sonsuz.
+
+517
+01:10:28,979 --> 01:10:30,399
+Doğru görmüştün.
+
+518
+01:10:31,919 --> 01:10:33,099
+Şimdi çizelim.
+
+519
+01:10:33,619 --> 01:10:35,559
+Bakın x değerleri
+
+520
+01:10:35,559 --> 01:10:37,099
+eksi sonsuzdan
+
+521
+01:10:37,099 --> 01:10:39,719
+bire doğru yaklaşırken
+
+522
+01:10:39,719 --> 01:10:41,359
+ne oluyor? Fonksiyonla
+
+523
+01:10:41,359 --> 01:10:43,079
+nereden
+
+524
+01:10:43,079 --> 01:10:44,679
+sıfıra geliyor?
+
+525
+01:10:46,739 --> 01:10:49,339
+x eksi sonsuza giderken
+
+526
+01:10:49,339 --> 01:10:50,859
+ne oluyordu? Bunun
+
+527
+01:10:50,859 --> 01:10:53,559
+asimtotu e oluyordu.
+
+528
+01:10:53,559 --> 01:10:55,319
+Değil mi? Y değerleri
+
+529
+01:10:55,319 --> 01:10:57,779
+e'ye yakın oluyor. Dolayısıyla
+
+530
+01:10:57,779 --> 01:11:00,659
+e'den sıfıra
+
+531
+01:11:00,659 --> 01:11:02,439
+fonksiyon ne olacak?
+
+532
+01:11:03,779 --> 01:11:04,959
+Azalacak.
+
+533
+01:11:06,259 --> 01:11:07,679
+Fonksiyonu o halde
+
+534
+01:11:07,679 --> 01:11:08,879
+şöyle grafiğini
+
+535
+01:11:08,879 --> 01:11:11,259
+çizeriz.
+
+536
+01:11:13,399 --> 01:11:14,839
+Böyle çizemeyiz.
+
+537
+01:11:15,879 --> 01:11:17,259
+Bire yaklaşacak.
+
+538
+01:11:19,759 --> 01:11:21,779
+Bire yaklaşınca
+
+539
+01:11:21,779 --> 01:11:22,839
+değeri sıfır olacak.
+
+540
+01:11:23,079 --> 01:11:25,259
+Bir burası. Ben sıfıra getirdim.
+
+541
+01:11:27,779 --> 01:11:28,899
+şöyle olacak.
+
+542
+01:11:29,319 --> 01:11:30,799
+Bu aynı zamanda nereden
+
+543
+01:11:30,799 --> 01:11:31,399
+geçiyor?
+
+544
+01:11:32,119 --> 01:11:33,439
+Sıfır bir noktasından
+
+545
+01:11:33,439 --> 01:11:34,859
+geçiyor. O halde şu noktayı
+
+546
+01:11:34,859 --> 01:11:36,479
+bir noktası alırsak.
+
+547
+01:11:36,899 --> 01:11:37,679
+Sıfır bir noktasından
+
+548
+01:11:38,239 --> 01:11:38,939
+geçti.
+
+549
+01:11:39,899 --> 01:11:40,879
+Nereye geldi?
+
+550
+01:11:42,819 --> 01:11:43,759
+x eşit bir
+
+551
+01:11:43,759 --> 01:11:44,799
+olduğu zaman
+
+552
+01:11:44,799 --> 01:11:45,939
+sıfır değeri oluyor ama
+
+553
+01:11:45,939 --> 01:11:47,719
+x eşit bir değeri olmuyor.
+
+554
+01:11:47,859 --> 01:11:48,879
+Bire yaklaşıyor.
+
+555
+01:11:48,879 --> 01:11:51,619
+x bire yaklaştığı için
+
+556
+01:11:51,619 --> 01:11:54,019
+bir tanım kümesine ait
+
+557
+01:11:54,019 --> 01:11:55,279
+olmadığı için
+
+558
+01:11:55,279 --> 01:11:56,939
+birdeki değerini
+
+559
+01:11:56,939 --> 01:11:57,859
+açıyoruz.
+
+560
+01:11:58,079 --> 01:11:58,339
+Böyle
+
+561
+01:11:58,339 --> 01:12:00,819
+orayı boşluk bıraktık.
+
+562
+01:12:01,399 --> 01:12:02,219
+Bunun grafiği
+
+563
+01:12:02,219 --> 01:12:03,399
+buraya kadar geldi.
+
+564
+01:12:03,819 --> 01:12:04,659
+Şimdi bakalım.
+
+565
+01:12:05,019 --> 01:12:05,859
+İkinci taraf
+
+566
+01:12:05,859 --> 01:12:06,819
+birin
+
+567
+01:12:06,819 --> 01:12:08,000
+sağ tarafı.
+
+568
+01:12:08,279 --> 01:12:10,019
+Birin sağındaysa
+
+569
+01:12:10,019 --> 01:12:11,000
+grafiğin
+
+570
+01:12:11,000 --> 01:12:12,299
+fonksiyonun
+
+571
+01:12:12,299 --> 01:12:12,959
+değerleri
+
+572
+01:12:12,959 --> 01:12:13,879
+nereden geliyor?
+
+573
+01:12:13,879 --> 01:12:15,939
+x bir
+
+574
+01:12:15,939 --> 01:12:16,699
+olduğunda
+
+575
+01:12:16,699 --> 01:12:17,799
+fonksiyonun
+
+576
+01:12:17,799 --> 01:12:18,359
+değerleri
+
+577
+01:12:18,359 --> 01:12:19,079
+sonsuz
+
+578
+01:12:19,079 --> 01:12:20,379
+oldu.
+
+579
+01:12:20,679 --> 01:12:20,899
+Değil mi?
+
+580
+01:12:21,239 --> 01:12:22,019
+Sonsuzdan
+
+581
+01:12:22,019 --> 01:12:23,299
+gelecek fonksiyon
+
+582
+01:12:23,299 --> 01:12:24,139
+azalarak
+
+583
+01:12:24,139 --> 01:12:24,619
+gelecek.
+
+584
+01:12:25,219 --> 01:12:25,500
+Nereye
+
+585
+01:12:25,500 --> 01:12:26,399
+yaklaşacak?
+
+586
+01:12:26,759 --> 01:12:27,559
+x değerleri
+
+587
+01:12:27,559 --> 01:12:28,159
+sonsuza
+
+588
+01:12:28,159 --> 01:12:29,339
+yaklaştıkça
+
+589
+01:12:29,339 --> 01:12:30,599
+y değerleri
+
+590
+01:12:30,599 --> 01:12:31,059
+de nereye
+
+591
+01:12:31,059 --> 01:12:32,000
+yaklaşıyordu?
+
+592
+01:12:32,539 --> 01:12:32,919
+e'ye
+
+593
+01:12:32,919 --> 01:12:33,679
+yaklaşıyordu.
+
+594
+01:12:34,019 --> 01:12:34,539
+Bunları da
+
+595
+01:12:34,539 --> 01:12:35,159
+isterseniz
+
+596
+01:12:35,159 --> 01:12:35,679
+buralara
+
+597
+01:12:35,679 --> 01:12:36,639
+yazabilirsiniz.
+
+598
+01:12:37,459 --> 01:12:38,639
+y değerleri
+
+599
+01:12:38,639 --> 01:12:39,179
+de e'ye
+
+600
+01:12:39,179 --> 01:12:39,979
+yaklaştığı
+
+601
+01:12:39,979 --> 01:12:40,779
+için böyle
+
+602
+01:12:40,779 --> 01:12:42,019
+asimtota
+
+603
+01:12:42,019 --> 01:12:42,699
+yaklaşıyor.
+
+604
+01:12:42,819 --> 01:12:43,099
+Belki
+
+605
+01:12:43,099 --> 01:12:44,179
+e'de
+
+606
+01:12:44,179 --> 01:12:45,079
+oluyordur
+
+607
+01:12:45,079 --> 01:12:46,579
+öyle yakın
+
+608
+01:12:46,579 --> 01:12:47,139
+bir şekilde
+
+609
+01:12:47,139 --> 01:12:48,119
+çıkıyor.
+
+610
+01:12:48,319 --> 01:12:49,000
+Bunun grafiği
+
+611
+01:12:49,000 --> 01:12:49,879
+de böyle.
+
+612
+01:12:53,811 --> 01:12:58,032
+Şu asimtotun sağındaki solundaki limitlerine dikkat edin.
+
+613
+01:12:59,731 --> 01:13:02,711
+Başka da çok bir şey yok.
+
+614
+01:13:03,532 --> 01:13:12,311
+Bir de dediğim gibi daima artan ya da daima azalan fonksiyonlardan ikinci türevi alsanız da olur, almasanız da olur.
+
+615
+01:13:12,751 --> 01:13:13,751
+Ben almadım.
+
+616
+01:13:14,251 --> 01:13:18,171
+Dünkü derste aldım çok uzun uza diye bir şeyler çıktı.
+
+617
+01:13:18,171 --> 01:13:25,171
+Zaten burada konkallığını görmemiz için ille de ikinci türeve gerek yok.
+
+618
+01:13:25,551 --> 01:13:27,251
+Fonsiyon azalarak geliyor.
+
+619
+01:13:27,452 --> 01:13:28,811
+Sıfıra doğru azalıyor.
+
+620
+01:13:29,011 --> 01:13:33,372
+Bunu böyle çizmeyeceğinize göre böyle alacaksınız.
+
+621
+01:13:33,751 --> 01:13:41,171
+Yani ya da kabaca bakarsınız emin olamadığınız zaman ikinci türevini de alabilirsiniz.
+
+622
+01:13:41,912 --> 01:13:44,652
+Şimdi bir tane de rasyonel grafik çizelim.
+
+623
+01:13:44,652 --> 01:13:47,131
+Rasyonel fonksiyonların grafiklerinden.
+
+624
+01:13:48,171 --> 01:13:50,332
+Ben elimdeki şeyin altında.
+
+625
+01:14:16,243 --> 01:14:18,703
+x kare eksi 1, x kare eksi 4.
+
+626
+01:14:19,143 --> 01:14:20,863
+Fonksiyonun grafiğini çizelim.
+
+627
+01:14:20,963 --> 01:14:26,323
+Basit gibi görünse de 3 parçalı bir grafiğe sahip bu fonksiyon.
+
+628
+01:14:34,515 --> 01:14:42,315
+yeni çizelim. Yine tanım kümesini yazmakla başlayalım. Tanım kümeniz ne olacak? Paydayı sıfır
+
+629
+01:14:42,315 --> 01:14:52,695
+yapan değerler hariç bunlar tüm rel sayılarda tanımlıydı. O halde re eksi artı eksi 2 de dersek
+
+630
+01:14:52,695 --> 01:15:01,275
+olur. Sadece artı ve eksi 2 noktalarını rel sayılardan çıkardığında tanım kümesini elde
+
+631
+01:15:01,275 --> 01:15:12,915
+oluyor. İkinci olarak asimtotlarını yazalım. Rasyonel fonksiyonlarda dedik ki paydayı sıfır
+
+632
+01:15:12,915 --> 01:15:26,175
+yapan değerler dik asimtot oluyor. O zaman x eşit 2 ve x eşit eksi 2 artı 2 doğruları bizim dikey
+
+633
+01:15:26,175 --> 01:15:34,095
+asimtotlarımız olacak. Yatay asimtot içinde x sonsuza giderkenki limite bakacağız.
+
+634
+01:15:36,975 --> 01:15:46,455
+Rasyonel ifade olduğu için artı eksi sonsuza giderken bir de bunlar x kare olduğu için ikisinde de durum
+
+635
+01:15:46,455 --> 01:15:52,735
+fark etmeyecek. O yüzden şunu artı eksi sonsuz yapabilirim. Yoksa ayrı ayrı incelemem gerekecekti.
+
+636
+01:15:52,735 --> 01:16:06,455
+x kare eksi 1 x kare eksi 4 bu da nedir? Limite 1'e eşittir. Dolayısıyla y eşit 1'de yatay asimtottur.
+
+637
+01:16:08,455 --> 01:16:14,015
+Payet derecesi paydanın derecesine eşit olduğu için e2 asimtot yok.
+
+638
+01:16:19,604 --> 01:16:42,804
+Bu da yazdık. Şimdi fonksiyonda eksenleri kestiği noktaları varsa simetrilerini de yazabiliriz. Bu çift fonksiyonudur değil mi? f-x, x-x'in kalesi eksi 1, x-x'in kalesi eksi 4.
+
+639
+01:16:42,804 --> 01:17:02,064
+Bu da ne olacak? x kalesi eksi 1, x kalesi eksi 4. Yani f-x'i eşit olduğu için çift fonksiyon, çift fonksiyonu da biliyoruz ki y eksenine göre simetriktir.
+
+640
+01:17:08,275 --> 01:17:15,015
+Yani y ekseninin bir tarafındaki grafiği çizip yansıtarak ikinci tarafını çizebilirsiniz.
+
+641
+01:17:15,456 --> 01:17:17,095
+Bu size kolaylık sağlayacak.
+
+642
+01:17:17,615 --> 01:17:21,435
+Dördüncü olarak eksenleri kestiği noktalara bakalım.
+
+643
+01:17:23,435 --> 01:17:31,336
+x sıfır olduğu zaman y bir bölü dört oluyor.
+
+644
+01:17:31,916 --> 01:17:35,435
+O zaman sıfır bir bölü dört noktasından geçecek grafiğimiz.
+
+645
+01:17:35,435 --> 01:17:43,796
+Y sıfır olduğunda x kare eksi bir eşit sıfır demektir.
+
+646
+01:17:44,255 --> 01:17:47,796
+Buradan da x eşit artı eksi bir çıkacak.
+
+647
+01:17:48,015 --> 01:17:55,836
+Yani eksi bir sıfır artı bir sıfır noktalarından geçecek.
+
+648
+01:17:56,275 --> 01:17:59,855
+Sıfır bir bölü dört şu üç noktada eksenleri kesiyormuş.
+
+649
+01:18:00,755 --> 01:18:02,775
+Eksenleri kestiği noktaları bulduk.
+
+650
+01:18:02,775 --> 01:18:04,975
+Simetri vardı onu belirledik.
+
+651
+01:18:05,435 --> 01:18:06,635
+Şimdi ne yapacağım?
+
+652
+01:18:07,175 --> 01:18:12,015
+Ekstrem değerlerini ve artan azalan olduğu aralıkları belirlemem gerekiyor.
+
+653
+01:18:12,416 --> 01:18:15,796
+Bunun için de bunun birinci türevine ihtiyacım var.
+
+654
+01:18:16,555 --> 01:18:19,956
+Birinci türev f üstü x neye eşit olacak?
+
+655
+01:18:20,576 --> 01:18:26,935
+Payın türevi çarpı payda eksi paydanın türevi çarpı pay bölüp paydanın karesi oluyor.
+
+656
+01:18:26,935 --> 01:18:32,395
+Türevi alıp düzenlerseniz birinci türev şu çıkacakmış.
+
+657
+01:18:32,515 --> 01:18:40,615
+Eksi altı x bölü x kare eksi dördü parantez karesi çıkacak.
+
+658
+01:18:40,615 --> 01:18:46,076
+Bunu da sıfıra eşitlerseniz x eşit sıfır çıkacak.
+
+659
+01:18:47,695 --> 01:18:50,916
+Artı eksi iki paydayı sıfır yapıyor.
+
+660
+01:18:51,155 --> 01:18:56,615
+Ancak tanım kümesine ait olmadığı için onları kritik nokta olarak alamıyorum.
+
+661
+01:18:57,755 --> 01:19:01,036
+Tek kritik nokta x eşit sıfır noktası.
+
+662
+01:19:01,036 --> 01:19:11,916
+Dolayısıyla bunun artan azalanlığını ve ekstrem değerlerini tablo yaptığında gösterebileceğim.
+
+663
+01:19:13,255 --> 01:19:15,255
+İkinci türevini de alalım.
+
+664
+01:19:15,355 --> 01:19:16,456
+Konkanlığına bakalım.
+
+665
+01:19:16,695 --> 01:19:19,376
+Çünkü bunun nesi değişiyor?
+
+666
+01:19:19,536 --> 01:19:22,036
+Artanlığı, azalanlığı değişiyor.
+
+667
+01:19:22,036 --> 01:19:36,095
+x'in x değerlerine göre, x'in alacağım değerlerine göre farklı aralıklarda artanlık, azalanlık değiştiği için konkallığı da değişecektir.
+
+668
+01:19:36,215 --> 01:19:39,315
+O yüzden bunlarda ikinci türevi almam gerekiyor.
+
+669
+01:19:40,115 --> 01:19:43,815
+İkinci türevi hesaplayıp düzenlediğimizde de ne göreceğiz?
+
+670
+01:19:43,815 --> 01:19:51,336
+6 çarpı, ben direkt yazayım, 3x kare artı 4 olacak.
+
+671
+01:19:51,336 --> 01:19:57,195
+Burası x kare eksi 4'ün küpü.
+
+672
+01:19:57,715 --> 01:20:00,655
+İkinci türevimiz de böyle çıktı.
+
+673
+01:20:01,315 --> 01:20:05,416
+İkinci türeve baktığınızda bunu sıfır yapan bir değer var mı?
+
+674
+01:20:06,175 --> 01:20:06,475
+Yok.
+
+675
+01:20:06,996 --> 01:20:15,376
+Bunun sıfır olabilmesi için sıfır eşitlediğinizde 3x kare artı 4'ün sıfır olması gerekiyor.
+
+676
+01:20:15,376 --> 01:20:20,576
+Bunu bu tarafa atarsanız 3x kare eşit eksi 4 olacak bir kere.
+
+677
+01:20:21,336 --> 01:20:26,775
+Eksi bir sayı, yani x'in karesi eksi bir sayı eşitse o sayı nedir?
+
+678
+01:20:26,876 --> 01:20:27,796
+Sanal sayıdır.
+
+679
+01:20:28,195 --> 01:20:30,395
+Bunun real kökleri yoktur.
+
+680
+01:20:30,395 --> 01:20:41,855
+Yani f2 üstü eşit sıfır olacak şekilde bir x değeri yok.
+
+681
+01:20:41,855 --> 01:20:54,855
+İkinci türevi yoktur.
+
+682
+01:20:46,003 --> 01:21:04,243
+real kökler olmadığı için büküm noktaları olmayacak. Ama işareti de ne olacaktır? Hep mi aynı olacak? Hep aynı olmayacak. Büküm değişecek. Onu da tabloda inceleriz işaretini.
+
+683
+01:21:04,243 --> 01:21:09,923
+Şimdi bulduğumuz şeyleri tabloda gösterelim.
+
+684
+01:21:14,899 --> 01:21:23,879
+fonksiyonu da sileyim. Bunun grafiği biraz büyük çünkü. Tahteri çok tasarruzunu kullanmam gerekecek.
+
+685
+01:21:28,467 --> 01:21:46,367
+Neler bulduk? Tanımsız olduğu yerler eksi 2 artı 2 noktasıydı. Eksi 2 diyelim şuraya. Arada bir de sıfırı bulduk. Birinci türevin köküydü. Artı 2'yi aldık. Burası da sonsuz diyelim.
+
+686
+01:21:50,452 --> 01:21:52,332
+bunun ikinci türevi de var.
+
+687
+01:22:01,268 --> 01:22:02,467
+3'ünü de aldık.
+
+688
+01:22:04,068 --> 01:22:12,788
+Eksi 2 ve artı 2 değerleri hem fonksiyonu hem de türevlerini tanımsız yaptığı için bunları çift çizgiyle çizdim.
+
+689
+01:22:13,688 --> 01:22:23,887
+x eşit 0'da birinci türevin kökü olduğu için onu da birinci türevde şuraya 0 yazarak gösterdim.
+
+690
+01:22:26,488 --> 01:22:29,967
+Türev fonksiyonunu unuttum. Şuradan bakayım.
+
+691
+01:22:29,967 --> 01:22:32,728
+Türev fonksiyonumuz neydi?
+
+692
+01:22:32,828 --> 01:22:36,127
+Eksi 6x bölü x kare. Eksi 4'ün karesi.
+
+693
+01:22:36,448 --> 01:22:38,608
+Bunun paydası her zaman ne olacak?
+
+694
+01:22:39,288 --> 01:22:41,728
+Her zaman pozitif olduğu için işaret
+
+695
+01:22:41,728 --> 01:22:45,667
+eksi 6x'e bağlı. Yani x'e bağlı.
+
+696
+01:22:46,207 --> 01:22:48,307
+x'i negatif seçersek
+
+697
+01:22:48,307 --> 01:22:51,648
+dolayısıyla eksi 2'den küçük değerler aldığında
+
+698
+01:22:51,648 --> 01:22:53,587
+eksi de burada olduğu için
+
+699
+01:22:53,587 --> 01:22:54,988
+artı olacak.
+
+700
+01:22:56,747 --> 01:22:59,528
+Eksi 2 sıfır aralığında ne olacak?
+
+701
+01:22:59,967 --> 01:23:02,828
+türevin işaret
+
+702
+01:23:02,828 --> 01:23:05,688
+şurada tanımsız oldu.
+
+703
+01:23:05,688 --> 01:23:10,547
+mesela eksi 2'den 0.
+
+704
+01:23:10,547 --> 01:23:12,688
+burada yine negatif değerler olduğu için
+
+705
+01:23:12,688 --> 01:23:14,368
+bu yine pozitif olacak.
+
+706
+01:23:14,368 --> 01:23:18,688
+0 sonsuz aralığı yani 0-2 aralığında
+
+707
+01:23:18,688 --> 01:23:22,627
+pozitif değerler alacak.
+
+708
+01:23:22,627 --> 01:23:24,908
+önünde eksi olduğu için eksi olacak.
+
+709
+01:23:24,908 --> 01:23:26,467
+şurada da eksi olacak.
+
+710
+01:23:26,467 --> 01:23:28,467
+işaretimiz bu.
+
+711
+01:23:28,467 --> 01:23:32,247
+bakın birinci türev sıfır noktasında ne yaptı?
+
+712
+01:23:32,247 --> 01:23:33,467
+işaret değiştirdi.
+
+713
+01:23:33,467 --> 01:23:35,807
+o halde bu nokta fonksiyonu nedir?
+
+714
+01:23:35,807 --> 01:23:38,688
+bir ekstremum noktasıdır.
+
+715
+01:23:39,467 --> 01:23:41,467
+artıdan eksiye geçtiği için
+
+716
+01:23:41,467 --> 01:23:43,368
+maksimum değeri vardır.
+
+717
+01:23:43,368 --> 01:23:46,368
+zaten
+
+718
+01:23:51,667 --> 01:23:54,287
+Tek olduğu için bu aslında ne olacak?
+
+719
+01:23:55,007 --> 01:23:56,367
+Mutlak maksimumdur.
+
+720
+01:23:56,747 --> 01:23:59,327
+Aynı zamanda maksimum yazalım.
+
+721
+01:23:59,887 --> 01:24:01,527
+Şuna da ihtiyacım yok artık.
+
+722
+01:24:01,967 --> 01:24:04,747
+Birinci türevle yapabileceğim başka bir şey var mı?
+
+723
+01:24:05,467 --> 01:24:06,667
+Şu anda göremiyorum.
+
+724
+01:24:07,707 --> 01:24:10,047
+Artan azalanlığı yazalım.
+
+725
+01:24:10,047 --> 01:24:12,327
+Bu aralık da artıyor.
+
+726
+01:24:13,487 --> 01:24:15,887
+Şurana da azalıyor.
+
+727
+01:24:17,667 --> 01:24:19,327
+Gelelim ikinci türevi.
+
+728
+01:24:19,728 --> 01:24:21,607
+İkinci türevin nesi yoktu?
+
+729
+01:24:22,667 --> 01:24:24,327
+Şey yoktu.
+
+730
+01:24:24,707 --> 01:24:26,087
+Real kökleri yoktu.
+
+731
+01:24:29,167 --> 01:24:32,287
+Dolayısıyla şöyle bakalım ikinci türevi.
+
+732
+01:24:33,287 --> 01:24:33,987
+Neydi?
+
+733
+01:24:34,268 --> 01:24:34,807
+Hepsi.
+
+734
+01:24:37,027 --> 01:24:39,667
+Yukarısı daima pozitif olacak.
+
+735
+01:24:39,907 --> 01:24:42,747
+İkinci türevde daima pozitif.
+
+736
+01:24:43,287 --> 01:24:44,127
+Paydası.
+
+737
+01:24:45,127 --> 01:24:46,447
+Paydası ne?
+
+738
+01:24:46,627 --> 01:24:47,307
+X kare.
+
+739
+01:24:47,987 --> 01:24:50,427
+Eksi dördün küpü.
+
+740
+01:24:50,427 --> 01:24:55,807
+Şu küp olduğu için bunun negatif olduğu değerler var.
+
+741
+01:24:56,307 --> 01:24:57,367
+Neler olacak?
+
+742
+01:24:59,268 --> 01:25:06,067
+Mutlak değerci 2'den küçük olduğu yerlerde bunun işareti negatif olacak.
+
+743
+01:25:06,067 --> 01:25:10,607
+Mutlak değerci 2'den küçük olduğu yerlerde aralıkta nedir?
+
+744
+01:25:10,607 --> 01:25:11,547
+Şu aralık.
+
+745
+01:25:11,547 --> 01:25:15,807
+Eksi 2 sıfır aralığında işaret eksi olur.
+
+746
+01:25:16,307 --> 01:25:19,047
+Sıfır 2 aralığında da işaret eksi olur.
+
+747
+01:25:19,447 --> 01:25:21,327
+Artı ve eksi 2'de de ne oluyordu?
+
+748
+01:25:21,867 --> 01:25:22,867
+Tanımsız oluyordu.
+
+749
+01:25:22,867 --> 01:25:25,847
+O halde şuralarda da ne olacak?
+
+750
+01:25:25,847 --> 01:25:29,027
+Bunun işareti artı olacak.
+
+751
+01:25:29,627 --> 01:25:30,147
+Bakın.
+
+752
+01:25:31,167 --> 01:25:33,007
+Şöyle kırmızıyla göstereyim.
+
+753
+01:25:33,467 --> 01:25:35,447
+Konkanlık burada yukarı doğru.
+
+754
+01:25:35,947 --> 01:25:37,188
+Burada aşağı doğru.
+
+755
+01:25:37,447 --> 01:25:38,647
+Burada da aşağı doğru.
+
+756
+01:25:38,867 --> 01:25:42,247
+Burada tekrar konkanlık yukarı doğru olacak.
+
+757
+01:25:43,947 --> 01:25:45,987
+Düküm noktası yok.
+
+758
+01:25:45,987 --> 01:25:48,327
+Şunu da silelim.
+
+759
+01:25:50,407 --> 01:25:54,207
+Geçtiği noktaları yazarız artık.
+
+760
+01:25:54,347 --> 01:25:55,347
+Onları da sildim.
+
+761
+01:25:57,927 --> 01:25:59,287
+Neye ihtiyacım var?
+
+762
+01:25:59,427 --> 01:26:00,768
+Şuna ihtiyacım var.
+
+763
+01:26:01,427 --> 01:26:09,407
+Fonksiyon x eksi sonsuzdan eksi 2'ye doğru yaklaşırken fonksiyonun değerleri ne oluyordu?
+
+764
+01:26:09,407 --> 01:26:14,547
+Fonksiyonumuz eksi sonsuzdan 2'ye artacak.
+
+765
+01:26:16,747 --> 01:26:21,207
+Artı eksi sonsuza giderken bunun yatay asimtotunu bulmuş muyduk?
+
+766
+01:26:21,268 --> 01:26:22,827
+Var mıydı yatay asimtotu?
+
+767
+01:26:23,347 --> 01:26:24,107
+Vardı değil mi?
+
+768
+01:26:24,887 --> 01:26:29,847
+x artı eksi sonsuz olunca fx değerleri neye yaklaşıyordu?
+
+769
+01:26:30,367 --> 01:26:31,367
+1'e yaklaşıyordu.
+
+770
+01:26:31,427 --> 01:26:32,827
+Yatay asimtotumuz 1.
+
+771
+01:26:33,188 --> 01:26:38,347
+O halde eksi sonsuz için f'in değeri 1 civarında olacak.
+
+772
+01:26:38,347 --> 01:26:40,027
+1'e yakın değerler olacak.
+
+773
+01:26:40,867 --> 01:26:45,707
+Fonksiyonun değerleri x eksi 2'ye yaklaşırken,
+
+774
+01:26:46,228 --> 01:26:47,707
+eksi 2'nin sağında,
+
+775
+01:26:48,507 --> 01:26:51,347
+yani şu limit solunda özür dilerim,
+
+776
+01:26:51,907 --> 01:26:54,787
+x eksi 2'ye soldan yaklaşırken,
+
+777
+01:26:55,167 --> 01:26:57,047
+bunun limiti neye eşit olacak?
+
+778
+01:27:05,108 --> 01:27:06,728
+Şuydu fonksiyonumuz değil mi?
+
+779
+01:27:07,248 --> 01:27:11,007
+x'i 2'ye soldan yaklaşırken ne olacak?
+
+780
+01:27:11,228 --> 01:27:17,748
+Mutlak değerci 2'den büyük değerler aldığı ilk kişi pozitif olacak.
+
+781
+01:27:18,507 --> 01:27:21,587
+O halde bunun değerleri nereye yaklaşıyor?
+
+782
+01:27:21,668 --> 01:27:22,507
+1'e yaklaşıyor.
+
+783
+01:27:27,060 --> 01:27:32,880
+ay niye biri yaklaştır? Şurası sıfıra gidiyor. Delirdim mi ben? Sonsuza yaklaşıyor.
+
+784
+01:27:38,868 --> 01:27:41,388
+artı sonsuz oluyor. Yani şu
+
+785
+01:27:41,388 --> 01:27:50,288
+eksi 2'ye soldan yaklaşınca paydası da artı olduğu için artı sonsuz olacak. Tamamdır.
+
+786
+01:27:52,048 --> 01:27:54,548
+Şuralarda da isterseniz bakalım.
+
+787
+01:27:58,612 --> 01:28:03,591
+Burada ne olacak? Şurayı sonsuz yazdık. Tamamdır.
+
+788
+01:28:04,632 --> 01:28:14,891
+Buradaysa eksi 2'den sıfıra doğru artıyor. Orada tepe noktası yapıp aşağı dönüyor. Azalmaya başlıyor fonksiyon.
+
+789
+01:28:15,632 --> 01:28:19,431
+Bunun şekli az çok çıkıyor buradan. Şuraya bakalım.
+
+790
+01:28:19,431 --> 01:28:28,212
+x değerleri 2'den sonsuza doğru artarken f fonksiyonu ne oluyor? Azalıyor. Nereye azalıyor?
+
+791
+01:28:28,612 --> 01:28:33,051
+Yatay asimptotumuz 1'de. O halde 1'e doğru azalacaklar.
+
+792
+01:28:33,891 --> 01:28:35,572
+Nereden? Sonsuzdan.
+
+793
+01:28:36,712 --> 01:28:38,792
+Sonsuzdan 1'e doğru azalacak.
+
+794
+01:28:40,192 --> 01:28:42,832
+Şu asimtot olduğu için sonsuzdan değil.
+
+795
+01:28:42,832 --> 01:28:43,992
+Şimdi
+
+796
+01:28:43,992 --> 01:28:49,132
+şöyle büyük bir
+
+797
+01:28:49,132 --> 01:28:53,252
+grafik çizelim.
+
+798
+01:28:54,372 --> 01:28:58,152
+Asimtotları renkli kalemle de çizebiliriz fark etmez.
+
+799
+01:28:58,152 --> 01:29:28,132
+eksi 2 ve artı 2.
+
+800
+01:29:11,764 --> 01:29:13,844
+Bunlar dicasim totlarımız.
+
+801
+01:29:15,243 --> 01:29:17,243
+y eşit 1, bu da
+
+802
+01:29:21,587 --> 01:29:23,587
+yatay asimptotumuz da
+
+803
+01:29:23,587 --> 01:29:26,087
+çok iyi çizdim.
+
+804
+01:29:43,123 --> 01:29:51,023
+Burada dedik ki fonksiyon değerleri x- sonsuzdayken fonksiyonun değerleri neye yakın?
+
+805
+01:29:51,123 --> 01:29:51,743
+1'e yakın.
+
+806
+01:29:52,764 --> 01:29:55,463
+1'den nereye doğru artacak?
+
+807
+01:29:55,783 --> 01:30:03,123
+1'den sonsuza doğru x değerleri 2-2'ye yaklaşınca y'nin değerleri de sonsuza doğru artacak.
+
+808
+01:30:03,123 --> 01:30:05,243
+Kon kalmığı da yukarı doğru.
+
+809
+01:30:05,623 --> 01:30:09,243
+O halde şöyle bir nesi olacak?
+
+810
+01:30:09,384 --> 01:30:10,463
+Grafiği olacak.
+
+811
+01:30:10,463 --> 01:30:13,403
+Şuradan bir çizelim.
+
+812
+01:30:15,823 --> 01:30:17,884
+Böyle bir grafiği olacak.
+
+813
+01:30:20,243 --> 01:30:23,304
+Aslında şurayı da çizip yansıtabiliriz gerisini.
+
+814
+01:30:23,423 --> 01:30:25,783
+Y eksenine göre simetrik olacak çünkü.
+
+815
+01:30:26,563 --> 01:30:28,943
+Gelelim eksi 2 artı 2 aralığına.
+
+816
+01:30:28,943 --> 01:30:36,304
+Eksi 2 artı 2 aralığında fonksiyon x eşit 0'a kadar artacak.
+
+817
+01:30:36,783 --> 01:30:38,403
+0'dan sonra azalacak.
+
+818
+01:30:38,403 --> 01:30:43,644
+Yalnız burada x eşit 0 iken y değeri neydi?
+
+819
+01:30:43,743 --> 01:30:44,903
+Maksimum değeri neydi?
+
+820
+01:30:44,983 --> 01:30:46,644
+Onları da hesaplamamışız.
+
+821
+01:30:47,304 --> 01:30:49,863
+0'da fonksiyonun maksimum değeri var.
+
+822
+01:30:50,523 --> 01:30:54,043
+x yerine 0 koyarsak maksimum değer ne çıkacak?
+
+823
+01:30:54,203 --> 01:30:56,163
+1 bölü 4 çıkacak.
+
+824
+01:30:56,163 --> 01:31:00,743
+Zaten 0 1 bölü 4 noktasından geçiyordu.
+
+825
+01:31:03,503 --> 01:31:05,463
+Şurası 1 bölü 4 olsun.
+
+826
+01:31:07,503 --> 01:31:10,943
+1'de eksi 1 ile artı 1'de eksenleri kesiyordu.
+
+827
+01:31:11,443 --> 01:31:12,983
+Eksi 1 şurası olsun.
+
+828
+01:31:13,144 --> 01:31:14,703
+Artı 1'de burası olsun.
+
+829
+01:31:15,243 --> 01:31:20,043
+Burada da eksenleri kesecek ve maksimum değeri 1 bölü 4 olacak.
+
+830
+01:31:20,043 --> 01:31:28,283
+Fonksiyon x değerleri eksi 2'ye yaklaşırken fonksiyonun değerleri ne olacak?
+
+831
+01:31:28,543 --> 01:31:30,304
+Eksi sonsuz olacak değil mi?
+
+832
+01:31:31,543 --> 01:31:32,863
+Eksi sonsuz mu oluyor?
+
+833
+01:31:32,963 --> 01:31:35,543
+Eksi 2'nin solunda bakalım.
+
+834
+01:31:35,543 --> 01:32:05,523
+Eksi 1'nin solunda bakalım.
+
+835
+01:31:40,819 --> 01:31:42,599
+Sağında, solunda bakmıştık.
+
+836
+01:31:43,039 --> 01:31:45,179
+Sağında baktığımızda,
+
+837
+01:31:48,119 --> 01:31:50,840
+sağında aldığında burası ne olacaktır?
+
+838
+01:31:52,840 --> 01:31:56,719
+Mutlak değerci 2'den küçük olduğundan negatif olacak.
+
+839
+01:31:56,920 --> 01:31:58,399
+Yani eksi sonsuz olacak.
+
+840
+01:31:59,639 --> 01:32:00,939
+Şurası eksi sonsuz.
+
+841
+01:32:00,939 --> 01:32:03,000
+Eksi sonsuz olduğu için,
+
+842
+01:32:03,399 --> 01:32:05,739
+eksi 2'deki değerleri ne oluyormuş?
+
+843
+01:32:06,099 --> 01:32:07,939
+Eksi sonsuza yaklaşıyormuş.
+
+844
+01:32:10,819 --> 01:32:11,519
+arttı.
+
+845
+01:32:12,059 --> 01:32:14,639
+Bu noktadan sonra da azalmaya başladı.
+
+846
+01:32:15,179 --> 01:32:18,340
+Yine burada da sonsuza yaklaşıyor.
+
+847
+01:32:18,899 --> 01:32:22,719
+Bakın, şu y eksenine göre aldığınız,
+
+848
+01:32:22,819 --> 01:32:24,799
+şu parçaları yansıttığınızda
+
+849
+01:32:24,799 --> 01:32:26,819
+aslında şeklin tamamı çıkıyor.
+
+850
+01:32:26,939 --> 01:32:29,239
+Ama biz daha iyi görebilmek için
+
+851
+01:32:29,239 --> 01:32:30,920
+ben şu kısmı da çizeceğim.
+
+852
+01:32:31,679 --> 01:32:33,340
+Yani tabloya bakarak çizeceğim.
+
+853
+01:32:33,460 --> 01:32:35,880
+Yoksa şunun direk simetriğini alıp
+
+854
+01:32:35,880 --> 01:32:38,420
+şu grafiği çizebilirsiniz, yapabilirsiniz.
+
+855
+01:32:38,420 --> 01:32:40,979
+Hatta isterseniz yapalım.
+
+856
+01:32:42,380 --> 01:32:44,259
+Bu da böyle bir şey olacak.
+
+857
+01:32:45,079 --> 01:32:47,420
+Grafik simetriden dolayı
+
+858
+01:32:48,059 --> 01:32:50,259
+şurayı incelemenize gerek yok.
+
+859
+01:32:50,380 --> 01:32:52,619
+Ya da incelerseniz de ne göreceksiniz?
+
+860
+01:32:53,099 --> 01:32:54,199
+X değerleri
+
+861
+01:32:54,199 --> 01:32:57,039
+2'ye yaklaştığında
+
+862
+01:32:57,039 --> 01:32:59,199
+f'in değeri sonsuz oluyor.
+
+863
+01:32:59,719 --> 01:33:01,619
+Sonsuzdan nereye azalacak?
+
+864
+01:33:01,619 --> 01:33:03,619
+X değerleri sonsuz oluyor.
+
+865
+01:33:03,619 --> 01:33:04,840
+X değerleri sonsuza gittikçe
+
+866
+01:33:04,840 --> 01:33:06,619
+Y değerleri de yani
+
+867
+01:33:06,619 --> 01:33:08,399
+f değerleri de bire doğru
+
+868
+01:33:08,399 --> 01:33:10,039
+asimptota doğru azalıyor.
+
+869
+01:33:10,539 --> 01:33:11,159
+Bu şekilde
+
+870
+01:33:11,159 --> 01:33:12,920
+konkamlıkta yukarı doğru
+
+871
+01:33:12,920 --> 01:33:14,739
+öyle çizeriz.
+
+872
+01:33:24,756 --> 01:33:28,816
+nereden geliyor, nereye gidiyor, onlara bakıp çiziyoruz işte böyle.
+
+873
+01:33:30,776 --> 01:33:38,536
+Basit bir fonksiyon gibi görülüyor ama gördüğünüz gibi 3 parçalı bir grafik çıkıyor karşımıza.
+
+874
+01:33:39,155 --> 01:33:53,716
+Şimdi bir sonraki sayfada, o zamanımız var, bir sonraki sayfada bir polinom grafiği var, arkasında bir tane daha var.
+
+875
+01:33:53,716 --> 01:33:56,476
+o polinom grafiklerini size bırakacağım.
+
+876
+01:33:57,916 --> 01:33:59,096
+Onlara bakarsınız.
+
+877
+01:33:59,615 --> 01:34:05,096
+Zaten çok zor olmadığı için derste de pek üzerinde de durmamıştım.
+
+878
+01:34:06,436 --> 01:34:06,716
+Onların...
+
+879
+01:34:10,612 --> 01:34:19,011
+O ikisini size bıraktım. Ben şu mutlak değerli olanı çözmek istiyorum. Mutlak değerli bir grafik karşımıza gelebilir çünkü.
+
+880
+01:34:25,811 --> 01:34:29,032
+grafik çizdiren programlar varmış.
+
+881
+01:34:29,872 --> 01:34:31,271
+Biliyor musunuz onları?
+
+882
+01:34:41,268 --> 01:34:43,068
+Hocam hesap makineleri de iş çiziyor.
+
+883
+01:34:43,587 --> 01:34:47,268
+İş çiziyor mu? Yani size ben şu fonksiyonu versem.
+
+884
+01:34:52,851 --> 01:35:13,171
+y eşit mutlak değer x artı 1 bölü x. Siz bunun grafiğini çizdirebiliyor musunuz hemen? Mutlak değerden emin değilim ama Google çiziyor normalde. Google'a bir fonksiyon yazınca direkt grafiğini veriyor. Şunu verseydim o zaman grafiğini rahatlıkla çizerdiniz değil mi? Evet.
+
+885
+01:35:18,131 --> 01:35:19,131
+Bu da.
+
+886
+01:35:23,507 --> 01:35:24,028
+ne olunca
+
+887
+01:35:24,028 --> 01:35:26,608
+ne yapacağız?
+
+888
+01:35:35,155 --> 01:35:45,055
+Mutlak değer olunca da öncelikle mutlak değeri kaldırıp bu fonksiyonun grafiğini çizeceğiz.
+
+889
+01:35:45,435 --> 01:35:54,435
+Bu fonksiyonun grafiğini çizdikten sonra x ekseninin altında kalan bölgeyi ne yapacağız? Yukarı taşıyacağız.
+
+890
+01:35:54,435 --> 01:36:05,135
+Nasıl? x eksenine göre simetriğini alıp o şekilde mutlak değer fonksiyonunun grafiğini tamamlamış olacağız, çizmiş olacağız.
+
+891
+01:36:05,496 --> 01:36:08,055
+Örneğin şöyle bir fonksiyon alsaydık.
+
+892
+01:36:08,095 --> 01:36:11,395
+Y eşit mutlak değer ne olsun?
+
+893
+01:36:12,615 --> 01:36:16,135
+2-x kare fonksiyonu olsun.
+
+894
+01:36:20,627 --> 01:36:24,907
+Y eşit 2x, x karenin grafiği aşağı yukarı nasıl oluyor?
+
+895
+01:36:25,007 --> 01:36:26,907
+Bunun parabola olduğunu biliyorum.
+
+896
+01:36:28,827 --> 01:36:32,007
+X sıfır olduğunda y değeri 2 olacak.
+
+897
+01:36:32,287 --> 01:36:34,067
+2 noktasından geçecek.
+
+898
+01:36:34,447 --> 01:36:37,287
+Eksenleri şuralarda bir yerlerde kesecek.
+
+899
+01:36:37,387 --> 01:36:39,207
+Onları bulacaksınız.
+
+900
+01:36:40,728 --> 01:36:42,747
+Böyle bir grafiği olacak.
+
+901
+01:36:42,927 --> 01:36:45,087
+Mutlak değer olunca ne yapıyorduk?
+
+902
+01:36:45,087 --> 01:36:53,087
+X eksenin altına düşen yeri şöyle kıvırıyorduk.
+
+903
+01:36:54,167 --> 01:36:57,527
+X eksenine göre simetrisini alıyorduk.
+
+904
+01:36:57,847 --> 01:37:02,127
+Dolayısıyla bunun grafiği mutlak değer olunca şu üst kısım oluyordu.
+
+905
+01:37:02,487 --> 01:37:04,047
+Bunlarda da aynı şekilde.
+
+906
+01:37:04,527 --> 01:37:10,387
+Yani mutlak değerli fonksiyon verildiğinde önce mutlak değeri kaldırarak grafiğini çizin.
+
+907
+01:37:10,387 --> 01:37:14,087
+Sonra da X eksenine göre simetriğini alın.
+
+908
+01:37:14,087 --> 01:37:16,607
+altındaki kısmın simetriğini alın.
+
+909
+01:37:16,947 --> 01:37:18,607
+Grafik tamamlanmış oluyor.
+
+910
+01:37:19,107 --> 01:37:20,387
+Tanım kümemiz nedir?
+
+911
+01:37:23,467 --> 01:37:26,807
+X eşit sıfırda tanımsız olacağı için
+
+912
+01:37:26,807 --> 01:37:30,188
+R fark sıfırdır.
+
+913
+01:37:32,047 --> 01:37:37,047
+Dolayısıyla sıfır hariç tüm R sayılarda bu fonksiyon tanımlıdır.
+
+914
+01:37:42,452 --> 01:37:43,212
+Pardon.
+
+915
+01:37:57,043 --> 01:38:01,264
+Aynı zamanda tek fonksiyondur.
+
+916
+01:38:02,583 --> 01:38:04,523
+f-x neye eşittir?
+
+917
+01:38:05,743 --> 01:38:08,703
+eksi x, eksi 1 bölü x.
+
+918
+01:38:08,823 --> 01:38:13,724
+Bunu da eksi parantezine alarak yazarsanız, x artı 1 bölü x.
+
+919
+01:38:13,903 --> 01:38:15,384
+Yani şurası fx'tir.
+
+920
+01:38:15,943 --> 01:38:20,283
+eksi f, x'e eşit olduğunda tek fonksiyon.
+
+921
+01:38:21,064 --> 01:38:24,983
+Tek fonksiyonlarda biliyoruz ki orijinal öresimetrik.
+
+922
+01:38:31,796 --> 01:38:37,836
+Simetri de var. Bu simetrilerin olması grafiği çizmeyi kolaylaştırıyordu.
+
+923
+01:38:37,836 --> 01:38:41,516
+Şimdi asimtotlarımız neler var mı onlara bakalım.
+
+924
+01:38:42,296 --> 01:38:44,916
+Bir de eksenleri kestiği nokta var mı?
+
+925
+01:38:45,316 --> 01:38:50,096
+X'i sıfır alamayacağım. Sıfır tanım kümesine dahil değil.
+
+926
+01:38:50,235 --> 01:38:53,176
+Dolayısıyla X değerim sıfır olmayacak.
+
+927
+01:38:54,235 --> 01:38:59,556
+Y'yi de sıfır yapan hiçbir değer olmadığından eksenleri kestiği noktalar yok.
+
+928
+01:38:59,716 --> 01:39:00,836
+Eksenleri kesmiyor.
+
+929
+01:39:01,796 --> 01:39:05,235
+O halde asimtotlarına bakalım.
+
+930
+01:39:08,115 --> 01:39:11,476
+Şu ne olacak? X kare artı bir bölü X fonksiyonu.
+
+931
+01:39:11,496 --> 01:39:15,235
+Yani rasyonel bir fonksiyon haline getirirseniz X eşit sıfır.
+
+932
+01:39:16,636 --> 01:39:20,256
+Paydayı sıfır yapan değer. Bizim neyimiz oluyordu?
+
+933
+01:39:20,356 --> 01:39:21,436
+İlk asimtotumuz.
+
+934
+01:39:23,816 --> 01:39:26,155
+İlk asimtot sıfır noktası.
+
+935
+01:39:27,716 --> 01:39:30,296
+Burada ne var? İlk asimtot da var.
+
+936
+01:39:30,296 --> 01:39:32,155
+Çünkü payda eşitlediğimde
+
+937
+01:39:32,155 --> 01:39:35,896
+burası X kare artı bir bölü X fonksiyonu oluyor.
+
+938
+01:39:36,576 --> 01:39:37,816
+Payın derecesi
+
+939
+01:39:37,816 --> 01:39:42,076
+paydanın derecesinden bir büyük olduğu için
+
+940
+01:39:42,076 --> 01:39:43,376
+E-lk asimtot'tur.
+
+941
+01:39:44,036 --> 01:39:45,496
+Dolayısıyla ne olacak?
+
+942
+01:39:45,735 --> 01:39:48,296
+Bunu direkt örme işlemi yaparak
+
+943
+01:39:48,296 --> 01:39:50,036
+E-lk asimtotu bulabilirsiniz.
+
+944
+01:39:50,036 --> 01:39:56,036
+İlk asimtotu bulabilirsiniz.
+
+945
+01:39:55,667 --> 01:40:03,567
+0 demeye gerek yok, 1 kalacak. Dolayısıyla y eşit x, e'yi kare artı 1 kalacak.
+
+946
+01:40:07,283 --> 01:40:24,523
+Yatay asimptotumuz var mı? x sonsuza giderken y de ne olacak? Sonsuza gidecek. Çünkü payın derecesi faydanın derecesinden büyük ya. x artı x'i sonsuza giderken fx de ne olur?
+
+947
+01:40:38,707 --> 01:40:43,567
+sonsuz olur. Artı sonsuz olur hatta. Dolayısıyla yatay asimptot yok.
+
+948
+01:40:49,235 --> 01:40:50,815
+İki tane asim totumuz var.
+
+949
+01:40:51,655 --> 01:40:57,355
+Başka artık bu fonksiyonlardan yapabileceğim bir şey yok.
+
+950
+01:40:57,675 --> 01:40:58,756
+Türevine bakalım.
+
+951
+01:41:01,095 --> 01:41:03,095
+Y üstü türevi neye eşit olacak?
+
+952
+01:41:05,095 --> 01:41:14,036
+Şuradan alırsak bir, yani şunun türevini alırsam bir eksi bir bölüm x kare olur değil mi bunun türevi?
+
+953
+01:41:14,036 --> 01:41:27,996
+Dolayısıyla pay değişiklediğimde x kare eksi bir, x kare eksi biri de x eksi bir, x artı bir bölüm x kare olarak yazabilirim.
+
+954
+01:41:27,996 --> 01:41:31,475
+Birinci türevimiz böyle olur.
+
+955
+01:41:33,376 --> 01:41:35,735
+x farklı sıfırdı değil mi?
+
+956
+01:41:35,836 --> 01:41:37,815
+Sıfır tanım kümesine ait değil.
+
+957
+01:41:38,256 --> 01:41:41,195
+Dolayısıyla x eşit sıfır ne olmayacak?
+
+958
+01:41:41,315 --> 01:41:43,376
+Bir kritik nokta olmayacak.
+
+959
+01:41:43,376 --> 01:41:51,956
+Bunu sıfıra eşitlersek x eşit bir ve x eşit eksi bir ne çıkacak?
+
+960
+01:41:52,395 --> 01:41:55,675
+Bunun kökleri olacağından sıfır yapan değerler olacak.
+
+961
+01:41:56,215 --> 01:42:02,456
+Dolayısıyla x eşit bir ve x eşit eksi bir bizim kritik noktalarımız olacaklar.
+
+962
+01:42:03,215 --> 01:42:05,215
+İki tane kritik noktamız var.
+
+963
+01:42:05,215 --> 01:42:14,256
+Artık tabloyu yapınca buralardaki ekstrem değerlerin ne olduğunu da belirleyebiliriz.
+
+964
+01:42:14,836 --> 01:42:19,615
+İkinci türevi de alıp bunun nesine bakacağız.
+
+965
+01:42:21,796 --> 01:42:23,456
+Konkablığına bakacağız.
+
+966
+01:42:23,456 --> 01:42:26,115
+Birinci türevimiz buydu.
+
+967
+01:42:26,215 --> 01:42:30,175
+İkinci türev y2 üstü şöyle 5 diyelim.
+
+968
+01:42:32,036 --> 01:42:37,775
+Y2 üstü türevi alıp da düzenlediğimizde sabit bir şey çıkıyor.
+
+969
+01:42:37,935 --> 01:42:39,456
+Payı sabit çıkıyor.
+
+970
+01:42:39,615 --> 01:42:41,836
+İki bölüm x küp oluyor.
+
+971
+01:42:41,836 --> 01:42:52,496
+Dolayısıyla sıfırdan küçük x'ler için negatif, büyük x'ler için pozitif olacak.
+
+972
+01:42:52,675 --> 01:42:53,975
+Ancak bunun nesi yok?
+
+973
+01:42:54,155 --> 01:42:54,756
+Kökü yok.
+
+974
+01:42:54,756 --> 01:43:02,695
+Yani y2 üstünü sıfır yapan bir x değeri yok.
+
+975
+01:43:04,595 --> 01:43:05,576
+Kökü yok.
+
+976
+01:43:06,475 --> 01:43:07,796
+Onu bir yazmayayım artık.
+
+977
+01:43:08,755 --> 01:43:10,395
+Şimdi şuraları temizleyelim.
+
+978
+01:43:10,515 --> 01:43:15,355
+Bulduğumuz değerleri tabloda yerine yazalım.
+
+979
+01:43:29,555 --> 01:43:30,695
+Sıfır çıkacak.
+
+980
+01:43:31,175 --> 01:43:32,955
+Eksi bir ve artı bir bulduk.
+
+981
+01:43:33,035 --> 01:43:34,195
+Kritik noktalarımız.
+
+982
+01:43:34,295 --> 01:43:35,895
+O zaman eksi bir şurası olsun.
+
+983
+01:43:36,135 --> 01:43:37,355
+Arada sıfırı alalım.
+
+984
+01:43:37,495 --> 01:43:38,755
+Artı bir burası olsun.
+
+985
+01:43:39,335 --> 01:43:42,576
+Başka da ikinci türevin zaten kökleri yoktu.
+
+986
+01:43:43,275 --> 01:43:45,395
+Burası da sonsuz değerlerimiz olsun.
+
+987
+01:43:48,655 --> 01:43:49,775
+Y üstü türevim.
+
+988
+01:43:49,875 --> 01:43:51,055
+Y iki üstü türevim.
+
+989
+01:43:51,135 --> 01:43:52,295
+Bu da y değerleri.
+
+990
+01:43:54,595 --> 01:43:58,315
+Artı bir ve eksi bir kritik nokta olduğu için
+
+991
+01:43:58,315 --> 01:43:59,835
+bunları ne yaptım?
+
+992
+01:44:00,535 --> 01:44:01,315
+Gösterdim.
+
+993
+01:44:01,475 --> 01:44:03,215
+Y üstünün sıfır kökü yani.
+
+994
+01:44:05,055 --> 01:44:07,935
+Sıfırda tanımsız çift çizgiyle gösterdim.
+
+995
+01:44:08,035 --> 01:44:11,815
+Bir de yine y üstünün kökü olduğu için gösterdim.
+
+996
+01:44:12,635 --> 01:44:14,895
+Türevin işaretine bakarsak
+
+997
+01:44:14,895 --> 01:44:17,795
+ne çıkmıştı?
+
+998
+01:44:17,795 --> 01:44:19,715
+X eksi bir çarpı.
+
+999
+01:44:19,775 --> 01:44:21,495
+X artı bir bölüm.
+
+1000
+01:44:21,835 --> 01:44:22,895
+X'in karesiydi.
+
+1001
+01:44:23,015 --> 01:44:25,735
+Dolayısıyla payda pozitif olduğu için
+
+1002
+01:44:25,735 --> 01:44:27,355
+paya bakmamız lazım.
+
+1003
+01:44:27,355 --> 01:44:28,635
+X eksi bir çarpı.
+
+1004
+01:44:28,695 --> 01:44:30,775
+X artı bir değerleri.
+
+1005
+01:44:31,935 --> 01:44:34,815
+Eksi birden küçük değerler aldığında
+
+1006
+01:44:34,815 --> 01:44:36,515
+türev pozitif çekecek.
+
+1007
+01:44:39,355 --> 01:44:43,195
+Eksi bir ile sıfır arasında değerler alırsam
+
+1008
+01:44:43,195 --> 01:44:47,335
+yani eksi birden küçük değerler alınca
+
+1009
+01:44:47,335 --> 01:44:49,135
+ne olacak?
+
+1010
+01:44:50,655 --> 01:44:52,655
+X eksi birden dolayı
+
+1011
+01:44:52,655 --> 01:44:57,395
+burası negatif olacak.
+
+1012
+01:44:57,395 --> 01:45:01,655
+sıfırın sağındaysa
+
+1013
+01:45:01,655 --> 01:45:04,855
+şurası negatif
+
+1014
+01:45:04,855 --> 01:45:06,555
+yine burası pozitif olacak.
+
+1015
+01:45:06,555 --> 01:45:07,675
+İkinci türev
+
+1016
+01:45:07,675 --> 01:45:09,955
+ikinci türevde dedik ki
+
+1017
+01:45:09,955 --> 01:45:12,475
+sıfırdan küçük değerler için negatif
+
+1018
+01:45:12,475 --> 01:45:16,175
+büyük değerler için de pozitif çıkacak.
+
+1019
+01:45:16,175 --> 01:45:20,095
+fonksiyonumuz şu aralıkta
+
+1020
+01:45:20,095 --> 01:45:20,855
+artan
+
+1021
+01:45:20,855 --> 01:45:21,895
+ters çizdim.
+
+1022
+01:45:23,635 --> 01:45:24,675
+Azalan
+
+1023
+01:45:24,675 --> 01:45:26,455
+azalan
+
+1024
+01:45:26,455 --> 01:45:27,795
+ve artan
+
+1025
+01:45:27,795 --> 01:45:30,455
+konkavlığımız
+
+1026
+01:45:30,455 --> 01:45:33,015
+aşağı doğru
+
+1027
+01:45:33,015 --> 01:45:35,775
+sıfır sonsuz aralığında
+
+1028
+01:45:35,775 --> 01:45:36,715
+yukarı doğru
+
+1029
+01:45:36,715 --> 01:45:38,975
+eksi sonsuz sıfır aralığında
+
+1030
+01:45:38,975 --> 01:45:40,915
+aşağı doğru olacak şekilde
+
+1031
+01:45:40,915 --> 01:45:42,815
+yapıyoruz.
+
+1032
+01:45:45,675 --> 01:45:47,415
+Kritik noktalarımız
+
+1033
+01:45:47,415 --> 01:45:49,595
+eksi bir ve artı bir noktasıydı.
+
+1034
+01:45:49,695 --> 01:45:51,355
+Bunların sağında ve solunda
+
+1035
+01:45:51,355 --> 01:45:52,995
+işareti değiştiği için
+
+1036
+01:45:52,995 --> 01:45:55,515
+artıdan eksiye geçtiği için
+
+1037
+01:45:55,515 --> 01:45:56,815
+burası maksimum değer
+
+1038
+01:45:56,815 --> 01:45:58,595
+eksiden artıya geçtiği için
+
+1039
+01:45:58,595 --> 01:45:59,315
+burası da
+
+1040
+01:45:59,315 --> 01:46:01,395
+minimum değer olacak.
+
+1041
+01:46:04,695 --> 01:46:07,175
+Yatay asimtotumuz yok.
+
+1042
+01:46:07,175 --> 01:46:11,355
+x değerleri
+
+1043
+01:46:11,355 --> 01:46:12,895
+eksi sonsuzdan
+
+1044
+01:46:12,895 --> 01:46:13,675
+nereye?
+
+1045
+01:46:13,875 --> 01:46:14,795
+Sıfıra doğru
+
+1046
+01:46:14,795 --> 01:46:16,255
+gelirken
+
+1047
+01:46:16,255 --> 01:46:16,975
+ama önce
+
+1048
+01:46:16,975 --> 01:46:18,036
+eksi bire kadar
+
+1049
+01:46:18,036 --> 01:46:18,895
+artarak
+
+1050
+01:46:18,895 --> 01:46:19,335
+gelecek
+
+1051
+01:46:19,335 --> 01:46:20,695
+eksi birden sonra
+
+1052
+01:46:20,695 --> 01:46:22,335
+azalacak
+
+1053
+01:46:22,335 --> 01:46:23,495
+nereye doğru?
+
+1054
+01:46:23,615 --> 01:46:24,835
+Sonsuza doğru değil mi?
+
+1055
+01:46:25,495 --> 01:46:27,015
+Yatay asimtotu olmadığı için
+
+1056
+01:46:27,015 --> 01:46:28,515
+burada sonsuz çıkmıştı.
+
+1057
+01:46:28,595 --> 01:46:29,275
+Sonsuz muydu?
+
+1058
+01:46:29,335 --> 01:46:30,235
+Eksi sonsuz muydu?
+
+1059
+01:46:30,615 --> 01:46:32,195
+Şurada eksi sonsuz çıkmıştı
+
+1060
+01:46:32,195 --> 01:46:33,335
+diye hatırlıyorum birinci.
+
+1061
+01:46:35,015 --> 01:46:36,975
+Sıfıra yaklaşırken
+
+1062
+01:46:36,975 --> 01:46:39,055
+yine ne olacak?
+
+1063
+01:46:40,055 --> 01:46:41,795
+Eksi sonsuz olacak.
+
+1064
+01:46:42,795 --> 01:46:44,036
+Eksi sonsuz mu olacak?
+
+1065
+01:46:45,715 --> 01:46:47,615
+Y sıfıra yaklaşırken
+
+1066
+01:46:47,615 --> 01:46:51,995
+sonsuz olacak.
+
+1067
+01:46:51,995 --> 01:46:58,995
+ve
+
+1068
+01:47:07,859 --> 01:47:09,519
+sıfıra soldan yaklaşıyorum.
+
+1069
+01:47:10,259 --> 01:47:11,920
+Soldan yaklaşırken
+
+1070
+01:47:19,283 --> 01:47:24,923
+x sonsuz çıkacak.
+
+1071
+01:47:30,771 --> 01:47:35,091
+şunun x'i sonsuz yazdık. Burada ne dedi? x sonsuz olunca
+
+1072
+01:47:41,716 --> 01:47:43,176
+Bunları niye sonsuza yazdım ben?
+
+1073
+01:47:45,716 --> 01:47:49,736
+x değerleri eksi sonsuza gidince ne oluyor?
+
+1074
+01:47:49,956 --> 01:47:51,736
+Şurası eksi sonsuz, burası sıfır.
+
+1075
+01:47:51,816 --> 01:47:53,436
+Evet, eksi sonsuz oluyor. Doğru.
+
+1076
+01:47:53,956 --> 01:47:56,076
+Tamam. Doğru yazmışız.
+
+1077
+01:47:57,216 --> 01:47:59,296
+Eksi sonsuz, eksi sonsuz.
+
+1078
+01:47:59,736 --> 01:48:02,756
+Sıfırın sağında artı sonsuz olacak değil mi?
+
+1079
+01:48:04,936 --> 01:48:07,096
+Şuradan dolayı eksiklik gelecek.
+
+1080
+01:48:07,296 --> 01:48:08,876
+Sağında artı sonsuz olacak.
+
+1081
+01:48:08,876 --> 01:48:13,296
+Yine x değerleri sonsuza yaklaşırken yine sonsuz olacak.
+
+1082
+01:48:17,300 --> 01:48:21,579
+Bunları da belirledikten sonra artık grafiğimizi çizebiliriz.
+
+1083
+01:48:21,619 --> 01:48:24,060
+Ben şurayı minyatür olarak çizeyim.
+
+1084
+01:48:28,340 --> 01:48:32,020
+X eşit 0 yani y ekseni bir asimtot olacak.
+
+1085
+01:48:33,579 --> 01:48:37,480
+Bir de neyimiz var?
+
+1086
+01:48:37,680 --> 01:48:39,460
+Y eşit X doğrumuz var.
+
+1087
+01:48:41,520 --> 01:48:43,579
+Bu da asimtot.
+
+1088
+01:48:45,119 --> 01:48:46,320
+8 asimtot.
+
+1089
+01:48:52,787 --> 01:48:57,827
+x değerleri, eksi sonsuzdan, eksi bire doğru.
+
+1090
+01:49:02,644 --> 01:49:12,564
+Şu değeri de hesaplayalım. x eksi 1, pardon, y değeri ne olacak? x'i eksi 1 alırsam, eksi 1, eksi 1, eksi 2 olacak.
+
+1091
+01:49:14,364 --> 01:49:25,564
+1 alırsak da artı 2 olacak. O halde şurası eksi 2 olacak. Şu noktada maksimum yapacak değil mi? Maksimum değere sahipmiş fonksiyon.
+
+1092
+01:49:25,564 --> 01:49:30,824
+Bu noktada maksimum değere sahip ama eksi sonsuzdan bire kadar artarak gelecek.
+
+1093
+01:49:37,716 --> 01:49:45,916
+Biraz daha şu noktadan sonra yine eksi sonsuza azalacak.
+
+1094
+01:49:47,256 --> 01:49:58,396
+Buradaysa sıfırın sağındaysa x değerleri sıfırdan 1'e doğru artınca y değerleri de eksi sonsuzdan nereye?
+
+1095
+01:49:58,936 --> 01:50:00,655
+2'ye doğru azalıyor.
+
+1096
+01:50:01,176 --> 01:50:03,216
+Sonsuzdan 2'ye doğru gelecek.
+
+1097
+01:50:04,276 --> 01:50:05,416
+Şurası 2 olsun.
+
+1098
+01:50:05,416 --> 01:50:08,336
+Bu konuda azalacak.
+
+1099
+01:50:08,456 --> 01:50:09,936
+2'den sonra da ne olacak?
+
+1100
+01:50:11,136 --> 01:50:21,236
+Değerler x değerleri birden sonsuza doğru artarken y değerleri de 2'den sonsuza doğru şöyle artacak.
+
+1101
+01:50:21,836 --> 01:50:23,356
+Şurası 2 olsun.
+
+1102
+01:50:23,516 --> 01:50:24,296
+Eksi 2 tamam.
+
+1103
+01:50:25,776 --> 01:50:27,936
+Şurası artı 1 orası da eksi 1.
+
+1104
+01:50:28,376 --> 01:50:29,736
+Böyle bir grafik olacak.
+
+1105
+01:50:29,736 --> 01:50:36,655
+Yalnız mutlak değer x artı 1 bölü x'in grafiğini sorduğu için ne yapacağım?
+
+1106
+01:50:36,655 --> 01:50:40,655
+Ben bunu x eksenine göre simetriyeli alıp...
+
+1107
+01:51:00,692 --> 01:51:02,811
+Şöyle tabii ki daha düzgün çizip
+
+1108
+01:51:12,500 --> 01:51:14,319
+Böyle bir grafik olacak.
+
+1109
+01:51:14,859 --> 01:51:19,060
+Yani şuranın nesini aldık?
+
+1110
+01:51:19,939 --> 01:51:23,159
+x eksenine göre simetriyini almış olduk.
+
+1111
+01:51:23,699 --> 01:51:28,479
+Bu x artı 1 bölü x'in grafiği.
+
+1112
+01:51:29,340 --> 01:51:34,340
+Şu ise mutlak değer x artı 1 bölü x'in grafiği.
+
+1113
+01:51:38,644 --> 01:51:50,784
+Ara zamanımız da geçti. Şimdi biraz ara verelim. Aradan sonra da size başka sorular, yani ikinci dosyadaki sorulara bakalım. Onları çözelim.
+
+1114
+01:52:04,979 --> 01:52:06,019
+silmeyin belki.
+
+1115
+01:52:07,479 --> 01:52:08,099
+Bakarsınız.
+
+1116
+01:52:11,764 --> 01:52:12,824
+biraz şimdi ara.
+
+1117
+02:07:33,876 --> 02:07:40,275
+Tekrar merhaba arkadaşlar. Ben tahtayı temizleyeyim. Şimdi tekrardan sorularımıza devam edelim.
+
+1118
+02:08:34,260 --> 02:08:35,380
+ilk sorumuz şu
+
+1119
+02:08:40,564 --> 02:08:52,003
+0'dan 2x eksi x kareye kosinüs 1 bölü 1 artı t kare dt.
+
+1120
+02:08:53,304 --> 02:09:00,104
+Fonksiyonunun bir maksimum veya minimum değere sahip olduğu noktalar var mıdır?
+
+1121
+02:09:01,064 --> 02:09:01,864
+Bunu bulacağız.
+
+1122
+02:09:01,864 --> 02:09:14,304
+Bakın, maksimum ya da minimum değer için, demiştim size, ekstrem değerler için bile integral hesabın temel teoremi sorulabiliyor.
+
+1123
+02:09:14,304 --> 02:09:17,264
+Yani o teoremi kullanmak gerekiyor. Neydi o?
+
+1124
+02:09:18,024 --> 02:09:25,704
+İntegral işareti altında türev alma ya da Leibniz notasyonunu kullanmak da diyoruz buna.
+
+1125
+02:09:25,704 --> 02:09:55,684
+Şöyle yapalım.
+
+1126
+02:09:55,704 --> 02:10:03,543
+O zaman bunun kosinüs fonksiyonu sürekli bir fonksiyonu sürekli bir fonksiyonu zaten. Bunu biliyoruz.
+
+1127
+02:10:05,944 --> 02:10:12,824
+Dolayısıyla şunun her iki tarafının da x'e göre türevini alalım.
+
+1128
+02:10:30,195 --> 02:10:32,595
+ne oldu? f üstü x oldu.
+
+1129
+02:10:33,836 --> 02:10:37,435
+Şurası, işte L'Hospital notasyonunu burada kullanıyoruz.
+
+1130
+02:10:37,435 --> 02:10:43,155
+Ya da integral hesabın temel teoremi dediğimiz şey ne oluyordu?
+
+1131
+02:10:46,435 --> 02:10:51,115
+Fonksiyonda, bunun t değişkeli yerine ne yazıyorum?
+
+1132
+02:10:51,315 --> 02:10:52,555
+Üst sınırı,
+
+1133
+02:11:03,507 --> 02:11:07,507
+x kare artı 3x, f' bu sınırın türevi.
+
+1134
+02:11:11,828 --> 02:11:18,268
+x fonksiyonda t değişken yerine alt sınır yazıyorum.
+
+1135
+02:11:18,388 --> 02:11:20,008
+Çarpı alt sınırın türevi.
+
+1136
+02:11:20,468 --> 02:11:26,148
+Sıfırın türevinden dolayı sıfır olacağından şurası artık tümden sıfır olacak.
+
+1137
+02:11:26,468 --> 02:11:27,448
+Orayı yazmıyorum.
+
+1138
+02:11:28,148 --> 02:11:30,268
+Şurayı da düzenlersek ne olur?
+
+1139
+02:11:31,088 --> 02:11:31,948
+Kosinüs.
+
+1140
+02:11:45,460 --> 02:11:46,819
+2x, 2x olur.
+
+1141
+02:11:47,180 --> 02:11:48,319
+Et üstü türevi bu.
+
+1142
+02:11:52,435 --> 02:11:53,235
+Ne yapıyorduk?
+
+1143
+02:11:53,695 --> 02:11:58,175
+Sıfıra eşitleyip varsa kritik noktalarını belirliyorduk.
+
+1144
+02:11:58,435 --> 02:12:00,935
+Şimdi bunu sıfır yapan değerlere bakacağım.
+
+1145
+02:12:02,635 --> 02:12:04,235
+Şurada bakın.
+
+1146
+02:12:05,935 --> 02:12:11,415
+1 bölü 1 artı 2x eksi x karenin karesi.
+
+1147
+02:12:11,855 --> 02:12:17,456
+Şimdi x değerlerini ister pozitif alın isterseniz negatif alın.
+
+1148
+02:12:17,795 --> 02:12:18,355
+Ne olacak?
+
+1149
+02:12:18,355 --> 02:12:23,076
+Bunun karesi olduğu için şu değer daima pozitif bir değer olacak.
+
+1150
+02:12:24,215 --> 02:12:30,355
+Dolayısıyla 1 bölü 1 artı işte a gibi bir değer olacak.
+
+1151
+02:12:30,536 --> 02:12:32,655
+x eşit 0 olursa bu 0 olur.
+
+1152
+02:12:33,255 --> 02:12:39,715
+Dolayısıyla x'i 0'dan farklı seçtiğinde burası 0'dan büyük bir değer.
+
+1153
+02:12:39,715 --> 02:12:48,435
+1'den de küçük veya en fazla 1'e eşit bir değer alacaktır.
+
+1154
+02:12:48,715 --> 02:12:49,775
+Ne zaman 1 olacak?
+
+1155
+02:12:50,015 --> 02:12:51,956
+x 0 olduğunda 1 olacak.
+
+1156
+02:12:52,496 --> 02:12:58,655
+Onun haricindeki tüm pozitif ve negatif x'ler için bu değer hep ne olacak?
+
+1157
+02:12:58,655 --> 02:13:02,895
+1'den küçük kalacak.
+
+1158
+02:13:03,335 --> 02:13:11,655
+Dolayısıyla bu aralıktaki yani hem şunlar pozitif oluyor hem y görüntüsü pozitif oluyor.
+
+1159
+02:13:12,115 --> 02:13:13,915
+Hangi aralığa düşüyor?
+
+1160
+02:13:14,275 --> 02:13:16,755
+Şu 1.4'te 1'lik aralığa düşüyor.
+
+1161
+02:13:16,755 --> 02:13:27,935
+Bu aralıkta da kosinüs fonksiyonu pozitif tanımlı olduğundan yani 0'dan farklı olduğundan ne olacak?
+
+1162
+02:13:28,795 --> 02:13:34,395
+Bunu 0 yapan tek değer 2-2x fonksiyonu olacak.
+
+1163
+02:13:35,795 --> 02:13:45,515
+Kosinüs değeri burada farklı 0 olduğundan daha doğrusu 0'dan farklı demeyelim büyük 0 olduğundan şurası 0 olmak zorunda.
+
+1164
+02:13:45,515 --> 02:13:57,536
+Dolayısıyla bunu da 0 eşitlerseniz 2-2x eşit 0'dan x eşit ne çıkacak?
+
+1165
+02:13:57,755 --> 02:13:58,555
+1 çıkacak.
+
+1166
+02:13:59,235 --> 02:14:05,555
+x eşit 1 değeri için füstü fonksiyonu neye sahip olacak?
+
+1167
+02:14:05,855 --> 02:14:08,395
+1 ekstrem değere sahip olacak.
+
+1168
+02:14:08,536 --> 02:14:11,715
+Peki burada maksimum mu var minimum mu var ona bakalım.
+
+1169
+02:14:12,375 --> 02:14:15,036
+füstünün işaretine bakalım olur mu?
+
+1170
+02:14:15,515 --> 02:14:18,015
+Şuraya x diyelim.
+
+1171
+02:14:18,115 --> 02:14:20,076
+Şuraya füstü x diyelim.
+
+1172
+02:14:21,655 --> 02:14:24,155
+1 bunun kökü.
+
+1173
+02:14:25,875 --> 02:14:29,415
+1 için füstü fonksiyonunun işaretine bakalım.
+
+1174
+02:14:29,555 --> 02:14:32,215
+Dedik ki kosinüs 0'dan büyük olacak.
+
+1175
+02:14:32,715 --> 02:14:33,935
+O zaman şuraya bakalım.
+
+1176
+02:14:34,355 --> 02:14:37,895
+2-2x'in işareti ne oluyor?
+
+1177
+02:14:37,895 --> 02:14:47,135
+1'den küçük değerler aldığında pozitif çıkacak değil mi burası?
+
+1178
+02:14:47,135 --> 02:14:49,135
+2-3x'in işaretine bakalım.
+
+1179
+02:14:49,135 --> 02:14:51,135
+3-3x'in işaretine bakalım.
+
+1180
+02:14:51,135 --> 02:14:52,135
+4-3x'in işaretine bakalım.
+
+1181
+02:14:51,123 --> 02:14:59,724
+x'i 1 alırsam 0 olur. x'i 1'den küçük değerler alırsam, mesela 0 alırsam 2 olur.
+
+1182
+02:15:04,884 --> 02:15:13,043
+Tabii ki şuradaki daha büyük negatif değerler için bu başka periyodik bir fonksiyon gelecek değil mi?
+
+1183
+02:15:14,743 --> 02:15:17,463
+Sıfırdan sonrası için de ne olacak?
+
+1184
+02:15:27,091 --> 02:15:34,491
+dilin solunda, şurada, x'i büyük değerleri aldığında bunlar hep negatif olacak.
+
+1185
+02:15:35,571 --> 02:15:39,291
+Ha tamam, şuradaki bütün değerleri için pozitif. Özür dilerim.
+
+1186
+02:15:40,652 --> 02:15:49,051
+Sıfırla bir arasındaki değerleri için sadece değil, negatif aldığında da bu eksi zaten olduğundan eksi eksi artı olacak.
+
+1187
+02:15:49,051 --> 02:15:59,192
+O halde birden küçük değerler için pozitif, birden büyük değerler için negatif işaretli olacağında x eşit 1'de ne var?
+
+1188
+02:15:59,451 --> 02:16:05,112
+Fonsiyonun bir maksimum değeri var ya da mutlak maksimum değeri var deriz.
+
+1189
+02:16:05,112 --> 02:16:17,391
+x eşit 1 noktasında f'in mutlak maksimum değeri vardır deriz.
+
+1190
+02:16:26,068 --> 02:16:27,347
+Var mı sorunuz?
+
+1191
+02:16:36,435 --> 02:16:56,155
+Ben size A grubunun sorularını çözüyorum şu anda. B grubunun soruları da benzer. Çok az fark var aralarında. Yani daha çok değerlerini değiştirmişler ama B grubunun soruları da benzer olduğu için onları da siz çözün.
+
+1192
+02:17:02,131 --> 02:17:06,451
+Diğer bir sorumuz da mesela limit sorulmuş. Limit ne geliyor?
+
+1193
+02:17:07,791 --> 02:17:11,391
+Aynı sınavda aynı teorem 2 kere sorulmuş.
+
+1194
+02:17:13,371 --> 02:17:17,572
+Bakın, birden fazla şey de karşımıza çıkabiliyor.
+
+1195
+02:17:40,435 --> 02:17:41,895
+Arkkosinus, kotanjant değil.
+
+1196
+02:17:43,235 --> 02:17:43,895
+Göremiyorum.
+
+1197
+02:17:44,495 --> 02:17:53,115
+Arkkosinus t bölü t'nin karesi.
+
+1198
+02:17:55,495 --> 02:17:58,056
+Şunun dps'inin de olması lazım.
+
+1199
+02:18:02,291 --> 02:18:03,391
+bu limiti soruyor.
+
+1200
+02:18:10,195 --> 02:18:26,636
+x kare artı 1'e soldan yaklaşırken ne olacak? Şurası, L'N1, 0 sayı bölü 0'da sonsuz, 0 çarpı sonsuz belirsizliği var burada.
+
+1201
+02:18:26,636 --> 02:18:40,636
+Öncelikle, 0 çarpı sonsuz belirsizliğini, biz ne yapabiliriz? 0 bölü 0 veya sonsuz bölü sonsuz haline getirebiliriz.
+
+1202
+02:18:40,636 --> 02:18:58,355
+Yani, x'den 1'e kadar, ark kosinüs t bölü t kare dt bölü, L'N, tamam doğru, L'N, x olarak bunu yazabiliriz.
+
+1203
+02:18:58,655 --> 02:19:02,575
+Böyle olduğunda ne olacak? Şurası yine sonsuz.
+
+1204
+02:19:07,987 --> 02:19:08,827
+Sonsuz oldu.
+
+1205
+02:19:09,188 --> 02:19:09,647
+Aa, evet.
+
+1206
+02:19:11,028 --> 02:19:11,327
+Pardon.
+
+1207
+02:19:11,487 --> 02:19:12,268
+Elen 1, 0.
+
+1208
+02:19:12,407 --> 02:19:14,028
+0 bölü 0 belirsizliği.
+
+1209
+02:19:16,028 --> 02:19:20,407
+0 bölü 0 belirsizliği olduğu için L'Hospital alırız.
+
+1210
+02:19:20,907 --> 02:19:21,627
+Ve ne olur?
+
+1211
+02:19:25,587 --> 02:19:36,288
+yopital almamız demek şunun türevini ve bunun türevini alman demek. Bakın yine integral işareti altında türev alacağım. Bunun türevi ne olacak bu sefer?
+
+1212
+02:19:39,891 --> 02:19:44,731
+Bu sefer sabit olan üst sınırda, değişken alt sınırda.
+
+1213
+02:19:48,731 --> 02:19:58,711
+İntegral işareti altında türev alırken fonksiyonun t değişkeni yerine buradaki değişkeni yazıp bir de onun türeviyle çarpıyordum.
+
+1214
+02:19:58,832 --> 02:20:01,211
+Eksi aynı şeyi alt sınır için yapıyordum.
+
+1215
+02:20:01,672 --> 02:20:06,031
+Üst sınır sabit olduğu için türevi sıfır geleceğinden hepsini yutacak.
+
+1216
+02:20:06,492 --> 02:20:09,271
+Eksi ne gelecek?
+
+1217
+02:20:09,271 --> 02:20:19,391
+Alt sınır için öncelikle arc kosinüs x koyacağım.
+
+1218
+02:20:19,512 --> 02:20:21,391
+T yerine x'i koydum.
+
+1219
+02:20:21,652 --> 02:20:26,371
+Bir de bölüm t kare yerine de x kare yazdım.
+
+1220
+02:20:28,031 --> 02:20:30,152
+Çarpı x'in türevi de 1.
+
+1221
+02:20:31,672 --> 02:20:32,731
+Onu da yazdık.
+
+1222
+02:20:33,031 --> 02:20:36,432
+Yazmasak da olur da türevini aldım görüntüsünü diye yazdım.
+
+1223
+02:20:36,432 --> 02:20:38,432
+Elin x'in türevi.
+
+1224
+02:20:38,432 --> 02:20:38,791
+Elin x'in türevi de 1.
+
+1225
+02:20:38,791 --> 02:20:39,672
+Bir bölüm x'dir.
+
+1226
+02:20:39,992 --> 02:20:41,191
+Şunlar da gitti.
+
+1227
+02:20:41,191 --> 02:20:41,471
+Şimdi
+
+1228
+02:20:41,471 --> 02:20:46,791
+bir de bölüm x'in türevi.
+
+1229
+02:20:46,791 --> 02:20:51,711
+Bir bölüm x'in türevi.
+
+1230
+02:20:45,427 --> 02:21:06,067
+x 1'e soldan yaklaşırken, eksi, arc, kosinüs x bölü x çıktı. Bu da nedir? Arc, kosinüs 1, 0'a eşittir. 0 bölü 1'den 0 çıkar. Limit değeri 0'a eşitmiş.
+
+1231
+02:21:15,891 --> 02:21:18,371
+siliyorum. Zaten notlarda da var.
+
+1232
+02:21:27,156 --> 02:21:30,615
+Diğer bir sorumuz da şu.
+
+1233
+02:21:40,147 --> 02:21:43,787
+türev ile alt riman toplamının bir limiti olarak hesaplayınız.
+
+1234
+02:21:44,188 --> 02:21:46,268
+Tabii ki burada
+
+1235
+02:21:52,340 --> 02:21:53,180
+Riemann.
+
+1236
+02:22:04,948 --> 02:22:06,528
+Limit olarak hesaplayacağız.
+
+1237
+02:22:06,927 --> 02:22:09,128
+Tabii ki bu klasik sınav.
+
+1238
+02:22:09,448 --> 02:22:11,188
+Burada bu soru böyle sorulur.
+
+1239
+02:22:12,847 --> 02:22:17,108
+Testte böyle sorulursa siz alt riman toplamıyla mı yaparsınız?
+
+1240
+02:22:17,347 --> 02:22:17,568
+Hayır.
+
+1241
+02:22:18,068 --> 02:22:19,608
+Direkt integralini alır.
+
+1242
+02:22:20,747 --> 02:22:22,308
+Sınırları da yerine koyar.
+
+1243
+02:22:22,388 --> 02:22:23,308
+Çözümü bulursunuz.
+
+1244
+02:22:23,308 --> 02:22:28,068
+Çünkü alt riman ya da üst riman toplamıyla neyle yaparsanız yapın.
+
+1245
+02:22:28,548 --> 02:22:31,288
+O toplamların limit değeri neye eşit çıkacak?
+
+1246
+02:22:31,628 --> 02:22:33,308
+Bu integrale eşit çıkacak.
+
+1247
+02:22:33,308 --> 02:22:38,768
+Bunun önüne geçmek için işte testte de bu size nasıl sorulur?
+
+1248
+02:22:39,188 --> 02:22:42,648
+Alt riman toplamının belli bir aşaması sorulur.
+
+1249
+02:22:43,068 --> 02:22:47,628
+Yani bunu alt riman toplamıyla nasıl yazacağınız sorulabilir.
+
+1250
+02:22:49,087 --> 02:22:51,448
+Ya da tersten verilir.
+
+1251
+02:22:51,907 --> 02:22:59,968
+Bir alt riman toplamıyla ya da üst riman toplamıyla ya da genel riman toplamıyla
+
+1252
+02:22:59,968 --> 02:23:03,548
+o toplamın limiti verilir size.
+
+1253
+02:23:03,667 --> 02:23:05,108
+Bu limiti hesaplayın gibi.
+
+1254
+02:23:05,288 --> 02:23:08,587
+Sanki limit sorusu sorulmuş gibi gösterilir.
+
+1255
+02:23:09,048 --> 02:23:14,628
+Ama orada integrale geçmeniz gerektiğini anlamazsanız çözemezsiniz.
+
+1256
+02:23:15,108 --> 02:23:16,268
+Onu anlamanız gerekiyor.
+
+1257
+02:23:16,368 --> 02:23:20,308
+Yani çift taraflı olarak sorulabilecek tarzda bir soru.
+
+1258
+02:23:20,308 --> 02:23:25,708
+Bir de buradan size hatırlatma vermiş.
+
+1259
+02:23:27,827 --> 02:23:28,768
+İ'nin küpü.
+
+1260
+02:23:30,167 --> 02:23:33,488
+Birden n'e kadar i'nin küpü.
+
+1261
+02:23:34,028 --> 02:23:35,308
+Bu da şuna eşitmiş.
+
+1262
+02:23:35,448 --> 02:23:35,747
+n.
+
+1263
+02:23:36,268 --> 02:23:42,988
+n artı bir bölüm ikinin parantez kalesine eşitmiş.
+
+1264
+02:23:43,528 --> 02:23:45,768
+Bunu da size vermiş.
+
+1265
+02:23:45,768 --> 02:23:49,608
+Şimdi şunun alt riman toplamını yazalım.
+
+1266
+02:23:50,667 --> 02:23:54,568
+Alt riman toplamını yazarken ne yapıyorduk?
+
+1267
+02:23:54,847 --> 02:23:58,708
+Öncelikle aralığımız ab aralığı.
+
+1268
+02:23:59,247 --> 02:24:00,427
+Burada neye eşit?
+
+1269
+02:24:01,308 --> 02:24:02,448
+0, 1'e eşit.
+
+1270
+02:24:02,528 --> 02:24:03,688
+Aralığı belirledik.
+
+1271
+02:24:04,648 --> 02:24:06,308
+Fonksiyonu da yazalım.
+
+1272
+02:24:06,468 --> 02:24:08,247
+fx neye eşit?
+
+1273
+02:24:08,247 --> 02:24:12,308
+1 artı x küpe eşit.
+
+1274
+02:24:12,448 --> 02:24:13,667
+O da lazım olacak.
+
+1275
+02:24:13,808 --> 02:24:14,288
+Yazalım.
+
+1276
+02:24:15,768 --> 02:24:18,247
+Şimdi aralığı n parçaya bölüyoruz.
+
+1277
+02:24:18,667 --> 02:24:22,068
+Bu aralığı n parçaya bölersek aralığın uzunluğu nedir?
+
+1278
+02:24:22,188 --> 02:24:22,768
+1'dir.
+
+1279
+02:24:23,388 --> 02:24:25,988
+Delta x i neye eşit olacak?
+
+1280
+02:24:26,268 --> 02:24:27,648
+1 bölü n'e eşit olacak.
+
+1281
+02:24:28,087 --> 02:24:32,628
+Yani her bir alt aralığın uzunluğu 1 bölü n kadar olacak.
+
+1282
+02:24:33,448 --> 02:24:34,907
+Alt aralıkları yazın.
+
+1283
+02:24:34,907 --> 02:24:41,747
+Alt aralıklarımızda x i eksi 1 x i şeklinde aralıklar olacak.
+
+1284
+02:24:42,308 --> 02:24:44,868
+Peki fonksiyon artırlan mıdır?
+
+1285
+02:24:44,868 --> 02:24:45,747
+Azalan mıdır?
+
+1286
+02:24:45,968 --> 02:24:50,927
+Çünkü alt riman toplamını yazarken aralığın en küçük noktasını seçiyorum.
+
+1287
+02:24:51,448 --> 02:24:55,167
+Üst riman toplamını yazarken de büyük olan noktasını seçiyorum.
+
+1288
+02:24:55,167 --> 02:25:02,847
+Bu küçüklük, büyüklükte fonksiyonun artan ya da azalan olmasına göre sağ veya sol uç nokta olacak.
+
+1289
+02:25:02,847 --> 02:25:09,988
+Bu fonksiyona baktığında 0-1 aralığında bu fonksiyonum nedir?
+
+1290
+02:25:10,188 --> 02:25:11,728
+Artan bir fonksiyondur.
+
+1291
+02:25:12,148 --> 02:25:16,468
+Artan fonksiyon ise küçük değeri ne olur?
+
+1292
+02:25:16,587 --> 02:25:18,448
+Sol uç noktasında olur.
+
+1293
+02:25:18,448 --> 02:25:23,128
+c i değeri olarak ben x i eksi 1'i seçerim.
+
+1294
+02:25:27,092 --> 02:25:31,492
+x i-1 değeri nedir?
+
+1295
+02:25:35,603 --> 02:25:44,103
+x birinci aralık çarpı aralığın uzunluğu neydi? 1 bölü endi.
+
+1296
+02:25:49,492 --> 02:25:56,032
+Bakın x i eksi 1 ve x i değerlerini bu şekilde yazarsanız her şeyi çok kolay görürsünüz.
+
+1297
+02:25:56,731 --> 02:25:58,512
+E liman toplamı neydi?
+
+1298
+02:25:59,471 --> 02:26:01,711
+Biz alt liman toplamını kullanacağız.
+
+1299
+02:26:01,711 --> 02:26:09,512
+Hani genel yazdığımda şöyle f ci ile ben hep gösteriyorum çarpı delta x i diyorum.
+
+1300
+02:26:10,051 --> 02:26:14,551
+Ama burada alt liman toplamı dediği için ci yerine ne yazacağım?
+
+1301
+02:26:15,092 --> 02:26:17,652
+En küçük değerini x i eksi 1'i yazacağım.
+
+1302
+02:26:19,492 --> 02:26:28,811
+O halde i birden n'e kadar şu toplam bana neyi veriyordu?
+
+1303
+02:26:28,811 --> 02:26:33,971
+Alt liman toplamını yazmayı unuttum onu da.
+
+1304
+02:26:35,332 --> 02:26:38,311
+Alt liman toplamını l ile gösteriyordum.
+
+1305
+02:26:38,412 --> 02:26:41,252
+L'yi yazıp parantez koyacağım yazamıyorum.
+
+1306
+02:26:41,412 --> 02:26:43,711
+L, F, P.
+
+1307
+02:26:44,012 --> 02:26:46,272
+P buradaki bölüntümüzdü.
+
+1308
+02:26:46,272 --> 02:26:49,912
+F fonksiyonu görüyorsunuz fonksiyonu.
+
+1309
+02:26:50,112 --> 02:26:52,352
+İşte alt liman toplamı buna eşit.
+
+1310
+02:26:52,692 --> 02:26:56,152
+Şimdi getirin burada değerleri yerlerine yazın.
+
+1311
+02:26:57,152 --> 02:27:09,152
+Bir sonraki bölüntümüzdü.
+
+1312
+02:27:03,379 --> 02:27:06,259
+f x i-1 nedir?
+
+1313
+02:27:06,979 --> 02:27:10,420
+i-1 bölü n'dir değil mi?
+
+1314
+02:27:13,239 --> 02:27:17,299
+delta x i nedir? 1 bölü n'dir. Bunu da yazdık.
+
+1315
+02:27:18,579 --> 02:27:19,139
+İşte bu.
+
+1316
+02:27:19,739 --> 02:27:23,019
+Sadece şu f değerini hesaplamam gerekiyor şimdi.
+
+1317
+02:27:28,819 --> 02:27:30,659
+olacak? F fonksiyonum
+
+1318
+02:27:30,659 --> 02:27:32,799
+fx bir artı x küp olduğuna göre
+
+1319
+02:27:32,799 --> 02:27:34,840
+f i eksi bir bölü n ne eşit
+
+1320
+02:27:34,840 --> 02:27:37,079
+olacak? Bir artı
+
+1321
+02:27:37,079 --> 02:27:38,920
+i eksi bir
+
+1322
+02:27:38,920 --> 02:27:40,819
+bölü n'i
+
+1323
+02:27:40,819 --> 02:27:42,739
+küpüne eşit olacak.
+
+1324
+02:27:44,819 --> 02:27:46,860
+Bunu köşeli parantez içine
+
+1325
+02:27:46,860 --> 02:27:49,159
+yazıyorum. Çünkü buraya bir de ne yazacağım?
+
+1326
+02:27:49,619 --> 02:27:50,840
+Bir bölü n'i yazacağım.
+
+1327
+02:27:50,979 --> 02:27:52,619
+Yani delta x'imi yazdım.
+
+1328
+02:27:53,000 --> 02:27:54,959
+İşte alt riman toplamı
+
+1329
+02:27:54,959 --> 02:27:56,979
+bu. Size dediğim gibi
+
+1330
+02:27:56,979 --> 02:27:59,420
+sınavda eğer böyle bir şey sorulursa
+
+1331
+02:27:59,420 --> 02:28:01,299
+şu aşamalardan biri
+
+1332
+02:28:01,299 --> 02:28:02,959
+sorulur. Alt riman
+
+1333
+02:28:02,959 --> 02:28:05,279
+toplamı nasıldır? O sorulur
+
+1334
+02:28:05,279 --> 02:28:05,699
+mesela.
+
+1335
+02:28:08,579 --> 02:28:11,319
+Ya da üst riman toplamını sorar.
+
+1336
+02:28:11,420 --> 02:28:13,379
+Her neyse bunlardan birini sorar.
+
+1337
+02:28:14,979 --> 02:28:16,360
+Bunu yazdık.
+
+1338
+02:28:16,959 --> 02:28:19,279
+Şimdi alt riman toplamının
+
+1339
+02:28:19,279 --> 02:28:21,119
+limit olarak şunu hesaplayın
+
+1340
+02:28:21,119 --> 02:28:22,819
+diyor. Ne yapacağız?
+
+1341
+02:28:23,959 --> 02:28:25,459
+Şunu aklımızda
+
+1342
+02:28:25,459 --> 02:28:26,959
+tuttuk, siliyoruz.
+
+1343
+02:28:28,840 --> 02:28:29,239
+Bunlara
+
+1344
+02:28:29,239 --> 02:28:30,799
+ihtiyacım yok.
+
+1345
+02:28:31,500 --> 02:28:33,659
+Şu formüle sadece ihtiyacım var.
+
+1346
+02:28:34,440 --> 02:28:35,180
+O halde
+
+1347
+02:28:35,180 --> 02:28:37,340
+şu limit sıfırdan biri
+
+1348
+02:28:37,340 --> 02:28:39,319
+bir artı x küp.
+
+1349
+02:28:39,399 --> 02:28:40,440
+Bari daha zor bir
+
+1350
+02:28:40,440 --> 02:28:42,659
+şey, limit diyorum.
+
+1351
+02:28:42,779 --> 02:28:43,559
+Bu integral.
+
+1352
+02:28:44,299 --> 02:28:45,639
+Neye eşit olacak?
+
+1353
+02:28:46,039 --> 02:28:47,440
+Şunun limitine eşit
+
+1354
+02:28:47,440 --> 02:28:47,760
+olacak.
+
+1355
+02:28:47,760 --> 02:28:48,860
+Limit
+
+1356
+02:28:48,860 --> 02:28:50,639
+n
+
+1357
+02:28:50,639 --> 02:28:53,100
+sonsuza yaklaşırken
+
+1358
+02:28:53,100 --> 02:28:57,039
+i birden
+
+1359
+02:28:57,039 --> 02:28:58,059
+n'e kadar
+
+1360
+02:28:58,059 --> 02:28:59,479
+şu ifade.
+
+1361
+02:28:59,479 --> 02:29:00,479
+bir şey.
+
+1362
+02:29:00,479 --> 02:29:07,180
+Bir şey.
+
+1363
+02:29:11,891 --> 02:29:13,891
+Şimdi bunu düzenleyeceğim sadece.
+
+1364
+02:29:20,884 --> 02:29:33,283
+değişkenin i olduğu için, şu 1 bölü n içerisinde de i olmadığı için bunu toplamın dışına çıkarabiliyorum. Ama limitin dışına çıkaramam çünkü limitte ne var? n var.
+
+1365
+02:29:34,884 --> 02:29:45,603
+Şunu 1 bölü n yazdım. Şu toplamı da düzenleyelim. 1'den n'e kadar. 1 artı. Şurası ne olacak?
+
+1366
+02:29:45,603 --> 02:29:52,224
+i eksi 1'i küpü bölü n'in küpü olur değil mi?
+
+1367
+02:29:59,059 --> 02:30:01,180
+Artık şunlara da ihtiyacım yok.
+
+1368
+02:30:16,084 --> 02:30:19,324
+Şuradaki n küpü de aynı şekilde ne yaparım?
+
+1369
+02:30:20,344 --> 02:30:21,324
+Ha şöyle yapalım.
+
+1370
+02:30:21,904 --> 02:30:26,104
+Arada artı olduğu için şu toplamı ayırabilirim.
+
+1371
+02:30:26,104 --> 02:30:28,304
+Yani bunu 1 bölü n
+
+1372
+02:30:31,827 --> 02:30:34,948
+1 artı 1 bölü en
+
+1373
+02:30:40,819 --> 02:30:46,819
+i-1'in küpü bölü n küp olarak yazabilirim.
+
+1374
+02:30:48,399 --> 02:30:50,819
+Öyle yazdığımızda da,
+
+1375
+02:30:53,319 --> 02:30:54,360
+şurası nedir?
+
+1376
+02:30:54,920 --> 02:30:59,619
+i1'den n'e kadar birlerin toplamı, yani n tane birin toplamı n demektir.
+
+1377
+02:31:00,420 --> 02:31:03,420
+n çarpı 1 bölü n'de ne olur?
+
+1378
+02:31:08,084 --> 02:31:33,624
+1 olur. 1 artı, şuraya gelelim, n küpü de dışarı taşırsak, 1 bölü en üzeri 4 olur burası. Çarpı, i-1'in küpü. Demin bana verilen formül, i'nin küpüydü. O halde, i-1'e, i-1'e bir şey demeyelim de, şurayı değiştirelim.
+
+1379
+02:31:34,684 --> 02:31:36,844
+i-1'e j diyelim.
+
+1380
+02:31:42,195 --> 02:31:43,095
+Bu konuda ne olacak?
+
+1381
+02:31:46,739 --> 02:31:55,760
+i-1, 0 olur. Yani j eşit 0'dan burası n-1'e kadar olacak değil mi?
+
+1382
+02:32:12,435 --> 02:32:18,115
+jinin küpü kalacak burada da. Şöyle bir şey yapmak istiyorum ben.
+
+1383
+02:32:44,884 --> 02:32:46,203
+Bunu böyle yapmayalım.
+
+1384
+02:32:47,484 --> 02:32:48,324
+Ben i'den
+
+1385
+02:32:48,324 --> 02:32:50,703
+değil de j'den
+
+1386
+02:32:50,703 --> 02:32:52,463
+değil de i'den devam etmek istiyorum.
+
+1387
+02:32:53,763 --> 02:32:54,623
+i'yi sıfırdan
+
+1388
+02:32:54,623 --> 02:32:55,763
+başlatırsam
+
+1389
+02:32:55,763 --> 02:32:58,644
+yani şuradan
+
+1390
+02:32:58,644 --> 02:32:59,724
+bir çıkardım.
+
+1391
+02:33:00,744 --> 02:33:02,683
+Buradan bir çıkarıyorsam buraya bir
+
+1392
+02:33:02,683 --> 02:33:04,484
+eklerim. Buraya da bir eklersem
+
+1393
+02:33:04,484 --> 02:33:06,584
+bu ne olur? i'nin küpü
+
+1394
+02:33:06,584 --> 02:33:06,924
+olur.
+
+1395
+02:33:09,144 --> 02:33:10,543
+En küpü şuraya
+
+1396
+02:33:10,543 --> 02:33:12,224
+taşıdım. En üzeri dört oldu.
+
+1397
+02:33:13,004 --> 02:33:14,443
+Tamam mı? Yalnız
+
+1398
+02:33:14,443 --> 02:33:16,644
+buradan ne yaptık?
+
+1399
+02:33:17,783 --> 02:33:18,824
+i'yi biraz azalttığım
+
+1400
+02:33:18,824 --> 02:33:21,043
+için şurada n'den de bir çıkardık.
+
+1401
+02:33:22,064 --> 02:33:22,664
+Sıfırdan
+
+1402
+02:33:22,664 --> 02:33:24,443
+n-1'e i küp dedim.
+
+1403
+02:33:24,584 --> 02:33:26,763
+Çünkü i-1'in küpüydü
+
+1404
+02:33:26,763 --> 02:33:27,043
+bu.
+
+1405
+02:33:29,924 --> 02:33:30,564
+Dolayısıyla
+
+1406
+02:33:30,564 --> 02:33:31,103
+bu.
+
+1407
+02:33:35,059 --> 02:33:41,500
+Şu toplamda da arkadaşlar, mesela bunu yazarken iyi yerine sıfır alacağım.
+
+1408
+02:33:41,659 --> 02:33:48,079
+Sıfırın küpü artı birin küpü artı ikinin küpü üçün küpü en eksi birin küpü şeklinde olacak.
+
+1409
+02:33:48,579 --> 02:33:57,299
+Dolayısıyla sıfır için zaten değeri sıfır olacağından biz bunu tekrar bir olarak alabiliriz.
+
+1410
+02:33:57,299 --> 02:34:02,920
+Tamam. Şunu bir aldığında değişen hiçbir şey olmayacak.
+
+1411
+02:34:03,019 --> 02:34:05,239
+Çünkü sıfır değeri zaten sıfır oluyor.
+
+1412
+02:34:06,840 --> 02:34:09,840
+Şimdi artık şunu yapalım.
+
+1413
+02:34:10,559 --> 02:34:14,000
+Buraya sığmadı. Ben tekrar bunu yukarı taşıyacağım.
+
+1414
+02:34:15,340 --> 02:34:16,279
+Şurayı sileyim.
+
+1415
+02:34:17,899 --> 02:34:18,959
+Bunu da sileyim.
+
+1416
+02:34:32,211 --> 02:34:33,551
+Burada birimiz var.
+
+1417
+02:34:34,671 --> 02:34:36,511
+1 bölü en üzeri 4 var.
+
+1418
+02:34:38,211 --> 02:34:41,971
+Şu toplam, i küpün toplamı da neye eşit olacak?
+
+1419
+02:34:42,871 --> 02:34:52,391
+i birden n'e kadar i küpün toplamı n çarpı n artı 1 bölü 2'nin parantez karesini eşitti.
+
+1420
+02:34:52,391 --> 02:34:54,912
+Dolayısıyla bu toplam neye eşit olacak?
+
+1421
+02:34:54,912 --> 02:35:04,371
+n eksi 1 çarpı n bölü 2'nin parantez karesini eşit olacak.
+
+1422
+02:35:06,492 --> 02:35:07,851
+Şunu sileyim.
+
+1423
+02:35:08,271 --> 02:35:09,711
+Bu hatırlatmak için de.
+
+1424
+02:35:18,260 --> 02:35:44,620
+ne gelecek? n-1'in karesi, n'in karesi, şunu 4, n üzeri 4, çarpı 4. Buradaki n üzeri 4. Dolayısıyla artık limit alırsam, şuranın çarptığında kuvveti n üzeri 4 olacak. Burası da n üzeri 4 olduğu için kat sayıları oranı ne çıkar? 1 bölü 4.
+
+1425
+02:35:44,620 --> 02:35:54,139
+1 sabit olduğu için limiti kendisine eşit. 1 artı 1 bölü 4'te ne olacak? 4, 5 bölü 4'e eşit çıkacak.
+
+1426
+02:36:08,948 --> 02:36:25,768
+Normal integral ile çözdüğümüzde de evet aynı sonuç geliyor. Çünkü integral zaten neydi? Riemann toplamının limitiydi. Bu ister alt riman olsun ister üst riman toplamı olsun limit durumunda aradaki fark sıfıra yaklaşıyor.
+
+1427
+02:36:25,768 --> 02:36:43,587
+Daha az olması gerekmiyor mu derken eğer sonlu parçaya ayırırsanız ve o parçalar üzerinde bir toplam yazarsanız alt riman ve üst riman toplamları birbirinden farklı olur, birbirinden küçük olur.
+
+1428
+02:36:44,347 --> 02:36:50,327
+Ama en sonsuza giderken limit aldığınızda o fark sıfıra yaklaşır.
+
+1429
+02:36:50,327 --> 02:37:00,608
+Dolayısıyla alt riman ve üst riman ve üst riman ve üst riman toplamını da yazarsanız limit durumunda bu hep neye eşit olacak?
+
+1430
+02:37:01,007 --> 02:37:02,827
+İntegralin değerine eşit olacak.
+
+1431
+02:37:04,288 --> 02:37:09,188
+Dediğim gibi sınavda zaten böyle sorulmaz, sorulamaz.
+
+1432
+02:37:09,808 --> 02:37:13,327
+Öyle olduğunda direkt limiti hesaplarsınız, sonucu bulursunuz.
+
+1433
+02:37:13,327 --> 02:37:18,128
+Ama bu aşamalarda herhangi bir tanesi sorulabilir.
+
+1434
+02:37:18,128 --> 02:37:21,128
+O yüzden de bunları yazmayı bilmeniz gerekiyor.
+
+1435
+02:37:21,128 --> 02:37:23,888
+O yüzden bu örneği yazıyorum.
+
+1436
+02:37:37,075 --> 02:37:54,095
+Daha elimde integral ile ilgili örnekler var ama bunları da yarın yapalım. Ben yoruldum, siz de yorulmuşsunuzdur. Yarın devam edelim olur mu? Sorunuz varsa sorun, yoksa çıkabilirsiniz.
+
+1437
+02:38:00,468 --> 02:38:02,008
+İyi günler hepinize.
+
+1438
+02:38:23,924 --> 02:38:26,584
+İyi günler, iyi bakın kendinize.
