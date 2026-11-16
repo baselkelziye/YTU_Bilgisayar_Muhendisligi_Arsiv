@@ -4,7 +4,7 @@
 
 ### 📋 Genel Bilgiler
 * **Ders:** Atatürk İlkeleri ve İnkılap Tarihi 2 (ATA1032)
-* **Hoca:** Bulunamadı
+* **Hoca:** Şebnem Gelmedi
 * **Dönem:** Bahar
 * **Akademik Yıl:** 2021-2022
 * **Şube:** ATA1032 - 31

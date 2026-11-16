@@ -4,7 +4,7 @@
 
 ### 📋 Genel Bilgiler
 * **Ders:** İleri İngilizce 1 (MDB1031)
-* **Hoca:** Bulunamadı
+* **Hoca:** Asuman Çom
 * **Dönem:** Güz
 * **Akademik Yıl:** 2020-2021
 * **Şube:** MDB1031 - 34

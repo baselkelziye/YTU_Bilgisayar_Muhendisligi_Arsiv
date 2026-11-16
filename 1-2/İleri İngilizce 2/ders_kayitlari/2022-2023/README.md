@@ -5,7 +5,7 @@
 | Şube | Dönem | Hoca | Klasör |
 | :---: | :---: | :--- | :--- |
 | 13 | Bahar | Arzu Ekoç Özçelik | [sube_13/](sube_13/) |
-| 14 | Bahar | Bulunamadı | [sube_14/](sube_14/) |
+| 14 | Bahar | Esin Aydoğdu | [sube_14/](sube_14/) |
 | 16 | Bahar | Dilek Yıldırım | [sube_16/](sube_16/) |
 | 17 | Bahar | Bulunamadı | [sube_17/](sube_17/) |
 | 21 | Bahar | Eda Abbasioğlu Akaya | [sube_21/](sube_21/) |
