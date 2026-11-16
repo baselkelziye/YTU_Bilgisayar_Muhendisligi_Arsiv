@@ -6,3 +6,4 @@
 | :---: | :---: | :--- | :--- |
 | 23 | Bahar | Arzuhan Kocabaş | [sube_23/](sube_23/) |
 | 24 | Bahar | Arzuhan Kocabaş | [sube_24/](sube_24/) |
+| 25 | Bahar | Arzuhan Kocabaş | [sube_25/](sube_25/) |
