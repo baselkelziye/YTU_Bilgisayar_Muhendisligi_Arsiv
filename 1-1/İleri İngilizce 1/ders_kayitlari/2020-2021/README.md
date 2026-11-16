@@ -20,3 +20,4 @@
 | 27 | Güz | Bulunamadı | [sube_27/](sube_27/) |
 | 28 | Güz | Nurgül Demirdöven | [sube_28/](sube_28/) |
 | 33 | Güz | Uğur Akpur | [sube_33/](sube_33/) |
+| 34 | Güz | Bulunamadı | [sube_34/](sube_34/) |
