@@ -10,3 +10,4 @@
 | 21 | BAHAR | Zafer Doğan | [sube_21/](sube_21/) |
 | 24 | BAHAR | Öğr. Gör. Dr. Şebnem Gelmedi | [sube_24/](sube_24/) |
 | 25 | BAHAR | Şebnem Gelmedi | [sube_25/](sube_25/) |
+| 26 | BAHAR | Neslihan Erkan | [sube_26/](sube_26/) |
