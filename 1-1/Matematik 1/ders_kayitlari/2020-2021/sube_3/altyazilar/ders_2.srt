@@ -1,0 +1,3671 @@
+1
+00:00:27,635 --> 00:00:31,995
+Merhaba arkadaşlar. Hepinize hoş geldiniz tekrar.
+
+2
+00:00:57,908 --> 00:01:05,507
+Bu arada [öğrenci], seçtiğin bu karaktere bayıldım. Adı ne bunun?
+
+3
+00:01:24,884 --> 00:01:25,884
+çok iyi.
+
+4
+00:01:33,811 --> 00:01:49,111
+Bugün 2 saat dersimiz var sizinle. Dün kaldığımız yerden devam edelim. Sorunuz var mı? Bana sormak istediğiniz bir şey var mı? Çok bir şey yapmamıştık zaten ders adına dün.
+
+5
+00:01:53,140 --> 00:02:01,319
+Yoksa bugünkü dersimize başlayalım. Ben yine aynı şeyleri yükleyeceğim. Dün bunları size gönderdim mi hatırlamıyorum ama.
+
+6
+00:02:08,340 --> 00:02:19,080
+Paylaşmıştım galiba dün. Evet, paylaştım dün sizinle. Oradan notlardan elinizde var. Devam edelim biz.
+
+7
+00:02:43,635 --> 00:02:51,135
+En son sanırım artan azalanlığı yaptık. Tek ve çift fonksiyonu da göstermiştim size. Onu da hatırlıyorum.
+
+8
+00:02:52,455 --> 00:02:59,055
+Fonksiyonların toplamı, farkı, çarpımı, bölümü, katları. Bunlara bir bakalım.
+
+9
+00:03:09,907 --> 00:03:21,127
+Fonksiyonların toplamlarını, farklarını, çarpımlarını, bölümlerini onları şu şekilde yazıyoruz.
+
+10
+00:03:21,567 --> 00:03:31,947
+Genellikle iki fonksiyon verildiğinde onları toplamak istiyorsak eğer ortak tanım kümesi üzerinde elemanlar alarak bu toplamı yapabiliriz.
+
+11
+00:03:31,947 --> 00:03:40,327
+Yani öncelikle yapmak istediğimiz işleme göre ne işlem yapacaksak yapalım.
+
+12
+00:03:40,867 --> 00:03:50,108
+O işlemlerin hepsini verilen fonksiyonların ortak tanım bölgeleri üzerinde yapabiliriz ancak.
+
+13
+00:03:53,767 --> 00:03:57,507
+F ve G iki fonksiyon bunlar verilmiş olsun.
+
+14
+00:03:57,507 --> 00:04:06,767
+F'in tanım kümesini D, F ile G'nin tanım kümesini de D, G ile gösterelim.
+
+15
+00:04:06,767 --> 00:04:11,467
+F ve G'nin toplamı
+
+16
+00:04:11,467 --> 00:04:32,467
+F ve G'nin tanım kümesini de D, G ile gösterelim.
+
+17
+00:04:18,963 --> 00:04:20,084
+Bu şekilde oluyor.
+
+18
+00:04:20,743 --> 00:04:21,543
+İki fonksiyon.
+
+19
+00:04:21,564 --> 00:04:22,863
+Hocam, görüntü gitti de.
+
+20
+00:04:23,384 --> 00:04:23,843
+Gitti mi?
+
+21
+00:04:25,603 --> 00:04:26,584
+Dur bakayım.
+
+22
+00:04:27,204 --> 00:04:29,103
+Elinizi yakınlaştırın diyorlardı.
+
+23
+00:04:29,684 --> 00:04:30,363
+Yakınlaştırdım.
+
+24
+00:04:30,963 --> 00:04:32,144
+Netleşecek mi bakalım?
+
+25
+00:04:35,144 --> 00:04:36,324
+Değişen bir şey yok.
+
+26
+00:04:36,803 --> 00:04:37,504
+Olmadı hocam.
+
+27
+00:04:37,744 --> 00:04:38,204
+Olmadı.
+
+28
+00:04:38,204 --> 00:04:39,884
+O zaman kapatıp açacağım.
+
+29
+00:04:41,983 --> 00:04:48,204
+Demin ne güzel, sorunsuz bir şekilde dersi yapmıştık.
+
+30
+00:04:48,963 --> 00:04:50,584
+Görülebiliyor mu?
+
+31
+00:04:50,663 --> 00:04:51,663
+Görebiliyor musunuz?
+
+32
+00:04:51,903 --> 00:04:52,663
+Görebiliyor hocam.
+
+33
+00:04:52,663 --> 00:04:53,603
+Daha kötü hocam.
+
+34
+00:04:53,683 --> 00:04:54,983
+Daha kötü oldu.
+
+35
+00:04:55,884 --> 00:04:57,004
+Aptal kamera.
+
+36
+00:05:05,043 --> 00:05:09,823
+Şöyle biraz kamerayı yaklaştırayım, uzaklaştırayım, bakalım bir şey değişecek mi?
+
+37
+00:05:37,331 --> 00:05:39,711
+Ben bilmiyorum.
+
+38
+00:05:46,867 --> 00:05:47,867
+batıcam.
+
+39
+00:05:57,684 --> 00:05:58,404
+açıyorum.
+
+40
+00:05:59,364 --> 00:06:01,424
+fokus, fokus. Bu sefer iyi galiba.
+
+41
+00:06:04,124 --> 00:06:04,684
+Gel bakayım.
+
+42
+00:06:05,624 --> 00:06:05,884
+Tamam.
+
+43
+00:06:08,124 --> 00:06:11,084
+Şu işlemi nerede yapabiliyoruz? Dedik ki
+
+44
+00:06:11,084 --> 00:06:16,044
+f artı g'nin tanım kümesi
+
+45
+00:06:16,044 --> 00:06:18,124
+neye eşit olacak?
+
+46
+00:06:18,844 --> 00:06:22,004
+Daha doğrusu bunu tanım kümesi demeyelim de x eleman diyelim.
+
+47
+00:06:25,843 --> 00:06:26,903
+Hocam tekrar gitti.
+
+48
+00:06:28,803 --> 00:06:31,343
+Ben kameranın önüne geçince mi gidiyor acaba?
+
+49
+00:06:33,084 --> 00:06:34,863
+Hocam sanırım o daha değiştiriyor.
+
+50
+00:06:37,623 --> 00:06:46,983
+Ne yapıyor, nereye göre ayarlıyor bir bilsem. Eskiyi takacağım ama onun da yani Liner Cevirdekiler pek memnun kalmadılar.
+
+51
+00:06:51,860 --> 00:07:04,240
+Hocam aslında odak sabitlemeyi bulsanız iyi olur da hani hep uzağa bakıyorum. Ayarlardan falan hiç göremiyorum. Neyse belki bilen birilerine gösteririm.
+
+52
+00:07:15,444 --> 00:07:22,244
+ve geldi benim kedim. Şimdi yine dağıtacak.
+
+53
+00:07:33,427 --> 00:07:33,927
+bu ya?
+
+54
+00:08:04,115 --> 00:08:05,635
+Görebiliyor musunuz?
+
+55
+00:08:10,867 --> 00:08:13,108
+farkını da benzer olarak yazıyoruz.
+
+56
+00:08:16,108 --> 00:08:18,987
+f'de g'nin farkı olarak yazılıyor.
+
+57
+00:08:19,168 --> 00:08:22,887
+Yine şu tanım kümesi üzerinden alıyorum.
+
+58
+00:08:24,108 --> 00:08:33,628
+Çarpımları da, iki fonksiyonun çarpımı, fonksiyonların ayrı ayrı çarpımlarına eşit oluyor.
+
+59
+00:08:33,628 --> 00:08:37,327
+Yine ortak tanım kümesi üzerinde.
+
+60
+00:08:37,327 --> 00:08:39,107
+bölümleri
+
+61
+00:08:47,443 --> 00:09:08,943
+Bu şekilde ortak tanım kümesi üzerinde ama burada bir sorunumuz var. Bu tanım kümesi üzerinde g'nin değerini sıfır yapan bir değer varsa o zaman onu almamamız gerekiyor. Yani bir şey daha ekliyoruz. yx farklı sıfır olmalı çünkü sıfırla bölme tanımlı değildir.
+
+62
+00:09:08,943 --> 00:09:20,863
+Bunu da yazdıktan sonra bir de skalerli çarpımımız var. Skaler sayıyı c olarak gösterelim. c çarpı f.
+
+63
+00:09:28,052 --> 00:09:33,971
+yine tanım kümemiz aynı. c'de herhangi bir real sayı.
+
+64
+00:09:35,912 --> 00:09:41,132
+Fonksiyonların toplamlarını, çarpımlarını, bölümlerini bu şekilde yapıyoruz.
+
+65
+00:09:41,552 --> 00:09:44,432
+Şimdi bunu silip bir tane örnek yapalım bununla ilgili.
+
+66
+00:09:46,492 --> 00:09:48,872
+Bunlar evinizdeki notlar da var.
+
+67
+00:10:31,572 --> 00:10:33,331
+örneğimiz de şu olsun.
+
+68
+00:10:33,991 --> 00:10:35,812
+fx fonksiyonumuz
+
+69
+00:10:44,500 --> 00:10:46,340
+kare kök fonksiyonu olsun.
+
+70
+00:10:47,000 --> 00:10:48,200
+x de yine kare kök.
+
+71
+00:10:48,259 --> 00:10:49,500
+Ama şöyle yapalım.
+
+72
+00:10:55,155 --> 00:10:56,715
+1-x kare diyelim.
+
+73
+00:10:58,155 --> 00:11:01,115
+Öncelikle f'in tanım kümesi nedir onu yazalım.
+
+74
+00:11:05,268 --> 00:11:13,447
+x'in büyük eşit sıfır olduğu her noktada tanımlıdır. Dolayısıyla sıfır sonsuz aralığı bunun tanım kümesi olacak.
+
+75
+00:11:14,128 --> 00:11:22,708
+G tanım kümesi, 1-x²'nin büyük eşit sıfır olduğu her yerine tanımlı.
+
+76
+00:11:26,488 --> 00:11:30,888
+Dolayısıyla x kare küçük 1, x ne olacak?
+
+77
+00:11:31,427 --> 00:11:34,608
+Eksi 1'i artı 1 aralığında olacak.
+
+78
+00:11:41,043 --> 00:11:42,923
+toplam kümelerini yazdık.
+
+79
+00:11:44,144 --> 00:11:47,884
+Şimdi toplamlarını, farklarını, çarpımlarını, bölümlerini hepsini yazalım.
+
+80
+00:11:52,115 --> 00:11:53,316
+Hocam yine bulanık.
+
+81
+00:11:54,196 --> 00:11:55,275
+Yine bulandı.
+
+82
+00:11:56,316 --> 00:11:57,735
+Yine kapatıyorum.
+
+83
+00:11:59,795 --> 00:12:01,035
+Tekrar açıyorum.
+
+84
+00:12:06,131 --> 00:12:08,091
+Işığında etkisi var mı acaba?
+
+85
+00:12:19,572 --> 00:12:26,991
+Açtım. Yalnız ben çok kuytu bir yerdeyim. Şu ışığı da açayım. Belki ışık da etkili olur.
+
+86
+00:12:27,751 --> 00:12:29,512
+Perdeyi açarsan daha çok bozar.
+
+87
+00:12:30,471 --> 00:12:31,912
+Bozuldu mu şimdi?
+
+88
+00:12:32,652 --> 00:12:35,351
+Bozulmadı ama perde biraz daha bozabilir o da.
+
+89
+00:12:37,831 --> 00:12:39,371
+Şu anlık sıkıntı yok.
+
+90
+00:12:41,131 --> 00:12:43,292
+Sıkıntı yoksa devam edelim.
+
+91
+00:12:48,340 --> 00:12:57,160
+Bu dedik ki f ile g'nin toplamına eşit. Yani kök x artı kök 1-x kare olacak.
+
+92
+00:12:57,879 --> 00:12:59,399
+Tanım kümesi ne olur?
+
+93
+00:13:02,280 --> 00:13:05,580
+f artı g tanım kümesi neye eşit olmalı?
+
+94
+00:13:06,940 --> 00:13:09,139
+Şu ikisinin ara kesitini.
+
+95
+00:13:09,440 --> 00:13:15,120
+Bu ikisinin ara kesitini de alırsak 0-1 kapalı aralı olur değil mi?
+
+96
+00:13:15,120 --> 00:13:20,120
+Sadece bu toplamı 0-1 aralı üzerinde yapabiliriz.
+
+97
+00:13:22,259 --> 00:13:25,279
+Hocam kameranın önüne geçince bozuluyor.
+
+98
+00:13:26,900 --> 00:13:29,220
+Evet, kameranın önüne geçince bozuluyor.
+
+99
+00:13:29,320 --> 00:13:32,700
+Onu ben de fark ettim ama geçmeden de yazamayacağım.
+
+100
+00:13:35,100 --> 00:13:37,480
+Kamerayı acaba bilgisayarını mı taksaydım?
+
+101
+00:13:38,759 --> 00:13:42,400
+Hocam ani yaklaşımlarınızdan, uzaklaşmalarınızdan dolayı bozuluyor.
+
+102
+00:13:42,400 --> 00:13:45,980
+bozulduğunda elinizi falan yaklaştırırsanız düzelme ihtimali var en azından.
+
+103
+00:13:48,280 --> 00:13:51,879
+Şu an ben görebiliyorum sanki okunabiliyor gibi.
+
+104
+00:13:52,139 --> 00:13:52,779
+Evet, evet.
+
+105
+00:13:52,900 --> 00:13:54,420
+Tamam.
+
+106
+00:13:55,259 --> 00:13:57,580
+Yavaş hareket etsem acaba ne olur?
+
+107
+00:13:57,580 --> 00:14:25,200
+Evet.
+
+108
+00:14:19,668 --> 00:14:20,587
+Bunlar bunlarına bakalım.
+
+109
+00:14:35,572 --> 00:14:44,572
+Burada kare kök işleminin özelliğini kullanırsak bunu kök x çarpı 1 eksi x kare olarak yazabiliriz.
+
+110
+00:14:46,572 --> 00:14:48,572
+Tanım kümemiz yine ne olacak?
+
+111
+00:14:49,572 --> 00:14:53,572
+Aynı şekilde 0, 1 aralığı olacak.
+
+112
+00:14:56,572 --> 00:14:57,572
+F çarpı y.
+
+113
+00:15:28,244 --> 00:15:45,844
+mutlak değerin özelliğinden şu ikisini tek bir kök içinde yazdım. Böyle olunca tanım kümem değişti değil mi? Yine bunların ara kesit kümeleri 0-1 aralığı ancak 1'i burada kullanamayacağım.
+
+114
+00:15:45,844 --> 00:15:55,024
+çünkü 1 ne yapıyor? G'yi 0 yapıyor. G'yi 0 yapan değerleri çıkarmam gerekiyor. Dolayısıyla
+
+115
+00:15:55,024 --> 00:16:05,864
+f bölü g'nin tanım kümesi ne olacak? 0'da kapalı ama 1'de açık olan aralık olacak.
+
+116
+00:16:19,796 --> 00:16:21,336
+g bölü f'i de
+
+117
+00:16:47,187 --> 00:16:53,168
+1 bölü x, x kare bölü x'den burası x olacak değil mi?
+
+118
+00:16:57,235 --> 00:17:10,276
+x1 olursa sıfır olacak. Bir de sorun yok. Ancak x sıfır olursa şu tanımsız olacağı için ne olmalı? Bu sefer de sıfırı çıkarmamız gerekecek.
+
+119
+00:17:15,955 --> 00:17:20,836
+sıfırda açık, birde kapalı olacak tanım aralığı.
+
+120
+00:17:21,336 --> 00:17:25,875
+İşte fonksiyonların toplamlarını, çarpımlarını bu şekilde yapıyoruz.
+
+121
+00:17:26,555 --> 00:17:29,795
+Tanım kümelerine dikkat etmemiz gerekiyor.
+
+122
+00:17:30,836 --> 00:17:34,075
+Sorunuz var mı bunlarla ilgili? Ben camı kapatayım.
+
+123
+00:18:32,051 --> 00:18:32,651
+Geldim.
+
+124
+00:18:35,291 --> 00:18:37,811
+Bunlarla ilgili sorunuz yok sanıyorum.
+
+125
+00:18:54,324 --> 00:18:55,644
+ilişki fonksiyona bakalım.
+
+126
+00:19:13,715 --> 00:19:17,815
+Fonksiyonun bileşkesini genelde şu şekilde gösteririz.
+
+127
+00:19:17,955 --> 00:19:19,195
+F bileşke G.
+
+128
+00:19:20,575 --> 00:19:22,155
+Bu şu demektir.
+
+129
+00:19:22,855 --> 00:19:23,415
+F
+
+130
+00:19:23,415 --> 00:19:27,255
+G demektir.
+
+131
+00:19:27,635 --> 00:19:37,135
+Yani F'teki bağımsız değişkenin yerine G fonksiyonunu koyarak iki fonksiyonun bileşkesini alıyoruz.
+
+132
+00:19:37,935 --> 00:19:43,135
+G bileşke F ve F bileşke G birbirinden farklı fonksiyonlardır.
+
+133
+00:19:43,715 --> 00:19:44,715
+G.
+
+134
+00:19:50,387 --> 00:19:55,407
+İleçki fonksiyonu yazdığımızda tanım kümesini nasıl yazacağız?
+
+135
+00:19:56,907 --> 00:20:01,307
+d, f bileşki g'nin tanım kümesi.
+
+136
+00:20:02,567 --> 00:20:03,947
+Bunu nasıl yazarız?
+
+137
+00:20:05,147 --> 00:20:09,187
+Öncelikle f bileşki g dediğim için bunu inceliyorum.
+
+138
+00:20:16,756 --> 00:20:33,156
+yazabilmem için f, gx yazabilmem için ne olması lazım? Benim gx'i yazıyor olabilmem lazım. gx'i yazabilmek için de x'i nereden almam gerekiyor? g'nin tanım kümesinden almam gerekiyor.
+
+139
+00:20:39,412 --> 00:21:04,711
+x'i g'nin tanım kümesinden alıyorum ki gx'i yazabileyim. Aldım, gx'i yazdım. Şimdi gx'i burada yerine koyabilmem için gx'in sağlaması gereken koşu nedir? gx'de f'in tanım kümesinde olmalıdır.
+
+140
+00:21:13,907 --> 00:21:16,687
+yorumlamış oluyoruz aslında bunu.
+
+141
+00:21:18,027 --> 00:21:19,587
+GX'i yazabilmem için
+
+142
+00:21:19,587 --> 00:21:21,987
+XG'nin tanım kümesinde olmalı.
+
+143
+00:21:22,107 --> 00:21:22,327
+Çünkü
+
+144
+00:21:22,327 --> 00:21:26,227
+G'yi tanımlayamayacaksam
+
+145
+00:21:26,227 --> 00:21:27,587
+GX'i yazamam.
+
+146
+00:21:28,707 --> 00:21:30,887
+XG'nin tanım kümesinde olmalı.
+
+147
+00:21:31,007 --> 00:21:31,747
+Tamam, güzel.
+
+148
+00:21:33,207 --> 00:21:35,527
+XG'nin tanım kümesinde ise
+
+149
+00:21:35,527 --> 00:21:36,607
+GX tanımlıdır.
+
+150
+00:21:36,788 --> 00:21:38,487
+Oldu, GX'i yazdım.
+
+151
+00:21:38,487 --> 00:21:40,487
+Peki, GX'i F'de
+
+152
+00:21:40,487 --> 00:21:42,427
+yazabilmem için, yani
+
+153
+00:21:42,427 --> 00:21:44,387
+şunu yazabilmem için ne olması
+
+154
+00:21:44,387 --> 00:21:46,387
+gerekiyor? GX'in F'in
+
+155
+00:21:46,387 --> 00:21:48,247
+tanım kümesine ait olması
+
+156
+00:21:48,247 --> 00:21:50,687
+gerekiyor. Tanım kümesi dışında
+
+157
+00:21:50,687 --> 00:21:52,288
+bir değer olursa bu sefer de
+
+158
+00:21:52,288 --> 00:21:54,967
+F tanımsız olacak. Dolayısıyla
+
+159
+00:21:54,967 --> 00:21:56,567
+birleşke fonksiyonun
+
+160
+00:21:56,567 --> 00:21:58,407
+tanım kümesini biz bu
+
+161
+00:21:58,407 --> 00:21:59,007
+şekilde
+
+162
+00:21:59,007 --> 00:22:01,027
+yazıyoruz.
+
+163
+00:22:03,067 --> 00:22:04,407
+G birleşke F'i nasıl
+
+164
+00:22:04,407 --> 00:22:06,267
+yazacağım? Bu sefer de
+
+165
+00:22:06,267 --> 00:22:08,507
+şunu inceleyeceğim.
+
+166
+00:22:08,847 --> 00:22:09,288
+Bir kere
+
+167
+00:22:09,288 --> 00:22:14,927
+F'i yazabilmem için
+
+168
+00:22:14,927 --> 00:22:16,327
+X'i nereden alacağım?
+
+169
+00:22:16,847 --> 00:22:18,087
+F'in tanım kümesinden
+
+170
+00:22:18,087 --> 00:22:18,627
+alacağım.
+
+171
+00:22:21,587 --> 00:22:23,627
+X'i F'in tanım kümesinden
+
+172
+00:22:23,627 --> 00:22:25,027
+aldım. Dolayısıyla
+
+173
+00:22:25,027 --> 00:22:26,407
+F'i artık tanımlı.
+
+174
+00:22:26,607 --> 00:22:28,267
+Yazabiliyorum. Bir değeri var
+
+175
+00:22:28,267 --> 00:22:28,947
+bunun yani.
+
+176
+00:22:29,607 --> 00:22:31,447
+F'i de G'de yerine
+
+177
+00:22:31,447 --> 00:22:32,667
+yazabilmem için
+
+178
+00:22:32,667 --> 00:22:34,187
+ne olmalı?
+
+179
+00:22:34,187 --> 00:22:35,727
+F'i
+
+180
+00:22:35,727 --> 00:22:37,367
+G'nin
+
+181
+00:22:37,367 --> 00:22:38,947
+tanım kümesine ait
+
+182
+00:22:38,947 --> 00:22:39,767
+olmalı değil mi?
+
+183
+00:22:41,327 --> 00:22:42,247
+Yoksa
+
+184
+00:22:42,247 --> 00:22:44,107
+G'nin tanım kümesine
+
+185
+00:22:44,107 --> 00:22:45,407
+ait olmazsa
+
+186
+00:22:45,407 --> 00:22:45,947
+F'i
+
+187
+00:22:45,947 --> 00:22:46,607
+o zaman
+
+188
+00:22:46,607 --> 00:22:47,307
+şu
+
+189
+00:22:47,307 --> 00:22:48,807
+anlamsız bir şey
+
+190
+00:22:48,807 --> 00:22:49,307
+olacak.
+
+191
+00:22:50,407 --> 00:22:51,467
+Tanım kümelerini
+
+192
+00:22:51,467 --> 00:22:52,407
+bu şekilde
+
+193
+00:22:52,407 --> 00:22:53,127
+yazıyoruz.
+
+194
+00:22:54,227 --> 00:22:55,987
+Birleşke fonksiyonlar
+
+195
+00:22:55,987 --> 00:22:57,288
+da burada gördüğünüz gibi
+
+196
+00:22:57,288 --> 00:22:58,927
+şeklinde
+
+197
+00:22:58,927 --> 00:22:59,467
+yazıyoruz.
+
+198
+00:23:00,627 --> 00:23:01,227
+Şimdi buna da
+
+199
+00:23:01,227 --> 00:23:02,288
+örnek verelim.
+
+200
+00:23:24,084 --> 00:23:24,544
+şu.
+
+201
+00:23:30,259 --> 00:23:31,740
+x eşit x kare
+
+202
+00:23:31,740 --> 00:23:39,039
+g x kök x artı 1
+
+203
+00:23:39,039 --> 00:23:42,319
+Fonksiyonlarını göz önüne alalım
+
+204
+00:23:42,319 --> 00:23:44,680
+ve şunları yazalım.
+
+205
+00:23:44,879 --> 00:23:46,319
+f bileşki g
+
+206
+00:23:46,319 --> 00:23:49,759
+g bileşki f
+
+207
+00:23:58,228 --> 00:24:02,708
+birleşke fonksiyonlarını ve bunların tanım kümelerini.
+
+208
+00:24:15,316 --> 00:24:20,276
+şu tanım kümelerini silim artık.
+
+209
+00:24:24,723 --> 00:24:25,364
+Öncelikle
+
+210
+00:24:29,364 --> 00:24:31,403
+fonksiyonun tanım kümesi nedir?
+
+211
+00:24:33,703 --> 00:24:34,703
+Hocam, görüntü.
+
+212
+00:24:35,244 --> 00:24:36,163
+Gitti mi?
+
+213
+00:24:41,779 --> 00:24:42,519
+medyos.
+
+214
+00:25:02,804 --> 00:25:06,464
+Okunabiliyor galiba ama şu kenarı görünüyor mu?
+
+215
+00:25:20,819 --> 00:25:37,399
+tanım kümesi nedir? Bu x kare polinom şeklinde bir fonksiyon olduğu için tüm R sayılarda tanımlıdır. Dolayısıyla tanım kümesi R'nin kendisidir. Yani eksi sonsuz, sonsuz anılıdır.
+
+216
+00:25:38,200 --> 00:25:40,179
+G'nin tanım kümesi nedir?
+
+217
+00:25:40,179 --> 00:25:54,819
+Kare kök fonksiyonu olduğu için kare kökün içini pozitif yapan değerler sıfır veya sıfırdan büyük sayılar için tanımlı. Yani x artı 1 büyük eşit sıfır için tanımlı.
+
+218
+00:25:54,819 --> 00:26:06,659
+x artı 1 büyük eşit sıfır dersek x büyük eşit eksi 1 için tanımlı olacak. Yani eksi 1 sonsuz aralığı olacak.
+
+219
+00:26:10,179 --> 00:26:11,179
+Bunu da yazdık.
+
+220
+00:26:13,179 --> 00:26:17,299
+Şimdi gelelim şu bileşge fonksiyonları yazmaya.
+
+221
+00:26:18,259 --> 00:26:21,299
+F bileşge g fonksiyonu.
+
+222
+00:26:22,759 --> 00:26:26,279
+F g x olur değil mi?
+
+223
+00:26:29,811 --> 00:26:48,192
+f fonksiyonum nedir? x kare. x yerine ne yazacağım? gx'i yazacağım. gx'de x artı 1. O halde bu x artı 1'i karesi demektir. x artı 1 çıkacak. Bunun tanım kümesi nedir?
+
+224
+00:26:56,531 --> 00:27:08,091
+tanım kümesi, bir kere şunu yazabilmem için x g'nin tanım kümesine ait olmalı. Yani x eleman eksi bir sonsuz olacak.
+
+225
+00:27:14,996 --> 00:27:27,276
+x'i bu aralıkta alacağım. x'i bu aralıkta aldığında g'ler neler oluyor? gx kök x artı 1 şeklinde sayılar oluyor.
+
+226
+00:27:28,556 --> 00:27:39,316
+Bu aralıktaki sayıları aldığında x'i 1 için bu sıfır olacak. Diğerleri için de ne olacak? Pozitif değerler olacak. Yani sıfır sonsuz aralığı olacak görüntük.
+
+227
+00:27:39,316 --> 00:27:50,176
+Gx'ler f'in tanım kümesine ait mi ya da hangileri ait ona bakalım.
+
+228
+00:27:57,364 --> 00:28:04,044
+dedik ki gx'ler, yani g'nin görüntü kümesi ne olacak? Sıfır sonsuz aralığı olacak.
+
+229
+00:28:05,544 --> 00:28:09,784
+O aralıkla neyin ara kesitini almam lazım?
+
+230
+00:28:11,663 --> 00:28:15,284
+f'in ara kesitini almam lazım.
+
+231
+00:28:17,284 --> 00:28:19,244
+Ay yok yok, şey değil.
+
+232
+00:28:21,044 --> 00:28:22,144
+Şuna baktık değil mi?
+
+233
+00:28:22,423 --> 00:28:24,844
+x bu aralığa ait olmalı dedik.
+
+234
+00:28:25,004 --> 00:28:26,744
+Evet, x bu aralığa ait.
+
+235
+00:28:26,744 --> 00:28:36,564
+Peki, gx'ler, elde edeceğim gx değerleri f'in tanım kümesine ait olacak mı?
+
+236
+00:28:37,024 --> 00:28:38,144
+Olacak çünkü
+
+237
+00:28:43,412 --> 00:29:02,951
+Demin zaten onun için açıklama yapıyordum. Çünkü ne olacak? Şunların görüntüsü, yani gx'ler yine rel sayılar olacağı için, burada f tüm rel sayılarda tanımlı dolayısıyla o g'lerin hepsi bu aralığa düşecek.
+
+238
+00:29:02,951 --> 00:29:07,471
+Yani bunun alt kümesi olacağı için neyi alıyorum?
+
+239
+00:29:08,872 --> 00:29:14,251
+f bileşge g'nin tanım kümesi olarak eksi bir sonsuz aralığını alıyorum.
+
+240
+00:29:15,092 --> 00:29:23,751
+Hocam sıfır almamız gerekmiyor mu kapalı aralıkta? Çünkü eksi bir minimum değer yerine yazdığımız zaman sıfır gelmesi gerekiyor sıfırın karesinden.
+
+241
+00:29:24,471 --> 00:29:27,812
+En düşük sıfır alır zaten oradan sonsuza doğru gider.
+
+242
+00:29:27,812 --> 00:29:57,791
+Evet, görüntü kümesi sıfır alır zaten.
+
+243
+00:29:38,291 --> 00:29:43,551
+Bunun görüntü kümesi ne olacak? f'in tanım kümesiyle kesişecek.
+
+244
+00:29:44,791 --> 00:29:48,531
+Evet, onun görüntü kümesiyle çakışınca sıfır sonsuz olmuş olması gerekiyor.
+
+245
+00:29:48,531 --> 00:29:54,531
+Ama şöyle, bu şunun alt kümesi midir? Alt kümesidir.
+
+246
+00:29:55,051 --> 00:29:59,631
+Alt kümesi ise o zaman eksi bir sonsuz aralığındaki tüm x'leri alabilirim.
+
+247
+00:30:03,892 --> 00:30:05,632
+Yani şunu yapmıyoruz.
+
+248
+00:30:06,332 --> 00:30:09,511
+Bununla bunun kesişimini almıyorum.
+
+249
+00:30:09,772 --> 00:30:10,312
+Tamam mı?
+
+250
+00:30:11,112 --> 00:30:15,532
+Eğer şunlar bunun bir alt kümesi oluyorsa
+
+251
+00:30:15,532 --> 00:30:20,692
+buradaki elde ettiğim gx sayıları
+
+252
+00:30:20,692 --> 00:30:23,632
+şu aralığa düşüyorsa sorun yok.
+
+253
+00:30:23,751 --> 00:30:25,872
+O zaman bunları alabilirim.
+
+254
+00:30:26,711 --> 00:30:29,711
+Eksi bir sonsuz aralığını o zaman alırım demektir.
+
+255
+00:30:29,711 --> 00:30:32,412
+Tanım kümesini nasıl yapmıştık?
+
+256
+00:30:32,412 --> 00:30:36,552
+x eleman dg demiştik.
+
+257
+00:30:37,852 --> 00:30:42,251
+gx eleman f df.
+
+258
+00:30:45,231 --> 00:30:51,572
+Yani g'nin x'i tanım kümesinde aldım gx oldu.
+
+259
+00:30:52,052 --> 00:30:53,632
+Bu ne oldu? x'in görüntüsü oldu.
+
+260
+00:30:53,731 --> 00:30:55,152
+g altındaki görüntüsü.
+
+261
+00:30:55,152 --> 00:30:59,231
+g altındaki görüntüleri f'in tanım kümesine düşüyorsa
+
+262
+00:30:59,231 --> 00:31:01,152
+ben o x'i alabilirim.
+
+263
+00:31:01,152 --> 00:31:03,491
+x'i 1'i alabilirim burada.
+
+264
+00:31:03,652 --> 00:31:05,991
+0 sonsuz aralığı almıyorum.
+
+265
+00:31:06,172 --> 00:31:06,332
+Neden?
+
+266
+00:31:06,792 --> 00:31:07,951
+x'i 1'i alabilirim.
+
+267
+00:31:08,392 --> 00:31:11,751
+x'i 1 g'nin tanım kümesinde mi?
+
+268
+00:31:11,991 --> 00:31:12,271
+Evet.
+
+269
+00:31:13,632 --> 00:31:17,132
+x'i 1'i aldığında g-1 ne olacak?
+
+270
+00:31:19,711 --> 00:31:23,092
+x'i 1 artı 1'den 0 olacak.
+
+271
+00:31:23,092 --> 00:31:26,092
+Bu sıfırda f'in tanım kümesinde mi?
+
+272
+00:31:26,672 --> 00:31:28,692
+f'in tanım kümesi r olduğu için
+
+273
+00:31:28,692 --> 00:31:30,032
+evet r'de.
+
+274
+00:31:30,392 --> 00:31:33,372
+O halde ben bu x'i alabiliyorum.
+
+275
+00:31:33,512 --> 00:31:36,352
+Yani eksi bir tanım kümesinin elemanıdır.
+
+276
+00:31:37,652 --> 00:31:40,172
+Tek tek bu elemanlara bakmıyorum tabii ki.
+
+277
+00:31:40,172 --> 00:31:43,392
+o yüzden tek tek bakmadığımız için
+
+278
+00:31:43,392 --> 00:31:44,892
+neye bakacağız?
+
+279
+00:31:47,231 --> 00:31:49,951
+g'nin tanım kümesindeki elemanları aldım.
+
+280
+00:31:51,372 --> 00:31:56,932
+g'lerin görüntüleri f'in tanım kümesine düşüyor mu düşmüyor mu?
+
+281
+00:31:56,932 --> 00:32:01,612
+hangileri düşüyor, hangileri düşmüyor şeklinde düşmeyenler varsa
+
+282
+00:32:01,612 --> 00:32:03,832
+onları zaten çıkarmam gerekecek.
+
+283
+00:32:03,951 --> 00:32:07,552
+O x'leri tanım kümesinden de çıkarmam gerekecek.
+
+284
+00:32:08,392 --> 00:32:10,072
+Düşmeyen bir eleman var mı?
+
+285
+00:32:10,251 --> 00:32:13,592
+Yani buradaki bütün g'ler real sayı çıkacak.
+
+286
+00:32:13,731 --> 00:32:15,251
+Pozitif hem de çıkacak.
+
+287
+00:32:15,372 --> 00:32:17,432
+Pozitif real sayılar çıkacak.
+
+288
+00:32:17,991 --> 00:32:20,792
+f'in tanım kümesi tüm real sayılar.
+
+289
+00:32:21,092 --> 00:32:23,612
+Pozitifler de var, negatifler de var.
+
+290
+00:32:23,612 --> 00:32:28,292
+Dolayısıyla şunlar buraya ait oldukları için
+
+291
+00:32:28,292 --> 00:32:31,612
+ben şuradaki tüm x'leri alabilirim.
+
+292
+00:32:32,211 --> 00:32:33,612
+Tanım kümesine tamam mı?
+
+293
+00:32:35,092 --> 00:32:38,392
+O yüzden bunun tanım kümesi olarak
+
+294
+00:32:38,392 --> 00:32:41,072
+eksi bir sonsuzu yazıyoruz.
+
+295
+00:32:46,771 --> 00:32:52,231
+Şimdi g birleşke f'i de yazalım. Bu biraz daha farklı çünkü.
+
+296
+00:32:57,364 --> 00:33:01,584
+fx neydi? x kareydi. Bunu burada yerine yazacağım.
+
+297
+00:33:01,764 --> 00:33:08,463
+Kök x kare artı 1 olacak değil mi?
+
+298
+00:33:11,284 --> 00:33:14,923
+G birleşke fx kök x kare artı 1 olacak.
+
+299
+00:33:16,483 --> 00:33:18,524
+Şimdi bunun tanım kümesi nasıl olur?
+
+300
+00:33:23,731 --> 00:33:27,912
+Öncelikle, alacağım x'ler nereye ait olmalı?
+
+301
+00:33:28,311 --> 00:33:30,811
+f'in tanım kümesine ait olmalı.
+
+302
+00:33:31,851 --> 00:33:33,491
+f'in tanım kümesi nedir?
+
+303
+00:33:33,571 --> 00:33:36,711
+x'ler, r'de seçilecek.
+
+304
+00:33:36,872 --> 00:33:41,011
+Peki, r'den aldığım bu x'lerin görüntüleri,
+
+305
+00:33:42,612 --> 00:33:44,731
+eksi bir sonsuz aralığına düşüyor mu?
+
+306
+00:33:44,791 --> 00:33:45,451
+Ona bakacağım.
+
+307
+00:33:51,539 --> 00:34:04,399
+Şu x kare olduğu için her koşulda pozitif olacak. Tüm real sayıları alıyorum. Negatifler de dahil. Sonuçta burası ne olacak? Pozitif bir değer alacak.
+
+308
+00:34:05,399 --> 00:34:13,139
+Buradaki çıkan görüntüler, ona göre bakmıyorum ben. Niye ona bakıyorum ki?
+
+309
+00:34:13,139 --> 00:34:18,059
+f görüntüleri neler çıktı? x kareler çıktı.
+
+310
+00:34:19,759 --> 00:34:26,139
+f'in görüntüleri x kare. Bu x kareler, g'nin tanım kümesine düşüyor mu?
+
+311
+00:34:27,779 --> 00:34:41,400
+Düşüyor. Bu daima x kare olduğu için büyük eşit sıfırdır. Sıfır için sıfır, onun dışında ki sıfırdan farklı her değer için nedir?
+
+312
+00:34:41,400 --> 00:34:48,519
+Sıfırdan büyük olacaktır. Yani görüntü kümesi sıfır? Yani görüntü kümesi sıfır sonsuz aralığı olacak.
+
+313
+00:34:48,519 --> 00:35:00,360
+Sıfır sonsuz aralığı bakıyorum. Eksi bir sonsuz aralığının alt kümesi. Demek ki fx'ler dg'nin bir alt kümesi oluyor.
+
+314
+00:35:00,739 --> 00:35:06,480
+dg'nin alt kümesi ise o zaman ben şuradaki tüm x'leri alabilirim. Yani x neyin elemanı burada?
+
+315
+00:35:06,480 --> 00:35:12,500
+dg'nin elemanı, bunun görüntü kümesi R olacak demektir.
+
+316
+00:35:18,771 --> 00:35:22,592
+Şuraya yazdığımız fonksiyonun tanım kümesini alıyoruz genellikle.
+
+317
+00:35:23,152 --> 00:35:25,411
+Bileşge fonksiyonun tanım kümesi olarak.
+
+318
+00:35:26,011 --> 00:35:29,011
+İçe yazılan fonksiyonun tanım kümesini alıyoruz.
+
+319
+00:35:29,011 --> 00:35:32,251
+Ama alınca da incelemek gerekiyor.
+
+320
+00:35:32,391 --> 00:35:42,511
+Çünkü bazı değerler için belki onun görüntüsü dıştaki fonksiyonun tanım kümesinde olmayabilir.
+
+321
+00:35:42,811 --> 00:35:43,911
+Ona bir bakıyoruz.
+
+322
+00:35:43,911 --> 00:35:49,152
+değerler dıştaki fonksiyonun tanım kümesinin içine düşüyorsa
+
+323
+00:35:49,152 --> 00:35:53,552
+artık dıştaki fonksiyonun tanım kümesi nedir ona bakmadan
+
+324
+00:35:53,552 --> 00:35:56,271
+sadece neyi yazıyorum?
+
+325
+00:35:57,052 --> 00:35:58,231
+x'i nereden aldım?
+
+326
+00:35:58,471 --> 00:36:00,371
+İçteki fonksiyonun tanım kümesi.
+
+327
+00:36:00,731 --> 00:36:02,552
+Onu o şekilde yazıyorum.
+
+328
+00:36:17,556 --> 00:36:23,536
+Şimdi bakın burada f bileşke g'yi aldığında sonuç ne çıktı?
+
+329
+00:36:24,856 --> 00:36:25,775
+x artı 1.
+
+330
+00:36:28,016 --> 00:36:29,795
+x artı 1 nedir?
+
+331
+00:36:29,996 --> 00:36:31,715
+Tüm şeyde tanımlıdır aslında.
+
+332
+00:36:31,876 --> 00:36:33,036
+Tüm uzayda tanımlıdır.
+
+333
+00:36:33,135 --> 00:36:34,836
+Tüm real sayılarda tanımlıdır.
+
+334
+00:36:34,836 --> 00:36:39,836
+Ama bunun tanım kümesi olarak ben bunun sonucuna bakıp yazmıyorum.
+
+335
+00:36:40,715 --> 00:36:46,615
+Yani bunun sonucuna bakarak tüm real sayılarda tanımlıdır derseniz yanlış olur.
+
+336
+00:36:47,556 --> 00:36:51,215
+Bileşke fonksiyonların tanım kümesine göre bakacağım.
+
+337
+00:36:51,775 --> 00:36:57,755
+Çünkü tüm real sayılarda gx tanımlı değildir.
+
+338
+00:36:59,115 --> 00:36:59,655
+Tamam mı?
+
+339
+00:36:59,655 --> 00:37:06,635
+Gx'in tanımlı olmadığı bir yerde f bileşke gx'den bahsedemeyiz.
+
+340
+00:37:07,295 --> 00:37:14,056
+O halde bunu eğer bileşke fonksiyonu olarak yazmışsam ne çıkarsa çıksın.
+
+341
+00:37:14,056 --> 00:37:20,356
+Ona değil sadece yazarken içteki fonksiyonun tanım kümesine bakıyorum.
+
+342
+00:37:21,936 --> 00:37:29,655
+Sonra da o kümenin görüntüsü dıştaki fonksiyonun tanım kümesinin bir alt kümesi mi değil mi ona bakıyorum.
+
+343
+00:37:30,715 --> 00:37:32,976
+Alt kümesi oluyorsa sorun yok.
+
+344
+00:37:33,235 --> 00:37:34,896
+Bu tanım kümesini alıyorum.
+
+345
+00:37:34,896 --> 00:37:38,416
+Umarım anlamışsınızdır.
+
+346
+00:37:50,547 --> 00:38:12,807
+Arkadaşlar, ben şey şimdi [öğrenci] yazdığın şeyi görünce aklıma geldi. İlk grubumda kümeleri de tanıtmıştım ama sizde unuttum. Unuttum derken insan öbür grubu anlatınca size de anlattım zannediyorum.
+
+347
+00:38:12,807 --> 00:38:24,567
+Şöyle diyelim. Sayı kümelerini biz dersimizde bunlar aynı zamanda bizim çalıştığımız uzaylar olduğu için şöyle gösteriyoruz.
+
+348
+00:38:26,007 --> 00:38:30,307
+Çift çizgiyle gösteriyorum. Bu R, real uzay.
+
+349
+00:38:33,047 --> 00:38:37,607
+Ya da real sayılar kümesi de diyebilirsiniz. Tamam mı?
+
+350
+00:38:44,884 --> 00:39:06,563
+uzayımızdır bizim. Real uzayda çalışıyoruz. Aynı zamanda uzayı da bir küme olarak gösterebiliyoruz. Aynı zamanda kümedir. Real sayılar. Sayı kümelerini çift çizgi kullanarak gösteriyoruz. Bu real, şu doğal sayılar kümesi.
+
+351
+00:39:10,643 --> 00:39:15,143
+R sayılar kümesi dedik. Doğal sayılar kümesi.
+
+352
+00:39:20,916 --> 00:39:23,576
+Başka ne var? Tam sayılar
+
+353
+00:39:35,956 --> 00:39:40,216
+şu, böyle,
+
+354
+00:39:45,268 --> 00:39:52,407
+İrrasyonel sayıları da böyle gösteriyoruz. Büyük I, onun da yanına bir çizgi çekiyorduk. İrrasyonel.
+
+355
+00:39:54,407 --> 00:39:59,347
+Bir de kompleks sayılarımız var. Onu da şuraya sığdırayım.
+
+356
+00:39:59,987 --> 00:40:06,427
+C, bunun da içine çizgiyi çekiyoruz. Bu da kompleks sayılar tümesi oluyor.
+
+357
+00:40:12,179 --> 00:40:15,440
+komplek sayıları da c ile böyle gösteriyoruz.
+
+358
+00:40:16,440 --> 00:40:22,480
+Kullandığımız kümeleri, sayı kümelerini bu şekilde notasyonlarına gösteriyoruz.
+
+359
+00:40:22,779 --> 00:40:23,719
+Bir saniye lütfen.
+
+360
+00:40:40,851 --> 00:40:43,011
+Bunu da açıklamış oldum.
+
+361
+00:40:45,192 --> 00:40:49,031
+Sorularınız varsa sorabilirsiniz. Şunları siliyorum.
+
+362
+00:41:16,500 --> 00:41:21,900
+Biz her şeyleri yazmadık. F bileşki, F ile G bileşki, G'yi yazmadık.
+
+363
+00:41:34,164 --> 00:41:42,004
+x kareydi. x karenin karesi yani x üzeri 4 olacak.
+
+364
+00:41:43,224 --> 00:41:46,524
+İçteki fonksiyonum da f, dıştaki fonksiyonum da f.
+
+365
+00:41:48,024 --> 00:41:51,964
+Dolayısıyla f'in tanım kümesi real sayılardı.
+
+366
+00:41:52,584 --> 00:41:58,564
+Görüntü kümesi de yine real sayılar olacağından bunun tanım kümesi
+
+367
+00:41:58,564 --> 00:42:05,564
+ve
+
+368
+00:42:03,411 --> 00:42:05,692
+tüm real sayılardır.
+
+369
+00:42:07,731 --> 00:42:10,251
+c birleşki g'ye bakalım.
+
+370
+00:42:20,211 --> 00:42:21,972
+Hocam ekran tekrar gitti ama.
+
+371
+00:42:23,231 --> 00:42:23,612
+Tamam.
+
+372
+00:42:23,931 --> 00:42:25,811
+Güzeldi hocam.
+
+373
+00:42:29,972 --> 00:42:31,872
+hareket etmeye korkar oldum.
+
+374
+00:42:35,272 --> 00:42:37,992
+Kök x artı 1 miydi fonksiyonumuz?
+
+375
+00:42:39,532 --> 00:42:40,632
+x artı 1, evet.
+
+376
+00:42:41,412 --> 00:42:42,052
+Kök
+
+377
+00:42:49,619 --> 00:42:50,019
+Bu.
+
+378
+00:42:51,019 --> 00:42:53,639
+Şimdi bunun tanım kümesi nedir?
+
+379
+00:43:00,179 --> 00:43:06,759
+G'nin tanım kümesi eksi bir sonsuz muydu?
+
+380
+00:43:07,059 --> 00:43:07,779
+Artı sonsuz.
+
+381
+00:43:08,339 --> 00:43:10,279
+Eksi bir sonsuz aralığıydı.
+
+382
+00:43:15,635 --> 00:43:29,635
+Tıkta aldığım G'lerin hepsinin görüntüsü yine G'nin tanım kümesinin alt kümesi midir? Evet. Çünkü bu G'lerin görüntüleri nedir? Sıfır sonsuz aralığına düşüyordu. Dolayısıyla tekrar...
+
+383
+00:43:33,619 --> 00:43:43,719
+şey olduğu için, görüntüleri, eksi 1 gx'ler, eksi 1, 1 sonsuz aralığının bir alt kümesi olduğu için, sıfır sonsuz oluyor çünkü.
+
+384
+00:43:50,547 --> 00:44:01,187
+olduğu için ne diyorum? Bunun tanım kümesi g'nin tanım kümesi. Yani eksi 1 sonsuza eşit olacak.
+
+385
+00:44:17,588 --> 00:44:18,788
+Var mı sorularınız?
+
+386
+00:44:22,996 --> 00:44:28,235
+Hocam benim biraz kafam karıştı. İki defa tanım kümesine mi baktık şimdi?
+
+387
+00:44:30,175 --> 00:44:33,715
+Bileşki fonksiyonların tanım kümeleri birazcık karışık.
+
+388
+00:44:34,476 --> 00:44:40,056
+Tanım kümesini alırken içteki fonksiyonun tanım kümesini öncelikle alıyorsun.
+
+389
+00:44:40,816 --> 00:44:41,135
+Tamam.
+
+390
+00:44:41,816 --> 00:44:44,856
+Ondan sonra da onların görüntülerine bakıyorsun.
+
+391
+00:44:44,856 --> 00:44:59,516
+Görüntü kümesi eğer dıştaki fonksiyonun tanım kümesinin alt kümesi oluyorsa ya da ona eşit oluyorsa o zaman içteki fonksiyonun tanım kümesi bileşke fonksiyonun tanım kümesi olarak yazılabiliyor.
+
+392
+00:45:00,796 --> 00:45:01,316
+Tamam anladım.
+
+393
+00:45:01,936 --> 00:45:04,496
+Peki direkt değer kümesine bakarsak ne olur?
+
+394
+00:45:04,496 --> 00:45:12,316
+Mesela GX'in değer kümesine bakıp mesela diyorum F bileşke G diyelim.
+
+395
+00:45:13,076 --> 00:45:14,735
+O yanıltıcı olabilir.
+
+396
+00:45:14,856 --> 00:45:16,155
+Tamam.
+
+397
+00:45:17,396 --> 00:45:23,996
+Yanıltıcı olabilir çünkü şöyle öncelikle hani tanım kümesine baktınız.
+
+398
+00:45:24,155 --> 00:45:25,536
+Değer kümesine de bakın.
+
+399
+00:45:26,735 --> 00:45:29,615
+Değer kümesi dediğim yani görüntü kümesi.
+
+400
+00:45:29,996 --> 00:45:31,376
+Görüntü kümesine de bakın.
+
+401
+00:45:31,655 --> 00:45:41,635
+İçteki fonksiyonun görüntüleri ama zaten şey ha direkt görüntü kümesine bakarsanız şöyle o zaman olacak.
+
+402
+00:45:41,776 --> 00:45:42,996
+Tamam söylediğini anladım.
+
+403
+00:45:43,155 --> 00:45:44,576
+Şimdi jetonum düştü.
+
+404
+00:45:44,856 --> 00:45:57,276
+Bunun görüntü kümesi eğer dıştaki fonksiyonun görüntü kümesinin bir alt kümesi oluyorsa şöyle ikisi de G olduğu için karışmasın diye şöyle yazayım.
+
+405
+00:46:05,715 --> 00:46:12,395
+Şimdi D, F birleşki G'nin tanım kümesini nasıl yazacaksın?
+
+406
+00:46:13,576 --> 00:46:17,215
+Şu içteki fonksiyonun tanım kümesini alacaksın.
+
+407
+00:46:17,435 --> 00:46:17,895
+Tamam mı?
+
+408
+00:46:20,275 --> 00:46:24,175
+Tanım kümesini aldıktan sonra bunu zaten değişmeyecek.
+
+409
+00:46:24,175 --> 00:46:28,096
+Çünkü G'lerin tanım kümesini biliyorsun, yazabiliyorsun.
+
+410
+00:46:28,455 --> 00:46:30,536
+O yüzden bunun tanım kümesi neyse o.
+
+411
+00:46:31,655 --> 00:46:34,675
+Sen direkt görüntü kümesine bakacaksın bundan sonra.
+
+412
+00:46:34,675 --> 00:46:36,935
+G'nin görüntü kümesi nedir?
+
+413
+00:46:39,135 --> 00:46:48,016
+R'nin görüntü kümesi eğer F'in tanım kümesinin bir alt kümesi ise veya eşit ise.
+
+414
+00:46:48,195 --> 00:46:51,915
+Eşitliği göstermek için alt kümenin altına bir çizgi çekiyoruz.
+
+415
+00:46:51,915 --> 00:46:55,915
+Bu şu demektir.
+
+416
+00:46:56,855 --> 00:47:02,915
+R, G kümesi, D, F kümesinin bir alt kümesi veya ona eşit bir küme ise, kendisi ise.
+
+417
+00:47:02,915 --> 00:47:13,815
+O zaman şunun tanım kümesi, birleşki fonksiyonun tanım kümesi direkt nedir?
+
+418
+00:47:15,335 --> 00:47:16,635
+G'nin tanım kümesidir.
+
+419
+00:47:16,895 --> 00:47:18,715
+İçteki fonksiyonun tanım kümesidir.
+
+420
+00:47:19,855 --> 00:47:20,255
+Tamam mı?
+
+421
+00:47:20,255 --> 00:47:21,355
+Tamam hocam.
+
+422
+00:47:21,835 --> 00:47:22,715
+Anladım. Teşekkürler.
+
+423
+00:47:22,715 --> 00:47:26,056
+Görüntü kümesine bakmamızın sebebi şu.
+
+424
+00:47:27,016 --> 00:47:35,295
+Eğer burada hani bu görüntülerden F'in tanım kümesinde olmayan varsa onları çıkarmamız gerekecek.
+
+425
+00:47:35,435 --> 00:47:38,315
+Ama alt küme olmazsa eğer sorun.
+
+426
+00:47:38,795 --> 00:47:39,956
+Ki genelde oluyor.
+
+427
+00:47:40,735 --> 00:47:42,135
+Olmayınca sorun.
+
+428
+00:47:42,135 --> 00:47:49,315
+Eğer alt küme değilse, diyelim ki burada öyle bir örnek var mıdır elimde bilemiyorum.
+
+429
+00:47:49,735 --> 00:47:53,635
+İşte bir tane X için ne olmasın?
+
+430
+00:47:54,536 --> 00:47:57,536
+F'in tanım kümesinde olmasın G X değeri.
+
+431
+00:47:58,755 --> 00:47:59,516
+Ne yapacaksın?
+
+432
+00:47:59,655 --> 00:48:03,635
+O X değerini G'nin tanım kümesinden çıkaracaksın.
+
+433
+00:48:05,036 --> 00:48:07,375
+Daha sonra görüntü kümesinden çıkaracağım.
+
+434
+00:48:07,915 --> 00:48:10,915
+Tanım kümesinden çıkınca görüntü kümesinden çıkıyor zaten.
+
+435
+00:48:10,915 --> 00:48:13,175
+Karşılığı olmuyor çünkü.
+
+436
+00:48:13,815 --> 00:48:14,855
+Tamam. Teşekkürler hocam.
+
+437
+00:48:15,175 --> 00:48:15,395
+Tamam.
+
+438
+00:48:16,195 --> 00:48:18,016
+Hadi biraz ara verelim o zaman.
+
+439
+00:48:22,335 --> 00:48:23,695
+İkide başlarız.
+
+440
+00:48:23,755 --> 00:48:25,615
+Yine 50 dakika yapar bitiririz.
+
+441
+00:48:25,675 --> 00:48:27,475
+Ya da 45 dakika yapar bitiririz.
+
+442
+00:49:41,139 --> 00:49:43,980
+Hocam mikrofonumuz hala açık, haberiniz olsun.
+
+443
+00:58:48,148 --> 00:58:49,548
+Tekrar merhaba arkadaşlar.
+
+444
+00:58:57,780 --> 00:59:00,120
+Şimdi kaldığımız yerden devam edelim.
+
+445
+00:59:01,000 --> 00:59:01,740
+Pardon.
+
+446
+00:59:53,940 --> 00:59:57,240
+parçalı olarak tanımlanmış fonksiyonlara bir bakalım.
+
+447
+01:00:55,572 --> 01:01:00,092
+Parçalı olarak tanımlanmış fonksiyonları şöyle tanımlıyoruz.
+
+448
+01:01:01,311 --> 01:01:02,771
+Tanım aralığının
+
+449
+01:01:20,755 --> 01:01:30,755
+aralığının farklı bölgeleri için farklı formüllerle tanımlanan fonksiyonlara parçalı olarak tanımlanmış fonksiyonlar diyoruz.
+
+450
+01:01:32,795 --> 01:01:37,755
+Bunun en güzel örneği mutlak değer fonksiyonudur.
+
+451
+01:01:40,375 --> 01:01:49,016
+Bu tanımlar size dün gönderdiğim notlarda olduğu için tekrar yazmıyorum, söyleyip geçiyorum.
+
+452
+01:01:49,016 --> 01:01:54,415
+İsterseniz o notları şu an masa üstüne yükleyebilirim görmek istiyorsanız.
+
+453
+01:01:55,556 --> 01:02:00,016
+Elinizde var diye ben tekrar açmadım ama açabilirim.
+
+454
+01:02:01,995 --> 01:02:06,895
+Hicam pdf formatında sizde varsa bir daha yollayabilir misiniz? Ben alamamıştım da onları.
+
+455
+01:02:06,895 --> 01:02:08,795
+Öyle mi? Tamam gönderirim.
+
+456
+01:02:09,935 --> 01:02:12,395
+Mat bir. Şunu bir açayım.
+
+457
+01:02:31,027 --> 01:02:33,387
+Önce şey paylaşıp göndereyim ben.
+
+458
+01:02:47,860 --> 01:02:49,420
+Gönlümde teşekkür ederim.
+
+459
+01:02:51,420 --> 01:02:53,000
+Bir arkadaşımızla yollanın sağ olsun.
+
+460
+01:03:01,268 --> 01:03:03,268
+paylaştık. Şuradan da
+
+461
+01:03:03,268 --> 01:03:05,268
+paylaşalım.
+
+462
+01:03:17,427 --> 01:03:36,647
+Parçalı olarak tanımlanmış fonksiyonlar, mutlak değer fonksiyonu, bu x olarak çıkacak, x eğer büyük eşit sıfır ise, x x olarak çıkacak, x küçük sıfır ise.
+
+463
+01:03:37,248 --> 01:03:45,047
+Gördüğünüz gibi tanım kümesinin farklı bölgeleri üzerinde farklı formüllerle ifade ediliyor.
+
+464
+01:03:45,047 --> 01:03:47,768
+Grafiği nasıldır mutlak değer fonksiyonun?
+
+465
+01:03:48,647 --> 01:03:51,047
+Mutlak değer fonksiyonun grafiği
+
+466
+01:03:51,047 --> 01:03:53,927
+şu şekilde
+
+467
+01:03:53,927 --> 01:03:58,467
+y eksenine göre simetrik olduğundan
+
+468
+01:03:58,467 --> 01:04:02,547
+bu ne oluyor? Bir çift fonksiyon oluyor aynı zamanda.
+
+469
+01:04:13,588 --> 01:04:15,668
+şöyle bir fonksiyon alırsak.
+
+470
+01:04:23,827 --> 01:04:35,088
+x'i x olarak tanımlansın. Nerede? x küçük sıfır iken, x'in negatif olduğu kısımda x, x olarak tanımlanıyor.
+
+471
+01:04:39,059 --> 01:04:44,639
+0 ile 1 arasında x kare olarak alalım.
+
+472
+01:04:52,211 --> 01:05:01,431
+ve x'in birden büyük olduğu yerlerde de bunu 1 olarak tanımlayalım.
+
+473
+01:05:01,951 --> 01:05:05,972
+3 tane farklı şekilde tanımlanmış 3 ayrı bölge üzerinde.
+
+474
+01:05:06,552 --> 01:05:08,751
+Bunun grafiğini de nasıl çizeriz?
+
+475
+01:05:14,516 --> 01:05:16,796
+Şöyle biraz kaydırsam daha iyi olacak.
+
+476
+01:05:35,668 --> 01:05:40,668
+negatif olduğu yerde, xx olarak, y eşit, xx. Yani...
+
+477
+01:05:41,668 --> 01:05:43,668
+Hocam, görüntü tekrar gitti ama.
+
+478
+01:05:44,668 --> 01:05:52,668
+Tekrar gitti. Şimdi ben çizeyim ondan sonra kamerayı ayarlayayım. Çünkü ben hareket ettikçe o değişiyor.
+
+479
+01:05:53,668 --> 01:05:54,668
+Ah kamera.
+
+480
+01:05:59,411 --> 01:06:18,871
+Şimdi geldi. Geldi hocam. Ben yavaş yavaş hareket edeceğim şimdi. x kare sıfırla bir arasında x kare. Y eşit x karenin grafiği neydi? Şöyle bir paraboldu. Şurası bir olsun. Sıfır bir arasında bu. Y eşit x kare olarak tanımlanmış.
+
+481
+01:06:18,871 --> 01:06:38,391
+1x'in birden büyük olduğu yerlerde de y eşit 1 olarak sabit bir şekilde tanımlanıyor. Dolayısıyla böyle bir parçalı grafiği de oluyor. Farklı yerlerde farklı şekilde tanımlanmış oluyor.
+
+482
+01:06:39,172 --> 01:06:44,051
+Size iki tane daha böyle özel fonksiyon göstereceğim.
+
+483
+01:06:44,051 --> 01:06:54,351
+Ya da önce size şu mutlak değer fonksiyonun özelliklerini vereyim. Mutlak değer fonksiyonu çünkü karşımıza çokça çıkıyor.
+
+484
+01:07:01,811 --> 01:07:13,451
+Bu notlarda yazmadım ama bazen kullanıyoruz. Ben birkaç özelliğini yazayım mutlak diğer fonksiyonlu.
+
+485
+01:07:23,059 --> 01:07:24,559
+Siz de not alırsınız.
+
+486
+01:07:26,480 --> 01:07:28,739
+Fonsiyonunun özellikleri.
+
+487
+01:07:46,483 --> 01:07:52,063
+Mutlak değer a nedir? Büyük eşit sıfırdır.
+
+488
+01:07:54,663 --> 01:07:59,864
+Negatif bir sayının mutlak değeri nedir?
+
+489
+01:08:01,844 --> 01:08:04,244
+Pozitif şöyle diyeyim.
+
+490
+01:08:04,603 --> 01:08:08,864
+Eksi a ile a'nın mutlak değeri birbirine eşittir.
+
+491
+01:08:14,835 --> 01:08:23,755
+A çarpı B'nin mutlak değeri mutlak değer A çarpı mutlak değer B'ye eşittir.
+
+492
+01:08:25,095 --> 01:08:27,355
+Bölümde de aynı şey geçerli.
+
+493
+01:08:31,859 --> 01:08:35,859
+Burada tabii b'nin sıfırdan farklı olması gerekiyor.
+
+494
+01:08:45,268 --> 01:08:49,587
+ve sıfırdan farklı olmak zorunda bunu yazabilmem için.
+
+495
+01:08:52,288 --> 01:08:55,108
+Beşinci özelliği şuraya yazayım.
+
+496
+01:08:58,676 --> 01:09:10,556
+Eğer a kare küçük eşit b kare ise küçük diyelim, eşit anlayalım.
+
+497
+01:09:10,556 --> 01:09:22,556
+Eğer bir a sayısının karesi bir b sayısının karesinden küçük ise o zaman a sayısı mutlak değerce b sayısından küçük demektir.
+
+498
+01:09:32,275 --> 01:09:51,855
+Altıncı özelliğimiz de şuydu. Bunu biliyorsunuz. Her zaman da aklınızda kalsın. Bir sayı mutlak değerinden küçük eşittir. Mutlak değerinin negatifinden de büyük eşittir. Yani şuydu.
+
+499
+01:09:51,855 --> 01:09:58,635
+Eksi mutlak değer A. Mutlak değer A.
+
+500
+01:09:59,755 --> 01:10:10,115
+Sayının kendisi mutlak değerinden küçük eşittir. Eksi mutlak değerinden de büyük eşittir. Büyük veya eşittir.
+
+501
+01:10:21,171 --> 01:10:22,351
+Şunu da yazalım.
+
+502
+01:10:23,951 --> 01:10:27,771
+Bu çok kullanmıyoruz ama yine de karşımıza çıkabilir.
+
+503
+01:10:28,491 --> 01:10:32,611
+a-b'nin mutlak değeri küçük eşit.
+
+504
+01:10:33,111 --> 01:10:35,251
+Mutlak değer a artı b.
+
+505
+01:10:35,251 --> 01:10:37,251
+Bu da küçük eşit.
+
+506
+01:10:43,891 --> 01:10:45,891
+bire.
+
+507
+01:10:48,291 --> 01:10:52,891
+Şuraya sığamadığı için ben böyle böldüm ama onu şöyle mi yazsam açıma.
+
+508
+01:11:19,507 --> 01:11:22,327
+üçgen eşitsizliği olarak da genelde geçiyor.
+
+509
+01:11:22,847 --> 01:11:27,528
+sekizinci özellik olarak da şunu söyleyelim.
+
+510
+01:11:43,188 --> 01:11:52,688
+Mutlak değer A ve mutlak değer B'nin farkının mutlak değeri A ve B'nin farkının mutlak değerinden küçük veya eşittir.
+
+511
+01:11:53,347 --> 01:11:55,667
+Mutlak değer özellikleri bunlar.
+
+512
+01:11:56,288 --> 01:12:00,488
+Buradan şu özellik karşımıza çokça çıkabilir.
+
+513
+01:12:01,807 --> 01:12:04,467
+Şunu sık sık kullanıyoruz.
+
+514
+01:12:05,908 --> 01:12:08,648
+Şunun da genelde şu kısmını çok kullanıyoruz.
+
+515
+01:12:08,648 --> 01:12:20,328
+Yani, hani 3x eşitsizliği olarak da hep yazılır ya, mutlak değer A artı B, küçük eşit A artı B olarak.
+
+516
+01:12:20,667 --> 01:12:23,847
+Genelde şu kısım çok karşımıza çıkıyor.
+
+517
+01:12:25,748 --> 01:12:28,307
+Mutlak değerin özelliklerini de yazdık.
+
+518
+01:12:28,307 --> 01:12:37,507
+Ben size Hewiside fonksiyonuyla, hatta onları şöyle, burada üzerinden bakalım olur mu?
+
+519
+01:12:37,507 --> 01:12:42,467
+Hewiside fonksiyonu, bir de işaret fonksiyonumuz var.
+
+520
+01:12:42,467 --> 01:12:48,408
+Onları tekrar, aynısını yapacağım çünkü tekrar tahtaya çizmeme gerek yok.
+
+521
+01:12:49,347 --> 01:12:52,688
+Şöyle bir kalem, aha vurgula diyor.
+
+522
+01:12:53,288 --> 01:12:54,847
+Bakalım nasıl vurguluyoruz.
+
+523
+01:12:59,507 --> 01:13:02,087
+hangi rengi seçelim? Kırmızıyı seçelim.
+
+524
+01:13:06,292 --> 01:13:08,192
+hiviside fonksiyonu
+
+525
+01:13:12,884 --> 01:13:14,203
+değil olmadı.
+
+526
+01:13:25,747 --> 01:13:27,268
+Şu şekilde tanımlanıyor.
+
+527
+01:13:30,187 --> 01:13:39,287
+x'in sıfırda dahil pozitif değerleri için 1, negatif değerleri için sıfır olarak tanımlanıyor.
+
+528
+01:13:39,667 --> 01:13:44,007
+Burada tabii sıfırda eşitlik olmadığı için şurada küçük bir delik oluyor.
+
+529
+01:13:56,979 --> 01:13:59,619
+Birim basamak fonksiyonu da diyoruz buna.
+
+530
+01:14:00,199 --> 01:14:03,179
+Bazen yani bunu da tanımanızda fayda var.
+
+531
+01:14:04,039 --> 01:14:07,179
+Ardından işaret fonksiyonu dediğimiz fonksiyon.
+
+532
+01:14:07,179 --> 01:14:15,099
+Bu da x'in pozitif değerleri için 1, negatif değerleri için eksi 1 olarak tanımlanıyor.
+
+533
+01:14:15,719 --> 01:14:17,519
+x eşit 0'da da tanımsızdır.
+
+534
+01:14:17,659 --> 01:14:24,179
+0'ın çünkü pozitif ya da negatif bir değeri olmadığında 0'da tanımsızdır.
+
+535
+01:14:24,179 --> 01:14:29,979
+0 haricinde de pozitif sayılar için bunun değeri artı 1'dir.
+
+536
+01:14:30,039 --> 01:14:33,859
+Negatif sayılar için ise eksi 1 olarak tanımlanıyor.
+
+537
+01:14:36,339 --> 01:14:38,500
+Gelelim ters fonksiyona.
+
+538
+01:14:46,100 --> 01:14:51,960
+Ters fonksiyon da aynı şekilde, aslında fonksiyon nasıl tanımlanıyorsa o şekilde tanımlanıyor.
+
+539
+01:14:52,760 --> 01:14:54,660
+Burada tanımını yazmışız.
+
+540
+01:14:56,160 --> 01:15:10,320
+Eğer bir f fonksiyonu birebir ise o zaman değer kümesindeki herhangi bir y sayısı için fx eşit y olacak şekilde f'in tanım kümesinde bir tek x sayısı vardır.
+
+541
+01:15:10,320 --> 01:15:15,860
+x y tarafından
+
+542
+01:15:25,492 --> 01:15:30,471
+x, y tarafından tek türlü belirlendiğinden
+
+543
+01:15:30,471 --> 01:15:33,212
+şöyle çizelim altını
+
+544
+01:15:33,212 --> 01:15:38,212
+y'nin bir fonksiyonudur.
+
+545
+01:15:42,068 --> 01:15:51,648
+Bu sefer x'i y tarafından tek türlü belirlediğimiz için y'nin fonksiyonu oluyor. Bu ilişki sembolik olarak da x eşit f-1y şeklinde yazılıyor.
+
+546
+01:15:52,488 --> 01:15:59,168
+Buradaki f-1'e f'in ters fonksiyonu diyoruz. Onu sakın ola ki bir bölü f gibi düşünmeyin.
+
+547
+01:16:53,652 --> 01:17:01,891
+Birebir fonksiyonları, fonksiyonlar için yatay doğrularla belirleyebiliriz demiştik yanılmıyorsam sizin sınıfta.
+
+548
+01:17:01,891 --> 01:17:16,112
+Örneğin, şöyle bir eğri alalım. Bunun devamı da olabilir, fark etmez.
+
+549
+01:17:27,220 --> 01:17:30,380
+y eşit, fx fonksiyonumuz böyle bir fonksiyon.
+
+550
+01:17:30,940 --> 01:17:38,140
+Demiştik ki, x eksenine paralel doğrular, yani yatay doğrular çizdiğimizde,
+
+551
+01:17:39,440 --> 01:17:45,360
+bu doğrular grafiği sadece bir noktada kesiyor ise bu fonksiyon birebirdir.
+
+552
+01:17:49,235 --> 01:17:54,355
+Yani her bir x değerine tek bir y değeri karşılık geliyor.
+
+553
+01:17:54,975 --> 01:17:59,475
+Dolayısıyla böyle bir fonksiyonun tersini bulmamız mümkün oluyor.
+
+554
+01:17:59,475 --> 01:18:03,435
+Çünkü fonksiyonun tanımını hatırlarsanız eğer
+
+555
+01:18:09,395 --> 01:18:32,576
+tanım kümesindeki her bir elemanı değer kümesinde yalnızca bir eleman ile eşleyen kural demiştik. Bu fonksiyonun tanımı. Ama şu elemanın görüntüsü de bu olabilir. Değil mi? Böyle olması bunun fonksiyon olması için hiçbir engel taşımıyor. Bu bir fonksiyondur.
+
+556
+01:18:32,576 --> 01:18:52,576
+Her elemanın tek bir görüntüsü var. Bu yeterlidir. Tek bir sayıyla eşleyen kural demiştik. İşte bu fonksiyon olması için yeterlidir. Ancak bunun tersi söz konusu olamaz. Tersten bakarsanız B'den A'ya
+
+557
+01:18:56,979 --> 01:19:05,259
+ne oluyor? Tek bir eleman iki tane farklı elemanla eşleşiyor. Bu bir fonksiyon değildir.
+
+558
+01:19:10,420 --> 01:19:24,159
+Çünkü fonksiyonun tanımına aykırı. Her elemanın sadece bir tane görüntüsü olabilir. Fonksiyon bunu söylüyor. Eğer birden fazla görüntüsü varsa bu ne demektir? Fonksiyon demek değildir.
+
+559
+01:19:25,680 --> 01:19:36,340
+Dolayısıyla bakın birebir olmayan, bu birebir değil, birebir olmayan, ben bile kendimi bulanık görüyorum. Kamera gitti.
+
+560
+01:19:41,716 --> 01:19:42,615
+Şimdi oldu.
+
+561
+01:19:43,836 --> 01:19:49,016
+Birebir olmayan bir fonksiyonun tersinden söz etmemiz mümkün değil.
+
+562
+01:19:49,155 --> 01:19:51,456
+Tersi olmuyor çünkü birebir değilse.
+
+563
+01:19:51,456 --> 01:20:11,036
+Eğer fonksiyon birebir ise, yani buradaki her bir eleman, burada tek bir elemanla eşleşiyor ama birbirinden farklı elemanların görüntüleri de birbirinden farklıysa bu birebirdir anlamına geliyordu.
+
+564
+01:20:11,036 --> 01:20:17,376
+Bakın birebir olduğu için bunu tersten aldığınızda da yine bir fonksiyon tanımlayacaktır.
+
+565
+01:20:22,515 --> 01:20:31,635
+Şimdi a'dan b'ye f fonksiyonu ise b'den a'ya geldiğinizde bu ne oluyor? Bir ters fonksiyon oluyor.
+
+566
+01:20:32,195 --> 01:20:38,435
+f'in tersini f üzeri eksi 1 ile gösteriyoruz. Yani ters fonksiyonunda yine ne oluyor?
+
+567
+01:20:39,635 --> 01:20:45,355
+Eğer f fonksiyonu a'dan b'ye birebir bir fonksiyon ise
+
+568
+01:20:51,764 --> 01:20:59,543
+Ters fonksiyonu birebir olması ters fonksiyonun varlığı için yeterlidir, gereklidir.
+
+569
+01:21:00,743 --> 01:21:04,083
+Eğer f birebir ise bunun tersi var demektir.
+
+570
+01:21:04,724 --> 01:21:06,484
+f-1 fonksiyonu var.
+
+571
+01:21:06,824 --> 01:21:10,243
+Bunun ters fonksiyonunu f üzeri x-1 ile gösteriyoruz.
+
+572
+01:21:11,364 --> 01:21:13,364
+Ters fonksiyonu da ne olacak?
+
+573
+01:21:13,364 --> 01:21:17,463
+F'in görüntü kümesi bunun tanım kümesi olacak.
+
+574
+01:21:17,463 --> 01:21:23,024
+Tanım kümesi de görüntü kümesi olacak.
+
+575
+01:21:23,324 --> 01:21:26,144
+Yani b'den a'ya bir fonksiyon olacak.
+
+576
+01:21:26,564 --> 01:21:30,444
+Yine fonksiyon tanımını sağlaması gerekiyor çünkü.
+
+577
+01:21:31,423 --> 01:21:40,884
+Birebir diye o yüzden test ediyoruz fonksiyonun tersi var mı yok mu diye bakarken birebirliğine bakıyoruz.
+
+578
+01:21:40,884 --> 01:21:57,484
+İşte ters fonksiyonda da biz genellikle y eşit fx olarak fonksiyonu gösterdiğimiz için ters fonksiyonu da aynı şekilde y eşit f üzeri eksi bir x olarak gösteriyoruz.
+
+579
+01:22:01,395 --> 01:22:04,416
+fonksiyonun tersini nasıl buluyoruz?
+
+580
+01:22:06,595 --> 01:22:12,015
+Bunun için önce şu ters fonksiyonun birkaç özelliğinden bahsedelim.
+
+581
+01:22:12,135 --> 01:22:15,155
+Onun bazı özelliklerini yazalım.
+
+582
+01:22:15,155 --> 01:22:21,935
+Ondan sonra ters fonksiyonu nasıl bulacağımıza bakalım.
+
+583
+01:22:23,375 --> 01:22:27,155
+Hocam her ters fonksiyon peki tek fonksiyon mudur?
+
+584
+01:22:33,460 --> 01:22:37,880
+Hayır. Yani böyle bir şey söyleyemeyiz ki.
+
+585
+01:22:41,779 --> 01:22:43,259
+fonksiyonlar,
+
+586
+01:22:47,155 --> 01:22:58,655
+Çift fonksiyon olunca, anladım ne demek istediğini. Çift fonksiyon olunca, örneğin y eşit x kare fonksiyonunu alalım.
+
+587
+01:23:06,836 --> 01:23:10,735
+Bu bir fonksiyondur. Ancak birebir değildir, değil mi?
+
+588
+01:23:17,652 --> 01:23:33,091
+x eksenine paralel bir doğru çizdiğimde, yani yatay doğru testi uyguladığımda fonksiyonu iki noktada kesiyor. İki noktada kesiyorsa birebir değildir. Bu birebir değil.
+
+589
+01:23:37,235 --> 01:23:42,595
+Şimdi birebir değilse tersi yoktur diyeceğiz değil mi?
+
+590
+01:23:44,655 --> 01:23:48,555
+Tanım kümesi üzerinde şöyle diyelim.
+
+591
+01:23:53,587 --> 01:23:58,587
+f fonksiyonu, R'den R'ye bir fonksiyondur.
+
+592
+01:23:58,688 --> 01:23:59,887
+Y eşit x kare.
+
+593
+01:24:02,228 --> 01:24:07,827
+Negatif R'ler içinde tanımlıdır, pozitifleri içinde R'den R'ye bir fonksiyondur.
+
+594
+01:24:07,927 --> 01:24:14,087
+Ama R'den R'ye biz bunu tanımladığımızda, bunun tersi mevcut değildir.
+
+595
+01:24:14,188 --> 01:24:15,307
+Birebir değildir.
+
+596
+01:24:18,367 --> 01:24:22,027
+Dolayısıyla şu R'den R'ye tersi mevcut değil.
+
+597
+01:24:26,579 --> 01:24:44,579
+Şimdi böyle olunca, ha tersi yok demiyoruz. Şöyle oluyor. Biz bunun nasıl diyelim, tanım kümesini kısıtlıyoruz.
+
+598
+01:24:54,228 --> 01:24:56,127
+nedir? R'dir. Real sayılar
+
+599
+01:24:56,127 --> 01:24:56,788
+kümesidir.
+
+600
+01:24:57,887 --> 01:25:00,268
+Real sayılar üzerinde tersi mevcut
+
+601
+01:25:00,268 --> 01:25:01,967
+değil. O halde ben
+
+602
+01:25:01,967 --> 01:25:04,207
+bunun tersini bulmak istiyorsam
+
+603
+01:25:04,207 --> 01:25:05,587
+ne yapmam gerekecek?
+
+604
+01:25:06,488 --> 01:25:07,488
+Tanım kümesini
+
+605
+01:25:07,488 --> 01:25:10,188
+kısıtlamam gerekecek. Yani bu küme
+
+606
+01:25:10,188 --> 01:25:12,268
+üzerinde fonksiyonun
+
+607
+01:25:12,268 --> 01:25:13,807
+birebir olduğu yeri
+
+608
+01:25:13,807 --> 01:25:15,028
+ayıralım.
+
+609
+01:25:16,288 --> 01:25:18,228
+Şu yarısı da birebir, bu yarısı da
+
+610
+01:25:18,228 --> 01:25:20,448
+değil mi? Ben bu fonksiyonun
+
+611
+01:25:20,448 --> 01:25:22,387
+burada tersini bulamam ama
+
+612
+01:25:22,387 --> 01:25:24,387
+fx fonksiyonunu şu
+
+613
+01:25:24,387 --> 01:25:25,948
+şekilde tanımlarsam
+
+614
+01:25:25,948 --> 01:25:28,007
+tersi mevcut olacaktır.
+
+615
+01:25:28,788 --> 01:25:30,028
+R'nin
+
+616
+01:25:30,028 --> 01:25:32,087
+tamamını değil de yarısını alayım.
+
+617
+01:25:32,207 --> 01:25:33,068
+Yani sıfır
+
+618
+01:25:33,068 --> 01:25:36,188
+sonsuz aralığında
+
+619
+01:25:36,188 --> 01:25:38,387
+R'ye bunu tanımlarsak
+
+620
+01:25:38,908 --> 01:25:40,268
+y eşit
+
+621
+01:25:40,268 --> 01:25:41,307
+ya da fx eşit
+
+622
+01:25:41,307 --> 01:25:43,627
+x kal edersek
+
+623
+01:25:43,627 --> 01:25:48,228
+o zaman bu fonksiyon birebir
+
+624
+01:25:48,228 --> 01:25:50,228
+olacak. Şu kalemi
+
+625
+01:25:50,228 --> 01:25:51,448
+değiştireyim ben.
+
+626
+01:25:52,387 --> 01:25:55,047
+çünkü
+
+627
+01:25:55,047 --> 01:25:57,568
+eğlenin sadece
+
+628
+01:25:57,568 --> 01:25:58,707
+şu kanadını
+
+629
+01:25:58,707 --> 01:26:00,328
+almış oluyorum burada.
+
+630
+01:26:00,927 --> 01:26:01,368
+Bu da
+
+631
+01:26:01,368 --> 01:26:04,228
+yatay doğru testi yaptığınızda
+
+632
+01:26:04,228 --> 01:26:06,248
+zaten birebir olduğunu göreceksiniz.
+
+633
+01:26:06,347 --> 01:26:07,448
+Tek noktada kesiyor.
+
+634
+01:26:07,948 --> 01:26:09,228
+Şöyle yaptığınızda
+
+635
+01:26:09,228 --> 01:26:10,408
+tek noktada kesiyor.
+
+636
+01:26:10,507 --> 01:26:11,188
+Görüyorsunuz.
+
+637
+01:26:11,228 --> 01:26:12,087
+Birebirdir bu.
+
+638
+01:26:13,828 --> 01:26:15,007
+Şimdi bu küme üzerinde
+
+639
+01:26:15,007 --> 01:26:16,307
+bunun tersi vardır.
+
+640
+01:26:16,908 --> 01:26:17,967
+Tersi de nedir?
+
+641
+01:26:17,967 --> 01:26:19,807
+f üzeri eksi bir
+
+642
+01:26:19,807 --> 01:26:20,627
+x fonksiyonu
+
+643
+01:26:21,188 --> 01:26:22,047
+kare kök
+
+644
+01:26:22,047 --> 01:26:23,007
+x'dir.
+
+645
+01:26:24,408 --> 01:26:24,948
+Ay pardon.
+
+646
+01:26:26,028 --> 01:26:26,948
+Kare kök x
+
+647
+01:26:26,948 --> 01:26:29,488
+y eşit fx kare
+
+648
+01:26:29,488 --> 01:26:31,307
+evet kare kök x fonksiyonudur.
+
+649
+01:26:31,307 --> 01:26:33,047
+Kare kök x
+
+650
+01:26:33,047 --> 01:26:48,307
+yüzy
+
+651
+01:26:42,868 --> 01:26:50,188
+Bu anlaşıldı. Yani bazen tahtayı göremiyorsunuz. Ben de göremedim çünkü.
+
+652
+01:26:54,963 --> 01:26:58,083
+Şu an görüyorsunuz değil mi? Ben yavaşça doğrulayım.
+
+653
+01:26:59,304 --> 01:27:04,304
+Hocam, kameranın üstünde odak tuşu var mı diye bir bakar mısınız? Belki odak tuşu varsa.
+
+654
+01:27:04,644 --> 01:27:06,043
+Kameranın üstünde hiçbir tuşu var.
+
+655
+01:27:06,043 --> 01:27:06,943
+Bu da uğraşmayız.
+
+656
+01:27:07,264 --> 01:27:08,203
+Küçücük bir şey.
+
+657
+01:27:10,203 --> 01:27:13,644
+Tamam hocam, önemli değil. Sizin için söyledim de çok uğraşıyorsunuz yani.
+
+658
+01:27:13,844 --> 01:27:15,123
+Çok uğraşıyorum gerçekten.
+
+659
+01:27:17,264 --> 01:27:20,203
+Ya ben bunlardan anlamıyorum. [kişisel bilgi]
+
+660
+01:27:20,203 --> 01:27:22,203
+Hocam, bir şey deneyim.
+
+661
+01:27:22,203 --> 01:27:28,203
+Hocam, şeyi deneyim. Biraz daha sağ tarafa doğru çevirin de o da tahtanın ortasına alsın. Siz alınca da değişiyor.
+
+662
+01:27:29,224 --> 01:27:31,484
+Biraz daha sağa doğru çevirirseniz siyi kamerayı.
+
+663
+01:27:32,304 --> 01:27:33,043
+Şöyle mi?
+
+664
+01:27:33,724 --> 01:27:34,463
+Evet, evet, evet.
+
+665
+01:27:36,623 --> 01:27:38,283
+Aldım acaba tahtanın ortasını.
+
+666
+01:27:38,463 --> 01:27:39,543
+Şu an tahtayı aldım.
+
+667
+01:27:40,224 --> 01:27:40,583
+Tamam.
+
+668
+01:27:44,564 --> 01:27:46,284
+Ben görüntüye girsem bozulmaz.
+
+669
+01:27:47,003 --> 01:27:47,844
+Bozulmuyor hocam.
+
+670
+01:27:51,124 --> 01:28:08,423
+Tanım kümesi üzerinde birebir olmayan fonksiyonlarda da biz fonksiyonun eğer tersini bulmak istiyorsak tanım kümesini kısıtlayıp birebir olduğu bir aralık üzerinde onun tersini bulabiliyoruz.
+
+671
+01:28:08,423 --> 01:28:15,244
+Yani bu bölge üzerinde tersi vardır ama R'de tersi yoktur.
+
+672
+01:28:17,124 --> 01:28:22,284
+Bakın burada olduğu için bu yine çift fonksiyondur.
+
+673
+01:28:23,224 --> 01:28:30,524
+Çift fonksiyon onun tersi zaten tanımlı negatif sayılar için tanımsız olacak.
+
+674
+01:28:30,724 --> 01:28:36,744
+Bunun tersine tek mi çift mi diye bakmaya gerek yok.
+
+675
+01:28:36,744 --> 01:28:40,484
+Çünkü eksi x zaten tanım küreselik.
+
+676
+01:28:41,624 --> 01:28:45,423
+Ne tek ne de çift bir fonksiyonudur o zaman kare kürek x.
+
+677
+01:28:46,423 --> 01:28:48,404
+Şimdi nerede kaldım?
+
+678
+01:28:48,744 --> 01:28:51,104
+Heh devam edeyim ben.
+
+679
+01:28:58,676 --> 01:29:01,115
+trigonometrik fonksiyonlar da böyle.
+
+680
+01:29:01,536 --> 01:29:06,876
+Trigonometrik fonksiyonlar da periyodik fonksiyonlar ya, onlar da birebir değil.
+
+681
+01:29:08,596 --> 01:29:10,096
+Ama tersleri var değil mi?
+
+682
+01:29:10,556 --> 01:29:15,196
+Örneğin, sinüs sıfır sıfırdı değil mi?
+
+683
+01:29:15,196 --> 01:29:15,916
+Şöyle.
+
+684
+01:29:19,988 --> 01:29:35,988
+Bakın, yatay doğruyla çizdiğinizde sonsuz tane noktada kesiyor. Birebir değil ama tersini nerede buluyoruz? Birebir olduğu aralığa indiriyoruz tanım kümesini. Yani şurayı...
+
+685
+01:29:41,332 --> 01:29:46,652
+Burası eksi pi olursa burası da pi olacaktır.
+
+686
+01:29:47,552 --> 01:29:48,271
+Değil mi olacak?
+
+687
+01:29:49,052 --> 01:29:49,472
+Sıfır.
+
+688
+01:29:53,363 --> 01:29:57,323
+sinüs sıfır sıfır, sinüs doksan, şurası pi bölü iki değil mi?
+
+689
+01:29:59,083 --> 01:30:06,403
+sinüs doksan bir, sıfır, eksi pi bölü iki değil mi?
+
+690
+01:30:10,804 --> 01:30:22,944
+eksi pi bölü 2, pi bölü 2 aralığında bakabilirsiniz ya da birebir olduğu bir aralığı seçip oradan da bakabilirsiniz.
+
+691
+01:30:25,083 --> 01:30:30,003
+Şimdi ben ters fonksiyonun bazı özelliklerimden bahsetmek istiyorum.
+
+692
+01:30:39,636 --> 01:30:40,916
+Hocam yine gitti odak.
+
+693
+01:30:41,436 --> 01:30:44,096
+Yine gitti. Ne yapsam gidiyor.
+
+694
+01:30:45,096 --> 01:30:46,456
+Sevmedim ben bu kamerayı.
+
+695
+01:30:48,756 --> 01:30:54,436
+Neyse. Haftaya artık çözüm bulurum diye düşünüyorum.
+
+696
+01:30:58,963 --> 01:31:00,564
+Özelliklerimiz şunlar.
+
+697
+01:31:02,804 --> 01:31:06,264
+y eşit f üzeri eksi 1x ise
+
+698
+01:31:06,264 --> 01:31:12,963
+x eşit f y'dir.
+
+699
+01:31:16,564 --> 01:31:33,084
+Aynı zamanda x eşit f'ye ise de bu olacağı için bu bir çift gerektirme olacak. Dolayısıyla bunu çift taraflı ok ile gösterelim. Yani burası bunu, bu da bunu gerektiriyor. Ters fonksiyonlardan bunu yazabiliyoruz.
+
+700
+01:31:33,084 --> 01:31:36,304
+İkinci olarak şunu yazalım.
+
+701
+01:31:45,203 --> 01:32:03,963
+fonksiyonun tanım kümesi fonksiyonun görüntü kümesini eşittir değil mi? Tersten gelecek çünkü. df-1, rf eşittir. Aynı şekilde görüntüsü, şurayı da silelim.
+
+702
+01:32:11,572 --> 01:32:16,971
+x kare artı 2x, f'ü de fonksiyonun, esas fonksiyonun tanım kümesine eşittir.
+
+703
+01:32:19,252 --> 01:32:21,332
+3. olarak da
+
+704
+01:32:24,884 --> 01:32:26,884
+Efi
+
+705
+01:32:30,228 --> 01:32:33,207
+tık kümesindeki her x değeri için
+
+706
+01:32:44,595 --> 01:33:01,215
+f-1f. Tanım kümesini df'ten aldım, onu içeri yazacağım. f-1, f bileşkesi neye eşit olacak? Birim fonksiyonu eşit olacak. Bu da nedir? x'e eşittir.
+
+707
+01:33:01,215 --> 01:33:10,095
+Aynı şey, araya eleman yazmamışım, ben de bakıyorum bir terslik var burada.
+
+708
+01:33:10,995 --> 01:33:21,775
+Aynı şey, ters fonksiyon için de geçerlidir. Yani, ters fonksiyonun tanım kümesinden alacağınız her x değeri için
+
+709
+01:33:21,775 --> 01:33:29,835
+f-1, f-1, x bileşkesi yine neyi verecek bana? x'i verecektir.
+
+710
+01:33:31,215 --> 01:33:34,935
+Ve son olarak da şunu söyleyelim.
+
+711
+01:33:36,535 --> 01:33:42,475
+f ve f-1 fonksiyonlarının grafikleri
+
+712
+01:33:51,764 --> 01:33:55,623
+y eşit x doğrusuna göre
+
+713
+01:34:02,771 --> 01:34:03,731
+simetriktir.
+
+714
+01:34:09,427 --> 01:34:28,768
+Yani f'in fonksiyonunu eğer çizebiliyorsanız y eşit x doğrusuna göre simetriğini alıp f'in fonksiyonunu yani grafiğini, f'in grafiğini çizebiliyorsanız y eşit x doğrusuna göre simetriğini alıp f'in grafiğini çizebilirsiniz, elde edebilirsiniz.
+
+715
+01:34:28,768 --> 01:34:33,148
+Ya da bazen ters fonksiyonun grafiğini çizmek daha kolay oluyor.
+
+716
+01:34:33,528 --> 01:34:39,988
+Onu çizip yine y eşit x doğrusuna göre simetriğini alıp f'inkini elde edebilirsiniz.
+
+717
+01:34:43,367 --> 01:34:44,988
+Vaktimiz var mı?
+
+718
+01:34:46,307 --> 01:34:49,068
+Vaktimiz azıcık var.
+
+719
+01:35:00,979 --> 01:35:01,779
+örneği yapalım.
+
+720
+01:35:25,747 --> 01:35:27,327
+Hocam tek ve çift şey
+
+721
+01:35:27,327 --> 01:35:29,947
+ters fonksiyonla
+
+722
+01:35:29,947 --> 01:35:31,127
+alakalı bir soru sorsam
+
+723
+01:35:31,127 --> 01:35:32,527
+uygun olur mu şu an?
+
+724
+01:35:33,667 --> 01:35:36,027
+Mesela diyelim fx fonksiyonu
+
+725
+01:35:36,027 --> 01:35:37,647
+üçüncü dereceden bir fonksiyon.
+
+726
+01:35:38,207 --> 01:35:40,247
+f-1 fonksiyonunun
+
+727
+01:35:40,247 --> 01:35:41,367
+illa
+
+728
+01:35:41,367 --> 01:35:43,547
+fx fonksiyonuyla aynı dereceden olması
+
+729
+01:35:43,547 --> 01:35:45,147
+gerekir mi? Hayır hayır.
+
+730
+01:35:45,447 --> 01:35:47,747
+Zaten üçüncü derecedeyse o bir bölü
+
+731
+01:35:47,747 --> 01:35:49,847
+üçüncü dereceden olacaktır tersi.
+
+732
+01:35:51,887 --> 01:35:53,827
+Tamam. Tamam hatırladım. Teşekkür ederim.
+
+733
+01:35:55,207 --> 01:36:25,727
+Rica ederim.
+
+734
+01:36:06,228 --> 01:36:13,328
+x eşit x küp. Bunun tersi ne olacaktır? Küp kök x olacak değil mi? Birebir bir fonksiyon.
+
+735
+01:36:23,604 --> 01:36:35,644
+Değersi var mı? Önce ona bakmak lazım. Aslında birebirdir. Birebir olduğunu nasıl biliyoruz? Eğer grafiğini çizebiliyorsanız çizersiniz ya da birebir olduğunu göstermek için şunu yapın.
+
+736
+01:36:35,644 --> 01:37:01,984
+Görüntüsü eşit olan iki değer seçim şöyle diyelim fx1 eşit fx2 iken x1 eşit x2 oluyorsa f birebir demektir.
+
+737
+01:37:01,984 --> 01:37:04,984
+Gitti mi tahta?
+
+738
+01:37:05,684 --> 01:37:06,224
+Gitmek lazım.
+
+739
+01:37:06,224 --> 01:37:06,844
+Gel duracağım.
+
+740
+01:37:07,444 --> 01:37:07,724
+Gel.
+
+741
+01:37:08,444 --> 01:37:09,583
+Neyse ben kapattım.
+
+742
+01:37:10,423 --> 01:37:11,184
+Bir daha açayım.
+
+743
+01:37:16,212 --> 01:37:18,912
+X ile ne yapacağım?
+
+744
+01:37:19,072 --> 01:37:25,112
+Fx1 eşit Fx2 olsun diyeceğim.
+
+745
+01:37:26,872 --> 01:37:28,252
+Bunu kabul edeceğim.
+
+746
+01:37:29,132 --> 01:37:30,192
+Fx1, Fx2.
+
+747
+01:37:30,272 --> 01:37:31,892
+F fonksiyonu tanımlı zaten.
+
+748
+01:37:32,052 --> 01:37:32,892
+Bu ne demektir?
+
+749
+01:37:33,212 --> 01:37:34,872
+X1'in küpü eşit.
+
+750
+01:37:35,092 --> 01:37:37,252
+X2'nin küpü demektir.
+
+751
+01:37:38,052 --> 01:37:41,032
+Her iki tarafın küp kökünü de alırsanız.
+
+752
+01:37:41,592 --> 01:37:43,032
+X1 eşit.
+
+753
+01:37:43,032 --> 01:37:44,492
+X2 çıkacak.
+
+754
+01:37:44,492 --> 01:37:46,932
+Bakın şu sağlandı.
+
+755
+01:37:47,252 --> 01:37:53,132
+Dolayısıyla F1'e 1'dir.
+
+756
+01:37:53,652 --> 01:37:56,052
+F1'e 1 ise tersi vardır.
+
+757
+01:37:59,272 --> 01:38:01,472
+Ve tersini de nasıl bulacağız?
+
+758
+01:38:02,072 --> 01:38:07,012
+Tersini Y eşit Fx1 olarak alalım.
+
+759
+01:38:12,851 --> 01:38:24,931
+Birinci özelliğimizdi. y eşit f üzeri x'i birisi ne demiştik? x eşit f y demiştik.
+
+760
+01:38:26,631 --> 01:38:34,331
+Dolayısıyla f fonksiyonunu bildiğim için f y ne olacak? x yerine y yazarak bunu yazacağım.
+
+761
+01:38:36,131 --> 01:38:42,731
+Dolayısıyla buradan da y'yi çekerseniz y eşit küp kök x olur.
+
+762
+01:38:42,851 --> 01:38:52,572
+İşte y'yi burada yazdığınızda f eksi bir x eşit küp kök x.
+
+763
+01:38:52,952 --> 01:38:55,112
+Küp kök x'i yazmayı beceremedim.
+
+764
+01:38:56,452 --> 01:38:58,471
+İşte f'in tersi bu oldu.
+
+765
+01:38:58,872 --> 01:39:00,032
+Üçüncü dereceydi.
+
+766
+01:39:00,391 --> 01:39:01,952
+Bir bölü üçüncü derece oldu.
+
+767
+01:39:05,131 --> 01:39:06,912
+Grafiklerine de hemen bakalım.
+
+768
+01:39:09,211 --> 01:39:11,211
+Şunlara ihtiyacımız yok.
+
+769
+01:39:27,283 --> 01:39:29,283
+Bu konularını çizmeyi biliyorum.
+
+770
+01:39:36,435 --> 01:39:38,775
+Böyle bir grafiği vardı x küpün.
+
+771
+01:39:39,395 --> 01:39:45,055
+y eşit x eksenine göre simetriği olacaktır ters fonksiyonun.
+
+772
+01:39:47,715 --> 01:39:50,015
+Bu da y eşit x doğrumuz olsun.
+
+773
+01:39:50,015 --> 01:39:54,015
+Şu y eşit x küp eğrisi.
+
+774
+01:39:55,275 --> 01:40:01,175
+Şimdi bunun yansımasını alırsak, simetriğini alırsak ne olacak?
+
+775
+01:40:07,956 --> 01:40:10,195
+Öyle bir fonksiyon olacak.
+
+776
+01:40:10,195 --> 01:40:11,695
+Tabii şunu düzgün keseceğim.
+
+777
+01:40:22,355 --> 01:40:32,576
+İşte şu mavi de y eşit x üzeri 1 bölü 3 yani küp köp x'i grafiği olacak.
+
+778
+01:40:39,859 --> 01:40:40,539
+Bir daha bakalım.
+
+779
+01:40:54,163 --> 01:40:55,163
+Şuraya izin.
+
+780
+01:41:06,036 --> 01:41:09,235
+x eşit kök 2x artı 1 olsun.
+
+781
+01:41:12,216 --> 01:41:16,695
+Bunun önce birebir olduğunu gösterelim.
+
+782
+01:41:17,496 --> 01:41:19,735
+Sonra varsa tersini bulalım.
+
+783
+01:41:21,456 --> 01:41:22,956
+Sonra da grafiğimi çizelim.
+
+784
+01:41:24,435 --> 01:41:25,256
+Hepsini yapalım.
+
+785
+01:41:28,015 --> 01:41:31,155
+Birebir olduğunu göstermek için dedik ki ne yapacağız?
+
+786
+01:41:31,155 --> 01:41:36,515
+fx1 eşit fx2 seçeceğiz.
+
+787
+01:41:37,515 --> 01:41:38,596
+Bu olsun diyelim.
+
+788
+01:41:42,355 --> 01:41:55,095
+fx1 bu durumda ne olacak? Kare kök 2x artı 1 olacak. fx2'de kare kök 2x, şu x1'i bu da x2, artı 1 olacak.
+
+789
+01:41:59,667 --> 01:42:04,167
+her iki tarafın karesini alıp işlem yaparsanız
+
+790
+01:42:09,587 --> 01:42:15,567
+Şu biriler gidecek, ikiye de böldüğünüzde x1 eşit, x2 çekecek.
+
+791
+01:42:18,327 --> 01:42:22,987
+Görüntüler eşit iken noktalar da eşit oluyormuş.
+
+792
+01:42:23,188 --> 01:42:31,327
+Yani görüntüleri farklı olan iki noktanın kendisi de farklı oluyormuş.
+
+793
+01:42:32,188 --> 01:42:36,927
+Şöyle, görüntüler farklıysa noktalarda farklıdır anlamına geliyor bu.
+
+794
+01:42:36,927 --> 01:42:43,947
+O halde her bir noktanın tek bir tane görüntüsü var demek oluyor.
+
+795
+01:42:44,648 --> 01:42:46,167
+Fonksiyon birebirdir.
+
+796
+01:42:46,547 --> 01:42:49,947
+Fonksiyon eğer birebir ise tersi vardır.
+
+797
+01:42:52,087 --> 01:42:54,648
+Ve biz bu tersini
+
+798
+01:42:54,648 --> 01:43:24,627
+ve biz bu tersini
+
+799
+01:42:58,868 --> 01:43:00,888
+Birebirisi de tersi var.
+
+800
+01:43:02,608 --> 01:43:07,968
+Tersini f-1x eşit y olarak alalım.
+
+801
+01:43:10,108 --> 01:43:12,988
+Daha doğrusu y eşit f-1x diyoruz değil mi?
+
+802
+01:43:13,347 --> 01:43:14,748
+Fonksiyonları böyle yazıyoruz.
+
+803
+01:43:19,956 --> 01:43:32,476
+Yine birinci özellikten, eğer y eşit f-1x ise x eşit ne oluyordu? f, y oluyordu.
+
+804
+01:43:34,976 --> 01:43:43,355
+f, y ne olacak bu durumda? Kök 2y artı 1 olacak. Her iki tarafın kalesini alalım.
+
+805
+01:43:43,355 --> 01:43:52,315
+y'yi de çekerseniz y eşit x kare eksi 1 bölü 2 çıkacak.
+
+806
+01:43:53,155 --> 01:43:56,695
+O halde ters fonksiyonumuz neye eşitmiş?
+
+807
+01:43:57,836 --> 01:44:03,216
+x kare eksi 1 bölü 2'ye eşit çıktı.
+
+808
+01:44:05,815 --> 01:44:08,036
+Ters fonksiyonu da bulduk.
+
+809
+01:44:08,256 --> 01:44:10,416
+Şimdi bu ikisinin grafiğini çizelim.
+
+810
+01:44:10,416 --> 01:44:40,395
+x kare eksi 1'i çizmek daha kolay.
+
+811
+01:44:31,636 --> 01:44:45,115
+Bunu y eşit x kare bölü 2, eksi 1 bölü 2 diye ayıralım ki, hani biz parabolüm grafiğini biliyorduk ya, grafik kaydırmayı biliyoruz.
+
+812
+01:44:55,859 --> 01:45:04,479
+x artı k olunca bunun fx'in grafiğini çizip y yönünde ne kadar kaydırıyorum? k kadar kaydırıyorum.
+
+813
+01:45:04,819 --> 01:45:10,639
+Artı k ise pozitif yönde, eksi k ise eksi yönde kaydırıyorum.
+
+814
+01:45:11,339 --> 01:45:18,759
+Dolayısıyla y eşit x kare bölü 2'nin grafiği nedir? Şöyle biraz daha geniştir.
+
+815
+01:45:20,059 --> 01:45:23,719
+Şöyle çizelim. x kare bölü 2.
+
+816
+01:45:23,719 --> 01:45:29,679
+Pol.
+
+817
+01:45:31,347 --> 01:46:00,948
+Ne yapacağım? Eksi 1 bölü 2 birim, bunu kaydıracağım. y ekseni üzerinde, eksi 1 bölü 2 birim kaydırdığında, şurası olsun, eksi 1 bölü 2. Bunu buraya kaydırırsak, bu olacak değil mi? O halde artık ben bunu siliyorum. Bununla işim kalmadı. Şu kaydırdığım grafik, y eşit x kare bölü 2, eksi 1 bölü 2'nin grafiği oldu. İşte bunu çizdik.
+
+818
+01:46:01,347 --> 01:46:07,347
+Şimdi ne yapacağım? Y eşit x doğrusunu çizdik.
+
+819
+01:46:11,155 --> 01:46:16,435
+Buna göre bunun simetriğini alacağım. Çünkü ters fonksiyonla fonksiyonun grafiği neydi?
+
+820
+01:46:17,095 --> 01:46:23,435
+y eşit x doğrusuna göre simetriydi. Dolayısıyla bunun simetriğini alırsam bu şuraya gelecek.
+
+821
+01:46:24,015 --> 01:46:26,095
+Kırmızıyla yap, siyahla yapayım bunu.
+
+822
+01:46:27,095 --> 01:46:27,475
+Şöyle.
+
+823
+01:46:29,975 --> 01:46:31,376
+Böyle bir şey olacak.
+
+824
+01:46:34,739 --> 01:46:50,619
+Şu, siyahla gösterdiğim, y eşit kök 2x artı birin grafiği, mavi de onun ters fonksiyonunu grafiği. Oldu mu?
+
+825
+01:46:53,000 --> 01:46:54,519
+Hocam bir şey sorabilir miyim?
+
+826
+01:46:54,800 --> 01:46:55,319
+Tabii ki.
+
+827
+01:46:55,460 --> 01:47:01,920
+En başta hani birebir fonksiyon olduğunu göstermek için bir dizi işlem yapıyoruz ya, ben onu anlamadım.
+
+828
+01:47:01,920 --> 01:47:13,359
+Yani mesela x karede yapsak, mesela x1'in karesi eşitti, x2'nin karesi yapsak mutlak değer x1 eşitti, mutlak değer x2 eşit olacak.
+
+829
+01:47:13,920 --> 01:47:18,399
+Hani o zaman yine birebirmiş gibi gösterebildik bunu mesela.
+
+830
+01:47:20,239 --> 01:47:24,519
+x kare olunca şunu kullanmak daha üzgün olacak.
+
+831
+01:47:25,159 --> 01:47:26,439
+Ben şu elbisliyim.
+
+832
+01:47:27,639 --> 01:47:28,319
+Ona da bakalım.
+
+833
+01:47:33,779 --> 01:48:02,779
+f' x eşit x kare. Birebir midir? Aslında bunların birebirliğini, grafiklerini çizebiliyorsanız eğer grafik üzerinden de test edebilirsiniz. Bunu grafik üzerinden test etmek kolay ama biz şu uyguladığımız yöntemi alalım. Biz burada ne dedik? Eğer f' x1 eşit f' x2 ise x1 eşit x2 olması gerekiyor. Ancak bu kare olduğu için burada birebirliğin diğer tanımını kullanalım.
+
+834
+01:48:07,604 --> 01:48:21,904
+Yani şöyle diyelim. x1 farklı x2 iken fx1 farklı fx2 olmalı.
+
+835
+01:48:21,904 --> 01:48:27,244
+Biri birliği ya şöyle gösteriyoruz.
+
+836
+01:48:31,060 --> 01:48:32,940
+görüntüleri eşit olan
+
+837
+01:48:36,724 --> 01:48:38,564
+İki tane değer seçiyoruz.
+
+838
+01:48:39,364 --> 01:48:43,444
+Bu var iken x1'in x2'ye eşit olması.
+
+839
+01:48:43,524 --> 01:48:48,663
+Yani görüntüleri eşit olanların kendileri eşit midir ona bakıyoruz.
+
+840
+01:48:48,923 --> 01:48:53,224
+Bu var ise birebirdir ya da tersinden alıyorum.
+
+841
+01:48:53,764 --> 01:49:00,043
+x1 x2'den farklı iken fx1 fx2'den farklı mıdır değil midir ona bakıyoruz.
+
+842
+01:49:01,324 --> 01:49:01,884
+Tamam mı?
+
+843
+01:49:01,884 --> 01:49:09,684
+Şimdi burada şu üste yazdığımı kullanmak daha kolay olacak.
+
+844
+01:49:10,104 --> 01:49:15,123
+Çünkü burada x1'in karesi eşit x2'nin karesi ikisi de mutlak değer çıkacak falan.
+
+845
+01:49:15,604 --> 01:49:18,524
+Orada belki biraz yorum yapmak daha karışık olabilir.
+
+846
+01:49:19,344 --> 01:49:20,244
+Şöyle yapalım.
+
+847
+01:49:31,956 --> 01:49:36,935
+Bakın, x1, xx1'den farklıdır değil mi? Negatifinden.
+
+848
+01:49:37,476 --> 01:49:43,996
+Burada biliyoruz ki kare kök fonksiyonu olduğu için eksisinin de artısının da değerleri aynı oluyor.
+
+849
+01:49:48,556 --> 01:49:56,115
+fx1 eşit f-x1 oluyor burada.
+
+850
+01:49:57,016 --> 01:49:58,676
+Bunu görüyoruz. Bu da niye eşit?
+
+851
+01:49:59,416 --> 01:50:01,636
+x1'in karesini eşit.
+
+852
+01:50:01,956 --> 01:50:03,836
+Bakın, şu çıkmadı.
+
+853
+01:50:04,676 --> 01:50:05,416
+Eşit çıktı.
+
+854
+01:50:05,956 --> 01:50:12,056
+Farklı iki tane değer için bunların görüntüleri eşit çıktı.
+
+855
+01:50:12,496 --> 01:50:13,336
+Bu da ne demektir?
+
+856
+01:50:13,416 --> 01:50:18,756
+Bir tanesi için bile böyle olması birebir olmadığı anlamına geliyor.
+
+857
+01:50:19,935 --> 01:50:20,735
+Dolayısıyla,
+
+858
+01:50:21,576 --> 01:50:24,076
+hani şurada x1 bile demenize gerek yok.
+
+859
+01:50:24,216 --> 01:50:25,996
+x olarak bile yazabilirsiniz.
+
+860
+01:50:27,136 --> 01:50:30,176
+Dolayısıyla, bu farklı olmadığı için
+
+861
+01:50:30,176 --> 01:50:33,176
+f1 birebir, f1 birebir değildir.
+
+862
+01:50:33,176 --> 01:50:37,296
+Anladım hocam, teşekkürler.
+
+863
+01:50:44,564 --> 01:50:45,564
+sorunuz?
+
+864
+01:50:49,908 --> 01:50:54,368
+Sorusu olanlar sorabilir, olmayanlar da çıkabilir.
+
+865
+01:50:54,968 --> 01:51:00,668
+Katıldığınız için hepinize teşekkür ediyorum. Haftaya yine devam ederiz biz bu konularımıza.
+
+866
+01:51:02,387 --> 01:51:04,347
+Hocam bir şey soracağım da.
+
+867
+01:51:04,368 --> 01:51:04,828
+Tabii ki.
+
+868
+01:51:05,288 --> 01:51:07,887
+Birev birli'ni sorgulamadan tersini alırsak ne olur?
+
+869
+01:51:08,328 --> 01:51:10,728
+Yani hata payımız ne kadar yüksek olur bundan?
+
+870
+01:51:10,728 --> 01:51:16,148
+Tersini bulabilirsen olur.
+
+871
+01:51:16,768 --> 01:51:26,528
+Ama şöyle soru, birebir olduğunu gösterin, tersini bulun şeklinde ise yarım puanını alırsın.
+
+872
+01:51:27,347 --> 01:51:29,628
+Birebir olduğunu göstermemiş olursun.
+
+873
+01:51:30,508 --> 01:51:32,028
+Anladım. Tersini bitmek lazım.
+
+874
+01:51:32,508 --> 01:51:36,488
+Var tabii. Zaten tersi varsa bulursun ki.
+
+875
+01:51:37,128 --> 01:51:38,628
+Tamam. Tamam. Teşekkür ederim.
+
+876
+01:51:39,288 --> 01:51:39,908
+Rica ederim.
+
+877
+01:51:43,699 --> 01:51:45,559
+Ya hocam bir şey daha sorabilir miyim ben?
+
+878
+01:51:45,720 --> 01:51:47,199
+Tabii istediğin kadar sor.
+
+879
+01:51:48,119 --> 01:51:49,960
+Şu an kafam şeyle çok karıştı.
+
+880
+01:51:49,960 --> 01:52:01,500
+Hani birebir fonksiyonda işte A kümesinden B kümesine giden elemanlar hani nasıl anlatsam?
+
+881
+01:52:02,300 --> 01:52:04,220
+Yani her bir eleman bir tanesine girecek.
+
+882
+01:52:04,239 --> 01:52:05,500
+Bir tanesiyle eşleşiyor.
+
+883
+01:52:05,920 --> 01:52:07,859
+Tamam biz neden X bir eşittir?
+
+884
+01:52:08,039 --> 01:52:13,599
+X iki yani o iki X değeri neden birbirine eşitse o zaman birbirinin birebiri oluyor.
+
+885
+01:52:13,699 --> 01:52:15,439
+Onu şey yapalım şu an kavrayamadım.
+
+886
+01:52:15,439 --> 01:52:15,960
+Şöyle.
+
+887
+01:52:21,279 --> 01:52:23,220
+O şu anlama geliyor.
+
+888
+01:52:24,720 --> 01:52:28,059
+Şimdi biz bunları teorik yazıyoruz ya.
+
+889
+01:52:28,819 --> 01:52:36,639
+Diyor ki bir tane X bir elemanıyla bir tane X iki elemanının görüntüsünün eşit olduğunu kabul edelim diyorum.
+
+890
+01:52:37,599 --> 01:52:39,119
+Hani olsun dedik ya hep.
+
+891
+01:52:39,760 --> 01:52:41,039
+Bu böyledir demedik.
+
+892
+01:52:41,519 --> 01:52:42,039
+Olsun.
+
+893
+01:52:42,039 --> 01:52:46,399
+Yani o iki tane görüntünün eşit olduğunu kabul ettim.
+
+894
+01:52:47,920 --> 01:52:49,539
+İşlem yaptım yaptım.
+
+895
+01:52:49,619 --> 01:52:52,119
+Bu görüntülerin eşit olması için dedim.
+
+896
+01:52:53,859 --> 01:52:56,639
+X bir ile X ikinin eşit olması gerekiyor.
+
+897
+01:52:56,979 --> 01:53:02,899
+Yani görüntüsü birbirine eşit olan iki tane farklı şey yokmuş orada o kümede.
+
+898
+01:53:02,899 --> 01:53:05,420
+Anladım hocam şimdi.
+
+899
+01:53:05,420 --> 01:53:06,859
+Tamam teşekkür ederim.
+
+900
+01:53:07,260 --> 01:53:09,760
+Yani kabulle başlıyoruz tamam mı?
+
+901
+01:53:09,819 --> 01:53:11,159
+Bu buradaki ispata.
+
+902
+01:53:11,479 --> 01:53:13,220
+Bu böyle olsun diyorum.
+
+903
+01:53:14,059 --> 01:53:19,179
+Eğer seçtiğim doğru şey ise beni doğru sonuca götürecek.
+
+904
+01:53:19,179 --> 01:53:26,359
+Ama bakın şurada X bir farklı X iki olsun dedik.
+
+905
+01:53:26,899 --> 01:53:29,119
+Hani bu böyle iken böyle olmalı.
+
+906
+01:53:29,619 --> 01:53:32,199
+Şimdi ben buna iken demeyeyim.
+
+907
+01:53:32,639 --> 01:53:34,739
+X bir farklı X iki olsun.
+
+908
+01:53:34,739 --> 01:53:56,239
+X bir tane.
+
+909
+01:53:38,387 --> 01:53:54,167
+Bunlar, bu zaten şey, x1'in x1'den farklı olduğunu görüyorum ki. Burada olsun deseniz de olur, demeseniz de olur. Bu böyleyken, şimdi neye bakacaksınız? Görüntülerine bakacaksınız.
+
+910
+01:53:54,167 --> 01:54:16,127
+fx1 nedir? x1'in karesidir. fx1 nedir? Yine x1'in karesidir. Dolayısıyla, görüntüleri eşit çıktı. Farklı çıkmadı. Benim kabulüme ters bir şey çıktı. Ya da aldığım şeye ters çıktığı için, bu doğru değildir.
+
+911
+01:54:16,127 --> 01:54:33,207
+yani, farklı iki tane elemanın, farklı iki tane elemanın görüntüleri eşit olabiliyormuş. Bu da ne anlama geliyor? Birebir olmadığı anlamına geliyor. Farklı iki tane eleman aldım. Bunların ikisinin görüntüsü de aynı. O halde birebir değil.
+
+912
+01:54:34,307 --> 01:54:35,608
+Anladım hocam, teşekkür ederim.
+
+913
+01:54:36,228 --> 01:54:36,847
+Rica ederim.
+
+914
+01:54:38,667 --> 01:54:45,847
+Bunlar biraz daha teorik kalıyor aslında. Size ispat yöntemlerini vermiyoruz ama bazen de ispat kullanıyoruz.
+
+915
+01:54:46,127 --> 01:55:01,228
+mümkün olduğunca açıklamaya çalışıyorum ama yine de kafanıza takılanları söyleyeyim. Bir de birebirliğini dediğim gibi grafiğini çizebileceğiniz bir fonksiyon ise grafik üzerinden de kontrol edebilirsiniz.
+
+916
+01:55:06,484 --> 01:55:10,764
+paylaşmayı kapatalım.
+
+917
+01:55:13,104 --> 01:55:14,463
+İyi günler hepinizi.
+
+918
+01:55:17,264 --> 01:55:18,744
+Haftaya görüşürüz artık.
