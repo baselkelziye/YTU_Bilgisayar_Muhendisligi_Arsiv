@@ -6,4 +6,4 @@
 | :---: | :---: | :--- | :--- |
 | 1 | Güz | Ahmet Elbir | [sube_1/](sube_1/) |
 | 2 | Güz | Ziya Cihan Taysi | [sube_2/](sube_2/) |
-| 4 | Güz | Bulunamadı | [sube_4/](sube_4/) |
+| 4 | Güz | Ziya Cihan Taysi | [sube_4/](sube_4/) |
