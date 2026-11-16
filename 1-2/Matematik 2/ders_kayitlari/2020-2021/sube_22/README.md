@@ -4,7 +4,7 @@
 
 ### 📋 Genel Bilgiler
 * **Ders:** Matematik 2 (MAT1072)
-* **Hoca:** Bulunamadı
+* **Hoca:** Servet Es
 * **Dönem:** Bahar
 * **Akademik Yıl:** 2020-2021
 * **Şube:** MAT1072 - 22

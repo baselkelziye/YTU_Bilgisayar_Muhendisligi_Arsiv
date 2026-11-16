@@ -10,7 +10,7 @@
 | 16 | Bahar | Serpil Uslu | [sube_16/](sube_16/) |
 | 18 | Bahar | Yasemin Alagöz | [sube_18/](sube_18/) |
 | 20 | Bahar | Bulunamadı | [sube_20/](sube_20/) |
-| 22 | Bahar | Bulunamadı | [sube_22/](sube_22/) |
+| 22 | Bahar | Servet Es | [sube_22/](sube_22/) |
 | 25 | Bahar | Mustafa Sarı | [sube_25/](sube_25/) |
 | 26 | Bahar | Eyüp Kızıl ve Salih Çelik | [sube_26/](sube_26/) |
 | 28 | Bahar | Filiz Kanbay | [sube_28/](sube_28/) |
