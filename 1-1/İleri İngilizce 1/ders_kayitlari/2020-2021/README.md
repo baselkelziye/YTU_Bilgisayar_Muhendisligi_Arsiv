@@ -21,3 +21,4 @@
 | 28 | Güz | Nurgül Demirdöven | [sube_28/](sube_28/) |
 | 33 | Güz | Uğur Akpur | [sube_33/](sube_33/) |
 | 34 | Güz | Asuman Çom | [sube_34/](sube_34/) |
+| 35 | Güz | Dilek Yıldırım | [sube_35/](sube_35/) |
