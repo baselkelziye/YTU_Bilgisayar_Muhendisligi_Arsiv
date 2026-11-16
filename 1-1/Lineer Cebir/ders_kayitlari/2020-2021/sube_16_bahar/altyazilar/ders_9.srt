@@ -1,0 +1,2471 @@
+1
+00:06:11,923 --> 00:06:13,803
+Good morning folks, can you hear me?
+
+2
+00:06:44,339 --> 00:06:48,899
+Do you have any question related to your midterm examination?
+
+3
+00:06:57,459 --> 00:06:59,359
+[öğrenci], bu hep bir durum.
+
+4
+00:07:08,915 --> 00:07:18,096
+Bu, mağazı, mağazı, ve genelde average of your examination is about 60.
+
+5
+00:07:22,324 --> 00:07:30,084
+Ok. Today we will talk about a new topic, which is the vectors.
+
+6
+00:07:32,723 --> 00:07:42,163
+We will go on with vectors about four weeks. And the first course of vectors is a course
+
+7
+00:07:42,963 --> 00:07:52,004
+on the view of a student of physics. Ok. There is two perspective about vectors. The first one
+
+8
+00:07:52,004 --> 00:07:58,804
+is the perspective of physics students and the other is the perspective of computer science
+
+9
+00:07:59,843 --> 00:08:08,644
+students. The first perspectives consider vectors as directed line segments.
+
+10
+00:08:11,843 --> 00:08:21,043
+Some entities in the nature, such as velocity, acceleration and force, have a magnitude and a
+
+11
+00:08:21,043 --> 00:08:31,604
+direction. So in order to represent these type of entities, physicists use vectors. And computer
+
+12
+00:08:31,604 --> 00:08:41,604
+scientists consider vectors as sequences. They store some information on these sequences and use for
+
+13
+00:08:41,604 --> 00:08:58,163
+some mathematical... They did some mathematical manipulation on these sequences. Or they use vectors to
+
+14
+00:08:58,163 --> 00:09:10,724
+to organize information. Ok.
+
+15
+00:09:07,539 --> 00:09:16,360
+Öncelikle de definisiyle ve vektörs'e ve vektörs'e bir şey yapıyoruz.
+
+16
+00:09:16,360 --> 00:09:22,299
+Öncelikle vektör edişim ve vektörs'e bir şey yapıyoruz.
+
+17
+00:09:22,299 --> 00:09:29,299
+Öncelikle vektör ve vektörs'e bir şey yapıyoruz.
+
+18
+00:09:29,299 --> 00:09:59,299
+Öncelikle de vektör vekt
+
+19
+00:09:59,299 --> 00:11:12,839
+vektör vekt
+
+20
+00:11:17,043 --> 00:11:20,043
+Ağın bir şekilde,
+
+21
+00:11:20,043 --> 00:11:23,043
+bir şekilde,
+
+22
+00:11:23,043 --> 00:11:28,043
+ve aile ve tip.
+
+23
+00:11:30,043 --> 00:11:35,043
+Bu, bu point'in start point
+
+24
+00:11:35,043 --> 00:11:39,043
+ve end point.
+
+25
+00:11:40,043 --> 00:12:58,043
+Ağın, b'
+
+26
+00:12:51,028 --> 00:13:05,028
+Here in the first quadrant we have a vector with start point A and end point B or tail A and tip B.
+
+27
+00:13:05,028 --> 00:13:22,028
+The x coordinate of this vector is just that right A, A is one one, the point one one and B is the point two two.
+
+28
+00:13:22,028 --> 00:13:37,248
+The vector AB is just two minus one, it can be denoted by tuple one one.
+
+29
+00:13:37,548 --> 00:13:40,748
+Okay, two minus one is one and two minus one is one.
+
+30
+00:13:41,788 --> 00:13:47,908
+And this distance from A to B is called the magnitude of the vector AB.
+
+31
+00:13:47,908 --> 00:13:59,488
+Okay, the magnitude of vector AB is denoted by absolute value two vertical bars.
+
+32
+00:14:00,067 --> 00:14:11,788
+Between two vertical bars we put the vector and is equal to square root of the square of components.
+
+33
+00:14:11,788 --> 00:14:16,728
+Square root two.
+
+34
+00:14:17,208 --> 00:14:24,567
+This distance is actually is one unit and this is also is one unit.
+
+35
+00:14:24,567 --> 00:14:27,108
+We have a right triangle.
+
+36
+00:14:27,908 --> 00:14:34,608
+So by the Pythagoras theorem the length of hypotenuse is just square root two.
+
+37
+00:14:34,608 --> 00:14:40,608
+Okay, this is the length of vector AB or magnitude of the vector AB.
+
+38
+00:14:40,788 --> 00:14:43,968
+The direction of this vector is from A to B.
+
+39
+00:14:45,028 --> 00:14:45,567
+Okay.
+
+40
+00:14:50,803 --> 00:15:02,343
+If you have two points, let's give our points in RQ, P0 and P1, with three components in each point, we have three components.
+
+41
+00:15:02,343 --> 00:15:07,264
+Please don't confuse about vectors and points.
+
+42
+00:15:07,264 --> 00:15:21,923
+In a vector, we have an arrow on the top, that right vector P, and we put an equility sign between coordinates or components and the symbol.
+
+43
+00:15:22,423 --> 00:15:31,024
+But in the point case, there is no equility sign between components and the point.
+
+44
+00:15:31,283 --> 00:15:31,524
+Okay.
+
+45
+00:15:31,703 --> 00:15:34,823
+And there is no arrows on the top of the point.
+
+46
+00:15:34,823 --> 00:15:35,343
+Okay.
+
+47
+00:15:35,403 --> 00:15:36,323
+This is a point.
+
+48
+00:15:37,264 --> 00:15:38,903
+What is this?
+
+49
+00:15:39,024 --> 00:15:39,624
+Dissembled.
+
+50
+00:15:39,723 --> 00:15:41,504
+We use dissembled for the vectors.
+
+51
+00:15:43,103 --> 00:15:43,403
+Okay.
+
+52
+00:15:45,463 --> 00:15:49,803
+If you have two points, we can form a vector.
+
+53
+00:15:50,183 --> 00:15:56,024
+Let's denote by just one letter, a bold, small case.
+
+54
+00:15:56,264 --> 00:16:02,163
+We, this is vector from type P0 and P1.
+
+55
+00:16:02,163 --> 00:16:10,563
+We just subtract components of P0 from the components of P1.
+
+56
+00:16:10,563 --> 00:16:15,043
+The first component of the vector is x1 minus x0.
+
+57
+00:16:15,043 --> 00:16:20,283
+x1 is the first component of the point P0.
+
+58
+00:16:20,283 --> 00:16:24,024
+And x0 is the first component of the point P0.
+
+59
+00:16:24,024 --> 00:16:34,243
+Just like this, we can form the second component and the last component of the vector V.
+
+60
+00:16:34,243 --> 00:16:34,743
+Okay.
+
+61
+00:16:34,743 --> 00:16:37,183
+This is a vector in R cube.
+
+62
+00:16:37,183 --> 00:16:40,884
+Three-dimensional vector space.
+
+63
+00:16:40,884 --> 00:16:45,403
+Next week, the week after holiday, we will talk about vector spaces.
+
+64
+00:16:45,403 --> 00:16:51,163
+We will see vectors in the perspective of the mathematicians.
+
+65
+00:16:51,163 --> 00:17:00,144
+We will give an abstract structure and general abstract structure, which is called vector spaces.
+
+66
+00:17:01,183 --> 00:17:10,124
+Actually, R cube is a vector space, which is satisfied some operations, some properties of the two binary operations.
+
+67
+00:17:10,124 --> 00:17:11,124
+Okay.
+
+68
+00:17:11,124 --> 00:17:24,483
+And the last vector, especially in R cube, if V is a vector in R cube, in three-dimensional Euclidean space,
+
+69
+00:17:24,483 --> 00:17:35,344
+is, this is, this is a, this notion is a length from between two points.
+
+70
+00:17:35,344 --> 00:17:40,344
+So, it is always positive.
+
+71
+00:17:40,344 --> 00:17:47,344
+We can talk about square root related to distance between two points.
+
+72
+00:17:47,344 --> 00:17:52,344
+So, we denote by absolute value of V.
+
+73
+00:17:52,344 --> 00:17:58,344
+So, is equal to the square root of, square of components of V.
+
+74
+00:17:58,344 --> 00:18:03,344
+We just take the square of first component, second component and last component.
+
+75
+00:18:03,344 --> 00:18:07,344
+Take the square root of all these, additional all these squares.
+
+76
+00:18:07,344 --> 00:18:21,344
+If our vector that writes U in general, a vector with L components, U1, U2M, U sub M.
+
+77
+00:18:21,344 --> 00:18:30,344
+Then the length of this vector, absolute value or length of this vector is just a cube.
+
+78
+00:18:30,344 --> 00:18:37,344
+The square root of, uh, addition of all squares, all the components of this vector.
+
+79
+00:18:37,344 --> 00:18:43,344
+Square of U1 plus square of U2 plus square of U1.
+
+80
+00:18:43,344 --> 00:18:44,344
+Okay.
+
+81
+00:18:44,344 --> 00:18:48,344
+This is the length of vector U1.
+
+82
+00:18:48,344 --> 00:18:49,344
+Okay.
+
+83
+00:18:49,344 --> 00:18:50,344
+This is the length of vector U1.
+
+84
+00:18:50,344 --> 00:18:51,344
+Okay.
+
+85
+00:18:51,344 --> 00:18:52,344
+This is the length of vector U1.
+
+86
+00:18:52,344 --> 00:18:53,344
+Okay.
+
+87
+00:18:53,344 --> 00:18:54,344
+This is the length of vector U1.
+
+88
+00:18:54,344 --> 00:18:55,344
+Okay.
+
+89
+00:18:55,344 --> 00:18:56,344
+This is the length of vector U1.
+
+90
+00:18:56,344 --> 00:18:57,344
+Okay.
+
+91
+00:18:57,344 --> 00:18:58,344
+This is the length of vector U1.
+
+92
+00:18:58,344 --> 00:18:59,344
+Okay.
+
+93
+00:18:59,344 --> 00:19:00,344
+This is the length of vector U1.
+
+94
+00:19:00,344 --> 00:19:01,344
+Okay.
+
+95
+00:19:01,344 --> 00:19:02,344
+This is the length of vector U1.
+
+96
+00:18:49,844 --> 00:19:02,153
+R ve
+
+97
+00:19:14,067 --> 00:19:18,548
+We call length as a norm of a vector.
+
+98
+00:19:20,468 --> 00:19:32,708
+And for the higher dimensions, we denote length by this notation between double vertical bars.
+
+99
+00:19:34,147 --> 00:19:37,107
+We put vector between double vertical bars.
+
+100
+00:19:37,268 --> 00:19:41,927
+This is another notation for norm of a vector or length of a vector.
+
+101
+00:19:41,927 --> 00:19:46,528
+This is the same notion related to length of a vector.
+
+102
+00:19:49,048 --> 00:19:55,208
+Here we have a special example related to vectors and length of a vector.
+
+103
+00:19:55,927 --> 00:20:01,208
+Let's first find a vector from p0 to p1.
+
+104
+00:20:02,647 --> 00:20:06,008
+Let's write V as p0, p1.
+
+105
+00:20:11,220 --> 00:20:19,059
+This is equal to minus one, the first component of P1 is minus one, minus one.
+
+106
+00:20:21,220 --> 00:20:36,860
+This will be the first component of vector V, and the second component is equal to three minus minus two, because the second component of point P0 is minus two.
+
+107
+00:20:36,860 --> 00:20:42,980
+So here we have minus two, five.
+
+108
+00:20:45,980 --> 00:20:48,380
+Minus two, five.
+
+109
+00:20:50,380 --> 00:20:58,620
+Geomatically, we can represent this vector on the Cartesian plane.
+
+110
+00:20:59,660 --> 00:21:02,900
+Let's write here Y, here X.
+
+111
+00:21:09,236 --> 00:21:23,916
+So, 2 units along left board, here we have minus 1 and minus 2, and 5 units along upward.
+
+112
+00:21:41,971 --> 00:21:56,612
+Our vector, the endpoint of our vector is point minus two, five, and the start point is just origin.
+
+113
+00:21:56,932 --> 00:22:05,291
+Okay. We can consider each, the start point of each vector as the origin of the Cartesian coordinates.
+
+114
+00:22:06,152 --> 00:22:07,892
+This is our vector here.
+
+115
+00:22:07,892 --> 00:22:12,912
+The length of this vector, the length of V,
+
+116
+00:22:14,711 --> 00:22:23,132
+is equal to square root minus two square plus five square.
+
+117
+00:22:24,132 --> 00:22:26,811
+This is square root 29.
+
+118
+00:22:29,251 --> 00:22:33,951
+The length from origin to this point, let's say,
+
+119
+00:22:33,951 --> 00:22:39,092
+P1 minus two, five, okay.
+
+120
+00:22:39,612 --> 00:22:40,672
+You have zero, zero.
+
+121
+00:22:51,667 --> 00:23:10,967
+vektör, let's say, u, from p1 to p1 to p0, is equal to, just replace p0 and p1, components of p0 and p1.
+
+122
+00:23:10,967 --> 00:23:20,467
+Here, also we have, excuse me, minus one, sorry, one minus minus one.
+
+123
+00:23:22,647 --> 00:23:32,567
+First component will be one minus minus one, because the first component of p0 is one, and the first component of p1 is minus one.
+
+124
+00:23:32,567 --> 00:23:39,887
+One minus minus one, and here we have minus two minus three.
+
+125
+00:23:40,887 --> 00:23:44,987
+This is equal to two minus five.
+
+126
+00:23:45,527 --> 00:23:45,847
+Okay.
+
+127
+00:23:58,036 --> 00:24:15,036
+2 unit move rightward and here we have 1 and 2 and minus 5 unit along the y-axis 5 unit along downward.
+
+128
+00:24:15,036 --> 00:24:16,036
+Okay.
+
+129
+00:24:18,036 --> 00:24:23,036
+Minus 1, minus 2, minus 3, minus 4 and minus 5.
+
+130
+00:24:23,036 --> 00:24:36,036
+So our vector, the endpoint of our vector is, let's say, a, 2, minus 5.
+
+131
+00:24:42,163 --> 00:24:44,604
+vektör, u.
+
+132
+00:24:45,283 --> 00:24:47,544
+Actually, u is equal to minus v.
+
+133
+00:24:47,923 --> 00:24:51,223
+We just multiply, coördinates of v by minus 1.
+
+134
+00:24:52,023 --> 00:24:58,144
+This process is called as scaling, or multiplying a vector by a scalar.
+
+135
+00:24:58,804 --> 00:25:03,163
+It will be our first binary operation on the vectors.
+
+136
+00:25:04,304 --> 00:25:09,044
+We just change the direction of the vector v.
+
+137
+00:25:09,044 --> 00:25:22,023
+This vector is also, has same length with v, but has opposite direction with the vector v.
+
+138
+00:25:25,023 --> 00:25:28,523
+You can write u as, u is equal to minus v.
+
+139
+00:25:28,584 --> 00:25:33,963
+We just multiply components of v by minus 1, the scalar minus 1.
+
+140
+00:25:33,963 --> 00:25:42,263
+So, if you multiply minus 2 by minus 1, the first coordinate will be 2, and minus 1 times 5 is minus 5.
+
+141
+00:25:49,844 --> 00:26:11,963
+If the length of a vector is 1, then this vector is called the unit vector or unit vector. We can normalize any vector. By dividing each component by its length, then we can get a vector with the non or length 1.
+
+142
+00:26:11,963 --> 00:26:36,144
+that we have a vector v with the components v1, v2, vn, then 1 over length of v times v is a vector.
+
+143
+00:26:39,443 --> 00:26:49,943
+Components v1 over length of v. Length of v is a real number, so we can divide components of v by length of v.
+
+144
+00:26:51,703 --> 00:26:53,803
+Sorry, I need to remove this arrow.
+
+145
+00:27:07,604 --> 00:27:30,844
+The length of this new vector is 1. If you take the length of this vector, 1 over length of V times V, because 1 over length of V is a real number, you can put the outside of the absolute value.
+
+146
+00:27:30,844 --> 00:27:49,104
+So, 1 over length of V times, here we have length of V, this is equal to 1. Okay. So, by dividing each component by its length, this process put the vector in the normalized form.
+
+147
+00:27:49,104 --> 00:27:58,784
+This process known as normalization. We can normalize any vector, a vector with length 1 unit.
+
+148
+00:28:08,980 --> 00:28:38,980
+O ilk özel bir özel vektörünün vektörün
+
+149
+00:28:38,980 --> 00:29:06,120
+İzle
+
+150
+00:28:51,508 --> 00:29:03,428
+We have two vectors u and v with n components in Rn, n-dimensional Euclidean space.
+
+151
+00:29:04,488 --> 00:29:18,928
+The vector addition is an operation denoted by plus from Rn cross Rn, we just take two vectors u and v,
+
+152
+00:29:18,928 --> 00:29:25,288
+and this operation maps these two vectors to Rn also.
+
+153
+00:29:25,448 --> 00:29:28,228
+The result also is a vector in Rn.
+
+154
+00:29:29,488 --> 00:29:29,968
+Okay.
+
+155
+00:29:34,675 --> 00:29:35,675
+U plus V.
+
+156
+00:29:38,675 --> 00:29:42,675
+Component is equal to the component-wise addition of the
+
+157
+00:29:44,675 --> 00:29:46,675
+vectors U and V.
+
+158
+00:29:46,675 --> 00:29:49,675
+The first component will be U1 plus V1.
+
+159
+00:29:49,675 --> 00:29:52,675
+Second component will be U2 plus V2.
+
+160
+00:29:53,675 --> 00:29:56,675
+And the last component will be
+
+161
+00:29:56,675 --> 00:29:58,675
+U and plus Vm.
+
+162
+00:29:58,675 --> 00:29:59,675
+Ok.
+
+163
+00:29:59,675 --> 00:30:02,675
+This is our first binary operation on the vectors
+
+164
+00:30:02,675 --> 00:30:05,675
+in the perspective of mathematics.
+
+165
+00:30:05,675 --> 00:30:08,675
+But in physics,
+
+166
+00:30:08,675 --> 00:30:11,675
+if you have two vectors
+
+167
+00:30:13,675 --> 00:30:14,675
+on the
+
+168
+00:30:16,675 --> 00:30:18,675
+Cartesian coordinates
+
+169
+00:30:18,675 --> 00:30:20,675
+...
+
+170
+00:30:22,451 --> 00:30:25,731
+net, birçilere vektör.
+
+171
+00:30:36,692 --> 00:30:39,491
+vektör U vektör
+
+172
+00:30:41,251 --> 00:30:42,051
+vektör
+
+173
+00:30:45,395 --> 00:30:47,395
+Vector v,
+
+174
+00:30:50,395 --> 00:30:52,395
+Ve
+
+175
+00:30:52,395 --> 00:30:54,395
+Vector v
+
+176
+00:30:54,395 --> 00:30:55,395
+Ve
+
+177
+00:30:55,395 --> 00:31:05,395
+Vector v
+
+178
+00:31:05,395 --> 00:31:07,395
+Parallelogram
+
+179
+00:31:07,395 --> 00:31:43,395
+Vector v
+
+180
+00:31:35,412 --> 00:31:37,412
+Form a parallelogram.
+
+181
+00:31:39,912 --> 00:31:41,912
+This is also vector u.
+
+182
+00:31:48,531 --> 00:31:55,031
+Yani u plus v, bu faktör.
+
+183
+00:31:59,124 --> 00:32:00,324
+Çoğuz another color.
+
+184
+00:32:04,596 --> 00:32:07,195
+Bu faktör is just u plus v.
+
+185
+00:32:07,195 --> 00:32:07,395
+Okay.
+
+186
+00:32:09,895 --> 00:32:11,036
+U plus v.
+
+187
+00:32:13,855 --> 00:32:18,096
+This loop is known as parallelogram rule for the vector addition.
+
+188
+00:32:20,496 --> 00:32:23,155
+Geomatically, you can add factors in this way.
+
+189
+00:32:23,655 --> 00:32:23,935
+Okay.
+
+190
+00:32:29,140 --> 00:32:43,759
+Let's give an example related to vector addition. We have two vectors, u in the r square, u and v with the given component, u plus v
+
+191
+00:32:43,759 --> 00:32:48,320
+is equal to
+
+192
+00:32:48,320 --> 00:32:52,140
+1 minus 2 plus
+
+193
+00:32:52,140 --> 00:32:56,840
+minus 1, 3. Result will be
+
+194
+00:32:56,840 --> 00:33:00,160
+1 plus minus 1 is 0.
+
+195
+00:33:01,120 --> 00:33:02,840
+And minus 2 plus
+
+196
+00:33:02,840 --> 00:33:04,000
+3 is 1.
+
+197
+00:33:06,060 --> 00:33:08,940
+The length of this vector, this new vector,
+
+198
+00:33:09,140 --> 00:33:10,320
+let's say w
+
+199
+00:33:10,320 --> 00:33:12,820
+equal to u plus v
+
+200
+00:33:12,820 --> 00:33:15,640
+then
+
+201
+00:33:15,640 --> 00:33:17,460
+the length of w
+
+202
+00:33:17,460 --> 00:33:19,840
+is just 1 because
+
+203
+00:33:19,840 --> 00:33:22,340
+square root 0 squared plus 1
+
+204
+00:33:22,340 --> 00:33:24,020
+square root 1 is 1.
+
+205
+00:33:28,627 --> 00:33:31,768
+Geomatically, here we have
+
+206
+00:33:36,276 --> 00:33:43,316
+Vaktör U, bir unit, rightward, ve iki units, downward.
+
+207
+00:33:44,836 --> 00:33:48,676
+Just connect origin to this point.
+
+208
+00:33:49,316 --> 00:33:51,635
+This is our Vaktör U.
+
+209
+00:33:57,428 --> 00:34:09,927
+Ve v, ilk komponenten, minus 1, 1 unit leftward, ve 3 units upward.
+
+210
+00:34:18,996 --> 00:34:21,115
+We just move vector
+
+211
+00:34:21,115 --> 00:34:23,735
+A
+
+212
+00:34:26,835 --> 00:34:33,695
+u, the title vector u to the typo vector v, let me write here v.
+
+213
+00:34:38,996 --> 00:34:45,996
+Bu bir
+
+214
+00:34:55,827 --> 00:35:02,788
+Proportional, the vector u and v are not saying, let me, uh, laten vektör.
+
+215
+00:35:07,507 --> 00:35:08,227
+Aleksiyonu.
+
+216
+00:35:34,547 --> 00:35:40,987
+vektör uzayları, aynı
+
+217
+00:35:40,947 --> 00:35:42,947
+ve nokta, each unit.
+
+218
+00:35:49,331 --> 00:35:58,311
+Bu, bu ve
+
+219
+00:36:07,795 --> 00:36:09,795
+vektör uzayları, yine.
+
+220
+00:36:18,291 --> 00:36:48,291
+Bu adıcı olarak bu ve
+
+221
+00:37:02,036 --> 00:37:05,036
+Here we have a better indication of this addition.
+
+222
+00:37:10,612 --> 00:37:14,612
+We just move V and you.
+
+223
+00:37:20,563 --> 00:37:35,403
+A new vector from the tie-low v to the tip-o both factors, or from the tie-low both factors to the tip-o both factors will be our addition vector.
+
+224
+00:37:39,572 --> 00:38:03,572
+Scalar Multiplication, another operation on the vectors, let me have two vectors, excuse me, one vector u with n components u1, u2, un in rn, and a scalar.
+
+225
+00:38:07,251 --> 00:38:20,331
+in real numbers. This is a custom in real numbers. Then, scalar multiplication is denoted by dot, a small dot.
+
+226
+00:38:21,331 --> 00:38:34,132
+This is an operation from R cross Rn, result is also will be in Rn. We take a scalar and a vector,
+
+227
+00:38:34,132 --> 00:38:39,012
+a scalar lambda and a vector u. We map this
+
+228
+00:38:39,012 --> 00:38:50,931
+tuple to lambda dot u, or just lambda u. We can remove that between lambda and u.
+
+229
+00:38:51,692 --> 00:39:02,971
+And multiply each component of u by scalar lambda. Lambda u1, lambda u2, lambda u n.
+
+230
+00:39:06,579 --> 00:39:26,940
+Bu notion comes from the operation, the nature of the operation, because we scale vector, we stretch the length of vector, or we squish the length of vector, or we change the direction of the vector.
+
+231
+00:39:27,759 --> 00:39:34,679
+So this operation is actually scaling, we scale the vector u, by a proportion lambda.
+
+232
+00:39:42,804 --> 00:40:12,804
+Bu, bu
+
+233
+00:40:12,804 --> 00:40:42,804
+bu, bu
+
+234
+00:40:42,804 --> 00:41:13,224
+Bu, bu
+
+235
+00:41:20,628 --> 00:41:41,347
+R², let that we have a vector v with the components 1,1 and scalar minus 2 in R. Lambda v will be equal to minus 2 times 1,1. This is equal to minus 2 minus 2.
+
+236
+00:41:41,347 --> 00:41:57,248
+We stretch the length of vector v, but stretch the direction of vector v. Here we have geometric interpretation of this operation.
+
+237
+00:41:57,248 --> 00:41:59,248
+Our vector
+
+238
+00:42:05,588 --> 00:42:20,688
+vektör ve, bir unit right third, bir unit up third, we multiply by minus 2, we change the direction of vector ve.
+
+239
+00:42:20,688 --> 00:42:30,548
+Ok, here, the tip of vector minus 2 times vector ve is minus 2 minus 2.
+
+240
+00:42:30,548 --> 00:42:43,148
+Actually, the length of this vector is 2 times 0, the length of vector ve, but has opposite direction with the vector ve.
+
+241
+00:42:51,123 --> 00:42:52,123
+Any question?
+
+242
+00:42:53,363 --> 00:42:54,363
+Want to know?
+
+243
+00:42:56,203 --> 00:42:59,403
+This is our second binary operation on detactors.
+
+244
+00:43:03,251 --> 00:43:04,991
+ve 3. O
+
+245
+00:43:04,991 --> 00:43:33,251
+O
+
+246
+00:43:57,427 --> 00:43:59,427
+İngilizce, Rm'in, Rm'in,
+
+247
+00:43:59,427 --> 00:44:09,427
+ve bu kadar da,
+
+248
+00:44:09,427 --> 00:44:10,427
+u, v,
+
+249
+00:44:10,427 --> 00:44:14,427
+ve bu kadar da,
+
+250
+00:44:16,083 --> 00:44:21,083
+U ve V ile iki vektörler var.
+
+251
+00:44:21,083 --> 00:44:23,083
+V veya uv.
+
+252
+00:44:26,083 --> 00:44:28,083
+Ve bu olarak
+
+253
+00:44:34,164 --> 00:44:40,704
+Just multiply each corresponding component and adding up all these new products.
+
+254
+00:44:40,704 --> 00:44:41,504
+Okay.
+
+255
+00:44:42,584 --> 00:44:52,664
+U1 times V1 plus U2 times V2 plus Un times Vn.
+
+256
+00:44:53,484 --> 00:45:02,444
+By the sigma symbol you can write I from 1 to n U sub i times V sub i.
+
+257
+00:45:02,444 --> 00:45:05,764
+This is a real number.
+
+258
+00:45:05,764 --> 00:45:08,564
+Result is a real number.
+
+259
+00:45:08,564 --> 00:45:14,824
+Our operation is from, let me write here, that product.
+
+260
+00:45:14,824 --> 00:45:27,264
+From Rn cross Rn we take two vectors U and V and we map these two vectors to a skater from R.
+
+261
+00:45:30,579 --> 00:45:31,579
+Yudat-T.
+
+262
+00:45:32,579 --> 00:45:33,579
+Ok.
+
+263
+00:45:34,579 --> 00:45:39,579
+This is our third operation on the vectors, dat-product or inert-product.
+
+264
+00:45:48,083 --> 00:45:51,963
+Let's have two vectors in R to the power of 4.
+
+265
+00:45:52,543 --> 00:45:54,943
+Two vectors with four components.
+
+266
+00:45:55,783 --> 00:45:58,344
+The dot product of these two vectors,
+
+267
+00:45:58,923 --> 00:46:01,703
+we just multiply corresponding components.
+
+268
+00:46:02,163 --> 00:46:05,263
+2 times minus 1, 1 times 1,
+
+269
+00:46:05,943 --> 00:46:09,384
+plus 0 times 3, plus 1 times 2.
+
+270
+00:46:10,844 --> 00:46:12,983
+Here result will be 1.
+
+271
+00:46:12,983 --> 00:46:13,663
+Okay.
+
+272
+00:46:13,663 --> 00:46:18,183
+Also, that product of V,
+
+273
+00:46:18,623 --> 00:46:22,663
+V dot U will be same as with this.
+
+274
+00:46:22,783 --> 00:46:24,783
+Because real numbers are commutative,
+
+275
+00:46:24,903 --> 00:46:29,384
+you can change the order of these two components,
+
+276
+00:46:29,803 --> 00:46:31,423
+or each product.
+
+277
+00:46:31,723 --> 00:46:34,623
+You can change order of each product.
+
+278
+00:46:34,963 --> 00:46:39,663
+So here you have V1, U1, V2, U2, that's it.
+
+279
+00:46:39,663 --> 00:46:40,303
+Okay.
+
+280
+00:46:40,303 --> 00:46:43,303
+The result will be same as with U.
+
+281
+00:46:43,303 --> 00:46:43,963
+U.
+
+282
+00:46:50,708 --> 00:46:59,708
+If you have a node, which says that the dot product, result of dot product is always a real number, is a scalar.
+
+283
+00:47:07,731 --> 00:47:22,731
+Here we have some properties related to regarding to that product of two vectors. Let me have three vectors u, v and w with m components and scalars alpha and beta in real numbers.
+
+284
+00:47:22,731 --> 00:47:44,992
+Then, first, that product is commutative because this is a result or definition of that product. We know that u, v is equal to i from 1 to n, u sub i times v sub i.
+
+285
+00:47:44,992 --> 00:48:04,612
+And this is equal to, we can change the order of u sub i and v sub i. I from 1 to n, v sub i times u sub i. I remove the dot between these two components. We can omit this dot.
+
+286
+00:48:04,612 --> 00:48:17,612
+So, this is equal to v dot u. That product is a commutative operation on the vectors.
+
+287
+00:48:17,612 --> 00:48:33,612
+The first property known as the commutativity of the dot product. Also, we have left distributive law on the vector addition and vector subtraction.
+
+288
+00:48:33,612 --> 00:48:43,612
+This is also by using a definition of the dot product and definition of vector addition, we can prove this property.
+
+289
+00:48:43,612 --> 00:49:10,012
+So, u dot u dot v plus or minus w will be equal to, by using summation symbol, i from 1 to n, u sub i times v sub i plus w sub i.
+
+290
+00:49:10,012 --> 00:49:32,012
+This is equal to, i from 1 to n, u sub i times v sub i plus u sub i times w sub i because real numbers has left distributive law or also left distributive law.
+
+291
+00:49:32,012 --> 00:49:37,012
+So, we can use this fact from real numbers.
+
+292
+00:49:37,012 --> 00:49:42,012
+And we can separate this summation symbol.
+
+293
+00:49:42,012 --> 00:49:44,012
+So, we can use this fact from the real numbers.
+
+294
+00:49:44,012 --> 00:49:46,012
+And we can separate this summation symbol.
+
+295
+00:49:46,012 --> 00:51:07,012
+So, we can separate this summation symbol.
+
+296
+00:51:03,423 --> 00:51:09,264
+Eding up into the first vector. This is substructional vectors.
+
+297
+00:51:16,148 --> 00:51:20,148
+We just combine vektör edisyon and scalar multiplication.
+
+298
+00:51:26,356 --> 00:51:34,756
+You can change the order of scalar, we can write scalar in any order, result will be same.
+
+299
+00:51:36,036 --> 00:51:55,856
+First you can did that product of u and v and the result will be a real number, this is a real number, so you can multiply this real number by alpha or you can scale u by alpha and that product with v or you can scale v by alpha and that product
+
+300
+00:51:55,856 --> 00:52:15,456
+with u. All these dot products are equal, result of these dot products will be same real number. Okay, also you can prove this by definition of dot product and scalar product or scalar product multiplying a vector by a scalar.
+
+301
+00:52:21,043 --> 00:52:38,563
+If you dot product, any vector with the zero vector result will be zero in the real numbers. This is the multiplicative, excuse me, the additive identity of the real numbers. This is a vector with all components zero. Okay.
+
+302
+00:52:41,344 --> 00:52:46,903
+Also, by applying definition of dot product, you can see this fact.
+
+303
+00:52:46,903 --> 00:53:01,523
+And if you dot product a vector with itself, then result will be square o, length of this vector.
+
+304
+00:53:01,523 --> 00:53:18,844
+We know that length of vector u is equal to square root of addition of all the square o, all the components of u.
+
+305
+00:53:24,596 --> 00:53:47,295
+So, if you, that product, u with itself, then u dot u will be i from 1 to n, u sub i square, this is equal to, u1 square plus, u2 square plus, u sub n square.
+
+306
+00:53:47,295 --> 00:54:00,115
+And this is equal to the last o, the square o, last o u, because of the definition of the last o productive.
+
+307
+00:54:04,083 --> 00:54:10,303
+If you take the square of both sides of this, you will get u dot u.
+
+308
+00:54:14,303 --> 00:54:21,663
+And this inequality is known as Cauchy-Schwarz's inequality.
+
+309
+00:54:21,663 --> 00:54:33,683
+The left of the absolute value of, this is actually absolute value, the absolute value of u dot v, this is a positive real number,
+
+310
+00:54:34,083 --> 00:54:43,823
+is smaller or equal to the left of u times left of v.
+
+311
+00:54:43,823 --> 00:54:44,603
+Okay.
+
+312
+00:54:49,588 --> 00:55:02,988
+We can prove this by using Pythagoras theorem or quadratics, but the proof is a little bit long. I will omit proof of this properly.
+
+313
+00:55:06,547 --> 00:55:36,547
+Ve bir diğer definiçiler için bir adı da
+
+314
+00:55:36,547 --> 00:56:06,547
+bu da
+
+315
+00:56:06,547 --> 00:56:09,407
+We can say that u and v are parallel
+
+316
+00:56:09,407 --> 00:56:25,607
+And if theta is zero then u and v are parallel and have same direction and if theta is pi then u and v also are parallel but with opposite direction
+
+317
+00:56:25,607 --> 00:56:29,247
+Let me write here first case
+
+318
+00:56:29,247 --> 00:56:32,207
+Theta is zero
+
+319
+00:56:32,207 --> 00:56:37,647
+In this case u and v have same direction
+
+320
+00:56:42,003 --> 00:57:03,123
+And we, in this case, we get the maximum value of, for the u dot v, because of the direction. Cosine 0 is 1, so the length of u and the length of v are positive numbers. If you multiply two positive numbers, result will be positive again.
+
+321
+00:57:03,123 --> 00:57:30,223
+And if theta is pi, then u and v can assume this case, u and v has opposite direction. And in this case, we get a minimum value for u dot v, because we multiply a positive value by minus one.
+
+322
+00:57:30,223 --> 00:57:43,583
+So, result will be always negative. Let's write here, u dot v is always positive. In this case, u dot v is always negative.
+
+323
+00:57:47,188 --> 00:57:51,347
+And if theta is pi over 2,
+
+324
+00:57:54,996 --> 00:58:23,756
+The angle between u and v, that right here u and here v, the angle between u and v is pi over 2, then this means that if u is perpendicular to v or v is perpendicular to u, you can write u is perpendicular to v, then u dot v is 0 because cosine pi over 2 is 0.
+
+325
+00:58:28,467 --> 00:58:42,967
+And depending on this definition of that product, cosine theta is equal to u dot v over the length of u times the length of v.
+
+326
+00:58:42,967 --> 00:59:02,127
+Okay. If we take the inverse cosine of both sides, we will get theta is equal to r cosine u dot v over the length of u times length of v.
+
+327
+00:59:03,248 --> 00:59:08,027
+This is the angle between vectors u and v.
+
+328
+00:59:08,867 --> 00:59:11,327
+Okay. Any questions?
+
+329
+00:59:28,755 --> 00:59:33,935
+10 minit break, and then we will continue our course.
+
+330
+01:10:23,764 --> 01:10:39,043
+Good morning again. Let's go on. I have already talked about the angle between two non-zero vectors. Let's give an example related to this concept.
+
+331
+01:10:44,692 --> 01:11:14,692
+Evet, 2 ve 4
+
+332
+01:11:14,692 --> 01:11:44,692
+ve 4 ve
+
+333
+01:11:44,692 --> 01:12:14,692
+4 ve 4
+
+334
+01:13:18,996 --> 01:13:27,996
+We use a calculator, the angle between u and v is 1.2952.
+
+335
+01:13:29,996 --> 01:13:40,996
+Now, we will try to find the projection of a vector onto another vector. Let we have two vectors, u and v.
+
+336
+01:13:40,996 --> 01:13:46,996
+Here we have vector u and a vector v.
+
+337
+01:13:53,076 --> 01:13:58,076
+We have an angle between these two vectors, Theta.
+
+338
+01:13:58,076 --> 01:14:02,076
+We want to find this vector.
+
+339
+01:14:03,076 --> 01:14:09,076
+Consider here we have a light in this point.
+
+340
+01:14:09,076 --> 01:14:16,076
+We want to find the vector which is the shadow of U onto vector V.
+
+341
+01:14:16,076 --> 01:14:23,076
+We want to find, we try to find exact components of this vector.
+
+342
+01:14:23,076 --> 01:14:26,076
+In terms of U and V.
+
+343
+01:14:26,076 --> 01:14:27,076
+Okay.
+
+344
+01:14:27,076 --> 01:14:34,076
+We know that the scalar part of this vector is just equal to the scalar part of this vector.
+
+345
+01:14:34,076 --> 01:14:44,076
+Let's say it has projection VU.
+
+346
+01:14:44,076 --> 01:14:48,076
+This means that the projection of U onto V.
+
+347
+01:14:48,076 --> 01:14:49,076
+Okay.
+
+348
+01:14:49,076 --> 01:15:03,076
+And the length of this vector, the length of this is a scalar, a real number is equal to U times, length of U times cosine Theta.
+
+349
+01:15:03,076 --> 01:15:04,076
+Okay.
+
+350
+01:15:04,076 --> 01:15:13,076
+The length of projection of U onto V is equal to length of U times cosine Theta.
+
+351
+01:15:13,076 --> 01:15:19,076
+Because of this length is equal to length of U times the cosine between U and V.
+
+352
+01:15:19,076 --> 01:15:20,076
+Okay.
+
+353
+01:15:20,076 --> 01:15:34,076
+We know that U dot V is equal to length of U times length of V times the cosine between two vectors, U and V.
+
+354
+01:15:34,076 --> 01:15:38,076
+So here I have U times cosine Theta.
+
+355
+01:15:38,076 --> 01:15:54,076
+This is actually equal to, if we divide both sides of this dot product, we will get, we can get the length of projection of U onto V.
+
+356
+01:15:54,076 --> 01:15:55,076
+Okay.
+
+357
+01:15:55,076 --> 01:15:59,076
+Just divide both sides by the length of V.
+
+358
+01:15:59,076 --> 01:16:03,076
+In order to get length of U times cosine Theta.
+
+359
+01:16:03,076 --> 01:16:11,076
+We will be equal to U dot V over length of V.
+
+360
+01:16:11,076 --> 01:16:42,076
+Okay.
+
+361
+01:16:16,180 --> 01:16:20,039
+Bu real number, çünkü u dot v is a real number.
+
+362
+01:16:21,900 --> 01:16:24,119
+Length of v is also a real number.
+
+363
+01:16:24,119 --> 01:16:27,920
+If we divide two real numbers, result will be a real number.
+
+364
+01:16:28,800 --> 01:16:31,100
+But I try to find a vector.
+
+365
+01:16:31,340 --> 01:16:32,520
+I need a direction.
+
+366
+01:16:32,860 --> 01:16:35,380
+How can we find a direction?
+
+367
+01:16:35,579 --> 01:16:37,780
+Just normalize vector v.
+
+368
+01:16:37,920 --> 01:16:44,320
+If you multiply the scalar to the normalized form of vector v,
+
+369
+01:16:44,320 --> 01:16:49,780
+you will get the orange vector, the projection of u onto v.
+
+370
+01:16:49,780 --> 01:16:53,140
+Because this is a real number, I need a vector.
+
+371
+01:16:54,260 --> 01:17:06,280
+So if you multiply this scalar by the v over, let me write here,
+
+372
+01:17:08,920 --> 01:17:13,119
+1 over length of v times the vector v,
+
+373
+01:17:13,119 --> 01:17:17,320
+just I multiply the vector v by the 1 over length of v.
+
+374
+01:17:18,200 --> 01:17:20,659
+The length of this vector is 1.
+
+375
+01:17:20,659 --> 01:17:44,060
+So the projection of vector v onto vector v will be equal to u dot v over length of v times,
+
+376
+01:17:44,060 --> 01:17:51,760
+this is a scalar, a real number times, 1 over length of v times vector v.
+
+377
+01:17:51,760 --> 01:17:59,460
+This is equal to u dot v.
+
+378
+01:17:59,460 --> 01:18:05,760
+Or square root length of v times vector v.
+
+379
+01:18:05,760 --> 01:18:06,619
+Okay.
+
+380
+01:18:06,619 --> 01:18:13,619
+Here we put a light onto vector v.
+
+381
+01:18:13,820 --> 01:18:21,159
+We try to find this new vector, the orange vector, the shadow of u onto v.
+
+382
+01:18:21,159 --> 01:18:26,360
+So we can compute the scalar component of this vector.
+
+383
+01:18:26,360 --> 01:18:32,800
+The length of this vector is actually normal u times cosine between u and v.
+
+384
+01:18:32,800 --> 01:18:36,000
+but this is a vector, not a scalar.
+
+385
+01:18:36,000 --> 01:18:39,500
+So we need to multiply by a unit vector.
+
+386
+01:18:40,500 --> 01:18:43,800
+In order to get this unit vector which we need,
+
+387
+01:18:43,800 --> 01:18:50,200
+just multiply vector v by 1 over length of v.
+
+388
+01:18:50,200 --> 01:18:53,700
+because the length of this vector is 1.
+
+389
+01:18:53,700 --> 01:18:55,200
+This vector is a unit vector.
+
+390
+01:18:57,400 --> 01:18:57,900
+Okay.
+
+391
+01:19:02,644 --> 01:19:31,664
+Also, we can change the rule of u and v, projection of, the projection of, the projection of, v onto u will be a cube to, just change rule of u and v, u dot v over the square of length of u times,
+
+392
+01:19:32,644 --> 01:19:33,583
+Factor u.
+
+393
+01:19:34,244 --> 01:19:37,764
+Okay, this is the projection of, v onto u.
+
+394
+01:19:39,364 --> 01:19:40,364
+Let's give an example.
+
+395
+01:19:40,744 --> 01:19:41,844
+Any question here?
+
+396
+01:19:42,463 --> 01:19:43,564
+Do you have any question?
+
+397
+01:19:44,284 --> 01:19:45,003
+Or questions?
+
+398
+01:20:02,612 --> 01:20:07,811
+Here you have a better indication of this notion.
+
+399
+01:20:22,260 --> 01:20:29,260
+Evet, şimdi iki vektörler var.
+
+400
+01:20:29,260 --> 01:20:34,260
+4, we want to find the projection of u onto v.
+
+401
+01:20:34,260 --> 01:20:41,260
+Just compute u dot v, length of v, and take the square of length of v.
+
+402
+01:20:41,260 --> 01:20:47,260
+We have already computed this component.
+
+403
+01:20:47,260 --> 01:21:02,260
+U dot v will be equal to 2 times minus 1 plus 2 times 1 is 0, 0 times 0, 0 plus 1 times 2 is 2.
+
+404
+01:21:02,260 --> 01:21:05,260
+U dot v is 2.
+
+405
+01:21:05,260 --> 01:21:18,260
+The length of u, excuse me, I need, we needn't length of u, we just need to compute length of v.
+
+406
+01:21:18,260 --> 01:21:26,260
+Length of v is equal to 1 plus 1 square root 1 plus 1 plus 4 square root 6.
+
+407
+01:21:26,260 --> 01:21:36,260
+If we take the square of this constant, this number, we will get the square of length of v is equal to 6.
+
+408
+01:21:36,260 --> 01:21:37,260
+OK.
+
+409
+01:21:37,260 --> 01:21:51,260
+So, the projection of u over v is equal to 2 over 6, 1 over 3 times vector v.
+
+410
+01:21:51,260 --> 01:21:56,260
+Here we have minus 1, 1, 0 and 2.
+
+411
+01:21:56,260 --> 01:22:06,260
+This is equal to minus 1 over 3, 1 over 3, 0 and 2 over 3.
+
+412
+01:22:06,260 --> 01:22:10,260
+This is the projection of vector u onto v.
+
+413
+01:22:10,260 --> 01:22:22,260
+If you want to find the projection of v onto u, you need to compute length of vector u.
+
+414
+01:22:22,260 --> 01:22:27,260
+Let find this number also.
+
+415
+01:22:27,260 --> 01:22:29,260
+This is actually 3.
+
+416
+01:22:29,260 --> 01:22:35,260
+If you take the square of this length, we will get 9.
+
+417
+01:22:35,260 --> 01:22:56,260
+So, projection of vector v onto u will be equal to 2 over 9, 2 over 9 times vector u.
+
+418
+01:22:56,260 --> 01:22:59,260
+2, 2, 0, 1.
+
+419
+01:22:59,260 --> 01:23:06,260
+This is equal to 4 over 3, 4 over 3, 0 and 2 over 3.
+
+420
+01:23:06,260 --> 01:23:21,260
+So, the next one is the next one.
+
+421
+01:23:21,260 --> 01:23:23,260
+So, the next one is the next one is the next one.
+
+422
+01:23:23,667 --> 01:23:41,667
+Binary operation on the vectors is called as cross product or vectorial product, but this operation can be done over vectors or RQ.
+
+423
+01:23:41,667 --> 01:23:47,768
+This is just an operation over RQ, the vectors with three components.
+
+424
+01:23:48,547 --> 01:23:56,768
+In vectors with the components different from three, we cannot do this operation.
+
+425
+01:23:59,287 --> 01:24:01,447
+That we have two vectors U.
+
+426
+01:24:06,228 --> 01:24:10,467
+ve v, arf, q,
+
+427
+01:24:15,731 --> 01:24:41,481
+vektör, rq, kroz product of u and v, u cross v denoted by cross symbol or u n symbol v is equal to, first give the general,
+
+428
+01:24:54,707 --> 01:24:58,707
+is an operation from R³ x R³
+
+429
+01:24:58,707 --> 01:25:02,707
+to R³. Result also is a vector in R³
+
+430
+01:25:02,707 --> 01:25:04,707
+and
+
+431
+01:25:04,707 --> 01:25:07,707
+U x V
+
+432
+01:25:07,707 --> 01:25:11,707
+or U and V
+
+433
+01:25:17,171 --> 01:25:25,331
+Take just two vectors in RQ, cross RQ, and map, I need to remove this, alright.
+
+434
+01:25:29,779 --> 01:25:57,019
+I need to write in the right hand side. We just map these two vectors to u x v, or u and v. And the rule of this multiplication, this is a vector in r cube also, is just equal to, this is equal to, this product, cross product is equal to, the result of the determinant,
+
+435
+01:26:03,699 --> 01:26:05,699
+3x3, determinant,
+
+436
+01:26:10,355 --> 01:26:16,155
+v1, v2, v3, 3x3 determinant.
+
+437
+01:26:16,155 --> 01:26:33,155
+So, if we expand along the first row, this determinant we will get, just close up first row and first column of this determinant to get,
+
+438
+01:26:33,155 --> 01:26:50,155
+u2, u3, v2, v3, times vector i, minus, because the sin of j is minus 1, times,
+
+439
+01:26:50,155 --> 01:27:01,956
+u1, u3, v1, v3, times vector i, plus the sin of k is positive,
+
+440
+01:27:01,956 --> 01:27:10,155
+u1, u2, v1, v2, times vector k.
+
+441
+01:27:10,155 --> 01:27:10,956
+Okay, okay.
+
+442
+01:27:10,956 --> 01:27:15,956
+Okay, this result is a vector, because if we have,
+
+443
+01:27:15,956 --> 01:27:20,555
+u2, times v3, minus,
+
+444
+01:27:22,355 --> 01:27:25,876
+u3, times v2, times i, minus,
+
+445
+01:27:29,524 --> 01:27:41,984
+u1 times v3 minus u3 v1 j plus u1 v2 minus u2 v1 k.
+
+446
+01:27:41,984 --> 01:28:04,804
+So this is a vector with three components u2 v3 minus u3 v2 u1 v3 minus u3 v1 and u1 v2 minus u2 v1.
+
+447
+01:28:04,804 --> 01:28:19,784
+Okay, we have another method to compute. This is just a symbolization for the definition of the cross product in RQ.
+
+448
+01:28:21,564 --> 01:28:30,524
+Mathematically, this is an unsense concept because we cannot put vectors for the entry or matrix.
+
+449
+01:28:30,524 --> 01:28:36,484
+Okay, this is just a symbolization for the definition of the cross product.
+
+450
+01:28:37,704 --> 01:28:46,484
+Also, you can find the cross product u and v by this way. Let's say this as a first method.
+
+451
+01:28:46,484 --> 01:28:59,144
+We have another method, second method for the cross product, for the computation of the cross product of two vectors in RQ.
+
+452
+01:28:59,144 --> 01:29:02,824
+Just
+
+453
+01:29:04,756 --> 01:29:18,756
+Take the determinant of two by two matrices. Consider vectors u and v are on the surface of a cylinder. Okay.
+
+454
+01:29:19,756 --> 01:29:22,756
+Here we have a loop, a cycle.
+
+455
+01:29:24,756 --> 01:29:31,756
+Start with the second components of u and v.
+
+456
+01:29:31,756 --> 01:29:43,756
+Here we have the first column of the first component determinant will be u to v two, u to v two.
+
+457
+01:29:44,756 --> 01:29:51,756
+And take the right shift, u three, v three.
+
+458
+01:29:55,220 --> 01:30:15,400
+u3 v3, u1 v1, because the next column will be u1 v1, and here u1 v1, and complete the loop, u2 v2.
+
+459
+01:30:16,140 --> 01:30:19,400
+This is our start point, also will be end point.
+
+460
+01:30:19,400 --> 01:30:28,720
+Also you can use this vector to compute cross product of u and v.
+
+461
+01:30:29,320 --> 01:30:40,640
+The order of these vectors is important because if you change the order of the second and last row of this determinant,
+
+462
+01:30:40,640 --> 01:30:49,520
+you will get a negative, you need to multiply the determinant by a negative sign.
+
+463
+01:30:49,940 --> 01:30:54,640
+So u cross v is not equal to v cross u.
+
+464
+01:30:54,640 --> 01:31:12,880
+Actually u cross v is equal to minus 1 times v cross u.
+
+465
+01:31:21,108 --> 01:31:27,208
+Any question related to a cross product of vectors in our group?
+
+466
+01:31:37,619 --> 01:31:50,119
+Geometrically, the cross product of two vectors, the lat of cross, because this is a vector, if you take the lat of this vector, you will get a real number.
+
+467
+01:31:50,119 --> 01:32:00,960
+The lat of cross product of u and v is equal to the area of the parallelogram, which is formed by vectors u and v.
+
+468
+01:32:00,960 --> 01:32:12,099
+This region is actually, let's write here u and here v, is equal to cross product of u and v.
+
+469
+01:32:12,659 --> 01:32:12,880
+Okay.
+
+470
+01:32:13,960 --> 01:32:15,819
+The area of this parallelogram.
+
+471
+01:32:15,819 --> 01:32:23,859
+I need to change the order of u and v because we need to use right hand rule for this product.
+
+472
+01:32:28,787 --> 01:32:32,387
+U'xv, the downward is v'xv.
+
+473
+01:32:33,467 --> 01:32:45,667
+But if you take the left of these two vectors, the left of these two vectors will be same, because left is a positive real number.
+
+474
+01:32:47,907 --> 01:32:55,147
+And u'xv is a new vector which is perpendicular to the both component vectors.
+
+475
+01:32:55,147 --> 01:32:57,987
+And right here, u'xv.
+
+476
+01:32:59,467 --> 01:33:04,607
+This vector is perpendicular to v and u also.
+
+477
+01:33:05,107 --> 01:33:09,587
+In this direction, we have a minus u'xv.
+
+478
+01:33:10,587 --> 01:33:13,127
+This is equal to v'xv.
+
+479
+01:33:14,707 --> 01:33:15,427
+Okay.
+
+480
+01:33:16,187 --> 01:33:20,147
+This is also, is perpendicular to the both component vectors.
+
+481
+01:33:37,268 --> 01:33:55,448
+Let's give an example for the cross product. We have vectors u and v. u is 1, 2, minus 1 and v is equal to minus 2, 3, 4.
+
+482
+01:33:55,448 --> 01:34:17,127
+So u cross v is equal to 2, 3, minus 1, 4, minus 1, 4, 1, minus 2, 1, minus 2, 2, 3.
+
+483
+01:34:17,127 --> 01:34:42,408
+We complete the loop, the cycle. So result will be 8 plus 3 is 11, 2 minus 4 is minus 6, excuse me, is minus 2, 3 plus 4 is 7.
+
+484
+01:34:42,408 --> 01:34:52,228
+That compute u cross v, excuse me, v cross, v cross u.
+
+485
+01:34:54,788 --> 01:35:03,467
+Just replace the row of components and determinants of u cross v.
+
+486
+01:35:03,467 --> 01:35:14,288
+3, 3, 4, 2 minus 1, 4 minus 2, minus 1, 1.
+
+487
+01:35:16,207 --> 01:35:18,967
+Minus 2, 3, 1, 2.
+
+488
+01:35:19,868 --> 01:35:20,247
+Okay.
+
+489
+01:35:20,247 --> 01:35:27,667
+So minus 3 minus 8 is minus 11.
+
+490
+01:35:29,667 --> 01:35:35,207
+4.
+
+491
+01:35:33,684 --> 01:35:46,604
+4 minus 2 is 2, okay, minus 4 minus 3 is minus 7. This is actually equal to minus 1 times u cross u.
+
+492
+01:35:48,384 --> 01:36:03,264
+Because of the properties of determinant, we just replace swap to, if you swap all number, if you do all number swaps, then you need to multiply result of determinant by
+
+493
+01:36:03,264 --> 01:36:04,463
+opposite.
+
+494
+01:36:04,463 --> 01:36:05,663
+Sfâng.
+
+495
+01:36:21,747 --> 01:36:29,747
+Here we have some properties regarding to cross product that we have three vectors in R3 and a scalar in real numbers.
+
+496
+01:36:31,747 --> 01:36:38,747
+We already know that because of the definition of cross product, cross product is not commutative.
+
+497
+01:36:38,747 --> 01:36:46,747
+Because we replace ordinal two rows in the determinant in order to get V cross U.
+
+498
+01:36:46,747 --> 01:36:53,747
+So cross product is not commutative. And you can replace the ord row, scalar.
+
+499
+01:36:53,747 --> 01:37:02,747
+You can write scalar in any order. This is because if you have a common factor in the determinant, you can factor out it.
+
+500
+01:37:02,747 --> 01:37:10,747
+You can divide second row by this component and you can multiply last row by this component.
+
+501
+01:37:10,747 --> 01:37:17,747
+By using properties of determinant also, you can change the ord row, scalar.
+
+502
+01:37:17,747 --> 01:37:21,747
+You can write scalar in any order in the cross product.
+
+503
+01:37:21,747 --> 01:37:28,747
+Okay, result will be same. This is because of the properties of determinant also.
+
+504
+01:37:28,747 --> 01:37:40,747
+And cross product has left distributive law or the vector addition and vector subtraction.
+
+505
+01:37:40,747 --> 01:37:52,747
+Also, we can use determinant properties to compute or prove this property.
+
+506
+01:37:52,747 --> 01:38:00,747
+That we have determinant with the components IJK.
+
+507
+01:38:00,747 --> 01:38:04,747
+This is just the definition of the cross product.
+
+508
+01:38:04,747 --> 01:38:08,747
+Here we have U1, U2, U3.
+
+509
+01:38:08,747 --> 01:38:25,747
+And here we have V1 plus or minus W1, V2 plus or minus W2 and V3 plus or minus W3.
+
+510
+01:38:25,747 --> 01:38:32,747
+Just take Laplace expansion along the first column and compute all these determinants.
+
+511
+01:38:32,747 --> 01:38:40,747
+You will get U cross V plus or minus U cross W.
+
+512
+01:38:40,747 --> 01:38:44,747
+Okay, just use definition in order to prove this property.
+
+513
+01:38:47,796 --> 01:38:56,195
+ve krosproduk, krosproduk, yöntemler, yöntemler, vektör, aditör vektör, aditör vektör, aditör vektör.
+
+514
+01:39:07,539 --> 01:39:20,739
+The five property known as mixed product, all the vectors u, v and w, this is equal to.
+
+515
+01:39:20,739 --> 01:39:34,039
+The result of this operation is a scalar, this is a scalar and can be computed by the 3x3 determinant
+
+516
+01:39:34,039 --> 01:39:47,239
+with the first row u, u1, u2, u3, the second row v, v1, v2, v3 and last row w, w1, w2 and w3.
+
+517
+01:39:47,239 --> 01:39:59,039
+Actually this is the volume of parallel pipe formed by u, v and w.
+
+518
+01:39:59,039 --> 01:40:05,039
+And here we have u, v and here we have w.
+
+519
+01:40:14,163 --> 01:40:23,163
+Bu numarın, bu numarın, parallel piper, bu vektör, u, v ve vektör, ok, genetik gibi.
+
+520
+01:40:23,163 --> 01:40:25,623
+Known as, mixed product.
+
+521
+01:40:28,163 --> 01:40:29,344
+Mixed product.
+
+522
+01:40:33,524 --> 01:40:37,524
+ve bu iki-fold kros product.
+
+523
+01:40:37,524 --> 01:40:41,524
+Result also is a vector,
+
+524
+01:40:41,524 --> 01:40:45,524
+because v kros w is a vector in R³.
+
+525
+01:40:45,524 --> 01:40:48,524
+Also u is a vector in R³.
+
+526
+01:40:48,524 --> 01:40:51,524
+The kros product of these two vectors
+
+527
+01:40:51,524 --> 01:40:54,524
+is also a vector in R³.
+
+528
+01:40:54,524 --> 01:40:57,524
+Result is a vector in R³.
+
+529
+01:40:57,524 --> 01:41:02,524
+And also we can compute by this way,
+
+530
+01:41:02,524 --> 01:41:06,524
+u dot, w is a real number,
+
+531
+01:41:06,524 --> 01:41:09,524
+because of the definition of dot product.
+
+532
+01:41:09,524 --> 01:41:13,524
+If you scale a vector by a scalar,
+
+533
+01:41:13,524 --> 01:41:15,524
+result will be a vector.
+
+534
+01:41:15,524 --> 01:41:18,524
+Here also a scalar in real numbers,
+
+535
+01:41:18,524 --> 01:41:21,524
+and we scale w by this scalar.
+
+536
+01:41:21,524 --> 01:41:25,524
+Difference of two vectors also is a vector.
+
+537
+01:41:25,524 --> 01:41:27,524
+Result will be a vector in R³.
+
+538
+01:41:27,524 --> 01:41:31,524
+This property known as Lagrange,
+
+539
+01:41:31,524 --> 01:41:41,524
+Lagrange rule for the cross product.
+
+540
+01:41:41,524 --> 01:41:42,524
+Okay.
+
+541
+01:41:45,971 --> 01:41:47,971
+That one true.
+
+542
+01:41:48,971 --> 01:41:50,971
+Simplify the computation.
+
+543
+01:41:51,971 --> 01:42:01,971
+In order to compute twofold cross product, you just compute a difference O2 that product.
+
+544
+01:42:02,971 --> 01:42:07,971
+Excuse me, difference O2 scalar multiplication.
+
+545
+01:42:16,212 --> 01:42:22,092
+And also, by using cross product, you can find the angle between two vectors.
+
+546
+01:42:26,032 --> 01:42:37,072
+U dot V, excuse me, U cross V is equal to length OU times length OV times the sine between two, these two vectors, this is a real number.
+
+547
+01:42:37,072 --> 01:42:48,792
+In order to get, we know that this operation, the result of this operation is a vector in R3, so we need to multiply by a unit factor,
+
+548
+01:42:49,652 --> 01:42:55,832
+which is perpendicular to both component vectors.
+
+549
+01:42:55,832 --> 01:42:56,432
+Okay.
+
+550
+01:42:56,432 --> 01:43:13,232
+The length of U V is equal to length OU times length OV times the sine between these two vectors.
+
+551
+01:43:13,232 --> 01:43:22,452
+actually, actually, actually, this is the area of parallelograms, actually, this is the area of the parallelogram, here,
+
+552
+01:43:25,452 --> 01:43:27,512
+formed by U and V, okay.
+
+553
+01:43:35,188 --> 01:43:48,408
+Triangle area formula comes from this fact. If you multiply by 1 over 2, you will get the triangle, the area of the triangle with the size u and v.
+
+554
+01:43:48,408 --> 01:44:05,688
+The area of this triangle, let me write here u and v, is equal to 1 over 2 times length of u cross v.
+
+555
+01:44:07,688 --> 01:44:11,167
+This is the side triangle area formula.
+
+556
+01:44:11,167 --> 01:44:34,608
+So, in order to get cross product, this is a vector, we need to, this is the scalar component of the cross product, multiply this scalar by a normalized vector, n, with length 1.
+
+557
+01:44:34,608 --> 01:44:45,188
+Okay, so, and this vector is perpendicular to both components vectors, you know that.
+
+558
+01:44:50,931 --> 01:44:56,992
+U x V is perpendicular to each component factor.
+
+559
+01:45:00,243 --> 01:45:03,563
+So, if you take a normalised vector, you will get your crossfee.
+
+560
+01:45:08,532 --> 01:45:16,471
+If two vectors are parallel, if two vectors are parallel, then we cannot form a parallelogram, so the area is zero.
+
+561
+01:45:17,192 --> 01:45:28,832
+If the angle between two vectors is zero or multiple of pi, then result of vectorial product or cross product will be zero.
+
+562
+01:45:28,832 --> 01:45:29,452
+Okay.
+
+563
+01:45:40,659 --> 01:45:47,779
+Next product is the fifth property orgy, a cross product.
+
+564
+01:45:52,532 --> 01:46:04,391
+Geometriyle, mixed product is the volume of parallel pipe formed by vectors u, v and w.
+
+565
+01:46:04,391 --> 01:46:09,692
+Okay, I have a nice drawing for this fact.
+
+566
+01:46:12,032 --> 01:46:15,271
+Here we have vectors v and w.
+
+567
+01:46:15,271 --> 01:46:22,271
+V cross w is a vector which is perpendicular to u and v.
+
+568
+01:46:22,271 --> 01:46:33,271
+And that we have a third factor between u cross v and w, excuse me, v cross w and w, let's say u.
+
+569
+01:46:33,271 --> 01:46:40,271
+We can form a parallel pipe with the sides u, v and w.
+
+570
+01:46:45,684 --> 01:46:55,123
+The base area of this parallelo pipet is actually equal to length of u x v v cross w.
+
+571
+01:46:55,844 --> 01:47:07,144
+So, you know that by the definition of the cross product of two vectors, the area of this parallelogram, this is the base of parallelo pipet.
+
+572
+01:47:07,144 --> 01:47:14,604
+So, we need a height for this parallelo pipet in order to get the volume of parallelo pipet.
+
+573
+01:47:14,604 --> 01:47:17,604
+by using a...
+
+574
+01:47:24,307 --> 01:47:37,087
+The height of this parallel pipette is equal to u times, length of u times, length of u times, the projection of u onto v cross w.
+
+575
+01:47:37,087 --> 01:47:50,627
+Okay, u times cosine phi. Okay, so if you multiply this area by the height, we will get the volume of the parallel pipette.
+
+576
+01:47:50,627 --> 01:48:00,087
+This is equal to u dot v cross w. The mixed product of vectors u, v and w. Okay.
+
+577
+01:48:04,051 --> 01:48:17,751
+Çünkü, the height of this parallel pipet, you can also convey this height to here, base area times the height of solid.
+
+578
+01:48:17,751 --> 01:48:29,951
+So, this is equal to length of u times cosine phi.
+
+579
+01:48:41,844 --> 01:48:50,163
+If you have an example for the mixed product, this is actually result of a 3x3 matris.
+
+580
+01:48:51,844 --> 01:48:58,163
+If the result is zero, then any two vectors are parallel.
+
+581
+01:49:01,619 --> 01:49:04,399
+If the result is non-zero, then we have a parallel pi.
+
+582
+01:49:15,380 --> 01:49:22,359
+Mixed product also is a property of cross product, a special case of cross product.
+
+583
+01:49:23,359 --> 01:49:35,539
+And by using Lagrange acuity, we can compute this mixed product depending on cross product and vector substraction.
+
+584
+01:49:35,539 --> 01:49:39,319
+That we have three vectors, U, V and W in R-tube.
+
+585
+01:49:40,900 --> 01:49:43,600
+That we have four vectors in R-tube.
+
+586
+01:49:43,600 --> 01:49:44,859
+Thank you.
+
+587
+01:49:49,684 --> 01:50:12,484
+Sorry, this is the mixed product. I consider two-fold cross product. This is a mixed product. Because of the properties of determinant, also we can compute mixed product in different ways.
+
+588
+01:50:12,484 --> 01:50:38,184
+So if you do swaps, two-two swaps in each case, we will get the same determinant. So for the first case, we have u1, u2, u3, v1, v2, v3 and w1, w2 and w3.
+
+589
+01:50:38,184 --> 01:50:56,104
+This determinant will be equal to, if you replace first and last rows and then last and second row, you will get this determinant, w1, w2 and w3.
+
+590
+01:50:56,104 --> 01:51:15,864
+Here u1, u2, u3 and v1, v2, v3. We first replace first and last row, then we replace second and we swap second and last row in order to get this determinant.
+
+591
+01:51:15,864 --> 01:51:25,304
+Also, this will be because we did two swaps. This doesn't affect the result of determinant. It will be same as with the previous case.
+
+592
+01:51:25,304 --> 01:51:48,804
+And here if we replace first and last and last and last rows, v1, v2, v3 and then replace last and second row, w1, w2 and w3.
+
+593
+01:51:48,804 --> 01:51:55,804
+Here we have two swaps also.
+
+594
+01:51:55,804 --> 01:52:15,804
+So, you can see that we have two swaps.
+
+595
+01:52:02,644 --> 01:52:14,543
+On number of swaps, resulting negative sign. So, if we did just one swap, then we need to multiply the result of determinant by minus one. Okay.
+
+596
+01:52:17,724 --> 01:52:22,043
+And you can replace the order of scalar in any order.
+
+597
+01:52:28,787 --> 01:52:37,227
+Bu da bu
+
+598
+01:52:37,227 --> 01:52:39,707
+ilk bölümde
+
+599
+01:52:39,707 --> 01:52:43,347
+u1 plus r1, u2 plus r2
+
+600
+01:52:43,347 --> 01:52:45,087
+u3 plus r3
+
+601
+01:52:45,087 --> 01:52:46,987
+So, if you expand along
+
+602
+01:52:46,987 --> 01:52:48,727
+the first row, then you will get
+
+603
+01:52:48,727 --> 01:52:49,627
+right hand side.
+
+604
+01:52:54,899 --> 01:53:17,219
+And if any two vectors in the parallel pipette, in the cross-mixed product, any two vectors in the mixed product are parallel, then result will be zero, because by using parallel vectors, we cannot form a parallelogram, and depending on this fact, a parallel pipette.
+
+605
+01:53:17,219 --> 01:53:28,219
+Our last topic of this week will be two-fold cross-product. This is also a special case of vector product.
+
+606
+01:53:29,899 --> 01:53:38,479
+And by using Lagrange acuity, we can compute this two-fold cross-product.
+
+607
+01:53:47,347 --> 01:54:02,488
+Let's give an example for the twofold cross product. This will be equal to u cross v cross w. Let's look here. Write our vectors here.
+
+608
+01:54:02,488 --> 01:54:28,427
+1, 2, minus 1. U is 1, 2, minus 1. 3 is equal to 2, 3, minus 2, 3, 4. And w is equal to 2, 1, 0.
+
+609
+01:54:31,923 --> 01:54:55,444
+2, 1, 0. We want to compute. First you can cross product V and W, and then cross product obtain new vector by the U. You can use this way, but also you can use large equity to find the cross product of these three vectors.
+
+610
+01:54:55,444 --> 01:55:18,623
+But here we have, okay, U, V, W, the order is important. So first compute U dot W. U dot W will be equal to 1 times 2, 2 times 1, minus 1 times 0 is 4. Okay.
+
+611
+01:55:18,623 --> 01:55:38,524
+I have no errors. I have no errors. 1, 2, 2, 1, 0, minus 2, 3, 4. Okay. And U times V, U dot V, U dot V will be U dot V,
+
+612
+01:55:38,524 --> 01:56:07,703
+minus 2, 2, 2, 3, 2, 2, 2, 3, 4. Minus 8, 2, 3, 4. Minus 8, 12, and 16.
+
+613
+01:56:08,524 --> 01:56:11,264
+Okay.
+
+614
+01:56:24,500 --> 01:56:30,659
+Bu, bu week'sa bu kursa.
+
+615
+01:56:30,659 --> 01:56:35,699
+Bu, next week, a publica bir günler.
+
+616
+01:56:35,699 --> 01:56:43,699
+Ayrıca, aylıklarınız için, aylıklarınız için,
+
+617
+01:56:43,699 --> 01:56:51,060
+ve sonra, hafta bir günler.
+
+618
+01:56:51,060 --> 01:56:53,060
+Okay, bye bye.

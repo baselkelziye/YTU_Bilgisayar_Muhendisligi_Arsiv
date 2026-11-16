@@ -1,0 +1,3675 @@
+1
+00:11:21,812 --> 00:11:25,451
+Hi everyone, good morning. Can you hear me?
+
+2
+00:11:34,451 --> 00:11:39,611
+Evet, şimdi, 4th lesson of this semester,
+
+3
+00:11:39,611 --> 00:11:41,292
+we will introduce,
+
+4
+00:11:41,292 --> 00:11:45,971
+we will talk about determinant function O-square matrices.
+
+5
+00:11:48,971 --> 00:11:51,572
+Actually, we will give a convenient way
+
+6
+00:11:51,572 --> 00:11:54,412
+to compute the determinant O-square matrices,
+
+7
+00:11:54,412 --> 00:11:56,812
+which is called Laplace Expansion.
+
+8
+00:11:58,491 --> 00:12:01,572
+First, we give the Laplace Expansion.
+
+9
+00:12:01,572 --> 00:12:04,451
+And then, in order to generalize this concept,
+
+10
+00:12:04,451 --> 00:12:08,451
+we will give some parameters related to square matrices,
+
+11
+00:12:08,451 --> 00:12:09,892
+minors and cofactors,
+
+12
+00:12:09,892 --> 00:12:14,011
+and then we will complete our course
+
+13
+00:12:14,011 --> 00:12:20,692
+with the properties of the determinant O-square matrices.
+
+14
+00:12:20,692 --> 00:12:24,371
+Okay, but before giving the Laplace Expansion,
+
+15
+00:12:24,371 --> 00:12:27,572
+I want to talk about algebraic definition
+
+16
+00:12:27,572 --> 00:12:29,812
+of determinant function.
+
+17
+00:12:29,812 --> 00:12:34,011
+What is determinant O-square matrices?
+
+18
+00:12:34,011 --> 00:12:35,692
+Okay.
+
+19
+00:12:35,692 --> 00:12:39,052
+Determinant is a function denoted by,
+
+20
+00:12:39,052 --> 00:12:42,692
+did A, let A be a...
+
+21
+00:12:44,692 --> 00:12:48,652
+First, let A be a M-by-N-square matrix,
+
+22
+00:12:48,652 --> 00:12:51,532
+with the entries A sub ij,
+
+23
+00:12:51,532 --> 00:12:55,652
+and M-by-N-matrix in the set of all square matrices.
+
+24
+00:12:55,652 --> 00:12:56,851
+And then, we will give the matrix A sub ij,
+
+25
+00:12:56,851 --> 00:13:00,851
+and M-by-N-matrix in the set of all square matrices.
+
+26
+00:13:00,851 --> 00:13:21,052
+And then, we will give the matrix A sub ij.
+
+27
+00:13:04,628 --> 00:13:19,868
+with real entries. Determinant function is denoted by dit a, or absolute value a, between two vertical bars a.
+
+28
+00:13:23,860 --> 00:13:25,860
+is a function from
+
+29
+00:13:28,820 --> 00:13:43,680
+n sub n by n or, two real numbers. You can replace r with any field, finite field, rational, set of rational numbers, or set of complex numbers.
+
+30
+00:13:43,680 --> 00:13:55,260
+But here we just consider a special case. And computed as, let's write detail, and use the first notation.
+
+31
+00:14:00,436 --> 00:14:12,436
+Take a sigma in S sub n. S n is a permutation group of all permutation over the set of indices set from 1 to n.
+
+32
+00:14:14,436 --> 00:14:20,436
+A, 1, sigma 1.
+
+33
+00:14:32,916 --> 00:14:55,056
+A2, sigma2, until A sub n, sigma of n. Okay. This is a very useless definition to compute determinant of a square matrix, but the Laplace expansion based on this definition.
+
+34
+00:14:55,056 --> 00:15:07,096
+We need to, in order to compute the determinant of a square matrix, we need to compute all n factors with the assigning sign.
+
+35
+00:15:07,096 --> 00:15:19,656
+Okay. Here, I will give some examples for S sub n. Let, we have in this index set, I sub 2.
+
+36
+00:15:24,500 --> 00:15:44,500
+We will confuse with identity matrix. Let me write here B sub 2. B sub 2. It's the set of two integers, 1, 2. The permutation over this set just...
+
+37
+00:15:52,083 --> 00:15:54,083
+S sub 2.
+
+38
+00:15:54,083 --> 00:15:57,083
+1, 2 and 2, 1.
+
+39
+00:15:57,083 --> 00:16:01,083
+Ok, we just have two permutations over this set.
+
+40
+00:16:01,083 --> 00:16:05,083
+I need to put here sin sigma.
+
+41
+00:16:05,083 --> 00:16:07,083
+Sin sigma, ok.
+
+42
+00:16:07,083 --> 00:16:09,083
+Sin sigma.
+
+43
+00:16:09,083 --> 00:16:14,083
+We will define a concept related to a permutation which we call inversion.
+
+44
+00:16:14,083 --> 00:16:22,083
+If a permutation contains all number of inversions, then the sign of this permutation is negative.
+
+45
+00:16:22,083 --> 00:16:34,083
+But if any permutation contains even number of inversions, then the sign of this permutation is positive.
+
+46
+00:16:34,083 --> 00:16:42,083
+Ok, here we have two permutations just as to the set of permutation or the set B2.
+
+47
+00:16:42,083 --> 00:16:58,083
+And an inversion, inversion, uh, occurred in any permutation if a bigger number followed by a smaller number.
+
+48
+00:16:58,083 --> 00:17:03,083
+If a larger number followed by a smaller number.
+
+49
+00:17:03,083 --> 00:17:11,083
+Here there is no inversions because we have one and two is smaller, excuse me, bigger than one.
+
+50
+00:17:11,083 --> 00:17:15,083
+So in first permutation we have no inversions.
+
+51
+00:17:15,083 --> 00:17:24,083
+But in the second one we have one inversion because the first, in the first place we have two and, uh, this is followed by one.
+
+52
+00:17:24,083 --> 00:17:30,083
+So, uh, the smaller, uh, follow the larger number.
+
+53
+00:17:30,083 --> 00:17:31,083
+Here we have one inversion.
+
+54
+00:17:31,083 --> 00:17:39,083
+So the sign of, the sign of this permutation, that's right, two, one, is minus one.
+
+55
+00:17:39,083 --> 00:17:45,083
+But the sign of this permutation, one, two, is one.
+
+56
+00:17:45,083 --> 00:17:46,083
+Okay.
+
+57
+00:17:46,083 --> 00:17:57,083
+In order to compute a determinant of a two by two matrix, let's write here A, a two by two matrix.
+
+58
+00:17:57,083 --> 00:18:04,083
+A one one, a one, a one two, a two one and a two two.
+
+59
+00:18:04,083 --> 00:18:05,083
+And the determinant of a.
+
+60
+00:18:05,083 --> 00:18:28,083
+Determinant of a.
+
+61
+00:18:11,476 --> 00:18:23,756
+Defined by sigma in s sub 2, let's write this element as sigma 1 and this as sigma 2.
+
+62
+00:18:24,756 --> 00:18:36,156
+Sine sigma a1 sigma 1 times a sub 2 sigma 2.
+
+63
+00:18:36,156 --> 00:18:54,476
+And this can be written as, let's take sigma 1, the sine of sigma 1 is 1, 1 times a sub 1, a sub 1 sigma 1.
+
+64
+00:19:19,380 --> 00:19:49,380
+S1, S1, S1, S1, S2, S
+
+65
+00:19:49,380 --> 00:20:05,640
+So here we have A1, A1, A1, because in the Sigma 1, Sigma 1, Max 1, 2, 1 and 2, 2, 2.
+
+66
+00:20:05,640 --> 00:20:10,060
+This is the identity permutation in the Sigma 1.
+
+67
+00:20:10,160 --> 00:20:16,560
+We have Sigma 1 is equal to 1 because instead of 1, we have 1 again.
+
+68
+00:20:16,560 --> 00:20:17,820
+There is no permutation.
+
+69
+00:20:18,240 --> 00:20:24,380
+This is an identity permutation because we take the permutations of the set B2.
+
+70
+00:20:25,140 --> 00:20:30,560
+In Sigma 1 case, we just put the elements with the given order.
+
+71
+00:20:30,820 --> 00:20:34,420
+This is the same order with the element of set B.
+
+72
+00:20:34,820 --> 00:20:41,880
+So this permutation is identity permutation as maps 1, 2, 1 and 2, 2, 2.
+
+73
+00:20:41,880 --> 00:20:51,220
+A1, 1 times, here we have A1 times, excuse me, A sub 1, sigma sub 1, O1.
+
+74
+00:20:51,340 --> 00:20:57,880
+Sigma sub 1, O1 is 1 times A2, A sub 2 times sigma sub 1, O2.
+
+75
+00:20:57,880 --> 00:21:04,340
+And also sigma sub 2, O2, O2, O2, here we have again 2.
+
+76
+00:21:05,560 --> 00:21:15,060
+Minus A sub 1, sigma sub 2, O1 in the second permutation.
+
+77
+00:21:15,600 --> 00:21:17,040
+Instead of 1, we have 2.
+
+78
+00:21:17,160 --> 00:21:21,800
+This means that sigma 2 maps 1, 2, 2.
+
+79
+00:21:21,800 --> 00:21:29,580
+So we need to put 2 instead of sigma sub 2, O1.
+
+80
+00:21:29,880 --> 00:21:33,560
+Here we have 2 times A sub 2.
+
+81
+00:21:33,940 --> 00:21:38,940
+Sigma sub 2, O2 is 1 because instead of 2, we have 1.
+
+82
+00:21:40,180 --> 00:21:45,360
+This is the determinant of a 2 by 2 square matrix.
+
+83
+00:21:46,640 --> 00:21:47,680
+Any question?
+
+84
+00:21:47,680 --> 00:21:55,260
+Let's do the same example for a 3 by 3 case.
+
+85
+00:22:01,076 --> 00:22:23,556
+...that we have A as a 3x3 square matrix with the given entries A sub 1, 1, A12, A13, A21, A22, A23, A31, A32 and A sub 33.
+
+86
+00:22:23,556 --> 00:22:36,076
+Okay, this is a 3x3 square matrix. So we need B sub 3, the set of elements, integers from 1 to 3.
+
+87
+00:22:37,855 --> 00:22:44,895
+And the permutation of this set, the permutation of this set, S sub 3.
+
+88
+00:22:44,895 --> 00:22:52,395
+The first element is identity permutation. Leave each element in their own place.
+
+89
+00:22:53,216 --> 00:22:56,195
+1, 2, 3. This is our first permutation.
+
+90
+00:22:56,895 --> 00:23:01,375
+Second one, 1 replace a place of 2 and 3.
+
+91
+00:23:02,675 --> 00:23:03,796
+1, 3, 2.
+
+92
+00:23:04,675 --> 00:23:09,635
+And put in the first place 2. So you have 2, 1, 3.
+
+93
+00:23:09,635 --> 00:23:17,536
+We have 2 choices for this permutation and replace the place of 1 and 3, 2, 3, 1.
+
+94
+00:23:19,895 --> 00:23:22,635
+We have 2 more permutations for this set.
+
+95
+00:23:23,135 --> 00:23:29,355
+In the first place, we have 3 and 1, 2, 3, 2, 1.
+
+96
+00:23:29,355 --> 00:23:36,915
+In total, we have 3, excuse me, 6 permutations for the set of integers.
+
+97
+00:23:37,236 --> 00:23:39,615
+Excuse me, the finite set of 3 elements.
+
+98
+00:23:40,576 --> 00:23:46,155
+So in general, S n has n factorial elements.
+
+99
+00:23:46,456 --> 00:23:53,435
+Okay, if you put n elements in a set, then the permutation of this set,
+
+100
+00:23:53,435 --> 00:23:58,796
+the cardinality of the permutation of this set is n factorial.
+
+101
+00:23:59,796 --> 00:24:03,415
+So a determinant of A, let's write the second,
+
+102
+00:24:04,836 --> 00:24:09,096
+let's use the second annotation for this,
+
+103
+00:24:10,776 --> 00:24:14,496
+will be sigma,
+
+104
+00:24:14,496 --> 00:24:18,756
+sigma, capital sigma,
+
+105
+00:24:18,756 --> 00:24:23,316
+in S3,
+
+106
+00:24:24,695 --> 00:24:25,236
+sine,
+
+107
+00:24:26,615 --> 00:24:27,976
+sigma times
+
+108
+00:24:27,976 --> 00:24:29,675
+A1,
+
+109
+00:24:30,675 --> 00:24:31,316
+sigma1,
+
+110
+00:24:32,635 --> 00:24:33,296
+A2,
+
+111
+00:24:34,096 --> 00:24:34,736
+sigma2,
+
+112
+00:24:36,036 --> 00:24:36,736
+A3,
+
+113
+00:24:37,836 --> 00:24:38,395
+sigma3.
+
+114
+00:24:38,395 --> 00:24:39,776
+Okay, we need to
+
+115
+00:24:39,776 --> 00:24:42,036
+compute all 3
+
+116
+00:24:42,036 --> 00:24:43,895
+factors,
+
+117
+00:24:44,615 --> 00:24:46,016
+3 products
+
+118
+00:24:46,016 --> 00:24:48,635
+for each permutation.
+
+119
+00:24:48,836 --> 00:24:50,355
+So at the end,
+
+120
+00:24:50,496 --> 00:24:51,655
+we will have 6
+
+121
+00:24:51,655 --> 00:24:54,655
+3 products in this summation.
+
+122
+00:24:58,420 --> 00:25:00,940
+Let me write all these three products.
+
+123
+00:25:03,740 --> 00:25:14,480
+Here we have sigma 1, sigma 2, sigma 3, sigma 4, sigma 5, and sigma 6.
+
+124
+00:25:15,700 --> 00:25:19,779
+For the sigma 1, I will omit sigma notation.
+
+125
+00:25:19,779 --> 00:25:28,360
+The sine of sigma 1 is 1, because there is no inversion in the first permutation.
+
+126
+00:25:29,180 --> 00:25:30,080
+1, 2, 3.
+
+127
+00:25:30,440 --> 00:25:35,460
+There is no any larger number which followed by a smaller one.
+
+128
+00:25:35,460 --> 00:25:38,860
+Okay, so in the first permutation, we have no inversions.
+
+129
+00:25:39,000 --> 00:25:39,800
+Zero inversion.
+
+130
+00:25:40,000 --> 00:25:40,940
+Zero is even.
+
+131
+00:25:41,380 --> 00:25:43,060
+The sine of sigma 1.
+
+132
+00:25:44,080 --> 00:25:45,000
+Let me write here.
+
+133
+00:25:45,120 --> 00:25:46,200
+Sine of sigma 1.
+
+134
+00:25:55,124 --> 00:25:56,844
+Sigma 1 is just 1.
+
+135
+00:25:57,923 --> 00:26:04,963
+For the second permutation, 1 is the smallest element in the permutation.
+
+136
+00:26:04,963 --> 00:26:08,024
+So for the first element, we have no inversions.
+
+137
+00:26:08,183 --> 00:26:11,524
+But in the second place, 3 followed by 2.
+
+138
+00:26:11,864 --> 00:26:15,004
+The larger is followed by smaller 1.
+
+139
+00:26:15,223 --> 00:26:18,784
+We have 1 inversion in the second permutation.
+
+140
+00:26:19,423 --> 00:26:21,544
+And all number of inversions.
+
+141
+00:26:21,544 --> 00:26:27,364
+So the sine of Sigma 2 is minus 1.
+
+142
+00:26:27,884 --> 00:26:30,244
+Because it contains 1 inversion.
+
+143
+00:26:30,983 --> 00:26:34,524
+For the Sigma 3, that's right here.
+
+144
+00:26:34,923 --> 00:26:38,144
+Sine Sigma 3.
+
+145
+00:26:39,683 --> 00:26:43,423
+First 2 is followed by 1.
+
+146
+00:26:43,923 --> 00:26:46,223
+Larger is followed by smaller.
+
+147
+00:26:46,744 --> 00:26:48,683
+Here we have 1 inversion.
+
+148
+00:26:48,683 --> 00:26:54,264
+And also, 2 followed by 3.
+
+149
+00:26:54,604 --> 00:26:56,104
+This is the second inversion.
+
+150
+00:26:58,463 --> 00:26:59,943
+Excuse me.
+
+151
+00:27:00,443 --> 00:27:03,104
+Just 2 is followed by 1.
+
+152
+00:27:03,943 --> 00:27:05,804
+Larger is followed by smaller.
+
+153
+00:27:06,223 --> 00:27:09,384
+We have first inversion and the other inversion.
+
+154
+00:27:09,384 --> 00:27:12,403
+One is followed by 3.
+
+155
+00:27:12,403 --> 00:27:13,403
+This is the...
+
+156
+00:27:15,604 --> 00:27:19,264
+Let me check again.
+
+157
+00:27:20,064 --> 00:27:22,963
+Larger need to follow by smaller.
+
+158
+00:27:24,144 --> 00:27:26,463
+Here we have 1 inversion.
+
+159
+00:27:27,663 --> 00:27:30,104
+And there is no other inversion.
+
+160
+00:27:30,284 --> 00:27:31,844
+So we just have 1 inversion.
+
+161
+00:27:31,844 --> 00:27:32,624
+Okay.
+
+162
+00:27:33,784 --> 00:27:37,203
+The sine of this permutation is also minus 1.
+
+163
+00:27:37,384 --> 00:27:39,544
+Because we just have 1 inversion.
+
+164
+00:27:39,764 --> 00:27:43,304
+2 is followed by 1.
+
+165
+00:27:43,304 --> 00:27:43,903
+And there is no other inversion.
+
+166
+00:27:43,903 --> 00:28:04,644
+Let me check again.
+
+167
+00:27:47,188 --> 00:27:58,068
+For the sigma 4, let's find the sin of sigma 4.
+
+168
+00:28:00,708 --> 00:28:03,068
+2 is followed by 1.
+
+169
+00:28:03,928 --> 00:28:07,748
+This is 1 inversion and 3 is followed by 1 also.
+
+170
+00:28:07,748 --> 00:28:11,928
+This is the second inversion, even number of inversions.
+
+171
+00:28:12,307 --> 00:28:16,948
+So the sin of this computation is 1.
+
+172
+00:28:17,188 --> 00:28:18,307
+It's positive.
+
+173
+00:28:21,940 --> 00:28:25,140
+Let me write it positive negative, not 1 minus 1.
+
+174
+00:28:33,619 --> 00:28:35,619
+bu ne? Bu ne? Bu ne?
+
+175
+00:28:44,819 --> 00:28:50,859
+This is negative and this is positive because in sigma 4 we have two inversions.
+
+176
+00:28:51,179 --> 00:28:59,019
+Let's do the same for the sigma sub 5 and sigma sub 6.
+
+177
+00:28:59,799 --> 00:29:03,559
+Sine sigma sub 5.
+
+178
+00:29:03,899 --> 00:29:08,279
+We need to find the number of inversions in the sigma 5.
+
+179
+00:29:08,279 --> 00:29:16,019
+An inversion is defined as if any larger number is followed by a smaller one.
+
+180
+00:29:16,339 --> 00:29:17,980
+In this case we have one inversion.
+
+181
+00:29:19,379 --> 00:29:25,119
+If a permutation contains odd number of inversions then the sign of this permutation is negative.
+
+182
+00:29:25,119 --> 00:29:33,720
+And if a permutation contains even number of inversions then the sign of this permutation is positive.
+
+183
+00:29:33,720 --> 00:29:39,179
+So in the let's focus on the sigma sub 5.
+
+184
+00:29:39,619 --> 00:29:42,419
+3 is followed by 1 and also 2.
+
+185
+00:29:43,119 --> 00:29:45,519
+Here we have two inversions.
+
+186
+00:29:45,519 --> 00:29:46,399
+Okay.
+
+187
+00:29:48,439 --> 00:29:56,819
+So the sign of this permutation is just positive because we have two inversions.
+
+188
+00:29:57,059 --> 00:29:58,980
+Even number of inversions.
+
+189
+00:30:02,579 --> 00:30:17,339
+And the last permutation, sigma sub 6, 3 is followed by 2, and 3 is followed by 1.
+
+190
+00:30:18,299 --> 00:30:31,359
+We have two inversions for 3, and one inversion, one more inversion for 2, because 2 is followed by 1, and the sigma 6 contains 3 inversions, even number of inversions.
+
+191
+00:30:31,359 --> 00:30:34,960
+So, the sign of this permutation is negative also.
+
+192
+00:30:35,240 --> 00:30:44,460
+Let's write all the three products in the determinant of A, a 3 by 3 square matrix.
+
+193
+00:30:45,579 --> 00:30:54,599
+For sigma 1, there is no inversions, so the sign will be positive, and sigma 1 maps each element to itself.
+
+194
+00:30:54,599 --> 00:31:01,919
+Okay, A11 times A11 times A22 times A33.
+
+195
+00:31:02,240 --> 00:31:04,159
+This is our first three product.
+
+196
+00:31:05,000 --> 00:31:08,099
+For the second one, the sign is negative.
+
+197
+00:31:08,639 --> 00:31:16,839
+You need to put here a minus, and let me write here A1, A2,
+
+198
+00:31:16,839 --> 00:31:20,599
+and A3.
+
+199
+00:31:26,228 --> 00:31:56,228
+SIGMA2'nin 1'invariantı ile SIGMA2'nin 1'invariantı ile SIGMA2'nin 1'invariantı ile SIGMA2'nin 1'invariantı ile SIGMA2'nin 1'invariantı ile SIGMA2'nin 1'invariantı ile SIGMA2'nin 1'invariantı ile SIGMA2'nin 1'invariantı ile SIGMA2'nin 1'invariantı ile SIGMA2'nin 1'invariantı ile SIGMA2'nin 1'invariantı ile SIGMA2'nin 1'invariantı ile SIGMA2'nin 1'invariantı ile SIGMA2'nin 1'invariantı ile SIGMA2'nin 1'invariantı ile SIGMA2'nin 1'invariantı
+
+200
+00:31:56,228 --> 00:32:26,228
+SIGMA2'in 1'invariantı ile SIGMA2'in 1'invariantı ile SIGMA2'in 1'invariantı ile SIGMA2'in 1'invariantı ile SIGMA2'in 1'invariantı ile SIGMA2'in 1'invariantı ile SIGMA2'in 1'invariantı ile SIGMA2'in 1'invariantı ile SIGMA2'in 1'invariantı ile SIGMA2'in 1'invariantı ile SIGMA2'in 1'invariantı ile SIGMA2'in 1'invariantı ile SIGMA2'invariantı ile SIGMA2'invariantı ile SIGMA2'invariantı ile SIGMA2'invariantı ile SIGMA2'invariant
+
+201
+00:32:26,228 --> 00:32:56,228
+SIGMA4'in 1'invariantı ile SIGMA2'in 1'invariantı ile SIGMA2'in 1'invariantı ile SIGMA2'in 1'invariantı ile SIGMA2'in 2'invariantı ile SIGMA2'in 2'invariantı ile SIGMA2'in 2'invariantı ile SIGMA2'in 2'invariantı ile SIGMA2'in 2'invariantı ile SIGMA2'in 2'invariantı ile SIGMA2'in 2'invariantı ile SIGMA2'in 2'invariantı ile SIGMA2'in 2'invariantı ile SIGMA2'in 2'invariantı ile SIGMA2'in 2'invariantı ile SIGMA2'in 2'invari
+
+202
+00:32:56,228 --> 00:33:26,228
+SIGMA5'in 2'invariantı ile SIGMA2'in 2'invariantı ile SIGMA2'in 2'invariantı ile SIGMA2'in 2'invariantı ile SIGMA2'in 2'invariantı ile SIGMA2'in 2'invariantı ile SIGMA2'in 2'invariantı ile SIGMA2'in 2'invariantı ile SIGMA2'in 2'invariantı ile SIGMA2'in 2'invariantı ile SIGMA2'in 2'invariantı ile SIGMA2'in 2'invariantı ile SIGMA2'in 2'invariantı ile SIGMA2'in 2'invariantı ile SIGMA2'in 2'invariantı ile SIGMA2'invariantı ile
+
+203
+00:33:26,228 --> 00:33:56,228
+SIGMA2'in 2'invariantı ile SIGMA2'in 2'invariantı ile SIGMA2'in 2'invariantı ile SIGMA2'in 2'invariantı ile SIGMA2'in 2'invariantı ile SIGMA2'in 2'invariantı ile SIGMA2'in 2'invariantı ile SIGMA2'in 2'invariantı ile SIGMA2'in 2'invariantı ile SIGMA2'in 2'invariantı ile SIGMA2'in 2'invariantı ile SIGMA2'in 2'invariantı ile SIGMA2'invariantı ile SIGMA2'invariantı ile SIGMA2'invariantı ile SIGMA2'invariantı ile SIGMA2'invariant
+
+204
+00:33:56,228 --> 00:35:23,048
+SIGMA2'invariantı ile SIGMA2'invariantı ile SIGMA2'invariantı ile SIGMA2'invariantı ile SIGMA2'invariantı ile SIGMA2'invariantı ile SIGMA2'invariantı ile SIGMA2'invariantı ile SIGMA2'invariantı ile SIGMA2'invariantı ile SIGMA2'invariantı ile SIGMA2'invariantı ile SIGMA2'invariantı ile SIGMA2'invariantı ile SIGMA2'invariantı ile SIGMA2'invariantı ile SIGMA2'invariantı ile SIGMA2'invariantı ile SIGMA2'invariantı ile SIGMA2'invariantı ile S
+
+205
+00:35:25,012 --> 00:35:30,012
+We have another way, we have a good way. First I...
+
+206
+00:35:33,268 --> 00:35:36,947
+Evet, [öğrenci], Laplace expansion.
+
+207
+00:35:36,947 --> 00:35:43,867
+No, I will give the second method to compute determinant of a square matrix.
+
+208
+00:35:48,275 --> 00:35:52,975
+Let's give this new method, which is called Laplace.
+
+209
+00:35:58,835 --> 00:36:00,835
+Expansion.
+
+210
+00:36:00,835 --> 00:36:02,835
+Ok.
+
+211
+00:36:05,907 --> 00:36:08,067
+Let me have a square matrix.
+
+212
+00:36:08,627 --> 00:36:08,768
+Okay.
+
+213
+00:36:10,487 --> 00:36:11,768
+Of order 1.
+
+214
+00:36:13,107 --> 00:36:14,067
+This is a constant.
+
+215
+00:36:14,827 --> 00:36:19,427
+So the determinant of a constant is itself.
+
+216
+00:36:20,768 --> 00:36:22,527
+This is our first step.
+
+217
+00:36:24,748 --> 00:36:31,367
+For a 2 by 2 matrix, for a 2 by 2 matrix, the determinant function is defined as
+
+218
+00:36:31,367 --> 00:36:39,527
+we multiply elements on the main diagonal and we subtract the elements on the anti-diagonal.
+
+219
+00:36:39,627 --> 00:36:43,807
+A1 1 times A2 2 minus A1 2 times A2 1.
+
+220
+00:36:43,807 --> 00:36:51,807
+This is the determinant of a 2 by 2 matrix for the Laplace expansion.
+
+221
+00:36:52,047 --> 00:36:52,127
+Okay.
+
+222
+00:36:52,547 --> 00:37:01,087
+For 3 by 3, a 3 by 3 matrix, we have already known the determinant of a 2 by 2 matrix.
+
+223
+00:37:01,367 --> 00:37:06,127
+Just multiply elements on the main diagonal and subtract the elements,
+
+224
+00:37:06,847 --> 00:37:10,627
+the multiplication of the elements on the anti-diagonal.
+
+225
+00:37:11,347 --> 00:37:11,607
+Okay.
+
+226
+00:37:12,367 --> 00:37:18,847
+Depending on this fact, we will define determinant of a 3 by 3 matrix.
+
+227
+00:37:19,847 --> 00:37:22,188
+We will expand along the first row.
+
+228
+00:37:22,607 --> 00:37:22,927
+Okay.
+
+229
+00:37:23,288 --> 00:37:24,367
+Along the first row.
+
+230
+00:37:24,367 --> 00:37:27,407
+Just close up first row.
+
+231
+00:37:28,547 --> 00:37:30,547
+And first column.
+
+232
+00:37:31,168 --> 00:37:34,228
+At the intersection, you will have A1 1.
+
+233
+00:37:34,887 --> 00:37:35,768
+A1 1.
+
+234
+00:37:36,087 --> 00:37:37,387
+Here we have A1 1.
+
+235
+00:37:37,387 --> 00:37:41,807
+times the remaining part determinant of the remaining part.
+
+236
+00:37:42,067 --> 00:37:45,248
+Here we have a 2 by 2 square matrix.
+
+237
+00:37:45,827 --> 00:37:49,507
+I already know the determinant of a 2 by 2 matrix.
+
+238
+00:37:49,668 --> 00:37:58,327
+Just multiply elements on the main diagonal and subtract multiplication of the elements on the anti-diagonal.
+
+239
+00:37:58,327 --> 00:37:59,327
+A1 1.
+
+240
+00:37:59,327 --> 00:38:00,087
+So, A1 1.
+
+241
+00:38:00,087 --> 00:38:03,708
+1 times the determinant of this matrix.
+
+242
+00:38:04,347 --> 00:38:05,407
+Here we have a minus.
+
+243
+00:38:05,607 --> 00:38:08,587
+This comes from sign of computation.
+
+244
+00:38:08,748 --> 00:38:10,047
+But we just put here.
+
+245
+00:38:11,228 --> 00:38:11,788
+Minus.
+
+246
+00:38:12,288 --> 00:38:16,967
+We will give another way to compute this sign.
+
+247
+00:38:16,967 --> 00:38:21,248
+depending on cofactor all entries.
+
+248
+00:38:21,587 --> 00:38:22,427
+A sub 2.
+
+249
+00:38:22,708 --> 00:38:23,307
+1 2.
+
+250
+00:38:23,887 --> 00:38:24,907
+Depending on this.
+
+251
+00:38:25,387 --> 00:38:29,167
+Actually, this is minus 1 power 1 plus 2.
+
+252
+00:38:29,387 --> 00:38:29,587
+Okay.
+
+253
+00:38:30,728 --> 00:38:36,047
+Here we have sign as minus 1 power 1 plus 1.
+
+254
+00:38:36,208 --> 00:38:36,427
+Okay.
+
+255
+00:38:37,467 --> 00:38:44,067
+And here we have instead of sign minus 1 power 1 plus 3.
+
+256
+00:38:44,447 --> 00:38:46,748
+Because of this fact, this sign is positive.
+
+257
+00:38:46,748 --> 00:38:47,527
+This is negative.
+
+258
+00:38:47,728 --> 00:38:49,127
+This is also positive.
+
+259
+00:38:49,867 --> 00:38:54,127
+For the second part, excuse me, second component of the determinant.
+
+260
+00:38:54,827 --> 00:39:00,027
+Just close up first row and second column.
+
+261
+00:39:00,527 --> 00:39:05,788
+Then you will have, at the intersection, you will have A sub 1 2.
+
+262
+00:39:06,367 --> 00:39:08,307
+Here we have A sub 1 2.
+
+263
+00:39:08,867 --> 00:39:11,447
+And here a negative sign.
+
+264
+00:39:11,447 --> 00:39:15,268
+This sign comes from minus 1 power.
+
+265
+00:39:15,627 --> 00:39:19,607
+The number of indices all element in the intersection.
+
+266
+00:39:20,467 --> 00:39:21,387
+1 plus 2.
+
+267
+00:39:21,647 --> 00:39:23,288
+Because row number is 1.
+
+268
+00:39:23,367 --> 00:39:24,387
+Column number is 2.
+
+269
+00:39:24,527 --> 00:39:25,607
+1 plus 2 is 3.
+
+270
+00:39:25,708 --> 00:39:28,067
+Minus 1 power 3 is minus 1 times.
+
+271
+00:39:28,067 --> 00:39:32,107
+The determinant of remaining 2 by 2 matrix.
+
+272
+00:39:32,587 --> 00:39:35,407
+Here we have four elements.
+
+273
+00:39:36,728 --> 00:39:43,788
+A 2 1 times A sub 3 3 minus A 3 1 times A 2 3.
+
+274
+00:39:43,788 --> 00:39:44,248
+Okay.
+
+275
+00:39:44,708 --> 00:39:55,487
+And for the last component, close up last row and first, excuse me, last column and first row.
+
+276
+00:39:55,487 --> 00:39:58,367
+In the intersection, you will have A sub 1 3.
+
+277
+00:39:58,788 --> 00:39:59,807
+A sub 1 3.
+
+278
+00:39:59,807 --> 00:40:05,907
+So, you will have A sub 1 3.
+
+279
+00:40:00,000 --> 00:40:06,159
+with a positive sign and times the determinant of remaining part.
+
+280
+00:40:06,719 --> 00:40:11,860
+Here we have a 2 by 2 matrix.
+
+281
+00:40:12,280 --> 00:40:17,820
+And by the previous step, we know the determinant of a 2 by 2 square matrix.
+
+282
+00:40:17,820 --> 00:40:46,119
+If you expand all these components, three components, we will have a 1 1 times a 2 2 times a 3 3 minus a 3 2 times a 2 3 minus a 3 1 times a 2 3.
+
+283
+00:40:46,119 --> 00:40:50,380
+And let me write the last component.
+
+284
+00:40:51,159 --> 00:41:01,320
+a 1 3 times a 2 1 times a 3 2 minus a 3 1 times a 2 2.
+
+285
+00:41:01,320 --> 00:41:09,099
+If we expand all these three factors, we will have six trim products.
+
+286
+00:41:09,099 --> 00:41:11,900
+plus a 1 1 a 2 2.
+
+287
+00:41:12,559 --> 00:41:17,679
+I distribute constant over the parentheses.
+
+288
+00:41:17,679 --> 00:41:38,460
+And a sub 3 3 minus a 1 1 a 3 2 a 2 3 minus a 1 2 a 2 1 a 3 3 plus a 1 2 a 3 1 a 2 3.
+
+289
+00:41:38,460 --> 00:41:43,659
+We have two more three products.
+
+290
+00:41:43,659 --> 00:42:00,559
+Plus a 1 3 a 2 1 a 3 2 minus a 1 3 a sub 3 1 and a sub 2 2.
+
+291
+00:42:00,559 --> 00:42:09,400
+We have six three products with three negative and three positive signs.
+
+292
+00:42:09,400 --> 00:42:09,980
+Okay.
+
+293
+00:42:09,980 --> 00:42:13,719
+This is the high 4 6.
+
+294
+00:42:13,719 --> 00:42:18,539
+Let's compare this with our permutation definition.
+
+295
+00:42:18,539 --> 00:42:25,079
+Also, this is the same as with this.
+
+296
+00:42:25,079 --> 00:42:32,699
+Maybe with the different places of the three products.
+
+297
+00:42:32,699 --> 00:42:45,000
+In the each three product, we just use each row number and each column number just once.
+
+298
+00:42:45,000 --> 00:42:46,000
+Okay.
+
+299
+00:42:46,000 --> 00:42:54,679
+Here we just use first row and first column, second row, second.
+
+300
+00:42:54,679 --> 00:42:59,559
+In each row and column, we take just one element.
+
+301
+00:42:59,559 --> 00:43:05,380
+In each three product, we have just one element of each row and each column.
+
+302
+00:43:05,380 --> 00:44:04,380
+Okay.
+
+303
+00:43:58,387 --> 00:44:13,947
+In general, in order to generalize this definition, this algorithm or method, let's define the minor and cofactor of a square matrix.
+
+304
+00:44:14,188 --> 00:44:16,427
+Let me have a square matrix A.
+
+305
+00:44:16,427 --> 00:44:32,887
+Finally, the IJ minor of A is a new determinant of a new matrix which is obtained by A by deleting Ith row and Jth column of A.
+
+306
+00:44:32,887 --> 00:44:42,527
+The determinant of this new matrix is called IJ minor of A and denoted by M sub IJ.
+
+307
+00:44:42,527 --> 00:44:52,847
+Okay. And if we put a sign in front of this new element, this is a real number actually because determinant is a real number.
+
+308
+00:44:53,188 --> 00:44:55,627
+The determinant of a square matrix is a real number.
+
+309
+00:44:55,867 --> 00:45:06,047
+So if we put a sign in front of this minor, we will get cofactor of IJ entry of M.
+
+310
+00:45:06,047 --> 00:45:23,087
+And the cofactor of a matrix corresponding to the entry with the indices IJ is denoted by capital A sub IJ.
+
+311
+00:45:23,087 --> 00:45:28,907
+And we just multiply minor with its sign.
+
+312
+00:45:30,228 --> 00:45:36,407
+Minus one power, the number of row plus the number of column of entry.
+
+313
+00:45:41,907 --> 00:46:01,907
+Let's give you some examples of minors and cofactors. Here we have a matrix, 3x3 square matrix. We just can find the minors of all square matrices and cofactors of all square matrices because these two concepts are related to square matrices.
+
+314
+00:46:01,907 --> 00:46:14,547
+Let's find m sub 2, 2 minor of these matrices. Just close up a sub 2, 2.
+
+315
+00:46:18,579 --> 00:46:26,099
+2nd column and 2nd row of matrix and compute the determinant of remaining part.
+
+316
+00:46:26,699 --> 00:46:30,380
+Here we have 1, 3, 7 and 9.
+
+317
+00:46:31,059 --> 00:46:37,579
+Determinant of this matrix is 1 times 9 minus 3 times 7 is 21.
+
+318
+00:46:38,279 --> 00:46:40,319
+And here we have minus 12.
+
+319
+00:46:40,319 --> 00:46:40,699
+Okay.
+
+320
+00:46:41,719 --> 00:46:45,420
+The minor of M sub 2, 2 is minus 12.
+
+321
+00:46:45,420 --> 00:46:55,920
+And the cofactor of this element, A sub 2, 2 also, is equal to minus 1 power 2 plus 2 times M sub 2, 2.
+
+322
+00:46:56,579 --> 00:47:01,159
+This is also minus 12.
+
+323
+00:47:01,440 --> 00:47:09,360
+Because if the additional number of rows and columns is even, then cofactor is equal to minor.
+
+324
+00:47:09,360 --> 00:47:21,259
+But if the additional row and column number is off, then minor and cofactors have opposite signs.
+
+325
+00:47:21,779 --> 00:47:21,880
+Okay.
+
+326
+00:47:21,880 --> 00:47:27,960
+And here we have another example, M sub 2, 3.
+
+327
+00:47:28,639 --> 00:47:37,119
+Just close up second row and third column in the matrix.
+
+328
+00:47:37,420 --> 00:47:40,779
+Second row and third column.
+
+329
+00:47:40,779 --> 00:47:48,599
+And sub 2, 2, 2, and 7, 8.
+
+330
+00:47:49,599 --> 00:47:52,599
+A 2 by 2 matrix.
+
+331
+00:47:52,699 --> 00:47:54,019
+Determinant of this matrix.
+
+332
+00:47:54,159 --> 00:48:00,219
+1 times 7 minus 2 times 1 times 8 minus 2 times 7.
+
+333
+00:48:00,679 --> 00:48:03,719
+7 minus 14 is just minus 6.
+
+334
+00:48:03,719 --> 00:48:11,519
+But for the cofactor of this element, we have minus 1 power 2 plus 3.
+
+335
+00:48:12,179 --> 00:48:15,279
+Minus 1 power 5 is minus 1.
+
+336
+00:48:15,380 --> 00:48:18,239
+Minus 1 times minus 6 is 6.
+
+337
+00:48:26,036 --> 00:48:45,336
+Now we can give the definition of Laplace expansion, or the algorithm, and algorithm, very convenient way to compute determinant of any square matrix with any order.
+
+338
+00:48:51,059 --> 00:48:55,699
+Now the aim of this algorithm is to compute the determinant of a square matrix.
+
+339
+00:48:55,699 --> 00:48:59,139
+So we need to follow the following steps.
+
+340
+00:48:59,139 --> 00:49:01,619
+First choose any row or column.
+
+341
+00:49:01,619 --> 00:49:10,019
+In our definition for 3x3 case we just pick up first row of the matrix.
+
+342
+00:49:10,019 --> 00:49:14,980
+But you can do this definition for any row or any column.
+
+343
+00:49:14,980 --> 00:49:16,019
+Okay.
+
+344
+00:49:16,019 --> 00:49:20,019
+Just pick up any row and any column in a square matrix.
+
+345
+00:49:20,019 --> 00:49:27,699
+And then compute all cofactors of this row.
+
+346
+00:49:27,699 --> 00:49:37,860
+For each element, each entry in this row or this column, compute a sub ij cofactors of each element.
+
+347
+00:49:37,860 --> 00:49:40,980
+And then compute this summation.
+
+348
+00:49:41,699 --> 00:49:49,860
+Multiply each cofactor with the corresponding entry and adding up all these elements.
+
+349
+00:49:50,019 --> 00:49:51,699
+These new elements.
+
+350
+00:49:51,699 --> 00:49:53,699
+Because cofactor is a real number.
+
+351
+00:49:53,699 --> 00:49:57,699
+A sub ij is also a real number.
+
+352
+00:49:57,699 --> 00:50:01,699
+Multiply a ij with a sub ij.
+
+353
+00:50:01,699 --> 00:50:11,699
+Compute all these n two products and adding up all these products.
+
+354
+00:50:11,699 --> 00:50:13,380
+And then compute the matrix.
+
+355
+00:50:13,380 --> 00:50:19,380
+Let our matrix be a 2x2 square matrix.
+
+356
+00:50:19,380 --> 00:50:25,380
+And compute all these n two products.
+
+357
+00:50:25,380 --> 00:50:29,940
+And summation of these n two products.
+
+358
+00:50:29,940 --> 00:50:33,059
+This will be the determinant of a.
+
+359
+00:50:33,059 --> 00:50:33,299
+And the matrix is the same.
+
+360
+00:50:33,299 --> 00:50:37,139
+We just do for the eighth row of the matrix.
+
+361
+00:50:37,139 --> 00:50:39,059
+You can choose any row or any column.
+
+362
+00:50:39,059 --> 00:50:40,739
+And then compute all these n two products.
+
+363
+00:50:40,739 --> 00:51:06,739
+And compute all these n two products.
+
+364
+00:50:56,563 --> 00:51:08,123
+If you expand your compute determinant by expanding I throw of the matrix,
+
+365
+00:51:08,943 --> 00:51:11,803
+your summation symbol will be in this form.
+
+366
+00:51:11,803 --> 00:51:18,483
+And if you expand along JF column, in this case,
+
+367
+00:51:18,483 --> 00:51:28,023
+notice that the first entry of both entry and its cofactor corresponding cofactor is same.
+
+368
+00:51:28,023 --> 00:51:34,963
+The subscription of both elements are the same.
+
+369
+00:51:35,963 --> 00:51:43,303
+If you multiply a cofactor with an element of different row or column,
+
+370
+00:51:43,483 --> 00:51:45,043
+then result will be zero.
+
+371
+00:51:45,043 --> 00:51:53,463
+Okay, this is another important fact related to cofactors of a row or a column.
+
+372
+00:51:56,463 --> 00:52:02,563
+If I is different from J, then I sub IJ,
+
+373
+00:52:05,364 --> 00:52:11,223
+I sub IK times I sub JK is zero.
+
+374
+00:52:11,963 --> 00:52:14,324
+But here I is different from J.
+
+375
+00:52:14,324 --> 00:52:19,243
+Let's give an example and prove this fact.
+
+376
+00:52:20,563 --> 00:52:23,423
+This is also valid for the columns.
+
+377
+00:52:24,324 --> 00:52:31,623
+If you multiply cofactors of J column with the cofactors of I column,
+
+378
+00:52:31,804 --> 00:52:33,183
+then result will be zero.
+
+379
+00:52:34,804 --> 00:52:37,523
+In the I different from J case.
+
+380
+00:52:37,743 --> 00:52:38,003
+Okay.
+
+381
+00:52:41,331 --> 00:52:46,831
+Let's first prove this fact, that we have a matrix A.
+
+382
+00:52:54,003 --> 00:53:14,703
+A11, A12, A1N, A21, A22, A2N, AN1, AN2, ANN.
+
+383
+00:53:14,703 --> 00:53:26,804
+Another matrix, B. B is obtained from A by adding Ith row OA to the Jth row OA.
+
+384
+00:53:28,943 --> 00:53:40,663
+Let me write here A sub I1, I2, and IN, the Ith row OA.
+
+385
+00:53:40,663 --> 00:53:50,284
+And let me write here Jth row I A sub J1, A sub J2.
+
+386
+00:53:51,183 --> 00:54:02,603
+Here some dots because we omit some rows between Ith and Jth row A sub JN.
+
+387
+00:54:02,603 --> 00:54:12,844
+We obtain B by adding Ith row OA to the Jth row A.
+
+388
+00:54:12,844 --> 00:54:36,864
+A11, A12, A1, and here we have A I1, A I2, A IN, and here we have A J1 plus A I1.
+
+389
+00:54:36,864 --> 00:54:45,764
+Because we're adding Ith row OA to the, we applied an elementary operation to the matrix A.
+
+390
+00:54:45,764 --> 00:54:46,123
+A11, A
+
+391
+00:54:59,891 --> 00:55:14,851
+Let me write the other, some more entries for the jth row. A here we have a, a, a, i, j2, a, i2, and the last entry will be a sub jn plus a sub i n.
+
+392
+00:55:14,851 --> 00:55:27,251
+Okay, last row, a n1, a n2, and a nn. This is the matrix B.
+
+393
+00:55:33,715 --> 00:55:38,255
+In any matrix, we will give a property in any square matrix.
+
+394
+00:55:38,255 --> 00:55:45,215
+If you add any row to the another row, this doesn't affect the result of the determinant of matrix.
+
+395
+00:55:45,655 --> 00:55:48,315
+Okay, this doesn't change the determinant.
+
+396
+00:55:48,855 --> 00:55:56,295
+Determinant of A is equal to determinant of A is equal to determinant of B.
+
+397
+00:55:56,715 --> 00:56:01,735
+Because we obtain B by applying just one elementary operation.
+
+398
+00:56:01,735 --> 00:56:04,596
+So the determinant of A and B is same.
+
+399
+00:56:04,596 --> 00:56:08,355
+We will use this fact to prove this.
+
+400
+00:56:09,695 --> 00:56:22,076
+So we will apply Laplace expansion along the Jth row of B, matrix B.
+
+401
+00:56:22,076 --> 00:56:33,315
+So the cofactors of matrix B will be same as with the cofactors of Jth row of A.
+
+402
+00:56:33,315 --> 00:56:42,956
+Because for A sub J1, you need to close up first column and Jth row.
+
+403
+00:56:43,395 --> 00:56:49,875
+So the remaining elements will be same as with the cofactor of this element.
+
+404
+00:56:49,875 --> 00:56:59,315
+If you close up first column and Jth row also, the remaining element will be obtained.
+
+405
+00:56:59,835 --> 00:57:06,855
+And minus one times A minus one matrix will be same as with the cofactor of A sub J1.
+
+406
+00:57:06,855 --> 00:57:07,175
+Okay.
+
+407
+00:57:07,175 --> 00:57:17,395
+So we will use Jth row of matrix B to compute determinant.
+
+408
+00:57:17,395 --> 00:57:25,956
+This will be equal to K is from one to N.
+
+409
+00:57:25,956 --> 00:57:55,935
+A sub J1.
+
+410
+00:57:33,907 --> 00:57:56,307
+Jk plus A sub ik times capital, let me write here B or A, this will be equal A sub, because B sub jk is equal to A sub jk.
+
+411
+00:57:56,307 --> 00:58:07,067
+Because you obtain B from A, and if you close up any elements in the jth row, you will get same cofactor with A.
+
+412
+00:58:07,067 --> 00:58:14,228
+Okay, let me write here A sub jk.
+
+413
+00:58:16,387 --> 00:58:19,067
+So if you expand...
+
+414
+00:58:23,731 --> 00:58:31,371
+If you expand this product in the summation symbol, you will get two summation symbols.
+
+415
+00:58:31,371 --> 00:58:47,672
+K from 1 to n, a sub jk times a sub jk plus k from 1 to n, a sub ik times a sub jk.
+
+416
+00:58:47,672 --> 00:58:55,371
+By the definition of Laplace equation, we know that this part is determinant of a.
+
+417
+00:58:56,371 --> 00:58:57,672
+Determinant of a.
+
+418
+00:58:58,092 --> 00:59:00,052
+So here we have another part.
+
+419
+00:59:00,871 --> 00:59:08,331
+Determinant of a is equal to determinant of a plus another part, a new part.
+
+420
+00:59:08,592 --> 00:59:11,211
+So this must be zero by the definition.
+
+421
+00:59:11,211 --> 00:59:18,052
+OK. So if you multiply cofactors of.
+
+422
+00:59:19,012 --> 00:59:29,211
+Any row with the constants of a different row and adding up all these two products, result will be zero.
+
+423
+00:59:29,692 --> 00:59:33,152
+This is the same fact is valid for the columns.
+
+424
+00:59:33,152 --> 00:59:39,492
+OK. If you multiply cofactors of any column with the entries of.
+
+425
+00:59:40,692 --> 00:59:42,052
+A different column.
+
+426
+00:59:42,751 --> 00:59:48,092
+Then adding up all these two products, the result will be zero.
+
+427
+00:59:48,851 --> 00:59:49,152
+This.
+
+428
+00:59:50,512 --> 00:59:54,052
+Result is a very important result.
+
+429
+00:59:54,052 --> 01:00:02,431
+We will use these two when we try to find the inverse of a matrix, a square matrix by by determinant.
+
+430
+01:00:02,431 --> 01:00:02,891
+OK.
+
+431
+01:00:03,271 --> 01:00:08,291
+We will by half of the determinant, you can find the inverse of a matrix.
+
+432
+01:00:08,811 --> 01:00:11,552
+Determinant and adjoint of.
+
+433
+01:00:13,552 --> 01:00:18,492
+We will form a new matrix with entries cofactors.
+
+434
+01:00:18,492 --> 01:00:22,411
+This new matrix will be which we call adjoint matrix.
+
+435
+01:00:22,572 --> 01:00:25,052
+So when we use this fact.
+
+436
+01:00:25,251 --> 01:00:25,411
+OK.
+
+437
+01:00:26,791 --> 01:00:29,172
+I just give the proof rule this fact.
+
+438
+01:00:29,692 --> 01:00:32,471
+Let's find the determinant of this matrix.
+
+439
+01:00:38,012 --> 01:00:41,831
+Determinant of a is equal to.
+
+440
+01:00:43,331 --> 01:00:44,512
+Let's use first row.
+
+441
+01:00:44,512 --> 01:00:48,052
+Along.
+
+442
+01:00:48,891 --> 01:00:49,572
+First row.
+
+443
+01:00:54,068 --> 01:00:57,268
+K is from 1 to 3 because n is 3.
+
+444
+01:00:58,168 --> 01:01:02,728
+A sub, we just expand along first row.
+
+445
+01:01:03,068 --> 01:01:07,988
+A sub 1, K times capital A sub 1, K.
+
+446
+01:01:08,148 --> 01:01:14,928
+We need to compute all three cofactors of the first row.
+
+447
+01:01:17,328 --> 01:01:21,148
+A11, the sign is positive.
+
+448
+01:01:21,868 --> 01:01:23,908
+Minus 1 plus 1 plus 1.
+
+449
+01:01:24,068 --> 01:01:30,028
+We close up first column and first row, the determinant of remaining part.
+
+450
+01:01:30,028 --> 01:01:34,768
+We just have this 2 by 2 matrix.
+
+451
+01:01:35,448 --> 01:01:37,968
+2, 1, 2, 3.
+
+452
+01:01:38,648 --> 01:01:41,908
+2 times 3 is 6 minus 2 is 4.
+
+453
+01:01:42,228 --> 01:01:43,688
+Sign is positive because.
+
+454
+01:01:44,388 --> 01:01:47,328
+A12.
+
+455
+01:01:49,448 --> 01:01:52,428
+Just close up second column and first row.
+
+456
+01:01:52,428 --> 01:01:56,748
+First row and second column.
+
+457
+01:01:56,807 --> 01:01:58,668
+Sign will be negative.
+
+458
+01:01:58,807 --> 01:02:02,608
+Minus 1 power 1 plus 2 times.
+
+459
+01:02:03,348 --> 01:02:07,788
+Minus 1, 1, minus 2, 3.
+
+460
+01:02:07,788 --> 01:02:13,568
+Minus 1 times 3 is minus 3.
+
+461
+01:02:13,748 --> 01:02:16,268
+Minus minus 2 times 1.
+
+462
+01:02:16,968 --> 01:02:23,328
+This will be minus 3 plus 2 is minus 1 times minus 1 is 1.
+
+463
+01:02:23,328 --> 01:02:24,108
+Okay.
+
+464
+01:02:24,108 --> 01:02:28,648
+Please check carefully.
+
+465
+01:02:29,848 --> 01:02:31,448
+A sub 1, 3.
+
+466
+01:02:32,248 --> 01:02:33,988
+Sign will be positive.
+
+467
+01:02:34,248 --> 01:02:38,628
+Minus 1 to the power 1 plus 3.
+
+468
+01:02:38,828 --> 01:02:42,928
+Minus 1 power 4 is 1 times.
+
+469
+01:02:42,928 --> 01:02:44,668
+We just close up.
+
+470
+01:02:47,428 --> 01:02:48,968
+Last row and first.
+
+471
+01:02:49,968 --> 01:02:50,668
+Excuse me.
+
+472
+01:02:50,728 --> 01:02:51,988
+Last column and first row.
+
+473
+01:02:53,748 --> 01:03:00,708
+And the remaining 2 by 2 matrix is minus 1, 2, minus 2, 2.
+
+474
+01:03:00,708 --> 01:03:05,488
+Result will be minus 2 plus 4.
+
+475
+01:03:05,588 --> 01:03:09,148
+Minus 2 times 2 is minus 4.
+
+476
+01:03:09,248 --> 01:03:11,168
+And minus minus 4 is plus 4.
+
+477
+01:03:11,288 --> 01:03:14,608
+Plus 4 minus 2 is 2.
+
+478
+01:03:14,868 --> 01:03:15,748
+Sign is positive.
+
+479
+01:03:15,988 --> 01:03:17,148
+So here we have 2.
+
+480
+01:03:17,148 --> 01:03:18,168
+Okay.
+
+481
+01:03:18,428 --> 01:03:20,368
+Let me write determinant.
+
+482
+01:03:20,668 --> 01:03:21,568
+This will be equal.
+
+483
+01:03:24,028 --> 01:03:34,508
+A1, 1 times A1, 1 plus A1, 2 times A1, 2 plus A1, 3 times A1, 3.
+
+484
+01:03:35,848 --> 01:03:40,708
+And this is equal to A1, 1 is 2.
+
+485
+01:03:40,708 --> 01:04:05,578
+2 times A1, 2 plus A1, 2 is 1 times A1, 2 plus A1, 2 plus A1, 2 plus A1, 2 plus A1, 2 plus A1, 2 plus A1, 2 plus A1, 2 plus A1, 2 plus A1, 2 plus A1, 2 plus A1, 2 plus A1, 2 plus A1, 2 plus A1, 2 plus A1, 2 plus A1, 2 plus A1, 2 plus A1, 2 plus A1, 2 plus A1, 2 plus A1, 2 plus A1, 2 plus A1, 2 plus A1, 2 plus A1, 2 plus A1, 2 plus A1, 2 plus A1, 2 plus A1, 2 plus A1, 2 plus A1, 2 plus A1, 2 plus A1, 2 plus A1, 2 plus A1, 2 plus A1, 2 is 1 times A1, 2 plus A1, 2 plus A1, 2 is 1 times A1,
+
+486
+01:04:09,492 --> 01:04:12,492
+We denote cofactors by capital letters.
+
+487
+01:04:17,556 --> 01:04:43,856
+A11, A11 is 2 times, the cofactor of A11 is 4, 2 times 4 plus, A21 is 1 times the cofactor of A12, cofactor of A12 is 1 also, 1 times 1 plus, A sub 1, 3 is 3, 3 times the cofactor of A sub 1, 3 is 2, if you have 2.
+
+488
+01:04:43,856 --> 01:04:55,876
+So, 8 plus 1, 9 plus 6 is 15. The determinant of matrix A is 15. Okay, let's use another row to compute determinant.
+
+489
+01:05:15,827 --> 01:05:25,427
+Let me write here. Let's choose second row of this matrix along second row.
+
+490
+01:05:29,268 --> 01:05:34,807
+Determinant of A will be, this number also must be 15.
+
+491
+01:05:35,807 --> 01:05:42,307
+K from 1 to 3 because we have size of A as 3.
+
+492
+01:05:42,307 --> 01:05:48,188
+A sub 2K times A sub 2K.
+
+493
+01:05:51,527 --> 01:06:04,407
+A 2 1 times A sub 2 1 plus A sub 2 2 times A sub 2 2 plus A sub 2 3 times A sub 2 3.
+
+494
+01:06:05,527 --> 01:06:10,327
+Both the indices of elements and cofactors are the same.
+
+495
+01:06:10,327 --> 01:06:15,608
+Okay, this is an important fact related to Laplace expansion.
+
+496
+01:06:16,768 --> 01:06:21,047
+Let compute cofactors O second row.
+
+497
+01:06:23,547 --> 01:06:31,967
+A 2 1 is equal to just close up first column and second row.
+
+498
+01:06:31,967 --> 01:06:49,128
+A 2 1 is equal to 1.
+
+499
+01:06:41,556 --> 01:06:59,836
+So sine will be negative because minus 1 to the power 2 plus 1 minus 1 power 3 is minus 1 minus 1 3 and 2 3.
+
+500
+01:07:01,836 --> 01:07:09,316
+1 times 3 3 minus 6 minus 3 we have another minus here result will be 3.
+
+501
+01:07:09,316 --> 01:07:21,976
+Okay a 2 2 sign is positive times just close up second column and second row.
+
+502
+01:07:23,356 --> 01:07:26,615
+2 3 minus 2 3.
+
+503
+01:07:26,615 --> 01:07:49,036
+Okay result will be 6 plus 2 times minus 2 times 3 minus 6 6 plus 6 we have another sign minus sign because of the definition of determinant or a 2 by 2 matrix.
+
+504
+01:07:49,036 --> 01:07:51,796
+11 here we have excuse me 12.
+
+505
+01:07:52,376 --> 01:07:52,976
+Okay 12.
+
+506
+01:07:53,755 --> 01:07:56,836
+A sub 2 3 sign is negative.
+
+507
+01:07:57,735 --> 01:08:01,896
+So close up last column and second row.
+
+508
+01:08:01,896 --> 01:08:15,215
+If we have 2 1 and minus 2 2 result will be 4 plus 2 6 minus 6.
+
+509
+01:08:15,215 --> 01:08:44,216
+Thank you.
+
+510
+01:08:19,444 --> 01:08:32,184
+So, let compute the target here. A21 is minus 1, minus 1 times 3, plus A22. Let me raise here.
+
+511
+01:08:36,372 --> 01:08:48,592
+Plus, 2 times, 2 times 12, plus, 1 times, minus 6.
+
+512
+01:08:48,592 --> 01:08:49,712
+Okay.
+
+513
+01:08:54,931 --> 01:09:04,931
+Minus 3, plus 24, minus 6, minus 9, plus 24, 15.
+
+514
+01:09:04,931 --> 01:09:13,931
+This is same as with the determinant along first column, excuse me, first row.
+
+515
+01:09:13,931 --> 01:09:16,931
+Let compute along second column.
+
+516
+01:09:36,532 --> 01:09:40,632
+along, second, cob.
+
+517
+01:09:44,148 --> 01:09:49,828
+Just pick up second column and compute all the cofactors of the second column.
+
+518
+01:09:49,828 --> 01:10:04,387
+In this case, our determinant will be determinant of A is equal to k from 1 to N, A sub k2, because we pick up second column times A sub k2.
+
+519
+01:10:05,448 --> 01:10:11,108
+Second column remains constant over the all products.
+
+520
+01:10:11,108 --> 01:10:13,788
+We just changed the roll number.
+
+521
+01:10:14,688 --> 01:10:32,547
+So, this will be A12 times A12 plus A22 times A22 plus A32 times A32.
+
+522
+01:10:33,047 --> 01:10:36,087
+That compute all these cofactors.
+
+523
+01:10:36,307 --> 01:10:38,847
+A12, A22 and A32.
+
+524
+01:10:43,028 --> 01:10:45,028
+Buraya çıkartalım.
+
+525
+01:11:06,228 --> 01:11:07,988
+K from 1 to 3, [öğrenci].
+
+526
+01:11:18,036 --> 01:11:23,416
+And if k from 1 to, oh, I need to put here 3, okay.
+
+527
+01:11:24,496 --> 01:11:27,996
+A from 1 to 3, because we have 3 rows and 3 columns.
+
+528
+01:11:33,296 --> 01:11:40,775
+A 1, 2 is equal to the sign will be negative times, close up second column and first row.
+
+529
+01:11:41,435 --> 01:11:47,376
+Minus 1, 1, minus 2 and 3, okay.
+
+530
+01:11:48,036 --> 01:11:53,836
+So, minus 3 plus 2, minus 1, minus 1, minus 1 is 1.
+
+531
+01:11:55,155 --> 01:11:58,815
+A sub, 2, 2.
+
+532
+01:11:59,935 --> 01:12:01,235
+Sign is positive.
+
+533
+01:12:02,475 --> 01:12:05,296
+Just close up center of the matrix.
+
+534
+01:12:06,355 --> 01:12:08,615
+Second column and second row.
+
+535
+01:12:10,216 --> 01:12:13,015
+2, 3, minus 2, 3.
+
+536
+01:12:13,015 --> 01:12:20,115
+6 plus 6 is 12, okay.
+
+537
+01:12:22,636 --> 01:12:24,815
+We compute here also, A 2, 2.
+
+538
+01:12:25,475 --> 01:12:28,735
+A, 3, 2.
+
+539
+01:12:29,735 --> 01:12:31,376
+Sign will be negative.
+
+540
+01:12:31,376 --> 01:12:37,975
+Because of minus 1 powers, 3 plus 2 is minus 1 power 5.
+
+541
+01:12:38,536 --> 01:12:40,036
+Is minus 1 times.
+
+542
+01:12:41,256 --> 01:12:42,195
+Close up.
+
+543
+01:12:42,935 --> 01:12:43,676
+Second row.
+
+544
+01:12:44,975 --> 01:12:48,056
+And, excuse me, second column and third row.
+
+545
+01:12:49,756 --> 01:12:53,996
+Here we have 2, 3, minus 1, 1.
+
+546
+01:12:53,996 --> 01:12:54,376
+Okay.
+
+547
+01:12:55,015 --> 01:12:56,435
+So, 2 times 1, 2.
+
+548
+01:12:56,775 --> 01:13:01,515
+Minus minus 1 times 3, plus 3, 5, minus 5.
+
+549
+01:13:01,636 --> 01:13:03,596
+Here we have minus 5.
+
+550
+01:13:05,815 --> 01:13:07,336
+And let's write here.
+
+551
+01:13:07,336 --> 01:13:08,216
+Here we have minus 1, 2.
+
+552
+01:13:08,216 --> 01:13:08,536
+And let's write here.
+
+553
+01:13:08,536 --> 01:13:09,216
+Here we have minus 1, 2.
+
+554
+01:13:09,216 --> 01:13:09,536
+And let's write here.
+
+555
+01:13:09,536 --> 01:13:10,216
+Here we have minus 1, 2.
+
+556
+01:13:10,216 --> 01:13:10,536
+And let's write here.
+
+557
+01:13:10,536 --> 01:13:11,216
+Here we have minus 1, 2.
+
+558
+01:13:11,216 --> 01:13:12,216
+And let's write here.
+
+559
+01:13:12,216 --> 01:13:13,216
+Here we have minus 1, 2.
+
+560
+01:13:13,216 --> 01:13:14,216
+And let's write here.
+
+561
+01:13:14,216 --> 01:13:15,216
+Here we have minus 1, 2.
+
+562
+01:13:15,216 --> 01:13:16,216
+And let's write here.
+
+563
+01:13:16,216 --> 01:13:17,216
+Here we have minus 1, 2.
+
+564
+01:13:17,216 --> 01:13:18,216
+And let's write here.
+
+565
+01:13:18,216 --> 01:13:19,216
+Here we have minus 1, 2.
+
+566
+01:13:19,216 --> 01:13:20,216
+And let's write here.
+
+567
+01:13:20,216 --> 01:13:21,216
+Here we have minus 1, 2.
+
+568
+01:13:21,216 --> 01:13:22,216
+And let's write here.
+
+569
+01:13:22,216 --> 01:13:23,216
+Here we have minus 1, 2.
+
+570
+01:13:23,216 --> 01:13:24,216
+And let's write here.
+
+571
+01:13:24,216 --> 01:13:25,216
+Here we have minus 1, 2.
+
+572
+01:13:25,216 --> 01:13:26,216
+And let's write here.
+
+573
+01:13:26,216 --> 01:13:27,216
+Here we have minus 1, 2.
+
+574
+01:13:11,123 --> 01:13:15,943
+A12 is 1. 1 times 1.
+
+575
+01:13:17,943 --> 01:13:20,844
+Multiply each entry with its cofactor.
+
+576
+01:13:21,743 --> 01:13:25,503
+Plus A22 is 2.
+
+577
+01:13:26,543 --> 01:13:29,884
+2 times cofactor of A22 is 12.
+
+578
+01:13:30,823 --> 01:13:34,863
+And A32 is 2 also.
+
+579
+01:13:34,863 --> 01:13:38,463
+Plus 2 times minus 5.
+
+580
+01:13:39,243 --> 01:13:39,463
+Okay.
+
+581
+01:13:41,123 --> 01:13:47,563
+Here we have 1 plus 24 minus 10.
+
+582
+01:13:48,023 --> 01:13:51,603
+25 minus 10 is 15 also.
+
+583
+01:13:52,163 --> 01:14:02,083
+We use first row, second row and second column to compute the determinant of given matrix and all the results are same.
+
+584
+01:14:02,083 --> 01:14:02,483
+Okay.
+
+585
+01:14:02,743 --> 01:14:05,943
+Let's try this result.
+
+586
+01:14:05,943 --> 01:14:14,743
+Just multiply elements of first column with the cofactors of second column.
+
+587
+01:14:15,063 --> 01:14:15,923
+We will get 0.
+
+588
+01:14:15,983 --> 01:14:17,103
+We need to get 0.
+
+589
+01:14:17,103 --> 01:14:26,483
+To do this let me raise here.
+
+590
+01:14:43,988 --> 01:14:57,688
+Let compute k from 1 to 3, a sub k1 times a sub k2.
+
+591
+01:14:57,688 --> 01:15:04,847
+We multiply entries of first column with the cofactors of second column.
+
+592
+01:15:04,847 --> 01:15:25,588
+a11 times a12 plus a21 times a22 plus a31 times a32.
+
+593
+01:15:26,588 --> 01:15:30,828
+We just update k in this scale.
+
+594
+01:15:30,828 --> 01:15:34,988
+Because our summation is over k.
+
+595
+01:15:34,988 --> 01:15:38,488
+So, the first entry of matrix is 2.
+
+596
+01:15:38,488 --> 01:15:51,168
+2 times a12, here we have 1, plus minus 1 times 12, minus 1 times, excuse me, okay, minus
+
+597
+01:15:51,168 --> 01:15:52,467
+1 times 12.
+
+598
+01:15:52,467 --> 01:16:00,568
+The second element of first column is minus 1 times the cofactors of second element of
+
+599
+01:16:00,568 --> 01:16:04,728
+second column is, this entry is, this element is 12.
+
+600
+01:16:04,728 --> 01:16:13,728
+So, minus 2, the last entry of first column, minus 2 times minus 5.
+
+601
+01:16:13,728 --> 01:16:14,728
+Okay.
+
+602
+01:16:14,728 --> 01:16:19,887
+Here we have 2 plus minus 2 times minus 5 is 10.
+
+603
+01:16:19,887 --> 01:16:22,887
+2 plus 10, 12.
+
+604
+01:16:22,887 --> 01:16:25,788
+12 minus 12 is 0.
+
+605
+01:16:25,788 --> 01:16:29,887
+You can check this for all the other rows and columns.
+
+606
+01:16:29,887 --> 01:16:36,887
+If you multiply entries of last column with the cofactors of second row, you also, your result
+
+607
+01:16:36,887 --> 01:16:38,048
+will be zero.
+
+608
+01:16:38,048 --> 01:16:44,887
+And if you multiply cofactors of first row with the entries of second and third row, then
+
+609
+01:16:44,887 --> 01:16:46,887
+also result will be zero.
+
+610
+01:16:46,887 --> 01:16:47,887
+Okay.
+
+611
+01:16:47,887 --> 01:17:07,887
+Any question?
+
+612
+01:16:53,779 --> 01:17:01,979
+5-minutes break, and then we will continue. If you have any questions, you can ask your questions during break.
+
+613
+01:21:07,604 --> 01:21:12,724
+Okay, hi again. We will continue with the properties of the determinant function.
+
+614
+01:21:15,444 --> 01:21:22,804
+Our first property, the determinant of identity matrix is one. This is because if you write
+
+615
+01:21:23,844 --> 01:21:34,324
+Laplace expansion along any row or any column, that expand along first row identity matrix,
+
+616
+01:21:34,324 --> 01:21:53,204
+then just your first k from 1 to an a sub 1 k times i sub 1 k. The only non-zero entry of this matrix
+
+617
+01:21:53,204 --> 01:22:00,644
+is first entry and all the other entries will be zero. So result of this summation is one.
+
+618
+01:22:00,644 --> 01:22:06,724
+The determinant of identity matrix is one. Okay.
+
+619
+01:22:09,844 --> 01:22:18,644
+And if you replace any two rows or columns, then the sign of determinant will be changed.
+
+620
+01:22:18,644 --> 01:22:27,444
+Let A be a matrix and B is obtained by replacing
+
+621
+01:22:30,324 --> 01:22:41,604
+Ri and Rj in A. B is a equivalent matrix obtained from A by just one elementary operation.
+
+622
+01:22:41,604 --> 01:22:52,003
+You can apply this operation successively. So if you apply this even number, then
+
+623
+01:22:53,444 --> 01:23:04,484
+determinant of A will be minus determinant of B. But even number of operation doesn't affect the result of
+
+624
+01:23:04,484 --> 01:23:13,684
+determinant. If you swap two rows of A, then result will be positive. It will be same as with A. Okay.
+
+625
+01:23:14,404 --> 01:23:22,484
+Even number of swaps in rows and columns results with the same determinant, but all number of swaps
+
+626
+01:23:22,484 --> 01:23:31,844
+results of rows and columns results with the same determinant of the same determinant of the first matrix.
+
+627
+01:23:31,844 --> 01:23:43,604
+Okay. This is our second property. The proof of this property result comes from permutation
+
+628
+01:23:43,604 --> 01:24:00,724
+So you need to replace the same determinant function. If you replace the order of any two elements in a permutation, then the number of inversions will be changed.
+
+629
+01:24:00,724 --> 01:24:06,164
+So you need to multiply the result by minus one.
+
+630
+01:24:08,644 --> 01:24:15,604
+Here we have a small example for the identity matrix. We know the determinant of identity matrix is one. If you replace
+
+631
+01:24:16,963 --> 01:24:23,524
+first and second column of these matrix, your new matrix will be
+
+632
+01:24:23,524 --> 01:24:30,564
+So the determinant of this matrix is one, minus one. You just replace
+
+633
+01:24:32,244 --> 01:24:41,284
+with swap first and second column of this matrix. Also, if you swap first and second row, then the result
+
+634
+01:24:42,564 --> 01:24:46,324
+will be same with this case. Okay.
+
+635
+01:24:46,324 --> 01:24:53,923
+But even number of swaps doesn't affect if you change
+
+636
+01:24:55,923 --> 01:25:04,404
+columns of this matrix one more time, then you will get the first matrix, the identity matrix and the
+
+637
+01:25:05,043 --> 01:25:07,204
+determinant of this matrix is one. Okay.
+
+638
+01:25:08,756 --> 01:25:18,076
+Ayrıca number of webs doesn't affect determinant, but all number of webs will change the sign-on determinant.
+
+639
+01:25:25,747 --> 01:25:45,627
+If you multiply any row, element entries or any row or any column, just one row, and just any one column by a constant t, then you need to multiply determinant by this constant.
+
+640
+01:25:45,627 --> 01:26:04,047
+If you multiply matrix by matrix by t, let we have a square matrix A, the determinant of this matrix is equal to t to the power n times determinant of A.
+
+641
+01:26:04,047 --> 01:26:25,227
+But if you multiply just one, entries or one row or one column by a constant, in this case, let let B be a new matrix obtained by A, by R, instead of R, I write t times R, I.
+
+642
+01:26:25,227 --> 01:26:38,707
+Okay, and then the determinant of B is equal to T times determinant of A.
+
+643
+01:26:42,420 --> 01:26:52,380
+t times determinant of a. Please don't confuse this fact with the scalar multiplication of matrices, which we do here.
+
+644
+01:26:52,739 --> 01:27:08,300
+If you multiply all elements of a matrix by a square matrix by a constant, then the determinant of this new matrix is equal to t to the power n times determinant of a.
+
+645
+01:27:08,300 --> 01:27:17,380
+But if you multiply just one element, entries of one element by a constant, this affects t times 2a.
+
+646
+01:27:22,195 --> 01:27:22,996
+Any question?
+
+647
+01:27:31,028 --> 01:27:33,128
+T is a constant, [öğrenci].
+
+648
+01:27:35,807 --> 01:27:36,648
+A real number.
+
+649
+01:27:37,528 --> 01:27:38,748
+T is a real number.
+
+650
+01:27:41,168 --> 01:27:43,488
+I will give example for this.
+
+651
+01:27:44,728 --> 01:27:47,188
+Let prove this for two by two case.
+
+652
+01:27:51,387 --> 01:27:56,467
+Let A be A11, A12, A21, A22.
+
+653
+01:28:01,939 --> 01:28:10,839
+Determinant OA is equal to A11 times A22 minus A12 times A21.
+
+654
+01:28:11,059 --> 01:28:11,259
+Okay.
+
+655
+01:28:11,679 --> 01:28:19,299
+If you multiply that criteria A and B, we just multiply first row by T.
+
+656
+01:28:19,299 --> 01:28:27,079
+T times A11, T times A12, A21 and A22.
+
+657
+01:28:27,079 --> 01:28:42,179
+The determinant of B is equal to T times A11 times A22 minus T times A12 times A21.
+
+658
+01:28:42,179 --> 01:28:51,419
+This is equal to T times A11 times A22 minus A12 times A21.
+
+659
+01:28:51,839 --> 01:28:52,119
+Okay.
+
+660
+01:28:52,119 --> 01:28:57,779
+We have already known this is the determinant of A.
+
+661
+01:28:58,199 --> 01:29:00,719
+So T times determinant of A.
+
+662
+01:29:00,719 --> 01:29:08,659
+But if you multiply all elements of A by a constant, that's right here.
+
+663
+01:29:09,439 --> 01:29:10,399
+T times A.
+
+664
+01:29:11,559 --> 01:29:21,159
+T times A is equal to T times A11, T times A12, T times A21.
+
+665
+01:29:21,159 --> 01:29:23,500
+And T times A22.
+
+666
+01:29:24,119 --> 01:29:30,500
+T is a real number and a constant that say this new matrix as C.
+
+667
+01:29:30,500 --> 01:29:50,419
+So the determinant of A is equal to T times A11 times T times A22 minus T times A12 times T times A21.
+
+668
+01:29:50,419 --> 01:29:52,419
+This is equal to A21.
+
+669
+01:29:52,419 --> 01:29:57,419
+This is equal to T times A21.
+
+670
+01:29:57,419 --> 01:31:07,419
+A21.
+
+671
+01:31:09,684 --> 01:31:15,724
+So, determinant function is a linear function with respect to addition.
+
+672
+01:31:15,724 --> 01:31:25,844
+So, if you can separate your determinant with respect to rows and columns.
+
+673
+01:31:26,043 --> 01:31:26,163
+Okay.
+
+674
+01:31:29,484 --> 01:31:38,583
+We can separate this matrix with respect to first row by writing
+
+675
+01:31:38,583 --> 01:31:44,104
+A itself, the matrix itself, plus a new one.
+
+676
+01:31:45,663 --> 01:31:48,604
+Determinant of these two matrix is a Q.
+
+677
+01:31:58,547 --> 01:32:06,547
+On the right hand side we have a new matrix. If you are adding up this matrix you will get the matrix at the left hand side.
+
+678
+01:32:06,547 --> 01:32:15,547
+So the same matrix determinant of this matrix will be equal to determinant of matrix at the left hand side.
+
+679
+01:32:15,547 --> 01:32:30,547
+If in any square matrix two rows or two columns are equal then the result of determinant is zero. The determinant is zero.
+
+680
+01:32:30,547 --> 01:32:44,547
+This is because you can subtract these two rows from each other. You will get all zero rows and if you expand along this all zero row your result will be zero.
+
+681
+01:32:44,547 --> 01:33:03,547
+Okay, if any in any square matrix any two rows or columns are same then result of determinant is zero. Also if any rows is a multiple of another row or any column is a multiple of another column again the result of determinant is zero.
+
+682
+01:33:03,547 --> 01:33:13,547
+Let's give you an example for this. A two by two example. A two two one one.
+
+683
+01:33:17,524 --> 01:33:24,524
+İlk row 2, ikinci row 2, ikinci row 2. Bu matrisin betimle, bu matrisin betimle,
+
+684
+01:33:33,011 --> 01:33:41,891
+to put here, vertical bars in order to denote, determiner, is equal to 2 times 1 minus 1 times 2 is 0.
+
+685
+01:33:41,891 --> 01:33:43,171
+Okay.
+
+686
+01:33:45,811 --> 01:33:53,371
+By applying elementary operation, you can also get a new matrix, 2 to 1, 1.
+
+687
+01:33:54,051 --> 01:33:59,931
+Just multiply second row by minus 2 and adding up it to first row.
+
+688
+01:33:59,931 --> 01:34:03,091
+We get 0, 0, 1, 1.
+
+689
+01:34:03,091 --> 01:34:06,331
+And expand this matrix along the first row.
+
+690
+01:34:06,331 --> 01:34:11,131
+Then, because you have all constants as 0, result will be 0.
+
+691
+01:34:19,412 --> 01:34:31,932
+And for different rows and columns, subtracting t times or row i from row j doesn't change the result of a determinant.
+
+692
+01:34:31,932 --> 01:34:33,992
+This is also valid for columns.
+
+693
+01:34:35,252 --> 01:34:39,771
+Elementary operations does affect the result of determinants.
+
+694
+01:34:41,252 --> 01:34:42,771
+Here we have an example.
+
+695
+01:34:42,771 --> 01:34:51,472
+That we have matrix A as A, B, C, D.
+
+696
+01:34:51,472 --> 01:34:57,731
+We multiply first row by t and subtract it from the second row.
+
+697
+01:34:58,672 --> 01:35:03,992
+Our new matrix A, B, C minus T, A and D minus T, B.
+
+698
+01:35:04,412 --> 01:35:12,512
+And we can separate this new matrix with respect to second row.
+
+699
+01:35:12,771 --> 01:35:16,992
+And then we will get this matrix.
+
+700
+01:35:17,632 --> 01:35:26,231
+Determinant of this matrix will be zero because we have two same rows in this matrix.
+
+701
+01:35:26,792 --> 01:35:33,472
+First and second, if we can factor out t out of the matrix and then...
+
+702
+01:35:33,472 --> 01:35:38,891
+Let me write again this matrix.
+
+703
+01:35:39,391 --> 01:35:40,592
+North 2, 3rd, 5.
+
+704
+01:35:41,012 --> 01:35:45,472
+A, B, C, D minus T times...
+
+705
+01:35:45,472 --> 01:35:48,932
+You can factor out t from the second row.
+
+706
+01:35:49,112 --> 01:35:51,872
+T times A, B, A, B.
+
+707
+01:35:51,872 --> 01:35:56,472
+In this matrix, we have a matrix with two same...
+
+708
+01:35:56,472 --> 01:35:59,492
+And in this determinant, the first and second row are equal.
+
+709
+01:35:59,612 --> 01:36:00,972
+So this will be zero.
+
+710
+01:36:02,092 --> 01:36:06,731
+And we have just the determinant of A.
+
+711
+01:36:07,391 --> 01:36:11,932
+And also determinant of this matrix is equal to determinant of A.
+
+712
+01:36:11,932 --> 01:36:18,231
+This matrix is called as B obtained from A by applying an elementary operation.
+
+713
+01:36:18,912 --> 01:36:29,932
+B is equal to A, T times R2, T...
+
+714
+01:36:29,932 --> 01:36:32,612
+R2 minus T times R1.
+
+715
+01:36:32,612 --> 01:36:33,012
+Okay.
+
+716
+01:36:34,752 --> 01:36:38,572
+We just applied an elementary operation to A to get B.
+
+717
+01:36:38,992 --> 01:36:41,192
+So determinant of A and B are same.
+
+718
+01:36:50,579 --> 01:36:59,500
+If in any matrix we have all zero row or an all zero column, then the determinant is zero.
+
+719
+01:37:02,500 --> 01:37:07,619
+This is the result of the property.
+
+720
+01:37:07,840 --> 01:37:11,920
+If you have any two same rows or columns, the result is zero.
+
+721
+01:37:12,140 --> 01:37:16,039
+If you expand along this row, then the result will be zero.
+
+722
+01:37:16,039 --> 01:37:24,119
+And in the Laplace expansion algorithm, you can expand along any row or any column.
+
+723
+01:37:24,119 --> 01:37:30,880
+If you expand along this all zero row, then you will get all zero column, the result will be zero.
+
+724
+01:37:31,380 --> 01:37:36,800
+So when you try to compute the determinant, you need to choose.
+
+725
+01:37:36,939 --> 01:37:45,500
+If you choose rows or columns with much more zeros, your computation will be much more easy.
+
+726
+01:37:46,039 --> 01:37:55,579
+So you need to try to put all zeros or much more zeros in any rows or any columns by using elementary row or column operations.
+
+727
+01:37:59,412 --> 01:38:17,432
+And the determinant of a triangular matrix, you can put any square matrix in the triangular form by applying elementary row operations, is equal to elements on the main diagram.
+
+728
+01:38:18,731 --> 01:38:26,612
+Just multiply elements on the main diagram. You need not to compute cofactors.
+
+729
+01:38:26,612 --> 01:38:34,432
+And determinant function also preserves matrix multiplication.
+
+730
+01:38:35,032 --> 01:38:39,512
+Determinant of a, b is equal to determinant of a times determinant of b.
+
+731
+01:38:40,811 --> 01:38:45,132
+But, but, don't confuse about this.
+
+732
+01:38:45,532 --> 01:38:53,212
+Determinant of a plus b is not equal to determinant of a plus determinant of b.
+
+733
+01:38:54,452 --> 01:38:55,932
+This is not the case.
+
+734
+01:38:55,932 --> 01:38:56,452
+Okay.
+
+735
+01:39:02,579 --> 01:39:10,359
+Determinant OA inverse, if exists, is equal to 1 over determinant OA.
+
+736
+01:39:11,159 --> 01:39:19,140
+This fact also says that if a matrix has an inverse, then determinant must be non-zero.
+
+737
+01:39:20,239 --> 01:39:24,359
+Because determinant OA inverse is equal to 1 over determinant OA.
+
+738
+01:39:24,359 --> 01:39:31,800
+If determinant OA is zero, then this number is undefined.
+
+739
+01:39:33,000 --> 01:39:50,199
+So if a square matrix has a, if A is invertible, then determinant OA must be non-zero.
+
+740
+01:39:50,199 --> 01:40:02,239
+Actually, in real numbers, must be non-zero, but for the matrix in, with the entries in the set of integers,
+
+741
+01:40:03,239 --> 01:40:11,680
+let A be a square matrix in M, sub M by M, Z, Z set of integers.
+
+742
+01:40:16,979 --> 01:40:28,659
+In this case, determinant must be, determinant of A must be plus or minus one for the invertibility.
+
+743
+01:40:30,559 --> 01:40:43,959
+If the determinant of A is different from minus one, one, then the inverse doesn't exist for the matrices with entries.
+
+744
+01:40:43,959 --> 01:40:48,379
+in set of integers.
+
+745
+01:40:50,559 --> 01:40:57,799
+Because in real numbers, all elements, except for zero, has a multiplicative inverse.
+
+746
+01:40:58,539 --> 01:41:08,500
+So, this says that determinant of A is invertible in the set of entries of A.
+
+747
+01:41:09,639 --> 01:41:10,259
+Okay.
+
+748
+01:41:22,963 --> 01:41:40,163
+And determinant of, because of this property, because determinant function preserves product of matrices, determinant of A, determinant of A square is equal to determinant of A times determinant of A.
+
+749
+01:41:40,163 --> 01:41:44,804
+This will be equal to determinant of A times determinant of A.
+
+750
+01:41:45,783 --> 01:41:49,764
+This is equal to the square of determinant of A.
+
+751
+01:41:49,764 --> 01:41:56,764
+You can do this for k power whole A.
+
+752
+01:41:56,764 --> 01:42:08,564
+As a result of this fact, determinant of A to the power k is equal to k power whole determinant of A.
+
+753
+01:42:19,764 --> 01:42:41,604
+Another important property of determinant function, I have already talked about this property, if you multiply any matrix with a constant, then result, the determinant of this new matrix will be, let multiply a by constant 2, will be equal to the power n type determinant of a.
+
+754
+01:42:46,452 --> 01:42:50,532
+Determinant of A transpose is equal to determinant of A.
+
+755
+01:42:52,052 --> 01:43:06,052
+If you replace the place of rows and columns, this doesn't affect the cofactors of any entries of the matrix, so determinant will be saved.
+
+756
+01:43:14,515 --> 01:43:25,515
+Now by using all these properties I will compute determinant of this determinant.
+
+757
+01:43:25,515 --> 01:43:34,515
+In some questions in your exams they asked that factorize this determinant.
+
+758
+01:43:34,515 --> 01:43:41,515
+So we will factorize this determinant with respect to x, y, z, t.
+
+759
+01:43:41,515 --> 01:43:46,515
+Okay, I will use elementary row operations or column.
+
+760
+01:43:46,515 --> 01:43:50,515
+I will use elementary row and column operations in order to compute this.
+
+761
+01:43:50,515 --> 01:43:56,515
+When you try to compute determinant of a square matrix you can combine row and column operations.
+
+762
+01:43:56,515 --> 01:43:58,515
+Elementary row and column operations.
+
+763
+01:43:58,515 --> 01:44:04,515
+But when you try to solve a linear system of equations or try to find inverse of a square matrix
+
+764
+01:44:04,515 --> 01:44:08,515
+you cannot mix these two types of operations.
+
+765
+01:44:08,515 --> 01:44:17,515
+You need to just use row operations for finding in order to compute inverse of a square matrix
+
+766
+01:44:17,515 --> 01:44:21,515
+or solve a linear system of equations.
+
+767
+01:44:21,515 --> 01:44:29,515
+But when you try to compute determinant you can combine these two types of operations.
+
+768
+01:44:29,515 --> 01:44:32,515
+Or you can mix these two types of operations.
+
+769
+01:44:32,515 --> 01:44:37,515
+I will...
+
+770
+01:44:37,515 --> 01:44:42,515
+My aim is to get all ones in a row.
+
+771
+01:44:42,515 --> 01:44:43,515
+Okay.
+
+772
+01:44:43,515 --> 01:44:44,515
+Or in a column.
+
+773
+01:44:44,515 --> 01:44:50,515
+In order to do this I will add up all the columns in the first place.
+
+774
+01:44:50,515 --> 01:44:57,515
+Let me write instead of c1, let c1 our first column.
+
+775
+01:44:57,515 --> 01:45:09,515
+Instead of c1 just write c1 plus c2 plus c3.
+
+776
+01:45:09,515 --> 01:45:10,515
+This will be equal, not equivalent.
+
+777
+01:45:10,515 --> 01:45:18,515
+Because in the determinant if you apply elementary operations to a matrix then result will be the same.
+
+778
+01:45:18,515 --> 01:45:22,515
+So you need to put here equality sign.
+
+779
+01:45:22,515 --> 01:45:33,515
+So our new determinant will be x plus y plus c plus t in the first column.
+
+780
+01:45:33,515 --> 01:45:34,515
+For the...
+
+781
+01:45:34,515 --> 01:45:36,515
+Each entries of the first column.
+
+782
+01:45:36,515 --> 01:45:41,515
+X plus y plus z plus t.
+
+783
+01:45:41,515 --> 01:45:46,515
+I'm just adding up all the columns in the first place.
+
+784
+01:45:46,515 --> 01:45:51,515
+I gathered all the columns in the first place.
+
+785
+01:45:51,515 --> 01:45:52,515
+Okay.
+
+786
+01:45:52,515 --> 01:45:56,515
+Our second and third columns remain unchanged.
+
+787
+01:45:56,515 --> 01:46:01,515
+Here we have z, x plus y and t.
+
+788
+01:46:01,515 --> 01:46:04,515
+And here we have t, t, x plus y.
+
+789
+01:46:04,515 --> 01:46:06,515
+Okay.
+
+790
+01:46:06,515 --> 01:46:13,515
+Now I can factor out x plus y plus z plus t from the first column.
+
+791
+01:46:13,515 --> 01:46:15,515
+Because the property...
+
+792
+01:46:15,515 --> 01:46:20,515
+Let me come back this property.
+
+793
+01:46:26,579 --> 01:46:29,579
+...because of this problem. Let me write here.
+
+794
+01:46:31,579 --> 01:46:34,579
+If you multiply any...
+
+795
+01:46:35,579 --> 01:46:36,579
+...rows...
+
+796
+01:46:37,579 --> 01:46:41,579
+...or matris, or any columns by a constant, you can factor out this.
+
+797
+01:46:42,579 --> 01:46:45,579
+...that right here, let me write B.
+
+798
+01:46:50,131 --> 01:46:50,531
+[öğrenci].
+
+799
+01:46:55,188 --> 01:47:10,948
+B is a new matrix obtained from A by R i or C i t times R i or t times C i.
+
+800
+01:47:10,948 --> 01:47:23,108
+This means that we multiply if rho O A by T in order to obtain B or if column O A by T.
+
+801
+01:47:23,108 --> 01:47:32,148
+Okay, so determinant of B is equal to T times determinant of A in this case.
+
+802
+01:47:32,148 --> 01:47:39,988
+So you can factor out any common factor in any rows or any columns in a determinant.
+
+803
+01:47:39,988 --> 01:47:43,507
+In the first column we have a common factor. We can factor out this.
+
+804
+01:47:43,507 --> 01:47:50,547
+x plus y plus z plus t times.
+
+805
+01:47:52,068 --> 01:47:56,547
+The factor of x plus plus y plus z plus t in the first column.
+
+806
+01:47:56,547 --> 01:48:02,708
+In the first column we have one one one and second and third columns remain unchanged.
+
+807
+01:48:02,708 --> 01:48:09,748
+z x plus y. Here we have t t t and x plus y.
+
+808
+01:48:09,748 --> 01:48:15,028
+I will use first row to remove this.
+
+809
+01:48:17,347 --> 01:48:19,268
+This one and this one. Okay.
+
+810
+01:48:21,028 --> 01:48:26,547
+Because I try to get more zeros in any rows or in any columns
+
+811
+01:48:26,547 --> 01:48:34,148
+because of the definition of Laplace expansion. Laplace expansion says that determinant of A is equal to,
+
+812
+01:48:34,148 --> 01:48:40,788
+if you try to expand along any row or any column, is equal to k from 1 to n.
+
+813
+01:48:42,387 --> 01:48:47,188
+Let expand along k i-th column.
+
+814
+01:48:47,188 --> 01:48:58,307
+A sub i k times k sub i. If you have much zeros in any rows or in any columns,
+
+815
+01:48:58,307 --> 01:49:02,148
+you need not to compute the cofactor of corresponding entry.
+
+816
+01:49:03,028 --> 01:49:06,948
+Okay. I try to obtain more zeros in the first column.
+
+817
+01:49:06,948 --> 01:49:12,788
+Here let's use these operations.
+
+818
+01:49:14,307 --> 01:49:29,108
+R2, our new R2 is, instead of new R2, write R2 minus R1 and R3, R3 minus R1.
+
+819
+01:49:29,988 --> 01:49:33,347
+This will be acu, not eco-iron, because this is determinant.
+
+820
+01:49:33,347 --> 01:49:45,268
+If you apply elementary operation to a matrix, the determinant of new matrix will be same as with the first matrix.
+
+821
+01:49:46,708 --> 01:49:51,268
+We have 1z t. Here we have 0.
+
+822
+01:49:53,908 --> 01:49:55,908
+x plus y minus z.
+
+823
+01:49:57,108 --> 01:49:58,547
+t minus t is 0.
+
+824
+01:49:58,547 --> 01:50:00,948
+Here we have 0 also.
+
+825
+01:50:00,948 --> 01:50:03,108
+t minus c.
+
+826
+01:50:05,108 --> 01:50:08,788
+x plus y minus t.
+
+827
+01:50:09,427 --> 01:50:09,667
+Okay.
+
+828
+01:50:12,387 --> 01:50:16,068
+So if you expand this matrix along the first column,
+
+829
+01:50:19,188 --> 01:50:21,028
+here and here we have 0.
+
+830
+01:50:21,028 --> 01:50:25,268
+So we need not to compute the cofactor of these entries.
+
+831
+01:50:26,307 --> 01:50:32,307
+This determinant will be equal to determinant of this 2 by 2 matrix.
+
+832
+01:50:32,307 --> 01:50:36,948
+1 times the determinant of 2 by 2 matrix is equal to...
+
+833
+01:50:37,587 --> 01:50:39,908
+Sorry, I need to put also here...
+
+834
+01:50:40,948 --> 01:50:41,507
+Here we have...
+
+835
+01:50:41,507 --> 01:50:43,108
+Let's write this as R.
+
+836
+01:50:43,748 --> 01:50:45,908
+R times this matrix.
+
+837
+01:50:45,908 --> 01:50:46,467
+Okay.
+
+838
+01:50:47,188 --> 01:50:49,748
+R times determinant of...
+
+839
+01:50:49,748 --> 01:50:59,188
+Let me write it acu.
+
+840
+01:50:59,188 --> 01:51:01,188
+R times determinant of...
+
+841
+01:51:01,188 --> 01:51:03,188
+Let me write it acu.
+
+842
+01:51:03,188 --> 01:51:05,188
+R times determinant of...
+
+843
+01:51:05,188 --> 01:51:07,188
+Let me write it acu.
+
+844
+01:51:07,188 --> 01:51:09,188
+R times determinant of...
+
+845
+01:51:09,188 --> 01:51:11,188
+Let me write it acu.
+
+846
+01:51:11,188 --> 01:51:13,188
+R times determinant of...
+
+847
+01:51:13,188 --> 01:51:14,307
+Let me write it acu.
+
+848
+01:50:51,828 --> 01:50:59,588
+x plus y minus c, 0, t minus c, and here we have x plus y minus t.
+
+849
+01:50:59,588 --> 01:51:23,288
+I have already know the determinant of a two by two matrix, so this is equal to r times x plus y plus z plus t times x plus y minus z times x plus y minus t.
+
+850
+01:51:23,288 --> 01:51:38,748
+We just factorize the matrix, the given matrix, the given determinant, not matrix, a determinant of a three by three matrix with the entries unknown x, y, z, t.
+
+851
+01:51:38,748 --> 01:51:44,228
+We factorize this determinant by using elementary row operations.
+
+852
+01:51:44,768 --> 01:51:52,548
+We try to find a row or column with much more zeros, so in the first column we obtain two zeros.
+
+853
+01:51:52,548 --> 01:51:57,368
+of a row or column with the rows, this make our computations much more easy.
+
+854
+01:51:57,368 --> 01:51:59,828
+Any question?
+
+855
+01:52:16,916 --> 01:52:19,016
+Guys, are you here? Can you hear me?
+
+856
+01:52:26,739 --> 01:52:30,979
+Did you understand factorization of a determinant?
+
+857
+01:52:31,699 --> 01:52:35,479
+If you have any questions, please don't hesitate, ask your questions.
+
+858
+01:52:35,719 --> 01:52:41,039
+You can ask your questions in Turkish also.
+
+859
+01:52:42,179 --> 01:52:49,260
+We just use elementary row operations in order to get more zeros in the first column.
+
+860
+01:52:49,260 --> 01:52:56,760
+So we applied two types of elementary operations to rows and columns.
+
+861
+01:52:56,760 --> 01:53:05,399
+We mixed both these operations and at the end, we just compute the determinant over two by two matrix.
+
+862
+01:53:06,899 --> 01:53:15,279
+So results is a factorization of undeterminate x, y, z and t.
+
+863
+01:53:15,539 --> 01:53:15,679
+Okay.
+
+864
+01:53:16,939 --> 01:53:18,500
+Undeterminate x, y, z and t.
+
+865
+01:53:25,876 --> 01:53:38,615
+Let's compute the determinant of this 3x3 matrix by, not by Laplace expansion, just by using elementary row operations.
+
+866
+01:53:40,136 --> 01:53:45,496
+I will try to get zeros also in the first column.
+
+867
+01:53:46,056 --> 01:53:52,756
+You can also try to get zeros in the second column, last column, or first row, second row, or third row.
+
+868
+01:53:52,756 --> 01:53:55,336
+I just choose first column.
+
+869
+01:53:55,876 --> 01:54:04,735
+My aim is to obtain more zeros in the first column of A.
+
+870
+01:54:05,416 --> 01:54:16,296
+So, in order to do this, just multiply second row and adding up a second row with two and adding up it to first row.
+
+871
+01:54:16,296 --> 01:54:27,296
+First I will use, let me write R3, our new R3, R1 plus R3.
+
+872
+01:54:27,296 --> 01:54:28,296
+Okay.
+
+873
+01:54:28,296 --> 01:54:28,836
+This will be equal.
+
+874
+01:54:28,836 --> 01:54:38,836
+Our new row is same as with the previous one.
+
+875
+01:54:38,836 --> 01:54:41,036
+Second row is also same.
+
+876
+01:54:41,036 --> 01:54:48,296
+And new last row will be 0, 3 and here we have 6.
+
+877
+01:54:48,296 --> 01:54:49,296
+and new last row.
+
+878
+01:54:49,296 --> 01:54:49,836
+Okay.
+
+879
+01:54:49,836 --> 01:54:50,836
+So, let's do this.
+
+880
+01:54:50,836 --> 01:54:51,836
+Okay.
+
+881
+01:54:51,836 --> 01:54:52,836
+So, let's do this.
+
+882
+01:54:52,836 --> 01:54:53,336
+Okay.
+
+883
+01:54:53,336 --> 01:54:53,836
+So, let's do this.
+
+884
+01:54:53,836 --> 01:54:54,836
+Okay.
+
+885
+01:54:54,836 --> 01:54:55,836
+So, let's do this.
+
+886
+01:54:55,836 --> 01:54:56,836
+Okay.
+
+887
+01:54:56,836 --> 01:54:57,836
+So, let's do this.
+
+888
+01:54:52,724 --> 01:54:59,884
+And multiply second row by 2 and adding up it to the first row.
+
+889
+01:55:00,984 --> 01:55:06,163
+New R1 is 2 times R2 plus R1.
+
+890
+01:55:06,923 --> 01:55:07,163
+Okay.
+
+891
+01:55:09,384 --> 01:55:14,043
+Here we have 0 because of this elementary operation.
+
+892
+01:55:14,824 --> 01:55:17,824
+2 times 2 is 4 plus 1 is 5.
+
+893
+01:55:17,824 --> 01:55:24,043
+2 times 1 is 2 plus 3 is 5.
+
+894
+01:55:24,824 --> 01:55:31,824
+Here we have minus 1, 2, 1 and 0, 3, 6.
+
+895
+01:55:32,784 --> 01:55:35,824
+Now we can apply the Laplace expansion.
+
+896
+01:55:36,463 --> 01:55:40,284
+We applied Laplace expansion to the first column.
+
+897
+01:55:40,824 --> 01:55:44,503
+In the first column we have just 1 and 0 and 3.
+
+898
+01:55:44,503 --> 01:55:50,543
+So we need to just complete one cofactor for the minus 1.
+
+899
+01:55:51,503 --> 01:55:52,804
+Close up this entry.
+
+900
+01:55:55,064 --> 01:56:00,064
+The entries all, the first entry all, second column, the second row.
+
+901
+01:56:00,503 --> 01:56:03,064
+A2, 1, excuse me.
+
+902
+01:56:03,064 --> 01:56:05,064
+Okay, A2, 1.
+
+903
+01:56:06,524 --> 01:56:09,864
+Sine will be negative.
+
+904
+01:56:11,604 --> 01:56:23,423
+Determinant will be equal to minus 1 to the power 2 plus 1 times A2, 1 times A2, 1.
+
+905
+01:56:23,423 --> 01:56:32,724
+Because for the first element and last element we have 0 so we need not to compute the cofactors of these entries.
+
+906
+01:56:32,724 --> 01:57:02,724
+This will be minus 1 times A2, 1 times A2, 1 times A2, 1 plus 1 times A2, 1 plus 1 times A2, 1 plus 1 times A2, 1 plus 1 times A2, 1 plus 1 times A2, 1 plus 1 times A2, 1 plus 1 times A2, 1 plus 1 times A2, 1 plus 1 times A2, 1 plus 1 times A2, 1 plus 1 times A2, 1 plus 1 times A2, 1 plus 1 times A2, 1 plus A2, 1 plus A2, 1 plus A2, 1 plus A2, 1 plus A2, 1 plus A2, 1 plus A2, 1 plus A2, 1 plus A2, 1 plus A2, 1 plus A2, 1 plus A2, 1 plus A2, 1 plus A2, 1 plus A2, 1 plus A2, 1 plus A2, 1 plus A2, 1 plus A2, 1 plus A2, 1 plus A2, 1 plus A2, 1
+
+907
+01:57:02,724 --> 01:57:13,104
+15, this is 15, you have already computed this determinant by Laplace expansion along the any row and column.
+
+908
+01:57:13,104 --> 01:57:17,163
+Okay, result is same with the Laplace expansion.
+
+909
+01:57:17,564 --> 01:57:26,984
+Also, you can use elementary row operations to compute the determinant of square meters in order to simplify your computations.
+
+910
+01:57:28,384 --> 01:57:30,984
+Your aim will be...
+
+911
+01:57:32,724 --> 01:57:34,824
+should be...
+
+912
+01:57:34,824 --> 01:57:40,663
+try to obtain more zeros in any rows and in any curves because...
+
+913
+01:57:40,663 --> 01:57:43,264
+the definition of determinant.
+
+914
+01:57:52,083 --> 01:57:57,203
+If you have more zeros, you need not to compute the corresponding cofactor.
+
+915
+01:57:57,604 --> 01:57:57,823
+Okay.
+
+916
+01:57:59,163 --> 01:57:59,783
+Any question?
+
+917
+01:58:06,323 --> 01:58:11,723
+Şimdi, bu kadar zaman alın.
+
+918
+01:58:11,723 --> 01:58:15,443
+İlk başlayalım yeni bir video.
+
+919
+01:58:15,443 --> 01:58:17,163
+Hadi bu.
