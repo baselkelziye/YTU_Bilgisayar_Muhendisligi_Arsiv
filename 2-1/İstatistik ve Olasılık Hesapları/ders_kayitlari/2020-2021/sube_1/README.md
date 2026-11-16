@@ -4,6 +4,7 @@
 
 ### 📋 Genel Bilgiler
 * **Ders:** İstatistik ve Olasılık Hesapları (BLM2011)
+* **Hoca:** Bulunamadı
 * **Dönem:** Güz
 * **Akademik Yıl:** 2020-2021
 * **Şube:** BLM2011 - 1

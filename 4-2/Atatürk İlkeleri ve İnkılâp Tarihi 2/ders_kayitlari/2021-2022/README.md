@@ -5,5 +5,5 @@
 | Şube | Dönem | Hoca | Klasör |
 | :---: | :---: | :--- | :--- |
 | 14 | Bahar | Şebnem Gelmedi | [sube_14/](sube_14/) |
-| 21 | Bahar | — | [sube_21/](sube_21/) |
-| 31 | Bahar | — | [sube_31/](sube_31/) |
+| 21 | Bahar | Bulunamadı | [sube_21/](sube_21/) |
+| 31 | Bahar | Bulunamadı | [sube_31/](sube_31/) |

@@ -4,6 +4,7 @@
 
 ### 📋 Genel Bilgiler
 * **Ders:** İş Sağlığı ve Güvenliği 1 (BLM1991)
+* **Hoca:** Bulunamadı
 * **Dönem:** Güz
 * **Akademik Yıl:** 2024-2025
 * **Şube:** BLM1991 - 1

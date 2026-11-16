@@ -4,7 +4,7 @@
 
 | Şube | Dönem | Hoca | Klasör |
 | :---: | :---: | :--- | :--- |
-| 6 | Bahar | — | [sube_6/](sube_6/) |
+| 6 | Bahar | Bulunamadı | [sube_6/](sube_6/) |
 | 8 | Bahar | Erdal Gül | [sube_8/](sube_8/) |
 | 15 | Bahar | Fatma Çeliker ve Pınar Albayrak | [sube_15/](sube_15/) |
 | 17 | Bahar | Servet Es | [sube_17/](sube_17/) |

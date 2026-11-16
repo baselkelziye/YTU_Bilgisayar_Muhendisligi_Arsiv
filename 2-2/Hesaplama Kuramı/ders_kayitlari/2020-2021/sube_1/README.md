@@ -4,6 +4,7 @@
 
 ### 📋 Genel Bilgiler
 * **Ders:** Hesaplama Kuramı (BLM2502)
+* **Hoca:** Bulunamadı
 * **Dönem:** Bahar
 * **Akademik Yıl:** 2020-2021
 * **Şube:** BLM2502 - 1
