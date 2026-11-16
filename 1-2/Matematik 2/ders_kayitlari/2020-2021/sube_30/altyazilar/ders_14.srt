@@ -1,0 +1,8019 @@
+1
+00:06:28,084 --> 00:06:34,963
+gel geldim ne habersiz bakalım hiç açtım bugün dersi bir türlü bağlanamadım uzunma sizde de
+
+2
+00:06:34,963 --> 00:06:43,204
+olduğum öyle bir sorun 5 dakika kala açmıştım Aslında bu da cevablandı var bugün herhalde
+
+3
+00:06:43,204 --> 00:06:52,684
+iyiyim ben de yaramazlık yok koştuk derse başladım [kişisel bilgi] dersi bitti bu bilgisayarda
+
+4
+00:06:52,684 --> 00:07:00,004
+onu yoldadım ben geçtim dersi ayarlamıştım ama fazla sayfaları silerken hazırladım sayfaları
+
+5
+00:07:00,004 --> 00:07:05,283
+silmişim şimdi onunla uğraştım birazcık inşallah doğru ayarlanmışımdır atladım yer olursa fark
+
+6
+00:07:05,283 --> 00:07:12,303
+ederim zaten şimdi ne yapıyoruz bugün bugün konuyu bitiriyoruz artık sınava daha doğal kısmı birazcık
+
+7
+00:07:12,303 --> 00:07:17,163
+başlamıştık ama dersin sonuna doğru sanki ortadan kaybolduğumuz gibi gelmişti bana o yüzden böyle
+
+8
+00:07:17,163 --> 00:07:27,364
+küçük bir tekrar yapacağız baştan sonra limitin olmadığına dair soruları nasıl düşünmeliyiz onu
+
+9
+00:07:27,364 --> 00:07:36,004
+öğreneceğiz ondan sonra da sürekliliği görüp zaten ancak yetişir bol soru çözelim istiyorum
+
+10
+00:07:36,004 --> 00:07:41,343
+öylece bitireceğiz dersi çok uzun olmayacak diye düşünüyorum yani sanki buçuk gibi biter yarım saat
+
+11
+00:07:41,343 --> 00:07:48,244
+getirmişiz gibi düşünüyorum sonrasında dersiniz varsa böyle küçük nefes alacak zaman bırakacağım
+
+12
+00:07:48,244 --> 00:07:56,403
+gibi planladım ama tabii benim planlarım tutmuyoruz biliyorsunuz bakalım artık tuttuğu kadar şimdi şu
+
+13
+00:07:56,403 --> 00:08:05,884
+katılımcıyı da alalım bakalım 73 kişiyiz şimdi başlayalım şimdi şunu öğrenmiştik önce neyi öğrendik çok
+
+14
+00:08:05,884 --> 00:08:10,024
+bir değişkenli fonksiyonla tanıştık önce işte genel olarak iki değişkenli fonksiyon üzerinde duracağız
+
+15
+00:08:10,024 --> 00:08:16,084
+dedik ama bak niye unuttum işte Evet şimdi hatırladım eğri çizimleri yok unutmayın bana üç boyutlu
+
+16
+00:08:16,084 --> 00:08:24,004
+çizimleri de göstereceğim ne diyordum iki değişkenli fonksiyonlarla tanıştık genel olarak çok değişkenli
+
+17
+00:08:24,004 --> 00:08:29,343
+tanımladık ama bütün işleri genelde iki değişkenli fonksiyonlar üzerinde götüreceğiz neden çünkü iki tane
+
+18
+00:08:29,343 --> 00:08:35,224
+değişkenli bir tane de bağımlı değişkenli olunca üç boyutta iş yapmak bazı şeyleri geometrik olarak
+
+19
+00:08:35,224 --> 00:08:42,124
+açıklamak daha uygun o yüzden genelde yürüteceğiz işte tanım kümesini yaptık tanım kümesine ne öğrendik
+
+20
+00:08:42,124 --> 00:08:48,244
+özel fonksiyonlar işte çok değişkenli girmiş içine tek değişkenli girmiş öyle dertleri yok o içinde
+
+21
+00:08:48,244 --> 00:08:53,043
+hangi sayıları istiyorsa onu istiyor bana bu sayıları ver de diyor bunu yüz tane değişkenli mi yaparsın iki yüz
+
+22
+00:08:53,043 --> 00:08:57,844
+tane değişkenli mi yaparsın tek değişkenli mi yaparsın iki değişkenli mi yaparsın beni ilgilendirmez diyor
+
+23
+00:08:57,844 --> 00:09:03,844
+dolayısıyla biz yine normal bildiğimiz işte karakök yaptık gün sinüs kosünüs yaptık mı bilmiyorum
+
+24
+00:09:03,844 --> 00:09:11,104
+onların zaten sıkıntısı yoktu arkosünüs arkasınüslerden yaptık işte normal onlar hangi sayıları seviyorsa
+
+25
+00:09:11,104 --> 00:09:17,463
+hangi sayılar için tanımlarsa içlerine giren fonksiyon çok değişkenli olduğu durumda da aynı şartları
+
+26
+00:09:17,463 --> 00:09:24,183
+sağlamalarını isteyeceğiz ve ona bağlı olarak bölge çizdik dün iki değişik iki değişkenli fonksiyon için
+
+27
+00:09:24,183 --> 00:09:30,183
+bu aynen dolayısıyla bölge çizdik üç değişkenli fonksiyon için ne yapacağız bugün üç değişkenli
+
+28
+00:09:30,183 --> 00:09:36,723
+fonksiyon için bölgemiz artık üç boyutta çizdik olası bir cismin içi veya cismin dışı gibi bir bölgemiz
+
+29
+00:09:36,723 --> 00:09:44,344
+olacak oraya atlamıştım dün limite başlamak için bunu ortada koymayı unuttum onu yaparız dersin sonunda
+
+30
+00:09:44,344 --> 00:09:49,384
+minicik bir konu zaten dönemin sonunda daha çok lazım olacak şimdi sadece tanım bölgesi için geçerli
+
+31
+00:09:49,384 --> 00:09:58,984
+o yüzden de devam edelim sonra limite geçtik dedik ki işte önce şunu hatırlayalım pek değişkenli çok
+
+32
+00:09:58,984 --> 00:10:05,943
+değişkenli kısmını silmişim tek değişkenli işler kolaydı dedik nasıl silsem yazabilirim
+
+33
+00:10:05,943 --> 00:10:12,504
+bu da tembellik yapma dedik bir düğün düşündük dedik biz ne biliyoruz tek değişkenliği ile ilgili
+
+34
+00:10:12,504 --> 00:10:20,104
+tek değişkenli de şunu biliyorduk tek değişkenli limit aslında çok basitmiş o zaman çok farkında değildik belki
+
+35
+00:10:20,104 --> 00:10:46,104
+tek değişkenli de bu da tembellik yapma
+
+36
+00:10:21,299 --> 00:10:24,379
+Yani tek değişkenli fonksiyon için limitten bahsediyorum tabii ki.
+
+37
+00:10:24,779 --> 00:10:25,519
+Ne yapıyorduk orada?
+
+38
+00:10:25,659 --> 00:10:29,979
+İşte limit x a'ya giderken fx limiti var mı acaba diye kontrol ediyorduk.
+
+39
+00:10:30,639 --> 00:10:31,500
+Neyi kontrol ediyorduk?
+
+40
+00:10:31,599 --> 00:10:33,240
+İşte ne zaman direkt buraya a yazabilirdik?
+
+41
+00:10:33,339 --> 00:10:34,179
+Ne zaman yazabiliyorduk?
+
+42
+00:10:34,279 --> 00:10:37,059
+Fonksiyon orada tanımsız değilse yani bir sıkıntısı yoksa.
+
+43
+00:10:38,120 --> 00:10:41,759
+Artı o noktada parçalanmamışsa o zaman direkt yazabiliyorduk.
+
+44
+00:10:41,979 --> 00:10:45,899
+O noktada sıkıntısı varsa, belirsizliği varsa o belirsizliği çözmeye çalışıyorduk.
+
+45
+00:10:46,159 --> 00:10:46,759
+Nasıl çözüyorduk?
+
+46
+00:10:46,819 --> 00:10:48,740
+İşte cebirsel işlemlerle başlamıştık yola.
+
+47
+00:10:48,879 --> 00:10:50,079
+Sonra nereye gitmişti iş?
+
+48
+00:10:50,079 --> 00:10:53,399
+Türevi öğrendikten sonra lokital kuralını da kullanabilmeye başlamıştık.
+
+49
+00:10:53,500 --> 00:10:55,279
+0 bölü 0 ve sonsuz bölü sonsuz için.
+
+50
+00:10:55,919 --> 00:10:57,359
+Parçalı fonksiyon sana yapıyorduk.
+
+51
+00:10:57,459 --> 00:11:00,759
+Parçalı fonksiyon sana yapacağımız şey şu oluyordu en fazla.
+
+52
+00:11:01,719 --> 00:11:04,099
+A'ya yaklaşabileceğim iki farklı yol vardı.
+
+53
+00:11:04,500 --> 00:11:05,479
+Çünkü biz ne yapıyoruz?
+
+54
+00:11:05,599 --> 00:11:06,319
+Tek boyuttayız.
+
+55
+00:11:06,399 --> 00:11:08,579
+Dolayısıyla x eksenin üzerinde hareket ediyoruz.
+
+56
+00:11:08,679 --> 00:11:10,839
+Yata eksenin üzerinde gidebileceğim başka yol yoktu.
+
+57
+00:11:10,939 --> 00:11:11,879
+Sağdan limitine bakıyordum.
+
+58
+00:11:11,980 --> 00:11:13,039
+Soldan limitine bakıyordum.
+
+59
+00:11:13,439 --> 00:11:15,000
+İkisi birbirine eşitse tamam diyordum.
+
+60
+00:11:15,039 --> 00:11:15,620
+Bu limit var.
+
+61
+00:11:16,039 --> 00:11:17,120
+İşte bulduğum şu sayıda.
+
+62
+00:11:17,240 --> 00:11:19,139
+İkisi birbirinden farklıysa tamam diyordum.
+
+63
+00:11:19,199 --> 00:11:19,740
+Bu limit yok.
+
+64
+00:11:20,079 --> 00:11:23,139
+Dolayısıyla limitimiz mevcut değildir diyordum.
+
+65
+00:11:23,339 --> 00:11:28,599
+Ama çok değişkenli fonksiyona geldiğimizde çok değişkenli fonksiyon için şöyle düşündük.
+
+66
+00:11:28,740 --> 00:11:34,299
+Dedik ki artık özellikle de iki değişkenli fonksiyon için noktamız AB noktası olacak.
+
+67
+00:11:34,500 --> 00:11:36,539
+Ve biz x'yi AB'ye yaklaştıracağız.
+
+68
+00:11:37,039 --> 00:11:38,959
+Benim artık gidebileceğim bir sürü yolum var.
+
+69
+00:11:39,059 --> 00:11:40,399
+Bir boyut arttırdım sadece.
+
+70
+00:11:40,579 --> 00:11:41,859
+Bir tane düşü eksenin geldi.
+
+71
+00:11:41,980 --> 00:11:45,559
+Ben bakıyorum ki bu noktaya yaklaşabileceğim sonsuz farklı yön var.
+
+72
+00:11:45,559 --> 00:11:48,980
+Ve illa ki buradaki gibi burada yatay doğrularla yaklaşıyorduk aslında.
+
+73
+00:11:49,519 --> 00:11:55,519
+İllaki yatay veya düşeği değil artı doğrularla yaklaşmak zorunda da değilim.
+
+74
+00:11:55,939 --> 00:11:58,939
+Herhangi bu noktadan geçen eğriler boyunca da yaklaşabilirim.
+
+75
+00:11:59,139 --> 00:12:02,879
+İşte bugün bu eğri boyunca yaklaşmak, doğru boyunca yaklaşmak ne de onu öğreneceğiz.
+
+76
+00:12:02,879 --> 00:12:04,399
+Ve bizim ne işimize yarayacak?
+
+77
+00:12:05,379 --> 00:12:06,179
+Bunu öğreneceğiz.
+
+78
+00:12:06,899 --> 00:12:13,219
+Dün düşünmüştük, demiştik ki eğer biz bir limitin var olduğunu bu şekilde göstermek istiyorsak şunu yapmalıyım.
+
+79
+00:12:13,519 --> 00:12:18,240
+AB'den geçen bütün doğruları, bütün eğrileri hesaplayabilmeliyim.
+
+80
+00:12:18,679 --> 00:12:20,639
+Ve onlardaki limitleri hesaplamalıyım.
+
+81
+00:12:21,000 --> 00:12:23,679
+Sonsuz tane doğru geçiyor oradan, sonsuz tane eğri geçiyor.
+
+82
+00:12:23,779 --> 00:12:26,159
+Hepsini hadi bulduk, hepsinin limitlerini hesaplayacağım.
+
+83
+00:12:26,259 --> 00:12:27,879
+Hepsinin birbirine eşit çıktığını göstermeyim.
+
+84
+00:12:28,099 --> 00:12:29,139
+Bu mümkün değil tabii ki.
+
+85
+00:12:29,139 --> 00:12:35,859
+Dolayısıyla tek değişkenli fonksiyonlarda da gösterdiğimiz o epsilon delta ile limit tanımını göstermiştik.
+
+86
+00:12:35,939 --> 00:12:37,279
+Ama çok kullanmamıştık.
+
+87
+00:12:37,359 --> 00:12:39,259
+Çünkü dediğim gibi işler kolaydı.
+
+88
+00:12:39,519 --> 00:12:41,959
+Normal pratik işlemlerle yapabiliyorduk bunu.
+
+89
+00:12:42,559 --> 00:12:46,779
+Ama iki değişkenli fonksiyonlarda işler bu kadar kolay değil.
+
+90
+00:12:47,599 --> 00:12:49,740
+Bu sonsuz farklı yolu taramak yerine,
+
+91
+00:12:50,199 --> 00:12:53,439
+atıyorum işte yüz tanesine baktım, iki yüz tanesine baktım, sonuç üç çıktı.
+
+92
+00:12:53,439 --> 00:12:56,759
+Ya tamam herhalde üç çıkıyordur demek yerine şunu yapmam gerekiyor.
+
+93
+00:12:56,759 --> 00:13:02,099
+Ya tamam ben iki yüz tanesine baktım ama hala sonsuz tane bakmadığım eğri var, doğru var.
+
+94
+00:13:02,419 --> 00:13:05,099
+Dolayısıyla sonucun üç çıkması bende bir şıkkı uyandırdı.
+
+95
+00:13:05,179 --> 00:13:06,659
+Acaba gerçekten limit üç mü?
+
+96
+00:13:07,119 --> 00:13:10,659
+Bundan emin olmanın yolu üç yüz tanesine baktım, tamam budur demek değil.
+
+97
+00:13:10,819 --> 00:13:12,579
+Belki üç yüz birinci de farklı bir sonuç çıkacak.
+
+98
+00:13:12,939 --> 00:13:17,240
+Bundan emin olmanın yolu, işte dün yazdığımız bu birazcık korkunç gibi gözüken,
+
+99
+00:13:17,240 --> 00:13:22,159
+epsilon delta'lı tanımda buraya a, b noktalarımızın değerlerini,
+
+100
+00:13:22,259 --> 00:13:25,719
+buraya da ne değeri bulduysak demin ene üç diye düştük, farz ettik.
+
+101
+00:13:25,980 --> 00:13:32,079
+Buraya üç değerini yazarak gerçekten de buradaki delta ile buradaki epsilon arasında bir bağlantı var mı?
+
+102
+00:13:32,179 --> 00:13:34,019
+Varsa bunun nasıl bir bağlantısı var?
+
+103
+00:13:34,119 --> 00:13:35,019
+Bunu bulmak olacak.
+
+104
+00:13:36,159 --> 00:13:36,579
+Dün de söylemiştim.
+
+105
+00:13:36,579 --> 00:13:43,579
+Bu kısmı sınav haftanızdan sonraki hafta, yani sınav hazırlık uygulamasında yapmak istiyorum bununla ilgili soruları.
+
+106
+00:13:44,559 --> 00:13:46,679
+Çünkü bugün de yapsam unutacaksınız zaten.
+
+107
+00:13:48,980 --> 00:13:49,439
+Bakayım.
+
+108
+00:13:51,879 --> 00:13:54,459
+Tabii olabilir, aklımıza hep doğrular gelir mesela.
+
+109
+00:13:55,319 --> 00:13:57,879
+Sonra bakarız ki bir tane evde de farklı çıkıyor mesela.
+
+110
+00:13:58,368 --> 00:14:01,348
+Hani yakalarız illa ki bugün yakalayacağız mesela.
+
+111
+00:14:01,348 --> 00:14:09,427
+Ama atıyorum o kadar rast geldi ki hepsi yani bazen öyle şeyler var ki fonksiyonlar var ki doğrular da doğru boyunca yaklaşıyorsun.
+
+112
+00:14:09,528 --> 00:14:11,008
+Hep sıfır çıkıyor mesela atıyorum.
+
+113
+00:14:11,508 --> 00:14:14,427
+Ama y eşitir x kareli yaklaştığında bakıyorsun ki 3 çıkmış.
+
+114
+00:14:14,868 --> 00:14:17,208
+O yüzden bugün güzel seçimler yapmayı öğreneceğiz.
+
+115
+00:14:17,408 --> 00:14:21,808
+İşte hangisiyle seçim yaparsam ben sürekli sürekli tekrar etmek zorunda kalmayacağım.
+
+116
+00:14:22,908 --> 00:14:23,888
+Bunu yapacağız bugün.
+
+117
+00:14:24,308 --> 00:14:25,428
+Dolayısıyla çıkabilir tabii.
+
+118
+00:14:25,428 --> 00:14:28,588
+Doğrular boyunca hep limiti sabittir.
+
+119
+00:14:28,588 --> 00:14:30,948
+Evet doğrular boyunca limiti atıyorum işte 3'tür.
+
+120
+00:14:31,468 --> 00:14:36,188
+Ama herhangi bir eğri boyunca baktığımız anda 3 çıkmıyordur gibi var tabii ki öyle eğrilerimiz.
+
+121
+00:14:38,088 --> 00:14:43,628
+O yüzden şunu yapacağız dediğim gibi bu kısım matematik olarak gerçekten önemli.
+
+122
+00:14:43,807 --> 00:14:45,488
+Yani şunu söylüyoruz aslında burada.
+
+123
+00:14:45,668 --> 00:14:49,288
+Limit x'ye a b'ye yaklaşırken f x'ye de l'ye yaklaşır.
+
+124
+00:14:49,448 --> 00:14:51,648
+x'ye'nin a b'ye yaklaşması ne demek mi?
+
+125
+00:14:51,728 --> 00:14:54,928
+Şurada yazdığımız bu korkunç gibi gözüken şey aslında bir çember denklemi.
+
+126
+00:14:54,928 --> 00:14:59,048
+x y noktası ile a b arasındaki mesafeyi yazıyorum aslında.
+
+127
+00:14:59,308 --> 00:15:00,408
+Ya da şöyle düşünebiliriz.
+
+128
+00:15:00,528 --> 00:15:06,828
+a b merkezi delta yarı çatlı çemberin içindeki noktalarla yaklaşıyorum ben a b noktasına.
+
+129
+00:15:06,928 --> 00:15:08,368
+Dolayısıyla noktalarımı buradan alıyorum.
+
+130
+00:15:08,868 --> 00:15:13,408
+Benim uzaklık kavramım yani yaklaşma için kullandığım yarı çat delta'ymış.
+
+131
+00:15:13,408 --> 00:15:16,368
+Burada ne diyorum f x'ye l'ye yaklaşıyor.
+
+132
+00:15:16,748 --> 00:15:17,788
+Ne kadar yaklaşıyor?
+
+133
+00:15:17,848 --> 00:15:19,148
+Epsilon kadar yaklaşıyor.
+
+134
+00:15:19,268 --> 00:15:21,768
+Yani şöyle bir mesafede yaklaşıyor.
+
+135
+00:15:22,148 --> 00:15:23,508
+Ve bu bana şunu söylüyor.
+
+136
+00:15:23,608 --> 00:15:37,308
+Eğer gerçekten limit varsa diyor burada kullandığın delta ile şurada kullandığın epsilon yani f x'ye'nin l'ye yaklaşma mesafesiyle x'ye'nin a b'ye yaklaşma mesafesiyle yaklaşmak için kullandığın yarı çap olacak.
+
+137
+00:15:37,508 --> 00:15:42,388
+Burada tabii iki boyutta olduğumuz için kullandığımız bu yarı çap arasında bir ilişki var.
+
+138
+00:15:42,388 --> 00:15:49,408
+Yani buradan aldığın eleman eğer limit gerçekten l sayısıysa gidip de bu aralığın dışında bir yere düşmeyecek diyor.
+
+139
+00:15:49,548 --> 00:15:51,788
+İlla ki buradan aldığın eleman da şuraya düşecek.
+
+140
+00:15:51,988 --> 00:15:53,988
+Çünkü delta ile sonrasında bağlantı var diyor.
+
+141
+00:15:54,307 --> 00:15:57,668
+İşte normal şartlar altında biz denedik denedik baktık hep aynı çıkıyor.
+
+142
+00:15:58,028 --> 00:16:02,668
+Gerçekten de böyle mi diye düşünüp delta ile sonrasında bağlantıyı kurmam gerekiyor.
+
+143
+00:16:03,048 --> 00:16:04,268
+Nasıl anlayacağım peki?
+
+144
+00:16:04,368 --> 00:16:07,328
+Mesela kurdum bağlantıyı işte 300 tanesinde 3 çıktı.
+
+145
+00:16:07,888 --> 00:16:11,067
+Dedim daha fazla yapmama gerek yok galiba 3 denedim.
+
+146
+00:16:11,067 --> 00:16:15,128
+İşte koydum bütün tanımlarımı delta ile epsilon arasında şöyle bir bağlantı buldum mesela.
+
+147
+00:16:15,908 --> 00:16:18,248
+Delta epsilon böyle epsilon eksi 1'miş.
+
+148
+00:16:18,448 --> 00:16:20,067
+Aa tamam bağlantıyı kurdum gel sevinmeyeceğim.
+
+149
+00:16:21,228 --> 00:16:26,148
+Bana diyor ki her pozitif epsilon'a karşılık pozitif bir delta bulmalısın.
+
+150
+00:16:26,408 --> 00:16:28,028
+Aklımıza gelecek her epsilon için.
+
+151
+00:16:28,567 --> 00:16:31,528
+Epsilon ile delta aslında minnaç, mini minnaç sayılar.
+
+152
+00:16:31,928 --> 00:16:35,448
+Ama olabilecek her türlü sayıyı da kapsıyor her pozitif diyoruz çünkü.
+
+153
+00:16:35,448 --> 00:16:39,908
+Örneğin böyle bir delta bulduğumuzda epsilon eşittir bir için delta tanımsız çıkıyor.
+
+154
+00:16:40,188 --> 00:16:49,288
+Dolayısıyla gerçekten de başka bir deneseydim, başka bir eğri deneseydim bu limit gerçekten de 3 çıkmayacakmış durumunu anlamış oluyorum.
+
+155
+00:16:49,388 --> 00:16:51,048
+Bu şekilde bulduğum bir deltadan.
+
+156
+00:16:51,328 --> 00:16:54,908
+Ama şöyle bir delta bulursam bakacağım herhangi bir epsilon için bir sıkıntısı yok.
+
+157
+00:16:55,188 --> 00:16:56,328
+Epsilonlar pozitif çünkü.
+
+158
+00:16:56,908 --> 00:16:58,828
+Delta da bu durumda pozitif çıkacak.
+
+159
+00:16:58,828 --> 00:17:03,948
+Yaptığım işlem de doğruysa tamam gerçekten de limitin 3 olduğunu göstermiş oldum.
+
+160
+00:17:04,148 --> 00:17:06,827
+Herhangi bir epsilon'a karşılık delta da bir problem çıkmıyor.
+
+161
+00:17:06,988 --> 00:17:09,928
+Yaptığım işlemler de doğruysa tamam artık eminim diyebilirim.
+
+162
+00:17:10,208 --> 00:17:17,748
+Dolayısıyla bu bulduğumuz delta ile epsilon arasındaki bağlantı bana gerçekten de o denemediğim yollarda limitle ilgili bir sıkıntı olup olmadığını söyleyecek.
+
+163
+00:17:18,168 --> 00:17:18,968
+Ah fazlasıyla.
+
+164
+00:17:20,168 --> 00:17:21,847
+Neyse dursun orada silmeyin çıkıyor.
+
+165
+00:17:21,908 --> 00:17:22,367
+Resim oldu.
+
+166
+00:17:22,468 --> 00:17:23,628
+İçeride resmenin üstüne yapıştırdım.
+
+167
+00:17:24,928 --> 00:17:26,608
+Bu kısım kalsın şimdilik.
+
+168
+00:17:27,988 --> 00:17:36,748
+Neden muhtaç olduğumuzu ve neden aslında farklı yollar boyunca sürekli aynı çıkmayacak eğrilerle sizi uğraştırmayacağımızı,
+
+169
+00:17:37,307 --> 00:17:40,228
+daha doğrusu aynı çıkanlarla uğraştırmayacağımızı görmüş olun.
+
+170
+00:17:40,388 --> 00:17:43,307
+Bu birazcık daha yazılı sınava yönelik bir sınav sorusu.
+
+171
+00:17:44,028 --> 00:17:46,827
+Onun yerine biz zaten normal yazılı sınavda da sormuyorduk bunu.
+
+172
+00:17:47,168 --> 00:17:48,388
+Biz şunu öğrenmenizi istiyoruz.
+
+173
+00:17:48,548 --> 00:17:50,188
+Yani iki boyutta işler karışıkmış.
+
+174
+00:17:50,428 --> 00:17:51,748
+İki değişkenli fonksiyonlarda.
+
+175
+00:17:51,748 --> 00:17:55,148
+Sonsuz tane farklı yolu ya deneyecekmişim, mümkün değil.
+
+176
+00:17:55,148 --> 00:17:58,148
+Ya da işte epsilon dertalı tanımı yapacakmışım.
+
+177
+00:17:58,408 --> 00:18:00,768
+O da hani matematik olarak birazcık zorluyor.
+
+178
+00:18:00,847 --> 00:18:02,388
+Matematik öğrencilerini daha zorluyor.
+
+179
+00:18:02,827 --> 00:18:07,988
+Onun yerine madem ki farklı yollar boyunca alınan limitin birbirine eşit çıkmasını gösteremiyorum.
+
+180
+00:18:08,347 --> 00:18:10,708
+O zaman şunu en azından öğrenci fark edebilirsin.
+
+181
+00:18:11,108 --> 00:18:19,628
+O sonsuz tane yol içinden iki tane uygun bir yol seçsin ki limitler birbirinden farklı çıkacak şekilde farklı yol seçmeyi düşünebiliyor mu?
+
+182
+00:18:19,688 --> 00:18:23,408
+Yani limitin olmadığını gösterme birazcık daha ön plana çıkmış oluyor.
+
+183
+00:18:23,408 --> 00:18:25,768
+Burada gösterdik zaten limitin mevcut olduğunu.
+
+184
+00:18:26,188 --> 00:18:31,307
+Limitin olmadığını gösterme kısmı da dahil işinde konuların içine.
+
+185
+00:18:32,128 --> 00:18:39,067
+Peki dedik ki ne zaman bu şekilde düşünmeme veya epsilon dertalı uğraşmama gerek kalmayacak?
+
+186
+00:18:39,468 --> 00:18:41,028
+İki tane durum için söyledik bunu.
+
+187
+00:18:41,488 --> 00:18:42,108
+Birinci durum.
+
+188
+00:18:42,888 --> 00:18:49,087
+Aynen tek değişkenli fonksiyonunda olduğu gibi biz ne zaman sağdan soldan limite veya uzun uzun cebri set işlemlerle uğraşmıyorduk?
+
+189
+00:18:49,087 --> 00:18:52,587
+X yerine A yazdığımda herhangi bir sıkıntı olmadığında yazmıyordum.
+
+190
+00:18:52,688 --> 00:18:54,888
+Yani aslında fonksiyon sürekliyken yazmıyordum.
+
+191
+00:18:55,148 --> 00:18:56,288
+Şimdilik farkında değiliz onun.
+
+192
+00:18:56,968 --> 00:18:58,168
+Burada da aynı şey geçerli.
+
+193
+00:18:58,228 --> 00:18:59,748
+Birinci durum olarak dün şunu inceledik.
+
+194
+00:18:59,807 --> 00:19:02,948
+Fx'nin A belli hiçbir sıkıntısı yoksa orada parçalanmamış.
+
+195
+00:19:03,148 --> 00:19:09,087
+Orada X yerine A yerine B yazdığımda herhangi bir sıkıntısı yoksa o zaman ya dursana sonsuz farklı yoldan yaklaşayım.
+
+196
+00:19:09,168 --> 00:19:10,567
+Yok canım çok çektiğim metodü döndü.
+
+197
+00:19:10,567 --> 00:19:12,347
+Dolce tanımını yapayım dememe gerek yok.
+
+198
+00:19:12,728 --> 00:19:13,208
+Ne yapacağım?
+
+199
+00:19:13,307 --> 00:19:15,867
+X yerine A yerine B yazıp demin hesaplayacağım.
+
+200
+00:19:16,408 --> 00:19:17,128
+Bu birinci durum.
+
+201
+00:19:17,548 --> 00:19:20,188
+Çok karşımıza çıkmayacak tabii ki bu kadar basit hale.
+
+202
+00:19:21,228 --> 00:19:22,048
+İkinci durum.
+
+203
+00:19:22,128 --> 00:19:24,128
+İkinci durumdan birinci duruma geçmeye çalışacağız.
+
+204
+00:19:24,668 --> 00:19:28,608
+Elimizde X yerine A yerine B yazdığımızda karşımıza bir belirsizlik çıkacak.
+
+205
+00:19:29,248 --> 00:19:30,148
+Belirsizlik ne olabilir?
+
+206
+00:19:30,327 --> 00:19:31,428
+İşte sonsuzları sonsuzları olabilir.
+
+207
+00:19:31,587 --> 00:19:32,748
+Sıfır, gülü sıfır olabilir.
+
+208
+00:19:33,228 --> 00:19:33,668
+Vesaire.
+
+209
+00:19:33,668 --> 00:19:39,188
+Bu belirsizliği yok etmek için bir kere çok değişkenli fonksiyonlarda Lokital Kuralı'nı kesinlikle kullanmayacaktık.
+
+210
+00:19:39,347 --> 00:19:42,028
+Lokital Kuralı tek değişkenli fonksiyonlar için tanımlanmış.
+
+211
+00:19:42,428 --> 00:19:43,888
+Çünkü burada iki tane değişkenliği var.
+
+212
+00:19:44,008 --> 00:19:45,948
+E tamam payın türevini, paydanın türevini alayım.
+
+213
+00:19:46,268 --> 00:19:47,988
+Ama kime göre türev alayım sorusu.
+
+214
+00:19:48,228 --> 00:19:50,567
+Zaten kullanmamam gerektiğini söylemiş oluyor bana.
+
+215
+00:19:51,488 --> 00:19:52,048
+Ne yapıyordu?
+
+216
+00:19:52,567 --> 00:19:56,327
+Karşıma şu üç, ikinci, üçüncü ve dördüncü durumda.
+
+217
+00:19:56,588 --> 00:19:57,788
+Hepsinde aynı şeyi yapacağız.
+
+218
+00:19:57,948 --> 00:19:58,867
+Birinci durum değilmiş.
+
+219
+00:19:58,968 --> 00:19:59,168
+El el.
+
+220
+00:19:59,268 --> 00:20:00,668
+Karşımda bir belirsizlik var.
+
+221
+00:20:00,668 --> 00:20:05,628
+Ben bu belirsizliği cebirsel işlemlerle çözebilir miyim, çözebilecekmişim gibi gözüküyorsa
+
+222
+00:20:05,628 --> 00:20:09,248
+o zaman cebirsel işlemleri kullanarak çözmeye çalışıyorum.
+
+223
+00:20:09,488 --> 00:20:11,188
+Dolayısıyla cebirsel işlemleri çözmek ne demek?
+
+224
+00:20:11,347 --> 00:20:15,648
+Mesela sıfır bölü sıfırdaki pay veya paydadaki sıfırdan birinden kurtulmaya çalışacağım.
+
+225
+00:20:15,888 --> 00:20:18,468
+Sonsu ve sonsu da aynı şekilde birinden kurtulmaya çalışacağım.
+
+226
+00:20:19,268 --> 00:20:23,408
+Dolayısıyla sıkıntı kalmadığı bir duruma geçtiğim anda birinci duruma düşmüş olacağım.
+
+227
+00:20:23,708 --> 00:20:24,668
+En son bunu yapmıştık.
+
+228
+00:20:26,728 --> 00:20:27,928
+Onunla devam edeceğiz.
+
+229
+00:20:28,008 --> 00:20:29,168
+İki tane daha soru çözeceğim.
+
+230
+00:20:29,168 --> 00:20:31,008
+Yine gitmemişti çünkü bütün sorularımız.
+
+231
+00:20:31,448 --> 00:20:32,648
+Bir de şunu hatırladık.
+
+232
+00:20:34,628 --> 00:20:36,988
+Birinci durum geliyor işte.
+
+233
+00:20:37,327 --> 00:20:39,188
+Biraz küçücük işlem yapıp geliyoruz oraya.
+
+234
+00:20:39,528 --> 00:20:42,587
+Ama çok bir şey ölçmemiş oluyoruz onda.
+
+235
+00:20:43,228 --> 00:20:44,728
+Azıcık işlemle ölçeceğiz o kısmı.
+
+236
+00:20:46,648 --> 00:20:47,748
+Şunu şöyle alayım.
+
+237
+00:20:48,428 --> 00:20:49,648
+Sonra şunu da hatırladık.
+
+238
+00:20:49,748 --> 00:20:57,528
+Her ne kadar biz çok değişkenli fonksiyonlarla uğraşsak da özellikle trigometrik fonksiyonlarla ilgili mat bir daha kalma bazı bilgilerimiz vardı.
+
+239
+00:20:57,528 --> 00:20:59,128
+Neydi mesela orada şöyle diyorduk.
+
+240
+00:20:59,208 --> 00:21:01,847
+X sıfıra giderken sinüs X bölü X sıfırdı.
+
+241
+00:21:02,108 --> 00:21:02,748
+Şey birdi.
+
+242
+00:21:04,748 --> 00:21:13,448
+Hoşçakalın.
+
+243
+00:21:03,251 --> 00:21:06,551
+Hatta şöyle bir toparlama yapmıştım hatırlarsanız.
+
+244
+00:21:06,771 --> 00:21:08,271
+Daha doğrusu genelleştirme yapmıştım.
+
+245
+00:21:08,811 --> 00:21:14,632
+X herhangi bir a sayısına giderken fx fonksiyonu 0 ise o zaman şöyle diyebiliyorduk.
+
+246
+00:21:14,731 --> 00:21:21,831
+X a'ya giderken sinüs fx bölü fx veya tanjant fx bölü fx yine 7, 1'di.
+
+247
+00:21:22,591 --> 00:21:23,672
+Olayımız neydi bizim?
+
+248
+00:21:24,132 --> 00:21:26,511
+Şöyle kutucuklarla anlatıyorum ben bunu.
+
+249
+00:21:27,331 --> 00:21:30,211
+Sinüsün içiyle pi'de aynı fonksiyon olacak.
+
+250
+00:21:30,451 --> 00:21:32,432
+Sinüsün içi de pi'de de 0'a gidecek.
+
+251
+00:21:32,432 --> 00:21:36,392
+Buradakinin illa ki x 0'a giderken sinüs x bölü x'i yakalamama gerek yok.
+
+252
+00:21:36,571 --> 00:21:38,351
+En genel haliyle buydu olayımız.
+
+253
+00:21:38,771 --> 00:21:40,491
+Sinüsün içini ve pi'deyi aynı yap.
+
+254
+00:21:40,831 --> 00:21:43,412
+Sinüs 0 bölü 0 olduğu her durumda yapıştır biri.
+
+255
+00:21:43,871 --> 00:21:45,031
+Aynı şekilde tanjantılı.
+
+256
+00:21:45,632 --> 00:21:46,912
+Burada da aynı şey geçerli.
+
+257
+00:21:47,011 --> 00:21:52,311
+Yani dediğim gibi çok değişkenli girmiş diye fonksiyonların içinde onlar kendi özelliklerinden bir şey kaybetmiyorlar.
+
+258
+00:21:52,711 --> 00:21:56,211
+Burada da yine iki değişkenli bir fonksiyon var karşımda.
+
+259
+00:21:56,611 --> 00:21:57,871
+X'ye a b'ye gidiyor.
+
+260
+00:21:58,031 --> 00:22:01,132
+X'ye a b'ye giderken fx'ye fonksiyonu 0'a gidiyorsa.
+
+261
+00:22:01,132 --> 00:22:05,011
+Ve biz x'ye a b'ye giderken şunu hesaplıyorsak.
+
+262
+00:22:05,471 --> 00:22:09,132
+Sinüs fx'ye böyle fx'ye'yi hesaplıyorsak.
+
+263
+00:22:10,231 --> 00:22:13,692
+Yani yine ben burada fx'ye'ye u dönüşümü yapsam aslında şu var.
+
+264
+00:22:14,251 --> 00:22:15,412
+Sinüs u bölü u.
+
+265
+00:22:15,611 --> 00:22:17,871
+U da 0'a gitmiş olacak bu 0'a gittiği için.
+
+266
+00:22:18,091 --> 00:22:19,132
+X'ye a b 0'a.
+
+267
+00:22:19,132 --> 00:22:22,751
+Pardon nereye gidiyorsa işte çok da etkilemiyor bizi.
+
+268
+00:22:22,851 --> 00:22:24,471
+Sinüs 0 bölü 0 durumu var.
+
+269
+00:22:24,971 --> 00:22:26,451
+U'yu dönüştürmem gerekecek burada.
+
+270
+00:22:27,511 --> 00:22:29,211
+Sinüs 0 bölü 0 durumu var.
+
+271
+00:22:29,412 --> 00:22:32,111
+Aynı şekilde tanjantlı olursa da burası da fx'ye.
+
+272
+00:22:32,951 --> 00:22:34,111
+Burası da fx'ye.
+
+273
+00:22:34,551 --> 00:22:38,551
+Ben biliyorum ki x'ye a b'ye giderken burada da tanjant 0 bölü 0 durumu var.
+
+274
+00:22:38,791 --> 00:22:40,551
+O zaman ben buna yine 1 diyebiliyorum.
+
+275
+00:22:40,551 --> 00:22:43,611
+Aynı şekilde 1 eksi kosinüs x bölü x'i vardı.
+
+276
+00:22:43,871 --> 00:22:45,091
+Yine onu genelleştirmiştik.
+
+277
+00:22:45,192 --> 00:22:48,591
+Demiştik ki içi 0'a gidiyorsa eğer 1 eksi kosinüs 0 bölü 0.
+
+278
+00:22:48,971 --> 00:22:51,051
+Yine şunlar birbirine eşit olmak şartıyla.
+
+279
+00:22:51,652 --> 00:22:52,632
+Sonuç 0 çıkıyordu.
+
+280
+00:22:52,711 --> 00:22:54,551
+Dün yapmıştık mesela bununla ilgili bir örnek.
+
+281
+00:22:55,132 --> 00:22:58,652
+Dolayısıyla çok değişkenli de olsa biz aynı kuralları yine kullanabiliyoruz.
+
+282
+00:22:59,031 --> 00:23:04,971
+Karşınızda sinüs varsa tanjant varsa veya 1 eksi kosinüs bölü işte fonksiyonu bölü bir fonksiyon varsa
+
+283
+00:23:04,971 --> 00:23:06,711
+o zaman aklınıza bu kurallar gelebilir.
+
+284
+00:23:07,771 --> 00:23:09,331
+Mesela bu kuralı uygulamak için ne yapıyorduk?
+
+285
+00:23:09,331 --> 00:23:13,051
+Sinüsün içindeki fonksiyonu oluşturmak için payi payi diye bir şeylerle çarpıyorduk.
+
+286
+00:23:13,132 --> 00:23:15,231
+Tanjant için aynı şekilde, kosinüs için aynı şekilde.
+
+287
+00:23:15,391 --> 00:23:17,491
+Onların hepsi yine aynen burada da geçerli.
+
+288
+00:23:17,912 --> 00:23:19,271
+Tek yasak olan şey nedir?
+
+289
+00:23:19,471 --> 00:23:20,331
+L'Opital kuralı.
+
+290
+00:23:20,632 --> 00:23:23,511
+Çünkü kullanım amacının dışına çıkmış oluyoruz.
+
+291
+00:23:23,551 --> 00:23:27,571
+Biz kime göre türevi alacağız sorusu onu direkt geçersiz kılmış oluyor.
+
+292
+00:23:28,551 --> 00:23:29,951
+Şimdi birazdan kullanacağız bunları.
+
+293
+00:23:30,071 --> 00:23:31,251
+En son bunu yapmıştık.
+
+294
+00:23:31,551 --> 00:23:32,731
+Şimdi iki tane örnek yapalım.
+
+295
+00:23:32,971 --> 00:23:33,951
+Üçüncü duruma geçelim.
+
+296
+00:23:35,051 --> 00:23:36,971
+Mesela örneklerimizden bir tanesi bu ama
+
+297
+00:23:36,971 --> 00:23:38,751
+öfette birazcık kopyalamış.
+
+298
+00:23:38,932 --> 00:23:39,831
+Şurası eksi.
+
+299
+00:23:41,152 --> 00:23:45,192
+Diyor ki limit x'ye sıfırın sağından, ikinin solundan yaklaşılmış.
+
+300
+00:23:45,371 --> 00:23:47,251
+X sıfırın sağında y ikinin solundan.
+
+301
+00:23:47,432 --> 00:23:48,071
+Niye böyle yapmış?
+
+302
+00:23:48,251 --> 00:23:51,612
+Kök x'de, kök içinde iki eksi, y'de pozitif olsun diye yapmışım.
+
+303
+00:23:51,891 --> 00:23:52,811
+Böyle bir limitim var.
+
+304
+00:23:52,891 --> 00:23:53,672
+Bana bunu çözüyor.
+
+305
+00:23:53,672 --> 00:24:03,271
+Mesela eşittir soru işareti genel olarak kullanım şeklimiz limitin olduğu durumlar için kullanılıyor bu.
+
+306
+00:24:03,451 --> 00:24:06,331
+Ya da eşittir buraya bir şey yazabileceğiniz durumlar için kullanılıyor.
+
+307
+00:24:06,451 --> 00:24:08,371
+Yani sonsuz da olsa buraya bir şey yazabilmeniz.
+
+308
+00:24:08,432 --> 00:24:12,511
+Yani limit mevcut değildir artı sonsuz varsa tabii ki şıklarda hoş olmaz ama
+
+309
+00:24:12,511 --> 00:24:16,451
+genel olarak kullanım şekli limitin mevcut olduğunu size ifade ediyor.
+
+310
+00:24:16,451 --> 00:24:18,211
+diye bir düşünebilirsiniz.
+
+311
+00:24:18,392 --> 00:24:23,932
+Yani ilk oylamanız galiba bu limit mevcut üzerine olsun ama baktınız çözdünüz olmuyor.
+
+312
+00:24:24,172 --> 00:24:28,051
+Tamam demek ki beni yanıltmak için kullanmışlar diye bu soru işaretini düşünebilirsiniz.
+
+313
+00:24:28,692 --> 00:24:30,751
+Şimdi bakalım kimle karşı karşıya ne yapıyorum?
+
+314
+00:24:30,871 --> 00:24:32,751
+Hemen x yerine sıfır, y yerine sıfır koyuyorum.
+
+315
+00:24:33,031 --> 00:24:34,132
+Şey y yerine iki yazıyorum.
+
+316
+00:24:34,551 --> 00:24:35,731
+Bu sıfır oldu, bu iki oldu.
+
+317
+00:24:35,811 --> 00:24:36,471
+İkiyi çıkarttım.
+
+318
+00:24:36,551 --> 00:24:37,351
+Pay sıfır etti.
+
+319
+00:24:38,251 --> 00:24:39,112
+Buradan ne geldi?
+
+320
+00:24:39,192 --> 00:24:40,632
+Bu sıfır oldu, burası da sıfır etti.
+
+321
+00:24:40,771 --> 00:24:42,211
+Aa diyorum sıfırları sıfırmış.
+
+322
+00:24:43,152 --> 00:24:43,612
+Ne dedik?
+
+323
+00:24:43,672 --> 00:24:44,751
+Lopital kesinlikle yok.
+
+324
+00:24:44,751 --> 00:24:47,132
+Başka bir çarem yok burada.
+
+325
+00:24:47,331 --> 00:24:48,591
+Öyle bir seçim yapacağım.
+
+326
+00:24:50,451 --> 00:24:54,592
+Bakacağım diyeceğim ki yapsam yapsam ne yapsam şuradaki kara kökler bana göz kırpacak.
+
+327
+00:24:54,852 --> 00:24:56,811
+Kara kökler olduğunda genelde aklımıza ne geliyordu?
+
+328
+00:24:57,172 --> 00:24:58,271
+Eşlenik çarpımı geliyordu.
+
+329
+00:24:58,372 --> 00:24:59,311
+Yani şunu düşünüyorum.
+
+330
+00:24:59,791 --> 00:25:01,491
+Ben burada bir cebirsel işlem yapacağım.
+
+331
+00:25:01,711 --> 00:25:07,112
+Ya payın sıfırına ya da paydanın sıfırından daha da güzelim mümkünse ikisinden de kurtulmak istiyorum.
+
+332
+00:25:08,231 --> 00:25:10,771
+Bunun için yapabileceğim işte çarpanları ayırma var.
+
+333
+00:25:11,211 --> 00:25:13,132
+Basit kesirler demişim.
+
+334
+00:25:13,132 --> 00:25:19,132
+Eşlenik çarpımı veya işte biraz önceki gibi sinüstü kosünüstü bu özdeşlikler veya trigonometrik özdeşlikler.
+
+335
+00:25:20,451 --> 00:25:21,751
+Bunun yardımıyla bir şeyler yapacağım.
+
+336
+00:25:22,071 --> 00:25:25,011
+E bari elim değmişken şu köklerden de kurtulayım mantığıyla.
+
+337
+00:25:25,451 --> 00:25:27,471
+Aklıma hemen köklü soruda ne gelmeli?
+
+338
+00:25:27,652 --> 00:25:29,132
+Eşlenik çarpım gelmeli.
+
+339
+00:25:30,251 --> 00:25:31,612
+Kimin eşleniğiyle çarpacağım?
+
+340
+00:25:31,731 --> 00:25:32,932
+Şu kara köklüyle çarpacağım.
+
+341
+00:25:33,031 --> 00:25:34,751
+Yani kimin olup bir onun eşleniği?
+
+342
+00:25:34,832 --> 00:25:37,771
+Buna a artı b dersek a eksi b'lisiyle çarpacağım.
+
+343
+00:25:38,152 --> 00:25:39,051
+Arası eksilisi.
+
+344
+00:25:39,511 --> 00:25:40,652
+Şuradan devam edelim.
+
+345
+00:25:41,011 --> 00:25:47,072
+Diyelim ki limit x y 0'ın sağından 2'ne solundan gidiyormuş.
+
+346
+00:25:47,072 --> 00:25:50,852
+Bunu çarpmaya dağıtmaya gerek yok.
+
+347
+00:25:50,991 --> 00:25:52,332
+Sen tek parça kal diyorum.
+
+348
+00:25:52,471 --> 00:25:54,172
+Bunun yanına bir de şu arkadaş geldi.
+
+349
+00:25:55,811 --> 00:25:57,932
+Sonra fayda ne hale gelecek?
+
+350
+00:25:58,112 --> 00:25:59,872
+Bu a artı b'de bu a eksi b'de.
+
+351
+00:25:59,951 --> 00:26:01,791
+Dolayısıyla a kare eksi b kare haline dönüşecek.
+
+352
+00:26:01,932 --> 00:26:03,412
+Yani şunun karesi x.
+
+353
+00:26:03,951 --> 00:26:05,132
+Eksi bunun karesi.
+
+354
+00:26:05,511 --> 00:26:06,991
+Dolayısıyla burada kare kök kalkacak.
+
+355
+00:26:07,152 --> 00:26:08,632
+Eksiyle çarparsan ne olacak?
+
+356
+00:26:08,932 --> 00:26:10,192
+Artı y eksi 2.
+
+357
+00:26:10,731 --> 00:26:12,451
+Olur yukarıya iki kare farkı da olur.
+
+358
+00:26:12,551 --> 00:26:12,951
+O da olur.
+
+359
+00:26:13,172 --> 00:26:14,551
+Yukarıyı da çarpanları ayırabiliriz.
+
+360
+00:26:14,551 --> 00:26:14,872
+Doğru.
+
+361
+00:26:15,011 --> 00:26:15,872
+İkisi de çalışır.
+
+362
+00:26:16,751 --> 00:26:17,092
+O da olur.
+
+363
+00:26:17,152 --> 00:26:18,751
+Eşlenir çarpımı olduğu gibi.
+
+364
+00:26:19,392 --> 00:26:20,231
+İkinci yol olarak.
+
+365
+00:26:20,352 --> 00:26:21,731
+Umus Han'ın söylediği gibi o da doğru.
+
+366
+00:26:21,912 --> 00:26:23,332
+Çarpanları ayırma da yapabiliriz.
+
+367
+00:26:23,912 --> 00:26:26,332
+Hocam zaten iki yöltem birbirlerinin tersi değil mi?
+
+368
+00:26:26,332 --> 00:26:26,771
+Tabii tabii.
+
+369
+00:26:26,872 --> 00:26:27,372
+Aynen öyle.
+
+370
+00:26:28,051 --> 00:26:33,172
+Hani çarpanları ayırmanın çalıştığı yerde genelde eşlenir çarpımla da yola çıkabiliriz.
+
+371
+00:26:33,271 --> 00:26:33,451
+Olur.
+
+372
+00:26:33,531 --> 00:26:34,051
+İkisi de olur.
+
+373
+00:26:35,531 --> 00:26:36,372
+Ne yaptık?
+
+374
+00:26:36,412 --> 00:26:37,291
+Ben eşlenir çarptım.
+
+375
+00:26:37,291 --> 00:26:37,932
+Bunlar gitti.
+
+376
+00:26:38,152 --> 00:26:40,311
+Dolayısıyla şuna ulaşmış oldum.
+
+377
+00:26:40,372 --> 00:26:42,572
+Artık bakıyorum sıfırlardan kurtuldum.
+
+378
+00:26:42,932 --> 00:26:44,692
+En azından payladaki sıfırımdan kurtuldum.
+
+379
+00:26:44,771 --> 00:26:46,031
+Şuradaki sıfırından kurtulamadım.
+
+380
+00:26:46,572 --> 00:26:49,051
+X, Y, Y, Y yazarsam bundan da sıfır geliyor.
+
+381
+00:26:49,112 --> 00:26:49,912
+Bundan da sıfır geliyor.
+
+382
+00:26:50,112 --> 00:26:53,011
+Aha diyorum ki limitin sonucu sıfırmış.
+
+383
+00:26:54,372 --> 00:26:55,051
+Tamam mıdır?
+
+384
+00:26:55,511 --> 00:26:57,271
+Normal bildiğimizce birisiyle işlem yapacağız.
+
+385
+00:26:57,271 --> 00:26:58,672
+Ne zaman yapacağım bunu?
+
+386
+00:26:59,251 --> 00:27:09,092
+Dediğim gibi genelde diyeyim size birazdan göreceksiniz limitin olmadığını gösterme sorularında limit değerimiz sıfır sıfır oluyor genelde.
+
+387
+00:27:09,811 --> 00:27:11,251
+Bu da sizin için bir ipucu olsun.
+
+388
+00:27:11,372 --> 00:27:15,152
+Burada sıfır sıfır değil de sıfır ikiye hani bu limit var gibi gözüküyor.
+
+389
+00:27:15,392 --> 00:27:17,412
+İşlem yapabilecekmişim gibi gözüküyor zaten.
+
+390
+00:27:17,572 --> 00:27:21,632
+Dolayısıyla birinci oyumuzu yani bir kere dedik ki bu durum değil.
+
+391
+00:27:22,672 --> 00:27:26,132
+İkinci, üçüncü, dördüncü durumların her birinde birazdan dolduracağım bunları.
+
+392
+00:27:26,132 --> 00:27:28,412
+Bunların her birinde bir sıkıntı var fonksiyonda.
+
+393
+00:27:28,951 --> 00:27:31,892
+Hemen diyeceğiz ben bu sıkıntıyı giderebilir miyim cebis işlemlerle?
+
+394
+00:27:31,951 --> 00:27:32,132
+Yok.
+
+395
+00:27:32,592 --> 00:27:34,372
+Gideremiyorsam acaba limit var mı yok mu?
+
+396
+00:27:34,471 --> 00:27:35,172
+Bunu düşünüyeceğiz.
+
+397
+00:27:35,311 --> 00:27:37,112
+Galiba bu limit yok diye düşünüyorsak.
+
+398
+00:27:37,192 --> 00:27:37,751
+Üçüncü durum.
+
+399
+00:27:38,051 --> 00:27:42,451
+Galiba bu limit var diyorsak o zaman iş başa düştü deyip et dön derdine tanımı yapacağız.
+
+400
+00:27:44,392 --> 00:27:45,192
+Bir de şuna bakalım.
+
+401
+00:27:45,592 --> 00:27:46,592
+Bu da yaz okulu sorusu.
+
+402
+00:27:46,672 --> 00:27:47,692
+Yaz okulunda sorulmuş.
+
+403
+00:27:48,291 --> 00:27:49,331
+Eşittir soru işareti.
+
+404
+00:27:49,471 --> 00:27:50,271
+Hatta şey diye sorulmuş.
+
+405
+00:27:50,352 --> 00:27:52,511
+Limitinin değeri kaçtır mı demişler.
+
+406
+00:27:52,511 --> 00:27:54,652
+Limitinin değeri nedir diye sorulmuşlar.
+
+407
+00:27:54,652 --> 00:27:57,892
+Dolayısıyla direkt limitin mevcut olduğunu söylemişler zaten.
+
+408
+00:27:59,511 --> 00:28:00,471
+Ne yapalım burada?
+
+409
+00:28:01,632 --> 00:28:02,432
+2, 0.
+
+410
+00:28:03,432 --> 00:28:05,291
+E üzeri kök x, y.
+
+411
+00:28:06,332 --> 00:28:07,592
+Bir de şöyle yapalım.
+
+412
+00:28:07,932 --> 00:28:09,632
+Ajant x, y bölü y.
+
+413
+00:28:09,632 --> 00:28:10,152
+1, 2, 3, 4, 5, 5, 5, 6, 7, 8, 9, 10, 9, 9, 10, 9, 9, 10, 9
+
+414
+00:28:11,571 --> 00:28:12,511
+Aynen onu yapacağız.
+
+415
+00:28:12,731 --> 00:28:13,491
+X ile mi çarpacağız?
+
+416
+00:28:13,811 --> 00:28:14,831
+Evet onu yapacağız.
+
+417
+00:28:14,931 --> 00:28:17,391
+Yani dediğim gibi tek değişkenliği fonksiyondaki gibi düşünün.
+
+418
+00:28:17,451 --> 00:28:18,771
+Biraz önce yazdım kuraldaki gibi.
+
+419
+00:28:18,871 --> 00:28:21,631
+Ya şurada da bir X'ye olsa ben ne güzel bundan bir deyip kurtulacaktım.
+
+420
+00:28:21,691 --> 00:28:23,751
+O zaman ben bunu X ile çarpıp X ile böldüm.
+
+421
+00:28:24,331 --> 00:28:26,491
+Diyorum ki sen nereye gidiyorsun?
+
+422
+00:28:26,651 --> 00:28:28,151
+Yine sıfır bacı sıfır belirsizliği vardı.
+
+423
+00:28:28,251 --> 00:28:29,291
+Sen bire gidiyorsun artık.
+
+424
+00:28:29,771 --> 00:28:30,611
+Sen nereye gidiyorsun?
+
+425
+00:28:30,791 --> 00:28:33,711
+X yerine sıfır, Y yerine sıfır yazarsam E üzeri sıfır olacak.
+
+426
+00:28:33,871 --> 00:28:34,791
+E sen de bire gidiyorsun.
+
+427
+00:28:35,071 --> 00:28:35,951
+E sen nereye gittin?
+
+428
+00:28:36,031 --> 00:28:36,771
+X kaça gidiyor?
+
+429
+00:28:36,871 --> 00:28:37,451
+2'ye gidiyor.
+
+430
+00:28:37,451 --> 00:28:39,131
+İşte burada birazcık gözünüz aldanmayacak.
+
+431
+00:28:39,131 --> 00:28:40,691
+Akışıklarda sıfır da vardı mesela.
+
+432
+00:28:41,111 --> 00:28:41,971
+Gözünüz kaydı.
+
+433
+00:28:42,071 --> 00:28:45,811
+X sıfıra gidiyormuş deyip buna sıfır yazdığınız anda gider sıfır işaretlersiniz.
+
+434
+00:28:46,211 --> 00:28:47,351
+O yüzden X kime gidiyor?
+
+435
+00:28:47,451 --> 00:28:48,171
+Y kime gidiyor?
+
+436
+00:28:48,971 --> 00:28:50,192
+Şey derdiniz de yok artık.
+
+437
+00:28:50,371 --> 00:28:54,471
+Hani normal yazılı sınav olsa aman limitleri yazmayı unuttu öğrenci diye puan kırıyorduk.
+
+438
+00:28:55,111 --> 00:28:57,771
+Unutmamak için bence şöyle yapmanız daha iyi olur.
+
+439
+00:28:58,231 --> 00:28:59,931
+X ikiye, Y sıfıra giderken alıyorum.
+
+440
+00:29:00,051 --> 00:29:03,471
+Dolayısıyla koyacağınız değerleri şuradan bakmak yerine buradan bakmak daha kolay.
+
+441
+00:29:04,371 --> 00:29:05,391
+Gözünüz kayabilir çünkü.
+
+442
+00:29:05,571 --> 00:29:07,931
+Dolayısıyla buradan bir, buradan bir, buradan iki geldi.
+
+443
+00:29:07,931 --> 00:29:09,691
+Sonuç ikiymiş.
+
+444
+00:29:10,851 --> 00:29:11,551
+Nasıl düşündük?
+
+445
+00:29:11,651 --> 00:29:14,391
+Tabii önce düşünme aşamasını atladım, direkt yaptım.
+
+446
+00:29:14,831 --> 00:29:18,051
+Yani ikinci durumdayız diye ama normal bir soru geldiğinde karşımıza.
+
+447
+00:29:18,491 --> 00:29:19,911
+Değeri kaçtır demiş zaten.
+
+448
+00:29:20,011 --> 00:29:20,931
+Değeri nedir diye sormuş.
+
+449
+00:29:21,051 --> 00:29:22,971
+Dolayısıyla limitin olduğunu belli etmiş aslında.
+
+450
+00:29:23,411 --> 00:29:24,271
+Ama oldu ki demedi.
+
+451
+00:29:24,531 --> 00:29:28,192
+Limitiyle ilgili, limitine değeriyle ilgili veya limitiyle ilgili hangisi söylenebilir?
+
+452
+00:29:28,291 --> 00:29:28,971
+Aşağıya yazdı.
+
+453
+00:29:29,031 --> 00:29:30,591
+Limit vardır, sonuç sıfırdır.
+
+454
+00:29:30,671 --> 00:29:31,531
+Limit vardır, ikidir.
+
+455
+00:29:31,631 --> 00:29:32,291
+Limit yoktur.
+
+456
+00:29:32,291 --> 00:29:34,531
+İşte sonsuz çıktığı için limit yoktur vesaire.
+
+457
+00:29:34,651 --> 00:29:35,551
+Uydur diyelim bir şeyler.
+
+458
+00:29:35,551 --> 00:29:37,351
+Hemen şuna bakacağız önce.
+
+459
+00:29:37,431 --> 00:29:38,271
+Hangi belirsizlik var?
+
+460
+00:29:38,351 --> 00:29:39,331
+Sıfır bölü sıfır.
+
+461
+00:29:40,531 --> 00:29:41,711
+Bakacağınız şey şu.
+
+462
+00:29:42,251 --> 00:29:44,171
+Cebrisel işlemler işe yarar mı?
+
+463
+00:29:45,631 --> 00:29:48,011
+Yoksa cebrisel işlem işe yaramaz mı?
+
+464
+00:29:48,011 --> 00:30:01,011
+Yoksa cebrisel işlemler işe yarar mı?
+
+465
+00:29:52,468 --> 00:29:54,087
+Kontrol etmeniz gereken şey bu olsun.
+
+466
+00:29:54,248 --> 00:29:58,648
+Eşin içinde dediğim gibi sinüs, tanjant varsa önce olabilirden yana oyunuzu kullanın.
+
+467
+00:29:58,928 --> 00:30:00,948
+Düşündük taşındık olabilir mi diye düşündük.
+
+468
+00:30:01,148 --> 00:30:01,768
+Baktık ki olabilir.
+
+469
+00:30:02,348 --> 00:30:05,488
+Sürekli de geçtikten sonra buna benzer bir sinüslü sorumuz var.
+
+470
+00:30:05,608 --> 00:30:08,168
+Orada da mesela sinüs var acaba işe yarar mı diye bakacağız.
+
+471
+00:30:08,348 --> 00:30:09,428
+İşe yaramadığını göreceğiz.
+
+472
+00:30:09,968 --> 00:30:12,468
+Dolayısıyla sinüs, tanjant işte bir eksik osinüsü verdi.
+
+473
+00:30:12,668 --> 00:30:15,327
+Olabilir mi diye düşündükten sonra baktık ki olmuyor.
+
+474
+00:30:15,327 --> 00:30:18,807
+Galiba bunun limiti yokmuş diye düşünebilirsiniz.
+
+475
+00:30:19,348 --> 00:30:20,368
+Bu ikinci durumumuzdu.
+
+476
+00:30:20,368 --> 00:30:22,748
+Şimdi gelelim üçüncü duruma.
+
+477
+00:30:23,668 --> 00:30:25,807
+Şuradan yazalım sonra aşağıya geçelim.
+
+478
+00:30:26,128 --> 00:30:27,588
+Ya da orada yazalım buraya kopyalarım.
+
+479
+00:30:28,148 --> 00:30:29,368
+Birinci durumda sıkıntı yoktu.
+
+480
+00:30:29,448 --> 00:30:30,688
+İkinci durumda sıkıntı vardı.
+
+481
+00:30:31,028 --> 00:30:32,468
+Belirsizlik vardı daha doğrusu.
+
+482
+00:30:32,708 --> 00:30:35,288
+Ama cebirsel işlemlerle giderebileceğimizi düşündük.
+
+483
+00:30:35,807 --> 00:30:37,148
+Üçüncü durumda ne diyeceğiz?
+
+484
+00:30:37,588 --> 00:30:39,668
+Yine sıkıntı var maalesef.
+
+485
+00:30:40,668 --> 00:30:42,788
+Diyelim ki fx, y, ne?
+
+486
+00:30:43,648 --> 00:30:48,988
+a, b noktasında ya da fx, y, a, b noktasında diyelim sinüyle.
+
+487
+00:30:48,988 --> 00:30:54,988
+noktasındaki limiti için diyelim.
+
+488
+00:30:56,768 --> 00:30:57,847
+Belirsizlik varsa.
+
+489
+00:30:58,847 --> 00:31:00,048
+Biraz önceki durum var.
+
+490
+00:31:01,807 --> 00:31:02,948
+Ama bu kez ne olacak?
+
+491
+00:31:03,548 --> 00:31:04,988
+Ve bu belirsizlik
+
+492
+00:31:04,988 --> 00:31:09,528
+cebirsel işlemlerle giderilemiyor bu sefer.
+
+493
+00:31:10,788 --> 00:31:12,768
+Cebirsel işlemler ile
+
+494
+00:31:12,768 --> 00:31:16,868
+giderilemeyecek gibiyse
+
+495
+00:31:16,868 --> 00:31:18,868
+ve
+
+496
+00:31:18,868 --> 00:31:21,168
+yazamadım.
+
+497
+00:31:24,067 --> 00:31:24,848
+Giderilemeyecek.
+
+498
+00:31:24,968 --> 00:31:26,488
+Nereden buluyorum bu kelimeleri de?
+
+499
+00:31:26,928 --> 00:31:28,448
+Giderilemeyecek gibiyse
+
+500
+00:31:28,448 --> 00:31:30,868
+ve tabii ki
+
+501
+00:31:31,728 --> 00:31:32,868
+limitin
+
+502
+00:31:32,868 --> 00:31:34,868
+olmadığını düşünüyorsak.
+
+503
+00:31:34,868 --> 00:31:35,368
+düşünüyorsak.
+
+504
+00:31:35,368 --> 00:31:56,368
+gelişimlerle
+
+505
+00:31:41,748 --> 00:31:52,607
+Öyle bir hissiyat gelecek artık bir noktadan sonra içimize. O zaman ne diyeceğiz? Limitin olmadığını göstereceğiz. Madem öyle düşünüyoruz, o zaman limitin olmadığını gösteririz.
+
+506
+00:31:55,748 --> 00:32:06,628
+Ama öyle bir hissiyat geldi. Yaptınız, yaptınız. Sürekli aynı sonuç çıkıyor. O zaman şunu düşünürsünüz. Ya ben yanlış hissiyata sahibim galiba. Acaba var mı diye düşünüp o zaman hepsi önerdi tamamına gidersiniz.
+
+507
+00:32:06,628 --> 00:32:16,788
+Ama o da zaten test sınavı için bence uzun olur ama olabilir de tabii ki niye olmasın? Diğer sorular daha kısadır. Bir tane de bunu soralım ne bişer için.
+
+508
+00:32:16,867 --> 00:32:17,968
+Niye bilmedim bugün bilmiyorum.
+
+509
+00:32:19,367 --> 00:32:23,548
+Bir dakika belki yazanlar vardır. Küçük diyeyim. Ondan sonrasını büyütürüm.
+
+510
+00:32:26,148 --> 00:32:28,928
+Üçüncü durumumuz da bu. Yine belirsizlik var.
+
+511
+00:32:33,748 --> 00:32:38,408
+Yine belirsizliğimiz var ama bu belirsizliği de cebri seçimlerle gideremiyoruz.
+
+512
+00:32:38,708 --> 00:32:40,688
+Galiba bu limiti yok diye düşünüyoruz.
+
+513
+00:32:41,148 --> 00:32:44,128
+Bu genelde dediğim gibi 0-0 noktasında oluyor.
+
+514
+00:32:44,408 --> 00:32:46,768
+Ama Epsilon Delta'lılar da genelde 0-0'da oluyor.
+
+515
+00:32:47,148 --> 00:32:49,768
+Neden 0-0 ile çalıştığımızı da birazdan anlayacaksınız.
+
+516
+00:32:50,968 --> 00:32:52,847
+Bir dakika chat kayboldu bunu yaparken.
+
+517
+00:32:53,688 --> 00:32:56,928
+O zaman ne yapacakmışım? Limitin mevcut olmadığını gösterecekmişim.
+
+518
+00:32:56,928 --> 00:33:02,567
+Şimdi limitin mevcut olmadığını göstermek için genel olarak iki tane yöntem kullanacağız.
+
+519
+00:33:02,567 --> 00:33:04,867
+Tekrar falan işin var mı?
+
+520
+00:33:09,460 --> 00:33:15,340
+Bunlardan bir tanesi şurada yazdığım iki kat limit, ardışık limit dediğim yöntem kitapta yok.
+
+521
+00:33:15,840 --> 00:33:17,039
+Ben bunu ekstradan anlatıyorum.
+
+522
+00:33:17,160 --> 00:33:19,740
+Çünkü bunların da işe yaradığı durumlar var.
+
+523
+00:33:20,039 --> 00:33:22,860
+Sınavda genelde işe yaramadığı durumları soruyoruz.
+
+524
+00:33:22,920 --> 00:33:26,740
+Ama yine de bulunsun bir kenarda belki de işe yaradığı durum sorulur.
+
+525
+00:33:26,799 --> 00:33:29,220
+Hemen böyle bir çırpıda limitin olmadığını görebiliyorsunuz.
+
+526
+00:33:29,259 --> 00:33:30,220
+Basit bir yöntem çünkü.
+
+527
+00:33:31,120 --> 00:33:32,500
+Bir de çift yol testi var.
+
+528
+00:33:32,500 --> 00:33:36,240
+Çift yol testi de biraz önce söylediğim gibi sonsuz tane farklı yolumuz vardı.
+
+529
+00:33:36,319 --> 00:33:37,519
+A-B'ye yaklaşmak için.
+
+530
+00:33:37,519 --> 00:33:43,980
+O yollardan iki tanesini, o yüzden çift yol testi, öyle iki tanesini seçmek aklımıza geliyor ki
+
+531
+00:33:43,980 --> 00:33:47,700
+o iki yol boyunca limitin farklı olduğunu gösterdiğim anda limit yoktur diyebiliyorum.
+
+532
+00:33:47,799 --> 00:33:49,840
+Sonsuz tanesine bakmama gerek kalmıyor.
+
+533
+00:33:50,240 --> 00:33:51,380
+Şimdi sırayla başlayalım.
+
+534
+00:33:51,819 --> 00:33:54,360
+Zaten bugünlük bir bunu söyleyeceğiz, anlatacağız.
+
+535
+00:33:54,460 --> 00:33:56,240
+İki kat limit nedir, çift yol testi nedir?
+
+536
+00:33:56,440 --> 00:33:57,819
+Bir de sürekli tanımını vereceğiz.
+
+537
+00:33:57,819 --> 00:34:01,259
+Çok bir şey yok aslında bugün yapacağımız kalan konumuz.
+
+538
+00:34:02,319 --> 00:34:04,039
+Önce iki kat limit neymiş?
+
+539
+00:34:04,579 --> 00:34:05,400
+Bir bunu öğrenelim.
+
+540
+00:34:05,519 --> 00:34:06,799
+Ardışık limit de deniyor buna.
+
+541
+00:34:07,519 --> 00:34:09,980
+Diyoruz ki önce kiminle muhataptık?
+
+542
+00:34:11,019 --> 00:34:11,940
+Muhatabımız şu.
+
+543
+00:34:12,539 --> 00:34:17,800
+X'ye A-B'ye giderken F-X-Y fonksiyonunun limitiyle uğraşıyoruz.
+
+544
+00:34:18,480 --> 00:34:20,340
+Bu limiti için yapacağız işlemlerimizi.
+
+545
+00:34:22,860 --> 00:34:26,880
+İki kat limit veya ardışık limit dediğimiz şey özel bir limit alma şekli.
+
+546
+00:34:26,980 --> 00:34:29,300
+Normalde biz burada iki değişkenli bir fonksiyonla uğraşıyoruz.
+
+547
+00:34:29,400 --> 00:34:32,460
+Dolayısıyla X'i A'ya, Y'ye B'yi beraber götürüyoruz aslında.
+
+548
+00:34:32,699 --> 00:34:34,119
+Hani biraz da böyle çaprazlama çizdim.
+
+549
+00:34:34,119 --> 00:34:36,360
+Ama farklı şekillerde de götürebiliriz.
+
+550
+00:34:36,760 --> 00:34:39,619
+O da şu buna eksenler boyunca limit de deniyor.
+
+551
+00:34:40,380 --> 00:34:43,599
+Diyoruz ki birinci durum olarak mesela şöyle yapalım.
+
+552
+00:34:44,079 --> 00:34:46,139
+Tek değişkenliğiymiş gibi davranalım biz buna.
+
+553
+00:34:46,340 --> 00:34:47,340
+İki kere limit alalım.
+
+554
+00:34:47,460 --> 00:34:50,220
+O yüzden iki kat limit veya ardışık limit diyor.
+
+555
+00:34:50,380 --> 00:34:52,240
+Arka arkaya iki tane limit alacağız.
+
+556
+00:34:52,240 --> 00:34:54,740
+Bunu yaparken şöyle yapacağız.
+
+557
+00:34:55,900 --> 00:34:58,940
+Önce Y'yi B'ye götürüp F-X-Y'nin limitini alacağız.
+
+558
+00:34:59,139 --> 00:35:00,720
+Dolayısıyla burada X'i sabit tutuyorum.
+
+559
+00:35:01,059 --> 00:35:02,199
+Y'ye göre limit alıyorum.
+
+560
+00:35:02,780 --> 00:35:04,240
+Sonra karşıma ne çıkacak?
+
+561
+00:35:04,360 --> 00:35:07,760
+Burada artık X'i sabit tuttuğum için X'e bağlı bir ifade çıkacak.
+
+562
+00:35:08,280 --> 00:35:09,380
+Bazen de çıkmayacak.
+
+563
+00:35:10,240 --> 00:35:13,019
+X'e bağlı bir ifade çıktığını düşünelim genel durum için.
+
+564
+00:35:13,179 --> 00:35:17,920
+Sonra kalan ifadenin X eşittir A'ya göre veya X A'ya giderken limitini alıyorum.
+
+565
+00:35:17,920 --> 00:35:20,059
+Ve sonuç diyelim ki L'ye bir buluyorum.
+
+566
+00:35:20,900 --> 00:35:21,579
+Bu birincisi.
+
+567
+00:35:22,240 --> 00:35:23,980
+İkincisine de tam tersine yapacağım.
+
+568
+00:35:24,099 --> 00:35:25,440
+Yine iki tane limit alacağım.
+
+569
+00:35:25,800 --> 00:35:27,139
+Bu sefer tam tersine yapıyorum.
+
+570
+00:35:27,280 --> 00:35:28,800
+Önce X'i A'ya götüreceğim.
+
+571
+00:35:29,240 --> 00:35:30,820
+Sonra Y'yi B'ye götüreceğim.
+
+572
+00:35:33,079 --> 00:35:35,340
+Önce X'i A'ya götürerek burada limit alıyorum.
+
+573
+00:35:35,460 --> 00:35:36,780
+Dolayısıyla burada Y sabit oldu.
+
+574
+00:35:36,860 --> 00:35:38,519
+Burası Y'ye bağlı bir değer çıktı.
+
+575
+00:35:38,639 --> 00:35:39,780
+Sonra Y'yi B'ye götürüyorum.
+
+576
+00:35:39,860 --> 00:35:40,920
+Buradan da L'ye iki çıktı.
+
+577
+00:35:41,679 --> 00:35:43,780
+Yani şöyle düşünebiliriz kabataslık olarak.
+
+578
+00:35:44,000 --> 00:35:46,500
+A-B noktasına gitmek için biz şunu kullanıyoruz.
+
+579
+00:35:46,500 --> 00:35:49,059
+Mesela şunda önce X'i A'ya götürdüm.
+
+580
+00:35:49,139 --> 00:35:50,039
+Orijinden başlıyorum.
+
+581
+00:35:50,119 --> 00:35:51,220
+X'i A'ya götürdüm.
+
+582
+00:35:51,659 --> 00:35:52,960
+Sonra Y'yi B'ye götürdüm.
+
+583
+00:35:53,260 --> 00:35:53,860
+Böyle geliyorum.
+
+584
+00:35:54,079 --> 00:35:56,199
+Önce yatay sonra düşeğe gittim bu noktaya.
+
+585
+00:35:56,760 --> 00:35:57,460
+Bunda ne yapıyorum?
+
+586
+00:35:57,639 --> 00:35:59,159
+Önce düşeğe sonra yatay gidiyorum.
+
+587
+00:35:59,639 --> 00:36:01,019
+Önce Y'yi B'ye götürdüm.
+
+588
+00:36:01,340 --> 00:36:02,679
+Sonra X'i A'ya götürdüm.
+
+589
+00:36:02,760 --> 00:36:04,920
+Dolayısıyla yollardan bir tanesi bu bir tanesi bu.
+
+590
+00:36:04,960 --> 00:36:08,900
+Yani böyle çapraz falan gelmek yerine bu şekilde özel bir yolla geliyoruz.
+
+591
+00:36:08,900 --> 00:36:10,960
+Önce yatay sonra dikey şekilde geliyoruz.
+
+592
+00:36:11,079 --> 00:36:13,260
+Veya önce dikey sonra yatay bir şekilde geliyoruz.
+
+593
+00:36:13,260 --> 00:36:19,119
+Bu şekilde ki bu özel iki tane yolla bulunan limitlere de iki kat limit denmiş.
+
+594
+00:36:19,840 --> 00:36:21,000
+Bu şekilde hesapladım.
+
+595
+00:36:21,139 --> 00:36:24,460
+Dolayısıyla çok değişkenli değil tek değişkenli gibi davrandım fonksiyonuma.
+
+596
+00:36:24,840 --> 00:36:25,820
+Bunları hesapladım.
+
+597
+00:36:26,760 --> 00:36:29,820
+A şıkkında diyor ki olsun diyelim şuraya.
+
+598
+00:36:30,820 --> 00:36:32,380
+A şıkkında şunu inceleyelim.
+
+599
+00:36:32,380 --> 00:36:34,920
+L1 eşittir L2 ise.
+
+600
+00:36:36,260 --> 00:36:38,059
+Sizce limit vardır der miyiz?
+
+601
+00:36:43,476 --> 00:36:46,715
+Öyle yataydan gittim sonra düşeyden gittim L1 çıktı.
+
+602
+00:36:46,896 --> 00:36:49,356
+Sonra düşeyden gittim yataydan gittim.
+
+603
+00:36:49,736 --> 00:36:50,936
+Oradan da L2 çıktı.
+
+604
+00:36:51,076 --> 00:36:51,956
+İkisi de eşit çıktı.
+
+605
+00:36:53,016 --> 00:36:53,695
+Ne yapamayız?
+
+606
+00:36:53,776 --> 00:36:54,836
+Diyemeyiz aynı şekilde.
+
+607
+00:36:55,396 --> 00:36:55,615
+Neden?
+
+608
+00:36:55,856 --> 00:36:57,236
+Çünkü sonsuz tane yol var.
+
+609
+00:36:57,336 --> 00:36:58,056
+Biraz önce gördük.
+
+610
+00:36:58,135 --> 00:37:00,416
+Biz burada çok özel iki tane yolu seçmiş olduk.
+
+611
+00:37:00,615 --> 00:37:04,596
+O yüzden bu bana yani L1'in L2 eşit çıkması bir işime yaramıyor.
+
+612
+00:37:05,215 --> 00:37:07,576
+L1'in L2'den farklı çıkması benim işime yarayacak.
+
+613
+00:37:07,936 --> 00:37:11,036
+Diyeceğiz ki L1 eşitir L2 ise onun özel bir ismi var.
+
+614
+00:37:11,036 --> 00:37:13,896
+Yani burada biz özel bir limit alma işlemi uyguladık.
+
+615
+00:37:14,316 --> 00:37:15,936
+İki kat limiti vardır deniyor.
+
+616
+00:37:16,215 --> 00:37:18,436
+Hani bazen soruyorduk eskiden müfredata dahil idi.
+
+617
+00:37:18,516 --> 00:37:19,856
+İki kat limiti var mıdır?
+
+618
+00:37:20,096 --> 00:37:21,115
+Evet bunu yapıyordu öğrenci.
+
+619
+00:37:21,195 --> 00:37:21,976
+İkisi birbirine eşit çıktı.
+
+620
+00:37:22,056 --> 00:37:22,896
+İki kat limiti var.
+
+621
+00:37:22,996 --> 00:37:24,536
+Limiti var mıdır diye soruyorduk.
+
+622
+00:37:24,936 --> 00:37:26,736
+Öğrenci bakıyordu başka bir yol daha seçiyordu.
+
+623
+00:37:26,836 --> 00:37:27,916
+O yolda başka çıkmış.
+
+624
+00:37:27,976 --> 00:37:28,476
+Hayır diyordu.
+
+625
+00:37:28,736 --> 00:37:29,276
+Limiti yok.
+
+626
+00:37:29,635 --> 00:37:33,956
+Dolayısıyla bu özel yollar boyunca limiti vardır demek oluyor bu aslında bu yazdığım şey.
+
+627
+00:37:33,956 --> 00:37:40,596
+Diyoruz ki eğer böyle ise iki kat limiti veya bu limit alma işleminin adı dediğim gibi
+
+628
+00:37:40,596 --> 00:37:42,356
+ardışık limit de deniyor.
+
+629
+00:37:42,936 --> 00:37:46,436
+Ardışık limiti vardır diyoruz.
+
+630
+00:37:46,695 --> 00:37:50,076
+Ama bilmem gereken en önemli şey ancak diyorum.
+
+631
+00:37:52,076 --> 00:38:07,675
+Ancak bunu söylemek fx yerinin abd limiti vardır demek değildir.
+
+632
+00:38:07,675 --> 00:38:10,016
+Dolayısıyla bu bizim işimize yaramıyor aslında.
+
+633
+00:38:10,976 --> 00:38:12,776
+Özel olarak sorulmadığı sürece bu sonuç.
+
+634
+00:38:17,811 --> 00:38:19,672
+Bunu genelde gözle yapacağız.
+
+635
+00:38:19,791 --> 00:38:22,211
+Yani gözle yapabileceğimiz kadar kolay bir işlem bu aslında.
+
+636
+00:38:22,771 --> 00:38:23,851
+Hemen X'i A'ya götür.
+
+637
+00:38:23,911 --> 00:38:24,391
+Şu çıkacak.
+
+638
+00:38:24,511 --> 00:38:25,391
+Y'yi B'ye götür.
+
+639
+00:38:25,572 --> 00:38:25,931
+Yok.
+
+640
+00:38:26,132 --> 00:38:27,311
+İkisi birbirine işe çıkacak galiba.
+
+641
+00:38:27,411 --> 00:38:28,851
+Bununla iş yapma diyeceğiz birazdan.
+
+642
+00:38:30,051 --> 00:38:31,911
+B'ye şıkkı bizim işimize yarayacak.
+
+643
+00:38:32,371 --> 00:38:33,931
+Limitin olmadığını göstermek için.
+
+644
+00:38:34,152 --> 00:38:35,891
+Diyeceğiz ki biz bunu kullandık.
+
+645
+00:38:36,051 --> 00:38:38,652
+Baktık ki A L1 ile L2'den farklı çıkıyor.
+
+646
+00:38:39,231 --> 00:38:40,672
+O zaman iki kat limit yok.
+
+647
+00:38:41,011 --> 00:38:47,132
+Aynı şekilde A B'ye yaklaşabileceğim herhangi iki tane yol yedim de ben özel iki tane yolu kullanmış oldum.
+
+648
+00:38:47,132 --> 00:38:50,951
+Dolayısıyla sonsuz tane iletişinden iki tanesinden birbirinden farklı olduğunu söylediğim anda
+
+649
+00:38:50,951 --> 00:38:58,132
+hem iki kat limiti dolayısıyla da F X Y'nin A B'de limiti yoktur diyeceğiz.
+
+650
+00:38:58,291 --> 00:38:59,531
+İşte bu bizim işimize yarayacak.
+
+651
+00:39:01,451 --> 00:39:05,351
+Burada limiti yoktur diyeceğiz.
+
+652
+00:39:08,884 --> 00:39:10,724
+Şimdi büyüsem yine mi kayacak bu?
+
+653
+00:39:13,583 --> 00:39:14,083
+Bakayım.
+
+654
+00:39:15,423 --> 00:39:17,324
+Evet. Unuttum büyütmeyi.
+
+655
+00:39:17,983 --> 00:39:20,103
+Yazan var mı? Yazan yoksa büyüteyim.
+
+656
+00:39:21,224 --> 00:39:24,184
+Yazan varsa tekrar küçüktükten sonra devam edeyim.
+
+657
+00:39:30,324 --> 00:39:34,684
+Şunu ya da bugün biraz geç algılıyor. Hem internette sıkıntı var hem de yükselt.
+
+658
+00:39:36,543 --> 00:39:41,184
+O zaman şuraya bir not düşelim. Nitekim sonuca geldik.
+
+659
+00:39:41,184 --> 00:39:54,903
+Diyoruz ki, yani diyelim, iki kat limitin olması değil, ya da iki kat limitin olması deyince kafanızda limitin olması gibi kalmasın.
+
+660
+00:39:54,903 --> 00:39:58,144
+L1 eşittir, L2 olması değil diyelim.
+
+661
+00:39:59,463 --> 00:40:00,344
+Son aşamada.
+
+662
+00:40:01,304 --> 00:40:04,443
+L1 eşittir, L2 olması değil.
+
+663
+00:40:07,264 --> 00:40:11,384
+L1 farklı, L2 olması bizim işimize yarar.
+
+664
+00:40:17,715 --> 00:40:20,935
+Dolayısıyla limitin olduğunu göstermek için bir işime yaramıyor zaten.
+
+665
+00:40:21,135 --> 00:40:23,315
+Limit olmadığını düşünerek biz bir yola çıktık.
+
+666
+00:40:23,536 --> 00:40:25,355
+O seçeneklerden biri olarak düşündük.
+
+667
+00:40:25,895 --> 00:40:28,215
+Limitin olduğunu göstermek için bir işime yaramıyor.
+
+668
+00:40:28,395 --> 00:40:31,875
+Ama limitin olmadığını göstermek için şu farklı şekillerde,
+
+669
+00:40:31,976 --> 00:40:36,935
+yani önce yatay sonra düşe veya önce düşe sonra yatay olarak aldığım yollar boyunca
+
+670
+00:40:36,935 --> 00:40:40,976
+aldığım limitlerin birbirinden farklı çıkması bana limitin olmadığını söylüyor.
+
+671
+00:40:41,275 --> 00:40:44,576
+Bu yollardan bir tanesi ama dediğim gibi her zaman çalışan bir yol değil.
+
+672
+00:40:44,576 --> 00:40:48,536
+Şöyle bir göz ucuyla bakıp işimize yarayacağını düşünüyorsak bunu yapacağız.
+
+673
+00:40:48,915 --> 00:40:51,375
+Diğeri genel olarak zaten işimize yarayacak ikinci yol.
+
+674
+00:40:53,455 --> 00:40:56,516
+Şimdi nasıl kısma gelelim? Burası tamamsa.
+
+675
+00:40:57,455 --> 00:40:58,735
+Şimdi burada büyüteyim artık.
+
+676
+00:40:59,175 --> 00:40:59,615
+Büyük görün.
+
+677
+00:41:00,795 --> 00:41:02,235
+Ben de daha büyük yazmış olayım.
+
+678
+00:41:03,576 --> 00:41:06,735
+Limitin yokluğu için dedik ki bir de çift yol testi var.
+
+679
+00:41:07,255 --> 00:41:08,655
+Adı üstüne çift yol testi.
+
+680
+00:41:08,955 --> 00:41:10,315
+Dediğim gibi şunu yapıyoruz.
+
+681
+00:41:10,875 --> 00:41:13,175
+En başında anlatırken söylediğim şeyi yapacağız.
+
+682
+00:41:13,175 --> 00:41:15,096
+Bir fxye fonksiyonumuz var.
+
+683
+00:41:16,175 --> 00:41:18,135
+Bu fonksiyonun limitini araştırıyoruz.
+
+684
+00:41:18,455 --> 00:41:19,795
+Neredeki limiti araştırıyoruz?
+
+685
+00:41:19,915 --> 00:41:20,476
+AB'de.
+
+686
+00:41:20,875 --> 00:41:26,335
+Biz xye'yi farklı yollar boyunca AB'ye yaklaştırırken limitlerimiz farklı çıkıyorsa,
+
+687
+00:41:26,635 --> 00:41:29,115
+özel olarak çok fazla denememi yapmama gerek yok.
+
+688
+00:41:29,576 --> 00:41:33,315
+İki tane birbirinden farklı limite sahip olacak yol buluyorsak,
+
+689
+00:41:33,395 --> 00:41:36,456
+şimdi yol boyunca limit almak ne demek birazdan öğreneceksiniz.
+
+690
+00:41:36,996 --> 00:41:40,556
+Öyle iki tane yol geldi ki attım o sonsuz seçeneği içinden.
+
+691
+00:41:40,556 --> 00:41:44,956
+Dedim ki buradaki aldığım limitle buradaki aldığım limit birbirinden farklı çıkacak.
+
+692
+00:41:45,076 --> 00:41:51,755
+İşte bu iki yol boyuncaki limitin birbirinden farklı olduğunu gösterdiğim anda bu limitin mevcut olmadığını söyleyebiliyorum.
+
+693
+00:41:53,675 --> 00:41:55,155
+Peki nasıl yapacağım bunu?
+
+694
+00:41:55,556 --> 00:41:59,715
+Biraz önce dedim ki size AB'den geçen eğrileri doğruları bulacağız sonsuz tane.
+
+695
+00:41:59,715 --> 00:42:04,935
+Şimdi herhangi bir AB noktası için oradan geçen eğrileri doğruları bir sürü bulmamız gerekecek.
+
+696
+00:42:05,115 --> 00:42:10,715
+Hani bakacağız atıyorum 10 tane bulduk hepsinde aynı çıktı dur bakalım başka ne buldayım derken gerçekten o çok uğraştırıyor.
+
+697
+00:42:11,996 --> 00:42:15,935
+Hemen bir çırpıda oradan geçen eğrileri doğruları söyleyebileceğimiz nokta nedir?
+
+698
+00:42:16,556 --> 00:42:17,715
+Orjindir 0-0.
+
+699
+00:42:17,715 --> 00:42:26,456
+O yüzden hangi kitaba bakarsanız bakın bütün teoriyi AB noktası üzerinde kurar ama iş örneğe gelince bütün örnekler 0-0 üzerinden gider.
+
+700
+00:42:27,235 --> 00:42:30,096
+Ve anlatım kısmı da bir noktadan sonra 0-0'a döner.
+
+701
+00:42:30,475 --> 00:42:36,556
+Çünkü o orjinden geçen eğrileri doğruları yazmak o sonsuz taneyi denemek çok daha kolay.
+
+702
+00:42:36,855 --> 00:42:38,715
+İçlerinden illa ki bir tanesini tutturursam.
+
+703
+00:42:38,795 --> 00:42:42,295
+Herhangi bir AB noktası için bir sürü seçenek denememiz gerekecek.
+
+704
+00:42:42,295 --> 00:42:45,215
+Uğraşmamız gerekecek AB'den geçen eğrileri doğruları bulmak için.
+
+705
+00:42:45,695 --> 00:42:54,735
+O yüzden de genelde bizim de sorduğumuz dediğim gibi kitaplarda da genelde bahsedilen 0-0 noktasında limitin olmadığını göstermektir.
+
+706
+00:42:54,835 --> 00:42:57,815
+Çünkü oradaki eğrileri doğruları yazmak çok daha basittir.
+
+707
+00:42:57,976 --> 00:42:59,735
+Dolayısıyla biz de bunun üzerinden gideceğiz.
+
+708
+00:43:00,335 --> 00:43:09,295
+Diyeceğiz ki bize verilen nokta 0-0 ise bir belirsizlik varsa 0-0'da ve biz o belirsizliğin cebirsel işlemlerde giderilemeyeceğini düşünüyorsak
+
+709
+00:43:09,295 --> 00:43:13,415
+ve limitin olmadığından da şüpheleniyorsak neler yapabilirim?
+
+710
+00:43:14,976 --> 00:43:16,235
+Benim en sevdiğim yol bu.
+
+711
+00:43:18,175 --> 00:43:21,016
+Ama diğerlerinden de şunu öğrendik zaten biraz önce.
+
+712
+00:43:21,315 --> 00:43:22,215
+Bir de birinci yol var.
+
+713
+00:43:23,255 --> 00:43:24,435
+Şimdi şunu düşüneceğim.
+
+714
+00:43:25,435 --> 00:43:38,435
+Bir de birinci yol var.
+
+715
+00:43:38,435 --> 00:43:50,435
+Birinci yol var.
+
+716
+00:43:25,300 --> 00:43:26,860
+Limitin olmadığını göstereceğim.
+
+717
+00:43:27,000 --> 00:43:30,420
+0-0'dan geçen eğrileri de oraları bulacağım.
+
+718
+00:43:30,600 --> 00:43:31,920
+Mesela 0-0'dan geçen.
+
+719
+00:43:32,060 --> 00:43:32,380
+Ne var?
+
+720
+00:43:32,460 --> 00:43:33,460
+y eşitir 2x var.
+
+721
+00:43:33,539 --> 00:43:34,440
+y eşitir x kare var.
+
+722
+00:43:34,519 --> 00:43:35,120
+Parabol olarak.
+
+723
+00:43:35,240 --> 00:43:37,480
+y eşitir x kare var.
+
+724
+00:43:37,880 --> 00:43:38,760
+Veya ne diyebilirim?
+
+725
+00:43:38,800 --> 00:43:39,860
+y eşitir 2x var.
+
+726
+00:43:40,060 --> 00:43:40,940
+Aklınıza ne gelirse.
+
+727
+00:43:41,380 --> 00:43:43,560
+Veya neden illa ki y eşitir şeklinde yazıyorum.
+
+728
+00:43:43,980 --> 00:43:45,180
+x eşitir y var.
+
+729
+00:43:45,420 --> 00:43:48,500
+x eşitir y kare var.
+
+730
+00:43:48,840 --> 00:43:50,360
+Artık hangisini çalışmak istersiniz?
+
+731
+00:43:50,519 --> 00:43:52,980
+Söyleyeceğim nasıl bir çalışma şekli seçmeniz gerektiğini.
+
+732
+00:43:52,980 --> 00:43:55,780
+bunlardan herhangi 2 tanesini seçeceksiniz.
+
+733
+00:43:55,900 --> 00:43:57,800
+Ama öyle güzelini seçmeniz gerekiyor ki.
+
+734
+00:43:58,180 --> 00:43:59,200
+Hani tutturun.
+
+735
+00:43:59,420 --> 00:44:00,840
+Tek seferde yapın işleminizi.
+
+736
+00:44:01,260 --> 00:44:02,320
+Bunu bunu seçtiniz.
+
+737
+00:44:02,580 --> 00:44:04,100
+Bu ikisi aynı oluyor zaten pardon.
+
+738
+00:44:04,440 --> 00:44:05,280
+Şu ikisini seçtiniz.
+
+739
+00:44:05,380 --> 00:44:06,600
+İkisinde de bir çıktı mesela.
+
+740
+00:44:06,860 --> 00:44:07,780
+Tüh işime yaramadı.
+
+741
+00:44:07,880 --> 00:44:09,640
+Dur başka bir tane daha seçeyim diyeceğim.
+
+742
+00:44:09,860 --> 00:44:11,840
+Dolayısıyla bu seçimleri çoğaltmamak için
+
+743
+00:44:11,840 --> 00:44:13,680
+hissiyatınız şu yönde olmalı.
+
+744
+00:44:13,680 --> 00:44:18,780
+Sonucun farklı çıkacağını tahmin ettiğiniz eğrileri veya doğruları seçmeniz gerekiyor.
+
+745
+00:44:19,140 --> 00:44:20,980
+Dolayısıyla bunların içinden 2 tanesini seçeceğiz.
+
+746
+00:44:21,060 --> 00:44:21,740
+Birinci yolda.
+
+747
+00:44:21,740 --> 00:44:24,260
+Bunların içinden 2 tanesini seçeceğiz.
+
+748
+00:44:25,680 --> 00:44:27,260
+Bunların içinden diyelim.
+
+749
+00:44:28,220 --> 00:44:31,740
+Limiti farklı çıkacağı.
+
+750
+00:44:31,740 --> 00:44:36,039
+2 yol seçeceğiz.
+
+751
+00:44:38,180 --> 00:44:39,220
+Bu birinci yöntemimiz.
+
+752
+00:44:40,340 --> 00:44:41,440
+Bu bana daha uzun geliyor.
+
+753
+00:44:42,220 --> 00:44:43,300
+İkincisi daha kolay.
+
+754
+00:44:43,700 --> 00:44:47,560
+Ben niye y eşitir x ile y eşitir 2x ile y eşitir 3x ile uğraşıyorum ki?
+
+755
+00:44:47,560 --> 00:44:48,880
+Ne yapabilirim?
+
+756
+00:44:48,880 --> 00:44:54,180
+Ben 0-0'dan geçen bütün doğruları nasıl ifade edelim?
+
+757
+00:44:54,180 --> 00:44:56,539
+Y eşitir kaç şeklinde ifade ederim?
+
+758
+00:44:57,039 --> 00:44:59,120
+Bütün parabolları nasıl ifade edelim?
+
+759
+00:44:59,340 --> 00:45:01,160
+Y eşitir k-k-k şeklinde ifade edelim.
+
+760
+00:45:01,400 --> 00:45:02,660
+İşte 3. mertebeleri nasıl?
+
+761
+00:45:02,940 --> 00:45:05,080
+3. dereceden olanları nasıl ifade edelim?
+
+762
+00:45:05,180 --> 00:45:06,800
+Y eşitir k-k-k şeklinde ifade edelim.
+
+763
+00:45:06,800 --> 00:45:11,800
+Dolayısıyla herhangi 2 tane doğruyu seçmek yerine ben bütün doğrular boyunca limit alabilirim.
+
+764
+00:45:12,539 --> 00:45:15,940
+Veya parabollerle çalışmanın bana daha güzel sonuç vereceğini düşünüyorsam
+
+765
+00:45:15,940 --> 00:45:20,780
+2 tane ayrı paraboll seçmek yerine y eşitir x kare ile y eşitir 2x kareyi seçmek yerine
+
+766
+00:45:20,780 --> 00:45:23,840
+bir tane hepsini genellikle paraboll seçerim.
+
+767
+00:45:23,940 --> 00:45:28,100
+Veya işte 3. derecede işime yarayacağını düşünüyorsam y eşitir k-k şeklinde seçerim.
+
+768
+00:45:28,440 --> 00:45:30,780
+Dolayısıyla bunlardan hangisini seçeceğime karar veririm.
+
+769
+00:45:30,840 --> 00:45:31,840
+Bir seçim yapıyorum burada.
+
+770
+00:45:31,920 --> 00:45:33,100
+O yüzden bunu daha çok seviyorum.
+
+771
+00:45:33,320 --> 00:45:34,460
+Bir tane seçim yapıyorum.
+
+772
+00:45:34,460 --> 00:45:39,260
+Bu yollar boyunca alınan limitin sonucunu k'ya bağlı çıktığını görüyorsam
+
+773
+00:45:39,260 --> 00:45:40,960
+bu bana ne demektir?
+
+774
+00:45:41,039 --> 00:45:43,360
+K değiştikçe limit sonucu değişiyor demektir.
+
+775
+00:45:43,620 --> 00:45:46,660
+O zaman direkt derim ki bu limit mevcut değildir.
+
+776
+00:45:47,780 --> 00:45:49,560
+Yani buradaki gibi 2 tane değil.
+
+777
+00:45:49,920 --> 00:45:50,800
+Bir tane seçim.
+
+778
+00:45:51,120 --> 00:45:53,280
+Bütün hepsini genelleyecek bir tane seçim.
+
+779
+00:45:53,640 --> 00:45:54,500
+Bizim işimizi görüyor.
+
+780
+00:45:55,280 --> 00:45:58,680
+Hangisi işinize gelirse kimine k'lar benim kafamı karıştırıyor.
+
+781
+00:45:58,760 --> 00:46:00,220
+Ben buradan yürüyeceğim diyor.
+
+782
+00:46:00,400 --> 00:46:01,280
+Oradan devam ediyor.
+
+783
+00:46:01,640 --> 00:46:03,460
+Kimisi bu daha kolay geliyor.
+
+784
+00:46:03,460 --> 00:46:05,039
+Veya biz sınavda şöyle soruyoruz.
+
+785
+00:46:05,400 --> 00:46:07,320
+Y eşitir x boyunca alınan limiti nedir?
+
+786
+00:46:07,380 --> 00:46:09,240
+Y eşitir 2x boyunca alınan limiti nedir?
+
+787
+00:46:09,420 --> 00:46:11,320
+Y eşitir k-k boyunca alınan limiti nedir?
+
+788
+00:46:11,400 --> 00:46:12,960
+Dolayısıyla bütün hepsini bilmemiz gerekiyor.
+
+789
+00:46:13,039 --> 00:46:14,280
+Hepsinde aynı şeyi yapıyoruz zaten.
+
+790
+00:46:15,039 --> 00:46:17,100
+Üçüncü yol olarak da dediğim gibi 2 kat limit.
+
+791
+00:46:17,320 --> 00:46:18,760
+Bunu biraz önce öğrenmiştik zaten.
+
+792
+00:46:19,560 --> 00:46:21,840
+Dolayısıyla limitin olmadığını gösterme kısmı bu kadar.
+
+793
+00:46:21,840 --> 00:46:29,039
+2 tane veya tek bir tane ama doğruları eğrileri ifade edecek şekilde eğri seçiyoruz.
+
+794
+00:46:29,440 --> 00:46:32,660
+Ve o eğri boyunca limit almayı hesaplamaya çalışacağız.
+
+795
+00:46:32,980 --> 00:46:35,000
+Şimdi eğri boyunca limit almak ne demektir?
+
+796
+00:46:35,440 --> 00:46:36,420
+Soru üzerinde görelim.
+
+797
+00:46:36,780 --> 00:46:37,720
+Ve aklınıza ne geliyor?
+
+798
+00:46:37,840 --> 00:46:40,240
+Bakalım hissiyatınız var mıymış?
+
+799
+00:46:40,700 --> 00:46:42,960
+Buna dair görmüş olalım.
+
+800
+00:46:43,080 --> 00:46:44,340
+Bundan sonrasında soru çözüyoruz.
+
+801
+00:46:44,580 --> 00:46:45,740
+Bir de sürekli bir tanım yapacağız.
+
+802
+00:46:45,820 --> 00:46:46,660
+Sonra yine soru çözüyoruz.
+
+803
+00:46:46,780 --> 00:46:47,900
+Sıkıcı kısım bitti yani.
+
+804
+00:46:47,900 --> 00:46:58,440
+Diyor ki sorumuz fx y 2x kare y bölü x üzeri 4 artı y kare fonksiyonunu 0 0'daki limitinin varlığını araştırınız.
+
+805
+00:46:59,380 --> 00:47:01,860
+Hani limitinin değerini bulun dememiş mesela.
+
+806
+00:47:02,240 --> 00:47:03,920
+Limitinin varlığını araştırın demiş.
+
+807
+00:47:04,720 --> 00:47:05,400
+Hemen bakıyorum.
+
+808
+00:47:05,500 --> 00:47:06,280
+Bana şunu soruyor.
+
+809
+00:47:07,200 --> 00:47:08,620
+Biraz önceki hale getirelim bunu.
+
+810
+00:47:08,620 --> 00:47:16,620
+x y 0 0'a giderken 2x kare y bölü x üzeri 4 artı y kareyi soruyor.
+
+811
+00:47:17,748 --> 00:47:23,048
+Şimdi bakıyorum. Ne yapıyordum? X yerine 0, Y yerine 0 yazdım. Bir kere 0 bölü 0 belirsizliği var.
+
+812
+00:47:23,608 --> 00:47:34,068
+Hemen şuna bakacağım bundan sonrasında. Cebirsel işlem işe yarar mı? Cebirsel işlem işe yaramaz mı? İşe yarıyorsa ne güzel. İşim bitecek zaten.
+
+813
+00:47:38,132 --> 00:48:05,052
+Bakıyorum, çevir serisi demişimi yarar mı? Aslında bu ikinci şeyi yapacağım örnekte. Bu kimi nereye kopyalamışım? Ha iki kere aynı şeyi kopyalamışım. Yanlış kopyalamışım bir dakika. Doğru şeyi kopyalayalım. Önce basitten başlayalım ki bir hissiyatınız gelişsin. Hangisini kopyalayacaktım? Şunu kopyalayacaktım. Aynı şeyi kopyalamışım. Hem silimde hepsi. Onu getirelim şuraya yapalım. Küçücük bir değişiklik yapacağız.
+
+814
+00:48:10,963 --> 00:48:16,963
+olayı anlamanız için daha kolay olacak ve şurayı silelim.
+
+815
+00:48:16,963 --> 00:48:26,963
+olay aynı yoksa. 3x kare eksi y kare olsun ilk sorumuz ki bir şey soracağım size.
+
+816
+00:48:26,963 --> 00:48:33,963
+onu bu soruda daha rahat göreceksiniz. 3y kare artı x kare.
+
+817
+00:48:33,963 --> 00:48:40,963
+tamam önce bundan başlıyoruz. yok işte limitin varlığını araştırın. sıfır sıfırdaki.
+
+818
+00:48:40,963 --> 00:48:45,963
+baktım sıfır böyle sıfır belirsizliği var. cebirsel işlem işe yarar mı diye başlıyorum.
+
+819
+00:48:45,963 --> 00:48:48,963
+bakıyorum şimdi cebirsel işlem. faydaya bir şey yapabilir miyim?
+
+820
+00:48:48,963 --> 00:48:52,963
+fayda zaten iki tane karenin toplamı çarpanları ayrılacak bir hali yok.
+
+821
+00:48:52,963 --> 00:48:55,963
+yukarısı birazcık çarpanları ayrılabilir gibi duruyor. iki kare farkı.
+
+822
+00:48:55,963 --> 00:49:00,963
+bir iş mi yarar mı? bunu ayırsam da aşağıdakini yok edecek herhangi bir şey gelmeyecek.
+
+823
+00:49:00,963 --> 00:49:04,963
+yapacak hiçbir şey gözükmüyor. hani eşlenik çarpımı vesaire yapayım desem o da olmayacak.
+
+824
+00:49:04,963 --> 00:49:07,963
+şunun eşleniği ile çarpsan x üzeri 4'ler gelecek.
+
+825
+00:49:07,963 --> 00:49:09,963
+yine bu karşıma çıkmayacak.
+
+826
+00:49:09,963 --> 00:49:14,963
+dolayısıyla fark ediyorum ki burada tek cebirsel işlemlerde işe yarayacak bir şey yok.
+
+827
+00:49:14,963 --> 00:49:16,963
+cebirsel işlem işe yaramıyorsa
+
+828
+00:49:16,963 --> 00:49:19,963
+dediğim gibi önce oyununuzu şundan yana kullanın.
+
+829
+00:49:19,963 --> 00:49:22,963
+galiba bu limit yok diye düşünüyorum.
+
+830
+00:49:24,963 --> 00:49:26,963
+şimdi limit olmadığını göstermek için.
+
+831
+00:49:26,963 --> 00:49:30,963
+dedik ki şunlardan herhangi birini seçebiliriz.
+
+832
+00:49:30,963 --> 00:49:44,963
+x kare x küp ne bileyim y eşittir 2x y eşittir 3x veya daha genel olarak y eşittir kx y eşittir kx kare kx küp.
+
+833
+00:49:44,963 --> 00:49:50,963
+biz neyi umuyoruz bunlardan öyle güzel şunlardan öyle güzel iki tanesini
+
+834
+00:49:50,963 --> 00:49:53,963
+hani attım burada sonsuz tane farklı tabii ki şey var yol var.
+
+835
+00:49:53,963 --> 00:49:59,963
+veya şuradan öyle güzel bir tanesini seçeceğim ki sonuçta limit yoktur diyeceğim.
+
+836
+00:49:59,963 --> 00:50:02,963
+sizce hangi seçim işe yarar?
+
+837
+00:50:02,963 --> 00:50:04,963
+mesela şunların üzerine gidelim önce.
+
+838
+00:50:04,963 --> 00:50:08,963
+bu seçimlerden hangisi bana direk doğru cevabı verir?
+
+839
+00:50:08,963 --> 00:50:10,963
+kx kare mi hocam?
+
+840
+00:50:10,963 --> 00:50:11,963
+x kare mi verir.
+
+841
+00:50:11,963 --> 00:50:13,963
+bir bak bakalım bir daha.
+
+842
+00:50:13,963 --> 00:50:16,963
+bir şey düşüneceğiz yine bir şeyleri eşitlemeye çalışacağız.
+
+843
+00:50:16,963 --> 00:50:18,963
+kx değil mi?
+
+844
+00:50:18,963 --> 00:50:21,963
+kx'i düşünenler niye kx'i düşündü?
+
+845
+00:50:21,963 --> 00:50:24,963
+çünkü y kare var aşağıda da yukarıda da.
+
+846
+00:50:24,963 --> 00:50:31,963
+olayınız şu olsun eğer mümkünse her zaman mümkün değil bu olmayabilir yani.
+
+847
+00:50:31,963 --> 00:50:37,963
+eğer mümkünse payla paydanın derecesini eşitleyecek olanı seçin.
+
+848
+00:50:37,963 --> 00:50:41,963
+yani bir kere şunu söyleyeyim eğri boyunca limit almak ne demek?
+
+849
+00:50:41,963 --> 00:50:43,963
+eğri boyunca limit almak şu demek.
+
+850
+00:50:43,963 --> 00:50:44,963
+değişken dönüşümü yapacağız aslında.
+
+851
+00:50:44,963 --> 00:50:46,963
+yani biz bunu tek değişkene düşüneceğiz.
+
+852
+00:50:46,963 --> 00:50:48,963
+y eşittir x boyunca limit almak demek.
+
+853
+00:50:48,963 --> 00:50:49,963
+y gördüğün yere eksi yaz demek.
+
+854
+00:50:49,963 --> 00:50:53,963
+dolayısıyla ortalığı sadece x'e bırakacağım limitin x sıfıra giderken olacak.
+
+855
+00:50:53,963 --> 00:50:56,963
+tek değişken olduğu için lokital de mümkün olacak.
+
+856
+00:50:56,963 --> 00:51:00,963
+veya y eşittir 2x y gördüğüm yere 2x yazacağım limiti çözeceğim.
+
+857
+00:51:00,963 --> 00:51:04,963
+bunlarda da aynı şekilde y yerine kx kare kx kare kx kutu da yapacağım.
+
+858
+00:51:04,963 --> 00:51:07,963
+kx kare farklı söyledi galiba değil mi?
+
+859
+00:51:07,963 --> 00:51:09,963
+o yanlış değil yani doğru olabilir ama
+
+860
+00:51:09,963 --> 00:51:11,963
+hani ben size şunu düşündürmeye çalıştım.
+
+861
+00:51:11,963 --> 00:51:13,963
+bunların pek çoğu işinize yarayacak aslında.
+
+862
+00:51:13,963 --> 00:51:16,963
+ama ilk düşüneceğiniz şey en çok işinize yarayacak olsun.
+
+863
+00:51:16,963 --> 00:51:19,963
+şu olsun payla paydanın derecesini eşitleyecek olan olsun.
+
+864
+00:51:19,963 --> 00:51:21,963
+yoksa kx kare kare kustu peşi yarıyordur.
+
+865
+00:51:21,963 --> 00:51:23,963
+belki de bu soru için.
+
+866
+00:51:23,963 --> 00:51:24,963
+evet yarıyor.
+
+867
+00:51:24,963 --> 00:51:26,963
+yanlış değil yani.
+
+868
+00:51:26,963 --> 00:51:30,963
+sadece farklı bir şey düşündürmek istediğim için kx'i seçmenizi tercih ettim.
+
+869
+00:51:30,963 --> 00:51:31,963
+yanlış olduğunu düşünmeyin.
+
+870
+00:51:31,963 --> 00:51:33,963
+onu seçenler varsa başka.
+
+871
+00:51:33,963 --> 00:51:37,963
+olayınız şu olsun hani şeyde de yapıyorduk bunu.
+
+872
+00:51:37,963 --> 00:52:06,963
+hmmmm.
+
+873
+00:51:39,092 --> 00:51:41,652
+Limit testini kullanırken serilerde ne yapıyorduk?
+
+874
+00:51:41,731 --> 00:51:42,572
+İşimize yarasın.
+
+875
+00:51:42,672 --> 00:51:43,771
+Üç tane durumu vardı.
+
+876
+00:51:44,012 --> 00:51:45,092
+En güzeli birinci durumda.
+
+877
+00:51:45,172 --> 00:51:46,032
+Beni hiç üzmüyordu.
+
+878
+00:51:46,412 --> 00:51:49,512
+Dolayısıyla istiyorduk ki biz payda paydanın derecesini eşitleyelim.
+
+879
+00:51:49,852 --> 00:51:51,092
+Burada da aynı şeyi isteyeceğim.
+
+880
+00:51:51,211 --> 00:51:57,211
+Payda paydanın derecesini eşitlersem yani hepsi aynı dereceden X'lerden oluşursa ben o X'lerden kurtulurum.
+
+881
+00:51:57,472 --> 00:51:58,392
+Meydan kime kalır?
+
+882
+00:51:58,492 --> 00:51:59,512
+Neyi garanti etmiş olurum?
+
+883
+00:51:59,592 --> 00:52:01,731
+Meydanın K'ya kalmasını garanti etmiş olurum.
+
+884
+00:52:01,912 --> 00:52:03,692
+Bu yüzden bunu sorgulatıyorum size.
+
+885
+00:52:04,112 --> 00:52:06,492
+Yoksa farklı seçimlerle de doğru sonuca gidebilirsiniz.
+
+886
+00:52:06,632 --> 00:52:07,112
+Yanlış değil.
+
+887
+00:52:07,112 --> 00:52:10,751
+Ama hemen bir bakışta şöyle bir bakın hangisini seçsem eşitlenebilir?
+
+888
+00:52:10,972 --> 00:52:12,052
+Belki de eşitlenmiyordur.
+
+889
+00:52:12,692 --> 00:52:16,952
+Eşitleniyorsa, eşitlenen varsa tamam bu beni kesinlikle doğru sonuca götürecek diyebilirsiniz.
+
+890
+00:52:17,072 --> 00:52:22,952
+Hatta hiç işlem yapmadan hani bundan doğruluğundan emin olup duygun şıkla işaretleyebilirsiniz.
+
+891
+00:52:23,052 --> 00:52:23,731
+Bu limit yoktur.
+
+892
+00:52:23,852 --> 00:52:27,271
+Ya işte şunun boyunca aldığımız limit de limit çıkmayacaktır vesaire.
+
+893
+00:52:27,372 --> 00:52:28,912
+Nasıl bir şık koyarlar bilmiyorum tabii de.
+
+894
+00:52:29,572 --> 00:52:31,271
+Emin olabilirsiniz olmadığından.
+
+895
+00:52:31,672 --> 00:52:34,291
+Veya bunları düşünseydik o zaman şunları seçebilirdim.
+
+896
+00:52:34,291 --> 00:52:39,552
+Doğrular boyunca yani dereceyi düşürmeyecek olanlar, dereceyi eşitleyecek olanlar doğrular olurdu.
+
+897
+00:52:40,032 --> 00:52:40,892
+Bunu düşünebilirdik.
+
+898
+00:52:41,231 --> 00:52:42,811
+Şimdi seçeneklerimizi değerlendirelim.
+
+899
+00:52:44,052 --> 00:52:44,751
+Birinci yolumuz.
+
+900
+00:52:45,791 --> 00:52:49,872
+Diyelim ki mesela y eşitir x boyunca limit almak ne demekmiş?
+
+901
+00:52:49,872 --> 00:52:52,831
+Söylediğimiz şeyi yapalım şimdi.
+
+902
+00:52:53,172 --> 00:52:53,692
+Ne yapıyormuş?
+
+903
+00:52:53,811 --> 00:52:55,211
+Y gördüğüm yeri x yazıyormuş.
+
+904
+00:52:55,512 --> 00:52:57,492
+Yazıyorum şimdi fonksiyonu ne olacak?
+
+905
+00:52:57,751 --> 00:52:59,372
+3x kare eksi x kare.
+
+906
+00:53:00,032 --> 00:53:02,832
+Bölü 3x kare artı x kare oldu.
+
+907
+00:53:03,192 --> 00:53:04,412
+Artık limitte ne kaldı?
+
+908
+00:53:04,552 --> 00:53:05,612
+Sadece x'ler kaldı.
+
+909
+00:53:05,672 --> 00:53:06,452
+x nereye gidiyordu?
+
+910
+00:53:06,512 --> 00:53:07,311
+x sıfıra gidiyordu.
+
+911
+00:53:07,432 --> 00:53:08,832
+Ve dolayısıyla benim limitim bu oldu.
+
+912
+00:53:09,352 --> 00:53:10,072
+Burası ne oldu?
+
+913
+00:53:10,172 --> 00:53:11,132
+2x kare oldu.
+
+914
+00:53:11,612 --> 00:53:12,231
+Burası ne oldu?
+
+915
+00:53:12,231 --> 00:53:13,291
+4x kare oldu.
+
+916
+00:53:13,972 --> 00:53:15,992
+Tam da planladığım gibi x kareler gitti.
+
+917
+00:53:16,251 --> 00:53:17,852
+M'den sadece sayıya kaldı.
+
+918
+00:53:17,952 --> 00:53:19,872
+2 bölü 4'ten sonuç 1 bölü 2 çıktı.
+
+919
+00:53:20,831 --> 00:53:23,552
+Sonra dedik ki y eşitir 2x'i seçmek istedik bile.
+
+920
+00:53:24,432 --> 00:53:26,352
+Y eşitir 2x boyunca bakalım ne oluyor?
+
+921
+00:53:27,012 --> 00:53:27,791
+Bu sefer ne yapacağım?
+
+922
+00:53:27,892 --> 00:53:29,352
+Y gördüğüm yere 2x yazacağım.
+
+923
+00:53:29,972 --> 00:53:30,332
+Neydi?
+
+924
+00:53:30,412 --> 00:53:31,572
+Burası 3x kareydi.
+
+925
+00:53:32,492 --> 00:53:33,472
+Y kareydi.
+
+926
+00:53:33,472 --> 00:53:35,032
+Dolayısıyla 4x kare oldu.
+
+927
+00:53:36,332 --> 00:53:37,412
+Şunu indirebilirim.
+
+928
+00:53:37,472 --> 00:53:38,791
+Şurada var zaten fonksiyonum.
+
+929
+00:53:39,211 --> 00:53:40,572
+Sonra burada y kare yerine
+
+930
+00:53:40,572 --> 00:53:43,372
+diyorum ki y yerine 2x yazdım.
+
+931
+00:53:43,432 --> 00:53:43,731
+Ne olacak?
+
+932
+00:53:43,872 --> 00:53:46,251
+4x kare 12x kare olacak.
+
+933
+00:53:47,211 --> 00:53:48,632
+Artı x karemiz varmış.
+
+934
+00:53:48,711 --> 00:53:50,112
+Yine meydan kimden soruluyor?
+
+935
+00:53:50,271 --> 00:53:51,452
+Meydan x'den soruluyor.
+
+936
+00:53:51,972 --> 00:53:53,311
+Bu sefer baktım.
+
+937
+00:53:53,851 --> 00:53:54,552
+Burası ne oldu?
+
+938
+00:53:54,711 --> 00:53:55,771
+Eksi x kare oldu.
+
+939
+00:53:56,412 --> 00:53:57,192
+Burası ne oldu?
+
+940
+00:53:57,271 --> 00:53:58,251
+13x kare oldu.
+
+941
+00:53:58,832 --> 00:54:00,112
+Yine x kareler gitti.
+
+942
+00:54:00,751 --> 00:54:01,512
+Sonuç ne çıktı?
+
+943
+00:54:01,512 --> 00:54:03,072
+Eksi 1 bölü 13 çıktı.
+
+944
+00:54:03,652 --> 00:54:06,652
+Bakıyorum y eşitir x boyunca limitim 1 bölü 2 çıkarken
+
+945
+00:54:06,652 --> 00:54:08,832
+y eşitir 2x boyunca limitim
+
+946
+00:54:08,832 --> 00:54:10,452
+doğru yaptıysam eğer
+
+947
+00:54:10,452 --> 00:54:11,652
+eksi 1 bölü 13 çıktı.
+
+948
+00:54:11,952 --> 00:54:12,472
+Ne diyeceğim?
+
+949
+00:54:12,811 --> 00:54:14,652
+Bak sonsuz saniye bakmama gerek yok.
+
+950
+00:54:14,751 --> 00:54:15,711
+2 tane buldum.
+
+951
+00:54:15,872 --> 00:54:16,392
+Uydurdum.
+
+952
+00:54:16,612 --> 00:54:17,352
+Neyse uydurdum?
+
+953
+00:54:17,432 --> 00:54:17,892
+Dediğim gibi
+
+954
+00:54:17,892 --> 00:54:19,852
+x'leri hemen yok edecek şekilde
+
+955
+00:54:19,852 --> 00:54:20,932
+uydurmuş oldum burada.
+
+956
+00:54:21,552 --> 00:54:22,892
+İkisi birbirinden farklı çıktı.
+
+957
+00:54:23,132 --> 00:54:25,012
+O zaman bu limit yoktur diyorum.
+
+958
+00:54:27,592 --> 00:54:28,231
+Anlaştık mı?
+
+959
+00:54:28,711 --> 00:54:30,251
+Farklı seçimlerde de görebilirsiniz.
+
+960
+00:54:30,251 --> 00:54:31,672
+Yani yanlış düşünmeyin.
+
+961
+00:54:33,811 --> 00:54:35,192
+Nasıl aynı sonuç?
+
+962
+00:54:35,892 --> 00:54:36,352
+Derken
+
+963
+00:54:36,351 --> 00:54:38,492
+birisinde 1 bölü 2 çıktı
+
+964
+00:54:38,492 --> 00:54:39,992
+birisinde eksi 1 bölü 13 çıktı.
+
+965
+00:54:40,751 --> 00:54:41,791
+Geç mi geldi yoksa?
+
+966
+00:54:42,532 --> 00:54:44,032
+Yazdığımız bazen geç geliyor.
+
+967
+00:54:46,152 --> 00:54:47,412
+Diğer sınıfını da çok buluyor.
+
+968
+00:54:47,472 --> 00:54:48,492
+Ben o konuyu geçmiş oluyorum.
+
+969
+00:54:48,492 --> 00:54:49,112
+Şey mi hocam?
+
+970
+00:54:49,251 --> 00:54:51,052
+Aynı çıkmayana kadar devam ediyoruz.
+
+971
+00:54:51,052 --> 00:54:52,432
+Evet aynen öyle.
+
+972
+00:54:52,572 --> 00:54:55,032
+Aynı çıkmayana kadar devam edeceğiz.
+
+973
+00:54:55,832 --> 00:54:56,771
+Baktık aynı çıktı.
+
+974
+00:54:57,532 --> 00:54:58,952
+O zaman başka bir şey deneyip
+
+975
+00:54:58,952 --> 00:55:00,211
+yolumuza devam edeceğiz ama
+
+976
+00:55:00,211 --> 00:55:02,472
+çok da zorlamıyoruz genelde.
+
+977
+00:55:02,612 --> 00:55:04,612
+Yine bir garanti veremem konuda
+
+978
+00:55:04,612 --> 00:55:06,612
+zorlanmayacağınız konusunda ama
+
+979
+00:55:06,612 --> 00:55:08,912
+tahmin edebiliyorsunuz.
+
+980
+00:55:09,032 --> 00:55:10,392
+Yani en azından seçenekleriniz belli.
+
+981
+00:55:11,072 --> 00:55:12,211
+İkinci olarak ne dedik?
+
+982
+00:55:12,332 --> 00:55:14,092
+İkinci olarak ben daha çok seviyorum dediğim gibi.
+
+983
+00:55:14,532 --> 00:55:15,771
+İki tane seçmek yerine
+
+984
+00:55:15,771 --> 00:55:17,271
+bir tane eleşimizi görüyoruz.
+
+985
+00:55:17,452 --> 00:55:18,271
+Şunu fark ettik.
+
+986
+00:55:18,271 --> 00:55:19,952
+Zaten derecelere eşit.
+
+987
+00:55:20,032 --> 00:55:21,251
+Biz bu uyumu bozmayalım.
+
+988
+00:55:21,332 --> 00:55:23,652
+Dolayısıyla y ile x'in derecesinin eşit olduğu
+
+989
+00:55:23,652 --> 00:55:25,872
+y eşitir k x boyunca gibi bir talar kalırsak.
+
+990
+00:55:26,231 --> 00:55:27,012
+Bakalım ne olacak.
+
+991
+00:55:28,251 --> 00:55:29,892
+Y eşitir k x boyunca.
+
+992
+00:55:31,764 --> 00:55:33,963
+Aynı sonuç ise tamam şimdi anladım.
+
+993
+00:55:34,124 --> 00:55:37,704
+Aynı sonuç çıkarsa bir tane daha yani başka bir yol seçmemiz gerekiyor.
+
+994
+00:55:38,144 --> 00:55:39,963
+Tamam mı? Ben anlamadım.
+
+995
+00:55:41,304 --> 00:55:43,983
+Acaba daha önceki olayla ilgili bir şey mi söyledim?
+
+996
+00:55:45,384 --> 00:55:48,544
+Evet K sabit olduğu için aynı şeye denk gelmiş oluyor.
+
+997
+00:55:48,624 --> 00:55:50,044
+Ama iki tane seçmiş olmuyoruz.
+
+998
+00:55:50,144 --> 00:55:51,664
+Bir kere işlem yapmış oluyoruz.
+
+999
+00:55:51,983 --> 00:55:53,403
+Yoksa aynı şeyi yapıyoruz aslında.
+
+1000
+00:55:53,403 --> 00:55:55,024
+Yani burada da biz aslında ne yaptık?
+
+1001
+00:55:55,084 --> 00:55:57,423
+K'nın bir olduğu, K'nın iki olduğu durumu inceledik.
+
+1002
+00:55:57,423 --> 00:56:02,264
+Y'ye iştir K'x dediğimde iki tane seçim yapmak yerine bir kere eleşimi götürüyorum.
+
+1003
+00:56:02,604 --> 00:56:08,764
+Zaten çok bir iş yapmıyoruz aslında ama yine de sınav için birazcık çabuklaştıracak işleri.
+
+1004
+00:56:09,804 --> 00:56:10,443
+Ne yapıyorum?
+
+1005
+00:56:10,544 --> 00:56:12,144
+Y yerine K'x yazdım.
+
+1006
+00:56:12,524 --> 00:56:16,244
+Şunda 3x kare eksi ne olacak bu sefer?
+
+1007
+00:56:17,064 --> 00:56:18,204
+K kare x kare olacak.
+
+1008
+00:56:18,884 --> 00:56:20,644
+Bölü ne vardı?
+
+1009
+00:56:21,403 --> 00:56:22,963
+3y kare artı x kare vardı.
+
+1010
+00:56:23,084 --> 00:56:27,124
+O zaman 3k kare x kare artı x kare olacak.
+
+1011
+00:56:27,423 --> 00:56:28,943
+Yine limit x sıfıra gidiyor.
+
+1012
+00:56:29,983 --> 00:56:33,784
+Yine bunu paranteze alırsak burada 3x k kare x kare kaldı.
+
+1013
+00:56:34,184 --> 00:56:36,483
+Burada 3k kare artı 1x kare kaldı.
+
+1014
+00:56:37,423 --> 00:56:38,604
+Yine x kareler gitti.
+
+1015
+00:56:40,044 --> 00:56:43,184
+Bir kere de sonucun K'ya bağlı olduğunu göstermiş oldu.
+
+1016
+00:56:43,443 --> 00:56:44,544
+3k kare artı 1.
+
+1017
+00:56:44,923 --> 00:56:45,244
+Ne diyorum?
+
+1018
+00:56:45,364 --> 00:56:46,224
+Sonuç K'ya bağlı.
+
+1019
+00:56:46,324 --> 00:56:47,064
+Dolayısıyla bu ne demek?
+
+1020
+00:56:47,144 --> 00:56:52,503
+Sonuç K'ya bağlıysa K değiştikçe biraz önce gördüğünüz gibi şuradaki kastayı değiştikçe limit farklı çıkıyor.
+
+1021
+00:56:52,503 --> 00:56:54,604
+O zaman yine limit yoktur diyorum.
+
+1022
+00:56:54,604 --> 00:56:58,003
+Bunun tek avantajı ikiri işlem yapmış olursunuz.
+
+1023
+00:56:58,304 --> 00:57:00,423
+Bunda birkaç tane yapmak gerekiyor.
+
+1024
+00:57:01,044 --> 00:57:02,644
+Yoksa çok bir fark yok.
+
+1025
+00:57:02,764 --> 00:57:03,983
+İkisine de aynı şeyi yaptık.
+
+1026
+00:57:05,084 --> 00:57:05,664
+Anlaştık mı?
+
+1027
+00:57:06,064 --> 00:57:07,344
+Sizden beklenen şey bu.
+
+1028
+00:57:07,443 --> 00:57:09,824
+Yani hangisini seçsem acaba diye düşünmeliyiz.
+
+1029
+00:57:10,304 --> 00:57:11,884
+Bazen de şöyle yapmak gerekiyor.
+
+1030
+00:57:12,003 --> 00:57:14,963
+Y'lerde değil de x'lerde dönüşüm yapmak gerekiyor.
+
+1031
+00:57:15,064 --> 00:57:18,584
+Veya ne bileyim y'ye dönüşüm yapmamız gerektiğinde y'e kök x seçmemiz gerekiyor.
+
+1032
+00:57:18,584 --> 00:57:21,884
+Şimdi buraya böyle yazıyordum ya ben y'e'ye x kare x küp.
+
+1033
+00:57:22,184 --> 00:57:25,124
+Sanki illa ki buralar tam sayı olmak zorundaymış gibi geliyor size.
+
+1034
+00:57:25,204 --> 00:57:25,384
+Hayır.
+
+1035
+00:57:25,544 --> 00:57:29,304
+Sıfır sıfırdan geçen aklınıza gelen bütün e'leri, bütün doğruları kullanabilirsiniz.
+
+1036
+00:57:29,724 --> 00:57:31,804
+Y'e'ye x üzeri 2 bölü 3 de kullanılabilir.
+
+1037
+00:57:32,003 --> 00:57:35,024
+Dereceye eşitleyecek olan oysa sizin işinize yarayacak olan oysa.
+
+1038
+00:57:35,304 --> 00:57:37,524
+Dolayısıyla aklınıza ilk bunlar geldiği için bunları yazıyoruz.
+
+1039
+00:57:37,524 --> 00:57:45,943
+Hangisiyle çalışmanız size daha kolay gelecekse, dediğim gibi mümkünse derecelere eşitlemeye çalışacak olanlar yolunuza devam edebilirsiniz.
+
+1040
+00:57:47,764 --> 00:57:48,784
+Mesela şuna bakalım.
+
+1041
+00:57:49,684 --> 00:57:50,344
+Bir alttakine.
+
+1042
+00:57:50,963 --> 00:57:51,584
+Bu tamamıza.
+
+1043
+00:57:53,164 --> 00:57:54,124
+Mesela şuna bakın.
+
+1044
+00:57:55,764 --> 00:57:58,624
+Neyi seçmek bize kolay sonuç verirdi?
+
+1045
+00:58:00,564 --> 00:58:01,804
+Bu sefer x kare hocam.
+
+1046
+00:58:02,124 --> 00:58:02,784
+Evet.
+
+1047
+00:58:02,903 --> 00:58:05,704
+Bu sefer x kareleri düşünmek daha kolay gelirdi.
+
+1048
+00:58:05,704 --> 00:58:07,784
+Buraya da x kare yazsam x üzeri 4 olacaktı.
+
+1049
+00:58:07,844 --> 00:58:10,144
+Buraya da x karenin karesinden x üzeri 4 olacaktı.
+
+1050
+00:58:10,524 --> 00:58:14,564
+Dolayısıyla ya x karenin kat sayısı değişik olanlarla çalışmayı tercih edebilirdiniz.
+
+1051
+00:58:15,264 --> 00:58:16,384
+Ya da neyi seçerdik?
+
+1052
+00:58:16,524 --> 00:58:17,983
+K x kareyi seçerdik mesela.
+
+1053
+00:58:18,884 --> 00:58:19,644
+İkisi de aynı şey.
+
+1054
+00:58:19,724 --> 00:58:20,844
+Bunda iki tane iş yapacağım.
+
+1055
+00:58:21,144 --> 00:58:22,044
+Bunda bir tane yapacağım.
+
+1056
+00:58:22,443 --> 00:58:27,224
+Ki dediğim gibi eminseniz siz derecelerine eşitlenen zaten bu limitin olmadığından da emin olabilirsiniz.
+
+1057
+00:58:27,344 --> 00:58:28,624
+Yazılı sınavda değiliz zaten.
+
+1058
+00:58:29,003 --> 00:58:30,684
+Ya tamam bunu seçebileceğim bir şey var.
+
+1059
+00:58:30,684 --> 00:58:34,324
+Hani dedim ya limitin olmadığına dair bir şüpheniz olacak.
+
+1060
+00:58:34,324 --> 00:58:37,804
+Ondan sonra epsilon delta'yı mı acaba gitmeniyim diye düşüneceğim.
+
+1061
+00:58:37,903 --> 00:58:39,784
+Şüphenizin boşa çıktığı durum ne olur?
+
+1062
+00:58:39,903 --> 00:58:42,264
+Ne seçerseniz seçin hep aynı sonuç çıkması olur.
+
+1063
+00:58:42,503 --> 00:58:45,144
+Ama bu şekilde dereceden eşitlenebileceği bir durum varken
+
+1064
+00:58:45,144 --> 00:58:48,564
+ya acaba bunun limiti var mı diye düşünmenize dahi gerek kalmayacak.
+
+1065
+00:58:48,844 --> 00:58:51,344
+O yüzden direkt bunun limiti bu noktada yokmuş diye.
+
+1066
+00:58:51,864 --> 00:58:54,804
+İşte şıklarda varsa öyle bir şey oraya direkt atlayabilirsiniz de bence.
+
+1067
+00:58:55,044 --> 00:58:56,304
+Doğru düşündüğünüzü düşünüyorsanız.
+
+1068
+00:58:56,304 --> 00:58:58,364
+Hadi bir ara verelim.
+
+1069
+00:58:59,284 --> 00:59:00,684
+Ki yapmışız saati.
+
+1070
+00:59:00,923 --> 00:59:01,884
+Bir on dakika ara verelim.
+
+1071
+00:59:02,884 --> 00:59:04,304
+Bundan çözeceğiz bir tane daha.
+
+1072
+00:59:05,644 --> 00:59:07,144
+Şunu hızlı yaparız zaten.
+
+1073
+00:59:07,284 --> 00:59:09,164
+Belki da attırır sanki anlamışsınız gibi geldi.
+
+1074
+00:59:09,604 --> 00:59:10,764
+Sonra süreklilik yapalım.
+
+1075
+00:59:11,264 --> 00:59:13,184
+Bir de süreklilikle ilgili bir iki tane soru var.
+
+1076
+00:59:13,264 --> 00:59:14,284
+Sonra bitireceğim zaten.
+
+1077
+00:59:15,124 --> 00:59:15,963
+Çok bir şey kalmadı.
+
+1078
+00:59:16,804 --> 00:59:18,044
+Küçücük bir ara vermiş olalım.
+
+1079
+00:59:19,044 --> 00:59:20,044
+Dinlenelim bir on dakika.
+
+1080
+00:59:20,983 --> 00:59:22,364
+Sonra buçuk hadi olmadı.
+
+1081
+00:59:22,443 --> 00:59:24,124
+Otuz beş geçe gibi falan biter herhalde.
+
+1082
+00:59:24,124 --> 00:59:27,463
+İşte başlayacağız.
+
+1083
+00:59:27,584 --> 00:59:28,903
+On dört on da başlayacağız.
+
+1084
+01:00:04,820 --> 01:00:06,820
+Hocam biraz yukarı çıkabilir misiniz?
+
+1085
+01:00:10,280 --> 01:00:12,280
+İkinci yolu tekrar anlatabilir misiniz?
+
+1086
+01:00:12,640 --> 01:00:12,840
+Tamam.
+
+1087
+01:00:15,500 --> 01:00:16,019
+Şimdi.
+
+1088
+01:00:17,320 --> 01:00:19,100
+Şunda bir sıkıntı yok herhalde değil mi?
+
+1089
+01:00:19,620 --> 01:00:20,140
+Yukarıdakilerde.
+
+1090
+01:00:20,700 --> 01:00:23,680
+Hocam o işlem içerdiği için anladım da ikinciyi anlayamadım.
+
+1091
+01:00:24,380 --> 01:00:25,120
+Bak burada ne yaptık?
+
+1092
+01:00:25,180 --> 01:00:26,460
+En başından anlatayım.
+
+1093
+01:00:26,539 --> 01:00:28,140
+Y eşittir X derken ne yaptık?
+
+1094
+01:00:28,240 --> 01:00:29,280
+Y yerine X yazdık.
+
+1095
+01:00:29,480 --> 01:00:31,280
+Dolayısıyla şurada Y yerine X yazdım.
+
+1096
+01:00:31,280 --> 01:00:35,760
+Zaten hani kat sayıları sayı olduğu için buradan 3X kare X kare geldi.
+
+1097
+01:00:35,840 --> 01:00:37,460
+Burada 3X kare artı X kare geldi.
+
+1098
+01:00:37,620 --> 01:00:38,380
+İşte sadeleştirdik.
+
+1099
+01:00:38,420 --> 01:00:39,200
+1 bölü 2 geldi.
+
+1100
+01:00:39,840 --> 01:00:41,620
+Sonra 2X için denedik aynı şeyi.
+
+1101
+01:00:41,740 --> 01:00:43,200
+Bu sefer 2X yazdım buralara.
+
+1102
+01:00:43,460 --> 01:00:44,640
+Buradan 4X kare geldi.
+
+1103
+01:00:44,760 --> 01:00:45,360
+Buradan ne oldu?
+
+1104
+01:00:45,460 --> 01:00:46,840
+4, 12X kare geldi.
+
+1105
+01:00:47,340 --> 01:00:48,740
+Yine X kare parantezini aldık.
+
+1106
+01:00:48,820 --> 01:00:49,860
+X'e 1 bölü 13 çıktı.
+
+1107
+01:00:49,980 --> 01:00:51,120
+Buradan limit yoktur dedik.
+
+1108
+01:00:51,559 --> 01:00:53,400
+Şimdi burada iki tane yol bulmam gerekiyor.
+
+1109
+01:00:53,400 --> 01:00:55,400
+Eğer kat sayıları sürekli değiştirirsem.
+
+1110
+01:00:55,820 --> 01:00:57,000
+Bundaki avantajım nedir?
+
+1111
+01:00:57,120 --> 01:00:59,680
+Tek bir seçimle işime götürüyorum.
+
+1112
+01:00:59,940 --> 01:01:00,840
+Bu sefer ne yapıyorum?
+
+1113
+01:01:00,840 --> 01:01:01,940
+Y'e işte KX'te.
+
+1114
+01:01:02,019 --> 01:01:04,500
+Aynı şekilde Y yerine KX yazacağım bu sefer.
+
+1115
+01:01:05,580 --> 01:01:06,559
+Bu sefer ne diyorum?
+
+1116
+01:01:07,180 --> 01:01:09,920
+Gördüm ki burada Y gördüğüm yeri şurada da KX yazacağım.
+
+1117
+01:01:10,660 --> 01:01:11,760
+Burada da KX yazacağım.
+
+1118
+01:01:12,720 --> 01:01:13,820
+Burada KX yazdım.
+
+1119
+01:01:13,880 --> 01:01:14,360
+Ne oldu?
+
+1120
+01:01:14,680 --> 01:01:16,320
+3X kare eksisi.
+
+1121
+01:01:16,380 --> 01:01:17,240
+Bunun karesini aldım.
+
+1122
+01:01:17,340 --> 01:01:19,380
+K kare X kare bölü.
+
+1123
+01:01:19,800 --> 01:01:20,760
+Burada yazdım.
+
+1124
+01:01:20,960 --> 01:01:22,420
+3K kare X kare oldu.
+
+1125
+01:01:22,420 --> 01:01:24,140
+Bir de yanında X kare vardı.
+
+1126
+01:01:24,519 --> 01:01:25,880
+Yine hepsinde X kare ortak.
+
+1127
+01:01:25,960 --> 01:01:27,060
+X kareleri götürdüm.
+
+1128
+01:01:27,900 --> 01:01:29,120
+Yanlış şey götürdüm.
+
+1129
+01:01:29,260 --> 01:01:29,519
+Bir dakika.
+
+1130
+01:01:29,519 --> 01:01:31,920
+Şu kaldı.
+
+1131
+01:01:32,800 --> 01:01:33,720
+Ne kaldı yukarıda?
+
+1132
+01:01:33,840 --> 01:01:35,140
+3X kare kaldı.
+
+1133
+01:01:35,700 --> 01:01:36,600
+Burada ne kaldı?
+
+1134
+01:01:36,780 --> 01:01:38,600
+3K kare artı 1 kaldı.
+
+1135
+01:01:38,900 --> 01:01:40,640
+Şimdi bunun şöyle avantajları da var.
+
+1136
+01:01:42,080 --> 01:01:45,000
+Bunu bulduğumuz anda sonucun K'ya bağlı çıkması ne demek?
+
+1137
+01:01:45,100 --> 01:01:50,400
+Şurada K değiştikçe yani şu doğruların eğimi değiştikçe aslında sonucun farklı çıktığını söylüyoruz.
+
+1138
+01:01:50,400 --> 01:01:51,960
+Artı şunu da hesaplayabiliyorum.
+
+1139
+01:01:52,039 --> 01:01:57,940
+Ben artık şu sonucu bulduktan sonra canımın istediği doğru boyunca alınacak limitin ne olduğunu da formülleştirmiş oluyorum.
+
+1140
+01:01:58,320 --> 01:01:59,079
+K 100 mü olacak?
+
+1141
+01:01:59,200 --> 01:02:00,460
+Hemen burada 100 koydum mesela.
+
+1142
+01:02:00,760 --> 01:02:03,240
+O doğru boyunca alınacak olan limitin ne olduğunu bulmuş oldum.
+
+1143
+01:02:03,559 --> 01:02:04,260
+200 mü oldu?
+
+1144
+01:02:04,360 --> 01:02:05,260
+Hemen buraya koydum.
+
+1145
+01:02:05,260 --> 01:02:08,100
+Dolayısıyla o doğru boyunca alınacak limiti bulmuş oldum.
+
+1146
+01:02:08,180 --> 01:02:09,940
+Ekstra her seferinde işlem yapmadan.
+
+1147
+01:02:10,160 --> 01:02:12,640
+O yüzden de bu ortalığı toparlamak için güzel oluyor.
+
+1148
+01:02:13,680 --> 01:02:21,400
+Hani farklı farklı doğrular boyunca limit hesaplandığı soruluyorsa size her seferinde bunu yapmak yerine bir kere doğrular boyunca limit alırsınız.
+
+1149
+01:02:21,539 --> 01:02:23,100
+Bütün hepsini ifade edecek şekilde.
+
+1150
+01:02:23,100 --> 01:02:25,500
+K yerine E'yi mi kaç vergisi artık?
+
+1151
+01:02:25,640 --> 01:02:28,680
+Onu değiştirdikçe ihtiyacınız olan limitlerini bulmuş olursunuz.
+
+1152
+01:02:29,500 --> 01:02:30,039
+Anlaştık mı?
+
+1153
+01:02:30,560 --> 01:02:31,220
+Bu kadar mı hocam?
+
+1154
+01:02:31,519 --> 01:02:32,320
+Bu kadar bu kadar.
+
+1155
+01:02:32,660 --> 01:02:33,640
+Tamam teşekkür ederim.
+
+1156
+01:02:33,740 --> 01:02:34,100
+Hoşçakalın.
+
+1157
+01:02:38,195 --> 01:02:42,695
+Şunu yapayım, şunu şöyle sarıyla yazayım, karışmasın sonra baktığınızda.
+
+1158
+01:02:48,275 --> 01:02:51,955
+Tamam, ben şu sonrakileri bakayım, yanlış kopyalım, şu olmayayım yine.
+
+1159
+01:02:52,915 --> 01:02:53,576
+Bu da tamam.
+
+1160
+01:02:59,860 --> 01:03:00,860
+Evet.
+
+1161
+01:03:05,204 --> 01:03:10,744
+Bir dakika, yarım saatte biter dedim ama 3 boyutlu şekilleri göstereceğim.
+
+1162
+01:12:04,051 --> 01:12:07,131
+Geldim. Şimdi [öğrenci]'nın sorusuna cevap verin buradan.
+
+1163
+01:12:08,431 --> 01:12:13,331
+[öğrenci] demiş ki limit olmadığını göstermek için iki başlık, iki kat limit ve çift yol testi dedik.
+
+1164
+01:12:13,791 --> 01:12:17,891
+Ama biraz önce çift yol testini yaptık sadece. Ben de onu söyleyecektim şimdi.
+
+1165
+01:12:19,531 --> 01:12:20,572
+Ondan başlayalım.
+
+1166
+01:12:25,692 --> 01:12:28,451
+Şimdi başlık olarak şöyle attık.
+
+1167
+01:12:29,572 --> 01:12:33,851
+Evet, iki kat limit de işimize yarar. Hangisini göstereyim [öğrenci]'cığım?
+
+1168
+01:12:34,211 --> 01:12:35,671
+Aşağıya mı? Buraya mı?
+
+1169
+01:12:36,431 --> 01:12:40,991
+Evet, şurada yazdık. İki kat limit veya çift yol testiyle gösterebiliriz dedik.
+
+1170
+01:12:41,331 --> 01:12:43,431
+Haklısın, iki kat limit kısmını söylemedik.
+
+1171
+01:12:43,431 --> 01:12:47,231
+İki kat limiti, hani şurada da bakarsan sona attım.
+
+1172
+01:12:47,731 --> 01:12:50,491
+İkisini yaptık. Üçüncü yol olarak bunu yaptık.
+
+1173
+01:12:50,591 --> 01:12:52,831
+Dediğim gibi pek çok soru da çalışmıyor çünkü.
+
+1174
+01:12:53,152 --> 01:12:55,692
+O yüzden ikinci yol genellikle çalışıyor.
+
+1175
+01:12:55,991 --> 01:12:57,891
+En genelde bir kere değişimi zannediyoruz.
+
+1176
+01:12:57,991 --> 01:12:59,431
+Burada iki tane değişimi zannediyoruz.
+
+1177
+01:12:59,551 --> 01:13:03,112
+Biraz önce çözdüğümüz için hiç iki kat limiti bakmamıza gerek kalmadı.
+
+1178
+01:13:03,112 --> 01:13:05,271
+Ama şöyle bir bakarsak da güzel olur.
+
+1179
+01:13:05,391 --> 01:13:06,311
+Şimdi onu söyleyecektim.
+
+1180
+01:13:06,391 --> 01:13:08,771
+Bu soruda iki kat limitin çalıştığı sorulardan bir tanesi.
+
+1181
+01:13:09,211 --> 01:13:10,851
+Hiç böyle seçim yapmadan da.
+
+1182
+01:13:11,051 --> 01:13:12,612
+Mesela iki kat limit bize ne diyordu?
+
+1183
+01:13:13,711 --> 01:13:14,891
+Nerede kalemem? Şurada.
+
+1184
+01:13:14,891 --> 01:13:17,331
+Önce x'i sıfıra götür diyordu.
+
+1185
+01:13:17,671 --> 01:13:19,311
+Şurada bir tane örneğini yapalım hemen.
+
+1186
+01:13:19,451 --> 01:13:20,311
+İki kat limiti.
+
+1187
+01:13:20,631 --> 01:13:22,251
+Diğer sorular da çalışmayacak çünkü.
+
+1188
+01:13:22,891 --> 01:13:25,072
+Anlattım madem. Görmüş olun örneğini.
+
+1189
+01:13:25,612 --> 01:13:29,051
+İki kat limit diyordu ki mesela önce y'yi sıfıra götür.
+
+1190
+01:13:29,811 --> 01:13:31,171
+Sonra x'i sıfıra götür.
+
+1191
+01:13:31,171 --> 01:13:34,572
+Bu şekilde bir limiti almamıyorum.
+
+1192
+01:13:35,451 --> 01:13:37,612
+3'yi kare artı x kare.
+
+1193
+01:13:38,331 --> 01:13:39,671
+Şimdi y'yi sıfıra götürüyorum.
+
+1194
+01:13:40,211 --> 01:13:40,891
+Şunlar gitti.
+
+1195
+01:13:41,431 --> 01:13:42,112
+Ne kaldı?
+
+1196
+01:13:42,411 --> 01:13:44,331
+3 x kare bölü x kare kaldı içeride.
+
+1197
+01:13:44,451 --> 01:13:46,411
+Limiti y'yi sıfıra götürdükten sonra.
+
+1198
+01:13:46,811 --> 01:13:51,451
+Yani limit sıfıra giderken bunun içinde 3 x kare bölü x kare var.
+
+1199
+01:13:51,451 --> 01:13:53,131
+x kareler de gitti zaten.
+
+1200
+01:13:53,471 --> 01:13:54,631
+Dolayısıyla sonucum 3 çıktı.
+
+1201
+01:13:55,031 --> 01:13:55,631
+Bir taraftan.
+
+1202
+01:13:55,931 --> 01:13:57,471
+Önce düşeği sonra yatağa gittim.
+
+1203
+01:13:57,891 --> 01:13:59,431
+Şimdi bunun yerlerini değiştiriyorum.
+
+1204
+01:13:59,612 --> 01:14:01,471
+Diyorum ki y sıfıra giderken buraya.
+
+1205
+01:14:01,731 --> 01:14:03,391
+x sıfıra giderken buraya gelsin.
+
+1206
+01:14:04,671 --> 01:14:05,791
+Tekrar yazdım.
+
+1207
+01:14:05,911 --> 01:14:07,612
+3 x kare eksi y kare bölü.
+
+1208
+01:14:07,811 --> 01:14:09,371
+3 y kare artı x kare.
+
+1209
+01:14:10,271 --> 01:14:11,091
+Bu kez ne yapacağım?
+
+1210
+01:14:11,171 --> 01:14:12,391
+Burada x'i sıfıra götüreceğim.
+
+1211
+01:14:12,531 --> 01:14:13,431
+Bu gitti bu gitti.
+
+1212
+01:14:13,631 --> 01:14:14,131
+Ne kaldı?
+
+1213
+01:14:14,231 --> 01:14:16,451
+Eksi y kare bölü 3 y kare kaldı içeride.
+
+1214
+01:14:17,051 --> 01:14:18,411
+Dolayısıyla buna kalan şu.
+
+1215
+01:14:18,751 --> 01:14:21,192
+Eksi y kare bölü 3 y kare.
+
+1216
+01:14:21,451 --> 01:14:22,951
+E y kareler de gitti.
+
+1217
+01:14:23,411 --> 01:14:25,351
+Bakıyorum burada da eksi 1 bölü 3 çıktı.
+
+1218
+01:14:25,891 --> 01:14:26,591
+Ne demiştik?
+
+1219
+01:14:26,631 --> 01:14:28,331
+İki kat limit ne zaman işime yarardı?
+
+1220
+01:14:28,911 --> 01:14:31,192
+İkisinin sonucu birbirinden farklı çıkarsa oluyordu.
+
+1221
+01:14:31,431 --> 01:14:35,311
+Dolayısıyla bu ikisi birbirinden farklı olduğu için de yine limit yoktur diyebiliriz.
+
+1222
+01:14:35,371 --> 01:14:36,351
+Bu da üçüncü yol olarak.
+
+1223
+01:14:36,971 --> 01:14:38,411
+Bunu söylemeyi unuttum biraz önce.
+
+1224
+01:14:39,791 --> 01:14:40,791
+Ders arasına baktım.
+
+1225
+01:14:40,891 --> 01:14:43,072
+Bir tane soru da iki kat limit çalışıyordu.
+
+1226
+01:14:43,451 --> 01:14:44,131
+O da bu soruydu.
+
+1227
+01:14:44,231 --> 01:14:45,031
+Söyleyecektim zaten.
+
+1228
+01:14:45,152 --> 01:14:46,331
+[öğrenci]'da hatırlatmış olduk.
+
+1229
+01:14:46,771 --> 01:14:47,311
+Anlaştık mı?
+
+1230
+01:14:47,591 --> 01:14:49,331
+Üçüncü yani şöyle bir bakın.
+
+1231
+01:14:49,331 --> 01:14:52,171
+Ben burada y'yi sıfıra götürsem önce y'ler gidecek.
+
+1232
+01:14:52,251 --> 01:14:53,031
+Şu ikisi gidecek.
+
+1233
+01:14:53,351 --> 01:14:55,031
+Yani pratik olarak şöyle bakabilirsiniz.
+
+1234
+01:14:55,612 --> 01:14:56,291
+Bunlar gidecek.
+
+1235
+01:14:56,411 --> 01:14:57,811
+3 y kare bölü 3 y kare kalacak.
+
+1236
+01:14:57,931 --> 01:14:58,572
+Bunlar da gidecek.
+
+1237
+01:14:59,091 --> 01:15:01,692
+Önce y'yi sonra x'i sıfıra götürdüğümde sonuç 3 çıkıyor.
+
+1238
+01:15:02,091 --> 01:15:03,511
+Dur bir tersini yapayım bakalım.
+
+1239
+01:15:04,411 --> 01:15:05,152
+Diye düşünün.
+
+1240
+01:15:05,271 --> 01:15:07,051
+Bu sefer önce x'leri sıfıra götürdük.
+
+1241
+01:15:07,131 --> 01:15:07,951
+Şunlar sıfıra gitti.
+
+1242
+01:15:07,951 --> 01:15:09,911
+Burada kalanların y'yi kareleri sadece.
+
+1243
+01:15:10,231 --> 01:15:11,671
+Bunlar da x'i 1 bölü 3 geliyor.
+
+1244
+01:15:11,731 --> 01:15:12,591
+İki taraf aynı çıkmıyor.
+
+1245
+01:15:12,731 --> 01:15:14,591
+Direkt limit yoktur diyebilirsiniz mesela.
+
+1246
+01:15:14,951 --> 01:15:16,652
+İki kat limitin öyle bir güzelliği var.
+
+1247
+01:15:17,471 --> 01:15:20,171
+Daha hızlı şey yapabiliyorsunuz.
+
+1248
+01:15:20,211 --> 01:15:24,072
+İşlem seçimi yapmanıza falan da gerek kalmıyor ama her soruda çalışmıyor işte.
+
+1249
+01:15:25,211 --> 01:15:27,231
+Birazdan yapacağımız soruda çalışmayacak mesela.
+
+1250
+01:15:27,751 --> 01:15:29,251
+O yüzden bunu en sonu attım.
+
+1251
+01:15:29,591 --> 01:15:34,711
+Kitapta da zaten mevcut çalıştığımız kitapta da bu müfredat dahil olmadığı için
+
+1252
+01:15:34,711 --> 01:15:39,271
+genelde çalışmadığı sorular üzerinden zaten kuruluyor sorularda.
+
+1253
+01:15:39,871 --> 01:15:43,631
+Ama yine de denk gelirseniz çalıştığı durumlar için de güzel bir yöntem.
+
+1254
+01:15:43,991 --> 01:15:46,131
+O yüzden üçüncü yol olarak şuraya eklemiş olayım.
+
+1255
+01:15:47,351 --> 01:15:48,152
+Anlaştık mı?
+
+1256
+01:15:48,572 --> 01:15:49,612
+Bir tane daha yapalım.
+
+1257
+01:15:49,692 --> 01:15:51,211
+Biraz önce başladığımız soruyu yapalım.
+
+1258
+01:15:51,891 --> 01:15:57,652
+Bunda mesela iki kat limit yapsaydık önce x'e 0 versem hop 0 çıkıyor zaten hemen pi.
+
+1259
+01:15:57,851 --> 01:15:59,471
+y'ye 0 versem yine 0 çıkıyor.
+
+1260
+01:15:59,551 --> 01:16:03,851
+Dolayısıyla şöyle gözle battığımda ikisinin eşit çıktığını görüyorsam zaten iki kat limiti elemem lazım.
+
+1261
+01:16:04,331 --> 01:16:05,791
+Hangisiyle başlarsam başlayayım.
+
+1262
+01:16:05,871 --> 01:16:09,851
+Direkt pi kısmını 0 yaptığı için işime yarayacak bir değer çıkmayacak.
+
+1263
+01:16:10,032 --> 01:16:11,492
+Biraz önce yukarı 0 yapmamıştı.
+
+1264
+01:16:12,112 --> 01:16:13,931
+O yüzden diğer iki seçenek üzerinde durdur.
+
+1265
+01:16:14,032 --> 01:16:16,091
+Yani çift yol testi üzerinde durdur.
+
+1266
+01:16:16,091 --> 01:16:20,931
+Çift yol testi içinde dedik ya iki ayrı kasteleri farklı eğri veya dolgu seçeceğiz.
+
+1267
+01:16:20,931 --> 01:16:24,112
+Veya hepsini ifade edecek bir tane eğri seçeceğiz.
+
+1268
+01:16:24,771 --> 01:16:32,192
+Eğer mümkünse de payda payda'nın derecesini eşitleyecek olduğunu seçelim ki dedik hemen meydan sayılara buradaki sayılara veya direkt k'ya kalsın.
+
+1269
+01:16:32,652 --> 01:16:34,331
+Hemen birinci yol olarak şunu yapalım.
+
+1270
+01:16:34,831 --> 01:16:36,532
+Siyah dayamışım, beyaz ayı açalım.
+
+1271
+01:16:37,891 --> 01:16:40,271
+Ve büyüteyim ekranı da unutmadan.
+
+1272
+01:16:43,891 --> 01:16:45,791
+Birinci yol olarak şunu yapalım.
+
+1273
+01:16:45,992 --> 01:16:48,971
+Diyelim ki y'ştere x kare boyunca yapıyoruz limitimizi.
+
+1274
+01:16:48,971 --> 01:16:51,511
+O zaman meydanı x'e bırakıyorum.
+
+1275
+01:16:51,652 --> 01:16:53,311
+Yani limit x 0'a giderken diyeceğim.
+
+1276
+01:16:53,412 --> 01:16:54,891
+Y gördüğüm yere x kare yazacağım.
+
+1277
+01:16:55,452 --> 01:16:57,851
+İki tane x kare çarpı x kare.
+
+1278
+01:16:58,231 --> 01:16:59,931
+Bölü x üzeri 4 vardı.
+
+1279
+01:17:00,351 --> 01:17:01,331
+Burada y kare vardı.
+
+1280
+01:17:01,511 --> 01:17:03,971
+Karesini alırsam x karenin x üzeri 4 oldu.
+
+1281
+01:17:04,452 --> 01:17:06,971
+Dolayısıyla yukarısı da 2 x üzeri 4.
+
+1282
+01:17:08,251 --> 01:17:10,072
+Aşağısı da 2 x üzeri 4.
+
+1283
+01:17:10,912 --> 01:17:14,391
+Dolayısıyla ikisini de sadeleştirirsek sonuç 1 çıktı.
+
+1284
+01:17:14,391 --> 01:17:18,051
+İkinci seçeneğimiz y'ştere 2 x kare üzerindeydi.
+
+1285
+01:17:18,731 --> 01:17:24,371
+Y'ştere 2 x kare boyunca limit alırsak yani bu dönüşümü yaparsak aslında yine meydan x'e kalacak.
+
+1286
+01:17:24,532 --> 01:17:27,311
+x 0'ı giderken bu sefer y'ye gördüğüm yere 2 x kare yazacağım.
+
+1287
+01:17:27,412 --> 01:17:27,912
+Şunu yazıyorum.
+
+1288
+01:17:28,612 --> 01:17:29,791
+Buradan 2 x kare gelecek.
+
+1289
+01:17:29,971 --> 01:17:31,112
+2 x kare de yanında.
+
+1290
+01:17:31,351 --> 01:17:33,551
+Yukarısı 4 tane x üzeri 4 oldu bu sefer.
+
+1291
+01:17:33,551 --> 01:17:36,391
+Aşağısı x üzeri 4'tü.
+
+1292
+01:17:36,511 --> 01:17:37,631
+Y'nin karesini al diyor.
+
+1293
+01:17:37,731 --> 01:17:39,231
+2 x karenin karesini aldı.
+
+1294
+01:17:39,331 --> 01:17:39,671
+Ne oldu?
+
+1295
+01:17:39,771 --> 01:17:41,291
+4 tane x üzeri 4 oldu.
+
+1296
+01:17:42,051 --> 01:17:43,871
+Dolayısıyla yukarısı 4 x üzeri 4.
+
+1297
+01:17:44,351 --> 01:17:45,971
+Aşağısı 5 x üzeri 4.
+
+1298
+01:17:46,311 --> 01:17:50,152
+Ve x üzeri 4'leri sadeleştirince bu seferde 4 bölü 5 çıktı.
+
+1299
+01:17:50,532 --> 01:17:51,992
+Diyorum ki biraz önce 1 bulmuştum.
+
+1300
+01:17:52,051 --> 01:17:53,011
+Şimdi 4 bölü 5 buldum.
+
+1301
+01:17:53,072 --> 01:17:54,831
+Bir tane daha seçenek denememe gerek yok.
+
+1302
+01:17:54,971 --> 01:17:56,072
+İkisi birbirinden farklı.
+
+1303
+01:17:56,652 --> 01:17:58,452
+Dolayısıyla limit yokmuş.
+
+1304
+01:18:01,171 --> 01:18:01,871
+Anlamıştık mı?
+
+1305
+01:18:02,331 --> 01:18:02,992
+Dolayısıyla bu kadar.
+
+1306
+01:18:02,992 --> 01:18:04,591
+İster iki tane seçim yapın.
+
+1307
+01:18:04,851 --> 01:18:05,811
+Ya da deyin ki.
+
+1308
+01:18:06,532 --> 01:18:07,831
+İki tane yapmama gerekiyor.
+
+1309
+01:18:07,931 --> 01:18:09,992
+Ben x karelerin benim işime yarayacağını biliyorum.
+
+1310
+01:18:10,112 --> 01:18:13,152
+Dolayısıyla hepsini genel olarak k x kare olarak ifade edeyim diye.
+
+1311
+01:18:13,831 --> 01:18:16,871
+Ki bunu hissettiğiniz anda limitin olmadığını hissetmiş olacaksınız.
+
+1312
+01:18:16,971 --> 01:18:18,711
+İşlem yapmanıza bile gerek kalmayacak.
+
+1313
+01:18:19,032 --> 01:18:20,271
+Özel olarak sorulmazsa.
+
+1314
+01:18:21,992 --> 01:18:23,671
+Diyeceğiz ki yine meydan x'e kaldı.
+
+1315
+01:18:23,751 --> 01:18:25,572
+Bir sefer y'ye gördüğüm yere k x kare yazıyorum.
+
+1316
+01:18:25,692 --> 01:18:26,692
+2 x kare vardı.
+
+1317
+01:18:27,431 --> 01:18:28,612
+Bir de k x kare geldi.
+
+1318
+01:18:29,051 --> 01:18:31,112
+Ölü x üzeri 4 vardı.
+
+1319
+01:18:31,431 --> 01:18:32,612
+Niye yamur yine?
+
+1320
+01:18:32,612 --> 01:18:35,551
+Bir de kare.
+
+1321
+01:18:37,684 --> 01:18:39,163
+x üzeri 4 vardı.
+
+1322
+01:18:39,583 --> 01:18:40,704
+y'nin karesini alıyor.
+
+1323
+01:18:40,824 --> 01:18:42,564
+Yani k x karenin karesini aldım.
+
+1324
+01:18:42,663 --> 01:18:44,583
+O zaman k kare x üzeri 4 oldu.
+
+1325
+01:18:45,444 --> 01:18:46,604
+Şimdi bakalım ne oldu?
+
+1326
+01:18:46,824 --> 01:18:48,003
+Limit x sıfıra gidiyor.
+
+1327
+01:18:48,184 --> 01:18:50,304
+Burada 2k x üzeri 4 kaldı.
+
+1328
+01:18:50,864 --> 01:18:52,963
+Aşağıya x üzeri 4 parantezini aldım.
+
+1329
+01:18:53,484 --> 01:18:54,244
+Buradan 1.
+
+1330
+01:18:54,404 --> 01:18:55,623
+Bundan k kare geldi.
+
+1331
+01:18:56,784 --> 01:18:58,003
+x üzeri 4'ler gitti.
+
+1332
+01:18:58,564 --> 01:19:01,264
+Bakıyorum gerçekten de sonuç k'ya bağlıymış.
+
+1333
+01:19:01,264 --> 01:19:05,003
+Yani şuradaki sayı değiştikçe bu limitin sonucu değişiyormuş.
+
+1334
+01:19:05,404 --> 01:19:07,404
+O zaman diyorum ki sonuç k'ya bağlı.
+
+1335
+01:19:07,404 --> 01:19:08,604
+Yani limit yola bağlı.
+
+1336
+01:19:09,003 --> 01:19:11,204
+Dolayısıyla yine limit yoktur diyorum.
+
+1337
+01:19:13,123 --> 01:19:14,123
+Olayımız bu işte.
+
+1338
+01:19:14,244 --> 01:19:15,804
+Limitin olmadığını gösterme durumu.
+
+1339
+01:19:16,364 --> 01:19:19,324
+Yaptıklarımızın çoğu 0-0'daki durumlar.
+
+1340
+01:19:19,804 --> 01:19:22,623
+Bir senede o senenin soruları gerçekten çok zordu.
+
+1341
+01:19:22,724 --> 01:19:25,423
+Böyle derste anlattığımız üstüne hep bir tık koymak gerekiyordu.
+
+1342
+01:19:26,163 --> 01:19:27,184
+Hocamız şey sormuş.
+
+1343
+01:19:27,583 --> 01:19:28,844
+O sene soruyu soran hocamız.
+
+1344
+01:19:28,844 --> 01:19:31,423
+1-1 noktasındaki limitini sormuş.
+
+1345
+01:19:32,123 --> 01:19:35,003
+Bütün öğrenciler y'e x'e x'e y'e x kare ile yaklaşmış.
+
+1346
+01:19:35,003 --> 01:19:39,844
+Y'e x'e y'e x'e y'e x'e y'e x'e y'e x'e yaramayacaktı.
+
+1347
+01:19:41,284 --> 01:19:42,224
+1-2 miydi?
+
+1348
+01:19:42,284 --> 01:19:43,184
+Öyle bir şeydi galiba.
+
+1349
+01:19:43,824 --> 01:19:44,944
+Seçimler yanlış olmuş.
+
+1350
+01:19:45,064 --> 01:19:47,824
+Dolayısıyla o sorudan kimse tam puan alamamıştı neredeyse.
+
+1351
+01:19:48,284 --> 01:19:49,043
+Şuna dikkat edin.
+
+1352
+01:19:49,123 --> 01:19:50,524
+0-0 için yaptık biz.
+
+1353
+01:19:50,604 --> 01:19:51,844
+Bütün teoriyi bunun üzerine kurduk.
+
+1354
+01:19:53,224 --> 01:19:55,944
+Buradaki nokta değişirse o zaman ne yapmamız gerekecek?
+
+1355
+01:19:55,944 --> 01:19:57,083
+Onları da uygulamada yapalım.
+
+1356
+01:19:57,184 --> 01:20:01,463
+Mesela 1-2 noktası gelirse 1-2'den geçen eğri veya doğrular dolaşmamız gerekecek.
+
+1357
+01:20:02,064 --> 01:20:02,944
+O bir sene soruldu.
+
+1358
+01:20:03,024 --> 01:20:04,264
+Hatta çok da itiraz ettik.
+
+1359
+01:20:04,324 --> 01:20:06,564
+Böyle sorular çözmemiştik öğrencilere vesaire diye.
+
+1360
+01:20:07,884 --> 01:20:12,784
+Test sınavı için bilmiyorum öyle bir şey yapılır mı ama onun farkında olun diye de
+
+1361
+01:20:12,784 --> 01:20:14,163
+şey yapacağım zaten.
+
+1362
+01:20:14,284 --> 01:20:14,963
+Soru çözeceğim.
+
+1363
+01:20:15,444 --> 01:20:16,324
+Yine de uyanık olun.
+
+1364
+01:20:16,324 --> 01:20:21,324
+O sese size farklı bir noktadaki soruyorsa hemen saldırıp yeşilir x, yeşilir x kareyi
+
+1365
+01:20:21,324 --> 01:20:21,744
+denemeyin.
+
+1366
+01:20:21,824 --> 01:20:26,144
+Birazcık zorlamışlar derse bunu öğrendik ama veya bunun üzerine daha çok soru yaptık
+
+1367
+01:20:26,144 --> 01:20:30,324
+ama farklı bir noktayla bizi zorlamak istemişler diye düşünebilirsiniz.
+
+1368
+01:20:32,024 --> 01:20:33,144
+Tamam mıdır bu?
+
+1369
+01:20:33,324 --> 01:20:34,524
+Geçiyorum sürekliliğe.
+
+1370
+01:20:34,963 --> 01:20:36,704
+Süreklilikte tekrar aynı şeyi çözeceğiz zaten.
+
+1371
+01:20:38,644 --> 01:20:39,944
+Şimdi de süreklilik görelim.
+
+1372
+01:20:40,224 --> 01:20:41,944
+Sonra süreklilik demek, limit demek zaten.
+
+1373
+01:20:42,083 --> 01:20:43,864
+Dolayısıyla yine limit yapacağız aslında.
+
+1374
+01:20:44,144 --> 01:20:45,484
+Bir tane de bundan soru çözeceğim.
+
+1375
+01:20:45,484 --> 01:20:49,204
+Bir de size şekilleri gösterip o şekillere bağlı olabilecek.
+
+1376
+01:20:49,463 --> 01:20:51,684
+Tanım kümesi soru çözü, soru çözü böyle bitiriyorum.
+
+1377
+01:20:52,684 --> 01:20:53,244
+Süreklilik.
+
+1378
+01:20:53,503 --> 01:20:54,024
+Ne değişecek?
+
+1379
+01:20:54,123 --> 01:20:55,264
+Süreklilikte hiçbir şey değişmeyecek.
+
+1380
+01:20:55,364 --> 01:20:55,944
+Süreklilik değil.
+
+1381
+01:20:55,963 --> 01:21:01,784
+Çok değişkenliği için veya işte tek değişkenliği için farklılık gösteren bir
+
+1382
+01:21:01,784 --> 01:21:02,224
+tanım değil.
+
+1383
+01:21:02,564 --> 01:21:06,724
+Bütün fonksiyonlar her türden değişkenli fonksiyonlar için hatta dün vektör değerli
+
+1384
+01:21:06,724 --> 01:21:09,784
+fonksiyonlar için dahi aynı tanımı tanımladık.
+
+1385
+01:21:09,984 --> 01:21:11,364
+Yani süreklilik demek şu demek.
+
+1386
+01:21:11,364 --> 01:21:14,604
+O noktadaki limit, o noktadaki fonksiyonun değerine eşit olsun.
+
+1387
+01:21:14,604 --> 01:21:17,704
+Fonksiyon ister yüz değişkenli olsun, ister tek değişkenli olsun.
+
+1388
+01:21:18,104 --> 01:21:19,064
+Sürekli tanımı bu.
+
+1389
+01:21:19,463 --> 01:21:22,104
+İster skaler değerli olsun, ister vektörer değerli olsun.
+
+1390
+01:21:22,503 --> 01:21:24,824
+Tanımladığımız her türlü fonksiyon için bu geçerli.
+
+1391
+01:21:25,204 --> 01:21:26,463
+Yani şunu isteyeceğiz burada da.
+
+1392
+01:21:26,503 --> 01:21:28,543
+Yine iki değişkenli fonksiyon için konuşuyoruz.
+
+1393
+01:21:28,543 --> 01:21:38,724
+Diyeceğiz ki x'ye, ab'ye yaklaşırken fx'ye bu noktadaki limitimiz, ab noktadaki limitimiz fab olsun diyeceğiz.
+
+1394
+01:21:40,184 --> 01:21:41,644
+Eğer böyleyse ne diyeceğiz?
+
+1395
+01:21:42,123 --> 01:21:46,644
+fx'ye ab'de süreklidir diyoruz.
+
+1396
+01:21:50,484 --> 01:21:54,463
+Bu kadar minicik bir tanım ama burada aslında 3 tane şey saklıydı.
+
+1397
+01:21:55,404 --> 01:21:56,624
+Ne diyor bana bu tanım?
+
+1398
+01:21:57,144 --> 01:22:03,344
+Eşitliğin sağ tarafı, sol tarafı ve ortadaki eşitlik bana 3 tane şeyin aynı anda sağlanması gerektiğini söylüyor.
+
+1399
+01:22:04,404 --> 01:22:07,544
+Diyor ki birincisi, sol tarafta limit var.
+
+1400
+01:22:08,124 --> 01:22:09,304
+Burada FAB var.
+
+1401
+01:22:09,423 --> 01:22:10,324
+Yani burada bir sayı var.
+
+1402
+01:22:10,444 --> 01:22:14,004
+Dolayısıyla limit eşittir bir sayıysa neyi söylemiş oluyor?
+
+1403
+01:22:14,184 --> 01:22:18,044
+Fx, y'nin AB'li limiti varmış bir kere.
+
+1404
+01:22:20,484 --> 01:22:22,404
+Sol taraf bana bunu söyledi.
+
+1405
+01:22:22,704 --> 01:22:24,024
+Sağ taraf neyi söylüyor?
+
+1406
+01:22:24,124 --> 01:22:26,304
+Bak FAB diye bir sayıdan bahsediyorum ben.
+
+1407
+01:22:26,484 --> 01:22:29,484
+Demek ki ben burada tanımlıyım ki FAB'yi yazabilmişim diyor.
+
+1408
+01:22:29,764 --> 01:22:32,744
+Dolayısıyla Fx, y'ye AB'de tanımlıymış.
+
+1409
+01:22:34,644 --> 01:22:36,144
+İkinci istediğimiz şey bu.
+
+1410
+01:22:37,024 --> 01:22:38,124
+Peki bu yeterli mi?
+
+1411
+01:22:38,284 --> 01:22:39,884
+Fx, y'nin AB'de limiti var.
+
+1412
+01:22:40,064 --> 01:22:40,204
+Tamam.
+
+1413
+01:22:40,463 --> 01:22:41,824
+Fx, y'ye AB'de tanımlı.
+
+1414
+01:22:42,224 --> 01:22:42,804
+Yeterli mi?
+
+1415
+01:22:42,884 --> 01:22:43,104
+Hayır.
+
+1416
+01:22:43,224 --> 01:22:43,684
+Ne istiyorum?
+
+1417
+01:22:43,804 --> 01:22:45,204
+Ben bu ikisinin eşit olmasını istiyorum.
+
+1418
+01:22:45,324 --> 01:22:46,064
+Limit hesapladım.
+
+1419
+01:22:46,104 --> 01:22:46,864
+1 bölü 2 çıktı.
+
+1420
+01:22:47,664 --> 01:22:49,744
+Fonksiyonu 0 olarak tanımlamışlar mesela.
+
+1421
+01:22:49,744 --> 01:22:50,324
+Ne diyeceğim?
+
+1422
+01:22:50,404 --> 01:22:51,144
+Evet limiti var.
+
+1423
+01:22:51,264 --> 01:22:51,844
+Evet tanımlı.
+
+1424
+01:22:51,923 --> 01:22:52,744
+Ama birbirine eşit mi?
+
+1425
+01:22:52,824 --> 01:22:53,064
+Değil.
+
+1426
+01:22:53,164 --> 01:22:53,944
+O zaman ne diyeceğim?
+
+1427
+01:22:54,204 --> 01:22:57,284
+Bu fonksiyon o noktada sürekli değilmiş diyeceğim.
+
+1428
+01:22:57,524 --> 01:22:58,264
+Ne yapıyorduk mesela?
+
+1429
+01:22:58,444 --> 01:22:59,824
+Sürekli genişlemesi yapıyorduk.
+
+1430
+01:22:59,923 --> 01:23:01,744
+Buradaki kaldırılabilir bir süreksizlik oluyor.
+
+1431
+01:23:02,044 --> 01:23:05,963
+Limitte sıkıntı olmadığı her durumda kaldırılabilir süreksizlik demiştik.
+
+1432
+01:23:06,044 --> 01:23:06,864
+Tek değişkenliydi.
+
+1433
+01:23:07,224 --> 01:23:08,404
+Bu da da aynı şeye geçerli.
+
+1434
+01:23:10,084 --> 01:23:11,264
+Üçüncü durumda ne diyor bana?
+
+1435
+01:23:11,344 --> 01:23:11,923
+Eşitlik.
+
+1436
+01:23:12,304 --> 01:23:15,704
+Limit değeri eşit olacak.
+
+1437
+01:23:15,704 --> 01:23:17,544
+B diyelim.
+
+1438
+01:23:18,923 --> 01:23:21,423
+Fonksiyonu ya da direkt FAB diyelim.
+
+1439
+01:23:21,944 --> 01:23:22,704
+Uzatmayalım.
+
+1440
+01:23:22,704 --> 01:23:26,444
+Şöyle FAB diyelim.
+
+1441
+01:23:26,524 --> 01:23:28,444
+Bu dönüş limit değeriyle birbirine eşit olması gerekiyor.
+
+1442
+01:23:28,544 --> 01:23:31,684
+Bu üçü aynı anda sağlanıyorsa ben fonksiyonu sürekli diyorum.
+
+1443
+01:23:32,324 --> 01:23:32,904
+Limiti yok.
+
+1444
+01:23:33,084 --> 01:23:33,884
+Direkt kestir at.
+
+1445
+01:23:34,284 --> 01:23:35,244
+Fonksiyon sürekli değil.
+
+1446
+01:23:35,564 --> 01:23:36,324
+Tanımlı değil.
+
+1447
+01:23:36,564 --> 01:23:37,664
+Direkt kestirip atacağız.
+
+1448
+01:23:37,864 --> 01:23:38,984
+Tanımlı değil.
+
+1449
+01:23:39,124 --> 01:23:39,984
+Fonksiyon sürekli değil.
+
+1450
+01:23:40,124 --> 01:23:42,344
+Mesela tanımsız olur ama limiti varsa ne yaparız?
+
+1451
+01:23:42,344 --> 01:23:46,004
+Uygun bir tanımlamayla yazdığımız parçalı fonksiyonları çoğu birazdan da yapacağız.
+
+1452
+01:23:46,124 --> 01:23:47,684
+O parçalı fonksiyonlardan bir tanesini.
+
+1453
+01:23:48,824 --> 01:23:51,584
+Tanımlı olmayan bir şeyi zor da tanımlı hale getiriyoruz mesela.
+
+1454
+01:23:52,164 --> 01:23:53,144
+Veya limit değeri var.
+
+1455
+01:23:53,244 --> 01:23:54,324
+Fonksiyonu da tanımlamış.
+
+1456
+01:23:54,524 --> 01:23:58,963
+Ama bir baktık ki çıkan limit değeriyle fonksiyonun on ortadaki değeri biri an ya da biri konya'da.
+
+1457
+01:23:59,044 --> 01:23:59,664
+O zaman ne diyeceğim?
+
+1458
+01:23:59,744 --> 01:24:00,724
+Böyle sürekli olmaz.
+
+1459
+01:24:00,844 --> 01:24:01,664
+Gelin siz [kişisel bilgi].
+
+1460
+01:24:01,984 --> 01:24:03,384
+Sizin birbirinize eşitliyim diyeceğim.
+
+1461
+01:24:03,504 --> 01:24:04,844
+İşte sürekli hale getireceğiz.
+
+1462
+01:24:05,404 --> 01:24:06,724
+Sürekli genişleme olacak.
+
+1463
+01:24:06,724 --> 01:24:09,684
+Tek değişkenli fonksiyonlardaki durum aynen burada da geçerli.
+
+1464
+01:24:09,684 --> 01:24:14,404
+O zaman geçeyim mi bunu yazanlar için?
+
+1465
+01:24:15,324 --> 01:24:15,784
+Hızlı mı?
+
+1466
+01:24:15,904 --> 01:24:16,344
+Söyledim.
+
+1467
+01:24:17,544 --> 01:24:19,164
+Eski tanımımızın aynısını yazdık.
+
+1468
+01:24:20,284 --> 01:24:21,784
+Bir tanecik daha soru yapacağım.
+
+1469
+01:24:22,164 --> 01:24:22,404
+Tamam.
+
+1470
+01:24:24,604 --> 01:24:25,264
+Yazdınız mı?
+
+1471
+01:24:25,364 --> 01:24:25,584
+Tamam.
+
+1472
+01:24:25,724 --> 01:24:26,244
+Süpersiniz.
+
+1473
+01:24:27,584 --> 01:24:28,664
+Bir tane de şunu yapalım.
+
+1474
+01:24:28,724 --> 01:24:30,644
+Bu da eski sınav sorularımızdan bir tanesi.
+
+1475
+01:24:31,884 --> 01:24:33,244
+Parçalı fonksiyon vermiş.
+
+1476
+01:24:33,384 --> 01:24:34,584
+Nasıl bir parçalı fonksiyon?
+
+1477
+01:24:34,584 --> 01:24:37,844
+Çok değişkenli parçalı fonksiyonla daha önce muhatap olmamışsınız.
+
+1478
+01:24:37,944 --> 01:24:38,824
+Günden beri yapıyoruz.
+
+1479
+01:24:38,824 --> 01:24:41,484
+Buradaki fonksiyon şöyle parçalanmış.
+
+1480
+01:24:41,884 --> 01:24:46,404
+0-0 noktasında bu fonksiyon normalde tanımlı mıdır?
+
+1481
+01:24:46,664 --> 01:24:46,904
+Hayır.
+
+1482
+01:24:47,204 --> 01:24:48,064
+İçi de 0'a gidiyor.
+
+1483
+01:24:48,144 --> 01:24:49,144
+Parçalı sınıflara gidiyor.
+
+1484
+01:24:49,244 --> 01:24:50,744
+0-0 belirsizliği var.
+
+1485
+01:24:50,824 --> 01:24:55,463
+Yani normalde tanımlı olmayacak bir fonksiyonu biz zorla tanımlı hale getirmişiz.
+
+1486
+01:24:55,963 --> 01:24:57,064
+Demişiz ki 0 olsun.
+
+1487
+01:24:57,244 --> 01:24:58,524
+Burasını uydurmuşuz biz artık.
+
+1488
+01:24:58,644 --> 01:24:59,804
+Öyle bir tanımlama yapmışız.
+
+1489
+01:24:59,804 --> 01:25:05,604
+X'ye 0'dan farklı iken 0-0'dan farklı iken bu fonksiyonu oluşturuyormuş.
+
+1490
+01:25:05,844 --> 01:25:07,344
+Zaten başka bir noktada sıkıntısı yok.
+
+1491
+01:25:07,744 --> 01:25:11,204
+X'ye 0-0 iken tanımlı değil de zorla tanımlı yapmışız.
+
+1492
+01:25:11,264 --> 01:25:12,423
+Orayı da 0 haline getirmiş.
+
+1493
+01:25:12,584 --> 01:25:14,724
+Bu fonksiyonun sürekliliğini inceleyin diyor.
+
+1494
+01:25:14,724 --> 01:25:16,644
+Şimdi bakacağım adımlar.
+
+1495
+01:25:17,124 --> 01:25:18,044
+Bir kere tanımlı mı?
+
+1496
+01:25:21,384 --> 01:25:22,144
+Bakıyorum.
+
+1497
+01:25:22,504 --> 01:25:24,104
+Evet tanımlı nasıl tanımlamış?
+
+1498
+01:25:24,423 --> 01:25:27,224
+F0-0'ı 0 olarak tanımlamış.
+
+1499
+01:25:27,304 --> 01:25:28,084
+Tanımlı sıkıntı yok.
+
+1500
+01:25:28,164 --> 01:25:29,184
+Yakın düzeye geçtim ben.
+
+1501
+01:25:29,984 --> 01:25:30,184
+Tamam.
+
+1502
+01:25:31,204 --> 01:25:34,064
+İkincisi limiti var mı?
+
+1503
+01:25:35,764 --> 01:25:37,324
+Dolayısıyla işte sorunun burası.
+
+1504
+01:25:37,564 --> 01:25:38,944
+Biraz önceki sorumuza döndü.
+
+1505
+01:25:39,524 --> 01:25:41,724
+Acaba şu limit var mıymış?
+
+1506
+01:25:42,504 --> 01:25:44,404
+X'ye 0-0.
+
+1507
+01:25:44,724 --> 01:25:46,724
+Sinus X'ye
+
+1508
+01:25:46,724 --> 01:25:49,584
+böyle X kare artı Y kare.
+
+1509
+01:25:51,060 --> 01:26:13,700
+Şöyle bir baktık. Ne dedim? Elinizde sinüslü ifadeler varsa şunu deneyebilirsiniz. Ya burada sinüs xy var. Keşke yanında xy olsaydı, faydada olsaydı. xy ile çarpıp böldük mesela. Bakalım işimize yarar mı? xy sıfır sıfıra gidiyor. Sıfır bölü sıfır belirsizliğimiz var. Cebirsel işlem sanki işe yararmış gibi geldi. Hadi xy ile çarptık, böldük.
+
+1510
+01:26:13,700 --> 01:26:42,780
+Bakalım olur mu? xy bölü x kare artı yukarı. Evet, şurayı hallettik. Buna bir diyebilirim. E burası, burada işime yarar mı? xy bölü x kare artı yukarı. Yani soruyu şuna çevirdim. Bunun limitinin olup olmadığını düşünmek yerine şuna geçmiş oldum. Bunun limiti var mıdır, yok mudur diye bakıyorum. Yapılacaklar neydi? Yine sıfır bölü sıfır belirsizliği var. Cebirsel işlem işe yarar mı diye bakıyorum. Yok, x çarpı y zaten çarpım halde.
+
+1511
+01:26:42,780 --> 01:26:48,080
+x kare artı yıkları ayıramıyorum. Ne anlıyorum burada cebirsel işlemler olmaz.
+
+1512
+01:26:51,572 --> 01:26:53,872
+Cebirsel olmazsa aklıma ne geliyordu?
+
+1513
+01:26:54,452 --> 01:26:56,332
+Galiba bunun limiti yok geliyordu.
+
+1514
+01:26:58,412 --> 01:27:00,811
+O zaman limitin olmadığını dair.
+
+1515
+01:27:00,891 --> 01:27:02,511
+Yani bu fonksiyonun limiti yokmuş.
+
+1516
+01:27:02,731 --> 01:27:04,612
+Limitin olmadığını en baştan gösterelim.
+
+1517
+01:27:05,551 --> 01:27:06,271
+Ne seçelim?
+
+1518
+01:27:07,292 --> 01:27:08,051
+Y eşitir x.
+
+1519
+01:27:08,592 --> 01:27:10,051
+Y eşitir x seçelim.
+
+1520
+01:27:10,431 --> 01:27:12,351
+Mesela başka bir tane daha seçmemiz gerekecek.
+
+1521
+01:27:12,351 --> 01:27:14,672
+Veya genelleştirelim y eşitir x'i.
+
+1522
+01:27:15,351 --> 01:27:15,832
+Mesela şu.
+
+1523
+01:27:16,891 --> 01:27:19,652
+Y eşitir x ile y eşitir x'i seçebiliriz.
+
+1524
+01:27:20,072 --> 01:27:20,891
+Neyi düşünüyoruz?
+
+1525
+01:27:20,891 --> 01:27:22,072
+Yine şunu kullanıyoruz.
+
+1526
+01:27:22,292 --> 01:27:24,452
+Buradan uyanmadıysak ben şuradan uyanmamız lazım.
+
+1527
+01:27:24,612 --> 01:27:28,532
+Dereceleri eşitleyecek olan burada zaten dereceler birbirleriye eşitlenmiş halde.
+
+1528
+01:27:28,612 --> 01:27:30,792
+Burada y yerine x olsa burası da x kare olur.
+
+1529
+01:27:30,872 --> 01:27:31,712
+Burası da x kare olur.
+
+1530
+01:27:32,051 --> 01:27:35,072
+Dolayısıyla y eşitir x'ler yani doğrular benim işime yarayacak.
+
+1531
+01:27:35,532 --> 01:27:38,051
+Ya birinci yol olarak iki tane seçim yapacağız.
+
+1532
+01:27:38,252 --> 01:27:45,112
+Ya da ikinci yol olarak tek seçimle hepsini ifade edecek olan tek seçimle yolumuza devam edeceğiz.
+
+1533
+01:27:45,632 --> 01:27:46,792
+İkisini de yapalım hadi.
+
+1534
+01:27:47,471 --> 01:27:49,152
+Senin üstü kullanımızı hatırlamış olarak.
+
+1535
+01:27:49,152 --> 01:27:51,532
+Bunu yaptığımda şunu demiş oluyorum.
+
+1536
+01:27:51,752 --> 01:27:53,271
+Limit x sıfıra giderken diyorum.
+
+1537
+01:27:53,912 --> 01:27:54,391
+Ne yapıyorum?
+
+1538
+01:27:54,471 --> 01:27:55,912
+Y gördüğüm yere x yazıyorum.
+
+1539
+01:27:56,072 --> 01:27:57,351
+Sinüs x kare oldu burası.
+
+1540
+01:27:58,311 --> 01:27:58,952
+Ayda ne oldu?
+
+1541
+01:27:59,051 --> 01:27:59,811
+x kare vardı.
+
+1542
+01:27:59,912 --> 01:28:00,792
+Bu da x'e dönüştü.
+
+1543
+01:28:00,872 --> 01:28:01,511
+Bu da x kare.
+
+1544
+01:28:01,672 --> 01:28:02,632
+2x kare oldu.
+
+1545
+01:28:03,311 --> 01:28:04,452
+O zaman buradan ne çıkar?
+
+1546
+01:28:04,912 --> 01:28:05,712
+1 bölü 2 çıkar.
+
+1547
+01:28:05,872 --> 01:28:07,212
+Sinüs x kare bölü x kare 1.
+
+1548
+01:28:07,391 --> 01:28:08,112
+Burada da 2'm var.
+
+1549
+01:28:08,192 --> 01:28:08,891
+1 bölü 2 oldu.
+
+1550
+01:28:09,572 --> 01:28:10,471
+Bir de şuna bakalım.
+
+1551
+01:28:11,172 --> 01:28:13,632
+Limit x sıfıra giderken bu sefer 2x koyacağız.
+
+1552
+01:28:13,632 --> 01:28:14,271
+Şurada.
+
+1553
+01:28:14,391 --> 01:28:15,551
+O zaman sinüsün içinde ne olacak?
+
+1554
+01:28:15,692 --> 01:28:16,592
+2x kare olacak.
+
+1555
+01:28:17,271 --> 01:28:19,752
+Sinüs 2x kare bölü.
+
+1556
+01:28:20,391 --> 01:28:21,712
+Aşağıda x karen vardı.
+
+1557
+01:28:22,872 --> 01:28:23,912
+2 koydum bir de buraya.
+
+1558
+01:28:24,072 --> 01:28:25,452
+Burası da 4x kare oldu.
+
+1559
+01:28:25,832 --> 01:28:27,652
+Bir de x kare yanında 5x kare oldu.
+
+1560
+01:28:28,612 --> 01:28:29,572
+Bunun sonucu neydi?
+
+1561
+01:28:29,731 --> 01:28:31,572
+2 ile çarpıp 2 ile bölebilirsiniz.
+
+1562
+01:28:31,572 --> 01:28:33,212
+Veya direkt ne diyorduk?
+
+1563
+01:28:33,332 --> 01:28:37,011
+Eğer sadece kas sayı farklılığı varsa direkt kas sayılığın oranını alıyorduk.
+
+1564
+01:28:37,931 --> 01:28:39,072
+Buradan 2 bölü 5'te.
+
+1565
+01:28:39,391 --> 01:28:41,372
+Ha derin bak buradan baktım 1 bölü 2 çıktı.
+
+1566
+01:28:41,492 --> 01:28:42,971
+Buradan baktım 2 bölü 5 çıktı.
+
+1567
+01:28:43,292 --> 01:28:45,072
+Bu limit mevcut değilmiş.
+
+1568
+01:28:46,672 --> 01:28:49,192
+Limit yoksa sürekli de değildir.
+
+1569
+01:28:50,672 --> 01:28:55,212
+Dolayısıyla her süreklilik sorusu otomatik olarak zaten ne sorusudur?
+
+1570
+01:28:55,952 --> 01:28:57,112
+Limit sorusudur.
+
+1571
+01:28:57,792 --> 01:28:59,032
+Şunu yapsaydık.
+
+1572
+01:28:59,072 --> 01:29:00,971
+K-x yapsaydık ikinci yol olarak.
+
+1573
+01:29:01,572 --> 01:29:05,511
+Orada diyecektik ki y yerine kx yazacağım.
+
+1574
+01:29:06,231 --> 01:29:08,152
+Kx'i burada yazmayacağım tabii ki.
+
+1575
+01:29:08,271 --> 01:29:09,471
+Sıfır ederken diyeceğim.
+
+1576
+01:29:09,851 --> 01:29:10,811
+Kx yazdım bu sefer.
+
+1577
+01:29:10,952 --> 01:29:12,212
+Sinüs kx kare oldu.
+
+1578
+01:29:14,092 --> 01:29:14,952
+Aşağısı ne olacak?
+
+1579
+01:29:15,132 --> 01:29:17,011
+x kare artı k kare x kare olacak.
+
+1580
+01:29:17,431 --> 01:29:18,992
+x kare parantisine yazayım onu da.
+
+1581
+01:29:19,092 --> 01:29:20,231
+1 artı k kare gelecek.
+
+1582
+01:29:22,092 --> 01:29:23,572
+Dolayısıyla şu kısım
+
+1583
+01:29:23,572 --> 01:29:26,252
+nereye gidecek?
+
+1584
+01:29:26,351 --> 01:29:27,092
+K'ya gidecek.
+
+1585
+01:29:27,092 --> 01:29:30,051
+Sinüs k x kare bölü k x kare k ile çarpıp bölsek
+
+1586
+01:29:30,051 --> 01:29:32,051
+k bölü 1 artı k kare gelecekti.
+
+1587
+01:29:32,551 --> 01:29:34,532
+Dolayısıyla sonucumuz yine k'ya bağlı.
+
+1588
+01:29:35,152 --> 01:29:36,112
+Yine limit yok.
+
+1589
+01:29:38,051 --> 01:29:39,912
+Yine diyorum ki sürekli değil.
+
+1590
+01:29:41,332 --> 01:29:43,092
+Ya da hiç bunlarla uğraşmadan
+
+1591
+01:29:43,092 --> 01:29:46,832
+hazır şurada sinüs x'ye bölü x'ye den sinüsten kurtulmuştun.
+
+1592
+01:29:46,832 --> 01:29:49,652
+Şuraya baktığım anda burada cebirsel işlemişe yaramıyor.
+
+1593
+01:29:49,792 --> 01:29:53,872
+Ben burada y'şt x'leri seçsem zaten farklı sonuç çıkacak diye düşünüp
+
+1594
+01:29:53,872 --> 01:29:54,752
+gerek ne yapın?
+
+1595
+01:29:55,231 --> 01:29:57,452
+Limitin olmadığını kanaat getirin.
+
+1596
+01:29:58,832 --> 01:30:02,011
+Şimdi yaz okulu sorusunu göstermek istiyorum size ama yazıyorsunuzdur.
+
+1597
+01:30:02,072 --> 01:30:03,212
+Belki birazcık bekleyin.
+
+1598
+01:30:03,212 --> 01:30:05,912
+Burada şuna dikkat etmeniz gerekiyor.
+
+1599
+01:30:05,992 --> 01:30:07,311
+Ya da bu soru üzerinden konuşayım.
+
+1600
+01:30:07,792 --> 01:30:09,252
+Yaz okulunda da böyle bir soru sorulmuş.
+
+1601
+01:30:09,332 --> 01:30:12,431
+Sinüs de değil ama biraz önce yaptığımız gibi sadece x'ler y'ler var.
+
+1602
+01:30:13,391 --> 01:30:15,212
+Fonksiyonu böyle parçalı olarak tanımlamış.
+
+1603
+01:30:15,632 --> 01:30:18,431
+A şıkkında demiş ki tüm r kare de tanımlıdır.
+
+1604
+01:30:19,192 --> 01:30:22,032
+Öğrenciler tüm r kare de tanımlıdır'ı işaretlememişler.
+
+1605
+01:30:22,172 --> 01:30:24,592
+Aynısını size matbirde de yapmışlardı hatırlarsanız.
+
+1606
+01:30:24,592 --> 01:30:30,252
+Fonksiyonun sıfırda sıkıntısı olduğunu görüyorsunuz ama şu haliyle kaydırıyorum bunu.
+
+1607
+01:30:30,811 --> 01:30:33,452
+Fonksiyon evet eğer şöyle sorulsaydı.
+
+1608
+01:30:33,851 --> 01:30:36,351
+Tek başına fx'ye fonksiyonu sorulsaydı.
+
+1609
+01:30:37,072 --> 01:30:37,931
+Şöyle denseydim.
+
+1610
+01:30:38,452 --> 01:30:41,752
+Sinüs x'ye bölü x kare artı y kare olsaydı.
+
+1611
+01:30:42,112 --> 01:30:44,351
+Ve şıklarda şöyle bir şeyden bahsedilseydi.
+
+1612
+01:30:44,351 --> 01:30:46,492
+0,0'da fonksiyon tanımlıdır.
+
+1613
+01:30:48,148 --> 01:30:52,547
+Bu doğru olur muydu? Hayır. Böyle bir tanımlama için fonksiyon sıfır sıfırda tanımlı olmaz.
+
+1614
+01:30:52,967 --> 01:30:54,108
+Bu yanlıştır derdik.
+
+1615
+01:30:54,568 --> 01:31:00,948
+Ama fonksiyonu bu şekilde tanımlı dese, yani tanımsız olan bir fonksiyonu zorla tanımlama yaparak tanımlı hale getirdiyse
+
+1616
+01:31:00,948 --> 01:31:03,368
+o zaman sizin şöyle bir şey demeye aklınız yok.
+
+1617
+01:31:03,488 --> 01:31:05,408
+Hayır, bu fonksiyon sıfır sıfırda tanımlı değil.
+
+1618
+01:31:05,587 --> 01:31:07,007
+O sizin için gerçekten tuzak.
+
+1619
+01:31:07,307 --> 01:31:10,368
+Matbirde de kurduk, bu tuzağa düşen çok öğrenci oldu.
+
+1620
+01:31:10,708 --> 01:31:12,208
+Matikide de aynı tuzak kurulmuş.
+
+1621
+01:31:12,728 --> 01:31:15,568
+Yine düşen çok öğrenci olmuş hocamın söylediğine göre.
+
+1622
+01:31:16,568 --> 01:31:17,648
+O yüzden ne olur dikkat edin.
+
+1623
+01:31:17,648 --> 01:31:23,228
+Tek başına verilen bir fonksiyonla bir noktayı ilave etmişiz.
+
+1624
+01:31:23,368 --> 01:31:25,248
+Süreksiz olduğu noktayı ilave etmişiz.
+
+1625
+01:31:25,307 --> 01:31:26,868
+Dolayısıyla biz burada tanımlamışız.
+
+1626
+01:31:27,068 --> 01:31:28,587
+İşte burada söylüyor tanımlı olduğunu.
+
+1627
+01:31:29,087 --> 01:31:31,467
+O yüzden sıfır sıfırda tanımlı da derse, evet.
+
+1628
+01:31:31,988 --> 01:31:33,587
+Tüm re karede tanımlıdır, evet.
+
+1629
+01:31:33,728 --> 01:31:36,208
+Çünkü bunun tek sıkıntılı olduğu yer sıfır sıfır noktası.
+
+1630
+01:31:36,708 --> 01:31:37,927
+Limiti vardır, hayır.
+
+1631
+01:31:38,448 --> 01:31:40,387
+Şu doğru boyunca limiti vardır.
+
+1632
+01:31:40,668 --> 01:31:44,488
+Hesaplarsınız, evet doğrudur, yanlıştır şeklinde düşünebilirsiniz onu.
+
+1633
+01:31:44,828 --> 01:31:46,288
+Lütfen şu tanımlamayı atlamayın.
+
+1634
+01:31:46,288 --> 01:31:50,427
+Yaz okulunda sorulmuş, hem mazerette sorulmuş hem vizede sorulmuş.
+
+1635
+01:31:51,148 --> 01:31:54,288
+Şeyde hani haftaya yapalım demiştim ya, hafta sonu ders.
+
+1636
+01:31:54,427 --> 01:31:56,688
+Artık cumartesi mi pazar mı yaparız ona karar veririz.
+
+1637
+01:31:56,688 --> 01:32:03,427
+Onu da geçen senenin yaz okulundaki mazeret sınav sorularını çözelim istiyorum.
+
+1638
+01:32:03,648 --> 01:32:06,488
+Şimdiye kadar yaptığımız bütün konulardan en azından hepsini tekrar etmiş oluruz.
+
+1639
+01:32:06,528 --> 01:32:07,788
+20 tane soru.
+
+1640
+01:32:08,307 --> 01:32:11,268
+Evet, bana da çok acı geliyor maalesef [öğrenci]'ciğim.
+
+1641
+01:32:11,908 --> 01:32:15,448
+Hani öğrenci her şeyi biliyor, belki limitin olmadığını görüyor ama böyle göz aldanıyor.
+
+1642
+01:32:15,448 --> 01:32:24,087
+Hatta size matbilde sorular sorudu da ben, aa dedim yanlış ışıklarda hiçbirinde yok veya işte böyle mi sormuşlar diye ben de düştüm o tuzağa.
+
+1643
+01:32:24,887 --> 01:32:26,587
+Kötü bir tuzağı maalesef.
+
+1644
+01:32:26,688 --> 01:32:33,627
+Yazın sınav olsa çok az puan kıracağımız yerden normal test sınavında ciddi öğrenci avlamış oluyoruz.
+
+1645
+01:32:33,688 --> 01:32:36,448
+Yani birazcık dikkat sınavına da dönmüş oldu matematikler.
+
+1646
+01:32:36,448 --> 01:32:38,807
+O yüzden ne olur dikkat edin.
+
+1647
+01:32:38,948 --> 01:32:44,248
+Hani altı indisler, üstü indisler özellikle serilerde her türlü şey yapılabilir.
+
+1648
+01:32:45,488 --> 01:32:47,728
+Küçük işaret farklılıkları ne bileyim.
+
+1649
+01:32:48,307 --> 01:32:49,347
+Dikkatli olmamız lazım.
+
+1650
+01:32:49,448 --> 01:32:50,768
+O yüzden uykusuz girmeye sınava.
+
+1651
+01:32:51,047 --> 01:32:52,528
+Gerçi akşamüstü zaten sınav.
+
+1652
+01:32:52,587 --> 01:32:53,967
+Uykulu da girmemeniz lazım tabii.
+
+1653
+01:32:55,087 --> 01:32:55,387
+Öyle.
+
+1654
+01:32:55,688 --> 01:32:56,708
+Şu konuda uyarayım sizi.
+
+1655
+01:32:57,127 --> 01:32:59,068
+Yapacağız zaten mazeri sınav sorularını.
+
+1656
+01:33:00,007 --> 01:33:01,127
+Zaten kaç yapmışım?
+
+1657
+01:33:01,188 --> 01:33:01,927
+Oturuş yapmışım.
+
+1658
+01:33:01,988 --> 01:33:03,688
+Yine planladığım gibi gitmedi.
+
+1659
+01:33:03,688 --> 01:33:06,307
+Hemen hızlıca şurayı yapıp böyle bitiriyorum dersi.
+
+1660
+01:33:06,347 --> 01:33:07,507
+Dün burayı atlamıştık.
+
+1661
+01:33:08,788 --> 01:33:12,188
+Bununla iki katlı interralde çok muhatap olacağız.
+
+1662
+01:33:13,068 --> 01:33:17,547
+Ya böyle benim korku çizimlerime maruz kalacaksınız ya da kitaptan alıp koklayacağım güzel çizimler.
+
+1663
+01:33:18,627 --> 01:33:19,667
+Uğraşabilirsem eğer.
+
+1664
+01:33:21,387 --> 01:33:22,927
+Şunu yapacağız iki katlı interralde.
+
+1665
+01:33:23,028 --> 01:33:25,748
+Kürenin içine atıyorum parabolyayı sokuyacağız.
+
+1666
+01:33:26,007 --> 01:33:27,667
+Kürenin içine silindir sokuyacağız.
+
+1667
+01:33:27,768 --> 01:33:28,868
+Onların hacmini hesaplayacağız.
+
+1668
+01:33:28,948 --> 01:33:30,528
+Dolayısıyla üç boyutlu düşünmemiz gerekecek.
+
+1669
+01:33:31,068 --> 01:33:32,788
+Denklemlerini bilmemiz gerekecek tabii ki.
+
+1670
+01:33:32,788 --> 01:33:40,507
+Nasıl ki y işte x kariyi gördüğümüz anda bu parabolyayı çizelim diyorsak küreği, elipsoy, silindiri gördüğümüz anda da çizecek haline geleceğiz.
+
+1671
+01:33:40,507 --> 01:33:45,148
+Şu aşamada bizim üç boyutlu şekillerle sadece şu durumda ihtiyacımız var.
+
+1672
+01:33:45,448 --> 01:33:49,328
+Dün iki değişkenli fonksiyonlar için tanım kümesi, tanım bölgesi yapmıştık.
+
+1673
+01:33:49,408 --> 01:33:50,528
+Tanım bölgesini çizmiştik.
+
+1674
+01:33:50,828 --> 01:33:52,228
+Dolayısıyla iki boyutta çizmiştik onları.
+
+1675
+01:33:52,228 --> 01:33:57,708
+Eğer üç değişkenli fonksiyon olsaydı onun tanım bölgesi için üç değişkenli fonksiyona ihtiyacımız vardı.
+
+1676
+01:33:57,807 --> 01:34:01,448
+Daha doğrusu üç boyutta çizim yapmamıza ihtiyacımız vardı.
+
+1677
+01:34:01,568 --> 01:34:03,488
+İşte sadece onun için şu anda tanıtıyoruz.
+
+1678
+01:34:03,828 --> 01:34:07,828
+Yoksa bunların kendileriyle daha sonra çok daha fazla muhatap olacağız.
+
+1679
+01:34:08,819 --> 01:34:11,279
+Bir tanıştıracağım. Uzun uzun bir şey anlatmayacağım.
+
+1680
+01:34:11,380 --> 01:34:13,279
+Çünkü zaten defter kitap açısına ödüyorsunuz.
+
+1681
+01:34:14,619 --> 01:34:15,739
+Elinizde notlarınız olacak.
+
+1682
+01:34:15,920 --> 01:34:17,939
+Hangi deklem, kimmiş hemen hızlıca bakarsınız.
+
+1683
+01:34:18,799 --> 01:34:19,099
+Küre.
+
+1684
+01:34:19,340 --> 01:34:21,719
+X kare artı Y kare artı Z kare işleri R kare.
+
+1685
+01:34:22,119 --> 01:34:23,599
+Bizim için küre denklemi olacak.
+
+1686
+01:34:23,599 --> 01:34:26,799
+İki boyutta X kare artı Y kare işleri R kare çemberdi.
+
+1687
+01:34:27,159 --> 01:34:29,079
+Üç boyutta bunların yanına bir de Z kare geliyor.
+
+1688
+01:34:29,500 --> 01:34:32,219
+Dolayısıyla yine bir küre denklemine ulaşıyoruz.
+
+1689
+01:34:32,359 --> 01:34:34,599
+Yara çapı R olan orijin merkezi küre.
+
+1690
+01:34:35,079 --> 01:34:37,420
+Ötelenmiş küreyle muhatap olmamız gerekiyorsa
+
+1691
+01:34:37,420 --> 01:34:39,219
+normal çemberde nasıl öteliyorsak
+
+1692
+01:34:39,219 --> 01:34:40,279
+denklemde
+
+1693
+01:34:40,279 --> 01:34:42,840
+kürede de aynı şekilde
+
+1694
+01:34:42,840 --> 01:34:45,079
+ve denklem ötelemesiyle yapıyoruz.
+
+1695
+01:34:45,239 --> 01:34:47,439
+X eksi anı kare artı Y eksi B'nin kare artı
+
+1696
+01:34:47,439 --> 01:34:49,319
+Z eksi C'nin kare sını gördüğümüz anda
+
+1697
+01:34:49,319 --> 01:34:50,840
+merkezi A, B, C olan
+
+1698
+01:34:50,840 --> 01:34:53,000
+R yarı çapı küre olduğunu anlayacağız.
+
+1699
+01:34:54,099 --> 01:34:55,039
+Bu birinci yerimiz.
+
+1700
+01:34:55,759 --> 01:34:56,859
+Yine şuna bakarsak
+
+1701
+01:34:56,859 --> 01:34:58,759
+ben öğrenciken şöyle tutardım aklıma
+
+1702
+01:34:58,759 --> 01:35:00,759
+defter kitap açısına girmiyorduk tabii.
+
+1703
+01:35:02,000 --> 01:35:03,219
+Şimdi bu olmasaydı bu bana
+
+1704
+01:35:03,219 --> 01:35:05,619
+hangi denklem hatırlatıyor? Elipsi denklemini hatırlatıyor.
+
+1705
+01:35:05,719 --> 01:35:07,399
+Genelde böyle bağlantılar var aralarında.
+
+1706
+01:35:07,420 --> 01:35:09,679
+iki boyutta elips denklemi olan
+
+1707
+01:35:09,679 --> 01:35:11,619
+yanına eğer üç boyutta da
+
+1708
+01:35:11,619 --> 01:35:13,719
+yanına Z kare bölü C kare gelmiş.
+
+1709
+01:35:13,880 --> 01:35:15,639
+Yani üçüncü değişkenimde de aynı şekilde
+
+1710
+01:35:15,639 --> 01:35:17,619
+bir ifade eklenmişse
+
+1711
+01:35:17,619 --> 01:35:18,799
+o zaman aklıma ne geliyor?
+
+1712
+01:35:19,000 --> 01:35:20,399
+Elipsin üç boyutlu hali
+
+1713
+01:35:20,399 --> 01:35:21,479
+elipsoid geliyor.
+
+1714
+01:35:21,599 --> 01:35:23,880
+Yani elipsi döndürerek elde ettiğiniz şekil geçecek.
+
+1715
+01:35:24,279 --> 01:35:25,219
+Bu da elipsoidimiz.
+
+1716
+01:35:25,859 --> 01:35:27,899
+Yine burada da bu iki boyutta çembere benziyordu.
+
+1717
+01:35:28,340 --> 01:35:29,199
+Üç boyuta geçtim.
+
+1718
+01:35:29,679 --> 01:35:31,319
+Küre oldu. Z de geldi aynı şekilde.
+
+1719
+01:35:31,559 --> 01:35:32,500
+Bu elipse benziyordu.
+
+1720
+01:35:32,880 --> 01:35:35,340
+Yanına bir de Z gelmiş arkadaş olarak aynı tarzda.
+
+1721
+01:35:35,340 --> 01:35:37,000
+O zaman bununla da elipsoid oluyor.
+
+1722
+01:35:37,420 --> 01:35:39,359
+Sonra
+
+1723
+01:35:39,359 --> 01:35:42,539
+paraboloid çok kullanacağız.
+
+1724
+01:35:42,539 --> 01:35:45,199
+güzel sonuçlar veriyor.
+
+1725
+01:35:45,299 --> 01:35:46,799
+Hem çizerken hem bir şeylerle
+
+1726
+01:35:46,799 --> 01:35:48,519
+kesiştirdiğimiz o yüzden bizim favori
+
+1727
+01:35:48,519 --> 01:35:50,259
+şekillerimizden biri olacak paraboloid.
+
+1728
+01:35:51,079 --> 01:35:52,179
+Bağımlı değişkenimiz Z,
+
+1729
+01:35:52,359 --> 01:35:54,159
+bağımsız değişkenlerimiz X ile Y.
+
+1730
+01:35:54,759 --> 01:35:56,399
+Hemen yine öğrenciken düşündüğüm
+
+1731
+01:35:56,399 --> 01:35:57,279
+mantığı söylüyorum size.
+
+1732
+01:35:57,359 --> 01:35:58,899
+Bu olmasaydı bağımlı değişken
+
+1733
+01:35:58,899 --> 01:35:59,579
+birinci dereceden,
+
+1734
+01:35:59,679 --> 01:36:00,960
+bağımsız değişken ikinci dereceden.
+
+1735
+01:36:01,059 --> 01:36:02,579
+Yani sanki Y eşitir X kare gibi.
+
+1736
+01:36:02,880 --> 01:36:03,479
+Bunun ismi nedir?
+
+1737
+01:36:03,579 --> 01:36:04,159
+Paraboldur.
+
+1738
+01:36:04,500 --> 01:36:06,599
+Veya bu olmasaydı Z eşitir B'ye kare.
+
+1739
+01:36:06,679 --> 01:36:07,840
+Yine parabola benziyor.
+
+1740
+01:36:07,840 --> 01:36:08,819
+Ama ne olmuş?
+
+1741
+01:36:08,920 --> 01:36:10,179
+İki tane bağımlı değişken
+
+1742
+01:36:10,179 --> 01:36:12,599
+ikinci dereceden toplam halinde yanında.
+
+1743
+01:36:13,299 --> 01:36:14,659
+Burada da Z tek başına duruyor.
+
+1744
+01:36:14,979 --> 01:36:15,699
+O zaman ne diyorum?
+
+1745
+01:36:15,799 --> 01:36:17,199
+Bağımlı değişken birinci dereceden.
+
+1746
+01:36:17,299 --> 01:36:19,199
+Bağımsız değişkenler ikinci dereceden
+
+1747
+01:36:19,199 --> 01:36:20,579
+toplam halinde duruyorlarsa
+
+1748
+01:36:20,579 --> 01:36:21,819
+bununla da paraboloid oluyor.
+
+1749
+01:36:22,779 --> 01:36:23,659
+Parabolidi şöyle
+
+1750
+01:36:23,659 --> 01:36:25,179
+düşündüreceğim ben size.
+
+1751
+01:36:25,279 --> 01:36:27,739
+İşte çorba kâsesi olarak düşünebilirsiniz.
+
+1752
+01:36:27,920 --> 01:36:29,420
+Böyle altı birazcık sivrice
+
+1753
+01:36:29,420 --> 01:36:31,399
+veya bardak gibi düşünebilirsiniz.
+
+1754
+01:36:31,399 --> 01:36:33,399
+Elimizde bardak olacak.
+
+1755
+01:36:33,899 --> 01:36:35,299
+Ve biz dik bardakla
+
+1756
+01:36:35,299 --> 01:36:37,119
+veya ters duran bardakla uğraşacağız.
+
+1757
+01:36:37,500 --> 01:36:37,899
+O yüzden
+
+1758
+01:36:37,899 --> 01:36:39,679
+yani çarptaz duran
+
+1759
+01:36:39,679 --> 01:36:41,439
+şu tarafa doğru çizebileceğimiz
+
+1760
+01:36:41,439 --> 01:36:42,939
+canımızın istediği yöne doğru
+
+1761
+01:36:42,939 --> 01:36:44,279
+çizebileceğimiz bardaklar var.
+
+1762
+01:36:44,380 --> 01:36:45,420
+Tabii ki böyle sonsuz olan
+
+1763
+01:36:45,420 --> 01:36:46,599
+bir bardaktan bahsediyorum.
+
+1764
+01:36:47,179 --> 01:36:47,340
+Ama
+
+1765
+01:36:47,340 --> 01:36:49,340
+hani bizim amacımız burada nedir?
+
+1766
+01:36:49,420 --> 01:36:50,659
+O üç boyutlu şekli düşünüp
+
+1767
+01:36:50,659 --> 01:36:52,299
+onu intervileye dökebilmeniz olduğu için
+
+1768
+01:36:52,299 --> 01:36:53,420
+ya dik duran
+
+1769
+01:36:53,420 --> 01:36:55,139
+ya aşağıya doğru duran
+
+1770
+01:36:55,139 --> 01:36:55,819
+ters duran
+
+1771
+01:36:55,819 --> 01:36:58,179
+ya orijinde mevzilenmiş
+
+1772
+01:36:58,179 --> 01:36:59,319
+ya da işte Z ekseninin
+
+1773
+01:36:59,319 --> 01:37:00,519
+yukarısına veya aşağısına
+
+1774
+01:37:00,519 --> 01:37:01,599
+yani Z ekseni boyunca
+
+1775
+01:37:01,599 --> 01:37:02,880
+uzanmış olan bardaklarda
+
+1776
+01:37:02,880 --> 01:37:03,559
+uğraşacağız biz.
+
+1777
+01:37:03,819 --> 01:37:04,719
+O yüzden bu şekilde
+
+1778
+01:37:04,719 --> 01:37:05,539
+bardakların
+
+1779
+01:37:05,539 --> 01:37:06,579
+yani paraboloidlerin
+
+1780
+01:37:06,579 --> 01:37:07,519
+denklemlerinde
+
+1781
+01:37:07,519 --> 01:37:09,139
+X karenin kas sayısı
+
+1782
+01:37:09,139 --> 01:37:10,340
+ve Y karenin kas sayısının
+
+1783
+01:37:10,340 --> 01:37:12,719
+aynı işarete sahip olması gerekiyor.
+
+1784
+01:37:13,239 --> 01:37:15,099
+Yani ya ikisi de pozitif olacaklar
+
+1785
+01:37:15,099 --> 01:37:16,679
+ya ikisi de negatif olacaklar.
+
+1786
+01:37:16,739 --> 01:37:18,439
+Bu şekildeki bir şey için
+
+1787
+01:37:18,439 --> 01:37:19,899
+paraboloid için.
+
+1788
+01:37:20,519 --> 01:37:21,439
+O yüzden nasılsa
+
+1789
+01:37:21,439 --> 01:37:22,219
+nasıl ki biz
+
+1790
+01:37:22,219 --> 01:37:23,599
+parabolin neyini
+
+1791
+01:37:23,599 --> 01:37:24,679
+belirlemeye çalışıyorduk?
+
+1792
+01:37:24,779 --> 01:37:25,659
+Kollar yukarıya doğru mu
+
+1793
+01:37:25,659 --> 01:37:26,460
+aşağıya doğru mu?
+
+1794
+01:37:26,779 --> 01:37:27,939
+Burada da aynısını belirleyeceğiz.
+
+1795
+01:37:28,059 --> 01:37:29,420
+Kolların yukarıya doğru olması demek
+
+1796
+01:37:29,420 --> 01:37:30,299
+X ile Y'nin
+
+1797
+01:37:30,299 --> 01:37:31,039
+daha doğrusu
+
+1798
+01:37:31,039 --> 01:37:32,000
+X kare ile Y karenin
+
+1799
+01:37:32,000 --> 01:37:32,699
+işaretlerine
+
+1800
+01:37:32,699 --> 01:37:33,659
+pozitif olması demek
+
+1801
+01:37:33,659 --> 01:37:34,960
+ikisinin aynı anda
+
+1802
+01:37:34,960 --> 01:37:36,099
+negatif olduğu durumda da
+
+1803
+01:37:36,099 --> 01:37:37,179
+mesela şurada olduğu gibi
+
+1804
+01:37:37,179 --> 01:37:38,880
+o zaman da
+
+1805
+01:37:38,880 --> 01:37:39,819
+kolları aşağıya doğru
+
+1806
+01:37:39,819 --> 01:37:40,219
+diyeceğiz.
+
+1807
+01:37:40,679 --> 01:37:41,799
+Bakacağımız tek şey bu.
+
+1808
+01:37:41,979 --> 01:37:42,279
+Dediğim gibi
+
+1809
+01:37:42,279 --> 01:37:43,599
+Z ekseni boyunca
+
+1810
+01:37:43,599 --> 01:37:45,219
+savunmuş bir
+
+1811
+01:37:45,219 --> 01:37:46,439
+paraboloidle
+
+1812
+01:37:46,439 --> 01:37:47,159
+uğraştığımız için
+
+1813
+01:37:47,159 --> 01:37:47,639
+ikisinin de
+
+1814
+01:37:47,639 --> 01:37:48,579
+işaretlerinin aynı olması
+
+1815
+01:37:48,579 --> 01:37:48,840
+gerekiyor.
+
+1816
+01:37:48,939 --> 01:37:49,699
+Böyle çaprazlarla
+
+1817
+01:37:49,699 --> 01:37:50,479
+uğraşmıyoruz.
+
+1818
+01:37:51,359 --> 01:37:52,099
+Aynı şekilde
+
+1819
+01:37:52,099 --> 01:37:53,840
+X ile Y'ye
+
+1820
+01:37:53,840 --> 01:37:54,979
+sıfır verdiğimizde
+
+1821
+01:37:54,979 --> 01:37:56,219
+Z eşitir sıfır çıkıyor.
+
+1822
+01:37:56,299 --> 01:37:57,299
+Yine Z ekseni boyunca
+
+1823
+01:37:57,299 --> 01:37:58,519
+olduğunu biliyoruz.
+
+1824
+01:37:58,579 --> 01:37:59,779
+Dolayısıyla orjin merkezi
+
+1825
+01:37:59,779 --> 01:38:00,079
+diyorum.
+
+1826
+01:38:00,579 --> 01:38:01,420
+Yani bu denklemi
+
+1827
+01:38:01,420 --> 01:38:02,059
+gördüğüm anda
+
+1828
+01:38:02,059 --> 01:38:03,420
+mesela şunu gördüğüm anda
+
+1829
+01:38:03,859 --> 01:38:05,119
+X kare artı y kare.
+
+1830
+01:38:05,359 --> 01:38:08,339
+Bakacağım şey ikisinin de koldarı şey ikisi de pozitif.
+
+1831
+01:38:08,619 --> 01:38:09,839
+Kollar yukarıya doğru diyeceğim.
+
+1832
+01:38:10,319 --> 01:38:11,639
+X ile y'ye sıfır verdim.
+
+1833
+01:38:11,920 --> 01:38:15,159
+Z eşittir sıfır da merkezlenmiş veya tepe noktası olmuş.
+
+1834
+01:38:15,279 --> 01:38:18,799
+O zaman orijinden başlayıp yukarıya doğru uzanan parabolu çizeceğim.
+
+1835
+01:38:18,960 --> 01:38:19,599
+Sonra ne yapacağım?
+
+1836
+01:38:19,699 --> 01:38:22,019
+İşte üçüncü boyutu vermek için şöyle küçücük bir çember çiziyorum.
+
+1837
+01:38:22,199 --> 01:38:25,880
+İçinde sanki üçüncü boyutumuz varmış gibi bir hissiyat oluşturuyoruz.
+
+1838
+01:38:26,559 --> 01:38:28,699
+Veya z eşittir a eksi x kare eksi y kare.
+
+1839
+01:38:29,119 --> 01:38:30,119
+Önlerinde eksi var.
+
+1840
+01:38:30,460 --> 01:38:31,460
+Kollar aşağıya doğru.
+
+1841
+01:38:31,460 --> 01:38:34,599
+Tepe noktası x'e y'ye sıfır verirsem a'da.
+
+1842
+01:38:34,979 --> 01:38:38,039
+Burada a'nın pozitif olduğunu düşünerek a'yı buraya koymuşum.
+
+1843
+01:38:38,119 --> 01:38:40,319
+Kolları aşağıya doğru olan parabolojide çizmişim.
+
+1844
+01:38:41,239 --> 01:38:43,279
+Aynı şekilde tam tersine kollar yukarıya doğru.
+
+1845
+01:38:43,739 --> 01:38:47,000
+Z eşittir a'da tepe noktası olan bir parabolojide bu şekilde çizeceğiz.
+
+1846
+01:38:47,559 --> 01:38:50,339
+Dediğim gibi bunların çok ağır yanıtıısını zaten daha sonra yapacağız.
+
+1847
+01:38:50,460 --> 01:38:51,799
+Şimdi küçücük tanıştırıyorum sadece.
+
+1848
+01:38:53,139 --> 01:38:57,319
+En çok kafa karıştıran değeriye geldik veya yüzeye geldik artık.
+
+1849
+01:38:57,439 --> 01:38:58,000
+Yüzey bunlar.
+
+1850
+01:38:58,339 --> 01:38:58,859
+Silindir.
+
+1851
+01:38:58,859 --> 01:38:59,479
+Neden?
+
+1852
+01:38:59,479 --> 01:39:04,500
+Çünkü bizim bildiğimiz çember denklemi 3 boyutta silindire dönüşüyor.
+
+1853
+01:39:05,279 --> 01:39:09,799
+X kare artı y kare eşittir re kare eğrisi diyorsa size 2 boyuttasınızdır.
+
+1854
+01:39:09,880 --> 01:39:11,259
+Çemberle uğraşıyorsunuzdur.
+
+1855
+01:39:11,399 --> 01:39:15,759
+X kare artı y kare eşittir re kare yüzeyi diyorsa 3 boyuttasınızdır.
+
+1856
+01:39:15,839 --> 01:39:17,179
+Silindirle uğraşıyorsunuzdur.
+
+1857
+01:39:17,259 --> 01:39:19,139
+Bundan sonra birazcık uyanık olmamız gerekecek.
+
+1858
+01:39:19,399 --> 01:39:20,899
+Dönemin sonuna doğru şinlikleyip.
+
+1859
+01:39:22,019 --> 01:39:25,219
+2 boyuttaki çember denklemi 3 boyutta silindire dönüşüyor.
+
+1860
+01:39:25,420 --> 01:39:26,119
+Nasıl oluyor bu?
+
+1861
+01:39:26,119 --> 01:39:27,939
+Ne demiştik?
+
+1862
+01:39:28,059 --> 01:39:30,000
+3 boyuttayım ben yüzey diye bahsediyor.
+
+1863
+01:39:30,219 --> 01:39:33,380
+Normalde bir de z değişkeniyle ilgili bir kısıt olması lazım.
+
+1864
+01:39:33,639 --> 01:39:37,139
+Z meydanda yoksa hani bunu kutupsal koordinatlarda da söylemiştim.
+
+1865
+01:39:37,599 --> 01:39:40,639
+Değişkenlerinin herhangi biriyle ilgili bir kısıt vermeyorsa o ne demek?
+
+1866
+01:39:40,719 --> 01:39:42,099
+O kafasına göre takılsın demek.
+
+1867
+01:39:42,099 --> 01:39:45,920
+Dolayısıyla ben sadece x'ler y'lerle ilgili şunu istiyorum.
+
+1868
+01:39:46,079 --> 01:39:49,079
+X kare artı y kare re kare eğrisinin üstünde dursun.
+
+1869
+01:39:49,420 --> 01:39:51,920
+Yani şöyle çizerse bu bir çemberdir.
+
+1870
+01:39:52,399 --> 01:39:53,799
+Bunlar bu çemberin üstünde dursun.
+
+1871
+01:39:53,899 --> 01:39:55,139
+Z ile ilgili bir kısıtım var mı?
+
+1872
+01:39:55,179 --> 01:39:56,799
+Yok z istediği gibi değerler alabilir.
+
+1873
+01:39:56,960 --> 01:39:57,920
+O zaman şunu yapıyorum.
+
+1874
+01:39:58,039 --> 01:40:01,319
+Aslında silindir dediğim şey üst üste konmuş bir sürü çemberdir.
+
+1875
+01:40:01,439 --> 01:40:03,259
+Sonsuz tane çemberi üst üste koyuyorum.
+
+1876
+01:40:03,639 --> 01:40:07,359
+Bu şekilde sonsuzlu uzanan yukarıya ve aşağıya doğru uzanan bir silindir oluşturuyorum.
+
+1877
+01:40:07,359 --> 01:40:08,099
+Ne yapıyorum?
+
+1878
+01:40:08,159 --> 01:40:14,119
+Bu çemberi yukarıya ve aşağıya doğru hareket ettirdiğimde x'ler y'ler hep bu çember üzerinde kalmış oluyor.
+
+1879
+01:40:14,299 --> 01:40:15,559
+Sadece seviyesi değişiyor.
+
+1880
+01:40:15,839 --> 01:40:17,719
+Z'ler de canını istediği gibi hareket ediyor.
+
+1881
+01:40:18,099 --> 01:40:22,219
+Dolayısıyla iki boyuttaki çember denklemimiz üç boyutta silindirmiş.
+
+1882
+01:40:23,479 --> 01:40:24,979
+Son olarak bir de konimiz var.
+
+1883
+01:40:25,619 --> 01:40:27,179
+Bunun iki tanesi ikinci dereceden.
+
+1884
+01:40:27,259 --> 01:40:28,439
+Biraz önce şöylesini gördük.
+
+1885
+01:40:28,559 --> 01:40:30,439
+Z eşitir x kare artı y kareydi.
+
+1886
+01:40:30,899 --> 01:40:31,619
+Bu para boydu.
+
+1887
+01:40:31,939 --> 01:40:36,799
+Eğer x kare artı y kare eşittir z kare şeklindeyse o zaman bunun adı da koni oluyor.
+
+1888
+01:40:37,759 --> 01:40:39,159
+Burada dairesel koni.
+
+1889
+01:40:39,579 --> 01:40:41,380
+Bu çember denklemi çünkü sol tarafı.
+
+1890
+01:40:41,659 --> 01:40:45,219
+Eğer burada akare bölü ve kare varsa bu taraf elips olduğu için elips kesipte.
+
+1891
+01:40:45,299 --> 01:40:49,639
+Yani üst üste konmuş gittikçe büyüyen yarı çaplı elipsler var.
+
+1892
+01:40:49,899 --> 01:40:52,359
+Veya gittikçe büyüyen yarı çaplı çemberlerimiz var.
+
+1893
+01:40:53,639 --> 01:40:54,539
+Odayımız bu kadardı.
+
+1894
+01:40:54,619 --> 01:40:56,799
+Bunu çok daha ayrıntılı bir şekilde zaten göreceğiz.
+
+1895
+01:40:57,819 --> 01:40:59,739
+Şimdilik sadece denklemleri tanımamız gerekiyor.
+
+1896
+01:41:00,199 --> 01:41:01,399
+Ne zaman ihtiyacınız olacak?
+
+1897
+01:41:01,599 --> 01:41:03,339
+Sadece şöyle bir soru da ihtiyacınız olacak.
+
+1898
+01:41:03,339 --> 01:41:06,339
+Başka şenilik hiçbir işimiz yok iki katlı internet ile geçene kadar.
+
+1899
+01:41:06,799 --> 01:41:10,859
+Diyor ki 3 değişkenli bir fonksiyon olarak verilmiş.
+
+1900
+01:41:11,019 --> 01:41:12,460
+Bunun tanım bölgesini bulunuyor.
+
+1901
+01:41:12,920 --> 01:41:13,899
+Dün yapmıştık bunu.
+
+1902
+01:41:14,380 --> 01:41:14,779
+Ne diyorum?
+
+1903
+01:41:15,339 --> 01:41:16,659
+Karakök fonksiyonu var.
+
+1904
+01:41:16,839 --> 01:41:17,599
+O zaman ne diyeceğim?
+
+1905
+01:41:17,939 --> 01:41:20,159
+Onun ya pozitif olması ya da sıfırdan daha büyük.
+
+1906
+01:41:20,259 --> 01:41:21,619
+Sıfır eşit olması gerekiyor.
+
+1907
+01:41:21,619 --> 01:41:26,839
+O zaman 1-x²-y² büyük eşittir sıfır istiyorum.
+
+1908
+01:41:27,239 --> 01:41:28,259
+Dolayısıyla şunu istiyorum.
+
+1909
+01:41:28,420 --> 01:41:29,519
+Bir büyük kalsın.
+
+1910
+01:41:29,699 --> 01:41:32,599
+x² artı y² artı z²'den.
+
+1911
+01:41:33,619 --> 01:41:34,920
+Bu bölgeyi çizmemi istiyor.
+
+1912
+01:41:35,460 --> 01:41:36,639
+Bilmem gereken şey şu.
+
+1913
+01:41:36,719 --> 01:41:37,579
+Dün nasıl yapmıştık?
+
+1914
+01:41:37,859 --> 01:41:40,819
+Burada eşitsizlik var ama eşitlik olsaydı ben kimi çizeceğim?
+
+1915
+01:41:40,819 --> 01:41:44,840
+x² artı y² artı z² eşittir biri çizeceğim.
+
+1916
+01:41:45,747 --> 01:41:50,907
+Hangisini denklem? Bakalım hangisinde bu vardı? 3'ü de ikinci derecedendi ve topluyorduk.
+
+1917
+01:41:50,907 --> 01:41:54,907
+Bunda yok, bunda yok. Yani şimdilik bu şekilde tarayabilirsiniz.
+
+1918
+01:41:55,227 --> 01:41:58,027
+Aa buymuş. X kare artı Y kare artı Z kare eşittir. 1.
+
+1919
+01:41:58,547 --> 01:42:03,287
+Bir yarı çaplı orijin merkezde küreyi çizmem gerekiyormuş diye düşüneceksiniz.
+
+1920
+01:42:03,407 --> 01:42:05,567
+Şimdilik sadece bu kadarlık bir bilgi ihtiyacınız var.
+
+1921
+01:42:06,047 --> 01:42:08,247
+Daha sonra zaten gördüğünüz anda tanıyacaksınız bunu.
+
+1922
+01:42:09,327 --> 01:42:10,287
+Hadi çizelim bakalım.
+
+1923
+01:42:11,427 --> 01:42:15,307
+Şöyle yaptık. Hadi burası X olsun, Y olsun, Z olsun.
+
+1924
+01:42:15,747 --> 01:42:17,907
+Şöyle çizdik.
+
+1925
+01:42:18,467 --> 01:42:23,607
+Şöyle 2 boyutlu kalmışsın. 3 boyutlu olduğunda şöyle ifade etmiş olduk.
+
+1926
+01:42:23,827 --> 01:42:24,827
+Buraları 1'miş.
+
+1927
+01:42:26,067 --> 01:42:29,407
+Bu neresi? X kare artı Y kare artı Z kare'nin 1 olduğu yer. Küre.
+
+1928
+01:42:29,647 --> 01:42:31,227
+İstiyorum bunu. Başka ne istiyorum?
+
+1929
+01:42:31,367 --> 01:42:32,967
+Birden daha küçük olanları istiyorum.
+
+1930
+01:42:33,147 --> 01:42:36,187
+O zaman istediğim yer neresiymiş? Şu kürenin içiymiş.
+
+1931
+01:42:36,687 --> 01:42:40,227
+Dolayısıyla tanım bölge kürenin içiymiş.
+
+1932
+01:42:40,667 --> 01:42:42,247
+Bir yarı çaplı kürenin içi.
+
+1933
+01:42:47,060 --> 01:42:57,020
+Sadece böyle bir soru için ihtiyacınız olacak. İhtiyacınız olacak, şey zaten şıklarda olacak. En azından resim olarak göreceksiniz. Böyle avantajlarınız da var.
+
+1934
+01:42:57,140 --> 01:43:04,140
+Her ne kadar ilken tuzakları çok açık olsa da bazı sorularda da avantajlısınız. Ekstra bir şeyler çizmenize gerek kalmayacak belki de.
+
+1935
+01:43:05,420 --> 01:43:11,560
+Biraz avantajlı, biraz dezavantajlı bir sınav yapıyoruz maalesef şu ortamda. İdare edeceğiz artık.
+
+1936
+01:43:11,560 --> 01:43:17,880
+Böylece de sınav konularını bitirmiş olduk. Ben yine sözümü tutamadım, buçukla bitiririm dedim. Yine kırk buçuk kadar da tuttum.
+
+1937
+01:43:18,020 --> 01:43:27,820
+Hocam, bu üç boyutlu cisimleri vizelerden, ilk vizeden sonra mı göreceğiz yoksa, yani bir buçuk hafta sonra mı yoksa matematik vizesinden sonra mı göreceğiz?
+
+1938
+01:43:28,340 --> 01:43:34,620
+Matematik vizesinden sonra hatta son üç hafta kalı dönemin gitmesine son üç hafta kalı iki katlı integralı geçtiğimizde göreceğiz.
+
+1939
+01:43:34,620 --> 01:43:40,800
+Yani bu şekilleri göreceğiz yine üç boyutlu cisimler olarak. Uğraşacaklarımız bunlar olacak. Ne yapacağız?
+
+1940
+01:43:40,800 --> 01:43:41,800
+İşte o kürenin içine.
+
+1941
+01:43:41,800 --> 01:43:46,760
+İşte o kürenin içine atıyorum silindiri sokacağız mesela. O küreyle silindir arasında kalan harcimi hesaplayacağız.
+
+1942
+01:43:47,300 --> 01:43:53,120
+İşte üstünü parabolikle kapatacağız mesela ya da böyle şeylerle uğraşacağız.
+
+1943
+01:43:53,820 --> 01:43:56,720
+Görecekleriniz bunlar olacak yani ekstradan bir şey yapmayacağız.
+
+1944
+01:43:57,100 --> 01:43:58,460
+Doğru dosyayı yolluyorum da inşallah.
+
+1945
+01:43:59,560 --> 01:44:01,580
+Hocam chatten bir soru yazabilir miyim?
+
+1946
+01:44:01,780 --> 01:44:04,800
+Tabii ki yazabilirsin. Bu arada yolluyorum bugünkü notları da.
+
+1947
+01:44:04,800 --> 01:44:05,800
+yazabilirsin.
+
+1948
+01:44:05,800 --> 01:44:06,800
+Ne yapmayacağız?
+
+1949
+01:44:06,800 --> 01:44:07,800
+Hocam chatten bir soru yazabilir miyim?
+
+1950
+01:44:07,800 --> 01:44:11,800
+Hocam bu tarz soruları biz hani kuvvet serisi ve fonksiyonu birleştirmiş.
+
+1951
+01:44:11,800 --> 01:44:12,800
+Yani daha önce görmedim.
+
+1952
+01:44:12,800 --> 01:44:14,800
+Bu nasıl çözülüyor hocam?
+
+1953
+01:44:14,800 --> 01:44:16,800
+Onu nasıl çözeceğiz?
+
+1954
+01:44:16,800 --> 01:44:21,800
+Onu bir artı x haline getirmemiz gerekecek ki onu hem iki parantezine alacağız.
+
+1955
+01:44:21,800 --> 01:44:23,800
+Hatta nasıl parantezi alacağız?
+
+1956
+01:44:23,800 --> 01:44:25,800
+Önce beş parantezine alacaksın onu.
+
+1957
+01:44:25,800 --> 01:44:28,800
+Beş parantezine alacaksın.
+
+1958
+01:44:28,800 --> 01:44:30,800
+Beş parantezine alırsın içeride ne kalacak?
+
+1959
+01:44:30,800 --> 01:44:31,800
+Dışarıya beş üzeri üç diye çıkacak.
+
+1960
+01:44:31,800 --> 01:44:33,800
+İki x bölü beş olacak.
+
+1961
+01:44:33,800 --> 01:44:35,800
+Üç kere türev alacağız onda.
+
+1962
+01:44:35,800 --> 01:44:36,800
+Yok üç kere değil.
+
+1963
+01:44:36,800 --> 01:44:38,800
+Bir iki kere mi türev alacağız?
+
+1964
+01:44:38,800 --> 01:44:39,800
+İki kere türev alacağız.
+
+1965
+01:44:39,800 --> 01:44:43,800
+Sonra da eksi iki x bölü beş dönüşümü yapacağız.
+
+1966
+01:44:43,800 --> 01:44:45,800
+Sanki öyle düşündüm.
+
+1967
+01:44:45,800 --> 01:44:48,800
+Atayım mı ben sana onun cevabını?
+
+1968
+01:44:48,800 --> 01:44:49,800
+Yok hocam şart değil.
+
+1969
+01:44:49,800 --> 01:44:53,800
+Görmediyim mi ya daha önce böyle bir soru garip geldi.
+
+1970
+01:44:53,800 --> 01:44:57,800
+Bir tane şeyde yollamıştım sanki hatta ödev olarak verdiklerinden bir tanesiydi.
+
+1971
+01:44:57,800 --> 01:45:00,800
+Bunun gibi değil de onda şey vardı.
+
+1972
+01:45:00,800 --> 01:45:02,800
+Ha bunda ikisinde de var.
+
+1973
+01:45:02,800 --> 01:45:05,800
+Üç artı x vardı mesela onda.
+
+1974
+01:45:05,800 --> 01:45:08,800
+Bunda hem beş var hem x'in kat sayısını koymuş.
+
+1975
+01:45:08,800 --> 01:45:10,800
+Oradaki beş bizim canımızı sıkıyor.
+
+1976
+01:45:10,800 --> 01:45:12,800
+Yani orası bir artı iki x olsaydı sıkıntı yoktu.
+
+1977
+01:45:12,800 --> 01:45:13,800
+Ne yapacaktım?
+
+1978
+01:45:13,800 --> 01:45:15,800
+Hemen x gördüğüm yere eksi x koyacağız.
+
+1979
+01:45:15,800 --> 01:45:16,800
+Eksi iki x koyacaktım.
+
+1980
+01:45:16,800 --> 01:45:19,800
+O beşten kurtulmak için beş parantezini alacağız.
+
+1981
+01:45:19,800 --> 01:45:23,800
+Sonra içerisi iki x bölü bir artı iki x bölü beş olacak.
+
+1982
+01:45:23,800 --> 01:45:26,800
+Orası diyeceğiz ki iki x bölü beş dönüşümü yapmalıyım.
+
+1983
+01:45:26,800 --> 01:45:31,800
+Bir artı x'in içinde iki kere türev aldıktan sonra tabii.
+
+1984
+01:45:31,800 --> 01:45:32,800
+Atayım ben sana olur mu?
+
+1985
+01:45:32,800 --> 01:45:34,800
+Çözeceğim zaten haftaya değil.
+
+1986
+01:45:34,800 --> 01:45:35,800
+Ondan sonraki haftaya böyle soru var.
+
+1987
+01:45:35,800 --> 01:45:36,800
+Tamam.
+
+1988
+01:45:36,800 --> 01:45:37,800
+Atarım.
+
+1989
+01:45:37,800 --> 01:45:38,800
+Hadi görüşürüz bakalım.
+
+1990
+01:45:38,800 --> 01:45:39,800
+Tekrar dersiniz varsa kolay gelsin.
+
+1991
+01:45:39,800 --> 01:45:40,800
+Sınavlarınızda başarılar dilerim.
+
+1992
+01:45:40,800 --> 01:45:41,800
+Dikkatli dikkatli çözün sorularınızı.
+
+1993
+01:45:41,800 --> 01:45:42,800
+İnşallah güzel haberler verirsiniz bana.
+
+1994
+01:45:42,800 --> 01:45:57,800
+Fizik sınavınız o kadar güzel geçsin ki ekstra ders yaptığımızda fizik sınavıyla ilgili konuşmak zorunda kalmıyorum diyorum.
+
+1995
+01:45:57,800 --> 01:46:02,800
+Bakalım merak ediyorum ben ne çok fizik sınavını merak ediyorum.
+
+1996
+01:46:12,724 --> 01:46:14,764
+Şeyi indirdiniz değil mi? Kim inmiş mi?
+
+1997
+01:46:15,764 --> 01:46:19,423
+Onu atın yine gruba. Ben onların hepsini toplayabilirsem toplayacağım zaten.
+
+1998
+01:46:19,524 --> 01:46:23,104
+Yollayacağım size ama belki kaydetmeklerim vardır. Yine olsun size.
+
+1999
+01:46:24,444 --> 01:46:29,684
+Teşekkür ederim. Evet benim tatilim başlıyor. Sizin zor günleriniz benim küçücük tatilim başlıyor bu hafta.
+
+2000
+01:46:31,644 --> 01:46:32,944
+Ve azıcık dinleneceğim ben.
+
+2001
+01:46:39,891 --> 01:46:54,572
+Ben de teşekkür ederim, söylerim. [kişisel bilgi] birazdan deneme sınavı var. O yüzden hiç güzel bir bayram geçirmeyecekmiş. Biraz önce isyanlardaydı. Böyle bayram mı olunmuş bayramdan önce sınav yapıyorlarmış. Söyleyeyim sevgisi.
+
+2002
+01:47:02,292 --> 01:47:03,771
+Kapatıyorum, indirdiniz herhalde değil mi?
+
+2003
+01:47:05,392 --> 01:47:06,672
+Birileri indirmiştir herhalde.
+
+2004
+01:47:12,148 --> 01:47:14,347
+Tamam. Atarsmanı [öğrenci].
+
+2005
+01:47:17,368 --> 01:47:26,047
+Görüşürüz [öğrenci]. Size de iyi tatiller. Kolay gelsin. Bir tatil gibi olunacaksınız ama olsun. En azından bir hafta bayram tatilinde dinlenirsiniz.
