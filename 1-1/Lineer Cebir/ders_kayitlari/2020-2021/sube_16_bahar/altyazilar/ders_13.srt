@@ -1,0 +1,3275 @@
+1
+00:05:09,012 --> 00:05:10,971
+Good morning everyone, can you hear me?
+
+2
+00:05:17,620 --> 00:05:20,780
+Evet.
+
+3
+00:05:20,780 --> 00:05:28,939
+Today, our last course of this term, we will talk about eigenvalues and eigenvektors of a square matrix.
+
+4
+00:05:32,180 --> 00:05:38,259
+So, first we will define eigenvalues and eigenvectors of a square matrix,
+
+5
+00:05:38,259 --> 00:05:45,939
+then we will give characteristic equation of a square matrix in order to find eigenvalues
+
+6
+00:05:45,939 --> 00:05:54,019
+and corresponding eigenvectors. Then we will give some related examples and at the end
+
+7
+00:05:54,019 --> 00:06:07,540
+I am going to omit the topics on the fourth and fifth item because these two topics are out of our curriculum.
+
+8
+00:06:07,540 --> 00:06:16,019
+So, at the end we will talk about Cayley-Hamilton theorem which has a simple and nice expression,
+
+9
+00:06:16,019 --> 00:06:22,100
+says that each square matrix is a root of its characteristic polynomial and by using this
+
+10
+00:06:22,100 --> 00:06:30,980
+theorem we can find inverse of a square matrix if it exists or we can take the power of a square matrix.
+
+11
+00:06:30,980 --> 00:06:44,420
+Okay, what is eigenvalue and corresponding eigenvector? Consider the matrix equation A x A cube to lambda x.
+
+12
+00:06:44,420 --> 00:07:03,300
+Sorry, let me write in the vector form. X is a vector. Okay. Here A is a square matrix.
+
+13
+00:07:01,908 --> 00:07:19,448
+m by n square matris, x is a column vector, x1, x2, a vector with n components, or coordinates, okay.
+
+14
+00:07:19,448 --> 00:07:36,427
+We want to find all x, a times x, this is a matrix multiplication, the left hand side of this equility is a matrix multiplication, result will be a lambda times x.
+
+15
+00:07:36,427 --> 00:07:43,748
+We map ax to its lambda multiple, okay.
+
+16
+00:07:43,748 --> 00:07:47,748
+This is another vector, let's say y.
+
+17
+00:07:49,487 --> 00:07:54,187
+Linearly, this vector is linearly independent to vector x, okay.
+
+18
+00:07:54,548 --> 00:07:56,128
+A vector parallel to x.
+
+19
+00:07:57,948 --> 00:08:04,528
+These types of vectors are called eigenvectors, o matrix A,
+
+20
+00:08:04,528 --> 00:08:15,168
+and here lambda is the eigenvectors, o matrix A, which is corresponding to the vector eigenvector x, okay.
+
+21
+00:08:16,768 --> 00:08:19,488
+Our aim is to find such x and lambda.
+
+22
+00:08:23,315 --> 00:08:23,915
+X.
+
+23
+00:08:30,516 --> 00:08:49,776
+eigenvektör, or matris, A, corresponding, to the, eigenvalue, lambda.
+
+24
+00:08:49,776 --> 00:08:59,336
+Or you can say that x is, lambda is eigenvalue, which is corresponding to the eigenvector x.
+
+25
+00:09:00,375 --> 00:09:11,956
+The vice versa of this statement is also correct for the eigenvector or eigenvalues of the square matrix A.
+
+26
+00:09:11,956 --> 00:09:16,516
+How we can find these eigenvectors and eigenvalues?
+
+27
+00:09:16,956 --> 00:09:23,536
+We need to constitute a characteristic equation for this equality.
+
+28
+00:09:24,676 --> 00:09:34,196
+By the definition, we can write A x minus lambda x equal to 0.
+
+29
+00:09:34,395 --> 00:09:35,576
+Here we have 0 vector.
+
+30
+00:09:36,656 --> 00:09:40,936
+0 vector with n-coordinates.
+
+31
+00:09:40,936 --> 00:09:41,576
+Okay.
+
+32
+00:09:41,576 --> 00:09:47,096
+By the algebra over matrices, we can do this operation.
+
+33
+00:09:47,696 --> 00:09:52,416
+We just subtract lambda minus x at the both sides of the equality.
+
+34
+00:09:52,816 --> 00:09:53,036
+Okay.
+
+35
+00:09:53,436 --> 00:09:59,296
+Let's factor out from the equality at the left-hand side.
+
+36
+00:10:00,756 --> 00:10:07,676
+A minus lambda times x will be equal to 0.
+
+37
+00:10:07,676 --> 00:10:11,355
+Is it correct or not?
+
+38
+00:10:11,355 --> 00:10:13,036
+What do you think?
+
+39
+00:10:13,036 --> 00:10:18,816
+We have right to write this expression.
+
+40
+00:10:18,816 --> 00:10:22,995
+Can you hear me?
+
+41
+00:10:22,995 --> 00:10:25,576
+Why [öğrenci]?
+
+42
+00:10:25,936 --> 00:10:28,216
+Why we cannot write this expression?
+
+43
+00:10:28,216 --> 00:10:53,975
+What do you think?
+
+44
+00:10:42,100 --> 00:11:08,620
+You are right. Thank you for your answer. Okay. A is a matrix, lambda is a scalar. We cannot subtract a scalar from a matrix. So, in order to make sense this equility, we need to put here an identity matrix of order n. Okay. We talk about this issue when we're giving matrices and polynomials. Okay.
+
+45
+00:11:08,620 --> 00:11:22,620
+So, in order to make sense this equility, we need to put here an identity matrix. Now we can write this equility. Okay. So, this expression...
+
+46
+00:11:26,836 --> 00:11:39,676
+In order to find all lambdas, we need to solve this equation. A minus lambda by n equal to zero.
+
+47
+00:11:40,956 --> 00:11:52,615
+In order to solve lambda, which are satisfied this equation. This equation is called characteristic equation of the matrix A.
+
+48
+00:11:58,868 --> 00:12:57,868
+A'ın
+
+49
+00:12:57,868 --> 00:12:58,868
+A'ın A'ın
+
+50
+00:12:58,868 --> 00:13:28,868
+A'ın
+
+51
+00:13:28,596 --> 00:13:32,556
+A1 lambda and at the end A0.
+
+52
+00:13:34,196 --> 00:13:41,875
+This polynomial contains very important information related to matrix A.
+
+53
+00:13:42,716 --> 00:13:52,576
+The constant of this polynomial, the constant of this polynomial is equal to determinant of A.
+
+54
+00:13:53,316 --> 00:13:55,995
+This term is equal to determinant of A.
+
+55
+00:13:55,995 --> 00:14:14,375
+And the coefficient of N minus 1 degrees monomial is equal to minus 1 power N times trace of matrix A.
+
+56
+00:14:14,615 --> 00:14:18,956
+You know, trace is equal to addition of the elements on the main diagram.
+
+57
+00:14:19,696 --> 00:14:19,975
+Okay.
+
+58
+00:14:19,975 --> 00:14:35,655
+So, as a special case of characteristic polynomial, if your degree is equal to 2, let me write by orange,
+
+59
+00:14:35,655 --> 00:14:59,956
+if N is equal to 2, then P A lambda will be equal to lambda square minus, because the coefficient of N minus 1 monomial will be minus 1 power.
+
+60
+00:14:59,956 --> 00:15:03,536
+Sorry, I need to hear N minus 1.
+
+61
+00:15:03,655 --> 00:15:03,855
+Okay.
+
+62
+00:15:04,816 --> 00:15:08,475
+Minus 1 power N minus 1 times trace of A.
+
+63
+00:15:08,855 --> 00:15:21,316
+So, here we need to put minus 1 power 2 minus 1 will be minus 1 times trace of A plus determinant of A.
+
+64
+00:15:21,316 --> 00:15:21,995
+Okay.
+
+65
+00:15:22,336 --> 00:15:30,676
+For 2 by 2 square matrices, we can easily write the characteristic polynomial of the matrix.
+
+66
+00:15:31,176 --> 00:15:40,316
+For 3 by 3 matrices, if N is equal to 3, then...
+
+67
+00:15:40,316 --> 00:15:46,316
+Also, we need to put minus 1 to the power N at the...
+
+68
+00:15:46,316 --> 00:15:52,316
+In front of the...
+
+69
+00:15:52,316 --> 00:15:54,456
+Monomial of the degree N.
+
+70
+00:15:54,596 --> 00:15:54,816
+Okay.
+
+71
+00:15:55,056 --> 00:15:58,036
+I will give general form of this polynomial.
+
+72
+00:15:58,515 --> 00:16:00,316
+If N is equal to 3, then...
+
+73
+00:16:00,316 --> 00:16:03,316
+Our characteristic polynomial will be...
+
+74
+00:16:03,316 --> 00:16:08,316
+P sub M O lambda...
+
+75
+00:16:08,316 --> 00:16:10,316
+Minus...
+
+76
+00:16:10,316 --> 00:16:13,316
+Lambda cube...
+
+77
+00:16:13,316 --> 00:16:15,316
+Plus...
+
+78
+00:16:15,316 --> 00:16:19,316
+Trace of...
+
+79
+00:16:19,316 --> 00:16:22,316
+A lambda square...
+
+80
+00:16:22,316 --> 00:16:26,316
+Plus...
+
+81
+00:16:26,316 --> 00:16:28,316
+Here we have...
+
+82
+00:16:28,316 --> 00:16:31,316
+A1 lambda...
+
+83
+00:16:31,316 --> 00:16:32,316
+Plus...
+
+84
+00:16:32,316 --> 00:16:34,316
+Determinant of A.
+
+85
+00:16:34,316 --> 00:16:35,316
+Okay.
+
+86
+00:16:35,316 --> 00:16:40,316
+This is characteristic polynomial for 3 by 3 k square matrices.
+
+87
+00:16:40,316 --> 00:16:41,316
+Just...
+
+88
+00:16:41,316 --> 00:16:42,316
+You need to find...
+
+89
+00:16:42,316 --> 00:16:45,316
+The coefficient of lambda.
+
+90
+00:16:45,316 --> 00:16:49,316
+You know all the other coefficients for lambda cube...
+
+91
+00:16:49,316 --> 00:16:50,316
+Lambda square...
+
+92
+00:16:50,316 --> 00:16:52,316
+And the constant of the polynomial.
+
+93
+00:16:52,316 --> 00:16:56,316
+Any question?
+
+94
+00:17:00,115 --> 00:17:11,715
+If determinant of a square matrix is zero, this means that if zero is a root of a characteristic polynomial, then we cannot find inverse of a.
+
+95
+00:17:11,715 --> 00:17:18,115
+A is not invertible. Let's write some results related to a characteristic equation.
+
+96
+00:17:23,443 --> 00:17:33,263
+If 0 is a root of Pa lambda,
+
+97
+00:17:33,263 --> 00:17:36,183
+Equilentli,
+
+98
+00:17:42,612 --> 00:17:56,792
+Determinant of a, in this case determinant of a is equal to zero, then a inverse does not exist.
+
+99
+00:18:04,819 --> 00:18:10,419
+This is another way to decide whether inverse O, a square matrix, exists or not.
+
+100
+00:18:10,419 --> 00:18:27,500
+Okay, one way, determinant if is non-zero, this is equinect actually, when you look at the characteristic polynomial, if the constant of the polynomial is zero, this means that you can't factor out lambda from the polynomial.
+
+101
+00:18:27,859 --> 00:18:30,679
+This means that zero is a root of this polynomial.
+
+102
+00:18:31,200 --> 00:18:34,139
+Okay, all these statements are equinect.
+
+103
+00:18:34,139 --> 00:18:40,059
+So, in this case, we can say that A has not an inverse.
+
+104
+00:18:44,403 --> 00:18:59,804
+By the characteristic equation, zero vector, zero vector, cannot be, cannot be eigenvector for a square matrix.
+
+105
+00:19:00,364 --> 00:19:01,423
+This is not the case.
+
+106
+00:19:01,423 --> 00:19:07,844
+But, lambda equal to zero can be eigenvalue for a square matrix.
+
+107
+00:19:07,844 --> 00:19:16,003
+And the corresponding eigenvector is a non-zero vector.
+
+108
+00:19:17,003 --> 00:19:18,943
+Always is a non-zero vector.
+
+109
+00:19:19,344 --> 00:19:27,723
+If zero is an eigenvalue for a square matrix, then the corresponding vector must be a non-zero vector.
+
+110
+00:19:27,723 --> 00:19:28,443
+Okay.
+
+111
+00:19:34,771 --> 00:19:46,551
+In order to find eigenvalues and eigenvektörs of a square matrix, let a be a square matrix.
+
+112
+00:19:51,508 --> 00:19:54,827
+Bir en bayan, square matrix.
+
+113
+00:20:04,307 --> 00:20:14,307
+Eigen values and Eigen vectors of A.
+
+114
+00:20:14,307 --> 00:20:27,307
+First solve A minus lambda I n equipositive.
+
+115
+00:20:27,307 --> 00:20:41,307
+This is a homogeneous system. Here you have n equations and depending on lambda, sorry this is a homogeneous system.
+
+116
+00:20:41,307 --> 00:20:51,307
+Solve this system with respect to lambda and find all lambda sub I a's.
+
+117
+00:20:51,307 --> 00:21:17,307
+Okay, here I is from 1 to n. Then for each lambda, for each lambda sub I, solve A minus lambda I times identity matrix x equal to 0.
+
+118
+00:21:17,307 --> 00:21:22,307
+Okay, this is real zero, this is a vector.
+
+119
+00:21:22,307 --> 00:21:44,307
+Now we need to solve a homogeneous system and this system, the resulting system, resulting homogeneous system.
+
+120
+00:21:44,307 --> 00:21:49,307
+So, let's see.
+
+121
+00:21:51,155 --> 00:21:52,155
+All these
+
+122
+00:21:56,468 --> 00:22:00,468
+non-trivial
+
+123
+00:22:00,468 --> 00:22:02,468
+solutions
+
+124
+00:22:02,468 --> 00:22:04,468
+ok
+
+125
+00:22:04,468 --> 00:22:08,468
+for a homogenous system
+
+126
+00:22:08,468 --> 00:22:10,468
+we have zero solution
+
+127
+00:22:10,468 --> 00:22:12,468
+or infinitely many solution
+
+128
+00:22:12,468 --> 00:22:14,468
+but in this case in order to find
+
+129
+00:22:14,468 --> 00:22:16,468
+eigenvectors
+
+130
+00:22:16,468 --> 00:22:18,468
+of a square matrix
+
+131
+00:22:18,468 --> 00:22:20,468
+this homogenous
+
+132
+00:22:20,468 --> 00:22:22,468
+system always has infinitely
+
+133
+00:22:22,468 --> 00:22:24,468
+many solutions
+
+134
+00:22:24,468 --> 00:22:26,468
+so
+
+135
+00:22:26,468 --> 00:22:28,468
+we need to find
+
+136
+00:22:28,468 --> 00:22:30,468
+a base for the solution
+
+137
+00:22:30,468 --> 00:22:32,468
+set of this
+
+138
+00:22:32,468 --> 00:22:36,468
+solution set of this system
+
+139
+00:22:36,468 --> 00:22:38,468
+ok, find a base
+
+140
+00:22:41,971 --> 00:22:43,971
+A base, basis,
+
+141
+00:22:44,971 --> 00:22:45,971
+for the
+
+142
+00:22:49,107 --> 00:23:00,788
+Solution set of the system, let's say star, this will be star, star, okay.
+
+143
+00:23:02,768 --> 00:23:12,407
+The base of this solution set will be eigenvector corresponding to eigenvalue lambda sub i, okay.
+
+144
+00:23:12,407 --> 00:23:35,248
+For each lambda i, that's right, the third step of this algorithm, for each i, we have n eigenvalues for this, for a square matrix.
+
+145
+00:23:35,248 --> 00:23:46,067
+And for first eigenvalue solve this system, find the corresponding eigenvectors, for second eigenvalue solve system, find corresponding eigenvalue or values.
+
+146
+00:23:46,508 --> 00:23:50,748
+Okay, at least we must find one eigenvector, okay.
+
+147
+00:23:51,887 --> 00:24:01,987
+And at the end, for n eigenvalue of the square matrix, solve the homogeneous system in order to find corresponding eigenvectors.
+
+148
+00:24:01,987 --> 00:24:11,028
+For each i, solve, repeat, repeat this step, repeat step two, okay.
+
+149
+00:24:11,907 --> 00:24:12,987
+For each i.
+
+150
+00:24:22,379 --> 00:24:27,259
+Bir örnek, bir örnek, bir örnek, vektör vektör.
+
+151
+00:24:27,259 --> 00:24:28,539
+Ve bir soru var.
+
+152
+00:24:34,516 --> 00:24:42,676
+I have shared the solution of the second problem set. You can download from my Oysa page.
+
+153
+00:24:45,476 --> 00:24:48,516
+I think it is very important for your final examination.
+
+154
+00:25:08,468 --> 00:25:26,208
+İgen space, all matrix, square matrix A, corresponding to the eigenvalue lambda, is the solution set, or the basis of all the given homogenous system.
+
+155
+00:25:26,208 --> 00:25:45,968
+Ok, in this algorithm step two, the base, the resulting solution for the given system, the subspace generated by these solution set, will call the eigen space of corresponding eigenvalue.
+
+156
+00:25:45,968 --> 00:25:49,827
+Ok, I will omit all this.
+
+157
+00:25:54,132 --> 00:25:57,292
+Pages, because we have already talked about.
+
+158
+00:26:01,971 --> 00:26:18,852
+Here we have general form of characteristic polynomial. Also, by finding determinant of lambda i n minus a, you can find characteristic polynomial of a square matrix.
+
+159
+00:26:18,852 --> 00:26:28,531
+But here we choose this case. In some references you can encounter with these type of equations.
+
+160
+00:26:28,531 --> 00:26:38,892
+Okay. So we need to put here minus one to the power n in order to make sense of our result. Okay.
+
+161
+00:26:51,347 --> 00:27:07,587
+Now, for the, for given square matrix A, let's find all the eigenvectors, the characteristic polynomial, all eigenvalues and corresponding eigenvectors.
+
+162
+00:27:07,587 --> 00:27:34,707
+As a special case, if A is a triangle matrix, you know triangle matrix, the entries at the bottom or at the top of main diagonal, the all entries at the bottom or top of main diagonal are zero.
+
+163
+00:27:34,707 --> 00:27:48,228
+So, for these special matrices, if A is a triangle matrix, then eigenvalues,
+
+164
+00:27:51,700 --> 00:28:05,400
+O, A are elements located on the main diagonal.
+
+165
+00:28:05,400 --> 00:28:05,799
+Ok.
+
+166
+00:28:09,779 --> 00:29:09,779
+Bu, bu
+
+167
+00:29:09,779 --> 00:29:19,460
+So characteristic polynomial will be our eigenvalues and for each eigenvalue we will solve a homogeneous system in order to find eigenvectors.
+
+168
+00:29:19,460 --> 00:29:19,940
+Okay.
+
+169
+00:29:21,379 --> 00:29:27,539
+First left let's find characteristic polynomial for this matrix.
+
+170
+00:29:28,779 --> 00:29:39,359
+P sub A lambda will be equal to determinant of A minus lambda times identity matrix of order 3.
+
+171
+00:29:39,359 --> 00:29:39,720
+Okay.
+
+172
+00:29:39,920 --> 00:29:42,000
+This is our characteristic matrix.
+
+173
+00:29:42,139 --> 00:29:46,480
+If we solve this polynomial we will find our eigenvalues.
+
+174
+00:29:46,759 --> 00:29:48,659
+Let first find characteristic polynomial.
+
+175
+00:29:49,599 --> 00:29:56,240
+So this is equal to 3 minus lambda 6 minus 8.
+
+176
+00:29:57,000 --> 00:29:57,980
+Here we have 0.
+
+177
+00:29:58,339 --> 00:29:59,460
+Here we have minus lambda.
+
+178
+00:29:59,559 --> 00:30:01,839
+0 minus lambda is minus lambda.
+
+179
+00:30:01,980 --> 00:30:07,039
+Here we have 6, 0, 0 and 2 minus lambda.
+
+180
+00:30:07,039 --> 00:30:14,000
+Also you can write lambda times identity matrix of order 3 minus matrix A.
+
+181
+00:30:14,799 --> 00:30:15,119
+Okay.
+
+182
+00:30:16,879 --> 00:30:19,579
+So let's find the determinant of this matrix.
+
+183
+00:30:19,700 --> 00:30:22,019
+In the first column we have two zeros.
+
+184
+00:30:22,019 --> 00:30:26,900
+So expand along, apply Laplace expansion along the first column.
+
+185
+00:30:26,900 --> 00:30:36,400
+The sign of this cofactor will be positive because this is A sub 1, 1 and 3.
+
+186
+00:30:37,059 --> 00:30:42,659
+A sub 1, 1 times remaining 2 by 2 square matrix.
+
+187
+00:30:42,659 --> 00:30:52,319
+So 3 minus lambda times, here we have minus lambda, 6, 0 and 2 minus lambda.
+
+188
+00:30:52,319 --> 00:30:52,920
+Okay.
+
+189
+00:30:53,279 --> 00:30:54,019
+2 minus lambda.
+
+190
+00:30:54,819 --> 00:30:58,079
+Also apply Laplace expansion along the first column.
+
+191
+00:30:58,960 --> 00:31:01,079
+This is an easy, nice example.
+
+192
+00:31:01,879 --> 00:31:04,559
+A very pedagogic example for our A.
+
+193
+00:31:04,559 --> 00:31:16,039
+So you will get 3 minus lambda times, here we have minus lambda.
+
+194
+00:31:17,279 --> 00:31:24,759
+And the resulting of, or this is a 2 by 2 square matrix you can directly compute the determinant.
+
+195
+00:31:24,759 --> 00:31:32,240
+Minus lambda 2, 2 minus lambda minus 0 times 6 or apply Laplace expansion along the first column.
+
+196
+00:31:33,220 --> 00:31:34,319
+Result will be same.
+
+197
+00:31:35,759 --> 00:31:37,000
+2 minus lambda.
+
+198
+00:31:37,480 --> 00:31:37,740
+Okay.
+
+199
+00:31:37,940 --> 00:31:39,859
+This is our characteristic polynomial.
+
+200
+00:31:39,859 --> 00:31:54,079
+The first item of the example, the first question related to example, find characteristic polynomial of all square matrix, 3 by 3 square matrix.
+
+201
+00:31:54,079 --> 00:32:08,440
+A, this is equal to, let me write in the ascending order, minus lambda times,
+
+202
+00:32:08,440 --> 00:32:10,440
+and then, let me write in the ascending order.
+
+203
+00:32:10,440 --> 00:32:38,440
+Okay.
+
+204
+00:32:09,203 --> 00:32:13,963
+2 line minus lambda times 3 minus lambda.
+
+205
+00:32:14,604 --> 00:32:27,183
+So, for the second part of the question, which is say step, find the eigenvalues of matrix A, we need to solve characteristic polynomial.
+
+206
+00:32:27,183 --> 00:32:39,503
+P sub A of lambda is equal to minus lambda times 2 minus lambda times 3 minus lambda, equal to 0.
+
+207
+00:32:39,503 --> 00:32:44,364
+So, the rules of this polynomial will be lambda 1 equal to 0.
+
+208
+00:32:44,503 --> 00:32:47,344
+This is our first eigenvalue.
+
+209
+00:32:50,104 --> 00:32:52,743
+Or you can write in this order.
+
+210
+00:32:52,743 --> 00:33:05,183
+The order of the eigenvalues is not important because for each eigenvalue you need to solve a homogenous system and you will find the corresponding eigenvector.
+
+211
+00:33:05,183 --> 00:33:11,943
+So, the order is not important, but I want to write in the ascending order.
+
+212
+00:33:11,943 --> 00:33:12,344
+Okay.
+
+213
+00:33:17,203 --> 00:33:32,203
+Lambda 2 is equal to 2, and Lambda 3, Lambda sub 3 is equal to 3. All these numbers will be our eigenvalues.
+
+214
+00:33:32,203 --> 00:33:33,203
+Okay.
+
+215
+00:33:38,324 --> 00:33:47,943
+All eigenvalues, all eigenvalues, all A.
+
+216
+00:33:48,484 --> 00:33:48,804
+Okay.
+
+217
+00:33:49,804 --> 00:33:52,484
+We have three eigenvalues, three different eigenvalues.
+
+218
+00:33:52,484 --> 00:34:02,324
+In some cases, you can have multiple rules for the characteristic polynomial.
+
+219
+00:34:02,324 --> 00:34:11,224
+In this case, we say that we have multiple eigenvalues for the given matrix.
+
+220
+00:34:11,864 --> 00:34:11,983
+Okay.
+
+221
+00:34:12,584 --> 00:34:13,684
+Multiple eigenvalues.
+
+222
+00:34:13,684 --> 00:34:26,824
+If in the characteristic equation, we have a component like A minus lambda to the power R,
+
+223
+00:34:26,824 --> 00:34:35,644
+in this case, A is a R multiple eigenvalue for the given matrix.
+
+224
+00:34:35,644 --> 00:34:44,344
+So we need to write, let's say, lambda 1 equal to lambda 2 equal to, let's start from 1.
+
+225
+00:34:45,903 --> 00:34:48,144
+Lambda R will be equal to A.
+
+226
+00:34:48,423 --> 00:34:48,644
+Okay.
+
+227
+00:34:48,903 --> 00:34:52,543
+This is a special case for eigenvalues and eigenvalues.
+
+228
+00:34:52,543 --> 00:35:01,503
+But here, in our example, we have no repeated roots for the characteristic polynomial.
+
+229
+00:35:01,684 --> 00:35:06,364
+So there is no multiple eigenvalues.
+
+230
+00:35:07,644 --> 00:35:07,764
+Okay.
+
+231
+00:35:07,764 --> 00:35:17,204
+So the last part of the question says that for each eigenvalue, find corresponding eigenvectors.
+
+232
+00:35:17,503 --> 00:35:23,503
+Our first eigenvalue, that's all the last part of the question.
+
+233
+00:35:24,784 --> 00:35:29,364
+Find all eigenvectors for the given square matrix.
+
+234
+00:35:29,364 --> 00:35:32,983
+Our first eigenvalue is 0.
+
+235
+00:35:32,983 --> 00:35:45,264
+So we need to solve A minus 0 times identity matrix of order 3 times x equal to 0.
+
+236
+00:35:45,784 --> 00:35:50,403
+Here x is equal to x, y, z.
+
+237
+00:35:50,403 --> 00:35:51,003
+Okay.
+
+238
+00:35:52,003 --> 00:36:02,043
+Because our order is 3, x must be a column vector of 3 coordinates.
+
+239
+00:36:04,644 --> 00:36:13,224
+So the coefficient matrix of this homogeneous system is actually A.
+
+240
+00:36:13,423 --> 00:36:15,664
+A of x equal to 0.
+
+241
+00:36:15,744 --> 00:36:17,003
+We need to solve this system.
+
+242
+00:36:17,003 --> 00:36:17,724
+Okay.
+
+243
+00:36:18,624 --> 00:36:23,204
+Our coefficient matrix.
+
+244
+00:36:23,304 --> 00:36:29,523
+In order to solve this system, we need to put coefficient matrix in reduced row echelon form.
+
+245
+00:36:29,523 --> 00:36:39,844
+So just apply elementary operations in order to put, let me write here.
+
+246
+00:36:45,972 --> 00:36:47,632
+Matris, A, okay.
+
+247
+00:36:49,092 --> 00:36:51,432
+We have 3, 6, minus 8.
+
+248
+00:36:51,672 --> 00:37:07,592
+I just, I will solve for the lambda 1 and for the other cases, just we need to apply elementary row operations in order to solve system, in order to find a non-trivial solution for the given system.
+
+249
+00:37:14,324 --> 00:37:43,324
+So, just multiply first row by 1 over 3 in order to get here a pivot or leading turn. This will be equal to. And divide second row by 6. Add minus 2 times second row to the last row in order to get a desired form. Here we have 1, 2, and minus...
+
+250
+00:37:48,403 --> 00:37:50,403
+3. Ok.
+
+251
+00:37:50,403 --> 00:37:52,403
+Here we have 0.
+
+252
+00:37:52,403 --> 00:37:54,403
+Or you can use
+
+253
+00:37:54,403 --> 00:37:56,403
+2nd or last row in order to remove
+
+254
+00:37:56,403 --> 00:37:58,403
+this 8. Ok.
+
+255
+00:37:58,403 --> 00:38:00,403
+Let me remove
+
+256
+00:38:00,403 --> 00:38:02,403
+8 by using
+
+257
+00:38:02,403 --> 00:38:04,403
+last row. So here we have
+
+258
+00:38:04,403 --> 00:38:06,403
+0 actually. And then
+
+259
+00:38:06,403 --> 00:38:08,403
+divide 1st row
+
+260
+00:38:08,403 --> 00:38:10,403
+by 1 over 3.
+
+261
+00:38:10,403 --> 00:38:12,403
+And use last row also
+
+262
+00:38:12,403 --> 00:38:14,403
+or use
+
+263
+00:38:14,403 --> 00:38:16,403
+2nd row in order to
+
+264
+00:38:16,403 --> 00:38:18,403
+remove this element,
+
+265
+00:38:18,403 --> 00:38:20,403
+non-zero element
+
+266
+00:38:20,403 --> 00:38:22,403
+of the matrix and divide
+
+267
+00:38:22,403 --> 00:38:24,403
+2nd row by 1 over 6.
+
+268
+00:38:24,403 --> 00:38:26,403
+So here we have 0, 1
+
+269
+00:38:26,403 --> 00:38:28,403
+and 0, 0, 0.
+
+270
+00:38:28,403 --> 00:38:30,403
+This is the
+
+271
+00:38:30,403 --> 00:38:34,403
+reduced row echelon form of our
+
+272
+00:38:34,403 --> 00:38:36,403
+coefficient matrix. Reduced row
+
+273
+00:38:36,403 --> 00:38:38,403
+echelon form.
+
+274
+00:38:38,403 --> 00:38:40,403
+So our new system will be
+
+275
+00:38:40,403 --> 00:38:42,403
+depending on x, y, z will be
+
+276
+00:38:42,403 --> 00:38:44,403
+x plus 2y equal to 0
+
+277
+00:38:44,403 --> 00:38:48,403
+and z is equal to 0.
+
+278
+00:38:48,403 --> 00:38:50,403
+Ok.
+
+279
+00:38:50,403 --> 00:38:52,403
+So we have
+
+280
+00:38:52,403 --> 00:38:54,403
+two
+
+281
+00:38:54,403 --> 00:38:56,403
+equations and
+
+282
+00:38:56,403 --> 00:38:58,403
+three unknowns depending on
+
+283
+00:38:58,403 --> 00:39:00,403
+one parameter, we will have
+
+284
+00:39:00,403 --> 00:39:02,403
+infinitely many solutions.
+
+285
+00:39:02,403 --> 00:39:04,403
+So let's say ys
+
+286
+00:39:04,403 --> 00:39:06,403
+that y
+
+287
+00:39:06,403 --> 00:39:08,403
+adds three parameters
+
+288
+00:39:08,403 --> 00:39:10,403
+in real numbers, then
+
+289
+00:39:10,403 --> 00:39:12,403
+for three parameters y
+
+290
+00:39:12,403 --> 00:39:14,403
+equal to t in real numbers
+
+291
+00:39:14,403 --> 00:39:16,403
+the solution set
+
+292
+00:39:16,403 --> 00:39:18,403
+or the solution vector
+
+293
+00:39:18,403 --> 00:39:20,403
+or the base of solution
+
+294
+00:39:20,403 --> 00:39:22,403
+space will be
+
+295
+00:39:22,403 --> 00:39:24,403
+x, y, z.
+
+296
+00:39:24,403 --> 00:39:26,403
+This is equal to
+
+297
+00:39:26,403 --> 00:39:28,403
+because x is equal to
+
+298
+00:39:28,403 --> 00:39:30,403
+minus 2y.
+
+299
+00:39:30,403 --> 00:39:32,403
+Here we need to put
+
+300
+00:39:32,403 --> 00:39:34,403
+minus 2t. Here we have
+
+301
+00:39:34,403 --> 00:39:36,403
+t and the last component
+
+302
+00:39:36,403 --> 00:39:38,403
+is always 0. So
+
+303
+00:39:38,403 --> 00:39:40,403
+by factoring our t
+
+304
+00:39:40,403 --> 00:39:42,403
+from the vector
+
+305
+00:39:42,403 --> 00:39:44,403
+we have
+
+306
+00:39:44,403 --> 00:39:46,403
+minus 2, 1, 0.
+
+307
+00:39:46,403 --> 00:39:48,403
+This is
+
+308
+00:39:48,403 --> 00:39:50,403
+a spanning set
+
+309
+00:39:50,403 --> 00:39:52,403
+also. For each t
+
+310
+00:39:52,403 --> 00:39:54,403
+we find a
+
+311
+00:39:54,403 --> 00:39:56,403
+vector. So
+
+312
+00:39:56,403 --> 00:39:58,403
+let me write here
+
+313
+00:39:58,403 --> 00:40:00,403
+let this be
+
+314
+00:40:00,403 --> 00:40:02,403
+v sub 1.
+
+315
+00:40:06,612 --> 00:40:11,152
+Eigenvalue is 0, so our eigenvector is V1.
+
+316
+00:40:12,572 --> 00:40:17,851
+The only element in the spanning set of this vector.
+
+317
+00:40:18,152 --> 00:40:22,152
+Okay, let me write here, minus 2, 1, 0.
+
+318
+00:40:23,472 --> 00:40:27,932
+This is the eigenvector corresponding to the eigenvalue 0.
+
+319
+00:40:27,932 --> 00:40:33,231
+Okay, and the eigenspace of this vector, let me write here,
+
+320
+00:40:33,231 --> 00:40:43,112
+U sub U1 will be equal to T times V1, such that T is a real number.
+
+321
+00:40:44,331 --> 00:40:55,351
+This is the eigenspace, eigenspace, O lambda, lambda 1.
+
+322
+00:40:55,351 --> 00:41:09,231
+Okay, or you can write the subspace spanning by V1, eigenvector V1.
+
+323
+00:41:09,492 --> 00:41:17,092
+Okay, this is the eigenspace of lambda 1, first eigenvector of the given square matrix.
+
+324
+00:41:17,092 --> 00:41:26,192
+For the second eigenvalue, our second eigenvalue is equal to lambda 2 is equal to 2.
+
+325
+00:41:26,192 --> 00:41:38,372
+So our homogenous system will be A minus 2 times identity matrix of order 3 equal to 0.
+
+326
+00:41:38,372 --> 00:41:45,311
+So we need to write A minus 2 times identity matrix of order 3,
+
+327
+00:41:45,412 --> 00:41:50,851
+just subtract minus 2 from the elements of the main diagram for A.
+
+328
+00:41:51,132 --> 00:41:55,612
+So here we have 1, 6, minus 8.
+
+329
+00:41:55,932 --> 00:41:58,711
+Here we have 0, minus 2, and 6.
+
+330
+00:41:58,711 --> 00:42:03,092
+And here we have 0, 0, 2 minus 2 is 0.
+
+331
+00:42:06,632 --> 00:42:10,072
+Times, oh sorry, I need to put here x.
+
+332
+00:42:10,452 --> 00:42:10,731
+Okay.
+
+333
+00:42:12,372 --> 00:42:14,472
+x equal to 0.
+
+334
+00:42:14,692 --> 00:42:14,912
+Okay.
+
+335
+00:42:15,351 --> 00:42:16,972
+We need to solve this system.
+
+336
+00:42:16,972 --> 00:42:23,432
+We just subtract second eigenvalue times identity matrix of order 3,
+
+337
+00:42:23,632 --> 00:42:27,112
+minus A minus this matrix, this scalar matrix.
+
+338
+00:42:27,112 --> 00:42:40,392
+Just divide second row by minus 1 over 2 in order to get,
+
+339
+00:42:41,972 --> 00:42:44,652
+let me write here, our coefficient matrix,
+
+340
+00:42:44,831 --> 00:42:50,251
+1, 6, minus 8, 0, minus 2, 6.
+
+341
+00:42:50,251 --> 00:42:54,872
+We have all 0 row in the system.
+
+342
+00:42:55,452 --> 00:42:56,972
+This is our coefficient matrix.
+
+343
+00:42:57,072 --> 00:42:58,452
+Let's say B.
+
+344
+00:42:59,392 --> 00:42:59,652
+Okay.
+
+345
+00:42:59,832 --> 00:43:00,432
+This is B.
+
+346
+00:43:00,952 --> 00:43:03,332
+Because A minus 2 times identity matrix,
+
+347
+00:43:03,892 --> 00:43:07,612
+A minus 2 times identity matrix of order 3.
+
+348
+00:43:07,851 --> 00:43:08,811
+This is a new matrix.
+
+349
+00:43:08,811 --> 00:43:15,152
+So apply elementary operations in order to put this matrix into reduced row echelon form.
+
+350
+00:43:15,552 --> 00:43:23,132
+1, 6, minus 8, 0, 1, minus 3.
+
+351
+00:43:23,612 --> 00:43:25,112
+0, 0, 0.
+
+352
+00:43:25,332 --> 00:43:25,652
+Okay.
+
+353
+00:43:25,652 --> 00:43:30,692
+So use this one in order to remove 6.
+
+354
+00:43:30,932 --> 00:43:31,331
+Multiply.
+
+355
+00:43:31,432 --> 00:43:33,751
+Just multiply by minus 6.
+
+356
+00:43:35,231 --> 00:43:36,512
+1, 0.
+
+357
+00:43:37,172 --> 00:43:41,872
+Here we have 18 plus minus 8.
+
+358
+00:43:42,372 --> 00:43:43,192
+Here we have 10.
+
+359
+00:43:43,992 --> 00:43:49,692
+And 0, 1, minus 3, 0, 0, 0.
+
+360
+00:43:49,692 --> 00:43:53,612
+This is the reduced row echelon form of matrix B.
+
+361
+00:43:53,992 --> 00:43:54,092
+Okay.
+
+362
+00:43:55,072 --> 00:44:03,692
+So our system depending on this matrix will be X plus...
+
+363
+00:44:04,403 --> 00:44:25,443
+10z equal to 0, and y minus 3z equal to 0. Let z be s in real numbers. Here we have two equations, and three unknowns, so depending on 3 minus 2, 1 parameters, we have infinitely many solutions for the system.
+
+364
+00:44:25,443 --> 00:44:53,384
+So, our x vector is x, y, z. Okay, this is equal to, instead of x write minus tan z or t, here write, instead of y write 3z, and here we have z.
+
+365
+00:44:53,384 --> 00:45:00,664
+So, let me write here t, because we take z, oh sorry, sorry, write it s.
+
+366
+00:45:06,164 --> 00:45:29,024
+Ok, vektör uzay, we have 10, 3, and 1. Let me write here, V sub 2. This is the eigenvector of second eigenvalue 2. Corresponding eigenvector is V sub 2, minus 10, 3, 1.
+
+367
+00:45:29,024 --> 00:45:49,824
+Ok, and the eigenspace of lambda 2, the eigenspace of, let me write, U sub lambda 2. I need to change my notation here. We need to write U sub lambda 1. Ok. U sub lambda 1.
+
+368
+00:45:49,824 --> 00:46:11,024
+U sub lambda 2 is equal to S times V sub lambda 2. Such that S is a real number. This is our eigenspace. The eigenspace.
+
+369
+00:46:11,024 --> 00:46:15,824
+Corresponding.
+
+370
+00:46:19,380 --> 00:46:21,059
+2, lambda 2.
+
+371
+00:46:21,200 --> 00:46:21,460
+Okay.
+
+372
+00:46:23,420 --> 00:46:26,840
+And we have one more eigenvalue.
+
+373
+00:46:27,840 --> 00:46:30,099
+We need to find corresponding eigenvector.
+
+374
+00:46:30,260 --> 00:46:36,500
+For the last eigenvalue, our last eigenvalue is lambda 3 is equal to 3.
+
+375
+00:46:36,500 --> 00:46:46,119
+So, just so, A minus 3 times identity matrix of order 3 times vector x equal to 0.
+
+376
+00:46:46,119 --> 00:46:52,000
+In all these cases, our x is x, y, z because of the dimension.
+
+377
+00:46:52,780 --> 00:47:02,539
+If the dimension or the size of your matrix is 4, you need to choose a matrix with 4 components.
+
+378
+00:47:02,539 --> 00:47:02,960
+Okay.
+
+379
+00:47:03,099 --> 00:47:03,780
+Or coordinates.
+
+380
+00:47:05,720 --> 00:47:12,240
+The coefficient matrix in this case will be A minus 3 times identity matrix of order 3.
+
+381
+00:47:12,240 --> 00:47:16,099
+Just subtract 3 from the elements on the main diagonal.
+
+382
+00:47:16,860 --> 00:47:17,220
+Okay.
+
+383
+00:47:18,579 --> 00:47:28,000
+Here we have 0, 6, minus 8, 0, minus 3, 6, 0, 0, and minus 1.
+
+384
+00:47:28,200 --> 00:47:28,480
+Okay.
+
+385
+00:47:30,480 --> 00:47:34,780
+So, I will skip some steps.
+
+386
+00:47:34,780 --> 00:47:39,420
+Let's just put this matrix into reduced row echelon form.
+
+387
+00:47:40,860 --> 00:47:47,800
+First, we can use this minus 1 in order to remove these two elements.
+
+388
+00:47:48,220 --> 00:47:49,640
+So, this will be equal to.
+
+389
+00:47:51,059 --> 00:47:55,780
+And then multiply last row by minus 1.
+
+390
+00:47:55,780 --> 00:48:05,900
+Here we have 6, sorry, 0, 6, 0, 0, minus 3, 0, and 0, 0, 1.
+
+391
+00:48:06,079 --> 00:48:06,320
+Okay.
+
+392
+00:48:07,480 --> 00:48:10,220
+I just applied some elementary row operations.
+
+393
+00:48:11,000 --> 00:48:15,160
+So, use these 3 to get here 0 or these 6.
+
+394
+00:48:15,160 --> 00:48:24,420
+So, our matrix at the end will be 0, 1, 0, 0, 0, 1, and 0, 0, 0.
+
+395
+00:48:25,099 --> 00:48:25,420
+Okay.
+
+396
+00:48:25,880 --> 00:48:35,400
+And corresponding homogeneous system, y is equal to 0 and z is equal to 0.
+
+397
+00:48:35,660 --> 00:48:37,340
+Here, x is 3.
+
+398
+00:48:37,840 --> 00:48:41,880
+Let's say x as t.
+
+399
+00:48:42,880 --> 00:48:43,579
+Not important.
+
+400
+00:48:43,579 --> 00:48:51,019
+Let's say k different from two previous three parameters.
+
+401
+00:48:51,539 --> 00:48:52,600
+K is a real number.
+
+402
+00:48:53,539 --> 00:48:58,820
+So, our vector x will be x, y, z.
+
+403
+00:49:00,140 --> 00:49:04,039
+This is equal to k, 0, 0.
+
+404
+00:49:04,360 --> 00:49:04,619
+Okay.
+
+405
+00:49:04,880 --> 00:49:07,660
+This is equal to k times 1, 0, 0.
+
+406
+00:49:07,660 --> 00:49:12,619
+So, let's call this, let's say this matrix as V sub 3.
+
+407
+00:49:13,619 --> 00:49:22,320
+The eigenvalue, excuse me, the eigenvector corresponding to the last eigenvalue is V1.
+
+408
+00:49:22,519 --> 00:49:24,000
+Excuse me, V sub 3.
+
+409
+00:49:24,000 --> 00:49:33,760
+And the eigenspace of lambda sub 3 is equal to k times V sub 3.
+
+410
+00:49:34,019 --> 00:49:37,559
+Where k is a real number.
+
+411
+00:49:37,559 --> 00:49:45,000
+So, the dimension of eigenspace for each eigenvalue is 1.
+
+412
+00:49:45,000 --> 00:49:50,480
+Because just this subspace is spanned by one vector.
+
+413
+00:49:50,480 --> 00:49:55,760
+In each case, we have one vector in the basal eigenspace.
+
+414
+00:49:56,140 --> 00:49:56,380
+Okay.
+
+415
+00:49:56,640 --> 00:49:58,660
+The dimension is always 1.
+
+416
+00:49:58,660 --> 00:49:59,660
+The eigenvalue is 1.
+
+417
+00:49:59,660 --> 00:50:00,660
+So, the eigenvalue is 1.
+
+418
+00:50:00,660 --> 00:50:02,660
+The eigenvalue is 1.
+
+419
+00:50:02,660 --> 00:50:19,660
+So, the eigenvalue is 1.
+
+420
+00:50:06,003 --> 00:50:09,784
+O, lambda 3. Ok, any question?
+
+421
+00:50:12,003 --> 00:50:15,623
+This is the old story of eigenvalues and eigenvektors.
+
+422
+00:50:16,903 --> 00:50:19,083
+O, square matrix.
+
+423
+00:50:19,844 --> 00:50:26,864
+We have much more application of eigenvalues and eigenvektors in science and engineering.
+
+424
+00:50:26,864 --> 00:50:39,324
+When we try to derive some general information related to a set of information.
+
+425
+00:50:39,324 --> 00:50:53,183
+Ok, we just take a special sample from the whole space and we derive some important results related to this information by using eigenvektors and eigenvalues.
+
+426
+00:50:54,543 --> 00:50:55,764
+Any question?
+
+427
+00:51:49,668 --> 00:52:19,668
+Çünkü, bu kullanmanızı kullanmanızı kullanmanızı kullanmanızı kullanmanızı kullanmanızı kullanmanızı kullanmanızı kullanmanızı kullanmanızı kullanmanızı kullanmanızı kullanmanızı kullanmanızı kullanmanızı kullanmanızı kullanmanızı kullanmanızı kullanmanızı kullanmanızı kullanmanızı kullanmanızı kullanmanızı kullanmanızı kullanmanızı kullanmanızı kullanmanızı kullanmanızı kullanmanızı kullanmanızı kullanmanızı kullanmanızı kullanmanızı kullanmanızı kullanmanızı kullanmanızı kullanmanızı kullanmanızı kullanmanızı kullanmanızı kullanmanızı kullanmanızı kullanmanızı kullanmanızı kullanmanızı kullanmanızı kullanmanızı kullanmanızı kullanmanızı kullanmanızı kullanmanızı kullanmanızı kullanmanızı kullanmanızı kullanmanızı
+
+428
+00:52:19,668 --> 00:52:48,908
+So, if you take the power over square matrix by a computer, just your computer use this information, just put your square matrix into a diagonal form and then take the power over diagonal matrix because taking power over diagonal matrix is much more easy than power over any matrix.
+
+429
+00:52:49,668 --> 00:52:54,788
+Okay, but I will omit all these parts.
+
+430
+00:52:58,516 --> 00:53:05,516
+Eğer sufficienti eigenvalues ve corresponding eigenvektörs, we can diagonalize n-square matrix ve
+
+431
+00:53:05,516 --> 00:53:09,516
+we can compute the power of n-square matrix easily.
+
+432
+00:53:09,516 --> 00:53:13,516
+But this topic is out of our curriculum.
+
+433
+00:53:15,516 --> 00:53:18,516
+Okay, Cayley-Hamilton Theorem.
+
+434
+00:53:18,516 --> 00:53:21,516
+What is Cayley-Hamilton Theorem?
+
+435
+00:53:21,516 --> 00:53:22,516
+Ah,
+
+436
+00:53:22,516 --> 00:53:23,516
+Cayley-Hamilton Theorem.
+
+437
+00:53:34,387 --> 00:53:53,168
+Kayleigh-Hamilton Theorem says that each square matrix A is a root of its characteristic poinom.
+
+438
+00:54:02,547 --> 00:54:21,547
+Let we have square matrix, let A be a square matrix of order n and P sub A of lambda be the characteristic polynomial of matrix A.
+
+439
+00:54:21,547 --> 00:54:32,247
+Lambda plus A minus 1 lambda to the n minus 1 plus A1 lambda plus A0.
+
+440
+00:54:32,487 --> 00:54:38,607
+Okay, here A0 is determinant of A and A sub n minus 1 is minus trace of A.
+
+441
+00:54:38,607 --> 00:55:06,607
+Okay, so Kelly says that, Kelly Hamilton says that P A O A is equal to A to the power n plus small case A minus 1 times A to the power n minus 1 plus A1 times A plus A0.
+
+442
+00:55:06,607 --> 00:55:11,207
+A0 times identity matrix of order n.
+
+443
+00:55:11,207 --> 00:55:18,807
+Here, because we have matrices in the first n minus 1 monomials, we have matrices.
+
+444
+00:55:18,807 --> 00:55:23,547
+So here we have a constant, we need to put here identity matrix.
+
+445
+00:55:23,547 --> 00:55:26,207
+We talked about this fact.
+
+446
+00:55:26,207 --> 00:55:30,107
+So this is equal to 0 matrix.
+
+447
+00:55:30,807 --> 00:55:35,207
+0, this is n by n, 0 matrix.
+
+448
+00:55:36,607 --> 00:55:46,407
+Okay, Kelly Hamilton says that each square matrix is the, is a root of its characteristic polynomial.
+
+449
+00:55:46,407 --> 00:55:58,607
+This is trivial because P sub A O lambda is equal to determinant of A minus lambda times identity matrix O order n.
+
+450
+00:55:58,607 --> 00:56:09,607
+So if you put A instead of lambda, you will get A minus A times identity matrix O order n.
+
+451
+00:56:09,607 --> 00:56:13,607
+This is actually equal to A minus A, this is 0.
+
+452
+00:56:13,607 --> 00:56:17,607
+This is the proof of its theorem.
+
+453
+00:56:17,607 --> 00:56:25,607
+Trivial proof because of the definition of characteristic polynomial.
+
+454
+00:56:25,607 --> 00:56:39,407
+So by using this theorem, we can compute power of a square matrix and we can find inverse of a square matrix if exists.
+
+455
+00:56:39,407 --> 00:56:46,407
+So if the constant of characteristic polynomial is non-zero by using this fact, you can find inverse of matrix A.
+
+456
+00:56:46,407 --> 00:57:09,957
+First, first, we can, by using, by using, by using, by using, by using, by using, by using, by using, by using, by using, by using, by using, by using, by using, by using, by using, by using, by using, by using, by using, by using, by using, by using, by using, by using, by using, by using, by using, by using, by using, by using, by using, by using, by using, by using, by using, by using, by using, by using, by using, by using, by using, by using, by using, by using, by using, by using, by using, by using, by using, by using, by using, by using, by using, by using, by using, by using, by using, by using, by using, by using, by using, by using, by using, by using, by using, by using, by using, by using, by using, by using, by
+
+457
+00:57:13,427 --> 00:57:14,567
+As far me please.
+
+458
+00:57:19,476 --> 00:57:28,836
+How we can do this? By the characteristic polynomial, a is a root of characteristic polynomial.
+
+459
+00:57:28,836 --> 00:57:51,776
+So here we have a to the power n equal to minus a sub n minus 1 a to the power n minus 1 plus a sub n minus 2 a to the power n minus 2 plus a1 a plus a0 identical matrix.
+
+460
+00:57:51,776 --> 00:58:05,916
+Okay, this is a to the power n and by taking, in order to get a power 2n, just multiply this by a power n.
+
+461
+00:58:05,916 --> 00:58:26,076
+Okay, or if in order to get a to the power n plus 1, just multiply right hand side by a, a times minus, let me write, minus 1 times this whole part will be a to the power n plus 1.
+
+462
+00:58:26,076 --> 00:58:31,175
+A to the power n plus 2 just multiply right hand side by a squared.
+
+463
+00:58:31,356 --> 00:58:37,856
+Okay, by using Kaley-Hamilton, we can compute powers of a square matrix.
+
+464
+00:58:37,856 --> 00:59:07,856
+Also, if
+
+465
+00:59:07,856 --> 00:59:14,856
+age inverse exists and...
+
+466
+00:59:18,643 --> 00:59:26,403
+Also, by using characteristic polynomial, just leave alone identity matrix at the left-hand side.
+
+467
+00:59:26,403 --> 00:59:38,183
+So, at the right-hand side, you will have identity matrix will be equal to by the characteristic polynomial.
+
+468
+00:59:38,183 --> 00:59:58,763
+Minus 1 over A0, this is determinant of square matrix, times A to the power N plus A minus 1 A to the power N minus 1 plus A1 A.
+
+469
+00:59:58,763 --> 00:59:59,883
+Ok.
+
+470
+01:00:08,532 --> 01:00:21,771
+And if you factor out a from each component, you will have minus one over a zero times, let me write minus four.
+
+471
+01:00:27,251 --> 01:00:35,751
+A times, you can write this, A times minus 1 over A zero times.
+
+472
+01:00:36,951 --> 01:00:39,931
+We factor out A from each component.
+
+473
+01:00:39,931 --> 01:00:50,251
+So here we have A to the power n minus 1 plus A sub n minus 1, A to the power n minus 2 plus.
+
+474
+01:00:51,012 --> 01:00:55,192
+And at the end we have A one times because we factor out A.
+
+475
+01:00:55,192 --> 01:00:58,911
+Here we have identity matrix, we need to put identity matrix here.
+
+476
+01:00:58,911 --> 01:01:05,451
+So A times something is equal to identity matrix of order n.
+
+477
+01:01:05,451 --> 01:01:15,311
+So this says that this part must be inverse of matrix A.
+
+478
+01:01:15,311 --> 01:01:26,311
+This is all this part, all this addition and scalar multiplications is equal to identity inverse of matrix A.
+
+479
+01:01:26,311 --> 01:01:30,032
+If A zero is non-zero.
+
+480
+01:01:30,032 --> 01:01:30,532
+Okay.
+
+481
+01:01:30,532 --> 01:01:36,072
+If A zero is non-zero, then this part is inverse of matrix A.
+
+482
+01:01:36,072 --> 01:01:46,311
+So by using Cayley-Hamilton theorem, we can find, if it exists, we can find inverse over square meters.
+
+483
+01:01:46,311 --> 01:02:12,311
+Any question?
+
+484
+01:01:54,324 --> 01:02:02,324
+Guys, are you here? Just here we have 24 students. Together we are 25.
+
+485
+01:02:05,907 --> 01:02:14,757
+Neden bu kadar
+
+486
+01:02:36,436 --> 01:02:40,096
+Let you an example, a general example.
+
+487
+01:02:43,675 --> 01:02:44,936
+Maybe I could.
+
+488
+01:02:55,795 --> 01:02:57,795
+You consume all your energy.
+
+489
+01:03:00,795 --> 01:03:04,795
+Except for these 24, 23 students.
+
+490
+01:03:04,795 --> 01:03:05,795
+Students, ok.
+
+491
+01:03:05,795 --> 01:03:10,795
+All the other students consume all their energies.
+
+492
+01:03:10,795 --> 01:03:14,795
+Maybe they related to some other courses.
+
+493
+01:03:16,795 --> 01:03:19,795
+Ok, let you have a 2 by 2 square matrix.
+
+494
+01:03:19,795 --> 01:03:23,795
+Let's find characteristic point now below these matrix.
+
+495
+01:03:23,795 --> 01:03:25,795
+All eigenvalues.
+
+496
+01:03:25,795 --> 01:03:32,795
+At most we have 2 eigenvalues for this square matrix.
+
+497
+01:03:32,795 --> 01:03:34,795
+Because order is 2.
+
+498
+01:03:34,795 --> 01:03:37,795
+So at most we have 2 eigenvalues.
+
+499
+01:03:37,795 --> 01:03:40,795
+And at least we have 1 eigenvalue.
+
+500
+01:03:40,795 --> 01:03:44,795
+But actually we have 2 eigenvalues.
+
+501
+01:03:44,795 --> 01:03:47,795
+Maybe eigenvalues can coincide to each other.
+
+502
+01:03:47,795 --> 01:03:49,795
+We have multiple eigenvalues.
+
+503
+01:03:49,795 --> 01:03:52,795
+Find each corresponding eigenfactor.
+
+504
+01:03:52,795 --> 01:03:58,795
+I will omit the 4th part for the question.
+
+505
+01:03:58,795 --> 01:04:02,795
+Because we omit the diagonalization.
+
+506
+01:04:02,795 --> 01:04:04,795
+And using Kelly-Hamilton.
+
+507
+01:04:04,795 --> 01:04:06,795
+Find a inverse if exists.
+
+508
+01:04:06,795 --> 01:04:09,795
+And find a to the power of 5.
+
+509
+01:04:09,795 --> 01:04:10,795
+Ok.
+
+510
+01:04:10,795 --> 01:04:12,795
+I will omit this part.
+
+511
+01:04:12,795 --> 01:04:13,795
+So first.
+
+512
+01:04:13,795 --> 01:04:18,795
+For the first part.
+
+513
+01:04:18,795 --> 01:04:24,795
+The characteristic polynomial of A.
+
+514
+01:04:24,795 --> 01:04:26,795
+Because A is a square matrix.
+
+515
+01:04:26,795 --> 01:04:27,795
+Is equal to.
+
+516
+01:04:27,795 --> 01:04:30,795
+Lambda square minus trace of A.
+
+517
+01:04:30,795 --> 01:04:33,795
+Plus determinant of A.
+
+518
+01:04:33,795 --> 01:04:35,795
+So this is equal to.
+
+519
+01:04:35,795 --> 01:04:36,795
+Trace of A is 4.
+
+520
+01:04:36,795 --> 01:04:40,795
+Lambda square minus 4 lambda.
+
+521
+01:04:40,795 --> 01:04:43,795
+The determinant is.
+
+522
+01:04:43,795 --> 01:04:47,795
+3 minus 8 is minus 5.
+
+523
+01:04:47,795 --> 01:04:48,795
+Ok.
+
+524
+01:04:48,795 --> 01:04:49,795
+Minus 5.
+
+525
+01:04:49,795 --> 01:04:52,795
+This is our characteristic polynomial.
+
+526
+01:04:52,795 --> 01:04:56,795
+We can factor out this polynomial as.
+
+527
+01:04:56,795 --> 01:04:59,795
+Lambda minus 5 times.
+
+528
+01:04:59,795 --> 01:05:01,795
+Lambda plus 1.
+
+529
+01:05:01,795 --> 01:05:02,795
+Ok.
+
+530
+01:05:02,795 --> 01:05:03,795
+Because.
+
+531
+01:05:03,795 --> 01:05:05,795
+The multiplication of these 2 elements.
+
+532
+01:05:05,795 --> 01:05:07,795
+Is equal to constant of polynomial.
+
+533
+01:05:07,795 --> 01:05:08,795
+And addition is equal to.
+
+534
+01:05:08,795 --> 01:05:09,795
+The coefficient of lambda.
+
+535
+01:05:09,795 --> 01:05:10,795
+Ok.
+
+536
+01:05:10,795 --> 01:05:12,795
+For the second part.
+
+537
+01:05:12,795 --> 01:05:13,795
+Our eigenvalues.
+
+538
+01:05:13,795 --> 01:05:14,795
+The first eigenvalue.
+
+539
+01:05:14,795 --> 01:05:15,795
+Is equal to lambda 1.
+
+540
+01:05:15,795 --> 01:05:16,795
+Is equal to minus 1.
+
+541
+01:05:16,795 --> 01:05:17,795
+And.
+
+542
+01:05:17,795 --> 01:05:18,795
+Lambda 2.
+
+543
+01:05:18,795 --> 01:05:19,795
+Is equal to 5.
+
+544
+01:05:19,795 --> 01:05:20,795
+This is our eigenvalues.
+
+545
+01:05:20,795 --> 01:05:21,795
+Ok.
+
+546
+01:05:21,795 --> 01:05:22,795
+Let's find.
+
+547
+01:05:22,795 --> 01:05:23,795
+Corresponding eigenvectors.
+
+548
+01:05:23,795 --> 01:05:24,795
+For.
+
+549
+01:05:24,795 --> 01:05:25,795
+Lambda 1.
+
+550
+01:05:25,795 --> 01:05:26,795
+Equal minus 1.
+
+551
+01:05:26,795 --> 01:05:27,795
+And.
+
+552
+01:05:27,795 --> 01:05:28,795
+Lambda 2.
+
+553
+01:05:28,795 --> 01:05:29,795
+Is equal to 5.
+
+554
+01:05:29,795 --> 01:05:30,795
+This is our eigenvalues.
+
+555
+01:05:30,795 --> 01:05:31,795
+Ok.
+
+556
+01:05:31,795 --> 01:05:32,795
+Let's find.
+
+557
+01:05:32,795 --> 01:05:33,795
+Corresponding eigenvectors.
+
+558
+01:05:33,795 --> 01:05:34,795
+For.
+
+559
+01:05:34,795 --> 01:05:35,795
+Lambda 1.
+
+560
+01:05:35,795 --> 01:05:36,795
+Equal minus 1.
+
+561
+01:05:36,795 --> 01:05:37,795
+And.
+
+562
+01:05:37,795 --> 01:05:38,795
+Lambda 1.
+
+563
+01:05:38,795 --> 01:05:39,795
+Equal minus 1.
+
+564
+01:05:39,795 --> 01:05:40,795
+This is our eigenvalues.
+
+565
+01:05:40,795 --> 01:05:41,795
+Okay.
+
+566
+01:05:41,795 --> 01:05:42,795
+Let's find.
+
+567
+01:05:42,795 --> 01:05:43,795
+We have.
+
+568
+01:05:43,795 --> 01:05:44,795
+A.
+
+569
+01:05:44,795 --> 01:05:45,795
+Minus.
+
+570
+01:05:45,795 --> 01:05:46,795
+Minus 1.
+
+571
+01:05:46,795 --> 01:05:47,795
+Times I2.
+
+572
+01:05:47,795 --> 01:05:48,795
+A.
+
+573
+01:05:48,795 --> 01:05:49,795
+Plus.
+
+574
+01:05:49,795 --> 01:05:50,795
+Identity matrix.
+
+575
+01:05:50,795 --> 01:05:51,795
+So.
+
+576
+01:05:51,795 --> 01:05:52,795
+Order 2.
+
+577
+01:05:52,795 --> 01:05:53,795
+Times.
+
+578
+01:05:53,795 --> 01:05:54,795
+Equal to 0.
+
+579
+01:05:54,795 --> 01:05:55,795
+Here.
+
+580
+01:05:55,795 --> 01:05:56,795
+X.
+
+581
+01:05:56,795 --> 01:05:57,795
+Is.
+
+582
+01:05:57,795 --> 01:05:58,795
+Equal.
+
+583
+01:05:58,795 --> 01:05:59,795
+XY.
+
+584
+01:05:59,795 --> 01:06:00,795
+Ok.
+
+585
+01:06:00,795 --> 01:06:01,795
+Because of.
+
+586
+01:06:01,795 --> 01:06:02,795
+The dimension of.
+
+587
+01:06:02,795 --> 01:06:03,795
+Our matrix.
+
+588
+01:06:03,795 --> 01:06:04,795
+So.
+
+589
+01:06:04,795 --> 01:06:07,795
+The coefficient.
+
+590
+01:06:07,795 --> 01:06:08,795
+Matrix.
+
+591
+01:06:08,795 --> 01:06:09,795
+Of this.
+
+592
+01:06:09,795 --> 01:06:10,795
+Homogenial system.
+
+593
+01:06:10,795 --> 01:06:11,795
+Just.
+
+594
+01:06:11,795 --> 01:06:12,795
+Is.
+
+595
+01:06:12,795 --> 01:06:13,795
+The coefficient.
+
+596
+01:06:13,795 --> 01:06:14,795
+Of.
+
+597
+01:06:14,795 --> 01:06:15,795
+One.
+
+598
+01:06:15,795 --> 01:06:16,795
+To each.
+
+599
+01:06:16,795 --> 01:06:17,795
+Antony.
+
+600
+01:06:17,795 --> 01:06:18,795
+On the main diagonal.
+
+601
+01:06:18,795 --> 01:06:19,795
+V.
+
+602
+01:06:19,795 --> 01:06:20,795
+Is.
+
+603
+01:06:20,795 --> 01:06:21,795
+Equal to.
+
+604
+01:06:21,795 --> 01:06:22,795
+A.
+
+605
+01:06:22,795 --> 01:06:23,795
+Plus.
+
+606
+01:06:23,795 --> 01:06:24,795
+Identity matrix.
+
+607
+01:06:24,795 --> 01:06:25,795
+Or.
+
+608
+01:06:25,795 --> 01:06:26,795
+2.
+
+609
+01:06:26,795 --> 01:06:27,795
+Is.
+
+610
+01:06:27,795 --> 01:06:28,795
+Equal to.
+
+611
+01:06:28,795 --> 01:06:29,795
+2.
+
+612
+01:06:29,795 --> 01:06:30,795
+4.
+
+613
+01:06:30,795 --> 01:06:31,795
+2.
+
+614
+01:06:31,795 --> 01:06:32,795
+It is much more easy.
+
+615
+01:06:32,795 --> 01:06:34,795
+Put this matrix into.
+
+616
+01:06:34,795 --> 01:06:36,795
+Reduce row echelon form.
+
+617
+01:06:36,795 --> 01:06:37,795
+Here we have.
+
+618
+01:06:37,795 --> 01:06:39,795
+1.
+
+619
+01:06:39,795 --> 01:06:41,795
+0.
+
+620
+01:06:41,795 --> 01:06:42,795
+Because.
+
+621
+01:06:42,795 --> 01:06:43,795
+The.
+
+622
+01:06:43,795 --> 01:06:45,795
+Same.
+
+623
+01:06:45,795 --> 01:06:46,795
+So.
+
+624
+01:06:44,980 --> 01:06:53,579
+Yani, if you multiply first row by minus 1 and add it to second row, you will get all zero row in second place.
+
+625
+01:06:54,079 --> 01:06:56,440
+This is our new coefficient matrix.
+
+626
+01:06:56,920 --> 01:07:02,960
+So, the new system, depending on this matrix, will be x plus y equal to 0.
+
+627
+01:07:03,440 --> 01:07:05,760
+So, x is equal to minus y.
+
+628
+01:07:05,760 --> 01:07:19,139
+If you choose y, let y be t in r, then your solution vector will be x, y.
+
+629
+01:07:19,480 --> 01:07:25,400
+This is equal to minus t, t.
+
+630
+01:07:25,679 --> 01:07:29,340
+And this is equal to t times minus 1, 1.
+
+631
+01:07:29,340 --> 01:07:36,579
+Let's say this is our first vector, v1.
+
+632
+01:07:36,920 --> 01:07:47,639
+So, the eigenvector corresponding to lambda1 is v1.
+
+633
+01:07:47,860 --> 01:07:50,019
+Okay, this is our first eigenvector.
+
+634
+01:07:50,019 --> 01:08:03,900
+And for lambda2 equal to 5, we have a minus 5 identity matrix of order 2 times x.
+
+635
+01:08:03,980 --> 01:08:05,940
+We need to solve this homogeneous system.
+
+636
+01:08:06,679 --> 01:08:12,619
+So, our coefficient matrix will be a minus 5 identity matrix of order 2.
+
+637
+01:08:12,619 --> 01:08:17,300
+Just subtract minus 5 from each entry of the main diagonal.
+
+638
+01:08:17,300 --> 01:08:24,640
+Here we have minus 4, here we have 4, here we have 2, 3 minus 5 is minus 2.
+
+639
+01:08:25,159 --> 01:08:25,460
+Okay.
+
+640
+01:08:26,579 --> 01:08:31,880
+So, also, these two rows are linearly independent.
+
+641
+01:08:38,996 --> 01:08:58,735
+If you multiply second row by, excuse me, one row by one over two and adding up into second row, you will get zero, all zero in the second row, and your first row will be one, then multiply by minus one.
+
+642
+01:09:00,636 --> 01:09:07,636
+This is your reduced row echelon form. This is the reduced row echelon form of your coefficient matrix.
+
+643
+01:09:07,636 --> 01:09:27,735
+So our new system will be x minus one echelon to zero, and here x is echelon to y, and for the solution vector of this system, for the solution vector of this system, that right here x echelon to x y,
+
+644
+01:09:28,895 --> 01:09:37,216
+let's say y echelon to s in this case, s is a real number, so your solution vector will be s, s.
+
+645
+01:09:37,636 --> 01:09:44,336
+and s times one, so let v2, so let v2, so let v2 be equal to one, one, one.
+
+646
+01:09:45,336 --> 01:09:50,876
+Lambda, the corresponding eigenvector of lambda two is v2.
+
+647
+01:09:51,296 --> 01:09:51,576
+Okay.
+
+648
+01:09:53,576 --> 01:09:59,775
+The eigenspace for each, this eigenvalues is a one-dimensional subspace of r squared.
+
+649
+01:09:59,916 --> 01:10:00,136
+Okay.
+
+650
+01:10:00,975 --> 01:10:04,216
+Generated by respect to v1 and v2.
+
+651
+01:10:04,516 --> 01:10:05,496
+Any question here?
+
+652
+01:10:08,948 --> 01:10:17,228
+Bu özellik bir parçalara, çünkü bizim karakteristik konularımız,
+
+653
+01:10:21,747 --> 01:10:33,907
+Çünkü P sub A lambda is equal to lambda squared minus 4 lambda plus 5.
+
+654
+01:10:33,907 --> 01:10:49,127
+So by the Kehle-Hamilton Theorem P sub A or A is equal to A squared minus 4A plus 5 times identity matrix of orbit 2.
+
+655
+01:10:49,127 --> 01:10:54,727
+So we need to put here an identity matrix in order to make sense our computations.
+
+656
+01:10:54,727 --> 01:10:58,927
+So this will be equal to 0, 0, 0, 0.
+
+657
+01:10:58,927 --> 01:11:07,227
+Because Theorem says that each square matrix is a rule, so it's characteristic polynomial.
+
+658
+01:11:07,227 --> 01:11:12,327
+Actually, this is a trivial result of definition of characteristic polynomial.
+
+659
+01:11:12,327 --> 01:11:17,827
+If you substitute lambda as A, result will be 0.
+
+660
+01:11:17,827 --> 01:11:24,027
+So this is a trivial result of definition of characteristic polynomial.
+
+661
+01:11:24,027 --> 01:11:34,627
+By this fact, we have, in our example says that find A to the power 5 and A inverse.
+
+662
+01:11:34,627 --> 01:11:42,827
+Because our determinant is non-zero, here determinant of A is non-zero, we can find inverse of A.
+
+663
+01:11:42,827 --> 01:11:43,827
+Okay.
+
+664
+01:11:43,827 --> 01:11:56,627
+So, identity matrix of order 2 is equal to 1 over 5 times minus A squared plus 4A.
+
+665
+01:11:56,627 --> 01:12:15,627
+And if you factor out A, you will get 1 over 5A times minus 1 over 5 times minus A plus 4 identity matrix of order 2.
+
+666
+01:12:15,627 --> 01:12:45,627
+So, here A inverse is equal to minus A squared minus A squared minus A squared minus A squared minus A squared minus A squared minus A squared minus A squared minus A squared minus A squared minus A squared minus A squared minus A squared minus A squared minus A squared minus A squared minus A squared minus A squared minus A squared minus A squared minus A squared minus A squared minus A squared minus A squared minus A squared minus A squared minus A squared minus A squared minus A squared minus A squared minus A squared minus A squared minus A squared minus A squared minus A squared minus A squared minus A squared minus A squared minus A squared minus A squared minus A squared minus A squared minus A squared minus A squared minus A squared minus A squared minus A squared minus A squared minus A squared minus A squared minus A squared minus A squared minus A squared minus A squared minus A squared minus A squared minus A squared minus A squared minus A squared minus A squared minus A squared minus A squared minus A squared minus A squared minus A squared minus A squared minus A squared minus A squared minus A squared minus A squared minus A squared
+
+667
+01:12:45,627 --> 01:13:15,627
+So, minus A squared minus A squared minus A squared minus A squared minus A squared minus A squared minus A squared minus A squared minus A squared minus A squared minus A squared minus A squared minus A squared minus A squared minus A squared minus A squared minus A squared minus A squared minus A squared minus A squared minus A squared minus A squared minus A squared minus A squared minus A squared minus A squared minus A squared minus A squared minus A squared minus A squared minus A squared minus A squared minus A squared minus A squared minus A squared minus A squared minus A squared minus A squared minus A squared minus A squared minus A squared minus A squared minus A squared minus A squared minus A squared minus A squared minus A squared minus A squared minus A squared minus A squared minus A squared minus A squared minus A squared minus A squared minus A squared minus A squared minus A squared minus A squared minus A squared minus A squared minus A squared minus A squared minus A squared minus A squared minus A squared minus A squared minus A squared minus A squared minus A squared minus A squared minus A squared minus A squared minus A squared
+
+668
+01:13:15,627 --> 01:14:13,667
+minus A squared minus A squared minus A squared minus A squared minus A squared minus A squared minus A squared minus A squared minus A squared minus A squared minus A squared minus A squared minus A squared minus A squared minus A squared minus A squared minus A squared minus A squared minus A squared minus A squared minus A squared minus A squared minus A squared minus A squared minus A squared minus A squared minus A squared minus A squared minus A squared minus A squared minus A squared minus A squared minus A squared minus A squared minus A squared minus A squared minus A squared minus A squared minus A squared minus A squared minus A squared minus A squared minus A squared minus A squared minus A squared minus A squared minus A squared minus A squared minus A squared minus A squared minus A squared minus A squared minus A squared minus A squared minus A squared minus A squared minus A squared minus A squared minus A squared minus A squared minus A squared minus A squared minus A squared minus A squared minus A squared minus A squared minus A squared minus A squared minus A squared minus A squared minus A squared minus A squared minus A squared minus A
+
+669
+01:14:13,876 --> 01:14:34,956
+Sorry, I think we have a problem. Determinant is minus 5. Sorry, determinant is minus 5. So here we have 3 minus 3 over 5. Here we have 1 minus 1 over 5. And here we have minus 4 minus 4 over minus 5 is 4 over 5. And here we have minus 2 minus 2 over minus 5 is 2 over 5.
+
+670
+01:14:34,956 --> 01:14:55,456
+By using adjoined definitional inverse also, our inverse coincides with our result. Okay, so our result is correct. Also you can multiply by a in order to get identity matrix of order 2.
+
+671
+01:14:55,456 --> 01:15:07,296
+For the second part of the last item, let's take a to the power 5 by using Cayley-Hamilton.
+
+672
+01:15:07,296 --> 01:15:30,016
+We know that a squared is equal to by the characteristic polynomial by P sub a lambda. We have a squared is equal to 4a plus, excuse me, 4a minus 5 identity matrix of order 2.
+
+673
+01:15:30,016 --> 01:15:52,016
+4a minus 5i2. Okay, and by using this fact, a to the power 4 is equal to a squared times a squared. This is equal to 4a minus 5i2 times 4a minus 5i2.
+
+674
+01:15:52,016 --> 01:16:11,735
+Okay, let's compute this 16a squared minus 5i2. Okay, let's compute this 16a squared minus 10a. Okay, plus 25 identity matrix of order 2.
+
+675
+01:16:11,735 --> 01:16:18,735
+So instead of a squared, just write 4a minus 5i2. This is equal to 16a squared. So 16a squared is equal to 16a squared.
+
+676
+01:16:18,735 --> 01:16:22,735
+So 16a squared is equal to 16a squared. So 16a squared is equal to 16a squared. So 16a squared is equal to 16a squared.
+
+677
+01:16:22,735 --> 01:16:26,735
+So 16a squared is equal to 16a squared. So 16a squared is equal to 16a squared.
+
+678
+01:16:26,735 --> 01:16:32,735
+So 16a squared is equal to 16a squared minus 5i2 minus 10i plus 25a squared identity matrix of order 2.
+
+679
+01:16:32,735 --> 01:17:01,735
+So 16a squared is equal to 16a squared. So 16a squared is equal to 16a squared.
+
+680
+01:16:59,636 --> 01:17:22,356
+So here we have 4 times 16, 64A minus 80 identity matrix O order 2 minus 10A plus 25 identity matrix O order 2.
+
+681
+01:17:22,356 --> 01:17:37,476
+So at the end this will be, okay, 54A minus 55, I don't have to make this O order 2.
+
+682
+01:17:38,156 --> 01:17:40,216
+This is A to the power 4.
+
+683
+01:17:40,216 --> 01:17:55,156
+And just multiply this by A square, sorry, A, A to the power 5 will be 54A square minus 55A.
+
+684
+01:17:55,156 --> 01:18:11,236
+And instead of A square, just write 54A, 4A minus 5 identity matrix O order 2 minus 55 identity matrix O order 2.
+
+685
+01:18:11,236 --> 01:18:11,836
+Okay.
+
+686
+01:18:12,356 --> 01:18:17,396
+I think this is, in this case, 4A equal to 2.
+
+687
+01:18:18,696 --> 01:18:23,536
+This is much more complicated than taking power of A.
+
+688
+01:18:23,536 --> 01:18:24,196
+Okay.
+
+689
+01:18:24,876 --> 01:18:27,936
+So result will be A to the power 5.
+
+690
+01:18:28,256 --> 01:18:33,236
+If N is equal to 1000.
+
+691
+01:18:34,336 --> 01:18:34,576
+Okay.
+
+692
+01:18:34,936 --> 01:18:37,336
+Our computations make sense.
+
+693
+01:18:39,016 --> 01:18:46,436
+But in this case, directly computing power of A is much more easy than this computation.
+
+694
+01:18:46,436 --> 01:18:47,156
+Okay.
+
+695
+01:18:47,156 --> 01:18:50,656
+So I will leave here.
+
+696
+01:18:51,436 --> 01:18:53,615
+And this is the end of our term.
+
+697
+01:18:53,615 --> 01:19:19,956
+So I will leave here.
+
+698
+01:19:00,612 --> 01:19:05,612
+Bu sonrası için bir anekdotu
+
+699
+01:19:05,612 --> 01:19:14,612
+ve çok ünlü bir fransızı matematiklerinin
+
+700
+01:19:14,612 --> 01:19:16,612
+Henry Poinker'a anlatacağım.
+
+701
+01:19:16,612 --> 01:19:20,612
+Şimdi Türkçe konuşacağım.
+
+702
+01:19:20,612 --> 01:19:24,612
+Dersimiz bittiğine göre sevgili arkadaşlar, artık Türkçe.
+
+703
+01:19:24,612 --> 01:19:28,612
+Ders boyunca da ben Türkçe sorabileceğinizi söylemiştim.
+
+704
+01:19:28,612 --> 01:19:33,612
+Fakat bu grup maalesef öyle çok dersle ilgili bir grup değil açıkçası.
+
+705
+01:19:33,612 --> 01:19:40,612
+Öğrenci sayısı fazla olmasına rağmen muhtemelen yıl sayısı fazla olan öğrenciler bilmiyorum.
+
+706
+01:19:40,612 --> 01:19:44,612
+O diye detaylı bakmadım ama dersle çok ilgili bir grup değil.
+
+707
+01:19:44,612 --> 01:19:46,612
+Sizler açıkçası ilgilisiniz tabii.
+
+708
+01:19:46,612 --> 01:19:49,612
+Sizin dışınızdakiler bu sözlerimiz sizler için değil.
+
+709
+01:19:49,612 --> 01:19:52,612
+Genelde 50 kişi derse katılıyordu.
+
+710
+01:19:52,612 --> 01:19:55,612
+Son hafta olması sebebiyle bu 25'lere düştü.
+
+711
+01:19:55,612 --> 01:20:01,612
+Dinlediğiniz için siz son haftaya kadar dayandığınız için size özel teşekkür arkadaşlar.
+
+712
+01:20:01,612 --> 01:20:08,612
+Derslerimi herhalde Henry Poinker'ın hayatından bir anekdot ve bir sözle bitiriyorum.
+
+713
+01:20:08,612 --> 01:20:10,612
+Belki birinizin hayatına dokunur.
+
+714
+01:20:10,612 --> 01:20:12,612
+Dersimizi bitirmiş olduk.
+
+715
+01:20:12,612 --> 01:20:16,612
+İki tane uygulama seti var web sayfasında.
+
+716
+01:20:16,612 --> 01:20:20,612
+Finans sınavının ağırlığı %40 çalışacaksınız.
+
+717
+01:20:20,612 --> 01:20:22,612
+Sanırım 17 Haziran'daydı.
+
+718
+01:20:22,612 --> 01:20:23,612
+Sınavlarınızı kaçırmayın.
+
+719
+01:20:23,612 --> 01:20:25,612
+Elinizde materyaller yeterli.
+
+720
+01:20:25,612 --> 01:20:32,612
+Bu sınavlarda iyi not almak için ki zaten iki grubumuzun ortalaması ki genel ortalamadan 5 puan daha yüksekti.
+
+721
+01:20:32,612 --> 01:20:37,612
+Tabii bunun sebebi ne olabilir bilmiyorum tam olarak.
+
+722
+01:20:37,612 --> 01:20:40,612
+Ama iyi olduğunu söyleyebilirim genel olarak.
+
+723
+01:20:40,612 --> 01:20:47,612
+Fransız matematikçi Henry Poinker'ın kendine has felsefeci ve matematikçi kendine has teorileri var.
+
+724
+01:20:47,612 --> 01:20:52,612
+Ayrıca filozof ve matematikin yanında felsefeyle de ilgileniyor.
+
+725
+01:20:52,612 --> 01:21:00,612
+Onun bilim ve metot bilim ve deney isminde Türkçe'ye çevrilen 40'lı yıllarda Hasan Ali Üçeli'nin eğitim bakanı olduğu zamanlarda
+
+726
+01:21:00,612 --> 01:21:02,612
+Türkçe'ye çevrilen iki tane kitabı vardı.
+
+727
+01:21:02,612 --> 01:21:04,612
+Onlardan bir tanesi lisansta okumuştum.
+
+728
+01:21:04,612 --> 01:21:05,612
+Hangisiydi?
+
+729
+01:21:05,612 --> 01:21:06,612
+Emin değilim.
+
+730
+01:21:06,612 --> 01:21:09,612
+Sonlarında hoşuma giden bir cümle vardı.
+
+731
+01:21:09,612 --> 01:21:12,612
+O hafızama kazındı ve öğrencilerimde de paylaşıyorum.
+
+732
+01:21:12,612 --> 01:21:14,612
+Nereden o cümleye geliyor?
+
+733
+01:21:14,612 --> 01:21:17,612
+Poinker'ın Fix Your Fonksiyonlar isiminde bir teorisi var.
+
+734
+01:21:17,612 --> 01:21:21,612
+Onu nasıl geliştirdiğini anlatıyor kitabında.
+
+735
+01:21:23,612 --> 01:21:30,612
+İlk diyor, bir gece yarısı şimşek çakar gibi fikir geldi ona.
+
+736
+01:21:31,612 --> 01:21:33,612
+Ona şuurlu düşünce diyor Poinker.
+
+737
+01:21:33,612 --> 01:21:34,612
+Bu yorumlar.
+
+738
+01:21:34,612 --> 01:21:39,612
+Yani insan hayatında verimli üretimlerin olduğu zamanlar çok kısıtlıdır.
+
+739
+01:21:39,612 --> 01:21:41,612
+Sürekli bize fikir gelmez.
+
+740
+01:21:41,612 --> 01:21:43,612
+Değerli fikirler sürekli gelmez.
+
+741
+01:21:43,612 --> 01:21:49,612
+Hatta bizim kültürümüzde negatif bir ruh hali olarak algılanır fikir gelmesi.
+
+742
+01:21:49,612 --> 01:21:53,612
+Mesela böyle halk arasında efkar basit derler.
+
+743
+01:21:53,612 --> 01:21:55,612
+Efkar aslında fikrin çoğuluğu.
+
+744
+01:21:55,612 --> 01:22:02,612
+Fikir gelmesi iyi bir şeydir insana ama o negatif bir ruh hali olarak Doğu toplumlarında algılanır.
+
+745
+01:22:02,612 --> 01:22:04,612
+Bu yanlış bir şey.
+
+746
+01:22:04,612 --> 01:22:09,612
+İlk fikir aklıma geldi gece yarısı.
+
+747
+01:22:09,612 --> 01:22:13,612
+Sonra diyor onu, otobüs yolculuğunda arkadaşlarımla tartıştım.
+
+748
+01:22:13,612 --> 01:22:16,612
+Kahvaltı sofralarla eşimle tartıştım.
+
+749
+01:22:16,612 --> 01:22:22,612
+Ondan sonra konferanslarda yine bilinç evreleriyle tartıştım.
+
+750
+01:22:22,612 --> 01:22:24,612
+Onu teori haline getirmem 2 seneme aldım.
+
+751
+01:22:24,612 --> 01:22:28,612
+Yani onu bir dergide basacak hale getirmem 2 seneme aldım.
+
+752
+01:22:28,612 --> 01:22:29,612
+Gerçekten bizde de öyle.
+
+753
+01:22:29,612 --> 01:22:36,612
+Matematikleri iyi bir dergide literatürün kabul edeceği bir yayın yapmak istiyorsanız
+
+754
+01:22:36,612 --> 01:22:40,612
+bunun Kuluçka dönemiyle basılması minimum 2 senedir.
+
+755
+01:22:40,612 --> 01:22:43,612
+2 sene boyunca önce problem tespit edersiniz.
+
+756
+01:22:43,612 --> 01:22:47,612
+Sonra onu çözersiniz, onu yazarsınız, dergiyi gönderirsiniz falan.
+
+757
+01:22:47,612 --> 01:22:52,612
+Uzun süreçte Point'in de bu süreci yaşamış.
+
+758
+01:22:52,612 --> 01:22:54,612
+Bu konferansızı da bu süreci yaşamış.
+
+759
+01:22:53,684 --> 01:22:58,604
+Ve Poinker şöyle bir sözü var bunun üzerine tabii bunu anlamlandırmak için.
+
+760
+01:22:58,824 --> 01:23:04,864
+Şuurlu düşünce neydi? Anlık bize gelen, Poinker'ın ifadesiyle gelen fikirler, şimşek gibi çakan.
+
+761
+01:23:05,344 --> 01:23:08,344
+Şöyle bir söz kitabının sonunda bir yerlerdeydi.
+
+762
+01:23:09,083 --> 01:23:14,244
+Hayat iki ölüm eve dili arasında kısa bir andan ibarettir.
+
+763
+01:23:15,344 --> 01:23:21,364
+Bu kısa anda bile şuurlu düşünce pek az sürmüştür ve sürecektir.
+
+764
+01:23:21,364 --> 01:23:27,524
+Şuurlu düşünce karallık bir gecenin ortasında çakan şimşek gibidir.
+
+765
+01:23:27,984 --> 01:23:29,503
+Fakat bu her şeydir.
+
+766
+01:23:30,663 --> 01:23:33,644
+Ben de beni dinleyen şu anda bilmiyorum. Hepsi dinliyor mu?
+
+767
+01:23:33,684 --> 01:23:40,784
+25 kişiye. Bundan sonraki hayatınızda şuurlu düşüncenin fazla olduğu zaman dilimleri görüyorum.
+
+768
+01:23:40,784 --> 01:23:45,543
+Umarım şuurlu düşünceleriniz çok olur. Parlak fikirleriniz çok olur.
+
+769
+01:23:45,543 --> 01:23:53,463
+Bu temel derstele ilgili de birkaç cümle sarf edip kapatacağım.
+
+770
+01:23:55,304 --> 01:24:00,163
+Temel dersten mühendislik ve temel bilimlere verilen derslerin amacı nedir?
+
+771
+01:24:00,163 --> 01:24:10,244
+Bir kere matematiğin temel amacı yani tabii ki her alanda uygulama, her bisikletinin kendine göre özel uygulama alanları var.
+
+772
+01:24:10,543 --> 01:24:13,123
+Yani derslerimiz genel olarak veriliyor.
+
+773
+01:24:13,564 --> 01:24:17,524
+Her bir bölüme yönelik onların bölümünde neye denk geliyor?
+
+774
+01:24:17,524 --> 01:24:21,944
+O şekilde vermiyoruz derslerimizi ki bütün dünyada mı böyle?
+
+775
+01:24:22,104 --> 01:24:25,244
+Yine MIT'de Jill Battistranik'den dinleyin.
+
+776
+01:24:25,304 --> 01:24:27,003
+Genel anlamda dinerçe bir verir.
+
+777
+01:24:27,064 --> 01:24:31,543
+Orada nerede kullanıldığına dair size birebir şey vermez.
+
+778
+01:24:31,744 --> 01:24:35,304
+Ha günlük yaşam uygulamaları istiyorsanız araştırılabilir.
+
+779
+01:24:35,684 --> 01:24:38,064
+Ya da bölümümüz spesifay eder.
+
+780
+01:24:38,163 --> 01:24:41,184
+Derdi ki biz birebir kendi bölümüze yönelik işlemek istiyoruz.
+
+781
+01:24:41,344 --> 01:24:45,503
+Tabii bazı bölümlerde birebir uygulamalar bulmak zor da olabilir.
+
+782
+01:24:45,503 --> 01:24:49,623
+Amaç düşünmeyi öğrenmektir arkadaşlar.
+
+783
+01:24:50,104 --> 01:24:54,423
+Düşünmek bu hayattaki en zor şeylerden biridir.
+
+784
+01:24:55,104 --> 01:24:55,663
+Düşünmek.
+
+785
+01:24:56,423 --> 01:24:58,564
+Düşünmek çok zor ve sancılı bir süreç.
+
+786
+01:24:59,324 --> 01:25:00,663
+Düşünmeyi öğretir bize.
+
+787
+01:25:00,904 --> 01:25:03,564
+Sorgulamayı ve düşünmeyi öğretir her şeyden önce.
+
+788
+01:25:03,564 --> 01:25:07,144
+Bir mühendis sorgulamalı ve düşünmeli.
+
+789
+01:25:07,224 --> 01:25:09,583
+Bütün ihtimalleri düşünmeli olabilecek.
+
+790
+01:25:10,164 --> 01:25:11,224
+Olan ve olabilecek.
+
+791
+01:25:11,364 --> 01:25:13,764
+Bütün ihtimalleri düşünebilmeli ki
+
+792
+01:25:13,764 --> 01:25:18,724
+oluşturduğu ya da yapmayı düşündüğü artık neyse.
+
+793
+01:25:19,824 --> 01:25:21,244
+İş dersel olsun değil mi?
+
+794
+01:25:21,324 --> 01:25:21,884
+İşe yarası.
+
+795
+01:25:22,324 --> 01:25:24,904
+Siz bütün durumları düşünmezseniz eksik kalacak o.
+
+796
+01:25:25,104 --> 01:25:25,344
+Değil mi?
+
+797
+01:25:25,824 --> 01:25:28,164
+Dolayısıyla matematiğin böyle bir yönü var.
+
+798
+01:25:28,284 --> 01:25:31,884
+Yani üst bütün angarya olarak görülmemesi gerekiyor.
+
+799
+01:25:32,583 --> 01:25:34,204
+Bazı bölümlerde görülebiliyor.
+
+800
+01:25:34,304 --> 01:25:39,144
+Tabii bazı bölümlerde dersler çok zevkli geçmesine rağmen bazı bölümlerde angarya olarak görülebiliyor.
+
+801
+01:25:39,144 --> 01:25:46,484
+Yani buradaki temel edeb sizlerin bazı tanımlar öğrenip, işlemler yapıp iyi notlar almanız değil.
+
+802
+01:25:46,884 --> 01:25:56,304
+Temel amaç aslında birinci öncelik düşünme yeteneğinizi, düşünme ve muhakeme yeteneğinizi geliştirmeniz.
+
+803
+01:25:56,444 --> 01:26:00,543
+İkincisi kendi bölümlerinizde birebir uygulama alanları var.
+
+804
+01:26:00,543 --> 01:26:08,944
+Mesela Liner Cegiri şu an içinde yaşadığımız bilgi çağında bilginin transferinde çok yoğun bir şekilde kullanılıyor.
+
+805
+01:26:09,144 --> 01:26:13,043
+Başka başka alanlarda da çok yoğun bir şekilde kullanılıyor Liner Cegiri.
+
+806
+01:26:13,164 --> 01:26:16,224
+Biz sadece bir damla olarak veriyoruz size.
+
+807
+01:26:16,824 --> 01:26:18,664
+Sadece kapıyı tıklıyoruz.
+
+808
+01:26:19,123 --> 01:26:20,463
+İçeri bile girmiyoruz.
+
+809
+01:26:20,524 --> 01:26:27,184
+O kadar çok daha detaylı teorik bilgiler var ki biz sadece bir giriş mesafesinde temel kavramlarını veriyoruz.
+
+810
+01:26:27,184 --> 01:26:32,444
+Yani okuma yaptığınız zaman kendi başınıza onları anlayabilecek düzeyde temel kavramları veriyoruz.
+
+811
+01:26:32,564 --> 01:26:34,963
+Bunun üzerinde sizin gitmeniz gerekiyor sevgili arkadaşlar.
+
+812
+01:26:37,043 --> 01:26:41,543
+Eğer dönem boyunca suçunu insan ettiysek affola diyelim.
+
+813
+01:26:41,543 --> 01:26:44,684
+Açıkçası
+
+814
+01:26:44,655 --> 01:27:06,055
+Yani ders İngilizce olduğu için, ha şu hususta da İngilizcem açıkçası mükemmel değil ama ders anlatacak kadar idare ediyor. Öyle dedim ya, kötü de değil, onu söyleyeyim. Derslerimi en azından kendim de dinlediğimde anlıyorum. Ya bir problem de yok. Tamam, bir an ben hakaları yapmış olabilirim. Çünkü ben native değilim yani İngilizce'de. Sizler gibi ben de sonradan öğrendim.
+
+815
+01:27:06,055 --> 01:27:34,216
+Biraz da geliştirebilir miyim? Evet, konuşmamı, anekdot paylaşmak için. Gerçi ona vaktimiz de yok. Zaman kısıtlı çünkü. Konular çok fazla, zaman çok. Uygulaması olmayan bir ders. Dolayısıyla zorunlu olarak böyle işlemek zorundayız. Ya ben sizin için bunu zırp haline getirdim adeta. Materyaller ona göre düzenlenmiş. Açıkçası dersi siz o materyallerle desteklediğinizde anlamamanız ya da o müfredatın içine girmemeniz gibi bir şey söz konusu olamaz ki. Size sorulan sorulardan da sınavdan anlamışsınızdır.
+
+816
+01:27:34,216 --> 01:28:04,195
+avantajlı bir şey söz konusu olamaz ki. Ama avantajlı bir şey söz konusu olamaz ki.
+
+817
+01:28:04,195 --> 01:28:06,195
+bir şey söz konusu olamaz ki. Bütün öğrenciler ona da bir şey söz konusu olamaz ki.
+
+818
+01:28:06,195 --> 01:28:11,195
+Bütün öğrencilerime her zaman açık. Elinden geleni yapmaya çalışırım diyeyim.
+
+819
+01:28:11,195 --> 01:28:24,195
+Ondan sonra sabırla dinlediğiniz için teşekkür ediyorum. Hoşçakalın arkadaşlar. Sizlere sağlıklı ve başarılı bir hayat diliyorum. Hoşçakalın.
