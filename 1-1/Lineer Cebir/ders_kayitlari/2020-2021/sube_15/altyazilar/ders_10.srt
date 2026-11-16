@@ -1,0 +1,1951 @@
+1
+00:08:34,611 --> 00:08:36,611
+Bu günler. Bu günler.
+
+2
+00:08:38,611 --> 00:08:40,611
+Bu günler.
+
+3
+00:08:41,611 --> 00:08:42,611
+Teşekkürler.
+
+4
+00:08:42,611 --> 00:08:44,611
+Bu günler.
+
+5
+00:08:45,611 --> 00:08:48,611
+Bu günler?
+
+6
+00:08:54,323 --> 00:09:02,483
+Bu bölümde 65-66 olarak, bu bölümde 60 olarak,
+
+7
+00:09:02,483 --> 00:09:04,803
+bu bölümde 60 olarak,
+
+8
+00:09:04,803 --> 00:09:07,283
+bölümde 60 olarak,
+
+9
+00:09:07,283 --> 00:09:12,163
+bu bölümde çok iyi bir şey.
+
+10
+00:09:12,163 --> 00:09:14,243
+Bu bölümde de olarak,
+
+11
+00:09:14,243 --> 00:09:17,203
+ve vektörs'in ve direkteşedir.
+
+12
+00:09:17,203 --> 00:09:19,203
+Bu bölümde,
+
+13
+00:09:19,203 --> 00:09:21,203
+bu bölümde,
+
+14
+00:09:21,203 --> 00:11:37,203
+bölümde,
+
+15
+00:11:37,203 --> 00:11:39,203
+u plus v.
+
+16
+00:11:39,203 --> 00:11:41,203
+But this operation
+
+17
+00:11:41,203 --> 00:11:43,203
+need not to be usual vector addition,
+
+18
+00:11:43,203 --> 00:11:45,203
+component-wise vector addition.
+
+19
+00:11:45,203 --> 00:11:49,203
+The rule of operation may be different.
+
+20
+00:11:49,203 --> 00:11:50,203
+Okay.
+
+21
+00:11:50,203 --> 00:11:51,203
+Also,
+
+22
+00:11:51,203 --> 00:11:55,203
+we say plus as our first binary operation,
+
+23
+00:11:55,203 --> 00:11:57,203
+our first binary operation.
+
+24
+00:11:57,203 --> 00:11:59,203
+Also you can denote by different symbols,
+
+25
+00:11:59,203 --> 00:12:01,203
+by star,
+
+26
+00:12:01,203 --> 00:12:03,203
+by square,
+
+27
+00:12:03,203 --> 00:12:05,203
+square,
+
+28
+00:12:05,203 --> 00:12:06,203
+by triangle,
+
+29
+00:12:06,203 --> 00:12:07,203
+any operation.
+
+30
+00:12:07,203 --> 00:12:09,203
+But we just choose plus.
+
+31
+00:12:09,203 --> 00:12:15,203
+But this doesn't mean this is the usual vector addition.
+
+32
+00:12:15,203 --> 00:12:19,203
+The rule of this operation may be different.
+
+33
+00:12:19,203 --> 00:12:23,203
+And also we have second operation,
+
+34
+00:12:23,203 --> 00:12:26,203
+denote by dot or scalar multiplication,
+
+35
+00:12:26,203 --> 00:12:33,203
+but the rule of this operation is also different from usual scalar multiplication of vectors.
+
+36
+00:12:33,203 --> 00:12:39,203
+This is also an operation from R or F.
+
+37
+00:12:39,203 --> 00:12:43,203
+Here we choose our field as real numbers.
+
+38
+00:12:43,203 --> 00:12:47,203
+So from R cross V to V,
+
+39
+00:12:47,203 --> 00:12:49,203
+result will be a vector again.
+
+40
+00:12:49,620 --> 00:12:56,279
+Take a lambda in R and vector u in V, map this to lambda u.
+
+41
+00:12:56,279 --> 00:13:00,000
+Okay, we have two binary operations here.
+
+42
+00:13:05,716 --> 00:13:22,296
+So, if for all elements in V, let that for all u, v, w in V.
+
+43
+00:13:22,296 --> 00:13:36,735
+First, I choose arbitrary elements in V, but here I write u plus v is also an element in V.
+
+44
+00:13:36,735 --> 00:13:42,916
+This means that third operation is closed under addition.
+
+45
+00:13:43,216 --> 00:13:47,475
+Excuse me, v is closed under first binary operation.
+
+46
+00:13:47,895 --> 00:13:51,336
+Or we can say that v is closed under addition.
+
+47
+00:13:51,336 --> 00:13:51,956
+Okay.
+
+48
+00:13:53,596 --> 00:13:57,615
+Here u and v, two arbitrary elements in V.
+
+49
+00:13:58,416 --> 00:14:08,515
+The second property, v is associative with respect to given operation.
+
+50
+00:14:09,716 --> 00:14:19,255
+u plus v plus w must be equal to u plus v plus w.
+
+51
+00:14:19,255 --> 00:14:27,556
+Our set must be associated with respect to first binary operation.
+
+52
+00:14:27,556 --> 00:14:37,375
+Okay.
+
+53
+00:14:33,395 --> 00:14:45,935
+Also, there exists an identity element with respect to first binary operation.
+
+54
+00:14:45,935 --> 00:14:56,895
+U plus 0 is equal to U, such that 0 is an element in V.
+
+55
+00:14:56,895 --> 00:15:07,895
+There must be a 0 in V such that U plus 0 is equal to U.
+
+56
+00:15:07,895 --> 00:15:11,895
+This remains U unchanged.
+
+57
+00:15:11,895 --> 00:15:16,895
+This is the identity element of the first binary operation,
+
+58
+00:15:16,895 --> 00:15:21,895
+but we denote this identity element by 0,
+
+59
+00:15:21,895 --> 00:15:27,895
+but this vector need not to be all 0 vector.
+
+60
+00:15:27,895 --> 00:15:34,895
+The component of this vector determined by the rule of given operation.
+
+61
+00:15:34,895 --> 00:15:38,895
+Okay. If our operation is usually addition,
+
+62
+00:15:38,895 --> 00:15:40,895
+then 0 is all 0 vector.
+
+63
+00:15:40,895 --> 00:15:45,895
+But if the rule is different, this is maybe a non-zero vector.
+
+64
+00:15:45,895 --> 00:15:52,895
+Okay. Also, for each element we have an inverse element.
+
+65
+00:15:52,895 --> 00:16:08,895
+U plus U prime is equal to 0, such that U prime in V.
+
+66
+00:16:08,895 --> 00:16:14,895
+There exists a U prime in V such that U plus U prime is 0.
+
+67
+00:16:14,895 --> 00:16:20,895
+We denote some cases U prime by minus U.
+
+68
+00:16:20,895 --> 00:16:30,895
+Okay. This means that the inverse of U with respect to first binary operation is minus U,
+
+69
+00:16:30,895 --> 00:16:34,895
+minus U and this must be an element in V.
+
+70
+00:16:34,895 --> 00:16:45,895
+Each element in V has additive or additive inverse or as an inverse with respect to given operation.
+
+71
+00:16:45,895 --> 00:16:58,895
+Together with these four properties, we say that V plus V and plus as an abelian, excuse me, as a group.
+
+72
+00:16:58,895 --> 00:17:01,895
+As an group. Okay. Group.
+
+73
+00:17:01,895 --> 00:17:19,895
+If for all U V in V, U plus V is equal to V plus U, then we say that V plus V and plus as the triple V and plus as an abelian group.
+
+74
+00:17:19,895 --> 00:17:30,895
+Okay. Let me remove this. If V and plus satisfy all these five properties, the five properties,
+
+75
+00:17:30,895 --> 00:17:41,895
+commutativity of the elements of the V. So V plus is an abelian group.
+
+76
+00:17:41,895 --> 00:17:52,895
+The term abelian group. The term abelian comes from the name of famous mathematician Abel.
+
+77
+00:17:52,895 --> 00:17:58,895
+Is that commutative? Also you can say that V plus is a commutative group.
+
+78
+00:17:58,895 --> 00:18:09,895
+Our first binary operation must satisfy all these five properties of all these five axioms.
+
+79
+00:18:09,895 --> 00:18:18,895
+Okay. Also our second binary operation must satisfy some conditions or axioms.
+
+80
+00:18:18,895 --> 00:18:20,895
+The first axiom.
+
+81
+00:18:25,268 --> 00:18:33,827
+U, V, W are elements in V, and here we choose RS in R.
+
+82
+00:18:33,827 --> 00:18:42,627
+OK, because the first component of this operation is a constant, especially we choose real numbers.
+
+83
+00:18:43,428 --> 00:18:49,827
+So, first, R times U, U is an arbitrary vector in V.
+
+84
+00:18:53,652 --> 00:18:55,632
+Let me write here for all.
+
+85
+00:18:59,251 --> 00:19:14,932
+U, V, W, in V. R, V is an element in V. V is close under scalar multiplication or V is close with respect to second binary operation.
+
+86
+00:19:20,372 --> 00:19:27,412
+Secondly, additional scalars is left distributive over vectors.
+
+87
+00:19:27,412 --> 00:19:35,752
+R plus S times U must be equal to R U plus SU.
+
+88
+00:19:36,752 --> 00:19:41,211
+This is also equal to because real numbers are commutative.
+
+89
+00:19:42,612 --> 00:19:45,052
+U times R plus S.
+
+90
+00:19:46,572 --> 00:19:48,932
+This condition also must be satisfied.
+
+91
+00:20:02,644 --> 00:20:27,683
+The third axiom of the second binary operation is same thing for the vectors must be satisfied. R times u plus v or v plus w, let me write this v plus w, is equal to r times v plus r times w. This is also equal to v plus w times r.
+
+92
+00:20:27,683 --> 00:20:41,963
+Vektör adiation is right and left distributive or scalars. The second one says that the scalar adiation is left and right distributive or vectors.
+
+93
+00:20:41,963 --> 00:20:49,084
+Our fourth axiom for the scalar product
+
+94
+00:20:54,195 --> 00:20:56,675
+R times S, R S are real numbers.
+
+95
+00:20:57,275 --> 00:21:00,275
+U is equal to R times S times U.
+
+96
+00:21:00,735 --> 00:21:00,855
+Okay.
+
+97
+00:21:03,615 --> 00:21:08,055
+First we scale U by R times S.
+
+98
+00:21:08,635 --> 00:21:12,975
+Then this must be equal to first scale by S.
+
+99
+00:21:13,235 --> 00:21:15,755
+This is a new vector, then scale by R.
+
+100
+00:21:16,115 --> 00:21:18,395
+Also this property must satisfy.
+
+101
+00:21:19,355 --> 00:21:22,035
+And our last property.
+
+102
+00:21:24,195 --> 00:21:37,096
+For each U in V, one time, excuse me, one scalar product U is equal to U.
+
+103
+00:21:38,055 --> 00:21:44,836
+Here, one E, identity element, multiplicative identity element of real numbers.
+
+104
+00:21:44,836 --> 00:21:45,475
+Okay.
+
+105
+00:21:46,155 --> 00:21:56,195
+If we satisfy all these 10 axioms, then we say that the triple V plus dot as a vector space.
+
+106
+00:21:56,195 --> 00:21:57,195
+Okay.
+
+107
+00:21:57,195 --> 00:22:23,195
+Thank you.
+
+108
+00:22:10,996 --> 00:22:22,536
+if v plus dot satisfy all these axioms.
+
+109
+00:22:27,251 --> 00:22:37,192
+Axiom, then v is called as a vector space with respect to given binary operations.
+
+110
+00:22:38,751 --> 00:22:44,051
+v is called a vector space.
+
+111
+00:22:48,276 --> 00:22:55,276
+ile ilgili bilimlerine verilen
+
+112
+00:22:59,955 --> 00:23:06,955
+ve
+
+113
+00:23:06,955 --> 00:23:57,955
+V
+
+114
+00:23:36,115 --> 00:23:38,115
+Let's give our first example.
+
+115
+00:23:40,816 --> 00:23:43,816
+You already familiar with this example.
+
+116
+00:23:45,016 --> 00:23:51,816
+Let our set VB R to the power N.
+
+117
+00:23:52,016 --> 00:23:55,016
+Here N is an integer.
+
+118
+00:23:57,615 --> 00:23:59,816
+Set of all N tuples.
+
+119
+00:23:59,816 --> 00:24:11,316
+X1, X2, Xn such that X sub i is an element in real numbers.
+
+120
+00:24:11,516 --> 00:24:12,516
+Okay.
+
+121
+00:24:12,715 --> 00:24:17,816
+And our F is equal to, sorry, our field.
+
+122
+00:24:21,428 --> 00:24:24,308
+or field is equal to real numbers.
+
+123
+00:24:25,108 --> 00:24:35,568
+And our binary operations, addition and scalar multiplication are usual addition and scalar multiplication of letters.
+
+124
+00:24:35,568 --> 00:24:54,208
+We choose, let's write x equal to x1, x2, xn and y y1, y2, yn.
+
+125
+00:24:54,208 --> 00:25:01,108
+So x plus y is equal to component wise addition.
+
+126
+00:25:01,108 --> 00:25:07,908
+x1 plus y1, xn plus yn.
+
+127
+00:25:08,608 --> 00:25:18,108
+And our scalar multiplication is also the usual scalar multiplication of vectors.
+
+128
+00:25:18,108 --> 00:25:31,868
+We take a scalar lambda and vector, let me write here x, because we have already defined our vector x.
+
+129
+00:25:31,868 --> 00:25:41,588
+Take a couple of, a scalar and a vector and maps it to lambda times x.
+
+130
+00:25:41,588 --> 00:25:47,928
+So this is equal to lambda x1, lambda xn.
+
+131
+00:25:48,388 --> 00:25:52,588
+This is the usual scalar multiplication and usual vector addition.
+
+132
+00:25:53,088 --> 00:25:58,148
+Together with these two binary operations, the set v or rn.
+
+133
+00:25:58,148 --> 00:26:26,888
+And our
+
+134
+00:26:03,539 --> 00:26:10,859
+is a vector space, ve equal to Rm, plus dot is a vector space.
+
+135
+00:26:14,675 --> 00:26:26,215
+Especially, if you choose n as 1, or n equal to 1, r is a vector space.
+
+136
+00:26:30,387 --> 00:26:31,387
+or itself.
+
+137
+00:26:34,387 --> 00:26:41,387
+You can check all these for our all these axioms are satisfied.
+
+138
+00:26:41,387 --> 00:26:42,387
+You can check.
+
+139
+00:26:43,387 --> 00:26:47,387
+Take any three elements or arbitrarily any two elements.
+
+140
+00:26:47,387 --> 00:26:51,387
+The addition of any two real numbers is also a real number.
+
+141
+00:26:51,387 --> 00:26:58,387
+Real numbers are associated with respect to usual addition
+
+142
+00:26:58,387 --> 00:27:01,387
+and zero is the identity element.
+
+143
+00:27:01,387 --> 00:27:07,387
+Minus times of each element is the additive inverse of the element.
+
+144
+00:27:07,387 --> 00:27:11,387
+So real numbers also are commutative.
+
+145
+00:27:11,387 --> 00:27:19,387
+Changing the order of elements doesn't change the result of operation or addition.
+
+146
+00:27:19,387 --> 00:27:25,387
+Also, here scalar multiplication for an equal one case,
+
+147
+00:27:25,387 --> 00:27:30,387
+scalar multiplication coincides with the multiplication in real numbers.
+
+148
+00:27:30,387 --> 00:27:40,387
+Also, all these properties, five properties for the scalar multiplication satisfied for R.
+
+149
+00:27:40,387 --> 00:27:46,387
+Then R is a real vector space. R itself is a real vector space.
+
+150
+00:27:46,387 --> 00:27:55,387
+If you choose and as if you take pick up and as to that your set will be.
+
+151
+00:27:55,387 --> 00:28:02,387
+For an equal to two. R square also is a vector space.
+
+152
+00:28:02,387 --> 00:28:06,387
+over R. OK.
+
+153
+00:28:06,387 --> 00:28:14,387
+For an equal to three. R cube is a vector space also over R.
+
+154
+00:28:14,387 --> 00:28:18,387
+This means that R is a real vector space.
+
+155
+00:28:18,387 --> 00:28:23,387
+You can pick up any positive number instead of R. OK.
+
+156
+00:28:23,387 --> 00:28:24,387
+instead of R. OK.
+
+157
+00:28:24,387 --> 00:28:27,387
+This is our first vector space.
+
+158
+00:28:27,387 --> 00:28:33,387
+You can check all the axioms for the general case R.
+
+159
+00:28:33,387 --> 00:28:38,387
+Take vectors X, Y, Z with the given components and scalars.
+
+160
+00:28:38,387 --> 00:28:46,387
+And try to show all these axioms satisfied for the given set R.
+
+161
+00:28:46,387 --> 00:29:05,387
+And try to show all these axioms.
+
+162
+00:28:58,579 --> 00:29:14,199
+I have already talked about these axioms and the example, what's the example? Let's give another example and not trivial example for the vector spaces. Sorry. Okay.
+
+163
+00:29:14,199 --> 00:29:30,460
+Here we have set V as R-square. This is the usual set of points on the plane or the Cartesian coordinate system.
+
+164
+00:29:33,039 --> 00:29:43,980
+But we modify our second binary operation. Our first binary operation is the usual vector addition.
+
+165
+00:29:44,199 --> 00:29:58,319
+But our second binary operation is a little bit different from the usual scalar multiplication. We take a vector and a scalar, but we map it to the A lambda B.
+
+166
+00:29:58,460 --> 00:30:07,399
+We just multiply second coordinate by lambda. We leave first coordinate or first component of the vector unchecked. Okay.
+
+167
+00:30:11,635 --> 00:30:19,675
+Let's check whether this set is a vector space with respect to given binary operations.
+
+168
+00:30:19,675 --> 00:30:28,995
+Since our addition is usual addition, first five axioms trivially satisfied.
+
+169
+00:30:29,135 --> 00:30:34,576
+Because we know that R and plus dot is a vector space.
+
+170
+00:30:34,715 --> 00:30:40,516
+Our plus is the same as with this binary operation.
+
+171
+00:30:40,516 --> 00:30:44,776
+But we modified our second binary operation.
+
+172
+00:30:44,776 --> 00:30:52,215
+So we just need to check whether the second part of the axiom satisfied or not.
+
+173
+00:30:52,536 --> 00:30:52,635
+Okay.
+
+174
+00:30:56,316 --> 00:31:02,395
+Clearly, R set is closed with respect to this operation also.
+
+175
+00:31:02,895 --> 00:31:09,875
+Because if we pick up a vector in this set and a scalar, arbitrary scalar in real numbers,
+
+176
+00:31:09,875 --> 00:31:15,715
+the result of this operation also an element in this set.
+
+177
+00:31:15,796 --> 00:31:19,395
+Because all these tuples elements in R square.
+
+178
+00:31:19,855 --> 00:31:24,715
+So the given set is closed under scalar multiplication.
+
+179
+00:31:25,056 --> 00:31:27,016
+So our first operation is satisfied.
+
+180
+00:31:27,276 --> 00:31:29,255
+Our first axiom is satisfied.
+
+181
+00:31:29,635 --> 00:31:31,796
+Let's check the second axiom.
+
+182
+00:31:31,796 --> 00:31:36,296
+Second axiom says that for this scalar multiplication.
+
+183
+00:31:36,296 --> 00:31:55,995
+For all R s in R and U in V, R plus s u must be equal to R u plus s u.
+
+184
+00:31:55,995 --> 00:32:01,836
+Let's choose u as a, b.
+
+185
+00:32:02,495 --> 00:32:02,836
+Okay.
+
+186
+00:32:03,195 --> 00:32:05,516
+U is a vector in R square.
+
+187
+00:32:07,675 --> 00:32:10,655
+Let's first compute the first part of this equality.
+
+188
+00:32:10,855 --> 00:32:13,195
+And then we will compute the second part.
+
+189
+00:32:13,596 --> 00:32:16,816
+We will compare these two parts.
+
+190
+00:32:16,816 --> 00:32:29,836
+If these two parts are equal, then we can say that our binary operation satisfy the second axiom for the vector spaces.
+
+191
+00:32:30,836 --> 00:32:38,415
+But if it doesn't satisfy, then we will say that our set is not a vector space with respect to given binary operations.
+
+192
+00:32:38,415 --> 00:32:39,395
+Okay.
+
+193
+00:32:39,395 --> 00:32:43,155
+Let's find the first result of the first part.
+
+194
+00:32:43,996 --> 00:32:52,556
+R plus s times u is equal to R plus s times a, b.
+
+195
+00:32:52,875 --> 00:32:54,235
+Because u is a, b.
+
+196
+00:32:55,195 --> 00:32:57,076
+We choose s, a, b.
+
+197
+00:32:58,855 --> 00:33:07,475
+This is equal to our operation says that leave the first component unchanged and multiply second component by the scalar.
+
+198
+00:33:07,475 --> 00:33:09,715
+Our scalar is R plus s.
+
+199
+00:33:10,195 --> 00:33:15,096
+So here we have a, R plus s times b.
+
+200
+00:33:15,395 --> 00:33:16,675
+This is also a real number.
+
+201
+00:33:17,935 --> 00:33:19,776
+This is our first part.
+
+202
+00:33:20,215 --> 00:33:20,415
+Okay.
+
+203
+00:33:20,735 --> 00:33:21,816
+For the second part,
+
+204
+00:33:22,796 --> 00:33:27,975
+R u plus s u is equal to R times a, b.
+
+205
+00:33:28,596 --> 00:33:32,475
+Because u is a, b plus s times a, b.
+
+206
+00:33:32,475 --> 00:33:43,096
+R times a, b is equal to a, r, b plus r.
+
+207
+00:33:44,096 --> 00:33:47,276
+Because of the rule of our scalar multiplication.
+
+208
+00:33:48,076 --> 00:33:50,415
+And here we have a, s, b.
+
+209
+00:33:50,415 --> 00:33:57,475
+So result of this addition, vector addition, will be addition is usual addition.
+
+210
+00:33:59,235 --> 00:34:01,816
+Just do component wise addition.
+
+211
+00:34:02,296 --> 00:34:03,336
+Here we have 2a.
+
+212
+00:34:03,576 --> 00:34:05,155
+A plus a is 2a.
+
+213
+00:34:05,255 --> 00:34:29,836
+And here we have R plus s.
+
+214
+00:34:09,588 --> 00:34:38,188
+P, the second coordinates, let's say this as 2, this is part 2, second part, so the second components are equal, but in the first component, here we have a, here we have 2a, this means that r plus s times u is not equal to 2a,
+
+215
+00:34:38,188 --> 00:34:47,168
+r u plus su, okay, so this doesn't satisfy for the given set and binary operation.
+
+216
+00:34:52,851 --> 00:35:15,331
+So, R² is not a vector space with respect to, this part is important, with respect to given binary operations.
+
+217
+00:35:20,724 --> 00:35:23,524
+Özellikle,
+
+218
+00:35:28,820 --> 00:35:41,820
+The second axiom for scalar multiplication.
+
+219
+00:35:47,827 --> 00:35:50,867
+Multiplication, doesn't satisfy.
+
+220
+00:35:55,539 --> 00:35:55,860
+Okay.
+
+221
+00:35:58,259 --> 00:36:01,639
+Any question related to this example?
+
+222
+00:36:08,340 --> 00:36:11,780
+First, we give a positive general example for vector spaces.
+
+223
+00:36:12,600 --> 00:36:19,500
+You can easily check all the axioms satisfied for the given example, the general example.
+
+224
+00:36:19,640 --> 00:36:22,240
+But here you have a negative example.
+
+225
+00:36:23,320 --> 00:36:33,280
+We give a set and two binary operations, but we did a small change over the second binary operation.
+
+226
+00:36:33,280 --> 00:36:37,579
+This results a negative answer.
+
+227
+00:36:38,000 --> 00:36:56,079
+Our set is not a vector space with respect to given binary operations, but our set R², R² is a vector space with respect to usual binary operations.
+
+228
+00:37:01,139 --> 00:37:08,139
+Ama burada, bu
+
+229
+00:37:08,139 --> 00:37:10,139
+Binary scalar
+
+230
+00:37:10,139 --> 00:37:12,139
+Multiplication
+
+231
+00:37:12,139 --> 00:37:13,139
+For the
+
+232
+00:37:13,139 --> 00:37:14,139
+Rectors
+
+233
+00:37:14,139 --> 00:37:15,139
+Okay
+
+234
+00:37:16,884 --> 00:37:21,884
+Bir daha örnek vermek için,
+
+235
+00:37:24,884 --> 00:37:36,884
+ve bu örnek vermek için,
+
+236
+00:37:37,884 --> 00:37:44,884
+bu örnek vermek için,
+
+237
+00:37:44,884 --> 00:37:46,884
+çünkü bu örnek vermek için,
+
+238
+00:37:46,884 --> 00:37:48,884
+bu örnek vermek için,
+
+239
+00:37:48,884 --> 00:37:50,884
+ama bu örnek vermek için,
+
+240
+00:37:50,884 --> 00:38:08,884
+bu örnek vermek için,
+
+241
+00:38:08,884 --> 00:38:10,884
+A, B, C, D,
+
+242
+00:38:11,884 --> 00:38:33,884
+ve bu örnek vermek için,
+
+243
+00:38:33,884 --> 00:38:59,884
+bu örnek vermek için,
+
+244
+00:38:59,884 --> 00:39:00,884
+bir örnek vermek için,
+
+245
+00:39:00,884 --> 00:39:22,884
+bu örnek vermek için,
+
+246
+00:39:22,884 --> 00:40:13,884
+bir örnek vermek için,
+
+247
+00:40:09,204 --> 00:40:09,704
+Okay.
+
+248
+00:40:12,024 --> 00:40:21,644
+Then, u plus, u plus v is equal to, let me write here,
+
+249
+00:40:28,371 --> 00:40:50,371
+u plus v is equal to ab plus cd, this is equal to bd. Ok. And v plus u is equal to cd plus ab, this will be db.
+
+250
+00:40:50,371 --> 00:41:00,371
+For some special cases, u plus v is equal to v plus q, if you choose, if...
+
+251
+00:41:04,563 --> 00:41:13,483
+B is equal to D, then U plus V is equal to V plus U.
+
+252
+00:41:15,283 --> 00:41:27,263
+But, if B is different from D, then U plus V is different from V plus U.
+
+253
+00:41:27,263 --> 00:41:40,483
+So, in general, the given set is not committative with respect to the given binary operation.
+
+254
+00:41:40,483 --> 00:41:45,783
+Okay, so this says that V is not a vector space.
+
+255
+00:41:47,324 --> 00:41:54,423
+V plus that is not a vector space.
+
+256
+00:42:11,476 --> 00:42:16,476
+Any question related to this example?
+
+257
+00:42:16,476 --> 00:42:20,476
+This is also a negative example for the vector spaces.
+
+258
+00:42:21,476 --> 00:42:30,476
+I just picked a special axiom for the given operational set,
+
+259
+00:42:30,476 --> 00:42:43,476
+but you need to try all the axioms for the given set and operations.
+
+260
+00:42:44,476 --> 00:42:52,476
+If all the axioms satisfy, then we can say that the given set is a vector space
+
+261
+00:42:52,476 --> 00:42:54,476
+with respect to given binary operations.
+
+262
+00:42:54,476 --> 00:42:59,476
+But at least one axiom doesn't satisfy them.
+
+263
+00:42:59,476 --> 00:43:05,476
+The given set is not a vector space with respect to given binary operations.
+
+264
+00:43:06,476 --> 00:43:10,476
+Okay, we have three important parts for the vector spaces.
+
+265
+00:43:10,476 --> 00:43:16,476
+As I said, with some properties or some restrictions.
+
+266
+00:43:16,476 --> 00:43:19,476
+Here, there is no restriction over our set.
+
+267
+00:43:19,476 --> 00:43:24,476
+The elements of R squared, the elements on the plane.
+
+268
+00:43:24,476 --> 00:43:25,476
+All elements on the plane.
+
+269
+00:43:25,476 --> 00:43:29,476
+There is not any restriction over our set.
+
+270
+00:43:29,476 --> 00:43:37,476
+But we have a modified binary operation.
+
+271
+00:43:38,476 --> 00:43:44,476
+Also, the second part of the vector spaces give binary operations.
+
+272
+00:43:44,476 --> 00:43:50,476
+We need to check carefully our binary operations.
+
+273
+00:44:03,219 --> 00:44:22,279
+Sözücüsü, on presentation, we just show that the given set is not associated with respect to given binary operation, the first given first binary operation. Also, this is an answer for the given example.
+
+274
+00:44:34,228 --> 00:44:45,788
+Let's have another set, P. P is a set of column vectors or matrices with three rows and one column.
+
+275
+00:44:46,588 --> 00:44:55,768
+But here we have a restriction over the components of the vector or matrix. The addition of all components is zero.
+
+276
+00:44:55,768 --> 00:44:57,768
+So let's...
+
+277
+00:45:01,715 --> 00:45:16,875
+Clearly, we can show that this set, with respect to usual binary operations, vektör addition and skater multiplication, is a vektör space.
+
+278
+00:45:17,536 --> 00:45:26,655
+This is because of, I just showed a few properties or axioms for this set.
+
+279
+00:45:26,655 --> 00:45:30,375
+First, this set is closed under addition.
+
+280
+00:45:31,016 --> 00:45:33,355
+Our addition is usual addition.
+
+281
+00:45:33,815 --> 00:45:38,355
+Take two vectors like this operation.
+
+282
+00:45:40,635 --> 00:45:56,516
+That we have vectors u with the given components x1, y1, z1, and v, x2, v, excuse me,
+
+283
+00:45:56,516 --> 00:45:57,536
+y2, y2, z2.
+
+284
+00:45:57,536 --> 00:45:57,596
+Y2, z2.
+
+285
+00:46:04,179 --> 00:46:06,259
+Sorry, let me change this as.
+
+286
+00:46:09,780 --> 00:46:15,260
+bu notation is not compatible to our documents
+
+287
+00:46:15,260 --> 00:46:24,740
+let's say u equal to u1 u2 u3 and v v1 v2 v3
+
+288
+00:46:24,740 --> 00:46:38,900
+okay so u plus v is equal to u1 plus v1 u2 plus v2 and u3 plus v3
+
+289
+00:46:38,900 --> 00:46:51,940
+here u and v elements of p so u1 plus u2 plus u3 is zero and also v1 plus v2 plus v3 is equal to zero
+
+290
+00:46:51,940 --> 00:46:58,260
+so we need to check whether this resulting vector and element in p or not okay
+
+291
+00:47:00,500 --> 00:47:08,500
+so the addition of the all components of u plus we must be zero here we have u1 plus v1
+
+292
+00:47:08,900 --> 00:47:21,940
+plus u2 plus v2 plus u sub 3 plus v sub 3 we can rearrange this addition u1 plus u2 plus u3 because
+
+293
+00:47:24,100 --> 00:47:33,620
+rail numbers are committed if you can change the order of components plus v1 plus v2 plus v3 know that
+
+294
+00:47:33,620 --> 00:47:46,180
+because of u is an element in p this part is zero also this part is zero v also is an element in p so
+
+295
+00:47:46,180 --> 00:47:55,220
+result is zero this says that u plus v is an element in p also you can check this is the closeness of the
+
+296
+00:47:55,220 --> 00:48:04,740
+the first uh binary operation also you can check uh associativity and the identity element of this
+
+297
+00:48:04,740 --> 00:48:13,620
+set is zero zero zero zero zero zero zero is in this set and the addition of the components is zero also
+
+298
+00:48:13,620 --> 00:48:43,620
+the inverse of the inverse of the inverse of the inverse of the inverse of the inverse of the inverse of the inverse of the inverse of the inverse of the inverse of the inverse of the inverse of the inverse of the inverse of the inverse of the inverse of the inverse of the inverse of the inverse of the inverse of the inverse of the inverse of the inverse of the inverse of the inverse of the inverse of the inverse of the inverse of the inverse of the inverse of the inverse of the inverse of the inverse of the inverse of the inverse of the inverse of the inverse of the inverse of the inverse of the inverse of the inverse of the inverse of the inverse of the inverse of the inverse of the inverse of the inverse of the inverse of the inverse of the inverse of the inverse of the inverse of the inverse of the inverse of the inverse of the inverse of the inverse of the inverse of the inverse of the inverse of the inverse of the inverse of the inverse of the inverse of the inverse of the inverse of the inverse of the inverse of the inverse of the inverse of the inverse of the inverse of the inverse
+
+299
+00:48:43,620 --> 00:49:13,620
+So, let's say this is equal to the inverse of the inverse of the inverse of the inverse of the inverse of the inverse of the inverse of the inverse of the inverse of the inverse of the inverse of the inverse of the inverse of the inverse of the inverse of the inverse of the inverse of the inverse of the inverse of the inverse of the inverse of the inverse of the inverse of the inverse of the inverse of the inverse of the inverse of the inverse of the inverse of the inverse of the inverse of the inverse of the inverse of the inverse of the inverse of the inverse of the inverse of the inverse of the inverse of the inverse of the inverse of the inverse of the inverse of the inverse of the inverse of the inverse of the inverse of the inverse of the inverse of the inverse of the inverse of the inverse of the inverse of the inverse of the inverse of the inverse of the inverse of the inverse of the inverse of the inverse of the inverse of the inverse of the inverse of the inverse of the inverse of the inverse of the inverse of the inverse of the inverse of the inverse of the inverse
+
+300
+00:49:13,620 --> 00:49:19,800
+So, let's say this is the initial addition and scalar multiplication P plus that is a vector space.
+
+301
+00:49:27,635 --> 00:49:39,635
+ve a set of polynomials, in general you can take the set of all polynomials of degree at most n
+
+302
+00:49:39,635 --> 00:49:50,635
+that you have P sub n as the set of all polynomials of degree at most n
+
+303
+00:49:50,635 --> 00:50:03,635
+here a sub a elements of real numbers so with respect to polynomial addition and scalar multiplication or a polynomial by a scalar
+
+304
+00:50:03,635 --> 00:50:13,635
+P n is a vector space P sub n plus dot is a vector space also a special case of this set P sub 3
+
+305
+00:50:13,635 --> 00:50:19,635
+the set of polynomials of degree at most 3 is a vector space
+
+306
+00:50:19,635 --> 00:50:27,635
+here polynomial addition is given as that we have two polynomials P x
+
+307
+00:50:31,603 --> 00:50:51,943
+a0 plus a1x plus a2x squared plus a3x cubed and qx b0 plus b1x plus b2x squared plus b3x cubed
+
+308
+00:50:51,943 --> 00:51:16,423
+px plus qx is a3 a0 plus b0 plus a1 plus b1x plus a3 let me write all the components
+
+309
+00:51:16,423 --> 00:51:30,983
+don't want me some components plus a2 plus b2x squared plus a3 plus b3x cubed
+
+310
+00:51:30,983 --> 00:51:38,803
+also you can consider polynomial addition as a vector addition
+
+311
+00:51:38,803 --> 00:51:54,803
+so you can consider p as vector a0 a1 a2 and a3 and q b0 b1 b2 and b3
+
+312
+00:51:54,803 --> 00:51:58,803
+there is a one-to-one correspondence between vectors and polynomials
+
+313
+00:51:58,803 --> 00:52:09,123
+also scalar multiplication this is let this be the addition from p sub 3
+
+314
+00:52:09,123 --> 00:52:19,043
+cross p sub 3 to p sub 3 we take pick up two polynomials in p sub 3 and add these two polynomials
+
+315
+00:52:19,043 --> 00:52:24,803
+result also is a polynomial of degree 3 okay degree atmosphere
+
+316
+00:52:24,803 --> 00:52:34,803
+scalar multiplication the operation from r cross p sub 3 to p sub 3
+
+317
+00:52:36,563 --> 00:52:47,923
+just take a polynomial and a constant let's say lambda lambda p o x maps this two
+
+318
+00:52:47,923 --> 00:53:02,243
+lambda a2 lambda a0 plus lambda a1 x plus lambda a2 x square plus lambda a sub 3 x cube
+
+319
+00:53:04,083 --> 00:53:12,963
+so p sub 3 plus and that is a vector space
+
+320
+00:53:12,963 --> 00:53:40,963
+so p sub 3
+
+321
+00:53:17,715 --> 00:53:27,036
+You can try also, this set together, these binary operations satisfy all the vector space axioms.
+
+322
+00:53:27,036 --> 00:53:28,036
+Okay.
+
+323
+00:53:33,940 --> 00:53:34,539
+Any questions?
+
+324
+00:53:41,076 --> 00:54:07,655
+I have shared your second problem set. This will be the last problem set for this course in this term. So at the end of this term or before the final examination, I will share also the solution of the problem set, but second problem set and the solutions also in Turkish.
+
+325
+00:54:14,547 --> 00:54:38,087
+One more example, general example for vector spaces. In general, the set of all n-by-n matrices with real entries is a vector space with respect to usual matrix addition and scalar multiplication.
+
+326
+00:54:38,087 --> 00:54:59,107
+Okay. As a special case of this vector space, the set of all square matrices, 2-by-2 square matrices, is also a vector space with respect to usual matrix addition and scalar multiplication.
+
+327
+00:55:01,507 --> 00:55:05,107
+This is also a general vector space example.
+
+328
+00:55:08,087 --> 00:55:11,707
+And let's combine our courses today.
+
+329
+00:55:14,267 --> 00:55:16,967
+Let we have a vector space V
+
+330
+00:55:16,967 --> 00:55:21,027
+with the given binary operations.
+
+331
+00:55:39,155 --> 00:55:45,155
+And let u be a nonempty set of vector space v.
+
+332
+00:55:45,155 --> 00:55:46,155
+Okay.
+
+333
+00:55:49,155 --> 00:56:02,155
+If u is a vector space with respect to binary operations,
+
+334
+00:56:09,235 --> 00:56:27,615
+over v, then u is called as a subspace o, subvektör space or subspace o v.
+
+335
+00:56:32,436 --> 00:56:43,436
+But we have a shortcut in order to show whether a subset, non-empty subset is a subspace or not.
+
+336
+00:56:43,436 --> 00:56:55,436
+The first shortcut for this process, let u be a non-empty set of v, and we have two binary operations.
+
+337
+00:56:55,436 --> 00:57:02,436
+The first axiom for this, zero is also in u.
+
+338
+00:57:02,436 --> 00:57:05,436
+Here zero is the additive identity of v.
+
+339
+00:57:05,436 --> 00:57:09,436
+The additive identity of v is also in u.
+
+340
+00:57:09,436 --> 00:57:10,436
+Okay.
+
+341
+00:57:10,436 --> 00:57:16,436
+Second, u is closed under addition, first operation.
+
+342
+00:57:19,603 --> 00:57:36,903
+All U and V in U, just pick up two vectors in U. U plus V is also in U. U is close with respect to first binary operation.
+
+343
+00:57:36,903 --> 00:57:57,783
+OK. And the last property or axiom for subspaces for all R in R, because our vector is a real vector, let me write here, be a real vector space.
+
+344
+00:57:57,783 --> 00:58:12,543
+OK. Our coefficients or constants comes from real numbers. For all real numbers and elements in U, R U is also an element in U.
+
+345
+00:58:12,543 --> 00:58:20,303
+This means that U is close under scalar multiplication of V also.
+
+346
+00:58:20,303 --> 00:58:28,183
+These three conditions are known as subspace axioms.
+
+347
+00:58:28,183 --> 00:58:31,943
+Subspace axioms.
+
+348
+00:58:31,943 --> 00:58:39,103
+Also, we can combine these three axioms in one axiom.
+
+349
+00:58:39,103 --> 00:58:50,344
+U is a subspace of vector space.
+
+350
+00:58:50,343 --> 00:59:13,503
+If and only if for all U, V in U and R S in R, R U plus S, V is also an element in U.
+
+351
+00:59:13,503 --> 00:59:17,903
+Please choose your elements, select your elements carefully.
+
+352
+00:59:17,903 --> 00:59:26,663
+We choose vectors in U in the subset and our constants come from the real field.
+
+353
+00:59:27,103 --> 00:59:31,283
+OK. The resulting, this combination of the elements vectors.
+
+354
+00:59:31,683 --> 00:59:39,703
+Here we have a new vector, R with scale U by R and scale V by S and F with resulting vectors.
+
+355
+00:59:39,703 --> 00:59:44,703
+This resulting vector must be a vector in U.
+
+356
+00:59:44,703 --> 00:59:54,543
+So, we do this operation for all vectors in U and all scalars in real numbers.
+
+357
+00:59:54,543 --> 00:59:55,183
+OK.
+
+358
+00:59:55,183 --> 01:00:06,743
+By using this property, you can also, you can obtain these three axioms.
+
+359
+01:00:06,743 --> 01:00:11,743
+If you choose R and S as zero, then zero is an element in U.
+
+360
+01:00:11,743 --> 01:00:19,743
+If you choose R and S as one, then U plus V is an element in U.
+
+361
+01:00:19,743 --> 01:00:30,743
+And if you choose S as zero and R and U, any arbitrary scalar vector respectively, are U in U.
+
+362
+01:00:30,743 --> 01:00:38,743
+So, by using this axiom, you can obtain all these three axioms.
+
+363
+01:00:38,743 --> 01:00:46,743
+Also, by using these three axioms or just this axiom, you can obtain all the ten vector space axioms.
+
+364
+01:00:46,743 --> 01:00:53,743
+Let's give some examples for the vector space, subspaces.
+
+365
+01:00:53,743 --> 01:01:01,743
+Before giving examples related to subspaces, I want to leave two homeworks to you.
+
+366
+01:01:01,743 --> 01:01:04,743
+The first one is the first one.
+
+367
+01:01:04,743 --> 01:01:08,743
+The first one is the first one is the first one.
+
+368
+01:01:08,743 --> 01:01:10,743
+The first one is the first one is the first one is the first one.
+
+369
+01:01:10,743 --> 01:01:12,743
+The first one is the first one is the first one is the first one is the first one.
+
+370
+01:01:12,743 --> 01:01:13,743
+The first one is the first one is the first one is the first one is the first one is the first one is the first one is the first one.
+
+371
+01:01:10,195 --> 01:01:27,275
+Let v1 be the set x x square, where x is any real number, this is a subset of r square.
+
+372
+01:01:34,387 --> 01:01:44,587
+Is B1 a subspace of R2?
+
+373
+01:01:45,587 --> 01:01:46,467
+Okay.
+
+374
+01:01:47,208 --> 01:01:51,567
+Here our binary operations are operations in the R2.
+
+375
+01:01:51,567 --> 01:02:00,288
+Also, number 2 is B2.
+
+376
+01:02:02,867 --> 01:02:08,668
+Here we have X and MxPly plus B.
+
+377
+01:02:10,148 --> 01:02:17,447
+Here X and B real numbers.
+
+378
+01:02:17,447 --> 01:02:23,208
+But X is an indeterminate, can take all the values of real numbers.
+
+379
+01:02:23,768 --> 01:02:23,947
+Okay.
+
+380
+01:02:25,288 --> 01:02:27,887
+Also, this is a subset of R2.
+
+381
+01:02:38,324 --> 01:02:43,644
+İlk örnek, problem, o
+
+382
+01:02:46,739 --> 01:02:55,659
+Is the set of all points on the parabola y equal to x squared?
+
+383
+01:02:55,659 --> 01:03:22,779
+We ask you, is the points on the parabola y equal to x squared are a subset of the Cartesian coordinates or are a subset of the, we want to check whether the points on parabola
+
+384
+01:03:25,659 --> 01:03:30,659
+a subspace of the Cartesian coordinates or not?
+
+385
+01:03:30,659 --> 01:03:50,659
+Okay, the first question related to points on a parabola and the second question says that or asked to you, let's choose an arbitrary line y equal to mx plus b.
+
+386
+01:03:50,659 --> 01:03:59,659
+The points on a line, all points on a line form a subspace or vector space or not.
+
+387
+01:03:59,659 --> 01:04:11,659
+Also, this will be a subspace if points on a line form a vector space, then this vector space will be a subspace or r squared.
+
+388
+01:04:11,659 --> 01:04:24,659
+We want to, my question is that check whether the points on a line or a parabola form a subspace or r squared or not.
+
+389
+01:04:24,659 --> 01:04:46,659
+Okay, you can, for negative case just give a counter example, but for the positive case you need to, you need to show that subspace axioms, subspace axioms satisfied for these two sets.
+
+390
+01:04:46,659 --> 01:04:51,659
+Okay, that give our examples.
+
+391
+01:04:51,659 --> 01:05:07,659
+Our first example, we take a subset of the set of all two by two square matrices.
+
+392
+01:05:07,659 --> 01:05:17,659
+But we have a restriction over the entries of this matrix.
+
+393
+01:05:17,659 --> 01:05:24,659
+Let's say here a11, a12, a21 and a22.
+
+394
+01:05:24,659 --> 01:05:31,659
+A22 entry of the matrix is equal to additional the first row.
+
+395
+01:05:31,659 --> 01:05:33,659
+Okay, this is our restriction.
+
+396
+01:05:33,659 --> 01:05:42,659
+Let's check whether this set is a subspace of m sub two by two r or not.
+
+397
+01:05:42,659 --> 01:05:54,659
+Okay, to do this, let's pick up two arbitrary matrices in B at a, b, a, b, 0, c.
+
+398
+01:05:54,659 --> 01:06:05,659
+Here c is equal to a plus b because a is an element in B and c, x, y, 0, z.
+
+399
+01:06:05,659 --> 01:06:20,659
+Here z is equal to x plus y and, sorry, you choose two vectors, excuse me, two matrices in B and...
+
+400
+01:06:23,795 --> 01:06:24,615
+Ah,
+
+401
+01:06:27,891 --> 01:06:43,731
+I need to put here, for all, for all A and C in B and R S in R, because of, and here also we have for all R S in R,
+
+402
+01:06:46,731 --> 01:06:49,451
+R A plus S C,
+
+403
+01:06:55,507 --> 01:06:58,927
+Is that element in B or not? We need to check this.
+
+404
+01:07:04,115 --> 01:07:20,615
+Ra is equal to Ra, Rb, 0, and Rc, and Sc is equal to Sx, Sy, 0, and Sz.
+
+405
+01:07:20,615 --> 01:07:41,675
+So Ra plus Sc is equal to Ra plus Sx, Rb plus Sy, 0, 0 plus 0 is 0, and Rc plus Sc.
+
+406
+01:07:41,675 --> 01:07:53,096
+Here we need to show that the addition of first row is equal to A22 components of the resulting matrix.
+
+407
+01:07:53,096 --> 01:08:12,735
+Ra plus Sx plus Rb plus Sy is equal to R times A plus B plus S times X plus Y.
+
+408
+01:08:12,735 --> 01:08:22,296
+So we know that this is equal to Z, so we know that this is equal to Z, so this is equal to Rc plus Sx.
+
+409
+01:08:22,855 --> 01:08:28,315
+This shows that this combination is an element in B.
+
+410
+01:08:29,036 --> 01:08:32,296
+So B is a subspace O.
+
+411
+01:08:37,908 --> 01:08:45,868
+subvektör space O, m sub 2 by 2 R.
+
+412
+01:08:45,868 --> 01:08:47,588
+Okay, any question?
+
+413
+01:09:05,076 --> 01:09:27,576
+Another example for subspaces. On the Cartesian coordinate system, the set A is the set of points on the x line. Ok, all the points on the x line.
+
+414
+01:09:32,884 --> 01:09:33,884
+Çünkü,
+
+415
+01:09:33,884 --> 01:09:35,923
+2nd komponent
+
+416
+01:09:35,923 --> 01:09:37,644
+or the vector is 0.
+
+417
+01:09:37,644 --> 01:09:38,844
+This means that
+
+418
+01:09:38,844 --> 01:09:40,844
+the set of all vectors
+
+419
+01:09:44,844 --> 01:09:46,844
+all points on the x-line.
+
+420
+01:09:46,844 --> 01:09:47,844
+OK.
+
+421
+01:09:47,844 --> 01:09:49,844
+Let's check whether this
+
+422
+01:09:49,844 --> 01:09:51,844
+line is a subspace
+
+423
+01:09:51,844 --> 01:09:53,243
+of r-square or not.
+
+424
+01:09:53,243 --> 01:09:53,844
+OK.
+
+425
+01:09:53,844 --> 01:09:56,444
+Take two vectors in A
+
+426
+01:09:56,444 --> 01:09:59,444
+let's say u equal to
+
+427
+01:09:59,444 --> 01:10:01,644
+u 1 0
+
+428
+01:10:01,644 --> 01:10:07,404
+and v for all
+
+429
+01:10:07,404 --> 01:10:11,404
+v 1 0 and in A
+
+430
+01:10:11,404 --> 01:10:15,203
+and r in R.
+
+431
+01:10:15,203 --> 01:10:19,083
+Let's use first three axioms
+
+432
+01:10:19,083 --> 01:10:21,003
+for the subspaces.
+
+433
+01:10:21,003 --> 01:10:25,404
+Firstly, 0 0 is a vector in this set
+
+434
+01:10:25,404 --> 01:10:30,043
+because 0 0 is also a point
+
+435
+01:10:30,043 --> 01:10:31,804
+on the x-line.
+
+436
+01:10:31,804 --> 01:10:34,804
+OK. 0 0 is an element of the A.
+
+437
+01:10:34,804 --> 01:10:35,804
+Second,
+
+438
+01:10:35,804 --> 01:10:38,804
+u plus v is equal to
+
+439
+01:10:38,804 --> 01:10:43,604
+u 1 0
+
+440
+01:10:43,604 --> 01:10:45,604
+plus v 1 0.
+
+441
+01:10:45,604 --> 01:10:47,604
+This is a cube.
+
+442
+01:10:47,604 --> 01:10:49,804
+u 1 plus v 1 0.
+
+443
+01:10:49,804 --> 01:10:52,564
+So this is an element in A
+
+444
+01:10:52,564 --> 01:10:55,564
+because the first component is
+
+445
+01:10:55,564 --> 01:10:58,564
+the second component is 0.
+
+446
+01:10:58,564 --> 01:11:01,564
+So the formal elements of A
+
+447
+01:11:01,564 --> 01:11:04,564
+this is just the formal elements of A.
+
+448
+01:11:04,564 --> 01:11:13,323
+The third axiom is related to scalar multiplication.
+
+449
+01:11:13,323 --> 01:11:16,323
+R times u is equal to
+
+450
+01:11:16,323 --> 01:11:18,323
+r times u 1 0.
+
+451
+01:11:18,323 --> 01:11:20,123
+This is a cube.
+
+452
+01:11:20,123 --> 01:11:21,323
+r u 1 0.
+
+453
+01:11:21,323 --> 01:11:23,323
+So also this is an element in A
+
+454
+01:11:23,323 --> 01:11:28,083
+because a point on the x-line.
+
+455
+01:11:28,083 --> 01:11:32,083
+So A is a subspace O.
+
+456
+01:11:32,083 --> 01:11:34,083
+and the third axiom is equal to
+
+457
+01:11:34,083 --> 01:11:34,844
+the third axiom.
+
+458
+01:11:34,844 --> 01:11:58,844
+So this is a cube.
+
+459
+01:11:37,332 --> 01:11:50,892
+R². Also, you can check for arbitrary Rs in R, R u plus S v in A.
+
+460
+01:11:55,155 --> 01:12:01,655
+Also, you can use this method to show an even set is a subspace of R².
+
+461
+01:12:10,163 --> 01:12:13,643
+I think this is the last example of this presentation.
+
+462
+01:12:13,643 --> 01:12:14,003
+Okay.
+
+463
+01:12:16,764 --> 01:12:27,663
+We have a subset of RQ, but with a restriction, the first component is positive or zero.
+
+464
+01:12:28,203 --> 01:12:29,983
+What do you think about this set?
+
+465
+01:12:30,863 --> 01:12:33,844
+Is this a subspace of RQ problem?
+
+466
+01:12:44,275 --> 01:12:51,775
+For the positive answer, you need to prove the given set is a subspace.
+
+467
+01:12:52,255 --> 01:13:01,255
+Okay, you need to prove the given set together with pi-re-operations satisfy subspace axioms or vector space axioms.
+
+468
+01:13:01,715 --> 01:13:06,855
+But for the negative answer, just give a counter example.
+
+469
+01:13:07,055 --> 01:13:11,996
+A counter example is enough to say that the given set is not a vector space.
+
+470
+01:13:11,996 --> 01:13:18,935
+Here, the first component of our vectors is positive or zero.
+
+471
+01:13:20,376 --> 01:13:22,996
+So if we pick up...
+
+472
+01:13:26,515 --> 01:13:44,175
+A negative, let lambda be a real number, but lambda, sorry, such that lambda is negative.
+
+473
+01:13:45,275 --> 01:13:45,576
+Okay.
+
+474
+01:13:52,724 --> 01:14:16,744
+Then, Lambda times X, pick up, then, for U equal to ABC, here A is greater or equal to 0, Lambda times U is equal to Lambda A, Lambda B, and Lambda C.
+
+475
+01:14:16,744 --> 01:14:25,184
+We know that A is positive, Lambda is negative, so Lambda A is negative.
+
+476
+01:14:26,284 --> 01:14:31,203
+This says that the resulting factor is not an element in W.
+
+477
+01:14:31,543 --> 01:14:41,824
+So W is not closed under scalar multiplication.
+
+478
+01:14:48,148 --> 01:14:49,148
+Multiplication.
+
+479
+01:14:50,467 --> 01:14:51,028
+Hence,
+
+480
+01:14:53,028 --> 01:14:53,668
+W
+
+481
+01:14:53,668 --> 01:14:55,568
+is not
+
+482
+01:14:55,568 --> 01:14:57,828
+a subspace O.
+
+483
+01:15:14,195 --> 01:15:16,296
+O, R3.
+
+484
+01:15:17,095 --> 01:15:19,635
+This is a negative example for subspaces.
+
+485
+01:15:20,155 --> 01:15:20,775
+Any question?
+
+486
+01:15:26,931 --> 01:15:27,871
+[öğrenci], bu yer.
+
+487
+01:15:34,707 --> 01:15:35,707
+Can you hear me?
+
+488
+01:15:41,235 --> 01:15:42,355
+Do you have any questions?
