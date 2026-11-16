@@ -1,0 +1,2911 @@
+1
+00:03:18,931 --> 00:03:20,931
+Evet, günaydın arkadaşlar.
+
+2
+00:03:23,731 --> 00:03:27,231
+Biraz katılım için bekliyorum da, şu anda sadece
+
+3
+00:03:28,131 --> 00:03:29,731
+3 kişi var sınıfta.
+
+4
+00:03:39,027 --> 00:03:40,027
+İki anda da
+
+5
+00:03:41,828 --> 00:03:42,627
+Aşağıda
+
+6
+00:04:06,228 --> 00:04:16,468
+Bugünkü konumuz, bildiğiniz gibi, çarşamba resmi tatil olması nedeniyle dersimizi yapamamıştık.
+
+7
+00:04:16,468 --> 00:04:25,987
+Sıralama algoritmalarına bakacağız. Bundan önceki haftada hemdizi işlemleri, özellikle listelerde arama eklemesinden onları tartıştık tekrar.
+
+8
+00:04:26,259 --> 00:04:49,259
+arama içinde daha efektif yollar özellikle de girmenin özelliklerine bağlı olarak sıralı olma durumunu kullanarak onu bir avantaja çevirerek daha iyi aramalar nasıl yaparız bunları tartıştık ve nihayetinde binary search algoritmasının özellikle arama konusunda efektif olduğundan bahsettik.
+
+9
+00:04:49,651 --> 00:05:17,651
+Tabii şimdi çok erken ama özellikle algoritma analizi seviyesine geldiğinizde ve bunun ne kadar sıkı bir alt limit olduğunu analizini yapıp tartıştığınızda gerçekten de bir sıralı dizide arama yaparken şu andaki asimptotik inebileceğimiz en alt limitin logaritma iki tabanında n mertebesinde olduğunu göreceksiniz, ispatlayacaksınız. Şu anda biz binary search'te de çok...
+
+10
+00:05:17,651 --> 00:05:37,951
+hızlı bir şekilde login mertebesinde olduğundan bahsetmiştik. Bu nedenle aslında binarySearch gerçekten de şu ana kadar en azından von Neumann mimarisinde sıralı algoritma şeklinde tasarladığımız çözümlerde olabilecek en efektif uygulamalardan bir tanesi.
+
+11
+00:05:38,303 --> 00:05:57,303
+Peki, şimdi gelelim yeni bir probleme. Yine bilgisayar bilimlerinde çok sıklıkla kullanılan, karşılaşılan ve pek çok çözümün içinde, pek çok algoritmanın içinde mutlaka yapılması gereken ya da kullanılması gereken bir çözüm. Buna sıralama adını veriyoruz.
+
+12
+00:05:57,303 --> 00:06:05,303
+Her şeyden önce bir problemin formal tanımını, yani resmi tanımını yapmakta fayda var.
+
+13
+00:06:06,100 --> 00:06:32,780
+sıralama deyince ne anlıyoruz? Yani bir şeyleri böyle masanın üzerinde sıraya da dizebilirsiniz. Bu yeterli midir? Hayır. Bizim için özellikle bilgisayar bilimlerindeki problem açısından sıralamaya baktığımızda şöyle bir tanım var. Aynı türden nesnelerden oluşan bir koleksiyonu yani bizim için şu anda bu bir dizi olabilir ve bir sayı dizisi olabilir ya da bir karakter dizisi olabilir.
+
+14
+00:06:33,055 --> 00:06:49,995
+Birbirini büyüklük ya da küçüklük açısından, ikisi de aynı kavrama, farklı bakış açıları, büyüklük veya küçüklük açısından mantıksal bir düzene sokmak, kendi içinde belirli bir mantığı takip eden bir sıra içinde olmasını sağlamak eylemi.
+
+15
+00:06:49,995 --> 00:06:54,576
+Düzen içinde olmasını sağlamak eylemi. Bunun için de şöyle.
+
+16
+00:06:55,668 --> 00:07:08,988
+Hemen gazerimizi de alalım. Bir girdi tanımlıyoruz. Aynı türden nesnelerden oluşacak. Dediğim gibi bu bir dizi olabilir. A1'den A1'e kadar giden bir dizi. Bizim için bir girdi olabilir sıralama probleminde.
+
+17
+00:07:09,747 --> 00:07:37,247
+Çıktıya geldiğimizde, şöyle bir çıktı üreteceğiz. İşte A1 üstü, A2 üstü, AN üstü şeklinde yeni bir dizi oluşturacağız. Ve bu dizi, girdinin bir permütasyonu olacak. Bir permütasyonu olması ne demek? Bütün elemanlar aynı olacak, bütün elemanlar A'dan girdiden gelecek ve bununla beraber başka herhangi bir yerden girdi olmayacak.
+
+18
+00:07:37,747 --> 00:07:57,747
+Bununla birlikte her bir eleman yine çıktığıda da aynı şekilde, aynı sayıda, aynı tekrarda yer alacak. Buna biz permütasyon, yani farklı bir dizilimi adını veriyoruz. Fakat bu öyle bir permütasyonu olacak ki girdinin şu koşulu, yani şuradaki mantıksal düzeni sağlayacak. Baktığımızda ne görüyoruz?
+
+19
+00:08:05,747 --> 00:08:12,887
+eleman kendisinden sonra gelen elemandan daha küçük olacak veya ona eşit olacak.
+
+20
+00:08:13,300 --> 00:08:38,899
+Böyle bir dizilime sahip permütasyonu yakaladığımızda, bu girdi için sıralama problemini çözen çıktıyı üretmiş oluruz. Yani bir algoritma tasarlarken işte girdi işlem çıktı diziliminde biz bu permütasyonu sağlayan çözümü oluşturduğumuzda sıralama algoritması gerçekleştirmiş oluyoruz. Şimdi çok basit bir örnekle başlayalım.
+
+21
+00:08:39,700 --> 00:09:06,820
+Şimdi tahtaya yazıyorum şu anda, sınıfta. Girdiğimiz şöyle bir dizi olsun. 8, 2, siyah 4, kırmızı 4, gri 4, 9, 3, 6. Ve ben buradan bir çıktı üretmek istiyorum. Şimdi çıktının şu şartı sağlaması lazım. Bakalım birinci çıktığı üretilen. 2, 3, siyah 4, kırmızı 4, gri 4, 6, 8, 9.
+
+22
+00:09:07,572 --> 00:09:31,451
+Buradaki bütün elemanlar Girdi'den geliyor. Girdi'deki tekrar sayıları birebir aynı ve Girdi dışında herhangi bir yerden şey almıyor, farklı bir değer almamış. O zaman bu gerçekten de Girdi'nin bir permutasyonudur ve benim istediğim özel şartı mantıksal düzeni de sağlamaktadır. O zaman bu bir sıralanmış çıktıdır. Buradaki işi yapan algoritma doğru çalışmış.
+
+23
+00:09:32,244 --> 00:09:59,824
+Peki, başka bir çıktı üretelim. Yine 2, 3 ile başladık ama bu sefer 4'lerin yani eşit olan değerlerin renkleri sırası değişti. Kırmızı 4, gri 4, siyah 4, sonra da 6, 8, 9. Peki bunlar doğru mu? Yine permütasyonu sağlıyor mu? Evet, sağlıyor. Bütün şartlarını sağlıyor. Bu koşulu sağlıyor mu? Evet, bunu da sağlıyor. O zaman bu da geçerli bir çıktıdır. Yani bu da bir sıralanmış.
+
+24
+00:10:00,000 --> 00:10:24,539
+Çıktıdır. Son örneğe baktığımızda da yine 2, 3, bu seferde kırmızı 4, siyah 4, gri 4 şeklinde farklı bir 4 dizilim kombinasyonu görüyoruz. Sonrasında yine 6, 8, 9 ile devam ediyor. Bu da doğru, bu da permutasyon ve bu koşulu da sağlıyor. O zaman bu da çıktı. Peki ne fark etti bunların arasında? Tekrar eden elemanların dizilimleri farklı.
+
+25
+00:10:25,299 --> 00:10:42,119
+Gerçek girdi de, orijinal girdi de, siyah dört, kırmızı dört, gri dört şeklindeki dizilim çıktı da, aynen de yer alabilir, farklı kombinasyonlarda da yer alabilir. Yanlış mı? Hayır, hepsi doğru. Hepsi doğru çıktılar.
+
+26
+00:10:42,644 --> 00:11:06,084
+Dediğim gibi sıralama algoritmaları pek çok problemin çözümünde kullanılıyor. İşte işlemlerin değişlenmesinde, Transaction Processing dediğimiz, yani işlerin sıraya edilmesinde, birçok kombinatoryal optimizasyon probleminin çözülmesinde, bunları ileride daha çok göreceksiniz şu anda erken. Yine farklı bilim dallarındaki problemleri bilgisayar bilimleri yöntemleriyle çözerken.
+
+27
+00:11:06,484 --> 00:11:16,084
+Astrofiziktir, moleküler, dinamik, dil bilim, gen bilim, hava tahminlemesi gibi pek çok alanda da sıralama algoritmaları sıklıkla kullanılıyor.
+
+28
+00:11:16,084 --> 00:11:24,884
+Ve yine işin ilginç taraflarından bir tanesi, 20. yüzyılın, yani geride bıraktığımız yüzyılın, 1900'lerin diyelim,
+
+29
+00:11:24,884 --> 00:11:34,484
+yapılan oylamalarla seçilen en iyi 10 algoritmasından bir tanesi arkadaşlar, bir sıralama algoritması ve bunun da adı Quicksort.
+
+30
+00:11:34,484 --> 00:12:01,484
+iiii xortu da seneye veri yapıları dersinde daha detaylı bir şekilde inceleyeceğiz. Tabii ki bizim için sıralaması değil, nasıl çalıştığı, nasıl bir algoritma tasarımına sahip olduğu önemli olacak. Yani sıralama deyip geçmeyin. Gördüğünüz gibi listelerde ilk 10'a girebilen çözümler hala popüler olarak da kullanılıyor. Peki, geçemiyoruz.
+
+31
+00:12:02,032 --> 00:12:03,032
+Geçtik.
+
+32
+00:12:03,032 --> 00:12:04,032
+Hmm.
+
+33
+00:12:04,032 --> 00:12:14,032
+Şimdi elimde bir sürü sıralama algoritması olabilir. Kaldı ki literatürde de pek çok sıralama algoritması var.
+
+34
+00:12:14,032 --> 00:12:16,031
+Niye bu kadar farklı işleminler var?
+
+35
+00:12:16,031 --> 00:12:24,031
+Her birinin belli bir kullanım amacı olabilir ya da belli bir özelliği bizim için uygun olabilir.
+
+36
+00:12:24,467 --> 00:12:29,967
+O yüzden de farklı farklı tabii ki aynı işi yapan farklı algoritmalar geliştirilmiş durumda.
+
+37
+00:12:29,967 --> 00:12:38,967
+Peki ben sıralama problemini çözen algoritmaları nasıl karşılaştıracağım ya da bunların değerlendirmesini ya da değerlemesini nasıl yapacağım?
+
+38
+00:12:39,283 --> 00:13:03,323
+Bunun için üç tane temel başlığımız var. Birincisi Performance, ikincisi ekstra bellek alanı yani ekstra yer kullanımı ve üçüncüsü de tekrar eden değerleri nasıl ele aldı. Tekrar eden değerleri için buraya geri geleyim. Şuradaki gördüğünüz hani dörtler tekrar ediyordu. Siyah dört, kırmızı dört, gri dört. Acaba gerçekten bu çıktı bu şekildesi bu sırada mı olacak?
+
+39
+00:13:03,923 --> 00:13:06,223
+Yoksa karışık sıralarda oluşabilir mi?
+
+40
+00:13:06,223 --> 00:13:08,823
+Bunun garanti edip etmemesi bir algoritmanın
+
+41
+00:13:08,823 --> 00:13:10,323
+yine değerlendirmede bir
+
+42
+00:13:10,843 --> 00:13:12,883
+bizim için önemli nokta olabilir.
+
+43
+00:13:13,235 --> 00:13:38,836
+Şimdi, önce performansa bakalım. Performans ne demek? Tam öz Türkçesiyle başarım demek. Bu, bir algoritmanın en kaba tabiriyle çalışma zamanını ifade ediyor. Çalışma zamanı karmaşıklığı, hani büyük o notasyonu zaman zaman kullandık, bizim için olabilecek en kötü durumdaki toplam işlem sayısını gösteriyordu ya da toplam çalışma zamanı gereksinimini gösteriyordu.
+
+44
+00:13:41,235 --> 00:13:50,115
+İlk olarak ne kadar hızlı çalıştığıyla değerlendirdi. Bu da gerektirdiği, gereksinim duyduğu çalışma zamanıyla ifade edilir.
+
+45
+00:13:50,451 --> 00:13:54,291
+Peki ben bunu çalışma zamanının ne cinsinden ifade edeceğim?
+
+46
+00:13:54,291 --> 00:14:04,011
+Bir sıralama algoritması genellikle çok büyük çoğunluğu elemanlar aldığı girdi elemanlarını birbiriyle karşılaştırma yaparak
+
+47
+00:14:04,011 --> 00:14:13,491
+yani lojik operasyonlar, compare'ler küçüktür büyüktür işlemleri yaparak karar verip işlemlerini gerçekleştirir, adımlarını gerçekleştirir.
+
+48
+00:14:13,779 --> 00:14:25,779
+Bu yüzden de bir algoritmanın, sıralama algoritmasının performansını değerlendirirken ilk nokta, en önemli husus bizim için bu algoritmanın yaptığı karşılaştırma sayısı olacaktır.
+
+49
+00:14:25,779 --> 00:14:34,779
+Ve bununla birlikte doğal olarak girdi üzerinde bir sürü yer değiştirmeler yapacak. Küçükse başı al, büyükse sonu al gibi.
+
+50
+00:14:36,244 --> 00:15:01,244
+O zaman karşılaştırma sayısı kadar bu algoritmanın yaptığı değiştirme sayısı da bizim için önemli. Yani bir algoritmanın çalışma zamanı ve performansı, algoritmanın gerçekleştirdiği toplam karşılaştırma sayısı ve bununla beraber dizi üzerinde yaptığı toplam yer değiştirme sayısı cinsinden ifade edilmelidir.
+
+51
+00:15:03,700 --> 00:15:14,379
+adil bir karşılaştırma gerçekleştirmiş oluruz. Eğer algoritmamız
+
+52
+00:15:14,707 --> 00:15:27,707
+Değiştirme yapmıyorsa ne yapacağız? Ya da karşılaştırma yapmayan bir algoritmaysa ne yapacağız? Böyle algoritmalar da var. Yine ileride bu ileriki derslerde bunların üzerinden de tekniklerinden de geçeceğiz şu anda erken.
+
+53
+00:15:27,707 --> 00:15:42,707
+Burada da dizi erişim sayıları yani dizide kaç kere erişti gibi diziye kaç kere erişim sağladı, kaç kere dizi işlemi yaptı gibi bir işlem sayısı karmaşıklığı bizim için çalışma zamanı.
+
+54
+00:15:42,707 --> 00:15:47,307
+ve buna bağlı olarak da performansın değerlendirilmesini sağlayacak.
+
+55
+00:15:48,347 --> 00:15:52,947
+Evet, yani karşılaştırma ve değiştirme sayısı bizim için çok önemli.
+
+56
+00:15:52,947 --> 00:15:55,767
+Bunun yanında iki, ekstra bellek kullanımı.
+
+57
+00:15:56,267 --> 00:16:03,947
+Bir, sıralama algoritması çalışırken sonucu üretmek için ne kadar ekstra alana ihtiyaç duyuyor.
+
+58
+00:16:04,179 --> 00:16:32,019
+Bunun içinde iki tane farklı yaklaşım vardır. Birincisi, yerinde sıralama yapan algoritmalar. Yani in place sort dediğimiz çözüm. Burada tabii ki her zaman için küçük bir az sayıda fonksiyon çağrı yığını, yığıtı ya da steki, geriye doğru dönmemizi sağlayan bir mekanizma, bir hatırlama mekanizması veya sabit sayıda geçici
+
+59
+00:16:32,179 --> 00:17:00,179
+hani depolama amaçlı kullanılan sabit sayıda değişken olabilir. Onları saymıyoruz. Hani iki tane elemanı dizide yer değiştireceksiniz. Bir tane mutlaka en azından bir tane geçici bir bellek alanına ihtiyacınız var değil mi? Aa hocam ekstra bellek kullandı demeyin. Yani sabit sayıda ekstra alan kullanabilirsiniz. Bu birinci yöntem. In-place sort dediğimiz yerinde sıralama algoritmaları. Bunlar ekstra alan ihtiyacınız.
+
+60
+00:17:00,179 --> 00:17:23,219
+ihtiyacı duymazlar veya duydukları ekstra alan ihtiyacı sabittir. İkinci yaklaşımsa harici bellek alanı kullanarak sıralama yani out of place sort yapan algoritmalar vardır. Bunlar da girdi kadar bir alanı çıktığı üretmek için ya da çıktığı oluşturmak üzere kullanmak için ihtiyaç duyarlar.
+
+61
+00:17:23,731 --> 00:17:46,132
+Buna da AutoPlayStore dedik. Daha böyle aklımızda yer kalırsın diye bir örnek düşünelim. İşte bir tane kitap rafınız var. Orada böyle n tane kitabınız var. Şimdi siz rafttaki kitapları yazarlarına göre, a'dan z'ye, yazarların isimlerine göre a'dan z'ye doğru sıralamak istiyorsunuz. Bir yöntem geliştireceksiniz.
+
+62
+00:17:46,483 --> 00:18:05,923
+Odanız çok dolu, hiç yer yok. O yüzden oradaki kitapları alıp da bir yere yığabileceğiniz, koyabileceğiniz bir alanınız yok. O zaman yerinde sıralama yaptık sonundasınız. En fazla ne kadar ekstra alan kullanabilirsiniz? İşte iki tane eliniz var. Birini zaten çekip kullanacaksınız. Bir tane eliniz var. Tek bir elde tutabileceğiniz bir kitap var.
+
+63
+00:18:06,228 --> 00:18:13,907
+Sabit sayıda değişken dediğim şey bu. O zaman ne yapacağım? Ben orada mesela bir kitabı bulacağım. Diyeceğim ki, aa tamam bu en küçük kitap.
+
+64
+00:18:13,907 --> 00:18:22,347
+En küçük kitaptaki mesela yeri, yerdeki kitabı çıkartıp elimde depolarken onu çıkartıp yerinde birinci sıraya koyacağım.
+
+65
+00:18:22,347 --> 00:18:26,708
+Elimdeki kitabı da elimde durmasın diye boşalan yere geri koyacağım gibi.
+
+66
+00:18:27,827 --> 00:18:55,827
+Ama harici bellek alanı, mesela odanız boş, kitap rafında da şöyle bir hareketle hepsini indirdiğiniz yere, bütün en tane kitap, en kitaplık yer kaplıyor mesela. Ondan sonra oradan belli bir yöntemle, bakayım önce A'yı alayım dediniz, A'yı buldunuz, yerine koydunuz. B'yi alayım dediniz, B'yi buldunuz, yerine koydunuz gibi bir sırayla devam ettiniz. İşte bu da harici bellek alanı kullanarak sıralama. Yani AutoPlay Store da iyi bir sıralama.
+
+67
+00:18:55,827 --> 00:19:22,647
+Örnek olabilir. Üçüncü değerlendirme kriterimiz, tekrar eden değerler. Burada da sıralama algoritmaları iki farklı şekilde davranabilir. Bunlardan birisi istikrarlı algoritmalar, biri de istikrarsız algoritmalar. İstikrar, istikrarsızlık biraz saçma, biraz Türkçesi garip gibi geliyor olabilir, haklısınız. Bunların İngilizce kavramları biraz daha mantıklı.
+
+68
+00:19:23,056 --> 00:19:44,816
+Stablesort ve Unstablesort algoritmaları var. Stablesort algoritmaları, aynı şuradaki örnekte olduğu gibi, girdi de tekrar eden değerleri, buradaki sırayı koruyarak çıktığa taşırlar. Yani siyah, kırmızı, gri şeklinde kodladım ya ben bunu, özellikle gözüksün diye.
+
+69
+00:19:45,076 --> 00:20:00,276
+Burada da çıktı, aynen siyah, kırmızı, gri şeklinde oluşur. Bu ne demektir? Mesela tekrar eden birinci eleman, çıktı da da en başta yer alır. Tekrar eden ikinci eleman, çıktı da ikinci sırada yer alır. Tekrar eden üçüncü eleman, çıktı da üçüncü sırada yer alır.
+
+70
+00:20:00,276 --> 00:20:08,240
+Bu gibi algoritmalara, yani bunu garanti eden, bu şekilde çıktı üreten algoritmalara StableSort denir.
+
+71
+00:20:08,240 --> 00:20:31,240
+Bunu yapamayanlara, yani böyle bir yer garantisi vermiyorum. Ben sadece değerlerin sıralanmasını sağlarım. Yani ben böyle kırmızı gri, yani işte ikinci, üçüncü, birinci ya da ikinci, birinci, üçüncü şeklinde tekrar edenleri koyarım çık diye diyorsa bir algoritma, bu da bir unstable algoritmadır.
+
+72
+00:20:31,604 --> 00:20:34,604
+Peki biz bir stable algoritmaya niye ihtiyaç duyabiliriz?
+
+73
+00:20:34,604 --> 00:20:37,604
+İşte hani gerçek hayat uygulaması gibi düşünün.
+
+74
+00:20:37,604 --> 00:20:41,604
+Şurada bir kuyruk var.
+
+75
+00:20:41,604 --> 00:20:45,604
+İnsanlar kuyruğa giriyor. Bunlar da insanların yaşları olsun.
+
+76
+00:20:45,604 --> 00:20:49,604
+Ve biz diyoruz ki önce en küçüklükten başlamak istiyoruz.
+
+77
+00:20:49,604 --> 00:20:53,604
+E tamam önce en küçük olan 2 yaşında bir arkadaş var.
+
+78
+00:20:53,604 --> 00:20:55,604
+Bu buraya geldi. Hadi bunları 20 yaş diye şey yapıyorum.
+
+79
+00:20:55,604 --> 00:20:59,604
+20 yaşındaki kişi buraya geldi. Sonra 30 yaşındaki kişi...
+
+80
+00:20:59,604 --> 00:21:16,003
+İkinci sıraya aldık. Şimdi 40 yaşında 4 kişi var. Ne yapacağız? Bunları karman çorman mı alalım Türk usulü? Yoksa bir dakika, 40 yaşındakilerden önce gelen, ne bileyim hani siyah saçlı arkadaş, sonra kırmızı dereli arkadaş, sonra da işte gri montlu arkadaş.
+
+81
+00:21:16,307 --> 00:21:29,207
+şeklinde bunları çıktı da sırada sırasını korumak isteyebiliriz. Eğer böyle bir çıktı üretmemiz gerekiyorsa o zaman stable sort kullanmamız gerekir. Yani stable çalışan bir sort algoritması kullanmamız gerekir.
+
+82
+00:21:29,207 --> 00:21:42,307
+Böyle bir derdiniz yoksa unstable bir sort algoritması kullanmanız uygun olacaktır. Çünkü büyük bir ihtimalle daha efektif yani daha performansı yüksek çalışan yöntemler bulabileceksiniz.
+
+83
+00:21:43,923 --> 00:21:51,983
+Peki, bugün sıralama problemini çözmek için temel yöntemler neler? Bunlara bakacağız.
+
+84
+00:21:52,683 --> 00:22:03,383
+Birinci öğreneceğimiz yöntem, en basit, en temel ilk atla gelen en kolay çözüm yöntemi algoritmik açıdan kabarcık sıralama adını verdiğimiz Bubble Sort.
+
+85
+00:22:03,859 --> 00:22:09,859
+Sonrasında biraz kafa yoracağız. Bubble Sort'u nasıl iyileştirebiliriz? Daha efektif aya nasıl getirebiliriz? diye.
+
+86
+00:22:09,859 --> 00:22:19,459
+Ve bunun üzerine de, acaba bunun üzerine ben toplam yer değiştirme sayısını, karşılaştırma değil ama en azından yer değiştirme sayısını azaltabilir miyim? diyerek
+
+87
+00:22:19,459 --> 00:22:22,659
+seçimli sıralama Selection Sort'a geçeceğiz.
+
+88
+00:22:22,659 --> 00:22:29,659
+Ve sonrasında işte, ben hani işlemeyeceğim ama Shell Sort, onun yerine Insertion Sort'a bakacağız.
+
+89
+00:22:31,859 --> 00:22:57,859
+farklı belki de zaman kalırsa çözümlerle yolumuza devam edeceğiz. Peki, önce BubbleSort'tan başlayalım. BubbleSort'un mantığı şu. Aslında hani bunu sınıfta böyle interaktif olarak düşünerek, sorarak, cevap alarak ilerletmeyi istiyordum. Ama bu hafta yılbaşına denk geldiği için online olarak devam edeceğiz. Olduğu kadar diyelim. Şimdi...
+
+90
+00:22:59,220 --> 00:23:08,220
+En kolay düşünce şekliyle ben acaba nasıl bir sıralama yapabilirim? Şuradaki baştaki örneğe gerek.
+
+91
+00:23:08,220 --> 00:23:19,980
+Büyük bir ihtimalle bir döngüde elemanları bir şekilde gezmem gerekecek. Şöyle mesela ilk iki elemana bakalım. 8 ve 2.
+
+92
+00:23:20,307 --> 00:23:30,307
+Mantık neyi söylüyor? Ya bir dakika ikinin solda olması lazım çünkü iki küçük, sekizinde bunun sağında yani sağ tarafta daha büyük indisi de yer alması lazım.
+
+93
+00:23:30,307 --> 00:23:43,307
+Peki ben bu ikisinin yerini değiştireyim. 2, 8, 4, 4, 4, 9, 3, 6. Hala bir çözüm mü var mı? Yok. E peki o zaman şimdi ikinci ikiliye bakayım. Sekizi buraya taşımıştım ya sekizle dört.
+
+94
+00:23:43,731 --> 00:23:57,731
+Bir dakika, 8 hala solda olmaması lazım deyip onu sağa taşısam. Bu şekilde yoluma devam etsem. Şuraya geldiğimde ne göreceğim? Aa bir dakika burada 9 var. 9 8'den daha büyük. O zaman 9 daha şeyde olması lazım diye yoluma devam etsem.
+
+95
+00:23:57,731 --> 00:24:04,731
+Peki ben bunu bir iterasyon için yaptım ve en büyük sayıyı bir şekilde sona taşıdım. Karşılaştı da karşılaştı. İkili ikili.
+
+96
+00:24:05,268 --> 00:24:13,268
+Sonra ne yapmam lazım? Ha bir dakika tamam, bir tane sayı değeri yerini buldu ama bundan sonra kalan n-1 tane için bunu tekrar etmem lazım.
+
+97
+00:24:13,268 --> 00:24:21,268
+Sonra n-2 tane için, n-3 tane için, ne zaman ki n-1 taneye kadar giderim, bu işlemi tekrar tekrar yaparım.
+
+98
+00:24:21,268 --> 00:24:30,251
+Her bir adımda kalanların en büyüğünü fokur fokur fokur kaynayan bir gazozun şeyi gibi, baloncuğu gibi yukarı doğru sona doğru taşırım.
+
+99
+00:24:30,324 --> 00:24:47,324
+İşte bu yüzden biz buna Bubble Sword adını veriyoruz. Yani kabarcık sıralaması adını veriyoruz. Adı tamamen buradan geliyor. Ve tamamen çok çok düz ve basit bir mantıkla dizimizin elemanlarını baştan sona ikili ikili karşılaştırıyoruz.
+
+100
+00:24:47,488 --> 00:25:00,808
+ve büyük olanı sona doğru taşıyoruz. Her bir, yani en büyük eleman, her bir iterasyondaki en büyük eleman, sanki bir baloncuk gibi, bir kabarcık gibi dizinin en sonuna doğru taşınmaya başlıyor.
+
+101
+00:25:00,808 --> 00:25:10,408
+Akış diyagramını burada çizmek zor olduğu için pseudocodunu yazdım. Sınıfta olsaydı yine bunun akış diyagramını çizecektik.
+
+102
+00:25:10,408 --> 00:25:13,408
+Ama hani şuradan bir tane kalem alıp hızlıca
+
+103
+00:25:13,556 --> 00:25:21,355
+en azından kaba hattıyla çizmeye çalışayım. İçlerini çok yazamayacağım ama hani şuraya start yazacağız. Dur, s koyayım.
+
+104
+00:25:21,355 --> 00:25:26,956
+Sonrasında biz şöyle bir okuma kartıyla
+
+105
+00:25:26,956 --> 00:25:29,956
+eni
+
+106
+00:25:29,956 --> 00:25:36,355
+ve bununla beraber işte girdi dizisi olan a dedik bugün. a eni okuyacağız.
+
+107
+00:25:37,460 --> 00:26:04,460
+Şöyle okuduğu kısmı bazen böyle atlamalar yapıyor, kusura bakmayın. Şimdi ENI ve AENI okuduktan sonra, bu arada sınavlara da yeri gelmişken biraz değineyim. İkinci vizeleri okumayı tamamladım. Not girişini bugün sonuna doğru tamamlamayı hedefliyorum inşallah. Yani şey dijital hale daha taşımadım kağıt üstünde de. Ama en çok yapılan hatalardan, gördüğüm hatalardan biri şuydu. Okurken
+
+108
+00:26:04,768 --> 00:26:09,327
+Arkadaşların büyük bir çoğunluğu direkt bunu okumuşlar.
+
+109
+00:26:09,327 --> 00:26:13,327
+An, n, böyle okumuşlar.
+
+110
+00:26:13,327 --> 00:26:18,528
+Ben de hepsinin yanına n nerede diye şöyle kocaman bir soru işareti koydum.
+
+111
+00:26:18,528 --> 00:26:24,928
+Bunu defalarca söylemiştik ve derste de özellikle üstüne basa basa tekrar etmiştik.
+
+112
+00:26:24,928 --> 00:26:27,567
+Okumadığınız bir değeri kullanamazsınız.
+
+113
+00:26:28,048 --> 00:26:53,548
+o yüzden de hani en a en şeklinde olması gerekiyor. Şurada yazdığım gibi. Bunun dışında şöyle yapanlar var. Bu hala niye yapılıyor anlamadım. Şuraya startla başladık. Sonra buraya bir işlem çerçevesi çiziyorlar ve ondan sonra bunun içine kullandıkları değişkenleri tanımlıyorlar. i, virgül, tmp.
+
+114
+00:26:55,412 --> 00:27:21,531
+virgül A. Bu ne demek? Hiçbir şey. Yani atıma yapmıyorsanız böyle bir şey yapmanıza gerek yok. Bunu da silmiş olalım. Sonrasında before döngüsü var. Bu işte dıştaki döngü birden n-1'e kadar gidiyor. Çok kötü yazıyor. Nedense şöyle farkındasınız değil mi? Böyle bir şey yapıyorum. Ben yapmıyorum onu.
+
+115
+00:27:21,779 --> 00:27:26,139
+Bu şekilde böyle şey yapıyor. Pablo koyup böyle yüpera doğru attım yapıyor.
+
+116
+00:27:26,139 --> 00:27:33,559
+Yine geri gelmişken sınavdaki hatalardan en büyük, en çok yapılan sintaks hatalarından biri.
+
+117
+00:27:33,559 --> 00:27:36,379
+For döngüsü bu şekilde yapılmış.
+
+118
+00:27:36,379 --> 00:27:39,699
+Çok güzel peki bu okey.
+
+119
+00:27:39,699 --> 00:27:42,519
+Sonra buraya sadece i yazılıyor.
+
+120
+00:27:42,519 --> 00:27:47,899
+Buraya nedense çoğunluk şöyle bir şey yapmış. i artı artı.
+
+121
+00:27:49,715 --> 00:27:53,575
+Ondan sonra burada genellikle böyle i küçük n
+
+122
+00:27:54,435 --> 00:27:59,335
+Niye böyle yazıyorsunuz? Biz bunu böyle mi gösterdik? Hayır, mutlaka dedik ki
+
+123
+00:27:59,335 --> 00:28:01,835
+Burası aynı c'deki şey gibi
+
+124
+00:28:01,835 --> 00:28:04,095
+Burası ilk değer ataması
+
+125
+00:28:05,095 --> 00:28:06,295
+İlk değer
+
+126
+00:28:06,295 --> 00:28:08,455
+Yani i eşittir 1 mesela
+
+127
+00:28:08,455 --> 00:28:09,775
+Burada artım
+
+128
+00:28:10,003 --> 00:28:28,483
+birer birer artıyor, göstermek ya da eksi birer eksi birer azalıyor, göstermek. Burada da gittiği son nokta n mesela ya da ne bileyim n eksi k demiştik. Böyle bir şeyler kullanmıyoruz yani böyle bir gösterim yok. Şu an bunlara biraz daha dikkat edelim.
+
+129
+00:28:28,655 --> 00:28:48,056
+Tamam, sonra bu benim işte şurada Bubble Sort'ta gösterdiğim hani sekizi taşırken sekizi ikiyle karşılaştırayım yer değiştireyim. Sekizi artık burada. Sekizi dörtle karşılaştırayım yer değiştireyim dediğim her bir elemanı bir kere gezen en eksi bir tane elemanı birer kere gezen döngü.
+
+130
+00:28:48,144 --> 00:28:51,824
+Onun için de doğal olarak kalan elemanlara bakmam lazım.
+
+131
+00:28:51,824 --> 00:28:59,744
+Burada da bir iç döngüde, o zaman bir j döngüsünde kalan bir n-i'ye kadar
+
+132
+00:28:59,744 --> 00:29:05,504
+Bu da önemli. Kalan elemanlar anlamında n-i'ye kadar
+
+133
+00:29:05,504 --> 00:29:09,744
+Hiçbir şey çizilmiyor, bunu da her şeyi yukarı doğru atlıyor ya.
+
+134
+00:29:09,744 --> 00:29:14,064
+Şimdi anladınız mı online eğitim ne kadar böyle saçma oluyor.
+
+135
+00:29:14,644 --> 00:29:20,944
+Sınıfta ne güzel bunu böyle tahtaya güzel güzel anata anata çizmek vardır.
+
+136
+00:29:20,944 --> 00:29:26,044
+N-i, i şöyle yazayım. Kalan elemanlar.
+
+137
+00:29:26,044 --> 00:29:29,244
+Yani böyle azalta azalta gitmemiz gerekiyor.
+
+138
+00:29:29,244 --> 00:29:35,344
+İlk iterasyonda en büyük elemanı sona taşıdık ya, artık sona kadar gitmiyoruz.
+
+139
+00:29:35,344 --> 00:29:40,744
+N-i'ye kadar, yani n-2, n-3, n-4'e kadar gidiyoruz.
+
+140
+00:29:40,948 --> 00:29:47,948
+son dan dize dize başa doğru geliyoruz. Her seferinde elemanı
+
+141
+00:29:52,692 --> 00:30:01,692
+Şurada gördüğümüz karşılaştırmada bir sonraki elemanla karşılaştırıyoruz. İşte bu yüzden de n-1, n-i burada işimize yarıyor.
+
+142
+00:30:01,692 --> 00:30:10,692
+a, j'ye kadar gitmiş oluyoruz. Son şeyde n-1, n-1 artı 1, n. Yani an küçük mü an-1'den. Son yaptığımız karşılaştırma bu.
+
+143
+00:30:10,692 --> 00:30:20,524
+Eğer bu doğruysa, isterseniz ben kime parantezi açmamıştım ama açayım. Şurayı da bloklayayım. Ben bunları sadece iç içe bloklarla göstermiştim.
+
+144
+00:30:22,003 --> 00:30:28,723
+Şöyle, ne yapacağız? Bu iki elemanın yerini değiştireceğiz. Geçici değişken ihtiyaç duyuyorum.
+
+145
+00:30:28,723 --> 00:30:37,003
+Aj buraya, tmpf'ye atanıyor. Oradaki değere, bir sonraki değere atıyorum. Bir sonraki değere de önceki gözle sakladım.
+
+146
+00:30:37,003 --> 00:30:44,323
+tmp değerini atıyorum. Sonrasında endif, endfor, endfor diyerek döngü 3 yapacağız.
+
+147
+00:30:44,323 --> 00:30:49,203
+Yani işte bu şurada şey işlemleri, slap işlemleri yapılacak.
+
+148
+00:30:50,132 --> 00:30:52,132
+[öğrenci] işlemlerinden sonra
+
+149
+00:30:52,132 --> 00:30:56,132
+Bak, nereye döndü? Yanlış yere döndü.
+
+150
+00:30:56,132 --> 00:30:58,132
+Şuraya dönecek.
+
+151
+00:30:58,132 --> 00:31:01,132
+Bu, buraya dönecek.
+
+152
+00:31:01,132 --> 00:31:04,132
+Bundan sonra burada da artık siz diziyi yazdırırsınız.
+
+153
+00:31:04,132 --> 00:31:06,132
+Ve, öreceğiz.
+
+154
+00:31:07,059 --> 00:31:15,759
+Bu şekilde bir okuma, iki döngü, bir swap işlemi ve sonra da bir yazdırma işlemiyle Bubble Sort'u tamamlayabiliriz.
+
+155
+00:31:15,759 --> 00:31:22,419
+Şimdi benim burada toplamda kaç karşılaştırma yapmam gerekiyor? Karşılaştırmayı nerede yapıyorum? Burada. Değil mi?
+
+156
+00:31:22,419 --> 00:31:33,139
+Ben buradan kaç kere geçiyorum? Dışarıdaki döngüye baktığımda birden n-1'e kadar gidiyor. N-1 kere dıştaki döngüde işlem yapıyorum.
+
+157
+00:31:34,836 --> 00:31:36,836
+Sonra çarpı
+
+158
+00:31:36,836 --> 00:31:44,836
+İçerideki de ne kadar yapıyorum? 1'den N-I'ye kadar. N-I ne demek? Şöyle yazalım. Önce N-I
+
+159
+00:31:44,836 --> 00:31:47,836
+I1 olduğunda N-1
+
+160
+00:31:47,836 --> 00:31:50,836
+I2 olduğunda N-2
+
+161
+00:31:50,836 --> 00:31:52,836
+N-3
+
+162
+00:31:52,836 --> 00:31:55,836
+N-4
+
+163
+00:31:55,836 --> 00:32:00,836
+1'e kadar girecek. Değil mi? Peki. Bu aslında sanki
+
+164
+00:32:01,460 --> 00:32:03,460
+şöyle düşünebilir miyiz?
+
+165
+00:32:03,460 --> 00:32:05,460
+bir tane matsimiz var
+
+166
+00:32:05,460 --> 00:32:09,460
+hep bir azaltı azaltı gidiyoruz. Yani yarısı
+
+167
+00:32:09,460 --> 00:32:12,460
+sadece şu alanı karşı yapmış gibiyiz.
+
+168
+00:32:12,460 --> 00:32:15,460
+yani 1 bölü 2'ye n-1 kadar
+
+169
+00:32:17,460 --> 00:32:21,460
+bir işlem döngüsü de içeriden geliyor.
+
+170
+00:32:21,460 --> 00:32:25,004
+nihayetinde buraya n-1
+
+171
+00:32:25,172 --> 00:32:50,172
+yada en çok farklı değil bir aşağı bir yukarı. En tane işlem dışarıda yapıyorum. 1 bölü 2 en tane işlemde içeri döngü adımı ve karşılaştırması da içeride yapıyorum. Ve nihayetinde en çarpı enlik, 1 bölü 2, en çarpı en bölü 2'lik işlem yapmam gerekiyor. Bu yüzden de yaklaşık en kare civarında karşılaştırma if.
+
+172
+00:32:50,432 --> 00:33:03,751
+kontrolü yapmam gerekiyor. Bunun dışında içinde de ife bağlı olarak eğer değişmesi gerekiyorsa yer değiştirmeleri de yapacağım. Peki şimdi şöyle bir kodunu da göstereyim biraz daha temiz olsun.
+
+173
+00:33:03,751 --> 00:33:16,032
+Bir dizi tanımlıyorum işte en sabitini 5 diye tanımlamışım. 5'lik bir dizi. 62, 25, 8, 23, 17. Uzun uzun kullanıcılar okumamak için ben burada hızlı olsun diye böyle elimle atadım.
+
+174
+00:33:16,115 --> 00:33:24,435
+Sonrasında değişken tanımlarımı yaptım. i, j, döngü değişkenlerim ve bir de atamak için kullandığım geçici değişkenim var.
+
+175
+00:33:24,435 --> 00:33:30,995
+Sıfırdan n-1'e, n-i-1'e ve yaptığım karşılaştığımı burada.
+
+176
+00:33:34,099 --> 00:33:43,579
+Eğer bu doğruysa, swap işlemini gerçekleştiriyorum ve işlem bitiyor. Sonrasında da bu diziyi yazdırıyoruz. Bütün hepsi bu kadar.
+
+177
+00:33:43,579 --> 00:33:58,419
+Şimdi örnekle yapalım, üzerinden geçelim, daha güzel anlayalım. Bu kırmızı kalem çünkü bekle, yukarıya doğru atlama yapıyor. Şimdi dizi şöyle bir şey olsun.
+
+178
+00:33:58,708 --> 00:34:07,108
+852 693 1407 farkındaysanız 0 ile 9 arasındaki rakamlar hepsi birerkeze tekrar etmiş.
+
+179
+00:34:07,108 --> 00:34:18,548
+Şimdi dıştaki döngü koddaki şöyle geri gelirsem i eşittir 0 adımındayız ve 0'dan başladım.
+
+180
+00:34:18,931 --> 00:34:45,899
+İlk olarak buradaki iki elemanı yani sıfırıncı ve j ve j artı biri yani sekiz ve beşi karşılaştırıyorum. Tamam mı? Koda geri geleyim. Karşılaştırdığımda önceki büyükse sonrakinden yer değiştirme işlemi yap diyorum. Şimdi önceki sonrakinden büyük mü? Evet. O zaman bu iki sayının yer değiştirmesi gerekiyor.
+
+181
+00:34:46,164 --> 00:35:12,564
+değiştirsinler, değiştirdiler. Bakın, 5 buraya geçti, 8 sağ tarafa taşındı. Ne oldu? 8 sanki bir kabarcık gibi blüp diye böyle yan tarafa, bir sağ tarafa doğru yükseldi. Şimdi, C'nin bir sonraki değeri, yani içteki döngü bir arttı. 8 ve 2, yani şu iki elemanı karşılaştırıyorum, birinci ve ikinci hindi isteri.
+
+182
+00:35:12,788 --> 00:35:37,068
+8'de 2. Yine bu taraf daha büyük olduğu için böyle bir kabarcık gibi bunun sağa bunun sola taşınması gerekecek. Burada gördüğümüz işlem de bu. Peki, şimdi j'yi bir arttırdım. 8 ile 6'yı karşılaştırıyorum. 8 yine büyük. O zaman kabarcık gibi yana doğru taşınması gerekiyor. 6'da sola geçti. Bakın ne oldu? 8 en baştaydı.
+
+183
+00:35:37,748 --> 00:36:03,188
+Kabarcık şeklinde blük blük blük blük diye böyle üçüncü yere kadar yani dördüncü göze kadar taşınmış oldu. Şimdi üçüncü ve dördüncü indislerdekilere bakıyoruz. Sekiz ve dokuz. Soldaki daha büyük mü? Hayır. Bu kabarcığın gazı buraya kadarmış. Artık ondan daha büyük bir baloncuk var. Bunu taşımayla yolumuza devam edeceğiz. Hemen bir arttıracağız ve dörtle beşe bakacağız.
+
+184
+00:36:03,632 --> 00:36:30,112
+Yani dördüncü ve beşinci indislere. Bu da sayısal olarak dokuz ve üç değerlerini bize gösteriyor. Soldaki daha büyük, o zaman taşınması gerekiyor. Bir kabarcık olarak sağa doğru gidecek. Bunlar da gitti. Üç ve dokuz haline geldiler. Sonra beşinci ve altıncı indisler karşılaştırılacak. Dokuz ile bir karşılaştırıyorum. Dokuz büyük olduğu için kabarcık şeklinde taşınacak.
+
+185
+00:36:30,739 --> 00:36:51,739
+Sonra 9 ile 4 değerleri karşılaştırılacak. 9 büyük kabarcık şeklinde taşınacak. 9 ile 0 zaten belli. 9 sağa geçti. 9 ile 7 yine 9 büyük. O zaman 9 sağa geçti. Ne oldu? Bakın, 8 değeri büyük bir değerdi. Böyle bir kabarcık şeklinde şuraya kadar taşındı. Ta ki ondan daha büyük bir değer görene kadar.
+
+186
+00:36:58,416 --> 00:37:23,576
+Taradığım sıfırıncı iterasyonda, yani ilk adımımda, dıştaki döngünün ilk adımında, bu diziyi teker teker taradım ve soldaki en büyüğü taşıyabildiğim kadar taşıdım. Daha büyüğünü gördüm, onu da taşıyabildiğim kadar sona taşıdım. Artık en sonda dizinin taranmış en büyük değeri var, en büyük kabarcık. O böyle tepeye ilk önce çıkmış oldu.
+
+187
+00:37:24,659 --> 00:37:49,659
+Peki, şimdi bu yerini buldu. Artık içteki döngü ji, e, birden n-i'ye kadar gidiyordu. i1 olduğuna göre n-1, eksi i demiştik. Tabi sikonunla da. Yani n-2'ye kadar. Artık şuraya kadar tarayacağım. O yüzden de 9'u artık ellemiyorum. Bu yerini buldu. Şimdi dıştaki döngü de 1 oldu. 1 arttı. Yine tekrar baştan başladım. 5 ile 2.
+
+188
+00:37:50,291 --> 00:38:00,191
+5 büyük kabarcık şeklinde sola geçti. 5 ile 6, 6 büyük bunun gazı buraya kadar yetti. 6'dan 6'yı taşımaya devam edeceğiz.
+
+189
+00:38:00,191 --> 00:38:12,191
+Sonra 6 ile 8. 6'nın gazı da kendi yerine kadar yetti. Herhangi bir taşıma yapmadım. 8. 8, 3, ütem büyük o zaman kabarcık şeklinde yana geçti. Şuradaki değişiklik.
+
+190
+00:38:12,191 --> 00:38:17,191
+Sonra 8 ile 1'i karşılaştırdım. 8 yine sona taşınacak.
+
+191
+00:38:17,364 --> 00:38:39,643
+1 buraya, 8 buraya. 8 ile 4'ü karşılaştırdım. 4 buraya, 8 buraya. 8 ile 0'ı karşılaştırdım. 0 buraya, 8 buraya. 8 ile 7'yi karşılaştırdım. 8 sağa, 7 sola geçti. Şimdi ne oldu? Bakın burada da kabarcık şeklinde azıcık 5'i taşıyabildim. 6'yı taşıyamadım. 8'i sona kadar taşıdım.
+
+192
+00:38:39,956 --> 00:38:55,956
+Bu da ikinci en büyük baloncuktu. İkinci en büyük yerde, gözde yerini aldı. Tekrar n-i'ye kadar gittiğim için, işte n-2'ye kadar gideceğim. Kodda n-3'e kadar. Sondaki iki eleman yerini bulmuş oldu.
+
+193
+00:38:55,956 --> 00:39:06,956
+2 ile 5'i karşılaştırdım. Herhangi bir değişiklik yapmıyorum. 5 ile 6'yı karşılaştırdım. Herhangi bir değişiklik yapmıyorum. 6 ile 3'ü karşılaştırdım.
+
+194
+00:39:07,251 --> 00:39:25,251
+Yer değiştirme yapıyorum. 6 ile 1'i karşılaştırdım. Yer değiştirme yapıyorum. 6 büyük çünkü. 1 bu tarafa, 6 bu tarafa. 6 ile 4'ü karşılaştırdım. Yine yer değiştirme yapıyorum. 4 buraya, 6 buraya geldi. 6 ile 0'ı karşılaştırdım.
+
+195
+00:39:26,195 --> 00:39:52,195
+Yer değiştirmeyi yaptım. 6 ile 7'yi karşılaştırdım. Yer değiştirme yapmadım. O zaman son eleman da yerini bulmuş oldu. Şurada gördüğümüz eleman. Tamam. Dıştaki döngüyü bir arttırdım. Bu ne demektir? Son 3 eleman yerini buldu. Tekrar 2 ile 5'i karşılaştırdım. Değişiklik yok. 5 ile 3'ü karşılaştırdım. Değişiklik var.
+
+196
+00:39:52,623 --> 00:40:19,783
+değiştirdim. 5 ile 1'i karşılaştırdım. Değişiklik var. Yaptım. 5 buraya, 1 buraya. 5 ile 4'ü karşılaştırdım. Tekrar 5'i sağa doğru taşıdım. 5 ile 0'ı karşılaştırdım. 5'i sağa doğru taşıdım. Kabarcık olayının neden geldiğini artık daha iyi görüyorsunuz. Böyle fıkır fıkır fıkır fıkır fıkır sağa doğru gidiyor. 5, 6'yı karşılaştırdım. Herhangi bir yer değiştirme yok. O zaman 6'ı, 6'ıncı gözde yerini buldu.
+
+197
+00:40:21,556 --> 00:40:49,016
+Dıştaki döngüyü bir arttırdık. Işitir 4 oldu. Sonundaki 4 eleman yerini buldu. 2 ile 3 karşılaştırdım. Değiştirme yok. 3 ile 1 karşılaştırdım. Yer değiştirme var. 3 ile 4 karşılaştırdım. Yer değiştirme yok. Sonra 4 ile 0 karşılaştırdım o zaman. Yer değiştirme var. Bu buraya, bu buraya geldi. 4 ile 5 karşılaştırdım. Yer değiştirme yok. Ve 5 de yerini buldu.
+
+198
+00:40:49,876 --> 00:41:16,216
+Tekrar devam ediyoruz. Dıştaki döngüyü bir arttırarak. 2 ile 1'i karşılaştırdım. Yer değiştirme var. Değiştirdim. Sonra 2 ile 3'ü karşılaştırdım. Yer değiştirme yok. 3 ile 0'ı karşılaştırdım. Yer değiştirme var. Bunlar slap ediyor. 3 ile 4'ü karşılaştırdım. Yer değiştirme yok. Tamam. Bu da yerini buldu. 1 ile 2'yi karşılaştırdım. Yer değiştirme yok. 2 ile 0. Yer değiştirme var.
+
+199
+00:41:16,628 --> 00:41:21,228
+2 ile 3 yer değiştirme yok. O yüzden 3 yerini buldu.
+
+200
+00:41:21,748 --> 00:41:28,148
+Gittiğinde gördüğünüz gibi daha az sayıda karşılaştırma yapıyorum. Ama nihayetinde bir üçgen şeklinde gittiğini görüyorsunuz.
+
+201
+00:41:28,408 --> 00:41:30,448
+Azala azala gidiyor içteki döngü.
+
+202
+00:41:31,988 --> 00:41:32,748
+Sonra
+
+203
+00:41:33,528 --> 00:41:34,288
+Bu da
+
+204
+00:41:35,827 --> 00:41:37,628
+Yerini bulduğuna göre 3
+
+205
+00:41:38,128 --> 00:41:41,208
+Kalan 3 eleman için çalışma yapacağım. I7 oldu.
+
+206
+00:41:41,708 --> 00:41:44,268
+0 ile 1'i karşılaştırdım. Yer değiştirme var.
+
+207
+00:41:44,371 --> 00:42:09,811
+değiştirdim. Bir ile ikiyi karşılaştırdım. Yer değiştirme yok. İki yerini bulmuş demektir. Sonra buraya geldim. Sıfırla biri karşılaştırdım. Yer değiştirme yok. Bir yerini bulmuş demektir. Ve son eleman zaten kendi içinde sıralıdır. Onun için herhangi bir şey yapmama gerek yok. Evet, bu şekilde her adımda olabilen en büyüğü
+
+208
+00:42:10,547 --> 00:42:38,547
+o ana kadar işlediğim yerin en sonuna taşıya taşıya, bir baloncuk gibi kabartı gibi yukarıya doğru taşıya taşıya çıktığı oluşturdum ve bu sayede ben bir sıralama işlemini gerçekleştirmiş oldum. Ama kaç tane karşılaştırma yapmam gerekti? İşte içerideki üçgen azalarak gidiyordu. En eksi 1 artı, en eksi 2 artı.
+
+209
+00:42:38,547 --> 00:43:05,427
+n-3 artı n-4 artı n-i'ye kadar gidecek şekilde. Dıştaki zaten n-1 kere dönüyor. Bu ikisini çarptığımda, ikisinde de n'li rakamlı kat sayılar olduğu için n çarpı n mertebesinde, evet başında bir kat sayısı var ama yine de n çarpı n mertebesinde karşılaştırma işlemi yapmam gerekti.
+
+210
+00:43:06,036 --> 00:43:16,036
+Peki, bu ne demektir? En kare mertebesinde bir işlem yapmama ihtiyaç var. Peki, en kötü durum?
+
+211
+00:43:20,403 --> 00:43:22,903
+Bubble Sort için en kötü durum ne olabilir?
+
+212
+00:43:25,503 --> 00:43:27,304
+En kötü durumda ne olacak?
+
+213
+00:43:28,443 --> 00:43:35,824
+Bizim algoritmamız, her bir işlem adımında mutlaka karşılaştırmayı ve yer değiştirmeyi yapmak zorunda kalacak.
+
+214
+00:43:36,483 --> 00:43:42,523
+Yani her seferinde swap işlemi, her karşılaştırmanın sonunda swap işlemini yapmak zorunda kalacak.
+
+215
+00:43:42,523 --> 00:43:46,503
+O zaman, en kötü durumdaki girdi nasıl olabilir?
+
+216
+00:43:47,603 --> 00:43:49,603
+Fikri olan var mı?
+
+217
+00:43:51,603 --> 00:43:53,603
+Ters sıralanmış olursa eğer
+
+218
+00:43:53,603 --> 00:43:56,603
+Aynen öyle. Ters sıralanmış
+
+219
+00:43:57,603 --> 00:44:00,603
+Dört elemanlı
+
+220
+00:44:00,603 --> 00:44:07,603
+Dörtten de başlamayalım. Altı, dört, iki, bir. Dört elemanlı bir dizimiz olsun.
+
+221
+00:44:07,603 --> 00:44:14,379
+Burada gördüğünüz gibi. Şimdi ne yapacağız? Altıyla dördü karşılaştıracağız. Yer değiştireceğiz.
+
+222
+00:44:14,708 --> 00:44:16,947
+6 ile 2'yi karşılaştıracağız.
+
+223
+00:44:16,947 --> 00:44:18,668
+Şuralara 2, 1'i tıklayalım.
+
+224
+00:44:18,668 --> 00:44:20,347
+6 ile 2'yi karşılaştıracağız.
+
+225
+00:44:20,347 --> 00:44:21,628
+Yer değiştireceğiz.
+
+226
+00:44:22,907 --> 00:44:25,208
+Sonra 6 ile 1'i karşılaştıracağız.
+
+227
+00:44:25,208 --> 00:44:26,487
+Yer değiştireceğiz.
+
+228
+00:44:28,788 --> 00:44:30,827
+Gördüğünüz gibi 6 yerini buldu.
+
+229
+00:44:31,608 --> 00:44:32,887
+Şöyle bir çizgi çekeyim.
+
+230
+00:44:33,148 --> 00:44:37,487
+Ama kalan taraf 4, 2, 1 olduğu gibi sol tarafa taşındı.
+
+231
+00:44:37,748 --> 00:44:39,548
+Şimdi 4 ile 2'yi karşılaştıracağız.
+
+232
+00:44:39,548 --> 00:44:40,568
+Yer değiştireceğiz.
+
+233
+00:44:41,460 --> 00:44:45,260
+Sonra dört ile biri karşılaştıracağız, yer değiştireceğiz.
+
+234
+00:44:48,260 --> 00:44:51,860
+Altı burada duruyordu zaten ve şuraya çizgi çekeceğiz.
+
+235
+00:44:53,820 --> 00:45:00,059
+Ne oldu? Dört altı yerini buldu, iki bir yine ters. Sondaki iki biri aslında başa taşımış olduk.
+
+236
+00:45:00,300 --> 00:45:04,099
+İki ile biri karşılaştıracağız, yer değiştireceğiz.
+
+237
+00:45:04,692 --> 00:45:07,192
+Sonrasında tek eleman kaldığı için duracağız.
+
+238
+00:45:07,192 --> 00:45:10,692
+En-1'e kadar gittik durduk. 1, 2, 4, 6 haline getirdik.
+
+239
+00:45:10,692 --> 00:45:13,692
+Toplamda kaç karşılaştırma yaptık?
+
+240
+00:45:14,692 --> 00:45:18,692
+Her adımda burada mesela 3 karşılaştırma değil mi?
+
+241
+00:45:19,692 --> 00:45:23,692
+Burada 2 karşılaştırma, işte burada 1 karşılaştırma.
+
+242
+00:45:24,019 --> 00:45:33,019
+her adımda yapabileceğimiz en fazla sayıda karşılaştırmayı ve maalesef üstüne üstlük bir de yer değiştirmeyi yapmak zorunda kaldık.
+
+243
+00:45:33,019 --> 00:45:45,019
+İşte bu en kötü durumda yine kat sayıları ile birlikte n kare mertebesinde işlem yapmak zorunda kaldık.
+
+244
+00:45:45,019 --> 00:45:49,019
+Peki, şunu temizleyelim.
+
+245
+00:45:50,708 --> 00:45:54,548
+Şuradan daha hızlı temizleme şeyi var galiba. Şöyle, tamam.
+
+246
+00:45:57,628 --> 00:45:58,908
+En iyi durumda
+
+247
+00:45:59,668 --> 00:46:04,028
+Nasıl bir karmaşıklıkla karşı karşıya kalırız? Performans gösteririz acaba?
+
+248
+00:46:10,356 --> 00:46:13,436
+Bubble Sort için olabilecek en iyi girdi nedir?
+
+249
+00:46:14,456 --> 00:46:15,736
+Zaten sıralı olması.
+
+250
+00:46:16,236 --> 00:46:17,016
+Okey.
+
+251
+00:46:17,276 --> 00:46:20,596
+Yani küçükten büyüğe sıralı bir dizi girdiğini düşünelim.
+
+252
+00:46:20,856 --> 00:46:23,416
+1, 2, 4, 6.
+
+253
+00:46:24,176 --> 00:46:25,976
+Şimdi algoritmayı çalıştırıyorum.
+
+254
+00:46:26,476 --> 00:46:29,296
+1 ile 2'yi karşılaştırdım, yer değiştirmedim.
+
+255
+00:46:30,076 --> 00:46:33,135
+2 ile 4'ü karşılaştırdım, yer değiştirmedim.
+
+256
+00:46:33,655 --> 00:46:36,216
+4 ile 6'yı karşılaştırdım, yer değiştirmedim.
+
+257
+00:46:36,476 --> 00:46:37,496
+6 yerini buldu.
+
+258
+00:46:38,132 --> 00:46:45,331
+Değil mi? Sonra 1 ile 2'yi karşılaştırdım, yer değiştirmedim. Altına bir daha yazmam lazım şöyle.
+
+259
+00:46:46,331 --> 00:46:52,331
+1 ile 2'yi karşılaştırdım, yer değiştirmedim. 2 ile 4'ü karşılaştırdım, yer değiştirmedim. 4 yerini buldu.
+
+260
+00:46:53,831 --> 00:46:58,132
+Sonra 1 ile 2'yi karşılaştırdım, altına bir daha yazacağız.
+
+261
+00:46:58,387 --> 00:47:23,387
+1 ile 2'yi karşılaştırdım, yer değiştirmedim, 2 yerini buldu. Son elemanı şey yapmama gerek yok. Kaç karşılaştırma yaptım? Yine 6 karşılaştırma yaptım. Kaç yer değiştirme yaptım? Sıfır yer değiştirme yaptım. Yani en iyi durumda yer değiştirme yapmıyorum, evet. Ama maalesef algoritmanın çalışma prensibi gereği yine 6 tane yani n kare mertebesinde
+
+262
+00:47:23,635 --> 00:47:26,635
+4 eleman verdik.
+
+263
+00:47:26,635 --> 00:47:35,635
+n² mert arasında bir işlem yani n-1 aslında n-1 kare olduğu için 9.
+
+264
+00:47:35,635 --> 00:47:42,635
+9'a en yakın şey değil 5 değil 9. Pardon 4 değil 9.
+
+265
+00:47:48,115 --> 00:48:13,115
+Dört elemanlı dizi için sonucu oluşturabildik. Yani siz Bubble Sword kullandığınızda en iyi durumda da en kötü durumda da gördüğünüz gibi en kare tane karşılaştırmayı muhakkak surette yapmak zorundasınız. Başka çareniz yok. En iyi ve en kötü durumda da hep en kare mertebesinde karşılaştırma karmaşıklığını yaşamak zorundasınız.
+
+266
+00:48:13,748 --> 00:48:34,147
+Peki, ben bu Bubble Sort'u daha iyi hale getirebilir miyim? Ya da biraz daha erken durmayı sağlayabilir miyim? Benim verdiğim örnekte erken durma gibi bir şey söz konusu değildi. Çünkü şöyle yukarı doğru gidecek, geriye doğru gidecek olursak.
+
+267
+00:48:34,192 --> 00:48:38,551
+Sürekli olarak bir yer değiştirmeler vardır. Şöyle buradan başlayalım mesela.
+
+268
+00:48:38,551 --> 00:48:41,612
+Şu sıfırın başa doğru gitmesi gerekiyordu değil mi?
+
+269
+00:48:41,871 --> 00:48:44,951
+Dördün üçün ikinin böyle yavaş yavaş taşınması.
+
+270
+00:48:45,192 --> 00:48:46,471
+Burada izlediğimizde
+
+271
+00:48:46,991 --> 00:48:48,791
+sıfır sola geçti
+
+272
+00:48:49,291 --> 00:48:52,371
+üçüncü indis de sıfır. Şimdi ikinci indise geçti
+
+273
+00:48:52,632 --> 00:48:55,192
+birinci indise geçti
+
+274
+00:48:55,431 --> 00:48:59,791
+ancak şu anda sıfırın sıfırıncınınca kadar taşınabildi.
+
+275
+00:49:00,051 --> 00:49:01,331
+İşte bu yüzden
+
+276
+00:49:01,811 --> 00:49:24,371
+Gördüğünüz gibi. Bu örnekte maalesef tabii ki yine sona kadar mutlaka gitmek zorunda kalıyoruz. Ama eğer bubblesortta mesela içteki döngü iterasyon boyunca hiçbir yer değiştirme yapmıyorsa o zaman aslında kalan elemanlar sıralanmıştır diyebilir miyim?
+
+277
+00:49:29,043 --> 00:49:29,883
+Diyebilir miyim?
+
+278
+00:49:32,263 --> 00:49:32,743
+Evet.
+
+279
+00:49:33,703 --> 00:49:34,603
+Diyebilirim değil mi?
+
+280
+00:49:35,183 --> 00:49:35,703
+Peki.
+
+281
+00:49:35,963 --> 00:49:38,263
+Bu durumda ben aslında erken durabilirim.
+
+282
+00:49:38,763 --> 00:49:41,583
+Yani daha erken bir çıkış sağlayabilirim.
+
+283
+00:49:42,103 --> 00:49:43,123
+Ama o zaman da
+
+284
+00:49:43,383 --> 00:49:44,663
+Ford öngüsü kullanamam.
+
+285
+00:49:45,163 --> 00:49:49,263
+Ford öngüsüyle yaptığımda mutlaka sona kadar gitmek zorunda kalıyorum.
+
+286
+00:49:49,556 --> 00:50:06,556
+Bubble Sort'da dediğim gibi böyle bir iyileştirme, bir optimizasyon yapabilirsiniz. Fakat bu durumda döngülerinizi FOR'la değil, WHILE'la yapmanız gerekir ve içteki döngüye girmeden bir tane FLAKE değişkeni tutmanız gerekir, bir bayrak.
+
+287
+00:50:06,771 --> 00:50:23,771
+Onları sıfırlarsınız. Eğer hiçbir atama işlemi gerçekleştirilmediyse, flag'i 1 yaparsınız. Flag'i 1 olunca da dıştaki döngüden de kırıp yani while döngüsünün şartı bozulduğu için çıkarsınız. Şart kontrolü ile beraber kırarak demeyelim.
+
+288
+00:50:24,179 --> 00:50:47,579
+Böyle bir iyileştirme ile Bubble Sort'u erken durdurmaya gidebilirsiniz. Ama unutmayın, her ne yaparsanız yapın, yine en kötü durumda n kare mertebesinde karşılaştırma işlemi yapmak zorunda kalacaksınız. Bubble Sort'un biraz daha iyileştirilmiş hali bu. Peki.
+
+289
+00:50:52,179 --> 00:51:04,339
+Şimdi geldik bir diğer çözümeye. İkinci yaklaşımımız sıralama probleminde Selection Sort olacak. Şimdi Bubble Sort
+
+290
+00:51:05,204 --> 00:51:13,884
+Gördüğünüz ya da anladığınız şekilde, anladınız değil mi bu arada? Çok çok basit, çok çok böyle insanın aklına ilk gelen çözüm aslında algoritmik açıdan.
+
+291
+00:51:14,404 --> 00:51:21,044
+Karşılaştır büyüğü sağ taşı. Karşılaştır yani sağ dedim, sona doğru taşı. Karşılaştır ve büyük sayıyı sona doğru taşı.
+
+292
+00:51:21,204 --> 00:51:24,264
+Yaptığı bütün mantık körlemesine bu şekilde ilerliyor.
+
+293
+00:51:24,563 --> 00:51:34,563
+Peki, ben böyle aralarda derelere kadar taşıyıp da hani kabarcık mantığıyla kalanın en büyüğünü, kalanın en büyüğünü falan şeklinde ilerletmek yerine
+
+294
+00:51:34,563 --> 00:51:47,563
+Mademki iç içe iki tane döngü kuruyorum, yani iç içe iki tarama yapıyorum, bunu başka bir probleme benzetebilir miyim? Yani en büyüğünü ya da en küçüğünü bulma problemine benzetebilir miyim?
+
+295
+00:51:47,563 --> 00:51:51,563
+Evet, benzetebilirim. Şimdi elimde en tane eleman varken
+
+296
+00:51:52,115 --> 00:52:14,956
+Bu n elemanın en küçüğünü bulsam ve onu birinci elemanla yer değiştirsem. Birinci eleman en küçük eleman oldu. Bunu garantiledim. Tam tersini de yapabilirsiniz. En büyük elemanı bulup sona koyarsınız. Bu da aynı şey. Sonra artık n-1 tane elemanım kaldı elimde derim. Yani 2'den n'e kadar.
+
+297
+00:52:15,027 --> 00:52:29,207
+İkiden n'e kadar olan elemanların en küçüğünü bulurum, ikinci göze yerleştirim. İkinci gözle yerleştirim. Ondan sonra 1 ile 2 sıralanmış olur. Üçten n'e kadar eleman kalır elimde. N-2 tane.
+
+298
+00:52:29,780 --> 00:52:53,780
+3 ile en arasındaki elemanların en küçüğünü bulup 3. gözle yer değiştiririm. Bu şekilde azalta azalta gitsem, yani en küçük bulma problemini kullanarak bunu çözsem nasıl olur? En azından yer değiştirme işlemlerimi içteki döngü bittikten sonra tek bir kere de yapayım. Yani en tane yer değiştirmeye indireyim diyebilirim.
+
+299
+00:52:53,940 --> 00:53:13,940
+İşte böyle yaparsam eğer, çözümüm şu şekilde çalışmış olacak. Her iç döngü bitiminde en küçüğü buldum, yer değiştirdim. Yani en küçüğü seçtim, yerine koydum. Kalanlar için de en küçüğü seçtim, yerine koydum. Kalanlar için de en küçüğü seçtim, yerine koydum.
+
+300
+00:53:17,648 --> 00:53:30,847
+Seçmeli sıralama Selection Sort adını verdiğimiz bir çözüm. Her iterasyonda en küçük elemanı ya da dediğim gibi tersten de yapabilirsiniz aynı şey. En büyük elemanı seçersiniz.
+
+301
+00:53:30,847 --> 00:53:45,248
+Baştan başlayarak yerleştirirsiniz. Ha başa yerleştirdiğinizde en büyük elemanı seçiyorsanız da aslında tersten sıralamış olursunuz. Yani büyükten küçüğe sıralama yapmış olursunuz.
+
+302
+00:53:45,619 --> 00:54:09,619
+Her adımda kalan elemanları, dıştaki döngüyü biraz azaltarak, kalan elemanların en küçüğünü ya da en büyüğünü seçip takip eden sıraya yerleştirirseniz de, sonuçta nihayetinde n-1 eleman için bunu yaptığınızda elinizde sıralanmış bir çıktı oluşur. Yine aynı şekilde inputumuz, girdimiz n ve an olacak.
+
+303
+00:54:12,052 --> 00:54:25,732
+Şöyle şuraya yine bir start yapalım. Şuraya n, n bu, şuraya da a, n. Bunları okuduk.
+
+304
+00:54:29,940 --> 00:54:55,820
+Sonrasında ne yapacağım? Bir döngü, n-1 tane eleman için dönecek. Çünkü tek eleman kaldığında o zaten sıralanmış demektir. Şuraya birden i eşit birden, bakın böyle atlama yapıyor işte. Birel birer, bu çizgi, bu bir, n-1'e kadar gidecek.
+
+305
+00:54:57,268 --> 00:55:10,668
+Şimdi bir elemanı ne yapacağım? En küçük elemanı bulma problemi. O zaman birinci elemanla minimum birinci elemandır diye başlarım. İinci eleman yani.
+
+306
+00:55:14,356 --> 00:55:26,656
+ve kalan elemanların en küçüğünü bulmaya çalışırım. O zaman j, j, kalan elemanlar dediğime göre i artı birden başlayarak
+
+307
+00:55:30,003 --> 00:55:31,483
+n'e kadar gidecek.
+
+308
+00:55:33,324 --> 00:55:34,743
+Şöyle idare edin.
+
+309
+00:55:34,743 --> 00:55:35,864
+Çok bugün
+
+310
+00:55:35,864 --> 00:55:37,443
+kötü çiziyorum.
+
+311
+00:55:37,443 --> 00:55:39,563
+Ve her seferinde
+
+312
+00:55:39,563 --> 00:55:42,543
+bir karşılaştırma yapacak.
+
+313
+00:55:42,543 --> 00:55:44,163
+Dizinin
+
+314
+00:55:44,163 --> 00:55:45,344
+a'nın
+
+315
+00:55:45,344 --> 00:55:47,543
+j'inci gözü
+
+316
+00:55:47,543 --> 00:55:48,943
+daki eleman
+
+317
+00:55:48,943 --> 00:55:50,403
+eğer benim
+
+318
+00:55:50,403 --> 00:55:53,163
+a'nın minimumundaki
+
+319
+00:55:53,163 --> 00:55:56,663
+yani a i'deki elemandan küçükse
+
+320
+00:55:57,460 --> 00:56:18,460
+o zaman minimumu güncelleyecek. Yani minimum indi, minimumu gösteren indisi güncelleyecek. Sınavdaki ikinci soruda da zaten matrisin boyutunu bulmak için bunu yapmanız gerekiyordu. Çok büyük bir çoğunluk bunu yapmıştı. Ama çok büyük bir çoğunluk yine karakter dönüşümünü yapmamıştı. Maalesef.
+
+321
+00:56:22,068 --> 00:56:47,068
+Eğer bu doğruysa minimumu güncelleyeceğiz. Minimumun indisini yani J olarak güncelleyelim. Şurada gördüğümüz şunu şöyle yapayım. Parantezi yapınca şu fırlamaları yaptığı için mouse o yüzden böyle yaptım.
+
+322
+00:56:47,347 --> 00:56:54,547
+Sonrasında içteki döngü bitti. Yani şu, şuraya bağlandı.
+
+323
+00:56:54,547 --> 00:57:03,667
+Ve artık burada, ben şuraya sadece Swap yazacağım. Slide'da olduğu için kusura bakmayın.
+
+324
+00:57:03,667 --> 00:57:09,027
+Swap işlemi. Yani şuradaki dönüşüm yapılacak.
+
+325
+00:57:09,027 --> 00:57:15,187
+Ve bu da dıştaki döngünün ismine gelecek.
+
+326
+00:57:15,764 --> 00:57:43,680
+Sonra siz diziyi yazdırırsınız ve durursunuz. Bu şekilde. Ne yaptık? Şurada aslında biz kalan elemanların en küçüğünü bulma işlemini gerçekleştirdik. Şurada. Ve sonrasında da en küçük elemanı bulup swap yaptık. Bir gözle, kalan gözle swap işlemini gerçekleştirdik. Bunu da n-1 kere, dıştaki döngü de n-1 kere yapınca
+
+327
+00:57:43,679 --> 00:57:51,559
+aslında seçmeli, en küçüğün seçildiği her adımda seçmeli bir sıralamayı gerçekleştirmiş olduk.
+
+328
+00:57:51,559 --> 00:58:03,079
+Burada kaç tane karşılaştırma yapıyoruz? Yine en dışarıda var. 1 bölü 2 en, şuradaki i artı 1'den ene kadar olduğu için içeride var.
+
+329
+00:58:03,079 --> 00:58:10,880
+Toplamda maalesef bubblesortta olduğu gibi
+
+330
+00:58:11,184 --> 00:58:14,184
+n² bölü iki tane şuradaki if'ten
+
+331
+00:58:16,484 --> 00:58:18,784
+geçmek zorunda kaldık.
+
+332
+00:58:19,624 --> 00:58:21,684
+Başka şansımız yok çünkü
+
+333
+00:58:21,684 --> 00:58:28,084
+mutlaka küçük elemanı bulmak için de aynı sayıda karşılaştırma yapmamız gerekiyor.
+
+334
+00:58:28,084 --> 00:58:32,184
+Ama toplamdaki yer değiştirme sayımız artık garantili.
+
+335
+00:58:32,424 --> 00:58:37,044
+Her iç döngü bittiğinde bir kere swap yapıyorum.
+
+336
+00:58:37,652 --> 00:58:52,051
+O yüzden de N tane yer değiştirme işlemi var. Karşılaştırmadan kaçamadım ama yer değiştirmelerin azalmasını garanti etmiş oldum. Bu da Selection Sort olarak karşımıza çıkıyor.
+
+337
+00:58:52,051 --> 00:59:05,051
+Hemen örnek, başı aynı gördüğünüz gibi dizinin tanımı işte beş elemanlı bir dizi, i'si j'si ve tmp'si aynı. Sadece bir minimum indis geldi buraya, mi, mini indis anlamında.
+
+338
+00:59:05,235 --> 00:59:10,235
+Siz daha güzel yazarsınız bunları. Ben Slide'da basit olsun diye kısa yazdım.
+
+339
+00:59:10,235 --> 00:59:20,235
+Sınavlarda da A, B, C, D gibi değişkenler kullanmak yerine biraz daha max indis.
+
+340
+00:59:20,304 --> 00:59:24,304
+Min bilmem ne gibi böyle biraz daha anlamlı şeyler kullanırsanız
+
+341
+00:59:24,304 --> 00:59:27,804
+Bizim dekoder modundan çıkmamıza yardımcı olursunuz.
+
+342
+00:59:27,804 --> 00:59:32,804
+Bunlar sınavın okunmasını değerlendirmesini de bayağı uzatıyor haberiniz olsun.
+
+343
+00:59:32,804 --> 00:59:37,804
+Ben compiler gibi hepsini sembolize, sembollerle şey yapamıyorum.
+
+344
+00:59:37,804 --> 00:59:40,804
+Hepsini tek tek çünkü kontrol etmem gerekiyor.
+
+345
+00:59:40,804 --> 00:59:44,804
+Peki ne yaptık? Dıştaki döngü işte n-1'e kadar gitti.
+
+346
+00:59:44,804 --> 00:59:47,804
+Yani burada n-2'ye kadar gitmiş oluyor.
+
+347
+00:59:48,304 --> 01:00:15,063
+%1'den dolayı S1 için 0'dan n-2. Minimum indisi i'inci göz olarak işaretledim. Sonrasında içteki döngü i artı 1'den n'e kadar. Eğer eleman küçükse minimum indisi güncelledim. Bu daha küçük indisidir. Bu daha küçük bir değeri gösteriyor. Ve buradaki içteki döngü bitince şurası swap. Swap işlemini gerçekleştirmiş oldum.
+
+348
+01:00:15,668 --> 01:00:32,668
+Sonra da ekrana yazdırıyoruz. Başka bir şey yok. Hemen aynı örnek üzerinden Selection Sort'u çalıştıralım. Şurada yine... Şimdi gazeri geri getireyim.
+
+349
+01:00:38,260 --> 01:01:05,539
+indisler yukarıda. Analiz gibi olsun diye de koddaki i ve min değer minimum indis. Burada bak, mi i yazdı ama min yok. Minimum indis değerlerini de şuraya koyduk ya da minimum değeri yazdırız buraya. Minimum indisteki değeri yazdınız. Bu şekilde bir işletelim bakalım. Şimdi ilk olarak i 0. Minimum değer ne? Minimum indis 0. Minimum indisteki değer ne? 8.
+
+350
+01:01:06,003 --> 01:01:17,523
+Peki, şimdi ilk iterasyonu da ilerleyeceğim ve minimumu bulacağım. Sekizde, şuradaki şey, sekizde beşi karşılaştırdım, artık beş.
+
+351
+01:01:17,523 --> 01:01:29,523
+Iterasyon yapmamışız, beş. Ondan sonra beşte ikiyi karşılaştırdım, minimum iki, minimum değer iki ya da indislerden gidelim, minimum indis iki.
+
+352
+01:01:29,780 --> 01:01:50,900
+Sonra 6 ile 2'yi karşılaştırdım. Hala burası değişmedi. 6 ile 9'u karşılaştırdım. 2 daha küçük olduğu için değişmedi. 2 ile 3'ü karşılaştırdım. 3 daha küçük değil, değişmedi. 2 ile 1'i karşılaştırdım. 1 daha küçük. Minimum imdis değişti. Şurayı gösteriyor. Minimum değer bu.
+
+353
+01:01:51,315 --> 01:02:00,315
+1 ile 4'ü karşılaştırdım değişmedi. 1 ile 0'ı karşılaştırdım değişti. Minimum değer buraya gösteriyor. 0 ile 7'yi karşılaştırdım değişmedi.
+
+354
+01:02:00,315 --> 01:02:14,283
+Şimdi minimum indi 8 ve minimum değer de 0. Ne yapacağım? Ben 8. gözdeki değer ile 0. gözdeki değeri swap edeceğim.
+
+355
+01:02:14,547 --> 01:02:40,247
+0 sen kalk buradan buraya taşın, 8 değeri sen gel buradan buraya taşın şeklinde. Bu işlemi gerçekleştirdiğimde ben ne yapmış oluyorum? 0'dan 9'a kadar olan eleman, indislerin içindeki eleman değerlerinin minimumunu buldum. 0 onu en başa taşıdım. Onun boşluğuna da o gözdeki değeri kaybetmemek için yazdım. 8. Tamam.
+
+356
+01:02:41,172 --> 01:03:05,572
+Sizce bu in place çalışıyor mu? Bubble Sword gibi? Çalışıyor. Çünkü gördüğünüz gibi ben hala aynı dizi üstünde çalışıyorum. Ne kadar harici yere ihtiyaç duyuyorum? Tek bir tane göze ihtiyaç duyuyorum. Bir TMP değişkeni. Tek bir değeri tutmak için. Kitabı aldım, elimde tuttum, öbür kitabı alıp yerine koydum. Elimdeki kitabı boşluğa yerleştirdim. Bu kadar.
+
+357
+01:03:06,195 --> 01:03:27,875
+Peki sıfır yerini buldu. Şimdi i'yi bir arttırıyorum, i'yi bir oldu. Bu ne demektir? Artık kalan dizi burası. Sıfırı gri ile yazdım özellikle. Bunun işi bitti diye. Şimdi tekrardan başlıyoruz. İşte burada minimum değeri şey yapacak. Minimum indismiş bu bu arada. Tamam sekiz. Şimdi önce minimumu beş olarak alacak.
+
+358
+01:03:28,467 --> 01:03:48,527
+değer olarak. Tamam. İndisleri şimdi okuması daha kolay oluyor. 5 ile 2'yi karşılaştırdım. Minimum değer 2. 2 ile 6'yı karşılaştırdım. Minimum 2. 2 ile 9'u karşılaştırdım. Minimum 2. 2 ile 3'ü karşılaştırdım. Değişmedi. 2 ile 1'i karşılaştırdım. Minimum 1. 1 ile 4'ü değişmedi. 1 ile 8'i değişmedi. 1 ile 7'i değişmedi.
+
+359
+01:03:48,943 --> 01:03:59,184
+Şimdi ben artık minimumun altıncı gözde olduğunu biliyorum. Ne yapacağım? Birinci gözdekiyle, yani iyinci gözdekiyle minimum indisteki gözdeki değerleri değiştireceğim.
+
+360
+01:03:59,184 --> 01:04:06,064
+Birdeki değer ne? Beş. Beşi alıp buraya koyacağım. Altındaki değer ne? Bir. Biri alıp buraya koyacağım.
+
+361
+01:04:06,064 --> 01:04:12,624
+Ve bir ilerlediğimde bu da yerini bulmuş olacak. Beş de buraya gitti bakın. Buradaki yer değiştirmek.
+
+362
+01:04:13,396 --> 01:04:37,635
+Peki, şimdi kalan elemanlar ne? İ2 olduğuna göre artık şurası. Bunların minimumunu bulacağım. Baktığınızda artık minimumu görüyorsunuz. İ2. İ2 ile 2'nin yerini değiştireceğim. Ne yaptım? İ2'yi TMP'ye aldım. Ondan sonra bunu 2'yi 2'ye yazdım. TMP'yi 2'ye geri yazdım. Biraz saçma oldu ama kendi gözüyle tekrar değerini değiştirmiş oldu.
+
+363
+01:04:40,244 --> 01:05:02,112
+İlerledik. Kalan, gördüğünüz gibi gri alan artık sıralana sıralana gidiyor. Şimdi kalanların en küçüğünü seçeceğim. Tekrar baştan ilerletmeyeyim. En küçük bu. O zaman, şuraya ile şurayı, yani 3 değeri ile 6 değerini ya da daha doğru değişle, 3. indisteki değer ile 5. indisteki değeri swap edeceğim. Ettim.
+
+364
+01:05:02,112 --> 01:05:24,492
+Artık bakın dizi 0, 1, 2, 3 şeklinde sıralandı. Kalanların en küçüğü 4. 4 ile 9'u yer değiştir. Değiştirdim. Kalanların en küçüğü 5. 5 ile 6'yı yer değiştireceğim. Kalanların en küçüğü 6. Herhangi bir yer değiştirme yapmayacağım. Kalanların en küçüğü 7. 7 ile 9'u yer değiştireceğim.
+
+365
+01:05:25,652 --> 01:05:31,412
+Kalanların en küçüğü, 8 ile 9 kaldı zaten, 8. 8 ile 8'i yer değiştireceğim.
+
+366
+01:05:31,412 --> 01:05:37,012
+Kalanların en küçüğü diye bir şey söylememe gerek yok. Çünkü i-1 tane elemanı işledim.
+
+367
+01:05:37,012 --> 01:05:42,132
+Son eleman, tek eleman, kendi içinde zaten sıralı demektir.
+
+368
+01:05:42,132 --> 01:05:47,012
+Onun için herhangi bir işlem yapmadım ve burada duruyorum. Ne oldu?
+
+369
+01:05:47,012 --> 01:05:52,452
+Selection Sort ile bu diziyi hep kalanların en küçüğünü seçip
+
+370
+01:05:52,692 --> 01:05:54,411
+İkilikler değiştir, mantık
+
+371
+01:06:07,380 --> 01:06:08,380
+düşünelim.
+
+372
+01:06:16,115 --> 01:06:16,836
+oops
+
+373
+01:06:20,019 --> 01:06:22,019
+İnternetiniz düzensiz diyor bana.
+
+374
+01:06:22,019 --> 01:06:26,019
+Herhangi bir kesikte oldu mu?
+
+375
+01:06:34,324 --> 01:06:36,324
+Çok az acım ama şimdi düzeldi.
+
+376
+01:06:36,923 --> 01:06:37,523
+He, okey.
+
+377
+01:06:38,364 --> 01:06:41,983
+Yani üniversitenin bazen interneti böyle git gel yapabiliyor malum.
+
+378
+01:06:44,063 --> 01:06:47,164
+Bu şekilde işte her adımda kalanları şey yaptık.
+
+379
+01:06:47,244 --> 01:06:49,603
+Peki, şeyi sormuştum, cevap alamadım.
+
+380
+01:06:50,324 --> 01:06:56,043
+Bubble Sort'ta biraz hani değişme olmuyorsa erken durabiliriz demiştik.
+
+381
+01:06:56,596 --> 01:07:05,215
+acaba ve wild döngüsü ile kurgulamamız gerekir demiştik. Acaba Selection Sort'ta da benzer bir erken durma stratejisi geliştirebilir miyim?
+
+382
+01:07:13,076 --> 01:07:14,076
+ve strebelemi.
+
+383
+01:07:24,820 --> 01:07:25,580
+Cevap yok.
+
+384
+01:07:31,572 --> 01:07:32,572
+Yok mu?
+
+385
+01:07:48,052 --> 01:07:49,731
+Düşünün, taşın, düşün, taşın.
+
+386
+01:07:53,331 --> 01:07:55,891
+Vallahi cevap yok kaldı, sınıf kaldı.
+
+387
+01:08:06,228 --> 01:08:14,168
+Bence geliştiremem çünkü her seferinde kalanım minimumunu kalanım minimumunu alıyorum. Burada gördüğünüz gibi bakın mesela 7
+
+388
+01:08:14,420 --> 01:08:21,779
+hep 7 olarak sonda kalmaya devam ettiriz. Şurada 8 baştaydı, 0 sondaydı. 0 ile yer değiştirdi ama
+
+389
+01:08:21,779 --> 01:08:25,779
+8 hep burada böyle kalmaya devam etti. 4 uzun süre burada kaldı.
+
+390
+01:08:25,779 --> 01:08:31,059
+Hani o yüzden kalanların en küçüğünü değişmemesini garanti edemem.
+
+391
+01:08:31,059 --> 01:08:35,619
+Yani Selection Sort'ta böyle Wire'la yazayım da daha erken durdurabileyim diye bir şey.
+
+392
+01:08:35,619 --> 01:08:37,619
+Kurgulamak doğru değil.
+
+393
+01:08:37,844 --> 01:08:59,344
+Ama Bubble Sort'ı isterseniz yapabilirsiniz. Nihayetinde Selection Sort neyi getiriyor bize ilave ya da iyilik olarak neyi getiriyor? Toplam yer değiştirme sayısını en kötü durumda n kareden n'e düşürüyor. Doğru mu? Çünkü Selection Sort'ta da ters verelim diziyi. Ters versek ne olacak? Hemen bakalım.
+
+394
+01:09:02,387 --> 01:09:25,247
+Hemen, deminki 6, 4, 2, 1 örneğini verelim. Şimdi ne yapacak? Minimum bu diyecek. Değil mi? Burayı işaretleyecek. Ondan sonra bakacak 6, 4, 4 daha küçük. 4 ile 2, 2 daha küçük. 2 ile 1, 1 daha küçük.
+
+395
+01:09:25,652 --> 01:09:52,292
+Şimdi dizinin en küçüğü neymiş? Birmiş. Bir ile altıyı yer değiştirecek. Bir, dört, iki, altı haline geldi. Şunu şuradan çizelim. Sonra kalanların en küçüğünü bulacağız ve şurayla ikinci gözle yer değiştireceğiz. Dört, iki, altı. Minimum bu. İki ile dördü yer değiştir. Şöyle ve bir, iki, dört.
+
+396
+01:09:52,595 --> 01:09:54,595
+6 haline getir.
+
+397
+01:09:55,595 --> 01:10:00,595
+Sonra 4 ile 6'yı karşılaştıracak. Kalanların en küçüğü 4. 4 ile 4'ü yer değiştirecek.
+
+398
+01:10:00,595 --> 01:10:05,595
+1, 2, 4, çizgi, 6.
+
+399
+01:10:05,595 --> 01:10:09,595
+Tek eleman kaldığı için bu zaten sıralıdır deyip duracağız.
+
+400
+01:10:09,595 --> 01:10:13,595
+Yani kaç tane karşılaştırma yaptık?
+
+401
+01:10:13,939 --> 01:10:21,479
+karşılaştırma sayımız değişmedi. Yine n² mertebesinde kaldı. Ama yer değiştirmeyi kaç tane yaptık?
+
+402
+01:10:21,479 --> 01:10:29,939
+1, 2, 3 kere yaptık. Yani şuradaki bir çizgi, iki çizgi ve üç çizgiyi izleyebilirsiniz.
+
+403
+01:10:29,939 --> 01:10:34,939
+3 kere yer değiştirme yaptık. Bu da n-1 tane yer değiştirme anlamına geliyor.
+
+404
+01:10:34,939 --> 01:10:37,939
+n mertebesinde yer değiştirme yaptık.
+
+405
+01:10:38,707 --> 01:10:42,867
+En kötü durumda, tabi bu 4 eleman için çok bir şey fark etmeyecek ama
+
+406
+01:10:42,867 --> 01:10:48,147
+Bubble Sort'ta çok daha fazla, 6 tane yer değiştirme yapmıştık. Burada 3 yer değiştirme yaptık.
+
+407
+01:10:48,147 --> 01:10:54,547
+Selection Sort'un Bubble Sort'u olan yegane üstünlüğü gördüğünüz gibi şey yapması.
+
+408
+01:10:57,939 --> 01:11:07,420
+toplam yer değiştirme sayısının linear mertebede kalmasını yani n olmasını sağlayabilmesi. Bunun dışında çok ekstra bir şey getirmiyor ama
+
+409
+01:11:07,420 --> 01:11:11,000
+sonuçta o bile iyileştirme iyileştirmedir.
+
+410
+01:11:12,539 --> 01:11:14,059
+Evet
+
+411
+01:11:16,379 --> 01:11:18,679
+Şimdi geldik insertion sort'a.
+
+412
+01:11:19,179 --> 01:11:20,719
+Son olarak bugün
+
+413
+01:11:20,979 --> 01:11:23,799
+bir de insertion sort'a bakalım.
+
+414
+01:11:25,587 --> 01:11:30,028
+Insertion Sort
+
+415
+01:11:30,028 --> 01:11:32,947
+Slide'dan da gördüğünüz gibi
+
+416
+01:11:32,947 --> 01:11:37,587
+elinizde böyle oyun kartlarını
+
+417
+01:11:37,587 --> 01:11:39,188
+sıralamaya
+
+418
+01:11:39,188 --> 01:11:43,467
+nasıl sıralarsanız onun gibi çalışan bir algoritma
+
+419
+01:11:43,467 --> 01:11:48,827
+buna ilaveli ya da eklemedi ya da insertion sort adını veriyoruz
+
+420
+01:11:48,979 --> 01:12:07,420
+Sanki elimizde bir destek kağıdı alıyoruz ve ya da yerde duran bir destek kağıt var. Onları elimize ala ala teker teker ala ala sıralamaya çalışıyoruz. Şöyle ki, yine sınıfta bunu kartlarla gösterebilecektik de burada saçma oldu. Yerde
+
+421
+01:12:07,568 --> 01:12:09,568
+Buradaki örnekteki gibi olsun.
+
+422
+01:12:09,568 --> 01:12:15,087
+Şey var. Beş tane kağıdınız var. Tamam mı? Kapalı olarak duruyor deste.
+
+423
+01:12:15,087 --> 01:12:20,048
+En üstünden bir elemanı çektiniz ve direk sol elinize koydunuz. Böyle duruyor.
+
+424
+01:12:20,048 --> 01:12:23,728
+Şimdi bu tek eleman olduğu için zaten sıralı değil mi? Sıralı.
+
+425
+01:12:23,728 --> 01:12:29,007
+Sonra ikinciyi çektiniz. Diyelim ki ilk çektiğiniz kağıt dört'tü. Tamam mı?
+
+426
+01:12:29,007 --> 01:12:31,888
+Sonra beşi çektiniz. Yanına koydunuz.
+
+427
+01:12:32,083 --> 01:12:39,583
+5'i 4 ile karşılaştırdınız. 5, 4'ten büyük. O yüzden herhangi bir yer değiştirme yapmanıza gerek kalmadı.
+
+428
+01:12:39,583 --> 01:12:50,583
+Ondan sonra çektiniz, 2 geldi. 2'yi 5'in yanına koydunuz. 5 ile 2'yi karşılaştırdınız. 2 küçük. O zaman 5'in soluna geçmesi lazım.
+
+429
+01:12:50,583 --> 01:12:54,583
+Sonra geçirdiniz. Şu anda 4, 2, 5.
+
+430
+01:12:55,475 --> 01:13:01,635
+iki taşıdınız ama solundaki ile bir daha karşılaştırıyorsunuz. Karşılaştırmak zorundasınız doğru yerde mi diye.
+
+431
+01:13:01,635 --> 01:13:09,675
+iki ile dördü karşılaştırdınız. Dört daha büyük, iki daha küçük, yer değiştirdiniz. Şimdi elinizdeki deste iki, dört, beş haline geldi.
+
+432
+01:13:10,595 --> 01:13:19,995
+Dördüncü kağıdı çektiniz, on. Yerine koydunuz, beş ile on'u karşılaştırdınız. Beş küçük, on büyük, yer değiştirmediniz. Elinizdeki değer iki, dört, beş, on.
+
+433
+01:13:20,467 --> 01:13:35,827
+Son kağıdı çektiniz, koydunuz. 2, 4, 5, 10, 7'yi çektiniz. 7. Ama 7, 10'dan küçük. O zaman sola geçmesi lazım. Aynı buradaki resimdeki gibi 10'un yanına 7'yi koydunuz. Insert ettiniz gördüğünüz gibi.
+
+434
+01:13:35,827 --> 01:13:39,827
+5 ile de karşılaştırdınız. 5 daha küçük.
+
+435
+01:13:40,595 --> 01:14:07,875
+O zaman 5-7'den daha küçük olduğuna göre daha fazla değiştirme yapmama gerek yok. Elimde alıp inputları teker teker işlediğim, ilgili yerlere kaydırarak insert ettiğim bir sıralama çözümü var. İşte buna da insertion sort adını veriyoruz. Özetle sıradaki bir yeni elemanı al. Önceden sıraladığın kısım ile karşılaştır.
+
+436
+01:14:08,159 --> 01:14:15,239
+Ve ilgili olması gereken, durması gereken sıraya elindeki yeni input'u taşı.
+
+437
+01:14:16,139 --> 01:14:22,719
+Toplamda yaklaşık yine n² bölü 2 mertebesinde karşılaştırma yapmamız gerekiyor.
+
+438
+01:14:23,639 --> 01:14:28,459
+Ve n² bölü 2 civarında da yer değiştirme yapmamız gerekiyor.
+
+439
+01:14:28,916 --> 01:14:39,356
+Ya hocam, ne anladım ben bu işten? SelectionSort'ta n²² karşılaştırma, n yer değiştirme yapıyorduk. O daha iyi değil mi? Burada yer değiştirmeler n² mertebesinde.
+
+440
+01:14:39,356 --> 01:14:40,856
+Evet.
+
+441
+01:14:40,975 --> 01:15:00,175
+En kötü durumda öyle olabilir. Ama özellikle mesela girdiğinizin taşıdığı özellikler konusunda bilginiz varsa, Insurgent Sort sizi çok hızlandırabilir. Verdiğim örnekte mesela bazı durumlarda hiç karşılaştırma ve yer değiştirme yapmadınız. Sona kadar gitmeden durdunuz.
+
+442
+01:15:00,916 --> 01:15:11,155
+Hani ilk çektiğiniz kağıt 4'tü sonra 4, 2'yi çektiniz 2 ile yer değiştirdiniz. Sonra 5 geldiğinde 4 ile 5'i karşılaştığınız hiçbir şey yapmadınız.
+
+443
+01:15:11,155 --> 01:15:20,376
+10 geldiğinde 10 ile 5'i karşılaştığınız hiçbir şey yapmadınız ve elinize 4 tane input sıralı hale gelmişti. 2, 4, 5, 10 şeklinde.
+
+444
+01:15:20,376 --> 01:15:26,515
+Yani böyle çoğu durumda da aslında hiçbir yer değiştirme yapmadan kurtulabiliyorsunuz. Yani ortalama durumda.
+
+445
+01:15:27,539 --> 01:15:37,539
+Selection Sort'tan daha iyi şekilde bir yer değiştirme performansı da serpileyebiliyorsunuz. Peki, Insolution Sort hangi durumlarda iyi çalışır?
+
+446
+01:15:37,684 --> 01:16:02,164
+girdiğinizin kendi içinde ufak tefek böyle sıralanmış olduğunu biliyorsanız o zaman Minisurction Sort gerçekten diğerlerinden çok daha iyi çalışıyor. Yani lineer zamana yakın bir performans sergiler. Bu nasıl olabilir? Yani şöyle düşünün, sanki elinizde işte bir yine deste vardı tamam mı? Bir sayı destesi vardı mesela. Aslında sıralıydı.
+
+447
+01:16:02,336 --> 01:16:30,336
+Siz onu yanlışlıkla karıştırdınız, şöyle tat tat tat diye kağıtları ya da yere düşürdünüz karıştı ama böyle blok blok hani böyle kendi içinde sıralı yerler duruyor. Topladınız, hay Allah karıştım hadi bunu sıralayayım dediniz. İşte bu gibi durumlarda Insertion Sort diğer sortlardan çok daha iyi olacaktır. Ya da işte bölümde bir şey yapacağız diyelim, ne bileyim bir etkinlik herkesin bütün sınıfların sıraya girmesi.
+
+448
+01:16:30,336 --> 01:16:33,036
+istedik. Şimdi şeyi düşündüğünüzde mantığı
+
+449
+01:16:33,036 --> 01:16:36,096
+birinci sınıflar
+
+450
+01:16:36,096 --> 01:16:38,416
+kendi içinde arkadaş olduğu için bir araya
+
+451
+01:16:38,416 --> 01:16:39,516
+toplanacaktır değil mi?
+
+452
+01:16:39,872 --> 01:17:07,872
+bir arada duracaklardır. İkinci sınıflar bir arada, üçüncü sınıflar bir arada duracaktır gibi. Aralarda yine üçler, dörtler falan karışabilir ama geneli daha çok blok halinde duracaktır. Bunları aldığınızda önce birler, sonra ikiler. Şimdi birler kendi içinde, ikiler kendi içinde biraz daha sıralı olacak. O yüzden böyle durumlarda gerçek hayat uygulaması örneği vermeye çalıştım. Hani insertion sort gibi bir çözüm daha iyi bir performans getirecektir.
+
+453
+01:17:07,872 --> 01:17:13,872
+sizlere gir diye göre yani aslında uygun olduğunda hemen Insurion Sort'u kullanabiliriz.
+
+454
+01:17:13,872 --> 01:17:31,872
+Lise de kodundan bahsedeyim. Yine şeyden de kalemimizi alalım. Şuradan başlayalım. Burada bir startımız olacak. Ondan sonra yine EN ve AN'i okuyacağız.
+
+455
+01:17:36,435 --> 01:17:38,435
+Keşke tabletle yapsaydım.
+
+456
+01:17:38,435 --> 01:17:40,435
+Neyse.
+
+457
+01:17:40,435 --> 01:17:43,435
+Nasıl olsa sadece bir hafta.
+
+458
+01:17:43,435 --> 01:17:46,435
+Bunları okuduk.
+
+459
+01:17:46,435 --> 01:17:50,435
+Ondan sonra işte i 2'den n'e kadar.
+
+460
+01:17:50,435 --> 01:17:53,435
+Neden 2'den başlıyorum?
+
+461
+01:17:53,435 --> 01:17:58,435
+Çünkü ilk eleman, hani desteği, diziyi şöyle düşünelim.
+
+462
+01:17:58,435 --> 01:18:02,435
+Bakın kendi içinde tık tık ne kadar şeyler yapıyor görüyor musunuz?
+
+463
+01:18:08,692 --> 01:18:25,732
+Böyle. Ben diyorum ki 2'den N'e kadar çalış. Neden? Çünkü bu eleman, zaten hani ilk kartı aldım polarime koydum. Zaten sıralı dediğim şey. Tek eleman zaten kendi içinde sıralı. O yüzden 2'den başlayıp N'e doğru gidiyoruz. 2'den N'e.
+
+464
+01:18:29,427 --> 01:18:56,007
+hemen sıradaki ilk elemanı şunu alıp bu benim yeni çektiğim karttır diyerek ona key dedim ben anahtar anlamında. Siz tmf, mmf, her şeyi diyebilirsiniz. Key eşittir a i dedim. Yani ben sıradaki ilk elemanı işleyeceğim dedim ve bunu yani sıradaki key dediğim a i'inci elemanı
+
+465
+01:18:56,404 --> 01:19:22,244
+Önceden sol tarafta olan 1'den i-1'e kadar oluşmuş olan diziye ekleyeceğim. Onun için de benim bir döngüye ihtiyacım var. Gidebildiğim kadar gittiğim bir döngüye ihtiyacım var. Bunun için de en uygun döngü while döngüsü. Şimdi j benim while iteratörüm olsun. Doğal olarak i'den başlayacak. Çünkü aşağı doğru gideceğim. Ve burada şöyle bir kontrol gerçekleştireceğim.
+
+466
+01:19:23,475 --> 01:19:45,975
+J birden büyük olduğu sürece negatife gitmeyi istemeyiz değil mi? AND, AND'ı şöyle yapayım siz anlayın. Birden büyük olduğu sürece AND. Zaten solda pseudocodu var da akış haline de getirmek istiyorum. Tahta da bunu böyle akışta yavaş yavaş anlatmak çok daha güzel oluyor biliyorum. Bir önceki eleman.
+
+467
+01:19:47,699 --> 01:19:52,239
+yani i-1'den başlayarak
+
+468
+01:19:52,239 --> 01:19:53,679
+karşılaştıracağım.
+
+469
+01:19:54,960 --> 01:19:56,579
+key'den büyük olduğu sürece
+
+470
+01:19:56,579 --> 01:19:58,139
+bu ne demektir? Hey bir dakika
+
+471
+01:19:58,139 --> 01:20:00,179
+benim yeni gelen elemanım
+
+472
+01:20:00,179 --> 01:20:02,300
+bunlardan küçük. O zaman
+
+473
+01:20:02,300 --> 01:20:03,899
+sola doğru bunu kaydırmalıyım.
+
+474
+01:20:04,279 --> 01:20:05,840
+Doğru yeri bulana kadar
+
+475
+01:20:05,840 --> 01:20:07,300
+şurada gördüğünüz gibi
+
+476
+01:20:07,300 --> 01:20:11,000
+kayboldu.
+
+477
+01:20:12,599 --> 01:20:13,979
+Doğru yerden bir şey.
+
+478
+01:20:15,520 --> 01:20:17,520
+işlemi gerçekleştireceğiz.
+
+479
+01:20:17,520 --> 01:20:19,520
+Şurası tek bir wire.
+
+480
+01:20:19,520 --> 01:20:24,520
+Şu wire'lığın
+
+481
+01:20:24,520 --> 01:20:30,520
+içinde sadece bu ag
+
+482
+01:20:30,520 --> 01:20:33,520
+atamasını gerçekleştiriyorum.
+
+483
+01:20:33,520 --> 01:20:36,520
+Kaydırıyorum yani.
+
+484
+01:20:36,520 --> 01:20:39,520
+Tak tak tak tak. Slap işlemi.
+
+485
+01:20:39,520 --> 01:20:40,520
+Peki.
+
+486
+01:20:42,707 --> 01:20:52,187
+Bu while bittiğinde ne oldu? Ben yerini buldum. O zaman j'yi de biraz azaltırım ve elimdeki değeri olması gereken yere koyarım.
+
+487
+01:20:52,187 --> 01:21:01,147
+Sonrasında bu algoritma yarım kaldı. Burada yer kalmadığı için. Buradaki döngü işte şuraya gelecek.
+
+488
+01:21:09,108 --> 01:21:09,288
+c
+
+489
+01:21:09,288 --> 01:21:10,648
+c-c-1
+
+490
+01:21:10,648 --> 01:21:14,228
+atamayı yapacağım. Atamayı yazayım çünkü.
+
+491
+01:21:14,228 --> 01:21:16,268
+yazamıyorum.
+
+492
+01:21:16,268 --> 01:21:22,167
+bu da böyle. Ondan sonra bu for döngüsünün sonuna gitti.
+
+493
+01:21:22,167 --> 01:21:25,488
+ve burada siz yazdırıp bitirirsiniz.
+
+494
+01:21:25,488 --> 01:21:28,047
+ne oldu? Ben bir
+
+495
+01:21:28,047 --> 01:21:32,148
+n-1'lik dışarıda yine işlem yapıyorum.
+
+496
+01:21:32,148 --> 01:21:33,688
+içeride de
+
+497
+01:21:34,100 --> 01:21:36,699
+Yaklaşık yine n bölü 2 kadar
+
+498
+01:21:37,699 --> 01:21:41,500
+Gitgide azalarak gittiği için eleman sayısı n'den başlayıp 1'e kadar
+
+499
+01:21:42,940 --> 01:21:46,500
+karşılaştırma ve yer değiştirme işlemi gerçekleştiriyorum.
+
+500
+01:21:46,500 --> 01:21:51,100
+İşte bu nedenle yine 1 bölü 2 n kare mertebesinde yaklaşık
+
+501
+01:21:52,100 --> 01:21:53,100
+karşılaştırma
+
+502
+01:21:53,648 --> 01:22:03,648
+karşılaştırmayı değiştiremiyorum, evet. Ama daha az sayıda olabilir. Yine n² bölü 2 mertebesinde yer değiştirme işlemi ile buradaki işi tamamlıyorum.
+
+503
+01:22:03,648 --> 01:22:17,648
+n-1 adımda n bölü 2 tane karşılaştırma yaptığım için n² bölü 2 mertebesinde işlem yapmam gerekiyor.
+
+504
+01:22:21,876 --> 01:22:37,476
+Burada da yine yerinde sıralama yapıyorum. In place sıralama yapıyorum. Şöyle örneğimizi tekrar üzerinden aynı örnekle devam edelim. Insolution Sort'a da bunu gerçekleştirelim.
+
+505
+01:22:37,476 --> 01:22:48,619
+Neredeyim? Şuradayım. Input'umuz ne? Buradaki dizi 8, 5, 2, 6, 9, 3, 1, 4, 0, 7. Şimdi ilk elemanı pas geçiyorum. Neden?
+
+506
+01:22:48,627 --> 01:23:12,227
+Zaten kendi içinde bu sıralı değil mi? Buna yapacak bir şey yok. Şimdi geldik buraya. K dediğim karşılaştıracağım eleman kalan tarafın şuradakilerin birincisi. 5. Şimdi 5'i sol taraftaki diziyle karşılaştırıp uygun yerini bulup yer değiştireceğim. Uygun yeri neresi? 0.
+
+507
+01:23:12,688 --> 01:23:17,128
+Çünkü 5, 8. 8, 5'ten büyük. Bunların yer değiştirmesi lazım.
+
+508
+01:23:17,768 --> 01:23:20,988
+Ve yer değiştirerek 5'i buraya taşıdım.
+
+509
+01:23:21,528 --> 01:23:24,007
+8'i de burada tutmaya devam ediyorum. Tamam mı?
+
+510
+01:23:24,768 --> 01:23:26,887
+Yani 5 ile 8 yer değiştirdi.
+
+511
+01:23:27,668 --> 01:23:32,568
+Şimdi j'nin eksi 1 olduğunu, i'nin 1 olduğunu, i'nin de 5 olduğunu görüyoruz.
+
+512
+01:23:32,948 --> 01:23:34,648
+Peki geldik şimdi şuraya.
+
+513
+01:23:35,123 --> 01:24:00,263
+5 yerini buldu. Kalan elemanlardan devam edeceğim. 8 burada duruyor. Ne demek bu? Benim şu 5 yerini buldu ama şu ana kadar buldu. Soldaki oluşan dizim, yani sol elimde tuttuğum kartlar şu anda sadece 5 ve 8'den oluşuyor. Tamam. Şimdi kalan elemanların birincisini key olarak atıyorum. Kalan elemanlar ne? Bu taraf.
+
+514
+01:24:00,819 --> 01:24:04,819
+Kalan emanların birincisini kırmızı ile gösterdik burada iki.
+
+515
+01:24:05,039 --> 01:24:17,039
+Şimdi ne yapacağız? 2 ile 8'i karşılaştıracağız. 8 büyük. Ondan sonra 2 ile 5'i karşılaştıracağız. 2 daha küçük, 5 daha büyük.
+
+516
+01:24:17,039 --> 01:24:24,039
+2'nin nerede olması lazım burada? Benim bunu böyle kaydıra kaydıra, doğru yeri sıfırıncı gözdür demem gerekiyor.
+
+517
+01:24:24,039 --> 01:24:31,039
+İlk olarak 8 ile 2'yi karşılaştırdım. Yer değiştirdim. 2 ortaya kaymış oldu.
+
+518
+01:24:38,100 --> 01:24:44,760
+iki kalan elemanlarda soldaki oluşan diziyle sol elimdeki kartlarla karşılaştıracaktım.
+
+519
+01:24:45,020 --> 01:24:51,920
+iki ile sekiz ikiyi bir yana kaydırdım. Ondan sonra tabii ki beş ile ikiyi de karşılaştırdım. Bunu bir yana kaydırdım.
+
+520
+01:24:52,180 --> 01:24:53,460
+Ve ne oldu?
+
+521
+01:24:53,720 --> 01:24:58,060
+iki, beş, sekiz şeklinde bir hala şuradaki gri olmaması lazım.
+
+522
+01:24:58,319 --> 01:25:00,119
+Bunu yanlış yapmışız. Neyse.
+
+523
+01:25:00,380 --> 01:25:01,659
+iki, beş, sekiz
+
+524
+01:25:02,355 --> 01:25:24,996
+Solda oluşan, sol elimde tuttuğum kağıt destesi. Kalan elemanların en solundakini yine key değeri olarak aldım. Şurada zaten analizinde i'leri ve j'leri yazdım sizin için. Tekrar sonrasında videodan da takip edebilirsiniz. Kalan elemanların değerini 6. Şimdi 6 ile 8'i karşılaştıracağım. Bunlar yer değiştirecek.
+
+525
+01:25:25,460 --> 01:25:46,699
+6 ile 5'i karşılaştıracağım. Herhangi bir yer değiştirme yapmama gerek var mı? Yok. Çünkü bu olması gereken yere araya tık diye kart olarak girdi. Şimdi 2, 5, 6, 8 sol elimde tuttuğum deste. Tam olarak buradaki durum. 9. 9 ile 8'i karşılaştırdım.
+
+526
+01:25:47,347 --> 01:26:07,588
+Herhangi bir yer değiştirme yapmama gerek var mı? Yok. Her anında yerini buldu. Bakın, burada 1, 2, 3, 4 tane yer değiştirmeden kurtulmuş oldum. Sadece bir karşılaştırma yaptım, yerini buldu. Şansıma büyük bir kağıt çektim. En sağda yerini aldı yine. 2, 5, 6, 8, 9. Şimdi kalanlar 3'e geldik.
+
+527
+01:26:08,083 --> 01:26:20,543
+Üç, dokuzla karşılaştı, yer değiştirdi. Sekizle karşılaştı, yer değişti. Altıyla karşılaştı, yer değişti. Beşle karşılaştı, yer değişti. İkiyle karşılaştı, yer değişmedi.
+
+528
+01:26:21,043 --> 01:26:44,043
+2, 3, 5, 6, 8, 9 şeklinde oluştu. Şimdi ne olacak? 1. 1 şanssız bir sayı, en küçük sayıyı çektim çünkü şu ana kadar olan. Karşılaştır, yer değiştir. Karşılaştır, yer değiştir. Karşılaştır, yer değiştir. Karşılaştır, yer değiştir. Karşılaştır, yer değiştir. En başa kadar taşımak zorunda kaldım. Tık tık tık. En kötü durum gördünüz mü?
+
+529
+01:26:44,787 --> 01:26:57,747
+maalesef. Evet. 1, 2, 3, 5, 6, 8, 9. Yani 9'da sevinç yaşamıştım. 1'de de çok müzün yaşadım. Çok fazla karşılaştırıp yer değiştirmeye ihtiyacım oluştu. 4.
+
+530
+01:26:58,292 --> 01:27:16,712
+9 ile karşılaştır yer değiştir. 8 ile yer değiştir. 6 ile yer değiştir. 5 ile yer değiştir. 3 ile değiştirme. Yani 1, 2, 3 ile 3'ten sol tarafıyla hiç karşılaştırmadım. Kazancım bu oldu. 1, 2, 3, 4, 5, 6, 8, 9 şeklinde dizildi. Burada gördüğümüz yerleşim.
+
+531
+01:27:17,908 --> 01:27:38,908
+0 geldi. 0 gelebilecek tabii ki en kötü şey oldu bizim için ve 9 ile karşılaştır yer değiştir. Karşılaştır yer değiştir. En başa kadar geldi 0, 1, 2, 3, 4, 5, 6, 8, 9 oldu tam olarak şöyle şimdi 7 kaldı.
+
+532
+01:27:39,199 --> 01:28:01,500
+7'yi de başta hani bu zaten sıralıdır demiştim. 7 mutlaka yine karşılaştırmak zorunda. N'e kadar gitmemin sebebi bu. 7 ile 9'u karşılaştır yer değiştir. 8 ile karşılaştır yer değiştir. 6 ile karşılaştır yer değiştirme. Bu kadar. Böyle yerini değiştirip sonucu oluşturmuş olduk.
+
+533
+01:28:02,387 --> 01:28:07,947
+Insertion Sort da bu şekilde çalışıyor. En kötü durumu ne Insertion Sort'un? Yine bakalım.
+
+534
+01:28:12,564 --> 01:28:38,304
+Kalemimizi alalım. Şuradan şöyle yazalım. 6, 4, 2, 1. Şimdi 6 kendi içinde sıralı olduğu için ellemiyorum. 4 ile 6'yı karşılaştırdım. Yer değiştirdim. 4, 6, 2, 1. Şuradayız. 2 ile 6'yı karşılaştırdım. Yer değiştirdim. 4, 2, 6, 1.
+
+535
+01:28:38,931 --> 01:28:41,152
+Sonra 2 ile 4'ü karşılaştırdım.
+
+536
+01:28:41,251 --> 01:28:42,231
+Yer değiştirdim.
+
+537
+01:28:42,572 --> 01:28:46,192
+2, 4, 6, çizgi 1.
+
+538
+01:28:47,431 --> 01:28:47,711
+Değil mi?
+
+539
+01:28:48,791 --> 01:28:49,532
+Doğru yerdeyim.
+
+540
+01:28:50,311 --> 01:28:50,492
+Evet.
+
+541
+01:28:51,391 --> 01:28:52,891
+Ve 1'i karşılaştıracağım.
+
+542
+01:28:52,992 --> 01:28:54,251
+1 ile 6'yı karşılaştır.
+
+543
+01:28:54,331 --> 01:28:55,011
+Yer değiştir.
+
+544
+01:28:55,211 --> 01:28:57,871
+2, 4, 1, 6.
+
+545
+01:28:57,871 --> 01:28:59,811
+1 ile 4'ü karşılaştır.
+
+546
+01:28:59,891 --> 01:29:00,612
+Yer değiştir.
+
+547
+01:29:00,831 --> 01:29:03,411
+2, 1, 4, 6.
+
+548
+01:29:04,532 --> 01:29:27,492
+ve 1 ile 2'yi karşılaştır, yer değiştir. 1, 2, 4, 6. Bitti. Gördüğünüz gibi 1, 2, 3, 4, 5, 6, 7 tane karşılaştırma ve yer değiştirme işlemi gerçekleştirmek zorunda kaldım. Pardon. Şurada. Evet, 1. Sonrasında 1, 2, 3, 4, 5, 6 tane.
+
+549
+01:29:27,891 --> 01:29:33,531
+Yine n² mertebesinde işlem yapmak zorunda kaldım.
+
+550
+01:29:35,051 --> 01:29:37,371
+En iyi durumu ne?
+
+551
+01:29:37,871 --> 01:29:39,411
+En iyi durumuna bakalım.
+
+552
+01:29:40,171 --> 01:29:43,511
+1, 2, 4, 6
+
+553
+01:29:44,271 --> 01:29:45,051
+Şimdi
+
+554
+01:29:45,551 --> 01:29:47,612
+1 zaten kendi içinde sıralıydı.
+
+555
+01:29:47,851 --> 01:29:49,911
+2 ile 1'i karşılaştırdım.
+
+556
+01:29:50,171 --> 01:29:51,192
+Hiçbir şey yapmadım.
+
+557
+01:29:52,340 --> 01:29:55,580
+4 ile 2'yi karşılaştırdım, hiçbir şey yapmadım.
+
+558
+01:29:55,580 --> 01:29:59,420
+6 ile 4'ü karşılaştırdım, hiçbir şey yapmadım.
+
+559
+01:29:59,420 --> 01:30:00,420
+Gitti.
+
+560
+01:30:00,420 --> 01:30:02,420
+3 karşılaştırma.
+
+561
+01:30:02,420 --> 01:30:03,340
+Değil mi?
+
+562
+01:30:04,275 --> 01:30:30,756
+Hiç yer değiştirme ile işi tamamlamış oldum. Bu yüzden diyorum ki kendi içinde sıralı parçalar olduğunu bildiğiniz bir dizi varsa, kısmi sıralı dizileriniz varsa girdiniz, Insertion Third kullanmak baya bir karlı olacaktır. Ortalama durumda hiç yer değiştirme ya da çok az yer değiştirme ve mümkün olan en az sayıda karşılaştırmayı yapacağı için.
+
+563
+01:30:32,020 --> 01:30:41,079
+Evet, peki şeyleri tartışmadık. Stable ya da unstable olup olmamalarını karşılaştırmadık.
+
+564
+01:30:44,787 --> 01:30:46,787
+Onlar için ne dersiniz?
+
+565
+01:30:49,187 --> 01:30:53,287
+Şöyle bir boş slide bulalım kendimize.
+
+566
+01:30:54,427 --> 01:30:55,427
+Şöyle.
+
+567
+01:30:59,347 --> 01:31:24,627
+Tamam. Şurayı kullanalım. Kalemimizi alalım. Şunun üstünü çizelim. Aynı. Nasıl kullanalım? Bir dakika. Tekrarlı bir şeyimiz olsun. 2 ya da 4.
+
+568
+01:31:26,963 --> 01:31:28,684
+2, 2
+
+569
+01:31:28,684 --> 01:31:31,564
+şu noktalı 2 olsun.
+
+570
+01:31:32,443 --> 01:31:33,863
+2, 2
+
+571
+01:31:33,863 --> 01:31:36,783
+ve 6.
+
+572
+01:31:38,463 --> 01:31:39,283
+Şimdi bunu
+
+573
+01:31:39,283 --> 01:31:41,764
+Bubble Sort ile sıralayalım.
+
+574
+01:31:45,811 --> 01:31:47,711
+Evet, kim sıralar benim için?
+
+575
+01:31:51,891 --> 01:32:18,251
+4 ile 2'yi ben yapayım tamam. 4 bubble sort yapıyoruz tamam. Bubble sort. Şöyle yazalım şuraya. Bu noktalı 2. Bakalım çıktı da sırayı koruyor muymuş, korumuyor muymuş. 4 ile 2'yi karşılaştırdım. Yer değiştirdim. 2, 6. Ondan sonra
+
+576
+01:32:18,836 --> 01:32:22,016
+4 ile bu 2'yi karşılaştırdım, yer değiştirdim.
+
+577
+01:32:22,916 --> 01:32:24,876
+2, noktalı 2,
+
+578
+01:32:25,876 --> 01:32:27,916
+4, 6.
+
+579
+01:32:28,596 --> 01:32:31,056
+4 ile 6'yı karşılaştırdım, yer değiştirmedim.
+
+580
+01:32:32,235 --> 01:32:32,436
+Tamam.
+
+581
+01:32:33,436 --> 01:32:35,216
+O zaman şu şey yaptı.
+
+582
+01:32:35,695 --> 01:32:38,655
+2 ile 2'yi karşılaştırdım, şimdi ne yapacağım?
+
+583
+01:32:43,283 --> 01:32:46,443
+bir şey yapab.
+
+584
+01:32:54,355 --> 01:32:55,355
+Burada mısınız?
+
+585
+01:33:02,676 --> 01:33:05,676
+Sanofta ne güzel etkileşim yaşıyorduk. Burada niye yaşayamıyoruz?
+
+586
+01:33:07,676 --> 01:33:08,676
+Aaaahhhhhh
+
+587
+01:33:08,676 --> 01:33:10,676
+Şimdi bakalım
+
+588
+01:33:14,899 --> 01:33:16,899
+kaçıncı slide diyor o?
+
+589
+01:33:18,899 --> 01:33:20,899
+3. slide de gitsin
+
+590
+01:33:22,899 --> 01:33:24,899
+bubblesoft, algoritmaya bakalım
+
+591
+01:33:26,899 --> 01:33:27,899
+nereymiş algoritma?
+
+592
+01:33:28,899 --> 01:33:31,899
+küçükse yer değiştir diyor, doğru mu?
+
+593
+01:33:33,899 --> 01:33:34,899
+doğru galiba
+
+594
+01:33:36,899 --> 01:33:37,899
+burada da
+
+595
+01:33:38,899 --> 01:33:39,899
+şurayı bulmuştuk
+
+596
+01:33:42,163 --> 01:33:56,403
+Tamam. Küçükse yer değiştir diyor. 2 noktalı 2'den küçük mü? Hayır. O zaman yer değiştirmedi. Tamam. Sonra ne yapacağız?
+
+597
+01:34:04,787 --> 01:34:05,787
+napıcaz?
+
+598
+01:34:12,051 --> 01:34:24,051
+i1 arttıracağız, c1 arttıracağız. Noktalı 2, 4 değiştirmedi. 4 zaten 6 ile karşılaştırılmayacak. Demek ki 4 yerini bulmuş.
+
+599
+01:34:24,051 --> 01:34:36,051
+Sonrasında normal 2 ile noktalı 2'yi karşılaştıracağız. Küçük mü diye bakıyorum. Küçük değil. O zaman yer değiştirmeyeceğiz. Ve çıktığı şu şekilde oluşturacağız.
+
+600
+01:34:37,555 --> 01:34:39,855
+2, 2, 2, 2, 2, 4, 6.
+
+601
+01:34:40,635 --> 01:34:41,615
+Sırayı korudu mu?
+
+602
+01:34:44,115 --> 01:34:45,495
+Evet, korudu.
+
+603
+01:34:46,175 --> 01:34:53,095
+Ama dikkat edin, ben implementasyonu yaparken i küçükse kontrolü yaptım.
+
+604
+01:34:53,695 --> 01:34:55,035
+Küçükse yer değiştir.
+
+605
+01:34:55,735 --> 01:35:01,715
+Küçük eşitse yer değiştir derseniz, o zaman instable olmaz.
+
+606
+01:35:02,336 --> 01:35:29,876
+Eğer küçüktür yer şeklinde bırakırsanız, Bubble Sort, Stable, küçüktür ise gördüğünüz gibi Stable olarak çalışmayı sağlayabildi. Doğru mu? Kontrol edin yine siz daha farklı değerler ve sayılarla. Sonra geldik Selection Sorta. Yine aynı inputu veriyorum. 4.
+
+607
+01:35:30,336 --> 01:35:32,636
+iki noktalı iki
+
+608
+01:35:33,155 --> 01:35:33,655
+böyle
+
+609
+01:35:33,916 --> 01:35:35,456
+rengi değiştirmek çok zor olacak
+
+610
+01:35:35,716 --> 01:35:36,475
+ve altı
+
+611
+01:35:36,996 --> 01:35:37,496
+şimdi
+
+612
+01:35:39,036 --> 01:35:39,815
+minimum ne
+
+613
+01:35:43,136 --> 01:35:46,216
+minimumu bulurken de yine şeye bakmamız gerekecek
+
+614
+01:35:46,456 --> 01:35:46,975
+şuraya
+
+615
+01:35:47,380 --> 01:35:52,539
+Minimum eşittir i, yani en baştaki elemandır, kalanların en başındakidir diyorum.
+
+616
+01:35:53,139 --> 01:35:58,800
+Ve burada da yine aj küçükse minimumdan yer değiştir diyorum. Küçük eşitse demiyorum.
+
+617
+01:35:59,559 --> 01:36:01,319
+Tamam? O zaman.
+
+618
+01:36:02,319 --> 01:36:04,720
+Minimum ne? Şimdilik 4, 2.
+
+619
+01:36:06,599 --> 01:36:08,720
+2 yer değiştir. Minimum şurası.
+
+620
+01:36:08,720 --> 01:36:11,399
+Bu bundan küçük mü?
+
+621
+01:36:12,435 --> 01:36:31,935
+Küçük eşit olsaydı evet deyip yer değiştirecektim. Devştirmiyorum. Küçük hala bu. Altı küçük mü? Hayır. Minimum bu. Minimumla dördün yerini değiştir. Normal ikiyle dördün yerini değiştirdim. Noktalı iki burada. Altı burada. Şu yerini buldum.
+
+622
+01:36:32,851 --> 01:36:59,612
+Kalanların en küçüğü, işte 4 dedim, 4, 2, 2 en küçük, 2 ile 4'ü yer değiştirdim. 2 yer buradaydı. Noktalı 2 buraya geldi. 4 buraya geldi, 6 buraya geldi. Bu da yerini buldu. Kalanların en küçüğü 4, 4 ile yerini değiştirdi. Ve 6 tepe kaldığı için zaten sıralıdır. Inputtaki normal 2 noktalı 2 çıktı da.
+
+623
+01:37:00,851 --> 01:37:28,152
+Normal 2, noktalı 2 şeklinde sıralamayı korudu. Yani bu da stable bir sort yaptı. Unutmayın yine küçüktür yazdığım için şartta, yer değiştirme şartında. Eğer küçük eşittir deseydim, o zaman stable bir sort yapmış olamazdım. Peki gelelim insertion sort'a. Yine 4, 2, noktalı 2.
+
+624
+01:37:30,612 --> 01:37:33,931
+6'yı input olarak verdim.
+
+625
+01:37:34,452 --> 01:37:37,011
+4 kendi içinde sıralıydı. Şöyle şey yaptım.
+
+626
+01:37:37,532 --> 01:37:39,572
+2 ile 4'ü karşılaştırdı.
+
+627
+01:37:40,851 --> 01:37:41,872
+Ne yaptı?
+
+628
+01:37:42,891 --> 01:37:44,172
+Yer değiştirdi.
+
+629
+01:37:45,212 --> 01:37:46,992
+2, 4, 2,
+
+630
+01:37:48,532 --> 01:37:49,552
+6
+
+631
+01:37:50,072 --> 01:37:53,912
+Bir süreye kadar çizgiyi çektim. Kalan eleman, ilk eleman bu.
+
+632
+01:37:54,095 --> 01:38:07,095
+2 ile 4'ü karşılaştırdı, yer değiştirdi. 4, 2, noktalı 2 burada, 2 burada, 6 buradaydı. Şimdi 2 ile 2'yi karşılaştıracak. Burada nasıl davranacak?
+
+633
+01:38:07,095 --> 01:38:12,095
+Hemen Instruction Sort koduna gitmemiz lazım.
+
+634
+01:38:12,095 --> 01:38:14,095
+Hızlıca gidelim.
+
+635
+01:38:17,971 --> 01:38:18,971
+bakalım
+
+636
+01:38:20,471 --> 01:38:23,351
+burada büyük olduğu sürece demişiz bakın
+
+637
+01:38:24,612 --> 01:38:26,332
+berbat hale geldi
+
+638
+01:38:26,832 --> 01:38:28,212
+temizleyim
+
+639
+01:38:31,112 --> 01:38:32,112
+şurası
+
+640
+01:38:33,271 --> 01:38:36,268
+bak hala kalp atışı gibi çalışıyor ya
+
+641
+01:38:47,028 --> 01:38:48,028
+Burası.
+
+642
+01:38:49,028 --> 01:38:50,028
+Büyüktür.
+
+643
+01:38:50,028 --> 01:38:53,028
+Büyük olduğu sürece kaydır demişiz.
+
+644
+01:38:53,028 --> 01:38:56,028
+O zaman geri gidiyorum.
+
+645
+01:38:56,028 --> 01:38:59,028
+Şuradaki kullandığım stahta olarak kullandığım yere.
+
+646
+01:38:59,028 --> 01:39:00,028
+Burasıydı.
+
+647
+01:39:00,028 --> 01:39:02,028
+Bu bundan küçük mü?
+
+648
+01:39:02,028 --> 01:39:03,028
+Değil.
+
+649
+01:39:03,028 --> 01:39:05,028
+O zaman yer değiştirmedim.
+
+650
+01:39:05,028 --> 01:39:06,028
+Tamam.
+
+651
+01:39:06,028 --> 01:39:07,028
+Şuraya kadar yapmış oldum.
+
+652
+01:39:07,028 --> 01:39:10,028
+Sonra 6 ile 4'ü karşılaştırdım.
+
+653
+01:39:10,028 --> 01:39:11,028
+Yer değiştirmedim.
+
+654
+01:39:11,028 --> 01:39:12,028
+Çıktı nasıl oluştu?
+
+655
+01:39:12,028 --> 01:39:13,028
+2.
+
+656
+01:39:13,028 --> 01:39:14,028
+Noktalı 2.
+
+657
+01:39:14,323 --> 01:39:35,323
+4 ve 6. Okey. Bu da yine stable şekilde çalışabildi. Tabii ki küçük türlere dikkat etmemiz gerekiyor. Peki. Ne yaptık? Sıralama problemini tanımladık. Sıralama problemini tanımladıktan sonra
+
+658
+01:39:35,760 --> 01:40:00,000
+Bunu nasıl çözeriz diye kafa yorduk. Aklımıza ilk gelen çözüm, büyük olanı bulalım, mümkün olduğunca sona taşıyalım mantığıydı. Onun için de ikili eleman karşılaştırmalarına ihtiyaç duyduk. Elemanları ikili ikili karşılaştırıp bulabildiğimiz büyüğü taşıyabildiğimiz kadar sağa taşıyalım mantığıyla ilerleyerek bir kabarcık gibi büyükleri yukarıya.
+
+659
+01:40:00,000 --> 01:40:19,000
+doğru taşımış olduk. Bu yüzden de buna bubblesort dedik. Bubble sort yerinde sıralama yaptı ama performans açısından işte n kare mertebesinde karşılaştırma n kare mertebesinde yer değiştirme ihtiyaç duydu. Hem en kötü hem en iyi durumlarında. Sonrasında
+
+660
+01:40:20,307 --> 01:40:31,307
+yerinde sıralama yaptığını söyledik ve stable olarak yani yerindeki çıktığı da sıralı olarak iki eleman için yaptığımız örnekte koruduğunu gördük.
+
+661
+01:40:31,604 --> 01:40:49,604
+Sonra dedik ki, ya biz acaba biraz iyileştirebilir miyiz? Evet, Bubble Sort'u eğer içteki döngüde yer değiştirme olmuyorsa, demek ki artık kalan elemanlar sıralıdır. Bunu ispatlamış olduk diyerek durdurabiliriz dedik. Bunun için de tabii For döngüsü kullanmamamız, While döngüleriyle bu işi yapmamız.
+
+662
+01:40:49,887 --> 01:41:13,188
+içindeki while'a girmeden bir flag değişkenini set et, yani sıfırlamamız ve eğer içeride dönüşüm olmuyorsa bunu set etmemiz ve bu sayede dıştaki döngüde flag'i de kontrol ederek flag set edildiyse tamam artık gerek yok daha fazla içine dönmeye deyip çıkmayı sağlamış olabiliriz. Bu da iyileştirilmiş bubble sort diyelim. Enhanced bubble sort diyelim ya da.
+
+663
+01:41:13,492 --> 01:41:41,492
+Bundan sonra dedik ki, acaba yer değiştirme sayısını azaltabilir miyiz? Bunun için de problemi, minimum eleman bulma problemi şeklinde ele almak istedik. Dizinin minimumunu bulup ilk elemanla yer değiştirdik. Kalan n-1 elemanlı dizinin minimumunu bulup ikinci elemanla, n-2 elemanlıyı bulup üçüncü elemanla böyle azaltı azaltı diziye gidip her şeyde karşılaştırmalarla her iki elemanla...
+
+664
+01:41:41,492 --> 01:41:54,692
+İterasyonda minimumunu bulalım. Bulduğumuz minimumu iyinci göze yer değiştirelim şeklinde seçerek sıralama yaptık. Buna da minimumu seçerek sıralama anlamında Selection Sort adını verdik.
+
+665
+01:41:54,692 --> 01:42:05,091
+Son olarak, acaba bunu da karşılaştırdığımızda işlem karmaşıklığını n² bölü 2'nin n² mertebesinde karşılaştırma yapmak zorundayız.
+
+666
+01:42:07,667 --> 01:42:20,987
+ve en yer değiştirme ile yani dıştaki iterasyonun her bir adımında yer değiştirme yaparak biraz da olsa hani bellek erişiminde yer değiştirme maliyetini azaltmış olduk.
+
+667
+01:42:21,268 --> 01:42:48,947
+Yine bunun en iyi en kötü durumunu şey yaptık. Selection Sort'ta ekstradan sadece tek bir tane TMP gözüne ihtiyaç duyuyordu. O yüzden bu da in place bir sort yapıyor. Aynı dizi üstünde yeni bir dizi tanımlamadan sort gerçekleştirebiliyorsunuz. Ve yine verdiğimiz buradaki ikili örnekte de Girdirdeki sırayı koruduğunu fark ettik. Tabi bunu yine üçlü dörtlü farklı şeylerle deneyelim.
+
+668
+01:42:49,140 --> 01:43:08,500
+diyorum her zaman için. Insertion Sort'a geçtiğimizde de acaba dedik diz, dizinin girdi dizimizin. Biraz böyle kendi içinde ufak tefek sıralı yerleri olduğunu biliyorsak, böyle Selection ya da Bubble'daki curl lemesine minimum bulma ya da curl lemesine büyüğü sona taşıma.
+
+669
+01:43:08,655 --> 01:43:17,775
+yaklaşımı yerine biraz daha değişmiyorsa ellemeyelim mantığıyla ilerleyebilir miyiz dedik. Sanki elimizde iskambit kağıtlarını...
+
+670
+01:43:19,220 --> 01:43:26,840
+bir deste de tutup, polerimizde böyle yeni gelen kartları aralara soka soka sıralamak gibi bir yaklaşım sergiledik.
+
+671
+01:43:26,840 --> 01:43:36,120
+Burada da yine n²²² mertebesinde yaklaşık karşılaştırma, yine en kötü durumda n²²² mertebesinde yer değiştirmek oluyor.
+
+672
+01:43:36,120 --> 01:43:46,500
+Fakat eğer kendi içinde sıralı parçalar varsa da neredeyse hiç yer değiştirme yapmadan, sadece tek bir soruyla bir adımı komple geçebildiğimizi gördük.
+
+673
+01:43:47,220 --> 01:44:01,660
+İşte hani ortalamada bizi daha böyle lineere yakın yerlere, gerçek hayat problemlerinde taşıdığını söyledik. Bu da yine yerinde sıralama yapıyor. Harici bir swap, tek bir yine göze ihtiyaç duyarsınız geçici saklamak için.
+
+674
+01:44:02,195 --> 01:44:17,195
+Ve şeyde yine stable olarak gerideki çıktığı koruduğunu, tabi hepsinde implementasyona bağlı olmakla birlikte küçüktür şeklinde düzgün ifadeler kullanılırsa stabilizasyonu sağladığını gördük.
+
+675
+01:44:17,716 --> 01:44:43,115
+Peki, hepsi aynı şekilde oldu, stable oldu, in place oldu, performansları da birbirine yakın oldu, yok mu bunun daha iyisi? Var. Var ama onun için henüz daha öğrenmediğimiz farklı algoritmik kavramlar var. Bunları da gördüğümüzde, farklı tasarım yöntemlerini görmeye başladığımızda onları da tartışacağız. Bunların bir tanesinin adını zaten konuştuk işte, Quicksort mesela.
+
+676
+01:44:43,648 --> 01:45:08,648
+Quicksort, nlogan mertebesinde daha iyi, n kareden daha iyi şekilde çalışırken, maalesef stabil değil. Yani gerideki sırayı korumayı kesinlikle garanti edemiyor. Böyle bir yaklaşımı var. Evet, o da in place çalışıyor. Bunun dışında nlogan ve stabiliteyi, pardon yine yansıtayım olsa da şey,
+
+677
+01:45:10,963 --> 01:45:38,963
+Enlogeni garanti eden, QuickSort da en kötü durumda n kareye çıkabilir. Enlogeni garanti eden başka bir yöntemimiz var. MergeSort mesela. Fakat gel gelelim, o da şey, hani Stability'de sıkıntı var ve onunla birlikte Out of Place Sort yapıyor. Yani siz en elemanlı bir diziyi sıralamak için en elemanlı başka bir diziye ihtiyaç duyuyorsunuz. Yedek diziye ihtiyaç duyuyorsunuz ya da çıktı oluşturma dizisi.
+
+678
+01:45:38,963 --> 01:46:06,903
+işine işte bellek probleminiz varsa bu sefer de onu kullanamıyorsunuz. Hızlı ama yer kaplıyor gibi. Bu şekilde tradeoff'larla hani duruma göre çalıştığınız probleme, ortama, platforma göre uygun olan çözümü seçip kullanmanız gerekir. Yani o yüzden hani ya niye şey ben bubble sortu kullanmak zorundayım ki ya da selection sortu kullanmak zorundayım ki daha hızlısı olduğunu biliyorum dersiniz.
+
+679
+01:46:06,963 --> 01:46:16,003
+ama stabilite gerekiyordur. O yüzden kullanmak zorunda kalabilirsiniz. Ya da ekstra belleğiniz yoktur. Kullanmak zorunda kalabilirsiniz gibi.
+
+680
+01:46:16,003 --> 01:46:27,003
+Duruma göre en uygun çözüm, daha doğrusu en iyi algoritma, duruma göre en güzel çözümü getiren, kısıtları karşılayan algoritmanız olacaktır.
+
+681
+01:46:27,003 --> 01:46:32,123
+Sıralama ile ilgili şu anda bize bu kadarı yeter.
+
+682
+01:46:32,756 --> 01:47:00,756
+Sanıyorum problemin ne olduğunu, çözüm yaklaşımlarında neleri dert ettiğimizi, nelere dikkat etmemiz gerektiğini işte hani performans açısından, bellek gereksinim açısından, stabilit açısından bunlardan tartıştık. Az çok işte dediğim gibi hem karşılaştırma hem yer değiştirme gereksinimlerini karşılaştırdık. Nasıl stabil çalıştıklarını gösterdik. Adım adım nasıl ilerlediklerini gösterdik.
+
+683
+01:47:00,756 --> 01:47:07,356
+nasıl iyileştirmeler yaptıklarını bahsettik. Sanıyorum bu haftalık bu kadar yeterli olacaktır.
+
+684
+01:47:07,356 --> 01:47:10,655
+Sorunuz var mı?
+
+685
+01:47:19,380 --> 01:47:42,780
+hızlıca indendim. Sonunda başka bir şey kaldı mı? Kalmamış. Evet, sorumuz yok galiba. O zaman saatimiz kaç? İyi, tam lap saatinde de gayet güzel şeyi tamamlamış olduk.
+
+686
+01:47:44,340 --> 01:48:06,340
+Eee, bunu da kapattık. Peki. O zaman, eee, projeler nasıl gidiyor? Bittiniz mi oyunları? Bitti hocam. İyi güzel. Eğlendiniz mi? Evet, evet. Bence çok iyiydi. Tamam, çok güzel.
+
+687
+01:48:06,612 --> 01:48:32,612
+Onun dışında başka işte dediğim gibi ikinci vizeleri nihayet okumayı tamamladım. Çünkü daha ortalamayı falan hiçbir şey hesaplamadım. Çünkü kağıttalar yani kağıtların üstünde bütün şeyler daha Excel'e ya da OBS'ye geçirmedim. Bugün hedef olarak tamamlamayı düşünüyorum. O yüzden şu anda ortalamanız şu diyemeyeceğim ama biraz dalgalı yani böyle
+
+688
+01:48:32,916 --> 01:48:56,315
+Şeyi çok anlayamadım. Mesela ilk soruyu iyi çözen arkadaşlar var ama onlar ikinci soruda çok acayip bir şekilde ters anlamışlar ya da çözememişler. İkinci soruyu çok iyi yapanlar biri de çuvallamış. Böyle hani, geldi gitli bir şey var ve ilk defa tarihte 99 olan bir öğrencim oldu. Hatta 98 de var galiba.
+
+689
+01:48:57,203 --> 01:49:22,524
+Baya baya tebrik ederim. Şu anda kim olduğunu bilmiyorum yani isimlere bakmadan okuduğumuz için. Fakat yani böyle yüksek notlar olduğu gibi 2, 3 gibi 5 gibi notlarımız da var. Yani o yüzden çoğu geniş bir dağılım var. Ortalama belli bir şey de olsa da standart satması biraz dalgalı olacak gibi görünüyor. Neyse siz onları zaten OBS'den büyük ihtimalle takip ediyorsunuz. Notları falan.
+
+690
+01:49:23,764 --> 01:49:38,764
+Çok fazla itiraz etmeyin. Hocam ben beklediğimden düşük geldi diye. Çünkü bahsettim. Şöyle tekrar hızlıca sorulara bakayım. Birinci soruda en çok yapılan hata
+
+691
+01:49:39,507 --> 01:49:59,988
+Bir şekilde boş, en büyük alanı ararken en kare, iç içe iki döngü yaparak aramalar çok fazla vardı. Bu iyi bir çözüm değil. Onlardan en az 10 puan gidiyor. Kaldı ki analizi unutan çok arkadaş vardı. Ya da analizi yaparmış gibi yapıp...
+
+692
+01:50:00,051 --> 01:50:10,051
+Aslında yanlış analiz yapan arkadaşlar vardı. Yani kendi akışıyla hiç alakasız analiz olan arkadaşlar vardı. En çok not bunlardan gitti. Emin olabilirsiniz yani.
+
+693
+01:50:10,051 --> 01:50:14,051
+Başka birinci soruyla ilgili söyleyeceğim.
+
+694
+01:50:15,347 --> 01:50:43,327
+Satlı bir şey yok. Ama çözen arkadaşların hepsi, yani iyi çözen arkadaşların hepsi iyi yakalamışlardı. Böyle hani mesela for döngüsüyle çözüldük çok güzel ama hani bu şeyi eksi birse devam et saydırmaya ve sonra da maksimumla karşılaştır. Maksimumdan büyükse güncelli ama sayıcı da sıfırlamayı unutma. Tekrar sayacağız çünkü şeklindeki yaklaşımlar doğru yaklaşımlardı. Hiç yok değil, var yani hani tam yapan.
+
+695
+01:50:43,347 --> 01:50:49,767
+yapan da var soruyu. Hatta tama çok yakın ufak tefek hatalarla yapanlar da var. Baya iyiydi yapanların durumu.
+
+696
+01:50:50,228 --> 01:51:18,228
+Yapamayanların yine en büyük hatalarından bir tanesi şuydu. Biz sadece en uzun alanı istiyoruz soruda. Ama orada böyle bütün alanları başka bir uzunluk dizisine alan, hani onda iyi ile ilerleten ve iyi ile çok kötü ilerleten hani mesela birinci adresin uzunluğu 1, ikinci adresin uzunluğu 2, ondan sonra üçüncü adresin uzunluğu 0, 0, 0, 0.
+
+697
+01:51:18,228 --> 01:51:42,467
+yapıp, ondan sonra da o dizi içinde aramayı tekrar yapıp da bunun maksimumunu bulayım diyenler var. Yani hani hem iki kere dönerek zaman kaybı, hani performans kaybı, hem de başka bir dizi, hatta iki dizi kullananlar var. İki dizi kullanarak gereksiz bellek alanı kullanımı vardı. Dediğim gibi bir döngü içinde sadece en uzun eksi biri, yani maksimum
+
+698
+01:51:42,739 --> 01:52:08,100
+Tekrardan eksi birleri bulacaksınız. Aslında soru bundan ibaret. Yoksa bellek mellek hikaye. Biliyorsunuz o işin biraz daha hikaye kısmı. Bu şekilde yapılan en çok hatalar bunlardı. Arkadaşlar hani ifiraz etmesinler diye baştan herkesin yaptığı hatayı söylüyorum. Bir de yine ders içinde anlattığım gibi değişken tanımlamak diye bir şey söz konusu değil. Yani int i falan yazmıyoruz bu şeyde.
+
+699
+01:52:08,692 --> 01:52:34,372
+akış diyagramında. İllaki i eşittir sıfırla başlamamız gerekiyorsa, mesela bir wild döngünüz var, onu gösterin. Ama onun dışında hani i kullanacağım diye i, j, k, n yazmak bir kutu içinde bir anlam ifade etmiyor. Eşit eşit ifadesi yanlış, artı artı ifadesi artım için yanlış. Bunların hepsinden bahsetmiştik. Yani dile özel notasyon kullanmamanız gerekir.
+
+700
+01:52:35,220 --> 01:52:47,220
+İkinci soru, ikinci soruda çok doğru anlayanlar var, hiç anlamayan arkadaşlar vardı. En sık yapılan hata yine harf dönüşümünü yapmamak.
+
+701
+01:52:47,988 --> 01:53:05,268
+Hani şu ASCII kod değeri var ya, ASCII kod değeri var ya, küçük A'yı mesela çıkartmanız gerekiyordu. Onu hiç çıkartmadan direkt ASCII sayısal değeriyle çalışanlar var ki o indisin biliyorsunuz 65 mi 97 mi şu anda hatırlamıyorum hangisi oldu. Küçük A hangisiyse.
+
+702
+01:53:05,391 --> 01:53:20,752
+97, 97 shift etmesine sebebiyet veriyor. Bu da tamamen yanlış bir çözüm oluyor. Ona rağmen puan vermeye çalışıyorum ama oradan ciddi puan kaybı oluştu.
+
+703
+01:53:20,880 --> 01:53:48,880
+Bu bir, iki, orayı iki boyutlu dizi yapanlar var. Şey olarak indisi karakter A'dan karakter Z'ye doğru sayanlar var Ford'a. Biz Ford döngülerini sayısal olarak biliyorsunuz oluşturuyoruz. Yani siz onun indisi karakterleri küçük A'dan çıkartarak hani birden 26'ye şeklinde oluşturmanız gerekiyordu. Yine burada yapılan neredeyse çok az kişinin fark ettiği boşluk karakteri.
+
+704
+01:53:48,880 --> 01:53:55,760
+muhabbeti de vardı. Boşluğu fark edip de boşluk kontrolü yapan çok az. Yani 3-5 kağıt ya vardır ya yoktur.
+
+705
+01:53:57,171 --> 01:54:24,791
+A şıkkında yazdırmayı unutanlar var. Hani karakter kullanım sıklığı dizisini yazdırın diyor soruda. Siz sadece buluyorsunuz, yazdırmıyorsunuz. Hocam ben sonda yazdırdım. Evet biliyorum, sonda yazdıranları görüyorum. Ama hiç yazdırmayanlarınız da vardı. B şıkkına geçtiğimizde de işte orada da matris oluşturmanız gerekiyor. Bunun için önce bir maksimum satır sayısını bulmanız lazım. Çoğunluk maksimum satır sayısını iyi kötü bulmuş.
+
+706
+01:54:25,268 --> 01:54:53,268
+Ondan sonra da işte burada şey önemliydi, hatta derste çözerken tartıştık, aşağıdan yukarı doğru çalışmanız esastı. Yukarıdan aşağı çalışıyorsanız da kontrolü düzgün yapmanız gerekiyordu. Burada genellikle matrisi yan yazdıranlar çok olmuş. Yani şey işte hani M satır neyse maksimum değer kadar satır sayısı 26 sütun sayısı olması gerekirken 26 satır M sütun şeklinde yazdıranlar.
+
+707
+01:54:53,268 --> 01:55:07,268
+yazdıranlar çok vardı. Bir de işte o max, eksi bilmem ne kontrolünü yapmadığı için tersten yazdıranlar vardı. Yukarıdan aşağı yani böyle disco şeyleri gibi aşağı doğru sarkan sarkıtlar gibi olan çözümler vardı.
+
+708
+01:55:07,572 --> 01:55:12,332
+Burada yine en çok dediğim gibi karakter dönüşümünden puanlar gitti.
+
+709
+01:55:12,332 --> 01:55:15,811
+İndiz kullanımından gitti.
+
+710
+01:55:15,811 --> 01:55:23,572
+Matrisin yazdırılması, matrisin oluşturulmasındaki o kontrollerden, çizginin çubuğun doğru yere koyulmasından gitti.
+
+711
+01:55:23,572 --> 01:55:27,332
+Ama yapmayan, yani yapan yok mu? Yapan da var. Hani hiç yok değil.
+
+712
+01:55:27,332 --> 01:55:31,131
+Bu şekilde en çok, en sık yapılan hataları söylüyorum.
+
+713
+01:55:31,131 --> 01:55:34,332
+Tabi bunların hepsini bir kombine ettiğinizde, burada da yine
+
+714
+01:55:34,644 --> 01:55:59,644
+değişken tanımlamaları, ıvırları, kıvırları, eşit eşitler, artı artılar falanlar falanlar. Bunlar hep bir araya getirdiğinizde notlarınız farklılaşmaya başlıyor. Hani 25 puanlık sorudan kimisi 23 alıyor, kimisi 18 alıyor. İki tane şey 18 almış ama bir tanesi eşit eşit kullanmış, artı artı kullanmış. O zaman o 16, 15 alıyor falan gibi böyle 3, 5, 3, 5 değişmeye başlıyor notlar.
+
+715
+01:56:01,043 --> 01:56:05,764
+Üst üste pek çok hata yapılırsa durum daha da kötü hale geliyor.
+
+716
+01:56:06,003 --> 01:56:34,003
+Son sorunda da C kodu vardı. C kodunda da baya şenlikli kodlar vardı. Değişik değişik hatalar yapılmıştı. Çok ufak tefek tipografik hataları göz ardı ediyoruz. Hani vay buraya noktalı örgülü koymamış. Hemen çiz, sıfır ver falan derlemiyor bu falan modunda değiliz. Kağıtta yazdığınızın farkındayız ama çok ciddi sıkıntılar. En büyük sıkıntı burada şey karakter dizisi okumamak, direkt integer okumak ya da
+
+717
+01:56:34,003 --> 01:56:43,364
+Karakter dizisi okusa da karakter dönüşümü yapmamak en sık yapılan hatalardı. Bunları zaten yine derste biraz tartışmıştık hatırlarsanız.
+
+718
+01:56:45,779 --> 01:57:13,779
+Yani demem o ki, hocam ben beklediğimden düşük aldım. Hep demeyin. O kadar çok nokta var ki gördüğünüz gibi bunlar hepsi bir kombinlendiğinde maalesef beklediğinizden düşük almış olabilirsiniz veya beklediğinizden yüksek almış da olabilirsiniz. Bazı arkadaşlar şaşırabilir mesela. Oh ben bu soruyu bu kadar iyi mi yapmışım ya? Şans eseri belki de bilmiyorum ama güzel şekilde çözümler. Çünkü şöyle, kod sorusu 2 puan. İşte matris oluştu.
+
+719
+01:57:13,779 --> 01:57:39,139
+yazdırma sorusundan zar zor 10 puan almış. 40 puanlık soru. Ama ilk soru tam 35. Direkt böyle her şeyle tam yapılmış falan. Böyle şeyler vardı, ilginç kağıtlar. O yüzden not dağılımları bir değişik oluşmuş olabilir. Bilmiyorum, ortalamaya dediğim gibi daha bakmadım. Gün içinde inşallah tamamlayacağım. Peki, fazla uzatmayayım sözü. Saat 11 olmuş.
+
+720
+01:57:39,796 --> 01:58:04,796
+Hiç ara vermeden iki saat boyunca benimle birlikte olduğunuz için teşekkür ediyorum. Olmayanlar da dersin kaydından zaten farklı zamanlarda videosunu ulaşıp izleyebilir. Çarşamba günü ayın kaçı oluyor? 8 Ocak. Değil mi? 8 Ocak Çarşamba son dersimizde.
+
+721
+01:58:07,188 --> 01:58:15,807
+Görüşmek üzere, online değil, yüz yüze sınıftayız. Son haftaki dersimizde de şöyle bir genel olarak
+
+722
+01:58:16,239 --> 01:58:22,000
+Bilgisayar ağları ve işletim sistemleri kavramlarına bir giriş yapacağız, bir tanıma yapacağız.
+
+723
+01:58:22,000 --> 01:58:27,679
+Bu kadar mimari dedik, CPU dedik falan dedik, plan dedik. Bunları işletim sistemi yönetiyor dedik.
+
+724
+01:58:27,679 --> 01:58:34,800
+Bakalım işletim sisteminde neler oluyormuş, bitiyormuş hızlı bir şekilde ve tabi ona bağlı olarak da bilgisayar ağları ve haberleşmede.
+
+725
+01:58:34,800 --> 01:58:39,599
+Temel kavramlar nelermiş bunlara bakarak yolumuza devam edeceğiz.
+
+726
+01:58:40,307 --> 01:58:48,747
+İyi hafta sonları diliyorum. Tabi her şeyden önce mutlu bir 2025 sağlıklı, başarı dolu bir yıl diliyorum hepinize.
+
+727
+01:58:48,747 --> 01:58:55,667
+Şimdiden iyi hafta sonlarını da dilemiş olarak tekrar dersi sonlandırıyorum. Hoşçakalın.
+
+728
+01:58:55,667 --> 01:58:58,228
+İyi günler hocam.
