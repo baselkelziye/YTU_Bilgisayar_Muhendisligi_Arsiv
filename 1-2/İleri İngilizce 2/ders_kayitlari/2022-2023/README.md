@@ -21,3 +21,4 @@
 | 34 | Bahar | Dilek Yıldırım | [sube_34/](sube_34/) |
 | 35 | Bahar | Zeynep Attar | [sube_35/](sube_35/) |
 | 38 | Bahar | Bulunamadı | [sube_38/](sube_38/) |
+| 39 | Bahar | Ezgi Aydemir Altaş | [sube_39/](sube_39/) |
