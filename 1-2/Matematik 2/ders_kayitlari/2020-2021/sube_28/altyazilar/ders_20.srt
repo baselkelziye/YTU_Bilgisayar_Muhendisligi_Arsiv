@@ -1,0 +1,5851 @@
+1
+00:01:36,531 --> 00:01:38,072
+Dekala, günaydın arkadaşlar.
+
+2
+00:01:43,731 --> 00:01:44,412
+Ormanetisi.
+
+3
+00:01:49,492 --> 00:01:54,451
+Şimdi yine sistem sıkışmasın diye ekranı kapatacağım.
+
+4
+00:01:57,212 --> 00:01:59,212
+Yani görüntü öyle demek istedim.
+
+5
+00:02:11,443 --> 00:02:18,683
+İki değişkenli fonksiyonlar kısmını bayağı bir toparladık. Özellikle doğrultu türevini değil mi?
+
+6
+00:02:38,388 --> 00:02:50,688
+Taylor türevini, işte linaleşme kavramını, tabii Taylor türevi içerisinde fonksiyon 2 ve 3 çeşkene fonksiyonları ve gradyan vektörleri, onlarla Taylor türevin ilişkilerini gördük.
+
+7
+00:02:51,987 --> 00:03:00,008
+Bir noktadaki bir yüzeyin T sistemini ve normal doğru denklemlerini gördük, nasıl elde ettiklerini yanlama geldiğini.
+
+8
+00:03:01,388 --> 00:03:04,608
+Sonra linaleştirme kavramını gördük.
+
+9
+00:03:04,608 --> 00:03:13,427
+linaleştirme, tabii yaklaşık hesaplarda kullanılan bir ifade, diferansiyeliyle birlikte.
+
+10
+00:03:14,608 --> 00:03:18,348
+Bunlarla ilgili uğramasını, dersin sonunda yapacağız.
+
+11
+00:03:18,568 --> 00:03:21,307
+Yani bugün yapmayacağım onu, bugün yeni konuya devam edelim.
+
+12
+00:03:21,448 --> 00:03:23,247
+Çünkü çok fazla zamanımız yok.
+
+13
+00:03:24,328 --> 00:03:28,807
+Haftaya tam ediyorum, konularımızı tamamlarız, toparlarız en azından bir de söyleyeyim.
+
+14
+00:03:29,608 --> 00:03:33,367
+Sonra detaylarıyla ve uğramalarıyla hareket ederiz.
+
+15
+00:03:34,608 --> 00:04:04,588
+Kalan sürenci sürenizi de,
+
+16
+00:03:43,699 --> 00:03:46,939
+Bugün yeni bir konuya başlayacağız.
+
+17
+00:03:49,199 --> 00:03:51,239
+Katlı integral konusu.
+
+18
+00:04:02,963 --> 00:04:24,824
+Bu test otundaki konularımız, daha doğrusu kalan konularımız aslında bakıma, iki katlı integral, hacim ve alan hesabı, ortalama değer teoremi, tabii iki katlı integral için ortalama değer teoremi var, kutupsal koordinatlarda iki katlı integral.
+
+19
+00:04:24,824 --> 00:04:39,704
+Önce burada iki katlı integral'ın nasıl tanımlandığını, tanım ve örneklerini vereceğiz. Daha sonra hacim ve alan olarak nasıl hesaplandığını, işte onunla birlikte öğreneceğiz.
+
+20
+00:04:40,744 --> 00:04:51,043
+Ortalama değer teoremi verip, sonra kutupsal koordinatlarda iki katlı integral'e uğrayarak iki katlı integral'ın kutupsal koordinatlarda çok daha rahat hesaplandığını göreceğiz.
+
+21
+00:04:55,379 --> 00:04:56,920
+Şimdi yavaş yavaş devam edelim.
+
+22
+00:04:57,180 --> 00:04:59,360
+Burada biraz bazı sayfalar da
+
+23
+00:04:59,360 --> 00:05:00,159
+yoğun yazdım.
+
+24
+00:05:01,420 --> 00:05:02,939
+Çok fazla slayt olmasın diye
+
+25
+00:05:02,939 --> 00:05:04,399
+belki bunları bölebilirdim ama
+
+26
+00:05:04,399 --> 00:05:07,540
+şöyle deli topla olsun biraz öyle düşündüm.
+
+27
+00:05:08,939 --> 00:05:09,480
+Bir defa
+
+28
+00:05:09,480 --> 00:05:11,319
+en basit olarak düzensel
+
+29
+00:05:11,319 --> 00:05:13,019
+bir bölge alıyoruz ve bunu
+
+30
+00:05:13,019 --> 00:05:15,120
+tabii dörtgen olarak göz önüne alıyoruz.
+
+31
+00:05:15,839 --> 00:05:17,259
+R şeklinde bir dörtgen
+
+32
+00:05:17,259 --> 00:05:18,480
+işte A
+
+33
+00:05:18,480 --> 00:05:20,920
+X A ve B aralığında
+
+34
+00:05:20,920 --> 00:05:22,500
+Y C ve D aralığında
+
+35
+00:05:22,500 --> 00:05:24,639
+işte bunların kateciyen çarpımı
+
+36
+00:05:24,639 --> 00:05:26,879
+düşündüğüm zaman o bize aslında
+
+37
+00:05:26,879 --> 00:05:28,800
+retik törkenini verir. Normalde
+
+38
+00:05:28,800 --> 00:05:31,199
+kümelerin rarlıklarını kateciye çarpmığını
+
+39
+00:05:31,199 --> 00:05:31,899
+düşündüğüm zaman.
+
+40
+00:05:36,819 --> 00:05:41,659
+Bu bölge üzerinde tanımlı bir fx'e fonksiyonu ele alıyoruz.
+
+41
+00:05:42,819 --> 00:05:48,079
+Tabi R bölgesini, bir dörtgensel bir bölge, dörtgen bölge düzlemde,
+
+42
+00:05:48,939 --> 00:05:57,379
+R'yi eksenlere paralel doğrularla oluşan bir doğrular ağıyla küçük dörtgenlere bölüyoruz.
+
+43
+00:05:59,539 --> 00:06:03,279
+Doğrular tabi R'yi dörtgensel olarak n parçaya böler.
+
+44
+00:06:03,279 --> 00:06:09,699
+Ve her parçanın boyu ve eni küçültükçe böyle parçaların sayısı elbette en giderek artar.
+
+45
+00:06:12,019 --> 00:06:18,139
+Bu törtgenlerin R'nin bir bölünüşünü oluşturduğunu söyleyebiliriz.
+
+46
+00:06:19,800 --> 00:06:28,500
+Genişliği özellikle delta x ve yükseltik de delta y olan küçük bir törtgensel parçanın alanı bize neyi verir aslında?
+
+47
+00:06:28,500 --> 00:06:30,620
+Bu iki kenarın çarpımı.
+
+48
+00:06:30,620 --> 00:06:33,420
+Törtgenin basitçe alanı değil mi? Ona delta a diyelim.
+
+49
+00:06:34,220 --> 00:06:36,199
+Delta x'i çarpı delta y şeklindedir.
+
+50
+00:06:37,600 --> 00:06:45,139
+İşte R'nin bölünüşünü oluşturan küçük parçaların belli bir sırada numaralandırması göz önüne alınsa,
+
+51
+00:06:45,779 --> 00:06:50,459
+diyelim ki kanıncı derin küçük törtgenin alanı delta a k olmak üzere,
+
+52
+00:06:51,300 --> 00:06:57,259
+buradaki alanları delta a bir delta a iki bu şekilde delta a'ın şeklinde verebiliriz.
+
+53
+00:06:57,259 --> 00:07:05,879
+Bu söylediğimizi şöyle grafik olarak bakın şurada görebilirsiniz.
+
+54
+00:07:07,740 --> 00:07:10,399
+Şunu biraz da büyüteyim yakına gelsin.
+
+55
+00:07:10,399 --> 00:07:15,659
+Bir tane keyifli bir R bölgesi aldık.
+
+56
+00:07:15,779 --> 00:07:20,480
+Tabii bu böyle R bölgesini biz başlangıçta dörtgen bölge olarak aldık.
+
+57
+00:07:20,720 --> 00:07:26,939
+İşte x eksenin üzerinde AB aralığı, y ekseninde CD aralığını aldığım zaman bu iki aralığın değil mi?
+
+58
+00:07:27,480 --> 00:07:29,459
+Ortak kesim bize bu dikdörtgeni verir.
+
+59
+00:07:30,659 --> 00:07:33,860
+Bu dikdörtgeni dedik ki eksenlere paralel doğrularla ne yaptık?
+
+60
+00:07:33,860 --> 00:07:35,199
+Yatay ve diki yorkak.
+
+61
+00:07:35,899 --> 00:07:38,740
+Kesim bölgeleri ayırdık yani küçük dikdörtgenleri ayırdık.
+
+62
+00:07:39,560 --> 00:07:42,539
+İlk etapta atıyorum en tane dikdörtgeni ayırdığımızı varsayalım.
+
+63
+00:07:43,699 --> 00:07:44,759
+Bütün dörtgenin sayısı.
+
+64
+00:07:44,980 --> 00:07:48,659
+Ve her birinin alanı da tabii delta a k olacak şekilde.
+
+65
+00:07:49,899 --> 00:07:51,960
+Delta a k alanı dikdörtgenler olsun.
+
+66
+00:07:52,439 --> 00:07:54,100
+Mesela k'nın dikdörtgenin alanı,
+
+67
+00:07:54,779 --> 00:08:00,199
+işte delta y k ile delta x kanının çarpımından elde edilen delta a k alanla şu dikdörtgenidir.
+
+68
+00:08:00,199 --> 00:08:06,279
+Tabii fx'ye fonksiyonumuz bu bölge üzerinde tanımlı olduğu için
+
+69
+00:08:06,279 --> 00:08:09,720
+bu her bir bölgede diyelim ki birer tane pilot nokta seçelim.
+
+70
+00:08:10,919 --> 00:08:17,279
+Bunlara mesela kanıncı bölgedeki bu noktamız xk, yk olsun.
+
+71
+00:08:19,000 --> 00:08:24,120
+Sonuçta bu düzemsel bir bölge olduğu için burada bu şekilde noktalar değil mi seçebiliriz?
+
+72
+00:08:24,120 --> 00:08:30,460
+Tabii amacımız burada tabii ilk katlı interrali tanımlayacağız ama nasıl tanımlayacağız?
+
+73
+00:08:30,460 --> 00:08:36,259
+Tabii mesela fonksiyonun bu xk, ykdaki değeri bize neyi verir?
+
+74
+00:08:36,340 --> 00:08:38,379
+Burada bilgi mi yükseklik bize oluşuyor aslında.
+
+75
+00:08:39,559 --> 00:08:44,899
+Tabii bunu öyle bir göz önüne alacak sonra bu aslında yukarıda böyle bir katı cisim var.
+
+76
+00:08:45,039 --> 00:08:49,220
+O katı cisimleri x, yi üzerine bir düşümü olan bölge.
+
+77
+00:08:49,220 --> 00:08:57,840
+Dolayısıyla bundan her bir üzerine çıkan bir ne var? Şekil bir silindir şeklinde olacak.
+
+78
+00:08:58,279 --> 00:09:01,819
+Ama kenarları tabii şöyle, düzgürken silindirler tabii bundan olacak.
+
+79
+00:09:02,980 --> 00:09:08,019
+O halde taban alanıyla yüksekliğin, fx, yk'nın çarpımı bana ne verecektir?
+
+80
+00:09:08,639 --> 00:09:10,919
+Bu silindir elemanının bana hacmini verecektir.
+
+81
+00:09:10,919 --> 00:09:14,259
+Dolayısıyla bütün bu hacimler nedir?
+
+82
+00:09:14,259 --> 00:09:19,480
+İşte bu şekildeki hacimleri toplayıp, özellikle en sonuçta gidelim, limit aldığımızda,
+
+83
+00:09:19,960 --> 00:09:23,559
+şimdi ona açıklayacağız onun ne anlama geldiğini, bize ne verecektir?
+
+84
+00:09:23,679 --> 00:09:28,259
+Bu bölge üzerinde fx, yk fonksiyonunun iç katlı integranlini bize tanımlayacaktır.
+
+85
+00:09:32,244 --> 00:09:33,724
+Devam edelim şöyle arkadaşlar.
+
+86
+00:09:35,364 --> 00:09:36,204
+R üzerinde
+
+87
+00:09:36,204 --> 00:09:38,024
+bir rimel toplamı oluşmak için
+
+88
+00:09:38,024 --> 00:09:39,624
+K'nıncı
+
+89
+00:09:39,624 --> 00:09:42,104
+küçültü tüken içinde bir X, K, Y, K
+
+90
+00:09:42,104 --> 00:09:44,043
+noktası seçeriz.
+
+91
+00:09:44,144 --> 00:09:44,783
+Seçtik zaten.
+
+92
+00:09:46,744 --> 00:09:47,803
+Fonksiyonu bu noktadaki
+
+93
+00:09:47,803 --> 00:09:48,663
+değeriyle
+
+94
+00:09:48,663 --> 00:09:51,744
+delta ak alanını çarpar ve bütün bu
+
+95
+00:09:51,744 --> 00:09:52,903
+çarpımları toplarız.
+
+96
+00:09:54,384 --> 00:09:55,663
+Dolayısıyla elde ettiğimiz
+
+97
+00:09:55,663 --> 00:09:57,704
+toplam, kısım toplam, en toplam
+
+98
+00:09:57,704 --> 00:09:59,364
+bu şekildeki bir toplam. Yani buradaki
+
+99
+00:09:59,364 --> 00:10:01,684
+aslında silindir
+
+100
+00:10:01,684 --> 00:10:03,324
+elemanların, hazinelerin toplamı
+
+101
+00:10:03,324 --> 00:10:05,163
+toplam. Biz hep bunu görürsün.
+
+102
+00:10:08,004 --> 00:10:09,464
+Şimdi K'nıncı
+
+103
+00:10:09,464 --> 00:10:12,064
+küçük tü tükenin içindeki
+
+104
+00:10:12,064 --> 00:10:13,524
+X, Y, K noktasını
+
+105
+00:10:13,524 --> 00:10:15,744
+nasıl seçtiğimize bağlı olarak
+
+106
+00:10:15,744 --> 00:10:17,384
+S, Y, K için
+
+107
+00:10:17,384 --> 00:10:19,183
+farklı değerler elde edebiliriz.
+
+108
+00:10:19,504 --> 00:10:19,824
+Elbette.
+
+109
+00:10:21,324 --> 00:10:23,464
+Ama o küçük bir bölge
+
+110
+00:10:23,464 --> 00:10:25,464
+olacağı için ne kadar da
+
+111
+00:10:25,464 --> 00:10:27,504
+onun içerisinde farklı bir noktası seçsek
+
+112
+00:10:27,504 --> 00:10:28,683
+onun değeri
+
+113
+00:10:28,683 --> 00:10:31,283
+FX, KYK değerinden çok da farklı
+
+114
+00:10:31,283 --> 00:10:32,484
+olmayacak. Onu söyleyebilirim.
+
+115
+00:10:33,844 --> 00:10:35,004
+Yakın bir değer olarak göz önüne
+
+116
+00:10:35,004 --> 00:10:35,283
+alacağız.
+
+117
+00:10:36,464 --> 00:10:37,663
+Şimdi burada biraz
+
+118
+00:10:37,663 --> 00:10:39,704
+mecburen teorik bir açıklama
+
+119
+00:10:39,704 --> 00:10:40,484
+yapacağım.
+
+120
+00:10:41,484 --> 00:10:43,324
+Onu dikkatli okuyun, dinleyin.
+
+121
+00:10:44,324 --> 00:10:45,783
+Bu R bölgesinin
+
+122
+00:10:45,783 --> 00:10:46,663
+bölünüşündeki
+
+123
+00:10:46,663 --> 00:10:48,704
+bütün küçük tükenin
+
+124
+00:10:48,704 --> 00:10:50,304
+genişlikleri ve yükseklikleri
+
+125
+00:10:50,304 --> 00:10:52,183
+sıfıra yaklaşırken
+
+126
+00:10:52,183 --> 00:10:54,764
+bu Riman toplamlarına
+
+127
+00:10:54,764 --> 00:10:56,704
+ne olduğu ile ilgileniyoruz aslında.
+
+128
+00:10:58,624 --> 00:11:00,764
+İşte yukarıdaki bahsettiğimiz
+
+129
+00:11:00,764 --> 00:11:01,903
+bu şekildeki
+
+130
+00:11:01,903 --> 00:11:03,663
+parçalanmaya bir
+
+131
+00:11:03,663 --> 00:11:04,844
+yani her bir
+
+132
+00:11:04,844 --> 00:11:06,124
+X, K, Y, K noktalarını
+
+133
+00:11:06,124 --> 00:11:06,903
+seçerek
+
+134
+00:11:07,464 --> 00:11:09,104
+Asabi aralığının
+
+135
+00:11:09,104 --> 00:11:10,464
+bir parçalanışını elde ediyor.
+
+136
+00:11:10,464 --> 00:11:12,464
+bir parçalanışını
+
+137
+00:11:12,464 --> 00:11:13,064
+yapabilirsiniz.
+
+138
+00:11:13,064 --> 00:11:13,464
+Bir parçalanışı
+
+139
+00:11:13,464 --> 00:11:32,064
+aralığının
+
+140
+00:11:16,275 --> 00:11:19,435
+Nasıl ki tek katlı interayada sadece aralık üzerinde çalışıyoruz.
+
+141
+00:11:20,216 --> 00:11:26,775
+Ama burada tabii iki katlı interay olduğu için, ikili eşken olduğu için artık aralık üzerinde değil, dilt dörken üzerinde çalışıyoruz.
+
+142
+00:11:26,775 --> 00:11:27,535
+Sonra dikkat edelim.
+
+143
+00:11:30,895 --> 00:11:35,915
+P bölünüşünün, şu şekilde gösterdiğimiz bir norm ifadesi var.
+
+144
+00:11:37,535 --> 00:11:43,455
+Normu, bölünüşteki dilt dörkenlerin genişliklerinin veya yüksekliklerinin en büyüğüdür.
+
+145
+00:11:43,455 --> 00:11:55,675
+Yani atıyorum, P norm eşitliği 0.1 ise renin bölünüşündeki bütün dökülenin genişlikleri en çok ve yükseklikleri en çok 0.1 olacaktır.
+
+146
+00:11:56,575 --> 00:11:56,975
+Atabiliyor muyum?
+
+147
+00:12:01,172 --> 00:12:10,091
+Dolayısıyla bazen P'nin norması 0'a yaklaşırken, sonuçta bu eli büyük seçtiğimiz elbette sökende ne yapacaktır?
+
+148
+00:12:10,872 --> 00:12:14,392
+O yükseklik ve genişlikleri küçülecektir.
+
+149
+00:12:14,572 --> 00:12:17,012
+Dolayısıyla çok 0'a yakın bir değer alacaktır.
+
+150
+00:12:18,392 --> 00:12:21,231
+Yaklaşırken Riemann toplamları yakın sar.
+
+151
+00:12:22,091 --> 00:12:22,652
+Dikkat edin.
+
+152
+00:12:24,052 --> 00:12:26,572
+Bu durumda, tabi bunlar teorem ifadeleri var.
+
+153
+00:12:26,772 --> 00:12:27,812
+Onları burada çok vermiyor.
+
+154
+00:12:27,812 --> 00:12:32,252
+Bu durumda limitimiz, bakın bu şekilde olarak yazarız.
+
+155
+00:12:33,052 --> 00:12:36,152
+P'nin norması 0'a giderken, K' bir den, N'e, F'x, I'y, K.
+
+156
+00:12:36,812 --> 00:12:46,572
+P'nin norması 0'a giderken, delta A'k alanların ne olur? 0'a yaklaşır.
+
+157
+00:12:47,091 --> 00:12:47,432
+Doğru mu?
+
+158
+00:12:48,731 --> 00:12:49,652
+Yukarıdaki tanıma göre.
+
+159
+00:12:50,892 --> 00:12:51,932
+Bu da ne demektir aslında?
+
+160
+00:12:52,132 --> 00:12:54,012
+N'in aslında sonsuza gitmesi demektir.
+
+161
+00:12:54,132 --> 00:12:56,112
+Delta A'k alanların ne zaman 0'a yaklaşır?
+
+162
+00:12:56,112 --> 00:12:57,932
+En sonsuza götürdüğümüz zaman.
+
+163
+00:12:58,052 --> 00:13:02,572
+Yani biz o bizim bir türen bölgemizi en sonsuz değil mi?
+
+164
+00:13:03,132 --> 00:13:07,971
+Alt bölgelere ayırdığımız zaman değil mi?
+
+165
+00:13:08,432 --> 00:13:09,872
+0'a yaklaşmak zorunda söz konusunda.
+
+166
+00:13:10,711 --> 00:13:12,112
+Burada söylüyoruz zaten.
+
+167
+00:13:12,491 --> 00:13:15,112
+P'nin norması 0'ıken, yani 0'a yaklaşırken,
+
+168
+00:13:18,112 --> 00:13:19,872
+dik türenler daralırlar.
+
+169
+00:13:19,872 --> 00:13:24,272
+kısalılar ve sayıları en giderek artar.
+
+170
+00:13:24,572 --> 00:13:25,831
+Çok daha açık burada yazmışız.
+
+171
+00:13:27,432 --> 00:13:29,012
+Dolayısıyla bu limiti,
+
+172
+00:13:29,711 --> 00:13:33,052
+en sonsuz ve P'nin norması 0'a giderken,
+
+173
+00:13:33,932 --> 00:13:39,552
+delta A'k 0'a yaklaşık olduğunu göz önünde bulundurarak,
+
+174
+00:13:40,831 --> 00:13:45,211
+en sonsuz için K'b'den N'e işte bu şekilde yazabiliriz.
+
+175
+00:13:45,211 --> 00:13:48,052
+f'x k'y k delta A'k şeklinde.
+
+176
+00:13:48,052 --> 00:13:57,052
+K'b'den N'e işte bu şekilde yazıyor.
+
+177
+00:14:01,076 --> 00:14:05,436
+Tabi bu çeşit bir limitin içerdiği birçok seçenek vardır.
+
+178
+00:14:06,115 --> 00:14:06,635
+Nasıl yani?
+
+179
+00:14:06,776 --> 00:14:09,036
+Diyelim küçük dikdörtgenler topluluğu,
+
+180
+00:14:09,115 --> 00:14:14,436
+DİKTÖKENSEL bir bölünüşünü tanımlayan yatay ve dikey doğrular sebikesiyle belirlenir.
+
+181
+00:14:14,836 --> 00:14:18,635
+Bu şekilde belirlenen her küçük dikdörtgen içinde
+
+182
+00:14:18,635 --> 00:14:25,615
+fonksiyonun hesaplandığı keyfi bir X, K, Y, K noktasının seçimi vardır.
+
+183
+00:14:26,696 --> 00:14:27,536
+Tekrar söylüyorum.
+
+184
+00:14:27,536 --> 00:14:31,255
+Bu çeşit bir limitin içerdiği birçok seçenek vardır.
+
+185
+00:14:32,355 --> 00:14:34,516
+Küçük dikdörtgenler topluluğu,
+
+186
+00:14:35,036 --> 00:14:42,656
+DİKTÖKENSEL bir bölünüşünü tanımlayan yatay ve dikey doğrular sebikesiyle belirlenebilir.
+
+187
+00:14:43,995 --> 00:14:46,615
+Bu şekilde belirlenen her küçük dikdörtgen içinde
+
+188
+00:14:46,615 --> 00:14:51,456
+fonksiyonun hesaplandığı keyfi bir X, Y, K noktasının seçimi mümkündür.
+
+189
+00:14:52,855 --> 00:14:56,635
+Şimdi bu seçimler birlikte tek bir iman toplamı tanımlardır.
+
+190
+00:14:56,635 --> 00:14:58,436
+Burası önemli zaten.
+
+191
+00:14:59,135 --> 00:15:02,396
+Yani biz istediğimiz kadar bölünüşünü yapalım,
+
+192
+00:15:02,596 --> 00:15:05,096
+farklılaştıralım, istediğimiz kadar farklılaştıralım.
+
+193
+00:15:05,756 --> 00:15:07,316
+Ondan bağımsız olarak nedir?
+
+194
+00:15:07,956 --> 00:15:09,995
+Artık bir iman toplamı aynı olacaktır.
+
+195
+00:15:11,536 --> 00:15:16,816
+Bir limit oluşturmak için dikdörtgenlerin hem genişleri hem de yüksekleri
+
+196
+00:15:16,816 --> 00:15:22,355
+sıfıra giden ve dikdörtgenlerin sayısı sonsuza giden bölünüşleri seçerek
+
+197
+00:15:22,355 --> 00:15:25,576
+bütün süreci tekrar tekrar yerleştiriyoruz.
+
+198
+00:15:26,016 --> 00:15:30,336
+Buradaki işlemi aslında sözde nedir?
+
+199
+00:15:31,576 --> 00:15:34,216
+Daha açık olarak ifade etmiş oluyoruz.
+
+200
+00:15:37,748 --> 00:15:38,228
+Peki.
+
+201
+00:15:40,268 --> 00:15:56,448
+Şimdi, hangi seçimler yapılırsa yapılsın, esen toplamlarının aynı limit değerine eşit olan birer limiti varsa, fonksiyonu, yani f'ye integralinebilir bir fonksiyon.
+
+202
+00:15:58,948 --> 00:16:02,768
+Ve, tabii ki katlı anlamda integral bir fonksiyonu.
+
+203
+00:16:02,768 --> 00:16:06,768
+Ve, şu şekilde, birincisi...
+
+204
+00:16:11,508 --> 00:16:13,427
+İki kat integral R'yi
+
+205
+00:16:13,427 --> 00:16:15,148
+altında üzerinde
+
+206
+00:16:15,148 --> 00:16:17,687
+fx'i dA ya da daha açık olarak
+
+207
+00:16:17,687 --> 00:16:19,048
+dA yerine dxd
+
+208
+00:16:19,048 --> 00:16:21,508
+değil mi yazdım? Burada sonuçta dA dxd'dir.
+
+209
+00:16:21,948 --> 00:16:22,988
+Yukarıda baktığımız zaman
+
+210
+00:16:22,988 --> 00:16:24,668
+her bir delta ak'lar.
+
+211
+00:16:25,288 --> 00:16:27,427
+Delta xk çarpı delta yk şeklinde
+
+212
+00:16:27,427 --> 00:16:29,567
+geldiği için bu da bize bunu verecektir.
+
+213
+00:16:29,728 --> 00:16:31,388
+Limitte karşımıza bu
+
+214
+00:16:31,388 --> 00:16:32,968
+notasyon karşımıza gelir.
+
+215
+00:16:33,788 --> 00:16:34,848
+Yukarıda gösterilen limit.
+
+216
+00:16:36,248 --> 00:16:37,548
+İle gösterilen
+
+217
+00:16:37,548 --> 00:16:38,628
+limit değerine de
+
+218
+00:16:38,628 --> 00:16:40,927
+F'nin R bölgesi üzerindeki
+
+219
+00:16:40,927 --> 00:16:42,067
+iki katlı integral der.
+
+220
+00:16:42,828 --> 00:16:44,828
+Artık iki katlı integral ne yapmış?
+
+221
+00:16:45,448 --> 00:16:46,908
+Oluşturmuş ve tanımlamış olduk.
+
+222
+00:16:49,768 --> 00:16:51,248
+Daha önceki bölümlerde
+
+223
+00:16:51,248 --> 00:16:52,848
+incelenen tek değişken
+
+224
+00:16:52,848 --> 00:16:54,588
+durumundaki gibi
+
+225
+00:16:54,588 --> 00:16:56,687
+bölüm 5'te sanırım verdik biz evet.
+
+226
+00:16:57,688 --> 00:16:58,908
+Kitaba göre konuşuyoruz tabii.
+
+227
+00:16:59,488 --> 00:17:00,988
+R üzerinde sürekli olan bir
+
+228
+00:17:00,988 --> 00:17:02,768
+fx'i fonksiyonunun integral
+
+229
+00:17:02,768 --> 00:17:04,168
+olduğu gösterilebilir.
+
+230
+00:17:05,288 --> 00:17:06,688
+Orada nasıl ki tek değişkeninde
+
+231
+00:17:06,688 --> 00:17:08,728
+f fonksiyonun verilen aralık üstünde
+
+232
+00:17:08,728 --> 00:17:10,827
+integral olabilir olduğunu gösterilir.
+
+233
+00:17:10,928 --> 00:17:12,827
+metotla da benzerini
+
+234
+00:17:12,827 --> 00:17:13,827
+burada uygulayabiliriz.
+
+235
+00:17:13,908 --> 00:17:14,388
+Onu söyleyeyim.
+
+236
+00:17:16,607 --> 00:17:17,488
+Peki.
+
+237
+00:17:19,408 --> 00:17:20,228
+Sadece
+
+238
+00:17:20,228 --> 00:17:21,908
+sonlu sayıda noktada ve
+
+239
+00:17:21,908 --> 00:17:23,148
+düzgün eğri üzerinde
+
+240
+00:17:23,148 --> 00:17:24,968
+süreks olanlar gibi birçok
+
+241
+00:17:24,968 --> 00:17:26,668
+süreks fonksiyon da
+
+242
+00:17:26,668 --> 00:17:27,668
+integrlenebilir
+
+243
+00:17:27,668 --> 00:17:29,148
+durumdadır.
+
+244
+00:17:30,327 --> 00:17:31,208
+Bunların ispatını
+
+245
+00:17:31,208 --> 00:17:32,228
+daha ileri seviyedeki
+
+246
+00:17:32,228 --> 00:17:32,768
+derslere
+
+247
+00:17:32,768 --> 00:17:33,928
+bırakıyoruz.
+
+248
+00:17:35,628 --> 00:17:36,788
+Teorik olarak çok
+
+249
+00:17:36,788 --> 00:17:37,827
+neyine gelmiyoruz.
+
+250
+00:17:37,827 --> 00:17:38,388
+onu söyleyeyim.
+
+251
+00:17:39,988 --> 00:17:40,807
+Tabii burada
+
+252
+00:17:40,807 --> 00:17:43,807
+bu iki kat katlı
+
+253
+00:17:43,807 --> 00:17:44,607
+integrallerinin
+
+254
+00:17:44,607 --> 00:17:46,468
+hesabını bize veren
+
+255
+00:17:46,468 --> 00:17:48,408
+tek katlı olduğu gibi
+
+256
+00:17:48,408 --> 00:17:49,388
+metotlar var.
+
+257
+00:17:50,728 --> 00:17:51,788
+Burada tabii
+
+258
+00:17:51,788 --> 00:17:53,048
+iki katlı integral aslında
+
+259
+00:17:53,048 --> 00:17:55,508
+nasıl katılarsan
+
+260
+00:17:55,508 --> 00:17:56,107
+belirli
+
+261
+00:17:56,107 --> 00:17:57,048
+integral anlamda
+
+262
+00:17:57,048 --> 00:17:58,048
+tek katlı integral
+
+263
+00:17:58,048 --> 00:18:00,248
+fx'e özellikle
+
+264
+00:18:00,248 --> 00:18:01,347
+potesi, dilek
+
+265
+00:18:01,347 --> 00:18:03,668
+alan anlamda
+
+266
+00:18:03,668 --> 00:18:03,847
+değil mi
+
+267
+00:18:03,847 --> 00:18:04,428
+geldiğini
+
+268
+00:18:04,428 --> 00:18:05,388
+biliyoruz.
+
+269
+00:18:05,488 --> 00:18:05,968
+Burada da
+
+270
+00:18:05,968 --> 00:18:07,888
+böyle bir integral aslında
+
+271
+00:18:07,888 --> 00:18:09,208
+fx'e tabii
+
+272
+00:18:09,208 --> 00:18:09,827
+z-teksinin
+
+273
+00:18:09,827 --> 00:18:10,668
+üzerinde bir
+
+274
+00:18:10,668 --> 00:18:11,827
+yüze olmak üzere
+
+275
+00:18:11,827 --> 00:18:13,628
+düşünme
+
+276
+00:18:13,628 --> 00:18:14,048
+göster,
+
+277
+00:18:14,128 --> 00:18:14,788
+reolojikler
+
+278
+00:18:14,788 --> 00:18:15,528
+üzerindeki
+
+279
+00:18:15,528 --> 00:18:17,508
+fx'e fonksiyonu ile
+
+280
+00:18:17,508 --> 00:18:18,048
+üstten sınırlı
+
+281
+00:18:18,567 --> 00:18:19,948
+bir katı cisim var.
+
+282
+00:18:20,028 --> 00:18:20,587
+O katı cisim
+
+283
+00:18:20,587 --> 00:18:21,107
+arkadaşlar
+
+284
+00:18:21,107 --> 00:18:23,128
+hacmini bize verecektir.
+
+285
+00:18:23,367 --> 00:18:23,948
+Hacmin anlamına
+
+286
+00:18:23,948 --> 00:18:24,448
+gelecektir.
+
+287
+00:18:29,299 --> 00:18:35,720
+Gerçekten, hacim olarak ilk etapta, hacim olarak iki katlı integral ele alalım.
+
+288
+00:18:38,299 --> 00:18:42,139
+Bakın, söylediğim şey şu, şu şeklesin, bakalım.
+
+289
+00:18:43,720 --> 00:18:48,460
+İşte şu, x'e düzlemindeki taban bizim R bölgemiz, tabii bu bir dükkanser bölge.
+
+290
+00:18:48,460 --> 00:18:57,919
+Bu bölge, yukarıdan tabii, fx'e yüzey ile sınırlı aslında bir, ne var, yüzeyin, x'e düzlem üzerindeki,
+
+291
+00:18:58,619 --> 00:19:00,960
+bir düşümü bana bitirirken, olmak üzere tabii.
+
+292
+00:19:01,980 --> 00:19:05,440
+İki katlı integral, fx'e fonksiyonu, R bölge sınırlı iki katlı integral,
+
+293
+00:19:05,559 --> 00:19:08,440
+tabii interden var olan koşuluyla, mihi verecektir bana.
+
+294
+00:19:09,059 --> 00:19:11,720
+Belli koşul altında, bu dismin hacmini verecektir.
+
+295
+00:19:11,720 --> 00:19:41,700
+Fx'e, gerçekten, fx'e, xx'e düzleminde,
+
+296
+00:19:41,720 --> 00:19:48,819
+fx'e sınırlı, üç boyutlu bir katlı bölgenin hazmi olarak yorumlayabiliriz.
+
+297
+00:19:51,299 --> 00:19:52,539
+Doğru mudur?
+
+298
+00:20:00,596 --> 00:20:21,435
+Dolayısıyla, S-N-Eştir, F-X-YK çarpı, delta AK toplamındaki her F-X-K-YK, delta AK terimi, katı cismin aslında delta AK tabanı üstünde bulunan kısmının hacminin yaklaşımında bulunan dikey bir dikdörtrensel kutunun hacmidir.
+
+299
+00:20:25,203 --> 00:20:36,604
+Şu içerideki bakın, şekilin içindeki temsil olarak söylediğimiz şey aslında şu bakın, böyle bir ne var? Tüterkensel hacimli bir silindir elemanı var.
+
+300
+00:20:36,604 --> 00:20:53,163
+Bunu tabii yukarıya geldiğimiz zaman tabii çok küçük yani, delta, hk alanı küçük seçileceği için, yukarıdaki tepedeki bu yüzey üzerinde bulunan kısmı, o kadar küçük ki, o da şey gibi, nedir?
+
+301
+00:20:53,723 --> 00:20:59,384
+Bu düzleme paralel bir tepesi, düzlem bir dik dörtgen gibi düşmektir.
+
+302
+00:21:00,263 --> 00:21:05,003
+Bu onu karşılayacaktır. Her noktada bunu aynı şekilde, her noktada yapabiliriz.
+
+303
+00:21:05,003 --> 00:21:09,624
+Her noktada yüzeyimiz, böyle ilk tarzında bir yüzüğü olarak, değil mi gözüksek?
+
+304
+00:21:20,819 --> 00:21:28,639
+Böylece esen toplamının aslında prizmanın toplam hacmi demek istediğimiz şeye yaklaşımda bulunur.
+
+305
+00:21:30,079 --> 00:21:39,679
+Bu hacim en sonsuzken delta ak sıfıra yaklaşmak üzere bu şekilde tanımlanır.
+
+306
+00:21:40,819 --> 00:21:43,639
+Yani bir tane bildik tökensel hacim bulduk.
+
+307
+00:21:44,259 --> 00:21:50,639
+En sonsuza götürdüğümüzde burada bunu işte sonsuz parçaya verildiğimizi varsayıyoruz değil mi?
+
+308
+00:21:50,639 --> 00:21:51,839
+alt tüttür tükkanı.
+
+309
+00:21:52,279 --> 00:21:55,839
+Her birinin hacimlerinin toplamı bana işte Rina toplamı oluşturur.
+
+310
+00:21:56,939 --> 00:22:01,919
+Bu da bana en sonsuzken esenin limitinin daha açık olarak
+
+311
+00:22:01,919 --> 00:22:07,299
+fx-c fonksiyonu re üzerindeki iki katın integralini diye tanımlar arkadaşlar.
+
+312
+00:22:08,319 --> 00:22:11,500
+Demek ki fx-c pos bir fonksiyon olmak üzere
+
+313
+00:22:11,500 --> 00:22:15,839
+ve bölgesi üzerinde pos bir fonksiyon olmak üzere
+
+314
+00:22:15,839 --> 00:22:45,819
+bir üstten fx-c pos bir fonksiyon olmak üzere
+
+315
+00:22:46,420 --> 00:22:51,620
+Şekli hatta biraz daha yaklaştırayım şöyle bakın. Şöyle daha iyi görürsünüz.
+
+316
+00:22:54,420 --> 00:22:55,460
+Delta AK.
+
+317
+00:22:56,880 --> 00:23:00,000
+Alan diktör kenarımız, su içindeki silindir elmanının tabanı.
+
+318
+00:23:00,880 --> 00:23:02,560
+Bizim Z bölgemiz de tamamen eşit.
+
+319
+00:23:03,400 --> 00:23:09,480
+X80'in üzerinde AB, Y80'in üzerinde C dediğimi aralıklarla seçtiğimiz, onların katlı çapma olsun.
+
+320
+00:23:09,620 --> 00:23:11,340
+R bölgesi, şu diktör kenar S bölge.
+
+321
+00:23:20,915 --> 00:23:21,495
+Devam ediyoruz.
+
+322
+00:23:23,235 --> 00:23:29,115
+Şimdi hesaplama tekniği olarak karşımızda elbette Fubuni Teoremler var arkadaşlar.
+
+323
+00:23:30,816 --> 00:23:34,195
+İki şekilde göreceğiz Fubuni Teorem hesaplanmasını.
+
+324
+00:23:35,816 --> 00:23:38,596
+Teorem 1, Fubuni Teorem 1'in birinci şekli bu.
+
+325
+00:23:42,387 --> 00:23:43,107
+Yukarıda
+
+326
+00:23:43,107 --> 00:23:45,007
+ele aldığımız gibi
+
+327
+00:23:45,007 --> 00:23:46,947
+fx-z fonksiyonu
+
+328
+00:23:46,947 --> 00:23:49,567
+böyle bir red, tökken bölgesinde
+
+329
+00:23:49,567 --> 00:23:51,187
+sürekli ise
+
+330
+00:23:51,187 --> 00:23:53,407
+tabii x, a, b aralığında
+
+331
+00:23:53,407 --> 00:23:55,127
+c'de, c'de aralığında değil mi?
+
+332
+00:23:55,207 --> 00:23:56,847
+Değerler almak üzere.
+
+333
+00:23:58,627 --> 00:23:59,268
+O zaman bu
+
+334
+00:23:59,268 --> 00:24:00,707
+iki katlı integralimiz bakın.
+
+335
+00:24:02,367 --> 00:24:03,627
+Hesaplamasını bize gösteriyor.
+
+336
+00:24:05,028 --> 00:24:06,087
+c'den d'ye
+
+337
+00:24:06,087 --> 00:24:07,927
+ilk integral sınırı.
+
+338
+00:24:07,967 --> 00:24:10,087
+İkinci integral sınırı a'dan b'ye
+
+339
+00:24:10,087 --> 00:24:12,127
+fx'e dx'de.
+
+340
+00:24:13,347 --> 00:24:14,788
+Tabii bölgemiz
+
+341
+00:24:14,788 --> 00:24:16,347
+dikdörtgen bölge olduğu için.
+
+342
+00:24:16,407 --> 00:24:17,907
+Eğer dikdörtgen bölge olmasa
+
+343
+00:24:17,907 --> 00:24:20,187
+bunu böyle yazamayız. Bunu hemen urayalım.
+
+344
+00:24:21,288 --> 00:24:22,807
+Dikdörtgen bölge olduğu için
+
+345
+00:24:22,807 --> 00:24:24,827
+kolaylıkla ilgili sınır değişimini
+
+346
+00:24:24,827 --> 00:24:25,548
+yapabiliriz.
+
+347
+00:24:27,307 --> 00:24:27,627
+Yani
+
+348
+00:24:27,627 --> 00:24:30,227
+daha doğrusu integral sırası değişimi.
+
+349
+00:24:31,407 --> 00:24:32,447
+Şimdi önce evvela
+
+350
+00:24:32,447 --> 00:24:34,048
+tabii bu
+
+351
+00:24:34,048 --> 00:24:35,548
+şu ilk integrale bakalım.
+
+352
+00:24:35,548 --> 00:24:37,707
+Yani şu integral bana ne söylüyor?
+
+353
+00:24:39,528 --> 00:24:40,548
+Bu integral
+
+354
+00:24:40,548 --> 00:24:43,567
+önce
+
+355
+00:24:43,567 --> 00:24:45,927
+şu içerideki
+
+356
+00:24:45,927 --> 00:24:46,847
+integral arkadaşlar
+
+357
+00:24:46,847 --> 00:24:50,887
+çok geldik.
+
+358
+00:24:51,587 --> 00:24:53,187
+Yani a'dan b'ye fx'ye
+
+359
+00:24:53,187 --> 00:24:54,227
+dx'in integralinin
+
+360
+00:24:54,227 --> 00:24:55,788
+önce hesaplanacağını söyler.
+
+361
+00:24:55,788 --> 00:24:57,387
+yani ilk
+
+362
+00:24:57,387 --> 00:24:57,747
+integral
+
+363
+00:24:57,747 --> 00:24:58,268
+yapmayacak
+
+364
+00:24:58,268 --> 00:24:59,587
+integral değişiklerimiz kim?
+
+365
+00:24:59,927 --> 00:25:00,847
+x'e bağlı olan.
+
+366
+00:25:01,907 --> 00:25:02,927
+Dolayısıyla mesela biz
+
+367
+00:25:02,927 --> 00:25:04,307
+kısmı türevlerde nasıl ki
+
+368
+00:25:04,307 --> 00:25:06,507
+atıyorum x'e göre türev alırken
+
+369
+00:25:06,507 --> 00:25:07,067
+y'yi sabit
+
+370
+00:25:07,067 --> 00:25:07,667
+tutuyorduk.
+
+371
+00:25:08,467 --> 00:25:09,087
+Aynı şekilde
+
+372
+00:25:09,087 --> 00:25:10,167
+terse doğru
+
+373
+00:25:10,167 --> 00:25:11,647
+x'e göre
+
+374
+00:25:11,647 --> 00:25:12,447
+integral alırken
+
+375
+00:25:12,447 --> 00:25:13,127
+y sabit
+
+376
+00:25:13,127 --> 00:25:13,927
+konumdadır.
+
+377
+00:25:15,727 --> 00:25:16,487
+Eğer burada sadece
+
+378
+00:25:16,487 --> 00:25:17,587
+y'ye bağlı ifadeler varsa
+
+379
+00:25:17,587 --> 00:25:18,327
+çarpmırlar tabii
+
+380
+00:25:18,327 --> 00:25:18,687
+onların
+
+381
+00:25:18,687 --> 00:25:19,367
+integral
+
+382
+00:25:19,367 --> 00:25:20,127
+alışını atabilirsiniz
+
+383
+00:25:20,127 --> 00:25:20,567
+şuraya.
+
+384
+00:25:21,147 --> 00:25:21,947
+Çünkü o sadece y'yi
+
+385
+00:25:21,947 --> 00:25:22,507
+ilgilendiriyor.
+
+386
+00:25:24,268 --> 00:25:25,807
+Önce burası hesaplanır arkadaşlar.
+
+387
+00:25:25,807 --> 00:25:28,707
+kalem yok şeyle
+
+388
+00:25:28,707 --> 00:25:29,747
+yazacağım şimdi ama
+
+389
+00:25:29,747 --> 00:25:30,867
+kalemi kurmadım artık
+
+390
+00:25:30,867 --> 00:25:31,327
+takip et.
+
+391
+00:25:32,947 --> 00:25:33,747
+Önce
+
+392
+00:25:40,307 --> 00:25:40,667
+Evet.
+
+393
+00:25:46,932 --> 00:25:49,172
+hesaplar. Öyle kısaca. Önce hesaplar
+
+394
+00:25:49,172 --> 00:25:50,652
+var. Birinci
+
+395
+00:25:50,652 --> 00:25:51,791
+öncelik bir hesap.
+
+396
+00:25:53,132 --> 00:25:55,051
+Hesap var. A'dan B'ye, X'ine
+
+397
+00:25:55,051 --> 00:25:56,872
+değerlerimi yazdıktan sonra artık kalan
+
+398
+00:25:56,872 --> 00:25:59,152
+ifade kimdir? Ya sabit
+
+399
+00:25:59,152 --> 00:26:00,892
+bir ifadedir ya da Y'ye bağlı
+
+400
+00:26:00,892 --> 00:26:03,051
+bir ifadedir. Ve artık
+
+401
+00:26:03,051 --> 00:26:04,511
+tek kat integral dönüşü olacak.
+
+402
+00:26:04,692 --> 00:26:06,511
+İntekler oradan artık
+
+403
+00:26:06,511 --> 00:26:08,312
+integralimiz
+
+404
+00:26:08,312 --> 00:26:10,692
+bilinen
+
+405
+00:26:10,692 --> 00:26:12,771
+tek kat integral işlemiyle devam edilir.
+
+406
+00:26:13,852 --> 00:26:14,592
+Y'ye bağlı olur.
+
+407
+00:26:14,592 --> 00:26:18,912
+Bu integral aynı zamanda
+
+408
+00:26:18,912 --> 00:26:21,132
+integral sırasını
+
+409
+00:26:21,132 --> 00:26:22,451
+yani önce Y'ye sonra
+
+410
+00:26:22,451 --> 00:26:23,711
+X'ye bağlı olarak
+
+411
+00:26:23,711 --> 00:26:25,711
+hesaplanabilir.
+
+412
+00:26:27,172 --> 00:26:27,832
+O zaman
+
+413
+00:26:27,832 --> 00:26:30,552
+dışa, ikinci hesaplar
+
+414
+00:26:30,552 --> 00:26:32,271
+integral sırasından dışa yazıyoruz.
+
+415
+00:26:32,271 --> 00:26:34,211
+İçer ise ilk hesaplanacak
+
+416
+00:26:34,211 --> 00:26:36,132
+integralimiz yazıyoruz.
+
+417
+00:26:37,031 --> 00:26:38,332
+Dolayısıyla bu integral da bana
+
+418
+00:26:38,332 --> 00:26:39,552
+önce
+
+419
+00:26:39,552 --> 00:26:44,271
+şuradaki integral hesaplandığını
+
+420
+00:26:44,271 --> 00:26:45,011
+bana gösterir.
+
+421
+00:26:45,832 --> 00:26:46,592
+Tamam mı?
+
+422
+00:26:46,592 --> 00:26:47,312
+Bu defa önce
+
+423
+00:26:47,312 --> 00:26:48,352
+integralimiz bu olur.
+
+424
+00:26:48,471 --> 00:26:49,751
+Hesaplanacak integralimiz bu olacak.
+
+425
+00:26:51,291 --> 00:26:52,432
+Bu Y'ye bağlı tabii
+
+426
+00:26:52,432 --> 00:26:52,892
+gördüğünüz gibi.
+
+427
+00:26:52,971 --> 00:26:54,291
+Bu defa ilk sabit tutulacak.
+
+428
+00:26:54,412 --> 00:26:54,812
+Y'ye göre
+
+429
+00:26:54,812 --> 00:26:56,291
+integral edecek bu ifademiz.
+
+430
+00:26:57,731 --> 00:26:58,132
+Sonra
+
+431
+00:26:58,132 --> 00:26:59,231
+Y yerine
+
+432
+00:26:59,231 --> 00:27:00,652
+C ve D değeri
+
+433
+00:27:00,652 --> 00:27:01,912
+sınır tabii
+
+434
+00:27:01,912 --> 00:27:03,311
+limitleri olarak
+
+435
+00:27:03,311 --> 00:27:03,991
+yazılıp
+
+436
+00:27:03,991 --> 00:27:05,031
+yani önce
+
+437
+00:27:05,031 --> 00:27:05,491
+önce üst sınır
+
+438
+00:27:05,491 --> 00:27:06,031
+tabii yazılıp
+
+439
+00:27:06,031 --> 00:27:06,852
+yapıyorsunuz
+
+440
+00:27:06,852 --> 00:27:07,192
+tek kat
+
+441
+00:27:07,192 --> 00:27:07,711
+integral de
+
+442
+00:27:07,711 --> 00:27:08,412
+atılıyorsunuz.
+
+443
+00:27:09,011 --> 00:27:09,692
+Önce üst sınır
+
+444
+00:27:09,692 --> 00:27:09,991
+yazılıp
+
+445
+00:27:09,991 --> 00:27:10,751
+sonra alt sınır
+
+446
+00:27:10,751 --> 00:27:11,092
+yazılıp
+
+447
+00:27:11,092 --> 00:27:11,791
+çıkarılır değil mi?
+
+448
+00:27:12,211 --> 00:27:13,392
+Hesaplamayı biliyoruz zaten.
+
+449
+00:27:13,531 --> 00:27:14,392
+Şimdi örnekleri de
+
+450
+00:27:14,392 --> 00:27:15,531
+göreceğiz.
+
+451
+00:27:15,672 --> 00:27:16,872
+Eğer unuttuysa
+
+452
+00:27:16,872 --> 00:27:17,771
+katılacağız elbette.
+
+453
+00:27:19,332 --> 00:27:19,852
+Sonra
+
+454
+00:27:19,852 --> 00:27:22,412
+buradan gelen ifade
+
+455
+00:27:22,412 --> 00:27:23,332
+muhtemelen
+
+456
+00:27:23,332 --> 00:27:24,152
+X'e bağlı bir ifade
+
+457
+00:27:24,152 --> 00:27:24,672
+olacaktır.
+
+458
+00:27:24,892 --> 00:27:24,951
+Yani
+
+459
+00:27:24,951 --> 00:27:25,912
+ya sabit ya da
+
+460
+00:27:25,912 --> 00:27:26,531
+X'e bağlı olacak.
+
+461
+00:27:26,612 --> 00:27:27,652
+Başka bir şey yok zaten.
+
+462
+00:27:28,811 --> 00:27:29,112
+Sonra
+
+463
+00:27:29,112 --> 00:27:30,311
+artık tek kat
+
+464
+00:27:30,311 --> 00:27:30,892
+A'dan B
+
+465
+00:27:30,892 --> 00:27:32,072
+F
+
+466
+00:27:32,072 --> 00:27:32,912
+GX
+
+467
+00:27:32,912 --> 00:27:33,192
+diyelim
+
+468
+00:27:33,192 --> 00:27:33,692
+mesela.
+
+469
+00:27:34,392 --> 00:27:34,951
+Bunların ifade.
+
+470
+00:27:36,332 --> 00:27:37,372
+X'e bağlı
+
+471
+00:27:37,372 --> 00:27:38,271
+integralimizi
+
+472
+00:27:38,271 --> 00:27:39,352
+hesaplamış
+
+473
+00:27:39,352 --> 00:27:39,731
+olacağız.
+
+474
+00:27:40,672 --> 00:27:41,291
+Şunu belki
+
+475
+00:27:41,291 --> 00:27:42,551
+bu yıl önce
+
+476
+00:27:42,551 --> 00:27:43,152
+hesaplanır.
+
+477
+00:27:43,311 --> 00:27:43,672
+Tabii bunu
+
+478
+00:27:43,672 --> 00:27:44,291
+hesapladık
+
+479
+00:27:44,291 --> 00:27:44,971
+diyelim ki
+
+480
+00:27:44,971 --> 00:27:47,932
+hesaplama sonucunda
+
+481
+00:27:47,932 --> 00:27:50,372
+burada bir
+
+482
+00:27:50,372 --> 00:27:52,132
+fonksiyon
+
+483
+00:27:52,132 --> 00:27:52,572
+yani böyle
+
+484
+00:27:52,572 --> 00:27:53,172
+F'ye G'ye
+
+485
+00:27:53,172 --> 00:27:53,912
+falan çok yazmak
+
+486
+00:27:53,912 --> 00:27:54,632
+istemiyorum ama
+
+487
+00:27:54,632 --> 00:27:55,652
+artık
+
+488
+00:27:55,652 --> 00:27:56,592
+Y'ye bağlı
+
+489
+00:27:56,592 --> 00:27:57,172
+bir fonksiyon
+
+490
+00:27:57,172 --> 00:27:57,572
+diyelim.
+
+491
+00:27:58,291 --> 00:27:58,912
+Buna mesela
+
+492
+00:27:58,912 --> 00:28:00,271
+G'ye diyelim.
+
+493
+00:28:07,604 --> 00:28:10,403
+Hesapladığımız zaman, şöyle girecek nevi fonksiyon elde ederiz.
+
+494
+00:28:11,784 --> 00:28:14,984
+Buraya da hesapladığımızda, x yaparlık fonksiyonu, burada fx diyelim.
+
+495
+00:28:19,124 --> 00:28:20,923
+Büyük şey, bir kadar farklı bir şey.
+
+496
+00:28:24,564 --> 00:28:34,884
+İlk integralda C'den D'ye, G'ye D'ye integral, tek katlı integralını hesaplayacağız artık. İkincide de A'dan B'ye, F'lik D'ye integralını hesaplanmış olacağız.
+
+497
+00:28:39,604 --> 00:28:46,744
+Burada zaten ne diyoruz? Fubini teoremin, diktör kürenin üzerinde iki katlı integralın tekrarlı integral olarak hesaplanabileceğini söyler.
+
+498
+00:28:46,744 --> 00:28:51,284
+Yani adıç olarak hesaplanabildiğini söylüyor.
+
+499
+00:28:51,284 --> 00:28:57,163
+Böylece iki katlı integral, her defasında bir değişkene göre integral ederek hesaplanabilir.
+
+500
+00:29:03,316 --> 00:29:09,836
+Şimdi bir tane örnek verelim bu teorimin uygulandığı. Bir örnek verelim.
+
+501
+00:29:14,067 --> 00:29:26,187
+fxc fonksiyonu, 1-6x kareye, ve r bölgesi de, türev ve bölgesi 0,2 ile x1,1.
+
+502
+00:29:27,627 --> 00:29:32,567
+Şöyle demek lazım, belki 0,2 x x1,1. Onları ararak kreklik özelliğine alırlar, söyleyebilirsiniz.
+
+503
+00:29:35,008 --> 00:29:38,667
+Bu bölge üzerinde, f fonksiyonu iki katlı integralini hesaplayınız.
+
+504
+00:29:44,756 --> 00:29:45,576
+Bu aşamada
+
+505
+00:29:52,596 --> 00:29:54,935
+grafiğini alabiliriz aslında ama almamışız.
+
+506
+00:29:57,256 --> 00:29:59,036
+Çok da grafik bize çok önemli değil.
+
+507
+00:30:00,175 --> 00:30:06,375
+Ama 1-6x kare y kare, tabi r bölge üzerinde olduğuna göre, bu bölge üzerinde nedir?
+
+508
+00:30:07,296 --> 00:30:09,576
+Fonksiyon yukarıda yani pozitif.
+
+509
+00:30:10,955 --> 00:30:11,536
+Devam bakalım.
+
+510
+00:30:28,115 --> 00:30:29,816
+Bir x'i alt x kareyi.
+
+511
+00:30:34,996 --> 00:30:42,736
+Bölge üzerinde tamamen pozisyonu, ona baktım, şimdi o biraz kastım arkadaşlarla. Ama örnek şey değil, örnek almışız.
+
+512
+00:30:44,636 --> 00:30:57,396
+Şimdi, normalde integral, bu teoremine göre, integralimizi bu şekilde yazıp, integral sınırları, eksi birden biri, sıfırdan ikiye, bir eksi altı x kare ye, d x d ye.
+
+513
+00:31:00,396 --> 00:31:03,956
+Yani, bu teoreminin ilk eşitliğini yazdık, şunu.
+
+514
+00:31:04,996 --> 00:31:05,976
+yazmış olduk, değil mi?
+
+515
+00:31:07,656 --> 00:31:12,696
+Gerçekten buradaki ilk integral sonra kalan, gelecek ifadenin, y'ye bağlı bir ifade olduğunu göreceğiz şimdi.
+
+516
+00:31:13,336 --> 00:31:13,696
+Bakın.
+
+517
+00:31:15,996 --> 00:31:20,176
+integral sınırları, y'yi önce dışarıda yazıyoruz, yeni sınırların, eksi birden biri.
+
+518
+00:31:20,736 --> 00:31:27,256
+Sonra, eksi sınırları, sıfırdan ikiye yazıp, içeriye fonksiyonumuz yazık, bir eksi altı x kare ye.
+
+519
+00:31:28,456 --> 00:31:31,855
+Tabii, içeriye sınırlar, eksi sınırları olduğu için, buraya d x yazıyoruz.
+
+520
+00:31:31,855 --> 00:31:40,556
+bazıları, bazıları, bazen, bazen, bazen, bazen, bazen, bazen, bunu daha rahat, görmek için, olabilir.
+
+521
+00:31:40,556 --> 00:31:45,196
+Yani, şöyle, şöyle, şöyle, parantez mesela.
+
+522
+00:31:46,796 --> 00:31:48,355
+Şöyle, değil mi?
+
+523
+00:31:48,636 --> 00:31:50,916
+Eğer, rahat edecekseniz, böyle kullanabilirsiniz.
+
+524
+00:31:52,516 --> 00:31:53,516
+Şaşırmamak için.
+
+525
+00:31:53,516 --> 00:32:23,496
+ve, bu içeriye,
+
+526
+00:32:23,516 --> 00:32:29,976
+x yerine, önce, önce, önce, sıfır vereceğiz, sonra sıfır vereceğiz, ve farkını alacağız.
+
+527
+00:32:31,516 --> 00:32:34,276
+Zaten sıfır için, sıfır olduğu için, onu yazmaya gerek yok.
+
+528
+00:32:34,416 --> 00:32:35,316
+Üst tınıra yazalım.
+
+529
+00:32:36,176 --> 00:32:38,096
+2 için, bir eksi,
+
+530
+00:32:39,676 --> 00:32:41,216
+ee, tabii.
+
+531
+00:32:41,216 --> 00:33:03,716
+ve,
+
+532
+00:32:45,107 --> 00:32:46,248
+2 için yazıyoruz.
+
+533
+00:32:46,768 --> 00:32:47,788
+Başka yere geçmişim.
+
+534
+00:32:47,967 --> 00:32:49,607
+Şuraya devam ediyorum. Niye böyle oldu?
+
+535
+00:32:50,107 --> 00:32:51,887
+16'ye doğru. 2x'i
+
+536
+00:32:51,887 --> 00:32:53,508
+16'ye olur.
+
+537
+00:32:54,748 --> 00:32:55,867
+Çünkü x'in küpü
+
+538
+00:32:55,867 --> 00:32:57,807
+2'nin küpü 8. 8 çarpı 2
+
+539
+00:32:57,807 --> 00:32:59,687
+16. Dolayısıyla y de
+
+540
+00:32:59,687 --> 00:33:01,887
+burada var. 16'ye. 2x'i
+
+541
+00:33:01,887 --> 00:33:04,528
+16'ye
+
+542
+00:33:04,528 --> 00:33:05,607
+d'ye eşittir.
+
+543
+00:33:07,768 --> 00:33:09,587
+Artık bu tek katlı bakın y'ye bağlı
+
+544
+00:33:09,587 --> 00:33:11,887
+bir integral değil mi? Bildiğiniz anlamda
+
+545
+00:33:11,887 --> 00:33:14,067
+y değişkenine göre bunu integral edebiliyoruz.
+
+546
+00:33:15,107 --> 00:33:18,827
+2'ye eksi 8'ye kare eksi
+
+547
+00:33:18,827 --> 00:33:19,528
+birden bire
+
+548
+00:33:19,528 --> 00:33:22,187
+eşittir 4.
+
+549
+00:33:24,067 --> 00:33:26,587
+Tabi bu ders notu da arkadaşlar avestini yüklüyor.
+
+550
+00:33:26,667 --> 00:33:28,687
+Buna yine aynı şekilde [şifre] şifreçlikle
+
+551
+00:33:28,687 --> 00:33:29,587
+ulaşabilirsiniz.
+
+552
+00:33:32,967 --> 00:33:33,607
+Dolayısıyla
+
+553
+00:33:33,607 --> 00:33:36,927
+integral'ın sırasını değiştirmek de aynı sonucu
+
+554
+00:33:36,927 --> 00:33:38,867
+verir. Yukarıda söylemiştik. Gerçekten
+
+555
+00:33:38,867 --> 00:33:40,048
+kontrol edelim.
+
+556
+00:33:41,367 --> 00:33:42,907
+Bu defa y'nin sınırlarını dışarı
+
+557
+00:33:42,907 --> 00:33:43,307
+yazalım.
+
+558
+00:33:45,107 --> 00:33:47,028
+bakın sıfırdan ikiye sonra
+
+559
+00:33:47,028 --> 00:33:48,587
+x'in sınırları eksi birden bire.
+
+560
+00:33:48,827 --> 00:33:49,647
+Yani öyle verilmiş.
+
+561
+00:33:50,167 --> 00:33:51,487
+Pardon önce x'in sınırları sonra
+
+562
+00:33:51,487 --> 00:33:52,587
+y'nin sınırları yazıyoruz.
+
+563
+00:33:53,788 --> 00:33:55,107
+x'in sınırları sıfırdan ikiye
+
+564
+00:33:55,107 --> 00:33:57,167
+y'nin sınırları eksi birden bire içeriye yazalım.
+
+565
+00:33:57,167 --> 00:34:01,207
+bir defa ifadeyi önce y'ye göre sonra x'ye göre ifade
+
+566
+00:34:01,207 --> 00:34:02,327
+inceklere edeceğiz.
+
+567
+00:34:03,447 --> 00:34:04,307
+Kumbün teoremleri.
+
+568
+00:34:06,048 --> 00:34:07,107
+y'ye göre integral'den
+
+569
+00:34:07,107 --> 00:34:07,947
+y eksi
+
+570
+00:34:07,947 --> 00:34:11,447
+3 x kare y kare olur.
+
+571
+00:34:11,507 --> 00:34:12,027
+Değil mi şurası?
+
+572
+00:34:13,467 --> 00:34:15,108
+Siz de şöyle göz ucuyla takip edin.
+
+573
+00:34:16,708 --> 00:34:18,467
+y eksi 3 x kare y kare olur.
+
+574
+00:34:18,467 --> 00:34:22,007
+integral sınırları eksi birden bire.
+
+575
+00:34:23,887 --> 00:34:25,087
+Üst sınırı yazdık.
+
+576
+00:34:25,327 --> 00:34:26,567
+1 eksi 3 x kare olur.
+
+577
+00:34:27,728 --> 00:34:28,807
+Alt sınır eksi bir
+
+578
+00:34:28,807 --> 00:34:30,507
+y'nin eksi bir yazarsak
+
+579
+00:34:30,507 --> 00:34:32,087
+eksi
+
+580
+00:34:32,087 --> 00:34:34,248
+x'i bir eksi 3 x kare olur.
+
+581
+00:34:35,907 --> 00:34:37,768
+Ve farklılığını oluşturduğumuzda
+
+582
+00:34:37,768 --> 00:34:38,987
+bakın burada x kareler
+
+583
+00:34:38,987 --> 00:34:40,507
+3 x kareler birbirini götürüyor.
+
+584
+00:34:41,788 --> 00:34:43,128
+1 artı 1 2 gelir.
+
+585
+00:34:43,688 --> 00:34:44,748
+integral sıfırdan 2
+
+586
+00:34:44,748 --> 00:34:46,608
+2 değil 2 şeklinde bir integral'e gelir.
+
+587
+00:34:46,728 --> 00:34:47,927
+Bunun da integralı açıkça 4.
+
+588
+00:34:48,467 --> 00:34:51,567
+yani integral'de sen 2 x olur değil mi?
+
+589
+00:34:52,748 --> 00:34:54,128
+x'e 4 yazdığınız zaman
+
+590
+00:34:54,128 --> 00:34:56,228
+2 yazdığınız zaman
+
+591
+00:34:56,228 --> 00:34:57,047
+4 olur.
+
+592
+00:34:57,307 --> 00:34:59,728
+Alt sınıf zaten 0 0 yazdığınızda 0 olacak için
+
+593
+00:34:59,728 --> 00:35:01,387
+sonuç bize
+
+594
+00:35:01,387 --> 00:35:03,587
+4 olarak karşımıza çıkar.
+
+595
+00:35:06,527 --> 00:35:07,268
+Demek ki
+
+596
+00:35:07,268 --> 00:35:08,927
+ilk döklen bölge üzerinde
+
+597
+00:35:08,927 --> 00:35:10,447
+bir fonksiyonun
+
+598
+00:35:10,447 --> 00:35:13,827
+integral'in hesaplanması
+
+599
+00:35:13,827 --> 00:35:14,827
+bu şekilde
+
+600
+00:35:20,340 --> 00:35:23,320
+Pugini teoremine göre bu şekilde elde ediliyor.
+
+601
+00:35:26,840 --> 00:35:36,840
+Bölgemiz diktörüken bölge olduğu zaman, integral sırasını hiçbir değişiklik yapmadan değiştirip, ne yapabiliyoruz?
+
+602
+00:35:37,000 --> 00:35:41,620
+İntegral hesap ediyoruz. Hangi sıraya göre alırsa kadar sonuç aynı çıkar.
+
+603
+00:35:41,620 --> 00:35:58,380
+Tabii eğer integral bölge, integrasyon bölgesi, yani R bölgesi, diktörüken değil de farklı türden bir bölge olsaydı, o zaman tabii sonuçlu değişmemesi için, o dönüşümden kaynaklanan, ne yapacağız?
+
+604
+00:35:58,519 --> 00:36:01,340
+Mecburen belli bir kriter uygulayacağız.
+
+605
+00:36:01,579 --> 00:36:02,320
+Bunu da söyleyeceğiz.
+
+606
+00:36:17,940 --> 00:36:21,519
+Burada toplamda sanırım 44-42 parada sayfa var.
+
+607
+00:36:23,099 --> 00:36:25,840
+En azından bugün yarısını görelim.
+
+608
+00:36:27,880 --> 00:36:40,200
+Ömrünce haftayı da tamamlayıp tekrar edelim tabii sonra bütün konu üzerinde bulgulama yaparız.
+
+609
+00:36:40,200 --> 00:36:49,760
+Şimdi bölge mi törtgensel bölge değilse ilk katlin terali nasıl hesaplayacağız?
+
+610
+00:36:51,300 --> 00:36:56,300
+Mantık aynı aslında yani Diyarman toplamının bulunması için.
+
+611
+00:36:57,500 --> 00:37:04,920
+Böyle diyelim ki bir şöyle mavi ile çirilmiştim sana böyle bir re bölgesi böyle bir şey olsun.
+
+612
+00:37:04,920 --> 00:37:25,599
+Bu re bölgesini yine eksenlere paralel dikey doğrularla kısmı bölgeleri ayırdığımızda ve her biri alanları delta aka olan üretiklökesel bölgeler elde ederiz.
+
+613
+00:37:26,000 --> 00:37:30,760
+Ve bundan her birine bir x-y-k noktası seçimi yapabiliriz.
+
+614
+00:37:30,760 --> 00:37:45,860
+Tabii diyeceksin bakın burada dikkat ederseniz Türkiye'si bölgeleri ayrılığımız için burası tabii re bölgesinin kendisi bir Türkiye'nin bölge olmadığı için mutlaka dedi bu kenarlarda bakın boşluklar kalıyor değil mi?
+
+615
+00:37:45,860 --> 00:38:04,860
+İşte aslında normalde ilk en tabii kısım bölgeler için bu şekilde bir gösterdik var ama biz sonuçta ilk katlin terali tanımlamak için işte penin normunun sıfıra yaklaşması diyebiliriz.
+
+616
+00:38:04,860 --> 00:38:12,180
+Diğer birleşe delta aka olanın sıfıra yaklaşması o da ancak en sonuçta gitmesiyle mümkün.
+
+617
+00:38:13,260 --> 00:38:15,480
+Yani bu ifadenin limiti en sonuçta giderken.
+
+618
+00:38:16,420 --> 00:38:26,119
+Dolayısıyla burayı o kadar biz bu bölünüşü büyük seçeceğiz ki bu diltökenler çok küçük olacak.
+
+619
+00:38:26,119 --> 00:38:29,099
+Dolayısıyla bu artık o bu ne anlama gelir?
+
+620
+00:38:29,579 --> 00:38:35,200
+Şuradaki bu beyaza gösterilen bu boşluklar artık o küçük diltökenler tarafından nedir?
+
+621
+00:38:35,820 --> 00:38:36,480
+Dolacaktır.
+
+622
+00:38:36,639 --> 00:38:38,280
+Yani bu biraz neye benziyor kadar aslında?
+
+623
+00:38:38,280 --> 00:39:01,900
+Ne bu?
+
+624
+00:38:44,947 --> 00:38:50,487
+Arıların bal peteklerindeki oluşan o ızgara, o gözenekler düşünün.
+
+625
+00:38:51,147 --> 00:38:52,527
+Oradaki gözeneklere benziyor.
+
+626
+00:38:52,527 --> 00:39:00,387
+Onlara dikkat ederseniz bazı çerçeve yerlere baktığınız zaman tam dolu olan bir çerçeve.
+
+627
+00:39:01,167 --> 00:39:02,887
+Tabii o tam tiktörtgen değil.
+
+628
+00:39:03,027 --> 00:39:12,987
+Her ne kadar çerçeve tiktörtgen ama içeriye dikkat ederseniz o balın esas olduğu gözeneklere baktığınız zaman o bu şekilde bir bölge gibi.
+
+629
+00:39:13,587 --> 00:39:14,487
+Ama her tarafı nedir?
+
+630
+00:39:14,547 --> 00:39:14,768
+Dolu.
+
+631
+00:39:14,947 --> 00:39:16,087
+Her tarafı dolu.
+
+632
+00:39:16,467 --> 00:39:17,667
+Her şeyi ne yapıyor?
+
+633
+00:39:17,748 --> 00:39:18,248
+İşlemi alıyorsun.
+
+634
+00:39:18,967 --> 00:39:19,768
+Burada da benzer.
+
+635
+00:39:19,768 --> 00:39:21,447
+Yani bu benzetmemiz çok iyi oldu.
+
+636
+00:39:22,447 --> 00:39:25,987
+O bakımdan bunu öyle düşünebilirsiniz.
+
+637
+00:39:27,768 --> 00:39:34,728
+Bu halde işte fx'ye fonksiyonunun r üzerinde iki katlı integral ile aynı mantıkta bu şekilde denildi tanımlanacaktır.
+
+638
+00:39:36,507 --> 00:39:43,087
+Tabii buradaki büyük fark integralin hesaplanmasında karşılığında çıkacaktır.
+
+639
+00:39:43,087 --> 00:39:47,867
+Yani burada da işte FUBİ'nin teoreminin ikinci şekli diyeceğiz.
+
+640
+00:39:47,867 --> 00:39:54,927
+Burada direkt hemen öyle sınır değişimini ne yapamayacağız elde edemeyeceğiz belli koşullar altında.
+
+641
+00:39:55,288 --> 00:40:00,288
+Çünkü burada mesela diyelim ki bu A'dan B'ye ve altta K'ye'den üstte K'ye diye değil mi?
+
+642
+00:40:00,288 --> 00:40:04,887
+Tanımladığımız zaman bölgemiz bu şekilde ancak tanımlayalım.
+
+643
+00:40:04,887 --> 00:40:05,627
+Biz başka olmaz.
+
+644
+00:40:06,627 --> 00:40:12,688
+Sonra biz tabii altta K'ye'den buraya da adı olduğumuz zaman x'in şeyi dışarıda değil mi?
+
+645
+00:40:12,687 --> 00:40:15,647
+x'e bağlı sınırlar dışarıda önce tanımlanmış oldu.
+
+646
+00:40:18,527 --> 00:40:20,187
+Şimdi görelim bunu yavaş yavaş.
+
+647
+00:40:26,516 --> 00:40:41,076
+Bakın, birkaç özellikten yine bahsedelim önce. Sürekli fonksiyonlar, tükkör kestel olmayan bölgelerdeki iki katlı integral'ların çevresel özellikleri, tükkör kestel bölgedeki integral'ların ikiyle aynıdır.
+
+648
+00:40:42,416 --> 00:40:49,635
+Yani tanım kümesi toplanabilir bir gözlerimine göre. R yine sonlu sayıda doğru parçası veya düzgün eğriyle sınırlı.
+
+649
+00:40:49,635 --> 00:41:00,556
+Üstü olmayan iki tane R1 ve R2 bölgelerine ayrılmışsa, burada olduğu gibi, bu bizim R bölgemizin tamamı ama bu şöyle iki tane bölgeye ayrılmışsa,
+
+650
+00:41:01,336 --> 00:41:09,976
+R üzerindeki, yani R'nin tamamı üzerindeki integral aslında, etfikse fonksiyonu integral'i, R1 üzerindeki integral artı R2 üzerindeki integral şeklinde düşünülebilir.
+
+651
+00:41:11,796 --> 00:41:18,135
+Tabii R bölgesi aslında bu R1 ile R2'nin nesli birleşkesi olan bir bölge. Doğru mudur?
+
+652
+00:41:35,668 --> 00:41:45,907
+Burada sadece bir özellik ne yapmış olduk, belirtmiş olduk. Tabi daha iki katlı integralin çok sadece özellikleri var. Onları biraz ileride göreceğiz.
+
+653
+00:41:55,347 --> 00:42:04,307
+Şimdi kartın t'den hesaplanması tabi dökülürken olmayan bölgeler üzerinde hesaplığa bakıyoruz.
+
+654
+00:42:06,067 --> 00:42:13,128
+Eğer f ise tabi r bölgesinde sürekli bir fonksiyon olsun.
+
+655
+00:42:13,128 --> 00:42:29,907
+R bölgesi g1 g2 fonksiyonlara ab kapılar üzerinde sürekli olmak üzere ab g1x g2x yani y'nin sınırlarını bir defa neyle alıyoruz?
+
+656
+00:42:30,087 --> 00:42:30,788
+Eğriler alıyoruz.
+
+657
+00:42:30,927 --> 00:42:32,047
+Yukarıda bunu nasıl alacağız?
+
+658
+00:42:32,047 --> 00:42:32,927
+Gerçekten şurada.
+
+659
+00:42:35,007 --> 00:42:38,487
+İşte bu mesela a'dan b'yi içelim şuraya kadar.
+
+660
+00:42:39,327 --> 00:42:41,947
+Sonra bu eğri işte x'e bağlı bir eğri.
+
+661
+00:42:42,007 --> 00:42:43,047
+Bu da y'ye bağlı.
+
+662
+00:42:43,128 --> 00:42:44,847
+Yine x'e bağlı üstteki bir eğri.
+
+663
+00:42:45,927 --> 00:42:49,507
+Y'nin sınırlarında böyle oluşturmuş olacağız y'nin üzerindeki sınırlar.
+
+664
+00:42:50,587 --> 00:42:51,867
+O yüzden öyle yazabiliyoruz.
+
+665
+00:42:53,987 --> 00:42:57,927
+Şekilinde tanımlıysa iki katlı integralimiz.
+
+666
+00:42:58,288 --> 00:43:06,547
+Bakın a'dan b'ye g1x'e g2x'e buna g1 y2 de diyemişsiniz ya da cv de diyemiyoruz.
+
+667
+00:43:07,248 --> 00:43:07,547
+Tamam mı?
+
+668
+00:43:07,547 --> 00:43:08,567
+Cv de diyemiyoruz.
+
+669
+00:43:09,507 --> 00:43:11,768
+G1'den g2'ye fx'e d'ye diyelim.
+
+670
+00:43:11,768 --> 00:43:12,608
+Çünkü artık eğri.
+
+671
+00:43:13,608 --> 00:43:15,228
+Yani cv de diyemeyiz.
+
+672
+00:43:15,307 --> 00:43:15,987
+Niye diyemezsiniz?
+
+673
+00:43:16,108 --> 00:43:17,228
+Çünkü cv de derseniz.
+
+674
+00:43:18,148 --> 00:43:19,427
+Tirk Türkiye'ni almış olursunuz.
+
+675
+00:43:19,587 --> 00:43:20,887
+Yani bu bölgeyi almamış olursunuz.
+
+676
+00:43:21,927 --> 00:43:23,927
+Yani şöyle bir tirk Türkiye'ni almış olursunuz.
+
+677
+00:43:23,927 --> 00:43:27,628
+Halbuki bizim bölgemiz böyle bir bölge değil mi?
+
+678
+00:43:27,688 --> 00:43:28,628
+Türkiye'nin bölgeyle ilgili.
+
+679
+00:43:35,219 --> 00:43:39,139
+integral hesabı bu şekilde karşımda getirilir. Böyle yapabiliriz.
+
+680
+00:43:42,059 --> 00:43:47,480
+Integral değişkenliği, ilk integral değişkenliği, x'e göre hesaplamak istediğimizde de,
+
+681
+00:43:55,476 --> 00:43:56,715
+Bu defa R
+
+682
+00:43:56,715 --> 00:43:58,796
+H1 ve H2
+
+683
+00:43:58,796 --> 00:44:00,675
+C'de aralığı üzerinde sürekli
+
+684
+00:44:00,675 --> 00:44:01,416
+olmak üzere
+
+685
+00:44:01,416 --> 00:44:04,896
+Y C'den
+
+686
+00:44:04,896 --> 00:44:06,076
+D'ye H1-Y
+
+687
+00:44:06,076 --> 00:44:08,856
+X'de H1-Y'ye H2'ye arasında
+
+688
+00:44:08,856 --> 00:44:10,756
+şeklinde tanımlanıyorsa
+
+689
+00:44:10,756 --> 00:44:13,175
+o zaman bu integralimiz
+
+690
+00:44:13,175 --> 00:44:14,695
+C'den D'ye
+
+691
+00:44:14,695 --> 00:44:16,155
+H1-Y'den H2'ye
+
+692
+00:44:16,155 --> 00:44:18,316
+F'x'e D'ye şeklinde
+
+693
+00:44:18,316 --> 00:44:19,856
+gerir.
+
+694
+00:44:22,016 --> 00:44:23,896
+Şimdi bu ikisinin farkı ne?
+
+695
+00:44:23,896 --> 00:44:25,856
+Tabii hesaplama
+
+696
+00:44:25,856 --> 00:44:27,256
+şeyler değil mi?
+
+697
+00:44:28,036 --> 00:44:29,556
+İntegral sıralar farklı
+
+698
+00:44:29,556 --> 00:44:31,736
+ve böyle hemen
+
+699
+00:44:31,736 --> 00:44:33,635
+bir integral sırası
+
+700
+00:44:33,635 --> 00:44:36,096
+direkt sınırlar o şekilde hemen direkt değiştirerek
+
+701
+00:44:36,096 --> 00:44:37,476
+elde edilen bir integral değil.
+
+702
+00:44:37,476 --> 00:44:38,756
+Değil buna dikkat ederseniz.
+
+703
+00:44:41,096 --> 00:44:41,736
+Tabii
+
+704
+00:44:41,736 --> 00:44:42,976
+niye
+
+705
+00:44:42,976 --> 00:44:45,715
+bu iki sırada hani biri varken
+
+706
+00:44:45,715 --> 00:44:47,996
+diğerine ne gerek var diye sorabilirsiniz.
+
+707
+00:44:48,236 --> 00:44:49,516
+Onların örneklerini göreceğiz.
+
+708
+00:44:51,036 --> 00:44:52,076
+Yani burada öyle bir
+
+709
+00:44:52,076 --> 00:44:53,715
+karşımıza ifade çıkar ki burada
+
+710
+00:44:53,715 --> 00:44:55,436
+Y'ye bağlı bir ifade.
+
+711
+00:44:55,576 --> 00:44:55,796
+Bunu
+
+712
+00:44:55,796 --> 00:44:58,036
+bu integralı Y'ye göre
+
+713
+00:44:58,036 --> 00:44:59,436
+integr etmeniz mümkün değil.
+
+714
+00:45:01,076 --> 00:45:01,796
+Oysa
+
+715
+00:45:01,796 --> 00:45:04,115
+onu bu şekilde aldığımızda
+
+716
+00:45:04,115 --> 00:45:06,115
+fx'in aynı fx'imiz
+
+717
+00:45:06,115 --> 00:45:07,576
+X'e göre
+
+718
+00:45:07,576 --> 00:45:09,195
+integre edilebilir olduğunu
+
+719
+00:45:09,195 --> 00:45:10,356
+kolayca görüp
+
+720
+00:45:10,356 --> 00:45:12,276
+sonra bu integral
+
+721
+00:45:12,276 --> 00:45:13,216
+sürdürdüğümüzde
+
+722
+00:45:13,216 --> 00:45:14,436
+gelen ifadenin
+
+723
+00:45:14,436 --> 00:45:15,516
+artık oluşan ifadenin
+
+724
+00:45:15,516 --> 00:45:16,456
+Y'ye göre çok kolay
+
+725
+00:45:16,456 --> 00:45:17,756
+integre edilebileceğini görürüz.
+
+726
+00:45:18,996 --> 00:45:20,256
+Dolayısıyla Fubini teoreminin
+
+727
+00:45:20,256 --> 00:45:20,516
+bu
+
+728
+00:45:20,516 --> 00:45:22,276
+özellikle ikinci şekli
+
+729
+00:45:22,276 --> 00:45:23,296
+bakımdan çok önemli.
+
+730
+00:45:25,336 --> 00:45:26,115
+Hani tamam ben
+
+731
+00:45:26,115 --> 00:45:27,236
+bu birincisini
+
+732
+00:45:27,236 --> 00:45:28,336
+çünkü sonuçta bundan
+
+733
+00:45:28,336 --> 00:45:28,736
+ikisi
+
+734
+00:45:28,736 --> 00:45:29,596
+eğer
+
+735
+00:45:29,596 --> 00:45:30,856
+ikisi de hesaplanabiliyorsa
+
+736
+00:45:30,856 --> 00:45:31,876
+ikisinin sonucu aynı.
+
+737
+00:45:33,336 --> 00:45:33,816
+Bunlar aynı.
+
+738
+00:45:34,236 --> 00:45:34,496
+Eşit.
+
+739
+00:45:34,956 --> 00:45:35,536
+Sonuçlar
+
+740
+00:45:35,536 --> 00:45:36,115
+verecektir.
+
+741
+00:45:38,216 --> 00:45:39,695
+Çünkü fx'e fonksiyonunun
+
+742
+00:45:39,695 --> 00:45:40,356
+integralini
+
+743
+00:45:40,356 --> 00:45:41,436
+hangi bölge üzerinde
+
+744
+00:45:41,436 --> 00:45:42,195
+hesaplıyorsunuz.
+
+745
+00:45:43,036 --> 00:45:44,096
+Ama öyle durumlar olur ki
+
+746
+00:45:44,096 --> 00:45:45,376
+mesela bu ya da bu şekilde
+
+747
+00:45:45,376 --> 00:45:46,316
+hesaplanabilirsiniz.
+
+748
+00:45:46,836 --> 00:45:47,936
+Bir tanesinin hesaplanması
+
+749
+00:45:47,936 --> 00:45:48,716
+bana onu verir.
+
+750
+00:45:49,396 --> 00:45:49,796
+Normal
+
+751
+00:45:49,796 --> 00:45:51,476
+bilinen integral
+
+752
+00:45:51,476 --> 00:45:52,736
+özellikleriyle.
+
+753
+00:45:52,736 --> 00:46:15,496
+bir tanesinin
+
+754
+00:45:57,556 --> 00:45:59,775
+Hemen bir örnek yapalım, bakın örnek verelim.
+
+755
+00:46:04,340 --> 00:46:11,640
+Tabanı x'e düzleminde, x x'eni, y eşitir x ve x eşitir 1.
+
+756
+00:46:16,947 --> 00:46:31,487
+Yorları tarafından sınırlı üçgen olan ve tepesi de z eşittir, ona f x'e diyelim, 3 x x y düzlemle bulunan prizmanın hacmini bulunuruz.
+
+757
+00:46:37,748 --> 00:46:48,387
+Soruyu dikkatli okuduğumuzda, tabanı x'e düzleminde, x80'i yasınırlı, y'eşitli x doğrusu yasınırlı ve x'eşitli 1 doğrusu yasınırlı.
+
+758
+00:46:50,068 --> 00:46:54,688
+Onu hemen, bakın şuraya belirtelim, şu B'deki şekil, yanındaki.
+
+759
+00:46:56,588 --> 00:47:01,248
+x'e x'e'li, y'eşitli x doğrusu ve x'e'li bir tiktir doğrusu, değil mi?
+
+760
+00:47:02,288 --> 00:47:04,947
+Bu şekildeki tabanı, R bölgemiz burası.
+
+761
+00:47:04,947 --> 00:47:11,827
+Tabii bu bölge üzerinde, yukarıdan tepesi de şu prizmayla,
+
+762
+00:47:12,927 --> 00:47:17,088
+tabii 3 boyutta bunu işte, çizdiğiniz zaman, böyle bir şekil, bir tiktir veriyor.
+
+763
+00:47:17,847 --> 00:47:20,128
+3 x x x'e, bir şekil de bir.
+
+764
+00:47:23,860 --> 00:47:33,599
+Bunun izlişimi, X'e düzeninde bize şu, B'deki R bölgesi olmak üzere, böyle bir katıcısı.
+
+765
+00:47:37,108 --> 00:47:41,688
+Bu tepedeki yüzeyimiz, 3x, x, y, prizman yüzey.
+
+766
+00:47:48,436 --> 00:47:54,716
+Hatta bu da düzlem, tabii düzlem var, şey değil yani, ikisi de düzlemle paralel bir düzlem değil, değil mi?
+
+767
+00:47:55,376 --> 00:48:01,276
+Değil. Yukarıda işte bu prizmanın yukarıdan bir şekilde bu düzlemle kısmi içimi var.
+
+768
+00:48:16,019 --> 00:48:20,340
+İşte bu prizma üzerindeki belli noktalar işaretleyebiliriz.
+
+769
+00:48:21,259 --> 00:48:28,759
+T bölgesinin tabi tabanlarını, bu doğruların kesimleri itibariyle, bunları işaretlemek kolay.
+
+770
+00:48:29,699 --> 00:48:31,800
+Hatta 3 koordinat olarak işaretlemek kolay.
+
+771
+00:48:33,099 --> 00:48:37,199
+Burası mesela 1-1, değil mi? İ için, kisi için.
+
+772
+00:48:37,860 --> 00:48:39,759
+Ama z'ye geldiği zaman tabi sıfır olacak burada.
+
+773
+00:48:39,759 --> 00:48:41,239
+X üzerinde z sıfır her zaman.
+
+774
+00:48:41,239 --> 00:48:46,280
+X seksenin üzerinde 1-0, 7-0 çünkü.
+
+775
+00:48:48,380 --> 00:48:49,900
+İki daha nokta, burası zaten oruç.
+
+776
+00:48:50,739 --> 00:48:54,900
+Yani şu noktaların koordinatlarını burada yazabiliriz.
+
+777
+00:48:56,460 --> 00:49:00,380
+Üstelik, frizmadan kaynaklanan noktalar da,
+
+778
+00:49:01,380 --> 00:49:06,619
+şu köşe 1-0-2, yani bunun izdüşümü 1-0-0 olan köşe bu.
+
+779
+00:49:06,619 --> 00:49:32,489
+yine şu 1-1-1-0-1
+
+780
+00:49:37,300 --> 00:49:43,840
+Şimdi, önce R bölgesini böyle alarak, bu şekilde alarak, yani ne diyeceğiz?
+
+781
+00:49:44,960 --> 00:49:49,060
+X sıfırdan bire, böyle mi alalım?
+
+782
+00:49:50,660 --> 00:49:53,840
+Y'de sıfırdan nereye olur? X'e, değil mi?
+
+783
+00:49:55,800 --> 00:49:58,720
+X sıfırdan bire, Y'de sıfırdan X'e.
+
+784
+00:50:00,420 --> 00:50:01,400
+Bunu mu önce almışız?
+
+785
+00:50:03,060 --> 00:50:06,240
+Önce Y'ye göre tamamen, bu dediğim ikinci de almışız.
+
+786
+00:50:06,240 --> 00:50:07,580
+Yok, doğru.
+
+787
+00:50:08,100 --> 00:50:10,220
+X sıfırdan bire, Y'de sıfırdan eksile.
+
+788
+00:50:11,440 --> 00:50:12,100
+Doğru mu?
+
+789
+00:50:13,440 --> 00:50:15,160
+Nerede? Bu R bölgesi üzerinde, bakın.
+
+790
+00:50:16,500 --> 00:50:17,660
+Fubuni teoremin,
+
+791
+00:50:18,740 --> 00:50:19,440
+şıklarını,
+
+792
+00:50:20,400 --> 00:50:22,500
+bu R bölgelerini bu şekilde alarak,
+
+793
+00:50:23,060 --> 00:50:24,380
+R bölgesi üzerinde yazacağız.
+
+794
+00:50:25,480 --> 00:50:26,539
+X sıfırdan bire,
+
+795
+00:50:27,280 --> 00:50:28,680
+Y sıfırdan X'e.
+
+796
+00:50:29,820 --> 00:50:30,460
+Yazdık.
+
+797
+00:50:31,360 --> 00:50:33,160
+Önce Y'ye göre integral,
+
+798
+00:50:33,440 --> 00:50:34,539
+sonra X'e göre integral.
+
+799
+00:50:38,643 --> 00:50:49,523
+Şu içerideki integral hesapladığımızda, şu integralı, y'ye göre integral, 3, y, x, y, x, y, y, kare bölü 2. Doğru mu?
+
+800
+00:50:52,043 --> 00:50:56,543
+Integral sınırları, bakın y yerine bazen bunu yazabilirsiniz, karıştırmamak için.
+
+801
+00:50:57,463 --> 00:51:04,763
+y'ye sıfırdan y'ye sıfırdan y'ye sıfır. Çünkü y'ye göre integral edilir için, bu sınırlar da yeni sınırlar. Yani y değişkeni yerine sınırlar yazacaksınız.
+
+802
+00:51:12,083 --> 00:51:12,803
+Bu açık.
+
+803
+00:51:26,291 --> 00:51:27,731
+İçerine x yazdığımızda
+
+804
+00:51:27,731 --> 00:51:31,612
+3x-x'i
+
+805
+00:51:31,612 --> 00:51:33,172
+x kare
+
+806
+00:51:33,172 --> 00:51:34,331
+değil mi?
+
+807
+00:51:34,951 --> 00:51:36,172
+x-x kare bölü 2.
+
+808
+00:51:36,391 --> 00:51:37,851
+Bu iki farkı toplanmışız.
+
+809
+00:51:37,911 --> 00:51:40,991
+3x-x'i
+
+810
+00:51:40,991 --> 00:51:42,751
+3x kare bölü 2.
+
+811
+00:51:43,971 --> 00:51:45,072
+Bunun da x'e göre
+
+812
+00:51:45,072 --> 00:51:45,931
+integrasyonu.
+
+813
+00:51:46,931 --> 00:51:48,451
+3x kare bölü 2 eksi
+
+814
+00:51:48,451 --> 00:51:51,311
+x küp bölü 2 olur değil mi?
+
+815
+00:51:52,152 --> 00:51:53,771
+3'e sanat ediyoruz çünkü.
+
+816
+00:51:53,771 --> 00:51:56,751
+İntegrasyonu 0'dan 1'e.
+
+817
+00:51:57,791 --> 00:51:58,172
+Bakın.
+
+818
+00:52:00,192 --> 00:52:01,751
+Şimdi burayı kapatacağım.
+
+819
+00:52:01,871 --> 00:52:02,991
+Gerçi gördünüz ama.
+
+820
+00:52:04,132 --> 00:52:05,192
+Diğer integrasyonu
+
+821
+00:52:05,192 --> 00:52:06,612
+yazalım bakalım.
+
+822
+00:52:07,971 --> 00:52:08,731
+Nasıl yazarsınız?
+
+823
+00:52:08,911 --> 00:52:09,851
+Söyleyin bakayım bana.
+
+824
+00:52:10,231 --> 00:52:11,271
+Bir uğraşın deneyin bir.
+
+825
+00:52:25,907 --> 00:52:37,967
+Deneyelim, Taylor serisinde. Yani önce burada, önce Y'nin sınırlarını yazacağız, sonra X'in sınırlarını yazacağız. Nasıl olur? Şekil belli zaten, burada vermişiz.
+
+826
+00:53:12,724 --> 00:53:13,484
+Dinliyor muyuz arkadaşlar?
+
+827
+00:53:18,579 --> 00:53:21,980
+İntegrelerin yeri değişecek, sonunda da DxD'ye yazacağız.
+
+828
+00:53:23,460 --> 00:53:25,759
+Nasıl değişeceksin mesela?
+
+829
+00:53:30,099 --> 00:53:35,960
+0'dan 1'e, bir de 1'den Y'ye olabilir mi?
+
+830
+00:53:39,443 --> 00:53:40,943
+Bakın yukarıda şekil var.
+
+831
+00:53:42,643 --> 00:53:43,284
+Şimdi x'e göre
+
+832
+00:53:43,284 --> 00:53:44,224
+intere alırken
+
+833
+00:53:44,224 --> 00:53:46,523
+0'dan 1'e 0'dan x'e derken
+
+834
+00:53:46,523 --> 00:53:48,324
+şu şekilde baktığımız zaman
+
+835
+00:53:48,324 --> 00:53:50,563
+0'dan 1'e
+
+836
+00:53:50,563 --> 00:53:52,583
+sonra 6'a kere'den üstteki 5'ye.
+
+837
+00:53:53,143 --> 00:53:54,324
+Tamam mı? Böyle düşünüyoruz.
+
+838
+00:53:56,483 --> 00:53:57,304
+Diğeri için
+
+839
+00:53:57,304 --> 00:53:58,503
+şu şekle bakacağız.
+
+840
+00:54:00,443 --> 00:54:01,324
+Y'nin sınırdan önce
+
+841
+00:54:01,324 --> 00:54:03,003
+yazılacak 0'dan 1'e doğru.
+
+842
+00:54:03,824 --> 00:54:05,003
+Yazık 0'dan 1'e.
+
+843
+00:54:06,344 --> 00:54:06,704
+Değil mi?
+
+844
+00:54:06,704 --> 00:54:09,764
+Şöyle yazıyorum.
+
+845
+00:54:10,784 --> 00:54:12,403
+Sonra x'in sınırlarını
+
+846
+00:54:12,403 --> 00:54:13,043
+y'ye bağlı.
+
+847
+00:54:13,403 --> 00:54:14,143
+Nereden?
+
+848
+00:54:14,724 --> 00:54:16,683
+Soldaki yer ile sağdaki yeri yazacağız.
+
+849
+00:54:18,003 --> 00:54:19,023
+Tespitlerin doğru ama
+
+850
+00:54:19,023 --> 00:54:20,844
+sadece sıralamasını yalnız söyledim.
+
+851
+00:54:22,364 --> 00:54:22,923
+Nereden olacak?
+
+852
+00:54:23,063 --> 00:54:24,983
+Yani y'den 1'e olacak.
+
+853
+00:54:26,443 --> 00:54:26,963
+Gördünüz mü?
+
+854
+00:54:30,143 --> 00:54:31,364
+Y'den 1 olacak.
+
+855
+00:54:31,364 --> 00:54:33,764
+Her zaman şunu düşünün.
+
+856
+00:54:34,623 --> 00:54:35,543
+Önce x'in sınırlarını
+
+857
+00:54:35,543 --> 00:54:36,884
+yazdık. Sonra y'yi nereden?
+
+858
+00:54:36,943 --> 00:54:37,704
+Alttaki yeri'den
+
+859
+00:54:37,704 --> 00:54:38,663
+şunu yazıyorum.
+
+860
+00:54:39,123 --> 00:54:39,864
+Üstteki yeri'ye.
+
+861
+00:54:40,284 --> 00:54:40,943
+Şöyle yazdık.
+
+862
+00:54:43,344 --> 00:54:43,643
+Sonra
+
+863
+00:54:43,643 --> 00:54:45,083
+önce y'nin sınırlarını
+
+864
+00:54:45,083 --> 00:54:45,483
+başlıyoruz.
+
+865
+00:54:45,603 --> 00:54:46,463
+Yani sıfırdan 1'e
+
+866
+00:54:46,463 --> 00:54:47,523
+aralığımızı yazdık.
+
+867
+00:54:47,943 --> 00:54:48,523
+X'in sınırlarını
+
+868
+00:54:48,523 --> 00:54:49,804
+yazmak için bu defa
+
+869
+00:54:49,804 --> 00:54:50,844
+soldaki yeri'den
+
+870
+00:54:50,844 --> 00:54:51,963
+ne diyeceğiz?
+
+871
+00:54:52,344 --> 00:54:53,264
+Sağdaki yeri'ye.
+
+872
+00:54:55,003 --> 00:54:55,764
+Soldaki yerimiz
+
+873
+00:54:55,764 --> 00:54:57,184
+burada x'i içtiliğe doğrusu.
+
+874
+00:54:57,784 --> 00:54:58,643
+Sağdaki yerimizde
+
+875
+00:54:58,643 --> 00:54:58,844
+kim?
+
+876
+00:54:58,943 --> 00:54:59,423
+X'i içtiliğe
+
+877
+00:54:59,423 --> 00:54:59,943
+biz doğrusu.
+
+878
+00:55:01,443 --> 00:55:03,043
+Bu örnek için.
+
+879
+00:55:03,364 --> 00:55:03,684
+Elbette.
+
+880
+00:55:03,683 --> 00:55:05,103
+Gerçekten bakın.
+
+881
+00:55:06,443 --> 00:55:07,443
+Sıfırdan 1'e
+
+882
+00:55:07,443 --> 00:55:08,844
+y'den 1'e
+
+883
+00:55:08,844 --> 00:55:10,804
+3'e x'i x'i y'e
+
+884
+00:55:10,804 --> 00:55:11,384
+dx değil.
+
+885
+00:55:13,324 --> 00:55:13,923
+İçeridekiler
+
+886
+00:55:13,923 --> 00:55:14,463
+bunlar tabii
+
+887
+00:55:14,463 --> 00:55:15,603
+x'in sınırları olduğu için
+
+888
+00:55:15,603 --> 00:55:15,884
+önce
+
+889
+00:55:15,884 --> 00:55:17,183
+x'e başlayacak.
+
+890
+00:55:18,423 --> 00:55:19,244
+Bu sonra bulduğumuz
+
+891
+00:55:19,244 --> 00:55:19,963
+integralde
+
+892
+00:55:19,963 --> 00:55:21,103
+y'ye göre
+
+893
+00:55:21,103 --> 00:55:21,724
+integral edeceğiz
+
+894
+00:55:21,724 --> 00:55:21,983
+tekrar.
+
+895
+00:55:24,523 --> 00:55:25,703
+Bu iki sonucu
+
+896
+00:55:25,703 --> 00:55:26,003
+herbette
+
+897
+00:55:26,003 --> 00:55:26,884
+aynı çıkacak.
+
+898
+00:55:26,983 --> 00:55:28,043
+Çünkü aynı bölge üzerinde
+
+899
+00:55:28,043 --> 00:55:29,083
+aynı fonksiyon
+
+900
+00:55:29,083 --> 00:55:29,663
+integralini
+
+901
+00:55:29,663 --> 00:55:30,244
+hesaplıyoruz.
+
+902
+00:55:31,043 --> 00:55:31,244
+Sadece
+
+903
+00:55:31,244 --> 00:55:32,224
+integral sırasını
+
+904
+00:55:32,224 --> 00:55:32,824
+değiştirdik.
+
+905
+00:55:32,824 --> 00:55:35,264
+ilk integral
+
+906
+00:55:35,264 --> 00:55:38,163
+3x-
+
+907
+00:55:38,163 --> 00:55:38,784
+yani
+
+908
+00:55:38,784 --> 00:55:39,503
+ilk nelerdeki
+
+909
+00:55:39,503 --> 00:55:39,943
+dediğim
+
+910
+00:55:39,943 --> 00:55:40,943
+içerideki integral
+
+911
+00:55:40,943 --> 00:55:42,543
+hesabından bahsediyorum.
+
+912
+00:55:43,384 --> 00:55:44,203
+x'e göre integral
+
+913
+00:55:44,203 --> 00:55:44,884
+3x-
+
+914
+00:55:44,884 --> 00:55:45,943
+x kare bölü 2
+
+915
+00:55:45,943 --> 00:55:46,284
+eksi
+
+916
+00:55:46,284 --> 00:55:47,583
+x'i
+
+917
+00:55:47,583 --> 00:55:49,503
+x'i y'
+
+918
+00:55:49,503 --> 00:55:49,983
+x'i
+
+919
+00:55:49,983 --> 00:55:50,244
+x'i 1
+
+920
+00:55:50,244 --> 00:55:50,744
+olmak üzere
+
+921
+00:55:50,744 --> 00:55:51,724
+sınır değerlerini
+
+922
+00:55:51,724 --> 00:55:53,224
+yerine yazdığınızda
+
+923
+00:55:53,224 --> 00:55:53,543
+bakın.
+
+924
+00:55:53,663 --> 00:55:54,643
+3x-
+
+925
+00:55:54,643 --> 00:55:55,163
+1 bölü 2
+
+926
+00:55:55,163 --> 00:55:55,824
+x'i y'ye gelir.
+
+927
+00:55:57,184 --> 00:55:57,943
+x'i yerine
+
+928
+00:55:57,943 --> 00:55:58,684
+y yazıp
+
+929
+00:55:58,684 --> 00:55:59,583
+çıkarırsak
+
+930
+00:55:59,583 --> 00:56:01,264
+x'i 3'i
+
+931
+00:56:01,264 --> 00:56:02,023
+artı y kare
+
+932
+00:56:02,023 --> 00:56:02,463
+bölü 2
+
+933
+00:56:02,463 --> 00:56:03,224
+artı y
+
+934
+00:56:03,224 --> 00:56:03,983
+kare olsa
+
+935
+00:56:03,983 --> 00:56:05,304
+değil.
+
+936
+00:56:05,304 --> 00:56:08,204
+x'i y
+
+937
+00:56:08,204 --> 00:56:17,744
+y
+
+938
+00:56:10,260 --> 00:56:20,020
+Ve burayı, içeride ifadeyi sadeleştirirsek, 5 bölü 2 eksi 4 y artı, 3 bölü 2 y kare şeklinde gelir.
+
+939
+00:56:22,500 --> 00:56:24,820
+Sıfırdan bile y'ye göre integralimiz artık.
+
+940
+00:56:26,360 --> 00:56:34,060
+Basitçe 5 bölü 2 eksi 2 y kare artı, 1 bölü 2 ya da y küp bölü 2 diyelim.
+
+941
+00:56:34,060 --> 00:56:38,220
+y küp bölü 2, y sıfırdan biri.
+
+942
+00:56:38,540 --> 00:56:44,080
+Değeri de bana, gerçekten şuraya 5 bölü 2 eksi 2 artı 1 bölü 2 diyelim, hesap bana biri verir.
+
+943
+00:56:55,443 --> 00:57:03,224
+Merode gibi, iki integral de, aynı sonucu bize verdi, olması gerektiği gibi.
+
+944
+00:57:08,724 --> 00:57:36,403
+Mesela bakın, bu örnek bakımdan önemli. Öyle integral var ki, mesela sinis x bölü x de x ya da sinis y bölü y de olabilir tabii. Kosinis x bölü x olabilir. Mesela e üzeri x kare de x olabilir değil mi? Bu integral arkadaşlar, bilinen integral kurallarıyla hesaplanabilir integral değil.
+
+945
+00:57:36,403 --> 00:57:48,884
+O yüzden, bu fonksiyonların yine de, böyle iki katlı re bölgesi üzerinde integral'ı hesaplanabilir. Ne kullanılarak?
+
+946
+00:57:49,484 --> 00:57:52,584
+Integral'ın sırası, değişim kullanılar.
+
+947
+00:57:59,092 --> 00:58:07,192
+Gerçekten, bunun üzerinde biraz yavaş yavaş konuşalım.
+
+948
+00:58:08,192 --> 00:58:15,612
+Rx'e düzleminde x ekseni, y eşit x doğrusu ve x eşit 1 doğrusu. Yani yukarıdaki aslında örnekteki bölgemizin aynısı aslında.
+
+949
+00:58:17,112 --> 00:58:25,352
+Sınırlanan üçgen bölge olmak üzere, bu R üzerinde sinis x bölü x fonksiyonun integralini bulunuz.
+
+950
+00:58:25,352 --> 00:58:30,132
+Burada bize herhangi bir internet sırası da söylemeyi önermiyor.
+
+951
+00:58:31,572 --> 00:58:40,791
+Biz burada eğer, internet sırasını önce x'e göre hesaplanacak gibi alırsak, nedir? Hata yapmış olur.
+
+952
+00:58:40,912 --> 00:58:44,192
+Çünkü sinis x bölü x, dx integralı hesaplanamayan bir integral.
+
+953
+00:58:45,132 --> 00:58:49,231
+Yani seri yöntemine vesaire hesaplarsanız da, yaklaşık bir integral.
+
+954
+00:58:50,452 --> 00:58:53,472
+Bu şekilde hesaplayamazsınız, bir belirgin integral olarak.
+
+955
+00:58:57,876 --> 00:59:01,476
+Bölgemizi yine şurada çizmiş olduk, 15-12'de.
+
+956
+00:59:03,836 --> 00:59:15,036
+Integral önce y'ye, sonra da x'e göre integral edersek, gerçekten, yani burada sin 6 bölü x'e y'yi burada yok, bunu dediğim gibi alıp dışarıya atabilirsiniz.
+
+957
+00:59:15,796 --> 00:59:18,096
+x'i y'yi hiç ilgilendirmiyor çünkü.
+
+958
+00:59:19,176 --> 00:59:21,936
+Bir şeyde sadece y gelecek, integral ettiğimiz zaman.
+
+959
+00:59:21,936 --> 00:59:25,596
+0'dan x'e sınıf değerlerini yazdığımız zaman da,
+
+960
+00:59:26,836 --> 00:59:28,176
+x gelecek sadece,
+
+961
+00:59:29,356 --> 00:59:32,496
+ve sin 6 bölü x'e çarpımımızdan baka, x'e gidiyoruz halde,
+
+962
+00:59:33,196 --> 00:59:35,516
+0'dan 1'e sin 6 diye x kalır.
+
+963
+00:59:40,500 --> 00:59:42,500
+Bu integral eksik kosini x değil mi?
+
+964
+00:59:47,411 --> 00:59:48,291
+Kolduğu da
+
+965
+00:59:52,019 --> 00:59:55,800
+Sıfırdan bire değerlerini yazdığımızda, eksi kosinüs 1 artı 1.
+
+966
+00:59:56,280 --> 00:59:58,340
+Tabi orada bir yaklaşık değer vermişiz.
+
+967
+00:59:59,280 --> 01:00:02,099
+Onu ne yapmamısa vermemize gerek yok.
+
+968
+01:00:02,219 --> 01:00:06,579
+Tabii kosinüs değer hiçbir zaman biri aşamayacağı için bu değeri daima pozitif olacaktır.
+
+969
+01:00:06,699 --> 01:00:08,920
+Ve sıfır nokta kırık altı gibi bir değer yaklaşık.
+
+970
+01:00:15,476 --> 01:00:25,135
+Elbette bu da bir hacimdir arkadaşlar. Yani tepesi, sinis x, böyle x yüzeyi olan, öyle söyleyelim, çünkü yüzeyi oluşturur.
+
+971
+01:00:26,316 --> 01:00:31,976
+Yüzeyi ve tabanı da işte bu şekilde bir üstgen bölge olmak üzere.
+
+972
+01:00:31,976 --> 01:00:39,776
+Bu, bir hatta pirzmaya benziyor, en azından alt kısım pirzmaya benziyor, üstü değil tabii.
+
+973
+01:00:39,776 --> 01:00:46,856
+bu şekilde bir katı cisminin hacmi. Ne kadar mı? 0,6 kadar mı? Çok da büyük bir şey değilmiş.
+
+974
+01:00:52,500 --> 01:00:57,179
+Şimdi integralın sınırlarını değiştirir. Değil mi? O zaman ne demek?
+
+975
+01:00:58,139 --> 01:01:02,139
+Integral sırasını yukarıdaki bu bölgenin sınırlarının değişimi yukarıda gördük.
+
+976
+01:01:03,159 --> 01:01:08,920
+Sıfırdan bire, y'den bire şeklinde alırsak sinis x bölü x, d, x, d şeklinde gelir.
+
+977
+01:01:10,119 --> 01:01:22,000
+Ancak biliyoruz ki bu integral, yani sinis x bölü x, d, x integral'ı elementer fonksiyonlar cinsinden ifade edilemediği için bu integral ne yapamayız?
+
+978
+01:01:22,500 --> 01:01:23,780
+Neyse, hesaplama bakın.
+
+979
+01:01:23,780 --> 01:01:25,300
+İmkans.
+
+980
+01:01:36,436 --> 01:01:38,716
+Bu da bize böyle bir yöntem arkadaşlar önermiş oluyor.
+
+981
+01:01:44,563 --> 01:01:45,023
+Bu da, evet.
+
+982
+01:01:53,172 --> 01:02:04,331
+Şimdi daha gerçek anlamda bir intelijen sırası değiştirme örneği görelim. Bunu biraz daha dikkatli inceleyelim. Üzerinde duralım.
+
+983
+01:02:08,115 --> 01:02:10,416
+İki katlı inteleah sınırlarıyla beraber verilmiş.
+
+984
+01:02:10,896 --> 01:02:11,795
+4x artı 2.
+
+985
+01:02:11,976 --> 01:02:13,936
+D7x sırası da verilmiş.
+
+986
+01:02:15,315 --> 01:02:16,036
+İnteleah'ın
+
+987
+01:02:16,036 --> 01:02:18,036
+inteleah'ın
+
+988
+01:02:18,036 --> 01:02:19,596
+inteleah'ın bölgesini çizdiniz ve
+
+989
+01:02:19,596 --> 01:02:22,155
+inteleah'ın sırası değiştirilmiş
+
+990
+01:02:22,155 --> 01:02:23,615
+eşit değerli bir inteleah yazılmaz.
+
+991
+01:02:24,376 --> 01:02:26,135
+Hesabı istemiyor sadece.
+
+992
+01:02:27,516 --> 01:02:28,896
+Tabii hesaplabiliriz.
+
+993
+01:02:28,956 --> 01:02:30,576
+Değiştirilmize göre ne hesaplanmayalım.
+
+994
+01:02:31,536 --> 01:02:32,396
+Ama belli ki orada
+
+995
+01:02:32,396 --> 01:02:34,016
+hesaplamada
+
+996
+01:02:34,016 --> 01:02:36,376
+kare köklü ifadeleri
+
+997
+01:02:36,376 --> 01:02:37,115
+daha biraz
+
+998
+01:02:37,115 --> 01:02:41,056
+uğraşkıcı ifadeleri karşısına çıkacağı için
+
+999
+01:02:41,056 --> 01:02:42,436
+hesaplamada gerek tuttum.
+
+1000
+01:02:47,635 --> 01:02:49,596
+Ama sonuçta hesapladığımızda
+
+1001
+01:02:49,596 --> 01:02:51,496
+sonucun 8 gibi bir değer vereceğini
+
+1002
+01:02:51,496 --> 01:02:51,996
+görürüz.
+
+1003
+01:02:53,036 --> 01:02:54,976
+Şimdi internetin bölgesi önce
+
+1004
+01:02:54,976 --> 01:02:56,896
+sıfırdan 2'ye bunlar
+
+1005
+01:02:56,896 --> 01:02:58,436
+internetin anlıyor değil mi?
+
+1006
+01:02:59,755 --> 01:03:01,235
+Sıfırdan 2'ye bunlar kimin?
+
+1007
+01:03:01,355 --> 01:03:03,416
+X'in sınırları. Y'nin sınırları ise
+
+1008
+01:03:03,416 --> 01:03:04,835
+X kaleden 2X'e.
+
+1009
+01:03:04,996 --> 01:03:05,735
+Dikkat edin.
+
+1010
+01:03:07,875 --> 01:03:09,235
+Bu eşitlikleri
+
+1011
+01:03:09,235 --> 01:03:11,155
+verilmektedir. Buradan biz aslında
+
+1012
+01:03:11,155 --> 01:03:13,195
+bölgeyi ne yapabiliriz?
+
+1013
+01:03:13,255 --> 01:03:14,795
+Kendimiz oluşturabiliriz.
+
+1014
+01:03:14,896 --> 01:03:17,076
+Y'yişte 2X doğrusu, şu doğru.
+
+1015
+01:03:17,635 --> 01:03:19,715
+Y'nin X kaledesi bu.
+
+1016
+01:03:20,855 --> 01:03:22,016
+Kesimleri zaten
+
+1017
+01:03:22,016 --> 01:03:23,996
+sıfır sıfır ve
+
+1018
+01:03:23,996 --> 01:03:27,855
+2, 4 olduğu için bu nokta olduğu için değil mi?
+
+1019
+01:03:29,056 --> 01:03:30,016
+X'in 2 için.
+
+1020
+01:03:30,996 --> 01:03:32,036
+Dolayısıyla sıfır 2,
+
+1021
+01:03:32,456 --> 01:03:33,295
+X'in sıfır 2
+
+1022
+01:03:33,295 --> 01:03:35,855
+aralığında dengeli verilmiş.
+
+1023
+01:03:35,976 --> 01:03:37,335
+Şöyle söyleyeyim. Doğru verilmiş.
+
+1024
+01:03:39,735 --> 01:03:41,675
+Bu şekle baktığımız zaman.
+
+1025
+01:03:44,675 --> 01:03:46,875
+Şimdi değiştiğimiz sırada tabii
+
+1026
+01:03:46,875 --> 01:03:49,855
+integrasyonun sınırlarını
+
+1027
+01:03:49,855 --> 01:03:51,355
+bulmak için bölge boyunca
+
+1028
+01:03:51,355 --> 01:03:52,835
+soldan sağa giden bir
+
+1029
+01:03:52,835 --> 01:03:55,016
+betay doğru hayal ederiz.
+
+1030
+01:03:56,275 --> 01:03:57,996
+Bakın şöyle düşünelim gerçekten.
+
+1031
+01:03:59,896 --> 01:04:00,335
+Bir defa
+
+1032
+01:04:00,335 --> 01:04:02,355
+X'in y bölü 2'ye gider
+
+1033
+01:04:02,355 --> 01:04:04,496
+ve X'in y kare kök
+
+1034
+01:04:04,496 --> 01:04:05,155
+y de çıkar.
+
+1035
+01:04:07,155 --> 01:04:07,876
+Değil mi?
+
+1036
+01:04:08,376 --> 01:04:08,876
+Daha böyle
+
+1037
+01:04:08,876 --> 01:04:10,996
+hani mizansen bir yaklaşımlar.
+
+1038
+01:04:11,076 --> 01:04:12,255
+Bunu böyle düşünebiliriz.
+
+1039
+01:04:12,436 --> 01:04:13,436
+Hani ben soldaki heriden,
+
+1040
+01:04:13,556 --> 01:04:14,596
+sağdaki heriden demiştim.
+
+1041
+01:04:14,596 --> 01:04:16,115
+Bu da böyle olur.
+
+1042
+01:04:17,635 --> 01:04:18,496
+Dolayısıyla burada
+
+1043
+01:04:18,496 --> 01:04:19,615
+Y'in 2 X'den
+
+1044
+01:04:19,615 --> 01:04:20,775
+X'i çözdüğümüzde
+
+1045
+01:04:20,775 --> 01:04:21,615
+Y bölü 2 olur.
+
+1046
+01:04:21,815 --> 01:04:22,456
+Sağdaki de
+
+1047
+01:04:22,456 --> 01:04:23,536
+Y'in 2 X kare de
+
+1048
+01:04:23,536 --> 01:04:25,376
+X'in 2 X'i kare kök Y
+
+1049
+01:04:25,376 --> 01:04:27,536
+yerisi elde edilir.
+
+1050
+01:04:27,536 --> 01:04:29,436
+Demek ki
+
+1051
+01:04:29,436 --> 01:04:30,135
+nedir?
+
+1052
+01:04:30,135 --> 01:04:30,795
+X'in
+
+1053
+01:04:30,795 --> 01:04:33,016
+sınırlarını
+
+1054
+01:04:33,016 --> 01:04:34,036
+Y'ye bağlı sınırlarını
+
+1055
+01:04:34,036 --> 01:04:34,396
+böylece
+
+1056
+01:04:34,396 --> 01:04:35,536
+Y bölü 2 de kök Y
+
+1057
+01:04:35,536 --> 01:04:36,235
+olarak şu şekilde
+
+1058
+01:04:36,235 --> 01:04:38,056
+elde etmiş olduk.
+
+1059
+01:04:39,275 --> 01:04:40,036
+Y'nin sınırları
+
+1060
+01:04:40,036 --> 01:04:40,956
+direkt sıfırdan
+
+1061
+01:04:40,956 --> 01:04:41,556
+dörde
+
+1062
+01:04:41,556 --> 01:04:42,675
+şekle baktığımız zaman
+
+1063
+01:04:42,675 --> 01:04:43,056
+sıfırdan
+
+1064
+01:04:43,056 --> 01:04:43,596
+küsüküyor.
+
+1065
+01:04:44,655 --> 01:04:45,635
+Sıfırdan dörde.
+
+1066
+01:04:45,635 --> 01:05:15,615
+Y'in 2 X'i
+
+1067
+01:04:51,443 --> 01:04:56,304
+Sonra soldaki eriden sağdaki eriye, y bölükten kare kök ye.
+
+1068
+01:04:57,704 --> 01:05:03,784
+4x artı 2, tabi internin sırası kimde? Öncelik sırası x'de, dx değil.
+
+1069
+01:05:09,108 --> 01:05:13,468
+Rezaplayalım arkadaşlar bu integral, gerçekten bunun ne olduğunu, 8 olduğunu görelim.
+
+1070
+01:05:16,947 --> 01:05:20,827
+Hangisi kolayca gidiyorsa, birinci de hesaplayabilirsiniz.
+
+1071
+01:05:21,987 --> 01:05:26,627
+Mesela 4xy, 2y değil mi oluruz? Şunu devam etirseniz.
+
+1072
+01:05:27,907 --> 01:05:31,587
+İlk intereya, 4xy,
+
+1073
+01:05:35,443 --> 01:05:38,704
+Altı ikiye, iyi göğe çünki tüver ediyoruz.
+
+1074
+01:05:42,900 --> 01:05:43,740
+Sonra bunun
+
+1075
+01:05:43,740 --> 01:05:51,079
+sınırlarını
+
+1076
+01:05:51,079 --> 01:05:52,800
+şöyle
+
+1077
+01:05:52,800 --> 01:05:55,579
+x kareden 2x'e koyacak olursak
+
+1078
+01:05:59,539 --> 01:06:07,059
+Önce y yerine 2x yazdığımızda burası ne olur? 8x y kare olur. Değil mi? 8x.
+
+1079
+01:06:10,931 --> 01:06:13,371
+Y kare. Bugün üşendim.
+
+1080
+01:06:14,651 --> 01:06:16,831
+Tableti bağlamadım. Ama yarın şey yapacağım.
+
+1081
+01:06:18,451 --> 01:06:19,531
+Daha çok rözeceğimiz için.
+
+1082
+01:06:22,411 --> 01:06:24,131
+Sonra artı 2x.
+
+1083
+01:06:30,099 --> 01:06:32,179
+8x y kare artı 2x.
+
+1084
+01:06:33,579 --> 01:06:36,799
+Burada niye öyle yaptık? 8x kare, 8y kare değil artık.
+
+1085
+01:06:37,239 --> 01:06:37,980
+Y yok artık değil mi?
+
+1086
+01:06:39,039 --> 01:06:42,099
+8x kare, 2x yazdık çünkü.
+
+1087
+01:06:43,339 --> 01:06:49,440
+8x kare, burada 2x yazacaktık, burada 4x olur.
+
+1088
+01:06:50,880 --> 01:06:51,639
+Doğru mu?
+
+1089
+01:06:53,880 --> 01:06:55,000
+Burada 4x olur, evet.
+
+1090
+01:06:56,099 --> 01:06:57,960
+8x kare artı 4x üst sınırda.
+
+1091
+01:06:57,960 --> 01:07:00,739
+alt sınırda da x kare koyacağımız için
+
+1092
+01:07:00,739 --> 01:07:02,839
+eksi 4x kare.
+
+1093
+01:07:09,235 --> 01:07:09,875
+Kip olur.
+
+1094
+01:07:11,496 --> 01:07:14,335
+Sonra artı 2x kare.
+
+1095
+01:07:17,335 --> 01:07:18,715
+Artı 2x kare.
+
+1096
+01:07:23,923 --> 01:07:35,663
+Şöyle baktığım zaman, aslında burası şöyle topararsak, eksi 4x küp, bir yapma, mi arttı, bu da eksi olacak.
+
+1097
+01:07:37,023 --> 01:07:37,884
+Değil mi? Eksi olacak.
+
+1098
+01:07:39,103 --> 01:07:43,364
+Dolayısıyla çıkarttığımız zaman, hatta şöyle yapar ne edilir, o da daha iyi görürüz.
+
+1099
+01:07:44,583 --> 01:07:46,143
+Eksi 4x küp,
+
+1100
+01:07:52,628 --> 01:07:54,228
+Artı 6x kare oldu.
+
+1101
+01:08:02,739 --> 01:08:05,099
+Altı, dört x.
+
+1102
+01:08:09,043 --> 01:08:27,163
+Tabii integralimiz var. Artık y'ye göre integral edeceğiz. Yani burada ne gelecek? Elbette her birinde y gelecek. Başka bir şey değil. Y'ye göre integral edeceğimiz için. Yok, pardon. Özür dilerim. Y'ye göre integral edeceğimiz için. Y'ye göre ettik zaten. Siz de hiç uyarmıyorsunuz yani. Neyse, eksi x'e 4 olur burası.
+
+1103
+01:08:27,163 --> 01:08:36,583
+mağaza görelim. 6 bölü 3 değil mi? 2 olur. Artı 2 x küp.
+
+1104
+01:08:44,148 --> 01:08:45,127
+2x kare.
+
+1105
+01:08:52,115 --> 01:08:53,536
+Sönünler sıfırdan ikiye.
+
+1106
+01:08:58,068 --> 01:09:00,188
+Sadece 3 sınır bize değeri bilecektir.
+
+1107
+01:09:01,387 --> 01:09:02,988
+X4-16 mı yapar?
+
+1108
+01:09:06,771 --> 01:09:09,572
+x küp artı 16, 2'li hesaplık.
+
+1109
+01:09:11,851 --> 01:09:16,311
+2'nin kareci 4, çarpı 2, artı 8 orası.
+
+1110
+01:09:18,351 --> 01:09:19,952
+Sonuç bana 8'i verir.
+
+1111
+01:09:21,631 --> 01:09:21,792
+Evet.
+
+1112
+01:09:22,391 --> 01:09:25,511
+2D'den değerini ben hesapladım arkadaşlar, hesaplamış oldum.
+
+1113
+01:09:26,711 --> 01:09:27,771
+Şurada görüyorsunuz.
+
+1114
+01:09:28,452 --> 01:09:29,311
+Biraz yazdık ama.
+
+1115
+01:09:36,083 --> 01:09:38,443
+İlk okul tarzı tabii yazışımız oldu.
+
+1116
+01:09:39,264 --> 01:09:40,003
+Malum veriyorum.
+
+1117
+01:09:43,539 --> 01:09:44,659
+Ama işlemimiz doğru.
+
+1118
+01:09:47,539 --> 01:09:48,319
+Sonucu 8.
+
+1119
+01:09:48,479 --> 01:09:53,180
+Değerin Taylor'da aynı şekilde yapmadığınızda önce x'e göre hesaplayacaksınız, sınır değerlerini yerine yazacaksınız.
+
+1120
+01:09:54,699 --> 01:10:03,019
+Sonra çıkan ifadeye tekrar y'e göre hesap ettiğinizde ve 0'dan 4'e y'e yerine değil mi?
+
+1121
+01:10:03,640 --> 01:10:08,159
+Taylor sınırlarını yazdığınızda sonucu yine 8 olduğunu göreceksiniz arkadaşlar.
+
+1122
+01:10:09,819 --> 01:10:11,420
+Şuna birbirini götürüyor.
+
+1123
+01:10:11,420 --> 01:10:14,939
+Şurada birkaç başvuru düzelteyim.
+
+1124
+01:10:22,612 --> 01:10:23,632
+8x kare,
+
+1125
+01:10:26,572 --> 01:10:27,351
+şöyle.
+
+1126
+01:10:32,724 --> 01:10:34,163
+Burada da 4x.
+
+1127
+01:10:40,692 --> 01:10:46,391
+8x kaya artı 4x. Yani x yerine, y yerine 2x yazdığımız için.
+
+1128
+01:10:58,452 --> 01:11:02,231
+S0, x karede ne? Fx'e. x karede şurada yazarım.
+
+1129
+01:11:05,844 --> 01:11:11,484
+X, K'den, İtik X. Tamam mı? Evet.
+
+1130
+01:11:15,188 --> 01:11:32,828
+Tabii konuları bir an yavaş yavaş gidiyorum. Biraz özüm simmemiz gerekiyor. Yani çok konu vermek çok önemli belki ama bunları nedir? Adım adım işleyerek iyi öğrenmek önemli tabii elbette öncelikle.
+
+1131
+01:11:35,828 --> 01:11:42,087
+Şimdi iki katlı integral'lerin özelliklerinden bahsedeceğiz arkadaşlar. İki katlı integral özellikleri.
+
+1132
+01:11:42,087 --> 01:11:44,307
+şöyle ben
+
+1133
+01:11:44,307 --> 01:11:47,948
+dört madde de üretlemişim.
+
+1134
+01:11:51,699 --> 01:11:58,659
+Yani tek katlı integralde olduğu gibi aynı özellikler çalışır. Bazı durumlar tabii farklı anlama gelecektir.
+
+1135
+01:12:00,479 --> 01:12:05,579
+Mesela sabit de varsa, sabiti integral dışına direkt çıkarabiliyoruz.
+
+1136
+01:12:06,479 --> 01:12:11,460
+Önce şunu söyleyelim tabii ki, fx ve gx fonksiyonlar sürektif fonksiyonlar.
+
+1137
+01:12:11,720 --> 01:12:21,279
+Çünkü sürektif fonksiyonlar biliyorsunuz, integral edebilir fonksiyonlar artık yerlerin göz önünde sürektiyse, bundan integralleri mevcut.
+
+1138
+01:12:21,279 --> 01:12:27,819
+o yüzden integralenmeyi garantiye almak koşuluyla, bunu böyle alıyoruz.
+
+1139
+01:12:29,739 --> 01:12:37,779
+Toplam ve fark, fx fonksiyon, gx fonksiyonun toplamının ya da farkının integralı eşittir.
+
+1140
+01:12:38,039 --> 01:12:41,099
+Ayrıca bundan toplam ve farkların integralleri şeklinde geliyor.
+
+1141
+01:12:43,599 --> 01:12:45,340
+Basitçe bundan hemen söyleyemiyoruz.
+
+1142
+01:12:45,340 --> 01:12:47,340
+Bersi'ye göre, fx fonksiyonlar sürektif fonksiyonlar.
+
+1143
+01:12:50,899 --> 01:12:52,719
+Üçüncüde baskınlık özelliği var.
+
+1144
+01:12:56,756 --> 01:13:08,596
+Pozitif bir fonksiyonun, bölge üzerinde pozitif olan bir fonksiyonun, bu bölge üzerindeki katlı integralı yine pozitiftir.
+
+1145
+01:13:13,363 --> 01:13:29,083
+Dolayısıyla, eğer fx'ye, re bölgeselinde, gx'ye fonksiyonlar büyü geçirse, o zaman, iki katlı integral arasında da aynı işsizlik, devam et veklidir arkadaşlar.
+
+1146
+01:13:30,803 --> 01:13:33,043
+V üzerinde fx'e, integral büyü geçir.
+
+1147
+01:13:34,723 --> 01:13:37,203
+V üzerinde gx'e, iki katlı integral.
+
+1148
+01:13:42,452 --> 01:14:06,952
+Tabii, R üst üste binmeyen, R1 ve R2 gibi iki bölgenin birleşimi ise, bunu yukarıda vermiştik zaten, bu R bölgesini, Fx-Y fonksiyonunun bu bölge üzerindeki ilk kat integralini, ayrı ayrı R1 ve R2 üzerindeki integral olarak yazıp, ve bunların toplama alınarak elde edebiliriz.
+
+1149
+01:14:06,952 --> 01:14:21,832
+Bunlar da, buradan farklı farklı açılmalar üretebiliriz. Yani biz buradaki, R1 ve R2 tabii şöyle olacak ama, üstte binmeyen neler? Bölgeler.
+
+1150
+01:14:22,231 --> 01:14:29,912
+Dolayısıyla biz bunları istediğimiz kadar çoğaltabiliriz. Üstte gemizliği de olduğu halde, sağlanması durumunda.
+
+1151
+01:14:31,572 --> 01:14:33,811
+Daha fazla sayıda bölgenin, iyi olarak.
+
+1152
+01:14:37,460 --> 01:14:39,079
+İntelör olarak yazabiliriz.
+
+1153
+01:14:40,579 --> 01:14:42,899
+Tabii burada şu sonuçları çıkarabiliriz.
+
+1154
+01:14:43,079 --> 01:14:45,020
+Nasıl ki tek kat intelör hatırlarsanız
+
+1155
+01:14:45,020 --> 01:14:47,800
+sıfır uzunluklu bir aralık üzerindeki
+
+1156
+01:14:47,800 --> 01:14:49,260
+tek kat
+
+1157
+01:14:49,260 --> 01:14:51,239
+fonksiyonun, tek değişken fonksiyonun
+
+1158
+01:14:51,239 --> 01:14:53,020
+intelörü ne? Belirli intelörü sıfır.
+
+1159
+01:14:53,439 --> 01:14:54,079
+Niye? Çünkü
+
+1160
+01:14:54,079 --> 01:14:56,420
+A'dan A'ya mesela değil mi?
+
+1161
+01:14:56,659 --> 01:14:57,939
+İntelörü sıfır verir.
+
+1162
+01:14:58,359 --> 01:14:59,000
+İst sınırdan.
+
+1163
+01:14:59,720 --> 01:15:02,420
+A sınır değerli çıkar, aynı değerli çıkarcı zamanı sıfır verir.
+
+1164
+01:15:03,319 --> 01:15:04,880
+Burada da bunu şöyle genellikle
+
+1165
+01:15:04,880 --> 01:15:06,720
+işleyebiliriz. Çünkü burada artık bölgeler üzerinde
+
+1166
+01:15:06,720 --> 01:15:07,100
+arıyoruz.
+
+1167
+01:15:07,460 --> 01:15:11,000
+sıfır uzunluk değil de sıfır alanı sıfır olan
+
+1168
+01:15:11,000 --> 01:15:12,060
+bir bölge üzerinde değil mi?
+
+1169
+01:15:13,039 --> 01:15:14,199
+Nokta alanı sıfır.
+
+1170
+01:15:15,640 --> 01:15:16,319
+Üzerinde
+
+1171
+01:15:16,319 --> 01:15:18,000
+iki katlı integrar nedir?
+
+1172
+01:15:18,739 --> 01:15:19,260
+Sıfırdır.
+
+1173
+01:15:22,699 --> 01:15:23,359
+Öte yandan
+
+1174
+01:15:23,359 --> 01:15:26,340
+iki katlı integrarın efeksiye pozitif
+
+1175
+01:15:26,340 --> 01:15:27,119
+olması durumunda
+
+1176
+01:15:27,119 --> 01:15:30,180
+bu bölge üzerindeki iki katlı integrarın
+
+1177
+01:15:30,180 --> 01:15:32,079
+hacim anlamına gelir. Yani yukarıdan
+
+1178
+01:15:32,079 --> 01:15:33,980
+işte tepesi o yüzey olmak üzere
+
+1179
+01:15:33,980 --> 01:15:35,980
+alttan da öyle bir
+
+1180
+01:15:35,980 --> 01:15:37,980
+düzlemdeki
+
+1181
+01:15:37,980 --> 01:15:39,239
+D bölgeçiler sınırlı
+
+1182
+01:15:39,239 --> 01:15:41,840
+olmak üzere orada bir katı cisim var.
+
+1183
+01:15:41,920 --> 01:15:43,159
+Onun hacmini bize verir.
+
+1184
+01:15:43,159 --> 01:15:43,529
+Dostun muz
+
+1185
+01:15:58,771 --> 01:16:20,311
+Buraya kadar da bir ikkat integrali özellikle biraz daha genel olarak, tükensel olmayan bölgeler üzerinde göz önüne aldığımızda, ikkat integralinin bir hacim olarak, değil mi, tarımlandığını ve Fubini teorimlerinde göz önüne alarak nasıl hesaplandığını bir bakıma görmüş olduk.
+
+1186
+01:16:20,311 --> 01:16:29,532
+Özellikle interesyon sırasının değişikliğinin önemini, değiştirmenin daha doğrusu önemini, bir örnekte görmüş olduk.
+
+1187
+01:16:30,551 --> 01:16:33,731
+Ve burada da interesyon özelliklerini burada görüyorsunuz, belli başlı.
+
+1188
+01:16:34,952 --> 01:16:35,692
+Devam edelim.
+
+1189
+01:16:37,112 --> 01:16:40,332
+Daha bir vaktimiz var, birkaç sayfa daha konuşalım, görüşelim.
+
+1190
+01:16:42,011 --> 01:16:44,311
+Sonra haftaya tüm konuyu tamamlayıp...
+
+1191
+01:16:48,212 --> 01:16:54,412
+Daha çok uygulamalar üzerinden ve gerektiği de tekrar yapmak koşuluyla hareket ederiz.
+
+1192
+01:16:57,292 --> 01:17:03,052
+Şimdi yukarıda tabii özellik olarak vermedik, bunu ayrı bir şey olarak düşündük.
+
+1193
+01:17:04,692 --> 01:17:07,492
+İki katlı integral ile alan hesabı var mı? Var tabii.
+
+1194
+01:17:09,852 --> 01:17:11,952
+Zilg düzemsel bölgenin alanından bahsediyor.
+
+1195
+01:17:12,792 --> 01:17:15,892
+Bir de başka bir alan formu daha var.
+
+1196
+01:17:15,892 --> 01:17:20,992
+Yani bir yüzeyi belirledik, katlı cismi belirledik.
+
+1197
+01:17:21,092 --> 01:17:26,732
+O cismin, o yüzeyi altındaki kalan cismin hacmini hesapladık.
+
+1198
+01:17:27,552 --> 01:17:29,812
+Bir de o yüzeyin alanı var, yüzey alanı var.
+
+1199
+01:17:30,192 --> 01:17:30,852
+Onun hesabı var.
+
+1200
+01:17:31,532 --> 01:17:32,432
+Onu daha sonra göreceğiz.
+
+1201
+01:17:32,592 --> 01:17:34,812
+Şimdi onu kafamıza karıştırmayalım, onu söylemiyorum.
+
+1202
+01:17:36,332 --> 01:17:43,152
+Şimdi bu tabanı işte R olan, bu düzemsel bölgenin alanını iki katlı integral ile nasıl hesaplar ettiğiniz zaman.
+
+1203
+01:17:43,152 --> 01:17:48,952
+eğer içeride, yani içeride, yani içeride, yani içeride, yani içeride yüksekliğinde değil mi o cismin yüksekliğini bir kabul ettiğiniz zaman,
+
+1204
+01:17:49,632 --> 01:17:55,572
+o ifade otomatik olarak bizim tek katlı integralimize karşılık gelen aslında alan formunu verir.
+
+1205
+01:17:57,572 --> 01:18:02,852
+Biz özette şunu söyleyelim, kapalı sınırda bir düzensel R bölgesinin alanı,
+
+1206
+01:18:03,352 --> 01:18:06,112
+R üzerinde iki katlı integral, DA.
+
+1207
+01:18:06,492 --> 01:18:09,492
+Yani DA, DX, DA, İntegral sırasına göre onu biz yazacağız.
+
+1208
+01:18:09,972 --> 01:18:11,452
+DX, DA ya da DA, DX.
+
+1209
+01:18:17,140 --> 01:18:22,740
+Şimdi bu tanımla hemen örneğe göz atalım.
+
+1210
+01:18:32,083 --> 01:18:41,283
+Ne demişiz? Birinci dörtte birlik bölgede, y eşitli x ve y eşitli x kare ile sınırlanan, r bölgesinin alanını bulmuş.
+
+1211
+01:18:43,463 --> 01:18:46,863
+Birinci dörtte birlik bölgede.
+
+1212
+01:18:53,524 --> 01:19:09,824
+Tabi burada gerekiyor mu? Hani X kare diye tarafa gidecek ama hangi bir yol olduğunu tabi yine belirtmekte fayda var. Burada açık gelecek ama bazı durumlarda açık olmayabilir. Bir defa önce iki elin.
+
+1213
+01:19:13,652 --> 01:19:21,192
+Kestik noktaları bulmamız gerekiyor değil mi? Basitçe 0-0 ve yani orijinal ve birbiri noktasında bunların kestikleri gözüküyor.
+
+1214
+01:19:33,140 --> 01:19:41,960
+Dolayısıyla, şekil üzerine baktığımız zaman, x sıfırdan bire çalışırken, y'den nereden nereye? İşte x kareden x'e. Değil mi? İlk aldığımız şekilde.
+
+1215
+01:19:43,380 --> 01:19:56,039
+Bunun ikinci şekilde alabilen sınırları, y sıfırdan bire, x bu defa nereden? Solda böyle hani bir yata çizdiğimizde, x'e y'den girecek, x'e kök y'den çıkacak değil.
+
+1216
+01:20:02,195 --> 01:20:03,996
+Birincisini göz önüne aldığımızda
+
+1217
+01:20:03,996 --> 01:20:05,675
+alanımız sıfırdan birine
+
+1218
+01:20:05,675 --> 01:20:07,135
+x k den x'e d'ye d'x
+
+1219
+01:20:07,135 --> 01:20:07,675
+integrali.
+
+1220
+01:20:09,376 --> 01:20:11,076
+Eşti sıfırdan birine y
+
+1221
+01:20:11,076 --> 01:20:13,076
+x k den x'e d'x
+
+1222
+01:20:13,076 --> 01:20:17,256
+x x x k den
+
+1223
+01:20:17,256 --> 01:20:19,515
+burayı integr ettik. Şuraya geldik.
+
+1224
+01:20:20,256 --> 01:20:21,355
+Şu integrali arkadaşlar
+
+1225
+01:20:21,355 --> 01:20:22,635
+dikkat edelim. Göz atalım.
+
+1226
+01:20:23,115 --> 01:20:23,695
+Şu integrali.
+
+1227
+01:20:25,376 --> 01:20:26,836
+Bu aslında normalde
+
+1228
+01:20:26,836 --> 01:20:29,076
+şu soru
+
+1229
+01:20:29,076 --> 01:20:29,975
+sorulduğunda
+
+1230
+01:20:29,975 --> 01:20:32,895
+bölgenin alanını
+
+1231
+01:20:32,895 --> 01:20:34,956
+bulun dediğimizde aslında tek katli
+
+1232
+01:20:34,956 --> 01:20:36,376
+integraldeki karşılığı bu değil mi?
+
+1233
+01:20:38,996 --> 01:20:39,675
+Aslında biz yani
+
+1234
+01:20:39,675 --> 01:20:41,395
+iki katli integrali bir ne bulduk?
+
+1235
+01:20:41,916 --> 01:20:43,555
+Tek katli integrali bir geçiş olarak
+
+1236
+01:20:43,555 --> 01:20:44,615
+kullandık aslında değil mi?
+
+1237
+01:20:45,935 --> 01:20:47,796
+Ama iki katli integrali tabi hesaplamak
+
+1238
+01:20:47,796 --> 01:20:49,815
+istediğimiz için biz bu iki katli
+
+1239
+01:20:49,815 --> 01:20:51,595
+integraller karşılık gelen
+
+1240
+01:20:51,595 --> 01:20:53,135
+formuda ne yapmamız lazım? Burada
+
+1241
+01:20:53,135 --> 01:20:55,416
+belirtmemiz gerekiyor. Bu da oldu.
+
+1242
+01:20:56,935 --> 01:20:57,975
+Ve artık
+
+1243
+01:20:57,975 --> 01:20:59,796
+tek katli integral
+
+1244
+01:20:59,796 --> 01:21:01,996
+x kare bölü 2 eksi x kip bölü 3
+
+1245
+01:21:01,996 --> 01:21:02,716
+sıfırdan biri
+
+1246
+01:21:02,716 --> 01:21:04,195
+sonuç bana
+
+1247
+01:21:04,195 --> 01:21:05,855
+bir bölü 6'yı verir.
+
+1248
+01:21:07,475 --> 01:21:08,515
+Bir bölü 2 eksi
+
+1249
+01:21:08,515 --> 01:21:09,855
+bir bölü 3. Çünkü alt sınır için
+
+1250
+01:21:09,855 --> 01:21:10,796
+sıfır ucağı için bu.
+
+1251
+01:21:12,275 --> 01:21:13,296
+Tekinde hesap alır.
+
+1252
+01:21:15,796 --> 01:21:16,315
+İçerideki
+
+1253
+01:21:16,315 --> 01:21:17,716
+integralın hesaplanması ile
+
+1254
+01:21:17,716 --> 01:21:18,256
+elde edilen
+
+1255
+01:21:18,256 --> 01:21:19,195
+sıfırdan biri
+
+1256
+01:21:19,195 --> 01:21:19,996
+x eksi x kare
+
+1257
+01:21:19,996 --> 01:21:20,796
+bir eksi integralini
+
+1258
+01:21:20,796 --> 01:21:21,655
+bu iki eğitimde
+
+1259
+01:21:21,655 --> 01:21:22,615
+kalan alan için
+
+1260
+01:21:22,615 --> 01:21:24,195
+tek katli
+
+1261
+01:21:24,195 --> 01:21:24,916
+integralde değil mi?
+
+1262
+01:21:25,115 --> 01:21:25,595
+Gördüğümüz
+
+1263
+01:21:25,595 --> 01:21:27,996
+integralinin yazılmış olduğuna
+
+1264
+01:21:27,996 --> 01:21:28,615
+dikkat edelim.
+
+1265
+01:21:28,716 --> 01:21:30,095
+Buradan otunu düşünmüşüm zaten.
+
+1266
+01:21:30,195 --> 01:21:30,916
+Bu da
+
+1267
+01:21:30,916 --> 01:21:32,195
+notunu düşünmüşüm zaten.
+
+1268
+01:21:39,891 --> 01:21:40,551
+Burası da böyle.
+
+1269
+01:21:54,420 --> 01:21:57,800
+Bir örnek daha yapalım arkadaşlar ve bu örnekte ne yapalım?
+
+1270
+01:21:58,899 --> 01:22:00,699
+Bugünkü dersimizi sonlandıracağız.
+
+1271
+01:22:02,739 --> 01:22:13,659
+Bundan sonraki kısımda çünkü ortalama değeriye gideceğim. Artık ortalama değeri de hafta ilk dersimizden başlayarak devam ederiz.
+
+1272
+01:22:22,515 --> 01:22:24,375
+Yine bir alan bulma sorusu arkadaşlar.
+
+1273
+01:22:25,815 --> 01:22:28,076
+Düzemse bir alan bulmaları. İki katlı integral ile.
+
+1274
+01:22:30,435 --> 01:22:35,815
+Y eşit x kare parabolu ve y eşit x artı 2 doğrusu ile çevrelerinde bölgesin alanını buluruz.
+
+1275
+01:22:37,095 --> 01:22:40,795
+Y eşit x kareyi ve y eşit x artı 2'yi çizdik.
+
+1276
+01:22:43,755 --> 01:22:45,555
+Burada görüyoruz ki,
+
+1277
+01:22:46,335 --> 01:22:50,835
+tabi kesim noktalarını bir daha elde etmemiz gerekiyor.
+
+1278
+01:22:50,835 --> 01:22:52,375
+x'i bir, bir ile iki, dört.
+
+1279
+01:22:52,675 --> 01:22:53,935
+Değil mi? Şimdiden görüyoruz.
+
+1280
+01:22:54,595 --> 01:22:56,695
+Kesim noktaların, eğilir birbirine işleyeceğiz.
+
+1281
+01:22:56,855 --> 01:22:58,015
+Hemen oradan hesaplayabilirsiniz.
+
+1282
+01:22:58,895 --> 01:23:00,495
+x'in x'i bir, iki.
+
+1283
+01:23:00,895 --> 01:23:05,295
+Onlarla karşılık gelen değer, değerli y değerlerden bir de dört olduğunu bulursunuz.
+
+1284
+01:23:06,215 --> 01:23:06,635
+Hesapla.
+
+1285
+01:23:06,635 --> 01:23:30,415
+Hemen oradan hesaplayabilirsiniz.
+
+1286
+01:23:12,051 --> 01:23:13,351
+Şöyle getirip yazacaksınız.
+
+1287
+01:23:14,311 --> 01:23:18,771
+X kare eşitir, X artı 2, ya da X kare eksi, X.
+
+1288
+01:23:25,652 --> 01:23:26,992
+İksi 2 eşit sıfırda.
+
+1289
+01:23:34,100 --> 01:23:35,780
+Burası x2'ye
+
+1290
+01:23:40,500 --> 01:23:41,380
+1, doğru mu?
+
+1291
+01:23:43,180 --> 01:23:49,640
+Bu da x'i x dolaşıyla, x'i x'i x artı 1, yani x'i x'i x'i x'i 1.
+
+1292
+01:23:53,555 --> 01:23:54,695
+ve x eşittir 2.
+
+1293
+01:23:58,996 --> 01:24:02,376
+Akaçlık y değeri, 1 olur.
+
+1294
+01:24:03,935 --> 01:24:05,136
+Bötülük bir yerine yazın değil mi?
+
+1295
+01:24:05,195 --> 01:24:06,516
+İksi yerine 1 yazsanız da.
+
+1296
+01:24:06,895 --> 01:24:07,895
+İksi 1 yazsanız da.
+
+1297
+01:24:09,056 --> 01:24:10,056
+Herhangi birinde.
+
+1298
+01:24:12,216 --> 01:24:12,855
+İki içinde,
+
+1299
+01:24:14,315 --> 01:24:15,876
+ister burada yazın, ister burada yazın,
+
+1300
+01:24:16,036 --> 01:24:16,496
+4 olur.
+
+1301
+01:24:22,452 --> 01:24:26,132
+Yani biri yetecektir belki, ama ikisini de bulmaza gerekmez.
+
+1302
+01:24:28,431 --> 01:24:38,952
+Şimdi burada da üzerinde durmamız gereken bir nokta aslında, hani işlemlerim iki türlü hesaplayabiliyorsunuz, integral değeri biliyorsunuz, interne sıra değiştirelim.
+
+1303
+01:24:39,931 --> 01:24:45,351
+Birinde hesaplamamız gereken integral daha uzun, daha yorucu, ama diğerinde daha kısa ve daha sağ.
+
+1304
+01:24:46,092 --> 01:24:49,912
+Hangisini seçersiniz değil mi? Mantıklı olarak elbette ki daha kısa olanı seçeriz.
+
+1305
+01:24:49,912 --> 01:24:56,952
+Hem daha çok fazla uğraşmayacağız, hem de sonucu hatasız bir şekilde daha kolay hesaplayabileceğiz.
+
+1306
+01:24:58,132 --> 01:25:03,931
+Şimdi ilk aldığımız anda, yani x'in değerlerini yazarak, sınırlarını yazarak,
+
+1307
+01:25:05,632 --> 01:25:10,132
+şimdi x'i eğer ben sıfırdan nereye, pardon x'i birden,
+
+1308
+01:25:13,908 --> 01:25:15,807
+2'ye aldığımda şurada değil mi?
+
+1309
+01:25:17,548 --> 01:25:19,868
+Y'nin alttaki yerden üstteki yeri
+
+1310
+01:25:19,868 --> 01:25:21,548
+hemen karşımıza çıkıyor.
+
+1311
+01:25:23,508 --> 01:25:24,088
+Bu aslında
+
+1312
+01:25:24,088 --> 01:25:26,588
+şuradaki
+
+1313
+01:25:26,588 --> 01:25:27,088
+hesabımız.
+
+1314
+01:25:28,048 --> 01:25:29,788
+X'in doğru değerlerini
+
+1315
+01:25:29,788 --> 01:25:31,908
+eksi 1'den 2, y'de x kaleden
+
+1316
+01:25:31,908 --> 01:25:33,788
+x artı 2'ye.
+
+1317
+01:25:34,468 --> 01:25:35,548
+Hemen kolay bir
+
+1318
+01:25:35,548 --> 01:25:37,268
+intihar hemen burada yazmış oluyor değil mi?
+
+1319
+01:25:39,288 --> 01:25:40,008
+Eğer biz
+
+1320
+01:25:40,008 --> 01:25:42,168
+önce Y'nin sınırlarını yazsaydık
+
+1321
+01:25:42,168 --> 01:25:46,208
+tabii sıfırdan
+
+1322
+01:25:46,208 --> 01:25:47,528
+nereye? 4'e kadar.
+
+1323
+01:25:48,788 --> 01:25:49,948
+Ama bir de var
+
+1324
+01:25:49,948 --> 01:25:51,948
+soldaki yeri aynı yeri değil.
+
+1325
+01:25:52,128 --> 01:25:53,608
+Tek bir yeri değil soldaki yeri.
+
+1326
+01:25:53,748 --> 01:25:55,948
+Sağdaki yeri bir tane ama solda
+
+1327
+01:25:55,948 --> 01:25:57,928
+iki tane yeri var. Bir tanesi yeri, iki saati
+
+1328
+01:25:57,928 --> 01:25:59,908
+gibi doğrusu. Bir de şu yeri var.
+
+1329
+01:26:01,608 --> 01:26:01,948
+Dolayısıyla
+
+1330
+01:26:01,948 --> 01:26:03,908
+biz bu bölgeyi ne yapmamız lazım? İkiye
+
+1331
+01:26:03,908 --> 01:26:05,068
+bölmemiz lazım. Aslında
+
+1332
+01:26:05,068 --> 01:26:07,908
+problemin, çözümünün
+
+1333
+01:26:07,908 --> 01:26:09,028
+cahil edilir bakımından
+
+1334
+01:26:09,028 --> 01:26:11,208
+çok da güzel bir örnek değil.
+
+1335
+01:26:11,208 --> 01:26:12,828
+tam tersini almamız lazım.
+
+1336
+01:26:12,988 --> 01:26:14,807
+Yani şöyle alsaydım ben bunu
+
+1337
+01:26:14,807 --> 01:26:16,528
+bunun yerine
+
+1338
+01:26:16,528 --> 01:26:17,568
+sarabilirdim.
+
+1339
+01:26:17,568 --> 01:26:21,168
+bir tanesi
+
+1340
+01:26:21,168 --> 01:26:21,347
+var.
+
+1341
+01:26:33,971 --> 01:26:36,411
+x'in iki tane olsun istiyorum.
+
+1342
+01:26:37,551 --> 01:26:38,192
+Başka bir örnek
+
+1343
+01:26:38,192 --> 01:26:39,471
+olanı ben veririm ben size.
+
+1344
+01:26:39,911 --> 01:26:41,112
+Onu dönüştürmek zor olur.
+
+1345
+01:26:41,771 --> 01:26:42,951
+Böyle olabilir o bakımdan.
+
+1346
+01:26:44,731 --> 01:26:45,631
+Burada siz direkt
+
+1347
+01:26:45,631 --> 01:26:47,032
+bunu görüp hesaplarsınız.
+
+1348
+01:26:47,612 --> 01:26:50,271
+Ama bu değil. Eğer diğerini başta tecrühe ederseniz
+
+1349
+01:26:50,271 --> 01:26:51,951
+yani r1
+
+1350
+01:26:51,951 --> 01:26:53,931
+artı r2 şeklinde yazmanız gerekecek.
+
+1351
+01:26:53,931 --> 01:26:55,171
+Çünkü nereden, neden oluyor?
+
+1352
+01:26:55,831 --> 01:26:57,311
+Şuradan ikiye bölmeniz lazım çünkü.
+
+1353
+01:26:58,871 --> 01:27:00,112
+Şimdi sıfırdan
+
+1354
+01:27:00,112 --> 01:27:02,051
+bireye, sonra
+
+1355
+01:27:02,051 --> 01:27:03,891
+birden dörde çalışacak.
+
+1356
+01:27:04,692 --> 01:27:05,391
+Böyle çalışacak.
+
+1357
+01:27:06,692 --> 01:27:07,751
+Sıfırdan bire
+
+1358
+01:27:07,751 --> 01:27:09,992
+soldaki elimiz kim?
+
+1359
+01:27:10,471 --> 01:27:11,011
+Y'ştir.
+
+1360
+01:27:11,811 --> 01:27:13,152
+X'i kök x'den değil mi?
+
+1361
+01:27:13,492 --> 01:27:16,391
+X'i kök y'den.
+
+1362
+01:27:17,032 --> 01:27:18,631
+X'i açı kök y'ye alacağız.
+
+1363
+01:27:19,751 --> 01:27:20,211
+D x d.
+
+1364
+01:27:22,211 --> 01:27:25,072
+Tabi bu intera'da önce x'e göre intera hesaplıyoruz.
+
+1365
+01:27:26,951 --> 01:27:28,591
+Sonra birden dörde
+
+1366
+01:27:28,591 --> 01:27:30,511
+bir defa y'ştir.
+
+1367
+01:27:30,612 --> 01:27:32,152
+Buradan x çözümüzde
+
+1368
+01:27:32,152 --> 01:27:34,572
+y'ştir olur.
+
+1369
+01:27:34,572 --> 01:27:41,931
+Y'ştir olur.
+
+1370
+01:27:41,931 --> 01:27:43,011
+Ancak gördüğünüz gibi
+
+1371
+01:27:43,011 --> 01:27:44,192
+burası zaten
+
+1372
+01:27:44,192 --> 01:27:47,511
+oldukça karmaşık bir ifade.
+
+1373
+01:27:49,271 --> 01:27:51,671
+Sıfırdan bir x kök y'den kök y'ye
+
+1374
+01:27:51,671 --> 01:27:52,532
+d x d'ye
+
+1375
+01:27:52,532 --> 01:27:54,931
+artı birden dörde
+
+1376
+01:27:54,931 --> 01:27:56,391
+y x'i ikiden
+
+1377
+01:27:56,391 --> 01:27:57,492
+kare kök y'ye
+
+1378
+01:27:57,492 --> 01:27:58,431
+d x d'ye
+
+1379
+01:27:58,431 --> 01:28:01,771
+bu ifade hesapladığınızda
+
+1380
+01:28:01,771 --> 01:28:02,931
+yani hesaplamaya
+
+1381
+01:28:02,931 --> 01:28:03,831
+kalktığınızda elbette
+
+1382
+01:28:03,831 --> 01:28:04,631
+daha yorucu.
+
+1383
+01:28:05,811 --> 01:28:07,431
+Daha uzun bir
+
+1384
+01:28:07,431 --> 01:28:09,112
+işlem yapmamız gerektiğini
+
+1385
+01:28:09,112 --> 01:28:09,911
+burada görüyoruz.
+
+1386
+01:28:11,211 --> 01:28:11,811
+Oysa ki
+
+1387
+01:28:11,811 --> 01:28:12,351
+biz
+
+1388
+01:28:12,351 --> 01:28:13,471
+integral sırasını
+
+1389
+01:28:13,471 --> 01:28:14,831
+bu şekilde alırsak
+
+1390
+01:28:14,831 --> 01:28:16,451
+yani
+
+1391
+01:28:16,451 --> 01:28:17,551
+x x birden
+
+1392
+01:28:17,551 --> 01:28:18,671
+ikiye
+
+1393
+01:28:18,671 --> 01:28:22,131
+burası da direkt
+
+1394
+01:28:22,131 --> 01:28:24,351
+aşağıdaki elden yukarıdaki
+
+1395
+01:28:24,351 --> 01:28:25,591
+y'ye şeklinde alırsak
+
+1396
+01:28:25,591 --> 01:28:28,612
+sonuçlu çok daha kolay bana.
+
+1397
+01:28:30,871 --> 01:28:32,591
+Bu şekilde geleceğini görürüz.
+
+1398
+01:28:32,652 --> 01:28:33,492
+Yani y'ye göre zaten
+
+1399
+01:28:33,492 --> 01:28:34,171
+bunun integral sırasında
+
+1400
+01:28:34,171 --> 01:28:35,091
+burası y'dir değil mi?
+
+1401
+01:28:35,591 --> 01:28:37,251
+Yani şunu mesela sonuç hesaplayalım.
+
+1402
+01:28:39,692 --> 01:28:40,911
+Sınır değerlerini koyduğumuzda
+
+1403
+01:28:40,911 --> 01:28:41,671
+x artı iki
+
+1404
+01:28:41,671 --> 01:28:42,431
+eksi x kare.
+
+1405
+01:28:43,731 --> 01:28:45,331
+x artı
+
+1406
+01:28:45,331 --> 01:28:47,091
+iki
+
+1407
+01:28:47,091 --> 01:28:49,612
+eksi x kare.
+
+1408
+01:28:52,251 --> 01:28:52,811
+Değil mi?
+
+1409
+01:28:53,492 --> 01:28:54,231
+Bunu şimdi artık
+
+1410
+01:28:54,231 --> 01:28:55,331
+x'e göre integral edelim.
+
+1411
+01:28:55,591 --> 01:28:59,572
+eksi yazmıyorum.
+
+1412
+01:29:00,251 --> 01:29:01,171
+x kare bölü iki
+
+1413
+01:29:01,171 --> 01:29:05,831
+y'ye göre integral edelim.
+
+1414
+01:29:07,091 --> 01:29:08,531
+Sonra, artı 2x
+
+1415
+01:29:16,435 --> 01:29:18,015
+Sonra eksi x küpörü 3.
+
+1416
+01:29:23,636 --> 01:29:34,436
+Sınırlar, eksi 1'den 2. Önce 2 yazacağız işte. 4 bölü 2, 2 olur. Artı 4, 6 olur. Değil mi? Burası.
+
+1417
+01:29:37,016 --> 01:29:40,636
+Burada da eksi 8 bölü 3 gelir. 2 yazdığımız için.
+
+1418
+01:29:44,948 --> 01:29:46,148
+Bundan neyi çıkaracağız?
+
+1419
+01:29:47,328 --> 01:29:49,048
+Eksi bir yazacağımız için bir bölü iki.
+
+1420
+01:29:53,555 --> 01:29:56,935
+x 2x, x den dolayı artı olur, artı 2 olur.
+
+1421
+01:30:01,779 --> 01:30:05,340
+Eksi, eksi, bir de integralden göre eksi, yine eksi olur, değil mi?
+
+1422
+01:30:06,920 --> 01:30:09,479
+Eksi, eksi artı yapar, eksi olur, eksi bir bölü üç.
+
+1423
+01:30:13,427 --> 01:30:14,627
+Umarım yanlış yapmadım.
+
+1424
+01:30:16,967 --> 01:30:19,568
+Burası 6 artı 2, 8 olur.
+
+1425
+01:30:23,699 --> 01:30:29,840
+Eksi 8 bölü 3, eksi 1 bölü 3, eksi 9 bölü 3 olur.
+
+1426
+01:30:37,203 --> 01:30:38,143
+Eksi 1 bölü 2.
+
+1427
+01:30:39,923 --> 01:30:42,764
+Bunu paylaşacağız arkadaşlar.
+
+1428
+01:30:44,783 --> 01:30:46,203
+Önce bunu bir...
+
+1429
+01:30:46,203 --> 01:30:49,203
+Yanlış mı yaptık, bir evlatta mı yaptık?
+
+1430
+01:30:52,623 --> 01:30:54,203
+Bunun paylaşımı...
+
+1431
+01:30:54,764 --> 01:30:56,203
+Yani daha doğrusu...
+
+1432
+01:30:57,643 --> 01:31:01,123
+Eksi 8 bölü 3, eksi 9 bölü 3, 3 yani ya.
+
+1433
+01:31:02,083 --> 01:31:02,363
+Değil mi?
+
+1434
+01:31:03,643 --> 01:31:04,903
+9 bölü 3, 3 yani.
+
+1435
+01:31:04,903 --> 01:31:06,724
+Ne işi yapıyoruz ki, uğraşıyoruz ki.
+
+1436
+01:31:07,203 --> 01:31:10,043
+8 eksi 3, 5.
+
+1437
+01:31:10,764 --> 01:31:11,884
+5 eksi 1 bölü 2.
+
+1438
+01:31:12,903 --> 01:31:17,023
+10 bölü 2, 10 eksi 1 bölü 2.
+
+1439
+01:31:17,384 --> 01:31:18,243
+9 bölü 2, doğru.
+
+1440
+01:31:22,036 --> 01:31:27,916
+9.2. Evet. Böylece sonucun gerçekten doğru olduğunu ne yapmış olduk?
+
+1441
+01:31:30,975 --> 01:31:35,376
+Teyit etmiş olduk, öyle söyleyeyim. Sağlamasını yapmış olduk. Peki.
+
+1442
+01:31:38,615 --> 01:31:44,435
+Buraya kadar ilk katlı integral arkadaşlar nasıl tamlandığını ve hesabı konusunda bilgiler aldık.
+
+1443
+01:31:44,435 --> 01:31:51,496
+Hacı olarak hesaplar alınabildiğini. Önce tabii tiktörkünden üzerinde ilk katlı integral hesapladık. Sonra tiktörkünden olmayan bölge üzerine hesapladık.
+
+1444
+01:31:52,036 --> 01:31:59,975
+ya da nasıl hesaplama, ya da nasıl tanımlandığını gördük. Arkasından işte hesaplama ifadesine geçtik.
+
+1445
+01:32:03,036 --> 01:32:07,996
+Haftaya artık kalan konularımızı burada tamamlayacağız.
+
+1446
+01:32:08,996 --> 01:32:11,576
+Yani şöyle başa geçersek.
+
+1447
+01:32:14,576 --> 01:32:18,256
+Ortalama değerli tören ve kutupak konularında iki katlı integral de göreceğiz.
+
+1448
+01:32:18,256 --> 01:32:20,256
+Önce tabii tabii ki katlı bir keklerle bir kekler alınabildiğini.
+
+1449
+01:32:20,256 --> 01:32:25,136
+Önce tabii yine buradaki katlı bir hacim ve alan hesabının geldiğimiz yere kadar bir kekler ederiz.
+
+1450
+01:32:25,855 --> 01:32:30,056
+Bir 10-15 dakika ona bir zaman ayırırız. Arkasından kaldığımız yerler devam eder.
+
+1451
+01:32:30,256 --> 01:32:34,855
+Konumuz haftaya bu kısmelerden tavlamış oluruz.
+
+1452
+01:32:34,855 --> 01:32:46,855
+kalan bir keklerden tavsiye kadar bir keklerden tavsiye kadar.
+
+1453
+01:32:46,855 --> 01:32:48,855
+Ve son haftada tahmin edinemelik örnekler çözeriz.
+
+1454
+01:32:58,899 --> 01:33:12,019
+Peki, o zaman her şey anlaşıldığını varsayıyorum. Aklında takılan bir şey olursa da sorular olursa yine haftaya nasıl olsa iki haftamız daha var. Rahat rahat çalışıp bana sorarsınız.
+
+1455
+01:33:12,460 --> 01:33:22,960
+Mutlaka arkadaşlar, derse gelmeden, katılmadan önceki notlarımızı, derslerimizi takip edin ya da çalışın, okuyun, gelin.
+
+1456
+01:33:22,960 --> 01:33:31,139
+birbirlerine bağlı, hani ben her ne kadar tekrar istem de daha kolay hatırlanmanız için sizinle bakmanız gerekecek ve işlem çok önemli tabii.
+
+1457
+01:33:31,699 --> 01:33:32,719
+Bal bal örnek de çözülür.
+
+1458
+01:33:32,719 --> 01:33:33,199
+Gerekecek.
+
+1459
+01:33:34,359 --> 01:33:38,599
+Peki, burada dersimizi sonlandırıyoruz.
+
+1460
+01:33:40,119 --> 01:33:41,339
+Yani biraz daha açık kalsın.
+
+1461
+01:33:41,420 --> 01:33:43,719
+Belki su hakkınıza soru falan kalır ben kapatmayacağım.
+
+1462
+01:33:44,619 --> 01:33:46,179
+Ama görüntüyle sesi kısacağım.
+
+1463
+01:33:46,979 --> 01:33:47,939
+Haftaya görüşmek üzere.
