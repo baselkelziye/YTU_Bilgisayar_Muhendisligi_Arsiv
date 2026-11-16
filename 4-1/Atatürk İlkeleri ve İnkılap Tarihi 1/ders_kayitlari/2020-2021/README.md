@@ -7,6 +7,7 @@
 | 2 | Güz | Gülsema Lüyer | [sube_2/](sube_2/) |
 | 4 | Güz | Öğr. Gör. Dr. Şebnem Gelmedi | [sube_4/](sube_4/) |
 | 5 | Güz | Şebnem Gelmedi | [sube_5/](sube_5/) |
+| 6 | Güz | Gülsema Lüyer | [sube_6/](sube_6/) |
 | 10 | Güz | Zafer Doğan | [sube_10/](sube_10/) |
 | 11 | Güz | Gülsema Lüyer | [sube_11/](sube_11/) |
 | 13 | Güz | Şebnem Gelmedi | [sube_13/](sube_13/) |
