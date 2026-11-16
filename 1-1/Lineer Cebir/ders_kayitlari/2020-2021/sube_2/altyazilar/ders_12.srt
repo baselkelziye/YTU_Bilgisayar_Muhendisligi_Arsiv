@@ -1,0 +1,5115 @@
+1
+00:00:11,763 --> 00:00:13,043
+Merhaba arkadaşlar.
+
+2
+00:00:15,863 --> 00:00:17,044
+Merhaba hocam.
+
+3
+00:00:18,844 --> 00:00:23,603
+Beş geçeye kadar katılım için bekleyeceğim. Beş geçe derse başlayacağım. Tamam.
+
+4
+00:03:28,692 --> 00:03:38,312
+Evet arkadaşlar, senenin son dersine başlıyoruz.
+
+5
+00:03:44,436 --> 00:03:52,236
+Şimdi koordinatlar ve geçiş matrisleri bugün anlatacağım konu.
+
+6
+00:03:53,496 --> 00:03:55,016
+Son dersini mi hocam?
+
+7
+00:03:55,695 --> 00:03:57,736
+Yani senenin son dersi.
+
+8
+00:03:57,996 --> 00:03:58,996
+2020'nin.
+
+9
+00:04:00,276 --> 00:04:04,096
+Haftaya dersimiz var ama 2020'dir olacak ya.
+
+10
+00:04:05,316 --> 00:04:05,915
+Onun için.
+
+11
+00:04:06,116 --> 00:04:07,795
+Hani senenin son dersi bugün.
+
+12
+00:04:07,795 --> 00:04:13,676
+Hani inşallah şu 2020'yi uğurlayacağız.
+
+13
+00:04:14,436 --> 00:04:20,016
+Yani bir gitsin artık bir gitsin bizi bir rahat bıraksın şu 2020.
+
+14
+00:04:20,495 --> 00:04:22,956
+Hastalıklarını da beraber alsın götürsün.
+
+15
+00:04:24,896 --> 00:04:28,056
+Yok yok Liner Cebir'in son dersi değil.
+
+16
+00:04:28,596 --> 00:04:31,355
+Aman Allah aşkına inşallah aratmaz yani.
+
+17
+00:04:32,396 --> 00:04:35,576
+Yani bu 2020 gitsin nedense bir kötü geldi.
+
+18
+00:04:35,576 --> 00:04:39,375
+Bütün felaketleri de beraberinde getirdi.
+
+19
+00:04:40,016 --> 00:04:41,536
+Artık bir gitsin diyoruz.
+
+20
+00:04:41,636 --> 00:04:44,115
+2021 güzellikleri getirsin bize.
+
+21
+00:04:44,436 --> 00:04:46,596
+Şöyle eskisinden daha güzel olalım.
+
+22
+00:04:48,735 --> 00:04:51,795
+Valla eski günlerimizi aradık.
+
+23
+00:04:55,336 --> 00:04:56,196
+Yazıktır.
+
+24
+00:04:56,295 --> 00:05:00,036
+Valla ben hiç acımıyorum şu 2020'ye yani.
+
+25
+00:05:00,115 --> 00:05:00,776
+Hiç acımıyorum.
+
+26
+00:05:02,235 --> 00:05:03,255
+Yani bir gitsin.
+
+27
+00:05:03,495 --> 00:05:05,556
+Bir gitsin bizi bir rahat bıraksın artık.
+
+28
+00:05:05,556 --> 00:05:08,196
+Evet.
+
+29
+00:05:09,295 --> 00:05:22,056
+Yani elbette güzel günlerimiz de olmuştur 2020'de ama yani hep yani bize bu hastalıkla birlikte.
+
+30
+00:05:22,615 --> 00:05:26,776
+Belki bazı şeylerin kıymetini bilmeyi öğrendik.
+
+31
+00:05:26,776 --> 00:05:30,336
+Yani hani bir açıdan öyle.
+
+32
+00:05:32,115 --> 00:05:34,295
+Hani eskiden böyle bir yaşıyorduk.
+
+33
+00:05:34,615 --> 00:05:36,316
+Hiçbir şeyin kıymetini bilmiyorduk.
+
+34
+00:05:36,816 --> 00:05:43,216
+Şimdi hani sokağa çıkmanın bile ne kadar önemli olduğunu öğrendik.
+
+35
+00:05:43,216 --> 00:05:55,176
+Geçen dönem işte bu online eğitim başladığında ben öğrencilerime demiştim ki bakın ne kadar güzel işte yataktan kalkıyorsunuz.
+
+36
+00:05:55,216 --> 00:05:57,135
+Bilgisayarın başına geçiyorsunuz.
+
+37
+00:05:57,216 --> 00:05:58,716
+Beni dinliyorsunuz elinizde.
+
+38
+00:05:58,716 --> 00:06:00,716
+Çayınız kahveniz.
+
+39
+00:06:01,436 --> 00:06:03,135
+Hayır şu anda daha sohbet ediyorum.
+
+40
+00:06:03,776 --> 00:06:04,875
+Başlayacağım derse.
+
+41
+00:06:06,056 --> 00:06:08,676
+Çayınız kahveniz beni dinliyorsunuz.
+
+42
+00:06:09,115 --> 00:06:17,475
+Öbür türlü işte 9 dersine yetişmek için hele ki uzaksa eviniz işte 6'larda yola çıkmanız gerekiyordu filan demiştim.
+
+43
+00:06:17,475 --> 00:06:28,816
+Öğrenciler bana dediler ki hocam keşke okula gelebilseydik de 6'ya 6'da yola çıksaydık dediler.
+
+44
+00:06:29,515 --> 00:06:32,495
+Evet gerçekten Allah bu günlerimizi aratmasın.
+
+45
+00:06:32,495 --> 00:06:40,255
+İnşallah gerçekten şu aşı bilmiyorum yani inşallah iyi gelir diyeceğim.
+
+46
+00:06:44,531 --> 00:06:46,471
+Ne online ne de yüz yüze.
+
+47
+00:06:46,551 --> 00:06:49,471
+Niye gecenin bütün gece oturuyorsunuz değil mi?
+
+48
+00:06:50,572 --> 00:06:54,671
+Bilgisayarın başında sabaha kadar ondan sonra dokuzda da ders olmamalı.
+
+49
+00:06:57,111 --> 00:06:58,512
+Yok artık yani.
+
+50
+00:06:58,812 --> 00:07:00,171
+Online'a da yetişemiyorum.
+
+51
+00:07:04,551 --> 00:07:07,132
+[öğrenci] ne yazdın ben hiç anlamadım yani.
+
+52
+00:07:07,231 --> 00:07:08,211
+Bir şeyler yazmışsın ama.
+
+53
+00:07:08,211 --> 00:07:11,351
+O görücü kamaşı koydum onu.
+
+54
+00:07:14,531 --> 00:07:19,591
+Böyle az gelişe yapmak için ne kadar uzun olursa o kadar çok güdüyoruz.
+
+55
+00:07:20,391 --> 00:07:23,072
+Öyle mi? Bak sizden bir şey daha öğrendim.
+
+56
+00:07:23,211 --> 00:07:24,031
+Tamam peki.
+
+57
+00:07:30,271 --> 00:07:31,512
+Peki o zaman.
+
+58
+00:07:32,271 --> 00:07:34,932
+Evet şimdi neyse dersimize başlayalım.
+
+59
+00:07:34,932 --> 00:07:41,451
+Sonra yine dersin sonunda zaten yeni yıl mesajı veririz birbirimize.
+
+60
+00:07:41,572 --> 00:07:44,271
+Öyle bitiririz dersimizi.
+
+61
+00:07:44,531 --> 00:07:48,651
+Seneye de ilk dersimizi gene yapmış oluruz.
+
+62
+00:07:48,731 --> 00:07:49,551
+Yaparız yani.
+
+63
+00:07:50,491 --> 00:07:50,771
+Peki.
+
+64
+00:07:51,171 --> 00:07:54,072
+Koordinatlar ve geçiş matrisleri diyoruz arkadaşlar.
+
+65
+00:07:56,211 --> 00:07:57,051
+Şimdi.
+
+66
+00:07:58,432 --> 00:07:59,411
+Şöyle diyoruz.
+
+67
+00:07:59,851 --> 00:08:04,432
+En boyutlu bir vektör uzayının her tabanında en tane vektör vardı.
+
+68
+00:08:04,432 --> 00:08:05,432
+Bunu öğrenmiştik.
+
+69
+00:08:06,211 --> 00:08:06,671
+Öyle değil mi?
+
+70
+00:08:06,671 --> 00:08:14,551
+Buraya kadar ki kısımda hiç tabandaki sıradan bahsetmedik.
+
+71
+00:08:14,871 --> 00:08:17,871
+Sadece işte tabandaki vektörler filan demiştik.
+
+72
+00:08:17,871 --> 00:08:24,731
+Şimdi burada ise bir sıra çıkıyor ortaya.
+
+73
+00:08:24,731 --> 00:08:26,331
+diyoruz ki.
+
+74
+00:08:26,331 --> 00:08:27,411
+Eğer ki.
+
+75
+00:08:27,411 --> 00:08:31,211
+Şimdi T1 şu şekilde ise.
+
+76
+00:08:31,651 --> 00:08:36,131
+V1, V2, V2, VN vektörlerin bu şekilde ise.
+
+77
+00:08:36,572 --> 00:08:40,172
+Ve ben bunu sıralı bir taban diyorsam bu T1'e.
+
+78
+00:08:40,172 --> 00:08:43,552
+T2 ise.
+
+79
+00:08:43,552 --> 00:08:47,251
+V2, V1, VN şeklinde olduğunda.
+
+80
+00:08:47,591 --> 00:08:48,131
+Bu ne oluyor?
+
+81
+00:08:48,271 --> 00:08:50,271
+Farklı sıralı bir taban oluyor.
+
+82
+00:08:50,432 --> 00:08:53,052
+Yani bunu sıralı taban olarak kabul edersem.
+
+83
+00:08:53,392 --> 00:08:56,192
+Bu farklı sıralı bir tabandır.
+
+84
+00:08:56,552 --> 00:08:56,851
+Diyoruz.
+
+85
+00:08:57,511 --> 00:08:58,771
+Şimdi başka bir tanım.
+
+86
+00:08:58,771 --> 00:09:01,831
+N boyutlu bir vektör uzayında.
+
+87
+00:09:02,552 --> 00:09:04,292
+T, V1, V2, VN.
+
+88
+00:09:04,672 --> 00:09:06,491
+V'nin sıralı bir tabanı olsun.
+
+89
+00:09:07,211 --> 00:09:09,951
+Bir önceki teoremde ne demiştik?
+
+90
+00:09:10,271 --> 00:09:13,711
+C1, C2, CN'ler skalerler olmak üzere.
+
+91
+00:09:14,412 --> 00:09:16,711
+V'nin her V vektörü.
+
+92
+00:09:18,912 --> 00:09:20,231
+Tek olarak.
+
+93
+00:09:20,231 --> 00:09:23,692
+Yani sadece bir tek.
+
+94
+00:09:24,172 --> 00:09:26,031
+Şöyle yazıldığını öğrenmiştik.
+
+95
+00:09:26,091 --> 00:09:26,552
+Öyle değil mi?
+
+96
+00:09:26,552 --> 00:09:28,731
+C1 ve D1 demiştik.
+
+97
+00:09:28,991 --> 00:09:31,932
+İkisinin C1'in D1'e eşit olduğunu göstermiştik.
+
+98
+00:09:32,011 --> 00:09:33,531
+O teoremde hatırlarsınız.
+
+99
+00:09:33,951 --> 00:09:35,052
+Tek türlü olarak.
+
+100
+00:09:35,672 --> 00:09:37,031
+V eşittir.
+
+101
+00:09:37,111 --> 00:09:39,371
+C1, V1, C2, V2 nokta nokta.
+
+102
+00:09:39,471 --> 00:09:42,152
+Cn, Vn şeklinde ifade edilebiliyordu.
+
+103
+00:09:42,351 --> 00:09:45,111
+Bu teoremde bunu öğrenmiştik zaten.
+
+104
+00:09:46,611 --> 00:09:49,611
+V vektörünün T sıralı.
+
+105
+00:09:49,951 --> 00:09:51,652
+Şunu birazcık daha büyüteyim.
+
+106
+00:09:52,331 --> 00:09:55,611
+T sıralı tabanına göre koordinat vektörü.
+
+107
+00:09:55,611 --> 00:09:57,991
+Vt şeklinde gösteriliyor.
+
+108
+00:09:57,991 --> 00:09:59,991
+Vt de şöyledir.
+
+109
+00:10:00,991 --> 00:10:07,991
+C1 yani şurada bulduğun C1, C2, Cn'leri bu Vt koordinat vektöründe şu şekilde gösteriyoruz.
+
+110
+00:10:07,991 --> 00:10:19,251
+C1, C2, Cn'e yani Vt'nin bileşenlerine V vektörünün T tabanına göre koordinatı deniliyor.
+
+111
+00:10:20,531 --> 00:10:20,771
+Tamam.
+
+112
+00:10:20,771 --> 00:10:25,731
+Şimdi bir örnek yapalım.
+
+113
+00:10:26,591 --> 00:10:31,692
+R3 eşittir ve vektör uzayının sıralı bir tabanı şöyle olsun.
+
+114
+00:10:31,692 --> 00:10:33,531
+T eşittir.
+
+115
+00:10:33,652 --> 00:10:34,851
+U1, U2, U3.
+
+116
+00:10:35,072 --> 00:10:36,791
+U1 şöyle olacak.
+
+117
+00:10:36,971 --> 00:10:37,771
+1, 2, 4.
+
+118
+00:10:37,932 --> 00:10:39,572
+U2, 0, eksi 1, 2.
+
+119
+00:10:40,011 --> 00:10:41,812
+U3, eksi 5, 1, 0.
+
+120
+00:10:42,812 --> 00:10:43,291
+Olsun.
+
+121
+00:10:43,291 --> 00:10:43,692
+U3, u3
+
+122
+00:10:43,764 --> 00:11:01,584
+Eğer u şöyle ise, eksi 4, 4, 2 ise, vt, vt değil bu ut olacak ben bunu şunu yanlış şey yapmışım şu u olacak
+
+123
+00:11:06,388 --> 00:11:20,908
+UT koordinat vektörünü hesaplayalım diyor.
+
+124
+00:11:21,668 --> 00:11:24,048
+Şimdi ne yapıyorduk biz?
+
+125
+00:11:25,128 --> 00:11:28,028
+V'nin U vektörü için ne diyeceğim?
+
+126
+00:11:28,187 --> 00:11:32,788
+K1U1 artı K2U2 artı K3U3 neye eşit olacak?
+
+127
+00:11:32,968 --> 00:11:34,008
+U'ya eşit olacak.
+
+128
+00:11:34,008 --> 00:11:37,888
+Tamam mı? Yani şu.
+
+129
+00:11:41,048 --> 00:11:49,187
+U vektörünün T sıralı tabanına göre koordinat vektörü UT'yi bulmak için ne yapmam lazım?
+
+130
+00:11:49,668 --> 00:11:53,048
+K1, K2, K3'ü bulmam gerekiyor arkadaşlar.
+
+131
+00:11:53,848 --> 00:11:56,888
+Şimdi burada K1, K2 yok.
+
+132
+00:11:57,187 --> 00:11:59,508
+Eksi 5, K3 eşittir eksi 4.
+
+133
+00:11:59,508 --> 00:12:05,067
+2, K1, eksi K2 artı K3 eşittir 4.
+
+134
+00:12:05,968 --> 00:12:10,328
+4, K1, 2, K2, K3 yok eşittir 2'ye.
+
+135
+00:12:10,728 --> 00:12:13,468
+Karşıma ne çıkıyor? Lineer denklem sistemi çıkıyor.
+
+136
+00:12:13,888 --> 00:12:17,327
+Bu lineer denklem sistemini çözüyoruz.
+
+137
+00:12:17,768 --> 00:12:19,108
+Burada ne çıkacak?
+
+138
+00:12:19,108 --> 00:12:19,768
+Tek çözüm.
+
+139
+00:12:19,848 --> 00:12:25,888
+Bunu tek çözüm çıkacağını bildiğim için şurada dedik ya bunu teoremde de bulmuştuk.
+
+140
+00:12:26,588 --> 00:12:27,728
+Tek türlü diyoruz.
+
+141
+00:12:28,848 --> 00:12:29,948
+Yani bu ne demektir?
+
+142
+00:12:30,268 --> 00:12:31,307
+Tek çözüm çıkacak.
+
+143
+00:12:31,908 --> 00:12:35,948
+Bunu istersen kolay bir şeyse hemen yok etme ile de yaparsın.
+
+144
+00:12:36,028 --> 00:12:37,687
+Çünkü tek çözüm çıkacağı için.
+
+145
+00:12:37,687 --> 00:12:43,687
+K1, K2, K3'ü bu şekilde buluruz.
+
+146
+00:12:44,108 --> 00:12:44,608
+Tamam mı?
+
+147
+00:12:45,468 --> 00:12:51,307
+Bunları götürüp şurada, şu gene UT.
+
+148
+00:12:54,868 --> 00:13:08,988
+Yerine yazdığım zaman, K1 neydi? 1'di. K2 neydi? Eksi 1'di. K3 neydi? 1. Bu neyi bulmuş oluyorum? Koordinat vektörünü bulmuş oluyorum. Anlaşıldı mı?
+
+149
+00:13:13,779 --> 00:13:16,600
+Anladık mı? Anlamayan var mıdır?
+
+150
+00:13:19,480 --> 00:13:21,659
+Bir daha kısaca üstünden geçebilir miyiz?
+
+151
+00:13:22,399 --> 00:13:32,620
+Şimdi dedik ki R3 eşittir ve vektör uzayının sıralı bir tabanı T eşittir U1, U2, U3 olsun.
+
+152
+00:13:33,339 --> 00:13:33,819
+Tamam mı?
+
+153
+00:13:34,379 --> 00:13:37,360
+Bu U1, U2, U3'lerde şu şekilde verilsin.
+
+154
+00:13:37,419 --> 00:13:39,339
+Bu vektörlerim şu şekilde verilsin.
+
+155
+00:13:39,339 --> 00:13:46,939
+Diyoruz ki U vektörümde eğer ki buysa UT koordinat vektörünü bulun dedi.
+
+156
+00:13:47,559 --> 00:13:50,419
+UT koordinat vektörünü de nasıl buluyoruz?
+
+157
+00:13:51,460 --> 00:13:56,100
+K1, U1, K2, U2, K3, U3 eşittir U diyorum.
+
+158
+00:13:56,559 --> 00:13:59,319
+Buradan K1, K2, K3'leri buluyorum.
+
+159
+00:13:59,319 --> 00:14:06,259
+Bu bulduğum K1, K2, K3'leri şurada yerine yazdığım zaman bu ne oluyor?
+
+160
+00:14:06,539 --> 00:14:07,980
+Koordinat vektörü oluyor.
+
+161
+00:14:09,339 --> 00:14:10,459
+Tamam mı?
+
+162
+00:14:12,639 --> 00:14:13,319
+Anladık mı?
+
+163
+00:14:13,360 --> 00:14:14,179
+Anladım hocam.
+
+164
+00:14:14,299 --> 00:14:14,860
+Anladık hocam.
+
+165
+00:14:17,019 --> 00:14:20,120
+Şimdi başka bir tanım.
+
+166
+00:14:20,659 --> 00:14:23,179
+V en boyutlu bir vektör uzayı.
+
+167
+00:14:23,179 --> 00:14:35,159
+S, U1, U2, U3, U3, U1 ve T'de V1, V2, V3, V3, VN, V'nin sıralı iki tabanı olsunlar.
+
+168
+00:14:35,159 --> 00:14:39,899
+Her İ birden N'ye kadar için.
+
+169
+00:14:40,120 --> 00:14:50,039
+Ve İ ise A1İ, 2İ, Nİ.
+
+170
+00:14:50,039 --> 00:14:52,259
+Yani bu ne oluyor?
+
+171
+00:14:52,259 --> 00:14:54,339
+Şunun sütunları oluyor.
+
+172
+00:14:54,339 --> 00:14:54,879
+Tamam mı?
+
+173
+00:14:54,879 --> 00:14:55,819
+Olmak üzere.
+
+174
+00:14:55,819 --> 00:15:01,579
+Yani V1, S ne olacaktır?
+
+175
+00:15:02,419 --> 00:15:05,960
+A11, 21, N1.
+
+176
+00:15:05,960 --> 00:15:09,339
+V2, N2.
+
+177
+00:15:09,339 --> 00:15:10,299
+Ne olacaktır?
+
+178
+00:15:10,299 --> 00:15:14,299
+V2, N2.
+
+179
+00:15:14,299 --> 00:15:15,339
+N2.
+
+180
+00:15:16,740 --> 00:15:17,379
+Yani bu.
+
+181
+00:15:17,740 --> 00:15:18,259
+Tamam mı?
+
+182
+00:15:19,019 --> 00:15:20,860
+N içinde ne olacaktır?
+
+183
+00:15:20,860 --> 00:15:23,199
+1N ve N, S.
+
+184
+00:15:23,939 --> 00:15:26,859
+1N, 2N, NN.
+
+185
+00:15:27,500 --> 00:15:28,059
+Yani bu.
+
+186
+00:15:30,019 --> 00:15:30,779
+Matrisi ne?
+
+187
+00:15:31,379 --> 00:15:34,599
+T tabanından S tabanına geçiş matrisi deniliyor.
+
+188
+00:15:35,539 --> 00:15:39,039
+Ve bunu T, S ile gösteriyoruz.
+
+189
+00:15:39,359 --> 00:15:41,480
+M, T, S ile gösteriyoruz.
+
+190
+00:15:42,379 --> 00:15:48,480
+S'den T tabanına geçiş matrisi de gene benzer şekilde bulunuyor.
+
+191
+00:15:48,480 --> 00:15:52,519
+Şimdi örnek yapalım.
+
+192
+00:15:57,139 --> 00:16:03,460
+Şöyle, v eşittir, r üzeri 2.
+
+193
+00:16:04,000 --> 00:16:11,199
+Vektör uzayında b1, 1, 1, 1-2.
+
+194
+00:16:11,439 --> 00:16:13,120
+Yani buna s1, s2 diyelim.
+
+195
+00:16:14,639 --> 00:16:18,620
+Bunu vermemiş soruda s1, s2 demiyor da b1 şu.
+
+196
+00:16:19,419 --> 00:16:23,120
+b2 de 2-1, 1-1'e 1.
+
+197
+00:16:23,799 --> 00:16:26,019
+v'nin iki sıralı tabanı olsunlar.
+
+198
+00:16:27,139 --> 00:16:27,799
+Tamam mı?
+
+199
+00:16:28,419 --> 00:16:31,340
+b1'den b2'ye geçiş madresini bulunuz.
+
+200
+00:16:31,480 --> 00:16:34,919
+Yani b1'den m, b1, b2'yi soruyor.
+
+201
+00:16:35,919 --> 00:16:45,720
+b şıkkında da v eşittir, 3-2 vektörünün b2 sıralı tabanına göre koordinat vektörünü bulunuz diyor.
+
+202
+00:16:46,240 --> 00:16:47,299
+a ve b şıkkı bu.
+
+203
+00:16:47,299 --> 00:16:54,720
+Şimdi b1'deki vektörleri s1, s2, b2'deki vektörleri de ben t1, t2 diye alayım.
+
+204
+00:16:55,340 --> 00:16:56,720
+Şimdi bana ne soruluyor?
+
+205
+00:16:57,139 --> 00:17:01,799
+b1'den b2'ye geçiş madresini soruyor.
+
+206
+00:17:02,059 --> 00:17:02,500
+Tamam mı?
+
+207
+00:17:02,539 --> 00:17:05,480
+b1'den b2'ye geçiş madresini soruyor.
+
+208
+00:17:06,859 --> 00:17:11,200
+Şimdi geçiş madresinin sütun vektörleri ne olacaktır?
+
+209
+00:17:11,200 --> 00:17:14,759
+s1, b1'den b2'ye geçiş madresini soruyor.
+
+210
+00:17:14,759 --> 00:17:21,079
+s1, b2, s2, b2 olacaktır.
+
+211
+00:17:22,240 --> 00:17:22,740
+Tamam mı?
+
+212
+00:17:22,980 --> 00:17:24,460
+s1 dediğim buydu.
+
+213
+00:17:25,539 --> 00:17:30,380
+s1, b2, s2, b2.
+
+214
+00:17:30,379 --> 00:17:33,660
+b1'den b2'ye geçiş madresini soruyor.
+
+215
+00:17:33,660 --> 00:17:35,039
+s1, b2 için.
+
+216
+00:17:35,039 --> 00:17:43,380
+s1, b2, s1, b2 için.
+
+217
+00:17:43,380 --> 00:17:45,380
+s1, b2 için.
+
+218
+00:17:45,380 --> 00:17:46,380
+s1, b2, s1, b2 için.
+
+219
+00:17:46,380 --> 00:18:03,720
+s1, b2 için.
+
+220
+00:18:03,720 --> 00:20:15,360
+s1 için.
+
+221
+00:19:57,087 --> 00:20:07,847
+Bu hani a çarpı i yazıyorduk a üzeri eksi 1'i bulmak için.
+
+222
+00:20:08,327 --> 00:20:14,768
+Sonra elemanter işlemler yapıyorduk ve bu işlemlerin sonucunda neyi buluyorduk?
+
+223
+00:20:16,768 --> 00:20:22,147
+i'yi buraya alıyordum bu tarafta a üzeri eksi 1'i buluyordum.
+
+224
+00:20:22,327 --> 00:20:24,707
+Ne yapıyordum? Sadece satır işlemleri yapıyordum.
+
+225
+00:20:24,867 --> 00:20:25,968
+Hatırlıyor musunuz bunu?
+
+226
+00:20:27,087 --> 00:20:29,307
+a üzeri eksi 1'i bulmak için yaptığımız işlemler.
+
+227
+00:20:29,307 --> 00:20:29,788
+Evet hocam.
+
+228
+00:20:30,207 --> 00:20:30,447
+Tamam.
+
+229
+00:20:31,008 --> 00:20:35,387
+Şimdi burada da bu ikinci yöntemde de şunu yapıyorsun.
+
+230
+00:20:35,387 --> 00:20:37,347
+İkinci yöntemde şunu yapıyorsun.
+
+231
+00:20:39,548 --> 00:20:42,748
+B1'den B2'ye geçiş madresini soruyor ya.
+
+232
+00:20:44,407 --> 00:20:46,807
+B1'i bu tarafa yazıyorsun.
+
+233
+00:20:46,988 --> 00:20:48,288
+B1'deki vektörleri.
+
+234
+00:20:48,827 --> 00:20:51,627
+B2'deki vektörleri de buraya yazıyorsun.
+
+235
+00:20:52,467 --> 00:20:52,647
+Tamam.
+
+236
+00:20:52,647 --> 00:21:00,647
+B1'den B2'ye geçiş madresini sorduğu için buraya B1'i bu tarafa B2'yi yazıyoruz.
+
+237
+00:21:00,947 --> 00:21:03,887
+Sonra elemanter satır işlemleri yapıyorum.
+
+238
+00:21:05,268 --> 00:21:06,708
+Neyi elde edecek şekilde?
+
+239
+00:21:06,708 --> 00:21:26,687
+B2'nin olduğu yerde birim madresi elde edecek şekilde yani sana M, B1, B2 soruluyorsa ne yapacaksın?
+
+240
+00:21:26,687 --> 00:21:32,008
+Şimdi bu tarafa B2'yi yazıyorsun.
+
+241
+00:21:32,768 --> 00:21:34,687
+Bu tarafa B1'i yazıyorsun.
+
+242
+00:21:35,728 --> 00:21:38,548
+Sonra elemanter satır işlemleri yapıyorsun.
+
+243
+00:21:39,907 --> 00:21:43,607
+B2'nin olduğu yerde I'yi elde edinceye kadar.
+
+244
+00:21:43,607 --> 00:21:53,048
+I'yi elde ettiğin anda burada B1'den B2'ye geçiş madresini buluyorsun.
+
+245
+00:21:54,847 --> 00:21:55,647
+Yani şöyle.
+
+246
+00:21:56,788 --> 00:21:57,947
+Yanlış yazdım bir dakika.
+
+247
+00:22:00,508 --> 00:22:31,847
+Şurada buldu.
+
+248
+00:22:11,092 --> 00:22:14,672
+B1'den B2'ye geçiş matrisi.
+
+249
+00:22:15,832 --> 00:22:16,052
+Tamam.
+
+250
+00:22:18,172 --> 00:22:18,912
+Anlaşıldı mı?
+
+251
+00:22:21,652 --> 00:22:22,412
+Evet hocam.
+
+252
+00:22:23,292 --> 00:22:23,592
+Tamam.
+
+253
+00:22:24,112 --> 00:22:24,372
+Peki.
+
+254
+00:22:24,912 --> 00:22:26,472
+Şimdi şu işlemi yapalım.
+
+255
+00:22:27,492 --> 00:22:29,951
+B1'den B2'ye geçiş matrisini soruyor.
+
+256
+00:22:29,951 --> 00:22:31,032
+Ne yapacağım?
+
+257
+00:22:31,372 --> 00:22:34,392
+Ben buraya B2'deki vektörlerim neydi?
+
+258
+00:22:34,512 --> 00:22:35,312
+T1, T2.
+
+259
+00:22:35,932 --> 00:22:38,352
+B1'deki vektörlerim de S1, S2.
+
+260
+00:22:38,812 --> 00:22:40,272
+Götürüyoruz bunu yazıyoruz.
+
+261
+00:22:40,272 --> 00:22:43,672
+Sonra elemanter satır işlemleri uyguluyorum.
+
+262
+00:22:44,252 --> 00:22:47,372
+Ne olacak şekilde elemanter satır işlemleri?
+
+263
+00:22:47,792 --> 00:22:51,892
+B2'nin olduğu yerde neyi elde edecek şekilde?
+
+264
+00:22:52,692 --> 00:22:54,412
+Birim madrisi elde edecek şekilde.
+
+265
+00:22:54,572 --> 00:22:56,112
+Peki o zaman ne yapmam lazım?
+
+266
+00:22:56,112 --> 00:22:59,052
+Şimdi şu 2-1'di.
+
+267
+00:22:59,432 --> 00:23:00,472
+O zaman ne yapıyorum?
+
+268
+00:23:00,892 --> 00:23:03,252
+Bunu 1 ile çarpıp 1'e ekliyorum.
+
+269
+00:23:03,451 --> 00:23:08,092
+Eklediğim zaman burası 1 oldu, burası 0 oldu, burası 2 oldu.
+
+270
+00:23:08,632 --> 00:23:10,132
+Bunu ekledik 0 oldu.
+
+271
+00:23:10,272 --> 00:23:11,232
+Tamam.
+
+272
+00:23:12,172 --> 00:23:13,451
+Şimdi şunu bulduk.
+
+273
+00:23:13,672 --> 00:23:14,792
+Şimdi ne yapmam lazım?
+
+274
+00:23:14,892 --> 00:23:18,312
+Birim madrisi olması için bunun 0 olması lazım.
+
+275
+00:23:18,732 --> 00:23:22,432
+O zaman diyorum ki bunu 1 ile çarpıp buraya ekleyeyim.
+
+276
+00:23:22,552 --> 00:23:23,892
+Eklersem bu 0 olur.
+
+277
+00:23:24,052 --> 00:23:24,672
+Bu 1 olur.
+
+278
+00:23:24,672 --> 00:23:26,972
+1 ile çarptık, ekledik 3 oldu.
+
+279
+00:23:27,592 --> 00:23:28,492
+Burası da ne oldu?
+
+280
+00:23:28,932 --> 00:23:29,732
+Eksi 1 oldu.
+
+281
+00:23:29,732 --> 00:23:30,792
+Tamam.
+
+282
+00:23:31,352 --> 00:23:33,612
+O zaman şurası nedir?
+
+283
+00:23:33,932 --> 00:23:35,152
+Birim madrisi bulduk.
+
+284
+00:23:35,352 --> 00:23:41,892
+Birim madrisi bulduğum anda şurada bulduğum B1'den B2'ye geçiş madrisidir.
+
+285
+00:23:42,292 --> 00:23:42,692
+Tamam mı?
+
+286
+00:23:42,711 --> 00:23:43,532
+Bu B1'di ya.
+
+287
+00:23:43,532 --> 00:23:46,552
+B1'den B2'ye geçiş madrisini bulduk burada.
+
+288
+00:23:46,892 --> 00:23:47,492
+Anladık mı?
+
+289
+00:23:48,711 --> 00:23:52,752
+Yani şundansa şu bana daha kolay geliyor.
+
+290
+00:23:52,872 --> 00:23:53,951
+Bu yöntem daha kolay.
+
+291
+00:23:53,951 --> 00:23:56,912
+Hocam geçiş maddesleri tam olarak ne oluyor?
+
+292
+00:23:57,912 --> 00:24:03,672
+Taban değiştiriyoruz.
+
+293
+00:24:09,683 --> 00:24:20,483
+Burada B1 tabanı, bu da B2 tabanı ya, bu tabandan bu tabana geçiyoruz. Tamam?
+
+294
+00:24:29,203 --> 00:24:32,144
+Şimdi B şıkkı da şuydu.
+
+295
+00:24:33,163 --> 00:24:40,063
+V vektörünün B2 sıralı tabanına göre koordinat vektörünü bulunuz.
+
+296
+00:24:40,584 --> 00:24:42,163
+Şimdi ne yapacaktık?
+
+297
+00:24:42,463 --> 00:24:43,523
+V eşittir.
+
+298
+00:24:43,923 --> 00:24:44,423
+Öyle değil mi?
+
+299
+00:24:44,483 --> 00:24:46,043
+B2 sıralı tabanına göre.
+
+300
+00:24:46,463 --> 00:24:48,023
+B2'deki vektörlerim neydi?
+
+301
+00:24:48,144 --> 00:24:49,163
+T1, T2 idi.
+
+302
+00:24:49,364 --> 00:24:50,223
+V eşittir.
+
+303
+00:24:50,523 --> 00:24:52,823
+C1, T1 artı C2, T2.
+
+304
+00:24:53,644 --> 00:24:55,043
+Burada V neydi?
+
+305
+00:24:55,283 --> 00:24:56,124
+3'e eksi 2.
+
+306
+00:24:56,124 --> 00:25:02,283
+C1, T1, 2'ye eksi 1 artı C2, eksi 1'e 1.
+
+307
+00:25:03,003 --> 00:25:04,844
+Burada 3 eşittir.
+
+308
+00:25:04,983 --> 00:25:08,644
+2C1, eksi C2, eksi 2 eşittir.
+
+309
+00:25:08,903 --> 00:25:11,023
+Eksi C1, artı C2.
+
+310
+00:25:11,503 --> 00:25:13,203
+C1, C2'yi buluyoruz.
+
+311
+00:25:13,463 --> 00:25:15,364
+Şunu yok ederek yapabiliriz zaten.
+
+312
+00:25:16,043 --> 00:25:18,303
+C1, 1, C2, eksi 1'miş.
+
+313
+00:25:18,303 --> 00:25:28,743
+O zaman VB2, B2 sıralı tabanına göre yani koordinat vektörü nedir?
+
+314
+00:25:29,163 --> 00:25:31,084
+1'e eksi 1'dir.
+
+315
+00:25:31,864 --> 00:25:32,463
+Anladık mı?
+
+316
+00:25:32,463 --> 00:25:52,463
+1'e eksi 1'miş.
+
+317
+00:25:37,107 --> 00:25:37,947
+Anlamayam?
+
+318
+00:25:38,667 --> 00:25:39,147
+Evet hocam.
+
+319
+00:25:40,488 --> 00:25:40,788
+Peki.
+
+320
+00:25:41,988 --> 00:25:45,087
+Şimdi başka bir teorem.
+
+321
+00:25:45,988 --> 00:25:52,707
+V en boyutlu bir vektör uzayı S ve T'de V'nin sıralı iki tabanı olsunlar.
+
+322
+00:25:53,607 --> 00:26:04,347
+V eleman V vektörü için Vs yani S tabanına göre koordinat vektörü şuna eşit.
+
+323
+00:26:04,347 --> 00:26:14,387
+M T'den S'ye geçiş matrisi ile T tabanına göre koordinat vektörünün çarpımına eşittir.
+
+324
+00:26:14,867 --> 00:26:14,967
+Tamam.
+
+325
+00:26:15,548 --> 00:26:17,167
+Bu teoremin söylediği bu.
+
+326
+00:26:17,647 --> 00:26:20,867
+Bak bunlar hep soru olarak gelebilen şeyler.
+
+327
+00:26:21,427 --> 00:26:22,587
+Şu sorulur.
+
+328
+00:26:23,107 --> 00:26:28,447
+Ondan sonra şu teoremi kullanman sorulur.
+
+329
+00:26:29,627 --> 00:26:29,867
+Tamam.
+
+330
+00:26:29,867 --> 00:26:35,127
+Şimdi örneğimize devam edelim.
+
+331
+00:26:36,367 --> 00:26:36,867
+Diyoruz ki
+
+332
+00:26:37,508 --> 00:26:51,107
+V2 tabanına göre koordinat vektörünün V1'den V2'ye geçiş matrisi ile V1 tabanına göre koordinat vektörünün çarpımına eşit olduğunu gösterin diyor.
+
+333
+00:26:51,228 --> 00:26:52,548
+Soru bana bunu söylüyor.
+
+334
+00:26:52,548 --> 00:26:54,947
+Şimdi V neye eşitti?
+
+335
+00:26:55,387 --> 00:26:56,927
+3'e eksi 2 idi.
+
+336
+00:26:57,427 --> 00:26:57,548
+Tamam.
+
+337
+00:26:59,347 --> 00:27:03,867
+V1 tabanına göre bunu ifade edeceğim.
+
+338
+00:27:04,127 --> 00:27:04,567
+Öyle değil mi?
+
+339
+00:27:06,167 --> 00:27:07,167
+O da nedir?
+
+340
+00:27:07,847 --> 00:27:08,867
+V eşittir.
+
+341
+00:27:10,028 --> 00:27:10,567
+C1
+
+342
+00:27:10,567 --> 00:27:12,987
+V1'deki vektörler neydi?
+
+343
+00:27:12,987 --> 00:27:16,327
+1, 1
+
+344
+00:27:16,327 --> 00:27:17,367
+1-1'di.
+
+345
+00:27:18,567 --> 00:27:19,167
+C1
+
+346
+00:27:19,167 --> 00:27:22,207
+Yani şunu şöyle yazarım.
+
+347
+00:27:22,667 --> 00:27:23,768
+V eşittir.
+
+348
+00:27:24,687 --> 00:27:25,387
+C1
+
+349
+00:27:25,387 --> 00:27:47,587
+S1
+
+350
+00:27:34,324 --> 00:27:39,024
+S1 artı C2 S2.
+
+351
+00:27:40,344 --> 00:27:41,224
+Tamam.
+
+352
+00:27:42,004 --> 00:27:43,844
+Buradan V eşittir.
+
+353
+00:27:44,183 --> 00:27:48,183
+C1 S1'i 1 1'di.
+
+354
+00:27:48,423 --> 00:27:51,004
+Artı C2 S2'de 1'e eksi 1'di.
+
+355
+00:27:51,004 --> 00:27:54,724
+O zaman bu ne olacaktır?
+
+356
+00:27:55,044 --> 00:27:56,124
+3 eşittir.
+
+357
+00:27:56,284 --> 00:28:00,804
+C1 artı C2 eksi 2 eşittir.
+
+358
+00:28:00,804 --> 00:28:04,464
+C1 eksi C2.
+
+359
+00:28:05,304 --> 00:28:07,604
+Buradan C1'i ne diye bulduk?
+
+360
+00:28:07,704 --> 00:28:08,364
+1 bölü 2.
+
+361
+00:28:08,644 --> 00:28:10,824
+C2'yi de 5 bölü 2 diye bulmuşuz.
+
+362
+00:28:11,964 --> 00:28:19,564
+Ve B1 tabanına göre koordinat vektörümüz neye eşittir o zaman?
+
+363
+00:28:20,044 --> 00:28:23,384
+1 bölü 2 5 bölü 2'ye eşittir.
+
+364
+00:28:23,704 --> 00:28:25,504
+Şimdi neyi göstereceğim ben?
+
+365
+00:28:25,984 --> 00:28:28,104
+Şunun doğru olduğunu göstereceğim.
+
+366
+00:28:28,104 --> 00:28:31,964
+B1'den B2'ye geçiş vektörünü bulmuştum zaten.
+
+367
+00:28:32,644 --> 00:28:33,224
+Bu neydi?
+
+368
+00:28:33,544 --> 00:28:35,544
+Şu bir önceki ne?
+
+369
+00:28:38,064 --> 00:28:39,544
+Şurada bulmuştuk bunu.
+
+370
+00:28:40,403 --> 00:28:40,584
+Tamam.
+
+371
+00:28:41,804 --> 00:28:42,464
+Ne yapıyoruz?
+
+372
+00:28:43,044 --> 00:28:43,423
+Şimdi
+
+373
+00:28:43,423 --> 00:28:48,604
+B1'den B2'ye geçiş vektörünü yazdım.
+
+374
+00:28:48,604 --> 00:28:53,064
+B1 tabanına göre koordinat vektörünü de şimdi buldum.
+
+375
+00:28:53,504 --> 00:28:57,524
+Çarparsak bunu bununla bunu karşılıklı çarpıp topluyoruz.
+
+376
+00:28:57,943 --> 00:28:58,624
+Bu da nedir?
+
+377
+00:28:59,784 --> 00:29:04,864
+2 çarpı 1 bölü 2'den 1 artı 0 1.
+
+378
+00:29:05,663 --> 00:29:09,044
+Sonra bununla bunu karşılıklı olarak çarpıp topluyoruz.
+
+379
+00:29:09,044 --> 00:29:11,824
+3 bölü 2 eksi 5 bölü 2.
+
+380
+00:29:12,284 --> 00:29:15,064
+O da eksi 2 bölü 2'den eksi 1'dir.
+
+381
+00:29:15,964 --> 00:29:16,644
+Bunu bulduk.
+
+382
+00:29:17,464 --> 00:29:17,784
+Peki
+
+383
+00:29:17,784 --> 00:29:21,384
+B2 tabanına göre koordinat vektörünü de
+
+384
+00:29:21,384 --> 00:29:25,004
+şurada bulmuştum ben.
+
+385
+00:29:25,464 --> 00:29:26,864
+1'e eksi 1'di.
+
+386
+00:29:26,864 --> 00:29:32,484
+Buradan da 1'e eksi 1 diye buldum.
+
+387
+00:29:32,784 --> 00:29:33,423
+Demek ki
+
+388
+00:29:33,423 --> 00:29:34,124
+nedir?
+
+389
+00:29:34,943 --> 00:29:37,844
+Bu sonuçlar birbirine eşit olduğundan
+
+390
+00:29:37,844 --> 00:29:41,324
+teoremin doğruluğunu göstermiş olduk.
+
+391
+00:29:41,724 --> 00:29:41,903
+Tamam.
+
+392
+00:29:42,923 --> 00:29:43,584
+Yani hocam
+
+393
+00:29:43,584 --> 00:29:45,344
+herhangi bir elemanını
+
+394
+00:29:45,344 --> 00:29:49,443
+şu geçiş maddesiyle çarptığımız zaman
+
+395
+00:29:49,443 --> 00:29:51,524
+diğer tabandaki
+
+396
+00:29:51,524 --> 00:29:54,324
+o elemanı ona karşılık gelen elemanı buluyoruz değil mi?
+
+397
+00:29:54,744 --> 00:29:56,443
+Diğer tabandaki vektörü buluyorsunuz.
+
+398
+00:29:56,864 --> 00:29:57,764
+Evet.
+
+399
+00:29:58,443 --> 00:29:58,644
+Tamam.
+
+400
+00:29:58,744 --> 00:30:00,104
+Şuna dikkat et.
+
+401
+00:30:01,183 --> 00:30:02,364
+Mesela şıklarda
+
+402
+00:30:02,364 --> 00:30:06,484
+burada B1 burada B2 vardır mesela.
+
+403
+00:30:06,963 --> 00:30:08,124
+Şunlar B1 olacak.
+
+404
+00:30:09,144 --> 00:30:10,344
+Şuna dikkat edin.
+
+405
+00:30:10,364 --> 00:30:11,564
+Tamam mı?
+
+406
+00:30:12,204 --> 00:30:13,304
+Bu B2 ise
+
+407
+00:30:13,304 --> 00:30:14,903
+şu B2 şurada olacak.
+
+408
+00:30:15,903 --> 00:30:17,644
+Şuna dikkat edin.
+
+409
+00:30:17,903 --> 00:30:18,784
+Şu formülde.
+
+410
+00:30:22,163 --> 00:30:22,923
+Genelde
+
+411
+00:30:22,923 --> 00:30:24,044
+gerçi bu
+
+412
+00:30:24,044 --> 00:30:25,963
+sizin önünüzde açık olacak
+
+413
+00:30:25,964 --> 00:30:28,204
+bunda bir sıkıntınız yok da
+
+414
+00:30:28,204 --> 00:30:30,124
+hani normal klasik sınavda
+
+415
+00:30:30,124 --> 00:30:31,284
+öğrenciler genelde
+
+416
+00:30:31,284 --> 00:30:31,584
+hani
+
+417
+00:30:31,584 --> 00:30:33,024
+bunda
+
+418
+00:30:33,024 --> 00:30:34,484
+şu formülde
+
+419
+00:30:34,484 --> 00:30:35,663
+hata yapıyorlar.
+
+420
+00:30:36,064 --> 00:30:37,344
+Ona dikkat edin.
+
+421
+00:30:37,344 --> 00:30:40,663
+şimdi başka bir soru.
+
+422
+00:30:40,663 --> 00:30:41,663
+B2
+
+423
+00:30:41,663 --> 00:30:46,544
+ve en boyutlu bir vektör uzayı
+
+424
+00:30:46,544 --> 00:30:46,984
+teorem
+
+425
+00:30:46,984 --> 00:30:47,864
+başka bir soru diyorum.
+
+426
+00:30:48,064 --> 00:30:48,824
+Başka bir teorem
+
+427
+00:30:48,824 --> 00:30:51,064
+en boyutlu bir vektör uzayı
+
+428
+00:30:51,064 --> 00:30:52,084
+S ve T'de
+
+429
+00:30:52,084 --> 00:30:54,124
+V'nin sıralı iki tabanı olsunlar.
+
+430
+00:30:55,044 --> 00:30:55,964
+T'den S'ye
+
+431
+00:30:55,964 --> 00:30:56,663
+geçiş matrisi
+
+432
+00:30:57,244 --> 00:30:57,824
+M
+
+433
+00:30:57,824 --> 00:30:58,864
+T's'nin
+
+434
+00:30:58,864 --> 00:30:59,724
+tersi
+
+435
+00:30:59,724 --> 00:31:00,584
+inversi
+
+436
+00:31:00,584 --> 00:31:01,403
+mevcuttur
+
+437
+00:31:01,403 --> 00:31:02,443
+ve bu
+
+438
+00:31:02,443 --> 00:31:03,524
+M
+
+439
+00:31:03,524 --> 00:31:04,464
+T's
+
+440
+00:31:04,464 --> 00:31:05,144
+üzeri
+
+441
+00:31:05,144 --> 00:31:05,464
+eksi
+
+442
+00:31:05,464 --> 00:31:05,844
+bir
+
+443
+00:31:05,844 --> 00:31:07,304
+eşittir
+
+444
+00:31:07,304 --> 00:31:07,964
+M
+
+445
+00:31:07,964 --> 00:31:09,024
+S't
+
+446
+00:31:09,024 --> 00:31:09,624
+dir.
+
+447
+00:31:10,923 --> 00:31:11,104
+Tamam.
+
+448
+00:31:12,364 --> 00:31:13,364
+T'den S'ye
+
+449
+00:31:13,364 --> 00:31:14,644
+geçiş matrisinin
+
+450
+00:31:14,644 --> 00:31:15,684
+inversi
+
+451
+00:31:15,684 --> 00:31:16,704
+neye eşitmiş?
+
+452
+00:31:17,704 --> 00:31:18,724
+S'den
+
+453
+00:31:18,724 --> 00:31:19,403
+T'ye
+
+454
+00:31:19,403 --> 00:31:20,724
+geçiş matrisine
+
+455
+00:31:20,724 --> 00:31:21,624
+eşitmiş.
+
+456
+00:31:21,624 --> 00:31:24,304
+Şimdi
+
+457
+00:31:24,304 --> 00:31:26,004
+bana diyor ki
+
+458
+00:31:26,004 --> 00:31:27,564
+aynı örnek için
+
+459
+00:31:27,564 --> 00:31:27,964
+diyor
+
+460
+00:31:29,364 --> 00:31:37,983
+B1'den B2'ye geçiş matrisinin inversinin B2'den B1'e geçiş matrisi olduğunu gösteriniz diyor.
+
+461
+00:31:38,784 --> 00:31:42,923
+Şimdi B2'den B1'e geçiş matrisini bulalım.
+
+462
+00:31:43,564 --> 00:31:46,223
+B2'den B1'e geçiş matrisini nasıl bulacağım?
+
+463
+00:31:46,344 --> 00:31:47,644
+Buraya B2'yi yazacağım.
+
+464
+00:31:47,824 --> 00:31:49,163
+Buraya da B1'e yazacağım.
+
+465
+00:31:49,463 --> 00:31:55,824
+Sonra burada B1'in olduğu yerde bilim matrisi bulduğum anda bu taraf ne olacaktır?
+
+466
+00:31:55,884 --> 00:31:58,324
+B2'den B1'e geçiş matrisi olacaktır.
+
+467
+00:31:58,324 --> 00:32:00,703
+Şimdi bu neydi?
+
+468
+00:32:01,024 --> 00:32:06,324
+S1, S2, T1, T2'yi yazdık.
+
+469
+00:32:06,824 --> 00:32:07,764
+Ne yapacağız?
+
+470
+00:32:07,963 --> 00:32:13,463
+Burada birim matrisi elde edecek şekilde elemanter satır işlemleri yapıyorum.
+
+471
+00:32:13,663 --> 00:32:14,943
+O zaman ne yapmam lazım?
+
+472
+00:32:15,144 --> 00:32:18,064
+Bunu eksi 1 ile çarpıp buraya ekliyorum.
+
+473
+00:32:19,004 --> 00:32:22,584
+0, eksi 1 ile çarptık, ekledik, eksi 2.
+
+474
+00:32:23,064 --> 00:32:25,804
+Eksi 1 ile çarptık, ekledik, eksi 3.
+
+475
+00:32:25,804 --> 00:32:28,244
+Eksi 1 ile çarptık, artı 1.
+
+476
+00:32:28,324 --> 00:32:29,524
+Ekledik, 2.
+
+477
+00:32:30,024 --> 00:32:31,483
+Şimdi ne olması lazım?
+
+478
+00:32:31,943 --> 00:32:34,884
+Bunun 1 olması lazım.
+
+479
+00:32:35,144 --> 00:32:37,723
+O zaman bu satırı ne yapıyorum?
+
+480
+00:32:37,884 --> 00:32:39,804
+Eksi 1 bölü 2 ile çarpıyorum.
+
+481
+00:32:40,244 --> 00:32:43,804
+Eksi 1 bölü 2 ile çarptığım zaman burası 1 oldu.
+
+482
+00:32:44,223 --> 00:32:45,624
+Burası 3 bölü 2 oldu.
+
+483
+00:32:45,864 --> 00:32:46,804
+Burası da 1 oldu.
+
+484
+00:32:47,203 --> 00:32:48,044
+Şimdi ne yapacağız?
+
+485
+00:32:48,203 --> 00:32:49,723
+Buranın 0 olması lazım.
+
+486
+00:32:50,124 --> 00:32:51,463
+O zaman ne yapmam lazım?
+
+487
+00:32:51,463 --> 00:32:56,203
+Bunu eksi 1 ile çarpıp buraya ekleyeyim ki burası 0 olsun.
+
+488
+00:32:56,584 --> 00:32:56,703
+Tamam.
+
+489
+00:32:57,824 --> 00:33:00,004
+Eksi 1 ile çarptık, ekledik 0.
+
+490
+00:33:00,544 --> 00:33:01,764
+Eksi 1 ile çarptık.
+
+491
+00:33:01,923 --> 00:33:03,084
+Eksi 3 bölü 2.
+
+492
+00:33:03,804 --> 00:33:04,703
+Artı 2.
+
+493
+00:33:05,044 --> 00:33:05,724
+O da nedir?
+
+494
+00:33:05,884 --> 00:33:06,703
+1 bölü 2.
+
+495
+00:33:08,084 --> 00:33:09,483
+Eksi 1 ile çarptık.
+
+496
+00:33:09,703 --> 00:33:10,384
+Eksi 1.
+
+497
+00:33:13,244 --> 00:33:14,423
+Eksi 1 oldu.
+
+498
+00:33:15,224 --> 00:33:15,824
+Öyle değil mi?
+
+499
+00:33:15,824 --> 00:33:18,064
+Bir dakika.
+
+500
+00:33:19,163 --> 00:33:21,004
+Şunu niye yanlış mı yazdım ben?
+
+501
+00:33:21,004 --> 00:33:38,344
+Bir dakika.
+
+502
+00:33:29,460 --> 00:33:30,880
+eksi 2 olur.
+
+503
+00:33:35,635 --> 00:33:37,955
+Şuradaki B2 mi yanlış acaba?
+
+504
+00:33:39,415 --> 00:33:40,255
+B2'deki
+
+505
+00:33:40,255 --> 00:33:43,556
+2'ye eksi 1
+
+506
+00:33:46,996 --> 00:33:48,996
+eksi 1'e 1
+
+507
+00:33:51,892 --> 00:33:53,451
+Hocam ikinci şey yanlış.
+
+508
+00:33:55,112 --> 00:33:56,491
+Eksi bir bölükiyle çarpmasınız.
+
+509
+00:33:56,652 --> 00:33:57,572
+Eksi bir olması lazım.
+
+510
+00:33:57,751 --> 00:33:59,912
+Şuranın eksi bir olması lazım değil mi?
+
+511
+00:34:00,352 --> 00:34:00,532
+Tamam.
+
+512
+00:34:02,751 --> 00:34:03,152
+Evet.
+
+513
+00:34:04,052 --> 00:34:04,292
+Tamam.
+
+514
+00:34:04,951 --> 00:34:06,352
+Şurası eksi bir olacak.
+
+515
+00:34:08,692 --> 00:34:10,672
+Buradan ne yapacağız bunu?
+
+516
+00:34:10,811 --> 00:34:13,992
+Eksi bir ile çarptığımızda artı bir oldu.
+
+517
+00:34:13,992 --> 00:34:16,851
+Eklediğim zaman şurası sıfır oldu.
+
+518
+00:34:17,572 --> 00:34:17,672
+Tamam.
+
+519
+00:34:18,152 --> 00:34:19,112
+Burası sıfır oldu.
+
+520
+00:34:19,112 --> 00:34:23,072
+Şimdi burada birim madresi bulduğum anda bu tarafta bulduğum nedir?
+
+521
+00:34:23,492 --> 00:34:25,791
+B2'den B1'e geçiş madresidir.
+
+522
+00:34:26,251 --> 00:34:26,432
+Tamam.
+
+523
+00:34:26,932 --> 00:34:27,952
+Şimdi ne diyor bana?
+
+524
+00:34:28,391 --> 00:34:32,492
+B2'den B1'e geçiş madresinin ne olduğunu göstereceğim.
+
+525
+00:34:32,612 --> 00:34:38,192
+B1'den B2'ye geçiş madresinin tersinin buna eşit olduğunu göstereceğim.
+
+526
+00:34:38,592 --> 00:34:40,012
+Peki ben neyi biliyorum?
+
+527
+00:34:40,291 --> 00:34:41,831
+Ben neyi biliyorum arkadaşlar?
+
+528
+00:34:42,871 --> 00:34:43,391
+A ile
+
+529
+00:34:48,307 --> 00:34:51,887
+Şuraya yazayım gene ben. Şuraya yazmayayım da.
+
+530
+00:34:56,275 --> 00:35:20,755
+A ile A üzeri eksi birin çarpımı I'ye eşitti. Hatta A üzeri eksi bir çarpı A eşittir I'di değil mi? Eğer ki A'nın tersi A üzeri eksi birse A ile sağdan ve soldan çarptığımda I'ye eşitti. Değil mi?
+
+531
+00:35:20,755 --> 00:35:24,435
+O zaman şimdi bana ne diyor bu soruda?
+
+532
+00:35:28,884 --> 00:35:48,324
+Ne diyor? Bunun tersinin bu olduğunu göster diyor. Eğer ki bunun tersi buysa, bununla bunun çarpımı neye eşit olacaktır? I'ya eşit olacaktır. Yani dediğim şu.
+
+533
+00:35:54,739 --> 00:35:55,299
+M
+
+534
+00:35:58,771 --> 00:36:16,991
+B1'den B2'ye geçiş matrisi ile M, B2'den B1'e geçiş matrisinin çarpımı neye eşit olacaktır? I'ye eşit olacaktır.
+
+535
+00:36:19,132 --> 00:36:27,072
+Tamam. Eğer ki bunun inversi buna eşitse, öyle değil mi?
+
+536
+00:36:27,072 --> 00:36:34,072
+O zaman B1'den B2'ye geçiş matrisini ben ne yapmıştım? Hesaplamıştım yukarıda.
+
+537
+00:36:37,092 --> 00:36:37,471
+Neydi?
+
+538
+00:36:40,112 --> 00:36:41,431
+Neydi o?
+
+539
+00:36:42,572 --> 00:36:44,072
+B2'den B1'e geçiş matrisi.
+
+540
+00:36:49,235 --> 00:36:52,935
+2'ye 3, 0'a eksi 1'de şu yukarıda hesapladık ya.
+
+541
+00:36:58,003 --> 00:36:59,804
+2'ye 3 sıfıra eksi 1.
+
+542
+00:37:01,903 --> 00:37:07,623
+B1'den B2'ye geçiş madresi.
+
+543
+00:37:09,403 --> 00:37:09,643
+Şu.
+
+544
+00:37:11,243 --> 00:37:21,123
+Bu M B1'den B2'ye geçiş madresi.
+
+545
+00:37:21,123 --> 00:37:22,824
+Bu ise nedir?
+
+546
+00:37:22,824 --> 00:37:30,344
+B1'den B1'e geçiş madresi.
+
+547
+00:37:31,723 --> 00:37:39,463
+Bunu çarptığım zaman eğer ki birim madresi buluyorsam o zaman ne demektir?
+
+548
+00:37:39,943 --> 00:37:42,083
+Bunun tersi bu.
+
+549
+00:37:43,503 --> 00:37:45,163
+Şimdi çarpıyoruz.
+
+550
+00:37:45,163 --> 00:37:49,284
+Bununla bunu karşılıklı olarak çarparsak bu nedir?
+
+551
+00:37:49,403 --> 00:37:49,923
+1'dir.
+
+552
+00:37:50,304 --> 00:37:52,063
+Artı 0 yani 1.
+
+553
+00:37:52,063 --> 00:37:55,264
+Bununla bunu karşılıklı olarak çarptık.
+
+554
+00:37:55,663 --> 00:37:56,463
+Nedir?
+
+555
+00:37:56,723 --> 00:37:59,344
+0, 0, 0'ı yazdık.
+
+556
+00:37:59,543 --> 00:38:01,983
+Bununla bunu karşılıklı olarak çarpıyoruz.
+
+557
+00:38:02,123 --> 00:38:02,824
+3 bölü 2.
+
+558
+00:38:03,344 --> 00:38:05,764
+Eksi 3 bölü 2 topladığımız zaman 0.
+
+559
+00:38:06,623 --> 00:38:10,864
+Bununla bunu karşılıklı olarak çarptığımda 0 artı 1.
+
+560
+00:38:10,864 --> 00:38:22,264
+B1'den B1'e geçiş madresi.
+
+561
+00:38:22,264 --> 00:38:35,723
+B1'den B1'den B1'den B1'e geçiş eşittir.
+
+562
+00:38:35,784 --> 00:38:36,804
+B1 yapmıştık ya.
+
+563
+00:38:36,804 --> 00:38:44,043
+Orada her iki tarafı da zaten tersiyle çarptığımız zaman geçiş madresinin bu cevap yeni çıkmıyor mu?
+
+564
+00:38:44,043 --> 00:38:45,623
+Nasıl anlamadım?
+
+565
+00:38:48,443 --> 00:38:57,264
+Yani iki tarafı da geçiş madresinin tersiyle çarptığımız zaman şey vardı ya B2 çarpı B2 eşittir.
+
+566
+00:38:58,443 --> 00:39:01,663
+B1'den B2'ye geçiş madresi çarpı B1.
+
+567
+00:39:01,663 --> 00:39:03,784
+Hangisini diyorsun?
+
+568
+00:39:03,963 --> 00:39:04,623
+Şunu mu diyorsun?
+
+569
+00:39:04,764 --> 00:39:05,243
+Anlamadım.
+
+570
+00:39:05,643 --> 00:39:07,083
+Üstekin demiyor mu?
+
+571
+00:39:07,423 --> 00:39:07,943
+Bunu mu diyor?
+
+572
+00:39:08,003 --> 00:39:09,183
+Biraz daha yukarıdaydı galiba.
+
+573
+00:39:10,203 --> 00:39:10,864
+Nereye dedi?
+
+574
+00:39:11,923 --> 00:39:12,943
+Biraz daha hocam.
+
+575
+00:39:14,183 --> 00:39:15,364
+O tam orası.
+
+576
+00:39:15,603 --> 00:39:16,063
+Evet şu.
+
+577
+00:39:16,503 --> 00:39:16,764
+Bu mu?
+
+578
+00:39:16,764 --> 00:39:17,103
+Evet bu.
+
+579
+00:39:17,824 --> 00:39:23,223
+İki tarafı da hocam geçiş madresinin tersiyle çarptığımız zaman zaten direkt çıkmıyor mu o şey?
+
+580
+00:39:24,143 --> 00:39:27,723
+İki tarafı da geçiş madresinin tersiyle çarptığın zaman?
+
+581
+00:39:27,723 --> 00:39:34,083
+Yani B1'den B2'ye geçişin soldan çarpalım hocam.
+
+582
+00:39:34,844 --> 00:39:40,623
+Soldan çarptığın zaman ama bunu B2 yani şunu diyorsun sen.
+
+583
+00:39:42,023 --> 00:39:46,344
+N B2 B1 mi yapayım diyorsun?
+
+584
+00:39:46,663 --> 00:39:48,264
+B2 B1 mi yapayım diyorsun?
+
+585
+00:39:48,483 --> 00:39:50,403
+Yok B1 B2 yapıyorum hocam.
+
+586
+00:39:50,804 --> 00:39:53,264
+Tersini tersiyle çarpalım.
+
+587
+00:39:54,203 --> 00:39:56,403
+Şimdi bununla bunu çarpamam.
+
+588
+00:39:57,723 --> 00:39:59,043
+Benim formülüm neydi?
+
+589
+00:40:00,423 --> 00:40:01,563
+Tersi diyelim hocam oraya.
+
+590
+00:40:03,543 --> 00:40:05,864
+Karşıdaki şeyi yok etmek için hocam.
+
+591
+00:40:06,804 --> 00:40:09,344
+Ama aynı taraftan çarpmak zorundasın.
+
+592
+00:40:09,884 --> 00:40:12,264
+Yani soldan çarpıyorsan soldan çarpacağım.
+
+593
+00:40:13,264 --> 00:40:19,643
+Hocam diyor ki soldan B1'den B2'ye geçiş şeyini alıp onun tersini alıp soldan o şekilde çarpalım.
+
+594
+00:40:19,723 --> 00:40:20,364
+Doğru anındaysa.
+
+595
+00:40:20,364 --> 00:40:24,364
+Ne yapayım?
+
+596
+00:40:24,364 --> 00:40:34,364
+Hocam B1'den B2'ye geçiş olanı alıp tersini alıp bu B1'den B2'nin geçin parantezi içinde tersini alıp soldan çarpmamızı istiyor.
+
+597
+00:40:35,063 --> 00:40:35,603
+Doğru anındaysa.
+
+598
+00:40:35,683 --> 00:40:37,324
+Bunu mu paranteze alayım?
+
+599
+00:40:38,643 --> 00:40:41,304
+Bunun tersini her iki tarafta çarpalım hocam.
+
+600
+00:40:41,563 --> 00:40:44,183
+Söylediğini yaz bakayım buraya.
+
+601
+00:40:44,183 --> 00:40:47,003
+Ben anlayamıyorum.
+
+602
+00:40:47,643 --> 00:40:50,183
+Ben yazayım iki dakikada doğru anındaysam şöyle hocam.
+
+603
+00:40:51,304 --> 00:40:51,963
+Yazıyorum hemen.
+
+604
+00:40:52,123 --> 00:40:52,384
+Tamam.
+
+605
+00:40:53,463 --> 00:40:54,563
+Şöyle sanırım.
+
+606
+00:40:54,743 --> 00:40:56,304
+Düzelt eğer yanlış yaparsam.
+
+607
+00:40:56,884 --> 00:40:57,523
+Bu beydunluğa.
+
+608
+00:40:57,940 --> 00:41:10,300
+Hocam, şu bir kere alayım. Şurada boşluk yok fazla ama şunu tersine alıp ve soldan çarpıyoruz ve aynı şekilde şundan bir tane daha şuraya koyuyoruz ki şu gitsin. Doğru mu anladım?
+
+609
+00:41:11,860 --> 00:41:12,220
+Evet.
+
+610
+00:41:14,519 --> 00:41:16,420
+Baştan buraya yazayım hocam temizce.
+
+611
+00:41:21,043 --> 00:41:22,523
+Pek de güzel yazmıyor ama.
+
+612
+00:41:26,183 --> 00:41:27,703
+Kağıtta da böyle hocam.
+
+613
+00:41:30,203 --> 00:41:32,523
+Neyse, Allah'tan test oluyorsunuz.
+
+614
+00:41:32,844 --> 00:41:34,884
+Aynen hocam, bir artı da var.
+
+615
+00:41:36,283 --> 00:41:38,143
+Ulaşmak zorunda kalmadım bu dönem.
+
+616
+00:41:40,603 --> 00:41:43,043
+Şurada da aynen çarpı hocam, çarpı.
+
+617
+00:41:43,043 --> 00:41:45,263
+Direkt burayı yazıyorum şimdi olduğu gibi.
+
+618
+00:41:46,463 --> 00:41:47,023
+Şöyle.
+
+619
+00:41:51,043 --> 00:41:55,003
+O belirli olarak yanlış yazıyorsam, o ya bu arada tamamen aldığımı yazıyorum şu an.
+
+620
+00:41:55,023 --> 00:41:58,304
+Bu VB1'e eşit olacak o zaman bu.
+
+621
+00:41:58,423 --> 00:41:59,063
+VB1.
+
+622
+00:41:59,364 --> 00:42:01,523
+Şöyle götürelim diyor doğru anındaysam.
+
+623
+00:42:02,344 --> 00:42:03,123
+Evet, şimdi devam et.
+
+624
+00:42:03,123 --> 00:42:03,663
+Buradan hocam,
+
+625
+00:42:04,864 --> 00:42:07,523
+B2, yani B2'den B1'e geçişin,
+
+626
+00:42:07,864 --> 00:42:10,983
+B1'den B2'ye geçinin tersi olduğunu buradan da görebiliyoruz.
+
+627
+00:42:11,183 --> 00:42:11,463
+Demek için.
+
+628
+00:42:11,463 --> 00:42:11,623
+Şimdi.
+
+629
+00:42:11,623 --> 00:42:11,723
+Tamam.
+
+630
+00:42:18,003 --> 00:42:25,884
+Yani ben şunu anladım senin dediğinden. Şimdi dur seninkini sileyim ben o zaman.
+
+631
+00:42:26,443 --> 00:42:29,983
+Ben sileyim mi hocam? Başka bir şey. Sildim şu an.
+
+632
+00:42:29,983 --> 00:42:39,603
+Şunu diyorsun. M diyorsun. B1'den B2'ye'nin tersi. Öyle mi?
+
+633
+00:42:39,603 --> 00:43:09,583
+Evet.
+
+634
+00:43:09,603 --> 00:43:30,483
+Bu I'ye eşit. Tamam. O zaman VB1 neye eşit olacaktır? M B1'den B2'ye'nin tersi ile BB2'nin çarpımına.
+
+635
+00:43:30,483 --> 00:43:36,063
+Yani bununla böyle bir şey yapmanın amacı ne? Onu pek anlamadım.
+
+636
+00:43:36,083 --> 00:43:47,623
+İşte burada M B1'den B2'nin tersi M B2'den B1'e eşit olduğunu buradan daha net görebiliriz.
+
+637
+00:43:47,963 --> 00:43:53,304
+Ama buradan bu onu göstermiyor. Bu onu göstermiyor.
+
+638
+00:43:53,304 --> 00:43:58,304
+Bu onu da bu onu da bu şekilde.
+
+639
+00:43:58,304 --> 00:43:58,903
+Bu şekilde bu şekilde.
+
+640
+00:44:03,507 --> 00:44:12,207
+Hocam şu aşağıdaki VB2 ilk başta yazdığımız hani demin gösterdiğim şurada VB2 yazan yere B1 yaptığınız zaman bu çıkmıyor mu hocam?
+
+641
+00:44:13,687 --> 00:44:29,107
+Bak şimdi burada bunun bu olduğunu bilmiyoruz ki hani burada ben I diye yazdım ama burada neyi gösterdim ben? Şuradaki örnekte neyi gösterdim? Bunun buna eşit olduğunu gösterdim.
+
+642
+00:44:32,532 --> 00:44:42,992
+Anladık mı? Yani ben B1'den B2'ye geçiş matrisinin tersinin B2'den B1'e geçiş matrisi olduğunu gösterdim.
+
+643
+00:44:43,251 --> 00:44:53,632
+Bunu da nasıl gösteriyorum? Şimdi B2'den B1'e geçiş matrisini buldum ya, eğer ki bu bunun tersiyse çarpımı I'ya eşittirden gösterdim.
+
+644
+00:44:54,731 --> 00:44:59,852
+Anladık mı? Eğer ki I'yı bulmuyorsam o zaman değil diyecektim.
+
+645
+00:44:59,852 --> 00:45:15,711
+Yani sen burada bunun buna eşit olduğunu bilerek, bunun tersi budur, o da I'ya eşittir bilerek bunu şey yapıyorsun anladın mı?
+
+646
+00:45:15,872 --> 00:45:22,992
+Yani sen burada bunu kullanıyorsun. Anladın mı demek istediğimi?
+
+647
+00:45:22,992 --> 00:45:24,231
+Anladım hocam.
+
+648
+00:45:24,231 --> 00:45:27,231
+Sen bunun varlığını kabul ediyorsun.
+
+649
+00:45:27,711 --> 00:45:36,432
+Oysa ki soru da bana diyor ki, soru da bana diyor ki, bunun buna eşit olduğunu göster diyor.
+
+650
+00:45:38,392 --> 00:45:41,192
+Bunun buna eşit olduğunu göstermek ne demek?
+
+651
+00:45:41,552 --> 00:45:42,992
+Yani bunu bilmiyorsun.
+
+652
+00:45:43,292 --> 00:45:45,692
+Soru işareti burası.
+
+653
+00:45:45,692 --> 00:45:56,792
+Sen burada, buradaki yaptığın işte, bunun buna eşit olduğu için I'ı dedin.
+
+654
+00:45:57,632 --> 00:45:58,492
+Anladın?
+
+655
+00:45:59,092 --> 00:46:01,172
+Ama ben I'ı'ya eşit olduğunu bilmiyorum.
+
+656
+00:46:01,172 --> 00:46:01,292
+Soru.
+
+657
+00:46:02,052 --> 00:46:06,572
+Hani ispatta ne yaparız?
+
+658
+00:46:07,052 --> 00:46:12,332
+İlk önce, hani hep o ilk birinci bölümde yaptığım ispatlarda ne yaptık?
+
+659
+00:46:12,672 --> 00:46:16,292
+Buradan başlayıp buraya varmıştık hatırlarsanız.
+
+660
+00:46:16,832 --> 00:46:19,771
+Şimdi burada da ben bunun buna eşit mi bilmiyorum.
+
+661
+00:46:19,952 --> 00:46:20,572
+Ne yaptım?
+
+662
+00:46:21,512 --> 00:46:22,312
+Bunu buldum.
+
+663
+00:46:22,312 --> 00:46:31,412
+Sonra diyorum ki, eğer ki bununla bunun çarpımı I'ya eşit olursa, yani gene eşit mi bilmiyorum.
+
+664
+00:46:31,892 --> 00:46:39,952
+I'ya eşit olursa, o zaman demektir ki bunun tersi budur.
+
+665
+00:46:44,500 --> 00:46:45,440
+Anladık mı?
+
+666
+00:46:47,539 --> 00:46:48,539
+Anladım hocam.
+
+667
+00:46:48,980 --> 00:46:49,619
+Tamam mı?
+
+668
+00:46:49,619 --> 00:46:54,039
+Benim kafam karıştır. Böyle anlatınca o az önceki arkadaşın yazdırdığı yere bir daha gelebilir misiniz hocam?
+
+669
+00:46:54,659 --> 00:46:55,159
+Geleyim.
+
+670
+00:46:57,820 --> 00:46:58,500
+Evet.
+
+671
+00:46:58,500 --> 00:47:04,900
+Hocam şimdi şöyle. Normalde bir maddesin tersinin çarpımıyla maddesin normal halinin çarpımı zaten ı değil mi?
+
+672
+00:47:05,059 --> 00:47:07,260
+Orada ne alaka onu anlamadım.
+
+673
+00:47:07,260 --> 00:47:20,840
+Şimdi bak bunun diyoruz ya bak şimdi buradaki yani iki şey birbirinden farklı şunu demek istiyorum.
+
+674
+00:47:20,840 --> 00:47:23,960
+Bu özelliği kullanmadık ki hocam biz orada. Böyle bir özellik kullanmadık.
+
+675
+00:47:24,099 --> 00:47:24,440
+Hayır.
+
+676
+00:47:27,019 --> 00:47:36,119
+Benim burada söylediğim bunun tersinin B2'den B1'e geçiş maddesi olduğunu göster. Soru bu. Onu demek istiyorum.
+
+677
+00:47:36,119 --> 00:47:37,920
+Yukarıda bu özelliği kullanmadık ki biz hocam ama.
+
+678
+00:47:40,440 --> 00:47:42,820
+Yukarıda normal bir maddesin tersiyle maddesin kendisini çarpım.
+
+679
+00:47:42,820 --> 00:47:45,159
+Tamam. Ama burada onu gösterdim mi?
+
+680
+00:47:45,360 --> 00:47:48,400
+Şey diyeceğim hocam burada da. Aşağıda teoram var değil mi hocam?
+
+681
+00:47:48,780 --> 00:47:53,860
+V B2 eşittir. B1'den B2 maddesi çarpı B1 şeklinde aşağıda bir...
+
+682
+00:47:53,860 --> 00:47:57,239
+Şimdi bak bir beni dinle. Bir beni dinle.
+
+683
+00:47:57,840 --> 00:48:03,420
+Burada B1'den B2'ye geçiş maddesinin tersi nerede? Buldum mu ben onu?
+
+684
+00:48:03,420 --> 00:48:07,539
+İşte şuradan diyorum hocam. Şu aşağıda var ya hemen örnek birin şurada.
+
+685
+00:48:07,780 --> 00:48:09,019
+Görüyorsunuz zaten hemen karşınızda.
+
+686
+00:48:09,139 --> 00:48:09,340
+Evet.
+
+687
+00:48:09,480 --> 00:48:14,820
+Orada işte B2'ye ne B1 yazsak, B1'li halini eşitlesek zaten orası çıkmıyor mu?
+
+688
+00:48:15,260 --> 00:48:20,179
+Hani yukarıdaki şeyde sadece B1'den B2'nin tersi yeri boş kalıyor.
+
+689
+00:48:20,599 --> 00:48:24,280
+Orası da B2'den B1 olduğu için bulunmuyor mu yani?
+
+690
+00:48:24,280 --> 00:48:29,760
+Şimdi buraya B1 dediğin zaman buraya B1 diyeyim diyorsun.
+
+691
+00:48:30,340 --> 00:48:36,500
+Evet hocam. Ondan sonra B1 olunca B2'den B1'e çarpı B2 olacak.
+
+692
+00:48:37,139 --> 00:48:41,159
+Yukarıda gördüğümüz B1 yerine de sağ tarafta kalan eşitliği yazacağız.
+
+693
+00:48:41,619 --> 00:48:44,139
+Burada B2'ler birbirini götürmek zorunda çünkü aynı taraftalar.
+
+694
+00:48:44,280 --> 00:48:46,840
+Tersiyle çarparız veya da maddesleri.
+
+695
+00:48:46,840 --> 00:48:51,539
+Sonrasında sadece zaten B1'den B2'nin tersi eşittir.
+
+696
+00:48:51,719 --> 00:48:53,340
+B2'den B1'e diye bir şey kalıyor zaten.
+
+697
+00:48:55,920 --> 00:49:00,199
+Hani bu eşitlikten dolayı bu buna eşittir diyeyim diyorsun.
+
+698
+00:49:00,619 --> 00:49:02,340
+Evet öyle olmuyor mu hocam yani ben onu anlamadım.
+
+699
+00:49:02,820 --> 00:49:07,099
+Yani tamam öyle diyebilirsin ama niye bu kadar böyle uzatıyorsunuz?
+
+700
+00:49:07,099 --> 00:49:10,260
+Yani niye zorlaştırıyorsunuz? Ben onu anlamadım.
+
+701
+00:49:11,179 --> 00:49:14,280
+Yok hocam ben normal denilemiyor sandım da ondan dolayı kafam karıştı.
+
+702
+00:49:14,280 --> 00:49:17,860
+Yok yani hani benim söylediğim şu.
+
+703
+00:49:18,719 --> 00:49:22,519
+Şimdi burada hani bizim bu yaptığımız örnekte dedim.
+
+704
+00:49:23,739 --> 00:49:25,039
+Ben neyi gösteriyorum?
+
+705
+00:49:25,880 --> 00:49:30,519
+Şurada gösterdiğim bunun tersinin buna eşit olduğunu gösteriyorum.
+
+706
+00:49:30,519 --> 00:49:37,079
+Burada hani bununla çok alakalı bir şey değil yani şurada yazılanı.
+
+707
+00:49:37,760 --> 00:49:38,659
+Onu demek istiyorum.
+
+708
+00:49:39,659 --> 00:49:40,920
+Anladım hocam teşekkürler.
+
+709
+00:49:40,920 --> 00:49:45,199
+Tamam mı? Yani buradaki yazdığımızla şunun alakası yok.
+
+710
+00:49:46,840 --> 00:49:47,840
+Yani soru farklı.
+
+711
+00:49:49,599 --> 00:49:58,639
+Yoksa tamam dersin ki hani bu böyleyken böyle de işte şu teoremden dolayı da B2 eşittir.
+
+712
+00:49:58,639 --> 00:50:03,559
+Ne olmak zorunda? B1, B2 işte B1 ya da buraya B1 diyeceksin.
+
+713
+00:50:03,720 --> 00:50:07,159
+B1, B2, B1 şurası da B2 olacak.
+
+714
+00:50:07,659 --> 00:50:12,619
+Bu ikisinin eşitliğini kullanarak bu o zaman buna eşittir dersin.
+
+715
+00:50:13,300 --> 00:50:14,940
+Hani o eşitliği kullanırsın.
+
+716
+00:50:15,480 --> 00:50:18,679
+Ama yani bunun şeysi şuna eşittir.
+
+717
+00:50:18,920 --> 00:50:21,179
+Tersi buna eşittir diye söylersin.
+
+718
+00:50:21,260 --> 00:50:24,720
+Tamam ama hani niye böyle zorlaştıralım?
+
+719
+00:50:24,840 --> 00:50:26,539
+Onu demek istiyorum bu işi.
+
+720
+00:50:26,539 --> 00:50:28,500
+Anlarım hocam teşekkür ederim.
+
+721
+00:50:28,559 --> 00:50:28,719
+Tamam.
+
+722
+00:50:31,559 --> 00:50:31,960
+Peki.
+
+723
+00:50:33,739 --> 00:50:34,380
+Evet.
+
+724
+00:50:35,440 --> 00:50:36,980
+Şimdi bunu böyle söyledik.
+
+725
+00:50:38,639 --> 00:50:39,539
+Şimdi başka bir...
+
+726
+00:50:40,900 --> 00:50:42,099
+Şunu açmamışım ben.
+
+727
+00:51:07,731 --> 00:51:09,092
+Şimdi örneklere bakalım.
+
+728
+00:51:20,916 --> 00:51:35,296
+Şimdi P2 polinomlar uzayının T sıralı bazından S sıralı bazına geçiş maddesi şu olsun.
+
+729
+00:51:36,476 --> 00:51:38,456
+T sıralı bazını bulunuz.
+
+730
+00:51:38,456 --> 00:51:54,196
+Şimdi P2 polinomlar uzayının dediğine göre nedir? Derecesi 2 olan bütün vektörleri içeren bir uzaydı değil mi polinomlar uzayı?
+
+731
+00:51:54,696 --> 00:52:07,436
+T sıralı bazından S sıralı bazına yani T'den S'ye geçiş maddesini P ile göstermiş.
+
+732
+00:52:07,436 --> 00:52:16,816
+Bak bana burada ne yapıyor? Açık vermesin diye T'den S'ye demiyor da buna P diyor.
+
+733
+00:52:17,716 --> 00:52:22,736
+Tamam yani bu P dediği T'den S'ye geçiş maddesi.
+
+734
+00:52:23,216 --> 00:52:26,736
+S'deki vektörlerim de V1, V3 olsun.
+
+735
+00:52:28,836 --> 00:52:33,256
+Peki olduğuna göre T sıralı bazını bulunuz.
+
+736
+00:52:33,256 --> 00:52:37,655
+Şimdi burada sondan başa doğru gidiyorum bak.
+
+737
+00:52:38,936 --> 00:52:42,456
+T'den S'ye geçiş maddesini nasıl buluyordum?
+
+738
+00:52:42,876 --> 00:52:45,676
+Buraya T'yi yazıyordum. Bu tarafa S'yi yazıyordum.
+
+739
+00:52:45,876 --> 00:52:47,996
+Elemanter satır işlemleri uyguluyordum.
+
+740
+00:52:48,196 --> 00:52:49,296
+Burada I'yı buluyordum.
+
+741
+00:52:49,556 --> 00:52:55,416
+I'yı bulduğum anda bu tarafta bulduğum T'den S'ye geçiş maddesiydi.
+
+742
+00:52:55,416 --> 00:52:58,796
+Şimdi ben bu tarafı biliyorum.
+
+743
+00:52:59,115 --> 00:53:00,216
+Bir de neyi biliyorum?
+
+744
+00:53:00,696 --> 00:53:01,635
+S'yi biliyorum.
+
+745
+00:53:03,056 --> 00:53:11,176
+Şimdi buradan başlayacağım ve burada S'yi elde edecek şekilde işlemlerimi yapacağım.
+
+746
+00:53:11,596 --> 00:53:15,556
+S'yi bulduğum anda bu tarafta bulduğum ne olacaktır?
+
+747
+00:53:15,896 --> 00:53:16,916
+T olacaktır.
+
+748
+00:53:16,916 --> 00:53:17,696
+Tamam.
+
+749
+00:53:18,416 --> 00:53:21,556
+Şimdi S o zaman nedir?
+
+750
+00:53:22,796 --> 00:53:25,236
+Polinomlar uzayı ya bu da.
+
+751
+00:53:25,996 --> 00:53:27,615
+Bunun kat sayıları nedir?
+
+752
+00:53:27,856 --> 00:53:29,896
+1
+
+753
+00:53:29,896 --> 00:53:32,816
+Sabit yok 0
+
+754
+00:53:32,816 --> 00:53:33,896
+0
+
+755
+00:53:33,896 --> 00:53:35,876
+1
+
+756
+00:53:35,876 --> 00:53:37,516
+Eksi 2
+
+757
+00:53:37,516 --> 00:53:39,736
+Sonra 0
+
+758
+00:53:39,736 --> 00:53:40,655
+1
+
+759
+00:53:40,655 --> 00:53:41,376
+0
+
+760
+00:53:41,376 --> 00:53:48,856
+Şurada yani bu tarafta S'yi bulacak şekilde işlem yapacağım.
+
+761
+00:53:49,496 --> 00:53:50,796
+S'yi de buraya yazdım.
+
+762
+00:53:51,296 --> 00:53:51,476
+Tamam.
+
+763
+00:53:54,135 --> 00:53:55,635
+Şimdi arkadaşlar
+
+764
+00:53:55,635 --> 00:53:56,696
+1
+
+765
+00:53:56,696 --> 00:53:57,976
+0
+
+766
+00:53:57,976 --> 00:53:58,356
+1
+
+767
+00:53:58,356 --> 00:53:59,456
+0
+
+768
+00:53:59,456 --> 00:53:59,876
+1
+
+769
+00:53:59,876 --> 00:54:28,876
+0
+
+770
+00:54:03,572 --> 00:54:06,612
+T'den S'ye geçiş maddesimi de buraya yazdım.
+
+771
+00:54:07,172 --> 00:54:07,412
+Tamam.
+
+772
+00:54:08,052 --> 00:54:14,332
+Şimdi şunu elde edecek şekilde bu tarafta şunu elde edecek şekilde işlem yapacağım.
+
+773
+00:54:14,791 --> 00:54:15,652
+Şimdi bakıyorum.
+
+774
+00:54:16,052 --> 00:54:17,731
+Birinci satırım 1, 0, 0.
+
+775
+00:54:17,932 --> 00:54:18,152
+Tamam.
+
+776
+00:54:18,332 --> 00:54:19,231
+Bu da böyle.
+
+777
+00:54:20,072 --> 00:54:21,092
+Sonra buraya baktım.
+
+778
+00:54:21,332 --> 00:54:23,231
+İkinci satır komple 1 olacak.
+
+779
+00:54:23,932 --> 00:54:25,472
+Üçüncü satırı da eksi 1.
+
+780
+00:54:25,632 --> 00:54:26,872
+O zaman eksi 2.
+
+781
+00:54:26,872 --> 00:54:32,952
+O zaman diyorum ki şu zaten hazır burada var.
+
+782
+00:54:32,952 --> 00:54:35,612
+Bunu ikisini yer değiştireyim.
+
+783
+00:54:36,332 --> 00:54:38,112
+Sonra eksi 2 ile çarparım.
+
+784
+00:54:38,332 --> 00:54:38,751
+Tamam mı?
+
+785
+00:54:38,912 --> 00:54:39,492
+Bunu hazır.
+
+786
+00:54:40,251 --> 00:54:42,052
+Burada varken bunu aşağıya atayım.
+
+787
+00:54:42,392 --> 00:54:42,612
+Peki.
+
+788
+00:54:43,132 --> 00:54:44,852
+İki satırı yer değiştiriyorum o zaman.
+
+789
+00:54:44,972 --> 00:54:46,532
+İki satırı yer değiştirdik.
+
+790
+00:54:47,052 --> 00:54:48,012
+Sonra ne yapacağım?
+
+791
+00:54:48,472 --> 00:54:50,892
+Şuranın 1, 1, 1 olması lazım.
+
+792
+00:54:51,052 --> 00:54:52,032
+Bunun için ne yapayım?
+
+793
+00:54:52,412 --> 00:54:55,592
+Bu birinci satırı 1 ile çarpıp aşağıya ekleyeceğim.
+
+794
+00:54:55,592 --> 00:54:58,572
+Eplersem 1, 0, 1.
+
+795
+00:54:59,672 --> 00:55:01,412
+1 ile çarptık 5.
+
+796
+00:55:01,412 --> 00:55:03,432
+1 ile çarptık eksi 2.
+
+797
+00:55:03,731 --> 00:55:05,291
+1 ile çarptık 7.
+
+798
+00:55:06,112 --> 00:55:06,872
+Şunu bulduk.
+
+799
+00:55:07,472 --> 00:55:08,612
+Sonra ne yapıyoruz?
+
+800
+00:55:10,352 --> 00:55:10,632
+Şimdi.
+
+801
+00:55:12,512 --> 00:55:14,791
+Şunu yaptıktan sonra şunu bulduk.
+
+802
+00:55:15,172 --> 00:55:16,672
+Şuranın ne olması lazım?
+
+803
+00:55:16,811 --> 00:55:17,711
+1 olması lazım.
+
+804
+00:55:17,932 --> 00:55:20,811
+O zaman bunu 1 ile çarpıp buraya ekleyeceğim.
+
+805
+00:55:21,012 --> 00:55:22,771
+Burası 1 oldu.
+
+806
+00:55:22,972 --> 00:55:24,731
+Bunlar 1, 1, 1'i bulduk.
+
+807
+00:55:24,731 --> 00:55:26,632
+1 ile çarptık 6.
+
+808
+00:55:27,932 --> 00:55:29,271
+Sonra 3.
+
+809
+00:55:30,012 --> 00:55:32,832
+1 ile çarptık ekledik 11.
+
+810
+00:55:33,731 --> 00:55:33,952
+Tamam.
+
+811
+00:55:34,892 --> 00:55:36,072
+Şimdi bunu da bulduk.
+
+812
+00:55:37,132 --> 00:55:37,731
+Bakıyorum.
+
+813
+00:55:37,972 --> 00:55:39,271
+İki satırı buldum.
+
+814
+00:55:39,832 --> 00:55:41,092
+En son ne kaldı?
+
+815
+00:55:41,311 --> 00:55:42,832
+Şuranın eksi 2 yapılması.
+
+816
+00:55:43,251 --> 00:55:46,072
+O zaman üçüncü satırı eksi 2 ile çarpayım.
+
+817
+00:55:46,211 --> 00:55:47,392
+Eksi 2 ile çarptık.
+
+818
+00:55:47,492 --> 00:55:48,392
+Burası eksi 2.
+
+819
+00:55:48,872 --> 00:55:51,652
+Eksi 2, eksi 10, eksi 8.
+
+820
+00:55:51,652 --> 00:55:53,632
+Burada s'yi buldum.
+
+821
+00:55:53,751 --> 00:55:56,291
+S'yi bulduğum anda bu tarafta bulduğum nedir?
+
+822
+00:55:56,532 --> 00:55:57,032
+T'dir.
+
+823
+00:55:58,072 --> 00:55:59,892
+Peki t'de neydi o zaman?
+
+824
+00:56:00,291 --> 00:56:01,672
+T'de polinomdu.
+
+825
+00:56:02,251 --> 00:56:02,791
+Öyle değil mi?
+
+826
+00:56:02,892 --> 00:56:03,892
+T'de polinomdu.
+
+827
+00:56:04,372 --> 00:56:06,072
+O zaman ne yazıyoruz?
+
+828
+00:56:06,692 --> 00:56:12,912
+2 x kare artı 6 x eksi 2.
+
+829
+00:56:13,711 --> 00:56:15,372
+Sonra bu sıfır zaten.
+
+830
+00:56:15,791 --> 00:56:18,852
+3 x eksi 10.
+
+831
+00:56:18,852 --> 00:56:22,912
+Sonra üçüncü vektörüm.
+
+832
+00:56:23,452 --> 00:56:26,832
+x kare artı 11 x eksi 8.
+
+833
+00:56:28,032 --> 00:56:28,271
+Tamam.
+
+834
+00:56:28,692 --> 00:56:29,311
+Anladık mı?
+
+835
+00:56:31,311 --> 00:56:33,392
+Hocam ben bir yeri kaçırdım da.
+
+836
+00:56:34,311 --> 00:56:37,932
+Yukarıda en başta açık vermemiş demiştiniz.
+
+837
+00:56:38,072 --> 00:56:39,392
+P yazmış demiştiniz.
+
+838
+00:56:39,852 --> 00:56:41,472
+Şunu söylemiş bak.
+
+839
+00:56:41,832 --> 00:56:43,132
+T sıralı bazından,
+
+840
+00:56:43,791 --> 00:56:46,311
+S sıralı bazından geçiş matrisi.
+
+841
+00:56:46,652 --> 00:56:47,271
+P demiş.
+
+842
+00:56:47,271 --> 00:56:50,012
+Yani şunu söylememiş.
+
+843
+00:56:52,492 --> 00:56:57,452
+Yani M, T, S demiyor da sana P diye söylüyor.
+
+844
+00:56:59,452 --> 00:57:00,452
+Anladın mı?
+
+845
+00:57:01,372 --> 00:57:03,192
+Yani onun neden öyle demiş?
+
+846
+00:57:04,251 --> 00:57:06,251
+Yani P harfini kullanmış.
+
+847
+00:57:06,652 --> 00:57:08,872
+Sen formülleri hatırlama diye.
+
+848
+00:57:08,872 --> 00:57:10,552
+Anladım.
+
+849
+00:57:10,972 --> 00:57:11,512
+Tamam mı?
+
+850
+00:57:12,052 --> 00:57:13,612
+Formülleri hatırlama diye.
+
+851
+00:57:13,612 --> 00:57:14,612
+Anladın mı?
+
+852
+00:57:14,612 --> 00:57:32,152
+Evet.
+
+853
+00:57:18,099 --> 00:57:25,579
+Şimdi mesela burada diyor ki B şıkkında bu sınav sorusu bu.
+
+854
+00:57:28,500 --> 00:57:35,839
+DT321 ise P matrisinden yararlanarak DS değerini hesaplayınız diyor.
+
+855
+00:57:35,940 --> 00:57:42,039
+Bak P diyor burada sana eğer ki şu MTS'de sen formülü hatırlayacaksın.
+
+856
+00:57:42,039 --> 00:57:47,199
+Ama P dediği için şimdi bu sefer burada takılıyorsun.
+
+857
+00:57:47,199 --> 00:57:55,019
+Ne? DS halbuki neydi? MTSDT formülüm buydu.
+
+858
+00:57:55,860 --> 00:57:58,539
+Öyle değil mi? P buna eşit.
+
+859
+00:57:59,400 --> 00:58:03,519
+Buradan şu P matrisini yazdık.
+
+860
+00:58:04,039 --> 00:58:07,099
+DT'yi de zaten bana vermiş. Ne yapıyoruz?
+
+861
+00:58:07,219 --> 00:58:10,900
+Bunu çarptığım zaman DS'yi buluyorum.
+
+862
+00:58:10,900 --> 00:58:21,519
+Yani S tabanına göre koordinat vektörünü buluyorum.
+
+863
+00:58:22,519 --> 00:58:22,940
+Tamam?
+
+864
+00:58:22,940 --> 00:58:26,779
+Buradan şunu çarptığım zaman ne olacaktır?
+
+865
+00:58:26,920 --> 00:58:29,920
+6, 0, 1 daha 7.
+
+866
+00:58:30,599 --> 00:58:39,699
+Sonra 3, 10, 14, 3 daha 17.
+
+867
+00:58:39,699 --> 00:58:48,119
+9, eksi 4, artı 6, o da nedir? 11 diye bulduk.
+
+868
+00:58:48,519 --> 00:58:48,699
+Tamam?
+
+869
+00:58:50,699 --> 00:58:51,980
+Şimdi başka bir soru.
+
+870
+00:58:51,980 --> 00:59:08,139
+V1, V2 şu olmak üzere M2 çarpı 1 sıralı tabanı sıralı tabanları yani iki satır bir tane sütünü olan sıralı tabanları S eşittir.
+
+871
+00:59:08,139 --> 00:59:11,340
+V1, V2 ve T eşittir.
+
+872
+00:59:11,699 --> 00:59:13,840
+W1, W2 olsun.
+
+873
+00:59:14,659 --> 00:59:21,059
+S'den T'ye geçiş matrisi M, ST şu şekilde verilmiş.
+
+874
+00:59:21,779 --> 00:59:24,920
+Olduğuna göre T tabanını belirleyiniz.
+
+875
+00:59:26,539 --> 00:59:29,619
+Şimdi bana gene neyi vermiş?
+
+876
+00:59:30,039 --> 00:59:33,059
+S'den T'ye geçiş matrisini vermiş.
+
+877
+00:59:33,519 --> 00:59:34,000
+Tamam mı?
+
+878
+00:59:34,000 --> 00:59:38,539
+Peki ben ne yapıyordum?
+
+879
+00:59:38,980 --> 00:59:42,579
+S'den S'yi buraya yazıyordum.
+
+880
+00:59:42,739 --> 00:59:43,980
+T'yi buraya yazıyordum.
+
+881
+00:59:44,619 --> 00:59:45,900
+İşlemlerimi yapıyordum.
+
+882
+00:59:46,659 --> 00:59:51,359
+Burada birimi bulduğum anda bu tarafta bulduğum S'den T'ye geçiş matrisiydi.
+
+883
+00:59:51,359 --> 00:59:52,719
+O zaman gene ne yapacağız?
+
+884
+00:59:52,859 --> 00:59:53,880
+Tersten gidiyoruz.
+
+885
+00:59:54,639 --> 00:59:55,639
+Birimi yazdık.
+
+886
+00:59:56,019 --> 00:59:59,119
+Buraya S'den T'ye geçiş matrisini yazdık.
+
+887
+01:00:00,000 --> 01:00:02,599
+Elemanter satır işlemleri uygulayacağım.
+
+888
+01:00:02,599 --> 01:00:04,980
+Ne yapmaya çalışacağım arkadaşlar?
+
+889
+01:00:05,659 --> 01:00:08,039
+Şimdi S'yi burada vermiş zaten.
+
+890
+01:00:08,480 --> 01:00:09,539
+V1, V2 diye.
+
+891
+01:00:10,059 --> 01:00:10,619
+O da neydi?
+
+892
+01:00:10,739 --> 01:00:12,139
+1, 2, 0, 1.
+
+893
+01:00:12,679 --> 01:00:16,099
+S'yi bulduğum anda şu tarafta bulduğum ne olacaktır?
+
+894
+01:00:16,579 --> 01:00:17,599
+T olacaktır.
+
+895
+01:00:17,859 --> 01:00:18,279
+Tamam mı?
+
+896
+01:00:18,279 --> 01:00:19,299
+T'yi soruyor bana.
+
+897
+01:00:19,960 --> 01:00:21,719
+O zaman başlayalım işlemlere.
+
+898
+01:00:22,279 --> 01:00:22,880
+Ne yapacağım?
+
+899
+01:00:23,179 --> 01:00:29,900
+S'yi elde edecek şekilde, yani şurada, burada, S'yi elde edecek şekilde işlem yapacağım.
+
+900
+01:00:29,900 --> 01:00:33,400
+O zaman bu nedir?
+
+901
+01:00:34,179 --> 01:00:37,319
+1, 0 olması gerekiyor.
+
+902
+01:00:38,259 --> 01:00:39,719
+Ne yaparım ben?
+
+903
+01:00:40,019 --> 01:00:45,059
+Eksi 1 ile çarpıp yukarıya eklediğim zaman burada 1 olacak, burada 0 olacaktır zaten.
+
+904
+01:00:45,900 --> 01:00:47,340
+O zaman ne yapıyoruz?
+
+905
+01:00:47,500 --> 01:00:50,980
+İkinci satırı eksi 1 ile çarpıp 1'e ekliyorum.
+
+906
+01:00:51,299 --> 01:00:51,860
+Eksi 1.
+
+907
+01:00:52,340 --> 01:00:53,519
+Eksi 1 ile çarptım.
+
+908
+01:00:53,719 --> 01:00:54,519
+Ekledim 1.
+
+909
+01:00:54,960 --> 01:00:56,159
+Eksi 1 ile çarptım.
+
+910
+01:00:56,500 --> 01:00:57,380
+0 oldu.
+
+911
+01:00:57,380 --> 01:00:59,679
+Şimdi ne yapacağız?
+
+912
+01:01:00,079 --> 01:01:01,920
+Aşağısı 2 olması lazım.
+
+913
+01:01:03,159 --> 01:01:04,199
+O zaman ne yaparım?
+
+914
+01:01:04,340 --> 01:01:06,579
+Bunu 2 ile çarpıp eklerim.
+
+915
+01:01:06,739 --> 01:01:07,900
+2 ile çarptık.
+
+916
+01:01:08,219 --> 01:01:08,639
+Ne oldu?
+
+917
+01:01:11,079 --> 01:01:12,139
+Burası 0.
+
+918
+01:01:12,400 --> 01:01:13,599
+2 ile çarptık.
+
+919
+01:01:14,019 --> 01:01:14,940
+Burası ne oldu?
+
+920
+01:01:14,940 --> 01:01:16,940
+Eksi 1.
+
+921
+01:01:18,579 --> 01:01:19,119
+Bir dakika.
+
+922
+01:01:25,076 --> 01:01:48,795
+Şuranın 2 olması için yok. 1 ile çarpıyorum. 1 ile çarpıyorum ki 2 olsun diye. Ne yapacağım? 1 ile çarpıyorum, ekliyorum. 1. 1 ile çarptık, ekledik. 0. 1 ile çarptık, ekledik. 2. Bu zaten 1. Yani şurada ben neyi buldum? S'yi buldum. S'yi bulduğum anda bu tarafta bulduğum nedir? T'dir.
+
+923
+01:01:48,795 --> 01:02:00,876
+T'deki vektörlerim neydi? W1, W2 idi. O zaman benim W1'im neydi? 1, 1. W2'im de eksi 1'e 0'dır.
+
+924
+01:02:02,115 --> 01:02:04,836
+Hocam, bir şey sorabilir miyim?
+
+925
+01:02:05,155 --> 01:02:05,436
+Sor.
+
+926
+01:02:05,956 --> 01:02:07,536
+Şimdi biraz yukarıya gelin misin soruya?
+
+927
+01:02:08,755 --> 01:02:15,695
+Şimdi hocam, yukarıda ilk başta gördüğümüz örnekte, yani VT, T'nin tabanı eşittir.
+
+928
+01:02:15,695 --> 01:02:23,476
+M, M, S'den T'ye çarpı, yani S'nin tabanı, şekilde yazabiliyorduk.
+
+929
+01:02:24,476 --> 01:02:28,876
+Yani burada elimizde şey var direkt M vektörü bir de, V, S vektörü var.
+
+930
+01:02:28,956 --> 01:02:31,655
+Onları çarpıp direkt T'nin tabanı bulamaz mıyız?
+
+931
+01:02:35,396 --> 01:02:36,376
+V, S yok.
+
+932
+01:02:39,215 --> 01:02:49,760
+S var.
+
+933
+01:02:51,639 --> 01:02:53,460
+Vs nasıl oluyordu hocam? Şimdi kafam kapıştı.
+
+934
+01:02:54,940 --> 01:03:02,099
+Vs dediğimiz, bir tane bana v vektörü veriyordu. Yani şöyle olması lazım.
+
+935
+01:03:13,396 --> 01:03:21,576
+V vektörünün B1 tabanına göre koordinat vektörü. Şöyle buluyorduk.
+
+936
+01:03:23,316 --> 01:03:33,556
+Buradaki ise taban, S tabanı. S tabanındaki vektörler bunlar. Anladık mı?
+
+937
+01:03:35,156 --> 01:03:40,276
+Yani şu, B1 tabanına göre diyor ya,
+
+938
+01:03:44,148 --> 01:03:48,408
+Yani, şu senin B1 tabanın gibi düşün. Anladın mı?
+
+939
+01:03:50,108 --> 01:03:53,408
+Ayrıca bana bir V vektörü vermesi lazımdı.
+
+940
+01:03:54,347 --> 01:03:57,428
+Anladım. Oradan sabitlerinin şeyini bulacaktık.
+
+941
+01:03:57,928 --> 01:03:58,648
+Evet.
+
+942
+01:04:00,648 --> 01:04:08,148
+Burada ne yapacaktık? O zaman V eşittir, işte C1, C1, C2, C2 deyip ne yapacaktın?
+
+943
+01:04:08,208 --> 01:04:13,307
+C1, C2'yi bulacaktın. Oradan VB1'i bulacaktım buradaki gibi.
+
+944
+01:04:13,307 --> 01:04:13,887
+Tamam mı?
+
+945
+01:04:14,988 --> 01:04:16,008
+Anladım hocam, sağ olun.
+
+946
+01:04:16,648 --> 01:04:17,188
+Bir şey değil.
+
+947
+01:04:23,635 --> 01:04:31,335
+Şimdi R2 uzayının S1, 2, eksi 1'e 0 sıralı tabanı veriliyor.
+
+948
+01:04:32,056 --> 01:04:38,355
+S tabanından T tabanına geçiş madresi şu ise T tabanını bulunuz.
+
+949
+01:04:41,875 --> 01:04:44,215
+Şimdi ne veriyor bana?
+
+950
+01:04:44,215 --> 01:04:53,916
+S tabanından T tabanına yani S'yi buraya yazacağız o zaman, T buraya yazılacak, elemanter satır işlemleri I'yi bulacağım.
+
+951
+01:04:54,295 --> 01:04:55,456
+Burada bulduğum nedir?
+
+952
+01:04:55,795 --> 01:04:57,715
+S'den T'ye geçiş madresi.
+
+953
+01:04:58,476 --> 01:04:59,775
+Şimdi neyi vermiş bana?
+
+954
+01:05:00,175 --> 01:05:01,056
+S'yi vermiş.
+
+955
+01:05:01,275 --> 01:05:03,016
+O zaman S'deki vektörlerim ne?
+
+956
+01:05:03,096 --> 01:05:04,615
+1'e 2, eksi 1'e 0.
+
+957
+01:05:05,855 --> 01:05:06,516
+Neyi soruyor?
+
+958
+01:05:06,996 --> 01:05:07,735
+T'yi soruyor.
+
+959
+01:05:09,175 --> 01:05:10,255
+Buradan başlıyorum.
+
+960
+01:05:10,936 --> 01:05:12,396
+S'yi bulmaya çalışacağım.
+
+961
+01:05:12,396 --> 01:05:13,996
+O zaman ne yaparım?
+
+962
+01:05:14,215 --> 01:05:17,355
+Şimdi götürdük 1, 0, 0, 1.
+
+963
+01:05:18,016 --> 01:05:19,675
+Sonra ne yazdık?
+
+964
+01:05:20,195 --> 01:05:22,016
+3, eksi 1, 1, 0.
+
+965
+01:05:23,375 --> 01:05:24,275
+Şunu da yazdım.
+
+966
+01:05:25,835 --> 01:05:26,996
+Ne yapmaya çalışıyorum?
+
+967
+01:05:27,315 --> 01:05:29,615
+Şurada S'yi elde etmeye çalışacağım.
+
+968
+01:05:30,195 --> 01:05:32,255
+Şimdi bu da nedir?
+
+969
+01:05:32,775 --> 01:05:33,795
+1, eksi 1.
+
+970
+01:05:35,076 --> 01:05:37,695
+Ne yaparım ben bunun yukarının 1 olması için?
+
+971
+01:05:37,695 --> 01:05:43,855
+Eksi 2 ile çarpıp yukarıya eklediğim zaman ne olacaktır?
+
+972
+01:05:43,855 --> 01:05:44,815
+1'i bulacağım.
+
+973
+01:05:45,076 --> 01:05:47,436
+Peki, eksi 2 ile çarptık.
+
+974
+01:05:48,155 --> 01:05:48,755
+Ekledik.
+
+975
+01:05:49,016 --> 01:05:49,396
+Ne oldu?
+
+976
+01:05:49,516 --> 01:05:50,036
+Eksi 2.
+
+977
+01:05:50,195 --> 01:05:51,355
+Eksi 2 ile çarptım.
+
+978
+01:05:51,476 --> 01:05:52,195
+Ekledim 1.
+
+979
+01:05:52,936 --> 01:05:54,755
+Sonra burası zaten eksi 1.
+
+980
+01:05:55,416 --> 01:05:56,375
+Şimdi şunu bulduk.
+
+981
+01:05:57,036 --> 01:05:57,675
+Yukarısı ne?
+
+982
+01:05:57,775 --> 01:05:58,556
+1'e eksi 1.
+
+983
+01:05:58,695 --> 01:05:59,255
+Bunu buldum.
+
+984
+01:05:59,255 --> 01:06:00,976
+Aşağıda ne olması lazım?
+
+985
+01:06:01,115 --> 01:06:02,275
+Şuranın 2 olması lazım.
+
+986
+01:06:02,396 --> 01:06:05,056
+O zaman alt satırı komple 2 ile çarpayım diyorum.
+
+987
+01:06:05,496 --> 01:06:06,795
+Komple 2 ile çarptım.
+
+988
+01:06:07,115 --> 01:06:07,815
+S'yi buldum.
+
+989
+01:06:08,355 --> 01:06:10,315
+Şu S ise bu da nedir?
+
+990
+01:06:10,715 --> 01:06:11,235
+T'dir.
+
+991
+01:06:11,235 --> 01:06:15,815
+Sonra T'deki vektörlerim nedir?
+
+992
+01:06:16,195 --> 01:06:16,876
+1, 0.
+
+993
+01:06:17,815 --> 01:06:18,335
+Eksi 1.
+
+994
+01:06:18,675 --> 01:06:19,476
+Bu neydi?
+
+995
+01:06:19,835 --> 01:06:21,335
+Eksi 2'ye 2.
+
+996
+01:06:23,516 --> 01:06:28,335
+Peki, T tabanından S tabanına geçiş matrisini soruyor bana.
+
+997
+01:06:28,335 --> 01:06:29,896
+O zaman ne yapacağım?
+
+998
+01:06:30,255 --> 01:06:31,115
+T'yi yazdım.
+
+999
+01:06:31,295 --> 01:06:32,556
+S'yi buraya yazdım.
+
+1000
+01:06:33,556 --> 01:06:34,215
+Ne yapıyoruz?
+
+1001
+01:06:35,715 --> 01:06:39,576
+Elemanter satır işlemleri uygulayarak şurada I'yı bulmaya çalışacağım.
+
+1002
+01:06:40,076 --> 01:06:41,576
+I'yı bulmak için ne yaparım?
+
+1003
+01:06:42,416 --> 01:06:44,456
+Eksi 2 ile çarpıp aşağıya ekledim.
+
+1004
+01:06:44,536 --> 01:06:44,755
+0.
+
+1005
+01:06:44,936 --> 01:06:46,076
+Eksi 2 ile çarptım.
+
+1006
+01:06:46,175 --> 01:06:46,835
+Artı 2.
+
+1007
+01:06:47,355 --> 01:06:48,815
+Eksi 2 ile çarptık.
+
+1008
+01:06:48,956 --> 01:06:49,596
+Eksi 2.
+
+1009
+01:06:49,815 --> 01:06:51,335
+Eksi 2 ile çarptım.
+
+1010
+01:06:52,155 --> 01:06:53,135
+Artı 4.
+
+1011
+01:06:53,436 --> 01:06:53,775
+6.
+
+1012
+01:06:54,615 --> 01:06:55,855
+Şimdi ne yapıyoruz?
+
+1013
+01:06:55,855 --> 01:06:58,195
+Burayı 1 bölü 2 yaparım.
+
+1014
+01:06:58,916 --> 01:07:00,235
+Şuranın 1 olması için.
+
+1015
+01:07:01,635 --> 01:07:02,355
+1.
+
+1016
+01:07:02,675 --> 01:07:03,315
+Eksi 1.
+
+1017
+01:07:03,615 --> 01:07:04,175
+3 oldu.
+
+1018
+01:07:04,456 --> 01:07:05,596
+Şimdi ne yapacağım?
+
+1019
+01:07:05,695 --> 01:07:07,315
+Şuranın 0 olmasını istiyorum.
+
+1020
+01:07:07,855 --> 01:07:09,755
+1 ile çarpıp yukarıya ekleyeceğim.
+
+1021
+01:07:10,175 --> 01:07:10,476
+0.
+
+1022
+01:07:11,115 --> 01:07:12,735
+1 ile çarptık yukarıya ekledik.
+
+1023
+01:07:12,815 --> 01:07:13,056
+0.
+
+1024
+01:07:13,695 --> 01:07:15,956
+Sonra 1 ile çarptık yukarıya ekledik.
+
+1025
+01:07:16,135 --> 01:07:16,675
+1 oldu.
+
+1026
+01:07:17,275 --> 01:07:20,135
+Burada I'yı bulduğum anda bu tarafta bulduğum nedir?
+
+1027
+01:07:20,516 --> 01:07:22,476
+T'den S'ye geçiş matrisidir.
+
+1028
+01:07:28,724 --> 01:07:30,644
+Şimdi başka bir soru.
+
+1029
+01:07:30,984 --> 01:07:39,344
+R3 uzayının S100, 021, 013 sıralı tabanı veriliyor.
+
+1030
+01:07:40,084 --> 01:07:44,824
+T tabanından S tabanına geçiş matrisi bu ise T tabanına bulunuz.
+
+1031
+01:07:47,764 --> 01:07:51,124
+Esasında bunda da aynı işlemi yapıyoruz.
+
+1032
+01:07:51,364 --> 01:07:52,524
+Bakayım aşağıdakine.
+
+1033
+01:07:52,524 --> 01:07:58,963
+Neyse gene yapalım bunu da.
+
+1034
+01:08:00,644 --> 01:08:04,164
+T tabanından S tabanına geçiş matrisini soruyor.
+
+1035
+01:08:04,903 --> 01:08:05,864
+Şimdi ne yapacağız?
+
+1036
+01:08:06,044 --> 01:08:07,484
+Buraya T yazıyorduk.
+
+1037
+01:08:07,584 --> 01:08:13,104
+Buraya S'ye elemanter satır işlemleri I'yı bulduğum anda T'den S'ye geçiş matrisiydi bu.
+
+1038
+01:08:14,024 --> 01:08:15,104
+Peki S neydi?
+
+1039
+01:08:15,104 --> 01:08:19,724
+1, 0, 0, 0, 2, 1, 0, 1, 3.
+
+1040
+01:08:20,364 --> 01:08:20,564
+Tamam.
+
+1041
+01:08:20,564 --> 01:08:26,724
+Şurada S'yi elde edecek şekilde işlem yapıyoruz.
+
+1042
+01:08:27,003 --> 01:08:28,224
+Şuradan başlıyoruz.
+
+1043
+01:08:28,724 --> 01:08:30,064
+Birim matrisi yazdık.
+
+1044
+01:08:30,764 --> 01:08:33,003
+Şu geçiş matrisini de yazdım.
+
+1045
+01:08:34,404 --> 01:08:35,804
+Sonra ne yapıyoruz?
+
+1046
+01:08:36,344 --> 01:08:39,824
+Bu tarafta S'yi elde etmeye çalışacağım.
+
+1047
+01:08:40,884 --> 01:08:41,764
+1, 0, 0.
+
+1048
+01:08:42,123 --> 01:08:43,784
+İlk birinci satır zaten tamam.
+
+1049
+01:08:43,784 --> 01:08:46,503
+Sonra ikinci satıra bakalım.
+
+1050
+01:08:47,224 --> 01:08:52,644
+İkinci satırda şurası 2 olmalı, burası 1 olmalı.
+
+1051
+01:08:53,064 --> 01:08:55,644
+Peki burada biri bir elde edeyim o zaman.
+
+1052
+01:08:56,043 --> 01:08:56,543
+Ne yapayım?
+
+1053
+01:08:57,104 --> 01:09:02,404
+Üçüncü satırı diyorum ki üçüncü satırı 3'le çarpayım.
+
+1054
+01:09:02,404 --> 01:09:07,764
+Çünkü daha sonra şu aşağıya ekleyip tekrar yukarıya getirmem lazım ya.
+
+1055
+01:09:10,564 --> 01:09:13,123
+Ya da şurada 1 var.
+
+1056
+01:09:13,364 --> 01:09:14,324
+Şöyle yapabilirim.
+
+1057
+01:09:14,644 --> 01:09:15,764
+1 var, 3 var.
+
+1058
+01:09:16,083 --> 01:09:17,524
+O zaman diyorum ki dur.
+
+1059
+01:09:18,064 --> 01:09:19,244
+Şunu düşünüyorum.
+
+1060
+01:09:19,804 --> 01:09:20,484
+1, 3.
+
+1061
+01:09:21,024 --> 01:09:23,463
+Şurada 1 olduğuna göre şurada 3'ü elde edeyim.
+
+1062
+01:09:23,944 --> 01:09:24,144
+Tamam.
+
+1063
+01:09:24,144 --> 01:09:25,663
+Sonra 6'a atacağım bunu.
+
+1064
+01:09:26,083 --> 01:09:29,583
+3'le çarpıp yukarıya eklediğim zaman ne olacaktır?
+
+1065
+01:09:29,884 --> 01:09:30,764
+Şurada 3 oldu.
+
+1066
+01:09:30,984 --> 01:09:32,024
+3'le çarptık.
+
+1067
+01:09:32,684 --> 01:09:33,944
+9 ekledik.
+
+1068
+01:09:34,184 --> 01:09:34,484
+11.
+
+1069
+01:09:34,944 --> 01:09:36,003
+3'le çarptık.
+
+1070
+01:09:36,423 --> 01:09:37,003
+Ekledik.
+
+1071
+01:09:37,224 --> 01:09:37,463
+2.
+
+1072
+01:09:38,184 --> 01:09:39,224
+Bu da zaten 1.
+
+1073
+01:09:39,684 --> 01:09:42,463
+Şimdi ne yapacağız?
+
+1074
+01:09:43,423 --> 01:09:46,284
+Şu ikisini yer değiştireceğim.
+
+1075
+01:09:47,184 --> 01:09:48,064
+Şurayı buldum.
+
+1076
+01:09:49,003 --> 01:09:49,224
+Tamam.
+
+1077
+01:09:50,423 --> 01:09:50,764
+Peki.
+
+1078
+01:09:50,764 --> 01:09:55,724
+Bu ikinci satırı elde etmek için de
+
+1079
+01:09:55,724 --> 01:09:57,703
+ikinci satırı elde etmek için
+
+1080
+01:09:57,703 --> 01:09:59,963
+şurada 2 olması lazım.
+
+1081
+01:10:00,423 --> 01:10:02,543
+Burada da ne olması lazım?
+
+1082
+01:10:03,264 --> 01:10:04,423
+1 olması lazım.
+
+1083
+01:10:06,503 --> 01:10:08,923
+Şimdi diyorum ki
+
+1084
+01:10:08,923 --> 01:10:13,384
+şurayı da kullanacağım için
+
+1085
+01:10:13,384 --> 01:10:15,724
+şurayı kullanacağım için
+
+1086
+01:10:15,724 --> 01:10:18,944
+üçüncü satırı 5'le çarpeyim dedim.
+
+1087
+01:10:19,444 --> 01:10:20,543
+5'le çarptık.
+
+1088
+01:10:20,543 --> 01:10:22,244
+Sonra ne yapıyorum?
+
+1089
+01:10:22,764 --> 01:10:24,384
+Ben ikinci satırı
+
+1090
+01:10:24,384 --> 01:10:25,503
+ikinci satırı
+
+1091
+01:10:25,503 --> 01:10:27,503
+eksi 2 ile çarpıp
+
+1092
+01:10:27,503 --> 01:10:29,284
+3'e eklersem
+
+1093
+01:10:29,284 --> 01:10:31,024
+burası ne olacak?
+
+1094
+01:10:31,364 --> 01:10:32,684
+Eksi 2 ile çarptık.
+
+1095
+01:10:33,003 --> 01:10:33,644
+Eksi 2.
+
+1096
+01:10:34,203 --> 01:10:35,604
+Eksi 2 ile çarptık.
+
+1097
+01:10:35,984 --> 01:10:36,724
+Eksi 6.
+
+1098
+01:10:37,163 --> 01:10:37,684
+Ekledik.
+
+1099
+01:10:37,824 --> 01:10:38,384
+Eksi 1.
+
+1100
+01:10:39,144 --> 01:10:39,503
+Sonra
+
+1101
+01:10:39,503 --> 01:10:41,463
+eksi 2 ile çarptık.
+
+1102
+01:10:41,824 --> 01:10:42,623
+Eksi 22.
+
+1103
+01:10:43,123 --> 01:10:43,604
+Ekledik.
+
+1104
+01:10:43,703 --> 01:10:44,304
+Eksi 7.
+
+1105
+01:10:44,844 --> 01:10:46,163
+Eksi 2 ile çarptık.
+
+1106
+01:10:46,364 --> 01:10:47,083
+Eksi 4.
+
+1107
+01:10:47,583 --> 01:10:48,184
+Ekledik.
+
+1108
+01:10:48,184 --> 01:10:48,684
+1.
+
+1109
+01:10:48,684 --> 01:10:50,503
+Eksi 2 ile çarptım.
+
+1110
+01:10:50,844 --> 01:10:51,444
+Eksi 2.
+
+1111
+01:10:51,904 --> 01:10:52,423
+Şimdi
+
+1112
+01:10:52,423 --> 01:10:53,724
+eksi 2,
+
+1113
+01:10:53,804 --> 01:10:54,804
+eksi 1'i buldum.
+
+1114
+01:10:55,144 --> 01:10:56,104
+Ne yapmam lazım?
+
+1115
+01:10:56,543 --> 01:10:57,503
+Eksi değil bunun.
+
+1116
+01:10:57,824 --> 01:10:58,724
+Ne olması lazım?
+
+1117
+01:10:58,923 --> 01:11:00,123
+Artı olması lazım.
+
+1118
+01:11:00,583 --> 01:11:02,324
+Bunu da eksi 1 ile çarptım.
+
+1119
+01:11:02,844 --> 01:11:03,724
+Sonra ne yapıyorum?
+
+1120
+01:11:03,844 --> 01:11:04,644
+İki satırı
+
+1121
+01:11:04,644 --> 01:11:05,884
+yer değiştiriyorum.
+
+1122
+01:11:06,284 --> 01:11:07,784
+Yer değiştirdiğim anda
+
+1123
+01:11:07,784 --> 01:11:08,844
+neyi buldum?
+
+1124
+01:11:08,844 --> 01:11:09,644
+S'yi buldum.
+
+1125
+01:11:09,644 --> 01:11:10,784
+Bu tarafta nedir?
+
+1126
+01:11:10,904 --> 01:11:11,404
+T'dir.
+
+1127
+01:11:11,764 --> 01:11:12,904
+Bunlar nedir?
+
+1128
+01:11:13,003 --> 01:11:14,864
+Sütun vektörleridir.
+
+1129
+01:11:15,043 --> 01:11:15,663
+Her birinin.
+
+1130
+01:11:17,043 --> 01:11:17,284
+Şimdi
+
+1131
+01:11:17,284 --> 01:11:19,123
+B şıkkı da
+
+1132
+01:11:19,123 --> 01:11:19,784
+diyor ki
+
+1133
+01:11:19,784 --> 01:11:20,623
+P2'nin
+
+1134
+01:11:20,623 --> 01:11:21,484
+S
+
+1135
+01:11:21,484 --> 01:11:23,324
+sıralı tabanı
+
+1136
+01:11:23,324 --> 01:11:23,824
+veriliyor.
+
+1137
+01:11:24,368 --> 01:11:32,428
+V ise, V şu ise, X kare artı 3 ise, S tabanına göre koordinat vektörünü bulunuz diyor.
+
+1138
+01:11:32,908 --> 01:11:35,748
+Tamam, bak şimdi burada koordinat vektörünü bulma.
+
+1139
+01:11:36,648 --> 01:11:38,488
+Sormuştunuz ya, ne yapıyoruz?
+
+1140
+01:11:38,628 --> 01:11:40,688
+V eşittir, bu verilen V'ye göre.
+
+1141
+01:11:40,828 --> 01:11:46,768
+V eşittir, C1, V1, artı C2, V2, artı C3, V3 dedik.
+
+1142
+01:11:47,428 --> 01:11:49,668
+V neye eşitti? X kare artı 3'tü.
+
+1143
+01:11:50,108 --> 01:11:51,588
+C1, V1'i yazdım.
+
+1144
+01:11:51,588 --> 01:11:53,528
+C2, V2'yi yazdım.
+
+1145
+01:11:53,528 --> 01:11:55,388
+C3, V3'ü yazdım.
+
+1146
+01:11:55,768 --> 01:11:58,388
+Polinom eşitliğinden yararlanarak ne yapıyorum?
+
+1147
+01:11:58,548 --> 01:12:02,948
+X kare X ve sabit terim parantezini alıyorum.
+
+1148
+01:12:04,228 --> 01:12:07,228
+Ve buradan C1, C3, 1'e eşit.
+
+1149
+01:12:07,788 --> 01:12:10,328
+X'li olan yok burada 0'a eşit.
+
+1150
+01:12:10,668 --> 01:12:12,648
+Sabit terimler de 3'e eşit.
+
+1151
+01:12:13,068 --> 01:12:14,807
+Buradan neyi bulduk?
+
+1152
+01:12:15,208 --> 01:12:17,228
+C1, C2, C3'ü buluyoruz.
+
+1153
+01:12:17,228 --> 01:12:21,688
+S tabanına göre koordinat vektörüm o zaman neye eşittir?
+
+1154
+01:12:21,688 --> 01:12:25,768
+2, 1, eksi 1 diye bulmuş oluruz.
+
+1155
+01:12:26,008 --> 01:12:26,208
+Tamam?
+
+1156
+01:12:26,208 --> 01:12:30,708
+Tamam.
+
+1157
+01:12:31,028 --> 01:12:32,847
+Hocam bu soruyu bir daha anlatabilir misiniz?
+
+1158
+01:12:33,328 --> 01:12:36,188
+Anlatayım bir dakika ben şimdi size bunu atayım da.
+
+1159
+01:12:59,380 --> 01:13:01,659
+Şimdi şu B şıkkını mı dedi?
+
+1160
+01:13:03,900 --> 01:13:07,800
+P2'nin diyoruz ya S eşittir.
+
+1161
+01:13:08,460 --> 01:13:12,539
+V1, V2, V3 sıralı tabanı veriliyor.
+
+1162
+01:13:13,819 --> 01:13:15,420
+V'yi de şöyle vermiş.
+
+1163
+01:13:15,520 --> 01:13:17,579
+X kare artı 3 diye vermiş.
+
+1164
+01:13:17,579 --> 01:13:22,119
+S tabanına göre koordinat vektörünü soruyor.
+
+1165
+01:13:22,699 --> 01:13:24,020
+O zaman ne yapacağız?
+
+1166
+01:13:24,260 --> 01:13:25,039
+S tabanı bu.
+
+1167
+01:13:25,380 --> 01:13:28,560
+S tabanına göre koordinat vektörünü soruyor.
+
+1168
+01:13:28,560 --> 01:13:30,940
+Ne yapacağız arkadaşlar biz?
+
+1169
+01:13:31,380 --> 01:13:32,420
+V eşittir.
+
+1170
+01:13:33,060 --> 01:13:34,020
+C1, V1.
+
+1171
+01:13:34,880 --> 01:13:36,180
+Artı C2, V2.
+
+1172
+01:13:36,699 --> 01:13:38,119
+Artı C3, V3.
+
+1173
+01:13:39,539 --> 01:13:40,600
+V'yi yazdım.
+
+1174
+01:13:41,600 --> 01:13:43,900
+C1, V1'im zaten buydu.
+
+1175
+01:13:44,380 --> 01:13:45,640
+V2'im buydu.
+
+1176
+01:13:45,640 --> 01:13:47,640
+V3'üm de buydu.
+
+1177
+01:13:47,859 --> 01:13:48,859
+Götürdük yazdık.
+
+1178
+01:13:49,279 --> 01:13:49,880
+Ne yapıyorum?
+
+1179
+01:13:50,000 --> 01:13:52,199
+Polinom eşitliğinden yararlanmak için
+
+1180
+01:13:52,199 --> 01:13:57,420
+X kare, X ve sabit terimleri paranteze aldım.
+
+1181
+01:13:57,420 --> 01:14:00,739
+Burada X kareli olan terim burada neye eşit?
+
+1182
+01:14:00,819 --> 01:14:01,500
+1'e eşit.
+
+1183
+01:14:02,000 --> 01:14:04,720
+X'li olan terim burada karşı istikamette yok.
+
+1184
+01:14:04,840 --> 01:14:05,079
+0.
+
+1185
+01:14:05,579 --> 01:14:07,520
+Sabit terimlerde 3'e eşit.
+
+1186
+01:14:08,520 --> 01:14:09,800
+Bu karşıma ne çıktı?
+
+1187
+01:14:09,940 --> 01:14:10,940
+3 bilinmeyenli.
+
+1188
+01:14:11,260 --> 01:14:12,880
+3 tane denklemim var.
+
+1189
+01:14:13,420 --> 01:14:15,659
+Bunları yok etme ile yapabilirim zaten.
+
+1190
+01:14:15,659 --> 01:14:18,699
+buradan C1, C2, C3'ü buldum.
+
+1191
+01:14:18,779 --> 01:14:21,720
+Bu bulduğum C1, C2, C3'lerde neye eşittir?
+
+1192
+01:14:21,819 --> 01:14:24,420
+S tabanına göre koordinat vektörüne eşittir.
+
+1193
+01:14:24,779 --> 01:14:24,940
+Tamam.
+
+1194
+01:14:27,260 --> 01:14:28,039
+Anladık mı?
+
+1195
+01:14:29,880 --> 01:14:30,619
+Anladım hocam.
+
+1196
+01:14:31,500 --> 01:14:31,779
+Tamam.
+
+1197
+01:14:32,319 --> 01:14:33,800
+Var mı başka sorusu olan?
+
+1198
+01:14:34,060 --> 01:14:34,520
+Anlamayan?
+
+1199
+01:14:34,520 --> 01:15:00,420
+Tamam.
+
+1200
+01:14:43,828 --> 01:14:45,728
+Hocam ben konudan bağımsız bir soru sorabilir miyim?
+
+1201
+01:14:46,208 --> 01:14:46,568
+Sor.
+
+1202
+01:14:47,188 --> 01:14:55,628
+Hocam finalde bu ikinci vizelik gibi ağırlıklı şey olacak mı? Sözel soru. Yani yorum sorusu diyeyim yani.
+
+1203
+01:14:56,288 --> 01:15:08,128
+Olur, olur. Yorum sorusu olur. Yani çünkü yorum sorusu çok fazla işlem yapmadan eğer biliyorsan hızlı hızlı cevap verebileceğin şeyler.
+
+1204
+01:15:09,548 --> 01:15:10,468
+Anlarım hocam sağ olun.
+
+1205
+01:15:10,468 --> 01:15:15,328
+Tamam. Aşağıdaki nereden hangisi doğrudur filan diye sorabilirler.
+
+1206
+01:15:17,128 --> 01:15:18,888
+Yani benim tahminim.
+
+1207
+01:15:20,248 --> 01:15:20,488
+Tamam.
+
+1208
+01:15:21,248 --> 01:15:24,528
+Peki arkadaşlar, benim anlatacaklarım bugünlük bunlar.
+
+1209
+01:15:25,348 --> 01:15:28,688
+Ben hepinize...
+
+1210
+01:15:28,688 --> 01:15:29,048
+Hocam.
+
+1211
+01:15:29,408 --> 01:15:29,648
+Hı?
+
+1212
+01:15:31,028 --> 01:15:31,828
+Efendim?
+
+1213
+01:15:32,028 --> 01:15:36,168
+Dersi bitirmeden boy konusuna bir değinebilir misiniz?
+
+1214
+01:15:36,708 --> 01:15:36,908
+Ne?
+
+1215
+01:15:38,268 --> 01:15:39,248
+Boy.
+
+1216
+01:16:02,003 --> 01:16:05,703
+Peki bunun
+
+1217
+01:16:05,703 --> 01:16:08,423
+tabandaki
+
+1218
+01:16:08,423 --> 01:16:10,623
+bütün tabanlardaki eleman sayısı
+
+1219
+01:16:10,623 --> 01:16:12,024
+her zaman eşit midir birbirine?
+
+1220
+01:16:12,804 --> 01:16:13,083
+Nasıl?
+
+1221
+01:16:14,963 --> 01:16:16,623
+Bir şeyin
+
+1222
+01:16:16,623 --> 01:16:18,224
+vektör uzayının tabanlarındaki
+
+1223
+01:16:18,224 --> 01:16:20,043
+bütün
+
+1224
+01:16:20,043 --> 01:16:21,923
+eleman sayısı
+
+1225
+01:16:21,923 --> 01:16:24,163
+yani her tabanının eleman sayısı
+
+1226
+01:16:24,163 --> 01:16:25,224
+birbirine eşit midir?
+
+1227
+01:16:25,224 --> 01:16:27,543
+Ya da sadece bir tanenin tabanı vardır?
+
+1228
+01:16:28,203 --> 01:16:29,844
+Hayır bir tane taban yok.
+
+1229
+01:16:29,844 --> 01:16:32,003
+Yani sana bir tane
+
+1230
+01:16:32,003 --> 01:16:35,443
+yani şu vektör uzayına göre
+
+1231
+01:16:35,443 --> 01:16:37,463
+bu taban diyorsa
+
+1232
+01:16:37,463 --> 01:16:40,003
+o tabanda kaç tane vektör varsa
+
+1233
+01:16:40,003 --> 01:16:41,884
+sana başka bir tane
+
+1234
+01:16:41,884 --> 01:16:44,064
+daha verdiğinde
+
+1235
+01:16:44,064 --> 01:16:45,184
+onda da
+
+1236
+01:16:45,184 --> 01:16:47,703
+aynı sayıda vektör olacak.
+
+1237
+01:16:50,203 --> 01:16:51,403
+Hani bunları teorem olarak
+
+1238
+01:16:51,403 --> 01:16:52,703
+yazdık ya
+
+1239
+01:16:52,703 --> 01:16:55,043
+bunlar var sizde.
+
+1240
+01:16:56,884 --> 01:16:59,163
+Tamamdır hocam. Sağ olun.
+
+1241
+01:16:59,163 --> 01:17:00,203
+Bir şey değil.
+
+1242
+01:17:00,943 --> 01:17:02,783
+Peki arkadaşlar o zaman
+
+1243
+01:17:02,783 --> 01:17:04,604
+ben
+
+1244
+01:17:04,604 --> 01:17:07,003
+hepinize sağlıklı günler
+
+1245
+01:17:07,003 --> 01:17:07,663
+diliyorum.
+
+1246
+01:17:08,403 --> 01:17:09,104
+İyi seneler
+
+1247
+01:17:09,104 --> 01:17:09,823
+diliyorum.
+
+1248
+01:17:10,903 --> 01:17:11,344
+İnşallah
+
+1249
+01:17:11,344 --> 01:17:13,283
+çok iyi bir
+
+1250
+01:17:13,283 --> 01:17:13,783
+yıl
+
+1251
+01:17:13,783 --> 01:17:15,644
+geçiririz.
+
+1252
+01:17:16,543 --> 01:17:17,184
+2021
+
+1253
+01:17:17,184 --> 01:17:18,243
+hepimize
+
+1254
+01:17:18,243 --> 01:17:19,344
+şans,
+
+1255
+01:17:19,943 --> 01:17:20,403
+sağlık,
+
+1256
+01:17:20,623 --> 01:17:20,943
+huzur,
+
+1257
+01:17:22,104 --> 01:17:23,144
+bereket getirsin.
+
+1258
+01:17:23,144 --> 01:17:26,644
+sizlere,
+
+1259
+01:17:26,884 --> 01:17:27,724
+sevdiklerinize,
+
+1260
+01:17:27,943 --> 01:17:28,583
+ailenize,
+
+1261
+01:17:28,583 --> 01:17:30,043
+hepinize iyi seneler
+
+1262
+01:17:30,043 --> 01:17:30,663
+diliyorum.
+
+1263
+01:17:32,663 --> 01:17:33,384
+Haftaya
+
+1264
+01:17:33,384 --> 01:17:34,503
+görüşmek üzere.
+
+1265
+01:17:37,003 --> 01:17:37,764
+Hoşçakalın.
+
+1266
+01:17:37,923 --> 01:17:38,863
+Dinlediğiniz için
+
+1267
+01:17:38,863 --> 01:17:40,024
+teşekkür ediyorum.
+
+1268
+01:17:41,043 --> 01:17:41,684
+İyi seneler
+
+1269
+01:17:41,684 --> 01:17:42,804
+hepinize arkadaşlar.
+
+1270
+01:17:42,804 --> 01:17:44,663
+iyi günler hocam.
+
+1271
+01:17:44,663 --> 01:17:45,363
+İyi günler.
+
+1272
+01:17:45,524 --> 01:17:47,644
+Seneye görüşürüz.
+
+1273
+01:17:47,743 --> 01:17:47,903
+Evet.
+
+1274
+01:17:48,243 --> 01:17:48,923
+Hoşçakalın.
+
+1275
+01:17:49,163 --> 01:17:49,863
+İyi seneler
+
+1276
+01:17:49,863 --> 01:17:50,543
+herkese.
+
+1277
+01:17:51,963 --> 01:17:52,903
+Sağlıklı bir yıl
+
+1278
+01:17:52,903 --> 01:17:53,703
+olsun inşallah.
+
+1279
+01:17:53,983 --> 01:17:54,604
+Sağ salim.
