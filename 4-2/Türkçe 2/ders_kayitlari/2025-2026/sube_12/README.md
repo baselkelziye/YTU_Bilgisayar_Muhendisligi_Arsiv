@@ -4,6 +4,7 @@
 
 ### 📋 Genel Bilgiler
 * **Ders:** Türkçe 2 (TDB1032)
+* **Hoca:** Arzuhan Kocabaş
 * **Dönem:** Bahar
 * **Akademik Yıl:** 2025-2026
 * **Şube:** TDB1032 - 12

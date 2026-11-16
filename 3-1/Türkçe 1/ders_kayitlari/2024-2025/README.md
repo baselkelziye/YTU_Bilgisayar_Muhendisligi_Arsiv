@@ -4,5 +4,5 @@
 
 | Şube | Dönem | Hoca | Klasör |
 | :---: | :---: | :--- | :--- |
-| 1 | Güz | — | [sube_1/](sube_1/) |
+| 1 | Güz | Arzuhan Kocabaş | [sube_1/](sube_1/) |
 | 2 | Güz | Dr. Nurullah Arvas | [sube_2/](sube_2/) |
