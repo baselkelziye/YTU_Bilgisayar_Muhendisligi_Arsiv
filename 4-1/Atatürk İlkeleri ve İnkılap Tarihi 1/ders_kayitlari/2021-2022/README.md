@@ -10,4 +10,5 @@
 | 11 | Güz | Gülsema Lüyer | [sube_11/](sube_11/) |
 | 19 | Güz | Gülsema Lüyer | [sube_19/](sube_19/) |
 | 20 | Güz | Zafer Doğan | [sube_20/](sube_20/) |
+| 22 | Güz | Gülsema Lüyer | [sube_22/](sube_22/) |
 | 25 | Güz | Zafer Doğan | [sube_25/](sube_25/) |
