@@ -16,5 +16,6 @@
 | 26 | Bahar | Eyüp Kızıl ve Salih Çelik | [sube_26/](sube_26/) |
 | 28 | Bahar | Filiz Kanbay | [sube_28/](sube_28/) |
 | 30 | Bahar | Pınar Albayrak | [sube_30/](sube_30/) |
+| 31 | Bahar | Yasemin Alagöz | [sube_31/](sube_31/) |
 | 35 | Bahar | Bulunamadı | [sube_35/](sube_35/) |
 | 52 | Bahar | Muttalip Özavşar | [sube_52/](sube_52/) |
