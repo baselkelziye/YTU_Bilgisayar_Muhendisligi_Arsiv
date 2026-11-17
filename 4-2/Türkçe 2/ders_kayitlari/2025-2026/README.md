@@ -16,3 +16,4 @@
 | 15 | Bahar | Arzuhan Kocabaş | [sube_15/](sube_15/) |
 | 17 | Bahar | Hilal Tufan | [sube_17/](sube_17/) |
 | 18 | Bahar | Hilal Tufan | [sube_18/](sube_18/) |
+| 19 | Bahar | Bulunamadı | [sube_19/](sube_19/) |
