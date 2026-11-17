@@ -1,8 +1,8 @@
 # Atatürk İlkeleri ve İnkılap Tarihi 2 Ders Kayıtları Altyazıları
 
-Bu klasör, 2025-2026 eğitim öğretim yılı Bahar dönemindeki Atatürk İlkeleri ve İnkılap Tarihi 2 (ATA1032 - 12. şube) ders kayıtlarının altyazılarını içerir.
+Bu klasör, 2025-2026 eğitim öğretim yılı Bahar dönemindeki Atatürk İlkeleri ve İnkılap Tarihi 2 (ATA1032 - 13. şube) ders kayıtlarının altyazılarını içerir. Aynı yılın diğer şube ya da dönem kayıtları bir üst klasördedir (`../`).
 
-* **Dersi Veren Akademisyen:** Şebnem Gelmedi
+* **Dersi Veren Akademisyen:** Neslihan Erkan
 
 Kayıt arşivindeki ilk ders kaydı 23 Şubat 2026 Pazartesi gününe aittir. Dosya adlarındaki `ders_x.srt` ifadesinde `x`, ders haftasını değil, ilgili kaydın kayıt arşivindeki ders sıra numarasını gösterir. Tarihler YTÜ Video Ambarı kayıt tablosundan alınmıştır. Altyazılardaki öğrenci adları `[öğrenci]` ile maskelenmiştir.
 
