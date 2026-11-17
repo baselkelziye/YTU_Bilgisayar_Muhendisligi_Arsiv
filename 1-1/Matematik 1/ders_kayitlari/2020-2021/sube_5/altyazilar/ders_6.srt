@@ -1,0 +1,2935 @@
+1
+00:07:40,372 --> 00:07:43,172
+Günaydın arkadaşlar. Sesimi duyabiliyor musunuz?
+
+2
+00:08:18,548 --> 00:08:20,687
+kapalı fonksiyon türevi ile başlayacağız.
+
+3
+00:08:21,908 --> 00:08:23,627
+Şu anda benim mikrofonum açık.
+
+4
+00:08:24,028 --> 00:08:25,208
+Duyuyor olmanız lazım.
+
+5
+00:08:25,548 --> 00:08:29,788
+Eğer sizin kendi hoparlör açık değilse bir bakayım.
+
+6
+00:08:32,107 --> 00:08:34,128
+Sadece ben sizlerin mikrofonlarını görebiliyorum.
+
+7
+00:08:35,268 --> 00:08:38,368
+Yani hoparlörde güzel birini duyabilmeniz lazım arkadaşlar.
+
+8
+00:08:38,528 --> 00:08:39,187
+Duyanlar var.
+
+9
+00:08:44,755 --> 00:08:45,196
+Evet.
+
+10
+00:08:48,175 --> 00:08:52,755
+Şimdi kapalı fonksiyonun türevi arkadaşlar aslında iki yolda yapılıyor ama
+
+11
+00:08:52,755 --> 00:08:58,395
+biz şu an sadece kısmi türevi görmediğimiz için ikinci yolu göstermeyeceğiz.
+
+12
+00:08:58,915 --> 00:09:03,956
+Bildiğimiz eşitliğin her tarafının x'e göre türevini alarak yani zincir kuralı vasıtasıyla
+
+13
+00:09:03,956 --> 00:09:06,596
+bu şekilde elde edeceğiz kapalı fonksiyonun türevini.
+
+14
+00:09:08,655 --> 00:09:12,275
+Şimdi örnek üzerinde hemen zaten gösterirsek arkadaşlar.
+
+15
+00:09:12,275 --> 00:09:20,275
+Bakın y x'e bağlı bir fonksiyon ise ki öyle zaten y x'e bağlı olduğu için zincir kuralını uygulayacağız.
+
+16
+00:09:20,415 --> 00:09:23,655
+Yani eşitliğin her tarafının x'e göre türevini aldığımız zaman arkadaşlar
+
+17
+00:09:23,655 --> 00:09:29,055
+y karenin x'e göre türevi 2y çarpı y'nin de x'e göre türevi.
+
+18
+00:09:29,155 --> 00:09:34,875
+Zincir kuralından bunlar birleşik fonksiyonun olduğu için arkadaşlar bu şekilde olmak zorunda.
+
+19
+00:09:35,275 --> 00:09:41,735
+Denklemin sağ tarafı zaten x bağımsız değişken o yüzden direkt x karenin x'e göre türevi arkadaşlar nedir?
+
+20
+00:09:41,735 --> 00:09:42,615
+2x'tir.
+
+21
+00:09:43,495 --> 00:09:48,956
+Sinüs x çarpı y'nin türevi ise arkadaşlar sinüs fonksiyonunun türevi kosnüstü.
+
+22
+00:09:49,316 --> 00:09:55,135
+Yani kosnüstü x çarpı y diyeceğiz çarpı yine zincir kuralından arkadaşlar iç kısmın türevi.
+
+23
+00:09:55,596 --> 00:10:04,615
+Burası da birincinin türevi çarpı ikinci yani x'in türevi çarpı y artı x çarpı y'nin x'e göre türevi de d y bölü d x.
+
+24
+00:10:04,615 --> 00:10:11,055
+Buradan arkadaşlar d y bölü d x'i yalnız bırakırsanız cevap bu olur.
+
+25
+00:10:11,836 --> 00:10:14,456
+Bizden istenen şey zaten d y bölü d x.
+
+26
+00:10:23,155 --> 00:10:26,395
+Kapalı fonksiyon, aslında kapalı fonksiyon nedir?
+
+27
+00:18:43,700 --> 00:18:45,740
+sesimi duyabiliyor musunuz arkadaşlar?
+
+28
+00:18:53,907 --> 00:19:01,587
+Arkadaşlar şöyle şunu demek istiyordum aslında kapalı fonksiyon nasıl onu önce söylemek lazımdı.
+
+29
+00:19:02,247 --> 00:19:06,247
+fx'ye eşittir 0 şeklinde yazılabilen fonksiyonlar biz kapalı fonksiyon diyoruz.
+
+30
+00:19:06,247 --> 00:19:18,607
+Tabi bunun anlamıyla arkadaşlar yani daha doğrusu y'yi yalnız bırakamadığımız durumlarda veya bıraktığımızda da güzel farklı değer olduğunu mesela şurada bırakmak mümkün değil şu fonksiyonda y'yi.
+
+31
+00:19:18,927 --> 00:19:21,167
+İşte biz bu tarz fonksiyonlar da kapalı fonksiyonlıyoruz.
+
+32
+00:19:21,167 --> 00:19:31,387
+Burada da y'yi yalnız bıraktığın zaman birden fazla farklı değer olacağı için artı eksi kare kök 25x x kare olacağı için bu da bir kapalı fonksiyon örneğidir.
+
+33
+00:19:31,387 --> 00:19:34,267
+Şimdi şu örnekte kalmıştık arkadaşlar.
+
+34
+00:19:34,767 --> 00:19:38,087
+Bakın yine türevin geometrik yorumu devam ediyor.
+
+35
+00:19:38,687 --> 00:19:39,627
+Bunda bir problem yok.
+
+36
+00:19:40,027 --> 00:19:50,807
+Yani bir verilen noktadan yetişen e'ye doğrusu neyin yine türev vasıtasıyla bulabiliriz arkadaşlar.
+
+37
+00:19:51,167 --> 00:19:52,207
+Onu da şöyle yapacağız.
+
+38
+00:19:52,327 --> 00:19:54,387
+Eşitliğinden tarafını yine türevine alırsak arkadaşlar.
+
+39
+00:19:54,927 --> 00:19:57,048
+x'e göre türevi 2x'tir.
+
+40
+00:19:57,947 --> 00:20:04,647
+2y karenin x'e göre türevi birleşke fonksiyonu üzerinde yine 2y çarpı y üstüdür.
+
+41
+00:20:05,227 --> 00:20:09,767
+Ve denklemin sağ tarafı arkadaşlar 25'in türevi ise 0'dır.
+
+42
+00:20:09,767 --> 00:20:10,247
+Evet.
+
+43
+00:20:11,527 --> 00:20:17,987
+Şimdi buradan arkadaşlar y üstü yalnız bıraktığınız zaman eksi x bölü y olacaktır.
+
+44
+00:20:18,927 --> 00:20:26,847
+Verilen noktayı yerine yazdığınızda yani x yerine 3, y yerine x4 yazdığınızda eğim 3 bölü 4 olacaktır.
+
+45
+00:20:26,847 --> 00:20:34,788
+O halde yarı çapı 5 olan çemberin 3, yürgül eksi 4 noktasından geçen t-et doğrusu neyimi arkadaşlar?
+
+46
+00:20:35,007 --> 00:20:37,467
+3 bölü 4 ve t-et'in de bu şekildedir.
+
+47
+00:20:37,548 --> 00:20:38,607
+Gösterebiliriz arkadaşlar.
+
+48
+00:20:38,607 --> 00:20:59,307
+Evet.
+
+49
+00:20:42,644 --> 00:20:44,384
+Bir diğer örnekte ilgilenelim.
+
+50
+00:20:44,923 --> 00:20:48,564
+2x küp eksi 3y kare eşittir 8.
+
+51
+00:20:49,223 --> 00:20:52,943
+Kapalı fonksiyonunun ikinci türevini hesap edelim.
+
+52
+00:20:54,024 --> 00:20:57,483
+Yine eşitliğin her tarafın x'e göre türevini alacağız.
+
+53
+00:20:58,344 --> 00:21:02,243
+2x küpün x'e göre türevi malumunuz zaten 6x kare yapar.
+
+54
+00:21:02,943 --> 00:21:08,844
+Şurası y olduğu için bileşikaf fonksiyonu üzerinde 6y çarpı y üstüleyeceğiz.
+
+55
+00:21:08,844 --> 00:21:12,324
+Ve reklamın sağ tarafı ise sabitlerin türevi 0'dır.
+
+56
+00:21:12,644 --> 00:21:16,344
+Buradan y üstü yalnız bıraktığınız zaman x kare bölü y yapar.
+
+57
+00:21:16,923 --> 00:21:20,104
+O halde bunun tekrar bir kez daha türevini alacağız birazdan.
+
+58
+00:21:21,264 --> 00:21:23,784
+Daha önce kullanmış olduğumuz otasyonları kullanırız.
+
+59
+00:21:23,884 --> 00:21:29,223
+d bölü dx y üstü yani y üstünün x'e göre bir kez daha türevi demekti.
+
+60
+00:21:29,304 --> 00:21:34,443
+Bu da arkadaşlar rasyonel fonksiyon formatında olduğu için bölümün türevi kullanılmayı bulacağız.
+
+61
+00:21:34,443 --> 00:21:39,503
+Yani pi'in türevi çarpı pi'da eksi pi çarpı pi'danın türevi.
+
+62
+00:21:39,503 --> 00:21:40,864
+pi'in türevi nedir?
+
+63
+00:21:41,003 --> 00:21:42,263
+2x çarpı y.
+
+64
+00:21:42,784 --> 00:21:47,203
+Eksi x kare çarpı y'nin türevi x'e göre ise y üstüdür.
+
+65
+00:21:48,963 --> 00:21:51,503
+Önce türevi payda'nın karesi y kare.
+
+66
+00:21:51,503 --> 00:21:56,804
+Buradan en son şöyle bir ifade.
+
+67
+00:21:56,923 --> 00:22:02,223
+x kare bölü y'yi yerine koyduğunuzda en son bulacağınız cevap x ve y'ye bağlı.
+
+68
+00:22:02,503 --> 00:22:08,663
+Şöyle bir ifade bulacaksınız ki burada y'nin sıfırdan farklı olması gerektiğini de belirtmek lazım.
+
+69
+00:22:08,663 --> 00:22:09,723
+faydada bulunur için.
+
+70
+00:22:09,723 --> 00:22:10,304
+Evet.
+
+71
+00:22:14,579 --> 00:22:16,359
+Bir diğer soruya bakalım.
+
+72
+00:22:17,019 --> 00:22:19,000
+Y küp x artı y çarpı
+
+73
+00:22:19,000 --> 00:22:20,839
+kosmüs x çarpı y eşittir sıfır
+
+74
+00:22:20,839 --> 00:22:22,319
+denkleminin
+
+75
+00:22:22,319 --> 00:22:24,460
+içerisindeki y üstü'yü bulalım
+
+76
+00:22:24,460 --> 00:22:26,679
+diyoruz arkadaşlar. Yine eşitliğinden
+
+77
+00:22:26,679 --> 00:22:28,419
+tarafının x'e göre türevini alıyoruz.
+
+78
+00:22:28,519 --> 00:22:29,299
+Yapılan işlem bu.
+
+79
+00:22:30,159 --> 00:22:32,759
+İki tane ifadelerin çarpımı söz konusu olduğu için
+
+80
+00:22:32,759 --> 00:22:34,299
+çarpım türevi kuralları bulacağım.
+
+81
+00:22:34,799 --> 00:22:36,379
+Y küpün türevi çarpı x
+
+82
+00:22:36,379 --> 00:22:39,159
+yani 3 y kare çarpı x yapar
+
+83
+00:22:39,159 --> 00:22:40,439
+artı
+
+84
+00:22:40,439 --> 00:22:43,059
+hatta 3 y kare y üstü
+
+85
+00:22:43,059 --> 00:22:45,159
+çarpı. Çünkü y de x'e bağlı olduğu için
+
+86
+00:22:45,159 --> 00:22:47,539
+zincir kuralına y üstü de yazmak zorundayız.
+
+87
+00:22:48,039 --> 00:22:48,579
+Artı
+
+88
+00:22:48,579 --> 00:22:51,159
+y küp çarpı x'in x'e göre türevi
+
+89
+00:22:51,159 --> 00:22:51,819
+birdir zaten.
+
+90
+00:22:52,980 --> 00:22:54,980
+Şuradaki ne çarpım türevi
+
+91
+00:22:54,980 --> 00:22:55,939
+kuralını uygularsak
+
+92
+00:22:55,939 --> 00:22:59,259
+y üstü çarpı kosmüs x çarpı
+
+93
+00:22:59,259 --> 00:23:01,119
+y arkadaşlar artı
+
+94
+00:23:01,119 --> 00:23:02,859
+diyeceğiz y çarpı
+
+95
+00:23:02,859 --> 00:23:05,000
+şunun türevi nedir? Eksisin üstü x
+
+96
+00:23:05,000 --> 00:23:06,639
+çarpı y çarpı
+
+97
+00:23:06,639 --> 00:23:08,500
+buranın içinin türevi arkadaşlar.
+
+98
+00:23:08,859 --> 00:23:10,899
+O da yine çarpım türevi kuralı söz konusu.
+
+99
+00:23:11,500 --> 00:23:12,960
+Yani x'in türevi çarpı y
+
+100
+00:23:12,960 --> 00:23:14,679
+artı x çarpı
+
+101
+00:23:14,679 --> 00:23:16,419
+y'nin türevi. Dedikten sonra
+
+102
+00:23:16,419 --> 00:23:18,059
+y'yi yanıt bıraktığınız zaman
+
+103
+00:23:18,059 --> 00:23:19,839
+karşınıza çıkacak ifade
+
+104
+00:23:19,839 --> 00:23:21,059
+y üstü yanıt bıraktığınız zaman
+
+105
+00:23:21,059 --> 00:23:22,480
+bu fonksiyonun
+
+106
+00:23:22,480 --> 00:23:24,339
+d y bölü d x'in yani
+
+107
+00:23:24,339 --> 00:23:25,240
+birinci türevini
+
+108
+00:23:25,240 --> 00:23:26,939
+kapalı fonksiyonun birinci türevini
+
+109
+00:23:26,939 --> 00:23:27,980
+elde etmiş oluz arkadaşlar.
+
+110
+00:23:31,988 --> 00:23:34,988
+Şimdi klasik sınavlara şu tarz sorular çok geliyor arkadaşlar.
+
+111
+00:23:35,448 --> 00:23:37,807
+Yani test de olsa aslında gelebilir sonuçta.
+
+112
+00:23:38,168 --> 00:23:40,688
+TETP normal denklemini testte yerleştirilebilir.
+
+113
+00:23:41,208 --> 00:23:43,807
+Bu tarz soruların gelme ihtimali yine olabilir arkadaşlar.
+
+114
+00:23:44,607 --> 00:23:45,388
+Şimdi soru şu.
+
+115
+00:23:45,748 --> 00:23:51,408
+2,4 noktasından geçen şu kapalı fonksiyon üzerinde olduğunu gösteriniz.
+
+116
+00:23:51,408 --> 00:23:57,768
+Ve devamında da bu eğilimle bu noktadan geçen TETP normal doğrusunu bulunuz şeklinde arkadaşlar.
+
+117
+00:23:57,768 --> 00:24:07,608
+Şimdi basit bir nokta eğri üzerinde ise bu eğrinin denklerini sağlamak zorunda.
+
+118
+00:24:07,988 --> 00:24:16,448
+Yerine koyduğunuzda x yerindeki y'ye 4 yazdığınızda bakın 0 eşittir 0 şeklinde çıktığı için buradan diyoruz ki gerçekten bu nokta eğri üzerindedir.
+
+119
+00:24:16,448 --> 00:24:18,748
+Peki türevi nasıl hesap edeceğiz?
+
+120
+00:24:18,868 --> 00:24:20,888
+Eşitliğin her iki tarafın x'e yöre türevi alacağız.
+
+121
+00:24:21,048 --> 00:24:23,448
+x kubin x'e yöre türevi 3x karedir.
+
+122
+00:24:23,448 --> 00:24:29,108
+artsa y kubin türevi 3y kare çarpı y üstüdür zincir kuralından.
+
+123
+00:24:29,567 --> 00:24:32,148
+Şurası ise çarpın türevi kuralını uygulayacağız.
+
+124
+00:24:32,688 --> 00:24:34,388
+Yani 9x çarpı.
+
+125
+00:24:34,968 --> 00:24:37,087
+Yani 9x'in türevi nedir arkadaşlar?
+
+126
+00:24:37,268 --> 00:24:39,488
+Veya 9'u sabit tutacaksınız hatırlarsanız.
+
+127
+00:24:39,968 --> 00:24:41,968
+Sabit bir sayı varsa burada aslında bir işimiz yok.
+
+128
+00:24:42,048 --> 00:24:43,268
+Bu hep çarpı olarak kalacak.
+
+129
+00:24:43,928 --> 00:24:46,548
+Yani önce x'in türevi nedir?
+
+130
+00:24:46,948 --> 00:24:47,827
+x'e göre 1'dir.
+
+131
+00:24:47,827 --> 00:24:53,688
+O zaman eksi 9y eksi y'ye göre türevi nedir?
+
+132
+00:24:53,968 --> 00:24:55,128
+Y'nin x'e göre türevi nedir?
+
+133
+00:24:55,188 --> 00:24:55,668
+Y üstüdür.
+
+134
+00:24:55,728 --> 00:24:57,388
+Yani eksi 9x y üstü olacak.
+
+135
+00:24:57,908 --> 00:24:58,347
+Eşittir.
+
+136
+00:24:58,468 --> 00:25:00,008
+Denklemin sağ tarafı zaten 0.
+
+137
+00:25:00,327 --> 00:25:02,048
+0'ın türevi zaten 0'dır arkadaşlar.
+
+138
+00:25:02,768 --> 00:25:06,388
+Buradan y üstü yalnız bıraktığınızda elde edeceğiniz denklem budur.
+
+139
+00:25:06,488 --> 00:25:09,288
+Bu güzel sorulan kapalı fonksiyon türevidir.
+
+140
+00:25:09,288 --> 00:25:18,668
+O halde t doğrusunun eğimi bu nokta yerine yazdığınızda yani x yerine 2y yerine 4 yazdığınızda bu denklemde cevap 4 bölü 5 olacak.
+
+141
+00:25:19,888 --> 00:25:25,208
+Hatırlarsanız bir noktası ve t eğimi bilinen doğumun denklemini şöyle yazıyoruz.
+
+142
+00:25:25,347 --> 00:25:26,668
+y eksi y sıfır eşittir.
+
+143
+00:25:26,748 --> 00:25:28,168
+Eğim çarpı x eksi 2 sıfır.
+
+144
+00:25:28,587 --> 00:25:29,948
+y sıfır dediğimiz şey 4.
+
+145
+00:25:30,388 --> 00:25:31,528
+x sıfır dediğimiz şey 2.
+
+146
+00:25:31,748 --> 00:25:33,028
+Eğimi 4 bölü 5.
+
+147
+00:25:34,468 --> 00:25:35,587
+Buradan y eşittir.
+
+148
+00:25:35,587 --> 00:25:38,748
+4 bölü 5x artı 12 bölü 5 şeklinde.
+
+149
+00:25:39,288 --> 00:25:40,528
+bulabiliriz.
+
+150
+00:25:41,028 --> 00:25:44,307
+t ve normal arkadaşlar birbirine dik olan doğrulardır.
+
+151
+00:25:44,488 --> 00:25:49,327
+O yüzden iki doğrunun dik ise eğer birbirine eğimleri çarpımı eksi 1'dir.
+
+152
+00:25:49,428 --> 00:25:56,488
+Yani t eğimi 4 bölü 5 ise normal doğrusunun eğimi ise eksi 5 bölü 4'tür.
+
+153
+00:25:56,567 --> 00:26:01,347
+O halde aynı formatta eğim yerine bu sefer y eksi y sıfır eşittir.
+
+154
+00:26:01,347 --> 00:26:06,668
+Normal doğrusunun eğimi çarpı x eksi 2'den.
+
+155
+00:26:06,668 --> 00:26:12,108
+buradan da t normal doğrusunun eğimi de arkadaşlar bu şekilde bulunuyor.
+
+156
+00:26:16,468 --> 00:26:18,108
+şekil üzerinde gösterirsek
+
+157
+00:26:18,108 --> 00:26:19,548
+grafiği bu. Arkadaşlar
+
+158
+00:26:19,548 --> 00:26:21,708
+t doğrusu
+
+159
+00:26:21,708 --> 00:26:24,748
+t doğrusu şu şekilde oluyor.
+
+160
+00:26:25,868 --> 00:26:26,928
+Bu da normal doğru.
+
+161
+00:26:27,688 --> 00:26:28,868
+Buradan da bizden
+
+162
+00:26:28,868 --> 00:26:30,428
+istenen cevabı
+
+163
+00:26:30,428 --> 00:26:31,108
+bulmuş olur.
+
+164
+00:26:33,688 --> 00:26:35,428
+Bir diğer soru
+
+165
+00:26:35,428 --> 00:26:38,008
+y eşittir x kare
+
+166
+00:26:38,008 --> 00:26:40,108
+eğrisinin y eşittir
+
+167
+00:26:40,108 --> 00:26:42,428
+3x artı
+
+168
+00:26:42,428 --> 00:26:43,708
+2 doğrusuna
+
+169
+00:26:43,708 --> 00:26:45,688
+paralel olan t'nin
+
+170
+00:26:45,688 --> 00:26:47,528
+dengeli mi bulmuş? Bakın iki doğrunun
+
+171
+00:26:47,528 --> 00:26:48,988
+düzlemle paralel olabilmesi için
+
+172
+00:26:48,988 --> 00:26:51,488
+eğimlerin bile eşit olması gerekiyor. Doğru mu? Bu bilgi
+
+173
+00:26:51,488 --> 00:26:52,807
+zaten bildiğimiz bir şey.
+
+174
+00:26:53,748 --> 00:26:55,508
+O halde bu
+
+175
+00:26:55,508 --> 00:26:57,548
+eğrinin peki tt'i
+
+176
+00:26:57,548 --> 00:26:58,248
+nasıl bulacağız?
+
+177
+00:27:00,087 --> 00:27:01,148
+Türebini alacağız.
+
+178
+00:27:01,307 --> 00:27:03,668
+2x'tir. 2x olduğuna
+
+179
+00:27:03,668 --> 00:27:05,208
+göre ve eğrinin
+
+180
+00:27:05,208 --> 00:27:07,388
+bu doğrusu bu doğrunun eğimi 3
+
+181
+00:27:07,388 --> 00:27:08,827
+olduğuna göre yani
+
+182
+00:27:08,827 --> 00:27:11,108
+tt doğrusu eğimiyle aynı olduğunda
+
+183
+00:27:11,108 --> 00:27:13,188
+noktayı yerine yazdığında yani
+
+184
+00:27:13,188 --> 00:27:15,388
+2x küp 2x 0
+
+185
+00:27:15,388 --> 00:27:17,388
+eşittir 3 olacak şekilde bir x 0
+
+186
+00:27:17,388 --> 00:27:18,428
+noktası belirleyeceğiz.
+
+187
+00:27:18,988 --> 00:27:21,288
+Yani tt'in eğimiyle bu doğrunun
+
+188
+00:27:21,288 --> 00:27:22,688
+eğimi birbirine eşit olduğu için
+
+189
+00:27:22,688 --> 00:27:24,868
+neyi 3'e eşitliyoruz?
+
+190
+00:27:25,008 --> 00:27:25,827
+Bunun türevini
+
+191
+00:27:25,827 --> 00:27:26,827
+türevini
+
+192
+00:27:26,827 --> 00:27:28,888
+verilen noktadaki alacağı değeri
+
+193
+00:27:28,888 --> 00:27:30,188
+eşitliyoruz. Yani
+
+194
+00:27:30,188 --> 00:27:32,288
+2x 0 eşittir 3'ten
+
+195
+00:27:32,288 --> 00:27:33,748
+x 0 eşittir
+
+196
+00:27:33,748 --> 00:27:35,248
+3 bölü 2'dir.
+
+197
+00:27:35,688 --> 00:27:37,428
+Bu eğri üzerinde bir nokta olduğu için
+
+198
+00:27:37,428 --> 00:27:39,388
+aksesi 3 bölü 2 ise
+
+199
+00:27:39,388 --> 00:27:40,088
+ordonatında
+
+200
+00:27:40,088 --> 00:27:42,288
+eğri değerine yazdığınızda
+
+201
+00:27:42,288 --> 00:27:43,628
+9 bölü 4 yapar.
+
+202
+00:27:43,668 --> 00:27:44,268
+O halde
+
+203
+00:27:44,268 --> 00:27:46,048
+bizler esin t doğrusunun
+
+204
+00:27:46,048 --> 00:27:46,548
+denklemi
+
+205
+00:27:46,548 --> 00:27:47,928
+y eksi 9 bölü 4
+
+206
+00:27:47,928 --> 00:27:48,868
+eşittir.
+
+207
+00:27:48,948 --> 00:27:50,368
+Eğim çarpı eğim 3 zaten
+
+208
+00:27:50,368 --> 00:27:52,528
+x eksi 3 bölü 2'den
+
+209
+00:27:52,528 --> 00:27:53,008
+cevap
+
+210
+00:27:53,008 --> 00:27:53,908
+3x
+
+211
+00:27:53,908 --> 00:27:55,428
+eksi
+
+212
+00:27:55,428 --> 00:27:56,508
+9 bölü 4
+
+213
+00:27:56,508 --> 00:27:57,108
+şeklinde
+
+214
+00:27:57,108 --> 00:27:57,548
+bulunur.
+
+215
+00:27:57,548 --> 00:27:59,548
+2
+
+216
+00:27:59,548 --> 00:27:59,827
+3
+
+217
+00:27:59,827 --> 00:28:00,307
+2
+
+218
+00:28:00,307 --> 00:28:00,448
+3
+
+219
+00:28:00,448 --> 00:28:01,448
+4
+
+220
+00:28:01,448 --> 00:28:01,807
+5
+
+221
+00:28:06,548 --> 00:28:08,607
+fx eğrisinin x0
+
+222
+00:28:08,607 --> 00:28:10,548
+abscisi noktasındaki
+
+223
+00:28:10,548 --> 00:28:12,147
+tf normalde eklemi bulalım.
+
+224
+00:28:12,607 --> 00:28:14,528
+Bakın burda ise yine yapılacak işlem basit.
+
+225
+00:28:14,887 --> 00:28:16,387
+Zaten açık fonksiyon bu.
+
+226
+00:28:16,528 --> 00:28:17,508
+Kapalı fonksiyon değil.
+
+227
+00:28:18,147 --> 00:28:19,428
+Direkt türevini alıyoruz.
+
+228
+00:28:25,428 --> 00:28:26,827
+fx şeklinde
+
+229
+00:28:26,827 --> 00:28:29,548
+fx bizim x'e bir yazdığımızda
+
+230
+00:28:29,548 --> 00:28:30,907
+5 bölü 4'ten
+
+231
+00:28:30,907 --> 00:28:32,667
+bizim aradığımız tf doğrusunun
+
+232
+00:28:32,667 --> 00:28:34,428
+eğimi 5 bölü 6 olacaktır.
+
+233
+00:28:34,827 --> 00:28:35,928
+O halde devam edersek
+
+234
+00:28:35,928 --> 00:28:37,407
+noktamız ne?
+
+235
+00:28:38,067 --> 00:28:40,307
+x0 eşittir 1 için y'yi de bulduğumuzda
+
+236
+00:28:40,307 --> 00:28:42,688
+y'de 2 yapar. O halde y eksi 2
+
+237
+00:28:42,688 --> 00:28:44,448
+eşittir 5 bölü 6
+
+238
+00:28:44,448 --> 00:28:46,567
+çarpı x eksi 1'den
+
+239
+00:28:46,567 --> 00:28:48,468
+şu şekilde tf doğrusunun
+
+240
+00:28:48,468 --> 00:28:50,647
+denkleni bulunuz. Peki tf'in
+
+241
+00:28:50,647 --> 00:28:52,907
+denklemi bu ise normal doğrusunun
+
+242
+00:28:52,907 --> 00:28:54,587
+denkleminde eğimler çarpma
+
+243
+00:28:54,587 --> 00:28:56,788
+eksi 1 olduğu için eksi 6 bölü 5
+
+244
+00:28:56,788 --> 00:28:58,907
+de normal doğrusunun denklemidir.
+
+245
+00:28:58,907 --> 00:29:00,268
+Normal doğrusunun eğimidir.
+
+246
+00:29:01,127 --> 00:29:02,867
+O halde noktalar aynı olduğuna göre
+
+247
+00:29:02,867 --> 00:29:04,907
+y eksi 2 eşittir eksi 6 bölü 5
+
+248
+00:29:04,907 --> 00:29:06,827
+çarpı x eksi 1'den y
+
+249
+00:29:06,827 --> 00:29:08,548
+şu şekilde bu da
+
+250
+00:29:08,548 --> 00:29:10,127
+normal doğrusunun denklemi
+
+251
+00:29:10,127 --> 00:29:10,768
+elde etmiş olur.
+
+252
+00:29:10,768 --> 00:29:14,188
+Buna kadar anlaşımdan
+
+253
+00:29:14,188 --> 00:29:15,347
+sormak istediğim bir şey var mı?
+
+254
+00:29:15,448 --> 00:29:16,327
+Söyleyebilirsiniz.
+
+255
+00:29:28,948 --> 00:29:32,567
+Sanırım yok. O zaman bir diğer konuya geçiyorum.
+
+256
+00:29:36,980 --> 00:29:39,720
+Linealleştirme ve diferansiyel arkadaşlar.
+
+257
+00:29:40,460 --> 00:29:44,000
+Şimdi bu linealleştirme ve diferansiyel özet anlatayım ben size arkadaşlar.
+
+258
+00:29:44,160 --> 00:29:49,140
+Bir fonksiyonun aslında linealleştirilmesi elinizdeki bir denklemin,
+
+259
+00:29:49,759 --> 00:29:52,059
+lineal olmayan bir denklemin lineal hale getiriyorsunuz.
+
+260
+00:29:52,099 --> 00:29:53,940
+Yaklaşık olarak hesap etmiş oluyorsunuz.
+
+261
+00:29:54,440 --> 00:29:55,779
+Veya şöyle de yorumlayabilirsiniz.
+
+262
+00:29:55,779 --> 00:30:03,620
+Bir nevi bir eğrinin o noktadan geçen t- doğrusunu aslında ifade ediyor bu.
+
+263
+00:30:04,019 --> 00:30:04,680
+Öyle yorumlanıyor.
+
+264
+00:30:04,680 --> 00:30:10,420
+Bir diğer yorum ise bir fonksiyonu bildiğiniz tek değişkenli Tyler serisini açıyorsunuz.
+
+265
+00:30:10,500 --> 00:30:14,620
+Onu belli bir nokta yani birinci türevden sonrasını kesip atıyorsunuz.
+
+266
+00:30:14,960 --> 00:30:16,940
+Yani bildiğiniz Tyler serisinde açılmış halidir.
+
+267
+00:30:17,519 --> 00:30:18,440
+Lineal kısmı kadar.
+
+268
+00:30:18,620 --> 00:30:20,779
+Yani sonuçta lineal dememizin sebebi x.
+
+269
+00:30:20,779 --> 00:30:27,259
+Bundan sonra normal Tyler serisinde f2 üstü a çarpı x eksi a'nın karesi geleceği için linealik bozulur.
+
+270
+00:30:27,319 --> 00:30:31,279
+Yani Tyler serisinde belli bir yere kadar açılmış hal ediyoruz.
+
+271
+00:30:31,440 --> 00:30:33,099
+Yani üç farklı yorum var aslında linealik.
+
+272
+00:30:34,680 --> 00:30:36,360
+Bu şekilde yorumlayabiliriz.
+
+273
+00:30:36,940 --> 00:30:38,900
+Ve ana formül zasyon bu.
+
+274
+00:30:39,180 --> 00:30:41,839
+Başka lineal zasyon şöyle bir işe yarıyor bizim iş arkadaşlar.
+
+275
+00:30:42,360 --> 00:30:48,299
+Normalde lineal olmayan bir denklemde iş yapmak daha zor olduğu için lineal hale getirip yaklaşık hesaplamalarda
+
+276
+00:30:48,299 --> 00:30:56,759
+bir noktanın veya bir köklü ifadenin yaklaşı değeri nasıl hesap ederiz hesap makinesi kullanmadan bu gibi işlemler de işimize yarıyor.
+
+277
+00:30:56,759 --> 00:30:57,360
+Evet.
+
+278
+00:30:57,360 --> 00:31:10,120
+Şimdi örnek olarak şunun üzerine durursak fx eşittir kare kök 1 artı x fonksiyonunun x eşittir 0 ve x eşittir 3 noktalarındaki linealleştirilmesinde bulunan hüsü şeklinde bir soru var.
+
+279
+00:31:10,120 --> 00:31:18,700
+Burada malum şu formülü kullanacağımız için direkt fonksiyonun türevi lazım ve fonksiyonun noktaki değer de lazım.
+
+280
+00:31:19,220 --> 00:31:21,279
+Mesela fonksiyonun sıfırdaki değeri 1'dir.
+
+281
+00:31:21,860 --> 00:31:22,460
+Türevi nedir?
+
+282
+00:31:22,539 --> 00:31:22,759
+Budur.
+
+283
+00:31:22,839 --> 00:31:24,460
+Türevinin sıfırdaki değeri de 1 bölükülü.
+
+284
+00:31:24,460 --> 00:31:30,720
+Yerine yazdığınızda şöyle köklü bir ifadenin x eşittir 0'daki lineer denkleme bakım budur.
+
+285
+00:31:31,579 --> 00:31:34,860
+Aynı şekilde x eşittir 3'teki linealizasyonu da şudur.
+
+286
+00:31:36,539 --> 00:31:39,420
+Gördüğünüz gibi Eylen'in orijinal hali şu aslında.
+
+287
+00:31:40,059 --> 00:31:42,299
+Onun x eşittir 0'daki linealizasyonu bu.
+
+288
+00:31:42,700 --> 00:31:45,420
+Yani aslında x eşittir 0'dan geçen t-et doğrusudur.
+
+289
+00:31:45,980 --> 00:31:48,079
+Bu da x eşittir 3'te geçen t-et doğrusu.
+
+290
+00:31:48,079 --> 00:31:55,259
+Yani bir nevi ne diyorsunuz arkadaşlar buna aslında linealizasyonu diyebiliyoruz.
+
+291
+00:31:55,660 --> 00:31:58,299
+Yaklaşık değerler için şöyle yorumlar yapılabiliyor.
+
+292
+00:31:58,700 --> 00:32:02,480
+İşte acaba gerçek değerden ne kadar uzaklaştık?
+
+293
+00:32:02,559 --> 00:32:11,720
+Yani gerçek değerle normalde hesap makinesi kullanarak mesela x'e 0 yazdığınızda veya x'e 1.2 yazdığını şöyle diyelim.
+
+294
+00:32:11,900 --> 00:32:13,940
+Evet x'e 0.2 yazdığınızda.
+
+295
+00:32:14,019 --> 00:32:17,380
+Çünkü 1.2'yi bulalım için x'e 0.2 yazmış oluyorsunuz.
+
+296
+00:32:17,380 --> 00:32:22,000
+x'e 0.2 yazdığınızda lineal hali ile lineal hali bu.
+
+297
+00:32:22,840 --> 00:32:24,079
+Asıl hali de bu.
+
+298
+00:32:24,480 --> 00:32:27,059
+Yaklaşık arasındaki fark da hatayı gösterecek.
+
+299
+00:32:27,500 --> 00:32:29,779
+Yani hatamız 10.2'den küçük.
+
+300
+00:32:30,500 --> 00:32:34,120
+10.3'den küçük eğer 0.5 yazarsanız.
+
+301
+00:32:44,627 --> 00:32:51,028
+şu galiba en son renklem derken
+
+302
+00:32:51,028 --> 00:32:51,567
+sanırım
+
+303
+00:32:51,567 --> 00:32:54,788
+yani şöyle biz tekrar
+
+304
+00:32:54,788 --> 00:32:56,067
+özetlersek bu örneği
+
+305
+00:32:56,067 --> 00:32:58,447
+y eşittir fx fonksiyonunun
+
+306
+00:32:58,447 --> 00:32:59,847
+x eşittir 0 ve
+
+307
+00:32:59,847 --> 00:33:01,647
+x eşittir 3'teki
+
+308
+00:33:01,647 --> 00:33:03,427
+ilerleştirmesini bulalım diyoruz
+
+309
+00:33:03,427 --> 00:33:05,447
+yani neden ilerleştiriyoruz
+
+310
+00:33:05,447 --> 00:33:07,427
+konu zaten ilerleyizasyon
+
+311
+00:33:07,427 --> 00:33:09,607
+ondan dolayı ilerleyiştirme yapıyoruz
+
+312
+00:33:09,607 --> 00:33:11,907
+konu ilerleyizasyon olduğu için o yüzden bu örneği
+
+313
+00:33:11,907 --> 00:33:12,807
+veriyoruz arkadaşlar
+
+314
+00:33:12,807 --> 00:33:15,207
+ilerleştirme veya ilerleyizasyon
+
+315
+00:33:15,207 --> 00:33:17,667
+dedi ki bunun amacı şudur
+
+316
+00:33:17,667 --> 00:33:19,667
+normal ilerleyen olmayan
+
+317
+00:33:19,667 --> 00:33:21,807
+denklemlerde işlemler zor olabileceği için
+
+318
+00:33:21,807 --> 00:33:23,707
+aslında bir nümerik
+
+319
+00:33:23,707 --> 00:33:24,847
+sayısal analiz yapıyoruz
+
+320
+00:33:24,847 --> 00:33:26,707
+onu nümerik hale geçirerek
+
+321
+00:33:26,707 --> 00:33:29,907
+gerçek değerden tabi biraz daha uzaklaşmış
+
+322
+00:33:29,907 --> 00:33:31,507
+oluyoruz ama yine
+
+323
+00:33:31,507 --> 00:33:33,867
+gerçek değere çok yakın değerler buluyoruz
+
+324
+00:33:33,867 --> 00:33:35,347
+buradaki amacımız o
+
+325
+00:33:35,347 --> 00:33:38,907
+bakın aynı şekilde
+
+326
+00:33:38,907 --> 00:33:41,707
+diğer ilerleyizasyonu kullanarak da
+
+327
+00:33:41,707 --> 00:33:43,307
+yaklaşık değer hesap ettiğinizde
+
+328
+00:33:43,307 --> 00:33:44,707
+o zaman da yine
+
+329
+00:33:44,707 --> 00:33:46,028
+şöyle
+
+330
+00:33:46,028 --> 00:33:48,507
+bu denklemleri bulmuştuk zaten
+
+331
+00:33:48,507 --> 00:33:49,967
+ve yaklaşık değerler
+
+332
+00:33:49,967 --> 00:33:51,407
+birbirine çok yakın aslında
+
+333
+00:33:51,407 --> 00:33:52,048
+evet
+
+334
+00:33:52,048 --> 00:33:56,048
+bir diğer örnek üzerinde duralım
+
+335
+00:33:56,048 --> 00:33:57,028
+x eşittir
+
+336
+00:33:57,028 --> 00:33:58,707
+pi bölü 2 noktasındaki
+
+337
+00:33:58,707 --> 00:34:00,347
+fx eşittir
+
+338
+00:34:00,347 --> 00:34:01,567
+kosmüs x fonksiyonunun
+
+339
+00:34:01,567 --> 00:34:03,288
+ilerleyileştirmesini inceleyelim
+
+340
+00:34:03,288 --> 00:34:04,528
+bu durumda
+
+341
+00:34:04,528 --> 00:34:06,227
+yine formül aynı
+
+342
+00:34:06,227 --> 00:34:07,387
+lx eşittir
+
+343
+00:34:07,387 --> 00:34:09,087
+fa artı
+
+344
+00:34:09,087 --> 00:34:10,007
+f üstü a
+
+345
+00:34:10,007 --> 00:34:12,268
+çarpı x eksi a şeklindedir
+
+346
+00:34:12,268 --> 00:34:12,987
+burada
+
+347
+00:34:12,987 --> 00:34:14,047
+a dediğimiz şey
+
+348
+00:34:14,047 --> 00:34:14,708
+pi bölü 2
+
+349
+00:34:14,708 --> 00:34:15,967
+fonksiyonunda x yerine
+
+350
+00:34:15,967 --> 00:34:17,248
+pi bölü 2 yazdığımızda
+
+351
+00:34:17,248 --> 00:34:18,688
+cevap 0 çıkıyor
+
+352
+00:34:18,688 --> 00:34:19,728
+türevini alıp
+
+353
+00:34:19,728 --> 00:34:21,407
+pi bölü 2 yazdığımızda
+
+354
+00:34:21,407 --> 00:34:21,587
+o da
+
+355
+00:34:21,587 --> 00:34:22,467
+eksi 1 çıkıyor
+
+356
+00:34:22,467 --> 00:34:23,547
+o halde
+
+357
+00:34:23,547 --> 00:34:24,627
+ilerleyizasyonumuz
+
+358
+00:34:24,627 --> 00:34:26,288
+şu formülede yazarsak
+
+359
+00:34:26,847 --> 00:34:28,288
+eksi x artı
+
+360
+00:34:28,288 --> 00:34:28,927
+pi bölü 2'de
+
+361
+00:34:28,927 --> 00:34:29,228
+veya
+
+362
+00:34:29,228 --> 00:34:30,268
+bu noktada geçen
+
+363
+00:34:30,268 --> 00:34:30,947
+aslında bir nevi
+
+364
+00:34:30,947 --> 00:34:32,168
+t'ydir aslında arkadaşlar
+
+365
+00:34:32,168 --> 00:34:33,407
+sürüs fonksiyonunun
+
+366
+00:34:33,407 --> 00:34:34,427
+grafiği olduğuna göre
+
+367
+00:34:34,427 --> 00:34:35,288
+y eşittir
+
+368
+00:34:35,288 --> 00:34:36,148
+x x artı
+
+369
+00:34:36,148 --> 00:34:37,148
+pi bölü 2 doğrusunu
+
+370
+00:34:37,148 --> 00:34:37,748
+grafiği de
+
+371
+00:34:37,748 --> 00:34:38,587
+şu şekildedir
+
+372
+00:34:38,587 --> 00:34:38,987
+evet
+
+373
+00:34:38,987 --> 00:34:40,228
+o halde
+
+374
+00:34:40,228 --> 00:34:41,107
+biz yine
+
+375
+00:34:41,107 --> 00:34:42,507
+fx eşittir
+
+376
+00:34:42,507 --> 00:34:45,127
+kosmüs x fonksiyonunun
+
+377
+00:34:45,127 --> 00:34:46,347
+x eşittir
+
+378
+00:34:46,347 --> 00:34:47,288
+pi bölü 2'deki
+
+379
+00:34:47,288 --> 00:34:48,987
+dinerizasyonu
+
+380
+00:34:48,987 --> 00:34:49,268
+bulduk
+
+381
+00:34:49,268 --> 00:34:49,847
+kısımlarda
+
+382
+00:34:49,847 --> 00:34:50,907
+şöyle örneklerle çözeceğiz
+
+383
+00:34:50,907 --> 00:34:51,188
+işte
+
+384
+00:34:51,188 --> 00:34:52,208
+kare kök
+
+385
+00:34:52,208 --> 00:34:53,587
+5'in yaklaşık değeri
+
+386
+00:34:53,587 --> 00:34:54,347
+nasıldır gibi
+
+387
+00:34:54,347 --> 00:34:55,627
+sorularda da yine
+
+388
+00:34:55,627 --> 00:34:56,907
+karşımıza çıkıyor
+
+389
+00:34:56,907 --> 00:34:58,188
+dinerizasyon konusu
+
+390
+00:34:58,188 --> 00:34:59,027
+evet
+
+391
+00:34:59,027 --> 00:35:01,807
+şimdi geldik
+
+392
+00:35:01,807 --> 00:35:02,867
+diferansiyel arkadaşlar
+
+393
+00:35:02,867 --> 00:35:04,648
+diferansiyel ile çok farkı yok
+
+394
+00:35:04,648 --> 00:35:05,467
+aslında onu da yine
+
+395
+00:35:05,467 --> 00:35:07,188
+diferansiyel vasıtasıyla
+
+396
+00:35:07,188 --> 00:35:08,347
+yine eğriği
+
+397
+00:35:08,347 --> 00:35:09,288
+aslında yaklaşık
+
+398
+00:35:09,288 --> 00:35:10,427
+değer hesap etmelerde
+
+399
+00:35:10,427 --> 00:35:10,668
+yine
+
+400
+00:35:10,668 --> 00:35:12,768
+kullanılabiliyor
+
+401
+00:35:12,768 --> 00:35:14,587
+bir fonksiyonun
+
+402
+00:35:14,587 --> 00:35:15,427
+diferansiyeli
+
+403
+00:35:15,427 --> 00:35:16,007
+y eşittir
+
+404
+00:35:16,007 --> 00:35:16,987
+fx'in diferansiyeli
+
+405
+00:35:16,987 --> 00:35:17,688
+şudur arkadaşlar
+
+406
+00:35:17,688 --> 00:35:18,867
+normalde türevi
+
+407
+00:35:18,867 --> 00:35:19,967
+dy bölüde x'tir
+
+408
+00:35:19,967 --> 00:35:21,007
+biz y'nin
+
+409
+00:35:21,007 --> 00:35:22,087
+diferansiyeli derken
+
+410
+00:35:22,087 --> 00:35:22,527
+aslında
+
+411
+00:35:22,527 --> 00:35:23,608
+dy'yi
+
+412
+00:35:23,608 --> 00:35:24,728
+yanız bıraktığımızda
+
+413
+00:35:24,728 --> 00:35:25,487
+bu bize
+
+414
+00:35:25,487 --> 00:35:27,768
+y fonksiyonunun
+
+415
+00:35:27,768 --> 00:35:28,788
+diferansiyelini
+
+416
+00:35:28,788 --> 00:35:29,927
+veren bir
+
+417
+00:35:29,927 --> 00:35:31,608
+yapıl haline dönüşüyor
+
+418
+00:35:31,608 --> 00:35:33,387
+eğrinin
+
+419
+00:35:33,387 --> 00:35:34,507
+grafiği şu ise
+
+420
+00:35:34,507 --> 00:35:34,907
+diyelim
+
+421
+00:35:34,907 --> 00:35:35,947
+oval şeklinde
+
+422
+00:35:35,947 --> 00:35:37,567
+x eşittir
+
+423
+00:35:37,567 --> 00:35:38,947
+a noktasında
+
+424
+00:35:38,947 --> 00:35:40,228
+geçen t'et doğrusu da
+
+425
+00:35:40,228 --> 00:35:41,208
+bu olmak kaydıyla
+
+426
+00:35:41,208 --> 00:35:42,547
+normalde
+
+427
+00:35:42,547 --> 00:35:43,668
+türevin yorumu
+
+428
+00:35:43,668 --> 00:35:44,188
+buranın
+
+429
+00:35:44,188 --> 00:35:46,467
+bu t'etin
+
+430
+00:35:46,467 --> 00:35:46,987
+eğimiydi
+
+431
+00:35:46,987 --> 00:35:49,748
+diferansiyeli ise
+
+432
+00:35:49,748 --> 00:35:50,847
+şu uzunluk arkadaşlar
+
+433
+00:35:50,847 --> 00:35:51,768
+yani
+
+434
+00:35:51,768 --> 00:35:52,248
+bir
+
+435
+00:35:52,248 --> 00:35:54,768
+y fonksiyonunun
+
+436
+00:35:54,768 --> 00:35:56,067
+a noktasındaki
+
+437
+00:35:56,067 --> 00:35:57,087
+diferansiyeli ise
+
+438
+00:35:57,087 --> 00:35:57,547
+aslında
+
+439
+00:35:57,547 --> 00:35:58,487
+şu uzunluktur
+
+440
+00:35:58,487 --> 00:35:59,447
+yani bu da
+
+441
+00:35:59,447 --> 00:35:59,947
+türevi ile
+
+442
+00:35:59,947 --> 00:36:01,208
+diferansiyeli arasındaki
+
+443
+00:36:01,208 --> 00:36:02,447
+farkı gösteren bir
+
+444
+00:36:02,447 --> 00:36:03,788
+önemli bir bilgiydi
+
+445
+00:36:03,788 --> 00:36:04,208
+arkadaşlar
+
+446
+00:36:04,208 --> 00:36:06,768
+şimdi
+
+447
+00:36:06,768 --> 00:36:08,067
+y eşittir
+
+448
+00:36:08,067 --> 00:36:09,188
+x üzeri 5 artı
+
+449
+00:36:09,188 --> 00:36:09,947
+o silin x
+
+450
+00:36:09,947 --> 00:36:10,487
+için
+
+451
+00:36:10,487 --> 00:36:11,648
+dy'yi bulalım
+
+452
+00:36:11,648 --> 00:36:12,067
+arkadaşlar
+
+453
+00:36:12,067 --> 00:36:13,127
+dy dediğimiz şey
+
+454
+00:36:13,127 --> 00:36:14,067
+fonksiyonun
+
+455
+00:36:14,067 --> 00:36:14,827
+türevi çarpı
+
+456
+00:36:14,827 --> 00:36:15,188
+dx
+
+457
+00:36:15,188 --> 00:36:15,748
+doğru mu?
+
+458
+00:36:16,248 --> 00:36:16,987
+o halde fonksiyon
+
+459
+00:36:16,987 --> 00:36:18,188
+türevini aldıktan sonra
+
+460
+00:36:18,188 --> 00:36:19,027
+dx ve dy
+
+461
+00:36:19,027 --> 00:36:20,268
+değerler verilmiş
+
+462
+00:36:20,268 --> 00:36:20,567
+burada
+
+463
+00:36:20,567 --> 00:36:21,608
+o değerler de
+
+464
+00:36:21,608 --> 00:36:22,487
+yerine koyduğunuzda
+
+465
+00:36:22,487 --> 00:36:23,987
+dy ifadesi
+
+466
+00:36:23,987 --> 00:36:24,387
+cevap
+
+467
+00:36:24,387 --> 00:36:25,307
+8.4
+
+468
+00:36:25,307 --> 00:36:25,768
+çıkacak
+
+469
+00:36:25,768 --> 00:36:27,347
+bir fonksiyonun
+
+470
+00:36:27,347 --> 00:36:28,007
+diferansiyeli
+
+471
+00:36:28,007 --> 00:36:28,347
+bakın
+
+472
+00:36:28,347 --> 00:36:29,427
+tangent 2x'in
+
+473
+00:36:29,427 --> 00:36:30,007
+diferansiyeli
+
+474
+00:36:30,007 --> 00:36:31,087
+aslında çok farklı değil
+
+475
+00:36:31,087 --> 00:36:32,087
+önce şuranın
+
+476
+00:36:32,087 --> 00:36:32,807
+türevi ne olursa
+
+477
+00:36:32,807 --> 00:36:33,487
+çarpı dx
+
+478
+00:36:33,487 --> 00:36:33,967
+diyorsunuz
+
+479
+00:36:33,967 --> 00:36:34,907
+bu başka bir şey yok
+
+480
+00:36:34,907 --> 00:36:37,027
+işte 2x'in
+
+481
+00:36:37,027 --> 00:36:38,268
+diferansiyeli nedir?
+
+482
+00:36:38,867 --> 00:36:39,307
+2x'in
+
+483
+00:36:39,307 --> 00:36:40,467
+diferansiyeli de
+
+484
+00:36:40,467 --> 00:36:41,467
+çür...
+
+485
+00:36:41,467 --> 00:36:48,168
+ne?
+
+486
+00:36:42,867 --> 00:36:44,788
+Daha sonra bununla diferansiyelini alacaksınız.
+
+487
+00:36:44,788 --> 00:36:46,268
+Ve buradan istenen sonuç
+
+488
+00:36:46,268 --> 00:36:47,128
+aslında
+
+489
+00:36:47,128 --> 00:36:54,327
+2x2
+
+490
+00:36:54,327 --> 00:36:57,527
+gibi bir cevap
+
+491
+00:36:57,527 --> 00:36:58,547
+bulacaksınız arkadaşlar.
+
+492
+00:36:59,587 --> 00:37:00,668
+Devam edelim.
+
+493
+00:37:01,447 --> 00:37:03,067
+Şu fonksiyonun diferansiyeli nedir?
+
+494
+00:37:03,708 --> 00:37:04,867
+Yine türevini alıp
+
+495
+00:37:04,867 --> 00:37:07,007
+çarpı dx diyorsunuz aslında. Başka bir şey yok.
+
+496
+00:37:07,628 --> 00:37:09,067
+Veya bölümün
+
+497
+00:37:09,067 --> 00:37:11,087
+diferansiyeli kuralını uygularsanız
+
+498
+00:37:11,087 --> 00:37:13,047
+aynı türevde olduğu gibi şöyle yapalım.
+
+499
+00:37:13,527 --> 00:37:15,107
+Birincinin diferansiyeli çarpı ikinci
+
+500
+00:37:15,107 --> 00:37:17,628
+yani x'in diferansiyeli dx'tir çarpı ikinci
+
+501
+00:37:17,628 --> 00:37:19,967
+eksi birinci çarpı
+
+502
+00:37:19,967 --> 00:37:21,327
+ikincinin diferansiyeli yani
+
+503
+00:37:21,327 --> 00:37:23,487
+dx artı birin diferansiyeli aslında yine
+
+504
+00:37:23,487 --> 00:37:25,648
+dx'tir. Bölü paylarının
+
+505
+00:37:25,648 --> 00:37:27,467
+karesi. Doğru mu? İlk çarpı
+
+506
+00:37:27,467 --> 00:37:28,947
+dx'ler sağdaşlıktan sonra
+
+507
+00:37:28,947 --> 00:37:31,367
+cevap dx bölü x artı birin
+
+508
+00:37:31,367 --> 00:37:32,228
+karesi yapar.
+
+509
+00:37:34,668 --> 00:37:37,507
+Bir fonksiyonun arkadaşlar diferansiyeli
+
+510
+00:37:37,507 --> 00:37:39,407
+vasıtasıyla yaklaşık değer
+
+511
+00:37:39,407 --> 00:37:41,887
+hesap etmek için şu kullanılır.
+
+512
+00:37:42,487 --> 00:37:42,768
+Yani
+
+513
+00:37:42,768 --> 00:37:45,668
+fa artı dx yaklaşık
+
+514
+00:37:45,668 --> 00:37:45,987
+olarak
+
+515
+00:37:45,987 --> 00:37:47,668
+f üstü a çarpı
+
+516
+00:37:47,668 --> 00:37:48,288
+delta x
+
+517
+00:37:48,288 --> 00:37:49,407
+artı
+
+518
+00:37:49,407 --> 00:37:51,387
+fa şeklinde yaklaşık
+
+519
+00:37:51,387 --> 00:37:52,648
+değer hesap edebiliyoruz.
+
+520
+00:37:52,768 --> 00:37:53,427
+Örnek olarak
+
+521
+00:37:53,427 --> 00:37:55,607
+karakök 98'in
+
+522
+00:37:55,607 --> 00:37:57,027
+yaklaşık değerini hesap edelim.
+
+523
+00:37:57,728 --> 00:37:59,427
+Arkadaşlar bunun için en
+
+524
+00:37:59,427 --> 00:38:01,708
+uygun fonksiyon belirliyoruz ki
+
+525
+00:38:01,708 --> 00:38:04,288
+karakök 98'dir ve
+
+526
+00:38:04,288 --> 00:38:06,487
+98'e bakın yakın
+
+527
+00:38:06,487 --> 00:38:08,748
+karakök kolay anlamı bir en yakın sayıda
+
+528
+00:38:08,748 --> 00:38:09,768
+100 olduğuna göre
+
+529
+00:38:09,768 --> 00:38:10,587
+a'yı 100 olarak
+
+530
+00:38:10,587 --> 00:38:11,367
+seçeceğiz arkadaşlar.
+
+531
+00:38:11,567 --> 00:38:12,228
+Delta x'de
+
+532
+00:38:12,228 --> 00:38:15,007
+yani 100 eksi 2'den 98 vermesi için
+
+533
+00:38:15,007 --> 00:38:15,587
+delta x'de
+
+534
+00:38:15,587 --> 00:38:16,947
+eksi 2 seçiyoruz.
+
+535
+00:38:17,567 --> 00:38:18,148
+Bu durumda
+
+536
+00:38:18,148 --> 00:38:19,607
+fonksiyonun
+
+537
+00:38:19,607 --> 00:38:21,027
+birinci türevi nedir?
+
+538
+00:38:21,107 --> 00:38:22,387
+1 bölü 2 kök x'dir ve
+
+539
+00:38:22,387 --> 00:38:22,607
+onun
+
+540
+00:38:22,607 --> 00:38:23,668
+yüzdeki değeri de
+
+541
+00:38:23,668 --> 00:38:24,467
+1 bölü 20'dir.
+
+542
+00:38:24,567 --> 00:38:24,867
+Doğru mu?
+
+543
+00:38:25,387 --> 00:38:25,967
+O halde
+
+544
+00:38:25,967 --> 00:38:27,288
+ne diyeceğiz arkadaşlar?
+
+545
+00:38:27,427 --> 00:38:28,407
+Bakın fonun şurada duruyor.
+
+546
+00:38:28,887 --> 00:38:29,927
+f üstü a yani
+
+547
+00:38:29,927 --> 00:38:31,387
+şu 1 bölü 20 çarpı
+
+548
+00:38:31,387 --> 00:38:32,127
+delta x'de de
+
+549
+00:38:32,127 --> 00:38:32,887
+eksi 2'dir.
+
+550
+00:38:33,387 --> 00:38:33,927
+Artı
+
+551
+00:38:33,927 --> 00:38:34,427
+fa
+
+552
+00:38:34,427 --> 00:38:35,648
+a dediğimiz şey 100
+
+553
+00:38:35,648 --> 00:38:36,567
+100'ün karakökü de
+
+554
+00:38:36,567 --> 00:38:36,907
+10.
+
+555
+00:38:37,367 --> 00:38:39,067
+Buradan cevap yaklaşık olarak
+
+556
+00:38:39,067 --> 00:38:40,427
+karakök 98'in
+
+557
+00:38:40,427 --> 00:38:41,587
+yaklaşık değeri
+
+558
+00:38:41,587 --> 00:38:43,027
+9.9 gibi bir
+
+559
+00:38:43,027 --> 00:38:45,327
+sayı bulmuş oluyoruz arkadaşlar.
+
+560
+00:38:45,507 --> 00:38:46,987
+Normal şartlarda da
+
+561
+00:38:46,987 --> 00:38:48,307
+hesap makinesi kullanarak
+
+562
+00:38:48,307 --> 00:38:49,708
+yapıldığında da
+
+563
+00:38:49,708 --> 00:38:51,708
+9.89 çıkıyor.
+
+564
+00:38:51,807 --> 00:38:53,108
+Ki gerçek değeri çok yakın.
+
+565
+00:38:53,168 --> 00:38:53,587
+Gördüğünüz gibi.
+
+566
+00:38:56,148 --> 00:38:57,067
+Küp kök
+
+567
+00:38:57,067 --> 00:38:58,547
+65'in değerini
+
+568
+00:38:58,547 --> 00:38:59,268
+hesap ediyoruz.
+
+569
+00:38:59,427 --> 00:38:59,987
+Burada ise
+
+570
+00:38:59,987 --> 00:39:00,668
+yine
+
+571
+00:39:00,668 --> 00:39:02,027
+seçeceğimiz fonksiyon
+
+572
+00:39:02,027 --> 00:39:03,108
+küp kök x yakında
+
+573
+00:39:03,108 --> 00:39:03,748
+olmalı ki
+
+574
+00:39:03,748 --> 00:39:04,587
+buna en yakın
+
+575
+00:39:04,587 --> 00:39:05,507
+ifade olsun.
+
+576
+00:39:06,728 --> 00:39:07,947
+Bunun türeğini
+
+577
+00:39:07,947 --> 00:39:08,887
+aldığımızda
+
+578
+00:39:08,887 --> 00:39:09,987
+1 bölü 3 çarpı
+
+579
+00:39:09,987 --> 00:39:10,608
+x üzeri eksi
+
+580
+00:39:10,608 --> 00:39:11,708
+2 bölü 3 yapar.
+
+581
+00:39:12,148 --> 00:39:12,967
+a'yı ne seçeceğiz?
+
+582
+00:39:13,027 --> 00:39:13,688
+Bak a'yı yine
+
+583
+00:39:13,688 --> 00:39:14,648
+küp kökü
+
+584
+00:39:14,648 --> 00:39:15,367
+kolay anılabilir
+
+585
+00:39:15,367 --> 00:39:16,307
+65'e yakın
+
+586
+00:39:16,307 --> 00:39:17,507
+en yakın sayı seçeceğiz.
+
+587
+00:39:17,628 --> 00:39:18,648
+Yani kalkıp
+
+588
+00:39:18,648 --> 00:39:19,288
+mesela 27 de
+
+589
+00:39:19,288 --> 00:39:20,007
+seçebilirsiniz ama
+
+590
+00:39:20,007 --> 00:39:21,027
+o zaman ne olur?
+
+591
+00:39:21,148 --> 00:39:22,168
+Gerçekleri uzaklaşmış
+
+592
+00:39:22,168 --> 00:39:22,487
+olursunuz.
+
+593
+00:39:22,788 --> 00:39:23,527
+65'e yakın
+
+594
+00:39:23,527 --> 00:39:24,728
+küp kökü anılabilir
+
+595
+00:39:24,728 --> 00:39:25,788
+en yakın sayı seçiyoruz.
+
+596
+00:39:25,907 --> 00:39:26,087
+Yani
+
+597
+00:39:26,087 --> 00:39:27,108
+64.
+
+598
+00:39:27,947 --> 00:39:28,987
+O halde
+
+599
+00:39:28,987 --> 00:39:31,268
+a yerine 64 yazdığınızda
+
+600
+00:39:31,268 --> 00:39:33,148
+burası ne yapar arkadaşlar?
+
+601
+00:39:34,188 --> 00:39:35,127
+4 yapacaktır.
+
+602
+00:39:35,668 --> 00:39:35,867
+Yani
+
+603
+00:39:35,867 --> 00:39:36,547
+aslında
+
+604
+00:39:36,547 --> 00:39:37,567
+f a dediğimiz şey
+
+605
+00:39:37,567 --> 00:39:37,887
+4
+
+606
+00:39:37,887 --> 00:39:39,387
+f 3 daha fonksiyon
+
+607
+00:39:39,387 --> 00:39:40,027
+türeminin
+
+608
+00:39:40,027 --> 00:39:41,208
+a'daki değeri de
+
+609
+00:39:41,208 --> 00:39:42,407
+1 bölü 48 yapar.
+
+610
+00:39:42,807 --> 00:39:43,807
+Delta x'imiz 1 olacak.
+
+611
+00:39:43,947 --> 00:39:44,168
+Çünkü
+
+612
+00:39:44,168 --> 00:39:45,447
+64 artı 1
+
+613
+00:39:45,447 --> 00:39:47,527
+65 şu format uyması için
+
+614
+00:39:47,527 --> 00:39:48,507
+a artı delta x
+
+615
+00:39:48,507 --> 00:39:48,867
+o yüzden
+
+616
+00:39:48,867 --> 00:39:50,967
+delta x de 1 yapacağına göre
+
+617
+00:39:50,967 --> 00:39:52,887
+formülü yerine koyduğunuzda
+
+618
+00:39:52,887 --> 00:39:53,668
+1 bölü 48
+
+619
+00:39:53,668 --> 00:39:54,748
+çarpı
+
+620
+00:39:54,748 --> 00:39:55,648
+1 dağıtı 4'ten
+
+621
+00:39:55,648 --> 00:39:56,387
+cevap
+
+622
+00:39:56,387 --> 00:39:58,547
+4.0208 gibi
+
+623
+00:39:58,547 --> 00:39:59,887
+bir yaklaşık
+
+624
+00:39:59,887 --> 00:40:01,027
+değer hesap etmiş olacağız.
+
+625
+00:40:01,148 --> 00:40:02,567
+Normal şartlarda da
+
+626
+00:40:02,567 --> 00:40:03,327
+hesap makinesi
+
+627
+00:40:03,327 --> 00:40:04,367
+kullanarak da
+
+628
+00:40:04,367 --> 00:40:04,827
+bu şekilde
+
+629
+00:40:04,827 --> 00:40:05,288
+çıktığını
+
+630
+00:40:05,288 --> 00:40:05,648
+arkadaşlar
+
+631
+00:40:05,648 --> 00:40:06,067
+buradan
+
+632
+00:40:06,067 --> 00:40:07,248
+görmüş oluyordur.
+
+633
+00:40:07,248 --> 00:40:27,867
+bir yaklaşık
+
+634
+00:40:14,739 --> 00:40:16,719
+C şıkkına bakalım.
+
+635
+00:40:17,059 --> 00:40:19,959
+Sinus 46'nın yaklaşık değerini hesap edelim arkadaşlar.
+
+636
+00:40:20,699 --> 00:40:26,399
+Bu tarz matematiksel hesabı işlemlerde trigonometrik fonksiyonları açı değeri için radyan kullanmak zorunda.
+
+637
+00:40:26,479 --> 00:40:28,039
+Yoksa hata çıkıyor arkadaşlar.
+
+638
+00:40:28,879 --> 00:40:32,239
+46'nın radyan değeri şudur arkadaşlar.
+
+639
+00:40:32,379 --> 00:40:35,759
+Pi bölü 4 artı pi bölü 180 pittir.
+
+640
+00:40:36,519 --> 00:40:37,839
+Neden böyle yazdık?
+
+641
+00:40:37,839 --> 00:40:45,319
+Çünkü buranın değeri artı bura şeklinde yazacağımız için yani iki açını toplam şeklinde yazmak bize daha kolayca sağlayacak.
+
+642
+00:40:45,439 --> 00:40:45,599
+Neden?
+
+643
+00:40:46,139 --> 00:40:53,179
+Çünkü a artı delta x şeklinde yazıyoruz ki şu a değerini hesap edilebileceğimiz değer delta x ise herhangi bir şey.
+
+644
+00:40:54,879 --> 00:40:57,619
+Yani daha doğrusu gerçek sayıdan farkı diyelim.
+
+645
+00:40:57,859 --> 00:40:59,539
+Öyle söyleyeyim gerçek sayıdan farkı.
+
+646
+00:41:00,039 --> 00:41:04,259
+Fonksiyon fx sinus x ise türevi kosinus x'tir.
+
+647
+00:41:04,259 --> 00:41:08,219
+Sinus x'in pi bölü 4'teki değeri 1 bölü kökü gidir arkadaşlar.
+
+648
+00:41:08,559 --> 00:41:10,599
+Çarpı türevi nedir bunun?
+
+649
+00:41:10,739 --> 00:41:22,299
+Türevi kosinus x'in pi bölü 4'teki değeri 1 bölü kökü gidir zaten.
+
+650
+00:41:22,579 --> 00:41:23,179
+180.
+
+651
+00:41:24,319 --> 00:41:25,259
+Pi bölü 180.
+
+652
+00:41:25,439 --> 00:41:26,859
+Buradan cevabımız pi arkadaşlar.
+
+653
+00:41:27,319 --> 00:41:29,719
+3.14 bir değerindedir.
+
+654
+00:41:29,719 --> 00:41:34,399
+Buradan cevabımız 0.78 gibi bir şey 72 gibi bir değer buluruz.
+
+655
+00:41:34,559 --> 00:41:40,559
+Aslında normal şartlarda sinus 46'ın değer de arkadaşlar bu şekildeymiş.
+
+656
+00:41:40,639 --> 00:41:43,559
+Gördüğünüz gibi çok yakın değerler birbirine.
+
+657
+00:41:45,019 --> 00:41:46,299
+Neredeyse hatta aynısı.
+
+658
+00:41:46,819 --> 00:41:49,779
+Çünkü bunu yuvarladığınız zaman 0.72 yapar.
+
+659
+00:41:49,779 --> 00:41:53,399
+Evet son bir soru.
+
+660
+00:41:53,579 --> 00:41:55,839
+Kosinus 11 pi bölü 36.
+
+661
+00:41:56,479 --> 00:42:01,679
+Bunda ise yine 11 pi bölü 36 zaten radyal olarak verilmiş.
+
+662
+00:42:01,819 --> 00:42:07,339
+11 pi bölü 36'ya yakın yine hesap edebileceğimiz kosinus değeri.
+
+663
+00:42:07,399 --> 00:42:08,319
+Bakın 60 derece.
+
+664
+00:42:09,279 --> 00:42:09,679
+Doğru mu?
+
+665
+00:42:09,679 --> 00:42:13,559
+60 derece eksi pi bölü 36 şeklinde yazdığınız zaman
+
+666
+00:42:13,559 --> 00:42:17,439
+buradan da kosinus x'in türevi eksi sünus x'tir.
+
+667
+00:42:18,139 --> 00:42:20,419
+Eksi sünus x'in pi bölü 3'teki değeri
+
+668
+00:42:20,419 --> 00:42:22,339
+çarpı delta x.
+
+669
+00:42:22,419 --> 00:42:23,319
+Delta x'te mevcut.
+
+670
+00:42:23,619 --> 00:42:25,519
+Eksi pi bölü 36 olarak seçtik.
+
+671
+00:42:25,639 --> 00:42:30,039
+Artı arkadaşlar fa yani f pi bölü 3.
+
+672
+00:42:30,559 --> 00:42:32,519
+Kosinus pi bölü 3 de 1 bölü 2'dir.
+
+673
+00:42:32,659 --> 00:42:36,259
+Buradan cevap 0.57 gibi bir değer oluyor.
+
+674
+00:42:36,739 --> 00:42:39,519
+Gördüğünüz gibi aslında iki basamak olarak düşünürseniz
+
+675
+00:42:39,519 --> 00:42:42,459
+gerçek değerle birebir aynısı.
+
+676
+00:42:45,579 --> 00:42:48,199
+Var mı buraya kadar sormak istediğiniz bir şeyler arkadaşlar?
+
+677
+00:42:48,199 --> 00:43:17,819
+Evet.
+
+678
+00:43:17,819 --> 00:43:18,179
+Evet. Evet.
+
+679
+00:43:03,380 --> 00:43:23,260
+Şimdi yakın değeri şöyle. Yani bunu kendimiz bulabiliriz arkadaşlar. Yani açı değen özellik türev fonksiyonlar. Size bir tablo vermiştim. En son soruyorsun sanırım. Şimdi 11p bölü 36'ya yakın. Yani 11p bölü 36'a aslında.
+
+680
+00:43:23,260 --> 00:43:52,420
+3x13'ün arkadaşlar 11p bölü 36 çok daha makul. Değil mi? Yani derece olarak kaça tekabül ediyor sizce? 55 mi? 55 dereceye tekabül ediyor. Şimdi 55 dereceye en yakın, 55 dereceye en yakın, kosinüsünü hesap edebileceğimiz, size daha önce vermiş olduğu tabloya göre, yani hesap makinesinin olmadığını düşünüyorum. Bazı bilen açı değerler vasıtası ile bu işi yapacağız.
+
+681
+00:43:53,260 --> 00:43:59,220
+55 derece olarak, 55 derece olarak, 55 dereceye en yakın, 55 dereceye en yakın, 55 dereceye en yakın, 55 dereceye en yakın, kosinüsünü bulabileceğimiz en yakın 60 derecedir arkadaşlar.
+
+682
+00:43:59,780 --> 00:44:08,099
+Biz onu o yüzden 60 derece, eksi 5 derece, şu 60 derecedir, bu da 5 derecedir. Bu şekilde belirliyoruz. Buradan sonrası zaten kolay.
+
+683
+00:44:12,980 --> 00:44:14,079
+Anlaşıldı mı acaba?
+
+684
+00:44:38,099 --> 00:44:43,599
+Şimdi bir küçük bir şey daha vereceğim. Anı'nı nerede vereyim? Tarklı bir ortamda vermek istiyorum.
+
+685
+00:44:44,599 --> 00:44:49,099
+Yara whiteboard diye bir şey vardı ama şöyle ekran paylaşımı kapatsam mı olur?
+
+686
+00:44:57,427 --> 00:45:00,307
+ya da yine ekran paylaşımı üzerinden yapayım.
+
+687
+00:45:04,244 --> 00:45:29,784
+Whiteboard varmış burada, tamam. Şimdi arkadaşlar, şöyle bir şey anlatacağım size. Bir sonraki de aks hazırlık olması için. Aslında çok yabancı şeyler değil size. Bakın, x1 küçüktür, x2 için fx1 küçüktür, fx2 ise biz bu fonksiyona ne diyoruz arkadaşlar? Artan diyoruz.
+
+688
+00:45:33,523 --> 00:45:33,983
+Tamam.
+
+689
+00:45:36,983 --> 00:45:38,423
+Biz buna artanlıyoruz.
+
+690
+00:45:42,291 --> 00:45:51,531
+x1 küçük x2 iken fx1 büyüktür. fx2 ise de bunu sadece söyledik mi, söylemedik mi hatırlamıyorum.
+
+691
+00:45:57,427 --> 00:45:58,788
+Bunlar da az alan.
+
+692
+00:46:04,884 --> 00:46:26,724
+Bu artan-azalandık için arkadaşlar şöyle bir yol da var. Türev vasıtasıyla eğer verilen noktada veya veri aralıkta fonksiyonun birinci türevi sıfırdan büyükse bu fonksiyon artan oluyor. Sıfırdan büyük olduğu yerlerde fonksiyon artandır. Fonksiyonun türevinin sıfırdan küçük olduğu yerlerde de fonksiyon azalanır.
+
+693
+00:46:37,139 --> 00:46:44,639
+Yani bunu bir hatırlatalım. İlerleyen kısımları kullanacağız. Ama yeri gelmişken söylerim ki karşıda tekrar çıkacağını düşünüyorum.
+
+694
+00:46:44,639 --> 00:46:56,420
+Evet. Yani arttığına zaman fonksiyon tanınmış şu normalde arkadaşlar. Ama bunu türev vasıtasıyla da tekrar yeniden bunu söyleyebiliyoruz ki özellikle ilerleyen kısımları çok lazım olacak.
+
+695
+00:47:02,195 --> 00:47:05,775
+Şu anda sormak istediğiniz başka bir şey var mı arkadaşlar? Soru var mı acaba?
+
+696
+00:47:11,188 --> 00:47:17,068
+Eğer sorunuz yoksa, logaritmik ters fonksiyonların türevi.
+
+697
+00:47:17,528 --> 00:47:22,148
+Tabi ilerleyen onu arkadaşlar bir sonraki haftanın konusuna çok hızlı da gitmek istemiyorum.
+
+698
+00:47:23,228 --> 00:47:24,208
+Şöyle bakayım bir.
+
+699
+00:47:25,927 --> 00:47:27,367
+Onları tabi göreceğiz yani.
+
+700
+00:47:28,248 --> 00:47:29,248
+Transandant fonksiyonu.
+
+701
+00:47:29,327 --> 00:47:32,608
+Evet yani aynı bir sonraki haftanın konusu aslında.
+
+702
+00:47:33,728 --> 00:47:35,568
+Onu bir sonraki haftaya bırakalım.
+
+703
+00:47:35,568 --> 00:47:37,887
+Çünkü başladığımızda yarıda bırakmamak için.
+
+704
+00:47:37,887 --> 00:47:42,268
+aynen logaritmik fonksiyonların tanımı, köylerle falan da bahsedeceğiz orada.
+
+705
+00:47:42,948 --> 00:47:44,148
+Tekrar onları konuşacağız.
+
+706
+00:47:46,407 --> 00:47:48,128
+Yani yavaş yavaş gidelim.
+
+707
+00:47:48,188 --> 00:47:49,768
+Hani sinire sinire arkadaşlar.
+
+708
+00:47:50,088 --> 00:47:51,648
+Yani eksik, eksiniz olmadan
+
+709
+00:47:51,648 --> 00:47:54,148
+dediğim gibi her aşamayı tekrarlarsanız
+
+710
+00:47:54,148 --> 00:47:56,367
+bir sonraki aşamaya çok daha iyi öğrenirsiniz.
+
+711
+00:47:56,948 --> 00:47:58,387
+O bakımda dediğim gibi
+
+712
+00:47:58,387 --> 00:47:59,768
+tekrar hep söylediğim gibi
+
+713
+00:47:59,768 --> 00:48:01,347
+yani ders sonrasında
+
+714
+00:48:01,347 --> 00:48:03,407
+videoyu dinleyip tekrarlarsanız
+
+715
+00:48:03,407 --> 00:48:04,728
+şöyle bir 15 yıl akı bile
+
+716
+00:48:04,728 --> 00:48:07,528
+size bir sonraki dersi dinlemede çok faydasını
+
+717
+00:48:07,528 --> 00:48:07,907
+sağlayacaktır.
+
+718
+00:48:07,907 --> 00:48:09,427
+Hatta dediğim gibi
+
+719
+00:48:09,427 --> 00:48:09,748
+hatta dediğim gibi
+
+720
+00:48:09,748 --> 00:48:10,807
+hatta dediğim gibi ayrı bir kağıdı alın
+
+721
+00:48:10,807 --> 00:48:13,248
+çözdüğünüz soruları bir kez daha çözün arkadaşlar.
+
+722
+00:48:13,588 --> 00:48:15,448
+Hani bunu lütfen yapın.
+
+723
+00:48:15,708 --> 00:48:17,847
+Çünkü en iyi öğrenme yolu matematikte budur.
+
+724
+00:48:18,988 --> 00:48:20,448
+Lütfen bunu yaparsanız
+
+725
+00:48:20,448 --> 00:48:22,307
+çok daha verimli olacaktır ders.
+
+726
+00:48:23,528 --> 00:48:26,407
+O zaman sormak istediğiniz başka bir şey yoksa arkadaşlar
+
+727
+00:48:26,407 --> 00:48:27,568
+dersimizi bitiriyoruz.
+
+728
+00:48:27,568 --> 00:48:30,488
+dersten sonra aklınıza bir şey yoksa arkadaşlar
+
+729
+00:48:30,488 --> 00:48:32,608
+mail atabilirsiniz arkadaşlar.
+
+730
+00:48:32,608 --> 00:48:33,788
+mail adresini yazayım.
+
+731
+00:48:34,788 --> 00:48:37,508
+Buradan da yine bana soru sorabilirsiniz arkadaşlar.
+
+732
+00:48:37,508 --> 00:48:37,887
+verir.
+
+733
+00:48:42,708 --> 00:48:45,968
+Evet, o zaman kendinize iyi bakın arkadaşlar. Herkese iyi günler. Sağ olun.
+
+734
+00:48:52,148 --> 00:48:57,148
+uygulama yapacağız arkadaşlar. İlerleyen kısmından da uygulama yapacağız. Merak etmeyin. Uygulamış olacak.

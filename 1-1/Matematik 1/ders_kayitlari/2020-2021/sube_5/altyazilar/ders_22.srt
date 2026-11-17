@@ -1,0 +1,1863 @@
+1
+00:07:10,867 --> 00:07:13,048
+Günaydın arkadaşlar, beni duyabiliyor musunuz?
+
+2
+00:07:24,627 --> 00:07:26,887
+Evet arkadaşlar soru çözmeye devam ediyoruz.
+
+3
+00:07:28,407 --> 00:07:30,487
+Bakın karşımıza şöyle bir soru var.
+
+4
+00:07:31,807 --> 00:07:37,147
+Böyle bu şekilde verilen bir fonksiyonun tersinin var olup olmadığını gösteriniz.
+
+5
+00:07:37,147 --> 00:07:43,087
+Ve akabinde de f-1'in türevinin sıfırdaki değerini bulundunuz gibi bir soru var arkadaşlar.
+
+6
+00:07:44,867 --> 00:07:48,527
+Şimdi bu tarz sorular ters fonksiyonun türevinde vardı.
+
+7
+00:07:48,527 --> 00:07:57,187
+Bir fonksiyonun tersini almadan tersinin türevinin belli bir noktaki değerini hesap edebilmek için şöyle bir şey söylemiştik.
+
+8
+00:07:57,827 --> 00:08:02,347
+f-1 üstü b eşittir 1 bölü f üstü a şeklinde bir formül vermiştik arkadaşlar.
+
+9
+00:08:02,347 --> 00:08:03,267
+Onu kullanacağız.
+
+10
+00:08:04,707 --> 00:08:08,987
+Dinin gibi klasikte çok her sene sorulan soru tipidir.
+
+11
+00:08:09,707 --> 00:08:12,447
+Yani tersinin var olduğunu gösteriniz ve bu değeri bulunuz.
+
+12
+00:08:12,887 --> 00:08:17,947
+Belki tersinin var olduğunu gösteriniz sorulmaz da ama yine f-1 üstü 0.
+
+13
+00:08:17,947 --> 00:08:21,027
+Bu kadar test sılamına da uygun bir soru aslında.
+
+14
+00:08:22,707 --> 00:08:27,647
+Şimdi arkadaşlar tersinin var olduğunu göstermek için de şunu yapmıştık.
+
+15
+00:08:28,807 --> 00:08:33,548
+Fonksiyon artan veya azalan olduğunu gösterirsek fonksiyonun birebir olduğunu söylenir.
+
+16
+00:08:33,607 --> 00:08:37,148
+Ve bu şekilde de tersinin var olduğunu göstermek yeterli oluyordu.
+
+17
+00:08:37,148 --> 00:08:42,947
+Veyahut birebir örten olduğunu göstermek için fonksiyonun tersi var.
+
+18
+00:08:47,908 --> 00:08:50,268
+Tabi her zaman bunu gösterebilmek o kadar kolay.
+
+19
+00:08:50,307 --> 00:08:51,648
+Çok daha kısa bir yol oldu arkadaşlar.
+
+20
+00:08:52,387 --> 00:08:55,648
+Tabi fonksiyon artan veya azalan olduğunu göstermek için de fonksiyonun türevine bakıyorduk.
+
+21
+00:08:56,148 --> 00:09:00,168
+Bakın bu fonksiyonun türevine alırken kakurusun esas töreni formülü vasıtasıyla
+
+22
+00:09:00,168 --> 00:09:01,587
+şöyle bir şey çıktı.
+
+23
+00:09:01,727 --> 00:09:03,227
+E üzeri x böyle köklü bir ifade.
+
+24
+00:09:03,827 --> 00:09:07,307
+Zaten arkadaşlar e üzeri x daima pozitiftir.
+
+25
+00:09:07,587 --> 00:09:08,367
+Köklü bir ifade.
+
+26
+00:09:08,467 --> 00:09:09,168
+Burası zaten pozitiftir.
+
+27
+00:09:09,867 --> 00:09:11,888
+Bu yüzden burası sıfırdan büyüktür.
+
+28
+00:09:11,988 --> 00:09:15,627
+Yani fonksiyon türe sıfırdan büyük olduğu için fonksiyon artandır.
+
+29
+00:09:16,168 --> 00:09:16,888
+Birebirdir.
+
+30
+00:09:17,307 --> 00:09:21,447
+Ve arkadaşlar diyoruz ki tersi de mevcuttur diyoruz.
+
+31
+00:09:21,447 --> 00:09:24,927
+Devam edersek fonksiyonun arkadaşlar
+
+32
+00:09:24,927 --> 00:09:27,268
+dedik az önce.
+
+33
+00:09:27,587 --> 00:09:28,268
+İşte şu formülü.
+
+34
+00:09:28,268 --> 00:09:28,488
+Evet.
+
+35
+00:09:28,847 --> 00:09:31,548
+f eksi bir üstü f sıfır
+
+36
+00:09:31,548 --> 00:09:34,087
+f eksi bir üstü sıfır
+
+37
+00:09:34,087 --> 00:09:36,467
+bir bölü f üstü sıfır formülü kullanacağız.
+
+38
+00:09:37,127 --> 00:09:40,408
+Burada fonksiyon türevini zaten biz ne bulduk arkadaşlar?
+
+39
+00:09:40,668 --> 00:09:41,268
+Şu bulduk.
+
+40
+00:09:41,687 --> 00:09:43,048
+E üzeri x bölü köklü ifade.
+
+41
+00:09:43,048 --> 00:09:46,327
+Burada x yerine sıfır koyduğunuzda cevap
+
+42
+00:09:46,327 --> 00:09:48,528
+kök 2 şeklinde çıkıyor.
+
+43
+00:09:48,648 --> 00:09:50,048
+Yani fonksiyonun tersinin türevinin
+
+44
+00:09:50,048 --> 00:09:52,488
+sıfırdaki değeri kök 2'dir.
+
+45
+00:09:54,587 --> 00:09:54,827
+Evet.
+
+46
+00:10:00,179 --> 00:10:01,939
+Geldik bir diğer soruya arkadaşlar.
+
+47
+00:10:03,019 --> 00:10:04,419
+Bakın burada da bir
+
+48
+00:10:04,419 --> 00:10:06,399
+belirli integral sorusu var.
+
+49
+00:10:07,519 --> 00:10:08,159
+Burada
+
+50
+00:10:08,159 --> 00:10:09,579
+nasıl çözeceğiz arkadaşlar?
+
+51
+00:10:10,439 --> 00:10:11,839
+Şöyle bir yol izlenmiş.
+
+52
+00:10:12,719 --> 00:10:14,739
+Integral'i ayırabiliyoruz.
+
+53
+00:10:15,359 --> 00:10:15,879
+Ama tabii
+
+54
+00:10:15,879 --> 00:10:18,279
+şöyle bunların her birinin
+
+55
+00:10:18,279 --> 00:10:20,379
+tanım olabilmesi lazım. Direkt olarak zaten
+
+56
+00:10:20,379 --> 00:10:21,779
+soruya baktığınız zaman
+
+57
+00:10:21,779 --> 00:10:24,579
+hemen bir değişken değişikliği yapmanız mümkün değil.
+
+58
+00:10:25,240 --> 00:10:26,539
+Yani neye U neye T
+
+59
+00:10:26,539 --> 00:10:27,799
+yani kısmı
+
+60
+00:10:27,799 --> 00:10:29,740
+integrasyon mu yapacağız veya
+
+61
+00:10:29,740 --> 00:10:31,639
+herhangi bir belirgin bir
+
+62
+00:10:31,639 --> 00:10:33,859
+değişken değiştirme yapacağız. İlk etapta
+
+63
+00:10:33,859 --> 00:10:36,240
+görülemeyebilir. O bakımdan biraz daha
+
+64
+00:10:36,240 --> 00:10:38,219
+zaten E üzeri L'enli bir şey
+
+65
+00:10:38,219 --> 00:10:40,199
+olduğu için şurayı biraz
+
+66
+00:10:40,199 --> 00:10:42,279
+daha rahat hale getirebiliriz. Yani şurası
+
+67
+00:10:42,279 --> 00:10:44,199
+en azından sağ taraf kolay hale
+
+68
+00:10:44,199 --> 00:10:45,159
+getirebilir görülüyor.
+
+69
+00:10:46,079 --> 00:10:48,319
+Bunun da yolu şu arkadaşlar. Logaritma fonksiyonu
+
+70
+00:10:48,319 --> 00:10:49,240
+üzerini kullanarak
+
+71
+00:10:49,240 --> 00:10:51,059
+yani
+
+72
+00:10:51,059 --> 00:10:53,139
+L'en
+
+73
+00:10:53,139 --> 00:10:57,219
+E üzeri L'en
+
+74
+00:10:57,219 --> 00:10:57,839
+kosmüs
+
+75
+00:10:57,839 --> 00:10:58,979
+E üzeri X çekine yapıyoruz.
+
+76
+00:10:59,740 --> 00:11:01,000
+Tabii bu bize ne sağladı arkadaşlar?
+
+77
+00:11:01,579 --> 00:11:02,799
+Tangent X'in türevi
+
+78
+00:11:02,799 --> 00:11:04,719
+bir bölü kosmüs kare X olduğu için
+
+79
+00:11:04,719 --> 00:11:06,419
+veya sekant kare X olduğu için
+
+80
+00:11:06,419 --> 00:11:06,819
+arkadaşlar
+
+81
+00:11:06,819 --> 00:11:08,119
+böyle bir
+
+82
+00:11:08,119 --> 00:11:09,759
+avantaj sağladı. Yani
+
+83
+00:11:09,759 --> 00:11:11,519
+zaten dediğim gibi arkadaşlar
+
+84
+00:11:11,519 --> 00:11:11,819
+iki
+
+85
+00:11:11,819 --> 00:11:13,740
+yani bir fonksiyonun kendisi ve türevini
+
+86
+00:11:13,740 --> 00:11:15,159
+burada görebiliyorsanız
+
+87
+00:11:15,159 --> 00:11:16,379
+çok daha rahat olur.
+
+88
+00:11:16,459 --> 00:11:17,779
+Değişken değişikliği yapabilmek.
+
+89
+00:11:17,779 --> 00:11:20,599
+o bakımdan böyle yazmak zorunda kaldık arkadaşlar.
+
+90
+00:11:21,419 --> 00:11:22,740
+Buradan tangent
+
+91
+00:11:22,740 --> 00:11:23,240
+X'e
+
+92
+00:11:23,240 --> 00:11:24,159
+U dendiği zaman
+
+93
+00:11:24,159 --> 00:11:26,079
+D X bölü
+
+94
+00:11:26,079 --> 00:11:27,120
+kosmüs kare X
+
+95
+00:11:27,120 --> 00:11:27,639
+eşittir
+
+96
+00:11:27,639 --> 00:11:28,279
+D U olur.
+
+97
+00:11:29,399 --> 00:11:30,240
+X eşittir
+
+98
+00:11:30,240 --> 00:11:30,779
+sıfır için
+
+99
+00:11:30,779 --> 00:11:32,099
+tangent sıfır eşittir
+
+100
+00:11:32,099 --> 00:11:32,519
+U
+
+101
+00:11:32,519 --> 00:11:33,740
+o da sıfır olur.
+
+102
+00:11:35,079 --> 00:11:35,659
+X eşittir
+
+103
+00:11:35,659 --> 00:11:37,059
+P bölü 4 için
+
+104
+00:11:37,059 --> 00:11:37,919
+U da 1 olur.
+
+105
+00:11:38,120 --> 00:11:38,620
+O halde
+
+106
+00:11:38,620 --> 00:11:39,359
+sınırlar artık
+
+107
+00:11:39,359 --> 00:11:40,259
+sıfırdan arkadaşlar
+
+108
+00:11:40,259 --> 00:11:41,139
+1'e olacak.
+
+109
+00:11:41,699 --> 00:11:42,159
+E üzeri U
+
+110
+00:11:42,159 --> 00:11:42,539
+D U
+
+111
+00:11:42,539 --> 00:11:44,119
+Buranın entegrelerini aldığınızda
+
+112
+00:11:44,119 --> 00:11:45,139
+E üzeri U
+
+113
+00:11:45,139 --> 00:11:46,719
+U yerine önce bir sonra sıfır
+
+114
+00:11:46,719 --> 00:11:47,639
+yazdığınızda cevap
+
+115
+00:11:47,639 --> 00:11:48,819
+E-1
+
+116
+00:11:48,819 --> 00:11:49,899
+çıkıyor arkadaşlar.
+
+117
+00:11:50,219 --> 00:11:50,379
+Evet.
+
+118
+00:11:55,604 --> 00:11:57,484
+Evet yine bu tarz sorular
+
+119
+00:11:57,484 --> 00:11:59,204
+yine hem testi de
+
+120
+00:11:59,204 --> 00:12:01,604
+hem de klasik sınava da uygun soru tipi arkadaşlar.
+
+121
+00:12:02,884 --> 00:12:03,744
+Yani en sona
+
+122
+00:12:03,744 --> 00:12:05,504
+baktığınız zaman soru bizden
+
+123
+00:12:05,504 --> 00:12:07,624
+f üstü bir isteniliyor.
+
+124
+00:12:07,903 --> 00:12:09,204
+Yani f'e baktığımız zaman
+
+125
+00:12:09,204 --> 00:12:11,344
+aslında pi ve paydası
+
+126
+00:12:11,344 --> 00:12:13,604
+şey pi ve paydası taban ve kuvvet
+
+127
+00:12:13,604 --> 00:12:15,704
+x'in birer fonksiyonu olduğu için
+
+128
+00:12:15,704 --> 00:12:17,464
+arkadaşlar logaritmik türevi kuramını
+
+129
+00:12:17,464 --> 00:12:19,584
+uygulayacağız. Eşittiğin her iki
+
+130
+00:12:19,584 --> 00:12:21,684
+tarafında arkadaşlar x'e göre türevini aldığınızda
+
+131
+00:12:21,684 --> 00:12:23,944
+daha doğrusu öncelikle logaritmasını
+
+132
+00:12:23,944 --> 00:12:25,524
+aldığınızda şurada olduğu gibi
+
+133
+00:12:25,524 --> 00:12:27,964
+daha sonra bu aşamadan sonra
+
+134
+00:12:27,964 --> 00:12:29,564
+türevi alıyorsunuz. Türevi alırsak
+
+135
+00:12:29,564 --> 00:12:32,163
+sol tarafın türevi, logaritma fonksiyonunun
+
+136
+00:12:32,163 --> 00:12:33,783
+türevi, içinin türevi bölü kendisi.
+
+137
+00:12:34,584 --> 00:12:35,824
+Burada ise çarpım türevi
+
+138
+00:12:35,824 --> 00:12:37,724
+kuralını uygulayacağım. H üstü x
+
+139
+00:12:37,724 --> 00:12:39,663
+çarpı ln g x kare
+
+140
+00:12:39,663 --> 00:12:41,724
+artı h x
+
+141
+00:12:41,724 --> 00:12:43,984
+çarpı ln g x karenin türevi
+
+142
+00:12:43,984 --> 00:12:46,144
+de g x karenin türevi bölü g x karenin
+
+143
+00:12:46,144 --> 00:12:48,184
+kendisi. Aynı zamanda
+
+144
+00:12:48,184 --> 00:12:50,244
+burada g x kare
+
+145
+00:12:50,244 --> 00:12:52,384
+bu da birleşke fonksiyonu olduğu için x karenin
+
+146
+00:12:52,384 --> 00:12:53,584
+türevi gelecek 2x.
+
+147
+00:12:53,584 --> 00:12:56,684
+burada x yerine arkadaşlar bir koyduğumuz zaman
+
+148
+00:12:56,684 --> 00:12:58,903
+ne olacak arkadaşlar?
+
+149
+00:13:01,304 --> 00:13:01,944
+Zaten
+
+150
+00:13:01,944 --> 00:13:04,484
+f1 de
+
+151
+00:13:04,484 --> 00:13:05,884
+aynı zamanda bir olduğu için
+
+152
+00:13:05,884 --> 00:13:07,384
+8 olacak arkadaşlar.
+
+153
+00:13:07,384 --> 00:13:09,984
+teşekkür ederim.
+
+154
+00:13:15,731 --> 00:13:22,211
+alan ve hacim sorular arkadaşlar. Aslında bu sorular dahildi. O yüzden bu soruyu geçebiliriz.
+
+155
+00:13:24,192 --> 00:13:29,371
+L'Hospital kuralına bakalım. L'Hospital kuralı sınavı dahil arkadaşlar.
+
+156
+00:13:30,672 --> 00:13:36,192
+Limit, kotanjant x üzeri 1 bölü L'er x şeklinde bir soru var arkadaşlar.
+
+157
+00:13:37,351 --> 00:13:40,851
+Zaten belli ki sonsuz üzere 0 belirsizlik var burada.
+
+158
+00:13:40,851 --> 00:13:47,172
+Bunu yaparken de arkadaşlar bakın 0 üzeri 0, sonsuz üzere 0 ve 1 üzeri 0 tarzı belirsizliklerde
+
+159
+00:13:47,172 --> 00:13:55,451
+yani y'ye eşitli eşitli o zıferlen fonksiyonu ve her iki tarafın L'erini alarak arkadaşlar işleme devam ediyoruz.
+
+160
+00:13:55,531 --> 00:13:58,151
+O şekilde her iki tarafın limitini alıyoruz arkadaşlar.
+
+161
+00:13:58,291 --> 00:14:01,371
+Biz bu şekilde anlatmıştık bu belirsizlik türlerine.
+
+162
+00:14:01,371 --> 00:14:06,692
+eğer y'ye eşitli eşitliğinizde arkadaşlar her iki tarafın bir bölü L'e eşitliğinizde arkadaşlar
+
+163
+00:14:06,692 --> 00:14:08,491
+her iki tarafın logaritmasını aldığınızda
+
+164
+00:14:08,491 --> 00:14:09,631
+bakın ne olacak?
+
+165
+00:14:09,692 --> 00:14:12,151
+Bir bölü L'en x, L'en kotanjant x şeklinde olacak.
+
+166
+00:14:12,711 --> 00:14:14,751
+Ve her iki tarafın limitini aldığınızda
+
+167
+00:14:14,751 --> 00:14:16,312
+sağ tarafta ne diyebilirim?
+
+168
+00:14:16,351 --> 00:14:17,471
+Bir belirsizlik türü var.
+
+169
+00:14:17,692 --> 00:14:19,531
+Ve L'hospital kuralını uygularsak arkadaşlar
+
+170
+00:14:19,531 --> 00:14:23,011
+payın türevi bölü, paydanın türevi yaptık.
+
+171
+00:14:23,011 --> 00:14:25,011
+ne çıktı arkadaşlar?
+
+172
+00:14:25,011 --> 00:14:26,771
+Şöyle bir ifade çıktı.
+
+173
+00:14:27,451 --> 00:14:29,812
+Buranın limiti nedir arkadaşlar?
+
+174
+00:14:29,971 --> 00:14:31,432
+Burada da yine bir belirsizlik türü var.
+
+175
+00:14:32,111 --> 00:14:33,672
+Bir kez daha L'e pütel yaparsak
+
+176
+00:14:33,672 --> 00:14:37,871
+o zaman eksi bir bölü kosinüs kare x, çarpın türevi kuralını bulacağız.
+
+177
+00:14:39,011 --> 00:14:42,391
+Buradan arkadaşlar limitimiz cevap ne geldi arkadaşlar?
+
+178
+00:14:42,572 --> 00:14:43,291
+Eksi bir geldi.
+
+179
+00:14:43,891 --> 00:14:45,511
+Sağ taraf eksi bir ise arkadaşlar
+
+180
+00:14:45,511 --> 00:14:46,912
+logaritma fonksiyonu üzerinden
+
+181
+00:14:46,912 --> 00:14:50,991
+cevap limit y, e üzeri eksi bir olacak.
+
+182
+00:14:50,991 --> 00:14:51,991
+çünkü elen limit limit limit.
+
+183
+00:14:51,991 --> 00:14:53,751
+Çünkü elen limit limit olduğu için
+
+184
+00:14:53,751 --> 00:14:55,692
+buradan eksi bir gelecek.
+
+185
+00:14:56,471 --> 00:14:58,331
+Bu şekilde yapabilirsiniz arkadaşlar.
+
+186
+00:14:58,511 --> 00:14:59,451
+Bir diğer yol da var.
+
+187
+00:15:00,511 --> 00:15:01,692
+Bu şekilde de yapılabilir.
+
+188
+00:15:02,111 --> 00:15:04,751
+Yani değişen bir şey yok aslında arkadaşlar.
+
+189
+00:15:13,940 --> 00:15:17,080
+finalde muhakkak çıkacak bir soru tübedir. Bizye dahil değil.
+
+190
+00:15:20,000 --> 00:15:25,120
+Evet, indirgeme formülleri sınava dahil arkadaşlar. Yani şimdi haftalık dersi çerene bakıyorum.
+
+191
+00:15:26,140 --> 00:15:30,280
+11. haftalık sonuna kadar denildi. Yani şurası dahil, bunun öncesi.
+
+192
+00:15:30,940 --> 00:15:34,420
+Sadece buraya kadar. Bu özel bazı trigonometrik dönüşümler vardı.
+
+193
+00:15:35,140 --> 00:15:37,340
+Buraya kadar. Bunun öncesi dahil arkadaşlar.
+
+194
+00:15:44,884 --> 00:15:46,423
+Yani hacim sorusunu da
+
+195
+00:15:46,423 --> 00:15:48,183
+en azından finali doğru çözeriz.
+
+196
+00:15:48,464 --> 00:15:49,903
+Şimdi şu sorulara bakalım.
+
+197
+00:15:50,844 --> 00:15:51,984
+Kosinus ln
+
+198
+00:15:51,984 --> 00:15:53,683
+x'in integrali arkadaşlar.
+
+199
+00:15:54,604 --> 00:15:56,283
+Burada ln x'e u dendiği zaman
+
+200
+00:15:56,283 --> 00:15:57,903
+tabii şöyle
+
+201
+00:15:57,903 --> 00:15:59,183
+burada arkadaşlar
+
+202
+00:15:59,183 --> 00:16:01,783
+daha doğrusu bir kısmı
+
+203
+00:16:01,783 --> 00:16:03,384
+integrasyon yöntemi uygulayacağız.
+
+204
+00:16:06,264 --> 00:16:07,903
+Yani kosinus ln
+
+205
+00:16:07,903 --> 00:16:09,964
+x'e u gerek alan d x'i
+
+206
+00:16:09,964 --> 00:16:11,604
+ifadeye de d v dendiği zaman
+
+207
+00:16:11,604 --> 00:16:13,824
+eşitliğin her tarafında
+
+208
+00:16:13,824 --> 00:16:15,903
+arkadaşlar bakın şurada türevini aldığınızda
+
+209
+00:16:15,903 --> 00:16:18,283
+eksi bir bölük sinüs
+
+210
+00:16:18,283 --> 00:16:19,504
+ln
+
+211
+00:16:19,504 --> 00:16:21,644
+x d x d u olur.
+
+212
+00:16:22,504 --> 00:16:23,504
+Buradan da her tarafı
+
+213
+00:16:23,504 --> 00:16:25,803
+integrali aldığınızda x eşittir v olur.
+
+214
+00:16:26,803 --> 00:16:27,903
+Hatırlayalım kısmı
+
+215
+00:16:27,903 --> 00:16:29,384
+integrasyonu u çarpı v
+
+216
+00:16:29,384 --> 00:16:30,943
+eksi v çarpı u idi.
+
+217
+00:16:31,604 --> 00:16:33,604
+u çarpı yani x çarpı
+
+218
+00:16:33,604 --> 00:16:36,004
+kosinus ln x eksi v çarpı
+
+219
+00:16:36,004 --> 00:16:36,584
+şu.
+
+220
+00:16:38,303 --> 00:16:39,384
+v çarpı d u.
+
+221
+00:16:39,384 --> 00:16:41,504
+Burayı çarptığınız zaman sağ tarafta bakın yine
+
+222
+00:16:41,504 --> 00:16:43,964
+kosinus ln x'in integrali olduğu için
+
+223
+00:16:43,964 --> 00:16:46,464
+bunu bir tarafa toplarsak arkadaşlar
+
+224
+00:16:46,464 --> 00:16:49,303
+kosinus ln x d x eşittir.
+
+225
+00:16:50,344 --> 00:16:51,183
+Bir bölükü
+
+226
+00:16:51,183 --> 00:16:53,303
+şu ifade ve artı c'yi de eklemeyi
+
+227
+00:16:53,303 --> 00:16:54,024
+unutmuyoruz.
+
+228
+00:16:54,024 --> 00:16:56,744
+evet.
+
+229
+00:18:27,220 --> 00:18:29,420
+Evet.
+
+230
+00:18:29,620 --> 00:18:31,240
+Rol teoremini hatırlayalım arkadaşlar.
+
+231
+00:18:31,440 --> 00:18:33,759
+Şuydu. Kapalı aralıkta fonksiyon
+
+232
+00:18:33,759 --> 00:18:35,420
+sürekli verilen
+
+233
+00:18:35,420 --> 00:18:37,579
+açık aralıkta türedenebilir olmak kaydıyla
+
+234
+00:18:37,579 --> 00:18:40,680
+ve aynı zamanda
+
+235
+00:18:40,680 --> 00:18:45,180
+aralığın uç noktalarında
+
+236
+00:18:45,180 --> 00:18:47,240
+fonksiyonun aldığı değer eşitse yani
+
+237
+00:18:47,240 --> 00:18:49,319
+f0 eşittir f1 ise o zaman
+
+238
+00:18:49,319 --> 00:18:51,160
+f üstü c eşittir
+
+239
+00:18:51,160 --> 00:18:52,660
+0 olacak şekilde bir
+
+240
+00:18:52,660 --> 00:18:55,180
+verilen açık aralığa ait bir
+
+241
+00:18:55,180 --> 00:18:57,519
+c sayısı vardır diyorduk arkadaşlar.
+
+242
+00:18:58,660 --> 00:18:59,440
+Yani rol teoremi
+
+243
+00:18:59,440 --> 00:19:01,380
+buydu. Bakalım
+
+244
+00:19:01,380 --> 00:19:03,460
+fx fonksiyonu zaten 0,1
+
+245
+00:19:03,460 --> 00:19:05,059
+aralığında arkadaşlar sürekli
+
+246
+00:19:05,059 --> 00:19:07,500
+yani herhangi bir tanımsız yapacak
+
+247
+00:19:07,500 --> 00:19:08,740
+bir durum söz konusu değil.
+
+248
+00:19:09,840 --> 00:19:11,360
+Fonksiyon türevini aldığımızda
+
+249
+00:19:11,360 --> 00:19:12,600
+bakın fonksiyon türevi şu
+
+250
+00:19:12,600 --> 00:19:16,039
+0,1
+
+251
+00:19:16,039 --> 00:19:17,079
+aralığında türevli
+
+252
+00:19:17,079 --> 00:19:19,380
+bakın mesela 1 de türevi değil o yüzden
+
+253
+00:19:19,380 --> 00:19:20,620
+açık aralık diyoruz zaten.
+
+254
+00:19:22,440 --> 00:19:23,819
+Aynı zamanda bir de fonksiyon
+
+255
+00:19:23,819 --> 00:19:25,519
+uç noktalarındaki aldığı
+
+256
+00:19:25,519 --> 00:19:26,620
+değerler eşit mi acaba?
+
+257
+00:19:26,819 --> 00:19:28,079
+Onlar eşit arkadaşlar.
+
+258
+00:19:28,240 --> 00:19:29,019
+f0 eşittir.
+
+259
+00:19:29,100 --> 00:19:29,640
+pi bölü 2
+
+260
+00:19:29,640 --> 00:19:32,480
+f1 de pi bölü 2
+
+261
+00:19:32,480 --> 00:19:35,360
+o halde rol teoremi buna
+
+262
+00:19:35,360 --> 00:19:36,019
+uygulanabilir.
+
+263
+00:19:36,519 --> 00:19:37,019
+Ve buradan da
+
+264
+00:19:37,019 --> 00:19:37,960
+f üstü c eşittir
+
+265
+00:19:37,960 --> 00:19:38,840
+0 olacak şekilde
+
+266
+00:19:38,840 --> 00:19:40,920
+f üstü c arkadaşlar
+
+267
+00:19:40,920 --> 00:19:41,920
+bakın şu idi zaten
+
+268
+00:19:41,920 --> 00:19:43,160
+x yerine c koyarsanız
+
+269
+00:19:43,160 --> 00:19:43,680
+bu olur.
+
+270
+00:19:44,279 --> 00:19:45,160
+Karşılıklı buradan
+
+271
+00:19:45,160 --> 00:19:46,900
+c'ye yalnız bıraktığınız zaman
+
+272
+00:19:46,900 --> 00:19:48,319
+2 bölü p
+
+273
+00:19:48,319 --> 00:19:49,620
+2 bölü p sayısı arkadaşlar
+
+274
+00:19:49,620 --> 00:19:51,840
+0 ile 1 arasına düştüğü için
+
+275
+00:19:51,840 --> 00:19:53,180
+o halde arkadaşlar
+
+276
+00:19:53,180 --> 00:19:54,579
+görevi c'de mevcuttur
+
+277
+00:19:54,579 --> 00:19:55,160
+diyoruz.
+
+278
+00:19:56,840 --> 00:19:58,380
+Yani bu tarz sorular da yine
+
+279
+00:19:58,380 --> 00:19:59,840
+aslında teste sorulamayız.
+
+280
+00:19:59,940 --> 00:20:01,059
+C sayısı sorulamayız.
+
+281
+00:20:01,140 --> 00:20:01,880
+Yani teste uygun
+
+282
+00:20:01,880 --> 00:20:03,640
+aynı zamanda sorular
+
+283
+00:20:03,640 --> 00:20:04,380
+arkadaşlar.
+
+284
+00:20:04,380 --> 00:20:12,680
+çok güzel.
+
+285
+00:20:16,243 --> 00:20:41,403
+Evet, bakın her ne kadar zor bir integral gibi görünse de arkadaşlar, bu integral de aslında basit kesileri ayırma yöntemiyle çözülüyor. Yani sinüs t'ye burada u dendiği zaman arkadaşlar, kosinüs t dt d u oluyor. Buradan kosinüs kare t, 1 eksi u kare olacaktır. Yerine koyduğunuzda şöyle bir kesirli bir ifade olacak arkadaşlar.
+
+286
+00:20:41,403 --> 00:21:04,943
+bunu da basit kesileri ayırdığınızda şöyle sağ tarafta. Bakın A'yı, B'yi ve C'yi bulursunuz. Bununla ilgili farklı yöntemler de göstermiştik. Bu durumda A eksi 1 bölü 6, B 8 bölü 5, C de 3 bölü 10, artı C dedik. U yerine tekrar eski değişkenlerimize geri dönüş yaptığımızda bizden istenen cevabı bu şekilde yaratmış oluruz.
+
+287
+00:21:11,476 --> 00:21:13,356
+Evet, Basır Kesirliler bakalım hemen.
+
+288
+00:21:14,796 --> 00:21:20,296
+Evet, Basır Kesirliler şu an ikinci vize dahildeymiş ama dediğim gibi her sene gelen bir soru tipidir.
+
+289
+00:21:20,936 --> 00:21:22,736
+Finale illaki çıkacaktır. Aynen.
+
+290
+00:21:26,324 --> 00:21:38,923
+Evet, geldik bu soruya arkadaşlar. x büyüktür sıfır için fx eşittir p bölü 4 artı art tanjant dedik ile verilen fonksiyonun sabit bir fonksiyon olduğunu
+
+291
+00:21:42,836 --> 00:21:44,836
+bulunur ve değerini gösterilmiş.
+
+292
+00:21:44,915 --> 00:21:47,476
+Size geldi arkadaşlar, geçmiş yıllarda.
+
+293
+00:21:48,556 --> 00:21:53,056
+Yani sabit olduğunu gösteriniz olmaz da ne olur?
+
+294
+00:21:53,796 --> 00:21:56,756
+Sabit değerini bulunur şeklinde sorulabilir sonuçta.
+
+295
+00:21:57,355 --> 00:21:58,155
+Teste de uygun.
+
+296
+00:21:59,736 --> 00:22:01,655
+Arkadaşlar, bakın türevini alacaksınız.
+
+297
+00:22:01,776 --> 00:22:04,195
+Yani bir fonksiyon sabit olup olmanı nasıl gösterirsiniz?
+
+298
+00:22:04,336 --> 00:22:07,576
+Fonksiyon türevi sıfırsa fonksiyonun kendisi sabittir.
+
+299
+00:22:07,756 --> 00:22:11,955
+Bu şekilde zaten sabit fonksiyon olduğunu böyle gösterebiliriz.
+
+300
+00:22:11,955 --> 00:22:17,736
+fonksiyon türevini aldığınız zaman arkadaşlar, bakın fonksiyon türevi sıfır çıkıyor.
+
+301
+00:22:18,796 --> 00:22:21,336
+Sıfır çıktığı için de fonksiyon sabit edilir diyoruz.
+
+302
+00:22:21,816 --> 00:22:24,496
+Peki fonksiyonun aldığı değeri nasıl bulacağız?
+
+303
+00:22:24,655 --> 00:22:25,316
+Aslında soru bu.
+
+304
+00:22:26,276 --> 00:22:31,175
+Arkadaşlar, sabit bir fonksiyonunda x yerine ne yazarsanız yazın hep c'dir değil mi?
+
+305
+00:22:31,296 --> 00:22:31,655
+Doğru mu?
+
+306
+00:22:31,655 --> 00:22:36,596
+Bu durumda mesela f yerine x yazdığınız zaman zaten fonksiyon şu.
+
+307
+00:22:37,556 --> 00:22:40,456
+f yerine sıfır yazarsanız, yani en basit yani.
+
+308
+00:22:40,456 --> 00:22:44,476
+çünkü daha her şey şu trigonometrik ifadelerin yok olması için.
+
+309
+00:22:45,115 --> 00:22:47,956
+f yerine sıfır yazdığınız zaman da c eşittir, pi bölü 4 çıkıyor.
+
+310
+00:22:48,375 --> 00:22:49,576
+İşte buradan biz diyoruz ki,
+
+311
+00:22:50,316 --> 00:22:53,736
+ne yazarsak yazalım, aynı sonuç vermesi gerektiğinden
+
+312
+00:22:53,736 --> 00:22:56,855
+sıfır yazdığımız için pi bölü 4 çıktı.
+
+313
+00:22:56,976 --> 00:22:59,155
+O halde söz konusu bu sabit fonksiyon,
+
+314
+00:22:59,556 --> 00:23:02,175
+f x eşittir, pi bölü 4 diyebiliriz arkadaşlar.
+
+315
+00:23:02,175 --> 00:23:04,415
+Bu da bizden istenen cevap.
+
+316
+00:23:04,415 --> 00:23:06,415
+basit ve güzel bir soru yazdığınızı
+
+317
+00:23:06,415 --> 00:23:07,415
+arkadaşlar.
+
+318
+00:23:07,415 --> 00:23:07,736
+Evet,
+
+319
+00:23:07,736 --> 00:23:08,415
+basit ve güzel bir soru yazın arkadaşlar.
+
+320
+00:23:11,508 --> 00:23:16,627
+Evet, bu improper integral. Bu zaten daha hiç işlemelik. Hafta işleyeceğiz sınavdan sonra.
+
+321
+00:23:18,627 --> 00:23:24,668
+Evet, x kare artı 1 değerlere bakalım. Çünkü onunla ilgili sınava dahil arkadaşlar burası.
+
+322
+00:23:27,807 --> 00:23:32,948
+Bakın, bu fonksiyonun yerel maksimum ve yerel minimum değerlerini bulalım şeklinde bir soru.
+
+323
+00:23:33,968 --> 00:23:40,587
+Arkadaşlar, mantık şu. Yani fonksiyon türevini alacaksınız, türevin içerisine ineceksiniz. Bu basit.
+
+324
+00:23:40,587 --> 00:23:42,807
+fonksiyon türevin içerisine aldık arkadaşlar.
+
+325
+00:23:42,807 --> 00:23:45,408
+Pay sıfırı.
+
+326
+00:23:50,612 --> 00:23:52,231
+işitlediğiniz zaman x artı eksi.
+
+327
+00:23:53,072 --> 00:23:55,072
+Değerleri de kritik noktaydı da artı eksi 4'tür.
+
+328
+00:23:55,432 --> 00:24:01,632
+Bu artı eksi 4'te fonksiyonu tanımlı olduğu için kritik noktayı olarak alan biriniz arkadaşlar.
+
+329
+00:24:01,852 --> 00:24:03,451
+Bunda bir problem yok.
+
+330
+00:24:04,112 --> 00:24:12,552
+Bu noktaları tabloya yerleştirdiğimizde, bakın fonksiyon zaten eksi 4 artı 4 aralığına bakacağımız için,
+
+331
+00:24:12,552 --> 00:24:15,152
+çünkü fonksiyonun tanım kıymetse eksi 4 artı 4.
+
+332
+00:24:15,532 --> 00:24:20,451
+Bu köklü ifadeden dolayı 4'ten sonrası ve eksi 4'ten öncesi bizi ilgilendirmiyor.
+
+333
+00:24:20,612 --> 00:24:50,592
+2 köklü ifadeden dolayı 4 artı 4.
+
+334
+00:24:50,612 --> 00:25:20,592
+Bunlar içerisinde en büyük noktası ve eksi 4 artı 4.
+
+335
+00:25:20,592 --> 00:25:20,872
+evet.
+
+336
+00:25:25,811 --> 00:25:33,151
+Evet, yine bu özel trigonometrik dönüşüm arkadaşlar. Bu sınava dahil değil ama yine bakmakta fayda var arkadaşlar.
+
+337
+00:25:41,971 --> 00:25:43,531
+Geldik bu soruya arkadaşlar.
+
+338
+00:25:43,932 --> 00:25:44,771
+Güzel bir soru yine.
+
+339
+00:25:45,132 --> 00:25:46,451
+Testi de uygun aslında.
+
+340
+00:25:49,152 --> 00:25:51,372
+Eğer x büyüktür 0 için arkadaşlar
+
+341
+00:25:51,372 --> 00:25:54,331
+şöyle bir eşitliği
+
+342
+00:25:54,331 --> 00:25:57,372
+sağlayan
+
+343
+00:25:57,372 --> 00:26:00,091
+f fonksiyonunu
+
+344
+00:26:00,091 --> 00:26:02,091
+yine intervasyon hesabının
+
+345
+00:26:02,091 --> 00:26:03,791
+temel teoremi gelince arkadaşlar
+
+346
+00:26:03,791 --> 00:26:05,591
+buradan şunu söyleyebiliriz.
+
+347
+00:26:05,632 --> 00:26:07,711
+Eşitliğin her iki tarafın törenini aldığımızda
+
+348
+00:26:07,711 --> 00:26:09,531
+her iki tarafın törenini aldığımızda
+
+349
+00:26:09,531 --> 00:26:10,771
+burası 0 olur.
+
+350
+00:26:10,771 --> 00:26:13,872
+Şurası ise t yerine x koyduğunuzda
+
+351
+00:26:13,872 --> 00:26:16,271
+f x bölü x kare eşittir.
+
+352
+00:26:16,791 --> 00:26:18,291
+Sağ tarafın türevi ise
+
+353
+00:26:18,291 --> 00:26:20,231
+bir bölü x'dir arkadaşlar.
+
+354
+00:26:20,451 --> 00:26:21,432
+Buradan f x nedir?
+
+355
+00:26:21,991 --> 00:26:23,451
+x üzeri 3 bölü 2'dir.
+
+356
+00:26:23,652 --> 00:26:26,491
+Zaten bizden istenen birincisi buydu.
+
+357
+00:26:27,211 --> 00:26:28,392
+Diğeri de a sayısını
+
+358
+00:26:28,392 --> 00:26:29,531
+bulunduğumuz idi arkadaşlar.
+
+359
+00:26:30,251 --> 00:26:31,771
+Peki burada nasıl bir yol izleyeceğiz?
+
+360
+00:26:31,771 --> 00:26:32,912
+Zaten f x'i biz
+
+361
+00:26:32,912 --> 00:26:35,551
+x üzeri 3 bölü 2 bulduğumuz için
+
+362
+00:26:35,551 --> 00:26:38,051
+getirip bunu f t yerine yazarsak
+
+363
+00:26:38,051 --> 00:26:39,372
+t üzeri 3 bölü 2 yapar
+
+364
+00:26:39,372 --> 00:26:41,152
+ve söz konusu arkadaşlar
+
+365
+00:26:41,152 --> 00:26:42,491
+integre aldığınız zaman
+
+366
+00:26:42,491 --> 00:26:43,251
+bakın buradan
+
+367
+00:26:43,251 --> 00:26:44,692
+a'yı direkt olarak
+
+368
+00:26:44,692 --> 00:26:45,932
+9 bulabiliyorsunuz.
+
+369
+00:26:46,152 --> 00:26:47,692
+Yani güzel basit ve kısa bir soru.
+
+370
+00:26:48,331 --> 00:26:49,771
+Bence güzel bir soru olmuş.
+
+371
+00:26:49,971 --> 00:26:51,392
+Test ile de uygun arkadaşlar.
+
+372
+00:26:51,551 --> 00:26:52,231
+Bir soru tipi.
+
+373
+00:26:52,672 --> 00:26:52,892
+Evet.
+
+374
+00:26:56,471 --> 00:26:57,791
+Soru sorun var mı arkadaşlar?
+
+375
+00:27:09,076 --> 00:27:10,956
+çözüm soruları, ders notlarımız
+
+376
+00:27:10,956 --> 00:27:12,655
+arkadaşlar. Bunları tekrar ederseniz
+
+377
+00:27:12,655 --> 00:27:14,796
+onun dışında ekstra soruları da tabii
+
+378
+00:27:14,796 --> 00:27:16,915
+çözerseniz sizler için çok
+
+379
+00:27:16,915 --> 00:27:18,776
+daha iyi olacaktır. Sınava daha
+
+380
+00:27:18,776 --> 00:27:20,615
+donanımlı girmiş olacaksınız arkadaşlar.
+
+381
+00:27:21,895 --> 00:27:23,115
+Anlamadığınız, çözemediğiniz
+
+382
+00:27:23,115 --> 00:27:24,596
+sorular olursa da bana her zaman
+
+383
+00:27:24,596 --> 00:27:26,516
+e-mail atabilirsiniz arkadaşlar.
+
+384
+00:27:26,895 --> 00:27:28,476
+Bunda bir sorun yok. Gönderebilirsiniz
+
+385
+00:27:28,476 --> 00:27:29,036
+dediğiniz zaman.
+
+386
+00:27:30,556 --> 00:27:30,716
+Evet.
+
+387
+00:27:33,016 --> 00:27:34,635
+Özellikle arkadaşlar sınav
+
+388
+00:27:34,635 --> 00:27:36,576
+bilmiyorum sınav sistemi tanımlandı mı
+
+389
+00:27:36,576 --> 00:27:38,056
+sizlere? Tanımlamamış olabilir.
+
+390
+00:27:38,056 --> 00:27:40,175
+Sınav başlama saatine yakın
+
+391
+00:27:40,175 --> 00:27:41,875
+işte cuma günü
+
+392
+00:27:41,875 --> 00:27:44,175
+sınava birkaç saat kala
+
+393
+00:27:44,175 --> 00:27:46,516
+bakın eğer tanımlanmalıysa
+
+394
+00:27:46,516 --> 00:27:48,336
+bizlere söyleyin.
+
+395
+00:27:48,576 --> 00:27:50,195
+Bugün de tanımlanacaktır. Bugün
+
+396
+00:27:50,195 --> 00:27:51,976
+perşembe. Çünkü
+
+397
+00:27:51,976 --> 00:27:54,236
+arkadaşlarla halen daha uğraşılıyor.
+
+398
+00:27:54,615 --> 00:27:56,096
+Bazı aksaklıklar falan var.
+
+399
+00:27:56,175 --> 00:27:58,395
+Soruları falan tekrar tekrar
+
+400
+00:27:58,395 --> 00:27:59,976
+bakılıyor. Kontroller eğiliyor.
+
+401
+00:28:01,596 --> 00:28:02,655
+O yüzden
+
+402
+00:28:02,655 --> 00:28:04,195
+yani şimdi hemen
+
+403
+00:28:04,195 --> 00:28:06,256
+endişelenmenize gerek yok.
+
+404
+00:28:06,256 --> 00:28:07,316
+tanımlanmamış olabilir.
+
+405
+00:28:07,915 --> 00:28:09,536
+Ama sınav saatinde şöyle en azından
+
+406
+00:28:09,536 --> 00:28:11,036
+yani en geç bir iki saat kala
+
+407
+00:28:11,036 --> 00:28:13,435
+baktığınız hala tanımlanmadıysa
+
+408
+00:28:13,435 --> 00:28:14,496
+problem var demektir.
+
+409
+00:28:14,915 --> 00:28:16,476
+O yüzden bizlere bilgi gönderebilirsiniz.
+
+410
+00:28:16,596 --> 00:28:17,076
+Aynı zamanda
+
+411
+00:28:17,076 --> 00:28:19,816
+hem kendi mailim arkadaşlar
+
+412
+00:28:19,816 --> 00:28:21,596
+yazayım onları.
+
+413
+00:28:21,796 --> 00:28:22,256
+Hem de
+
+414
+00:28:22,256 --> 00:28:24,596
+bölüm mail adresine gönderirseniz
+
+415
+00:28:24,596 --> 00:28:26,256
+yani onların da bilgileri olur.
+
+416
+00:28:26,256 --> 00:28:29,976
+şöyle diyelim.
+
+417
+00:28:29,976 --> 00:28:31,036
+[e-posta]
+
+418
+00:28:31,036 --> 00:28:32,375
+[e-posta] ve
+
+419
+00:28:32,375 --> 00:28:33,855
+[e-posta]
+
+420
+00:28:33,855 --> 00:28:35,236
+[e-posta]
+
+421
+00:28:35,236 --> 00:28:36,936
+diye de benim adresim zaten.
+
+422
+00:28:38,556 --> 00:28:40,076
+Bu ikisini de gönderin arkadaşlar.
+
+423
+00:28:40,256 --> 00:28:41,375
+Ama de gibi hemen değil yani.
+
+424
+00:28:41,496 --> 00:28:42,336
+Panik yapmayın hemen.
+
+425
+00:28:42,976 --> 00:28:44,716
+Sınav saatinde birkaç saat kalı alacak.
+
+426
+00:28:45,216 --> 00:28:46,456
+Bakın halen tanımlanması.
+
+427
+00:28:46,456 --> 00:28:50,135
+Bir soru var.
+
+428
+00:28:50,655 --> 00:28:52,355
+Parçalı veya mutlak değerli
+
+429
+00:28:52,355 --> 00:28:53,556
+integral dahil miydi?
+
+430
+00:28:53,635 --> 00:28:55,536
+Yoksa sürekli pozitif integral.
+
+431
+00:28:56,155 --> 00:28:58,355
+Yok parçalara dahil aslında arkadaşlar.
+
+432
+00:28:59,096 --> 00:29:00,375
+Şu an karşımıza çıkmadı ama
+
+433
+00:29:00,375 --> 00:29:02,516
+parçalı fonksiyonlarla ilgili yine
+
+434
+00:29:02,516 --> 00:29:05,076
+tabii sınava dahil sorun ihtimali var.
+
+435
+00:29:05,076 --> 00:29:05,875
+Evet.
+
+436
+00:29:07,056 --> 00:29:09,096
+Yani sadece dahil olmaya bakalım şimdi.
+
+437
+00:29:10,316 --> 00:29:11,556
+Trigromatik dönüşümler.
+
+438
+00:29:12,256 --> 00:29:13,976
+Bu hani şey işte
+
+439
+00:29:13,976 --> 00:29:17,596
+akare artı x kare tarzı integrallerin
+
+440
+00:29:17,596 --> 00:29:19,155
+işte x kare eksi akare
+
+441
+00:29:19,155 --> 00:29:21,836
+ve akare eksi x kare tarzı integrallerin
+
+442
+00:29:21,836 --> 00:29:23,115
+birinde x eşitir sinus x
+
+443
+00:29:23,115 --> 00:29:24,556
+birinde x eşitir taj jant x
+
+444
+00:29:24,556 --> 00:29:26,556
+birinde x eşitir sekant x
+
+445
+00:29:26,556 --> 00:29:28,096
+değişken değişiklikleri yapıyoruz.
+
+446
+00:29:28,576 --> 00:29:31,155
+Bu üç integralin olduğu konu dahil değil.
+
+447
+00:29:31,796 --> 00:29:32,936
+Rasyonel fonksiyonlar
+
+448
+00:29:32,936 --> 00:29:34,635
+kesirli yani basit kesirli
+
+449
+00:29:34,635 --> 00:29:35,855
+ayrma yöntemi dahil değil.
+
+450
+00:29:36,476 --> 00:29:38,296
+Alan hacim sorular dahil değil.
+
+451
+00:29:38,796 --> 00:29:39,476
+Yani o yüzden
+
+452
+00:29:39,476 --> 00:29:41,816
+mutlak değerli sorular
+
+453
+00:29:41,816 --> 00:29:43,615
+gelme ihtimali var arkadaşlar.
+
+454
+00:29:43,615 --> 00:29:44,135
+Evet.
+
+455
+00:29:48,276 --> 00:29:52,476
+haftada zaten sadece şu konu kalıyor. Dönemi bitiyoruz aslında yavaş yavaş.
+
+456
+00:29:55,016 --> 00:30:07,276
+Evet arkadaşlar, soru sorularım var mı? Dilerseniz böyle bu tarz soruları arkadaşlar private değil de, hani evriman seçerek gönderseniz arkadaşlarımız da bu tarz sorularını görsün.
+
+457
+00:30:08,355 --> 00:30:14,676
+Yani [öğrenci], bilmiyorum farkında mısın, belki farkında değilsin. Yani bu tarz soruları gönderken arkadaşlar, herkes hepiniz görün.
+
+458
+00:30:14,676 --> 00:30:19,936
+sizler de duyurun. Bu tarz soruları tekrar alamış oluruz.
+
+459
+00:30:20,756 --> 00:30:21,996
+Evet.
+
+460
+00:30:24,476 --> 00:30:28,556
+Evet, başka sormak istediğim bir şey yoksa arkadaşlar, bugün daha fazla devam etmeyeceğim.
+
+461
+00:30:29,096 --> 00:30:31,896
+Dediğim gibi her zaman sorabilsin bir problem olduğu zaman.
+
+462
+00:30:34,156 --> 00:30:36,216
+Evet arkadaşlar, kendinize çok iyi bakın.
+
+463
+00:30:36,635 --> 00:30:37,656
+Sınavınızda başarılar.
+
+464
+00:30:38,336 --> 00:30:40,115
+Haftaya, sınavdan sonra görüşmek üzere.
+
+465
+00:30:40,256 --> 00:30:41,056
+Kendinize çok iyi bakın.
+
+466
+00:30:41,056 --> 00:30:57,716
+Evet.

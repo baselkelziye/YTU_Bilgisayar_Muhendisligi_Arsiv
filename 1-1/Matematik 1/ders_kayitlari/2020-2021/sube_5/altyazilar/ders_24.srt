@@ -1,0 +1,983 @@
+1
+00:03:33,524 --> 00:03:35,783
+Günaydın arkadaşlar, beni duyabiliyor musunuz?
+
+2
+00:04:18,516 --> 00:04:20,855
+Soru çözüme işleme devam ediyoruz arkadaşlar.
+
+3
+00:04:23,696 --> 00:04:25,236
+Karşımızda şöyle bir integral var.
+
+4
+00:04:25,236 --> 00:04:26,475
+Belirsiz integral var.
+
+5
+00:04:27,116 --> 00:04:29,056
+Integral sekant kare kare kök x
+
+6
+00:04:29,056 --> 00:04:30,116
+de şeklinde.
+
+7
+00:04:31,136 --> 00:04:33,336
+Burada arkadaşlar yapacağımız şey şu.
+
+8
+00:04:34,076 --> 00:04:34,855
+Tabii öncelikle
+
+9
+00:04:34,855 --> 00:04:36,796
+bu kök x'i
+
+10
+00:04:36,796 --> 00:04:40,235
+herhangi bir açıya dönüştürebiliriz.
+
+11
+00:04:40,355 --> 00:04:41,936
+Veya direkt olarak da
+
+12
+00:04:41,936 --> 00:04:43,696
+kısmı integral sonunu bulanabilir.
+
+13
+00:04:44,936 --> 00:04:46,396
+Tabii öncelikle eğer açıyı
+
+14
+00:04:46,396 --> 00:04:49,196
+herhangi bir t diye dönüştürürsek
+
+15
+00:04:49,196 --> 00:04:51,355
+kök x eşittir t.
+
+16
+00:04:52,076 --> 00:04:52,456
+Buradan
+
+17
+00:04:52,456 --> 00:04:54,876
+her tarafın diferansiyenini aldığınızda
+
+18
+00:04:54,876 --> 00:04:57,876
+dx bölü 2 kök x eşittir dt olur.
+
+19
+00:04:59,576 --> 00:05:01,735
+Kök x dx ifadesinin yerine
+
+20
+00:05:01,735 --> 00:05:03,136
+burada sonuçta
+
+21
+00:05:03,136 --> 00:05:05,096
+pi ve pi d ile kök x'i çarptığınız zaman
+
+22
+00:05:05,096 --> 00:05:05,756
+arkadaşlar
+
+23
+00:05:05,756 --> 00:05:09,756
+yerine koyduğunuzda
+
+24
+00:05:09,756 --> 00:05:11,975
+integral sekant kare t
+
+25
+00:05:11,975 --> 00:05:13,415
+2t dt olur.
+
+26
+00:05:14,456 --> 00:05:15,115
+Ve burada da
+
+27
+00:05:15,116 --> 00:05:16,516
+en sonunda elde edeceğiniz ifade
+
+28
+00:05:16,516 --> 00:05:17,536
+şöyle bir şey olur.
+
+29
+00:05:18,336 --> 00:05:19,056
+Burada da
+
+30
+00:05:19,056 --> 00:05:19,796
+hatırlarsanız
+
+31
+00:05:19,796 --> 00:05:20,836
+kısmı integral sonu
+
+32
+00:05:20,836 --> 00:05:21,855
+lapdü kuranına göre
+
+33
+00:05:21,855 --> 00:05:23,036
+arkadaşlar
+
+34
+00:05:23,036 --> 00:05:25,196
+polinom olan ifadeye
+
+35
+00:05:25,196 --> 00:05:25,376
+çünkü
+
+36
+00:05:25,376 --> 00:05:26,115
+polinom
+
+37
+00:05:26,115 --> 00:05:34,615
+türyomaktere daha önce geliyordur.
+
+38
+00:05:34,656 --> 00:05:36,836
+İntelere kolay alınabilir olan ifadeye
+
+39
+00:05:36,836 --> 00:05:37,776
+dv diyorduk ki
+
+40
+00:05:37,776 --> 00:05:38,816
+bu intelere almak kolay.
+
+41
+00:05:39,756 --> 00:05:41,235
+Çünkü tajca t'nin türevidir.
+
+42
+00:05:41,235 --> 00:05:44,876
+t eşittir u'dan da dt eşittir du olur.
+
+43
+00:05:45,276 --> 00:05:46,436
+Yerlerine koyduğunuz zaman
+
+44
+00:05:46,436 --> 00:05:47,336
+u çarpı v
+
+45
+00:05:47,336 --> 00:05:49,436
+eksi v çarpı du idi.
+
+46
+00:05:50,016 --> 00:05:51,496
+u çarpı v'yi koyduk
+
+47
+00:05:51,496 --> 00:05:52,376
+eksi v
+
+48
+00:05:52,376 --> 00:05:54,796
+tanjant t çarpı du
+
+49
+00:05:54,796 --> 00:05:56,076
+olacak.
+
+50
+00:05:56,456 --> 00:05:57,496
+Devam ettiğinizde
+
+51
+00:05:57,496 --> 00:05:58,176
+arkadaşlar
+
+52
+00:05:58,176 --> 00:06:00,916
+2t tanjant t
+
+53
+00:06:00,916 --> 00:06:02,016
+artı 2 elen
+
+54
+00:06:02,016 --> 00:06:03,336
+kosmust t olacak ki
+
+55
+00:06:03,336 --> 00:06:03,696
+çünkü
+
+56
+00:06:03,696 --> 00:06:07,696
+tanjant t'nin t bölü kosmust t yazdığımız için
+
+57
+00:06:07,696 --> 00:06:10,496
+bu da minitegralde elen kosmust t'dir.
+
+58
+00:06:11,116 --> 00:06:11,736
+Artı c
+
+59
+00:06:11,736 --> 00:06:13,056
+beliriz minitegral olduğunda
+
+60
+00:06:13,056 --> 00:06:15,556
+tekrar eski değişkenlerimize geri dönüş yaparsak
+
+61
+00:06:15,556 --> 00:06:16,416
+yani
+
+62
+00:06:16,416 --> 00:06:19,256
+t yerine kökü x yazarsak da
+
+63
+00:06:19,256 --> 00:06:21,776
+bizden istenen minitegral x'e bağlı
+
+64
+00:06:21,776 --> 00:06:24,576
+arkadaşlar çözümünü vermiş oluyoruz.
+
+65
+00:06:24,576 --> 00:06:45,615
+Evet.
+
+66
+00:06:30,612 --> 00:06:34,652
+Bu soruya baktığımızda arkadaşlar gayet normal bir integral gibi görünse de
+
+67
+00:06:34,652 --> 00:06:42,912
+aslında x eşittir 0'da bu fonksiyonun arkadaşlar süreksiz olduğu için bu bir impropil integraldir.
+
+68
+00:06:43,032 --> 00:06:44,812
+Yani ikinci tip bir impropil integraldir.
+
+69
+00:06:47,852 --> 00:06:50,912
+İntegrasyonun sol uç noktasında süreksizlik olduğu için
+
+70
+00:06:50,912 --> 00:06:58,152
+limit c 0'a sağdan yaklaşırken c'den bile dx bölü x çarpı 1 artı ln x kare diyoruz.
+
+71
+00:06:58,152 --> 00:07:03,212
+Burada arkadaşlar ln x'e u değil dx bölü x'e de d u dersek
+
+72
+00:07:03,212 --> 00:07:08,112
+x eşittir 1 için u 0 olur sınırlar.
+
+73
+00:07:08,272 --> 00:07:11,032
+x eşittir c için de u eşittir ln c olur.
+
+74
+00:07:11,072 --> 00:07:14,532
+O halde yeni bizim impropil integralimiz şu hale gelecek.
+
+75
+00:07:15,831 --> 00:07:20,072
+d u bölü 1 artı u kare de aslında arkadaşlar neyin türevidir?
+
+76
+00:07:20,192 --> 00:07:21,652
+Arktanjan o türevidir.
+
+77
+00:07:21,652 --> 00:07:25,772
+O halde u yerine önce 0 sonra ln c yazdığımızda
+
+78
+00:07:25,772 --> 00:07:31,092
+artı arktanjan 0 eksi artı arktanjan ln c'nin limiti söz konusudur.
+
+79
+00:07:31,832 --> 00:07:36,232
+Burada c yerine 0 koyduğunuzda ln 0 sonsuzdur.
+
+80
+00:07:36,772 --> 00:07:38,252
+Artı arktanjan sonsuzdur arkadaşlar.
+
+81
+00:07:38,472 --> 00:07:40,072
+Hangi açıdan arktanjan sonsuzdur?
+
+82
+00:07:47,732 --> 00:07:51,972
+P bölü 2 gelecek.
+
+83
+00:08:09,908 --> 00:08:13,528
+Evet burada bir basit kesilir ayırma yöntemi sorusu açısından arkadaşlar.
+
+84
+00:08:15,388 --> 00:08:20,247
+Burada da E üzeri T'ye U dendiği zaman bakın integral nasıl bir hale geldi.
+
+85
+00:08:20,348 --> 00:08:21,348
+Şöyle bir hale geldi.
+
+86
+00:08:22,028 --> 00:08:26,687
+Bu da paydayı çarpanlara ayırdığınız zaman U-1 çarpı U-2 yapar.
+
+87
+00:08:27,468 --> 00:08:28,867
+Bunu da A bölü U-1.
+
+88
+00:08:29,728 --> 00:08:32,628
+Bu da real kökü olmayan bir polinom olduğu için de
+
+89
+00:08:32,628 --> 00:08:36,807
+BU artı C bölü U artı 2 şeklinde basit kesilir ayırabiliyoruz.
+
+90
+00:08:36,807 --> 00:08:41,768
+Buradan paydayı eşit dediğimizde A 1 bölü 3 ve Eksi 1 bölü 3.
+
+91
+00:08:42,028 --> 00:08:44,168
+C de Eksi 1 bölü 3 yapar.
+
+92
+00:08:44,868 --> 00:08:51,348
+Buradan yerlerine koyduğumuzda DU bölü U-1'in integrali yani neyin türevidir?
+
+93
+00:08:52,307 --> 00:08:53,947
+LN U-1'in türevidir.
+
+94
+00:08:54,048 --> 00:08:55,868
+Şurayı da şöyle ayrılarak yazarsak.
+
+95
+00:08:57,368 --> 00:08:59,388
+Burası da LN U artı 2'nin türevidir.
+
+96
+00:09:00,008 --> 00:09:04,307
+Şurası da arkadaşlar arktanjant U bölü kökünün türevidir.
+
+97
+00:09:04,427 --> 00:09:04,947
+Artı C.
+
+98
+00:09:04,947 --> 00:09:08,028
+Tekrar eski değişkenlerimize gelen bir şey yaptığımızda
+
+99
+00:09:08,028 --> 00:09:10,768
+bakın buradan cevabımız bu çıkar.
+
+100
+00:09:10,768 --> 00:09:24,968
+Evet.
+
+101
+00:09:20,692 --> 00:09:22,451
+T büyük eşittir.
+
+102
+00:09:22,772 --> 00:09:24,532
+T büyük eşittir bir için
+
+103
+00:09:24,532 --> 00:09:27,611
+f türeli bir fonksiyon olmak üzere
+
+104
+00:09:27,611 --> 00:09:29,532
+f fonksiyonu fx eşittir.
+
+105
+00:09:30,132 --> 00:09:32,111
+Birden ise f üstü t bölü 1 artı
+
+106
+00:09:32,111 --> 00:09:34,132
+f t'nin karesi dt ile tamlansın.
+
+107
+00:09:34,792 --> 00:09:38,532
+fx eşittir c'de bir maksimuma sahip ise
+
+108
+00:09:38,532 --> 00:09:43,172
+f fonksiyonu da x eşittir c'de bir maksimuma sahip olduğunu gösteririm arkadaşlar.
+
+109
+00:09:43,812 --> 00:09:44,951
+Tabi bunu neye göstereceğiz?
+
+110
+00:09:44,951 --> 00:09:47,672
+Fonksiyon türemini alarak göstereceğiz.
+
+111
+00:09:47,672 --> 00:09:55,272
+Türemini aldığımızda bakın şu oluyor.
+
+112
+00:09:56,152 --> 00:09:57,072
+Bunu sıfıra eşittir.
+
+113
+00:09:57,951 --> 00:10:03,292
+Büyük f üstü eşittir sıfırdan küçük f üstü eşittir sıfır olur arkadaşlar.
+
+114
+00:10:03,932 --> 00:10:05,812
+Zaten bu bir maksimuma
+
+115
+00:10:05,812 --> 00:10:08,672
+ya da büyük fx maksimuma sahipti.
+
+116
+00:10:09,412 --> 00:10:10,951
+Yani şunu diyeceğiz arkadaşlar
+
+117
+00:10:10,951 --> 00:10:16,512
+x küçüktür c iken f üstü büyük sıfır olduğundan
+
+118
+00:10:16,512 --> 00:10:20,692
+eğer bu büyük sıfırsa arkadaşlar küçük f üstü de sıfırdan büyüktür.
+
+119
+00:10:21,371 --> 00:10:23,812
+Büyük f üstü sıfırdan küçükse de
+
+120
+00:10:23,812 --> 00:10:25,751
+küçük f üstü de sıfır eşittir.
+
+121
+00:10:25,812 --> 00:10:26,672
+Bu durumda da arkadaşlar
+
+122
+00:10:26,672 --> 00:10:28,312
+şunu söyleyebiliriz.
+
+123
+00:10:29,011 --> 00:10:31,372
+Sonuçta fonksiyon arkadaşlar
+
+124
+00:10:31,372 --> 00:10:34,111
+aralanlıktan aralanlıktan
+
+125
+00:10:34,111 --> 00:10:35,991
+aralanlıktan geçiş yapıyor olduğu için
+
+126
+00:10:35,991 --> 00:10:37,731
+biz ne diyoruz arkadaşlar?
+
+127
+00:10:37,731 --> 00:10:39,211
+x eşittir c noktasında
+
+128
+00:10:39,211 --> 00:10:43,251
+küçük fx fonksiyonu bir maksimuma sahip olduğunu
+
+129
+00:10:43,251 --> 00:10:44,892
+söyleyebiliriz arkadaşlar.
+
+130
+00:10:44,892 --> 00:10:45,392
+Evet.
+
+131
+00:10:57,940 --> 00:10:59,920
+Geldik bir diğer soruya arkadaşlar.
+
+132
+00:11:00,500 --> 00:11:01,060
+Bakın burada
+
+133
+00:11:01,060 --> 00:11:04,180
+zaten direkt kendileri gösteriyor.
+
+134
+00:11:04,380 --> 00:11:05,780
+Hani bir löküter kuralının
+
+135
+00:11:05,780 --> 00:11:07,080
+uygulaması gerektiğine dair.
+
+136
+00:11:10,520 --> 00:11:11,240
+Yani
+
+137
+00:11:11,240 --> 00:11:13,720
+art tangent sonsuz zaten
+
+138
+00:11:13,720 --> 00:11:14,660
+nedir arkadaşlar?
+
+139
+00:11:16,020 --> 00:11:17,800
+Daha doğrusu burası komple sonsuz.
+
+140
+00:11:18,080 --> 00:11:19,280
+Sonsuz böyle sonsuz
+
+141
+00:11:19,280 --> 00:11:21,500
+verimsizliği var. Löküter kural
+
+142
+00:11:21,500 --> 00:11:23,980
+uygulamalarınızda payın türemini aldığınızda şu ifadedir.
+
+143
+00:11:24,540 --> 00:11:25,860
+Paydan türevi ise burasıdır.
+
+144
+00:11:25,860 --> 00:11:29,280
+x'lerini sonsuz yazdığınızda
+
+145
+00:11:29,280 --> 00:11:29,680
+arkadaşlar
+
+146
+00:11:29,680 --> 00:11:33,620
+bakın burası bir bölü sonsuz sıfırdır.
+
+147
+00:11:34,220 --> 00:11:34,940
+Şurası ise
+
+148
+00:11:34,940 --> 00:11:37,000
+e üzeri pi bölü 2'dir.
+
+149
+00:11:37,760 --> 00:11:38,640
+Eksi bir bölü.
+
+150
+00:11:39,280 --> 00:11:41,040
+Arkadaşlar burası da
+
+151
+00:11:41,040 --> 00:11:42,920
+bakın 2x bölü 1 artı x kare
+
+152
+00:11:42,920 --> 00:11:44,760
+aslında sonsuz bölü sonsuz
+
+153
+00:11:44,760 --> 00:11:46,700
+verimsizliği var. Tekrar
+
+154
+00:11:46,700 --> 00:11:48,840
+bir löküter kuralı yaptığınızda kendi içinde
+
+155
+00:11:48,840 --> 00:11:51,060
+iki bölü arkadaşlar
+
+156
+00:11:51,060 --> 00:11:52,960
+2x gelecek. İkiler sadece
+
+157
+00:11:52,960 --> 00:11:55,080
+1 bölü x. 1 bölü x de
+
+158
+00:11:55,080 --> 00:11:56,700
+1 bölüse olsun da yine sıfır olur.
+
+159
+00:12:03,604 --> 00:12:06,604
+x kare artı 1. O halde cevap buradan x 1 göre.
+
+160
+00:12:33,556 --> 00:12:42,376
+X eşittir y kare parabolu ve y eksi x eşittir eksi 2 doğrusu ile sınırlı olsun r bölgesi.
+
+161
+00:12:42,735 --> 00:12:44,536
+R bölgesini çizelim arkadaşlar.
+
+162
+00:12:45,656 --> 00:12:51,536
+Ve r'nin altın alanını veren belirli integrali x'e göre yazalım.
+
+163
+00:12:51,656 --> 00:12:52,016
+Soru bu.
+
+164
+00:12:53,076 --> 00:12:57,716
+Şimdi arkadaşlar bakın y kare eşittir x kare parabolu bu.
+
+165
+00:12:58,456 --> 00:13:00,336
+Y eşittir x eksi x doğrusu da bu.
+
+166
+00:13:00,336 --> 00:13:08,716
+Şimdi biz bunu x'e göre integral edeceksek arkadaşlar bakın sıfırdan 1'e bir ayırmamız lazım.
+
+167
+00:13:09,336 --> 00:13:11,956
+Çünkü burada üstte kalan eğri altta kalan eğri bu.
+
+168
+00:13:12,556 --> 00:13:15,816
+Burada üstte kalan eğri ile altta kalan da şu doğrudur.
+
+169
+00:13:15,896 --> 00:13:21,696
+O halde arkadaşlar diyoruz ki sıfırdan 1'e ve 1'den 4'e şeklinde iki parçaya böleceğiz.
+
+170
+00:13:22,456 --> 00:13:26,336
+Alan olduğu için bakın üstteki parçadan alttaki parçaya çıkarırız.
+
+171
+00:13:27,256 --> 00:13:29,136
+Veya şöyle bir yola izleyebiliriz.
+
+172
+00:13:29,136 --> 00:13:36,376
+Yani sıfırdan 1'e deyip kök x'in integrali iki katını alsak da çünkü şu iki şekil simetrik olacak arkadaşlar.
+
+173
+00:13:36,536 --> 00:13:37,696
+Bakın aynısı aslında.
+
+174
+00:13:38,596 --> 00:13:39,456
+İkisi de aynı olacak.
+
+175
+00:13:39,956 --> 00:13:43,975
+Veya kök x eksi eksi kök x dediğiniz zaman da yine aynısı oluyor.
+
+176
+00:13:44,056 --> 00:13:44,875
+İki kök x oluyor.
+
+177
+00:13:45,676 --> 00:13:47,855
+Birden 4'e kadar da şurada ne var arkadaşlar?
+
+178
+00:13:48,475 --> 00:13:49,796
+Burada bir kök x eğrisi var.
+
+179
+00:13:49,956 --> 00:13:51,536
+Altta da arkadaşlar doğru var.
+
+180
+00:13:51,536 --> 00:13:55,296
+Yani eksi x eksi ikidir.
+
+181
+00:13:56,216 --> 00:13:59,516
+Bunlar birer problem olduğu için integrali almak kolay.
+
+182
+00:13:59,656 --> 00:14:02,056
+Ki zaten bizden sadece integrali yazdın demiş bu soruda.
+
+183
+00:14:02,056 --> 00:14:03,496
+Geldik.
+
+184
+00:14:03,615 --> 00:14:18,516
+İkinci kısmı...
+
+185
+00:14:09,460 --> 00:14:12,860
+R bölgesinin y-x'in etrafına döndürülmesi olacak.
+
+186
+00:14:13,379 --> 00:14:21,800
+Bakın pul yönteminde, y-x veya disk yönteminde y-x'in etrafına döndürüyorsanız, yüz cismi, integral y'ye göre olacaktı arkadaşlar.
+
+187
+00:14:22,060 --> 00:14:33,879
+Yani pi çarpı y'nin sınırları eksi birden ikiye, en dıştaki eğri arkadaşlar y artı iki, bunun karesi eksi, içerideki eğri de y karenin karesi olacaktı.
+
+188
+00:14:33,879 --> 00:14:37,460
+Ve bizden isteyen integral cevabı da arkadaşlar.
+
+189
+00:14:56,307 --> 00:15:02,487
+Geldik bu soruya arkadaşlar. Bakın bu paydaya baktığınız zaman trigonometrik dönüşümler vardı.
+
+190
+00:15:02,487 --> 00:15:19,487
+İşte kare f' içerisinde a kare artı x kare, işte x kare eksi a kare ve x kare artı a kare gibi integrallerin arkadaşlar çözümler için trigonometrik dönüşümler altında bir başlık işlemiştik integral konusunda.
+
+191
+00:15:20,067 --> 00:15:21,347
+Bu o konuyla ilgili bir soru.
+
+192
+00:15:21,347 --> 00:15:29,807
+Burada a kare artı x kare artı x kare tarzı bir integral olduğu için arkadaşlar biz buna hatırlarsanız söylemiştik.
+
+193
+00:15:30,207 --> 00:15:33,447
+x'i iştir a çarma tancantina değişken değişikliği yapacağız dedik.
+
+194
+00:15:34,668 --> 00:15:37,347
+Tabi burada a dediğimiz şey şu arkadaşlar.
+
+195
+00:15:38,048 --> 00:15:39,148
+Yani buranın karesi nedir?
+
+196
+00:15:39,388 --> 00:15:40,467
+Daha doğrusu a dediğimiz şey şu.
+
+197
+00:15:40,607 --> 00:15:41,347
+Buranın kare kökü.
+
+198
+00:15:42,927 --> 00:15:45,248
+Buranın kare kökü ise arkadaşlar 2x'tir.
+
+199
+00:15:52,211 --> 00:16:09,412
+2x eşittir 3x tancant t'den arkadaşlar, her tarafın diferansiyelini aldığımızda, dx eşittir 3 bölü 2x sekant kare d teta yapan, bunlara getirip verilen interyalle yerine yazdığımızda arkadaşlar, en sade hali arkadaşlar bakın şudur.
+
+200
+00:16:09,412 --> 00:16:12,251
+ve bunu bir adım daha ileri götürürsek,
+
+201
+00:16:16,412 --> 00:16:26,692
+sinüs kare çarpı sinüs t yazdığımızda, bakın buradan kosinüs teta u dendiği zaman, eksi sinüs d teta d u olur.
+
+202
+00:16:26,912 --> 00:16:31,331
+Yerine yazdığımızda, en son arkadaşlar şöyle bir ifade buluruz.
+
+203
+00:16:31,932 --> 00:16:36,831
+Buranın integralı ise arkadaşlar, 1 bölü u kare integralı, eksi 1 bölü u'dur.
+
+204
+00:16:36,831 --> 00:16:44,672
+eksi 1 bölü u d4'ün integralı de, bakın bakın, 1 bölü 3 u kare integralı, artı c, belirsiz integral olduğu için,
+
+205
+00:16:45,631 --> 00:16:47,672
+eski değişkenlere bize gelin ölçü yaptığımızda,
+
+206
+00:16:48,271 --> 00:16:51,692
+düzen istemediğiniz cevap arkadaşlar, şöyle bir şey olacaktır.
+
+207
+00:16:51,831 --> 00:16:51,971
+Evet.
+
+208
+00:16:59,860 --> 00:17:03,180
+geldik son soruya arkadaşlar
+
+209
+00:17:03,180 --> 00:17:05,160
+ara değer teoremini
+
+210
+00:17:05,160 --> 00:17:07,000
+ifade ediniz ve bu teoreminin
+
+211
+00:17:07,000 --> 00:17:09,120
+yanılarak kosinus x eşittir
+
+212
+00:17:09,120 --> 00:17:11,299
+x denkleminin 0 pi bölük aralığında
+
+213
+00:17:11,299 --> 00:17:13,220
+bir çözüme sahip olduğunu
+
+214
+00:17:13,220 --> 00:17:14,920
+ispatlayınız şeklinde bir soru
+
+215
+00:17:14,920 --> 00:17:17,160
+tabi sınav
+
+216
+00:17:17,160 --> 00:17:19,400
+testi olacağı için yani bu tarz
+
+217
+00:17:19,400 --> 00:17:20,799
+şöyle teoremin ifade ediniz
+
+218
+00:17:20,799 --> 00:17:22,400
+sorusu gelmez ama
+
+219
+00:17:22,400 --> 00:17:25,039
+çözüme sahibi
+
+220
+00:17:25,039 --> 00:17:26,740
+olduğu ile ilgili bir şeyler olabilir
+
+221
+00:17:26,740 --> 00:17:28,519
+ara değer teoremi arkadaşlar
+
+222
+00:17:28,519 --> 00:17:30,180
+noktalarınızda var bir fonksiyonun
+
+223
+00:17:30,180 --> 00:17:31,799
+sürekli bir fonksiyonun
+
+224
+00:17:31,799 --> 00:17:34,099
+kökünün var olduğunu aslında
+
+225
+00:17:34,099 --> 00:17:36,220
+ispatını veren bir teoreminir
+
+226
+00:17:36,220 --> 00:17:38,819
+fx fonksiyonu bu
+
+227
+00:17:38,819 --> 00:17:40,920
+0 bölükü
+
+228
+00:17:40,920 --> 00:17:42,700
+pi bölük 2 aralığında
+
+229
+00:17:42,700 --> 00:17:44,559
+sürekli bir de sürekli arkadaşlar ve
+
+230
+00:17:44,559 --> 00:17:46,620
+aranın uç noktalarında bakın
+
+231
+00:17:46,620 --> 00:17:48,240
+hangi değerleri alıyor
+
+232
+00:17:48,240 --> 00:17:50,740
+f0'da eksi 1
+
+233
+00:17:50,740 --> 00:17:52,620
+fp bölükle pi bölükle
+
+234
+00:17:52,620 --> 00:17:53,380
+olduğuna göre
+
+235
+00:17:53,380 --> 00:17:56,039
+bu şartı sağlayacak arkadaşlar
+
+236
+00:17:56,039 --> 00:17:58,440
+fc eşittir 0 şeklinde
+
+237
+00:17:58,440 --> 00:18:00,480
+bir verilen aralığa ait
+
+238
+00:18:00,480 --> 00:18:02,299
+c noktası vardır diyoruz
+
+239
+00:18:02,299 --> 00:18:03,720
+bu c noktası
+
+240
+00:18:03,720 --> 00:18:05,319
+gerçekten 0 bölükü
+
+241
+00:18:05,319 --> 00:18:06,420
+pi bölük 2 aralığına
+
+242
+00:18:06,420 --> 00:18:07,480
+tahildir arkadaşlar
+
+243
+00:18:07,480 --> 00:18:09,980
+şuradan baktığımız kadarıyla
+
+244
+00:18:09,980 --> 00:18:18,960
+bir şey
+
+245
+00:18:18,867 --> 00:18:23,467
+sonuçlar var mı arkadaşlar?
+
+246
+00:18:40,692 --> 00:18:46,392
+Evet, sorunuz yoksa arkadaşlar dersimiz bu kadar. Bir sonraki derste görüşmek üzere. Kendinize iyi bakın.

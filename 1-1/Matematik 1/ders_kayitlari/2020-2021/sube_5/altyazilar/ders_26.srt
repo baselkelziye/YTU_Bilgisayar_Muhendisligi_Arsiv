@@ -1,0 +1,943 @@
+1
+00:14:07,412 --> 00:14:09,652
+Günaydın arkadaşlar, beni duyabiliyor musunuz?
+
+2
+00:14:14,868 --> 00:14:17,168
+Soru çözmeye devam ediyoruz arkadaşlar.
+
+3
+00:14:18,548 --> 00:14:19,927
+Şimdi şöyle bir soru var.
+
+4
+00:14:20,688 --> 00:14:22,427
+Bir fx fonksiyonu var. Küçük f.
+
+5
+00:14:23,188 --> 00:14:24,628
+Bir de gx fonksiyonu var.
+
+6
+00:14:26,028 --> 00:14:27,788
+f'in ve g'nin türevlerinin
+
+7
+00:14:27,788 --> 00:14:29,908
+birdeki değerleri isteniyor bizden.
+
+8
+00:14:30,068 --> 00:14:31,788
+x sıfırdan büyük olmak gayriyle.
+
+9
+00:14:32,868 --> 00:14:33,808
+Şimdi tabii
+
+10
+00:14:33,808 --> 00:14:35,688
+yapacağımız şey şu arkadaşlar.
+
+11
+00:14:35,828 --> 00:14:37,128
+Öncelikle f'in türevine bakalım.
+
+12
+00:14:37,988 --> 00:14:39,708
+Eşitliğinden her tarafın türevini alacağız.
+
+13
+00:14:39,708 --> 00:14:41,688
+fx'in sağ tarafındaki
+
+14
+00:14:41,688 --> 00:14:43,288
+fonksiyona baktığınızda
+
+15
+00:14:43,288 --> 00:14:45,828
+taban ve üst x'e bağlı
+
+16
+00:14:45,828 --> 00:14:47,048
+birer fonksiyonu olduğu için
+
+17
+00:14:47,048 --> 00:14:49,388
+logaritmik türevi kuralını uygulayacağız.
+
+18
+00:14:49,508 --> 00:14:51,928
+Yani eşitliğinden her tarafın öncelikle elenini alacağız.
+
+19
+00:14:52,568 --> 00:14:53,768
+Elen fx eşittir.
+
+20
+00:14:54,328 --> 00:14:55,508
+Daha sonra sağ tarafta ise
+
+21
+00:14:55,508 --> 00:14:57,148
+logaritmik fonksiyonu özeline
+
+22
+00:14:57,148 --> 00:14:59,988
+buradaki üst katse olarak geliyordu.
+
+23
+00:15:00,108 --> 00:15:01,788
+Yani x çarpı elen bile artı x olur.
+
+24
+00:15:02,248 --> 00:15:04,168
+Eşitliğinden her tarafın türevini aldığımız zaman
+
+25
+00:15:04,168 --> 00:15:05,668
+f üstü bölü f eşittir.
+
+26
+00:15:05,668 --> 00:15:07,788
+Birincinin türevi çarpı ikinci artı
+
+27
+00:15:07,788 --> 00:15:09,528
+birinci çarpı ikinci türevi kuralından
+
+28
+00:15:09,528 --> 00:15:12,307
+f üstü
+
+29
+00:15:12,307 --> 00:15:14,188
+yalnız bırakıp ve x yerine
+
+30
+00:15:14,188 --> 00:15:15,307
+bir yazdığımız zaman
+
+31
+00:15:15,307 --> 00:15:17,307
+cevap bir çıkacak arkadaşlar.
+
+32
+00:15:17,528 --> 00:15:18,068
+Yani aslında
+
+33
+00:15:18,068 --> 00:15:21,368
+bize bir logaritmik türev sorusu sorulmuş.
+
+34
+00:15:22,968 --> 00:15:24,807
+Geldik gx fonksiyonuna.
+
+35
+00:15:25,068 --> 00:15:26,868
+Gx fonksiyonu türevini alırken
+
+36
+00:15:26,868 --> 00:15:27,568
+arkadaşlar
+
+37
+00:15:27,568 --> 00:15:29,348
+Leibniz kurallığını uygulayacağız.
+
+38
+00:15:29,568 --> 00:15:30,828
+Yani şöyle olacak aslında
+
+39
+00:15:30,828 --> 00:15:33,448
+birincinin yani
+
+40
+00:15:33,448 --> 00:15:35,807
+t'nin içerisinde önce fx
+
+41
+00:15:35,807 --> 00:15:37,688
+ve fx'in türevi eksi
+
+42
+00:15:37,688 --> 00:15:39,568
+sonrasındaysa arkadaşlar
+
+43
+00:15:39,568 --> 00:15:42,608
+bunun içerisine
+
+44
+00:15:42,608 --> 00:15:45,568
+yani kosmos hiperbolik t'nin içerisine
+
+45
+00:15:46,448 --> 00:15:47,128
+x yazıp
+
+46
+00:15:47,128 --> 00:15:48,428
+x'in türevi olarak
+
+47
+00:15:48,428 --> 00:15:50,508
+hatırlarsanız en genel formülü
+
+48
+00:15:50,508 --> 00:15:51,488
+ben size vermiştim.
+
+49
+00:15:52,668 --> 00:15:53,408
+Bu durumda
+
+50
+00:15:53,408 --> 00:15:54,668
+g üstü eşittir
+
+51
+00:15:54,668 --> 00:15:56,168
+f üstü çarpı
+
+52
+00:15:56,168 --> 00:15:57,768
+kosmos hiperbolik fx
+
+53
+00:15:57,768 --> 00:15:59,208
+t yerine fx yazdık
+
+54
+00:15:59,208 --> 00:16:00,248
+x'e
+
+55
+00:16:00,248 --> 00:16:01,968
+x'in türevi çarpı
+
+56
+00:16:01,968 --> 00:16:03,208
+t yerine x yazdık.
+
+57
+00:16:03,408 --> 00:16:03,528
+Evet.
+
+58
+00:16:03,528 --> 00:16:06,208
+Buradan da yine x'e de 1 yazarsak
+
+59
+00:16:06,208 --> 00:16:08,668
+buralar f1
+
+60
+00:16:08,668 --> 00:16:11,088
+f1'i zaten 1 olarak bulduk.
+
+61
+00:16:12,688 --> 00:16:14,288
+x'e de 1 yazıyoruz
+
+62
+00:16:14,288 --> 00:16:15,168
+burada da arkadaşlar.
+
+63
+00:16:15,688 --> 00:16:16,868
+Cevap bakın gördüğünüz gibi
+
+64
+00:16:16,868 --> 00:16:18,668
+0 çıkıyor.
+
+65
+00:16:18,807 --> 00:16:20,728
+Çünkü kosmos hiperbolik x eksi
+
+66
+00:16:20,728 --> 00:16:22,648
+kosmos hiperbolik x
+
+67
+00:16:22,648 --> 00:16:23,968
+cevap 1 olacak.
+
+68
+00:16:24,148 --> 00:16:25,268
+0 olacak arkadaşlar.
+
+69
+00:16:25,468 --> 00:16:25,588
+Evet.
+
+70
+00:16:28,528 --> 00:16:30,488
+Burada anlaşmayan bir yer var mı arkadaşlar?
+
+71
+00:16:30,488 --> 00:16:30,748
+Evet.
+
+72
+00:16:37,875 --> 00:16:41,956
+geldik bir diğer soruya
+
+73
+00:16:41,956 --> 00:16:44,836
+bir f fonksiyonumuz var
+
+74
+00:16:44,836 --> 00:16:47,155
+arkadaşlar r'den r'ye
+
+75
+00:16:47,155 --> 00:16:49,196
+şu şekilde tanımlansın
+
+76
+00:16:49,196 --> 00:16:50,855
+bu durumda
+
+77
+00:16:50,855 --> 00:16:53,675
+f r'de arkadaşlar sürekli midir
+
+78
+00:16:53,675 --> 00:16:54,935
+diye bir soru
+
+79
+00:16:54,935 --> 00:16:57,456
+şimdi 0,1 demek
+
+80
+00:16:57,456 --> 00:16:58,775
+yani alfa yerine 0
+
+81
+00:16:58,775 --> 00:17:01,435
+beta yerine 1 yazarak şu fonksiyonu
+
+82
+00:17:01,435 --> 00:17:02,035
+oluşturacağız
+
+83
+00:17:02,035 --> 00:17:04,715
+alfa beta eşittir
+
+84
+00:17:04,715 --> 00:17:07,596
+arkadaşlar alfa yerine ne yazıyoruz
+
+85
+00:17:07,596 --> 00:17:09,715
+0 yazıyoruz 1 demektir x üzeri 0
+
+86
+00:17:09,715 --> 00:17:11,695
+burası da sinüs x'de
+
+87
+00:17:11,695 --> 00:17:12,755
+1 bölü x demektir
+
+88
+00:17:12,755 --> 00:17:16,135
+şimdi soru şuna dönmüş oldu
+
+89
+00:17:16,135 --> 00:17:18,955
+aslında sinüs 1 bölü x fonksiyonu
+
+90
+00:17:18,955 --> 00:17:20,675
+x eşittir 0'da sürekli midir
+
+91
+00:17:20,675 --> 00:17:22,735
+çünkü x eşittir 0'dan farklı durumlara
+
+92
+00:17:22,735 --> 00:17:23,556
+zaten sürekli
+
+93
+00:17:23,556 --> 00:17:25,635
+o halde şuna bakacağız
+
+94
+00:17:25,635 --> 00:17:28,475
+x sıfıra yaklaşırken bu fonksiyon limitine bakacağız
+
+95
+00:17:28,475 --> 00:17:29,796
+eğer bu fonksiyon limitiyle
+
+96
+00:17:29,796 --> 00:17:32,496
+fonksiyonun x eşittir 0'daki alı değer
+
+97
+00:17:32,496 --> 00:17:34,556
+eşitse bu fonksiyon r'nin
+
+98
+00:17:34,556 --> 00:17:36,296
+tamamında sürekli dir diyebiliriz
+
+99
+00:17:36,296 --> 00:17:39,576
+x sıfıra yaklaşırken sinüs 1 bölü x arkadaşlar
+
+100
+00:17:39,576 --> 00:17:42,735
+bakın x sıfıra yaklaşırken aslında
+
+101
+00:17:42,735 --> 00:17:44,875
+bu ifade mevcut değil
+
+102
+00:17:44,875 --> 00:17:46,915
+1 bölü sıfıra sonsuz yapar arkadaşlar
+
+103
+00:17:46,915 --> 00:17:49,435
+bu mevcut olmadığı için
+
+104
+00:17:49,435 --> 00:17:50,895
+biz buradan ne diyoruz arkadaşlar
+
+105
+00:17:50,895 --> 00:17:52,415
+limit mevcut değil diyoruz
+
+106
+00:17:52,415 --> 00:17:57,395
+limit mevcut olmadığı için
+
+107
+00:17:57,395 --> 00:18:01,556
+bu halde bu fonksiyonu arkadaşlar
+
+108
+00:18:01,556 --> 00:18:14,576
+bu sefıra yaklaşırken
+
+109
+00:18:09,428 --> 00:18:33,868
+Evet, geldik bir diğer soruya. Limit, tanjant, arks, minus x artı 4x bölü, işte evde 4x, eksi 6x, eksi 7x kare, eksi 1 şeklinde bir soru. Zaten limit noktasını direkt fonksiyonla yerine yazdığımız zaman 0 bölü 0 belirsizliğinin var olduğunu hemen görümüze çarpıyor arkadaşlar. O yüzden pi ve pi'de birbirinden bağımsız hemen türevlerini alacağız.
+
+110
+00:18:33,868 --> 00:18:50,248
+Bakın, tanjant, arks, minus x'in türevi, arkadaşlar, sekant, arks, minus x'in türevi, artı 4x'in türevi, 4 bölü, evde 4x'in türevi, 6x küpünün türevi, 7x karenin türevi, eksi 1'in türevi, zaten 0.
+
+111
+00:18:51,068 --> 00:18:57,728
+Burada arkadaşlar, x yerine 0 yazdığınız zaman cevap 5 bölü 4 şeklinde bir rasyonel ifade çıkıyor arkadaşlar.
+
+112
+00:19:04,884 --> 00:19:08,844
+Arkadaşlar bu soruda şöyle trigonometrik integraller konusunda görmüştük.
+
+113
+00:19:09,584 --> 00:19:13,203
+İşte akarex x kare kare kök akarex x kare integrali.
+
+114
+00:19:13,584 --> 00:19:19,663
+Karakök x kare x integrali bile x kare artı akare tarzı integralleri 3 durumda incelemiştik.
+
+115
+00:19:19,663 --> 00:19:21,624
+Burada trigonometrik integrali giriyor.
+
+116
+00:19:21,864 --> 00:19:25,104
+Yani x kare x akare tarzı bir integral durumuna giriyor.
+
+117
+00:19:25,624 --> 00:19:27,864
+Burada yapacağımız şey şu x artı 1 eşittir.
+
+118
+00:19:28,524 --> 00:19:32,824
+Şuranın karakökü 2 olduğu için 2 sekant t değişken değişikliği yapacağız.
+
+119
+00:19:32,824 --> 00:19:38,384
+Eşitliği her tarafın diferansiyelini aldığımızda dx eşittir 2 sekant t değişken tangant t değişken yapar.
+
+120
+00:19:38,884 --> 00:19:43,104
+Bunları getirip yukarıda yerine yazdığımızda arkadaşlar integral sekant t değişken olur.
+
+121
+00:19:43,104 --> 00:19:47,943
+Bu da arkadaşlar buranın integralı ln sekant t değişken artı tangant t değişken olur.
+
+122
+00:19:48,644 --> 00:19:54,104
+Burada arkadaşlar sekant t değişken yerine bakın dik üçgeni çizdiğimizde x artı 1 bölük olur.
+
+123
+00:19:54,703 --> 00:20:02,703
+Burası ise tangant t değişken karşı dik kenar bölüm komşu dik kenardan köklü ifade bölü 2 şeklinde artı c'de.
+
+124
+00:20:02,824 --> 00:20:05,223
+Unutmuyoruz belirsiz integral olduğu için.
+
+125
+00:20:05,223 --> 00:20:05,864
+Evet.
+
+126
+00:20:14,804 --> 00:20:20,224
+Bu interelere baktığımızda birinci tip, yani sınırlarda sonsuzluk olduğu için birinci tip bir improper intere.
+
+127
+00:20:20,764 --> 00:20:22,584
+Ve bunu da arkadaşlar nasıl yapacağız?
+
+128
+00:20:22,784 --> 00:20:23,584
+İki parçaya böleceğiz.
+
+129
+00:20:23,644 --> 00:20:26,884
+Çünkü hem alt hem sınırda sonsuzluk var.
+
+130
+00:20:27,423 --> 00:20:31,644
+Eksi sonsuzdan sıfıra ercelikstex, sıfırdan sonsuzluğa ercelikstex dedik.
+
+131
+00:20:31,644 --> 00:20:36,024
+Yani erceliksin buradaki fonksiyonun tanımlı olduğu bu aralıkta herhangi bir nokta olabilir.
+
+132
+00:20:36,804 --> 00:20:40,244
+Yani sıfırı ama tabii işlemek kolaylaştırması açısından o yüzden sıfırı seçtik.
+
+133
+00:20:40,244 --> 00:20:43,364
+Normalde bir iki farklı bir real sayı olabilirdi.
+
+134
+00:20:43,844 --> 00:20:46,544
+Erceliksin tanımlı olduğu herhangi bir nokta olabilirdi arkadaşlar.
+
+135
+00:20:47,324 --> 00:20:53,024
+Bu durumda proper intereyden eksi sonsuzluğa yaklaşırken r'den sıfıra ercelikstex artı
+
+136
+00:20:53,024 --> 00:20:58,504
+r sonsuzluğa yaklaşırken sıfırdan r'ye ercelikstex şeklinde yazdıktan sonra arkadaşlar
+
+137
+00:20:58,504 --> 00:21:03,204
+buranın erceliksin arkadaşlar intereyde ercelikstir.
+
+138
+00:21:03,284 --> 00:21:06,504
+İki seyren öneği sıfır sonra r'yi aldığımızda bir eksi ercelikli olur.
+
+139
+00:21:06,624 --> 00:21:07,584
+Burası da aynı şekilde.
+
+140
+00:21:07,584 --> 00:21:14,264
+Buradan arkadaşlar r eksi sonsuzluğa yaklaşırken burası da ercelikse sonsuzluğu
+
+141
+00:21:14,264 --> 00:21:16,423
+yani biri bölü ercelikse sonsuzluğu da sıfır yapar.
+
+142
+00:21:16,944 --> 00:21:20,024
+Buradan cevap arkadaşlar bir artı birden iki çıkacaktır.
+
+143
+00:21:25,491 --> 00:21:31,211
+Evet. Anlaşımıyla bir yer var mı arkadaşlar? Sesimi duyabiliyor musunuz? Kimler beni duyuyor?
+
+144
+00:21:44,339 --> 00:21:45,740
+Şimdi arkadaşlar böyle bir
+
+145
+00:21:45,740 --> 00:21:46,179
+integral
+
+146
+00:21:46,179 --> 00:21:49,919
+cevabına bakacağız.
+
+147
+00:21:50,599 --> 00:21:52,259
+Şimdi hem logaritmik fonksiyonu var
+
+148
+00:21:52,259 --> 00:21:54,220
+bir de arkadaşlar polinom fonksiyonu var.
+
+149
+00:21:54,699 --> 00:21:55,879
+Laptik kuralı gereğince
+
+150
+00:21:55,879 --> 00:21:57,659
+ne yapıyorduk arkadaşlar? Logaritmik
+
+151
+00:21:57,659 --> 00:21:59,139
+fonksiyonun önceliği vardı.
+
+152
+00:21:59,720 --> 00:22:01,819
+Yani logaritmik olana u diyoruz
+
+153
+00:22:01,819 --> 00:22:03,859
+arkadaşlar. Elen x'e 3'e u.
+
+154
+00:22:04,359 --> 00:22:06,199
+Geri kalan ifadeye dv dersek
+
+155
+00:22:06,199 --> 00:22:07,959
+buradan d u
+
+156
+00:22:07,959 --> 00:22:09,879
+eşittir. dx bölü 2 saat 3 yapar.
+
+157
+00:22:10,359 --> 00:22:11,819
+Buradan da arkadaşlar eksi 1 bölü
+
+158
+00:22:11,819 --> 00:22:13,319
+2 saat 1 eşittir v yapar.
+
+159
+00:22:13,319 --> 00:22:15,500
+O halde uç
+
+160
+00:22:15,500 --> 00:22:16,799
+ve
+
+161
+00:22:16,799 --> 00:22:18,799
+2 saat 1 eşittir v yapar.
+
+162
+00:22:18,799 --> 00:22:23,980
+O halde uçur.
+
+163
+00:22:23,092 --> 00:22:48,032
+du integral denir arkadaşlar. Onu da şöyle a bölü x artı 1, b bölü x artı 3 şeklinde ayrıştırdığımız zaman pay ve payda da eşitleyip a ve b der arkadaşlar 1 bölük ve eksi 1 bölük şeklinde bulur. Bunların yerine koyduğumuzda elen x artı 1'dir. 1 bölü x artı 1'in integralı. 1 bölü x artı 3'in integralı da elen x artı 3 olarak cevaplandı.
+
+164
+00:22:48,032 --> 00:22:51,792
+yerine yazdığımızda elen x artı 2. Yerine yazdığımızda arkadaşlar u çarpı v yazdık.
+
+165
+00:22:52,492 --> 00:22:55,012
+x v çarpı d'yi de buraya koyduk arkadaşlar.
+
+166
+00:22:55,692 --> 00:22:56,732
+artı c refik.
+
+167
+00:22:57,451 --> 00:22:57,632
+Evet.
+
+168
+00:22:58,451 --> 00:23:00,252
+Bu da bizden istenen sonuç arkadaşlar.
+
+169
+00:23:08,531 --> 00:23:14,751
+Bu soru ise arkadaşlar bir döner cismin hacmi sorusu var.
+
+170
+00:23:15,412 --> 00:23:28,811
+Bakın şöyle y eşittir x x kare x 2x eğrisi ve x büyük eşittir x 1 ve y eşittir sıfırla sınırlı bölgenin döndürmesi oluşan katı cismin hacmi isteniyor bizden.
+
+171
+00:23:28,811 --> 00:23:31,211
+Birinci aşıkkı aslında şu.
+
+172
+00:23:31,771 --> 00:23:37,091
+Disk yöntemiyle x eksinin etrafında dönmesi oluşan hacmini hesap edelim denmiş.
+
+173
+00:23:37,091 --> 00:23:40,412
+Fakat oluşturan entegre çöndüğümüze gerek yok arkadaşlar.
+
+174
+00:23:41,152 --> 00:23:43,891
+Şimdi tabi bölgeyi çizeceğiz bu tarz sorular da mecburen.
+
+175
+00:23:44,451 --> 00:23:49,932
+Bölgeyi çizdik arkadaşlar bakın y eşittir x x kare x 2x bir paraboldür.
+
+176
+00:23:50,051 --> 00:23:53,571
+Kolu aşağı doğru ve orijinden geçen bir paraboldür.
+
+177
+00:23:54,571 --> 00:24:00,091
+x büyük eşittir x 1 arkadaşlar x eşittir x 1 sağ tarafıdır.
+
+178
+00:24:00,491 --> 00:24:02,912
+Y eşittir sıfır zaten x eksinin kendisidir.
+
+179
+00:24:02,912 --> 00:24:09,731
+O halde bu bölgeyi disk yöntemiyle arkadaşlar hacmini hesap etmek istersek x'in sınırları eksi 1'den sıfıra
+
+180
+00:24:09,731 --> 00:24:12,831
+disk yönteminde p çarpı fonksiyonun karesi.
+
+181
+00:24:12,911 --> 00:24:14,091
+Fonksiyonun tek bir fonksiyon.
+
+182
+00:24:14,571 --> 00:24:16,591
+Eksi x eksisi 2x'in karesi arkadaşlar.
+
+183
+00:24:17,271 --> 00:24:18,551
+Bizden istenen şu entegre.
+
+184
+00:24:18,932 --> 00:24:20,091
+Buranın çözümü istenmiyor.
+
+185
+00:24:20,231 --> 00:24:20,291
+Bu.
+
+186
+00:24:20,871 --> 00:24:21,811
+İzlediğiniz cevap bu.
+
+187
+00:24:21,811 --> 00:24:26,631
+İkinci şirketi ise şu arkadaşlar.
+
+188
+00:24:31,631 --> 00:24:34,152
+X eşittir kabuk yönteminde bulunan istilmemiş.
+
+189
+00:24:34,571 --> 00:24:35,631
+Hatırlarsanız onda da şu yürüdür.
+
+190
+00:24:35,672 --> 00:24:37,991
+2p çarpı eksi 1'den sıfıra.
+
+191
+00:24:38,091 --> 00:24:40,192
+Yani arkadaşlar yine x'in sınırları.
+
+192
+00:24:40,771 --> 00:24:44,471
+X eşittir eksi 1 y ekseninden paralel bir doğru olduğu için zaten arkadaşlar.
+
+193
+00:24:44,951 --> 00:24:46,131
+Entegre'li x'e göre alacağız.
+
+194
+00:24:46,131 --> 00:24:50,451
+Formülden gelen hatırlarsanız x artı d demiştik.
+
+195
+00:24:50,531 --> 00:24:56,311
+Yani x buradaki doğru x eksenin sol tarafında olduğu için x eksi 1'den x artı 1 yapar.
+
+196
+00:24:56,912 --> 00:24:58,951
+Çarpı fx fonksiyonu zaten bir tane.
+
+197
+00:24:59,652 --> 00:25:01,111
+Eksi x kare eksi 2x bu.
+
+198
+00:25:01,692 --> 00:25:03,711
+Bizden istenen entegre arkadaşlar bulur.
+
+199
+00:25:04,831 --> 00:25:06,831
+Çözümü yapılmasına gerek yok.
+
+200
+00:25:14,740 --> 00:25:16,660
+Evet geldik Beşik'ine arkadaşlar.
+
+201
+00:25:18,640 --> 00:25:21,559
+Beşik'ine şunu soruyor bize arkadaşlar.
+
+202
+00:25:21,700 --> 00:25:23,620
+Y eşittir x kare eksi 4 ve
+
+203
+00:25:23,620 --> 00:25:25,480
+y eşittir eksi 2x
+
+204
+00:25:25,480 --> 00:25:28,660
+x kare eksi 2x
+
+205
+00:25:28,660 --> 00:25:31,099
+elleriyle sınırlı bölgenin arkadaşlar
+
+206
+00:25:31,099 --> 00:25:32,819
+alanını veren
+
+207
+00:25:32,819 --> 00:25:34,640
+integre yazınız.
+
+208
+00:25:34,759 --> 00:25:36,579
+Belirli integre yazınız şeklinde bir soru.
+
+209
+00:25:37,240 --> 00:25:38,400
+Yani belirli integreli
+
+210
+00:25:38,400 --> 00:25:40,279
+hesap etmeyiniz diye de arkadaşlar
+
+211
+00:25:40,279 --> 00:25:42,220
+bir uyarı var.
+
+212
+00:25:42,220 --> 00:25:43,859
+Burada bölgeye çiziniz denmiş.
+
+213
+00:25:44,740 --> 00:25:46,740
+Ki zaten çizmeden de zaten yazmak çok da
+
+214
+00:25:46,740 --> 00:25:49,099
+mümkün değil. Bakın üstteki
+
+215
+00:25:49,099 --> 00:25:50,920
+eğri arkadaşlar şu
+
+216
+00:25:50,920 --> 00:25:51,440
+parabol.
+
+217
+00:25:52,539 --> 00:25:55,240
+X kare eksi 2x
+
+218
+00:25:55,240 --> 00:25:55,799
+parabolu.
+
+219
+00:25:56,400 --> 00:25:59,079
+X kare eksi 4 parabolu kolay yukarı doğru
+
+220
+00:25:59,079 --> 00:25:59,920
+şöyle bir parabol.
+
+221
+00:26:00,519 --> 00:26:02,799
+Bu ikisi arasındaki kalan bölge arkadaşlar
+
+222
+00:26:02,799 --> 00:26:04,839
+alanı şöyle yapacağız. Ortak çözdüğünüz zaman
+
+223
+00:26:04,839 --> 00:26:07,140
+bu iki eğri kesim noktaları
+
+224
+00:26:07,140 --> 00:26:08,799
+1 ile eksi 2'de.
+
+225
+00:26:08,880 --> 00:26:10,779
+O halde integrelimiz eksi
+
+226
+00:26:10,779 --> 00:26:13,299
+2'den 1'e üstteki eğri şu
+
+227
+00:26:13,299 --> 00:26:15,019
+eksi alttaki eğri
+
+228
+00:26:15,019 --> 00:26:17,220
+yani eksi x kare
+
+229
+00:26:17,220 --> 00:26:18,059
+eksi 2x
+
+230
+00:26:18,059 --> 00:26:19,619
+eksi x kare
+
+231
+00:26:19,619 --> 00:26:20,720
+artı 4 dx
+
+232
+00:26:20,720 --> 00:26:21,360
+şeklinde
+
+233
+00:26:21,360 --> 00:26:23,519
+cevap verebiliriz arkadaşlar.
+
+234
+00:26:23,700 --> 00:26:24,880
+Bizden sana cevap
+
+235
+00:26:24,880 --> 00:26:25,799
+bu alan sorusu.
+
+236
+00:26:26,160 --> 00:26:26,339
+Evet.

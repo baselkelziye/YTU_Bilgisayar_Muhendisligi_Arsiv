@@ -1,0 +1,1627 @@
+1
+00:00:40,435 --> 00:00:42,816
+Arkadaşlar, günaydın. Sesini duyabiliyor musunuz?
+
+2
+00:00:51,316 --> 00:01:00,176
+Evet en son konularak arkadaşlar haftalık içeriye baktığımız zaman hacim konusu geliyor belirge İnteylerleri uygulaması olarak.
+
+3
+00:01:01,036 --> 00:01:01,916
+Ondan bahsedeceğim.
+
+4
+00:01:02,096 --> 00:01:03,736
+Zaten önümüzdeki hafta sınav var.
+
+5
+00:01:04,656 --> 00:01:06,456
+Derslerimizde herhangi bir kesiti de olmayacak.
+
+6
+00:01:07,096 --> 00:01:10,615
+Önümüzdeki hafta iki günde sınava yönelik sorular çözeceğiz arkadaşlar.
+
+7
+00:01:11,296 --> 00:01:14,835
+Bugün ve yarın artık şu en azından hacim kısmı bitirelim.
+
+8
+00:01:15,115 --> 00:01:17,415
+Çünkü artık yavaş yavaş dönem de zaten bitmek üzere.
+
+9
+00:01:17,915 --> 00:01:19,536
+O yüzden bu hafta da bu konuları bitirelim.
+
+10
+00:01:19,536 --> 00:01:21,396
+Sonra haftaya soru çözeriz.
+
+11
+00:01:21,555 --> 00:01:24,176
+Ondan sonraki hafta şey yaparız.
+
+12
+00:01:26,475 --> 00:01:27,975
+Genelleştirilmiş İnteyler konusu var.
+
+13
+00:01:28,656 --> 00:01:30,355
+Daha sonra yine soru ve sonra final haftası.
+
+14
+00:01:30,456 --> 00:01:34,456
+Yani bu haftayı saymazsak üç haftalık bir süremiz kaldı aslında arkadaşlar dönem bitmesine.
+
+15
+00:01:35,496 --> 00:01:39,335
+Evet şimdi birazcık bahsedelim arkadaşlar belirge İnteylerlerin uygulamasına.
+
+16
+00:01:40,496 --> 00:01:42,555
+Konular arkadaşlar bir bakayım.
+
+17
+00:01:42,776 --> 00:01:46,475
+Geçenlerde bir yerde ben size en üzerine mail atayım arkadaşlar.
+
+18
+00:01:46,596 --> 00:01:46,975
+Öyle yapayım.
+
+19
+00:01:46,975 --> 00:01:51,716
+Çünkü geçenlerde bir yerde yazmışlardı ben size hepinize mail atayım daha güzel olacaktır.
+
+20
+00:01:52,356 --> 00:01:53,195
+Öyle daha iyi olur.
+
+21
+00:01:53,516 --> 00:01:54,415
+Herkes görmüş olacağım.
+
+22
+00:01:54,516 --> 00:01:56,436
+Çünkü şu an derste olmayanlar da olabilir.
+
+23
+00:01:56,836 --> 00:01:57,516
+Evet.
+
+24
+00:01:57,516 --> 00:02:07,376
+Şimdi arkadaşlar aslında eskiden bu dik kesitlerin kullanarak alan bulma konusu vardı ama
+
+25
+00:02:07,376 --> 00:02:11,596
+yani burası artık aslında çok fazla bahsedilmiyor.
+
+26
+00:02:11,855 --> 00:02:14,295
+Yani ilerleyen kısımda da sınavlara çok dahil değil.
+
+27
+00:02:15,096 --> 00:02:17,415
+Şöyle yüzeysel belki biraz bahsedebiliriz.
+
+28
+00:02:17,415 --> 00:02:23,936
+Yani burada bakın normalde hatırlarsanız A'dan B'ye FxDx bir integral ifade ediyordu.
+
+29
+00:02:24,736 --> 00:02:30,256
+Eğer bu A alan ise arkadaşlar alan ifade eden bir fonksiyonsa Ax.
+
+30
+00:02:30,876 --> 00:02:35,855
+O zaman bu sefer A'dan B'ye AxDx arkadaşlar bir hacim ifade etmiş olacak.
+
+31
+00:02:35,855 --> 00:02:41,196
+Ve böylelikle A'dan B'ye bu dik kesitin arkadaşlar hacmini hesap etmiş olacağız.
+
+32
+00:02:41,716 --> 00:02:44,876
+Yani hacim genel olarak tek katlı integrallere bu şekilde arkadaşlar.
+
+33
+00:02:46,376 --> 00:02:47,396
+Şimdi şöyle bir örnek var.
+
+34
+00:02:47,456 --> 00:02:48,415
+Basit bir örnek var aslında.
+
+35
+00:02:48,496 --> 00:02:49,816
+Onu sadece inceleyelim.
+
+36
+00:02:50,376 --> 00:02:51,676
+Daha sonra döner yüzeylere geçelim.
+
+37
+00:02:51,675 --> 00:02:57,855
+Yüksekliğe 3 metre olan piramidin tabanı bir kenarı 3 metre olan bir karedir.
+
+38
+00:02:58,135 --> 00:03:06,075
+Piramidin ucunu x metre uzun aşağıda yüksekliğe dik olan dik kesiti bir kenarı x metre olan bir karedir.
+
+39
+00:03:06,515 --> 00:03:07,496
+Piramidin hacmini bulunuz.
+
+40
+00:03:07,695 --> 00:03:10,075
+Arkadaşlar öncelikle yapmanız gereken şey bu aşamalarda.
+
+41
+00:03:10,515 --> 00:03:11,735
+Zaten şekil çizmektir.
+
+42
+00:03:11,735 --> 00:03:15,395
+Hep her zaman olduğu gibi özellikle bu alan ve hacim sorularında arkadaşlar.
+
+43
+00:03:15,396 --> 00:03:23,476
+Baktığınız zaman arkadaşlar mesela bir AX için bir alan elementi belirlemeniz lazım.
+
+44
+00:03:23,896 --> 00:03:28,636
+Bu AX için mesela x'teki dik kesit bir kenara x metre olan bir kare olacaktır.
+
+45
+00:03:28,756 --> 00:03:29,936
+Piramid olduğu için arkadaşlar.
+
+46
+00:03:30,656 --> 00:03:32,176
+Bir dik piramid olduğu için.
+
+47
+00:03:32,856 --> 00:03:36,856
+Yani aslında bizim alan elementi dediğimiz şey kenara x olan bir kare.
+
+48
+00:03:36,856 --> 00:03:41,076
+Bu kırmızı şekilde bakın görüldüğü gibi alan elementimiz bu.
+
+49
+00:03:41,416 --> 00:03:41,816
+AX.
+
+50
+00:03:42,436 --> 00:03:43,816
+X kare bunun alanı.
+
+51
+00:03:43,936 --> 00:03:45,216
+Kare alanı x kare olduğu için.
+
+52
+00:03:45,216 --> 00:03:47,056
+Sınarımız da sıfırdan üç olduğu için.
+
+53
+00:03:47,195 --> 00:03:48,736
+O halde integral sıfırdan üçe.
+
+54
+00:03:49,316 --> 00:03:53,415
+X kare dx integralı bizim bu piramidin arkadaşlar hacmini vermiş olacak.
+
+55
+00:03:53,876 --> 00:03:56,436
+Yani buradan x karenin integralını aldığınızda x küp bölü üç.
+
+56
+00:03:56,575 --> 00:03:57,475
+X yerine önce üç.
+
+57
+00:03:57,656 --> 00:03:58,716
+Sonra sıfırda yazdığınız zaman.
+
+58
+00:03:59,176 --> 00:04:00,836
+Cevabımız dokuz metre küp olacak.
+
+59
+00:04:00,975 --> 00:04:02,756
+Hacim ifade ettiği için arkadaşlar.
+
+60
+00:04:02,756 --> 00:04:03,135
+Evet.
+
+61
+00:04:06,036 --> 00:04:08,716
+Şimdi döner yüzeylere geçebiliriz artık arkadaşlar.
+
+62
+00:04:08,956 --> 00:04:11,756
+Yani dediğim gibi bu dik kesit soruları artık gelmiyor.
+
+63
+00:04:12,376 --> 00:04:13,456
+Eskiden gelen sorulardı.
+
+64
+00:04:13,456 --> 00:04:16,196
+O yüzden çok üzerine durmaya gerek yok.
+
+65
+00:04:16,735 --> 00:04:18,316
+Döner yüzeylere geçebiliriz.
+
+66
+00:04:18,975 --> 00:04:20,936
+Arkadaşlar döner yüzey şu şekilde.
+
+67
+00:04:21,316 --> 00:04:21,956
+Bir y eşittir.
+
+68
+00:04:22,036 --> 00:04:27,516
+FX eğrisinin bir A virgül B aralığındaki kalan kısmının x eksilerden dönülmesi oluşan
+
+69
+00:04:27,516 --> 00:04:32,656
+cismin hacmi arkadaşlar disk yöntemiyle hacim eşittir.
+
+70
+00:04:32,735 --> 00:04:36,896
+P çarpı A'dan B'ye FX DX'in karesi DX şeklinde veriliyor.
+
+71
+00:04:37,256 --> 00:04:39,516
+Hemen örnek üzerinde incelersek aslında arkadaşlar.
+
+72
+00:04:40,475 --> 00:04:43,536
+Bakın y eşittir köküks eğrisinin grafiğini biliyoruz.
+
+73
+00:04:43,536 --> 00:04:48,875
+Yani şu şekilde mavi olan çizgi eğri arkadaşlar.
+
+74
+00:04:48,875 --> 00:05:17,375
+Evet.
+
+75
+00:04:49,524 --> 00:05:04,124
+bunu x eksiyle etrafına pozitif yöne döndürdüğünüz zaman, arkadaşlar, bunun oluşturmuş olduğu döner yüzeyin hacmi, aslında ortası boş, böyle kenarı oval olan bir şekil aslında arkadaşlar.
+
+76
+00:05:04,684 --> 00:05:14,684
+Bu döner cismin hacmi, pi çarpı 0'dan 4'de, zaten aralık da verilmiş x 0 ile 4 arasında, kök x'in karesi dx diyoruz arkadaşlar.
+
+77
+00:05:14,684 --> 00:05:25,024
+pi çarpı o cevabımız, x kare bölü 2'den, x yerine önce 4, sına 0 yazdığınızda cevap, 8 pi birim küp oluyor, hacmi ifade ettiği için arkadaşlar.
+
+78
+00:05:30,548 --> 00:05:37,268
+Bakın denkleme x kare artı y kare eşit akır olan çemberi x eksen etrafa döndürdüğünüzde oluşan küre.
+
+79
+00:05:37,348 --> 00:05:39,968
+Malum çemberi bir eksen etrafa döndürdüğünüzde arkadaşlar.
+
+80
+00:05:40,788 --> 00:05:44,687
+Özellikle x ekseni veya tam dönüş şekli önemli.
+
+81
+00:05:45,288 --> 00:05:49,768
+Mesela kendisi merkezden uzak bir yerde döndürdüğünüz zaman da o zaman tor yüzeyi oluşur.
+
+82
+00:05:49,768 --> 00:05:56,367
+Ama merkez etrafında merkezin geçtiği doğru üzerine döndürdüğünüz zaman arkadaşlar o zaman bir küre oluşur arkadaşlar.
+
+83
+00:05:56,487 --> 00:05:57,208
+Burada olduğu gibi.
+
+84
+00:05:57,507 --> 00:06:00,327
+Çünkü merkez tam x eksen üzerinde oturduğu için arkadaşlar.
+
+85
+00:06:01,088 --> 00:06:01,288
+Evet.
+
+86
+00:06:01,848 --> 00:06:04,848
+Şimdi bu durumda x eksen'e de dönüş oluşan kürenin hacmi.
+
+87
+00:06:04,927 --> 00:06:10,608
+Aslında bu bizim bildiğimiz herkesin bildiği yarı çapı a olan bir kürenin hacmini veren formülü biz çıkarmış olacağız.
+
+88
+00:06:11,427 --> 00:06:14,707
+Arkadaşlar burada x eksenin sınırları eksi a'dan a'ya.
+
+89
+00:06:14,827 --> 00:06:17,987
+Malum yarı çapı a olduğu için x kare artı y kare akare çemberine.
+
+90
+00:06:18,707 --> 00:06:20,608
+P çarpı eksi a'dan a'ya.
+
+91
+00:06:21,427 --> 00:06:22,427
+Fx'in karesi.
+
+92
+00:06:22,468 --> 00:06:24,048
+Fx dediğimiz şey zaten y kare.
+
+93
+00:06:24,487 --> 00:06:29,427
+x kare artı y kare işte akare denkleminden y kareyi yalnız bıraktığınızda akare eksi x kare yapar.
+
+94
+00:06:29,487 --> 00:06:29,768
+Doğru mu?
+
+95
+00:06:29,768 --> 00:06:32,788
+Buranın integrelerini aldığımızda akare çarpı x.
+
+96
+00:06:32,927 --> 00:06:34,367
+Eksi x kare bölü 3.
+
+97
+00:06:34,908 --> 00:06:36,648
+İntegre eksi a'dan a'ya.
+
+98
+00:06:37,148 --> 00:06:37,927
+P çarpı.
+
+99
+00:06:37,927 --> 00:06:45,627
+x yerine önce a sonra eksi a yazdığımızda cevap 4 pi bölü 3 aküp birim kare yapar.
+
+100
+00:06:45,627 --> 00:06:46,007
+Evet.
+
+101
+00:06:46,008 --> 00:06:50,388
+devam ettiğimizde arkadaşlar.
+
+102
+00:06:50,388 --> 00:06:52,668
+y eşittir yine kök x e'lisinin.
+
+103
+00:06:52,668 --> 00:06:57,168
+bu sefer y eşittir 1 ve x eşittir 4 doğru arasında kalan bölge.
+
+104
+00:06:57,168 --> 00:06:59,048
+yani bölgemiz şu arkadaşlar.
+
+105
+00:07:00,048 --> 00:07:02,447
+y eşittir kök x e'lisinin.
+
+106
+00:07:02,447 --> 00:07:03,867
+x eşittir 4.
+
+107
+00:07:04,008 --> 00:07:04,867
+Bakın şurası.
+
+108
+00:07:04,987 --> 00:07:06,468
+Hatta şöyle çizeyim isterseniz.
+
+109
+00:07:07,788 --> 00:07:09,228
+x eşittir 4.
+
+110
+00:07:09,228 --> 00:07:12,427
+y eşittir 1 arkadaşlar.
+
+111
+00:07:12,708 --> 00:07:14,447
+Bakın bu şu düzensel bölge.
+
+112
+00:07:15,067 --> 00:07:16,487
+Burayı biz nerede döndürüyoruz arkadaşlar?
+
+113
+00:07:16,487 --> 00:07:18,648
+x eksi a'lisinin etrafında döndürüyoruz.
+
+114
+00:07:18,927 --> 00:07:19,108
+Evet.
+
+115
+00:07:19,288 --> 00:07:20,007
+Pozitif yönde.
+
+116
+00:07:27,540 --> 00:07:38,660
+gönderdiniz zaman arkadaşlar, öncelikle bu düzlemsel bölgeyi temsil edebilmek için arkadaşlar, aslında üstteki bakın şu aradaki kırmızı çubuğun değdiği noktada bakmak lazım.
+
+117
+00:07:39,600 --> 00:07:47,640
+Yani x eksinden uzak olan büyük olan oluyor. Yani kök x eksi y eşittir 1 oluyor arkadaşlar. Kök x eksi 1'in karesi dx olacak.
+
+118
+00:07:48,580 --> 00:07:55,680
+İntegrasyonun sınırları x nereden nereye değişiyor arkadaşlar burada? 1'den 4'e kök x eksi 1'in karesi.
+
+119
+00:07:55,680 --> 00:08:00,100
+Bu integasyonun sonucu 7 pi bölü 6 birim küp yapar arkadaşlar.
+
+120
+00:08:00,900 --> 00:08:07,340
+Polinom olduğu için bu integrelleri bulabilmeniz zor değil arkadaşlar. Polinomların normal integreller olduğu için basit cevapları.
+
+121
+00:08:08,439 --> 00:08:11,680
+Önem olan integreli ve bölgeyi doğru çizmek arkadaşlar.
+
+122
+00:08:11,680 --> 00:08:12,120
+Evet.
+
+123
+00:08:14,440 --> 00:08:21,520
+Şimdi x eşittir f-y eğrisinin c virgül d noktasında kalan kısmını y eksine etrafa döndürürsek.
+
+124
+00:08:21,520 --> 00:08:23,520
+Yani şimdi ne kadar yaptıklarımız aslında x eksik.
+
+125
+00:08:23,520 --> 00:08:26,980
+Yani şimdi ne kadar yaptıklarımız aslında x eksine etrafa döndürdüğümüzde oluşan cisim hacimleriydi.
+
+126
+00:08:27,620 --> 00:08:37,060
+Risk yönteminde y eksine etrafa döndürdüğümüz zaman da arkadaşlar formül o zaman pi çarpı c'den d'ye f-y'nin karesi diye diyeceğiz bu seferde.
+
+127
+00:08:37,519 --> 00:08:42,980
+Bakın hemen örneğe baktığımızda y eksini ile x eşittir 2 bölü y bu bir hiperboldür.
+
+128
+00:08:42,980 --> 00:08:43,980
+1 ile 4 arasında olmak kaydıyla bölgenin y eksik.
+
+129
+00:08:43,980 --> 00:08:50,539
+1 ile 4 arasında olmak kaydıyla bölgenin y eksine etrafa döndürdüğümüzde oluşan döner cisimün hacmini bulunduğumuzu arkadaşlar.
+
+130
+00:08:51,680 --> 00:09:02,259
+X eşittir 2 bölü y'nin arkadaşlar bakın y eksine etrafa döndürdüğünüz zaman şöyle bir şekil oluşacak ve burada x'ler nedenleri değişiyor arkadaşlar.
+
+131
+00:09:02,399 --> 00:09:06,440
+Bu sefer y ekseni en uzak olanla en yakın olanla çıkarmamız gerekiyor.
+
+132
+00:09:06,700 --> 00:09:08,519
+En uzak olan x eşittir 2 bölü y.
+
+133
+00:09:08,519 --> 00:09:12,580
+En uzak olan y eksinin kendisi yani arkadaşlar x eşittir 0.
+
+134
+00:09:13,120 --> 00:09:18,000
+O halde formül y'ler nedenleri değişiyor 1'den 4'e değişiyor.
+
+135
+00:09:19,220 --> 00:09:24,039
+2 bölü y eksinin 0'ın karesi olacak ki x eşittir 0 zaten bir şeye etkile etmiyor.
+
+136
+00:09:25,500 --> 00:09:29,019
+Bu integrasyonun sonucu da arkadaşlar 3 pi birim karedir.
+
+137
+00:09:29,019 --> 00:09:29,700
+Evet.
+
+138
+00:09:51,283 --> 00:09:52,644
+Devam edersek arkadaşlar.
+
+139
+00:09:53,543 --> 00:09:55,923
+X eşittir y kare artı bir parabolu ile
+
+140
+00:09:55,923 --> 00:09:59,323
+X eşittir 3 doğrusu arasındaki bölgenin
+
+141
+00:09:59,323 --> 00:10:03,323
+X eşittir 3 doğrusu etrafına döndürülmesiyle oluşan
+
+142
+00:10:03,323 --> 00:10:05,303
+dönel cismin hacmini bulalım.
+
+143
+00:10:05,484 --> 00:10:08,504
+Arkadaşlar X eşittir y kare artı bir bir paraboldur.
+
+144
+00:10:09,004 --> 00:10:10,764
+Maviyle olan çizilen eğri.
+
+145
+00:10:11,463 --> 00:10:14,504
+X eşittir 3 de arkadaşlar şöyle onu kesen bir eğri.
+
+146
+00:10:14,504 --> 00:10:16,303
+Daha doğrusu doğrudur.
+
+147
+00:10:17,004 --> 00:10:19,864
+X eşittir 3 etrafına döndürüyoruz arkadaşlar.
+
+148
+00:10:19,864 --> 00:10:24,403
+O zaman X eşittir 3'e uzak olandan yakın olanı çıkartıyoruz arkadaşlar.
+
+149
+00:10:27,703 --> 00:10:31,163
+Ama hangi eksen etrafına döndürüyoruz?
+
+150
+00:10:32,203 --> 00:10:35,183
+X eşittir 3 etrafına döndürüyor olduğumuz için arkadaşlar
+
+151
+00:10:35,183 --> 00:10:35,984
+ne olacak?
+
+152
+00:10:36,163 --> 00:10:39,844
+3 eksi y kare artı birin karesi olacak.
+
+153
+00:10:39,844 --> 00:10:44,083
+Peki burada y'ler nereden değişiyor?
+
+154
+00:10:44,543 --> 00:10:46,024
+Y eşittir eksi kökü giden.
+
+155
+00:10:46,504 --> 00:10:49,583
+Y eşittir kök 2'ye arkadaşlar.
+
+156
+00:10:49,864 --> 00:10:54,823
+Sonucu negatif yapmaması için büyük olanla küçük olanı çıkartıyoruz aslında.
+
+157
+00:10:55,083 --> 00:10:56,583
+Buradaki mevzu bu arkadaşlar.
+
+158
+00:10:57,624 --> 00:11:00,783
+Buradan da zaten polinom olduğu için bunlar.
+
+159
+00:11:01,183 --> 00:11:02,443
+İntegreleri alması kolay.
+
+160
+00:11:03,063 --> 00:11:07,524
+Cevap 64 kökü 2 bölü 15 pi birim küpü olacak arkadaşlar.
+
+161
+00:11:07,524 --> 00:11:08,524
+İntegreleri alması kolay.
+
+162
+00:11:08,524 --> 00:11:25,903
+Buradan da zaten polinom olduğu için.
+
+163
+00:11:19,860 --> 00:11:20,300
+Evet.
+
+164
+00:11:23,899 --> 00:11:36,120
+Geldik. Y eşittir 2 köküks eğrisinin x 80'i ve x eşittir 4 doğrusu ile sınırlanan bölgenin x eşittir 4 doğrusu etrafında döndürülmesiyle oluşan cismin hacmini bulalım diyoruz arkadaşlar.
+
+165
+00:11:36,320 --> 00:11:40,200
+Y eşittir 2 köküks yine mavi ile olan çizilen eğri.
+
+166
+00:11:40,820 --> 00:11:47,120
+Bunun x eşittir 0 ve x eşittir 4 ile sınırladığı bölgede arkadaşlar bakın şu düzensel bölge.
+
+167
+00:11:47,120 --> 00:11:48,980
+Bunu nerede döndürüyoruz arkadaşlar?
+
+168
+00:11:48,980 --> 00:11:51,759
+X eşittir 4 doğrusu etrafında döndürüyoruz.
+
+169
+00:11:52,440 --> 00:11:55,320
+Yine büyük olandan arkadaşlar küçük olanı çıkaracağız.
+
+170
+00:11:55,460 --> 00:11:58,639
+Yani y ekseninden uzak olanla y eksene yakın olanı çıkaracağız.
+
+171
+00:11:58,899 --> 00:12:04,180
+Yani 4'ün 4 eksi y kare bölü 4'ün karesi ifadesi olacak.
+
+172
+00:12:04,340 --> 00:12:11,000
+Çünkü y eşittir 2 köküks ifadesinin x'i yalnız bıraktığınız zaman x eşittir y kare bölü 4'tür arkadaşlar.
+
+173
+00:12:11,000 --> 00:12:19,360
+Ve böylelikle bu integrasyonu gerçekleştirdiğiniz zaman cevap 512 bölü 15 pi birim küp olacak arkadaşlar.
+
+174
+00:12:19,360 --> 00:12:24,947
+Evet.
+
+175
+00:12:27,427 --> 00:12:29,107
+Geldik bir sonraki soruya arkadaşlar.
+
+176
+00:12:29,387 --> 00:12:41,367
+y eşittir 2x'e'de ise y eşittir 1, x eşittir 4 doğrularıyla kalan alanın y eşittir 1 doğrusu etrafa dönmesiyle oluşan cismin hacmini bulalım diyoruz arkadaşlar.
+
+177
+00:12:41,567 --> 00:12:45,408
+Yine x ekseninden uzak olanla yakın olanı çıkartıyoruz arkadaşlar.
+
+178
+00:12:46,067 --> 00:12:52,267
+Yani 2 kökü daha yukarıda olduğu için y eşittir 1 de daha aşağıda olduğu için x eksene daha yakın olduğu için
+
+179
+00:12:52,267 --> 00:12:56,267
+yani 2 kökü eksi 1'in karesi integrasyon hızlıların nereden nereye?
+
+180
+00:12:56,807 --> 00:12:58,587
+1'i böl 4'ten 4 arkadaşlar.
+
+181
+00:12:58,807 --> 00:13:00,267
+Peki bunu nasıl belirlik arkadaşlar?
+
+182
+00:13:00,887 --> 00:13:04,267
+y eşittir 2 kökü x ile y eşittir 1'i kesiştirdik.
+
+183
+00:13:04,927 --> 00:13:06,227
+x eşittir 1'i böl 4 bulduk.
+
+184
+00:13:06,687 --> 00:13:12,548
+y eşittir 2 kökü x ile x eşittir 4'ü bulduğunuz zaman da zaten burada x eşittir 4 oldu belli.
+
+185
+00:13:12,548 --> 00:13:17,548
+x eşittir 4 zaten doğrusu olduğu için direkt üstün olarak 4'ü yazmak zaten problem yok.
+
+186
+00:13:18,407 --> 00:13:18,567
+Evet.
+
+187
+00:13:18,567 --> 00:13:48,548
+bu itir 2'i aldığınızda
+
+188
+00:13:41,716 --> 00:13:43,735
+Şimdi geldik pul yöntemine arkadaşlar.
+
+189
+00:13:44,436 --> 00:13:46,875
+Pul yönteminde de şöyle bir yol izliyoruz.
+
+190
+00:13:47,296 --> 00:13:51,156
+Aslında bir nevi iki yeri arasındaki kalan alanı hesap ediyoruz pul yönteminde.
+
+191
+00:13:51,895 --> 00:13:54,596
+Bunda ise arkadaşlar bakın V eşittir.
+
+192
+00:13:54,596 --> 00:14:00,056
+P çarpı A'dan B'ye F kare eksi G x karenin D x şeklinde söylüyoruz.
+
+193
+00:14:00,735 --> 00:14:04,716
+Eğer y x'in etrafa döndüreceksek bu iki yer arasında kalan bölgeyi o zaman da
+
+194
+00:14:04,716 --> 00:14:10,355
+P çarpı C'den D'ye F y'nin karesi eksi G y'nin karesi şeklinde buluyoruz arkadaşlar.
+
+195
+00:14:11,716 --> 00:14:19,316
+y eşittir x kare artı y artı bir eğrisi ve y eşittir eksi x artı dört doğru arasında kalan bölgenin
+
+196
+00:14:19,316 --> 00:14:22,115
+x eksen etrafa döndümesi oluşan cismin hacmini bulalım arkadaşlar.
+
+197
+00:14:23,115 --> 00:14:27,635
+Bakın y eşittir x kare artı bir eğrisi zaten parabol burada.
+
+198
+00:14:27,776 --> 00:14:29,816
+y eşittir eksi x artı üç eğrisi de burada.
+
+199
+00:14:30,115 --> 00:14:31,015
+Doğrusu daha doğrusu burada.
+
+200
+00:14:31,716 --> 00:14:33,515
+Doğrusu da özel bir eğridir.
+
+201
+00:14:35,296 --> 00:14:37,995
+Buradan arkadaşlar ne diyoruz?
+
+202
+00:14:37,995 --> 00:14:44,155
+En dıştaki yani x ekseninin daha uzak olanı büyük olduğu için arkadaşlar.
+
+203
+00:14:44,395 --> 00:14:46,036
+Eksi x artı üçün karesi eksi.
+
+204
+00:14:47,196 --> 00:14:49,696
+x kare artı birin karesi diyoruz arkadaşlar.
+
+205
+00:14:49,895 --> 00:14:53,056
+Eksi ikiden böyle integrasyon ısınları ve bunun cevabı da
+
+206
+00:14:53,056 --> 00:14:57,676
+117 pi bölü 15 birim küp şeklinde olacak arkadaşlar.
+
+207
+00:14:57,676 --> 00:15:02,395
+Buraya kadar anlaşılmayan bir yer var mı arkadaşlar?
+
+208
+00:15:02,936 --> 00:15:03,495
+Sorabilirsiniz.
+
+209
+00:15:50,451 --> 00:15:51,611
+Sanırım soru yok.
+
+210
+00:15:52,211 --> 00:15:53,152
+Devam ediyorum o zaman.
+
+211
+00:15:54,731 --> 00:15:56,032
+Bakın soru şu.
+
+212
+00:15:56,392 --> 00:15:58,011
+Y eşittir x kare paraboli ve
+
+213
+00:15:58,011 --> 00:15:59,392
+y eşittir 2x
+
+214
+00:15:59,392 --> 00:16:01,792
+doğrusu ile sınırları
+
+215
+00:16:01,792 --> 00:16:04,312
+alan y ekseni etrafında
+
+216
+00:16:04,312 --> 00:16:06,292
+döndürerek bir döner cisim oluşturuluyor.
+
+217
+00:16:06,351 --> 00:16:07,591
+Döner cisimin hacmini bulalım.
+
+218
+00:16:08,672 --> 00:16:10,152
+Arkadaşlar yine bakın
+
+219
+00:16:10,152 --> 00:16:12,511
+y ekseninden uzak olanağız dışarıdaki
+
+220
+00:16:12,511 --> 00:16:14,211
+y eşittir
+
+221
+00:16:14,211 --> 00:16:16,692
+x kare. Bundan x'i yanına bıraktığınız zaman
+
+222
+00:16:16,692 --> 00:16:18,231
+x eşittir kök yedir. Yani
+
+223
+00:16:18,231 --> 00:16:20,152
+kök yedirin karesi eksi
+
+224
+00:16:20,152 --> 00:16:22,591
+şu y eşittir 2x'den de
+
+225
+00:16:22,591 --> 00:16:24,532
+x'i yalnız bıraktığınız zaman da
+
+226
+00:16:24,532 --> 00:16:26,491
+x eşittir y bölü 2'dir. O halde
+
+227
+00:16:26,491 --> 00:16:28,532
+kök y'nin kare eksi eksi y bölü
+
+228
+00:16:28,532 --> 00:16:30,052
+2'nin karesi d y.
+
+229
+00:16:30,392 --> 00:16:32,072
+İntegre sıfırdan dördü.
+
+230
+00:16:33,451 --> 00:16:34,412
+Buradan cevaplar
+
+231
+00:16:34,412 --> 00:16:36,351
+nasıl aranız arkadaşlar? Cevap 8 pi
+
+232
+00:16:36,351 --> 00:16:38,251
+bölü 3 birim
+
+233
+00:16:38,251 --> 00:16:39,172
+küptür.
+
+234
+00:16:42,644 --> 00:16:43,144
+Evet.
+
+235
+00:16:46,964 --> 00:17:02,724
+Bir diğer soru arkadaşlar. y eşittir x kare bölü 2 artı 2 eğrisi ve y eşittir x artı 1 bölü 2 eğrileri ve x eşittir 0 ve x eşittir 2 doğrusunu sıraman bölgenin x eksine tanıdığımız oluşan ismini hacmini.
+
+236
+00:17:03,144 --> 00:17:12,403
+Bakın y eşittir x kare bölü 2 artı 2 parabolu şu üstteki olan arkadaşlar. y eşittir x artı 1 bölü 2 de şu hemen altındaki yine mavi olan doğru.
+
+237
+00:17:12,403 --> 00:17:18,703
+bunu x eksenini etrafına döndürüyoruz ve sıralarız sıfırdan dörde. Zaten şekil çok açık.
+
+238
+00:17:19,284 --> 00:17:27,004
+y eşittir x kare artı 2 bölü 2'nin oluşmuş olduğu hacimle y eşittir x artı 1 bölü 2'nin oluşmuş olduğu hacmi çıkartıyoruz arkadaşlar.
+
+239
+00:17:27,183 --> 00:17:31,064
+Ve cevap 293 bölü 30 pi birim küp yapıyor arkadaşlar.
+
+240
+00:17:36,660 --> 00:17:51,840
+Bir diğer soru y eşittir 1 bölü 4 x küp 50'si ile y eşittir x doğrusu ile sığırlaman bölgenin koordinat düzeninin birinci bölgesinde kalan kısmının y eksen etrafında a şıkkı ve eşittir x eksen etrafında dönülmesi ile oluşan hacim diyoruz arkadaşlar.
+
+241
+00:17:51,840 --> 00:18:11,900
+A şıkkında bakın şekil şu yine dıştakinden içtekini çıkartıyoruz arkadaşlar yani y eşittir 1 bölü 4 x küpte x'i yalnız bıraktığınızda üçüncü dereceden kök 4 y yapar bunun karesi eksi y eşittir x'te de x eşittir y'nin karesi olacaktır.
+
+242
+00:18:11,900 --> 00:18:20,820
+Dıştakinden içeridekini çıkartıyorsunuz. İntegrasyon sıfırdan 2'ye. Buradan cevabımız arkadaşlar 32 pi bölü 15 birim küp yapacaktır.
+
+243
+00:18:21,840 --> 00:18:32,220
+B şıkkında ise arkadaşlar aynı iş yine aslında şekil bu sefer x eksen etrafına döndürüyoruz. O zaman da en dıştaki y eşittir x yani x'in karesi eksi.
+
+244
+00:18:32,820 --> 00:18:42,580
+Y eşittir 1 bölü 4 x küpün karesi. x kare eksi 1 bölü 4 x küpün karesi dedik. Burayı açtığımız zaman arkadaşlar yine polinom ifade olacak.
+
+245
+00:18:42,580 --> 00:18:47,680
+Buranın integrasyonu sonucunda 32 bölü 21 pi birim küp yapacak arkadaşlar.
+
+246
+00:18:47,680 --> 00:18:51,220
+Evet.
+
+247
+00:18:53,880 --> 00:19:21,540
+Buraya kadar sorusuna var mı arkadaşlar?
+
+248
+00:19:23,476 --> 00:19:27,076
+Evet şimdi ise silindirik kabuk yöntemine geçiş yapıyoruz arkadaşlar.
+
+249
+00:19:27,236 --> 00:19:30,876
+Bakın silindirik kabuk yönteminde ise işler şöyle değişiyor.
+
+250
+00:19:31,236 --> 00:19:37,596
+Az önce disk yönteminde eğer x ekseni etrafına döndürüyorsak formülümüz x'e bağlıydı arkadaşlar.
+
+251
+00:19:38,016 --> 00:19:39,936
+İntegrasyonun değişkeni.
+
+252
+00:19:40,456 --> 00:19:45,996
+Bunda ise eğer söz konusu bölgeyi x y ekseni etrafına döndürüyorsa integasyon dx.
+
+253
+00:19:46,776 --> 00:19:51,176
+Eğer x ekseni etrafına döndürüyorsak da dy olacak şekilde arkadaşlar.
+
+254
+00:19:51,316 --> 00:19:52,756
+Silindirik kabuk yöntemi de bu.
+
+255
+00:19:52,756 --> 00:19:54,856
+Yani disk yönteminden farklı.
+
+256
+00:19:55,196 --> 00:20:02,096
+Bölge biraz daha böyle silindirik oluyorsa aslında integasyonu almak biraz daha kolay olabilir arkadaşlar.
+
+257
+00:20:03,556 --> 00:20:06,076
+Aslında her ikisine de her iki yöntem uygulanabilir.
+
+258
+00:20:06,236 --> 00:20:06,856
+Her soruya da.
+
+259
+00:20:07,276 --> 00:20:11,396
+Ama hangisinde daha rahat integyal çıkıyorsa tabii ki onu tercih etmekte fayda var.
+
+260
+00:20:13,876 --> 00:20:20,956
+Y eşittir 2x x x kare enisi ile x x'in arasında kalan bölgenin y eksen etrafına dönmesiyle oluşan dyzmin hacmini bulalım diyoruz arkadaşlar.
+
+261
+00:20:25,779 --> 00:20:28,539
+Aynen öyle. Yani sonuçta her ikisi de aynı sonuç veriyor.
+
+262
+00:20:29,879 --> 00:20:30,819
+Önemli olan hani
+
+263
+00:20:30,819 --> 00:20:32,240
+integrasyonu kurduğumuz zaman
+
+264
+00:20:32,240 --> 00:20:34,700
+zor bir integriler çıkıyorsa tabii ki
+
+265
+00:20:34,700 --> 00:20:36,559
+kolay olanı tercih etmek lazım.
+
+266
+00:20:36,879 --> 00:20:38,759
+Arasındaki en büyük fark bu. Yoksa her ikisi de
+
+267
+00:20:38,759 --> 00:20:39,879
+aynı sonucu verir arkadaşlar.
+
+268
+00:20:40,599 --> 00:20:42,980
+Yani kabuk yöntemi, başka ne dedik
+
+269
+00:20:42,980 --> 00:20:44,759
+disk yöntemi, pul yöntemi, hepsi de
+
+270
+00:20:44,759 --> 00:20:45,779
+aynı sonucu verir arkadaşlar.
+
+271
+00:20:46,579 --> 00:20:48,440
+Önemli olan hangisinin integrasyonu kolay çıkıyorsa
+
+272
+00:20:48,440 --> 00:20:49,460
+onu tercih etmektir.
+
+273
+00:20:50,960 --> 00:20:53,460
+Şimdi y eşittir 2x-x-x kaderisiyle
+
+274
+00:20:53,460 --> 00:20:55,559
+x-x'in arasında kalan bölgelerin
+
+275
+00:20:55,559 --> 00:20:57,339
+y-x'in arasında dönmesiyle oluşan
+
+276
+00:20:57,339 --> 00:20:58,839
+cismin hacmini bulamıyoruz arkadaşlar.
+
+277
+00:21:00,079 --> 00:21:01,839
+Bakın tek bir eğri var zaten.
+
+278
+00:21:02,259 --> 00:21:04,819
+O halde 2p çarpı x diyoruz.
+
+279
+00:21:04,879 --> 00:21:05,879
+Formülden gelen x var.
+
+280
+00:21:06,500 --> 00:21:07,240
+Fonksiyonumuz ne?
+
+281
+00:21:07,420 --> 00:21:09,039
+y eşittir 2x-x-x kare.
+
+282
+00:21:09,759 --> 00:21:11,299
+İntegrasyonu sıfırdan 2'ye.
+
+283
+00:21:12,099 --> 00:21:13,779
+Bakın burayı açtığınız zaman
+
+284
+00:21:13,779 --> 00:21:16,099
+2x kare-x küp yapar.
+
+285
+00:21:16,519 --> 00:21:17,680
+Buranın integrili aldığınızda cevap
+
+286
+00:21:17,680 --> 00:21:20,119
+8p bölü 3 birim küp yapar arkadaşlar.
+
+287
+00:21:20,119 --> 00:21:20,639
+Evet.
+
+288
+00:21:22,680 --> 00:21:24,039
+Bir diğer örnek
+
+289
+00:21:24,039 --> 00:21:25,599
+y eşittir 2x-x eğrisi
+
+290
+00:21:25,599 --> 00:21:28,000
+x-x'in ve x eşittir 4 doğrusu ile
+
+291
+00:21:28,000 --> 00:21:29,420
+çevrenen bölge
+
+292
+00:21:29,420 --> 00:21:31,019
+y-x'in etrafında döndürülerek
+
+293
+00:21:31,019 --> 00:21:32,440
+bir döner cism oluşturuluyor.
+
+294
+00:21:33,000 --> 00:21:34,420
+Bu döner cismin hacmini bulalım.
+
+295
+00:21:35,500 --> 00:21:37,240
+Arkadaşlar y eşittir 2x-x'in
+
+296
+00:21:37,240 --> 00:21:37,759
+bakın
+
+297
+00:21:37,759 --> 00:21:40,200
+nerede döndürüyoruz?
+
+298
+00:21:40,200 --> 00:21:41,519
+y-x'in etrafında döndürülüyoruz.
+
+299
+00:21:41,720 --> 00:21:43,160
+İntegrasyonu x'e göre alacağız.
+
+300
+00:21:43,299 --> 00:21:45,559
+Disk yönteminden ve pul yönteminden
+
+301
+00:21:45,559 --> 00:21:46,519
+farkı buyurmuştuk.
+
+302
+00:21:47,299 --> 00:21:48,160
+O halde
+
+303
+00:21:48,160 --> 00:21:49,619
+integrasyonuna gelen x
+
+304
+00:21:49,619 --> 00:21:50,740
+tek bir eğri olduğu için
+
+305
+00:21:50,740 --> 00:21:52,319
+zaten direkt kök x diyoruz.
+
+306
+00:21:52,720 --> 00:21:53,099
+Dx.
+
+307
+00:21:53,339 --> 00:21:54,539
+Bu integrili aldığınızda
+
+308
+00:21:54,539 --> 00:21:55,460
+cevap
+
+309
+00:21:55,460 --> 00:21:56,920
+128p bölüm
+
+310
+00:21:56,920 --> 00:21:59,159
+5p birim
+
+311
+00:21:59,159 --> 00:22:00,639
+küp yapacak arkadaşlar.
+
+312
+00:22:04,019 --> 00:22:05,519
+Bakın aynısını
+
+313
+00:22:05,519 --> 00:22:07,220
+pul yönteminde yaptığınız zaman
+
+314
+00:22:07,220 --> 00:22:08,779
+integrasyon şu oluyor.
+
+315
+00:22:08,920 --> 00:22:10,039
+4'ün karesi eksi
+
+316
+00:22:10,039 --> 00:22:11,420
+y-karenin karesi
+
+317
+00:22:11,420 --> 00:22:12,599
+şeklinde yapsanız da
+
+318
+00:22:12,599 --> 00:22:14,539
+yine pul yönteminde
+
+319
+00:22:14,539 --> 00:22:15,900
+cevabı
+
+320
+00:22:15,900 --> 00:22:17,839
+aynı şekilde bulabiliyorsunuz arkadaşlar.
+
+321
+00:22:32,403 --> 00:22:43,503
+Bir diğer soru, y eşittir kökü x eğrisi ve x eşittir 4 doğrusu ile çevrenen bölge x eksenler etrafına döndürülerek bir döner cisim üretiliyor. Bu döner cisim hacmini bulalım.
+
+322
+00:22:44,584 --> 00:22:58,304
+Arkadaşlar, sonuç şu, yani yine tabii biz bunu kabuk yönteminde yapacaksak x eksenler etrafında diyorsa integrasyonun sınırları d'ye olacak. Yani y'ye göre almış olacağız arkadaşlar.
+
+323
+00:22:58,304 --> 00:23:10,263
+Bakın bu bölgede y'ye göre almış olacağız. Bakın bu bölgede y'ler nasıl değişiyor bu çubuk aldığımız zaman. En dıştaki 4x eşittir 4, şuradaki ise x eşittir. Arkadaşlar, y karedir. Yani ne diyoruz?
+
+324
+00:23:10,364 --> 00:23:22,163
+y çarpı formülde gelen y, 4 eksi y kare. 2 pi ile formülde gelen 2 pi, 0'dan 2 ye. Y'nin değiştiği aralıkta. Buradan cevabımız arkadaşlar 8 pi birim küp yapar.
+
+325
+00:23:22,163 --> 00:23:22,604
+Evet.
+
+326
+00:23:22,604 --> 00:23:52,584
+Bu bölgede gelen y, 4 eksi y kare.
+
+327
+00:23:52,584 --> 00:24:22,564
+Arkadaşlar, y kare.
+
+328
+00:24:33,940 --> 00:24:47,880
+Bakın y eşittir fx x ekseni ve y eşittir fx eşittir 3x eksi x kare parabolu ile sınırlanan bölge x eşittir eksi bir dikey doğrusu etrafında döndürülerek bir dönel cisim oluşturuluyor.
+
+329
+00:24:48,259 --> 00:24:50,440
+Dönel cisimin hacmini bulalım diyoruz arkadaşlar.
+
+330
+00:24:51,299 --> 00:24:56,320
+Bakın v eşittir 2p çarpı 0'dan 3'e x'lerin değiştiği aralık.
+
+331
+00:24:56,320 --> 00:25:03,980
+x eşittir eksi bir arkadaşlar y eksenine paralel bir doğru olduğu için iteylas sonumuzu yine x'e göre alacağız.
+
+332
+00:25:04,559 --> 00:25:14,000
+Yani az önce bir önceki sayfada formülde olduğu gibi x eşittir eksi bir x eksenin son tarafında olduğu için buraya x eksi eksi birden x artı bir çarpanı gelecek.
+
+333
+00:25:14,660 --> 00:25:17,320
+fx de zaten y eşittir 3x eksi x karedir.
+
+334
+00:25:18,580 --> 00:25:22,900
+Ve buradan cevabımız arkadaşlar 45 bölü 2p birim küp yapacaktır.
+
+335
+00:25:28,596 --> 00:25:46,016
+Bir diğer örnek ise arkadaşlar, x eşittir 2y küp, eksi y üzeri 4 eğrisiyle y ekseni arasında kalan alanın x eksine etrafa dönmesiyle oluşan cismin kaybı diyoruz arkadaşlar. Soru bu.
+
+336
+00:26:00,147 --> 00:26:07,407
+y x'in etrafında, yani x x'in etrafını döndürdüğümüz için arkadaşlar, integral sonun sınırları y'ye göre olacak.
+
+337
+00:26:08,048 --> 00:26:20,847
+y çarpı 2y küp eksi y üzeri 4 diyoruz arkadaşlar. Bu da polinom olduğu için integral'da aldığınızda cevap 64 pi bölü 15 birim küp yapıyor arkadaşlar.
+
+338
+00:26:27,059 --> 00:26:28,440
+Geldik bir diğer örneğe.
+
+339
+00:26:28,519 --> 00:26:32,419
+Y eşittir x kare ve y eşittir x artı 2 arasında kalan bölgenin
+
+340
+00:26:32,419 --> 00:26:36,759
+x eşittir 3 doğru etrafının dönmesiyle oluşan cismin hacmini bulalım.
+
+341
+00:26:38,119 --> 00:26:40,779
+Y eşittir x kare arkadaşlar bakın gördüğünüz gibi
+
+342
+00:26:40,779 --> 00:26:43,019
+y eşittir x artı 2 de diğer doğru.
+
+343
+00:26:43,599 --> 00:26:48,119
+x eşittir 3 etrafını döndüreceğimize göre x eşittir 3 x eksinin sağ tarafında kaldığı için
+
+344
+00:26:48,119 --> 00:26:50,700
+integralde 3 eksi x çarpanı gelecek.
+
+345
+00:26:51,279 --> 00:26:52,679
+X'ler buradan nereden nereye değişiyor?
+
+346
+00:26:52,679 --> 00:26:57,659
+2'ye ile ortak çözdüğünüzde daha doğrusu y eşittir x artı 2 ile y eşittir x kare ile ortak çözdüğünüzde
+
+347
+00:26:57,659 --> 00:26:59,359
+kesin noktaları eksi 1 ile 2'dir.
+
+348
+00:26:59,419 --> 00:27:02,359
+O halde integrasyonun sınırları eksi 1'den 2 olacak.
+
+349
+00:27:02,859 --> 00:27:04,940
+Peki dışarıdakine içeridekini çıkaracağız diyoruz.
+
+350
+00:27:04,960 --> 00:27:05,879
+Yani en uzak olandan.
+
+351
+00:27:06,759 --> 00:27:11,339
+Yukarıdaki arkadaşlar x artı 2 olduğu için alttaki de x kare olduğu için ne diyoruz?
+
+352
+00:27:11,419 --> 00:27:14,519
+x kare artı x artı 2 eksi x kare.
+
+353
+00:27:14,819 --> 00:27:17,700
+Ben arkadaşlar kononomi olduğu için çarptığınız zaman
+
+354
+00:27:17,700 --> 00:27:23,399
+tek tek integrasyonun sınırları aldığınız zaman cevap 45 pi bölü 2 birim küp olacak arkadaşlar.
+
+355
+00:27:23,839 --> 00:27:28,740
+Evet son bir soru çözeceğiz arkadaşlar.
+
+356
+00:27:28,879 --> 00:27:31,059
+Yayız ununu yarınki derse bırakacağız.
+
+357
+00:27:31,200 --> 00:27:31,919
+Son bir soru.
+
+358
+00:27:33,679 --> 00:27:35,059
+Bakın az önce söyledim arkadaşlar.
+
+359
+00:27:35,259 --> 00:27:39,119
+Bir çemberi merkezinden geçen bir doğru üzerinde çeviriyorsanız bir külü olur.
+
+360
+00:27:39,119 --> 00:27:47,460
+Eğer bir çemberi merkezinden geçmeyen, daha doğrusu çemberin dışında bir doğru etrafında çevirdiğiniz zaman da
+
+361
+00:27:47,460 --> 00:27:49,919
+o zaman arkadaşlar bu bir tor yüzeyidir.
+
+362
+00:27:50,799 --> 00:27:53,740
+Fizikte de dahi karşınıza çıkan bir yüzeydir arkadaşlar.
+
+363
+00:27:54,339 --> 00:27:55,539
+Şimdi burada o zaman formül şu olacak.
+
+364
+00:27:55,679 --> 00:27:56,359
+x eşittir.
+
+365
+00:27:56,919 --> 00:27:59,159
+Eksi 3, x eksinin sol tarafında olduğu için
+
+366
+00:27:59,159 --> 00:28:02,019
+formülden bir x eksi eksi 3 gelecek arkadaşlar.
+
+367
+00:28:02,460 --> 00:28:02,839
+Doğru mu?
+
+368
+00:28:02,839 --> 00:28:07,779
+İntegrasyonun sınırları yani şu düzensel çembere baktığınız zaman
+
+369
+00:28:07,779 --> 00:28:09,679
+eksi 2'den 2'ye arkadaşlar.
+
+370
+00:28:09,960 --> 00:28:17,039
+Düzensel aslında yani düzensel bölgede x'in sınırları eksi 2'den artı 2'ye.
+
+371
+00:28:17,859 --> 00:28:19,299
+x artı 3 formülden geliyor.
+
+372
+00:28:19,980 --> 00:28:22,579
+Peki yukarıdaki eğri arkadaşlar nedir?
+
+373
+00:28:22,619 --> 00:28:23,139
+Y eşittir.
+
+374
+00:28:23,220 --> 00:28:24,200
+4 eksi x karedir.
+
+375
+00:28:24,779 --> 00:28:27,019
+Alttaki eğri de eksi kök.
+
+376
+00:28:27,019 --> 00:28:29,500
+4 eksi x kare olduğu için bir eksi daha artı olacak.
+
+377
+00:28:29,659 --> 00:28:31,579
+Yani iki tane arkadaşlar.
+
+378
+00:28:32,839 --> 00:28:33,539
+Ne geliyor?
+
+379
+00:28:33,619 --> 00:28:36,740
+İki tane 4 eksi x karenin kara kökü geliyor.
+
+380
+00:28:37,319 --> 00:28:38,679
+Şimdi bu integralde ayırırsak.
+
+381
+00:28:40,299 --> 00:28:42,259
+Yani x çarpı köklü ifade.
+
+382
+00:28:43,019 --> 00:28:44,980
+Artı 3 çarpı köklü ifade.
+
+383
+00:28:45,079 --> 00:28:47,079
+Bir de dışarıda 4 olduğu için 12 yapacak.
+
+384
+00:28:47,659 --> 00:28:49,480
+Yani şu 4 pi çarpı.
+
+385
+00:28:49,579 --> 00:28:52,619
+Eksi 2'den 2'ye x çarpı 4 eksi x kare integraliyle
+
+386
+00:28:52,619 --> 00:28:57,000
+integral 4 eksi x karenin kara kökü integralini aynı hale hesap edeceğiz.
+
+387
+00:28:59,299 --> 00:29:00,559
+Sondaki integral kolay.
+
+388
+00:29:00,559 --> 00:29:02,539
+Çünkü 4 eksi x kare u dersek
+
+389
+00:29:02,539 --> 00:29:05,539
+2 eksi 2 eksi 2 eksi de eksi eşittir.
+
+390
+00:29:05,599 --> 00:29:06,920
+De u olur ve integrasyon alırsınız.
+
+391
+00:29:07,519 --> 00:29:10,119
+Sağdaki integral ise arkadaşlar bir trigonometrik integraldir.
+
+392
+00:29:10,199 --> 00:29:10,639
+Hatırlayın.
+
+393
+00:29:12,179 --> 00:29:13,779
+Bunu 3 farklı şekilde verdik.
+
+394
+00:29:13,779 --> 00:29:16,179
+x kare artı a kare tarzı integral.
+
+395
+00:29:16,819 --> 00:29:19,339
+A kare eksi x karenin kara kökü tarzı integral.
+
+396
+00:29:19,399 --> 00:29:21,179
+Bir de a kare eksi.
+
+397
+00:29:21,740 --> 00:29:24,639
+Bir de x kare eksi a karenin kara kökü tarzı integral.
+
+398
+00:29:24,720 --> 00:29:26,539
+Onda da sekant t dönüşümü yapıyoruz.
+
+399
+00:29:27,139 --> 00:29:30,559
+Bu arkadaşlar a kare yani 4 eksi x kare tarzı integral olduğu için
+
+400
+00:29:30,559 --> 00:29:33,639
+biz buna x eşittir a çarpı sinüs t t.
+
+401
+00:29:33,699 --> 00:29:35,799
+Yani a dediğim şey burada 4'ün kare kökü 2'dir.
+
+402
+00:29:36,740 --> 00:29:42,279
+x eşittir 2 sinüs t değişken değişiklikleri yaparak bu integrali bulabiliriz arkadaşlar.
+
+403
+00:29:42,279 --> 00:29:48,279
+Buradan da cevabımız her ikini tegral aldığımız zaman değişken değişikliklerinden sonra cevap
+
+404
+00:29:48,899 --> 00:29:54,519
+24 pi kare birim küp şeklinde oluyor arkadaşlar.
+
+405
+00:29:54,799 --> 00:29:59,879
+Evet arkadaşlar soru soralım var mı?
+
+406
+00:30:25,491 --> 00:30:30,011
+Evet, sorunuz yoksa arkadaşlar, yarın yay uzunluğundan devam edeceğiz.
+
+407
+00:30:38,900 --> 00:30:41,360
+Evet arkadaşlar, kendinize çok iyi bakın. Görüşmek üzere.

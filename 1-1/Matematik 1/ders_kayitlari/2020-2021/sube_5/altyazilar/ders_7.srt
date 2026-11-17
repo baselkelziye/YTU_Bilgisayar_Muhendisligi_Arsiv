@@ -1,0 +1,243 @@
+1
+00:02:17,876 --> 00:02:20,176
+Günaydın arkadaşlar, beni duyabiliyor musunuz?
+
+2
+00:02:27,668 --> 00:02:30,647
+Evet, en son transandant fonksiyonlarda kalmıştık arkadaşlar.
+
+3
+00:02:31,448 --> 00:02:33,408
+Tabii transandant fonksiyonlar nelerdi?
+
+4
+00:02:34,147 --> 00:02:40,367
+İşte logaritmek, üstel, ters trigonometrik gibi fonksiyonlara biz tamamına transandant fonksiyonlar diyoruz.
+
+5
+00:02:40,828 --> 00:02:42,427
+Bunların arasında biraz da geçişler var.
+
+6
+00:02:42,548 --> 00:02:48,048
+Mesela logaritmek ve üstel fonksiyon birbirinin tersi, ters fonksiyonun tanımını vermemiz gerekiyor öncesinde.
+
+7
+00:02:48,048 --> 00:02:56,987
+Hatta ters bir fonksiyonun tersini almadan da direkt fonksiyonun türevi yardımıyla tersinin türevinin belli bir noktadaki değerini hesap edebiliyoruz.
+
+8
+00:02:56,987 --> 00:02:58,348
+Bunları biraz konuşacağız.
+
+9
+00:02:58,448 --> 00:02:59,968
+Zaten çok fazla yapmayacağım arkadaşlar.
+
+10
+00:03:00,588 --> 00:03:03,448
+Yarın da tatil olduğu için biraz konu bölecek.
+
+11
+00:03:03,828 --> 00:03:05,307
+Biraz konuda kadar ilerideyiz.
+
+12
+00:03:05,728 --> 00:03:07,608
+Şöyle kısa bir tanıtım yapıp bitireceğim arkadaşlar.
+
+13
+00:03:09,688 --> 00:03:13,768
+Öncelikle fonksiyonun tabii tersini olabilmesi için bu tarz bilgileri duymuş olabilirsiniz.
+
+14
+00:03:14,228 --> 00:03:15,568
+Birebir bir örten olması gerekiyor.
+
+15
+00:03:16,228 --> 00:03:19,728
+Birebir fonksiyon ki bazen yeterli olabiliyor.
+
+16
+00:03:19,788 --> 00:03:21,148
+Örtenliğe bile gerek kalmayabiliyor.
+
+17
+00:03:21,247 --> 00:03:24,788
+Ama tanım olarak düşünürseniz birebir bir örten fonksiyon olmaz gerekiyor.
+
+18
+00:03:24,867 --> 00:03:26,388
+Bu fonksiyonun tersini olabilmesi için.
+
+19
+00:03:26,388 --> 00:03:29,668
+Veya pratik olarak grafik üzerinde düşündüğünüz zaman da
+
+20
+00:03:29,668 --> 00:03:33,028
+eğer siz x80 ile paralel doğrular çizdiniz zaman
+
+21
+00:03:33,028 --> 00:03:35,408
+bu x80'ini tek bir noktada kesiyorsa
+
+22
+00:03:35,408 --> 00:03:36,968
+her bir çizdiniz doğru.
+
+23
+00:03:37,448 --> 00:03:39,828
+Bu da fonksiyonun birebir olduğunu gösterir ki
+
+24
+00:03:39,828 --> 00:03:43,768
+genelde de birebir olunca da örtenlik çok aranmayabiliyor.
+
+25
+00:03:44,108 --> 00:03:46,088
+Tabii örtenliğin de asıl tanımımı şurada arkadaşlar.
+
+26
+00:03:46,088 --> 00:03:48,288
+Bu fonksiyonun tanımladığı zaman
+
+27
+00:03:48,288 --> 00:03:49,228
+A'dan B'ye
+
+28
+00:03:49,228 --> 00:03:54,088
+A'dan B'ye fonksiyon tanımlandığı zaman
+
+29
+00:03:54,088 --> 00:03:56,468
+yani şey
+
+30
+00:03:56,468 --> 00:03:57,807
+F A eşittir F B.
+
+31
+00:03:57,948 --> 00:03:59,768
+Yani fonksiyonun görüntü kümesi
+
+32
+00:03:59,768 --> 00:04:01,588
+değer kümesi de eşit olması gerekiyor ki
+
+33
+00:04:01,588 --> 00:04:03,588
+fonksiyon da örten olsun.
+
+34
+00:04:03,807 --> 00:04:06,328
+Genel olarak özel tanımlar bunlar arkadaşlar.
+
+35
+00:04:07,628 --> 00:04:08,968
+Bunları söyledikten sonra
+
+36
+00:04:08,968 --> 00:04:10,028
+gördüğünüz gibi
+
+37
+00:04:10,028 --> 00:04:11,867
+bu şekilde de baktığınız zaman
+
+38
+00:04:11,867 --> 00:04:13,908
+mesela y eşitir x küp
+
+39
+00:04:13,908 --> 00:04:19,048
+y eşitir kök x eğrileri
+
+40
+00:04:19,048 --> 00:04:20,148
+bunlar nedir arkadaşlar?
+
+41
+00:04:20,408 --> 00:04:22,848
+Birebir fonksiyonlardır.
+
+42
+00:04:23,508 --> 00:04:25,388
+Gördüğünüz gibi kırmızı doğrular
+
+43
+00:04:25,388 --> 00:04:29,048
+doğruyu eğriyi tek bir noktada kesiyor.
+
+44
+00:04:30,067 --> 00:04:33,848
+x küp x kare ve sinüs x fonksiyonları ise
+
+45
+00:04:33,848 --> 00:04:34,528
+birebir değildir.
+
+46
+00:04:34,628 --> 00:04:37,067
+Çünkü x80'e bareler doğrular aldığı zaman
+
+47
+00:04:37,067 --> 00:04:39,067
+eğrileri iki kez geçtiği için
+
+48
+00:04:39,067 --> 00:04:40,368
+bunlar birebir fonksiyonlar değil.
+
+49
+00:04:40,447 --> 00:04:41,368
+Bunlar en temel bilgiler.
+
+50
+00:04:45,235 --> 00:05:00,075
+Örtenlik veya üzerinde, az önce bahsettiğim gibi, f a eşittir f b. Yani son arkadaşlar, görüntü kümesiyle, değer kümesine eşit olduğu zaman, arkadaşlar ne görüyorsunuz?
+
+51
+00:05:00,075 --> 00:05:12,096
+Doğruşun, normalde fonksiyon tanımında, tanım kümesinde hiçbir eleman boşta kalmayacak diye tanımlamıştık. Örtenliğin tanımında da, değer kümesinde hiçbir boşta eleman kalmayacak. Yani her b elemandır, b için diyoruz o yüzden.
+
+52
+00:05:12,096 --> 00:05:26,076
+Evet arkadaşlar. Ters fonksiyonu da birazcık bahsedelim. Çok kısa. Eğer bir fx fonksiyonu varsa a'dan b'ye, f-1 notasyonu ile gösteriyoruz.
+
+53
+00:05:32,211 --> 00:05:39,291
+bir böyle f anlamına gelmiyor. Yani bu da b'den a'ya.
+
+54
+00:05:39,291 --> 00:05:41,512
+Arkadaşlar, fonksiyonlar,
+
+55
+00:05:45,492 --> 00:05:47,132
+fonksiyonun tersi diyoruz.
+
+56
+00:05:48,632 --> 00:05:52,812
+Kendisi bir grafın yolu da yeşil x80 ile smesh olabiliyorsunuz.
+
+57
+00:05:52,812 --> 00:05:54,412
+Şu örnekte olduğu gibi arkadaşlar en son.
+
+58
+00:06:03,411 --> 00:06:32,831
+Evet arkadaşlar, dediğim gibi bugün çok kısa ders yapıyorum. Yani yarın da zaten tatil. Ders yapmayacağız. Haftaya, çarşamba günü dersimiz normal saatinde 11'dir arkadaşlar. Kaldığımız yerden devam edeceğiz. Siz yine önceki dersteki işlerimiz soruları lütfen bir daha çözün. Onlara hazırlık olsun. Çünkü illa ki ileride göreceğiniz konularda kullanacağımız için şimdiden onları bir kez daha çözerseniz çok daha faydalı olacaktır arkadaşlar. Sizlerin bir sorusu var mı? Sormak istediğiniz bir şey var mı?
+
+59
+00:06:37,588 --> 00:06:46,888
+Zaten ders notları var size paylaştığım sayfamda. Kısa bir siz de dersten önce bir okuyun. Derse anlatırken de daha hızlı kavrayarsınız arkadaşlar.
+
+60
+00:06:52,723 --> 00:07:05,444
+Arkadaşlar, AVSİ sayfamda paylaştım. Yıldız AVSİ sayfamda. Kendi sayfamda var arkadaşlar. Ders notları, diferentler, birçok derslerin hepsi, notlarını hep orada paylaşıyorum. Oradan görebilirsiniz arkadaşlar.
+
+61
+00:07:09,396 --> 00:07:14,295
+Evet, o zaman kendinize iyi bakın arkadaşlar. Haftaya görüşmek üzere. Sağlıklı kalın.

@@ -1,0 +1,2567 @@
+1
+00:09:57,107 --> 00:09:59,907
+Arkadaşlar, günaydın. Beni duyabiliyor musunuz?
+
+2
+00:10:11,508 --> 00:10:16,968
+Dün birinci türevin arkadaşlar uygulamasından bahsettik.
+
+3
+00:10:17,508 --> 00:10:20,067
+Artan azalanlık durumlarını konuştuk.
+
+4
+00:10:20,908 --> 00:10:22,788
+Kritik noktaya belirlemiştik.
+
+5
+00:10:22,927 --> 00:10:32,008
+Yani birinci türevi sıfırı işlediğimiz zaman arkadaşlar birinci türevi sıfır veya tanımsız yapan değerler kritik noktaydı.
+
+6
+00:10:33,067 --> 00:10:39,208
+Sıfırdan yani fonksiyonun bu kritik noktayı yerine koyduğunuzda aynı zamanda tanımlıysa de
+
+7
+00:10:39,208 --> 00:10:45,048
+ve işte artan azalanlıklar geçiş yapıyorsa diyelim mutlak maksimum.
+
+8
+00:10:45,168 --> 00:10:49,168
+Adan azalanlıklar geçiş yapıyorsa da mutlak minimumda arkadaşlar.
+
+9
+00:10:49,328 --> 00:10:52,268
+Yani ekstra nokta olabilmesi için hem işaret değişikli olması lazım.
+
+10
+00:10:53,128 --> 00:10:55,228
+Birinci türevi sıfırı veya tanımsız yapması lazım.
+
+11
+00:10:55,348 --> 00:11:00,668
+Bir de asıl fx fonksiyonu arkadaşlar o noktanın bir karşılığı olması lazım.
+
+12
+00:11:00,768 --> 00:11:01,687
+Yani tanımlı olması lazım.
+
+13
+00:11:01,828 --> 00:11:02,988
+Bu yüzden bundan bahsetmiştik.
+
+14
+00:11:02,988 --> 00:11:08,927
+Şimdi arkadaşlar bugün de ikinci türevin yorumundan bahsedeceğiz.
+
+15
+00:11:09,208 --> 00:11:12,008
+İki üstüde de şöyle bir durum var arkadaşlar.
+
+16
+00:11:13,307 --> 00:11:17,708
+Yani şu tanım dediğimiz şey aslında ikisi de birbirinin aynısı.
+
+17
+00:11:18,128 --> 00:11:21,688
+Gördüğünüz zaman arkadaşlar bakın aşıkkı şu.
+
+18
+00:11:22,567 --> 00:11:25,848
+F üstü artan ise yani F üstü artan ne demek arkadaşlar?
+
+19
+00:11:26,408 --> 00:11:29,608
+Bu fonksiyonun bir kez daha türevinin sıfırdan büyük olması demek.
+
+20
+00:11:29,608 --> 00:11:35,067
+Yani F iki üstü arkadaşlar sıfırdan büyük olması durumunda.
+
+21
+00:11:35,768 --> 00:11:37,768
+Şekil şöyle diyoruz.
+
+22
+00:11:37,988 --> 00:11:41,128
+Yukarıya konkav veya bunun bir diğer adı.
+
+23
+00:11:41,188 --> 00:11:42,908
+Comex olarak da geçerli teratürde.
+
+24
+00:11:43,708 --> 00:11:46,388
+Beş yıkkı ise arkadaşlar F üstü azalan.
+
+25
+00:11:46,888 --> 00:11:49,567
+Yani fonksiyonun birinci türevi azalan ise.
+
+26
+00:11:50,208 --> 00:11:52,067
+Bunun bir diğer anlamı ne demek arkadaşlar?
+
+27
+00:11:52,067 --> 00:11:54,468
+Bu fonksiyonun bir kez daha türevi.
+
+28
+00:11:54,567 --> 00:11:57,028
+Yani F iki üstü sıfırdan küçük ise de.
+
+29
+00:11:57,548 --> 00:11:59,788
+Buna da aşağıya konkav diyoruz arkadaşlar.
+
+30
+00:12:00,567 --> 00:12:04,788
+Yani ikinci türevin yorumlarında biri bulur arkadaşlar.
+
+31
+00:12:06,008 --> 00:12:08,028
+Bir diğer yorumu ikinci türevin.
+
+32
+00:12:09,768 --> 00:12:13,208
+Bir Fx fonksiyonunu arkadaşlar konvekslikten konkavla
+
+33
+00:12:13,208 --> 00:12:19,088
+veya konkavlıktan konveksliğe geçiş yaptığı noktaya biz büküm noktası diyoruz.
+
+34
+00:12:19,827 --> 00:12:22,428
+Eğer A bir büküm noktası ise arkadaşlar.
+
+35
+00:12:22,788 --> 00:12:27,988
+Fonksiyonun ikinci türevi sıfır veya fonksiyonun ikinci türevi sıfırdan nedir arkadaşlar?
+
+36
+00:12:28,368 --> 00:12:29,408
+Mevcut değildir.
+
+37
+00:12:29,508 --> 00:12:30,128
+Tanımsızdır.
+
+38
+00:12:32,268 --> 00:12:35,748
+Ve aynı zamanda arkadaşlar F iki üstü A noktasını işaret değiştiriyorsa.
+
+39
+00:12:36,348 --> 00:12:38,868
+Biz bu A noktasına büküm noktası diyoruz.
+
+40
+00:12:38,868 --> 00:12:43,248
+Yani büküm noktası aslında biraz kritik noktaya benziyor tanımı arkadaşlar.
+
+41
+00:12:43,948 --> 00:12:47,708
+Yani burada da yine fonksiyonun ikinci türevini sıfır yapan
+
+42
+00:12:47,708 --> 00:12:52,848
+veya fonksiyonun ikinci türevini tanımlı kılmaya
+
+43
+00:12:52,848 --> 00:12:56,928
+yani tanımsız olduğu noktalara biz büküm noktası diyoruz.
+
+44
+00:12:56,988 --> 00:13:00,848
+Aynı zamanda F iki üstü işaret değişikliği yapması gerekiyor.
+
+45
+00:13:04,668 --> 00:13:08,608
+Üçüncü bahsetmemiz gereken şey ikinci türevi ile ilgili arkadaşlar.
+
+46
+00:13:09,567 --> 00:13:12,668
+İkinci türevi test edildiğimiz şey ekstrem noktaları bulabilmek için
+
+47
+00:13:12,668 --> 00:13:20,067
+F iki üstü x eşittir c'yi içeren bir aşıkaralıkta sürekli olduğunu kabul ettikten sonra arkadaşlar
+
+48
+00:13:20,067 --> 00:13:24,608
+bakın bu c noktasına bu c noktasının kritik nokta olması lazım.
+
+49
+00:13:24,688 --> 00:13:27,248
+Yani F üstü c eşittir sıfır ne demek arkadaşlar?
+
+50
+00:13:27,828 --> 00:13:29,588
+Bir kritik nokta belirliyoruz.
+
+51
+00:13:29,588 --> 00:13:37,668
+Bu kritik noktanın ekstrem nokta bulmadığını ikinci türevideki değeri sıfırdan küçük ise bir yerel maksimum.
+
+52
+00:13:38,388 --> 00:13:46,428
+Bu kritik noktanın ikinci türevideki değeri sıfırdan büyükse de biz bu c noktasını arkadaşlar bir yerel minimum nokta diyoruz.
+
+53
+00:13:46,428 --> 00:13:57,368
+Hem kritik nokta hem de arkadaşlar ikinci türevide bu kritik nokta sıfır yapıyorsa da biz buna da arkadaşlar ne diyoruz?
+
+54
+00:13:57,728 --> 00:14:00,668
+İkinci türev bize sonuç vermez diyoruz.
+
+55
+00:14:00,668 --> 00:14:04,968
+Çünkü her ikisinde sıfır yapıyorsa biz buna ekstrem nokta diyemeyiz arkadaşlar.
+
+56
+00:14:08,724 --> 00:14:33,664
+Şimdi arkadaşlar, bunun akabinde asimptotlar ve fonksiyonlar, eğitimleri var. Bunlardan bahsedeceğiz ama çok, sadece şunu hatırlayamıyorum. Arkadaşlar, biz size şey bahsettik mi? Asimptotlar konusunu bahsettik mi? Hatta sesi ben açayım arkadaşlar, buradan sözlü olarak konuşmak isteyenler varsa.
+
+57
+00:14:33,664 --> 00:14:38,364
+şöyle, ses nasıl açılıyor?
+
+58
+00:14:41,764 --> 00:14:44,304
+Sesli olarak arkadaşlar söyleyebilirsiniz.
+
+59
+00:14:44,984 --> 00:14:46,864
+Asimptotları bahsettik mi? Hatırlayamıyorum.
+
+60
+00:14:49,784 --> 00:14:54,384
+Tamamen olarak, eğitim asimptot, eğitim asimptot, sanki onlardan bahsettik gibi hatırlıyorum. Değil mi?
+
+61
+00:14:55,284 --> 00:14:56,784
+Onlardan bahsettiğimizi hatırlıyorum.
+
+62
+00:15:03,988 --> 00:15:05,488
+Hocam, ben hatırlamıyorum.
+
+63
+00:15:07,228 --> 00:15:09,188
+Ben de şöyle hatırlıyorum.
+
+64
+00:15:10,308 --> 00:15:12,148
+Şöyle tanımlarımızı verdiğimizi hatırlıyorum.
+
+65
+00:15:12,268 --> 00:15:13,788
+Bir geri dönüş yaparsak eskiye.
+
+66
+00:15:14,348 --> 00:15:16,968
+Sonsuzlukları içeren limitler başlığı adı altında.
+
+67
+00:15:18,088 --> 00:15:20,568
+Şöyle anlattık mı? Size tam hatırlayamıyorum.
+
+68
+00:15:21,328 --> 00:15:23,028
+Gerçi videoları baktığımızda çıkar da.
+
+69
+00:15:23,828 --> 00:15:25,188
+Yani şunlardı aslında.
+
+70
+00:15:25,748 --> 00:15:28,348
+Şu an ekranda, bu benim kendi ekranımda görünen şey.
+
+71
+00:15:29,248 --> 00:15:31,288
+Sizlerle paylaşırsak şöyle.
+
+72
+00:15:31,288 --> 00:15:33,788
+30.
+
+73
+00:15:33,788 --> 00:15:35,468
+30. sayfalarında.
+
+74
+00:15:45,268 --> 00:15:47,908
+Hücağım işledik ya, üzerinden geçmiştik.
+
+75
+00:15:50,148 --> 00:15:53,927
+Şöyle, şurada bir yerde olmasa, evet, buralarda bir yerde.
+
+76
+00:15:54,067 --> 00:15:56,947
+Yani, evet, ben de hatırladım, sanki bundan bahsettik.
+
+77
+00:15:57,008 --> 00:15:58,807
+Yata asimptot, düşeği ve eğri asimptot.
+
+78
+00:15:59,307 --> 00:16:03,968
+Yani bunu neden soruyorum? Çünkü grafik çizimini verirken bunları kullanacağız.
+
+79
+00:16:04,668 --> 00:16:09,927
+Mesela y eşittir mx artı n, bu bildiğimiz eğri asimptot, onun kas sayısını bulurken,
+
+80
+00:16:10,268 --> 00:16:14,788
+m kas sayısını fx bölü x'in limitine bakarak karar veriyoruz.
+
+81
+00:16:15,268 --> 00:16:19,988
+En ikide de, bu şekilde karar veriyoruz arkadaşlar.
+
+82
+00:16:20,728 --> 00:16:24,567
+Veya polinom bölümmesi yapıyorduk. Bunları, evet, bahsettiğimizi ben de şimdi hatırladım.
+
+83
+00:16:25,168 --> 00:16:26,388
+Verdik diye hatırlıyorum ben de.
+
+84
+00:16:28,528 --> 00:16:30,067
+Şimdi o zaman şöyle yapalım.
+
+85
+00:16:30,868 --> 00:16:32,748
+Biraz el çiziminden bahsedelim arkadaşlar.
+
+86
+00:16:32,908 --> 00:16:34,168
+Çok da fazla ilerlemeyelim.
+
+87
+00:16:35,008 --> 00:16:37,307
+Çünkü bakalım bir konu dağılımına.
+
+88
+00:16:39,807 --> 00:16:43,648
+Ders içerikleri, el çizimi, tamam.
+
+89
+00:16:45,268 --> 00:16:49,587
+Bence el çiziminden bugün bahsedelim.
+
+90
+00:16:52,500 --> 00:16:57,320
+bu kaç tane soru var burada
+
+91
+00:16:57,320 --> 00:16:58,059
+bir
+
+92
+00:16:58,059 --> 00:16:59,860
+iki
+
+93
+00:16:59,860 --> 00:17:02,340
+üç tane soru var
+
+94
+00:17:02,340 --> 00:17:04,299
+geri kalan konuya girmeyiz
+
+95
+00:17:04,299 --> 00:17:07,319
+şimdi arkadaşlar
+
+96
+00:17:07,319 --> 00:17:08,400
+ehli çizimiyle ilgili
+
+97
+00:17:08,400 --> 00:17:10,140
+mecburen yine
+
+98
+00:17:10,140 --> 00:17:12,099
+sesleri kısacağım arkadaşlar
+
+99
+00:17:12,099 --> 00:17:13,259
+çünkü yankılanma oluyor
+
+100
+00:17:13,259 --> 00:17:15,839
+sizlerin beni daha rahat duymasını
+
+101
+00:17:15,839 --> 00:17:18,220
+istediğim için yine ama siz sözü
+
+102
+00:17:18,220 --> 00:17:20,240
+soru almak isterseniz tabii ki
+
+103
+00:17:20,240 --> 00:17:21,819
+yine istekte bulunabilirsiniz
+
+104
+00:17:21,819 --> 00:17:23,900
+çünkü uğultu falan
+
+105
+00:17:23,900 --> 00:17:24,420
+olabiliyor
+
+106
+00:17:24,420 --> 00:17:25,400
+evet
+
+107
+00:17:25,400 --> 00:17:28,859
+şurada
+
+108
+00:17:28,859 --> 00:17:32,039
+sileyim yine ekranı silelim
+
+109
+00:17:32,039 --> 00:17:37,519
+arkadaşlar bir fonksiyonun grafiğini
+
+110
+00:17:37,519 --> 00:17:39,319
+çizebilmek için belli adımlar var
+
+111
+00:17:39,319 --> 00:17:41,240
+bunları daha önce duymuş olabilirsiniz
+
+112
+00:17:41,240 --> 00:17:44,299
+biz şu sıraya göre takip edeceğiz
+
+113
+00:17:44,299 --> 00:17:45,279
+işte tanım kümesi
+
+114
+00:17:45,279 --> 00:17:47,180
+asimtopları bulma
+
+115
+00:17:47,180 --> 00:17:49,539
+elin eksenleri kestiği noktaları bulmak
+
+116
+00:17:49,539 --> 00:17:51,400
+dördüncüsü birinci sürevin
+
+117
+00:17:51,400 --> 00:17:52,900
+işaretini inceleyip ona göre
+
+118
+00:17:52,900 --> 00:17:54,480
+artan veya azalan
+
+119
+00:17:54,480 --> 00:17:55,700
+oldular adıları bulmak
+
+120
+00:17:55,700 --> 00:17:56,819
+beşinci olarak
+
+121
+00:17:56,819 --> 00:17:58,640
+ikinci sürevi işaretini incelemek
+
+122
+00:17:58,640 --> 00:17:59,200
+buna göre
+
+123
+00:17:59,200 --> 00:18:01,319
+fonksiyon konveks veya
+
+124
+00:18:01,319 --> 00:18:03,039
+konkan veya işte yukarıya konkan
+
+125
+00:18:03,039 --> 00:18:05,359
+aşağıya konkan diye adlandırılıyor demiştik
+
+126
+00:18:05,359 --> 00:18:07,539
+bunu göstermek
+
+127
+00:18:07,539 --> 00:18:09,660
+altıncı olarak değişim tablosu yapmak
+
+128
+00:18:09,660 --> 00:18:10,440
+ve tüm bilgileri
+
+129
+00:18:10,440 --> 00:18:12,259
+buraya yerleştireceğiz arkadaşlar
+
+130
+00:18:12,259 --> 00:18:15,400
+yedinci olarak da en son grafiği çiziyoruz
+
+131
+00:18:15,400 --> 00:18:18,420
+şimdi örnek hemen
+
+132
+00:18:18,420 --> 00:18:20,019
+zaten basit bir örnek arkadaşlar
+
+133
+00:18:20,019 --> 00:18:20,519
+polinom
+
+134
+00:18:20,519 --> 00:18:21,980
+y eşittir
+
+135
+00:18:21,980 --> 00:18:24,519
+x üzeri 4 eksi 8 x kare eğrisi
+
+136
+00:18:24,519 --> 00:18:26,380
+bu bir polinom olduğu için
+
+137
+00:18:26,380 --> 00:18:28,640
+tanım kümesi zaten tümrel sayılardır arkadaşlar
+
+138
+00:18:28,640 --> 00:18:30,420
+ikinci olarak
+
+139
+00:18:30,420 --> 00:18:32,420
+polinomun zaten bu bir
+
+140
+00:18:32,420 --> 00:18:34,559
+yani polinom olduğu için
+
+141
+00:18:34,559 --> 00:18:36,480
+herhangi bir asimtop da yoktur arkadaşlar
+
+142
+00:18:36,480 --> 00:18:39,319
+yani bunu tansız yapan bir nokta yoktur
+
+143
+00:18:39,319 --> 00:18:41,980
+rasyon olmadığı için zaten
+
+144
+00:18:41,980 --> 00:18:43,220
+e-kastim tot da bulamayız
+
+145
+00:18:43,220 --> 00:18:46,220
+formüle de koysak yine sonsuz çıkacak
+
+146
+00:18:46,220 --> 00:18:47,720
+yani y eşittir mx artı n
+
+147
+00:18:47,720 --> 00:18:49,259
+e-kastim tot denkleminde
+
+148
+00:18:49,259 --> 00:18:51,059
+m eşittir hatırlarsanız
+
+149
+00:18:51,059 --> 00:18:53,599
+limit fx bölü x limitine baktığımızda
+
+150
+00:18:53,599 --> 00:18:55,559
+yine bir sonsuzluk çıkacağı için
+
+151
+00:18:55,559 --> 00:18:56,799
+yani m kat sayısında bulamıyoruz
+
+152
+00:18:56,799 --> 00:18:59,380
+dolayısıyla e-kastim totu zaten bulamayacağımız kesin
+
+153
+00:18:59,380 --> 00:19:02,440
+şimdi eksenleri kestiği noktayı buluyoruz
+
+154
+00:19:02,440 --> 00:19:03,299
+örnek bu arkadaşlar
+
+155
+00:19:03,299 --> 00:19:05,579
+x eşittir 0 için y nedir
+
+156
+00:19:05,579 --> 00:19:07,079
+y eşittir 0 için x nedir
+
+157
+00:19:07,079 --> 00:19:08,019
+bu soruyu soruyoruz
+
+158
+00:19:08,019 --> 00:19:09,140
+üçüncü aşamada
+
+159
+00:19:09,140 --> 00:19:11,279
+x yerine 0 koyduğumuz zaman arkadaşlar
+
+160
+00:19:11,279 --> 00:19:12,319
+bakın polinomda
+
+161
+00:19:12,319 --> 00:19:13,940
+y'yi 0 buluruz
+
+162
+00:19:13,940 --> 00:19:15,900
+y yerine 0 koyduğumuz zaman da
+
+163
+00:19:15,900 --> 00:19:18,440
+x kare parantezini aldığımız zaman arkadaşlar
+
+164
+00:19:18,440 --> 00:19:20,839
+buradan x kare parantezinde
+
+165
+00:19:20,839 --> 00:19:22,640
+bakın x kare çarpı
+
+166
+00:19:22,640 --> 00:19:24,599
+x kare eksi 8 eşittir 0'dır
+
+167
+00:19:24,599 --> 00:19:26,440
+x kare eşittir 0
+
+168
+00:19:26,440 --> 00:19:28,059
+birinci parantezi eşitlersek
+
+169
+00:19:28,059 --> 00:19:29,099
+x kare eşittir 0
+
+170
+00:19:29,099 --> 00:19:31,360
+buradan çakışık kök vardır
+
+171
+00:19:31,360 --> 00:19:33,360
+x kare eksi 8 eşittir 0'dan da
+
+172
+00:19:33,360 --> 00:19:36,660
+x eşittir artı eksi 2 kök 2 şeklinde çıkacaktır
+
+173
+00:19:36,660 --> 00:19:37,059
+evet
+
+174
+00:19:37,059 --> 00:19:40,119
+o halde eksenleri kestiği nokta
+
+175
+00:19:40,119 --> 00:19:40,740
+0 0
+
+176
+00:19:40,740 --> 00:19:42,279
+2 kökü 2 0
+
+177
+00:19:42,279 --> 00:19:43,980
+eksi 2 kökü 0 şeklinde
+
+178
+00:19:43,980 --> 00:19:46,860
+3 tane eksenleri kestiği nokta vardır
+
+179
+00:19:46,860 --> 00:19:47,920
+bu eğrinin arkadaşlar
+
+180
+00:19:47,920 --> 00:19:49,960
+üçüncü aşamada
+
+181
+00:19:49,960 --> 00:19:51,900
+fonksiyon türemini alıyoruz arkadaşlar
+
+182
+00:19:51,900 --> 00:19:55,720
+fonksiyon türevi 4 x kare eksi 16 x'tir
+
+183
+00:19:55,720 --> 00:19:56,460
+birinci türevi
+
+184
+00:19:56,460 --> 00:19:59,339
+bunu 0 eşitleyip kritik noktaya buluyoruz arkadaşlar
+
+185
+00:19:59,339 --> 00:20:00,460
+bunu 0 eşitlediğimizde
+
+186
+00:20:00,460 --> 00:20:04,299
+x çarpı 4 x kare eksi 16 gibi bir denklem olacaktır
+
+187
+00:20:04,299 --> 00:20:06,099
+x eşittir 0'dır veya
+
+188
+00:20:06,099 --> 00:20:08,259
+4 x kare eksi 16 eşittir 0'dır
+
+189
+00:20:08,259 --> 00:20:09,599
+buradan arkadaşlar
+
+190
+00:20:09,599 --> 00:20:10,839
+birinci kritik nokta 0
+
+191
+00:20:10,839 --> 00:20:13,920
+diğerleri de artı eksi 2 şeklinde çıkacak
+
+192
+00:20:13,920 --> 00:20:20,140
+bir sonraki maddede ise fonksiyonun büküm noktalarını bulacağız
+
+193
+00:20:20,140 --> 00:20:22,220
+bunun için de ikinci türevi 0 eşit diyeceğiz
+
+194
+00:20:22,220 --> 00:20:25,140
+fonksiyonun ikinci türevi 12 x kare eksi 16'dır
+
+195
+00:20:25,140 --> 00:20:27,299
+0 eşitlediğimizde x eşittir
+
+196
+00:20:27,299 --> 00:20:29,480
+artı eksi 2 kök 3 bölü 3 arkadaşlar
+
+197
+00:20:29,480 --> 00:20:30,319
+nedir?
+
+198
+00:20:30,400 --> 00:20:32,519
+bir büküm noktasıdır
+
+199
+00:20:32,519 --> 00:20:34,420
+büküm noktası
+
+200
+00:20:34,420 --> 00:20:36,079
+yine aynı arkadaşlar
+
+201
+00:20:36,079 --> 00:20:37,640
+dün yaptığımız gibi
+
+202
+00:20:37,640 --> 00:20:40,180
+birinci türevi işaretini incelediğimiz gibi
+
+203
+00:20:40,180 --> 00:20:41,660
+aynı ikinci türevi işaretini incelediğimizde
+
+204
+00:20:41,660 --> 00:20:43,140
+aynı yolu izliyoruz
+
+205
+00:20:43,140 --> 00:20:45,940
+büküm noktalarını yerleştiriyoruz tabloya
+
+206
+00:20:45,940 --> 00:20:48,240
+hatta şöyle yine izah edelim
+
+207
+00:20:48,240 --> 00:20:49,360
+bakın bu y2 üstü
+
+208
+00:20:49,360 --> 00:20:51,660
+y2 üstünün işareti bunlar
+
+209
+00:20:52,180 --> 00:20:54,360
+Burası y, burada x ekseni.
+
+210
+00:20:54,500 --> 00:20:56,759
+Yani şöyle bakacağız arkadaşlar.
+
+211
+00:20:57,000 --> 00:20:59,860
+Y2 üstünün en büyük derece terim hangisi?
+
+212
+00:21:00,240 --> 00:21:01,000
+12 x kare.
+
+213
+00:21:01,460 --> 00:21:02,640
+İşaretli artı.
+
+214
+00:21:03,019 --> 00:21:04,920
+O halde buraya artıyla başlıyorum arkadaşlar.
+
+215
+00:21:05,600 --> 00:21:08,500
+Bu y2 üstünün kökü olduğu için işaret değiştirdi.
+
+216
+00:21:08,620 --> 00:21:08,940
+Eksi.
+
+217
+00:21:09,539 --> 00:21:13,160
+Eksi 2 kök 3 bölü 3 kökü olduğu için işaret değişti.
+
+218
+00:21:13,259 --> 00:21:13,640
+Artı.
+
+219
+00:21:13,640 --> 00:21:15,360
+O zaman fonksiyon arkadaşlar.
+
+220
+00:21:15,720 --> 00:21:18,820
+Şu aralıkta konveks veya yukarıya konkam.
+
+221
+00:21:19,460 --> 00:21:21,140
+Bu aralıkta da aşağıya konkam.
+
+222
+00:21:21,140 --> 00:21:25,640
+Bu aralıkta yukarıya konkam diyebiliyoruz arkadaşlar.
+
+223
+00:21:28,519 --> 00:21:31,080
+Aynı benzer birinci türede ne yaptıysak ayrıntısını yapıyoruz.
+
+224
+00:21:32,320 --> 00:21:34,420
+Şimdi arkadaşlar 6. tablo ise
+
+225
+00:21:34,420 --> 00:21:37,300
+yani 6. maddeki tablo ise
+
+226
+00:21:37,300 --> 00:21:39,720
+bütün bilgileri yerleştireceğiz burada arkadaşlar.
+
+227
+00:21:40,480 --> 00:21:42,920
+Özellikle eksenleri kestiği nokta, kritik nokta
+
+228
+00:21:42,920 --> 00:21:46,860
+bunların hepsini sırasıyla küçükten büyüğe yerleştirdiğimiz zaman arkadaşlar.
+
+229
+00:21:47,080 --> 00:21:49,180
+Şimdi y üstünün işaretini inceliyoruz.
+
+230
+00:21:49,460 --> 00:21:50,880
+Bakın y üstüye bakalım.
+
+231
+00:21:50,880 --> 00:21:53,140
+y üstünün eklemi 4x küp eksi 16.
+
+232
+00:21:53,880 --> 00:21:56,279
+En büyük dereceli temli 4x küp.
+
+233
+00:21:56,480 --> 00:21:57,500
+İşaretini arttı.
+
+234
+00:21:57,680 --> 00:22:00,820
+O halde arkadaşlar en sağ artıyla başlıyorum.
+
+235
+00:22:01,559 --> 00:22:04,920
+2 kök olduğu için, kritik nokta olduğu için işaret değiştirdi.
+
+236
+00:22:05,300 --> 00:22:06,220
+Bakın eksi.
+
+237
+00:22:06,220 --> 00:22:10,019
+0 kök olduğu için yani kritik nokta olduğu için işaret değiştirdi arttı.
+
+238
+00:22:10,519 --> 00:22:16,320
+Eksi 2 de arkadaşlar 1 kök olduğu için veya kritik nokta olduğu için işaret değiştirdi eksi.
+
+239
+00:22:17,060 --> 00:22:19,759
+Burada fonksiyon yani 0'dan küçük olduğu yerlerde,
+
+240
+00:22:20,160 --> 00:22:22,620
+türevi 0'dan küçük olduğu yerlerde fonksiyon azalacak.
+
+241
+00:22:22,620 --> 00:22:26,019
+Türevi 0'dan büyük olduğu yerlerde de fonksiyon artacak.
+
+242
+00:22:26,220 --> 00:22:28,680
+Bu noktalara karşılık gelen arkadaşlar,
+
+243
+00:22:28,920 --> 00:22:30,000
+f y'leri de bulalım.
+
+244
+00:22:30,360 --> 00:22:34,100
+Yani x eşittir eksi 2 kök 2 için y 0'dır.
+
+245
+00:22:34,340 --> 00:22:36,779
+x eşittir eksi 2 için y eksi 16'dır.
+
+246
+00:22:37,279 --> 00:22:39,259
+Diğerlerini de böyle benzer şekilde bulabilirsiniz.
+
+247
+00:22:39,259 --> 00:22:41,779
+Şimdi geldik grafik aşamasına arkadaşlar.
+
+248
+00:22:41,940 --> 00:22:43,160
+Grafik çizerken şöyle yapıyoruz.
+
+249
+00:22:43,279 --> 00:22:46,500
+Öncelikle bu noktaları x'ye düzlemini yerleştiriyoruz.
+
+250
+00:22:46,580 --> 00:22:48,580
+Yani eksi 2 kök 2 sıfırı.
+
+251
+00:22:48,840 --> 00:22:50,539
+Bakın önce bunu yerleştiriyorsunuz.
+
+252
+00:22:50,740 --> 00:22:50,960
+Şöyle.
+
+253
+00:22:52,840 --> 00:22:55,300
+Kalem kısmından şöyle yapalım.
+
+254
+00:22:55,980 --> 00:22:58,620
+Bakın eksi 2 kök 2 önce bunu yerleştiriyorsunuz.
+
+255
+00:22:59,220 --> 00:23:02,759
+Sonra eksi 2 eksi 16 şunu yerleştiriyorsunuz.
+
+256
+00:23:03,400 --> 00:23:05,580
+Sonra 0 0'ı yerleştiriyorsunuz arkadaşlar.
+
+257
+00:23:05,580 --> 00:23:11,460
+Sonra 2 virgül eksi 16'ı yerleştiriyorsunuz.
+
+258
+00:23:11,880 --> 00:23:14,840
+Sonra 2 kök 2 sıfırı yerleştiriyorsunuz arkadaşlar.
+
+259
+00:23:15,120 --> 00:23:15,500
+Durum bu.
+
+260
+00:23:16,140 --> 00:23:17,519
+Daha sonrasında neye bakıyorsunuz?
+
+261
+00:23:17,920 --> 00:23:19,580
+Fonksiyon bakın azalmış.
+
+262
+00:23:20,519 --> 00:23:23,779
+Eksi sonsuzdan eksi 2'ye kadar azalmış.
+
+263
+00:23:24,320 --> 00:23:27,120
+Ve aynı zamanda arkadaşlar konvekslik durum var.
+
+264
+00:23:27,200 --> 00:23:29,100
+O halde şöyle oval bir şekilde şöyle hafif.
+
+265
+00:23:29,680 --> 00:23:33,180
+Eksi 2'den yani eksi sonsuzdan eksi 2'ye kadar fonksiyon azalacak.
+
+266
+00:23:33,180 --> 00:23:35,880
+Ve konveks şekil olacak.
+
+267
+00:23:38,200 --> 00:23:39,039
+Nereye kadar?
+
+268
+00:23:39,420 --> 00:23:42,340
+Yani eksi 2 kök 3 bölü 3'e kadar arkadaşlar.
+
+269
+00:23:42,460 --> 00:23:44,900
+Bakın eksi 2 kök 3 bölü 3'lü yaklaşım şuralarda bir yerde.
+
+270
+00:23:45,580 --> 00:23:48,019
+Bu da 1.5 yapan şuralarda bir yerde.
+
+271
+00:23:48,660 --> 00:23:51,000
+O yüzden buraya kadar yine konvekslik devam edecek.
+
+272
+00:23:51,240 --> 00:23:51,900
+Ve artacak.
+
+273
+00:23:52,500 --> 00:23:55,080
+Bu noktadan sonra arkadaşlar fonksiyon artacak.
+
+274
+00:23:55,259 --> 00:23:57,059
+Ve konkav olacak bu seferde.
+
+275
+00:23:57,380 --> 00:23:57,820
+Tamam mı?
+
+276
+00:23:59,140 --> 00:24:00,019
+Konkav olacak.
+
+277
+00:24:00,019 --> 00:24:05,039
+Buradan sonra yani sıfırdan sonra arkadaşlar yine konkavlık devam ediyor.
+
+278
+00:24:05,680 --> 00:24:06,779
+Ve fonksiyon azalacak.
+
+279
+00:24:07,340 --> 00:24:12,480
+Bu noktadan sonra fonksiyon arkadaşlar yine eksi 2'ye kadar bakın azalması lazım.
+
+280
+00:24:12,840 --> 00:24:17,300
+6. tabloya 6. maddedeki tabloya baktığınız zaman azalması lazım.
+
+281
+00:24:17,980 --> 00:24:19,800
+2'den sonra tekrar fonksiyon artıyor.
+
+282
+00:24:20,019 --> 00:24:20,779
+Fakat şekil ne?
+
+283
+00:24:21,140 --> 00:24:23,940
+Arkadaşlar konveks tabloya baktığınız zaman.
+
+284
+00:24:24,180 --> 00:24:24,460
+Tamam mı?
+
+285
+00:24:24,460 --> 00:24:27,920
+Yani fonksiyonun bakın grafiği bu şekilde çiziliyor.
+
+286
+00:24:27,920 --> 00:24:55,460
+Evet.
+
+287
+00:24:40,084 --> 00:24:41,163
+Var mı sorusu lan?
+
+288
+00:24:59,667 --> 00:25:08,607
+Bakın bir diğer soru, x kare eksi 4 bölü, x kare artı 2x artı 1, aslında aşağısı tam kare, yani x artı 1'in karesidir payda.
+
+289
+00:25:14,387 --> 00:25:16,387
+yüzyıl faynelerin paylaşır. x kare artı 2x, faynelerin paylaşır.
+
+290
+00:26:01,779 --> 00:26:03,960
+Evet arkadaşlar tanım kümesi buluyoruz.
+
+291
+00:26:04,339 --> 00:26:05,960
+Burada paydayı sıfır yapan değerleri
+
+292
+00:26:05,960 --> 00:26:08,180
+çıkartıyoruz. Arkadaşlar
+
+293
+00:26:08,180 --> 00:26:09,519
+paydayı sıfır yapan değerler
+
+294
+00:26:09,519 --> 00:26:11,240
+x eşittir eksi birdir.
+
+295
+00:26:12,099 --> 00:26:13,899
+Yani x eşittir eksi bir tanım
+
+296
+00:26:13,899 --> 00:26:16,139
+kümesinden yani tüm re sayılardan çıkartıyoruz.
+
+297
+00:26:16,240 --> 00:26:17,559
+Tanım kümesi dahil etmiyoruz.
+
+298
+00:26:18,399 --> 00:26:20,220
+İkinci madde ise arkadaşlar
+
+299
+00:26:20,220 --> 00:26:21,579
+neydi? Asimtotlardı.
+
+300
+00:26:22,240 --> 00:26:24,279
+Şimdi rasyonel bir ifade olduğu için arkadaşlar
+
+301
+00:26:24,279 --> 00:26:26,119
+pay ve paydan derecesi bakmamız lazım.
+
+302
+00:26:26,259 --> 00:26:28,240
+Pay ve paydan derecesi birbirine eşit olduğu için
+
+303
+00:26:28,240 --> 00:26:28,779
+arkadaşlar
+
+304
+00:26:28,779 --> 00:26:31,819
+x kare eksi dört bölü x kare
+
+305
+00:26:31,819 --> 00:26:34,200
+artı iki x artı birin ifadesinden
+
+306
+00:26:34,200 --> 00:26:36,220
+arkadaşlar limiti nedir? Birdir.
+
+307
+00:26:36,859 --> 00:26:38,740
+Yani y eşittir bir bir yatay asimtotlardır.
+
+308
+00:26:38,819 --> 00:26:39,079
+Doğru mu?
+
+309
+00:26:40,299 --> 00:26:42,420
+Bir diğer asimtot ise arkadaşlar
+
+310
+00:26:42,420 --> 00:26:44,859
+x eşittir eksi bir
+
+311
+00:26:44,859 --> 00:26:46,980
+fonksiyonu tanımsız yaptığı için
+
+312
+00:26:46,980 --> 00:26:48,339
+bir düşe asimtottur.
+
+313
+00:26:48,440 --> 00:26:50,299
+Yani yatay ve düşe olmak üzere
+
+314
+00:26:50,299 --> 00:26:51,339
+iki tane asimtotu var.
+
+315
+00:26:51,900 --> 00:26:54,319
+Eğik asimtot ve yatay asimtot burada birbirine
+
+316
+00:26:54,319 --> 00:26:56,299
+denk arkadaşlar. Çünkü polyom vermesi yaptığınız
+
+317
+00:26:56,299 --> 00:26:58,339
+zaman da pay ve paydan dereceler
+
+318
+00:26:58,339 --> 00:26:59,799
+aynı olduğu için yatay asimtotla
+
+319
+00:26:59,799 --> 00:27:01,859
+el kasimtot aslında yine
+
+320
+00:27:01,859 --> 00:27:02,639
+aynısı olur.
+
+321
+00:27:02,700 --> 00:27:03,460
+Y eşittir bir olur.
+
+322
+00:27:05,079 --> 00:27:06,339
+Üçüncü maddede ise
+
+323
+00:27:06,339 --> 00:27:08,339
+arkadaşlar eksenleri kestiği noktayı
+
+324
+00:27:08,339 --> 00:27:08,700
+buluyoruz.
+
+325
+00:27:08,799 --> 00:27:09,879
+x eşittir sıfır için
+
+326
+00:27:09,879 --> 00:27:11,599
+y eşittir eksi dörttür.
+
+327
+00:27:12,379 --> 00:27:14,299
+Y eşittir sıfır için de arkadaşlar
+
+328
+00:27:14,299 --> 00:27:15,019
+ne çıkıyor?
+
+329
+00:27:15,379 --> 00:27:17,000
+x eşittir artı eksi ikiye çıkıyor.
+
+330
+00:27:17,099 --> 00:27:17,680
+Yani o halde
+
+331
+00:27:17,680 --> 00:27:19,900
+eksenleri kestiği nokta sıfır eksi dört
+
+332
+00:27:19,900 --> 00:27:24,980
+yani iki virgül ve eksi iki virgül sıfırda arkadaşlar
+
+333
+00:27:24,980 --> 00:27:27,359
+ve bir diğer eksenleri kesen nokta.
+
+334
+00:27:30,059 --> 00:27:31,720
+Bir sonraki aşamada ise
+
+335
+00:27:31,720 --> 00:27:34,059
+kritik noktada bulunuz arkadaşlar.
+
+336
+00:27:34,319 --> 00:27:35,740
+Fonksiyonun birinci türevini alıyorsunuz.
+
+337
+00:27:35,799 --> 00:27:37,119
+Rasyonel fonksiyonun türevi yani
+
+338
+00:27:37,119 --> 00:27:39,259
+bölümün türevi kurallarını bulunuz arkadaşlar.
+
+339
+00:27:39,940 --> 00:27:40,839
+Bakın buradan ne gelir?
+
+340
+00:27:40,839 --> 00:27:42,759
+2x artı 8 bölü
+
+341
+00:27:42,759 --> 00:27:44,740
+x artı birine arkadaşlar
+
+342
+00:27:44,740 --> 00:27:47,019
+üçüncü kuvveti gelir.
+
+343
+00:27:47,119 --> 00:27:47,480
+Doğru mu?
+
+344
+00:27:47,920 --> 00:27:48,059
+Evet.
+
+345
+00:27:49,319 --> 00:27:50,740
+x artı birine üçüncü kuvveti gelir.
+
+346
+00:27:51,379 --> 00:27:52,779
+Buradan arkadaşlar ne diyoruz?
+
+347
+00:27:54,599 --> 00:27:55,980
+Buradan diyeceğimiz şey şu
+
+348
+00:27:55,980 --> 00:27:58,059
+x eşittir eksi dört
+
+349
+00:27:58,059 --> 00:27:58,839
+nedir arkadaşlar?
+
+350
+00:27:59,000 --> 00:28:00,339
+Bir kritik noktadır.
+
+351
+00:28:00,339 --> 00:28:00,639
+Evet.
+
+352
+00:28:01,579 --> 00:28:03,619
+x eşittir eksi dört bir kritik noktadır.
+
+353
+00:28:04,099 --> 00:28:05,139
+Bir diğer yorum ise
+
+354
+00:28:05,139 --> 00:28:05,940
+bakın arkadaşlar
+
+355
+00:28:05,940 --> 00:28:07,420
+x eşittir eksi bir de
+
+356
+00:28:07,420 --> 00:28:09,259
+birinci türevi tanımsız yapıyor.
+
+357
+00:28:09,379 --> 00:28:10,659
+Aslında bu da bir kritik noktadır.
+
+358
+00:28:10,659 --> 00:28:11,639
+x eşittir eksi bir.
+
+359
+00:28:12,279 --> 00:28:13,720
+Yani işaret değişikliği yapabilir
+
+360
+00:28:13,720 --> 00:28:17,000
+ama fonksiyonu da tanımlı olması lazım ki
+
+361
+00:28:17,000 --> 00:28:17,900
+ne olsun?
+
+362
+00:28:18,000 --> 00:28:18,859
+Ekstrem nokta olsun.
+
+363
+00:28:18,960 --> 00:28:20,480
+Aslında burada kritik noktada iki tane var.
+
+364
+00:28:20,599 --> 00:28:22,619
+Eksi dört ile eksi birdir arkadaşlar.
+
+365
+00:28:23,000 --> 00:28:23,139
+Evet.
+
+366
+00:28:26,644 --> 00:28:29,624
+Fonksiyonun ikinci türevini alarak da arkadaşlar ne yapıyoruz?
+
+367
+00:28:29,824 --> 00:28:30,943
+Büküm noktasında alıyoruz.
+
+368
+00:28:31,024 --> 00:28:35,203
+Fonksiyonun ikinci türevini aldığımız zaman da x eşittir eksi 11 bölükidir.
+
+369
+00:28:35,703 --> 00:28:48,084
+Bakın fonksiyonun ikinci türevinde yine x eşittir 1'e bakarken faydaya baktığımızda x artı 1'in dördüncü kuvveti arkadaşlar çift olduğu için x eşittir 1 zaten işaret değişikliği yapmayacak.
+
+370
+00:28:48,084 --> 00:28:50,463
+Eksi 1 işaret değişikliği yapmayacak.
+
+371
+00:28:50,884 --> 00:28:53,884
+O yüzden bunu büküm noktasına da harf etmeye gerek yok.
+
+372
+00:28:54,024 --> 00:28:56,044
+Yani hani işaret değişikliği yapmayacağı için.
+
+373
+00:28:56,644 --> 00:29:00,463
+Şimdi arkadaşlar 6. maddeye geldi.
+
+374
+00:29:00,683 --> 00:29:03,064
+Daha sonra zaten konveks oldu aralıklar.
+
+375
+00:29:03,243 --> 00:29:07,544
+Yani ikinci türeve baktığın zaman eksi 4 x eksi 22 arkadaşlar.
+
+376
+00:29:07,723 --> 00:29:08,624
+İşaret değil eksi.
+
+377
+00:29:09,064 --> 00:29:10,943
+O halde sağ taraftan eksi ile başlıyorum.
+
+378
+00:29:12,044 --> 00:29:15,443
+X 11 bölü 2 kök olduğu için işaret değişikliği de artı.
+
+379
+00:29:15,443 --> 00:29:17,104
+Yani bu aralıkta konveks.
+
+380
+00:29:17,723 --> 00:29:20,864
+X 11 sonsuz aralığında da konkav olur arkadaşlar.
+
+381
+00:29:21,884 --> 00:29:24,203
+Şimdi 6. madde de ise arkadaşlar.
+
+382
+00:29:24,203 --> 00:29:26,903
+6. madde de ise.
+
+383
+00:29:28,024 --> 00:29:29,304
+Ne yapıyoruz arkadaşlar?
+
+384
+00:29:30,503 --> 00:29:33,903
+Bütün bilgilerin olduğu tabloyu çiziyoruz demiştik.
+
+385
+00:29:34,584 --> 00:29:36,064
+Burada neleri koyacağız arkadaşlar?
+
+386
+00:29:36,183 --> 00:29:37,723
+Eksi neleri kestiği noktayı koyacağız.
+
+387
+00:29:37,723 --> 00:29:43,483
+Sonra x eşittir eksi 11 bölü 2'ye hepsini koyacağız arkadaşlar buraya tamam mı?
+
+388
+00:29:43,483 --> 00:29:48,923
+Bütün noktaya koyduktan sonra y'nin türevine baktığınızda arkadaşlar y'nin türevi nedir?
+
+389
+00:29:49,044 --> 00:29:53,564
+2x artı 8 bölü x artı 1'in 3. kuvveti arkadaşlar.
+
+390
+00:29:53,683 --> 00:29:54,024
+Doğru mu?
+
+391
+00:29:54,784 --> 00:29:59,503
+Şimdi buradan eşitliği yani tablonun en sağ tarafından başlıyoruz arkadaşlar.
+
+392
+00:29:59,503 --> 00:30:01,604
+Artı artı artı.
+
+393
+00:30:02,124 --> 00:30:05,624
+Bakın x eşittir eksi 1'de y üstü işaret değişikliği.
+
+394
+00:30:05,703 --> 00:30:08,203
+Sebebi ise x artı 1'in küpü.
+
+395
+00:30:08,624 --> 00:30:10,604
+Tek kat yani tek kuvveti olduğu için.
+
+396
+00:30:11,064 --> 00:30:12,344
+Tek sayı kuvveti olduğu için.
+
+397
+00:30:12,884 --> 00:30:14,144
+İşaret değişikliği olacaktır.
+
+398
+00:30:14,264 --> 00:30:15,544
+Yani artı teken eksi olacaktır.
+
+399
+00:30:16,284 --> 00:30:18,544
+Ve bir de x eşittir eksi 4'te.
+
+400
+00:30:18,703 --> 00:30:21,003
+Türevin kökü olduğu için bununla bir işaret değişikliği olacak.
+
+401
+00:30:21,144 --> 00:30:21,943
+Yani iki yerde olacak.
+
+402
+00:30:22,064 --> 00:30:23,203
+X eşittir eksi 4'te.
+
+403
+00:30:23,703 --> 00:30:25,144
+Ve x eşittir eksi 1'de.
+
+404
+00:30:25,144 --> 00:30:29,344
+Bakın fonksiyon sıfırdan büyük olduğu yere de artan.
+
+405
+00:30:29,683 --> 00:30:30,884
+Küçük olduğu yere de azalan.
+
+406
+00:30:31,384 --> 00:30:32,584
+Artan artan artan.
+
+407
+00:30:33,443 --> 00:30:34,743
+Bu durumda arkadaşlar.
+
+408
+00:30:35,324 --> 00:30:37,023
+Grafiğe bunu yansıtırsak da.
+
+409
+00:30:37,264 --> 00:30:41,604
+Öncelikle yine bu bize tablodaki oluşturduğumuz noktada yerleştiriyoruz.
+
+410
+00:30:41,784 --> 00:30:43,044
+Eksi 4 bölü 4 bölü 3.
+
+411
+00:30:43,523 --> 00:30:44,804
+Hepsini yerleştirdikten sonra.
+
+412
+00:30:45,703 --> 00:30:48,163
+Eksi sonsuzda eksi 4 arasında arkadaşlar.
+
+413
+00:30:48,163 --> 00:30:49,443
+Bakın fonksiyon ne olmuş?
+
+414
+00:30:49,983 --> 00:30:51,804
+Artmış ve şekil ne arkadaşlar?
+
+415
+00:30:51,963 --> 00:30:53,963
+Şekil konveksi bir şekil var.
+
+416
+00:30:53,963 --> 00:30:55,243
+Eksi 4'e kadar.
+
+417
+00:30:56,003 --> 00:30:57,084
+Daha sonra arkadaşlar.
+
+418
+00:30:57,284 --> 00:30:58,443
+Daha sonra ise arkadaşlar.
+
+419
+00:30:59,443 --> 00:31:00,864
+Konkav bir şekil oluyor.
+
+420
+00:31:01,203 --> 00:31:04,223
+Yani eksi 11 bölü 2 yaklaşık kaç yapıyor arkadaşlar?
+
+421
+00:31:04,804 --> 00:31:05,844
+Eksi 5.5 yapıyor.
+
+422
+00:31:05,943 --> 00:31:07,084
+Yani şuraya kadar aslında.
+
+423
+00:31:09,003 --> 00:31:09,644
+Evet.
+
+424
+00:31:10,044 --> 00:31:10,824
+Burayı bir dakika.
+
+425
+00:31:15,824 --> 00:31:18,644
+Eksi 5.5 bakın şu nokta yaklaşık.
+
+426
+00:31:20,463 --> 00:31:22,503
+Buraya kadar arkadaşlar şekil konveks.
+
+427
+00:31:22,503 --> 00:31:24,983
+Şöyle bir şekil düşünün.
+
+428
+00:31:25,463 --> 00:31:26,784
+Hafif böyle oval şeklinde.
+
+429
+00:31:27,364 --> 00:31:29,744
+Buradan sonra artık arkadaşlar konkavlaşıyor.
+
+430
+00:31:29,923 --> 00:31:30,264
+Tamam mı?
+
+431
+00:31:41,011 --> 00:31:50,432
+x 4'e kadar artacak fonksiyon ve konveksi görüntü var dedik. x 4 ile arkadaşlar x 1 arasında alın olacak ve konkav olacak. Tamam mı?
+
+432
+00:32:18,836 --> 00:32:19,336
+Evet.
+
+433
+00:32:25,428 --> 00:32:33,888
+Arkadaşlar, x eşittir eksi 1'de zaten düşüyor asimptat olduğu için. Bakın onu da yerleştirdik. x eşittir eksi 1 şudur.
+
+434
+00:32:44,372 --> 00:32:48,532
+Bakın, x eşittir, x1'i yerleştirdik. Bir de y eşittir, 1 vardı.
+
+435
+00:32:53,587 --> 00:32:55,807
+Bunlar bire açım tutar arkadaşlar.
+
+436
+00:33:04,435 --> 00:33:19,175
+Devam ettiğimizde, x1'den arkadaşlar artık sonuçta kadar fonksiyon hem artacak hem de arkadaşlar şekil nedir? Bir konkalsı bir şekilde, aşağıya konkal şeklinde ikinci parçasını da bu şekilde çekeceğiz arkadaşlar.
+
+437
+00:33:22,535 --> 00:33:24,435
+Burada soru soran var mı arkadaşlar?
+
+438
+00:33:36,627 --> 00:33:37,788
+Son bir soru çözelim.
+
+439
+00:33:37,847 --> 00:33:38,467
+Grafikle ilgili.
+
+440
+00:33:40,807 --> 00:33:42,407
+Arkadaşlar bakın burada da
+
+441
+00:33:42,407 --> 00:33:44,887
+fonksiyonumuz x kare artı 4 bölü
+
+442
+00:33:44,887 --> 00:33:46,747
+2x şeklinde
+
+443
+00:33:46,747 --> 00:33:48,247
+bir fonksiyon var.
+
+444
+00:33:49,087 --> 00:33:50,847
+Polinom yani rasyonel fonksiyonu
+
+445
+00:33:50,847 --> 00:33:52,467
+olduğu için zaten payın
+
+446
+00:33:52,467 --> 00:33:54,467
+derecesi paydan büyük olduğundan bir e'yi
+
+447
+00:33:54,467 --> 00:33:55,587
+kasımsat olduğunu göreceğiz.
+
+448
+00:33:56,268 --> 00:33:58,187
+Şimdi ilk olarak tanım kümlemiz arkadaşlar.
+
+449
+00:33:58,447 --> 00:34:00,387
+Bakın paydayı 0 yapan değerleri çıkartıyoruz.
+
+450
+00:34:00,487 --> 00:34:01,847
+Rasyonel fonksiyon avantajı bu.
+
+451
+00:34:02,347 --> 00:34:04,807
+Direkt olarak paydayı 0 yapan değerleri çıkartıyoruz.
+
+452
+00:34:05,667 --> 00:34:06,607
+İkinci aşamada ise
+
+453
+00:34:06,607 --> 00:34:08,107
+arkadaşlar neyi soruyoruz?
+
+454
+00:34:08,228 --> 00:34:08,907
+Asimtotlar.
+
+455
+00:34:09,607 --> 00:34:12,327
+x eşittir 0 da zaten tanımsız olduğu için
+
+456
+00:34:12,327 --> 00:34:14,188
+arkadaşlar otomatikman x eşittir 0
+
+457
+00:34:14,188 --> 00:34:16,648
+bir düşüğü asimtot oluyor.
+
+458
+00:34:17,307 --> 00:34:18,728
+Polinom bölmesi yaptığınız zaman
+
+459
+00:34:18,728 --> 00:34:20,847
+x bölü 2 de
+
+460
+00:34:20,847 --> 00:34:23,107
+bir düşüğü asimtot oluyor arkadaşlar.
+
+461
+00:34:23,367 --> 00:34:23,807
+Veya
+
+462
+00:34:23,807 --> 00:34:27,567
+x bölü 2 bir e'yi kasımsat oluyor.
+
+463
+00:34:27,688 --> 00:34:29,148
+Veya tanım olarak da şudur arkadaşlar
+
+464
+00:34:29,148 --> 00:34:30,007
+e'yi kasımsatı.
+
+465
+00:34:30,487 --> 00:34:32,507
+Limit x artı eksi sonsuza giderken
+
+466
+00:34:32,507 --> 00:34:35,248
+fx eksi px limitin sıfır olması durumunda.
+
+467
+00:34:35,248 --> 00:34:37,867
+ki nedir arkadaşlar?
+
+468
+00:34:38,288 --> 00:34:38,648
+Tanımdır.
+
+469
+00:34:38,748 --> 00:34:39,047
+Veya
+
+470
+00:34:39,047 --> 00:34:40,967
+e'yi kasımsatı'nın bir tanımı
+
+471
+00:34:40,967 --> 00:34:42,467
+bir diğer tanımı y eşittir.
+
+472
+00:34:43,268 --> 00:34:44,407
+mx artı n.
+
+473
+00:34:44,587 --> 00:34:46,748
+İşte m kat sayısını ve n kat sayısında
+
+474
+00:34:46,748 --> 00:34:49,007
+fx bölü 2'sinin limitine bakarak
+
+475
+00:34:49,007 --> 00:34:49,807
+m'i bulursunuz.
+
+476
+00:34:50,248 --> 00:34:52,887
+fx eksi mx'in limitine bakarak da arkadaşlar
+
+477
+00:34:52,887 --> 00:34:54,107
+n kat sayısını bulursunuz.
+
+478
+00:34:54,248 --> 00:34:54,927
+İki türlü de var.
+
+479
+00:34:55,248 --> 00:34:56,648
+Yani her zaman polinom olmayabilir.
+
+480
+00:34:56,827 --> 00:34:57,748
+Polinom olmasa da
+
+481
+00:34:57,748 --> 00:34:59,768
+şu diğer formüllerden de
+
+482
+00:34:59,768 --> 00:35:01,268
+kullanabilirsiniz arkadaşlar.
+
+483
+00:35:01,447 --> 00:35:02,768
+e'yi kasımsatı bulabilmek için.
+
+484
+00:35:02,768 --> 00:35:05,927
+üçüncü aşama ise arkadaşlar
+
+485
+00:35:05,927 --> 00:35:08,027
+eksenleri kestiği nokta
+
+486
+00:35:08,027 --> 00:35:10,268
+x eşittir sıfır için y sonsuz çıkar.
+
+487
+00:35:10,688 --> 00:35:11,708
+Yani nedir arkadaşlar?
+
+488
+00:35:12,307 --> 00:35:13,188
+y eksenini kesmez.
+
+489
+00:35:13,268 --> 00:35:14,527
+y eşittir sıfır için de
+
+490
+00:35:14,527 --> 00:35:15,947
+x bulamadığımız,
+
+491
+00:35:16,007 --> 00:35:17,607
+real bir x değeri bulamadığımız için
+
+492
+00:35:17,607 --> 00:35:18,668
+x eksenini de kesmez.
+
+493
+00:35:18,748 --> 00:35:20,067
+O halde hiçbir eksenini de
+
+494
+00:35:20,067 --> 00:35:21,728
+kesmez diyoruz eğrimiz.
+
+495
+00:35:22,487 --> 00:35:24,567
+Dördüncü aşamada ise fonksiyon türevi.
+
+496
+00:35:24,708 --> 00:35:26,268
+Türevi sıfır yapan değerleri buluyoruz.
+
+497
+00:35:26,367 --> 00:35:28,728
+Türevi sıfır yapan değerler nedir arkadaşlar?
+
+498
+00:35:28,728 --> 00:35:31,228
+x kare eksi 4 eşittir 2x kareler.
+
+499
+00:35:31,907 --> 00:35:33,648
+Payı sıfır eşitlediğinizde
+
+500
+00:35:33,648 --> 00:35:35,947
+x eşittir artı eksi 2 kritik noktadır.
+
+501
+00:35:36,668 --> 00:35:38,688
+Bakın paydayı sıfır yapan değerler de var.
+
+502
+00:35:38,807 --> 00:35:39,587
+x eşittir sıfır.
+
+503
+00:35:39,728 --> 00:35:40,427
+Fakat bu da yine
+
+504
+00:35:40,427 --> 00:35:42,407
+işaret değişikliği yapmaz.
+
+505
+00:35:42,487 --> 00:35:43,387
+Çift katlı olduğu için.
+
+506
+00:35:43,567 --> 00:35:45,807
+Aynı zamanda fonksiyona tanımadığı için
+
+507
+00:35:45,807 --> 00:35:48,127
+zaten en azından eksen nokta değil arkadaşlar.
+
+508
+00:35:50,067 --> 00:35:50,907
+y2 üstü
+
+509
+00:35:50,907 --> 00:35:52,768
+aldığımız zaman
+
+510
+00:35:52,768 --> 00:35:54,007
+kritik nokta,
+
+511
+00:35:54,208 --> 00:35:55,188
+şebek bir noktası var mı?
+
+512
+00:35:55,188 --> 00:35:55,487
+yok.
+
+513
+00:35:55,887 --> 00:35:56,607
+Çünkü 4x
+
+514
+00:35:56,607 --> 00:35:58,188
+4 bölü x kükü
+
+515
+00:35:58,188 --> 00:35:58,847
+şey oluyor.
+
+516
+00:36:00,668 --> 00:36:01,927
+Payı sıfır yapan değer yok.
+
+517
+00:36:02,007 --> 00:36:02,927
+Payday sıfır değerler
+
+518
+00:36:02,927 --> 00:36:03,748
+değer var.
+
+519
+00:36:03,927 --> 00:36:04,148
+Fakat
+
+520
+00:36:04,148 --> 00:36:05,947
+bu da yine fonksiyonu tanımadığı
+
+521
+00:36:05,947 --> 00:36:06,788
+aynı zamanda
+
+522
+00:36:06,788 --> 00:36:07,567
+nedir arkadaşlar?
+
+523
+00:36:08,367 --> 00:36:08,748
+Bu yüzden
+
+524
+00:36:08,748 --> 00:36:10,427
+bütün noktası değildir diyoruz.
+
+525
+00:36:10,507 --> 00:36:10,847
+Tamam mı?
+
+526
+00:36:12,907 --> 00:36:13,127
+Evet.
+
+527
+00:36:14,887 --> 00:36:15,487
+Şimdi
+
+528
+00:36:15,487 --> 00:36:17,367
+evet
+
+529
+00:36:17,367 --> 00:36:18,447
+devam ettiğinizde
+
+530
+00:36:18,447 --> 00:36:19,927
+devam ettiğinizde arkadaşlar
+
+531
+00:36:19,927 --> 00:36:24,248
+x eşittir eksi 2 için
+
+532
+00:36:24,248 --> 00:36:25,387
+bakın fonksiyon
+
+533
+00:36:25,387 --> 00:36:27,627
+ne olacak arkadaşlar?
+
+534
+00:36:28,807 --> 00:36:29,347
+Fonksiyon
+
+535
+00:36:29,347 --> 00:36:30,748
+x2'ye kadar
+
+536
+00:36:30,748 --> 00:36:31,728
+azal,
+
+537
+00:36:31,827 --> 00:36:32,668
+artacak arkadaşlar.
+
+538
+00:36:32,847 --> 00:36:33,768
+Bakın şu x2'ye kadar
+
+539
+00:36:33,768 --> 00:36:34,507
+artacak.
+
+540
+00:36:35,148 --> 00:36:36,027
+x2'den
+
+541
+00:36:36,027 --> 00:36:38,807
+sıfıra kadar da azalacak.
+
+542
+00:36:39,507 --> 00:36:40,127
+Sıfırdan
+
+543
+00:36:40,127 --> 00:36:41,668
+2'ye kadar arkadaşlar
+
+544
+00:36:41,668 --> 00:36:42,847
+fonksiyon azaldı.
+
+545
+00:36:43,228 --> 00:36:43,768
+Ve şekil
+
+546
+00:36:43,768 --> 00:36:44,587
+bakın.
+
+547
+00:36:45,307 --> 00:36:46,208
+Ve daha sonra da
+
+548
+00:36:46,208 --> 00:36:47,708
+nedir arkadaşlar?
+
+549
+00:36:48,387 --> 00:36:49,188
+2'den sonra da
+
+550
+00:36:49,188 --> 00:36:50,168
+fonksiyon artacak.
+
+551
+00:36:50,168 --> 00:36:50,567
+yani
+
+552
+00:36:50,567 --> 00:36:51,627
+böylelikle
+
+553
+00:36:51,627 --> 00:36:52,307
+tabloya göre
+
+554
+00:36:52,307 --> 00:36:53,268
+grafiği de
+
+555
+00:36:53,268 --> 00:36:53,648
+buradan
+
+556
+00:36:53,648 --> 00:36:54,987
+doğrulamış olduk.
+
+557
+00:36:55,487 --> 00:36:55,847
+Yalnız
+
+558
+00:36:55,847 --> 00:36:57,007
+mesela
+
+559
+00:36:57,007 --> 00:36:57,927
+x eşittir
+
+560
+00:36:57,927 --> 00:36:58,627
+sıfırda
+
+561
+00:36:58,627 --> 00:36:59,148
+2.
+
+562
+00:36:59,268 --> 00:36:59,668
+türev
+
+563
+00:36:59,668 --> 00:37:00,208
+arkadaşlar
+
+564
+00:37:00,208 --> 00:37:01,087
+sonuçta
+
+565
+00:37:01,087 --> 00:37:01,807
+pi'da
+
+566
+00:37:01,807 --> 00:37:03,307
+x küp olduğu için
+
+567
+00:37:03,307 --> 00:37:04,987
+y'nin
+
+568
+00:37:04,987 --> 00:37:05,208
+2.
+
+569
+00:37:05,387 --> 00:37:05,907
+türevinde
+
+570
+00:37:05,907 --> 00:37:07,248
+işaret değişikliği vardır.
+
+571
+00:37:08,007 --> 00:37:08,228
+y'nin
+
+572
+00:37:08,228 --> 00:37:08,427
+2.
+
+573
+00:37:08,507 --> 00:37:08,748
+türevinde
+
+574
+00:37:08,748 --> 00:37:09,567
+işaret değişikliği
+
+575
+00:37:09,567 --> 00:37:10,067
+olduğu için
+
+576
+00:37:10,067 --> 00:37:10,467
+o yüzden
+
+577
+00:37:10,467 --> 00:37:11,047
+aslında
+
+578
+00:37:11,047 --> 00:37:11,567
+şurada
+
+579
+00:37:11,567 --> 00:37:12,407
+şekil değişiyor.
+
+580
+00:37:12,967 --> 00:37:13,208
+Yani
+
+581
+00:37:13,208 --> 00:37:15,847
+hüküm noktası
+
+582
+00:37:15,847 --> 00:37:16,608
+diyemiyoruz ama
+
+583
+00:37:16,608 --> 00:37:17,547
+ne oluyor?
+
+584
+00:37:17,708 --> 00:37:18,087
+Aslında
+
+585
+00:37:18,087 --> 00:37:19,327
+işaret değişikliği
+
+586
+00:37:19,327 --> 00:37:19,847
+yaptığı için
+
+587
+00:37:19,847 --> 00:37:20,347
+arkadaşlar
+
+588
+00:37:20,347 --> 00:37:21,108
+bir
+
+589
+00:37:21,108 --> 00:37:21,827
+konveksle
+
+590
+00:37:21,827 --> 00:37:22,307
+konkal
+
+591
+00:37:22,307 --> 00:37:23,047
+görüntü
+
+592
+00:37:23,047 --> 00:37:23,867
+oluşuyor arkadaşlar.
+
+593
+00:37:24,067 --> 00:37:24,748
+Yani sıfıra kadar
+
+594
+00:37:24,748 --> 00:37:26,927
+konveks
+
+595
+00:37:26,927 --> 00:37:27,827
+sıfırdan sonra
+
+596
+00:37:27,827 --> 00:37:28,887
+konkal
+
+597
+00:37:28,887 --> 00:37:29,387
+arkadaşlar.
+
+598
+00:37:30,387 --> 00:37:30,487
+Evet.
+
+599
+00:37:30,887 --> 00:37:31,027
+Yani
+
+600
+00:37:31,027 --> 00:37:31,708
+daha doğrusu
+
+601
+00:37:31,708 --> 00:37:32,208
+şöyle desek
+
+602
+00:37:32,208 --> 00:37:32,407
+daha
+
+603
+00:37:32,407 --> 00:38:02,387
+bir
+
+604
+00:37:33,012 --> 00:37:42,432
+karışıklısın diye. Yani sıfıra kadar arkadaşlar aşağıya konkav, sıfırdan sonra yukarıya konkav desek daha iyi olacak. Gördükleri daha çok karışabiliyor. Evet.
+
+605
+00:37:44,972 --> 00:37:47,211
+Arkadaşlar, sorunuz var mı bugünkü dersle ilgili?
+
+606
+00:37:49,612 --> 00:37:59,012
+Şimdi konular daha fazla bir şey işlemeyeceğiz arkadaşlar. Çünkü sınavla ilgili e-mail attım size arkadaşlar. Geldi mi acaba usüs üzerinden?
+
+607
+00:38:06,963 --> 00:38:33,884
+Yani o da sınav ne zaman? Bir de matematik arkadaşlar 2 oturumda yapılacakmış. Sanırım bu şeyden dolayı belli bir sayının üzerinde sistem çalışmıyormuş. Sonuçta yeni bir sisteme geçtirdik için. O bakımdan denilen şey matematik 2 oturumda yapılacak. Bizim grup 5 olduğu için 2 oturumda yapılacak arkadaşlar. Yine farklı bir durumu olursa sizlerle paylaşırız. Özellikle matematik bölümü web sayfasını da takip edelim arkadaşlar.
+
+608
+00:38:33,884 --> 00:38:39,183
+Burada aynı zamanda söylemiştim. Burada aslında en önce yine burada paylaşıyoruz.
+
+609
+00:38:39,183 --> 00:38:47,824
+Asıl bilgileri. Artı kendi abisiz sayfama da arkadaşlar paylaşıyorum. Orada takip edebilirsiniz.
+
+610
+00:38:57,108 --> 00:38:59,347
+Arkadaşlar haftaya sorular çözeceğim.
+
+611
+00:39:00,128 --> 00:39:00,788
+Sıkıntı yok.
+
+612
+00:39:01,288 --> 00:39:03,048
+Zaten test olacak sınav.
+
+613
+00:39:04,128 --> 00:39:06,128
+Yani en yakın sınav tarihinden
+
+614
+00:39:06,128 --> 00:39:07,728
+en geçmişe doğru
+
+615
+00:39:07,728 --> 00:39:09,588
+sorular çözeceğiz arkadaşlar.
+
+616
+00:39:10,588 --> 00:39:11,327
+O yüzden
+
+617
+00:39:11,327 --> 00:39:12,868
+bir problem yok.
+
+618
+00:39:15,108 --> 00:39:15,948
+Sizler de özellikle
+
+619
+00:39:15,948 --> 00:39:17,688
+7. bugünkü dersi de
+
+620
+00:39:17,688 --> 00:39:18,908
+tekrar ederseniz
+
+621
+00:39:18,908 --> 00:39:21,068
+çok daha faydalı olacaktır.
+
+622
+00:39:21,068 --> 00:39:21,988
+Evet arkadaşlar.
+
+623
+00:39:22,327 --> 00:39:23,428
+Bugünlük dersimiz bu kadar.
+
+624
+00:39:24,248 --> 00:39:25,668
+Hafta arkadaşlar her iki günde
+
+625
+00:39:25,668 --> 00:39:27,728
+soru çözeceğiz. Sınav zaten haftaya
+
+626
+00:39:27,728 --> 00:39:30,028
+cumartesi. Bir sonraki cumartesi diyelim.
+
+627
+00:39:30,148 --> 00:39:31,388
+10 gün falan var yaklaşık.
+
+628
+00:39:31,908 --> 00:39:33,788
+Sizler de sorular çözmeye başlayın arkadaşlar.
+
+629
+00:39:33,968 --> 00:39:35,248
+Özellikle ders işaretlerimizi.
+
+630
+00:39:36,248 --> 00:39:38,428
+Bu şekilde ne kadar anlatsak
+
+631
+00:39:38,428 --> 00:39:39,768
+sizler kalemi
+
+632
+00:39:39,768 --> 00:39:42,128
+elinizde alıp çözmediğiniz sürece
+
+633
+00:39:42,128 --> 00:39:44,068
+bu iş biraz zor ilerler.
+
+634
+00:39:44,168 --> 00:39:45,968
+O yüzden sizlerin daha çok
+
+635
+00:39:45,968 --> 00:39:46,888
+soru çözmesi lazım.
+
+636
+00:39:46,888 --> 00:39:47,648
+Evet.
+
+637
+00:39:49,307 --> 00:39:50,588
+Evet arkadaşlar.
+
+638
+00:39:50,968 --> 00:39:52,128
+Bugünlük dersimiz bu kadar.
+
+639
+00:39:53,648 --> 00:39:54,508
+Sınavdan sonra
+
+640
+00:39:54,508 --> 00:39:56,188
+ters sürelerden başlayacağız.
+
+641
+00:39:57,648 --> 00:39:58,788
+Kendinize iyi bakın arkadaşlar.
+
+642
+00:39:58,948 --> 00:39:59,528
+Görüşmek üzere.
