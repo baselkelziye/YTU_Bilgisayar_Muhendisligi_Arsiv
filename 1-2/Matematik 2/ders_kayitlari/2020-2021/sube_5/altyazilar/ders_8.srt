@@ -1,0 +1,2903 @@
+1
+00:00:08,051 --> 00:00:09,311
+Merhaba arkadaşlar.
+
+2
+00:00:13,971 --> 00:00:14,971
+Merhabalar hocam.
+
+3
+00:00:16,211 --> 00:00:17,091
+Merhaba [öğrenci].
+
+4
+00:00:22,228 --> 00:00:31,408
+Arkadaşlarınız giriş yaparken ben birkaç tane Maclaurin serisi tahtaya yazacağım. Bunları siz de not alırsanız iyi olur.
+
+5
+00:02:37,876 --> 00:02:55,075
+Maclorent serilerini yazdık. Bunları aslında daha önce hepsini göstermiştik ama kuvvet serisi olarak göstermiştik. Aynı zamanda tabii ki Maclorent serisi de oluyor bunlar. Bir de geçerli oldukları aralıkları yanlarına yazdım bu şekilde.
+
+6
+00:02:55,075 --> 00:03:14,276
+Bugün artık bu Taylor Maclorent serilerini bitirdik dün. Bunlarla uğraşmayacağız. Bugün yeni bir konuya geçeceğiz. Ancak bu serileri de bilmenizde fayda var diye özet olarak böyle yazdım. Siz de not alırsanız iyi olur.
+
+7
+00:03:14,276 --> 00:03:27,556
+E üzeri x'i, sinüs x'i, kosünüs x'i onları dün yapmıştık zaten. Onları da bu tabloya eklerseniz aslında çok daha güzel olur. Elinizde özet olur.
+
+8
+00:03:30,355 --> 00:03:36,235
+Tahta geniş olsa onları da ekleyeceğim ama böyle kalsın.
+
+9
+00:03:44,403 --> 00:03:47,804
+Bugünkü konunun dosyasını yükleyeyim ben şimdi size.
+
+10
+00:04:02,068 --> 00:04:10,927
+Bugün düzleme eğrilerin parametrizasyonuna bakacağız. Yani eğrileri parametrize etmeyi birazcık öğreneceğiz.
+
+11
+00:04:29,843 --> 00:04:35,764
+başlayalım. Ben tahtayı sileyim. Yazmışsınızdır ya da ekran görüntüsünü almışsınızdır.
+
+12
+00:05:30,612 --> 00:05:32,372
+eğrilerin parametrizasyonunu
+
+13
+00:05:32,372 --> 00:05:34,272
+nasıl yapacağız? Şimdi ona bakalım.
+
+14
+00:05:35,972 --> 00:05:38,512
+Düzlemde ilerleyen, hareket eden
+
+15
+00:05:38,512 --> 00:05:40,672
+bir parçacığı göz önüne alalım.
+
+16
+00:05:41,132 --> 00:05:41,391
+Bunun
+
+17
+00:05:41,391 --> 00:05:43,852
+hareket ettiği
+
+18
+00:05:43,852 --> 00:05:48,052
+yol şöyle bir eğri olsun.
+
+19
+00:05:50,772 --> 00:05:51,772
+Bu parçacık
+
+20
+00:05:51,772 --> 00:05:54,692
+çeşitli zamanlarda
+
+21
+00:05:54,692 --> 00:05:56,492
+şu noktalardan geçecektir.
+
+22
+00:05:56,492 --> 00:05:56,812
+Değil mi?
+
+23
+00:05:58,172 --> 00:06:00,272
+Biz bu parçacığın
+
+24
+00:06:00,272 --> 00:06:02,212
+hangi zamanda ve
+
+25
+00:06:02,212 --> 00:06:04,331
+nerede olduğunu kontrol etmek
+
+26
+00:06:04,331 --> 00:06:06,492
+istiyorsak ne yapmamız
+
+27
+00:06:06,492 --> 00:06:08,232
+gerekiyor? Şimdi böyle bir
+
+28
+00:06:08,232 --> 00:06:10,331
+eğri verildiği zaman düzlem eğriler
+
+29
+00:06:10,331 --> 00:06:11,892
+biz biliyoruz ki yeşil
+
+30
+00:06:11,892 --> 00:06:14,172
+fx şeklinde x'e
+
+31
+00:06:14,172 --> 00:06:16,092
+bağlı bir fonksiyonla bunların
+
+32
+00:06:16,092 --> 00:06:18,532
+grafikleri ifade edilebiliyor.
+
+33
+00:06:18,972 --> 00:06:20,472
+Geçtiği noktalar belli ise.
+
+34
+00:06:21,172 --> 00:06:22,592
+Yalnız böyle bir
+
+35
+00:06:22,592 --> 00:06:24,132
+denklemi bilmek yani
+
+36
+00:06:24,132 --> 00:06:26,192
+parçacığın hareket ettiği
+
+37
+00:06:26,192 --> 00:06:28,052
+yolun şeklini bilmek
+
+38
+00:06:28,052 --> 00:06:30,132
+bizim için yeterli değildir.
+
+39
+00:06:30,132 --> 00:06:32,152
+onun hangi zamanda
+
+40
+00:06:32,152 --> 00:06:33,852
+nerede olduğunu belirlemek için
+
+41
+00:06:33,852 --> 00:06:34,712
+yeterli değildir.
+
+42
+00:06:35,072 --> 00:06:36,552
+İşte şu eğrinin
+
+43
+00:06:36,552 --> 00:06:38,412
+denkleme örneğin yeşil fx
+
+44
+00:06:38,412 --> 00:06:40,092
+gibi bir fonksiyonla
+
+45
+00:06:40,632 --> 00:06:42,012
+ifade edilebiliyorsa
+
+46
+00:06:42,012 --> 00:06:43,451
+bu benim için
+
+47
+00:06:43,451 --> 00:06:45,972
+hiçbir şey ifade etmeyecek.
+
+48
+00:06:46,032 --> 00:06:48,412
+Parçacığın herhangi bir
+
+49
+00:06:48,412 --> 00:06:50,512
+tez zamanında nerede olduğunu
+
+50
+00:06:50,512 --> 00:06:52,252
+eğri üzerinde nerede olduğunu
+
+51
+00:06:52,252 --> 00:06:53,872
+tespit etmeme bunun
+
+52
+00:06:53,872 --> 00:06:55,372
+faydası olmayacak.
+
+53
+00:06:55,372 --> 00:06:57,052
+ne yapmam gerekecek?
+
+54
+00:06:58,172 --> 00:06:59,812
+Herhangi bir t anında
+
+55
+00:06:59,812 --> 00:07:00,552
+diyelim ki
+
+56
+00:07:00,552 --> 00:07:01,772
+onun yerini
+
+57
+00:07:01,772 --> 00:07:03,032
+tespit etmek istiyorum.
+
+58
+00:07:03,451 --> 00:07:04,032
+O zaman
+
+59
+00:07:04,032 --> 00:07:07,372
+ne yapmalıyım?
+
+60
+00:07:08,792 --> 00:07:09,331
+t'yi
+
+61
+00:07:09,331 --> 00:07:10,392
+bir değişken
+
+62
+00:07:10,392 --> 00:07:11,872
+t dediğim zaman
+
+63
+00:07:11,872 --> 00:07:12,212
+değil mi?
+
+64
+00:07:12,292 --> 00:07:13,132
+Zamanı genelde
+
+65
+00:07:13,132 --> 00:07:14,292
+t ile gösteririz.
+
+66
+00:07:14,792 --> 00:07:15,372
+Zamanı
+
+67
+00:07:15,372 --> 00:07:16,472
+bir değişken
+
+68
+00:07:16,472 --> 00:07:17,732
+olarak kullanarak
+
+69
+00:07:17,732 --> 00:07:19,432
+yani bir parametre olarak
+
+70
+00:07:19,432 --> 00:07:20,232
+kullanarak
+
+71
+00:07:20,232 --> 00:07:21,932
+bu parçacığın
+
+72
+00:07:21,932 --> 00:07:23,831
+x yönünde ve
+
+73
+00:07:23,831 --> 00:07:24,752
+y yönünde
+
+74
+00:07:24,752 --> 00:07:26,872
+aldığı yolu
+
+75
+00:07:26,872 --> 00:07:27,852
+bulabilirsem
+
+76
+00:07:27,852 --> 00:07:29,172
+hesaplayabilirsem
+
+77
+00:07:29,172 --> 00:07:30,432
+t'ye bağlı olarak
+
+78
+00:07:30,432 --> 00:07:31,732
+o zaman parçacığın
+
+79
+00:07:32,312 --> 00:07:33,752
+bir t anında
+
+80
+00:07:33,752 --> 00:07:35,212
+nerede olduğunu da
+
+81
+00:07:35,212 --> 00:07:36,592
+tespit edebilirim.
+
+82
+00:07:36,652 --> 00:07:36,872
+Değil mi?
+
+83
+00:07:37,272 --> 00:07:38,132
+Dolayısıyla
+
+84
+00:07:38,132 --> 00:07:42,792
+y eşit fx
+
+85
+00:07:42,792 --> 00:07:44,012
+yazmak yerine
+
+86
+00:07:44,012 --> 00:07:44,752
+ben
+
+87
+00:07:44,752 --> 00:07:45,971
+bu parçacığın
+
+88
+00:07:45,971 --> 00:07:46,792
+x ve y
+
+89
+00:07:46,792 --> 00:07:48,312
+koordinatlarını
+
+90
+00:07:48,312 --> 00:07:51,091
+t parametresinin
+
+91
+00:07:51,091 --> 00:07:53,052
+bir fonksiyonu
+
+92
+00:07:53,052 --> 00:07:53,412
+olarak
+
+93
+00:07:53,412 --> 00:07:55,152
+ifade edebilirsem
+
+94
+00:07:55,152 --> 00:07:56,112
+yani şunu
+
+95
+00:07:56,112 --> 00:07:57,091
+yazabilirsem
+
+96
+00:07:57,091 --> 00:07:57,852
+x eşit
+
+97
+00:07:57,852 --> 00:07:58,692
+f t
+
+98
+00:07:58,692 --> 00:07:59,312
+diyelim
+
+99
+00:07:59,312 --> 00:08:00,752
+y'yi de
+
+100
+00:08:00,752 --> 00:08:02,211
+g t
+
+101
+00:08:02,211 --> 00:08:03,072
+şeklinde bir
+
+102
+00:08:03,072 --> 00:08:04,052
+ikisini de
+
+103
+00:08:04,052 --> 00:08:04,692
+t'ye bağlı
+
+104
+00:08:04,692 --> 00:08:05,392
+bir fonksiyon
+
+105
+00:08:05,392 --> 00:08:05,711
+olarak
+
+106
+00:08:05,711 --> 00:08:06,492
+eğer ifade
+
+107
+00:08:06,492 --> 00:08:07,451
+edebilirsek
+
+108
+00:08:07,451 --> 00:08:08,272
+o zaman
+
+109
+00:08:08,272 --> 00:08:09,132
+parçacığın
+
+110
+00:08:09,132 --> 00:08:10,472
+herhangi bir
+
+111
+00:08:10,472 --> 00:08:11,492
+t anındaki
+
+112
+00:08:11,492 --> 00:08:12,512
+konumunu
+
+113
+00:08:12,512 --> 00:08:13,432
+ne yapabilirim?
+
+114
+00:08:13,692 --> 00:08:14,772
+Belirleyebilirim.
+
+115
+00:08:15,932 --> 00:08:16,912
+Şurası ne olacak?
+
+116
+00:08:17,372 --> 00:08:18,312
+f t
+
+117
+00:08:18,312 --> 00:08:20,552
+g t
+
+118
+00:08:20,552 --> 00:08:21,232
+anında
+
+119
+00:08:21,232 --> 00:08:22,412
+bulunduğu
+
+120
+00:08:22,412 --> 00:08:23,412
+nokta olacak.
+
+121
+00:08:24,692 --> 00:08:26,232
+t anında
+
+122
+00:08:26,232 --> 00:08:26,772
+bulunduğu
+
+123
+00:08:26,772 --> 00:08:27,412
+nokta olacak.
+
+124
+00:08:28,132 --> 00:08:28,992
+Dolayısıyla
+
+125
+00:08:28,992 --> 00:08:29,992
+bir
+
+126
+00:08:29,992 --> 00:08:30,012
+t
+
+127
+00:08:30,012 --> 00:08:30,812
+anında
+
+128
+00:08:30,812 --> 00:08:30,992
+bir
+
+129
+00:08:30,992 --> 00:08:31,872
+t
+
+130
+00:08:31,872 --> 00:08:31,992
+anında
+
+131
+00:08:33,524 --> 00:08:51,703
+Böyle yaptığımda yani parçacığın x ve y yönündeki hareketlerini bir t parametresinin fonksiyonu olarak ifade ettiğin zaman bu eğriyi ben parametrize etmiş oldum.
+
+132
+00:08:52,604 --> 00:08:57,703
+Artık şu parametrik eğrinin denklemleridir benim için.
+
+133
+00:08:59,364 --> 00:09:02,703
+Yalnız burada tabii neyi belirtmek gerekecek?
+
+134
+00:09:03,524 --> 00:09:06,183
+Parametre aralığını belirtmek gerekecek.
+
+135
+00:09:06,624 --> 00:09:10,024
+T'de bir I aralığına ait olsun.
+
+136
+00:09:10,463 --> 00:09:22,024
+Genelde zaman hani pozitif değerler oluyor ya sıfır sonsuz aralığı gibi de düşünülebilir ama şöyle bir I aralığı olarak da ben bunu ifade edebilirim.
+
+137
+00:09:22,024 --> 00:09:36,683
+İşte parametre aralığı belli ve de bu parametreye bağlı olarak x ve y koordinatlarını parametreye bağlı olarak bir fonksiyonla ifade edebiliyorsam,
+
+138
+00:09:36,683 --> 00:09:47,663
+bu t'ye bağlı olarak ifade edebiliyorsam ben y eşit, şimdi fx diyemeyeceğim başka bir harf göstereyim.
+
+139
+00:09:48,504 --> 00:09:59,683
+ux şeklindeki bir düzlem eğriyi x eşit f t y eşit g t denklemlerini kullanarak parametrik halde yazmış oluyorum.
+
+140
+00:09:59,683 --> 00:10:02,344
+Parametrizasyonumuz bu.
+
+141
+00:10:02,344 --> 00:10:06,644
+Burada size geniş olarak tanımı var.
+
+142
+00:10:06,644 --> 00:10:11,703
+Kısaca şöyle okuyayım isterseniz.
+
+143
+00:10:12,324 --> 00:10:15,384
+Düzlemdeki parametrik bir C eğrisi
+
+144
+00:10:15,384 --> 00:10:27,584
+her biri aynı bir I aralığı üzerinde tanımlanmış olan sürekli fonksiyonların sıralı bir FG ikilisinden oluşur.
+
+145
+00:10:27,923 --> 00:10:29,264
+Şurada gördünüz zaten.
+
+146
+00:10:29,443 --> 00:10:33,463
+Bakın şu eğriyi FG ikilisiyle temsil ettim.
+
+147
+00:10:33,463 --> 00:10:38,663
+Yani x ekseni bu da x koordinatıydı, bu da y koordinatıydı.
+
+148
+00:10:39,024 --> 00:10:43,264
+Koordinatları bir T parametresine bağlı olarak ifade ettim.
+
+149
+00:10:43,663 --> 00:10:52,703
+İşte bu FG ikilisinden oluşan denkleme C eğrisinin parametrik denklemleri diyoruz.
+
+150
+00:10:53,144 --> 00:10:57,124
+Şu şekilde bunlar parametrik denklemlerimiz oluyorlar.
+
+151
+00:10:57,124 --> 00:11:01,584
+Şimdi zaten tanımı var evinizde.
+
+152
+00:11:01,683 --> 00:11:03,624
+Orada tekrar tekrar okursunuz.
+
+153
+00:11:04,063 --> 00:11:06,844
+Birkaç önemli şeyi hatırlatayım size.
+
+154
+00:11:07,584 --> 00:11:10,504
+Parametrik bir eğrinin yönü vardır.
+
+155
+00:11:10,923 --> 00:11:13,344
+Ancak daha sonra söyleyeceğiz.
+
+156
+00:11:13,443 --> 00:11:15,323
+Düzlem eğrilerde yön yok aslında.
+
+157
+00:11:16,163 --> 00:11:17,703
+Neyse şunu söyleyeyim.
+
+158
+00:11:18,124 --> 00:11:23,504
+Parametrik eğrinin yönü T'nin artan değerlerinin yönündedir.
+
+159
+00:11:23,504 --> 00:11:27,963
+Bunu biraz sonra grafik çizerken de bakacağız.
+
+160
+00:11:31,644 --> 00:11:33,504
+Biz de şunu söyleyeyim.
+
+161
+00:11:39,668 --> 00:12:06,008
+Bazen parametrik olarak verilen bir eğrinin denkleminde eğer mümkünse buradaki t parametresi yok edilerek x ve y arasında t parametresi yok edilerek y eşit u x gibi bunun kartezyen formunu da elde etmemiz mümkün olabiliyor.
+
+162
+00:12:06,008 --> 00:12:32,427
+Grafik çizerken parametrik denklemleri kullanarak grafik çizmek istemiyorsanız eğer verilen x ve y arasındaki t parametresini yok edip onun kartezyen denklemini elde ederek
+
+163
+00:12:32,427 --> 00:12:38,827
+eğrinin grafik çizmek istemiyorsanız eğer verilen x ve y arasındaki t parametresini bu şekilde çizebilirsiniz.
+
+164
+00:12:42,548 --> 00:12:44,268
+Ayrıca bir şey daha söyleyeyim.
+
+165
+00:12:48,019 --> 00:12:50,079
+Biz y eşit
+
+166
+00:12:55,347 --> 00:13:17,147
+X gibi bir düzlem eğri de X'i T'ye bağlı olarak alıp yani X'in T parametresi olarak alıp Y'yi de T'nin bir fonksiyonu olarak bu şekilde eğriyi parametreize edebilirsiniz.
+
+167
+00:13:17,147 --> 00:13:19,727
+Bu en standart halidir.
+
+168
+00:13:19,727 --> 00:13:31,227
+Tabi ki burada ne olacak? Parametre aralığı U'nun tanım kümesi olacaktır.
+
+169
+00:13:32,507 --> 00:13:36,267
+U'nun tanım kümesi neyse şöyle DU diyelim.
+
+170
+00:13:36,747 --> 00:13:41,527
+Bu neye eşit olacak? Parametre aralığına I'ya eşit olacak.
+
+171
+00:13:41,527 --> 00:13:52,987
+Örneğin Y'ye eşit X kare. Bu nedir? Bir paraboldür değil mi?
+
+172
+00:13:52,987 --> 00:14:03,987
+Bu paraboldür parametrizi etmek isterseniz, parametrik denklemlerle ifade etmek isterseniz ne yapabilirsiniz?
+
+173
+00:14:04,147 --> 00:14:09,487
+Şurada gösterdiğim gibi X'i T olarak göz önüne alırsınız.
+
+174
+00:14:09,487 --> 00:14:14,447
+Bu durumda Y'de neye eşit olacak?
+
+175
+00:14:15,007 --> 00:14:16,548
+T kareye eşit olacak.
+
+176
+00:14:17,048 --> 00:14:24,427
+Bakın parametrik denklemler X eşit T, Y eşit T kare şeklinde çıkıyor.
+
+177
+00:14:24,427 --> 00:14:31,407
+Y eşit X karede X'in tanım kümesi nedir?
+
+178
+00:14:31,767 --> 00:14:34,367
+Eksi sonsuz artı sonsuz aralığıdır, R'dir.
+
+179
+00:14:34,447 --> 00:14:40,528
+Dolayısıyla burada parametre aralığı I'yı R olarak alabilirsiniz.
+
+180
+00:14:50,388 --> 00:14:57,447
+kullanabileceğimiz en basit parametrize etme yöntemidir diyelim.
+
+181
+00:14:58,447 --> 00:15:00,508
+Şimdi örnek yapalım birkaç tane.
+
+182
+00:15:50,772 --> 00:15:54,252
+T kare eksi 1 yeşit t artı 1.
+
+183
+00:15:54,812 --> 00:16:00,612
+T de eksi sonsuz artı sonsuz aralığında verilmiş.
+
+184
+00:16:05,716 --> 00:16:09,975
+Denklemleri yazarken mutlaka parametre aralığını da yazın.
+
+185
+00:16:11,336 --> 00:16:14,115
+Parametrik eğrisini çiziniz ve betimleyiniz.
+
+186
+00:16:14,456 --> 00:16:18,296
+Yani nasıl bir eğridir, adını söyleyin demek oluyor bu.
+
+187
+00:16:20,475 --> 00:16:24,015
+Bunu çizmek için iki yol izleyebilirsiniz.
+
+188
+00:16:24,015 --> 00:16:35,336
+Parametrik olarak eğer çizmek isterseniz, t'ye değerler vererek, birkaç tane değer verirsiniz, keyfi değerler vererek,
+
+189
+00:16:35,716 --> 00:16:47,615
+x ve y'nin aldığı değerleri hesaplayıp, bunları dik koordinat sisteminde işaretleyip, o noktaları birleştirerek yapabilirsiniz.
+
+190
+00:16:47,615 --> 00:17:03,235
+Ya da bu iki x ve y arasında t parametresini yok etmeniz mümkünse, eğer t'ye yok ederek bunun kartezyen denklemini bulup, o şekilde de ne yapabilirsiniz, çizebilirsiniz.
+
+191
+00:17:03,235 --> 00:17:15,236
+Kartezyen denklemini, kartezyen denklemini, kartezyen denklemini elde ederseniz, zaten belki eğrinin ismini söylemeniz daha da kolay olabilir.
+
+192
+00:17:15,236 --> 00:17:18,375
+İki yolla da yapalım isterseniz.
+
+193
+00:17:20,056 --> 00:17:23,756
+Bu ikisi arasında t'yi yok edebilir miyiz?
+
+194
+00:17:26,236 --> 00:17:27,316
+Ederiz.
+
+195
+00:17:27,316 --> 00:17:29,316
+Çünkü şurada t var.
+
+196
+00:17:29,316 --> 00:17:34,316
+Çünkü şurada t'yi buradan çekerseniz eğer, t'ye eşit olacak.
+
+197
+00:17:34,316 --> 00:17:36,635
+Y eksi 1'e eşit olacak.
+
+198
+00:17:37,135 --> 00:17:40,355
+Getirip bunu da x denkleminde yerine yazın.
+
+199
+00:17:40,915 --> 00:17:44,836
+x eşit, t'nin karesi yerine ne yazacağım?
+
+200
+00:17:45,236 --> 00:17:48,675
+t yerine daha doğrusu y eksi 1 yazacağım, karesini alacağım.
+
+201
+00:17:48,675 --> 00:17:54,435
+y eksi 1 yazdığımızda, y eksi 1 yazdığımızda, y eksi 1'in karesi yerine yazdığımızda, bu ne çıkacak?
+
+202
+00:17:54,435 --> 00:17:59,756
+x eşit, y kare, eksi 2'ye artı 1 çıkacak.
+
+203
+00:17:59,875 --> 00:18:01,716
+Eksi 1 de burada olacak, gidecek.
+
+204
+00:18:01,816 --> 00:18:04,736
+y kare eksi 2'ye çıkacak.
+
+205
+00:18:05,096 --> 00:18:05,756
+Bu nedir?
+
+206
+00:18:08,135 --> 00:18:11,796
+x eksenini saran bir paraboldür değil mi?
+
+207
+00:18:11,796 --> 00:18:41,776
+x eksenini saran bir paraboldür.
+
+208
+00:18:25,683 --> 00:18:47,543
+Bu grafiğini isterseniz x, y'den yararlanarak çizin ama biz şey yapalım. Zaten siz kartezyen koordinatlarda grafik çizmeyi biliyorsunuz. Parametrik olarak birkaç noktayı hesaplayıp o şekilde bunun grafiğini çizelim. Parametrik olarak yaparken de şunu yapacağım.
+
+209
+00:18:47,543 --> 00:18:57,683
+Şuraya t diyelim. T değerleri, t'ye değer vereceğim. Buna karşılık x ve y değerlerini de hesaplayacağım.
+
+210
+00:19:07,059 --> 00:19:20,059
+Eksi 1, 0, 1, 3 tane çok az olur. Şöyle, eksi 2'den başlayalım. Eksi 2, eksi 1, 0, 1, 2 değerlerini alalım. Gerisini almayalım.
+
+211
+00:19:21,940 --> 00:19:30,359
+T'yi eksi 2 alırsam, x ne olacak? 4 eksi 1'den 3 olacak. y ise eksi 1 olacak.
+
+212
+00:19:30,359 --> 00:19:42,619
+T'yi eksi 1 aldığın zaman, x artı 1 olacak, 0 olacak. y de 0 olacak.
+
+213
+00:19:44,980 --> 00:19:54,460
+T'yi 0 aldığında, x eksi 1, y artı 1 olur. 1 aldığında, bu yine 0 oldu, x 0 oldu yani.
+
+214
+00:19:54,460 --> 00:19:56,460
+y de 2 aldığım zaman, y de 2 oldu.
+
+215
+00:19:56,460 --> 00:20:05,960
+2 aldığım zaman, burası yine 3 olur. Burası yine 3 olur. Burası da 3 olur.
+
+216
+00:20:08,460 --> 00:20:16,299
+Buna göre, şurada da grafiğini çizmeye çalışalım.
+
+217
+00:20:27,796 --> 00:20:46,216
+eksi 2 noktası neymiş? x eşit 3, y eşit eksi 1'miş. x eşit 3, y eşit eksi 1, şuralarda bir nokta olsun. Bu t eşit eksi 2 noktası olsun.
+
+218
+00:20:51,188 --> 00:21:01,128
+Eksi bir noktası t eksi bir, x sıfır, y sıfır orjin olacak. Şurası t eşit eksi bir noktası oldu.
+
+219
+00:21:03,068 --> 00:21:12,968
+t'yi sıfır aldığında x eksi bir, y artı bir. t'yi sıfır aldım, x eksi bir şurası olsun, y de artı bir olacak, burası olsun.
+
+220
+00:21:12,968 --> 00:21:18,748
+Şöyle, şuralarda bir şey alayım. t eşit bir noktamız da bu oldu.
+
+221
+00:21:18,748 --> 00:21:26,688
+Yanlış aldım. t sıfır oldu bu değil mi?
+
+222
+00:21:27,368 --> 00:21:28,768
+Eksi bir e bir.
+
+223
+00:21:37,011 --> 00:21:38,172
+0, 2
+
+224
+00:21:38,172 --> 00:21:42,692
+0, 2 de şurası olsun.
+
+225
+00:21:48,884 --> 00:21:58,884
+T eşit 1'i aldım. T eşit 2, 3, 3 oldu. Şurayı demin 3 almıştık, yine 3 alalım. Şurası olsun. T eşit 2.
+
+226
+00:22:00,884 --> 00:22:11,624
+Şimdi şu noktaları birleştireceğiz. T'nin yönü dedik ki T'nin artan yönünde. Yani eksi 2'den 2'ye doğru giderken birleştirelim.
+
+227
+00:22:11,624 --> 00:22:19,124
+T eksi 2 noktamız burası. Eksi 2'den eksi 1'e gelecek bu.
+
+228
+00:22:21,463 --> 00:22:25,284
+1'den de T eksi 1'den de nereye? T sıfıra gelecek.
+
+229
+00:22:26,183 --> 00:22:29,564
+Sonra T sıfırdan T 1'e gidecek.
+
+230
+00:22:40,180 --> 00:22:45,759
+Sivirden de T2'ye doğru tekrar gidecek ve böyle devam edecek.
+
+231
+00:22:47,759 --> 00:22:51,259
+Şu da buradan gelecek. Eksiden geliyor.
+
+232
+00:22:52,799 --> 00:22:55,140
+Böyle bir parabol çıkacak.
+
+233
+00:22:55,299 --> 00:23:01,060
+Tabi birazcık düzgün çizemedim. Şurası çok sivri oldu ama siz onu biraz daha düzgün çizebilirsiniz.
+
+234
+00:23:04,200 --> 00:23:07,759
+T'nin artan yönünde bu noktaları birleştirdik.
+
+235
+00:23:07,759 --> 00:23:12,539
+Dolayısıyla bu eğri karşımıza çıktı.
+
+236
+00:23:13,180 --> 00:23:16,519
+Demin de zaten şunu yazdığımızda ne demiştik?
+
+237
+00:23:17,220 --> 00:23:20,340
+X eksenini saran ötelenmiş.
+
+238
+00:23:20,340 --> 00:23:21,940
+Eyvah, elim kaydı.
+
+239
+00:23:23,420 --> 00:23:24,120
+Kapandı bu.
+
+240
+00:23:32,564 --> 00:23:43,964
+Şu denkleme bakıp, x eksenini saran ve ötelenmiş bir parabol, x ekseninin de ötelenmiş bir parabol olduğunu görebiliyoruz.
+
+241
+00:23:43,964 --> 00:23:52,964
+Bunu parametrik olarak çizmek istersek de, işte t'ye değerler verip x ve y'nin değerlerini oluşturacağız.
+
+242
+00:23:53,144 --> 00:23:57,584
+Sonra, şu x, y değerlerine göre t değerlerini işaretleyeceğiz.
+
+243
+00:23:57,584 --> 00:24:05,304
+Onları t'nin artan doğrultusunda birleştirdiğimizde de grafiği elde etmiş oluyoruz.
+
+244
+00:24:09,172 --> 00:24:10,291
+Var mı sorunuz?
+
+245
+00:24:15,571 --> 00:24:20,611
+[öğrenci], t'yi neden eksi 2'den başlattım?
+
+246
+00:24:20,971 --> 00:24:23,451
+Yani birkaç tane değer almam gerekiyordu.
+
+247
+00:24:23,991 --> 00:24:29,551
+O yüzden de t'nin tanım aralığı bakın eksi sonsuz artı sonsuz aralığı.
+
+248
+00:24:29,891 --> 00:24:33,311
+Birkaç eksi değer birkaç tane de artı değer alacağım.
+
+249
+00:24:33,311 --> 00:24:39,271
+Simetrik olsun diye çok da alakasız değerler vermemek gerekiyor çizmek için değil mi?
+
+250
+00:24:39,691 --> 00:24:41,251
+Bir şeyi izlemek gerekiyor.
+
+251
+00:24:41,251 --> 00:24:50,711
+Dolayısıyla eksi 1 artı 1 arasında da değer verildim ama o zaman 3 tane değer çok az olacak grafik çizmek için.
+
+252
+00:24:51,471 --> 00:24:52,851
+Eksi 2'den başlattım.
+
+253
+00:24:52,951 --> 00:24:55,451
+Siz bunu eksi 3'den de başlatabilirsiniz.
+
+254
+00:24:56,231 --> 00:25:00,771
+Ama yani ideal sayıda nokta benim için çizebilmem için.
+
+255
+00:25:00,771 --> 00:25:03,271
+O yüzden eksi 2 aldım.
+
+256
+00:25:04,511 --> 00:25:07,871
+Eksi 2'de başlatmak zorunda değilsiniz.
+
+257
+00:25:07,991 --> 00:25:10,011
+Tanım aralığına da bakacaksınız.
+
+258
+00:25:10,011 --> 00:25:20,751
+Eksi sonsuz artı sonsuz aralığı olduğu için hem eksi değer hem artı değer alarak bunun nasıl değiştiğini gözlemlememiz gerekiyor.
+
+259
+00:25:34,740 --> 00:25:56,440
+Kartezyen koordinatlarda da, yani şey eğri çizerken, örneğin x eşit y kare eksi 2, bunu çizmek isteseydik, yine ne yapacaktım? Eksenleri kestiği noktaları bulacaktım. O dönüm noktasını falan belirleyecektim değil mi?
+
+260
+00:25:56,440 --> 00:26:11,940
+Yine belli yerleri belirlemem gerekecekti. Bazı keyifli yerler de vermem gerekecekti. Örneğin y sıfır olduğu zaman, x de sıfır oluyor, bunu görecektik. Eksenleri nerelerde kesiyor?
+
+261
+00:26:11,940 --> 00:26:25,440
+Onun dışında, onun dışında, x sıfır olduğu zaman, y ne oluyor? Sıfır ve x sıfır olduğunda, ha bir oluyor, bir miydi? Üç oluyordu, pardon.
+
+262
+00:26:28,240 --> 00:26:38,220
+Sıfır iki, iki ya. Sıfır veya iki oluyor. Bu gibi noktaları burada da belirliyoruz, burada da. Değişen tek bir şey yok.
+
+263
+00:27:11,796 --> 00:27:21,155
+Karşımıza çokça çıkacak olan en temel doğru ve eğrilerin size parametrik denklemlerini vermeye çalışacağım.
+
+264
+00:27:23,496 --> 00:27:34,155
+Bu bir ötelenmiş parabol denklemiydi. Mesela örnek olarak en başta da y eşit x kare parabolunu da nasıl parametrize etmiştik?
+
+265
+00:27:34,155 --> 00:27:42,155
+x eşit t, y eşit t kare şeklinde de bunu parametrize edebiliyoruz.
+
+266
+00:27:43,176 --> 00:27:48,155
+Burada t'nin değişim aralığı, r eksi sonsuz sonsuz aralığı.
+
+267
+00:27:52,756 --> 00:28:01,395
+Parabolun bildiğimiz şu en basit parabolun parametrik denklemleri oluyordu.
+
+268
+00:28:01,395 --> 00:28:03,236
+Onu yazmak zaten çok kolay.
+
+269
+00:28:03,236 --> 00:28:08,076
+Şimdi bir doğrunun parametrik denklemleri nasıl yazılır ona bakalım.
+
+270
+00:28:28,948 --> 00:28:32,307
+Y0 noktasından geçen
+
+271
+00:28:35,700 --> 00:28:37,700
+ve eğimi
+
+272
+00:28:37,700 --> 00:28:41,460
+m olan
+
+273
+00:28:41,460 --> 00:28:43,700
+doğrunun
+
+274
+00:28:44,380 --> 00:28:46,700
+parametrik denklemlerini elde edelim.
+
+275
+00:28:52,980 --> 00:28:57,839
+Doğruyu parametrizediniz demişiz. Öyle yapalım. Doğruyu yu yu yu.
+
+276
+00:29:18,228 --> 00:29:19,408
+Benden eklemi nedir?
+
+277
+00:29:23,092 --> 00:29:29,572
+Kartezyen denkleme. Geçtiği bir nokta biliniyor, eğimi de biliniyorsa biz doğruyu nasıl yazıyorduk?
+
+278
+00:29:30,052 --> 00:29:34,772
+Y eşit ya da şöyle yazıyorduk.
+
+279
+00:29:34,852 --> 00:29:43,192
+Y eksi y sıfır eşit x eksi eğim çarpı x eksi x sıfır.
+
+280
+00:29:50,771 --> 00:30:05,771
+Burada, y eşit, eğim, x eksi x0 artı y0 olarak da doğru denklemini bu şekilde veya şunu kullanarak, ikisinden birini kullanarak yazabiliyorduk.
+
+281
+00:30:07,771 --> 00:30:08,331
+Burada,
+
+282
+00:30:12,756 --> 00:30:16,176
+x-x0'ı t olarak alırsak,
+
+283
+00:30:22,355 --> 00:30:27,135
+x-x-x0'a t edersek, y neye eşit olacak?
+
+284
+00:30:42,003 --> 00:30:46,463
+M çarpı t artı y sıfır şeklinde olacak değil mi?
+
+285
+00:30:47,583 --> 00:30:56,503
+t'de nedir? Eksi sonsuz, sonsuz aralığında değişir. Şöyle noktalı virgül koyalım karışması.
+
+286
+00:30:57,083 --> 00:31:01,663
+Bu bir parametrizasyonudur. Eğrenin bir parametrizasyonudur.
+
+287
+00:31:25,044 --> 00:31:41,044
+Doğrudan x'i t olarak da alabilirsiniz. O zaman x'i t olarak alırsanız şurada x0 gelecek. Hani o x0 gelmesin diye x-x0'ı t olarak almışız. Artık çıkacak olan...
+
+288
+00:31:47,604 --> 00:31:51,864
+Doğru denklemine göre de parametrizasyonu değiştirebilirsiniz.
+
+289
+00:32:09,587 --> 00:32:10,768
+Bu sorunuz.
+
+290
+00:32:59,188 --> 00:33:01,088
+Size şunu da yazdırsam mı acaba?
+
+291
+00:33:04,692 --> 00:33:07,251
+Bu da doğrunun parametrik denklemi ama
+
+292
+00:33:07,251 --> 00:33:13,832
+Doğrunun parametrik denklemlerini şöyle de yapabilirsiniz.
+
+293
+00:33:21,107 --> 00:33:41,988
+P0 diyelim, x0, y0 olsun. Bir de P1 noktası alalım. Yani geçtiği iki noktadan geçen ve eğimi bilinen ya da herhangi iki noktadan geçen bir doğrun denklemi, parametrik denklemi nasıl yazarız ona bakalım.
+
+294
+00:33:41,988 --> 00:33:51,327
+P0, x0, y0, P1 de x1, y1 olsun. Tamam mı?
+
+295
+00:33:52,807 --> 00:33:57,467
+Bu noktalardan geçen doğrunun parametrik denklemlerini yazalım.
+
+296
+00:34:22,132 --> 00:34:23,731
+Diyelim ki doğrumuz şu olsun.
+
+297
+00:34:24,152 --> 00:34:26,711
+Bir P0 noktasını biliyoruz.
+
+298
+00:34:28,052 --> 00:34:29,892
+Şurada bir de P noktası alalım.
+
+299
+00:34:29,992 --> 00:34:32,032
+Genel bir nokta alıyoruz ya üzerinde.
+
+300
+00:34:32,412 --> 00:34:34,112
+Bu da P1 noktamız olsun.
+
+301
+00:34:37,092 --> 00:34:38,992
+Ne olacaktır burada?
+
+302
+00:34:40,211 --> 00:34:46,572
+Y-Y0 bölü P0 dediğimiz X0, Y0.
+
+303
+00:34:46,572 --> 00:34:51,392
+P genel bir nokta X, Y.
+
+304
+00:34:51,751 --> 00:34:56,992
+P1 de X1, Y1 noktası olursa
+
+305
+00:34:56,992 --> 00:35:03,572
+biz standart olarak doğru denklemini aslında nasıl yazıyorduk?
+
+306
+00:35:03,572 --> 00:35:09,012
+Y-Y0 bölü X-X0.
+
+307
+00:35:09,811 --> 00:35:11,072
+Neye eşit?
+
+308
+00:35:11,711 --> 00:35:13,871
+Y-Y0, X-X0.
+
+309
+00:35:13,871 --> 00:35:16,831
+Yani şunun oranıyla buradaki oran nedir?
+
+310
+00:35:16,952 --> 00:35:17,532
+Eşittir.
+
+311
+00:35:18,052 --> 00:35:20,251
+Dolayısıyla bunu alırsak
+
+312
+00:35:20,251 --> 00:35:21,972
+ne olacak?
+
+313
+00:35:22,192 --> 00:35:25,871
+Y-Y1-Y0
+
+314
+00:35:33,139 --> 00:35:36,599
+x1-x0 olarak yazarız değil mi?
+
+315
+00:35:38,119 --> 00:35:45,179
+Bu oran neye eşit olacak? Eğme. Yani sabit. Sabittir bu oran.
+
+316
+00:35:50,452 --> 00:36:05,252
+Bakın, şuradaki eğimle, şunun eğimi aynıdır. Dolayısıyla, şu oran sabit olacak. Buradan yararlanarak, doğrunun parametrik denklemini şu şekilde yazabiliriz.
+
+317
+00:36:05,252 --> 00:36:18,112
+x eşit, x sıfır artı, sabit dedik ya, eğim ya da bunu t ile de gösterebilirsiniz. Genelde t parametresini kullandığımız için t yazalım.
+
+318
+00:36:18,112 --> 00:36:24,132
+x1-x0, x1-x0, y'de neye eşit olacak?
+
+319
+00:36:25,912 --> 00:36:37,352
+y'de y0 artı, t çarpı y1-y0'a eşit olur.
+
+320
+00:36:37,352 --> 00:36:50,852
+x1-x0, y1-x0, y1-x0, y1-y1 verildiği için onlar zaten bilinen noktalar.
+
+321
+00:36:51,692 --> 00:36:57,332
+Dolayısıyla, doğrunun parametrik denklemleri olarak bunları da kullanabilirsiniz.
+
+322
+00:36:57,492 --> 00:37:00,212
+Yine parametre aralığımız ne olacak burada?
+
+323
+00:37:00,852 --> 00:37:03,972
+eksi sonsuz, artı sonsuz olacak.
+
+324
+00:37:04,152 --> 00:37:05,132
+t yazacaktım.
+
+325
+00:37:05,132 --> 00:37:35,112
+doğrunun parametre aralığımız ne olacak.
+
+326
+00:37:40,179 --> 00:37:41,159
+İmimi tahtayı
+
+327
+00:37:49,331 --> 00:37:54,491
+Ya da siz yazarken [kişisel bilgi]
+
+328
+00:37:58,003 --> 00:37:58,284
+Peki?
+
+329
+00:38:29,652 --> 00:38:30,231
+Siliyorum.
+
+330
+00:38:36,755 --> 00:38:40,395
+[öğrenci] Paramatrik Denklemi bir daha anlatıyor musunuz?
+
+331
+00:38:45,460 --> 00:38:46,260
+Bir bakıyor.
+
+332
+00:38:51,891 --> 00:38:54,051
+Ah ne? Bunlar da, altınlaşı ben mi?
+
+333
+00:38:56,451 --> 00:38:58,051
+Ben yanlış şeyle mi yazmışım?
+
+334
+00:39:00,911 --> 00:39:03,391
+Tamam, ben elimdeki şeyle yazdım.
+
+335
+00:39:03,631 --> 00:39:06,831
+Ben de yazdım da aşağıya ben hep yanlış işaretledim.
+
+336
+00:39:06,951 --> 00:39:08,251
+Tamam, onu düzeltirim ben.
+
+337
+00:39:08,731 --> 00:39:08,971
+Yok.
+
+338
+00:39:10,192 --> 00:39:10,931
+Şimdi gördüm.
+
+339
+00:39:11,311 --> 00:39:12,991
+Tamam, ben onu düzeltirim.
+
+340
+00:39:13,751 --> 00:39:15,971
+Bekleyin, soy deri verdi. Beşe mi koymuş?
+
+341
+00:39:16,211 --> 00:39:16,571
+Beşe.
+
+342
+00:39:17,091 --> 00:39:17,931
+Siz aldıkınız.
+
+343
+00:39:18,011 --> 00:39:19,791
+Ben hiç size beş numara zannediyorum.
+
+344
+00:39:19,791 --> 00:39:23,051
+Ben düzeltirim.
+
+345
+00:39:23,152 --> 00:39:24,172
+Tamam, şimdi ders değil.
+
+346
+00:40:00,980 --> 00:40:01,619
+Pardon.
+
+347
+00:40:03,480 --> 00:40:04,539
+Kapı da çaldı.
+
+348
+00:40:05,380 --> 00:40:08,199
+Parametrik denklemleri bir daha anlatır mısınız?
+
+349
+00:40:08,440 --> 00:40:10,079
+Şimdi nesini anlatayım bilemedim.
+
+350
+00:40:11,519 --> 00:40:13,920
+Doğrunun standart denklemleri vardı ya.
+
+351
+00:40:14,019 --> 00:40:17,599
+Onları aslında doğruları verirken bir kez daha vereceğim.
+
+352
+00:40:18,219 --> 00:40:21,500
+Doğrunun parametrik denklemleri standart denklemleri diye.
+
+353
+00:40:22,099 --> 00:40:25,500
+Orada bir daha anlatacağım ama daha...
+
+354
+00:40:26,280 --> 00:40:30,059
+Şimdi o denklemleri vermeden buradan nasıl anlatacağım?
+
+355
+00:40:30,980 --> 00:40:32,920
+Şunu da sildim.
+
+356
+00:40:34,400 --> 00:40:35,159
+Burada neydi?
+
+357
+00:40:35,260 --> 00:40:38,440
+y-y0 bölü
+
+358
+00:40:38,440 --> 00:40:43,740
+x-x0
+
+359
+00:40:43,740 --> 00:40:48,679
+y1-y0 bölü
+
+360
+00:40:48,679 --> 00:40:51,320
+x1-x0
+
+361
+00:40:51,320 --> 00:40:52,860
+Bu da t dedik.
+
+362
+00:40:52,980 --> 00:40:54,260
+Sabit oluyor ya.
+
+363
+00:40:54,980 --> 00:40:56,260
+Sabite t dedik.
+
+364
+00:40:57,780 --> 00:40:59,480
+t dersek
+
+365
+00:40:59,480 --> 00:41:01,480
+y-y0 bölü
+
+366
+00:41:01,480 --> 00:41:27,440
+x2
+
+367
+00:42:42,356 --> 00:42:52,356
+Bu denklemlerden çıkıyor. Onlardan eşit içler dışlar çarpım yaparak eşitlikten çıkarabiliyorsunuz.
+
+368
+00:42:56,340 --> 00:43:12,240
+Ya bunlarla demin yazdıklarım arasında bir fark yok. Çok şey geliyorsa, burada T dedik, biraz önce yazdıklarımla aynı. Hiçbir fark yok. Böyle de yazabilirsiniz sadece demek istedim.
+
+369
+00:43:12,240 --> 00:43:24,559
+Demin yazdığım denklemler de aynı bu denklemler de. x-x-x0 olarak belki yazmışımdır ama aynı şeyler, aynı denklemler. Çok bir fark yok.
+
+370
+00:43:24,559 --> 00:43:40,660
+Şimdi daha başka nesini anlatacağız? Bilemedim. Demin ne yapmıştım? x-x-x0'ı T olarak seçip ona göre yazmıştım. Arada hiçbir fark yok aslında. Sonuçta doğru denkleme.
+
+371
+00:43:58,579 --> 00:44:07,400
+Denklemdeki x ya da y'yi t'ye bağlı bir değer seçtiğinizde gerisi geliyor.
+
+372
+00:44:07,699 --> 00:44:15,259
+Örneğin, en çok kullanılan denklemlerden biri de çember ve elips denklemidir, parametrik denklem olarak.
+
+373
+00:44:15,259 --> 00:44:18,880
+Bunların da parametrizasyonlarını hemen yazalım.
+
+374
+00:44:25,172 --> 00:44:27,391
+parametrizasyonunu nasıl yazacağız?
+
+375
+00:44:29,132 --> 00:44:36,871
+x kare artı y kare eşit bir çemberini göz önüne alalım, birim çemberi göz önüne alalım.
+
+376
+00:44:40,403 --> 00:44:44,923
+Bunun en basit parametrizasyonu şu şekilde seçiliyor.
+
+377
+00:44:45,463 --> 00:44:48,364
+Şimdi karelerinin toplamı 1 olan neyi biliyoruz?
+
+378
+00:44:48,443 --> 00:44:52,264
+Sinüs kare ile kosünüs karenin toplamının 1 olduğunu biliyoruz.
+
+379
+00:44:52,704 --> 00:45:00,184
+Dolayısıyla x'i kosünüs, y'yi sinüs seçiyorduk.
+
+380
+00:45:00,184 --> 00:45:09,923
+x'i kosünüs t, y'yi de sinüs t olarak seçersek, t burada nasıl değişecek?
+
+381
+00:45:10,403 --> 00:45:13,583
+t'yi 0 ile 2 pi arasında alabiliriz.
+
+382
+00:45:18,771 --> 00:45:38,251
+Bu aralıkta aldığımızda şu reklamlar bize neyi verecek? Çemberi verecek. Çünkü x kare artı y kare ne oluyor? Kosinüs kare artı sinüs kare oluyor. Bu da ne? Sinüs kare, kosinüs kare toplamı da biliyoruz ki 1'e eşit oluyor.
+
+383
+00:45:42,708 --> 00:45:50,988
+Çemberin, daha doğrusu böyle birim çemberin en basit parametrizasyonu da bu şekilde oluyor.
+
+384
+00:45:51,608 --> 00:45:53,748
+Elipsinkini de bu arada yazalım.
+
+385
+00:46:08,307 --> 00:46:09,327
+Bu şekilde alalım.
+
+386
+00:46:10,748 --> 00:46:15,467
+A büyük ve büyük sıfır olsun diyelim.
+
+387
+00:46:21,043 --> 00:46:37,003
+X eşit, A kosinus t, Y'yi de B sinüs t olarak alırsak, bunların karelerini, daha doğrusu şöyle yapalım, kosinus kare artı sinüs karenin bir olduğunu biliyoruz.
+
+388
+00:46:37,003 --> 00:46:38,443
+Dolayısıyla
+
+389
+00:46:38,443 --> 00:46:43,963
+X bölü A'ya
+
+390
+00:46:47,315 --> 00:46:49,815
+Kosinus türeye eşit olsun x bölü a.
+
+391
+00:46:50,175 --> 00:46:52,495
+G bölü b de buradan neye eşit olacak?
+
+392
+00:46:55,315 --> 00:46:57,295
+Sinus türeye eşit olacak.
+
+393
+00:47:04,884 --> 00:47:05,884
+ve altı saksı.
+
+394
+00:47:11,891 --> 00:47:20,511
+x kare bölü, a kare, y kare bölü, b kare eşit ne oluyor? 1 oluyor. O halde,
+
+395
+00:47:26,324 --> 00:47:36,403
+Şu yaptığımız, şuradan çektik, bunu almayacağız da, parametrik denklemlerden bahsettiğimde, buradan çekerek şunları yazdım.
+
+396
+00:47:36,403 --> 00:47:51,664
+Yine burada parametre aralığını 0, 2 pi alırsanız, eğer t0'dan 2 pi'ye değişirken, elipsin denklemini tamamlamış oluyoruz.
+
+397
+00:47:51,664 --> 00:47:58,164
+Şu şekilde, bunlardan, elipsin parametrik denklemleri oluyor.
+
+398
+00:48:09,780 --> 00:48:26,360
+Biraz ara verelim. Aradan sonra da elimde örnekler var. O örnekleri yaparak hem daha iyi anlamış olursunuz hem de türevlerini falan vereceğim. Şimdi biraz ara verelim. 10 dakika.
+
+399
+01:01:19,059 --> 01:01:31,059
+Kaldığımız yerden devam edelim arkadaşlar. Bu yazdıklarım belli düzlem eğrilerin standart parametrizasyonudur.
+
+400
+01:01:32,019 --> 01:01:42,139
+Yani doğrunun parametrizasyonu dendiğinde işte x eşit x0 artı t çarpı bilmem ne onları bileceksiniz.
+
+401
+01:01:42,139 --> 01:01:45,079
+Doğrunun parametrik denklemlerini verdim.
+
+402
+01:01:46,079 --> 01:01:50,619
+Bir merkezi çemberin, bilim çemberin parametrik denklemlerini verdim.
+
+403
+01:01:51,099 --> 01:01:53,719
+Elipsin parametrik denklemlerini verdim.
+
+404
+01:01:55,259 --> 01:01:59,360
+Hiperbolle ilgili parametrizasyonlar yaptık.
+
+405
+01:02:00,259 --> 01:02:02,920
+Bunlar standart denklemler.
+
+406
+01:02:03,079 --> 01:02:06,320
+Yani şu an benim yazdıklarım en standart halleri.
+
+407
+01:02:10,291 --> 01:02:12,291
+Bunlar da hani çok...
+
+408
+01:02:16,436 --> 01:02:26,816
+Bilmeniz gereken zaten çemberin denklemini, standart denklemini, pardon, parametrik denklemini birçok yerde kullanıyorsunuz da.
+
+409
+01:02:28,675 --> 01:02:32,416
+Böyle elinizde olması gereken denklemler bunlar.
+
+410
+01:02:34,236 --> 01:02:35,736
+Şimdi başka bir şey yapalım.
+
+411
+01:02:42,195 --> 01:02:53,195
+x eşit t artı bir bölü t, y eşit t eksi bir bölü t.
+
+412
+01:02:54,715 --> 01:02:56,435
+t büyük sıfır verilmiş.
+
+413
+01:03:00,467 --> 01:03:10,907
+Parametrik denklemleri ile parametrize edilen P-E noktasının hareket ettiği yolu tanımlayarak grafiğini çiziniz demiş.
+
+414
+01:03:12,347 --> 01:03:14,687
+Parametrik denklemler verilmiş.
+
+415
+01:03:15,347 --> 01:03:22,627
+Bu parametrik denklemler nasıl bir düzlem eğri tanımlar onu soruyor.
+
+416
+01:03:22,987 --> 01:03:25,567
+Betimleyiniz ya da tanımlayınız dediği bu.
+
+417
+01:03:26,047 --> 01:03:27,327
+Nasıl bir eğri?
+
+418
+01:03:27,327 --> 01:03:31,288
+Onu yapacağız bir de grafiğini çizin demiş.
+
+419
+01:03:33,507 --> 01:03:40,228
+Öncelikle eğriyi tanımak için karteziye dönüştürmek her zaman daha uygundur.
+
+420
+01:03:40,547 --> 01:03:46,627
+Bu ikisi arasında T'yi yok edebiliriz.
+
+421
+01:03:47,427 --> 01:03:50,207
+X artı Y neye eşit olacak?
+
+422
+01:03:50,407 --> 01:03:51,728
+2T'ye eşit olacak.
+
+423
+01:03:51,728 --> 01:03:58,347
+X eksi Y'de 2 bölü T'ye eşit olacak.
+
+424
+01:03:58,487 --> 01:03:58,728
+Değil mi?
+
+425
+01:03:59,067 --> 01:04:00,347
+Şuradan toplarsak.
+
+426
+01:04:02,248 --> 01:04:04,627
+Bunları da birbiriyle çarparsak.
+
+427
+01:04:04,627 --> 01:04:10,507
+X artı Y çarpı X eksi Y dersen ne olacak?
+
+428
+01:04:10,748 --> 01:04:15,807
+Şurası da 2T çarpı 2 bölü T olur.
+
+429
+01:04:16,387 --> 01:04:19,507
+Burası X kare eksi Y kare gelir.
+
+430
+01:04:20,007 --> 01:04:22,167
+Burada da T'ler gider ne gelir?
+
+431
+01:04:22,268 --> 01:04:22,768
+4 gelir.
+
+432
+01:04:22,768 --> 01:04:26,547
+İşte bildiğiniz bir kartezyen denklem karşımıza çıktı.
+
+433
+01:04:27,307 --> 01:04:34,047
+Belli bir noktaya uzaklıkları sabit olan bu şekildeki denklemlere ne diyorduk?
+
+434
+01:04:34,527 --> 01:04:38,107
+Hiperbol diyoruz değil mi?
+
+435
+01:04:46,291 --> 01:04:51,411
+Peki bu eğri bir hiperbol eğrisiymiş.
+
+436
+01:04:51,612 --> 01:05:00,072
+Ancak hiperbol biliyorsunuz ki iki tane dalı olan bir eğri.
+
+437
+01:05:00,451 --> 01:05:03,291
+Birisi buradaysa diğeri de burada.
+
+438
+01:05:04,172 --> 01:05:09,291
+Burada T büyük sıfır verildiği için hiperbolun şu kısmı yok.
+
+439
+01:05:09,491 --> 01:05:11,092
+Sadece bu kısmı verilmiş.
+
+440
+01:05:12,052 --> 01:05:14,092
+Artı olan dalı verilmiş.
+
+441
+01:05:14,092 --> 01:05:16,031
+Şimdi bunun şeklini çizelim.
+
+442
+01:05:16,291 --> 01:05:26,491
+Şekil çizmek için de yine demin yaptığımız gibi bir tablo oluşturalım.
+
+443
+01:05:28,751 --> 01:05:35,851
+T, X ve Y değerlerinden oluşan tablomuzu oluşturalım.
+
+444
+01:05:36,391 --> 01:05:38,871
+T'ye K2 birkaç değer vereceğiz.
+
+445
+01:05:38,871 --> 01:05:50,132
+Ancak tabii ki burada bir bölü T olduğu için hani birazcık şey olacak fazla değer vermeyelim biz de.
+
+446
+01:05:50,271 --> 01:05:51,011
+Şöyle yapalım.
+
+447
+01:05:51,011 --> 01:05:55,211
+T pozitif olacak şekilde vereceğim.
+
+448
+01:05:55,331 --> 01:05:59,172
+T büyük sıfır burada negatif değer vermeyeceğim T'ye.
+
+449
+01:05:59,831 --> 01:06:01,971
+Bir verelim, iki verelim.
+
+450
+01:06:02,592 --> 01:06:03,951
+Sıfır da alamayacağım.
+
+451
+01:06:04,152 --> 01:06:05,971
+Sıfır değerini de veremeyeceğim.
+
+452
+01:06:05,971 --> 01:06:10,672
+Ancak bir bölü iki değerini alabilirim.
+
+453
+01:06:11,231 --> 01:06:14,132
+Yani T'yi bir bölü iki alırız.
+
+454
+01:06:14,592 --> 01:06:16,431
+Bir alırız, iki alırız.
+
+455
+01:06:16,511 --> 01:06:17,032
+O şekilde.
+
+456
+01:06:17,612 --> 01:06:19,731
+Bir bölü iki ile başlayalım isterseniz.
+
+457
+01:06:20,231 --> 01:06:23,431
+Bir bölü iki olunca çünkü şey olacak bu.
+
+458
+01:06:25,311 --> 01:06:26,032
+Kolay olacak.
+
+459
+01:06:26,032 --> 01:06:28,211
+T'yi bir bölü iki alırsa.
+
+460
+01:06:28,731 --> 01:06:29,532
+X ne olur?
+
+461
+01:06:29,672 --> 01:06:35,871
+Bir bölü iki artı ikiden dört beş bölü iki olacak.
+
+462
+01:06:36,011 --> 01:06:36,851
+İki buçuk olacak.
+
+463
+01:06:39,391 --> 01:06:40,871
+Y'de neye eşit oldu?
+
+464
+01:06:41,911 --> 01:06:50,172
+Bir bölü iki eksi ikiden dört eksi üç bölü ikiye eşit oldu.
+
+465
+01:06:53,907 --> 01:06:54,647
+Böyle geldi.
+
+466
+01:06:56,567 --> 01:06:58,947
+Bir alalım, bir de iki alalım.
+
+467
+01:07:00,647 --> 01:07:06,827
+Bir alırsak t'yi, şurası x2 olacak, y0 olacak.
+
+468
+01:07:08,708 --> 01:07:15,107
+2 alırsak da, yine 2 artı 1 bölü 2'den, burası 5 bölü 2 olur.
+
+469
+01:07:16,788 --> 01:07:18,507
+Burası bu sefer ne olacak?
+
+470
+01:07:18,507 --> 01:07:23,047
+2 eksi 1 bölü 2 olacak, 4 3 bölü 2 olur.
+
+471
+01:07:23,907 --> 01:07:29,268
+3 tane değerle bakalım, nasıl çizeceğiz?
+
+472
+01:07:42,643 --> 01:07:45,763
+Yani 0, 5 için x
+
+473
+01:07:50,324 --> 01:07:55,584
+x değerim 2,5. Şurası 1 olsun, burası 2 olsun, şurası da 1,5 olsun.
+
+474
+01:07:57,983 --> 01:08:06,604
+y değeri de eksi 1,5. 1,5. Burası olursa şurada bir nokta olacak.
+
+475
+01:08:10,356 --> 01:08:14,176
+Şu nokta, t eşit 1 bölü 2 noktası olur.
+
+476
+01:08:16,655 --> 01:08:21,396
+t'yi 1 aldığında, x 2, y ise 0.
+
+477
+01:08:21,876 --> 01:08:24,076
+y 0, x 2 şu nokta olacak.
+
+478
+01:08:30,547 --> 01:08:45,688
+Bir de t'yi 2 aldığında x yine 2,5 olacak, 5,2 olacak. Bu sefer t 3,2 olacak. Yani bunun tam simetri olacak, şu nokta olacak.
+
+479
+01:08:54,836 --> 01:09:02,115
+Yani 1 bölü 2'den 2'ye doğru t artarken eğri de şuradan şöyle artacak.
+
+480
+01:09:02,296 --> 01:09:04,115
+Tabii ki bunu kesmesi gerekiyordu.
+
+481
+01:09:05,256 --> 01:09:07,235
+Şu t noktasını taşıyalım o zaman.
+
+482
+01:09:10,556 --> 01:09:11,596
+Şu nokta olmadı.
+
+483
+01:09:20,404 --> 01:09:33,764
+Bu tabii ki böyle devam eden bir eğri değil mi? Şu şekilde bir eğri olacak. Bunun tek bir dalı var. T büyük sıfır dendiği için bu şekilde alacağız.
+
+484
+01:09:33,764 --> 01:09:49,864
+T'nin artan yönü dedik ki 1 bölü 2, 1, 2 bu yönde geldiği için şöyle bir yönü olacak. Yani oku da bu şekilde koyacağız. T'nin artan yönünde böyle uzayıp gidecek bu.
+
+485
+01:09:50,404 --> 01:10:04,624
+Eksi sonsuz artı sonsuz aralığında verseydi bir dal da burada oluşacaktı. Hiperbol 2 parçalı bir grafik biliyorsunuz. Bir parçasının sadece burada grafiğini varmış.
+
+486
+01:10:24,724 --> 01:10:27,064
+Siliyorum tahtayı var mı sorunuz?
+
+487
+01:10:36,115 --> 01:10:38,036
+Bunlarla ilgili örnek.
+
+488
+01:10:39,136 --> 01:10:40,475
+Ben çok türevim almışım.
+
+489
+01:11:34,771 --> 01:11:41,692
+Ben uzun uzun yazmayayım. Burada bir tanım var. Düzgün parametrik eğri neye deniyor? Onun tanımı var.
+
+490
+01:11:47,123 --> 01:11:55,063
+İstelik'le bir parametrik eğrinin türevlenebilir olması ne demektir? Ona bakalım.
+
+491
+01:11:56,663 --> 01:12:06,844
+X eşit, F, T, Y eşit, G, T şeklinde bir parametrik eğri verildiğini düşünelim.
+
+492
+01:12:06,844 --> 01:12:29,783
+Bu eğri, eğer bir T eşit, T sıfır noktasında, yani bir T sıfır noktasında, F ve G, T sıfır noktasında türevlenebiliyorsa, o zaman bu eğrinin T sıfırda türevlenebilir olduğunu söyleriz.
+
+493
+01:12:35,699 --> 01:12:41,559
+FG, T0'da türevlenebiliyor ise
+
+494
+01:12:45,555 --> 01:12:50,675
+C eğrisi diyelim biz buna. C eğrisinin parametrik denklemleri olsun.
+
+495
+01:12:53,055 --> 01:13:03,115
+Türevlenebiliyor ise o zaman bu C eğrisi eğrisine T0 noktasında türevlenebilirdir denir.
+
+496
+01:13:09,043 --> 01:13:21,523
+Eğer her t değeri için f ve g türevlenebiliyorsa, t'nin türevlenebilir fonksiyonları ise, o zaman c eğrisine türevlenebilirdir diyoruz.
+
+497
+01:13:23,623 --> 01:13:29,684
+Yani şu parametrik eğri türevlenebilirdir oluyor.
+
+498
+01:13:29,963 --> 01:13:31,764
+Türevlenebilir bir eğri oluyor.
+
+499
+01:13:31,764 --> 01:13:40,264
+Eğer f üstü ve g üstü türevleri
+
+500
+01:13:45,811 --> 01:13:51,751
+ve aynı anda sıfır değillerse
+
+501
+01:14:04,275 --> 01:14:24,615
+bir sıfır değilse, bir t sıfır noktasında, biri sıfır olur, biri sıfırdan farklı olur. İkisi de aynı anda sıfır olursa o zaman eğri düzgün olmaz. Aynı anda sıfır değillerse, o zaman şu denklemlerde tanımlanan, yani c parametrik eğrisine düzgün eğri diyoruz.
+
+502
+01:14:34,515 --> 01:14:37,375
+düzgün eğri veya düzgündür denir.
+
+503
+01:14:53,939 --> 01:15:03,619
+Bu konuların sonrası da eğrinin aslında kendini kesmemesi anlamına geliyor. Düzgün olduğu zaman eğri kendini kesmiyor.
+
+504
+01:15:23,220 --> 01:15:29,659
+Bir de, parametrik eğrilerde türevi nasıl hesaplayacağız ona bakalım.
+
+505
+01:15:33,460 --> 01:15:46,760
+Düzgün eğri olması, dedik ki, parametrik eğrinin t'ye göre türevleri sürekli ve de aynı anda sıfır değilse eğri düzgündür diyoruz.
+
+506
+01:15:46,760 --> 01:15:57,260
+Şimdi şu yine c eğrisini göz önüne alalım. Parametrik denklemlerle verilmiş, şöyle yazalım, c eğrisi. Şu parametrik denklemlerle verilmiş eğri.
+
+507
+01:15:57,260 --> 01:16:04,300
+Burada nedir? F ve g, t'nin türevlenebilir fonksiyonları olsun.
+
+508
+01:16:24,372 --> 01:16:31,472
+Çünkü türevlenebilir eğri olarak göz önüne alacağız. Bu türevler arasındaki ilişkiyi size vermek istiyorum.
+
+509
+01:16:32,771 --> 01:16:51,912
+Bu parametrik eğri üzerindeki bir noktada dx bölü dt, dy bölü dt ve dy bölü dx türevleri arasındaki ilişkiyi yazmak istiyoruz.
+
+510
+01:17:00,148 --> 01:17:19,948
+Ama doğrusu şu, eğer x ve y t'nin türevlenebilir fonksiyonları ise, biz bu eğriler arasında biliyoruz ki bazen her zaman olmayabilir ama t'yi yok ederek eğriyi y eşit u x fonksiyonu şeklinde de ifade edebiliyoruz değil mi?
+
+511
+01:17:19,948 --> 01:17:36,648
+Dolayısıyla f ve g yani x ve y t'nin türevlenebilir fonksiyonları ise, y de x'in türevlenebilir bir fonksiyonu ise, o zaman d y bölü d x türevini
+
+512
+01:17:42,676 --> 01:17:44,256
+Nasıl yazarız?
+
+513
+01:17:49,043 --> 01:17:52,023
+Bunu yazmaya çalışıyorum.
+
+514
+01:17:52,123 --> 01:17:58,163
+Yani şu türevler arasındaki ilişki derken, dy bölü dx türevini o zaman nasıl yazarım?
+
+515
+01:17:59,644 --> 01:18:02,483
+dy bölü dx türevini şu şekilde yazarız.
+
+516
+01:18:03,823 --> 01:18:07,983
+Bunlar, dedik ki, x ve y nedir?
+
+517
+01:18:07,983 --> 01:18:14,503
+t'nin türevlenebilir fonksiyonları, y de x'in türevlenebilir bir fonksiyonu ise.
+
+518
+01:18:14,503 --> 01:18:23,064
+o zaman, dy bölü dt nasıl yazılır?
+
+519
+01:18:23,163 --> 01:18:25,804
+y'nin t'ye göre türevini nasıl yazarım?
+
+520
+01:18:38,228 --> 01:18:54,748
+İçerikli y'ni x'e göre türevini alırım. Çarpı x'i t'ye göre türevi şeklinde zincir kuralı kullanarak dy bölü dt türevini şu şekilde ifade ederiz.
+
+521
+01:18:54,748 --> 01:18:58,368
+Eğer burada
+
+522
+01:18:58,368 --> 01:19:05,627
+dx bölü dt türevi sıfırdan farklı ise
+
+523
+01:19:05,627 --> 01:19:09,967
+o zaman dy bölü dx'i ben buradan çekebilirim.
+
+524
+01:19:11,847 --> 01:19:16,707
+dy bölü dx türevi bu durumda neye eşit olacak?
+
+525
+01:19:17,408 --> 01:19:23,807
+dy bölü dt bölü dx bölü dt türevine eşit olacak.
+
+526
+01:19:29,587 --> 01:19:36,188
+İşte türevler arasındaki ilişkiyi bu şekilde yazıyoruz.
+
+527
+01:19:36,188 --> 01:19:36,947
+Yani
+
+528
+01:19:41,876 --> 01:19:42,956
+Şurayı silelim.
+
+529
+01:19:54,387 --> 01:19:56,287
+Karabatik olarak verilmiş.
+
+530
+01:20:02,100 --> 01:20:07,600
+Parametrik eğride biz y'nin x'e göre türevini bulmak istiyoruz.
+
+531
+01:20:12,627 --> 01:20:18,127
+Burada nasıl yazarız? Bunun x'e göre türevini şurada aldığım gibi yazarım.
+
+532
+01:20:19,007 --> 01:20:31,547
+Öncelikle y'nin t'ye göre türevini alırım. Bunu x'in t'ye göre türevine bölersem y'nin x'e göre türevini bu formülle elde etmiş olur.
+
+533
+01:20:32,287 --> 01:20:39,067
+Aynı şekilde y'nin artık ikinci, üçüncü türevleri de hesaplanabilir.
+
+534
+01:20:39,067 --> 01:20:42,167
+İkinci türevini hesaplayacak olursak
+
+535
+01:20:42,167 --> 01:20:48,768
+D kare y'ye diyelim buna ikinci türevini alacaksam
+
+536
+01:20:56,467 --> 01:20:58,927
+d kareye dx kare türevi nedir?
+
+537
+01:21:00,068 --> 01:21:07,907
+d kareye dx kare d bölü dx çarpı d y bölü dx türevidir.
+
+538
+01:21:08,627 --> 01:21:13,907
+Şunu y üstüyle gösterirseniz, ayrı bir fonksiyon gibi alırsanız,
+
+539
+01:21:13,907 --> 01:21:25,127
+o zaman bu türevi de y üstünün t'ye göre türevi, bölü x'in t'ye göre türevi şeklinde şurada yazdığımız gibi yazabiliriz.
+
+540
+01:21:49,427 --> 01:22:09,787
+dy üstü bölü dx olur. Bu şuna benziyor. dy bölü dx'in türevini nasıl aldım? y'nin t'ye göre türevi bölü, x'in t'ye göre türevi olarak aldım. dy üstü bölü dx olursa ne yapacağım? y üstünün t'ye göre türevini alacağım. Bölü x'in t'ye göre türevi.
+
+541
+01:22:09,787 --> 01:22:31,667
+aynı tarzda aldık. Bu da ikinci türev oluyor. Bunları niye yazıyoruz? Bunları eğlenin uzunluğunu hesaplarken ya da t'nin eğimini hesaplarken falan kullanıyoruz da o yüzden yazıyoruz.
+
+542
+01:22:31,667 --> 01:22:33,387
+Şimdi örnek yapalım.
+
+543
+01:23:06,387 --> 01:23:12,268
+eksi t kare, 7, t eksi t küt.
+
+544
+01:23:18,068 --> 01:23:20,128
+denklemleriyle verilmiş.
+
+545
+01:23:21,768 --> 01:23:22,188
+Burada
+
+546
+01:23:22,188 --> 01:23:24,967
+d kare y bölü
+
+547
+01:23:24,967 --> 01:23:27,047
+dx kare
+
+548
+01:23:27,047 --> 01:23:28,448
+türevini soruyor.
+
+549
+01:23:29,228 --> 01:23:30,688
+Bu türevi hesaplayalım.
+
+550
+01:23:31,547 --> 01:23:32,387
+Öncelikle
+
+551
+01:23:32,387 --> 01:23:34,387
+birinci türevini bulalım.
+
+552
+01:23:35,047 --> 01:23:36,967
+dy bölü dx
+
+553
+01:23:36,967 --> 01:23:38,148
+d eşitti.
+
+554
+01:23:39,288 --> 01:23:40,648
+dy bölü dt
+
+555
+01:23:40,648 --> 01:23:44,208
+dx bölü dt'ye eşitti.
+
+556
+01:23:44,208 --> 01:23:48,208
+y'nin t'ye göre türevi nedir?
+
+557
+01:23:48,908 --> 01:23:50,427
+1-3
+
+558
+01:23:50,427 --> 01:23:51,648
+t karedir.
+
+559
+01:23:52,248 --> 01:23:54,268
+x'in t'ye göre türevi nedir?
+
+560
+01:23:54,708 --> 01:23:56,427
+1-2
+
+561
+01:23:56,427 --> 01:23:58,047
+t'dir. İşte
+
+562
+01:23:58,047 --> 01:23:59,528
+dy bölü
+
+563
+01:23:59,528 --> 01:24:02,007
+dx türevini bulduk.
+
+564
+01:24:02,007 --> 01:24:03,007
+Bu nedir?
+
+565
+01:24:04,068 --> 01:24:05,668
+y üstü fonksiyonudur.
+
+566
+01:24:06,088 --> 01:24:07,868
+Şimdi ikinci türevi alalım.
+
+567
+01:24:08,228 --> 01:24:09,028
+d kare y
+
+568
+01:24:09,028 --> 01:24:10,728
+dx kare
+
+569
+01:24:10,728 --> 01:24:14,068
+dy üstü
+
+570
+01:24:14,068 --> 01:24:15,188
+bölü dt
+
+571
+01:24:15,188 --> 01:24:18,108
+dx bölü dt'dir.
+
+572
+01:24:20,047 --> 01:24:21,188
+dy üstü
+
+573
+01:24:21,188 --> 01:24:23,368
+y üstü bu.
+
+574
+01:24:23,467 --> 01:24:23,868
+Bunun
+
+575
+01:24:23,868 --> 01:24:26,588
+t'ye göre türevini alacağım.
+
+576
+01:24:26,688 --> 01:24:28,588
+Bunun t'ye göre türevini alırken
+
+577
+01:24:28,588 --> 01:24:29,868
+ne almak zorundayım?
+
+578
+01:24:30,307 --> 01:24:32,608
+Bölüm türevi almak zorundayım.
+
+579
+01:24:34,148 --> 01:24:36,188
+Yani bu şu demektir.
+
+580
+01:24:37,188 --> 01:24:38,268
+d bölü dt
+
+581
+01:24:38,268 --> 01:24:41,847
+1-3 t kare
+
+582
+01:24:41,847 --> 01:24:43,768
+2-2 t
+
+583
+01:24:43,768 --> 01:24:46,507
+bunun t'ye göre türevini alacağım.
+
+584
+01:24:46,887 --> 01:24:47,868
+dx bölü dt
+
+585
+01:24:47,868 --> 01:24:49,427
+1-2 t
+
+586
+01:24:49,427 --> 01:24:50,228
+Bunu yazdım.
+
+587
+01:24:50,648 --> 01:24:51,628
+Şimdi türevini alalım.
+
+588
+01:24:51,728 --> 01:24:52,868
+Bölüm türevi alırsam
+
+589
+01:24:52,868 --> 01:24:55,307
+payın türevinden ne gelecek?
+
+590
+01:24:55,307 --> 01:24:58,788
+eksi 6 t gelecek.
+
+591
+01:24:58,988 --> 01:24:59,948
+Çarpı payda.
+
+592
+01:24:59,948 --> 01:25:01,068
+türevini alalım.
+
+593
+01:25:01,068 --> 01:25:03,108
+d
+
+594
+01:25:04,212 --> 01:25:12,552
+Eksi, paydanın türevi, eksi 2 geldi, şunu artı yapalım. 2 çarpı pay.
+
+595
+01:25:15,956 --> 01:25:17,536
+Bölü paydanın kalesi.
+
+596
+01:25:21,811 --> 01:25:24,572
+Burası da 1-2t.
+
+597
+01:25:26,992 --> 01:25:28,952
+Düzenleyelim şimdi bunu.
+
+598
+01:25:31,091 --> 01:25:38,791
+Eksi 12t artı 12t kare.
+
+599
+01:25:39,832 --> 01:25:43,231
+Artı 2-6t kare.
+
+600
+01:25:57,524 --> 01:26:02,104
+12 t kare, 6 t kare kaldı burada.
+
+601
+01:26:07,988 --> 01:26:09,228
+eksi olikide
+
+602
+01:26:13,171 --> 01:26:13,731
+Parti 2
+
+603
+01:26:25,300 --> 01:26:38,800
+Parantezini alırsak, 2'nin karesi, çarpı 1-t'nin karesi, çarpı 1-2t olacak. Bu daha da basit hale geliyor mu?
+
+604
+01:26:38,800 --> 01:26:44,360
+Hocam, burada 2-2t yazmışsınız ya, o 1-2t olmayacak mı?
+
+605
+01:26:44,360 --> 01:26:51,020
+1-2t, bunun parantez karesi, ben niye onu 2 gördüm? 1-2t'nin karesi.
+
+606
+01:26:56,115 --> 01:27:02,636
+1 eksi 2 t'nin karesi olunca, burası 1 eksi 2 t'nin küpü olacak o zaman.
+
+607
+01:27:13,268 --> 01:27:16,627
+Daha da basit hale gelmiyor. Bunu böyle bırakıyoruz.
+
+608
+01:27:38,003 --> 01:27:38,844
+İçimine de bakalım.
+
+609
+01:27:44,180 --> 01:27:47,039
+Sonra da eğrilerin uzunluğu var.
+
+610
+01:27:47,960 --> 01:27:49,500
+Ama çok konu varmış burada da.
+
+611
+01:27:53,652 --> 01:27:56,532
+Burada türev aldık. Herhalde bir sorun yoktu.
+
+612
+01:28:09,908 --> 01:28:32,328
+Şimdi bunları böyle veriyorum size ama hani sanki böyle havada kalmış gibi oluyor da, ileride bunları çok kullanacağız. Nerede? Vektör fonksiyonlarına geçtiğimiz zaman, o vektör fonksiyonları çoğu zaman parametrik denklemlerle yazılıyor. Oralarda bunları çokça kullanacağız.
+
+613
+01:28:32,328 --> 01:28:51,748
+Şimdilik böyle nasıl deyip temel şeylerini veriyoruz. Temel tanımları. Bir parametrik eğrinin eğimi de şu şekilde oluyor. Bu var mıydı konular içerisinde? Özür dilerim ben bir bakayım şuna. Sanki bir ara yoktu.
+
+614
+01:28:56,115 --> 01:29:11,115
+4. haftadayız. Parametrik olarak eğri ile hesaplama var. Parametrik denklemler, parametrik eğriler ile hesaplama türev, parametrik olarak tanımlı eğrinin uzunluğu.
+
+615
+01:29:29,619 --> 01:29:36,619
+Yarar veremedim. Eğirinin, eğimi var mı yok mu ama verelim. Çok uzun bir şey değil. Bilmenizde de yarar var.
+
+616
+01:29:40,212 --> 01:29:43,452
+Eğrini, eğimi.
+
+617
+01:29:53,555 --> 01:29:57,055
+Size yüklediğim bu notlarda olması lazım.
+
+618
+01:29:57,695 --> 01:30:00,555
+Parametrik eğlenin uzunluğu.
+
+619
+01:30:01,915 --> 01:30:02,515
+Şuydu.
+
+620
+01:30:02,835 --> 01:30:03,975
+Parametrizasyon.
+
+621
+01:30:04,695 --> 01:30:05,955
+Ben bir daha bakayım buna.
+
+622
+01:30:17,939 --> 01:30:20,199
+Biri, biri, biri, aa şey yok.
+
+623
+01:30:22,779 --> 01:30:23,500
+Yok.
+
+624
+01:30:28,595 --> 01:30:31,475
+Direkt eğlenin uzunluğunu vermişiz. Tamam.
+
+625
+01:30:34,875 --> 01:30:41,095
+Parametrik eğlenin eğimi dahil değilmiş size. Uzunluğunu vereceğim.
+
+626
+01:30:58,644 --> 01:31:02,344
+Eğlinin uzunluğunu da şu şekilde veriyoruz.
+
+627
+01:31:04,083 --> 01:31:10,284
+Düzgün bir C eğrisini şöyle parametrize edelim.
+
+628
+01:31:24,275 --> 01:31:37,336
+Kutifik denklemleri, y eşit, f t, x eşit f t, y eşit g t şeklinde alalım.
+
+629
+01:31:44,851 --> 01:31:49,271
+t de kapalı bir ab aralığında tanımlanmış olsun.
+
+630
+01:31:51,032 --> 01:31:57,652
+Düzgün bir c eğrisinin parametrik denklemleri şeklinde olsun diyelim, verilsin.
+
+631
+01:32:04,787 --> 01:32:14,427
+Bu C eğrisinin A'dan B'ye olan parçasının uzunluğunu şu şekilde hesaplıyoruz.
+
+632
+01:32:14,427 --> 01:32:25,667
+Burada düzgün bir C eğrisi dedik. Sadece mesela her noktadan bir kere geçiyor gibi düşüneceğiz bunu.
+
+633
+01:32:26,547 --> 01:32:28,907
+Ne dedik? Verilmiş olsun.
+
+634
+01:32:28,907 --> 01:32:40,767
+A ve B arasında kalan eğrinin A ve B arasında kalan yayının uzunluğu ya da parçasının uzunluğunu şu şekilde hesaplıyoruz.
+
+635
+01:32:40,767 --> 01:32:50,527
+A'dan B'ye belirli integral, kök içerisinde X'in T'ye göre türevinin karesi,
+
+636
+01:32:54,228 --> 01:32:58,448
+Artı, yeğenin t'ye göre türevinin karesi.
+
+637
+01:33:03,507 --> 01:33:17,707
+çarpı dt şeklinde bir integralle hesaplıyoruz. Bunun eğri yayının, yani parametrik olarak verilmiş bir eğri yayının uzunluğunu şu integralle hesaplıyoruz.
+
+638
+01:33:23,667 --> 01:33:28,007
+Vaktimiz var mı? Vaktimiz var. Hemen örnek yapalım buna.
+
+639
+01:33:44,692 --> 01:34:11,412
+Ezber kalıyor sanki. Bana çok havada kalıyor gibi geliyor her şey. Çünkü parametrik eğilide bu yay uzunluğunu nasıl elde ettiğimizi falan size hiç göstermeden doğrudan formülü yazıp geçiyoruz. Siz de o formülü bilerek öyle hesaplayacaksınız. Biraz ezber oluyor ama böyle anlatmamız isteniyor. Yapacak bir şey yok.
+
+640
+01:34:11,412 --> 01:34:13,412
+Örnek diyeyim.
+
+641
+01:34:20,724 --> 01:34:26,224
+x eşit kosinüz küpte, y eşit sinüz küpte.
+
+642
+01:34:30,931 --> 01:34:33,211
+Kilametre aralığımızda 0,2 pi.
+
+643
+01:34:40,020 --> 01:34:42,180
+İstisinin uzunluğunu bulalım.
+
+644
+01:34:44,760 --> 01:34:46,080
+Astroidmiş bu.
+
+645
+01:34:57,876 --> 01:35:01,976
+Bunun şeklini doğrudan çizeceğim. Kitapta çünkü şekli verilmiş.
+
+646
+01:35:11,475 --> 01:35:15,135
+İşte biraz astroide benzediği için herhalde bu ismi vermişler.
+
+647
+01:35:15,255 --> 01:35:17,475
+Eksi 1, 1, 1, eksi 1.
+
+648
+01:35:19,275 --> 01:35:21,135
+Sıfır, eksi, y.
+
+649
+01:35:25,844 --> 01:35:27,524
+L uzunluğu ne olacak?
+
+650
+01:35:27,524 --> 01:35:35,884
+Şimdi burada, tabii ki 1, 2, 3, 4 parçanın uzunluğunu hesaplayıp toplamak lazım.
+
+651
+01:35:36,083 --> 01:35:51,524
+Ancak bu asteroiddeki her bir bölgedeki şu eğriler simetrik olduğu için, bunun bir parçasının uzunluğunu hesaplayıp 4 ile çarpabiliriz.
+
+652
+01:35:51,524 --> 01:36:01,404
+Yani şuranın uzunluğunu hesaplayıp, bunu 4 ile çarptığımızda, bunun tüm yay uzunluğunu bulmuş oluyoruz.
+
+653
+01:36:07,988 --> 01:36:27,648
+L bölü 4 alalım. 4'te 1'ini hesaplayalım. Ne olacak? Bir ucu 0'da, 0'da nedir burası? P bölü 2 aralığıdır değil mi? 0'dan P bölü 2 aralığına kadar alırım. Formülüm zaten belliydi.
+
+654
+01:36:27,648 --> 01:36:42,588
+dx bölü dt'nin karesi, dy bölü dt'nin karesi. Şu dx ve dy türevlerini burada hesaplayıp en son getirip orada yerine yazalım.
+
+655
+01:36:43,307 --> 01:36:50,307
+dx bölü dt neye eşit? Kosinüsün türevi eksi geleceği için eksiyi yazdım şimdiden.
+
+656
+01:36:50,307 --> 01:37:03,887
+3 çarpı 3 çarpı 3 çarpı 3 çarpı 3 çarpı kosinüs kare t olacak çarpı kosinüsün türevi de neydi? Sinüs, eksi sinüs t. Eksisini yazdım, sinüsü de buraya yazdım.
+
+657
+01:37:07,488 --> 01:37:09,967
+dy bölü dt türevi
+
+658
+01:37:09,967 --> 01:37:32,728
+dy bölü
+
+659
+01:37:18,644 --> 01:37:24,284
+Sinüs kareti, çarpı, sinüsün türevi ne olacak? Kosinüstü.
+
+660
+01:37:24,284 --> 01:37:29,003
+Karelerini alıp toplarsak,
+
+661
+01:37:41,011 --> 01:37:48,891
+Neye eşit olacak? 9, kosinüs 4t, sinüs kare t'ye eşit olur.
+
+662
+01:37:49,612 --> 01:38:02,091
+Buradan da dy bölü dt'nin kalesi, 9, sinüs 4, kosinüs kaleti.
+
+663
+01:38:03,311 --> 01:38:09,731
+Şu ikisini de toplarsak, ne olacak?
+
+664
+01:38:11,011 --> 01:38:14,391
+Bunun karesi artı bunun karesi.
+
+665
+01:38:22,771 --> 01:38:24,711
+Sinüs kare sinüs kare ortak.
+
+666
+01:38:25,332 --> 01:38:26,851
+9'lar da ortak.
+
+667
+01:38:27,372 --> 01:38:32,032
+9 sinüs kare t kosünüs kare t.
+
+668
+01:38:32,391 --> 01:38:35,051
+Parantez içinde burada kosünüs kare kalır.
+
+669
+01:38:36,992 --> 01:38:41,631
+Burada da sinüs kare kalır ki bunların toplamı da nedir?
+
+670
+01:38:42,711 --> 01:38:43,292
+1'dir.
+
+671
+01:38:43,431 --> 01:38:44,771
+Şurası 1 olacağı için.
+
+672
+01:38:45,211 --> 01:38:46,391
+Bu neye eşitmiş?
+
+673
+01:38:46,391 --> 01:38:51,671
+9 sinüs kare t'ye çarpı kosünüs kare t'ye eşitmiş.
+
+674
+01:38:51,671 --> 01:38:56,192
+O halde şurada yerine yazarsak l bölü 4 neye eşit olacak?
+
+675
+01:38:56,412 --> 01:39:11,492
+Sıfırdan pi bölü 2'ye 9 sinüs kare t kosünüs kare t çarpı d t'ye eşit olur.
+
+676
+01:39:12,412 --> 01:39:15,652
+Şimdi şurayı silmek zorundayım işlemleri yapmak için.
+
+677
+01:39:17,652 --> 01:39:20,192
+Hocam 9 kosünüs kare değil mi?
+
+678
+01:39:21,671 --> 01:39:26,292
+Alttaki 9 kosünüs kare sinüs kare.
+
+679
+01:39:27,192 --> 01:39:28,551
+Şunların toplamı 1 oldu.
+
+680
+01:39:28,551 --> 01:39:29,551
+1.
+
+681
+01:39:29,551 --> 01:39:30,171
+2.
+
+682
+01:39:30,171 --> 01:39:30,551
+3.
+
+683
+01:39:30,551 --> 01:39:31,171
+4.
+
+684
+01:39:31,171 --> 01:39:31,231
+5.
+
+685
+01:39:36,724 --> 01:39:38,663
+Yanlış mı yazdım? Doğru yazdım.
+
+686
+01:39:40,543 --> 01:39:46,663
+9 sin kare t çarpı kosin kare t topladık.
+
+687
+01:39:47,264 --> 01:39:51,024
+Bir de parantez içinde kosin kare t artı sin kare t geliyor.
+
+688
+01:39:51,484 --> 01:39:56,163
+O toplamda 1'e eşit olduğu için 1 ile çarpımı yine aynı şeyi verecek bana.
+
+689
+01:39:59,184 --> 01:40:01,123
+Köt dışına bu da nasıl çıkacak?
+
+690
+01:40:01,123 --> 01:40:09,764
+3 sin t kosin t olarak çıkar.
+
+691
+01:40:15,315 --> 01:40:17,036
+Ecos t neye eşitti?
+
+692
+01:40:17,996 --> 01:40:19,715
+Sinüs 2 t'ye eşitti.
+
+693
+01:40:20,876 --> 01:40:21,935
+Şurayı da sileyim.
+
+694
+01:40:25,076 --> 01:40:25,956
+Dolayısıyla
+
+695
+01:40:32,180 --> 01:40:39,460
+Sinüs t çarpı kosinüs t'li eşit olacak. 1 bölü 2, sinüs 2 t'li eşit olacak değil mi?
+
+696
+01:40:40,240 --> 01:40:44,380
+Bunu yerine yazarsak, şurada da 3 var, 3 bölü 2 sabit gelecek.
+
+697
+01:40:45,300 --> 01:40:47,340
+Bunu integralin dışına taşıyalım.
+
+698
+01:40:48,100 --> 01:40:53,600
+Sıfırdan pi bölü 2'ye, sinüs 2 t dt olur.
+
+699
+01:40:53,600 --> 01:40:55,960
+Bunun da integral neye eşit olacak?
+
+700
+01:40:55,960 --> 01:41:08,100
+Sinüs 2 t'nin integrali, eksi, kosinüs 2 t bölü 2'ye eşit olacak değil mi?
+
+701
+01:41:08,600 --> 01:41:12,760
+Türevini alırsak, 2'ler gidecek.
+
+702
+01:41:13,220 --> 01:41:14,880
+Evet, sinüs 2 t olacak.
+
+703
+01:41:15,820 --> 01:41:49,619
+Sınırlarımız da sıfırdan pi bölü 2'ye kadar.
+
+704
+01:41:56,340 --> 01:41:57,220
+eksi 1'dir.
+
+705
+01:41:58,739 --> 01:42:01,720
+Eksi de burada olduğu için artı 1 olacak.
+
+706
+01:42:02,000 --> 01:42:04,340
+Artı 1 bölü 2.
+
+707
+01:42:04,520 --> 01:42:06,340
+Burası 1 olur.
+
+708
+01:42:11,475 --> 01:42:30,295
+Bu halde L bölü 4, L'ye eşitmiş, 3 bölü 2'ye eşitmişse, L neye eşit olacak? 6 birim olacak. L de 6'ya eşit olacak.
+
+709
+01:42:41,043 --> 01:42:41,743
+Ne var mı sorunuz?
+
+710
+01:43:41,427 --> 01:43:46,467
+5 dakikamız var. 5 dakikada şu örneği yapabilir miyim? Yaparım.
+
+711
+01:44:11,475 --> 01:44:19,036
+Ya da ben bunların fotoğrafını şimdi çekip hemen size yükleyeyim. Alın bu örnekleri. Siz inceleyin.
+
+712
+01:44:22,676 --> 01:44:46,016
+Önümüzdeki ders birlikte de bakarız. Ben önce bunları yazarım size. Burada bazılarında mesela şey var, teğet olan doğru denklemi falan diyor ama onları yapmanız da zor değil. Onların hepsine bir bakın. Ben hızlıca bunu size yükleyeyim. Siz gitmeden hepsini alın.
+
+713
+01:46:32,243 --> 01:46:35,403
+Varmış zaten, ben bunu zaten yüklemişim ki size.
+
+714
+01:46:36,923 --> 01:46:38,683
+ABC örnekler.
+
+715
+01:46:40,043 --> 01:46:40,283
+Tamam.
+
+716
+01:46:41,043 --> 01:46:43,583
+1, 2, 3 sayfa.
+
+717
+01:46:44,043 --> 01:46:47,243
+Tamam, yüklemişim arkadaşlar. Varmış, boşuna uğraşmışım.
+
+718
+01:46:49,603 --> 01:46:56,384
+Bu sayfanın devamında varmış. Ben ayrıca yazmışım da, size yüklememişim zannettim ama.
+
+719
+01:46:57,243 --> 01:46:59,863
+Elinizde zaten varmış. Boşuna beklettim sizi.
+
+720
+01:47:04,724 --> 01:47:18,444
+Sorunuz var mı? Bitirelim dersi. Önümüzdeki hafta belki yine bir iki örnek yapar, öyle yeni konuya geçeriz ya da anlamadığınız yerler olursa siz bana sorarsınız.
+
+721
+01:47:20,963 --> 01:47:29,764
+Bu son üç sayfadaki örneklere bakarsanız çok iyi olur. Çünkü parametrik eğrilerde mutlaka sınavda soruluyor.
+
+722
+01:47:29,764 --> 01:47:33,864
+Bir ya da iki soru karşınıza gelecektir.
+
+723
+01:47:38,163 --> 01:47:43,663
+Var mı sorunuz? Sorusu olan varsa kalsın, sorunuz yoksa çıkabilirsiniz.
+
+724
+01:47:45,623 --> 01:47:47,923
+Yemek zamanınızı da aldım galiba.
+
+725
+01:47:51,636 --> 01:47:54,676
+Hepinize iyi günler diliyorum. Haftaya görüşürüz.
+
+726
+01:48:11,380 --> 01:48:13,060
+İyi günler tekrar hepinizi.

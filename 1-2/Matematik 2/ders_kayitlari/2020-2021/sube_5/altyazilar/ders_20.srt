@@ -1,0 +1,2947 @@
+1
+00:00:07,988 --> 00:00:09,227
+Günaydın arkadaşlar.
+
+2
+00:00:14,451 --> 00:00:18,012
+Arkadaşlarınız bağlanıncaya kadar ben de tahtayı falan sileyim.
+
+3
+00:01:42,516 --> 00:02:00,916
+Sırağınız iyi geçmiştir. Dün soruları bizimle de paylaştılar. Gördüm soruları. Gayet güzel sorular sorulmuş. Aslında ben çok beğendim. Ancak dört gruba ayrılarak sorulmuş. Umarım sizler de beğenmişsinizdir soruları.
+
+4
+00:02:16,563 --> 00:02:18,943
+Tekrar ben sizinle dosya paylaşayım.
+
+5
+00:02:20,584 --> 00:02:21,644
+Neydi bugün?
+
+6
+00:02:27,027 --> 00:02:28,907
+Düzlem normal doğrular.
+
+7
+00:02:36,659 --> 00:02:41,780
+Bir de bir de bir de dinerleştirme vardı ama.
+
+8
+00:03:01,812 --> 00:03:04,552
+Sonuçlar 1-2 gün içinde açıklanır sanırım.
+
+9
+00:03:12,211 --> 00:03:19,371
+Daha grupları falan ayırıp o şekilde bize sonuçları gönderecekler. Çok süreceğini sanmıyorum.
+
+10
+00:03:36,243 --> 00:03:39,584
+İler yaklaşımları bulmaya çalışıyorum ama bulamıyorum.
+
+11
+00:03:40,883 --> 00:03:43,403
+Acaba başka bir dosyayı mı kaydettim ben ona?
+
+12
+00:04:21,235 --> 00:04:26,815
+Yaklaşımlar ve differensiyeller değil. Girmişim konuya ama bulamıyorum.
+
+13
+00:04:59,411 --> 00:05:11,551
+Bugün size t-düzlem ve normal doğrularla ilgili önce sorular çözeceğim. Arkasından da lineer yaklaşımlara geçeceğim. Derse başlamadan önce sormak istediğiniz bir şey var mı bana?
+
+14
+00:05:20,660 --> 00:05:32,960
+Yok sanırım. Şu dün çok kötü anlattığımı düşünüyorum bu teğet düzlemleri. Bugün bir özetini yapayım. Ondan sonra soru çözelim.
+
+15
+00:06:10,579 --> 00:06:11,680
+Evet, düzlemler.
+
+16
+00:06:18,387 --> 00:06:31,108
+Evet, düzleme şöyle bir fx, yz, eşit, c. Buna seviye yüzeyi diyoruz. C'ye sabite eşitledik. Seviye yüzeyi üzerinde
+
+17
+00:06:35,156 --> 00:06:37,336
+Şöyle yapmıştık.
+
+18
+00:06:38,896 --> 00:06:41,735
+Şu bir seviye yüzeyi olsun.
+
+19
+00:06:42,036 --> 00:06:45,716
+Fx, y, z, eşit c demiştik ya.
+
+20
+00:06:45,776 --> 00:06:46,915
+Böyle bir yüzey olsun.
+
+21
+00:06:47,415 --> 00:06:53,196
+Bu yüzey üzerinde bir tane nasıl bir eğri almıştık?
+
+22
+00:06:53,276 --> 00:06:58,656
+R ile göstereceğimiz, yani vektör fonksiyonu olarak ifade edeceğim bir eğri almıştım.
+
+23
+00:06:58,776 --> 00:07:00,615
+Rt eğrisi almıştım.
+
+24
+00:07:00,615 --> 00:07:16,156
+Bu Rt eğrisi, fx, y, z yüzey üzerinde olduğu için bunun koordinatları yüzeyinde denklemini sağlar demiştik değil mi?
+
+25
+00:07:16,156 --> 00:07:22,276
+R'yi şu şekilde ifade etmiştik.
+
+26
+00:07:23,975 --> 00:07:30,276
+Parametrik bir denklemle G, H ve K kullanmıştık.
+
+27
+00:07:30,615 --> 00:07:34,276
+Böyle bir denklemle G, H ve K kullanmıştık.
+
+28
+00:07:34,276 --> 00:07:41,436
+Dolayısıyla bu eğri yüzey üzerinde olduğu için yüzeyin denklemini sağlar demiştik.
+
+29
+00:07:49,459 --> 00:07:56,459
+Her iki tarafın t'ye göre türevini alırsak,
+
+30
+00:08:03,091 --> 00:08:14,572
+T'ye göre türevini alırsak şunu görmüştük. Ben şimdi tekrar uzun uzun yazmayayım. Şu çıkıyordu. F'in X'e göre türevi.
+
+31
+00:08:20,660 --> 00:08:47,519
+Çarpı, x'in t'ye göre türevi olacak. Burada x dediğim bileşen, birinci bileşen olduğu için gt ile, yani fx'e bağlı, xy, z'ye bağlı, xg'ye bağlı, yh'e bağlı, yani bunlar da t'ye bağlı aslında.
+
+32
+00:08:47,519 --> 00:08:55,560
+z'de, şu şekilde olduğu için, x'in t'ye göre türevini nasıl yazıyoruz?
+
+33
+00:08:55,779 --> 00:09:01,480
+dg bölü, dt, df bölü dy,
+
+34
+00:09:11,764 --> 00:09:22,063
+Bu çarpımın, şu şekildeki iki vektörün, skaler çarpımına eşit olduğunu buradan gözlemliyorduk.
+
+35
+00:09:32,916 --> 00:09:33,736
+sektörle
+
+36
+00:09:58,548 --> 00:10:10,868
+vektörün, skaler çarpımına eşit olduğunu gözlemlemiştik. Bu vektörümüz, biliyoruz ki, fx, yz yüzeyinin nesidir? Gradiyan vektörüdür.
+
+37
+00:10:12,548 --> 00:10:28,128
+Şu da, r'nin t'ye göre türevine eşittir. Yani, hız vektörüdür. Konumun, t'ye göre türevi,
+
+38
+00:10:28,548 --> 00:10:33,668
+hız vektörü oluyordu. Ben, kırmızı kalem arıyorum ama, kedi onları yine,
+
+39
+00:10:34,707 --> 00:10:35,827
+harbetmiş galiba.
+
+40
+00:10:40,692 --> 00:10:43,052
+Şunu yazdıktan sonra,
+
+41
+00:10:44,932 --> 00:10:46,072
+neyi görüyorduk?
+
+42
+00:10:47,211 --> 00:10:48,692
+Seviye yüzeyi üzerinde,
+
+43
+00:10:50,772 --> 00:10:56,091
+aldığımız şu hız vektörlerinin,
+
+44
+00:10:56,091 --> 00:10:57,912
+her noktada ama,
+
+45
+00:10:58,552 --> 00:11:00,991
+herhangi bir kısıtlama yapmadık burada,
+
+46
+00:11:01,611 --> 00:11:04,392
+bu yüzey üzerinde aldığımız hız vektörlerin,
+
+47
+00:11:04,792 --> 00:11:08,591
+yüzeyin normaline dik olduğunu görmüştük.
+
+48
+00:11:08,591 --> 00:11:12,731
+Buradan çıkardığımız sonuç buydu.
+
+49
+00:11:13,091 --> 00:11:14,792
+Yüzeyin normali,
+
+50
+00:11:19,827 --> 00:11:21,207
+Buna dikti.
+
+51
+00:11:23,187 --> 00:11:25,447
+Peki bunu niye yaptık?
+
+52
+00:11:26,727 --> 00:11:28,067
+Çünkü biz T düzlemin
+
+53
+00:11:28,067 --> 00:11:29,768
+denklemini bulmak istiyoruz.
+
+54
+00:11:30,447 --> 00:11:31,347
+Dolayısıyla
+
+55
+00:11:31,347 --> 00:11:33,648
+şu yüzey üzerindeki
+
+56
+00:11:33,648 --> 00:11:35,327
+her nokta için geçerli.
+
+57
+00:11:35,447 --> 00:11:36,127
+Tabi ki
+
+58
+00:11:36,127 --> 00:11:39,367
+hem R hem yüzey üzerinde olacak.
+
+59
+00:11:40,427 --> 00:11:41,207
+Dolayısıyla
+
+60
+00:11:41,207 --> 00:11:43,347
+biz sadece bir nokta
+
+61
+00:11:43,347 --> 00:11:45,127
+alırsak, burada belli bir nokta
+
+62
+00:11:45,127 --> 00:11:47,207
+alırsak, o zaman
+
+63
+00:11:47,207 --> 00:11:48,668
+ne diyebileceğim?
+
+64
+00:11:49,827 --> 00:11:52,207
+Şunu P0 noktası olarak
+
+65
+00:11:52,207 --> 00:11:54,028
+alalım. Bu P0
+
+66
+00:11:54,028 --> 00:11:55,807
+noktasından geçen
+
+67
+00:11:55,807 --> 00:11:58,028
+bütün hız vektörleri, yani
+
+68
+00:11:58,028 --> 00:11:59,707
+bunlar aynı zamanda ne oluyor?
+
+69
+00:12:00,548 --> 00:12:02,507
+Eğlinin T vektörleri
+
+70
+00:12:02,507 --> 00:12:03,227
+oluyor değil mi?
+
+71
+00:12:04,067 --> 00:12:05,987
+Bütün hız vektörleri
+
+72
+00:12:05,987 --> 00:12:07,567
+neye dik olacaktır?
+
+73
+00:12:09,367 --> 00:12:10,148
+Şu noktadan
+
+74
+00:12:10,148 --> 00:12:11,487
+geçen bütün
+
+75
+00:12:11,487 --> 00:12:13,367
+hız vektörleri
+
+76
+00:12:13,367 --> 00:12:16,087
+yine yüzeyin normaline
+
+77
+00:12:16,087 --> 00:12:17,908
+dik olacaktır. Bu hız
+
+78
+00:12:17,908 --> 00:12:20,107
+vektörleri dediğim aynı zamanda
+
+79
+00:12:20,107 --> 00:12:22,187
+bu eğlinin, R ile
+
+80
+00:12:22,187 --> 00:12:24,207
+gösterdiğimiz şu eğlinin nesi?
+
+81
+00:12:24,747 --> 00:12:26,247
+T-et vektörleri oluyor.
+
+82
+00:12:26,327 --> 00:12:27,487
+T-et doğruları oluyor.
+
+83
+00:12:27,567 --> 00:12:28,187
+Özür dilerim.
+
+84
+00:12:28,908 --> 00:12:29,927
+O halde burada şunu
+
+85
+00:12:29,927 --> 00:12:30,288
+söyleyebiliriz.
+
+86
+00:12:32,028 --> 00:12:33,647
+T-et doğrularının
+
+87
+00:12:33,647 --> 00:12:36,288
+üzerinde bulunduğu
+
+88
+00:12:36,288 --> 00:12:39,947
+düzleme T-et düzlem diyebiliriz.
+
+89
+00:12:41,168 --> 00:12:41,668
+Tamam mı?
+
+90
+00:12:41,668 --> 00:12:43,168
+Şu T-et doğrular
+
+91
+00:12:43,168 --> 00:12:46,028
+hepsi bir düzlem üzerinde
+
+92
+00:12:46,028 --> 00:12:47,367
+bulunuyor o halde
+
+93
+00:12:47,367 --> 00:12:49,627
+ve bu düzlemde ne oluyor?
+
+94
+00:12:50,067 --> 00:12:52,248
+Bu düzlemde yüzeyin
+
+95
+00:12:52,248 --> 00:12:53,867
+normali olan
+
+96
+00:12:53,867 --> 00:12:55,447
+gradiyan F'e
+
+97
+00:12:55,447 --> 00:12:56,487
+dik oluyor.
+
+98
+00:13:00,211 --> 00:13:06,271
+İşte bu ikisini elde ettikten sonra artık t-et düzleminin denklemini yazmamız kolay.
+
+99
+00:13:06,412 --> 00:13:10,052
+Çünkü biz düzlem denklemini yazmayı biliyoruz.
+
+100
+00:13:10,451 --> 00:13:16,711
+Düzlem denklemini yazabilmek için düzlemin geçtiği bir noktayı bilmemiz lazım.
+
+101
+00:13:16,871 --> 00:13:19,052
+Ki bu noktaya P0 noktası diyelim.
+
+102
+00:13:19,152 --> 00:13:20,831
+Şurada P0 olarak aldık.
+
+103
+00:13:21,432 --> 00:13:26,072
+X0, Y0, Z0 ile gösterelim bu noktayı.
+
+104
+00:13:26,072 --> 00:13:28,211
+Geçtiği nokta belli.
+
+105
+00:13:30,211 --> 00:13:36,591
+Bu t-etlerin üzerinde bulunduğu düzleme dik olan doğrultu belli.
+
+106
+00:13:36,812 --> 00:13:38,591
+O da gradyan F doğrultusu.
+
+107
+00:13:38,812 --> 00:13:41,932
+Yani normal doğrultusu neymiş?
+
+108
+00:13:42,032 --> 00:13:44,751
+Gradyan F doğrultusu oluyormuş.
+
+109
+00:13:45,231 --> 00:13:48,391
+Bunun da tabii ki bu X0, Y0'daki değeri.
+
+110
+00:13:49,991 --> 00:13:55,871
+O halde bu ikisini biliyorsak t-et düzleminin denklemini nasıl yazıyorduk?
+
+111
+00:14:03,731 --> 00:14:06,331
+Şunu bari uzun uzun yazayım, şunu sileyim artık.
+
+112
+00:14:12,083 --> 00:14:18,243
+Gradiyan F'i burada şimdi nasıl yazacağım? F'in X'e göre türevi. D, F mi kullanalım?
+
+113
+00:14:23,347 --> 00:14:26,527
+P0 diyeyim buna, uzun uzun x0, y0 yazmayayım.
+
+114
+00:14:27,227 --> 00:14:28,027
+P0
+
+115
+00:14:44,275 --> 00:14:45,475
+Gradyan vektörü bu oldu.
+
+116
+00:14:45,475 --> 00:14:48,355
+Şimdi artık t-et düzlemini yazabiliriz.
+
+117
+00:14:48,515 --> 00:14:49,695
+Düzlem denklemini.
+
+118
+00:14:50,096 --> 00:14:52,655
+Ne oluyordu düzlem denklemi?
+
+119
+00:14:53,035 --> 00:14:57,675
+Yüzeye dik olan doğrultunun bileşenleriyle
+
+120
+00:15:02,067 --> 00:15:20,107
+x eksi x sıfır, bunun çarpımı artı, df bölü dy, y eksi y sıfır, df bölü dz çarpı, z eksi z sıfırın çarpımı.
+
+121
+00:15:20,187 --> 00:15:29,427
+Yani normali bileşenleriyle şu x eksi x sıfır, y eksi y sıfır ve z eksi z sıfırın çarpımları şeklinde yazılıyordu.
+
+122
+00:15:33,076 --> 00:15:39,696
+İsterseniz, hani şu notasyonu değiştirerek şöyle yazalım.
+
+123
+00:16:02,932 --> 00:16:04,772
+Bu şeklinde yazıyoruz.
+
+124
+00:16:05,731 --> 00:16:09,091
+Dedik ki, bu T'ye düzlemini denkleme.
+
+125
+00:16:14,964 --> 00:16:29,344
+Peki, yüzeyin gradyan vektörü, yüzeyin normal vektörü doğrultusunda oluyor. O halde normal vektörünü nasıl yazarız?
+
+126
+00:16:33,364 --> 00:16:43,764
+Eşit yazdım ama deminki şu t-düzlem için yazdım. Normal vektörün denklemini yazmak istersek, normal vektörün denklemini de şu şekilde yazarım.
+
+127
+00:16:44,324 --> 00:16:50,524
+Bu normal ile aynı doğrultuda. Yani normale paralel. Aslında şöyle yazmak daha güzel olur.
+
+128
+00:16:51,224 --> 00:16:56,903
+Normal ile aynı doğrultuda. Normale paralel. Paralel olan bir doğrultuyu biliyorum.
+
+129
+00:16:56,903 --> 00:17:03,283
+Geçtiği bir noktayı biliyorsam normal denklemini nasıl yazıyordum? Ben şurayı sileceğim.
+
+130
+00:17:03,364 --> 00:17:05,364
+Normal doğrultuda. Normal doğrultuda. Normal doğrultuda. Normal doğrultuda.
+
+131
+00:17:05,364 --> 00:17:06,943
+Normal doğrultuda. Normal doğrultuda. Denklemini de buraya yazacağım.
+
+132
+00:17:15,092 --> 00:17:29,252
+Doğrunun standart denklemini kullanırsak bunu nasıl yazıyorduk? x-x0 bölü paralel olan doğrultunun koordinatlarını da şuraya yazıyorduk.
+
+133
+00:17:29,252 --> 00:17:33,532
+Yani buraya ne yazacağım? fxp
+
+134
+00:17:47,923 --> 00:17:54,824
+Burada bizim normal denklemimizin doğrusu oluyor. Normalin denklemi oluyor.
+
+135
+00:18:05,236 --> 00:18:06,796
+Dilerle ilgili örnek yapalım.
+
+136
+00:18:57,523 --> 00:18:59,103
+Peki, kolaydan başlayalım.
+
+137
+00:19:06,740 --> 00:19:08,240
+Sıfır noktası 1, 2, 4.
+
+138
+00:19:09,240 --> 00:19:09,799
+Noktasında
+
+139
+00:19:19,316 --> 00:19:21,355
+f fonksiyonu da şu şekilde verilmiş.
+
+140
+00:19:21,476 --> 00:19:26,536
+x kare, y kare, z eksi 9.
+
+141
+00:19:30,291 --> 00:19:35,091
+Yüzeyinin, teyit düzleminin ve normalinin denklemlerini bulalım.
+
+142
+00:19:37,511 --> 00:19:42,571
+Öncelikle neye ihtiyacım var? Gradyan f'e ihtiyacım var.
+
+143
+00:19:43,091 --> 00:19:47,831
+Gradyan f, f'in kısmi türevleriyle bulunuyordu.
+
+144
+00:19:48,511 --> 00:19:58,411
+x'e göre türevi 2x, y'ye göre türevi 2y ve z'ye göre türevi de nedir? 1.
+
+145
+00:19:58,411 --> 00:20:05,271
+P0'ı da yerine yazarsak burada, x yerine 1 yazdık.
+
+146
+00:20:09,172 --> 00:20:11,172
+Y yerine 2 yazdım.
+
+147
+00:20:15,476 --> 00:20:19,216
+Ve gradyan vektör bu şekilde karşıma çıktı.
+
+148
+00:20:20,296 --> 00:20:26,716
+Gradyanı bulduktan sonra artık t-düzlem ve normalin denklemi daha kolay yazılıyor.
+
+149
+00:20:26,716 --> 00:20:29,256
+t-düzlemliğe eşit
+
+150
+00:20:29,256 --> 00:20:33,616
+2 çarpı
+
+151
+00:20:33,616 --> 00:20:36,976
+x eksi 1
+
+152
+00:20:36,976 --> 00:20:40,336
+4 çarpı y eksi 2
+
+153
+00:20:40,336 --> 00:20:44,296
+1 çarpı z eksi 4
+
+154
+00:20:44,296 --> 00:20:45,556
+eşit sıfırdan
+
+155
+00:20:45,556 --> 00:20:47,256
+2x
+
+156
+00:20:47,256 --> 00:20:48,716
+4y
+
+157
+00:20:48,716 --> 00:20:52,236
+2
+
+158
+00:20:52,236 --> 00:20:53,616
+8
+
+159
+00:20:53,616 --> 00:20:54,236
+10
+
+160
+00:20:54,236 --> 00:20:56,596
+14
+
+161
+00:20:56,596 --> 00:21:00,956
+4
+
+162
+00:21:00,956 --> 00:21:01,016
+5
+
+163
+00:21:01,016 --> 00:21:03,056
+4
+
+164
+00:21:03,056 --> 00:21:05,016
+5
+
+165
+00:21:05,016 --> 00:21:07,016
+4
+
+166
+00:21:07,016 --> 00:21:23,016
+5
+
+167
+00:21:23,016 --> 00:21:26,516
+6
+
+168
+00:21:16,915 --> 00:21:20,556
+Normal doğranın denklemi de bu şekilde olacak.
+
+169
+00:21:26,036 --> 00:21:32,716
+İsterseniz bunun diğer şeklini de yazabilirsiniz.
+
+170
+00:21:33,516 --> 00:21:37,916
+Geçelim diğer örneğe. Bu kolay olan örneğimizde.
+
+171
+00:22:15,380 --> 00:22:16,200
+Bu silindir
+
+172
+00:22:24,211 --> 00:22:24,711
+Bu da
+
+173
+00:22:28,819 --> 00:22:29,500
+Luz da.
+
+174
+00:22:35,220 --> 00:22:38,640
+Yüzeyleri bir e elipsinde kesişiyormuş.
+
+175
+00:22:40,140 --> 00:22:40,779
+P0
+
+176
+00:22:45,299 --> 00:22:46,220
+1, 1, 3.
+
+177
+00:22:49,519 --> 00:22:56,000
+Noktasında, elipsin, t'nin parametrik denklemlerini bulunuz diyor.
+
+178
+00:23:10,451 --> 00:23:23,751
+Bu bizim silindirimiz olsun. Bir de bunu x, aslında bu nedir? x artı z eşit 4 silindiridir değil mi? Şöyle eğimli bir yüzeyle bu kesilecek.
+
+179
+00:23:37,748 --> 00:23:38,928
+Böyle kestik bunu.
+
+180
+00:23:44,307 --> 00:23:50,788
+Tabii bunu böyle kesince, ne olacak? Şurada bir yerde,
+
+181
+00:24:01,268 --> 00:24:03,827
+Şöyle bir elips boyunca kesecek bu.
+
+182
+00:24:26,291 --> 00:24:26,911
+Böyle alalım.
+
+183
+00:24:37,203 --> 00:24:38,624
+Elipsi dediğimiz bu olsun.
+
+184
+00:24:40,803 --> 00:24:43,644
+Burada tabii koordinatları da yerleştirelim.
+
+185
+00:25:16,692 --> 00:25:17,051
+Aklıda.
+
+186
+00:25:31,476 --> 00:25:41,836
+Ne diyor? Bu P noktasında, 1, 1, 3 noktasında, elipsin, t etinin denklemini soruyor. Parametrik denklemlerini soruyor.
+
+187
+00:25:42,916 --> 00:25:55,256
+X, 1, Y, 1, Z, 3, yani şuralarda bir nokta olsun bu 1, 1, 3 noktası da. P, 0 burası olsun. Bu P, 0 noktasındaki t eti soruyor.
+
+188
+00:26:06,963 --> 00:26:08,663
+Bu teğet denklemini bulalım.
+
+189
+00:26:09,663 --> 00:26:11,543
+Şurası P0 noktası olsun.
+
+190
+00:26:18,067 --> 00:26:25,347
+Şu iki yüzeyin arasında ara kesit eğrisi olduğu için ne olacak?
+
+191
+00:26:26,187 --> 00:26:44,167
+Hem şu P0 noktasındaki T doğrusu hem düzlemin normaline dik olacak hem de yüzeyin normaline dik olacak.
+
+192
+00:26:44,167 --> 00:26:59,548
+Daha önce doğru denklemlerini falan yazarken de iki yüzeyin ara kesit doğrusunun doğrultusunun bu iki yüzeyin normallerinin vektörel çarpımı yönünde olduğunu belirtmiştik.
+
+193
+00:26:59,548 --> 00:27:13,647
+Burada da aynı şekilde şu T doğrusu hem düzlemin normaline dik olacak, düzlemin normalini siyahla göstereyim.
+
+194
+00:27:26,451 --> 00:27:27,892
+NG diyelim.
+
+195
+00:27:28,372 --> 00:27:29,491
+G'nin normali.
+
+196
+00:27:31,071 --> 00:27:31,912
+Buna dik olacak.
+
+197
+00:27:32,392 --> 00:27:37,092
+Hem de şu silindir yüzeyinin normali.
+
+198
+00:27:37,372 --> 00:27:41,051
+Bu P0'dan geçen T doğrusuna dik olacak.
+
+199
+00:27:41,211 --> 00:27:42,672
+Yani şu noktada dik olacak.
+
+200
+00:27:43,152 --> 00:27:46,291
+Onu da kırmızıyla şöyle çizeyim.
+
+201
+00:27:48,432 --> 00:27:49,571
+Bu da nedir?
+
+202
+00:27:49,571 --> 00:27:52,271
+Şu mavi doğruyla diktir.
+
+203
+00:27:52,271 --> 00:28:00,951
+Şunu da N1, N2 de diyebilirdik.
+
+204
+00:28:02,251 --> 00:28:03,971
+F yüzeyinin normali.
+
+205
+00:28:04,132 --> 00:28:06,332
+Bu da G yüzeyinin normali.
+
+206
+00:28:06,451 --> 00:28:07,392
+İkisi de nedir?
+
+207
+00:28:07,731 --> 00:28:09,152
+Şu TET diktir.
+
+208
+00:28:09,152 --> 00:28:15,791
+O halde T doğrusu ne olmak zorunda?
+
+209
+00:28:15,791 --> 00:28:23,112
+Bunların, bu iki normalin vektörel çarpımı doğrultusunda olmak zorunda.
+
+210
+00:28:23,751 --> 00:28:26,692
+T doğrultusunu da T ile gösterirsek.
+
+211
+00:28:30,644 --> 00:28:31,463
+T'ye
+
+212
+00:28:39,635 --> 00:28:43,816
+Bu ikisinin vektörel çarpımı olarak yazabiliriz.
+
+213
+00:29:05,044 --> 00:29:06,364
+Bunu da burada belirtelim.
+
+214
+00:29:15,700 --> 00:29:23,380
+Kutudaki vektör neydi? Yüzeyin gradiyen vektörü olduğu için, yani ikisinin gradiyen vektörleri doğrultusunda olacak.
+
+215
+00:29:23,380 --> 00:29:39,380
+Şunu gradiyen fp0 ile yazalım. Bunu da, bunu siyahla yazayım, gradiyen gp0 ile belirtelim.
+
+216
+00:29:54,996 --> 00:30:04,896
+t doğrultusunu böyle yazdım. O halde t doğrultusunu, bunu determinantla hesaplayalım. Şöyle hesaplayabiliriz.
+
+217
+00:30:09,172 --> 00:30:11,451
+Bunları yazmadık ne olduğunu değil mi?
+
+218
+00:30:15,827 --> 00:30:22,788
+Gradiyan vektörü nedir? 2x i'den x yerine de 1 koyduğumda 2i olacak.
+
+219
+00:30:26,548 --> 00:30:33,188
+2yj'den, y yerine yine 1 koyacağım, 2j olacak.
+
+220
+00:30:34,528 --> 00:30:35,728
+Düzleme geçiyorum.
+
+221
+00:30:38,127 --> 00:30:45,127
+x'e göre türevi 1, y'ye göre türevi 0, z'ye göre türevi yine 1.
+
+222
+00:30:48,660 --> 00:30:51,800
+Bu doğruları da yazdık. Şimdi değerlerini yazalım.
+
+223
+00:30:51,940 --> 00:30:53,700
+F'inki 2, 2, 0.
+
+224
+00:30:56,420 --> 00:30:59,040
+G'ninki de 1, 0, 1.
+
+225
+00:31:04,500 --> 00:31:09,619
+Determinant hesaplarsak, şurası sıfır, burası iki iyi oldu.
+
+226
+00:31:10,700 --> 00:31:15,380
+Eksi, iki çarpı bir iki, burası yine sıfır oldu.
+
+227
+00:31:15,380 --> 00:31:20,640
+İki eşiği oldu. Artı, sıfır, eksi iki.
+
+228
+00:31:25,172 --> 00:31:28,451
+eksi 2k vektörü şeklinde çıktı.
+
+229
+00:31:32,980 --> 00:31:41,960
+Dolayısıyla T vektörünü bu şekilde alacağımız gibi bize T vektörünü sormuyordu.
+
+230
+00:31:42,120 --> 00:31:42,360
+Pardon.
+
+231
+00:31:43,039 --> 00:31:46,680
+T doğrusunun standart denklemini soruyordu.
+
+232
+00:31:46,680 --> 00:32:01,900
+O halde T doğrusuna paralel olan doğrultuyu şöyle T vektörü olarak ya da biz bunu galiba V olarak doğrultu vektörü olarak V'yi yazıyorduk.
+
+233
+00:32:01,900 --> 00:32:03,860
+T değil de şuna V diyeyim.
+
+234
+00:32:04,839 --> 00:32:11,500
+V vektörünü bu şekilde alırsak T doğrusunun denklemlerini nasıl yazarız?
+
+235
+00:32:11,500 --> 00:32:17,819
+Standart denklemini sorduğu için neyi soruyordu?
+
+236
+00:32:19,900 --> 00:32:22,259
+Parametrik denklemlerini soruyordu.
+
+237
+00:32:22,620 --> 00:32:26,740
+Parametrik denklemlerini sorduğu için bunu nasıl yazacağım?
+
+238
+00:32:26,740 --> 00:32:32,279
+X eşit X0 artı 2T
+
+239
+00:32:32,279 --> 00:32:40,240
+Y eşit Y0 eksi 2T
+
+240
+00:32:40,240 --> 00:32:42,500
+Ve Z eşit ne oldu?
+
+241
+00:32:43,579 --> 00:32:44,420
+3 pardon.
+
+242
+00:32:52,980 --> 00:33:00,440
+eksi 2t şeklinde parametrik denklemlerini yazmış olduk.
+
+243
+00:33:05,044 --> 00:33:06,244
+Var mı sorunuz?
+
+244
+00:33:16,531 --> 00:33:19,591
+Peki, sorunuz yoksa ben tahtayı siliyorum tekrar.
+
+245
+00:34:04,372 --> 00:34:12,271
+Z denklemi, hani fx, y, z eşit c şeklinde değil de, z eşit fx, y şeklinde verilirse,
+
+246
+00:34:22,356 --> 00:34:25,456
+Yüzeyine, diz düzler.
+
+247
+00:35:10,228 --> 00:35:18,467
+Burada yine çok basit bir gözlem yapacağız ve yüzeyin denklemini yazacağız.
+
+248
+00:35:18,467 --> 00:35:25,528
+Z eşit, fx, y şeklinde yüzeyin denklemi verilirse.
+
+249
+00:35:25,528 --> 00:35:29,927
+Bu yüzey üzerinde
+
+250
+00:35:29,927 --> 00:36:01,648
+Z0
+
+251
+00:35:37,460 --> 00:35:40,980
+fx0, y0 noktasını göz önüne alalım.
+
+252
+00:35:41,260 --> 00:35:41,820
+Tamam mı?
+
+253
+00:35:42,780 --> 00:35:50,059
+z0 böyle yazarsak, z0 noktasını göz önüne alırsak, p0 noktası yine ne olacaktır?
+
+254
+00:35:50,800 --> 00:35:56,619
+p0 noktası, x0, y0, z0 şeklinde olacak.
+
+255
+00:35:56,619 --> 00:36:05,400
+Şu z eşit fx y yüzeyi üzerinde p0 noktasından geçen t düzlemlerin denklemlerini yazmak istiyoruz.
+
+256
+00:36:06,019 --> 00:36:07,159
+Nasıl yazacağız?
+
+257
+00:36:07,460 --> 00:36:13,780
+Şimdi bu yüzeyin açık formudur değil mi?
+
+258
+00:36:13,840 --> 00:36:15,960
+Yüzeyi denkleminin açık formudur.
+
+259
+00:36:16,320 --> 00:36:18,420
+Bunu kapalı hale nasıl getiririm?
+
+260
+00:36:19,119 --> 00:36:25,039
+Ya z'yi bu tarafa atarım, ya f'yi bu tarafa atarak bunu kapalı forma dönüştürürüm.
+
+261
+00:36:25,039 --> 00:36:26,860
+Şöyle yapalım.
+
+262
+00:36:28,679 --> 00:36:34,039
+fx y eksi z eşit 0.
+
+263
+00:36:34,820 --> 00:36:35,119
+Değil mi?
+
+264
+00:36:35,119 --> 00:36:39,440
+artık şu fx y eksi z eşit 0.
+
+265
+00:36:39,440 --> 00:36:43,500
+Artık şu fx y eksi z eşit 0.
+
+266
+00:36:43,500 --> 00:36:44,500
+ne olur?
+
+267
+00:36:44,500 --> 00:36:45,500
+Bu ne olur?
+
+268
+00:36:45,500 --> 00:36:49,320
+Büyük fx y eksi z eşit 0.
+
+269
+00:36:49,320 --> 00:36:52,820
+Dolayısıyla şu ifade fx y eksi z eşit 0.
+
+270
+00:36:52,820 --> 00:36:59,139
+fx y eksi z eşit 0.
+
+271
+00:36:59,139 --> 00:37:03,559
+Bu zaten bizim biraz önce yaptığımız şeydi.
+
+272
+00:37:03,559 --> 00:37:16,139
+biraz önce biraz önce elde ettiğimiz t-et düzlemler bu şekilde kapalı bir formla verilmiş denklemlerin t-et düzlemlerini bulduruyordu bize.
+
+273
+00:37:16,139 --> 00:37:21,139
+dolayısıyla böyle bir t-et düzlemleri nasıl yazacağımızı biliyoruz.
+
+274
+00:37:21,139 --> 00:37:22,139
+gidiyorum.
+
+275
+00:37:22,139 --> 00:37:23,139
+Şimdi
+
+276
+00:37:23,139 --> 00:37:24,139
+gidiyorum.
+
+277
+00:37:28,980 --> 00:37:33,619
+İlk hale çevirdiğim için t düzlemin denklemini orada nasıl yazmıştık?
+
+278
+00:37:33,619 --> 00:37:40,880
+Bunun gradiyen f'i p0 neye eşit oluyordu?
+
+279
+00:37:41,420 --> 00:37:56,179
+fx p0, fy p0, fz p0 şeklinde oluyordu.
+
+280
+00:37:56,179 --> 00:38:02,420
+t düzleminin denklemi de buna göre nasıl yazılacaktı?
+
+281
+00:38:02,420 --> 00:38:06,039
+fx
+
+282
+00:38:06,039 --> 00:38:09,440
+x eksi x0
+
+283
+00:38:25,940 --> 00:38:29,480
+0 şeklinde olacak değil mi? T düzemi bu şekilde olacak.
+
+284
+00:38:30,619 --> 00:38:36,519
+Şimdi, şu fx, fy, fz türevlerini inceleyelim.
+
+285
+00:38:37,000 --> 00:38:39,639
+Büyük f fonksiyonu şuna eşit.
+
+286
+00:38:43,188 --> 00:38:59,968
+X türevi bu durumda neye eşit olacak? Şuraya bakıyorum. F'in X'e göre türevi bu kadar. Şunun P sıfırını da yazalım.
+
+287
+00:39:16,820 --> 00:39:17,800
+sıfırı sonra yazalım.
+
+288
+00:39:18,940 --> 00:39:21,559
+X'e göre türev, yine buna eşit oldu.
+
+289
+00:39:22,140 --> 00:39:23,760
+Y'ye göre türevini alalım.
+
+290
+00:39:27,923 --> 00:39:28,864
+Una eşit.
+
+291
+00:39:40,436 --> 00:39:50,135
+türevi aldığımda, burada z bileşeni olmadığı için bunun türevi sıfır olacak. Sadece bu neye eşit olacak? Eksi biri eşit olacak.
+
+292
+00:39:51,436 --> 00:40:02,876
+Şimdi bakın, şunları getirip bu denklemde yerine yazarsak, t-et denklemi nasıl, t-et düzlem denklemi neye dönüşmüş oluyor? Onu göreceğiz.
+
+293
+00:40:04,476 --> 00:40:10,135
+P0'daki değerlerini yazacağım için, x, y yerine x0, y0 yazacağım.
+
+294
+00:40:10,436 --> 00:40:12,996
+ya da yine p0 yazabiliriz.
+
+295
+00:40:14,796 --> 00:40:16,036
+fx neye eşitti?
+
+296
+00:40:16,496 --> 00:40:17,576
+Küçük fx'i.
+
+297
+00:40:25,396 --> 00:40:29,256
+küçük fx, xy olduğu için buraya p0 yazdım.
+
+298
+00:40:33,811 --> 00:40:36,692
+f y, küçük f y'yi eşit.
+
+299
+00:40:43,956 --> 00:40:47,796
+z'de neye eşit? Eksi 1'e eşit. O zaman şu artıyı sileyim ben.
+
+300
+00:40:50,036 --> 00:40:54,756
+Eksi 1 çarpı z eksi z sıfır eşit sıfır.
+
+301
+00:40:55,396 --> 00:41:00,536
+Buradan z'yi çekerseniz eğer z eşit ne olacak?
+
+302
+00:41:00,956 --> 00:41:05,276
+Eksi z'yi karşı tarafa attım. Artı z oldu. Bunlar kaldı.
+
+303
+00:41:20,884 --> 00:41:38,603
+Burası da ne oldu? Z0 oldu. Genellikle şu Z0'ı buraya öne yazarız. Yani yüzey denklemini Z0 neydi? Şu, Fx0, Y0 olduğu için
+
+304
+00:42:09,523 --> 00:42:10,603
+Buna eşit oluyor.
+
+305
+00:42:31,476 --> 00:42:44,695
+Z eşit fx y şeklinde verildiğinde bu halde getirip, yine şu denklemi kullanabilirsiniz ama, genellikle z eşit fx y şeklinde verilmişse, t et düzlemin denklemi de,
+
+306
+00:42:51,284 --> 00:42:53,804
+Bu şekilde genelde kullanılıyor.
+
+307
+00:42:56,724 --> 00:43:02,023
+Bunu, linear yaklaşımlarda da bunu kullanacağız. Buna dikkat edin.
+
+308
+00:43:07,188 --> 00:43:12,728
+Bununla ilgili örnek yapalım. 5 dakikamız var. Hemen örneğimizi yapalım.
+
+309
+00:43:15,268 --> 00:43:17,248
+Anlaşıldı mı? Tahtayı sileceğim.
+
+310
+00:44:19,059 --> 00:44:24,639
+T-et düzleminin denklemini yazalım. 0, 0, 0'daki T-et düzleminin denklemini yazacağım.
+
+311
+00:44:26,440 --> 00:44:30,639
+Demin yazdık. T-et düzleminin denklemini nasıl yazacağız?
+
+312
+00:44:30,639 --> 00:44:41,420
+Z eşit F, X0, Y0 artı Fx, X0, Y0.
+
+313
+00:44:53,364 --> 00:44:54,744
+Bu şekilde yazacağız.
+
+314
+00:44:56,503 --> 00:45:03,963
+Hesaplamamız gereken x'e göre, y'ye göre kısmi türevlerle f'in nesi?
+
+315
+00:45:05,264 --> 00:45:06,103
+Değeri.
+
+316
+00:45:07,403 --> 00:45:09,324
+fx0, y0 nedir?
+
+317
+00:45:14,931 --> 00:45:18,311
+Z eşit, efixiye şeklinde düşünürseniz,
+
+318
+00:45:29,268 --> 00:45:41,668
+x, 0, y, 0, neye eşit olacak? Z eşiyor. Burada x yerine 0 koyduğunda şu 0, y yerine 0 koyduğunda 0. Dolayısıyla 0'a eşit oluyor.
+
+319
+00:45:45,876 --> 00:45:47,615
+Türevlerini hesaplayalım.
+
+320
+00:45:47,736 --> 00:45:49,476
+FX türevi neye eşit?
+
+321
+00:45:54,452 --> 00:46:02,852
+x'e göre türev aldım, kosinus y, x'e göre türev aldım, y çarpı e üzeri x.
+
+322
+00:46:06,675 --> 00:46:10,895
+P0 değerini, yani 0, 0'ı yerine yazarsak ne çıkacak?
+
+323
+00:46:13,056 --> 00:46:17,755
+Kosinus 0, 1, şurası 0 olduğu için 0 olacak.
+
+324
+00:46:22,771 --> 00:46:25,351
+y'ye göre kısmi türevimiz nedir?
+
+325
+00:46:26,172 --> 00:46:31,112
+Eksi x çarpı sinüs y'dir.
+
+326
+00:46:32,692 --> 00:46:34,831
+Eksi e üzeri x.
+
+327
+00:46:35,612 --> 00:46:43,871
+Yine p sıfırı burada yerine yazarsak, sıfırdan dolayı burası sıfır olacak, e üzeri sıfır bir, eksi bir olacak.
+
+328
+00:46:48,596 --> 00:46:51,835
+O halde t düzlemini nasıl yazarım?
+
+329
+00:46:52,016 --> 00:46:52,596
+Z eşit.
+
+330
+00:46:53,335 --> 00:46:54,315
+Şu sıfır oldu.
+
+331
+00:46:55,096 --> 00:46:56,215
+Bunun değeri 1.
+
+332
+00:46:57,315 --> 00:46:58,675
+1 çarpı.
+
+333
+00:47:00,516 --> 00:47:02,135
+X eksi sıfır.
+
+334
+00:47:03,856 --> 00:47:05,755
+F y'nin değeri eksi 1.
+
+335
+00:47:07,056 --> 00:47:08,675
+Y eksi sıfırdan.
+
+336
+00:47:08,675 --> 00:47:10,315
+Z eşit.
+
+337
+00:47:10,835 --> 00:47:11,936
+X eksi.
+
+338
+00:47:13,036 --> 00:47:16,715
+Y şeklinde basit bir denklem çıktı.
+
+339
+00:47:18,596 --> 00:47:20,675
+Şimdi biraz ara verelim.
+
+340
+00:47:21,335 --> 00:47:23,615
+Aradan sonra örnek yapalım.
+
+341
+00:47:23,755 --> 00:47:27,295
+Bir de linear yaklaşımlara geçeriz.
+
+342
+00:47:27,635 --> 00:47:29,115
+Birkaç örnek yapar geçeriz.
+
+343
+00:59:34,867 --> 00:59:49,327
+Tekrar merhaba arkadaşlar. Sizinle iki tane link paylaştım. Bunlar bana gelmiş bir arkadaşım göndermiş.
+
+344
+00:59:50,067 --> 01:00:01,087
+Tabii ki bunlar gönüllülük esasında olan şeyler. Doldurmak isteyen vakti olan zaman ayırır doldurursa iyi olur.
+
+345
+01:00:01,087 --> 01:00:06,827
+Neye hizmet ettiğini de bilmiyorum. Ben sadece sizinle paylaştım bu linkleri.
+
+346
+01:00:08,327 --> 01:00:11,148
+Şimdi tekrar soru çözmeye devam edelim.
+
+347
+01:00:45,012 --> 01:00:48,032
+Bu soru galiba sizde yok. Yazarsanız iyi olur.
+
+348
+01:01:08,563 --> 01:01:15,643
+z eşit kosinüs x bölü y yüzeyinin p, virgül 4.
+
+349
+01:01:16,463 --> 01:01:22,864
+Noktasındaki t düzleminin ve normal doğrusunun denklemlerini yazınız.
+
+350
+01:01:33,652 --> 01:01:38,072
+T tü zemini, ve normal doğrusunu.
+
+351
+01:01:47,315 --> 01:01:56,375
+İlk
+
+352
+01:01:54,804 --> 01:01:55,604
+4 çelikli
+
+353
+01:01:55,604 --> 01:01:59,644
+şu formülü yazalım.
+
+354
+01:02:28,115 --> 01:02:32,516
+Sonra da buradaki şeyleri bulup hesaplayıp yazalım.
+
+355
+01:02:33,155 --> 01:02:35,016
+fx0 y0 nedir?
+
+356
+01:02:35,536 --> 01:02:37,016
+fx y neye eşit?
+
+357
+01:02:38,295 --> 01:02:41,695
+Kosinus x y'ye eşit değil mi?
+
+358
+01:02:43,615 --> 01:02:46,976
+Dolayısıyla pi 4 neye eşit olacak?
+
+359
+01:02:47,556 --> 01:02:53,195
+Kosinus pi bölü 4 bu da kök 2 bölü 2'ye eşit.
+
+360
+01:02:54,996 --> 01:02:57,936
+f'in x'e göre türevi neye eşit olacak?
+
+361
+01:02:58,115 --> 01:02:59,115
+Evet.
+
+362
+01:03:02,643 --> 01:03:04,643
+x'in türevi 1 bölü y
+
+363
+01:03:10,739 --> 01:03:15,359
+Kosini türev de ne olacak? Sinüs olacak.
+
+364
+01:03:24,403 --> 01:03:31,463
+Yerlerine de yazarsak, 1 bölü 4, eksi 1 bölü 4, çarpı sinüs pi bölü 4 olur.
+
+365
+01:03:35,668 --> 01:03:40,048
+Bu da, eksi kök 2 bölü 8 olacak değil mi?
+
+366
+01:03:57,684 --> 01:04:01,784
+Türevimiz, onu da şuraya sıkıştırayım.
+
+367
+01:04:12,244 --> 01:04:16,244
+Y'ye göre türev alacaksam, şuradan bölüm türevinden ne gelecek?
+
+368
+01:04:17,204 --> 01:04:22,104
+Eksi, x bölü, y kare gelecek.
+
+369
+01:04:23,184 --> 01:04:26,284
+Sinüsün türevinden de eksi gelecek, artı olacak.
+
+370
+01:04:26,384 --> 01:04:29,244
+Şey, kosünüsün türevinden de eksi gelecek, artı olacak.
+
+371
+01:04:29,443 --> 01:04:34,084
+Yani sinüs, x bölü, y olacak.
+
+372
+01:04:34,084 --> 01:04:39,044
+Noktayı da yerine yazdığımızda,
+
+373
+01:04:39,744 --> 01:04:40,963
+pi bölü 16,
+
+374
+01:04:41,664 --> 01:04:43,364
+pi bölü,
+
+375
+01:04:43,923 --> 01:04:45,644
+pi kök 2,
+
+376
+01:04:46,184 --> 01:04:47,204
+bölü 16,
+
+377
+01:04:47,943 --> 01:04:49,324
+çarpı 2 ne olur?
+
+378
+01:04:49,403 --> 01:04:50,384
+32 olur değil mi?
+
+379
+01:04:58,900 --> 01:05:05,780
+değerleri getirip şurada yerine yazdığımızda, şunu sileyim, buna ihtiyacım yok.
+
+380
+01:05:13,139 --> 01:05:17,679
+Evet doğrusunun denklemi nasıl olacak? Bunun değeri neydi? Kök 2 bölü 2.
+
+381
+01:05:23,668 --> 01:05:24,688
+Burası eksi.
+
+382
+01:05:44,916 --> 01:05:47,676
+Şu şekilde bir denklem çıkacak.
+
+383
+01:05:49,236 --> 01:05:51,976
+Bunu isterseniz hepsinde kök 2 bölü 2 var.
+
+384
+01:05:52,135 --> 01:05:55,356
+İsterseniz ortak parantezi alarak düzenleyin.
+
+385
+01:05:57,296 --> 01:05:58,836
+İsterseniz böyle bırakın.
+
+386
+01:06:00,296 --> 01:06:10,316
+1 eksi x eksi pi bölü 4 oldu burası değil mi?
+
+387
+01:06:10,316 --> 01:06:11,115
+Artı
+
+388
+01:06:15,219 --> 01:06:24,939
+Pi çarpı, y eksi 4 bölü 16 şeklinde olacak.
+
+389
+01:06:25,579 --> 01:06:27,239
+Böyle de yazabilirsiniz.
+
+390
+01:06:30,516 --> 01:06:36,356
+Bu neydi? T doğrusu. T düzem. Doğru değil, özür dilerim. T düzem.
+
+391
+01:06:40,980 --> 01:06:48,119
+Normal doğrusunu yazalım. Neye ihtiyacım var? Şu ikisine ihtiyacım var.
+
+392
+01:07:06,195 --> 01:07:08,255
+Normal doğrunun denklemini yazıyorum.
+
+393
+01:07:08,255 --> 01:07:10,315
+x neydi? x eksi x sıfır.
+
+394
+01:07:11,096 --> 01:07:24,956
+Yani x eksi pi bölü, kök 2 bölü, pardon, eksi kök 2 bölü 8'den, o zaman şuraya eksi yazarız.
+
+395
+01:07:25,036 --> 01:07:26,615
+8 çarpı.
+
+396
+01:07:33,172 --> 01:07:38,012
+Kök 2, bir de eksimiz var. Onu da şöyle
+
+397
+01:07:55,092 --> 01:07:55,892
+Bunu yazdım.
+
+398
+01:07:57,412 --> 01:07:58,211
+Artı
+
+399
+01:08:08,148 --> 01:08:14,648
+şurası pi bölü olduğuna göre 32 gelecek. Bunlar 6 gelecek.
+
+400
+01:08:35,444 --> 01:08:37,704
+Artı değil bu, eşittir. Özür dilerim.
+
+401
+01:08:41,332 --> 01:08:52,492
+Bir deniyor olacak. Z eksi z sıfır. Z sıfırı hesaplamadık galiba. Z sıfır neye eşit? Ay yok hesapladık. Kök 2 bölü 2'ye eşit.
+
+402
+01:09:11,828 --> 01:09:13,568
+Z'ye göre türevini de
+
+403
+01:09:17,908 --> 01:09:21,408
+Bunu karşıya atınca eksi bir oluyordu. Pardon. Şu da eksi bir.
+
+404
+01:09:29,555 --> 01:09:32,395
+Şunu sanki devamıymış gibi kalmasın, silelim.
+
+405
+01:09:59,412 --> 01:10:12,752
+Bu şekilde bunu bırakabiliriz. Başka ne yapabiliriz? Belki kök 2 ile çarpıp düzenleyebiliriz ama böyle kalmasında hiçbir mahsus yok. Anlaşıldı mı?
+
+406
+01:10:35,091 --> 01:10:44,751
+Peki, anladınız sanıyorum. Siliyorum tekrar tahtayı, Liner yaklaşımlara bakalım şimdi. Bunu yazmışsınız durumuyorum.
+
+407
+01:11:04,500 --> 01:11:06,359
+Bir saniyenizi rica edeceğim.
+
+408
+01:11:50,579 --> 01:11:54,019
+Linear yaklaşımlar ve diferansiyeller dedik.
+
+409
+01:12:11,220 --> 01:12:13,800
+Değişkenli fonksiyonlardan neyi biliyoruz?
+
+410
+01:12:13,940 --> 01:12:22,240
+Bazen fonksiyonun verilen bir noktadaki değerini hesaplamaktan zorlanabiliyoruz.
+
+411
+01:12:22,420 --> 01:12:24,320
+Hatta o değerini hesaplayamıyoruz.
+
+412
+01:12:24,320 --> 01:12:26,560
+O zaman ne yapıyoruz?
+
+413
+01:12:27,640 --> 01:12:40,260
+O noktadan geçen fonksiyonun o noktadan geçen t-etini bulup, t-etin o noktadaki değerini hesaplayarak yaklaşık değerini tahmin ediyorduk, bulmuş oluyorduk.
+
+414
+01:12:40,260 --> 01:12:44,119
+Yani bir y eşit fx fonksiyonumuz var.
+
+415
+01:12:45,260 --> 01:12:58,280
+Bu y eşit fx fonksiyonunun bir x noktasındaki değerini biliyoruz ama bu x'e çok yakın olan bir başka noktada
+
+416
+01:12:58,280 --> 01:13:02,240
+x sıfır demeyelim de, hadi x sıfır diyelim.
+
+417
+01:13:02,500 --> 01:13:07,539
+Bir x sıfır noktadaki değerini diyelim ki tam olarak hesaplayabiliyoruz.
+
+418
+01:13:07,539 --> 01:13:37,520
+Bu x sıfır noktadan geçen fonksiyonun bir x sıfır noktada
+
+419
+01:13:39,188 --> 01:13:41,228
+x'i diferansiyelde kullanalım.
+
+420
+01:13:41,807 --> 01:13:43,347
+x0'ın civarındaki
+
+421
+01:13:43,347 --> 01:13:45,307
+değerlerini diyelim ki
+
+422
+01:13:45,307 --> 01:13:47,507
+hesaplayamıyoruz. O zaman ne yapıyoruz?
+
+423
+01:13:48,007 --> 01:13:49,248
+Şunu mesela
+
+424
+01:13:49,248 --> 01:13:51,288
+grafiği
+
+425
+01:13:51,288 --> 01:13:52,908
+şöyle bir fonksiyon olsun.
+
+426
+01:13:53,328 --> 01:13:54,868
+Yani bu nedir?
+
+427
+01:13:54,868 --> 01:13:59,408
+E üzeri x'in grafiğini gibi bir şey olsun.
+
+428
+01:13:59,868 --> 01:14:00,868
+Çünkü üstel fonksiyonlarda
+
+429
+01:14:01,587 --> 01:14:05,167
+her noktadaki değerini hesaplayamıyoruz.
+
+430
+01:14:05,288 --> 01:14:06,967
+Belli noktalardaki değerlerini
+
+431
+01:14:06,967 --> 01:14:07,927
+hesaplıyoruz ama
+
+432
+01:14:07,927 --> 01:14:11,688
+hepsini hesaplayamıyoruz.
+
+433
+01:14:12,068 --> 01:14:13,347
+Diyelim ki şu noktadaki
+
+434
+01:14:13,347 --> 01:14:14,748
+değerini bize soruyor.
+
+435
+01:14:15,908 --> 01:14:16,667
+Fonksiyonu.
+
+436
+01:14:17,948 --> 01:14:19,488
+Ben fonksiyonun eğer
+
+437
+01:14:19,488 --> 01:14:21,528
+buna yakın bir başka
+
+438
+01:14:21,528 --> 01:14:23,488
+noktadaki değerini hesaplayabiliyorsam
+
+439
+01:14:23,488 --> 01:14:25,087
+eğer
+
+440
+01:14:25,087 --> 01:14:27,587
+şu noktadaki değerini
+
+441
+01:14:27,587 --> 01:14:28,948
+diyelim ki biliyorum.
+
+442
+01:14:29,288 --> 01:14:31,007
+x0'daki değerini biliyorum.
+
+443
+01:14:32,908 --> 01:14:33,608
+Bu ne olsun?
+
+444
+01:14:33,988 --> 01:14:35,768
+fx0 olsun.
+
+445
+01:14:35,908 --> 01:14:36,568
+Onu biliyorum.
+
+446
+01:14:36,568 --> 01:14:38,587
+bunu hesaplayabiliyorsam
+
+447
+01:14:38,587 --> 01:14:40,188
+ve bunu hesaplayamıyorsam
+
+448
+01:14:40,188 --> 01:14:40,847
+ne yaparım?
+
+449
+01:14:41,307 --> 01:14:42,988
+Bu x0 noktasındaki
+
+450
+01:14:43,627 --> 01:14:45,148
+t-et
+
+451
+01:14:45,148 --> 01:14:46,948
+doğrusunu
+
+452
+01:14:46,948 --> 01:14:47,988
+çizerim.
+
+453
+01:14:47,988 --> 01:14:51,807
+t-etin bu
+
+454
+01:14:51,807 --> 01:14:53,688
+şu verilen nokta
+
+455
+01:14:53,688 --> 01:14:54,268
+diyelim ki
+
+456
+01:14:54,268 --> 01:14:54,568
+bu da
+
+457
+01:14:54,568 --> 01:14:55,667
+a noktası olsun.
+
+458
+01:14:55,788 --> 01:14:56,868
+Ya da x0 artı
+
+459
+01:14:56,868 --> 01:14:57,627
+delta x
+
+460
+01:14:57,627 --> 01:14:58,887
+noktası olsun.
+
+461
+01:14:59,028 --> 01:14:59,408
+Artık
+
+462
+01:14:59,408 --> 01:15:00,488
+ne oluyorsa
+
+463
+01:15:00,488 --> 01:15:01,307
+olsun.
+
+464
+01:15:01,307 --> 01:15:31,288
+t-
+
+465
+01:15:06,836 --> 01:15:09,476
+Şu noktadaki değerini hesaplayamıyorum.
+
+466
+01:15:11,376 --> 01:15:12,576
+Bunu bilmiyorum.
+
+467
+01:15:13,176 --> 01:15:13,976
+Hesaplayamıyorum.
+
+468
+01:15:14,096 --> 01:15:15,336
+O zaman ne yapıyoruz?
+
+469
+01:15:15,916 --> 01:15:20,996
+Şu noktadaki dedik ki T-et doğrusunu çiziyoruz.
+
+470
+01:15:20,996 --> 01:15:28,275
+T-et'in üzerinde, T-et denklemi üzerinde bu noktanın değerini hesaplayabiliyorum.
+
+471
+01:15:28,376 --> 01:15:30,836
+Çünkü T-et lineer bir denklendir.
+
+472
+01:15:30,916 --> 01:15:32,735
+Birinci dereceden bir denklem.
+
+473
+01:15:32,815 --> 01:15:34,536
+Onu hesaplayabiliyorum.
+
+474
+01:15:34,536 --> 01:15:40,936
+Şu nokta hesapladığım şu değer, T-et doğrusu üzerindeki bu değer,
+
+475
+01:15:42,136 --> 01:15:45,615
+şu F noktasına çok yakın.
+
+476
+01:15:45,815 --> 01:15:48,476
+Yani şu noktaya çok yakın bir değer.
+
+477
+01:15:50,976 --> 01:15:56,275
+Dolayısıyla F'in bu noktadaki yaklaşık değeri,
+
+478
+01:15:56,976 --> 01:16:03,155
+şu T-et'i üzerindeki değeri olarak göz önüne alınabiliyor.
+
+479
+01:16:03,576 --> 01:16:04,476
+Bunu yapıyorduk.
+
+480
+01:16:04,536 --> 01:16:08,876
+Şimdi ise artık çok değişkenli fonksiyonlarımız var.
+
+481
+01:16:09,476 --> 01:16:12,655
+Böyle doğrular değil de neler var?
+
+482
+01:16:12,775 --> 01:16:13,676
+Yüzeyler var.
+
+483
+01:16:13,796 --> 01:16:15,356
+Yüzeylerle uğraşıyoruz.
+
+484
+01:16:16,815 --> 01:16:21,476
+Çok değişkenli fonksiyonlarda da aslında çok bir şey fark etmiyor.
+
+485
+01:16:21,636 --> 01:16:27,136
+Z eşit, Fx'ye yüzeye verilmiş olsun diyelim ki.
+
+486
+01:16:27,136 --> 01:16:33,735
+Ay çok affedersiniz.
+
+487
+01:16:36,956 --> 01:16:39,376
+Bu yüzey üzerinde,
+
+488
+01:16:39,376 --> 01:16:45,716
+yani yüzeyin bir x0, y0 noktasındaki değerini ben hesaplayabiliyorsam,
+
+489
+01:16:45,716 --> 01:16:57,716
+z0, fx0, y0 değerini hesaplayabiliyorum ama buna yakın noktalardaki değerini hesaplayamıyorsam,
+
+490
+01:16:58,876 --> 01:16:59,376
+ne yaparım?
+
+491
+01:16:59,376 --> 01:17:05,836
+Bu sefer de T-et doğrusu değil de T-et düzlemini kullanırım.
+
+492
+01:17:06,336 --> 01:17:09,256
+T-et düzleminin denklemini nasıl yazarız?
+
+493
+01:17:09,256 --> 01:17:12,176
+Şöyle diyeyim ben.
+
+494
+01:17:47,604 --> 01:17:52,604
+Dedik ki z eşit fx y yüzeyi var.
+
+495
+01:17:52,604 --> 01:18:01,083
+Bu yüzey üzerinde bir işte x0 y0 noktasında ben fonksiyonun değerini hesaplayabiliyorum.
+
+496
+01:18:01,184 --> 01:18:10,604
+Yüzey üzerindeki değerini hesaplayabiliyorum ama bu noktalara yakın civardaki değerler için ben ne yapamıyorum?
+
+497
+01:18:10,604 --> 01:18:29,104
+Hesap yapamıyorsam o zaman da x0 y0 noktasındaki t düzlemden yararlanarak şu fonksiyonun x0 y0 noktası civarındaki değerleri için ki bu değerler ne olur?
+
+498
+01:18:29,104 --> 01:18:36,284
+x0 artı delta x y0 artı delta y şeklindeki değerler olacak.
+
+499
+01:18:36,923 --> 01:18:41,904
+Bu değerlere nasıl bir yaklaşım sağlamış oluyorum?
+
+500
+01:18:42,024 --> 01:18:44,444
+Linear bir yaklaşım sağlamış oluyorum.
+
+501
+01:18:44,444 --> 01:18:47,244
+Bunu nasıl yapacağım?
+
+502
+01:18:48,444 --> 01:19:00,423
+Yüzeyi x0 y0 noktasındaki t düzleminden yararlanarak şu noktalardaki değerini yaklaşık olarak hesaplayabileceğim.
+
+503
+01:19:00,944 --> 01:19:10,124
+Z eşit fx y yüzeyinin bir x0 y0'daki t düzleminin denklemini buna lx y yazalım.
+
+504
+01:19:10,264 --> 01:19:11,264
+Nasıl yazıyorduk?
+
+505
+01:19:11,264 --> 01:19:13,184
+Z eşit diyordum.
+
+506
+01:19:13,543 --> 01:19:15,543
+Şimdi bunu l-y ile yazacağım.
+
+507
+01:19:16,444 --> 01:19:17,784
+Z neye eşit oluyordu?
+
+508
+01:19:17,784 --> 01:19:30,064
+fx y0 artı fx x-x0 artı fy
+
+509
+01:19:30,064 --> 01:19:32,064
+z eşit diyordum.
+
+510
+01:19:32,064 --> 01:19:57,064
+Z eşit diyordum.
+
+511
+01:19:33,747 --> 01:19:37,527
+y-y0 şeklinde biraz önce yazmıştık.
+
+512
+01:19:38,327 --> 01:19:43,027
+Burada z eşit yerine lx'ye yazdım.
+
+513
+01:19:43,147 --> 01:19:47,547
+T düzleminin denklemi. Çünkü ben bunun üzerinde hesaplama yapacağım artık.
+
+514
+01:19:51,764 --> 01:19:55,184
+Z değil de L ile gösterdik. T düzlemin denklemi.
+
+515
+01:20:00,000 --> 01:20:10,399
+Dolayısıyla, f'in değerlerini, ne yapacağız? Bir yaklaşım sağlayacağız.
+
+516
+01:20:10,760 --> 01:20:26,260
+İşte, şu x0 artı delta x'i y0 artı delta y'yi fx y olarak alırsak, fx y değerleri ya da, öyle de yazabiliriz aslında.
+
+517
+01:20:30,547 --> 01:20:42,247
+Şunu x'i olarak alırsak, fx'i'nin değerlerine yakın değerleri ne yapacağım? Lx'i ile hesaplayacağım.
+
+518
+01:20:51,572 --> 01:20:54,851
+L-L de burada var. Bir daha onu yazmayayım.
+
+519
+01:21:02,547 --> 01:21:04,927
+Şu bize yaklaşım sağlıyor.
+
+520
+01:21:05,927 --> 01:21:07,927
+Nasıl desem bunu.
+
+521
+01:21:16,595 --> 01:21:18,655
+Şöyle bir yüzey olsun.
+
+522
+01:21:20,515 --> 01:21:22,655
+Bu yüzeyin tabii ki nesi olacak?
+
+523
+01:21:23,935 --> 01:21:24,695
+Aşağıda
+
+524
+01:21:40,884 --> 01:21:43,283
+Şurada tanım bölgesi var.
+
+525
+01:21:43,283 --> 01:21:48,323
+İşte bunu bir, bu bölge üzerinde tanımlı olsun.
+
+526
+01:21:48,463 --> 01:21:51,684
+R bölgesi üzerinde de, R'yi bu kadar kötü çizdim.
+
+527
+01:21:53,463 --> 01:21:54,283
+Şu yüzey.
+
+528
+01:22:00,467 --> 01:22:05,087
+şöyle bir R bölgesi üzerinde tanımlı olsun.
+
+529
+01:22:11,220 --> 01:22:12,600
+Tanım kümesi bu olsun.
+
+530
+01:22:14,820 --> 01:22:24,119
+Diyelim ki biz bu yüzey üzerinde şuradaki bir değerini hesaplayabiliyorum.
+
+531
+01:22:25,539 --> 01:22:27,840
+Burası x0, y0 değeri olsun.
+
+532
+01:22:27,980 --> 01:22:31,940
+Buradaki değeri z0 ile hesaplanabiliyor.
+
+533
+01:22:35,220 --> 01:22:38,020
+Nokta şu nokta olsun.
+
+534
+01:22:38,020 --> 01:22:43,100
+Bu noktadaki z eşit fx, y'yi hesaplayabiliyorum.
+
+535
+01:22:43,460 --> 01:22:53,199
+Ancak bu noktanın civarında şu yakın değerlerde ben fx, y değerini hesaplayamıyorsam eğer
+
+536
+01:22:53,199 --> 01:22:57,060
+diyelim ki şu noktaya yakın şurada bir başka nokta aldım.
+
+537
+01:22:57,159 --> 01:22:58,760
+Biraz uzak çizeyim.
+
+538
+01:22:59,300 --> 01:23:01,820
+Şu noktadaki değeri hesaplayamıyorum.
+
+539
+01:23:02,820 --> 01:23:04,159
+O zaman ne yapacağım?
+
+540
+01:23:04,159 --> 01:23:11,880
+Bu noktadan geçen t-düzleminin denklemini yazacağım.
+
+541
+01:23:12,100 --> 01:23:16,659
+Şuradan geçen t-düzlemini bulacağım.
+
+542
+01:23:18,180 --> 01:23:24,180
+T-düzlemi bakın şu noktaya aslında bu noktanın çok yakınından geçecek.
+
+543
+01:23:24,180 --> 01:23:26,340
+Hesaplayamadığım şu nokta var ya.
+
+544
+01:23:28,000 --> 01:23:29,800
+Bunun çok yakınından geçecek.
+
+545
+01:23:30,199 --> 01:23:35,840
+T-düzlemini şunun arasındaki mesafe çok kısa mesafedir.
+
+546
+01:23:37,300 --> 01:23:43,140
+Bu mesafe aslında şu iki nokta arasındaki mesafeden daha küçüktür.
+
+547
+01:23:43,140 --> 01:23:54,020
+Dolayısıyla t-düzleminin üzerinde şu noktayı hesapladığımda bu noktanın yaklaşık değerini bulmuş oluyorum.
+
+548
+01:23:54,860 --> 01:23:58,100
+O yüzden burada t-düzlemlerden yararlanıyoruz.
+
+549
+01:23:58,480 --> 01:23:59,860
+Yani linear yaklaşım.
+
+550
+01:24:00,860 --> 01:24:07,680
+Tek değişkenli fonksiyonlarda yaptığınız linear yaklaşımdan çok farklı bir şey değil burada da.
+
+551
+01:24:07,680 --> 01:24:11,280
+Sadece ne yapmak gerekiyor?
+
+552
+01:24:11,659 --> 01:24:13,760
+Orada bir tane türev vardı.
+
+553
+01:24:13,900 --> 01:24:16,060
+Burada iki tane türev var.
+
+554
+01:24:16,539 --> 01:24:17,119
+Hepsi bu.
+
+555
+01:24:21,876 --> 01:24:24,516
+Şöyle örnek yapalım şimdi buna.
+
+556
+01:25:08,275 --> 01:25:13,456
+2.2-0.2'de yaklaşık bir değer bulunuz.
+
+557
+01:25:27,347 --> 01:25:44,547
+x yerine 2.2, y yerine x'i 0.2 aldığında pek bir şey hesaplayamayacağım. Yani o değerleri hesaplayamayacağım. O yüzden yaklaşık değerini ne yapacağım? Bu noktaya en yakın fonksiyonun hesaplayabildiğim bir değerini belirleyeceğim.
+
+558
+01:25:44,547 --> 01:25:59,488
+2'deki ve 0'daki değerlerini hesaplayabilirim değil mi? O zaman x0, y0 noktası olarak 2,0 noktasını seçelim.
+
+559
+01:26:07,347 --> 01:26:13,927
+2, 0, neye eşit olacak? Kök, 2 çarpı 2'nin karesi,
+
+560
+01:26:18,100 --> 01:26:44,700
+4, 8, 9, bu da neye eşitmiş? 3'e eşitmiş. Bakın, rahatlıkla bunu hesapladım. Ama bunu, şunu hesaplayamıyorum. Önemli değil. Bunun 2,0 noktasından geçen t-et düzlemini yazıp, onun üzerindeki değerini hesaplarsam, yaklaşık olarak değerini bulmuş olacağım.
+
+561
+01:26:44,700 --> 01:26:49,260
+Şu fx'i de hesaplayalım.
+
+562
+01:26:53,011 --> 01:26:58,791
+Ne oldu? Bunun türevinden 4.
+
+563
+01:26:58,791 --> 01:27:02,791
+Bölü.
+
+564
+01:27:13,363 --> 01:27:20,243
+Şunlar bitti, 2 kaldı. X yerine de 2 koyduğumuzda burası ne oldu? 4 bölü 3 oldu.
+
+565
+01:27:21,243 --> 01:27:24,963
+F, Y neye eşit olacak? F, Y'yi de şurada hesaplayalım.
+
+566
+01:27:34,131 --> 01:27:43,751
+2'ye, e üzeri, 2'ye, bölüm, kök,
+
+567
+01:27:47,988 --> 01:27:52,328
+Bu ne işte olacak? Şuradaki 2 ile buradaki 2 gidecek.
+
+568
+01:27:56,051 --> 01:27:59,311
+Sıfırdaki değeri de ne olur? 1 bölü 3'ü olur.
+
+569
+01:28:02,612 --> 01:28:19,672
+Bunları bulduk. O halde fonksiyonun 2.2 ve eksi 0.2'deki yaklaşık değerini ben bunun nesi üzerinde, t'et düzlemi üzerindeki değeri olarak yazabilirim.
+
+570
+01:28:23,283 --> 01:28:24,884
+L x y de neydi?
+
+571
+01:28:24,884 --> 01:28:25,384
+F
+
+572
+01:28:31,988 --> 01:28:32,927
+İfiz
+
+573
+01:28:38,100 --> 01:28:43,700
+x-x0, x0'ımız nedir? 2. x-2 aldım.
+
+574
+01:28:48,148 --> 01:28:51,248
+y-y0, 0
+
+575
+01:29:00,212 --> 01:29:02,152
+0'ın değeri 3.
+
+576
+01:29:04,512 --> 01:29:07,432
+Bunun değeri 4 bölü 3.
+
+577
+01:29:09,332 --> 01:29:10,792
+x eksi 2.
+
+578
+01:29:11,092 --> 01:29:13,272
+x nedir burada? 2.2.
+
+579
+01:29:13,412 --> 01:29:16,492
+2.2 eksi 2'den 0.2 oldu bu.
+
+580
+01:29:20,115 --> 01:29:31,615
+f, y değeri, 1 bölü 3, y, eksi 0,2, bundan 0 çıkardım. Yine ne oldu? Eksi 0,2 oldu.
+
+581
+01:29:33,036 --> 01:29:41,555
+Şunu hesapladığımızda, yaklaşık değeri nasıl çıkıyor karşımıza? 3,2 olarak çıkıyormuş.
+
+582
+01:29:54,228 --> 01:29:55,108
+Anlaşıldı mı?
+
+583
+01:30:42,963 --> 01:30:44,484
+Saatayı siliyorum o halde.
+
+584
+01:31:45,171 --> 01:31:52,371
+Bu diferansiyelleri uzun uzun yazmamak için şuradan okuyarak geçelim.
+
+585
+01:31:54,331 --> 01:32:09,171
+Eğer bir z eşit fx1x2xn fonksiyonunun birinci mertebe kısmı türevleri bir noktada mevcutsa fonksiyonun bu noktadaki dz diferansiyelinin şu şekilde yazıldığını öğrenmiştik değil mi?
+
+586
+01:32:09,171 --> 01:32:23,591
+Her bir değişkene göre kısmi türevini alıp o değişkenin diferansiyeli ile çarpıp şu toplamları aldığımızda z'nin toplam diferansiyeli ya da buna tam diferansiyel demiştik.
+
+587
+01:32:24,011 --> 01:32:26,171
+Tam diferansiyelini bu şekilde yazmıştık.
+
+588
+01:32:26,171 --> 01:32:45,811
+Şimdi şu f fonksiyonu içerisindeki her bir x değişkenine delta x kadar bir artım verdiğimizi ya da dx gibi bir artım verdiğimizi düşünelim.
+
+589
+01:32:45,811 --> 01:32:47,831
+Bir değişim olduğunu düşünelim.
+
+590
+01:32:48,211 --> 01:33:05,011
+Burada delta x değil de dx1 dx2 dxn şeklinde bunu yazmışız ama size daha önce demiştim ki bağımsız değişkendeki değişim miktarını onun diferansiyeli olarak göz önüne alabiliyoruz.
+
+591
+01:33:05,231 --> 01:33:07,811
+Bunu eşit olarak alabiliyoruz.
+
+592
+01:33:08,651 --> 01:33:14,751
+Yani delta x1 yerine dx1 yazmam hiçbir şeyi değiştirmiyor.
+
+593
+01:33:14,751 --> 01:33:21,591
+Bağımsız değişkendeki değişim onun diferansiyeli olarak düşünülebilir.
+
+594
+01:33:22,791 --> 01:33:31,591
+Dolayısıyla hani demin yaptığımız şeyle aslında çok benzer.
+
+595
+01:33:33,591 --> 01:33:34,491
+Ne dedik?
+
+596
+01:33:35,791 --> 01:33:42,651
+Dz diferansiyeli iki n tane bağımsız değişkenin bir fonksiyonu olarak göz önüne alınır.
+
+597
+01:33:42,651 --> 01:33:46,692
+Tabii biz hem x1 x2 dxn hem de bunları ne yaptık?
+
+598
+01:33:47,692 --> 01:33:52,331
+Değişim verdik ya dx1 dx2 dxn kadar değişimler verdik.
+
+599
+01:33:52,431 --> 01:33:58,491
+Dolayısıyla her bir değişkendeki değişimle şu şekilde f'i yazdık.
+
+600
+01:34:00,411 --> 01:34:04,551
+Şu iki f değeri arasındaki fark bize neyi verecek?
+
+601
+01:34:04,551 --> 01:34:06,591
+f'deki değişimi verecek.
+
+602
+01:34:06,591 --> 01:34:08,051
+Delta f'i verecek.
+
+603
+01:34:09,891 --> 01:34:14,171
+Şimdi bunu tekrar yazmamak için burada okuduk.
+
+604
+01:34:15,591 --> 01:34:23,831
+Bu yaklaşımdaki hata f'in tanım kümesindeki iki nokta arasındaki uzaklık ile karşılaştırıldığında daha küçüktür.
+
+605
+01:34:23,931 --> 01:34:26,891
+Burada da küçüktür yazılmış ama daha küçüktür.
+
+606
+01:34:26,891 --> 01:34:36,331
+Yani eğer delta x'i sıfıra yaklaşırken şu limite bakarsanız bu limitin değeri de sıfıra yaklaştığını göreceksiniz.
+
+607
+01:34:37,871 --> 01:34:40,451
+Dolayısıyla ben şimdi şunu alıyorum.
+
+608
+01:34:40,692 --> 01:34:42,091
+Tahtaya bunu yazacağım.
+
+609
+01:34:44,491 --> 01:34:48,571
+Bunun açık olması sizi engeller mi bilmiyorum.
+
+610
+01:34:48,751 --> 01:34:50,192
+Şöyle aşağı indireyim.
+
+611
+01:34:58,036 --> 01:35:04,695
+t eşit f x1, xl şeklinde fonksiyonda her bir değişkene
+
+612
+01:35:09,171 --> 01:35:11,631
+Bir artım verdik.
+
+613
+01:35:12,931 --> 01:35:17,231
+x2 artı d x2 şeklinde yazdık.
+
+614
+01:35:22,355 --> 01:35:27,655
+Dolayısıyla, değişkenler değişince f de değişecek değil mi?
+
+615
+01:35:28,255 --> 01:35:32,715
+Bu yeri değişkenlerle arasındaki fark delta f nasıl yazılır?
+
+616
+01:35:32,715 --> 01:35:47,376
+f, x1, dx1, bir yörü nokta nokta diyeyim, xn, dxn ile f arasındaki farkları.
+
+617
+01:35:50,376 --> 01:35:52,115
+Bunu biliyoruz zaten.
+
+618
+01:35:52,355 --> 01:36:04,675
+Bu aradaki fark da, şuradaki limite baktığınızda sıfıra yaklaşacağından, dx1, dxn'ler sıfıra yaklaştığında,
+
+619
+01:36:06,135 --> 01:36:13,215
+bu aradaki fark, yani df ile delta f arasındaki fark da sıfıra yaklaşacağından,
+
+620
+01:36:14,115 --> 01:36:21,395
+delta f'i, df'e eşit alabilirim.
+
+621
+01:36:21,395 --> 01:36:31,435
+df bunun, df bunun, df bunun, df dediğim şey, ikisi de aynı şey, şu fonksiyonun toplam diferansiyelidir.
+
+622
+01:36:31,835 --> 01:36:32,715
+Dolayısıyla,
+
+623
+01:36:34,775 --> 01:36:38,655
+diferansiyel, nasıl diyeyim bunu,
+
+624
+01:36:41,435 --> 01:36:45,715
+şu delta f değişimine, değerine,
+
+625
+01:36:45,715 --> 01:37:15,695
+f'in diferansiyel,
+
+626
+01:36:55,475 --> 01:36:57,475
+Bu da bize neyi sağlıyor?
+
+627
+01:37:02,068 --> 01:37:16,887
+DF ile bunun nesini almıştık? Toplam diferansiyelini almıştık değil mi? Şimdi bakın burada DF yazarsak, bunlar hani birbirine yakın değerler olacak dedik ya, şimdi burada DF yazarsak,
+
+628
+01:37:38,484 --> 01:37:45,064
+olacak değil mi? Şuradan, bizim aslında hesaplamak istediğimiz fonksiyon şu olduğu için,
+
+629
+01:37:57,619 --> 01:38:06,800
+Hesaflamak istediğiniz derken, şu linear yaklaşımdakine, şunu yazayım da öyle açıklayayım. İkisini aynı anda bazen yapamıyorum.
+
+630
+01:38:09,899 --> 01:38:21,099
+Bu neye eşit olacak? Şunu eşit aldım ama, delta f'i buna eşit aldığım için bunu yazdım.
+
+631
+01:38:27,123 --> 01:38:27,783
+Şurada
+
+632
+01:38:41,811 --> 01:38:43,171
+Bunu bu tarifatın.
+
+633
+01:39:06,163 --> 01:39:07,684
+Delta f'ti.
+
+634
+01:39:09,283 --> 01:39:10,783
+Df buna yakın.
+
+635
+01:39:11,184 --> 01:39:18,844
+Dolayısıyla df'i kullanarak şunun değerini bu şekilde yaklaşık olarak hesaplayabiliyormuşum.
+
+636
+01:39:18,844 --> 01:39:20,724
+Yani yine ne yaptım?
+
+637
+01:39:20,724 --> 01:39:40,923
+x1, x2, xn noktalarında eğer f'i hesaplayabiliyorsam, bu noktaların yakın bir civarındaki f değerini de bunun diferansiyelini kullanarak bu şekilde yaklaşık olarak hesaplayabiliyoruz.
+
+638
+01:39:40,923 --> 01:39:47,823
+Bunun demin yaptığımız diferansiyelini, lineer yaklaşımdan hiçbir farkı yok.
+
+639
+01:39:47,823 --> 01:39:51,563
+tek fark nedir?
+
+640
+01:39:52,703 --> 01:40:01,503
+Şu x eksi x eksi x sıfır, y eksi y sıfır çarpanları var ya, onların yerine dx, dy yazmak.
+
+641
+01:40:01,583 --> 01:40:03,143
+Aslında tek fark o oluyor.
+
+642
+01:40:03,863 --> 01:40:04,903
+Bunu da
+
+643
+01:40:04,903 --> 01:40:34,884
+birbirlik
+
+644
+01:40:12,532 --> 01:40:19,471
+Fonksiyonun şu noktadaki değerini bir diferansiyel yaklaşım olarak göz önüne alıyoruz.
+
+645
+01:40:19,612 --> 01:40:28,672
+Yani yaklaşık hesap yaparken linear yaklaşım kullanabileceğimiz gibi diferansiyel bir yaklaşımda kullanabiliyoruz.
+
+646
+01:40:28,672 --> 01:40:31,452
+Diferansiyel yaklaşımı nasıl kullanıyoruz?
+
+647
+01:40:31,452 --> 01:40:47,692
+Fonksiyon değerindeki değişimini onun diferansiyeline eşit alarak, eşit demin de yaklaşık olarak eşit alarak yakın değerler olduğu için
+
+648
+01:40:47,692 --> 01:40:55,872
+fonksiyondaki değişim diferansiyeldeki değişime çok yakın bir değer oluyor.
+
+649
+01:40:55,872 --> 01:41:09,192
+Dolayısıyla şurada delta f yerine df yazarsanız, f'in şu noktadaki değerine diferansiyel kullanarak yaklaşmış oluyoruz.
+
+650
+01:41:14,195 --> 01:41:18,576
+Tek yapalım buna. Şu tahtayı ben yine tam hale getireyim de.
+
+651
+01:41:30,931 --> 01:41:35,351
+Nasıl yapacağız? Örneğimizi de görelim. Şu kalem atayım onu.
+
+652
+01:41:43,380 --> 01:41:46,260
+Diferansiyel yaklaşım kullanarak
+
+653
+01:41:46,260 --> 01:41:48,579
+4 çarpı
+
+654
+01:41:52,180 --> 01:42:02,180
+1.04'ün karesi artı 3 çarpı 2.24'ün karesi.
+
+655
+01:42:04,659 --> 01:42:08,020
+Değerini yaklaşık olarak hesaplayınız.
+
+656
+01:42:10,000 --> 01:42:16,460
+Şunun değerini yaklaşık olarak hesaplayacağız.
+
+657
+01:42:17,780 --> 01:42:19,180
+Diferansiyel yaklaşım kullanarak.
+
+658
+01:42:20,060 --> 01:42:21,900
+Öncelikle fonksiyonu yazalım.
+
+659
+01:42:22,180 --> 01:42:24,400
+fx, y fonksiyonumuz nedir?
+
+660
+01:42:25,680 --> 01:42:30,200
+Şu noktalardan birine x diyelim, diğerine de y diyelim.
+
+661
+01:42:30,380 --> 01:42:32,460
+Dolayısıyla fonksiyonum ne olacak?
+
+662
+01:42:33,280 --> 01:42:38,500
+4 x kare, 3 y kare şeklinde olacak.
+
+663
+01:42:42,387 --> 01:42:42,948
+Sıfır.
+
+664
+01:42:46,547 --> 01:42:49,007
+x0, y0 mu desem buna?
+
+665
+01:43:06,387 --> 01:43:12,148
+0 olarak 1'i, y 0 olarak da 2 değerini alalım.
+
+666
+01:43:16,243 --> 01:43:19,463
+Bu noktadaki değerlerini hesaplamam kolay olacak.
+
+667
+01:43:23,604 --> 01:43:28,923
+Yaklaşık değerini hesaplayacağız. Ancak öncelikle bunun diferansiyelini de hesaplayalım.
+
+668
+01:43:29,064 --> 01:43:34,904
+Çünkü diferansiyel yaklaşım kullanarak diyor ya, diferansiyel yaklaşımı kullanalım.
+
+669
+01:43:34,904 --> 01:43:41,984
+Bir de burada şunu da gözlemliyoruz değil mi? Şu x dediğim şey nedir? 1.04.
+
+670
+01:43:41,984 --> 01:43:54,244
+Yani x01 ise x0 artı dx0 nedir? 1.04'tür.
+
+671
+01:43:54,664 --> 01:43:58,024
+x0'ı 1 aldığıma göre dx0 ne olacak?
+
+672
+01:43:59,543 --> 01:44:02,864
+Bunu dx0 değil de dx diyelim doğru da.
+
+673
+01:44:03,264 --> 01:44:05,324
+Şuna x diyelim, buna y diyelim.
+
+674
+01:44:06,923 --> 01:44:07,824
+dx olsun.
+
+675
+01:44:07,824 --> 01:44:37,804
+Burada dx 0.04.
+
+676
+01:44:21,716 --> 01:44:24,256
+04 mü? 004.
+
+677
+01:44:32,275 --> 01:44:42,076
+Burası da y artı dy dersek, dy ne olacak? Bundan y'yi çıkarırsak 0.24 olacak.
+
+678
+01:44:42,595 --> 01:44:44,996
+dx dy değerlerini de yazalım.
+
+679
+01:44:49,363 --> 01:44:50,603
+Bunu da yazdık.
+
+680
+01:44:58,899 --> 01:45:12,519
+Şimdi diferansiyelini nasıl hesaplıyoruz? F'in x'e göre türevi çarpı d, x, y'ye göre türevi çarpı d, y. Toplam diferansiyeli buna eşit olacak.
+
+681
+01:45:12,979 --> 01:45:28,279
+Hesaplayalım. x'e göre türevi nedir? 8x, 2'ye böldük. 4x bölü, kök, 4x kare, 3y kare.
+
+682
+01:45:35,220 --> 01:45:48,159
+y'ye göre kısmi türevi 6y'den 3y bölü 4x kare 3y kare şartı dy oldu.
+
+683
+01:45:52,979 --> 01:46:02,319
+y, dx, dy bütün bunların hepsini biliyoruz değil mi? O zaman bunların hepsini yerine yazıp, şunu hesaplayabiliriz.
+
+684
+01:46:07,923 --> 01:46:24,524
+x1, y2. Burası ne olur? 4 bölü. Şurası 4. 2'nin karesi 4. 3 ile çarptık. 12, 4, 16, 4 çıkacak değil mi? 4 bölü 4 oldu. Yani 1 çıktı.
+
+685
+01:46:24,524 --> 01:46:26,724
+dx
+
+686
+01:46:29,939 --> 01:46:31,179
+004
+
+687
+01:46:38,100 --> 01:46:50,980
+Şimdi diğerini hesaplayalım. Y, 2, 3, Y ne oldu? 6 oldu. Şurası 4'tü. D, Y de 0,24.
+
+688
+01:46:56,884 --> 01:46:57,743
+3 bölü 2
+
+689
+01:47:02,963 --> 01:47:04,663
+0,12 yapar.
+
+690
+01:47:05,524 --> 01:47:08,304
+3 ile de çarparsak 0,36.
+
+691
+01:47:09,003 --> 01:47:14,604
+0,36, 4 daha, 40, yani 0,4 yapar.
+
+692
+01:47:14,943 --> 01:47:15,604
+Yani nokta.
+
+693
+01:47:22,068 --> 01:47:26,967
+F diferansiyelini 0,4 olarak hesapladık.
+
+694
+01:47:29,268 --> 01:47:32,908
+Şimdi hesaplamam gereken şey nedir?
+
+695
+01:47:32,908 --> 01:47:39,408
+F x artı x sıfır y artı y sıfır değeri değil mi?
+
+696
+01:47:40,688 --> 01:47:45,108
+x artı dx y artı dy değeri.
+
+697
+01:47:47,347 --> 01:47:49,988
+Bu da yaklaşık olarak neye eşitmiş?
+
+698
+01:47:49,988 --> 01:47:55,248
+f x y artı d f eşit.
+
+699
+01:47:58,007 --> 01:48:00,268
+f x y değeri nedir?
+
+700
+01:48:00,268 --> 01:48:07,948
+f x y değeri de bunun 1,2'deki değeri 4'e eşitti değil mi?
+
+701
+01:48:08,208 --> 01:48:09,268
+Demin hesaplamıştık.
+
+702
+01:48:10,828 --> 01:48:14,268
+4, 12, 16 evet 4'e eşit.
+
+703
+01:48:14,268 --> 01:48:21,108
+O halde 4 artı 0,4 ne olacak?
+
+704
+01:48:21,108 --> 01:48:27,108
+5, 16 evet 4'e eşit.
+
+705
+01:48:27,108 --> 01:48:31,108
+6, 16 evet 4'e eşit.
+
+706
+01:48:26,036 --> 01:48:28,775
+4.4 olacak.
+
+707
+01:48:34,195 --> 01:48:34,996
+Anlaşıldı mı?
+
+708
+01:48:52,467 --> 01:48:58,507
+0, 4, 2, 24, değeri, yaklaşık olarak 4,4 oluyormuş.
+
+709
+01:49:03,507 --> 01:49:04,747
+Var mı sorunuz?
+
+710
+01:49:12,275 --> 01:49:14,036
+Yoksa o zaman
+
+711
+01:49:14,036 --> 01:49:27,615
+Varmış. [öğrenci] y'ye göre kısmi türev almayı bir daha göstereyim. Tabii göstereyim. İsteyen çıkabilir arkadaşlar. Dersimiz bu kadar. Sorusu olanlar kalıp sorabilir.
+
+712
+01:49:29,115 --> 01:49:30,416
+[öğrenci] şimdi senin
+
+713
+01:49:35,347 --> 01:49:37,148
+e fonksiyonumuz burada.
+
+714
+01:49:45,140 --> 01:49:45,980
+Şunu sileyim.
+
+715
+01:49:47,640 --> 01:49:48,900
+Şu aşağıya türevi.
+
+716
+01:49:49,320 --> 01:49:51,240
+İkisini de hesaplayalım istersen.
+
+717
+01:50:00,307 --> 01:50:24,108
+Ve nasıl alacağım? Kısmi türeviyeyi sabit tutuyorum. Kare köklü ifade olduğu için bunu nasıl yazacağım? Kare kök içindeki fonksiyonun x'e göre türevi. İçindeki fonksiyonun x'e göre türevi ne olacak? 2 çarpı 4 çarpı x oldu. Bölüm 2 kök x. Aynı ifade.
+
+718
+01:50:29,844 --> 01:50:31,243
+Şu ikiler gitti.
+
+719
+01:50:31,864 --> 01:50:33,904
+4x bölü bu kaldı.
+
+720
+01:50:35,364 --> 01:50:37,484
+df bölü dy'ye bakalım.
+
+721
+01:50:38,583 --> 01:50:43,524
+Bu sefer de kare kök içindeki fonksiyonun y'ye göre türevini alacağım.
+
+722
+01:50:43,703 --> 01:50:45,543
+Şunun türevi sıfır olacak y'ye göre.
+
+723
+01:50:45,663 --> 01:50:46,904
+Bunun türevi de ne olacak?
+
+724
+01:50:47,764 --> 01:50:54,484
+2 çarpı 3 y bölü 2 kök.
+
+725
+01:50:54,484 --> 01:50:59,623
+Köklü ifadenin aynısını yazıyoruz.
+
+726
+01:50:59,844 --> 01:51:29,823
+2 çarpı 3 y'ye göre.
+
+727
+01:51:03,988 --> 01:51:09,988
+Yine 2'ler gitti. Ne kaldı? 3y bölü kök 4x kare 3y kare kaldı.
+
+728
+01:51:11,988 --> 01:51:16,188
+Yani bu bileşge fonksiyon türevi alır gibi alıyoruz.
+
+729
+01:51:16,728 --> 01:51:18,528
+Kare kök x'in türevi neydi?
+
+730
+01:51:18,528 --> 01:51:27,368
+Kök x'in türevi, x'in türevi bölü 2 kök x şeklindeydi değil mi?
+
+731
+01:51:27,368 --> 01:51:31,807
+Kök içerisindeki fonksiyon bir başka fonksiyon.
+
+732
+01:51:31,868 --> 01:51:36,608
+Yani bileşge fonksiyon gibi verilmişse, buraya kök içinin nesi gelecek?
+
+733
+01:51:37,208 --> 01:51:39,328
+Türevi gelecek çarpım olarak.
+
+734
+01:51:39,988 --> 01:51:45,668
+Kök içinin x'e göre türevi 8x oluyor, y'ye göre türevi de 6y oluyor.
+
+735
+01:51:46,228 --> 01:51:49,908
+Dolayısıyla bu şekilde hesaplamış oluyoruz.
+
+736
+01:51:53,460 --> 01:51:58,840
+Rica ederim. Var mı başka sorun [öğrenci]? Ya da sorusu olan başkası var mı?
+
+737
+01:52:07,315 --> 01:52:20,355
+Peki, o zaman iyi günler diliyorum hepinize. Sınav sonuçlarınız da bana gelir gelmez hemen girerim. İyi bakın kendinize. İyi günler.

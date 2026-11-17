@@ -1,0 +1,4215 @@
+1
+00:00:10,323 --> 00:00:11,683
+Merhabalar arkadaşlar
+
+2
+00:00:23,187 --> 00:00:28,227
+Biraz bekleyelim, arkadaşlarınız da gelsinler. Beş geçe falan başlayalım.
+
+3
+00:01:22,036 --> 00:01:36,656
+Merhaba [öğrenci]. Geçen haftaki konularla ilgili sorunuz var mı? Sormak istediğiniz bir şey var mı? Varsa önce onlara cevap vereyim. Arkadaşlarınızın girmesini bekliyorum. Dosyayı yükleyeceğim.
+
+4
+00:03:26,707 --> 00:03:53,508
+Eğer sorunuz yoksa, bu haftaki konumuza başlayalım. 3 dakika oldu. Bu hafta kutupsal koordinatlara başlayacağız. Kutupsal koordinatlar, kartezyen koordinatların bir alternatifidir. Ancak daha yaygın kullanılan koordinat sistemidir aslında. Uçaklarda, radarlarda falan herhalde bu kullanılıyor.
+
+5
+00:04:26,708 --> 00:04:30,108
+Kutupsal koordinatlar nedir? Şimdi buna bakalım.
+
+6
+00:04:30,788 --> 00:04:43,927
+Kutupsal koordinatlar dediğimiz koordinat sistemi düzlemde bir kutup noktamız. Bunu sıfırda göstereceğiz. Orjin ya da kutup noktası diyoruz.
+
+7
+00:04:51,091 --> 00:05:02,491
+Kutup noktasından bir kutup noktamız var ve bu kutup noktasından çıkıp sonsuza doğru uzanan bir ışığından oluşan sistem.
+
+8
+00:05:02,911 --> 00:05:08,911
+Kutupsal koordinat sistemi gördüğünüz şu çizgi sadece bu ok.
+
+9
+00:05:10,291 --> 00:05:18,371
+Gördüğünüz gibi yarım bir doğru ışığ sıfır noktasından yani kutup noktasından çıkıyor sonsuza doğru uzuyor.
+
+10
+00:05:18,371 --> 00:05:25,432
+Gördüğünüz gibi burada bu eksene kutup ekseni diyoruz.
+
+11
+00:05:25,531 --> 00:05:29,111
+Genellikle kutup eksenini de x ile gösteriyoruz.
+
+12
+00:05:29,111 --> 00:05:38,951
+Yani kutup ekseni kartezyen koordinatlarla kutupsal koordinatları çakıştıracak olursanız pozitif x ekseni ile çakışan eksendir.
+
+13
+00:05:39,591 --> 00:05:47,432
+Buna dediğim gibi kutupsal kutup ekseni ya da x ile gösteriyoruz x ekseni diyoruz.
+
+14
+00:05:47,432 --> 00:05:49,432
+Şimdi burada ne görüyorsunuz?
+
+15
+00:05:49,471 --> 00:05:51,411
+Bir tane ışın görüyorsunuz.
+
+16
+00:05:51,671 --> 00:05:53,211
+Ne görmüyorsunuz burada?
+
+17
+00:05:55,531 --> 00:05:58,251
+Bu ışının negatif tarafını görmüyorsunuz.
+
+18
+00:05:58,851 --> 00:06:05,111
+Kutupsal koordinatlarda gördüğünüz gibi negatif bir ne yok?
+
+19
+00:06:05,651 --> 00:06:13,072
+Şöyle çizilmiş negatif bir değer yazacağım yön yok.
+
+20
+00:06:13,072 --> 00:06:17,111
+Oysa kutupsal koordinatlarda bu var.
+
+21
+00:06:17,251 --> 00:06:20,031
+Ama şu gördüğümüz halinde ne yok?
+
+22
+00:06:20,632 --> 00:06:23,911
+Negatif bir kısım yok kutupsal koordinatlarda.
+
+23
+00:06:25,271 --> 00:06:30,911
+Şimdi düzlemde bir noktayı şöyle bir p noktasını alalım.
+
+24
+00:06:30,911 --> 00:06:39,072
+Kutupsal koordinatlarla eğer ifade etmek istiyorsak bilmemiz gereken iki şey var.
+
+25
+00:06:39,651 --> 00:06:46,132
+Öncelikle bu noktanın kutup noktasında olan uzaklığını bilmek zorundayız.
+
+26
+00:06:46,231 --> 00:06:46,911
+Bunu hemen çiziyorum.
+
+27
+00:06:48,351 --> 00:06:51,291
+Şu uzaklığı bilmem gerekecek.
+
+28
+00:06:51,891 --> 00:06:54,831
+Bu uzaklığı r ile gösteriyoruz.
+
+29
+00:06:58,387 --> 00:07:00,647
+Bir tane bileşenini yazdım.
+
+30
+00:07:05,843 --> 00:07:24,863
+İkinci şey de R uzunluğunun kutup ekseni ile yaptığı açıyı bilmek bize düzlemdeki bir noktanın kutupsal koordinatlarını yazmamız için yeterlidir.
+
+31
+00:07:24,863 --> 00:07:38,704
+X ekseni ile yaptığı açıyı da biliyorsanız işte o noktayı kutupsal koordinatlarda bu şekilde çizebilirsiniz, gösterebilirsiniz.
+
+32
+00:07:38,704 --> 00:07:50,543
+Ben burada kutupsal koordinatları gösterirken köşeli parantez kullandım ama birçok kitapta bu normal parantez olarak gösteriliyor.
+
+33
+00:07:50,543 --> 00:07:55,204
+Yani P noktasını R teta böyle köşeli parantez ile gösterdim.
+
+34
+00:07:55,983 --> 00:08:10,063
+Sadece şey kartezyen koordinatlardaki bir noktayı gösterirken parantez kullanıyorduk ya onlarla farkı olsun ayıralım diye gösterdim ama çok önemli bir şey değil.
+
+35
+00:08:10,204 --> 00:08:12,524
+Burada parantezde kullanabilirsiniz.
+
+36
+00:08:14,584 --> 00:08:19,024
+O halde özetle şunu söyleyebiliriz.
+
+37
+00:08:19,024 --> 00:08:44,524
+Düzlemdeki bir noktanın yerini kutupsal koordinatlarda belirtmek için bu noktanın kutup noktasına olan uzaklığını yani R'yi ve bu uzaklığın kutup noktasına olan bu noktanın kutup noktasına olan uzaklığının X ekseni ile yaptığı açıyı bilmemiz gerekiyor.
+
+38
+00:08:44,524 --> 00:08:48,943
+Burada R ve Teta yönlü büyüklüklerdir.
+
+39
+00:08:50,104 --> 00:08:51,823
+R yönlü bir büyüklüktür.
+
+40
+00:08:52,004 --> 00:08:53,923
+Teta da yönlü bir büyüklüktür.
+
+41
+00:08:55,364 --> 00:09:01,524
+Şurada açıyı çizerken de gördüğünüz gibi ucuna bir ok işareti koyarak yazdım.
+
+42
+00:09:01,524 --> 00:09:07,823
+Dolayısıyla bu yön yani saat yönünün tersi yön diyoruz biz bu yöne.
+
+43
+00:09:08,423 --> 00:09:14,443
+Saat yönünün tersi kutupsal koordinatlarda pozitif yön olarak alınır.
+
+44
+00:09:15,223 --> 00:09:18,644
+Saat yönü negatif yön olarak alınır.
+
+45
+00:09:18,984 --> 00:09:20,344
+Burası negatif yöndür.
+
+46
+00:09:20,844 --> 00:09:22,663
+Şu yön pozitif yöndür.
+
+47
+00:09:22,663 --> 00:09:28,384
+R'nin negatif ya da pozitif olması R'ye de yönlü bir büyüklük dedik.
+
+48
+00:09:28,764 --> 00:09:34,403
+R'nin pozitif ya da negatif olmasını da şu şekilde belirliyoruz.
+
+49
+00:09:34,403 --> 00:09:40,423
+Eğer R sıfırdan küçük ise
+
+50
+00:09:40,423 --> 00:09:45,043
+R sıfırdan küçük demeyeyim de
+
+51
+00:09:45,043 --> 00:09:47,624
+eksi R ise R sıfırdan büyük olsun
+
+52
+00:09:47,624 --> 00:09:51,024
+Ben bir pardon kuru bir bez getireyim bu ıslak
+
+53
+00:10:11,796 --> 00:10:22,196
+R dediğimiz gibi noktanın kutup noktasına olan uzaklığı olduğu için uzaklık daima nedir? Pozitif bir büyüklüktür.
+
+54
+00:10:23,956 --> 00:10:31,736
+Dolayısıyla, peki R'nin negatif olduğu durumlar olamaz mı? Olabilir. O ne anlama geliyor? Şimdi ona bakalım.
+
+55
+00:10:33,016 --> 00:10:36,556
+Ben karışıklık olmasın diye şöyle yazacağım.
+
+56
+00:10:41,491 --> 00:10:58,731
+Negatif ise r küçük 0 ise r virgül teta noktası kutupsal koordinatlarda nasıl gösterilecek?
+
+57
+00:10:59,131 --> 00:11:08,751
+r virgül teta noktası kutupsal koordinatlarda eksi r virgül pi artı teta noktası olarak alınır.
+
+58
+00:11:08,751 --> 00:11:11,891
+Bu şu demektir.
+
+59
+00:11:14,911 --> 00:11:17,751
+Bu bizim kutupsal koordinatlarımız bu kutup noktamız.
+
+60
+00:11:19,871 --> 00:11:22,991
+r negatif sıfırdan küçük ise dedik.
+
+61
+00:11:23,611 --> 00:11:24,671
+r virgül teta.
+
+62
+00:11:24,871 --> 00:11:29,291
+Öncelikle ne yapacağım ben?
+
+63
+00:11:30,511 --> 00:11:33,611
+Teta açısı yapan doğruyu çizeceğim.
+
+64
+00:11:34,432 --> 00:11:37,531
+Şurası teta açısı olsun.
+
+65
+00:11:37,531 --> 00:11:40,651
+teta açısı yapan doğruyu çiziyorum.
+
+66
+00:11:40,831 --> 00:11:43,932
+Ancak burada r uzunluğunu alamıyorum.
+
+67
+00:11:44,111 --> 00:11:44,751
+Çünkü neden?
+
+68
+00:11:45,151 --> 00:11:45,971
+r negatif.
+
+69
+00:11:46,491 --> 00:11:50,231
+r negatif olduğu için şunu yapıyoruz.
+
+70
+00:11:51,831 --> 00:11:53,751
+Bu doğruyu uzatıyoruz.
+
+71
+00:11:53,751 --> 00:11:56,051
+bunun uzantısı üzerinde
+
+72
+00:11:56,051 --> 00:12:03,911
+bir
+
+73
+00:12:10,419 --> 00:12:23,979
+R negatif olduğu için eksi R ne olacak? Pozitif bir değer olacak. Dolayısıyla bu doğrunun uzantısı üzerinde R kadar uzunluğu belirliyoruz.
+
+74
+00:12:23,979 --> 00:12:27,000
+Şurası şöyle mutlak değer R diyeyim tamam mı?
+
+75
+00:12:27,000 --> 00:12:28,279
+Şu nokta
+
+76
+00:12:31,860 --> 00:12:38,680
+R teta noktası, bu aynı zamanda nedir?
+
+77
+00:12:40,240 --> 00:12:44,480
+Eksi R, pi artı teta noktasıdır.
+
+78
+00:12:44,480 --> 00:12:52,740
+P artı teta, bakın teta açısı bu, pi kadar daha açı yaptığında şu açı pi artı teta açısı oluyor.
+
+79
+00:12:58,484 --> 00:13:05,084
+Yani doğru şu doğru üzerinde, negatif uzunluğu şu doğru üzerinde almıyoruz.
+
+80
+00:13:06,944 --> 00:13:11,043
+Bunun uzantısı üzerinde şu doğru üzerinde alıyoruz.
+
+81
+00:13:11,424 --> 00:13:18,264
+Bu yüzden negatiflik olursa eğer R'de ne yapacağız?
+
+82
+00:13:19,364 --> 00:13:21,624
+Theta doğrusunu çizeceğiz.
+
+83
+00:13:21,624 --> 00:13:30,684
+Theta doğrusunu uzatıp, onun uzantısı üzerinde pozitif R kadar uzunluğu işaretleyeceğiz.
+
+84
+00:13:30,824 --> 00:13:39,864
+Orası bizim eksi R, Theta, yani R pozitifse eksi R, Theta noktamız olacak.
+
+85
+00:13:43,475 --> 00:13:51,796
+Kutupsal koordinatlarda en çok karıştırılan kafa karışıklığı yaratan şey bu eksi re değerlerini göstermektir.
+
+86
+00:13:52,436 --> 00:13:56,916
+Açının eksisini görüyoruz da o eksi yön.
+
+87
+00:13:57,235 --> 00:14:00,556
+Re'nin eksisi işte biraz kafa karıştırıyor.
+
+88
+00:14:00,556 --> 00:14:12,775
+Neden? Çünkü bir noktada şu nokta re tete olduğu gibi eksi ile ifade edilen, eksi re ile ifade edilen bir noktaya da karşılık gelebilmekte.
+
+89
+00:14:13,475 --> 00:14:19,296
+Yani o yüzden aynı yerde eksi değerleri de yazabilmekteyiz.
+
+90
+00:14:19,395 --> 00:14:21,076
+Bu birazcık kafa karıştırıyor.
+
+91
+00:14:21,076 --> 00:14:22,975
+Bir de şunu söyleyeyim.
+
+92
+00:14:23,655 --> 00:14:33,076
+Kutupsal koordinatlarda bir noktayı, düzlemdeki bir noktayı tek türlü gösterebiliyorken kutupsal koordinatlarda bunu yapamıyoruz.
+
+93
+00:14:33,836 --> 00:14:39,456
+Çünkü her iki pi derece açı yaptığımızda aynı noktaya geliyoruz.
+
+94
+00:14:39,456 --> 00:14:53,316
+Yani periyodik olduğu için bu sistem bir noktayı sonsuz şekilde yazabiliyoruz, ifade edebiliyoruz.
+
+95
+00:14:53,855 --> 00:15:04,676
+Re teta noktasını aynı zamanda ben çünkü bu noktadan hareket edip iki pi derecelik açı yaptığımda tekrar bu noktaya gelirim değil mi?
+
+96
+00:15:04,676 --> 00:15:09,676
+Dolayısıyla bu noktayı iki pi artı teta noktası olarak da yazabilirim.
+
+97
+00:15:14,259 --> 00:15:22,259
+Geldim, bir daha 2 pi derecelik açı yaparsam, yani 4 pi derecelik açı yaparsam, bu ne olacak? Yine aynı nokta olacak.
+
+98
+00:15:26,227 --> 00:15:33,567
+Bakın, şu noktayı bu şekilde sonsuz şekilde yazabiliyorum.
+
+99
+00:15:33,567 --> 00:15:38,467
+Noktanın sonsuz tane temsilini yazabiliyorum. Şöyle yazayım.
+
+100
+00:15:42,067 --> 00:15:43,268
+Ya da ulu isimli mi?
+
+101
+00:15:52,884 --> 00:15:56,524
+1, R, theta noktasını
+
+102
+00:16:00,275 --> 00:16:07,216
+2NP artı teta şeklinde yazabiliriz.
+
+103
+00:16:07,216 --> 00:16:08,175
+Burada
+
+104
+00:16:13,779 --> 00:16:15,379
+n dediğim sayı nedir?
+
+105
+00:16:15,939 --> 00:16:16,220
+n
+
+106
+00:16:16,220 --> 00:16:18,039
+0
+
+107
+00:16:18,039 --> 00:16:21,279
+eksi artı 1
+
+108
+00:16:21,279 --> 00:16:23,500
+eksi artı 2
+
+109
+00:16:23,500 --> 00:16:25,459
+şeklinde. Yani bir
+
+110
+00:16:25,459 --> 00:16:27,000
+tam sayıdır.
+
+111
+00:16:27,839 --> 00:16:28,079
+n
+
+112
+00:16:28,079 --> 00:16:33,079
+Sonsuz şekilde bir noktayı
+
+113
+00:16:33,079 --> 00:16:34,620
+gösterebiliyoruz.
+
+114
+00:16:45,812 --> 00:17:01,812
+5 tane örnek yapalım, açı gösterelim kutupsal koordinatlarda, buna bakalım. Şunu sileyim. Artık kutupsal koordinatların çizimi basit. Ancak...
+
+115
+00:17:06,132 --> 00:17:08,612
+Şöyle yazayım. Örnek.
+
+116
+00:17:13,523 --> 00:17:16,803
+3, pi bölü 4 noktası.
+
+117
+00:17:24,852 --> 00:17:30,012
+Eksi pi'yi bölü 4 noktasına alalım. Açıyı eksi aldığımızda eksi yönde alacağım.
+
+118
+00:17:34,675 --> 00:17:35,795
+eksi 3
+
+119
+00:17:47,571 --> 00:17:49,711
+Pi bölü 2 noktasını alalım.
+
+120
+00:18:10,740 --> 00:18:18,420
+3, pi bölü 2 noktasını alın. Bu noktaları kutupsal koordinatlarda gösterelim.
+
+121
+00:18:18,420 --> 00:18:20,859
+Öncelikle,
+
+122
+00:18:30,996 --> 00:18:31,996
+gösterelim diyebilirim.
+
+123
+00:18:35,604 --> 00:19:04,844
+Nöyledikler, kutup noktamı belirledim. Bu da benim kutup ekseni. Bunu çiziyoruz. Kutup noktamız bu. İlk doğrumuz nedir? X ekseniyle pi bölü 4 derece açığı yapan bir doğru. Bu arada, teta eşit, sabitlikler, kutupsal koordinatlarda bir doğru gösterirler.
+
+124
+00:19:09,107 --> 00:19:15,248
+R eşit sabitlerde yani R1 teta eşit pi bölü 2.
+
+125
+00:19:15,707 --> 00:19:17,707
+Teta eşit pi bölü 2 ne demek?
+
+126
+00:19:18,807 --> 00:19:24,327
+X ekseni ile pi bölü 2 derecelik açı yapan doğru demek.
+
+127
+00:19:24,947 --> 00:19:27,927
+R eşit 1 demek mesela bu ne demektir?
+
+128
+00:19:28,867 --> 00:19:31,488
+Teta'yı kaç derece alırsanız alın.
+
+129
+00:19:31,488 --> 00:19:33,427
+R uzunluğu hep ne olacak?
+
+130
+00:19:33,567 --> 00:19:34,307
+1 olacak.
+
+131
+00:19:34,567 --> 00:19:35,627
+Bu da nedir?
+
+132
+00:19:36,127 --> 00:19:36,988
+Çemberdir.
+
+133
+00:19:36,988 --> 00:19:45,768
+Yani yarı çapı bir birim yani şu sabit kadar olan merkezil çemberdir.
+
+134
+00:19:46,927 --> 00:19:48,827
+Teta sabit doğru gösterir.
+
+135
+00:19:49,048 --> 00:19:51,528
+R sabit de bir çember gösterir.
+
+136
+00:19:52,467 --> 00:19:53,827
+Onu da öyle not ettik.
+
+137
+00:19:54,347 --> 00:19:57,087
+Şimdi öncelikle ne yapacağım?
+
+138
+00:19:57,087 --> 00:20:00,788
+Ben şu pi bölü 4 doğrusunu çizeceğim.
+
+139
+00:20:01,067 --> 00:20:04,567
+Pi bölü 4 doğrusu tam birinci açı ortay değil mi?
+
+140
+00:20:04,567 --> 00:20:08,347
+Şu pi bölü 4 doğrusu olsun.
+
+141
+00:20:12,211 --> 00:20:19,112
+Bu doğru üzerinde 3 birimlik uzunluk aldığında, o da şu noktaya denk gelsin.
+
+142
+00:20:19,291 --> 00:20:21,451
+İşte 1, 2, 3 olsun.
+
+143
+00:20:22,031 --> 00:20:23,991
+Şu nokta ne olacak?
+
+144
+00:20:24,612 --> 00:20:28,412
+3 virgül pi bölü 4 noktası olacak.
+
+145
+00:20:32,403 --> 00:20:39,183
+Şimdi, 3 virgül eksi pi bölü 4 noktasını gösterelim.
+
+146
+00:20:40,403 --> 00:20:44,604
+Doğru, eksi pi bölü 4 olduğu için, açıyı ne yapacağım?
+
+147
+00:20:44,743 --> 00:20:48,084
+X eksenini de ters yönde alacağım.
+
+148
+00:20:48,223 --> 00:20:49,844
+Yani saat yönünde alacağım.
+
+149
+00:20:50,344 --> 00:20:51,703
+O halde o da ne olur?
+
+150
+00:20:53,844 --> 00:20:54,884
+Şu doğru olur.
+
+151
+00:20:56,884 --> 00:20:59,523
+Ucuna şey koymaya gerek yok.
+
+152
+00:20:59,523 --> 00:21:02,144
+Bu doğru.
+
+153
+00:21:07,796 --> 00:21:14,956
+Şurası pi bölü 4 açısı. Burası da nedir? Eksi pi bölü 4 açısı.
+
+154
+00:21:17,776 --> 00:21:21,816
+Bu doğru üzerinde yine uzunluğu ne kadar alacağım? 3 birim alacağım.
+
+155
+00:21:22,655 --> 00:21:25,375
+1, 2, 3 birim şurası olsun.
+
+156
+00:21:31,635 --> 00:21:35,455
+Bu noktada, eksi 3 virgül, pardon,
+
+157
+00:21:41,203 --> 00:21:44,963
+3 virgül eksi pi bölü 4 noktası oldu.
+
+158
+00:21:51,667 --> 00:21:57,447
+Şimdi, eksi 3 pi bölü 2 doğrusunu çizelim.
+
+159
+00:21:58,187 --> 00:22:00,548
+Öncelikle pi bölü 2 doğrusu nedir?
+
+160
+00:22:00,627 --> 00:22:04,247
+X ekseninde dik olan şu doğrudur.
+
+161
+00:22:11,988 --> 00:22:14,748
+Şurada, theta eşit pi bölü 2.
+
+162
+00:22:19,604 --> 00:22:25,564
+şöyle de gösterebilirsiniz. Dik olduğunu zaten bilse şöyle ikisini birden gösterelim.
+
+163
+00:22:30,003 --> 00:22:57,603
+üzerinde ne alacağım? Eksi 3 birimlik bir uzunluk. Eksi 3 birim burada alamayacağım için doğrunun uzantısını almak zorundayım. Aldım. Bu uzantı üzerinde 3 birimlik uzunluk seçeceğim. 1, 2, 3 birim şurası olsun. O halde nokta ne olacak? Eksi 3 bir gül pi bölü 2 noktası.
+
+164
+00:22:57,603 --> 00:23:06,003
+Bakın, şu aşağıda olacak. Diğer noktamız gelir. 3 bir gül pi bölü 2 noktası.
+
+165
+00:23:11,284 --> 00:23:28,344
+P bölü 2 burasıydı. Şunun üzerinde 3 birimlik uzunluk alırsam, burası da 3,2 bölü 2 noktası olur. Şu devamlarını çizmeye gerek yok. İşte bu noktalar, bu noktalar.
+
+166
+00:23:32,180 --> 00:23:35,340
+İsterseniz buraya bir de şu noktayı ekleyelim.
+
+167
+00:24:05,587 --> 00:24:07,268
+P noktasını ekleyelim.
+
+168
+00:24:11,092 --> 00:24:12,192
+0 derecedir.
+
+169
+00:24:13,172 --> 00:24:14,492
+Pi ne olacak?
+
+170
+00:24:15,072 --> 00:24:16,872
+Bu doğru olacak.
+
+171
+00:24:16,992 --> 00:24:17,532
+Şu doğru.
+
+172
+00:24:21,523 --> 00:24:22,163
+Burası
+
+173
+00:24:27,059 --> 00:24:53,000
+pi derecelik açı olacak. Yani teta eşit pi doğrusu şu doğru. Bunun üzerinden ne alacağım? Eksi iki birim bir uzunluk alamayacağım için ne yapıyorum? O eksi iki birimi bunun uzantısı üzerinde, yani şu tarafta iki birimlik uzunluk olarak alıyorum. Şu noktayı çizelim. Bu da eksi iki pi noktası oluyor.
+
+174
+00:24:53,000 --> 00:25:13,399
+Gördüğünüz gibi, eksi olan noktalar da buralarda, her yerde olabiliyor. Şu nokta eksi iki pi. Bu noktayı aynı zamanda iki birgül sıfır noktası olarak da gösterebiliriz.
+
+175
+00:25:14,000 --> 00:25:17,659
+Şunu da not edelim.
+
+176
+00:25:17,659 --> 00:25:24,659
+Kutupsal koordinat sisteminde, orijini şu şekilde gösteriyoruz.
+
+177
+00:25:35,347 --> 00:25:39,207
+0, theta orijini gösterir. Tamam mı?
+
+178
+00:25:40,607 --> 00:25:41,687
+Bu ne demektir?
+
+179
+00:25:42,228 --> 00:25:43,907
+Theta burada her şey olabilir.
+
+180
+00:25:44,347 --> 00:25:47,927
+Kaç derecelik açı alırsanız alın, uzunluk hep ne olacak?
+
+181
+00:25:48,107 --> 00:25:48,867
+Sıfır olacak.
+
+182
+00:25:49,067 --> 00:25:53,147
+Dolayısıyla hep bu noktayı gösterecek.
+
+183
+00:25:53,147 --> 00:25:55,827
+Şu noktada orijin oluyor.
+
+184
+00:25:56,008 --> 00:25:59,028
+0, theta noktası oluyor.
+
+185
+00:26:00,768 --> 00:26:03,228
+Şimdi bunlarla ilgili sorunuz var mı?
+
+186
+00:26:27,667 --> 00:26:29,627
+Galiba sorumuz devam edelim.
+
+187
+00:27:10,708 --> 00:27:23,488
+Şimdi, kutupsal koordinat sistemiyle, nasıl diyelim, kutupsal koordinatlarla kartezyen koordinatlar arasındaki geçişleri şimdi yazalım.
+
+188
+00:27:24,488 --> 00:27:27,988
+Aradaki ilişkiyi görelim.
+
+189
+00:27:29,088 --> 00:27:31,327
+Bunun için de şöyle diyoruz.
+
+190
+00:27:31,668 --> 00:27:38,708
+Eğer kartezyen ve kutupsal koordinatları bir arada alırsak,
+
+191
+00:27:42,836 --> 00:27:46,655
+Şu x ekseni aynı zamanda bizim kutup eksenimiz oluyor.
+
+192
+00:27:48,655 --> 00:27:49,336
+Tamam mı?
+
+193
+00:27:49,976 --> 00:27:55,976
+Bunları genellikle grafik çizerken kartezyen ve kutupsal koordinatları bir arada çiziyoruz.
+
+194
+00:27:56,556 --> 00:27:57,635
+Yani çakıştırıyoruz.
+
+195
+00:27:58,236 --> 00:28:01,736
+Kutup eksenimiz pozitif x ekseni ile çakışıyor.
+
+196
+00:28:01,736 --> 00:28:09,375
+Şu y doğrusu y ekseni de teta eşit pi doğrusu olarak alınabilir.
+
+197
+00:28:09,375 --> 00:28:11,316
+Ama şurası teta eşit pi'dir.
+
+198
+00:28:11,415 --> 00:28:15,175
+Burası teta eşit eksi pi bölü 2'dir.
+
+199
+00:28:15,496 --> 00:28:17,355
+Teta eşit eksi pi bölü 2'dir.
+
+200
+00:28:17,675 --> 00:28:19,615
+Şunu da burada söyleyeyim.
+
+201
+00:28:20,256 --> 00:28:21,615
+Doğruyu çizerken
+
+202
+00:28:21,615 --> 00:28:24,175
+teta eşit
+
+203
+00:28:24,175 --> 00:28:26,715
+diyelim ki pi bölü 2.
+
+204
+00:28:26,715 --> 00:28:28,435
+Bunu nasıl yapıyorum?
+
+205
+00:28:31,715 --> 00:28:34,996
+Kutuptan çıkıp teta açısı yapan açı
+
+206
+00:28:34,996 --> 00:28:39,135
+yani pi bölü 2 açı yapan doğruyu çiziyorum.
+
+207
+00:28:39,375 --> 00:28:39,875
+Ancak bu doğrusu
+
+208
+00:28:39,875 --> 00:28:42,796
+Ancak bu doğrunun uzantısını çizmiyorum.
+
+209
+00:28:43,455 --> 00:28:45,695
+Çünkü bunun uzantısı başka bir şey.
+
+210
+00:28:46,415 --> 00:28:47,675
+Bu doğru.
+
+211
+00:28:53,523 --> 00:28:57,523
+Şu doğru, teta eşit pi bölü 2 doğrusu.
+
+212
+00:28:58,003 --> 00:28:58,663
+Bu doğru,
+
+213
+00:29:04,723 --> 00:29:07,243
+teta eşit eksi pi bölü 2 doğrusu.
+
+214
+00:29:07,384 --> 00:29:12,443
+Bir doğruyu çizince, orjinden geçen uzantısını çizmiyorsunuz.
+
+215
+00:29:12,823 --> 00:29:21,384
+Orjinden çıkıp sonsuza doğru uzanan doğrular şeklinde çizilir kutupsal koordinatlar.
+
+216
+00:29:22,943 --> 00:29:29,384
+Devamını çizdiğinizde, yani şu doğru, şu doğru teta eşit pi bölü 2 doğrusu değildir.
+
+217
+00:29:30,223 --> 00:29:34,124
+Teta eşit pi bölü 2 burasıdır.
+
+218
+00:29:34,723 --> 00:29:37,163
+Şu teta eşit pi bölü 2 doğrusu.
+
+219
+00:29:37,163 --> 00:29:41,323
+Ama bunu çizdiğinizde, işte bu teta eşit pi bölü 2 doğrusu olmuyor.
+
+220
+00:29:41,743 --> 00:29:52,144
+O yüzden, y olarak demek, bunu y demek, daha işinizi kolay hale getirebilir.
+
+221
+00:29:52,624 --> 00:29:56,703
+Çünkü bunun devamı, teta eşit eksi pi bölü 2 doğrusu oluyor.
+
+222
+00:29:59,323 --> 00:30:01,063
+Şimdi ne yapıyorduk biz?
+
+223
+00:30:01,063 --> 00:30:08,963
+Kartezyen ve kutupsal koordinatlar arasındaki bağıntıları çıkarmaya çalışıyoruz.
+
+224
+00:30:08,963 --> 00:30:09,963
+Kartezyen ve kutup bizden bir kutup bizden.
+
+225
+00:30:09,963 --> 00:30:13,963
+Kartezyen ve kutup bizden.
+
+226
+00:30:14,451 --> 00:30:36,692
+Şuradaki koordinat sistemini çakıştırarak çizdik. Şuraya y ekseni dedim. O rejim, burası x ekseni, aynı zamanda kutup eksenimdir. Dolayısıyla bu düzlemdeki herhangi bir p noktasını göz önüne alalım. Bu p noktasının kartezyen koordinatları nedir? x virgül y'dir.
+
+227
+00:30:36,692 --> 00:30:50,332
+Kartezyen koordinatlarını böyle gösteriyoruz. Yani x eksenine çizdiğimiz şu dik uzaklık, x ekseni üzerinde x birim kadar bir parçaya denk geliyor.
+
+228
+00:30:51,051 --> 00:31:02,112
+y ekseni üzerindeki şu dik uzaklıkta y'de ayırdığı, işte yine bunu da y ile gösterdiğim y birimlik bir parçaya denk geliyor.
+
+229
+00:31:02,112 --> 00:31:08,112
+dolayısıyla şu p noktası
+
+230
+00:31:13,299 --> 00:31:15,759
+Şu uzunluğunu yine R'ye de gösterelim.
+
+231
+00:31:19,899 --> 00:31:26,200
+B noktası olarak yazarsak, R'nin karesi neye eşit olacak?
+
+232
+00:31:28,159 --> 00:31:32,839
+X'in karesi artı, Y'nin karesini eşit olacak.
+
+233
+00:31:33,220 --> 00:31:34,399
+Kart yazıyan da böyle.
+
+234
+00:31:34,399 --> 00:31:39,399
+Şimdi kutupsal koordinatlarını yazmış olsaydık,
+
+235
+00:31:39,399 --> 00:31:45,720
+O zaman uzunluğu R ile gösterdik.
+
+236
+00:31:45,799 --> 00:31:46,940
+Uzunluğu R.
+
+237
+00:31:47,899 --> 00:31:49,379
+Şu açıda ne kadar olacak?
+
+238
+00:31:49,579 --> 00:31:50,940
+Teta kadar olacak değil mi?
+
+239
+00:31:51,000 --> 00:31:52,859
+Bunu da teta ile gösterirsek,
+
+240
+00:31:54,680 --> 00:31:59,960
+kutupsal koordinatlarımızla, kartezyan koordinatlarımızı bu şekilde yazabiliriz.
+
+241
+00:32:00,039 --> 00:32:01,339
+Kartezyan ve kutupsal.
+
+242
+00:32:01,440 --> 00:32:02,019
+Ters göster.
+
+243
+00:32:02,480 --> 00:32:05,019
+Şimdi buna göre yazarsak,
+
+244
+00:32:05,859 --> 00:32:07,399
+ne olacak?
+
+245
+00:32:07,779 --> 00:32:08,579
+Sinüs, teta.
+
+246
+00:32:08,579 --> 00:32:38,559
+Önce kosinüs, teta.
+
+247
+00:32:37,460 --> 00:32:38,900
+Sinüs teta neye eşit?
+
+248
+00:32:40,039 --> 00:32:42,559
+Y bölü R'ye eşit.
+
+249
+00:32:42,940 --> 00:32:48,620
+Buradan da Y eşit R çarpı sinüs teta yazabilirim.
+
+250
+00:32:49,059 --> 00:32:52,559
+Bakın, şu bulduğum bağıntılar, bu da dahil.
+
+251
+00:32:53,920 --> 00:32:55,420
+Şu üçü nedir?
+
+252
+00:32:56,200 --> 00:33:01,500
+Kartezyan ve kutupsal koordinatlar arasındaki geçişleri veren bağıntılardır.
+
+253
+00:33:01,500 --> 00:33:12,819
+Bunları kullanarak, kutupsal koordinatlardan, kartezyan koordinatlara, kartezyandan da kutupsal koordinatlara geçmemiz mümkün.
+
+254
+00:33:14,079 --> 00:33:16,039
+Ayrıca şunu da yazalım.
+
+255
+00:33:16,420 --> 00:33:18,779
+Tanjant teta da neye eşit olacak?
+
+256
+00:33:19,360 --> 00:33:23,720
+Y bölü X'e eşit olacak.
+
+257
+00:33:23,920 --> 00:33:27,539
+Bunu da şöyle çerçeve içine alalım.
+
+258
+00:33:27,539 --> 00:33:40,700
+Şu dört tane bağıntı bize kutupsal ve kartezyan koordinatlar arasındaki değişimi veren bağıntılardır.
+
+259
+00:34:06,900 --> 00:34:07,700
+sorunuz?
+
+260
+00:34:43,092 --> 00:34:45,771
+2x-3y eşit 5
+
+261
+00:34:45,771 --> 00:34:47,731
+Doğrusunun
+
+262
+00:34:47,731 --> 00:34:52,412
+Kutupsal denklemini yazalım.
+
+263
+00:35:07,443 --> 00:35:08,623
+not diye isterseniz.
+
+264
+00:35:20,596 --> 00:35:23,335
+Kutupsal denklem dediğimiz şey şöyle yazılır.
+
+265
+00:35:23,416 --> 00:35:32,396
+Kutupsal denklem R eşit F teta şeklinde yazılır ile ifade edilir.
+
+266
+00:35:41,268 --> 00:35:46,228
+Bunu da not aldık. Şimdi gelelim şu doğrunun kutupsal denklemini yazmaya.
+
+267
+00:35:46,628 --> 00:35:50,367
+Kartizyan ile kutupsal arasındaki geçiş bağıntılarını biliyoruz.
+
+268
+00:35:50,367 --> 00:35:57,467
+Dolayısıyla şöyle diyelim 2x-3y eşit 5 denkleminde x yerine ne yazacağım?
+
+269
+00:35:57,748 --> 00:36:03,048
+R kosinus teta yazacağım. Y yerine de R sinüs teta yazacağım.
+
+270
+00:36:03,048 --> 00:36:06,268
+Burada R'yi çekersek
+
+271
+00:36:06,268 --> 00:36:06,288
+R'yi çekersek
+
+272
+00:36:15,092 --> 00:36:22,012
+5 bölü 2 kosinus teta eksi 3 sinüs teta olur.
+
+273
+00:36:22,012 --> 00:36:22,852
+Bakın.
+
+274
+00:36:29,427 --> 00:36:39,127
+Kutupsal koordinatlarda böyle bir denklem karşınıza çıktığında bu aslında neymiş? Kartezyen'de şöyle gösterdiğimiz bir doğrunun denklemi oluyormuş.
+
+275
+00:36:41,728 --> 00:36:55,047
+Dolayısıyla bazen kutupsal koordinatlardaki bir denklemi grafiğini çizerken onu kartezyene dönüştürerek kartezyen koordinatlardaki grafiğini çizebilirsiniz.
+
+276
+00:36:55,047 --> 00:36:59,447
+Şimdi bir başka örnek daha yapalım.
+
+277
+00:37:27,603 --> 00:37:28,623
+Koordinatlarda
+
+278
+00:37:37,331 --> 00:37:39,391
+Kartezyen denklemini şimdi yazalım.
+
+279
+00:37:46,356 --> 00:37:59,136
+Koordinatlarda bu şekilde verilen bir eğrinin, yani kutupsal bir denklemin, kartezyen denklemini yazmak için de yine deminki bağıntıları kullanacağız.
+
+280
+00:37:59,696 --> 00:38:04,576
+Böyle bir eğri nasıl bir eğri oluyormuş kartezyenle bakalım.
+
+281
+00:38:17,427 --> 00:38:17,748
+Yurada!
+
+282
+00:38:21,811 --> 00:38:42,011
+Kosinüs teta var. Kosinüs teta'nın neye eşit olduğunu biliyorum. X'e eşit olduğunu. R kosinüs teta'nın X'e eşit olduğunu biliyorum. R yok ama. R olmaması önemli değil. İki tarafı da R ile çarparsak buraya da R gelir. Öncelikle denklemin her iki tarafını R ile çarpalım.
+
+283
+00:38:49,588 --> 00:38:52,508
+Bakın şimdi daha tanıdık bir şey karşımıza çıktı.
+
+284
+00:38:53,368 --> 00:39:03,088
+R kosinus teta, x'e eşit, r kare de neye eşit, x kare artı, y kareye eşit.
+
+285
+00:39:04,268 --> 00:39:05,628
+Bunları yazarsak,
+
+286
+00:39:13,811 --> 00:39:22,172
+artı y kare eşit 2 ax oldu. Bu da nedir? x ekseni üzerinde ötelenmiş çemberdir değil mi? Bunu da düzenleyelim.
+
+287
+00:39:28,628 --> 00:39:31,068
+x kare eksi 2ax.
+
+288
+00:39:31,648 --> 00:39:33,468
+Şöyle biraz boşluk bırakacağım.
+
+289
+00:39:33,588 --> 00:39:35,228
+Artı y kare diyeceğim.
+
+290
+00:39:35,327 --> 00:39:36,428
+Eşit sıfır diyeceğim.
+
+291
+00:39:36,847 --> 00:39:40,408
+Şimdi şurayı tam kare bir ifade haline getirmek istiyorum.
+
+292
+00:39:40,948 --> 00:39:42,347
+Bunun için ne yapmalıyım?
+
+293
+00:39:43,068 --> 00:39:45,488
+Burada eksik olan a kare var.
+
+294
+00:39:45,867 --> 00:39:50,728
+Eğer burada a kare olsaydı şurası bir tam kare ifade olacaktı.
+
+295
+00:39:50,728 --> 00:39:55,608
+Ancak a kareyi ben eklediğim için onu bir de ne yapmak zorundayım?
+
+296
+00:39:56,168 --> 00:39:57,908
+Çıkarmak zorundayım.
+
+297
+00:39:58,628 --> 00:40:05,528
+Dolayısıyla şimdi artık şurası bir tam kare ifade oluyor.
+
+298
+00:40:05,827 --> 00:40:10,908
+Yani x eksi a'nın parantez karesi olacak burası.
+
+299
+00:40:12,327 --> 00:40:13,807
+Artı y kare var.
+
+300
+00:40:14,408 --> 00:40:18,708
+Eksi a kareyi de karşıya geçirirsek a kare olacak.
+
+301
+00:40:18,708 --> 00:40:19,768
+Bu nedir?
+
+302
+00:40:19,768 --> 00:40:33,748
+Merkezi a virgül sıfır noktasında olan ve yarı çapı a kadar olan bir çember denklemidir.
+
+303
+00:40:37,588 --> 00:40:40,028
+Kertesyan'da bunu çizmeyi biliyoruz.
+
+304
+00:40:41,148 --> 00:40:42,248
+Hemen çiziriz.
+
+305
+00:40:43,268 --> 00:40:46,908
+Merkezi A, 0 noktasında olacak.
+
+306
+00:40:47,108 --> 00:40:48,888
+Yarı çapı da A kadar olacak.
+
+307
+00:40:48,888 --> 00:40:49,888
+Dolayısıyla...
+
+308
+00:40:54,963 --> 00:41:00,143
+Şöyle bir çember olacak. Tabii ki siz bunu çembele benzeterek çizin.
+
+309
+00:41:06,164 --> 00:41:07,684
+Ben de biraz benzettim.
+
+310
+00:41:12,403 --> 00:41:15,103
+Böyle bir çember oluyormuş.
+
+311
+00:41:19,668 --> 00:41:35,307
+O halde, R eşit 2A kosünüs teta şeklindeki bir eğri, kutupsal koordinatlarda nasıl bir eğri olacak? Şöyle bir çemberin eğrisi olacakmış.
+
+312
+00:41:50,260 --> 00:41:51,500
+Sorunuz var mı?
+
+313
+00:41:57,460 --> 00:41:58,000
+Anlarım yok.
+
+314
+00:42:38,483 --> 00:42:41,764
+Bir zamanımız kaldı. Bir tane örnek daha yapayım isterseniz.
+
+315
+00:42:44,324 --> 00:42:45,563
+Ya da şuna bakalım.
+
+316
+00:42:46,784 --> 00:42:48,183
+Şöyle örnekleyelim.
+
+317
+00:42:50,384 --> 00:42:51,963
+Benzer olarak şunu yapalım.
+
+318
+00:42:52,583 --> 00:43:01,364
+R eşit 2a sinüs teta olursa, bunun kutu kartezyen denklemini yazalım.
+
+319
+00:43:09,940 --> 00:43:13,420
+Her iki tarafı R ile çarparsanız,
+
+320
+00:43:23,347 --> 00:43:26,467
+y² x² artı y²'ye eşitti.
+
+321
+00:43:26,947 --> 00:43:30,288
+r çarpı sinüs teta da y'ye eşitti.
+
+322
+00:43:31,748 --> 00:43:32,648
+Bu da ne olacak?
+
+323
+00:43:32,867 --> 00:43:37,047
+x² artı y² eksi 2a y.
+
+324
+00:43:37,507 --> 00:43:42,327
+Buraya a²'yi ekleyelim, bir de karşıya ekleyelim eşitlik bozulmasın.
+
+325
+00:43:42,867 --> 00:43:44,228
+Dolayısıyla bu ne olacak?
+
+326
+00:43:44,228 --> 00:43:52,367
+x² y eksi a'nın parantez karesi eşit a² olacak.
+
+327
+00:43:52,367 --> 00:43:55,668
+Aynı şekilde bunun da merkezi nerededir?
+
+328
+00:43:55,768 --> 00:43:57,728
+0,A noktasında.
+
+329
+00:43:58,987 --> 00:44:03,587
+Yarı çapı da yine A kadar olan bir çemberdir değil mi bu?
+
+330
+00:44:04,987 --> 00:44:12,487
+Bunu çizecek olursak, bu da y ekseni üzerinde ötelenmiş çember denklemi olacak.
+
+331
+00:44:24,916 --> 00:44:29,596
+Şurası A, burası 2A, burası da orjinimiz.
+
+332
+00:44:30,216 --> 00:44:33,396
+Bu da y eksenin üzerinde ötedenmiş çember olur.
+
+333
+00:44:46,003 --> 00:44:50,844
+Şu R-Teta, R-Sabitlere tekrar dönelim.
+
+334
+00:44:53,344 --> 00:44:54,743
+Not diyelim.
+
+335
+00:44:55,743 --> 00:44:58,503
+Biraz önce yazmıştık ama bir daha yazalım.
+
+336
+00:44:59,223 --> 00:45:01,943
+R-Eşit, Sabit.
+
+337
+00:45:04,163 --> 00:45:05,183
+Nedir?
+
+338
+00:45:06,983 --> 00:45:07,443
+Eğri.
+
+339
+00:45:08,123 --> 00:45:08,963
+Değil, çember.
+
+340
+00:45:08,963 --> 00:45:12,023
+Bu direkt bildiğimiz çemberdir.
+
+341
+00:45:15,572 --> 00:45:21,112
+teta eşit sabit, bu da doğru denklemidir.
+
+342
+00:45:21,992 --> 00:45:28,572
+R sabit, teta sabitlere kutupsal koordinatların koordinat eğrileri diyoruz.
+
+343
+00:45:34,420 --> 00:45:35,180
+Şunlar
+
+344
+00:45:41,684 --> 00:45:51,804
+Kutupsal koordinatlarda bunlara koordinat eğrileri diyoruz. Kutupsal koordinatlardaki koordinat eğrileri.
+
+345
+00:46:07,572 --> 00:46:34,572
+Anlayalım. Şu kutup noktamız, kutup eksimiz. Kırmızıyla ben bunu çizeyim. Örneğin, R eşit 1 ne olacak? Bir birim yarı çapındaki çember olacak. R eşit 0 orjinin kendisi. İşte R'yi 2 alırsanız,
+
+346
+00:46:38,387 --> 00:47:02,127
+Yarı çapı 2 birim olan çember olur. R'yi 3 alırsınız. Yarı çapı 3 birim olan çember olur. Bu şekilde, şöyle küçük küçük alayım. Şurası R eşit 0, R eşit 1, R eşit 2, R eşit 3, R eşit 4 diyelim. Gerisini yapmayalım. Böyle devam eder gider.
+
+347
+00:47:02,127 --> 00:47:18,567
+teta eşit sabitler neler olacak? Şurası teta eşit nedir? 0. Teta eşit 0 doğrusu.
+
+348
+00:47:18,567 --> 00:47:32,748
+Bu teta eşit. Bu teta eşit. Başka bir doğru, beta doğrusu diyelim. Beta 1, beta 2, beta 3 diyelim.
+
+349
+00:47:47,699 --> 00:47:50,179
+Şu tam dik olduğu için bunu biliyorum.
+
+350
+00:47:50,299 --> 00:47:53,179
+Teta eşit, pi bölü 2 doğrusu.
+
+351
+00:48:01,492 --> 00:48:09,332
+Şurası teta eşit pi doğrusu değil mi? Bu tam çünkü sıfırın uzantısıdır.
+
+352
+00:48:24,532 --> 00:48:30,612
+Şunların her biri bir teta doğrusudur ama böyle artık hepsini isimlendirmedik.
+
+353
+00:48:32,352 --> 00:48:43,392
+Gördüğünüz gibi R sabit ve teta sabitler düzlemde çizdiğiniz zaman bir örümcek ağına benzeyen bir desen oluşturur.
+
+354
+00:48:43,392 --> 00:48:53,731
+Yani koordinat eğrilerinin kutupsal koordinatlardaki oluşturduğu desen örümcek ağına benzer.
+
+355
+00:48:53,731 --> 00:48:56,912
+Oysa kartezyen koordinatlarda nasıldı?
+
+356
+00:48:59,032 --> 00:49:03,092
+X sabit, Y sabit doğruları.
+
+357
+00:49:04,472 --> 00:49:10,872
+Bunlar kartezyen koordinatlardaki koordinat eğrilerimizdi ya da doğrularımız.
+
+358
+00:49:12,211 --> 00:49:13,172
+Bunlar nasıldı?
+
+359
+00:49:13,412 --> 00:49:19,731
+X sabitler şöyle X eksenini kesen doğrular oluyordu.
+
+360
+00:49:19,731 --> 00:49:25,412
+Y sabitlerde Y eksenini kesen doğrular oluyordu.
+
+361
+00:49:25,532 --> 00:49:33,472
+Bunları çizdiğimizde bir milimetrik kağıt görüntüsü, milimetrik kağıt deseni çıkıyordu.
+
+362
+00:49:33,972 --> 00:49:40,532
+Şu doğrular kartezyen koordinatlardaki koordinat eğrilerinin desenidir.
+
+363
+00:49:40,532 --> 00:49:42,592
+Şunlar da nedir?
+
+364
+00:49:43,072 --> 00:49:47,771
+Kutupsal koordinatlarda koordinat eğrilerinin oluşturduğu desendir.
+
+365
+00:49:47,771 --> 00:49:58,352
+Yani kartezyen koordinatlarda böyle kare kare şeyler ya da dikdörtgen küçük bölgeler oluyorken burada nedir?
+
+366
+00:49:58,771 --> 00:50:01,231
+Sanki pasta gibi dilimler oluyor değil mi?
+
+367
+00:50:01,552 --> 00:50:02,492
+Dilim şeklinde.
+
+368
+00:50:02,652 --> 00:50:04,771
+Çünkü theta sabitler nedir?
+
+369
+00:50:04,892 --> 00:50:12,952
+Sıfırdan çıkıp sonsuza doğru uzayan doğrularla, merkezden çıkıp dışa doğru yayılan çemberlerden oluşuyor.
+
+370
+00:50:12,952 --> 00:50:16,432
+Kutupsal koordinatlarımız.
+
+371
+00:50:17,052 --> 00:50:19,172
+Şimdi biraz ara verelim.
+
+372
+00:50:19,352 --> 00:50:21,072
+Aradan sonra devam ederiz.
+
+373
+01:05:35,315 --> 01:05:36,755
+Ben geliyorum çocuklar.
+
+374
+01:06:02,099 --> 01:06:05,420
+Evet arkadaşlar, devam edelim.
+
+375
+01:06:29,300 --> 01:06:30,100
+örnek yapalım.
+
+376
+01:06:55,284 --> 01:06:58,963
+y-3'ün karesi eşit 9.
+
+377
+01:07:00,124 --> 01:07:02,804
+Çemberi için kutupsal denklem bulalım.
+
+378
+01:07:07,411 --> 01:07:12,851
+Biraz önce de yapmıştık. Ya da isterseniz burada şey de yapabilirsiniz.
+
+379
+01:07:14,351 --> 01:07:23,411
+Y yerine X yerine R kosinüs, Y yerine de R sinüs teta yazarak da yapabilirsiniz.
+
+380
+01:07:24,231 --> 01:07:28,391
+Ancak burada isterseniz şöyle bir kolaylık yapalım biz.
+
+381
+01:07:28,391 --> 01:07:44,151
+Biraz önce X kare artı Y eksi A'nın kalesi eşit A kare.
+
+382
+01:07:44,151 --> 01:08:02,531
+Şeklindeki bir kutupsal eğrinin denkleminin, yani bu kartezyen denkleminin kutupsal koordinatlardaki ifadesinin R eşit 2A sinüs teta olduğunu biraz önce görmüştük.
+
+383
+01:08:02,971 --> 01:08:03,091
+Tamam.
+
+384
+01:08:03,711 --> 01:08:06,771
+2A sinüs teta şu ifadeye eşit.
+
+385
+01:08:06,771 --> 01:08:36,751
+Dolayısıyla şuna bakarsanız eğer.
+
+386
+01:08:36,751 --> 01:09:06,731
+Önce şu an önceki bir kutupsal eğrinin denkleminin kutupsal koordinatörü,
+
+387
+01:09:06,731 --> 01:09:08,731
+bunun grafiğinin kutupsal eğrinin denkleminin kutup,
+
+388
+01:09:11,891 --> 01:09:30,072
+Biz zaten biraz önce bunu yapmıştık galiba değil mi? Grafiği de... Yok, ağlı şekilde yapmıştık. Böyle de bir grafiği olacak. Şurası 3 olacak. Burası 0, burası 6 olur.
+
+389
+01:09:34,804 --> 01:09:36,644
+Şimdi şu örneğe göz atalım.
+
+390
+01:09:38,804 --> 01:09:43,804
+Ancak ben bu örneği yazmak için yukarıyı sileyim ki aşağıya kullanabileyim.
+
+391
+01:09:45,104 --> 01:09:46,083
+Şöyle yapalım.
+
+392
+01:10:09,011 --> 01:10:21,072
+Aşağıdaki kutupsal koordinatlar yerine denge olan kartezyen denklemleri bulunuz ve grafiklerini tanımlayınız, çiziniz diyelim.
+
+393
+01:10:21,572 --> 01:10:23,231
+Şimdi şunları ben böyle yazayım.
+
+394
+01:10:23,931 --> 01:10:28,731
+R kosinus teta eşit eksi dört.
+
+395
+01:10:30,371 --> 01:10:31,192
+Bu eksi dört?
+
+396
+01:10:36,404 --> 01:10:55,284
+ve re kare eşit 4 re kosinüs teta ve c'de re eşit 4 bölü 2 kos teta eksisi teta.
+
+397
+01:10:55,284 --> 01:11:01,284
+Böyle bir ifade, kartezyende bir denklem.
+
+398
+01:11:01,964 --> 01:11:08,444
+ax artı yani 2x eksiye eşit 4 gibi bir denklem olması lazım.
+
+399
+01:11:08,564 --> 01:11:12,044
+Biraz sonra yaptığımızda zaten göreceğiz neye eşit olduğunu.
+
+400
+01:11:16,979 --> 01:11:28,759
+Bunların hem kutupsal koordinatlardaki eşitini bulacağız hem de grafiğini çizeceğiz. A ile başlayalım.
+
+401
+01:11:32,467 --> 01:11:46,068
+r kosinus teta eşit eksi 4. r kosinus teta zaten niye eşit? Bu x demek. Dolayısıyla x eşit eksi 4 doğrusu.
+
+402
+01:11:50,003 --> 01:11:58,083
+Bunu çizdiğimizde de x eşit eksi 4, şurası eksi 4 ise eğer şu doğru olacak.
+
+403
+01:11:59,224 --> 01:12:05,804
+x eşit eksi 4 doğrusu bu doğru olacak.
+
+404
+01:12:07,684 --> 01:12:13,503
+Eksi 4 noktasından geçen dik doğru, ha tanımlayınız demiştik, çizmesek de olur.
+
+405
+01:12:13,804 --> 01:12:19,363
+Sadece ne olacak? x eşit eksi 4 noktasından geçen dik doğru olduğunu yazacağız.
+
+406
+01:12:19,363 --> 01:12:20,804
+B'ye bakalım.
+
+407
+01:12:22,963 --> 01:12:28,884
+R kare 4 r kosinus teta.
+
+408
+01:12:29,863 --> 01:12:33,703
+Böyle bir, ha burada r kare var yalnız.
+
+409
+01:12:35,203 --> 01:12:36,403
+Ama burada da r var.
+
+410
+01:12:37,384 --> 01:12:38,724
+Bu da ne olacak?
+
+411
+01:12:39,483 --> 01:12:42,543
+x kare, r kare x kare artı y kareye eşit.
+
+412
+01:12:42,543 --> 01:12:48,144
+R kosinus teta da x'e eşit, x kare y kare eşit 4x.
+
+413
+01:12:48,144 --> 01:12:48,943
+Bu da nedir?
+
+414
+01:12:48,943 --> 01:12:51,224
+Ötelenmiş çember denklemidir.
+
+415
+01:12:52,104 --> 01:12:54,463
+x kare eksi 4x.
+
+416
+01:12:55,024 --> 01:12:58,203
+Artı 4 olursa burası tam kareye ifade olur.
+
+417
+01:12:58,304 --> 01:13:00,024
+O halde buraya 4 ekleyelim.
+
+418
+01:13:02,903 --> 01:13:04,783
+Ve 4'ü çıkaralım.
+
+419
+01:13:04,783 --> 01:13:22,344
+ve 4'ü çıkaralım.
+
+420
+01:13:09,844 --> 01:13:15,344
+x eksi 2'nin karesi olur değil mi?
+
+421
+01:13:18,868 --> 01:13:22,368
+Artı y'nin karesi eşit 4 olacak.
+
+422
+01:13:22,948 --> 01:13:23,688
+Bu da nedir?
+
+423
+01:13:24,728 --> 01:13:33,228
+Merkezi 2,0 noktasında olan ve yarı çapı 2 olan.
+
+424
+01:13:35,228 --> 01:13:36,268
+Nedir?
+
+425
+01:13:36,868 --> 01:13:37,668
+Çemberdir.
+
+426
+01:13:43,923 --> 01:13:48,104
+x eksen üzerinde ötelenmiş çember oluyor bu da.
+
+427
+01:13:58,420 --> 01:13:59,440
+C'ye bakalım.
+
+428
+01:14:06,452 --> 01:14:28,992
+Çarpımı yaparsak burada, 2R kosinus teta, eksi R sinüs teta, neye eşit olacak? 4'e eşit olacak. Şurası x'e eşit, bu da y'ye eşit. Dolayısıyla 2x eksi y eşit, 4 şeklinde nedir? Bir doğru denklemidir.
+
+429
+01:14:41,811 --> 01:14:49,731
+Tanımlamak gerekirse, bunu da ne deriz? Y'yi karşıya atarsak, eşit 2x-4 olur.
+
+430
+01:14:49,731 --> 01:14:57,791
+Eğimi 2, bir de nerede geçecek? 0 virgül, eksi 4 noktasından geçecek değil mi?
+
+431
+01:14:58,652 --> 01:15:11,532
+Eğim 2 ve x'i 0, y'si eksi 4 noktasından geçen doğru.
+
+432
+01:15:18,292 --> 01:15:27,812
+Bunları da çizdik. Şimdi bir de kutupsal olarak çizelim şu doğru ve eğrileri. Var mı sorunuz?
+
+433
+01:15:33,076 --> 01:15:46,055
+Yoksa, tekrar siliyorum tahtayı. Beni dinleyen var mı? Çok yalnız hissettim ben kendimi. Hiç kimseden ses çıkmıyor. Anladık, anlamadık.
+
+434
+01:15:46,195 --> 01:15:55,716
+Hocam, bir şey sorabilir miyim? Orada sıfıra eksi dörtten geçer dediniz ama ikiye eksi dörtten geçmiyor mu?
+
+435
+01:15:55,716 --> 01:16:06,756
+Yok tatlım. Doğru denklemini nasıl yazıyorduk? Y eşit eğim çarpı x eksi x sıfır artı y sıfır olarak yazıyorduk ya.
+
+436
+01:16:10,931 --> 01:16:22,391
+Burası 2x oldu. y eşit 2x, eksi 4 olduğu için bu ne olacak?
+
+437
+01:16:23,711 --> 01:16:30,331
+0 noktasında x0'ı 0 alırsam, y0'ı da eksi 4 alırsam buna uyuyor değil mi?
+
+438
+01:16:31,612 --> 01:16:32,652
+Sen ne dedin?
+
+439
+01:16:36,148 --> 01:16:38,148
+Ben 2'yi eksi 4 demiştim.
+
+440
+01:16:39,668 --> 01:16:40,127
+Yok.
+
+441
+01:16:41,288 --> 01:16:41,967
+Eğimi 2.
+
+442
+01:16:44,507 --> 01:16:47,368
+2 noktasından geçseydi eğer,
+
+443
+01:16:48,188 --> 01:16:50,688
+2, x, eksi 2.
+
+444
+01:16:51,228 --> 01:16:53,587
+Burası zaten eksi 4 olurdu.
+
+445
+01:16:53,587 --> 01:16:55,908
+O zaman şey,
+
+446
+01:16:58,908 --> 01:16:59,708
+y sıfır.
+
+447
+01:17:00,568 --> 01:17:01,148
+Yani şöyle,
+
+448
+01:17:02,568 --> 01:17:05,587
+pardon, eksi 2, virgül sıfır.
+
+449
+01:17:12,212 --> 01:17:16,212
+Hocam ben x'e y'ye ayrı ayrı sıfır değerini verip öyle bulmuştum.
+
+450
+01:17:19,552 --> 01:17:23,292
+Ondan sonra eksenleri kestiği noktalar oluyor ya.
+
+451
+01:17:24,912 --> 01:17:35,292
+Eksenleri kestiği noktaları öyle buluyoruz ama bir noktadan geçince denklemi aynı anda. Yani iki noktayı yerine yazdığımızda da denklemi sağlamalı.
+
+452
+01:17:35,932 --> 01:17:37,672
+Tamamdır hocam. Teşekkür ederim.
+
+453
+01:17:46,579 --> 01:17:50,039
+Bu eksi 2 sıfır noktasından da geçer mi? Geçer.
+
+454
+01:17:51,979 --> 01:17:54,539
+Eksi 2 sıfır noktasından da geçer.
+
+455
+01:17:55,819 --> 01:17:57,800
+0 eksi 4 noktasından da geçer.
+
+456
+01:17:57,899 --> 01:18:00,079
+Geçtiği bir noktayı belirlemek yeterli.
+
+457
+01:18:00,359 --> 01:18:05,760
+İsterseniz ona 0 eksi 4 deyin ya da eksi 2 sıfır noktası deyin fark etmez.
+
+458
+01:18:06,180 --> 01:18:07,920
+Bir nokta yeterli bizim için.
+
+459
+01:18:08,640 --> 01:18:09,779
+Doğruyu tanımlamak için.
+
+460
+01:18:38,996 --> 01:19:02,395
+Bir de şu örneğe bakalım. Burada da şey olarak çizelim bunları. Kutupsal da çizelim. A şıkkımız şu. 1, R, 2. Ve theta da pi bölü 2 ile 0 arasındaymış.
+
+461
+01:19:12,979 --> 01:19:13,919
+3, 2,
+
+462
+01:19:16,519 --> 01:19:18,579
+theta eşit pi bölü 4,
+
+463
+01:19:28,020 --> 01:19:29,180
+Ay yanlış yazdım.
+
+464
+01:19:30,960 --> 01:19:32,020
+Başka bir yere baktım.
+
+465
+01:19:33,700 --> 01:19:34,480
+3 pi.
+
+466
+01:19:36,480 --> 01:19:38,400
+3 pi bölü 4.
+
+467
+01:19:39,840 --> 01:19:43,060
+Teta 5 pi bölü 6.
+
+468
+01:19:44,880 --> 01:19:46,320
+R üzerinde kısıtlama yok.
+
+469
+01:19:46,440 --> 01:19:47,680
+Yani bu ne demektir?
+
+470
+01:19:47,680 --> 01:19:53,640
+R eksi sonsuz artı sonsuz arasında herhangi bir değer olabilir.
+
+471
+01:19:53,760 --> 01:19:58,000
+R üzerinde kısıtlama yoksa R böyle bir şey olabilir.
+
+472
+01:19:58,780 --> 01:20:00,400
+Bunları çizelim.
+
+473
+01:20:00,820 --> 01:20:04,400
+Kutupsal koordinatlarıyla verilen noktaların grafiğini çiziriz.
+
+474
+01:20:05,060 --> 01:20:06,820
+A şıkkına bakalım.
+
+475
+01:20:12,948 --> 01:20:31,708
+Burada grafik çizerken demiştik ki, R sabitler. Yani burada R eşit 1 alacağım, R eşit 2 alacağım. Eşitlik var çünkü. R eşit 1 nedir? Yarı çapı 1 birim olan çemberdir. R eşit 2, yarı çapı 2 birim olan çemberdir.
+
+476
+01:20:31,708 --> 01:20:41,288
+Devamını çizmiyorum çünkü teta sıfırda pi bölü 2 arasında. Yani teta eşit sıfır doğrusu şu doğru.
+
+477
+01:20:44,979 --> 01:20:55,079
+Bu doğru da nedir? Teta eşit, pi bölü 2 doğrusu. Bu iki doğru arasında kalacak. Eşitlik de olduğu için şu arayı tarıyorum.
+
+478
+01:20:57,139 --> 01:21:02,819
+İlk A şıkkının grafiği böyle oluyor. B şıkkına bakalım.
+
+479
+01:21:06,019 --> 01:21:07,939
+B'yi de şuraya çizelim.
+
+480
+01:21:07,939 --> 01:21:14,839
+R eşit eksi 3 ve R eşit 2.
+
+481
+01:21:15,239 --> 01:21:18,459
+R eşit eksi 3 ve R eşit 2'yi nasıl alacağız?
+
+482
+01:21:18,699 --> 01:21:24,439
+Burada şey, R sabit eksi 3 diyemiyorum.
+
+483
+01:21:25,059 --> 01:21:26,739
+Tek bir teta var.
+
+484
+01:21:27,399 --> 01:21:30,579
+Teta eşit pi bölü 4 doğrusu üzerinde
+
+485
+01:21:30,579 --> 01:21:37,439
+R eksi 3 ile 2 arasındaki o uzunluk kısmını yap diyor.
+
+486
+01:21:37,939 --> 01:22:07,919
+Öncelikle R eşit 3 ve R eşit pi bölü 4 doğrusu üzerinde
+
+487
+01:21:48,115 --> 01:21:56,355
+Kutupsal lakarteziyeni çakıştırarak bu şekilde de çizebilirsiniz. Sırf kutupsal koordinatları alarak da çizebilirsiniz.
+
+488
+01:21:56,895 --> 01:22:09,076
+R eşit pi bölü 4 doğrusu, şu 4'te 1'lik açı, bu theta eşit, pardon R dedim, theta eşit pi bölü 4 doğrusu.
+
+489
+01:22:09,076 --> 01:22:15,216
+Açımız pi bölü 4 yazdık.
+
+490
+01:22:15,536 --> 01:22:20,195
+Şimdi bu theta doğrusu üzerinde, R'yi, eksi 3 ve 2 alacağım.
+
+491
+01:22:20,355 --> 01:22:21,376
+2'yi alırız.
+
+492
+01:22:22,756 --> 01:22:24,735
+Bir birim, şurası iki birim olsun.
+
+493
+01:22:25,416 --> 01:22:26,416
+İşte şu nokta.
+
+494
+01:22:26,956 --> 01:22:27,475
+Gerisini
+
+495
+01:22:27,475 --> 01:22:30,475
+çizmeme gerek yok.
+
+496
+01:22:30,895 --> 01:22:32,555
+Bu nokta nedir?
+
+497
+01:22:34,256 --> 01:22:36,895
+2 virgül, pi bölü 4
+
+498
+01:22:36,895 --> 01:22:38,536
+noktasıdır.
+
+499
+01:22:38,536 --> 01:22:41,496
+Do noktasının temsilidir.
+
+500
+01:22:41,935 --> 01:22:42,655
+Şurayı aldım.
+
+501
+01:22:43,615 --> 01:22:44,456
+Bir de ne var?
+
+502
+01:22:44,796 --> 01:22:46,256
+Bu doğru üzerinde,
+
+503
+01:22:46,595 --> 01:22:49,055
+eksi 3 birimlik uzaklığı alacağım.
+
+504
+01:22:49,475 --> 01:22:49,775
+Yani,
+
+505
+01:22:49,775 --> 01:22:54,216
+eksi 3 virgül, pi bölü 4 noktasını çizeceğim.
+
+506
+01:22:54,756 --> 01:22:55,956
+Bunu da nasıl yapıyorum?
+
+507
+01:22:56,115 --> 01:22:58,355
+Eksi 3 birim olduğu için,
+
+508
+01:22:58,496 --> 01:23:00,336
+şu uzaklık eksi 3 olduğu için,
+
+509
+01:23:00,496 --> 01:23:00,756
+bunu,
+
+510
+01:23:01,676 --> 01:23:03,735
+doğrunun üzerinde değil de,
+
+511
+01:23:04,195 --> 01:23:06,456
+doğrunun uzantısını alacağım.
+
+512
+01:23:16,595 --> 01:23:18,675
+uzantısı üzerinde çizeceğim.
+
+513
+01:23:22,676 --> 01:23:47,176
+Bunun üzerinde mutlak diğer eksi 3 kadar. Yani 3 birimlik bir uzunluk alacağım. Bir birim burası olsun, iki, üç birim de burası olsun. İşte şu noktada eksi 3, pi bölü 4 oluyor. İkisi R eksi 3'den 2'ye kadar olduğu için sadece şu çizdiğimiz doğru parçasıdır bu.
+
+514
+01:23:53,811 --> 01:23:56,551
+Üçüncü olarak C'yi de çizersek
+
+515
+01:24:09,524 --> 01:24:12,224
+Pi bölü 4 ve 5 pi bölü 6.
+
+516
+01:24:18,515 --> 01:24:20,475
+3 pi bölü 4 kaç yapıyor?
+
+517
+01:24:22,735 --> 01:24:30,995
+180, 90, 45, 45 çarpı 3, 90, 135 derece yapıyor değil mi?
+
+518
+01:24:35,060 --> 01:24:38,020
+Şu 135 derece diyelim.
+
+519
+01:24:46,131 --> 01:24:47,411
+Şu kaç yapacak?
+
+520
+01:24:59,667 --> 01:25:01,427
+30-150 derece yapacak.
+
+521
+01:25:06,899 --> 01:25:08,500
+Şu da 150 dereceymiş.
+
+522
+01:25:10,319 --> 01:25:16,679
+Öncelikle 135 derecelik açı, şurası 90, şöyle 45 aldığımda.
+
+523
+01:25:40,083 --> 01:25:43,903
+Sıdası 135 derece olsun.
+
+524
+01:25:44,043 --> 01:25:45,923
+Yani 3 pi bölü 4.
+
+525
+01:25:46,344 --> 01:25:50,023
+Teta eşit 3 pi bölü 4 doğrusu.
+
+526
+01:25:50,423 --> 01:25:53,663
+Bunun üzerinde r'de herhangi bir kısıtlama yok.
+
+527
+01:25:54,023 --> 01:25:55,743
+r artı olabilir.
+
+528
+01:25:56,163 --> 01:25:57,703
+r eksi de olabilir.
+
+529
+01:25:58,123 --> 01:25:59,724
+r eksi olursa ne yapacağım?
+
+530
+01:25:59,823 --> 01:26:02,043
+Bunun uzantısını da alacağım mecburen.
+
+531
+01:26:02,043 --> 01:26:04,283
+Çünkü r üzerinde kısıtlama yok.
+
+532
+01:26:04,283 --> 01:26:10,923
+Eksi artı sonsuz arasında değiştiği için bunun uzantısını da alacağım.
+
+533
+01:26:11,063 --> 01:26:14,903
+Çünkü eksi r'leri burada işaretleyeceğim.
+
+534
+01:26:15,023 --> 01:26:16,703
+Artı r'ler burada olacak.
+
+535
+01:26:17,083 --> 01:26:19,703
+Şu kısım artı r bu kısım eksi r olacak.
+
+536
+01:26:20,403 --> 01:26:22,684
+O halde bu doğrunun tümü olacak.
+
+537
+01:26:23,003 --> 01:26:25,384
+Sonsuza iki taraftan da sonsuza uzuyor.
+
+538
+01:26:26,884 --> 01:26:28,644
+Bir de 150 derece.
+
+539
+01:26:28,764 --> 01:26:33,644
+Burası 135'ti biraz daha gelirsek 150 derece şurası olacak.
+
+540
+01:26:34,283 --> 01:26:37,224
+Ancak burada da r eksi olur.
+
+541
+01:26:37,443 --> 01:26:41,264
+Artı r'leri doğrunun bu kısmı üzerinden alırken
+
+542
+01:26:41,264 --> 01:26:43,804
+eksi r'lerde ne olacak?
+
+543
+01:26:43,983 --> 01:26:45,463
+Bu kısım üzerinde olacak.
+
+544
+01:26:45,844 --> 01:26:47,764
+Bunu da şöyle kırmızıyla çizelim.
+
+545
+01:26:50,063 --> 01:26:52,503
+5 pi bölü 6.
+
+546
+01:26:53,503 --> 01:26:55,423
+Teta eşit.
+
+547
+01:26:56,023 --> 01:26:58,144
+5 pi bölü 6 doğrusu.
+
+548
+01:26:58,224 --> 01:26:58,684
+Bu doğru.
+
+549
+01:26:58,684 --> 01:27:06,583
+Ancak r'ler negatif de olabileceği için negatif r'leri doğrunun uzantısı üzerinde
+
+550
+01:27:06,583 --> 01:27:07,663
+almam gerekiyor.
+
+551
+01:27:07,783 --> 01:27:10,563
+Dolayısıyla bunu bu şekilde çizeceğim.
+
+552
+01:27:11,844 --> 01:27:18,543
+Teta bu aralıktayken r'ler artı sonsuz eksi sonsuz aralığında olduğunda şu bölgeleri
+
+553
+01:27:18,543 --> 01:27:19,663
+tarayacağım.
+
+554
+01:27:19,663 --> 01:27:20,243
+Bu böyle.
+
+555
+01:27:20,804 --> 01:27:23,923
+Şu iki uçtan da sonsuza doğru gidiyor.
+
+556
+01:27:24,104 --> 01:27:25,323
+Şu bölgeler olacak.
+
+557
+01:27:25,323 --> 01:27:27,483
+Tabamba.
+
+558
+01:27:48,948 --> 01:27:50,887
+Sen ilk şeyi de söylüyorsun değil mi?
+
+559
+01:27:51,847 --> 01:27:56,908
+Y sıfır için x iki olmaz mı? Ben eksi iki sıfır noktası mı dedim.
+
+560
+01:27:58,368 --> 01:28:01,948
+Artı iki sıfır noktası olur. Doğru. x eksi iki sıfırdı çünkü.
+
+561
+01:28:03,128 --> 01:28:07,588
+x eksi x sıfır olduğu için bunu iki alırsak eksi iki olur değil mi?
+
+562
+01:28:07,588 --> 01:28:14,228
+İki ile de çarparız. İki çarpı x eksi iki dersek bu iki x eksi dörde eşit olur.
+
+563
+01:28:14,228 --> 01:28:19,347
+[öğrenci] dolayısıyla x eksi iki sıfır noktası olur.
+
+564
+01:28:19,648 --> 01:28:21,588
+Ben eksi iki sıfır noktası dedim.
+
+565
+01:28:22,028 --> 01:28:24,927
+[öğrenci] düzeltmiş. Teşekkür ederim [öğrenci].
+
+566
+01:28:25,188 --> 01:28:26,307
+İki sıfır noktası.
+
+567
+01:28:26,908 --> 01:28:29,288
+Bir önceki örnekte vardı o.
+
+568
+01:28:31,288 --> 01:28:31,968
+Haklısın.
+
+569
+01:28:34,628 --> 01:28:37,088
+Yalnız ben böyle geç görüyorum.
+
+570
+01:28:38,508 --> 01:28:39,347
+Yazdıklarınızı.
+
+571
+01:28:40,508 --> 01:28:42,708
+Bunlarla ilgili sorunuz var mı?
+
+572
+01:28:46,836 --> 01:28:54,876
+Şimdi eğri çizimlerine geçeceğiz. Çünkü kutupsal koordinatlarda grafik çizimleri nasıl oluyor ona bakalım.
+
+573
+01:29:07,828 --> 01:29:09,068
+Siliyorum ben tahtayı.
+
+574
+01:29:53,043 --> 01:29:55,163
+Kutupsal koordinatlarla grafik çizimi.
+
+575
+01:29:55,863 --> 01:30:13,104
+Kutupsal koordinatlarda grafik çizimini yapabilmek için, daha doğrusu bu işi kolaylaştırabilmek için, kutupsal koordinatlardaki 3 tip simetriyi bilmek bizim lehimize olacak, işimizi kolaylaştıracak.
+
+576
+01:30:13,104 --> 01:30:26,083
+Yalnız ben o simetrileri de vermeden önce, birkaç tane noktayı kutupsal koordinatlarda nasıl göstereceğimizi tekrar üzerinde durmak istiyorum.
+
+577
+01:30:30,036 --> 01:30:35,895
+eksi r virgül, eksi teta noktası.
+
+578
+01:30:37,296 --> 01:30:50,136
+Bunu şu anda artık kartezyen koordinatlar kullanmayacağım için şöyle bunu parantezle de yazabilirsiniz, köşeli parantezle de yazabilirsiniz, fark etmez.
+
+579
+01:30:50,456 --> 01:30:56,395
+Ben notlarda galiba normal parantez yazmışım, şimdi köşeli yazıyorum ama hiç sorun değil.
+
+580
+01:30:56,395 --> 01:30:59,195
+bunu parantez nasıl aldığımızın bir önemi yok.
+
+581
+01:30:59,655 --> 01:31:00,636
+Şu noktayı
+
+582
+01:31:00,636 --> 01:31:06,655
+eksi r
+
+583
+01:31:06,655 --> 01:31:09,695
+eksi teta noktasını
+
+584
+01:31:15,475 --> 01:31:19,155
+R, pi eksi tete noktasını
+
+585
+01:31:25,363 --> 01:31:25,863
+Bir de
+
+586
+01:31:36,243 --> 01:31:41,683
+R, pi artı teta noktasını gösterelim.
+
+587
+01:31:45,235 --> 01:31:49,155
+Şu noktaları kutupsal koordinatlarda gösterelim.
+
+588
+01:32:05,747 --> 01:32:09,167
+Koordinat sisteminde, koordinatlarda yada,
+
+589
+01:32:17,747 --> 01:32:20,187
+gösterelim. Çizerek gösterelim.
+
+590
+01:32:23,127 --> 01:32:26,027
+Şuraya, eksi, re, eksi teta'yı aldım.
+
+591
+01:32:26,027 --> 01:32:27,867
+Pi eksi teta'yı aldım.
+
+592
+01:32:28,007 --> 01:32:28,647
+Eksi re.
+
+593
+01:32:33,939 --> 01:32:39,399
+R, teta yı alalım. R, teta artı pi yı alalım.
+
+594
+01:32:44,787 --> 01:32:48,767
+Bir de şurada, şunu da ekleyin ben.
+
+595
+01:32:49,247 --> 01:32:53,387
+R virgül, eksi, teta noktasını alalım.
+
+596
+01:32:53,867 --> 01:32:56,527
+1, 2, 3, 4, 5, 6 tane nokta.
+
+597
+01:32:57,207 --> 01:32:58,227
+Bunları gösterelim.
+
+598
+01:32:59,387 --> 01:33:05,247
+Kutupsal koordinatlar dediği için, ben sadece kutup eksenimle kutup noktasını çiziyorum.
+
+599
+01:33:06,327 --> 01:33:07,927
+R virgül, eksi, teta.
+
+600
+01:33:08,927 --> 01:33:13,427
+Eksi, teta dediği için, şunu eksi yönde çizeceğim.
+
+601
+01:33:13,427 --> 01:33:13,727
+değil mi?
+
+602
+01:33:13,727 --> 01:33:15,847
+Şimdi, teta açım, şurası.
+
+603
+01:33:16,347 --> 01:33:18,807
+Dolayısıyla bu, eksi, teta yönü olacak.
+
+604
+01:33:20,087 --> 01:33:29,827
+Bunun üzerinde, r virim uzunluk aldığında, şu nokta, r virgül, eksi, teta noktası olacak.
+
+605
+01:33:31,887 --> 01:33:37,027
+Bir de, eksi, r virgül, pi eksi, teta noktasını alalım.
+
+606
+01:33:43,220 --> 01:33:45,980
+Teta doğrusu nasıl bir doğru olacak?
+
+607
+01:33:53,460 --> 01:33:54,920
+eksi teta doğrusu,
+
+608
+01:33:56,380 --> 01:34:00,619
+şu eksi teta doğrusunun uzantısı olacak değil mi?
+
+609
+01:34:13,971 --> 01:34:21,951
+bir şey oldu. Tam uzantısını çizmek için bir yardıma ihtiyacım var. Şöyle yapalım.
+
+610
+01:34:34,036 --> 01:34:36,136
+Nesini aldım, uzantısını aldım.
+
+611
+01:34:42,996 --> 01:34:43,496
+Görünürüz ile.
+
+612
+01:34:52,819 --> 01:35:05,099
+P-tet doğrusu da şu kırmızıyla gösterdiğim doğru olacak. Şurası P-tet açısı olacak.
+
+613
+01:35:29,395 --> 01:35:40,875
+Bunun üzerinde eksi re'yi aldığında ne yapıyordum? Burada eksi işaretleyemeyeceğim için bunun uzantısı üzerinde alıyordum. O halde eksi re
+
+614
+01:35:44,692 --> 01:35:50,011
+eksi teta da nedir? Şu noktayla aynı noktayı temsil etmek.
+
+615
+01:35:54,996 --> 01:35:57,676
+Şu iki nokta aynı noktayı temsil ediyormuş.
+
+616
+01:36:01,555 --> 01:36:02,435
+Dönelim şimdi şuna.
+
+617
+01:36:14,387 --> 01:36:19,528
+Teta dediğinde, şurada, eksi yönde alacağım şu teta açısı.
+
+618
+01:36:19,887 --> 01:36:20,688
+Eksi teta bu.
+
+619
+01:36:21,747 --> 01:36:26,087
+Bunun üzerinde eksi re birim uzunluk işaretleyeceğim.
+
+620
+01:36:26,087 --> 01:36:28,707
+Yalnız eksi re'yi işaretleyemiyoruz.
+
+621
+01:36:29,188 --> 01:36:30,408
+Onun yerine ne yapıyoruz?
+
+622
+01:36:31,087 --> 01:36:38,028
+Bu doğrunun uzantısını alıp, ben yine şöyle defter yardımıyla çiziyorum bunu.
+
+623
+01:36:49,619 --> 01:36:52,819
+Bunun uzantısını alacağım.
+
+624
+01:36:57,876 --> 01:37:00,376
+Uzantısını kırmızıyla gösterdim.
+
+625
+01:37:03,436 --> 01:37:09,416
+Bunun üzerinde R birim uzunluk aldığında şu nokta olsun diyelim.
+
+626
+01:37:09,916 --> 01:37:10,796
+Burası neymiş?
+
+627
+01:37:10,796 --> 01:37:15,855
+Eksi R eksi teta noktası oluyormuş.
+
+628
+01:37:16,336 --> 01:37:27,756
+Bakın eksi teta doğrusunu çizip üzerinde R kadar bunun uzantısı üzerinde R birim alırsanız burası eksi R eksi teta doğrusu.
+
+629
+01:37:27,876 --> 01:37:28,775
+Olurmuş.
+
+630
+01:37:30,516 --> 01:37:35,136
+Bir de R virgül P eksi teta doğrusunu çizelim.
+
+631
+01:37:35,136 --> 01:37:40,815
+P eksi teta doğrusu şu eksi teta doğrusunun uzantısıdır.
+
+632
+01:37:41,456 --> 01:37:43,036
+Bu da yine ne oluyor?
+
+633
+01:37:43,036 --> 01:38:00,456
+Şu açı P eksi teta açısı olduğu için bu nokta aynı zamanda R virgül P eksi teta noktası oluyor.
+
+634
+01:38:00,456 --> 01:38:05,195
+Bakın şu iki nokta aynı nokta.
+
+635
+01:38:05,355 --> 01:38:07,136
+Bu iki nokta da aynı nokta.
+
+636
+01:38:09,336 --> 01:38:11,176
+Onların görüntüsü de şu nokta.
+
+637
+01:38:11,176 --> 01:38:18,676
+Yani bu nokta hem eksi R virgül eksi teta'ya eşit hem de R virgül P eksi teta'ya eşit.
+
+638
+01:38:18,676 --> 01:38:20,855
+Evet şu noktaya da bakalım.
+
+639
+01:38:24,315 --> 01:38:25,256
+Bu da nedir?
+
+640
+01:38:25,676 --> 01:38:27,956
+P artı teta olduğu için
+
+641
+01:38:27,956 --> 01:38:28,315
+bir.
+
+642
+01:38:28,315 --> 01:38:29,636
+Bir.
+
+643
+01:38:33,971 --> 01:38:39,572
+Şöyle tete açısı yapan doğru, şu doğru olursa bunun uzantısı ne oluyordu?
+
+644
+01:38:46,260 --> 01:38:52,860
+Şurası pi artı teta açısı oluyordu. Yani pi artı teta doğrusu şu doğru olacak.
+
+645
+01:38:53,440 --> 01:38:57,380
+Bunun üzerinde r birim uzunluk aldığımızda şurayı alalım.
+
+646
+01:38:58,500 --> 01:39:03,560
+Bu nokta r virgül pi artı teta noktası oluyor.
+
+647
+01:39:04,320 --> 01:39:09,239
+Aynı zamanda bunu, hay yok olmuyor, eksi r teta.
+
+648
+01:39:09,239 --> 01:39:13,920
+Aynı zamanda bu eksi r teta noktası da.
+
+649
+01:39:14,420 --> 01:39:17,920
+Çünkü teta doğrumuz
+
+650
+01:39:17,920 --> 01:39:21,600
+şurası.
+
+651
+01:39:24,000 --> 01:39:25,600
+Teta doğrusu bu.
+
+652
+01:39:27,060 --> 01:39:31,340
+Eksi r olduğu için, eksi r'yi bu tarafta işaretleyemeyip,
+
+653
+01:39:31,640 --> 01:39:34,100
+nerede bunun uzantısı üzerinde alıyorum.
+
+654
+01:39:34,100 --> 01:39:35,100
+o halde eksi r teta doğrusu?
+
+655
+01:39:35,100 --> 01:39:38,680
+O halde eksi r teta doğrusu oluyormuş.
+
+656
+01:39:38,820 --> 01:39:40,680
+Aynı zamanda bu doğru.
+
+657
+01:39:42,300 --> 01:39:50,039
+Şimdi şu noktaları görünce, gördükten sonra simetrileri verebiliriz.
+
+658
+01:40:20,916 --> 01:40:27,176
+Kutupsal grafikler için diyelim, simetri testleri.
+
+659
+01:40:35,604 --> 01:40:39,244
+Birincisi, x eksenine göre simetri.
+
+660
+01:40:50,260 --> 01:40:57,220
+Kilometri var mı yok mu? Bunu nasıl test ediyoruz? Bunu şu şekilde test ediyoruz.
+
+661
+01:41:06,355 --> 01:41:11,735
+1, R, theta noktası, grafik üzerinde iken,
+
+662
+01:41:17,971 --> 01:41:22,791
+ne olacak? x eksenine göre simetrik olduğu için, r virgül eksi teta,
+
+663
+01:41:27,699 --> 01:41:33,679
+Veya, r virgül eksi teta'ya eşdeğer olan diğer nokta neydi?
+
+664
+01:41:34,220 --> 01:41:40,960
+Eksi r virgül pi eksi teta noktasıydı değil mi?
+
+665
+01:41:42,539 --> 01:41:53,720
+r virgül eksi teta veya r virgül pi eksi teta noktaları da grafik üzerinde oluyor ise, o zaman x eksenine göre simetriktir diyoruz.
+
+666
+01:42:04,180 --> 01:42:05,300
+Bu nokta grafik üzerindedir.
+
+667
+01:42:06,579 --> 01:42:13,680
+Yani R teta, şu nokta diyelim ki R teta noktası oldu.
+
+668
+01:42:15,760 --> 01:42:22,800
+Bu nokta grafik üzerindeyken, şu noktada, bu noktada nedir?
+
+669
+01:42:22,800 --> 01:42:32,480
+R eksi R eksi teta veya R virgül eksi teta noktası.
+
+670
+01:42:32,860 --> 01:42:34,579
+Bu ikisi aynı noktayı gösteriyor.
+
+671
+01:42:34,920 --> 01:42:41,280
+Bu noktada grafik üzerinde oluyorsa, o zaman X eksenine göre simetriktir diyoruz.
+
+672
+01:42:44,640 --> 01:42:48,100
+İkinci simetrimiz Y eksenine göre olan simetri.
+
+673
+01:42:48,320 --> 01:42:49,159
+Ona da bakalım.
+
+674
+01:43:10,484 --> 01:43:14,164
+göre olan simetriyi de şu şekilde test ediyoruz.
+
+675
+01:43:14,824 --> 01:43:20,724
+Eğer, yine r virgül teta noktası için söyleyelim.
+
+676
+01:43:21,124 --> 01:43:24,364
+r virgül teta noktası grafik üzerinde ise,
+
+677
+01:43:27,923 --> 01:43:32,043
+Y'ye göre simetrik alacağım. Yani şu olacak.
+
+678
+01:43:33,564 --> 01:43:34,923
+Bir tane ne aldım?
+
+679
+01:43:36,484 --> 01:43:38,884
+Şurası R virgül teta noktası.
+
+680
+01:43:39,283 --> 01:43:45,323
+Y'ye göre simetrik olması için şu noktanın da grafik üzerinde olması gerekecek değil mi?
+
+681
+01:43:45,323 --> 01:43:49,444
+Bu noktada hangi noktadır?
+
+682
+01:43:51,264 --> 01:43:56,403
+Bu noktayı da R virgül pi eksi teta noktası olarak alabilirim.
+
+683
+01:43:56,403 --> 01:43:57,264
+ve ya
+
+684
+01:44:01,939 --> 01:44:15,639
+Ya da bunu eksi teta'nın uzantısı üzerinde aldığım nokta olduğu için eksi re, eksi teta noktası olarak da yazabilirim.
+
+685
+01:44:15,899 --> 01:44:30,439
+O halde şunu diyelim, eksi re, eksi teta veya re virgül eksi teta noktası da grafik üzerindedir.
+
+686
+01:44:35,347 --> 01:44:43,167
+y teta grafik üzerinde ise, eksi re eksi teta noktası da grafik üzerinde oluyorsa, y eksenine göre simetriktir.
+
+687
+01:44:43,488 --> 01:44:49,148
+Ya da eksi re eksi teta değil de r virgül pi eksi teta olarak da yazabilirim bu noktayı.
+
+688
+01:44:49,648 --> 01:44:55,908
+Yani şu nokta grafik üzerinde oluyorsa, y eksenine göre simetriktir diyoruz bu durumda da.
+
+689
+01:44:55,908 --> 01:44:58,207
+Neden böyle iki nokta yazıyoruz?
+
+690
+01:44:58,327 --> 01:45:07,768
+Çünkü bazen sinüs fonksiyonuna göre verilmiş bir grafikte, y eksenine göre simetriyi incelerken,
+
+691
+01:45:08,167 --> 01:45:16,787
+şunu değil de şu ikinci temsil olan noktayı kullanmak, bize simetriyi görme açısından daha kolaylık sağlıyor.
+
+692
+01:45:17,307 --> 01:45:20,188
+O yüzden bu noktaları çift çift yazdım.
+
+693
+01:45:20,188 --> 01:45:24,688
+Şimdi üçüncü olarak da orijine göre simetri diyelim.
+
+694
+01:45:52,659 --> 01:45:54,380
+metriyi de yine şu şekilde
+
+695
+01:45:54,380 --> 01:45:59,119
+test ediyoruz.
+
+696
+01:45:59,840 --> 01:46:00,599
+Eğer bir
+
+697
+01:46:00,599 --> 01:46:02,420
+rtta noktası
+
+698
+01:46:02,420 --> 01:46:04,599
+grafik üzerinde ise
+
+699
+01:46:11,155 --> 01:46:11,716
+Ne olacak?
+
+700
+01:46:13,416 --> 01:46:14,676
+Eksi r t tam
+
+701
+01:46:18,612 --> 01:46:19,372
+Vea?
+
+702
+01:46:26,579 --> 01:46:27,300
+Çekanot.
+
+703
+01:46:31,956 --> 01:46:36,376
+Artı teta noktası da ne olmalı? Grafik üzerinde olmalı.
+
+704
+01:46:40,851 --> 01:46:45,091
+Böyle oluyorsa da orijine göre simetriktir diyoruz.
+
+705
+01:46:45,912 --> 01:46:55,891
+Örneğin şu nokta, r virgül teta noktası ise, şu noktada grafik üzerinde olmalı ki bu noktada ne oluyor?
+
+706
+01:46:56,532 --> 01:47:08,572
+Burası da ya eksi r virgül teta olarak bunu alabilirim, ya da bu noktayı r virgül pi artı teta noktası olarak da alabilirim.
+
+707
+01:47:08,572 --> 01:47:17,952
+Bunlar varsa, grafiğimizin simetrik olacağını söyleyebiliriz.
+
+708
+01:47:19,551 --> 01:47:26,612
+Simetriden yararlanmak grafik çizimini kolaylaştırıyor. O yüzden bu simetrileri verdik.
+
+709
+01:47:28,992 --> 01:47:37,831
+Biraz ara verelim. Aradan sonra da kutupsal bir eğrinin grafiğini kutupsal koordinatları kullanarak nasıl çizeceğiz?
+
+710
+01:47:37,831 --> 01:47:42,831
+Çizebiliriz ona bakalım. Bunlarla ilgili sorunuz var mı?
+
+711
+01:47:42,831 --> 01:47:42,872
+Bunlarla ilgili sorunuz var mı?
+
+712
+01:47:50,228 --> 01:47:54,248
+Yoksa biraz ara verelim. Saat 3'e kadar ara verelim.
+
+713
+02:00:45,587 --> 02:00:52,787
+Evet arkadaşlar şimdi kutupsal denklemlerle verilmiş bir eğrinin grafiğini nasıl çizeceğiz?
+
+714
+02:00:53,307 --> 02:00:55,228
+Bunun örneklerini vereceğim.
+
+715
+02:00:55,787 --> 02:01:03,427
+Kutupsal koordinatlarda da eğri çizerken yine teta'nın değişen değerlerine karşılık
+
+716
+02:01:03,427 --> 02:01:07,547
+R'nin alacağı birkaç tane değeri hesaplamamız gerekiyor.
+
+717
+02:01:07,547 --> 02:01:17,667
+Yani bazı teta değerlerine karşılık R'nin alacağı değerlerin bir tablosunu yapıyoruz.
+
+718
+02:01:18,387 --> 02:01:27,547
+Bu tabloyu oluşturduktan sonra bu noktaları R teta çiftlerini kutupsal koordinatlarda işaretleyip
+
+719
+02:01:28,108 --> 02:01:32,387
+sonra bunları bir eğri yardımıyla birleştiriyoruz.
+
+720
+02:01:32,387 --> 02:01:38,207
+Noktaları işaretlerken neye dikkat edeceğiz?
+
+721
+02:01:38,867 --> 02:01:40,787
+Şuna dikkat edeceğiz.
+
+722
+02:01:40,947 --> 02:01:43,367
+Aldığımız doğrulara dikkat edeceğiz.
+
+723
+02:01:44,307 --> 02:01:50,067
+Teta eşit beta şeklindeki ifadeler bize doğruyu veriyordu.
+
+724
+02:01:50,807 --> 02:01:53,987
+Bir de yönüne dikkat edeceğiz.
+
+725
+02:01:53,987 --> 02:01:59,467
+Evet, eksi R olması durumu bizim için önemli.
+
+726
+02:01:59,667 --> 02:02:07,027
+Çünkü eksi olunca onu doğrunun uzantısı üzerinde artı R birimlik uzunluk olarak işaretliyorduk.
+
+727
+02:02:07,667 --> 02:02:12,787
+Bunlara dikkat ettiğimiz takdirde grafiği rahatlıkla çizebiliriz.
+
+728
+02:02:13,087 --> 02:02:16,887
+En basitinden çember örneğiyle başlayalım.
+
+729
+02:02:24,692 --> 02:02:28,851
+R eşit 2 kosinus theta.
+
+730
+02:02:30,292 --> 02:02:31,471
+E ilisini çizelim.
+
+731
+02:02:43,123 --> 02:03:00,003
+Şunları da söyleyeyim. Biliyorsunuz zaten, kosinüs fonksiyonu çift fonksiyondu. Yani x eksenine göre simetrikti. Sinüs fonksiyonu da nedir? Tek fonksiyondur. Bu da y eksenine göre simetrik bir fonksiyondur.
+
+732
+02:03:11,507 --> 02:03:13,967
+Matematik olduğunu görelim isterseniz.
+
+733
+02:03:14,728 --> 02:03:16,447
+R virgül teta nedir?
+
+734
+02:03:17,047 --> 02:03:18,648
+Eğri üzerinde iken,
+
+735
+02:03:20,667 --> 02:03:23,608
+Biz neye bakacağız?
+
+736
+02:03:23,728 --> 02:03:25,627
+x eksenine göre simetre alıyorsak,
+
+737
+02:03:25,728 --> 02:03:29,007
+R virgül, eksi teta da eğri üzerinde midir?
+
+738
+02:03:29,108 --> 02:03:30,587
+Ona bakmamız gerekecek.
+
+739
+02:03:31,667 --> 02:03:35,507
+R virgül, eksi teta noktası eğri üzerinde midir?
+
+740
+02:03:35,587 --> 02:03:36,307
+Buna bakıyorum.
+
+741
+02:03:36,307 --> 02:03:42,827
+2, kosünüs, eksi teta dersem,
+
+742
+02:03:44,287 --> 02:03:45,387
+Bu neye eşit olacak?
+
+743
+02:03:45,907 --> 02:03:47,587
+Kosünüs çift fonksiyon olduğu için,
+
+744
+02:03:47,927 --> 02:03:49,447
+Kosünüs eksi teta,
+
+745
+02:03:51,207 --> 02:03:52,887
+Kosünüs teta'ya eşitti.
+
+746
+02:03:53,347 --> 02:03:54,167
+Dolayısıyla,
+
+747
+02:03:54,367 --> 02:03:57,467
+2, kosünüs teta'ya eşit olacak.
+
+748
+02:03:57,967 --> 02:03:58,688
+Bu da nedir?
+
+749
+02:03:58,907 --> 02:03:59,927
+R'ye eşittir.
+
+750
+02:04:01,167 --> 02:04:02,228
+Gördüğünüz gibi,
+
+751
+02:04:02,787 --> 02:04:04,028
+Eksi teta,
+
+752
+02:04:04,028 --> 02:04:05,707
+R noktası da,
+
+753
+02:04:05,707 --> 02:04:07,608
+Eğri üzerindedir.
+
+754
+02:04:13,395 --> 02:04:15,395
+x eksenine göre simetriktir.
+
+755
+02:04:23,796 --> 02:04:25,476
+söyleyelim. Burada
+
+756
+02:04:25,476 --> 02:04:27,636
+teta'ya keyfi değerler vererek
+
+757
+02:04:27,636 --> 02:04:29,636
+işte bazı onlara karşılık gelen
+
+758
+02:04:29,636 --> 02:04:31,296
+r değerlerini hesaplayacağız.
+
+759
+02:04:31,695 --> 02:04:33,636
+Keyfi değer verirken de teta'nın
+
+760
+02:04:33,636 --> 02:04:35,556
+bildiğimiz değerlerini
+
+761
+02:04:35,556 --> 02:04:36,655
+seçeceğiz.
+
+762
+02:04:38,176 --> 02:04:39,836
+x80'ine göre simetrik
+
+763
+02:04:39,836 --> 02:04:41,636
+olduğu için bunun
+
+764
+02:04:41,636 --> 02:04:43,976
+yarısını yani x80'in üstünde
+
+765
+02:04:43,976 --> 02:04:45,376
+kalan kısmını çizip
+
+766
+02:04:45,376 --> 02:04:48,036
+onu daha sonra yansıtarak
+
+767
+02:04:48,036 --> 02:04:49,956
+grafiği tamamlayabiliriz.
+
+768
+02:04:50,496 --> 02:04:51,996
+Dolayısıyla bu simetri
+
+769
+02:04:51,996 --> 02:04:53,836
+bize ne yaptı? Kolaylık sağladı.
+
+770
+02:04:54,336 --> 02:04:56,036
+Teta'ya daha az
+
+771
+02:04:56,036 --> 02:04:58,336
+değer vererek bu grafiği
+
+772
+02:04:58,336 --> 02:04:59,476
+çizebileceğiz.
+
+773
+02:05:01,976 --> 02:05:03,796
+Şu şekildeki
+
+774
+02:05:03,796 --> 02:05:05,916
+r eşit a çarpı
+
+775
+02:05:05,916 --> 02:05:07,716
+kosünüs teta şeklindeki
+
+776
+02:05:07,716 --> 02:05:10,275
+eğrilerin x80'i üzerinde
+
+777
+02:05:10,275 --> 02:05:12,316
+ötelenmiş çember olduğunu biliyorum.
+
+778
+02:05:12,436 --> 02:05:13,976
+Dolayısıyla bunu
+
+779
+02:05:13,976 --> 02:05:16,076
+x80'i üzerinde çizerken
+
+780
+02:05:16,076 --> 02:05:17,896
+alacağım değerleri
+
+781
+02:05:17,896 --> 02:05:19,396
+nasıl almalıyım?
+
+782
+02:05:19,396 --> 02:05:21,556
+0'dan
+
+783
+02:05:21,556 --> 02:05:22,856
+pi bölü 2'ye kadar
+
+784
+02:05:22,856 --> 02:05:24,296
+değerler alırsam
+
+785
+02:05:24,296 --> 02:05:25,735
+üst kısmını çizerim.
+
+786
+02:05:26,056 --> 02:05:26,976
+Alt kısmını da
+
+787
+02:05:26,976 --> 02:05:28,316
+simetriden dolayı
+
+788
+02:05:28,316 --> 02:05:29,076
+yansıtarak
+
+789
+02:05:29,076 --> 02:05:30,016
+bulabilirim.
+
+790
+02:05:30,376 --> 02:05:31,596
+O halde şöyle diyelim.
+
+791
+02:05:31,775 --> 02:05:33,256
+Şurası teta değerlerimiz.
+
+792
+02:05:33,376 --> 02:05:33,836
+Burası da
+
+793
+02:05:33,836 --> 02:05:35,416
+teta'ya karşılık gelen
+
+794
+02:05:35,416 --> 02:05:37,216
+r değerleri olsun.
+
+795
+02:05:38,336 --> 02:05:38,676
+Buna
+
+796
+02:05:38,676 --> 02:05:39,456
+0
+
+797
+02:05:39,456 --> 02:05:40,976
+pi bölü 2 aralığında
+
+798
+02:05:40,976 --> 02:05:42,396
+değerler verirsek
+
+799
+02:05:42,396 --> 02:05:43,636
+üst kısmını
+
+800
+02:05:43,636 --> 02:05:44,976
+çizmiş olacağız.
+
+801
+02:05:45,976 --> 02:06:07,976
+Bir sonraki videoda
+
+802
+02:05:52,148 --> 02:05:53,347
+0 ile başlayalım.
+
+803
+02:05:54,688 --> 02:05:56,228
+0 dereceyi alalım.
+
+804
+02:05:57,587 --> 02:05:59,427
+pi bölü 6'yı biliyoruz.
+
+805
+02:06:00,688 --> 02:06:03,608
+pi bölü 3'ü biliyoruz.
+
+806
+02:06:03,768 --> 02:06:03,988
+Değil mi?
+
+807
+02:06:04,528 --> 02:06:06,688
+pi bölü 4'ü de biliyoruz.
+
+808
+02:06:06,847 --> 02:06:08,427
+Önce pi bölü 4 yazalım.
+
+809
+02:06:11,168 --> 02:06:18,868
+pi bölü 3 ve pi bölü 2 değerlerini bu şekilde alalım.
+
+810
+02:06:18,868 --> 02:06:22,488
+Ve bunlara karşılık gelen re'leri hesaplayalım.
+
+811
+02:06:24,328 --> 02:06:27,568
+Kosinus 0, 1'dir.
+
+812
+02:06:27,788 --> 02:06:32,168
+2 ile de çarptığında re'nin değeri 0'dayken 2 olacak.
+
+813
+02:06:33,807 --> 02:06:36,168
+pi bölü 6'nın değeri midir?
+
+814
+02:06:39,087 --> 02:06:43,047
+Kosinus 30, köküç bölü 2'ye eşitti.
+
+815
+02:06:43,948 --> 02:06:46,127
+2 ile çarparsak köküç olacak.
+
+816
+02:06:46,127 --> 02:06:52,507
+Onun değerini de yaklaşık olarak 1.73 olarak almışız.
+
+817
+02:06:54,148 --> 02:06:56,047
+Pi bölü 4 değeri 45.
+
+818
+02:06:56,467 --> 02:06:57,568
+Kök 2 bölü 2.
+
+819
+02:06:58,208 --> 02:07:00,328
+2 ile çarptığım için 2'ler gitti.
+
+820
+02:07:00,467 --> 02:07:05,127
+Kök 2 değerinin yaklaşık değerini de 1.41 olarak almışız.
+
+821
+02:07:07,208 --> 02:07:10,828
+Pi bölü 3'de kosinus pi bölü 3, 1 bölü 2.
+
+822
+02:07:11,268 --> 02:07:12,988
+2'ler gitti, 1 kaldı.
+
+823
+02:07:12,988 --> 02:07:16,927
+Kosinus 90'da zaten nedir?
+
+824
+02:07:17,307 --> 02:07:17,868
+0'dır.
+
+825
+02:07:18,328 --> 02:07:21,188
+İşte alacağım noktalar bunlar.
+
+826
+02:07:22,208 --> 02:07:24,587
+Bunlara göre grafiği çizeceğim.
+
+827
+02:07:25,127 --> 02:07:27,828
+Yalnız ben şu üst kısmı silmek durumundayım.
+
+828
+02:07:36,724 --> 02:07:39,404
+Şöyle tahtayı daha iyi kullanabilmek için.
+
+829
+02:07:42,836 --> 02:07:52,996
+Genellikle grafik çizerken kartezyen koordinatlarla kutupsal koordinatları birleştirerek çiziyoruz.
+
+830
+02:07:54,836 --> 02:08:06,176
+Her ne kadar böyle alsak da yine de şu alacağım nokta çiftlerini kutupsal koordinatlara göre işaretleyeceğim.
+
+831
+02:08:06,775 --> 02:08:07,136
+Nedir?
+
+832
+02:08:07,356 --> 02:08:11,216
+R2 teta sıfır yani 2 virgül sıfır noktası.
+
+833
+02:08:11,315 --> 02:08:11,815
+Ne olacak?
+
+834
+02:08:13,796 --> 02:08:17,636
+Sıfır açısı x ekseni ile yapılan açıdır.
+
+835
+02:08:19,636 --> 02:08:22,476
+Şu doğru teta eşit sıfır doğrusudur.
+
+836
+02:08:22,476 --> 02:08:26,036
+Bunun üzerinde iki birimlik bir uzunluk alacağım.
+
+837
+02:08:27,976 --> 02:08:29,936
+Şöyle şurası da 2 olsun.
+
+838
+02:08:30,096 --> 02:08:34,836
+Yani bu noktamız 2 virgül sıfır noktası.
+
+839
+02:08:35,596 --> 02:08:37,576
+Noktaları önce işaretleyelim.
+
+840
+02:08:37,896 --> 02:08:40,136
+Doğruları çizip noktaları işaretleyelim.
+
+841
+02:08:40,136 --> 02:08:43,416
+Şimdi 1.73 pi bölü 6.
+
+842
+02:08:43,416 --> 02:08:53,976
+Yani pi bölü 6 doğrusu üzerinde 1.73 birimlik bir uzunluk alacağım.
+
+843
+02:08:53,976 --> 02:08:57,356
+Pi bölü 6 doğrusu neydi?
+
+844
+02:08:57,356 --> 02:08:59,655
+30 dereceye karşılık geliyordu değil mi?
+
+845
+02:09:00,775 --> 02:09:04,756
+Dolayısıyla şöyle 30 derecemiz bu olsun.
+
+846
+02:09:04,756 --> 02:09:08,036
+teta eşit pi bölü 6 doğrusu bu.
+
+847
+02:09:08,036 --> 02:09:15,176
+Bunun üzerinde şöyle 1.73 burası olsun.
+
+848
+02:09:23,155 --> 02:09:36,055
+P bölü 4 doğrusuna bizim aç ortayımız P bölü 4 doğrusu üzerinde alacağım uzunluk 1.41 olacak.
+
+849
+02:09:38,195 --> 02:09:40,376
+Şöyle işaretleyelim.
+
+850
+02:09:41,756 --> 02:09:52,115
+P bölü 3 doğrusu üzerinde bu teta eşit P bölü 3 doğrusu bunun üzerinde alacağım uzunluk 1 birim.
+
+851
+02:09:52,115 --> 02:09:56,695
+Şurası 2 olduğuna göre şurası da bir birim olsun.
+
+852
+02:09:58,876 --> 02:10:03,076
+Ve P bölü 2 doğrusu üzerinde alacağım uzunlukta nedir?
+
+853
+02:10:03,076 --> 02:10:04,716
+0. Şu nokta.
+
+854
+02:10:05,055 --> 02:10:07,615
+Bakın şu noktaları işaretledik.
+
+855
+02:10:07,796 --> 02:10:10,235
+Şimdi ne yapacağım? Onları birleştireceğim.
+
+856
+02:10:13,811 --> 02:10:14,652
+İkidar
+
+857
+02:10:22,260 --> 02:10:23,079
+Şu şekilde
+
+858
+02:10:31,956 --> 02:10:35,735
+bir eğri çizmiş olduk.
+
+859
+02:10:43,507 --> 02:10:50,467
+Bakın, böylelikle çemberin yarısını çizmiş oldum. İkinci arayı da simetriden dolayı çiziyorum.
+
+860
+02:10:50,467 --> 02:10:55,967
+Tabii ki şöyle yapayım, yuvarlak olsun.
+
+861
+02:10:57,028 --> 02:11:04,547
+İşte zaten şu noktaları aldıktan sonra şu doğruların kalan kısımlarını silmenizde fayda var.
+
+862
+02:11:05,407 --> 02:11:09,547
+Eğrimiz şu çember olacak.
+
+863
+02:11:16,243 --> 02:11:21,603
+Eğrinin hangi yönde sıfıra yaklaştığını bilmek de aslında önemli.
+
+864
+02:11:22,983 --> 02:11:26,043
+Bizim denklemimiz neydi? Kutupsal denklem.
+
+865
+02:11:26,143 --> 02:11:28,783
+R eşit 2, kosinus, teta.
+
+866
+02:11:28,783 --> 02:11:33,783
+Yani R eşit F teta eğrisi üzerinde
+
+867
+02:11:34,884 --> 02:11:43,043
+bunu sıfır yapan, R'yi sıfır yapan teta değeri yönünde
+
+868
+02:11:43,043 --> 02:11:47,023
+R'yi R eşit sıfır
+
+869
+02:11:52,532 --> 02:12:04,471
+yapan theta değeri yönünde eğri orjine yaklaşır.
+
+870
+02:12:07,988 --> 02:12:13,548
+R'yi sıfır yapan theta değeri yönünde orjine yaklaşır.
+
+871
+02:12:13,847 --> 02:12:17,168
+O halde bu eğri de hangi yönde orjine yaklaşacak?
+
+872
+02:12:17,807 --> 02:12:22,048
+Theta eşit pi bölü 2 doğrusu yönünde orjine yaklaşır.
+
+873
+02:12:22,847 --> 02:12:25,588
+Bakın pi bölü 2'deki değeri sıfır oldu.
+
+874
+02:12:25,967 --> 02:12:28,948
+Theta eşit pi bölü 2 yönünde orjine yaklaşıyor.
+
+875
+02:12:28,948 --> 02:12:33,648
+Onu bilmek bazen önemli, bazen çok da fark etmiyor.
+
+876
+02:12:34,628 --> 02:12:36,708
+Size ek bilgi olarak söyledim.
+
+877
+02:12:43,091 --> 02:12:49,411
+Şöyle diyelim, grafik, r eşit 0 yapan theta değeri yönünde orjine yaklaşır.
+
+878
+02:12:53,844 --> 02:13:23,823
+Dik
+
+879
+02:13:01,811 --> 02:13:05,192
+Şimdi bir kardiyoid grafiği çizelim.
+
+880
+02:14:02,739 --> 02:14:06,380
+1 artı kosinus teta. Eğrisini çizelim.
+
+881
+02:14:16,819 --> 02:14:43,779
+Kosünüs teta olduğu için, bu yine x eksenine göre simetrik midir? R teta eğri üzerinde iken, x eksenine göre simetrik olunca eksi teta. Eksi teta da eğri üzerinde midir? Bunun testini hemen yapalım. Burada bir artı kosünüs eksi teta dersek, hemen eksi teta'yı yerine yazdım.
+
+882
+02:14:43,779 --> 02:15:03,279
+Kosünüs eksi teta, kosünüs teta'ya eşit, bu da r'ye eşit. Dolayısıyla, r eksi kosünüs teta da eğri üzerinde olduğu için, bu eğri x eksenine göre simetriktir.
+
+883
+02:15:06,868 --> 02:15:14,488
+Yine eksenin üst kısmında olan kısmını çizip, alt kısmı da simetriden yararlanarak çizebiliriz.
+
+884
+02:15:15,148 --> 02:15:16,828
+Bunun için grafik yapalım.
+
+885
+02:15:18,928 --> 02:15:22,868
+Yalnız bunun grafiğini yaparken, bu sefer...
+
+886
+02:15:31,539 --> 02:15:34,560
+0, pi arasında değerler vereceğiz.
+
+887
+02:15:36,000 --> 02:15:48,920
+Biraz önceki eğri, şu x eksenin üzerinde ötelenmiş çember olduğu için buna 0 ile pi bölü 2 arasında değer vermek yeterliydi çizmek için.
+
+888
+02:15:48,920 --> 02:15:56,079
+Yalnız bu eğri, şuraya da taştığı için 0 ile pi arasında değerler vereceğim.
+
+889
+02:16:03,604 --> 02:16:20,564
+Tabloyu yapalım. Ama tabloyu yukarı yapayım ki, şunu sileyim, gördük. Değerlerimiz orada kalsın ki şuraya da grafiği çizebilirim. Tablomuzu şöyle oluşturalım.
+
+890
+02:16:24,467 --> 02:16:25,608
+Tam tersini yazdım.
+
+891
+02:16:26,287 --> 02:16:30,827
+Theta değerleri, buna karşılık gelen r değerlerini yazacağız.
+
+892
+02:16:31,907 --> 02:16:34,548
+Theta'yı sıfırla başlatalım.
+
+893
+02:16:36,948 --> 02:16:43,028
+Yine bildiğimiz kosinüsün, bildiğimiz şu değerlerini alalım.
+
+894
+02:16:43,028 --> 02:16:52,887
+Pi bölü 6, pi bölü 4, pi bölü 3, pi bölü 2.
+
+895
+02:16:56,595 --> 02:16:58,615
+İkinci bölgeden de alacağım.
+
+896
+02:16:58,615 --> 02:17:00,555
+3 pi bölü 4
+
+897
+02:17:05,747 --> 02:17:12,247
+5, pi bölü 6 ve pi değerlerini alalım.
+
+898
+02:17:20,244 --> 02:17:22,484
+Karşılık gelen re'leri hesaplayalım.
+
+899
+02:17:23,123 --> 02:17:27,244
+Theta sıfır olduğunda, kosinüs sıfır bir topladık.
+
+900
+02:17:27,364 --> 02:17:28,984
+2, 2 ile de çarptık.
+
+901
+02:17:29,424 --> 02:17:30,264
+Burası ne oldu?
+
+902
+02:17:30,824 --> 02:17:31,864
+4 oldu.
+
+903
+02:17:32,364 --> 02:17:35,203
+Şimdi şu değerleri de yaklaşık olarak alacağız.
+
+904
+02:17:37,324 --> 02:17:40,203
+Kosinüs pi bölü altının değerini
+
+905
+02:17:45,683 --> 02:17:53,423
+Kök 3 bölü 2 gibi düşünürsek, bunu da ben direkt yazacağım. 3.76
+
+906
+02:17:57,780 --> 02:18:03,600
+Pi bölü 4'teki değeri yaklaşık olarak 3.4. Bunlar yaklaşık değerler.
+
+907
+02:18:05,239 --> 02:18:11,260
+Pi bölü 3'teki değerini biliyoruz. 1 bölü 2. Dolayısıyla şurası 3 olacak.
+
+908
+02:18:12,340 --> 02:18:20,260
+Pi bölü 2'deki değeri 0 olduğu için değeri 2'ye eşit olacak.
+
+909
+02:18:20,260 --> 02:18:25,720
+3 pi bölü 4'teki değeri 1'e eşit.
+
+910
+02:18:26,680 --> 02:18:31,640
+5 pi bölü 6'daki değeri 0.24'e eşitmiş.
+
+911
+02:18:33,140 --> 02:18:35,460
+Ve pi'deki değeri de neye eşit oluyor?
+
+912
+02:18:36,100 --> 02:18:37,960
+0'a eşit oluyor.
+
+913
+02:18:41,811 --> 02:18:46,631
+Şimdi bu yaklaşık değerlerle biz grafiği çözelim.
+
+914
+02:18:55,827 --> 02:18:58,407
+0 derece x ekseni demiştik.
+
+915
+02:18:58,768 --> 02:19:01,727
+Burada 4 birimlik bir uzunluk aldık.
+
+916
+02:19:01,827 --> 02:19:02,827
+Şu norma da olsun.
+
+917
+02:19:18,835 --> 02:19:20,255
+6 doğrusu,
+
+918
+02:19:25,268 --> 02:19:29,167
+2 bölü 6 doğrusu üzerinde 4'e yakın bir değer alıyorum.
+
+919
+02:19:30,208 --> 02:19:33,087
+3.76 şu nokta olsun.
+
+920
+02:19:43,476 --> 02:19:44,855
+4 doğrusu
+
+921
+02:19:48,404 --> 02:19:55,264
+pi bölü 4 olduğunda, bunun üzerindeki uzunluğu da 3.4 aldık.
+
+922
+02:20:02,227 --> 02:20:05,707
+Pi bölü 3'e geldik değil mi?
+
+923
+02:20:05,707 --> 02:20:08,907
+Ha, sırada da pi bölü 3 doğrumuz var.
+
+924
+02:20:10,167 --> 02:20:12,647
+Teta eşit, pi bölü 3 doğrusu.
+
+925
+02:20:13,107 --> 02:20:16,167
+Bunun üzerindeki uzunluk 3 birim.
+
+926
+02:20:18,007 --> 02:20:23,247
+Pi bölü 2 doğrusu üzerindeki uzunluğu da 2 birimmiş.
+
+927
+02:20:24,407 --> 02:20:28,227
+Tabii çok orantısız oldu ama böyle yaptık. Ne yapalım?
+
+928
+02:20:36,691 --> 02:20:45,291
+Çizelim. Şunu da biraz daha böyle çizelim. Ama da biraz daha böyle yukarıda çizelim.
+
+929
+02:20:48,091 --> 02:20:59,491
+Pi bölü 2'yi aldık. Sonra ne oldu? Pi bölü 3 doğrusu. Bu 120 derece yapıyordu değil mi? 90. Şöyle 30 derece daha alırsak.
+
+930
+02:21:04,819 --> 02:21:11,639
+Tita eşit 3 pi bölü 4 doğrusu. Bunun üzerindeki uzunluk bir birim.
+
+931
+02:21:18,484 --> 02:21:18,904
+Aldık.
+
+932
+02:21:23,252 --> 02:21:27,192
+5 pi bölü 6 doğrusu, o da şu doğru.
+
+933
+02:21:32,180 --> 02:21:34,940
+Bunun üzerindeki uzunluk da 0,24.
+
+934
+02:21:35,159 --> 02:21:36,899
+Baya küçük bir nokta.
+
+935
+02:21:37,620 --> 02:21:41,000
+Ve pi olduğu zaman 0'a geldik.
+
+936
+02:21:42,979 --> 02:21:46,840
+Şu nokta 0, pi noktası.
+
+937
+02:21:46,840 --> 02:21:49,760
+Bu nokta 0,24.
+
+938
+02:21:50,440 --> 02:21:54,479
+5 pi bölü 6 noktası.
+
+939
+02:21:56,260 --> 02:21:58,840
+Bunları tek tek yazmadım.
+
+940
+02:21:59,700 --> 02:22:02,059
+Zaten şöyle görebiliyoruz.
+
+941
+02:22:02,180 --> 02:22:09,139
+Şimdi bakın şu işaretlediğimiz noktaları birleştireceğim.
+
+942
+02:22:12,564 --> 02:22:17,304
+4'ten şöyle bu noktaya, bu noktaya
+
+943
+02:22:22,164 --> 02:22:24,884
+Bu şekilde şurada sıfıra geldi.
+
+944
+02:22:25,364 --> 02:22:27,804
+Hangi yönde sıfıra yaklaşıyor bu eğri?
+
+945
+02:22:29,184 --> 02:22:33,184
+Theta eşit pi doğrultusunda, pi yönünde sıfıra yaklaşıyor.
+
+946
+02:22:33,284 --> 02:22:39,604
+Dolayısıyla pi yönünde sıfıra yaklaştığını da görüyoruz böylece.
+
+947
+02:22:47,507 --> 02:22:50,847
+İşte şu grafiğin yarısı.
+
+948
+02:22:51,387 --> 02:22:54,507
+Diğer yarısını da simetriden dolayı çizeceğim.
+
+949
+02:23:00,595 --> 02:23:03,515
+Hiç de simetrik çizemedim ama şöyle alayım.
+
+950
+02:23:05,095 --> 02:23:08,075
+Kalbe benzemesi gereken bir doğru eğri.
+
+951
+02:23:08,695 --> 02:23:14,515
+İşte biraz yamuk bir kalp oldu ama kalbe benzedi az çok.
+
+952
+02:23:15,935 --> 02:23:19,835
+Şeklinden dolayı buna kardiyoik eğrisi diyoruz.
+
+953
+02:23:34,675 --> 02:23:36,675
+yaparsam burayı da bunun
+
+954
+02:23:40,979 --> 02:23:43,520
+Şöyle bir eğri olması lazım, daha böyle.
+
+955
+02:23:53,811 --> 02:23:55,492
+Yaklaşık böyle bir eğri.
+
+956
+02:23:56,191 --> 02:24:02,592
+Bu da dediğim gibi şeklinden dolayı kardiyoid eğrisi deniyor.
+
+957
+02:24:06,131 --> 02:24:06,992
+Tariya etki.
+
+958
+02:24:12,979 --> 02:24:14,279
+Sorunuz var mı?
+
+959
+02:24:51,219 --> 02:24:58,159
+Peki, sorunuz yoksa bir başka kardiyoit eğrisi çizelim.
+
+960
+02:25:02,559 --> 02:25:11,119
+Karşınıza çok çıkacak bir eğri, kardiyoit eğrisi ama kardiyoit eğrisinin de birkaç şeyi var.
+
+961
+02:25:11,119 --> 02:25:21,840
+Yani şöyle söyleyeyim, artı olunca böyle bir kardiyoit, şunu eksi yaparsanız yönü değişecek.
+
+962
+02:25:22,639 --> 02:25:27,559
+Burası eksi olursa kardiyoit tam tersi yönde olacak.
+
+963
+02:25:28,199 --> 02:25:37,859
+Yani uzun kısmı eksi x ekseni üzerinde, şu kısa kısmı da şu pozitif yönde olacak.
+
+964
+02:25:37,859 --> 02:25:39,859
+Ya da bunu kardiyoit, bu pozitif yönde olacak.
+
+965
+02:25:39,859 --> 02:25:43,000
+Ya da bunu koz sinüs değil, sinüs alırsanız yine kardiyoit oluyor.
+
+966
+02:25:44,000 --> 02:25:47,500
+Onun da artı veya eksi olmasına göre yönü değişiyor.
+
+967
+02:25:47,619 --> 02:25:51,979
+Yani dört tane kardiyoit eğrimiz var.
+
+968
+02:25:57,843 --> 02:26:15,063
+İngilizce çizelim. Alan hesaplarında özellikle kardiyoid çok karşınıza çıkacak ya da eğri yayının uzunluğunu hesaplarken falan kardiyoidle çok karşılaşacağız. O yüzden bunun grafiğini çizebilmeniz gerekiyor.
+
+969
+02:26:15,063 --> 02:26:30,443
+Tabii ki alan ya da uzunluk hesaplarken kardiyoidin eğrisini çizerken bu kadar hesap yapmanıza, tablo yapmanıza gerek yok. Ezbere çizebilirsiniz.
+
+970
+02:26:32,783 --> 02:26:38,183
+Diğer bir örneğimiz yine kardiyoid eğrisi ama bu sefer sinüs kardiyoidi.
+
+971
+02:26:39,783 --> 02:26:44,763
+R eşit 1 eksi sinüs teta.
+
+972
+02:26:45,063 --> 02:26:46,063
+İzirelim.
+
+973
+02:26:58,164 --> 02:27:03,543
+Tek fonksiyon olduğu için genellikle y eksenine göre simetri olur.
+
+974
+02:27:04,043 --> 02:27:06,144
+Y eksenine göre simetri var mı? Bakalım.
+
+975
+02:27:06,144 --> 02:27:18,984
+R teta eğri üzerinde iken, r virgül pi eksi teta da eğri üzerinde midir? Ona bakacağız.
+
+976
+02:27:19,404 --> 02:27:23,084
+Yani eksi r virgül teta'dan bunu görmeniz daha zor.
+
+977
+02:27:31,700 --> 02:27:33,960
+r tetamı, eksi r, eksi tetamı.
+
+978
+02:27:46,675 --> 02:27:48,595
+Bunun y'ye göre simetriği ne olacak?
+
+979
+02:27:49,855 --> 02:27:56,915
+R virgül pi eksi teta ya da eksi teta'nın eksi re eksi teta.
+
+980
+02:27:58,195 --> 02:28:00,075
+Ya bu ya da bu olması gerekiyor.
+
+981
+02:28:00,515 --> 02:28:03,796
+Şununla görmek daha zor, bununla görmek daha kolay.
+
+982
+02:28:04,216 --> 02:28:05,475
+O yüzden bunu yapalım.
+
+983
+02:28:06,036 --> 02:28:10,815
+R virgül pi eksi teta da eğri üzerinde midir?
+
+984
+02:28:11,155 --> 02:28:12,515
+Öncelikle ona bakalım.
+
+985
+02:28:12,515 --> 02:28:19,036
+1 eksi sinüs pi eksi teta.
+
+986
+02:28:20,175 --> 02:28:21,575
+Bu da neye eşit?
+
+987
+02:28:29,396 --> 02:28:30,275
+Eksi teta.
+
+988
+02:28:30,876 --> 02:28:33,195
+Yine sinüs teta'ya eşittir.
+
+989
+02:28:33,476 --> 02:28:37,316
+Ya da bunu toplam fark formüllerinden yaparsanız da ne olacak?
+
+990
+02:28:37,536 --> 02:28:38,636
+Sinüs pi çarpı.
+
+991
+02:28:38,636 --> 02:28:40,976
+Kosünüs teta eksi.
+
+992
+02:28:41,576 --> 02:28:43,796
+Kosünüs pi çarpı.
+
+993
+02:28:44,396 --> 02:28:48,275
+Sinüs teta'dan yaparsanız ne gelecek?
+
+994
+02:28:49,615 --> 02:28:52,576
+Sinüs pi sıfır olduğu için şu gider.
+
+995
+02:28:53,556 --> 02:28:55,176
+Kosünüs pi eksi bir.
+
+996
+02:28:59,476 --> 02:29:05,855
+Eksi 1 olduğu için, burası ne olacak? Eksi sinüs teta olacak. Şurası.
+
+997
+02:29:15,476 --> 02:29:18,636
+Tamam, bir artı sinisteti oldu. Ben yanlış mı yaptım?
+
+998
+02:29:19,316 --> 02:29:25,476
+Hocam, kosinus pi eksi bir ya, oradan artı sinteta geliyor.
+
+999
+02:29:26,376 --> 02:29:30,796
+Ay evet, şu eksi bir, eksi de önünde var, artı sinteta oluyor.
+
+1000
+02:29:31,576 --> 02:29:33,456
+Tamam, teşekkür ederim, onu göremedim.
+
+1001
+02:29:34,676 --> 02:29:35,195
+Burası?
+
+1002
+02:29:39,188 --> 02:29:47,507
+teta'ya eşit olacak. Bu eksi farklı. Bunun eksisinden dolayı bu yine ne olacak? 1-sinus teta olacak. Tamamdır.
+
+1003
+02:29:50,128 --> 02:30:04,067
+Dolayısıyla, 1-sinus teta da neye eşit? R'ye eşit. O halde, R virgül, pi eksi teta noktasının da biz eğri üzerinde olduğunu böylelikle söyleyebiliriz.
+
+1004
+02:30:04,067 --> 02:30:09,927
+Bundan dolayı da ne deriz? Y eksenine göre simetrik olduğunu söyleriz.
+
+1005
+02:30:14,548 --> 02:30:37,828
+y, x, m'le göre simetrik olduğunda yine ne yapmalıyız? Şu taraftaki grafiği çizip, bunun yansıtarak diğer tarafını da çizebiliriz. Dolayısıyla eksi pi bölü 2 artı pi bölü 2 aralığında değer verirsek bunun grafiğini çizebiliriz.
+
+1006
+02:30:44,371 --> 02:30:48,371
+Simetriyi gördük. Bunu sileceğim ki bana grafik için yer kalsın.
+
+1007
+02:30:52,659 --> 02:30:56,059
+Şöyle yine oluşturalım.
+
+1008
+02:30:57,180 --> 02:30:58,500
+Teta, R
+
+1009
+02:31:02,739 --> 02:31:08,340
+teteye eksi pi bölü 2 ile artı pi bölü 2 arasında değerler verelim dedik.
+
+1010
+02:31:08,879 --> 02:31:10,799
+Eksi pi bölü 2 olsun.
+
+1011
+02:31:11,699 --> 02:31:15,579
+Eksi pi bölü 3 olsun.
+
+1012
+02:31:17,059 --> 02:31:18,500
+Eksi pi bölü 6.
+
+1013
+02:31:20,459 --> 02:31:23,399
+Pi bölü 4'ü almasak da olur.
+
+1014
+02:31:23,539 --> 02:31:24,840
+Sıfıra gelelim.
+
+1015
+02:31:26,180 --> 02:31:30,020
+Yine şun açıların artılısını verelim bu sefer.
+
+1016
+02:31:30,020 --> 02:31:40,860
+pi bölü 6, pi bölü 3 ve pi bölü 2 değerlerini vermemiz yeterli olur.
+
+1017
+02:31:45,940 --> 02:31:56,540
+Sinüs 90, 1. Ancak eksi pi bölü 2 olduğu için, eksi 1. Eksi de önünde var. Artı 1 olacak. Toplayacağız. 2 olacak.
+
+1018
+02:31:59,239 --> 02:32:13,239
+Sinüs pi bölü 3'ün değeri, kök 3 bölü 2 oluyordu. Bunun da yaklaşık değerini ben direkt yazmışım. Oradan yazayım. 1.88 yazalım yaklaşık olarak.
+
+1019
+02:32:13,239 --> 02:32:27,640
+Pi bölü 6'daki değeri, 1 bölü 2. Eksi pi bölü 2 olduğu için, eksi 1 bölü 2 olacak. Eksi de burada var. Artı. 1 artı 1 bölü 2'den, 1.5 yani 3 bölü 2 olacak.
+
+1020
+02:32:30,540 --> 02:32:42,520
+Sinüs 0, 0 olduğu için değeri 1. Sinüs pi bölü 6. Artı 1 bölü 2 olacak. Şurası 1 bölü 2 olacak.
+
+1021
+02:32:42,520 --> 02:33:12,500
+Arada 1.
+
+1022
+02:33:14,995 --> 02:33:20,895
+P böyle iki doğru muz? Şu doğru. Bunun üzerindeki uzunluğu iki birim.
+
+1023
+02:33:27,188 --> 02:33:33,927
+Eksi pi bölü 3 doğrusu, pi bölü 3, 60 derece oluyordu değil mi?
+
+1024
+02:33:35,847 --> 02:33:37,128
+Şöyle olacak.
+
+1025
+02:33:40,048 --> 02:33:42,808
+Yani şu, eksi pi bölü 3.
+
+1026
+02:33:44,728 --> 02:33:48,567
+Bunun üzerindeki uzunluğu, 2'ye yakın bir nokta.
+
+1027
+02:33:52,691 --> 02:33:55,791
+Şöyle alayım, 1.88 olacak.
+
+1028
+02:33:56,751 --> 02:34:01,151
+Bunu biraz tabii uzağa çizdim, daha şeye yakın olması gerekiyor.
+
+1029
+02:34:02,631 --> 02:34:04,991
+60 olduğu için 45'i geçeceğim.
+
+1030
+02:34:07,011 --> 02:34:12,791
+Şöyle bir eğridersek, şurası 1.88.
+
+1031
+02:34:14,411 --> 02:34:18,191
+Pi bölü 6, 30 derece, 45'i şöyle geçeceğim.
+
+1032
+02:34:18,191 --> 02:34:23,451
+Bunun üzerinde, 1.5 birim.
+
+1033
+02:34:24,371 --> 02:34:28,231
+Açı 0 olduğunda, uzunluk 1 birim olacak.
+
+1034
+02:34:30,651 --> 02:34:34,051
+Pi bölü 6 olduğunda,
+
+1035
+02:34:36,971 --> 02:34:39,351
+bunun üzerindeki uzunluğu,
+
+1036
+02:34:40,151 --> 02:34:41,231
+yarım olacak.
+
+1037
+02:34:43,251 --> 02:34:45,151
+Pi bölü 3 olduğunda,
+
+1038
+02:34:50,804 --> 02:34:59,363
+Bundaki uzunluk daha da kısaldı. 0,12. Pi bölü 2 olduğunda da 0 oldu. İşte şu noktaları birleştireceğiz.
+
+1039
+02:35:07,763 --> 02:35:10,503
+Böyle bir eğri oluyor.
+
+1040
+02:35:11,343 --> 02:35:16,263
+Bunun yansımasını aldığımızda y eksenine göre simetrik dedik.
+
+1041
+02:35:20,659 --> 02:35:29,079
+Bu da kalp oldu. İşte böyle bir kalp. Tabii ben çok güzel çizemiyorum ama eliniz dosyayı yükledim.
+
+1042
+02:35:29,079 --> 02:35:41,559
+Orada daha düzgün çizilmiş böyle bir şekli oluyor. Yine gördüğünüz gibi kalbe benziyor. O yüzden bu da bir kardiyoyit eğrisi oluyor.
+
+1043
+02:35:41,559 --> 02:36:00,180
+Bir artı sinüs teta olsaydı, R, o zaman bu eğri uzun kısmı yukarıda, kısa kısmı aşağıda olan şu eğri olacaktı.
+
+1044
+02:36:04,724 --> 02:36:19,584
+Bunlarda 50'yi çizerken maksimum değeri nerede? Yani teta'nın hangi değerinde maksimum değerini alacak? Hangi değerinde minimum değerini alacak? Ona bakarak yönünü söyleyebilirsiniz.
+
+1045
+02:36:19,584 --> 02:36:34,164
+Bakın, teta eşit eksi pi bölü 2'de maksimum değerini aldı. Dolayısıyla uzun kısmı şu alt tarafta olacak, kısa kısmı üst tarafta. Yani bir kardiyot verildiği zaman hangisi olduğunu,
+
+1046
+02:36:34,724 --> 02:36:41,683
+maksimum ve minimum değerlerine bakarak yönünü tespit edip hemen çizebilirsiniz.
+
+1047
+02:36:44,504 --> 02:36:57,683
+Aynı şey kosinüs kardiyotinde de geçerli. Orada da yine maksimum minimum değerlerini vererek uzun kısmı nerede, kısa kısmı nerede? O yüzden yönü nasıl olacak ona bakarak çizebilirsiniz.
+
+1048
+02:37:09,108 --> 02:37:31,048
+Şimdi sırada kutupsal koordinatlarda alan hesabımız var. Bunu geçip de bölmeyelim çünkü vaktimiz zaten az kaldı. Alan hesabını size yarın vereceğim. Alan hesabıyla birlikte el uzunluğunu da yarın vereceğim.
+
+1049
+02:37:35,347 --> 02:37:37,268
+Şimdi sorunuz var mı?
+
+1050
+02:37:48,500 --> 02:38:10,659
+Lemniskat eğrileri falan var. Bunlar alanlarda belki karşımıza çıkar ama kelebek eğriti dediğimiz eğriler. Onların çizimini de alanı verdikten sonra şöyle bir göstereyim. Normalde ders içeriklerinde eğri çizimlerinde sadece çember ve kardiyoik diyor, bir de doğru diyor.
+
+1051
+02:38:10,659 --> 02:38:30,360
+Doğrunun grafiğini zaten kutupsaldan karteziyene dönüştürerek çizin. Doğrunun grafiğini çizmeniz çok zor oluyor. Çok zor şekiller var. O yüzden herhalde sadece bu üçüyle sınırlandırmışlar. Size vereceğim şekiller bunlar. Kardiyoik ve çember.
+
+1052
+02:38:30,360 --> 02:38:38,120
+Yine alan hesapları yaparken de karşımıza çıktığında yine bunların grafiklerine bakacağız.
+
+1053
+02:38:47,123 --> 02:39:07,083
+Bugünkü konuların bir tekrarını yapın. Yarın bunlara devam edelim. Çünkü alan hesabı ve uzunluk hesabı yapacağız. Bugün sizi birazcık erken bırakıyorum o yüzden. Sorunuz varsa sorabilirsiniz, sorunuz yoksa çıkabilirsiniz. Hepinize iyi günler diliyorum.
+
+1054
+02:39:20,755 --> 02:39:22,075
+İyi günler hepinizi.
