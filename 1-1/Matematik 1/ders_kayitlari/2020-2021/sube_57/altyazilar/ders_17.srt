@@ -1,0 +1,5491 @@
+1
+00:00:04,596 --> 00:00:07,996
+Good morning to everyone.
+
+2
+00:00:11,891 --> 00:00:31,451
+çeş
+
+3
+00:00:37,524 --> 00:00:40,683
+ok
+
+4
+00:00:45,107 --> 00:00:48,827
+Let me wait 5-2 minutes for the other people.
+
+5
+00:00:51,647 --> 00:00:58,227
+Okay, so yesterday I put some lectures about the area.
+
+6
+00:00:58,787 --> 00:01:06,188
+You can look at after the lesson because in this lesson we will see the other part of Riemann Sand.
+
+7
+00:01:06,188 --> 00:01:11,207
+And we will see how can we find the area under a function.
+
+8
+00:01:11,207 --> 00:01:15,908
+And if we have two different functions we can find the area between these two functions.
+
+9
+00:01:18,908 --> 00:01:25,048
+And yesterday the university took some decision about the exam.
+
+10
+00:01:25,608 --> 00:01:28,728
+They said that you have to make at least two exams.
+
+11
+00:01:29,847 --> 00:01:35,987
+So for this lesson we will have two midterm and one final exam.
+
+12
+00:01:35,987 --> 00:01:40,688
+But we don't have any information about the second exam time.
+
+13
+00:01:40,688 --> 00:01:48,128
+But probably I said that maybe it can be in the 12th week.
+
+14
+00:01:48,628 --> 00:01:54,448
+So probably it will be 19th probably.
+
+15
+00:01:55,108 --> 00:01:59,108
+19th December.
+
+16
+00:01:59,108 --> 00:02:12,038
+21, 21
+
+17
+00:02:55,475 --> 00:03:03,915
+Okay, so I think, hayır ikinci güze zorun olmadığı için ikinci güze haftası tatil değil.
+
+18
+00:03:04,876 --> 00:03:11,536
+You don't have any holiday for the second midterm exam because the second midterm is not,
+
+19
+00:03:13,656 --> 00:03:20,836
+some lecturers don't make a second midterm exam, so we don't have any holiday.
+
+20
+00:03:20,836 --> 00:03:21,716
+Okay.
+
+21
+00:03:29,044 --> 00:03:31,044
+grafik çizimini yapmadım mı sizde?
+
+22
+00:03:32,044 --> 00:03:33,044
+ya iki grubum var.
+
+23
+00:03:33,044 --> 00:03:37,044
+grafik çizimini atladım mı sizde? aa söyleseydiniz keşke.
+
+24
+00:03:37,044 --> 00:03:39,044
+bence dedim ki aynı yere geldik.
+
+25
+00:03:43,604 --> 00:03:47,004
+Grafik çizimine geçmedik mi biz hiç? Yapmadık mı sizinle?
+
+26
+00:03:53,268 --> 00:03:54,448
+o zaman şey yapalım.
+
+27
+00:04:03,572 --> 00:04:07,991
+En son sizinle nerede kalmıştık? Bu dünkü dersten önce.
+
+28
+00:04:10,932 --> 00:04:12,731
+Maksimum minimumda mı kaldık?
+
+29
+00:04:16,819 --> 00:04:20,139
+Ben öbür grupta yaptık, sizde de yaptık diye düşünmüştüm.
+
+30
+00:04:30,291 --> 00:04:32,291
+İlk midtermden bir soru yok.
+
+31
+00:04:32,291 --> 00:04:35,291
+Çünkü soru yoksa soru yok.
+
+32
+00:04:35,291 --> 00:04:38,291
+Ama sizden bilgi verirken, bu soru yok.
+
+33
+00:04:40,291 --> 00:04:42,291
+Tamam, şimdi...
+
+34
+00:05:07,348 --> 00:05:10,388
+Eğri yok, eğri konumuzda yok şey.
+
+35
+00:05:11,028 --> 00:05:17,448
+[öğrenci], eğik asimptot. O zaman şey, ben verdim diye düşünmüştüm.
+
+36
+00:05:18,487 --> 00:05:22,288
+Grafik çizmine hiç geçmedik. O zaman size biraz gerek almışız.
+
+37
+00:05:24,687 --> 00:05:26,888
+Onun noktlarını koydum ben.
+
+38
+00:05:28,548 --> 00:05:30,108
+Şöyle yapalım o zaman.
+
+39
+00:05:33,108 --> 00:05:34,548
+Önce şunu yapayım.
+
+40
+00:05:34,548 --> 00:05:38,228
+Riemann Sam'la ilgili dün kaldığımız yerden devam edelim.
+
+41
+00:05:38,788 --> 00:05:40,648
+Ondan sonra orayı anlatayım olur mu?
+
+42
+00:05:41,328 --> 00:05:45,708
+Çünkü Riemann Sam'ın tamamını o kısmı vermek istiyorum.
+
+43
+00:05:45,708 --> 00:05:47,788
+Bir saniye.
+
+44
+00:06:00,372 --> 00:06:09,092
+Dün Riemann'sımı anlattım diye hatırlıyorum. Biraz örnek çözmüştük ama asıl örnek kısmı farklı olacak demiştim size. Şurada kalmıştık herhalde.
+
+45
+00:06:09,092 --> 00:06:09,932
+Dün.
+
+46
+00:06:12,932 --> 00:06:14,992
+Ok.
+
+47
+00:06:22,932 --> 00:06:24,752
+Let us remember again. Okay.
+
+48
+00:06:27,292 --> 00:06:31,412
+So, yesterday we see the Riemann sum. What is the meaning of Riemann sum?
+
+49
+00:06:31,612 --> 00:06:39,292
+If we have a definite integral, we can use a definite integral to determine the area of a region.
+
+50
+00:06:40,512 --> 00:06:41,632
+For example,
+
+51
+00:06:45,779 --> 00:06:56,959
+If you have this function and if you want to find the area here, if they are asking the area, we can use the Riemann sum.
+
+52
+00:06:56,959 --> 00:07:09,779
+The Riemann sum says that divide your region into rectangle and using lower or upper Riemann sum to determine the area.
+
+53
+00:07:09,779 --> 00:07:16,899
+If you want this function, this function is an increasing function.
+
+54
+00:07:16,899 --> 00:07:27,239
+If you select left endpoint like this, if we select left endpoint here, here, here, here.
+
+55
+00:07:27,759 --> 00:07:39,439
+If we select left endpoint for left endpoint, we will determine lower Riemann sum.
+
+56
+00:07:39,779 --> 00:07:49,219
+If we use right endpoint, we will find upper Riemann sum.
+
+57
+00:07:49,219 --> 00:07:53,019
+Actually, only we have two formula for this.
+
+58
+00:07:53,019 --> 00:07:55,099
+Both of them are very similar.
+
+59
+00:07:55,099 --> 00:08:04,539
+For left endpoint and, sorry, for lower Riemann sum and for upper Riemann sum for this function will be.
+
+60
+00:08:04,539 --> 00:08:17,659
+If it is left, it will be from 1 to N and is your subinterval number.
+
+61
+00:08:17,659 --> 00:08:18,659
+Okay.
+
+62
+00:08:18,659 --> 00:08:27,099
+So, it will be F, A, A here, B is here.
+
+63
+00:08:27,099 --> 00:08:34,539
+A plus E minus 1 delta X product delta X.
+
+64
+00:08:34,539 --> 00:08:40,779
+Delta X is the length of each subinterval and we will assume they are the same.
+
+65
+00:08:40,779 --> 00:08:44,220
+For upper Riemann sum, we use the right endpoint.
+
+66
+00:08:44,220 --> 00:08:48,220
+So, the formula actually the same.
+
+67
+00:08:48,220 --> 00:08:50,220
+Only one difference in here.
+
+68
+00:08:50,220 --> 00:08:51,659
+It will be A plus.
+
+69
+00:08:51,659 --> 00:08:53,259
+It is not E minus 1.
+
+70
+00:08:53,259 --> 00:08:57,659
+When you select the right endpoint, it will be E product delta X.
+
+71
+00:08:57,659 --> 00:08:59,980
+Product delta X.
+
+72
+00:08:59,980 --> 00:09:05,179
+This is our lower and upper Riemann sum for this function.
+
+73
+00:09:05,179 --> 00:09:11,899
+If your function is decreasing and if you want to find area, you can use any of them.
+
+74
+00:09:11,899 --> 00:09:24,620
+You can take limit of angles to infinity lower Riemann sum or you can take angles to infinity upper Riemann sum for the area.
+
+75
+00:09:25,099 --> 00:09:27,579
+Okay.
+
+76
+00:09:27,579 --> 00:09:29,980
+Now, let me give you an example.
+
+77
+00:09:29,980 --> 00:09:31,980
+How can you see the Riemann sum?
+
+78
+00:10:03,827 --> 00:10:07,507
+Okay, give me one second. I will take my aunt. I'm coming.
+
+79
+00:10:30,836 --> 00:10:44,656
+Okay, I find that. Okay, in the Riemann som, we can see, since our midterm is 10, they can ask different questions.
+
+80
+00:10:44,776 --> 00:10:50,855
+For example, they can't ask, okay, this is your function, find the lower Riemann som or upper Riemann som.
+
+81
+00:10:50,855 --> 00:10:56,375
+It is very easy. So, you can see this question, maybe, right?
+
+82
+00:10:56,375 --> 00:11:11,716
+What is the equivalent of this sum? This expression, we can say that limit n goes to infinity
+
+83
+00:11:24,244 --> 00:11:43,004
+from 1 to n, okay, here, 2 plus ce over n square plus, sorry, product.
+
+84
+00:11:50,292 --> 00:11:51,292
+3 over x.
+
+85
+00:11:53,292 --> 00:11:55,292
+This is the Riemann sum.
+
+86
+00:11:55,292 --> 00:11:58,292
+They are asking, okay, what is your integral?
+
+87
+00:11:58,292 --> 00:12:00,292
+What is your bound?
+
+88
+00:12:00,292 --> 00:12:02,292
+What is your function?
+
+89
+00:12:03,292 --> 00:12:06,292
+They are asking actually the inverse process.
+
+90
+00:12:06,292 --> 00:12:09,292
+They give the Riemann sum
+
+91
+00:12:09,292 --> 00:12:12,292
+and according to this Riemann sum
+
+92
+00:12:12,292 --> 00:12:15,292
+they are asking the function and the bounds.
+
+93
+00:12:15,292 --> 00:12:16,292
+Okay.
+
+94
+00:12:16,292 --> 00:12:18,292
+So...
+
+95
+00:12:25,268 --> 00:12:26,268
+bir şey.
+
+96
+00:12:29,716 --> 00:12:33,716
+O main beginning point is actually this.
+
+97
+00:12:38,451 --> 00:12:48,091
+We have only two formulae. Okay. These are the important formula here. Let me put here. Okay.
+
+98
+00:12:51,731 --> 00:12:56,731
+Şimdi bu formula, bu formula ile ilgili.
+
+99
+00:12:56,731 --> 00:13:00,731
+Bu formula ile ilgili.
+
+100
+00:13:00,731 --> 00:13:03,731
+Ve bu formula ile ilgili.
+
+101
+00:13:03,731 --> 00:13:12,731
+Bu formula ile ilgili.
+
+102
+00:13:12,731 --> 00:13:14,731
+A, B and the function.
+
+103
+00:13:14,731 --> 00:13:19,731
+Firstly, we have to start with the outside of the function.
+
+104
+00:13:19,731 --> 00:13:21,731
+So if you look at here.
+
+105
+00:13:21,731 --> 00:13:24,731
+This is.
+
+106
+00:13:24,731 --> 00:13:26,731
+F.
+
+107
+00:13:26,731 --> 00:13:29,731
+A plus E delta x.
+
+108
+00:13:29,731 --> 00:13:31,731
+Product delta x.
+
+109
+00:13:31,731 --> 00:13:33,731
+Okay.
+
+110
+00:13:33,731 --> 00:13:35,731
+This formula is.
+
+111
+00:13:35,731 --> 00:13:36,731
+F.
+
+112
+00:13:36,731 --> 00:13:37,731
+A plus.
+
+113
+00:13:37,731 --> 00:13:41,731
+E minus 1 delta x.
+
+114
+00:13:41,731 --> 00:13:43,731
+Product delta x.
+
+115
+00:13:43,731 --> 00:13:44,731
+Okay.
+
+116
+00:13:44,731 --> 00:13:48,731
+Firstly, you have to look at the starting index.
+
+117
+00:13:48,731 --> 00:13:49,731
+It is important.
+
+118
+00:13:49,731 --> 00:13:51,731
+The index here is 1.
+
+119
+00:13:51,731 --> 00:13:52,731
+Here is 1.
+
+120
+00:13:52,731 --> 00:13:53,731
+Okay.
+
+121
+00:13:53,731 --> 00:13:56,731
+So you don't have to make any index change.
+
+122
+00:13:56,731 --> 00:13:57,731
+Okay.
+
+123
+00:13:57,731 --> 00:13:58,731
+Now.
+
+124
+00:13:58,731 --> 00:14:00,731
+We have a function here.
+
+125
+00:14:00,731 --> 00:14:03,731
+And I have delta x.
+
+126
+00:14:03,731 --> 00:14:05,731
+What was delta x?
+
+127
+00:14:05,731 --> 00:14:07,731
+Delta x was.
+
+128
+00:14:07,731 --> 00:14:10,731
+B minus a over n.
+
+129
+00:14:10,731 --> 00:14:11,731
+Okay.
+
+130
+00:14:11,731 --> 00:14:13,731
+Now if you look at here.
+
+131
+00:14:13,731 --> 00:14:16,731
+What is b minus a over n here?
+
+132
+00:14:16,731 --> 00:14:17,731
+This one.
+
+133
+00:14:17,731 --> 00:14:19,731
+This is your delta x.
+
+134
+00:14:19,731 --> 00:14:22,731
+This is the result of function.
+
+135
+00:14:22,731 --> 00:14:23,731
+Okay.
+
+136
+00:14:23,731 --> 00:14:25,731
+F something.
+
+137
+00:14:25,731 --> 00:14:26,731
+So let's start here.
+
+138
+00:14:26,731 --> 00:14:28,731
+Our delta x will be.
+
+139
+00:14:28,731 --> 00:14:32,731
+B minus a over n.
+
+140
+00:14:32,731 --> 00:14:34,731
+And in the equation.
+
+141
+00:14:34,731 --> 00:14:36,731
+It is 3 over n.
+
+142
+00:14:36,731 --> 00:14:37,731
+From here.
+
+143
+00:14:37,731 --> 00:14:38,731
+I can determine that.
+
+144
+00:14:38,731 --> 00:14:40,731
+B minus a has to be.
+
+145
+00:14:40,731 --> 00:14:41,731
+3.
+
+146
+00:14:41,731 --> 00:14:42,731
+In the test.
+
+147
+00:14:42,731 --> 00:14:43,731
+For example.
+
+148
+00:14:43,731 --> 00:14:44,731
+You can compare the bonds.
+
+149
+00:14:44,731 --> 00:14:50,731
+And if the difference is not 3.
+
+150
+00:14:50,731 --> 00:14:51,731
+You can cancel that.
+
+151
+00:14:51,731 --> 00:14:52,731
+A choice.
+
+152
+00:14:52,731 --> 00:14:53,731
+For example.
+
+153
+00:14:53,731 --> 00:14:54,731
+Okay.
+
+154
+00:14:54,731 --> 00:14:55,731
+After that.
+
+155
+00:14:55,731 --> 00:14:56,731
+The other part.
+
+156
+00:14:56,731 --> 00:14:57,731
+What is the other part?
+
+157
+00:14:57,731 --> 00:14:58,731
+F.
+
+158
+00:14:58,731 --> 00:14:59,731
+A plus.
+
+159
+00:14:59,731 --> 00:15:00,731
+3 over n.
+
+160
+00:15:00,731 --> 00:15:01,731
+E.
+
+161
+00:15:01,731 --> 00:15:02,731
+Or e minus one.
+
+162
+00:15:02,731 --> 00:15:03,731
+I don't know.
+
+163
+00:15:03,731 --> 00:15:04,731
+Okay.
+
+164
+00:15:04,731 --> 00:15:05,731
+Or e.
+
+165
+00:15:05,731 --> 00:15:06,731
+Will be.
+
+166
+00:15:06,731 --> 00:15:07,731
+2 plus.
+
+167
+00:15:07,731 --> 00:15:08,731
+3 e.
+
+168
+00:15:08,731 --> 00:15:09,731
+Over n square.
+
+169
+00:15:09,731 --> 00:15:10,731
+Okay.
+
+170
+00:15:10,731 --> 00:15:11,731
+Here.
+
+171
+00:15:11,731 --> 00:15:24,731
+I don't know which formula they use.
+
+172
+00:15:24,731 --> 00:15:25,731
+But if you compare the function.
+
+173
+00:15:25,731 --> 00:15:27,731
+If you look at inside of the function.
+
+174
+00:15:27,731 --> 00:15:28,731
+I have e.
+
+175
+00:15:28,731 --> 00:15:29,731
+So.
+
+176
+00:15:29,731 --> 00:15:30,731
+This.
+
+177
+00:15:30,731 --> 00:15:32,731
+In this formula.
+
+178
+00:15:32,731 --> 00:15:34,731
+The index will be.
+
+179
+00:15:34,731 --> 00:15:35,731
+E.
+
+180
+00:15:35,731 --> 00:16:04,731
+The index will be.
+
+181
+00:15:39,508 --> 00:15:44,708
+ok. Fonksiyonun içinde bunu yazdığı zaman karşınıza bu çıkıyor.
+
+182
+00:15:46,048 --> 00:15:50,948
+Ok, now. How can we determine this one?
+
+183
+00:15:53,748 --> 00:15:58,868
+What can we say about a? And what can we say about the function?
+
+184
+00:16:01,608 --> 00:16:09,368
+When you write the term outside, I have square. If I take that, our function is x squared.
+
+185
+00:16:09,508 --> 00:16:10,968
+Okay.
+
+186
+00:16:13,968 --> 00:16:15,807
+What can you say about a?
+
+187
+00:16:17,728 --> 00:16:23,108
+Because here they take the something squared. So let us take fx is x squared.
+
+188
+00:16:23,668 --> 00:16:25,448
+But what can I write for a?
+
+189
+00:16:31,443 --> 00:16:57,203
+Okay, so let's look at, if I take a is 2, so in that case b will be 5. Let's look at, can I find 2 plus 3e over n? It will be 2 plus 3e over n. Square. Yes, I can find.
+
+190
+00:17:01,779 --> 00:17:04,799
+parantezin karesi.
+
+191
+00:17:04,920 --> 00:17:06,200
+Tabii fonksiyonu gösteriyor orada.
+
+192
+00:17:07,220 --> 00:17:09,019
+Karesi olduğu için fonksiyon x kare.
+
+193
+00:17:09,259 --> 00:17:11,519
+Küp olsaydı x küp olarak alacaktık orada.
+
+194
+00:17:13,519 --> 00:17:15,579
+Polinom şeklinde derinçisini gösteriyor.
+
+195
+00:17:15,579 --> 00:17:16,899
+Okay, so
+
+196
+00:17:16,899 --> 00:17:20,960
+I find that a is 3, b is 5
+
+197
+00:17:20,960 --> 00:17:23,139
+and f is x squared.
+
+198
+00:17:23,339 --> 00:17:26,019
+So this question will be
+
+199
+00:17:26,019 --> 00:17:27,779
+equals to 2 to 5.
+
+200
+00:17:27,779 --> 00:17:31,920
+x kare.
+
+201
+00:17:32,440 --> 00:17:32,899
+D x.
+
+202
+00:18:08,932 --> 00:18:14,951
+F 2 plus delta x will be 3 over n.
+
+203
+00:18:15,352 --> 00:18:16,491
+You can see that.
+
+204
+00:18:17,432 --> 00:18:20,231
+3 e over n.
+
+205
+00:18:22,011 --> 00:18:23,852
+Product 3 over n.
+
+206
+00:18:25,592 --> 00:18:27,092
+This is the lower remun sum.
+
+207
+00:18:27,231 --> 00:18:28,491
+For the upper remun sum.
+
+208
+00:18:31,192 --> 00:18:31,771
+Önemi var.
+
+209
+00:18:31,892 --> 00:18:32,751
+Tabii ki önemi var.
+
+210
+00:18:32,912 --> 00:18:37,592
+Önemi var ama hangisini kullandığını fonksiyona bakarak karar vereceksiniz.
+
+211
+00:18:37,592 --> 00:18:40,271
+Yani verilen şeye bakarak karar vereceksiniz.
+
+212
+00:18:40,971 --> 00:18:41,832
+Tabii ki önemli.
+
+213
+00:18:41,951 --> 00:18:47,852
+Orada i mi i eksi bir mi olduğunu karar vermek için sorumuza bakmamız gerekiyor.
+
+214
+00:18:47,932 --> 00:18:49,112
+Sorumuzla değişecek.
+
+215
+00:18:49,112 --> 00:18:54,312
+For example, here if you want to write upper remun sum.
+
+216
+00:18:54,491 --> 00:19:00,592
+It will be 2 plus 3 e minus 1 over n.
+
+217
+00:19:01,791 --> 00:19:03,572
+Product 3 over n.
+
+218
+00:19:03,572 --> 00:19:08,912
+In the question they give the lower remun sum of this function.
+
+219
+00:19:09,632 --> 00:19:09,912
+Okay.
+
+220
+00:19:10,052 --> 00:19:12,451
+Until here, did you understand what we made here?
+
+221
+00:19:13,572 --> 00:19:14,751
+Look at here.
+
+222
+00:19:14,751 --> 00:19:19,572
+This is our question part.
+
+223
+00:19:25,428 --> 00:19:54,988
+I think we have, we, we made a mistake at the, at the last point. At the lower Riemann sum and upper Riemann sum. Let me look at, the function is in fx, x squared, this one. So if I want to write lower Riemann sum, I have to select left and point here, here, here, left and point, f a, let me look at here,
+
+224
+00:19:54,988 --> 00:19:56,788
+A is, here is to.
+
+225
+00:20:00,000 --> 00:20:12,339
+i-1. Yanlış mı? Yanlış mı? Yanlış mı? Ah, sorry. Yes, it will be i-1. Sorry, this will be i. Yes.
+
+226
+00:20:24,147 --> 00:20:25,387
+they take this one.
+
+227
+00:20:28,692 --> 00:20:31,711
+Tamam, şimdi düzelttim. Evet, yanlış görmüş.
+
+228
+00:20:34,332 --> 00:20:40,612
+Şimdi, okay, so let's look at this part again. Okay, let me explain here.
+
+229
+00:20:41,231 --> 00:20:47,751
+First of all, in the first part, we have to determine what is b minus a. You can easily see that in the question.
+
+230
+00:20:48,572 --> 00:20:56,432
+Okay, if you have 1 over n product, a function, a point, this will be belta x.
+
+231
+00:20:56,432 --> 00:21:05,551
+Now, what about the function? They said that if I write f a plus 3 over n product, i, the result is this.
+
+232
+00:21:06,251 --> 00:21:14,211
+So, I have a point and they take the square of this function, the square of this point.
+
+233
+00:21:14,211 --> 00:21:24,372
+So, I can select fx squared. For example, if you have like this, plus 2 plus 3 i over n.
+
+234
+00:21:24,372 --> 00:21:54,352
+Now, in that case, what can you write here?
+
+235
+00:21:54,372 --> 00:21:56,372
+A will be 2 here?
+
+236
+00:21:56,372 --> 00:22:00,932
+And the function will be x squared. Let me give another example.
+
+237
+00:22:00,932 --> 00:22:04,251
+Okay, biraz birkaç örnekle daha iyi anlayacaksınız aslında.
+
+238
+00:22:04,412 --> 00:22:07,152
+Biraz zor bir şey ama sınavında da karşımıza çıkar.
+
+239
+00:22:07,552 --> 00:22:10,072
+Size sorular hazırlamıştım ama mesela şuna bakalım.
+
+240
+00:22:10,072 --> 00:22:24,152
+Hmm.
+
+241
+00:22:15,859 --> 00:22:19,240
+Peki, size soruyorum şimdi. Önce bir düşünün bakalım.
+
+242
+00:22:19,240 --> 00:22:19,659
+Okay.
+
+243
+00:22:21,699 --> 00:22:25,979
+Which of the following integral expression is equals to
+
+244
+00:22:25,979 --> 00:22:27,079
+Okay.
+
+245
+00:22:28,579 --> 00:22:31,039
+Bunu sonrası soru olarak verecektim.
+
+246
+00:22:31,179 --> 00:22:31,819
+Let's choose it.
+
+247
+00:22:32,579 --> 00:22:35,719
+Limit n goes to infinity.
+
+248
+00:22:36,179 --> 00:22:36,439
+Okay.
+
+249
+00:22:39,359 --> 00:22:41,059
+From 1 to n.
+
+250
+00:22:44,468 --> 00:22:51,827
+1 plus 3k over n, and product 1 over n.
+
+251
+00:22:54,468 --> 00:22:59,608
+What is the integral? Okay, what is the integral equivalent here?
+
+252
+00:23:01,608 --> 00:23:09,728
+Okay, everyone, please try to write the bounds and the function. I will wait two minutes, okay?
+
+253
+00:23:14,259 --> 00:23:20,819
+Okay, we have two formula here. We can look at this one.
+
+254
+00:23:31,380 --> 00:23:35,560
+Bakın bakalım, herkese 2 dakika vereceğim. Bir yazmaya çalışın önce kendiniz.
+
+255
+00:24:11,476 --> 00:24:14,176
+a pardon. Soru da K'di.
+
+256
+00:24:15,576 --> 00:24:17,716
+Ben onu iyi yaptım, burada değiştireyim.
+
+257
+00:24:38,804 --> 00:24:39,804
+topları da yazayım.
+
+258
+00:24:46,932 --> 00:25:16,692
+x kare artı 1x, f'
+
+259
+00:24:55,731 --> 00:24:57,011
+test gibi hazırlıyorum.
+
+260
+00:24:57,091 --> 00:24:58,471
+Hazırlıyorum bu şekilde biraz.
+
+261
+00:25:05,364 --> 00:25:13,644
+İkinci yüze de en yüksek ortalığımızı düşürmeyin. Bak Pınar Hoca'ya geçtik ona göre yarış halindeyiz.
+
+262
+00:25:41,556 --> 00:26:11,536
+Bu dizinin betimlemesi TRT tarafından Sesli Betimleme Derneğine yaptırılmıştır.
+
+263
+00:26:09,364 --> 00:26:10,384
+yapabiliyor musunuz?
+
+264
+00:26:22,963 --> 00:26:30,723
+Okay, so if you compare the results, firstly you can start with this one.
+
+265
+00:26:30,723 --> 00:26:37,543
+Okay, if it is 1 over n, it means that delta x will be 1 over n.
+
+266
+00:26:39,783 --> 00:26:42,443
+It is b minus a over n.
+
+267
+00:26:43,943 --> 00:26:45,624
+It will be 1 over n.
+
+268
+00:26:46,283 --> 00:26:48,443
+So b minus a will be 1.
+
+269
+00:26:48,443 --> 00:26:53,983
+If b minus a is 1, you can directly cancel b.
+
+270
+00:26:54,983 --> 00:26:59,624
+Because the difference according to the bounds, it is not 1.
+
+271
+00:27:00,583 --> 00:27:13,903
+Okay, after that, our formula f a plus 1 over n, it will be e or e minus 1.
+
+272
+00:27:13,983 --> 00:27:14,723
+I will compare.
+
+273
+00:27:15,844 --> 00:27:17,183
+Product 1 over n.
+
+274
+00:27:17,183 --> 00:27:24,344
+In the question, it is 1 plus 3e over n.
+
+275
+00:27:25,644 --> 00:27:26,844
+Product 1 over n.
+
+276
+00:27:27,503 --> 00:27:27,624
+Okay.
+
+277
+00:27:29,763 --> 00:27:31,124
+Okay, now.
+
+278
+00:27:32,683 --> 00:27:33,604
+They are the same.
+
+279
+00:27:33,723 --> 00:27:34,844
+You don't need to look at this.
+
+280
+00:27:35,423 --> 00:27:35,624
+Okay.
+
+281
+00:27:36,104 --> 00:27:38,063
+If you look at here, I have i.
+
+282
+00:27:38,344 --> 00:27:40,803
+I don't have any i minus 1 term.
+
+283
+00:27:40,923 --> 00:27:42,563
+So you don't need to look at this one.
+
+284
+00:27:42,563 --> 00:27:55,043
+Now, they said that when you write in the function, when you write this point in the function, it is 1 plus in the square root function, 1 plus 3e over n.
+
+285
+00:27:55,043 --> 00:27:55,983
+Okay.
+
+286
+00:27:55,983 --> 00:27:58,063
+So I have a square root function.
+
+287
+00:27:58,263 --> 00:27:58,743
+Let's think.
+
+288
+00:27:58,884 --> 00:28:03,743
+Let us take if x is square root x, for example.
+
+289
+00:28:03,743 --> 00:28:05,163
+I will compare.
+
+290
+00:28:05,163 --> 00:28:09,543
+And let us take a is 1.
+
+291
+00:28:10,083 --> 00:28:12,203
+Because I see I have 1.
+
+292
+00:28:12,403 --> 00:28:14,503
+But let's see is it true or not.
+
+293
+00:28:14,503 --> 00:28:37,124
+Okay.
+
+294
+00:28:18,451 --> 00:28:32,771
+If this one, let's see, if I write 1 plus e over n, okay, in the function I need to find 1 plus e over n, okay?
+
+295
+00:28:33,211 --> 00:28:41,251
+But the function is not here, it is not, so c can't be here, okay?
+
+296
+00:28:41,251 --> 00:28:50,872
+Okay, let us take about, this is about c, this is about, let us think b.
+
+297
+00:28:51,592 --> 00:29:06,971
+If I take function as fx is 1 plus x, okay, in that case I have to take a is 0 because I have 1 plus something here.
+
+298
+00:29:06,971 --> 00:29:15,072
+If I take 0, in the question, in the choice also they said that a is 0.
+
+299
+00:29:15,072 --> 00:29:25,011
+If I take 0, I will write e over n in the function and the result will be 1 plus e over n.
+
+300
+00:29:25,971 --> 00:29:30,551
+But when you look at your result here, it is not, so b can't be here.
+
+301
+00:29:32,392 --> 00:29:33,991
+What about the other one?
+
+302
+00:29:33,991 --> 00:29:54,392
+If we think that a for our function will be 1 plus 3x and here a is 0, if I write f a is 0,
+
+303
+00:29:55,051 --> 00:30:02,771
+i over n in the function, I will have 1 plus 3i over n.
+
+304
+00:30:02,771 --> 00:30:04,352
+So it is okay.
+
+305
+00:30:04,872 --> 00:30:07,092
+So it will be a here.
+
+306
+00:30:08,051 --> 00:30:08,352
+Okay?
+
+307
+00:30:09,991 --> 00:30:11,092
+Do you have any questions?
+
+308
+00:30:11,892 --> 00:30:17,271
+Hocam, c şıkkında kök x var ya, orada a neden bir onu anlatabilir misin?
+
+309
+00:30:17,271 --> 00:30:18,031
+Zorul anlandır.
+
+310
+00:30:18,072 --> 00:30:19,192
+Aa yok, pardon.
+
+311
+00:30:20,771 --> 00:30:21,471
+Ha, sıfı olacak.
+
+312
+00:30:21,471 --> 00:30:49,632
+Sağ olun.
+
+313
+00:30:26,963 --> 00:30:31,364
+sıfır olacak çünkü soru çözüm çiftlerde sıfır olacak.
+
+314
+00:30:32,543 --> 00:30:35,223
+Okey, let me ask another question.
+
+315
+00:30:40,788 --> 00:30:41,188
+Tchau.
+
+316
+00:30:46,900 --> 00:30:47,280
+Efendim?
+
+317
+00:30:48,120 --> 00:30:50,380
+Direkt çözümünü bulamaz mıyız?
+
+318
+00:30:50,660 --> 00:30:51,900
+Şıkları mı denememiz lazım?
+
+319
+00:30:53,900 --> 00:30:58,500
+Yok, direkt çözümünü de bulabilirsiniz. Ben hangi şıkların niye olamayacağını gösterdim.
+
+320
+00:30:59,580 --> 00:31:02,280
+Sonuçta oradaki formülüye direkt yazabilirsiniz.
+
+321
+00:31:03,200 --> 00:31:06,480
+Ama ben hani hangi şıkta niye olamayacağını gösterdim orada size.
+
+322
+00:31:07,040 --> 00:31:08,580
+Mesela şimdikinde şunu yapalım.
+
+323
+00:31:09,580 --> 00:31:12,040
+Ben hatta cevabı da vermeyeyim size isterseniz.
+
+324
+00:31:12,040 --> 00:31:13,220
+Şöyle bakalım.
+
+325
+00:31:14,720 --> 00:31:15,000
+Pardon.
+
+326
+00:31:15,000 --> 00:31:23,080
+Find the integral expression of this sum.
+
+327
+00:31:23,080 --> 00:31:23,600
+Okay.
+
+328
+00:31:25,120 --> 00:31:25,820
+Limit.
+
+329
+00:31:27,500 --> 00:31:29,380
+And goes to infinity.
+
+330
+00:31:32,259 --> 00:31:35,580
+I from 0 to n minus 1.
+
+331
+00:31:36,000 --> 00:31:36,400
+Okay.
+
+332
+00:31:40,115 --> 00:31:52,316
+4 minus 2i over n, square, 2 product, 2 over n.
+
+333
+00:31:52,536 --> 00:31:57,996
+Okay, everyone tries to write the integral expression.
+
+334
+00:31:58,336 --> 00:32:01,195
+Okay, I won't give the results, I won't give the choices.
+
+335
+00:32:02,415 --> 00:32:04,996
+First, let's try to write, after that I will give.
+
+336
+00:32:06,096 --> 00:32:09,155
+And I will explain why is the solution.
+
+337
+00:32:13,811 --> 00:32:15,711
+Bakın bakalım, şimdi bu açık hale.
+
+338
+00:32:16,711 --> 00:32:19,051
+Bunu integral'i nasıl geri çevirebiliriz?
+
+339
+00:32:40,915 --> 00:32:46,935
+Bununla ilgili size daha fazla soru vereceğim ama şu an bir mantığını anlamadan soruları yapamayız.
+
+340
+00:32:49,215 --> 00:32:50,796
+Bunu deneyin bakalım.
+
+341
+00:34:06,900 --> 00:34:18,240
+Arkadaşlar, isterseniz bir 10 dakika ara verelim. Hem bu arada da biraz dinlenirsiniz, hem de bakın bakalım soruya birazcık daha yapacaksınız. 10 dakika ara verelim, sonra devam edelim.
+
+342
+00:34:18,240 --> 00:34:26,260
+Ama lütfen arada da şöyle bir göz ucuyla da şunu bir çözmeye çalışın. Benim için önemli olan siz bakalım yapabiliyor musun belirli yere kadar?
+
+343
+00:36:42,195 --> 00:36:58,076
+Bu arada arkadaşlar, sizin sağlık durumlarınızla konuşamadık biraz fazla. Teneffüste en azından konuşalım. Var mı sıkıntılı bir durumu olanlar? Korona olan var mı? Ya da ne bileyim geçirmiş olan var mı? Umarım hiçbirinize bir sıkıntı yoktur.
+
+344
+00:37:21,300 --> 00:37:22,300
+yorum yapı mısın [öğrenci]?
+
+345
+00:37:25,684 --> 00:37:27,264
+Biz evdeyiz.
+
+346
+00:37:28,903 --> 00:37:32,604
+[kişisel bilgi]
+
+347
+00:37:33,464 --> 00:37:35,364
+Orada daha azdır buraya İstanbul'a göre.
+
+348
+00:37:43,411 --> 00:37:44,791
+[kişisel bilgi]
+
+349
+00:37:48,291 --> 00:37:50,791
+[kişisel bilgi]
+
+350
+00:37:53,551 --> 00:37:54,291
+[kişisel bilgi]
+
+351
+00:37:54,751 --> 00:37:57,271
+Ya Bursa'da çok fazla olduğunu duydum.
+
+352
+00:37:57,471 --> 00:37:59,971
+Benim bir hoca asistan arkadaşım var.
+
+353
+00:38:00,051 --> 00:38:03,531
+O Bursa'da baya amcası, dayısı, anneannesi falan.
+
+354
+00:38:05,551 --> 00:38:08,591
+İstanbul zaten biliyorsunuz İstanbul başı çekiyor.
+
+355
+00:38:08,591 --> 00:38:13,031
+Ya zaten ben dışarı çekmiyorum.
+
+356
+00:38:13,411 --> 00:38:15,891
+Bursa'da, yani Bursa'da bilmiyorum.
+
+357
+00:38:16,151 --> 00:38:18,971
+Bursa'da oran daha fazla anladığım kadarıyla.
+
+358
+00:38:19,192 --> 00:38:21,611
+Yani hani nüfusu oranına bakıldığı zaman
+
+359
+00:38:21,611 --> 00:38:24,391
+biraz sanki Bursa'da daha fazla var gibi geldi bana.
+
+360
+00:38:24,511 --> 00:38:26,172
+Çünkü çok fazla oradan haber alıyorum.
+
+361
+00:38:26,471 --> 00:38:27,331
+Tanıdıklardan da.
+
+362
+00:38:29,192 --> 00:38:30,491
+Ya tabii ki öyle de.
+
+363
+00:38:30,971 --> 00:38:32,951
+İşte hastane şeyleri de önemli.
+
+364
+00:38:33,091 --> 00:38:33,651
+Allah korusun.
+
+365
+00:38:33,751 --> 00:38:34,851
+Yani sıkıntı zaten
+
+366
+00:38:34,851 --> 00:38:36,831
+yani artışı olması değil.
+
+367
+00:38:36,931 --> 00:38:38,331
+Hastanelerde şu an yer yok.
+
+368
+00:38:38,891 --> 00:38:40,511
+Özellikle yoğun bakım kısımlarında.
+
+369
+00:38:40,511 --> 00:38:43,391
+yani bilmiyorum Allah yardımcısı olsun.
+
+370
+00:38:43,991 --> 00:38:45,391
+Ben dışarı çıkmıyorum zaten.
+
+371
+00:38:45,651 --> 00:38:47,192
+[kişisel bilgi]
+
+372
+00:38:47,291 --> 00:38:48,291
+Zaten şey diyorum
+
+373
+00:38:48,291 --> 00:38:49,991
+okul, eves var.
+
+374
+00:38:50,051 --> 00:38:51,831
+Yeni şeyimiz okul, eves var.
+
+375
+00:38:52,591 --> 00:38:54,811
+[kişisel bilgi]
+
+376
+00:38:55,031 --> 00:38:56,111
+[kişisel bilgi]
+
+377
+00:38:56,152 --> 00:38:57,271
+[kişisel bilgi]
+
+378
+00:38:57,411 --> 00:38:58,131
+O da evde yapıyor.
+
+379
+00:38:58,291 --> 00:38:59,111
+Ben üniversitedeyim.
+
+380
+00:38:59,192 --> 00:39:02,591
+Böyle okul, bütün her kademeden okul var evde şu anda.
+
+381
+00:39:02,711 --> 00:39:04,291
+Aynı anda eğitim var.
+
+382
+00:39:04,291 --> 00:39:05,291
+bilmiyorum ya.
+
+383
+00:39:05,291 --> 00:39:06,291
+Bilmiyorum ya.
+
+384
+00:39:06,291 --> 00:39:08,991
+Yani mümkün oldukça dışarı çıkmamaya çalışıyoruz sonuçta.
+
+385
+00:39:09,391 --> 00:39:10,351
+Sıkıntılı bir durum.
+
+386
+00:39:11,211 --> 00:39:12,751
+Yani eskiden hep şeydi.
+
+387
+00:39:13,171 --> 00:39:17,151
+Hani daha çok hastane yaşlılar yatıyordu.
+
+388
+00:39:18,091 --> 00:39:20,991
+Ama şu an inanılmaz derecede genç arkadaşlar,
+
+389
+00:39:21,231 --> 00:39:23,591
+benimle mesela yeşil olan, benden küçük olan insanlar
+
+390
+00:39:23,591 --> 00:39:26,151
+hep hastanede geçirdiler.
+
+391
+00:39:26,291 --> 00:39:28,911
+Baya yoğun bakımlık olan insanlar vardır.
+
+392
+00:39:29,071 --> 00:39:31,411
+Mesela şey var, Sezgin Hoca vardır belki bilirsiniz.
+
+393
+00:39:31,411 --> 00:39:34,411
+Baya yoğun bakımlık olan insanlar.
+
+394
+00:39:34,411 --> 00:39:35,411
+Baya yoğun bakımlık olan insanlar var.
+
+395
+00:39:35,411 --> 00:39:36,871
+Benim arkadaşım vardı yine benden daha küçük.
+
+396
+00:39:37,172 --> 00:39:38,391
+Yine akademisyen burada.
+
+397
+00:39:38,891 --> 00:39:39,971
+O da hastaneye yattı.
+
+398
+00:39:41,031 --> 00:39:43,471
+Yani hep bunu dediğim insanlar köklü yaşlardı yani.
+
+399
+00:39:46,172 --> 00:39:47,931
+Evet, onu çok duydum ya.
+
+400
+00:39:48,011 --> 00:39:49,631
+Turistler zaten onun için geliyorlardı.
+
+401
+00:39:50,751 --> 00:39:52,011
+Zaten kendileri de söylüyor.
+
+402
+00:39:52,071 --> 00:39:53,571
+İstanbul'a buraya geliyoruz.
+
+403
+00:39:53,751 --> 00:39:56,551
+Çünkü burada karantina istemiyorlardı.
+
+404
+00:40:01,411 --> 00:40:02,411
+yine yine yine yine.
+
+405
+00:40:02,411 --> 00:40:02,791
+Yine iyi.
+
+406
+00:40:02,791 --> 00:40:03,971
+Şimdi dört kişisin.
+
+407
+00:40:04,391 --> 00:40:05,491
+[kişisel bilgi]
+
+408
+00:40:05,571 --> 00:40:07,851
+Dört tane bilgisayar evde olmasının çok imkanı yok.
+
+409
+00:40:07,951 --> 00:40:08,391
+Ne yapıyorsun?
+
+410
+00:40:09,091 --> 00:40:10,751
+Bu şekilde idare etmeye çalışıyorsun.
+
+411
+00:40:10,931 --> 00:40:11,411
+Zor yani.
+
+412
+00:40:14,911 --> 00:40:15,871
+Ya o da var tabii.
+
+413
+00:40:16,011 --> 00:40:18,271
+Radyasyondan da etkileniyoruz ama işte hani
+
+414
+00:40:18,271 --> 00:40:21,071
+kötü'nin iyisi en azından.
+
+415
+00:40:21,591 --> 00:40:22,531
+Hasta olmaktan iyidir.
+
+416
+00:40:22,871 --> 00:40:23,951
+Hani bilsiniz ki hani
+
+417
+00:40:23,951 --> 00:40:27,411
+ben gencim, rahat rahat geçiririm olduğunu bilseniz.
+
+418
+00:40:27,411 --> 00:40:28,411
+yani.
+
+419
+00:40:28,411 --> 00:40:30,911
+Yani evet.
+
+420
+00:40:33,411 --> 00:40:34,171
+Öyle mi?
+
+421
+00:40:34,631 --> 00:40:35,811
+Turistler gene geziyorlar.
+
+422
+00:40:35,811 --> 00:40:35,911
+Yani.
+
+423
+00:40:35,911 --> 00:40:53,011
+Evet.
+
+424
+00:40:41,523 --> 00:40:53,963
+Valla bakalım ya, inşallah. Zaten böyle giderse bayağı çok fazla her gün şey var. Yani aşının kendisine gerek kalmayacak o zamana kadar. Hepimiz geçirmiş olacağız herhalde öyle görünüyor.
+
+425
+00:40:54,923 --> 00:41:02,443
+Bilmiyorum ya, yani hani bir şekilde geçireceğiz da hani ne kadar geç o kadar iyi diyorlar. Yani bilemedim.
+
+426
+00:41:02,443 --> 00:41:06,903
+Aynen öyle, bence de.
+
+427
+00:41:07,603 --> 00:41:10,163
+Virüs mesai yapıyor, akşam 9'da evine gidiyor.
+
+428
+00:41:11,143 --> 00:41:12,884
+O da uyuyor şeyleri, yasakları.
+
+429
+00:41:14,103 --> 00:41:22,284
+Valla bakalım. Yani şu anda çok dediği anlamda şey var da, yani genellikle şeyden de diyorlar, bu kapalı ortamlara hepimiz geçiyoruz.
+
+430
+00:41:23,083 --> 00:41:25,923
+Bizim mesela üniversitede hocalar okula gitmiyorlar pek.
+
+431
+00:41:25,923 --> 00:41:36,003
+Yani hani hani sadece yönetim gidiyor mesela ya da hani gitmek isteyen, çalışma yapmak isteyen hoca varsa gidiyor genellikle ama hemen hemen hemen bayağı hoca evden yapıyor şu anda.
+
+432
+00:41:37,763 --> 00:41:40,703
+Sıkıntılı yani sonuçta geçiren hocalarımız da var.
+
+433
+00:41:41,844 --> 00:41:45,623
+Bir de şey var, sıkıntı şurada bilemiyorsunuz, hasta olduğunuzu da bilmiyorsunuz.
+
+434
+00:41:45,623 --> 00:41:47,623
+Yani o en çok şey zaten korkutan insanları.
+
+435
+00:41:47,623 --> 00:41:49,563
+Yani benim için öyle mesela.
+
+436
+00:41:49,663 --> 00:41:53,824
+Vebal yani tamam ben geçireyim ama farkında olmadan birine geçirim.
+
+437
+00:41:54,123 --> 00:41:57,844
+O Allah korusun bir şey olur ya da onun akrabasına bir şey olur.
+
+438
+00:41:58,703 --> 00:42:01,743
+Yoksa olay sadece hastalık olayı da değil yani.
+
+439
+00:42:02,324 --> 00:42:05,643
+Artık insanlar birbirlerine şey olarak bakıyorlar, şöyle uzak bakıyorlar.
+
+440
+00:42:05,903 --> 00:42:07,403
+Hani acaba falan diye böyle.
+
+441
+00:42:08,103 --> 00:42:10,923
+Arkadaş arkadaşla görüşemez hale falan geliyor yani.
+
+442
+00:42:10,923 --> 00:42:40,903
+Yani şimdi artık kış bayağı da bayağı da bayağı soğuk burası.
+
+443
+00:42:31,443 --> 00:42:38,663
+Hayırlısı bakalım ya. Geçiren öğrencilerim de vardı da, ÖSGE'den de geçirenler vardı. Böyle Nisan ayı gibi falan.
+
+444
+00:42:49,108 --> 00:42:50,508
+Vallahi bilmiyorum ya.
+
+445
+00:42:50,708 --> 00:42:53,448
+Yani belirli kesme laf anlatmak çok zor oluyor.
+
+446
+00:42:53,648 --> 00:42:54,988
+Yani özellikle yaşlılarda.
+
+447
+00:42:55,528 --> 00:43:01,008
+Belirli kesim gerçekten çok dikkat ediyor ama belirli kesimde ya bana bir şey olmaz gözüyle bakıyorlar.
+
+448
+00:43:01,528 --> 00:43:03,508
+Biraz şey mantığı da var gördüğün kadarıyla.
+
+449
+00:43:03,628 --> 00:43:08,548
+Hani gribin biraz daha ağrı gibi düşünen insanlar var.
+
+450
+00:43:08,708 --> 00:43:10,588
+Onlar için de benim akrabalarım da var mesela.
+
+451
+00:43:11,188 --> 00:43:14,888
+Bakıyorsun genç yani yaşlı da değil ama bakış yaşları çok farklı ya.
+
+452
+00:43:14,888 --> 00:43:18,307
+Yani ben zaten alsam da ilacı almam diyor mesela.
+
+453
+00:43:19,108 --> 00:43:25,188
+Yani öyle bir virüs ki gerçekten fark ettirmeden hemen cihemize iniveriyor.
+
+454
+00:43:25,368 --> 00:43:26,548
+Yani ilgisi hissediyorsunuz.
+
+455
+00:43:26,588 --> 00:43:30,148
+Bir bakıyorsun adam iki gün sonra Allah korusun ve vat etmiş.
+
+456
+00:43:30,248 --> 00:43:32,488
+Ya diyorsun iki gün önce ben görüştüm gayet iyiydi.
+
+457
+00:43:33,008 --> 00:43:34,608
+Yani çok değişik bir virüs açıkçası.
+
+458
+00:43:34,888 --> 00:43:40,248
+Hani o yüzden kendinizde bile hissederseniz en ufacık bir şüphede gidip bir test mutlaka yaptırın.
+
+459
+00:43:40,847 --> 00:43:42,208
+Yani şey yapmıyor.
+
+460
+00:43:42,208 --> 00:43:47,268
+Bizim bir Allah korusun yani vefat eden bir tanıdığın amcası vardı.
+
+461
+00:43:47,268 --> 00:43:49,568
+Genç yani 45-50 yaşlarında.
+
+462
+00:43:51,568 --> 00:43:55,428
+Yani geçiş yer diyor işte ıhlamar içiyor falan filan.
+
+463
+00:43:55,588 --> 00:43:56,988
+Adamcağız vefat etti ya.
+
+464
+00:43:57,208 --> 00:43:59,968
+Yani ciğerine indikten sonra onu şey yapamıyorsunuz.
+
+465
+00:44:00,008 --> 00:44:01,748
+Sorun ciğere inmemesi zaten.
+
+466
+00:44:03,688 --> 00:44:06,648
+Ya ama hastaneye gittikten sonra da bir anlamı yok yani.
+
+467
+00:44:06,788 --> 00:44:09,728
+O zaman hastaneye gittiğine göre artık daha ilerlemiş yani.
+
+468
+00:44:09,728 --> 00:44:14,388
+Yani en ufacık bir şey olduğu zaman ama genellikle şeyde fark ediliyor.
+
+469
+00:44:15,188 --> 00:44:19,347
+Yani genel duyduğum kadarıyla tat ve koku da ciddi anlamda herkes de öyle başlıyor.
+
+470
+00:44:20,008 --> 00:44:24,228
+Hani biraz halsizlik, eklem ağrısı falan hani belki ona yoğurmayabilirsiniz ama ilk başta.
+
+471
+00:44:24,928 --> 00:44:27,128
+Özellikle tat ve koku hemen gidiyor diyorlar.
+
+472
+00:44:27,208 --> 00:44:28,548
+Yani hissediyorsun diyorlar.
+
+473
+00:44:28,628 --> 00:44:31,368
+Gerçekten öyle böyle normal bir grip gibi değil ya da boğaz ağrısı.
+
+474
+00:44:31,807 --> 00:44:33,628
+Normal bir boğaz ağrısı gibi değil diyorlar.
+
+475
+00:44:33,628 --> 00:44:38,868
+Yani benim mesela Nisan gibi bir ara öyle bir şeyim olmuştu.
+
+476
+00:44:38,908 --> 00:44:42,188
+Koku kaybı ya dedim ben kesin koronayım dedim ama çıkmadı mesela.
+
+477
+00:44:43,408 --> 00:44:44,068
+Demek ki hastayı.
+
+478
+00:44:44,368 --> 00:44:47,088
+Ameliyat olmuştum o zaman herhalde ondan kaynaklıydı.
+
+479
+00:44:47,588 --> 00:44:48,028
+Birazcık.
+
+480
+00:44:48,688 --> 00:44:52,528
+Ama yani şey olursa da mutlaka bir kendinizi şey alın.
+
+481
+00:44:55,408 --> 00:45:03,268
+Evet evet onu şey yapıyor ama yani çoğunlukla yani tat ve kokudan çok fazla herkes muzdarip.
+
+482
+00:45:03,628 --> 00:45:08,588
+Yoksa diğer mesela şimdi vücudunuzda bir kırgınlık varsa ben açıkçası gitmem hemen yani.
+
+483
+00:45:10,388 --> 00:45:13,248
+Evet evet yani oradan anlaşılıyor diyorlar.
+
+484
+00:45:13,368 --> 00:45:18,648
+Yoksa atıyorum vücudunuz halsiz grip olunca hani ben olsam şu anda öyle bir şeyde gitmem.
+
+485
+00:45:19,008 --> 00:45:22,508
+Yani hastalık yoksa bile zaten test yapmaya gittiğinizde kaparsınız yani.
+
+486
+00:45:22,508 --> 00:45:25,327
+Ama dedikleri gibi fark ediyorsunuz diyorlar.
+
+487
+00:45:25,408 --> 00:45:31,428
+Genel herkesten duyduğum şey hani kendi vücudunuzda tanıdığınız için fark ediyorsunuz yani grip gibi değil diyorlar.
+
+488
+00:45:31,428 --> 00:45:39,388
+Bilmiyorum ya hayırlısı yani geçireceksek bile inşallah sağlıkla saatle hepimiz bu şeyi atlatırız.
+
+489
+00:45:39,807 --> 00:45:42,888
+Zaten siz gençsiniz inşallah hiçbirinize bir şey olmaz.
+
+490
+00:45:43,368 --> 00:45:44,008
+Biz düşünelim.
+
+491
+00:45:44,008 --> 00:45:54,028
+Ya öyle tabii öyle tabii ama gerçekten semptom gösteriyorsak gitmemiz lazım ki ilaçlarımızı alalım.
+
+492
+00:45:54,168 --> 00:45:56,688
+Yani o ilaçlar baya bir yardımcı oluyor.
+
+493
+00:45:56,688 --> 00:46:00,968
+Yani bakalım.
+
+494
+00:46:03,448 --> 00:46:04,588
+Hakkımızda hayırlısı.
+
+495
+00:46:06,828 --> 00:46:08,248
+Ya öğrencileri de çok özledim.
+
+496
+00:46:08,408 --> 00:46:09,548
+Okulu da çok özledim.
+
+497
+00:46:09,908 --> 00:46:14,847
+Gerçekten bu şeyin psikolojisi de çok şey sıkıntılı.
+
+498
+00:46:15,328 --> 00:46:17,868
+Bilmiyorum beni daha önceden tanıyan öğrencilerim vardır da.
+
+499
+00:46:18,488 --> 00:46:21,428
+Yani genellikle çok hareketliyimdir ben okulda.
+
+500
+00:46:21,428 --> 00:46:24,408
+Şimdi evdesiniz öğrencileri göremiyorsunuz.
+
+501
+00:46:24,448 --> 00:46:28,847
+Tahtada şuradan böyle baştan başa dolaşıp bir şeyler yazamıyorsunuz.
+
+502
+00:46:29,548 --> 00:46:33,288
+Ben hala mesela bu grafik tablet kalemine alışamadım mesela.
+
+503
+00:46:33,488 --> 00:46:35,428
+İlla elimizde bir tahta kalemi olacak.
+
+504
+00:46:35,847 --> 00:46:38,008
+İşte ne bileyim bazı sınıflarda tebeşirler var.
+
+505
+00:46:38,708 --> 00:46:40,327
+Şöyle bir dolanacaksınız falan.
+
+506
+00:46:41,288 --> 00:46:43,307
+İnşallah yani bu sene zor da.
+
+507
+00:46:43,987 --> 00:46:48,268
+Büyük ihtimalle siz 2'ye geçtiğinizde yine görüşürüz diye tahmin ediyorum.
+
+508
+00:46:48,707 --> 00:46:58,987
+İkinci dönemde büyük ihtimalle benle yine ders alırsınız ama okuldaki gibi olmuyor ama büyük ihtimalle ikinci sene herhalde normale döneriz diye düşünüyorum inşallah.
+
+509
+00:46:59,807 --> 00:47:05,727
+O zaman diferansiyel denklem dersi alacaksınız zaten. O zaman yine görüşürüz.
+
+510
+00:47:06,127 --> 00:47:11,207
+Zaten ben direkt İngilizce grupları veriyorum. İngilizce gruplarda da fazla hoca yok zaten seçenek olarak.
+
+511
+00:47:11,207 --> 00:47:15,768
+Sizin şu an hangi bölümdü? Bu 57 olan gerçi karışıktı ama.
+
+512
+00:47:19,380 --> 00:47:20,200
+[kişisel bilgi]
+
+513
+00:47:23,440 --> 00:47:25,240
+[kişisel bilgi]
+
+514
+00:47:26,380 --> 00:47:28,760
+Havacılık, biomedikal.
+
+515
+00:47:29,280 --> 00:47:29,800
+Anlamıyorum.
+
+516
+00:47:31,119 --> 00:47:34,720
+Tamam, önümüzdeki dönem ona göre ben talep edeyim size.
+
+517
+00:47:35,980 --> 00:47:42,039
+Bazen hocalara rica ediyorum, şu bölümün programına göre alayım falan diye.
+
+518
+00:47:43,840 --> 00:47:48,900
+Ben normalde kontrol örtümasyon bölümüne çok giriyorum.
+
+519
+00:47:49,380 --> 00:47:50,119
+onun derslerine.
+
+520
+00:47:51,119 --> 00:47:54,079
+Biomualistik, kimya muhalistik, kimyaya giriyordum.
+
+521
+00:47:54,720 --> 00:47:55,559
+İnşaata giriyordum.
+
+522
+00:47:55,640 --> 00:47:56,680
+Her fakülteye giriyorum.
+
+523
+00:47:56,800 --> 00:47:58,099
+Gerçi İngilizce olanlarda da.
+
+524
+00:47:59,099 --> 00:48:00,119
+Şeye ilk defa giriyorum ama.
+
+525
+00:48:00,200 --> 00:48:04,880
+Havacılık zaten ilk defa, kaçıncı sene bu döneminiz?
+
+526
+00:48:04,980 --> 00:48:05,559
+İlk döneminiz.
+
+527
+00:48:05,640 --> 00:48:07,440
+Yani havacılığa da ilk defa giriyorum.
+
+528
+00:48:09,840 --> 00:48:10,760
+Şeye de girmiştim ama.
+
+529
+00:48:12,519 --> 00:48:14,519
+Mekatrini de hatırlamıyorum ama.
+
+530
+00:48:15,019 --> 00:48:16,940
+Endüstriye falan girmiş olabilirim.
+
+531
+00:48:19,380 --> 00:48:21,119
+Şimdi bu dönemden sonra.
+
+532
+00:48:21,119 --> 00:48:22,220
+Bu dönemden sonra.
+
+533
+00:48:22,420 --> 00:48:25,640
+Bu dönem matematikle linear cevir alıyorsunuz diye ben biliyorum ama.
+
+534
+00:48:25,720 --> 00:48:27,860
+Tabii linear cevir hepsinin bize zorunlu mu bilmiyorum.
+
+535
+00:48:28,720 --> 00:48:30,480
+İkinci dönem matematik ikiniz var.
+
+536
+00:48:31,880 --> 00:48:34,539
+İkinci sınıfta diferansiyel denkleminiz var.
+
+537
+00:48:34,820 --> 00:48:37,480
+Öyle de matematik derslerinizi bitiriyorsunuz.
+
+538
+00:48:37,480 --> 00:48:41,640
+Yani ikinci senenin ilk döneminde.
+
+539
+00:48:41,640 --> 00:48:42,640
+Matematik derslerini.
+
+540
+00:48:43,320 --> 00:48:46,980
+Bizde matematik 1-2, linear cevir ve diferansiyel reklamlar dersleri var.
+
+541
+00:48:47,960 --> 00:48:49,039
+Servis dersi olarak.
+
+542
+00:48:49,860 --> 00:48:53,860
+Ayrıca sizin kendi bölümünüzde olan matematiğinizi genellikle kendi hocalarınız veriyor.
+
+543
+00:48:54,640 --> 00:48:58,980
+Hani ekstra verilen bir şey varsa ama sizlerde olduğunu zannetmiyorum.
+
+544
+00:48:59,099 --> 00:48:59,440
+Duymadım.
+
+545
+00:48:59,940 --> 00:49:01,059
+Kontrolde var onların.
+
+546
+00:49:01,220 --> 00:49:03,640
+Kendi matematik özel farklı dersleri var.
+
+547
+00:49:03,720 --> 00:49:04,980
+Onlara da ben giriyorum mesela.
+
+548
+00:49:04,980 --> 00:49:07,320
+O yüzden orada bayağı bir öğrencim var.
+
+549
+00:49:09,519 --> 00:49:11,280
+Bakalım yani evde dinlemek.
+
+550
+00:49:11,720 --> 00:49:14,340
+Ya bilmiyorum zorlanıyor musunuz evde dersi dinlerken.
+
+551
+00:49:15,180 --> 00:49:17,619
+Hani okulda tabii hiç okula başlamadınız ama
+
+552
+00:49:17,619 --> 00:49:20,720
+hani evde dinleyerek verim alabiliyor musunuz?
+
+553
+00:49:20,980 --> 00:49:23,099
+Mesela benim dersim için verim alabiliyor musunuz?
+
+554
+00:49:27,188 --> 00:49:32,048
+Diğer derslerinizde ne kadar ders yapılıyor?
+
+555
+00:49:35,539 --> 00:49:38,179
+Ya pes edebilirsin, evet.
+
+556
+00:49:44,115 --> 00:49:55,096
+Evet, o da doğru. Gerçi sizin birinci sınıf dersiniz ya. Bölüm dersiniz çok var mı ki? Yani servis dersi dışında çok fazla bölüm dersiniz yok diyebiliyorum ilk sene.
+
+557
+00:50:05,748 --> 00:50:18,748
+Ya tabii dikkat dağınıklığı şey oluyor mesela 3 saatlik derse gerçekten öyle oluyor. Yani 1 saatte 2 saatte belki olmaz ama ya şeyi de kaynaklanıyor. Biz kendimiz bu kadar teknolojik şeye alışkın değiliz.
+
+558
+00:50:23,123 --> 00:50:23,783
+O da doğru.
+
+559
+00:50:24,263 --> 00:50:27,523
+Yani mesela ben bile kendim bu kadar teknolojiyi kullanmaya alışkın değildim.
+
+560
+00:50:27,663 --> 00:50:30,023
+İşte grafik davretli işte o tarz şeyler.
+
+561
+00:50:30,683 --> 00:50:32,243
+Biraz şimdi şimdi alışmaya başladık.
+
+562
+00:50:32,243 --> 00:50:37,323
+Ama tabii hani hiçbir zaman böyle bir ders çalışma şeyine çoğumuz alışkın değiliz.
+
+563
+00:50:37,983 --> 00:50:40,243
+İşte bu şekilde alıştık birazcık.
+
+564
+00:50:40,703 --> 00:50:44,403
+Ama tabii ki hiçbir şekilde yüz yüze dersin yerini tutmaz.
+
+565
+00:50:44,503 --> 00:50:46,543
+Ben mesela derste şunu yaparım genellikle.
+
+566
+00:50:47,123 --> 00:50:49,143
+Konuyu anlatırım sonra bir örnek veririm.
+
+567
+00:50:49,543 --> 00:50:51,003
+İşte derim ki hadi siz çözün derim.
+
+568
+00:50:51,003 --> 00:50:55,323
+Ve sınıfta dolaşıp işte defterlere bakarım.
+
+569
+00:50:55,503 --> 00:50:57,943
+İşte yanlış yaptıysa onu düzeltelim.
+
+570
+00:50:58,043 --> 00:50:59,863
+Onun çok faydası oluyor öğrencilere de.
+
+571
+00:50:59,863 --> 00:51:01,863
+Ama burada şimdi onu yapamıyorsunuz.
+
+572
+00:51:01,903 --> 00:51:05,723
+Yani ben burada ne kadar anlatsam da şu an sizin gerçekten anlayıp anlamadığınızı
+
+573
+00:51:05,723 --> 00:51:07,363
+ya da nerede takıldığınızı anlayamıyorum.
+
+574
+00:51:07,903 --> 00:51:11,143
+O yüzden de ben mümkün oldukça daha fazla örnek vermeye çalışıyorum.
+
+575
+00:51:11,303 --> 00:51:14,843
+Hani çözümlü olarak da ya da ne bileyim test vermeye çalışıyorum.
+
+576
+00:51:15,583 --> 00:51:20,363
+Normal dönemde bakın gerçekten normal dönemde bu kadar fazla örnek çözmüyoruz mesela biliyor musunuz?
+
+577
+00:51:20,363 --> 00:51:23,903
+Normal dönemde daha az örnek çözüyoruz.
+
+578
+00:51:23,983 --> 00:51:28,643
+Mesela o çocuk zaten dersi anladığı için verilen örnekleri de çözüyor.
+
+579
+00:51:28,763 --> 00:51:31,563
+Ama burada anlamanız için de ekstra örnek veriyorum.
+
+580
+00:51:32,123 --> 00:51:34,503
+O yüzden baya bizim çok fazla örneğimiz oluyor mesela.
+
+581
+00:51:34,683 --> 00:51:37,543
+Normal dönemde bu kadar örneğe gerek kalmıyor.
+
+582
+00:51:38,163 --> 00:51:43,323
+Ama şimdi evde kendiniz çalıştığınız için bir yere kadar hani buzlu anlatabiliyoruz.
+
+583
+00:51:43,323 --> 00:51:48,303
+Dolayısıyla hani şunu bilsem ki işte sen şurada yanlış yaptın, sen burada yanlış yaptın,
+
+584
+00:51:48,384 --> 00:51:50,983
+bak şurayı düzelt gibi bir şekilde bir şey yapamadığımız için burada.
+
+585
+00:51:51,603 --> 00:51:55,743
+İşte mümkün oldukça cevaplarıyla veriyorum ki siz cevaplarını en azından kıyaslayın diye.
+
+586
+00:51:59,347 --> 00:52:00,927
+Peki, başlayalım o zaman.
+
+587
+00:52:06,387 --> 00:52:17,467
+Ya bir yandan da şey de rahat tabii. Eskiden olsa işte buralarda oturmuyorsanız yol, trafik, git gel, yolda yorucu olabiliyordu. Yani oranın da bir avantajı var.
+
+588
+00:52:19,467 --> 00:52:21,387
+Bakalım. Evet. Şimdi.
+
+589
+00:52:22,347 --> 00:52:24,027
+Let's look at this example.
+
+590
+00:52:26,427 --> 00:52:27,827
+So what did you do here?
+
+591
+00:52:31,923 --> 00:52:40,163
+Okay, so if you look at this one, this part gives the delta x.
+
+592
+00:52:41,503 --> 00:52:45,463
+So delta x will be b minus a over n.
+
+593
+00:52:46,684 --> 00:52:51,224
+So from here we can determine b minus a is 2.
+
+594
+00:52:53,344 --> 00:52:55,063
+Okay.
+
+595
+00:52:55,063 --> 00:53:03,603
+After that, but before that actually you have to be careful about this.
+
+596
+00:53:03,603 --> 00:53:10,663
+In the formula, our index starts from 1, but in our equation it starts from 0.
+
+597
+00:53:10,663 --> 00:53:14,824
+Firstly, I have to change the index of the series.
+
+598
+00:53:14,824 --> 00:53:17,824
+Did you see the series in the high school?
+
+599
+00:53:17,824 --> 00:53:18,824
+How can you change?
+
+600
+00:53:18,824 --> 00:53:19,824
+Do you remember?
+
+601
+00:53:19,824 --> 00:53:23,824
+Okay, let me write here.
+
+602
+00:53:24,364 --> 00:53:27,603
+For example, e start from 0 to n.
+
+603
+00:53:28,463 --> 00:53:31,184
+For example, e square.
+
+604
+00:53:31,844 --> 00:53:38,804
+If you change the index, if you want to start from 1, okay.
+
+605
+00:53:39,483 --> 00:53:45,764
+If you add 1 here, you have to add 1 also here.
+
+606
+00:53:47,184 --> 00:53:48,963
+It will be n plus 1.
+
+607
+00:53:49,824 --> 00:53:53,903
+So for both of them, you will have the same term.
+
+608
+00:53:54,543 --> 00:54:00,483
+After that, you have to make the inverse process for inside.
+
+609
+00:54:00,824 --> 00:54:08,884
+If you add 1, you have to subtract 1 inside of the series, sum.
+
+610
+00:54:08,884 --> 00:54:09,884
+Okay.
+
+611
+00:54:09,884 --> 00:54:11,724
+It will be e minus 1 square.
+
+612
+00:54:11,724 --> 00:54:13,043
+So let's see.
+
+613
+00:54:13,043 --> 00:54:15,943
+If I write 1, it will be 0 square.
+
+614
+00:54:15,943 --> 00:54:21,443
+If I write 2, it will be 1 square and n square.
+
+615
+00:54:21,443 --> 00:54:23,943
+Now let's look at here.
+
+616
+00:54:23,943 --> 00:54:27,184
+If you write 0 square, 1 square.
+
+617
+00:54:27,184 --> 00:54:29,284
+And lastly, it will be n square.
+
+618
+00:54:29,384 --> 00:54:30,063
+They are the same.
+
+619
+00:54:30,063 --> 00:54:37,244
+But the index and the inside of the sum are different.
+
+620
+00:54:37,244 --> 00:54:38,764
+But the results are the same.
+
+621
+00:54:39,443 --> 00:54:41,824
+So here, I want to start with 1.
+
+622
+00:54:42,764 --> 00:54:46,463
+If I add 1 here, I have to make the same thing for here.
+
+623
+00:54:46,463 --> 00:54:47,463
+It will be n.
+
+624
+00:54:47,463 --> 00:54:59,463
+But inside of the function, I have to change to i minus 1 over...
+
+625
+00:54:59,463 --> 00:55:00,983
+Hayır.
+
+626
+00:55:01,523 --> 00:55:04,143
+Burada n sayımız şey.
+
+627
+00:55:06,143 --> 00:55:06,784
+Sabit.
+
+628
+00:55:07,684 --> 00:55:10,704
+Çünkü indeksimiz nereye bağlıysa indeksimizi değiştiriyoruz.
+
+629
+00:55:14,043 --> 00:55:15,364
+İndeksimizi değiştiriyoruz.
+
+630
+00:55:15,503 --> 00:55:18,403
+Buradaki değişen şey n değil.
+
+631
+00:55:18,643 --> 00:55:19,523
+Sadece indeks.
+
+632
+00:55:19,663 --> 00:55:21,563
+İndeksi çünkü biz ekleme yapıyoruz.
+
+633
+00:55:21,764 --> 00:55:23,963
+İşte i1 için, 2 için, 3 için yaptığımız için.
+
+634
+00:55:23,963 --> 00:55:26,583
+sadece değiştireceğimiz kısım, i kısmı.
+
+635
+00:55:28,663 --> 00:55:29,023
+Okay.
+
+636
+00:55:29,983 --> 00:55:30,923
+Kapıyı kapatır mısın?
+
+637
+00:55:32,463 --> 00:55:32,903
+Okay.
+
+638
+00:55:33,083 --> 00:55:35,663
+Now, this is our question.
+
+639
+00:55:36,384 --> 00:55:38,844
+And we say that this is b minus a.
+
+640
+00:55:39,163 --> 00:55:39,443
+Okay.
+
+641
+00:55:39,623 --> 00:55:40,784
+This is delta x.
+
+642
+00:55:43,123 --> 00:55:43,684
+Okay.
+
+643
+00:55:43,903 --> 00:55:44,224
+Now.
+
+644
+00:55:46,963 --> 00:55:51,023
+You can see that in this question, we find e minus 1.
+
+645
+00:55:51,443 --> 00:55:51,583
+Here.
+
+646
+00:55:53,403 --> 00:55:53,804
+Okay.
+
+647
+00:55:53,963 --> 00:56:05,184
+So, it is easy to say that we will use the formula a plus 2 over n e minus 1.
+
+648
+00:56:06,184 --> 00:56:17,704
+We'll be in the square root function 4 minus 2 e minus 1 over n square.
+
+649
+00:56:29,715 --> 00:56:30,596
+No, what can I do?
+
+650
+00:56:35,347 --> 00:56:40,867
+Firstly, what can you write for the function? Funksiyon için ne yazabiliriz sizce burada?
+
+651
+00:56:53,652 --> 00:56:54,172
+bakalım.
+
+652
+00:56:56,731 --> 00:56:58,972
+Let's see what can I write.
+
+653
+00:57:03,860 --> 00:57:04,860
+ok.
+
+654
+00:57:11,795 --> 00:57:12,855
+x üzeri 32 mi?
+
+655
+00:57:13,635 --> 00:57:14,735
+2. Tamam.
+
+656
+00:57:15,375 --> 00:57:15,675
+Okay.
+
+657
+00:57:15,975 --> 00:57:16,695
+So, okay.
+
+658
+00:57:16,855 --> 00:57:19,275
+Let us take our function as
+
+659
+00:57:19,275 --> 00:57:23,235
+in the square function 4 minus x squared.
+
+660
+00:57:24,935 --> 00:57:26,235
+What about a?
+
+661
+00:57:28,615 --> 00:57:32,096
+If you select your function is this, what is your a?
+
+662
+00:57:38,547 --> 00:57:59,067
+Okay, so if we select a, let's see, is it okay or not? 2e-1 over n. Okay, so in the function it will be 4-2e-1 over n squared.
+
+663
+00:58:00,347 --> 00:58:08,027
+Okay, this is the result. So our function is okay, our a is okay, but lastly what is b?
+
+664
+00:58:08,547 --> 00:58:19,547
+The difference was 2, so b has to be 2. Okay, and let me write the...
+
+665
+00:58:24,820 --> 00:58:36,500
+For example, in the choices they give from 0 to 4, in a, it will be 0 to 4, 1 minus x squared dx.
+
+666
+00:58:39,539 --> 00:58:48,660
+I will give actually, but I want to show here, it will be 2 to 4, 2 minus x squared dx.
+
+667
+00:58:52,884 --> 00:59:22,884
+In C, it will be 0 to 2, 4 minus x squared dx. In D, 0 to 2, 2 minus x squared dx. And E, 2, 4, 4 minus,
+
+668
+00:59:22,884 --> 00:59:46,963
+x squared dx. Okay, for example, you find that 4 minus x squared, but C and E are similar. But, here A is 2, so you have to cancel E. Because if you write 2 here, okay, the function will be different.
+
+669
+00:59:46,963 --> 00:59:54,204
+So, cevapları böyleydi. Cevaplarda şuna bakabilirsiniz. Farkı 2 olmayanlara mesela direkt gelebilirsiniz. Şu mesela.
+
+670
+00:59:54,784 --> 01:00:05,184
+You can cancel A because the difference from A to B is not 4, for example. Okay, let's make one last example. Okay, these are examples.
+
+671
+01:00:06,563 --> 01:00:15,043
+Then write your function and integral. This question is more easy, actually.
+
+672
+01:00:19,443 --> 01:00:28,663
+Okay, firstly, you have to look at your index. Your index start from 1. Okay. Now, what is delta x? Can you say?
+
+673
+01:00:33,108 --> 01:00:46,327
+Hayır, c ile e olabilir dedim. Çünkü fonksiyonlar aynı. Ama e olamaz. Çünkü 2'den başlarsa 2'deki son hali şu olmuyor.
+
+674
+01:00:47,548 --> 01:00:56,788
+a'ya buraya 2 yazarsam şu hali buna denk gelmiyor. Bak şurada göstereyim. Şurada 2 olursa şu haline denk gelmiyor.
+
+675
+01:00:56,788 --> 01:01:00,608
+Tamam mı? Onu söylemeye çalıştım. Yani şurada kafanız karışabilir.
+
+676
+01:01:00,807 --> 01:01:03,948
+c ile e fonksiyonları da aynı. Aradaki fark da 2.
+
+677
+01:01:04,948 --> 01:01:08,688
+Hani acaba bir yanlış mı var diye düşünebilirsiniz. Onu anlatmaya çalıştım.
+
+678
+01:01:09,188 --> 01:01:10,248
+Okay, so
+
+679
+01:01:10,248 --> 01:01:12,548
+here
+
+680
+01:01:12,548 --> 01:01:15,228
+this is your e index.
+
+681
+01:01:16,068 --> 01:01:18,628
+1 over n is your delta.
+
+682
+01:01:19,568 --> 01:01:21,688
+x, it will be 1 over n.
+
+683
+01:01:22,488 --> 01:01:23,048
+So
+
+684
+01:01:23,048 --> 01:01:25,748
+b minus a will be
+
+685
+01:01:25,748 --> 01:01:26,668
+1 here.
+
+686
+01:01:26,788 --> 01:01:28,688
+okay.
+
+687
+01:01:28,688 --> 01:01:28,728
+Okay.
+
+688
+01:01:28,728 --> 01:01:31,728
+What about the function?
+
+689
+01:01:31,728 --> 01:01:34,728
+You can see that if you look at the index, the index is e.
+
+690
+01:01:34,728 --> 01:01:40,728
+So our formula will be a plus e over n.
+
+691
+01:01:40,728 --> 01:01:44,728
+will be 2 plus e over n squared.
+
+692
+01:01:44,728 --> 01:01:46,728
+2 plus e over n squared.
+
+693
+01:01:46,728 --> 01:01:53,728
+plus 2 plus i over n.
+
+694
+01:01:53,728 --> 01:01:56,668
+Okay.
+
+695
+01:01:56,668 --> 01:02:00,668
+Now from here can you determine your function and your a?
+
+696
+01:02:00,668 --> 01:02:01,168
+A?
+
+697
+01:02:04,500 --> 01:02:23,619
+Buradan ne olabilir? Your function will be a is 2. What about the function? It will be x squared plus x.
+
+698
+01:02:23,619 --> 01:02:40,960
+If I write 2 here, it will be 2 plus i over n. If you write in the function, you will have 2 plus i over n squared plus 2 plus i over n.
+
+699
+01:02:40,960 --> 01:02:55,679
+Okay. So our solution will be a is 2. The difference is 1. So it will be 3x squared plus x dx. This is your integral.
+
+700
+01:02:56,340 --> 01:03:04,420
+In the test, they can ask what is the integral or they can ask what is the value of this sum. Okay.
+
+701
+01:03:08,532 --> 01:03:10,532
+Okay, did you understand the Riemansam?
+
+702
+01:03:11,112 --> 01:03:12,092
+Do you have any problem?
+
+703
+01:03:12,932 --> 01:03:15,872
+I will give some extra questions about Riemansam.
+
+704
+01:03:15,972 --> 01:03:18,352
+At the weekend you can try to solve.
+
+705
+01:03:18,352 --> 01:03:24,231
+Okay, after that we can talk next week if you have any question or any problem.
+
+706
+01:03:25,251 --> 01:03:26,271
+Okay, did you understand?
+
+707
+01:03:27,932 --> 01:03:29,692
+Benim evimde daha farklı sorular da var.
+
+708
+01:03:29,832 --> 01:03:30,711
+Zaten onları da vereceğim.
+
+709
+01:03:30,832 --> 01:03:32,152
+Size hafta sonunda bir bakın onlara.
+
+710
+01:03:32,152 --> 01:03:40,052
+Okay, now I want to talk about sketching a graph.
+
+711
+01:03:40,052 --> 01:03:44,092
+I forgot to give the graph.
+
+712
+01:03:44,572 --> 01:03:46,332
+Bunu vermeye unutmuşum.
+
+713
+01:03:46,711 --> 01:03:47,632
+Ona verelim o zaman.
+
+714
+01:03:47,852 --> 01:03:49,692
+Sonra haftaya buna devam ediyoruz.
+
+715
+01:03:50,812 --> 01:03:52,052
+Okay, so...
+
+716
+01:03:58,739 --> 01:04:28,739
+Bir sonraki bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir
+
+717
+01:04:28,739 --> 01:06:28,739
+bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde
+
+718
+01:07:28,739 --> 01:07:56,649
+Bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde
+
+719
+01:07:56,692 --> 01:07:59,452
+bunun y güresimetriğini alırsanız
+
+720
+01:07:59,452 --> 01:08:02,771
+y güresimetriği bu.
+
+721
+01:08:04,331 --> 01:08:05,052
+Ne demişsin?
+
+722
+01:08:06,351 --> 01:08:09,251
+Önce y eksenine göre, evet y eksenine güresimetriği bu.
+
+723
+01:08:10,092 --> 01:08:11,952
+Sonra x eksenine göre, evet.
+
+724
+01:08:12,952 --> 01:08:16,492
+Sonra x eksenine güresimetriğini alırsan da aynısına denk gelir, evet.
+
+725
+01:08:16,492 --> 01:08:17,311
+Öyle.
+
+726
+01:08:22,484 --> 01:08:22,984
+Okay.
+
+727
+01:08:24,164 --> 01:08:28,584
+So, after that, we have to investigate the first derivation.
+
+728
+01:08:29,264 --> 01:08:35,304
+And from the first derivation, we will determine increasing, decreasing intervals, local maximum, minimum.
+
+729
+01:08:35,644 --> 01:08:40,684
+And if you have, you can determine absolute maximum, minimum, if exist.
+
+730
+01:08:42,384 --> 01:08:46,164
+In the next part, you can investigate the second derivation.
+
+731
+01:08:46,164 --> 01:08:51,444
+And you can determine concave up, concave down intervals and inflection points.
+
+732
+01:08:51,444 --> 01:08:53,444
+And after that, we can sketch a graph.
+
+733
+01:08:54,864 --> 01:08:55,184
+Okay.
+
+734
+01:08:55,184 --> 01:08:55,804
+So,
+
+735
+01:09:02,068 --> 01:09:03,168
+bir şey değil [öğrenci].
+
+736
+01:09:08,851 --> 01:09:27,971
+Let's start to investigate this one. Okay. Let's try to sketch this function. Okay. Firstly, we have to determine our domain. What is our domain? How can we determine our domain?
+
+737
+01:09:27,971 --> 01:09:38,372
+In the first step, we have to determine domain one. What is our domain?
+
+738
+01:09:42,355 --> 01:09:47,155
+Yes, you can see that in your denominator it is x squared plus 1.
+
+739
+01:09:47,576 --> 01:09:53,315
+x squared plus 1's root is plus minus i.
+
+740
+01:09:53,755 --> 01:09:56,115
+But it is not in the real number.
+
+741
+01:09:56,435 --> 01:09:58,315
+It is in complex number.
+
+742
+01:09:59,235 --> 01:10:03,876
+Okay, so in your denominator it will be always positive.
+
+743
+01:10:04,055 --> 01:10:05,996
+So our domain will be real number.
+
+744
+01:10:06,735 --> 01:10:09,876
+After that, we have to find our intersection point.
+
+745
+01:10:10,076 --> 01:10:10,635
+What is that?
+
+746
+01:10:10,635 --> 01:10:12,795
+If x is 0, what is y?
+
+747
+01:10:14,996 --> 01:10:16,376
+y will be 4.
+
+748
+01:10:17,155 --> 01:10:20,996
+So the intersection point 0, 4.
+
+749
+01:10:21,515 --> 01:10:24,355
+If y is 0, do you have any points?
+
+750
+01:10:25,576 --> 01:10:30,555
+No, because x squared plus 1, it will be always positive.
+
+751
+01:10:31,956 --> 01:10:33,835
+So we don't have.
+
+752
+01:10:35,235 --> 01:10:40,555
+After that, we have to investigate this even or odd function.
+
+753
+01:10:40,635 --> 01:10:41,675
+So what is that?
+
+754
+01:10:41,755 --> 01:10:44,715
+I have to write minus x in the function.
+
+755
+01:10:45,935 --> 01:10:46,155
+Okay.
+
+756
+01:10:46,755 --> 01:10:54,416
+It is minus x squared plus 4 minus x squared plus 1.
+
+757
+01:10:54,916 --> 01:10:56,595
+It is the same function.
+
+758
+01:10:56,595 --> 01:11:10,876
+It means that f is even and symmetric about y axis.
+
+759
+01:11:10,876 --> 01:11:13,795
+Okay.
+
+760
+01:11:15,335 --> 01:11:19,996
+Now, it means that we can sketch this one.
+
+761
+01:11:21,235 --> 01:11:21,416
+Okay.
+
+762
+01:11:21,755 --> 01:11:25,355
+After that, we can use symmetry and we can sketch this part.
+
+763
+01:11:26,095 --> 01:11:26,576
+Two.
+
+764
+01:11:26,576 --> 01:11:28,576
+Okay.
+
+765
+01:11:29,215 --> 01:11:32,076
+In the next part, let us look at here.
+
+766
+01:11:32,295 --> 01:11:35,555
+In the next part, they say they investigate the asymptotes.
+
+767
+01:11:36,095 --> 01:11:36,416
+Okay.
+
+768
+01:11:37,275 --> 01:11:38,355
+What are the asymptotes?
+
+769
+01:11:38,496 --> 01:11:39,195
+The first one.
+
+770
+01:11:39,295 --> 01:11:42,635
+Do you have any point where the function is not defined?
+
+771
+01:11:42,635 --> 01:11:46,335
+Tanımsız yapan bir yer var mı fonksiyonun?
+
+772
+01:11:46,335 --> 01:11:59,335
+Tanımsız yapan bir yer var mı?
+
+773
+01:11:49,876 --> 01:11:52,155
+No, because our domain is real number.
+
+774
+01:11:52,315 --> 01:11:57,396
+So no vertical asymptote.
+
+775
+01:11:58,396 --> 01:12:00,916
+What is the definition of vertical asymptote?
+
+776
+01:12:00,996 --> 01:12:03,896
+If you have a point, for example, x goes to a,
+
+777
+01:12:04,556 --> 01:12:09,155
+if your function is infinity, it is plus or minus,
+
+778
+01:12:09,936 --> 01:12:13,296
+then x equals a will be vertical asymptote.
+
+779
+01:12:14,476 --> 01:12:16,176
+Yani aslında fonksiyonu tanımsız yapan.
+
+780
+01:12:16,956 --> 01:12:17,876
+Ama burada öyle bir şey yok.
+
+781
+01:12:17,876 --> 01:12:20,756
+What about the horizontal asymptote?
+
+782
+01:12:20,855 --> 01:12:22,275
+In the horizontal asymptote,
+
+783
+01:12:23,636 --> 01:12:26,695
+when you take limit and x goes to infinity,
+
+784
+01:12:26,976 --> 01:12:28,695
+do you have a limit?
+
+785
+01:12:28,695 --> 01:12:34,476
+It is x squared plus 4 over x squared plus 1.
+
+786
+01:12:35,976 --> 01:12:38,136
+And the limit here is 1.
+
+787
+01:12:38,416 --> 01:12:42,695
+So y equals 1 will be your horizontal asymptote.
+
+788
+01:12:42,695 --> 01:12:43,416
+[öğrenci].
+
+789
+01:12:47,188 --> 01:12:53,627
+And I said that there is an inverse relation between horizontal and obliquid asymptote.
+
+790
+01:12:53,728 --> 01:12:56,188
+If you have horizontal, you can't have obliquid.
+
+791
+01:12:56,708 --> 01:12:57,127
+Why?
+
+792
+01:12:57,127 --> 01:13:08,627
+What is the meaning of obliquid asymptote if you have like this x cubed plus 1 over x squared plus x minus 1, for example?
+
+793
+01:13:10,268 --> 01:13:15,127
+For the obliquid asymptote, you have to look at the degree of numerator and denominator.
+
+794
+01:13:15,127 --> 01:13:18,007
+It is 3, it is 2.
+
+795
+01:13:18,807 --> 01:13:29,788
+If the degree of your denominator is one bigger than your denominator, then you can have obliquid asymptote.
+
+796
+01:13:29,948 --> 01:13:32,328
+Yani yukarının derecesi aşağıdan bir fazla ise.
+
+797
+01:13:36,659 --> 01:13:39,859
+sonsuz, böyle sonsuz durma için bir şey diyor musunuz?
+
+798
+01:13:44,851 --> 01:14:09,751
+Yani sonsuz böyle sonsuz hiç görmedim. Yani başka fonksiyonlarda olabilir. O zaman L'Hospital'i kullanman gerekir. Öyle bir durum varsa L'Hospital'i kullanıp o limiti bulabilirsin. Ama biz konularımızın sadece şeyden sorumluyuz. Grafik çiziminde polinomlar var şu an. Polinomlarda da öyle bir durum olmuyor. 3 durum söz konusu olabiliyor.
+
+799
+01:14:09,751 --> 01:14:25,992
+Okay, so we determine our asymptotes. And in the third one, find the first and second derivation. Okay, in the third part, let us find what is f'x?
+
+800
+01:14:28,572 --> 01:14:33,971
+The first function's derivation to x product the second function
+
+801
+01:14:33,971 --> 01:14:38,631
+minus the first function
+
+802
+01:14:38,631 --> 01:14:42,091
+product the second function.
+
+803
+01:14:42,091 --> 01:14:45,171
+product the second function's derivation is 2x over
+
+804
+01:14:45,171 --> 01:14:48,872
+x squared plus 1
+
+805
+01:14:48,872 --> 01:14:48,952
+plus 1
+
+806
+01:14:48,952 --> 01:14:50,251
+squared
+
+807
+01:14:50,251 --> 01:15:08,612
+plus 1
+
+808
+01:14:53,684 --> 01:15:11,244
+So, I have 2x cubed plus 2x minus 2x cubed minus 8x over x squared plus 1 squared.
+
+809
+01:15:11,244 --> 01:15:23,583
+So, we can cancel here. Here, I have minus 6x over x squared plus 1 squared.
+
+810
+01:15:23,764 --> 01:15:29,484
+Normally, in the classical exam, we ask this kind of graph question and it was about 40 points.
+
+811
+01:15:30,324 --> 01:15:33,384
+Genellikle, klasik sınavlarda bunu soruyorduk ve 40 puanla bu soru.
+
+812
+01:15:36,304 --> 01:15:40,704
+Okay, this is the first derivation. Now, we can find the second derivation.
+
+813
+01:15:41,244 --> 01:15:57,884
+The second derivation will be the first derivation will be the first derivation will be minus 6x squared plus 1 squared minus the first function, but it will be plus product.
+
+814
+01:15:58,083 --> 01:16:11,224
+The second function's derivation will be 2x squared plus 1 and derivation inside will be also 2x over x squared plus 1 to the power 4.
+
+815
+01:16:11,244 --> 01:16:12,244
+So, we can find the third derivation.
+
+816
+01:16:14,771 --> 01:16:21,091
+Okay, here we can cancel one x square plus one for each part here, here.
+
+817
+01:16:24,372 --> 01:16:37,412
+Okay, so we have minus six x square minus six plus third canal to 20.
+
+818
+01:16:48,756 --> 01:16:52,056
+ve süreklik, 11x.
+
+819
+01:17:11,828 --> 01:17:26,468
+This is the third part. Now in the fourth part, I have to investigate the first derivation and from here we can determine maximum, minimum, increasing, liquid, 4.
+
+820
+01:17:30,579 --> 01:17:52,880
+If f'x is 0, then from here you can see that x will be 0. This is our critical point. Do you have any critical points? Where can you find critical points? Hangi noktalar kritik nokta olabiliyordu?
+
+821
+01:17:57,108 --> 01:18:04,768
+Which points can be a critical point? How can you determine? Actually, you have three different cases. What are they?
+
+822
+01:18:06,087 --> 01:18:26,148
+The first one, where f'x is 0. The other one, yes, the point where f'x is undefined. And lastly, if your domain is a closed interval, semi-closed interval, the end points can be your critical points.
+
+823
+01:18:26,148 --> 01:18:39,347
+So you can investigate these critical points. In this example, we have only one critical point. Okay. So after that, let us make a sign table. Okay.
+
+824
+01:18:41,988 --> 01:18:51,328
+f'x. Okay. This is minus infinity. This is infinity. I have one critical point. It is 0.
+
+825
+01:18:51,328 --> 01:19:02,228
+You can see that. You can see that in your denominator. You can see that in your denominator. This part will be always positive. So only the sign will change from according to 0.
+
+826
+01:19:02,228 --> 01:19:08,028
+What is this sign for f'x? It will be negative or positive.
+
+827
+01:19:08,028 --> 01:19:08,228
+f'x.
+
+828
+01:19:15,539 --> 01:19:25,479
+Yes, positive. Normally x will be negative, but because of this sign, it will be positive and this will be negative. Increasing, decreasing.
+
+829
+01:19:25,899 --> 01:19:43,840
+So, minus infinity to 0, it is increasing. 0 to infinity, it is decreasing. And you can see that 0, 4 will be local.
+
+830
+01:19:45,539 --> 01:19:53,739
+Maximum. Do you have absolute maximum? Bu mutlak olabilir mi aynı zamanda?
+
+831
+01:20:03,667 --> 01:20:10,167
+Tamam, they said that the function is increasing after that it is decreasing.
+
+832
+01:20:10,947 --> 01:20:16,847
+So this point will be also absolute maximum.
+
+833
+01:20:18,527 --> 01:20:19,827
+I'm so sold.
+
+834
+01:20:21,007 --> 01:20:22,147
+Okay, think like this.
+
+835
+01:20:22,307 --> 01:20:23,627
+The function is increasing.
+
+836
+01:20:23,887 --> 01:20:26,387
+I'm sketching randomly.
+
+837
+01:20:26,587 --> 01:20:27,927
+It is increasing, increasing.
+
+838
+01:20:28,728 --> 01:20:30,287
+After that it is decreasing.
+
+839
+01:20:30,287 --> 01:20:33,867
+And you can't have any bigger than this point.
+
+840
+01:20:34,007 --> 01:20:37,167
+So this point will be also absolute maximum.
+
+841
+01:20:38,607 --> 01:20:38,907
+Okay.
+
+842
+01:20:39,768 --> 01:20:42,087
+Now let us look at the fifth one.
+
+843
+01:20:42,228 --> 01:20:46,547
+In the fifth one they said they investigate the second derivation.
+
+844
+01:20:46,547 --> 01:20:59,827
+Our second derivation is 18x squared minus 6 over x squared plus 1 cubed.
+
+845
+01:21:00,287 --> 01:21:07,647
+If it is 0, 18x squared will be 6.
+
+846
+01:21:08,707 --> 01:21:12,987
+So x squared will be 1 over 3.
+
+847
+01:21:13,847 --> 01:21:17,527
+So it will be plus minus 1 over square root 3.
+
+848
+01:21:18,188 --> 01:21:24,427
+This is possible inflection point.
+
+849
+01:21:24,427 --> 01:21:30,087
+We can't say it is inflection point because at this point the sign has to change.
+
+850
+01:21:30,747 --> 01:21:30,907
+Okay.
+
+851
+01:21:31,387 --> 01:21:35,427
+Now let us investigate the sign of the second derivation.
+
+852
+01:21:36,728 --> 01:21:37,867
+Okay.
+
+853
+01:21:39,447 --> 01:21:40,987
+If you look at your denominator.
+
+854
+01:21:42,067 --> 01:21:44,647
+This part will be always positive.
+
+855
+01:21:45,188 --> 01:21:47,087
+You don't need to investigate this one.
+
+856
+01:21:47,607 --> 01:21:49,047
+Only I have to investigate.
+
+857
+01:21:50,047 --> 01:21:52,707
+x minus 1 over square root 3.
+
+858
+01:21:53,567 --> 01:21:55,947
+x plus 1 over square root 3.
+
+859
+01:21:55,947 --> 01:22:01,927
+And this will be the second function's sign also.
+
+860
+01:22:04,268 --> 01:22:05,547
+Minus infinity.
+
+861
+01:22:06,107 --> 01:22:06,747
+Infinity.
+
+862
+01:22:09,247 --> 01:22:12,987
+It is minus 1 over square root 3.
+
+863
+01:22:13,867 --> 01:22:15,268
+1 over square root 3.
+
+864
+01:22:16,268 --> 01:22:17,247
+Here.
+
+865
+01:22:17,247 --> 01:22:24,967
+Until it will be negative, positive, negative, positive, positive, positive, negative, positive.
+
+866
+01:22:26,167 --> 01:22:28,867
+Concave up, concave up, concave down.
+
+867
+01:22:29,747 --> 01:22:29,987
+Okay.
+
+868
+01:22:30,607 --> 01:22:37,007
+So I can say that minus infinity to minus 1 over square root 3.
+
+869
+01:22:37,007 --> 01:22:43,287
+And also 1 over square root 3 to infinity.
+
+870
+01:22:43,287 --> 01:22:46,427
+It is concave up.
+
+871
+01:22:47,787 --> 01:22:52,647
+And minus 1 over square root 3 to 1 over square root 3.
+
+872
+01:22:52,787 --> 01:22:56,407
+It will be concave down.
+
+873
+01:22:58,007 --> 01:22:58,247
+Okay.
+
+874
+01:22:58,907 --> 01:23:00,947
+And what about the inflection points?
+
+875
+01:23:01,047 --> 01:23:02,728
+At this point the sign is changing.
+
+876
+01:23:02,987 --> 01:23:03,407
+Yes.
+
+877
+01:23:04,047 --> 01:23:05,567
+This one and this one.
+
+878
+01:23:05,567 --> 01:23:08,647
+So minus 1 over square root 3.
+
+879
+01:23:10,728 --> 01:23:16,607
+And 1 over square root 3 will be inflection points.
+
+880
+01:23:19,956 --> 01:23:20,815
+kare karşılığını
+
+881
+01:23:30,707 --> 01:23:33,407
+Hocam lokal maksimum noktasını bulduğumuz kısmı.
+
+882
+01:23:35,187 --> 01:23:36,427
+Tamam, bakalım.
+
+883
+01:23:39,427 --> 01:23:42,627
+Birinci türevi sıfırı eşit dediğimizde nokta sıfır oldu.
+
+884
+01:23:43,087 --> 01:23:44,127
+İşaret dedik burada.
+
+885
+01:23:45,407 --> 01:23:48,807
+Burada işaret değişimi de olduğu için 0,4 burada lokal maksimum.
+
+886
+01:23:52,243 --> 01:23:56,403
+inflection point dediğimiz büküm noktası, konkallığın değiştiği nokta.
+
+887
+01:23:56,503 --> 01:23:59,663
+The inflection point is where the concord is changing.
+
+888
+01:23:59,923 --> 01:24:05,783
+For example, here, after this point, the concord is changing this one.
+
+889
+01:24:06,023 --> 01:24:07,743
+This is your inflection point.
+
+890
+01:24:09,323 --> 01:24:09,483
+Okay?
+
+891
+01:24:11,083 --> 01:24:12,943
+Konkallığın yön değiştiği nokta.
+
+892
+01:24:13,523 --> 01:24:15,863
+Inflection means büküm, dönüm.
+
+893
+01:24:15,863 --> 01:24:16,963
+Türk, Türk.
+
+894
+01:24:24,180 --> 01:24:27,180
+Okay and we investigate.
+
+895
+01:24:30,560 --> 01:24:33,260
+Increasing, decreasing, concave up, concave down.
+
+896
+01:24:33,400 --> 01:24:34,920
+Now we can sketch the graph.
+
+897
+01:24:35,079 --> 01:24:36,140
+I want to show here.
+
+898
+01:24:36,380 --> 01:24:39,180
+Okay.
+
+899
+01:24:41,380 --> 01:24:49,180
+First of all, you have to put your asymptotes.
+
+900
+01:24:49,180 --> 01:24:50,400
+Yes, asymptotes.
+
+901
+01:24:50,520 --> 01:24:51,619
+Where are the asymptotes?
+
+902
+01:24:52,159 --> 01:24:53,560
+I have only one asymptote.
+
+903
+01:24:53,560 --> 01:24:54,480
+Y equals one.
+
+904
+01:24:54,600 --> 01:24:57,340
+I sketch the line Y equals X.
+
+905
+01:24:57,460 --> 01:24:58,720
+This is your asymptote.
+
+906
+01:25:00,539 --> 01:25:04,440
+After that, you have to show your important points.
+
+907
+01:25:04,520 --> 01:25:05,960
+What is your important points?
+
+908
+01:25:06,100 --> 01:25:08,659
+They are an intersection with the axes.
+
+909
+01:25:09,680 --> 01:25:11,320
+We determined it here.
+
+910
+01:25:13,520 --> 01:25:15,520
+I have one intersection point.
+
+911
+01:25:15,520 --> 01:25:17,740
+If X is zero, Y will be four.
+
+912
+01:25:18,460 --> 01:25:19,119
+This point.
+
+913
+01:25:19,940 --> 01:25:20,079
+Okay.
+
+914
+01:25:20,079 --> 01:25:24,140
+And this point is also your local maximum point.
+
+915
+01:25:24,659 --> 01:25:31,460
+And for the concavity, the concavity is changing minus one over square root three and one over square root three.
+
+916
+01:25:31,460 --> 01:25:34,659
+And both of them are 13 over four.
+
+917
+01:25:36,240 --> 01:25:36,659
+Okay.
+
+918
+01:25:38,119 --> 01:25:40,720
+Now only I will sketch the right side.
+
+919
+01:25:40,840 --> 01:25:44,039
+After that, we can use this method to sketch the left side.
+
+920
+01:25:44,039 --> 01:25:49,820
+If you look at the table.
+
+921
+01:25:49,820 --> 01:25:50,320
+Table.
+
+922
+01:25:51,820 --> 01:25:52,260
+Okay.
+
+923
+01:25:53,140 --> 01:25:58,820
+Here it is minus infinity to zero is increasing.
+
+924
+01:25:58,820 --> 01:26:02,360
+But for the right side, I will have only this part.
+
+925
+01:26:03,119 --> 01:26:05,680
+For zero to infinity, it will be always decreasing.
+
+926
+01:26:06,140 --> 01:26:06,260
+Okay.
+
+927
+01:26:07,280 --> 01:26:08,520
+What about the concavity?
+
+928
+01:26:08,980 --> 01:26:13,820
+In the concavity, from zero to...
+
+929
+01:26:13,820 --> 01:26:15,119
+One second.
+
+930
+01:26:15,119 --> 01:26:24,520
+From zero to one over square root three, it is concave down.
+
+931
+01:26:26,039 --> 01:26:26,420
+Okay.
+
+932
+01:26:26,880 --> 01:26:31,300
+For one over three to infinity, it is concave up.
+
+933
+01:26:32,400 --> 01:26:33,700
+Niye sıfırdan başladım?
+
+934
+01:26:33,820 --> 01:26:36,860
+Çünkü sağ tarafı incelediğim için pozitif olan kısımlara bakıyorum.
+
+935
+01:26:36,860 --> 01:26:37,780
+Okay.
+
+936
+01:26:38,240 --> 01:26:39,860
+But before that, let me...
+
+937
+01:26:42,640 --> 01:26:46,619
+Remember the four important shapes.
+
+938
+01:27:05,108 --> 01:27:19,268
+Here it is increasing and concave up. What about this one? It is increasing or decreasing.
+
+939
+01:27:23,539 --> 01:27:27,100
+bu şekilleri de kafamızda oturtalım. Burada fonksiyonlar tam azalan mı?
+
+940
+01:27:29,319 --> 01:27:32,760
+It is increasing concave down.
+
+941
+01:27:34,579 --> 01:27:39,439
+This is decreasing concave up.
+
+942
+01:27:40,539 --> 01:27:46,100
+And here it is decreasing concave down.
+
+943
+01:27:46,100 --> 01:27:49,279
+Okay, now.
+
+944
+01:27:51,019 --> 01:27:55,000
+For 0 to square root 3, it is concave down.
+
+945
+01:27:55,399 --> 01:27:56,819
+And it is always decreasing.
+
+946
+01:27:57,000 --> 01:27:58,779
+Which shape we will use?
+
+947
+01:27:59,000 --> 01:28:00,039
+Concave down.
+
+948
+01:28:00,840 --> 01:28:02,600
+And also it is decreasing.
+
+949
+01:28:03,019 --> 01:28:03,699
+So this one.
+
+950
+01:28:05,619 --> 01:28:11,060
+But don't forget, if you have a local maximum or local minimum, the shape will be the same.
+
+951
+01:28:11,539 --> 01:28:12,579
+For example, here.
+
+952
+01:28:13,180 --> 01:28:14,279
+This is local minimum.
+
+953
+01:28:14,279 --> 01:28:15,899
+The shape will be always the same.
+
+954
+01:28:15,899 --> 01:28:16,619
+Or here.
+
+955
+01:28:17,819 --> 01:28:19,659
+This point will be local maximum.
+
+956
+01:28:20,319 --> 01:28:25,720
+So if the 4 is local maximum, the shape will be here until this point.
+
+957
+01:28:25,899 --> 01:28:29,100
+Okay, because this is the inflection point.
+
+958
+01:28:29,180 --> 01:28:30,840
+Until here, it will be the same.
+
+959
+01:28:31,260 --> 01:28:32,359
+Atashurde de çizebide.
+
+960
+01:28:32,359 --> 01:28:32,699
+This is the same.
+
+961
+01:28:33,779 --> 01:28:38,119
+After that, after this point, the concrete is changing.
+
+962
+01:28:38,260 --> 01:28:39,880
+It will be concave up.
+
+963
+01:28:39,880 --> 01:29:09,859
+So it will be concave up.
+
+964
+01:29:05,171 --> 01:29:35,171
+Bu, mesela, y'e 1'e
+
+965
+01:29:35,171 --> 01:30:35,171
+1'e 1'
+
+966
+01:30:35,171 --> 01:30:38,011
+infinity is not included so you can't touch one here.
+
+967
+01:30:39,251 --> 01:30:46,271
+It means that actually horizontal asymptote makes a restriction of your function.
+
+968
+01:30:47,111 --> 01:30:49,851
+It has to be greater than one.
+
+969
+01:30:50,151 --> 01:30:55,231
+You can't touch the asymptote so all the values have to be greater than one.
+
+970
+01:30:55,692 --> 01:31:01,091
+Burada asymptotumuz sonsuz olması durumunda bire geliyor ama bir sonsuzluğu yok ki bizim domenimizde.
+
+971
+01:31:01,091 --> 01:31:05,251
+oraya kadar yaklaşıyor ama oraya gelmiyor dolayısıyla değmiyorsunuz.
+
+972
+01:31:05,591 --> 01:31:08,431
+Dolayısıyla değmediğiniz için aşağıya da geçemiyorsunuz.
+
+973
+01:31:08,491 --> 01:31:10,251
+Yani her türlü yukarıda olmak zorunda.
+
+974
+01:31:12,331 --> 01:31:14,111
+Başka bir şey anlatıyor muydum?
+
+975
+01:31:15,631 --> 01:31:16,911
+Başka bir de bir şey sormuşum.
+
+976
+01:31:16,911 --> 01:31:18,011
+Şimdi herhalde sanmamıştım.
+
+977
+01:31:19,351 --> 01:31:20,271
+Ha şey sormuştunuz.
+
+978
+01:31:20,351 --> 01:31:20,651
+Hocam.
+
+979
+01:31:21,211 --> 01:31:21,651
+Efendim.
+
+980
+01:31:21,931 --> 01:31:22,311
+Evet.
+
+981
+01:31:22,591 --> 01:31:23,811
+13 bölü 4'ü nasıl oluyor?
+
+982
+01:31:23,831 --> 01:31:24,111
+Evet evet.
+
+983
+01:31:24,491 --> 01:31:25,551
+Fonksiyonda yerini yazıyoruz.
+
+984
+01:31:27,771 --> 01:31:28,931
+Türevinde falan değil değil mi?
+
+985
+01:31:28,991 --> 01:31:29,471
+Hayır hayır.
+
+986
+01:31:29,471 --> 01:31:31,631
+Hayır hayır şey fonksiyonda yazılır.
+
+987
+01:31:32,171 --> 01:31:35,351
+It will be 1 over 3 plus 4.
+
+988
+01:31:35,831 --> 01:31:37,331
+1 over 3 plus 1.
+
+989
+01:31:38,051 --> 01:31:38,311
+Okay.
+
+990
+01:31:38,511 --> 01:31:40,751
+It will be 13 over 4.
+
+991
+01:31:41,211 --> 01:31:45,831
+You will find the value of y in the function not in derivation.
+
+992
+01:31:45,831 --> 01:31:48,192
+Okay.
+
+993
+01:31:48,371 --> 01:31:50,331
+Let us look at another example.
+
+994
+01:31:50,331 --> 01:31:53,071
+Bye.
+
+995
+01:31:55,444 --> 01:32:04,444
+Sınavda nasıl olabilir? Mesela size çok karışık bir fonksiyon şekli verir. Der ki, işte buna göre aşağıdaki soruları cevaplayın.
+
+996
+01:32:04,444 --> 01:32:12,764
+For example, they can give a complex graph and they can ask or they can give a function.
+
+997
+01:32:13,144 --> 01:32:19,084
+Okay, this is your function and at each choice they can give a graph.
+
+998
+01:32:19,704 --> 01:32:23,004
+Okay, and they ask that what is the graph of this function?
+
+999
+01:32:23,004 --> 01:32:25,804
+Maybe they can write a point.
+
+1000
+01:32:26,624 --> 01:32:29,923
+Okay, this is your function, this is your graph.
+
+1001
+01:32:30,084 --> 01:32:32,844
+According to your graph, what is C for example?
+
+1002
+01:32:33,423 --> 01:32:35,004
+I will prepare some questions.
+
+1003
+01:32:35,184 --> 01:32:36,004
+Okay, next week.
+
+1004
+01:32:36,704 --> 01:32:37,824
+Bununla ilgili değişiklik.
+
+1005
+01:32:37,844 --> 01:32:38,884
+Aklımda birkaç soru var.
+
+1006
+01:32:39,284 --> 01:32:40,064
+Onu hazırlarım.
+
+1007
+01:32:40,144 --> 01:32:43,704
+Şöyle, yani direkt grafik çizimiyle ilgili yapamaz.
+
+1008
+01:32:43,824 --> 01:32:46,704
+Çünkü bilgisayar elinizin altında şu olabilir.
+
+1009
+01:32:47,484 --> 01:32:48,804
+İşte fonksiyon bu.
+
+1010
+01:32:48,884 --> 01:32:49,404
+Grafiği bu.
+
+1011
+01:32:49,484 --> 01:32:50,864
+Burada bilinmeyen bir şey vardır.
+
+1012
+01:32:50,864 --> 01:32:52,724
+Atıyorum C vardır, D vardır.
+
+1013
+01:32:53,004 --> 01:32:56,864
+Kıyaslayın.
+
+1014
+01:32:56,864 --> 01:32:59,184
+Yani testte biraz daha uygun şeyler sorulabilir.
+
+1015
+01:32:59,884 --> 01:33:00,104
+Okay.
+
+1016
+01:33:00,464 --> 01:33:02,444
+First of all, what is your domain?
+
+1017
+01:33:02,444 --> 01:33:19,544
+What is your domain?
+
+1018
+01:33:09,332 --> 01:33:12,752
+In here, x kare artı 1-1 can't be 0.
+
+1019
+01:33:14,652 --> 01:33:21,311
+So, x plus and minus 1, I have to subtract from your domain.
+
+1020
+01:33:21,572 --> 01:33:25,311
+I have to subtract real number minus 1, 1.
+
+1021
+01:33:25,972 --> 01:33:37,152
+It means that actually minus infinity to minus 1, minus 1 to 1, and 1 to infinity.
+
+1022
+01:33:37,152 --> 01:33:46,412
+It means that your graph consists of three different parts, one for here, one for here, one for here.
+
+1023
+01:33:47,212 --> 01:33:50,811
+Okay, we have three different parts of your graph.
+
+1024
+01:33:51,132 --> 01:33:54,432
+After that, we have to determine the intersection point.
+
+1025
+01:33:54,592 --> 01:33:55,231
+What is that?
+
+1026
+01:33:55,731 --> 01:33:57,952
+If x is 0, what is y?
+
+1027
+01:33:58,852 --> 01:34:01,192
+y will be 0.
+
+1028
+01:34:02,052 --> 01:34:04,752
+The intersection point will be 0, 0.
+
+1029
+01:34:04,752 --> 01:34:08,652
+If y is 0, if y is 0, if y is 0, you can easily see that it is 0.
+
+1030
+01:34:08,652 --> 01:34:11,271
+So, we have only one intersection point.
+
+1031
+01:34:11,872 --> 01:34:13,152
+What about the symmetry?
+
+1032
+01:34:14,112 --> 01:34:24,032
+If we write minus x in the function, I will have minus x over minus x squared minus 1.
+
+1033
+01:34:24,112 --> 01:34:28,072
+It is minus the same function.
+
+1034
+01:34:29,271 --> 01:34:33,592
+It means that f is odd.
+
+1035
+01:34:34,752 --> 01:34:40,432
+And symmetric, and symmetric, and symmetric, and symmetric, about origin.
+
+1036
+01:34:43,712 --> 01:34:44,032
+Okay.
+
+1037
+01:34:46,032 --> 01:34:48,292
+Now, let us look at the second part.
+
+1038
+01:34:48,432 --> 01:34:51,972
+In the second part, I remember asymptotes.
+
+1039
+01:34:51,972 --> 01:34:52,932
+Let me bakalım.
+
+1040
+01:34:54,112 --> 01:34:57,311
+In the second part, they say they investigate the asymptotes.
+
+1041
+01:34:57,792 --> 01:34:58,112
+Okay.
+
+1042
+01:34:58,752 --> 01:35:00,872
+So, do you have any vertical asymptote?
+
+1043
+01:35:01,972 --> 01:35:03,912
+Do you have any vertical asymptote?
+
+1044
+01:35:08,916 --> 01:35:16,155
+Vertical is formal. Vertical means where the function is not defined.
+
+1045
+01:35:18,096 --> 01:35:34,456
+We have, yes, we have two points here. Limit x goes to 1, your function is infinity, and x goes to minus 1, the function's limit is infinity, plus or minus.
+
+1046
+01:35:34,456 --> 01:35:45,735
+I write randomly, okay. So x equals 1 and x equals minus 1 are vertical asymptote.
+
+1047
+01:35:49,460 --> 01:35:59,220
+What about horizontal asymptote? Do we have horizontal asymptote? For this, I have to look at what is limit x goes to infinity or function?
+
+1048
+01:36:02,260 --> 01:36:03,220
+What is this?
+
+1049
+01:36:13,332 --> 01:36:19,972
+Y'ın 0'ı y'ın horizontal asit.
+
+1050
+01:36:20,652 --> 01:36:23,672
+If we have horizontal, we can't have obliquid asit.
+
+1051
+01:36:24,832 --> 01:36:30,592
+Okay, now in the third part, I have to find the first and the second derivation.
+
+1052
+01:36:34,644 --> 01:36:39,784
+The first derivation will be, before that, let us see the function.
+
+1053
+01:36:41,003 --> 01:36:45,864
+Okay, derivation of x will be 1, product x squared minus 1,
+
+1054
+01:36:47,384 --> 01:36:56,304
+minus the first function, product the second function's derivation is 2x over x squared minus 1 squared.
+
+1055
+01:37:01,747 --> 01:37:06,787
+Okay, so I have minus x square plus one.
+
+1056
+01:37:10,292 --> 01:37:12,392
+x squared minus 1 squared.
+
+1057
+01:37:13,712 --> 01:37:15,452
+This is the first derivation.
+
+1058
+01:37:16,192 --> 01:37:19,572
+Now from here, let us determine the second derivation.
+
+1059
+01:37:22,212 --> 01:37:29,472
+Okay, it is minus, derivation of this function is 2x, product the second function,
+
+1060
+01:37:31,932 --> 01:37:39,352
+minus, but it will be plus, the first function, product the second function's derivation will be
+
+1061
+01:37:39,352 --> 01:37:51,672
+2x squared minus 1, product derivation inside will be 2x, x squared minus 1 to the power of 4.
+
+1062
+01:37:53,352 --> 01:38:00,771
+Okay, now I can cancel 1 from here, here and x squared.
+
+1063
+01:38:01,892 --> 01:38:03,852
+So what do we have?
+
+1064
+01:38:05,231 --> 01:38:06,412
+Şuradan hemen yazalım.
+
+1065
+01:38:21,747 --> 01:38:24,847
+X squared minus 1 cubed.
+
+1066
+01:38:25,107 --> 01:38:25,247
+Okay.
+
+1067
+01:38:25,707 --> 01:38:28,187
+This is the first and the second derivation.
+
+1068
+01:38:29,047 --> 01:38:29,467
+Okay.
+
+1069
+01:38:30,287 --> 01:38:31,227
+In the fourth one,
+
+1070
+01:38:31,867 --> 01:38:34,147
+I have to investigate the first derivation.
+
+1071
+01:38:34,147 --> 01:38:35,867
+In the first derivation,
+
+1072
+01:38:36,247 --> 01:38:37,768
+I have to determine
+
+1073
+01:38:37,768 --> 01:38:39,768
+the first derivation.
+
+1074
+01:38:43,283 --> 01:38:52,403
+The critical points, if we have, okay. Now, look at the first derivation. Do you have any critical points?
+
+1075
+01:39:01,619 --> 01:39:08,300
+What can you say? The first one, do you have any point where f' x is 0?
+
+1076
+01:39:12,539 --> 01:39:20,559
+x squared plus 1 will be always positive. So we don't have any point where f' x is 0.
+
+1077
+01:39:20,559 --> 01:39:25,859
+Do you have, right here, no point where?
+
+1078
+01:39:29,811 --> 01:39:57,692
+f'x is 0. No point where f'x is not exist. Okay. Actually, I have 1, and minus 1, but they are not in your domain. You can't take. And we don't have any end point. It means that we don't have any critical point.
+
+1079
+01:39:57,692 --> 01:40:06,091
+But what about increasing, decreasing? What can you say about increasing, decreasing intervals?
+
+1080
+01:40:22,003 --> 01:40:22,943
+thinking about this.
+
+1081
+01:40:24,144 --> 01:40:25,983
+Okay, what are the others' opinions?
+
+1082
+01:40:27,983 --> 01:40:30,564
+Evet, fikirlerinizi bekliyorum bakalım. Bakın şimdi buradan.
+
+1083
+01:40:38,612 --> 01:40:44,931
+Okay, so we can see that because of square it will be always positive.
+
+1084
+01:40:45,811 --> 01:40:52,532
+X squared plus 1 it will be always positive but because of this sign it will be decreasing.
+
+1085
+01:40:53,172 --> 01:40:56,132
+It is decreasing
+
+1086
+01:40:59,731 --> 01:41:05,172
+at every point in your domain. Okay, in the fifth one
+
+1087
+01:41:05,172 --> 01:41:13,811
+if 2 and x if I write outside I have x squared plus 3. Okay,
+
+1088
+01:41:15,252 --> 01:41:24,051
+we'll be 0 from here. I can find only one possible possible inflection point.
+
+1089
+01:41:26,692 --> 01:41:33,652
+If you look at your denominator, okay, I have 1 minus 1 but they are not in our domain. Now,
+
+1090
+01:41:34,212 --> 01:41:38,692
+I have to investigate the sign table of f the second derivation of f.
+
+1091
+01:41:40,212 --> 01:41:49,731
+Okay, but don't forget you have to write your points minus 1 and 1 in your table. Okay,
+
+1092
+01:41:50,851 --> 01:42:00,212
+so it will be x squared minus 1. Okay, cube is not important. The sign will be the same.
+
+1093
+01:42:00,212 --> 01:42:06,771
+I have x
+
+1094
+01:42:07,539 --> 01:42:37,539
+ve 2nd derivation f'i'
+
+1095
+01:42:37,539 --> 01:43:07,519
+if you write 2x outside it is x squared plus 3 it is always positive you don't need to look at the sign only the sign of x and x squared minus 1 will be important okay so the roots will be here here here negative positive here it will be negative these will be positive okay so negative positive
+
+1096
+01:43:07,539 --> 01:43:33,579
+positive negative positive okay concave down concave down concave up concave up what about zero the sign is changing yes so it means that zero comma zero will be your inflection point okay okay now let's see the graph
+
+1097
+01:43:37,363 --> 01:43:39,043
+I put these lecture notes.
+
+1098
+01:43:39,143 --> 01:43:40,823
+You can look at these lecture notes.
+
+1099
+01:43:41,083 --> 01:43:41,143
+Okay.
+
+1100
+01:43:41,643 --> 01:43:42,363
+Now here.
+
+1101
+01:43:42,723 --> 01:43:43,543
+This is our graph.
+
+1102
+01:43:45,023 --> 01:43:45,323
+Okay.
+
+1103
+01:43:45,463 --> 01:43:49,523
+First of all, you have to sketch the asymptotes.
+
+1104
+01:43:49,663 --> 01:43:50,743
+What are the asymptotes?
+
+1105
+01:43:50,863 --> 01:43:53,203
+The first one, x equals minus 1.
+
+1106
+01:43:53,903 --> 01:43:58,763
+And x equals 1, I have vertical asymptote.
+
+1107
+01:43:59,463 --> 01:44:00,403
+Y equals 0.
+
+1108
+01:44:00,403 --> 01:44:02,384
+It means that actually it is.
+
+1109
+01:44:02,783 --> 01:44:04,763
+Şunu aslında şöyle işlem daha iyi olurmuş.
+
+1110
+01:44:04,884 --> 01:44:07,343
+This is your horizontal asymptote.
+
+1111
+01:44:07,363 --> 01:44:08,803
+Y equals 0.
+
+1112
+01:44:08,903 --> 01:44:09,803
+It is x-axis.
+
+1113
+01:44:10,884 --> 01:44:15,723
+After that, it will be always decreasing.
+
+1114
+01:44:17,143 --> 01:44:20,723
+And for the concavity, it is here.
+
+1115
+01:44:21,843 --> 01:44:29,743
+They said that from 0 to 1, it is concave down.
+
+1116
+01:44:29,743 --> 01:44:33,563
+It is concave down and it is decreasing.
+
+1117
+01:44:33,903 --> 01:44:36,223
+So it will be this one.
+
+1118
+01:44:36,223 --> 01:44:37,384
+Okay.
+
+1119
+01:44:37,384 --> 01:44:41,323
+And 0, 0 is the inflection point.
+
+1120
+01:44:42,003 --> 01:44:49,203
+So if you start from here and it is, you have to sketch this shape, it will be this one.
+
+1121
+01:44:49,203 --> 01:44:50,263
+Okay.
+
+1122
+01:44:50,263 --> 01:44:54,363
+But you can't touch the horizontal asymptote.
+
+1123
+01:44:54,363 --> 01:44:55,463
+It will be like this.
+
+1124
+01:44:56,643 --> 01:44:58,803
+So it is an odd function.
+
+1125
+01:44:58,803 --> 01:45:00,563
+It is symmetric about origin.
+
+1126
+01:45:00,563 --> 01:45:02,643
+So I will sketch the same thing.
+
+1127
+01:45:02,643 --> 01:45:04,023
+But don't forget this point.
+
+1128
+01:45:04,023 --> 01:45:06,023
+But don't forget this point is the inflection point.
+
+1129
+01:45:06,023 --> 01:45:07,863
+It will be this one.
+
+1130
+01:45:07,863 --> 01:45:14,063
+After that, from the 1 to infinity, it will be concave up.
+
+1131
+01:45:14,063 --> 01:45:18,283
+And it is also decreasing.
+
+1132
+01:45:18,283 --> 01:45:22,823
+So if it is decreasing and concave down, the shape will be here.
+
+1133
+01:45:22,903 --> 01:45:25,543
+Only you have to put this shape here.
+
+1134
+01:45:25,923 --> 01:45:28,903
+But you can't touch the asymptotes.
+
+1135
+01:45:30,003 --> 01:45:30,163
+Okay.
+
+1136
+01:45:30,163 --> 01:45:35,543
+And you will make the same thing because it is symmetric to origin.
+
+1137
+01:45:36,423 --> 01:45:37,603
+You can sketch this one.
+
+1138
+01:45:39,483 --> 01:45:39,823
+Okay.
+
+1139
+01:45:39,823 --> 01:45:44,063
+Do you have any questions?
+
+1140
+01:45:45,983 --> 01:45:46,463
+Okay.
+
+1141
+01:45:46,623 --> 01:45:50,183
+If you don't have any questions, I want to sketch one more graph.
+
+1142
+01:45:50,323 --> 01:45:52,303
+After that, I want to finish for today.
+
+1143
+01:45:52,783 --> 01:45:54,783
+Bunun biraz ağır geçti zaten.
+
+1144
+01:45:54,943 --> 01:45:56,683
+O yüzden bir grafim daha var.
+
+1145
+01:45:56,723 --> 01:45:58,343
+Onu çizip bugün isterseniz bırakalım.
+
+1146
+01:45:58,463 --> 01:46:00,583
+Bir daha internetlere dönmeyelim artık.
+
+1147
+01:46:00,803 --> 01:46:02,443
+Zaten kafanızı alakulak oldu bugün.
+
+1148
+01:46:03,743 --> 01:46:04,263
+Okay.
+
+1149
+01:46:04,343 --> 01:46:05,983
+I want to sketch one more graph.
+
+1150
+01:46:06,063 --> 01:46:07,763
+After that, I will finish for today.
+
+1151
+01:46:07,763 --> 01:46:11,423
+And next week, I will continue to integrate subject.
+
+1152
+01:46:11,423 --> 01:46:11,803
+Okay.
+
+1153
+01:46:13,803 --> 01:46:15,003
+You can't read old enough.
+
+1154
+01:46:15,483 --> 01:46:16,563
+Şuna da bakalım.
+
+1155
+01:46:17,183 --> 01:46:18,384
+Sonra bugün erken bırakacağız.
+
+1156
+01:46:20,863 --> 01:46:21,423
+Okay.
+
+1157
+01:46:22,723 --> 01:46:24,483
+Now let's look at this example.
+
+1158
+01:46:24,943 --> 01:46:25,763
+The first one.
+
+1159
+01:46:26,823 --> 01:46:27,803
+What is your domain?
+
+1160
+01:46:33,652 --> 01:46:40,931
+It will be a real number, but only I have to subtract the points where the denominator is 0.
+
+1161
+01:46:41,131 --> 01:46:43,172
+It means that it is minus 2.
+
+1162
+01:46:44,311 --> 01:46:55,391
+So, actually, if you write like this, minus infinity to minus 2, union, minus 2, comma, infinity.
+
+1163
+01:46:55,391 --> 01:47:01,072
+It means that your graph consists of two parts, one part, one part.
+
+1164
+01:47:01,072 --> 01:47:04,212
+You will have two different parts in the graph.
+
+1165
+01:47:05,072 --> 01:47:07,752
+After that, let us find the intersection point.
+
+1166
+01:47:08,292 --> 01:47:15,851
+If x is 0, y will be 1 over 2.
+
+1167
+01:47:17,112 --> 01:47:20,511
+This is the intersection point.
+
+1168
+01:47:20,912 --> 01:47:24,532
+If y is 0, do you have any point?
+
+1169
+01:47:24,532 --> 01:47:31,672
+Yes, it will be x plus 1 square will be 0 from here.
+
+1170
+01:47:32,891 --> 01:47:36,511
+So, x will be minus 1.
+
+1171
+01:47:36,731 --> 01:47:45,152
+So, the other one will be minus 1, comma, 0 is the intersection point with the axis, x-axis and y-axis.
+
+1172
+01:47:45,152 --> 01:47:50,072
+And in the last part, we have to investigate the symmetry.
+
+1173
+01:47:50,872 --> 01:47:53,712
+So, I will write minus x in the function.
+
+1174
+01:47:54,131 --> 01:47:55,292
+I will write directly.
+
+1175
+01:47:55,532 --> 01:47:55,692
+Okay.
+
+1176
+01:47:56,252 --> 01:47:57,492
+It will be x squared.
+
+1177
+01:47:57,752 --> 01:48:00,452
+But here, it will be minus 2x plus 1.
+
+1178
+01:48:01,872 --> 01:48:04,091
+It will be minus x plus 2.
+
+1179
+01:48:04,091 --> 01:48:09,572
+This is a new function and it is not equals to plus or minus fx.
+
+1180
+01:48:10,252 --> 01:48:16,952
+It means that no symmetry because it is not even or odd.
+
+1181
+01:48:18,452 --> 01:48:18,551
+Okay.
+
+1182
+01:48:19,511 --> 01:48:25,172
+Now, in the second part, I have to investigate the asymptotes.
+
+1183
+01:48:25,731 --> 01:48:30,152
+How many asymptotes do you have and what kind of asymptotes do you have?
+
+1184
+01:48:30,152 --> 01:48:32,712
+Evet, hangi tür asymptotlarımız var bakalım.
+
+1185
+01:48:34,072 --> 01:48:35,952
+Firstly, do you have vertical asymptot?
+
+1186
+01:48:40,243 --> 01:48:47,363
+Yes, because at one point the function is not defined. So minus 2 will be your vertical asymptote.
+
+1187
+01:48:49,043 --> 01:48:52,243
+x equals minus 2 will be vertical.
+
+1188
+01:48:56,500 --> 01:48:59,159
+What about horizontal and obliquil asymptote?
+
+1189
+01:49:01,100 --> 01:49:02,640
+Do you have horizontal?
+
+1190
+01:49:03,359 --> 01:49:11,020
+When you take the limit, x goes to infinity, you can see that r function is infinity.
+
+1191
+01:49:12,460 --> 01:49:13,640
+No horizontal.
+
+1192
+01:49:14,659 --> 01:49:17,680
+It means that I can have obliquil asymptote.
+
+1193
+01:49:17,979 --> 01:49:20,180
+What is the meaning of obliquil asymptote?
+
+1194
+01:49:20,180 --> 01:49:22,340
+What is the degree of this polynomial?
+
+1195
+01:49:22,640 --> 01:49:23,100
+It is 2.
+
+1196
+01:49:23,100 --> 01:49:26,479
+What is this degree of your polynomial?
+
+1197
+01:49:26,739 --> 01:49:26,920
+1.
+
+1198
+01:49:27,319 --> 01:49:32,140
+So it is 1 greater than 2.
+
+1199
+01:49:32,460 --> 01:49:35,119
+It means that we have obliquil asymptote.
+
+1200
+01:49:35,319 --> 01:49:37,659
+How can we find the obliquil asymptote?
+
+1201
+01:49:37,659 --> 01:49:47,560
+I have to divide your numerator to your denominator.
+
+1202
+01:49:49,140 --> 01:49:51,520
+Payı payı diye böleceğiz.
+
+1203
+01:49:51,520 --> 01:49:54,020
+Okay, so I have x.
+
+1204
+01:49:54,659 --> 01:49:57,960
+It will be x squared plus 2x.
+
+1205
+01:49:59,220 --> 01:50:00,720
+I have only 1.
+
+1206
+01:50:00,720 --> 01:50:09,579
+So I can write our function as the integer part will be x plus 1 over x plus 2.
+
+1207
+01:50:10,479 --> 01:50:14,260
+The integer part will be your obliquil asymptote.
+
+1208
+01:50:14,260 --> 01:50:24,039
+So y equals x plus 1 over x plus 1 over x plus 1 over x plus 1 over x plus 1 over x plus 1 over x plus 1 over x plus 1 over x plus 1 over x plus 1 over x plus 1 over x plus 1 over x plus 1 over x plus 1 over x plus 1 over x plus 1 over x plus 1 over x plus 1 over x plus 1 over x plus 1 over x plus 1 over x plus 1 over x plus 1 over x plus 1 over x plus 1 over x plus 1 over x plus 1 over x plus 1 over x plus 1 over x plus 1 over x plus 1 over x plus 1 over x plus 1 over x plus 1 over x plus 1 over x plus 1 over x plus 1 over x plus 1 over x plus 1 over x plus 1 over x plus 1 over x plus 1 over x plus 1 over x plus 1 over x plus 1 over x plus 1 over x plus 1 over x plus 1 over x plus 1 over x plus 1 over x plus 1 over x plus 1 over x plus 1 over x plus 1 over x plus
+
+1209
+01:50:29,076 --> 01:50:30,735
+Okay, do you have any question here?
+
+1210
+01:50:31,796 --> 01:50:32,956
+Maybe you don't remember
+
+1211
+01:50:32,956 --> 01:50:33,796
+oblique asimton.
+
+1212
+01:50:34,676 --> 01:50:37,096
+Okay, now in the third one
+
+1213
+01:50:37,096 --> 01:50:39,115
+we have to find the first and the
+
+1214
+01:50:39,115 --> 01:50:40,275
+second derivation.
+
+1215
+01:50:44,596 --> 01:50:46,376
+Okay, let us find
+
+1216
+01:50:46,376 --> 01:50:48,855
+the first derivation
+
+1217
+01:50:48,855 --> 01:50:50,435
+will be
+
+1218
+01:50:50,435 --> 01:50:53,136
+derivation of your numerator
+
+1219
+01:50:53,136 --> 01:50:54,855
+will be 2x plus 2.
+
+1220
+01:50:57,376 --> 01:50:58,996
+Okay, product
+
+1221
+01:50:58,996 --> 01:51:00,136
+1. interview
+
+1222
+01:51:00,136 --> 01:51:01,155
+6. 2.
+
+1223
+01:51:01,216 --> 01:51:01,456
+x
+
+1224
+01:51:01,456 --> 01:51:01,916
+3.
+
+1225
+01:51:06,612 --> 01:51:09,051
+minus the first function.
+
+1226
+01:51:10,851 --> 01:51:13,771
+Product, the second function's derivation will be 1.
+
+1227
+01:51:15,792 --> 01:51:19,632
+It will be x plus 2 squared.
+
+1228
+01:51:22,152 --> 01:51:24,471
+It will be 2x squared.
+
+1229
+01:51:24,612 --> 01:51:25,792
+It will be x squared.
+
+1230
+01:51:32,500 --> 01:51:35,659
+x kare artı 4x'e
+
+1231
+01:51:43,539 --> 01:52:05,819
+This is the first derivation. And if you find the second derivation here, the second derivation will be 2x plus 4, product the second function, minus the first function.
+
+1232
+01:52:09,555 --> 01:52:21,275
+Product, second function's derivation will be 2x plus 2 over x plus 2 to the power 4.
+
+1233
+01:52:23,135 --> 01:52:27,335
+And we can cancel 1x plus 2 at each part here.
+
+1234
+01:52:27,795 --> 01:52:29,495
+Here it will be cube.
+
+1235
+01:52:30,355 --> 01:52:33,875
+And our result will be, let's look at here, 2.
+
+1236
+01:52:35,795 --> 01:52:38,815
+It will be 2 over x plus 2 cube.
+
+1237
+01:52:39,555 --> 01:52:42,275
+Okay.
+
+1238
+01:52:43,475 --> 01:52:46,115
+This is our first and second derivation.
+
+1239
+01:52:48,695 --> 01:52:49,375
+Okay.
+
+1240
+01:52:49,755 --> 01:52:56,315
+In the next part, we have to determine our critical points.
+
+1241
+01:52:56,315 --> 01:52:57,475
+The first one.
+
+1242
+01:52:57,855 --> 01:53:08,115
+If f prime x is 0, then x squared plus 4x plus 3 will be 0.
+
+1243
+01:53:09,555 --> 01:53:14,595
+It is 3, 1 minus minus.
+
+1244
+01:53:15,115 --> 01:53:21,695
+x will be 1 and x will be 3 are critical points.
+
+1245
+01:53:21,695 --> 01:53:26,495
+Do you have another critical point?
+
+1246
+01:53:26,635 --> 01:53:29,115
+For example, what can you say about minus 2?
+
+1247
+01:53:29,215 --> 01:53:29,875
+Can we take?
+
+1248
+01:53:29,875 --> 01:53:35,435
+Okay.
+
+1249
+01:53:34,868 --> 01:53:40,847
+minus 2 is not in your domain. So you can take. Only we have two critical points.
+
+1250
+01:53:41,608 --> 01:53:51,248
+Okay, now let us investigate this sign. If you look at the first derivation in your denominator, this part, it will be always positive.
+
+1251
+01:53:51,248 --> 01:54:04,788
+Only I have to investigate the sign of x squared plus 4x plus 3. So the first function's derivation sign will be minus infinity.
+
+1252
+01:54:04,868 --> 01:54:15,368
+infinity, infinity. I have minus 2, important point, because the function's derivation is not defined.
+
+1253
+01:54:15,608 --> 01:54:27,868
+1 and 3. Here it is not defined. This is the root. Okay. Okay. So what can we say about this?
+
+1254
+01:54:28,248 --> 01:54:33,388
+Between these two roots, it will be negative. After that, it will be
+
+1255
+01:54:33,388 --> 01:54:38,388
+Pozit.
+
+1256
+01:54:38,388 --> 01:54:43,388
+Evet, pardon. Evet, evet, evet. Arta olacak burası.
+
+1257
+01:54:43,388 --> 01:54:44,388
+Burası.
+
+1258
+01:54:44,388 --> 01:54:45,388
+Burası. Arta olursa burası.
+
+1259
+01:54:45,388 --> 01:54:46,388
+Arta olursa burası x olacak.
+
+1260
+01:54:46,388 --> 01:54:50,388
+O zaman eksi.
+
+1261
+01:54:50,388 --> 01:54:52,388
+Pardon.
+
+1262
+01:54:52,388 --> 01:54:53,388
+Artık kafam dur.
+
+1263
+01:54:53,388 --> 01:54:54,388
+Kofam dur.
+
+1264
+01:54:54,388 --> 01:55:02,388
+Buz.
+
+1265
+01:55:02,388 --> 01:55:03,388
+Buz. Buz.
+
+1266
+01:55:11,891 --> 01:55:40,851
+x isonsuz, minus 3, minus 2, okay, and minus 1. This is also infinity. This is our roots here and here. In this part, it will be always negative. After that, it will be positive. Okay, so at the critical points, the sign is changing here.
+
+1267
+01:55:41,891 --> 01:56:11,871
+And here, so minus 1 and minus 3, we have local. What about minus 1? It is decreasing. After that, it is increasing. It means that local minimum. And here we have local maximum. At this interval, it is increasing, decreasing, decreasing, increasing.
+
+1268
+01:56:11,891 --> 01:56:13,891
+Okay.
+
+1269
+01:56:17,747 --> 01:56:20,547
+ok. You can see also here.
+
+1270
+01:56:21,047 --> 01:56:22,807
+Buraya ben şu tablo olarak yazdım.
+
+1271
+01:56:23,687 --> 01:56:24,607
+Noktaları da verdim.
+
+1272
+01:56:24,987 --> 01:56:25,187
+Ok.
+
+1273
+01:56:33,076 --> 01:56:40,836
+Okay, if we investigate the second derivation you can see that only the sine of x plus 2 is important.
+
+1274
+01:56:40,836 --> 01:56:46,676
+Before minus 2 it will be concave down, after that it will be concave up.
+
+1275
+01:56:46,676 --> 01:56:53,876
+Now let's look at the graph. Okay, firstly we have to put our asymptotes.
+
+1276
+01:56:53,876 --> 01:56:59,716
+The first one I have minus 2, I have vertical asymptote here.
+
+1277
+01:57:03,076 --> 01:57:10,916
+And I have horizontal, as an oblique asymptote and oblique asymptote is y equals 6.
+
+1278
+01:57:13,956 --> 01:57:21,555
+Okay, and before minus 2 and after minus 2 the functions feel different.
+
+1279
+01:57:22,676 --> 01:57:28,916
+Okay, before minus 2, where will you sketch the graph?
+
+1280
+01:57:28,916 --> 01:57:35,716
+You can understand the important points. This is our local maximum point and this is our local minimum point.
+
+1281
+01:57:35,716 --> 01:57:44,036
+It means that you have to put the graph of local maximum. What is the shape of local maximum? It is this.
+
+1282
+01:57:44,036 --> 01:57:53,155
+So you have to put this shape in your hair, but it can't be touch your asymptotes.
+
+1283
+01:57:53,155 --> 01:58:00,036
+This is the first part. For the other part, this will be your local minimum points.
+
+1284
+01:58:00,036 --> 01:58:08,115
+And you can't go outside these asymptotes. So I have to put the shape for local minimum is this.
+
+1285
+01:58:08,115 --> 01:58:14,515
+only you will put this shape in here, but... Aslında şöyle, yani ben biraz çizimde şöyle düşünün, şöyle geliyor.
+
+1286
+01:58:14,515 --> 01:58:18,916
+Okay? At the infinity, they can't touch. Okay?
+
+1287
+01:58:18,916 --> 01:58:45,716
+So, let's go.
+
+1288
+01:58:22,771 --> 01:58:28,231
+y equals x is your obliquue asymptote.
+
+1289
+01:58:29,851 --> 01:58:30,391
+Okay?
+
+1290
+01:58:32,152 --> 01:58:34,792
+y equals x is your obliquue asymptote.
+
+1291
+01:58:35,271 --> 01:58:38,391
+So only you will put these shapes in the graph.
+
+1292
+01:58:38,511 --> 01:58:41,091
+Aslında kolay çok zor değil. Zaten şekilleri belli.
+
+1293
+01:58:41,311 --> 01:58:44,612
+Maximum, minimum şekli belli olduğu için sadece orayı yerleştiriyorsunuz.
+
+1294
+01:58:45,591 --> 01:58:47,231
+Okay, do you have any question?
+
+1295
+01:58:48,271 --> 01:58:50,551
+If you don't have, I want to finish for today.
+
+1296
+01:58:50,551 --> 01:58:53,011
+but I want to ask one thing.
+
+1297
+01:58:53,631 --> 01:58:56,372
+Did you see integral in your high school?
+
+1298
+01:58:58,211 --> 01:59:00,231
+Lisede hiç integral'i gördünüz mü?
+
+1299
+01:59:01,931 --> 01:59:03,652
+Normal basit integralleri.
+
+1300
+01:59:05,792 --> 01:59:07,011
+Yes, yes, yes, yes.
+
+1301
+01:59:07,011 --> 01:59:07,051
+Yes, yes, yes.
+
+1302
+01:59:12,051 --> 01:59:20,152
+Okey, so do you want me make a simple integral questions for you?
+
+1303
+01:59:21,231 --> 01:59:29,511
+Yani demek istediğim şu, eğer integrali bilmiyorsanız size hafta sonuna vermek için böyle basit integral sadece tablo kullanarak.
+
+1304
+01:59:30,171 --> 01:59:38,131
+Böyle bir örnek gibi bir şeyler vermem ister misiniz yoksa elinizdeki lise kitaplarından da bakar mısınız bilemiyorum.
+
+1305
+01:59:38,131 --> 01:59:43,771
+Yani sadece tablo kullanarak bulacağımız integraller.
+
+1306
+01:59:45,591 --> 01:59:51,652
+İşte ne bileyim işte bir bölü 4 eksi x kök içinde 4 eksi x kare artı işte e üzeri 5 x gibi.
+
+1307
+01:59:52,671 --> 01:59:54,731
+Tamam o zaman onu bugün ayarlayayım.
+
+1308
+01:59:54,891 --> 01:59:56,731
+Bugün ya da en geç yerini ayarlamış olurum.
+
+1309
+01:59:56,811 --> 01:59:59,031
+Hafta sonu bunlara o zaman şey yapın.
+
+1310
+01:59:59,031 --> 02:00:00,991
+Ben şey yaparım.
+
+1311
+02:00:02,451 --> 02:00:08,031
+Bir sayfaya boşluklu bırakarak yazarım.
+
+1312
+02:00:08,891 --> 02:00:10,631
+Sonra onun resmini çekelim.
+
+1313
+02:00:10,751 --> 02:00:13,371
+Sonra onu doldurup bir daha resmini çekelim.
+
+1314
+02:00:14,131 --> 02:00:16,371
+Önce siz kendiniz birinci sayfayı çözün.
+
+1315
+02:00:16,711 --> 02:00:20,192
+Sonra çözdükten sonra ikinci sayfaya cevaplarıyla karşılaştırma yaparsınız.
+
+1316
+02:00:20,311 --> 02:00:20,572
+Olur mu?
+
+1317
+02:00:21,891 --> 02:00:23,811
+Çünkü bakın integral zor bir konudur.
+
+1318
+02:00:23,911 --> 02:00:25,671
+Ve çok iyi öğrenmeniz gereken bir konu.
+
+1319
+02:00:26,131 --> 02:00:28,192
+O yüzden mümkün olduğunca oturtmaya çalışıyorum.
+
+1320
+02:00:28,192 --> 02:00:29,871
+Şu an şey çok sıkıntı.
+
+1321
+02:00:30,371 --> 02:00:33,891
+Öğrenciler arasında çok fazla uçurum var şu an.
+
+1322
+02:00:34,331 --> 02:00:38,011
+Bazı öğrenciler hiç limit türev işte integral görmedi.
+
+1323
+02:00:38,131 --> 02:00:40,771
+İşte alttan alanların daha avantajı var.
+
+1324
+02:00:40,851 --> 02:00:42,531
+Onlar daha önceden görmüşlerdi.
+
+1325
+02:00:42,911 --> 02:00:47,031
+İşte hazırlık okuyanlar, hazırlık okumayanlarda da farklılık var.
+
+1326
+02:00:47,311 --> 02:00:52,731
+İşte bu pandemiden dolayı son sene mesela atıyorum hazırlık okumadan gelenlerde mesela şu an sıkıntı olabilir.
+
+1327
+02:00:53,531 --> 02:00:54,911
+Hazırlık okuyanları bilemiyorum.
+
+1328
+02:00:54,911 --> 02:00:57,891
+Tabii onlar bir sene önceden olduğu için belki onlar görmüştür.
+
+1329
+02:00:58,791 --> 02:01:04,851
+Bazı yabancı, yabancıların tabii bilemiyorum ülkelerine göre görmemiş olabiliyorlar ya da daha farklı görmüş olabiliyorlar.
+
+1330
+02:01:05,371 --> 02:01:06,911
+O yüzden şey...
+
+1331
+02:01:06,911 --> 02:01:12,451
+Yani integralinin her şeyi de biz burada anlatacağız zaten.
+
+1332
+02:01:12,692 --> 02:01:17,991
+Ama şimdi hani senin görüp unutman başka bir şey ama hiç görmemen başka bir şey.
+
+1333
+02:01:18,511 --> 02:01:21,771
+Hani unutunca öyle şöyle bir bakınca hatırlanacak bir şeydir.
+
+1334
+02:01:21,771 --> 02:01:25,291
+Ama hani hiç görmeliyseniz o zaman daha zor insanlar için.
+
+1335
+02:01:25,671 --> 02:01:29,991
+Çünkü ben haftaya artık konuya girdiğim zaman direkt integrasyon tekniklerine gireceğim.
+
+1336
+02:01:30,112 --> 02:01:32,152
+Yani onu bildiğimizi düşünerek üzerine biz vereceğiz.
+
+1337
+02:01:32,811 --> 02:01:34,551
+O yüzden ben size böyle bir şey hazırlayayım.
+
+1338
+02:01:34,652 --> 02:01:36,851
+Ama lütfen herkes çözsün.
+
+1339
+02:01:37,612 --> 02:01:39,351
+Yanına çözümlerini de vereceğim zaten.
+
+1340
+02:01:39,551 --> 02:01:43,411
+Ama bir sorunuz veya anlamadığınız bir yer olsa bana WhatsApp'tan yazabilirsiniz.
+
+1341
+02:01:43,411 --> 02:01:47,692
+Ben WhatsApp'ın faydalı olduğunu düşünüyorum.
+
+1342
+02:01:47,831 --> 02:01:51,411
+Şu an ilk defa ben bu dönem WhatsApp'a başladım ama genel olarak...
+
+1343
+02:01:52,411 --> 02:01:53,751
+Bilmiyorum benim hoşuma gitti.
+
+1344
+02:01:53,871 --> 02:01:58,791
+Özellikle öğrencilerin sınav öncesinde çok fazla soru sorması ya da ne bileyim...
+
+1345
+02:01:58,791 --> 02:01:59,811
+Dün çok hoşuma gitti.
+
+1346
+02:02:00,091 --> 02:02:01,331
+Bu grupta mıydı bilmiyorum.
+
+1347
+02:02:02,451 --> 02:02:04,612
+Öğrenci Riman Samuysel görmüşsünüz.
+
+1348
+02:02:04,751 --> 02:02:06,112
+Bu ihtimalle diğer gruptaydı.
+
+1349
+02:02:06,871 --> 02:02:08,692
+Akşam o öğrenci oturup ona çalışıyor.
+
+1350
+02:02:08,811 --> 02:02:10,231
+Anlamadığı yeri soruyor arkadaşlar.
+
+1351
+02:02:10,371 --> 02:02:11,551
+O çok hoşuma gitti mesela.
+
+1352
+02:02:11,551 --> 02:02:14,991
+Yoksa hani gidip de sınavdan önce çalışmıyorsunuz mesela.
+
+1353
+02:02:15,152 --> 02:02:15,551
+Ya da ne bileyim...
+
+1354
+02:02:16,152 --> 02:02:18,612
+Sınava yakın zamanda anlamadığınız yeri soruyorsunuz.
+
+1355
+02:02:18,671 --> 02:02:19,572
+Bunlar güzel şeyler.
+
+1356
+02:02:20,351 --> 02:02:23,831
+O yüzden hoşuma gidiyor böyle sizin de çaba göstermeniz.
+
+1357
+02:02:23,911 --> 02:02:25,271
+Ben de ilimden geleni yapıyorum.
+
+1358
+02:02:26,031 --> 02:02:27,891
+Umarım güzel bir dönemi bitiririz.
+
+1359
+02:02:28,751 --> 02:02:29,671
+Bugünlük bu kadar.
+
+1360
+02:02:29,831 --> 02:02:30,391
+Siz de yoruldunuz.
+
+1361
+02:02:30,491 --> 02:02:31,551
+Ben de bugün çok yoruldum.
+
+1362
+02:02:32,771 --> 02:02:35,791
+Umarım güzel bir dönemde güzel notlarla geçirirsiniz.
+
+1363
+02:02:37,211 --> 02:02:41,112
+Mesela bu grupta mesela 38 tane 100 vardı.
+
+1364
+02:02:41,551 --> 02:02:42,991
+Çok iyi bir rakam bence.
+
+1365
+02:02:43,391 --> 02:02:46,572
+Yani kaçta bir, beşte birine falan denk geliyor.
+
+1366
+02:02:46,671 --> 02:02:47,271
+Güzel yani.
+
+1367
+02:02:47,631 --> 02:02:51,971
+Diğerlerinin de notları iyi ama hani 100 olarak bakarsanız sadece 100 olan 38 öğrenci vardı.
+
+1368
+02:02:52,612 --> 02:02:53,471
+Gayet iyi bir şey.
+
+1369
+02:02:54,831 --> 02:02:57,692
+Daha düşük olanlar da sorun etmesin şey değil.
+
+1370
+02:02:58,431 --> 02:03:01,271
+Yani diğer grupların ortalamaları öyle şey değil.
+
+1371
+02:03:01,271 --> 02:03:04,951
+Yani en düşük benim duyduğum 69 vardı.
+
+1372
+02:03:05,351 --> 02:03:07,291
+Diğerleri 70, 70, 75.
+
+1373
+02:03:07,511 --> 02:03:08,371
+Artık öyle gidiyor.

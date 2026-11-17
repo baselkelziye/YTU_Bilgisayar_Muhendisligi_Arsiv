@@ -1,0 +1,7771 @@
+1
+00:00:04,884 --> 00:00:05,644
+Good morning.
+
+2
+00:00:11,284 --> 00:00:12,164
+Merhaba arkadaşlar.
+
+3
+00:00:13,743 --> 00:00:16,083
+Bu haftaki son dersimize başlayacağız inşallah.
+
+4
+00:00:20,660 --> 00:00:22,940
+Nasıl zor oluyor mu sabahları kalkmak?
+
+5
+00:00:29,300 --> 00:00:34,299
+okula gelseydiniz daha güzel olurdu. Gerçek büyük ihtimal 2. dönem herhalde açılacak gibi görünüyor şu an.
+
+6
+00:00:40,299 --> 00:00:47,920
+Ya bir tık zor oluyor. Ya okula gelmek zorunda olsaydınız. Bundan en az 1 saat, 1,5 saat önce kalkmanız gerekecek TL. Uzaktan geliyorsanız bir de.
+
+7
+00:00:50,179 --> 00:00:56,040
+Zaten şeydir ya böyle okulun yanında oturunca daha da insan geç kalır ya. Aynı hesap.
+
+8
+00:01:00,404 --> 00:01:05,103
+evde olunca da biraz geç de yatıyor insan. O yüzden zor oluyor yani.
+
+9
+00:01:06,644 --> 00:01:09,504
+Evet, bakalım. Bugün ne yapacağız?
+
+10
+00:01:12,784 --> 00:01:15,884
+Sürekliye devam edeceğiz ve türeve geçeceğiz dedim.
+
+11
+00:01:15,884 --> 00:01:17,584
+Bir sonraki notlarımı bir bulayım.
+
+12
+00:01:29,876 --> 00:01:39,356
+herhalde evet şunu yapacağız. Gerçi düz sızımda devam etmiş mi? Katılamıyorum ama. Bilde türev.
+
+13
+00:01:46,548 --> 00:01:48,948
+Sınavlar online olacak tabii ki.
+
+14
+00:01:52,028 --> 00:01:55,228
+Formal tanımı ben uygulamada açıklayacağım.
+
+15
+00:01:55,388 --> 00:01:57,468
+Aslında çok kullandığımız bir şey değil.
+
+16
+00:01:58,847 --> 00:02:01,707
+Normal klasik egzemde de sormuyoruz pek ama
+
+17
+00:02:01,707 --> 00:02:09,207
+testte belki bir ihtimal öyle değişik bir şey olabilir ama çok da ihtimal vermiyorum ama
+
+18
+00:02:09,207 --> 00:02:14,048
+formal definition'ı ben en son şeyle beraber vereceğim.
+
+19
+00:02:14,048 --> 00:02:16,687
+Süreklilikte de var bu.
+
+20
+00:02:17,068 --> 00:02:18,068
+Türev şeyde de var.
+
+21
+00:02:18,168 --> 00:02:18,908
+Limitte de var.
+
+22
+00:02:19,388 --> 00:02:20,468
+Süreklilikte de var.
+
+23
+00:02:21,008 --> 00:02:22,228
+İkisini beraber vereceğim.
+
+24
+00:02:22,807 --> 00:02:26,807
+Çünkü limitte limit noktasını yazıyorsunuz formal definition'da.
+
+25
+00:02:27,008 --> 00:02:30,627
+Süreklilikte o noktanın değerini yazıyorsunuz.
+
+26
+00:02:30,627 --> 00:02:31,908
+Ama yaptığınız işlemler aynı.
+
+27
+00:02:32,067 --> 00:02:33,987
+O yüzden onu daha sonra bir ara vereceğim.
+
+28
+00:02:37,908 --> 00:02:39,848
+Sınavlarla ilgili bir açıklama geldi mi size?
+
+29
+00:02:40,048 --> 00:02:41,848
+Bilmiyorum bana daha öyle bir açıklama gelmedi.
+
+30
+00:02:41,848 --> 00:02:44,128
+Yani şöyle online olacağını biliyorum ama
+
+31
+00:02:44,128 --> 00:02:47,927
+okul sistemle ilgili bize bir açıklama yapmadı daha.
+
+32
+00:02:48,568 --> 00:02:51,108
+Hani bir sistem falan satın alacaklar herhalde ama
+
+33
+00:02:51,108 --> 00:02:54,908
+okulun sistemiyle devam etmeyecekler sınav için ama
+
+34
+00:02:54,908 --> 00:02:57,048
+Zoom mu olacak başka bir şey mi olacak?
+
+35
+00:02:57,207 --> 00:02:58,687
+Onunla ilgili haber bekliyoruz zaten.
+
+36
+00:02:58,687 --> 00:03:03,048
+Çünkü biz de sınavı ona göre şey yapacağız.
+
+37
+00:03:03,207 --> 00:03:05,307
+Sonuçta daha bir kurul oluşturulması gerekiyor.
+
+38
+00:03:05,548 --> 00:03:07,408
+Sınav komisyonu oluşturulması gerekiyor.
+
+39
+00:03:08,147 --> 00:03:12,288
+Ona göre de biz çocuklar sizlere ona göre soru vermemiz lazım.
+
+40
+00:03:12,747 --> 00:03:14,908
+Büyük ihtimalle test olacaktır.
+
+41
+00:03:15,087 --> 00:03:19,088
+Testten devam edileceğini ben tahmin ediyorum daha doğrusu.
+
+42
+00:03:19,088 --> 00:03:23,747
+Ama dediğim gibi işte bize söylenen 60'a 40'a döndü.
+
+43
+00:03:24,648 --> 00:03:28,687
+Dolayısıyla iki sınav bir final mi olacak?
+
+44
+00:03:28,848 --> 00:03:30,247
+Büyük ihtimal öyle oldu herhalde.
+
+45
+00:03:31,168 --> 00:03:34,468
+Ama işte sınavın değerleri 30'a 30 olmayacak herhalde.
+
+46
+00:03:34,568 --> 00:03:38,508
+Bir küçük sınav falan diyorlardı ama işte okulun şeyine bağlı.
+
+47
+00:03:39,048 --> 00:03:42,268
+Önce bize bir açıklama yapacak ki işte biz şu sistemi kullanacağız diye.
+
+48
+00:03:42,268 --> 00:03:46,348
+Çünkü bizim kendi eski sistemimizde test yaptık.
+
+49
+00:03:46,468 --> 00:03:47,388
+Baya bir şey oldu.
+
+50
+00:03:48,567 --> 00:03:49,548
+Sıkıntılar oldu.
+
+51
+00:03:49,867 --> 00:03:55,867
+Hani bu sınavda o sıkıntıların yaşanıp yaşanmayacağına bir karanti edilirse iyi olur.
+
+52
+00:03:55,967 --> 00:03:58,908
+Çünkü geçen sefer her sınavın mazeretini yapmak zorunda kaldık.
+
+53
+00:03:59,008 --> 00:04:00,587
+Öğrenciler sisteme bağlanamadılar.
+
+54
+00:04:00,668 --> 00:04:01,788
+Çok sıkıntılar yaşadık.
+
+55
+00:04:02,927 --> 00:04:04,487
+Bilmiyorum şimdi nasıl olacak.
+
+56
+00:04:04,967 --> 00:04:08,207
+Ben dün biraz size test sorusu hazırlamaya başladım.
+
+57
+00:04:09,548 --> 00:04:10,747
+14 tane hazırladım.
+
+58
+00:04:10,748 --> 00:04:18,008
+Bugün de herhalde biraz daha hazırlayıp herhalde 20-25 soruluk bir test vereceğim size.
+
+59
+00:04:18,408 --> 00:04:20,748
+Bugün veririm herhalde gibi geliyor ama bugün bitirebilirsem.
+
+60
+00:04:21,548 --> 00:04:23,828
+Ya da en geç yarın sisteme yüklemiş olurum.
+
+61
+00:04:24,508 --> 00:04:28,408
+Siz lütfen konulara çalışın ve o testi çözmeye çalışın.
+
+62
+00:04:28,447 --> 00:04:29,908
+O testi ben sonra çözeceğim.
+
+63
+00:04:30,888 --> 00:04:33,788
+Ama o zamana kadar soru tiplerine bir bakın.
+
+64
+00:04:34,067 --> 00:04:36,368
+Yani benim kafamdaki şeyler bu.
+
+65
+00:04:36,367 --> 00:04:44,627
+Geçen dönem yazı konulunda sorulan şey benzer sorular da var ama tabi testte çok daha farklı şeyler sorulabiliyor.
+
+66
+00:04:44,628 --> 00:04:51,927
+Hani benim kafamda test olabilecek işte teste çevrilebilecek soruları ben oradan böyle biraz baktım.
+
+67
+00:04:52,008 --> 00:04:56,567
+Bu işlediğimiz konularla ilgili sadece aslında öbür konularda da var bir sürü kafamda soru.
+
+68
+00:04:57,148 --> 00:04:59,628
+Ama şu an işlediğimiz yere kadar baktım.
+
+69
+00:05:00,348 --> 00:05:01,468
+Biraz daha hazırladım.
+
+70
+00:05:01,567 --> 00:05:03,608
+Bir beş tane altı yedi tane belki.
+
+71
+00:05:04,408 --> 00:05:05,668
+Ona göre siz bakarsınız.
+
+72
+00:05:05,668 --> 00:05:10,867
+Çünkü benim daha önce verdiğim uygulama soruları gibi olmayabiliyor.
+
+73
+00:05:11,028 --> 00:05:12,048
+Çünkü test olduğu için.
+
+74
+00:05:12,048 --> 00:05:42,807
+Evet.
+
+75
+00:05:25,555 --> 00:05:27,835
+ok, we can look at again [öğrenci], ok.
+
+76
+00:06:11,860 --> 00:06:15,860
+Okay, let's start. If you don't have another question, let us start, okay?
+
+77
+00:06:56,627 --> 00:07:01,907
+Bu ilk örneği, bu ikinci örneği. Bu ikinci örneği. Bu ikinci örneği.
+
+78
+00:07:07,987 --> 00:07:13,987
+Evet, ve bir soru var.
+
+79
+00:07:23,540 --> 00:07:36,640
+I am asking about the, when we wrote the continuous extension, how about the, when we wrote fx, when x plus 3 over x plus 2, when x doesn't equal 2.
+
+80
+00:07:37,300 --> 00:07:37,560
+Yes.
+
+81
+00:07:38,060 --> 00:07:40,960
+But it should, doesn't equal minus 2 either.
+
+82
+00:07:41,759 --> 00:07:44,120
+Yes, yes, yes, yes, yes, I know that.
+
+83
+00:07:45,340 --> 00:07:53,100
+In the question they ask yet, only write the continuous extension for 2, okay?
+
+84
+00:07:53,540 --> 00:07:57,879
+Normally we have problem, yes, we have problem at minus 2 also here.
+
+85
+00:07:59,040 --> 00:08:01,080
+Let me write, hmm.
+
+86
+00:08:06,803 --> 00:08:07,163
+Tamam.
+
+87
+00:08:08,583 --> 00:08:09,623
+Normalde,
+
+88
+00:08:10,024 --> 00:08:23,803
+bu kontyunum ekstansiyon
+
+89
+00:08:23,803 --> 00:08:26,803
+ekstansiyon
+
+90
+00:08:26,803 --> 00:11:57,803
+ok
+
+91
+00:12:11,028 --> 00:12:18,768
+Bu soru şeyle alakalı, indetermined formla alakalı. Bunu sonra çözeceğiz. O yüzden boş bırakmışımdır.
+
+92
+00:12:23,860 --> 00:12:25,860
+Can you solve some examples?
+
+93
+00:12:25,860 --> 00:12:27,860
+About? What?
+
+94
+00:12:27,860 --> 00:12:29,860
+About the continuity?
+
+95
+00:12:29,860 --> 00:12:32,860
+Yes, yes, I will solve. I will solve.
+
+96
+00:12:32,860 --> 00:12:37,860
+I will open but... One second, I'll try to make something here.
+
+97
+00:12:43,091 --> 00:12:49,211
+Okay, so last, biraz geçen başlamıştık herhalde.
+
+98
+00:12:50,391 --> 00:12:54,751
+Let us look at these examples. I don't remember we saw or not.
+
+99
+00:12:56,491 --> 00:12:58,631
+Did we solve these questions yesterday?
+
+100
+00:12:59,351 --> 00:13:00,231
+Yes, we solved it.
+
+101
+00:13:00,851 --> 00:13:02,631
+This one? This one?
+
+102
+00:13:03,231 --> 00:13:05,072
+I think we don't solve this one.
+
+103
+00:13:05,711 --> 00:13:06,412
+Yeah, we didn't.
+
+104
+00:13:07,091 --> 00:13:09,331
+Yes, let's look at this one. Okay.
+
+105
+00:13:09,331 --> 00:13:14,672
+Okay, so in the question they said that for which value of
+
+106
+00:13:14,672 --> 00:13:21,851
+for which value of a and b this function is continuous at every x here.
+
+107
+00:13:22,032 --> 00:13:22,292
+Okay?
+
+108
+00:13:27,091 --> 00:13:53,192
+Okay, so we have a piecewise function in each part. It is continuous. Okay, for example, in here, in it is domain for the functions domain is this. It is continuous. It is continuous. Here, if x is greater than 0, it is continuous. But only we can have problem at the intersection point or points. What is our intersection point? It is 0.
+
+109
+00:13:53,192 --> 00:13:57,011
+So, I have to investigate the 0. Limit
+
+110
+00:14:02,644 --> 00:14:14,584
+x goes to 0. From the left side, R function is this. So the limit for this function is 0 sin 3x over x.
+
+111
+00:14:15,943 --> 00:14:30,724
+If I add here this 3, this limit will be 1 and I have to add also 3 here. This limit is 1, so it will be 3.
+
+112
+00:14:32,644 --> 00:14:44,104
+If you look at limit x goes to 0 from the right side, R function is x minus b over x.
+
+113
+00:14:51,796 --> 00:14:56,496
+x minus b over 2x plus 1.
+
+114
+00:14:58,236 --> 00:15:02,956
+And it will be, if I write 0 here, it will be minus b.
+
+115
+00:15:03,956 --> 00:15:12,475
+If it is continuous, this limit has to be equals to each other, and also this one has to be equals to f0 is 1 plus a.
+
+116
+00:15:12,475 --> 00:15:22,696
+So, I can say that b is minus 3, and 1 plus a also has to be equals to 3.
+
+117
+00:15:23,596 --> 00:15:26,756
+a will be 2 from here.
+
+118
+00:15:26,756 --> 00:15:27,756
+Okay?
+
+119
+00:15:31,892 --> 00:15:38,372
+If it is continuous at everywhere, only I have to investigate at the intersection point 0.
+
+120
+00:15:38,732 --> 00:15:45,512
+From the left side, our function is sine 3x over x. The limit of this function at 0 is 3.
+
+121
+00:15:46,172 --> 00:15:49,772
+If I take the limit from the right side, the limit is minus b.
+
+122
+00:15:49,932 --> 00:15:57,212
+If it is continuous, we have to have limit at 0 and also it has to be equals to f0. This is f0.
+
+123
+00:15:57,212 --> 00:16:03,451
+Okay. So from these three equations, we can determine a and b here.
+
+124
+00:16:04,652 --> 00:16:08,172
+Okay.
+
+125
+00:16:10,492 --> 00:16:14,012
+Bunu çözdük herhalde. Yesterday we saw this question.
+
+126
+00:16:14,932 --> 00:16:15,292
+Yes.
+
+127
+00:16:20,916 --> 00:16:23,916
+Ok, did we talk about this question?
+
+128
+00:16:27,059 --> 00:16:27,979
+I think no.
+
+129
+00:16:29,799 --> 00:16:30,379
+Okay.
+
+130
+00:16:30,739 --> 00:16:32,459
+So let's just look at this example.
+
+131
+00:16:33,379 --> 00:16:34,779
+Investigate the continuity
+
+132
+00:16:34,779 --> 00:16:37,359
+of this absolute value function.
+
+133
+00:16:38,739 --> 00:16:40,659
+At x equals 1.
+
+134
+00:16:40,879 --> 00:16:41,139
+Okay.
+
+135
+00:16:41,899 --> 00:16:43,979
+So in the absolute value function
+
+136
+00:16:43,979 --> 00:16:49,319
+it will be x square minus 1
+
+137
+00:16:49,319 --> 00:16:50,539
+in some cases
+
+138
+00:16:50,539 --> 00:16:51,579
+and in some cases
+
+139
+00:16:51,579 --> 00:16:53,079
+will be 1 minus x square.
+
+140
+00:16:53,699 --> 00:16:54,719
+You can see that
+
+141
+00:16:54,719 --> 00:16:56,159
+both of them are polynomials.
+
+142
+00:16:57,059 --> 00:16:58,739
+Only we have to investigate
+
+143
+00:16:58,739 --> 00:17:00,959
+at the intersection point.
+
+144
+00:17:01,179 --> 00:17:04,460
+The point will be minus 1, 1
+
+145
+00:17:04,460 --> 00:17:05,980
+but only they are asking
+
+146
+00:17:05,980 --> 00:17:08,500
+is it continuous at the point 1 or not?
+
+147
+00:17:08,940 --> 00:17:10,279
+So I have to look at
+
+148
+00:17:10,279 --> 00:17:11,139
+what is the limit
+
+149
+00:17:11,139 --> 00:17:12,940
+x goes to 1
+
+150
+00:17:12,940 --> 00:17:15,299
+from the left side.
+
+151
+00:17:15,639 --> 00:17:17,339
+If x is less than
+
+152
+00:17:17,339 --> 00:17:19,460
+if x goes to 1
+
+153
+00:17:19,460 --> 00:17:20,359
+from the left side
+
+154
+00:17:20,359 --> 00:17:21,740
+it means that I will write
+
+155
+00:17:21,740 --> 00:17:23,819
+for example 0.9.
+
+156
+00:17:24,179 --> 00:17:25,500
+If I write here
+
+157
+00:17:25,500 --> 00:17:27,019
+you can see that
+
+158
+00:17:27,019 --> 00:17:27,859
+it will be
+
+159
+00:17:27,859 --> 00:17:29,919
+negative.
+
+160
+00:17:30,759 --> 00:17:30,940
+Okay.
+
+161
+00:17:31,539 --> 00:17:32,119
+If you want
+
+162
+00:17:32,119 --> 00:17:33,200
+let us investigate
+
+163
+00:17:33,200 --> 00:17:34,119
+the sign here
+
+164
+00:17:34,119 --> 00:17:35,519
+x square minus 1.
+
+165
+00:17:35,819 --> 00:17:35,980
+Okay.
+
+166
+00:17:36,679 --> 00:17:38,220
+Let us make a sign table.
+
+167
+00:17:38,220 --> 00:17:38,899
+and let us know
+
+168
+00:17:38,899 --> 00:17:39,399
+that we will
+
+169
+00:17:39,399 --> 00:17:40,099
+and let us know
+
+170
+00:17:40,099 --> 00:17:40,579
+that we will
+
+171
+00:17:40,579 --> 00:17:40,899
+and let us know
+
+172
+00:17:40,899 --> 00:17:41,619
+that we will
+
+173
+00:17:41,619 --> 00:17:41,960
+and let us know
+
+174
+00:17:41,960 --> 00:17:42,460
+that we will
+
+175
+00:17:42,460 --> 00:17:42,839
+and let us know
+
+176
+00:17:42,839 --> 00:17:43,379
+that we will
+
+177
+00:17:43,379 --> 00:17:43,839
+and let us know
+
+178
+00:17:43,839 --> 00:17:44,500
+that we will
+
+179
+00:17:44,500 --> 00:17:44,839
+and let us know
+
+180
+00:17:44,839 --> 00:17:45,220
+that we will
+
+181
+00:17:45,220 --> 00:17:45,839
+and let us know
+
+182
+00:17:45,839 --> 00:17:46,000
+that we will
+
+183
+00:17:46,000 --> 00:17:46,839
+and let us know
+
+184
+00:17:46,839 --> 00:17:47,319
+that we will
+
+185
+00:17:47,319 --> 00:17:47,839
+and let us know
+
+186
+00:17:47,839 --> 00:17:48,319
+that we will
+
+187
+00:17:48,319 --> 00:17:48,899
+and let us know
+
+188
+00:17:48,899 --> 00:17:49,200
+that we will
+
+189
+00:17:49,200 --> 00:17:49,779
+and let us know
+
+190
+00:17:49,779 --> 00:17:50,399
+that we will
+
+191
+00:17:50,399 --> 00:17:50,899
+and let us know
+
+192
+00:17:42,963 --> 00:18:03,604
+minus 1, 1, okay, here, here, negative, positive, positive, okay. So x goes to 1, from the left side, this part here, it will be negative. So I can write as it is minus x squared plus 1.
+
+193
+00:18:03,604 --> 00:18:27,683
+And if I write 1 here, you can see that, you can write directly, it will be 0. What about limit x goes to 1, from the right side, the sign you can see that, in this part, the sign is positive, it will be x squared minus 9, and this limit will be 0.
+
+194
+00:18:27,683 --> 00:18:33,523
+So I have limit, but what about f0. So I have limit, but what about f0? I have to look at f0.
+
+195
+00:18:34,483 --> 00:18:42,803
+f0, when I write 0 in the function, it will be 0. They are equal to each other also. So it is
+
+196
+00:18:42,803 --> 00:18:45,043
+continuous
+
+197
+00:18:45,043 --> 00:18:47,163
+at
+
+198
+00:18:47,163 --> 00:18:50,203
+x equals 1.
+
+199
+00:18:51,723 --> 00:18:53,243
+Ah, sorry, yes, f1.
+
+200
+00:18:57,619 --> 00:19:06,699
+This is f'1. Okay. So, it is continuous. In absolute value function, we don't have any problem about continuity.
+
+201
+00:19:07,639 --> 00:19:16,739
+The general shape, for example, if you sketch square root x, it will be like this. You can see that we don't have any problem about continuity.
+
+202
+00:19:16,739 --> 00:19:26,619
+But we will see in the next lesson, we will have problem about derivative at the absolute value function. Okay.
+
+203
+00:19:26,619 --> 00:19:34,919
+We will see later. We will have problem about absolute value function in derivative. We don't have derivative. Okay.
+
+204
+00:19:38,355 --> 00:19:40,836
+Okay, so let us look at this question.
+
+205
+00:19:43,175 --> 00:19:45,155
+What can you say about this?
+
+206
+00:19:50,675 --> 00:19:53,975
+Investigate the continuity of this function.
+
+207
+00:19:59,412 --> 00:20:11,052
+Firstly, you have to find the problem point. Okay? Normally, we don't have any problem because cosine function and sine function's domain are real number. But only I can have a problem here.
+
+208
+00:20:11,771 --> 00:20:24,832
+So I have to determine do you have any discontinuity point or points. So 2 minus sine x, normally it has to be non-zero. Is it true?
+
+209
+00:20:24,832 --> 00:20:42,812
+I know that sine function is a bounded function between minus 1 to 1. And if you look at your denominator, it can't be zero in any way. So our domain will be real number.
+
+210
+00:20:44,211 --> 00:20:54,092
+So according to your domain, you can say that it is continuous on R. We don't have any problem. Okay?
+
+211
+00:20:54,832 --> 00:20:57,511
+Because your denominator because your denominator can't be zero.
+
+212
+00:20:57,511 --> 00:20:57,552
+Because your denominator can't be zero.
+
+213
+00:21:02,548 --> 00:21:04,307
+Okay, what about this question?
+
+214
+00:21:06,048 --> 00:21:10,567
+If you want to talk about continuity, you have to find your domain,
+
+215
+00:21:10,728 --> 00:21:13,827
+you have to find your problem discontinuity points.
+
+216
+00:21:13,827 --> 00:21:18,127
+When you subtract from the real number, it will be continuous, okay?
+
+217
+00:21:19,567 --> 00:21:24,928
+So, 1 minus cosine x has to be non-zero.
+
+218
+00:21:26,867 --> 00:21:29,768
+At which point or points we have problem?
+
+219
+00:21:29,768 --> 00:21:37,347
+If cosine x is 1, it means that x will be 0.
+
+220
+00:21:39,167 --> 00:21:43,008
+Or, it is periodic, so it will be 2 pi.
+
+221
+00:21:43,907 --> 00:21:45,208
+Or 4 pi.
+
+222
+00:21:46,387 --> 00:21:49,028
+Or 6 pi.
+
+223
+00:21:50,607 --> 00:21:58,768
+Or you can write using an index, I can write that x key will be 0 plus 2 pi.
+
+224
+00:21:59,768 --> 00:22:03,347
+At this point, we have problem about continuity.
+
+225
+00:22:04,028 --> 00:22:08,847
+So, r minus the points x key.
+
+226
+00:22:10,847 --> 00:22:11,607
+Okay.
+
+227
+00:22:12,688 --> 00:22:14,867
+It is continuous.
+
+228
+00:22:17,067 --> 00:22:19,107
+On this.
+
+229
+00:22:19,107 --> 00:22:23,867
+At this point, we have problem about continuity.
+
+230
+00:22:24,307 --> 00:22:27,748
+But all the other points, it will be continuous.
+
+231
+00:22:28,087 --> 00:22:28,327
+Okay?
+
+232
+00:22:29,387 --> 00:22:30,847
+This is always like this?
+
+233
+00:22:31,288 --> 00:22:31,448
+Yes.
+
+234
+00:22:31,448 --> 00:22:33,087
+It will be continuous at its domain?
+
+235
+00:22:33,748 --> 00:22:34,768
+Yes, yes, yes.
+
+236
+00:22:35,347 --> 00:22:41,847
+But in the piecewise function, you have to be careful, okay?
+
+237
+00:22:41,847 --> 00:22:47,008
+And I have to investigate the problem points.
+
+238
+00:22:47,668 --> 00:22:49,307
+Problem points, yes, yes, yes.
+
+239
+00:22:49,367 --> 00:22:51,548
+It is always continuous at its domain.
+
+240
+00:22:52,127 --> 00:22:52,768
+Yes, yes.
+
+241
+00:22:52,768 --> 00:22:58,331
+Okay.
+
+242
+00:22:58,892 --> 00:23:00,352
+Now if we don't.
+
+243
+00:23:00,872 --> 00:23:01,352
+Okay.
+
+244
+00:23:01,831 --> 00:23:02,951
+Did we solve this question?
+
+245
+00:23:03,071 --> 00:23:03,692
+I think yes.
+
+246
+00:23:06,271 --> 00:23:07,091
+Bunu çözdük mü?
+
+247
+00:23:08,771 --> 00:23:10,711
+Sanki çözdük diye hatırlıyorum.
+
+248
+00:23:13,771 --> 00:23:15,991
+This one I think we solved.
+
+249
+00:23:18,652 --> 00:23:19,291
+Okay.
+
+250
+00:23:19,451 --> 00:23:21,172
+We didn't solve this question I think.
+
+251
+00:23:22,932 --> 00:23:24,251
+Bunu çözmedik mi?
+
+252
+00:23:24,251 --> 00:23:28,591
+İki grubum olduğu için karıştırıyorum.
+
+253
+00:23:29,491 --> 00:23:30,132
+Okay.
+
+254
+00:23:30,432 --> 00:23:33,031
+If we don't solve this question let us look at.
+
+255
+00:23:33,152 --> 00:23:33,291
+Okay.
+
+256
+00:23:34,011 --> 00:23:36,451
+Investigate the continuity of this function.
+
+257
+00:23:37,152 --> 00:23:38,612
+If you look at this function.
+
+258
+00:23:39,711 --> 00:23:41,852
+This parse domain is real number.
+
+259
+00:23:41,971 --> 00:23:43,711
+Only I have to find this point.
+
+260
+00:23:44,831 --> 00:23:47,271
+At this point we can have problem.
+
+261
+00:23:48,031 --> 00:23:52,711
+So one minus in the square root functions.
+
+262
+00:23:52,711 --> 00:23:57,251
+One minus x square will be non-zero.
+
+263
+00:23:57,971 --> 00:23:59,632
+But I have to find this point.
+
+264
+00:24:00,392 --> 00:24:04,491
+One minus x square equals.
+
+265
+00:24:04,632 --> 00:24:07,592
+One only we can have problem at x equals zero.
+
+266
+00:24:08,011 --> 00:24:09,152
+Bunu çözmüşüz sanki.
+
+267
+00:24:09,271 --> 00:24:09,991
+Bana da öyle geliyor.
+
+268
+00:24:11,132 --> 00:24:11,412
+Tamam.
+
+269
+00:24:11,951 --> 00:24:13,531
+Olmasa da notlar da var.
+
+270
+00:24:13,531 --> 00:24:14,451
+Okay.
+
+271
+00:24:14,571 --> 00:24:16,711
+This question is an exam.
+
+272
+00:24:16,791 --> 00:24:17,951
+Was an exam question.
+
+273
+00:24:18,071 --> 00:24:19,692
+And this question I like so much.
+
+274
+00:24:19,811 --> 00:24:20,711
+It is really easy.
+
+275
+00:24:20,872 --> 00:24:22,451
+But it is a little bit different.
+
+276
+00:24:23,451 --> 00:24:24,851
+They give a function.
+
+277
+00:24:25,412 --> 00:24:26,112
+Alpha beta.
+
+278
+00:24:26,692 --> 00:24:28,791
+Alpha beta are numbers.
+
+279
+00:24:29,192 --> 00:24:32,152
+Alpha is greater or greater or equal to zero.
+
+280
+00:24:32,372 --> 00:24:33,632
+Beta is a real number.
+
+281
+00:24:33,632 --> 00:24:37,091
+And they said that.
+
+282
+00:24:37,091 --> 00:24:41,051
+Is f zero comma minus one.
+
+283
+00:24:41,051 --> 00:24:43,932
+Is continuous on real number or not.
+
+284
+00:24:44,892 --> 00:24:46,531
+So first of all.
+
+285
+00:24:46,731 --> 00:24:47,711
+I have to determine.
+
+286
+00:24:48,051 --> 00:24:50,892
+What is f zero comma minus one.
+
+287
+00:24:51,092 --> 00:24:51,231
+Here.
+
+288
+00:24:52,112 --> 00:24:54,231
+Here alpha is zero.
+
+289
+00:24:54,731 --> 00:24:56,132
+Beta is minus one.
+
+290
+00:24:56,231 --> 00:24:57,392
+I have to write zero.
+
+291
+00:24:58,112 --> 00:25:00,231
+I have to write minus one.
+
+292
+00:25:00,231 --> 00:25:03,672
+So our piecewise function will be.
+
+293
+00:25:04,392 --> 00:25:04,791
+Sine.
+
+294
+00:25:06,412 --> 00:25:08,211
+One over x.
+
+295
+00:25:08,892 --> 00:25:09,372
+Zero.
+
+296
+00:25:09,672 --> 00:25:11,551
+If x is not zero.
+
+297
+00:25:13,432 --> 00:25:14,932
+X equals zero.
+
+298
+00:25:15,051 --> 00:25:16,031
+They are asking that.
+
+299
+00:25:16,152 --> 00:25:18,511
+This function is continuous on r.
+
+300
+00:25:19,051 --> 00:25:20,071
+Or not.
+
+301
+00:25:21,172 --> 00:25:21,551
+So.
+
+302
+00:25:22,271 --> 00:25:23,231
+In it is domain.
+
+303
+00:25:23,711 --> 00:25:24,692
+Sine one over x.
+
+304
+00:25:24,751 --> 00:25:25,831
+We don't have any problem.
+
+305
+00:25:26,011 --> 00:25:28,711
+Only I have to investigate the intersection point.
+
+306
+00:25:28,711 --> 00:25:30,471
+I have one function.
+
+307
+00:25:30,632 --> 00:25:31,811
+So I have to look at.
+
+308
+00:25:32,912 --> 00:25:34,351
+Limit x goes to zero.
+
+309
+00:25:34,451 --> 00:25:35,311
+Equals to.
+
+310
+00:25:36,572 --> 00:25:37,932
+F zero or not.
+
+311
+00:25:38,632 --> 00:25:39,251
+If yes.
+
+312
+00:25:39,351 --> 00:25:40,592
+It will be continuous.
+
+313
+00:25:41,471 --> 00:25:41,872
+Okay.
+
+314
+00:25:42,051 --> 00:25:43,451
+So what is sine.
+
+315
+00:25:45,132 --> 00:25:46,372
+One over x.
+
+316
+00:25:46,372 --> 00:25:46,451
+Okay.
+
+317
+00:25:46,451 --> 00:25:47,451
+So what is sine.
+
+318
+00:25:47,451 --> 00:25:48,511
+One over x.
+
+319
+00:25:51,988 --> 00:25:53,607
+What is this?
+
+320
+00:26:02,644 --> 00:26:04,183
+not easy is the mid.
+
+321
+00:26:08,051 --> 00:26:11,351
+When x goes to 0, sin 1 over 0 is infinity.
+
+322
+00:26:11,631 --> 00:26:12,731
+It is sin infinity.
+
+323
+00:26:15,251 --> 00:26:19,351
+Sin infinity, I talk very much about this concept.
+
+324
+00:26:19,531 --> 00:26:21,551
+It is between minus 1 to 1.
+
+325
+00:26:22,692 --> 00:26:25,531
+But we don't know the point.
+
+326
+00:26:25,531 --> 00:26:27,951
+We will have different points.
+
+327
+00:26:28,371 --> 00:26:31,351
+So the limit not exists.
+
+328
+00:26:33,091 --> 00:26:33,271
+Okay.
+
+329
+00:26:35,151 --> 00:26:37,271
+This limit does not exist.
+
+330
+00:26:37,271 --> 00:26:41,731
+So we can say that it is not continuous.
+
+331
+00:26:44,471 --> 00:26:46,171
+Why it does not exist?
+
+332
+00:26:46,451 --> 00:26:47,431
+Can you explain that?
+
+333
+00:26:48,791 --> 00:26:49,431
+Okay.
+
+334
+00:26:49,951 --> 00:26:52,291
+I talk about this one.
+
+335
+00:26:52,411 --> 00:26:53,192
+What is sin x?
+
+336
+00:26:53,192 --> 00:26:53,771
+Is this?
+
+337
+00:26:54,011 --> 00:26:54,151
+Okay.
+
+338
+00:26:54,731 --> 00:26:57,751
+In the infinity, you can finish any point.
+
+339
+00:26:57,851 --> 00:27:00,331
+For example, in the infinity, you can finish here.
+
+340
+00:27:00,611 --> 00:27:01,811
+Here or here.
+
+341
+00:27:02,151 --> 00:27:04,591
+We have many different limit points.
+
+342
+00:27:04,771 --> 00:27:06,231
+But limit has to be unique.
+
+343
+00:27:06,231 --> 00:27:06,932
+Okay.
+
+344
+00:27:07,471 --> 00:27:12,391
+So limit sin infinity doesn't exist.
+
+345
+00:27:12,511 --> 00:27:14,931
+We have many different limit points.
+
+346
+00:27:15,051 --> 00:27:16,391
+But limit has to be unique.
+
+347
+00:27:16,391 --> 00:27:24,932
+So if you have like this, x goes to 0, sin 1 over x.
+
+348
+00:27:25,291 --> 00:27:27,771
+Or it is the same also.
+
+349
+00:27:28,571 --> 00:27:30,851
+Limit x goes to 0.
+
+350
+00:27:30,851 --> 00:27:33,971
+You can say the same thing for cosine function also.
+
+351
+00:27:34,672 --> 00:27:36,931
+These limits not exist.
+
+352
+00:27:36,931 --> 00:27:37,551
+Okay.
+
+353
+00:27:39,211 --> 00:27:42,411
+Bir sürü yığılma noktası yani limit noktası var burada.
+
+354
+00:27:42,991 --> 00:27:46,591
+Sonsuzluğun nerede bittiğine göre karar verirseniz bir sürü nokta var.
+
+355
+00:27:47,051 --> 00:27:48,811
+Ama limitin tek olması gerekiyor.
+
+356
+00:27:48,891 --> 00:27:51,192
+O yüzden bu limitler hiçbir zaman yoktur.
+
+357
+00:27:51,871 --> 00:27:52,511
+Not exist.
+
+358
+00:27:52,631 --> 00:27:53,531
+These two limits.
+
+359
+00:27:53,711 --> 00:27:53,891
+Okay.
+
+360
+00:27:54,511 --> 00:28:06,251
+Sign infinity or if you find sign infinity or cosine infinity in many limits, this limit doesn't exist.
+
+361
+00:28:06,251 --> 00:28:06,731
+Okay.
+
+362
+00:28:07,471 --> 00:28:11,531
+So in that case it is not continuous on real number.
+
+363
+00:28:12,071 --> 00:28:12,351
+Okay.
+
+364
+00:28:12,571 --> 00:28:14,871
+But except 0 it is continuous.
+
+365
+00:28:15,571 --> 00:28:17,451
+Okay.
+
+366
+00:28:17,451 --> 00:28:21,672
+Hocam x'in x'in önündeki x nasıl gitti?
+
+367
+00:28:21,672 --> 00:28:24,051
+Yani direkt sin bir bu ikizatını...
+
+368
+00:28:24,051 --> 00:28:26,731
+Fonksiyonu tanımladım.
+
+369
+00:28:27,131 --> 00:28:31,031
+Diyor ki x alfa yerine 0 al, beta yerine x'i 1 al diyor.
+
+370
+00:28:31,071 --> 00:28:32,172
+x üzeri 0 1'dir.
+
+371
+00:28:32,911 --> 00:28:33,231
+Evet.
+
+372
+00:28:33,571 --> 00:28:34,672
+Yani alfa...
+
+373
+00:28:35,231 --> 00:28:37,031
+Alfayı 0 vermiş.
+
+374
+00:28:37,631 --> 00:28:39,451
+İşte onun 0 yapınca 0 olmuyor mu?
+
+375
+00:28:39,771 --> 00:28:42,051
+x üzeri 0, 1 oluyor.
+
+376
+00:28:42,051 --> 00:28:44,271
+x yerine herhangi bir...
+
+377
+00:28:44,271 --> 00:28:44,991
+Ha x üzeri A mı orada?
+
+378
+00:28:45,131 --> 00:28:45,771
+Pardon manyamış.
+
+379
+00:28:45,871 --> 00:28:46,271
+Alfayı 0.
+
+380
+00:28:46,271 --> 00:28:46,672
+Evet evet.
+
+381
+00:28:46,751 --> 00:28:47,611
+x üzeri alfa O.
+
+382
+00:28:48,831 --> 00:28:49,051
+Tamam.
+
+383
+00:28:49,672 --> 00:28:50,791
+O zaman da bir şey soracağım.
+
+384
+00:28:51,071 --> 00:28:51,591
+Evet evet.
+
+385
+00:28:51,651 --> 00:28:51,951
+Dinliyorum.
+
+386
+00:28:52,851 --> 00:28:53,051
+Şey...
+
+387
+00:28:54,331 --> 00:28:55,331
+Nerede?
+
+388
+00:28:55,491 --> 00:28:57,871
+Şimdi x üzeri x'i 1 dedik ya.
+
+389
+00:28:58,391 --> 00:28:58,711
+Evet.
+
+390
+00:28:59,431 --> 00:29:01,451
+Yani ben hala şeyi çözemedim.
+
+391
+00:29:01,831 --> 00:29:06,192
+Şimdi x üzeri x'i 1'i ne zaman kim bir bölü ilk ne zaman bir bölü kim kalacak?
+
+392
+00:29:06,192 --> 00:29:08,871
+Şimdi şöyle bak.
+
+393
+00:29:08,871 --> 00:29:09,231
+Yapalım.
+
+394
+00:29:09,591 --> 00:29:10,731
+Tamam anladım bak.
+
+395
+00:29:13,471 --> 00:29:18,091
+Eksi 1 buradaysa bu 1 bölü siniş x demektir.
+
+396
+00:29:21,652 --> 00:29:27,892
+Eksi bir, x'in burasındaysa bu sinüs bir bölü x demektir.
+
+397
+00:29:29,471 --> 00:29:29,652
+Tamam.
+
+398
+00:29:30,451 --> 00:29:32,771
+Şurada olanlar sinüsle alakalı.
+
+399
+00:29:32,951 --> 00:29:37,572
+Yani x ile sinüsün arasında, ifade ile sinüsün arasında olanlar sinüsün kuvveti.
+
+400
+00:29:38,292 --> 00:29:40,872
+x'in üzerinde olanlar x'in kuvveti.
+
+401
+00:29:41,172 --> 00:29:41,352
+Tamam.
+
+402
+00:29:43,231 --> 00:29:43,711
+Anladın mı?
+
+403
+00:29:45,271 --> 00:29:46,172
+Anlayabildim mi?
+
+404
+00:29:47,011 --> 00:29:47,731
+Evet, anladım.
+
+405
+00:29:47,971 --> 00:29:48,632
+Tamam, tamam.
+
+406
+00:29:49,192 --> 00:29:50,932
+Sesiniz bazen gelmiyordu bana o yüzden.
+
+407
+00:29:50,932 --> 00:29:51,812
+Tamam.
+
+408
+00:29:52,011 --> 00:29:54,352
+So, let me write another example here.
+
+409
+00:29:54,532 --> 00:30:09,572
+I am asking now, what is the same question, but here I am asking 1, minus 1.
+
+410
+00:30:09,692 --> 00:30:11,211
+Is it continuous or not?
+
+411
+00:30:17,491 --> 00:30:22,652
+F1, minus 1 is continuous on real number or not.
+
+412
+00:30:24,991 --> 00:30:33,571
+First of all, you have to write your new function using the formula which they give in the above.
+
+413
+00:30:34,672 --> 00:30:40,031
+So, what is your piecewise function? F1, minus 1.
+
+414
+00:30:40,031 --> 00:30:48,031
+Okay, so it means that we will say alpha is...
+
+415
+00:30:50,031 --> 00:30:53,831
+Okay, here alpha is 1.
+
+416
+00:30:55,831 --> 00:30:59,991
+Alpha is 1, beta is minus 1.
+
+417
+00:30:59,991 --> 00:31:09,791
+So, our function will be x sine 1 over x.
+
+418
+00:31:10,791 --> 00:31:17,692
+If x is not 0, if x is 0, it is 0.
+
+419
+00:31:18,071 --> 00:31:18,331
+Okay.
+
+420
+00:31:21,152 --> 00:31:24,412
+Now, we have to investigate only the point 0.
+
+421
+00:31:24,632 --> 00:31:26,531
+We can have only problem at 0.
+
+422
+00:31:27,531 --> 00:31:29,112
+Limit x goes to 0.
+
+423
+00:31:29,991 --> 00:31:35,571
+x product sine 1 over x.
+
+424
+00:31:36,091 --> 00:31:37,172
+What is this limit?
+
+425
+00:31:43,059 --> 00:31:55,579
+We taught this limit at the first week of the semester. This is zero. This is, I talk about, it is a number A between minus 1 to 1. Okay.
+
+426
+00:31:58,119 --> 00:32:08,299
+But it is not important. Why? Because you will product with zero. Zero product, the number A will be zero. Okay.
+
+427
+00:32:08,299 --> 00:32:32,139
+We taught these limits especially in the first week. So our limit is zero. What about f0? What is f0? f0 is zero. They are equal to each other. So it is continuous. So this function is continuous on real number. Okay.
+
+428
+00:32:38,259 --> 00:32:40,259
+Evet, bu bir şey.
+
+429
+00:32:40,259 --> 00:33:06,259
+Bu bir şey.
+
+430
+00:33:06,259 --> 00:33:08,259
+Can I write something please?
+
+431
+00:33:08,259 --> 00:33:10,259
+Yes.
+
+432
+00:33:10,259 --> 00:33:12,259
+Can we just say it's
+
+433
+00:33:12,259 --> 00:33:16,259
+1 over x
+
+434
+00:33:16,259 --> 00:33:22,259
+and the x this one we can do like this one over x.
+
+435
+00:33:22,259 --> 00:33:24,259
+So it would be one, isn't it?
+
+436
+00:33:28,259 --> 00:33:34,259
+X goes to infinity is one.
+
+437
+00:33:34,259 --> 00:33:36,259
+Okay.
+
+438
+00:33:36,259 --> 00:33:38,259
+Yes, I understand.
+
+439
+00:33:38,259 --> 00:33:40,259
+You are confused about the shape.
+
+440
+00:33:40,259 --> 00:33:42,259
+Okay.
+
+441
+00:33:42,259 --> 00:33:44,259
+I understand the question.
+
+442
+00:33:44,259 --> 00:33:46,259
+You are talking about if I write one over x here.
+
+443
+00:33:46,259 --> 00:33:48,259
+It will be one.
+
+444
+00:33:48,259 --> 00:33:50,259
+If it is infinity.
+
+445
+00:33:50,259 --> 00:33:52,259
+Yes.
+
+446
+00:33:52,259 --> 00:33:54,259
+If it is infinity.
+
+447
+00:33:54,259 --> 00:33:55,259
+Yes.
+
+448
+00:33:55,259 --> 00:33:57,259
+But if it is zero, let me write.
+
+449
+00:33:57,259 --> 00:33:59,259
+What is happening here?
+
+450
+00:33:59,259 --> 00:34:01,259
+If it is zero.
+
+451
+00:34:01,259 --> 00:34:02,259
+Okay.
+
+452
+00:34:02,259 --> 00:34:03,259
+It will be.
+
+453
+00:34:03,259 --> 00:34:06,259
+Sign one over zero is infinity.
+
+454
+00:34:06,259 --> 00:34:09,260
+I will have sign infinity.
+
+455
+00:34:09,260 --> 00:34:10,260
+Infinity.
+
+456
+00:34:10,260 --> 00:34:12,260
+But this is not infinity.
+
+457
+00:34:12,260 --> 00:34:14,260
+It is a number.
+
+458
+00:34:14,260 --> 00:34:18,260
+But you are talking about if x goes to infinity.
+
+459
+00:34:18,260 --> 00:34:20,260
+Okay.
+
+460
+00:34:20,260 --> 00:34:31,260
+If you have sign one over x over one over x is zero over zero, then it will be one.
+
+461
+00:34:31,260 --> 00:34:32,260
+Okay.
+
+462
+00:34:32,260 --> 00:34:34,260
+But x goes to zero, no.
+
+463
+00:34:34,260 --> 00:34:36,260
+We don't have indetermined form.
+
+464
+00:34:36,260 --> 00:34:39,260
+Burada şu kısma demiştim ki size.
+
+465
+00:34:39,260 --> 00:34:42,260
+0 bölü 0 belirsizliği varsa buna eşit.
+
+466
+00:34:42,260 --> 00:34:44,260
+Ama burada öyle bir belirsizlik yok.
+
+467
+00:34:44,260 --> 00:34:48,260
+Siz yani şekili görünce orada karıştırıyorsunuz.
+
+468
+00:34:48,260 --> 00:34:50,260
+Ama nokta önemli.
+
+469
+00:34:50,260 --> 00:34:52,260
+Şekilin dışında nokta da önemli.
+
+470
+00:34:52,260 --> 00:34:55,260
+Yani orada indetermined formun yüzünü olması gerekiyor.
+
+471
+00:34:55,260 --> 00:34:56,260
+Okay.
+
+472
+00:34:56,260 --> 00:34:59,260
+If you are confusing about the shape.
+
+473
+00:34:59,260 --> 00:35:00,260
+Okay.
+
+474
+00:35:00,260 --> 00:35:03,260
+The shape is important, but the point is also important.
+
+475
+00:35:03,260 --> 00:35:10,260
+When you write the point in the function, if you have zero over zero, then you can say
+
+476
+00:35:10,260 --> 00:35:11,260
+that it is one.
+
+477
+00:35:11,260 --> 00:35:14,260
+But in this question, we don't have indetermined form.
+
+478
+00:35:14,260 --> 00:35:15,260
+The shape.
+
+479
+00:35:15,260 --> 00:35:16,260
+Okay.
+
+480
+00:35:16,260 --> 00:35:20,260
+It will be the same shape, but the point is different.
+
+481
+00:35:20,260 --> 00:35:21,260
+Okay.
+
+482
+00:35:21,260 --> 00:35:26,260
+If your limit x goes to infinity, okay, I can say that one because I have zero over
+
+483
+00:35:26,260 --> 00:35:29,260
+zero, but in this question it is different.
+
+484
+00:35:29,260 --> 00:35:30,260
+Okay.
+
+485
+00:35:30,260 --> 00:35:32,260
+Did you understand the difference?
+
+486
+00:35:32,260 --> 00:35:34,260
+Okay.
+
+487
+00:35:34,260 --> 00:35:37,260
+If you don't have any problem.
+
+488
+00:35:37,260 --> 00:35:38,260
+Okay.
+
+489
+00:35:38,260 --> 00:35:41,260
+Now sayı bölü sonsuz 0 olacak, değil mi?
+
+490
+00:35:41,260 --> 00:35:47,260
+Eee şeyine göre sayı bölü sonsuz 0.
+
+491
+00:35:47,260 --> 00:35:49,260
+Evet.
+
+492
+00:35:49,260 --> 00:35:56,260
+Ama şey, şeye dikkat edin şimdi sayı derken normal bir sayı 0 olursa ne olur?
+
+493
+00:35:56,260 --> 00:35:57,260
+Şöyle bakalım.
+
+494
+00:35:57,260 --> 00:36:00,260
+0 çarpı sonsuz olursa o zaman bunu şöyle yapacaksın.
+
+495
+00:36:00,260 --> 00:36:02,260
+0 çarpı 1 bölü sonsuz o da 0.
+
+496
+00:36:02,260 --> 00:36:03,260
+Evet.
+
+497
+00:36:04,260 --> 00:36:34,260
+Tamam.
+
+498
+00:36:09,972 --> 00:36:10,332
+ok.
+
+499
+00:36:17,715 --> 00:36:20,715
+ve belirli integral sıfırdan bire.
+
+500
+00:36:26,547 --> 00:37:28,547
+Bir şeyin bir soru var.
+
+501
+00:37:30,867 --> 00:38:28,547
+Bir soru var.
+
+502
+00:38:58,547 --> 00:39:00,547
+var.
+
+503
+00:39:00,547 --> 00:39:04,547
+Bir soru var.
+
+504
+00:39:04,547 --> 00:39:06,547
+var.
+
+505
+00:39:06,547 --> 00:40:28,547
+Bir soru var.
+
+506
+00:40:25,619 --> 00:40:26,819
+I'm writing generally.
+
+507
+00:40:27,039 --> 00:40:27,139
+Okay.
+
+508
+00:40:28,940 --> 00:40:33,159
+For example, you find f0 is minus 1 and f2 is 4.
+
+509
+00:40:34,179 --> 00:40:37,900
+If you look at the graph, okay, your function, for example, like this.
+
+510
+00:40:39,179 --> 00:40:42,619
+F0 is this.
+
+511
+00:40:42,739 --> 00:40:44,500
+This is minus 1.
+
+512
+00:40:44,859 --> 00:40:48,779
+And let us take f2 is, for example, 4 here.
+
+513
+00:40:48,779 --> 00:40:56,839
+You can see that if the functions, one value is negative, the other one is positive.
+
+514
+00:40:56,980 --> 00:41:03,019
+It means that at least one part, it changed the sign from negative to 1.
+
+515
+00:41:03,099 --> 00:41:07,960
+It means that at least one point, I will have a root.
+
+516
+00:41:07,960 --> 00:41:20,440
+So I can say that f0 is minus 1, less than 0, less than f2 equals 4.
+
+517
+00:41:21,659 --> 00:41:27,539
+So I can say that at least one point, I will have a root.
+
+518
+00:41:27,619 --> 00:41:31,519
+It guarantees that we have a root in this interval.
+
+519
+00:41:31,519 --> 00:41:37,400
+After that, you can start to search your root or root.
+
+520
+00:41:37,639 --> 00:41:37,940
+Okay.
+
+521
+00:41:38,440 --> 00:41:42,259
+For example, let me sketch a graph.
+
+522
+00:41:48,436 --> 00:41:51,476
+For example, here you have a function.
+
+523
+00:41:51,655 --> 00:41:53,216
+Okay, this is F A.
+
+524
+00:41:53,635 --> 00:41:55,635
+If you look at F A is positive.
+
+525
+00:41:56,416 --> 00:41:57,536
+F B is negative.
+
+526
+00:41:57,536 --> 00:42:05,175
+It means that at least one point, the sign is changing from positive to negative.
+
+527
+00:42:05,175 --> 00:42:18,516
+And in the graph, you can easily see that you have one, two, three, four, five, six, seven roots in this interval.
+
+528
+00:42:18,675 --> 00:42:21,556
+For example, I write one and five here.
+
+529
+00:42:22,216 --> 00:42:28,036
+So I can see that F1 is positive.
+
+530
+00:42:29,836 --> 00:42:32,296
+F2 is negative.
+
+531
+00:42:32,296 --> 00:42:36,175
+So zero is between this number.
+
+532
+00:42:38,216 --> 00:42:40,916
+F2 less than zero.
+
+533
+00:42:41,316 --> 00:42:41,956
+F1.
+
+534
+00:42:43,456 --> 00:42:49,816
+Because of this, I will have at least one root where Fc is zero.
+
+535
+00:42:51,356 --> 00:42:51,496
+Okay.
+
+536
+00:42:53,036 --> 00:42:54,796
+Can I ask something?
+
+537
+00:42:55,256 --> 00:42:55,576
+Yes.
+
+538
+00:42:55,776 --> 00:42:56,596
+What is root?
+
+539
+00:42:57,436 --> 00:42:57,696
+Cook.
+
+540
+00:42:58,696 --> 00:42:59,596
+What is root?
+
+541
+00:42:59,596 --> 00:43:05,655
+For example, if X equals X minus two, X minus two is zero.
+
+542
+00:43:05,976 --> 00:43:08,436
+Then your root will be X equals two.
+
+543
+00:43:09,076 --> 00:43:09,276
+Okay.
+
+544
+00:43:10,256 --> 00:43:13,216
+That means when Y equals zero, that is the root.
+
+545
+00:43:14,076 --> 00:43:14,396
+Yes.
+
+546
+00:43:16,976 --> 00:43:20,896
+If the function equals zero, then you will find the root.
+
+547
+00:43:20,896 --> 00:43:26,416
+root means where Fc equals zero.
+
+548
+00:43:26,416 --> 00:43:27,996
+This is your root.
+
+549
+00:43:28,236 --> 00:43:28,336
+Okay.
+
+550
+00:43:30,676 --> 00:43:31,576
+This is root.
+
+551
+00:43:33,196 --> 00:43:37,956
+This is a consequence of root finding.
+
+552
+00:43:37,956 --> 00:43:43,416
+It is a result of intermediate value theorem.
+
+553
+00:43:43,416 --> 00:43:47,276
+But they can ask different.
+
+554
+00:43:47,436 --> 00:43:48,976
+For example, they can ask it.
+
+555
+00:43:49,336 --> 00:43:50,736
+Do you have any value?
+
+556
+00:43:52,736 --> 00:43:58,576
+For example, one over three in the interval zero comma two, for example.
+
+557
+00:43:58,756 --> 00:44:00,316
+They don't need to ask root.
+
+558
+00:44:00,316 --> 00:44:01,676
+They can ask it.
+
+559
+00:44:01,996 --> 00:44:07,236
+Is your function take any value one over three in this interval or not?
+
+560
+00:44:07,556 --> 00:44:07,876
+Okay.
+
+561
+00:44:07,976 --> 00:44:30,936
+Let us look at the examples.
+
+562
+00:44:15,443 --> 00:44:45,443
+Bu, bu
+
+563
+00:44:45,443 --> 00:45:15,324
+because it is polynomial. So after that I have to find what is F1? F1 is minus 2. What is F3? F3 is 4. The first one is negative. The second one is positive. Yes, I have a root. I can write it F1 less than 0 less than F3. So according to intermediate video theorem, I can say that at least
+
+564
+00:45:15,324 --> 00:45:41,684
+one root one root, I have 0. That will be enough. You will write only explanation. Since F1 is negative and F3 is positive, the sign of x change, sign is changing in this interval. So we have at least one zero one root in this interval. It will be enough. Okay.
+
+565
+00:45:41,683 --> 00:45:46,804
+But we can see different questions also.
+
+566
+00:45:46,804 --> 00:45:47,963
+Bir tane daha.
+
+567
+00:45:51,635 --> 00:45:53,115
+Hocam bir şey sorabilir miyim?
+
+568
+00:45:53,155 --> 00:45:53,795
+Efendim hanım?
+
+569
+00:45:54,096 --> 00:45:59,315
+Hocam hani bizim şu an bu yaptığımız bizim en az bir tane değeri onu saldığını kanıtlıyoruz ya.
+
+570
+00:45:59,416 --> 00:46:00,675
+Evet, sadece kanıt yapıyoruz.
+
+571
+00:46:00,896 --> 00:46:03,735
+Tam olarak kaç tane kökünün olduğu çarpanları ayırma hiçbir şey yok.
+
+572
+00:46:03,755 --> 00:46:05,516
+Yok, hayır hayır onlarla ilgilenmiyoruz.
+
+573
+00:46:05,596 --> 00:46:08,735
+Bu teorem bizim ben kendi konumda da kullanıyorum.
+
+574
+00:46:09,335 --> 00:46:13,996
+Bu teorem bize mesela diyelim ki sen bir yerde çalışmak istiyorsun, bir aralığı incelemek istiyorsun.
+
+575
+00:46:14,496 --> 00:46:17,835
+Ama incelemeden önce bir şeyin var olup olmanı garanti etmen lazım.
+
+576
+00:46:17,835 --> 00:46:19,056
+Yoksa niye uğraşacaksın?
+
+577
+00:46:19,556 --> 00:46:21,155
+Bu teorem bize onu garanti ediyor.
+
+578
+00:46:21,155 --> 00:46:51,135
+Diyor ki burada senin kökünün var.
+
+579
+00:46:51,155 --> 00:46:53,155
+hani parçalı fonksiyonlar.
+
+580
+00:46:53,155 --> 00:46:57,175
+Hani parçalı fonksiyonlar da şey tek tek yazılıyor.
+
+581
+00:46:57,556 --> 00:46:59,215
+Yani parçalı fonksiyonlar da şey tek tek yazılıyor.
+
+582
+00:47:00,115 --> 00:47:01,916
+Parçalı fonksiyonlar da burada bir şey yazıyor.
+
+583
+00:47:02,036 --> 00:47:03,576
+İşte burada x baş şeyler yazıyor.
+
+584
+00:47:03,655 --> 00:47:04,355
+Burada bu şekilde.
+
+585
+00:47:04,596 --> 00:47:06,275
+Onu illa göreceğiz diyorsunuz.
+
+586
+00:47:06,275 --> 00:47:06,655
+Tabii canım.
+
+587
+00:47:07,155 --> 00:47:07,195
+Tabii.
+
+588
+00:47:08,016 --> 00:47:11,335
+Size zaten fonksiyon tek olarak verilir.
+
+589
+00:47:11,436 --> 00:47:13,335
+Artı aralık da ona göre verilir zaten.
+
+590
+00:47:13,496 --> 00:47:14,556
+Sıkıntı değil yani.
+
+591
+00:47:14,976 --> 00:47:16,155
+Anladım hocam teşekkür ederim.
+
+592
+00:47:21,155 --> 00:47:22,155
+O arada aşağıda.
+
+593
+00:47:22,155 --> 00:47:23,855
+O arada aşağı anlıyoruz.
+
+594
+00:47:23,855 --> 00:47:23,996
+Sen.
+
+595
+00:47:23,996 --> 00:47:24,155
+O arada aşağı anlıyoruz.
+
+596
+00:47:24,155 --> 00:47:24,496
+Sen.
+
+597
+00:47:30,132 --> 00:47:32,132
+İkincisi daha iyi.
+
+598
+00:47:37,907 --> 00:47:39,688
+Ok, this one.
+
+599
+00:47:40,987 --> 00:47:44,087
+Using the corresponding theorem, ilgili theorem demek burada.
+
+600
+00:47:44,627 --> 00:47:49,407
+Determine that this function has value 1 over 3 in the interval or not.
+
+601
+00:47:49,947 --> 00:47:57,127
+The corresponding theorem actually it is talking about intermediate value theorem.
+
+602
+00:47:58,307 --> 00:48:03,728
+Ok, so do you have any 1 over 3 value or not?
+
+603
+00:48:03,967 --> 00:48:06,288
+It means that this is y0.
+
+604
+00:48:06,288 --> 00:48:14,447
+They are asking, can you have 1 over 3 in your function or not?
+
+605
+00:48:14,927 --> 00:48:17,347
+Firstly, you have to look at your function.
+
+606
+00:48:17,467 --> 00:48:19,688
+Is it continuous in the interval 0 to 1?
+
+607
+00:48:19,788 --> 00:48:21,907
+Yes, we don't have any problem.
+
+608
+00:48:22,607 --> 00:48:25,407
+So after that, you have to determine what is f0.
+
+609
+00:48:28,107 --> 00:48:29,367
+f0 is 1.
+
+610
+00:48:31,107 --> 00:48:33,507
+f1 is 0.
+
+611
+00:48:33,507 --> 00:48:43,587
+So according to intermediate value theorem, is your value, is your point 1 over 3 in this interval?
+
+612
+00:48:43,788 --> 00:48:44,067
+Yes.
+
+613
+00:48:44,067 --> 00:48:51,547
+Since f1 less than 1 over 3, less than f0,
+
+614
+00:48:51,547 --> 00:48:55,728
+we have
+
+615
+00:48:55,728 --> 00:49:01,547
+a value, at least a value,
+
+616
+00:49:02,987 --> 00:49:07,487
+where fc is 1 over 3.
+
+617
+00:49:07,487 --> 00:49:08,147
+That's all.
+
+618
+00:49:09,347 --> 00:49:10,688
+Can you repeat it, please?
+
+619
+00:49:10,688 --> 00:49:11,467
+Yes.
+
+620
+00:49:11,587 --> 00:49:11,788
+Ok.
+
+621
+00:49:12,927 --> 00:49:15,347
+They said that using the corresponding theorem,
+
+622
+00:49:16,208 --> 00:49:19,288
+our corresponding theorem here is intermediate value theorem.
+
+623
+00:49:19,847 --> 00:49:23,147
+Firstly, if you want to use the intermediate value theorem,
+
+624
+00:49:23,347 --> 00:49:26,288
+you have to be sure about the continuity on this interval.
+
+625
+00:49:26,288 --> 00:49:28,427
+When you look at your function,
+
+626
+00:49:28,427 --> 00:49:31,107
+we don't have any problem in this interval.
+
+627
+00:49:31,567 --> 00:49:32,887
+So it is continuous.
+
+628
+00:49:33,887 --> 00:49:35,228
+If it is continuous,
+
+629
+00:49:35,228 --> 00:49:38,248
+then I have to look at the endpoints value.
+
+630
+00:49:38,647 --> 00:49:39,507
+What is f0?
+
+631
+00:49:39,987 --> 00:49:41,188
+If I write here,
+
+632
+00:49:41,268 --> 00:49:43,527
+f0 is 1 and f1 is 0.
+
+633
+00:49:44,327 --> 00:49:45,228
+They said that,
+
+634
+00:49:45,347 --> 00:49:48,427
+do you have any value 1 over 3 in this interval?
+
+635
+00:49:48,427 --> 00:49:49,907
+Let me show here.
+
+636
+00:49:50,907 --> 00:49:52,507
+f0 is 1.
+
+637
+00:49:53,127 --> 00:49:53,248
+Ok.
+
+638
+00:49:54,407 --> 00:49:56,527
+f1 is 0.
+
+639
+00:49:57,847 --> 00:49:58,748
+For example,
+
+640
+00:49:58,847 --> 00:50:00,248
+your function is like this.
+
+641
+00:50:00,427 --> 00:50:00,587
+Ok.
+
+642
+00:50:01,087 --> 00:50:02,567
+And in the question,
+
+643
+00:50:02,887 --> 00:50:03,768
+they asked it,
+
+644
+00:50:04,107 --> 00:50:06,728
+do you have any value 1 over 3 here?
+
+645
+00:50:09,728 --> 00:50:13,047
+Do you have any 1 over 3 here or not?
+
+646
+00:50:13,607 --> 00:50:14,268
+They are asking,
+
+647
+00:50:14,447 --> 00:50:16,487
+is there any c here or not?
+
+648
+00:50:16,648 --> 00:50:16,847
+Ok.
+
+649
+00:50:16,847 --> 00:50:20,208
+So you have to determine the endpoints.
+
+650
+00:50:20,527 --> 00:50:21,248
+This is 1.
+
+651
+00:50:21,688 --> 00:50:22,527
+This is 0.
+
+652
+00:50:23,208 --> 00:50:23,927
+This value,
+
+653
+00:50:24,107 --> 00:50:26,248
+this given value is in this part.
+
+654
+00:50:26,907 --> 00:50:27,728
+Here is 1.
+
+655
+00:50:28,248 --> 00:50:29,007
+Here is 0.
+
+656
+00:50:29,228 --> 00:50:31,867
+Is this between 0 to 1?
+
+657
+00:50:31,967 --> 00:50:32,307
+Yes.
+
+658
+00:50:32,967 --> 00:50:36,027
+I can write that f1 is less than 1 over 3
+
+659
+00:50:36,027 --> 00:50:37,507
+and less than f0.
+
+660
+00:50:38,307 --> 00:50:39,507
+Then I can say that,
+
+661
+00:50:39,507 --> 00:50:39,788
+ok,
+
+662
+00:50:39,967 --> 00:50:42,107
+I have a value c
+
+663
+00:50:42,107 --> 00:50:44,867
+where fc is 1 over 3
+
+664
+00:50:44,867 --> 00:50:46,587
+according to intermediate value
+
+665
+00:50:46,587 --> 00:50:47,007
+to run.
+
+666
+00:50:47,487 --> 00:50:48,188
+For example,
+
+667
+00:50:48,188 --> 00:50:50,507
+for example,
+
+668
+00:50:50,507 --> 00:50:51,507
+and 1 over 3.
+
+669
+00:50:51,507 --> 00:50:51,827
+So,
+
+670
+00:50:51,827 --> 00:50:54,007
+I have a value c
+
+671
+00:50:54,007 --> 00:51:18,067
+that I have a value c
+
+672
+00:50:56,148 --> 00:50:56,867
+This one.
+
+673
+00:50:57,847 --> 00:50:59,528
+This is, let us take one.
+
+674
+00:51:00,448 --> 00:51:01,367
+This is two.
+
+675
+00:51:03,048 --> 00:51:04,128
+This is four.
+
+676
+00:51:04,128 --> 00:51:09,248
+And let us take eight, for example.
+
+677
+00:51:09,908 --> 00:51:15,188
+And they are asked that, do you have any value four in your function?
+
+678
+00:51:16,248 --> 00:51:19,128
+Do you have any value four in your function?
+
+679
+00:51:19,548 --> 00:51:22,428
+You can see that our function is a continuous function.
+
+680
+00:51:22,588 --> 00:51:23,807
+We don't have any problem.
+
+681
+00:51:23,807 --> 00:51:27,988
+After that, you have to determine these points and these points.
+
+682
+00:51:28,788 --> 00:51:30,387
+F1 is two.
+
+683
+00:51:33,668 --> 00:51:37,908
+F8, sorry, F4 is eight.
+
+684
+00:51:39,768 --> 00:51:42,528
+The given point four in this interval?
+
+685
+00:51:43,387 --> 00:51:44,068
+Yes.
+
+686
+00:51:45,387 --> 00:51:52,428
+So according to intermediate video theorem, I can say that according to the intermediate video theorem,
+
+687
+00:51:52,428 --> 00:51:56,867
+there will be a point Fc.
+
+688
+00:51:59,008 --> 00:52:01,768
+Where Fc equals four.
+
+689
+00:52:02,708 --> 00:52:03,568
+Now, do you understand?
+
+690
+00:52:05,948 --> 00:52:06,807
+Yes, thank you.
+
+691
+00:52:07,367 --> 00:52:07,628
+Okay.
+
+692
+00:52:08,367 --> 00:52:09,908
+Bakın, burada iki şey sorulabilir.
+
+693
+00:52:10,088 --> 00:52:12,448
+Y kök derse sıfıra bakacaksınız.
+
+694
+00:52:13,148 --> 00:52:15,068
+Y'deki değeri sıfıra olan demektir.
+
+695
+00:52:15,068 --> 00:52:16,908
+Ama illa olmak zorunda değil.
+
+696
+00:52:17,088 --> 00:52:20,128
+İşte bu aralıkta işte bir bölü üç değerini alıyor mu?
+
+697
+00:52:20,248 --> 00:52:22,468
+Bunu sağlayan bir değer var mı diye de sorulabilir.
+
+698
+00:52:22,628 --> 00:52:24,048
+İki çeşit karşınıza çıkıyor.
+
+699
+00:52:24,788 --> 00:52:26,568
+Okay, let us look at this example.
+
+700
+00:52:27,528 --> 00:52:28,768
+Hocam bir şey sorabilir miyim?
+
+701
+00:52:28,807 --> 00:52:29,068
+Efendim?
+
+702
+00:52:30,248 --> 00:52:34,048
+Hocam yukarıda mesela sürekli değil deseydi yani sürekli olay.
+
+703
+00:52:34,048 --> 00:52:34,968
+O zaman olmazdı.
+
+704
+00:52:34,968 --> 00:52:37,788
+Aynen ama olabildiğime ihtimali var değil mi?
+
+705
+00:52:39,347 --> 00:52:44,208
+Şöyle, intermediate'i kullanabilmek için o şartın sağlanması gerekiyor.
+
+706
+00:52:44,288 --> 00:52:48,768
+O şart sağlanmıyorsa zaten var olup olmadığına zaten hiç giremiyorsun.
+
+707
+00:52:50,248 --> 00:52:52,608
+O aralıkta mutlaka şey olması gerekiyor.
+
+708
+00:52:52,708 --> 00:52:53,688
+Mesela şöyle bir şey.
+
+709
+00:52:53,688 --> 00:52:57,128
+If your function like this, okay.
+
+710
+00:52:58,448 --> 00:53:00,387
+This is one, this is two.
+
+711
+00:53:01,928 --> 00:53:04,347
+You have discontinuity so you can't use.
+
+712
+00:53:04,968 --> 00:53:06,468
+Intermediate Verity Törem.
+
+713
+00:53:06,568 --> 00:53:10,688
+Because it doesn't possess the conditions of the teorem.
+
+714
+00:53:11,208 --> 00:53:11,367
+Okay?
+
+715
+00:53:12,468 --> 00:53:15,188
+Sürekli değilse zaten bu teorem hiç uygulayamıyorsunuz.
+
+716
+00:53:15,307 --> 00:53:15,988
+Problem ne o?
+
+717
+00:53:16,347 --> 00:53:18,528
+Çünkü orada mesela tanımlı değil burada mesela.
+
+718
+00:53:19,168 --> 00:53:19,387
+Tamam mı?
+
+719
+00:53:19,387 --> 00:53:20,188
+Söyleyebilir miyim hocam?
+
+720
+00:53:20,408 --> 00:53:20,668
+Efendim?
+
+721
+00:53:20,668 --> 00:53:20,988
+Tamam.
+
+722
+00:53:20,988 --> 00:53:21,648
+Aşkıda.
+
+723
+00:53:21,867 --> 00:53:22,408
+Şey diyeyim.
+
+724
+00:53:22,548 --> 00:53:26,168
+Burada mesela sürekli ama açım için sürekli olmadığı bir örnek sorabilirler.
+
+725
+00:53:26,327 --> 00:53:28,867
+Mesela şey için sürekli ara getirip soru.
+
+726
+00:53:28,928 --> 00:53:32,347
+Ama şöyle bu konu şeyle alakalı.
+
+727
+00:53:32,448 --> 00:53:34,367
+Intermediate Verity Törem ile alakalı.
+
+728
+00:53:34,367 --> 00:53:37,208
+Tabii ki bunun şeyini sorabilirler.
+
+729
+00:53:37,327 --> 00:53:38,588
+O başka bir konuyla alakalı.
+
+730
+00:53:38,668 --> 00:53:39,788
+Extension ile alakalı.
+
+731
+00:53:40,248 --> 00:53:41,327
+Mesela bunu ne yaparsın?
+
+732
+00:53:41,708 --> 00:53:44,588
+Burada şurada atıyorum burası bir buçuk mesela.
+
+733
+00:53:45,387 --> 00:53:46,188
+Bir buçuk olsun.
+
+734
+00:53:46,948 --> 00:53:49,008
+Bunu sürekli hale getirmek için ne yapacaksın?
+
+735
+00:53:49,128 --> 00:53:50,268
+Burada tanımlama yapacaksın.
+
+736
+00:53:50,408 --> 00:53:52,088
+Limitin değerini alacaksın bir buçukta iken.
+
+737
+00:53:55,528 --> 00:53:57,408
+Fonksiyonun değerini bulup burada yazacaksın.
+
+738
+00:53:57,548 --> 00:53:57,928
+Atıyorum.
+
+739
+00:53:58,168 --> 00:53:58,807
+Burası olsun.
+
+740
+00:53:58,928 --> 00:53:59,448
+İşte dört.
+
+741
+00:53:59,448 --> 00:54:02,608
+Burayı da sürekli hale getirmiş oluyorsun o zaman.
+
+742
+00:54:03,068 --> 00:54:04,428
+Tamam ondan sonra şey yapılabilir.
+
+743
+00:54:04,568 --> 00:54:08,768
+Ama intermediate value'u biz süreksiz olanlarda sormuyoruz zaten.
+
+744
+00:54:10,108 --> 00:54:12,288
+Yani zaten o zaman teoremi hiç kullanamıyorsunuz.
+
+745
+00:54:13,588 --> 00:54:13,748
+Tamam?
+
+746
+00:54:13,748 --> 00:54:17,168
+Yani kullanabilmeniz için sürekli olması gerekiyor.
+
+747
+00:54:17,228 --> 00:54:19,208
+O zaman diğer adımlara geçebiliyorsunuz.
+
+748
+00:54:19,867 --> 00:54:20,108
+Okay.
+
+749
+00:54:20,387 --> 00:54:24,748
+Now let us look at this last example about intermediate value theorem.
+
+750
+00:54:24,748 --> 00:54:29,048
+Determine that this equation has any root.
+
+751
+00:54:29,768 --> 00:54:35,347
+If you see root, it means that they are asking is there any c where fc is 0.
+
+752
+00:54:36,068 --> 00:54:38,068
+In the interval 0 to 1.
+
+753
+00:54:38,648 --> 00:54:41,168
+Firstly, look at your function.
+
+754
+00:54:41,428 --> 00:54:42,788
+What is your domain?
+
+755
+00:54:45,588 --> 00:55:17,988
+What is your domain for this function?
+
+756
+00:54:52,371 --> 00:55:07,531
+Okay, this is polynomial. This is polynomial. I have a root, but it is cube root. In the cube root, its domain is real number. So, domain of these functions is real number. It is continuous.
+
+757
+00:55:07,531 --> 00:55:25,051
+Okay, after that, I have to look at the endpoints. Okay, f0 is minus 1. f1 is 0, 2.
+
+758
+00:55:30,963 --> 00:55:38,804
+So, 0 is in this interval, yes. f0 is negative. 0 is here. f1 is here.
+
+759
+00:55:38,804 --> 00:55:51,983
+So, according to intermediate value theorem, I can say that at least 1c, it will be 0. It will be enough. Okay?
+
+760
+00:55:51,983 --> 00:56:01,324
+According to intermediate value theorem, we have
+
+761
+00:56:07,443 --> 00:56:19,764
+at least one c in the interval, where fc equals 0. Okay?
+
+762
+00:56:24,148 --> 00:56:29,108
+Okay, so if you don't have any question, I will take a break.
+
+763
+00:56:29,248 --> 00:56:33,688
+And after the break, we will continue our next subject derivation.
+
+764
+00:56:33,867 --> 00:56:34,048
+Okay?
+
+765
+00:56:36,008 --> 00:56:36,887
+Let's take a break.
+
+766
+00:56:37,068 --> 00:56:38,028
+Can I ask you something?
+
+767
+00:56:38,387 --> 00:56:38,887
+Yes, yes.
+
+768
+00:56:40,568 --> 00:56:48,228
+Before I ask you about its sine 1 over x multiplied by x limits goes to 0,
+
+769
+00:56:48,347 --> 00:56:50,827
+you say you can because it must be goes to infinity.
+
+770
+00:56:51,867 --> 00:56:52,347
+You remember?
+
+771
+00:56:52,347 --> 00:56:55,048
+1 over x?
+
+772
+00:56:56,248 --> 00:56:59,168
+x multiplied sine of 1 over x.
+
+773
+00:56:59,928 --> 00:57:00,548
+Yes.
+
+774
+00:57:01,268 --> 00:57:02,508
+x goes to where?
+
+775
+00:57:03,268 --> 00:57:03,688
+Infinity.
+
+776
+00:57:04,448 --> 00:57:05,008
+Yes.
+
+777
+00:57:05,288 --> 00:57:08,208
+Yes, x not 1 over x, this first one.
+
+778
+00:57:09,008 --> 00:57:10,307
+The first one is x?
+
+779
+00:57:10,588 --> 00:57:11,168
+X, yes.
+
+780
+00:57:11,688 --> 00:57:12,588
+Yes, one second.
+
+781
+00:57:14,248 --> 00:57:18,148
+If it is x, okay, let us see here.
+
+782
+00:57:18,148 --> 00:57:22,548
+Yeah, I say infinity product sine 0.
+
+783
+00:57:22,887 --> 00:57:24,327
+It is in determined form.
+
+784
+00:57:25,108 --> 00:57:25,288
+Yeah.
+
+785
+00:57:25,528 --> 00:57:29,367
+You say if the limit goes to 0, we can't say it's 1, yeah?
+
+786
+00:57:31,148 --> 00:57:34,668
+When x goes to 0, the same function.
+
+787
+00:57:34,668 --> 00:57:40,728
+Here in our nodes, you solve it sometimes.
+
+788
+00:57:40,827 --> 00:57:42,168
+When x goes to 0, it's 1.
+
+789
+00:57:43,788 --> 00:57:46,367
+One second.
+
+790
+00:57:46,367 --> 00:57:51,188
+x, okay.
+
+791
+00:57:51,188 --> 00:57:51,268
+Okay.
+
+792
+00:57:51,908 --> 00:57:52,488
+Zero, yeah?
+
+793
+00:57:52,847 --> 00:57:53,108
+Yes.
+
+794
+00:57:53,508 --> 00:57:54,408
+I gave you...
+
+795
+00:57:54,408 --> 00:57:54,728
+Take one.
+
+796
+00:57:56,108 --> 00:57:56,588
+Okay.
+
+797
+00:57:57,108 --> 00:57:58,048
+Let me write.
+
+798
+00:57:58,528 --> 00:58:00,948
+In the first week, I gave you three limits.
+
+799
+00:58:01,068 --> 00:58:01,268
+Okay.
+
+800
+00:58:01,268 --> 00:58:04,367
+The first one, sine x over x.
+
+801
+00:58:05,608 --> 00:58:06,928
+X goes to 0.
+
+802
+00:58:07,028 --> 00:58:08,088
+I gave this one.
+
+803
+00:58:08,867 --> 00:58:10,367
+After that, I gave...
+
+804
+00:58:10,367 --> 00:58:11,948
+Limit x goes to infinity.
+
+805
+00:58:13,168 --> 00:58:14,728
+Sine x over x.
+
+806
+00:58:15,688 --> 00:58:16,148
+Okay.
+
+807
+00:58:17,428 --> 00:58:20,268
+And lastly, I gave you...
+
+808
+00:58:20,268 --> 00:58:21,268
+...
+
+809
+00:58:31,539 --> 00:58:34,759
+Limit x goes to infinity.
+
+810
+00:58:35,139 --> 00:58:40,079
+Also I gain sin 1 over x over 1 over x.
+
+811
+00:58:40,139 --> 00:58:42,300
+You are talking about these three limits, I think.
+
+812
+00:58:43,699 --> 00:58:44,179
+Yeah.
+
+813
+00:58:44,300 --> 00:58:44,779
+Is there any one?
+
+814
+00:58:45,019 --> 00:58:45,300
+Okay.
+
+815
+00:58:46,059 --> 00:58:50,159
+So this limit, when I write 0, I have 0 over 0.
+
+816
+00:58:50,320 --> 00:58:51,840
+I have indetermined form.
+
+817
+00:58:52,019 --> 00:58:53,219
+So it will be 1.
+
+818
+00:58:54,219 --> 00:58:59,659
+In here, I have 1 over infinity product sin infinity.
+
+819
+00:59:00,239 --> 00:59:00,440
+Okay.
+
+820
+00:59:01,539 --> 00:59:02,400
+This is 0.
+
+821
+00:59:02,920 --> 00:59:08,279
+This is a number between minus 1 to 1, but there is a product, so the limit will be 0.
+
+822
+00:59:08,860 --> 00:59:14,639
+In here, sin 1 over infinity is 0, so it will be 0 over 0.
+
+823
+00:59:15,300 --> 00:59:17,639
+Then this limit also will be 1.
+
+824
+00:59:17,960 --> 00:59:22,000
+If you want to see why it is 1, you can use a simple transformation.
+
+825
+00:59:22,000 --> 00:59:29,239
+If you take 1 over x is t, this limit will be limit 1 over infinity is 0.
+
+826
+00:59:29,239 --> 00:59:32,699
+t goes to 0, it will be sin t over t.
+
+827
+00:59:33,900 --> 00:59:34,159
+Okay.
+
+828
+00:59:35,000 --> 00:59:36,800
+In that case, it will be 1.
+
+829
+00:59:36,900 --> 00:59:39,179
+These two limits, actually, they are the same.
+
+830
+00:59:39,179 --> 00:59:42,699
+But in the second one, it is different.
+
+831
+00:59:43,840 --> 00:59:45,980
+Because you don't have indetermined form.
+
+832
+00:59:47,039 --> 00:59:47,320
+Okay.
+
+833
+00:59:47,400 --> 00:59:55,940
+If you have indetermined form 0 over 0, if these two functions are the same, then it will be 1.
+
+834
+00:59:55,940 --> 01:00:00,539
+But if, for example, if you have 2x, if it is x, no.
+
+835
+01:00:00,820 --> 01:00:02,360
+You have to add here is 2.
+
+836
+01:00:02,539 --> 01:00:03,480
+You will have 2.
+
+837
+01:00:03,659 --> 01:00:05,500
+After that, this limit will be 1.
+
+838
+01:00:05,619 --> 01:00:05,860
+Okay?
+
+839
+01:00:07,719 --> 01:00:08,639
+Did you understand?
+
+840
+01:00:08,639 --> 01:00:09,840
+Yeah, I understand.
+
+841
+01:00:10,019 --> 01:00:13,539
+But because we have learned, if you have like this one.
+
+842
+01:00:14,159 --> 01:00:14,820
+Let me just...
+
+843
+01:00:14,820 --> 01:00:15,920
+You can write if you...
+
+844
+01:00:15,920 --> 01:00:24,059
+If you have this one, like this, but it's 0, you can say that this one is the same as this one.
+
+845
+01:00:24,139 --> 01:00:26,039
+And you say 1, like this.
+
+846
+01:00:28,360 --> 01:00:29,759
+You understand me?
+
+847
+01:00:29,759 --> 01:00:34,239
+The second one, if it goes to 0, it's f...
+
+848
+01:00:34,239 --> 01:00:36,659
+Sign of fx, on of x, it's 1.
+
+849
+01:00:36,800 --> 01:00:41,099
+You say that I write in one place, in somewhere.
+
+850
+01:00:41,860 --> 01:00:43,340
+Böyle mi yazdım yanlışlıkla yoksa?
+
+851
+01:00:43,779 --> 01:00:45,480
+You are talking about this one.
+
+852
+01:00:45,759 --> 01:00:47,000
+I said that it is 1?
+
+853
+01:00:47,840 --> 01:00:50,079
+No, you didn't say it's 1, but I...
+
+854
+01:00:50,079 --> 01:00:51,099
+You say that.
+
+855
+01:00:51,099 --> 01:00:52,779
+Something is similar to it.
+
+856
+01:00:52,960 --> 01:00:54,500
+You know, and they know it's something similar.
+
+857
+01:00:54,500 --> 01:00:59,880
+It's okay.
+
+858
+01:01:00,259 --> 01:01:03,159
+I'm going to change my information about it.
+
+859
+01:01:03,259 --> 01:01:03,599
+No problem.
+
+860
+01:01:03,920 --> 01:01:08,179
+You can write in the next lesson, or I can look at it.
+
+861
+01:01:08,239 --> 01:01:08,400
+Okay?
+
+862
+01:01:08,579 --> 01:01:08,880
+Okay.
+
+863
+01:01:08,960 --> 01:01:10,800
+Do you have any other examples?
+
+864
+01:01:10,980 --> 01:01:11,739
+Can I say something?
+
+865
+01:01:12,099 --> 01:01:13,059
+Yes, I'm listening.
+
+866
+01:01:13,559 --> 01:01:14,039
+Not at all.
+
+867
+01:01:14,699 --> 01:01:19,119
+When I say 1 over 0, I need to write infinity like equal?
+
+868
+01:01:19,980 --> 01:01:21,119
+1 over infinity?
+
+869
+01:01:22,239 --> 01:01:22,679
+No.
+
+870
+01:01:23,079 --> 01:01:23,900
+1 over 0.
+
+871
+01:01:24,500 --> 01:01:26,059
+1 over 0 is infinity.
+
+872
+01:01:27,699 --> 01:01:28,019
+Yes.
+
+873
+01:01:28,880 --> 01:01:29,199
+Right?
+
+874
+01:01:29,860 --> 01:01:30,239
+Yes.
+
+875
+01:01:30,840 --> 01:01:31,340
+Ah, okay.
+
+876
+01:01:31,840 --> 01:01:32,099
+Okay.
+
+877
+01:01:32,920 --> 01:01:33,460
+Not at all.
+
+878
+01:01:33,539 --> 01:01:34,119
+1 over infinity.
+
+879
+01:01:34,139 --> 01:01:35,139
+Can I ask something?
+
+880
+01:01:35,420 --> 01:01:35,759
+Yes.
+
+881
+01:01:35,820 --> 01:01:37,079
+About the last theorem?
+
+882
+01:01:37,199 --> 01:01:38,159
+It should be...
+
+883
+01:01:38,159 --> 01:01:42,340
+The last theorem, the last thing that we have...
+
+884
+01:01:44,480 --> 01:01:46,460
+It should be continue to use it.
+
+885
+01:01:46,820 --> 01:01:47,320
+Is that right?
+
+886
+01:01:48,279 --> 01:01:50,179
+About the last one.
+
+887
+01:01:50,920 --> 01:01:51,420
+Which one?
+
+888
+01:01:51,619 --> 01:01:53,279
+I have lots of things here.
+
+889
+01:01:53,279 --> 01:01:54,840
+You are talking about the last one.
+
+890
+01:01:54,840 --> 01:01:55,420
+About...
+
+891
+01:01:55,420 --> 01:01:55,679
+Yeah.
+
+892
+01:01:55,820 --> 01:01:56,840
+The thing that...
+
+893
+01:01:56,840 --> 01:01:59,840
+Ah, your voice is...
+
+894
+01:02:00,840 --> 01:02:01,960
+Not, not this.
+
+895
+01:02:02,759 --> 01:02:04,099
+The lesson about theorem.
+
+896
+01:02:04,820 --> 01:02:05,659
+It was...
+
+897
+01:02:05,659 --> 01:02:05,860
+Yeah.
+
+898
+01:02:07,139 --> 01:02:08,579
+The rule that we have taken now.
+
+899
+01:02:09,639 --> 01:02:10,920
+It should be continue to use it.
+
+900
+01:02:10,920 --> 01:02:12,179
+Yes.
+
+901
+01:02:12,340 --> 01:02:12,980
+For example...
+
+902
+01:02:12,980 --> 01:02:13,800
+About this example.
+
+903
+01:02:13,800 --> 01:02:15,300
+About...
+
+904
+01:02:15,300 --> 01:02:15,980
+About this example.
+
+905
+01:02:15,980 --> 01:02:23,980
+About...
+
+906
+01:02:23,980 --> 01:02:26,039
+The function is continuous at this interval.
+
+907
+01:02:26,804 --> 01:02:33,084
+Eğer bu konusunda kullanabilirsiniz, bu konusunda kullanabilirsiniz.
+
+908
+01:02:35,324 --> 01:02:38,284
+Bu konusunda kullanabilirsiniz.
+
+909
+01:02:38,963 --> 01:02:45,483
+Örneğin, bu konusunda kullanabilirsiniz.
+
+910
+01:02:45,483 --> 01:02:46,764
+Bu konusunda kullanabilirsiniz.
+
+911
+01:02:46,764 --> 01:02:50,523
+Örneğin, ekstansiyonu konusunda kullanabilirsiniz.
+
+912
+01:02:50,523 --> 01:02:52,403
+Ve bu konusunda kullanabilirsiniz.
+
+913
+01:02:52,403 --> 01:02:54,604
+Evet, evet.
+
+914
+01:02:54,604 --> 01:03:44,604
+Örneğin, bu konusunda kullanabilirsiniz.
+
+915
+01:03:37,268 --> 01:03:38,588
+Bir tane örnek yazayım.
+
+916
+01:03:38,728 --> 01:03:39,367
+For example.
+
+917
+01:03:40,447 --> 01:03:42,288
+X square minus 1 over.
+
+918
+01:03:43,347 --> 01:03:45,568
+X minus 1.
+
+919
+01:03:45,668 --> 01:03:46,327
+For example.
+
+920
+01:03:47,327 --> 01:03:48,947
+And I am asking.
+
+921
+01:03:49,487 --> 01:03:52,927
+Is it any root from 0 to.
+
+922
+01:03:54,927 --> 01:03:56,427
+2 for example.
+
+923
+01:03:56,708 --> 01:03:56,927
+Okay.
+
+924
+01:03:57,887 --> 01:03:59,987
+So if you look at your function.
+
+925
+01:03:59,987 --> 01:04:01,987
+We have problem at 1.
+
+926
+01:04:02,108 --> 01:04:03,367
+So it is not continuous.
+
+927
+01:04:03,668 --> 01:04:05,987
+But if you rewrite your function.
+
+928
+01:04:05,987 --> 01:04:07,327
+As.
+
+929
+01:04:08,648 --> 01:04:11,068
+X square minus 1 over.
+
+930
+01:04:11,228 --> 01:04:12,188
+X minus 1.
+
+931
+01:04:13,048 --> 01:04:15,028
+X not equal to 1.
+
+932
+01:04:15,548 --> 01:04:15,768
+Okay.
+
+933
+01:04:17,048 --> 01:04:18,927
+And if it is.
+
+934
+01:04:19,807 --> 01:04:21,967
+Bir iki oluyor heralde.
+
+935
+01:04:22,847 --> 01:04:24,487
+X equals 1.
+
+936
+01:04:25,588 --> 01:04:26,728
+Then you can.
+
+937
+01:04:26,728 --> 01:04:28,728
+Your new extended function.
+
+938
+01:04:29,427 --> 01:04:31,148
+Is continuous in the interval.
+
+939
+01:04:31,327 --> 01:04:32,148
+0 to 2.
+
+940
+01:04:33,048 --> 01:04:33,367
+Okay.
+
+941
+01:04:33,367 --> 01:04:34,588
+Then.
+
+942
+01:04:35,188 --> 01:04:36,447
+You can use.
+
+943
+01:04:36,608 --> 01:04:37,947
+Intermediate video theorem.
+
+944
+01:04:38,148 --> 01:04:39,148
+Of this function.
+
+945
+01:04:39,367 --> 01:04:39,608
+Okay.
+
+946
+01:04:41,307 --> 01:04:42,347
+So actually.
+
+947
+01:04:42,487 --> 01:04:43,327
+Your function.
+
+948
+01:04:43,487 --> 01:04:44,068
+Will be.
+
+949
+01:04:45,367 --> 01:04:46,628
+Çizimi nasıl olacak.
+
+950
+01:04:46,748 --> 01:04:47,807
+X artı 1 olacak.
+
+951
+01:04:49,208 --> 01:04:50,088
+İlk başta burası.
+
+952
+01:04:50,188 --> 01:04:51,507
+X artı 1 ile aynı olacak.
+
+953
+01:04:51,648 --> 01:04:52,347
+X sıfırken.
+
+954
+01:04:52,447 --> 01:04:53,128
+Y'si bir.
+
+955
+01:04:54,268 --> 01:04:55,407
+Y'si sıfırken.
+
+956
+01:04:55,507 --> 01:04:56,467
+X eksi bir.
+
+957
+01:04:56,467 --> 01:04:57,467
+X artı 1.
+
+958
+01:04:57,467 --> 01:04:58,467
+Y'i sıfırken.
+
+959
+01:04:58,467 --> 01:04:59,467
+X artı 1.
+
+960
+01:04:59,467 --> 01:04:59,648
+Y'i sıfırken.
+
+961
+01:04:59,648 --> 01:04:59,967
+X artı 1.
+
+962
+01:04:59,967 --> 01:05:00,467
+Y'i sıfırken.
+
+963
+01:05:00,467 --> 01:05:00,967
+X artı 1.
+
+964
+01:05:00,967 --> 01:05:01,467
+Y'i sıfırken.
+
+965
+01:05:01,467 --> 01:05:01,967
+X artı 1.
+
+966
+01:05:01,967 --> 01:05:02,467
+Y'i sıfırken.
+
+967
+01:05:02,467 --> 01:05:02,967
+X artı 1.
+
+968
+01:05:02,967 --> 01:05:08,967
+Y'i sıfırken.
+
+969
+01:05:05,972 --> 01:05:10,852
+sonra bire kadar böyle. O zaman şurasını alacağız sadece.
+
+970
+01:05:12,132 --> 01:05:15,211
+The graph will be this one, sorry.
+
+971
+01:05:17,772 --> 01:05:25,052
+Your extension will be here.
+
+972
+01:05:26,552 --> 01:05:31,292
+From 0 to 1, it will be here. And from 1 to here,
+
+973
+01:05:31,292 --> 01:05:37,732
+2 and from 0 to 2, it will be this one.
+
+974
+01:05:38,132 --> 01:05:38,312
+Okay.
+
+975
+01:05:38,452 --> 01:05:38,812
+Hocam.
+
+976
+01:05:39,412 --> 01:05:39,752
+Efendim.
+
+977
+01:05:40,732 --> 01:05:42,192
+Ara vermiş miydik?
+
+978
+01:05:42,492 --> 01:05:45,892
+Verdik, evet arkadaşlar. Verdik de ben arkadaşınızın sorusu cevaplıyorum.
+
+979
+01:05:46,632 --> 01:05:50,452
+Aradayız, aradayız. Arkadaşınız bir soru sormuş da onu cevaplıyorum. Aradayız şu an.
+
+980
+01:05:50,752 --> 01:05:51,692
+Tamamdır, teşekkürler.
+
+981
+01:05:52,012 --> 01:05:53,732
+Şey değil, ben de ara vereceğim zaten şimdi.
+
+982
+01:05:54,292 --> 01:05:55,512
+Okay, did you understand?
+
+983
+01:05:56,872 --> 01:05:57,732
+Yes, thank you.
+
+984
+01:05:57,732 --> 01:06:16,172
+At this function, let's take a break.
+
+985
+01:06:16,172 --> 01:06:16,192
+Okay, let's take a break.
+
+986
+01:06:16,192 --> 01:06:26,832
+Okay.
+
+987
+01:16:15,764 --> 01:16:22,404
+Okay, so let's start our new subject. Today I will start to talk about derivation, derivative.
+
+988
+01:16:24,163 --> 01:16:32,404
+Before that, the beginning of the derivative, we will see slope. In Turkish, you know that it is...
+
+989
+01:16:35,923 --> 01:16:37,423
+Türkçe, it is A.
+
+990
+01:16:39,344 --> 01:16:39,684
+Okey.
+
+991
+01:16:45,747 --> 01:16:49,768
+Now, first of all, I want to look at the graph of this function.
+
+992
+01:16:50,007 --> 01:16:50,147
+Okay.
+
+993
+01:16:50,967 --> 01:16:53,547
+So, let us take a function.
+
+994
+01:16:54,067 --> 01:16:55,647
+This is your function's graph.
+
+995
+01:16:55,787 --> 01:16:56,007
+Okay.
+
+996
+01:16:57,327 --> 01:17:00,447
+And let us take a point x0.
+
+997
+01:17:00,807 --> 01:17:04,427
+And very near to x0, let us take x0 plus h.
+
+998
+01:17:04,527 --> 01:17:06,207
+h is a very small number.
+
+999
+01:17:06,447 --> 01:17:09,647
+For example, 0.4 or something like that.
+
+1000
+01:17:09,707 --> 01:17:09,907
+Okay.
+
+1001
+01:17:10,707 --> 01:17:14,067
+Now, I will sketch two lines.
+
+1002
+01:17:14,067 --> 01:17:20,268
+The first one, the line passing from this point and this point.
+
+1003
+01:17:20,887 --> 01:17:28,027
+If you look at this line, let us find what is the slope of this line from the high school we learned it.
+
+1004
+01:17:28,367 --> 01:17:32,747
+It is a difference from y to x.
+
+1005
+01:17:34,047 --> 01:17:38,247
+So, the slope will be for the first line.
+
+1006
+01:17:38,247 --> 01:17:46,247
+It will be f x0 plus h minus f x0 over h.
+
+1007
+01:17:47,927 --> 01:17:49,667
+This is the slope of this line.
+
+1008
+01:17:49,667 --> 01:17:56,667
+The second one is...
+
+1009
+01:17:57,876 --> 01:18:07,936
+If I sketch a line which touch your exterior point, this is your line.
+
+1010
+01:18:07,936 --> 01:18:15,576
+And in your line, if you sketch a line like this also here, it will be 90.
+
+1011
+01:18:16,436 --> 01:18:20,016
+Burayı 90 derece bir açıyla kesen bir doğru çiziyoruz.
+
+1012
+01:18:20,536 --> 01:18:27,376
+So the slope of this line, I will write empty.
+
+1013
+01:18:27,876 --> 01:18:30,476
+Tangent line slope.
+
+1014
+01:18:30,476 --> 01:18:30,855
+Okay.
+
+1015
+01:18:31,815 --> 01:18:38,676
+Now, these two slopes are not equal to each other, but they are approximately near to each other.
+
+1016
+01:18:39,836 --> 01:18:47,275
+How can we take approximately equals to each other if I sketch this line very near?
+
+1017
+01:18:48,115 --> 01:18:54,456
+The difference, the error comes from the difference from this distance.
+
+1018
+01:18:54,695 --> 01:18:54,855
+Okay.
+
+1019
+01:18:54,855 --> 01:18:58,176
+It changes according to distance.
+
+1020
+01:18:58,896 --> 01:19:02,916
+If this distance is large, your error will be large.
+
+1021
+01:19:03,056 --> 01:19:14,876
+But if you take from here, for example, when you sketch this one, okay, if you look at these points, your line will be like this.
+
+1022
+01:19:14,876 --> 01:19:16,036
+Okay.
+
+1023
+01:19:16,556 --> 01:19:18,876
+The error here will be smaller.
+
+1024
+01:19:19,076 --> 01:19:23,815
+If you take h is this, your line will be very near to each other.
+
+1025
+01:19:23,815 --> 01:19:41,576
+So if I take limit h goes to zero, if I take h is a very small number near to zero, then I can say that these two slopes, I can take that they are equal to each other.
+
+1026
+01:19:41,576 --> 01:19:42,456
+Okay.
+
+1027
+01:19:42,456 --> 01:20:00,315
+So the tangent line, the slope actually, the slope of a curve at the point P x zero, f x zero, I can take as the difference of f, the difference of x when h goes to zero.
+
+1028
+01:20:00,315 --> 01:20:05,275
+So I can take this slope of this tangent line at this point.
+
+1029
+01:20:05,456 --> 01:20:09,836
+Bunların ikisini birbirine eşit alabiliyorum limit durumuna geldiğim zaman.
+
+1030
+01:20:09,836 --> 01:20:12,636
+Bu türev tanımıdır aynı zamanda.
+
+1031
+01:20:12,855 --> 01:20:17,976
+It is also, it is called formal definition of derivation at one point.
+
+1032
+01:20:18,636 --> 01:20:22,456
+From this slope, I can write the tangent line equation.
+
+1033
+01:20:22,456 --> 01:20:23,056
+Okay.
+
+1034
+01:20:23,256 --> 01:20:24,996
+What is your tangent line?
+
+1035
+01:20:25,195 --> 01:20:39,676
+Means that tangent line is the line where, this is your point, tangent line will be where this line,
+
+1036
+01:20:39,836 --> 01:20:41,115
+is the line from this point.
+
+1037
+01:20:41,115 --> 01:20:42,655
+This is tangent line.
+
+1038
+01:20:46,579 --> 01:20:49,260
+And we have one concept, normal line.
+
+1039
+01:20:51,079 --> 01:21:04,000
+Normal line means where tangent x and normal line, tangent line and normal line, the angle is 90.
+
+1040
+01:21:04,000 --> 01:21:04,600
+Okay.
+
+1041
+01:21:06,119 --> 01:21:07,760
+This is normal line.
+
+1042
+01:21:08,579 --> 01:21:10,279
+This is tangent line.
+
+1043
+01:21:10,760 --> 01:21:10,899
+Okay.
+
+1044
+01:21:12,559 --> 01:21:14,000
+Tangent line is a function?
+
+1045
+01:21:15,100 --> 01:21:15,739
+Is a line.
+
+1046
+01:21:15,739 --> 01:21:19,680
+Tangent line is the line of the function.
+
+1047
+01:21:23,039 --> 01:21:23,720
+Okay.
+
+1048
+01:21:23,859 --> 01:21:25,319
+Tangent line is this.
+
+1049
+01:21:26,000 --> 01:21:26,180
+Okay.
+
+1050
+01:21:26,720 --> 01:21:28,819
+For example, this is your function.
+
+1051
+01:21:28,819 --> 01:21:34,819
+And if I want to find tangent line, tangent line is the line where here.
+
+1052
+01:21:35,779 --> 01:21:37,119
+This is tangent line.
+
+1053
+01:21:37,619 --> 01:21:40,739
+And this is your normal line.
+
+1054
+01:21:40,939 --> 01:21:43,279
+And between these two lines, the angle is 90.
+
+1055
+01:21:43,600 --> 01:21:44,819
+Okay.
+
+1056
+01:21:44,819 --> 01:21:50,039
+And I think tangent line equals the slope of the function.
+
+1057
+01:21:50,500 --> 01:21:51,619
+Yes.
+
+1058
+01:21:52,340 --> 01:21:52,640
+No.
+
+1059
+01:21:53,079 --> 01:21:55,840
+Tangent line slope is empty.
+
+1060
+01:21:56,300 --> 01:21:56,519
+Yes.
+
+1061
+01:21:58,019 --> 01:22:02,340
+Empty tangent line slope will be f prime.
+
+1062
+01:22:02,340 --> 01:22:02,859
+X zero.
+
+1063
+01:22:02,859 --> 01:22:03,460
+Okay.
+
+1064
+01:22:03,460 --> 01:22:05,000
+X zero.
+
+1065
+01:22:05,340 --> 01:22:05,579
+Okay.
+
+1066
+01:22:08,300 --> 01:22:08,859
+X zero.
+
+1067
+01:22:08,920 --> 01:22:09,359
+What does it?
+
+1068
+01:22:09,420 --> 01:22:09,840
+X zero.
+
+1069
+01:22:10,079 --> 01:22:11,600
+X zero is the given point.
+
+1070
+01:22:11,859 --> 01:22:15,399
+Is the given point.
+
+1071
+01:22:15,500 --> 01:22:17,640
+Let me show the example.
+
+1072
+01:22:17,939 --> 01:22:18,559
+One second.
+
+1073
+01:22:18,559 --> 01:22:33,180
+Is the given point.
+
+1074
+01:22:39,636 --> 01:22:45,276
+Okay, for example, they can ask this example. Okay.
+
+1075
+01:22:46,956 --> 01:22:53,276
+Find the equation for the tangent. Actually, they are talking about tangent line. Okay.
+
+1076
+01:22:54,196 --> 01:22:56,476
+They are asking the tangent line
+
+1077
+01:22:56,476 --> 01:23:05,796
+of the curve. This is your function. This is your point. Here is x0, this is 1, y0 is this. Okay.
+
+1078
+01:23:05,796 --> 01:23:09,596
+I will give an example.
+
+1079
+01:23:11,876 --> 01:23:14,716
+Basit bir örnek yapacağım gibi söylemişik.
+
+1080
+01:23:15,716 --> 01:23:20,396
+Okay. One second. I want to make an easy example for this type of question.
+
+1081
+01:23:26,452 --> 01:23:50,532
+Our question is find the tangent and normal lines of fx is for example.
+
+1082
+01:23:50,532 --> 01:23:58,292
+Let's make an easy example x square.
+
+1083
+01:23:58,292 --> 01:24:00,372
+Okay, last one.
+
+1084
+01:24:00,372 --> 01:24:07,572
+Add the point x equals 2 for example.
+
+1085
+01:24:07,572 --> 01:24:13,412
+Okay, find the tangent and normal lines of this function at the point 2.
+
+1086
+01:24:13,412 --> 01:24:24,692
+So, if I want to write the tangent and normal line, the general written of a line is y minus y0.
+
+1087
+01:24:26,452 --> 01:24:30,931
+The slope m, x minus x0.
+
+1088
+01:24:30,931 --> 01:24:35,972
+This is a normal written of a line.
+
+1089
+01:24:35,972 --> 01:24:41,172
+If I write empty, this is the formula for tangent line.
+
+1090
+01:24:41,172 --> 01:24:45,891
+Okay, here in our question x0 is the given point is 2.
+
+1091
+01:24:47,252 --> 01:24:52,931
+y0 is when I write x equals 2 in your function, it will be 5.
+
+1092
+01:24:54,771 --> 01:24:57,332
+Only I have to find what is empty.
+
+1093
+01:24:57,332 --> 01:25:05,652
+So, empty will be limit h goes to 0.
+
+1094
+01:25:06,931 --> 01:25:12,292
+Actually, you can take the derivation directly, but in here I want to give the formal definition.
+
+1095
+01:25:12,292 --> 01:25:15,572
+f, our point is 2.
+
+1096
+01:25:15,572 --> 01:25:20,292
+It will be 2 plus h minus f2.
+
+1097
+01:25:20,292 --> 01:25:27,012
+This is the difference when you come from 2 to 2 plus h over h.
+
+1098
+01:25:28,052 --> 01:25:32,132
+This is your slope at this function at this point also.
+
+1099
+01:25:33,012 --> 01:25:41,891
+So, let us write here limit h goes to 0.
+
+1100
+01:25:42,260 --> 01:25:47,159
+So, I will write 2 plus h in the function here.
+
+1101
+01:25:48,220 --> 01:26:01,140
+And it will be 2 plus h square plus 1 minus what is f2?
+
+1102
+01:26:01,140 --> 01:26:04,619
+We find f2 is 5 over h.
+
+1103
+01:26:04,619 --> 01:26:09,340
+So, we will have limit h goes to 0.
+
+1104
+01:26:11,260 --> 01:26:19,699
+4 plus 4 h plus h square minus 4 over h.
+
+1105
+01:26:21,159 --> 01:26:22,619
+So, I can...
+
+1106
+01:26:24,619 --> 01:26:26,180
+This is 0.
+
+1107
+01:26:26,640 --> 01:26:30,739
+I can cancel 1 h from here, here and here.
+
+1108
+01:26:31,520 --> 01:26:33,860
+I have 4 plus h.
+
+1109
+01:26:34,619 --> 01:26:36,380
+h goes to 0.
+
+1110
+01:26:36,380 --> 01:26:37,920
+The result will be 4.
+
+1111
+01:26:38,079 --> 01:26:41,239
+So, the slope for this point is 4.
+
+1112
+01:26:43,640 --> 01:26:44,159
+Okay?
+
+1113
+01:26:44,760 --> 01:26:45,560
+No, no, no.
+
+1114
+01:26:45,880 --> 01:26:49,140
+Teacher, the exam is a multiple choice, isn't it?
+
+1115
+01:26:51,020 --> 01:26:52,000
+Multiple choice?
+
+1116
+01:26:52,440 --> 01:26:53,480
+Yeah, because it's online.
+
+1117
+01:26:53,579 --> 01:26:55,760
+I don't think we can write all of this.
+
+1118
+01:26:58,600 --> 01:26:59,119
+Okay.
+
+1119
+01:26:59,619 --> 01:27:00,300
+One second.
+
+1120
+01:27:00,880 --> 01:27:03,420
+Yes, you are talking in the exam, I think.
+
+1121
+01:27:03,420 --> 01:27:06,960
+Yeah, in the shorter way to do this one.
+
+1122
+01:27:06,960 --> 01:27:09,340
+Yes, yes, you can use the short way.
+
+1123
+01:27:09,500 --> 01:27:13,000
+But we didn't talk about derivation directly.
+
+1124
+01:27:13,380 --> 01:27:14,380
+Okay, one second.
+
+1125
+01:27:14,560 --> 01:27:15,420
+I want to...
+
+1126
+01:27:16,079 --> 01:27:16,860
+Can I ask something?
+
+1127
+01:27:16,920 --> 01:27:18,820
+Empty is the slope.
+
+1128
+01:27:18,900 --> 01:27:19,440
+Is that right?
+
+1129
+01:27:19,560 --> 01:27:19,820
+Empty?
+
+1130
+01:27:20,560 --> 01:27:21,560
+Yes, yes, slope.
+
+1131
+01:27:21,680 --> 01:27:23,079
+Yes, it is slope.
+
+1132
+01:27:23,140 --> 01:27:25,600
+Okay, one second.
+
+1133
+01:27:25,600 --> 01:27:33,739
+It is the slope of the tangent line slope.
+
+1134
+01:27:33,739 --> 01:27:35,480
+Tangent line slope.
+
+1135
+01:27:35,480 --> 01:27:36,100
+Yes, yes.
+
+1136
+01:27:36,619 --> 01:27:37,239
+One second.
+
+1137
+01:27:37,400 --> 01:27:40,140
+I want to show you one thing.
+
+1138
+01:27:41,020 --> 01:27:41,940
+Okay, one second.
+
+1139
+01:27:41,940 --> 01:27:58,480
+I want to show you one thing.
+
+1140
+01:28:06,804 --> 01:28:33,364
+I haven't finished, but this is your test sample. Okay. I want to show you how can you see here. For example, in the previous, in the summer school, we asked this kind of questions. For example, the questions are different, but for example, here, I gave you some table. Okay.
+
+1141
+01:28:33,364 --> 01:28:51,663
+You see, I think. And according to table, I can ask you some questions. For example, this, the fifth question is related to tangent line. Which of the following is the tangent line of this function at the point x equals to, for example? Okay.
+
+1142
+01:28:51,663 --> 01:29:13,663
+In this example, in this example, in this example, in here, I showed the formal definition, but normally you don't need to, but you have to know the formal definition of derivation. It will be important. Why? Because, for example, in here, there is a question related to...
+
+1143
+01:29:13,663 --> 01:29:23,663
+...
+
+1144
+01:29:20,627 --> 01:29:21,347
+gibi bir soru var.
+
+1145
+01:29:27,347 --> 01:29:28,467
+For example here.
+
+1146
+01:29:29,207 --> 01:29:32,547
+You have to know also the formal definition of derivation.
+
+1147
+01:29:32,707 --> 01:29:35,847
+This question is related to formal definition for example.
+
+1148
+01:29:37,047 --> 01:29:42,347
+So I am making this question using formal definition but normally you can find directly.
+
+1149
+01:29:43,068 --> 01:29:46,408
+But this is a good example using the formal definition.
+
+1150
+01:29:47,127 --> 01:29:54,608
+Normalde tabi ki bu soruda hemen bulabilirsiniz ama ben bunu özellikle formal definition'a yapıyorum ki alışın diye.
+
+1151
+01:29:54,608 --> 01:29:56,347
+Çünkü onunla ilgili sorular da gelebiliyor.
+
+1152
+01:29:56,347 --> 01:29:57,948
+Mesela ikinci soru.
+
+1153
+01:29:57,988 --> 01:29:58,807
+Onunla alakalı.
+
+1154
+01:29:58,948 --> 01:30:01,247
+Siz formal definition'ı bilmiyorsanız yapamazsınız.
+
+1155
+01:30:02,148 --> 01:30:03,827
+Bunu bitirmedim daha.
+
+1156
+01:30:04,207 --> 01:30:05,427
+Bitirince size vereceğim.
+
+1157
+01:30:06,287 --> 01:30:07,707
+Şu an kaç soru olmuş?
+
+1158
+01:30:07,948 --> 01:30:09,247
+14 soru oldu.
+
+1159
+01:30:09,387 --> 01:30:12,547
+Bu sadece bizim konularımızla alakalı olanlar.
+
+1160
+01:30:13,167 --> 01:30:16,467
+Birkaç tanesini daha işlemedik gerçi ama türevle alakalı yine.
+
+1161
+01:30:17,327 --> 01:30:18,688
+Ben biraz daha hazırlayayım size.
+
+1162
+01:30:18,787 --> 01:30:20,148
+Bugün ya da yarın bunu koyacağım.
+
+1163
+01:30:20,608 --> 01:30:21,728
+Uğraşırsınız çözmeye.
+
+1164
+01:30:21,847 --> 01:30:23,827
+Daha domen ile ilgili birkaç bir şey daha koyacağım.
+
+1165
+01:30:23,827 --> 01:30:25,807
+Nasıl? Bakın bakalım sorular nasıl?
+
+1166
+01:30:25,807 --> 01:30:26,587
+Şöyle bir.
+
+1167
+01:30:28,247 --> 01:30:29,787
+Yani bence çok güzel oldu.
+
+1168
+01:30:30,427 --> 01:30:30,988
+Bunu düşünüyorum.
+
+1169
+01:30:31,087 --> 01:30:32,768
+Mesela bakın tamamen yorum sorusu.
+
+1170
+01:30:34,387 --> 01:30:35,627
+Mesela bu güzel bir soru.
+
+1171
+01:30:36,387 --> 01:30:37,787
+Biraz uğraştım bunun için.
+
+1172
+01:30:38,327 --> 01:30:39,507
+Tavla okuyarak.
+
+1173
+01:30:39,507 --> 01:30:40,507
+İzlediğiniz için.
+
+1174
+01:30:40,507 --> 01:30:41,287
+Bu soru.
+
+1175
+01:30:41,287 --> 01:30:42,287
+bir soru.
+
+1176
+01:30:42,287 --> 01:31:12,287
+Bu soru.
+
+1177
+01:31:12,287 --> 01:31:14,287
+Hocam yapamadıklarımız sorabilir miyiz size?
+
+1178
+01:31:14,287 --> 01:31:16,287
+Yoksa beraber çözecek miyiz bunu?
+
+1179
+01:31:16,287 --> 01:31:17,287
+Beraber çözeceğiz tabii.
+
+1180
+01:31:17,287 --> 01:31:19,287
+Ama ben size bir vereyim.
+
+1181
+01:31:19,287 --> 01:31:21,287
+Siz kendiniz önce biraz uğraşın.
+
+1182
+01:31:21,287 --> 01:31:23,287
+Bunların hepsini ben çözeceğim zaten size.
+
+1183
+01:31:23,287 --> 01:31:24,287
+Ama hani şey.
+
+1184
+01:31:24,287 --> 01:31:25,287
+Siz bir uğraşın.
+
+1185
+01:31:25,287 --> 01:31:28,287
+Çünkü sınavda karşınıza geldiğimde ya bu nasıl falan diye şey yapmayın.
+
+1186
+01:31:28,287 --> 01:31:29,287
+Ben çözerim.
+
+1187
+01:31:29,287 --> 01:31:31,287
+Ama ben çözdüğüm zaman öğrenemezsiniz.
+
+1188
+01:31:31,287 --> 01:31:33,287
+Önce biraz uğraşmanız lazım.
+
+1189
+01:31:33,287 --> 01:31:35,287
+Özellikle cevaplarını vermiyorum.
+
+1190
+01:31:35,287 --> 01:31:36,287
+Mesela bu soru.
+
+1191
+01:31:36,287 --> 01:31:37,287
+Şey değil.
+
+1192
+01:31:37,287 --> 01:31:40,287
+Bu soru.
+
+1193
+01:31:40,287 --> 01:31:41,287
+Bu soru çok özellikle.
+
+1194
+01:31:41,287 --> 01:33:48,287
+Bu soru.
+
+1195
+01:33:26,899 --> 01:33:29,279
+F1'e de bu şekilde bir tanze.
+
+1196
+01:33:29,399 --> 01:33:31,019
+F1'e de bu tanze.
+
+1197
+01:33:31,019 --> 01:33:34,239
+Bu tanze.
+
+1198
+01:33:34,979 --> 01:33:36,019
+Ve bu tanze.
+
+1199
+01:33:36,019 --> 01:33:51,319
+Bu tanze.
+
+1200
+01:33:51,319 --> 01:33:52,939
+Our point.
+
+1201
+01:33:53,019 --> 01:33:53,679
+X0 point.
+
+1202
+01:33:53,679 --> 01:33:54,279
+Is 1.
+
+1203
+01:33:54,399 --> 01:33:55,500
+So I will have.
+
+1204
+01:33:56,019 --> 01:33:57,579
+F1 plus H.
+
+1205
+01:33:58,399 --> 01:33:59,119
+Minus.
+
+1206
+01:33:59,279 --> 01:34:00,000
+F1.
+
+1207
+01:34:00,639 --> 01:34:01,319
+Over H.
+
+1208
+01:34:02,059 --> 01:34:03,699
+This is the formal definition.
+
+1209
+01:34:03,899 --> 01:34:04,159
+Okay.
+
+1210
+01:34:04,719 --> 01:34:05,139
+So.
+
+1211
+01:34:05,799 --> 01:34:06,559
+Limit.
+
+1212
+01:34:07,759 --> 01:34:09,139
+H goes to 0.
+
+1213
+01:34:11,960 --> 01:34:12,719
+Sine.
+
+1214
+01:34:16,212 --> 01:34:28,992
+ln1 plus h minus f1, if I write 1 here, ln1 is 0, sin0 is 0, over h.
+
+1215
+01:34:30,232 --> 01:34:32,732
+So, I have to find this limit.
+
+1216
+01:34:33,732 --> 01:34:39,032
+Limit h goes to 0, sin,
+
+1217
+01:34:43,252 --> 01:34:48,752
+ln1 plus h over h. How can you solve this limit?
+
+1218
+01:35:00,435 --> 01:35:30,435
+İlk başta, x'e 0'
+
+1219
+01:35:30,435 --> 01:36:25,515
+0'e 0'
+
+1220
+01:36:30,612 --> 01:36:34,332
+I want to add an n1 plus h here.
+
+1221
+01:36:34,332 --> 01:36:36,851
+If I add, I have to write the same thing here.
+
+1222
+01:36:38,931 --> 01:36:40,931
+And also I have h.
+
+1223
+01:36:41,612 --> 01:36:43,212
+Now this limit is 1.
+
+1224
+01:36:43,572 --> 01:36:45,132
+This limit is also 1.
+
+1225
+01:36:45,192 --> 01:36:49,731
+There is another formula which I gave in that paper.
+
+1226
+01:36:50,172 --> 01:36:52,172
+Okay, this limit also will be 1.
+
+1227
+01:36:52,391 --> 01:36:54,292
+So our limit will be 1.
+
+1228
+01:36:54,391 --> 01:36:55,672
+Our slope is 1.
+
+1229
+01:36:55,672 --> 01:37:01,591
+So our tangent line will be y minus y0 is 0.
+
+1230
+01:37:03,452 --> 01:37:07,112
+Our tangent slope is 1.
+
+1231
+01:37:08,152 --> 01:37:11,431
+x minus rx0 here is 1.
+
+1232
+01:37:12,931 --> 01:37:15,391
+This is our tangent line.
+
+1233
+01:37:15,931 --> 01:37:20,692
+If I want to write also normal line, it will be y minus 0.
+
+1234
+01:37:20,692 --> 01:37:28,712
+The slope of the normal line, the product mt and mn will be minus 1.
+
+1235
+01:37:30,471 --> 01:37:31,731
+This is 1.
+
+1236
+01:37:32,011 --> 01:37:33,992
+So mn will be minus 1.
+
+1237
+01:37:34,132 --> 01:37:36,091
+It will be minus x minus 1.
+
+1238
+01:37:37,051 --> 01:37:38,452
+Hocam bir şey sorabilir miyim?
+
+1239
+01:37:38,672 --> 01:37:39,072
+Efendim?
+
+1240
+01:37:39,891 --> 01:37:44,311
+Bu sinus için yazdığımız olay tangent'ta da aynı şekilde miydi?
+
+1241
+01:37:44,311 --> 01:37:45,872
+Yoksa biraz daha fonçom olur.
+
+1242
+01:37:45,891 --> 01:37:49,492
+Sinus, tangent, arksinus.
+
+1243
+01:37:49,971 --> 01:37:50,712
+Üçünde de aynı.
+
+1244
+01:37:53,912 --> 01:37:56,192
+Üçünde de aynısını yapabiliyorsunuz.
+
+1245
+01:37:56,792 --> 01:37:58,452
+Şunu da göstereyim.
+
+1246
+01:38:00,032 --> 01:38:01,792
+You are asking about limit.
+
+1247
+01:38:01,931 --> 01:38:03,551
+I gave you some properties.
+
+1248
+01:38:04,051 --> 01:38:06,872
+This is here.
+
+1249
+01:38:09,091 --> 01:38:09,692
+Okay?
+
+1250
+01:38:10,471 --> 01:38:11,672
+This comes from here.
+
+1251
+01:38:11,672 --> 01:38:18,591
+Hirely is an internet and why we bought minus in the normal line.
+
+1252
+01:38:19,752 --> 01:38:27,692
+Because there is a relation between tangent and normal line slope is mn product.
+
+1253
+01:38:27,912 --> 01:38:31,011
+Mt is minus 1 because of the orthogonality.
+
+1254
+01:38:31,292 --> 01:38:31,471
+Okay?
+
+1255
+01:38:32,032 --> 01:38:34,591
+Tangent line, normal line, the angle is 90.
+
+1256
+01:38:35,091 --> 01:38:35,431
+Okay?
+
+1257
+01:38:35,431 --> 01:38:39,891
+So in our question, I find mt here is 1.
+
+1258
+01:38:40,011 --> 01:38:42,992
+If mt is 1, mn has to be minus 1.
+
+1259
+01:38:43,011 --> 01:38:45,192
+I think it's the perpendicular.
+
+1260
+01:38:45,832 --> 01:38:46,612
+Yes, perpendicular.
+
+1261
+01:38:46,891 --> 01:38:47,072
+Yes.
+
+1262
+01:38:47,192 --> 01:38:47,532
+Okay.
+
+1263
+01:38:50,231 --> 01:38:54,511
+Hocam, y-0, 1-x-1 kısmını tekrar eder misiniz?
+
+1264
+01:38:55,792 --> 01:38:56,731
+Şurayı mı diyorsun?
+
+1265
+01:38:58,891 --> 01:38:59,271
+Burayı diyorsun?
+
+1266
+01:38:59,271 --> 01:38:59,771
+That's the perpendicular.
+
+1267
+01:39:00,292 --> 01:39:00,832
+Come on.
+
+1268
+01:39:01,452 --> 01:39:01,872
+Okay.
+
+1269
+01:39:02,011 --> 01:39:07,192
+So if you want to write the tangent line, the general formula for a line is...
+
+1270
+01:39:07,192 --> 01:39:16,971
+y-y0 slope x-x0.
+
+1271
+01:39:16,971 --> 01:39:19,292
+This is the general formula for a line.
+
+1272
+01:39:19,792 --> 01:39:19,952
+Okay?
+
+1273
+01:39:20,271 --> 01:39:25,231
+Here in our example, x0 and y0 is this.
+
+1274
+01:39:25,391 --> 01:39:26,471
+X0 is 1.
+
+1275
+01:39:27,311 --> 01:39:27,652
+Okay?
+
+1276
+01:39:27,792 --> 01:39:29,011
+X0 is 1.
+
+1277
+01:39:30,032 --> 01:39:31,311
+Y0, they give it.
+
+1278
+01:39:31,391 --> 01:39:32,092
+It is 0.
+
+1279
+01:39:32,091 --> 01:39:34,771
+This is the slope.
+
+1280
+01:39:34,872 --> 01:39:38,072
+If I want to write for the tangent line, it will be mt.
+
+1281
+01:39:38,212 --> 01:39:40,771
+Mt is the derivation.
+
+1282
+01:39:41,712 --> 01:39:43,431
+And we find that it is 1.
+
+1283
+01:39:44,752 --> 01:39:48,511
+So the tangent line will be y-0.
+
+1284
+01:39:49,572 --> 01:39:53,612
+1 product x-1 is the tangent line.
+
+1285
+01:39:53,612 --> 01:40:02,072
+But if I want to write the normal line equation, I said that there is a relation between tangent line and normal line.
+
+1286
+01:40:02,152 --> 01:40:04,112
+The product will be minus 1.
+
+1287
+01:40:05,072 --> 01:40:06,492
+I find this is 1.
+
+1288
+01:40:06,612 --> 01:40:09,672
+So our normal line slope will be minus 1.
+
+1289
+01:40:10,431 --> 01:40:13,712
+So for the normal line, it will be y-0.
+
+1290
+01:40:14,792 --> 01:40:16,811
+The slope here is minus 1.
+
+1291
+01:40:17,032 --> 01:40:20,011
+x-1 is your normal line.
+
+1292
+01:40:20,591 --> 01:40:21,891
+This is tangent line.
+
+1293
+01:40:21,891 --> 01:40:22,212
+Okay?
+
+1294
+01:40:23,391 --> 01:40:27,212
+Bir genel denklem yazmak istiyorsak, genel denklem böyle yazılıyor.
+
+1295
+01:40:27,811 --> 01:40:28,011
+Okay?
+
+1296
+01:40:29,351 --> 01:40:30,051
+Teşekkür ederim hocam.
+
+1297
+01:40:30,036 --> 01:40:41,895
+x kare artı 3x, f'
+
+1298
+01:40:39,028 --> 01:40:45,268
+Okay, now let us see what happens if I want to find a general derivation.
+
+1299
+01:40:46,068 --> 01:40:49,988
+You can use the formula for the slope at any point, okay?
+
+1300
+01:40:53,268 --> 01:41:00,307
+If I want to find derivation, derivative of a function, I can take x0 as a general point
+
+1301
+01:41:00,307 --> 01:41:10,387
+and our definition will be f prime x, the derivation of f, any point will be limit h goes to 0.
+
+1302
+01:41:11,588 --> 01:41:19,807
+Normally, in the slope, it was x0 plus h because I have a point, but if you want a general point,
+
+1303
+01:41:19,927 --> 01:41:23,588
+it will be x plus h minus fx over h.
+
+1304
+01:41:24,188 --> 01:41:27,228
+This is the formal definition of derivative, okay?
+
+1305
+01:41:27,228 --> 01:41:32,028
+This formula will be important in the questions also.
+
+1306
+01:41:33,007 --> 01:41:41,168
+If f prime x exists, then you can say that fx is differentiable at the point x.
+
+1307
+01:41:41,688 --> 01:41:47,328
+But if the function have derivation at every point in your domain,
+
+1308
+01:41:47,708 --> 01:41:51,028
+then you can say that this function is differentiable.
+
+1309
+01:41:52,347 --> 01:41:53,548
+Yani türevlenebilir.
+
+1310
+01:41:53,548 --> 01:41:59,668
+Bir noktada türevlenebilirlik olabilir ya da domeynin hepsindeyse o zaman tamamen türevlenebilir bir fonksiyon diyoruz.
+
+1311
+01:42:00,528 --> 01:42:03,568
+And in some cases, we can see this formula also.
+
+1312
+01:42:03,688 --> 01:42:05,748
+I will show you later in an example.
+
+1313
+01:42:06,887 --> 01:42:11,228
+You can write your derivation also like this.
+
+1314
+01:42:11,328 --> 01:42:12,408
+That goes to x.
+
+1315
+01:42:13,128 --> 01:42:16,128
+fz minus fx over z minus x.
+
+1316
+01:42:16,128 --> 01:42:17,988
+You can write one point for example.
+
+1317
+01:42:19,728 --> 01:42:21,887
+You can write f prime.
+
+1318
+01:42:27,268 --> 01:42:32,988
+For example, we can write limits that goes to 2.
+
+1319
+01:42:33,208 --> 01:42:42,507
+You can write also fz minus f2 over z minus 2.
+
+1320
+01:42:42,507 --> 01:42:44,868
+Okay?
+
+1321
+01:42:45,328 --> 01:42:47,208
+But you don't need to look at it now.
+
+1322
+01:42:47,307 --> 01:42:48,967
+I will give you an example.
+
+1323
+01:42:49,347 --> 01:42:50,728
+In some cases, you will need.
+
+1324
+01:42:52,128 --> 01:42:52,568
+Okay.
+
+1325
+01:42:52,967 --> 01:42:56,368
+So you can see derivation in some different mutations,
+
+1326
+01:42:56,648 --> 01:42:59,448
+especially in the financial equation lesson next year.
+
+1327
+01:42:59,448 --> 01:43:06,507
+So f prime x, you can write or you can see y prime x.
+
+1328
+01:43:07,347 --> 01:43:10,608
+Or you can see as dy over dx.
+
+1329
+01:43:10,748 --> 01:43:12,768
+Especially you will see this expression.
+
+1330
+01:43:13,007 --> 01:43:13,228
+Okay?
+
+1331
+01:43:14,048 --> 01:43:16,847
+dy dx means the first derivation of y.
+
+1332
+01:43:16,847 --> 01:43:25,628
+d cube y over dx cube means the third derivation of y.
+
+1333
+01:43:25,628 --> 01:43:26,967
+Okay?
+
+1334
+01:43:28,347 --> 01:43:31,408
+And also you don't need to look at actually x.
+
+1335
+01:43:31,967 --> 01:43:34,068
+We have also differential operator.
+
+1336
+01:43:34,328 --> 01:43:36,288
+d means differential operator.
+
+1337
+01:43:36,448 --> 01:43:36,768
+Okay?
+
+1338
+01:43:37,148 --> 01:43:40,007
+It is differential operator.
+
+1339
+01:43:41,588 --> 01:43:45,408
+When you product differential operator with a function,
+
+1340
+01:43:45,988 --> 01:43:50,387
+it means that it is a derivation of this function.
+
+1341
+01:43:50,387 --> 01:43:51,128
+Okay?
+
+1342
+01:43:51,908 --> 01:43:54,588
+If you have d cube or d4,
+
+1343
+01:43:55,188 --> 01:43:57,268
+and when you product with a function,
+
+1344
+01:43:57,408 --> 01:44:01,347
+it means that the fourth derivation of this function.
+
+1345
+01:44:02,007 --> 01:44:04,007
+d türevi operatori diyoruz.
+
+1346
+01:44:04,168 --> 01:44:05,887
+Hangi fonksiyonla çarpıyorsunuz,
+
+1347
+01:44:05,887 --> 01:44:06,807
+onun türevini alır.
+
+1348
+01:44:07,328 --> 01:44:09,807
+d'nin bir kuvveti varsa o kadar türevini alır.
+
+1349
+01:44:10,347 --> 01:44:12,748
+And we will see this differential operator,
+
+1350
+01:44:12,988 --> 01:44:14,887
+especially in differential equations,
+
+1351
+01:44:15,108 --> 01:44:15,868
+in the next year.
+
+1352
+01:44:15,927 --> 01:44:16,128
+Okay?
+
+1353
+01:44:16,128 --> 01:44:16,228
+Okay.
+
+1354
+01:44:20,595 --> 01:44:25,715
+Okay, now I want to solve some questions about formal definition, okay?
+
+1355
+01:44:27,855 --> 01:44:30,175
+Let us start with this one, okay?
+
+1356
+01:44:31,195 --> 01:44:36,335
+Find the derivation of this function using formal definition of derivation, okay?
+
+1357
+01:44:37,375 --> 01:44:38,655
+So what is that?
+
+1358
+01:44:38,655 --> 01:44:48,955
+If I want to find f prime x, okay, it is limit h goes to 0.
+
+1359
+01:44:50,595 --> 01:44:59,975
+I have to give an increase on fx plus h minus fx over h.
+
+1360
+01:45:00,075 --> 01:45:01,415
+This is the formal definition.
+
+1361
+01:45:01,415 --> 01:45:06,095
+Now let us apply this derivation formula in our function.
+
+1362
+01:45:07,455 --> 01:45:09,275
+Limit h goes to 0.
+
+1363
+01:45:11,995 --> 01:45:15,895
+I will write x plus h in here and here.
+
+1364
+01:45:15,895 --> 01:45:30,775
+x plus h over x plus h minus 1 minus, I will write the function x over x minus 1 over h, okay?
+
+1365
+01:45:31,795 --> 01:45:39,535
+Now let us product these two parts and let us write in one denominator.
+
+1366
+01:45:39,535 --> 01:45:44,815
+It will be limit h goes to 0.
+
+1367
+01:45:47,035 --> 01:45:49,755
+I will product the first one is this.
+
+1368
+01:45:49,755 --> 01:45:58,235
+x square plus x h minus x minus h.
+
+1369
+01:45:58,555 --> 01:46:01,635
+Now let us product this one and the sign will be negative.
+
+1370
+01:46:01,635 --> 01:46:07,995
+x square minus x h plus x.
+
+1371
+01:46:09,375 --> 01:46:11,635
+And in our denominator I have x.
+
+1372
+01:46:12,215 --> 01:46:19,035
+I have x plus h minus 1 and also I have x minus 1, okay?
+
+1373
+01:46:20,315 --> 01:46:21,115
+Paydayışletik.
+
+1374
+01:46:22,495 --> 01:46:24,195
+Okay, so.
+
+1375
+01:46:24,195 --> 01:46:52,195
+I have x.
+
+1376
+01:46:36,404 --> 01:46:38,624
+X²-X².
+
+1377
+01:46:39,424 --> 01:46:42,264
+XH-XH.
+
+1378
+01:46:43,044 --> 01:46:45,524
+Minus X plus X.
+
+1379
+01:46:46,044 --> 01:46:49,164
+Also I can cancel H and H here.
+
+1380
+01:46:49,664 --> 01:46:53,644
+So I will have only limit H goes to 0.
+
+1381
+01:46:56,064 --> 01:46:59,424
+In your numerator I have only minus 1.
+
+1382
+01:47:00,024 --> 01:47:06,324
+In here I have X plus H minus 1 and X minus 1.
+
+1383
+01:47:07,004 --> 01:47:08,504
+Now we don't have any problem.
+
+1384
+01:47:08,664 --> 01:47:10,244
+I can write H is 0.
+
+1385
+01:47:10,504 --> 01:47:17,864
+So the result will be minus 1 over X minus 1².
+
+1386
+01:47:20,004 --> 01:47:20,684
+Okay.
+
+1387
+01:47:21,264 --> 01:47:24,424
+This is the derivation of F using the formal definition.
+
+1388
+01:47:25,424 --> 01:47:26,684
+Do you have any question here?
+
+1389
+01:47:26,684 --> 01:47:31,484
+Hocam, payredaki H'yi yok ettim.
+
+1390
+01:47:31,484 --> 01:47:33,324
+Hayır'ı yok ettim.
+
+1391
+01:47:33,444 --> 01:47:36,304
+Şurada ve şurada.
+
+1392
+01:47:38,604 --> 01:47:39,584
+Burada şu kaldı.
+
+1393
+01:47:39,904 --> 01:47:40,624
+Şu kaldı.
+
+1394
+01:47:42,104 --> 01:47:42,304
+Tamam.
+
+1395
+01:47:43,044 --> 01:47:44,124
+Şunlar kaldı.
+
+1396
+01:47:45,084 --> 01:47:46,064
+Bunda bunu yok ettim.
+
+1397
+01:47:46,064 --> 01:47:47,084
+Okay.
+
+1398
+01:47:48,644 --> 01:47:51,724
+Actually in your numerator you have minus H.
+
+1399
+01:47:51,844 --> 01:47:53,624
+In your denominator you have H.
+
+1400
+01:47:53,844 --> 01:47:56,244
+And two parenthesis.
+
+1401
+01:47:56,824 --> 01:47:57,924
+I cancel here.
+
+1402
+01:47:58,284 --> 01:47:58,444
+Okay.
+
+1403
+01:47:58,444 --> 01:48:02,044
+So let us make another example.
+
+1404
+01:48:02,044 --> 01:48:16,244
+Okay.
+
+1405
+01:48:07,475 --> 01:48:31,795
+Let us look at this example also. Okay? Find the derivation using the formal definition. So, f' x will be limit h goes to 0, f x plus h minus f x over h. Okay?
+
+1406
+01:48:31,795 --> 01:48:55,155
+So, it will be limit h goes to 0. I will write x plus h in the function 1 plus x plus h square in the square root function minus 1 plus x square over h.
+
+1407
+01:48:55,155 --> 01:49:08,815
+Now, I have to find this limit. And when I write h is 0, I will have 0 over 0. So, how can we solve this kind of limit? We see in the previous lessons. What I can do here?
+
+1408
+01:49:10,055 --> 01:49:17,955
+I have to product with the conjugate. What is the conjugate of this function? The functions will be the same.
+
+1409
+01:49:21,427 --> 01:49:25,127
+But the sign between these two roots will be different.
+
+1410
+01:49:25,127 --> 01:49:29,387
+It will be plus 1 plus x square.
+
+1411
+01:49:30,188 --> 01:49:33,188
+And I have to write the same function here also.
+
+1412
+01:49:33,728 --> 01:49:36,528
+x1 plus x plus h square.
+
+1413
+01:49:38,247 --> 01:49:40,887
+And 1 plus x square.
+
+1414
+01:49:42,967 --> 01:49:46,108
+Now, if you product these two functions,
+
+1415
+01:49:46,108 --> 01:49:52,807
+you will have, without the square root,
+
+1416
+01:49:53,247 --> 01:50:01,927
+I will have 1 plus x plus h square minus 1 plus x square.
+
+1417
+01:50:03,688 --> 01:50:07,247
+Over h and the conjugate.
+
+1418
+01:50:07,528 --> 01:50:08,467
+I don't want to write.
+
+1419
+01:50:09,648 --> 01:50:12,407
+Because I have a minus b,
+
+1420
+01:50:12,407 --> 01:50:15,827
+I product with the conjugate a plus b.
+
+1421
+01:50:16,108 --> 01:50:21,327
+In the results, I will have a square minus b square.
+
+1422
+01:50:21,867 --> 01:50:24,827
+Okay, so if you open your numerator,
+
+1423
+01:50:25,507 --> 01:50:26,827
+I will have,
+
+1424
+01:50:27,728 --> 01:50:29,608
+sorry, h goes to 0.
+
+1425
+01:50:31,228 --> 01:50:31,568
+Okay.
+
+1426
+01:50:33,747 --> 01:50:36,528
+1 plus x square.
+
+1427
+01:50:36,528 --> 01:50:45,768
+plus 2xh plus h square minus 1 minus x square.
+
+1428
+01:50:45,927 --> 01:50:48,148
+I have h and the conjugate.
+
+1429
+01:50:49,287 --> 01:50:52,307
+Okay.
+
+1430
+01:50:52,707 --> 01:50:52,907
+So,
+
+1431
+01:50:53,907 --> 01:50:55,268
+1 minus 1.
+
+1432
+01:50:55,268 --> 01:50:59,028
+x square minus x square here.
+
+1433
+01:50:59,028 --> 01:51:01,887
+I will cancel h here.
+
+1434
+01:51:02,988 --> 01:51:04,768
+And 1h here.
+
+1435
+01:51:05,488 --> 01:51:05,648
+So,
+
+1436
+01:51:05,787 --> 01:51:06,407
+in the last,
+
+1437
+01:51:06,528 --> 01:51:07,188
+we will have,
+
+1438
+01:51:07,847 --> 01:51:09,747
+limit h goes to 0.
+
+1439
+01:51:09,747 --> 01:51:14,407
+I have 2x plus h square.
+
+1440
+01:51:14,407 --> 01:51:14,967
+So,
+
+1441
+01:51:14,967 --> 01:51:16,467
+I have 2x plus h.
+
+1442
+01:51:16,467 --> 01:51:21,467
+And here I have conjugate 1 plus x plus h square.
+
+1443
+01:51:21,467 --> 01:51:28,387
+plus 1 plus x square.
+
+1444
+01:51:28,387 --> 01:51:28,948
+Okay.
+
+1445
+01:51:29,587 --> 01:51:30,127
+So,
+
+1446
+01:51:30,228 --> 01:51:32,327
+I can write h equals 0 here.
+
+1447
+01:51:32,407 --> 01:51:34,108
+Because we don't have any problem.
+
+1448
+01:51:34,847 --> 01:51:34,988
+So,
+
+1449
+01:51:35,148 --> 01:51:35,747
+in the last,
+
+1450
+01:51:35,847 --> 01:51:37,948
+I will have 2x in your numerator.
+
+1451
+01:51:38,188 --> 01:51:39,268
+And in your denominator,
+
+1452
+01:51:39,688 --> 01:51:41,247
+I have 2,
+
+1453
+01:51:41,507 --> 01:51:43,967
+1 plus x square.
+
+1454
+01:51:43,967 --> 01:51:45,807
+And at last,
+
+1455
+01:51:45,867 --> 01:51:47,127
+you can cancel 2 also.
+
+1456
+01:51:47,387 --> 01:51:47,587
+Okay.
+
+1457
+01:51:49,047 --> 01:51:49,448
+Actually,
+
+1458
+01:51:49,528 --> 01:51:51,007
+you can find the derivation directly.
+
+1459
+01:51:51,188 --> 01:51:51,387
+But,
+
+1460
+01:51:51,927 --> 01:51:52,728
+in here,
+
+1461
+01:51:52,827 --> 01:51:55,488
+I show how can we use the formal definition.
+
+1462
+01:51:56,528 --> 01:51:57,488
+In some questions,
+
+1463
+01:51:57,587 --> 01:51:58,448
+you will need also.
+
+1464
+01:51:58,627 --> 01:51:58,807
+Okay.
+
+1465
+01:52:00,488 --> 01:52:01,648
+Do you have any questions?
+
+1466
+01:52:01,927 --> 01:52:02,807
+It is not difficult.
+
+1467
+01:52:04,488 --> 01:52:04,967
+Okay.
+
+1468
+01:52:05,068 --> 01:52:07,127
+That's all I think about here.
+
+1469
+01:52:11,444 --> 01:52:13,024
+Sonra ne yapmıştık?
+
+1470
+01:52:13,984 --> 01:52:16,624
+You can see more questions also here.
+
+1471
+01:52:16,784 --> 01:52:19,144
+There is one more question you can look at.
+
+1472
+01:52:20,644 --> 01:52:21,584
+Bunu da yaptım.
+
+1473
+01:52:22,384 --> 01:52:22,764
+Okay.
+
+1474
+01:52:23,164 --> 01:52:28,104
+Now, I want to talk about one-sided derivation.
+
+1475
+01:52:29,404 --> 01:52:34,584
+In limit and in continuity, we see one-sided limit and one-sided continuity.
+
+1476
+01:52:35,444 --> 01:52:40,304
+It is similar with one-sided derivation.
+
+1477
+01:52:40,304 --> 01:52:44,804
+A function is differentiable on an open interval.
+
+1478
+01:52:45,524 --> 01:52:48,664
+Fx is differentiable on an open interval.
+
+1479
+01:52:48,844 --> 01:52:51,484
+We will look at the derivation on the open interval.
+
+1480
+01:52:52,784 --> 01:52:53,224
+Okay.
+
+1481
+01:52:53,664 --> 01:52:57,344
+If it has derivation at each point of the interval.
+
+1482
+01:52:58,364 --> 01:53:01,884
+It is differentiable on a closed interval A to the B.
+
+1483
+01:53:02,544 --> 01:53:06,004
+If it is differentiable in the interior point.
+
+1484
+01:53:06,604 --> 01:53:09,344
+And also you have to investigate the end points.
+
+1485
+01:53:09,344 --> 01:53:12,244
+If you look at this one.
+
+1486
+01:53:12,384 --> 01:53:16,224
+I have to investigate A and B one-sided.
+
+1487
+01:53:16,364 --> 01:53:21,164
+Because I have the points bigger than A1.
+
+1488
+01:53:21,364 --> 01:53:25,524
+So only I can talk about at the left-end points.
+
+1489
+01:53:25,524 --> 01:53:30,484
+I can talk about right-side derivation at A.
+
+1490
+01:53:31,284 --> 01:53:33,024
+It is H goes to 0.
+
+1491
+01:53:33,704 --> 01:53:38,364
+A H plus A plus H over F A over A.
+
+1492
+01:53:38,444 --> 01:53:40,284
+This is right-side.
+
+1493
+01:53:40,464 --> 01:53:41,984
+Right-hand or right-side.
+
+1494
+01:53:42,224 --> 01:53:42,364
+Okay.
+
+1495
+01:53:42,364 --> 01:53:49,144
+So at this point only I can talk about right-side derivation.
+
+1496
+01:53:49,584 --> 01:53:51,784
+If you want to talk about B.
+
+1497
+01:53:54,884 --> 01:53:56,844
+If I want to talk about B.
+
+1498
+01:53:56,923 --> 01:54:02,864
+I can talk about left-side derivation.
+
+1499
+01:54:02,864 --> 01:54:05,524
+The sign here will be 0.
+
+1500
+01:54:05,824 --> 01:54:07,284
+The other part will be the same.
+
+1501
+01:54:08,584 --> 01:54:08,944
+Okay.
+
+1502
+01:54:09,464 --> 01:54:11,384
+So let us look at this function.
+
+1503
+01:54:11,384 --> 01:54:12,384
+Okay.
+
+1504
+01:54:12,384 --> 01:54:14,284
+So let us look at this function.
+
+1505
+01:54:14,284 --> 01:54:14,384
+Okay.
+
+1506
+01:54:14,384 --> 01:54:16,284
+So let us look at this function.
+
+1507
+01:54:16,284 --> 01:54:16,384
+Okay.
+
+1508
+01:54:16,384 --> 01:54:17,224
+So let us look at this function.
+
+1509
+01:54:17,224 --> 01:54:18,324
+Okay.
+
+1510
+01:54:18,324 --> 01:54:19,264
+So let us look at this function.
+
+1511
+01:54:19,264 --> 01:54:20,324
+Okay.
+
+1512
+01:54:20,324 --> 01:54:21,264
+So let us look at this function.
+
+1513
+01:54:21,264 --> 01:54:22,324
+Okay.
+
+1514
+01:54:22,324 --> 01:54:23,324
+So let us look at this function.
+
+1515
+01:54:23,324 --> 01:54:24,324
+Okay.
+
+1516
+01:54:24,324 --> 01:54:25,324
+So let us look at this function.
+
+1517
+01:54:25,324 --> 01:54:26,324
+Okay.
+
+1518
+01:54:26,324 --> 01:54:27,324
+So let us look at this function.
+
+1519
+01:54:27,324 --> 01:54:28,324
+Okay.
+
+1520
+01:54:28,324 --> 01:54:29,264
+So let us look at this function.
+
+1521
+01:54:16,627 --> 01:54:23,427
+Okay, so if you look at your question, your domain is zero to infinity. Okay.
+
+1522
+01:54:28,340 --> 01:54:43,300
+So, for interior points, I can use the formula, okay? So, for the interior points, 0, x is greater than 0, or if you'll be interior points, I can use the formula definition.
+
+1523
+01:54:43,539 --> 01:54:52,720
+It is limit h goes to 0, x plus h minus x over h. After that, I have to product with the conjugate here.
+
+1524
+01:54:52,720 --> 01:55:01,720
+x plus h plus square root x. This is your formula gate.
+
+1525
+01:55:07,956 --> 01:55:21,036
+If I product with the conjugate, it will be x plus h minus x, it will be h. So h over h and the conjugate.
+
+1526
+01:55:27,956 --> 01:55:39,956
+So, I can cancel this one. So, I will have only this one. And if I write h is 0, your derivation will be 1 over 2x, square root x. Okay?
+
+1527
+01:55:43,572 --> 01:55:47,212
+They said that you will find the derivation.
+
+1528
+01:55:48,692 --> 01:55:52,172
+And here they ask that investigated derivation,
+
+1529
+01:55:53,271 --> 01:55:55,112
+differentiation derivation are the same.
+
+1530
+01:55:55,712 --> 01:56:02,152
+Investigated differentiation of this function at x equals 0.
+
+1531
+01:56:02,771 --> 01:56:03,572
+Okay.
+
+1532
+01:56:03,891 --> 01:56:09,992
+If they ask differentiation at only one point, okay, at the point 0,
+
+1533
+01:56:09,992 --> 01:56:15,811
+I know that this function's domain is 0 to infinity.
+
+1534
+01:56:16,731 --> 01:56:21,872
+If I want to investigate derivation, differentiation at the point 0,
+
+1535
+01:56:21,971 --> 01:56:28,752
+only I have to investigate from 0 to right side.
+
+1536
+01:56:29,051 --> 01:56:33,792
+Because it is an endpoint, only I have to investigate one-sided derivation.
+
+1537
+01:56:33,792 --> 01:56:39,152
+So only I have to investigate for 0 from the right side,
+
+1538
+01:56:39,152 --> 01:56:42,112
+it will be 0 plus h minus 0 over h.
+
+1539
+01:56:43,011 --> 01:56:47,632
+It will be square root h over h.
+
+1540
+01:56:48,032 --> 01:56:50,351
+It will be 1 over square root h.
+
+1541
+01:56:50,752 --> 01:56:52,132
+It will be infinity.
+
+1542
+01:56:52,372 --> 01:56:53,992
+But what about the sign?
+
+1543
+01:56:54,811 --> 01:56:57,112
+0 comes for the right side.
+
+1544
+01:56:57,231 --> 01:56:59,172
+It will be positive infinity.
+
+1545
+01:56:59,332 --> 01:57:01,792
+But if it is minus, it will be minus infinity.
+
+1546
+01:57:02,532 --> 01:57:05,692
+So right-hand limit is not finite.
+
+1547
+01:57:06,311 --> 01:57:07,152
+It is not finite.
+
+1548
+01:57:07,152 --> 01:57:12,452
+So there is no derivation at the point 0 here.
+
+1549
+01:57:12,632 --> 01:57:12,912
+Okay.
+
+1550
+01:57:15,231 --> 01:57:16,592
+Do you have any question?
+
+1551
+01:57:17,872 --> 01:57:21,811
+Why there is no derivation?
+
+1552
+01:57:21,912 --> 01:57:24,672
+Because at the point, limit is infinity.
+
+1553
+01:57:24,872 --> 01:57:27,271
+What is the definition of derivation?
+
+1554
+01:57:27,271 --> 01:57:32,452
+If you want to talk about derivation, we have three concepts.
+
+1555
+01:57:32,612 --> 01:57:34,112
+Limit, continuity, derivation.
+
+1556
+01:57:34,811 --> 01:57:41,152
+If you want to have derivation, first at the point, you need to have limit, continuity.
+
+1557
+01:57:41,592 --> 01:57:43,672
+After that, you can talk about derivation.
+
+1558
+01:57:43,672 --> 01:57:53,731
+But when you take the derivation here, f prime 0 from the right side not exists.
+
+1559
+01:57:55,292 --> 01:57:55,572
+Okay.
+
+1560
+01:57:55,572 --> 01:58:10,551
+The function, if you look at the function, we have limit, we have continuity, but we don't have derivation because this is f prime 0 from the right side.
+
+1561
+01:58:10,712 --> 01:58:11,792
+And it is infinite.
+
+1562
+01:58:11,952 --> 01:58:12,832
+It is not a number.
+
+1563
+01:58:12,832 --> 01:58:14,572
+So we don't have any derivation.
+
+1564
+01:58:14,572 --> 01:58:14,891
+Okay?
+
+1565
+01:58:17,592 --> 01:58:18,992
+Okay.
+
+1566
+01:58:19,311 --> 01:58:20,971
+Because it is discontinuity.
+
+1567
+01:58:23,551 --> 01:58:24,072
+Discontinuity.
+
+1568
+01:58:26,271 --> 01:58:27,692
+Actually, it is continuous.
+
+1569
+01:58:27,832 --> 01:58:29,372
+No, we don't have discontinuity.
+
+1570
+01:58:30,511 --> 01:58:32,032
+This is your function.
+
+1571
+01:58:32,351 --> 01:58:36,252
+Your function at point, your domain is 0 to infinity.
+
+1572
+01:58:36,252 --> 01:58:39,271
+You don't have any discontinuity.
+
+1573
+01:58:39,551 --> 01:58:42,692
+You have problem at derivation.
+
+1574
+01:58:43,072 --> 01:58:48,112
+If you take the derivation of the function directly, it is 1 over 2 squared of x.
+
+1575
+01:58:48,492 --> 01:58:48,792
+Okay?
+
+1576
+01:58:49,492 --> 01:58:50,032
+Actually.
+
+1577
+01:58:50,851 --> 01:58:53,771
+So you can easily see that we have problem at 0.
+
+1578
+01:58:53,771 --> 01:58:58,752
+We don't have derivation because the derivation at the point will be infinity.
+
+1579
+01:58:59,832 --> 01:58:59,912
+Okay?
+
+1580
+01:59:01,332 --> 01:59:04,771
+Okay.
+
+1581
+01:59:05,152 --> 01:59:08,231
+So I note some notes here.
+
+1582
+01:59:08,712 --> 01:59:17,832
+If you have absolute value function I talked about before, in the absolute value function, it is not differentiable at the origin.
+
+1583
+01:59:18,652 --> 01:59:22,212
+If you have any graph, okay, let me sketch a function.
+
+1584
+01:59:22,412 --> 01:59:24,192
+For example, this is your graph.
+
+1585
+01:59:24,652 --> 01:59:26,551
+And if you have like this.
+
+1586
+01:59:26,551 --> 01:59:32,092
+If you have cusp, here is cusp and here.
+
+1587
+01:59:32,612 --> 01:59:33,532
+Sivri uç nokta.
+
+1588
+01:59:33,612 --> 01:59:40,891
+If you have this kind of shapes in your graph, at this point, at this point, your function is not differentiable.
+
+1589
+01:59:40,992 --> 01:59:41,271
+Okay?
+
+1590
+01:59:41,351 --> 01:59:41,952
+In the graph.
+
+1591
+01:59:41,952 --> 01:59:42,011
+Okay.
+
+1592
+01:59:42,011 --> 01:59:42,032
+In the graph.
+
+1593
+01:59:42,484 --> 01:59:46,584
+In the graph questions you can easily see that for example like this.
+
+1594
+01:59:48,284 --> 01:59:52,604
+At this point it is cusp and it is not differentiable.
+
+1595
+01:59:52,604 --> 01:59:57,244
+If they give some questions about graphs it will be useful.
+
+1596
+01:59:57,824 --> 02:00:00,604
+At this point your function is not differentiable.
+
+1597
+02:00:02,064 --> 02:00:04,664
+Okay this point is called cusp.
+
+1598
+02:00:10,244 --> 02:00:12,164
+Okay in Turkey.
+
+1599
+02:00:12,484 --> 02:00:19,484
+If the graph is a series of uclu yerler is not differentiable.
+
+1600
+02:00:19,484 --> 02:00:23,484
+And also square of x is not differentiable at the originals we talked about before.
+
+1601
+02:00:23,484 --> 02:00:27,484
+Differentiable that means derivation?
+
+1602
+02:00:27,484 --> 02:00:29,484
+Yes yes yes.
+
+1603
+02:00:29,484 --> 02:00:31,484
+Türevlenebilir demek in Turkish.
+
+1604
+02:00:31,484 --> 02:00:32,484
+Yes.
+
+1605
+02:00:32,484 --> 02:00:36,484
+Differentiation and differentiable means derivation.
+
+1606
+02:00:36,484 --> 02:00:40,484
+Yes.
+
+1607
+02:00:40,484 --> 02:00:41,484
+Okay.
+
+1608
+02:01:41,484 --> 02:01:42,484
+And then the graph is continuous at one.
+
+1609
+02:01:42,484 --> 02:01:43,484
+Okay.
+
+1610
+02:01:43,484 --> 02:01:48,484
+Now I can continue to investigate the derivation.
+
+1611
+02:01:48,484 --> 02:01:49,484
+Okay.
+
+1612
+02:01:49,484 --> 02:01:53,484
+Before that you have to be sure that it has to be continuous.
+
+1613
+02:01:53,484 --> 02:01:54,484
+Okay.
+
+1614
+02:02:24,484 --> 02:02:31,484
+So I will cancel x and I will write 1 plus h square minus 2 minus f1.
+
+1615
+02:02:31,484 --> 02:02:32,484
+f1.
+
+1616
+02:02:32,484 --> 02:02:36,484
+f1 is 1 minus 2 here over h.
+
+1617
+02:02:36,484 --> 02:02:38,484
+And our limit is 2.
+
+1618
+02:02:38,484 --> 02:02:39,484
+And the limit is 2.
+
+1619
+02:02:39,484 --> 02:02:41,484
+So I will cancel x and I will write 1 plus h here.
+
+1620
+02:02:41,484 --> 02:02:45,484
+Minus f1 will be 2 minus 3 here.
+
+1621
+02:02:45,484 --> 02:02:47,484
+And the limit is 2.
+
+1622
+02:02:47,484 --> 02:02:52,484
+So left side and right side derivation are equal to each other.
+
+1623
+02:02:52,484 --> 02:02:53,484
+Then f prime 1 will be 2.
+
+1624
+02:02:53,484 --> 02:02:58,484
+So the function is differentiable at 1.
+
+1625
+02:02:58,484 --> 02:02:59,484
+And the derivation at the point 1 is 2 here.
+
+1626
+02:02:59,484 --> 02:03:00,484
+Okay.
+
+1627
+02:03:00,484 --> 02:03:05,484
+But first of all, you have to investigate according to continuity.
+
+1628
+02:03:05,484 --> 02:03:06,484
+After that you can continue.
+
+1629
+02:03:06,484 --> 02:03:07,484
+Okay.
+
+1630
+02:03:07,484 --> 02:03:08,484
+Let me show you another example.
+
+1631
+02:03:08,484 --> 02:03:09,484
+Okay.
+
+1632
+02:03:09,484 --> 02:03:10,484
+Let us look at this example.
+
+1633
+02:03:10,484 --> 02:03:12,484
+Find f prime 0 if f prime 1 is 2.
+
+1634
+02:03:12,484 --> 02:03:13,484
+So f prime 1 will be 2.
+
+1635
+02:03:13,484 --> 02:03:14,484
+So the function is differentiable at 1.
+
+1636
+02:03:14,484 --> 02:03:17,484
+And the derivation at the point 1 is 2 here.
+
+1637
+02:03:17,484 --> 02:03:18,484
+Okay.
+
+1638
+02:03:18,484 --> 02:03:23,484
+But first of all, you have to investigate according to continuity.
+
+1639
+02:03:23,484 --> 02:03:25,484
+After that you can continue.
+
+1640
+02:03:25,484 --> 02:03:26,484
+Okay.
+
+1641
+02:03:26,484 --> 02:03:30,484
+Let me show you another example.
+
+1642
+02:03:30,484 --> 02:03:31,484
+Okay.
+
+1643
+02:03:31,484 --> 02:03:34,484
+Let us look at this example.
+
+1644
+02:03:34,484 --> 02:03:38,484
+Find f prime 0 if it exists.
+
+1645
+02:03:39,923 --> 02:03:49,083
+I said that if you want to talk about derivation differentiable, first of all you have to be sure that your function is continuous at 0.
+
+1646
+02:03:49,903 --> 02:03:59,243
+So, limit x goes to 0. From the left side, our function is 1 minus 1 minus x.
+
+1647
+02:03:59,863 --> 02:04:03,923
+At 0, we don't have any problem. When I write 0, the limit is 0.
+
+1648
+02:04:03,923 --> 02:04:12,344
+Limit x goes to 0. From the right side, our function is ln 2 plus x.
+
+1649
+02:04:13,203 --> 02:04:19,104
+And the result is ln 2. They are not equal to each other. It means that no limit.
+
+1650
+02:04:21,024 --> 02:04:27,484
+It means that no continuity. It means that no derivation.
+
+1651
+02:04:27,484 --> 02:04:35,123
+Because we don't have limit. If we don't have limit, it is not continuous.
+
+1652
+02:04:35,844 --> 02:04:39,863
+If it is not continuous, we don't have derivation at this point.
+
+1653
+02:04:40,264 --> 02:04:40,283
+Ok?
+
+1654
+02:04:41,564 --> 02:04:45,684
+En alttaki yoksa otomatikman yukarıdakiler tabii ki olamayacak.
+
+1655
+02:04:46,583 --> 02:04:50,104
+Limit olmadığı için sürekli değil. Dolayısıyla aynı zamanda türevlenemez.
+
+1656
+02:04:50,184 --> 02:04:51,863
+Dolayısıyla hiçbir şey yapmanıza gerek yok.
+
+1657
+02:04:52,484 --> 02:04:54,484
+Öncelik süreklilikten başlayacaksınız.
+
+1658
+02:04:54,484 --> 02:04:57,123
+Zaten limite bakınca otomatikman oradan çıkıyor.
+
+1659
+02:04:59,123 --> 02:04:59,743
+Ok?
+
+1660
+02:05:06,804 --> 02:05:08,644
+Tamam bu üç örneği yapıp bitireceğiz.
+
+1661
+02:05:09,184 --> 02:05:11,543
+Okay, let us look at these examples.
+
+1662
+02:05:12,564 --> 02:05:17,163
+For what value of A and B, this function is differentiable.
+
+1663
+02:05:17,503 --> 02:05:19,824
+It means that it has derivation at zero.
+
+1664
+02:05:21,104 --> 02:05:21,364
+Okay.
+
+1665
+02:05:22,764 --> 02:05:27,224
+In here, they give that this function is differentiable.
+
+1666
+02:05:27,604 --> 02:05:29,163
+It means that it is continuous.
+
+1667
+02:05:29,684 --> 02:05:32,844
+Okay, they give that this function is differentiable.
+
+1668
+02:05:32,844 --> 02:05:38,043
+It means that it is continuous and also we have limit at point zero.
+
+1669
+02:05:39,024 --> 02:05:50,364
+So, I can say that limit x goes to zero from the left side will be equals to limit x goes to zero from the right side.
+
+1670
+02:05:51,304 --> 02:05:53,344
+The left side R function is this.
+
+1671
+02:05:54,043 --> 02:05:58,364
+A sine x plus b.
+
+1672
+02:05:58,944 --> 02:06:01,163
+So, it means that it is b.
+
+1673
+02:06:02,844 --> 02:06:04,043
+sine zero is zero.
+
+1674
+02:06:04,503 --> 02:06:06,123
+What about the right side?
+
+1675
+02:06:06,264 --> 02:06:07,123
+It is x.
+
+1676
+02:06:07,404 --> 02:06:08,344
+It is one.
+
+1677
+02:06:09,703 --> 02:06:15,623
+Since we have limit from here, I can determine that b is zero.
+
+1678
+02:06:18,444 --> 02:06:18,864
+Okay.
+
+1679
+02:06:21,083 --> 02:06:23,064
+Also, it is equals to f zero.
+
+1680
+02:06:23,064 --> 02:06:27,384
+From the continuity, I determine b is zero.
+
+1681
+02:06:28,184 --> 02:06:34,423
+Now, from the derivation, they said that it is also differentiable.
+
+1682
+02:06:34,623 --> 02:06:41,783
+It means that f prime zero from the left side will be equals to f prime zero from the right side.
+
+1683
+02:06:41,783 --> 02:06:43,184
+Okay.
+
+1684
+02:06:43,844 --> 02:06:46,444
+So, let us continue from here.
+
+1685
+02:06:47,663 --> 02:06:51,064
+So, I have to find f prime zero from the left side.
+
+1686
+02:06:51,724 --> 02:06:55,484
+Our function was a sine x plus b.
+
+1687
+02:06:55,623 --> 02:06:57,324
+But I find b is zero.
+
+1688
+02:06:57,484 --> 02:06:59,003
+You don't need to take this one.
+
+1689
+02:06:59,123 --> 02:07:02,623
+Only I have to take this function.
+
+1690
+02:07:02,623 --> 02:07:07,944
+a sine zero plus h minus f zero is zero over h.
+
+1691
+02:07:08,923 --> 02:07:15,024
+So, I have here a sine h over h.
+
+1692
+02:07:16,283 --> 02:07:17,783
+Limit h goes to zero.
+
+1693
+02:07:17,904 --> 02:07:19,083
+This limit is one.
+
+1694
+02:07:19,243 --> 02:07:20,564
+So, the result will be a.
+
+1695
+02:07:20,564 --> 02:07:24,764
+From the right side, our function only x.
+
+1696
+02:07:25,224 --> 02:07:28,444
+So, I will write zero plus h minus zero over h.
+
+1697
+02:07:28,804 --> 02:07:30,923
+I can cancel this one and one.
+
+1698
+02:07:31,904 --> 02:07:35,764
+Since it is differentiable, a has to be equals to one.
+
+1699
+02:07:35,764 --> 02:07:40,604
+So, we find a from the derivation of this function.
+
+1700
+02:07:41,243 --> 02:07:41,503
+Okay.
+
+1701
+02:07:43,384 --> 02:07:44,304
+Did you understand?
+
+1702
+02:07:45,104 --> 02:07:49,203
+From the continuity, I determine b is zero here.
+
+1703
+02:07:49,203 --> 02:07:54,583
+And from the derivation, because they said that it is a differentiable function h zero.
+
+1704
+02:07:55,203 --> 02:07:58,844
+I take derivation from the left side and from the right side.
+
+1705
+02:07:59,144 --> 02:08:01,064
+It has to be equals to each other.
+
+1706
+02:08:01,423 --> 02:08:04,224
+Then a will be one from here.
+
+1707
+02:08:07,324 --> 02:08:07,884
+Okay.
+
+1708
+02:08:09,404 --> 02:08:11,684
+Now, let us look at this question.
+
+1709
+02:08:13,043 --> 02:08:14,804
+Investigate the differentiability.
+
+1710
+02:08:15,344 --> 02:08:19,003
+They said that can you take derivation h zero or not?
+
+1711
+02:08:19,203 --> 02:08:28,623
+First of all, if I want to talk about differentiability, I have to be sure that about continuous.
+
+1712
+02:08:29,224 --> 02:08:29,484
+Okay.
+
+1713
+02:08:29,743 --> 02:08:32,163
+So, I have only one function.
+
+1714
+02:08:32,484 --> 02:08:34,543
+So, I will look at only this one.
+
+1715
+02:08:34,783 --> 02:08:36,583
+What is the limit x goes to zero?
+
+1716
+02:08:37,703 --> 02:08:39,324
+Our function is this.
+
+1717
+02:08:39,324 --> 02:08:44,283
+x sine 1 over x.
+
+1718
+02:08:45,003 --> 02:08:48,684
+It is zero product sine infinity.
+
+1719
+02:08:49,224 --> 02:08:51,104
+And I talk about this one.
+
+1720
+02:08:51,184 --> 02:08:51,923
+It is zero.
+
+1721
+02:08:52,623 --> 02:08:54,444
+Is it equals to f zero?
+
+1722
+02:08:55,724 --> 02:08:57,404
+If yes, it is continuous.
+
+1723
+02:08:57,604 --> 02:08:58,404
+What is f zero?
+
+1724
+02:08:58,524 --> 02:09:00,304
+f zero from here, it is zero.
+
+1725
+02:09:00,844 --> 02:09:02,764
+Yes, it is equals to f zero.
+
+1726
+02:09:02,764 --> 02:09:25,884
+So, it is continuous.
+
+1727
+02:09:06,707 --> 02:09:14,387
+I can say that it is continuous at x equals 0.
+
+1728
+02:09:14,387 --> 02:09:15,427
+Okay.
+
+1729
+02:09:19,731 --> 02:09:47,351
+Now, for the continuity, I have to take derivation at the point 0. So, I have to find f' 0. We have one function. One part will be enough. So, f0 plus h minus f0 over h. Our function was x sin 1 over x. So, it will be h sin 1 over h over h. I can cancel this one.
+
+1730
+02:09:47,351 --> 02:10:01,072
+And also, I said that this limit doesn't exist because we have many different limit points. So, we don't have, has no limit means that we don't have derivation.
+
+1731
+02:10:03,792 --> 02:10:06,332
+At x equals 0.
+
+1732
+02:10:07,971 --> 02:10:15,100
+Okay.
+
+1733
+02:10:17,100 --> 02:10:18,899
+Okay, I want to investigate.
+
+1734
+02:10:19,760 --> 02:10:21,119
+We have the theorem.
+
+1735
+02:10:21,500 --> 02:10:28,399
+Actually, this theorem is a result of continuity and derivation.
+
+1736
+02:10:28,399 --> 02:10:32,039
+I talk about, this is continuity.
+
+1737
+02:10:32,760 --> 02:10:32,899
+Okay.
+
+1738
+02:10:33,940 --> 02:10:35,060
+This is derivation.
+
+1739
+02:10:36,340 --> 02:10:42,920
+The theorem says that if your function is differentiable, it will be automatically continuous.
+
+1740
+02:10:42,920 --> 02:10:47,420
+Okay, if it is differentiable, you can directly say that it is also continuous.
+
+1741
+02:10:48,159 --> 02:10:52,720
+But you can't say the inverse.
+
+1742
+02:10:52,720 --> 02:10:58,000
+If it is continuous, you can't say that it is also differentiable.
+
+1743
+02:10:58,159 --> 02:10:58,800
+It can be.
+
+1744
+02:11:00,079 --> 02:11:02,140
+Okay, let me give an example.
+
+1745
+02:11:02,140 --> 02:11:33,140
+Fx equals...
+
+1746
+02:11:18,612 --> 02:11:20,612
+2K'a 0.
+
+1747
+02:11:20,612 --> 02:11:22,612
+3K'a 0.
+
+1748
+02:11:22,612 --> 02:11:26,612
+4K'a 0.
+
+1749
+02:11:26,612 --> 02:11:33,612
+5K'a 0.
+
+1750
+02:11:33,612 --> 02:11:40,612
+6K'a 0.
+
+1751
+02:11:40,612 --> 02:11:46,612
+7K'a 0.
+
+1752
+02:11:48,612 --> 02:12:15,612
+8K'a 0.
+
+1753
+02:12:15,612 --> 02:12:24,612
+9K'a 0.
+
+1754
+02:12:24,612 --> 02:13:51,612
+10K'a 0.
+
+1755
+02:13:37,268 --> 02:13:38,307
+Evet, evet.
+
+1756
+02:13:38,988 --> 02:13:41,948
+Sürekli ise limiti var ama ben türevden bahsediyorum şu an.
+
+1757
+02:13:43,047 --> 02:13:45,747
+Evet, sürekli ise limiti vardır zaten.
+
+1758
+02:13:45,927 --> 02:13:47,788
+İkinci kat, bakın katı düşünün.
+
+1759
+02:13:47,887 --> 02:13:51,688
+İkinci kata çıktıysanız birinci kat demek ki var zaten üstüne çıkıyorsunuz.
+
+1760
+02:13:52,828 --> 02:13:56,788
+Bunda teorem diyor ki sen üçüncü kattaysan zaten öbürkülerini sağlamışsındır.
+
+1761
+02:13:56,788 --> 02:14:01,247
+Ama sen ikinci kattaysan üçüncü katla ilgili bir hüküm veremezsin diyor.
+
+1762
+02:14:01,887 --> 02:14:02,788
+Kesin bir şey söyleyemezsin.
+
+1763
+02:14:03,408 --> 02:14:04,667
+Olan da var, olmayan da var.
+
+1764
+02:14:05,127 --> 02:14:05,488
+Tamam mı?
+
+1765
+02:14:05,488 --> 02:14:08,268
+Evet, bu da var.
+
+1766
+02:14:08,268 --> 02:14:09,028
+Bu da last example.
+
+1767
+02:14:09,807 --> 02:14:16,148
+Investigate the continuity and differentiability of this square root function at x equals 1.
+
+1768
+02:14:16,948 --> 02:14:24,408
+So at x equals 1, for the continuity, I have to look at what is x goes to 1 from the left side.
+
+1769
+02:14:24,408 --> 02:14:28,268
+For example, what happens if I write 0.9 here?
+
+1770
+02:14:28,268 --> 02:14:32,927
+This function, this value will be negative.
+
+1771
+02:14:33,108 --> 02:14:35,547
+So it will be 1 minus x square.
+
+1772
+02:14:36,887 --> 02:14:38,627
+So the limit will be 0.
+
+1773
+02:14:39,908 --> 02:14:42,448
+Limit x goes to 1.
+
+1774
+02:14:42,648 --> 02:14:46,347
+From the right side, our function will be x square minus 1.
+
+1775
+02:14:46,347 --> 02:14:48,728
+And it is 0.
+
+1776
+02:14:48,728 --> 02:14:51,627
+This is also f0.
+
+1777
+02:14:51,627 --> 02:14:54,908
+So it is continuous.
+
+1778
+02:14:55,627 --> 02:14:59,788
+At the continuity, we don't have any problem about the absolute value function.
+
+1779
+02:15:00,167 --> 02:15:02,288
+We have problem at derivation.
+
+1780
+02:15:02,288 --> 02:15:02,988
+Okay?
+
+1781
+02:15:02,988 --> 02:15:04,648
+Look at the derivation.
+
+1782
+02:15:06,068 --> 02:15:15,788
+f prime 1, if we look at from the left side, it will be 0.1 plus h square minus 1 over h.
+
+1783
+02:15:16,068 --> 02:15:16,368
+Okay?
+
+1784
+02:15:17,667 --> 02:15:18,667
+From the left side.
+
+1785
+02:15:18,667 --> 02:15:26,768
+If you open this one, I have 1 plus 2h plus h square minus 1.
+
+1786
+02:15:27,207 --> 02:15:28,667
+I can cancel this one.
+
+1787
+02:15:29,288 --> 02:15:32,627
+So I will have h, h plus 2 over h.
+
+1788
+02:15:33,667 --> 02:15:38,488
+When you look at from the left side, it means that, for example, 0 minus 0.1.
+
+1789
+02:15:38,648 --> 02:15:42,127
+So this part will be minus h.
+
+1790
+02:15:42,507 --> 02:15:47,788
+So if I cancel h, I will have minus h plus 2.
+
+1791
+02:15:47,788 --> 02:15:50,228
+So the limit will be minus 2.
+
+1792
+02:15:50,347 --> 02:15:54,648
+So the derivation from the left side, I have minus 2.
+
+1793
+02:15:55,507 --> 02:15:56,547
+Now let us take...
+
+1794
+02:15:56,547 --> 02:15:57,408
+I forgot here.
+
+1795
+02:15:57,488 --> 02:15:58,587
+Actually, I have here.
+
+1796
+02:15:59,007 --> 02:15:59,988
+It will be plus.
+
+1797
+02:16:00,127 --> 02:16:00,307
+Okay?
+
+1798
+02:16:01,087 --> 02:16:05,908
+So if you take the derivation from the right side, all of them are the same.
+
+1799
+02:16:05,988 --> 02:16:07,667
+But this part is changing.
+
+1800
+02:16:08,207 --> 02:16:12,007
+If I write 0.1 here, it will be h.
+
+1801
+02:16:12,627 --> 02:16:16,307
+And when you cancel this h, you will have h plus 2.
+
+1802
+02:16:16,307 --> 02:16:19,967
+And when you write 0, your limit will be 2.
+
+1803
+02:16:20,188 --> 02:16:22,648
+In the previous part, we find minus 2.
+
+1804
+02:16:22,768 --> 02:16:24,408
+They are different.
+
+1805
+02:16:24,927 --> 02:16:28,587
+So the function is not differentiable at x equals 1.
+
+1806
+02:16:29,007 --> 02:16:29,247
+Okay?
+
+1807
+02:16:29,247 --> 02:16:34,247
+In absolute value functions, you will have...
+
+1808
+02:16:38,247 --> 02:16:42,247
+At the absolute value functions, you will have...
+
+1809
+02:16:42,247 --> 02:16:45,247
+And your function won't be differentiated.
+
+1810
+02:16:46,247 --> 02:16:48,388
+Because the shape will be like this.
+
+1811
+02:16:48,548 --> 02:16:49,407
+You will cause...
+
+1812
+02:16:49,407 --> 02:16:49,647
+Okay?
+
+1813
+02:16:50,688 --> 02:16:53,987
+Mutlak değer fonksiyonlarında türevle ile birlikte sıkıntımız var.
+
+1814
+02:16:53,987 --> 02:16:56,067
+Çünkü sağ ve sola aldığınızı işe...
+
+1815
+02:16:56,067 --> 02:16:57,487
+Can you repeat the last point?
+
+1816
+02:16:58,167 --> 02:16:58,507
+Yes.
+
+1817
+02:16:59,448 --> 02:17:00,308
+The last part.
+
+1818
+02:17:00,308 --> 02:17:01,308
+Can you repeat the last point?
+
+1819
+02:17:02,448 --> 02:17:03,948
+Yeah, the last thing.
+
+1820
+02:17:04,548 --> 02:17:04,788
+Yes.
+
+1821
+02:17:04,868 --> 02:17:05,048
+Okay.
+
+1822
+02:17:06,708 --> 02:17:08,647
+About the absolute value function.
+
+1823
+02:17:09,768 --> 02:17:10,507
+Or this part.
+
+1824
+02:17:10,868 --> 02:17:12,288
+Yeah, this is about...
+
+1825
+02:17:12,288 --> 02:17:12,987
+About this...
+
+1826
+02:17:13,548 --> 02:17:13,747
+No.
+
+1827
+02:17:13,927 --> 02:17:14,147
+Okay.
+
+1828
+02:17:14,327 --> 02:17:15,448
+It's all about this.
+
+1829
+02:17:15,507 --> 02:17:16,768
+About this draw.
+
+1830
+02:17:17,548 --> 02:17:18,548
+There is two lines.
+
+1831
+02:17:19,167 --> 02:17:19,888
+Can you repeat it?
+
+1832
+02:17:19,888 --> 02:17:20,727
+Yes.
+
+1833
+02:17:21,747 --> 02:17:24,827
+For example, let us talk very general.
+
+1834
+02:17:25,208 --> 02:17:27,567
+Let us take fx equals square root x.
+
+1835
+02:17:27,688 --> 02:17:27,907
+Okay.
+
+1836
+02:17:29,268 --> 02:17:32,147
+So, what is the shape of this function?
+
+1837
+02:17:32,308 --> 02:17:32,768
+Is this.
+
+1838
+02:17:32,768 --> 02:17:32,827
+Okay.
+
+1839
+02:17:34,579 --> 02:17:45,340
+We talked about before, we don't have any problem about the continuity, but in derivation we will have problem, especially for one second.
+
+1840
+02:17:48,819 --> 02:17:51,100
+Hatta şöyle yapalım.
+
+1841
+02:17:54,039 --> 02:17:55,100
+x seconds
+
+1842
+02:18:02,579 --> 02:18:03,780
+soruyu şöyle yapalım.
+
+1843
+02:18:06,120 --> 02:18:06,379
+Okey.
+
+1844
+02:18:27,731 --> 02:18:29,111
+Let's make another example.
+
+1845
+02:18:29,352 --> 02:18:29,471
+Okay.
+
+1846
+02:18:30,332 --> 02:18:31,291
+So what is this?
+
+1847
+02:18:31,412 --> 02:18:33,231
+It is x squared minus 4.
+
+1848
+02:18:35,711 --> 02:18:40,051
+When you take the points is plus and minus 2.
+
+1849
+02:18:40,252 --> 02:18:40,412
+Okay.
+
+1850
+02:18:41,772 --> 02:18:45,531
+At the intersection points you will have problem.
+
+1851
+02:18:46,051 --> 02:18:47,832
+What is the graph of this function?
+
+1852
+02:18:49,092 --> 02:18:49,572
+Do you know?
+
+1853
+02:18:53,572 --> 02:18:56,772
+There will be paraboles here.
+
+1854
+02:18:56,772 --> 02:18:57,772
+If...
+
+1855
+02:18:58,772 --> 02:19:00,332
+Aslında şey yapalım ya.
+
+1856
+02:19:00,551 --> 02:19:00,912
+Şöyle.
+
+1857
+02:19:02,891 --> 02:19:04,672
+Biraz zor olacak şimdi ya.
+
+1858
+02:19:04,932 --> 02:19:07,152
+Eksi 2 ile artı 2 arasında değişecek o.
+
+1859
+02:19:08,992 --> 02:19:10,432
+Neyse şöyle yapalım ya.
+
+1860
+02:19:10,471 --> 02:19:10,891
+Dur bir daha.
+
+1861
+02:19:11,172 --> 02:19:12,391
+Kafamızı karıştırma.
+
+1862
+02:19:15,956 --> 02:19:45,956
+Bir saniye.
+
+1863
+02:19:31,412 --> 02:19:34,772
+Give me one second, okay? I will show you one thing.
+
+1864
+02:20:02,100 --> 02:20:02,600
+ok.
+
+1865
+02:20:11,827 --> 02:20:12,907
+Okay, can you see?
+
+1866
+02:20:16,087 --> 02:20:21,427
+If you look at the graph, this is the graph of the absolute value x squared minus 1.
+
+1867
+02:20:21,427 --> 02:20:27,247
+So you can see that at minus 1 and at 1 you have cusp like this.
+
+1868
+02:20:27,827 --> 02:20:31,487
+Okay, it's here and here you have cusp.
+
+1869
+02:20:32,007 --> 02:20:35,727
+So at this point you don't have any derivation.
+
+1870
+02:20:36,287 --> 02:20:40,547
+Or let me write here, for example, let us look at.
+
+1871
+02:20:41,827 --> 02:20:44,028
+Absolute value of x.
+
+1872
+02:20:44,587 --> 02:20:48,707
+If you look at here, we have a cusp at the point 0.
+
+1873
+02:20:48,707 --> 02:20:54,887
+So at the important point, at the intersections points of the absolute value, we will have problem.
+
+1874
+02:20:55,028 --> 02:20:57,007
+Or let us look at another example.
+
+1875
+02:20:58,047 --> 02:21:00,967
+x cubed, for example, minus 3.
+
+1876
+02:21:01,467 --> 02:21:02,167
+Look at here.
+
+1877
+02:21:02,667 --> 02:21:03,327
+Or 4.
+
+1878
+02:21:03,727 --> 02:21:04,667
+And you're 80.
+
+1879
+02:21:05,487 --> 02:21:08,768
+Okay, this is a graph of x cubed minus 8.
+
+1880
+02:21:08,768 --> 02:21:11,827
+So you can easily see that at the point we have a cusp.
+
+1881
+02:21:12,287 --> 02:21:16,028
+So at this point we don't have derivation.
+
+1882
+02:21:16,247 --> 02:21:16,528
+Okay?
+
+1883
+02:21:17,387 --> 02:21:18,247
+Did you understand?
+
+1884
+02:21:19,087 --> 02:21:20,747
+About the absolute value function?
+
+1885
+02:21:22,188 --> 02:21:23,007
+Yes, okay.
+
+1886
+02:21:23,167 --> 02:21:25,927
+At this point we don't have derivation.
+
+1887
+02:21:25,927 --> 02:21:27,567
+Yes, yes, yes.
+
+1888
+02:21:28,087 --> 02:21:31,448
+About derivation, the absolute value function is continuous.
+
+1889
+02:21:31,587 --> 02:21:33,528
+We don't have any problem about continuity.
+
+1890
+02:21:33,727 --> 02:21:42,108
+But if we talk about derivation, if you have a curve in the graph, we don't have any derivation at this point.
+
+1891
+02:21:42,108 --> 02:21:43,787
+You can't sketch a line.
+
+1892
+02:21:43,787 --> 02:21:44,227
+Okay?
+
+1893
+02:21:44,567 --> 02:21:52,487
+Or for example, x to the power 4 plus 2 for example.
+
+1894
+02:21:52,727 --> 02:21:52,887
+Yok.
+
+1895
+02:21:53,747 --> 02:21:59,587
+x to the power 4.
+
+1896
+02:21:59,787 --> 02:22:00,227
+Okay?
+
+1897
+02:22:02,847 --> 02:22:07,787
+At this point only, you can't have derivation.
+
+1898
+02:22:07,787 --> 02:22:10,868
+How can you determine some?
+
+1899
+02:22:11,268 --> 02:22:11,487
+Yeah.
+
+1900
+02:22:11,807 --> 02:22:14,087
+At 2 and minus 2, we don't have.
+
+1901
+02:22:14,087 --> 02:22:16,247
+At the intersection points, yes.
+
+1902
+02:22:16,427 --> 02:22:17,787
+At the intersection points.
+
+1903
+02:22:17,787 --> 02:22:19,627
+2 and minus 2.
+
+1904
+02:22:20,147 --> 02:22:21,387
+For example, one second.
+
+1905
+02:22:22,247 --> 02:22:31,747
+For example, if you talk about x squared minus 4, it won't be differentiable at plus minus 2.
+
+1906
+02:22:32,567 --> 02:22:36,427
+This is your intersection important point in your absolute value.
+
+1907
+02:22:36,427 --> 02:22:40,307
+So at this point, the function won't be differentiable.
+
+1908
+02:22:40,587 --> 02:22:40,747
+Okay?
+
+1909
+02:22:42,608 --> 02:22:43,127
+Okay.
+
+1910
+02:22:43,287 --> 02:22:44,487
+Do you have any other question?
+
+1911
+02:22:44,707 --> 02:22:47,627
+If you don't have any other question, I will finish for today.
+
+1912
+02:22:48,067 --> 02:22:48,387
+Okay?
+
+1913
+02:22:48,987 --> 02:22:53,567
+I finished the first derivation lecture notes.
+
+1914
+02:22:54,287 --> 02:22:59,608
+And you can take the other lecture notes, differentiable derivation too.
+
+1915
+02:22:59,707 --> 02:23:01,608
+And also, I will open the other one.
+
+1916
+02:23:01,608 --> 02:23:04,047
+Bu birinci notu bitirdik.
+
+1917
+02:23:04,188 --> 02:23:06,047
+İkinci notu var sistemde.
+
+1918
+02:23:06,528 --> 02:23:07,987
+Bir sonraki de açacağım.
+
+1919
+02:23:08,147 --> 02:23:10,247
+Şey, Avesi'ten şu an aktif değil.
+
+1920
+02:23:10,407 --> 02:23:11,327
+Onu da aktif yapayım.
+
+1921
+02:23:12,108 --> 02:23:12,347
+Okay?
+
+1922
+02:23:13,347 --> 02:23:14,827
+So that's enough for today.
+
+1923
+02:23:15,188 --> 02:23:19,507
+Next week, I will continue to derivation concept.
+
+1924
+02:23:19,507 --> 02:23:26,368
+And probably today or probably today evening, I will put some test questions, samples.
+
+1925
+02:23:26,587 --> 02:23:27,188
+Test sample.
+
+1926
+02:23:27,307 --> 02:23:27,528
+Okay?
+
+1927
+02:23:28,268 --> 02:23:30,347
+You can look at the weekend.
+
+1928
+02:23:30,707 --> 02:23:31,827
+You can try to solve.
+
+1929
+02:23:32,007 --> 02:23:34,347
+And I will solve at the application list.
+
+1930
+02:23:34,868 --> 02:23:37,927
+But before that, I want to finish the derivation subject.
+
+1931
+02:23:38,108 --> 02:23:38,307
+Okay?
+
+1932
+02:23:38,307 --> 02:23:41,567
+Okay.
+
+1933
+02:23:41,787 --> 02:23:43,147
+So that's enough for today.
+
+1934
+02:23:43,287 --> 02:23:44,567
+Have a good weekend.
+
+1935
+02:23:46,207 --> 02:23:47,627
+Application sorularını çözeceğiz.
+
+1936
+02:23:48,028 --> 02:23:49,188
+Tabii tabii yapacağım hepsini.
+
+1937
+02:23:49,948 --> 02:23:52,827
+Ya size zaten application'ları çözümleriyle verdim.
+
+1938
+02:23:52,927 --> 02:23:53,647
+Onlara bakacağız.
+
+1939
+02:23:53,827 --> 02:23:55,627
+Artı şimdi size bir de test vereceğim.
+
+1940
+02:23:56,287 --> 02:23:58,067
+O testin sonuç sorularını da yapacağız.
+
+1941
+02:23:58,067 --> 02:23:59,167
+Ama biraz ilerleyelim.
+
+1942
+02:23:59,504 --> 02:24:15,304
+Artı bir de şey belli olsun. Sınav nasıl olacak hala belli değil. Yani büyük ihtimal testi olacağı kesin ama özellikle sınav nerede olacak? O bizim için daha önemli. Ona göre belki boşluk doldurmalı da sorulabilir eğer sistem izin verirse. Ona göre konuşuruz yeniden. Tamam mı?
+
+1943
+02:24:16,064 --> 02:24:18,924
+Okey, so have a good weekend. Okey, bye bye.
