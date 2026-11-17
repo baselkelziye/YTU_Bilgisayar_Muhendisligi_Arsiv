@@ -24,3 +24,4 @@
 | 35 | Güz | Dilek Yıldırım | [sube_35/](sube_35/) |
 | 36 | Güz | Bulunamadı | [sube_36/](sube_36/) |
 | 37 | Güz | Bulunamadı | [sube_37/](sube_37/) |
+| 38 | Güz | İsmail Doğru | [sube_38/](sube_38/) |
