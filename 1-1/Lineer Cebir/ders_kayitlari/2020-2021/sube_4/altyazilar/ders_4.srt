@@ -1,0 +1,5979 @@
+1
+00:00:35,987 --> 00:00:38,128
+Arkadaşlar günaydın herkese.
+
+2
+00:00:45,460 --> 00:00:46,960
+Umarım her şeyin olmalısız.
+
+3
+00:00:51,508 --> 00:01:01,908
+Özellikle İzmir'in çevresinde olan arkadaşlar ve diğer arkadaşları geçmiş olsun, dileklerimizi iletelim. İnşallah sıkıntılı olan bir arkadaşımız yoktur.
+
+4
+00:01:19,507 --> 00:01:43,347
+Geçen hafta tatildi malum arkadaşlar. Ders yapamadık. Ama zaman çabuk geçiyor. Hemen bir hafta geçti. O yüzden ben pek hatırlayamadım sizde nerede kaldığımızı. Arkadaşlar, determinatlara başlamış mıydık hatırlayan var mı? Nerede kaldığımızı?
+
+5
+00:01:50,548 --> 00:01:55,968
+En son bir maddesinin tersinin elementer satır işlemleriyle bulunmasını yapmışız.
+
+6
+00:01:56,968 --> 00:02:02,808
+En son şey mi yaptık? Maddesinin tersinin elementer satır işlemleriyle bulunmasını yaptık.
+
+7
+00:02:02,968 --> 00:02:05,487
+Öyle mi? O zaman işte terminatlara başlamak yani.
+
+8
+00:02:05,908 --> 00:02:06,427
+Hayır.
+
+9
+00:02:07,028 --> 00:02:07,328
+Tamam.
+
+10
+00:02:07,587 --> 00:02:09,508
+Soru çözmüşüz en son bir tane.
+
+11
+00:02:10,448 --> 00:02:11,948
+Tersini bulmuşuz değil mi maddesini?
+
+12
+00:02:13,468 --> 00:02:20,487
+Şey yapmışız. İşte A çarpı B eşittir birim maddesi yapıp şeyi bulmuşuz. Aynen tersini bulmuşuz.
+
+13
+00:02:20,548 --> 00:02:22,707
+Tamam. Tamam. Tamam. Tamam. Teşekkürler.
+
+14
+00:02:23,508 --> 00:02:26,187
+O zaman biraz hızlı.
+
+15
+00:02:26,187 --> 00:02:26,508
+Tamam.
+
+16
+00:02:30,163 --> 00:02:31,303
+Olacağız bugün.
+
+17
+00:02:34,443 --> 00:02:35,843
+Zaten biter mi hafta tamam.
+
+18
+00:02:38,863 --> 00:02:44,703
+Doğru, dördüncü hafta geçen haftaydı. Geçen hafta ders yapamadığımız için dördüncü haftadan devam ediyoruz.
+
+19
+00:02:50,644 --> 00:03:12,403
+Şimdi arkadaşlar, determinantlar çok önemli bir konu. Sadece bu derste değil, kendi uzmanlık alanınızla alakalı derslerde de ya da belki ileride çalışma hayatınızda da kullanacağınız tam muhakkak karşınıza çıkacak bir kavram.
+
+20
+00:03:12,403 --> 00:03:35,403
+çok kullanışlı bir kavram. Çünkü matrislerin yapısı hakkında size bilgi veriyor determinantlar. En basitinden arkadaşlar, matrisin determinantına bakarak matrisin tersinin olup olmadığına karar verebiliyorsunuz.
+
+21
+00:03:35,403 --> 00:03:37,403
+[öğrenci], hiç bilmiyorum.
+
+22
+00:03:37,403 --> 00:03:42,403
+[öğrenci], hiç bilmiyorum da vektörlere gelebileceğimizi zannetmiyorum. Tamam.
+
+23
+00:03:42,403 --> 00:03:49,403
+O yüzden determinantlar konusunda anlamadığımız bir yer olursa,
+
+24
+00:03:49,403 --> 00:03:57,403
+eğer konu da öyle de, determinantları biraz daha dikkatli dinleyin.
+
+25
+00:03:57,403 --> 00:04:04,403
+deten determinant kavramı karşımı karşımı karşımıza aslında aslında aslında inerde eklem sistemlerin çözümüne çıkıyor.
+
+26
+00:04:04,403 --> 00:04:11,403
+Ama tabii konu itibariyle daha inerde eklem sistemlerin çözümünü bilmediğimiz için ya da görmediğimiz için.
+
+27
+00:04:11,403 --> 00:04:12,403
+çok teşekkür ederim.
+
+28
+00:04:14,515 --> 00:04:17,075
+Sadece söylemekle yetmiyoruz şu anda.
+
+29
+00:04:19,156 --> 00:04:25,276
+Arkadaşlar, determinant dediğimiz bizim, ya da bir matrisin determinantı dediğimiz kavram, birincisi şu, bunu bileceğiz.
+
+30
+00:04:28,755 --> 00:04:32,055
+Arkadaşlar, matrislerin determinantından bahsedebilir arkadaşlar.
+
+31
+00:04:46,132 --> 00:04:47,372
+Fasal, denizasyonu.
+
+32
+00:04:57,204 --> 00:05:00,704
+Mikrofonumuz açık kalmış galiba bir arkadaşımız, kapatırsa o da.
+
+33
+00:05:02,543 --> 00:05:13,264
+Determinant, bir maddisin, tanımı şöyle, yani tanımı aslında permutasyonu da ediliyor ama, çok sizin bilgi alanınızla alakalı değil, biz her yungu domarıyla geleneceğiz.
+
+34
+00:05:15,504 --> 00:05:21,244
+Bir maddisin, satırları üzerinde, lineer bir fonksiyon arkadaşlar.
+
+35
+00:05:25,908 --> 00:05:30,807
+Demek ki determinant aslında lineer bir fonksiyonmuş. Lineer fonksiyon da şu demek.
+
+36
+00:05:33,088 --> 00:05:47,268
+F fonksiyonu için Fx artı'ya eşittir. Fx artı F'ye biçiminde ise fonksiyona lineer fonksiyon deniyor.
+
+37
+00:05:47,987 --> 00:05:50,247
+Yani determinant bir fonksiyon. Onu bilin.
+
+38
+00:05:56,148 --> 00:06:03,808
+Det a, ya da mutlak değer içinde a ile gösteriliyor arkadaşlar, determinant.
+
+39
+00:06:05,248 --> 00:06:12,427
+Ve de biz şimdi 1, 2, 3 ve 3'ten büyük boyutlu matrislerin determinantları nasıl bulunuyor onu öğreneceğiz.
+
+40
+00:06:13,788 --> 00:06:19,088
+Ne eşittir bir için? Yani 1 çarpı 1 tipindeki matrisin determinantı. Zaten bir tane eleman var arkadaşlar.
+
+41
+00:06:20,148 --> 00:06:21,748
+Bu da kendisine eşit.
+
+42
+00:06:22,528 --> 00:06:23,508
+Determinant a.
+
+43
+00:06:23,508 --> 00:06:25,868
+A'dan oluşuyor sadece zaten.
+
+44
+00:06:26,508 --> 00:06:27,048
+A eşit.
+
+45
+00:06:28,908 --> 00:06:30,628
+Ne eşittir 2 ise?
+
+46
+00:06:30,948 --> 00:06:33,588
+Yani 2 çarpı 2'lik bir matris var ise
+
+47
+00:06:33,588 --> 00:06:35,008
+bu sefer de
+
+48
+00:06:35,008 --> 00:06:39,008
+arkadaşlar, esas köşegendeki elemanları çarpıyorsunuz.
+
+49
+00:06:39,168 --> 00:06:40,807
+A11 çarpı A22
+
+50
+00:06:40,807 --> 00:06:41,908
+bundan
+
+51
+00:06:41,908 --> 00:06:44,908
+diğer köşegendeki elemanların çarpımını
+
+52
+00:06:44,908 --> 00:06:46,128
+çıkartıyorsunuz.
+
+53
+00:06:47,048 --> 00:06:48,628
+A11 çarpı A22
+
+54
+00:06:48,628 --> 00:06:50,708
+eksi A12 çarpı
+
+55
+00:06:50,708 --> 00:06:52,108
+A21
+
+56
+00:06:52,108 --> 00:06:53,108
+A12 çarpı A22
+
+57
+00:06:59,091 --> 00:07:08,711
+Ne eşittir 3 için ise arkadaşlar, şöyle normalde bu ileride göreceğimiz kopakör açılımından geliyor.
+
+58
+00:07:09,551 --> 00:07:14,431
+Şu ilk satırı düşünün. Böyle aklınıza daha kolay kalır.
+
+59
+00:07:15,291 --> 00:07:17,491
+İlk satırın ilk elemanı çartı.
+
+60
+00:07:20,391 --> 00:07:21,991
+A11 çartı.
+
+61
+00:07:23,031 --> 00:07:28,991
+Daha sonra arkadaşlar bu A11'in olduğu satırı ve satırı kapatıyorsunuz.
+
+62
+00:07:29,091 --> 00:07:30,471
+Yani siz biliyorsunuz.
+
+63
+00:07:31,192 --> 00:07:34,072
+Geriye kalan 2 çarpı 2'lik determinandı.
+
+64
+00:07:35,692 --> 00:07:36,411
+A22
+
+65
+00:07:36,411 --> 00:07:39,051
+A23
+
+66
+00:07:39,051 --> 00:07:42,471
+A32
+
+67
+00:07:42,471 --> 00:07:45,932
+A33
+
+68
+00:07:45,932 --> 00:07:49,371
+Sonra eksi
+
+69
+00:07:49,371 --> 00:07:51,632
+ikinci eleman
+
+70
+00:07:51,632 --> 00:07:52,072
+A22
+
+71
+00:07:55,444 --> 00:07:56,783
+Neymiş? A1-2.
+
+72
+00:08:00,947 --> 00:08:05,947
+Bu defa da A1-2'nin bulduğu stum ve satırı kapatıyorsunuz.
+
+73
+00:08:05,947 --> 00:08:22,947
+Ne oluyor? Şu matris kalıyor geriye. A2-1, A2-3, A3-1, A3-3, artı...
+
+74
+00:08:28,819 --> 00:08:29,480
+A1-3.
+
+75
+00:08:32,299 --> 00:08:35,439
+A1-3'ün bulunduğu satır ve satırını kapatıyorsunuz.
+
+76
+00:08:37,980 --> 00:08:39,059
+A2-1.
+
+77
+00:08:40,460 --> 00:08:41,519
+A2-2.
+
+78
+00:08:43,439 --> 00:08:44,580
+A3-1.
+
+79
+00:08:46,000 --> 00:08:48,080
+A3-2.
+
+80
+00:08:50,019 --> 00:08:53,519
+Şimdi bu artı eksi nereden geliyor onu da söyleyeyim.
+
+81
+00:08:54,059 --> 00:08:56,220
+Kofaktör açılımından geliyor aslında arkadaşlar.
+
+82
+00:08:56,220 --> 00:08:58,840
+Bu A1-1'in yani kas sayılarının önünde.
+
+83
+00:09:00,299 --> 00:09:03,559
+Eksi 1 üzeri 1 artı 1.
+
+84
+00:09:04,159 --> 00:09:06,279
+Hangi elemanla çarptıysanız.
+
+85
+00:09:06,600 --> 00:09:09,319
+Eksi 1 üzeri 1 artı 2.
+
+86
+00:09:10,340 --> 00:09:13,019
+Eksi 1 üzeri 1 artı 3.
+
+87
+00:09:13,340 --> 00:09:14,000
+Tamam mı?
+
+88
+00:09:14,120 --> 00:09:15,120
+O yüzden burası eksi.
+
+89
+00:09:16,480 --> 00:09:21,500
+3 şartı 3'lik bir maddesin determinantını da bu şekilde bulabilirsiniz.
+
+90
+00:09:22,000 --> 00:09:22,139
+Niye?
+
+91
+00:09:22,279 --> 00:09:24,539
+Çünkü 2 şartı ekleyebiliyoruz artık kolayca hemen.
+
+92
+00:09:26,220 --> 00:09:28,659
+yazabiliriz.
+
+93
+00:09:30,340 --> 00:09:38,980
+Şimdi 3 çarpı 3'lik bir maddesin determinantını bulmak için arkadaşlar bir de sarıf kuralı var.
+
+94
+00:09:40,740 --> 00:09:42,519
+Duyan var mı? Bilen var mı sarıf kuralı?
+
+95
+00:09:42,519 --> 00:09:52,840
+Bir de sarıf kuralı var mı?
+
+96
+00:09:51,187 --> 00:09:52,187
+Ne yazıyorsunuz mu?
+
+97
+00:09:52,327 --> 00:09:54,668
+2-2 satırı 6-6'ta mı yazıyoruz?
+
+98
+00:09:54,888 --> 00:09:55,187
+Hı hı.
+
+99
+00:09:55,648 --> 00:09:56,288
+Planlar var.
+
+100
+00:09:56,408 --> 00:09:56,587
+Güzel.
+
+101
+00:09:58,207 --> 00:09:59,648
+Arkadaşlar, sarı şu kuralı.
+
+102
+00:10:14,611 --> 00:10:15,391
+Sördü.
+
+103
+00:10:22,259 --> 00:10:28,759
+3 çarpı 3'lük matrislerin determinantlarında kullanılıyor.
+
+104
+00:10:49,491 --> 00:10:50,991
+Şöyle çalışıyor arkadaşlar.
+
+105
+00:10:55,187 --> 00:11:15,487
+A1-1, A1-2, A1-3, A2-1, A2-2, A2-3, A3-1, A3-2, A3-3.
+
+106
+00:11:15,487 --> 00:11:32,288
+Matris'in, determinantı bulmak istediğimiz matris bu. Arkadaşlar, bu matris'in ilk iki satırını ya da ilk iki satırını sağ tarafta yazıyorsunuz ya da ilk iki satırını alt tarafta yazıyorsunuz.
+
+107
+00:11:32,288 --> 00:11:38,607
+Burada altta yer olmadığı için ben yazmayacağım. Bir daha iki tarafta yaparım. Yani ilk iki satırını sağ tarafta yazıyorsunuz.
+
+108
+00:11:38,607 --> 00:11:55,408
+A1-1-1, A1-1, A1-1, A2-1, A3-1, A1-2, A1-2, A2-2, A3-2.
+
+109
+00:11:55,408 --> 00:12:08,947
+Daha sonra arkadaşlar, sol üstten sağ tarafta, silginal çekiyorsunuz doğrusal, köşegenler oluşturuyorsunuz aslında.
+
+110
+00:12:08,947 --> 00:12:30,067
+Sol üstten sağ üstten sağ üstten sağ üstten sağ üstte olanları toplayıp, bu toplamda sağ üstten sol alta doğru oluşturduğunuz köşegendeki elemanların çarpımını çıkartıyorsunuz.
+
+111
+00:12:33,364 --> 00:12:36,264
+Yani, determinant mı oluyor? Şuraya yazalım.
+
+112
+00:12:42,292 --> 00:12:44,292
+Bu A maddesi olduğunu varsayalım.
+
+113
+00:12:47,512 --> 00:12:59,412
+Determinant A eşit bir neymiş? A11, A22, A33 artı, A12.
+
+114
+00:13:06,227 --> 00:13:07,227
+İçin.
+
+115
+00:13:13,235 --> 00:13:14,015
+A3B
+
+116
+00:13:21,940 --> 00:13:22,820
+Artı
+
+117
+00:13:22,820 --> 00:13:25,720
+A1-3
+
+118
+00:13:25,720 --> 00:13:28,680
+A2-1
+
+119
+00:13:28,680 --> 00:13:31,080
+A3-2
+
+120
+00:13:31,080 --> 00:13:32,780
+Evet.
+
+121
+00:13:33,080 --> 00:13:33,560
+Eksi
+
+122
+00:13:33,560 --> 00:13:35,720
+A1-3
+
+123
+00:13:35,720 --> 00:13:39,920
+A2-2
+
+124
+00:13:39,920 --> 00:13:42,840
+A3-1
+
+125
+00:13:42,840 --> 00:13:45,620
+Eksi
+
+126
+00:13:45,620 --> 00:13:47,240
+A1-1
+
+127
+00:13:47,240 --> 00:14:19,360
+A2-3
+
+128
+00:13:57,652 --> 00:13:59,092
+Eksi A1-2
+
+129
+00:13:59,092 --> 00:14:02,692
+A2-1
+
+130
+00:14:02,692 --> 00:14:06,951
+A3-3
+
+131
+00:14:06,951 --> 00:14:10,392
+Buna
+
+132
+00:14:10,392 --> 00:14:13,951
+Saros kuralı deniyor.
+
+133
+00:14:14,512 --> 00:14:14,972
+Tamam mı?
+
+134
+00:14:16,592 --> 00:14:17,972
+Örneğini de yaparız birazdan.
+
+135
+00:14:18,632 --> 00:14:19,072
+Hocam.
+
+136
+00:14:19,451 --> 00:14:19,831
+Efendim.
+
+137
+00:14:21,372 --> 00:14:23,451
+Benim bildiğim altına yani ilk iki
+
+138
+00:14:23,451 --> 00:14:26,112
+satırı altına yazınca
+
+139
+00:14:26,112 --> 00:14:27,512
+oluyordu diye biliyorum.
+
+140
+00:14:27,512 --> 00:14:29,432
+Tamam onu da söyledim. Soran arkadaş
+
+141
+00:14:29,432 --> 00:14:30,932
+ismini göremiyorum. Kim soran?
+
+142
+00:14:32,732 --> 00:14:33,372
+İsmin ne?
+
+143
+00:14:34,372 --> 00:14:34,852
+Efendim.
+
+144
+00:14:38,972 --> 00:14:41,592
+Onu söyledim. Saros kuralını yazarken.
+
+145
+00:14:41,752 --> 00:14:43,711
+Dedim ki bu alt tarafa da yazılıyor.
+
+146
+00:14:43,892 --> 00:14:45,732
+İlk iki satırı alt tarafa da yazabilirsin.
+
+147
+00:14:46,032 --> 00:14:47,072
+Ama orada yerim yoktu.
+
+148
+00:14:47,992 --> 00:14:49,292
+Ha o şeyden asla.
+
+149
+00:14:49,392 --> 00:14:50,632
+Onu kaçırdın herhalde.
+
+150
+00:14:51,472 --> 00:14:53,152
+Aynı şey fark etmez. Tamam mı?
+
+151
+00:14:54,652 --> 00:14:55,052
+Hocam.
+
+152
+00:14:55,052 --> 00:14:58,812
+İlk iki satırı altıda yazabilirsiniz.
+
+153
+00:14:58,812 --> 00:15:05,812
+İlk iki satırı altı yazabilirsiniz.
+
+154
+00:15:10,868 --> 00:15:22,708
+Şimdi arkadaşlar, ne eşittir 3 için, Sarus kuralıyla ya da biraz önce verdiğimiz yöntemle, determinantını bulabiliyoruz matrisin.
+
+155
+00:15:22,708 --> 00:15:30,208
+Peki ne 3'ten büyükken nasıl bulunuyor matrisin determinantı?
+
+156
+00:15:31,648 --> 00:15:37,768
+Şeye bir örnek vereyim de Sarus'a, Efe'nin dediği yöntemle bulalım.
+
+157
+00:15:44,371 --> 00:15:45,231
+Matris şu,
+
+158
+00:15:49,203 --> 00:16:00,583
+1, 2, 3, 2, 1, 3, 3, 1, 2.
+
+159
+00:16:03,803 --> 00:16:07,083
+Arkadaşlar, bu maddisin determinantını bulmak istiyorum.
+
+160
+00:16:08,943 --> 00:16:15,623
+Sarı üst kuramı kullanacağım. Sarı üst kuramı diyor ki, ya ilk iki satırı sağ tarafa yaz ya da ilk iki satırı alt tarafa yaz.
+
+161
+00:16:15,623 --> 00:16:18,423
+Şimdi ilk iki satırı alt tarafa yazayım ben. Kırmızı yerli yapmayalım.
+
+162
+00:16:25,203 --> 00:16:32,283
+İlk iki satırı olduğu gibi. 1, 2, 3, 2, 1, 3.
+
+163
+00:16:33,123 --> 00:16:45,943
+Alt tarafa yazdım. Arkadaşlar sonra bakın yine aynı mantık. Sol üstten sağ alta doğru olanları çarpıp topluyorum.
+
+164
+00:16:49,427 --> 00:16:57,128
+Sağ üstten sol altta olanları çarpıp çıkartıyoruz.
+
+165
+00:16:58,707 --> 00:17:03,067
+O halde bunun determinantı yine A maktisi olduğunu varsayalım.
+
+166
+00:17:03,067 --> 00:17:33,048
+Determin A eşittir.
+
+167
+00:17:33,067 --> 00:17:54,367
+2, 8, 16, 18, 26, 9, 17, 14, 8, 6.
+
+168
+00:17:55,688 --> 00:17:55,887
+Tamam.
+
+169
+00:17:57,327 --> 00:18:00,528
+Determin altını öylece sağ üst kuralıyla bulabilirsiniz.
+
+170
+00:18:00,528 --> 00:18:14,647
+Ya da dediğim gibi bu iki sütunu sağ tarafa yazıp yine sol üstten sağ altta doğru bir çizgi çekip köşegen oluşturup bunların çarpımını toplayacaksınız.
+
+171
+00:18:15,508 --> 00:18:20,788
+Sağ üstten sol altta doğru olan köşegen üzerindekileri çarpıp çıkartacaksınız.
+
+172
+00:18:20,788 --> 00:18:24,788
+Şimdi N3'ten büyükken...
+
+173
+00:18:24,788 --> 00:18:28,788
+...
+
+174
+00:18:29,140 --> 00:18:54,280
+Bir maddesinin determinantı nasıl bulunuyor? Ondan bahsedelim. Arkadaşlar, bunun için öncelikle iki kavramı tanımlamamız lazım. Bunlara minor ve topak ya da eşkartan deniyor. Şöyle, A maddesi, buradaki ifadeyi ben çok beğenmedim ki şuraya yazacağım arkadaşlar.
+
+175
+00:19:01,779 --> 00:19:02,779
+Ağabey.
+
+176
+00:19:10,324 --> 00:19:12,443
+N çarpı, N çarpı, N çarpı bir matiz olsun.
+
+177
+00:19:29,683 --> 00:19:33,683
+Meijiji de, Meijiji
+
+178
+00:19:37,172 --> 00:19:54,852
+A'nın 1. sıtır ve J. tutumunun silinmesiyle elde edilen
+
+179
+00:19:59,604 --> 00:20:05,784
+n-1 çarpı, n-1 boyutunda, böyle tipinde,
+
+180
+00:20:11,059 --> 00:20:11,500
+matris.
+
+181
+00:20:13,500 --> 00:20:22,779
+Demek ki A maddesinin, M, İ, J'yi arıyorsak eğer, inci satırını, jinci tutunu siliyoruz.
+
+182
+00:20:24,419 --> 00:20:26,379
+M, İ, J maddesi oluşuyor arkadaşlar.
+
+183
+00:20:28,379 --> 00:20:31,700
+M, İ, J maddesinin determinantına,
+
+184
+00:20:36,948 --> 00:20:44,468
+A, I, J elemanının minörü deniyor.
+
+185
+00:20:57,556 --> 00:20:59,316
+AİJ elemanının
+
+186
+00:20:59,316 --> 00:21:02,596
+kofaktörü
+
+187
+00:21:02,596 --> 00:21:03,675
+ya da eş çarpı
+
+188
+00:21:03,675 --> 00:21:05,996
+arkadaşlar büyük AİJ ile
+
+189
+00:21:05,996 --> 00:21:06,716
+gösteriliyor.
+
+190
+00:21:08,796 --> 00:21:09,816
+O da eksi bir
+
+191
+00:21:09,816 --> 00:21:11,355
+üzeri
+
+192
+00:21:11,355 --> 00:21:12,536
+İ artı J
+
+193
+00:21:12,536 --> 00:21:16,036
+determinant
+
+194
+00:21:16,036 --> 00:21:17,915
+main
+
+195
+00:21:17,915 --> 00:21:19,836
+İJ ile tanımlı.
+
+196
+00:21:20,415 --> 00:21:21,956
+Kofaktör dediniz değil mi hocam?
+
+197
+00:21:22,336 --> 00:21:23,216
+Yazacağım şuraya.
+
+198
+00:21:26,135 --> 00:21:27,476
+Zaten burada da var da
+
+199
+00:21:27,476 --> 00:21:29,996
+bu da
+
+200
+00:21:29,996 --> 00:21:33,895
+kofaktör
+
+201
+00:21:33,895 --> 00:21:35,395
+ya da
+
+202
+00:21:35,395 --> 00:21:37,175
+eş
+
+203
+00:21:37,175 --> 00:21:39,276
+çarpı
+
+204
+00:21:39,276 --> 00:21:41,716
+yani
+
+205
+00:21:41,716 --> 00:21:45,996
+küçük AİJ elemanının
+
+206
+00:21:45,996 --> 00:21:48,256
+eş çarpı ya da kofaktörü
+
+207
+00:21:48,256 --> 00:21:49,976
+eksi bir üzeri İ artı J
+
+208
+00:21:49,976 --> 00:21:51,996
+çarpı minor. Bu minor değil mi?
+
+209
+00:21:52,796 --> 00:21:53,436
+AİJ'nin
+
+210
+00:21:53,436 --> 00:21:54,556
+minori.
+
+211
+00:21:59,155 --> 00:22:08,096
+Şimdi bunları kullanarak arkadaşlar, n büyüktür 3 için verilen bir matrisin determinantını vereceğiz.
+
+212
+00:22:10,036 --> 00:22:16,755
+Burada bakayım doğru yazılmış mı? Yaratı yazılmış. Çünkü İngilizce şeyde galiba, şurada determinant yazmıyor.
+
+213
+00:22:18,596 --> 00:22:25,296
+Evet. Bu da A, J elemanının n'i, kofaktörü ya da 5 çarpı.
+
+214
+00:22:32,723 --> 00:22:40,763
+A matrisi verilmiş, A2-3 elemanının minörünü bulur diyor. A2-3 elemanının minörü nedir? M.
+
+215
+00:22:44,627 --> 00:22:47,947
+2, 3'ün determinantı değil mi?
+
+216
+00:22:49,268 --> 00:22:49,707
+Minör.
+
+217
+00:22:50,667 --> 00:22:52,508
+M2, 3'ün determinantı olacak.
+
+218
+00:22:53,867 --> 00:22:55,647
+M2, 3 maddesini oluşturalım.
+
+219
+00:22:56,487 --> 00:22:56,947
+Ne diyordu?
+
+220
+00:22:57,887 --> 00:23:03,667
+A maddesinin 2. satırıyla J'in tutumlu S.
+
+221
+00:23:04,667 --> 00:23:06,467
+Geriye hangi maddes kaldı?
+
+222
+00:23:07,867 --> 00:23:11,207
+1, 2, 7, 8.
+
+223
+00:23:11,207 --> 00:23:17,907
+Bunun determinantı 1 çarpı 8 eksi 2 çarpı 7 eksi 6.
+
+224
+00:23:18,587 --> 00:23:20,207
+A2, 3 elemanı neymiş?
+
+225
+00:23:20,907 --> 00:23:21,548
+Minörüymüş.
+
+226
+00:23:22,667 --> 00:23:29,207
+A2, 3 elemanının kofaktörü ya da eşit çarpanı bunu da büyük A2, 3 ile göstermiştik.
+
+227
+00:23:29,907 --> 00:23:30,548
+Bu da ne olacak?
+
+228
+00:23:30,788 --> 00:23:39,627
+Eksi 1 üzeri 2 artı 3 çarpı determinant M2, 3.
+
+229
+00:23:41,207 --> 00:23:43,947
+Yani eksi 1, değil mi?
+
+230
+00:23:44,028 --> 00:23:45,387
+Eksi 1 ortam.
+
+231
+00:23:45,827 --> 00:23:47,407
+Determinantı da eksi bulmuştum.
+
+232
+00:23:47,407 --> 00:23:55,667
+O halde A2, 3 elemanının kofaktörü ya da eşit çarpanı 6 imiş.
+
+233
+00:23:57,187 --> 00:23:57,687
+Tamam mı?
+
+234
+00:23:59,768 --> 00:24:00,207
+Hocam?
+
+235
+00:24:00,647 --> 00:24:01,007
+Efendim?
+
+236
+00:24:01,467 --> 00:24:03,647
+M2, 2 yazmamız gerekmiyor mu?
+
+237
+00:24:04,227 --> 00:24:06,347
+Neden M2 yazmamız gerekiyor?
+
+238
+00:24:06,427 --> 00:24:08,487
+Burada bak A2, 3 elemanının minörünü soruyor.
+
+239
+00:24:08,647 --> 00:24:09,607
+Niye 2 yazacağım?
+
+240
+00:24:09,607 --> 00:24:17,947
+Yeni hani oluşturduğumuz minör matresinin de satır ve sütunu yazmıyor muyuz?
+
+241
+00:24:18,927 --> 00:24:21,627
+Şimdi ismin ne senin? Ben yine göremiyorum burada ismini.
+
+242
+00:24:21,647 --> 00:24:22,288
+[öğrenci] hocam.
+
+243
+00:24:22,707 --> 00:24:23,987
+[öğrenci]. Yok o anlamda değil.
+
+244
+00:24:24,087 --> 00:24:24,907
+Hani hitap edeyim diye.
+
+245
+00:24:26,367 --> 00:24:27,367
+[öğrenci] bak şimdi.
+
+246
+00:24:27,587 --> 00:24:29,627
+Biz şu anda determinant hesaplamıyoruz.
+
+247
+00:24:29,707 --> 00:24:31,607
+Sen determinantla karıştırdın ben anladın.
+
+248
+00:24:31,607 --> 00:24:36,907
+Biz şu anda sadece A2, 3 elemanının minörünü arıyoruz.
+
+249
+00:24:37,028 --> 00:24:38,067
+Bir de kofaktörünü arıyoruz.
+
+250
+00:24:39,307 --> 00:24:43,667
+Burada dedi ya tamından A, İ, C elemanının minörü nedir?
+
+251
+00:24:44,727 --> 00:24:47,548
+M, İ, C'nin determinantıdır.
+
+252
+00:24:48,667 --> 00:24:49,048
+Tamam mı?
+
+253
+00:24:49,567 --> 00:24:49,967
+Tamam.
+
+254
+00:24:51,048 --> 00:24:52,867
+Şu anda biz daha determinant hesaplamıyoruz.
+
+255
+00:24:53,907 --> 00:24:54,548
+Anladım, anladım.
+
+256
+00:24:54,748 --> 00:24:55,288
+Tamam mı?
+
+257
+00:24:55,288 --> 00:24:55,788
+Teşekkürler.
+
+258
+00:24:55,788 --> 00:24:59,788
+Şu anda sadece minörde kofaktörü nasıl buluyoruz onu gördük.
+
+259
+00:24:59,788 --> 00:25:00,248
+Gördün.
+
+260
+00:25:01,407 --> 00:25:03,227
+Şimdi hesaplayacağız işte.
+
+261
+00:25:04,627 --> 00:25:07,687
+Şimdi hesaplayacağız.
+
+262
+00:25:17,011 --> 00:25:21,432
+Tabi burada aslında arkadaşlar şeyi de, onu da söyleyeyim.
+
+263
+00:25:23,791 --> 00:25:25,631
+Her şey, determinatı satarken söyleriz.
+
+264
+00:25:27,692 --> 00:25:37,811
+Şimdi, ne büyüktür 3 için kullandığımız metoda Laplace açılımı ya da genişlemesi deniyor.
+
+265
+00:25:37,811 --> 00:25:42,531
+Bu İngilizcesi Laplace Extension.
+
+266
+00:25:49,619 --> 00:26:06,059
+Türkçe'ye böyle çevirdim. Bazıları, laplas genişleme, şey pardon, açılımı diyor. Ama bence genişleme daha doğru bir kavram. Yani açılım da görebilirsiniz. Çok önemli değil. Şimdi laplas açılımını ya da laplas genişlemesini matrisi şöyle uyguluyoruz arkadaşlar.
+
+267
+00:26:20,756 --> 00:26:34,296
+Aslında burada tersten gidilmiş de, ben şöyle diyeyim, herhalde bu nasıl yapacağınızı söylemek için böyle bir iki üç diye sıralandırmış ama, patlas açılım şu arkadaşlar.
+
+268
+00:26:38,420 --> 00:26:41,039
+Bu ne demek biliyor musunuz? Şu demek.
+
+269
+00:26:43,259 --> 00:26:44,480
+Birimiz varmış burada.
+
+270
+00:26:54,228 --> 00:26:56,208
+A11. Üşenmeyeceğim.
+
+271
+00:26:56,288 --> 00:26:57,708
+Sizin için yazacağım. İnşallah
+
+272
+00:26:57,708 --> 00:27:00,268
+faydalı oluyordur ama
+
+273
+00:27:00,268 --> 00:27:02,148
+tek böyle
+
+274
+00:27:02,148 --> 00:27:04,188
+derse ilginiz yok gibi geliyor bana bugün
+
+275
+00:27:04,188 --> 00:27:05,908
+nedense. Yani
+
+276
+00:27:05,908 --> 00:27:07,508
+hiçbir sebep olarak olsun.
+
+277
+00:27:08,067 --> 00:27:09,928
+En azından birkaç arkadaşın herhalde elbisi var.
+
+278
+00:27:11,228 --> 00:27:11,788
+A12
+
+279
+00:27:11,788 --> 00:27:14,548
+A13
+
+280
+00:27:14,548 --> 00:27:18,087
+A14. 4 çarpı
+
+281
+00:27:18,087 --> 00:27:19,048
+4'ü bir maddesi alacağım.
+
+282
+00:27:21,388 --> 00:27:24,208
+A21
+
+283
+00:27:24,208 --> 00:27:26,388
+A23
+
+284
+00:27:26,388 --> 00:27:27,768
+A24
+
+285
+00:27:27,768 --> 00:27:31,788
+A31
+
+286
+00:27:31,788 --> 00:27:33,748
+A32
+
+287
+00:27:33,748 --> 00:27:36,788
+A33
+
+288
+00:27:36,788 --> 00:27:38,908
+A34
+
+289
+00:27:38,908 --> 00:27:44,548
+A41
+
+290
+00:27:44,548 --> 00:27:48,067
+Tamam arkadaşlar
+
+291
+00:27:48,067 --> 00:27:49,807
+ben öylesine dedim yani.
+
+292
+00:27:49,807 --> 00:27:51,788
+Biraz kendimi yanlış hissettim. Arada bir iki
+
+293
+00:27:51,788 --> 00:27:53,087
+arkadaşlar soru sormasam.
+
+294
+00:27:54,208 --> 00:27:55,768
+iyice kendimi şey yapacağım.
+
+295
+00:27:59,768 --> 00:28:02,087
+Şimdi şeyde de tam tersi.
+
+296
+00:28:02,648 --> 00:28:04,468
+İngilizce gruplarda da tam tersi.
+
+297
+00:28:04,587 --> 00:28:05,528
+Yani onu da çözemedim.
+
+298
+00:28:05,768 --> 00:28:06,788
+Onlarla da soru
+
+299
+00:28:06,788 --> 00:28:09,108
+cevaplamaktan ders işleyemiyorum.
+
+300
+00:28:09,208 --> 00:28:09,827
+Bir sürü şey.
+
+301
+00:28:10,307 --> 00:28:11,448
+Geride kaldım yani.
+
+302
+00:28:11,448 --> 00:28:19,188
+A4
+
+303
+00:28:15,412 --> 00:28:21,172
+Tamam [öğrenci], her zaman sorabilirsin. Peki. A4-2, A4-3.
+
+304
+00:28:25,172 --> 00:28:32,072
+Aa, dört dört. Siz de ben hiç hobi verdim mi, şey yapanlara? Peki gizem, teşekkür ederim, sağ olun.
+
+305
+00:28:33,612 --> 00:28:38,711
+Hobi kasanın oldu mu bu grupta? Hobi verdim mi?
+
+306
+00:28:43,827 --> 00:28:45,228
+Yok hocam, bir şey vermedim.
+
+307
+00:28:46,187 --> 00:28:52,927
+O yüzden siz ilgisinizsiniz bu kadar, tamam. Birazdan hobilik bir şey yapacağız. Hobinin ne olduğunu biliyor musunuz?
+
+308
+00:28:56,660 --> 00:29:06,259
+Birazdan şey yapacağım ben. Bilmiyor musunuz? Siz bayağı bir şey istiniz ya. 2000 doğumlu falan mısınız? Kaç doğumlu oluyor?
+
+309
+00:29:06,759 --> 00:29:13,200
+Bir daha söyler misiniz hocam? Evet evet çikolata, hobi hobi. Hobi. Arkadaşlar. Hobi.
+
+310
+00:29:13,560 --> 00:29:20,060
+Hobi bilmiyor musunuz ya? Biliyoruz hocam biliyoruz. Valla şimdi üzüldüm ya açıkçası.
+
+311
+00:29:25,395 --> 00:29:31,215
+O zaman şöyle dersini bırakıp nelerle uğraşıyorum ben de.
+
+312
+00:30:11,635 --> 00:30:30,296
+Evet, doğru söylüyorsun. Evet, evet, Boğaziyeken, şu işte, arkadaşlar, konuşuyor. Bildiniz mi? Biliyorlarmış, pardon. Zehir mi, kim o zehir yazdı? Zehir olur mu ya? Göremiyor musunuz? Yazan zehir hocam demiş.
+
+313
+00:30:33,940 --> 00:30:37,519
+Tamam tamam. Bu işte arkadaşlar biliyor musunuz?
+
+314
+00:30:38,660 --> 00:30:43,420
+Hocam böyle birebir derslerde falan getiriyor musunuz?
+
+315
+00:30:43,840 --> 00:30:46,220
+Tabii canım. Hobi getirebiliyorum.
+
+316
+00:30:46,220 --> 00:30:50,140
+Ama şu anda istediğinizi isteyebilirsiniz. Hiç önemli değil. Ben iş yaparım.
+
+317
+00:30:51,259 --> 00:30:51,740
+Ne verler?
+
+318
+00:30:54,220 --> 00:30:57,400
+Sneakers, hobileron falan öyle isteyenler de oluyor.
+
+319
+00:30:57,500 --> 00:30:59,519
+Buradan daha tabii bir problem değil yani.
+
+320
+00:30:59,519 --> 00:31:05,160
+Tamam. Ama asıl derste küçük hobilerden veriyoruz maalesef.
+
+321
+00:31:06,059 --> 00:31:07,480
+Canını sağp o da yeter.
+
+322
+00:31:08,200 --> 00:31:09,980
+Ben bütçeyim de ona yapıyorum arkadaşlar.
+
+323
+00:31:10,380 --> 00:31:14,440
+Peki. O zaman derse biraz şey olmuştur herhalde.
+
+324
+00:31:14,980 --> 00:31:18,019
+Arkadaşların ilgisi koparlanmıştır. Zaten bildiğiniz vardı.
+
+325
+00:31:20,400 --> 00:31:24,519
+Evet küçüğünü bulamadım Eminim. Ben de. Bu küçük değil zaten. Biraz büyük galiba.
+
+326
+00:31:24,640 --> 00:31:25,660
+Ya da küçük olan mı bilmiyorum.
+
+327
+00:31:25,660 --> 00:31:30,059
+Normalde küçüğünden. Hatta bir sınıfta dağıtmıştım.
+
+328
+00:31:30,720 --> 00:31:35,360
+Arkadaşım biri dedi ki ya hocam 25 kuş çikolata mı dağıtıyorsunuz bize falan dedi.
+
+329
+00:31:36,259 --> 00:31:37,620
+Yapacak bir şey yok. Ne yapayım yani.
+
+330
+00:31:41,364 --> 00:31:43,423
+Olsun. Gönüller bir olsun. Evet arkadaşlar
+
+331
+00:31:43,423 --> 00:31:45,683
+şimdi bu 4 çarpı
+
+332
+00:31:45,683 --> 00:31:46,203
+4'lük
+
+333
+00:31:46,203 --> 00:31:49,344
+o bir de burada canınız çekiyor mu? Kapatayım
+
+334
+00:31:49,344 --> 00:31:50,663
+şunu. Sileyim.
+
+335
+00:31:53,044 --> 00:31:53,504
+Birazdan
+
+336
+00:31:53,504 --> 00:31:55,344
+snickers dağıtacağım size.
+
+337
+00:31:56,923 --> 00:31:59,064
+4 çarpı 4'lük maddesin
+
+338
+00:31:59,064 --> 00:32:01,304
+determinantını arkadaşlar şöyle
+
+339
+00:32:01,304 --> 00:32:03,524
+buluyoruz. Laplace expansion'la
+
+340
+00:32:03,524 --> 00:32:05,804
+yani Laplace genişlemesiyle
+
+341
+00:32:05,804 --> 00:32:09,423
+Tamam peki sildim
+
+342
+00:32:09,423 --> 00:32:11,504
+[öğrenci]. İnşallah
+
+343
+00:32:11,504 --> 00:32:13,403
+şu pandemi geçsin. Hep beraber
+
+344
+00:32:13,403 --> 00:32:15,463
+otururuz. Çay da yeriz. İçeriz.
+
+345
+00:32:15,564 --> 00:32:15,844
+Doğru mu?
+
+346
+00:32:17,804 --> 00:32:19,423
+Şimdi bir tane sıtır ya da
+
+347
+00:32:19,423 --> 00:32:20,943
+sütun seçiyorsunuz arkadaşlar.
+
+348
+00:32:25,107 --> 00:32:28,067
+Bir tane satır ya da sütun seçiliyor.
+
+349
+00:32:29,107 --> 00:32:31,467
+Tabii bu satır ya da sütunu seçerken
+
+350
+00:32:31,467 --> 00:32:38,727
+bol sıfırlı satır ya da sütunu seçerseniz sizin yararınız olur.
+
+351
+00:32:38,827 --> 00:32:39,567
+Neden biliyor musunuz?
+
+352
+00:32:39,607 --> 00:32:40,167
+Şundan dolayı.
+
+353
+00:32:40,167 --> 00:32:44,167
+Şimdi ilk satırı seçtiğimizi varsayalım ki 3x3'lükte böyle yapmıştık.
+
+354
+00:32:46,427 --> 00:32:51,167
+İlk satıra göre, birinci satıra göre Laplace açılımını alıyorum.
+
+355
+00:32:52,067 --> 00:32:52,867
+Şöyle arkadaşlar.
+
+356
+00:32:52,867 --> 00:32:56,248
+Bu da yine A matiz olsun.
+
+357
+00:32:58,107 --> 00:33:02,028
+Determinant A eşittir.
+
+358
+00:33:04,467 --> 00:33:05,967
+A11 çarpı
+
+359
+00:33:05,967 --> 00:33:10,167
+A11'in
+
+360
+00:33:10,167 --> 00:33:12,927
+neyi?
+
+361
+00:33:13,548 --> 00:33:14,347
+Kofak görüntü.
+
+362
+00:33:15,528 --> 00:33:16,127
+Artı
+
+363
+00:33:16,127 --> 00:33:20,167
+A12 çarpı
+
+364
+00:33:20,167 --> 00:33:23,548
+A12'nin kofak görüntü.
+
+365
+00:33:23,548 --> 00:33:25,407
+Artı
+
+366
+00:33:25,407 --> 00:33:29,788
+A13 çarpı
+
+367
+00:33:29,788 --> 00:33:32,788
+A13'ün kofak görüntü.
+
+368
+00:33:32,788 --> 00:33:33,788
+Artı
+
+369
+00:33:33,788 --> 00:33:37,788
+A14 çarpı
+
+370
+00:33:37,788 --> 00:33:40,947
+A14'ün
+
+371
+00:33:40,947 --> 00:33:41,788
+kofak görüntü.
+
+372
+00:33:41,788 --> 00:33:42,488
+Kofak görüntü.
+
+373
+00:33:43,488 --> 00:33:44,167
+Hocam bu kofak görüntü.
+
+374
+00:33:44,167 --> 00:33:44,667
+Bu kofak görüntü.
+
+375
+00:33:44,667 --> 00:33:46,788
+Kofak görüntü arasındaki tek fark işaret farkı değil mi?
+
+376
+00:33:47,907 --> 00:33:52,567
+Kofak görüntü arasındaki fark her şeyin kofak görüntü değişiyor.
+
+377
+00:33:52,667 --> 00:33:55,187
+Mesela A1'in kofak görüntü nasıl buluyorsun?
+
+378
+00:33:55,187 --> 00:33:56,927
+Önce
+
+379
+00:33:56,927 --> 00:33:58,987
+minörü oluşturuyorsun.
+
+380
+00:33:59,147 --> 00:34:00,508
+Minörün determinantını alıyorsun.
+
+381
+00:34:01,508 --> 00:34:03,187
+Yani bunların her birinin kofak görüntü farklı.
+
+382
+00:34:03,288 --> 00:34:04,347
+Sadece işaret fark değil.
+
+383
+00:34:04,567 --> 00:34:06,248
+Tamam minörlerin hepsi aynı olmuyor mu?
+
+384
+00:34:06,327 --> 00:34:09,067
+Sadece bir satır ve sütün silmiyor muyuz minörü oluşturmak için?
+
+385
+00:34:09,307 --> 00:34:09,567
+Tamam.
+
+386
+00:34:10,567 --> 00:34:11,128
+Nasıl aynı?
+
+387
+00:34:11,268 --> 00:34:12,648
+Ben sorduğum soruyu anlamadım.
+
+388
+00:34:13,307 --> 00:34:13,768
+Şimdi bak.
+
+389
+00:34:14,027 --> 00:34:16,188
+Mesela A11'in minörünü nasıl oluşturacağım?
+
+390
+00:34:17,527 --> 00:34:18,007
+Pardon.
+
+391
+00:34:18,188 --> 00:34:20,447
+A11'in kofak görüntü.
+
+392
+00:34:20,567 --> 00:34:22,228
+Yani büyük A11'ini nasıl oluşturacağım?
+
+393
+00:34:22,228 --> 00:34:25,467
+Şu satırla şu sütünü sileceğim değil mi?
+
+394
+00:34:26,228 --> 00:34:26,507
+Evet.
+
+395
+00:34:26,728 --> 00:34:28,587
+Şu yeri kalan maddesin determinantı.
+
+396
+00:34:29,007 --> 00:34:34,507
+Ama A1-2'nin kofaktörünü oluştururken şu satırla şu sütünü siliyorum.
+
+397
+00:34:34,628 --> 00:34:35,827
+Bak matris farklı zaten.
+
+398
+00:34:35,947 --> 00:34:36,688
+Determinant da farklı.
+
+399
+00:34:37,047 --> 00:34:37,907
+İşaret da farklı.
+
+400
+00:34:38,387 --> 00:34:44,587
+En sonuncu ve ilk en sonuncu şeyleri sütür ve satınları siliyoruz diye sandım.
+
+401
+00:34:44,708 --> 00:34:45,228
+Pardon hocam.
+
+402
+00:34:45,887 --> 00:34:46,268
+Tamam mı?
+
+403
+00:34:46,268 --> 00:34:46,927
+Öyle değil yani.
+
+404
+00:34:47,887 --> 00:34:48,827
+Her birinin farklı.
+
+405
+00:34:48,827 --> 00:34:51,708
+Bu ne oldu şimdi şu yazdığım arkadaşlar?
+
+406
+00:34:52,228 --> 00:34:54,228
+Birinci satıra göre...
+
+407
+00:34:54,228 --> 00:35:22,208
+...
+
+408
+00:34:58,324 --> 00:35:00,204
+Birinci satır boyunca
+
+409
+00:35:03,987 --> 00:35:05,627
+flat loss genişlemesi.
+
+410
+00:35:12,436 --> 00:35:18,016
+Eğer ilk sütunu seçmiş olsaydım, yani birinci sütunu seçmiş olsaydım, yine aynı mantık arkadaşlar.
+
+411
+00:35:19,276 --> 00:35:20,716
+Determinant A ne olacak?
+
+412
+00:35:21,615 --> 00:35:35,416
+A11 ile A11'in kofaktörü artı, A21 ile A21 kofaktör artı, A pardon.
+
+413
+00:35:39,891 --> 00:36:01,672
+A31 ile A31 kofaktör artı A41 ile A41'in kofaktörü. Bu da ne? Birinci sütuna göre boyunca ya da Laplace genişlemesi.
+
+414
+00:36:01,672 --> 00:36:10,631
+Şimdi bunu genellemişler. Çünkü n büyüktür 3 için yapıyoruz ya biz bunu arkadaşlar.
+
+415
+00:36:12,652 --> 00:36:21,471
+Yani n büyüktür 3 için n çarpı n boyutundaki bütün karisel matrislerin determinantını bu şekilde bulabilirsiniz.
+
+416
+00:36:23,951 --> 00:36:29,172
+Determinant A ne olacak? Eğer satır boyunca açarsanız.
+
+417
+00:36:31,672 --> 00:36:35,271
+K eşittir 1'den eğer n çarpı ne boyutluysa.
+
+418
+00:36:37,591 --> 00:36:37,851
+A
+
+419
+00:36:37,851 --> 00:36:41,891
+Eğer inci satıra göre açtıysak.
+
+420
+00:36:43,091 --> 00:36:43,771
+A i
+
+421
+00:36:43,771 --> 00:36:45,371
+K
+
+422
+00:36:45,371 --> 00:36:48,011
+A i K çarpı
+
+423
+00:36:48,011 --> 00:36:50,451
+büyük A i K
+
+424
+00:36:50,451 --> 00:36:50,491
+A i K
+
+425
+00:36:50,491 --> 00:37:10,192
+A
+
+426
+00:37:10,192 --> 00:37:18,271
+A i K
+
+427
+00:36:58,867 --> 00:37:08,268
+Bu satır boyunca, sütün boyunca eğer genişlemeyi kullandıysanız da, şuraya yazdık, bunu da genelleyebiliriz o halde.
+
+428
+00:37:09,268 --> 00:37:13,507
+Determinant A eşittir ne olacak? Söyleyene hobi var.
+
+429
+00:37:16,387 --> 00:37:18,467
+K eşittir birden neye ne olacak?
+
+430
+00:37:26,164 --> 00:37:28,644
+Şimdi, söyleyin.
+
+431
+00:37:31,284 --> 00:37:31,644
+A
+
+432
+00:37:31,644 --> 00:37:33,884
+K
+
+433
+00:37:33,884 --> 00:37:36,604
+Güzel.
+
+434
+00:37:40,500 --> 00:37:41,420
+Tamam, put.
+
+435
+00:37:42,320 --> 00:37:42,679
+Puta.
+
+436
+00:37:47,284 --> 00:37:48,764
+Hocam bir şey sorabilir miyim?
+
+437
+00:37:48,784 --> 00:37:49,304
+Tabii ki.
+
+438
+00:37:51,423 --> 00:37:52,064
+Söyle.
+
+439
+00:37:53,064 --> 00:37:59,923
+Determinant A'yı bulmak için birinci sütunu ya da birinci satırı sildik ya, A11 için.
+
+440
+00:38:01,364 --> 00:38:06,624
+Bunu hani determinant A, yani büyük A için bütün matrisinkini mi aldık?
+
+441
+00:38:07,443 --> 00:38:12,864
+Atıyorum ben ikinci sütunu ya da üçüncü satırı silebilirdim değil mi?
+
+442
+00:38:12,963 --> 00:38:15,384
+Aynı sonucu mu varacaktı? Orayı algılayamadım.
+
+443
+00:38:15,384 --> 00:38:25,304
+Şimdi şöyle, her bir eleman için, A11 elemanı için, A11'in neyini buluyorum?
+
+444
+00:38:25,443 --> 00:38:26,403
+Kofaktörünü buluyorum.
+
+445
+00:38:30,420 --> 00:38:34,579
+Bu kofaktörde şöyle bulunuyor. Bunu sadece tek türlü bulabilirsin.
+
+446
+00:38:35,860 --> 00:38:37,380
+Böyle istediğin gibi bulamazsın.
+
+447
+00:38:38,539 --> 00:38:43,420
+A maddesinin birinci satırıyla birinci tutunumu silersin.
+
+448
+00:38:44,059 --> 00:38:50,500
+Geriye kalan şu maddesin determinantını bulursun. Tamam mı?
+
+449
+00:38:51,420 --> 00:38:52,480
+Başka türlü bulamazsın.
+
+450
+00:38:53,980 --> 00:38:56,579
+A1-2'nin kofaktörü içinde aynı şekilde.
+
+451
+00:38:56,579 --> 00:39:01,780
+A1-2, birinci satır, ikinci tutunda.
+
+452
+00:39:03,460 --> 00:39:04,240
+O halde
+
+453
+00:39:04,240 --> 00:39:10,840
+birinci satır, ikinci tutunu sildim. Geriye kalan bak şu.
+
+454
+00:39:12,680 --> 00:39:15,220
+3x3'lik matris. Bunun determinantını bulursun.
+
+455
+00:39:16,599 --> 00:39:17,019
+Tamam mı?
+
+456
+00:39:17,539 --> 00:39:18,680
+Tamam mı canım anladım.
+
+457
+00:39:19,519 --> 00:39:20,360
+Teşekkür ederim.
+
+458
+00:39:20,460 --> 00:39:20,980
+Rica ederim.
+
+459
+00:39:21,639 --> 00:39:23,300
+Şimdi arkadaşlar, o yüzden
+
+460
+00:39:23,300 --> 00:39:26,840
+bu da bakın yaptıklarımızı yazmış.
+
+461
+00:39:26,840 --> 00:39:26,880
+Bu da bakın yaptıklarımızı yazmış.
+
+462
+00:39:33,907 --> 00:39:40,288
+Bu satır boyunca ne yapıyormuşuz?
+
+463
+00:39:40,447 --> 00:39:47,188
+Seçtiğimiz satırdaki elemanların her biriyle bunların kofaktörlerini çarpıp topluyormuşuz.
+
+464
+00:39:47,867 --> 00:39:54,268
+Eğer sıfırını seçtiğsek, sıfırındaki her bir elemanla bunun kofaktörünü çarpıp topluyormuşuz.
+
+465
+00:39:54,307 --> 00:39:54,607
+Bu kadar.
+
+466
+00:39:56,587 --> 00:40:00,547
+Şimdi burada önemli olan bir mevzu da şu arkadaşlar.
+
+467
+00:40:01,168 --> 00:40:02,668
+Dedim kaçırmış olabilirsiniz.
+
+468
+00:40:03,907 --> 00:40:11,567
+A'nın herhangi bir satır ya da sütunlu seçim diyor ya, bu satırı ya da sütunlu seçerken şöyle yapacaksınız.
+
+469
+00:40:13,627 --> 00:40:18,967
+Hangi satırda daha fazla sıfır varsa ya da sütunlu seçeceksiniz arkadaşlar.
+
+470
+00:40:19,228 --> 00:40:22,168
+Sebebi de şu, sebebini kim söyleyecek?
+
+471
+00:40:24,947 --> 00:40:27,127
+Hocam işlem kolaylığı için değil mi?
+
+472
+00:40:28,067 --> 00:40:29,288
+Neden işlem kolay olsun?
+
+473
+00:40:29,288 --> 00:40:35,507
+Hocam çünkü A1 sıfırla çarptığım zaman kofaktörünün büyük bir zaman kaybetmemiş.
+
+474
+00:40:35,547 --> 00:40:36,547
+Aynen öyle, bravo.
+
+475
+00:40:37,007 --> 00:40:37,248
+Bravo.
+
+476
+00:40:38,107 --> 00:40:40,188
+Şurada bakın AI'ler var.
+
+477
+00:40:41,208 --> 00:40:44,027
+İşte elemanlar var yani, maddesinin elemanları bunlar.
+
+478
+00:40:44,027 --> 00:40:50,248
+Eğer bunlar sıfır olursa, kofaktörleri hesaplamanıza gerek kalmayacak.
+
+479
+00:40:50,387 --> 00:40:53,007
+Yani bir sürü işlemler sizi kurtarmış olacak.
+
+480
+00:40:54,127 --> 00:40:54,288
+Tamam.
+
+481
+00:40:55,947 --> 00:40:57,688
+Hala A1 şifresine mi soran var?
+
+482
+00:40:58,347 --> 00:41:00,228
+Neyse, onu bilele havale ediyoruz.
+
+483
+00:41:00,228 --> 00:41:30,228
+Evet.
+
+484
+00:41:07,635 --> 00:41:27,795
+Bir de arkadaşlar, şunu da söyleyeyim. Ya ben anlatamıyorum ya da yani psikolojik herhalde her insanlar var bu. Mesela diyorum ki, işte [öğrenci] de yazmış oraya, [şifre], orada nasıl yazıldıysa öyle diyorum. Arkadaş bana mail atmış, hocam ben yazıyorum, yazıyorum, olmuyor. E nasıl yazdım?
+
+485
+00:41:27,795 --> 00:41:38,896
+İşte, mesela, ben orada büyük harfle yazmışım bir şeyi, o küçük harfle yazmış. Aynısını yazmazsan olmaz yani, bu şifre sonuçta değil mi yani? Mantık yazıyor.
+
+486
+00:41:39,655 --> 00:41:40,755
+Ya ilginç.
+
+487
+00:41:45,588 --> 00:41:46,068
+Peki.
+
+488
+00:41:48,327 --> 00:41:54,588
+Bir de arkadaşlar, bir de eğer şurada...
+
+489
+00:41:59,956 --> 00:42:01,736
+i eşit değildir, c ise
+
+490
+00:42:05,684 --> 00:42:07,224
+Yani biz ne yapıyorduk?
+
+491
+00:42:08,684 --> 00:42:17,804
+A1-1, büyük A1-1, artı işte A1-2, büyük A1-2.
+
+492
+00:42:19,364 --> 00:42:21,604
+Topluyorduk bunları ya, bu determinantı veriyordu.
+
+493
+00:42:21,604 --> 00:42:33,864
+Eğer arkadaşlar şu, mesela satır boyunca, şunlar aynı değilse, yani mesela bu A1-1, burası A2-1.
+
+494
+00:42:35,684 --> 00:42:43,923
+A1-1, A2-1, artı işte A1-2, ne olabilir?
+
+495
+00:42:45,064 --> 00:42:46,024
+A2-2.
+
+496
+00:42:48,964 --> 00:42:52,804
+Bunları çarpıp toplarsanız da sıfırı elde edersiniz.
+
+497
+00:42:52,964 --> 00:42:54,084
+O da güzel bir özellik.
+
+498
+00:42:54,664 --> 00:42:55,284
+Onu söylüyor.
+
+499
+00:42:56,664 --> 00:42:56,964
+Burada.
+
+500
+00:42:59,423 --> 00:43:00,224
+Bu da onu söylüyor.
+
+501
+00:43:00,744 --> 00:43:01,164
+Tamam mı?
+
+502
+00:43:01,164 --> 00:43:07,464
+Bu aslında maddisin tersini bulurken bizim işimize yarayacak.
+
+503
+00:43:09,324 --> 00:43:10,964
+Ama ilginç değil mi yani?
+
+504
+00:43:11,024 --> 00:43:11,324
+Bakın.
+
+505
+00:43:11,824 --> 00:43:17,564
+Eğer İ, J'ye eşit değilse şurada bu toplam sıfır yapıyor.
+
+506
+00:43:18,944 --> 00:43:20,224
+Bence çok güzel bir özellik.
+
+507
+00:43:23,572 --> 00:43:39,652
+Şimdi burada örnekte arkadaşlar, 3x3'lüğün determinantını, laplaz genişlemesiyle ya da laplaz açılımıyla bulmuş ama, siz zaten bunun nasıl, determinantın nasıl bulunduğunu biliyorsunuz değil mi?
+
+508
+00:43:40,532 --> 00:43:45,032
+Yani, verdiğimiz yöntem zaten aslında laplaz açılımlıydı.
+
+509
+00:43:45,032 --> 00:43:53,711
+Bir de sarı skruvayı da bulabilirsiniz. O yüzden ben, 4x4'lük bir tane buraya örnek yazacağım.
+
+510
+00:43:56,672 --> 00:44:03,751
+Buraya değil de şuraya, boş bir yere yazayım. Çünkü biraz uzun olabilir.
+
+511
+00:44:05,751 --> 00:44:10,452
+En azından, laplaz açılımının nasıl bir şey olduğunu daha iyi anlamış olalım.
+
+512
+00:44:10,452 --> 00:44:11,452
+Bulmak istediğimiz, bir tane daha iyi anlamış olalım.
+
+513
+00:44:11,452 --> 00:44:15,452
+Bulmak istediğimiz determinem şu arkadaşlar.
+
+514
+00:44:15,452 --> 00:44:20,452
+Bir, bir, iki, iki, iki, iki, iki, iki, üç, dört.
+
+515
+00:44:20,452 --> 00:44:20,791
+Bir, iki, iki, iki, üç, dört.
+
+516
+00:44:25,876 --> 00:44:28,436
+Sınavda 4 çarpı 4'lük çıkar mı?
+
+517
+00:44:28,496 --> 00:44:29,516
+Çıkmaz onu da söyleyeyim.
+
+518
+00:44:30,316 --> 00:44:32,156
+O zaman diyeceksiniz ki laf bas açılamını
+
+519
+00:44:32,156 --> 00:44:33,796
+ya da genişlemesini niye öğrendik?
+
+520
+00:44:34,996 --> 00:44:36,615
+Yani o da ayrı bir mevzu.
+
+521
+00:44:37,596 --> 00:44:38,576
+Zaten 3'ten
+
+522
+00:44:38,576 --> 00:44:39,615
+büyükleri için
+
+523
+00:44:39,615 --> 00:44:41,456
+hepsi için geçerli değil mi bunlar?
+
+524
+00:44:41,596 --> 00:44:42,476
+Evet geçerli.
+
+525
+00:44:43,556 --> 00:44:44,456
+Şunu söylüyorum.
+
+526
+00:44:44,456 --> 00:44:47,036
+Yani sınavda 4 çarpı 4'lükken
+
+527
+00:44:47,036 --> 00:44:48,676
+3'ten daha büyük bir determinant
+
+528
+00:44:48,676 --> 00:44:49,256
+çıkmaz.
+
+529
+00:44:51,196 --> 00:44:52,596
+Onu kastettim.
+
+530
+00:44:52,596 --> 00:44:56,536
+Böylelerde falan
+
+531
+00:44:56,536 --> 00:44:58,996
+yazılımda falan işimize yarıyor duram herhalde.
+
+532
+00:44:59,336 --> 00:45:00,896
+Yok muhakkak işinize yarar da
+
+533
+00:45:00,896 --> 00:45:02,796
+yani işinize yaramayacak olsa
+
+534
+00:45:02,796 --> 00:45:03,496
+niye verelim sen?
+
+535
+00:45:06,416 --> 00:45:06,756
+3
+
+536
+00:45:06,756 --> 00:45:09,396
+0
+
+537
+00:45:09,396 --> 00:45:12,436
+3
+
+538
+00:45:12,436 --> 00:45:15,356
+2
+
+539
+00:45:15,356 --> 00:45:17,636
+0
+
+540
+00:45:17,636 --> 00:45:19,836
+2
+
+541
+00:45:19,836 --> 00:45:21,016
+3
+
+542
+00:45:21,016 --> 00:45:23,596
+Şimdi arkadaşlar size 4 çarpı 4'lük bir
+
+543
+00:45:23,596 --> 00:45:24,716
+maddesin determinatı
+
+544
+00:45:24,716 --> 00:45:25,416
+sorulduğu zaman
+
+545
+00:45:25,416 --> 00:45:27,216
+sizin laf bas açılamından başka
+
+546
+00:45:27,216 --> 00:45:28,836
+ya da laf bas genişlemesinden başka
+
+547
+00:45:28,836 --> 00:45:30,776
+bunu çözebileceğiniz herhangi bir yöntem yok.
+
+548
+00:45:32,316 --> 00:45:33,696
+Ne yapıyormuşuz?
+
+549
+00:45:34,136 --> 00:45:34,936
+Bir satır ya da
+
+550
+00:45:34,936 --> 00:45:35,996
+sütun seçiyoruz.
+
+551
+00:45:36,896 --> 00:45:37,996
+Bol sıfırlı olmasına
+
+552
+00:45:37,996 --> 00:45:38,856
+dikkat ediyoruz.
+
+553
+00:45:39,396 --> 00:45:39,516
+Değil mi?
+
+554
+00:45:40,436 --> 00:45:41,376
+Bol sıfırlı olursa
+
+555
+00:45:41,376 --> 00:45:42,516
+işlerimiz kolaylaşır.
+
+556
+00:45:42,876 --> 00:45:43,976
+Bol sıfırlı olmazsa
+
+557
+00:45:43,976 --> 00:45:44,356
+atıyorum
+
+558
+00:45:44,356 --> 00:45:45,556
+ilk sütunu seçerseniz
+
+559
+00:45:45,556 --> 00:45:47,016
+ya da ilk satırı seçerseniz
+
+560
+00:45:47,016 --> 00:45:48,516
+tek tek hepsini
+
+561
+00:45:48,516 --> 00:45:50,036
+hesaplamak zorunda
+
+562
+00:45:50,036 --> 00:45:51,096
+kalırsınız.
+
+563
+00:45:52,476 --> 00:45:53,036
+Yani [öğrenci]
+
+564
+00:45:53,036 --> 00:45:53,596
+laf bas
+
+565
+00:45:53,596 --> 00:45:55,996
+soruları ben hazırlamayacağım
+
+566
+00:45:55,996 --> 00:45:56,536
+ama
+
+567
+00:45:56,536 --> 00:45:58,036
+4 çarpı 4'lük
+
+568
+00:45:58,036 --> 00:45:59,476
+maddeslerin
+
+569
+00:45:59,476 --> 00:46:01,056
+determinatları
+
+570
+00:46:01,056 --> 00:46:01,936
+sınavda yok yani.
+
+571
+00:46:02,796 --> 00:46:03,236
+Tamam mı?
+
+572
+00:46:04,376 --> 00:46:05,296
+Ama 3 çarpı
+
+573
+00:46:05,296 --> 00:46:05,796
+3'lüğün
+
+574
+00:46:05,796 --> 00:46:07,516
+alakalı
+
+575
+00:46:07,516 --> 00:46:08,936
+yani laf bas sorulabilir
+
+576
+00:46:08,936 --> 00:46:09,376
+aynı şey.
+
+577
+00:46:09,516 --> 00:46:10,476
+Çok bir şey fark etmiyor.
+
+578
+00:46:10,476 --> 00:46:14,356
+Şimdi ne yapacağız burada?
+
+579
+00:46:14,676 --> 00:46:15,416
+Hangi satır ya da
+
+580
+00:46:15,416 --> 00:46:16,416
+sütunu seçebiliriz?
+
+581
+00:46:17,496 --> 00:46:18,556
+Üçüncü satır.
+
+582
+00:46:19,216 --> 00:46:20,936
+Üçüncü satır ya da
+
+583
+00:46:20,936 --> 00:46:24,756
+ikinci satırı
+
+584
+00:46:24,756 --> 00:46:25,796
+seçebiliriz.
+
+585
+00:46:25,856 --> 00:46:26,756
+İkisinde de ne var?
+
+586
+00:46:29,076 --> 00:46:29,536
+Sıfır.
+
+587
+00:46:30,076 --> 00:46:31,496
+İki tane sıfır olur.
+
+588
+00:46:31,496 --> 00:46:32,716
+O halde
+
+589
+00:46:32,716 --> 00:46:34,796
+üçüncü satır boyunca
+
+590
+00:46:34,796 --> 00:46:36,216
+ben üçüncü satır seçeyim.
+
+591
+00:46:37,816 --> 00:46:39,596
+Üçüncü satır boyunca
+
+592
+00:46:39,596 --> 00:46:44,716
+laf bas genişlemesini
+
+593
+00:46:44,716 --> 00:46:46,136
+uygulayalım.
+
+594
+00:46:50,643 --> 00:46:52,923
+Yine A matrisiymiş bu arkadaşlar.
+
+595
+00:46:54,063 --> 00:46:57,083
+Determinant A eşittir.
+
+596
+00:46:59,143 --> 00:47:01,283
+3 çarpı, bu ne?
+
+597
+00:47:03,363 --> 00:47:06,023
+3. satır, 1. satır, değil mi?
+
+598
+00:47:07,763 --> 00:47:09,243
+A 3 1
+
+599
+00:47:09,243 --> 00:47:13,243
+Ya da şöyle yazalım da.
+
+600
+00:47:17,235 --> 00:47:40,516
+A31'in kopaktörü artı A32 artı A33 artı A34
+
+601
+00:47:47,827 --> 00:47:49,628
+A3, 4
+
+602
+00:47:49,628 --> 00:47:51,487
+Şimdi
+
+603
+00:47:56,724 --> 00:48:10,504
+A31 ne? 3. 3 çarpı A31 artı A32 sıfır. İşte neden şimdi sıfır seçtiğimizi daha iyi anladık değil mi?
+
+604
+00:48:10,504 --> 00:48:35,224
+A31 artı sıfır çarpı A3 3 artı A34 değilmiş. Eksi 3 çarpı A34. O halde bakın işimiz çok kolaylaştı. Bunlar sıfır yani bu faktörleri hesaplamak zorunda değiliz.
+
+605
+00:48:35,224 --> 00:48:42,704
+Sadece A31 ve A34 hesaplayacağız. O halde A31'i hesaplayalım arkadaşlar.
+
+606
+00:48:42,704 --> 00:48:48,844
+A31 eşittir. Eksi 1 üzeri 3 artı 1.
+
+607
+00:48:53,204 --> 00:48:54,244
+Determinant.
+
+608
+00:48:57,492 --> 00:49:01,052
+Üçüncü satır, birinci sütunu siliyorum.
+
+609
+00:49:04,467 --> 00:49:06,467
+3. satır
+
+610
+00:49:06,467 --> 00:49:08,467
+1. satır sildim
+
+611
+00:49:08,467 --> 00:49:10,467
+geriye kalan hangisi?
+
+612
+00:49:10,467 --> 00:49:12,467
+2
+
+613
+00:49:12,467 --> 00:49:14,467
+eksi 3
+
+614
+00:49:14,467 --> 00:49:16,467
+4
+
+615
+00:49:16,467 --> 00:49:17,467
+2
+
+616
+00:49:17,467 --> 00:49:19,467
+1
+
+617
+00:49:19,467 --> 00:49:21,467
+3
+
+618
+00:49:21,467 --> 00:49:23,467
+0
+
+619
+00:49:23,467 --> 00:49:25,467
+eksi 2
+
+620
+00:49:25,467 --> 00:49:27,467
+3
+
+621
+00:49:31,092 --> 00:49:33,092
+Bunu nasıl bulabiliriz arkadaşlar?
+
+622
+00:49:37,552 --> 00:49:41,172
+Bunu da şöyle bulalım mı? Güzellik olsun. Hadi.
+
+623
+00:49:41,751 --> 00:49:45,872
+Bu maddesi de arkadaşlar, şunu da final aplast genişlemesiyle bulalım.
+
+624
+00:49:49,331 --> 00:49:51,112
+Hangi sütümü seçeceğim? Madriken.
+
+625
+00:49:52,612 --> 00:49:53,211
+Birincisidir.
+
+626
+00:50:00,755 --> 00:50:17,755
+Birinci sütun boyunca Laplace genişlemesi. O halde ne oluyor? Bakın ilk eleman ne? 2. Bu da B matrisi olsun.
+
+627
+00:50:21,556 --> 00:50:47,356
+Determinant B eşittir. 2 çarpı, A, 1, 1 yani bu, çarpı, eksi 1 üzeri, 1 artı 1, determinant, bunun bulunduğu satır ve sütunu siliyorum, ne? 1, 3, eksi 2, 3.
+
+628
+00:50:52,436 --> 00:51:20,856
+Artı, bu stuna bir açıyordum, çarpı iki, eksi bir üzeri bu hangi eleman? A2 bir, 2 artı bir, determinant, ikinci satır, birinci stun, ikinci satır, birinci stun, eksi üç, dört, eksi iki,
+
+629
+00:51:22,436 --> 00:51:30,216
+üç, artı sıfır olduğu için, işte sıfır çarpı neyse, çok önemli değil, yani sıfır.
+
+630
+00:51:31,936 --> 00:51:34,256
+O halde, bu determinant neymiş?
+
+631
+00:51:37,076 --> 00:51:39,036
+Burası pozitif, tamam mı?
+
+632
+00:51:39,896 --> 00:51:46,675
+İki çarpı, bunun determinantı ne? Bir çarpı, üç, eksi, eksi altı, yani dokuz mu?
+
+633
+00:51:48,756 --> 00:51:50,816
+Üç, artı altı, dokuz.
+
+634
+00:51:55,188 --> 00:52:12,068
+Artı, burası ne oldu arkadaşlar? Eksi 1 oldu. Eksi 2 çarpı, kü determinanta bakalım. Burası nedir? Eksi 9, eksi 8, yani eksidir.
+
+635
+00:52:14,648 --> 00:52:23,968
+O halde neymiş bu? 2, 18, 20 imiş. Şunun determinantı 20. Önündeki işaret ne?
+
+636
+00:52:25,188 --> 00:52:28,648
+Pozitif. Demek ki A31 neymiş arkadaşlar?
+
+637
+00:52:30,728 --> 00:52:37,508
+20 imiş. Gerçekten de öyle mi? Hızlıca bunu sarı hız kuralıyla da yapabiliriz.
+
+638
+00:52:37,847 --> 00:52:39,988
+Öyle biliyor musunuz şunu? Öğreteyim size.
+
+639
+00:52:40,807 --> 00:52:43,148
+Sarı hız kuralını şöyle hızlıca yapabiliyoruz arkadaşlar.
+
+640
+00:52:45,508 --> 00:52:50,008
+Esas köşegendeki elemanları çarpıyorsunuz. 2 çarpı, 1 çarpı, 3, 6.
+
+641
+00:52:52,008 --> 00:52:54,228
+Sonda, 6.
+
+642
+00:52:58,068 --> 00:53:09,888
+Artı, yakın olan iki elemanla uzak olan alttaki elemanı çarpıyorsunuz. Yani çizgiye yakın olan, eksi 3'te 3'ü, bir de çizginin altında uzak olan 0'ı çarpıyorsunuz.
+
+643
+00:53:09,888 --> 00:53:20,788
+Sonra çizginin altında iki tane yakın elemanla, 2 çarpı eksi 2 ile uzak olanı çarpıyorsunuz. Yani 2, eksi 4, eksi 16.
+
+644
+00:53:24,211 --> 00:53:24,771
+Sonra
+
+645
+00:53:29,460 --> 00:53:32,840
+Ters köşegen üzerindekileri çarpıp bundan çıkartıyorsunuz.
+
+646
+00:53:32,880 --> 00:53:33,300
+Sıfır.
+
+647
+00:53:34,260 --> 00:53:40,019
+Yine köşegenin üstünde yakın olan iki tane ile uzak olan bir taneyi çarpıyoruz.
+
+648
+00:53:40,179 --> 00:53:40,980
+Ne oldu burası?
+
+649
+00:53:41,679 --> 00:53:42,360
+Eksi 6.
+
+650
+00:53:43,579 --> 00:53:44,380
+Eksi 18.
+
+651
+00:53:46,440 --> 00:53:47,800
+Bunu çıkartacaktık.
+
+652
+00:53:47,840 --> 00:53:49,519
+Eksi 18 artı 18 oldu.
+
+653
+00:53:51,940 --> 00:53:54,900
+Yakın iki tane ne yaptı?
+
+654
+00:53:54,980 --> 00:53:55,619
+Eksi 6.
+
+655
+00:53:56,880 --> 00:53:59,300
+Eksi 12 artı 12.
+
+656
+00:53:59,460 --> 00:54:03,119
+Yanlış mı bulmuşuz?
+
+657
+00:54:03,179 --> 00:54:03,480
+Ne oldu?
+
+658
+00:54:05,099 --> 00:54:05,599
+30.
+
+659
+00:54:09,179 --> 00:54:10,360
+Hocam doğru değil mi?
+
+660
+00:54:11,099 --> 00:54:11,800
+20 çıktı mı?
+
+661
+00:54:12,400 --> 00:54:13,240
+Çıktı hocam.
+
+662
+00:54:13,360 --> 00:54:15,360
+Tamam evet 20 bulmuşuz doğru.
+
+663
+00:54:18,179 --> 00:54:20,760
+Yani şey laplaz açılımı böyle yapılıyor arkadaşlar.
+
+664
+00:54:20,960 --> 00:54:22,360
+Yani 3'er 3'lükte de yapabilirsiniz.
+
+665
+00:54:22,500 --> 00:54:22,900
+Önemli değil.
+
+666
+00:54:25,019 --> 00:54:25,300
+Peki.
+
+667
+00:54:26,500 --> 00:54:27,019
+Son.
+
+668
+00:54:28,019 --> 00:54:28,699
+Ne kaldı?
+
+669
+00:54:29,460 --> 00:54:31,139
+A3 4'ü bulalım.
+
+670
+00:54:31,139 --> 00:54:37,280
+Hocam şimdi yukarıdakinde şey kullandık değil mi?
+
+671
+00:54:37,699 --> 00:54:38,679
+Kofaktörü kullandık.
+
+672
+00:54:38,760 --> 00:54:40,079
+Alttakinde de laplaz genişlemesi.
+
+673
+00:54:40,740 --> 00:54:41,800
+Aynı şey aynı şey.
+
+674
+00:54:41,920 --> 00:54:43,940
+İkisinde de laplaz genişlemesini kullanıyoruz.
+
+675
+00:54:44,179 --> 00:54:45,199
+Yukarıdaki dedin hangisi?
+
+676
+00:54:46,079 --> 00:54:46,880
+Kofaktörlü olan.
+
+677
+00:54:48,000 --> 00:54:49,420
+Bak şimdi şu determinat.
+
+678
+00:54:49,539 --> 00:54:50,340
+Aa yazdım ya.
+
+679
+00:54:50,960 --> 00:54:51,199
+Tamam.
+
+680
+00:54:51,199 --> 00:54:54,000
+Kofaktörlü zaten laplaz genişlemesi bu işte.
+
+681
+00:54:54,619 --> 00:54:57,019
+Şu anda burada yaptığımız şey şu bak yazmışım buraya.
+
+682
+00:54:57,500 --> 00:55:00,019
+Üçüncü satırı boyunca laplaz genişlemesi uyguluyorum.
+
+683
+00:55:00,019 --> 00:55:01,019
+Kofaktörlü.
+
+684
+00:55:01,019 --> 00:55:04,159
+Eee kofaktörleri laplaz genişlemesinde kullanıyorsun zaten.
+
+685
+00:55:04,699 --> 00:55:06,460
+İkinci yaptığımız şey ne oldu peki?
+
+686
+00:55:06,940 --> 00:55:07,420
+Hangisi?
+
+687
+00:55:08,039 --> 00:55:08,760
+Şu alttaki mi?
+
+688
+00:55:08,760 --> 00:55:12,320
+Yeşille yeni bir şey oluşturuyor ya.
+
+689
+00:55:12,420 --> 00:55:17,980
+Orada önce bunu birinci sütun boyunca laplaz genişlemesi uyguladım.
+
+690
+00:55:18,079 --> 00:55:18,519
+Bak şurada.
+
+691
+00:55:21,079 --> 00:55:21,820
+Ne olacak yani?
+
+692
+00:55:21,940 --> 00:55:22,639
+2 çarpı.
+
+693
+00:55:23,860 --> 00:55:24,860
+2 hangi eleman?
+
+694
+00:55:24,960 --> 00:55:25,440
+A11.
+
+695
+00:55:26,119 --> 00:55:27,760
+A11'in kofaktörü.
+
+696
+00:55:27,920 --> 00:55:28,699
+Onu da buldum burada.
+
+697
+00:55:29,800 --> 00:55:31,539
+Artı yine 2 çarpı.
+
+698
+00:55:32,320 --> 00:55:32,940
+Bu A21.
+
+699
+00:55:33,119 --> 00:55:35,079
+A21'in kofaktörü artı 0 çarpı.
+
+700
+00:55:35,079 --> 00:55:35,800
+İşte bir şey.
+
+701
+00:55:35,800 --> 00:55:41,300
+Yani şu determinantı bulmak için laplaz genişlemesini kullandım.
+
+702
+00:55:41,639 --> 00:55:45,220
+Daha sonra dedim ki bu 3 çarpı 3'lik bir determinant ya.
+
+703
+00:55:46,079 --> 00:55:47,099
+Bunu biz biliyoruz.
+
+704
+00:55:47,220 --> 00:55:48,039
+Nasıl biliyoruz?
+
+705
+00:55:48,240 --> 00:55:49,639
+Sarıız kuralıyla bulabiliriz dedim.
+
+706
+00:55:49,800 --> 00:55:51,320
+Sonra sarıız kuralımı uyguladım.
+
+707
+00:55:52,860 --> 00:55:53,720
+Kontrol etmek için.
+
+708
+00:55:56,740 --> 00:55:57,179
+Almadı mı?
+
+709
+00:55:59,679 --> 00:56:00,579
+Oldu gibi.
+
+710
+00:56:01,960 --> 00:56:03,500
+Hayır burada kafanı karıştıran ne?
+
+711
+00:56:03,500 --> 00:56:04,340
+Onu anlamadım.
+
+712
+00:56:04,340 --> 00:56:06,519
+Bak şu anda biz ne yapıyoruz?
+
+713
+00:56:06,639 --> 00:56:07,639
+Şu A maddesi.
+
+714
+00:56:08,400 --> 00:56:10,480
+A maddesinin determinantını bulmaya çalışıyoruz.
+
+715
+00:56:12,159 --> 00:56:15,240
+Bol sıfırlı olan 3. satırı aldım.
+
+716
+00:56:16,320 --> 00:56:16,840
+Tamam mı?
+
+717
+00:56:17,220 --> 00:56:20,940
+3. satır boyunca ben laplaz açılımını uyguluyorum.
+
+718
+00:56:22,019 --> 00:56:22,599
+Bu da şu demek.
+
+719
+00:56:23,480 --> 00:56:24,159
+A31.
+
+720
+00:56:24,460 --> 00:56:25,639
+3. satır aldığım için.
+
+721
+00:56:25,639 --> 00:56:28,280
+A31 ile A31'in kofaktörünü çarpacağım.
+
+722
+00:56:28,840 --> 00:56:31,159
+Sonra A32 ile A32'nin kofaktörünü.
+
+723
+00:56:31,400 --> 00:56:33,679
+A33 ile A33'ün kofaktörünü.
+
+724
+00:56:34,300 --> 00:56:36,639
+A34 ile A34'ün kofaktörünü çarpacağım.
+
+725
+00:56:36,720 --> 00:56:37,159
+Toplayacağım.
+
+726
+00:56:37,900 --> 00:56:39,220
+Şimdi şunlar sıfır olduğu için.
+
+727
+00:56:39,760 --> 00:56:41,039
+Bu sıfır, bu sıfır.
+
+728
+00:56:41,400 --> 00:56:44,159
+O halde A31'i bulmam lazım benim.
+
+729
+00:56:44,659 --> 00:56:46,220
+Yani A31'ün kofaktörünü.
+
+730
+00:56:46,639 --> 00:56:47,539
+O nasıl bulunuyordu?
+
+731
+00:56:47,539 --> 00:56:50,900
+A31'ün kofaktörü eşittir.
+
+732
+00:56:51,420 --> 00:56:52,920
+Eksi 1 üzeri i artı j.
+
+733
+00:56:53,240 --> 00:56:54,159
+Yani 3 artı 1.
+
+734
+00:56:54,720 --> 00:57:00,860
+Daha sonra 3. satır ve 1. satırı silerek oluşturduğum maddesin determinantı oluşuyor.
+
+735
+00:57:02,180 --> 00:57:04,720
+Yani şu anda tekrar bir determinant çıktı karşıma.
+
+736
+00:57:05,659 --> 00:57:06,960
+3 çarpı 3'lük bir determinant.
+
+737
+00:57:06,960 --> 00:57:11,460
+Bu determinantı da sarıskuralı ile hesaplayabilirsin.
+
+738
+00:57:12,119 --> 00:57:13,980
+Ben de dedim ki bunu sarıskuralı ile değil.
+
+739
+00:57:14,260 --> 00:57:16,260
+Yine laplaz açılımı ile hesaplayalım.
+
+740
+00:57:17,539 --> 00:57:19,300
+O zaman biz burada...
+
+741
+00:57:19,300 --> 00:57:20,980
+Ben kofaktör şeyi niye almış anladım?
+
+742
+00:57:21,380 --> 00:57:23,360
+Kofaktörde yeni bir maddes oluşturuyoruz.
+
+743
+00:57:23,987 --> 00:57:30,407
+Ben hesap yapıyoruz zannettim. Sonra o yeni oluşan matrisin hesabını yaptığımız zaman sonucu oluşuyoruz. Tamam, şunu anladım.
+
+744
+00:57:30,727 --> 00:57:33,727
+Tabii, cofaktör matrisi hesaplıyorsun. Determin hesaplıyorsun.
+
+745
+00:57:34,207 --> 00:57:39,227
+Tamam, anladım. Ben cofaktör bir hesap yöntemi zannettim ama yeni bir matris oluşturma yöntemi.
+
+746
+00:57:39,347 --> 00:57:41,207
+Yok, yok. Evet, tamam yaptık ya.
+
+747
+00:57:41,768 --> 00:57:44,347
+Şimdi A34'ü bulalım. A34 nedir?
+
+748
+00:57:45,447 --> 00:57:50,407
+A34 eşittir. Eksi 1 üzeri 3 artı 4.
+
+749
+00:57:50,407 --> 00:57:50,487
+A34.
+
+750
+00:57:59,860 --> 00:58:07,820
+Üçüncü satırla neyi sil diyor? Dördüncü sütunu sil diyor. Geriye kalanın determinantını bulalım.
+
+751
+00:58:09,820 --> 00:58:26,360
+Yani geriye kalan ne? 1, 2, eksi 3, eksi 4, 2, 1, 3, 0, eksi 2.
+
+752
+00:58:26,360 --> 00:58:30,579
+İşte bunun determinantı, şu determinantı bulmamız gerekiyor ya arkadaşlar.
+
+753
+00:58:31,120 --> 00:58:36,960
+Bunun determinantını isterseniz laplast genişlemesiyle bulun, isterseniz de neyle bulun?
+
+754
+00:58:38,200 --> 00:58:42,180
+Hocam son satır 2, 0, 2 değil mi? 2, 0, eksi 2.
+
+755
+00:58:42,500 --> 00:58:45,220
+Evet, bravo. Teşekkürler.
+
+756
+00:58:55,315 --> 00:58:56,515
+20x2
+
+757
+00:59:01,940 --> 00:59:06,139
+Sarı uz kurulu ile hemen hızlıca bulalım. Ne olacak bu?
+
+758
+00:59:09,079 --> 00:59:17,940
+Eksi 4, artı, 4, bu 0, sonra,
+
+759
+00:59:24,563 --> 00:59:39,963
+4, 12, art, 12, 8, 16, 0. Neymiş bu? 0 yaptı, eksi 14. İnşallah doğrudur.
+
+760
+00:59:51,123 --> 00:59:56,063
+Kaç çıktı arkadaşlar? Bu, eksi on dört çıkmaması lazım. Burada sanki.
+
+761
+00:59:56,823 --> 00:59:58,743
+Hocam, on iki yazacaktınız, iki yazmışsınız.
+
+762
+00:59:59,523 --> 01:00:00,683
+Ha, şu on iki mi olacak?
+
+763
+01:00:01,463 --> 01:00:01,803
+Evet.
+
+764
+01:00:04,143 --> 01:00:04,943
+Bu sefer ne oldu?
+
+765
+01:00:06,603 --> 01:00:07,323
+Eksi dört.
+
+766
+01:00:12,403 --> 01:00:14,623
+1-8 bulmuştum ama bir yerde.
+
+767
+01:00:14,943 --> 01:00:16,264
+Bir dakika herhalde.
+
+768
+01:00:16,344 --> 01:00:17,483
+Hocam bir daha hesaplayabilir miyim?
+
+769
+01:00:17,664 --> 01:00:20,224
+Evet bir daha hesaplayalım. Biraz acele ettim galiba.
+
+770
+01:00:22,603 --> 01:00:24,003
+Şunu doğru yazdık değil mi arkadaşlar?
+
+771
+01:00:24,164 --> 01:00:26,284
+Bir daha bir bakalım. 3. satır ve 4. satırını
+
+772
+01:00:26,284 --> 01:00:30,224
+sildim. 1-2-3-4-2-1-2-2-2
+
+773
+01:00:30,224 --> 01:00:32,083
+Evet. Şöyle yapıyoruz arkadaşlar.
+
+774
+01:00:32,344 --> 01:00:34,284
+Şu line'deki
+
+775
+01:00:34,284 --> 01:00:35,963
+elemanları çarpıyorum.
+
+776
+01:00:36,324 --> 01:00:36,844
+Topluyorum.
+
+777
+01:00:37,523 --> 01:00:40,244
+4. Daha sonra 2x1
+
+778
+01:00:40,244 --> 01:00:41,643
+2 artı 4.
+
+779
+01:00:42,403 --> 01:00:43,403
+Daha sonra
+
+780
+01:00:43,403 --> 01:00:46,063
+4 çarpı 0 çarpı zaten 0 oluyor.
+
+781
+01:00:47,284 --> 01:00:48,083
+Sonra bundan
+
+782
+01:00:49,003 --> 01:00:50,403
+şunları çıkartacağım.
+
+783
+01:00:51,483 --> 01:00:51,864
+Eksi
+
+784
+01:00:51,864 --> 01:00:54,244
+4-12
+
+785
+01:00:54,244 --> 01:00:55,463
+artı 12 olacak bu.
+
+786
+01:00:56,284 --> 01:00:58,224
+Evet. Sonra burası
+
+787
+01:00:58,224 --> 01:00:59,463
+eksi 8
+
+788
+01:00:59,463 --> 01:01:01,623
+artı 16
+
+789
+01:01:01,623 --> 01:01:02,804
+eksi 16 olacak.
+
+790
+01:01:03,744 --> 01:01:05,804
+Değil mi? Bu da zaten 0.
+
+791
+01:01:06,284 --> 01:01:07,503
+Başında eksi var bir daha.
+
+792
+01:01:07,824 --> 01:01:09,744
+Tamam. Şimdi ne oldu bu?
+
+793
+01:01:10,744 --> 01:01:12,023
+Eksi 4 oldu.
+
+794
+01:01:12,023 --> 01:01:14,443
+Yani 4 oldu.
+
+795
+01:01:14,704 --> 01:01:22,583
+Evet.
+
+796
+01:01:22,612 --> 01:01:26,192
+Bu durumda arkadaşlar, determinant hesaplayabiliriz.
+
+797
+01:01:26,672 --> 01:01:28,072
+Determinant eşittir.
+
+798
+01:01:29,731 --> 01:01:30,532
+3 çarpı,
+
+799
+01:01:31,912 --> 01:01:33,351
+A31'i ne bulduk? 20,
+
+800
+01:01:35,452 --> 01:01:36,172
+artı,
+
+801
+01:01:37,512 --> 01:01:38,992
+eksi 3 çarpı 4,
+
+802
+01:01:39,552 --> 01:01:40,912
+yani kaçmış?
+
+803
+01:01:41,652 --> 01:01:43,052
+60, eksi 12,
+
+804
+01:01:44,112 --> 01:01:44,912
+48'miş.
+
+805
+01:01:46,172 --> 01:01:46,872
+Tamam mı?
+
+806
+01:01:51,668 --> 01:01:56,668
+Evet [öğrenci], aynen öyle. Çok güzel bir benzetme yaptın.
+
+807
+01:01:58,668 --> 01:02:05,668
+Hocam ben alt alta koyup, determinantını hesapladım da, şimdi de kontrol ettim ben, eksi sekiz buldum bunda.
+
+808
+01:02:05,668 --> 01:02:07,668
+Hangisini? Hangisini?
+
+809
+01:02:07,668 --> 01:02:09,668
+A3'te hocam en son yaptığımızı.
+
+810
+01:02:09,668 --> 01:02:14,668
+Niye? Yanlış bulmuşum. Tamam, hemen hızlıca bulalım bari.
+
+811
+01:02:14,668 --> 01:02:16,668
+Bir...
+
+812
+01:02:19,891 --> 01:02:40,652
+1, 2, eksi 3, eksi 4, 2, 1. Arkadaşlar bu matris işlemlerine dikkat edeceksiniz biraz arkadaşlar. Biraz değil, çok dikkat edeceksiniz.
+
+813
+01:02:40,652 --> 01:02:53,471
+Burada da notlarda da zaten 3x3'lüğün bir şeyi var. Ben 3x3'lüğü de yaptım, 4x4'lüğü de yaptım size. Oradan da bakarsınız. Tamam mı?
+
+814
+01:02:58,420 --> 01:02:59,559
+Burada şunu da
+
+815
+01:02:59,559 --> 01:03:02,079
+göstermiş. O da önemli bakın.
+
+816
+01:03:02,500 --> 01:03:02,980
+Dedik ya
+
+817
+01:03:02,980 --> 01:03:04,880
+eğer
+
+818
+01:03:04,880 --> 01:03:08,619
+şu
+
+819
+01:03:08,619 --> 01:03:10,420
+kofaktörle elemanların
+
+820
+01:03:10,420 --> 01:03:14,579
+i eşit değildir j ise bu toplam
+
+821
+01:03:14,579 --> 01:03:16,400
+sıfır diye bakın. Eğer
+
+822
+01:03:16,400 --> 01:03:17,980
+bu iki bu bir
+
+823
+01:03:17,980 --> 01:03:20,659
+bu iki bu bir bu iki bu bir
+
+824
+01:03:20,659 --> 01:03:22,800
+bunları toplayıp
+
+825
+01:03:22,800 --> 01:03:24,539
+çarpıp toplarsanız bakın sıfır
+
+826
+01:03:24,539 --> 01:03:25,780
+eldeniyorsunuz. Aynı şekilde
+
+827
+01:03:25,780 --> 01:03:28,680
+üç içinde. Normalde ne yaptık biz?
+
+828
+01:03:29,220 --> 01:03:30,720
+Determinantı bulurken bakın
+
+829
+01:03:30,720 --> 01:03:34,820
+A11
+
+830
+01:03:34,820 --> 01:03:40,320
+A12
+
+831
+01:03:40,320 --> 01:03:45,680
+A13
+
+832
+01:03:45,680 --> 01:03:47,639
+Bu
+
+833
+01:03:47,639 --> 01:03:50,440
+determinant A'yı veriyor arkadaşlar.
+
+834
+01:03:52,039 --> 01:03:52,320
+Ama
+
+835
+01:03:52,320 --> 01:03:53,980
+eğer
+
+836
+01:03:53,980 --> 01:03:57,680
+şu
+
+837
+01:03:57,680 --> 01:03:59,079
+i ile j
+
+838
+01:03:59,079 --> 01:04:00,760
+eşit değilse
+
+839
+01:04:00,760 --> 01:04:01,940
+burada olduğu gibi
+
+840
+01:04:01,940 --> 01:04:02,920
+bakın A21
+
+841
+01:04:02,920 --> 01:04:04,380
+artı A11
+
+842
+01:04:04,380 --> 01:04:05,220
+A22
+
+843
+01:04:05,220 --> 01:04:06,079
+artı A12
+
+844
+01:04:06,079 --> 01:04:07,480
+A23
+
+845
+01:04:07,480 --> 01:04:07,920
+artı
+
+846
+01:04:07,920 --> 01:04:09,380
+A13'ü
+
+847
+01:04:09,380 --> 01:04:10,260
+toplarsanız
+
+848
+01:04:10,260 --> 01:04:12,820
+sıfır elde ediyorsunuz.
+
+849
+01:04:12,920 --> 01:04:13,639
+Benzeri şekilde
+
+850
+01:04:13,639 --> 01:04:15,680
+üç içinde aynı şeyi bulursunuz.
+
+851
+01:04:16,380 --> 01:04:16,780
+Tamam mı?
+
+852
+01:04:16,780 --> 01:04:27,480
+A12
+
+853
+01:04:23,027 --> 01:04:24,667
+Hocam bir şey soracağım ben.
+
+854
+01:04:24,707 --> 01:04:25,027
+Sor.
+
+855
+01:04:26,027 --> 01:04:28,687
+Determinant her matris'te bir tane mi çıkıyor?
+
+856
+01:04:29,727 --> 01:04:30,127
+Evet.
+
+857
+01:04:30,707 --> 01:04:31,227
+Tamam.
+
+858
+01:04:34,107 --> 01:04:36,027
+Bir tane çıkar, başka çıkmaz.
+
+859
+01:04:36,747 --> 01:04:45,487
+Yani hocam biz hani bol sıfırlı satırı ya da sütünü seçiyoruz ya, başka satırı ya da sütünü seçseydim aynı değere ulaşırdım değil mi?
+
+860
+01:04:45,507 --> 01:04:47,467
+Tabii, tabii. Hangisini seçerseniz seçin.
+
+861
+01:04:49,267 --> 01:04:50,587
+Aynısı çıkması lazım.
+
+862
+01:04:50,587 --> 01:04:53,347
+Yani aynısı çıkması lazım değil, aynısı çıkar yani.
+
+863
+01:04:54,267 --> 01:04:56,288
+Aynısı çıkmıyorsa siz yanlış yapmışsınızdır.
+
+864
+01:04:58,367 --> 01:04:58,607
+Tamam.
+
+865
+01:05:00,027 --> 01:05:00,427
+Şimdi
+
+866
+01:05:00,427 --> 01:05:03,527
+determinant projeliklerinden bahsedelim.
+
+867
+01:05:03,967 --> 01:05:05,147
+Çok zaman kaybetmişiz.
+
+868
+01:05:05,627 --> 01:05:08,267
+Zaman kaybetmişiz demeyelim mi, çok zaman harcayamışız.
+
+869
+01:05:08,867 --> 01:05:10,887
+Zaman kaybetmediği sonuçta bir şeyler anlattık değil mi?
+
+870
+01:05:10,887 --> 01:05:10,947
+Tamam.
+
+871
+01:05:16,724 --> 01:05:24,864
+Şimdi ben yine buradaki şeyi çok beğenmedim açıkçası arkadaşlar. Yani müdahale etme imkanı da olmadı. O yüzden şöyle yapacağım ben.
+
+872
+01:05:27,403 --> 01:05:33,644
+Kendim buraya hızlıca yazacağım. Burada şu olarak vermiş, böyle biraz farklı vermiş. Çok önemli değil.
+
+873
+01:05:35,124 --> 01:05:35,724
+Birincisi...
+
+874
+01:05:39,891 --> 01:05:40,891
+Bu kalem güzel değil.
+
+875
+01:05:49,652 --> 01:05:50,331
+Bu da güzel değil.
+
+876
+01:05:54,516 --> 01:05:55,336
+Birincisi,
+
+877
+01:05:59,731 --> 01:06:08,791
+Determinant A eşittir. Determinant A transpoz. Arkadaşlar.
+
+878
+01:06:10,572 --> 01:06:11,891
+Tamam mı?
+
+879
+01:06:13,632 --> 01:06:20,512
+A matrisin determinantı, A matrisin transpozunun determinantına eşit imiş.
+
+880
+01:06:21,951 --> 01:06:25,012
+Bilmeniz gereken birinci özellik bu.
+
+881
+01:06:25,012 --> 01:06:29,612
+A yes, it's in.
+
+882
+01:06:35,507 --> 01:06:36,647
+Dematiser
+
+883
+01:06:41,811 --> 01:06:43,051
+A maddesinin
+
+884
+01:06:43,051 --> 01:06:45,231
+A'nın
+
+885
+01:06:51,476 --> 01:07:17,476
+Farklı, şöyle, anın herhangi iki farklı satır ya da şununun farklı satırının.
+
+886
+01:07:24,052 --> 01:07:25,072
+Sütunun
+
+887
+01:07:25,072 --> 01:07:28,872
+yer değiştirmesiyle.
+
+888
+01:07:35,539 --> 01:07:36,699
+elde edilmişse
+
+889
+01:07:44,148 --> 01:07:51,488
+Determinant B eşittir, eksi, determinant A'ymış arkadaşlar.
+
+890
+01:07:52,108 --> 01:07:53,708
+Aslında bu şu demek, şöyle,
+
+891
+01:07:56,807 --> 01:08:01,708
+Determinant A, eğer siz
+
+892
+01:08:01,708 --> 01:08:08,327
+İngi, sotterla...
+
+893
+01:08:11,443 --> 01:08:35,663
+j. satırı yer değiştirdiyseniz, eşittir, eksi, determinant, A'ymış. Tamam mı? Yani bir matrisde herhangi iki satırın ya da sütunun yer değiştirilmesi, ne yapıyor? Determinantı işaret değiştiriyor. Tamam mı?
+
+894
+01:08:39,731 --> 01:08:41,131
+Örnek verelim mi? Verelim.
+
+895
+01:08:57,779 --> 01:09:01,960
+Bu matrisin determinant kaç? 4? 7 mi?
+
+896
+01:09:07,507 --> 01:09:09,787
+Birinci satır ile ikinci satır yer değiştirdim.
+
+897
+01:09:21,395 --> 01:09:22,076
+Ne oldu?
+
+898
+01:09:26,228 --> 01:09:53,188
+3, 2, 2, eksi 1. Bunun determinantı kaç? Eksi 3, eksi 4, eksi 7. Aslında bu şunu söylüyor arkadaşlar. Eğer siz bir matrisin determinantını biliyorsanız ve de başka bir maddi, o determinantını bildiğiniz maddisten elde edilmişse, mesela atıyorum iki tane sütunu ya da satırı yer değiştirdiyse, o halde onun diyor determinantını hesaplamanıza gerek yok.
+
+899
+01:09:53,188 --> 01:09:59,488
+o onun determinantının eksilisidir diyor. Bu onu söylüyor. Tamam mı?
+
+900
+01:10:04,051 --> 01:10:07,451
+Tabi burada büyük ihtimal yerimiz çok kalmayacak.
+
+901
+01:10:08,291 --> 01:10:10,291
+Ha iyi varmış, bu da güzel.
+
+902
+01:10:11,531 --> 01:10:13,531
+O zaman biraz daha küçük yazayım.
+
+903
+01:10:13,531 --> 01:10:14,931
+Üçüncüsü...
+
+904
+01:10:20,467 --> 01:10:21,188
+Teşekkürler.
+
+905
+01:10:25,300 --> 01:10:26,500
+Bir matrisde
+
+906
+01:10:31,475 --> 01:10:38,135
+Herhangi iki satır ya da sütun
+
+907
+01:10:44,979 --> 01:10:45,919
+Aynı ise
+
+908
+01:10:51,507 --> 01:10:52,307
+determinant
+
+909
+01:10:52,307 --> 01:10:56,228
+0'dır.
+
+910
+01:11:06,996 --> 01:11:19,235
+Örneğin, 1, 2, 3, eksi 1, 0, 7, 1, 2, 3.
+
+911
+01:11:20,376 --> 01:11:24,355
+Eğer arkadaşlar bu özelliği bilmiyor olsaydık, ne yapacaktık?
+
+912
+01:11:26,235 --> 01:11:28,836
+Sarus kuralı ile bunu hesaplamaya çalışacaktık.
+
+913
+01:11:28,836 --> 01:11:36,216
+Oysa ki, bakıyorum, birinci satırlar, üçüncü satır aynı. O halde bu maddesin determinantı direkt sıfır hiç hesaplamanıza gerek yok.
+
+914
+01:11:36,216 --> 01:11:38,096
+Bana inanmıyorsanız hesaplayın.
+
+915
+01:11:38,935 --> 01:11:40,475
+Hesaplayabilirsiniz, hiç önemli değil.
+
+916
+01:11:47,220 --> 01:11:47,940
+Dört
+
+917
+01:11:53,427 --> 01:11:54,427
+Eğer biz
+
+918
+01:11:59,220 --> 01:12:00,400
+A maddesinin
+
+919
+01:12:07,988 --> 01:12:12,887
+Herhangi, inanıyoruz mu peki?
+
+920
+01:12:13,807 --> 01:12:35,948
+A matrisinin herhangi bir satırı ya da sütunu sadece sıfırlardan oluşuyorsa, yani sıfır satır ya da sıfır sütunu içeriyorsa bir matris aslında, bu o demek değil mi?
+
+921
+01:12:35,948 --> 01:12:39,068
+Sadece sıfırlardan oluşuyorsa,
+
+922
+01:12:39,068 --> 01:13:09,048
+Sıfır,
+
+923
+01:12:44,884 --> 01:12:52,104
+Determinant A, eşittir, sıfırdır.
+
+924
+01:12:53,984 --> 01:12:59,804
+Şimdi bunun neden olduğunu söyleyecek bir arkadaş var mı? Ona sneakers hediye deyim.
+
+925
+01:13:01,243 --> 01:13:03,823
+Hocam çarptığımızda zaten direkt sıfırlanmıyor mu?
+
+926
+01:13:04,203 --> 01:13:05,304
+Nereden çarptığımızda?
+
+927
+01:13:07,743 --> 01:13:09,463
+Determinantını aldığımızda.
+
+928
+01:13:10,644 --> 01:13:12,043
+Nerede çarptığımızda?
+
+929
+01:13:12,043 --> 01:13:16,524
+Kofaktör yöntemiyle hocam.
+
+930
+01:13:17,884 --> 01:13:18,804
+Güzel.
+
+931
+01:13:20,064 --> 01:13:21,043
+Aynen dediğiniz gibi.
+
+932
+01:13:21,484 --> 01:13:24,503
+Şimdi sıfırdan, sadece sıfırdan oluşan
+
+933
+01:13:24,503 --> 01:13:29,524
+bir satır ya da sütun varsa
+
+934
+01:13:29,524 --> 01:13:31,123
+ne yaparım ben?
+
+935
+01:13:31,503 --> 01:13:32,644
+Laplace açılımında
+
+936
+01:13:32,644 --> 01:13:34,304
+o
+
+937
+01:13:34,304 --> 01:13:38,323
+satırı ya da sütunu alırım.
+
+938
+01:13:38,323 --> 01:13:39,024
+Değil mi?
+
+939
+01:13:39,024 --> 01:13:40,863
+O halde o satırı
+
+940
+01:13:40,863 --> 01:13:41,404
+o satırı
+
+941
+01:13:41,404 --> 01:13:42,163
+o satırı sütunu alırsan
+
+942
+01:13:42,163 --> 01:13:43,104
+ne yapacak?
+
+943
+01:13:43,163 --> 01:13:44,543
+Bütün elemanlar sıfır olduğu için
+
+944
+01:13:44,543 --> 01:13:46,484
+kopaktörleri de hesaplamama gerek yok.
+
+945
+01:13:47,783 --> 01:13:48,283
+O halde
+
+946
+01:13:48,283 --> 01:13:49,083
+sıfır olur.
+
+947
+01:13:49,184 --> 01:13:49,404
+Güzel.
+
+948
+01:13:51,463 --> 01:13:53,104
+O yüzden arkadaşlar size
+
+949
+01:13:53,104 --> 01:13:54,543
+bir kutu sneakers veriyorum.
+
+950
+01:13:54,743 --> 01:13:56,104
+Dağıtın aranızda bölüşün.
+
+951
+01:13:56,363 --> 01:13:56,703
+Olur mu?
+
+952
+01:13:57,203 --> 01:13:58,163
+Ha bu fıstıktıymış.
+
+953
+01:13:58,304 --> 01:13:58,963
+Biraz fıstık.
+
+954
+01:13:59,184 --> 01:14:00,224
+Ben sevmiyorum ama
+
+955
+01:14:00,224 --> 01:14:01,684
+belki siz seviyorsunuzdur.
+
+956
+01:14:01,684 --> 01:14:02,363
+kusura bakmayın.
+
+957
+01:14:02,363 --> 01:14:04,583
+Tamam mı?
+
+958
+01:14:04,583 --> 01:14:05,423
+Bravo.
+
+959
+01:14:05,423 --> 01:14:06,283
+Teşekkür ederim.
+
+960
+01:14:07,703 --> 01:14:08,663
+Güzel bir cevaptı.
+
+961
+01:14:10,283 --> 01:14:10,604
+Evet.
+
+962
+01:14:10,944 --> 01:14:12,604
+Çok bonkörümdür [öğrenci].
+
+963
+01:14:14,184 --> 01:14:16,184
+Ne isterseniz, ne dilerseniz dileyin.
+
+964
+01:14:18,404 --> 01:14:18,703
+Evet.
+
+965
+01:14:20,804 --> 01:14:21,703
+Geldik.
+
+966
+01:14:23,423 --> 01:14:24,644
+Ne dedik?
+
+967
+01:14:24,644 --> 01:14:27,184
+Sıfırsa
+
+968
+01:14:27,184 --> 01:14:28,764
+herhangi bir satırıya
+
+969
+01:14:28,764 --> 01:14:29,184
+ve sütun
+
+970
+01:14:29,184 --> 01:14:30,783
+determinat sıfırdır.
+
+971
+01:14:31,444 --> 01:14:31,844
+Eğer
+
+972
+01:14:31,844 --> 01:14:32,923
+beşinci mi oldu?
+
+973
+01:14:33,064 --> 01:14:33,423
+Beşinci
+
+974
+01:14:33,423 --> 01:14:35,863
+beş
+
+975
+01:14:43,347 --> 01:14:46,827
+Eğer B matrisi
+
+976
+01:14:51,028 --> 01:14:55,148
+Eğer B matrisi, A matrisinin,
+
+977
+01:15:00,307 --> 01:15:07,427
+Herhangi bir sıtır
+
+978
+01:15:10,931 --> 01:15:11,671
+Ya da
+
+979
+01:15:11,671 --> 01:15:15,051
+Sütonom
+
+980
+01:15:21,716 --> 01:15:31,336
+1K sabitiyle, çarpılmasıyla elde edilmişse,
+
+981
+01:15:38,868 --> 01:15:49,248
+bilinmişse, determinant B eşittir, K çarpı determinant A'dır.
+
+982
+01:15:51,168 --> 01:16:03,148
+Yani ben B maddesini, A maddesinin herhangi bir satırını, bakın bir satırdan bahsediyorum, herhangi bir satır ya da bir sütunlu K ile çarptım, B maddesini elde ettim.
+
+983
+01:16:03,148 --> 01:16:09,828
+Bu durumda, B'nin determinantı, K çarpı A'nın determinant oluyor.
+
+984
+01:16:09,828 --> 01:16:32,108
+Aslında bu şu demek, determinant A, K, R'i, R'i değiştirmişim, K çarpı determinant A'dır.
+
+985
+01:16:32,108 --> 01:16:32,608
+Tamam.
+
+986
+01:16:33,608 --> 01:16:37,388
+Hocam, sarıs yöntemini yaparken, K parantezin alınca çıkıyor değil mi bu?
+
+987
+01:16:38,468 --> 01:16:39,768
+Hı hı, evet.
+
+988
+01:16:40,268 --> 01:16:42,828
+Şimdi zaten aslında bu tersinden çalışıyor.
+
+989
+01:16:43,008 --> 01:16:43,408
+Yani şöyle.
+
+990
+01:16:46,408 --> 01:16:47,708
+Örnek vereyim ben size.
+
+991
+01:16:49,208 --> 01:16:50,488
+Bu tersinden çalışıyor.
+
+992
+01:17:00,884 --> 01:17:05,503
+2, 6, 1, 12.
+
+993
+01:17:06,104 --> 01:17:08,384
+Bu maddizin determinantını bulmak istiyorum arkadaşlar.
+
+994
+01:17:08,663 --> 01:17:11,503
+Tabi burada 2 çarpı 2'lik kolay bulabilirsiniz.
+
+995
+01:17:11,623 --> 01:17:13,024
+24-6 ne yapar?
+
+996
+01:17:15,184 --> 01:17:16,344
+Ne yapar? 18 yapar.
+
+997
+01:17:17,884 --> 01:17:23,484
+Bunun yerine eğer daha karışık ya da büyük boyutlu bir maddis varsa
+
+998
+01:17:23,484 --> 01:17:24,963
+şöyle yapıyoruz.
+
+999
+01:17:25,064 --> 01:17:26,904
+Bakın x'ı neyin katı arkadaşlar?
+
+1000
+01:17:27,623 --> 01:17:28,323
+2'nin katı.
+
+1001
+01:17:28,323 --> 01:17:31,524
+Demek ki bu determinant eşittir.
+
+1002
+01:17:31,644 --> 01:17:39,404
+2 çarpı 1, 3, 1, 12'nin determinantını eşitmiş.
+
+1003
+01:17:39,524 --> 01:17:40,203
+Bu o demek.
+
+1004
+01:17:41,003 --> 01:17:43,104
+x satır 2 ile çarpılmış burada.
+
+1005
+01:17:44,944 --> 01:17:50,583
+İkinci sütunda 3'ün katı o halde 2 çarpı 3 çarpı determinant ne?
+
+1006
+01:17:50,583 --> 01:17:54,823
+1, 1, 1, 4.
+
+1007
+01:17:54,823 --> 01:18:00,944
+Yani aynı olan, çarpanı, aynı çarpana sahip olanları dışarıya alabiliyorsunuz.
+
+1008
+01:18:00,984 --> 01:18:01,684
+Bu aslında o demek.
+
+1009
+01:18:02,163 --> 01:18:03,524
+Artık bu determinant hesaplamak var.
+
+1010
+01:18:03,524 --> 01:18:05,064
+Hocam 2. satır etkilenmiyor mu?
+
+1011
+01:18:05,543 --> 01:18:05,904
+Efendim?
+
+1012
+01:18:06,404 --> 01:18:08,543
+2. satır katsayadan etkilenmiyor mu?
+
+1013
+01:18:09,304 --> 01:18:10,804
+2. satır nasıl etkileniyor?
+
+1014
+01:18:12,543 --> 01:18:12,844
+Hayır.
+
+1015
+01:18:13,283 --> 01:18:14,323
+2 katsayı mı aldık?
+
+1016
+01:18:14,463 --> 01:18:15,764
+2 katsayı aldık ya da şöyle.
+
+1017
+01:18:15,764 --> 01:18:16,724
+Şimdi bak.
+
+1018
+01:18:17,543 --> 01:18:19,363
+Sadece ikinci şey pardon.
+
+1019
+01:18:19,543 --> 01:18:21,764
+Sadece birinci satırda 2 çarpanı var.
+
+1020
+01:18:21,944 --> 01:18:23,184
+Niye ikinci satır etkilense?
+
+1021
+01:18:23,363 --> 01:18:23,904
+Onu anlamadım.
+
+1022
+01:18:25,404 --> 01:18:26,363
+Şeyi soruyorum hani.
+
+1023
+01:18:26,484 --> 01:18:30,224
+O katsayı genel tüm maddesi etkilemiyor mu?
+
+1024
+01:18:30,404 --> 01:18:31,184
+Hayır, hayır.
+
+1025
+01:18:31,404 --> 01:18:31,823
+Bak şimdi.
+
+1026
+01:18:31,823 --> 01:18:37,884
+Sen k çarpı a maddesini ararsan ki onun da determinantın ne olduğunu söyleyeceğiz.
+
+1027
+01:18:38,083 --> 01:18:38,363
+Bravo.
+
+1028
+01:18:39,163 --> 01:18:40,123
+O zaman ne olur bu?
+
+1029
+01:18:40,203 --> 01:18:44,703
+K çarpı a bütün satırları ya da bütün sütunları, bütün elemanları k ile çarpıyorsun.
+
+1030
+01:18:45,363 --> 01:18:45,543
+Değil mi?
+
+1031
+01:18:46,203 --> 01:18:54,144
+Tamam da şimdi hani ikiyi dışarı böyle bu şekilde yazdığımızda mesela hani bunu dışarıdan gördüğümüzde zaten bütün maddesin katsayısı gibi gözükmüyor mu?
+
+1032
+01:18:54,503 --> 01:18:55,724
+Farkını anlamadım sadece.
+
+1033
+01:18:55,884 --> 01:18:57,344
+Ama bu determinant olur mu canım?
+
+1034
+01:18:57,463 --> 01:18:58,844
+Burada maddisten bahsediyorsun.
+
+1035
+01:18:58,844 --> 01:18:59,844
+Burada determinantten.
+
+1036
+01:19:01,823 --> 01:19:04,083
+Bak şimdi şöyle yap.
+
+1037
+01:19:06,083 --> 01:19:06,984
+Şimdi şöyle yapalım.
+
+1038
+01:19:09,663 --> 01:19:11,323
+Şimdi bu determinant ne oldu?
+
+1039
+01:19:11,963 --> 01:19:13,663
+4 eksi birden 3.
+
+1040
+01:19:14,984 --> 01:19:17,623
+2 çarpı 3 çarpı 3.
+
+1041
+01:19:18,684 --> 01:19:20,043
+Burada 18 yaptı.
+
+1042
+01:19:21,104 --> 01:19:23,423
+Şimdi arkadaşımız güzel bir soru sordu.
+
+1043
+01:19:24,024 --> 01:19:28,644
+Diyor ki bu 2 6 1 12 eşittir.
+
+1044
+01:19:28,644 --> 01:19:31,684
+2 çarpı 1 3 1 12 yazdınız hocam.
+
+1045
+01:19:31,823 --> 01:19:35,083
+Bu da hatta şöyle.
+
+1046
+01:19:36,703 --> 01:19:38,203
+6 tane determinant.
+
+1047
+01:19:38,564 --> 01:19:41,663
+1 1 1 4.
+
+1048
+01:19:43,423 --> 01:19:46,264
+Şimdi normalde dışarıdan bakınca şöyle görülüyor diyor.
+
+1049
+01:19:46,444 --> 01:19:48,923
+Bu şuna eşit diyor arkadaşımız.
+
+1050
+01:19:48,923 --> 01:19:52,264
+Yani niye eşit değil.
+
+1051
+01:19:54,184 --> 01:19:57,564
+6 6 6 6 ney?
+
+1052
+01:19:58,423 --> 01:19:58,984
+24.
+
+1053
+01:19:58,984 --> 01:20:01,024
+Bunu söylüyorsun değil mi?
+
+1054
+01:20:01,024 --> 01:20:04,024
+Aynen öyle.
+
+1055
+01:20:04,024 --> 01:20:05,463
+Bunu söylüyorsun.
+
+1056
+01:20:05,904 --> 01:20:09,484
+Şimdi biz determinante alırken.
+
+1057
+01:20:09,484 --> 01:20:09,833
+2 1
+
+1058
+01:20:17,811 --> 01:20:18,931
+Poşterimiz var mı?
+
+1059
+01:20:22,072 --> 01:20:22,631
+Hımm.
+
+1060
+01:20:28,115 --> 01:20:41,996
+A1, 1, A1, 2, 2 çarpı 2'lik alacağım. Çok fazla şey yapmaya gerek yok. A2, 1, A2, 2. Bu A maddesi,
+
+1061
+01:20:47,444 --> 01:20:48,384
+A maddesi.
+
+1062
+01:20:49,684 --> 01:20:50,624
+A maddesini
+
+1063
+01:20:54,195 --> 01:20:56,555
+Bir k kas sayısı ile çarpıyorum.
+
+1064
+01:20:56,655 --> 01:20:57,836
+Kas kaderi ile çarpıyorum.
+
+1065
+01:20:57,956 --> 01:20:58,675
+K çarpı a.
+
+1066
+01:20:59,716 --> 01:21:00,195
+Ne oldu?
+
+1067
+01:21:02,536 --> 01:21:04,216
+K a1 1
+
+1068
+01:21:04,216 --> 01:21:07,256
+K a1 2
+
+1069
+01:21:07,256 --> 01:21:10,615
+K a2 1
+
+1070
+01:21:10,615 --> 01:21:14,376
+K a2 2
+
+1071
+01:21:14,376 --> 01:21:19,195
+Şimdi bunun determinantını bulalım.
+
+1072
+01:21:21,195 --> 01:21:22,195
+Nedir bunun determinantı?
+
+1073
+01:21:22,195 --> 01:21:25,336
+K'nın karesi parantezinde.
+
+1074
+01:21:25,996 --> 01:21:26,175
+Değil mi?
+
+1075
+01:21:27,956 --> 01:21:30,836
+A1 1 çarpı a2 2
+
+1076
+01:21:30,836 --> 01:21:32,376
+Eksi
+
+1077
+01:21:32,376 --> 01:21:34,916
+A1 2 çarpı
+
+1078
+01:21:34,916 --> 01:21:37,796
+A2 1
+
+1079
+01:21:37,796 --> 01:21:42,195
+Peki
+
+1080
+01:21:42,195 --> 01:21:47,135
+Benim determinantta bahsettiğim şey ne?
+
+1081
+01:21:47,395 --> 01:21:50,195
+Bir maddesin herhangi bir satırı ya da sütunu k ile çarpılırsa
+
+1082
+01:21:50,195 --> 01:21:52,935
+Ya da k'nın katıysa
+
+1083
+01:21:52,935 --> 01:21:55,456
+Yani şunun determinantını söylüyorum ben.
+
+1084
+01:21:57,216 --> 01:21:58,595
+K a 1 1
+
+1085
+01:21:58,595 --> 01:22:01,576
+K a 1 2
+
+1086
+01:22:01,576 --> 01:22:03,836
+A 2 1
+
+1087
+01:22:03,836 --> 01:22:06,036
+A 2 2
+
+1088
+01:22:06,036 --> 01:22:09,195
+Bu da ne olmasını bekliyorum?
+
+1089
+01:22:09,336 --> 01:22:11,275
+K çarpı bu olmasını bekliyorum.
+
+1090
+01:22:11,275 --> 01:22:13,055
+Gerçekten de öyle mi?
+
+1091
+01:22:13,055 --> 01:22:15,235
+K çarpı a 1 1
+
+1092
+01:22:15,235 --> 01:22:17,015
+Çarpı a 2 2
+
+1093
+01:22:17,015 --> 01:22:18,815
+Eksi k çarpı a 1 2
+
+1094
+01:22:18,815 --> 01:22:21,695
+Çarpı a 2 1
+
+1095
+01:22:21,695 --> 01:22:23,615
+Yani şunun determinantı neymiş?
+
+1096
+01:22:24,395 --> 01:22:25,195
+K çarpı
+
+1097
+01:22:25,195 --> 01:22:26,555
+A 1 1
+
+1098
+01:22:26,555 --> 01:22:28,756
+A 2 2
+
+1099
+01:22:28,756 --> 01:22:29,456
+Eksi
+
+1100
+01:22:29,456 --> 01:22:31,216
+A 1 2
+
+1101
+01:22:31,216 --> 01:22:33,036
+A 2 1
+
+1102
+01:22:33,036 --> 01:22:36,355
+Yani şuradan şu sonuca gelmen lazım.
+
+1103
+01:22:37,155 --> 01:22:39,195
+Soran arkadaşın ismini göremedim.
+
+1104
+01:22:39,496 --> 01:22:40,536
+Kim olduğunu bilmiyorum.
+
+1105
+01:22:40,935 --> 01:22:42,456
+[öğrenci]
+
+1106
+01:22:42,456 --> 01:22:43,275
+Eğer
+
+1107
+01:22:43,275 --> 01:22:47,256
+Sen k çarpı a'nın determinantını
+
+1108
+01:22:47,256 --> 01:22:48,256
+Ön
+
+1109
+01:22:48,256 --> 01:23:10,256
+A 2 1
+
+1110
+01:22:51,347 --> 01:22:59,948
+determinantını, A'nın determinantı cinsinden yazmak istiyorsan, bizim söylediğimiz o değil bak, ama bunu da bulabiliriz.
+
+1111
+01:23:00,627 --> 01:23:05,507
+Determinant K çarpağı ne, bir söyle bana, eğer A ne çarpı ne'lik bir matris ise.
+
+1112
+01:23:11,604 --> 01:23:13,344
+Hocam siz yapın şu an kitlendim.
+
+1113
+01:23:13,644 --> 01:23:15,364
+Yok yok kitlenecek bir şey yok.
+
+1114
+01:23:15,923 --> 01:23:18,104
+Şimdi ne diyor? Özellikle şunu söylüyor sana.
+
+1115
+01:23:18,423 --> 01:23:29,024
+Özellikle diyor ki eğer bir maddisin herhangi bir satırını ya da sütununu bir k skaleriyle çarparsan determinat k katına çıkar diyor.
+
+1116
+01:23:29,784 --> 01:23:31,543
+Şimdi k çarpı a ne demek?
+
+1117
+01:23:32,144 --> 01:23:35,963
+Maddisin her bir satırını ya da her bir sütununu k ile çarpmak demek.
+
+1118
+01:23:36,724 --> 01:23:38,484
+O halde ne tane satır var burada?
+
+1119
+01:23:40,104 --> 01:23:40,364
+Değil mi?
+
+1120
+01:23:40,364 --> 01:23:42,364
+Ya da ne tane sütun var?
+
+1121
+01:23:42,884 --> 01:23:51,043
+Demek ki ben determinatı k üzeri ne ile çarpacağım?
+
+1122
+01:23:53,804 --> 01:23:58,083
+Bak burada olduğu gibi k çarpı a k'nın karesi.
+
+1123
+01:23:58,384 --> 01:24:00,664
+Çünkü iki çarpı ikilik işte determinat bu.
+
+1124
+01:24:01,624 --> 01:24:05,644
+Ama tek bir satır ya da sütunu çarparsan determinatı sadece onunla çarpıyorsun.
+
+1125
+01:24:05,904 --> 01:24:06,244
+O kadar.
+
+1126
+01:24:06,244 --> 01:24:11,864
+Yani maddisi çarpma ile maddisin bir satırını çarpma aynı şey değil.
+
+1127
+01:24:12,664 --> 01:24:13,944
+K çarpı a buna eşit.
+
+1128
+01:24:14,704 --> 01:24:16,864
+Ama bir satırını çarptığın zaman bunu elde ediyorsun.
+
+1129
+01:24:17,204 --> 01:24:18,344
+Aynı şeyler değil yani.
+
+1130
+01:24:19,344 --> 01:24:20,804
+Bunların gösterimlerine farkı var?
+
+1131
+01:24:22,244 --> 01:24:23,604
+Nasıl gösterimlerine farkı var?
+
+1132
+01:24:23,824 --> 01:24:25,284
+İşte yazdım işte gösterim ama.
+
+1133
+01:24:25,284 --> 01:24:27,604
+Hayır.
+
+1134
+01:24:27,904 --> 01:24:30,043
+Şu maddisi sen bir şekilde ifade edemezsin ki.
+
+1135
+01:24:30,324 --> 01:24:31,463
+Şunu diyorsun herhalde.
+
+1136
+01:24:31,764 --> 01:24:33,984
+Ben bu maddisi A cinsinden nasıl ifade ederim?
+
+1137
+01:24:34,364 --> 01:24:36,024
+Bu maddisi A cinsinden ifade edemezsin.
+
+1138
+01:24:36,024 --> 01:24:39,923
+Ama sadece görüyorsun burada örnekle yazdım mesela.
+
+1139
+01:24:42,744 --> 01:24:45,724
+Ben bunu acilsen ifade etmek istemiyorum ki zaten öyle bir derdim yok.
+
+1140
+01:24:46,244 --> 01:24:47,804
+Ama bana B maddisi verilmiş.
+
+1141
+01:24:50,304 --> 01:24:51,184
+Bu B maddisi.
+
+1142
+01:24:52,164 --> 01:24:53,384
+Şu da A maddisi olsun.
+
+1143
+01:24:54,963 --> 01:24:59,604
+Bakıyorum A maddisinin birinci satırının iki ile çarpımından oluşmuş.
+
+1144
+01:25:00,503 --> 01:25:01,244
+İki katı yani.
+
+1145
+01:25:01,244 --> 01:25:03,244
+O halde determinant bunun iki katı olacak.
+
+1146
+01:25:03,344 --> 01:25:03,644
+Bu kadar.
+
+1147
+01:25:05,624 --> 01:25:06,423
+Tamam anladım.
+
+1148
+01:25:07,024 --> 01:25:07,904
+Burada da bakıyorum.
+
+1149
+01:25:08,404 --> 01:25:08,644
+Evet.
+
+1150
+01:25:09,344 --> 01:25:10,923
+İkinci sütunda da üçün katı.
+
+1151
+01:25:11,423 --> 01:25:13,583
+Demek ki bu üçü dışarıya alabiliyorum.
+
+1152
+01:25:13,704 --> 01:25:14,624
+Determinant işlemi bu.
+
+1153
+01:25:14,704 --> 01:25:15,963
+Yani maddisiyle karıştırmayın.
+
+1154
+01:25:18,244 --> 01:25:19,204
+Maddisi öyle bir şey yok.
+
+1155
+01:25:22,739 --> 01:25:23,859
+Peki...
+
+1156
+01:25:32,692 --> 01:25:41,811
+Tamam, şunu da sorayım o zaman size. Başka var mı? Daha var özellikler tabii. Ama zamanımız doldu.
+
+1157
+01:25:47,699 --> 01:26:00,220
+1, 2, 3, 1, 5, 3, 2, 8, 6
+
+1158
+01:26:09,043 --> 01:26:17,884
+Şimdi yine hemen Sarus kuralıyla işte bu işi hallederiz falan diye düşünebilirsiniz ki halledersiniz problem değil.
+
+1159
+01:26:18,363 --> 01:26:22,644
+Ama arkadaşlar önemli olan pratik ya da kolay bir şekilde problemi çözmek değil mi?
+
+1160
+01:26:23,344 --> 01:26:26,663
+Şimdi ben burada hemen siz de görüyorsunuz, ben de görüyorum. Bakın.
+
+1161
+01:26:28,564 --> 01:26:36,104
+Üçüncü satır ve üçüncü sütun bir şeylerin katı. Evet sıfır çıkıyor herhalde.
+
+1162
+01:26:40,243 --> 01:27:07,163
+Hatta, yani, şu direkt, 3'ün üstü tutumlar 3'ü alsam ben, 3 çarpı, 1, 1, 2, 2, 5, 2, 5, 8, 1, 1, 2.
+
+1163
+01:27:14,068 --> 01:27:18,307
+Bu sütunla bir sütun aynı olduğu için ne yaptım?
+
+1164
+01:27:18,488 --> 01:27:22,828
+Direkt sıfır olarak buldum.
+
+1165
+01:27:23,927 --> 01:27:28,887
+Demek ki buradan şu sonuç da çıkartılabilir arkadaşlar ki öyle zaten.
+
+1166
+01:27:29,648 --> 01:27:36,868
+Eğer bir maddiste herhangi bir satır ya da sütun, başka bir satır ya da sütunun herhangi bir katı ise
+
+1167
+01:27:36,868 --> 01:27:41,448
+o zaman bir determinat neymiş?
+
+1168
+01:27:42,088 --> 01:27:42,588
+Sıfırmış.
+
+1169
+01:27:42,588 --> 01:27:48,588
+Çünkü bakın burada bu üçüncü sütun, birinci sütunun üç katı.
+
+1170
+01:27:50,908 --> 01:27:54,507
+Siz bu üç katını zaten determinatının başına alabiliyorsunuz.
+
+1171
+01:27:54,547 --> 01:27:56,168
+O halde aynı sütunlar kalıyor.
+
+1172
+01:27:56,608 --> 01:27:57,788
+Demek ki sıfır.
+
+1173
+01:27:59,068 --> 01:28:00,028
+Hocam bir şey soracağım.
+
+1174
+01:28:00,148 --> 01:28:02,068
+Şimdi burada bunu sütun olduğunu gördük ya.
+
+1175
+01:28:02,887 --> 01:28:04,368
+Diyelim hani sıfır yapmıyor.
+
+1176
+01:28:05,128 --> 01:28:06,748
+İki sütun aynı değil.
+
+1177
+01:28:07,467 --> 01:28:11,047
+İşlem kolayla yapabilmek açısından en altta da iki kat sayısı var ya onu da çekelim.
+
+1178
+01:28:11,047 --> 01:28:12,148
+Tabii onu da çıkartacağız.
+
+1179
+01:28:12,148 --> 01:28:14,268
+Zaten ben önce onu düşündüm.
+
+1180
+01:28:15,028 --> 01:28:16,568
+Şöyle de yapabilirsiniz.
+
+1181
+01:28:18,648 --> 01:28:22,467
+Ben direkt onu üçe almadan önce aslında iki parantezine de alabilirdim.
+
+1182
+01:28:23,128 --> 01:28:24,988
+İki parantezini almak demek doğru değil de.
+
+1183
+01:28:25,748 --> 01:28:27,068
+İkiyi dışarıya alabilirsiniz.
+
+1184
+01:28:27,528 --> 01:28:27,768
+Şöyle.
+
+1185
+01:28:28,228 --> 01:28:28,688
+Bu nedir?
+
+1186
+01:28:29,408 --> 01:28:30,208
+İki çarpı.
+
+1187
+01:28:30,208 --> 01:28:33,088
+Bir, iki, üç.
+
+1188
+01:28:33,088 --> 01:28:35,768
+Bir, beş, üç.
+
+1189
+01:28:36,268 --> 01:28:36,608
+Ne oldu?
+
+1190
+01:28:36,788 --> 01:28:38,868
+Bir, dört, üç.
+
+1191
+01:28:39,828 --> 01:28:43,807
+Şimdi buraya üç dışarıya alırsanız.
+
+1192
+01:28:44,708 --> 01:28:46,328
+İki çarpı, üç çarpı.
+
+1193
+01:28:47,128 --> 01:28:47,948
+Bir, bir, bir.
+
+1194
+01:28:48,628 --> 01:28:50,028
+İki, beş, dört.
+
+1195
+01:28:50,708 --> 01:28:51,408
+Bir, bir, bir.
+
+1196
+01:28:51,668 --> 01:28:52,307
+Yine bakıyorum.
+
+1197
+01:28:52,828 --> 01:28:55,288
+Birinci sütunla üçüncü sütun aynı.
+
+1198
+01:28:55,288 --> 01:28:57,347
+Bu halde sıfır.
+
+1199
+01:28:58,068 --> 01:28:58,528
+Tamam mı?
+
+1200
+01:29:08,564 --> 01:29:12,604
+Son özellik, son değil de daha var, benim vereceğim son özellik.
+
+1201
+01:29:16,212 --> 01:29:19,752
+Eğer, 6. mi, 7. mi ne oldu?
+
+1202
+01:29:27,347 --> 01:29:29,028
+En her B matrisi,
+
+1203
+01:29:33,524 --> 01:29:34,844
+A matrisinin
+
+1204
+01:29:42,355 --> 01:29:43,215
+Rinci
+
+1205
+01:29:43,215 --> 01:29:46,815
+Sıtır
+
+1206
+01:29:46,815 --> 01:29:48,195
+Yavaşçı
+
+1207
+01:29:51,956 --> 01:29:52,416
+Simon?
+
+1208
+01:29:58,260 --> 01:30:17,260
+A maddesinin enci satırının ya da sutununun bir K skaleri ya da K sabiti ile çarpılıp
+
+1209
+01:30:17,260 --> 01:30:22,260
+Seyinci
+
+1210
+01:30:22,260 --> 01:30:25,020
+Satıra
+
+1211
+01:30:25,020 --> 01:30:26,640
+Ya da sutuna
+
+1212
+01:30:26,640 --> 01:30:30,260
+Eklenmesiyle
+
+1213
+01:30:33,971 --> 01:30:35,211
+elde edilmişse
+
+1214
+01:30:38,676 --> 01:30:52,816
+Herde edilmişse, determinant B eşittir, determinant A. Arkadaşlar, biz satır işlemlerini hatırlayın, elementer satır işlemlerinde.
+
+1215
+01:30:54,655 --> 01:31:03,136
+Bir maddisin herhangi bir satırını ya da sütununu bir sabitle çarpıp diğer satıra ya da sütununa ekleyebiliyorduk.
+
+1216
+01:31:03,136 --> 01:31:10,756
+İşte bu yaptığımız işlem, determinantı ne yapmıyormuş? Değiştirmiyormuş.
+
+1217
+01:31:12,356 --> 01:31:13,976
+Yani şöyle yazabiliriz bunu aslında.
+
+1218
+01:31:15,256 --> 01:31:18,976
+Determinant A.
+
+1219
+01:31:22,739 --> 01:31:33,300
+K, R, I, artı, R, J, R, J'ye eşittir, determinant, A'ya.
+
+1220
+01:31:34,920 --> 01:31:37,439
+Örnek verelim, madem, buna.
+
+1221
+01:31:41,811 --> 01:31:53,791
+1, 2, 3, 2, eksi 1, 3, 1, 0, 1.
+
+1222
+01:31:55,372 --> 01:31:58,311
+Matrisinin determinantı, arkadaşlar,
+
+1223
+01:31:58,311 --> 01:32:11,431
+5, 0, 9, 2, eksi 1, 3, 1, 0, 1.
+
+1224
+01:32:11,511 --> 01:32:13,591
+Matrisinin determinantına eşit. Neden?
+
+1225
+01:32:15,872 --> 01:32:16,211
+Neden?
+
+1226
+01:32:21,043 --> 01:32:22,043
+Banmjörnü.
+
+1227
+01:32:26,484 --> 01:32:51,704
+Ne yapmışız bakın? İkinci satırı güzel. İkinci satırı iki ile çarpıp, bir eklemişim. O yüzden determinant değişmiyor. Ama herhangi iki satırı, ya da sütunu yer değiştirirseniz, ne oluyor? Önüne eksi alıyor.
+
+1228
+01:32:51,704 --> 01:32:55,463
+Tamam mı?
+
+1229
+01:32:57,463 --> 01:32:58,504
+Arkadaşlar
+
+1230
+01:33:04,916 --> 01:33:06,576
+Tamam. Bu kadarla
+
+1231
+01:33:06,576 --> 01:33:07,895
+yetinelim.
+
+1232
+01:33:09,615 --> 01:33:10,476
+Biraz daha var.
+
+1233
+01:33:12,436 --> 01:33:13,676
+Maddesin özellikleri, şey
+
+1234
+01:33:13,676 --> 01:33:14,855
+determinatın özellikleri.
+
+1235
+01:33:15,936 --> 01:33:17,536
+Hocam şu an geçen haftanın
+
+1236
+01:33:17,536 --> 01:33:19,296
+konularındayız değil mi hala? Evet, evet.
+
+1237
+01:33:20,756 --> 01:33:21,976
+Haftaya inşallah
+
+1238
+01:33:21,976 --> 01:33:23,655
+devam ederiz.
+
+1239
+01:33:23,655 --> 01:33:25,076
+Çok fazla bir şeyimiz kalmadı.
+
+1240
+01:33:27,716 --> 01:33:29,436
+Sınav hakkında bir haber var mı?
+
+1241
+01:33:29,496 --> 01:33:30,815
+Biliyor musunuz? Ne gibi?
+
+1242
+01:33:31,376 --> 01:33:31,756
+Vize.
+
+1243
+01:33:33,155 --> 01:33:34,496
+Hayır ne gibi bir haber yani?
+
+1244
+01:33:34,496 --> 01:33:36,096
+İşte tarih.
+
+1245
+01:33:36,655 --> 01:33:39,576
+Tarihi belirlenecek. Bugün yarın belli olur.
+
+1246
+01:33:41,275 --> 01:33:43,376
+Sınav konuları da büyük ihtimalle
+
+1247
+01:33:43,376 --> 01:33:45,516
+şeye kadar.
+
+1248
+01:33:47,916 --> 01:33:49,615
+Beşinci haftanın sonuna
+
+1249
+01:33:49,615 --> 01:33:51,576
+kadar. Beşinci haftada da ne var
+
+1250
+01:33:51,576 --> 01:33:52,636
+sorarsanız.
+
+1251
+01:33:55,695 --> 01:33:56,615
+Ne var?
+
+1252
+01:33:57,615 --> 01:33:58,436
+Şeye kadar işte.
+
+1253
+01:33:59,775 --> 01:34:01,876
+Yine denklem sistemleri ne kadar galiba?
+
+1254
+01:34:02,115 --> 01:34:02,836
+Test olacak, evet.
+
+1255
+01:34:02,836 --> 01:34:05,336
+yanlış doğruyu götürdü
+
+1256
+01:34:05,336 --> 01:34:06,216
+geçen dönem
+
+1257
+01:34:06,216 --> 01:34:07,636
+şey, [öğrenci].
+
+1258
+01:34:08,355 --> 01:34:09,836
+Dört yanlış bir doğruyu götürdü.
+
+1259
+01:34:10,576 --> 01:34:11,235
+Yani bu dönemde
+
+1260
+01:34:11,235 --> 01:34:12,775
+götürme ihtimali yüksek.
+
+1261
+01:34:13,815 --> 01:34:14,876
+Evet, sınav test olacak.
+
+1262
+01:34:16,876 --> 01:34:17,275
+Büyük ihtimalle...
+
+1263
+01:34:17,275 --> 01:34:18,496
+Kaç soru oluyor tahmini?
+
+1264
+01:34:18,496 --> 01:34:22,716
+20 soru oluyor.
+
+1265
+01:34:22,876 --> 01:34:24,275
+60 ya da 70 dakika oluyor.
+
+1266
+01:34:25,056 --> 01:34:25,976
+Ya da 80 dakika.
+
+1267
+01:34:28,176 --> 01:34:29,916
+Dört yanlış bir doğruyu götürüyor.
+
+1268
+01:34:29,916 --> 01:34:33,296
+Ben bir şey yapmıyorum.
+
+1269
+01:34:33,296 --> 01:34:33,655
+Ben bir şey yapmıyorum [öğrenci].
+
+1270
+01:34:34,615 --> 01:34:35,916
+Yok ya, kolay kolay.
+
+1271
+01:34:36,115 --> 01:34:38,855
+Ben size deneme testi, deneme sınavı da yapacağım zaten.
+
+1272
+01:34:39,296 --> 01:34:40,155
+İnşallah bir şey yapacağım.
+
+1273
+01:34:40,155 --> 01:34:41,836
+Vay süper, teşekkür ederiz hocam.
+
+1274
+01:34:41,936 --> 01:34:42,136
+Tamam.
+
+1275
+01:34:43,296 --> 01:34:44,716
+Yanlışlar götürmesin doğruyu.
+
+1276
+01:34:44,716 --> 01:34:46,016
+O zaman da [öğrenci] şu oluyor.
+
+1277
+01:34:47,136 --> 01:34:49,336
+Ben de 13 an şey yapamazım aslında ama.
+
+1278
+01:34:50,536 --> 01:34:51,115
+Ne derler?
+
+1279
+01:34:51,395 --> 01:34:53,036
+Hani götürsün mü, götürmesin mi diye.
+
+1280
+01:34:53,576 --> 01:34:55,115
+Bu defa da
+
+1281
+01:34:55,115 --> 01:34:56,416
+şeye haksızlık oluyor.
+
+1282
+01:34:56,416 --> 01:34:56,756
+Yani
+
+1283
+01:34:56,756 --> 01:35:00,056
+yapanla, doğru yapanla, yanlış yapanla
+
+1284
+01:35:00,056 --> 01:35:01,456
+haksızlık olmuyor mu sizce?
+
+1285
+01:35:01,456 --> 01:35:04,996
+Yani şu olarak bakın.
+
+1286
+01:35:06,296 --> 01:35:08,155
+Atıyorum 5 tane sen boş bıraktın.
+
+1287
+01:35:08,275 --> 01:35:09,556
+O 5, niye olsun?
+
+1288
+01:35:09,636 --> 01:35:10,355
+İşte onu anlatıyorum.
+
+1289
+01:35:10,895 --> 01:35:12,096
+Ben 15 tane yaptım.
+
+1290
+01:35:14,216 --> 01:35:17,076
+Şey, 5 tane boş bıraktım.
+
+1291
+01:35:18,416 --> 01:35:19,216
+Kaç aldım?
+
+1292
+01:35:19,296 --> 01:35:20,516
+75 aldım [öğrenci].
+
+1293
+01:35:22,296 --> 01:35:23,516
+Diğer arkadaş da
+
+1294
+01:35:23,516 --> 01:35:24,855
+15 tane
+
+1295
+01:35:24,855 --> 01:35:27,896
+yaptı.
+
+1296
+01:35:29,436 --> 01:35:31,016
+5 tanesini salladı.
+
+1297
+01:35:31,016 --> 01:35:32,076
+bir tanesi tuttu.
+
+1298
+01:35:32,435 --> 01:35:33,195
+80 aldı.
+
+1299
+01:35:34,155 --> 01:35:34,536
+Hocam
+
+1300
+01:35:34,536 --> 01:35:35,756
+ilk niye sallamadı?
+
+1301
+01:35:36,536 --> 01:35:36,976
+İşte
+
+1302
+01:35:36,976 --> 01:35:37,916
+yani
+
+1303
+01:35:37,916 --> 01:35:38,976
+hayır
+
+1304
+01:35:38,976 --> 01:35:39,576
+şu olarak
+
+1305
+01:35:39,576 --> 01:35:40,395
+baktığın zaman
+
+1306
+01:35:40,395 --> 01:35:40,815
+işte
+
+1307
+01:35:40,815 --> 01:35:43,336
+sallamasına bırakırsanız
+
+1308
+01:35:43,336 --> 01:35:43,836
+bu defa
+
+1309
+01:35:43,836 --> 01:35:44,756
+hepsini tutturursa
+
+1310
+01:35:44,756 --> 01:35:45,176
+ne olacak?
+
+1311
+01:35:46,355 --> 01:35:47,036
+Çaba var.
+
+1312
+01:35:47,155 --> 01:35:48,615
+Nasıl bir çaba var [öğrenci]?
+
+1313
+01:35:49,056 --> 01:35:50,536
+Hocam o şansa sahipsin.
+
+1314
+01:35:51,655 --> 01:35:52,876
+Hak etmiştir ya
+
+1315
+01:35:52,876 --> 01:35:54,195
+o şans varsa zaten.
+
+1316
+01:35:54,636 --> 01:35:54,855
+Peki.
+
+1317
+01:35:55,096 --> 01:35:55,576
+Bilmiyorum.
+
+1318
+01:35:55,676 --> 01:35:57,115
+Bana çok şey gelmiyor açıkçası.
+
+1319
+01:35:57,296 --> 01:35:57,416
+Yani
+
+1320
+01:35:57,416 --> 01:35:58,676
+ben de aradayım.
+
+1321
+01:35:58,836 --> 01:36:00,216
+Yani götürsün mü, götürmesin mi
+
+1322
+01:36:00,216 --> 01:36:00,876
+noktasında.
+
+1323
+01:36:01,016 --> 01:36:02,336
+Hocam
+
+1324
+01:36:02,336 --> 01:36:03,056
+geçen sene
+
+1325
+01:36:03,056 --> 01:36:04,275
+bir sınavda
+
+1326
+01:36:04,275 --> 01:36:05,576
+15 soruma ne sallamıştım?
+
+1327
+01:36:05,636 --> 01:36:06,416
+Hiçbiri tutmamıştı.
+
+1328
+01:36:06,476 --> 01:36:06,976
+Yani o arkadaş
+
+1329
+01:36:06,976 --> 01:36:08,036
+kimse tanışmak istiyorum.
+
+1330
+01:36:08,536 --> 01:36:09,536
+15 tane ne yapmış?
+
+1331
+01:36:10,576 --> 01:36:11,275
+Geçen sene
+
+1332
+01:36:11,275 --> 01:36:12,576
+bir sınava girmiştim.
+
+1333
+01:36:12,695 --> 01:36:14,036
+15 tane soru sallamıştım.
+
+1334
+01:36:14,076 --> 01:36:14,895
+Hiçbirisi tutmadı.
+
+1335
+01:36:15,036 --> 01:36:15,735
+Yani o arkadaş
+
+1336
+01:36:15,735 --> 01:36:16,876
+kimse çok merak ediyorum.
+
+1337
+01:36:17,115 --> 01:36:17,136
+Hani
+
+1338
+01:36:17,136 --> 01:36:18,256
+soruların
+
+1339
+01:36:18,256 --> 01:36:18,655
+hepsini
+
+1340
+01:36:18,655 --> 01:36:19,155
+tutturan
+
+1341
+01:36:19,155 --> 01:36:19,935
+kimse.
+
+1342
+01:36:19,936 --> 01:36:22,076
+neyse canım.
+
+1343
+01:36:22,076 --> 01:36:22,456
+zaten
+
+1344
+01:36:22,456 --> 01:36:24,655
+bu amacımız şey değil ki zaten.
+
+1345
+01:36:25,336 --> 01:36:25,916
+Assınlar
+
+1346
+01:36:25,916 --> 01:36:26,456
+tutsunlar
+
+1347
+01:36:26,456 --> 01:36:27,036
+değil yani.
+
+1348
+01:36:27,395 --> 01:36:27,916
+Tuttursunlar
+
+1349
+01:36:27,916 --> 01:36:28,115
+ya da
+
+1350
+01:36:28,115 --> 01:36:28,855
+tutturamasınlar
+
+1351
+01:36:28,855 --> 01:36:29,036
+değil.
+
+1352
+01:36:29,536 --> 01:36:30,336
+Mevzu şu.
+
+1353
+01:36:30,996 --> 01:36:32,216
+Zaten bir arkadaş da
+
+1354
+01:36:32,216 --> 01:36:32,996
+biraz önce yazdı.
+
+1355
+01:36:33,176 --> 01:36:34,496
+İşlem yapıyorsunuz zaten.
+
+1356
+01:36:34,935 --> 01:36:35,395
+Yani işlem
+
+1357
+01:36:35,396 --> 01:36:36,195
+hataları zaten
+
+1358
+01:36:36,195 --> 01:36:36,916
+bir nevi sizi
+
+1359
+01:36:36,916 --> 01:36:37,956
+şey yapıyor.
+
+1360
+01:36:38,275 --> 01:36:38,436
+Yani
+
+1361
+01:36:38,436 --> 01:36:39,916
+zorluyor.
+
+1362
+01:36:41,916 --> 01:36:43,456
+Ya nasıl söyleyeyim size?
+
+1363
+01:36:43,916 --> 01:36:45,235
+Ya ben de çok emin değilim
+
+1364
+01:36:45,235 --> 01:36:45,716
+açıkçası.
+
+1365
+01:36:45,836 --> 01:36:46,496
+Hani götürsün mü
+
+1366
+01:36:46,496 --> 01:36:47,355
+götürmesin mi diye.
+
+1367
+01:36:48,155 --> 01:36:49,235
+Ama genel bir tanı
+
+1368
+01:36:49,235 --> 01:36:50,476
+oluştu geçen dönem.
+
+1369
+01:36:50,796 --> 01:36:51,775
+Yani götürsünler de.
+
+1370
+01:36:53,136 --> 01:36:53,836
+Bu dönemde
+
+1371
+01:36:53,836 --> 01:36:54,275
+büyük ihtimal
+
+1372
+01:36:54,275 --> 01:36:55,336
+aynı şey uygulanır
+
+1373
+01:36:55,336 --> 01:36:56,336
+gibi geliyor bana.
+
+1374
+01:36:58,436 --> 01:36:59,136
+Ne demiş [öğrenci]?
+
+1375
+01:37:01,775 --> 01:37:02,076
+He.
+
+1376
+01:37:03,988 --> 01:37:12,608
+Peki, yani siz nasıl istiyorsanız öne bakın arkadaşlar. Ama maalesef bir sistem daha var biliyorsunuz, sınav sistemi.
+
+1377
+01:37:13,807 --> 01:37:20,807
+Hocam ben bir şey soracağım bir de. Kamera açtıracaklar mı sınavda? Yani kamera yoksa o yüzden soruyorum.
+
+1378
+01:37:21,168 --> 01:37:21,807
+Ne yapacaklar mı?
+
+1379
+01:37:22,208 --> 01:37:23,728
+Kamera açtıracaklar mı?
+
+1380
+01:37:24,188 --> 01:37:25,868
+Valla o da düşünülüyor yani.
+
+1381
+01:37:27,588 --> 01:37:28,427
+Düşünüyorlar mı?
+
+1382
+01:37:28,427 --> 01:37:30,588
+Şimdi ben size şunu söyleyeyim.
+
+1383
+01:37:32,048 --> 01:37:39,788
+Ya bu tabii her yerde var. Sadece bizim ülkemizde olan bir olay değil ama bizde daha fazla var galiba.
+
+1384
+01:37:40,467 --> 01:37:50,128
+Biz mesela şöyle yapıyoruz. Diyoruz ki arkadaşlar işte hem test hem bu sıkıntılı süreçte yani yeni bir sınav sistemi gibi oldu.
+
+1385
+01:37:50,128 --> 01:37:52,748
+Biraz fazla zaman verelim ki şu olsun.
+
+1386
+01:37:55,008 --> 01:37:57,347
+Hani yapabilsinler falan.
+
+1387
+01:37:58,427 --> 01:38:28,408
+Sonra ne oluyor?
+
+1388
+01:38:28,408 --> 01:39:17,408
+Bir ne?
+
+1389
+01:39:09,043 --> 01:39:24,743
+Niye? Kamera açılmasıyla çalışanların şeyi ne alakası var mesela? Ya da dört yanlışın bir doğruyu götürmesiyle? Yok canım, süre kısıtlığıyla ne alakası? Ondan anlamadım.
+
+1390
+01:39:24,743 --> 01:39:29,104
+Rahat olamıyorsunuz.
+
+1391
+01:39:30,543 --> 01:39:31,184
+Bilmiyorum.
+
+1392
+01:39:31,623 --> 01:39:34,983
+Tabii yani, orada da haklısınız, rahat olamayabilirsiniz.
+
+1393
+01:39:36,523 --> 01:39:38,423
+Yok, şu anda zaten öyle bir şey yok.
+
+1394
+01:39:46,484 --> 01:39:53,564
+Evet, bazı arkadaşlar da diyorlar ki şey, yüzyıl sınav olsun falan. Keşke olsa ama şu anda mümkün değil.
+
+1395
+01:39:57,264 --> 01:40:01,184
+Açılmasın, açılmasın gizem. Açılmasın çünkü...
+
+1396
+01:40:01,184 --> 01:40:02,784
+Hocam siz niye açılmasın diyorsunuz ya?
+
+1397
+01:40:03,963 --> 01:40:08,104
+Ya arkadaşlar siz herhalde dışının farkında değilsiniz ya.
+
+1398
+01:40:09,564 --> 01:40:14,444
+Virüsten hocam ben onu demek istemedim. Bir okul açılma isteği olur ya hani.
+
+1399
+01:40:14,444 --> 01:40:16,463
+Keşke okul açılsa falan.
+
+1400
+01:40:16,764 --> 01:40:20,524
+He, o. E tabi açılsın canım. Ben o anamda demedim.
+
+1401
+01:40:20,923 --> 01:40:24,644
+Çünkü Twitter'da falan şey oluyor da öyle işte üniversiteler açılsın bilmem ne.
+
+1402
+01:40:24,824 --> 01:40:27,864
+Herhalde açılsın. Açılsın da açılacak zaman mı yani şimdi?
+
+1403
+01:40:30,064 --> 01:40:31,124
+Evet, belki de...
+
+1404
+01:40:31,124 --> 01:40:32,784
+Hiç yok değil mi? Açılma ihtimali falan.
+
+1405
+01:40:33,423 --> 01:40:36,124
+Yani şu anda mümkün değil. Özellikle İstanbul...
+
+1406
+01:40:36,124 --> 01:40:39,224
+Bir ara bir şahlandı da her yer. Açılacak falan diye.
+
+1407
+01:40:39,224 --> 01:40:41,864
+Yok arkadaşlar yani şu anda...
+
+1408
+01:40:41,864 --> 01:40:42,984
+Hocam şey...
+
+1409
+01:40:42,984 --> 01:40:45,104
+Virüs oranının yüzde kırkını biz karşılıyoruz.
+
+1410
+01:40:45,104 --> 01:40:45,963
+Yani ne yaptınız?
+
+1411
+01:40:46,304 --> 01:40:49,184
+Şimdi dışarıdan bir sürü arkadaş gelecek. Onlar nerede kalacak?
+
+1412
+01:40:49,884 --> 01:40:50,324
+Ya da buraya...
+
+1413
+01:40:50,324 --> 01:40:52,444
+İş güvenliği hocası açılacak dedi bize.
+
+1414
+01:40:52,984 --> 01:40:53,384
+Kim dedi?
+
+1415
+01:40:53,864 --> 01:40:56,124
+İş güvenliği öyle bir ders var ya.
+
+1416
+01:40:56,284 --> 01:40:59,064
+Üç haftaya açılır falan öyle bir şeyler demişti galiba.
+
+1417
+01:40:59,064 --> 01:41:02,244
+Ama şöyle bir şey var zaten. Bizim bölümde var. Sizlerde de var mı bilmiyorum.
+
+1418
+01:41:03,244 --> 01:41:07,144
+Zaten yüz yüze eğitim yapan derslerimiz var bizim hocalarımız var burada.
+
+1419
+01:41:07,144 --> 01:41:10,264
+Yani belki sizin bölümde vardır.
+
+1420
+01:41:10,264 --> 01:41:11,264
+Var mı?
+
+1421
+01:41:11,264 --> 01:41:12,484
+İsteyenler geliyor zaten.
+
+1422
+01:41:12,804 --> 01:41:13,724
+Onda bir problem yok.
+
+1423
+01:41:14,164 --> 01:41:15,264
+Ama bana kalırsa...
+
+1424
+01:41:15,264 --> 01:41:17,904
+Çünkü sadece sizinle ya da bizimle alakalı değil.
+
+1425
+01:41:18,024 --> 01:41:24,484
+Evinizde belki kronik hastalığı olan olabilir ya da işte annenleriniz, babaanneniz olabilir falan.
+
+1426
+01:41:24,764 --> 01:41:26,344
+Onlar için çok tehlikeli arkadaşlar.
+
+1427
+01:41:26,344 --> 01:41:27,364
+Bilmiyorum yani ben...
+
+1428
+01:41:27,364 --> 01:41:57,344
+Birçok birçok arkadaşım.
+
+1429
+01:41:57,344 --> 01:42:00,524
+aynı zamanda onu kamerayla işte online zoom'a da bağlamış.
+
+1430
+01:42:02,124 --> 01:42:03,344
+Öyle yapıyor yani.
+
+1431
+01:42:03,884 --> 01:42:05,384
+Atıyorum 10 tane öğrenci geliyor.
+
+1432
+01:42:06,284 --> 01:42:08,423
+80 tanesi oradan takip ediyor.
+
+1433
+01:42:09,884 --> 01:42:10,963
+Hibrit gibi daha.
+
+1434
+01:42:11,384 --> 01:42:11,904
+Evet evet.
+
+1435
+01:42:12,084 --> 01:42:12,544
+Aynen öyle.
+
+1436
+01:42:12,923 --> 01:42:14,304
+Arkadaşlar biraz da sabredin.
+
+1437
+01:42:14,384 --> 01:42:17,484
+İnşallah önümüzdeki dönem açılır okul.
+
+1438
+01:42:17,584 --> 01:42:19,784
+Hep beraber kavuşuruz sizler de sınıflarınıza.
+
+1439
+01:42:20,064 --> 01:42:21,484
+Bizler de öğrencilerimize kavuşuruz.
+
+1440
+01:42:21,544 --> 01:42:22,124
+Biz de istiyoruz.
+
+1441
+01:42:22,284 --> 01:42:23,244
+Biz de özledik sizleri.
+
+1442
+01:42:23,884 --> 01:42:25,384
+Ama gerçekten şey değil yani.
+
+1443
+01:42:25,384 --> 01:42:27,384
+ben öyle.
+
+1444
+01:42:27,384 --> 01:42:27,404
+Yani ben öyle görüyorum.
+
+1445
+01:42:27,404 --> 01:42:31,484
+Yani bu sağlık işleri öyle şeye gelecek, ihmale gelecek şeyler değil.
+
+1446
+01:42:32,484 --> 01:42:36,904
+Gerekli tedbirler alınırsa ya da sıkıntılar hallolursa elbette açılsın okulumuz yani.
+
+1447
+01:42:37,664 --> 01:42:38,524
+Biz de özledik sizi.
+
+1448
+01:42:38,884 --> 01:42:40,844
+Yani sizinle alakalı bir derdimiz yok.
+
+1449
+01:42:41,784 --> 01:42:42,224
+Tamam mı?
+
+1450
+01:42:42,224 --> 01:42:45,184
+Peki.
+
+1451
+01:42:45,184 --> 01:42:47,444
+O zaman arkadaşlar size boyum olmaz.
+
+1452
+01:42:49,764 --> 01:42:50,024
+Evet.
+
+1453
+01:42:50,024 --> 01:42:51,664
+[öğrenci] özleyenler de var.
+
+1454
+01:42:51,764 --> 01:42:52,804
+Özlemeyenler de var.
+
+1455
+01:42:54,004 --> 01:42:54,704
+Ama özlenir.
+
+1456
+01:42:54,784 --> 01:42:55,824
+Okul özlenmez mi yani?
+
+1457
+01:42:56,304 --> 01:42:56,784
+Yani.
+
+1458
+01:42:58,224 --> 01:43:00,024
+O yüzden biz sizleri özledik.
+
+1459
+01:43:00,104 --> 01:43:02,064
+İnşallah tez zamanda kavuşuruz diyelim.
+
+1460
+01:43:03,504 --> 01:43:04,144
+Peki.
+
+1461
+01:43:04,504 --> 01:43:06,144
+Var mı söylemek, sormak istediğiniz bir şey?
+
+1462
+01:43:06,144 --> 01:43:36,124
+Hocam ben bir şey sorabilir miyim?
+
+1463
+01:43:36,144 --> 01:43:39,244
+Siz yine böyle slide'dan mı gidiyorsunuz?
+
+1464
+01:43:40,884 --> 01:43:43,384
+Slit denlerken ben tabletle anlatıyorum dersi.
+
+1465
+01:43:43,623 --> 01:43:46,083
+Hayır hayır, yüz yüze ders olunca mesela.
+
+1466
+01:43:46,484 --> 01:43:48,083
+Yok, tahtada yazıyorum.
+
+1467
+01:43:48,663 --> 01:43:55,984
+Ha, yazıyorsunuz. Mesela bazı dersler için iyi oluyor, hani atıyorum, slit ile yüz yüze, slit ile giden dersler de varmış.
+
+1468
+01:43:56,564 --> 01:44:03,384
+Mesela onda not almak sıkıntı olduğu için, dersler bir anlamda kaydolduğu için daha iyi oluyor online derste.
+
+1469
+01:44:03,764 --> 01:44:09,724
+Yok, bence yani online ders daha faydalı gibi geliyor bana ama tabii, bu benim fikrim.
+
+1470
+01:44:09,724 --> 01:44:11,264
+herkese göre değişebilir.
+
+1471
+01:44:11,684 --> 01:44:17,323
+Özellikle bu uygulamalı alanlarda, yani mühendislikler için onların uygulama dersleri var falan.
+
+1472
+01:44:17,463 --> 01:44:19,484
+Elbette online yapılacak işler değil.
+
+1473
+01:44:20,623 --> 01:44:27,844
+Ama teorik dersler ya da işte bu matematik, lineer cebir falan, bunlar yani halde oluyor bir şekilde.
+
+1474
+01:44:27,844 --> 01:44:33,144
+Yani zaten birçok öğrenci de, ben önceden biliyorum, ders de dinlemiyordu.
+
+1475
+01:44:33,743 --> 01:44:35,984
+Gidip YouTube'dan başkalarını dinliyorlardı yani.
+
+1476
+01:44:36,323 --> 01:44:38,963
+Yani çok bir farkı olmadı yani açıkçası.
+
+1477
+01:44:39,724 --> 01:44:43,604
+Ama elbette yani sonuçta, yani sonuçta eğitim üniversitede ya da okulda verilir.
+
+1478
+01:44:44,564 --> 01:44:48,024
+Ama bu ekstrem bir durum, yapacak bir şey yok.
+
+1479
+01:44:48,144 --> 01:44:50,163
+100 yılda belki 150 yılda olan bir şey.
+
+1480
+01:44:50,163 --> 01:44:51,684
+O da bize de geldi.
+
+1481
+01:44:52,524 --> 01:44:53,083
+Ne diyelim?
+
+1482
+01:44:54,984 --> 01:44:58,243
+İnşallah tez zamanda kavuşuruz yani.
+
+1483
+01:44:58,243 --> 01:45:02,623
+Bu böyle gidecek bir şey.
+
+1484
+01:45:02,623 --> 01:45:05,123
+Herhalde önümüzdeki dönem halde olur.
+
+1485
+01:45:05,923 --> 01:45:08,724
+Bu noktada benim ümidim var yani.
+
+1486
+01:45:09,844 --> 01:45:10,224
+Tamam mı?
+
+1487
+01:45:12,344 --> 01:45:12,644
+Peki.
+
+1488
+01:45:13,064 --> 01:45:13,804
+İyi günler hocam.
+
+1489
+01:45:14,003 --> 01:45:16,144
+Size de biraz sohbet ettik bugün iyi oldu.
+
+1490
+01:45:16,944 --> 01:45:18,203
+Sohbet etmemiştik siz de.
+
+1491
+01:45:19,363 --> 01:45:20,503
+Var mı başka sorusu olan?
+
+1492
+01:45:20,503 --> 01:45:24,384
+Peki arkadaşlar.
+
+1493
+01:45:24,384 --> 01:45:25,543
+Dikkat edin kendinize.
+
+1494
+01:45:25,543 --> 01:45:27,423
+İyi günler hocam.
+
+1495
+01:45:27,724 --> 01:45:29,043
+İyi günler diliyorum hepinize.

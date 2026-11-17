@@ -7,6 +7,7 @@
 | 1 | Güz | Serpil Karayel | [sube_1/](sube_1/) |
 | 1 | Bahar | Ahmet Göksel Ağargün | [sube_1_bahar/](sube_1_bahar/) |
 | 2 | Güz | Bulunamadı | [sube_2/](sube_2/) |
+| 4 | Güz | İsmail Aydoğdu | [sube_4/](sube_4/) |
 | 6 | Güz | Bayram Ali Ersoy | [sube_6/](sube_6/) |
 | 7 | Güz | Mehmet Emin Köroğlu | [sube_7/](sube_7/) |
 | 10 | Bahar | Hülya Burhanzade | [sube_10/](sube_10/) |
