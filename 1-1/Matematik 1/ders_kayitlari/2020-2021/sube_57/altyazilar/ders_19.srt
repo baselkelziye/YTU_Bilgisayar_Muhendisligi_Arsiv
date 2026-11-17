@@ -1,0 +1,6051 @@
+1
+00:00:05,363 --> 00:00:06,543
+Günaydın arkadaşlar.
+
+2
+00:00:30,100 --> 00:00:31,100
+bir şey daha iyi değil.
+
+3
+00:01:11,924 --> 00:01:19,644
+Good morning. Good morning to everyone. Okay. So today we will continue our...
+
+4
+00:01:23,731 --> 00:01:39,731
+yesterday, I remember, we start with integral techniques, and lastly, we finish with reduction formula.
+
+5
+00:01:43,251 --> 00:01:54,711
+Yok, pardon. Yesterday, iki grubum var da kafam karışıyor. Siz de şeyi bitirdik sanırım. Integration by Parts'ı bitirdik.
+
+6
+00:02:14,836 --> 00:02:23,536
+Okay, yesterday I think we finished integration by part. I think we finished last integration by part.
+
+7
+00:02:27,156 --> 00:02:30,336
+sorunun 2x çözümü hangi soruydu o?
+
+8
+00:02:30,896 --> 00:02:31,616
+Bir saniye.
+
+9
+00:02:33,676 --> 00:02:34,316
+Bakalım.
+
+10
+00:02:40,596 --> 00:02:42,596
+izba.
+
+11
+00:03:11,412 --> 00:03:12,412
+tüm izvan.
+
+12
+00:03:21,044 --> 00:03:25,304
+Pardon, ben de ikrar görünüyor diye, budur budur diye söylüyorum.
+
+13
+00:03:25,304 --> 00:03:25,683
+Okay.
+
+14
+00:03:26,664 --> 00:03:28,864
+Yesterday, I think we finished with this one.
+
+15
+00:03:29,664 --> 00:03:32,243
+I will show the second way of the question.
+
+16
+00:03:33,164 --> 00:03:33,403
+Okay.
+
+17
+00:03:34,444 --> 00:03:35,924
+Our question is this.
+
+18
+00:03:53,876 --> 00:03:54,876
+ok?
+
+19
+00:04:02,580 --> 00:04:05,580
+Bu sorunlar, ikinci bir sorunlar var.
+
+20
+00:04:05,580 --> 00:04:09,580
+İntek olarak, bu sorunlar var.
+
+21
+00:04:09,580 --> 00:04:11,580
+Bir sorunlar var.
+
+22
+00:04:11,580 --> 00:04:13,580
+Bu sorunlar var.
+
+23
+00:04:13,580 --> 00:04:15,580
+Ama 1 over x var.
+
+24
+00:04:15,580 --> 00:04:23,580
+Bu sorunlar var.
+
+25
+00:04:30,004 --> 00:04:45,963
+We can say that u is arcsin ln x and 1 over x dx we will take as d.
+
+26
+00:04:46,963 --> 00:04:52,963
+So if we take differential of left side and right side du will be derivation inside.
+
+27
+00:04:52,963 --> 00:05:05,344
+Derivation inside will be 1 over x and derivation of arcsin function will be 1 minus inside square ln square x.
+
+28
+00:05:07,903 --> 00:05:14,244
+Okay so on the right side if I take the integral it will be ln x will be v.
+
+29
+00:05:14,244 --> 00:05:32,744
+So our integral will be u product v ln x arcsin ln x minus integral v product du.
+
+30
+00:05:32,744 --> 00:05:46,304
+It will be dx over x 1 minus x ln square x.
+
+31
+00:05:48,584 --> 00:05:51,724
+This is our integration by parts.
+
+32
+00:05:51,884 --> 00:05:54,244
+Now I have to solve the second integral.
+
+33
+00:05:54,804 --> 00:05:59,584
+In the second integral how can we solve this one?
+
+34
+00:05:59,584 --> 00:06:03,403
+What can we do here? Let us say it is true.
+
+35
+00:06:07,091 --> 00:06:10,752
+Bakın sorunu, bakın diğer bir integral.
+
+36
+00:06:11,252 --> 00:06:13,132
+Nasıl bir diğer integral?
+
+37
+00:06:22,163 --> 00:06:23,623
+Nasıl çözebiliriz? Bakın bakın.
+
+38
+00:06:24,423 --> 00:06:28,743
+Look at this question. Look at the second integral. How can we solve this integral?
+
+39
+00:06:39,636 --> 00:06:40,876
+Duyur heveni, [öğrenci].
+
+40
+00:06:49,076 --> 00:06:51,915
+You can say that we need a transformation.
+
+41
+00:06:51,915 --> 00:06:55,076
+It is not so easy to integrate.
+
+42
+00:06:55,076 --> 00:07:01,076
+We need a transformation, but what kind of transformation we can choose?
+
+43
+00:07:13,716 --> 00:07:26,276
+Okay, so firstly if we say inside of the root is u or u square, we don't have, we have derivation 2 ln x 1 over x.
+
+44
+00:07:26,276 --> 00:07:28,995
+Okay, let's try every transformation.
+
+45
+00:07:28,995 --> 00:07:50,756
+If we write 1 minus ln square x as u square, we will have minus 2 ln x product derivation of ln function is 1 over x dx will be 2 u du.
+
+46
+00:07:52,516 --> 00:07:54,276
+Okay, we can cancel 2.
+
+47
+00:07:54,276 --> 00:08:01,056
+So our integral becomes integral.
+
+48
+00:08:03,876 --> 00:08:14,795
+This one will be minus u du over u.
+
+49
+00:08:15,615 --> 00:08:17,016
+It will be minus 1.
+
+50
+00:08:17,115 --> 00:08:18,855
+The integral will be minus u.
+
+51
+00:08:18,855 --> 00:08:27,115
+It is minus 1 minus ln square x.
+
+52
+00:08:28,115 --> 00:08:41,036
+So our solution will be ln x arc sine ln x.
+
+53
+00:08:41,036 --> 00:08:54,235
+Plus, because here I have also minus, it will be plus 1 minus ln square x and a constant c.
+
+54
+00:08:55,115 --> 00:08:59,115
+Or here you can say ln x also u.
+
+55
+00:08:59,255 --> 00:09:02,115
+You can use this way also.
+
+56
+00:09:02,115 --> 00:09:06,596
+You will find the solution again.
+
+57
+00:09:06,716 --> 00:09:10,755
+But let me write, let's see what happens if we take this one.
+
+58
+00:09:10,895 --> 00:09:19,355
+If I say ln x is u, dx over x will be du.
+
+59
+00:09:19,355 --> 00:09:28,836
+So our integral will be dx over x is this.
+
+60
+00:09:28,836 --> 00:09:35,056
+u du over 1 minus u square.
+
+61
+00:09:35,915 --> 00:09:42,615
+It is a little bit long because here you need another transformation.
+
+62
+00:09:42,615 --> 00:09:45,456
+Okay, but this one is more easy.
+
+63
+00:09:45,456 --> 00:09:46,076
+This one.
+
+64
+00:09:46,495 --> 00:09:46,735
+Okay.
+
+65
+00:09:49,216 --> 00:09:51,216
+Okay, so do you have any question?
+
+66
+00:09:51,216 --> 00:09:51,375
+Okay.
+
+67
+00:09:51,375 --> 00:09:51,416
+So do you have any question?
+
+68
+00:09:51,416 --> 00:10:03,475
+Okay.
+
+69
+00:10:03,475 --> 00:10:04,475
+So do you have any question?
+
+70
+00:10:04,475 --> 00:10:12,475
+Okay.
+
+71
+00:09:57,203 --> 00:10:04,403
+Okay, if you don't have any question, let us start our last subject for the second exam. Okay.
+
+72
+00:10:10,100 --> 00:10:16,720
+You can find the second lecture notes on my analysis page I put yesterday. Okay. Yesterday evening.
+
+73
+00:10:17,879 --> 00:10:26,240
+Now our last subjects are trigonometric integrals and reduction method. You will see in the second exam also.
+
+74
+00:10:26,460 --> 00:10:36,720
+This is our trigonometric integrals and we will see lastly reduction formula. Okay. So trigonometric integrals, we have some different integrals.
+
+75
+00:10:36,720 --> 00:10:46,399
+integrals. The first one integrals where we have the product of sine and cosine function, but these functions have some powers.
+
+76
+00:10:47,820 --> 00:10:58,899
+Sine mx, cosine and x dx. So we have four possibilities. What can we do? We can have seconds.
+
+77
+00:11:10,131 --> 00:11:30,371
+So we can have M can be odd, M can be even, M can be even, M can be odd, M can be even, M can be even, and both of them can be odd.
+
+78
+00:11:30,371 --> 00:11:50,831
+Okay, we have three, four possibilities. So the first one, if M is odd, and N is an even number, for example, M is three, N is two, then we will use the transformation U is cosine X.
+
+79
+00:11:50,831 --> 00:12:00,551
+I will show in the examples you will see, so you don't need to remember these formulas, you can see when you see the integral.
+
+80
+00:12:00,791 --> 00:12:11,891
+If M is even, and N is odd, we will use a transformation as U is sine X. If both of them are odd, for example, three, this is five.
+
+81
+00:12:11,891 --> 00:12:30,311
+We can use a transformation, any of them, we can write cosine or sine. If both of them are even, for example, two and four, we need to use the relation, what is the relation, cosine squared X and sine squared X.
+
+82
+00:12:30,311 --> 00:12:42,932
+How can we find this formula? We know that cosine 2X is cosine squared X minus sine squared X.
+
+83
+00:12:45,291 --> 00:12:54,811
+If I cancel cosine squared X and if I write instead of one minus sine squared X, I will have one minus two sine squared X.
+
+84
+00:12:54,811 --> 00:13:07,891
+And if I write sine squared X from here, sine squared X will be one minus cosine two X over two.
+
+85
+00:13:09,351 --> 00:13:11,811
+So this relation comes from there.
+
+86
+00:13:13,192 --> 00:13:20,432
+And if you make this similar process, we will find cosine squared X is one plus cosine two X over two.
+
+87
+00:13:20,432 --> 00:13:26,271
+Okay, so let's see what can we do or how can we decide.
+
+88
+00:13:29,551 --> 00:13:34,651
+Yani çok formula atılamanıza gerek yok. Zaten sorular çözükçe kafamıza yatacak.
+
+89
+00:13:35,651 --> 00:13:35,951
+Okay.
+
+90
+00:13:37,231 --> 00:13:39,371
+So we have sine and cross sine.
+
+91
+00:13:40,091 --> 00:13:42,831
+One of them is odd, one of them the power is even.
+
+92
+00:13:44,071 --> 00:13:49,211
+When you see the odd turn, you will write one odd turn separately.
+
+93
+00:13:49,211 --> 00:13:59,932
+So I will write sine squared X cosine 8X.
+
+94
+00:14:00,411 --> 00:14:04,591
+I write one sine X here dx.
+
+95
+00:14:05,871 --> 00:14:06,151
+Okay.
+
+96
+00:14:07,031 --> 00:14:11,571
+After that, the derivation part will be here.
+
+97
+00:14:11,951 --> 00:14:18,211
+So I will cancel sine squared X instead of I will write with cosine terms.
+
+98
+00:14:18,211 --> 00:14:19,031
+What is that?
+
+99
+00:14:19,411 --> 00:14:25,111
+I know that sine squared X is also one minus cosine squared X.
+
+100
+00:14:26,571 --> 00:14:33,371
+So if I write cosine X is u, I have cosine function.
+
+101
+00:14:33,531 --> 00:14:36,571
+Cosine function and I have derivation of cosine function.
+
+102
+00:14:36,571 --> 00:14:43,231
+So minus sine X dx will be du.
+
+103
+00:14:45,231 --> 00:14:47,991
+Let's write this transformation.
+
+104
+00:14:49,291 --> 00:14:52,091
+We will have one minus u squared.
+
+105
+00:14:53,371 --> 00:14:55,211
+U to the power 8.
+
+106
+00:14:55,811 --> 00:14:58,891
+And sine X dx will be minus du.
+
+107
+00:14:58,891 --> 00:15:01,591
+So this is our integral.
+
+108
+00:15:02,711 --> 00:15:06,931
+If I take the integral, the product will be u to the 8.
+
+109
+00:15:07,171 --> 00:15:08,871
+The integral will be u to the 9.
+
+110
+00:15:08,871 --> 00:15:34,871
+So this is our integral.
+
+111
+00:15:09,779 --> 00:15:12,679
+9 minus
+
+112
+00:15:12,679 --> 00:15:15,019
+the product here will be u10
+
+113
+00:15:15,019 --> 00:15:17,000
+it will be u11
+
+114
+00:15:17,000 --> 00:15:18,379
+over 11
+
+115
+00:15:18,379 --> 00:15:22,459
+and a constant c
+
+116
+00:15:22,459 --> 00:15:24,019
+this is our integral
+
+117
+00:15:24,019 --> 00:15:27,039
+and if you write our integral here
+
+118
+00:15:27,039 --> 00:15:28,819
+we will have minus
+
+119
+00:15:28,819 --> 00:15:29,819
+cosine
+
+120
+00:15:29,819 --> 00:15:32,959
+9x over 9
+
+121
+00:15:32,959 --> 00:15:36,139
+plus
+
+122
+00:15:36,139 --> 00:15:37,639
+cosine
+
+123
+00:15:37,639 --> 00:15:40,600
+11x over
+
+124
+00:15:40,600 --> 00:15:42,379
+11
+
+125
+00:15:42,379 --> 00:15:44,279
+plus c
+
+126
+00:15:44,279 --> 00:15:46,919
+ok
+
+127
+00:15:46,919 --> 00:15:49,100
+if one of
+
+128
+00:15:49,100 --> 00:15:50,519
+terms power is
+
+129
+00:15:50,519 --> 00:15:53,079
+odd you will write one
+
+130
+00:15:53,079 --> 00:15:54,159
+term
+
+131
+00:15:54,159 --> 00:15:58,120
+in the end
+
+132
+00:15:58,120 --> 00:15:59,319
+after that
+
+133
+00:15:59,319 --> 00:16:01,199
+I will change the other
+
+134
+00:16:01,199 --> 00:16:02,779
+parts as
+
+135
+00:16:02,779 --> 00:16:05,019
+if it is sine or cosine you will
+
+136
+00:16:05,019 --> 00:16:06,579
+change to the other term
+
+137
+00:16:06,579 --> 00:16:08,299
+and our transformation
+
+138
+00:16:08,299 --> 00:16:09,319
+will be this
+
+139
+00:16:09,319 --> 00:16:11,319
+do you have any question
+
+140
+00:16:11,319 --> 00:16:12,199
+in this example
+
+141
+00:16:12,199 --> 00:16:28,039
+do you have any question in this example
+
+142
+00:16:18,227 --> 00:16:22,787
+Okay, if you don't, let's see another example.
+
+143
+00:16:40,340 --> 00:16:41,660
+Let's see this example.
+
+144
+00:16:43,800 --> 00:16:47,480
+In this example, maybe you can say that I have one term.
+
+145
+00:16:47,600 --> 00:16:51,780
+Actually, you have sine function, but the power is zero.
+
+146
+00:16:51,780 --> 00:17:01,680
+So, you can see sine 0 ax, cosine 5 ax.
+
+147
+00:17:02,120 --> 00:17:03,440
+You can think this way also.
+
+148
+00:17:04,400 --> 00:17:07,480
+Here, m is zero, it is even, and it's five.
+
+149
+00:17:07,480 --> 00:17:08,579
+Okay.
+
+150
+00:17:09,460 --> 00:17:18,160
+So, here, firstly, I need to write one cosine function on the end, in the end.
+
+151
+00:17:18,160 --> 00:17:28,100
+So, I will have cosine 4 ax, cosine ax dx.
+
+152
+00:17:28,100 --> 00:17:38,180
+After that, I need to change the term cosine 4 ax as sine function.
+
+153
+00:17:38,440 --> 00:17:39,640
+What can we do here?
+
+154
+00:17:44,243 --> 00:17:52,723
+If you think this function is cosine square ax square.
+
+155
+00:17:53,863 --> 00:17:54,783
+Okay.
+
+156
+00:17:56,103 --> 00:18:03,363
+I know that cosine square ax can written as 1 minus sine square.
+
+157
+00:18:03,363 --> 00:18:12,783
+So I can write this part as 1 minus sine square ax.
+
+158
+00:18:12,783 --> 00:18:13,624
+Okay.
+
+159
+00:18:14,823 --> 00:18:15,223
+Square.
+
+160
+00:18:16,303 --> 00:18:19,203
+Now I can use our transformation.
+
+161
+00:18:19,723 --> 00:18:24,203
+Our transformation will be sine ax.
+
+162
+00:18:25,603 --> 00:18:35,364
+So du will be, derivation inside will be a, derivation of sine function cosine ax dx.
+
+163
+00:18:35,364 --> 00:18:36,003
+So our integral will be, derivation of sine x.
+
+164
+00:18:38,003 --> 00:18:40,683
+So our integral will be,
+
+165
+00:18:40,683 --> 00:18:55,903
+1 minus u square, square, product, cosine ax dx will be du over a.
+
+166
+00:19:02,067 --> 00:19:19,627
+Okay, so let's look at inside of the integral. We can write 1 over a outside. The opon of square will be 1 minus 2u square plus u to the power 4 du.
+
+167
+00:19:19,627 --> 00:19:42,107
+It will be integral of 1 will be u minus 2u cube over 3 plus u to the power 5 over 5 plus a constant c.
+
+168
+00:19:42,107 --> 00:19:49,347
+So our result will be 1 over a. So our result will be 1 over a. So our result will be 1 over a.
+
+169
+00:19:49,347 --> 00:20:12,087
+U will be sin ax minus 2 over 3 sin cube ax plus 1 over 5 sin 5.
+
+170
+00:20:12,107 --> 00:20:23,028
+ax plus c. This is our integral. Do you have any question here?
+
+171
+00:20:28,468 --> 00:20:30,048
+Anlaşıldı mı arkadaşlar burada?
+
+172
+00:20:31,848 --> 00:20:37,508
+Okay. If you don't have any question, let's see the next one.
+
+173
+00:20:42,579 --> 00:20:50,279
+Now in this example, both of them are, alt.
+
+174
+00:20:59,124 --> 00:21:04,284
+Bu örneğin, sin- ve cos-sine-fusundan sonuçlar var.
+
+175
+00:21:06,144 --> 00:21:09,483
+Bu örneğin, bu örneğin, bir örneğin, bir örneğin.
+
+176
+00:21:09,963 --> 00:21:13,743
+Bu örneğin, sin- ve cos-sine-fusundan sonuçlar var.
+
+177
+00:21:14,403 --> 00:21:19,384
+Bir örneğin, bir örneğin, bir örneğin.
+
+178
+00:21:21,223 --> 00:21:24,544
+Bir örneğin, bir örneğin, sin-tosun.
+
+179
+00:21:24,544 --> 00:21:36,824
+On, outside, let us write sin-cube-x, cos-square-x, product, cos-x-dx.
+
+180
+00:21:37,504 --> 00:21:48,504
+In that case, I have to change cos-square-x as 1-sin-square-x.
+
+181
+00:21:49,304 --> 00:21:53,463
+Okay, so our transformation will be sin-x.
+
+182
+00:21:54,544 --> 00:22:01,324
+And du will be cos-x-dx.
+
+183
+00:22:04,024 --> 00:22:10,663
+Okay, so we can write the integral becomes sin-cube-u-cube.
+
+184
+00:22:12,124 --> 00:22:14,364
+1-u-square.
+
+185
+00:22:15,884 --> 00:22:17,584
+Cos-x-dx will be du.
+
+186
+00:22:17,584 --> 00:22:21,144
+We have an easy integral.
+
+187
+00:22:21,423 --> 00:22:28,683
+If you product with this one and this one, the integral of u-cube will be u to the 4 over 4.
+
+188
+00:22:29,983 --> 00:22:31,504
+Minus we have 5.
+
+189
+00:22:31,824 --> 00:22:33,963
+It will be u to the power 6 over 6.
+
+190
+00:22:35,244 --> 00:22:37,084
+And a constant c.
+
+191
+00:22:37,084 --> 00:22:44,504
+So u is sin-4x over 4.
+
+192
+00:22:45,784 --> 00:22:50,923
+Minus sin-6x over 6.
+
+193
+00:22:51,923 --> 00:22:53,624
+And a constant c.
+
+194
+00:22:54,764 --> 00:23:00,644
+If you want to use the transformation sin-x, our integral will be this.
+
+195
+00:23:00,644 --> 00:23:07,364
+In this example, you can choose the second one.
+
+196
+00:23:07,723 --> 00:23:11,544
+In the second way, let us try to write sin function.
+
+197
+00:23:11,544 --> 00:23:27,403
+If I write the sin function, the integral will be cos-cube-x sin-square-x product sin-x dx.
+
+198
+00:23:27,403 --> 00:23:38,443
+So I have to change sin-square-x as 1-cos-square-x.
+
+199
+00:23:38,864 --> 00:23:45,124
+In that case, I need to use the transformation u as cos-x.
+
+200
+00:23:45,124 --> 00:23:57,884
+So du will be minus sin-x dx.
+
+201
+00:23:59,564 --> 00:24:02,324
+Okay, so let us write our integral.
+
+202
+00:24:03,203 --> 00:24:04,903
+Cos-cube-u-cube.
+
+203
+00:24:06,744 --> 00:24:08,903
+1 minus u-square.
+
+204
+00:24:08,903 --> 00:24:13,584
+Sin-x dx will be minus du.
+
+205
+00:24:15,344 --> 00:24:24,663
+So our integral will be, if we product with this one and this one, u-cube will be u to the power 4 over 4.
+
+206
+00:24:26,264 --> 00:24:29,304
+Minus u to the power 6 over 6.
+
+207
+00:24:30,744 --> 00:24:32,544
+And a constant c.
+
+208
+00:24:32,544 --> 00:24:50,824
+And lastly, if you write minus cosine 4x over 4 plus cosine 6x over 6 plus c.
+
+209
+00:24:51,380 --> 00:24:57,200
+Maybe you can say that these two results are different. No, it is not different.
+
+210
+00:24:57,700 --> 00:25:04,400
+When you make some process, you will find the same thing. Okay?
+
+211
+00:25:05,420 --> 00:25:12,320
+When you write sine square x instead of 1 minus cosine square x, you will find the same result.
+
+212
+00:25:13,020 --> 00:25:17,660
+But both of them are true. Okay?
+
+213
+00:25:17,660 --> 00:25:21,820
+Do you have any questions?
+
+214
+00:25:24,400 --> 00:25:29,560
+Şimdi bakın sorunun çözümlerinin şeyi, biri sinüsü tabii ki biri kosünüsü çıkacak.
+
+215
+00:25:29,740 --> 00:25:32,440
+Gerekli düzenleme yaptığınızda zaten aynı şey çıkacak yine.
+
+216
+00:25:33,300 --> 00:25:37,860
+Burada sinüsün karenin yerine kosünüsü yazdığınız zaman onu bulacaksınız yine zaten.
+
+217
+00:25:39,220 --> 00:25:39,860
+Okay.
+
+218
+00:25:41,060 --> 00:25:45,400
+If you don't have any questions, lastly let's see.
+
+219
+00:25:45,400 --> 00:25:49,140
+If both of them are even...
+
+220
+00:25:49,140 --> 00:26:12,140
+...
+
+221
+00:26:09,907 --> 00:26:18,087
+Here I have only sine 4x. Actually, I have cosine, but the power of cosine function is zero. So both of them are even.
+
+222
+00:26:18,827 --> 00:26:22,967
+They said that if you have even, both of them are even,
+
+223
+00:26:26,708 --> 00:26:30,968
+We will use these relations. Let's see here.
+
+224
+00:26:43,827 --> 00:26:54,788
+Okay, so if both of them are even, I need to write all of them for cosine squared and sine squared.
+
+225
+00:26:54,788 --> 00:27:04,347
+So I have sine function, so first I can think that it is sine squared x squared.
+
+226
+00:27:05,307 --> 00:27:09,847
+So I can cancel sine squared x and I can use this relation.
+
+227
+00:27:09,847 --> 00:27:21,587
+It will be 1 minus cosine 2x over 2 square dx.
+
+228
+00:27:23,728 --> 00:27:26,768
+I use the relation with cosine 2x.
+
+229
+00:27:27,327 --> 00:27:31,167
+So firstly, I have to take square of inside.
+
+230
+00:27:31,167 --> 00:27:50,947
+So I can write 1 over 4 outside integral square of 1 minus 2 cosine 2x plus cosine squared 2x dx.
+
+231
+00:27:51,847 --> 00:27:56,627
+Okay, so I know the integral of the first two terms.
+
+232
+00:27:56,627 --> 00:28:00,268
+I know the integral of 1 and this one.
+
+233
+00:28:00,508 --> 00:28:02,407
+Let us write 1 over 4.
+
+234
+00:28:04,228 --> 00:28:09,367
+Integral of 1 will be x minus 2 product.
+
+235
+00:28:09,367 --> 00:28:20,548
+Integral of cosine 2x is 1 over 2 sine 2x plus 1 over 4.
+
+236
+00:28:20,548 --> 00:28:28,468
+Now I need to find integral of cosine squared 2x dx.
+
+237
+00:28:30,067 --> 00:28:35,208
+Okay, now the power is 2 and it is even.
+
+238
+00:28:35,827 --> 00:28:40,567
+So in that case, I have to use any of this relation or this relation.
+
+239
+00:28:40,968 --> 00:28:45,248
+But in our question, we have cosine, so I have to use this relation.
+
+240
+00:28:45,248 --> 00:28:53,607
+I will cancel cosine squared 2x and I will write a relation with cosine 4x.
+
+241
+00:28:54,228 --> 00:28:56,708
+So what can I write for here?
+
+242
+00:28:58,468 --> 00:28:59,488
+This one.
+
+243
+00:29:02,087 --> 00:29:03,268
+It is this.
+
+244
+00:29:04,268 --> 00:29:09,587
+But if it is 2, this one will be 4.
+
+245
+00:29:09,587 --> 00:29:19,187
+So I can cancel this one and I can write 1 plus cosine 4x over 2.
+
+246
+00:29:19,748 --> 00:29:22,347
+And I can take integral of this term.
+
+247
+00:29:23,288 --> 00:29:35,528
+So I have x over 4 minus 1 over 4 sine 2x plus 1 over 4.
+
+248
+00:29:35,528 --> 00:29:40,327
+From here, I can write outside 1 over 2.
+
+249
+00:29:41,327 --> 00:29:47,927
+Now, integral of 1 will be x plus integral of cosine 4x.
+
+250
+00:29:48,028 --> 00:29:49,488
+Derivation inside is 4.
+
+251
+00:29:49,647 --> 00:29:54,627
+So I will write 1 over 4 sine 4x.
+
+252
+00:29:56,968 --> 00:29:59,127
+And a constant c.
+
+253
+00:30:03,059 --> 00:30:03,579
+Okay?
+
+254
+00:30:06,379 --> 00:30:15,019
+If both of them are even or only you have one term and the power is even, you have to use these relations.
+
+255
+00:30:31,731 --> 00:30:36,192
+başka bir örnek daha var mıydı? Yoksa bir tane daha yazalım isterseniz.
+
+256
+00:30:41,203 --> 00:30:44,803
+Ok, let me write another example for even if you want.
+
+257
+00:30:58,771 --> 00:31:03,571
+is our relation. Now let us try to find the integral.
+
+258
+00:31:06,571 --> 00:31:10,531
+Sine, square x, cosine,
+
+259
+00:31:13,251 --> 00:31:16,531
+core x dx, biraz daha zor bir şey. Bakalım.
+
+260
+00:31:18,131 --> 00:31:27,091
+Okay. So what can we do here? Firstly, we can write cosine 4x as
+
+261
+00:31:28,771 --> 00:31:30,051
+cosine
+
+262
+00:31:30,051 --> 00:31:33,031
+square x
+
+263
+00:31:33,031 --> 00:31:34,511
+square.
+
+264
+00:31:35,311 --> 00:31:35,652
+Okay.
+
+265
+00:31:37,451 --> 00:31:40,291
+Now, I will write the relation
+
+266
+00:31:40,291 --> 00:31:43,172
+cosine
+
+267
+00:31:43,172 --> 00:31:45,991
+hatta şey yapalım, şöyle yapalım, çok zorlamayayım.
+
+268
+00:31:46,331 --> 00:31:48,491
+Çok zor olacak, uzun olacak daha doğrusu.
+
+269
+00:31:49,231 --> 00:31:50,111
+Şunu kare yapalım.
+
+270
+00:31:51,211 --> 00:31:52,891
+Bu bile daha sizin için şey.
+
+271
+00:31:53,811 --> 00:31:54,412
+Şöyle olsun.
+
+272
+00:31:56,331 --> 00:31:56,672
+Okay.
+
+273
+00:31:56,672 --> 00:31:59,311
+So, I will write cosine
+
+274
+00:31:59,311 --> 00:32:00,331
+cosine square x
+
+275
+00:32:00,331 --> 00:32:01,051
+will be
+
+276
+00:32:01,051 --> 00:32:03,511
+1 minus cosine
+
+277
+00:32:03,511 --> 00:32:06,091
+2x
+
+278
+00:32:06,091 --> 00:32:06,791
+over 2.
+
+279
+00:32:06,791 --> 00:32:07,231
+So,
+
+280
+00:32:07,231 --> 00:32:11,391
+I will write cosine
+
+281
+00:32:11,391 --> 00:32:12,432
+square x
+
+282
+00:32:12,432 --> 00:32:15,511
+will be 1 minus cosine
+
+283
+00:32:15,511 --> 00:32:16,831
+2x over 2.
+
+284
+00:32:16,831 --> 00:32:17,391
+So,
+
+285
+00:32:17,391 --> 00:32:19,391
+I will write cosine
+
+286
+00:32:19,391 --> 00:32:20,391
+2x over 2.
+
+287
+00:32:20,391 --> 00:32:21,391
+So,
+
+288
+00:32:21,391 --> 00:32:23,391
+I will write cosine
+
+289
+00:32:23,391 --> 00:32:24,391
+square x
+
+290
+00:32:24,391 --> 00:32:25,391
+will be 1 minus cosine
+
+291
+00:32:11,508 --> 00:32:25,807
+And for cosine function, it will be 1 plus cosine 2x over 2 dx. Okay.
+
+292
+00:32:27,268 --> 00:32:33,168
+So, I will have, I can write 1 over 4 outside.
+
+293
+00:32:33,168 --> 00:32:38,008
+In the integral, I have a minus b here.
+
+294
+00:32:39,188 --> 00:32:40,607
+This is a plus b.
+
+295
+00:32:40,847 --> 00:32:43,648
+So, the result will be a square minus b square.
+
+296
+00:32:44,087 --> 00:32:48,968
+It will be 1 minus cosine square 2x.
+
+297
+00:32:51,468 --> 00:32:52,028
+dx.
+
+298
+00:32:53,428 --> 00:32:53,988
+Okay.
+
+299
+00:32:57,779 --> 00:33:11,440
+Now, the first one integral is x over 4. I have 1 minus 1 over 4. I need to find integral of cosine squared 2x dx.
+
+300
+00:33:12,879 --> 00:33:21,720
+The power is even, so instead of cosine squared 2x, I will use this relation. It is 2, so it will be 4.
+
+301
+00:33:21,720 --> 00:33:31,339
+I will write instead of 1 plus cosine 4x over 2.
+
+302
+00:33:34,000 --> 00:33:48,119
+So, it will be x over 4 minus 1 over 8. Integral of 1 will be x. Integral of cosine 4x will be 1 over 4.
+
+303
+00:33:48,119 --> 00:33:55,440
+sine 4x and a constant c.
+
+304
+00:33:55,440 --> 00:33:58,680
+Okay?
+
+305
+00:34:03,316 --> 00:34:03,816
+ok.
+
+306
+00:34:12,532 --> 00:34:15,832
+Şimdi, sin, sin, tanjant ve tanjant.
+
+307
+00:34:18,092 --> 00:34:18,592
+Okay.
+
+308
+00:34:19,072 --> 00:34:21,172
+In second product tanjant,
+
+309
+00:34:22,032 --> 00:34:23,532
+we have three possibilities.
+
+310
+00:34:23,892 --> 00:34:29,172
+We can use the transformation as sin function, second function.
+
+311
+00:34:29,172 --> 00:34:31,032
+We can use tanjant function.
+
+312
+00:34:31,472 --> 00:34:33,771
+If both of them don't work,
+
+313
+00:34:34,192 --> 00:34:36,532
+we need to use integration by-parts.
+
+314
+00:34:36,972 --> 00:34:37,292
+Okay.
+
+315
+00:34:38,472 --> 00:34:42,132
+But before that, I want to give a break
+
+316
+00:34:42,132 --> 00:34:47,872
+because these integral techniques is a little bit difficult.
+
+317
+00:34:48,572 --> 00:34:50,972
+Before that, let's take a break for 10 minutes.
+
+318
+00:34:51,112 --> 00:34:51,251
+Okay.
+
+319
+00:34:51,771 --> 00:34:53,912
+Şimdi, öbürsüne başlamadan bir ara verelim.
+
+320
+00:34:54,032 --> 00:34:55,632
+Çünkü bu önemli bir şey.
+
+321
+00:34:55,751 --> 00:34:57,572
+Biraz öbürküne göre daha karışık.
+
+322
+00:34:58,152 --> 00:34:59,552
+O yüzden bir 10 dakika ara verelim.
+
+323
+00:34:59,932 --> 00:35:00,392
+Tamam mı?
+
+324
+00:35:00,472 --> 00:35:01,312
+Ondan sonra yapalım.
+
+325
+00:35:01,412 --> 00:35:01,832
+Başlayalım.
+
+326
+00:35:01,892 --> 00:35:02,152
+Olur mu?
+
+327
+00:35:05,412 --> 00:35:06,332
+Veya şey yapalım.
+
+328
+00:35:06,452 --> 00:35:06,892
+Saat kaç?
+
+329
+00:35:07,052 --> 00:35:07,211
+Tamam.
+
+330
+00:35:07,312 --> 00:35:07,972
+10 dakika olsun.
+
+331
+00:50:43,731 --> 00:50:45,371
+Okay, let's start again.
+
+332
+00:50:48,371 --> 00:50:49,211
+Okay.
+
+333
+00:50:55,699 --> 00:51:02,579
+Şimdi, let's see what happens if in the integral we have second and tangent function or any product of both of them.
+
+334
+00:51:05,299 --> 00:51:17,139
+We say that in this type of questions we can use the transformation as second-text tangent x or in some questions we need to use integration by parts.
+
+335
+00:51:21,331 --> 00:51:42,331
+Okay. For example, we have tangent square x. This question and easy question. So, what can we do here? Do we have any derivation of some function? Let me remember, let's remember, what is the derivation of second function? What is that?
+
+336
+00:51:52,083 --> 00:51:54,083
+It is tangent, derivation tangent.
+
+337
+00:51:54,083 --> 00:51:58,703
+It is second x tangent x.
+
+338
+00:52:00,083 --> 00:52:14,844
+Derivation of tangent function will be 1 plus tangent square x or we mostly see second square x.
+
+339
+00:52:16,303 --> 00:52:16,463
+Okay.
+
+340
+00:52:17,243 --> 00:52:21,763
+If I have 1 plus tangent square x, okay, I can write that.
+
+341
+00:52:21,763 --> 00:52:24,203
+This is the derivation of tangent function.
+
+342
+00:52:24,364 --> 00:52:26,864
+But here I don't have any 1.
+
+343
+00:52:27,364 --> 00:52:33,223
+So here I can add plus and minus 1 to the function.
+
+344
+00:52:33,923 --> 00:52:45,243
+In that case, I will have 1 plus tangent square x dx minus integral dx.
+
+345
+00:52:45,243 --> 00:52:46,243
+Okay.
+
+346
+00:52:46,243 --> 00:52:52,243
+So in that case, this is the derivation of tangent function.
+
+347
+00:52:52,243 --> 00:52:58,023
+This integral will be tangent x minus this integral will be x.
+
+348
+00:52:58,023 --> 00:53:00,963
+And we will have a constant.
+
+349
+00:53:01,183 --> 00:53:05,283
+This is the integral of tangent square x.
+
+350
+00:53:08,523 --> 00:53:09,243
+Okay.
+
+351
+00:53:09,243 --> 00:53:14,723
+If we have second 4x, let's see.
+
+352
+00:53:14,723 --> 00:53:15,723
+Okay.
+
+353
+00:53:22,643 --> 00:53:37,163
+These two relations are very important actually. Okay, let's see. We have second square x. If I write, I don't have any tangent function, so I can't get this one.
+
+354
+00:53:37,163 --> 00:53:51,803
+But I have second, so I can get second square x. Let's write this integral into two parts. Second square x product second square x dx.
+
+355
+00:53:52,643 --> 00:54:12,003
+This part is derivation of tangent function. Okay? This is the derivation of tangent function. You can say that this is du. But what is our transformation? What can I write here?
+
+356
+00:54:12,003 --> 00:54:22,663
+Şimdi bir dönüşüm yapacağım. Ya bir dönüşüm yapacağım. Ya tangent'a ya sekanta. Şuraya bakarsanız bu tangent'ın türevi olduğu için şu kısmı d olarak düşünebilirim.
+
+357
+00:54:22,743 --> 00:54:25,683
+d olarak düşünürsem o zaman dönüşümün ne olması gerekir?
+
+358
+00:54:25,683 --> 00:54:41,683
+So if you think second square x is this one. I can write 1 plus tangent square x. In that case, our transformation will be...
+
+359
+00:54:41,683 --> 00:54:53,683
+...
+
+360
+00:54:46,132 --> 00:54:47,791
+Tanje x.
+
+361
+00:54:48,871 --> 00:54:50,831
+So du will be.
+
+362
+00:54:51,572 --> 00:54:53,371
+Second square x dx.
+
+363
+00:54:55,371 --> 00:54:57,072
+Our integral.
+
+364
+00:54:58,072 --> 00:54:59,452
+Becomes integral.
+
+365
+00:55:00,331 --> 00:55:02,132
+1 plus u square.
+
+366
+00:55:03,271 --> 00:55:03,432
+D.
+
+367
+00:55:05,012 --> 00:55:05,291
+Okay.
+
+368
+00:55:06,132 --> 00:55:07,112
+It will be.
+
+369
+00:55:07,112 --> 00:55:10,012
+U plus u cube.
+
+370
+00:55:10,231 --> 00:55:11,092
+Over 3.
+
+371
+00:55:12,112 --> 00:55:13,172
+And a constancy.
+
+372
+00:55:14,231 --> 00:55:15,851
+U will be tangent x.
+
+373
+00:55:16,132 --> 00:55:19,371
+U cube will be tangent.
+
+374
+00:55:20,632 --> 00:55:20,871
+Q.
+
+375
+00:55:24,112 --> 00:55:25,612
+X over 3.
+
+376
+00:55:27,192 --> 00:55:28,592
+And a constant c.
+
+377
+00:55:29,572 --> 00:55:29,831
+Okay.
+
+378
+00:55:30,432 --> 00:55:31,472
+This is our solution.
+
+379
+00:55:32,731 --> 00:55:33,912
+In this question.
+
+380
+00:55:33,912 --> 00:55:34,892
+Only we have seconds.
+
+381
+00:55:35,092 --> 00:55:36,192
+So it is more easy.
+
+382
+00:55:36,672 --> 00:55:39,251
+You write 1 second square x outside.
+
+383
+00:55:39,632 --> 00:55:41,572
+This is derivation of tangent function.
+
+384
+00:55:41,751 --> 00:55:43,771
+So our transformation will be tangent.
+
+385
+00:55:44,532 --> 00:55:44,632
+Okay.
+
+386
+00:55:44,632 --> 00:55:48,412
+Türevi bolda için dönüşümümüzün tangent olması gerekiyor.
+
+387
+00:55:48,512 --> 00:55:50,672
+Dolayısıyla şu kısmı.
+
+388
+00:55:50,871 --> 00:55:54,572
+This part you have to write as a function of tangent.
+
+389
+00:55:54,572 --> 00:56:00,831
+Okay.
+
+390
+00:56:01,412 --> 00:56:02,652
+Let's see here.
+
+391
+00:56:04,311 --> 00:56:06,751
+We have second cube tangent cube x.
+
+392
+00:56:06,952 --> 00:56:07,472
+Let's see.
+
+393
+00:56:08,152 --> 00:56:09,432
+What can we do here?
+
+394
+00:56:09,432 --> 00:56:24,331
+Okay.
+
+395
+00:56:14,068 --> 00:56:15,868
+I will show up tostak.
+
+396
+00:56:28,628 --> 00:56:30,948
+These two relations are very important.
+
+397
+00:56:30,948 --> 00:56:31,568
+Okay.
+
+398
+00:56:33,208 --> 00:56:36,148
+So, let's see what happens.
+
+399
+00:56:36,548 --> 00:56:39,208
+I will show in both of them.
+
+400
+00:56:39,347 --> 00:56:46,448
+In the first way, if I write second tangent x outside, let's see what happens.
+
+401
+00:56:46,827 --> 00:56:54,268
+If I write second x tangent x dx, that's right here,
+
+402
+00:56:54,268 --> 00:57:04,388
+I will have second square x product tangent square x.
+
+403
+00:57:04,648 --> 00:57:04,788
+Okay.
+
+404
+00:57:05,347 --> 00:57:08,168
+So, this is a derivation of second function.
+
+405
+00:57:08,807 --> 00:57:12,948
+It means that actually I will use the transformation as second as u.
+
+406
+00:57:14,008 --> 00:57:14,648
+Okay.
+
+407
+00:57:14,708 --> 00:57:19,568
+I have second, but here can I change tangent square x sine, a second x?
+
+408
+00:57:19,568 --> 00:57:25,728
+Can I cancel tangent square x and can I write with respect to second?
+
+409
+00:57:27,327 --> 00:57:31,108
+Bunu iptal edip yerine ben second yazabiliyor muyum, yazamıyor muyum?
+
+410
+00:57:31,168 --> 00:57:31,768
+Ona bakacağız.
+
+411
+00:57:32,268 --> 00:57:33,327
+Yes, I can write.
+
+412
+00:57:33,387 --> 00:57:38,867
+I can write instead of it will be second square x minus one.
+
+413
+00:57:39,387 --> 00:57:39,648
+Okay.
+
+414
+00:57:39,788 --> 00:57:42,827
+In that case, I can write you as second x.
+
+415
+00:57:42,827 --> 00:57:52,307
+d u will be second x tangent x dx.
+
+416
+00:57:53,307 --> 00:57:58,448
+So, our integral will be integral u square.
+
+417
+00:58:00,268 --> 00:58:03,528
+u square minus one d.
+
+418
+00:58:03,528 --> 00:58:07,827
+I have u square.
+
+419
+00:58:07,827 --> 00:58:16,368
+integral of u square will be u 5 over 5 minus u cube over 3, a constant c.
+
+420
+00:58:17,588 --> 00:58:31,847
+Second, 5x over 5 minus second cube x over 3 and a constant c.
+
+421
+00:58:31,847 --> 00:58:33,408
+Okay.
+
+422
+00:58:34,248 --> 00:58:35,608
+Did you understand here?
+
+423
+00:58:36,367 --> 00:58:39,548
+Let's see why we can't use the second way.
+
+424
+00:58:41,908 --> 00:58:49,748
+In the second part, if I write second square x outside, I will have second x.
+
+425
+00:58:49,748 --> 00:58:51,807
+Okay.
+
+426
+00:58:51,807 --> 00:58:53,307
+Let's see why we can't use the second part.
+
+427
+00:58:53,307 --> 00:59:15,248
+Let's see why we can use the second part.
+
+428
+00:58:53,172 --> 00:59:19,132
+tangent, cube x, product, second, square x dx. Okay? So, if I use this relation, our transformation will be tangent. Okay, I have tangent cube x. I don't need to make anything. Okay? But I don't know second x.
+
+429
+00:59:19,132 --> 00:59:39,932
+I can't write second x with according to tangent function very easily. If I have second square x, okay, no problem. But for second function, it is difficult to write what is second x equals to tangent function. Okay?
+
+430
+00:59:40,532 --> 00:59:48,492
+Bunu tangent ile olarak yazmak zor. Ve işimize de yaramıyor zaten. Second kare olsaydı sorun yoktu.
+
+431
+00:59:48,492 --> 01:00:00,371
+Dolayısıyla bu dönüşüm bu dönüşüm bizim işimize yaramıyor. Ancak bu dönüşüm de yapabiliyoruz. Okay?
+
+432
+01:00:07,668 --> 01:00:18,907
+x kare artı 2x, f'
+
+433
+01:00:32,532 --> 01:00:35,972
+Okay, you can see that we have only a second function.
+
+434
+01:00:57,268 --> 01:01:00,528
+So let's see, we can use this one or this one.
+
+435
+01:01:01,847 --> 01:01:05,007
+Firstly, we don't have any tangent function.
+
+436
+01:01:05,007 --> 01:01:05,427
+Okay.
+
+437
+01:01:08,548 --> 01:01:10,648
+So we can't use this one.
+
+438
+01:01:11,648 --> 01:01:11,887
+Okay.
+
+439
+01:01:12,288 --> 01:01:16,467
+Now the derivation of second square x, I know that it is tangent function.
+
+440
+01:01:16,887 --> 01:01:25,148
+If I write this one as second x product second square x dx.
+
+441
+01:01:25,148 --> 01:01:28,688
+In that case, our transformation will be tangent.
+
+442
+01:01:28,688 --> 01:01:30,327
+But here I don't have tangent.
+
+443
+01:01:30,947 --> 01:01:37,327
+And it is difficult to write second x with respect to tangent function.
+
+444
+01:01:38,068 --> 01:01:38,188
+Okay.
+
+445
+01:01:38,648 --> 01:01:41,807
+So the first transformation I can't use.
+
+446
+01:01:41,927 --> 01:01:43,887
+Tangent or second are not working.
+
+447
+01:01:44,108 --> 01:01:47,028
+It means that I have to use integration by parts.
+
+448
+01:01:47,788 --> 01:01:54,987
+In the integration by parts, we will use this relation because I know that this is derivation of a function.
+
+449
+01:01:55,148 --> 01:02:02,588
+But you can see that lab 2 is not working here because all of them are trigonometric functions.
+
+450
+01:02:03,148 --> 01:02:08,467
+So in that case, I will try to determine what is u and what is dv.
+
+451
+01:02:08,907 --> 01:02:14,728
+Do you have any derivation of the function for dv?
+
+452
+01:02:14,987 --> 01:02:19,228
+Yes, I know that second square x is the derivation of tangent function.
+
+453
+01:02:19,228 --> 01:02:21,068
+So this part will be dv.
+
+454
+01:02:22,688 --> 01:02:24,807
+So this part will be u.
+
+455
+01:02:25,467 --> 01:02:28,628
+u is second x.
+
+456
+01:02:30,947 --> 01:02:37,568
+dv will be second square x dx.
+
+457
+01:02:37,568 --> 01:02:44,007
+dv will be derivation of second function will be second x.
+
+458
+01:02:45,108 --> 01:02:46,807
+tangent x dx.
+
+459
+01:02:48,688 --> 01:02:54,188
+And if you take integral, the integral of second square x will be tangent x.
+
+460
+01:02:54,188 --> 01:02:58,028
+So our integral will be u.
+
+461
+01:02:58,028 --> 01:03:00,268
+u v second x.
+
+462
+01:03:01,327 --> 01:03:02,668
+tangent x.
+
+463
+01:03:03,668 --> 01:03:05,847
+minus integral v.
+
+464
+01:03:08,847 --> 01:03:09,327
+du.
+
+465
+01:03:09,507 --> 01:03:11,108
+It will be tangent square.
+
+466
+01:03:12,148 --> 01:03:13,548
+second x.
+
+467
+01:03:14,548 --> 01:03:26,588
+dx.
+
+468
+01:03:19,635 --> 01:03:20,135
+ok?
+
+469
+01:03:24,788 --> 01:03:27,168
+Okay, in the next part, what can we do?
+
+470
+01:03:33,268 --> 01:03:37,108
+How can we solve the second integral? What can we do here?
+
+471
+01:03:47,572 --> 01:03:55,852
+Firstly, if you look at the derivation, maybe I can have second product tangent, I don't have second square x.
+
+472
+01:03:56,412 --> 01:04:06,652
+If I write second, let me write here, if I write second x product tangent x dx, in the integral, I will have one more tangent x.
+
+473
+01:04:06,652 --> 01:04:07,172
+Okay.
+
+474
+01:04:08,692 --> 01:04:16,231
+This is derivation of second function, but it is difficult to write this function with respect to second x.
+
+475
+01:04:16,231 --> 01:04:19,472
+So it means that this transformation won't work.
+
+476
+01:04:21,432 --> 01:04:26,132
+So I can't use this one because here I don't have any second square x.
+
+477
+01:04:26,311 --> 01:04:27,372
+What can we do here?
+
+478
+01:04:28,972 --> 01:04:30,771
+Her iki dönüşümde kullanılamıyor.
+
+479
+01:04:31,332 --> 01:04:32,731
+Ne yapabiliriz onun dışında?
+
+480
+01:04:51,443 --> 01:04:52,463
+Okay, okay.
+
+481
+01:04:55,403 --> 01:04:59,043
+If I write tangent squared x as
+
+482
+01:04:59,043 --> 01:05:00,903
+second
+
+483
+01:05:00,903 --> 01:05:04,284
+squared x minus 1
+
+484
+01:05:04,284 --> 01:05:07,523
+product second
+
+485
+01:05:07,523 --> 01:05:09,063
+x dx
+
+486
+01:05:09,063 --> 01:05:11,523
+we will have
+
+487
+01:05:11,523 --> 01:05:13,224
+I will be
+
+488
+01:05:13,224 --> 01:05:15,043
+second
+
+489
+01:05:15,043 --> 01:05:16,543
+x
+
+490
+01:05:16,543 --> 01:05:18,583
+tangent x
+
+491
+01:05:18,583 --> 01:05:22,844
+minus integral
+
+492
+01:05:22,844 --> 01:05:24,264
+second
+
+493
+01:05:24,264 --> 01:05:27,503
+cube x dx
+
+494
+01:05:27,503 --> 01:05:29,503
+integral
+
+495
+01:05:29,503 --> 01:05:31,543
+second
+
+496
+01:05:31,543 --> 01:05:33,683
+x dx
+
+497
+01:05:33,683 --> 01:05:37,583
+Now, what can we do here?
+
+498
+01:05:38,583 --> 01:05:40,063
+What is our next step?
+
+499
+01:05:40,804 --> 01:05:41,784
+Peki sonra ne yapacağız?
+
+500
+01:05:51,668 --> 01:06:00,628
+Evet, if you remember integration by parts, this one, we made a similar way.
+
+501
+01:06:00,708 --> 01:06:04,688
+When you take two integration by parts, you will find the same integral.
+
+502
+01:06:04,688 --> 01:06:06,407
+Okay, it is similar here.
+
+503
+01:06:06,568 --> 01:06:09,148
+This is our question integral.
+
+504
+01:06:09,347 --> 01:06:10,008
+This is I.
+
+505
+01:06:11,347 --> 01:06:13,988
+This integral you can write from the table.
+
+506
+01:06:14,188 --> 01:06:20,268
+It is ln second x plus tangent x.
+
+507
+01:06:20,788 --> 01:06:20,948
+Okay.
+
+508
+01:06:21,668 --> 01:06:26,068
+So, if I write i on the left side, we will have two i.
+
+509
+01:06:27,108 --> 01:06:30,208
+If we divide with two, i will have one over two.
+
+510
+01:06:30,208 --> 01:06:50,327
+So, second x tangent x plus ln second x plus tangent x and a constant c.
+
+511
+01:06:50,327 --> 01:06:52,327
+Okay.
+
+512
+01:06:53,407 --> 01:06:54,728
+Bu çok bilinen bir integral.
+
+513
+01:06:54,728 --> 01:06:56,867
+Bunu bu şekilde çözebiliyoruz.
+
+514
+01:06:56,867 --> 01:06:59,608
+Do you have a request?
+
+515
+01:06:59,608 --> 01:07:05,548
+Çözebiliyoruz.
+
+516
+01:07:03,891 --> 01:07:08,571
+We can use any of the transformation but okay.
+
+517
+01:07:10,931 --> 01:07:15,152
+Okay until here we use the integration by parts.
+
+518
+01:07:17,291 --> 01:07:22,531
+We here we use integration by parts and we find this integral.
+
+519
+01:07:23,111 --> 01:07:27,652
+This integral any of the transformation are not working.
+
+520
+01:07:27,652 --> 01:07:29,211
+This one or this one.
+
+521
+01:07:29,851 --> 01:07:32,311
+Because we can't use the first one.
+
+522
+01:07:32,311 --> 01:07:36,531
+We can't use the second one because we don't have second square x.
+
+523
+01:07:36,991 --> 01:07:43,251
+If I use this one I said that when we write second and tangent on the in the end.
+
+524
+01:07:43,391 --> 01:07:48,971
+We have only tangent x and the transformation will be second not tangent.
+
+525
+01:07:49,831 --> 01:07:51,371
+So what can we do?
+
+526
+01:07:51,371 --> 01:07:56,611
+I know that tangent square x is also second square x minus one.
+
+527
+01:07:56,891 --> 01:07:57,891
+I write this one.
+
+528
+01:07:57,891 --> 01:08:03,831
+So our integral becomes second cube x plus second x dx.
+
+529
+01:08:04,311 --> 01:08:08,971
+I know that this integral is our question integral and we say that this is i.
+
+530
+01:08:10,911 --> 01:08:14,051
+Integral of second function we can write from the table.
+
+531
+01:08:14,231 --> 01:08:17,011
+It is ln second x plus tangent x.
+
+532
+01:08:17,011 --> 01:08:23,492
+So we have i equals something minus i plus something.
+
+533
+01:08:23,992 --> 01:08:26,952
+So if I write this term on the left side we have 2i.
+
+534
+01:08:29,612 --> 01:08:32,412
+If I want to find i I have to divide with 2.
+
+535
+01:08:33,572 --> 01:08:33,871
+Okay.
+
+536
+01:08:34,231 --> 01:08:40,851
+So our integral will be second x tangent x plus this integral.
+
+537
+01:08:41,851 --> 01:08:42,112
+Okay.
+
+538
+01:08:48,467 --> 01:08:48,967
+ok
+
+539
+01:08:55,507 --> 01:09:06,327
+In the next part, what can we do if we have the product of sine and cosine function and inside of the function we have different coefficients for x.
+
+540
+01:09:07,028 --> 01:09:10,327
+We have three formula for this.
+
+541
+01:09:10,327 --> 01:09:19,648
+If we have sine product cosine function, it will be 1 over 2 sine n minus nx plus sine n plus nx.
+
+542
+01:09:19,648 --> 01:09:28,407
+If both of them are sine function, it will be 1 over 2 cosine n minus nx minus cosine n plus nx.
+
+543
+01:09:28,907 --> 01:09:37,688
+If both of them are cosine function, the formula will be 1 over 2 cosine n minus nx plus cosine n plus nx.
+
+544
+01:09:37,807 --> 01:09:45,827
+Actually, we can have cosine nx product sine nx, but we don't need to write.
+
+545
+01:09:45,907 --> 01:09:47,108
+You can use this formula.
+
+546
+01:09:47,728 --> 01:09:48,867
+You can change the order.
+
+547
+01:09:49,648 --> 01:09:53,627
+And you can find the formula for this one.
+
+548
+01:09:53,728 --> 01:09:55,167
+So we have three possibilities.
+
+549
+01:09:55,867 --> 01:09:57,047
+Both of them can be sine.
+
+550
+01:09:57,307 --> 01:09:58,407
+Both of them can be cosine.
+
+551
+01:09:59,047 --> 01:10:03,287
+And any of one of them will be cosine and the other one will be sine.
+
+552
+01:10:04,068 --> 01:10:05,807
+Only we will use this formula.
+
+553
+01:10:06,407 --> 01:10:08,287
+Let's see this example here.
+
+554
+01:10:09,347 --> 01:10:12,608
+Sine 3x product cosine 5x.
+
+555
+01:10:12,887 --> 01:10:14,907
+It is related to this one.
+
+556
+01:10:15,487 --> 01:10:17,807
+Here, this is n.
+
+557
+01:10:17,807 --> 01:10:18,947
+This is n.
+
+558
+01:10:18,947 --> 01:10:24,387
+Our formula will be in the integral 1 over 2 here.
+
+559
+01:10:24,387 --> 01:10:29,307
+Sine n minus nx.
+
+560
+01:10:29,307 --> 01:10:33,787
+It will be 3x minus 5x here.
+
+561
+01:10:34,627 --> 01:10:37,987
+Plus sine 3x plus 5x.
+
+562
+01:10:38,087 --> 01:10:39,807
+This will be 8x.
+
+563
+01:10:40,467 --> 01:10:42,847
+This will be minus 2x.
+
+564
+01:10:42,847 --> 01:10:47,907
+We know that sine x function is the odd function.
+
+565
+01:10:49,568 --> 01:10:53,528
+Cosine x will be even function.
+
+566
+01:10:53,528 --> 01:10:55,068
+What does it mean?
+
+567
+01:10:55,287 --> 01:10:58,568
+It means that when you write minus x inside,
+
+568
+01:11:00,568 --> 01:11:03,587
+the sine will come to outside.
+
+569
+01:11:03,587 --> 01:11:07,608
+For even function, when you write minus x inside,
+
+570
+01:11:07,608 --> 01:11:13,228
+we don't have any minus outside.
+
+571
+01:11:13,228 --> 01:11:16,747
+So, for the question,
+
+572
+01:11:16,747 --> 01:11:20,608
+we have sine minus 2x.
+
+573
+01:11:20,608 --> 01:11:22,667
+Sine function is the odd function.
+
+574
+01:11:22,887 --> 01:11:24,967
+So, we will write minus outside.
+
+575
+01:11:25,608 --> 01:11:32,747
+The inside of the integral will be minus sine 2x plus sine 8x.
+
+576
+01:11:32,747 --> 01:11:51,228
+This integral will be.
+
+577
+01:11:51,228 --> 01:11:52,667
+The integral of sine function will be.
+
+578
+01:11:52,667 --> 01:12:21,207
+This integral will be.
+
+579
+01:11:58,931 --> 01:12:05,072
+For the second one, both of them are sine function. Let's see.
+
+580
+01:12:05,851 --> 01:12:10,952
+If both of them are sine function, it will be cosine m minus nx.
+
+581
+01:12:11,652 --> 01:12:18,711
+So it will be cosine 4x minus 6x minus cosine m plus n.
+
+582
+01:12:20,091 --> 01:12:24,032
+So inside will be minus 2x.
+
+583
+01:12:25,431 --> 01:12:27,711
+This will be 10x.
+
+584
+01:12:28,931 --> 01:12:31,952
+We know that cosine function is an even function.
+
+585
+01:12:32,211 --> 01:12:35,692
+So inside of those minus won't be important.
+
+586
+01:12:36,532 --> 01:12:43,492
+Inside of the integral will be cosine 2x minus cosine 8x.
+
+587
+01:12:43,671 --> 01:12:46,011
+And this is the integral of this function.
+
+588
+01:12:50,100 --> 01:12:52,780
+And for cosine function it is similar.
+
+589
+01:12:54,280 --> 01:12:57,240
+It will be cosine n minus n, n plus n.
+
+590
+01:12:57,240 --> 01:12:58,300
+Let's see.
+
+591
+01:13:00,520 --> 01:13:07,320
+1 over 2, x minus 7x and x plus 7x.
+
+592
+01:13:07,880 --> 01:13:09,820
+Cosine function is even.
+
+593
+01:13:10,320 --> 01:13:16,240
+So minus 6x becomes cosine 6x and cosine 8x.
+
+594
+01:13:16,960 --> 01:13:17,760
+It is easy.
+
+595
+01:13:20,100 --> 01:13:21,440
+Bir soru sormuşsun.
+
+596
+01:13:21,560 --> 01:13:24,920
+Can you repeat why did we take u equals second x?
+
+597
+01:13:26,340 --> 01:13:29,120
+Bir önceki soru da sormuşsun.
+
+598
+01:13:29,340 --> 01:13:29,960
+Ney demiş?
+
+599
+01:13:30,100 --> 01:13:31,620
+Ney u eşittir second x.
+
+600
+01:13:35,155 --> 01:13:37,395
+Ok, let me answer the question [öğrenci].
+
+601
+01:13:38,536 --> 01:13:41,836
+Ok, here I said that we have two relation.
+
+602
+01:13:41,836 --> 01:13:49,256
+We know that tangent x derivation will be second square x.
+
+603
+01:13:49,655 --> 01:13:57,195
+And we know that derivation of second function will be second x product tangent x.
+
+604
+01:13:57,296 --> 01:13:58,975
+We try to find any of them.
+
+605
+01:14:00,036 --> 01:14:03,576
+You can see that in this integral we don't have any tangent function.
+
+606
+01:14:03,576 --> 01:14:05,876
+So we can't use this one.
+
+607
+01:14:06,315 --> 01:14:08,115
+Can you find second square x?
+
+608
+01:14:08,115 --> 01:14:10,676
+Yes, I write second square x outside.
+
+609
+01:14:11,635 --> 01:14:18,355
+So it means that if I find this equation, I need to use our transformation u as tangent.
+
+610
+01:14:19,395 --> 01:14:30,576
+Ok, if we write second square x, I need to use this transformation u equals tangent x.
+
+611
+01:14:30,576 --> 01:14:36,456
+But it is difficult to write second x with respect to tangent function.
+
+612
+01:14:36,576 --> 01:14:39,095
+It means that I can't use any of this transformation.
+
+613
+01:14:39,815 --> 01:14:44,216
+It means that in the last choice, I have to use integration by parts.
+
+614
+01:14:44,515 --> 01:14:50,216
+In the integration by parts, I said that we can use this word in many questions.
+
+615
+01:14:50,716 --> 01:14:55,935
+But in this example, it is not working because all of them are trigonometric functions.
+
+616
+01:14:55,935 --> 01:15:09,275
+In that case, in this kind of questions, I will try to find, do you have any derivation of the function?
+
+617
+01:15:09,275 --> 01:15:13,836
+Yes, I know that second square x is the derivation of tangent function.
+
+618
+01:15:14,475 --> 01:15:17,555
+So I will choose this one as dv.
+
+619
+01:15:17,935 --> 01:15:20,735
+So the other one will be u.
+
+620
+01:15:20,735 --> 01:15:28,836
+If lab 2 is not working in your question, you will determine, do you have any question?
+
+621
+01:15:30,115 --> 01:15:32,176
+Do you have any derivation of function?
+
+622
+01:15:32,355 --> 01:15:34,135
+Yes, so it will be dv.
+
+623
+01:15:34,135 --> 01:15:41,836
+Ok, now let's talk about reduction formula.
+
+624
+01:15:41,996 --> 01:15:46,395
+Reduction formula are the last subject for the second exam.
+
+625
+01:15:46,395 --> 01:15:50,435
+Actually, we don't have a general formula.
+
+626
+01:15:50,735 --> 01:15:52,416
+It depends on your question.
+
+627
+01:15:52,636 --> 01:15:52,756
+Ok?
+
+628
+01:15:54,716 --> 01:15:55,536
+Take me right.
+
+629
+01:15:56,615 --> 01:15:57,996
+This is our question.
+
+630
+01:15:59,815 --> 01:16:01,576
+Bu bir belirli bir formül değil.
+
+631
+01:16:01,735 --> 01:16:03,836
+Her soruya göre ayrı çıkarılan bir şey.
+
+632
+01:16:04,496 --> 01:16:07,716
+For every question, you will find the reduction formula.
+
+633
+01:16:07,716 --> 01:16:14,076
+For the integral tangent nx dx, find a reduction formula.
+
+634
+01:16:14,635 --> 01:16:19,756
+And using this reduction formula, determine tangent 5x.
+
+635
+01:16:20,456 --> 01:16:23,855
+Firstly, our integral is tangent nx.
+
+636
+01:16:24,055 --> 01:16:25,036
+We have an index.
+
+637
+01:16:25,275 --> 01:16:28,895
+You can see that we have an index.
+
+638
+01:16:28,895 --> 01:16:38,595
+So I want to write i and s tangent nx dx.
+
+639
+01:16:38,595 --> 01:16:39,155
+Ok?
+
+640
+01:16:41,836 --> 01:16:44,076
+So how can we solve this integral?
+
+641
+01:16:44,515 --> 01:16:46,996
+Firstly, let us try to solve this integral.
+
+642
+01:16:47,815 --> 01:16:48,636
+What can we do?
+
+643
+01:16:48,636 --> 01:16:49,636
+And then we have an index.
+
+644
+01:16:49,636 --> 01:16:50,636
+So what can we do?
+
+645
+01:16:50,636 --> 01:16:51,636
+And then we have an index.
+
+646
+01:16:51,636 --> 01:16:52,636
+So what can we do?
+
+647
+01:16:52,636 --> 01:16:53,636
+And then we have an index.
+
+648
+01:16:53,636 --> 01:16:54,636
+So what can we do?
+
+649
+01:16:54,636 --> 01:16:55,636
+And then we have an index.
+
+650
+01:16:55,636 --> 01:16:56,636
+So what can we do?
+
+651
+01:16:56,636 --> 01:16:57,636
+And then we have an index.
+
+652
+01:16:57,636 --> 01:16:58,636
+So what can we do?
+
+653
+01:16:58,636 --> 01:16:59,636
+And then we have an index.
+
+654
+01:16:59,636 --> 01:17:00,636
+So what can we do?
+
+655
+01:17:00,636 --> 01:17:01,636
+And then we have an index.
+
+656
+01:17:01,636 --> 01:17:02,636
+So what can we do?
+
+657
+01:17:02,636 --> 01:17:03,636
+And then we have an index.
+
+658
+01:17:03,636 --> 01:17:04,636
+So what can we do?
+
+659
+01:17:04,636 --> 01:17:05,636
+And then we have an index.
+
+660
+01:17:05,636 --> 01:17:06,636
+So what can we do?
+
+661
+01:17:06,636 --> 01:17:07,636
+And then we have an index.
+
+662
+01:17:07,636 --> 01:17:08,636
+So what can we do?
+
+663
+01:17:08,636 --> 01:17:09,636
+And then we have an index.
+
+664
+01:17:09,636 --> 01:17:10,636
+So what can we do?
+
+665
+01:17:10,636 --> 01:17:11,636
+And then we have an index.
+
+666
+01:17:11,636 --> 01:17:12,636
+So what can we do?
+
+667
+01:17:12,636 --> 01:17:14,636
+And then we have an index.
+
+668
+01:16:53,300 --> 01:16:57,560
+How can we solve this integral türev, nx, dx? What can we do?
+
+669
+01:17:10,579 --> 01:17:12,079
+do irreveri alpınil.
+
+670
+01:17:16,275 --> 01:17:19,815
+Okay, so we have some important things right here.
+
+671
+01:17:19,815 --> 01:17:28,576
+Firstly, I know that 1 plus tangent square x is second square x.
+
+672
+01:17:29,135 --> 01:17:39,336
+And we have also know that derivation of second function is second x tangent x.
+
+673
+01:17:39,336 --> 01:17:46,456
+And now that derivation of 10 tangent function will be second square x.
+
+674
+01:17:53,108 --> 01:17:54,828
+Okay, in this question, what can we do?
+
+675
+01:17:59,636 --> 01:18:01,615
+ne yapabiliriz beraber düşünelim şimdi.
+
+676
+01:18:02,956 --> 01:18:07,396
+We have this integral and they said that, solve this integral, write a formula.
+
+677
+01:18:08,036 --> 01:18:13,776
+But before that, I have to write second square x minus 1.
+
+678
+01:18:15,776 --> 01:18:20,696
+Okay, you mean that I will write one tangent square x outside.
+
+679
+01:18:21,716 --> 01:18:26,156
+Okay, we can write tangent and minus 2x.
+
+680
+01:18:26,156 --> 01:18:30,696
+product tangent square x dx.
+
+681
+01:18:30,696 --> 01:18:38,676
+After that, we can write second square x minus 1.
+
+682
+01:18:39,096 --> 01:18:55,216
+Okay, so our integral will be integral tangent n minus 2 product second square x dx.
+
+683
+01:18:56,156 --> 01:19:00,696
+minus integral tangent tangent square x dx.
+
+684
+01:19:00,696 --> 01:19:03,696
+and minus 2x dx.
+
+685
+01:19:03,696 --> 01:19:03,936
+Okay?
+
+686
+01:19:05,076 --> 01:19:05,656
+Okay.
+
+687
+01:19:06,856 --> 01:19:08,416
+Now, what can we do?
+
+688
+01:19:08,916 --> 01:19:12,356
+Or I can, you write, what can I write here?
+
+689
+01:19:12,356 --> 01:19:12,756
+Okay.
+
+690
+01:19:29,203 --> 01:19:34,983
+Actually, you don't need to solve this integral. You can write one thing.
+
+691
+01:19:36,844 --> 01:19:52,823
+At the beginning, what did you write for the tangent nx dx? i n. What is i n? i n means that the power of tangent function will be the same with the index of i.
+
+692
+01:19:52,823 --> 01:20:03,063
+If the power here is i n minus 2, then we will write i n minus 2.
+
+693
+01:20:03,264 --> 01:20:08,243
+Because the power is n minus 2, so I can write i n minus 2.
+
+694
+01:20:08,463 --> 01:20:10,543
+We will try to find a relation.
+
+695
+01:20:11,543 --> 01:20:13,663
+Only I need to find this integral.
+
+696
+01:20:14,623 --> 01:20:17,043
+In this integral, what can we do here?
+
+697
+01:20:21,043 --> 01:20:47,604
+Yes, if I write u is tangent x, du will be second squared x dx. So this integral will be u n-2 du. It will be u n-1 over n-1.
+
+698
+01:20:47,604 --> 01:21:16,644
+u is tangent, tangent, n-1 x over n-1. So our reduction formula will be i n will be tangent n-1 x over n-1 minus i n-2.
+
+699
+01:21:16,644 --> 01:21:20,443
+So this is our reduction formula.
+
+700
+01:21:29,235 --> 01:21:30,996
+Ok, do you have any question here?
+
+701
+01:21:34,275 --> 01:21:38,515
+So here using the reduction formula we can determine this.
+
+702
+01:21:41,076 --> 01:21:51,715
+Because in the reduction formula in the question here n is 5 because of this.
+
+703
+01:21:51,715 --> 01:21:58,195
+Ok, so if I need to find i5.
+
+704
+01:22:00,675 --> 01:22:13,235
+What is i5? If I write 5 I will have tangent 4x over 4 minus i3.
+
+705
+01:22:14,435 --> 01:22:19,395
+But I don't know i3 so I will use the same reduction formula.
+
+706
+01:22:19,395 --> 01:22:34,015
+So i3 will be, if I write 3 instead of n I will have tangent square x over 2 minus i1.
+
+707
+01:22:35,655 --> 01:22:37,095
+What is i1?
+
+708
+01:22:40,215 --> 01:22:44,336
+i1 is actually tangent x dx.
+
+709
+01:22:44,336 --> 01:22:47,595
+And we know the i1.
+
+710
+01:22:47,975 --> 01:22:57,055
+I can write i1 will be minus ln cos x.
+
+711
+01:22:57,055 --> 01:23:00,435
+So let's write our solution.
+
+712
+01:23:00,435 --> 01:23:18,195
+i5 will be tangent for x over 4 minus i3 will be minus tangent square x over 2 plus i1.
+
+713
+01:23:18,195 --> 01:23:21,076
+But it will be, the sine will be minus.
+
+714
+01:23:23,475 --> 01:23:32,195
+It will be minus ln cos x and a constant c.
+
+715
+01:23:36,180 --> 01:23:40,619
+Okay? Look at the solution again.
+
+716
+01:23:43,619 --> 01:23:45,560
+I want to ask for I1.
+
+717
+01:23:46,400 --> 01:23:46,619
+Yes.
+
+718
+01:23:46,619 --> 01:23:51,460
+How did we get it? It is a tangent N minus 1 over N minus 1.
+
+719
+01:23:51,820 --> 01:23:53,840
+No, no, no. It comes from here.
+
+720
+01:23:56,340 --> 01:23:59,640
+When you write 1, it will be tangent x dx.
+
+721
+01:24:00,480 --> 01:24:02,380
+Okay? When you write 1 here.
+
+722
+01:24:02,619 --> 01:24:03,600
+Okay. Thanks.
+
+723
+01:24:03,600 --> 01:24:06,039
+It will be, not at all, it will be tangent x.
+
+724
+01:24:06,180 --> 01:24:07,180
+Okay?
+
+725
+01:24:07,180 --> 01:24:11,140
+Okay? Because you can't use reduction method when you write 1 here.
+
+726
+01:24:13,140 --> 01:24:14,740
+It will be I minus 1.
+
+727
+01:24:15,460 --> 01:24:17,300
+Okay? It doesn't work.
+
+728
+01:24:19,780 --> 01:24:24,740
+Okay, if you don't have any question, let's see another formula.
+
+729
+01:24:24,980 --> 01:24:25,280
+Okay?
+
+730
+01:24:30,804 --> 01:24:31,804
+Diziz
+
+731
+01:24:50,003 --> 01:24:50,983
+This is our question.
+
+732
+01:24:51,764 --> 01:24:56,144
+For the integral x to the power and e to the power ax dx,
+
+733
+01:24:56,503 --> 01:24:58,823
+find a red reduction method formula
+
+734
+01:24:58,823 --> 01:25:01,943
+and using this formula find this integral.
+
+735
+01:25:02,783 --> 01:25:13,703
+So let us write rin is integral x to the power and e ax dx.
+
+736
+01:25:14,923 --> 01:25:17,003
+Firstly, I have to solve this integral.
+
+737
+01:25:17,003 --> 01:25:18,024
+It is easy.
+
+738
+01:25:18,024 --> 01:25:20,644
+We can use integration by parts.
+
+739
+01:25:20,743 --> 01:25:21,783
+We have love to.
+
+740
+01:25:24,163 --> 01:25:26,003
+The first one is polynomial.
+
+741
+01:25:26,783 --> 01:25:28,724
+The other one is exponent function.
+
+742
+01:25:28,943 --> 01:25:30,644
+So our first function is polynomial.
+
+743
+01:25:31,724 --> 01:25:35,144
+So I will write x to the power n as u
+
+744
+01:25:35,144 --> 01:25:41,983
+and e to the power ax dx will be dv.
+
+745
+01:25:41,983 --> 01:25:49,703
+So n x n minus 1 dx will be du.
+
+746
+01:25:50,743 --> 01:25:57,203
+If we take integral 1 over a, e to the power ax will be v.
+
+747
+01:25:57,203 --> 01:26:10,083
+So our integral will be i n u product v 1 over a, x to power n e ax.
+
+748
+01:26:10,083 --> 01:26:15,543
+minus integral v product du.
+
+749
+01:26:15,543 --> 01:26:18,724
+I can write n over a outside.
+
+750
+01:26:18,844 --> 01:26:19,804
+They are constants.
+
+751
+01:26:19,804 --> 01:26:27,304
+I have x n minus 1 e to the power a, x dx.
+
+752
+01:26:27,304 --> 01:26:31,024
+Now, what can we do in the next step?
+
+753
+01:26:31,024 --> 01:26:43,644
+I can write down.
+
+754
+01:26:39,764 --> 01:26:44,003
+Now what can we do? What will we do? What is our next step?
+
+755
+01:26:47,123 --> 01:27:01,684
+Yes, this is i n minus 1. So our reduction formula will be i n 1 over a x to the power
+
+756
+01:27:01,684 --> 01:27:15,844
+n a x minus n over i i n minus 1. This is our reduction formula.
+
+757
+01:27:18,564 --> 01:27:26,564
+And in the question they asked that what is x cube e to the power a x. In the question they are asking
+
+758
+01:27:26,564 --> 01:27:32,564
+what happens if n is 3. Okay, let's write in the reduction formula.
+
+759
+01:27:34,324 --> 01:27:40,963
+i3 will be 1 over a x cube
+
+760
+01:27:43,123 --> 01:27:56,484
+e a x minus 3 over a i2. Now I need to determine i2. I will use the same reduction formula.
+
+761
+01:27:56,564 --> 01:28:13,524
+Now I will write 2 in the formula. i2 will be 1 over a x square e to the power a x minus 2 over a i1.
+
+762
+01:28:13,524 --> 01:28:21,284
+Okay, now when I use the same formula we will determine i1.
+
+763
+01:28:21,284 --> 01:28:31,913
+i1 will be 1 over a x cube e to the power a x cube e to the power a x cube e to the power a x cube e to the power a x cube e to the power a x cube e to the power a x cube e to the power a x cube e to the power a x cube e to the power a x cube e to the power a x cube e to the power a x cube e to the power a x cube e to the power a x cube e to the power a x cube e to the power a x cube e to the power a x cube e to the power a x cube e to the power a x cube e to the power a x cube e to the power a x cube e to the power a x cube e to the power a x cube e to the power a x cube e to the power a x cube e to the power a x cube e to the power a x cube e to the power a x cube e to the power a x cube e to the power a x cube e to the power a x cube e to the power
+
+764
+01:28:35,539 --> 01:28:42,119
+x e to the power ax minus 1 over a i0.
+
+765
+01:28:43,420 --> 01:28:46,460
+But you don't need to make i0.
+
+766
+01:28:46,800 --> 01:28:47,840
+What is i0?
+
+767
+01:28:47,840 --> 01:28:55,640
+If I write 0 here, I will determine x to the power 0 will be 1.
+
+768
+01:28:55,880 --> 01:28:57,760
+It is ax dx.
+
+769
+01:29:00,500 --> 01:29:03,479
+So i0 will be the integral.
+
+770
+01:29:05,539 --> 01:29:08,439
+e to the power ax dx.
+
+771
+01:29:10,039 --> 01:29:13,779
+And this is 1 over a, the same exponent function.
+
+772
+01:29:15,300 --> 01:29:23,300
+Okay, so according to these results, let us write our answer.
+
+773
+01:29:23,659 --> 01:29:32,720
+i3 will be x cubed e to the power ax over a.
+
+774
+01:29:32,720 --> 01:29:37,340
+minus 3 over a.
+
+775
+01:29:39,399 --> 01:29:41,380
+Now I will write i2.
+
+776
+01:29:41,479 --> 01:29:42,180
+What is i2?
+
+777
+01:29:42,180 --> 01:29:48,859
+It is x squared e to the power ax over a.
+
+778
+01:29:50,000 --> 01:29:52,539
+Minus 2 over a.
+
+779
+01:29:52,840 --> 01:29:54,859
+Now here I have to write i1.
+
+780
+01:29:55,539 --> 01:30:02,180
+It is x e to the power ax over a.
+
+781
+01:30:02,180 --> 01:30:06,100
+minus 1 over a.
+
+782
+01:30:06,720 --> 01:30:08,579
+I will product with i0.
+
+783
+01:30:08,760 --> 01:30:12,180
+It will be i2 e to the power ax.
+
+784
+01:30:15,180 --> 01:30:15,500
+Okay.
+
+785
+01:30:17,319 --> 01:30:19,739
+This is our solution.
+
+786
+01:30:19,739 --> 01:30:32,239
+I will write i1.
+
+787
+01:30:23,380 --> 01:30:26,180
+I want to ask about I0.
+
+788
+01:30:26,859 --> 01:30:27,460
+I0?
+
+789
+01:30:27,819 --> 01:30:28,039
+Yeah.
+
+790
+01:30:28,239 --> 01:30:32,900
+Why we haven't taken it from the equation that we made?
+
+791
+01:30:34,539 --> 01:30:40,279
+Because if I want to use the reduction method, if I write 0 in here,
+
+792
+01:30:40,900 --> 01:30:46,220
+in the last part I will find I-1, but we don't have I-1.
+
+793
+01:30:46,220 --> 01:30:54,140
+In the last part I have to write in the integral and I will find I0 from here.
+
+794
+01:30:55,119 --> 01:30:58,520
+Because in the last part I can use the reduction method.
+
+795
+01:30:59,060 --> 01:31:04,920
+But after that I can use, I can't use the reduction method because when I write I0
+
+796
+01:31:04,920 --> 01:31:13,279
+I will have e to the power ax over a minus 0 over a.
+
+797
+01:31:13,279 --> 01:31:17,079
+and I minus 1.
+
+798
+01:31:17,140 --> 01:31:18,100
+Actually, you can find.
+
+799
+01:31:18,940 --> 01:31:23,279
+Because this part will be 0, you can find from the reduction method also.
+
+800
+01:31:23,460 --> 01:31:28,619
+Or you can find from the question, integral of the question.
+
+801
+01:31:28,960 --> 01:31:29,060
+Okay?
+
+802
+01:31:29,880 --> 01:31:35,680
+But in this example, because of here you haven't had I-1,
+
+803
+01:31:35,680 --> 01:31:38,140
+but in some questions maybe you can have.
+
+804
+01:31:38,539 --> 01:31:41,199
+So in the last part we can't use the reduction formula.
+
+805
+01:31:41,199 --> 01:31:44,020
+You can use for this question.
+
+806
+01:31:44,560 --> 01:31:44,800
+Okay?
+
+807
+01:31:45,520 --> 01:31:47,539
+Let me look at this one.
+
+808
+01:31:47,840 --> 01:31:48,619
+Let's see.
+
+809
+01:31:49,640 --> 01:31:57,400
+In this question, if I write I1, let's see, I1 will be, look at here,
+
+810
+01:31:57,480 --> 01:32:02,060
+if I write will be tangent 0x over 0.
+
+811
+01:32:02,060 --> 01:32:03,420
+Okay?
+
+812
+01:32:03,619 --> 01:32:04,539
+This is infinity.
+
+813
+01:32:05,739 --> 01:32:07,560
+So you can't use for the last term.
+
+814
+01:32:07,940 --> 01:32:12,060
+You have to use the I and function, integral.
+
+815
+01:32:12,319 --> 01:32:12,500
+Okay?
+
+816
+01:32:13,940 --> 01:32:14,460
+Kullanamıyorsunuz.
+
+817
+01:32:14,500 --> 01:32:18,060
+Son öncüsünü da kullandığınız zaman tamam bakın burada sorun yok ama bir öncekine
+
+818
+01:32:18,060 --> 01:32:21,020
+bakarsanız kullandığınızda bak burası 0 geldi.
+
+819
+01:32:22,060 --> 01:32:25,980
+En son kalan yani bulabileceğiniz ve gelene kadar sorun yok.
+
+820
+01:32:25,980 --> 01:32:30,739
+En sona geldiğiniz zaman şuradaki yukarıdaki verilerin integreri kullanacaksınız.
+
+821
+01:32:30,840 --> 01:32:31,020
+Şunu.
+
+822
+01:32:33,199 --> 01:32:33,600
+Okay.
+
+823
+01:32:34,060 --> 01:32:40,420
+So now this is the last example about reduction method.
+
+824
+01:32:40,420 --> 01:32:47,199
+Now I will give you homework.
+
+825
+01:32:47,460 --> 01:32:59,440
+At home, try to find sine nx dx and cosine nx dx until next week.
+
+826
+01:32:59,440 --> 01:33:10,279
+You can try and determine sine cube x dx and determine cosine 4x dx.
+
+827
+01:33:10,400 --> 01:33:10,640
+Okay?
+
+828
+01:33:14,612 --> 01:33:15,891
+About reduction method.
+
+829
+01:33:16,532 --> 01:33:18,992
+Okay. Do you have any question about reduction method?
+
+830
+01:33:20,532 --> 01:33:22,212
+Eczem sınavda buraya kadar mı?
+
+831
+01:33:22,412 --> 01:33:23,492
+Yes. Evet.
+
+832
+01:33:24,072 --> 01:33:26,752
+Your second exam will be at the end of year.
+
+833
+01:33:28,172 --> 01:33:29,311
+Okay. From the beginning.
+
+834
+01:33:31,311 --> 01:33:33,712
+Not from the first exam subjects.
+
+835
+01:33:34,452 --> 01:33:35,811
+Baştan son oluyor arkadaşlar.
+
+836
+01:33:35,811 --> 01:33:37,971
+Ama tabii ki son konular ağırlıklı olur.
+
+837
+01:33:38,072 --> 01:33:40,231
+Baştan da mutlaka bir şeyler sorarlar ama
+
+838
+01:33:40,231 --> 01:33:41,792
+hani yüzde yetmişi, yüzde sekseni
+
+839
+01:33:41,792 --> 01:33:44,511
+vizeden sonraki konular olur genellikle.
+
+840
+01:33:45,492 --> 01:33:46,612
+Ama eskiden de sorarlar.
+
+841
+01:33:47,412 --> 01:33:48,051
+Okay.
+
+842
+01:33:48,832 --> 01:33:49,471
+Now
+
+843
+01:33:49,471 --> 01:33:52,532
+let's talk about
+
+844
+01:33:52,532 --> 01:33:55,412
+trigonomic substitutions.
+
+845
+01:33:55,731 --> 01:33:57,752
+This subject also very important.
+
+846
+01:33:58,832 --> 01:33:59,091
+Okay.
+
+847
+01:33:59,172 --> 01:34:00,032
+What does it mean?
+
+848
+01:34:00,212 --> 01:34:01,692
+If in your integral,
+
+849
+01:34:01,692 --> 01:34:03,912
+if you have square root
+
+850
+01:34:03,912 --> 01:34:05,731
+a square minus x square
+
+851
+01:34:05,731 --> 01:34:06,591
+a is a number
+
+852
+01:34:06,591 --> 01:34:09,771
+or you can have x square
+
+853
+01:34:09,771 --> 01:34:10,952
+minus a square
+
+854
+01:34:10,952 --> 01:34:13,891
+or you can have a square plus
+
+855
+01:34:13,891 --> 01:34:14,572
+x square
+
+856
+01:34:14,572 --> 01:34:16,532
+inside of the root
+
+857
+01:34:16,532 --> 01:34:18,212
+or outside of the root.
+
+858
+01:34:19,091 --> 01:34:21,872
+This is called trigonomic substitutions.
+
+859
+01:34:22,851 --> 01:34:23,091
+Okay.
+
+860
+01:34:23,912 --> 01:34:24,532
+First thing.
+
+861
+01:34:25,792 --> 01:34:27,731
+For this kind of substitutions,
+
+862
+01:34:28,112 --> 01:34:29,511
+we have actually
+
+863
+01:34:29,511 --> 01:34:30,692
+two main important
+
+864
+01:34:30,692 --> 01:34:32,271
+two important relations.
+
+865
+01:34:32,372 --> 01:34:32,912
+What is that?
+
+866
+01:34:32,912 --> 01:34:34,252
+I know that
+
+867
+01:34:34,252 --> 01:34:35,231
+I know that one plus
+
+868
+01:34:35,231 --> 01:34:37,792
+tangent square x
+
+869
+01:34:37,792 --> 01:34:38,231
+is
+
+870
+01:34:38,231 --> 01:34:41,632
+second square x
+
+871
+01:34:41,632 --> 01:34:43,511
+or I can write
+
+872
+01:34:43,511 --> 01:34:46,511
+tangent square x
+
+873
+01:34:46,511 --> 01:34:47,271
+will be
+
+874
+01:34:47,271 --> 01:34:50,091
+second square x
+
+875
+01:34:50,091 --> 01:34:50,832
+minus one.
+
+876
+01:34:51,692 --> 01:34:52,872
+And the other one is
+
+877
+01:34:52,872 --> 01:34:53,752
+I know that
+
+878
+01:34:53,752 --> 01:34:55,792
+sine square x
+
+879
+01:34:55,792 --> 01:34:56,572
+plus
+
+880
+01:34:56,572 --> 01:34:59,872
+cosine square x
+
+881
+01:34:59,872 --> 01:35:00,572
+will be one.
+
+882
+01:35:01,452 --> 01:35:02,652
+So I can write
+
+883
+01:35:02,652 --> 01:35:03,412
+you can write
+
+884
+01:35:03,412 --> 01:35:04,132
+any of that.
+
+885
+01:35:04,652 --> 01:35:05,752
+Sine square x
+
+886
+01:35:05,752 --> 01:35:06,471
+will be
+
+887
+01:35:06,471 --> 01:35:08,771
+one minus
+
+888
+01:35:08,771 --> 01:35:09,372
+cosine
+
+889
+01:35:09,372 --> 01:35:10,471
+square x
+
+890
+01:35:10,471 --> 01:35:11,452
+or you can write
+
+891
+01:35:11,452 --> 01:35:12,372
+the inverse also.
+
+892
+01:35:12,551 --> 01:35:13,152
+You can write
+
+893
+01:35:13,152 --> 01:35:14,412
+four cosine function.
+
+894
+01:35:15,112 --> 01:35:15,471
+Here
+
+895
+01:35:15,471 --> 01:35:17,192
+they subtract
+
+896
+01:35:17,192 --> 01:35:18,292
+from a
+
+897
+01:35:18,292 --> 01:35:19,332
+function
+
+898
+01:35:19,332 --> 01:35:20,452
+to a number.
+
+899
+01:35:21,452 --> 01:35:22,112
+In here
+
+900
+01:35:22,112 --> 01:35:23,231
+they subtract
+
+901
+01:35:23,231 --> 01:35:24,452
+from number
+
+902
+01:35:24,452 --> 01:35:25,731
+a function.
+
+903
+01:35:25,731 --> 01:35:26,592
+okay.
+
+904
+01:35:27,551 --> 01:35:27,872
+So
+
+905
+01:35:27,872 --> 01:35:28,572
+let me write
+
+906
+01:35:28,572 --> 01:35:28,872
+here.
+
+907
+01:35:28,952 --> 01:35:29,452
+Let's try
+
+908
+01:35:29,452 --> 01:35:29,931
+to write
+
+909
+01:35:29,931 --> 01:35:30,212
+our
+
+910
+01:35:30,212 --> 01:35:32,551
+transformation.
+
+911
+01:35:33,132 --> 01:35:34,011
+If I have
+
+912
+01:35:34,011 --> 01:35:35,492
+a
+
+913
+01:35:35,492 --> 01:35:36,332
+square
+
+914
+01:35:36,332 --> 01:35:37,252
+minus
+
+915
+01:35:37,252 --> 01:35:37,652
+x
+
+916
+01:35:37,652 --> 01:35:37,952
+square
+
+917
+01:35:37,952 --> 01:35:38,632
+what kind
+
+918
+01:35:38,632 --> 01:35:38,851
+of
+
+919
+01:35:38,851 --> 01:35:39,412
+transformation
+
+920
+01:35:39,412 --> 01:35:40,311
+I can use?
+
+921
+01:35:40,771 --> 01:35:41,412
+In here
+
+922
+01:35:41,412 --> 01:35:42,391
+they subtract
+
+923
+01:35:42,391 --> 01:35:43,351
+from number
+
+924
+01:35:43,351 --> 01:35:44,132
+a function.
+
+925
+01:35:44,792 --> 01:35:45,351
+Which one
+
+926
+01:35:45,351 --> 01:35:45,891
+is this?
+
+927
+01:35:46,072 --> 01:35:46,412
+Number
+
+928
+01:35:46,412 --> 01:35:47,051
+minus
+
+929
+01:35:47,051 --> 01:35:47,572
+function
+
+930
+01:35:47,572 --> 01:35:48,572
+is this.
+
+931
+01:35:49,511 --> 01:35:49,952
+So
+
+932
+01:35:49,952 --> 01:35:50,612
+if I want
+
+933
+01:35:50,612 --> 01:35:51,011
+to solve
+
+934
+01:35:51,011 --> 01:35:51,592
+this kind
+
+935
+01:35:51,592 --> 01:35:52,572
+of integrals
+
+936
+01:35:52,572 --> 01:35:53,072
+I need
+
+937
+01:35:53,072 --> 01:35:53,511
+to use
+
+938
+01:35:53,511 --> 01:35:53,692
+a
+
+939
+01:35:53,692 --> 01:35:54,471
+transformation
+
+940
+01:35:54,471 --> 01:35:54,971
+u
+
+941
+01:35:54,971 --> 01:35:55,551
+as
+
+942
+01:35:55,551 --> 01:35:56,612
+a
+
+943
+01:35:56,612 --> 01:35:58,391
+or
+
+944
+01:35:58,391 --> 01:35:59,192
+this
+
+945
+01:35:59,192 --> 01:35:59,672
+function
+
+946
+01:35:59,672 --> 01:36:00,032
+is
+
+947
+01:36:00,032 --> 01:36:00,471
+cosine
+
+948
+01:36:00,471 --> 01:36:01,072
+I will
+
+949
+01:36:01,072 --> 01:36:01,511
+write
+
+950
+01:36:01,511 --> 01:36:01,851
+u
+
+951
+01:36:01,851 --> 01:36:02,311
+is
+
+952
+01:36:02,311 --> 01:36:02,891
+a
+
+953
+01:36:02,891 --> 01:36:04,212
+cosine
+
+954
+01:36:04,212 --> 01:36:04,851
+theta
+
+955
+01:36:04,851 --> 01:36:06,132
+or
+
+956
+01:36:11,923 --> 01:36:16,163
+Or I can use A sin theta.
+
+957
+01:36:18,083 --> 01:36:18,344
+Okay.
+
+958
+01:36:18,804 --> 01:36:23,323
+When I write this transformation, the result will be sin squared or cos squared.
+
+959
+01:36:23,484 --> 01:36:24,264
+Let me write here.
+
+960
+01:36:24,264 --> 01:36:37,503
+If I write the first formula, if I write A cos theta, du will be minus A sin theta d theta.
+
+961
+01:36:37,503 --> 01:36:43,104
+So our transformation becomes A square.
+
+962
+01:36:46,243 --> 01:36:48,604
+Ay, u deyip duruyorum, pardon, kusura bakmayın.
+
+963
+01:36:48,743 --> 01:36:49,423
+Şu x olacak.
+
+964
+01:36:52,144 --> 01:36:54,703
+Sorry, it will be x in the equation.
+
+965
+01:36:58,644 --> 01:37:05,543
+So x squared will be a squared cosine squared theta.
+
+966
+01:37:06,463 --> 01:37:11,444
+So I will have a sine theta.
+
+967
+01:37:12,043 --> 01:37:12,804
+Okay.
+
+968
+01:37:14,644 --> 01:37:20,784
+So when we have this kind of integral which contains this one.
+
+969
+01:37:20,784 --> 01:37:32,463
+So if I use a cosine theta or you can use a sine theta our transformation when we use any of them for this one.
+
+970
+01:37:34,043 --> 01:37:38,344
+Our solution will be a sine theta or a cosine theta.
+
+971
+01:37:38,344 --> 01:37:38,923
+Okay.
+
+972
+01:37:39,284 --> 01:37:44,384
+So in this kind of integrase it is related to this one.
+
+973
+01:37:44,724 --> 01:37:50,604
+Because here the subject number minus function it is related to this one.
+
+974
+01:37:50,784 --> 01:37:54,204
+My number minus function is this.
+
+975
+01:37:54,864 --> 01:38:00,963
+If I have x squared minus a squared.
+
+976
+01:38:02,284 --> 01:38:05,463
+They are subtracting function minus number.
+
+977
+01:38:05,963 --> 01:38:08,144
+Function minus number.
+
+978
+01:38:08,583 --> 01:38:10,583
+This is the relation is this.
+
+979
+01:38:10,583 --> 01:38:19,664
+So I will use x equals a second theta in our transformation.
+
+980
+01:38:19,664 --> 01:38:32,324
+dx will be a second theta tangent theta d theta.
+
+981
+01:38:32,324 --> 01:38:38,784
+So when I write here x squared will be a squared.
+
+982
+01:38:39,944 --> 01:38:43,043
+Second squared theta minus a squared.
+
+983
+01:38:43,043 --> 01:38:48,164
+And in the result I will have a tangent theta.
+
+984
+01:38:48,164 --> 01:38:50,364
+Okay.
+
+985
+01:38:53,364 --> 01:38:54,884
+If I have.
+
+986
+01:38:58,164 --> 01:39:00,003
+Inside or outside.
+
+987
+01:39:00,164 --> 01:39:01,083
+It doesn't be important.
+
+988
+01:39:01,463 --> 01:39:04,164
+If I have a squared minus x squared.
+
+989
+01:39:04,864 --> 01:39:07,123
+Which transformation I can write.
+
+990
+01:39:07,503 --> 01:39:11,164
+In here they say that number plus function.
+
+991
+01:39:11,484 --> 01:39:12,003
+What is that?
+
+992
+01:39:12,003 --> 01:39:12,623
+It is.
+
+993
+01:39:13,764 --> 01:39:14,844
+Now look at here.
+
+994
+01:39:14,963 --> 01:39:15,623
+Which trans.
+
+995
+01:39:15,744 --> 01:39:16,384
+Which function.
+
+996
+01:39:16,583 --> 01:39:18,664
+Which relation I can use.
+
+997
+01:39:20,244 --> 01:39:21,884
+Number plus function.
+
+998
+01:39:22,043 --> 01:39:23,664
+The first one or the second one.
+
+999
+01:39:26,003 --> 01:39:28,244
+Sayı artı function olan hangisi.
+
+1000
+01:39:28,244 --> 01:39:33,644
+The first one.
+
+1001
+01:39:33,724 --> 01:39:35,524
+If I write x is.
+
+1002
+01:39:36,524 --> 01:39:37,984
+A tangent theta.
+
+1003
+01:39:39,644 --> 01:39:41,184
+dx will be.
+
+1004
+01:39:41,744 --> 01:39:42,984
+A second.
+
+1005
+01:39:44,923 --> 01:39:46,404
+Square theta d theta.
+
+1006
+01:39:47,284 --> 01:39:49,264
+So if I write in the function.
+
+1007
+01:39:50,364 --> 01:39:51,423
+I will have.
+
+1008
+01:39:52,364 --> 01:39:54,304
+A square plus.
+
+1009
+01:39:54,304 --> 01:39:57,423
+A square tangent square theta.
+
+1010
+01:39:58,543 --> 01:40:01,764
+It will be a second theta.
+
+1011
+01:40:02,423 --> 01:40:02,543
+Okay.
+
+1012
+01:40:03,524 --> 01:40:04,164
+The formula.
+
+1013
+01:40:04,324 --> 01:40:06,244
+These formulas are comes from here.
+
+1014
+01:40:06,344 --> 01:40:07,423
+I write in detail.
+
+1015
+01:40:07,684 --> 01:40:07,944
+Okay.
+
+1016
+01:40:08,064 --> 01:40:09,764
+In the lecture notes.
+
+1017
+01:40:10,324 --> 01:40:12,043
+Let me show in the questions.
+
+1018
+01:40:13,503 --> 01:40:16,503
+Yani acaba bu muydu şu muydu şeklinde düşünmekten çok.
+
+1019
+01:40:17,083 --> 01:40:20,184
+Ben böyle aklımda tutmayı daha çok tercih ediyorum.
+
+1020
+01:40:22,583 --> 01:40:23,064
+Okay.
+
+1021
+01:40:23,064 --> 01:40:24,684
+Let's look at this example.
+
+1022
+01:40:26,884 --> 01:40:28,043
+So this integral.
+
+1023
+01:40:28,463 --> 01:40:29,664
+I have a root function.
+
+1024
+01:40:29,804 --> 01:40:30,784
+And in the root function.
+
+1025
+01:40:30,923 --> 01:40:33,423
+I have 9 minus x square.
+
+1026
+01:40:34,043 --> 01:40:35,484
+So I said that.
+
+1027
+01:40:36,463 --> 01:40:37,444
+We have.
+
+1028
+01:40:37,583 --> 01:40:40,884
+We know that tangent square x is.
+
+1029
+01:40:41,164 --> 01:40:44,244
+Second square x minus 1.
+
+1030
+01:40:44,344 --> 01:40:45,404
+And I know that.
+
+1031
+01:40:45,944 --> 01:40:48,923
+Sine square x is.
+
+1032
+01:40:49,344 --> 01:40:51,644
+1 minus cosine square x.
+
+1033
+01:40:51,644 --> 01:40:53,724
+Or we can write.
+
+1034
+01:40:53,844 --> 01:40:55,423
+Cosine square x is.
+
+1035
+01:40:55,463 --> 01:40:57,204
+1 minus sine square x.
+
+1036
+01:40:57,463 --> 01:40:57,604
+Okay.
+
+1037
+01:40:57,604 --> 01:41:01,384
+So.
+
+1038
+01:40:58,163 --> 01:41:05,103
+Now in the question inside of the root I have number minus function.
+
+1039
+01:41:05,363 --> 01:41:06,783
+It is related to this one.
+
+1040
+01:41:07,483 --> 01:41:09,463
+So I can use any of them.
+
+1041
+01:41:10,623 --> 01:41:15,403
+Now I want to use x is a sin theta.
+
+1042
+01:41:17,003 --> 01:41:18,323
+But what is a here?
+
+1043
+01:41:19,184 --> 01:41:20,743
+What I will write for a.
+
+1044
+01:41:22,523 --> 01:41:23,563
+Are you many of us just?
+
+1045
+01:41:24,823 --> 01:41:26,063
+What is a here?
+
+1046
+01:41:26,063 --> 01:41:30,123
+No a square is 9 a will be 3.
+
+1047
+01:41:32,023 --> 01:41:39,863
+Okay dx will be 3 cosine theta d theta.
+
+1048
+01:41:41,043 --> 01:41:45,603
+Okay let us write in the integral and let's see what we will have.
+
+1049
+01:41:47,083 --> 01:41:52,483
+x square will be 9 sine square theta.
+
+1050
+01:41:52,483 --> 01:42:02,184
+dx will be 3 cosine theta d theta over.
+
+1051
+01:42:03,023 --> 01:42:10,363
+In the root function we have 9 minus 9 sine square theta.
+
+1052
+01:42:10,363 --> 01:42:16,403
+So inside we will have this one will be 9.
+
+1053
+01:42:17,823 --> 01:42:21,283
+1 minus sine square theta.
+
+1054
+01:42:22,063 --> 01:42:27,643
+Or I can write 9 cosine square theta.
+
+1055
+01:42:27,643 --> 01:42:33,203
+Okay or I can write for all of them because we have a root function.
+
+1056
+01:42:33,384 --> 01:42:36,743
+It is 3 cosine theta.
+
+1057
+01:42:37,184 --> 01:42:37,423
+Okay.
+
+1058
+01:42:38,663 --> 01:42:43,423
+Now I can cancel 3 cosine theta and 3 cosine theta here.
+
+1059
+01:42:43,423 --> 01:42:47,483
+So our integral will be 9.
+
+1060
+01:42:47,483 --> 01:42:49,003
+I can write outside.
+
+1061
+01:42:49,143 --> 01:42:54,963
+We will have only sine square theta d theta.
+
+1062
+01:42:56,724 --> 01:42:58,543
+Okay look at until here.
+
+1063
+01:42:58,903 --> 01:42:59,943
+Do you have any question?
+
+1064
+01:43:00,403 --> 01:43:02,483
+Firstly we determine our transformation.
+
+1065
+01:43:03,023 --> 01:43:07,283
+In the root function we have number minus function.
+
+1066
+01:43:07,283 --> 01:43:09,003
+it is related to second.
+
+1067
+01:43:09,623 --> 01:43:11,903
+We can use sine or cosine.
+
+1068
+01:43:12,144 --> 01:43:13,063
+It is your choice.
+
+1069
+01:43:13,603 --> 01:43:16,443
+In this example I prefer to use sine function.
+
+1070
+01:43:17,123 --> 01:43:18,764
+Here a square is 9.
+
+1071
+01:43:19,063 --> 01:43:20,684
+It means that a is 3.
+
+1072
+01:43:21,304 --> 01:43:23,583
+So our transformation will be
+
+1073
+01:43:23,583 --> 01:43:25,543
+x is 3 sine theta.
+
+1074
+01:43:26,023 --> 01:43:28,543
+dx will be 3 cosine theta d theta.
+
+1075
+01:43:28,543 --> 01:43:32,384
+And I write all these transformations in the integral.
+
+1076
+01:43:33,243 --> 01:43:37,323
+And we find our integral is sine square theta d theta.
+
+1077
+01:43:37,323 --> 01:43:39,563
+Now what can I write here?
+
+1078
+01:43:39,743 --> 01:43:41,264
+How can we solve this integral?
+
+1079
+01:43:42,563 --> 01:43:43,463
+If you remember
+
+1080
+01:43:43,463 --> 01:43:45,923
+if you have sine function
+
+1081
+01:43:45,923 --> 01:43:48,823
+and if you have any power of sine function
+
+1082
+01:43:48,823 --> 01:43:52,283
+and if it is even
+
+1083
+01:43:52,283 --> 01:43:56,443
+I said that we can use the relation
+
+1084
+01:43:56,443 --> 01:43:59,023
+sine square theta is
+
+1085
+01:43:59,023 --> 01:44:04,224
+1 minus cosine 2 theta over 2.
+
+1086
+01:44:05,724 --> 01:44:12,163
+So I can write 9 over 2 integral
+
+1087
+01:44:12,163 --> 01:44:19,083
+1 minus cosine 2 theta d theta.
+
+1088
+01:44:19,083 --> 01:44:23,463
+So the integral will be
+
+1089
+01:44:23,463 --> 01:44:25,583
+9 over 2
+
+1090
+01:44:25,583 --> 01:44:28,123
+This is theta
+
+1091
+01:44:28,123 --> 01:44:31,144
+minus 1 over 2
+
+1092
+01:44:31,144 --> 01:44:34,863
+sine 2 theta
+
+1093
+01:44:34,863 --> 01:44:37,283
+and a constant c.
+
+1094
+01:44:38,243 --> 01:44:39,163
+Until here
+
+1095
+01:44:39,163 --> 01:44:40,103
+do you have any questions?
+
+1096
+01:44:40,103 --> 01:45:10,083
+Thank you.
+
+1097
+01:44:45,203 --> 01:44:47,103
+Did you understand? Until here.
+
+1098
+01:44:52,756 --> 01:44:57,076
+Okay, now this is our integral, but I have to write the transformation back.
+
+1099
+01:44:57,316 --> 01:44:58,536
+But we have some problems.
+
+1100
+01:44:58,735 --> 01:44:59,516
+I don't know theta.
+
+1101
+01:44:59,976 --> 01:45:01,816
+I don't know sine 2 theta.
+
+1102
+01:45:02,316 --> 01:45:07,936
+In this kind of integral questions, I have to sketch a triangle.
+
+1103
+01:45:09,316 --> 01:45:09,636
+Okay.
+
+1104
+01:45:10,976 --> 01:45:12,536
+What is our transformation?
+
+1105
+01:45:12,536 --> 01:45:22,216
+Our transformation is sine theta is x over 3.
+
+1106
+01:45:22,756 --> 01:45:25,476
+What is sine function?
+
+1107
+01:45:26,256 --> 01:45:27,556
+This is theta.
+
+1108
+01:45:28,716 --> 01:45:33,036
+Sine is cross over hypothet.
+
+1109
+01:45:33,695 --> 01:45:36,516
+So this will be 9 minus x squared.
+
+1110
+01:45:36,896 --> 01:45:41,636
+Using this triangle, we can determine the other terms.
+
+1111
+01:45:42,176 --> 01:45:42,896
+The first one.
+
+1112
+01:45:44,655 --> 01:45:45,796
+9 over 2.
+
+1113
+01:45:45,916 --> 01:45:46,556
+What is theta?
+
+1114
+01:45:46,556 --> 01:45:56,076
+If sine theta is x over 3, theta will be arc sine x over 3.
+
+1115
+01:45:57,436 --> 01:45:59,676
+Minus 1 over 2.
+
+1116
+01:46:00,195 --> 01:46:03,356
+How can you write sine theta 2 theta?
+
+1117
+01:46:03,356 --> 01:46:10,356
+I know that for sine 2 theta...
+
+1118
+01:46:14,644 --> 01:46:15,844
+This right here.
+
+1119
+01:46:18,104 --> 01:46:28,284
+Sine 2 theta will be 2 sine theta cosine theta.
+
+1120
+01:46:29,284 --> 01:46:31,984
+So let's write here 2.
+
+1121
+01:46:33,543 --> 01:46:36,164
+I know that sine theta is x over 3.
+
+1122
+01:46:37,284 --> 01:46:38,904
+What about cosine theta?
+
+1123
+01:46:39,784 --> 01:46:44,164
+9 minus x square over 3.
+
+1124
+01:46:44,644 --> 01:46:47,104
+And a constant.
+
+1125
+01:46:52,051 --> 01:47:03,731
+In these integral questions, in these substitutions, I have to sketch a triangle, and using this triangle, I can determine all the other terms.
+
+1126
+01:47:06,591 --> 01:47:10,871
+Look at the solution, and do you have any questions?
+
+1127
+01:47:17,108 --> 01:47:18,568
+Efendim?
+
+1128
+01:47:19,528 --> 01:47:22,108
+Bu üçkenden sonra sinik tekrar anlatabilirim?
+
+1129
+01:47:22,847 --> 01:47:23,528
+Olur.
+
+1130
+01:47:24,208 --> 01:47:24,688
+Okay.
+
+1131
+01:47:25,368 --> 01:47:27,988
+So we find this is our solution.
+
+1132
+01:47:28,668 --> 01:47:30,648
+Until here, I think you don't have any problem.
+
+1133
+01:47:31,467 --> 01:47:39,608
+But in the integral solution, I have to determine theta and sine 2 theta.
+
+1134
+01:47:40,228 --> 01:47:43,788
+Our transformation, sine theta is x over 3.
+
+1135
+01:47:43,788 --> 01:47:49,248
+If I want to find theta, I have to take the inverse of the sine function.
+
+1136
+01:47:49,368 --> 01:47:51,807
+Inverse of the sine function is arcsine.
+
+1137
+01:47:53,268 --> 01:47:56,307
+Arcsine.
+
+1138
+01:47:56,708 --> 01:47:58,628
+I can cancel this one.
+
+1139
+01:47:59,028 --> 01:48:01,967
+So theta will be arcsine x over 3.
+
+1140
+01:48:02,408 --> 01:48:05,587
+Now in the next part, I have to determine sine 2 theta.
+
+1141
+01:48:05,587 --> 01:48:35,568
+For sine function, I know that it is sine theta.
+
+1142
+01:48:35,568 --> 01:48:36,568
+It will be 9 minus x over 3.
+
+1143
+01:48:36,568 --> 01:48:43,728
+It will be 9 minus x square over hypotenuse is 3.
+
+1144
+01:48:43,728 --> 01:48:51,967
+So I write to x over 3 square root over 3.
+
+1145
+01:48:51,967 --> 01:48:52,368
+Okay.
+
+1146
+01:48:53,828 --> 01:48:56,528
+So let's see in another example.
+
+1147
+01:48:56,728 --> 01:48:58,708
+And you will understand more easily.
+
+1148
+01:48:59,748 --> 01:49:01,847
+Şimdi örnek çözünce iyice kafanıza yatıcı.
+
+1149
+01:49:02,028 --> 01:49:03,087
+X sorumda.
+
+1150
+01:49:13,268 --> 01:49:15,528
+Ok, let us look at another example.
+
+1151
+01:49:32,787 --> 01:49:42,447
+Now, I have number minus function, so it is related to sine and cosine. In this example, let us use cosine.
+
+1152
+01:49:43,107 --> 01:49:48,627
+So, I will write x is cosine theta, but what about a? What is a?
+
+1153
+01:49:54,963 --> 01:49:55,703
+A mısın ne?
+
+1154
+01:49:56,604 --> 01:49:57,484
+What is A?
+
+1155
+01:49:58,623 --> 01:50:01,884
+This is A².
+
+1156
+01:50:02,264 --> 01:50:03,083
+It's 5.
+
+1157
+01:50:03,863 --> 01:50:05,783
+So A will be square root 5.
+
+1158
+01:50:06,423 --> 01:50:06,644
+Okay.
+
+1159
+01:50:07,443 --> 01:50:15,764
+So dx will be square root 5 minus square root 5 sinθ dθ.
+
+1160
+01:50:15,764 --> 01:50:16,684
+Okay.
+
+1161
+01:50:17,304 --> 01:50:21,283
+Now let us write these results in our integral.
+
+1162
+01:50:21,283 --> 01:50:42,644
+dx will be minus square root 5 sinθ dθ 5 minus 5 cosine square θ to the power 3 over 2.
+
+1163
+01:50:43,963 --> 01:50:44,564
+Okay.
+
+1164
+01:50:44,644 --> 01:50:46,764
+Let's look at inside of the parenthesis.
+
+1165
+01:50:46,764 --> 01:50:54,903
+This is 5, 1 minus cosine square θ.
+
+1166
+01:50:55,243 --> 01:51:01,264
+It means that it is 5 sinθ.
+
+1167
+01:51:01,884 --> 01:51:02,144
+Okay.
+
+1168
+01:51:03,384 --> 01:51:07,724
+What is 5 sinθ?
+
+1169
+01:51:07,724 --> 01:51:11,783
+I have power of 3 over 2.
+
+1170
+01:51:12,583 --> 01:51:12,863
+Okay.
+
+1171
+01:51:13,323 --> 01:51:14,564
+What does it mean?
+
+1172
+01:51:14,564 --> 01:51:22,943
+It means that I will have minus square root 5 sinθ dθ here.
+
+1173
+01:51:23,304 --> 01:51:31,423
+I have 5 to the power 3 over 2 means that I have 1 and half.
+
+1174
+01:51:31,423 --> 01:51:35,604
+sinθ dθ.
+
+1175
+01:51:35,604 --> 01:51:38,623
+So sinθ dθ.
+
+1176
+01:51:38,623 --> 01:51:44,304
+It means that it is sinθ dθ.
+
+1177
+01:51:44,304 --> 01:52:01,243
+Okay.
+
+1178
+01:51:50,739 --> 01:52:03,260
+Okay, so what do we have here? I can cancel root. I can cancel one sine function. I have sine square theta.
+
+1179
+01:52:03,260 --> 01:52:19,079
+So our integral becomes minus 1 over 5. I can write integral. I have d theta over sine square theta.
+
+1180
+01:52:19,079 --> 01:52:22,119
+How can we solve these integral?
+
+1181
+01:52:26,003 --> 01:52:28,283
+Ne yapabiliriz burada? What can we do here?
+
+1182
+01:52:38,771 --> 01:52:44,532
+Evet, it is actually cosecant square theta d theta.
+
+1183
+01:52:44,532 --> 01:52:52,471
+What is the derivation of, which function's derivation is cosecant square theta?
+
+1184
+01:52:52,992 --> 01:52:55,731
+Yes, but the sine also will be minus.
+
+1185
+01:52:56,431 --> 01:53:04,011
+So, the integral will be 1 over 5 cotangent theta plus a constant c.
+
+1186
+01:53:04,011 --> 01:53:12,431
+Okay, now, this is our solution, but I don't know, I don't have any information about cotangent.
+
+1187
+01:53:12,431 --> 01:53:15,332
+So, I have to sketch the triangle.
+
+1188
+01:53:17,051 --> 01:53:23,652
+Our transformation cosine theta was x over square root 5.
+
+1189
+01:53:24,351 --> 01:53:29,992
+This is theta. Cosine means that near over the potence.
+
+1190
+01:53:30,572 --> 01:53:33,532
+So, this part will be 5 minus x square.
+
+1191
+01:53:34,011 --> 01:53:38,192
+And using this triangle, I can write our solution.
+
+1192
+01:53:39,452 --> 01:53:41,891
+1 over 5. What is cotangent?
+
+1193
+01:53:42,072 --> 01:53:45,391
+It is near over cross.
+
+1194
+01:53:46,532 --> 01:53:51,511
+x over 5 minus x square.
+
+1195
+01:53:53,372 --> 01:53:55,091
+And a constant c.
+
+1196
+01:53:56,851 --> 01:53:59,091
+Okay, do you have any question?
+
+1197
+01:54:00,271 --> 01:54:01,152
+Look at carefully.
+
+1198
+01:54:01,152 --> 01:54:05,372
+Hocam, niye x ile kök 5 çarpı kosa theta dedik?
+
+1199
+01:54:07,492 --> 01:54:09,032
+İlk başta kelime soruyorsun.
+
+1200
+01:54:09,912 --> 01:54:10,251
+Evet.
+
+1201
+01:54:11,251 --> 01:54:14,311
+Şimdi, okay, now you are asking this one.
+
+1202
+01:54:14,311 --> 01:54:17,612
+I said that we have two relation.
+
+1203
+01:54:17,612 --> 01:54:24,091
+I know that tangent square x is second square x minus 1.
+
+1204
+01:54:24,652 --> 01:54:32,532
+And the other relation is, I know that sine square x is 1 minus cosine square x.
+
+1205
+01:54:32,532 --> 01:54:38,851
+Or, I can also write that cosine square x is 1 minus sine square x.
+
+1206
+01:54:39,251 --> 01:54:42,492
+In this example, in the root, this is root also.
+
+1207
+01:54:43,091 --> 01:54:45,811
+It is number minus function.
+
+1208
+01:54:46,051 --> 01:54:47,572
+It is related to this one.
+
+1209
+01:54:47,572 --> 01:54:50,671
+In here, you can use which you want.
+
+1210
+01:54:50,671 --> 01:54:56,492
+You can use also x equals square root 5 sine theta.
+
+1211
+01:54:56,671 --> 01:54:58,011
+You can use also this one.
+
+1212
+01:54:58,391 --> 01:55:01,011
+But in this example, I prefer to take this one.
+
+1213
+01:55:01,752 --> 01:55:06,192
+Burada sayıdan fonksiyonu çıkaran ifade şu ikisinden bir tanesi.
+
+1214
+01:55:06,292 --> 01:55:08,231
+Ama burada hangisini istiyorsanız seçebilirsiniz.
+
+1215
+01:55:08,231 --> 01:55:09,631
+Ben burada cosülüsü seçtim.
+
+1216
+01:55:09,792 --> 01:55:11,731
+Ama siz istiyorsanız sin sülü de seçebilirsiniz.
+
+1217
+01:55:11,872 --> 01:55:12,631
+Cevap değişmez.
+
+1218
+01:55:13,332 --> 01:55:13,511
+Tamam?
+
+1219
+01:55:14,872 --> 01:55:15,431
+Teşekkürler.
+
+1220
+01:55:15,591 --> 01:55:16,192
+Bir şey diyeyim.
+
+1221
+01:55:17,192 --> 01:55:19,671
+Okay, so if you don't have any question, let's take...
+
+1222
+01:55:19,671 --> 01:55:20,692
+Hocam ben bir şey sorabilir miyim?
+
+1223
+01:55:20,692 --> 01:55:21,171
+Tabii tabii.
+
+1224
+01:55:21,372 --> 01:55:21,872
+Dinliyorum.
+
+1225
+01:55:21,891 --> 01:55:24,292
+Hocam hani sayıdan fonksiyonu çıkardık mı?
+
+1226
+01:55:24,431 --> 01:55:26,391
+Sin kare x ya da cos kare x kullanıyoruz ya.
+
+1227
+01:55:26,412 --> 01:55:27,131
+Evet, evet.
+
+1228
+01:55:27,551 --> 01:55:31,692
+Ben peki o ifadeyi x parantezine alıp tan kare x kullansam cevap çıkmaz mı?
+
+1229
+01:55:31,971 --> 01:55:34,032
+Çünkü hani iki tane ayrı konu verilmiş ya.
+
+1230
+01:55:34,032 --> 01:55:36,051
+Ama eksi kökün içinde.
+
+1231
+01:55:36,051 --> 01:55:38,391
+kökün içindeki eksiyi nasıl yapacaksın?
+
+1232
+01:55:38,811 --> 01:55:39,452
+Olmuyor öyle.
+
+1233
+01:55:40,351 --> 01:55:42,851
+Kökün içinden olmuyor öyle.
+
+1234
+01:55:43,271 --> 01:55:45,572
+Köklü olanlarda zaten sorunumuz var.
+
+1235
+01:55:45,731 --> 01:55:45,851
+Tamam.
+
+1236
+01:55:46,851 --> 01:55:51,051
+Okay, if you don't have any other question, let's take a break for 10 minutes.
+
+1237
+01:55:51,231 --> 01:55:52,792
+After that I will continue, okay?
+
+1238
+01:55:54,231 --> 01:55:55,572
+Bir on dakika kare verelim arkadaşlar.
+
+1239
+02:10:57,203 --> 02:10:57,703
+İngin.
+
+1240
+02:11:03,252 --> 02:11:05,292
+Bu da bu
+
+1241
+02:11:08,595 --> 02:11:17,875
+Okay, we have one more example. Until next week, please try to solve at home. Okay. After that, we can solve again.
+
+1242
+02:11:20,035 --> 02:11:23,875
+Now, let's see if we have x²-a².
+
+1243
+02:11:31,507 --> 02:11:50,547
+When we look at inside of the root function, we have x square minus 4. We have that, you know, that tangent square x is second square x minus 1. Here we have function minus number and they are the same.
+
+1244
+02:11:50,547 --> 02:12:02,688
+So, in this type of equations, we will take x is a, here a is 2, second theta. Our transformation will be x is 2, second theta.
+
+1245
+02:12:03,528 --> 02:12:14,327
+So, let's write dx will be 2, second theta, tangent theta, d theta.
+
+1246
+02:12:17,908 --> 02:12:22,628
+Okay, so let us write this transformation in the differential equation.
+
+1247
+02:12:23,988 --> 02:12:27,108
+Sorry, in the integral differential equation.
+
+1248
+02:12:29,188 --> 02:12:42,387
+Okay, dx will be 2 second theta tangent theta d theta over x is 2 second theta.
+
+1249
+02:12:42,387 --> 02:12:51,347
+And in the square root function x square is 4 second square theta minus 4.
+
+1250
+02:12:51,347 --> 02:12:58,387
+Okay, so we can cancel this one.
+
+1251
+02:12:59,988 --> 02:13:08,628
+Inside we have 4 second square theta minus 1.
+
+1252
+02:13:08,628 --> 02:13:12,307
+It means that this is tangent square theta.
+
+1253
+02:13:13,668 --> 02:13:20,387
+But in the square root function we will have 2 tangent theta.
+
+1254
+02:13:20,387 --> 02:13:24,228
+And we can't take any negative value.
+
+1255
+02:13:24,228 --> 02:13:26,548
+Normally it has to be in the absolute value.
+
+1256
+02:13:26,548 --> 02:13:31,508
+But all these terms are a length of, length in the triangle.
+
+1257
+02:13:31,508 --> 02:13:33,668
+So all of them has to be positive.
+
+1258
+02:13:33,668 --> 02:13:44,788
+So I have tangent theta d theta over 2 tangent theta.
+
+1259
+02:13:45,828 --> 02:13:47,908
+So I can cancel this one.
+
+1260
+02:13:47,908 --> 02:13:52,228
+Our integral will be theta over 2 and a constant c.
+
+1261
+02:13:52,228 --> 02:14:03,908
+And from here I can write that theta is arc second x over 2.
+
+1262
+02:14:05,268 --> 02:14:16,548
+So the integral will be 1 over 2 arc second x over 2 plus c.
+
+1263
+02:14:16,548 --> 02:14:21,588
+Or in the test maybe they can give any other choice.
+
+1264
+02:14:21,588 --> 02:14:26,868
+So I know that seconds theta is x over 2.
+
+1265
+02:14:28,628 --> 02:14:33,428
+If I write cosine, cosine theta will be 2 over x.
+
+1266
+02:14:33,428 --> 02:14:45,028
+So you can write also this solution as 1 over 2 arc cosine 2 over x plus c.
+
+1267
+02:14:45,748 --> 02:14:48,068
+Okay, both of them are the same.
+
+1268
+02:14:48,068 --> 02:14:51,268
+But maybe in the test they don't write second.
+
+1269
+02:14:51,268 --> 02:14:53,268
+They can write as cosine maybe.
+
+1270
+02:14:53,268 --> 02:14:53,588
+Okay.
+
+1271
+02:14:56,468 --> 02:14:58,307
+This is our solution.
+
+1272
+02:14:58,307 --> 02:14:59,748
+Do you have any question here?
+
+1273
+02:14:59,748 --> 02:15:04,948
+In this example they subtract function minus number.
+
+1274
+02:15:04,948 --> 02:15:09,508
+In that case I have to use second theta transformation.
+
+1275
+02:15:09,508 --> 02:15:11,668
+Here a square is 4.
+
+1276
+02:15:11,668 --> 02:15:13,028
+So a will be 2.
+
+1277
+02:15:13,828 --> 02:15:25,748
+When we write out transformation the integral will be theta over 2.
+
+1278
+02:15:23,731 --> 02:15:26,292
+x'i tam olarak ne görebilirim? Kosinüs mü, sinüs mü olduğunu.
+
+1279
+02:15:27,271 --> 02:15:28,351
+Bir öncekinde mi?
+
+1280
+02:15:29,511 --> 02:15:30,872
+Hastan, bir öncekinde mi?
+
+1281
+02:15:33,332 --> 02:15:37,072
+Şimdi şöyle, genel olarak dediğimiz şu bak.
+
+1282
+02:15:37,072 --> 02:15:43,572
+Burada, burada ifadeden sayıyı çıkartıyorsun.
+
+1283
+02:15:44,112 --> 02:15:47,171
+İfadeden sayıyı çıkarttığın kısım şununla alakalı.
+
+1284
+02:15:47,271 --> 02:15:49,851
+Dolayısıyla senin dönüşümün sekant olması gerekiyor.
+
+1285
+02:15:49,971 --> 02:15:53,631
+Yani x yerine senin 2 sekant teta dönüşümü yapman gerekiyor.
+
+1286
+02:15:53,731 --> 02:15:58,211
+Çünkü buradaki integremi burada sayıdan ifadeyi çıkarıyorsun.
+
+1287
+02:15:58,332 --> 02:15:59,391
+Ama böyle olursa
+
+1288
+02:15:59,391 --> 02:16:03,112
+o zaman şu var.
+
+1289
+02:16:03,332 --> 02:16:05,391
+Sek sinüs kare x eşittir.
+
+1290
+02:16:05,891 --> 02:16:08,292
+1 eksi kosinüs kare x olduğu için
+
+1291
+02:16:08,292 --> 02:16:11,211
+burada x yerine sen sinüs ya da kosinüs.
+
+1292
+02:16:11,372 --> 02:16:12,412
+Orada her ikisi de olabilir.
+
+1293
+02:16:13,011 --> 02:16:17,112
+Burada x yerine sinüs teta ya da x yerine
+
+1294
+02:16:17,112 --> 02:16:20,612
+2 kosinüs teta kullanabilirsin.
+
+1295
+02:16:24,340 --> 02:16:41,440
+Okay, why? Because if you write in the triangle, cosine theta is 2x, x squared minus 4.
+
+1296
+02:16:42,040 --> 02:16:53,040
+Okay, all of them are length. Okay, so we have to write, we have to take positive.
+
+1297
+02:16:53,040 --> 02:16:58,399
+Sonuçta buradaki ifadelere baktığınız zaman bunlar uzunluk ifade ediyorlar.
+
+1298
+02:16:59,200 --> 02:17:03,719
+They are length in a triangle, so all of them has to be positive. The length has to be positive.
+
+1299
+02:17:03,719 --> 02:17:13,340
+Okay, because for example, normally I have to write in the absolute value 2 tangent theta.
+
+1300
+02:17:14,139 --> 02:17:21,059
+Okay, but when you write in the solution tangent theta, actually it is a length.
+
+1301
+02:17:21,340 --> 02:17:26,020
+What is that? It is x squared minus 4 over 2.
+
+1302
+02:17:26,020 --> 02:17:30,960
+And it is length, it has to be positive. So you don't need to write in the absolute value.
+
+1303
+02:17:31,500 --> 02:17:33,079
+We have to take the positive one.
+
+1304
+02:17:34,460 --> 02:17:37,700
+Okay, so let us solve another example.
+
+1305
+02:17:37,700 --> 02:17:38,020
+Okay.
+
+1306
+02:17:44,724 --> 02:17:45,724
+ve bu.
+
+1307
+02:17:54,739 --> 02:18:00,420
+No, we have function minus number, our transformation will be second.
+
+1308
+02:18:03,459 --> 02:18:06,600
+But what about a? What can I write for a?
+
+1309
+02:18:07,340 --> 02:18:19,739
+When I write a in here, I have to write something second square theta minus 1 olacak şekilde seçmemiz gerekiyor.
+
+1310
+02:18:19,739 --> 02:18:21,899
+So what can I write for a here?
+
+1311
+02:18:28,500 --> 02:18:37,100
+if I don't have this one, it will be 3. But if you have any number near x,
+
+1312
+02:18:41,747 --> 02:18:49,827
+If I have number near x, I have also divided with the square root of this number.
+
+1313
+02:18:49,967 --> 02:18:51,688
+It will be 3 over 4 second.
+
+1314
+02:18:52,727 --> 02:18:54,067
+Why? Let me write.
+
+1315
+02:18:54,507 --> 02:18:56,307
+Why it will be 3 over 4?
+
+1316
+02:18:56,307 --> 02:18:57,608
+Let me show here.
+
+1317
+02:18:57,768 --> 02:19:06,448
+It is 3 over 4 second theta tangent theta d theta.
+
+1318
+02:19:06,448 --> 02:19:26,567
+So if I write in the integral, I will have dx will be 3 over 4 second theta tangent theta d theta over.
+
+1319
+02:19:26,567 --> 02:19:39,087
+Now here 16, x square will be 9 over 16 second square theta minus 9.
+
+1320
+02:19:39,087 --> 02:19:39,667
+Okay.
+
+1321
+02:19:40,788 --> 02:19:44,047
+Here I need to write 3 over 4.
+
+1322
+02:19:44,147 --> 02:19:46,747
+If I don't write, I don't have this one.
+
+1323
+02:19:47,347 --> 02:19:47,627
+Okay.
+
+1324
+02:19:48,407 --> 02:19:49,987
+So I can't write.
+
+1325
+02:19:50,108 --> 02:19:52,608
+Only I can write 9 outside.
+
+1326
+02:19:52,608 --> 02:19:57,327
+So I will have 16 second square theta minus 1.
+
+1327
+02:19:57,627 --> 02:19:59,067
+So it is not working.
+
+1328
+02:19:59,448 --> 02:20:08,407
+But if I write over 4, when I product with 16 here, I can cancel this one.
+
+1329
+02:20:08,407 --> 02:20:13,427
+So in the last, I can write as...
+
+1330
+02:20:15,427 --> 02:20:22,967
+This one will be 9 second square theta minus 1.
+
+1331
+02:20:23,847 --> 02:20:24,147
+Okay.
+
+1332
+02:20:24,547 --> 02:20:31,427
+So it will be in the root 9 tangent theta.
+
+1333
+02:20:31,427 --> 02:20:35,268
+And outside, I will have 3 tangent theta.
+
+1334
+02:20:36,608 --> 02:20:36,768
+Okay.
+
+1335
+02:20:37,227 --> 02:20:38,487
+3 tangent theta.
+
+1336
+02:20:38,688 --> 02:20:38,907
+Okay.
+
+1337
+02:20:39,247 --> 02:20:43,788
+Did you understand why I need to write 3 over 4?
+
+1338
+02:20:44,827 --> 02:20:46,207
+Did you understand here?
+
+1339
+02:20:46,887 --> 02:20:50,467
+Normally, if I don't have 4 to 16, okay, I will write 3.
+
+1340
+02:20:50,587 --> 02:20:56,547
+But if you have any number near x square, you have to divide with root square root of this number.
+
+1341
+02:20:57,788 --> 02:20:58,268
+Okay.
+
+1342
+02:20:58,368 --> 02:20:59,707
+Let's see what we have.
+
+1343
+02:20:59,707 --> 02:21:03,067
+I can cancel 3, 3.
+
+1344
+02:21:03,268 --> 02:21:05,987
+I can cancel tangent and tangent.
+
+1345
+02:21:06,727 --> 02:21:10,127
+So in the last part, I have 1 over 4.
+
+1346
+02:21:11,567 --> 02:21:15,827
+Integral, second, theta, d, theta.
+
+1347
+02:21:16,567 --> 02:21:22,688
+And I know that from the integral table, it will end second.
+
+1348
+02:21:22,688 --> 02:21:23,688
+And...
+
+1349
+02:21:23,688 --> 02:21:27,967
+We are applying theta.
+
+1350
+02:21:28,108 --> 02:21:30,188
+This is the solution of this integral.
+
+1351
+02:21:31,407 --> 02:21:32,688
+But we are...
+
+1352
+02:21:33,547 --> 02:21:37,688
+For this, for every...
+
+1353
+02:21:38,247 --> 02:21:40,347
+I need to sketch a triangle.
+
+1354
+02:21:40,507 --> 02:21:41,028
+This is theta.
+
+1355
+02:21:41,467 --> 02:21:42,747
+What is our transformation?
+
+1356
+02:21:43,167 --> 02:21:43,747
+Let me write.
+
+1357
+02:21:43,747 --> 02:21:50,227
+I know that second theta is 4x over 3.
+
+1358
+02:21:52,028 --> 02:21:53,207
+What is cosine theta?
+
+1359
+02:21:54,127 --> 02:21:56,948
+Cosine theta will be 3 over 4x.
+
+1360
+02:21:56,948 --> 02:21:57,768
+Okay.
+
+1361
+02:21:57,768 --> 02:22:02,188
+So cosine will be 3 over 4x.
+
+1362
+02:22:04,507 --> 02:22:51,368
+16 over 4x.
+
+1363
+02:22:42,260 --> 02:22:45,020
+plus a constant c.
+
+1364
+02:22:49,075 --> 02:22:51,915
+Okay. Do you have any question? Did you understand?
+
+1365
+02:22:57,716 --> 02:23:05,695
+arkadaşlarımız anlaşıldı mı? Tabii şimdi bir kısmını ancak anlayabilirsiniz. Soru elinizde, soru çözük yapabilirsiniz.
+
+1366
+02:23:06,296 --> 02:23:14,976
+Now, maybe you can understand half of the subject, but when you look at home and when you solve some questions, you will easily understand. It is not so difficult.
+
+1367
+02:23:16,976 --> 02:23:27,695
+Okay. And there are some other questions you can look at at home. One more example. Lastly, I want to talk about the last part.
+
+1368
+02:23:27,716 --> 02:23:33,956
+If the sign is positive, how can we solve these kinds of questions?
+
+1369
+02:23:40,564 --> 02:23:43,644
+If the sign is positive, it is easy.
+
+1370
+02:23:43,644 --> 02:23:50,783
+I know that 1 plus tangent square x is second square x.
+
+1371
+02:23:51,543 --> 02:23:54,004
+It is related to this one.
+
+1372
+02:23:54,564 --> 02:23:56,703
+Number plus function.
+
+1373
+02:23:56,943 --> 02:23:59,604
+So here our transformation will be tangent.
+
+1374
+02:24:00,224 --> 02:24:06,744
+So I will write x is tangent theta and our a is 2.
+
+1375
+02:24:06,744 --> 02:24:15,924
+The x will be 2 derivational tangent function is second square theta d theta.
+
+1376
+02:24:17,484 --> 02:24:30,123
+So the integral will be 2 second square theta d theta over in the root function.
+
+1377
+02:24:30,123 --> 02:24:36,664
+x square will be 4 tangent square theta plus 2.
+
+1378
+02:24:38,043 --> 02:24:48,123
+So inside of the root we have 4 tangent square theta plus 1.
+
+1379
+02:24:48,123 --> 02:24:51,664
+And it is second square theta.
+
+1380
+02:24:54,203 --> 02:24:56,943
+But it is in the square root.
+
+1381
+02:24:57,504 --> 02:25:01,844
+So the result will be 2 second theta.
+
+1382
+02:25:03,164 --> 02:25:04,043
+Okay.
+
+1383
+02:25:04,684 --> 02:25:06,604
+So we can cancel 2.
+
+1384
+02:25:07,604 --> 02:25:09,104
+We can cancel second.
+
+1385
+02:25:09,104 --> 02:25:16,644
+So our integral becomes only second theta d theta.
+
+1386
+02:25:17,904 --> 02:25:22,644
+And we know the integral of second function is n n.
+
+1387
+02:25:23,644 --> 02:25:29,783
+Second theta plus tangent theta and a constant c.
+
+1388
+02:25:30,924 --> 02:25:31,404
+Okay.
+
+1389
+02:25:31,584 --> 02:25:33,684
+So we have some unknown terms.
+
+1390
+02:25:33,844 --> 02:25:36,404
+For this we have to sketch a triangle here.
+
+1391
+02:25:36,404 --> 02:25:39,064
+Our theta is this.
+
+1392
+02:25:39,363 --> 02:25:40,863
+What is our transformation?
+
+1393
+02:25:41,664 --> 02:25:46,384
+x over 2 is tangent cross over near.
+
+1394
+02:25:46,384 --> 02:25:50,664
+So it will be x squared plus 4.
+
+1395
+02:25:51,844 --> 02:25:52,023
+Okay.
+
+1396
+02:25:52,984 --> 02:25:57,023
+So from this triangle we can write our integral solution.
+
+1397
+02:25:58,084 --> 02:26:00,804
+And then what is second?
+
+1398
+02:26:00,804 --> 02:26:07,064
+Cosine is 2 over square root.
+
+1399
+02:26:07,523 --> 02:26:10,863
+But for second it will be 1 over cosine.
+
+1400
+02:26:10,863 --> 02:26:12,863
+It will be square root.
+
+1401
+02:26:14,123 --> 02:26:18,703
+x squared plus 4 over 2.
+
+1402
+02:26:20,324 --> 02:26:26,844
+And we know tangent is x over 2 and a constant c.
+
+1403
+02:26:31,379 --> 02:26:38,139
+Okay? Do you have any question? If the sign is positive, it is very easy, it is like the tangent.
+
+1404
+02:26:39,000 --> 02:26:45,379
+If the sign is negative, you have to determine sine or second, sine, cosine or second.
+
+1405
+02:26:48,019 --> 02:26:48,500
+Okay.
+
+1406
+02:26:55,507 --> 02:26:57,507
+Let's look at this example.
+
+1407
+02:27:07,796 --> 02:27:37,796
+Bu, bu
+
+1408
+02:27:37,796 --> 02:27:46,716
+So this integral becomes x dx will be u du over u.
+
+1409
+02:27:47,935 --> 02:27:57,816
+So integral will be u plus c u will be x square plus 5 and a constant c.
+
+1410
+02:27:58,976 --> 02:28:04,916
+Because I have derivation of this function is here but if you don't have x square you can't use.
+
+1411
+02:28:04,916 --> 02:28:05,736
+Okay.
+
+1412
+02:28:06,095 --> 02:28:09,636
+For this question I can use the first way also.
+
+1413
+02:28:10,736 --> 02:28:16,136
+In the second way we can use our tangent transformation.
+
+1414
+02:28:17,036 --> 02:28:23,615
+For this I have to write x will be square root 5 tangent theta.
+
+1415
+02:28:23,615 --> 02:28:34,496
+So dx will be square root 5 second square theta d theta.
+
+1416
+02:28:35,236 --> 02:28:38,615
+So let us write this transformation in the integral.
+
+1417
+02:28:39,896 --> 02:28:46,435
+So it will be x will be square root 5 tangent theta.
+
+1418
+02:28:46,435 --> 02:28:55,296
+dx will be square root 5 tangent square theta d theta over.
+
+1419
+02:28:57,115 --> 02:29:04,255
+In the square root function 5 tangent square theta plus 5.
+
+1420
+02:29:04,255 --> 02:29:15,916
+So inside I will have 5 tangent square plus 1 will be second square theta.
+
+1421
+02:29:16,595 --> 02:29:18,996
+But it is in the square root function.
+
+1422
+02:29:19,195 --> 02:29:25,036
+It will be square root 5 second theta.
+
+1423
+02:29:25,036 --> 02:29:26,195
+Okay.
+
+1424
+02:29:26,195 --> 02:29:28,556
+So I can cancel this one.
+
+1425
+02:29:29,336 --> 02:29:30,236
+This one.
+
+1426
+02:29:31,296 --> 02:29:34,656
+I can cancel second and this one.
+
+1427
+02:29:35,536 --> 02:29:41,636
+So the integral becomes square root 5 outside integral.
+
+1428
+02:29:41,996 --> 02:29:48,716
+I have second theta tangent theta d theta.
+
+1429
+02:29:49,595 --> 02:29:50,896
+What is this integral?
+
+1430
+02:29:50,896 --> 02:29:51,396
+Okay.
+
+1431
+02:29:59,252 --> 02:30:14,692
+The intürev second çarpı tanjant, it is second theta and a constant c. So let's sketch our triangle also here.
+
+1432
+02:30:14,692 --> 02:30:30,252
+Tangent is x here square root 5. So it will be this is x square plus 5.
+
+1433
+02:30:30,252 --> 02:30:41,572
+So from here I can write that cosine theta is square root 5 over x square plus 5.
+
+1434
+02:30:42,272 --> 02:30:48,252
+But it is second. The order will change. So the result will be...
+
+1435
+02:30:53,459 --> 02:31:04,879
+Second field be x square plus 5 over square root 5 plus c.
+
+1436
+02:31:05,099 --> 02:31:06,500
+And you can cancel this one.
+
+1437
+02:31:06,939 --> 02:31:08,159
+The results are the same.
+
+1438
+02:31:08,599 --> 02:31:12,379
+But only for this question I can use the first way also.
+
+1439
+02:31:12,559 --> 02:31:16,779
+But if I don't have any x term, you can't use the first one.
+
+1440
+02:31:17,099 --> 02:31:17,319
+Okay?
+
+1441
+02:31:17,319 --> 02:31:20,259
+Do you have a question here?
+
+1442
+02:31:20,259 --> 02:31:26,539
+Anlaşıldı mı arkadaşlar bu trigonometrik dönüşümler?
+
+1443
+02:31:27,979 --> 02:31:29,500
+En son olan konu.
+
+1444
+02:31:32,000 --> 02:31:36,119
+Okay, I have one more question you can look at at home.
+
+1445
+02:31:36,259 --> 02:31:38,879
+Okay, this one is homework for you.
+
+1446
+02:31:40,799 --> 02:31:44,139
+At home you can try to solve this question.
+
+1447
+02:31:44,139 --> 02:31:46,419
+I gave the solutions also.
+
+1448
+02:31:46,419 --> 02:31:52,279
+But your subject will be at the end of the reduction formula.
+
+1449
+02:31:52,519 --> 02:31:52,619
+Okay?
+
+1450
+02:31:53,279 --> 02:31:55,339
+Your second exam until here.
+
+1451
+02:31:55,559 --> 02:31:58,219
+Trigonometrik substitutions are not included.
+
+1452
+02:31:58,939 --> 02:31:59,199
+Okay?
+
+1453
+02:32:00,379 --> 02:32:03,039
+Okay, so that's enough for this week.
+
+1454
+02:32:03,039 --> 02:32:11,500
+Today probably I will try to put some working questions.
+
+1455
+02:32:12,319 --> 02:32:13,879
+I won't give the results.
+
+1456
+02:32:14,679 --> 02:32:16,359
+At home please try to solve.
+
+1457
+02:32:16,619 --> 02:32:17,739
+But they are not tests.
+
+1458
+02:32:18,679 --> 02:32:20,459
+They are integral questions.
+
+1459
+02:32:20,819 --> 02:32:22,219
+But the second exam.
+
+1460
+02:32:22,219 --> 02:32:30,219
+For this one I need to, I want you to learn the integration techniques.
+
+1461
+02:32:30,759 --> 02:32:35,439
+I don't want to study according to test sample for the seconds midterm.
+
+1462
+02:32:35,439 --> 02:32:38,659
+Because you have to learn integral techniques.
+
+1463
+02:32:39,239 --> 02:32:39,379
+Okay?
+
+1464
+02:32:39,379 --> 02:32:44,919
+So I will prepare one test sample also.
+
+1465
+02:32:45,119 --> 02:32:49,919
+But please this week try to solve test sample 5.
+
+1466
+02:32:50,039 --> 02:32:52,379
+And I will give you test sample 6 also.
+
+1467
+02:32:53,199 --> 02:32:55,579
+And I will give some application questions.
+
+1468
+02:32:56,019 --> 02:32:57,439
+Everyone tries to study.
+
+1469
+02:32:57,839 --> 02:33:01,779
+And next week we will make application lesson.
+
+1470
+02:33:01,979 --> 02:33:04,719
+Next week I will solve only application questions.
+
+1471
+02:33:04,719 --> 02:33:05,059
+Okay?
+
+1472
+02:33:05,279 --> 02:33:06,399
+For the second exam.
+
+1473
+02:33:06,399 --> 02:33:08,739
+The date is not clear.
+
+1474
+02:33:09,539 --> 02:33:14,000
+But it will be probably in the afternoon, in the evening.
+
+1475
+02:33:15,699 --> 02:33:16,399
+Yes.
+
+1476
+02:33:16,759 --> 02:33:18,500
+All the exams will test.
+
+1477
+02:33:19,059 --> 02:33:19,279
+Okay?
+
+1478
+02:33:20,619 --> 02:33:31,359
+Şimdi arkadaşlar, sınav konumuzu söylediğim gibi redakşanların sonuna kadar sınav tarihi hala belli değil ama o hafta içinde bir akşam saatine denk gelecektir.
+
+1479
+02:33:31,359 --> 02:33:33,299
+Çünkü herkesin dersinin bitmesi gerekiyor.
+
+1480
+02:33:33,500 --> 02:33:34,539
+Artık kaç da olur bilmiyorum.
+
+1481
+02:33:34,539 --> 02:33:39,539
+Onun dışında test sample'ı çözün.
+
+1482
+02:33:39,599 --> 02:33:41,579
+Ben size yine vereceğim bu hafta.
+
+1483
+02:33:41,939 --> 02:33:44,000
+Bugün, bu akşam hazırlamaya çalışacağım.
+
+1484
+02:33:44,179 --> 02:33:46,259
+Yine uygulama soruları vereceğim.
+
+1485
+02:33:46,419 --> 02:33:47,899
+Ama bunlar test gibi olmayacak.
+
+1486
+02:33:48,359 --> 02:33:51,639
+Çünkü özellikle integral konusunu öğrenmenizi istiyorum.
+
+1487
+02:33:52,439 --> 02:33:54,500
+Yani teste göre çalışmanızı istemiyorum.
+
+1488
+02:33:54,979 --> 02:33:57,139
+Diğerleri test şeklinde sorulardı.
+
+1489
+02:33:57,139 --> 02:34:00,359
+Ama integral konusu özellikle çok önemli.
+
+1490
+02:34:00,519 --> 02:34:03,319
+Diğer konularla çok bağlantısı var bu dersin.
+
+1491
+02:34:03,399 --> 02:34:04,739
+Yani integral konusunun.
+
+1492
+02:34:04,819 --> 02:34:08,239
+O yüzden bu integrali çok iyi öğrenmenizi istiyorum.
+
+1493
+02:34:08,419 --> 02:34:11,179
+Çünkü bunu dediğim gibi fizik 1'de görüyorsunuz.
+
+1494
+02:34:11,199 --> 02:34:12,679
+Fizik 2'de de karşınıza çıkabilir.
+
+1495
+02:34:13,199 --> 02:34:15,799
+Matematik dersinden matematik 2'de önümüzdeki dönem.
+
+1496
+02:34:15,799 --> 02:34:19,559
+Seneye indiferansiyel denklemler de hep karşımıza çıkacak.
+
+1497
+02:34:19,679 --> 02:34:21,859
+O yüzden integral konusunu iyi bilmemiz gerekiyor.
+
+1498
+02:34:21,959 --> 02:34:26,699
+Bir de çoğunuz, bir kısmınız lisede de görmediğiniz için daha da iyi çalışmanız gerekiyor.
+
+1499
+02:34:26,859 --> 02:34:29,159
+O yüzden mümkün oldukça soru vereceğim.
+
+1500
+02:34:29,919 --> 02:34:32,339
+Lütfen haftaya kadar verdiklerimi çözmeye çalışın.
+
+1501
+02:34:32,479 --> 02:34:34,119
+Haftaya bunları çözeceğim tek tek.
+
+1502
+02:34:34,119 --> 02:34:36,979
+Haftaya dersimiz sadece soru çözümü olacak.
+
+1503
+02:34:38,019 --> 02:34:41,139
+Ondan sonra sınavdan sonra devam edeceğiz konumuza.
+
+1504
+02:34:41,259 --> 02:34:42,679
+Zaten bu hafta 10'dayız.
+
+1505
+02:34:44,279 --> 02:34:45,619
+Haftaya 11 olacak.
+
+1506
+02:34:45,839 --> 02:34:47,159
+Sınavın olduğu hafta 12. hafta.
+
+1507
+02:34:47,219 --> 02:34:48,059
+Zaten 14'de değil.
+
+1508
+02:34:48,139 --> 02:34:49,379
+14'ün sonunda da bitecek.
+
+1509
+02:34:49,839 --> 02:34:50,799
+8'inde bitiyor.
+
+1510
+02:34:52,439 --> 02:34:52,699
+Okey?
+
+1511
+02:34:53,203 --> 02:34:56,203
+Do you have any question about anything else?
+
+1512
+02:34:58,343 --> 02:35:02,083
+Okay, if you don't have any question, have a good weekend, okay?
+
+1513
+02:35:02,783 --> 02:35:03,583
+See you, bye-bye.

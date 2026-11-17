@@ -1,0 +1,4447 @@
+1
+00:00:02,516 --> 00:00:08,016
+Good morning to everyone.
+
+2
+00:00:37,460 --> 00:00:38,420
+herkese günaydın.
+
+3
+00:00:46,612 --> 00:01:08,611
+Today we will have two hours lesson. And today we will talk about derivation. Last week we see the formal definition of derivation. How can we behave when we have a piecewise function? And today...
+
+4
+00:01:21,811 --> 00:01:29,652
+Ama 1'e kadar aslında yarım gün evet 1'e kadar ama mesela biz 11'den 1'e kadar dersim var.
+
+5
+00:01:29,751 --> 00:01:30,932
+Ben mesela 12'ye kadar yapacağım.
+
+6
+00:01:31,051 --> 00:01:32,632
+Çocuklar 1'e kadar yapmak istemediler.
+
+7
+00:01:33,451 --> 00:01:37,051
+O yüzden 12'ye kadar ama normalde 1'e kadar olan dersleri yapıyoruz.
+
+8
+00:01:38,211 --> 00:01:38,991
+1'den sonra.
+
+9
+00:01:40,451 --> 00:01:41,191
+Thank you.
+
+10
+00:01:42,691 --> 00:01:51,031
+Last week the university made a webinar meeting and they said that during the lesson
+
+11
+00:01:51,031 --> 00:02:05,211
+please open your camera along the lesson and sometimes you are not suitable in a place.
+
+12
+00:02:05,211 --> 00:02:09,551
+So they show that the background and I like this background for now.
+
+13
+00:02:12,171 --> 00:02:14,551
+So you can change if you want.
+
+14
+00:02:14,731 --> 00:02:16,471
+If you want you can open also.
+
+15
+00:02:17,051 --> 00:02:19,971
+There are some different backgrounds here like this.
+
+16
+00:02:19,972 --> 00:02:25,051
+You find what this thing is the most beautiful I think.
+
+17
+00:02:25,932 --> 00:02:31,992
+Most of people didn't go to any holiday I think.
+
+18
+00:02:31,992 --> 00:02:36,872
+Valla ben şu an bu sene hiç tatil yapmadım.
+
+19
+00:02:37,451 --> 00:02:38,492
+Yaz okulu da vardı zaten.
+
+20
+00:02:38,572 --> 00:02:40,132
+Eylül 15'e kadar yaz okulu vardı.
+
+21
+00:02:40,252 --> 00:02:41,271
+Sonra okul açıldı zaten.
+
+22
+00:02:41,412 --> 00:02:43,032
+Bir arada işte 2-3 hafta varsa oldu.
+
+23
+00:02:46,032 --> 00:02:52,012
+Bilmiyorum siz şimdi herkes farklı bir yerde ne yaptınız ne ettiğiniz ama siz muhtemelen daha iyi tatil yapmışsınızdır.
+
+24
+00:02:52,132 --> 00:02:54,031
+En azından memleketinizde olduğunuzu düşünüyorum.
+
+25
+00:02:54,031 --> 00:02:55,572
+Var mı yurt dışında olan?
+
+26
+00:02:55,671 --> 00:02:58,731
+Is there any people who is abroad Turkey?
+
+27
+00:02:58,731 --> 00:03:09,271
+Bir sonraki.
+
+28
+00:03:03,123 --> 00:03:04,024
+var adı.
+
+29
+00:03:12,116 --> 00:03:14,916
+[öğrenci], I think you are abroad. Where are you now?
+
+30
+00:03:19,828 --> 00:03:22,508
+Yes, where are you? Which country?
+
+31
+00:03:25,948 --> 00:03:29,187
+[kişisel bilgi]
+
+32
+00:03:33,651 --> 00:03:43,371
+Azerbaycan'dan oluyor genellikle, Suriye'den oluyor, Almanya'dan bazen oluyordu ama genellikle Azerbaycan, Türkmenistan, oralarda öğrencilerimiz var.
+
+33
+00:03:44,591 --> 00:03:49,931
+Okay, so if you don't have anything you want to talk, let's start and let's finish.
+
+34
+00:03:49,931 --> 00:04:05,391
+Okay, so first of all I want to ask something. How many people do you know about derivation directly?
+
+35
+00:04:06,451 --> 00:04:13,491
+For example, some people only know the derivation of the polynomial. Do you know the derivation of exponent function, trigonometrik function?
+
+36
+00:04:13,491 --> 00:04:17,812
+Şimdi bir kısmı, şimdi öyle bir şey ki her sene farklı öğrenciler geliyor.
+
+37
+00:04:18,171 --> 00:04:22,771
+Hiç türev görmeyen, görmeyen, hatırlamıyorumuz demiyorum, görmeyen var mı?
+
+38
+00:04:23,552 --> 00:04:28,791
+Sadece polinomun dışında, yani polinoma hepsi biliyor zaten, sen hiç mi görmedin [öğrenci]?
+
+39
+00:04:30,192 --> 00:04:31,491
+GGS'i de geldim.
+
+40
+00:04:32,111 --> 00:04:35,072
+Ya zaten anlatacağız da, hani ben önce bir bileyim, tamam.
+
+41
+00:04:37,851 --> 00:04:39,831
+2019'dan sadece polinom gördüm.
+
+42
+00:04:40,451 --> 00:04:40,692
+Tamam.
+
+43
+00:04:41,531 --> 00:04:42,331
+Okay, so.
+
+44
+00:04:43,491 --> 00:04:51,271
+Here, here I gave the lecture note, but here this lecture note is also extra.
+
+45
+00:04:51,432 --> 00:04:53,672
+I will put on my analysis page after the lesson.
+
+46
+00:04:54,451 --> 00:04:56,211
+This is the general differentiation.
+
+47
+00:04:56,432 --> 00:04:59,031
+Differentiation means derivation.
+
+48
+00:04:59,871 --> 00:05:01,411
+There are some derivation rules.
+
+49
+00:05:01,591 --> 00:05:01,851
+Okay.
+
+50
+00:05:02,672 --> 00:05:06,512
+I want to talk about these rules very shortly.
+
+51
+00:05:06,512 --> 00:05:06,672
+Okay.
+
+52
+00:05:15,187 --> 00:05:16,067
+bir türlü öğrenemedim.
+
+53
+00:05:21,076 --> 00:05:29,355
+açmamışım bir sikri. Okay. This is our general rules about derivation. Okay.
+
+54
+00:05:39,668 --> 00:05:42,367
+So there are some different spatial rules.
+
+55
+00:05:43,528 --> 00:05:50,088
+First of all, if you have a constant, derivation of constant numbers, constant functions are zero.
+
+56
+00:05:50,468 --> 00:05:54,747
+So if you have a constant, the derivation of the constant will be zero.
+
+57
+00:05:56,208 --> 00:06:00,768
+If you have two functions and if you have a plus or minus between these two functions,
+
+58
+00:06:00,927 --> 00:06:06,048
+and if you want to take derivation of these functions, you will take the first function's derivation.
+
+59
+00:06:06,048 --> 00:06:14,427
+If it is plus, it will be plus. If it is minus, it will be minus, plus or minus the second function's derivation.
+
+60
+00:06:14,528 --> 00:06:18,627
+I think you know these two rules.
+
+61
+00:06:19,348 --> 00:06:24,687
+If you have a multiplication with a constant, you can write this constant outside of the derivation.
+
+62
+00:06:25,307 --> 00:06:27,807
+It will be c product du over dx.
+
+63
+00:06:28,187 --> 00:06:30,987
+Mostly we will use these two rules.
+
+64
+00:06:30,987 --> 00:06:38,108
+If you have a product of two functions, and if you want to take derivation of these two functions,
+
+65
+00:06:38,687 --> 00:06:42,708
+it will be the first function's derivation product the second function,
+
+66
+00:06:43,127 --> 00:06:47,848
+plus the first function product the second function's derivation.
+
+67
+00:06:48,648 --> 00:06:51,067
+This is the rule for product.
+
+68
+00:06:51,067 --> 00:06:59,187
+And if you have a division, the u over v, it will be the first function's derivation product the second function,
+
+69
+00:06:59,567 --> 00:07:07,268
+minus the first function product the second function's derivation over square of the denominator.
+
+70
+00:07:07,927 --> 00:07:08,228
+Okay.
+
+71
+00:07:09,268 --> 00:07:12,687
+This is the main rules about derivation, not function.
+
+72
+00:07:12,687 --> 00:07:19,108
+And you see in high school, if you have a power, if you have a polynomial,
+
+73
+00:07:19,788 --> 00:07:26,508
+you will write the power of this term is n, and you will subtract 1 from your power.
+
+74
+00:07:26,648 --> 00:07:28,768
+This is the derivation of the polynomial.
+
+75
+00:07:30,088 --> 00:07:30,427
+Okay.
+
+76
+00:07:30,427 --> 00:07:36,788
+So, if we talk about trigonometric functions derivation.
+
+77
+00:07:37,148 --> 00:07:40,708
+If you have sine function, derivation of sine function is cosine.
+
+78
+00:07:41,328 --> 00:07:50,327
+If you have cosine, derivation will be sine, but only extra you have minus at the beginning of the sine function.
+
+79
+00:07:51,028 --> 00:07:55,908
+If you have a tangent function, the derivation of tangent function,
+
+80
+00:07:56,108 --> 00:07:57,728
+you can easily see that.
+
+81
+00:07:57,848 --> 00:07:59,048
+What is tangent function?
+
+82
+00:07:59,048 --> 00:08:01,128
+It is sine x over cosine x.
+
+83
+00:08:02,388 --> 00:08:02,528
+Okay.
+
+84
+00:08:03,427 --> 00:08:06,367
+And if you want to take derivation of this function,
+
+85
+00:08:07,528 --> 00:08:10,768
+derivation of sine function will be cosine x.
+
+86
+00:08:11,427 --> 00:08:13,807
+Product, the second function is also cosine.
+
+87
+00:08:13,927 --> 00:08:15,367
+It will be cosine squared x.
+
+88
+00:08:15,908 --> 00:08:17,807
+Minus the first function.
+
+89
+00:08:19,008 --> 00:08:22,968
+Product, the second function, this function's derivation is minus sine.
+
+90
+00:08:22,968 --> 00:08:29,567
+It will be plus sine squared x over cosine squared x.
+
+91
+00:08:30,508 --> 00:08:33,708
+And it is 1 over cosine squared x.
+
+92
+00:08:34,847 --> 00:08:37,208
+We know that 1 over cosine is second.
+
+93
+00:08:37,207 --> 00:08:41,687
+So, tangent function's derivation will be second squared.
+
+94
+00:08:41,687 --> 00:08:47,367
+Or you can see also it is equals to also 1 plus tangent squared x.
+
+95
+00:08:48,648 --> 00:08:51,127
+For cotangent function, it is the same.
+
+96
+00:08:51,687 --> 00:08:54,548
+It will be minus cosecant squared x.
+
+97
+00:08:54,548 --> 00:09:00,248
+You can find these derivations at home also by your own.
+
+98
+00:09:01,207 --> 00:09:04,388
+Derivation of seconds is second product tangent.
+
+99
+00:09:04,728 --> 00:09:08,028
+And for cosecant, it will be cosecant product cotangent.
+
+100
+00:09:08,268 --> 00:09:09,187
+But the sine is minus.
+
+101
+00:09:09,628 --> 00:09:13,587
+Especially these derivations and these derivations are important.
+
+102
+00:09:14,488 --> 00:09:15,847
+Sine and cosine are easy.
+
+103
+00:09:15,847 --> 00:09:21,788
+But especially we will see these derivations and integrations in the lessons.
+
+104
+00:09:21,788 --> 00:09:22,327
+Okay?
+
+105
+00:09:25,875 --> 00:09:27,795
+What about exponent function?
+
+106
+00:09:28,055 --> 00:09:31,175
+For exponent function, the derivation will be the same.
+
+107
+00:09:31,475 --> 00:09:36,515
+But if you have 2 here, it will be different if you have 2.
+
+108
+00:09:36,935 --> 00:09:38,555
+What is derivation of the power?
+
+109
+00:09:39,135 --> 00:09:40,015
+It is 2.
+
+110
+00:09:40,675 --> 00:09:43,675
+So you have to write derivation as 1 over 2.
+
+111
+00:09:45,235 --> 00:09:48,115
+So derivation of e to the power 2x will be this.
+
+112
+00:09:48,115 --> 00:09:55,255
+Because when you take derivation, the product 1 over 2 and the power's derivation has to be 1 here.
+
+113
+00:09:55,875 --> 00:10:01,196
+And ln functions derivation is 1 over x.
+
+114
+00:10:02,096 --> 00:10:05,615
+This is general exponent function.
+
+115
+00:10:06,096 --> 00:10:10,035
+If your base is different from a, you will write the same thing.
+
+116
+00:10:10,175 --> 00:10:13,316
+But only you have to add the ln of the base.
+
+117
+00:10:13,495 --> 00:10:16,415
+In the previous example, the base was e.
+
+118
+00:10:16,935 --> 00:10:18,175
+ln e is 1.
+
+119
+00:10:18,635 --> 00:10:20,716
+So it will be e to the power x.
+
+120
+00:10:20,716 --> 00:10:26,755
+But if the base is different from e, then you have to take ln of the base.
+
+121
+00:10:27,855 --> 00:10:31,716
+And logarithm function, we will see these functions later especially.
+
+122
+00:10:32,235 --> 00:10:32,316
+Okay?
+
+123
+00:10:32,696 --> 00:10:35,076
+We will see these functions in detail.
+
+124
+00:10:35,295 --> 00:10:38,495
+But not only we see the derivation of these functions.
+
+125
+00:10:39,035 --> 00:10:45,355
+Logarithm on the base of a, you can write this function as ln x over ln a.
+
+126
+00:10:45,355 --> 00:10:45,956
+Okay?
+
+127
+00:10:47,155 --> 00:10:49,556
+These two written are the same.
+
+128
+00:10:50,456 --> 00:10:54,295
+So I know that ln functions derivation is 1 over x.
+
+129
+00:10:55,155 --> 00:10:56,895
+It will be ln a.
+
+130
+00:10:59,395 --> 00:11:01,155
+Evet, bunu yükleyeceğim arkadaşlar.
+
+131
+00:11:02,135 --> 00:11:03,175
+Bunu yükleyeceğim.
+
+132
+00:11:03,995 --> 00:11:06,456
+Şimdi ben şu an üzerinden biraz böyle geçiyorum.
+
+133
+00:11:06,576 --> 00:11:08,816
+Ben şimdi örnekler üzerinde anlatacağım zaten size.
+
+134
+00:11:09,395 --> 00:11:11,515
+Sadece şu an üzerinde anlatıyorum bazı şeyleri.
+
+135
+00:11:11,515 --> 00:11:12,456
+Okay?
+
+136
+00:11:12,615 --> 00:11:14,995
+For example, let's take some examples.
+
+137
+00:11:15,836 --> 00:11:19,716
+If we have a polynomial like this, let us take derivation of this function.
+
+138
+00:11:20,175 --> 00:11:20,255
+Okay?
+
+139
+00:11:22,155 --> 00:11:23,295
+This is polynomial.
+
+140
+00:11:23,635 --> 00:11:26,056
+So how can we take derivation of the polynomial?
+
+141
+00:11:26,316 --> 00:11:27,375
+You will take the power.
+
+142
+00:11:28,076 --> 00:11:31,795
+For x, I have to subtract 1 from the power.
+
+143
+00:11:31,915 --> 00:11:32,956
+It will be x cubed.
+
+144
+00:11:34,275 --> 00:11:35,576
+Minus 2 is a constant.
+
+145
+00:11:35,755 --> 00:11:36,816
+I can write directly.
+
+146
+00:11:37,375 --> 00:11:39,816
+The power of the polynomial here is 3.
+
+147
+00:11:39,816 --> 00:11:41,015
+I will write 3.
+
+148
+00:11:41,955 --> 00:11:42,455
+x.
+
+149
+00:11:42,716 --> 00:11:45,415
+I have to subtract 1 from this power.
+
+150
+00:11:45,556 --> 00:11:46,395
+It will be square.
+
+151
+00:11:47,216 --> 00:11:47,775
+Plus.
+
+152
+00:11:48,716 --> 00:11:50,415
+The power here is 1.
+
+153
+00:11:50,795 --> 00:11:53,635
+If I subtract 1, it will be x to the power 0.
+
+154
+00:11:53,875 --> 00:11:55,316
+So it will be 1.
+
+155
+00:11:55,735 --> 00:11:58,175
+And derivation of the constant will be 0.
+
+156
+00:11:58,495 --> 00:12:01,216
+This is the derivation of this polynomial.
+
+157
+00:12:03,655 --> 00:12:04,135
+Okay?
+
+158
+00:12:05,275 --> 00:12:05,716
+And.
+
+159
+00:12:10,676 --> 00:12:12,376
+Let us look at this function.
+
+160
+00:12:14,396 --> 00:12:14,716
+Okay.
+
+161
+00:12:15,896 --> 00:12:17,696
+Let me write one thing here.
+
+162
+00:12:18,056 --> 00:12:18,316
+One second.
+
+163
+00:12:19,996 --> 00:12:20,396
+Okay.
+
+164
+00:12:21,496 --> 00:12:28,316
+I gave the formula for only x function, but let me write some properties also.
+
+165
+00:12:28,316 --> 00:12:30,396
+It is related to channel x.
+
+166
+00:12:30,876 --> 00:12:34,276
+If you have a function, it depends on x.
+
+167
+00:12:34,756 --> 00:12:34,896
+Okay.
+
+168
+00:12:34,896 --> 00:12:45,596
+And if you want to take derivation of this function, if the u function is x, it is polynomial,
+
+169
+00:12:45,855 --> 00:12:47,576
+but it can be different from x.
+
+170
+00:12:47,636 --> 00:12:51,016
+For example, it can be x squared plus 1 or anything else.
+
+171
+00:12:51,436 --> 00:12:53,576
+How can we take derivation of this function?
+
+172
+00:12:54,196 --> 00:12:55,876
+So they are very similar.
+
+173
+00:12:56,336 --> 00:12:58,316
+I will take the power of n here.
+
+174
+00:12:58,316 --> 00:13:06,115
+I will subtract 1 from the power, but extra I have to take derivation of the u function.
+
+175
+00:13:06,736 --> 00:13:12,836
+If your function is the polynomial x, for example, x to the power cube, what is the derivation
+
+176
+00:13:12,836 --> 00:13:13,696
+of this function?
+
+177
+00:13:13,876 --> 00:13:17,136
+I said that it is 3x squared.
+
+178
+00:13:17,736 --> 00:13:24,276
+Actually, you have one more step, the derivation of x, but the derivation of x will be 1, so
+
+179
+00:13:24,276 --> 00:13:25,376
+you don't need to write.
+
+180
+00:13:25,956 --> 00:13:32,416
+But if you write a general case, if you have a function of x, and if you want to take derivation
+
+181
+00:13:32,416 --> 00:13:37,876
+of u to the power n, you will make the same thing, but extra you have to write derivation
+
+182
+00:13:37,876 --> 00:13:38,596
+of u prime.
+
+183
+00:13:39,076 --> 00:13:42,516
+Burada da aynısını yapıyoruz ama x'in türevi 1 olduğu için hiçbir zaman eklemiyoruz.
+
+184
+00:13:42,576 --> 00:13:43,536
+Zaten 1 oluyor orada.
+
+185
+00:13:44,076 --> 00:13:48,836
+Ama elinizdeki fonksiyon, polinom ama x dışında bir polinom olsa ve bunun sizin
+
+186
+00:13:48,836 --> 00:13:51,956
+kuvveti varsa, bunun türevini almak istiyorsanız böyle alıyorsunuz.
+
+187
+00:13:51,956 --> 00:13:57,176
+For example, sinus sin u.
+
+188
+00:13:57,876 --> 00:13:59,576
+What is derivation of sin u?
+
+189
+00:13:59,896 --> 00:14:04,536
+In the previous part, I said that derivation of sin function is cos sin u.
+
+190
+00:14:05,636 --> 00:14:12,316
+But inside of the sin function, you have u, extra you have to take derivation inside.
+
+191
+00:14:13,316 --> 00:14:15,176
+What about cosine function?
+
+192
+00:14:15,176 --> 00:14:23,016
+Normally, cosine function's derivation is minus sin u.
+
+193
+00:14:23,676 --> 00:14:28,796
+But you have a different function, u function, it will be also u prime.
+
+194
+00:14:29,416 --> 00:14:31,855
+You will make the same thing for all of them.
+
+195
+00:14:32,396 --> 00:14:38,476
+If you look at here, okay, you can make the same thing for all these questions.
+
+196
+00:14:38,476 --> 00:14:40,256
+Let me write, for example.
+
+197
+00:14:42,516 --> 00:14:50,676
+If you have, for example, second u, okay, it will be second u, tangent u.
+
+198
+00:14:50,816 --> 00:14:51,516
+They are the same.
+
+199
+00:14:51,936 --> 00:14:55,176
+But extra, you will take derivation inside.
+
+200
+00:14:55,636 --> 00:15:00,436
+If you have tangent u, derivation of tangent u is second square u.
+
+201
+00:15:00,436 --> 00:15:04,635
+But extra, I have u prime, okay?
+
+202
+00:15:05,436 --> 00:15:07,436
+Actually, this comes from chain rule.
+
+203
+00:15:07,516 --> 00:15:08,615
+I will explain later.
+
+204
+00:15:09,516 --> 00:15:11,736
+So let us look at these derivations.
+
+205
+00:15:13,016 --> 00:15:14,536
+I have ln function.
+
+206
+00:15:14,776 --> 00:15:17,436
+The derivation of ln function, let us write here.
+
+207
+00:15:17,436 --> 00:15:18,436
+Okay.
+
+208
+00:15:18,436 --> 00:15:34,396
+If you have a general ln function, the derivation of ln function is derivation inside over inside.
+
+209
+00:15:35,156 --> 00:15:35,475
+Okay.
+
+210
+00:15:35,996 --> 00:15:45,496
+So if you have logarithm on the base of a, if this function is u, you can think this function
+
+211
+00:15:45,496 --> 00:15:47,456
+is ln u over ln a.
+
+212
+00:15:49,556 --> 00:15:49,836
+Okay.
+
+213
+00:15:50,115 --> 00:15:58,936
+So if you want to take logarithm to the base, a's derivation will be derivation inside over inside.
+
+214
+00:15:59,615 --> 00:16:01,296
+And also ln a.
+
+215
+00:16:03,635 --> 00:16:04,056
+Okay.
+
+216
+00:16:04,135 --> 00:16:05,736
+Let us look at the second example.
+
+217
+00:16:06,611 --> 00:16:11,471
+If I want to take derivation, I have ln function. What is derivation of ln function?
+
+218
+00:16:12,231 --> 00:16:19,731
+Here you will write inside function, it is 2x. And here you will write derivation of this function.
+
+219
+00:16:19,731 --> 00:16:32,711
+Derivation of 2x is 2. This is ln function, ln 2x derivation. And here plus, I have cosine function.
+
+220
+00:16:32,711 --> 00:16:38,531
+I know that derivation of cosine function is minus sine 4x.
+
+221
+00:16:38,531 --> 00:16:38,951
+So,
+
+222
+00:16:41,971 --> 00:16:51,271
+minus sin 4x. But inside of the function is 4x. I need to take also derivation inside. It is 4.
+
+223
+00:16:53,432 --> 00:16:58,251
+Minus tangent function derivation. We say that it is second square x.
+
+224
+00:16:59,692 --> 00:17:09,692
+No, it is not logarithm. It is ln function. ln 2x. The base here is e. If I write like this,
+
+225
+00:17:09,692 --> 00:17:18,892
+okay, it is in that case you have to write. But here the base for ln function, the base is e.
+
+226
+00:17:19,451 --> 00:17:28,132
+Because I said that exponent function and ln function are inverse to each other. ln function's base is e. Okay.
+
+227
+00:17:30,831 --> 00:17:33,071
+Second square for x, yes.
+
+228
+00:17:33,071 --> 00:17:33,132
+Yes.
+
+229
+00:17:37,140 --> 00:17:38,580
+This is second.
+
+230
+00:17:40,360 --> 00:17:41,400
+Second, bir dakika.
+
+231
+00:17:42,440 --> 00:17:43,800
+Yok, dur kafam karıştı.
+
+232
+00:17:43,940 --> 00:17:44,980
+Second square x bu.
+
+233
+00:17:46,320 --> 00:17:47,980
+Dört değil. Buradaki x.
+
+234
+00:17:48,120 --> 00:17:48,740
+Şunun alıyorum.
+
+235
+00:17:50,460 --> 00:17:51,780
+Plus, now here
+
+236
+00:17:51,780 --> 00:17:53,800
+I have a product. What is the
+
+237
+00:17:53,800 --> 00:17:54,960
+derivation of the product?
+
+238
+00:17:56,960 --> 00:17:57,840
+It was
+
+239
+00:17:57,840 --> 00:17:59,500
+the first function's derivation,
+
+240
+00:17:59,720 --> 00:18:00,720
+the second function.
+
+241
+00:18:01,300 --> 00:18:03,880
+The first product, the second function's derivation.
+
+242
+00:18:04,320 --> 00:18:05,700
+So the derivation of
+
+243
+00:18:05,700 --> 00:18:06,620
+x is 1.
+
+244
+00:18:07,800 --> 00:18:09,700
+Product, the second function.
+
+245
+00:18:10,360 --> 00:18:12,180
+Plus, the first function,
+
+246
+00:18:12,340 --> 00:18:13,820
+product, the second function's
+
+247
+00:18:13,820 --> 00:18:14,600
+is the same.
+
+248
+00:18:15,480 --> 00:18:18,300
+This is your derivation for this question.
+
+249
+00:18:20,200 --> 00:18:20,480
+Okay.
+
+250
+00:18:21,180 --> 00:18:23,540
+So let us look at the third example.
+
+251
+00:18:25,320 --> 00:18:27,460
+So we have two different function
+
+252
+00:18:27,460 --> 00:18:28,500
+and there is a product.
+
+253
+00:18:29,000 --> 00:18:31,780
+Derivation of sine function is cosine x.
+
+254
+00:18:34,040 --> 00:18:35,720
+Product, the second function.
+
+255
+00:18:35,720 --> 00:18:37,340
+plus
+
+256
+00:18:37,340 --> 00:18:38,940
+the first function.
+
+257
+00:18:40,340 --> 00:18:42,180
+Product, the second function's
+
+258
+00:18:42,180 --> 00:18:43,240
+ln's derivation.
+
+259
+00:18:43,360 --> 00:18:44,720
+Here I will write inside.
+
+260
+00:18:44,980 --> 00:18:47,220
+Inside, the inside function is x.
+
+261
+00:18:47,300 --> 00:18:48,900
+Here, in your numerator,
+
+262
+00:18:49,060 --> 00:18:51,080
+you will take derivation of x is 1.
+
+263
+00:18:51,080 --> 00:18:53,600
+and if you have a constant,
+
+264
+00:18:53,800 --> 00:18:55,720
+the derivation of the constant field is 0.
+
+265
+00:18:55,720 --> 00:18:56,540
+And if you have a constant,
+
+266
+00:18:56,540 --> 00:18:57,840
+the derivation of the constant field is 0.
+
+267
+00:18:59,380 --> 00:19:02,200
+Okay? Until here, do you have any questions?
+
+268
+00:19:07,892 --> 00:19:08,372
+Tamam.
+
+269
+00:19:12,852 --> 00:19:13,211
+olsun.
+
+270
+00:19:36,468 --> 00:19:39,788
+So let us take derivation of this function. What is that?
+
+271
+00:19:41,408 --> 00:19:47,648
+Normally derivation of the exponent function, I said that it is a to the power x.
+
+272
+00:19:48,288 --> 00:19:54,168
+But if you have a general exponent function, you will write the same function.
+
+273
+00:19:55,148 --> 00:19:57,807
+But extra, you will take derivation of the power.
+
+274
+00:19:58,688 --> 00:20:01,688
+Okay, so let us write in the question.
+
+275
+00:20:01,688 --> 00:20:06,768
+First of all, I will take the exponent function directly.
+
+276
+00:20:07,148 --> 00:20:09,807
+After that, I have to take derivation of the power.
+
+277
+00:20:10,388 --> 00:20:12,368
+Derivation of x squared is 2x.
+
+278
+00:20:14,148 --> 00:20:16,708
+Plus cotangian function.
+
+279
+00:20:16,888 --> 00:20:19,948
+Let us see what is the derivation of the cotangian function.
+
+280
+00:20:21,608 --> 00:20:25,048
+Cotangian function is minus cosecant square x.
+
+281
+00:20:25,048 --> 00:20:30,388
+But if it is u, it will be cosecant square u and also u prime.
+
+282
+00:20:31,688 --> 00:21:01,668
+Okay, so it will be minus cosecant square x.
+
+283
+00:20:45,140 --> 00:20:46,100
+Fosecond.
+
+284
+00:20:48,100 --> 00:20:50,120
+Square 3x square.
+
+285
+00:20:51,140 --> 00:20:52,740
+And extra.
+
+286
+00:20:54,259 --> 00:20:56,540
+I will write derivation inside.
+
+287
+00:20:56,920 --> 00:20:59,120
+The inside function is 3x square.
+
+288
+00:20:59,120 --> 00:21:03,360
+So it will be derivation of 3x square is 6x.
+
+289
+00:21:04,180 --> 00:21:10,120
+And we have a polynomial for product power is 3x square.
+
+290
+00:21:11,460 --> 00:21:12,820
+This is your derivation.
+
+291
+00:21:14,259 --> 00:21:14,560
+Okay.
+
+292
+00:21:15,140 --> 00:21:18,240
+Until here, do you have any questions?
+
+293
+00:21:18,880 --> 00:21:21,200
+Ben bunu şey olarak vereyim size.
+
+294
+00:21:21,340 --> 00:21:22,180
+Genel olarak vereyim.
+
+295
+00:21:22,280 --> 00:21:23,140
+Daha rahat olur size.
+
+296
+00:21:23,300 --> 00:21:25,520
+Normalde x olarak verdi formüllerde.
+
+297
+00:21:26,480 --> 00:21:28,660
+For example, let us look at this example.
+
+298
+00:21:30,100 --> 00:21:31,600
+I have exponent function.
+
+299
+00:21:32,280 --> 00:21:37,220
+In the derivation of the exponent function, I will take the exponent function directly.
+
+300
+00:21:37,840 --> 00:21:40,740
+After that, I have to take derivation of the power.
+
+301
+00:21:40,880 --> 00:21:41,700
+It is 2x.
+
+302
+00:21:43,440 --> 00:21:44,040
+Plus.
+
+303
+00:21:44,040 --> 00:21:45,740
+I have two functions.
+
+304
+00:21:45,860 --> 00:21:47,000
+There is a product here.
+
+305
+00:21:47,000 --> 00:21:48,720
+The product's derivation.
+
+306
+00:21:48,820 --> 00:21:50,900
+Derivation of the first function is 1.
+
+307
+00:21:51,960 --> 00:21:52,360
+Product.
+
+308
+00:21:52,560 --> 00:21:53,580
+The second function.
+
+309
+00:21:53,580 --> 00:21:57,460
+plus the first function.
+
+310
+00:21:57,460 --> 00:21:59,800
+The second function is derivation.
+
+311
+00:21:59,800 --> 00:22:02,820
+Derivation of sine function is cosine x.
+
+312
+00:22:04,460 --> 00:22:05,100
+Plus.
+
+313
+00:22:05,860 --> 00:22:06,740
+Lm function.
+
+314
+00:22:07,780 --> 00:22:10,500
+You will write your inside function is here.
+
+315
+00:22:10,680 --> 00:22:14,780
+And in your numerator, you will take derivation of x is 1.
+
+316
+00:22:14,780 --> 00:22:15,519
+Okay.
+
+317
+00:22:15,519 --> 00:22:22,920
+Let us look at these questions also.
+
+318
+00:22:22,920 --> 00:22:23,320
+Okay.
+
+319
+00:22:23,320 --> 00:22:27,560
+In E, I have two functions.
+
+320
+00:22:27,560 --> 00:22:28,940
+2 is a constant.
+
+321
+00:22:28,940 --> 00:22:30,940
+You can write directly outside.
+
+322
+00:22:30,940 --> 00:22:31,300
+Okay.
+
+323
+00:22:32,300 --> 00:22:33,660
+We have two functions.
+
+324
+00:22:33,800 --> 00:22:35,600
+Derivation of x will be 1.
+
+325
+00:22:36,080 --> 00:22:36,480
+Product.
+
+326
+00:22:36,900 --> 00:22:38,040
+The second function.
+
+327
+00:22:39,340 --> 00:22:40,060
+Plus.
+
+328
+00:22:40,260 --> 00:22:41,140
+The first function.
+
+329
+00:22:41,300 --> 00:22:41,580
+Product.
+
+330
+00:22:41,580 --> 00:22:45,620
+The derivation of tangent function is second square x.
+
+331
+00:22:48,420 --> 00:22:50,080
+This is the first part.
+
+332
+00:22:50,960 --> 00:22:51,400
+Plus.
+
+333
+00:22:51,400 --> 00:22:54,519
+I have cosine function.
+
+334
+00:22:54,600 --> 00:22:56,800
+But inside, I have 1 plus x.
+
+335
+00:22:56,880 --> 00:23:01,360
+So, derivation of the cosine function was minus sine function.
+
+336
+00:23:03,019 --> 00:23:03,240
+Okay.
+
+337
+00:23:04,560 --> 00:23:07,320
+But extra, I have to take derivation inside.
+
+338
+00:23:07,840 --> 00:23:10,019
+Inside's derivation is 1.
+
+339
+00:23:11,140 --> 00:23:11,860
+Plus.
+
+340
+00:23:12,420 --> 00:23:15,660
+Hocam, 2 sadece x'in başında değil mi?
+
+341
+00:23:17,340 --> 00:23:18,019
+Hayır.
+
+342
+00:23:18,019 --> 00:23:22,040
+Yani şöyle 2x olarak da düşünebilirsiniz.
+
+343
+00:23:22,560 --> 00:23:26,080
+Ya da 2'yi tamamen of 2 çarpımın dışında da düşünebilirsiniz.
+
+344
+00:23:27,420 --> 00:23:30,519
+2x'in yanında düşünürseniz her ikisinde de olacak sonuçta.
+
+345
+00:23:31,900 --> 00:23:33,920
+Yani şöyle de düşünebilirsiniz.
+
+346
+00:23:38,420 --> 00:23:40,420
+Şöyle hortifinir seniz.
+
+347
+00:23:44,147 --> 00:23:54,467
+derivation of the first function is 2 tangent x plus the first function product, the second function's derivation is 2nd square x.
+
+348
+00:23:54,987 --> 00:24:03,307
+So you can write 2 outside, okay? They are the same. Or you can think 2 is a constant, okay? You can write the constant outside.
+
+349
+00:24:03,627 --> 00:24:11,327
+Now, lastly, I have 2, the exponent function, but the base is different from e. One second.
+
+350
+00:24:11,327 --> 00:24:19,487
+So you will take the same function, only I have to add the ln of the base. It is ln 3.
+
+351
+00:24:24,596 --> 00:24:24,955
+Okay.
+
+352
+00:24:27,895 --> 00:24:30,155
+So let us look at f.
+
+353
+00:24:31,056 --> 00:24:33,256
+We have two different functions.
+
+354
+00:24:33,395 --> 00:24:34,415
+There is a product here.
+
+355
+00:24:34,415 --> 00:24:40,476
+The first function's derivation is 3 product 3x².
+
+356
+00:24:41,115 --> 00:24:43,675
+Product the second function.
+
+357
+00:24:44,556 --> 00:24:47,115
+Plus the first function.
+
+358
+00:24:50,932 --> 00:25:20,912
+product, the second function, it is exponent function, derivation of the exponent function, you will write the exponent function directly. After that, you will take derivation of the power, it is 3. This is the result, answer of the question. Okay? Okay, so let us look at g. We have a division. In the division, it is the first function's derivation.
+
+359
+00:25:20,932 --> 00:25:43,832
+product, the second function, minus u product v' prime over v square. This is the derivation of this division. Our first function is this. Derivation of this polynomial is 6x square plus 3, product, the second function, minus the first function.
+
+360
+00:25:49,395 --> 00:25:58,915
+product, the second function's derivation is the same over the same function square is e to the power 2x.
+
+361
+00:26:01,316 --> 00:26:04,915
+Okay? And...
+
+362
+00:26:10,675 --> 00:26:22,515
+Okay, let me look at, for example, let us look at g. What is this? What is the derivation of this exponent function?
+
+363
+00:26:26,579 --> 00:26:38,960
+It is the same function, but the base is different. You have to write ln of the base ln 4. Plus, what about this derivation?
+
+364
+00:26:42,451 --> 00:26:48,251
+If you have a L'am function, you will write a division. In your denominator, you will write tangent x.
+
+365
+00:26:48,491 --> 00:27:02,092
+What is derivation of tangent x? It is second square x. And derivation of minus 4 is 0. Derivation of x is 1.
+
+366
+00:27:06,228 --> 00:27:12,628
+ok? Now, let us look at E. Ok? I. It is this.
+
+367
+00:27:17,299 --> 00:27:18,680
+Your function is ln.
+
+368
+00:27:19,799 --> 00:27:23,220
+The derivation of ln function, you will have division, okay?
+
+369
+00:27:24,180 --> 00:27:31,799
+In your denominator, you will write inside of the ln function, it is cosine x minus 1.
+
+370
+00:27:33,139 --> 00:27:40,259
+And in your numerator, you will take derivation of cosine function.
+
+371
+00:27:40,259 --> 00:27:46,339
+Derivation of cosine function is minus sine x minus 1.
+
+372
+00:27:47,299 --> 00:27:50,460
+And also derivation inside is 1.
+
+373
+00:27:51,720 --> 00:27:55,539
+This is derivation of this ln function.
+
+374
+00:27:59,155 --> 00:27:59,655
+ok?
+
+375
+00:28:05,236 --> 00:28:08,396
+What about this one? M. Let us look at M.
+
+376
+00:28:11,496 --> 00:28:17,496
+I said that if you have a function and if you have a power of this function, what was it?
+
+377
+00:28:17,576 --> 00:28:23,796
+It was n, u n minus 1, and also extra derivation of the u function.
+
+378
+00:28:23,796 --> 00:28:36,516
+Okay, so here is your u function is sin x and also here it is cos x.
+
+379
+00:28:36,936 --> 00:28:43,716
+Okay, so if I want to take this derivation, they said that take the power, r power is 4.
+
+380
+00:28:43,716 --> 00:28:48,576
+subtract 1 from your power, subtract 1 from your power, sin cube x.
+
+381
+00:28:49,276 --> 00:28:51,936
+And also you will take derivation of the u function.
+
+382
+00:28:52,056 --> 00:28:55,016
+u function is the function without the power.
+
+383
+00:28:55,516 --> 00:28:57,876
+Sin function's derivation is cos x.
+
+384
+00:28:59,636 --> 00:29:00,256
+Plus,
+
+385
+00:29:03,136 --> 00:29:05,516
+you will take the power 4.
+
+386
+00:29:06,236 --> 00:29:09,016
+It will be cos cube x.
+
+387
+00:29:09,656 --> 00:29:12,836
+And you will take derivation of cos function is minus.
+
+388
+00:29:13,716 --> 00:29:15,976
+sin x.
+
+389
+00:29:15,976 --> 00:29:18,316
+Okay?
+
+390
+00:29:22,548 --> 00:29:24,107
+Do you have any question here?
+
+391
+00:29:27,796 --> 00:29:30,355
+Okay, in high school, did you see LN function?
+
+392
+00:29:32,696 --> 00:29:35,415
+There are some properties about LN function.
+
+393
+00:29:35,536 --> 00:29:36,056
+Did you see?
+
+394
+00:29:38,375 --> 00:29:43,736
+There are three main properties of LN function.
+
+395
+00:29:43,895 --> 00:29:47,236
+The first one, if you have LN A plus LN B,
+
+396
+00:29:48,456 --> 00:29:52,355
+you can write these two LN function in one base LN.
+
+397
+00:29:52,355 --> 00:29:54,855
+It will be A product B.
+
+398
+00:29:57,796 --> 00:30:01,956
+If you have LN A minus LN B,
+
+399
+00:30:03,395 --> 00:30:06,176
+it means that LN A over B.
+
+400
+00:30:07,076 --> 00:30:10,176
+We will see these functions later again.
+
+401
+00:30:10,476 --> 00:30:14,976
+Okay, but I want to write three important properties of LN function.
+
+402
+00:30:15,196 --> 00:30:18,236
+If you have LN A to the base B,
+
+403
+00:30:18,716 --> 00:30:22,336
+you can write the power of B outside of the LN function.
+
+404
+00:30:22,336 --> 00:30:24,155
+It is B LN A.
+
+405
+00:30:25,956 --> 00:30:27,536
+Okay, for example,
+
+406
+00:30:27,796 --> 00:30:31,196
+if you have LN 2 plus LN 3,
+
+407
+00:30:31,796 --> 00:30:34,416
+means that it is actually LN 6.
+
+408
+00:30:36,556 --> 00:30:40,976
+Or if you have LN 4 minus LN 2,
+
+409
+00:30:41,976 --> 00:30:44,976
+it means that LN 4 over 2.
+
+410
+00:30:46,036 --> 00:30:47,316
+Okay, it is LN 2.
+
+411
+00:30:47,316 --> 00:30:51,316
+or if you have LN 3.
+
+412
+00:30:51,316 --> 00:33:39,736
+LN 3.
+
+413
+00:33:25,364 --> 00:33:31,423
+So, what we made here, first of all, I think the square root function is the power of 1 over 2.
+
+414
+00:33:32,004 --> 00:33:36,264
+The power of the function inside of the L'nf function, we can write outside.
+
+415
+00:33:36,584 --> 00:33:39,663
+So, I write 1 over 2 outside here.
+
+416
+00:33:42,403 --> 00:33:43,463
+This is good.
+
+417
+00:33:50,003 --> 00:33:51,423
+kalemi bozmaya başladı.
+
+418
+00:33:52,884 --> 00:33:54,563
+noktayı göremeyorum şu anda.
+
+419
+00:34:00,692 --> 00:34:02,291
+o kadar küçük ki gözükmüyor.
+
+420
+00:34:02,291 --> 00:34:05,491
+So, I can write the power of 1 over 2 outside.
+
+421
+00:34:05,491 --> 00:34:11,692
+Now, I have one ln function. You can take derivation from here, but it will be difficult.
+
+422
+00:34:11,692 --> 00:34:15,891
+So, you can rewrite this ln function into two parts.
+
+423
+00:34:15,891 --> 00:34:22,492
+The first one in your numerator will be ln 3x plus 2 here.
+
+424
+00:34:25,972 --> 00:34:33,172
+And you have a division here. You have a division. So in division means the sine will be minus.
+
+425
+00:34:34,952 --> 00:34:39,792
+1 over 2 comes from the power and the other function will be ln x minus 1.
+
+426
+00:34:40,412 --> 00:34:42,852
+Now I can take derivation here.
+
+427
+00:34:47,539 --> 00:34:49,320
+our derivation will be
+
+428
+00:34:49,320 --> 00:34:50,880
+1 over 2
+
+429
+00:34:50,880 --> 00:34:53,559
+the first ln function
+
+430
+00:34:53,559 --> 00:34:55,500
+is 3x plus 2
+
+431
+00:34:55,500 --> 00:34:57,900
+and in your numerator
+
+432
+00:34:57,900 --> 00:35:00,320
+you will take derivation of 3x plus 2
+
+433
+00:35:00,320 --> 00:35:00,900
+it is 3
+
+434
+00:35:00,900 --> 00:35:02,940
+minus 1 over 2
+
+435
+00:35:02,940 --> 00:35:06,599
+in your denominator
+
+436
+00:35:06,599 --> 00:35:07,900
+you have x minus 1
+
+437
+00:35:07,900 --> 00:35:10,119
+here you will take derivation of the
+
+438
+00:35:10,119 --> 00:35:12,239
+denominator it is 1
+
+439
+00:35:12,239 --> 00:35:14,599
+so our derivation will be this
+
+440
+00:35:14,599 --> 00:35:19,679
+okay
+
+441
+00:35:24,244 --> 00:35:44,644
+Let us look at m. What is y'i? I have exponent function, but the base is tan. If you have a to the power x, a to the power u, sorry, derivation of this one will be a to the power u, product derivation of the power.
+
+442
+00:35:44,644 --> 00:35:49,224
+So, I can write that. It is firstly one.
+
+443
+00:35:53,139 --> 00:36:13,119
+4, L'n, x kare artı 1. Bu size biraz zor olabilir. Daha önce görmüş olanlar için daha kolay bir soru. Ama şimdi yeni gelenler biraz daha farklı geliyor. O yüzden yapamasınız da sorun değil. Haftaya olan da daha iyi anlarsınız.
+
+444
+00:36:14,039 --> 00:36:21,539
+And now I have to take derivation of 4, L'n, kare artı x kare artı 1.
+
+445
+00:36:23,139 --> 00:36:47,259
+Okay. What is this? 4. I have a L'n function. Okay. But inside of the L'n function, I have square root 1, square root. So I can write 1 over 2 outside. It is L'n x q plus 1. Okay.
+
+446
+00:36:47,259 --> 00:37:03,259
+Actually, you can write this function as 4. Okay. This is 2.
+
+447
+00:37:03,259 --> 00:37:05,099
+Okay. This is 2.
+
+448
+00:37:05,099 --> 00:37:17,099
+Okay.
+
+449
+00:37:07,284 --> 00:37:20,704
+right here, 2. Ln function, in your denominator, you will have x cube plus 1. And here, I will take derivation of x cube plus 1. It is 3x squared.
+
+450
+00:37:21,764 --> 00:37:33,604
+But don't look at for now. If you can't understand, I will make next thing also, okay? Yani bunu biraz zor şu an için size ama hani ben buraya örnek olarak da değişik olsun diye ekledim.
+
+451
+00:37:33,604 --> 00:37:36,244
+Bunu haftaya yine bakarız olmazsa.
+
+452
+00:37:36,244 --> 00:37:39,443
+Okey.
+
+453
+00:37:49,460 --> 00:37:57,940
+In my lecture notes, which I gave you, there are the rules I gave you in detail.
+
+454
+00:37:58,300 --> 00:38:01,860
+Okay, you can see here, here.
+
+455
+00:38:03,199 --> 00:38:06,500
+Okay, sine function, cosine.
+
+456
+00:38:07,159 --> 00:38:09,159
+Now, I want to talk about chain rule.
+
+457
+00:38:09,300 --> 00:38:13,079
+Actually, all these derivations come from the chain rule.
+
+458
+00:38:13,559 --> 00:38:14,599
+What is chain rule?
+
+459
+00:38:14,599 --> 00:38:20,579
+If you have a function, f u is differentiable, I can take derivation at the point.
+
+460
+00:38:21,500 --> 00:38:27,840
+If u is a function of x, and if this function is also differentiable,
+
+461
+00:38:27,840 --> 00:38:37,720
+then derivation of this composite function will be derivation inside and the function's derivation,
+
+462
+00:38:37,840 --> 00:38:40,460
+but I will write gx in the function.
+
+463
+00:38:40,960 --> 00:38:42,400
+Let me write here.
+
+464
+00:38:42,400 --> 00:38:43,220
+Okay.
+
+465
+00:38:44,139 --> 00:38:45,699
+Actually, we made this one.
+
+466
+00:38:46,940 --> 00:38:49,460
+For example, look at here.
+
+467
+00:38:49,460 --> 00:38:56,579
+Actually, your function is, okay, your f u function is tangent u.
+
+468
+00:38:56,579 --> 00:38:57,619
+Okay.
+
+469
+00:38:59,119 --> 00:39:03,099
+And inside of the function is u function.
+
+470
+00:39:03,099 --> 00:39:07,720
+U function is, it is gx also.
+
+471
+00:39:07,720 --> 00:39:37,699
+It is gx is gx.
+
+472
+00:39:15,347 --> 00:39:18,987
+5 minus sin 2t.
+
+473
+00:39:19,947 --> 00:39:24,867
+If you want to take derivation of this composite function,
+
+474
+00:39:24,867 --> 00:39:25,748
+okay,
+
+475
+00:39:32,724 --> 00:39:39,784
+It will be f' gx, product g' x.
+
+476
+00:39:41,664 --> 00:39:53,124
+What is this? Let us take derivation of g function. Derivation of g function is minus 2 cosine 2t.
+
+477
+00:39:54,704 --> 00:39:59,844
+And after that, I have to take derivation of this function. It is second square.
+
+478
+00:39:59,844 --> 00:40:08,824
+Normally it is u, but they said that cancel u and write u inside of the function.
+
+479
+00:40:08,824 --> 00:40:12,584
+5 minus sine 2x.
+
+480
+00:40:15,987 --> 00:40:29,467
+o verdiğim formül alması tamamen buradan. İltice fonksiyonlar varsa, içinin türevi, çarpı fonksiyonun kendisinin türevi ama kendisinin türevini aldıktan sonra içine x fonksiyonunu yazıyorsunuz.
+
+481
+00:40:30,587 --> 00:40:44,347
+For example, here. Find the slope of the tangent line. Let us find the tangent line. What is our tangent line? It is y minus y zero.
+
+482
+00:40:45,987 --> 00:40:59,447
+slope, tangent slope, x minus x zero. So in our question, they give x zero is pi over three. Okay. It is x zero.
+
+483
+00:41:04,692 --> 00:41:07,112
+y0 is
+
+484
+00:41:10,771 --> 00:41:15,231
+sin 5 pi over 3
+
+485
+00:41:15,231 --> 00:41:21,351
+sin 60
+
+486
+00:41:21,351 --> 00:41:24,931
+kosinüs
+
+487
+00:41:24,931 --> 00:41:26,991
+kosinüs 60 kök 3 bölü 2
+
+488
+00:41:30,931 --> 00:41:55,091
+ama bunun beşinci kuvveti olacak. 3, 9 köküç, it will be 9, square root 3 over 32. Okay. What about the slope? The slope will be derivation. So derivation of y function will be 5.
+
+489
+00:41:55,091 --> 00:42:03,371
+I will subtract 1 from the power, it will be sine 4x. And also I have to take derivation of the
+
+490
+00:42:03,371 --> 00:42:14,671
+sine function will be cosine x. And when I write the point in the derivation, it will be slope at this
+
+491
+00:42:14,671 --> 00:42:28,991
+point and it is 45 over 32. So I will write here is 45 over 32. This is your tangent line. In the question
+
+492
+00:42:28,991 --> 00:42:33,231
+only they ask the slope, but I write the tangent line here. Okay.
+
+493
+00:42:39,764 --> 00:42:40,483
+bu.
+
+494
+00:42:52,500 --> 00:42:56,519
+Arkadaşlar, buraya kadar soru var mı? Anlaşıldı mı biraz?
+
+495
+00:42:57,300 --> 00:42:59,000
+Until here, do you have any question?
+
+496
+00:43:02,000 --> 00:43:03,639
+Hangisini? Soruyor mu?
+
+497
+00:43:06,300 --> 00:43:06,980
+Okay.
+
+498
+00:43:09,619 --> 00:43:12,500
+Okay, in the question, they ask that...
+
+499
+00:43:23,891 --> 00:43:26,652
+they ask that your function is
+
+500
+00:43:32,628 --> 00:43:35,668
+5x
+
+501
+00:43:35,668 --> 00:43:38,288
+and they are asking what is slope
+
+502
+00:43:38,288 --> 00:43:40,048
+and what is tangent line
+
+503
+00:43:40,048 --> 00:43:42,347
+at the point is pi over 3
+
+504
+00:43:42,347 --> 00:43:46,568
+if I want to find the tangent line
+
+505
+00:43:46,568 --> 00:43:48,367
+it is y minus y zero
+
+506
+00:43:48,367 --> 00:43:51,948
+mt at the point x zero
+
+507
+00:43:51,948 --> 00:43:53,788
+x minus x zero
+
+508
+00:43:53,788 --> 00:43:56,768
+this is the tangent line
+
+509
+00:43:56,768 --> 00:44:00,248
+in our question
+
+510
+00:44:00,248 --> 00:44:01,928
+the point where they give is
+
+511
+00:44:01,928 --> 00:44:03,008
+your x zero point
+
+512
+00:44:03,008 --> 00:44:07,608
+this is pi over 3
+
+513
+00:44:07,608 --> 00:44:10,228
+if you want to find y zero
+
+514
+00:44:10,228 --> 00:44:11,688
+you have to write pi over 3
+
+515
+00:44:11,688 --> 00:44:12,568
+in the function
+
+516
+00:44:12,568 --> 00:44:16,367
+it will be square root 3
+
+517
+00:44:16,367 --> 00:44:17,688
+over 2
+
+518
+00:44:17,688 --> 00:44:19,668
+to the power 5
+
+519
+00:44:19,668 --> 00:44:22,968
+and what about slope
+
+520
+00:44:22,968 --> 00:44:27,428
+slope is derivation of y prime
+
+521
+00:44:27,428 --> 00:44:29,648
+so if you have a function
+
+522
+00:44:29,648 --> 00:44:30,548
+as the power
+
+523
+00:44:30,548 --> 00:44:33,088
+if you have u to the power n
+
+524
+00:44:33,088 --> 00:44:35,347
+derivation of this function will be
+
+525
+00:44:35,347 --> 00:44:35,888
+n
+
+526
+00:44:35,888 --> 00:44:38,248
+u n minus 1
+
+527
+00:44:38,248 --> 00:44:39,608
+and derivation inside
+
+528
+00:44:39,608 --> 00:44:43,188
+so here derivation will be 5
+
+529
+00:44:43,188 --> 00:44:44,688
+sine
+
+530
+00:44:44,688 --> 00:44:46,807
+for x
+
+531
+00:44:46,807 --> 00:44:50,488
+and also I have to take derivation of the sine function
+
+532
+00:44:50,488 --> 00:44:51,068
+it is
+
+533
+00:44:51,068 --> 00:44:52,428
+cosine x
+
+534
+00:44:52,428 --> 00:44:55,208
+this is slope at any point
+
+535
+00:44:55,208 --> 00:44:56,228
+but they are asking
+
+536
+00:44:56,228 --> 00:44:57,367
+what is the slope
+
+537
+00:44:57,367 --> 00:45:01,068
+at pi over 3
+
+538
+00:45:01,068 --> 00:45:03,387
+and when I write this point
+
+539
+00:45:03,387 --> 00:45:06,028
+I find that it is 45 over 32
+
+540
+00:45:06,028 --> 00:45:10,068
+so our tangent line will be
+
+541
+00:45:10,068 --> 00:45:12,608
+y minus
+
+542
+00:45:12,608 --> 00:45:16,347
+9 square root 3 over 32
+
+543
+00:45:16,347 --> 00:45:18,888
+will be
+
+544
+00:45:18,888 --> 00:45:22,528
+slope is 45 over 32
+
+545
+00:45:22,528 --> 00:45:26,807
+x minus pi over 3
+
+546
+00:45:26,807 --> 00:45:27,807
+this is our
+
+547
+00:45:27,807 --> 00:45:29,748
+tangent line
+
+548
+00:45:29,748 --> 00:45:30,168
+okay
+
+549
+00:45:30,168 --> 00:46:00,148
+and then I will be
+
+550
+00:45:34,452 --> 00:45:52,032
+Okay, so if you don't have any question, I want to take a break, not at all. Let's take a break for 10 minutes. Okay, after that, I want to talk about parametric curve, parametric equations, how can we take derivation of the parametric equations and implicit differentiation. Okay.
+
+551
+00:45:53,912 --> 00:45:56,792
+Bir 10 dakikada vereyim arkadaşlar, sonra devam edeceğim.
+
+552
+00:48:48,724 --> 00:48:54,304
+Liyan dedektor.
+
+553
+00:49:01,268 --> 00:49:02,467
+No, it's not true.
+
+554
+01:01:55,155 --> 01:01:56,695
+Okay, so let's continue.
+
+555
+01:02:01,940 --> 01:02:05,880
+Hangi notları söylüyorsun ya? İlk notları derken?
+
+556
+01:02:08,220 --> 01:02:09,340
+Notları unutuyor mu?
+
+557
+01:02:29,427 --> 01:02:31,688
+parametrik ekviyatiyonlar, ok?
+
+558
+01:02:32,827 --> 01:02:38,867
+What is the parametrik ekviyatiyonlar, or why do we need parametrik ekviyatiyonlar, ok?
+
+559
+01:02:40,067 --> 01:02:49,667
+For example, if you have, if you need to talk about time, you can show a function using parametrik ekviyatiyonlar,
+
+560
+01:02:49,667 --> 01:02:53,587
+and you can add also time, for example, let me show some examples.
+
+561
+01:02:53,587 --> 01:02:57,587
+Okay.
+
+562
+01:03:07,603 --> 01:06:54,603
+Eks.
+
+563
+01:06:54,260 --> 01:06:56,540
+eğer ki böyle bir
+
+564
+01:06:56,540 --> 01:06:58,460
+şey ekleme ihtiyacı
+
+565
+01:06:58,460 --> 01:07:00,600
+olursa bu nedir? Bu da eklemi
+
+566
+01:07:00,600 --> 01:07:02,620
+kartezyanda değil de parametrik olarak
+
+567
+01:07:02,620 --> 01:07:04,740
+karşınıza çıkıyor.
+
+568
+01:07:05,700 --> 01:07:06,460
+Yoksa ikisinin de
+
+569
+01:07:06,460 --> 01:07:08,180
+aynı şekilde bir şey yok ama
+
+570
+01:07:08,180 --> 01:07:10,040
+içinin içine farklı bir değişken
+
+571
+01:07:10,040 --> 01:07:11,840
+eklenmesi gerekiyorsa. For example
+
+572
+01:07:11,840 --> 01:07:14,100
+at t equals to
+
+573
+01:07:14,100 --> 01:07:15,180
+I will be here.
+
+574
+01:07:16,240 --> 01:07:17,840
+At t equals 5 for example
+
+575
+01:07:17,840 --> 01:07:20,140
+you will be here. At t equals 0
+
+576
+01:07:20,140 --> 01:07:21,880
+you will be here.
+
+577
+01:07:21,880 --> 01:07:24,260
+Okay. So all of them
+
+578
+01:07:24,260 --> 01:07:26,420
+are all of them
+
+579
+01:07:26,420 --> 01:07:28,360
+shows the parametrization of y
+
+580
+01:07:28,360 --> 01:07:30,460
+equals x squared. If your
+
+581
+01:07:30,460 --> 01:07:32,140
+function is given
+
+582
+01:07:32,140 --> 01:07:34,140
+parametrically how can you find
+
+583
+01:07:34,140 --> 01:07:35,580
+derivation? Okay.
+
+584
+01:07:36,400 --> 01:07:38,460
+I want to find derivation
+
+585
+01:07:38,460 --> 01:07:40,400
+but your function is
+
+586
+01:07:40,400 --> 01:07:42,400
+given parametrically x is
+
+587
+01:07:42,400 --> 01:07:43,900
+f t. Okay.
+
+588
+01:07:45,040 --> 01:07:45,800
+y is
+
+589
+01:07:45,800 --> 01:07:47,400
+g t.
+
+590
+01:07:47,400 --> 01:07:51,840
+in that case you can write this
+
+591
+01:07:51,840 --> 01:07:53,380
+derivation like this
+
+592
+01:07:53,380 --> 01:07:55,280
+d y over d t
+
+593
+01:07:55,280 --> 01:07:57,880
+d t over d x
+
+594
+01:07:57,880 --> 01:07:58,700
+they are the same.
+
+595
+01:07:59,560 --> 01:07:59,640
+Okay.
+
+596
+01:08:00,780 --> 01:08:03,100
+I product and I divide with d t
+
+597
+01:08:03,100 --> 01:08:06,000
+okay okay
+
+598
+01:08:06,000 --> 01:08:07,000
+I'll do the hint one second.
+
+599
+01:08:07,780 --> 01:08:09,980
+I can write d y over d x is this
+
+600
+01:08:09,980 --> 01:08:11,360
+so
+
+601
+01:08:11,360 --> 01:08:14,920
+if I write d y over d x
+
+602
+01:08:14,920 --> 01:08:15,680
+is here
+
+603
+01:08:15,680 --> 01:08:17,500
+because I can take
+
+604
+01:08:17,500 --> 01:08:18,520
+derivation of y
+
+605
+01:08:18,520 --> 01:08:19,260
+directly
+
+606
+01:08:19,260 --> 01:08:20,079
+but
+
+607
+01:08:20,079 --> 01:08:21,440
+I want to write
+
+608
+01:08:21,440 --> 01:08:22,600
+this term as
+
+609
+01:08:22,600 --> 01:08:23,940
+your denominator
+
+610
+01:08:23,940 --> 01:08:24,360
+like
+
+611
+01:08:24,360 --> 01:08:26,420
+d x over d t.
+
+612
+01:08:26,739 --> 01:08:26,820
+Okay.
+
+613
+01:08:28,900 --> 01:08:30,320
+Then this is the
+
+614
+01:08:30,320 --> 01:08:31,400
+derivation of the
+
+615
+01:08:31,400 --> 01:08:31,980
+parametric
+
+616
+01:08:31,980 --> 01:08:32,960
+curves
+
+617
+01:08:32,960 --> 01:08:34,199
+parametric equations.
+
+618
+01:08:34,360 --> 01:08:36,000
+Okay.
+
+619
+01:08:36,000 --> 01:08:36,539
+so
+
+620
+01:08:36,539 --> 01:08:38,000
+let me explain again
+
+621
+01:08:38,000 --> 01:08:38,659
+[öğrenci].
+
+622
+01:08:39,520 --> 01:08:40,920
+If you have a function
+
+623
+01:08:40,920 --> 01:08:42,060
+in your
+
+624
+01:08:42,060 --> 01:08:44,100
+Cartesian coordinate system
+
+625
+01:08:44,100 --> 01:08:44,539
+okay
+
+626
+01:08:44,539 --> 01:08:46,480
+for example
+
+627
+01:08:46,480 --> 01:08:47,020
+ln
+
+628
+01:08:47,020 --> 01:08:50,280
+x plus 1
+
+629
+01:08:50,280 --> 01:08:50,860
+okay
+
+630
+01:08:50,860 --> 01:08:52,880
+you can use
+
+631
+01:08:52,880 --> 01:08:54,820
+a parametrization
+
+632
+01:08:54,820 --> 01:08:55,640
+you can add
+
+633
+01:08:55,640 --> 01:08:57,060
+an extra
+
+634
+01:08:57,060 --> 01:08:58,360
+variable
+
+635
+01:08:58,360 --> 01:08:59,940
+according to your question
+
+636
+01:08:59,940 --> 01:09:00,880
+it can be time
+
+637
+01:09:00,880 --> 01:09:02,039
+or anything else.
+
+638
+01:09:02,780 --> 01:09:03,260
+For example
+
+639
+01:09:03,260 --> 01:09:04,260
+if I take
+
+640
+01:09:04,260 --> 01:09:04,880
+x
+
+641
+01:09:04,880 --> 01:09:06,260
+plus 1
+
+642
+01:09:06,260 --> 01:09:06,760
+st
+
+643
+01:09:06,760 --> 01:09:07,659
+okay
+
+644
+01:09:07,659 --> 01:09:10,079
+y will be
+
+645
+01:09:10,079 --> 01:09:11,780
+ln
+
+646
+01:09:11,780 --> 01:09:12,480
+t
+
+647
+01:09:12,480 --> 01:09:13,199
+okay
+
+648
+01:09:13,199 --> 01:09:14,500
+so this is
+
+649
+01:09:14,500 --> 01:09:16,000
+a parametrization
+
+650
+01:09:16,000 --> 01:09:18,920
+of this function
+
+651
+01:09:18,920 --> 01:09:19,739
+so
+
+652
+01:09:19,739 --> 01:09:21,380
+x
+
+653
+01:09:21,380 --> 01:09:22,539
+is given
+
+654
+01:09:22,539 --> 01:09:23,079
+ft
+
+655
+01:09:23,079 --> 01:09:25,320
+y
+
+656
+01:09:25,320 --> 01:09:26,180
+is given
+
+657
+01:09:26,180 --> 01:09:27,340
+gt
+
+658
+01:09:27,340 --> 01:09:29,460
+okay
+
+659
+01:09:29,460 --> 01:09:31,100
+this is a parametrization
+
+660
+01:09:31,100 --> 01:09:31,980
+of this curve
+
+661
+01:09:31,980 --> 01:09:33,199
+and
+
+662
+01:09:33,199 --> 01:09:34,340
+you can use
+
+663
+01:09:34,340 --> 01:09:34,760
+also
+
+664
+01:09:34,760 --> 01:09:35,320
+another
+
+665
+01:09:35,320 --> 01:09:36,780
+parametrization
+
+666
+01:09:36,780 --> 01:09:37,579
+or you can
+
+667
+01:09:37,579 --> 01:09:38,760
+state that
+
+668
+01:09:38,760 --> 01:09:39,440
+x is
+
+669
+01:09:39,440 --> 01:09:40,199
+for example
+
+670
+01:09:40,199 --> 01:09:40,880
+one second
+
+671
+01:09:40,880 --> 01:09:42,119
+or I can say
+
+672
+01:09:42,119 --> 01:09:42,400
+that
+
+673
+01:09:42,400 --> 01:09:43,940
+x is
+
+674
+01:09:43,940 --> 01:09:44,640
+let us take
+
+675
+01:09:44,640 --> 01:09:45,420
+e to the power
+
+676
+01:09:45,420 --> 01:09:45,720
+t
+
+677
+01:09:45,720 --> 01:09:47,239
+if I take
+
+678
+01:09:47,239 --> 01:09:48,000
+that x is
+
+679
+01:09:48,000 --> 01:09:48,739
+e to the power
+
+680
+01:09:48,739 --> 01:09:49,079
+t
+
+681
+01:09:49,079 --> 01:09:50,180
+y will be
+
+682
+01:09:50,180 --> 01:09:50,659
+ln
+
+683
+01:09:50,659 --> 01:09:53,539
+e to the power
+
+684
+01:09:53,539 --> 01:09:53,860
+t
+
+685
+01:09:53,860 --> 01:09:54,600
+plus 1
+
+686
+01:09:54,600 --> 01:09:55,640
+this is
+
+687
+01:09:55,640 --> 01:09:56,079
+another
+
+688
+01:09:56,079 --> 01:09:57,119
+parametrization
+
+689
+01:09:57,119 --> 01:09:57,739
+also
+
+690
+01:09:57,739 --> 01:09:59,220
+but all of them
+
+691
+01:09:59,220 --> 01:10:01,980
+this one
+
+692
+01:10:01,980 --> 01:10:03,520
+and all of these graphs
+
+693
+01:10:03,520 --> 01:10:04,340
+are the same
+
+694
+01:10:04,340 --> 01:10:05,159
+okay
+
+695
+01:10:05,159 --> 01:10:06,739
+all of the graphs
+
+696
+01:10:06,739 --> 01:10:07,400
+are the same
+
+697
+01:10:07,400 --> 01:10:09,199
+but we can use
+
+698
+01:10:09,199 --> 01:10:10,880
+different parametrizations
+
+699
+01:10:10,880 --> 01:10:12,659
+let me show
+
+700
+01:10:12,659 --> 01:10:13,360
+an example
+
+701
+01:10:13,360 --> 01:10:14,680
+about the derivation
+
+702
+01:10:14,680 --> 01:10:15,180
+so
+
+703
+01:10:15,180 --> 01:10:15,680
+that
+
+704
+01:10:15,680 --> 01:10:16,820
+we can use
+
+705
+01:10:16,820 --> 01:10:22,720
+to the power
+
+706
+01:10:22,720 --> 01:10:23,320
+and all of them
+
+707
+01:10:23,320 --> 01:10:23,820
+we can use
+
+708
+01:10:23,820 --> 01:10:27,720
+to the power
+
+709
+01:10:27,720 --> 01:10:28,720
+and all of them
+
+710
+01:10:28,720 --> 01:10:29,720
+we can use
+
+711
+01:10:29,720 --> 01:10:32,720
+to the power
+
+712
+01:10:32,720 --> 01:10:33,659
+and all of them
+
+713
+01:10:33,659 --> 01:10:34,260
+we can use
+
+714
+01:10:34,260 --> 01:10:35,659
+to the power
+
+715
+01:10:35,659 --> 01:10:36,659
+and all of them
+
+716
+01:10:36,659 --> 01:10:37,659
+we can use
+
+717
+01:10:37,659 --> 01:10:39,659
+to the power
+
+718
+01:10:39,659 --> 01:10:40,659
+and all of them
+
+719
+01:10:40,659 --> 01:10:41,659
+we can use
+
+720
+01:10:41,659 --> 01:10:42,659
+to the power
+
+721
+01:10:20,404 --> 01:10:36,484
+For example, if our function is t cubed, and if our curve is given x is t cubed, y is t plus 1, t squared plus 1, okay?
+
+722
+01:10:37,244 --> 01:10:45,264
+And your curve is given parametrically with these two equations, and they are asking what is y prime?
+
+723
+01:10:45,264 --> 01:10:58,004
+I said that if it is given parametrically, y prime will be dy over dt dx over dt.
+
+724
+01:11:00,684 --> 01:11:02,064
+So what is that?
+
+725
+01:11:02,764 --> 01:11:05,704
+Derivation of y with respect to t is 2t.
+
+726
+01:11:07,024 --> 01:11:12,004
+Derivation of x function with respect to t is 3t squared.
+
+727
+01:11:12,004 --> 01:11:16,424
+So it will be 2 over 3t.
+
+728
+01:11:16,424 --> 01:11:17,204
+Okay?
+
+729
+01:11:18,204 --> 01:11:20,624
+They can ask the second derivation also.
+
+730
+01:11:20,784 --> 01:11:27,204
+The second derivation will be derivation of the first derivation of y.
+
+731
+01:11:27,524 --> 01:11:30,124
+So it is 2 over 3t.
+
+732
+01:11:30,684 --> 01:11:34,444
+I have to take derivation of this function.
+
+733
+01:11:35,124 --> 01:11:37,764
+It is 2 over 3t.
+
+734
+01:11:37,764 --> 01:11:39,944
+You can think like this.
+
+735
+01:11:39,944 --> 01:12:09,924
+minus 2 over 3t to the power minus 1t.
+
+736
+01:12:08,020 --> 01:12:08,740
+haldım ya.
+
+737
+01:12:13,395 --> 01:12:17,435
+How did you know that y depends on x not t?
+
+738
+01:12:18,576 --> 01:12:21,215
+T is your parametrization variable.
+
+739
+01:12:21,215 --> 01:12:22,015
+Okay.
+
+740
+01:12:22,615 --> 01:12:27,355
+They said that y is a function of x.
+
+741
+01:12:27,675 --> 01:12:27,855
+Okay.
+
+742
+01:12:30,555 --> 01:12:33,315
+Here t is your parametric variable.
+
+743
+01:12:33,735 --> 01:12:36,935
+Because both of them are given with respect to t.
+
+744
+01:12:37,195 --> 01:12:37,456
+Okay.
+
+745
+01:12:37,615 --> 01:12:41,755
+They will say that in the question x is xt.
+
+746
+01:12:43,395 --> 01:12:44,935
+y is yt.
+
+747
+01:12:45,395 --> 01:12:45,755
+Okay.
+
+748
+01:12:46,335 --> 01:12:48,355
+They will give these expressions also.
+
+749
+01:12:49,536 --> 01:12:50,536
+Okay.
+
+750
+01:12:50,695 --> 01:12:52,315
+Let me make another example.
+
+751
+01:12:53,195 --> 01:13:01,916
+If the curve is given y is a to the power 2t.
+
+752
+01:13:02,875 --> 01:13:06,015
+x is t square.
+
+753
+01:13:07,275 --> 01:13:12,355
+What is tangent line?
+
+754
+01:13:13,395 --> 01:13:17,355
+of the curve.
+
+755
+01:13:22,355 --> 01:13:28,076
+It's t equals 0.
+
+756
+01:13:28,076 --> 01:13:31,635
+Okay.
+
+757
+01:13:33,335 --> 01:13:38,375
+So the tangent line formula is y minus y 0.
+
+758
+01:13:40,315 --> 01:13:41,155
+And t.
+
+759
+01:13:41,855 --> 01:13:43,435
+x minus x 0.
+
+760
+01:13:45,076 --> 01:13:45,735
+Okay.
+
+761
+01:13:45,975 --> 01:13:47,996
+But in here they give the time.
+
+762
+01:13:48,155 --> 01:13:49,595
+Time t is 0.
+
+763
+01:13:49,595 --> 01:13:49,956
+Okay.
+
+764
+01:13:50,155 --> 01:13:51,435
+So first of all.
+
+765
+01:13:51,435 --> 01:13:51,555
+Okay.
+
+766
+01:13:51,555 --> 01:13:51,935
+So first of all.
+
+767
+01:13:51,935 --> 01:13:52,055
+Okay.
+
+768
+01:13:52,055 --> 01:13:52,496
+So first of all.
+
+769
+01:13:52,496 --> 01:13:52,555
+Okay.
+
+770
+01:13:52,555 --> 01:13:53,496
+So first of all.
+
+771
+01:13:53,496 --> 01:13:53,555
+Okay.
+
+772
+01:13:53,555 --> 01:13:54,055
+So first of all.
+
+773
+01:13:54,055 --> 01:13:54,496
+Okay.
+
+774
+01:13:54,496 --> 01:13:55,555
+So first of all.
+
+775
+01:13:55,555 --> 01:13:56,055
+Okay.
+
+776
+01:13:56,055 --> 01:13:56,555
+So first of all.
+
+777
+01:13:56,555 --> 01:13:56,635
+Okay.
+
+778
+01:13:56,635 --> 01:13:57,555
+So first of all.
+
+779
+01:13:57,555 --> 01:13:58,055
+Okay.
+
+780
+01:13:58,055 --> 01:13:58,555
+So first of all.
+
+781
+01:13:58,555 --> 01:13:58,655
+Okay.
+
+782
+01:13:58,655 --> 01:13:59,555
+So first of all.
+
+783
+01:13:59,555 --> 01:14:00,055
+Okay.
+
+784
+01:14:00,055 --> 01:14:00,555
+So first of all.
+
+785
+01:14:00,555 --> 01:14:01,055
+Okay.
+
+786
+01:14:01,055 --> 01:14:01,555
+So first of all.
+
+787
+01:14:01,555 --> 01:14:02,055
+Okay.
+
+788
+01:14:02,055 --> 01:14:02,555
+So first of all.
+
+789
+01:14:02,555 --> 01:14:03,055
+Okay.
+
+790
+01:14:03,055 --> 01:14:03,555
+So first of all.
+
+791
+01:14:03,555 --> 01:14:04,055
+Okay.
+
+792
+01:14:04,055 --> 01:14:04,555
+So first of all.
+
+793
+01:14:04,555 --> 01:14:05,055
+Okay.
+
+794
+01:14:05,055 --> 01:14:05,555
+So first of all.
+
+795
+01:14:05,555 --> 01:14:06,055
+Okay.
+
+796
+01:14:06,055 --> 01:14:06,555
+So first of all.
+
+797
+01:13:55,188 --> 01:14:19,927
+Let us find what is x0. x0 is x term at the point t is 0. If t is 0, what is x here? x0 will be 0, y0 will be from here. If t is 0, y will be 1. So x0 will be 0, y0 will be 1.
+
+798
+01:14:19,927 --> 01:14:47,328
+What is mt? mt will be d y over dt. x over dt. Tabii ben buraya şöyle yapalım. Artı t ekleyeyim. Yanlış şey olmasın. Tamam. Problem olmasın türevde. Burada bir değişiklik olmadı.
+
+799
+01:14:47,328 --> 01:14:58,007
+Evet. Okay. So what is derivation of y with respect to y with respect to t? It is 2 e to the power 2t. Derivation of x is 2t plus 1.
+
+800
+01:14:58,908 --> 01:15:05,667
+This is slope at any point, but I have to find what is mt at t equals 0.
+
+801
+01:15:10,420 --> 01:15:16,579
+It is 2 over 1. It is 2.
+
+802
+01:15:17,659 --> 01:15:25,699
+So our tangent line will be y minus 1 will be 2x minus 0.
+
+803
+01:15:27,020 --> 01:15:29,960
+This is our tangent line.
+
+804
+01:15:32,100 --> 01:15:32,899
+Okay?
+
+805
+01:15:40,979 --> 01:15:54,739
+Soldaki örnekte evet türevini soruyor. Y'nin, hayır, diyor ki, denkleminiz parametrik olarak böyle verildiyse o zaman Y'nin türevini soruyor. Y üstü dediği,
+
+806
+01:15:55,819 --> 01:16:00,359
+Y üstü dediği, sorduğu şey, yani şöyle soruyor, D'ye bölü Dx olarak soruyor.
+
+807
+01:16:06,195 --> 01:16:07,496
+2t artı 1'de.
+
+808
+01:16:09,076 --> 01:16:10,376
+Yok yok şuraya ekledim.
+
+809
+01:16:10,515 --> 01:16:11,615
+Şuraya t'yi ekledim.
+
+810
+01:16:11,815 --> 01:16:13,456
+Soruyu şöyle düzenledim yeniden.
+
+811
+01:16:14,216 --> 01:16:16,456
+Bunun türevini alırsak 2t artı 1 olur burada.
+
+812
+01:16:17,315 --> 01:16:19,635
+2t kare tkare olduğu zaman payda sıfır oluyordu.
+
+813
+01:16:19,695 --> 01:16:20,836
+O yüzden yanına t ekledim.
+
+814
+01:16:21,015 --> 01:16:21,956
+Onun türevini aldım.
+
+815
+01:16:22,095 --> 01:16:23,195
+Soruyu değiştirdim yani.
+
+816
+01:16:23,996 --> 01:16:24,716
+Tamam sorun değil.
+
+817
+01:16:26,195 --> 01:16:26,416
+Tamam.
+
+818
+01:16:30,131 --> 01:16:38,131
+ok, one second, bakayım size verdiğim uygulama sorularında parametrikle ilgili bir şey var mıydı?
+
+819
+01:16:42,899 --> 01:17:01,659
+Okay, did you look at the test also? Some of the subjects we didn't see yet, but some of them we see today also, and tomorrow we will see. Okay? These questions, we haven't seen some of them. Okay, don't look at.
+
+820
+01:17:01,659 --> 01:17:05,659
+Parametic?
+
+821
+01:17:15,091 --> 01:17:19,612
+parametri integral. Hayır, yarın ders yok arkadaşlar. Yarın tatil yapamıyoruz.
+
+822
+01:17:20,331 --> 01:17:23,652
+Tomorrow we don't have any lesson. We will continue next week. Okay?
+
+823
+01:17:25,511 --> 01:17:30,692
+Okay. Now lastly, I want to talk about implicit differentiation. Okay?
+
+824
+01:17:31,891 --> 01:17:35,051
+What is implicit differentiation? One second.
+
+825
+01:17:36,931 --> 01:17:43,971
+Actually, for implicit differentiation, we have two different ways, but I will show all of them.
+
+826
+01:17:45,091 --> 01:17:47,491
+Hayır, bugün öyleden sonra da ders yok arkadaşlar.
+
+827
+01:17:51,667 --> 01:17:52,688
+kaydetmiştim.
+
+828
+01:18:04,404 --> 01:18:09,084
+yapalım. Ben buraya öbürünü kaydetmiştim ama şuraya yapalım.
+
+829
+01:18:09,864 --> 01:18:16,004
+Okay, so first of all let us see what is the meaning of implicit differentiation, why do we need
+
+830
+01:18:16,004 --> 01:18:24,244
+implicit differentiation? Firstly, what is implicit and explicit function? For example, if your function
+
+831
+01:18:24,244 --> 01:18:30,384
+is given y equals fx, it means that your function is explicit function.
+
+832
+01:18:37,524 --> 01:18:43,923
+you have x-pligit function. It means that you can write y alone. For example, y equals x squared.
+
+833
+01:18:44,884 --> 01:18:51,963
+Last one, for example. This function is given x-pligitly. You can see y is alone on the left side.
+
+834
+01:18:52,544 --> 01:19:01,963
+But if your function is given the form of f x y equals 0, it is given in the impligit function.
+
+835
+01:19:10,036 --> 01:19:12,655
+What does it mean? You can't write y alone.
+
+836
+01:19:12,796 --> 01:19:20,855
+For example, y squared plus x y cubed minus x equals 1, for example.
+
+837
+01:19:21,315 --> 01:19:23,796
+This function is an implicit function.
+
+838
+01:19:23,796 --> 01:19:28,935
+It means that you can't write y alone because you have two different y.
+
+839
+01:19:29,376 --> 01:19:32,096
+One of them is y squared. The other one is y cubed.
+
+840
+01:19:32,216 --> 01:19:33,695
+So you can't write y alone.
+
+841
+01:19:34,076 --> 01:19:37,235
+So your function is given in the implicit form.
+
+842
+01:19:37,235 --> 01:19:40,935
+In the explicit form, you can take derivation directly.
+
+843
+01:19:41,096 --> 01:19:46,935
+But if your function is given in the implicitly, the derivation will be different.
+
+844
+01:19:47,115 --> 01:19:49,296
+So it is called implicit differentiation.
+
+845
+01:19:50,216 --> 01:19:52,216
+Fonksiyonunuz kapalı verilmişse ne demek?
+
+846
+01:19:52,336 --> 01:19:55,435
+Bu y'yi yalnız bırakamıyorsanız bu kapalı bir fonksiyondur.
+
+847
+01:19:56,136 --> 01:19:59,275
+Çünkü biz türev alırken y'yi yalnız oluyordu, ona göre türev alıyorduk.
+
+848
+01:19:59,395 --> 01:20:03,676
+Ama y'yi çekemiyorsanız, implicit şeklindeyse o zaman türev almamız değişiyor.
+
+849
+01:20:03,676 --> 01:20:08,296
+We have two different ways, but I will show all of them.
+
+850
+01:20:08,956 --> 01:20:10,735
+Actually, there is an easy way.
+
+851
+01:20:10,836 --> 01:20:16,956
+You can use a formula, but in the other lessons, you will use the first way.
+
+852
+01:20:17,096 --> 01:20:19,895
+So I want to show the first way.
+
+853
+01:20:20,176 --> 01:20:25,796
+It is important in calculus 2, in the financial equation, in pi shield, the financial equation.
+
+854
+01:20:25,916 --> 01:20:26,855
+It will be important.
+
+855
+01:20:26,855 --> 01:20:29,176
+Let me make an easy example.
+
+856
+01:20:29,496 --> 01:20:29,576
+Okay.
+
+857
+01:20:30,435 --> 01:20:37,956
+x squared plus y squared minus y equals, for example, zero.
+
+858
+01:20:38,416 --> 01:20:38,676
+Okay.
+
+859
+01:20:39,076 --> 01:20:40,556
+This is the implicit function.
+
+860
+01:20:41,176 --> 01:20:45,756
+Don't forget, in our question, x is your independent variable,
+
+861
+01:20:46,556 --> 01:20:50,195
+and y is your dependent variable.
+
+862
+01:20:50,195 --> 01:20:55,395
+And when you take the derivation, you have to be careful about these two concepts.
+
+863
+01:20:56,195 --> 01:20:56,515
+Okay.
+
+864
+01:20:56,615 --> 01:20:59,456
+First of all, you have to take derivation with respect to x.
+
+865
+01:21:00,155 --> 01:21:01,576
+I have 2x.
+
+866
+01:21:03,376 --> 01:21:07,315
+I have y function, and y function is your dependent function.
+
+867
+01:21:07,515 --> 01:21:09,796
+You will take derivation similar with x.
+
+868
+01:21:09,895 --> 01:21:10,655
+It is 2y.
+
+869
+01:21:10,655 --> 01:21:17,836
+But y is your dependent function, so you will add also derivation of y.
+
+870
+01:21:19,996 --> 01:21:29,496
+Minus derivation of y is 1, but y is your independent variable, so you will add also y prime is 0.
+
+871
+01:21:29,855 --> 01:21:32,395
+This is derivation with respect to x.
+
+872
+01:21:33,376 --> 01:21:37,015
+Now, find what is, where is y prime?
+
+873
+01:21:37,475 --> 01:21:38,136
+One second.
+
+874
+01:21:38,336 --> 01:21:39,895
+I have y prime here.
+
+875
+01:21:40,655 --> 01:21:42,216
+And also here.
+
+876
+01:21:43,256 --> 01:21:44,576
+What are the coefficients?
+
+877
+01:21:44,935 --> 01:21:50,735
+It is 2y and minus 1y prime here.
+
+878
+01:21:51,695 --> 01:21:54,796
+After that, I will take all the other terms on the right.
+
+879
+01:21:54,935 --> 01:21:56,895
+On the other side, I have 2x.
+
+880
+01:21:57,195 --> 01:22:00,376
+I will write on the right side, s minus 2x.
+
+881
+01:22:00,376 --> 01:22:12,395
+So, I can take that our derivation will be minus 2x over 2y minus 1.
+
+882
+01:22:12,395 --> 01:22:14,756
+This is implicit differentiation.
+
+883
+01:22:15,435 --> 01:22:15,576
+Okay?
+
+884
+01:22:16,496 --> 01:22:20,536
+When you take the derivation, you will take derivation of x directly.
+
+885
+01:22:21,015 --> 01:22:21,815
+It is 2x.
+
+886
+01:22:22,216 --> 01:22:24,556
+You will take derivation of y also the same.
+
+887
+01:22:24,676 --> 01:22:25,456
+It is 2y.
+
+888
+01:22:25,456 --> 01:22:27,996
+But y is your dependent variable.
+
+889
+01:22:28,336 --> 01:22:31,456
+So, you will add extra y prime in your derivation.
+
+890
+01:22:32,556 --> 01:22:32,815
+Okay?
+
+891
+01:22:33,916 --> 01:22:35,735
+Let me make some other examples.
+
+892
+01:22:35,735 --> 01:22:36,176
+Close.
+
+893
+01:22:38,916 --> 01:22:39,435
+Okay.
+
+894
+01:22:39,435 --> 01:22:53,756
+Close.
+
+895
+01:22:47,123 --> 01:23:17,123
+y'e
+
+896
+01:23:17,123 --> 01:23:47,123
+derivation of y will be y'e
+
+897
+01:23:47,123 --> 01:24:17,123
+After that I have to find the coefficients of y'e'
+
+898
+01:24:17,123 --> 01:24:47,123
+So y'e'
+
+899
+01:25:01,652 --> 01:25:05,612
+Okay, so let us look at these functions, okay?
+
+900
+01:25:17,427 --> 01:25:23,188
+Okay, so let us look at this example. The first example.
+
+901
+01:25:29,524 --> 01:25:51,744
+So, f'funktion is the function where all these terms, you will write all these terms on the left side and your function will be f. Derivation of x squared is 2x. Derivation of 2y squared is 4y, but y is your dependent variable, so you will add also y prime.
+
+902
+01:25:51,744 --> 01:26:06,744
+Minus, I have two different functions, there is a product here. Derivation of x is 1, product, the second function, minus the first function, product, the second function's derivation is y prime will be 0.
+
+903
+01:26:06,904 --> 01:26:18,384
+Now, this is our derivation. After that, I have to find the y prime term I have here and I have here.
+
+904
+01:26:18,384 --> 01:26:48,364
+So, the coefficients of y prime will be 4y minus x, y prime.
+
+905
+01:26:44,083 --> 01:26:53,144
+minus 2x plus y over 4y minus x.
+
+906
+01:26:58,996 --> 01:27:04,996
+Okay, let us look at the other example. In the other example, you have to be careful what is that.
+
+907
+01:27:08,979 --> 01:27:13,259
+The function will be, you will write all the terms on the left side.
+
+908
+01:27:13,399 --> 01:27:23,399
+Your function will be e to the power xy plus y square minus x minus 1 will be 0.
+
+909
+01:27:24,139 --> 01:27:25,899
+This is your f function.
+
+910
+01:27:26,199 --> 01:27:28,299
+And you will take derivation from here.
+
+911
+01:27:28,959 --> 01:27:33,259
+If you have some terms on the right side, first of all, you have to write on the left side.
+
+912
+01:27:33,679 --> 01:27:35,939
+Okay, so what is our derivation?
+
+913
+01:27:36,239 --> 01:27:37,819
+I have exponent function.
+
+914
+01:27:37,819 --> 01:27:43,179
+Derivation of the exponent function, the exponent function, you will write directly.
+
+915
+01:27:43,799 --> 01:27:47,619
+After that, you have to take derivation of xy turn.
+
+916
+01:27:48,759 --> 01:27:50,719
+Okay, what is that?
+
+917
+01:27:50,819 --> 01:27:59,479
+The first function's derivation is 1 product the second function plus the first function product the second function's derivation.
+
+918
+01:28:00,139 --> 01:28:06,319
+So it will be y plus xy prime.
+
+919
+01:28:07,819 --> 01:28:12,279
+Plus derivation of y square is 2y.
+
+920
+01:28:12,459 --> 01:28:14,899
+But y is your dependent variable.
+
+921
+01:28:15,099 --> 01:28:16,339
+It will be y prime.
+
+922
+01:28:16,739 --> 01:28:20,039
+And minus 1 will be 0.
+
+923
+01:28:21,119 --> 01:28:22,719
+This is our derivation.
+
+924
+01:28:22,719 --> 01:28:26,719
+Now let us look at y prime here.
+
+925
+01:28:28,319 --> 01:28:30,539
+And y prime I have here.
+
+926
+01:28:31,339 --> 01:28:33,979
+So what is the coefficients of y prime?
+
+927
+01:28:34,139 --> 01:28:40,879
+It is x e to the power xy.
+
+928
+01:28:40,879 --> 01:28:44,759
+And I have 2y here.
+
+929
+01:28:45,559 --> 01:28:48,679
+Now I will write all the other terms on the right side.
+
+930
+01:28:48,799 --> 01:28:54,339
+I will write 1 here and also minus y e to the power xy.
+
+931
+01:28:54,339 --> 01:29:10,799
+So our derivation will be 1 minus y e to the power xy over x e to the power xy plus 2y.
+
+932
+01:29:11,359 --> 01:29:11,679
+Okay.
+
+933
+01:29:11,679 --> 01:29:14,899
+Hocam, bu sonuncuyu bir daha anlatabilir misiniz acaba?
+
+934
+01:29:15,039 --> 01:29:15,539
+Tamam.
+
+935
+01:29:17,799 --> 01:29:18,279
+Okay.
+
+936
+01:29:18,519 --> 01:29:24,059
+Firstly, when you look at your question, you have to be sure that all these terms will be on the left side.
+
+937
+01:29:24,199 --> 01:29:26,279
+From here, you can find the derivation.
+
+938
+01:29:26,279 --> 01:29:28,359
+I have an exponent function.
+
+939
+01:29:28,519 --> 01:29:32,059
+The derivation of the exponent function is the exponent function.
+
+940
+01:29:32,239 --> 01:29:34,839
+And you will take also derivation of the power.
+
+941
+01:29:36,039 --> 01:29:38,119
+The derivation of x is 1 product.
+
+942
+01:29:38,299 --> 01:29:40,699
+The second function plus the first function.
+
+943
+01:29:40,819 --> 01:29:43,439
+And the second function's derivation is y prime.
+
+944
+01:29:44,299 --> 01:29:46,299
+The other term is y square.
+
+945
+01:29:46,479 --> 01:29:48,599
+Derivation of y square is 2y.
+
+946
+01:29:49,799 --> 01:29:52,699
+But y is a dependent variable.
+
+947
+01:29:52,699 --> 01:29:54,019
+You will add y prime.
+
+948
+01:29:54,019 --> 01:29:56,459
+And derivation of x is minus 1.
+
+949
+01:29:57,000 --> 01:29:58,819
+Derivation of minus 1 is 0.
+
+950
+01:30:00,000 --> 01:30:05,919
+After that, you have to find the coefficients of y prime here and here.
+
+951
+01:30:05,919 --> 01:30:06,439
+Okay.
+
+952
+01:30:11,731 --> 01:30:13,832
+So I have y prime is here.
+
+953
+01:30:13,952 --> 01:30:15,051
+What is the coefficient?
+
+954
+01:30:15,391 --> 01:30:18,612
+X product e to the power xy.
+
+955
+01:30:19,192 --> 01:30:22,192
+The coefficient of y prime from here is 2y.
+
+956
+01:30:22,711 --> 01:30:26,752
+After that, you will write all the other terms on the right side.
+
+957
+01:30:27,351 --> 01:30:29,231
+Minus 1 I will write here.
+
+958
+01:30:29,532 --> 01:30:30,332
+It will be 1.
+
+959
+01:30:30,612 --> 01:30:34,692
+And also I have y product is exponent function.
+
+960
+01:30:34,891 --> 01:30:39,192
+On the right side, it will be minus y product a to the power xy.
+
+961
+01:30:39,192 --> 01:30:45,952
+And lastly, if I want to find this one alone, I have to divide each part with this function.
+
+962
+01:30:46,351 --> 01:30:46,412
+Okay?
+
+963
+01:30:49,112 --> 01:30:50,032
+Okay, now.
+
+964
+01:30:51,851 --> 01:30:54,152
+I said that we have another way.
+
+965
+01:30:54,311 --> 01:30:57,011
+We have an easy way to find the implicit differentiation.
+
+966
+01:30:57,471 --> 01:30:58,332
+We have a formula.
+
+967
+01:30:58,952 --> 01:31:00,032
+What is our formula?
+
+968
+01:31:01,091 --> 01:31:02,551
+Our formula is.
+
+969
+01:31:02,971 --> 01:31:07,832
+If you want to find implicit differentiation, it is minus.
+
+970
+01:31:07,832 --> 01:31:14,752
+Derivation of f function with respect to x over derivation of f function with respect to y.
+
+971
+01:31:15,211 --> 01:31:18,511
+In here, you will take derivation with respect to x.
+
+972
+01:31:18,912 --> 01:31:20,131
+You will assume that.
+
+973
+01:31:20,131 --> 01:31:40,471
+You will see that.
+
+974
+01:31:24,692 --> 01:31:26,891
+y is constant.
+
+975
+01:31:28,851 --> 01:31:36,811
+And in this derivation, if you want to take derivation with respect to y, you will assume that here x is constant.
+
+976
+01:31:38,152 --> 01:31:40,131
+Let me show some examples.
+
+977
+01:31:40,952 --> 01:31:43,612
+Let us look at here for example.
+
+978
+01:31:45,292 --> 01:31:47,612
+Bu soruları şimdi formülle çözelim.
+
+979
+01:31:48,891 --> 01:31:54,212
+Tabii ki formül daha kolay sorularda ama türev almayı mutlaka iyi öğrenmeniz gerekiyor.
+
+980
+01:31:54,692 --> 01:31:56,692
+sonradan karşınızı mutlaka çıkacak.
+
+981
+01:31:58,572 --> 01:32:02,032
+Normal yazılı eski klasiklerde biz tabii ki bunları kabul etmiyorduk.
+
+982
+01:32:02,532 --> 01:32:05,712
+Ama artık test olduğu için onu biz ayrımlı yapamıyoruz ne yazık ki.
+
+983
+01:32:08,452 --> 01:32:10,471
+Okay, let us look at our question.
+
+984
+01:32:10,471 --> 01:32:10,811
+Okay.
+
+985
+01:32:15,731 --> 01:32:19,591
+Now let us take derivation of this function using the formula.
+
+986
+01:32:23,380 --> 01:32:38,579
+y' prime will be minus, now here I will take only derivation of the x term. I have x square, okay, I have x square, derivation of x square is 2x.
+
+987
+01:32:46,036 --> 01:32:52,195
+There is no x term here. I have x term and derivation of x term is minus y.
+
+988
+01:32:54,256 --> 01:32:58,855
+Now, in your denominator, you will take derivation of only y term.
+
+989
+01:33:00,296 --> 01:33:06,615
+Okay. Let us find y. I have y term and derivation of 2y squared is 4y.
+
+990
+01:33:08,275 --> 01:33:14,336
+And also I have y term and derivation of y is 1 but the coefficient is minus x.
+
+991
+01:33:14,336 --> 01:33:17,015
+This is the derivation using the formula.
+
+992
+01:33:17,775 --> 01:33:18,036
+Okay.
+
+993
+01:33:19,775 --> 01:33:21,136
+Let us look at 2.
+
+994
+01:33:21,416 --> 01:33:21,775
+Okay.
+
+995
+01:33:22,036 --> 01:33:24,056
+After that, you will understand more easily.
+
+996
+01:33:24,056 --> 01:33:24,456
+Okay.
+
+997
+01:33:35,796 --> 01:34:00,775
+y' will be minus. Now I will take derivation on the x term. I have x term here. What is derivation of the exponent function? e to the power xy. And I will take derivation of the x term. It will be y.
+
+998
+01:34:00,775 --> 01:34:19,916
+And I have x term here. It will be derivation of minus x will be minus 1. After that, in your denominator, you will take derivation of y terms. I have y term here. Derivation of this function with respect to y will be
+
+999
+01:34:25,363 --> 01:34:36,623
+e to the power xy product, derivation of the power with respect to y is x, and also I have y term here, derivation of y square is 2y.
+
+1000
+01:34:37,783 --> 01:34:39,643
+This is the formula, okay?
+
+1001
+01:34:43,891 --> 01:34:48,751
+Tamam. Daha basit bir soru yapayım o zaman. Oradan biraz daha rahat anlayacaksınız.
+
+1002
+01:34:52,756 --> 01:34:55,556
+Okay, let me write a very easy example. Okay.
+
+1003
+01:34:57,956 --> 01:35:06,756
+x square plus y square plus y cube plus x cube is zero. Okay.
+
+1004
+01:35:08,516 --> 01:35:16,276
+If you use the formula, the formula says that y prime is minus fx over f1.
+
+1005
+01:35:19,412 --> 01:35:25,712
+They said that if you want to take derivation of x, all the y terms, it will be constant.
+
+1006
+01:35:26,351 --> 01:35:26,492
+Okay.
+
+1007
+01:35:27,592 --> 01:35:31,512
+Yani burada y karenin 3 ile 5 ile aynı anlama geliyor.
+
+1008
+01:35:31,632 --> 01:35:36,592
+You can think y square is the same position with 3.
+
+1009
+01:35:36,992 --> 01:35:39,132
+What is derivation of 3 with respect to x?
+
+1010
+01:35:39,412 --> 01:35:39,672
+Zero.
+
+1011
+01:35:39,672 --> 01:35:44,192
+So derivation of y square with respect to x also will be zero.
+
+1012
+01:35:45,292 --> 01:35:47,012
+So I have x term.
+
+1013
+01:35:47,012 --> 01:35:53,332
+I have x term here and here.
+
+1014
+01:35:54,271 --> 01:35:56,472
+Derivation of x square will be 2x.
+
+1015
+01:35:57,452 --> 01:36:00,572
+Derivation of x cube is 3x square.
+
+1016
+01:36:01,231 --> 01:36:02,052
+And that's all.
+
+1017
+01:36:02,712 --> 01:36:06,652
+Now in your denominator, you will take derivation only y terms.
+
+1018
+01:36:06,652 --> 01:36:08,252
+Which terms I have?
+
+1019
+01:36:08,372 --> 01:36:10,212
+I have y square and y cube.
+
+1020
+01:36:10,811 --> 01:36:13,032
+So derivation of y square is 2y.
+
+1021
+01:36:13,032 --> 01:36:17,891
+Derivation of y cube will be 3y square.
+
+1022
+01:36:18,372 --> 01:36:19,672
+This is the formula.
+
+1023
+01:36:21,212 --> 01:36:21,492
+Okay.
+
+1024
+01:36:21,552 --> 01:36:22,992
+Let me make another example.
+
+1025
+01:36:23,132 --> 01:36:23,872
+Sağol, Karşın.
+
+1026
+01:36:23,872 --> 01:36:32,512
+For example, if I have x square y cube.
+
+1027
+01:36:34,332 --> 01:36:45,012
+And x plus y plus x cube 1.
+
+1028
+01:36:46,012 --> 01:36:47,332
+Equal 0 for example.
+
+1029
+01:36:47,332 --> 01:36:47,771
+Okay.
+
+1030
+01:36:48,452 --> 01:36:49,932
+So let us use the formula.
+
+1031
+01:36:51,452 --> 01:36:52,752
+I will have minus.
+
+1032
+01:36:53,552 --> 01:36:56,572
+Now I will take only derivation of the x term.
+
+1033
+01:36:56,811 --> 01:36:57,012
+Okay.
+
+1034
+01:36:59,752 --> 01:37:01,072
+Where are the x term?
+
+1035
+01:37:01,132 --> 01:37:02,132
+I have x square.
+
+1036
+01:37:02,972 --> 01:37:07,372
+Here y cube is a constant and you will take as a coefficient.
+
+1037
+01:37:07,372 --> 01:37:11,632
+So I can write y cube directly because here it is a coefficient.
+
+1038
+01:37:12,092 --> 01:37:13,672
+What is derivation of x square?
+
+1039
+01:37:13,731 --> 01:37:14,391
+It's 2x.
+
+1040
+01:37:16,292 --> 01:37:17,912
+I have x term here.
+
+1041
+01:37:18,052 --> 01:37:19,672
+Derivation of x is 1.
+
+1042
+01:37:21,092 --> 01:37:22,851
+There is no x term here.
+
+1043
+01:37:23,252 --> 01:37:24,771
+I have x term here.
+
+1044
+01:37:25,412 --> 01:37:28,092
+Here y is a constant and is a coefficient.
+
+1045
+01:37:28,351 --> 01:37:29,811
+I can write y directly.
+
+1046
+01:37:30,231 --> 01:37:35,052
+And I will take derivation of x cube is 3x square.
+
+1047
+01:37:35,052 --> 01:37:38,652
+Now let us look at in your denominator.
+
+1048
+01:37:38,972 --> 01:37:43,472
+In your denominator you will take derivation of only y terms.
+
+1049
+01:37:44,811 --> 01:37:45,731
+Bu kaçtı?
+
+1050
+01:37:45,932 --> 01:37:46,292
+X.
+
+1051
+01:37:48,052 --> 01:37:48,612
+Okay.
+
+1052
+01:37:48,932 --> 01:37:50,332
+Now I have y cube.
+
+1053
+01:37:51,231 --> 01:37:53,952
+So here x square I can write that directly.
+
+1054
+01:37:54,252 --> 01:37:56,792
+Ya o x'sin üzeri x cube olacaktı.
+
+1055
+01:37:57,271 --> 01:37:58,032
+Öyle miydi?
+
+1056
+01:37:58,032 --> 01:37:58,532
+Sildim ya.
+
+1057
+01:37:58,632 --> 01:37:58,992
+Evet.
+
+1058
+01:37:59,992 --> 01:38:00,472
+Tamam.
+
+1059
+01:38:01,652 --> 01:38:02,792
+Burası x cube müydı?
+
+1060
+01:38:03,012 --> 01:38:03,351
+Evet.
+
+1061
+01:38:03,572 --> 01:38:04,412
+X cube yydi.
+
+1062
+01:38:04,532 --> 01:38:04,692
+Tamam.
+
+1063
+01:38:05,052 --> 01:38:08,372
+Okay.
+
+1064
+01:38:08,592 --> 01:38:10,532
+So I hear y cube.
+
+1065
+01:38:11,172 --> 01:38:13,112
+X square is your coefficients.
+
+1066
+01:38:13,472 --> 01:38:15,152
+What is derivation of y cube?
+
+1067
+01:38:15,212 --> 01:38:16,391
+It is 3y square.
+
+1068
+01:38:18,792 --> 01:38:20,332
+There is no y term.
+
+1069
+01:38:20,712 --> 01:38:21,412
+It is 0.
+
+1070
+01:38:21,672 --> 01:38:23,512
+Derivation of y here is 1.
+
+1071
+01:38:25,032 --> 01:38:26,412
+I hear y term.
+
+1072
+01:38:26,792 --> 01:38:29,311
+Here x cube is a coefficient for us.
+
+1073
+01:38:29,372 --> 01:38:30,472
+You can write directly.
+
+1074
+01:38:31,592 --> 01:38:33,231
+Derivation of y from here.
+
+1075
+01:38:33,231 --> 01:38:34,072
+It will be 1.
+
+1076
+01:38:34,072 --> 01:38:36,271
+This is the derivation.
+
+1077
+01:38:36,851 --> 01:38:37,072
+Okay.
+
+1078
+01:38:38,612 --> 01:38:39,932
+Şimdi biraz daha anlaşıldı mı?
+
+1079
+01:38:39,932 --> 01:38:40,472
+1.
+
+1080
+01:38:40,472 --> 01:38:41,172
+2.
+
+1081
+01:38:41,172 --> 01:38:41,632
+3.
+
+1082
+01:38:41,632 --> 01:38:41,932
+4.
+
+1083
+01:38:41,932 --> 01:38:42,632
+5.
+
+1084
+01:38:42,632 --> 01:38:43,731
+6.
+
+1085
+01:38:43,731 --> 01:38:44,612
+7.
+
+1086
+01:38:44,612 --> 01:38:45,672
+8.
+
+1087
+01:38:45,672 --> 01:38:46,231
+9.
+
+1088
+01:38:46,231 --> 01:38:46,632
+10.
+
+1089
+01:38:46,632 --> 01:38:47,731
+9.
+
+1090
+01:38:47,731 --> 01:38:54,632
+10.
+
+1091
+01:38:54,632 --> 01:38:59,632
+11.
+
+1092
+01:38:47,283 --> 01:38:55,923
+diye düşünüyorum. Let us look at some, let us look at this example also. Okay, let me make again.
+
+1093
+01:39:04,787 --> 01:39:15,847
+Okay, so our y' prime will be minus fx over f1. Now I will take derivation of x term. I have x here,
+
+1094
+01:39:16,307 --> 01:39:26,287
+and derivation of x is 1, but I have a coefficient, it is y. Minus, I have x term, and derivation of x to the
+
+1095
+01:39:26,287 --> 01:39:34,387
+power 4 is 4x. And that's all, there is no x term. In your denominator, you will take derivation of the y
+
+1096
+01:39:34,387 --> 01:39:35,527
+x term here.
+
+1097
+01:39:38,739 --> 01:39:47,199
+So derivation of y term here, derivation of y is 1, but I have a coefficient x.
+
+1098
+01:39:48,979 --> 01:39:52,779
+Here there is no y term, it will be 0.
+
+1099
+01:39:53,340 --> 01:39:57,659
+I have y term and derivation of this function will be the same.
+
+1100
+01:39:59,960 --> 01:40:00,760
+And that's it.
+
+1101
+01:40:00,760 --> 01:40:08,760
+If you use the formula, you don't take any y prime or anything else.
+
+1102
+01:40:09,760 --> 01:40:14,719
+In the first way you will take y prime separately.
+
+1103
+01:40:15,420 --> 01:40:18,039
+Sakın birinci yöntemle ikinci yöntemi karıştırmayın.
+
+1104
+01:40:18,479 --> 01:40:21,079
+İkinci yöntem de x'e göre türe, y'ye göre türe.
+
+1105
+01:40:21,079 --> 01:40:22,399
+Y üstüler falan gelmiyor.
+
+1106
+01:40:22,479 --> 01:40:23,840
+Y üstü zaten burada başta.
+
+1107
+01:40:24,599 --> 01:40:26,219
+Birinci üstünde farklı.
+
+1108
+01:40:26,340 --> 01:40:29,340
+Birinci de y üstü ayrı ayrı yerlerde geliyor.
+
+1109
+01:40:30,760 --> 01:40:32,739
+Evet, evet.
+
+1110
+01:40:33,059 --> 01:40:35,239
+Klasik sınavda ikinciyi kullanamıyoruz.
+
+1111
+01:40:35,819 --> 01:40:37,079
+Bir saniye bekleyebilir misin?
+
+1112
+01:40:57,140 --> 01:43:53,140
+Evet.
