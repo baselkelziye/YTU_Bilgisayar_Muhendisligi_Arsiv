@@ -22,6 +22,7 @@
 
 - 📄 **Ders Kayıtları:** [Veri Madenciliği ve Bilgi Keşfi Ders Kayıtları](./ders_kayitlari/) ✨
 - 📄 **Not:** [Önder'in markdown notları](./slaytlar_notlar/2023/onder_gormez%20markdown) ✨
+- 📄 **Not:** [2026 el yazısı ders notları ve hocanın çözdüğü örnekler](./slaytlar_notlar/2026) ✨
 - 📄 [Genel Çıkmış Sorular](https://drive.google.com/drive/folders/1imIiwx0xxIPWREGP-YqotnFdUku8Ealf)
   - ℹ️ Kaynaklar öğrenciler tarafından oluşturulmuştur. Bundan dolayı içeriklerin doğruluğu garanti edilemez.
 
