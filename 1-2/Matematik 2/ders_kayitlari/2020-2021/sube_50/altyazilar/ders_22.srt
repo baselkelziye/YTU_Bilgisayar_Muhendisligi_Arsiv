@@ -1,0 +1,1651 @@
+1
+00:00:49,588 --> 00:00:51,987
+Good afternoon, hello to all.
+
+2
+00:01:15,924 --> 00:01:19,284
+Can you solve these two questions?
+
+3
+00:01:22,743 --> 00:01:25,464
+Is there anyone who solve these two examples?
+
+4
+00:01:28,124 --> 00:01:29,064
+That can be, can I?
+
+5
+00:01:38,099 --> 00:01:40,259
+What is the result for the example 3?
+
+6
+00:01:45,748 --> 00:01:46,567
+Did you find?
+
+7
+00:02:03,828 --> 00:02:09,668
+Is there anyone in the class that solve the example 3?
+
+8
+00:02:12,668 --> 00:02:13,128
+No one?
+
+9
+00:02:19,443 --> 00:02:21,243
+I have a gift for you if you saw.
+
+10
+00:02:31,764 --> 00:02:35,403
+Tamam, let us solve together.
+
+11
+00:02:37,444 --> 00:02:55,403
+We want to compute the double integral over the region D, where D is given by the line Y is equal to X minus 1, and the parabola Y square is equal to 2X plus 6.
+
+12
+00:02:55,403 --> 00:03:03,284
+First of all, we have to draw the graph of the region D.
+
+13
+00:03:07,348 --> 00:03:08,848
+Region D is
+
+14
+00:03:14,355 --> 00:03:15,835
+Banda Pileline
+
+15
+00:04:11,828 --> 00:04:13,188
+Y-Axis
+
+16
+00:04:18,579 --> 00:04:42,620
+This is x, and we have line, y is equal to x minus 1, so say this is, oh, maybe I have to draw this arrow a bit along.
+
+17
+00:05:10,867 --> 00:05:13,908
+y is equal to x minus 1,
+
+18
+00:05:15,807 --> 00:05:16,827
+such that,
+
+19
+00:05:38,355 --> 00:05:44,216
+y is equal to x minus 1, o.
+
+20
+00:06:07,283 --> 00:06:20,704
+Parabola, parabola is y square is equal to 2x plus 6 means y is equal to square root 2x plus 6.
+
+21
+00:06:20,704 --> 00:06:22,103
+So,
+
+22
+00:06:25,939 --> 00:06:29,100
+This is like that.
+
+23
+00:06:34,560 --> 00:06:35,519
+Minus 3.
+
+24
+00:07:10,291 --> 00:07:24,731
+This is, here y is equal to minus square root 2 x plus 6, and this part y is equal to
+
+25
+00:07:30,228 --> 00:07:33,268
+2x plus 6.
+
+26
+00:07:36,067 --> 00:07:37,687
+This is minus 3.
+
+27
+00:07:41,588 --> 00:07:48,848
+Now, let us find the intersection points of the parabola and the line.
+
+28
+00:07:48,848 --> 00:08:00,568
+So, x minus 1 square is equal to 2x plus 6.
+
+29
+00:08:01,487 --> 00:08:10,868
+Therefore, we have x square minus 2x plus 1 is equal to 2x plus 6.
+
+30
+00:08:11,588 --> 00:08:19,307
+It means that x square minus 4x is equal to 5.
+
+31
+00:08:21,148 --> 00:08:24,368
+x minus 4 is equal to 5.
+
+32
+00:08:25,628 --> 00:08:39,528
+Therefore, we have x1 is equal to 1 and x2 is, sorry, minus 1 and x2 is equal to 5.
+
+33
+00:08:39,528 --> 00:08:59,248
+So, here it is 5 and this point, this is, if we take x as 5, then we have y is 4.
+
+34
+00:08:59,248 --> 00:09:05,288
+Therefore, this is the point, 5, 4.
+
+35
+00:09:05,968 --> 00:09:11,228
+And the other intersection point is at x1, sorry, minus 1.
+
+36
+00:09:11,228 --> 00:09:22,228
+So, here it is.
+
+37
+00:09:18,323 --> 00:09:19,323
+İçişir,
+
+38
+00:09:29,043 --> 00:09:39,923
+Minus 1. If you write x as minus 1, here we have y is 2. Sorry. Y is minus 2.
+
+39
+00:09:44,211 --> 00:09:49,412
+Bu, bu, minus 1, minus 2.
+
+40
+00:09:50,851 --> 00:09:54,611
+Now, region D is...
+
+41
+00:09:58,995 --> 00:09:59,535
+Yes.
+
+42
+00:10:04,148 --> 00:10:06,768
+This is region D.
+
+43
+00:10:07,868 --> 00:10:19,148
+Actually, we can write or we can compute the double integral by taking this region D as type 1 and type 2.
+
+44
+00:10:19,888 --> 00:10:22,707
+But we will see it later.
+
+45
+00:10:23,827 --> 00:10:34,067
+If we take the region D as a type 1 region, it is more complicated because the lower boundary consists of
+
+46
+00:10:34,067 --> 00:10:37,548
+two parts.
+
+47
+00:10:39,388 --> 00:10:40,268
+I mean...
+
+48
+00:10:44,179 --> 00:10:53,759
+If we take, if we take D as a type 1 region, then,
+
+49
+00:11:04,307 --> 00:11:15,028
+Look at this two parts. If we take d as type 1 region, we draw a line vertical to the x-axis.
+
+50
+00:11:18,067 --> 00:11:27,587
+So, we have two parts of the region d. One part is this side and the other part is this.
+
+51
+00:11:27,587 --> 00:11:35,668
+So, it is some complicated if we take the region d.
+
+52
+00:11:39,923 --> 00:11:41,163
+Type 1 region,
+
+53
+00:11:43,024 --> 00:11:43,403
+maybe,
+
+54
+00:12:09,587 --> 00:12:17,408
+Okay, first of all, take D as type 2 region, because it is easy to compute.
+
+55
+00:12:32,659 --> 00:12:37,120
+ds, type 2 region,
+
+56
+00:12:43,091 --> 00:12:52,091
+D'ye de bu şekilde, bu nokta, y'e de bu nokta, y'e de bu nokta.
+
+57
+00:13:02,323 --> 00:13:06,323
+We take or we draw.
+
+58
+00:13:09,716 --> 00:13:10,956
+A horizontal line.
+
+59
+00:13:15,283 --> 00:13:21,244
+Therefore, the integral inside, the boundaries of the integral inside,
+
+60
+00:13:28,500 --> 00:13:30,340
+y is between
+
+61
+00:13:30,340 --> 00:13:34,159
+minus 2
+
+62
+00:13:34,159 --> 00:13:36,220
+to the 4
+
+63
+00:13:43,412 --> 00:14:02,852
+ve, x is between, the small one is, what is x here? x is y² minus, sorry, y² over 2 minus 6.
+
+64
+00:14:13,716 --> 00:14:17,796
+y² over 2, minus 6.
+
+65
+00:15:21,268 --> 00:15:37,908
+We can write this as, sorry for this, and the other bond, the upper bond for the region D is, x is y plus 1.
+
+66
+00:15:42,035 --> 00:16:07,535
+So, if we take the region, the s type 2 region, it means that we draw a line, horizontal x-axis, then this region can be defined as y is between minus 2 and 4,
+
+67
+00:16:07,535 --> 00:16:36,075
+and x is between, here if we substitute x, then we have x is equal to y square, y square over 2 minus 3, and here x is equal to y plus 1, therefore we can write the region d like this.
+
+68
+00:16:39,764 --> 00:16:45,224
+And using this region,
+
+69
+00:16:45,224 --> 00:16:49,303
+The integral
+
+70
+00:16:55,860 --> 00:17:10,079
+Y is between minus 2 to the 4 and X is between
+
+71
+00:17:26,612 --> 00:17:54,612
+x, y, d, x, d, y. Okay. If we take the region D as type 2 region, then we can write the double integral like this. We will complete it later. Now, let us take
+
+72
+00:18:00,819 --> 00:18:10,819
+Region S, type 2 region, sorry, type 1 region, but in...
+
+73
+00:18:15,220 --> 00:18:24,140
+Bu durumda, bu durumda, iki bölümde bu bölümde, bu bölümde,
+
+74
+00:18:33,491 --> 00:18:34,811
+If we take
+
+75
+00:18:39,476 --> 00:18:44,936
+ds type 1 region,
+
+76
+00:19:00,819 --> 00:19:03,819
+We draw a vertical line.
+
+77
+00:19:24,660 --> 00:19:25,860
+to the x-axis.
+
+78
+00:19:28,420 --> 00:19:28,980
+Therefore,
+
+79
+00:19:46,132 --> 00:20:14,432
+D is defined as constant of x, y points such that x is between, this is actually minus 3, minus 3, 2 to the 5, and y is between,
+
+80
+00:20:14,432 --> 00:20:29,612
+actually, we cannot write this directly, because in part 1, maybe we can write the d1 and d2.
+
+81
+00:20:34,259 --> 00:20:35,500
+D1
+
+82
+00:20:39,188 --> 00:20:42,188
+ve bu d2.
+
+83
+00:20:42,188 --> 00:20:45,188
+Değil, bir şeyin de d1 ve d2.
+
+84
+00:20:45,188 --> 00:20:51,188
+Bu d2, bir şeyin de d2.
+
+85
+00:20:51,188 --> 00:20:53,188
+D2, bir şeyin de d2.
+
+86
+00:20:59,316 --> 00:21:12,135
+is equal to, here look at the d1, x is between minus 3 to the minus 1.
+
+87
+00:21:17,587 --> 00:21:22,248
+And Y is between.
+
+88
+00:21:26,740 --> 00:21:32,440
+Minus, sqrt 2x plus 6.
+
+89
+00:21:37,044 --> 00:21:39,044
+y is equal to
+
+90
+00:21:41,044 --> 00:21:45,044
+square root 2x plus 6
+
+91
+00:21:47,044 --> 00:21:49,044
+x, y,
+
+92
+00:21:51,155 --> 00:21:57,155
+dy, dx, plus, look at the region d2.
+
+93
+00:22:01,395 --> 00:22:04,715
+From x minus 1 to the 5.
+
+94
+00:22:16,948 --> 00:22:38,188
+y is x minus 1 to the y is equal to square root 2x plus 6 x y dy dx.
+
+95
+00:22:38,188 --> 00:22:51,388
+So, as we've seen here, if we had expressed d as a type 1 region, then we have these two
+
+96
+00:22:51,388 --> 00:23:00,128
+double integrals, but it has or it has involved more work than the other method.
+
+97
+00:23:00,128 --> 00:23:07,548
+So, if you have a double integral or if you want to evaluate a double integral, you have
+
+98
+00:23:07,548 --> 00:23:22,548
+to choose the region d such that you can, you can compute the integrals easily.
+
+99
+00:23:22,548 --> 00:23:27,548
+Okay, computing this integral is not easy actually.
+
+100
+00:23:27,548 --> 00:23:32,548
+Now, let us compute the integral.
+
+101
+00:23:32,548 --> 00:23:58,548
+So, let us know.
+
+102
+00:23:45,844 --> 00:23:50,844
+We use d as type 2 region.
+
+103
+00:23:50,844 --> 00:23:52,844
+Therefore,
+
+104
+00:23:59,731 --> 00:24:03,731
+y is between minus 2 and 4.
+
+105
+00:24:12,627 --> 00:24:20,268
+x is between 1 over 2 y squared minus 3.
+
+106
+00:24:25,940 --> 00:24:30,220
+To do, x is equal to y plus 1.
+
+107
+00:24:36,692 --> 00:24:47,311
+x, y, d, x, t, y. This is equal to integral minus 2 to the 4.
+
+108
+00:24:47,311 --> 00:24:49,152
+And
+
+109
+00:24:53,428 --> 00:25:03,208
+x square over 2, y, x is equal to y plus 1.
+
+110
+00:25:08,147 --> 00:25:09,087
+Minus 3
+
+111
+00:25:14,516 --> 00:25:15,216
+Teşekkürler.
+
+112
+00:25:30,579 --> 00:25:31,039
+So,
+
+113
+00:25:34,579 --> 00:25:35,939
+Compute this.
+
+114
+00:25:40,660 --> 00:25:43,100
+x2 over 2 times
+
+115
+00:25:50,771 --> 00:25:51,251
+Sorry.
+
+116
+00:25:56,211 --> 00:26:03,811
+y plus 1 square over 2 times y minus
+
+117
+00:26:53,971 --> 00:26:55,971
+So, this gives...
+
+118
+00:27:00,339 --> 00:27:01,399
+Ytimes
+
+119
+00:27:07,092 --> 00:27:09,092
+It is a lot of work.
+
+120
+00:27:11,092 --> 00:27:13,092
+Please, please
+
+121
+00:27:15,092 --> 00:27:17,092
+Evaluate this integral
+
+122
+00:27:18,092 --> 00:27:19,092
+And you will
+
+123
+00:27:20,092 --> 00:27:21,092
+You will find
+
+124
+00:27:22,092 --> 00:27:23,092
+Or you have to find
+
+125
+00:27:24,092 --> 00:27:25,092
+The
+
+126
+00:27:26,092 --> 00:27:29,092
+Result is equal to 36
+
+127
+00:27:34,836 --> 00:27:35,695
+Please check.
+
+128
+00:27:41,332 --> 00:27:41,672
+Ok?
+
+129
+00:27:45,875 --> 00:28:15,875
+Bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örne
+
+130
+00:28:15,875 --> 00:28:19,756
+First of all, we have to
+
+131
+00:28:22,900 --> 00:28:25,060
+Compute this integral.
+
+132
+00:28:30,740 --> 00:28:45,859
+But, but, it is impossible to compute this integral because it is, in finite terms, it is not an elementary integral.
+
+133
+00:28:48,620 --> 00:28:58,900
+Since, it is not an elementary function.
+
+134
+00:29:16,531 --> 00:29:21,531
+İnteklerine baktığınız için,
+
+135
+00:29:21,531 --> 00:29:23,531
+bu
+
+136
+00:29:23,531 --> 00:29:28,531
+İnteklerine baktığınız için,
+
+137
+00:29:28,531 --> 00:29:30,531
+bu
+
+138
+00:29:30,531 --> 00:29:35,531
+İnteklerine baktığınız için,
+
+139
+00:29:35,531 --> 00:29:39,531
+bu İnteklerine baktığınız için,
+
+140
+00:29:39,531 --> 00:29:41,531
+bu şekilde,
+
+141
+00:29:41,531 --> 00:29:48,531
+ve bu
+
+142
+00:29:48,531 --> 00:29:50,531
+İnteklerine baktığınız için,
+
+143
+00:29:53,107 --> 00:29:54,508
+Yılmaz çiçinç.
+
+144
+00:30:01,203 --> 00:30:02,283
+Orda'lıktı.
+
+145
+00:30:08,852 --> 00:30:20,092
+İntegration. So, to do this, first of all, we have to write the region D, looking at this iterated integral,
+
+146
+00:30:22,211 --> 00:30:35,692
+here, x is 0 to 1, and y is equal to x to 1.
+
+147
+00:30:35,692 --> 00:30:40,852
+Therefore, the region D is
+
+148
+00:31:01,940 --> 00:31:04,380
+x is between 0 and 1.
+
+149
+00:31:09,332 --> 00:31:15,012
+and y is between 1 and x so
+
+150
+00:31:29,940 --> 00:31:34,940
+Y1
+
+151
+00:31:51,028 --> 00:31:54,488
+Y is equal to x.
+
+152
+00:32:08,147 --> 00:32:16,227
+ve region
+
+153
+00:32:16,788 --> 00:32:31,587
+This is the region B. In given integral, it is given as type, it is given as type 1 region, because
+
+154
+00:32:34,468 --> 00:32:43,347
+the inner integral is with respect to y, then we have to or we want to change the order of the integration.
+
+155
+00:32:49,652 --> 00:32:53,652
+Bu bir adı var.
+
+156
+00:32:53,652 --> 00:32:59,652
+Y is between 1 and x.
+
+157
+00:33:03,508 --> 00:33:09,107
+Type 1. And we want to write this as Type 2.
+
+158
+00:33:17,844 --> 00:33:25,324
+So, we draw a horizontal line to the x-axis.
+
+159
+00:33:36,915 --> 00:33:41,515
+Now, t is in the type 2 region.
+
+160
+00:33:42,695 --> 00:33:46,135
+So, y is between
+
+161
+00:34:09,780 --> 00:34:20,220
+Now, y is between 0 to 1.
+
+162
+00:34:24,659 --> 00:34:33,719
+And x is between 0 to, what is x? Y.
+
+163
+00:34:36,719 --> 00:34:46,259
+And integral, sin y squared, dx, dy.
+
+164
+00:34:47,259 --> 00:34:51,779
+Then we can easily compute this integral with respect to x.
+
+165
+00:34:54,659 --> 00:34:55,799
+0 to 1.
+
+166
+00:35:02,612 --> 00:35:04,811
+x sin y sükre
+
+167
+00:35:09,427 --> 00:35:21,127
+x is equal to y, x is equal to 0, 3y, then we have 0 to 1.
+
+168
+00:35:26,516 --> 00:35:30,076
+y sin y2
+
+169
+00:35:31,356 --> 00:35:35,016
+ve x0 dy
+
+170
+00:35:40,820 --> 00:35:53,200
+ve bu, minus 1 over 2, cos y2, 1 to 0, gives,
+
+171
+00:36:00,148 --> 00:36:02,028
+Minus 1 over 2,
+
+172
+00:36:05,028 --> 00:36:05,988
+cosine 1.
+
+173
+00:36:15,443 --> 00:36:20,003
+Sorry, this is not minus 1 over 2.
+
+174
+00:36:20,963 --> 00:36:21,884
+Usain 1.
+
+175
+00:36:31,347 --> 00:36:32,067
+Plus
+
+176
+00:36:32,067 --> 00:36:37,168
+1 over 2.
+
+177
+00:36:42,483 --> 00:36:42,824
+Ok?
+
+178
+00:36:46,547 --> 00:36:54,387
+Is it okay? Do you have any questions? Does it make sense? Is it clear?
+
+179
+00:37:01,235 --> 00:37:19,135
+Bu example is important, because in this form, we cannot compute the iterated integral, but after changing the boundaries, we can compute the integral easily.
+
+180
+00:37:19,135 --> 00:37:37,895
+So, if you have an integral, if you have a double integral, that you cannot compute it in a given form, then you have to change the order of the integration.
+
+181
+00:37:37,895 --> 00:37:38,615
+Okay.
+
+182
+00:37:45,523 --> 00:37:52,163
+Ve also some properties of double integrals in 6, 7, 8.
+
+183
+00:37:53,723 --> 00:38:01,643
+These are important properties. Please look and investigate what they say.
+
+184
+00:38:01,643 --> 00:38:18,483
+This property is important because if we take the function fxy as 1, then we can find the area of the region B.
+
+185
+00:38:18,483 --> 00:38:34,563
+Okay. So, the area of a closed 1-0 region or pane R is a double integral or can be computed by a double integral
+
+186
+00:38:34,563 --> 00:38:42,243
+over the region like this or we can write this as
+
+187
+00:38:46,420 --> 00:38:48,800
+tx, ty, or
+
+188
+00:38:52,467 --> 00:38:53,847
+dy, dx
+
+189
+00:39:09,108 --> 00:39:16,288
+Find the area of the region R, bounded by y is equal to x and y is equal to x square in the first quadrant.
+
+190
+00:39:17,228 --> 00:39:23,528
+So, we only draw the graph of the D.
+
+191
+00:39:47,539 --> 00:39:49,440
+y is equal to x.
+
+192
+00:40:06,291 --> 00:40:09,291
+Y is equal to X square.
+
+193
+00:40:09,291 --> 00:40:14,291
+In the first quadrant is in the first region here.
+
+194
+00:40:17,291 --> 00:40:22,291
+We only draw Y is equal to X square in the first quadrant.
+
+195
+00:40:26,963 --> 00:40:27,903
+vekiz.
+
+196
+00:40:35,411 --> 00:40:38,651
+y is equal to x to ks, so, the region d,
+
+197
+00:40:43,539 --> 00:41:06,940
+So, the area of the region R is equal to the double integral over R.
+
+198
+00:41:13,300 --> 00:41:16,340
+X is equal to X square gives
+
+199
+00:41:24,211 --> 00:41:31,172
+X is 1, therefore, the intersection point is 1.
+
+200
+00:41:35,347 --> 00:41:39,768
+x is between 0 and 1.
+
+201
+00:41:43,507 --> 00:41:45,467
+And Y is between.
+
+202
+00:41:51,219 --> 00:42:02,439
+y is between x² to x.
+
+203
+00:42:08,980 --> 00:42:11,719
+dy, dx.
+
+204
+00:42:13,300 --> 00:42:16,740
+And this is equal to 0 to 1.
+
+205
+00:42:19,619 --> 00:42:21,420
+x minus x square.
+
+206
+00:42:27,731 --> 00:42:28,552
+Dx
+
+207
+00:42:53,588 --> 00:43:03,268
+ve, bu, x2, over 2, minus x3, over 3, 1, 2, 0.
+
+208
+00:43:11,476 --> 00:43:18,715
+ve bu, 1 over 2 minus 1 over 3, 1 over 6.
+
+209
+00:43:26,483 --> 00:43:26,784
+Ok?
+
+210
+00:43:32,820 --> 00:43:33,820
+İstediğiniz için teşekkür ederim.
+
+211
+00:43:57,076 --> 00:44:04,135
+Thank you [öğrenci]. Is there anyone other than [öğrenci] who hears me?
+
+212
+00:44:10,420 --> 00:44:13,700
+Orada, is there a problem with my voice or my microphone?
+
+213
+00:44:15,360 --> 00:44:17,539
+Okay, [öğrenci], thank you.
+
+214
+00:44:18,980 --> 00:44:19,659
+Anyone else?
+
+215
+00:44:26,996 --> 00:44:31,996
+2 students among 64 students.
+
+216
+00:44:32,996 --> 00:44:33,996
+Good.
+
+217
+00:44:40,436 --> 00:44:42,216
+Thank you, [öğrenci], 3.
+
+218
+00:44:45,135 --> 00:44:45,655
+Anyone?
+
+219
+00:44:47,155 --> 00:44:48,296
+One minute, thank you.
+
+220
+00:44:49,796 --> 00:44:52,135
+Okay, let us look at the example 2.
+
+221
+00:44:54,216 --> 00:45:03,336
+Find area of the region R, which is bounded by or enclosed by the parabola, y is equal to x square and the line y is equal to x plus 2.
+
+222
+00:45:03,856 --> 00:45:06,256
+It is very similar to the example 1.
+
+223
+00:45:15,315 --> 00:45:16,615
+x, y
+
+224
+00:45:34,483 --> 00:45:37,563
+y is equal to x square.
+
+225
+00:45:48,179 --> 00:45:57,919
+Y is equal to x plus 2, so y2 x minus 2.
+
+226
+00:46:14,228 --> 00:46:14,788
+Maybe.
+
+227
+00:46:36,211 --> 00:47:00,092
+Minus 2. Now, the region, this, or sorry, R is here, like this. But, but in this case, we have to choose the right type of region, because, because, if we take,
+
+228
+00:47:08,244 --> 00:47:10,384
+The region, the R,
+
+229
+00:47:17,748 --> 00:47:27,867
+Take R as type 1 region.
+
+230
+00:47:39,923 --> 00:47:45,324
+So, we draw a vertical line to the x-axis.
+
+231
+00:47:47,643 --> 00:47:58,324
+X is between the intersection points of these two planes, sorry, these two curves.
+
+232
+00:48:03,860 --> 00:48:06,680
+x square is equal to x plus 2.
+
+233
+00:48:07,680 --> 00:48:08,200
+Therefore,
+
+234
+00:48:12,563 --> 00:48:15,643
+X is minus 1, and X is
+
+235
+00:48:21,652 --> 00:48:22,012
+2.
+
+236
+00:48:46,420 --> 00:48:47,059
+Therefore,
+
+237
+00:48:51,315 --> 00:49:04,435
+The area of the region R is equal to double integral over R. X is between minus 1 to the 2.
+
+238
+00:49:08,115 --> 00:49:18,596
+And y is between x from x to the x squared.
+
+239
+00:49:26,164 --> 00:49:36,744
+dy, dx, and this is equal to minus 1 to the 2.
+
+240
+00:49:57,876 --> 00:50:04,136
+This gives x square minus x dx.
+
+241
+00:50:19,987 --> 00:50:21,627
+2 to the minus 1.
+
+242
+00:50:31,507 --> 00:50:32,367
+Kıvıs
+
+243
+00:50:47,059 --> 00:50:56,059
+This is not x, this is x plus 2. I think we are sleeping, because nobody...
+
+244
+00:51:00,884 --> 00:51:04,304
+Say me that I write wrong here.
+
+245
+00:51:05,304 --> 00:51:05,644
+So,
+
+246
+00:51:08,844 --> 00:51:10,483
+This is x plus 2.
+
+247
+00:51:21,811 --> 00:51:22,811
+Oh!
+
+248
+00:51:25,531 --> 00:51:26,531
+Also,
+
+249
+00:51:27,731 --> 00:51:29,132
+the order of the
+
+250
+00:51:31,531 --> 00:51:34,092
+integral is wrong, because
+
+251
+00:51:34,891 --> 00:51:36,731
+this is x squared
+
+252
+00:51:39,211 --> 00:51:41,411
+and this is x plus 2
+
+253
+00:51:52,115 --> 00:51:53,556
+O yüzden,
+
+254
+00:51:58,420 --> 00:52:03,180
+x plus 2, minus x2,
+
+255
+00:52:11,092 --> 00:52:11,872
+Dx
+
+256
+00:52:25,619 --> 00:52:45,259
+Bu, x'ı kere, over 2, plus 2x minus x'ı kub over 3, once r, x is minus 1, 2, x is 2.
+
+257
+00:52:45,259 --> 00:52:57,659
+So, we have 2 plus 4 minus 8 over 3, minus 1 over 2.
+
+258
+00:53:06,579 --> 00:53:07,699
+Plus 100
+
+259
+00:53:17,235 --> 00:53:46,955
+Minus 1 over 3, gives 6, 7, sorry, 6, 8, this is 5, 5 minus 1 over 2, gives 9 over,
+
+260
+00:53:47,235 --> 00:53:47,596
+Tamam.
+
+261
+00:53:54,036 --> 00:54:01,615
+[öğrenci], most probably you found wrong, because it is 9 over 2.
+
+262
+00:54:03,195 --> 00:54:09,516
+Now, if we take this region R as type 2 region,
+
+263
+00:54:24,659 --> 00:54:40,299
+We have to divide this region into two parts, so we have a region R1 and region R2.
+
+264
+00:54:46,996 --> 00:54:53,996
+ve
+
+265
+00:54:56,179 --> 00:54:58,779
+R is type 2 region.
+
+266
+00:55:11,284 --> 00:55:19,544
+The area of the region R is equal to again the double integral over R dA.
+
+267
+00:55:19,544 --> 00:55:29,304
+Now, we add two areas R1 and R2 for R1.
+
+268
+00:55:37,811 --> 00:55:58,251
+Drawing an arrow, horizontal to the x-axis, y is between 0, what is this, what is this number, 1, 1, 0 to 1,
+
+269
+00:56:04,563 --> 00:56:17,763
+ve x is between, x is between, x is equal to minus super root y.
+
+270
+00:56:22,963 --> 00:56:28,324
+And this is x is equal to square root y.
+
+271
+00:56:30,884 --> 00:56:40,563
+dx dy plus look at the region R2.
+
+272
+00:56:40,563 --> 00:56:45,043
+Again, drawing a horizontal line.
+
+273
+00:56:47,143 --> 00:56:51,224
+Horizontal arrow or y is between.
+
+274
+00:57:00,083 --> 00:57:06,663
+Y is between 1, this is 1, 1 to 4.
+
+275
+00:57:15,411 --> 00:57:22,411
+ve
+
+276
+00:57:23,860 --> 00:57:28,860
+x is between, here x is y minus 2.
+
+277
+00:57:33,972 --> 00:57:42,732
+x is equal to square root y dx dy.
+
+278
+00:57:51,380 --> 00:57:59,740
+So, taking region R as a type 1 region is easy to compute or easy to find the area of this region.
+
+279
+00:58:01,140 --> 00:58:01,420
+Okay.
+
+280
+00:58:04,460 --> 00:58:05,980
+Any questions, comments?
+
+281
+00:58:07,400 --> 00:58:07,960
+Other things?
+
+282
+00:58:12,436 --> 00:58:13,336
+Is this clear?
+
+283
+00:58:16,336 --> 00:58:17,476
+Yes, [öğrenci], it's clear.
+
+284
+01:13:58,003 --> 01:14:07,163
+Hello again. Sorry for the delay. But here I write break.
+
+285
+01:14:10,963 --> 01:14:12,363
+10 minutes break.
+
+286
+01:14:35,859 --> 01:14:40,139
+What about the average value of a function to a variable function?
+
+287
+01:14:55,923 --> 01:15:16,623
+Average value of a function of two variables f, x, y, is equal to 1 over the area of the r times the double integral r, f, d, a.
+
+288
+01:15:18,083 --> 01:15:19,503
+We'll get to the example.
+
+289
+01:15:26,963 --> 01:15:33,123
+Find the average value of the f is equal to x times cosine xy over the rectangles of r.
+
+290
+01:15:35,363 --> 01:15:36,403
+R is a rectangle.
+
+291
+01:15:55,699 --> 01:16:14,059
+Bir side, bir side, bir side, bir side, bir side, bir side, bir side, bir side, bir side, bir side, bir side, bir side, bir side, bir side, bir side, bir side, bir side, bir side, bir side, bir side, bir side, bir side, bir side, bir side, bir side, bir side, bir side, bir side, bir side, bir side, bir side, bir side, bir side, bir side, bir side, bir side, bir side, bir side, bir side, bir side, bir side, bir side, bir side, bir side, bir side, bir side, bir side, bir side, bir side, bir side, bir side, bir side, bir side, bir side, bir side, bir side, bir side, bir side, bir side, bir side, bir side, bir side, bir side, bir side, bir side, bir side, bir side, bir side, bir side, bir side, bir side, bir side, bir side, bir side, bir
+
+292
+01:16:18,323 --> 01:16:26,163
+pi times 1, pi, so,
+
+293
+01:16:31,699 --> 01:16:36,979
+Let us find the value of the integral of f over r.
+
+294
+01:17:01,811 --> 01:17:04,591
+x is between 0 to pi,
+
+295
+01:17:06,452 --> 01:17:11,152
+and y is between 0 to 1,
+
+296
+01:17:12,351 --> 01:17:15,311
+x cosine x, y,
+
+297
+01:17:18,051 --> 01:17:19,271
+dy,
+
+298
+01:17:23,380 --> 01:17:24,199
+Yenkes
+
+299
+01:17:32,564 --> 01:17:51,844
+This is equal to zero to pi. What is the integral of this function? We have already found the integral of this, maybe yesterday. What is the integral of this function?
+
+300
+01:17:56,180 --> 01:17:57,400
+Rik to speak to white.
+
+301
+01:18:09,140 --> 01:18:16,020
+Did you understand the question? What is the integral of x times cosine xy with respect to y?
+
+302
+01:18:25,492 --> 01:18:28,372
+It is sine
+
+303
+01:18:28,372 --> 01:18:31,012
+x, y
+
+304
+01:18:48,851 --> 01:18:56,851
+ve bu, sin x'ı,
+
+305
+01:19:03,796 --> 01:19:10,976
+dx, which is equal to minus cosine x pi to 0.
+
+306
+01:19:14,515 --> 01:19:17,515
+Bu, 2.
+
+307
+01:19:17,515 --> 01:19:19,515
+Bu,
+
+308
+01:19:19,515 --> 01:19:22,515
+Average Video of F
+
+309
+01:19:48,212 --> 01:19:50,592
+Function f over r
+
+310
+01:19:58,868 --> 01:20:07,648
+1 over pi times the integral, which is 2, 2 over pi.
+
+311
+01:20:09,268 --> 01:20:09,588
+Okay.
+
+312
+01:20:14,452 --> 01:20:21,472
+Şimdi, doble integral in polar koordinatörlerden bahsedelim. Bu bir şey önemli.
+
+313
+01:20:25,235 --> 01:20:35,855
+Now suppose that we want to compute the double integral of a function to variable function fxy on the region r.
+
+314
+01:20:36,756 --> 01:20:43,336
+And if the region r is one of the regions in the figure, this or this,
+
+315
+01:20:43,336 --> 01:20:56,155
+Actually, it is not easy to compute this double integral with our known methods.
+
+316
+01:20:57,256 --> 01:20:59,576
+Because look at this one.
+
+317
+01:21:01,175 --> 01:21:06,916
+The region is given by a circle, which is x square plus y square is equal to 1.
+
+318
+01:21:06,916 --> 01:21:15,336
+In rectangle coordinates, it is complicated to compute this integral, this double integral.
+
+319
+01:21:15,336 --> 01:21:23,416
+But if we write these Cartesian coordinates or rectangular coordinates to the,
+
+320
+01:21:23,815 --> 01:21:27,695
+Or if we transform this rectangle coordinates to the polar coordinates,
+
+321
+01:21:28,416 --> 01:21:33,076
+It is very easy to compute the double integral.
+
+322
+01:21:33,076 --> 01:21:41,076
+We can write this as this region r as theta.
+
+323
+01:21:45,908 --> 01:21:59,948
+X is equal to R cosine theta, Y is equal to R sine theta, and X square plus Y square is equal to R square.
+
+324
+01:21:59,948 --> 01:22:09,668
+Therefore, R is between 0 and 1, and theta is between 0 and 2 pi.
+
+325
+01:22:09,668 --> 01:22:18,228
+And also, this region R can be described by these polar coordinates.
+
+326
+01:22:23,731 --> 01:22:30,811
+So, so, we actually transform the region D or region R.
+
+327
+01:22:35,507 --> 01:22:36,747
+Which one? [öğrenci].
+
+328
+01:22:39,447 --> 01:22:39,927
+This one?
+
+329
+01:22:40,967 --> 01:22:41,587
+Example 3?
+
+330
+01:22:44,947 --> 01:22:45,587
+Okay.
+
+331
+01:22:48,307 --> 01:22:49,307
+Do you have a question?
+
+332
+01:23:15,252 --> 01:23:21,012
+Average value of a function over a region of r is defined by
+
+333
+01:23:23,052 --> 01:23:29,212
+Double integral of f over this region over the area of r.
+
+334
+01:23:29,572 --> 01:23:30,012
+Okay.
+
+335
+01:23:31,012 --> 01:23:31,572
+So,
+
+336
+01:23:33,932 --> 01:23:35,652
+First, we found
+
+337
+01:23:37,372 --> 01:23:38,892
+The area of the region
+
+338
+01:23:43,859 --> 01:24:06,399
+The area of the region is, the area of the rectangle, the rectangle is described by, x is between 0 and pi, and y is between 0 and 1. So the area of this rectangle is pi times 1. Okay. So, so the area of r is pi. We have 1 over pi.
+
+339
+01:24:06,399 --> 01:24:32,939
+Then, we have to find the double integral over r of f. So, the double integral of f over r is equal to this integral. So, we compute this iterated integral and find that, and find that this integral is equal to 2. So,
+
+340
+01:24:32,939 --> 01:24:44,139
+So, 1 over pi times 2 is equal to 2 over pi. Okay. Good.
+
+341
+01:24:44,139 --> 01:24:47,559
+Now,
+
+342
+01:24:51,220 --> 01:25:02,220
+We have a region D or R in rectangular coordinates.
+
+343
+01:25:09,171 --> 01:25:20,131
+If it is easy to describe this with polar coordinates, then we will use polar coordinates.
+
+344
+01:25:20,131 --> 01:25:24,371
+Okay, to compute double integral or iterated integrals.
+
+345
+01:25:25,651 --> 01:25:34,851
+So, so this region in the figure is or can be described by
+
+346
+01:25:34,851 --> 01:25:51,571
+i, theta is between alpha and beta, the lines alpha and beta, and r is between a and b.
+
+347
+01:25:52,531 --> 01:26:01,651
+Okay, then in a similar or same manner, we can compute the volume of the
+
+348
+01:26:01,651 --> 01:26:05,571
+solute, which is given by a polar coordinates.
+
+349
+01:26:07,651 --> 01:26:09,411
+I don't, I don't
+
+350
+01:26:09,411 --> 01:26:13,731
+explain this part.
+
+351
+01:26:19,859 --> 01:26:48,859
+If we have a continuous function on a polar rectangular R given by R is between A and B and theta is between alpha and beta, then the double integral of F over the region R is equal to alpha to beta integral alpha to beta integral a to B,
+
+352
+01:26:48,859 --> 01:27:04,939
+F, this is actually F, X, Y, we write X as R cosine theta and Y as R sine theta, but, but we have an additional term R here.
+
+353
+01:27:08,059 --> 01:27:16,939
+Do not forget to write this additional term R, dr, d theta.
+
+354
+01:27:16,939 --> 01:27:18,319
+Ok?
+
+355
+01:27:23,347 --> 01:27:26,467
+Don't forget to write this additional term.
+
+356
+01:27:27,667 --> 01:27:28,667
+Look at the example.
+
+357
+01:27:41,363 --> 01:27:51,803
+Avaliated double integral, or iterated integral, where r is the region in the upper half plane.
+
+358
+01:27:57,332 --> 01:28:05,811
+Bound by the circles, x² plus y² is equal to 1 and x² plus y² is equal to 4.
+
+359
+01:28:08,612 --> 01:28:12,172
+So, the region
+
+360
+01:28:16,180 --> 01:28:20,940
+As, can be described by,
+
+361
+01:28:29,203 --> 01:28:30,243
+S
+
+362
+01:28:37,555 --> 01:28:41,035
+R consist of the points x, y such that
+
+363
+01:28:45,332 --> 01:29:08,811
+The region in the upper half plane means y is positive and x square plus 1 square is between 1 and 4.
+
+364
+01:29:16,500 --> 01:29:23,909
+Bu, bu
+
+365
+01:29:42,387 --> 01:29:42,707
+Ok.
+
+366
+01:29:55,315 --> 01:30:04,036
+So, in polar coordinates, it is very easy to compute this region, the integral of this region.
+
+367
+01:30:24,916 --> 01:30:27,596
+So, this is the region R.
+
+368
+01:30:31,060 --> 01:30:40,660
+And we can describe this region with power coordinates like this.
+
+369
+01:30:42,660 --> 01:30:44,260
+R is between
+
+370
+01:30:47,764 --> 01:30:49,764
+1 ve 2.
+
+371
+01:30:54,676 --> 01:30:58,876
+ve teta ile 0 ve 5.
+
+372
+01:31:09,460 --> 01:31:21,380
+Therefore, the integral, the double integral, over the region, S,
+
+373
+01:31:35,796 --> 01:31:37,695
+Bubble integral h
+
+374
+01:31:50,771 --> 01:31:52,271
+R cos theta
+
+375
+01:31:58,676 --> 01:31:59,916
+R sin theta.
+
+376
+01:32:06,228 --> 01:32:11,507
+h, dr, d t t
+
+377
+01:32:21,684 --> 01:32:25,144
+Theta is between zero and pi.
+
+378
+01:32:30,868 --> 01:32:33,188
+R is between 1 and 2.
+
+379
+01:32:36,468 --> 01:32:42,307
+F R cosine theta, R sine theta, means X is R cosine theta, so this is 3 times.
+
+380
+01:32:45,971 --> 01:32:56,152
+r cosin teta, plus 4 times sine square teta,
+
+381
+01:33:04,467 --> 01:33:11,108
+r, dr, dtheta.
+
+382
+01:33:14,467 --> 01:33:19,667
+Now, taking the integral of this inside,
+
+383
+01:33:31,764 --> 01:33:41,604
+R'ı
+
+384
+01:33:45,332 --> 01:33:46,612
+0 to pi,
+
+385
+01:33:49,552 --> 01:33:50,412
+R³.
+
+386
+01:33:54,771 --> 01:33:59,692
+O sin theta plus R square over 2.
+
+387
+01:34:01,492 --> 01:34:05,931
+2R sin square theta.
+
+388
+01:34:11,923 --> 01:34:29,984
+So, we have also r here, 4 times r sin2 theta. So, this is r square, r cube. Therefore, this is 4 to the r cube.
+
+389
+01:34:55,475 --> 01:34:56,975
+There is something wrong here.
+
+390
+01:35:08,659 --> 01:35:18,579
+We have x is r cosine theta, so this is three times r cosine theta. Oh, sorry. Y is r sine theta, so this is r square.
+
+391
+01:35:27,636 --> 01:35:44,836
+4 times r² sin² θ, r d r θ. Now, we have 3 r times r, 3 r². So, this is 3 times r³ over 3 r³ cosθ.
+
+392
+01:35:51,123 --> 01:35:55,283
+Plus, this is, art to the,
+
+393
+01:36:05,619 --> 01:36:19,180
+This is r cubed, so r to the 4 over 4, r to the 4 sine, square theta, and the bonds are,
+
+394
+01:36:25,619 --> 01:36:27,849
+R1-2,
+
+395
+01:36:31,572 --> 01:36:32,592
+D Theta
+
+396
+01:36:40,180 --> 01:36:42,400
+İzgiz, 0 to the pi.
+
+397
+01:36:47,220 --> 01:36:57,240
+8, cosin teta, minus, cosin teta, 7, cosin teta,
+
+398
+01:37:03,667 --> 01:37:09,947
+16, 15,
+
+399
+01:37:22,452 --> 01:37:41,652
+0 to pi, 7 sin, sorry, 7 cosin teta, plus 15 sin2 teta, d teta.
+
+400
+01:37:44,452 --> 01:37:46,771
+And this is homework for you to compute.
+
+401
+01:38:01,460 --> 01:38:03,939
+And example 2.
+
+402
+01:38:07,444 --> 01:38:15,923
+Example 4, Example 3, all these questions are homework for you until next week.
+
+403
+01:38:15,923 --> 01:38:16,264
+Okay.
+
+404
+01:38:18,864 --> 01:38:26,624
+Please try to solve these examples until our next lecture.
+
+405
+01:38:29,884 --> 01:38:34,923
+And we have last lecture next week.
+
+406
+01:38:34,923 --> 01:38:43,464
+So, if you have questions or other things, please prepare for next week.
+
+407
+01:38:43,664 --> 01:38:43,964
+Okay.
+
+408
+01:38:47,923 --> 01:38:54,923
+Do you have any questions? Comments? Other thing?
+
+409
+01:38:59,731 --> 01:39:07,011
+Teşekkürler, sorry about the interruption. Those remaining examples was homework, am I right?
+
+410
+01:39:08,231 --> 01:39:08,692
+Sorry?
+
+411
+01:39:09,652 --> 01:39:12,591
+The remaining examples is homework.
+
+412
+01:39:12,591 --> 01:39:23,192
+These are homework, but we will solve these all examples next week. Okay. Please try to solve until next week.
+
+413
+01:39:23,952 --> 01:39:24,851
+Okay, Teşekkürler. Thank you.

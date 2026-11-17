@@ -1,0 +1,3143 @@
+1
+00:00:56,243 --> 00:00:57,363
+Good morning to everybody.
+
+2
+00:00:59,503 --> 00:01:06,424
+So, for the delay, I have a small problem with my computer, but I fixed it now.
+
+3
+00:01:07,843 --> 00:01:11,983
+So, I am very sorry for the delay.
+
+4
+00:01:13,403 --> 00:01:17,783
+And I wish you did well in your exam.
+
+5
+00:01:19,884 --> 00:01:21,283
+How was your exam?
+
+6
+00:01:26,132 --> 00:01:26,852
+Yaşas.
+
+7
+00:01:30,867 --> 00:01:31,408
+Göt?
+
+8
+00:01:35,891 --> 00:01:41,171
+I think the real exam is easier than the sample exam. What do you think?
+
+9
+00:01:50,099 --> 00:01:50,459
+Ok.
+
+10
+00:02:02,739 --> 00:02:18,079
+I will announce your exams course within a week because the commission or the department of mathematics will announce your exam results.
+
+11
+00:02:19,419 --> 00:02:27,019
+I have no document about your exams now, but in a week I will announce your exams course.
+
+12
+00:02:27,019 --> 00:02:32,859
+Okay, today we will continue with the partial derivatives.
+
+13
+00:02:39,219 --> 00:02:42,379
+Do you have any questions or comments?
+
+14
+00:02:49,395 --> 00:02:53,395
+Tamam.
+
+15
+00:02:53,395 --> 00:02:58,395
+Let's start with the partial derivatives.
+
+16
+00:03:09,939 --> 00:03:12,859
+[öğrenci], ne demek ki, bu bir examen farklı?
+
+17
+00:03:17,075 --> 00:03:19,495
+Did you attend the sample exam, [öğrenci]?
+
+18
+00:03:30,675 --> 00:03:40,835
+I think you didn't attend to the sample exam because the sample exam, yes.
+
+19
+00:03:44,500 --> 00:03:50,740
+You tried so, but I think the real exam is very, very easy.
+
+20
+00:03:53,740 --> 00:03:56,240
+Compare it to the sample exam.
+
+21
+00:03:58,080 --> 00:04:07,960
+I prepared this sample exam that you see how the real exam will be like that.
+
+22
+00:04:13,524 --> 00:04:16,524
+Tamam, bir problem. Bir sonraki examin.
+
+23
+00:04:19,524 --> 00:04:25,524
+Ben de iyi bir zaman.
+
+24
+00:04:25,524 --> 00:04:27,524
+Tamam, bir sonraki.
+
+25
+00:04:34,132 --> 00:04:49,912
+Now, the partial derivatives is very important in calculus 2, and we have many questions about the partial derivatives in final exam.
+
+26
+00:04:54,100 --> 00:04:54,620
+Maw!
+
+27
+00:05:02,516 --> 00:05:08,295
+We have a function f with two variables.
+
+28
+00:05:10,236 --> 00:05:15,556
+F depends on both x and y.
+
+29
+00:05:17,896 --> 00:05:26,676
+When taking the derivatives of two variables functions, functions with two variables,
+
+30
+00:05:26,676 --> 00:05:40,676
+We suppose first, we let only first x vary while keeping y fix.
+
+31
+00:05:49,620 --> 00:06:10,259
+Okay, so if only x chains and y is fixed, then say y is b, which is constant, then we know how to take the derivative of a single variable function.
+
+32
+00:06:10,259 --> 00:06:21,280
+So in this case, gx is equal to fxb, where b is a constant.
+
+33
+00:06:21,280 --> 00:06:36,100
+So, so we call it the partial derivative of f with respect to the x at some point a, b.
+
+34
+00:06:36,100 --> 00:06:51,139
+And we denote it by the partial derivative of x at the point a, b, f, subsequent x, a, b, or, or.
+
+35
+00:06:55,124 --> 00:06:59,124
+df, dx.
+
+36
+00:07:01,724 --> 00:07:08,004
+And also, we know the definition, the formal definition of a derivative for single variable functions.
+
+37
+00:07:09,084 --> 00:07:15,984
+So, the derivative of g at the point a is equal to this limit.
+
+38
+00:07:15,984 --> 00:07:32,984
+Therefore, if you write g in place in here, the partial derivative of f with respect to the x at the point a, b is equal to this limit.
+
+39
+00:07:32,984 --> 00:07:44,984
+And similarly, we can define the partial derivative of f with respect to the y at this point a, b in a similar way.
+
+40
+00:07:44,984 --> 00:07:52,984
+And we will use these notations in our lectures.
+
+41
+00:07:52,984 --> 00:08:02,984
+If z is a two variable functions, it depends on x and y.
+
+42
+00:08:02,984 --> 00:08:24,984
+Then, the partial derivative of f or z with respect to x can be denoted by fx df over dx or dz over dx.
+
+43
+00:08:24,984 --> 00:08:34,984
+or we can write this as zx.
+
+44
+00:08:34,984 --> 00:08:35,984
+Okay.
+
+45
+00:08:35,984 --> 00:08:55,984
+And again, similarly, the partial derivative of y with respect to the, sorry, the partial derivative of f with respect to the y is, can be denoted by these notations.
+
+46
+00:08:55,984 --> 00:09:02,984
+We will use also zy.
+
+47
+00:09:02,984 --> 00:09:03,984
+And again, we will use the same thing as we can do for the first time.
+
+48
+00:09:03,984 --> 00:09:14,984
+So, the first time we have to do this, we will use the same thing as we can do for the first time.
+
+49
+00:09:37,268 --> 00:09:37,988
+Evet, şöyle.
+
+50
+00:09:42,932 --> 00:09:53,932
+Partial derivative comes from, in single variable functions we have y is equal to f of x.
+
+51
+00:09:53,932 --> 00:10:04,211
+So, we only have one derivative, basic derivative, dy over dx.
+
+52
+00:10:04,211 --> 00:10:14,211
+But, if you have two variable functions such that z is equal to 0.
+
+53
+00:10:17,620 --> 00:10:30,340
+is equal to f of x y we have two independent variables x and y so so we have to if you want to
+
+54
+00:10:30,340 --> 00:10:40,100
+take the derivative of the function z we have two independent variables x and y so we have to take
+
+55
+00:10:40,100 --> 00:11:00,899
+the derivative of z with respect to both x and y so so we have the f dx and the f d y in two variable
+
+56
+00:11:00,899 --> 00:11:09,460
+functions okay and we have a very very easy and basic rule to taking the partial derivatives of
+
+57
+00:11:09,460 --> 00:11:20,340
+two variables function you can also apply this for the functions with more than two variables to find
+
+58
+00:11:22,740 --> 00:11:26,820
+the partial derivative of f with respect to x
+
+59
+00:11:28,580 --> 00:11:38,180
+regard y as a constant and differentiate this function with respect to x and to find the
+
+60
+00:11:38,899 --> 00:11:48,820
+partial derivative of f with respect to y then regard x as a constant and differentiate the function
+
+61
+00:11:48,820 --> 00:11:59,460
+with respect to the y okay for example
+
+62
+00:12:08,244 --> 00:12:15,244
+Bu iki deklarımızın önemli.
+
+63
+00:12:15,244 --> 00:12:20,244
+Bu, aslında, deklarımızın parçal
+
+64
+00:12:20,244 --> 00:12:23,244
+derivative
+
+65
+00:12:23,244 --> 00:12:25,244
+in
+
+66
+00:12:29,203 --> 00:12:30,524
+Partial Functions
+
+67
+00:12:37,683 --> 00:12:38,543
+Diyos!
+
+68
+00:12:59,892 --> 00:13:02,712
+Derivative of partial functions. Okay.
+
+69
+00:13:04,572 --> 00:13:16,112
+Now, we have a function with two variables f, x, y, and it is given by x cube plus x square times y cube minus 2 y square.
+
+70
+00:13:17,032 --> 00:13:24,772
+And we are looking for its partial derivatives with respect to x and y at the point 2, 1.
+
+71
+00:13:24,772 --> 00:13:26,392
+Now,
+
+72
+00:13:29,844 --> 00:13:30,844
+First
+
+73
+00:13:35,283 --> 00:13:37,923
+Y'e y
+
+74
+00:13:43,539 --> 00:13:50,539
+ve
+
+75
+00:13:52,019 --> 00:13:54,039
+Fersiadi, with respect to x,
+
+76
+00:14:06,740 --> 00:14:07,659
+We have
+
+77
+00:14:11,283 --> 00:14:19,644
+We take or we hold or we regard or we trade y as a constant.
+
+78
+00:14:20,524 --> 00:14:28,423
+So here y cube is only a constant.
+
+79
+00:14:28,423 --> 00:14:31,864
+Here y square is only a constant.
+
+80
+00:14:32,524 --> 00:14:39,283
+When we taking the partial derivative of f with respect to x.
+
+81
+00:14:39,283 --> 00:14:52,163
+So. The partial derivative of f with respect to x is equal to the derivative of x, which is.
+
+82
+00:14:53,563 --> 00:14:55,543
+3x square.
+
+83
+00:14:57,403 --> 00:14:57,943
+Plus.
+
+84
+00:15:00,703 --> 00:15:01,783
+2x.
+
+85
+00:15:03,884 --> 00:15:05,283
+And this is constant.
+
+86
+00:15:05,283 --> 00:15:07,624
+y cube.
+
+87
+00:15:07,624 --> 00:15:11,163
+And since this is a constant.
+
+88
+00:15:12,663 --> 00:15:17,823
+In the partial derivative of f with respect to x this.
+
+89
+00:15:18,783 --> 00:15:21,423
+The derivative of this is zero.
+
+90
+00:15:22,264 --> 00:15:22,644
+Okay.
+
+91
+00:15:25,004 --> 00:15:25,803
+And.
+
+92
+00:15:25,803 --> 00:15:28,264
+We are looking for.
+
+93
+00:15:28,744 --> 00:15:33,043
+The partial derivative of f at the point to one.
+
+94
+00:15:33,043 --> 00:15:33,803
+So.
+
+95
+00:15:36,604 --> 00:15:37,183
+Writing.
+
+96
+00:15:37,183 --> 00:15:50,364
+And.
+
+97
+00:15:41,779 --> 00:16:05,779
+x as 2 and y as 1, we have 3 times 2 squared plus 2 times 2 times 1 cube gives 12 plus 4, 16.
+
+98
+00:16:05,779 --> 00:16:09,139
+ok
+
+99
+00:16:12,980 --> 00:16:18,700
+And now, holding or treat
+
+100
+00:16:23,475 --> 00:16:25,015
+x as constant
+
+101
+00:16:36,307 --> 00:16:43,307
+ve
+
+102
+00:16:52,980 --> 00:17:19,740
+We have, now we consider x is constant, therefore the partial derivative of f with respect to y, derivative of constant is 0, so we have 0 plus 3y squared times x squared.
+
+103
+00:17:22,980 --> 00:17:23,599
+Sorry.
+
+104
+00:17:32,372 --> 00:17:33,172
+minus
+
+105
+00:17:33,172 --> 00:17:37,072
+4y
+
+106
+00:17:37,072 --> 00:17:39,092
+and
+
+107
+00:17:46,483 --> 00:17:51,483
+Bu, derivative at the point 2, 1, gives...
+
+108
+00:18:00,564 --> 00:18:08,163
+3 times 2 square times 1, cube minus 4 times 1.
+
+109
+00:18:11,923 --> 00:18:13,923
+...equal to...
+
+110
+00:18:16,483 --> 00:18:17,483
+...8.
+
+111
+00:18:21,875 --> 00:18:22,635
+Is it okay?
+
+112
+00:18:25,596 --> 00:18:26,336
+Does it
+
+113
+00:18:26,336 --> 00:18:29,195
+make sense?
+
+114
+00:18:36,339 --> 00:18:37,339
+Mut.
+
+115
+00:18:44,692 --> 00:18:46,971
+Now, look at the example tree.
+
+116
+00:18:51,892 --> 00:18:59,731
+Şimdi, iki variable function, ama bu, bir şey, bir şey, bir şey.
+
+117
+00:19:03,092 --> 00:19:24,812
+ve, or, or, not implicit function, it's a composite function, because we have a sine function, and also two variable function inside the sine function.
+
+118
+00:19:24,812 --> 00:19:34,312
+So, we can use here, the chain rule for the functions of one variable.
+
+119
+00:20:07,604 --> 00:20:14,784
+We have, we are looking for the partial derivative of f with respect to x and with respect to y.
+
+120
+00:20:15,484 --> 00:20:28,024
+Then df dx is equal to, we use the chain rule.
+
+121
+00:20:28,804 --> 00:20:33,104
+So first take the derivative of the function, which is sine function.
+
+122
+00:20:33,104 --> 00:20:54,483
+So the derivative of sine is cosine x over 1 plus y times the derivative of the inside of the function.
+
+123
+00:20:54,483 --> 00:21:02,983
+So you only take the derivative of inside of this function with respect to x.
+
+124
+00:21:03,104 --> 00:21:16,264
+So considering or treating y as constant, we only take the derivative of this function with respect to x gives.
+
+125
+00:21:16,264 --> 00:21:23,264
+Or first of all, write d over dx.
+
+126
+00:21:23,264 --> 00:21:44,264
+So we have the derivative of the function.
+
+127
+00:21:29,971 --> 00:21:33,652
+So, this gives cosine,
+
+128
+00:21:36,811 --> 00:21:44,692
+and the derivative of this function with respect to x is equal to 1 over 1 plus y.
+
+129
+00:21:46,811 --> 00:21:48,211
+And similarly,
+
+130
+00:21:51,827 --> 00:22:18,788
+df, dy, y, is equal to, again, the derivative of the function outside, cosine, x over 1 plus y, times the derivative of inside with respect to y.
+
+131
+00:22:30,963 --> 00:22:38,023
+So, what is the derivative of this function, considering x as constant?
+
+132
+00:22:45,332 --> 00:22:51,052
+x olur, 1 plus y, süker.
+
+133
+00:22:56,211 --> 00:22:56,672
+Ok?
+
+134
+00:23:15,412 --> 00:23:31,231
+Now, the function z is given implicitly, and we are looking for the partial derivatives with respect to x and with respect to y.
+
+135
+00:23:31,231 --> 00:23:42,312
+Actually, in later, we will see how do we take the partial derivatives of an implicitly given function,
+
+136
+00:23:42,312 --> 00:23:50,912
+but here it is very easy to find the partial derivative of this implicitly function.
+
+137
+00:23:50,912 --> 00:23:56,792
+First of all, we are looking for
+
+138
+00:24:00,596 --> 00:24:01,596
+DZ
+
+139
+00:24:07,476 --> 00:24:09,976
+Bu amaç, DX.
+
+140
+00:24:13,779 --> 00:24:31,460
+We only here in implicitly given functions, we will be very careful to treat y as a constant here.
+
+141
+00:24:31,460 --> 00:24:36,259
+So, sorry, sorry.
+
+142
+00:24:47,059 --> 00:24:52,059
+First of all, first of all, to find...
+
+143
+00:24:58,932 --> 00:25:02,031
+dz over dx
+
+144
+00:25:02,031 --> 00:25:05,812
+be differentiated.
+
+145
+00:25:17,748 --> 00:25:18,748
+İmplisitli
+
+146
+00:25:24,500 --> 00:25:26,000
+vektör x.
+
+147
+00:25:49,268 --> 00:25:56,508
+So, what is the derivative of x cubed with respect to x we have?
+
+148
+00:26:02,420 --> 00:26:13,400
+3 x squared plus derivative of y with respect to x is 0.
+
+149
+00:26:13,400 --> 00:26:14,400
+So this is 0.
+
+150
+00:26:15,400 --> 00:26:19,320
+And here we have z cubed.
+
+151
+00:26:19,320 --> 00:26:32,759
+Since z is a function of x and y, it includes x.
+
+152
+00:26:32,759 --> 00:26:40,560
+So it has a derivative, it has a partial derivative with respect to x.
+
+153
+00:26:41,060 --> 00:26:45,300
+So we have to take the derivative of this function z.
+
+154
+00:26:45,300 --> 00:26:51,140
+Since this is a composite function, we use the chain rule.
+
+155
+00:26:51,140 --> 00:27:12,620
+So first take the derivative of z cubed, which is 3 times z squared times derivative of the inside of the function.
+
+156
+00:27:12,620 --> 00:27:16,900
+We don't know the inside of the what is the inside of the z.
+
+157
+00:27:17,140 --> 00:27:24,740
+So we write the derivative of z with respect to x.
+
+158
+00:27:26,019 --> 00:27:26,680
+Okay.
+
+159
+00:27:30,387 --> 00:27:40,207
+Plus, now, we have a multiplication of functions.
+
+160
+00:27:42,207 --> 00:27:49,487
+We consider y is constant, but we have here x and z.
+
+161
+00:27:50,288 --> 00:27:57,947
+So, we take the derivative of the multiplication of two functions.
+
+162
+00:28:00,387 --> 00:28:08,167
+First of all, what is the derivative of this function with respect to x?
+
+163
+00:28:09,127 --> 00:28:13,307
+This is 6y z.
+
+164
+00:28:18,259 --> 00:28:18,900
+Plus
+
+165
+00:28:23,827 --> 00:28:27,107
+6, x, y
+
+166
+00:28:31,092 --> 00:28:36,652
+ve derivataçı, z ile
+
+167
+00:28:40,660 --> 00:28:47,100
+x is equal to the derivative of one is zero.
+
+168
+00:28:48,680 --> 00:28:49,000
+Okay.
+
+169
+00:28:50,320 --> 00:28:52,920
+We think this as
+
+170
+00:28:58,420 --> 00:29:12,060
+6y, this is constant, and x times z. And take the derivative of the multiplication of two functions.
+
+171
+00:29:13,440 --> 00:29:26,400
+The derivative of first one, the derivative of x with respect to x is 6y z plus the derivative of z,
+
+172
+00:29:26,400 --> 00:29:45,400
+which is 6xy times the derivative of x is equal to zero. Solving this equation for, because we are looking for
+
+173
+00:29:45,400 --> 00:29:55,400
+d z over dx. So solving this equation for,
+
+174
+00:30:00,692 --> 00:30:03,432
+DZ over DX,
+
+175
+00:30:04,152 --> 00:30:05,132
+we have
+
+176
+00:30:28,788 --> 00:30:32,508
+is equal to minus
+
+177
+00:30:40,948 --> 00:30:43,548
+Minus 6yz.
+
+178
+00:30:44,548 --> 00:30:45,348
+Therefore,
+
+179
+00:30:47,748 --> 00:30:51,028
+D z over D x
+
+180
+00:30:51,028 --> 00:30:53,628
+is equal to
+
+181
+00:31:20,468 --> 00:31:36,827
+Okay. Or you can cancel 3 in this equation. You have minus x square plus 2 y z over z square plus 3 x y.
+
+182
+00:31:36,827 --> 00:31:48,728
+And similarly, to find d z over dy, we differentiate this function implicitly with respect to y.
+
+183
+00:31:48,728 --> 00:31:50,128
+Therefore,
+
+184
+00:31:55,380 --> 00:32:08,100
+Derivative of x3 with respect to y is 0, and the derivative of y3 with respect to y is 3y2.
+
+185
+00:32:14,740 --> 00:32:21,920
+Plus, since z includes y, it has a derivative with respect to y.
+
+186
+00:32:23,240 --> 00:32:33,920
+So, first of all, taking the derivative of z, 3 times z square, times the derivative of z,
+
+187
+00:32:36,420 --> 00:32:41,359
+with respect to y, plus,
+
+188
+00:32:44,819 --> 00:32:47,539
+Now, we take
+
+189
+00:32:55,508 --> 00:33:00,208
+Derivative of this, multiplication of this function.
+
+190
+00:33:00,208 --> 00:33:09,468
+So, the derivative of y here is 6xz.
+
+191
+00:33:13,748 --> 00:33:32,347
+Plus, the derivative of z with respect to y, 6xy, dz, dy, is equal to 0.
+
+192
+00:33:36,276 --> 00:33:44,276
+Again, if we solve this equation for dz over dy, we have...
+
+193
+00:34:11,827 --> 00:34:12,907
+Dz,
+
+194
+00:34:15,047 --> 00:34:16,288
+over dy,
+
+195
+00:34:16,527 --> 00:34:18,248
+is equal to minus,
+
+196
+00:34:23,987 --> 00:34:37,507
+y2 plus 2xz over z2 plus 2.
+
+197
+00:34:40,692 --> 00:34:42,012
+x, y.
+
+198
+00:34:44,652 --> 00:34:45,211
+Ok.
+
+199
+00:34:47,291 --> 00:34:48,391
+It's ok.
+
+200
+00:35:07,572 --> 00:35:11,132
+Is there anyone who hears me other than [öğrenci]?
+
+201
+00:35:17,972 --> 00:35:19,432
+Okay, thank you.
+
+202
+00:35:22,963 --> 00:35:32,163
+So, we take the partial derivatives of an implicitly given function like this.
+
+203
+00:35:34,163 --> 00:35:39,563
+[öğrenci], the right side of this equation.
+
+204
+00:35:48,532 --> 00:35:53,432
+We take the derivative of this function implicitly. Okay.
+
+205
+00:35:55,852 --> 00:36:05,612
+So, we take the derivatives of both sides. We have one which is constant at the right side of the equation.
+
+206
+00:36:05,612 --> 00:36:17,032
+So, the derivative of a constant with respect to x and with respect to y is 0.
+
+207
+00:36:17,032 --> 00:36:21,652
+So, this is equal to 0. Okay.
+
+208
+00:36:31,251 --> 00:36:48,371
+We can also talk about the partial derivatives of functions more than two variables and the limit definition or the formal definition is similar.
+
+209
+00:37:01,300 --> 00:37:31,280
+ve en general, if we have a function u with n variables, u is a function with n variables, and its partial derivative with respect to the i'th variable, say as xi, is given by this limit, and also we can write du over dxi or
+
+210
+00:37:31,300 --> 00:37:35,060
+fi or fxi, for example.
+
+211
+00:37:39,668 --> 00:37:46,188
+We have a function f, x, y, z. So this is a three variables function.
+
+212
+00:37:48,188 --> 00:38:04,988
+And you can think, or you can consider this as w is equal to f, x, y, z.
+
+213
+00:38:15,539 --> 00:38:30,579
+So, we are looking for, or we take the partial derivative of this function, w, with respect to x, y, and z.
+
+214
+00:38:34,547 --> 00:38:47,627
+To take or to find the partial derivative of f or w with respect to x.
+
+215
+00:38:55,443 --> 00:39:03,284
+Y ve z as constant.
+
+216
+00:39:04,103 --> 00:39:05,483
+We hold
+
+217
+00:39:05,483 --> 00:39:11,603
+Y ve z as constant.
+
+218
+00:39:11,844 --> 00:39:15,804
+So, if you take Y and Z as constant,
+
+219
+00:39:16,163 --> 00:39:19,663
+what is the derivative of this function with respect to X?
+
+220
+00:39:26,003 --> 00:39:27,543
+X is constant.
+
+221
+00:39:29,344 --> 00:39:50,643
+You can think, or you can write if you have a problem, or if you don't like X and Z, you think X is a number like A, and Z is a number like B.
+
+222
+00:39:50,643 --> 00:39:55,643
+So this is E to the...
+
+223
+00:39:58,867 --> 00:40:01,327
+Sorry, this is here, why?
+
+224
+00:40:02,547 --> 00:40:03,107
+I'm sorry.
+
+225
+00:40:06,739 --> 00:40:14,459
+So, this is e to the ax lnb.
+
+226
+00:40:14,459 --> 00:40:20,179
+Then, what is the derivative of this function with respect to the x?
+
+227
+00:40:21,139 --> 00:40:31,759
+Derivative of this function with respect to x is lnb times the derivative of e to the ax.
+
+228
+00:40:31,759 --> 00:40:38,759
+So, lnb times a times e to the ax.
+
+229
+00:40:38,759 --> 00:40:53,759
+Therefore, this is y lnz e to the xy.
+
+230
+00:40:53,759 --> 00:40:54,759
+Okay.
+
+231
+00:40:54,759 --> 00:41:05,759
+And similarly, the derivative of f with respect to y.
+
+232
+00:41:13,043 --> 00:41:36,003
+We think or we consider x and z are constants. So, so, if x is constant, then the derivative of e to the x times y,
+
+233
+00:41:36,003 --> 00:41:42,603
+x and z
+
+234
+00:41:42,603 --> 00:41:48,763
+e to the x y.
+
+235
+00:41:50,903 --> 00:41:54,523
+And the last one.
+
+236
+00:42:03,699 --> 00:42:05,919
+Partial derivative of f
+
+237
+00:42:10,260 --> 00:42:12,860
+with respect to z.
+
+238
+00:42:27,443 --> 00:42:33,443
+Y'e z'constant
+
+239
+00:42:33,443 --> 00:42:37,443
+ve x'e z'constant
+
+240
+00:42:42,195 --> 00:42:47,195
+Hold X and Z constant
+
+241
+00:42:47,195 --> 00:42:52,476
+And differentiate with respect to Y
+
+242
+00:42:52,476 --> 00:42:59,915
+So, finding the partial derivative of F with respect to Z
+
+243
+00:42:59,915 --> 00:43:05,935
+We consider or we treat X and Y are constant
+
+244
+00:43:05,935 --> 00:43:08,375
+So, we have
+
+245
+00:43:08,375 --> 00:43:14,375
+We have only the derivative of L and Z
+
+246
+00:43:14,375 --> 00:43:17,275
+This is constant
+
+247
+00:43:17,275 --> 00:43:19,255
+E to the
+
+248
+00:43:19,255 --> 00:43:22,516
+X times Y
+
+249
+00:43:27,987 --> 00:43:34,947
+ve derivetif of ln z with respect to z is 1 over z.
+
+250
+00:43:47,795 --> 00:44:06,315
+We found this by holding x and y as constant and take the derivative with respect to z.
+
+251
+00:44:11,347 --> 00:44:11,788
+Ok?
+
+252
+00:44:19,251 --> 00:44:25,931
+Now, we will talk about the higher derivatives, higher partial derivatives.
+
+253
+00:44:26,931 --> 00:44:40,052
+If we have a function f with two variables, and we know or we learn how to find its partial derivatives with respect to x and with respect to y.
+
+254
+00:44:41,971 --> 00:44:44,532
+Since, since,
+
+255
+00:44:52,275 --> 00:44:54,955
+is a function with two variables.
+
+256
+00:44:57,955 --> 00:44:58,275
+it's
+
+257
+00:45:02,612 --> 00:45:12,492
+Partial derivatives, df over dx, df over dy, are also,
+
+258
+00:45:22,675 --> 00:45:24,456
+Fakşi'nin bir parçası.
+
+259
+00:45:34,291 --> 00:45:49,291
+So, we can find the partial derivative of f with respect to x.
+
+260
+00:45:49,291 --> 00:46:07,291
+I mean, we can find the second partial derivative of f, which is a partial derivative of df over dx with respect to x and with respect to y.
+
+261
+00:46:07,291 --> 00:46:08,291
+Okay.
+
+262
+00:46:08,291 --> 00:46:20,291
+And we denote this y f, x, x, which is the second partial derivative with respect to x.
+
+263
+00:46:20,291 --> 00:46:27,291
+The second partial derivative of f with respect to y.
+
+264
+00:46:27,291 --> 00:46:35,291
+And the second partial derivative of f with respect to x and the others.
+
+265
+00:46:35,291 --> 00:46:38,291
+Okay.
+
+266
+00:46:38,291 --> 00:46:58,291
+So, so if you want to take the second partial derivative of f, x, you only take the partial derivative of this one with respect to x.
+
+267
+00:46:58,291 --> 00:46:59,291
+Okay.
+
+268
+00:46:59,291 --> 00:47:19,291
+And we will denote these second partial derivatives by f, x, x or d square f over the x square or d square z over the x square or, or z.
+
+269
+00:47:19,291 --> 00:47:20,291
+And we will do that.
+
+270
+00:47:20,291 --> 00:47:21,291
+Okay.
+
+271
+00:47:26,452 --> 00:47:29,052
+X
+
+272
+00:47:33,268 --> 00:47:34,887
+Z, X, Y.
+
+273
+00:47:35,827 --> 00:47:36,987
+Here, please,
+
+274
+00:47:38,347 --> 00:47:39,048
+be careful.
+
+275
+00:47:40,548 --> 00:47:41,148
+First,
+
+276
+00:47:41,507 --> 00:47:42,427
+we take
+
+277
+00:47:42,427 --> 00:47:44,847
+in F, X, Y.
+
+278
+00:47:45,307 --> 00:47:47,048
+First, we take
+
+279
+00:47:47,048 --> 00:47:49,248
+the partial derivative of F
+
+280
+00:47:49,248 --> 00:47:51,108
+with respect to X.
+
+281
+00:47:53,188 --> 00:47:54,068
+First,
+
+282
+00:47:57,492 --> 00:48:05,892
+And then, take the partial derivative of fx with respect to y.
+
+283
+00:48:06,892 --> 00:48:12,211
+Okay, the order is first x and second y.
+
+284
+00:48:15,731 --> 00:48:22,592
+ve bu, denot edilebilir ve z y x.
+
+285
+00:48:48,403 --> 00:48:48,864
+So,
+
+286
+00:48:53,748 --> 00:48:55,987
+For a two-variable function f,
+
+287
+00:49:08,179 --> 00:49:11,379
+We have partial derivatives with respect to
+
+288
+00:49:21,427 --> 00:49:22,107
+Y
+
+289
+00:49:25,907 --> 00:49:32,907
+Ve diğer tarafından
+
+290
+00:50:15,188 --> 00:50:20,788
+Evet, ben biraz sonra bir durumu.
+
+291
+00:50:20,788 --> 00:50:31,177
+Evet, ben biraz sonra bir durumu görmek için bir durumu görmek için bir durumu görmek için bir durumu görmek için bir durumu görmek için bir durumu görmek için bir durumu görmek için bir durumu görmek için bir durumu görmek için bir durumu görmek için bir durumu görmek için bir durumu görmek için bir durumu görmek için bir durumu görmek için bir durumu görmek için bir durumu görmek için bir durumu görmek için bir durumu görmek için bir durumu görmek için bir durumu görmek için bir durumu görmek için bir durumu görmek için bir durumu görmek için bir durumu görmek için bir durumu görmek için bir durumu görmek için bir durumu görmek için bir durumu görmek için bir durumu görmek için bir durumu görmek için bir durumu görmek için bir durumu görmek için bir durumu görmek için bir durumu görmek için bir durumu görmek için bir durumu görmek için bir dur
+
+292
+01:02:47,219 --> 01:02:50,179
+Tamam, let us continue with the example.
+
+293
+01:02:52,179 --> 01:02:58,099
+And before the example, it is important to note that
+
+294
+01:03:01,299 --> 01:03:11,299
+in the notation, the second partial derivative of, for example, f xy
+
+295
+01:03:11,299 --> 01:03:27,299
+or d square f over dy dx means we first take or we first differentiate f with this vector x then
+
+296
+01:03:32,275 --> 01:03:34,515
+with respect to y.
+
+297
+01:03:35,395 --> 01:03:35,655
+Okay.
+
+298
+01:03:38,536 --> 01:03:39,955
+For example,
+
+299
+01:03:42,835 --> 01:03:45,695
+find the second partial derivatives of
+
+300
+01:03:51,411 --> 01:03:51,931
+F
+
+301
+01:03:55,572 --> 01:03:57,572
+veçiz gibi bir
+
+302
+01:04:00,916 --> 01:04:06,896
+X qub plus X square times Y cube minus 2Y square.
+
+303
+01:04:10,675 --> 01:04:16,675
+Bu, aslında, bu, aynı şey.
+
+304
+01:04:16,675 --> 01:04:19,996
+Ops, what's the problem, hiç?
+
+305
+01:04:31,668 --> 01:04:32,428
+[öğrenci],
+
+306
+01:04:36,340 --> 01:04:53,700
+fxx, fxy, fyx, and fyy. So, to find fxx, first of all, we have to find fx.
+
+307
+01:05:02,324 --> 01:05:20,204
+We consider, or we hold y as constant and differentiate with respect to x, which is 3x squared plus 2xy cubed.
+
+308
+01:05:22,724 --> 01:05:24,284
+And this is 0.
+
+309
+01:05:33,492 --> 01:05:53,412
+Partial derivative of f, with respect to y, holding x as constant, then this is 0, x cubed, the derivative of y cubed, which is 3, x squared, y squared.
+
+310
+01:06:02,963 --> 01:06:07,483
+Minus 4 times y.
+
+311
+01:06:08,683 --> 01:06:09,203
+Now,
+
+312
+01:06:14,547 --> 01:06:31,447
+Let us find the second partial derivative of f with respect to x. So, we differentiate this function with respect to x.
+
+313
+01:06:49,204 --> 01:07:09,484
+So, the same method or with the same way, the partial derivative of this function means hold y as constant and differentiate with respect to x.
+
+314
+01:07:09,484 --> 01:07:27,484
+So, the derivative of 3x square with respect to x is 6x and the derivative of 2xy3 with respect to x is 2x.
+
+315
+01:07:32,724 --> 01:07:33,644
+Y koup.
+
+316
+01:07:37,300 --> 01:07:37,740
+Ok.
+
+317
+01:07:41,780 --> 01:07:42,340
+Möğle!
+
+318
+01:08:17,652 --> 01:08:18,971
+Dererative of,
+
+319
+01:08:33,235 --> 01:08:35,235
+With respect to...
+
+320
+01:08:40,340 --> 01:08:41,060
+Thanks.
+
+321
+01:08:58,771 --> 01:09:05,091
+We take partial derivative of
+
+322
+01:09:08,884 --> 01:09:10,123
+This function
+
+323
+01:09:17,844 --> 01:09:33,604
+So y is constant now so we only take the derivative with respect to x gives 6xy cube.
+
+324
+01:09:55,539 --> 01:09:59,039
+Sorry, 6x, y².
+
+325
+01:10:28,340 --> 01:10:30,340
+F, with respect to y,
+
+326
+01:10:54,036 --> 01:10:58,296
+We take the partial derivative of fx,
+
+327
+01:11:08,148 --> 01:11:29,108
+So, think x is constant. So, this is 0. And this is 6 x y squared.
+
+328
+01:11:29,108 --> 01:11:41,828
+Okay. It only remains the second partial derivative of f with respect to y and y. So, f y y.
+
+329
+01:11:47,604 --> 01:11:48,904
+D, D, Y
+
+330
+01:11:57,716 --> 01:12:18,615
+So, we hold x as constant and take the, or differentiate with respect to y, is equal to 6x square y minus 4.
+
+331
+01:12:21,615 --> 01:12:22,456
+Okay.
+
+332
+01:12:38,771 --> 01:13:00,771
+Now we have a theorem, actually, we see here that the partial derivative fxy is equal to the partial derivative of fxy.
+
+333
+01:13:00,771 --> 01:13:16,771
+Actually, this is not a coincidence. In many examples, in practice, these two partial derivatives are equal.
+
+334
+01:13:16,771 --> 01:13:40,011
+But, but, to write this equality, we have to hold some conditions given in Clayroth's theorem or the mixed derivative theorem.
+
+335
+01:13:40,011 --> 01:14:09,011
+If f is defined on a disk D, which contains the point A, B, and if this second partial derivatives fxy and fyx are both continuous on this disk D, then we can say that fxy is equal to fyx at the point A, B.
+
+336
+01:14:09,011 --> 01:14:21,931
+Actually, we can also talk about the partial derivatives of order 3 or higher degree.
+
+337
+01:14:21,931 --> 01:14:32,851
+But, in practice, we don't usually use the partial derivatives of higher order more than 2.
+
+338
+01:14:32,851 --> 01:14:46,131
+So, for example, for example, you can take the partial derivative of fxy with respect to y.
+
+339
+01:14:46,131 --> 01:14:53,912
+So, it means that first, take the partial derivative of f with respect to x.
+
+340
+01:14:54,671 --> 01:14:59,811
+Then, take the partial derivative of fx with respect to y.
+
+341
+01:14:59,811 --> 01:15:07,291
+And, finally, take the partial derivative of fxy with respect to y.
+
+342
+01:15:07,492 --> 01:15:11,351
+And, we can denote this s like this.
+
+343
+01:15:11,351 --> 01:15:13,231
+Okay?
+
+344
+01:15:13,231 --> 01:15:31,051
+Okay.
+
+345
+01:15:21,524 --> 01:15:22,423
+For example,
+
+346
+01:15:29,011 --> 01:15:40,291
+Find or calculate f x x y z if f is given by sine 3 x plus y z.
+
+347
+01:15:50,836 --> 01:16:00,356
+First, we need partial derivative of f with respect to x.
+
+348
+01:16:01,476 --> 01:16:06,916
+We have a composite function, so we have to use the chain rule.
+
+349
+01:16:08,036 --> 01:16:11,716
+The derivative of sine, which is cosine.
+
+350
+01:16:26,547 --> 01:16:30,707
+3x plus yz,
+
+351
+01:16:31,707 --> 01:16:33,307
+times
+
+352
+01:16:33,307 --> 01:16:37,228
+the derivative of inside with respect to
+
+353
+01:16:37,228 --> 01:16:38,787
+x.
+
+354
+01:16:39,207 --> 01:16:44,007
+So, inside the function sine, we have 3x plus yz,
+
+355
+01:16:44,667 --> 01:16:48,188
+and the derivative of 3x with respect to
+
+356
+01:16:48,188 --> 01:16:49,887
+x is 3.
+
+357
+01:16:53,427 --> 01:17:13,448
+ve y times z is a constant here, because this is a three variable function. So, the first partial derivative is three times cosine 3x plus yz. Okay.
+
+358
+01:17:13,448 --> 01:17:16,707
+Then, take
+
+359
+01:17:16,707 --> 01:17:23,688
+Partial derivative of fx with respect to x
+
+360
+01:17:42,676 --> 01:18:10,996
+Again, we have a cosine function. So, using chain rule, we have minus sine, minus 3 times sine, 3x plus yz, times the derivative of the inside, which is 3. So, we have minus 9 sine,
+
+361
+01:18:15,347 --> 01:18:18,507
+3x plus yz.
+
+362
+01:18:23,667 --> 01:18:26,467
+F, X, X, Y
+
+363
+01:18:49,652 --> 01:18:54,572
+Şimdi, bu y'e derivete ile ilgili bu y'e derivete ile ilgili.
+
+364
+01:18:56,492 --> 01:19:06,572
+Y'e derivete ile ilgili.
+
+365
+01:19:17,235 --> 01:19:17,996
+O sayın!
+
+366
+01:19:23,667 --> 01:19:37,347
+3x plus yz, times, the derivative of inside with respect to y, this is 0, this is z.
+
+367
+01:19:37,347 --> 01:19:38,027
+So,
+
+368
+01:19:41,779 --> 01:19:46,500
+Minus 9z, cosin 3x plus, yz.
+
+369
+01:19:47,759 --> 01:19:49,699
+And the last step.
+
+370
+01:19:54,228 --> 01:20:00,988
+f, x, x, y, z,
+
+371
+01:20:00,988 --> 01:20:03,707
+we will take
+
+372
+01:20:03,707 --> 01:20:06,587
+the partial derivative of
+
+373
+01:20:06,587 --> 01:20:07,507
+this.
+
+374
+01:20:16,851 --> 01:20:18,931
+Z.
+
+375
+01:20:21,811 --> 01:20:22,692
+Here,
+
+376
+01:20:23,891 --> 01:20:24,612
+we have
+
+377
+01:20:24,612 --> 01:20:26,372
+two functions,
+
+378
+01:20:27,091 --> 01:20:28,731
+the multiplication of two functions.
+
+379
+01:20:29,412 --> 01:20:31,751
+The first one is minus 9Z
+
+380
+01:20:31,751 --> 01:20:32,452
+times
+
+381
+01:20:32,452 --> 01:20:34,612
+cosine 3X plus
+
+382
+01:20:34,612 --> 01:20:36,872
+YZ.
+
+383
+01:20:37,391 --> 01:20:39,612
+Because this function
+
+384
+01:20:39,612 --> 01:20:41,372
+includes Z.
+
+385
+01:20:42,612 --> 01:20:45,652
+We are looking for the derivative, the partial derivative
+
+386
+01:20:45,652 --> 01:20:46,652
+with respect to Z.
+
+387
+01:20:46,652 --> 01:20:47,211
+So,
+
+388
+01:20:47,211 --> 01:20:48,211
+we have to take
+
+389
+01:20:49,251 --> 01:20:52,291
+the derivative of the multiplication of functions.
+
+390
+01:20:52,291 --> 01:20:52,612
+So,
+
+391
+01:20:54,771 --> 01:20:55,652
+is equal to,
+
+392
+01:20:56,291 --> 01:20:59,171
+the derivative of the first function is minus 9
+
+393
+01:21:00,771 --> 01:21:01,971
+times the second one.
+
+394
+01:21:09,235 --> 01:21:09,916
+Plus
+
+395
+01:21:20,180 --> 01:21:21,880
+The first one times
+
+396
+01:21:27,123 --> 01:21:46,344
+Derivative of second one, the derivative of cosine 3x plus yz with respect to z is y times cosine, sorry, sine.
+
+397
+01:21:50,931 --> 01:21:54,532
+3x plus y z
+
+398
+01:22:07,412 --> 01:22:11,412
+Bu, bu, minus sign, so...
+
+399
+01:22:19,859 --> 01:22:20,219
+Ok?
+
+400
+01:22:38,260 --> 01:22:50,940
+Now, we recall the chain rule for the functions of single variable and we apply this rule to the functions of several variables.
+
+401
+01:22:54,963 --> 01:23:20,963
+If there is a function, single variable function, y is equal to f of x, and if x is another function with respect to orbit that depends on t, then, then, the derivative of y with respect to t is equal to
+
+402
+01:23:20,963 --> 01:23:29,963
+dy over dx, times dx over dt.
+
+403
+01:23:36,083 --> 01:23:52,144
+We have a function y, depends on x, and x is, depending on t, so,
+
+404
+01:24:00,051 --> 01:24:30,051
+If we are looking for the derivative of dy over dt, first of all, we take the derivative of y with respect to x times dx over dt. The same method can be used to find
+
+405
+01:24:30,051 --> 01:24:45,751
+partial derivatives of a function, which is given by, like this. We have two cases for the chain rule of two variable functions. For the first case,
+
+406
+01:24:49,939 --> 01:24:56,419
+We have a function z is equal to fxy.
+
+407
+01:25:03,699 --> 01:25:05,699
+Maybe I can write this as...
+
+408
+01:25:10,547 --> 01:25:12,387
+Z depends on
+
+409
+01:25:12,387 --> 01:25:16,568
+X and
+
+410
+01:25:16,568 --> 01:25:18,487
+Y
+
+411
+01:25:18,487 --> 01:25:20,867
+And
+
+412
+01:25:20,867 --> 01:25:23,027
+X depends on
+
+413
+01:25:23,027 --> 01:25:23,807
+T
+
+414
+01:25:23,807 --> 01:25:26,887
+Y also depends on
+
+415
+01:25:26,887 --> 01:25:30,047
+T
+
+416
+01:25:33,716 --> 01:25:35,716
+So, we are looking for
+
+417
+01:25:45,747 --> 01:26:01,667
+tz, dt, since z depends on x and y, first of all,
+
+418
+01:26:08,532 --> 01:26:38,292
+To go to the t from z, we first go x. So take the derivative of z or f with respect to x. We have a partial derivative here. So this is partial derivative. D z over dx times the derivative of x,
+
+419
+01:26:38,292 --> 01:26:39,511
+with respect to t.
+
+420
+01:26:46,452 --> 01:26:52,512
+Plus Z also depends on Y.
+
+421
+01:26:53,512 --> 01:27:04,532
+So DZ over DY and Y is depending on.
+
+422
+01:27:09,140 --> 01:27:10,140
+Tamam.
+
+423
+01:27:10,140 --> 01:27:11,140
+So,
+
+424
+01:27:11,140 --> 01:27:16,140
+we have this equation
+
+425
+01:27:16,140 --> 01:27:21,140
+which is a chain rule for two variable functions.
+
+426
+01:27:21,140 --> 01:27:22,140
+Okay.
+
+427
+01:27:36,083 --> 01:27:36,923
+For example,
+
+428
+01:27:43,828 --> 01:28:03,768
+If set is given by this equation, z depends on x and y, and also x depends on t, and y also depends on t.
+
+429
+01:28:03,768 --> 01:28:16,748
+We are looking for the derivative of z with respect to t, and t is 0.
+
+430
+01:28:20,008 --> 01:28:31,488
+Since z depends on x and y, and, and actually, we can think this as,
+
+431
+01:28:33,768 --> 01:28:35,688
+z is
+
+432
+01:28:39,444 --> 01:28:40,444
+equal to
+
+433
+01:28:40,444 --> 01:28:43,923
+f t
+
+434
+01:28:43,923 --> 01:28:47,244
+g t
+
+435
+01:28:58,836 --> 01:28:59,556
+Plus
+
+436
+01:29:15,475 --> 01:29:15,915
+Son.
+
+437
+01:29:19,923 --> 01:29:44,184
+If you want to take the derivative of this z with respect to t, then since these are the functions of t, we have to take, we have to take, for example, for this part, 2, f t,
+
+438
+01:29:48,692 --> 01:29:52,851
+F' t, g t plus,
+
+439
+01:30:09,076 --> 01:30:28,456
+Okay. This is like, because x depends on t, so we have a function here, x, which depends on another variable t, and plus so on.
+
+440
+01:30:45,363 --> 01:30:49,023
+DZ, sorry, DZ.
+
+441
+01:30:54,355 --> 01:31:05,595
+over dt is equal to, we use the chain rule, z depends on x and y, so,
+
+442
+01:31:07,715 --> 01:31:20,755
+d z, partial derivative of z with respect to x, and x only depends on t,
+
+443
+01:31:20,755 --> 01:31:33,655
+plus z depends on y, also, d z over dy, y only depends on,
+
+444
+01:31:37,395 --> 01:31:38,395
+T.
+
+445
+01:31:40,155 --> 01:31:41,155
+So,
+
+446
+01:31:44,076 --> 01:31:47,875
+what's the partial derivative of z with respect to x?
+
+447
+01:31:50,475 --> 01:31:54,875
+Holding y as constant we have 2xy.
+
+448
+01:32:04,532 --> 01:32:27,891
+plus 3 times y to the 4 times derivative of x with respect to t, x is equal to sine 2t, so this is 2 times cosine 2t.
+
+449
+01:32:36,020 --> 01:32:36,800
+Plus
+
+450
+01:32:50,771 --> 01:32:58,771
+Derivative of z with respect to y. Holding x as 0 we have x squared.
+
+451
+01:33:06,739 --> 01:33:14,340
+plus 12x y3
+
+452
+01:33:14,340 --> 01:33:16,659
+times
+
+453
+01:33:16,659 --> 01:33:20,579
+the derivative of y with respect to t, y is
+
+454
+01:33:20,579 --> 01:33:22,359
+cosine t, so
+
+455
+01:33:22,359 --> 01:33:23,559
+minus
+
+456
+01:33:23,559 --> 01:33:27,119
+sine
+
+457
+01:33:27,119 --> 01:33:30,000
+t.
+
+458
+01:33:36,404 --> 01:34:05,404
+Actually, here it is not necessary to substitute the expressions for x and y. I mean, you don't need to write x as here, sine 2t and ys cosine t. No need to write this s because
+
+459
+01:34:11,412 --> 01:34:16,592
+Çünkü, we simply observe that, when t is 0,
+
+460
+01:34:20,372 --> 01:34:36,152
+We are looking for the derivative at the point t is 0. When t is 0, we have x is, what is x sin? 0, which is 0.
+
+461
+01:34:45,203 --> 01:34:54,583
+And y is cosine 0, which is 1.
+
+462
+01:34:56,663 --> 01:35:05,003
+So, only take x as 0 and y as 1 here, and t as 0 here.
+
+463
+01:35:05,003 --> 01:35:25,123
+Because then, dz over dt at the point 0 is equal to 0 plus y is 1 for t is 0.
+
+464
+01:35:25,123 --> 01:35:26,783
+So, this is 3.
+
+465
+01:35:26,783 --> 01:35:36,443
+2 times cosine t is 0, cosine 0, plus x is 0.
+
+466
+01:35:39,623 --> 01:35:41,423
+0, this is 0.
+
+467
+01:35:43,643 --> 01:35:50,743
+Okay, 0 plus 0 minus sine 0.
+
+468
+01:35:50,743 --> 01:36:04,923
+Therefore, this is equal to cosine 0 is 1, 2, 6.
+
+469
+01:36:11,028 --> 01:36:11,467
+Ok?
+
+470
+01:36:16,819 --> 01:36:30,019
+The second case for the chain rule of two variable functions, we have again two variable functions z. It depends on x and y.
+
+471
+01:36:30,019 --> 01:36:50,219
+But in case one, x and y are the functions of t. Here, here, x, both x and y are the functions with respect to t and s.
+
+472
+01:36:50,219 --> 01:37:04,859
+So what x and y are two variable functions. Therefore, we have to be careful to taking the partial derivatives of the functions like this.
+
+473
+01:37:09,268 --> 01:37:11,268
+Z
+
+474
+01:37:15,923 --> 01:37:19,163
+Depends on x and y.
+
+475
+01:37:24,500 --> 01:37:46,260
+And both x and y depends on t and s. So again, to come t from z.
+
+476
+01:37:51,091 --> 01:37:56,051
+And come to S from Z.
+
+477
+01:37:56,991 --> 01:38:01,951
+We need to take the derivative of Z with respect to X.
+
+478
+01:38:03,171 --> 01:38:07,551
+Since Z depends on both X and Y.
+
+479
+01:38:07,551 --> 01:38:09,551
+This will be.
+
+480
+01:38:10,692 --> 01:38:18,692
+We are looking for DZ, DZ, DT.
+
+481
+01:38:22,612 --> 01:38:28,891
+First of all take partial derivative of z with respect to x.
+
+482
+01:38:30,851 --> 01:38:36,252
+And x is, x depends on both t and s.
+
+483
+01:38:36,252 --> 01:38:43,372
+So we are looking for t dx dt.
+
+484
+01:38:43,752 --> 01:38:49,391
+This is partial derivative plus z depends on y.
+
+485
+01:38:53,395 --> 01:38:57,036
+And y depends on both t and s.
+
+486
+01:38:57,036 --> 01:39:04,675
+Therefore, we take the partial derivative of y with respect to t.
+
+487
+01:39:06,715 --> 01:39:19,235
+And similarly, the partial derivative of z with respect to s is given by dz over dx.
+
+488
+01:39:19,235 --> 01:39:39,315
+Since x also depends on s, dx over ds plus dx over dy times dy over ds, which is given in this box as the chain rule case too.
+
+489
+01:39:39,315 --> 01:39:40,595
+Okay.
+
+490
+01:39:45,140 --> 01:39:47,560
+Ok, tu, bu, example 3.
+
+491
+01:39:59,252 --> 01:40:10,652
+If z is given by e to the x times sine y, and x is given by st square, and y is given by st square t,
+
+492
+01:40:15,667 --> 01:40:23,987
+We will find the partial derivative of z with respect to s and the partial derivative of z with respect to t.
+
+493
+01:40:26,707 --> 01:40:45,067
+We have a function z with respect to, sorry, it depends on x and y and x and y also depends on
+
+494
+01:40:48,819 --> 01:40:50,219
+S ve t.
+
+495
+01:40:52,639 --> 01:40:55,979
+Therefore, we have partial derivatives here.
+
+496
+01:41:00,051 --> 01:41:13,131
+DZ, D
+
+497
+01:41:17,619 --> 01:41:21,579
+dx, times, dx,
+
+498
+01:41:30,515 --> 01:41:33,875
+ds, plus
+
+499
+01:41:46,387 --> 01:41:56,188
+dz dy, times dy, ds.
+
+500
+01:41:58,188 --> 01:42:06,188
+So, the partial derivative of z with respect to x here,
+
+501
+01:42:07,467 --> 01:42:13,268
+considering y as constant, we have e to the x,
+
+502
+01:42:17,235 --> 01:42:32,195
+sin y, times, derivative of x with respect to s, considering t as constant, we have only t squared.
+
+503
+01:42:38,068 --> 01:42:54,168
+Plus, the partial derivative of z with respect to y, considering x as constant, we have e to the x, or sine y.
+
+504
+01:42:57,811 --> 01:43:09,351
+ve d y over d s, parçal derivative of y with respect to s, we consider t is constant, so this is 2 s t.
+
+505
+01:43:20,532 --> 01:43:22,532
+You can write this as
+
+506
+01:43:30,420 --> 01:43:47,819
+tsk, x is stsk, e to do stsk, y is stsk, y is stsk, sin.
+
+507
+01:43:51,859 --> 01:43:52,979
+s2a t
+
+508
+01:43:52,979 --> 01:43:56,039
+plus
+
+509
+01:44:01,811 --> 01:44:15,131
+2 st, x is st2 e to the st2 cosin y, y is st2 t.
+
+510
+01:44:19,764 --> 01:44:25,484
+Ok, and what about dz over dt?
+
+511
+01:44:42,260 --> 01:44:44,940
+Z, Z, sorry,
+
+512
+01:44:47,579 --> 01:44:54,659
+depends on X, and X depends on T,
+
+513
+01:44:57,860 --> 01:45:03,699
+Z depends on Y, and Y depends on T. Therefore,
+
+514
+01:45:03,699 --> 01:45:08,300
+Partial derivative of Z with respect to T is
+
+515
+01:45:08,300 --> 01:45:12,760
+DZ over DY
+
+516
+01:45:12,760 --> 01:45:32,760
+Z over DY
+
+517
+01:45:19,252 --> 01:45:21,432
+DZ over DX
+
+518
+01:45:24,979 --> 01:45:27,259
+x dx over dt
+
+519
+01:45:32,948 --> 01:45:35,768
+Plus, dz over dy,
+
+520
+01:45:47,699 --> 01:46:02,559
+t, t. And this is equal to the partial derivative of z with respect to x. We consider y as constant, so this is e to the x sin y.
+
+521
+01:46:08,884 --> 01:46:13,583
+Derivative of x, partial derivative of x, with respect to t,
+
+522
+01:46:17,108 --> 01:46:21,188
+S, S constant, we have 2S t.
+
+523
+01:46:27,252 --> 01:46:31,012
+Plus, partial derivative of z with respect to y.
+
+524
+01:46:32,892 --> 01:46:34,792
+Consider x as constant.
+
+525
+01:46:35,972 --> 01:46:39,092
+So, e to the x.
+
+526
+01:46:40,752 --> 01:46:42,032
+O sine y.
+
+527
+01:46:44,432 --> 01:46:47,772
+And the derivative of y with respect to t.
+
+528
+01:46:48,672 --> 01:46:49,672
+S superior.
+
+529
+01:46:52,512 --> 01:46:55,912
+Now, writing x and y in space here.
+
+530
+01:46:57,252 --> 01:47:01,092
+We have to st.
+
+531
+01:47:03,132 --> 01:47:06,772
+E to the st square.
+
+532
+01:47:08,772 --> 01:47:09,972
+Sign.
+
+533
+01:47:12,972 --> 01:47:14,692
+St square t.
+
+534
+01:47:15,452 --> 01:47:15,892
+Plus.
+
+535
+01:47:17,572 --> 01:47:18,312
+S square.
+
+536
+01:47:18,672 --> 01:47:21,472
+E to the st square.
+
+537
+01:47:22,752 --> 01:47:24,052
+O sine.
+
+538
+01:47:24,052 --> 01:47:39,372
+S square t.
+
+539
+01:47:34,355 --> 01:47:34,715
+Ok?
+
+540
+01:47:44,532 --> 01:47:47,152
+So, in case two of the chain rule,
+
+541
+01:47:48,731 --> 01:47:49,511
+contains
+
+542
+01:47:49,511 --> 01:47:53,391
+three types of variables,
+
+543
+01:47:53,391 --> 01:47:57,112
+S and T are independent,
+
+544
+01:47:58,112 --> 01:48:03,511
+X and Y are intermediate variables,
+
+545
+01:48:04,452 --> 01:48:05,912
+and Z is
+
+546
+01:48:05,912 --> 01:48:09,572
+dependent on it.
+
+547
+01:48:10,311 --> 01:48:10,471
+Okay.
+
+548
+01:48:10,471 --> 01:48:16,832
+We can use also the three diagram for
+
+549
+01:48:16,832 --> 01:48:20,731
+computing the
+
+550
+01:48:20,731 --> 01:48:23,771
+derivatives of
+
+551
+01:48:23,771 --> 01:48:26,731
+two variables functions,
+
+552
+01:48:26,731 --> 01:48:28,032
+which is given by
+
+553
+01:48:28,032 --> 01:48:36,692
+like this.
+
+554
+01:48:36,692 --> 01:49:03,052
+and
+
+555
+01:48:40,372 --> 01:48:52,872
+If we have a function z, which depends on x and y, we have partial derivatives of z with respect to x and y.
+
+556
+01:48:52,872 --> 01:48:54,872
+If both...
+
+557
+01:49:09,108 --> 01:49:12,668
+Z depends on X and Y.
+
+558
+01:49:15,568 --> 01:49:16,368
+And
+
+559
+01:49:26,260 --> 01:49:31,460
+X and Y, both depends on S and T.
+
+560
+01:49:31,900 --> 01:49:33,340
+So, we have partial.
+
+561
+01:49:36,159 --> 01:49:36,940
+Sorry.
+
+562
+01:49:40,692 --> 01:49:53,011
+in the first case if z depends on x and y and x and y both depends on t we have
+
+563
+01:49:56,532 --> 01:50:05,011
+t z over dt but if
+
+564
+01:50:06,484 --> 01:50:12,544
+Z depends on X and Y, and also X and Y depends on T and S and T.
+
+565
+01:50:17,011 --> 01:50:19,751
+We have partial derivatives.
+
+566
+01:50:25,427 --> 01:50:33,228
+dx, dz, over ds, and dz, over dt, like this three.
+
+567
+01:50:33,228 --> 01:50:34,347
+Okay?
+
+568
+01:50:39,220 --> 01:50:46,980
+We can also generalize this chain rule to the n variable functions like this. For example,
+
+569
+01:50:58,355 --> 01:51:13,275
+Write out the chain rule for the case where w is a function of x, y, z, and t, and x is a function of u and v and y, z, and t are all functions of u and v.
+
+570
+01:51:14,275 --> 01:51:16,235
+W, sorry, v.
+
+571
+01:51:16,895 --> 01:51:18,335
+We have a function w.
+
+572
+01:51:22,003 --> 01:51:27,604
+Let us draw the chain rule 3. We have a function w.
+
+573
+01:51:37,492 --> 01:51:47,971
+We have a function w, which includes or which depends on x,
+
+574
+01:51:53,171 --> 01:51:55,131
+y, z, t
+
+575
+01:52:28,627 --> 01:52:35,747
+X, Y, Z, and T are all functions of U and V.
+
+576
+01:52:36,247 --> 01:52:41,648
+So, X depends on U and V.
+
+577
+01:52:42,247 --> 01:52:45,367
+Y also depends on U and V.
+
+578
+01:52:46,327 --> 01:52:48,847
+Z depends on U and V.
+
+579
+01:52:50,047 --> 01:52:51,847
+And T depends on...
+
+580
+01:52:57,971 --> 01:52:59,971
+0,2,3
+
+581
+01:53:05,203 --> 01:53:22,043
+Therefore, therefore, we have all partial derivatives for dw over du and dw over dv.
+
+582
+01:53:22,043 --> 01:53:31,423
+What is dw over du?
+
+583
+01:53:31,423 --> 01:53:36,743
+To come u from w,
+
+584
+01:53:40,372 --> 01:53:52,092
+We need to test through x, y, z, t.
+
+585
+01:53:57,587 --> 01:54:16,167
+So, dw over du is equal to, since w depends on x, y, z, and t, dw over dx.
+
+586
+01:54:20,180 --> 01:54:24,539
+times dx over du
+
+587
+01:54:30,163 --> 01:54:47,563
+Plus, w is also depending on y, dw over dy times dy over du plus dw over dz.
+
+588
+01:54:53,363 --> 01:55:06,483
+We have not enough base, so I have to rewrite this. We are looking for the w over the u is equal to w, depends on x.
+
+589
+01:55:11,956 --> 01:55:14,216
+X depends on U.
+
+590
+01:55:18,452 --> 01:55:27,112
+Y, plus, probably depends on Y, Y depends on U.
+
+591
+01:55:32,500 --> 01:55:35,039
+W depends on Z.
+
+592
+01:55:42,355 --> 01:55:45,376
+z depends on u.
+
+593
+01:55:52,595 --> 01:55:56,595
+ve kısmi tü,
+
+594
+01:56:02,323 --> 01:56:06,623
+t is a function of u.
+
+595
+01:56:09,923 --> 01:56:12,743
+And similarly,
+
+596
+01:56:19,636 --> 01:56:29,496
+D w over dv, d w, d x,
+
+597
+01:56:41,908 --> 01:56:45,868
+x dxdoe
+
+598
+01:57:27,699 --> 01:57:28,000
+Ok.
+
+599
+01:57:32,212 --> 01:57:33,032
+İzlal, is this okay?
+
+600
+01:57:49,460 --> 01:57:54,300
+Can you hear me or are you sleeping?
+
+601
+01:58:17,844 --> 01:58:19,604
+İzder en lanğuguu, hizmi...
+
+602
+01:58:28,051 --> 01:58:28,411
+normal?
+
+603
+01:58:41,524 --> 01:58:42,544
+Is there a problem?
+
+604
+01:58:53,971 --> 01:58:57,011
+My dear students, can you hear me?
+
+605
+01:59:01,811 --> 01:59:02,332
+14.
+
+606
+01:59:30,420 --> 01:59:39,220
+We have a function u, which is a function of x and y and z.
+
+607
+01:59:42,899 --> 01:59:59,460
+Well, we have a function u, which is a multivariable function depends on x, y,
+
+608
+02:00:00,420 --> 02:00:03,779
+and z,
+
+609
+02:00:03,779 --> 02:00:06,899
+x,
+
+610
+02:00:06,899 --> 02:00:10,659
+y, and z
+
+611
+02:00:10,659 --> 02:00:12,579
+are both
+
+612
+02:00:12,579 --> 02:00:14,020
+all
+
+613
+02:00:14,020 --> 02:00:18,100
+multivariable functions of
+
+614
+02:00:18,100 --> 02:00:22,579
+r, st,
+
+615
+02:00:22,579 --> 02:00:24,340
+three variables.
+
+616
+02:00:24,340 --> 02:00:28,180
+so, x depends on
+
+617
+02:00:28,180 --> 02:00:34,819
+r, st,
+
+618
+02:00:34,819 --> 02:00:35,220
+t,
+
+619
+02:00:42,707 --> 02:00:44,287
+Vire also, defans on.
+
+620
+02:00:48,564 --> 02:00:56,584
+R is t, and z also depends on,
+
+621
+02:01:00,404 --> 02:01:04,004
+R, S, T.
+
+622
+02:01:04,864 --> 02:01:13,684
+Now, we are looking for the partial derivative of U with respect to S at the point,
+
+623
+02:01:16,324 --> 02:01:20,724
+the U over the S at the point,
+
+624
+02:01:22,404 --> 02:01:26,164
+R is 2, S is 1,
+
+625
+02:01:27,684 --> 02:01:29,044
+T is 0.
+
+626
+02:01:34,868 --> 02:01:38,708
+What is the partial derivative of u with respect to s?
+
+627
+02:01:41,108 --> 02:02:00,788
+Since u depends on, or u is a function of x, y, and z, and both x, y, z are the functions of s, we have
+
+628
+02:02:04,979 --> 02:02:24,199
+du over dx, x also depends on s, dx over ds plus du, dy times, dy ds.
+
+629
+02:02:44,532 --> 02:02:45,092
+Kıraş!
+
+630
+02:03:05,492 --> 02:03:28,032
+Therefore, the derivative of u, the partial derivative of u with respect to x, we think, or we consider, y and z are constant and differentiate u with respect to x.
+
+631
+02:03:28,032 --> 02:03:32,391
+So, this is only 4x cubed y.
+
+632
+02:03:40,180 --> 02:04:09,539
+x'e t
+
+633
+02:04:15,923 --> 02:04:22,623
+Plus, what is the derivative of the partial derivative of u with respect to y?
+
+634
+02:04:29,203 --> 02:04:30,043
+Çein fayn't.
+
+635
+02:04:34,131 --> 02:04:37,371
+If you find, then I'll give you a gift.
+
+636
+02:04:39,251 --> 02:04:39,491
+Hobby.
+
+637
+02:04:41,351 --> 02:04:42,031
+Do you want a hobby?
+
+638
+02:04:47,220 --> 02:04:49,539
+Okay, thank you, best and yeser.
+
+639
+02:04:50,960 --> 02:04:54,780
+You got one hobies, the small ones.
+
+640
+02:04:56,480 --> 02:05:05,159
+So, the partial derivative of u with respect to y, we consider x and z are all constants.
+
+641
+02:05:07,159 --> 02:05:09,159
+So, we have...
+
+642
+02:05:12,275 --> 02:05:14,115
+x to the 4 plus
+
+643
+02:05:14,115 --> 02:05:20,496
+2y z kübe
+
+644
+02:05:24,467 --> 02:05:28,467
+And the partial derivative of y with respect to s.
+
+645
+02:05:31,467 --> 02:05:36,467
+Consider or holding r and t as constant, we have 2r.
+
+646
+02:05:40,724 --> 02:05:44,043
+s e to the minus t
+
+647
+02:05:44,043 --> 02:05:47,003
+plus
+
+648
+02:05:47,003 --> 02:05:51,083
+the partial derivative of u with respect to z
+
+649
+02:05:58,899 --> 02:05:59,420
+3
+
+650
+02:05:59,420 --> 02:06:03,739
+wise you care
+
+651
+02:06:07,380 --> 02:06:09,380
+z-square, times,
+
+652
+02:06:11,619 --> 02:06:13,380
+the partial derivative of z,
+
+653
+02:06:14,260 --> 02:06:15,699
+with respect to s,
+
+654
+02:06:16,659 --> 02:06:19,940
+so, t and r are constants,
+
+655
+02:06:20,819 --> 02:06:23,460
+this is r-square,
+
+656
+02:06:24,980 --> 02:06:26,819
+sine t.
+
+657
+02:06:30,387 --> 02:06:50,587
+So, again, no need to write x and y in its place because we only need the point r is 2, s is 1 and t is 0. So, when r is 2,
+
+658
+02:06:59,028 --> 02:07:14,868
+S is 1, and t is 0. We have x is, what is x? 2 times 1 times e to the 0.
+
+659
+02:07:18,804 --> 02:07:36,873
+Y'e'ye
+
+660
+02:07:40,884 --> 02:07:41,764
+Denkos,
+
+661
+02:07:45,619 --> 02:07:57,640
+du over ds at the points, r is 2, s is 1.
+
+662
+02:08:02,323 --> 02:08:04,603
+And t is 0.
+
+663
+02:08:05,803 --> 02:08:10,903
+We have z is 0.
+
+664
+02:08:10,903 --> 02:08:19,344
+So this is x is 2.
+
+665
+02:08:19,483 --> 02:08:20,583
+So this is 8.
+
+666
+02:08:21,163 --> 02:08:24,223
+32 times 2.
+
+667
+02:08:30,100 --> 02:08:53,300
+64, times r is 2, t is 0, times 2, plus 16, plus, this is 0, so 16 times, r is 2, 4,
+
+668
+02:08:59,188 --> 02:09:00,528
+Plus, this is zero.
+
+669
+02:09:02,768 --> 02:09:04,967
+And sine zero is zero.
+
+670
+02:09:06,507 --> 02:09:07,908
+Therefore, we have
+
+671
+02:09:07,908 --> 02:09:10,528
+192.
+
+672
+02:09:24,020 --> 02:09:24,500
+Okey.
+
+673
+02:09:26,760 --> 02:09:27,900
+Does it make sense?
+
+674
+02:09:29,920 --> 02:09:30,560
+Did you understand?
+
+675
+02:09:38,836 --> 02:09:39,176
+Ok.
+
+676
+02:10:25,716 --> 02:10:34,176
+This hobby is for [öğrenci], and this hobby is for [öğrenci]. Thank you.
+
+677
+02:10:39,188 --> 02:10:42,167
+Now, oh, we have another example.
+
+678
+02:10:48,372 --> 02:11:12,872
+If a function, you are welcome, Veste. I have many gifts for you, if you attend to class, but I think it is hard for you, attending the class, answering the questions, taking the exams.
+
+679
+02:11:12,872 --> 02:11:21,292
+These are all hard things, I know, but life is difficult for all of us.
+
+680
+02:11:23,612 --> 02:11:26,912
+Anyway, look at the example 6.
+
+681
+02:11:32,020 --> 02:11:49,060
+We have a function, g depends on s and t, is given by this function. If f is differentiable, then show that g satisfies this equation.
+
+682
+02:11:49,060 --> 02:12:03,860
+Oh, this is some different equation. How can we solve this example, or how can we find
+
+683
+02:12:03,860 --> 02:12:13,240
+the partial derivative of g with respect to s and the partial derivative of g with respect to t,
+
+684
+02:12:13,240 --> 02:12:17,600
+because we need the partial derivatives of g with respect to s and t.
+
+685
+02:12:19,060 --> 02:12:42,740
+So, the questions such questions like this one, actually we write inside of the function as another variable. Say, xs
+
+686
+02:12:49,524 --> 02:13:11,644
+S2 minus t2, and say y is t2 minus s2. So, so, we have a function g.
+
+687
+02:13:31,507 --> 02:13:36,427
+which is equal to f, x, and y.
+
+688
+02:13:37,148 --> 02:13:39,028
+Therefore, therefore,
+
+689
+02:13:42,484 --> 02:13:45,463
+G, depends on,
+
+690
+02:13:58,707 --> 02:14:02,367
+S
+
+691
+02:14:02,367 --> 02:14:04,447
+T
+
+692
+02:14:22,515 --> 02:14:26,515
+S ve T both depends on...
+
+693
+02:14:28,515 --> 02:14:29,895
+Sorry, sorry.
+
+694
+02:14:33,395 --> 02:14:34,655
+G depends on,
+
+695
+02:14:39,060 --> 02:14:41,160
+X and Y
+
+696
+02:14:45,268 --> 02:14:48,427
+X and Y, both depends on
+
+697
+02:14:48,427 --> 02:14:53,068
+S and T.
+
+698
+02:15:00,212 --> 02:15:20,212
+We are looking for the partial derivative of g with respect to s. So, dg over ds is equal to df.
+
+699
+02:15:24,404 --> 02:15:28,184
+over the x times.
+
+700
+02:15:34,100 --> 02:15:37,020
+dx over ds, plus
+
+701
+02:15:42,579 --> 02:15:44,979
+tf over dy,
+
+702
+02:15:47,979 --> 02:15:51,500
+dy over ds.
+
+703
+02:15:58,131 --> 02:16:18,291
+We don't know the partial derivative of f with respect to x. So, this is df over dx, but we know the partial derivative of x with respect to s, which is here, 2s.
+
+704
+02:16:22,484 --> 02:16:51,644
+Plus, again, we don't know the partial derivative of f with respect to y, because we write x as s-cukar minus t-cukar. So, this is df over dy times, but we know the partial derivative of f with respect to y, which is minus 2s.
+
+705
+02:16:52,484 --> 02:17:15,484
+And similarly, dg over dt is equal to df over dx times dx over dt plus df over dy times dy over...
+
+706
+02:17:21,043 --> 02:17:25,644
+dT, which is equal to dF over dx.
+
+707
+02:17:27,064 --> 02:17:30,644
+The partial derivative of x with respect to t is minus 2t.
+
+708
+02:17:36,308 --> 02:17:39,928
+tf over dy,
+
+709
+02:17:41,148 --> 02:17:44,568
+the partial derivative of y with respect to t is 2t.
+
+710
+02:17:52,915 --> 02:18:04,435
+Therefore, t times dg over dt, sorry, gs, ds.
+
+711
+02:18:10,227 --> 02:18:12,268
+plus s times
+
+712
+02:18:12,268 --> 02:18:15,587
+dg over
+
+713
+02:18:15,587 --> 02:18:17,347
+dt
+
+714
+02:18:21,492 --> 02:18:37,811
+is equal to, what blank, this with t, we have, df over dx, so as t, minus,
+
+715
+02:18:42,131 --> 02:18:56,492
+df, dy, 2 st, plus, multiplying this with s we have.
+
+716
+02:19:00,468 --> 02:19:04,828
+minus df over dx
+
+717
+02:19:04,828 --> 02:19:07,948
+2st
+
+718
+02:19:07,948 --> 02:19:10,408
+plus
+
+719
+02:19:10,408 --> 02:19:13,347
+df over dy
+
+720
+02:19:13,347 --> 02:19:16,408
+2st.
+
+721
+02:19:16,408 --> 02:19:18,328
+So,
+
+722
+02:19:18,328 --> 02:19:20,288
+this gives
+
+723
+02:19:20,288 --> 02:19:22,748
+0.
+
+724
+02:19:26,899 --> 02:19:27,899
+Tamam.
+
+725
+02:19:27,899 --> 02:19:36,180
+Oh, this will be the last example of this lecture.
+
+726
+02:19:36,180 --> 02:19:52,119
+And I think it is important because now we find the second order partial derivatives by using chain rule.
+
+727
+02:19:57,747 --> 02:20:01,147
+z is a function of
+
+728
+02:20:04,628 --> 02:20:06,108
+X and Y
+
+729
+02:20:15,156 --> 02:20:21,436
+Here, actually, you can think that this is f.
+
+730
+02:20:23,115 --> 02:20:34,656
+So, to come s from g, we need to take the partial derivative of f with respect to x,
+
+731
+02:20:37,056 --> 02:20:40,636
+and the partial derivative of x with respect to s.
+
+732
+02:20:40,636 --> 02:20:44,416
+So, we write df over dx times dx over ds.
+
+733
+02:20:46,756 --> 02:20:54,456
+And here, again, z is a function of x and y.
+
+734
+02:21:00,147 --> 02:21:13,107
+ve, both x and y are two variable functions of r and s.
+
+735
+02:21:15,987 --> 02:21:21,188
+First of all, we will find the partial derivative of z with respect to r.
+
+736
+02:21:23,347 --> 02:21:25,347
+It is easy, I think.
+
+737
+02:21:34,451 --> 02:21:38,291
+Partial derivative of z with respect to r is equal to
+
+738
+02:21:41,652 --> 02:21:45,891
+Partial derivative of z with respect to x times
+
+739
+02:21:47,411 --> 02:21:50,891
+Partial derivative of x with respect to r plus
+
+740
+02:21:53,611 --> 02:21:56,291
+D z over dy times
+
+741
+02:21:57,611 --> 02:21:59,171
+D y over dr.
+
+742
+02:21:59,171 --> 02:22:08,211
+Partial derivative of z with respect to x
+
+743
+02:22:13,236 --> 02:22:14,056
+İndir, don'tan.
+
+744
+02:22:24,275 --> 02:22:30,796
+ve know, partial derivative of x with respect to r is 2r.
+
+745
+02:22:36,180 --> 02:22:44,380
+ve parçal derivatı yi, yi, sorry, r is 2s.
+
+746
+02:22:49,716 --> 02:23:04,935
+Now, we are looking for, or we try to calculate the second order partial derivatives.
+
+747
+02:23:14,548 --> 02:23:17,288
+d2 z
+
+748
+02:23:17,288 --> 02:23:20,108
+over d
+
+749
+02:23:20,108 --> 02:23:22,148
+r
+
+750
+02:23:22,148 --> 02:23:26,748
+so
+
+751
+02:23:35,667 --> 02:23:43,147
+We apply the product rule to the expression in this part.
+
+752
+02:23:45,987 --> 02:23:58,788
+The second partial, second order partial derivative is equal to, we again take the derivative of this expression with respect to r.
+
+753
+02:24:04,084 --> 02:24:04,904
+2'as.
+
+754
+02:24:22,291 --> 02:24:22,731
+Son.
+
+755
+02:24:28,244 --> 02:24:32,004
+We use the product rule.
+
+756
+02:24:35,004 --> 02:24:39,324
+What is the derivative of the first one with respect to R2?
+
+757
+02:24:40,543 --> 02:24:43,824
+Two times the second one.
+
+758
+02:24:46,584 --> 02:24:56,364
+DZ, DX plus first one times.
+
+759
+02:24:58,244 --> 02:24:59,864
+The derivative of second one.
+
+760
+02:25:15,860 --> 02:25:16,640
+dx
+
+761
+02:25:21,459 --> 02:25:22,119
+Plus
+
+762
+02:25:28,691 --> 02:25:54,471
+S has no derivative with respect to R, so this is 0, plus the first one, which is 2S, times the derivative of second one, t over dr, dz, dy.
+
+763
+02:26:14,899 --> 02:26:33,899
+But, but, here, if we use the chain rule again, to calculating this and these derivatives,
+
+764
+02:26:38,004 --> 02:26:39,644
+DODH
+
+765
+02:26:43,636 --> 02:27:05,435
+z over dx, is equal to, since z depends on both x and y, this is equal to the derivative of z with respect to x times the derivative of x with respect to r.
+
+766
+02:27:05,435 --> 02:27:10,676
+so, this is
+
+767
+02:27:10,676 --> 02:27:14,256
+derivative of
+
+768
+02:27:20,500 --> 02:27:24,760
+dz over dx with respect to x.
+
+769
+02:27:43,796 --> 02:27:44,396
+Times
+
+770
+02:27:44,396 --> 02:27:49,236
+The derivative of x with respect to
+
+771
+02:27:49,236 --> 02:27:50,456
+R
+
+772
+02:27:55,123 --> 02:28:12,144
+Plus, since z depends on y, we have d over dy, dz over dx.
+
+773
+02:28:17,268 --> 02:28:28,468
+and y depends on r, so times dy over dr.
+
+774
+02:28:34,260 --> 02:28:36,260
+ve kultu,
+
+775
+02:28:55,507 --> 02:29:18,788
+We can write this as, what is the derivative of x with respect to r? 2r. And this is 2r. D z square over.
+
+776
+02:29:32,659 --> 02:29:34,000
+DxQS
+
+777
+02:29:38,004 --> 02:29:38,624
+Plus
+
+778
+02:29:46,451 --> 02:29:55,931
+What is partial derivative of y with respect to r is 2s is equal to 2s times?
+
+779
+02:30:01,587 --> 02:30:07,747
+d super z over d y dx
+
+780
+02:30:16,340 --> 02:30:18,340
+And similarly you can find...
+
+781
+02:30:20,100 --> 02:30:21,340
+You can find...
+
+782
+02:30:27,219 --> 02:30:28,760
+G-O-D-S
+
+783
+02:30:33,843 --> 02:30:36,823
+dz over dy.
+
+784
+02:30:37,963 --> 02:30:44,203
+And this is homework for you until tomorrow.
+
+785
+02:31:08,595 --> 02:31:09,095
+Okay.
+
+786
+02:31:11,495 --> 02:31:15,195
+So, have a nice day with all of you, and hope to see you tomorrow.

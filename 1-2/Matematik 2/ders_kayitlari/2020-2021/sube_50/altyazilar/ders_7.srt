@@ -1,0 +1,3215 @@
+1
+00:00:58,612 --> 00:00:59,132
+Good morning.
+
+2
+00:01:33,555 --> 00:01:45,335
+Last week, we finished all the tests that we used to determine if the positive term series are convergent or divergent.
+
+3
+00:01:46,235 --> 00:01:55,096
+We also introduced alternating series, which have some negative terms and some positive terms.
+
+4
+00:01:55,096 --> 00:02:04,355
+And we use alternating series test to determine the convergence or divergence of alternating series.
+
+5
+00:02:05,355 --> 00:02:14,756
+Today, we will talk about a special series called power series.
+
+6
+00:02:18,419 --> 00:02:23,419
+We can test many infinite series of numbers for convergence.
+
+7
+00:02:23,419 --> 00:02:29,419
+We can study sums that look like infinite polynomials.
+
+8
+00:02:29,419 --> 00:02:35,419
+And we call these spatial series test power series
+
+9
+00:02:35,419 --> 00:02:43,419
+because they define as infinite series of powers of variable,
+
+10
+00:02:43,419 --> 00:02:49,419
+somewhere in our case, which is x.
+
+11
+00:02:49,419 --> 00:02:56,419
+[öğrenci], we have no time to solve these questions.
+
+12
+00:02:56,419 --> 00:03:02,419
+Tomorrow, if we will have enough time, then we will look at the questions.
+
+13
+00:03:02,419 --> 00:03:03,419
+Okay.
+
+14
+00:03:03,419 --> 00:03:09,419
+We have many topics to study today and tomorrow.
+
+15
+00:03:09,419 --> 00:03:20,419
+But if we have enough time, we will also check and look at the questions that I need for you as an homework.
+
+16
+00:03:20,419 --> 00:03:22,419
+Okay.
+
+17
+00:03:22,419 --> 00:03:30,419
+So, like polynomials, since power series are like infinite polynomials,
+
+18
+00:03:30,419 --> 00:03:41,419
+power series can be added, subtracted, multiplied, differentiated, and integrated between power series.
+
+19
+00:03:41,419 --> 00:03:51,419
+So, the power series is a type of series with terms involving the variable.
+
+20
+00:03:51,419 --> 00:04:01,419
+More specifically, if the variable is x, then all the terms of the series involve powers of x.
+
+21
+00:04:01,419 --> 00:04:08,419
+So, power series can be added as an infinite polynomial.
+
+22
+00:04:08,419 --> 00:04:10,419
+What is polynomial?
+
+23
+00:04:10,419 --> 00:04:24,419
+So, the power series can be added as an infinite polynomial.
+
+24
+00:04:15,027 --> 00:04:18,827
+We call that the polynomial is a special function.
+
+25
+00:04:20,528 --> 00:04:23,427
+That can be written in the form
+
+26
+00:04:23,427 --> 00:04:35,867
+q of x is equal to c0 plus c1x plus c2x plus blah blah cnx to the n,
+
+27
+00:04:36,528 --> 00:04:43,927
+where x is an variable here and c0, c1 and cn are constant
+
+28
+00:04:43,927 --> 00:04:48,827
+and we call these constants as the coefficients of the polynomial.
+
+29
+00:04:52,228 --> 00:04:54,327
+Similarly, the power series
+
+30
+00:04:56,827 --> 00:04:58,827
+is a function of the form
+
+31
+00:05:06,163 --> 00:05:21,923
+We have a variable x in the series, where here again c0, c1 are constants called coefficients of the series.
+
+32
+00:05:21,923 --> 00:05:37,543
+And the power series in x minus a, or the power series centered at a, at the point a, has the form like this.
+
+33
+00:05:42,483 --> 00:06:03,264
+So, power series are spatial series, which are like infinite polynomials, and they have a general form like this.
+
+34
+00:06:03,264 --> 00:06:12,983
+Okay, this is a power series, center text point A.
+
+35
+00:06:21,875 --> 00:06:24,755
+Bu konvergensin bir power series
+
+36
+00:06:24,755 --> 00:06:27,675
+aslında bir seçeneği
+
+37
+00:06:27,675 --> 00:07:47,875
+bir seçeneği
+
+38
+00:07:38,899 --> 00:07:47,120
+Bu n! n! n!
+
+39
+00:07:47,959 --> 00:08:08,859
+Bu n!
+
+40
+00:08:09,492 --> 00:08:27,752
+Since this is a power series, and it depends on the variable x, it may be, it can include the terms, some of positive, some of negative.
+
+41
+00:08:27,752 --> 00:08:47,491
+So, we have to use in power series, to check the power series is convergent or divergent, we use ratio test, or sometimes true test.
+
+42
+00:09:12,596 --> 00:09:13,076
+Tamam.
+
+43
+00:09:17,107 --> 00:09:21,107
+Bu, birçok testi var.
+
+44
+00:09:22,107 --> 00:09:26,107
+Örneğin, birçok testi var.
+
+45
+00:09:28,107 --> 00:09:31,107
+Bu, birçok testi var.
+
+46
+00:09:38,707 --> 00:09:47,427
+Tresyal test is used for testing the convergence or divergence of a general series.
+
+47
+00:09:47,427 --> 00:10:03,028
+I mean, if you take, if you take, if you have a series like this, and if you take the absolute
+
+48
+00:10:03,028 --> 00:10:10,227
+level of Kn, then you can use the ratio test.
+
+49
+00:10:10,227 --> 00:10:18,227
+But in our series, we usually use ratio test.
+
+50
+00:10:18,227 --> 00:10:19,227
+Okay.
+
+51
+00:10:25,331 --> 00:10:34,711
+So, rho is equal to limit and loss to the infinity to absolute value of am plus 1 over am.
+
+52
+00:10:34,711 --> 00:10:43,711
+And we know that if rho is smaller than 1, then the series...
+
+53
+00:10:56,403 --> 00:11:06,803
+Let us take an is n factorial times x to the n.
+
+54
+00:11:10,259 --> 00:11:18,200
+Then, limit, and goes to the infinity.
+
+55
+00:11:24,179 --> 00:11:28,979
+am plus 1 over an is equal to
+
+56
+00:11:40,532 --> 00:11:41,852
+m plus 1!
+
+57
+00:11:45,652 --> 00:11:48,852
+x to the m plus 1
+
+58
+00:11:56,692 --> 00:12:01,692
+n! x n!
+
+59
+00:12:04,692 --> 00:12:08,692
+Bu, bu, limit
+
+60
+00:12:11,692 --> 00:12:13,692
+n!
+
+61
+00:12:13,692 --> 00:12:35,692
+Since n is positive, we can factor out n from the absolute value. It gives n plus 1 times absolute value x.
+
+62
+00:12:35,692 --> 00:12:47,692
+And if it is smaller than 1, then it is commusual.
+
+63
+00:12:48,692 --> 00:12:49,692
+Now,
+
+64
+00:12:53,875 --> 00:13:02,135
+Unless x is 0, the limit is infinity.
+
+65
+00:13:09,172 --> 00:13:34,152
+[öğrenci], I ask you, why absolute value of x? Because we use absolute value, and we don't know what is x. We know n is positive. Since it is positive, we can factor out n from the absolute value, but we don't know x. So it is in the absolute value.
+
+66
+00:13:34,152 --> 00:13:41,512
+Okay? Now unless x is 0, do we need?
+
+67
+00:13:47,892 --> 00:13:52,951
+ve katlı
+
+68
+00:13:53,875 --> 00:14:04,035
+m plus 1 times x is infinity, which is not smaller than 1.
+
+69
+00:14:05,235 --> 00:14:10,316
+So, in this case, this series is divergent.
+
+70
+00:14:11,435 --> 00:14:22,836
+Therefore, the series is convergent.
+
+71
+00:14:26,580 --> 00:14:32,340
+or only x is 0.
+
+72
+00:14:33,900 --> 00:14:37,580
+If x is 0, this limit is equal to 0,
+
+73
+00:14:37,580 --> 00:14:39,420
+so it is smaller than 1.
+
+74
+00:14:40,020 --> 00:14:44,820
+By the ratio test, this series is convergent.
+
+75
+00:14:46,780 --> 00:14:49,139
+And if x is not 0,
+
+76
+00:14:50,259 --> 00:14:53,500
+then this series is divergent.
+
+77
+00:14:54,500 --> 00:14:54,820
+Okay.
+
+78
+00:14:56,580 --> 00:14:59,940
+And what about the series B?
+
+79
+00:15:02,940 --> 00:15:03,820
+Again.
+
+80
+00:15:06,060 --> 00:15:07,780
+Let A end.
+
+81
+00:15:13,203 --> 00:15:19,203
+is 1 over m! times, or x to the n overs.
+
+82
+00:15:25,076 --> 00:15:32,076
+MFaktoruk ve
+
+83
+00:15:48,628 --> 00:16:07,628
+ve n'ı
+
+84
+00:16:17,524 --> 00:16:19,063
+This is...
+
+85
+00:16:30,932 --> 00:16:58,572
+x m plus 1 over m plus 1 factorial times a n is m factorial x to the n. So this is equal to, limit and goes to the infinity, we have m factorial m plus 1, 1 over m plus 1.
+
+86
+00:17:02,163 --> 00:17:13,263
+Since n is positive, we can calculate n from absolute value, times we have x.
+
+87
+00:17:14,263 --> 00:17:29,523
+So if this limit is smaller than 1, then we can compute that this series is conversion.
+
+88
+00:17:29,523 --> 00:17:38,223
+Since the limit of 1 over n plus 1, when n goes to the infinity is 0,
+
+89
+00:17:40,624 --> 00:17:46,064
+and this is smaller than 1 for all x,
+
+90
+00:18:02,451 --> 00:18:04,451
+This series is...
+
+91
+00:18:10,516 --> 00:18:12,896
+iscohergent.
+
+92
+00:18:16,660 --> 00:18:26,660
+So, the interval of convergences
+
+93
+00:18:43,635 --> 00:19:13,635
+Bu, bu
+
+94
+00:19:13,635 --> 00:19:29,235
+is always zero. So, so, this series is conversion for all x. And what about the last one?
+
+95
+00:19:36,307 --> 00:19:41,107
+A-Yen, let A-M-B.
+
+96
+00:19:46,771 --> 00:19:48,771
+x-3'e, n
+
+97
+00:19:52,627 --> 00:19:53,827
+Over and
+
+98
+00:19:53,827 --> 00:19:58,627
+Using the ratio test reading
+
+99
+00:20:10,612 --> 00:20:26,572
+Limit of am plus 1 over am is equal to limit and goes to the impurity.
+
+100
+00:20:32,147 --> 00:20:40,067
+x minus 3 to the n plus 1 over n plus 1 times
+
+101
+00:20:43,923 --> 00:21:04,564
+n, x minus 3 to the n, and this is linked, and close to the infinity, n over n plus 1 times,
+
+102
+00:22:23,667 --> 00:22:30,067
+Sorry for that. That was an internet problem. Can you hear me now?
+
+103
+00:22:45,268 --> 00:22:45,627
+Kutu.
+
+104
+00:22:51,731 --> 00:23:02,132
+Since the limit of n over n plus one is one, it only remains, it only remains.
+
+105
+00:23:13,076 --> 00:23:15,256
+x-3,
+
+106
+00:23:16,695 --> 00:23:17,096
+so,
+
+107
+00:23:17,336 --> 00:23:19,216
+this limit is equal to,
+
+108
+00:23:20,296 --> 00:23:20,816
+sorry,
+
+109
+00:23:23,456 --> 00:23:25,155
+absolute value of x-3.
+
+110
+00:23:36,723 --> 00:23:53,083
+We know from the ratio test, if for 4, the absolute value of x minus 3 is smaller than 1, the series converse.
+
+111
+00:24:07,124 --> 00:24:08,124
+Therefore,
+
+112
+00:24:10,124 --> 00:24:11,923
+we have
+
+113
+00:24:17,460 --> 00:25:05,460
+x-3-1
+
+114
+00:24:41,779 --> 00:24:43,779
+O yüzden bu.
+
+115
+00:24:44,480 --> 00:24:45,779
+Bu.
+
+116
+00:24:49,875 --> 00:24:51,875
+Serius, the power of Serius,
+
+117
+00:24:55,475 --> 00:24:56,395
+Serius,
+
+118
+00:24:58,796 --> 00:24:59,536
+Converse,
+
+119
+00:25:06,836 --> 00:25:30,955
+Actually, we can write here, absolutely converse, because we use the ratio test, and we take the absolutely of the series, so the series converse, or absolutely converse.
+
+120
+00:25:39,700 --> 00:25:41,279
+Ves, fors,
+
+121
+00:25:47,955 --> 00:25:49,395
+X is between
+
+122
+00:25:52,980 --> 00:25:54,039
+2, and
+
+123
+00:25:57,491 --> 00:25:58,031
+Fır.
+
+124
+00:26:08,115 --> 00:26:33,115
+For power series, for power series to determine the exactly where the series is convergent or divergent, we have to test the endpoints of the interval of the convergence.
+
+125
+00:26:33,115 --> 00:26:41,115
+So, we have to test these endpoints if...
+
+126
+00:26:45,779 --> 00:26:46,399
+Shake.
+
+127
+00:26:50,836 --> 00:26:52,076
+Endpoints
+
+128
+00:27:06,708 --> 00:27:10,708
+if the series is divergent or convergent.
+
+129
+00:27:12,708 --> 00:27:20,708
+Because for x is 2,
+
+130
+00:27:21,708 --> 00:27:27,708
+we have this limit is equal to
+
+131
+00:27:40,500 --> 00:27:43,059
+x minus 3.
+
+132
+00:27:43,940 --> 00:27:48,299
+So for x is 2, this limit is 1.
+
+133
+00:27:49,339 --> 00:27:53,619
+Therefore, if this limit is 1,
+
+134
+00:27:53,619 --> 00:27:58,380
+we cannot compute any information
+
+135
+00:27:58,380 --> 00:28:02,420
+about the convergence or divergence of this series
+
+136
+00:28:02,420 --> 00:28:05,099
+because the ratio test does not work
+
+137
+00:28:05,099 --> 00:28:07,859
+for this limit is 1.
+
+138
+00:28:07,859 --> 00:28:12,019
+So for x is 2,
+
+139
+00:28:15,339 --> 00:28:16,539
+the ratio test
+
+140
+00:28:21,683 --> 00:28:27,903
+This does not save anything.
+
+141
+00:28:32,051 --> 00:28:42,811
+So, we have to use other tests for the endpoints of the power series.
+
+142
+00:28:43,571 --> 00:28:44,331
+Now,
+
+143
+00:28:50,003 --> 00:28:51,823
+When x is 2,
+
+144
+00:29:13,364 --> 00:29:21,364
+Bu ne?
+
+145
+00:29:28,980 --> 00:29:30,059
+x minus
+
+146
+00:29:30,059 --> 00:29:34,559
+3 to the n
+
+147
+00:29:39,859 --> 00:29:49,699
+x-3 to the n over, and now writing x as 2, we have this series as,
+
+148
+00:29:54,579 --> 00:29:59,179
+Minus 1 to the n over n.
+
+149
+00:30:01,019 --> 00:30:06,619
+Then, do you know the name of this series?
+
+150
+00:30:11,859 --> 00:30:13,039
+Vizite simulertiyor.
+
+151
+00:30:17,652 --> 00:30:31,211
+What kind of series is this? Which is, which is alternating, not alternative, which is,
+
+152
+00:30:37,268 --> 00:30:38,908
+alternatif,
+
+153
+00:30:44,051 --> 00:30:44,851
+Müzik serisi.
+
+154
+00:30:57,140 --> 00:30:59,360
+Is it convergent or divergent?
+
+155
+00:31:04,435 --> 00:31:05,635
+Ay Börcünd?
+
+156
+00:31:11,155 --> 00:31:24,036
+Bu, bu
+
+157
+00:31:28,468 --> 00:31:32,587
+Or, it is convergent.
+
+158
+00:31:37,428 --> 00:31:39,868
+Actually, conditional, the convergent.
+
+159
+00:31:51,923 --> 00:31:56,483
+4x is 2.
+
+160
+00:32:01,172 --> 00:32:03,291
+Sorry, it is convergent.
+
+161
+00:32:04,991 --> 00:32:08,491
+Therefore, the power series is
+
+162
+00:32:08,491 --> 00:32:13,332
+convergent for x is 2.
+
+163
+00:32:13,751 --> 00:32:14,852
+And what about
+
+164
+00:32:14,852 --> 00:32:17,991
+x is 4?
+
+165
+00:32:22,867 --> 00:32:31,907
+When x is 4, the power series becomes
+
+166
+00:32:46,804 --> 00:32:55,864
+1 to the n, or 1 over n, which is harmonic series.
+
+167
+00:33:01,779 --> 00:33:08,779
+ve
+
+168
+00:33:07,539 --> 00:33:08,539
+İçiş,
+
+169
+00:33:16,531 --> 00:33:18,412
+İçizleibar, gün törk, komerci et.
+
+170
+00:33:23,892 --> 00:33:25,392
+Divergent.
+
+171
+00:33:34,548 --> 00:34:01,327
+So, if you have a power series, like this, then first, you find the absolute, the integral of absolute convergent, because we take the absolute value of the series, or we use the ratio test, then check the endpoints.
+
+172
+00:34:10,068 --> 00:34:15,648
+[öğrenci], I summarized our results here.
+
+173
+00:34:18,528 --> 00:34:20,128
+What is the series?
+
+174
+00:34:21,948 --> 00:34:23,248
+This one.
+
+175
+00:34:25,388 --> 00:34:27,048
+The series.
+
+176
+00:34:39,347 --> 00:34:40,027
+Serius.
+
+177
+00:35:08,371 --> 00:35:09,132
+is
+
+178
+00:35:09,132 --> 00:35:12,531
+absolutely
+
+179
+00:35:19,155 --> 00:35:20,155
+Convergent
+
+180
+00:35:25,876 --> 00:35:26,436
+On
+
+181
+00:35:36,692 --> 00:35:39,692
+İntarvalı, 4.
+
+182
+00:35:50,003 --> 00:36:03,563
+is conditionally convergent at x is 2.
+
+183
+00:36:03,563 --> 00:36:08,963
+Therefore, or consequently,
+
+184
+00:36:21,235 --> 00:36:23,235
+ve içeriler,
+
+185
+00:36:34,387 --> 00:36:35,367
+Cumhurst is
+
+186
+00:36:45,588 --> 00:36:48,388
+2, 4.
+
+187
+00:36:51,028 --> 00:36:56,388
+In this interval, the series converts, and...
+
+188
+00:37:16,083 --> 00:37:17,463
+Vibers at
+
+189
+00:37:21,139 --> 00:37:22,379
+Oran soy.
+
+190
+00:37:26,164 --> 00:37:32,044
+Taylor serisi, on, r, minus,
+
+191
+00:37:39,699 --> 00:37:44,699
+Maybe we can like this, or like this.
+
+192
+00:37:51,956 --> 00:38:02,276
+Ok, we can not take for, [öğrenci], it means that you can not take for, it is not included. This is an open integral.
+
+193
+00:38:11,956 --> 00:38:12,316
+Ok.
+
+194
+00:38:18,099 --> 00:38:20,059
+Bu örneğin önemli bir soru.
+
+195
+00:38:22,139 --> 00:38:25,559
+Do you have any questions here?
+
+196
+00:38:30,132 --> 00:39:00,132
+Bu, bu
+
+197
+00:39:00,132 --> 00:39:04,092
+Conversion, Condition, Conversion, Conversion, Or, Bivergent
+
+198
+00:39:04,092 --> 00:39:06,092
+Okay
+
+199
+00:39:11,507 --> 00:39:11,967
+Ok?
+
+200
+00:39:29,268 --> 00:39:30,268
+Möğle,
+
+201
+00:39:34,931 --> 00:39:36,901
+Bu, bu
+
+202
+00:39:42,579 --> 00:39:44,579
+We have three possibilities.
+
+203
+00:39:46,179 --> 00:39:52,579
+The series converse for a point x is equal to a.
+
+204
+00:39:52,579 --> 00:39:56,579
+So the integral of convergence is only a point.
+
+205
+00:39:56,579 --> 00:40:02,579
+That is the example of this is the first example, I think.
+
+206
+00:40:05,579 --> 00:40:07,579
+Yes, this one.
+
+207
+00:40:07,579 --> 00:40:15,579
+This series is converse only for x is zero.
+
+208
+00:40:20,467 --> 00:40:29,627
+And the series converged for all x, that means that the interval of convergence is the whole real line.
+
+209
+00:40:31,427 --> 00:40:38,127
+And the second example shows this one.
+
+210
+00:40:39,587 --> 00:40:50,027
+This series converged for all x, so the interval of the convergence is all real line.
+
+211
+00:40:50,027 --> 00:41:10,687
+And the last possibility is there is a positive number such that the series converged if x minus a is smaller than r.
+
+212
+00:41:10,687 --> 00:41:20,527
+And diverse if the absolute value of x minus a is bigger than r.
+
+213
+00:41:21,268 --> 00:41:28,687
+So the interval of convergence may be one of these 1, 2, 3, 4 intervals.
+
+214
+00:41:28,687 --> 00:41:30,947
+You have to check.
+
+215
+00:41:31,847 --> 00:41:35,487
+You have to check this endpoint and points.
+
+216
+00:41:36,487 --> 00:41:38,567
+So at the endpoints.
+
+217
+00:41:40,807 --> 00:41:44,887
+The series may converse or diverse.
+
+218
+00:41:44,887 --> 00:41:50,807
+For example, here, the series converse at this endpoint.
+
+219
+00:41:52,307 --> 00:41:59,228
+And in this example or in this case, the series converse at the right endpoint.
+
+220
+00:42:00,768 --> 00:42:10,347
+Or the series may converse both of endpoints, the left and right endpoints.
+
+221
+00:42:10,347 --> 00:42:21,627
+And it is also important that here r is called the radius of convergence.
+
+222
+00:42:23,207 --> 00:42:29,567
+R is called radius of convergence.
+
+223
+00:42:29,567 --> 00:42:39,687
+And the interval of convergence means the interval that consists of all values of x.
+
+224
+00:42:42,167 --> 00:42:45,307
+Where the series converse.
+
+225
+00:42:45,307 --> 00:42:48,587
+So if you have a series.
+
+226
+00:42:50,087 --> 00:42:50,507
+Then.
+
+227
+00:42:52,947 --> 00:42:54,147
+It converse.
+
+228
+00:42:55,327 --> 00:42:58,027
+At its interval of convergence.
+
+229
+00:43:00,027 --> 00:43:00,467
+And.
+
+230
+00:43:01,748 --> 00:43:03,748
+Out of this interval.
+
+231
+00:43:04,587 --> 00:43:05,867
+It divers.
+
+232
+00:43:05,867 --> 00:43:09,427
+And in the table.
+
+233
+00:43:11,527 --> 00:43:12,307
+You see.
+
+234
+00:43:12,967 --> 00:43:14,547
+Some examples of.
+
+235
+00:43:15,047 --> 00:43:15,748
+Power series.
+
+236
+00:43:16,248 --> 00:43:16,607
+And.
+
+237
+00:43:18,768 --> 00:43:20,687
+Their interval of convergence.
+
+238
+00:43:20,687 --> 00:43:21,607
+And their radius.
+
+239
+00:43:24,807 --> 00:43:25,788
+Actually we can.
+
+240
+00:43:26,667 --> 00:43:28,547
+Make this and this one.
+
+241
+00:43:30,248 --> 00:43:31,327
+And you can also.
+
+242
+00:43:31,748 --> 00:43:32,147
+Check.
+
+243
+00:43:32,647 --> 00:43:33,947
+This and this one.
+
+244
+00:43:35,867 --> 00:43:36,367
+Okay.
+
+245
+00:43:36,367 --> 00:43:41,367
+Also.
+
+246
+00:43:44,248 --> 00:43:45,367
+This is also.
+
+247
+00:43:45,607 --> 00:43:47,207
+Important to note that.
+
+248
+00:43:48,788 --> 00:43:50,847
+We use the ratio test.
+
+249
+00:43:53,087 --> 00:43:55,268
+To determine the radius of convergence.
+
+250
+00:43:55,268 --> 00:43:55,768
+R.
+
+251
+00:43:56,327 --> 00:43:58,007
+In power series.
+
+252
+00:44:02,260 --> 00:44:02,620
+Ok.
+
+253
+00:44:12,659 --> 00:44:14,659
+Bu bir örneğe bir örneğe.
+
+254
+00:44:17,059 --> 00:44:25,059
+İzlediğiniz için 2 dakika sonra, bu problemi için 2 dakika sonra, bu problemi için bir şey yok.
+
+255
+00:46:03,795 --> 00:46:04,795
+İdefine
+
+256
+00:46:27,092 --> 00:46:29,771
+Okay, let us do it together.
+
+257
+00:46:33,907 --> 00:46:47,487
+Bu, absolute konvergenci interval, evet, [öğrenci], doğru, doğru, ve yine de endpoints'ı bekliyoruz.
+
+258
+00:46:51,507 --> 00:46:55,247
+Now, again, use the ratio test.
+
+259
+00:47:08,659 --> 00:47:09,619
+İzinc.
+
+260
+00:47:23,219 --> 00:47:24,359
+ratio test
+
+261
+00:47:32,019 --> 00:47:33,340
+Limit'ov
+
+262
+00:47:38,132 --> 00:47:40,692
+am plus 1 over am
+
+263
+00:47:44,148 --> 00:47:46,148
+Ve bu,
+
+264
+00:47:46,148 --> 00:47:48,148
+Limit
+
+265
+00:47:48,148 --> 00:47:50,148
+ve bu,
+
+266
+00:47:50,148 --> 00:47:52,148
+bu,
+
+267
+00:47:56,596 --> 00:48:12,315
+Minus 3 to the m plus 1, h to the m plus 1, square root, m plus 2, times,
+
+268
+00:48:16,916 --> 00:48:28,996
+Sq. n plus 1 over minus 3 to the n, x to the n.
+
+269
+00:48:30,996 --> 00:48:42,836
+So, we have, this is equal to limit and goes to the infinity.
+
+270
+00:48:47,668 --> 00:48:53,788
+Sqrt m plus 1 over sqrt m plus 2.
+
+271
+00:49:04,724 --> 00:49:17,544
+We have minus 3 and x sol. We have only.
+
+272
+00:49:21,043 --> 00:49:22,623
+Minus 3x
+
+273
+00:49:29,588 --> 00:49:40,788
+Bu, bu da bu, limit ve bu, yukarıya geçiyor.
+
+274
+00:49:51,539 --> 00:49:58,480
+3 times absolute value x.
+
+275
+00:50:01,199 --> 00:50:16,239
+Here, since the degree of the n in the numerator and denominator of this fraction is the same, so this limit gives 1.
+
+276
+00:50:16,239 --> 00:50:26,559
+Therefore, if this limit is smaller than 1, it is convergent.
+
+277
+00:50:28,900 --> 00:50:33,179
+We have, we have.
+
+278
+00:50:36,916 --> 00:50:50,155
+3 times x is smaller than 1, it means absolute value of x is smaller than 1 over 3.
+
+279
+00:50:52,076 --> 00:50:52,676
+Therefore,
+
+280
+00:50:59,764 --> 00:51:10,764
+To reduce, r is 1 over 3, and, and,
+
+281
+00:51:14,260 --> 00:51:24,640
+4, x'ı da, x'ı da, minus 1 over 3, ve 1 over 3,
+
+282
+00:51:26,560 --> 00:51:34,500
+it is, or the series, convergent, or absolutely convergent.
+
+283
+00:51:44,371 --> 00:51:46,611
+Absolutely converse.
+
+284
+00:51:48,791 --> 00:51:52,192
+Now we have to check the endpoints.
+
+285
+00:52:07,956 --> 00:52:17,155
+When x is minus 1 over 3, the series becomes
+
+286
+00:52:30,516 --> 00:52:34,235
+Write x as minus 1 over 3.
+
+287
+00:53:02,132 --> 00:53:12,132
+Minus 1, sorry, minus 1 over 3 to the end over...
+
+288
+00:53:15,699 --> 00:53:17,699
+çarpanı, n plus 1.
+
+289
+00:53:18,699 --> 00:53:19,699
+Yani,
+
+290
+00:53:20,199 --> 00:53:20,899
+bizde,
+
+291
+00:53:52,563 --> 00:53:54,384
+k root n plus 1.
+
+292
+00:53:55,603 --> 00:54:00,083
+Now, is this series convergent or divergent?
+
+293
+00:54:22,195 --> 00:54:37,835
+Divergent, çünkü, çünkü, you have a positive term series, ve you want to determine if it is convergent or divergent, you can use the positive term series test.
+
+294
+00:54:37,835 --> 00:54:45,835
+If you compare this series with...
+
+295
+00:55:02,036 --> 00:55:04,956
+Kampiyas, fiş.
+
+296
+00:55:09,012 --> 00:55:10,552
+Vana o su kere rüt.
+
+297
+00:55:10,992 --> 00:55:11,312
+Ağın.
+
+298
+00:55:18,579 --> 00:55:21,360
+Limit, limit konkej.
+
+299
+00:55:27,699 --> 00:55:53,379
+So, the limit of an over bn will be 1. Since this is a p-series with p is 1 over 2, then this is divergent. And since the limit is 1, this series is also divergent.
+
+300
+00:55:53,379 --> 00:55:58,379
+You can also write this, actually.
+
+301
+00:56:01,379 --> 00:56:22,079
+And 0 to the infinity, 1 over square root n plus 1 is equal to, and begins with 1 to the infinity, 1 over square root n.
+
+302
+00:56:25,492 --> 00:56:35,492
+since this is a P-Series with 1 over 2 and it divers.
+
+303
+00:56:38,532 --> 00:56:38,932
+Okay.
+
+304
+00:56:43,827 --> 00:56:55,347
+Bu, x'e, minus 1 over 3, bu serisi, bu serisi, birerginç. Ve, x'e, 1 over 3?
+
+305
+00:57:04,659 --> 00:57:08,980
+x'e 1 over 3,
+
+306
+00:57:10,579 --> 00:57:11,299
+we have
+
+307
+00:57:14,659 --> 00:57:16,099
+power series
+
+308
+00:57:17,139 --> 00:57:20,099
+and 0 to infinity.
+
+309
+00:57:30,356 --> 00:57:44,696
+Minus 3 to the n, 1 over 3 to the n, square root n plus 1.
+
+310
+00:57:46,616 --> 00:57:49,696
+So, this is equal to the...
+
+311
+00:58:01,876 --> 00:58:04,396
+Minus 1 to the n.
+
+312
+00:58:08,436 --> 00:58:09,256
+Ovas.
+
+313
+00:58:15,027 --> 00:58:44,907
+Sq. root n plus 1. Now, we have an alternating series. And we have an alternating series here. So, first, you have to check taking the absolute value of this series and we have to check if it is absolutely convergent or divergent. If you take the absolute value of this series, we have the series.
+
+314
+00:58:45,027 --> 00:59:03,507
+above, which is here. So, we know that this is not a convergent. So, this series is not absolutely convergent. But, but, by using
+
+315
+00:59:08,724 --> 00:59:10,204
+By using
+
+316
+00:59:10,204 --> 00:59:14,903
+Alternating series test
+
+317
+00:59:21,972 --> 00:59:23,652
+This series is not
+
+318
+00:59:28,788 --> 00:59:31,007
+Not absolutely convergent.
+
+319
+00:59:40,628 --> 00:59:41,628
+Çünkü
+
+320
+00:59:46,771 --> 00:59:48,411
+Absolute konuları am.
+
+321
+00:59:52,115 --> 00:59:52,755
+iş
+
+322
+00:59:58,068 --> 01:00:03,688
+same as the series above.
+
+323
+01:00:08,179 --> 01:00:13,579
+Bu, bu
+
+324
+01:00:24,500 --> 01:00:26,219
+What is alternating series test?
+
+325
+01:00:33,811 --> 01:00:41,132
+Dn is 1 over square root n plus 1, and it is
+
+326
+01:00:48,884 --> 01:00:50,003
+Deşinç.
+
+327
+01:00:55,635 --> 01:00:56,436
+positive,
+
+328
+01:00:56,436 --> 01:01:00,375
+and
+
+329
+01:01:00,375 --> 01:01:03,855
+limit Pn
+
+330
+01:01:03,855 --> 01:01:05,235
+is 0.
+
+331
+01:01:07,875 --> 01:01:09,315
+Therefore,
+
+332
+01:01:10,355 --> 01:01:13,355
+it is
+
+333
+01:01:13,355 --> 01:01:15,715
+conditionally
+
+334
+01:01:19,827 --> 01:01:20,827
+Hımırıcıt.
+
+335
+01:01:25,076 --> 01:01:34,556
+As a result, or finally, finally, the series,
+
+336
+01:01:44,724 --> 01:01:47,524
+is
+
+337
+01:01:47,524 --> 01:01:49,403
+absolutely convergent
+
+338
+01:01:53,427 --> 01:01:54,807
+on this interval,
+
+339
+01:01:58,739 --> 01:01:59,739
+ve
+
+340
+01:02:03,443 --> 01:02:08,183
+Condition Convergent at x is 1 over 3.
+
+341
+01:02:14,579 --> 01:02:21,579
+ve
+
+342
+01:02:21,579 --> 01:02:24,579
+1
+
+343
+01:02:24,579 --> 01:02:36,579
+3
+
+344
+01:02:36,579 --> 01:02:37,579
+4
+
+345
+01:02:37,579 --> 01:02:38,579
+3
+
+346
+01:02:38,579 --> 01:02:41,579
+4
+
+347
+01:02:41,579 --> 01:02:42,579
+5
+
+348
+01:02:36,403 --> 01:02:36,903
+Ok.
+
+349
+01:02:41,972 --> 01:02:47,972
+Does it make sense? Any questions, comments, other things?
+
+350
+01:03:06,387 --> 01:03:16,387
+We have not a definition or a term like a real convergent, [öğrenci].
+
+351
+01:03:16,387 --> 01:03:23,387
+We have actually absolute convergent and conditionally convergent.
+
+352
+01:03:23,387 --> 01:03:29,387
+But conditionally convergent also means it is convergent.
+
+353
+01:03:29,387 --> 01:03:39,387
+So if you ask us to find the interval of the convergence of a power series,
+
+354
+01:03:39,387 --> 01:03:49,387
+then you have to take also the points or the intervals that this series is conditionally convergent.
+
+355
+01:03:49,387 --> 01:03:56,387
+So the conditionally convergent means it is also convergent.
+
+356
+01:03:56,387 --> 01:03:59,387
+Okay.
+
+357
+01:03:59,387 --> 01:04:07,387
+But if you ask if the series is conditionally convergent or where the series is conditionally convergent,
+
+358
+01:04:07,387 --> 01:04:16,387
+you have to also determine or say it is conditionally convergent at a point.
+
+359
+01:04:28,884 --> 01:04:29,244
+Ok.
+
+360
+01:04:31,523 --> 01:04:36,724
+So, if it is conditionally convergent, it means that it is also convergent.
+
+361
+01:04:40,340 --> 01:04:47,059
+We only have, we only have conditional conversion for alternating series.
+
+362
+01:04:49,780 --> 01:05:08,500
+Now, if you don't have any questions, we have 15 minutes break, and we will continue at 10.23.
+
+363
+01:21:32,627 --> 01:21:37,067
+Tamam, tamam. İlk devam edelim. [öğrenci] var mı?
+
+364
+01:21:37,787 --> 01:21:38,867
+Can you hear me?
+
+365
+01:21:45,363 --> 01:21:53,443
+Şimdi, bu çok önemli bir bölümde,
+
+366
+01:21:53,443 --> 01:21:59,563
+sonra, bu bölümde kullanmanızı kullanmak için,
+
+367
+01:21:59,563 --> 01:22:25,363
+bu bölümde, bu bölümde,
+
+368
+01:22:25,363 --> 01:22:43,363
+bu bölümde,
+
+369
+01:22:43,363 --> 01:22:44,363
+çünkü,
+
+370
+01:22:44,363 --> 01:22:46,363
+bu bölümde,
+
+371
+01:22:46,363 --> 01:22:50,363
+algebi ve
+
+372
+01:22:50,363 --> 01:22:52,363
+transkernel bölümde,
+
+373
+01:22:52,363 --> 01:23:23,363
+bu bölümde,
+
+374
+01:23:23,363 --> 01:23:25,363
+consider again,
+
+375
+01:23:25,363 --> 01:23:26,363
+the geometric series,
+
+376
+01:23:26,363 --> 01:23:27,363
+.
+
+377
+01:23:30,420 --> 01:24:00,420
+Bu, genel olarak genel olarak genel olarak genel olarak genel olarak genel olarak genel olarak genel olarak genel olarak genel olarak genel olarak genel olarak genel olarak genel olarak genel olarak genel olarak genel olarak genel olarak genel olarak genel olarak genel olarak genel olarak genel olarak genel olarak genel olarak genel olarak genel olarak genel olarak genel olarak genel olarak genel olarak genel olarak genel olarak genel olarak genel olarak genel olarak genel olarak genel olarak genel olarak genel olarak genel olarak genel olarak genel olarak genel olarak genel olarak genel olarak genel olarak genel olarak genel olarak genel olarak genel olarak genel olarak genel olarak genel olarak genel olarak genel olarak genel olarak genel olarak genel olarak genel olarak genel olarak genel olarak genel olarak genel olarak genel olarak genel olarak genel olarak genel olarak genel olarak genel olarak genel olarak genel olarak genel olarak genel
+
+378
+01:24:00,420 --> 01:24:13,060
+genel olarak genel olarak genel olarak genel olarak genel olarak genel olarak genel olarak genel olarak genel olarak genel olarak genel olarak genel olarak genel olarak genel olarak genel olarak genel olarak genel olarak genel olarak genel olarak genel olarak genel olarak genel olarak genel olarak genel olarak genel olarak genel olarak genel olarak genel olarak genel olarak genel olarak genel olarak genel olarak genel olarak genel olarak genel olarak genel olarak genel olarak genel olarak genel olarak genel olarak genel olarak genel olarak genel olarak genel olarak genel olarak genel olarak genel olarak genel olarak genel olarak genel olarak genel olarak genel olarak genel olarak genel olarak genel olarak genel olarak genel olarak genel olarak genel olarak genel olarak genel olarak genel olarak genel olarak genel olarak genel olarak genel olarak genel olarak genel olarak genel olarak genel olarak genel olarak genel olarak genel olarak genel
+
+379
+01:24:16,787 --> 01:24:17,547
+6
+
+380
+01:24:24,756 --> 01:24:26,756
+x is r, here.
+
+381
+01:24:28,155 --> 01:24:30,155
+This geometric series
+
+382
+01:24:31,956 --> 01:24:37,056
+is convergent for x is smaller than 1 and
+
+383
+01:24:37,956 --> 01:24:39,155
+converge to the
+
+384
+01:24:40,155 --> 01:24:44,155
+1 over 1 minus x.
+
+385
+01:24:44,756 --> 01:24:49,756
+So it means that it means that you can write this series
+
+386
+01:24:56,851 --> 01:24:59,851
+is the function
+
+387
+01:25:04,051 --> 01:25:21,251
+1 over 1 minus x under the condition x is smaller than 1 because we know that this series is convergent
+
+388
+01:25:21,251 --> 01:25:33,251
+when the absolute value of x is smaller than 1 and converge to this number or this expression
+
+389
+01:25:34,371 --> 01:25:44,051
+or this function so it means that we are able to represent the function f of x which is 1 over 1
+
+390
+01:25:44,051 --> 01:25:53,891
+minus x as the power series which is this one when the absolute value of x is smaller than 1.
+
+391
+01:25:56,371 --> 01:26:06,931
+we can also show it by the graph by the graph look at the figure this is
+
+392
+01:26:09,411 --> 01:26:10,451
+this one is
+
+393
+01:26:14,051 --> 01:26:24,451
+the graph of the function f of x 1 over 1 minus x and this s2 s4 and s6 are
+
+394
+01:26:26,291 --> 01:26:35,011
+the graph of the and partial sum of the series which is equal to the
+
+395
+01:26:35,011 --> 01:26:45,652
+x to the n then you can easily or you can clearly see that see that
+
+396
+01:26:45,652 --> 01:26:57,891
+x 1 over 1 minus x 1 over 1 minus x 1 over 1 minus x 1 over 1 minus x 1 over 1 minus x 1 over 1 minus x 1 over 1 minus x 1 over 1 minus x 1 over 1 minus x 1 over 1 minus x 1 over 1 minus x 1 over 1 minus x 1 over 1 minus x 1 over 1 minus x 1 over 1 minus x 1 over 1 minus x 1 over 1 minus x 1 over 1 minus x 1 over 1 minus x 1 over 1 minus x 1 over 1 minus x 1 over 1 minus x 1 over 1 minus x 1 over 1 minus x 1 over 1 minus x 1 over 1 minus x 1 over 1 minus x 1 over 1 minus x 1 over 1 minus x 1 over 1 minus x 1 over 1 minus x 1 over 1 minus x 1 over 1 minus x 1 over 1 minus x 1 over 1 minus x 1 over 1 minus x 1 over 1 minus x 1 over 1 minus x 1 over 1 minus x 1 over 1 minus x 1 over 1 minus x 1 over 1 minus x 1 over 1 minus x 1 over 1 minus x 1 over
+
+397
+01:27:02,100 --> 01:27:27,280
+Minus 1 to the 1 and increasing the n partial sum or when n approach to the infinity, these graphs approach to the real graph of the function.
+
+398
+01:27:27,280 --> 01:27:42,500
+So, so, under the convergency condition, we can represent a function by a power series.
+
+399
+01:27:43,620 --> 01:27:47,240
+Okay, it is very important, this one.
+
+400
+01:27:47,240 --> 01:28:04,000
+We use the function or we use the power series representation of this function in other examples or in other functions.
+
+401
+01:28:04,000 --> 01:28:16,000
+For example, express the function, for example, express the function 1 over 1 plus x2kr as the sum of power series.
+
+402
+01:28:17,360 --> 01:28:20,400
+And find the interval of the convergence.
+
+403
+01:28:22,000 --> 01:28:26,680
+We use this series or we use this function.
+
+404
+01:28:30,804 --> 01:28:38,684
+1 over 1 minus x is equal to the geometric series.
+
+405
+01:28:42,612 --> 01:28:48,212
+n, zero to the infinity, x to the n.
+
+406
+01:28:52,787 --> 01:28:53,307
+So,
+
+407
+01:28:56,307 --> 01:28:57,747
+okay, gente?
+
+408
+01:29:06,100 --> 01:29:08,100
+x
+
+409
+01:29:09,539 --> 01:29:11,539
+y minus x yuker
+
+410
+01:29:15,028 --> 01:29:16,208
+Ve her...
+
+411
+01:29:23,347 --> 01:29:28,627
+1 over 1 minus x2cal.
+
+412
+01:29:31,507 --> 01:29:38,627
+Actually, we can write this under the condition.
+
+413
+01:29:44,627 --> 01:29:47,507
+absolute value of x is smaller than 1.
+
+414
+01:29:49,327 --> 01:29:53,927
+Then, replacing x by minus x2kl, we have
+
+415
+01:30:01,108 --> 01:30:07,268
+and zero to the infinity, minus x square to the
+
+416
+01:30:11,060 --> 01:30:22,100
+And when we replace x with minus x yuker, minus x yuker is smaller than 1.
+
+417
+01:30:28,659 --> 01:30:58,639
+Therefore, 1 over 1 plus x square is equal to this series, this is equal to minus 1 to the n, x to the 2 n, this is 1 minus x square plus x square.
+
+418
+01:30:58,659 --> 01:31:02,659
+x to the 4 minus x square.
+
+419
+01:31:07,891 --> 01:31:10,171
+ve böylece, ve sonra,
+
+420
+01:31:11,051 --> 01:31:12,591
+bu şekilde,
+
+421
+01:31:23,028 --> 01:31:29,668
+So, under the condition, the absolute value of x is smaller than 1.
+
+422
+01:31:33,460 --> 01:31:34,380
+Now, ok.
+
+423
+01:31:36,840 --> 01:31:38,000
+Vi onları her,
+
+424
+01:31:39,319 --> 01:31:40,480
+vi onları her,
+
+425
+01:31:57,716 --> 01:32:08,716
+x to the n, which is 1 plus x plus x square plus and goes on.
+
+426
+01:32:10,716 --> 01:32:21,716
+And we know that or we prove that this is a geometric series.
+
+427
+01:32:21,716 --> 01:32:31,716
+And this geometric series is convergent when
+
+428
+01:32:37,971 --> 01:32:39,612
+The Geometric Series
+
+429
+01:32:46,676 --> 01:32:53,676
+ve r'ı x ve ve
+
+430
+01:32:53,676 --> 01:32:56,676
+ve
+
+431
+01:32:57,676 --> 01:32:58,676
+ki
+
+432
+01:32:58,676 --> 01:32:59,676
+görülüyoruz,
+
+433
+01:32:59,676 --> 01:33:03,676
+r'ı
+
+434
+01:33:03,676 --> 01:33:15,676
+y
+
+435
+01:33:11,667 --> 01:33:13,667
+Bu, Comercient
+
+436
+01:33:18,547 --> 01:33:29,347
+4R, which is X, is smaller than 1, and
+
+437
+01:33:32,819 --> 01:33:33,960
+Konular stu.
+
+438
+01:33:38,804 --> 01:33:42,644
+a over 1 minus r, which is
+
+439
+01:33:46,100 --> 01:33:47,300
+For this example,
+
+440
+01:33:55,155 --> 01:33:57,775
+1 over 1 minus x.
+
+441
+01:33:58,975 --> 01:34:05,615
+Under the condition, x is, the absolute product of x is smaller than 1.
+
+442
+01:34:06,536 --> 01:34:21,676
+So, so, this series converts to the function, or we can write this series as the function on its interval of convergence,
+
+443
+01:34:21,676 --> 01:34:26,235
+or under the condition where it converts.
+
+444
+01:34:26,796 --> 01:34:36,475
+So, for absolute value of x is smaller than 1, we can write this series as this function.
+
+445
+01:34:37,256 --> 01:34:37,716
+This is okay?
+
+446
+01:34:42,996 --> 01:34:56,315
+We only know now, we only know x to the n, the series x to the n is equal to 1 over 1 minus x under the condition the absolute value of x is smaller than 1.
+
+447
+01:34:56,315 --> 01:35:10,216
+Now using this series, we write, we write 1 over 1 plus x u k is the sum of power series.
+
+448
+01:35:12,996 --> 01:35:22,536
+So you only have this one and we want to get 1 over 1 plus x u k is.
+
+449
+01:35:22,536 --> 01:35:34,996
+For this, we replace x by minus x u k is so writing x is minus x u k is.
+
+450
+01:35:34,996 --> 01:35:43,695
+We have 1 over 1 plus x u k and we replace x by minus x u k.
+
+451
+01:35:43,695 --> 01:35:49,676
+We only replace x with minus x u k because we only know this one.
+
+452
+01:35:49,676 --> 01:35:49,956
+We also replace x u k is equal to 1 over 1 minus x u k is equal to 1 over 1 minus x u k is equal to 1 over 1 minus x u k is equal to 1 over 1 minus x u k is equal to 1 over 1 minus x u k is equal to 1 over 1 minus x u k is equal to 1 over 1 minus x u k is equal to 1 over 1 minus x u k is equal to 1 over 1 minus x u k is equal to 1 over 1 minus x u k is equal to 1 over 1 minus x u k is equal to 1 over 1 minus x u k is equal to 1 over 1 minus x u k is equal to 1 over 1 minus x u k is equal to 1 over 1 minus x u k is equal to 1 over 1 minus x u k is equal to 1 over 1 minus x u k is equal to 1 over 1 minus x u k is equal to 1 over 1 minus x u k is equal to 1 over 1 minus x u k is equal to 1 over 1 minus x u k is equal to 1 over 1 minus
+
+453
+01:35:55,220 --> 01:36:17,220
+We can only use this for this representation. We only have this one. So we want to write this as the sum of power series by using this series.
+
+454
+01:36:17,220 --> 01:36:47,199
+So replace this with minus x square. Then we have the result. We have other examples. Maybe you can understand if you look at these examples. Again, use a power series to represent each of the following functions and find the interval of queries.
+
+455
+01:36:47,220 --> 01:36:53,220
+Now, we have again only...
+
+456
+01:37:06,420 --> 01:37:08,760
+1 over 1 minus x.
+
+457
+01:37:10,699 --> 01:37:15,680
+Absolute total of x is smaller than 1.
+
+458
+01:37:17,020 --> 01:37:22,039
+So, using this equality or using this function,
+
+459
+01:37:23,619 --> 01:37:24,440
+first,
+
+460
+01:37:33,108 --> 01:37:41,587
+Now we only replace x with minus x cube.
+
+461
+01:37:43,988 --> 01:37:59,507
+1 over 1 plus x cube is equal to 1 over 1 minus [öğrenci].
+
+462
+01:37:59,507 --> 01:38:04,868
+Because we only know the function representation of this series.
+
+463
+01:38:06,068 --> 01:38:09,028
+Do you know any other x? We only know this one.
+
+464
+01:38:10,148 --> 01:38:18,628
+If you know the other representation, you can also use. But we only know this representation.
+
+465
+01:38:21,908 --> 01:38:27,028
+Because of the geometric series, we can write this one.
+
+466
+01:38:27,028 --> 01:38:33,828
+And using this, we can write the other functions in the power series form.
+
+467
+01:38:37,188 --> 01:38:45,587
+This is equal to 1 minus minus x cube.
+
+468
+01:38:45,587 --> 01:38:51,988
+So, so.
+
+469
+01:38:51,988 --> 01:38:53,988
+1 minus x cube is equal to 1 minus x cube.
+
+470
+01:38:53,988 --> 01:39:10,547
+So, so.
+
+471
+01:38:59,220 --> 01:39:09,340
+Again, this is a geometric series, with R is,
+
+472
+01:39:14,163 --> 01:39:17,323
+Maybe you can think this as a geometric series.
+
+473
+01:39:24,627 --> 01:39:34,447
+R is minus x cube, and r is 1.
+
+474
+01:39:35,127 --> 01:39:42,927
+Okay, this is geometric series fit, r is minus x cube, and r is 1.
+
+475
+01:39:42,927 --> 01:39:57,427
+So, this is equal to the minus x cube to the n, or...
+
+476
+01:40:02,068 --> 01:40:13,927
+Minus 1 to the n, x to the 3n, and equal to 1 minus x cubed.
+
+477
+01:40:26,931 --> 01:40:28,551
+x to the 6,
+
+478
+01:40:29,391 --> 01:40:33,511
+minus x to the 9,
+
+479
+01:40:35,271 --> 01:40:38,112
+and,
+
+480
+01:40:38,911 --> 01:40:39,572
+4,
+
+481
+01:40:40,692 --> 01:40:44,171
+minus x cubed,
+
+482
+01:40:44,992 --> 01:40:46,771
+is smaller than 1, or,
+
+483
+01:40:52,020 --> 01:41:01,480
+x3 is smaller than 1, or x is smaller than 1.
+
+484
+01:41:04,480 --> 01:41:05,320
+Okay.
+
+485
+01:41:09,140 --> 01:41:11,140
+ve, bu sürü bir sürü.
+
+486
+01:41:19,380 --> 01:41:29,880
+Actually, it is not easy to write this on the geometric series form.
+
+487
+01:41:36,500 --> 01:41:49,340
+So, we have to use some algebraic manipulation to relate this function with geometric series.
+
+488
+01:41:51,840 --> 01:41:57,439
+Again, we use this equation because we only know this one.
+
+489
+01:42:05,971 --> 01:42:21,931
+Bu, 4 yıl var, ama 1 yıl var. Bu, ilk şey, B'ye serisi yazmak için, 4 yıl var.
+
+490
+01:42:36,979 --> 01:42:41,979
+1 minus x2 over 4.
+
+491
+01:42:44,500 --> 01:42:51,659
+So, we can also write this as x2 over 4.
+
+492
+01:42:52,659 --> 01:42:54,739
+1 minus
+
+493
+01:43:04,148 --> 01:43:08,307
+1 minus x over 2
+
+494
+01:43:08,307 --> 01:43:11,708
+square.
+
+495
+01:43:12,467 --> 01:43:14,927
+So, this is a geometric series.
+
+496
+01:43:22,036 --> 01:43:23,176
+Seriüs beat
+
+497
+01:43:23,176 --> 01:43:27,256
+A is
+
+498
+01:43:30,739 --> 01:43:33,819
+X2 over 4, and...
+
+499
+01:43:38,739 --> 01:43:51,159
+R is, what is R? R is x over 2 to the 2.
+
+500
+01:43:51,159 --> 01:44:04,380
+Therefore, therefore, f of x, which is x tükkan over,
+
+501
+01:44:09,395 --> 01:44:28,315
+4 minus x2 is, 0 to infinity, what is a? x2 over 4 times x to the n.
+
+502
+01:44:31,923 --> 01:44:48,423
+sorry, r to the n, x over 2, square to the n, or, or, you can also write this as,
+
+503
+01:44:52,979 --> 01:45:04,539
+And also, the condition is, the absolute body of R, which is x squared over 4, is smaller than 1.
+
+504
+01:45:07,839 --> 01:45:11,539
+So, this is equal to the...
+
+505
+01:45:15,060 --> 01:45:17,140
+0 to infinity.
+
+506
+01:45:18,520 --> 01:45:21,700
+This is x to the 2 and plus 2.
+
+507
+01:45:30,899 --> 01:45:32,899
+Bu bir şey.
+
+508
+01:45:36,020 --> 01:45:46,020
+2 to the 2, or with 2 to the, or 3, 4 to the,
+
+509
+01:45:54,068 --> 01:45:55,188
+Faltı da enk.
+
+510
+01:45:59,764 --> 01:46:01,764
+4 to the n plus 1.
+
+511
+01:46:05,811 --> 01:46:07,771
+x2k'er, yasmaler ne?
+
+512
+01:46:09,231 --> 01:46:09,751
+4
+
+513
+01:46:16,340 --> 01:46:21,920
+Or, x is smaller than 2.
+
+514
+01:46:23,100 --> 01:46:25,880
+So, f is equal to
+
+515
+01:46:30,612 --> 01:46:34,292
+8 sükör olur, 4-8 sükör.
+
+516
+01:46:46,484 --> 01:46:48,484
+on the interval,
+
+517
+01:46:50,484 --> 01:46:56,484
+the absolute value of x is smaller than 2.
+
+518
+01:46:58,484 --> 01:46:59,484
+Okay.
+
+519
+01:46:59,484 --> 01:47:02,484
+We only use the geometric series.
+
+520
+01:47:06,452 --> 01:47:08,452
+Geometrik Series
+
+521
+01:47:10,452 --> 01:47:14,452
+ve ilk örneğin [öğrenci]
+
+522
+01:47:14,452 --> 01:47:26,452
+bu funktional olarak
+
+523
+01:47:26,452 --> 01:47:36,452
+bu
+
+524
+01:47:36,452 --> 01:48:01,452
+bir
+
+525
+01:48:44,340 --> 01:48:54,819
+Şimdi, bir kısım olarak bir kısım olarak yazmak istiyorsanız,
+
+526
+01:48:54,819 --> 01:49:03,860
+veya, bu kısım olarak yazmak istiyorsanız, bu kısım olarak yazmak istiyorsanız,
+
+527
+01:49:08,724 --> 01:49:12,224
+Till now, we only know that, we only know that.
+
+528
+01:49:15,956 --> 01:49:30,676
+The series x to the n, which is 1 plus x plus x2 plus xq plus bla bla, is a geometric series.
+
+529
+01:49:38,676 --> 01:49:39,676
+VİT
+
+530
+01:49:50,931 --> 01:49:59,692
+a is 1, and r is x.
+
+531
+01:50:13,203 --> 01:50:18,844
+Bu, bu, bu, geometrik serisi,
+
+532
+01:50:23,315 --> 01:50:42,595
+is convergent for absolute value of x is smaller than 1, because we know that the geometric series are convergent for the absolute value of r is smaller than 1, and
+
+533
+01:50:42,595 --> 01:50:46,555
+konuları iş
+
+534
+01:50:50,484 --> 01:50:59,744
+A over 1 minus R, which is 1 over 1 minus X.
+
+535
+01:50:59,744 --> 01:51:01,384
+So,
+
+536
+01:51:06,260 --> 01:51:09,619
+We can write this power series
+
+537
+01:51:16,340 --> 01:51:22,819
+As the function 1 over 1 minus x 4.
+
+538
+01:51:24,460 --> 01:51:31,319
+Absolute value of x is smaller than 1 because this series
+
+539
+01:51:31,319 --> 01:51:39,420
+converts to this function on this interval.
+
+540
+01:51:39,420 --> 01:51:44,079
+So we can write this only on this interval.
+
+541
+01:51:44,699 --> 01:51:45,260
+Is this okay?
+
+542
+01:51:46,340 --> 01:51:57,340
+So this function can be written as the power series on its interval of convergence.
+
+543
+01:51:57,340 --> 01:52:05,340
+We only know this equation or this function representation.
+
+544
+01:52:05,340 --> 01:52:12,699
+Now, using this one, we want to find
+
+545
+01:52:12,699 --> 01:52:19,699
+The power series representation of this function.
+
+546
+01:52:19,699 --> 01:52:30,699
+1 over 1 plus x square is equal to
+
+547
+01:52:30,699 --> 01:52:37,699
+1 over 1 minus x square.
+
+548
+01:52:37,699 --> 01:52:44,699
+So for this function,
+
+549
+01:52:48,948 --> 01:53:12,868
+This is a geometric series with a is 1 and r is minus x square. So we can write this function as
+
+550
+01:53:18,899 --> 01:53:21,579
+A times R to the n.
+
+551
+01:53:23,539 --> 01:53:26,219
+R is minus x2 to the n.
+
+552
+01:53:28,059 --> 01:53:29,579
+Under which condition?
+
+553
+01:53:30,579 --> 01:53:34,559
+Under the absolute value of R, which is minus x2,
+
+554
+01:53:34,559 --> 01:53:38,179
+is smaller than 1.
+
+555
+01:53:38,179 --> 01:53:48,619
+So, 1 over 1 plus x2 is equal to.
+
+556
+01:53:52,692 --> 01:53:54,891
+This is minus 1 to the n.
+
+557
+01:53:57,832 --> 01:54:01,112
+X2 to the 2n.
+
+558
+01:54:01,891 --> 01:54:08,811
+We can write this as minus 1 to the n times x2 to the n.
+
+559
+01:54:08,811 --> 01:54:13,811
+So it is minus 1 to the 1 to the n times x2 to the n.
+
+560
+01:54:13,811 --> 01:54:29,551
+And it means that the absolute value of x2 minus x2 smaller than 1 implies the absolute value of x2 is smaller than 1.
+
+561
+01:54:29,551 --> 01:54:36,851
+Or it's also same as the absolute value of x is smaller than 1.
+
+562
+01:54:37,412 --> 01:54:40,511
+So under this condition,
+
+563
+01:54:45,011 --> 01:55:02,931
+We can write this function as this power series. So, the other examples for all of other functions we use.
+
+564
+01:55:07,507 --> 01:55:10,127
+Bu ekonomik, ok.
+
+565
+01:55:44,724 --> 01:55:45,923
+Look at this example.
+
+566
+01:55:50,036 --> 01:56:04,615
+Actually, it is same as to write this 1 over 2 plus x.
+
+567
+01:56:05,155 --> 01:56:08,376
+First factor out 2 here.
+
+568
+01:56:10,155 --> 01:56:16,796
+This is 1 over 2 times 1 plus x over 2.
+
+569
+01:56:16,796 --> 01:56:29,916
+So, this is equal to 1 over 2 times 1 minus x over 2.
+
+570
+01:56:31,756 --> 01:56:44,336
+So, this is equal to 1 over 2, 1 minus x over 2.
+
+571
+01:56:44,336 --> 01:57:02,735
+So, this is a geometric series with a is 1 over 2 and r is minus x over 2.
+
+572
+01:57:02,735 --> 01:57:07,735
+And, and...
+
+573
+01:57:07,735 --> 01:57:27,735
+So, this is a little bit more.
+
+574
+01:57:12,404 --> 01:57:23,424
+1 over 2 plus x is equal to the n 0 to the infinity r times r to the n.
+
+575
+01:57:23,424 --> 01:57:35,304
+1 over 2 times r is minus x over 2 to the n.
+
+576
+01:57:35,304 --> 01:57:47,484
+1 over 2 times r is minus x over 2 is smaller than 1.
+
+577
+01:57:47,484 --> 01:57:56,484
+So, this is equal to...
+
+578
+01:58:03,923 --> 01:58:05,403
+Minus 1
+
+579
+01:58:05,403 --> 01:58:09,724
+To the n
+
+580
+01:58:09,724 --> 01:58:13,764
+X to the n over
+
+581
+01:58:13,764 --> 01:58:17,903
+2 to the n plus 1
+
+582
+01:58:22,804 --> 01:58:30,024
+ver, absolute value of x is smaller than 2.
+
+583
+01:58:37,555 --> 01:58:38,415
+İzduk'in.
+
+584
+01:59:11,636 --> 01:59:13,096
+Which one? Orad.
+
+585
+01:59:20,756 --> 01:59:23,596
+Minus X over 2 to the...
+
+586
+01:59:38,068 --> 01:59:39,847
+Siz Geometrik serisi, [öğrenci].
+
+587
+01:59:48,115 --> 01:59:49,216
+Siz yömetik serisi.
+
+588
+01:59:55,988 --> 01:59:59,988
+Do it, Do it
+
+589
+02:00:03,764 --> 02:00:06,963
+We say geometric series are on form.
+
+590
+02:00:20,180 --> 02:00:21,220
+Up to the end.
+
+591
+02:00:39,412 --> 02:00:41,212
+Tüya matik sayısar, on the phone.
+
+592
+02:00:47,252 --> 02:01:01,252
+Bu, aslında önemli bir şey, bu seriçin istersen A'ı
+
+593
+02:01:03,252 --> 02:01:16,252
+A'ı
+
+594
+02:01:13,427 --> 02:01:18,627
+İngilizce form. İngilizce form, if the series is in this form, then it's a geomertic series.
+
+595
+02:01:24,564 --> 02:01:26,423
+Now, look at the example 3.
+
+596
+02:01:38,003 --> 02:01:44,043
+Fiyatı power series representation of x3 over x plus 2.
+
+597
+02:01:44,724 --> 02:01:51,483
+Actually, we did in example 2,
+
+598
+02:01:52,483 --> 02:01:55,923
+or we found the power series representation for
+
+599
+02:01:55,923 --> 02:02:04,163
+1 plus 1 over x plus 2 in example 32.
+
+600
+02:02:04,163 --> 02:02:12,844
+Since this function is x3 times 1 over x plus 2,
+
+601
+02:02:15,844 --> 02:02:20,163
+we have to only multiply this series with
+
+602
+02:02:27,667 --> 02:02:33,307
+x cubed times 1 over x plus 2.
+
+603
+02:02:35,387 --> 02:02:49,607
+And this is equal to x cubed times, this is equal to, and 0 to infinity minus 1 to the n.
+
+604
+02:02:55,283 --> 02:02:58,323
+x to n over
+
+605
+02:02:58,323 --> 02:03:02,023
+2 to the n plus 1
+
+606
+02:03:05,619 --> 02:03:10,619
+So, this is equal to...
+
+607
+02:03:15,604 --> 02:03:31,404
+Minus 1 to the n, x to the n plus 3 over 2 to the n plus 1, and
+
+608
+02:03:36,851 --> 02:03:39,851
+İntevalı konvergisinin değişimi değiştirmek için,
+
+609
+02:03:39,851 --> 02:03:43,851
+bu kadar 2'ye kadar.
+
+610
+02:03:43,851 --> 02:03:49,851
+Bu, sadece bu sayesinde bu sayesinde x3'e değiştirelim.
+
+611
+02:03:51,851 --> 02:03:52,851
+Tamam.
+
+612
+02:03:55,796 --> 02:04:16,166
+Bu, bu
+
+613
+02:04:25,844 --> 02:04:30,404
+Burad, let us look at the example again.
+
+614
+02:04:35,796 --> 02:04:49,176
+We talk about this, this one. Okay. This is a geometric series. Or maybe you want to, which one?
+
+615
+02:04:52,659 --> 02:04:56,359
+You mean this one? This one or this one?
+
+616
+02:05:02,996 --> 02:05:20,996
+Example 3, I didn't say this is a geometric series. This is not a geometric series. This one is a geometric series. And I multiplied geometric series with x3.
+
+617
+02:05:20,996 --> 02:05:24,016
+Ok.
+
+618
+02:05:35,188 --> 02:05:37,188
+Bu örneğin,
+
+619
+02:05:44,404 --> 02:05:51,124
+find the power series representation of this function.
+
+620
+02:06:07,667 --> 02:06:18,107
+Sorry, I am sorry. Find the function that represents with this series.
+
+621
+02:06:18,107 --> 02:06:27,827
+Now, we want to find the function that represents this power series.
+
+622
+02:06:34,739 --> 02:06:40,699
+So, you have to use, again, the geometric series.
+
+623
+02:06:42,219 --> 02:06:47,340
+Maybe, this is a geometric series, maybe, I don't know.
+
+624
+02:06:47,939 --> 02:06:51,460
+Oh, it is written, it is geometric series.
+
+625
+02:06:51,599 --> 02:06:55,559
+So, we can write as a function.
+
+626
+02:07:01,140 --> 02:07:02,880
+This is equal to
+
+627
+02:07:23,667 --> 02:07:33,768
+Minus 3x to the m minus 1, 3 to the 2 to the 3n.
+
+628
+02:07:33,768 --> 02:08:02,907
+For m1, we have 0, 1, 1 over 8, for 2, maybe we can write this, we can take one of the 8 here, because this is 8 to the n.
+
+629
+02:08:07,796 --> 02:08:11,796
+ve n-1'e bu.
+
+630
+02:08:11,796 --> 02:08:15,796
+Bu, bir de 8'e bu.
+
+631
+02:08:15,796 --> 02:08:17,796
+Bu, bu,
+
+632
+02:08:21,908 --> 02:08:23,948
+1 over 8
+
+633
+02:08:23,948 --> 02:08:26,948
+minus
+
+634
+02:08:26,948 --> 02:08:29,508
+3x over
+
+635
+02:08:29,508 --> 02:08:32,208
+8
+
+636
+02:08:32,208 --> 02:08:33,428
+to the
+
+637
+02:08:33,428 --> 02:08:37,748
+m minus 1.
+
+638
+02:08:43,315 --> 02:08:49,315
+So, this is a geometric series
+
+639
+02:08:50,115 --> 02:09:05,315
+with R is minus 3x over 8 and A is 1 over 8.
+
+640
+02:09:05,515 --> 02:09:10,315
+So, this series can be written as the function
+
+641
+02:09:10,315 --> 02:09:27,315
+This series converts to A over which is 1 over 8 over 1 minus R which is minus 3x over 8
+
+642
+02:09:27,315 --> 02:09:29,315
+under which condition?
+
+643
+02:09:29,315 --> 02:09:47,315
+Under the condition that R which is minus 3x over 8 is smaller than 1.
+
+644
+02:09:47,315 --> 02:09:51,315
+Wow! So, this series is equal to
+
+645
+02:09:57,587 --> 02:10:06,648
+1 over 8 over 1 plus 3x over 8
+
+646
+02:10:21,395 --> 02:10:39,036
+Under the condition, the absolute of x is smaller than 8 over 3. Therefore, this series is equal to 1 over...
+
+647
+02:10:46,739 --> 02:10:56,119
+1 over 8 plus 3x.
+
+648
+02:10:56,119 --> 02:11:04,960
+Under the condition, the absolute total of x is smaller than 8 thirds.
+
+649
+02:11:07,460 --> 02:11:08,380
+Okay.
+
+650
+02:11:20,404 --> 02:11:21,244
+Any questions?
+
+651
+02:11:29,171 --> 02:11:29,731
+No.
+
+652
+02:11:52,659 --> 02:12:05,460
+In example 3, we want to write, we want to write this geometric series as the known form.
+
+653
+02:12:07,460 --> 02:12:20,139
+We take one of the eight from here, so this is a geometric series with a is one over eight, which one?
+
+654
+02:12:22,659 --> 02:12:23,420
+Bir sonra?
+
+655
+02:12:28,020 --> 02:12:57,280
+Ok, we know the power series representation of this function, which is this one, the probable, and we only multiply this with x cubed, because this is a function, this is a function, you can multiply the functions, so x cubed times this function is equal to, we have x to the n here,
+
+656
+02:12:57,280 --> 02:13:02,840
+So, x to the n times x to the 3, we have x to the n plus 3.
+
+657
+02:13:06,355 --> 02:13:12,675
+We only multiply x cube with this series.
+
+658
+02:13:12,675 --> 02:13:13,295
+Okay?
+
+659
+02:13:20,212 --> 02:13:22,212
+This theorem gives
+
+660
+02:13:24,212 --> 02:13:27,212
+an information how to
+
+661
+02:13:27,212 --> 02:13:29,212
+differentiate or integrate
+
+662
+02:13:29,212 --> 02:13:31,212
+the power series
+
+663
+02:13:32,212 --> 02:13:34,212
+if you have power series
+
+664
+02:13:41,908 --> 02:14:01,488
+cn times x minus a to the n, which is convergent on the radius, r is bigger than zero, then we can differentiate this function.
+
+665
+02:14:05,779 --> 02:14:35,779
+Çünkü, bu
+
+666
+02:14:35,779 --> 02:15:05,759
+Now you can differentiate this function on this interval as the derivative or the differential of this function is equal to take the derivative of this with respect to n so the derivative of this function is equal to n times cn times xn.
+
+667
+02:15:05,779 --> 02:15:30,199
+x minus a to the n minus 1 but in the series you have to start it with n 1 because we have n minus 1 here. You also know that adding or subtracting subtracting finite number of terms does not change the convergence of the series.
+
+668
+02:15:30,199 --> 02:15:46,079
+So, so the derivative or the derivative or the differential of the power series is only taking the derivative of the series with respect to the n.
+
+669
+02:15:46,079 --> 02:16:14,500
+And similarly, the integral of the integral of the integral of the integral of the integral of this power series or this function is equal to integral of this series which is 1 over n plus 1 x minus a to the n plus 1 plus constant c.
+
+670
+02:16:14,500 --> 02:16:20,500
+Okay.
+
+671
+02:16:20,500 --> 02:16:41,500
+And, and the radius of convergence is the same as the original power series or taking the derivative of a function or integral of a function or taking an integral or derivative of a power series does not change its convergence of.
+
+672
+02:16:41,500 --> 02:16:42,500
+So, so the radius of convergence.
+
+673
+02:16:42,500 --> 02:16:44,500
+So the radius of convergence.
+
+674
+02:16:44,500 --> 02:16:46,500
+Okay.
+
+675
+02:16:46,500 --> 02:16:47,500
+But, but in some cases.
+
+676
+02:16:47,500 --> 02:16:54,500
+The radius of convergence remains the same but in some cases the interval of convergence may change.
+
+677
+02:16:54,500 --> 02:16:56,500
+And this differential of.
+
+678
+02:16:56,500 --> 02:16:57,500
+or.
+
+679
+02:16:57,500 --> 02:16:58,500
+The power series.
+
+680
+02:16:58,500 --> 02:16:59,500
+Are most used in the differential calculus.
+
+681
+02:16:59,500 --> 02:17:00,500
+Especially differentiate.
+
+682
+02:17:00,500 --> 02:17:01,500
+The power series.
+
+683
+02:17:01,500 --> 02:17:03,500
+Are most used in the differential calculus.
+
+684
+02:17:03,500 --> 02:17:04,500
+Especially differentiating.
+
+685
+02:17:04,500 --> 02:17:05,500
+The power series.
+
+686
+02:17:05,500 --> 02:17:06,500
+Is just in solving differential equations.
+
+687
+02:17:06,500 --> 02:17:08,500
+Now.
+
+688
+02:17:39,827 --> 02:17:41,327
+Look at the example.
+
+689
+02:17:43,827 --> 02:18:03,787
+Write this function as a power series or find the power series representation of this function by differentiating 1 over 1 minus x.
+
+690
+02:18:03,787 --> 02:18:17,448
+Again, we use this function because we only know the power series representation of this function f of x.
+
+691
+02:18:23,347 --> 02:18:33,507
+Evet, we will finish the lecture at 12.40.
+
+692
+02:18:33,788 --> 02:18:35,407
+So, we have 20 minutes.
+
+693
+02:18:37,587 --> 02:18:43,868
+f of x is equal to 1 over 1 minus x.
+
+694
+02:18:45,147 --> 02:18:49,747
+And this is equal to the power series or geometric series.
+
+695
+02:18:49,747 --> 02:18:55,708
+And 0 to the infinity, x to the n.
+
+696
+02:18:57,708 --> 02:19:02,727
+Under the condition, the absolute value of x is smaller than 1.
+
+697
+02:19:03,788 --> 02:19:11,667
+Now, from the theorem above, you can take the derivative of a power series.
+
+698
+02:19:11,667 --> 02:19:20,628
+So, f prime x is equal to, what is the derivative of this function?
+
+699
+02:19:20,628 --> 02:19:25,948
+Is equal to 1 over 1 minus x square.
+
+700
+02:19:26,587 --> 02:19:31,128
+So, we also take the derivative of this one.
+
+701
+02:19:31,128 --> 02:19:45,028
+So, this is equal to.
+
+702
+02:19:39,123 --> 02:19:40,904
+What is the derivative of this function?
+
+703
+02:19:43,583 --> 02:19:45,064
+Sorry, this is serious.
+
+704
+02:19:47,503 --> 02:19:52,963
+n times x to the n minus 1,
+
+705
+02:19:54,744 --> 02:19:57,443
+and 1 to the infinity,
+
+706
+02:19:58,564 --> 02:20:02,683
+and the absolute value of x is smaller than 1.
+
+707
+02:20:03,083 --> 02:20:04,664
+Actually, you can write this
+
+708
+02:20:04,664 --> 02:20:08,623
+as if you want to
+
+709
+02:20:08,623 --> 02:20:10,804
+begin the series with
+
+710
+02:20:10,804 --> 02:20:12,123
+0,
+
+711
+02:20:12,984 --> 02:20:14,583
+it is same as to write
+
+712
+02:20:14,583 --> 02:20:17,443
+n 0 to the infinity
+
+713
+02:20:17,443 --> 02:20:20,503
+n plus 1
+
+714
+02:20:20,503 --> 02:20:24,443
+x to the n.
+
+715
+02:20:28,788 --> 02:20:40,468
+We only take the derivative of both sides. We have this equation f of x is 1 over 1 minus x and this is equal to geometric series.
+
+716
+02:20:41,427 --> 02:20:50,388
+Then taking the derivative of both sides, we have 1 over 1 minus x2 is equal to this power series.
+
+717
+02:20:51,747 --> 02:20:56,548
+Okay. And what about the second one?
+
+718
+02:20:59,188 --> 02:21:04,948
+Find a power series that represents ln 1 plus x.
+
+719
+02:21:07,667 --> 02:21:11,828
+How can we find the power series that represents this function?
+
+720
+02:21:13,108 --> 02:21:13,828
+We have any...
+
+721
+02:21:17,940 --> 02:21:21,940
+Accomodation, or do you have any idea?
+
+722
+02:21:30,291 --> 02:21:35,211
+How can we write this function as the power series?
+
+723
+02:21:40,308 --> 02:22:01,268
+If f of x is ln 1 plus x, then the derivative of this function is 1 over 1 plus x.
+
+724
+02:22:01,268 --> 02:22:14,228
+So, you can write this as 1 over 1 minus x.
+
+725
+02:22:14,228 --> 02:22:37,908
+So, this is equal to n 0 to infinity minus x to n or n 0 to infinity minus 1 to n x to n.
+
+726
+02:22:44,084 --> 02:22:57,644
+So, in which interval? In the interval, x is, the absolute of x is smaller than,
+
+727
+02:23:01,108 --> 02:23:01,608
+1.
+
+728
+02:23:03,028 --> 02:23:03,388
+So,
+
+729
+02:23:04,587 --> 02:23:06,148
+integrating both sides
+
+730
+02:23:06,148 --> 02:23:09,228
+here
+
+731
+02:23:21,620 --> 02:23:24,920
+Integrating this gives f of x.
+
+732
+02:23:26,620 --> 02:23:33,620
+So, f of x is equal to,
+
+733
+02:23:35,620 --> 02:23:41,920
+and then 1 plus x is equal to the integral of this power series,
+
+734
+02:23:44,620 --> 02:23:48,520
+which is c plus,
+
+735
+02:23:51,620 --> 02:23:53,620
+what is the integral of this series?
+
+736
+02:23:55,620 --> 02:23:57,620
+and 0 to infinity
+
+737
+02:23:58,620 --> 02:23:59,620
+minus 1 to the
+
+738
+02:24:00,620 --> 02:24:01,620
+.
+
+739
+02:24:08,180 --> 02:24:15,920
+ve x to the n plus 1 over n plus 1.
+
+740
+02:24:27,827 --> 02:24:28,827
+Hoşçakalın.
+
+741
+02:24:33,332 --> 02:24:35,572
+Or you can write this as
+
+742
+02:24:35,572 --> 02:24:39,012
+C plus
+
+743
+02:24:39,012 --> 02:24:42,952
+N1 to the infinity
+
+744
+02:24:42,952 --> 02:24:45,391
+Minus 1
+
+745
+02:24:45,391 --> 02:24:48,852
+To the N minus 1
+
+746
+02:24:48,852 --> 02:24:54,032
+X to the N over N
+
+747
+02:24:59,924 --> 02:25:12,504
+So, here we have to find c if or for x is 0,
+
+748
+02:25:18,004 --> 02:25:27,544
+F0, which is LM1 plus 0, is equal to C plus, this is 0.
+
+749
+02:25:28,304 --> 02:25:36,264
+So, C is equal to LM1, therefore C is 0.
+
+750
+02:25:40,115 --> 02:25:48,335
+Consequently, the power series representation of ln1 plus x is
+
+751
+02:25:52,308 --> 02:26:22,008
+n1 to the infinity minus 1 to n minus 1 over n times x to the n, which is x minus x square over 2,
+
+752
+02:26:22,008 --> 02:26:35,748
+plus x cube over 3 minus x to the 4 over 4 plus x to the 5.
+
+753
+02:26:40,340 --> 02:26:47,340
+ve
+
+754
+02:26:53,556 --> 02:27:05,236
+This presentation is very important, so you have to know this one.
+
+755
+02:27:14,579 --> 02:27:25,959
+We use the power series representation of this function.
+
+756
+02:27:27,959 --> 02:27:37,299
+And by integrating the power series, we have the power series representation of ln plus x.
+
+757
+02:27:50,804 --> 02:28:03,543
+Ok, this example will be the last one. Now find the power series representation of arctangent x.
+
+758
+02:28:07,092 --> 02:28:30,512
+Again, again, if f of x is equal to r tangent x, we only know, or sorry, we can write the derivative of this function,
+
+759
+02:28:30,512 --> 02:28:40,432
+f' x is equal to 1 over 1 plus x square.
+
+760
+02:28:41,432 --> 02:28:51,872
+So, this is also equal to, so we can write the power series representation of this function by using the fact that
+
+761
+02:28:51,872 --> 02:29:02,292
+this is equal to 1 over 1 minus x square.
+
+762
+02:29:11,123 --> 02:29:19,963
+So, this is equal to and zero to infinity.
+
+763
+02:29:23,956 --> 02:29:29,935
+Minus 1 to the n, x to the 2n.
+
+764
+02:29:35,860 --> 02:29:36,540
+Fos,
+
+765
+02:29:41,299 --> 02:29:47,279
+Minus x tüker is smaller than 1.
+
+766
+02:30:03,987 --> 02:30:04,507
+Son,
+
+767
+02:30:15,188 --> 02:30:19,507
+f'x'e equal to
+
+768
+02:30:24,500 --> 02:30:50,540
+0 to infinity, minus 1 to the n, x to the 2n, and this is also equal to 1 minus x square plus x to the 4 minus x to the 6 plus x to the 8, and goes on.
+
+769
+02:30:50,540 --> 02:30:58,659
+where the absolute value of x is smaller than 1.
+
+770
+02:30:58,659 --> 02:31:18,760
+Now, now, we want to find f of x, the power series representation of f of x, taking the integral of
+
+771
+02:31:18,760 --> 02:31:22,479
+both sides,
+
+772
+02:31:26,675 --> 02:31:35,796
+We have f of x is equal to
+
+773
+02:31:48,948 --> 02:31:53,948
+İntegral of prime x.
+
+774
+02:31:55,948 --> 02:31:58,948
+And this is the integral of this one.
+
+775
+02:32:00,948 --> 02:32:05,948
+You can also integrate all of these terms.
+
+776
+02:32:05,948 --> 02:32:15,948
+The integral of this series is c plus c.
+
+777
+02:32:17,652 --> 02:32:20,172
+0 to infinity,
+
+778
+02:32:22,311 --> 02:32:23,672
+minus 1 to the n,
+
+779
+02:32:27,252 --> 02:32:34,932
+x to the 2n plus 1 over 2n plus 1.
+
+780
+02:32:35,932 --> 02:32:40,471
+This is actually equal to the c plus, what is the integral of 1?
+
+781
+02:32:41,092 --> 02:32:55,891
+x minus x cube over 3 plus x5 over 5.
+
+782
+02:33:09,587 --> 02:33:18,747
+minus x to the 7 over 7 goes off.
+
+783
+02:33:21,387 --> 02:33:34,067
+So, for x is 0, we have our tangent 0, which is 0,
+
+784
+02:33:34,067 --> 02:33:36,827
+is equal to
+
+785
+02:33:36,827 --> 02:33:39,907
+c plus
+
+786
+02:33:39,907 --> 02:33:42,407
+0.
+
+787
+02:33:43,547 --> 02:33:45,948
+Therefore, c is 0.
+
+788
+02:33:49,940 --> 02:33:52,640
+As a result olur, consequently,
+
+789
+02:34:10,835 --> 02:34:13,175
+At tangent peak x
+
+790
+02:34:18,100 --> 02:34:23,760
+is equal to, or can written as the power series,
+
+791
+02:34:28,115 --> 02:34:39,015
+Minus 1 to the n, x to the 2, n plus 1, over 2, n plus 1.
+
+792
+02:34:41,136 --> 02:34:56,115
+This is also equal to x minus x cube over 3, plus x to the 5, over 5, minus x to the 7, over,
+
+793
+02:34:58,115 --> 02:35:08,056
+7 plus x to the 9, over 9, and goes on.
+
+794
+02:35:10,536 --> 02:35:19,956
+So, we have found the power series representation of
+
+795
+02:35:26,868 --> 02:35:29,368
+at tangent x
+
+796
+02:35:33,907 --> 02:35:36,907
+Bu da önemli bir şey.
+
+797
+02:35:38,108 --> 02:35:40,907
+Bu örneğin, bu örneğin,
+
+798
+02:35:40,907 --> 02:35:42,907
+Bu örneğin,
+
+799
+02:36:08,084 --> 02:36:23,904
+Please repeat these examples, these properties to understand it because these are not easy to understand.
+
+800
+02:36:24,484 --> 02:36:36,404
+Try to solve with your own and if you don't understand how to solve or why we did this,
+
+801
+02:36:38,084 --> 02:36:49,264
+please ask me, you can ask your questions whatever you want and if you don't have any questions now,
+
+802
+02:36:53,524 --> 02:36:55,224
+I hope to see you tomorrow.
+
+803
+02:36:57,724 --> 02:37:02,364
+Okay, have a nice day all of you and hope to see you tomorrow.
+
+804
+02:37:09,556 --> 02:37:22,416
+I upload these notes to your lesson wall now, and you can see, and you can check or you can find the examples in your lesson wall.

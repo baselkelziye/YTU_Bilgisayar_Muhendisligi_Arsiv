@@ -1,0 +1,2131 @@
+1
+00:00:50,484 --> 00:00:51,704
+Güzel bir sorun, everyone.
+
+2
+00:01:00,723 --> 00:01:01,683
+Kutu daftan.
+
+3
+00:01:09,203 --> 00:01:17,303
+Yesterday, we talked about vector functions and the derivative of vector functions.
+
+4
+00:01:19,024 --> 00:01:38,583
+We said that if a vector function has the magnitude c, which is a constant, then the derivative of this vector function is orthogonal to the
+
+5
+00:01:39,203 --> 00:01:47,143
+that this function R. Actually, geometrically, it is very important to know that
+
+6
+00:01:47,143 --> 00:02:04,883
+if we have a particle, as in the figure, if we have a particle moves on a sphere in such a way that its position vector is R or R of t,
+
+7
+00:02:04,883 --> 00:02:25,503
+which is a differential function, which is a differential function, then the derivative of this function, the vector function or position function is perpendicular to or orthogonal to the tangent vector at the point,
+
+8
+00:02:25,503 --> 00:02:39,764
+at all point, at all point, at all point, at all point, on the, this curve. Okay. So again, I want to write this expression because it's important.
+
+9
+00:02:45,556 --> 00:02:46,796
+If&Curve
+
+10
+00:03:13,780 --> 00:03:18,140
+Evet, kür, lise, on a spear.
+
+11
+00:03:31,860 --> 00:03:33,860
+...which center the origin...
+
+12
+00:03:50,324 --> 00:03:52,324
+ve tanent vektörler,
+
+13
+00:04:08,563 --> 00:04:15,563
+Tanrı ve t'ye kadar
+
+14
+00:04:15,563 --> 00:04:18,563
+always
+
+15
+00:04:22,067 --> 00:04:24,207
+Perpendicular to the Position Meter.
+
+16
+00:04:37,267 --> 00:04:42,427
+Position vektör, R of t, sorry, Position.
+
+17
+00:04:51,124 --> 00:04:52,124
+Tamam, tamam.
+
+18
+00:04:55,860 --> 00:05:10,980
+Evet, [öğrenci], daha sonraki hafta
+
+19
+00:05:14,483 --> 00:05:24,863
+Now, we have velocity, direction, speed, and acceleration for the vector functions.
+
+20
+00:05:25,603 --> 00:05:34,323
+If we have a vector function r, which is a position vector of a particle moving along a smooth curve in a space,
+
+21
+00:05:34,323 --> 00:05:42,103
+you can think this curve and a particle p moves on this curve in a space.
+
+22
+00:05:43,423 --> 00:05:50,584
+And the derivative of this vector function, which is dr over dt,
+
+23
+00:05:52,103 --> 00:05:56,883
+is a velocity vector, particles velocity vector.
+
+24
+00:06:03,379 --> 00:06:05,379
+Velocity
+
+25
+00:06:08,259 --> 00:06:21,379
+is the derivative of the position vector, which is dr over dt or r' t, and speed is the magnitude of the velocity.
+
+26
+00:06:24,180 --> 00:06:39,819
+And acceleration of this particle is the derivative of velocity, which is dv over dt, or the second derivative of r with respect to t.
+
+27
+00:06:39,819 --> 00:06:55,620
+And the unit vector which we can write the unit vectors v over the magnitude of v is the direction of the motion at any time t.
+
+28
+00:06:56,720 --> 00:06:57,000
+Okay.
+
+29
+00:06:57,680 --> 00:06:58,439
+For example.
+
+30
+00:07:11,699 --> 00:07:30,699
+A person on a hang glider is spinning upward due to the repeat rising air on a path having position vector, which is R of t is equal to 3 cosine ti plus 3 sine tj plus t square k.
+
+31
+00:07:30,699 --> 00:07:45,699
+So the path of this glider is similar to the helix in the figure because we have already know that this gives an helix.
+
+32
+00:07:45,699 --> 00:07:49,699
+This function gives an helix.
+
+33
+00:07:49,699 --> 00:08:08,699
+So, so, at A, find the velocity at the acceleration vectors, the glider speed at any time t, and the times, if any, when the glider's acceleration is orthogonal to its velocity.
+
+34
+00:08:08,699 --> 00:08:24,699
+For A, for the velocity at acceleration vectors, we have to take the derivative of the position vector, which is given by R of t.
+
+35
+00:08:28,660 --> 00:08:33,660
+3cosTi
+
+36
+00:08:48,755 --> 00:08:59,196
+So, taking the first order derivative of position vector, gives the velocity vector,
+
+37
+00:09:06,772 --> 00:09:17,492
+[öğrenci], yes, it is right. The first midterm exam is at 17th of May.
+
+38
+00:09:19,532 --> 00:09:36,492
+But, but, you ask, I think you ask why the exam is at 8 week and why our calculus exam is at May 17th.
+
+39
+00:09:36,492 --> 00:09:37,451
+Your question is that?
+
+40
+00:09:43,827 --> 00:10:00,807
+We have two exam weeks, actually, because some of the lectures, like Calculus 2, Algebra, and Differential Equations, have many, many students.
+
+41
+00:10:00,807 --> 00:10:13,887
+So, we make these lectures, exams, in, in, after, after the exams of your department exams.
+
+42
+00:10:13,887 --> 00:10:21,347
+So, in week 8, which is next week, we have no lectures.
+
+43
+00:10:21,347 --> 00:10:31,048
+Okay, but in 17th of May, we have lectures, and you have all of lectures.
+
+44
+00:10:31,707 --> 00:10:31,967
+Okay.
+
+45
+00:10:39,124 --> 00:10:50,484
+So, the velocity vector is the derivative of the position vector, which is dr over dt.
+
+46
+00:10:52,163 --> 00:11:01,604
+And we know that the derivative of this vector function is the derivative of each component.
+
+47
+00:11:01,604 --> 00:11:12,884
+So, the derivative of 3 cosine t is equal to minus 3 sine t i.
+
+48
+00:11:15,604 --> 00:11:23,884
+And the derivative of 3 times sine t is equal to 3 times cosine t j.
+
+49
+00:11:23,884 --> 00:11:33,084
+And the derivative of t square is 2t k.
+
+50
+00:11:33,884 --> 00:11:39,964
+So, this is the velocity vector.
+
+51
+00:11:40,764 --> 00:11:49,724
+And the acceleration vector is the derivative of the velocity function or velocity vector.
+
+52
+00:11:53,299 --> 00:11:54,799
+dv over dt,
+
+53
+00:11:56,240 --> 00:11:57,079
+which is
+
+54
+00:11:57,079 --> 00:11:58,620
+minus
+
+55
+00:11:58,620 --> 00:12:01,319
+3 cosin
+
+56
+00:12:01,319 --> 00:12:02,359
+ti
+
+57
+00:12:02,359 --> 00:12:02,579
+i
+
+58
+00:12:07,283 --> 00:12:08,004
+Minus.
+
+59
+00:12:14,580 --> 00:12:16,800
+3 sin t j
+
+60
+00:12:20,563 --> 00:12:41,193
+2k ve bu ve
+
+61
+00:13:04,244 --> 00:13:04,724
+Son.
+
+62
+00:13:10,004 --> 00:13:17,004
+...vekti, bu
+
+63
+00:13:26,836 --> 00:13:28,596
+9 sin2 t
+
+64
+00:13:28,596 --> 00:13:32,916
+plus 9
+
+65
+00:13:38,964 --> 00:13:42,684
+cos2rt, plus
+
+66
+00:13:48,083 --> 00:13:50,263
+40 sqağır.
+
+67
+00:13:51,263 --> 00:13:53,823
+Since this gives 9,
+
+68
+00:13:56,123 --> 00:13:58,403
+this is equal to
+
+69
+00:14:02,067 --> 00:14:05,567
+9 plus 4 t square root.
+
+70
+00:14:07,807 --> 00:14:28,207
+Actually, it means that we can compute from here, and also from this figure, the glider is moving faster and faster as it rises along this path.
+
+71
+00:14:28,207 --> 00:14:36,947
+Because if t increase, then the velocity and speed increases.
+
+72
+00:14:36,947 --> 00:14:38,947
+Ok, so...
+
+73
+00:14:38,947 --> 00:14:39,947
+...
+
+74
+00:14:48,980 --> 00:14:50,980
+...is moving faster and faster.
+
+75
+00:15:01,844 --> 00:15:02,864
+As it rises
+
+76
+00:15:08,916 --> 00:15:15,616
+along its path.
+
+77
+00:15:22,355 --> 00:15:44,355
+Okay, now, let's see, we are looking for the time or times, if we can find, the glider's acceleration is orthogonal to its velocity. So, we are looking for, we are looking for,
+
+78
+00:15:48,019 --> 00:15:49,019
+t
+
+79
+00:15:51,019 --> 00:15:52,019
+if
+
+80
+00:15:53,019 --> 00:15:54,019
+velocity
+
+81
+00:15:55,019 --> 00:15:57,019
+and the acceleration
+
+82
+00:15:57,019 --> 00:15:58,019
+vector
+
+83
+00:15:58,019 --> 00:16:00,019
+the dot product of
+
+84
+00:16:00,019 --> 00:16:02,019
+the velocity and the acceleration vector
+
+85
+00:16:02,019 --> 00:16:03,019
+is
+
+86
+00:16:03,019 --> 00:16:04,019
+zero
+
+87
+00:16:06,019 --> 00:16:07,019
+if any
+
+88
+00:16:08,019 --> 00:16:09,019
+we have already found
+
+89
+00:16:09,019 --> 00:16:11,019
+the velocity vector
+
+90
+00:16:11,019 --> 00:16:12,019
+which is
+
+91
+00:16:14,019 --> 00:16:16,019
+this one and the acceleration vector
+
+92
+00:16:16,019 --> 00:16:17,019
+is this one
+
+93
+00:16:17,019 --> 00:16:20,019
+taking the dot product of these two vectors
+
+94
+00:16:20,019 --> 00:16:21,019
+we have
+
+95
+00:16:21,019 --> 00:16:23,019
+nine sine t cosine t
+
+96
+00:16:23,019 --> 00:16:42,019
+and the
+
+97
+00:16:47,827 --> 00:16:51,947
+Minus 9, kosin t, sin t,
+
+98
+00:17:04,915 --> 00:17:06,836
+Plus 40.
+
+99
+00:17:13,428 --> 00:17:23,648
+ve, if that product of these two vectors is zero, then v is orthogonal to or perpendicular to a.
+
+100
+00:17:24,348 --> 00:17:36,968
+So, if it is equal to zero, and this is, and this is canceled, so we have 40 is zero.
+
+101
+00:17:36,968 --> 00:17:40,248
+So, it means that the only time
+
+102
+00:17:46,483 --> 00:17:48,663
+Baz, bu on your time.
+
+103
+00:17:53,076 --> 00:17:54,516
+The acceleration vector
+
+104
+00:18:06,420 --> 00:18:08,360
+İz ortogonal to v is
+
+105
+00:18:24,051 --> 00:18:25,751
+V is when
+
+106
+00:18:29,299 --> 00:18:33,680
+t is 0. So, only here,
+
+107
+00:18:38,259 --> 00:18:45,319
+The velocity vector and the acceleration vector are or to go to each are.
+
+108
+00:18:53,236 --> 00:18:57,736
+Now, we will talk about the arc length of a vector valid function.
+
+109
+00:18:59,056 --> 00:19:06,876
+In previous section, we defined the length of a plane curve with parametric equations.
+
+110
+00:19:08,156 --> 00:19:21,876
+X is equal to f of t, and y is equal to g of t, and t is between,
+
+111
+00:19:23,236 --> 00:19:26,256
+a and b.
+
+112
+00:19:27,696 --> 00:19:30,676
+This is a parametric equations for a plane curve.
+
+113
+00:19:35,316 --> 00:19:42,316
+ve
+
+114
+00:19:42,099 --> 00:20:03,459
+The arc length of this plane curve is given by L is equal to integral from A to B, the derivatives of F' t square.
+
+115
+00:20:07,220 --> 00:20:18,339
+plus c' t square, in the square root, dt.
+
+116
+00:20:21,220 --> 00:20:26,740
+So, so, the length of, this is for the plane curve,
+
+117
+00:20:46,996 --> 00:20:52,816
+ve ne kadar, çok değişkenli
+
+118
+00:20:54,867 --> 00:21:01,867
+ve aferin bir kürtisinin de aynı şekilde
+
+119
+00:21:01,867 --> 00:21:03,867
+ve aynı şekilde
+
+120
+00:21:03,867 --> 00:21:10,867
+bu
+
+121
+00:21:10,867 --> 00:21:11,867
+ve
+
+122
+00:21:11,867 --> 00:22:19,867
+bu
+
+123
+00:22:06,740 --> 00:22:26,960
+Actually, we know that this is, this means that f prime t square plus g prime t square plus h prime t square root means the magnitude of the tangent vector of the vector.
+
+124
+00:22:26,960 --> 00:22:34,180
+So, we can write this equation like this. Okay, these are the same.
+
+125
+00:22:41,907 --> 00:22:55,307
+Find the length of the arc of the circular helix with vector equation given by this and point from 1, 0, 0 to the point 1, 0, 2 pi.
+
+126
+00:22:59,731 --> 00:23:01,731
+Actually, this is...
+
+127
+00:23:12,403 --> 00:23:15,403
+A heliksel olarak bu.
+
+128
+00:23:44,819 --> 00:23:46,119
+Bir hap point.
+
+129
+00:23:52,468 --> 00:23:54,468
+1, 0, 0
+
+130
+00:23:57,468 --> 00:23:59,468
+1
+
+131
+00:24:10,451 --> 00:24:11,751
+0, 2, 5.
+
+132
+00:24:15,188 --> 00:24:23,268
+ve hediye
+
+133
+00:24:39,923 --> 00:25:09,923
+Bu, bu
+
+134
+00:25:09,923 --> 00:25:21,884
+plus k and the magnitude of this derivative is
+
+135
+00:25:29,172 --> 00:25:41,731
+sin square t plus plus 1 square root gives 1 1 square root 2
+
+136
+00:25:44,451 --> 00:25:51,572
+now we know that the length of this curve is
+
+137
+00:25:53,971 --> 00:25:56,132
+the integral a to the b
+
+138
+00:25:59,812 --> 00:26:09,332
+r prime t dt so we have to determine the bounds of the integral
+
+139
+00:26:11,572 --> 00:26:18,372
+since the integral is a function of t the bounds also
+
+140
+00:26:21,812 --> 00:26:27,092
+can be or the bounds have to write with respect to the t
+
+141
+00:26:27,092 --> 00:26:37,412
+so for the point one zero zero it corresponds to the t zero
+
+142
+00:26:37,412 --> 00:26:49,731
+because because cosine zero is one sine zero is zero and zero is zero
+
+143
+00:26:49,731 --> 00:27:06,211
+and the end point of this helix is one zero two pi so this means that this is at the time t is two pi
+
+144
+00:27:06,211 --> 00:27:09,731
+therefore
+
+145
+00:27:13,251 --> 00:27:15,491
+the length of this helix is
+
+146
+00:27:17,892 --> 00:27:20,852
+integral zero to two pi
+
+147
+00:27:20,852 --> 00:27:24,771
+square root two
+
+148
+00:27:26,612 --> 00:27:33,491
+dt gives two times square root two pi
+
+149
+00:27:33,491 --> 00:27:38,132
+point
+
+150
+00:27:38,132 --> 00:27:42,132
+so
+
+151
+00:27:37,811 --> 00:27:38,211
+Ok.
+
+152
+00:27:46,579 --> 00:27:59,139
+Now, this part is actually the main part of the calculus 2, because we have already know, yes, [öğrenci].
+
+153
+00:28:06,740 --> 00:28:19,359
+Elifna's a and b actually the start point of the curve and the end point of the curve.
+
+154
+00:28:19,720 --> 00:28:31,079
+If they are given in the x, y and z coordinates, then you have to turn it to the t by using this equation.
+
+155
+00:28:31,079 --> 00:28:46,279
+Okay, we have the point 1, 0, 0. It corresponds to t is 0 because if you write t as 0 here, you have the point 1, 0, 0.
+
+156
+00:28:46,579 --> 00:28:56,480
+At the end point of this curve is 1, 0, 2 pi. So it means that t is 2 pi because we have t here.
+
+157
+00:28:56,480 --> 00:29:14,960
+So you can write the bounds using this. In many equations, actually, it is directly given as t is between 0 and 2 pi.
+
+158
+00:29:14,960 --> 00:29:15,619
+Okay.
+
+159
+00:29:19,539 --> 00:29:39,980
+Bu, aslında, bu, aslında, bu, çok önemli bir şey, çünkü, many things that you learn in Calculus 1, limit, continuit, derivative, ve integral, single variable functions,
+
+160
+00:29:39,980 --> 00:29:50,940
+is generalized to the multi-variable functions, or functions with two variables in this lecture.
+
+161
+00:29:50,940 --> 00:30:00,059
+Okay, so, what is several variables functions, or functions of two variables?
+
+162
+00:30:00,059 --> 00:30:15,740
+Actually, actually, in real world, the quantity being investigated usually depends on two or more independent variables.
+
+163
+00:30:16,460 --> 00:30:25,579
+So, we need to extend the basic ideas of the Calculus 1, which we learn the functions of a single variable,
+
+164
+00:30:25,579 --> 00:30:30,859
+to the functions to the several variables to the several variables, okay?
+
+165
+00:30:38,067 --> 00:30:41,607
+And we begin with the functions of two variables.
+
+166
+00:30:42,748 --> 00:30:46,407
+Before the definition of a two variable function,
+
+167
+00:30:48,627 --> 00:30:55,927
+think that, think that, oops, okay.
+
+168
+00:30:56,927 --> 00:31:04,528
+Think that the temperature T at a point on the surface of the earth at any given time
+
+169
+00:31:04,528 --> 00:31:14,288
+depends on the length of x, the temperature T on the earth.
+
+170
+00:31:22,996 --> 00:31:26,456
+Depends on the longitude x
+
+171
+00:31:36,468 --> 00:31:39,428
+ve y'in altı
+
+172
+00:31:48,819 --> 00:31:59,779
+So, we can think of the temperature t as being a function of two variables x and y, or as a function of the pair.
+
+173
+00:32:03,763 --> 00:32:05,603
+t, x, y.
+
+174
+00:32:06,803 --> 00:32:10,403
+So, we indicate this function dependence by writing.
+
+175
+00:32:12,963 --> 00:32:16,403
+Maybe like this, t is equal to
+
+176
+00:32:19,603 --> 00:32:21,603
+f of x and y.
+
+177
+00:32:22,963 --> 00:32:25,763
+And again, similar to this one,
+
+178
+00:32:26,483 --> 00:32:29,683
+the volume of a circular cylinder,
+
+179
+00:32:29,683 --> 00:32:33,843
+which is the volume of a circular cylinder,
+
+180
+00:32:34,483 --> 00:32:41,843
+is equal to pi times h.
+
+181
+00:32:41,843 --> 00:32:47,763
+So, it depends on its radius
+
+182
+00:32:50,323 --> 00:32:51,443
+and its height.
+
+183
+00:32:51,443 --> 00:33:09,283
+So, we say that v is the volume of circular cylinder is a function of r and h.
+
+184
+00:33:09,283 --> 00:33:12,083
+Okay.
+
+185
+00:33:14,003 --> 00:33:18,643
+Now, now what's the definition of two variable function?
+
+186
+00:33:19,443 --> 00:33:22,963
+A function of two variables is a rule, actually,
+
+187
+00:33:24,563 --> 00:33:29,603
+that assigns to each ordered pair of real numbers x and y
+
+188
+00:33:29,603 --> 00:33:36,803
+in a set d and the unique real number denoted by f , y.
+
+189
+00:33:38,323 --> 00:33:40,803
+Actually, we can write this as
+
+190
+00:33:49,364 --> 00:34:15,503
+We have x and y, and this goes to the f of x and y. And the domain of d, sorry, the set d is the domain of f, and the range of this function is the set of all values of f,
+
+191
+00:34:15,503 --> 00:34:20,503
+that takes on this domain.
+
+192
+00:34:22,103 --> 00:34:22,384
+Okay.
+
+193
+00:34:24,983 --> 00:34:27,344
+Okay, to the figure here.
+
+194
+00:34:28,423 --> 00:34:32,983
+We have two variables, x and y. Actually,
+
+195
+00:34:34,344 --> 00:34:35,423
+we called them,
+
+196
+00:34:37,724 --> 00:34:41,403
+the variables x and y are called independent variables.
+
+197
+00:34:41,403 --> 00:34:46,403
+and if z is equal to f of x and y,
+
+198
+00:34:46,403 --> 00:34:51,204
+z is dependent variable because z is dependent
+
+199
+00:34:51,204 --> 00:34:55,164
+on x and y.
+
+200
+00:34:56,603 --> 00:34:57,204
+So,
+
+201
+00:34:59,284 --> 00:35:00,804
+looking at the figure,
+
+202
+00:35:02,684 --> 00:35:05,483
+the multivariable or two variable function
+
+203
+00:35:05,483 --> 00:35:23,364
+can be considered as a function whose domain is a subset of r square,
+
+204
+00:35:23,364 --> 00:35:30,164
+because we have x axis and y axis here. So, you can consider the domain as a,
+
+205
+00:35:30,164 --> 00:35:31,364
+r square or a plane. And you can think the range is a subset of r, like here. Okay.
+
+206
+00:35:31,364 --> 00:35:32,364
+So,
+
+207
+00:35:52,115 --> 00:36:06,115
+Domain of the multivariable functions is important because most probably in the exam you will ask with the domain of the multivariable functions.
+
+208
+00:36:06,115 --> 00:36:12,115
+So, if you have any questions, please ask in here.
+
+209
+00:36:12,115 --> 00:36:16,115
+For each of the following functions,
+
+210
+00:36:19,860 --> 00:36:31,860
+F32'ye bulundur.
+
+211
+00:36:35,795 --> 00:36:40,335
+You only take x as 3 and y as 2.
+
+212
+00:36:41,335 --> 00:36:48,955
+So, if 3, 2 is equal to
+
+213
+00:36:53,492 --> 00:37:02,532
+3 plus 2 plus 1, sqrt, 3 minus 1.
+
+214
+00:37:06,771 --> 00:37:23,211
+Bu, bu, 6'a 2'a
+
+215
+00:37:26,835 --> 00:37:43,535
+We are looking for all x and y, that this function is defined, or that this function makes sense.
+
+216
+00:37:43,535 --> 00:37:50,275
+Okay, so the expression or the function
+
+217
+00:37:58,931 --> 00:38:00,931
+Makes sense if...
+
+218
+00:38:06,547 --> 00:38:07,807
+Doğru bir şey yok.
+
+219
+00:38:15,251 --> 00:38:19,751
+if the numerator is not equal to 0.
+
+220
+00:38:55,059 --> 00:38:57,059
+ve quantiti
+
+221
+00:39:01,427 --> 00:39:03,427
+Under the Sükaru sign
+
+222
+00:39:16,052 --> 00:39:20,412
+Sin is non-negative.
+
+223
+00:39:36,532 --> 00:39:36,992
+Son.
+
+224
+00:39:42,228 --> 00:39:44,228
+Bu konuları bu konuları,
+
+225
+00:39:47,635 --> 00:39:50,096
+Orada find the domain of this function.
+
+226
+00:39:56,403 --> 00:39:59,884
+The expression on the denominators cannot be zero.
+
+227
+00:40:01,884 --> 00:40:05,804
+Because if this is zero, this is undetermined.
+
+228
+00:40:07,244 --> 00:40:15,983
+And if the inside the square root, if this is negative, then it is also undetermined.
+
+229
+00:40:15,983 --> 00:40:24,923
+So, this is also bigger than zero.
+
+230
+00:40:26,403 --> 00:40:28,403
+So, the domain of f...
+
+231
+00:40:44,563 --> 00:40:45,243
+Is.
+
+232
+00:40:47,463 --> 00:40:47,963
+D.
+
+233
+00:40:51,827 --> 00:41:02,947
+which includes x and y, such that x plus y plus one,
+
+234
+00:41:07,380 --> 00:41:18,260
+or bigger than zero and x minus one is not equal to zero or x is not one.
+
+235
+00:41:22,452 --> 00:41:39,052
+Actually, we can draw the graph of this domain, because this is a domain in r-square or in two-dimensional space.
+
+236
+00:41:43,956 --> 00:41:45,956
+İnequility
+
+237
+00:42:03,476 --> 00:42:24,576
+X plus Y plus 1 is bigger than or equal to 0. Or we can write this as Y is equal to or bigger than minus X minus 1. So this describes the points.
+
+238
+00:42:32,179 --> 00:42:35,679
+That lie on
+
+239
+00:42:46,068 --> 00:42:49,388
+Os, ebu,
+
+240
+00:42:53,652 --> 00:43:02,032
+Y'e equal to minus x minus 1.
+
+241
+00:43:03,791 --> 00:43:10,152
+And while x is not equal to 1.
+
+242
+00:43:14,099 --> 00:43:14,980
+Miss
+
+243
+00:43:36,532 --> 00:43:38,492
+On the line x is 1.
+
+244
+00:43:44,436 --> 00:43:46,836
+must be excluded
+
+245
+00:44:09,427 --> 00:44:10,288
+Şu anda donmayın.
+
+246
+00:44:16,563 --> 00:44:24,143
+So, this domain is in R², or in the plane, or in two-dimensional space.
+
+247
+00:44:36,115 --> 00:44:36,755
+Y
+
+248
+00:44:43,731 --> 00:44:44,331
+X
+
+249
+00:44:48,692 --> 00:44:58,331
+ve a line, y is minus x minus 1, so this is a line like this.
+
+250
+00:45:26,291 --> 00:45:26,771
+Son
+
+251
+00:45:32,244 --> 00:45:36,124
+This is 1, minus 1, and minus 1.
+
+252
+00:45:37,923 --> 00:45:51,544
+The region that express the domain of F is, F is, or F describes the points that lie on this line or above the line.
+
+253
+00:45:51,544 --> 00:45:52,224
+So,
+
+254
+00:45:56,083 --> 00:45:56,703
+Teşekkürler.
+
+255
+00:46:01,108 --> 00:46:16,888
+But it is important to say that we have to exclude the points that lies on x is 1. It is here. So we draw this line.
+
+256
+00:46:20,659 --> 00:46:23,099
+with dash, okay.
+
+257
+00:46:24,779 --> 00:46:25,899
+Maybe we can
+
+258
+00:46:25,899 --> 00:46:28,259
+this
+
+259
+00:46:46,387 --> 00:46:48,007
+Siss, ua.
+
+260
+00:46:59,827 --> 00:47:01,827
+Okay.
+
+261
+00:47:02,827 --> 00:47:07,827
+[öğrenci], we are looking for the domain of the function.
+
+262
+00:47:08,827 --> 00:47:20,827
+We are looking for all the points x and y that this function is defined.
+
+263
+00:47:20,827 --> 00:47:38,547
+So, looking at the function f of x and y, we have a functional function here. We have a square root in the numerator and x minus 1 in the denominator.
+
+264
+00:47:38,547 --> 00:47:56,547
+Here, if the expression on the denominator is zero, then this is undetermined. So, so the expression on the denominator cannot be zero.
+
+265
+00:47:56,547 --> 00:48:14,547
+It means that x minus 1 cannot be equal to zero or, or equanimally x is not 1 or x cannot be 1. Okay.
+
+266
+00:48:15,547 --> 00:48:18,547
+And we'll get to the numerator of this function.
+
+267
+00:48:18,547 --> 00:48:28,547
+The square root function is only defined for the positive real numbers.
+
+268
+00:48:28,547 --> 00:48:39,547
+So, the inside of the square root, which is x plus y plus 1 cannot be non-negative.
+
+269
+00:48:39,547 --> 00:48:53,547
+Sorry, cannot be negative. So, it means that x plus y plus 1 is equal to zero or bigger than zero.
+
+270
+00:48:53,547 --> 00:49:20,547
+Therefore, combining these two conditions, the domain of this function is, or the domain of this function consists of all x and y such that x is not 1 and x plus y plus 1 is equal to zero or bigger than zero. Okay.
+
+271
+00:49:20,547 --> 00:49:43,547
+So, the graph of this domain will give a region in two-dimensional space like this. We have a line y is bigger than or equal to minus x minus 1 and we have a line which is not equal to 1.
+
+272
+00:49:43,547 --> 00:49:52,547
+So, the domain of this function is, the graph of the domain of this function is like this. Is it okay now?
+
+273
+00:49:52,547 --> 00:49:53,547
+Is it okay now?
+
+274
+00:50:04,628 --> 00:50:06,807
+Okey, bu ketodu bir,
+
+275
+00:50:10,931 --> 00:50:13,511
+Function in B is
+
+276
+00:50:19,827 --> 00:50:21,128
+What's function in B?
+
+277
+00:50:26,099 --> 00:50:29,519
+x x ln y2-x
+
+278
+00:50:50,164 --> 00:50:53,484
+So, we can easily find Dev32.
+
+279
+00:50:59,155 --> 00:51:14,556
+X is 3 and Y is 2 gives 3 times ln 2 square minus 3.
+
+280
+00:51:16,235 --> 00:51:20,996
+This gives 3 times ln 1 and ln 1 is 0.
+
+281
+00:51:21,115 --> 00:51:22,795
+So this is 0.
+
+282
+00:51:24,076 --> 00:51:28,076
+Now we are looking for the domain of this function.
+
+283
+00:51:29,155 --> 00:51:39,115
+We are looking for all of X and Y that this function makes sense.
+
+284
+00:51:40,115 --> 00:51:48,556
+So we know that the ln function is defined for only positive real numbers.
+
+285
+00:51:51,076 --> 00:51:53,096
+So.
+
+286
+00:51:57,780 --> 00:51:58,220
+Sorry.
+
+287
+00:52:03,476 --> 00:52:15,276
+The only condition for this function can be defined is that the ln function is positive.
+
+288
+00:52:15,276 --> 00:52:19,715
+So, since
+
+289
+00:52:23,731 --> 00:52:27,411
+ve y²-x is defined.
+
+290
+00:52:33,492 --> 00:52:34,492
+Ondan da
+
+291
+00:52:40,211 --> 00:52:43,811
+y kere minus x is positive.
+
+292
+00:52:45,811 --> 00:52:47,451
+It means that
+
+293
+00:52:52,211 --> 00:53:00,751
+X is smaller than Y2, so, so, the domain of F is,
+
+294
+00:53:19,027 --> 00:53:33,967
+D, consist of all x and y, such that x is smaller than y squared.
+
+295
+00:53:34,887 --> 00:53:46,127
+So, this is the set of all points to the left of the parabola, x is equal to y squared.
+
+296
+00:53:46,127 --> 00:53:50,607
+So, we can draw the graph of this domain.
+
+297
+00:54:10,387 --> 00:54:19,347
+We have a parabola, x is y², x is equal to y², so this is a parabola like,
+
+298
+00:54:32,659 --> 00:54:33,219
+Suri.
+
+299
+00:54:45,204 --> 00:54:51,324
+Since x is not equal to y squared, we draw the parabola with dashed.
+
+300
+00:54:56,275 --> 00:54:58,275
+Bu, X'e Ecolto.
+
+301
+00:55:05,043 --> 00:55:15,683
+Y-square, and the domain of F is, or the domain of F consists of all points to the left of the parabola.
+
+302
+00:55:17,884 --> 00:55:19,263
+So, the domain.
+
+303
+00:55:32,947 --> 00:55:36,527
+F is like this.
+
+304
+00:55:37,667 --> 00:55:38,047
+Okay.
+
+305
+00:55:53,396 --> 00:55:55,396
+Bu iş için bir iş için.
+
+306
+00:56:04,115 --> 00:56:12,115
+ve bahsettiğim, çift katlı birçok, çift katlı birçok.
+
+307
+00:56:34,036 --> 00:56:36,976
+Maybe you want to look at the homework or example.
+
+308
+01:09:40,659 --> 01:09:46,340
+Let us continue our lecture with the graphs of multivariable functions.
+
+309
+01:09:47,059 --> 01:09:53,220
+If we have enough time at the end of the lecture, I will solve this example.
+
+310
+01:09:53,859 --> 01:10:01,059
+But if we have no time, then this remains or this leaves as a homework for you.
+
+311
+01:10:02,659 --> 01:10:09,539
+Actually, another way of visualizing the behavior of a function with two variables
+
+312
+01:10:10,659 --> 01:10:12,180
+is to consider its graph.
+
+313
+01:10:14,500 --> 01:10:20,340
+If f is a function of two variables with domain D,
+
+314
+01:10:23,619 --> 01:10:28,260
+the graph of f is the set of all points.
+
+315
+01:10:29,939 --> 01:10:32,260
+Actually, we can write this as
+
+316
+01:10:37,684 --> 01:11:05,463
+We have a function z is equal to f, x, and y. So, the graph of this function means the set of all points x, y, and z in r3.
+
+317
+01:11:07,684 --> 01:11:23,224
+Because, remember that, if you have a function, y is equal to f of x, you consider all points x and y in r2.
+
+318
+01:11:24,003 --> 01:11:32,623
+So, this is very similar to the graph of a function in plane, or in single variable functions.
+
+319
+01:11:32,623 --> 01:11:45,284
+So, just as the graph of a function f of the one variable function is a curve,
+
+320
+01:11:46,764 --> 01:11:55,244
+then the function of two variables, the graph of the function of two variables is a surface.
+
+321
+01:11:55,244 --> 01:11:56,344
+Okay.
+
+322
+01:12:00,372 --> 01:12:07,692
+Sketch the graph of function, which is given by f x y is equal to 6 minus 3 x minus 2 y.
+
+323
+01:12:08,652 --> 01:12:13,612
+So, the graph of f has the equation.
+
+324
+01:12:17,844 --> 01:12:19,503
+Z is a couple
+
+325
+01:12:23,859 --> 01:12:29,319
+6, minus 3x, minus 2y.
+
+326
+01:12:31,239 --> 01:12:35,539
+Or, or we can write this as
+
+327
+01:12:39,539 --> 01:12:55,159
+3x plus 2y plus z is equal to 6, which represents
+
+328
+01:13:08,500 --> 01:13:21,840
+Okay, what is this equation or what does this equation represent? Do you know this equation? Who knows?
+
+329
+01:13:28,372 --> 01:13:36,372
+Is there anyone who knows that this equation represents...
+
+330
+01:13:39,372 --> 01:13:40,652
+Can you hear me?
+
+331
+01:13:43,372 --> 01:13:45,072
+Is there anyone there?
+
+332
+01:13:51,828 --> 01:14:04,708
+Okay, Agar, it is not a line, because we have already know, this is actually the equation of a plane, which represents a plane.
+
+333
+01:14:10,420 --> 01:14:16,539
+So, to grab the plane first, we find the intercepts, put,
+
+334
+01:14:21,908 --> 01:14:28,908
+Evet, [öğrenci], I mean, first, you find the intercept points, putting...
+
+335
+01:14:33,300 --> 01:14:39,100
+y is equal to z is equal to zero in the equation.
+
+336
+01:14:46,292 --> 01:14:47,132
+Bir her.
+
+337
+01:14:54,163 --> 01:14:55,163
+X is 2.
+
+338
+01:14:58,743 --> 01:15:00,043
+And similarly,
+
+339
+01:15:02,903 --> 01:15:04,224
+Thank you [öğrenci].
+
+340
+01:15:05,043 --> 01:15:05,783
+Similarly,
+
+341
+01:15:09,003 --> 01:15:09,903
+Y intercept.
+
+342
+01:15:18,644 --> 01:15:20,644
+Z intercept is 3.
+
+343
+01:15:23,644 --> 01:15:26,644
+Z intercept is 6.
+
+344
+01:15:37,876 --> 01:15:43,775
+This helps us sketch the portion of the graph that lies in the first octant.
+
+345
+01:16:14,739 --> 01:16:15,219
+Thanks!
+
+346
+01:16:21,971 --> 01:16:26,971
+Z, Y, X
+
+347
+01:16:30,644 --> 01:16:35,064
+We have points, on the z.
+
+348
+01:16:41,268 --> 01:16:46,368
+0, 0, 6, vek on the x-axis.
+
+349
+01:16:54,739 --> 01:16:58,599
+2, 0, 0, ve y-axis.
+
+350
+01:17:05,939 --> 01:17:11,939
+0, 3, 0
+
+351
+01:17:11,939 --> 01:17:15,939
+ve bu noktalar
+
+352
+01:17:40,275 --> 01:17:57,126
+Bu, bu
+
+353
+01:18:01,171 --> 01:18:12,811
+Actually, this is a, the plane, as a multivariable function, or two-variable function, is a spatial function, which is called a linear function.
+
+354
+01:18:15,571 --> 01:18:22,311
+I have to write this, as a mode here.
+
+355
+01:18:24,431 --> 01:18:25,931
+The function,
+
+356
+01:18:34,515 --> 01:18:35,395
+İmkiyiz.
+
+357
+01:18:48,819 --> 01:18:49,819
+Tofaction
+
+358
+01:18:58,899 --> 01:19:11,960
+fxy is equal to ax plus by plus c, and which is called linear function.
+
+359
+01:19:26,707 --> 01:19:42,547
+Actually, the linear functions of one variable, we know that are very important in single variable calculus, and we will see it later that linear functions of two variables play a central role in multivariable calculus.
+
+360
+01:19:42,547 --> 01:19:43,147
+Okay.
+
+361
+01:19:46,347 --> 01:19:49,847
+Sketch the graph of this function.
+
+362
+01:19:50,947 --> 01:19:51,427
+Actually,
+
+363
+01:20:00,000 --> 01:20:03,000
+This is the function z is equal to...
+
+364
+01:20:08,404 --> 01:20:15,024
+Z is equal to square root 9 minus x square minus y square.
+
+365
+01:20:18,579 --> 01:20:33,479
+So, we square both sides of this equation, and we obtain z square is equal to 9 minus x square minus y square, or
+
+366
+01:20:37,363 --> 01:20:46,283
+We have x square plus y square plus z square is equal to 9.
+
+367
+01:20:48,283 --> 01:20:58,423
+Which we know that this is an equation of the sphere which center the origin and reduce 3.
+
+368
+01:21:07,923 --> 01:21:09,923
+İplication of the spiash.
+
+369
+01:21:13,363 --> 01:21:14,363
+At the origin,
+
+370
+01:21:26,003 --> 01:21:27,243
+Radius 3
+
+371
+01:21:35,923 --> 01:21:39,243
+Ama, bu önemli bir şey,
+
+372
+01:21:39,243 --> 01:21:42,923
+çünkü z'eğe bu sıcağın
+
+373
+01:21:42,923 --> 01:21:49,923
+bu sıcağın
+
+374
+01:21:49,923 --> 01:22:10,923
+sıcağın
+
+375
+01:22:00,916 --> 01:22:07,395
+z is equal to or bigger than zero, the graph of
+
+376
+01:22:12,692 --> 01:22:13,731
+G is
+
+377
+01:22:13,731 --> 01:22:18,011
+just the top half
+
+378
+01:22:18,011 --> 01:22:20,131
+is just
+
+379
+01:22:20,131 --> 01:22:23,752
+the top half
+
+380
+01:22:29,076 --> 01:22:31,076
+bu kısmi türev.
+
+381
+01:22:41,235 --> 01:22:42,475
+İşte böyle.
+
+382
+01:23:54,996 --> 01:23:59,996
+Mungkin ilk önce, bir sürü, bir sürü.
+
+383
+01:24:00,996 --> 01:24:01,996
+Sleek.
+
+384
+01:24:34,707 --> 01:24:47,487
+Z, Y, X, this is 3, 0, 0, 0, 3, 0, and 0, 0, 3.
+
+385
+01:24:55,412 --> 01:25:08,311
+This is the graph of G is equal to 9 minus x square minus y square.
+
+386
+01:25:13,524 --> 01:25:43,524
+Bu, bu
+
+387
+01:25:43,524 --> 01:25:54,184
+bu, bu
+
+388
+01:26:00,564 --> 01:26:01,024
+No.
+
+389
+01:26:05,268 --> 01:26:08,347
+We talk about level curves.
+
+390
+01:26:09,188 --> 01:26:17,887
+So far we have two methods for visualizing the functions, the arrow diagrams and graphs.
+
+391
+01:26:18,247 --> 01:26:28,127
+A third method, actually this method is used usually by map makers,
+
+392
+01:26:28,127 --> 01:26:39,148
+is a contour map on which points of constant elevation are joined to the form contour curves or level curves.
+
+393
+01:26:40,087 --> 01:26:49,047
+A level curve or level curves of a function f, which is two variable function,
+
+394
+01:26:49,047 --> 01:26:58,807
+are the curves with equations f, x, y is equal to k, where k is a constant.
+
+395
+01:26:59,068 --> 01:27:06,207
+So if we have two variable functions, f is equal to f, x, y,
+
+396
+01:27:07,148 --> 01:27:14,807
+taking z as k or constant, we have the level curve of this function.
+
+397
+01:27:14,807 --> 01:27:16,068
+Okay.
+
+398
+01:27:17,387 --> 01:27:23,387
+Or maybe we can write this as, or we can explain this level curves as a level curve.
+
+399
+01:27:30,963 --> 01:27:36,743
+f, x, y, is equal to k, is the set of all points.
+
+400
+01:27:47,347 --> 01:27:49,028
+In the domain of F,
+
+401
+01:28:01,043 --> 01:28:02,163
+Etwitch
+
+402
+01:28:08,020 --> 01:28:20,020
+F takes on a given value K, at which F takes a given value K.
+
+403
+01:28:23,028 --> 01:28:25,427
+Okay. Okay.
+
+404
+01:28:28,307 --> 01:28:33,427
+Actually, if we say in other words...
+
+405
+01:28:37,235 --> 01:28:38,235
+İndir,
+
+406
+01:28:45,300 --> 01:28:46,480
+It shows
+
+407
+01:28:51,347 --> 01:28:53,347
+ve de graf f
+
+408
+01:29:01,363 --> 01:29:05,303
+Of, if, has hate.
+
+409
+01:29:09,939 --> 01:29:10,399
+Okay.
+
+410
+01:29:17,140 --> 01:29:19,420
+Now look to the example.
+
+411
+01:29:21,300 --> 01:29:22,780
+Draft a function,
+
+412
+01:29:24,220 --> 01:29:30,100
+which is given by fxy is equal to 100 minus x square minus y square,
+
+413
+01:29:30,100 --> 01:29:32,940
+and plot level curves for,
+
+414
+01:29:34,100 --> 01:29:41,500
+this is k actually, k is 0, k is 51, and k is 7 to 5.
+
+415
+01:29:52,532 --> 01:29:59,271
+F'ın f'ı f
+
+416
+01:30:06,195 --> 01:30:18,956
+Çünkü, you cannot find any x or y that makes this function in the termite. So, the domain of f is all x, y plane.
+
+417
+01:30:28,275 --> 01:30:36,275
+İntiyel X-Y-Plan
+
+418
+01:30:44,724 --> 01:30:48,984
+F is set of all real numbers.
+
+419
+01:30:51,404 --> 01:30:56,123
+Range of F is set of real numbers.
+
+420
+01:31:04,659 --> 01:31:05,739
+Let's start.
+
+421
+01:31:09,779 --> 01:31:11,619
+Or equal to
+
+422
+01:31:11,619 --> 01:31:14,259
+One hundred
+
+423
+01:31:22,868 --> 01:31:40,618
+Çünkü z'eğitim 100'eğitim 100'eğitim 100'eğitim 100'eğitim 100'eğitim 100'eğitim 100'eğitim 100'eğitim 100'eğitim 100'eğitim 100'eğitim 100'eğitim 100'eğitim 100'eğitim 100'eğitim 100'eğitim 100'eğitim 100'eğitim 100'eğitim 100'eğitim 100'eğitim 100'eğitim 100'eğitim 100'eğitim 100'eğitim 100'eğitim 100'eğitim 100'eğitim 100'eğitim 100'eğitim 100'eğitim 100'eğitim 100'eğitim 100'eğitim 100'eğitim 100'eğitim
+
+424
+01:31:46,100 --> 01:31:48,039
+Bu, bu
+
+425
+01:31:52,372 --> 01:31:54,332
+Paraboliğ, da grab of.
+
+426
+01:31:58,579 --> 01:32:00,579
+vektör, da graf izi parabiliyip.
+
+427
+01:32:14,484 --> 01:32:39,684
+So, the graph of this function is like this on the left. Now, here it is important to draw the level curves. The level curve, we are looking for the level curves for f, x, y is equal to 0 and 51 and 75. The level curve.
+
+428
+01:32:44,243 --> 01:32:53,423
+fxy is equal to zero is the set of all points.
+
+429
+01:33:02,515 --> 01:33:04,255
+İndi x-y-plane,
+
+430
+01:33:09,684 --> 01:33:10,543
+Saç da et.
+
+431
+01:33:16,212 --> 01:33:39,492
+Z as 0, so, so, f x y is equal to 100 minus x square minus y square, or, or, sorry, equal to 0,
+
+432
+01:33:39,492 --> 01:33:57,172
+or, x square plus y square is equal to 100. So, this is a circle of radius 10 centered at the origin.
+
+433
+01:34:03,412 --> 01:34:05,412
+Bu bir cürcül
+
+434
+01:34:07,811 --> 01:34:09,811
+Reduce 10
+
+435
+01:34:18,644 --> 01:34:20,724
+centered at the origin.
+
+436
+01:34:32,595 --> 01:34:44,595
+Similarly, the level curves for f , y is equal to 51.
+
+437
+01:34:48,595 --> 01:35:15,555
+Y2'ye ciklalık y2'ye ciklalık y2'ye ciklalık y2'ye ciklalık y2'ye ciklalık y2'ye ciklalık y2'ye ciklalık y2'ye ciklalık y2'ye ciklalık y2'ye ciklalık y2'ye ciklalık y2'ye ciklalık y2'ye ciklalık y2'ye ciklalık y2'ye ciklalık y2'ye ciklalık y2'ye ciklalık y2'ye ciklalık y2'ye ciklalık y2'ye ciklalık y2'ye ciklalık y2'ye ciklalık y2'ye ciklalık y2'ye ciklalık y2'ye cikl
+
+438
+01:35:19,155 --> 01:35:24,956
+ve, if x, y is equal to
+
+439
+01:35:28,532 --> 01:35:29,712
+7 to 5.
+
+440
+01:35:42,676 --> 01:35:43,115
+Ok.
+
+441
+01:35:54,963 --> 01:36:05,403
+We have another definition, which is called the counter curve. The curve,
+
+442
+01:36:31,764 --> 01:36:34,324
+Bişti plane z is equal to c.
+
+443
+01:36:47,475 --> 01:36:48,875
+Katlısı her face.
+
+444
+01:36:55,636 --> 01:37:01,456
+set is equal to f x y, is made up,
+
+445
+01:37:11,315 --> 01:37:18,815
+Bu, fxy is equal to c.
+
+446
+01:37:49,235 --> 01:37:53,095
+It is called the contour curve.
+
+447
+01:38:05,043 --> 01:38:09,064
+fxy is equal to c.
+
+448
+01:38:13,427 --> 01:38:15,907
+Look at the example on the right.
+
+449
+01:38:19,268 --> 01:38:28,948
+The counter curve for this paraboli, which is given by f of fxy is equal to 100 minus x square minus y square.
+
+450
+01:38:31,747 --> 01:38:38,387
+If we take C as 25, this is a circle.
+
+451
+01:38:38,387 --> 01:38:48,707
+This is a circle with radius 5 in the plane z is 25.
+
+452
+01:38:48,707 --> 01:38:52,948
+Z is equal to 20, sorry, 75.
+
+453
+01:38:52,948 --> 01:39:03,587
+Okay, so the difference between the level curves and the counter curve is that in the counter curve,
+
+454
+01:39:03,587 --> 01:39:10,867
+the level curve is on the plane z is equal to C.
+
+455
+01:39:13,988 --> 01:39:26,547
+Okay, we have again a circle, but this circle is on the on the display, which is z is equal to 75.
+
+456
+01:39:26,547 --> 01:39:36,387
+And the level curve for fxy is equal to 75 is here.
+
+457
+01:39:37,507 --> 01:39:42,148
+It's a circle on the bottom, on the xy plane.
+
+458
+01:39:42,867 --> 01:39:50,787
+But the counter curve is a circle on the z is equal to 75 plane.
+
+459
+01:39:50,787 --> 01:39:59,108
+So, let's see.
+
+460
+01:39:59,108 --> 01:40:15,747
+Let's see.
+
+461
+01:39:55,572 --> 01:39:59,572
+Skizli level curves of the function, which is given by this...
+
+462
+01:40:05,811 --> 01:40:10,332
+Radius, so, the level curves are
+
+463
+01:40:22,547 --> 01:40:28,228
+6 minus 3x minus 2y is equal to minus
+
+464
+01:40:33,043 --> 01:40:50,403
+or take as k, so we take, or we can write this as, 3x plus 2y plus k minus 6 is equal to 0.
+
+465
+01:40:50,403 --> 01:41:09,403
+since k is a scalars, this gives, this equation gives line in the plane, so taking k as minus 6, 0, 6, and 12, we have 1, 2, 3, 4 lines, okay?
+
+466
+01:41:16,115 --> 01:41:19,956
+So, we have...
+
+467
+01:41:23,220 --> 01:41:52,640
+3x plus 2y minus 12 is equal to 0 for k is minus 6 and 3x plus 2y minus 6 is equal to 0 for k is 0.
+
+468
+01:41:53,220 --> 01:42:20,159
+Then 3x plus 2y is equal to 0 for k is 6 and the last one 3x plus 2y plus 6 is equal to 0 for k is 12.
+
+469
+01:42:23,220 --> 01:42:29,640
+So we have 4 lines like this.
+
+470
+01:43:15,315 --> 01:43:21,855
+x is minus 2, y is minus 3, so like.
+
+471
+01:43:29,587 --> 01:43:38,027
+ve
+
+472
+01:44:06,323 --> 01:44:17,323
+These all level curves are parallel to each other, so I try to...
+
+473
+01:44:21,203 --> 01:44:24,203
+Draw them parallel to each other.
+
+474
+01:45:02,387 --> 01:45:21,287
+This is a double curve for k is 12, this is k is 6, and k is 0, and k is minus 6.
+
+475
+01:45:27,028 --> 01:45:29,507
+Actually, this is homework for you.
+
+476
+01:45:41,876 --> 01:45:50,275
+We can also define three or more variables functions similar to the two variable functions.
+
+477
+01:45:50,775 --> 01:45:57,756
+Actually, we have triples x, y, and z in a domain D,
+
+478
+01:45:58,896 --> 01:46:03,176
+which we can consider as the three-dimensional space R-cube.
+
+479
+01:46:04,596 --> 01:46:09,076
+And this is denoted by f, x, y, z.
+
+480
+01:46:09,076 --> 01:46:11,596
+Okay.
+
+481
+01:46:13,056 --> 01:46:20,615
+For example, find the domain of f, which is given by three variables, x, y, and z,
+
+482
+01:46:21,556 --> 01:46:26,815
+similar to the two variable functions or single variable function.
+
+483
+01:46:26,815 --> 01:46:36,436
+We are looking for all x, y, and z that makes this function well-defined.
+
+484
+01:46:36,436 --> 01:46:37,275
+Okay.
+
+485
+01:46:37,275 --> 01:46:48,256
+We are looking for all x, y, and z that makes this rule as a function.
+
+486
+01:46:48,256 --> 01:46:53,115
+So we know that ln must be positive.
+
+487
+01:46:56,615 --> 01:47:02,416
+The function sine is defined for all real numbers.
+
+488
+01:47:02,416 --> 01:47:13,115
+So only condition for this function is ln z minus y is bigger than zero.
+
+489
+01:47:13,336 --> 01:47:19,716
+So it means that, sorry, the inside of the ln, which is z minus y is bigger than zero.
+
+490
+01:47:19,716 --> 01:47:37,956
+So the domain of f is, domain of f is, consists of all x, y, and z such that z minus y.
+
+491
+01:47:37,956 --> 01:47:50,956
+So we know that the function of f is, and z minus y is bigger than zero.
+
+492
+01:47:42,612 --> 01:47:48,011
+Z is bigger than 0, or Z is bigger than Y.
+
+493
+01:47:53,140 --> 01:47:55,039
+Actually, this is a half space.
+
+494
+01:48:03,155 --> 01:48:05,155
+...
+
+495
+01:48:20,051 --> 01:48:21,031
+Old points.
+
+496
+01:48:39,828 --> 01:48:42,128
+Z is equal to Y.
+
+497
+01:48:43,628 --> 01:48:52,628
+And here are some examples of the domain entries of the functions of two variables and functions of three variables.
+
+498
+01:48:54,828 --> 01:49:04,628
+Finally, we can find the level surface of a function which is given by three variables.
+
+499
+01:49:04,628 --> 01:49:19,428
+If we have a function f, x, y and z is equal to x square plus y square plus z square, then we can find its level curves.
+
+500
+01:49:19,428 --> 01:49:34,928
+Actually, if a function given by three variables, it is not easy to visualize or it is not easy to graph or draw the graph of this function.
+
+501
+01:49:34,928 --> 01:49:46,208
+Because since we have three variables, the graph of this function lies in four-dimensional space.
+
+502
+01:49:46,208 --> 01:50:03,688
+So, it is not easy to or it is not possible to draw a graph of a four-dimensional function.
+
+503
+01:50:03,688 --> 01:50:12,348
+Instead, we can draw the level surface of these three-dimensional or three variable functions.
+
+504
+01:50:12,968 --> 01:50:18,688
+If we have a function like this, then the level surfaces...
+
+505
+01:50:20,688 --> 01:50:25,288
+In two variable functions, we have level curves.
+
+506
+01:50:26,128 --> 01:50:29,688
+In three variable functions, we have level surfaces.
+
+507
+01:50:29,688 --> 01:50:30,688
+Okay.
+
+508
+01:50:30,688 --> 01:50:32,688
+So, the level surfaces are...
+
+509
+01:50:32,688 --> 01:50:50,688
+In three variables, we have level surfaces.
+
+510
+01:50:45,140 --> 01:50:46,039
+Saç da et.
+
+511
+01:50:50,036 --> 01:51:07,155
+x2 plus y2 plus z2 is equal to k, where k is any number which is positive, because we have an equation x2, y2, z2, this is positive.
+
+512
+01:51:07,155 --> 01:51:27,155
+This form of family of spears with this form of family of spears with radius.
+
+513
+01:51:33,043 --> 01:52:03,043
+K'e k
+
+514
+01:52:03,043 --> 01:52:45,323
+k'e k'
+
+515
+01:52:48,787 --> 01:52:59,547
+Prepare a sample exam, sample calculus 2 exam for you, before your midterm exam 1, most probably in the first week of May.
+
+516
+01:53:01,207 --> 01:53:07,187
+Maybe I can save a date.
+
+517
+01:53:13,939 --> 01:53:29,559
+We have a lecture on May 4, oh sorry, yes, May 4 and May, 4th of May and 5th of May, most probably,
+
+518
+01:53:29,559 --> 01:53:34,839
+I'll,
+
+519
+01:53:39,091 --> 01:53:45,671
+I'll make you a sample exam on May 5. Okay, most probably.
+
+520
+01:53:47,671 --> 01:53:52,091
+Do you have any questions or comments or anything else?
+
+521
+01:53:52,871 --> 01:53:58,071
+Again, wish you had a good exams and good days.
+
+522
+01:53:59,451 --> 01:54:04,011
+And, and.
+
+523
+01:54:09,332 --> 01:54:10,212
+Can you hear me?
+
+524
+01:54:12,992 --> 01:54:14,172
+Or are you sleeping?
+
+525
+01:54:16,252 --> 01:54:16,612
+Okay.
+
+526
+01:54:18,852 --> 01:54:19,932
+Thank you, thank you.
+
+527
+01:54:22,052 --> 01:54:24,372
+Any questions, comments, anything else?
+
+528
+01:54:26,771 --> 01:54:35,652
+So have a nice day, all of you, and wish you a good score in your exams.
+
+529
+01:54:36,932 --> 01:54:38,052
+Hope this to you.
+
+530
+01:54:39,332 --> 01:54:44,112
+Next and, no, not next week, after next week.
+
+531
+01:54:45,372 --> 01:54:46,412
+Take care of yourself.
+
+532
+01:54:49,212 --> 01:54:52,852
+You can also ask your questions via mail, if you have any questions.
+
+533
+01:54:52,992 --> 01:54:53,192
+Okay.
