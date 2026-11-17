@@ -1,0 +1,5731 @@
+1
+00:00:37,076 --> 00:00:37,875
+Günaydın hocam.
+
+2
+00:02:57,235 --> 00:02:58,955
+Arkadaşlar merhaba, nasılsınız?
+
+3
+00:03:01,615 --> 00:03:03,816
+Ben şu ekranı da paylaşayım sizlerle.
+
+4
+00:03:04,735 --> 00:03:06,495
+Teşekkürler hocam, siz nasılsınız?
+
+5
+00:03:06,955 --> 00:03:08,256
+İyi olmaya çalışıyorum.
+
+6
+00:03:09,555 --> 00:03:13,915
+Böyle haftaya kötü başlayınca biraz şey devam ediyor.
+
+7
+00:03:14,435 --> 00:03:18,235
+Çok iyi devam etmiyor ama sizler varsınız ki Allah'tan.
+
+8
+00:03:18,316 --> 00:03:21,935
+Biraz sizden gençlik bulaşıyor, şey bulaşıyor, moral bulaşıyor, iyi oluyorum.
+
+9
+00:03:21,935 --> 00:03:36,395
+Şimdi arkadaşlar dün seriler 4, YTV kampüste toparlamış olduğu planı hocamın notlarından seriler 4 pdf'si üzerinden gitmiştik.
+
+10
+00:03:36,716 --> 00:03:39,156
+Orada kuvvet serilerinden bahsetmiştik.
+
+11
+00:03:39,475 --> 00:03:42,596
+Kuvvet serileri demiştik yakınsaklık aralıkları oluyor.
+
+12
+00:03:42,775 --> 00:03:50,455
+Bazen bu bir tek noktada oluyor, bazen bir aralıkta oluyor, bazen ise bütün real seriler ekseni üzerinde oluyor demiştik.
+
+13
+00:03:50,455 --> 00:03:58,695
+Dolayısıyla yakınsaklık aralığını bulmak için oran testini kullanıyorduk.
+
+14
+00:03:58,835 --> 00:04:00,315
+Mutlak yakınsaklığa bakıyorduk.
+
+15
+00:04:00,455 --> 00:04:04,455
+Sonra aradan bu işlemleri tamamladıktan sonra aralarda bakıyorduk.
+
+16
+00:04:05,955 --> 00:04:15,455
+Sonra iki tane seri eğer ortak aralığa sahipse ortak aralıkları içerisinde toplanabileceğini, çarpılabileceğini, bölülebileceğini söylemiştik.
+
+17
+00:04:15,455 --> 00:04:24,755
+Ya da herhangi bir seri, herhangi bir sabitle çarptığımızda yine serinin yakınsaklık aralığının değişmeyeceğini söylemiştik.
+
+18
+00:04:25,456 --> 00:04:29,596
+Yine kuvvet serilerinde türev alınabileceğini söylemiştik.
+
+19
+00:04:29,695 --> 00:04:35,076
+Yine yakınsaklık aralığı, ilk baştaki yakınsaklık aralığı neyse, serinin yakınsaklık aralığı neyse,
+
+20
+00:04:35,315 --> 00:04:38,716
+işte birinci türevi, ikinci türevi, üçüncü türevi alınabileceğini söylemiştik.
+
+21
+00:04:38,716 --> 00:04:43,555
+Yine aynı şekilde integral işlemi yapılabileceğini üzerinde söylemiştik.
+
+22
+00:04:43,915 --> 00:04:49,596
+Dolayısıyla integral ve türevi işlemleriyle farklı seriler türetilebilir.
+
+23
+00:04:50,315 --> 00:04:54,696
+İşte örnekler üzerinde de işte yine şunu söylemiştik.
+
+24
+00:04:54,855 --> 00:05:02,295
+Eğer yakınsaklık aralığında bir seri, bir fx fonksiyonuyla temsil edilebilir demiştik.
+
+25
+00:05:02,295 --> 00:05:09,895
+Şimdi bunun devamı olarak Tyler ve McLaurin serileri diyeceğiz.
+
+26
+00:05:11,395 --> 00:05:19,995
+Şimdi yakınsaklık aralığı içindeki bir kuvvet serisi toplamının her mertebeden türevi olan sürekli bir fonksiyon olduğunu söylemiştik.
+
+27
+00:05:19,995 --> 00:05:30,596
+Yani yakınsaklık aralığı içerisinde biz bir fx fonksiyonunu bir toplamla ifade ediyorduk kuvvet serilerinde.
+
+28
+00:05:30,596 --> 00:05:37,156
+Dolayısıyla bu da x'e bağlı bir fonksiyon olduğu için sürekli fonksiyon olarak ifade edebileceğini bize söylemiştik.
+
+29
+00:05:37,855 --> 00:05:40,975
+Şimdi bunun tam tersi doğru mudur sorusu var.
+
+30
+00:05:40,975 --> 00:05:56,475
+Yani eğer sürekli bir fx fonksiyonunu her mertebeden türevleri, tabii süreklilik aralığı da u aralığında ise her mertebeden türevi varsa o aralıkta fonksiyonu bir kuvvet serisi ile ifade edebilir miyiz?
+
+31
+00:05:56,475 --> 00:06:05,436
+Eğer yapabilirsek bu kuvvet serisinin kas sayıları ne olabilir diye sorusunun cevabını arayalım şimdilik.
+
+32
+00:06:05,436 --> 00:06:07,216
+Yani fx fonksiyonu var.
+
+33
+00:06:07,216 --> 00:06:36,216
+Evet.
+
+34
+00:06:17,235 --> 00:06:33,755
+Yani eğer elimizde bir fx fonksiyonu var, biz bu fx fonksiyonu verilen öğü aralığında her mertebeden türevleri olsun ve bu aralıkta da kuvvet serisi şekilde ifade etmeye çalışalım.
+
+35
+00:06:33,755 --> 00:06:46,675
+Diyelim ki bu kuvvet serisi fx fonksiyonunu biz, işte kat sayıları a, n, x, a, bu yakınsaklıkçı yarı çapını burada a olarak aldık.
+
+36
+00:06:46,755 --> 00:06:50,135
+Üzeri n şeklinde bir kuvvet serisiyle ifade etmeye çalışalım.
+
+37
+00:06:50,395 --> 00:06:52,615
+Şimdi kuvvet serilerini nasıl göstermiştik biz?
+
+38
+00:07:03,091 --> 00:07:10,012
+Şimdi demek ki şöyle kuvvet serisi şeklinde gösterelim.
+
+39
+00:07:12,051 --> 00:07:22,312
+Şimdi bu fx'in yakınsaklık aralığı içindeki ya da fx'in sürekli olduğu veya kuvvet serisinin yakınsaklık aralığı içinde türevlerini alacak olursak.
+
+40
+00:07:22,312 --> 00:07:24,491
+O zaman fx türevini nasıl alacağız?
+
+41
+00:07:24,791 --> 00:07:28,072
+Şuradan almak biraz daha rahat göstermek açısından rahat olacak.
+
+42
+00:07:28,192 --> 00:07:31,471
+a0 sabit bir değer olduğu için şimdi bunun türevini aldık.
+
+43
+00:07:31,551 --> 00:07:32,551
+Buradan a1 geldi.
+
+44
+00:07:33,091 --> 00:07:33,771
+Şu yani.
+
+45
+00:07:34,312 --> 00:07:36,072
+Sonra buradan türevini aldık.
+
+46
+00:07:36,132 --> 00:07:37,411
+Şu iki başa 2a2.
+
+47
+00:07:39,171 --> 00:07:40,971
+x-a geldi.
+
+48
+00:07:41,351 --> 00:07:42,791
+Bunlar 0 gibi bir duyuyor mu?
+
+49
+00:07:42,871 --> 00:07:43,312
+Bunları a.
+
+50
+00:07:43,812 --> 00:07:45,251
+x-a oldu.
+
+51
+00:07:46,051 --> 00:07:50,231
+Sonra bundan sonraki terimlerinkini almış olsaydık 3a3 gelecekti.
+
+52
+00:07:50,231 --> 00:07:54,351
+İşte burası x küp olduğu için üzeri bir azalacaktı.
+
+53
+00:07:54,411 --> 00:07:56,911
+x-a'nın parantez karası olarak gelecekti.
+
+54
+00:07:57,271 --> 00:08:02,072
+Sonra mesela en ince terimine bakacak olursak türevini aldığımızda n çarpı.
+
+55
+00:08:02,072 --> 00:08:04,031
+şurada a n olacak.
+
+56
+00:08:04,031 --> 00:08:07,031
+Değil mi?
+
+57
+00:08:07,391 --> 00:08:08,171
+a n olacak.
+
+58
+00:08:08,171 --> 00:08:10,411
+a n'i oturmuş burada.
+
+59
+00:08:10,531 --> 00:08:11,271
+a n olacak.
+
+60
+00:08:11,491 --> 00:08:14,231
+x-e n-e 1 olacak ve böyle devam edecek.
+
+61
+00:08:14,231 --> 00:08:16,991
+Şimdi enzer şekilde buradan bir daha türev alırsak.
+
+62
+00:08:17,291 --> 00:08:19,671
+a1'in türevi sabit olduğu için 0 gelecek.
+
+63
+00:08:20,271 --> 00:08:24,411
+İşte buradan türev aldığımızda iki tane a2 gelecek.
+
+64
+00:08:25,251 --> 00:08:26,632
+İki tane a2 gelecek.
+
+65
+00:08:27,031 --> 00:08:28,231
+Şunun üzerinde de bir var.
+
+66
+00:08:28,231 --> 00:08:29,031
+gibi düşünüyor.
+
+67
+00:08:29,072 --> 00:08:29,831
+Biri başa alıyor.
+
+68
+00:08:30,491 --> 00:08:34,052
+Şimdi orada genellemeye gideceği için öyle biri dikkate aldı.
+
+69
+00:08:34,652 --> 00:08:36,211
+Sonra bu başa geldi.
+
+70
+00:08:36,312 --> 00:08:37,652
+2 çarpı 3 çarpı a3.
+
+71
+00:08:37,731 --> 00:08:39,412
+x-e kisi a geldi şuradan.
+
+72
+00:08:39,751 --> 00:08:41,131
+Şöyle bir daha türev aldık.
+
+73
+00:08:41,511 --> 00:08:43,812
+Ve bundan sonraki terimlerden de almış olsaydık.
+
+74
+00:08:44,152 --> 00:08:45,711
+3 çarpı 4 çarpı a4.
+
+75
+00:08:45,792 --> 00:08:48,231
+x-e kisi a'nın karesi.
+
+76
+00:08:48,371 --> 00:08:49,672
+İşte nokta nokta gittik.
+
+77
+00:08:49,672 --> 00:08:53,292
+O zaman şu terimi alınacak olursak bir daha türevini.
+
+78
+00:08:53,652 --> 00:08:54,111
+Ne gelecek?
+
+79
+00:08:54,271 --> 00:08:54,792
+n gelecek.
+
+80
+00:08:55,631 --> 00:08:56,511
+a n gelecek.
+
+81
+00:08:57,831 --> 00:08:58,932
+Sonra ne gelecek?
+
+82
+00:08:59,432 --> 00:09:01,251
+Üzeri bir azalacak.
+
+83
+00:09:01,692 --> 00:09:02,951
+Üzeri ne yazacağız?
+
+84
+00:09:03,072 --> 00:09:04,211
+Onun üzerinde bir azalacak.
+
+85
+00:09:04,371 --> 00:09:05,831
+Yani şuradan n-1 gelecek.
+
+86
+00:09:06,471 --> 00:09:08,312
+Yani n çarpı n-1 gelmiş oldu.
+
+87
+00:09:09,351 --> 00:09:11,192
+x-e kisi a'nın.
+
+88
+00:09:15,316 --> 00:09:24,016
+Yine ikisi ikinci kuvvete gelecek. İşte sonsuza kadar, seri olduğu için sonsuza kadar gidiyor. Dolayısıyla nokta nokta diyeceğiz.
+
+89
+00:09:29,139 --> 00:09:30,139
+Ne zamanı ile?
+
+90
+00:09:48,563 --> 00:09:50,603
+Şuradan kaydırayım, kaydıramadım çünkü.
+
+91
+00:09:51,483 --> 00:09:53,764
+İşte benzer şekilde üçüncü türevini aldık.
+
+92
+00:09:54,123 --> 00:09:57,563
+Ve böyle eninci mertebeye kadar türevlerini aldığımızı düşünürsek,
+
+93
+00:09:58,483 --> 00:10:02,384
+o zaman şimdi birinci türevde deneyelim.
+
+94
+00:10:02,943 --> 00:10:06,443
+X gördüğümüz yere A yazdığımızda şu terim sıfıra gidecek.
+
+95
+00:10:06,583 --> 00:10:09,443
+Şu terimden sıfıra gelecek, bu terimden sıfıra gelecek.
+
+96
+00:10:09,863 --> 00:10:12,024
+Ve bundan sonraki bütün terimlerden hep sıfıra gelecek.
+
+97
+00:10:12,443 --> 00:10:15,783
+Dolayısıyla X üstü A'nın değeri A1'e eşit olacak.
+
+98
+00:10:15,783 --> 00:10:17,384
+Yani bunu buradan çıkartalım.
+
+99
+00:10:17,384 --> 00:10:47,363
+Yine aynı şekilde ikinci mertebeden türevde
+
+100
+00:10:47,363 --> 00:10:48,983
+buradan birinci mertebeye kadar türev.
+
+101
+00:10:48,983 --> 00:10:52,203
+Buradan bir iki çarpım var, iki faktöriyel geliyor.
+
+102
+00:10:52,504 --> 00:10:54,063
+Buradan da bir faktöriyel geliyor.
+
+103
+00:10:54,583 --> 00:11:01,144
+İşte bunu genelleştirdiğimizde de demek ki buradan N faktöriyel çarpa AN gelecek diyoruz.
+
+104
+00:11:01,144 --> 00:11:08,884
+Şimdi bizim amacımız şu kuvvet serisinde A1'leri, A2'leri, A3'leri, A3'leri, AN'leri bulmak.
+
+105
+00:11:15,604 --> 00:11:21,044
+Şimdi buradan a'yı çeksek, mesela buradan a'yı çektiğimizde ne olacak burası?
+
+106
+00:11:21,124 --> 00:11:28,484
+a'yı dediğimiz şey f fonksiyonun eninci mertebeden türevin a'daki değeri böyle m faktöriye gelecek.
+
+107
+00:11:29,624 --> 00:11:33,124
+İşte üçüncü mertebeden türevi çektiğimizde ne gelmiş olacak?
+
+108
+00:11:33,124 --> 00:11:36,384
+Buradan a3 anca çekebiliriz. Buradan da şu gelecek.
+
+109
+00:11:36,384 --> 00:11:38,384
+a3 dediğimiz şeyde,
+
+110
+00:11:38,903 --> 00:11:41,604
+üçüncü mertebeden türevin
+
+111
+00:11:41,604 --> 00:11:44,744
+a'daki değerinin
+
+112
+00:11:44,744 --> 00:11:49,864
+üç faktöre bölümü gelmiş olacak.
+
+113
+00:11:51,864 --> 00:11:52,584
+Yani
+
+114
+00:11:52,584 --> 00:11:56,124
+şu genel durumun özel durumlara
+
+115
+00:11:56,124 --> 00:11:58,324
+meydana gelmiş olacak. Şimdi bulduğumuz bu
+
+116
+00:11:58,324 --> 00:11:59,903
+a kast sayılarını
+
+117
+00:11:59,903 --> 00:12:07,624
+bu
+
+118
+00:12:11,923 --> 00:12:15,124
+Şimdi bu A kas sayılarını burada yerine koysak.
+
+119
+00:12:16,223 --> 00:12:20,543
+Yani yukarıda temsili olarak gösterdiğimiz şey vardı ya, kuvvet serisi vardı ya.
+
+120
+00:12:20,903 --> 00:12:24,603
+A0 yerine A0'yı yazdık.
+
+121
+00:12:24,703 --> 00:12:28,483
+A1 yerine A1 dediğimiz şey o zaman ne olarak bulmuştuk?
+
+122
+00:12:28,483 --> 00:12:33,203
+F üstü 0 olarak bulduk.
+
+123
+00:12:35,384 --> 00:12:38,983
+Birinci mertebeden türevin A'daki değeri olarak bulduk bunu.
+
+124
+00:12:38,983 --> 00:12:50,543
+Ondan sonra A2 ikinci mertebeden türevin A'daki değerinin iki faktörüyle bölümü olarak bulduk.
+
+125
+00:12:55,155 --> 00:13:10,895
+Mesela bunu ne olarak bulduk? O hesaplamalarda işte eksi yerine a koyduğumuzda eninci mertebe türevin a'daki değerinin en faktörini bölümü olarak bulduk.
+
+126
+00:13:15,124 --> 00:13:24,864
+Şimdi mesela fx'de x gördüğümüz yere a yazarsak, o zaman şu değer de aslında f a'ya eşit olacak.
+
+127
+00:13:31,508 --> 00:13:33,088
+Bu da fa'ya eşit olacak.
+
+128
+00:13:33,768 --> 00:13:40,528
+Şimdi bunun düzenlenmiş hali aşağıda var.
+
+129
+00:13:41,668 --> 00:13:42,508
+Yani şöyle oldu.
+
+130
+00:13:42,608 --> 00:13:47,828
+Bizim fx fonksiyonu a kasiyelerini yerine koyduğumuzda fa, bunlar sıkılıyor.
+
+131
+00:13:48,008 --> 00:13:59,668
+fa, f üstü a, x eksi a, artı f iki üstü a, böyle iki faktörü yani x eksi a'nın parantez karesi ve böyle giden bir ifade elde etmiş olduk.
+
+132
+00:13:59,668 --> 00:14:01,028
+İşte bu ifadeye.
+
+133
+00:14:08,724 --> 00:14:33,424
+Şurayı da söyleyeyim. Eğer x eşittir a merkezde, yazdığımızda x eşittir a merkezde bir i aralığında her mertebeden türevi olan herhangi bir fx fonksiyonu ile başlarsak, bu fonksiyonu o zaman şu seriyi üretmek için bu fonksiyonu kullanmış oluyoruz. Demek ki i aralığındaki x için fx'e yakınsak.
+
+134
+00:14:37,427 --> 00:14:40,648
+Şimdi yukarıdaki formülü unutmayın.
+
+135
+00:14:40,788 --> 00:14:46,307
+Biz orada fa dedik, f üstü a dedik, x ve x'i a dedik, artı f üstü a bölü iki faktör yer dedik.
+
+136
+00:14:46,307 --> 00:14:56,307
+Yani şunu bulduk ki bunun bu kapalı biçimde yazılmışı toplam şeklinde toplam ifadesiyle yazılmışı aslında bu.
+
+137
+00:14:56,648 --> 00:15:00,128
+Yani burada a n'lerimiz vardı bizim kuvvet serisinde.
+
+138
+00:15:01,467 --> 00:15:02,827
+Şu a merkezliydi.
+
+139
+00:15:03,628 --> 00:15:05,788
+İşte buna biz taylor serisi diyoruz.
+
+140
+00:15:05,788 --> 00:15:08,727
+Bulduğumuz bir ifadeye taylor serisi diyoruz.
+
+141
+00:15:11,488 --> 00:15:28,727
+Eğer fonksiyon belirli bir a u aralığında n. mertebeden türevleri mevcutsa o zaman şu formülde yerine yazmak suretiyle biz fonksiyonu x eşittir a noktasında taylor serisini açabiliriz.
+
+142
+00:15:28,727 --> 00:15:38,128
+Yani şunların hepsi a, x eşittir a noktası dediğimizde işte bunun fx fonksiyonunun aralığına düşmüş bir değer bu.
+
+143
+00:15:38,687 --> 00:15:40,168
+Tanım aralığı içerisinde bir değer.
+
+144
+00:15:40,168 --> 00:15:44,107
+Şimdi bu formülü nasıl kullanacağız?
+
+145
+00:15:44,107 --> 00:15:53,248
+Eğer bu a'yı biz özel olarak sıfır alırsak a yerine sıfır yazarak elde ettiğimiz formüle de maklorin formülü diyeceğiz.
+
+146
+00:15:53,388 --> 00:15:59,768
+İşte maklorin serisini açım dediği zaman anlayacağız ki x eşittir 0'daki taylor'un özel hali.
+
+147
+00:15:59,867 --> 00:16:01,768
+Taylor serisinin özel hali demektir.
+
+148
+00:16:01,768 --> 00:16:13,388
+Taylor serisinde mutlaka x eşittir a noktasını vermesi gerekirken maklorin serisi dediğimiz zaman taylor serisinin x eşittir 0'daki serisine maklorin serisi dediğimizi unutmayacağız.
+
+149
+00:16:14,347 --> 00:16:16,028
+Şimdi taylor polinomları var.
+
+150
+00:16:16,028 --> 00:16:18,867
+Eğer biz seride sonsuza kadar getiriyorduk.
+
+151
+00:16:19,168 --> 00:16:28,367
+Eğer biz n. mertebeden türeve kadar taylor serisini yazarsak o da n. mertebeden bize bir polinom vermiş olacak.
+
+152
+00:16:28,367 --> 00:16:37,087
+İşte bu n. mertebeden serime kadar yazdığımız bu taylor serisi bize n. mertebeden bir polinom vermiş olacak.
+
+153
+00:16:37,168 --> 00:16:40,107
+Bu polinomun adına da taylor polinomu deniyor.
+
+154
+00:16:44,115 --> 00:16:50,735
+F tarafında, F fonksiyonu tarafında, x eşittir a'da üretilen en inci mertebe Taylor polinomuna,
+
+155
+00:16:53,235 --> 00:16:59,816
+polinomlar genellikle işte polinomun İngilizce başlığından geliyor, p ile gösteriliyor.
+
+156
+00:16:59,816 --> 00:17:05,796
+Şu ilgisi n'de en inci dereceden bir polinom olduğunu ifade ediyor.
+
+157
+00:17:13,299 --> 00:17:24,000
+Yüksek mertebeden Taylor polinomları f fonksiyonunun a civarındaki en iyi polinom yaklaşımını veriyor. Bu da ispatlanmış doğruluk olay.
+
+158
+00:17:24,319 --> 00:17:27,119
+Mesela şimdi elimizde fx eşittir.
+
+159
+00:17:29,539 --> 00:17:37,299
+ex fonksiyonunu alalım. Şimdi ex fonksiyonu x'in eksi sonsuz artı sonsuz aralığında tanımlıdır.
+
+160
+00:17:37,299 --> 00:17:43,859
+Yani tanım aralığının x'e eksi sonsuzdan artı sonsu kadar bütün değerler için tanımlıdır.
+
+161
+00:17:44,119 --> 00:17:46,440
+Bunu tanımsız yapacak herhangi bir fonksiyonu yoktur.
+
+162
+00:17:46,779 --> 00:17:50,980
+O zaman x eşittir sıfır noktasında Taylor serisini ve Taylor polinomunu bulalım.
+
+163
+00:17:51,740 --> 00:17:56,359
+Şimdi x eşittir sıfırdaki Taylor serisi ve Taylor polinomu da demeyebilirdi.
+
+164
+00:17:56,359 --> 00:18:00,819
+Direkt olarak Maclaurin serisini açın veya Maclaurin polinomunu bulun diyebilirdi.
+
+165
+00:18:01,000 --> 00:18:07,279
+Çünkü x eşittir sıfırda açtığımız Taylor serisi ve Taylor polinomunun adı aslında Maclaurin.
+
+166
+00:18:07,299 --> 00:18:09,299
+Şimdi ne yapıyoruz oradaki formülü kullanacağız.
+
+167
+00:18:09,299 --> 00:18:09,819
+Şimdi oradaki formülü kullanacağız.
+
+168
+00:18:09,819 --> 00:18:12,440
+Daylor serisi formülünü de kullanacağız.
+
+169
+00:18:17,140 --> 00:18:19,100
+Taylor serisi formülümüz bu muydu?
+
+170
+00:18:19,759 --> 00:18:21,500
+Şimdi bunu yazıyoruz.
+
+171
+00:18:22,140 --> 00:18:24,540
+f a, f x eşittir.
+
+172
+00:18:25,020 --> 00:18:26,100
+Burası f x eşit.
+
+173
+00:18:26,320 --> 00:18:27,180
+f x eşittir.
+
+174
+00:18:27,259 --> 00:18:33,320
+f a artı f üstü a, x x a artı f iki üstü a bölü iki faktörü.
+
+175
+00:18:33,420 --> 00:18:35,400
+Yani x x a'nın parantez karesi.
+
+176
+00:18:35,700 --> 00:18:36,759
+Artı nokta nokta.
+
+177
+00:18:37,560 --> 00:18:39,820
+İşte en ince markabeden türev olarak yazıyoruz.
+
+178
+00:18:39,940 --> 00:18:43,040
+Tabi seri olduğu için belli bir terime kadar yazmamız lazım.
+
+179
+00:18:43,360 --> 00:18:45,140
+Ondan sonraki kısmı dağıtmamız lazım.
+
+180
+00:18:45,140 --> 00:18:53,480
+Şimdi nereye kadar Taylor serisine yazacağımız bazı sorunlar da verilir.
+
+181
+00:18:53,940 --> 00:18:58,700
+İşte genellemeye gideceğimiz bazı fonksiyonlar vardır.
+
+182
+00:18:58,800 --> 00:18:59,680
+Anca onda verilmez.
+
+183
+00:18:59,780 --> 00:19:04,360
+Orada da hani ne kadardan genellemeye gidersek o kadar türevini almak lazım.
+
+184
+00:19:04,820 --> 00:19:07,340
+Şimdi tamam f x fonksiyonunun türevini almak rahat.
+
+185
+00:19:07,580 --> 00:19:08,680
+f x fonksiyonu bu.
+
+186
+00:19:10,180 --> 00:19:11,280
+Birinci türe.
+
+187
+00:19:11,280 --> 00:19:17,220
+fonksiyonu sıfır noktasında açtığımız için a dediğimiz değer yani burada sıfır olduğu için.
+
+188
+00:19:17,980 --> 00:19:19,980
+Evet fonksiyonu sıfırdaki değeri bir.
+
+189
+00:19:20,480 --> 00:19:23,460
+Sonra türevi yine e üzeri x.
+
+190
+00:19:23,700 --> 00:19:26,700
+Bunun türevin sıfırdaki değeri bir.
+
+191
+00:19:27,220 --> 00:19:29,460
+İşte ikinci mertebe türevi aldık.
+
+192
+00:19:29,860 --> 00:19:31,540
+Bunun sıfır noktasındaki değeri bir.
+
+193
+00:19:31,540 --> 00:19:33,160
+Buradan genellemeye gidilebilir.
+
+194
+00:19:33,900 --> 00:19:37,280
+İşte e üzeri x'in eninci mertebe türemini aldık.
+
+195
+00:19:37,380 --> 00:19:41,640
+Eninci mertebe türeminin sıfırdaki değeri sonuçta yine ne olacak?
+
+196
+00:19:41,760 --> 00:19:42,100
+Bir olacak.
+
+197
+00:19:42,220 --> 00:19:43,660
+Şimdi Taylor serisini yazıyoruz.
+
+198
+00:19:44,320 --> 00:19:45,320
+Şimdi aslında bu şu.
+
+199
+00:19:45,580 --> 00:19:46,540
+f x eşittir.
+
+200
+00:19:46,540 --> 00:19:56,120
+f'in sıfırdaki değeri artı f üstü çarpı sıfır.
+
+201
+00:19:56,360 --> 00:19:58,400
+Şimdi burası aslında x x a idi.
+
+202
+00:19:58,500 --> 00:19:59,480
+Dolayısıyla x geldi.
+
+203
+00:19:59,840 --> 00:20:02,140
+Burası x x a'nın parantez karasıydı.
+
+204
+00:20:02,220 --> 00:20:04,460
+a dediğimiz değersiz olduğu için x kare geldi.
+
+205
+00:20:04,460 --> 00:20:09,640
+İşte eninci mertebeden türeminin sıfırdaki değeri böyle n faktöriyel.
+
+206
+00:20:10,120 --> 00:20:11,440
+x üzeri n geldi.
+
+207
+00:20:12,120 --> 00:20:13,720
+Artı nokta nokta devam etti.
+
+208
+00:20:13,860 --> 00:20:16,180
+Şimdi bu hesapladığımız değerleri yerine yazalım.
+
+209
+00:20:16,540 --> 00:20:18,960
+f'in sıfırdaki değerini 1 olarak hesaplamıştık.
+
+210
+00:20:19,020 --> 00:20:20,140
+Yansıtıyor ne 1 olarak?
+
+211
+00:20:22,100 --> 00:20:24,420
+Sonra bunu da 1 olarak hesaplamıştık.
+
+212
+00:20:25,540 --> 00:20:27,300
+Bunu da 1 olarak hesaplamıştık.
+
+213
+00:20:28,380 --> 00:20:33,340
+Bunları böyle yerine yazıp düzenlediğimizde buradan x geldi.
+
+214
+00:20:34,240 --> 00:20:34,960
+1 ile çarpı.
+
+215
+00:20:35,019 --> 00:20:37,560
+Buradan x kare bölü 2 faktöriyel geldi.
+
+216
+00:20:38,460 --> 00:20:42,060
+İşte nokta nokta buradan x üzere n bölü n faktöriyel geldi.
+
+217
+00:20:42,180 --> 00:20:43,860
+Artı nokta nokta diye devam etti.
+
+218
+00:20:44,340 --> 00:20:44,800
+Tamam mı?
+
+219
+00:20:44,800 --> 00:20:56,540
+Buna biz fx'in yani e üzeri x'in x eşitli sıfır noktasındaki taylor serisi diyoruz.
+
+220
+00:20:56,620 --> 00:20:58,780
+Şu ifadeye.
+
+221
+00:20:58,780 --> 00:21:04,460
+Eğer polinomu demiş olsaydık şurada kesecektik.
+
+222
+00:21:04,580 --> 00:21:06,900
+Yani n'den sonrasını anlayacaktık.
+
+223
+00:21:07,160 --> 00:21:09,480
+Eninci mertebeden polinomu demiş olsaydık.
+
+224
+00:21:09,480 --> 00:21:11,460
+taylor polinomu demiş olsaydık.
+
+225
+00:21:11,780 --> 00:21:14,700
+1 artı x artı x kare bölü 2 faktöriyel.
+
+226
+00:21:15,000 --> 00:21:17,440
+İşte nokta nokta x üzere n bölü n faktöriyel.
+
+227
+00:21:18,180 --> 00:21:19,080
+Ne kadar gidecekti?
+
+228
+00:21:19,160 --> 00:21:21,460
+Gördüğünüz gibi şunlar zaten sabit değerler.
+
+229
+00:21:21,860 --> 00:21:30,700
+Burada da erinci dereceden bir polinom söz konusu olduğu için biz de bunu o yüzden p indiz n x şeklinde göstermiş olduk.
+
+230
+00:21:30,700 --> 00:21:33,360
+Şimdi bunu çok sık kullanabiliriz.
+
+231
+00:21:34,620 --> 00:21:44,100
+Yani e üzeri x'in seriye açılımını 1 artı x artı x kare bölü 2 faktöriyle artı nokta nokta x üzere n bölü n faktöriyel şeklinde sık sık.
+
+232
+00:21:44,100 --> 00:21:53,820
+Ve bazı serilerin içinde bazı sorunların içinde aşama olarak kullanacağımız serilerden bir tanesi olduğu için bilmekte faydalar.
+
+233
+00:21:54,980 --> 00:22:00,100
+Yani biz o zaman bunu toplam ifadesi şeklinde de şöyle gösterebiliriz.
+
+234
+00:22:03,140 --> 00:22:07,100
+En eşit de 0'dan sonsuza kadar.
+
+235
+00:22:19,380 --> 00:22:21,060
+1 bölü n faktörüel.
+
+236
+00:22:26,420 --> 00:22:29,160
+x üzeri n söktümde göstereceğiz.
+
+237
+00:22:30,480 --> 00:22:40,220
+Ne olmuyorsam bu örneği de bunun yakınsaklık aralığı olarak da bunu da kuvvet serilerinin yakınsaklık aralığını hesaplarken şöyle bir soru sorulmuştu.
+
+238
+00:22:40,519 --> 00:22:42,640
+Yakınsaklık aralığı nedir denmişti.
+
+239
+00:22:43,080 --> 00:22:46,240
+İşte burada oran testini yaptığımızda bunun sonucu sonsuz çıkıyordu.
+
+240
+00:22:46,240 --> 00:22:53,240
+Sonsuz çıktığında yakınsaklık aralığımız eksi sonsuzlu artı sonsuzlu aralığında yakınsaktır diyor demiştik.
+
+241
+00:22:54,180 --> 00:22:55,080
+Yine aynı şekilde.
+
+242
+00:22:59,380 --> 00:23:07,520
+fx eşitleri kosünüs x de bizim x eşitleri sıfırdaki Taylor serisi ve polinomu sık sık karşımıza çıkacak.
+
+243
+00:23:07,640 --> 00:23:17,220
+Ezbere bilirsek ya da bir yere not aldığımızda buradan başka serilerin türetimine de girebileceğimiz bir seri olduğu için
+
+244
+00:23:17,220 --> 00:23:23,120
+bunu da hem şimdi Taylor serisi ve polinomunu bulalım ama aklımıza da yazalım.
+
+245
+00:23:23,120 --> 00:23:32,020
+Şimdi fx dediğimiz kosünüs x sıfır noktasındaki değeri çünkü burada a dediğimiz değer sıfır çünkü x eşitleri sıfırda.
+
+246
+00:23:32,600 --> 00:23:34,160
+Taylor serisini açıyoruz.
+
+247
+00:23:34,640 --> 00:23:35,900
+Kosünüs sıfırın değeri bir.
+
+248
+00:23:37,360 --> 00:23:38,360
+Sonra türevini aldık.
+
+249
+00:23:38,440 --> 00:23:39,320
+Eksi sinüs x.
+
+250
+00:23:40,220 --> 00:23:42,580
+Sinüs sıfırın değeri sıfır.
+
+251
+00:23:42,760 --> 00:23:45,300
+Dolayısıyla et üstü sıfır dediğimiz değer sıfır oldum.
+
+252
+00:23:45,920 --> 00:23:47,480
+Sonra buradan tekrar türev aldım.
+
+253
+00:23:47,600 --> 00:23:49,160
+Eksi kosünüs x geldi.
+
+254
+00:23:49,660 --> 00:23:52,860
+Bunun ikinci türevi sıfırdaki değerine bakıyorum.
+
+255
+00:23:53,120 --> 00:23:54,920
+Kosünüs sıfırın değeri birdi.
+
+256
+00:23:55,020 --> 00:23:56,940
+Önünde de eksi olduğu için eksi bir geldi.
+
+257
+00:23:58,700 --> 00:24:01,240
+İşte böyle üçüncü mertebeden türevi aldık.
+
+258
+00:24:02,600 --> 00:24:03,740
+Sinüs x geldi.
+
+259
+00:24:03,820 --> 00:24:04,740
+Bunun değeri sıfır.
+
+260
+00:24:05,440 --> 00:24:05,960
+Şimdi bakın.
+
+261
+00:24:10,280 --> 00:24:12,060
+Burada bir eksi bir çıkıyor.
+
+262
+00:24:12,120 --> 00:24:12,940
+Bir de bir çıkıyor.
+
+263
+00:24:13,480 --> 00:24:15,560
+Eksi bir ve artı bir şekilde gidiyor.
+
+264
+00:24:15,560 --> 00:24:17,560
+Ama bir de...
+
+265
+00:24:17,560 --> 00:24:18,560
+Bir de...
+
+266
+00:24:21,140 --> 00:24:22,800
+Yani bu sıfırıncı mertebeden...
+
+267
+00:24:22,800 --> 00:24:25,560
+Yani orijinal fonksiyonu sıfırıncı mertebeden türevi gibi düşünürsek...
+
+268
+00:24:25,560 --> 00:24:28,760
+Çift kuvvetler de eksi bir oluyor.
+
+269
+00:24:30,560 --> 00:24:31,700
+Diğerlerinde sıfır oluyor.
+
+270
+00:24:31,780 --> 00:24:32,280
+Değil mi türev?
+
+271
+00:24:32,500 --> 00:24:34,180
+Şöyle genelleştirecek olursak...
+
+272
+00:24:34,180 --> 00:24:35,980
+Çift kuvvetler de türev alırsak...
+
+273
+00:24:35,980 --> 00:24:37,560
+Yani çift kuvveti de...
+
+274
+00:24:37,560 --> 00:24:39,560
+İki anla gösterecek olursak...
+
+275
+00:24:39,560 --> 00:24:45,960
+İşte n sıfır verdiğimizde sıfırıncı türev dediğimiz fonksiyonun kendisine de gelecektir.
+
+276
+00:24:47,800 --> 00:24:48,760
+Kosünüs x'i verdi.
+
+277
+00:24:48,920 --> 00:24:53,240
+Mesela sıfırıncı kuvveti sıfır bir yaptı.
+
+278
+00:24:53,400 --> 00:24:54,460
+Kosünüs x'i verdi.
+
+279
+00:24:54,960 --> 00:24:57,840
+Bunun değeri de bir oldu.
+
+280
+00:25:00,560 --> 00:25:00,840
+Sonra...
+
+281
+00:25:00,840 --> 00:25:01,840
+Mesela...
+
+282
+00:25:03,040 --> 00:25:04,840
+Şu çift kuvvet olduğunu düşünün.
+
+283
+00:25:05,100 --> 00:25:06,420
+Bir verdik biz buraya.
+
+284
+00:25:06,640 --> 00:25:07,740
+N bir değerini verdik.
+
+285
+00:25:07,740 --> 00:25:09,980
+İkinci mertebeden türev oldu.
+
+286
+00:25:10,480 --> 00:25:12,060
+Dolayısıyla eksi kosünüs x geldi.
+
+287
+00:25:12,620 --> 00:25:13,740
+İşte bunun da değeri...
+
+288
+00:25:14,300 --> 00:25:15,320
+Bir vermiştik.
+
+289
+00:25:15,380 --> 00:25:16,380
+Eksi bir eşit oldu.
+
+290
+00:25:17,260 --> 00:25:17,740
+Çift...
+
+291
+00:25:18,880 --> 00:25:21,020
+Tekleri deneyecek olursak...
+
+292
+00:25:21,020 --> 00:25:22,360
+Hep eksi sinüs x geliyor.
+
+293
+00:25:22,920 --> 00:25:24,600
+Teklerde artı sinüs x geliyor.
+
+294
+00:25:24,700 --> 00:25:25,540
+Eksi sinüs x geliyor.
+
+295
+00:25:25,640 --> 00:25:26,120
+Artı eksi.
+
+296
+00:25:26,180 --> 00:25:27,400
+Artı eksi şeklinde gidiyor.
+
+297
+00:25:29,360 --> 00:25:31,560
+N'e sıfırdan başlatmıştık.
+
+298
+00:25:31,640 --> 00:25:32,740
+N'e sıfır değerini verdiğimizde...
+
+299
+00:25:33,580 --> 00:25:36,100
+Burası birinci mertebeden türeve denk gelecek.
+
+300
+00:25:36,100 --> 00:25:39,620
+Dolayısıyla eksi sinüs x geldi.
+
+301
+00:25:39,840 --> 00:25:39,920
+Evet.
+
+302
+00:25:40,420 --> 00:25:41,940
+Sıfır noktasındaki değeri ne baktık?
+
+303
+00:25:42,019 --> 00:25:42,680
+Sıfır geldi.
+
+304
+00:25:43,160 --> 00:25:44,100
+Şimdi diğerlerimize baktığımızda...
+
+305
+00:25:44,900 --> 00:25:46,100
+Zaten şunu...
+
+306
+00:25:46,620 --> 00:25:47,920
+Şu şekilde...
+
+307
+00:25:47,920 --> 00:25:50,220
+Genelleştirilebileceğimizi gördük.
+
+308
+00:25:50,480 --> 00:25:51,240
+Şimdi ne yapıyoruz?
+
+309
+00:25:51,360 --> 00:25:52,100
+Bulduğumuz bu değerleri...
+
+310
+00:25:52,100 --> 00:25:55,120
+Tyler polinomunda yerine yazıyoruz.
+
+311
+00:25:55,580 --> 00:25:57,100
+Tyler polinomunun...
+
+312
+00:25:57,100 --> 00:25:59,100
+Yani fx dediğimiz fonksiyonumuzu...
+
+313
+00:25:59,800 --> 00:26:01,940
+Biz seri şeklinde ifade ediyoruz.
+
+314
+00:26:04,600 --> 00:26:06,100
+Biliyorsunuz cos x fonksiyonunda...
+
+315
+00:26:06,640 --> 00:26:08,380
+Eksi sonsuz, artı sonsuz aralığında...
+
+316
+00:26:08,380 --> 00:26:09,920
+Tanımlı olan bir fonksiyondur.
+
+317
+00:26:11,840 --> 00:26:13,680
+Cos x fonksiyonu yani bu.
+
+318
+00:26:13,680 --> 00:26:15,680
+x eşitliği sıfır noktasında...
+
+319
+00:26:16,640 --> 00:26:17,500
+Biz bunu...
+
+320
+00:26:17,500 --> 00:26:19,540
+İşte f'in sıfırdaki değeri...
+
+321
+00:26:19,540 --> 00:26:20,680
+Eşitliği koyayım.
+
+322
+00:26:21,240 --> 00:26:22,120
+F üstü sıfır.
+
+323
+00:26:22,900 --> 00:26:26,140
+Burası x eksi sıfırın sıfırı gelecekti.
+
+324
+00:26:26,280 --> 00:26:29,200
+İkinci mertebe türevinin sıfırdaki değeri böyle iki faktörü yer.
+
+325
+00:26:29,580 --> 00:26:32,700
+x eksi sıfırın parantez karesi ve böyle gidecekti.
+
+326
+00:26:32,780 --> 00:26:33,580
+Şimdi yerine yazıyoruz.
+
+327
+00:26:33,580 --> 00:26:36,700
+Fonksiyonu sıfırdaki değeri bir olarak bulduk.
+
+328
+00:26:36,780 --> 00:26:37,240
+Yazdık.
+
+329
+00:26:38,040 --> 00:26:40,680
+Birinci mertebe türevinin sıfırdaki değeri sıfırdı.
+
+330
+00:26:41,200 --> 00:26:42,220
+Çarpı x geldi.
+
+331
+00:26:42,920 --> 00:26:45,600
+Sonra ikinci mertebe türevinin bölü iki faktörü yer.
+
+332
+00:26:46,080 --> 00:26:47,440
+Onun değeri de eksi bir idi.
+
+333
+00:26:47,520 --> 00:26:49,200
+Dolası burası eksi oldu.
+
+334
+00:26:49,640 --> 00:26:53,160
+x kare bölü iki faktörü yer geldi.
+
+335
+00:26:58,675 --> 00:27:01,495
+Ondan sonra geldik. Üçüncü mertebeden türevde şu geldi.
+
+336
+00:27:02,395 --> 00:27:06,875
+Üçüncü mertebede türev şurada gözüküyor. Zaten 0 çarpı x eksi 0'ın küpü geldi.
+
+337
+00:27:07,495 --> 00:27:14,195
+Dördüncü mertebede türevde de x üzeri 4 bölük 4 faktörü ile olacak şurası da.
+
+338
+00:27:15,655 --> 00:27:16,415
+Gelecek.
+
+339
+00:27:17,995 --> 00:27:19,275
+Burası artı.
+
+340
+00:27:21,096 --> 00:27:23,795
+Burası da artı değil mi? Artı geldi.
+
+341
+00:27:24,355 --> 00:27:26,715
+Dolayısıyla şimdi bunu genelleştirecek olursak
+
+342
+00:27:26,715 --> 00:27:29,735
+eninci mertebede ne gelecek?
+
+343
+00:27:29,915 --> 00:27:33,215
+Eksi 1 üzeri n bölü 2n faktörü yel.
+
+344
+00:27:34,215 --> 00:27:36,816
+Formülden gelen x üzeri 2n gelecek.
+
+345
+00:27:37,415 --> 00:27:40,035
+Ve böyle devam edecek.
+
+346
+00:27:40,275 --> 00:27:42,655
+Şimdi biz bunu genelleştirecek olursak
+
+347
+00:27:42,655 --> 00:27:47,855
+bakın 2 faktörü yel, 4 faktörü yel, 6 faktörü yel diye gidiyor.
+
+348
+00:27:47,995 --> 00:27:49,995
+Yani 2n faktörü yel şeklinde gidiyor.
+
+349
+00:27:50,576 --> 00:27:52,975
+Şu terimler zaten 0 olduğu için
+
+350
+00:27:52,975 --> 00:27:55,316
+x kare geldi.
+
+351
+00:27:55,316 --> 00:27:57,155
+x üzeri 4 geldi.
+
+352
+00:27:57,495 --> 00:28:00,336
+İşte burada x üzeri sıfırıncı kuvvet gibi düşünürsek biri de
+
+353
+00:28:00,336 --> 00:28:02,816
+o zaman x üzeri 2n gelecek.
+
+354
+00:28:03,255 --> 00:28:04,895
+Yeni sıfırdan başlattığımızda
+
+355
+00:28:04,895 --> 00:28:08,076
+burası 1'e verecek bize.
+
+356
+00:28:09,596 --> 00:28:12,135
+Eksi 1'in sıfırıncı kuvvetinden de artı gelecek.
+
+357
+00:28:12,336 --> 00:28:13,596
+Dolayısıyla 1 gerçekledi.
+
+358
+00:28:14,535 --> 00:28:15,316
+Yani biz bunu
+
+359
+00:28:15,316 --> 00:28:17,316
+genelleştirdiğimizde de
+
+360
+00:28:17,316 --> 00:28:22,096
+cos x'in x'e şıkları sıfır noktasındaki
+
+361
+00:28:22,096 --> 00:28:27,215
+maklöre'nin seri açılımını veya x'e şıkları sıfır noktasındaki
+
+362
+00:28:27,215 --> 00:28:31,175
+kailor seri açılımını şu şekilde yazabiliriz.
+
+363
+00:28:31,175 --> 00:28:32,495
+Bu da öyle.
+
+364
+00:28:33,836 --> 00:28:35,316
+Aklımızın bir köşesinde de
+
+365
+00:28:35,316 --> 00:28:35,915
+kalsın
+
+366
+00:28:35,915 --> 00:28:37,596
+tüplerden oluşuyor.
+
+367
+00:28:38,096 --> 00:28:39,015
+Eğer biz bunun
+
+368
+00:28:39,015 --> 00:28:41,455
+taylor polinomunu yazmış olsaydık
+
+369
+00:28:41,455 --> 00:28:43,576
+n'e kadar gidecektik.
+
+370
+00:28:44,955 --> 00:28:46,655
+Şimdi bunun bir sonrası da sıfır olacağı için
+
+371
+00:28:46,655 --> 00:28:49,355
+o yüzden 2n artı 1. mertebe
+
+372
+00:28:49,355 --> 00:28:50,875
+dereceden
+
+373
+00:28:50,875 --> 00:28:52,076
+polinomla
+
+374
+00:28:52,076 --> 00:28:52,995
+n. mertebe
+
+375
+00:28:52,995 --> 00:28:55,935
+2n. mertebeden polinom
+
+376
+00:28:55,935 --> 00:28:56,775
+aynı olacak.
+
+377
+00:28:56,895 --> 00:28:58,556
+Çünkü bir sonraki terim sıfır olduğu için
+
+378
+00:28:58,556 --> 00:28:59,615
+taylor polinomunu
+
+379
+00:28:59,615 --> 00:29:01,175
+bu şekilde yazabiliriz.
+
+380
+00:29:01,755 --> 00:29:02,715
+Burada da
+
+381
+00:29:02,715 --> 00:29:02,975
+hani
+
+382
+00:29:02,975 --> 00:29:06,295
+2n artı 1. mertebeden
+
+383
+00:29:06,295 --> 00:29:09,336
+türevinin sıfırdaki değeri sıfır olduğundan dolayı
+
+384
+00:29:09,336 --> 00:29:10,195
+zaten bu soru
+
+385
+00:29:10,195 --> 00:29:11,096
+bundan sonraki
+
+386
+00:29:11,096 --> 00:29:12,715
+yani n artı 1. terimle
+
+387
+00:29:12,715 --> 00:29:13,875
+n. terim
+
+388
+00:29:13,875 --> 00:29:15,195
+aynı olacak.
+
+389
+00:29:20,276 --> 00:29:22,476
+Şimdi devam edelim.
+
+390
+00:29:23,996 --> 00:29:32,196
+Şimdi fx eşittir 1 bölü x tarafından a eşittir 2'de türetilen Tyler serisini.
+
+391
+00:29:32,196 --> 00:29:33,556
+Şimdi bu böyle sorulur.
+
+392
+00:29:33,596 --> 00:29:36,536
+fx fonksiyonunun hiç böyle tarafından böyle bilmem değil.
+
+393
+00:29:38,936 --> 00:29:42,216
+x eşittir 2'de Tyler serisini açınız.
+
+394
+00:29:44,635 --> 00:29:49,696
+a eşittir 2'de Tyler serisini açınız veya x eşittir 2'de Tyler serisini açınız.
+
+395
+00:29:49,696 --> 00:29:50,936
+Soru böyle gelir.
+
+396
+00:29:52,096 --> 00:29:55,756
+Hangi noktalarda seri 1 bölü x'e yakın ser?
+
+397
+00:29:56,375 --> 00:29:56,836
+Bakalım.
+
+398
+00:29:56,836 --> 00:30:04,576
+Şimdi bunun için fonksiyonun 2'deki değerini, bunun için Tyler serisinde vardı ya,
+
+399
+00:30:05,076 --> 00:30:10,615
+türevin 2'deki değerini, ikinci türevin 2'deki değerini ve nokta nokta hesaplayabildiğimiz yere kadar,
+
+400
+00:30:12,036 --> 00:30:18,736
+yani genel terimle oluşturacak şekilde hesaplayabildiğimiz yere kadar birkaç terim daha gideriz.
+
+401
+00:30:18,736 --> 00:30:24,855
+ya da soru içerisinde şu terime kadar Tyler serisine yazın diyebilir.
+
+402
+00:30:25,976 --> 00:30:29,396
+Şimdi fonksiyonumuz 1 bölü x fonksiyonuydu.
+
+403
+00:30:30,896 --> 00:30:35,496
+Bunun dolayısıyla x eşittir 2'deki değeri 1 bölü 2 oldu.
+
+404
+00:30:36,096 --> 00:30:37,476
+Şimdi buradan türev alacağız.
+
+405
+00:30:37,996 --> 00:30:40,396
+1 bölü x'in türevinden ne gelecek?
+
+406
+00:30:40,396 --> 00:30:43,375
+x'e 1 bölü x kare gelecek.
+
+407
+00:30:43,875 --> 00:30:44,355
+Tamam mı?
+
+408
+00:30:45,176 --> 00:30:47,776
+Bunun 2'deki değeri,
+
+409
+00:30:47,896 --> 00:30:49,776
+eksi 1 bölü 2'nin karesi geldi.
+
+410
+00:30:50,936 --> 00:30:52,396
+Sonra ikinci mertebe türev aldığımızda,
+
+411
+00:30:53,855 --> 00:30:55,736
+bunun türevinden şöyle gelecek,
+
+412
+00:30:56,036 --> 00:30:56,796
+eksi gelecek.
+
+413
+00:30:57,135 --> 00:30:58,216
+Bunun da öyle bir eksi vardı.
+
+414
+00:30:58,336 --> 00:30:59,396
+Dolayısıyla artı oldu.
+
+415
+00:30:59,396 --> 00:31:02,736
+Biden'ın türevinden 2x gelecek.
+
+416
+00:31:03,736 --> 00:31:10,796
+Bölü x'in dördüncü kuvveti gelecek.
+
+417
+00:31:10,956 --> 00:31:13,396
+Burada da gerekli sağ birleştirmeleri yaptığımızda,
+
+418
+00:31:13,676 --> 00:31:16,875
+2 bölü x küp gelmiş olacak.
+
+419
+00:31:16,875 --> 00:31:19,875
+Dolayısıyla burada da yerine yazdığımızda,
+
+420
+00:31:20,836 --> 00:31:21,375
+2'ye,
+
+421
+00:31:22,635 --> 00:31:23,375
+2 geldi,
+
+422
+00:31:23,456 --> 00:31:24,676
+burası da 2'nin küpü geldi.
+
+423
+00:31:24,796 --> 00:31:26,676
+Şimdi bunu tam olarak göremiyoruz.
+
+424
+00:31:26,676 --> 00:31:28,896
+Bu 2 çarpı 1'e,
+
+425
+00:31:28,996 --> 00:31:31,956
+işte 1 faktoriyel olarak yazıp yazamayacağımızda.
+
+426
+00:31:31,996 --> 00:31:33,256
+Bir sonraki adıma daha gidelim.
+
+427
+00:31:33,355 --> 00:31:35,456
+Bu sonraki aşamada yazabileceğimiz bir şey.
+
+428
+00:31:35,976 --> 00:31:37,276
+Hemen böyle patlayı göremiyoruz.
+
+429
+00:31:37,336 --> 00:31:39,076
+Üçüncü mertebeden türevi aldık.
+
+430
+00:31:40,196 --> 00:31:42,655
+İşte üçüncü mertebeden türevi aldığımızda,
+
+431
+00:31:42,736 --> 00:31:44,155
+eksi 3 tane,
+
+432
+00:31:45,155 --> 00:31:45,756
+eksi kare,
+
+433
+00:31:45,756 --> 00:31:48,036
+şu mertere alıyorum.
+
+434
+00:31:49,236 --> 00:31:50,756
+Şu mertere aldığımı düşünün.
+
+435
+00:31:50,836 --> 00:31:52,756
+Bölü x üzeri
+
+436
+00:31:52,756 --> 00:31:56,375
+6 gelecek kare sınav aldığında.
+
+437
+00:31:56,836 --> 00:31:59,396
+Dolayısıyla gerekli sağ birleştirmeleri yaptığım zaman,
+
+438
+00:32:00,175 --> 00:32:01,276
+bir de başımda 2 vardı.
+
+439
+00:32:01,396 --> 00:32:02,696
+Dolayısıyla bir de 6 oldu.
+
+440
+00:32:03,916 --> 00:32:04,936
+Eksi 6,
+
+441
+00:32:05,916 --> 00:32:07,355
+eksi üzeri 4 geldi.
+
+442
+00:32:07,776 --> 00:32:11,296
+Şimdi bunu görebilmek için birkaç tane daha terim yazmak gerekebilir.
+
+443
+00:32:12,036 --> 00:32:13,796
+Ama şöyle baktığımızda,
+
+444
+00:32:13,796 --> 00:32:15,696
+şimdi burada eksi 6'ı var ya,
+
+445
+00:32:15,796 --> 00:32:17,635
+bu sanki 3 çarpı 2 çarpı 1,
+
+446
+00:32:17,756 --> 00:32:19,536
+yani burada 3 faktör yer varmış gibi.
+
+447
+00:32:19,536 --> 00:32:22,236
+Yenelleştirmeye gidersek eğer,
+
+448
+00:32:23,236 --> 00:32:25,096
+3 faktör yer varmış gibi düşünebiliriz.
+
+449
+00:32:25,155 --> 00:32:26,076
+Burasını 2 var,
+
+450
+00:32:26,175 --> 00:32:27,516
+2 çarpı 1 gibi düşük,
+
+451
+00:32:27,556 --> 00:32:29,416
+2 faktör yer gibi düşünebiliriz.
+
+452
+00:32:30,056 --> 00:32:32,155
+Hani sanki ikinci mertebeden türevi de,
+
+453
+00:32:32,375 --> 00:32:33,496
+2 faktör yer geldi.
+
+454
+00:32:33,596 --> 00:32:34,956
+Üçüncü mertebeden türevi de,
+
+455
+00:32:35,155 --> 00:32:36,296
+3 faktör yer geldi.
+
+456
+00:32:36,296 --> 00:32:37,936
+işte birinci mertebeden türevi de,
+
+457
+00:32:37,936 --> 00:32:39,396
+bir faktör yer geldi.
+
+458
+00:32:39,996 --> 00:32:41,076
+Gibi düşünebiliriz.
+
+459
+00:32:41,135 --> 00:32:42,416
+Ama gördüğünüz gibi,
+
+460
+00:32:43,355 --> 00:32:46,756
+işte bu da sıfırıncı mertebeden türevi,
+
+461
+00:32:46,756 --> 00:32:48,256
+sıfırıncı mertebeden türevi,
+
+462
+00:32:48,655 --> 00:32:51,115
+sıfır faktör yer varmış gibi düşünebiliriz.
+
+463
+00:32:51,476 --> 00:32:52,016
+Dolayısıyla,
+
+464
+00:32:52,176 --> 00:32:54,096
+artı eksi artı eksi şeklinde gittiği için,
+
+465
+00:32:54,516 --> 00:32:55,536
+genel türevini,
+
+466
+00:32:55,676 --> 00:32:57,056
+genel terimini yazarken,
+
+467
+00:32:57,196 --> 00:32:57,796
+eksi bir üstleri,
+
+468
+00:32:57,876 --> 00:32:59,676
+n şeklinde bir yazalım.
+
+469
+00:32:59,676 --> 00:33:00,496
+Bazen bu,
+
+470
+00:33:00,976 --> 00:33:02,296
+n artı 1 de olabilir,
+
+471
+00:33:02,556 --> 00:33:03,096
+n de olabilir.
+
+472
+00:33:03,416 --> 00:33:04,196
+Yazdıktan sonra,
+
+473
+00:33:04,276 --> 00:33:05,855
+bir kitle imz sağlayıp sağlamadığında,
+
+474
+00:33:06,155 --> 00:33:07,396
+kontrol etmemiz gerekiyor.
+
+475
+00:33:08,627 --> 00:33:15,667
+İşte tabii ki birkaç terim daha yazdıktan sonra böyle bir genelleme yedirtmek daha mantıklı olabilir.
+
+476
+00:33:15,667 --> 00:33:22,127
+Yani şu üç tane terimle bu şekilde bir genelleme yapmak bizi yanıltabilir.
+
+477
+00:33:22,707 --> 00:33:27,067
+Ama tabii bunun sonucunu biz bildiğimiz için öyle direkt yazdığımıza bakmayın.
+
+478
+00:33:27,147 --> 00:33:29,127
+Öyle deneme yapmak gerekiyor.
+
+479
+00:33:29,687 --> 00:33:31,467
+İşte en faktör yer geldi bölü.
+
+480
+00:33:31,847 --> 00:33:34,548
+Şimdi bu üçüncü mertebe türevde x üzeri 4 geldi.
+
+481
+00:33:34,707 --> 00:33:37,087
+İkinci mertebe türevde samif hasılası geldi.
+
+482
+00:33:37,087 --> 00:33:39,288
+Birinci mertebe türevde x kare geldi.
+
+483
+00:33:39,548 --> 00:33:43,207
+Demek ki burası da x üzeri n artı 1'dir diyoruz.
+
+484
+00:33:43,687 --> 00:33:47,347
+Ve burada da yine x gördüğümüz yere iki yazdığımızda
+
+485
+00:33:47,347 --> 00:33:57,087
+eksi birin en ince eksi bir üzeri n, n faktör yer bölü iki tane ikinin n artı birinci kuvveti şeklinde
+
+486
+00:33:57,647 --> 00:34:01,687
+en ince mertebe türevi genelledik.
+
+487
+00:34:01,807 --> 00:34:03,508
+Bazen bunu genelleyemeyebiliriz.
+
+488
+00:34:03,627 --> 00:34:05,867
+O zaman işte belirli bir yere kadar yazarız.
+
+489
+00:34:05,867 --> 00:34:08,327
+Sonra Taylor serisinde de yerine yazarız.
+
+490
+00:34:08,407 --> 00:34:09,967
+İlla genellemek zorunda değiliz.
+
+491
+00:34:10,027 --> 00:34:13,007
+Ama bu soruda yakınsaklık aralığı da soruyordu bize.
+
+492
+00:34:13,347 --> 00:34:15,007
+O yüzden genellemek zorundayız.
+
+493
+00:34:15,127 --> 00:34:16,708
+Demek ki genellenebiliyor diyoruz.
+
+494
+00:34:18,007 --> 00:34:20,447
+Şimdi geldik Taylor serisini yazacağız.
+
+495
+00:34:20,847 --> 00:34:21,248
+Nerede?
+
+496
+00:34:21,248 --> 00:34:22,708
+x eşittir.
+
+497
+00:34:22,708 --> 00:34:23,248
+Şimdi
+
+498
+00:34:23,248 --> 00:34:23,708
+x eşittir.
+
+499
+00:34:23,708 --> 00:34:29,168
+veya yukarıda formülde a olarak verdiğimiz iki noktası.
+
+500
+00:34:30,847 --> 00:34:31,087
+Şimdi
+
+501
+00:34:31,087 --> 00:34:34,567
+bir bölü x eşittir.
+
+502
+00:34:35,567 --> 00:34:36,728
+Bizim yazdığımız şey
+
+503
+00:34:36,728 --> 00:34:38,347
+bir bölü x
+
+504
+00:34:38,347 --> 00:34:40,587
+eşittir.
+
+505
+00:34:40,587 --> 00:34:42,728
+f2
+
+506
+00:34:42,728 --> 00:34:44,307
+f üstü 2
+
+507
+00:34:44,307 --> 00:34:47,047
+x eksi 2
+
+508
+00:34:47,047 --> 00:34:49,268
+yani a gördüğümüz yere 2 yazdık.
+
+509
+00:34:49,367 --> 00:34:52,607
+İkinci mertebeden türevi 2'deki değeri x eksi 2'nin karesi.
+
+510
+00:34:52,728 --> 00:34:53,467
+İşte nokta nokta.
+
+511
+00:34:53,847 --> 00:34:54,628
+Genel terimin
+
+512
+00:34:54,627 --> 00:34:56,847
+eninci mertebeden türevin
+
+513
+00:34:56,847 --> 00:34:57,607
+ikideki değeri
+
+514
+00:34:57,607 --> 00:34:58,527
+n faktörü
+
+515
+00:34:58,527 --> 00:35:00,807
+x eksi 2'nin eninci kuvveti
+
+516
+00:35:00,807 --> 00:35:01,688
+artı nokta nokta
+
+517
+00:35:01,688 --> 00:35:02,728
+şeklinde yazdık.
+
+518
+00:35:03,648 --> 00:35:05,007
+Şu fonksiyonun 2'deki değeri
+
+519
+00:35:05,007 --> 00:35:05,887
+1 bölü 2 olarak
+
+520
+00:35:05,887 --> 00:35:06,507
+bulmuştuk.
+
+521
+00:35:06,587 --> 00:35:07,427
+Yerine yazdık.
+
+522
+00:35:08,688 --> 00:35:08,987
+Sonra
+
+523
+00:35:08,987 --> 00:35:10,688
+buradayız şu anda
+
+524
+00:35:10,688 --> 00:35:11,947
+ikinci mertebeden türevi
+
+525
+00:35:11,947 --> 00:35:12,987
+eksi 1 bölü
+
+526
+00:35:12,987 --> 00:35:16,047
+2'nin karesi
+
+527
+00:35:16,047 --> 00:35:16,987
+şeklinde yazdık.
+
+528
+00:35:17,067 --> 00:35:17,407
+Eksi
+
+529
+00:35:17,407 --> 00:35:19,668
+1 bölü
+
+530
+00:35:19,668 --> 00:35:20,907
+2'nin karesi
+
+531
+00:35:20,907 --> 00:35:21,607
+ne var burada?
+
+532
+00:35:21,668 --> 00:35:22,527
+x eksi 2 var.
+
+533
+00:35:22,688 --> 00:35:24,228
+O zaman x eksi 2'yi de yazdık.
+
+534
+00:35:24,228 --> 00:35:24,708
+Şurası
+
+535
+00:35:24,708 --> 00:35:26,288
+Sonra geldik şuna
+
+536
+00:35:26,288 --> 00:35:27,047
+artı
+
+537
+00:35:27,047 --> 00:35:29,367
+ikinci mertebeden türevi
+
+538
+00:35:29,367 --> 00:35:30,768
+şurada hesapladık.
+
+539
+00:35:32,527 --> 00:35:33,887
+Şurada hesapladık.
+
+540
+00:35:33,987 --> 00:35:35,027
+Yani buradan ne geldi?
+
+541
+00:35:36,248 --> 00:35:37,007
+2 faktörü
+
+542
+00:35:37,007 --> 00:35:37,248
+yel
+
+543
+00:35:37,248 --> 00:35:41,208
+de var burada.
+
+544
+00:35:44,851 --> 00:35:47,531
+İki mertelik türevde bu da var. İki faktöriyel var.
+
+545
+00:35:48,311 --> 00:35:49,251
+İç eksi ikinin
+
+546
+00:35:53,076 --> 00:36:03,836
+x-x'e 2'nin karesi var. Bölü 2 üzeri 3 var. Bir de formülden gelen, şurada 2 faktör elimiz vardı.
+
+547
+00:36:05,836 --> 00:36:07,876
+Şurada bir de 2 faktör elimiz olacak.
+
+548
+00:36:15,219 --> 00:36:17,159
+Ama burada iki faktör yelimiz de var.
+
+549
+00:36:18,719 --> 00:36:22,659
+Sonra geldik, işte eninci mertebe türevi şurada hesaplamıştık.
+
+550
+00:36:22,879 --> 00:36:23,980
+Eksi bir üzeri en.
+
+551
+00:36:24,459 --> 00:36:26,179
+Şurada bir en faktör yelimiz var.
+
+552
+00:36:28,759 --> 00:36:31,039
+Ondan sonra bir de burada da en faktör yelimiz var.
+
+553
+00:36:31,039 --> 00:36:33,539
+Şu en faktör yel.
+
+554
+00:36:34,839 --> 00:36:38,699
+Şimdi burada şu en faktör yeliler, işte artı nokta nokta devam ediyor.
+
+555
+00:36:38,739 --> 00:36:40,439
+En faktör yeliler birbirini götürdü.
+
+556
+00:36:40,779 --> 00:36:43,539
+Burada da iki faktör yeliler birbirini götürdü.
+
+557
+00:36:43,539 --> 00:36:45,419
+dolayısıyla dolayısıyla.
+
+558
+00:36:45,419 --> 00:36:57,759
+Dolayısıyla bizim serimiz bir bölü iki, eksi, x eksi, iki bölü iki, ikinin karesi, artı, x eksi, ikinin parantez karesi, böyle ikinin küpü şeklinde gitti.
+
+559
+00:36:58,179 --> 00:36:59,519
+Evet, bunu da toplam şeklinde.
+
+560
+00:36:59,639 --> 00:37:01,419
+Şu genel terimden faydalanarak yazarsak,
+
+561
+00:37:03,059 --> 00:37:06,299
+nasıl yazarız?
+
+562
+00:37:11,731 --> 00:37:12,492
+Nasıl yazarız?
+
+563
+00:37:14,291 --> 00:37:15,052
+Şimdi
+
+564
+00:37:15,052 --> 00:37:19,192
+şöyle yazarız değil mi bunu da?
+
+565
+00:37:19,451 --> 00:37:19,931
+Toplam
+
+566
+00:37:19,931 --> 00:37:23,592
+en eşitleri sıfırdan
+
+567
+00:37:30,963 --> 00:37:32,123
+Sonsuza kadar
+
+568
+00:37:32,123 --> 00:37:36,963
+Şimdi bu sıfırıncı kuvveti de
+
+569
+00:37:36,963 --> 00:37:39,963
+Eksi bir üzere
+
+570
+00:37:48,467 --> 00:37:49,507
+İnfaktoriyen,
+
+571
+00:37:53,139 --> 00:37:53,900
+bölüm
+
+572
+00:37:53,900 --> 00:37:56,179
+2 üzeri n artı 1
+
+573
+00:38:04,692 --> 00:38:05,692
+çarpı
+
+574
+00:38:05,692 --> 00:38:09,851
+x eksi enin
+
+575
+00:38:09,851 --> 00:38:12,472
+ya x eksi 2'nin
+
+576
+00:38:12,472 --> 00:38:15,072
+eninci kuvveti
+
+577
+00:38:19,092 --> 00:38:31,271
+Bölü en faktöriyel şeklindeydi. Gerçi biz bunları bir az sırada sadeleştirmiştik. Dolayısıyla burada en faktöriyeler birbiri gitti. Şöyle bir seri olarak yazacağız.
+
+578
+00:38:31,872 --> 00:38:41,231
+Şimdi şöyle baktığımızda, bu aslında mutlak değer olarak düşündüğümüzde, şurada x1'in eninci kuvveti var, burada da x-2'nin eninci kuvveti var.
+
+579
+00:38:41,231 --> 00:38:53,572
+Yani biz şu ifadeyi, hep eninci kuvvetlerin içine sokabiliriz. Burada da 1 bölü 2 kalıdır. Yani şu toplamı, yukarıda yazdığım toplamı ben, işte toplam en eşitleri sıfırdan,
+
+580
+00:38:58,579 --> 00:39:24,340
+Sonsuza kadar. Şu 1 bölü 2'yi ayırdım diyelim şöyle. 1 bölü 2'yi ayırdım. Diğerlerinde hep eninci kuvvetler var dikkat ederseniz. Yani parantez için şöyle yapayım. Eksi geldi. Şunu da eninci kuvveti, onu da içeri soktum. Ondan sonra x-2 geldi. Tamam mı? Bir de ne geldi? Şuradan da 2 üzeri endi.
+
+581
+00:39:24,340 --> 00:39:32,179
+Bunları böyle parantez eninci kuvvetleri olacak şekilde düzenleyelim. Böyle oldu bu.
+
+582
+00:39:34,340 --> 00:39:42,340
+Şimdi böyle baktığımızda burası geometrik seriye benziyor değil mi? Şimdi burası geometrik seriye benzediği için, şunlar için.
+
+583
+00:39:45,039 --> 00:39:47,679
+Şimdi bu geometrik seriye benzediği için bu.
+
+584
+00:39:55,155 --> 00:39:58,355
+Dikkat ederseniz oradaki geometrik seriyi biz şöyle vermiştik.
+
+585
+00:39:58,916 --> 00:40:00,235
+Şuraya genel halini yazayım.
+
+586
+00:40:02,235 --> 00:40:03,795
+Serileri işlerken.
+
+587
+00:40:04,775 --> 00:40:08,436
+A çarpı R üzeri eksi birdi.
+
+588
+00:40:09,695 --> 00:40:11,735
+R üzeri en eksi birdi.
+
+589
+00:40:12,795 --> 00:40:16,456
+Ve n dediğimiz değer de burada birden başlıyordu.
+
+590
+00:40:16,715 --> 00:40:24,416
+O zaman bu geometrik serinin yakınsaklık aralığını düzenleyebilmek için
+
+591
+00:40:24,416 --> 00:40:28,456
+bunu da biz elimizdeki seriyle bu şekilde düzenlersek
+
+592
+00:40:28,456 --> 00:40:31,215
+burasını birden başlatmam demek
+
+593
+00:40:31,215 --> 00:40:34,235
+yani şurası sıfırdan da burasını birden başlatmam demek
+
+594
+00:40:34,235 --> 00:40:36,255
+içerideki ene bir azaltmam demek.
+
+595
+00:40:36,355 --> 00:40:38,395
+Burayı bir artırıyorsam burayı bir azaltmam demek.
+
+596
+00:40:38,755 --> 00:40:40,115
+Dolayısıyla bu işlemi yaptığımda
+
+597
+00:40:40,115 --> 00:40:43,235
+beni birden başlatıp sonsuza kadar götürdüğümde
+
+598
+00:40:43,235 --> 00:40:44,956
+burası bir bölü iki eksi
+
+599
+00:40:44,956 --> 00:40:47,875
+x eksi ikinin iki bölü ikinin
+
+600
+00:40:47,875 --> 00:40:50,556
+parantez en eksi birinci kuvvet olacak.
+
+601
+00:40:50,715 --> 00:40:52,775
+Yani şurası enken şurada
+
+602
+00:40:52,775 --> 00:40:54,155
+burada en eksi bir oldu.
+
+603
+00:40:54,416 --> 00:40:58,675
+Bu aynen bizim kalıpta verdiğimiz geometrik seriye döndü.
+
+604
+00:40:58,895 --> 00:41:01,715
+Şimdi biz biliyoruz ki bu geometrik seri
+
+605
+00:41:01,715 --> 00:41:04,655
+ve a dediğimiz değer bir bölü iki.
+
+606
+00:41:05,375 --> 00:41:06,056
+Yani şurası.
+
+607
+00:41:06,715 --> 00:41:07,655
+Şu a'ya eşit.
+
+608
+00:41:09,655 --> 00:41:12,215
+R dediğimiz değer de şu parantezin içi.
+
+609
+00:41:13,335 --> 00:41:15,635
+Yani eksi de dahil olmak üzere eksi.
+
+610
+00:41:15,775 --> 00:41:18,355
+Parantez içinde x eksi iki bölü ikinin
+
+611
+00:41:18,355 --> 00:41:21,735
+bölü ikinin şeysi.
+
+612
+00:41:22,536 --> 00:41:23,576
+Kendisi de R oluyor.
+
+613
+00:41:23,576 --> 00:41:25,115
+Şimdi hangi durumlarda
+
+614
+00:41:25,115 --> 00:41:27,956
+bu geometrik seri yakınlaması gerekiyordu?
+
+615
+00:41:28,315 --> 00:41:29,996
+Mutlak değer içinde R'nin
+
+616
+00:41:29,996 --> 00:41:33,315
+birden küçük olduğu durumlarda yakınlaması gerekiyordu.
+
+617
+00:41:33,416 --> 00:41:33,615
+Değil mi?
+
+618
+00:41:33,615 --> 00:41:35,956
+O zaman bizim buradaki R'imiz eksi
+
+619
+00:41:35,956 --> 00:41:39,036
+parantez içinde x eksi iki bölü iki olduğundan dolayı
+
+620
+00:41:39,036 --> 00:41:41,996
+bu eksi tabii dışarı
+
+621
+00:41:41,996 --> 00:41:44,615
+pozitif alınabilir.
+
+622
+00:41:44,755 --> 00:41:46,536
+x eksi iki bölü ikinin
+
+623
+00:41:46,536 --> 00:41:47,976
+şeyi
+
+624
+00:41:47,976 --> 00:41:49,556
+mutlak değeri
+
+625
+00:41:49,556 --> 00:41:50,875
+küçüktür bir şekilde.
+
+626
+00:41:50,875 --> 00:41:52,295
+düşündüğümüzde
+
+627
+00:41:52,295 --> 00:41:54,175
+fikriyle karşıya atalım.
+
+628
+00:42:03,860 --> 00:42:05,940
+Şimdi yakasaklık aralarını buluyorduk biz.
+
+629
+00:42:08,380 --> 00:42:09,880
+Yani şöyle oldu bursa.
+
+630
+00:42:10,200 --> 00:42:11,200
+X eksi 2.
+
+631
+00:42:12,500 --> 00:42:13,960
+İlerden ne yapacak?
+
+632
+00:42:17,039 --> 00:42:17,980
+Tamam mı?
+
+633
+00:42:18,260 --> 00:42:18,920
+Küçüktür.
+
+634
+00:42:19,740 --> 00:42:20,579
+2 oldu.
+
+635
+00:42:22,460 --> 00:42:26,300
+Her iki tarafa ikileri ilave ederse 0.
+
+636
+00:42:28,300 --> 00:42:29,720
+Küçüktür x.
+
+637
+00:42:30,840 --> 00:42:32,360
+Küçüktür 4 aralığında.
+
+638
+00:42:32,360 --> 00:42:36,480
+Bu seri mutlak yakınsak oluyor.
+
+639
+00:42:36,599 --> 00:42:38,800
+Ama tabii sınırlarda da aslında incelemek lazım.
+
+640
+00:42:39,180 --> 00:42:41,140
+Şimdi ona geçmeden önce toplamı bulalım.
+
+641
+00:42:41,220 --> 00:42:43,000
+Bu geometrik serinin bir toplamı var.
+
+642
+00:42:43,920 --> 00:42:46,200
+Bu toplamının da gerçekten neyi vermesi lazım?
+
+643
+00:42:46,640 --> 00:42:49,860
+Bizim seriyi açtığımız fonksiyonu vermesi lazım.
+
+644
+00:42:50,680 --> 00:42:52,280
+İşlemek arası yapmaması lazım.
+
+645
+00:42:52,760 --> 00:42:54,079
+Şimdi toplamı bunun.
+
+646
+00:42:54,260 --> 00:42:56,059
+A dediğimiz değer 1 bölü 2.
+
+647
+00:42:56,340 --> 00:42:56,860
+Şu seride.
+
+648
+00:42:58,180 --> 00:42:59,440
+Ondan sonra 1 eksi R.
+
+649
+00:42:59,440 --> 00:43:29,420
+R dediğimiz değer.
+
+650
+00:43:29,440 --> 00:43:30,680
+sürekli olduğu aralıkta.
+
+651
+00:43:30,680 --> 00:43:31,180
+Sürekli olduğu aralıkta.
+
+652
+00:43:31,180 --> 00:43:34,180
+X eşitli.
+
+653
+00:43:34,180 --> 00:43:35,820
+İki noktası civarında.
+
+654
+00:43:35,820 --> 00:43:36,220
+Seriyi.
+
+655
+00:43:36,220 --> 00:43:37,620
+Yeterli serisini açtık.
+
+656
+00:43:37,840 --> 00:43:40,500
+Ve daha sonra bu Tyler serisinin toplamını bulduk.
+
+657
+00:43:40,500 --> 00:43:42,120
+Yine neye götürdüğümüzde?
+
+658
+00:43:42,360 --> 00:43:44,160
+Fix fonksiyonunu kendisine götürdük.
+
+659
+00:43:44,160 --> 00:43:45,160
+Şimdi bunun yakın.
+
+660
+00:43:45,160 --> 00:43:46,160
+Şimdi bunun yakın saklık aralıkta.
+
+661
+00:43:46,160 --> 00:43:47,160
+Yakın saklık aralığı da.
+
+662
+00:43:47,160 --> 00:43:51,039
+Şimdi yukarıda yaptığımız gibi şu.
+
+663
+00:43:51,039 --> 00:43:52,039
+bir şey.
+
+664
+00:43:52,039 --> 00:43:53,420
+Bir şey.
+
+665
+00:43:56,467 --> 00:44:04,567
+Aslında eksi sıfır değeri verdiğimizde burası eşitlik olması lazım.
+
+666
+00:44:09,715 --> 00:44:13,096
+4'te eşitlik olması lazım diye düşünüyorum. Bir bakalım.
+
+667
+00:44:15,976 --> 00:44:18,155
+X yerine 4 yazsak biz bu seride.
+
+668
+00:44:27,507 --> 00:44:28,627
+Şunu göfte kanımlı.
+
+669
+00:44:29,907 --> 00:44:32,067
+Göstte kanımlı olması lazım bu.
+
+670
+00:44:38,452 --> 00:44:42,172
+sınırlarda da şeyi incelemek lazım.
+
+671
+00:44:46,003 --> 00:44:46,884
+o kadar istiyordum.
+
+672
+00:44:47,183 --> 00:44:49,483
+Burada tabi soruda onu sormadığı için
+
+673
+00:44:49,483 --> 00:44:51,223
+yapmamış. Dört
+
+674
+00:44:51,223 --> 00:44:53,864
+koyduk diyelim buraya.
+
+675
+00:44:55,483 --> 00:44:56,423
+Buradan iki geldi.
+
+676
+00:44:58,743 --> 00:45:00,023
+İkinin ikiye bölümünden
+
+677
+00:45:00,023 --> 00:45:01,963
+bir geldi.
+
+678
+00:45:02,983 --> 00:45:03,804
+Buradan eksi bir
+
+679
+00:45:03,804 --> 00:45:05,443
+üzeri en eksi bir geldi.
+
+680
+00:45:07,344 --> 00:45:07,943
+Eksi eşittir
+
+681
+00:45:07,943 --> 00:45:08,583
+bir de de
+
+682
+00:45:08,583 --> 00:45:11,983
+r eşittir bir ikinde de
+
+683
+00:45:11,983 --> 00:45:13,643
+içinde raksak olduğu için
+
+684
+00:45:13,643 --> 00:45:15,943
+yapmamış olabilir. İncelediğimde.
+
+685
+00:45:16,003 --> 00:45:18,003
+Evet.
+
+686
+00:45:18,324 --> 00:45:19,643
+Bazen biz Taylor seri
+
+687
+00:45:19,643 --> 00:45:21,503
+Taylor polinomlarını
+
+688
+00:45:21,503 --> 00:45:24,043
+yaklaşık hesap yapmak
+
+689
+00:45:24,043 --> 00:45:25,844
+için de kullanabiliriz. Bu da
+
+690
+00:45:25,844 --> 00:45:28,083
+öyle bir soru. Yaklaşık
+
+691
+00:45:28,083 --> 00:45:29,183
+hesap yapmak için
+
+692
+00:45:29,183 --> 00:45:32,123
+Taylor serisini
+
+693
+00:45:32,123 --> 00:45:34,264
+kullanacağız. Şimdi 1.2'nin
+
+694
+00:45:34,264 --> 00:45:35,284
+işte 1 bölü
+
+695
+00:45:35,284 --> 00:45:37,683
+1 bölü 3. kuvvetinin
+
+696
+00:45:37,683 --> 00:45:39,923
+ikinci mertebe diyor. Yani ikinci
+
+697
+00:45:39,923 --> 00:45:42,103
+mertebeye kadar türevleri içerecek şekilde
+
+698
+00:45:42,103 --> 00:45:44,123
+demek bu. Taylor polinom
+
+699
+00:45:44,123 --> 00:45:45,623
+kullanarak yaklaşık
+
+700
+00:45:45,623 --> 00:45:47,623
+değerini bulunuyoruz. İkinci dereceden bir
+
+701
+00:45:47,623 --> 00:45:50,023
+Taylor polinomu yazacağız.
+
+702
+00:45:50,563 --> 00:45:52,223
+Ve burada bunun yaklaşık
+
+703
+00:45:52,223 --> 00:45:53,723
+değerini bulacağız. Şimdi
+
+704
+00:45:53,723 --> 00:45:55,703
+şu 1.2 olduğu için
+
+705
+00:45:55,703 --> 00:45:57,764
+yani hangi değere yakın
+
+706
+00:45:57,764 --> 00:45:59,844
+bu değer? 1'e yakın bir değer.
+
+707
+00:45:59,844 --> 00:46:01,844
+O zaman x eşittir bir noktasında
+
+708
+00:46:01,844 --> 00:46:03,703
+veya a eşittir bir noktasında
+
+709
+00:46:03,703 --> 00:46:05,643
+biz bir fonksiyon oluşturalım
+
+710
+00:46:05,643 --> 00:46:07,543
+ve bunu seriye açalım.
+
+711
+00:46:08,043 --> 00:46:09,163
+Taylor serisini açalım.
+
+712
+00:46:09,643 --> 00:46:11,364
+Şimdi şu bizim için x'i
+
+713
+00:46:11,364 --> 00:46:13,103
+verecek olursa fx eşittir.
+
+714
+00:46:13,563 --> 00:46:15,183
+İşte x'in 1 bölü 3. kuvvetinin
+
+715
+00:46:15,183 --> 00:46:16,543
+şeklinde bir fonksiyon oluşur.
+
+716
+00:46:16,663 --> 00:46:18,364
+Tamam mı? Şunu bir fonksiyonlaştırdık.
+
+717
+00:46:18,483 --> 00:46:19,344
+Seriye açacağız ya.
+
+718
+00:46:20,284 --> 00:46:21,543
+Taylor polinomunu bulacağız.
+
+719
+00:46:21,663 --> 00:46:22,663
+İkinci dereceden.
+
+720
+00:46:22,663 --> 00:46:25,583
+Dolayısıyla şu
+
+721
+00:46:25,583 --> 00:46:28,284
+1.2
+
+722
+00:46:28,284 --> 00:46:30,663
+işte 1'e yakın olduğu için
+
+723
+00:46:30,663 --> 00:46:32,243
+daha böyle tam sayısal işlemler
+
+724
+00:46:32,243 --> 00:46:34,603
+tam sayıda işlem yapalım diye
+
+725
+00:46:34,603 --> 00:46:36,623
+1 noktası civarında
+
+726
+00:46:36,623 --> 00:46:37,423
+seriye açıyoruz.
+
+727
+00:46:37,903 --> 00:46:38,623
+Bunun için de
+
+728
+00:46:38,623 --> 00:46:40,083
+türevini aldık.
+
+729
+00:46:41,603 --> 00:46:42,784
+Birinci türevini aldık.
+
+730
+00:46:44,603 --> 00:46:45,804
+İşte birinci türevini alırken
+
+731
+00:46:45,804 --> 00:46:46,824
+şöyle alabilirsiniz.
+
+732
+00:46:47,603 --> 00:46:48,603
+Şöyle düşünürsünüz.
+
+733
+00:46:48,764 --> 00:46:51,223
+x'in 1 bölü 3. kuvveti
+
+734
+00:46:51,223 --> 00:46:52,643
+fx dediğimiz fonksiyonu.
+
+735
+00:46:52,663 --> 00:46:55,563
+şunun kirevini
+
+736
+00:46:55,563 --> 00:46:56,403
+alıyoruz.
+
+737
+00:46:56,403 --> 00:46:57,403
+şunun kirevini alıyoruz.
+
+738
+00:47:00,788 --> 00:47:02,188
+1 bölü 3'ü yazdım.
+
+739
+00:47:04,347 --> 00:47:06,947
+Sonra üzerinden 1 çıkarttım.
+
+740
+00:47:08,288 --> 00:47:09,347
+x üzeri
+
+741
+00:47:09,347 --> 00:47:10,947
+eksi 2 bölü 3
+
+742
+00:47:10,947 --> 00:47:11,608
+oldu burası.
+
+743
+00:47:13,927 --> 00:47:15,108
+Eksi 2 bölü 3
+
+744
+00:47:15,108 --> 00:47:16,748
+olduğu için şöyle
+
+745
+00:47:16,748 --> 00:47:18,327
+düzenlediğimizde sanki
+
+746
+00:47:18,327 --> 00:47:21,048
+karenin 1 bölü 3. kuvveti gibi
+
+747
+00:47:21,048 --> 00:47:22,887
+x karenin 1 bölü 3. kuvveti gibi
+
+748
+00:47:22,887 --> 00:47:24,447
+ama nerede bu? Paydada.
+
+749
+00:47:24,907 --> 00:47:26,228
+Şimdi bir de 1 bölü 3'ümüz var.
+
+750
+00:47:26,688 --> 00:47:28,927
+Şöyle şöyle bunu düzenlenmiş halde bunu verdi.
+
+751
+00:47:29,568 --> 00:47:30,768
+Sonra tekrar işte
+
+752
+00:47:30,768 --> 00:47:32,387
+ikinci mertebe türevini aldık.
+
+753
+00:47:32,807 --> 00:47:35,108
+Buradan eksi 2 bölü 9 geldi.
+
+754
+00:47:35,548 --> 00:47:37,048
+Şimdi burada bak düzenlemeden gitti.
+
+755
+00:47:37,487 --> 00:47:38,907
+Sonra buranın üzerinden
+
+756
+00:47:38,907 --> 00:47:40,088
+eksi 1 çıkarttık.
+
+757
+00:47:40,887 --> 00:47:41,887
+Eksi 3
+
+758
+00:47:41,887 --> 00:47:45,208
+eksi 5 bölü 3 geldi
+
+759
+00:47:45,208 --> 00:47:46,307
+buradan da üzerine.
+
+760
+00:47:46,788 --> 00:47:48,628
+İşte bunu da öyle düzenleyebilirdik ama
+
+761
+00:47:48,628 --> 00:47:50,447
+hiç de gerek yok düzenlemeye.
+
+762
+00:47:51,307 --> 00:47:53,007
+Şimdi ikinci mertebeden olduğu için
+
+763
+00:47:53,007 --> 00:47:54,088
+daha devam etmedim.
+
+764
+00:47:54,768 --> 00:47:56,768
+Birinci türevini aldım. İkinci türevini aldım.
+
+765
+00:47:57,307 --> 00:47:58,807
+İkinci dereceden olan
+
+766
+00:47:58,807 --> 00:48:00,048
+Taylor
+
+767
+00:48:00,048 --> 00:48:02,467
+polinomini oluşturacağım.
+
+768
+00:48:03,148 --> 00:48:05,088
+Şimdi fonksiyonun 1'deki değeri nedir?
+
+769
+00:48:06,088 --> 00:48:07,407
+Şu fonksiyonum artık bu.
+
+770
+00:48:07,487 --> 00:48:07,887
+1'dir.
+
+771
+00:48:09,427 --> 00:48:11,007
+Sonra birinci mertebeden türevini
+
+772
+00:48:11,007 --> 00:48:12,387
+x gördüğüm yere 1 yazdım.
+
+773
+00:48:12,688 --> 00:48:13,487
+Neyi elde ettim?
+
+774
+00:48:13,487 --> 00:48:14,648
+1 bölü 3 geldi.
+
+775
+00:48:15,168 --> 00:48:16,867
+Sonra ikinci mertebeden türevde
+
+776
+00:48:16,867 --> 00:48:17,887
+x yerine 1 yazdım.
+
+777
+00:48:17,947 --> 00:48:19,748
+Hani 1 ile çalışmak da rahat olduğu için
+
+778
+00:48:19,748 --> 00:48:23,528
+gidip 1'e yuvarladım bunu.
+
+779
+00:48:23,947 --> 00:48:25,048
+1 civarında açtım.
+
+780
+00:48:26,088 --> 00:48:27,648
+Sonra buradan da
+
+781
+00:48:27,648 --> 00:48:29,048
+eksi 2 bölü 9 geldi.
+
+782
+00:48:31,548 --> 00:48:33,648
+Şimdi geldik fx fonksiyonuna.
+
+783
+00:48:35,268 --> 00:48:36,708
+Bu da yaklaşık olarak
+
+784
+00:48:36,708 --> 00:48:37,788
+işte dedik.
+
+785
+00:48:38,088 --> 00:48:38,887
+Çünkü hani
+
+786
+00:48:38,887 --> 00:48:40,407
+temsili yapıyor bunu.
+
+787
+00:48:41,307 --> 00:48:42,588
+Temsili olarak gösteriyor.
+
+788
+00:48:42,588 --> 00:48:45,967
+Yaklaşık değer buluyoruz.
+
+789
+00:48:46,068 --> 00:48:48,068
+Sonuçta biz tam değerini bulmuyoruz.
+
+790
+00:48:48,128 --> 00:48:49,228
+Çünkü daha burada da
+
+791
+00:48:49,228 --> 00:48:50,128
+artı artı giden
+
+792
+00:48:50,128 --> 00:48:51,827
+bir takım terimler var.
+
+793
+00:48:51,907 --> 00:48:53,208
+Dolayısıyla onları atmak zorunda
+
+794
+00:48:53,208 --> 00:48:55,668
+zaten belirli bir hata yapmış oluyoruz.
+
+795
+00:48:55,668 --> 00:48:59,407
+Şimdi taylor polinomunda yerine yazıyoruz.
+
+796
+00:49:01,148 --> 00:49:02,327
+Neydi burası?
+
+797
+00:49:02,507 --> 00:49:04,007
+Şu f'in
+
+798
+00:49:04,007 --> 00:49:06,148
+birdeki değerine karşılık geliyor.
+
+799
+00:49:06,148 --> 00:49:07,628
+bir şey.
+
+800
+00:49:07,628 --> 00:49:09,628
+Bir şey.
+
+801
+00:49:12,052 --> 00:49:31,332
+Şu nereye karşılık geliyor? F üstü 1'e karşılık geliyor. 1 bölü 3. Dolayısıyla x eşittir 1'de seriyi açtığımız için x eksi 1 geldi. Sonra şu eksi 2 bölü 9 nereye karşılık geliyor?
+
+802
+00:49:31,332 --> 00:49:44,992
+2. mertebe Türev'in 1'deki değerine karşılık geliyor. Bir de oradan 2'imiz vardı. Bunu genelde unutuyoruz.
+
+803
+00:49:45,912 --> 00:49:53,612
+İşte bu. Bunu biz istersek polinom şeklinde. İşte şunları açıp bunu yerine şuradaki ikiler birbirini zaten götürüyor.
+
+804
+00:49:53,612 --> 00:49:59,711
+Bunu düzenleyebiliriz. Ama zaten sayısal değeri soruluyor ya bize. Düzenlemeye de gerek yok.
+
+805
+00:50:00,192 --> 00:50:11,872
+X gördüğümüz yere şu gördüğümüz ikinci mertebeye kadar açtığımız taylor serisinde x gördüğümüz yere 1.2 yazarak elde ettiğimiz değer bize neyi verecektir?
+
+806
+00:50:12,352 --> 00:50:18,392
+Bu soruda verilen 1.2'nin 1 bölü 3. kuvvetinin yaklaşık değerini verecektir.
+
+807
+00:50:18,392 --> 00:50:22,992
+Yani taylor polinomları da yaklaşık değer bulma işlemleri de kullanılabilir.
+
+808
+00:50:23,612 --> 00:50:29,852
+Şimdi yazıyoruz x gördüğümüz yere ne yazdık? 1.2 yazdık 0.2 geldi.
+
+809
+00:50:30,172 --> 00:50:36,092
+Burada x'imiz vardı. Onun yerine 1.2 yazdık 1'e çıkarttık 0.2'nin karesi geldi.
+
+810
+00:50:37,771 --> 00:50:39,332
+2 bölü 10 yazsak.
+
+811
+00:50:40,472 --> 00:50:43,532
+Hesaplarası nasıl hesaplarız diye düşündüğüm bir an.
+
+812
+00:50:44,992 --> 00:50:47,132
+Sonuçta sizlerimiz hesaplarız olacak.
+
+813
+00:50:47,132 --> 00:50:54,251
+Buradan da 4 bölü 100 gelecek.
+
+814
+00:50:55,852 --> 00:51:00,692
+İşte gerekli sadeleştirmeleri yaptığımızda 1 bölü 25 gelecek yani.
+
+815
+00:51:00,692 --> 00:51:01,692
+2 bölü 100 gelecek.
+
+816
+00:51:01,692 --> 00:51:02,692
+3 bölü 100 gelecek.
+
+817
+00:51:02,692 --> 00:51:04,692
+4 bölü 100 gelecek.
+
+818
+00:51:04,692 --> 00:51:11,692
+5 bölü 100 gelecek.
+
+819
+00:51:11,692 --> 00:51:15,692
+6 bölü 100 gelecek.
+
+820
+00:51:15,692 --> 00:51:26,692
+7 bölü 100 gelecek.
+
+821
+00:51:09,588 --> 00:51:26,128
+2 bölü 3. Bundan da yaptığımızda, işte onu da böldüğümüzde 1.062 diye bir değer geliyormuş. Zaten 1 olsaydı, 1 eşit olacaktı. Şu 0.2 kısımdan da 0.62 diye bir yer gelmiş oldu.
+
+822
+00:51:30,963 --> 00:51:50,804
+İsterseniz ara verelim biraz. Sık kullanılan Matematik serilerine geçmeden önce. Şunlar hep böyle soruların içinde ara işlem yapmayı gerektirecek seriler olduğu için. Aradan sonra devam edelim şu kısmadan. Bugün zaten sadece bu serilerde bir şey yapacağım.
+
+823
+00:51:54,516 --> 00:51:57,956
+İsterseniz ara verelim mi, yoksa devam edeyim mi? Ne diyorsunuz?
+
+824
+00:51:58,076 --> 00:51:58,516
+Ara verelim.
+
+825
+01:01:50,739 --> 01:01:52,739
+Şimdi
+
+826
+01:01:58,547 --> 01:02:06,567
+Evet, kuvvet serisinden faydalanarak, Taylor, Maclaurin serisini yazabileceğimizi söyledik. Elimizde formüllerimiz var.
+
+827
+01:02:06,567 --> 01:02:19,367
+Taylor serisinin formülü, eğer x'ı şıtır a noktası civarında Taylor serisini açın diyorsa, dediğim gibi, yaptığımız gibi,
+
+828
+01:02:25,172 --> 01:02:36,072
+Direk olarak formülde yerine yazmak suretiyle ihtiyaç olanları şu şekilde hesaplanıyor.
+
+829
+01:02:36,411 --> 01:02:46,172
+Herhangi bir fx fonksiyonu, tanımlı olduğu, tanım aralığı içerisindeki herhangi bir x eşitli a noktasında,
+
+830
+01:02:46,172 --> 01:02:51,731
+eninci mertebeye kadar türevleri mevcut ise, Taylor seri açılımı bu şekilde yapılıyor.
+
+831
+01:02:51,731 --> 01:02:58,112
+Eğer eninci mertebeye kadar yazılıyorsa, buna da Taylor polinomu adı veriliyor.
+
+832
+01:02:58,271 --> 01:03:02,731
+Eğer x eşitli a noktası civarında biz bu açılımı yapıyorsak da,
+
+833
+01:03:03,331 --> 01:03:07,891
+Taylor'un özel durumu olan Maclaurin serisini elde etmiş oluyoruz dedik.
+
+834
+01:03:07,891 --> 01:03:12,512
+Aynı zamanda, ne yapıyorduk?
+
+835
+01:03:12,811 --> 01:03:16,731
+Yaklaşık hesaplamalarda da, Taylor seri açılımı kullanılabilir.
+
+836
+01:03:17,132 --> 01:03:18,972
+Yaptığımız son örnekte olduğu gibi.
+
+837
+01:03:34,547 --> 01:03:37,007
+Şimdi sık kullanılan maklore serilere.
+
+838
+01:03:37,447 --> 01:03:41,327
+Bunlardan bir tanesini dün kullanmıştık.
+
+839
+01:03:41,327 --> 01:03:51,507
+Evet bu seri en eşitliği sıfırdan sonuçta kadar x üzeren 1 artı x artı x kare artı şeklinde ilgilen bu seri
+
+840
+01:03:51,507 --> 01:03:58,347
+eksi bir küçüktür x küçüktür bir aralığında yakın sık olan bir seridir.
+
+841
+01:03:58,347 --> 01:04:07,827
+Ve buradan işte dübde yaptığımız gibi integral alarak başka seriler veya türev alarak başka seriler türetmemiz mümkündür.
+
+842
+01:04:08,767 --> 01:04:15,267
+Veya işte herhangi bir sayıda çarpıp böyle aralığında başka seriler türetmemiz mümkündür.
+
+843
+01:04:15,407 --> 01:04:22,747
+Mesela biz x yerine x x yazarsak eğer aşağıdaki seriyi elde ediyoruz gibi.
+
+844
+01:04:22,747 --> 01:04:25,727
+Şimdi x gördüğümüz yere x x yazsak buraya.
+
+845
+01:04:25,727 --> 01:04:31,367
+Burada şunu x gördüğümüz yere x x yazdığımızda burası 1 artı x oldu.
+
+846
+01:04:32,627 --> 01:04:34,587
+Şimdi x gördüğümüz yere x x yazdık.
+
+847
+01:04:34,707 --> 01:04:42,087
+Yani o zaman burası x x'in n'inci kuvveti olacak.
+
+848
+01:04:42,087 --> 01:04:46,227
+n'inci kuvveti olacak.
+
+849
+01:04:46,387 --> 01:04:52,047
+n'inci kuvvetinde biz eksi birin n'inci bunu da eksi birle x'in çarpımı gibi düşünürsek.
+
+850
+01:04:52,187 --> 01:04:58,147
+Eksi birin n'inci kuvveti çarpı x ve n'inci kuvveti şeklinde yazdığımızda da bu seriyi elde etmiş olacağız.
+
+851
+01:04:58,307 --> 01:05:04,927
+Yani bir nolu da x gördüğümüz yere x x yazmak sürede 2 seriyi elde etmiş.
+
+852
+01:05:05,167 --> 01:05:06,747
+İkinci seriyi elde etmiş olacağız.
+
+853
+01:05:06,747 --> 01:05:09,307
+Evet x gördüğümüz yere x x yazdık.
+
+854
+01:05:09,387 --> 01:05:10,507
+x x oldu burası.
+
+855
+01:05:10,647 --> 01:05:12,367
+x gördüğümüz yere x x yazdık.
+
+856
+01:05:12,427 --> 01:05:13,227
+x kare geldi.
+
+857
+01:05:13,667 --> 01:05:16,447
+Şimdi bir sonraki terime x x gibi olacak.
+
+858
+01:05:16,587 --> 01:05:17,787
+Ve böyle devam edecek.
+
+859
+01:05:18,207 --> 01:05:19,127
+Yine aynı şekilde.
+
+860
+01:05:20,387 --> 01:05:24,807
+Sadece x ile x x yazarak elini türettiğimiz bir seri olduğu için.
+
+861
+01:05:25,207 --> 01:05:27,747
+Bunda yine yakın saklık aralığı aynıdır.
+
+862
+01:05:28,567 --> 01:05:31,887
+Yani bu bundan direkt olarak türeyebilir.
+
+863
+01:05:32,127 --> 01:05:33,327
+Bakalım şimdi sorun bakayım.
+
+864
+01:05:33,327 --> 01:05:36,207
+Şimdi e üzeri x'i yukarıda yapmıştık.
+
+865
+01:05:36,407 --> 01:05:36,947
+Ne yapmıştık?
+
+866
+01:05:37,027 --> 01:05:38,727
+Taylor serisini açmıştık.
+
+867
+01:05:38,787 --> 01:05:40,707
+x eşitleri sıfır noktası civarında.
+
+868
+01:05:41,487 --> 01:05:44,687
+Şimdi bu da yukarıda kullanılan maklum serisi diyor ya.
+
+869
+01:05:44,947 --> 01:05:47,347
+x eşitleri sıfır noktası civarında açtığımız için.
+
+870
+01:05:47,867 --> 01:05:49,707
+Bu bize bir maklum serisini verdi.
+
+871
+01:05:50,647 --> 01:05:52,147
+Ve bunu da genelleştirdiğimiz zaman.
+
+872
+01:05:52,287 --> 01:05:55,447
+x üzeri n bölü n faktörü yer şeklinde yazacağımızı söyledik.
+
+873
+01:05:56,587 --> 01:05:59,667
+Bir de sınavdan önce bu serileri böyle şey yapmamız lazım.
+
+874
+01:05:59,667 --> 01:06:01,347
+Bunu yaptık yukarıda.
+
+875
+01:06:01,587 --> 01:06:04,047
+1 artı x artı x kare bölü 2 faktörü yer.
+
+876
+01:06:04,127 --> 01:06:05,827
+Artı x kare bölü 2 faktörü yer.
+
+877
+01:06:06,227 --> 01:06:07,667
+Ve bunun tanım aralığı da.
+
+878
+01:06:08,667 --> 01:06:13,767
+Eksisansıysan artı sonuçta kadar bütün aralıklarda yakın sayan bir seri bu.
+
+879
+01:06:14,407 --> 01:06:15,367
+Yine aynı şekilde.
+
+880
+01:06:15,367 --> 01:06:18,567
+Sinus x'i yukarıda yaptık.
+
+881
+01:06:18,747 --> 01:06:20,467
+Ve bunu işte sadece.
+
+882
+01:06:22,587 --> 01:06:24,227
+Kosinus x'i yaptık galiba.
+
+883
+01:06:24,507 --> 01:06:25,067
+Yukarıda.
+
+884
+01:06:25,707 --> 01:06:26,967
+Kosinus x'i yaptık evet.
+
+885
+01:06:27,507 --> 01:06:29,947
+İşte 1 eksi x kare bölü 2 faktörü.
+
+886
+01:06:30,067 --> 01:06:32,547
+Artı x üzeri 4 bölü 4 faktörü yer dedik.
+
+887
+01:06:33,467 --> 01:06:38,167
+Artı işte eksi x üzeri 6 bölü 6 faktörü yer şeklinde gidecek.
+
+888
+01:06:38,167 --> 01:06:45,167
+İşte bunu da böyle genelleştirilsek içindeki ifadeyi de yazabileceğimizi maklalın serisinde göstermiştik.
+
+889
+01:06:46,047 --> 01:06:47,587
+Şimdi mesela bunun türevini alsak.
+
+890
+01:06:47,667 --> 01:06:49,107
+Bunu yaptık ya kosinus x'i.
+
+891
+01:06:50,067 --> 01:06:51,887
+Kosinus x'in türevinden ne geldi?
+
+892
+01:06:52,087 --> 01:06:53,387
+Eksi sinus x geldi.
+
+893
+01:06:55,967 --> 01:06:58,167
+Bunu da türevinden oluşturabiliriz.
+
+894
+01:06:58,267 --> 01:06:59,887
+Çünkü türevlerinde eksilikler var.
+
+895
+01:07:00,307 --> 01:07:01,947
+İşte bazı sıkıntılar olmasın diye.
+
+896
+01:07:01,947 --> 01:07:03,327
+Ben yukarıdan gideyim.
+
+897
+01:07:03,447 --> 01:07:10,747
+Eksiyle tabii ki bir daha bir daha yazıp çarparız da sıkıntı olmaz ama yazması zor oluyor düşüncesine.
+
+898
+01:07:10,867 --> 01:07:13,167
+Şimdi sinus x'in açılımı da bak.
+
+899
+01:07:13,687 --> 01:07:14,787
+Burada 1 burada.
+
+900
+01:07:15,027 --> 01:07:20,827
+Yani sanki şu e üzeri x serisini 2'ye parçalamışız gibi düşünebiliriz.
+
+901
+01:07:20,887 --> 01:07:24,607
+Eksi artı eksi artı olacak şekilde 2'ye parçalamışız gibi düşünebiliriz.
+
+902
+01:07:25,187 --> 01:07:30,107
+Yani e üzeri eksi x serisini 2'ye parçalamışız gibi düşünebiliriz.
+
+903
+01:07:30,107 --> 01:07:30,707
+Bak.
+
+904
+01:07:31,923 --> 01:07:38,943
+Sinusik serisi x eksi x'ı bölü 3 faktörel, artı x'ı bölü 5 faktörel, gradyan diye tek kuvvetlerde gidiyor.
+
+905
+01:07:39,244 --> 01:07:47,143
+Kosünus serisi de aynı şekilde 1, yani çiftlerde artı eksi, artı eksi şeklinde gidiyor.
+
+906
+01:07:47,403 --> 01:07:51,063
+Ve bunların tanım aralıkları da bütün real sayıları ekseni.
+
+907
+01:07:52,083 --> 01:07:54,083
+Şimdi mesela sinusiksin türevini alsak.
+
+908
+01:07:55,284 --> 01:07:56,463
+Buradan türev aldık.
+
+909
+01:07:57,603 --> 01:07:58,503
+Türev alayım.
+
+910
+01:07:58,503 --> 01:08:01,744
+Türev kosünusik serisini verecek ya, şuradan türev alayım ben.
+
+911
+01:08:01,923 --> 01:08:06,864
+Ne gelecek buradan eksi 1 üzeri n dediğimiz şey zaten sabit bir değer.
+
+912
+01:08:08,643 --> 01:08:10,443
+Türev yazıyorum farkındayım ama.
+
+913
+01:08:11,103 --> 01:08:11,804
+Yatacak bir şey.
+
+914
+01:08:12,184 --> 01:08:14,643
+Şimdi buradan türev aldım.
+
+915
+01:08:14,724 --> 01:08:16,844
+2 n artı 1 geldim.
+
+916
+01:08:22,131 --> 01:08:39,211
+2n artı 1 geldi. Sonra, buradan bir azalttım, x üzeri 2n geldi. Aşağıda da 2n faktörü yeri ve şöyle yazsam, 2n artı 1.
+
+917
+01:08:43,380 --> 01:08:47,140
+çarpın, iki tane faktöriyel şeklinde de yazabilirim.
+
+918
+01:08:54,195 --> 01:09:17,956
+dolayısıyla iki enler birbirini götürecek. Geride kalan ifade, bakın Taylor'ı, şeyi, kosünüs, genel terimini veriyor. Eksi 1 üzeri en, x üzeri 2 en, 2 en faktör yer. Gerçekten şuradan türev alsam, buradan 1 gelir. Bunun türevinden, eksi 3, x kare bölü 3 faktör yer gelecek. 3'ler götürecek. 2 faktör yeri kalacak.
+
+919
+01:09:17,956 --> 01:09:44,815
+yine Batıra buradan türev aldım. 5, x üzeri 4, 4'ü 5 faktör yeri vardı. 5'le, 5 çarpı 4 faktör yerin, 5'leri götürülse, buradan da 4 faktör yer gelecek. Yani bu şekilde, dün de işte bunu söylemiştik. Türev alınabilir mi? Türev alınabilir mi? Türev alınabilir mi? Değişik değişik seriler, aslının ilgili bağlı olarak türevilebilir. Bunları, hatta bir örnekte de şunu yapmıştık.
+
+920
+01:09:44,815 --> 01:09:47,815
+değil mi?
+
+921
+01:09:47,815 --> 01:09:55,935
+Şimdi mesela, şimdi bunu nereden elde edebiliriz? Şu yukarıda şey vardı.
+
+922
+01:10:00,000 --> 01:10:07,119
+Bu, bunu ben integralini alırsam, buradan n, n, n, n, x gelir. Bunun integralinden ne gelecek?
+
+923
+01:10:07,859 --> 01:10:09,399
+Eksi bir üzeri n gelecek.
+
+924
+01:10:10,199 --> 01:10:12,659
+Aşağıya, bir şey gelecek mi bilemedim ama.
+
+925
+01:10:12,659 --> 01:10:16,199
+Bu tarafında integralini alırsak, eksi bir üzeri n gelecek.
+
+926
+01:10:16,600 --> 01:10:21,119
+x üzeri n artı bir bölüm, n artı bir gelecek.
+
+927
+01:10:34,387 --> 01:10:36,488
+biliyor da ondan mı böyle sanıyor bilemedim.
+
+928
+01:10:37,287 --> 01:10:38,547
+X üzeri n artı
+
+929
+01:10:38,547 --> 01:10:40,188
+bir göre n artı bir göre. Şimdi bakın
+
+930
+01:10:40,188 --> 01:10:40,827
+elen
+
+931
+01:10:40,827 --> 01:10:44,327
+bir artı x'e bakıyorum.
+
+932
+01:10:46,148 --> 01:10:46,707
+Yine eşitleri
+
+933
+01:10:46,707 --> 01:10:48,007
+birden sonuçta kadar.
+
+934
+01:10:48,688 --> 01:10:50,207
+Şimdi bu orası sıfırdan başlıyordu.
+
+935
+01:10:50,467 --> 01:10:51,627
+İşte onu ötelediğim zaman
+
+936
+01:10:51,627 --> 01:10:55,148
+o n artı birler
+
+937
+01:10:55,148 --> 01:10:57,028
+n oldu. Aynı ifadeyi
+
+938
+01:10:57,028 --> 01:10:58,327
+tekrar elde etmiş olduk.
+
+939
+01:10:59,547 --> 01:11:00,667
+Yine artı tanjant x
+
+940
+01:11:00,667 --> 01:11:02,867
+dün bunu da
+
+941
+01:11:02,867 --> 01:11:04,207
+yapmıştık türeterek.
+
+942
+01:11:04,387 --> 01:11:08,047
+Şimdi burada
+
+943
+01:11:08,047 --> 01:11:09,988
+mesela elen yerine
+
+944
+01:11:09,988 --> 01:11:11,547
+eksi bir yazdığımızda
+
+945
+01:11:11,547 --> 01:11:14,247
+elen eksi bir yazdığımızda
+
+946
+01:11:14,247 --> 01:11:15,587
+elen sıfır olur.
+
+947
+01:11:16,367 --> 01:11:17,408
+Bu tanımsız oldu.
+
+948
+01:11:18,627 --> 01:11:20,047
+Bir yazdığımızda iki burada
+
+949
+01:11:20,047 --> 01:11:21,287
+eşitlik var.
+
+950
+01:11:22,068 --> 01:11:24,087
+Burada artı tanjant
+
+951
+01:11:24,087 --> 01:11:25,448
+eksi birin değeri
+
+952
+01:11:25,448 --> 01:11:28,228
+pi bölü dörttür. Yani sayısal bir değeri var.
+
+953
+01:11:29,867 --> 01:11:32,127
+Yine tanjantı bir olan açı
+
+954
+01:11:32,127 --> 01:11:33,648
+yine pi bölü dörttür. Bunlar
+
+955
+01:11:33,648 --> 01:11:35,307
+tadına eşitlik söz konusudur.
+
+956
+01:11:36,807 --> 01:11:37,587
+Yani tanımsız
+
+957
+01:11:37,587 --> 01:11:38,347
+yapmıyor size.
+
+958
+01:11:39,507 --> 01:11:41,448
+Tamam mı? Bu yedi tane verilen
+
+959
+01:11:41,448 --> 01:11:44,927
+seriden
+
+960
+01:11:44,927 --> 01:11:49,188
+kendi işlerine birbirini de türetebilirsiniz.
+
+961
+01:11:49,188 --> 01:11:49,688
+ancak
+
+962
+01:11:49,688 --> 01:11:54,347
+böyle bir bilmekte bir köşeye yazmakta fayda var.
+
+963
+01:11:54,347 --> 01:11:54,787
+Buradan
+
+964
+01:11:54,787 --> 01:11:57,007
+bazı seriler üreteceğiz.
+
+965
+01:11:57,627 --> 01:11:58,587
+Nasıl üreteceğiz?
+
+966
+01:11:58,728 --> 01:11:59,087
+Bakalım.
+
+967
+01:12:00,307 --> 01:12:00,988
+Şimdi burada ne var?
+
+968
+01:12:01,087 --> 01:12:02,967
+E üzeri eksi x kare bölü
+
+969
+01:12:02,967 --> 01:12:03,807
+3 var.
+
+970
+01:12:04,247 --> 01:12:05,367
+Şimdi biz neyi biliyoruz?
+
+971
+01:12:05,568 --> 01:12:06,728
+E üzeri x'i biliyoruz.
+
+972
+01:12:06,787 --> 01:12:07,207
+Tamam mı?
+
+973
+01:12:07,207 --> 01:12:09,568
+Yani uzun uzun böyle makronetresini açmak.
+
+974
+01:12:09,867 --> 01:12:10,367
+İşte üstüncü
+
+975
+01:12:10,367 --> 01:12:11,867
+birinci türevinden hesapla
+
+976
+01:12:11,867 --> 01:12:12,667
+birinci türevini
+
+977
+01:12:12,667 --> 01:12:13,867
+sıfırdaki değerini hesapla
+
+978
+01:12:13,867 --> 01:12:15,488
+sonra git ikinci türevini
+
+979
+01:12:15,488 --> 01:12:16,547
+hesapla ikinci türevini
+
+980
+01:12:16,547 --> 01:12:17,827
+sıfırdaki değerini hesapla
+
+981
+01:12:17,827 --> 01:12:19,547
+işte üçüncü dördüncü türevlerini
+
+982
+01:12:19,547 --> 01:12:21,287
+hesapladan ziyade
+
+983
+01:12:21,287 --> 01:12:23,327
+daha seri bir şekilde
+
+984
+01:12:23,327 --> 01:12:24,347
+daha hızlı bir şekilde
+
+985
+01:12:24,347 --> 01:12:25,988
+yapabilmek için
+
+986
+01:12:25,988 --> 01:12:30,667
+bildiğimiz serilerden
+
+987
+01:12:30,667 --> 01:12:34,148
+sorulan seriyi elde etmeye çalışacağız.
+
+988
+01:12:35,408 --> 01:12:37,188
+Şimdi e üzeri x'in seri açılımı
+
+989
+01:12:37,188 --> 01:12:39,408
+n eşeklere sıfırdan sonsuza kadar
+
+990
+01:12:39,408 --> 01:12:42,688
+x üzeri n bölü n faktörü
+
+991
+01:12:42,688 --> 01:12:44,908
+yani bunu da açık biçimde yazarsak
+
+992
+01:12:44,908 --> 01:12:48,207
+bir artı x artı
+
+993
+01:12:48,207 --> 01:12:50,488
+x kare bölü iki faktörü
+
+994
+01:12:50,488 --> 01:12:52,688
+artı nokta nokta şeklinde bir seri.
+
+995
+01:12:53,188 --> 01:12:54,228
+Şimdi burada
+
+996
+01:12:54,228 --> 01:12:56,408
+x gördüğümüz yerde ne var?
+
+997
+01:12:57,387 --> 01:12:59,488
+Eksi x kare bölü üç var.
+
+998
+01:12:59,608 --> 01:13:00,768
+O zaman biz bu seride
+
+999
+01:13:00,768 --> 01:13:02,528
+x gördüğümüz yere
+
+1000
+01:13:02,528 --> 01:13:03,387
+ne yazalım?
+
+1001
+01:13:03,847 --> 01:13:05,747
+Eksi x kare bölü üç yazalım.
+
+1002
+01:13:06,127 --> 01:13:06,868
+Yazıyoruz şimdi.
+
+1003
+01:13:07,387 --> 01:13:09,127
+N eşekleri sıfırdan sonsuza kadar
+
+1004
+01:13:09,127 --> 01:13:10,007
+x'i gördüm.
+
+1005
+01:13:10,467 --> 01:13:11,007
+Ne yazacağım?
+
+1006
+01:13:11,228 --> 01:13:12,908
+Eksi x kare bölü üçün
+
+1007
+01:13:12,908 --> 01:13:14,327
+n. kuvveti gelecek.
+
+1008
+01:13:14,948 --> 01:13:15,327
+Bir de
+
+1009
+01:13:15,327 --> 01:13:17,507
+n faktörü yer yani
+
+1010
+01:13:17,507 --> 01:13:18,707
+onu da bir bölü
+
+1011
+01:13:18,707 --> 01:13:21,528
+n faktörü yer yazacaktık.
+
+1012
+01:13:21,648 --> 01:13:23,507
+İşte onu da bir bölü n faktörü yer şeklinde
+
+1013
+01:13:23,507 --> 01:13:24,667
+yanına yazdık.
+
+1014
+01:13:24,768 --> 01:13:25,127
+Tamam mı?
+
+1015
+01:13:25,608 --> 01:13:26,268
+Şimdi bunu
+
+1016
+01:13:26,268 --> 01:13:27,627
+açalım.
+
+1017
+01:13:28,967 --> 01:13:30,087
+Şimdi bunu aslında biz
+
+1018
+01:13:30,087 --> 01:13:31,688
+şöyle yazabiliriz.
+
+1019
+01:13:31,768 --> 01:13:32,807
+Eksi bir çarpı
+
+1020
+01:13:32,807 --> 01:13:34,988
+x'in karesi
+
+1021
+01:13:34,988 --> 01:13:36,728
+eksi birin n'inci kuvveti çarpı
+
+1022
+01:13:36,728 --> 01:13:37,948
+x karenin n'inci kuvveti
+
+1023
+01:13:37,948 --> 01:13:38,408
+şeklinde
+
+1024
+01:13:38,408 --> 01:13:40,407
+yazabiliriz.
+
+1025
+01:13:40,488 --> 01:13:42,247
+Yani eksi birin n'inci kuvveti
+
+1026
+01:13:42,247 --> 01:13:43,768
+x üzeri iken
+
+1027
+01:13:43,768 --> 01:13:44,387
+bölü
+
+1028
+01:13:44,387 --> 01:13:46,247
+buradan üçün n'inci kuvveti
+
+1029
+01:13:46,247 --> 01:13:47,648
+bölü n faktörü yer şeklinde
+
+1030
+01:13:47,648 --> 01:13:49,028
+düzenledik.
+
+1031
+01:13:50,448 --> 01:13:51,268
+Tamam mı?
+
+1032
+01:13:51,787 --> 01:13:53,728
+Buradan da gidebiliriz.
+
+1033
+01:13:53,807 --> 01:13:55,007
+x oldu.
+
+1034
+01:13:55,528 --> 01:13:56,528
+x gördüğümüz yere
+
+1035
+01:13:56,528 --> 01:13:58,507
+eksi x kare bölü üç yazdık.
+
+1036
+01:13:59,068 --> 01:13:59,707
+Şu geldi.
+
+1037
+01:14:00,327 --> 01:14:01,608
+Sonra geldik şu terinde
+
+1038
+01:14:01,608 --> 01:14:04,807
+eksi x kare bölü üç yazdık.
+
+1039
+01:14:04,887 --> 01:14:06,127
+x üzeri dört bölü
+
+1040
+01:14:06,127 --> 01:14:06,948
+kaç geldi?
+
+1041
+01:14:07,528 --> 01:14:08,287
+Dokuz geldi.
+
+1042
+01:14:08,287 --> 01:14:12,547
+işte üçün karesi
+
+1043
+01:14:12,547 --> 01:14:13,787
+bölü dokuz geldi.
+
+1044
+01:14:14,868 --> 01:14:16,228
+Bu biliyorsunuz her
+
+1045
+01:14:16,228 --> 01:14:18,988
+x eleman
+
+1046
+01:14:18,988 --> 01:14:19,667
+v için
+
+1047
+01:14:21,716 --> 01:14:38,695
+Yani bütün real sayılar ekseni de yakınsak olan bir seriydi. Dolayısıyla biz türettiğimiz x yerine eksi x kareleri 3 yazarak türettiğimiz seride yine aynı şekilde her x elemanı re için yakınsak olan bir seriyi elde etmiş olduk.
+
+1048
+01:14:38,695 --> 01:14:42,076
+Ya da ne yapacaktık? İşte alacaktık şu seriyi.
+
+1049
+01:14:43,636 --> 01:14:46,876
+x gördüğümüz yere 0 yazdık. Ne gelecek o zaman?
+
+1050
+01:14:46,996 --> 01:14:49,856
+E üzeri 0 gelecek. E üzeri 0'ın değeri işte 1'dir.
+
+1051
+01:14:50,336 --> 01:14:52,036
+Sonra geleceğiz, bunun türevini alacağız.
+
+1052
+01:14:53,316 --> 01:14:56,476
+Birinci türevini alacağız. Tekrar x gördüğümüz yere 0 yazacağız.
+
+1053
+01:14:58,236 --> 01:15:03,896
+Ve sonra da Matematik 3'sinde bulunduğumuz bu türevleri yeni yazarak yine aynı seriyi elde edeceğiz.
+
+1054
+01:15:03,896 --> 01:15:07,456
+Ama bu gördüğünüz gibi iki satır da elde ediyoruz.
+
+1055
+01:15:07,456 --> 01:15:09,256
+Bildiğiniz bir şeyden devam ediyoruz.
+
+1056
+01:15:10,016 --> 01:15:11,016
+Yine aynı şekilde.
+
+1057
+01:15:11,655 --> 01:15:16,976
+Şimdi mesela sinüs kare eksi Maclaurin serisinin genel terimini yazıyoruz.
+
+1058
+01:15:18,816 --> 01:15:21,655
+Şimdi biz işte yarım açı formüllerimiz var.
+
+1059
+01:15:22,356 --> 01:15:24,376
+Sinüs kare eksi neye eşittir?
+
+1060
+01:15:34,292 --> 01:15:39,562
+1-1-2
+
+1061
+01:15:50,100 --> 01:15:57,160
+Bunlara biz hani yarım açık formülere diyorduk. Sinüs kare eksi de nedir? Bunun arasının artılısıyla.
+
+1062
+01:15:58,039 --> 01:16:06,579
+Şimdi bunu kullanarak, şu 1 bölü 2'yi başa yazdık. Şunu da 1 eksi kosünüs 2 eksi olarak yazdık.
+
+1063
+01:16:06,579 --> 01:16:12,900
+Şimdi burada kosünüs 2 eksi seriye açalım. Yani kosünüs 2 eksi'nin seri açalımı da biliyorduk zaten.
+
+1064
+01:16:13,320 --> 01:16:19,380
+Dolayısıyla kosünüs 2 eksi eksik olduğumuz yere 2 eksi yazarak seri açalım. Biri de yazdık şimdi.
+
+1065
+01:16:19,380 --> 01:16:21,560
+önünde de eksi. Önünde de eksi var. Közünüs 2 eksi.
+
+1066
+01:16:21,560 --> 01:16:25,300
+Önünde de eksi var. Kosünüs 2 eksi seriye açılımını şurada yazacak olursam şöyle geliyordu.
+
+1067
+01:16:31,539 --> 01:16:39,159
+1 ile başladık. Çift kuvvetlerden gidiyoruz. 1 eksi, x kare bölü 2 faktör yer.
+
+1068
+01:16:45,268 --> 01:16:47,847
+Kare yazacağım. X kare bile 2 faktör yer.
+
+1069
+01:16:52,979 --> 01:16:57,379
+Sonra artı x üzeri 4 bölü 4 baktığı yer.
+
+1070
+01:17:01,379 --> 01:17:06,679
+Ve böyle giden bir seriyle.
+
+1071
+01:17:11,828 --> 01:17:33,688
+Şimdi bunu ne yapıyorum? Şuradan itibaren eksiyle çarparak yazıyorum. Eksi 1 geldi. Sonra buradaki eksi artı oldu. Burada x kare vardı. x yerine 2x'in parantez karesi böyle 2 faktör yer yazdık. Sonra eksiyle çarparak bir ürün var. 2 şartta eksi oldu. 2x'in 4. kuvveti böyle 4 faktör yer geldi.
+
+1072
+01:17:33,688 --> 01:17:48,568
+İşte bundan sonraki kare mi yazmış olsaydım? Artı 2x'in 6. kuvveti böyle 6 faktör yer gelecekti.
+
+1073
+01:17:57,108 --> 01:17:58,288
+Birileri artı baktığınızda.
+
+1074
+01:17:59,768 --> 01:18:04,967
+Bu böyle devam eden bir serisi. Şimdi şu birler birbirini götürdü. Eksi bir artı bir birbirini götürdü.
+
+1075
+01:18:05,608 --> 01:18:07,467
+Şimdi iç kısımda sahneleri şu kaldı.
+
+1076
+01:18:09,347 --> 01:18:12,028
+Evet, bunu da birbiri ikiye çarparak düzenlersek,
+
+1077
+01:18:13,708 --> 01:18:18,068
+işte iki, buradan ikinin karesi geldi.
+
+1078
+01:18:19,887 --> 01:18:22,887
+X'in karesi geldi.
+
+1079
+01:18:22,887 --> 01:18:23,188
+Şimdi
+
+1080
+01:18:23,188 --> 01:18:28,528
+X'in karesi olacak değil mi?
+
+1081
+01:18:30,007 --> 01:18:32,568
+İkinin karesinin birer tanesi götürdü.
+
+1082
+01:18:32,648 --> 01:18:33,688
+Şunlarla iki faktör.
+
+1083
+01:18:33,748 --> 01:18:35,168
+Şurası X'in karesi olacak.
+
+1084
+01:18:35,728 --> 01:18:37,788
+Sonra buradan ikinin dördüncü kuvveti vardı.
+
+1085
+01:18:45,011 --> 01:18:46,591
+Burası niye 4 faktör yeri?
+
+1086
+01:18:49,711 --> 01:18:55,692
+2 ile çarptım, tamam. 2'nin 4. kuvveti vardı. Şuradaki 2 ile götürdü. 2'nin 3. kuvveti kaldı. Tamam.
+
+1087
+01:18:56,652 --> 01:19:06,871
+x üzeri 4. 4 faktör yer kaldı. Burası 2'nin 6. kuvvetiydi. Şu faydadaki 2 ile götürdü. 2'nin 5. kuvveti x üzeri 6 ve 6 faktör yer şeklinde giden bir seri.
+
+1088
+01:19:06,871 --> 01:19:11,911
+Şimdi bunu eğer genelleştirince kullanırsak artı eksi, artı eksi şeklinde gidiyor.
+
+1089
+01:19:11,911 --> 01:19:41,891
+n eşitliğinde sıfır.
+
+1090
+01:19:41,891 --> 01:19:46,631
+Kısmi türev olarak kosünüs ve kısmi türev olarak kosünüs de yerine genel ifadesini yazarak da gidebilirdik.
+
+1091
+01:19:46,771 --> 01:19:50,511
+Bu her x için tanımlı olan bir seri olmuş oldu.
+
+1092
+01:19:50,631 --> 01:19:54,532
+Çünkü kosünüs x her x için tanımlı olan bir seri.
+
+1093
+01:19:54,911 --> 01:19:58,471
+Dolayısıyla buna bir ilave ettik. Sonra ikiye dönünün bir sonucu değiştirilecek.
+
+1094
+01:19:58,471 --> 01:20:01,511
+Yani yakınsaklık aralığında değiştirilecek.
+
+1095
+01:20:05,460 --> 01:20:14,119
+Tanjant x'in makyolojik serisinin ilk üç terimini cos x ve sin x'in bir seriye açılımı yardımıyla bulun dediği an
+
+1096
+01:20:14,119 --> 01:20:18,060
+tanjant x bir kere sin x gibi cos x.
+
+1097
+01:20:18,460 --> 01:20:19,960
+Dolayısıyla bölme işlemi yapacağız.
+
+1098
+01:20:20,220 --> 01:20:26,640
+Bölme işleminin çarpma işleminin seriler için ne kadar kolay olmadığını dün de söylemiştik.
+
+1099
+01:20:26,920 --> 01:20:29,300
+Dolayısıyla sin x serisini yazdık.
+
+1100
+01:20:29,300 --> 01:20:31,100
+Bir, üç, beş, yedik ye gidiyor.
+
+1101
+01:20:31,140 --> 01:20:33,960
+Bir faktör yer, üç faktör yer, beş faktör yer.
+
+1102
+01:20:34,039 --> 01:20:35,659
+Artı x, artı x şeklinde gidiyor.
+
+1103
+01:20:36,239 --> 01:20:38,480
+Cosinistik serisi de işte bunun türeninden oluşuyordu.
+
+1104
+01:20:39,039 --> 01:20:41,380
+Bir eksi x kare bölü iki faktör yer.
+
+1105
+01:20:43,060 --> 01:20:46,720
+Ondan sonra x'e dört bölü dört faktör yer falan şeklinde giden bir seri.
+
+1106
+01:20:50,119 --> 01:20:52,439
+İlk üç terimle Allah'tan bulunduyor.
+
+1107
+01:20:52,579 --> 01:20:55,880
+Yani öbür türlü birkaç terim daha ilave ise kötü.
+
+1108
+01:20:56,380 --> 01:20:58,199
+Şimdi alacağız elimizi.
+
+1109
+01:20:59,300 --> 01:21:02,199
+Kağıdı kalemi dönme işlemi yapacağız.
+
+1110
+01:21:03,340 --> 01:21:04,439
+Seri şeklinde yazacağız.
+
+1111
+01:21:04,539 --> 01:21:06,880
+Böylece x eksi yazdık üsttekini.
+
+1112
+01:21:07,000 --> 01:21:08,859
+Sonra da cosinistik serisini yazdık.
+
+1113
+01:21:09,220 --> 01:21:10,039
+Şimdi kaç kere var?
+
+1114
+01:21:10,159 --> 01:21:11,060
+Birinci terimi aldık.
+
+1115
+01:21:11,119 --> 01:21:11,800
+X kere var.
+
+1116
+01:21:12,560 --> 01:21:13,180
+Çarptık bunu.
+
+1117
+01:21:13,319 --> 01:21:14,840
+X eksi.
+
+1118
+01:21:16,300 --> 01:21:18,159
+X'e bölü iki faktör yer.
+
+1119
+01:21:19,159 --> 01:21:21,039
+Sonra bununla çarptı bunu.
+
+1120
+01:21:21,140 --> 01:21:23,500
+X'e bölü beş bölü dört faktör yer.
+
+1121
+01:21:23,899 --> 01:21:25,720
+Ve çıkartma işlemi yapacağım.
+
+1122
+01:21:25,720 --> 01:21:29,600
+Dolayısıyla işaretleri değişecek.
+
+1123
+01:21:30,560 --> 01:21:31,960
+Burası artı ile eksi olacak.
+
+1124
+01:21:34,699 --> 01:21:36,020
+Burası artı olacak.
+
+1125
+01:21:38,300 --> 01:21:39,380
+Burası eksi olacak.
+
+1126
+01:21:39,380 --> 01:21:43,739
+Eksi x artı x yazdığını götürdü.
+
+1127
+01:21:43,880 --> 01:21:45,539
+Şurada x kütlü terimler var.
+
+1128
+01:21:46,779 --> 01:21:49,119
+Burası bir bölü iki.
+
+1129
+01:21:49,760 --> 01:21:51,279
+Burası da bir bölü altı.
+
+1130
+01:21:52,279 --> 01:21:54,159
+Dolayısıyla bunları topladığım zaman
+
+1131
+01:21:54,159 --> 01:21:56,119
+x kütlü bölü üç geldi.
+
+1132
+01:21:56,119 --> 01:21:59,460
+Sonra burada x üzeri beşli terimler var.
+
+1133
+01:22:01,760 --> 01:22:04,779
+Dolayısıyla şu x üzeri beşli terimleri de topladık.
+
+1134
+01:22:04,859 --> 01:22:06,340
+x üzeri beş bölü otuz geldi.
+
+1135
+01:22:06,460 --> 01:22:07,819
+İşte ondan sonraki terimler de var.
+
+1136
+01:22:07,899 --> 01:22:11,220
+Onları nokta nokta şeklinde yazmadan ifade ettik.
+
+1137
+01:22:12,060 --> 01:22:12,840
+Şimdi geldik.
+
+1138
+01:22:13,520 --> 01:22:16,859
+Şurada x küt bölü üç eksi x üzeri beş bölü otuz var.
+
+1139
+01:22:16,979 --> 01:22:17,760
+Yani x küt.
+
+1140
+01:22:17,760 --> 01:22:21,159
+O zaman neyle çarpalım bunu?
+
+1141
+01:22:21,239 --> 01:22:23,180
+x küt bölü üçle çarpalım dedik şöyle.
+
+1142
+01:22:23,420 --> 01:22:25,060
+Ki burada x küt bölü üç olursun.
+
+1143
+01:22:25,159 --> 01:22:27,000
+İşte x küt bölü üçle çarptığımızda
+
+1144
+01:22:27,000 --> 01:22:28,399
+x küt bölü üç geldi buradan.
+
+1145
+01:22:29,279 --> 01:22:31,500
+Sonra eksi ikinci terimle çarptığımızda
+
+1146
+01:22:31,500 --> 01:22:32,520
+x küt bölü beş bölü.
+
+1147
+01:22:33,100 --> 01:22:34,239
+İşte buradan iki faktör yer.
+
+1148
+01:22:34,319 --> 01:22:35,260
+Buradan da üç geldi.
+
+1149
+01:22:35,380 --> 01:22:36,760
+Yani altı geldi.
+
+1150
+01:22:36,940 --> 01:22:40,060
+İşte ondan sonraki terimle çarpmamız gerekiyor.
+
+1151
+01:22:40,060 --> 01:22:43,119
+Ama ilk üç terimini bulacağımız için şey yaptık.
+
+1152
+01:22:43,520 --> 01:22:44,560
+Artı ile eksi oldu.
+
+1153
+01:22:44,659 --> 01:22:46,220
+Dolayısıyla bunlar birbirine götürdü.
+
+1154
+01:22:46,220 --> 01:22:48,659
+Burası eksi ile artı olacağız.
+
+1155
+01:22:50,260 --> 01:22:52,399
+Bu işlemi yaptığımızda da buradan
+
+1156
+01:22:52,399 --> 01:22:56,220
+iki x üzeri beş bölü on beş geliyormuş.
+
+1157
+01:22:58,460 --> 01:23:01,319
+İşte ilk üç terim böylece ortaya çıkmış oldu.
+
+1158
+01:23:02,380 --> 01:23:04,119
+Daha fazla terim söylemiş olsaydı
+
+1159
+01:23:04,119 --> 01:23:06,779
+şüphesiz kafayı yemiş olacaktık.
+
+1160
+01:23:10,163 --> 01:23:36,583
+Kolay bir işlem diyor. Çarpmada mesela, tek tek çarpıyorsun. Dönmedi de aynı şekilde alıyorsun eline, kâğıdı kadını, tık tık tık. Yapabildiğin yere, ölebildiğin yere kadar, ölme işlemini yapıyorsun. Ama sonra da ilk işlerin dediği için, yani sadece yapılabildiğini gösteriyoruz. Söylemeye çalışıyoruz.
+
+1161
+01:23:36,583 --> 01:23:40,963
+Şimdi şu, hata fonksiyonu dediğimiz fonksiyonudur.
+
+1162
+01:23:41,884 --> 01:23:44,563
+Sıfırdan x'e kadar, e üzeri eksi t kare d t
+
+1163
+01:23:44,563 --> 01:23:47,043
+İntegreliniz
+
+1164
+01:23:50,644 --> 01:24:00,524
+Hesaplamamız istemiyor. Bu, öler integral dediğimiz bir integral, öler hemen hesaplanamaz. Ancak bunun yaklaşık bir yere bulunabilen bir integral.
+
+1165
+01:24:04,627 --> 01:24:22,627
+Dolayısıyla bunun için de böyle integrallerde, hesaplayamadığımız integrallerde, bu fonksiyon yerine fonksiyonun tanım aralığı içerisinde Taylor serisinin belirli belirli terimini alarak yaklaşık değerini hesaplayabiliriz.
+
+1166
+01:24:22,627 --> 01:24:37,607
+Mesela e üzeri eksi t kare fonksiyonunu, biz seriler olarak, e üzeri x serisinden faydalanarak yazabiliriz.
+
+1167
+01:24:37,607 --> 01:24:38,867
+Ne yaptık biz burada?
+
+1168
+01:24:41,867 --> 01:24:46,188
+1 artı x bölü 1 faktör yer.
+
+1169
+01:24:54,036 --> 01:24:57,296
+Sonra artı x kare bile, ekip aktör yer.
+
+1170
+01:25:08,595 --> 01:25:16,455
+İşte x küp bölü 3 faktörü her şekilde giden ev üzeri ilk serisini hatırladığımızı düşünelim.
+
+1171
+01:25:27,572 --> 01:25:28,332
+böyle gidiyoruz.
+
+1172
+01:25:32,172 --> 01:25:33,632
+Şimdi x yerine
+
+1173
+01:25:33,632 --> 01:25:35,592
+eksi x yazarsak ya da burada
+
+1174
+01:25:35,592 --> 01:25:37,492
+x yerine direkt de yazabiliriz.
+
+1175
+01:25:37,532 --> 01:25:38,872
+Eksi t kare yazarsak
+
+1176
+01:25:38,872 --> 01:25:40,652
+1 geldi.
+
+1177
+01:25:41,431 --> 01:25:43,431
+x yerine eksi t kare yazdık.
+
+1178
+01:25:43,492 --> 01:25:45,492
+Eksi t kare böyle bir faktörü
+
+1179
+01:25:45,492 --> 01:25:46,771
+yerdim. Eksi t kare geldi.
+
+1180
+01:25:47,271 --> 01:25:49,332
+x kare yerine eksi t kare
+
+1181
+01:25:49,332 --> 01:25:51,492
+yazdık. T üzeri 4 bölü
+
+1182
+01:25:51,492 --> 01:25:53,592
+2 faktörü geldi.
+
+1183
+01:25:54,431 --> 01:25:54,891
+Sonra
+
+1184
+01:25:54,891 --> 01:25:56,891
+t küp yerine
+
+1185
+01:25:56,891 --> 01:25:59,612
+eksi t kare yazdık. Eksi t
+
+1186
+01:25:59,612 --> 01:26:01,612
+üzeri 6 bölü 3 faktörü yerdim.
+
+1187
+01:26:02,771 --> 01:26:03,851
+Bu her
+
+1188
+01:26:03,851 --> 01:26:05,992
+x için yakınsak
+
+1189
+01:26:05,992 --> 01:26:07,351
+olan bir seri olduğu için
+
+1190
+01:26:07,351 --> 01:26:09,912
+bu da her
+
+1191
+01:26:09,912 --> 01:26:11,792
+t için yakınsak olan bir seri
+
+1192
+01:26:11,792 --> 01:26:13,372
+oldu. Şimdi biz bunu
+
+1193
+01:26:13,372 --> 01:26:15,731
+bu seriyi integralde yerine
+
+1194
+01:26:15,731 --> 01:26:17,511
+yazıyoruz. Şimdi o zaman bir
+
+1195
+01:26:17,511 --> 01:26:20,092
+polinoma benzedim.
+
+1196
+01:26:20,212 --> 01:26:21,672
+Dolayısıyla biz bunu
+
+1197
+01:26:21,672 --> 01:26:23,112
+t'ye göre integralini
+
+1198
+01:26:23,112 --> 01:26:24,912
+polinom olduğu için çok
+
+1199
+01:26:24,912 --> 01:26:26,332
+rahat bir şekilde
+
+1200
+01:26:26,332 --> 01:26:27,351
+alabiliriz.
+
+1201
+01:26:28,192 --> 01:26:30,192
+İşte eksin birin t'ye göre
+
+1202
+01:26:30,192 --> 01:26:31,592
+integralinden t'ye geldi.
+
+1203
+01:26:32,532 --> 01:26:33,891
+Sonra ikinci terim eksi
+
+1204
+01:26:33,891 --> 01:26:35,311
+t küp bölü 3 geldi.
+
+1205
+01:26:36,431 --> 01:26:38,832
+Sonra şu t üzeri 4'den
+
+1206
+01:26:38,832 --> 01:26:40,391
+üzeri 1 artı t üzeri 5
+
+1207
+01:26:40,391 --> 01:26:41,231
+bölü 10 geldi.
+
+1208
+01:26:41,372 --> 01:26:42,132
+Yani şu terim.
+
+1209
+01:26:42,132 --> 01:26:46,551
+sonra işte buradan eksi t üzeri 7 bölü 3
+
+1210
+01:26:46,551 --> 01:26:47,152
+faktörü yerdim.
+
+1211
+01:26:47,152 --> 01:26:48,231
+çarpı 7 geldi.
+
+1212
+01:26:49,192 --> 01:26:50,952
+İşte buradan t üzeri 9
+
+1213
+01:26:50,952 --> 01:26:53,532
+bölü 9
+
+1214
+01:26:53,532 --> 01:26:55,452
+çarpı 4 faktörü yerdim.
+
+1215
+01:26:55,452 --> 01:26:55,731
+geldi.
+
+1216
+01:26:55,731 --> 01:26:57,532
+Ve böyle nokta nokta gidiyor.
+
+1217
+01:26:57,992 --> 01:26:58,931
+Sınırlarımız nereden
+
+1218
+01:26:58,931 --> 01:26:59,811
+nereye kadarmış?
+
+1219
+01:26:59,912 --> 01:27:01,212
+Sıfırdan x'e kadardır.
+
+1220
+01:27:02,632 --> 01:27:03,971
+Üst sınırı koyduk.
+
+1221
+01:27:04,292 --> 01:27:05,492
+Bütün t'ler eksi oldu.
+
+1222
+01:27:06,632 --> 01:27:08,471
+x eksi, x küp bölü 3,
+
+1223
+01:27:08,632 --> 01:27:10,372
+artı, 3 üzeri 5,
+
+1224
+01:27:10,452 --> 01:27:11,172
+bölü 5, bak.
+
+1225
+01:27:11,271 --> 01:27:12,152
+Alt sınırdan zaten
+
+1226
+01:27:12,152 --> 01:27:13,011
+sıfır geldi.
+
+1227
+01:27:13,492 --> 01:27:14,492
+Böyle bir seri geldi.
+
+1228
+01:27:14,832 --> 01:27:15,391
+Şimdi bu seriyi
+
+1229
+01:27:15,391 --> 01:27:16,891
+genelleştirebilir miyiz diye
+
+1230
+01:27:16,891 --> 01:27:17,891
+bakalım.
+
+1231
+01:27:19,092 --> 01:27:20,391
+Burada 1 var, 5 var,
+
+1232
+01:27:21,092 --> 01:27:22,471
+1 var, 3 var, 5 var,
+
+1233
+01:27:22,471 --> 01:27:23,351
+7 var, 9 var.
+
+1234
+01:27:23,452 --> 01:27:24,112
+Tek tek gidiyor.
+
+1235
+01:27:24,231 --> 01:27:26,592
+Yani bu 2 n artı 1'i gösteriyor bize.
+
+1236
+01:27:27,632 --> 01:27:29,351
+Burada 1 faktörü yerdir var.
+
+1237
+01:27:30,792 --> 01:27:31,271
+Bir de
+
+1238
+01:27:31,271 --> 01:27:34,172
+yani sanki 0 faktörü yerdir.
+
+1239
+01:27:34,672 --> 01:27:35,431
+1 faktörü yerdir,
+
+1240
+01:27:35,492 --> 01:27:36,672
+2 faktörü, 3 faktörü yerdir,
+
+1241
+01:27:36,752 --> 01:27:37,752
+4 faktörü yerdir gibi
+
+1242
+01:27:37,752 --> 01:27:38,612
+gittiğini düşünürsek
+
+1243
+01:27:38,612 --> 01:27:39,692
+n faktörü yerdir.
+
+1244
+01:27:40,971 --> 01:27:42,811
+Sonra artı eksi, artı eksi,
+
+1245
+01:27:42,872 --> 01:27:44,072
+artı eksi şeklinde gidiyor.
+
+1246
+01:27:44,212 --> 01:27:45,212
+Yani etki 1 üzere
+
+1247
+01:27:45,212 --> 01:27:48,252
+n şeklinde de yansıması düşünürsek
+
+1248
+01:27:48,252 --> 01:27:49,731
+nasıl bu her x için
+
+1249
+01:27:49,731 --> 01:27:51,652
+geçerliyse bu da her x için
+
+1250
+01:27:51,652 --> 01:27:52,372
+yakın sekan
+
+1251
+01:27:52,372 --> 01:27:53,792
+bir sürü elde etmiş
+
+1252
+01:27:53,792 --> 01:27:54,672
+olduk.
+
+1253
+01:27:55,632 --> 01:27:56,851
+Tabii bunu böyle
+
+1254
+01:27:56,851 --> 01:27:57,851
+hani yazdık ama
+
+1255
+01:27:57,851 --> 01:27:59,112
+yine de kontrol etmekte
+
+1256
+01:27:59,112 --> 01:27:59,652
+fayda var.
+
+1257
+01:27:59,712 --> 01:28:00,771
+n'e 0'u verdik.
+
+1258
+01:28:02,832 --> 01:28:03,112
+x
+
+1259
+01:28:03,112 --> 01:28:06,771
+0'u verdik.
+
+1260
+01:28:06,832 --> 01:28:08,051
+Şuradan 0 faktörü yerdir.
+
+1261
+01:28:08,051 --> 01:28:09,492
+Yani sağlıyor.
+
+1262
+01:28:09,592 --> 01:28:10,731
+Sonra n'e 2 verip
+
+1263
+01:28:10,731 --> 01:28:12,011
+böyle birkaç derim için
+
+1264
+01:28:12,011 --> 01:28:15,271
+genelleştirdikten sonra
+
+1265
+01:28:15,271 --> 01:28:17,271
+hani mantığımız doğru mu değil mi
+
+1266
+01:28:17,271 --> 01:28:17,692
+diye de
+
+1267
+01:28:17,692 --> 01:28:19,092
+kontrol etmemiz lazım.
+
+1268
+01:28:19,391 --> 01:28:20,511
+Bakın ne yapmış olduk?
+
+1269
+01:28:20,511 --> 01:28:21,471
+yaklaşık olarak
+
+1270
+01:28:21,471 --> 01:28:22,992
+integral hesaplamış olduk.
+
+1271
+01:28:22,992 --> 01:28:23,412
+Bu da
+
+1272
+01:28:23,412 --> 01:28:25,231
+yaklaşık olarak
+
+1273
+01:28:25,231 --> 01:28:27,132
+integral hesaplamış olduk.
+
+1274
+01:28:26,420 --> 01:28:37,940
+Gördüğünüz gibi bu integral'e göre hesaplarımız mümkün değil. Çünkü bu integral, öyle integral dediğimiz, yaklaşık hesabı yapılabilecek bir integral olduğu için.
+
+1275
+01:28:42,036 --> 01:28:44,716
+Bu nitegredi bir sürü şeklinde hesaplamış olduk.
+
+1276
+01:28:45,916 --> 01:28:52,036
+Yine aynı şekilde biz serileri limit hesaplarken de kullanabiliriz.
+
+1277
+01:28:52,036 --> 01:29:02,815
+Limitin içinde geçen ifadeleri seriler seri cinsinden yazıp, makyönü serisi cinsinden yazıp sonra gerekli işlemleri, cedersel işlemleri uygulayabiliriz.
+
+1278
+01:29:03,296 --> 01:29:04,895
+Örneğin limit yapıyoruz.
+
+1279
+01:29:04,975 --> 01:29:06,515
+X0'a giderken ne var burada?
+
+1280
+01:29:06,515 --> 01:29:08,136
+0 verdik.
+
+1281
+01:29:08,256 --> 01:29:10,076
+Şimdi 0 ve 0 aşağısı da 0.
+
+1282
+01:29:10,176 --> 01:29:12,676
+Yani burada 0 bölü 0 belirsizlik şekli var.
+
+1283
+01:29:12,676 --> 01:29:13,636
+Ne olmuş?
+
+1284
+01:29:13,735 --> 01:29:18,376
+Şimdi burada 0 bölü 0 belirsizlik şeklini belirlemeye çalışacağız.
+
+1285
+01:29:18,815 --> 01:29:23,756
+Bunun için de tabii ki matematik bir bilgileriyle yapılabilir.
+
+1286
+01:29:24,216 --> 01:29:28,695
+Ama biz burada serileri de kullanabileceğimizi göstermeye çalışıyoruz.
+
+1287
+01:29:28,836 --> 01:29:33,636
+Serilerle de bu işlemlerin yaklaşık olarak yapılabileceğini göstermeye çalıştığımız için bunu yapıyoruz.
+
+1288
+01:29:33,975 --> 01:29:35,015
+X yazlık etki.
+
+1289
+01:29:35,015 --> 01:29:37,496
+Sinus x'in seri açılımını yazdık.
+
+1290
+01:29:38,876 --> 01:29:39,836
+Bölü x küp.
+
+1291
+01:29:40,275 --> 01:29:43,496
+Şimdi şuradaki x x ile artı x birbirini götürdü.
+
+1292
+01:29:44,296 --> 01:29:49,395
+Geride x x küp bölü 3 artı x üzeri 5 bölü 5 faktöriyel.
+
+1293
+01:29:49,395 --> 01:29:59,336
+Sonra işte eksiyle de çarptığımızda şunlar geldi ve sonra devam eden terimler geldi.
+
+1294
+01:29:59,416 --> 01:30:00,855
+Şimdi burada x küp bölüyoruz.
+
+1295
+01:30:01,576 --> 01:30:02,876
+Şimdi biz bunu x küp bölü 3 artı.
+
+1296
+01:30:02,876 --> 01:30:06,096
+Buradan 1 bölü 3 faktöriyel gelir.
+
+1297
+01:30:06,096 --> 01:30:10,676
+İşte buradan x küp bölü 5 faktöriyel gelir.
+
+1298
+01:30:11,195 --> 01:30:15,096
+Ve böyle devam eden terimler de hep x çarpı planı olur.
+
+1299
+01:30:15,475 --> 01:30:21,576
+Şimdi limit x sıfıra gittiğine göre x'i içeren bütün terimler bir kere sıfıra gidecek.
+
+1300
+01:30:21,576 --> 01:30:26,115
+x'i içeren bütün terimler sıfıra gidecek.
+
+1301
+01:30:26,115 --> 01:30:33,576
+Yani sonuçta bunun limiti şunda x olmadığı için 1 bölü 3 faktöriyel.
+
+1302
+01:30:33,676 --> 01:30:36,796
+Yani 1 bölü 6'ya eşit olmuş olacak.
+
+1303
+01:30:43,315 --> 01:30:48,876
+Şimdi burada da yine bir limit işlemimiz var x0'a giderken.
+
+1304
+01:30:49,916 --> 01:30:52,795
+E üzeri 0, 1.
+
+1305
+01:30:53,115 --> 01:30:54,975
+1 çıkarttık şuradan 0 geldi.
+
+1306
+01:30:55,775 --> 01:30:57,855
+L1 0 buradan yukarısı 0.
+
+1307
+01:30:58,095 --> 01:31:01,336
+Aşağısı pozisyonus 0'ın değeri 1 geldi.
+
+1308
+01:31:01,855 --> 01:31:03,956
+1'den çıkarttık burası da 0 oldu.
+
+1309
+01:31:06,996 --> 01:31:10,315
+Dolayısıyla 0 belirsizlik şekli var.
+
+1310
+01:31:10,315 --> 01:31:14,996
+Şimdi bunu bilinen makyolojik serilerinden faydalanarak yapalım.
+
+1311
+01:31:15,355 --> 01:31:26,935
+Şimdi e üzeri x'in 1 artı x artı x kare bölü 2 faktöriyel artı x kare bölü 3 faktöriyel olduğunu biliyoruz.
+
+1312
+01:31:27,055 --> 01:31:29,295
+E üzeri 2 x'i hemen türetebiliriz dedik.
+
+1313
+01:31:29,675 --> 01:31:31,635
+x gördüğümüz yere 2 x yazdık.
+
+1314
+01:31:31,735 --> 01:31:34,515
+1 x yerine 2 x yazdık.
+
+1315
+01:31:35,055 --> 01:31:36,395
+x yerine 2 x yazdık.
+
+1316
+01:31:36,475 --> 01:31:39,195
+2 x'in parantez karesi ile 2 faktöriyel geldi.
+
+1317
+01:31:39,195 --> 01:31:43,055
+İşte burası 2 x'in parantez karesi ile 3 faktöriyel gelecek.
+
+1318
+01:31:43,935 --> 01:31:45,735
+Yine biz kosülüs 3 x'i biliyoruz.
+
+1319
+01:31:45,916 --> 01:31:51,475
+Bunu da kosülüs x'in seri açılımından faydalanarak yazdık.
+
+1320
+01:31:51,576 --> 01:31:53,435
+x gördüğümüz yere 3 x'i yazdık.
+
+1321
+01:31:53,515 --> 01:31:57,555
+1 x'i 3 x'in parantez karesi bölü 2 faktöriyel.
+
+1322
+01:31:57,555 --> 01:32:02,836
+3 x'in 4. kuvveti bölü 4 faktöriyel şeklinde artı eksi giden bir seri.
+
+1323
+01:32:03,376 --> 01:32:07,695
+Elen bir artı eksi de yukarıda bulmuştuk.
+
+1324
+01:32:07,795 --> 01:32:09,836
+Hani sık kullanılan seriler şeklindeydi.
+
+1325
+01:32:09,836 --> 01:32:14,235
+x eksi x kare bölü 2 artı x küt bölü 3 şeklinde.
+
+1326
+01:32:14,355 --> 01:32:18,836
+Yani bu sinüse benziyor ama burada tabii 2 de var.
+
+1327
+01:32:20,755 --> 01:32:21,996
+Böyle giden bir seri bu.
+
+1328
+01:32:23,195 --> 01:32:25,496
+Şimdi burada x yerine ne yazmamız lazım?
+
+1329
+01:32:25,615 --> 01:32:26,855
+x küt yazmamız lazım.
+
+1330
+01:32:27,055 --> 01:32:30,695
+x yerine x küt olduğu için x gördüğümüz yere x küt yazdık.
+
+1331
+01:32:30,695 --> 01:32:38,555
+x küt eksi x'i 6 bölü 2 artı x'i 9 bölü 9 şeklinde gitti.
+
+1332
+01:32:43,572 --> 01:33:00,172
+Evet, şimdi sorumuz buydu. Verilenleri yerine yazıyoruz. E üzeri 2 eksi yukarıda ayrıca hesaplamıştık seriyi. Eksi 1 dedik. Sonra elen 1 artı eksi fükü şurada hesaplamıştık. Direkt yerine yazdık.
+
+1333
+01:33:00,172 --> 01:33:12,271
+Sonra aynı şekilde 1 eksi kosünüs 3 eksi de yazmıştık. 1'i yazdım. Sonra kosünüs 3 eksi de buradan eksi ile çarparak yazdım.
+
+1334
+01:33:13,252 --> 01:33:22,771
+Eksi 1 artı 9 x kare bölü 2 artı 3 üzeri 4 x üzeri 4 bölü işte parantez karesi şeklinde yazdık.
+
+1335
+01:33:24,292 --> 01:33:29,752
+Evet, şimdi şurada yine seri çarpımı var. Bunun tabii birkaç derimini yazalım. Şuradan x küt gelecek.
+
+1336
+01:33:30,172 --> 01:34:00,152
+Pardon, 1'i yazdım.
+
+1337
+01:33:48,467 --> 01:34:02,228
+Şimdi en küçük terimden başlamak için mesela bununla da x üzeri 5'e çarptığımız zaman 2 x üzeri 5 bölü 2 faktöriyel.
+
+1338
+01:34:02,608 --> 01:34:04,108
+Şurada da 2'nin karası vardı.
+
+1339
+01:34:05,207 --> 01:34:07,587
+Dolayısıyla buradan 2 üzeri 5 geldi.
+
+1340
+01:34:08,807 --> 01:34:15,847
+Şimdi daha terimler oluşturulabilir ama elimizde şimdilik bu kadar terim oluşturduğumuzu düşünelim.
+
+1341
+01:34:15,847 --> 01:34:18,207
+Şimdi burada da biriler birbirini götürdü.
+
+1342
+01:34:18,207 --> 01:34:25,188
+Yani bunun tabii çarpma işlemini yapmak böyle kağıdı kaleme alıp böyle sayfa sayfa yazarak olacak bir işlem.
+
+1343
+01:34:25,688 --> 01:34:27,407
+9 x kare bölü 2 geldi.
+
+1344
+01:34:28,087 --> 01:34:30,367
+İşte bunun karesinden x üzeri 4 gelir değil mi?
+
+1345
+01:34:30,747 --> 01:34:32,228
+Yukarıda da x üzeri 4 var.
+
+1346
+01:34:32,967 --> 01:34:37,087
+Aşağıda da şu parantez karesini buna ilave ettiğimiz zaman x üzeri 4 gelecek.
+
+1347
+01:34:38,228 --> 01:34:41,847
+Şimdi x üzeri 4 parantezini aldığımızı düşünürsek biz burada.
+
+1348
+01:34:42,287 --> 01:34:43,167
+Buradan 2 gelecek.
+
+1349
+01:34:43,167 --> 01:34:48,427
+Sonra buradan 2 şunu x üzeri 4 parantezine aldık 2x geldi.
+
+1350
+01:34:48,427 --> 01:34:52,188
+Ve bundan sonraki terimlerin hepsinde x'i içeren ifadeler gelecek.
+
+1351
+01:34:52,648 --> 01:35:02,148
+Şimdi burada da karesi şu x kare parantezin içini x kare parantezini alıp da dışarıya x üzeri 4 olarak çıkarttığımızda x üzeri 4'ler gidecek.
+
+1352
+01:35:02,148 --> 01:35:03,967
+Yani buradan 9 bölü 2.
+
+1353
+01:35:04,807 --> 01:35:08,228
+x kare parantezini aldığımızda 3 üzeri 4 x kare gelecek.
+
+1354
+01:35:08,407 --> 01:35:11,988
+Ama x sıfıra gittiği için bundan sonraki bütün terimler sıfıra gidecek.
+
+1355
+01:35:13,207 --> 01:35:14,407
+Şurası da sıfıra gidecek.
+
+1356
+01:35:15,007 --> 01:35:17,528
+Sayısal olarak kalan yer ne var?
+
+1357
+01:35:17,648 --> 01:35:20,907
+2 bir de 9 bölü 2'nin parantez karesi var.
+
+1358
+01:35:20,907 --> 01:35:24,087
+Yani 2.
+
+1359
+01:35:24,667 --> 01:35:25,568
+Bu da ter çevirir.
+
+1360
+01:35:25,608 --> 01:35:27,167
+Özarsak 4 bölü 81.
+
+1361
+01:35:27,648 --> 01:35:31,427
+Yani bu da 8 bölü 81 olarak bulunmuş olacak.
+
+1362
+01:35:31,427 --> 01:36:01,407
+2 bir de 9 bölü 2.
+
+1363
+01:35:36,435 --> 01:35:39,255
+Bir de serilerden binom serisi dediğimiz seri var.
+
+1364
+01:35:39,675 --> 01:35:41,315
+Bu da şöyle bir seri.
+
+1365
+01:35:41,795 --> 01:35:44,015
+1 artı x'in re'in içi kuvveti.
+
+1366
+01:35:44,295 --> 01:35:46,415
+Biz bunu seriye açarken şöyle açıyoruz.
+
+1367
+01:35:46,415 --> 01:35:56,415
+1 artı şu re x artı sonra re x re çarpı re eksi 1 bölü 2 faktörü yani x kare.
+
+1368
+01:35:57,375 --> 01:36:02,435
+Sonra işte burada re re eksi 1 re eksi 2 x kare böyle 3 faktörü yani.
+
+1369
+01:36:02,555 --> 01:36:04,536
+Bakın bunlar hep böyle sayılı.
+
+1370
+01:36:04,536 --> 01:36:08,815
+Burası x küp var burası 3 faktörü yer burası 3 tane çarpım var.
+
+1371
+01:36:08,895 --> 01:36:10,715
+Y'den başlıyor çıkartı çıkartı.
+
+1372
+01:36:10,715 --> 01:36:20,695
+Dolayısıyla şunu şöyle ayırarak şu geride kalan ifadeleri n eşitleri birden sonsuza kadar şöyle genelleştirmek mümkün.
+
+1373
+01:36:28,851 --> 01:36:31,251
+ve yerine bilirsen buradan ne gelir?
+
+1374
+01:36:39,988 --> 01:36:44,807
+Burası biraz tuhaf geldi bana. Neyse, buraya girmeyin.
+
+1375
+01:36:47,128 --> 01:36:48,628
+Şunu verir mi?
+
+1376
+01:36:52,212 --> 01:37:00,752
+En yerine 1 yazsan, buradan R gelir, e bunlar da oluyor, sanki burası sağlamıyor gibi.
+
+1377
+01:37:02,312 --> 01:37:04,412
+Neyse, şuradan bakın siz.
+
+1378
+01:37:05,792 --> 01:37:09,712
+Çünkü bu böyle olmaz ya, bu kombinasyonlarla yazmak lazım.
+
+1379
+01:37:11,352 --> 01:37:15,552
+R'nin enli kombinasyonu şeklinde yazmak lazım şurayı.
+
+1380
+01:37:15,552 --> 01:37:19,252
+Bu böyle olmaz, şurada bir sıkıntı var.
+
+1381
+01:37:19,252 --> 01:37:23,212
+Ama şurası doğru.
+
+1382
+01:37:23,472 --> 01:37:25,152
+Binom açılımı böyle bir açılım.
+
+1383
+01:37:25,252 --> 01:37:25,712
+Tamam mı?
+
+1384
+01:37:28,372 --> 01:37:34,432
+Şimdi mesela, kuvvet serisinin, fonksiyonun kuvvet serisini bulunuz.
+
+1385
+01:37:35,292 --> 01:37:38,312
+Şimdi hepsini falan dediği şey, kuvvet serisini bulunuz.
+
+1386
+01:37:38,532 --> 01:37:39,012
+Tamam mı?
+
+1387
+01:37:39,012 --> 01:37:46,192
+Şimdi bunu, 1 artı x'in, eksi 1 bölü 2. kuvveti şeklinde düzenlersek,
+
+1388
+01:37:46,332 --> 01:37:48,892
+binom açılımını uygulayabilir miyiz?
+
+1389
+01:37:49,252 --> 01:37:50,252
+Orada nereden?
+
+1390
+01:37:50,252 --> 01:37:50,452
+Orada nereden başladı?
+
+1391
+01:37:50,452 --> 01:37:52,592
+1, eksi R dedik.
+
+1392
+01:37:52,592 --> 01:37:54,412
+Yani R dediğim değer şu.
+
+1393
+01:37:56,812 --> 01:38:01,752
+Eksi 1 bölü 2, çarpı x artı, bölü 1 faktörü ile vardı.
+
+1394
+01:38:01,872 --> 01:38:02,972
+Şimdi eksi 1 bölü 2.
+
+1395
+01:38:03,692 --> 01:38:05,672
+Sonra şurası şeyden geliyor.
+
+1396
+01:38:07,732 --> 01:38:09,452
+Eksi 1 bölü 2, eksi 1.
+
+1397
+01:38:09,452 --> 01:38:11,472
+Eksi 1.
+
+1398
+01:38:33,460 --> 01:38:35,659
+Eksi 1 bölü, 2 eksi 1'den geliyor.
+
+1399
+01:38:40,532 --> 01:38:49,032
+İşte buradan x kare geldi. 2 faktör yer. Eksi 1 bölü 2. Eksi 1 bölü 2, eksi 1. Eksi 1 bölü 2, eksi 2. 3 faktör yer geldi.
+
+1400
+01:38:49,212 --> 01:38:55,231
+İşte bunları düzenledik. Şu ikiler var. 2'nin mesela şu terimde 2'nin 3. kuvveti paydaya geçti.
+
+1401
+01:38:57,052 --> 01:39:03,572
+Aradaki işareti eksi oldu. 1, 3, 5 de girdi. X küp. İşte şu terimde mesela 2'nin karesi geldi paydada.
+
+1402
+01:39:03,572 --> 01:39:08,351
+eksi 1, 3 çarpımdan 1 çarpı 3 geldi.
+
+1403
+01:39:08,351 --> 01:39:10,311
+İşte bunu da genelleştirdiğimizde
+
+1404
+01:39:24,692 --> 01:39:28,912
+İyi ki böyle kalsın, böyle kalsın, şüphesiz bir bölge gelmez.
+
+1405
+01:39:38,420 --> 01:39:45,319
+Binom serisinin de yukarıda söylemiştik, eksi 1 ile artı 1 aralığında yakınsak olduğunu.
+
+1406
+01:39:45,920 --> 01:39:51,199
+Dolayısıyla burada R gördüğümüz yere soruda da eksi 1 bölü 2 olarak yazdık.
+
+1407
+01:39:51,199 --> 01:39:56,460
+Yani verilen soruyu binom serisinin açılarak kuvvet serisini yazmış olduk.
+
+1408
+01:40:03,123 --> 01:40:25,563
+Bu serilerle yapacağımız işlemler bitti. Uygulama oluşturabilirsem uygulama yapacağım. Önümüzdeki hafta yaparım yani arada. İşte böyle devam edeceğiz. Bundan sonra serilerdeki konularla devam edeceğiz.
+
+1409
+01:40:27,103 --> 01:40:29,083
+Sizin sormak istediğiniz herhangi bir şey var mı?
+
+1410
+01:40:36,819 --> 01:40:38,259
+Yok hocam, teşekkür ederiz.
+
+1411
+01:40:38,880 --> 01:40:39,519
+Rica ederim.
+
+1412
+01:40:40,399 --> 01:40:44,199
+O zaman bugünlük, hatta bu haftalık dersimizi böylece bitirmiş olduk.
+
+1413
+01:40:44,559 --> 01:40:49,179
+Soru sormak isterseniz veya aklınıza takılan bir şey oluyorsa neye güzeli yazarsınız?
+
+1414
+01:40:49,939 --> 01:41:03,000
+Şimdi dediğim gibi konu başlıkları Thomas Kalkulus'un ya da bu Bolonya Mat 10.72 yazdığınızda içeriğinin aynısı, birebir aynısı.
+
+1415
+01:41:03,000 --> 01:41:07,819
+Hani ondan sorumlusunuz. Daha böyle tabii ki matematik çok daha iyi bilmiş.
+
+1416
+01:41:08,479 --> 01:41:13,579
+Dizilere veya işte seyrede başka taraflarına gittiğiniz zaman çok daha şeyler çıkabilir.
+
+1417
+01:41:15,000 --> 01:41:20,000
+Bizim dersimizin içeriğiyle biz sorumluyuz tamam mı? Çok da yayılmayın.
+
+1418
+01:41:22,880 --> 01:41:30,579
+Pınar Hoca'nın hazırlamış olduğu bu ders notları bizim Thomas Kalkulus'un içeriğinden hazırlanmış olan ders notları.
+
+1419
+01:41:30,579 --> 01:41:34,319
+Biz de Thomas Kalkulus'a bağlı olarak dersimiz anlatıyoruz.
+
+1420
+01:41:34,420 --> 01:41:36,439
+Yani bizim ders kitabımız gibi düşünebilirsiniz.
+
+1421
+01:41:38,340 --> 01:41:39,859
+İndirebilirsiniz de kitabı.
+
+1422
+01:41:40,519 --> 01:41:42,239
+Dolayısıyla o kadar.
+
+1423
+01:41:43,659 --> 01:41:47,579
+Hani işte dizilere falan girdiğinizde böyle çok daha detaylarla falan karşılaşabilirsiniz.
+
+1424
+01:41:48,500 --> 01:41:53,000
+Yani değişik kaynaklardan tabii ki soru çözmek amaçlı çalışabilirsiniz.
+
+1425
+01:41:53,259 --> 01:41:54,579
+İşte solution kısımlarından çalışabilirsiniz.
+
+1426
+01:41:55,539 --> 01:41:57,319
+Çok da faydası olacağını düşünüyorum.
+
+1427
+01:41:57,319 --> 01:42:05,340
+Ama hani çok da böyle şey konu olarak kendinizi yaymayın.
+
+1428
+01:42:05,439 --> 01:42:10,159
+Hani bizim konularımızda sınırları ders içeriğimizde ne diyoruz onu?
+
+1429
+01:42:11,559 --> 01:42:12,539
+Yüzlenceyle belli.
+
+1430
+01:42:13,979 --> 01:42:14,319
+Tamam mı?
+
+1431
+01:42:15,380 --> 01:42:16,340
+Kendinize iyi bakın.
+
+1432
+01:42:16,559 --> 01:42:18,340
+Önümüzdeki hafta görüşmek üzere diyorum.
+
+1433
+01:42:18,340 --> 01:42:40,840
+Teşekkürler.
