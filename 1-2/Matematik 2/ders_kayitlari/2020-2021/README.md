@@ -20,4 +20,5 @@
 | 31 | Bahar | Yasemin Alagöz | [sube_31/](sube_31/) |
 | 35 | Bahar | Bulunamadı | [sube_35/](sube_35/) |
 | 36 | Bahar | Nuran Güzel | [sube_36/](sube_36/) |
+| 50 | Bahar | İsmail (soyadı bulunamadı) | [sube_50/](sube_50/) |
 | 52 | Bahar | Muttalip Özavşar | [sube_52/](sube_52/) |
