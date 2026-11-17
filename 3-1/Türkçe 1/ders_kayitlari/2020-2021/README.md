@@ -15,3 +15,4 @@
 | 24 | Güz | Hilal Tufan | [sube_24/](sube_24/) |
 | 25 | Güz | Nurullah Arvas | [sube_25/](sube_25/) |
 | 26 | Güz | Nurullah Arvas | [sube_26/](sube_26/) |
+| 27 | Güz | Nurullah Arvas | [sube_27/](sube_27/) |
