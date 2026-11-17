@@ -1,0 +1,3683 @@
+1
+00:00:10,227 --> 00:00:11,548
+Günaydın arkadaşlar.
+
+2
+00:00:16,403 --> 00:00:21,304
+Katılım için ben bir 5 dakika bekleyeceğim. Ondan sonra derse başlayacağım.
+
+3
+00:05:32,211 --> 00:05:34,911
+Evet, tekrardan herkese günaydın.
+
+4
+00:05:37,271 --> 00:05:41,971
+Şimdi derse başlayacağız.
+
+5
+00:05:58,387 --> 00:06:02,907
+Evet, geçen hafta vektör uzayları konusuna başlamıştık arkadaşlar.
+
+6
+00:06:03,647 --> 00:06:07,187
+Şimdi bu hafta kaldığımız yerden devam ediyoruz.
+
+7
+00:06:08,787 --> 00:06:13,007
+Şöyle ki, şu teoremde kalmıştık.
+
+8
+00:06:13,427 --> 00:06:15,527
+V bir real vektör uzayı olsun.
+
+9
+00:06:15,847 --> 00:06:18,407
+Aşağıdaki ifadeler sağlanır diyoruz.
+
+10
+00:06:18,407 --> 00:06:28,987
+Birinci olarak her u eleman v için yani v kümesinden bir u elemanını alıyoruz.
+
+11
+00:06:30,668 --> 00:06:34,927
+0 yuvarlak çarpım u eşittir 0'a.
+
+12
+00:06:36,007 --> 00:06:38,827
+V burada neydi? Real vektör uzayıydı.
+
+13
+00:06:39,387 --> 00:06:44,247
+Şimdi vektör uzayları aksiyonlarından şunu hatırlayalım.
+
+14
+00:06:46,247 --> 00:06:47,407
+Şunu hatırlayalım.
+
+15
+00:06:47,407 --> 00:06:48,847
+Burada neydi?
+
+16
+00:06:49,207 --> 00:06:50,247
+U eleman v.
+
+17
+00:06:50,927 --> 00:06:52,227
+Her u eleman v.
+
+18
+00:06:52,747 --> 00:06:58,307
+Ve her c eleman r için c yuvarlak çarpım u eleman v idi.
+
+19
+00:06:58,847 --> 00:07:02,168
+Yani bu skaler çarpımın kapalıydı.
+
+20
+00:07:03,687 --> 00:07:07,187
+Burada.
+
+21
+00:07:08,107 --> 00:07:13,147
+Şimdi u eleman v ise buradaki 0 nedir?
+
+22
+00:07:13,847 --> 00:07:15,627
+C yerine geçiyor öyle değil mi?
+
+23
+00:07:15,627 --> 00:07:17,327
+C'de neyin elemanıydı?
+
+24
+00:07:17,327 --> 00:07:17,347
+Yani c de neyin elemanıydı?
+
+25
+00:07:17,347 --> 00:07:19,048
+Real sayıların elemanıydı.
+
+26
+00:07:19,467 --> 00:07:22,507
+O zaman 0 eleman real sayılardır.
+
+27
+00:07:23,007 --> 00:07:26,387
+Ve bu neye eşit olacaktır buradaki 0?
+
+28
+00:07:26,947 --> 00:07:28,447
+V'nin elemanıydır.
+
+29
+00:07:28,607 --> 00:07:29,147
+Öyle değil mi?
+
+30
+00:07:29,147 --> 00:07:32,908
+Çünkü c yuvarlak çarpım u eleman v idi.
+
+31
+00:07:32,908 --> 00:07:36,567
+O zaman bu 0 v'nin elemanı.
+
+32
+00:07:36,567 --> 00:07:40,147
+Yani real vektör uzayının elemanıdır.
+
+33
+00:07:40,548 --> 00:07:43,427
+Bu 0 ise real sayıdır.
+
+34
+00:07:43,987 --> 00:07:44,127
+Tamam.
+
+35
+00:07:44,127 --> 00:07:46,447
+Buradaki 0 real sayıdır.
+
+36
+00:07:47,108 --> 00:07:47,967
+İkinci şık.
+
+37
+00:07:48,267 --> 00:07:53,887
+Her c eleman r için c yuvarlak çarpım 0 eşit 0'dır.
+
+38
+00:07:54,387 --> 00:07:57,067
+Bu sefer buradaki 0 neyin elemanıdır?
+
+39
+00:07:57,507 --> 00:07:58,687
+V'nin elemanıdır.
+
+40
+00:07:59,147 --> 00:08:01,187
+Bu 0 da neyin elemanıdır?
+
+41
+00:08:01,288 --> 00:08:02,867
+Gene v'nin elemanıdır.
+
+42
+00:08:02,867 --> 00:08:14,408
+Eğer c yuvarlak çarpım u eşit 0 ise ya c 0'a eşittir ya da u 0'a eşittir.
+
+43
+00:08:15,288 --> 00:08:16,087
+4.
+
+44
+00:08:16,087 --> 00:08:27,048
+Her u eleman v için eksi 1 yuvarlak çarpım u eşit eksi u'dur diyoruz.
+
+45
+00:08:27,408 --> 00:08:29,827
+Şimdi bir tanımımız var.
+
+46
+00:08:30,307 --> 00:08:31,687
+Bu önemli bir tanım.
+
+47
+00:08:31,687 --> 00:08:35,807
+Alt uzay ya da alt vektör uzayı tanımı.
+
+48
+00:08:36,248 --> 00:08:39,467
+Bundan çok soru gelir arkadaşlar.
+
+49
+00:08:40,508 --> 00:08:44,148
+Bakın vektör uzaylarından hiç soru sorulmadı.
+
+50
+00:08:45,587 --> 00:08:50,467
+Yani finalde vektör uzaylarından epeyce ne soru bekleyiniz.
+
+51
+00:08:52,408 --> 00:08:54,587
+V bir real vektör uzayı.
+
+52
+00:08:55,248 --> 00:08:59,248
+W, V'nin boştan farklı bir alt kümesi olsun.
+
+53
+00:08:59,248 --> 00:09:03,807
+W boştan farklı bir alt kümesi olacak.
+
+54
+00:09:03,807 --> 00:09:04,427
+Tamam mı?
+
+55
+00:09:04,488 --> 00:09:07,207
+Hem boştan farklı ne olacak?
+
+56
+00:09:07,508 --> 00:09:08,687
+Bir alt kümesi olacak.
+
+57
+00:09:08,687 --> 00:09:20,087
+Eğer W, V'deki işlemlere göre bir vektör uzayı ise W'ya ne diyoruz?
+
+58
+00:09:20,467 --> 00:09:23,627
+V'nin alt uzayı deniliyor.
+
+59
+00:09:24,627 --> 00:09:28,687
+Bir alt uzayla.
+
+60
+00:09:24,307 --> 00:09:25,788
+Şimdi ne yapacağız?
+
+61
+00:09:25,967 --> 00:09:27,987
+İşte boştan farklı olduğunu göstereceğiz.
+
+62
+00:09:28,128 --> 00:09:29,908
+Alt küme olduğunu göstereceğiz.
+
+63
+00:09:30,587 --> 00:09:33,827
+Eğer bunlar bize söylenmediyse soruda.
+
+64
+00:09:34,508 --> 00:09:35,388
+Ne yapacağız?
+
+65
+00:09:35,548 --> 00:09:39,827
+Sonra bütün vektör uzayları aksiyonunu sağladığını mı göstereceğiz?
+
+66
+00:09:39,827 --> 00:09:40,487
+Hayır.
+
+67
+00:09:41,028 --> 00:09:44,607
+Şu teoremle ben işimi kısaltıyorum.
+
+68
+00:09:45,248 --> 00:09:48,668
+Yani bütün aksiyonları göstermeme gerek yok.
+
+69
+00:09:49,087 --> 00:09:50,048
+Ne yapacağız bakalım?
+
+70
+00:09:50,207 --> 00:09:51,548
+Şimdi teoremimize bir bakalım.
+
+71
+00:09:51,548 --> 00:09:57,528
+V bir real vektör uzayı, W, V'nin boştan farklı bir alt kümesi olsun.
+
+72
+00:09:58,028 --> 00:09:58,207
+Tamam?
+
+73
+00:09:59,427 --> 00:10:05,847
+Bu durumda W'nun, V'nin bir alt uzayı olması için gerek ve yeter koşul.
+
+74
+00:10:06,367 --> 00:10:08,587
+Birinci olarak şunu göstereceğim.
+
+75
+00:10:09,367 --> 00:10:12,668
+W'dan U ve V gibi iki tane eleman alacağım.
+
+76
+00:10:13,488 --> 00:10:17,367
+Ve yuvarlak toplamaya göre neyin elemanı olmalı bu?
+
+77
+00:10:17,847 --> 00:10:19,327
+W'nun elemanı olmalı.
+
+78
+00:10:19,327 --> 00:10:20,268
+Yani bu ne?
+
+79
+00:10:20,367 --> 00:10:23,327
+Yuvarlak toplama göre kapalılık.
+
+80
+00:10:24,327 --> 00:10:24,548
+Tamam?
+
+81
+00:10:24,867 --> 00:10:25,367
+Kapalı mı?
+
+82
+00:10:26,467 --> 00:10:36,488
+Sonra her U eleman W ve her C eleman R için C yuvarlak çarpım U eleman W.
+
+83
+00:10:36,488 --> 00:10:39,248
+Yani bu skaler çarpımın kapalılığı.
+
+84
+00:10:39,248 --> 00:10:39,768
+Tamam?
+
+85
+00:10:40,707 --> 00:10:45,248
+Bu iki kapalılık özelliği var mı?
+
+86
+00:10:45,447 --> 00:10:46,128
+Ona bakıyoruz.
+
+87
+00:10:46,268 --> 00:10:52,488
+Eğer ki bunlar varsa ve boştan farklı bir alt küme ise o zaman nedir?
+
+88
+00:10:52,587 --> 00:10:56,327
+W, V'nin alt uzayıdır diyeceğiz.
+
+89
+00:10:56,327 --> 00:11:00,987
+Şimdi örneğimize bakalım.
+
+90
+00:11:01,607 --> 00:11:06,607
+W derecesi 3 olan bütün polinomların kümesi olsun.
+
+91
+00:11:07,927 --> 00:11:08,148
+Tamam?
+
+92
+00:11:08,148 --> 00:11:11,528
+W, P'nin alt kümesidir.
+
+93
+00:11:11,528 --> 00:11:13,207
+P'n dediğim neydi?
+
+94
+00:11:13,648 --> 00:11:20,748
+P'n bütün polinomları içine alan polinomların vektör uzayı.
+
+95
+00:11:22,748 --> 00:11:25,768
+W de bunun alt kümesidir.
+
+96
+00:11:26,028 --> 00:11:26,168
+Niye?
+
+97
+00:11:26,648 --> 00:11:33,107
+Çünkü derecesi 3 olan bütün polinomları içine aldığı için P'nin alt kümesidir.
+
+98
+00:11:33,607 --> 00:11:33,788
+Tamam?
+
+99
+00:11:33,788 --> 00:11:37,867
+E boştan farklıdır zaten bunu da biliyoruz.
+
+100
+00:11:39,567 --> 00:11:39,867
+Peki.
+
+101
+00:11:40,587 --> 00:11:42,927
+Şimdi W'den iki tane eleman alalım.
+
+102
+00:11:44,867 --> 00:11:47,087
+Derecesi 3 olan polinom olacak.
+
+103
+00:11:49,227 --> 00:11:56,807
+Burada hani herhangi bir kısıt koymadığı için artılılarda, eksililerde nedir?
+
+104
+00:11:57,127 --> 00:12:00,028
+Bu W'nin elemanıdır.
+
+105
+00:12:00,367 --> 00:12:02,347
+O zaman ben şunu alabilirim.
+
+106
+00:12:02,347 --> 00:12:14,768
+3x küp artı 5x küp artı 5x küp eksi 4x eksi 2 ve eksi 3x küp eksi 5x küp artı 2x eksi 1.
+
+107
+00:12:15,748 --> 00:12:17,847
+Toplamaya göre kapalılığına bakacağım.
+
+108
+00:12:18,847 --> 00:12:24,727
+Topladığım zaman burada herhangi bir işlem tanımlamadığı için normal toplama işlemi yapıyorum.
+
+109
+00:12:24,728 --> 00:12:27,648
+Topladığım zaman ne olacak?
+
+110
+00:12:27,648 --> 00:12:30,827
+Bu eksi bu artı birbirini götürdü.
+
+111
+00:12:30,927 --> 00:12:33,707
+Bu artı bu eksi birbirini götürdü.
+
+112
+00:12:34,008 --> 00:12:34,988
+Geriye ne kaldı?
+
+113
+00:12:35,347 --> 00:12:38,947
+Eksi 2x eksi 3 kaldı.
+
+114
+00:12:39,508 --> 00:12:41,148
+E bunun derecesi nedir?
+
+115
+00:12:41,567 --> 00:12:42,187
+1'dir.
+
+116
+00:12:42,867 --> 00:12:46,908
+E W'nin elemanı olabilmesi için ne olması gerekiyordu derecesinin?
+
+117
+00:12:47,288 --> 00:12:48,707
+3 olması gerekiyordu.
+
+118
+00:12:48,707 --> 00:12:51,127
+Dolayısıyla nedir?
+
+119
+00:12:51,548 --> 00:12:54,067
+Toplamaya göre kapalı değildir.
+
+120
+00:12:54,187 --> 00:12:56,248
+B'nin elemanı değil çünkü.
+
+121
+00:12:56,768 --> 00:12:56,888
+Tamam.
+
+122
+00:12:57,408 --> 00:12:59,988
+Dolayısıyla bu ne değil?
+
+123
+00:13:00,648 --> 00:13:04,908
+Ve P'nin alt uzayı değildir diyoruz.
+
+124
+00:13:06,707 --> 00:13:07,748
+Anlaşıldı mı?
+
+125
+00:13:10,748 --> 00:13:12,827
+Anladık mı?
+
+126
+00:13:13,607 --> 00:13:14,248
+Evet hocam.
+
+127
+00:13:18,248 --> 00:13:19,607
+Başka bir örnek.
+
+128
+00:13:19,607 --> 00:13:20,607
+Anladık mı?
+
+129
+00:13:20,607 --> 00:13:49,607
+Evet hocam.
+
+130
+00:13:21,875 --> 00:13:25,235
+R üzeri 2'nin.
+
+131
+00:13:25,415 --> 00:13:27,475
+R üzeri 2 dediğim neydi arkadaşlar?
+
+132
+00:13:28,155 --> 00:13:30,355
+R üzeri 2, şurada 1 var.
+
+133
+00:13:31,155 --> 00:13:39,935
+Yani bu iki satır bir tane sütunu olan bütün matrisleri içine alan vektör uzayını söylüyor bana.
+
+134
+00:13:40,096 --> 00:13:40,456
+Tamam mı?
+
+135
+00:13:40,515 --> 00:13:41,935
+Buradaki 1 yazılmaz.
+
+136
+00:13:42,395 --> 00:13:46,235
+İki satır bir sütunluk bütün matrisleri içine alan vektör uzayı.
+
+137
+00:13:46,735 --> 00:13:48,216
+W ise neymiş?
+
+138
+00:13:48,216 --> 00:13:54,576
+W da yine 2 çarpı 1 ama özelliği olan bir matris olacak.
+
+139
+00:13:54,915 --> 00:14:02,295
+Yukarıda yani 1, 1 elemanı x, 2, 1 elemanı x artı 1 olacak.
+
+140
+00:14:03,035 --> 00:14:05,415
+X'ler de real sayıların elemanı.
+
+141
+00:14:05,735 --> 00:14:06,275
+Tamam mı?
+
+142
+00:14:06,275 --> 00:14:09,115
+Bu şekilde tanımlanan bir alt küme.
+
+143
+00:14:09,395 --> 00:14:09,875
+Öyle değil mi?
+
+144
+00:14:10,015 --> 00:14:11,375
+Bunun alt kümesidir.
+
+145
+00:14:11,956 --> 00:14:14,855
+Alt uzay olup olmadığını araştıralım.
+
+146
+00:14:16,076 --> 00:14:16,995
+Ne yapacağız o zaman?
+
+147
+00:14:16,995 --> 00:14:19,355
+Bu kümeden iki tane eleman alacağım.
+
+148
+00:14:20,596 --> 00:14:23,035
+Bu kümenin iki elemanı diyelim ki
+
+149
+00:14:23,035 --> 00:14:23,956
+A
+
+150
+00:14:23,956 --> 00:14:27,115
+Yukarıya A yazıyoruz.
+
+151
+00:14:27,336 --> 00:14:28,675
+Aşağısı A artı 1.
+
+152
+00:14:29,475 --> 00:14:29,696
+B
+
+153
+00:14:29,696 --> 00:14:31,535
+Yukarıya B yazıyorum.
+
+154
+00:14:31,735 --> 00:14:33,956
+Aşağıya B artı 1.
+
+155
+00:14:35,855 --> 00:14:36,495
+Tamam mı?
+
+156
+00:14:36,495 --> 00:14:38,056
+Bu iki vektörü düşünelim.
+
+157
+00:14:38,696 --> 00:14:39,336
+Ne yapacağız?
+
+158
+00:14:39,735 --> 00:14:41,975
+Şimdi toplamaya göre kapalılığına bakacağız.
+
+159
+00:14:41,975 --> 00:14:47,355
+Burada herhangi bir işlem tanımlanmadığı için normal matris toplamı yapıyorum.
+
+160
+00:14:48,956 --> 00:14:49,935
+Matris toplamı.
+
+161
+00:14:50,175 --> 00:14:54,556
+Topladığım zaman A artı B, A artı B artı 2 oldu.
+
+162
+00:14:55,096 --> 00:14:58,956
+Bu kümenin elemanı olması için şunun 1 olması lazım.
+
+163
+00:14:59,115 --> 00:15:03,975
+Yukarıda A artı B ise aşağıda da A artı B olacak ve artı 1 olacaktı.
+
+164
+00:15:03,975 --> 00:15:07,836
+Oysa ki burada 2 olduğu için nedir?
+
+165
+00:15:08,255 --> 00:15:10,135
+Bunun elemanı değildir.
+
+166
+00:15:10,415 --> 00:15:13,755
+Dolayısıyla ne değil?
+
+167
+00:15:13,935 --> 00:15:15,696
+Kapalılık sağlanmamış oluyor.
+
+168
+00:15:16,576 --> 00:15:17,336
+Tamam mı?
+
+169
+00:15:17,336 --> 00:15:21,655
+Kapalılık sağlanmadığından dolayı bir vektör uzayı değildir.
+
+170
+00:15:21,655 --> 00:15:24,615
+Alt uzayda zaten değildir.
+
+171
+00:15:26,836 --> 00:15:27,535
+Anlaşıldı mı?
+
+172
+00:15:32,947 --> 00:15:34,187
+Anladık mı arkadaşlar?
+
+173
+00:15:37,187 --> 00:15:38,867
+Var mı sorusu olan?
+
+174
+00:15:45,107 --> 00:15:59,387
+Peki, şimdi bundan sonra kolaylık olması açısından yuvarlak toplam yerine normal toplama, yuvarlak çarpma yerine de şu şekilde yazılacak.
+
+175
+00:16:00,947 --> 00:16:06,487
+Hani bunları gördüğünüz zaman ne oldu demeyin, bu şekilde gösterilecek.
+
+176
+00:16:07,487 --> 00:16:11,687
+Zaten işlem varsa o işlem tanımlanmış olacaktır.
+
+177
+00:16:11,687 --> 00:16:22,727
+Şimdi başka bir teorem, alt uzay olduğunu göstermek için şu iki maddenin kısaltılmış halidir şu teorem.
+
+178
+00:16:23,267 --> 00:16:27,267
+Ama ben gene de şunu kullanmanızı tavsiye ederim.
+
+179
+00:16:27,687 --> 00:16:33,667
+Çünkü öğrenciler şunu yaparken hata yapabiliyorlar.
+
+180
+00:16:33,927 --> 00:16:35,687
+Tamam mı? Hata yapabiliyorlar.
+
+181
+00:16:36,687 --> 00:16:40,327
+Onun için hani şunu da daha hatasız işlem yaparsınız.
+
+182
+00:16:40,327 --> 00:16:42,767
+Şimdi bu teoremi de söyleyeyim.
+
+183
+00:16:43,387 --> 00:16:48,967
+V bir real vektör uzayı ve W, V'nin boştan farklı bir alt kümesi olsun.
+
+184
+00:16:49,567 --> 00:17:02,707
+Bu durumda W'nun V'nin bir alt uzayı olması için gerek ve yeter koşul U, V eleman W ve her C, D eleman real sayılar için
+
+185
+00:17:02,707 --> 00:17:08,768
+C, U artı D, V eleman W olmasıdır.
+
+186
+00:17:08,768 --> 00:17:09,548
+Tamam mı?
+
+187
+00:17:09,847 --> 00:17:14,947
+Yani bu iki maddeyi tek madde haline getirdi bu teore.
+
+188
+00:17:15,447 --> 00:17:17,107
+Şimdi başka bir örnek.
+
+189
+00:17:17,107 --> 00:17:47,107
+2 çarpı 2
+
+190
+00:17:47,107 --> 00:18:04,827
+alt uzayı mıdır? Şimdi soru bu. Bu W alt uzay mı? Peki alt kümesi olduğunu bana soru da söylemiş zaten. Alt kümesi mi boştan farklı mı diye bakmama gerek yok. Onun için bu soru da bana bunu zaten söylemiş.
+
+191
+00:18:04,827 --> 00:18:25,707
+Şimdi ne yapıyoruz o zaman? Bu kümeden iki tane eleman alıyorum. A1 A1 B1 eksi B1 A2 A2 B2 eksi B2. Eleman W. Toplamaya göre kapalı mı? Herhangi bir işlem tanımlanmadığı için normal matris toplamı yapıyorum.
+
+192
+00:18:25,707 --> 00:18:43,667
+A1 A2 eksi parantezinde B1 B2 B1 B2 A1 A2 Bakıyoruz bunlar aynı. Bu bunun ters işaretlisi o zaman eleman W. W'nun elemanıdır.
+
+193
+00:18:44,228 --> 00:18:54,528
+Demek ki toplamaya göre kapalılık sağlandı. İkinci şık neydi? Skalar çarpıma göre kapalılık. Peki o zaman C eleman real sayıları aldık.
+
+194
+00:18:54,528 --> 00:19:05,407
+Ve gene W'dan bir eleman aldım. A1 A1 B1 eksi B1. İşlem tanımlanmadığı için normal çarpma işlemi yapıyorum matris çarpımı.
+
+195
+00:19:06,208 --> 00:19:14,248
+Matrisle skaların çarpımı neydi? Tüm elemanların çarpılmasıydı. Tüm elemanları çarptık. Bakıyoruz bunlar aynı. Bu bunun ters işaretlisi.
+
+196
+00:19:14,248 --> 00:19:23,587
+O zaman bu da W'nun elemanıdır. İki şıkkı da sağladığı için W M22'nin alt uzayıdır diyoruz.
+
+197
+00:19:23,587 --> 00:19:25,867
+Tamam. Anlaşıldı mı?
+
+198
+00:19:30,740 --> 00:19:40,960
+Peki, şimdi ben size örnek atacağım.
+
+199
+00:20:14,483 --> 00:20:21,563
+Şimdi arkadaşlar konulara devam edeceğim.
+
+200
+00:20:23,543 --> 00:20:27,283
+O attığım örnekleri konular ilerledikçe örnek atacağım.
+
+201
+00:20:27,523 --> 00:20:29,923
+Attığım örnekleri lütfen siz çözünüz.
+
+202
+00:20:32,703 --> 00:20:38,343
+Bir haftamız hani tatille gittiği için hani bir hafta süremiz daraldı.
+
+203
+00:20:38,343 --> 00:20:51,503
+Ben öncelikle konuları yetiştirip yani aralarda örnek yapıyorum gördüğünüz üzere ama daha fazla örnek yapmam için hani önce konuları bir bitireceğim sonra kalan zamanımı örneğe ayıracağım.
+
+204
+00:20:51,963 --> 00:20:58,783
+Onun için yapacağım normalde yapacağım bütün örnekleri ben size yollayacağım.
+
+205
+00:20:58,923 --> 00:21:00,823
+Yolladım ve yollamaya devam edeceğim.
+
+206
+00:21:01,163 --> 00:21:04,163
+Siz bu yolladığım örnekleri lütfen çözünüz.
+
+207
+00:21:04,163 --> 00:21:15,644
+Çözemediğiniz herhangi kafanızın takıldığı herhangi bir örnek olursa da en azından onu bana sorarsınız.
+
+208
+00:21:15,903 --> 00:21:18,523
+Hocam şunları çözer misiniz dersiniz.
+
+209
+00:21:18,843 --> 00:21:21,843
+Hani öncelik o soruları çözmeye veririm.
+
+210
+00:21:23,423 --> 00:21:27,163
+Şimdi devam ediyorum konularıma.
+
+211
+00:21:57,163 --> 00:21:59,463
+Birleşimi olarak yazılır denir.
+
+212
+00:21:59,903 --> 00:22:11,403
+Yani bana bir v vektörü verildiğinde bu v vektörünü ben diğer vektörler cinsinden ifade edebiliyorsam şu şekilde o zaman bu gösterildim.
+
+213
+00:22:11,703 --> 00:22:12,124
+Ne diyor?
+
+214
+00:22:12,443 --> 00:22:17,624
+Bana lineer kombinasyonu lineer birleşimi olarak yazılması diyor.
+
+215
+00:22:17,624 --> 00:22:22,203
+Şimdi örnek diyelim.
+
+216
+00:22:23,203 --> 00:22:23,683
+Örnek.
+
+217
+00:22:25,543 --> 00:22:29,703
+R3'te bir v vektörü yani bu nedir?
+
+218
+00:22:29,803 --> 00:22:33,983
+Üç tane satırı bir tane sütunu olan bütün matrizleri içine alan vektör uzayı.
+
+219
+00:22:34,783 --> 00:22:36,923
+V vektörü şöyle olsun.
+
+220
+00:22:36,923 --> 00:22:46,263
+Bu v vektörünün v1, v2, v3 vektörlerinin lineer kombinasyonu olarak yazılabildiğini gösteriniz.
+
+221
+00:22:47,103 --> 00:22:48,043
+Tamam soru bu.
+
+222
+00:22:48,543 --> 00:22:49,644
+O zaman ne yapacağım?
+
+223
+00:22:50,163 --> 00:22:57,063
+V eşittir c1, v1 artı c2, v2 artı c3, v3 diyeceğim.
+
+224
+00:22:57,703 --> 00:23:03,844
+Sonra v1'i, v2'yi, v3'ü ve v'yi götürüp burada yerine yazıyorum.
+
+225
+00:23:03,844 --> 00:23:08,243
+Yerine yazdığım zaman karşıma ne çıkıyor?
+
+226
+00:23:08,423 --> 00:23:10,203
+Lineer denklem sistemi çıkıyor.
+
+227
+00:23:10,844 --> 00:23:14,223
+Ve bu lineer denklem sistemini çözüyorum.
+
+228
+00:23:15,144 --> 00:23:28,163
+Bu lineer denklem sisteminin çözümü varsa o zaman v vektörü v1, v2, v3 vektörlerinin lineer kombinasyonu olarak yazılabiliyor demektir.
+
+229
+00:23:28,163 --> 00:23:33,723
+Eğer ki çözümü yoksa bu sistemin o zaman yazılamıyor demektir.
+
+230
+00:23:34,443 --> 00:23:34,624
+Tamam?
+
+231
+00:23:36,364 --> 00:23:39,624
+Bunu çözdüğümüz zaman biz neyi bulmuşuz?
+
+232
+00:23:39,703 --> 00:23:41,583
+Yani bunu yok etme ile de çözebilirsin.
+
+233
+00:23:42,183 --> 00:23:47,503
+C1'i 1, C2'yi 1 ve C3'ü 2 olarak bulmuşuz.
+
+234
+00:23:48,063 --> 00:23:53,223
+Bu bulduğumuz C1, C2, C3'leri götürüp burada yerine yazıyorum.
+
+235
+00:23:53,223 --> 00:23:57,803
+Yerine yazdığım zaman şunu elde ediyorum.
+
+236
+00:23:58,144 --> 00:24:06,243
+Yani v vektörünü v1, v2, v3 vektörünün lineer kombinasyonu olarak yazılabildiğini göstermiş oldum.
+
+237
+00:24:06,243 --> 00:24:09,183
+Başka bir tanım.
+
+238
+00:24:09,183 --> 00:24:36,183
+Evet.
+
+239
+00:24:13,011 --> 00:24:17,011
+V vektör uzayında S eşittir.
+
+240
+00:24:17,692 --> 00:24:21,051
+V1, V2, Vm.
+
+241
+00:24:22,392 --> 00:24:24,571
+V'deki vektörlerin kümesi olsun.
+
+242
+00:24:24,571 --> 00:24:38,791
+S'deki vektörlerin tüm lineer kombinasyonlarından oluşan şu küme V'nin bir vektör uzayıdır.
+
+243
+00:24:38,791 --> 00:24:47,932
+Ve bu küme bir alt uzaydır.
+
+244
+00:24:48,531 --> 00:24:56,951
+Bu alt uzaya S kümesinin gerdiği ya da ürettiği alt uzay denilir.
+
+245
+00:24:56,951 --> 00:25:08,571
+Demek ki şu S kümesinin gerdiği ya da ürettiği alt uzay bana sorulduğu zaman ne yapacağım?
+
+246
+00:25:08,912 --> 00:25:13,091
+Lineer kombinasyonu olarak ifade edeceğim.
+
+247
+00:25:14,891 --> 00:25:18,932
+Yani lineer kombinasyonu olarak nasıl ifade ediyorduk?
+
+248
+00:25:19,231 --> 00:25:19,371
+Şu.
+
+249
+00:25:19,371 --> 00:25:21,491
+Tamam.
+
+250
+00:25:21,491 --> 00:25:25,851
+Yani hep birbirinin üstüne bu bilgileri inşa edeceğiz.
+
+251
+00:25:26,251 --> 00:25:27,932
+Lütfen dikkatle dinleyin.
+
+252
+00:25:28,271 --> 00:25:29,831
+Esasında çok kolay.
+
+253
+00:25:30,451 --> 00:25:34,672
+Ama hani bir ipin ucu kaçarsa sonra yakalayamazsınız.
+
+254
+00:25:36,871 --> 00:25:41,932
+V3 vektör uzayının alt kümesi şu şekilde verilmiş.
+
+255
+00:25:42,831 --> 00:25:44,731
+Buradaki vektörler nelermiş?
+
+256
+00:25:45,152 --> 00:25:47,211
+V1, V2, V3 vektörleri diyelim.
+
+257
+00:25:47,491 --> 00:25:47,951
+Tamam mı?
+
+258
+00:25:47,951 --> 00:25:49,711
+Alt kümesi bu.
+
+259
+00:25:50,871 --> 00:26:02,511
+Şimdi bana diyor ki V vektörünün S'nin ürettiği alt uzaya ait olduğunu gösteriniz.
+
+260
+00:26:02,511 --> 00:26:09,951
+Şimdi bu V vektörünün S'nin ürettiği alt uzaya ait olması demek ne demek?
+
+261
+00:26:10,811 --> 00:26:13,231
+Buradaki vektörlerin öyle değil mi?
+
+262
+00:26:13,351 --> 00:26:19,791
+Buradaki vektörlerin lineer kombinasyonuna o V'nin eşit olması demektir.
+
+263
+00:26:19,791 --> 00:26:22,231
+Yani şu demektir.
+
+264
+00:26:22,231 --> 00:26:28,031
+O zaman götürüp bunu yerli yerine yazıyoruz.
+
+265
+00:26:28,172 --> 00:26:29,071
+V'yi yazdık.
+
+266
+00:26:29,311 --> 00:26:30,672
+C1, V1.
+
+267
+00:26:31,132 --> 00:26:32,551
+C2, V2.
+
+268
+00:26:32,551 --> 00:26:35,551
+C3, V3 dedik.
+
+269
+00:26:35,551 --> 00:26:37,351
+Tamam.
+
+270
+00:26:37,351 --> 00:26:39,291
+Karşıma gene ne çıktı?
+
+271
+00:26:39,891 --> 00:26:41,991
+Lineer denklem sistemi çıktı.
+
+272
+00:26:42,551 --> 00:26:45,692
+Bu lineer denklem sistemini çözüyoruz.
+
+273
+00:26:45,692 --> 00:26:51,351
+çözümü varsa o zaman V neye aittir?
+
+274
+00:26:51,351 --> 00:26:54,271
+S'nin ürettiği alt uzaya aittir.
+
+275
+00:26:54,991 --> 00:27:06,011
+Eğer ki bu sistemin çözümü yoksa o zaman S'nin ürettiği alt uzaya yani şuna ait değildir diyoruz.
+
+276
+00:27:06,011 --> 00:27:16,412
+Bu sistemi çözdüğüm zaman lineer denklem sistemini çözdüğüm zaman C1'i 3, C2'yi 4, C3'ü eksi 1 bulmuşum.
+
+277
+00:27:19,211 --> 00:27:24,491
+Dolayısıyla V vektörü S'deki vektörlerin neymiş?
+
+278
+00:27:24,611 --> 00:27:26,451
+Lineer kombinasyonuymuş.
+
+279
+00:27:27,491 --> 00:27:28,791
+Bu da bana neyi söylüyor?
+
+280
+00:27:29,051 --> 00:27:33,652
+S'nin ürettiği alt uzayda olduğunu söylüyor.
+
+281
+00:27:36,011 --> 00:27:37,851
+Anladık mı?
+
+282
+00:27:42,867 --> 00:27:43,788
+Anlamayan
+
+283
+00:27:48,788 --> 00:27:51,067
+Galiba senle ikimiz ders yapıyoruz.
+
+284
+00:27:51,248 --> 00:27:52,668
+Bir senin sesini duyuyorum.
+
+285
+00:27:53,147 --> 00:27:54,948
+Seninkini de çok derinden duyuyorum.
+
+286
+00:27:55,468 --> 00:27:56,548
+Sakın sen de uyuma.
+
+287
+00:27:56,907 --> 00:27:57,748
+Yok hocam uyumuyorum.
+
+288
+00:27:58,768 --> 00:28:00,587
+Öbür günler uyudu herhalde.
+
+289
+00:28:00,668 --> 00:28:01,768
+58 kişi var.
+
+290
+00:28:02,127 --> 00:28:03,807
+Ama kimseden sesle daha yok.
+
+291
+00:28:06,548 --> 00:28:08,087
+Uykuda mıyız arkadaşlar?
+
+292
+00:28:09,107 --> 00:28:09,627
+Yok hocam.
+
+293
+00:28:09,728 --> 00:28:11,288
+Sadece konuşacak enerjimiz yok.
+
+294
+00:28:11,847 --> 00:28:12,048
+He?
+
+295
+00:28:12,827 --> 00:28:14,188
+Yok hocam uyumuyoruz.
+
+296
+00:28:14,268 --> 00:28:15,907
+Sadece konuşacak enerjimiz yok.
+
+297
+00:28:15,907 --> 00:28:18,268
+Aman enerjiniz yerine gelsin.
+
+298
+00:28:18,347 --> 00:28:20,668
+Lütfen bak bu konular çok önemli çünkü.
+
+299
+00:28:22,708 --> 00:28:24,268
+Enerjinizi toparlayın.
+
+300
+00:28:24,347 --> 00:28:25,867
+Geçen hafta tatildi zaten.
+
+301
+00:28:28,228 --> 00:28:28,567
+Peki.
+
+302
+00:28:29,208 --> 00:28:30,048
+Devam ediyoruz.
+
+303
+00:28:30,307 --> 00:28:30,768
+Örnek.
+
+304
+00:28:31,647 --> 00:28:32,807
+P2 uzayında.
+
+305
+00:28:33,147 --> 00:28:34,887
+P2 dediğim neydi arkadaşlar?
+
+306
+00:28:35,768 --> 00:28:42,268
+Derecesi 2 olan bütün polinomları içine alan vektör uzayıydı.
+
+307
+00:28:42,268 --> 00:28:44,367
+P2 uzayında.
+
+308
+00:28:44,367 --> 00:28:47,627
+S kümesi şu şekilde verilmiş.
+
+309
+00:28:49,248 --> 00:28:50,307
+Buradaki vektörlerin.
+
+310
+00:28:50,407 --> 00:28:52,367
+V1, V2, V3, V4.
+
+311
+00:28:52,807 --> 00:28:53,488
+Olsun.
+
+312
+00:28:54,827 --> 00:28:55,968
+V eşittir.
+
+313
+00:28:56,708 --> 00:28:58,048
+V vektörü.
+
+314
+00:28:58,708 --> 00:29:01,048
+T kare artı T artı 2.
+
+315
+00:29:01,048 --> 00:29:03,147
+Bu V.
+
+316
+00:29:03,147 --> 00:29:07,748
+Bu V, S'nin ürettiği alt uzaya ait midir?
+
+317
+00:29:08,107 --> 00:29:08,607
+Soru bu.
+
+318
+00:29:08,907 --> 00:29:13,107
+S'nin ürettiği alt uzaya ait midir?
+
+319
+00:29:13,907 --> 00:29:14,907
+Peki arkadaşlar.
+
+320
+00:29:15,768 --> 00:29:18,648
+Ne olması lazım buna ait olabilmesi için?
+
+321
+00:29:19,107 --> 00:29:25,067
+Buradaki vektörlerin lineer kombinasyonunun V'ye eşit olması lazım.
+
+322
+00:29:25,508 --> 00:29:25,708
+Tamam.
+
+323
+00:29:25,708 --> 00:29:27,307
+V eşittir.
+
+324
+00:29:27,668 --> 00:29:34,968
+C1, V1 artı C2, V2 artı C3, V3 artı C4, V4.
+
+325
+00:29:35,807 --> 00:29:36,028
+Tamam.
+
+326
+00:29:36,928 --> 00:29:41,168
+Götürdük bunları yerlerine yazdık.
+
+327
+00:29:42,847 --> 00:29:47,728
+Yazdıktan sonra polinom eşitliğinden yararlanacağım ben burada.
+
+328
+00:29:48,407 --> 00:29:49,728
+Burada T kare var.
+
+329
+00:29:49,867 --> 00:29:51,188
+T kare parantezini alıyorum.
+
+330
+00:29:51,347 --> 00:29:51,807
+T var.
+
+331
+00:29:51,928 --> 00:29:53,188
+T parantezini alıyorum.
+
+332
+00:29:53,188 --> 00:29:53,948
+2 var.
+
+333
+00:29:54,087 --> 00:29:55,407
+2 parantezini alıyorum.
+
+334
+00:29:56,887 --> 00:30:04,367
+Şimdi bunları parantezlere aldığım zaman T kare bunlar sabit terimler.
+
+335
+00:30:04,847 --> 00:30:05,968
+Neye eşitmiş bu?
+
+336
+00:30:06,688 --> 00:30:07,627
+Bire eşitmiş.
+
+337
+00:30:08,468 --> 00:30:08,668
+Tamam.
+
+338
+00:30:11,648 --> 00:30:14,807
+T'nin yanındaki sabit terim o da bire eşit.
+
+339
+00:30:15,268 --> 00:30:16,148
+Bunu da yazdım.
+
+340
+00:30:17,268 --> 00:30:19,508
+Bu da sabiti.
+
+341
+00:30:19,847 --> 00:30:21,107
+Sabitte neye eşit?
+
+342
+00:30:21,107 --> 00:30:22,307
+2'ye eşit.
+
+343
+00:30:23,188 --> 00:30:24,407
+Tamam.
+
+344
+00:30:24,407 --> 00:30:27,127
+Yani şunlar real sayılardı.
+
+345
+00:30:27,887 --> 00:30:29,867
+Bu da sabit terimdi polinomda.
+
+346
+00:30:30,567 --> 00:30:32,168
+Şunları yerli yerine yazdık.
+
+347
+00:30:32,607 --> 00:30:35,347
+Yazdıktan sonra karşıma ne çıktı?
+
+348
+00:30:36,067 --> 00:30:38,008
+Bir lineer denklem sistemi çıktı.
+
+349
+00:30:38,728 --> 00:30:40,148
+3 tane denklem var.
+
+350
+00:30:40,627 --> 00:30:43,968
+4 tane bilinmeyeni olan bir lineer denklem sistemi.
+
+351
+00:30:43,968 --> 00:30:46,827
+Burada iki durum söz konusudur.
+
+352
+00:30:46,827 --> 00:30:48,087
+Tek çözüm yok.
+
+353
+00:30:48,887 --> 00:30:54,708
+Ya çözümsüz olacak bu sistem ya da sonsuz çözüm olacaktır.
+
+354
+00:30:55,127 --> 00:30:55,268
+Tamam.
+
+355
+00:30:55,268 --> 00:31:00,448
+Şimdi bu lineer denklem sistemini çözdüğümüz zaman arkadaşlar.
+
+356
+00:31:00,448 --> 00:31:04,168
+A'nın rangı 1, 2.
+
+357
+00:31:04,168 --> 00:31:08,668
+A, B'nin rangı 1, 2, 3'tür.
+
+358
+00:31:09,307 --> 00:31:11,468
+O zaman ranklar birbirine eşit.
+
+359
+00:31:12,307 --> 00:31:13,907
+Sistemin çözümü yoktur.
+
+360
+00:31:14,407 --> 00:31:20,647
+Dolayısıyla V, S'nin ürettiği alt uzaya ait değildir.
+
+361
+00:31:20,648 --> 00:31:21,708
+Tamam.
+
+362
+00:31:22,607 --> 00:31:23,428
+Burada değil.
+
+363
+00:31:24,028 --> 00:31:27,968
+Ve S'nin ürettiği alt uzay da değildir.
+
+364
+00:31:28,748 --> 00:31:29,488
+Anlaşıldı mı?
+
+365
+00:31:34,367 --> 00:31:36,407
+Peki devam ediyorum.
+
+366
+00:31:41,523 --> 00:31:56,443
+Tanım, V vektör uzayında V1, V2, Vm, M tane vektör ve C1, C2, Cm, M tane skaler için.
+
+367
+00:31:57,703 --> 00:32:03,783
+C1, V1, C2, V2, Cm, Vm eşittir 0.
+
+368
+00:32:06,963 --> 00:32:09,123
+İfadesi bu ifade.
+
+369
+00:32:09,123 --> 00:32:24,543
+Sadece C1, C2, C3, Cm'lerin 0 olmasıyla bu ifade sağlanıyorsa V1, V2, Vm vektörlerine lineer bağımsızdır deniliyor.
+
+370
+00:32:25,563 --> 00:32:38,143
+Eğer ki bu ifade C'lerden en az bir tanesi 0'dan farklı iken sağlanıyorsa o zaman V1, V2, Vm vektörlerine lineer bağımlıdır deniliyor.
+
+371
+00:32:38,143 --> 00:32:51,823
+Yani arkadaşlar şimdi C'lerin, şuradaki C'lerin tamamı 0 iken bu 0'a eşit oluyorsa yani bu ne demek?
+
+372
+00:32:52,183 --> 00:32:55,003
+Bunlar kendi aralarında zaten 0'ı veriyor.
+
+373
+00:32:55,543 --> 00:32:58,763
+Hiçbirinin diğerine ihtiyacı yok 0 olabilmek için.
+
+374
+00:32:59,283 --> 00:33:02,663
+Dolayısıyla bu vektörler nedir?
+
+375
+00:33:02,903 --> 00:33:04,723
+Lineer bağımsızdır diyoruz.
+
+376
+00:33:04,723 --> 00:33:06,963
+Şimdi sayılardan örnek vereyim.
+
+377
+00:33:07,683 --> 00:33:09,183
+6 0'a eşit değil.
+
+378
+00:33:09,883 --> 00:33:11,783
+Eksi 6 da 0'a eşit değil.
+
+379
+00:33:12,483 --> 00:33:13,003
+Tamam mı?
+
+380
+00:33:14,343 --> 00:33:17,183
+Ama 0 olsun istiyorum.
+
+381
+00:33:17,683 --> 00:33:21,863
+O zaman 6'nın eksi 6'ya ihtiyacı var 0 olabilmek için.
+
+382
+00:33:21,943 --> 00:33:22,403
+Öyle değil mi?
+
+383
+00:33:22,743 --> 00:33:26,343
+6 eksi 6'ya bağımlıdır 0 olabilmek için.
+
+384
+00:33:26,343 --> 00:33:29,163
+Burada da aynı şey.
+
+385
+00:33:29,163 --> 00:33:39,183
+Şimdi diyoruz ki C'lerden en az bir tanesi 0'dan farklı iken bu gene 0 oluyorsa o zaman nedir?
+
+386
+00:33:39,723 --> 00:33:42,243
+Vektörler lineer bağımlıdır diyoruz.
+
+387
+00:33:42,243 --> 00:33:46,483
+Herhalde anlaşıldı diyorum.
+
+388
+00:33:48,303 --> 00:33:53,743
+Örnek R3'te 3 tane vektör şu olsun.
+
+389
+00:33:55,183 --> 00:33:58,343
+Bu vektörlerin lineer bağımsız olduğunu göster diyor.
+
+390
+00:33:58,803 --> 00:34:01,623
+Şimdi lineer bağımsız olabilme şartı neydi?
+
+391
+00:34:01,623 --> 00:34:06,383
+C1 V1 C2 V2 artı C3 V3 eşittir 0'dı.
+
+392
+00:34:06,403 --> 00:34:06,883
+Tamam mı?
+
+393
+00:34:08,663 --> 00:34:16,864
+Buradaki C1 C2 C3'lerin tamamının 0 olması lazım ki vektörler lineer bağımsız olsun.
+
+394
+00:34:20,043 --> 00:34:24,623
+Şimdi V1'i V2'yi V3'ü götürdük yerine yazdık.
+
+395
+00:34:25,083 --> 00:34:26,423
+Tabi bu 0 ne olacaktır?
+
+396
+00:34:26,503 --> 00:34:28,183
+0 0 0 olacaktır.
+
+397
+00:34:28,764 --> 00:34:28,983
+Tamam.
+
+398
+00:34:29,304 --> 00:34:30,364
+R3 olduğu için.
+
+399
+00:34:30,364 --> 00:34:34,384
+Şimdi bunu toparlarsak ne olacak?
+
+400
+00:34:34,563 --> 00:34:37,683
+C1 C2 C3 eşittir 0'a.
+
+401
+00:34:37,804 --> 00:34:41,963
+C1 2 C2 C3 yok eşittir 0'a.
+
+402
+00:34:42,364 --> 00:34:45,884
+C1 C2 eksi C3 eşittir 0'a.
+
+403
+00:34:46,324 --> 00:34:47,523
+Karşıma ne çıktı?
+
+404
+00:34:47,703 --> 00:34:49,423
+Homojen denklem sistemi çıktı.
+
+405
+00:34:49,943 --> 00:34:54,304
+Homojen denklem sisteminin biz biliyoruz ki her zaman çözümü vardı.
+
+406
+00:34:54,443 --> 00:34:56,403
+Çözümsüzlük burada mümkün değildi.
+
+407
+00:34:56,663 --> 00:34:57,583
+Öyle değil mi arkadaşlar?
+
+408
+00:34:57,583 --> 00:35:00,643
+Şimdi biz bu soruyu iki türlü çözebiliriz.
+
+409
+00:35:00,643 --> 00:35:05,103
+Ya bu lineer denklem sistemini çözerim.
+
+410
+00:35:05,103 --> 00:35:09,183
+C1 C2 C3'ün 0'a eşit olduğunu gösteririm.
+
+411
+00:35:09,183 --> 00:35:12,403
+Ya da rank tanımını kullanırım.
+
+412
+00:35:12,403 --> 00:35:14,683
+Şimdi 0 0.
+
+413
+00:35:14,683 --> 00:35:32,824
+0 0.
+
+414
+00:35:32,824 --> 00:35:40,824
+0.
+
+415
+00:35:16,052 --> 00:35:43,112
+Çözüm olması. Öyle değil mi? Şu nedir? Sıfır çözüm. Sıfır çözüm ne zaman oluyordu? Tek çözüm olduğu zaman. Tek çözüm şartı neydi? Rangın n'e eşit olduğu zaman sıfır çözüm oluyordu. n kaç burada? n 3. 1, 2, 3 tane bilinmeyen var. O zaman rank 3'e eşit olsun diyorum. Rangın 3'e eşit olması için ne olması lazım? 3 çarpı 3 determinantım sıfırdan farklı olmalı.
+
+416
+00:35:43,112 --> 00:36:10,952
+O zaman 3 çözüm. O zaman 3 çözüm. O zaman 3 çözüm. O zaman 3 çarpı 3 determinant nedir? Zaten buradaki kat sayılar matrisinin determinantıdır. Bunu alıyorum. 1, 1, 1, 1, 2, 0, 1, 1, 1, 1, 2. Bu determinantı alıyorum. Determinantı aldığımda bunun eksi 3'e çıktığını görüyorum. Yani sıfırdan farklıdır. Dolayısıyla nedir? C1, C2, C3, 0'a eşittir.
+
+417
+00:36:10,952 --> 00:36:17,312
+Bu vektörler lineer bağımsızdır diyoruz. Anladık mı?
+
+418
+00:36:22,291 --> 00:36:23,991
+Peki devam ediyoruz.
+
+419
+00:36:25,271 --> 00:36:26,231
+Başka bir örnek.
+
+420
+00:36:27,132 --> 00:36:32,672
+P2 uzayında S kümesi şu şekilde tanımlanmış.
+
+421
+00:36:33,592 --> 00:36:34,951
+Şu vektörler verilmiş.
+
+422
+00:36:35,331 --> 00:36:36,931
+P2 uzayı dediğim neydi?
+
+423
+00:36:36,931 --> 00:36:43,291
+Derecesi 2 olan bütün polinomları içine alan vektör uzayı.
+
+424
+00:36:44,711 --> 00:36:46,092
+Vektörler bunlar.
+
+425
+00:36:47,711 --> 00:36:50,811
+Kümesinin lineer bağımsız olup olmadığını araştırınız.
+
+426
+00:36:50,811 --> 00:36:53,471
+Şimdi lineer bağımsız olma şartı neydi?
+
+427
+00:36:53,711 --> 00:36:56,911
+C1, B1, C2, B2, C3, B3 eşittir sıfır.
+
+428
+00:36:57,331 --> 00:37:01,891
+C1, C2, C3 eşit sıfır olmalı ki lineer bağımsız olsun.
+
+429
+00:37:01,891 --> 00:37:07,052
+Şimdi götürüyoruz B1, B2, B3 vektörlerini yerine yazıyoruz.
+
+430
+00:37:07,511 --> 00:37:09,531
+Bu sıfır dediğimde nedir?
+
+431
+00:37:10,132 --> 00:37:15,592
+P2 uzayı olduğu için 0x kare artı 0x artı sıfırdı.
+
+432
+00:37:15,592 --> 00:37:23,072
+Buradan bunu x kare x ve sabit terim parantezine alıyorum.
+
+433
+00:37:24,132 --> 00:37:26,911
+Gene polinom eşitliğinden yararlanıyorum.
+
+434
+00:37:26,911 --> 00:37:32,291
+x karenin kat sayısı 0'a eşit.
+
+435
+00:37:33,011 --> 00:37:35,192
+x'in kat sayısı 0'a eşit.
+
+436
+00:37:35,311 --> 00:37:38,371
+Sabit terimin kat sayısı 0'a eşit.
+
+437
+00:37:39,132 --> 00:37:41,592
+Bunu yazdığımda karşıma ne çıktı?
+
+438
+00:37:42,011 --> 00:37:43,871
+Homojen denklem sistemi çıktı.
+
+439
+00:37:43,871 --> 00:37:49,471
+Ya bunu bu sistemi çözerim.
+
+440
+00:37:50,471 --> 00:37:54,051
+C1, C2, C3'ün 0'a eşit olduğunu bulurum.
+
+441
+00:37:54,771 --> 00:37:56,971
+Ya da ne yaparım?
+
+442
+00:37:58,731 --> 00:38:00,551
+R eşit öyle değil mi?
+
+443
+00:38:01,092 --> 00:38:04,271
+R eşit n olmalı tek çözüm.
+
+444
+00:38:05,891 --> 00:38:07,511
+Sıfır çözüm olması için.
+
+445
+00:38:07,511 --> 00:38:12,011
+n burada kaç?
+
+446
+00:38:12,431 --> 00:38:13,672
+C1, C2, C3.
+
+447
+00:38:14,132 --> 00:38:14,771
+n 3.
+
+448
+00:38:15,152 --> 00:38:16,592
+Rank 3'e eşit olmalı.
+
+449
+00:38:16,951 --> 00:38:18,672
+Yani 3x3.
+
+450
+00:38:19,511 --> 00:38:22,251
+Determinantın 0'dan farklı olmalı.
+
+451
+00:38:23,172 --> 00:38:25,652
+İki türlü bunu yapabilirim.
+
+452
+00:38:25,652 --> 00:38:28,791
+Şimdi burada sistemi çözmüşüz.
+
+453
+00:38:29,072 --> 00:38:30,652
+Sistemi çözdüğümüzde,
+
+454
+00:38:31,172 --> 00:38:33,132
+burada ikinci yöntemle yapılmış,
+
+455
+00:38:33,132 --> 00:38:38,231
+C1, C2, C3'ün 0'a eşit olduğu görülmüş.
+
+456
+00:38:38,951 --> 00:38:39,192
+Tamam.
+
+457
+00:38:41,032 --> 00:38:43,011
+Şimdi teorem diyelim.
+
+458
+00:38:43,371 --> 00:38:43,851
+Teorem.
+
+459
+00:38:44,532 --> 00:38:45,811
+V vektör uzayında
+
+460
+00:38:45,811 --> 00:38:48,551
+V1, V2, Vm
+
+461
+00:38:48,551 --> 00:38:51,251
+lineer bağımlı M tane vektör olsun.
+
+462
+00:38:51,251 --> 00:38:54,251
+Bu vektörlerden bazıları
+
+463
+00:38:54,771 --> 00:38:57,331
+diğer M-1 vektörün
+
+464
+00:38:57,331 --> 00:39:00,731
+lineer kombinasyonu olarak ifade edilebilir.
+
+465
+00:39:00,731 --> 00:39:03,491
+Şimdi bu teoremin söylediği ne?
+
+466
+00:39:04,491 --> 00:39:05,991
+M tane vektörüm var.
+
+467
+00:39:06,431 --> 00:39:07,931
+Bu M tane vektör
+
+468
+00:39:07,931 --> 00:39:09,271
+lineer bağımlı.
+
+469
+00:39:10,011 --> 00:39:12,271
+İçlerinden bir tanesini çekiyorum.
+
+470
+00:39:12,871 --> 00:39:14,692
+Geriye kaç tane vektör kalıyor?
+
+471
+00:39:15,172 --> 00:39:17,072
+M-1 tane vektör kalıyor.
+
+472
+00:39:17,592 --> 00:39:17,791
+Tamam.
+
+473
+00:39:17,791 --> 00:39:20,971
+O zaman o bir tane vektörü
+
+474
+00:39:20,971 --> 00:39:24,532
+diğer M-1 vektör cinsinden
+
+475
+00:39:24,532 --> 00:39:27,072
+ifade edebiliyorum.
+
+476
+00:39:27,551 --> 00:39:29,112
+Lineer bağımlı ise.
+
+477
+00:39:29,112 --> 00:39:30,851
+Bunun söylediği bu.
+
+478
+00:39:32,411 --> 00:39:33,471
+Başka bir teorem.
+
+479
+00:39:34,211 --> 00:39:35,491
+V vektör uzayında
+
+480
+00:39:35,491 --> 00:39:38,011
+V1, V2, Vm
+
+481
+00:39:38,011 --> 00:39:41,471
+M tane lineer bağımsız vektör olsun.
+
+482
+00:39:42,871 --> 00:39:43,391
+Eğer
+
+483
+00:39:43,391 --> 00:39:47,311
+V1, V2, Vm
+
+484
+00:39:47,311 --> 00:39:49,251
+birgül
+
+485
+00:39:49,251 --> 00:39:51,592
+Vm artı bir vektörleri
+
+486
+00:39:51,592 --> 00:39:53,431
+lineer bağımlı ise
+
+487
+00:39:53,431 --> 00:39:56,431
+Vm artı bir vektörü
+
+488
+00:39:56,431 --> 00:39:58,291
+V1, V2 nokta nokta
+
+489
+00:39:58,291 --> 00:40:00,311
+Vm vektörlerinin lineer bağımlı.
+
+490
+00:40:00,000 --> 00:40:02,480
+Lineer kombinasyonu olarak yazılabilir.
+
+491
+00:40:03,119 --> 00:40:05,739
+Şimdi arkadaşlar M tane vektörüm vardı.
+
+492
+00:40:06,139 --> 00:40:08,460
+Bu M tane vektör lineer bağımsızdı.
+
+493
+00:40:09,179 --> 00:40:11,820
+Aralarına M artı birinci vektör katıldı.
+
+494
+00:40:11,820 --> 00:40:18,460
+M artı birinci vektörün katılmasıyla birlikte bu M tane vektör de ne oldu?
+
+495
+00:40:18,760 --> 00:40:21,940
+Bunun tamamı bağımlı hale geldi.
+
+496
+00:40:22,380 --> 00:40:24,320
+Peki bunu bağımlı yapan hangisi?
+
+497
+00:40:24,719 --> 00:40:26,099
+M artı birinci vektör.
+
+498
+00:40:26,099 --> 00:40:32,000
+Çünkü o M artı birinci aralarına katılmasıyla birlikte bu hepsi birden bağımlı hale geldi.
+
+499
+00:40:33,019 --> 00:40:35,599
+O zaman bir önceki teoremde neydi?
+
+500
+00:40:35,599 --> 00:40:43,159
+Diyordu ki eğer lineer bağımlı ise buradan bir tanesini çekip diğer leve cinsinden ifade edebiliyordum.
+
+501
+00:40:43,719 --> 00:40:46,280
+Bunu bağımlı hale getiren hangi vektör?
+
+502
+00:40:46,559 --> 00:40:47,860
+M artı birinci vektör.
+
+503
+00:40:48,139 --> 00:40:51,300
+O zaman M artı birinci vektörü çekiyorum.
+
+504
+00:40:51,300 --> 00:40:56,239
+Diğer M vektör cinsinden ifade edebiliyorum.
+
+505
+00:40:56,760 --> 00:40:56,980
+Tamam.
+
+506
+00:40:57,360 --> 00:41:03,219
+Yani bağımlı olan vektör bağımsızlar cinsinden ifade edilir diyoruz.
+
+507
+00:41:04,619 --> 00:41:05,679
+Anladık mı?
+
+508
+00:41:12,148 --> 00:41:13,548
+Ses tamamen gitti.
+
+509
+00:41:14,867 --> 00:41:18,088
+Hocam bu son teoremde ben biraz karıştırdım açıkçası.
+
+510
+00:41:20,728 --> 00:41:24,367
+Şimdi M tane vektörüm vardı bağımsız.
+
+511
+00:41:25,128 --> 00:41:25,327
+Tamam.
+
+512
+00:41:26,688 --> 00:41:29,867
+Aralarına M artı birinci vektör katıldı.
+
+513
+00:41:30,928 --> 00:41:36,568
+M artı birinci vektörün katılmasıyla birlikte bağımlı hale geldi vektörler.
+
+514
+00:41:38,488 --> 00:41:38,728
+Tamam.
+
+515
+00:41:39,088 --> 00:41:40,268
+Bağımlı hale geldi.
+
+516
+00:41:40,268 --> 00:41:43,748
+Peki bunu bağımlı yapan hangi vektör?
+
+517
+00:41:44,168 --> 00:41:46,827
+M artı birinci vektör bunları bağımlı yaptı.
+
+518
+00:41:47,208 --> 00:41:52,268
+O zaman M artı birinci vektörü çekip diğerleri cinsinden ifade edebiliyorum.
+
+519
+00:41:53,288 --> 00:41:53,448
+Tamam?
+
+520
+00:41:54,688 --> 00:41:55,387
+Tamam hocam.
+
+521
+00:41:57,327 --> 00:42:03,268
+Şimdi bu teoremde yukarıdakini aynısı esasında.
+
+522
+00:42:03,268 --> 00:42:17,428
+V vektör uzayında N küçük M olmak üzere V1, V2, Vm vektörlerinden N tanesi bağımlı ise V1, V2, Vm vektörleri de bağımlıdır.
+
+523
+00:42:17,428 --> 00:42:23,008
+Şimdi burada bir tane bağımlı olan aralarına katılmasıyla hepsi bağımlı oluyordu.
+
+524
+00:42:24,448 --> 00:42:27,948
+Bu teoremde diyor ki N küçük M diyor.
+
+525
+00:42:28,347 --> 00:42:28,788
+Öyle değil mi?
+
+526
+00:42:28,948 --> 00:42:30,248
+N tanesi bağımlı.
+
+527
+00:42:31,048 --> 00:42:33,488
+N tanesi bağımlıysa ne olacaktır?
+
+528
+00:42:33,568 --> 00:42:35,268
+M tanesi de bağımlı olacaktır.
+
+529
+00:42:35,367 --> 00:42:36,768
+Burada bir tanesi bağımlıydı.
+
+530
+00:42:36,887 --> 00:42:38,468
+Hepsini bağımlı hale getirdi.
+
+531
+00:42:38,788 --> 00:42:44,327
+N tanesi bağımlıysa doğal olarak M tanesi de bağımlı olacaktır.
+
+532
+00:42:44,327 --> 00:42:47,708
+Başka bir teorem.
+
+533
+00:42:48,668 --> 00:42:50,968
+N boyutlu yani boyutu ne?
+
+534
+00:42:52,228 --> 00:42:56,648
+Vektör uzayında M tane vektör şunlar olsun.
+
+535
+00:42:57,887 --> 00:42:58,108
+Tamam?
+
+536
+00:42:58,548 --> 00:42:59,288
+Bunlar olsun.
+
+537
+00:43:01,508 --> 00:43:10,448
+Eğer diyoruz şimdi her bir vektörü bir satıra gelecek şekilde A matrisinde yazıyoruz.
+
+538
+00:43:10,448 --> 00:43:14,948
+Ve bu A matrisinin rangına bakıyoruz.
+
+539
+00:43:15,968 --> 00:43:18,367
+Ve A matrisinin rangı R ise.
+
+540
+00:43:19,948 --> 00:43:20,168
+Tamam?
+
+541
+00:43:20,488 --> 00:43:21,387
+Rang R ise.
+
+542
+00:43:23,128 --> 00:43:28,168
+Birinci olarak verilen M vektörden R tanesi lineer bağımsızdır.
+
+543
+00:43:28,168 --> 00:43:31,788
+Yani diyelim ki bana 5 tane vektör verildi.
+
+544
+00:43:31,908 --> 00:43:32,708
+M 5.
+
+545
+00:43:33,367 --> 00:43:35,248
+Rang da 3 çıktı.
+
+546
+00:43:35,887 --> 00:43:39,988
+O zaman rang ne ise bu bana neyi söyleyecek?
+
+547
+00:43:40,347 --> 00:43:43,408
+Lineer bağımsız vektörlerin sayısını söyleyecek.
+
+548
+00:43:43,768 --> 00:43:47,827
+Yani 3 tane vektör lineer bağımsızdır diyeceğiz.
+
+549
+00:43:48,568 --> 00:43:50,508
+Geriye kaç tane vektör kaldı?
+
+550
+00:43:50,948 --> 00:43:54,228
+Geriye kalan vektörüm M eksi R.
+
+551
+00:43:54,228 --> 00:43:55,728
+M kaçtı?
+
+552
+00:43:56,208 --> 00:43:58,268
+M 5'ti.
+
+553
+00:43:58,768 --> 00:44:00,628
+5'ten 3 çıktı.
+
+554
+00:44:01,768 --> 00:44:02,428
+Ne kaldı?
+
+555
+00:44:02,768 --> 00:44:03,908
+2 kaldı.
+
+556
+00:44:04,327 --> 00:44:06,408
+2 tanesi nedir?
+
+557
+00:44:06,748 --> 00:44:08,368
+Lineer bağımlıdır.
+
+558
+00:44:10,887 --> 00:44:11,108
+Tamam?
+
+559
+00:44:12,628 --> 00:44:17,408
+Rang bana lineer bağımsız vektör sayısını söylüyor.
+
+560
+00:44:17,408 --> 00:44:25,768
+Verilen vektörden rangı çıkardığımda da bir der bağımlı vektörleri buluyorum.
+
+561
+00:44:25,768 --> 00:44:28,568
+İkinci madde.
+
+562
+00:44:29,148 --> 00:44:29,847
+R küçük.
+
+563
+00:44:30,148 --> 00:44:32,128
+M ise 2 küçük.
+
+564
+00:44:32,688 --> 00:44:35,307
+Geriye M eksi R tane vektör kalıyor.
+
+565
+00:44:36,028 --> 00:44:39,428
+Bu M eksi R vektörün her biri.
+
+566
+00:44:39,827 --> 00:44:43,008
+Yani biz 5'ten 3'ü çıkarttık.
+
+567
+00:44:43,168 --> 00:44:44,048
+2 kaldı ya.
+
+568
+00:44:44,048 --> 00:44:48,548
+Bu 2 vektörden önce bir tanesini alıyorsun.
+
+569
+00:44:49,048 --> 00:44:52,128
+Bu 3 tane vektör cinsinden ifade ediyorsun.
+
+570
+00:44:52,648 --> 00:44:54,307
+Sonra ikincisini alıyorsun.
+
+571
+00:44:54,788 --> 00:44:58,768
+Bu 3 vektör cinsinden ifade ediyorsun.
+
+572
+00:45:00,228 --> 00:45:01,068
+Tamam?
+
+573
+00:45:02,128 --> 00:45:03,408
+Bunun söylediği bu.
+
+574
+00:45:03,408 --> 00:45:05,448
+Üçüncü madde.
+
+575
+00:45:06,068 --> 00:45:07,608
+N eşit M ise.
+
+576
+00:45:08,112 --> 00:45:19,072
+Verilen m vektörün lineer bağımsız olması için gerek ve yeter koşul a'nın determinantı sıfırdan farklı olmasıdır.
+
+577
+00:45:20,072 --> 00:45:29,492
+Yani biz yukarıda teminden beri yaptığımız şey şuydu zaten a'nın determinantını sıfırdan farklı mı diye buna bakıyorduk.
+
+578
+00:45:29,652 --> 00:45:30,892
+Burada da bunu söylüyor.
+
+579
+00:45:31,851 --> 00:45:35,231
+Bu zaten yukarıdaki teoremlerden açık.
+
+580
+00:45:35,231 --> 00:45:41,172
+R küçük m ise verilen m vektör lineer bağımlıdır.
+
+581
+00:45:42,552 --> 00:45:49,192
+Böylece n küçük m ise verilen m vektör lineer bağımlı olur diyoruz.
+
+582
+00:45:49,271 --> 00:45:51,452
+Bu zaten yukarıdaki yani bu çok önemli değil.
+
+583
+00:45:51,512 --> 00:45:53,152
+Yukarıdaki teoremlerle aynısı.
+
+584
+00:45:53,692 --> 00:45:54,972
+Şimdi gelelim örneğe.
+
+585
+00:45:55,912 --> 00:46:01,912
+R3 vektör uzayında A, B, C, D vektörleri verilmiş.
+
+586
+00:46:02,692 --> 00:46:04,532
+Lineer bağımlı olduğunu gösteriniz.
+
+587
+00:46:04,532 --> 00:46:12,032
+Bunların arasında maksimum sayıda vektör alarak geriye kalanları bunların lineer kombinasyonu olarak yazınız diyor.
+
+588
+00:46:12,512 --> 00:46:14,192
+Şimdi arkadaşlar ne yapacağız?
+
+589
+00:46:14,572 --> 00:46:19,851
+Her bir vektör bir satıra gelecek şekilde A matrisinde yerleştiriyor.
+
+590
+00:46:19,851 --> 00:46:22,711
+Tamam A matrisinde yerleştiriyor.
+
+591
+00:46:22,711 --> 00:46:29,432
+Yerleştirdikten sonra rank bulma işlemi yapıyorum.
+
+592
+00:46:29,952 --> 00:46:34,211
+Burada ranka doğru gördüğün yerde işlemi bırakabilirsin.
+
+593
+00:46:34,771 --> 00:46:36,532
+Tamam doğru gördüğün yerde.
+
+594
+00:46:37,132 --> 00:46:39,211
+Yani ne yaptık biz burada?
+
+595
+00:46:39,711 --> 00:46:41,452
+Bak burada bir sıfırlar var.
+
+596
+00:46:41,612 --> 00:46:45,152
+O zaman dedim ben bunu eksi bir ile çarpıp yukarıya ekleyeyim.
+
+597
+00:46:45,152 --> 00:46:46,592
+Şuralar sıfır olduğu için.
+
+598
+00:46:47,231 --> 00:46:49,512
+Eksi bir ile çarpıp aşağıya ekleyeyim.
+
+599
+00:46:51,612 --> 00:46:52,592
+Şunu elde ettim.
+
+600
+00:46:53,251 --> 00:46:56,612
+Birinci satırla ikinci satırı yer değiştirdim.
+
+601
+00:46:57,311 --> 00:47:00,532
+Sonra birler zikzak yapmaz dedik.
+
+602
+00:47:01,512 --> 00:47:04,271
+Onun için iki ile dördü yer değiştiriyorum.
+
+603
+00:47:04,492 --> 00:47:05,472
+Yer değiştirdim.
+
+604
+00:47:05,472 --> 00:47:08,512
+Şimdi bir birin altındaki elemanlar sıfır.
+
+605
+00:47:08,632 --> 00:47:10,632
+Bir birin altındaki elemanlar sıfır.
+
+606
+00:47:10,751 --> 00:47:13,912
+Bir birin altındaki sıfır değil ama ben bunu sıfır yaparım.
+
+607
+00:47:14,432 --> 00:47:15,612
+Burada sıfır yapmışım.
+
+608
+00:47:15,771 --> 00:47:18,932
+Ama bak ben burada şuradan rankı görüyorum.
+
+609
+00:47:19,972 --> 00:47:20,992
+Rank burada nedir?
+
+610
+00:47:21,172 --> 00:47:22,672
+Bir, iki, üç.
+
+611
+00:47:22,811 --> 00:47:25,112
+Kaç satırda sıfırdan farklı eleman var?
+
+612
+00:47:25,692 --> 00:47:26,552
+Rank üç.
+
+613
+00:47:27,251 --> 00:47:30,211
+O zaman üç tane vektör lineer bağımsız.
+
+614
+00:47:30,512 --> 00:47:32,211
+Kaç tane vektör verilmişti bana?
+
+615
+00:47:32,632 --> 00:47:32,912
+Dört.
+
+616
+00:47:32,912 --> 00:47:36,932
+Dört eksi üç bir tanesi lineer bağımlıdır diyoruz.
+
+617
+00:47:38,512 --> 00:47:38,751
+Tamam.
+
+618
+00:47:40,311 --> 00:47:45,172
+Şimdi eğer ki aralarındaki bağıntı nedir diye sorulursa,
+
+619
+00:47:45,331 --> 00:47:47,791
+şunları yapmana gerek yok, bunu sonra anlatacağım.
+
+620
+00:47:48,211 --> 00:47:50,472
+Eğer soru şöyle olursa diyeceğim.
+
+621
+00:47:52,112 --> 00:47:53,311
+Şimdi ne yapacağız?
+
+622
+00:47:53,432 --> 00:47:54,952
+Aralarındaki bağıntıyı bulacağız.
+
+623
+00:47:55,512 --> 00:48:00,952
+Yani K1A, K2B, K3C, işte K4 de fark etmez şurada.
+
+624
+00:48:00,952 --> 00:48:05,392
+Şuna göre, yukarıya göre bu yazılmış ama fark etmez bu.
+
+625
+00:48:06,912 --> 00:48:14,251
+Burada götürüp A'yı, B'yi, C'yi, D'yi yerlerine yazıyorum.
+
+626
+00:48:14,892 --> 00:48:17,152
+Yazdığımda karşıma ne çıkacak?
+
+627
+00:48:17,392 --> 00:48:19,432
+Homojen denklem sistemi çıkacak.
+
+628
+00:48:19,432 --> 00:48:23,072
+Bu homojen denklem sistemine baktığım zaman,
+
+629
+00:48:23,592 --> 00:48:25,092
+üç tane denklem var.
+
+630
+00:48:25,952 --> 00:48:27,711
+Dört tane bilinmeyen var.
+
+631
+00:48:28,512 --> 00:48:32,892
+Burada bir tanesine keyfi değer veriyorum.
+
+632
+00:48:32,892 --> 00:48:37,311
+K4 keyfi olursa, şöyle oldu.
+
+633
+00:48:37,432 --> 00:48:42,052
+K4'e, üç dediğim zamanda, hani kesirden kurtulsun diye,
+
+634
+00:48:42,211 --> 00:48:45,771
+K1'i, K2'yi, işte K3'ü zaten burada bulmuştuk.
+
+635
+00:48:45,892 --> 00:48:46,851
+K4'ü bulduk.
+
+636
+00:48:47,271 --> 00:48:51,192
+Bu bulduğum sayıları götürüp burada yerlerine yazıyorum.
+
+637
+00:48:51,592 --> 00:48:54,112
+Ve aralarındaki bağıntıyı buluyorum.
+
+638
+00:48:55,432 --> 00:48:55,632
+Tamam?
+
+639
+00:48:56,052 --> 00:48:57,592
+Aralarındaki bağıntıyı buluyorum.
+
+640
+00:48:57,592 --> 00:49:00,912
+Ama sorup bana, şöyle deseydi.
+
+641
+00:49:01,280 --> 00:49:08,000
+Lineer bağımlı olanı bağımsızlar cinsinden ifade et olsaydı soru.
+
+642
+00:49:08,860 --> 00:49:12,080
+Şimdi rank bana neyi söylüyordu arkadaşlar?
+
+643
+00:49:12,640 --> 00:49:16,600
+Lineer bağımsız olan vektörleri söylüyordu.
+
+644
+00:49:17,560 --> 00:49:18,480
+Rank 3.
+
+645
+00:49:18,880 --> 00:49:22,740
+O zaman 3 tane vektörüm lineer bağımsız.
+
+646
+00:49:23,280 --> 00:49:25,760
+Hangisi bağımlı rankla bulacağım o zaman.
+
+647
+00:49:25,760 --> 00:49:30,440
+Burada öncelik sol üst köşeye aittir.
+
+648
+00:49:30,440 --> 00:49:36,019
+Yani burada sol üst yok 3 çarpı 3 determinant bakacağım.
+
+649
+00:49:36,400 --> 00:49:40,600
+O zaman direkt şunu en altı kapatıyorum üst dediği için.
+
+650
+00:49:41,160 --> 00:49:43,800
+En altı kapatıyorum şunu alıyorum.
+
+651
+00:49:44,340 --> 00:49:46,980
+Aldığım zaman ne olacaktır bu?
+
+652
+00:49:47,220 --> 00:49:51,840
+Şuna göre açarsak şuraya göre açıyorum.
+
+653
+00:49:51,840 --> 00:49:58,540
+Şu gider 0 0 determinant 0'a eşittir.
+
+654
+00:49:58,540 --> 00:50:01,340
+Yani bunu kapattığım zaman olmadı.
+
+655
+00:50:01,780 --> 00:50:03,640
+Elimi bir yukarıya kaydırıyorum.
+
+656
+00:50:03,760 --> 00:50:05,200
+Bu sefer bunu kapatıyorum.
+
+657
+00:50:05,800 --> 00:50:06,720
+Bunu kapatıyorum.
+
+658
+00:50:07,600 --> 00:50:08,400
+Şunu yazıyorum.
+
+659
+00:50:08,840 --> 00:50:11,560
+Yani a, b ve d vektörlerini yazıyorum.
+
+660
+00:50:12,220 --> 00:50:18,120
+Açtığımda bunu şuna göre açtığımda ne olacaklar?
+
+661
+00:50:18,120 --> 00:50:18,960
+Burası 0.
+
+662
+00:50:18,960 --> 00:50:22,000
+Buradan eksi eksi artı oldu.
+
+663
+00:50:22,080 --> 00:50:22,960
+Bir de eksi gelecek.
+
+664
+00:50:23,160 --> 00:50:23,520
+Eksi.
+
+665
+00:50:23,860 --> 00:50:25,780
+Bir de buradan artı eksi gelecek.
+
+666
+00:50:26,280 --> 00:50:27,120
+Artı oldu.
+
+667
+00:50:27,660 --> 00:50:29,720
+3 sıfırdan farklıdır.
+
+668
+00:50:30,120 --> 00:50:35,700
+O zaman a, b ve d vektörleri lineer bağımsız.
+
+669
+00:50:36,280 --> 00:50:38,480
+C bunlara bağımlıdır.
+
+670
+00:50:38,480 --> 00:50:41,560
+Şimdi ben aralarındaki bağıntıyı böyle buldum ya.
+
+671
+00:50:41,960 --> 00:50:44,000
+Buradan c'yi çekiyorum.
+
+672
+00:50:45,320 --> 00:50:48,880
+Bağımlı olan vektörü bağımsızlar cinsinden ifade edecektim ya.
+
+673
+00:50:49,000 --> 00:50:50,540
+Yukarıdaki teoremlere göre.
+
+674
+00:50:51,080 --> 00:50:54,220
+O zaman c'yi çektiğim zaman ne olacaktır?
+
+675
+00:50:54,380 --> 00:50:55,940
+Bunları karşı tarafa attım.
+
+676
+00:50:56,060 --> 00:50:58,480
+b eksi a bölü 3 diye.
+
+677
+00:50:59,600 --> 00:51:04,540
+Bağımlı olan vektörü bağımsızlar cinsinden ifade etmiş oldum.
+
+678
+00:51:05,420 --> 00:51:34,960
+Tamam mı?
+
+679
+00:51:16,755 --> 00:51:17,355
+Şimdi
+
+680
+00:51:50,452 --> 00:51:53,812
+Şimdi bu konuyla ilgili örneklere de attım arkadaşlar.
+
+681
+00:51:57,780 --> 00:52:15,380
+Yani ben size birer tane her konuyla birer ikişer örnek çözdüm. Ama bu size attığım örneklerde bir sürü örnek var. Lütfen onlara bakınız, çözünüz. Şimdi devam ediyoruz.
+
+682
+00:52:17,100 --> 00:52:20,580
+Hocam küçük bir ara verelim, daha enerjiyi şekilde devam edelim olur mu?
+
+683
+00:52:20,580 --> 00:52:30,580
+Peki, şu anda 55, 15 dakika ara verelim o zaman. Kalkın bir sumu için. Onda devam edelim. Tamam?
+
+684
+00:52:30,920 --> 00:52:31,860
+Teşekkür ederim hocam.
+
+685
+00:52:32,260 --> 00:52:52,560
+Tamam.
+
+686
+01:00:24,788 --> 01:00:42,507
+Evet, burada mıyız? Başlıyorum. Geldik mi? Ben geldim hocam. Geldik herhalde. Peki o zaman. Şimdi arkadaşlar, teorem şöyle.
+
+687
+01:00:58,708 --> 01:00:59,807
+Şuradan başlayacağım.
+
+688
+01:01:00,907 --> 01:01:02,688
+Şöyle bir tanımımız var.
+
+689
+01:01:03,988 --> 01:01:06,427
+V bir vektör uzayı.
+
+690
+01:01:08,347 --> 01:01:10,728
+T de V'nin bir alt kümesi olsun.
+
+691
+01:01:12,588 --> 01:01:19,367
+Eğer diyoruz birinci olarak T V'nin lineer bağımsız alt kümesi.
+
+692
+01:01:19,367 --> 01:01:33,927
+2. T'nin ürettiği alt duzay eşit ve şartları sağlanıyorsa T'ye V'nin tabanı ya da bazı denilir.
+
+693
+01:01:34,568 --> 01:01:37,427
+Şimdi bu taban ve baz tanımı önemli.
+
+694
+01:01:39,088 --> 01:01:41,748
+Tamam bundan sorular gelir.
+
+695
+01:01:43,168 --> 01:01:46,827
+Demek ki taban olabilme şartı neymiş?
+
+696
+01:01:46,827 --> 01:01:48,807
+İlk önce lineer bağımsız.
+
+697
+01:01:49,248 --> 01:01:53,947
+İkinci şartta T'nin ürettiği alt duzayın V'ye eşit olması lazım.
+
+698
+01:01:55,528 --> 01:01:58,148
+Şimdi hem örnek hem de tanım bu.
+
+699
+01:02:00,347 --> 01:02:03,307
+T kümesi şöyle olsun.
+
+700
+01:02:03,307 --> 01:02:33,307
+1 0 0 0 0 0 0 0 1 0
+
+701
+01:02:33,307 --> 01:04:57,258
+0 0
+
+702
+01:05:00,563 --> 01:05:02,183
+Standart taban böyle.
+
+703
+01:05:03,123 --> 01:05:04,783
+Şimdi başka bir örneğe bakalım.
+
+704
+01:05:05,663 --> 01:05:06,663
+B kümesi bu.
+
+705
+01:05:07,443 --> 01:05:09,483
+R3'ün bir tabanıdır.
+
+706
+01:05:09,844 --> 01:05:10,503
+Gösteriniz.
+
+707
+01:05:10,503 --> 01:05:14,563
+Şimdi taban olabilmesi için ne olması lazım?
+
+708
+01:05:15,163 --> 01:05:26,603
+B'nin R3'ü geldiği ya da B'nin ürettiği alt uzayın R3'e eşit olduğunu göstermem lazım.
+
+709
+01:05:26,864 --> 01:05:28,263
+Onu da nasıl gösteriyorum?
+
+710
+01:05:28,824 --> 01:05:30,884
+Şunlara V1, V2, V3 dedik ya.
+
+711
+01:05:31,623 --> 01:05:35,824
+C1, V1, C2, V2, C3, V3 eşittir V diyorum.
+
+712
+01:05:35,824 --> 01:05:37,583
+V'yi de ne diye alacağım?
+
+713
+01:05:37,703 --> 01:05:40,364
+R3 olduğuna göre A, B, C diyeceğim.
+
+714
+01:05:40,763 --> 01:05:40,903
+Tamam.
+
+715
+01:05:42,324 --> 01:05:45,663
+Şimdi götürdük bunları yerine yazdık.
+
+716
+01:05:45,743 --> 01:05:47,943
+A, B, C'ler eleman real sayılar.
+
+717
+01:05:49,344 --> 01:05:52,083
+Buradan karşıma ne çıkacak?
+
+718
+01:05:52,523 --> 01:05:54,324
+Lineer denklem sistemi çıkacak.
+
+719
+01:05:54,324 --> 01:05:57,563
+C1, C2 eşittir A'ya.
+
+720
+01:05:57,743 --> 01:06:00,763
+C1, C2, C3 eşittir B'ye.
+
+721
+01:06:01,283 --> 01:06:02,143
+Bu sıfır zaten.
+
+722
+01:06:02,603 --> 01:06:05,483
+C2, eksi C3 eşittir C'ye.
+
+723
+01:06:07,483 --> 01:06:09,103
+Şunu yazdık.
+
+724
+01:06:09,603 --> 01:06:12,063
+Lineer denklem sistemini çözdüğümde
+
+725
+01:06:12,063 --> 01:06:17,583
+buradan C1, C2, C3'ü şu şekilde yazarım.
+
+726
+01:06:19,623 --> 01:06:20,543
+Tamam.
+
+727
+01:06:20,543 --> 01:06:25,163
+Dolayısıyla bunun çözümü olduğu için nedir?
+
+728
+01:06:25,163 --> 01:06:31,063
+B'nin ürettiği alt uzay R3'e eşittir.
+
+729
+01:06:32,403 --> 01:06:32,503
+Tamam.
+
+730
+01:06:32,804 --> 01:06:34,223
+Bunu göstermiş olduk.
+
+731
+01:06:34,563 --> 01:06:36,163
+Şimdi bunu ispatlayacak olursak,
+
+732
+01:06:37,443 --> 01:06:38,163
+hani şu ispatı,
+
+733
+01:06:39,543 --> 01:06:42,583
+A, B, C eleman real sayılar dedik ya.
+
+734
+01:06:43,103 --> 01:06:45,163
+A'ya 1, 2, 3 diyeyim.
+
+735
+01:06:45,163 --> 01:06:47,283
+1, 2, 3 diyeyim.
+
+736
+01:06:48,003 --> 01:06:55,283
+Şimdi götürüp burada A, B, C değerlerini yerine yazdığımda
+
+737
+01:06:55,283 --> 01:06:58,703
+C1, C2, C3'ü de bu şekilde elde ederim.
+
+738
+01:07:00,344 --> 01:07:03,543
+Sonra C1, C2, C3'ü buldum ya.
+
+739
+01:07:03,543 --> 01:07:09,263
+C1, C2, C3'ü ve A, B, C'leri yerine yazdığımız zaman
+
+740
+01:07:09,263 --> 01:07:12,903
+bak, eksi 3, artı 4, 1.
+
+741
+01:07:13,483 --> 01:07:17,304
+Eksi 3, artı 4, 1, 2.
+
+742
+01:07:18,523 --> 01:07:24,223
+Sonra 4, eksi 1, 3 diye şunu sağladığını görürsün.
+
+743
+01:07:24,443 --> 01:07:24,943
+Tamam mı?
+
+744
+01:07:24,943 --> 01:07:26,943
+Yani şu ispatı,
+
+745
+01:07:28,683 --> 01:07:30,943
+ispatı
+
+746
+01:07:30,943 --> 01:07:34,943
+C1, C2, C3 buluyorsam
+
+747
+01:07:35,703 --> 01:07:37,023
+o zaman nedir?
+
+748
+01:07:37,304 --> 01:07:41,663
+B'nin ürettiği alt uzay R3'e eşittir diyoruz.
+
+749
+01:07:42,384 --> 01:07:44,743
+Şimdi lineer bağımsız olduğunu gösterelim.
+
+750
+01:07:45,183 --> 01:07:48,043
+Lineer bağımsız olması için ne olması lazımdı?
+
+751
+01:07:48,623 --> 01:07:50,943
+A'nın determinantı sıfırdan farklı olmalıydı.
+
+752
+01:07:51,903 --> 01:07:52,463
+Öyle değil mi?
+
+753
+01:07:52,463 --> 01:07:56,163
+ya da sistemin çözümüne bakacaktık.
+
+754
+01:07:57,743 --> 01:08:00,563
+Lineer bağımsızlık şartı oydu çünkü.
+
+755
+01:08:01,263 --> 01:08:08,543
+C1, V1, C2, V2, C3, V3 eşittir sıfır.
+
+756
+01:08:09,384 --> 01:08:18,963
+Buradan C1, C2, C3 eşit sıfırsa lineer bağımsız.
+
+757
+01:08:20,064 --> 01:08:20,644
+Tamam mı?
+
+758
+01:08:20,644 --> 01:08:22,224
+Lineer bağımsızlık.
+
+759
+01:08:22,463 --> 01:08:25,923
+Ya buradan sistemi çözeceğim, bunları bulacağım.
+
+760
+01:08:26,323 --> 01:08:28,203
+Ya da determinanta bakacağım.
+
+761
+01:08:28,344 --> 01:08:29,923
+Determinanta bakarsak,
+
+762
+01:08:30,023 --> 01:08:31,184
+determinantın
+
+763
+01:08:31,184 --> 01:08:35,323
+eksi 1'e eşit olduğunu, sıfırdan farklı olduğunu gördük.
+
+764
+01:08:35,623 --> 01:08:39,184
+Dolayısıyla lineer bağımsızlık şartı da sağlanıyor.
+
+765
+01:08:39,623 --> 01:08:42,963
+Dolayısıyla bu iki şart sağlandığından dolayı
+
+766
+01:08:42,963 --> 01:08:43,844
+nedir?
+
+767
+01:08:43,844 --> 01:08:48,583
+R3'ün bir tabanıdır.
+
+768
+01:08:48,583 --> 01:08:52,023
+R3'ün bir tabanıdır diyoruz.
+
+769
+01:08:52,023 --> 01:08:55,304
+Şimdi T kümesi verilmiş.
+
+770
+01:08:55,403 --> 01:08:56,344
+Başka bir örnek.
+
+771
+01:08:56,884 --> 01:08:58,384
+Burada polinom örneği.
+
+772
+01:08:58,384 --> 01:08:59,844
+bir tabanıdır.
+
+773
+01:08:59,844 --> 01:09:00,163
+Evet.
+
+774
+01:09:00,163 --> 01:09:04,844
+Bir tabanıdır.
+
+775
+01:08:59,412 --> 01:09:02,132
+Şimdi vektörlerim şunlar.
+
+776
+01:09:02,632 --> 01:09:06,912
+V eşit P2 için bir taban olduğunu gösteriniz diyor.
+
+777
+01:09:07,532 --> 01:09:11,412
+Peki taban olduğunu göstermek için ne yapmam lazım?
+
+778
+01:09:11,932 --> 01:09:21,311
+T'nin ürettiği alt uzayın P2'ye eşit olduğunu göstereceğim.
+
+779
+01:09:21,311 --> 01:09:22,832
+Yani ne yapacağım?
+
+780
+01:09:23,212 --> 01:09:28,052
+C1V1, C2V2 artı C3V3 eşittir V diyorum.
+
+781
+01:09:28,052 --> 01:09:31,092
+Tamam. V'yi de ne olarak alıyorum?
+
+782
+01:09:31,532 --> 01:09:37,632
+P2 olduğu için derecesi 2 olduğu için AX kare artı BX artı C dedik.
+
+783
+01:09:38,851 --> 01:09:42,692
+Burada V1, V2, V3'leri yerine yazdım.
+
+784
+01:09:42,792 --> 01:09:44,212
+V'yi de yerine yazdım.
+
+785
+01:09:44,891 --> 01:09:45,472
+Ne yapıyorum?
+
+786
+01:09:45,472 --> 01:09:51,112
+Polinom eşitliğinden yararlanarak şu ifadeyi elde ettim.
+
+787
+01:09:51,112 --> 01:09:58,231
+Bu A'ya eşit, bu B'ye eşit, bu da C'ye eşittir.
+
+788
+01:09:58,592 --> 01:10:00,972
+Karşıma lineer denklem sistemi çıktı.
+
+789
+01:10:01,472 --> 01:10:08,132
+Bu lineer denklem sistemini çözersem C1, C2, C3'ü elde ediyorum.
+
+790
+01:10:08,572 --> 01:10:10,132
+Dolayısıyla nedir?
+
+791
+01:10:11,172 --> 01:10:14,692
+T'nin ürettiği alt uzay P2'ye eşitmiş.
+
+792
+01:10:15,771 --> 01:10:16,912
+İkinci şık neydi?
+
+793
+01:10:17,292 --> 01:10:18,692
+Lineer bağımsızlığı gösterecektik.
+
+794
+01:10:18,692 --> 01:10:21,752
+Lineer bağımsızlık için ne yapıyoruz?
+
+795
+01:10:21,912 --> 01:10:24,832
+C1, V1, C2, V2, C3, V3 eşittir.
+
+796
+01:10:24,932 --> 01:10:25,632
+Sıfır diyorum.
+
+797
+01:10:26,231 --> 01:10:30,052
+Bu da 0X kare artı 0X artı 0'dır.
+
+798
+01:10:30,432 --> 01:10:31,332
+Şuradaki sıfır.
+
+799
+01:10:31,432 --> 01:10:33,311
+Çünkü polinom olduğu için bu.
+
+800
+01:10:34,132 --> 01:10:39,912
+Burada C1, C2, C3'ün sıfıra eşit olması lazım.
+
+801
+01:10:40,332 --> 01:10:42,391
+Lineer bağımsız olabilmesi için.
+
+802
+01:10:42,391 --> 01:10:46,532
+Şimdi gene V1, V2, V3'leri yerine yazdım.
+
+803
+01:10:47,192 --> 01:10:51,172
+Ve X kare X ve sabit terim parantezini aldım.
+
+804
+01:10:51,872 --> 01:10:55,212
+Buradan homojen denklem sistemini elde ediyorum.
+
+805
+01:10:55,532 --> 01:10:58,412
+Lineer homojen denklem sistemini elde ediyorum.
+
+806
+01:10:58,412 --> 01:11:05,851
+Bu sistemi çözdüğüm zaman C1, C2, C3'ün sıfır olduğunu buldum.
+
+807
+01:11:06,271 --> 01:11:09,472
+Dolayısıyla T kümesi lineer bağımsızdır.
+
+808
+01:11:09,472 --> 01:11:10,372
+Tamam.
+
+809
+01:11:11,532 --> 01:11:15,472
+T o zaman P2 için neymiş?
+
+810
+01:11:16,351 --> 01:11:17,891
+Bir tabanmış.
+
+811
+01:11:18,032 --> 01:11:22,712
+Bu iki şıkkı sağladığı için bir taban olduğunu söylüyorum.
+
+812
+01:11:22,712 --> 01:11:26,532
+Şöyle bir teoremin var.
+
+813
+01:11:26,972 --> 01:11:32,891
+V vektör uzayı n tane vektörden oluşan bir tabana sahip ise
+
+814
+01:11:32,891 --> 01:11:39,052
+V'nin her tabanında n vektör bulunur.
+
+815
+01:11:40,351 --> 01:11:42,712
+Şimdi diyelim ki
+
+816
+01:11:43,231 --> 01:11:49,612
+şu T, P2'nin bir tabanı çıktı.
+
+817
+01:11:49,612 --> 01:11:52,172
+Bu tabanda kaç tane vektör var?
+
+818
+01:11:52,311 --> 01:11:53,652
+Bir, iki, üç.
+
+819
+01:11:54,891 --> 01:11:58,032
+P2'nin başka bir tabanını yazacak olursam
+
+820
+01:11:58,032 --> 01:12:01,052
+orada da üç tane vektör olmak zorunda.
+
+821
+01:12:01,052 --> 01:12:03,552
+Bu teoremin söylediği bu.
+
+822
+01:12:04,532 --> 01:12:04,792
+Tamam.
+
+823
+01:12:08,884 --> 01:12:23,644
+Tanım şu, V vektör uzayı olsun, V'nin herhangi bir tabanındaki vektör sayısına V'nin boyutu denir ve boy V ile gösterilir.
+
+824
+01:12:24,123 --> 01:12:26,863
+Şimdi bu tabandaki vektör kaç taneydi?
+
+825
+01:12:27,363 --> 01:12:28,304
+3 taneydi.
+
+826
+01:12:28,783 --> 01:12:32,703
+O zaman boy V neye eşittir?
+
+827
+01:12:32,963 --> 01:12:34,823
+3'e eşittir.
+
+828
+01:12:34,823 --> 01:12:38,264
+Tamam, bunun söylediği de bu.
+
+829
+01:12:39,783 --> 01:12:41,963
+Bu tanım budur.
+
+830
+01:12:42,404 --> 01:12:45,043
+Tamam, boy V 3'e eşittir.
+
+831
+01:12:46,104 --> 01:12:48,144
+Şimdi bir teoremin var.
+
+832
+01:12:48,463 --> 01:12:50,363
+Bu teorem önemli bir teorem.
+
+833
+01:12:50,783 --> 01:12:51,463
+Niye önemli?
+
+834
+01:12:51,923 --> 01:12:57,524
+Çünkü benim yukarıda yaptığım işlemi kısaltan bir teoremdir.
+
+835
+01:12:57,524 --> 01:13:11,923
+Şöyle ki ben yukarıda lineer bağımsızlığına, taban olması için lineer bağımsızlığına ve T'nin ürettiği alt uzayın işte V'ye eşit olduğuna ikisine birden bakıyordum.
+
+836
+01:13:11,923 --> 01:13:18,923
+Oysa ki bu teorem de bana diyor ki, V en boyutlu bir vektör uzayı olsun aşağıdaki ner sağlanır.
+
+837
+01:13:20,264 --> 01:13:25,384
+Eğer T, V1, V2, Vm lineer bağımsız ise yani ne yapacağım?
+
+838
+01:13:25,484 --> 01:13:27,064
+Lineer bağımsızlığına bakacağım.
+
+839
+01:13:27,484 --> 01:13:30,923
+Lineer bağımsız çıkıyorsa o zaman direkt şunu yazabilirim.
+
+840
+01:13:31,923 --> 01:13:35,144
+T'nin ürettiği alt uzay V'ye eşittir diye yazacağım.
+
+841
+01:13:35,703 --> 01:13:40,884
+Dolayısıyla bu ikisi sağlandığı için yani buna bakmana gerek kalmadan bunu yazıyorsun.
+
+842
+01:13:41,484 --> 01:13:44,684
+Dolayısıyla T, V'nin bir tabanıdır diyoruz.
+
+843
+01:13:45,083 --> 01:13:46,604
+Ya da ne yapacaksın?
+
+844
+01:13:47,003 --> 01:13:47,944
+Ya da ne yapıyorsun?
+
+845
+01:13:48,644 --> 01:13:53,123
+T'nin ürettiği alt uzayın V'ye eşit olduğuna bakıyorsun.
+
+846
+01:13:53,123 --> 01:14:01,823
+Eğer ki böyle ise o zaman lineer bağımsızdır diye yazıyorsun ve tabandır diyorsun ikisinin sağladığı için.
+
+847
+01:14:02,363 --> 01:14:02,484
+Tamam.
+
+848
+01:14:03,163 --> 01:14:04,804
+Şimdi örnek yapalım.
+
+849
+01:14:07,863 --> 01:14:12,804
+R3'te A, B, C vektörleri verilmiş.
+
+850
+01:14:14,543 --> 01:14:16,743
+T eşit A, B, C kümesi veriliyor.
+
+851
+01:14:17,684 --> 01:14:21,283
+T'nin R3'ün bir tabanı olduğunu gösteriniz.
+
+852
+01:14:21,283 --> 01:14:28,564
+Şimdi taban dediğine göre bunun boyutu kaçtır?
+
+853
+01:14:28,684 --> 01:14:33,623
+Taban olduğuna göre 3 tane vektör olduğunda boyutu 3'tür.
+
+854
+01:14:34,264 --> 01:14:37,564
+Yani boy R3, 3'e eşittir.
+
+855
+01:14:39,444 --> 01:14:43,564
+Şimdi taban olduğunu göstermek için o zaman ne yapacağım?
+
+856
+01:14:43,923 --> 01:14:46,224
+Lineer bağımsızlığına bakacağım arkadaşlar.
+
+857
+01:14:46,503 --> 01:14:47,764
+Lineer bağımsız mı?
+
+858
+01:14:48,163 --> 01:14:48,583
+Tamam mı?
+
+859
+01:14:48,583 --> 01:14:56,904
+Lineer bağımsızsa o zaman T'nin ürettiği alt uzay eşittir R3'tür diyeceğiz.
+
+860
+01:14:57,283 --> 01:15:00,363
+Ve dolayısıyla tabandır diye direkt yazabilirim.
+
+861
+01:15:01,684 --> 01:15:08,484
+Şimdi lineer bağımsızlığını göstermek için K1A, K2B, K3C eşittir 0 diyoruz.
+
+862
+01:15:08,484 --> 01:15:13,703
+Buradan göstermem gereken K1, K2, K3'ün 0 olduğunu göstermem lazım.
+
+863
+01:15:14,423 --> 01:15:18,264
+A'yı, B'yi ve C'yi yazdım.
+
+864
+01:15:18,804 --> 01:15:19,844
+Karşıma ne çıktı?
+
+865
+01:15:20,363 --> 01:15:22,684
+Homojen denklem sistemi çıktı.
+
+866
+01:15:23,264 --> 01:15:30,524
+Bu homojen denklem sistemini çözdüğümde K1, K2, K3'ün 0'a eşit olduğunu bulurum.
+
+867
+01:15:30,524 --> 01:15:32,444
+Ya da ne yaparız?
+
+868
+01:15:32,844 --> 01:15:34,703
+Rank N'e eşit olmalı.
+
+869
+01:15:35,003 --> 01:15:35,804
+N kaçtı?
+
+870
+01:15:36,123 --> 01:15:37,363
+1, 2, 3.
+
+871
+01:15:38,003 --> 01:15:38,703
+N 3.
+
+872
+01:15:38,884 --> 01:15:39,644
+3 çarpı 3.
+
+873
+01:15:39,884 --> 01:15:42,184
+Determinantım 0'dan farklı olmalı.
+
+874
+01:15:42,823 --> 01:15:44,444
+Determinantı alıyorum o zaman.
+
+875
+01:15:44,984 --> 01:15:45,963
+Determinant nedir?
+
+876
+01:15:46,064 --> 01:15:47,203
+Eksi 1, 0, 1.
+
+877
+01:15:47,583 --> 01:15:48,963
+1, 2, eksi 1.
+
+878
+01:15:49,264 --> 01:15:50,423
+1, 3, 0.
+
+879
+01:15:50,423 --> 01:15:52,963
+Buradan ne yapıyoruz?
+
+880
+01:15:53,564 --> 01:15:53,963
+Şunu
+
+881
+01:15:53,963 --> 01:16:14,963
+1, 2, 3, 0.
+
+882
+01:16:14,963 --> 01:16:15,963
+1, 2, 0.
+
+883
+01:15:55,123 --> 01:15:59,863
+1 ile çarpıp buraya eklersem 0, 1 ile çarptık 0, burası da 1.
+
+884
+01:16:00,083 --> 01:16:03,203
+Buna göre açtığım zaman artı, eksi, artı.
+
+885
+01:16:03,724 --> 01:16:10,123
+Bununla bunun çarpımı 0, bununla bunun çarpımı eksi 2, 0'dan farklıdır.
+
+886
+01:16:10,483 --> 01:16:12,503
+Dolayısıyla lineer bağımsızdır.
+
+887
+01:16:12,503 --> 01:16:17,603
+Lineer bağımsız olduğundan T'nin ürettiği alt uzay eşit R3'dür.
+
+888
+01:16:17,943 --> 01:16:23,483
+Dolayısıyla T, R3'ün bir tabanıdır diyoruz.
+
+889
+01:16:23,483 --> 01:16:27,323
+Şimdi ikinci taraftan bakalım, B şıkkından.
+
+890
+01:16:28,163 --> 01:16:30,923
+V eşit R3 diyoruz.
+
+891
+01:16:31,323 --> 01:16:33,603
+U1, U2, U3 verilmiş.
+
+892
+01:16:35,163 --> 01:16:38,163
+Yani T kümesinin elemanları U1, U2, U3.
+
+893
+01:16:38,323 --> 01:16:41,903
+T'nin, R3'ün tabanı olduğunu gösteriniz.
+
+894
+01:16:42,224 --> 01:16:43,644
+Şimdi bu sefer ne yapacağım?
+
+895
+01:16:43,764 --> 01:16:49,523
+T'nin ürettiği alt uzayın V'ye eşit olduğunu göstererek yapacağım.
+
+896
+01:16:49,523 --> 01:16:57,863
+Şimdi taban olabilmesi için şuna eşit olmalıydı.
+
+897
+01:16:58,083 --> 01:16:58,603
+Öyle değil mi?
+
+898
+01:16:59,063 --> 01:17:00,063
+Ne yapıyoruz o zaman?
+
+899
+01:17:00,603 --> 01:17:07,144
+İşte K1, U1, K2, U2, artı K3, U3 eşittir U diyoruz.
+
+900
+01:17:07,583 --> 01:17:09,083
+U'yu da ne alacağım ben?
+
+901
+01:17:09,083 --> 01:17:17,644
+Bu R3 olduğuna göre 3 tane satırı, bir tane sütünü olan bir matris yazacağım.
+
+902
+01:17:18,003 --> 01:17:19,203
+Yani A, B, C.
+
+903
+01:17:20,003 --> 01:17:21,344
+U'yu bu şekilde alıyoruz.
+
+904
+01:17:22,083 --> 01:17:27,983
+Götürdük bu U1, U2, U3'leri ve U'yu götürüp yerine yazdığım zaman karşıma ne çıktı?
+
+905
+01:17:28,783 --> 01:17:30,764
+Lineer denklem sistemi çıktı.
+
+906
+01:17:30,764 --> 01:17:37,023
+Buradan zaten K3 buradan belli, K2 buradan belli.
+
+907
+01:17:37,163 --> 01:17:41,243
+Buradan da K2'yi yerine yazdığım zaman da K1'i de bulurum.
+
+908
+01:17:41,663 --> 01:17:44,344
+Dolayısıyla nedir?
+
+909
+01:17:44,923 --> 01:17:47,503
+Bu vektörler V'yi geriyor.
+
+910
+01:17:47,764 --> 01:17:51,283
+Yani T'nin ürettiği alt uzay eşittir, V'dir.
+
+911
+01:17:51,283 --> 01:17:58,483
+Dolayısıyla T lineer bağımsızdır ve ne diyebiliriz?
+
+912
+01:17:58,543 --> 01:18:02,224
+Bu ikisini sağladığında T, V'nin tabanıdır.
+
+913
+01:18:02,503 --> 01:18:05,903
+Taban olduğuna göre tabanda kaç tane vektör var?
+
+914
+01:18:06,023 --> 01:18:08,023
+Bir, iki, üç tane vektör var.
+
+915
+01:18:08,764 --> 01:18:11,563
+O zaman boy V'de neye eşittir?
+
+916
+01:18:11,804 --> 01:18:13,943
+Üçe eşittir diyoruz.
+
+917
+01:18:17,876 --> 01:18:37,516
+Evet. Şimdi benim anlatacaklarım bugünlük bu kadar. Burada kalacağım. Çünkü bundan sonrasını öbür günlerle, öbür konuyla birleştirip anlatacağım. Benim anlatacaklarım bugünlük bu kadar arkadaşlar. Sorusu olan var mı? Anlamayan sorusu olan.
+
+918
+01:18:42,260 --> 01:18:42,960
+Var mı?
+
+919
+01:18:48,979 --> 01:19:03,979
+Peki o zaman, hepinize sağlıklı günler, haftaya görüşürüz arkadaşlar. Lütfen size attığım örnekleri çözünüz. Tamam, size attığım örnekleri çözünüz.
+
+920
+01:19:03,979 --> 01:19:12,979
+Şu üçüncü konuyla ilgili de atayım hatta.
+
+921
+01:19:26,003 --> 01:19:36,283
+Tamam. Peki. Haftaya görüşmek üzere. Hoşçakalın arkadaşlar. Sağlıklı günler hepinize. İyi günler.
