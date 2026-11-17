@@ -1,0 +1,3507 @@
+1
+00:00:09,651 --> 00:00:10,971
+Merhaba arkadaşlar.
+
+2
+00:00:13,672 --> 00:00:16,811
+Arkadaşlarınız giriş yaparken ben de tahtayı temizleyeyim.
+
+3
+00:02:20,756 --> 00:02:23,855
+Ben yine dünkü dosyaların ikisini de yükleyeyim.
+
+4
+00:02:28,756 --> 00:02:30,996
+Bir de sadece bir önemi yükleyeyim. Şuna bir bakayım.
+
+5
+00:02:49,651 --> 00:02:50,651
+Sıda var mıydı?
+
+6
+00:03:24,340 --> 00:03:30,539
+Bakayım 6 geçiyor. 23 kişi. Tamam. Derse başlayabiliriz.
+
+7
+00:03:32,939 --> 00:03:39,879
+Bugün öncelikle iki yüzey arasında kalan hacim nasıl hesaplanıyor onu göstereceğim size.
+
+8
+00:04:06,644 --> 00:04:07,563
+Şöyle diyelim.
+
+9
+00:04:13,843 --> 00:04:15,343
+Z1 eşit
+
+10
+00:04:20,148 --> 00:04:24,568
+F1 demeyelim mi? F1 mi? F2. F1, F2 demişiz öyle alalım.
+
+11
+00:04:28,980 --> 00:04:33,560
+Z1 yüzeyi ile, üstten de Z2 yüzeyi ile sınırlı,
+
+12
+00:04:43,540 --> 00:04:49,460
+bir hacmini bulmak isteyelim. Tamam mı? Şöyle kabaca kendiniz
+
+13
+00:04:53,524 --> 00:04:54,524
+izbirlik tizi.
+
+14
+00:05:01,204 --> 00:05:11,584
+Başka yüzey üstten de bir başka yüzey olacak. Şöyle yapalım. Şu alttaki Z1 yüzeyimiz olsun.
+
+15
+00:05:24,180 --> 00:05:29,079
+Bir de üstten bir başka yüzey alalım.
+
+16
+00:05:41,427 --> 00:05:44,827
+Bu da Z2 ile gösterdiğimiz yüzey olsun.
+
+17
+00:05:45,267 --> 00:05:49,088
+Bu iki yüzey arasında kalan cismin hacmini hesaplamak istiyoruz.
+
+18
+00:06:02,228 --> 00:06:17,747
+Şöyle, nasıl diyeyim, bir prizmaya küpe benzer bir şey çıktı. Yüzeyi çıktı. Bunun hacmini hesaplamak istiyoruz. Şu arada kalan hacmi hesaplamak istiyoruz.
+
+19
+00:06:23,860 --> 00:06:26,319
+Bunun için öncelikle şunu yapıyoruz.
+
+20
+00:06:39,764 --> 00:06:54,324
+iki tane yüzeyle sınırlandırdık ama bu iki yüzeyde nedir? Aslında x, y düzleminde, tanım kümeleri x, y düzleminde olan fonksiyonlar, sürekli fonksiyonlar olarak göz önüne aldık aslında bunları.
+
+21
+00:06:56,163 --> 00:06:56,684
+Öncelikle,
+
+22
+00:07:01,012 --> 00:07:06,291
+Şu meydana gelen şeklin, x, y düzleminde bir iz düşümünü alıyoruz.
+
+23
+00:07:07,391 --> 00:07:13,552
+Bunu da kabaca, şöyle bir bölge olduğunu varsayalım.
+
+24
+00:07:15,432 --> 00:07:17,151
+R bölgesi diyelim buna.
+
+25
+00:07:21,684 --> 00:07:25,244
+Dolayısıyla, yazacağımız V hacmi,
+
+26
+00:07:28,819 --> 00:07:29,620
+Nasıl olacak?
+
+27
+00:07:29,860 --> 00:07:38,199
+Yani şöyle bir cismin, kısaca biz katı cisimlerin hacimlerini nasıl yazıyoruz, nasıl formüle ediyoruz?
+
+28
+00:07:38,639 --> 00:07:43,639
+Onun taban alanıyla yüksekliğini çarparak buluyoruz değil mi?
+
+29
+00:07:43,899 --> 00:07:48,699
+Hani bildiğimiz düzgün şekillerin hacimlerini o şekilde hesaplıyoruz.
+
+30
+00:07:48,699 --> 00:08:02,819
+Düzgün olmayan şekillerin hacimlerini de yine aynı mantıkla taban alanı çarpı yükseklik kullanarak bu sefer de katlı integral yardımıyla hesaplıyoruz.
+
+31
+00:08:04,339 --> 00:08:13,699
+Ve integralimiz şu oluyor, taban alanını bize şu izdüşüm bölgesi üzerindeki şu iki katlı integral verecek.
+
+32
+00:08:14,139 --> 00:08:15,600
+Yükseklikte ne olacak?
+
+33
+00:08:15,600 --> 00:08:32,059
+Bu çizdiğim, hani bunun v hacmini arıyoruz ya, bunun tavanından tabanına indirdiğimiz şu yükseklik ne olacak?
+
+34
+00:08:32,240 --> 00:08:33,519
+Bunun hacmi olacak.
+
+35
+00:08:34,419 --> 00:08:35,179
+Bu da nedir?
+
+36
+00:08:35,319 --> 00:08:41,960
+Şu verilen yüzeylerle bu h'yi ifade edecek olursak neye eşittir?
+
+37
+00:08:41,960 --> 00:08:46,840
+Şu iki nokta arasındaki farkı eşittir değil mi h yüksekliği?
+
+38
+00:08:48,100 --> 00:08:52,919
+Dolayısıyla şu noktanın değeri neye eşit olacak?
+
+39
+00:08:53,120 --> 00:08:54,460
+Z1'e eşit olacak.
+
+40
+00:08:54,919 --> 00:09:01,059
+Bu noktanın değeri de, bu da Z2, ay pardon ben ikisine de Z1 yazmışım.
+
+41
+00:09:01,259 --> 00:09:02,500
+Ha şu Z2 idi pardon.
+
+42
+00:09:02,500 --> 00:09:04,860
+Ben yanlış görmüşüm.
+
+43
+00:09:05,960 --> 00:09:08,419
+Bu Z2'ye eşit olacak.
+
+44
+00:09:08,759 --> 00:09:19,000
+Çünkü F1, işte X0, Y0 gibi bir noktada aldıysak o değeri eşit olacak değil mi?
+
+45
+00:09:19,000 --> 00:09:22,319
+Şu noktada nedir?
+
+46
+00:09:22,879 --> 00:09:27,759
+Z1 yüzey üzerinde olduğu için oradaki değeri eşit olacak.
+
+47
+00:09:27,940 --> 00:09:28,860
+Z1'e eşit olacak.
+
+48
+00:09:29,039 --> 00:09:32,700
+O halde, H buraya F yazmıyoruz.
+
+49
+00:09:32,860 --> 00:09:34,379
+Hani daha önce şey yazdık.
+
+50
+00:09:35,159 --> 00:09:41,460
+Aşağıda X'ye düzlemiyle sınırlı ama üstte başka bir yüzeyle sınırlı cismin hacmini yaparken
+
+51
+00:09:41,460 --> 00:09:44,120
+buraya hep ne yazıyorduk?
+
+52
+00:09:44,240 --> 00:09:46,159
+Fx'ye fonksiyonunu yazıyorduk.
+
+53
+00:09:46,519 --> 00:09:52,180
+Oysa şimdi aşağıda X'ye düzlemiyle sınırlı olmak zorunda değil.
+
+54
+00:09:52,620 --> 00:09:59,379
+Yani gördüğünüz gibi şu çizdiğim yüzey de aslında X'ye düzleminin üstünde olan bir yüzey.
+
+55
+00:09:59,379 --> 00:10:03,319
+Bu iki yüzey arasında kalan hacmi yazmak için
+
+56
+00:10:03,319 --> 00:10:06,759
+taban alanı çarpı yükseklikten hareket ederek
+
+57
+00:10:06,759 --> 00:10:11,340
+taban alanını iki katlı integral alanı veriyordu bize.
+
+58
+00:10:11,460 --> 00:10:14,379
+taban alanı olarak R bölgesini yazdım.
+
+59
+00:10:14,460 --> 00:10:16,899
+R bölgesi üzerinde iki katlı integral yazdım.
+
+60
+00:10:17,620 --> 00:10:21,080
+Buraya yazmam gereken fonksiyonda ne olacak?
+
+61
+00:10:21,319 --> 00:10:22,279
+Yükseklik olacak.
+
+62
+00:10:22,279 --> 00:10:29,019
+Yani Z2-Z1 olacak.
+
+63
+00:10:31,080 --> 00:10:32,180
+Tamam mı?
+
+64
+00:10:32,200 --> 00:10:36,200
+Bu şekilde iki yüzey arasında kalan
+
+65
+00:10:36,200 --> 00:10:45,220
+hacimleri iki katlı integral yardımıyla böyle hesaplıyoruz.
+
+66
+00:10:45,220 --> 00:10:47,399
+Bunu şöyle de yazabilirsiniz.
+
+67
+00:10:47,399 --> 00:10:49,180
+Z2-Z1 yerine
+
+68
+00:11:02,707 --> 00:11:06,207
+F2-F1 şeklinde de yazabilirsiniz.
+
+69
+00:11:06,607 --> 00:11:08,028
+Şimdi bunlara örnek yapalım.
+
+70
+00:11:08,528 --> 00:11:11,767
+Biz kutupsal dönüşümleri de biliyoruz.
+
+71
+00:11:12,668 --> 00:11:16,247
+Dolayısıyla, şimdi örnek yapalım.
+
+72
+00:11:17,807 --> 00:11:20,887
+Burada soracağınız, anlamadığınız bir şey var mı?
+
+73
+00:11:34,515 --> 00:11:38,635
+Yok sanırım. Peki, ben örneğime geçeyim o zaman.
+
+74
+00:12:29,812 --> 00:12:35,231
+x kare, y kare, z kare, eşit, r kare küresinin hacmini hesaplayınız diyor.
+
+75
+00:12:35,711 --> 00:12:40,731
+Burada direkt küre yüzeyleri arasında küre hacmi isteniyor, kürenin hacmi.
+
+76
+00:12:56,980 --> 00:13:02,560
+Şöyle şuraya küçük bir tane küre çizelim.
+
+77
+00:13:13,395 --> 00:13:22,055
+Bunun alt tarafı da var. Şöyle alt tarafını da nokta noktayla çizeyim.
+
+78
+00:13:35,764 --> 00:13:37,923
+X, Y, Z
+
+79
+00:13:37,923 --> 00:13:43,484
+Şu küre yüzeyini, pardon yüzey diyorum, kürenin hacmini bulacağız.
+
+80
+00:14:05,107 --> 00:14:06,507
+girmesem daha iyi.
+
+81
+00:14:11,507 --> 00:14:13,107
+Koordinat eksenlerinin
+
+82
+00:14:14,107 --> 00:14:15,467
+şöyle diyelim.
+
+83
+00:14:16,167 --> 00:14:17,107
+Koordinat eksenlerinin
+
+84
+00:14:17,887 --> 00:14:19,107
+ayırdığı bu düzlem parçalarıyla
+
+85
+00:14:19,927 --> 00:14:21,107
+yani koordinat düzlemleri
+
+86
+00:14:21,647 --> 00:14:23,127
+bu küreyi ne yapıyor?
+
+87
+00:14:23,567 --> 00:14:25,367
+8 eşit parçaya bölüyor.
+
+88
+00:14:25,907 --> 00:14:27,127
+Şu altını
+
+89
+00:14:27,127 --> 00:14:29,447
+göz önüne almayalım.
+
+90
+00:14:29,987 --> 00:14:31,187
+Hem üst yarı küre var
+
+91
+00:14:31,187 --> 00:14:32,847
+hem burada alt yarı küre var.
+
+92
+00:14:32,847 --> 00:14:35,187
+küre
+
+93
+00:14:35,187 --> 00:14:37,247
+tam merkezi
+
+94
+00:14:37,247 --> 00:14:38,647
+bir küre olduğu için
+
+95
+00:14:38,647 --> 00:14:39,427
+nedir?
+
+96
+00:14:41,647 --> 00:14:43,267
+Simetri vardır değil mi?
+
+97
+00:14:43,327 --> 00:14:45,007
+Bu koordinat eksenlerine göre
+
+98
+00:14:45,007 --> 00:14:47,187
+bir simetriye sahiptir.
+
+99
+00:14:47,567 --> 00:14:49,267
+Yani 8 eşit parçaya
+
+100
+00:14:49,267 --> 00:14:50,167
+bölüyor dedik.
+
+101
+00:14:50,727 --> 00:14:52,707
+Evet 8 eşit parçaya bölüyor.
+
+102
+00:14:53,267 --> 00:14:54,127
+Dolayısıyla
+
+103
+00:14:54,127 --> 00:14:57,267
+biz bu kürenin
+
+104
+00:14:57,267 --> 00:14:59,307
+yani 8 devirini
+
+105
+00:14:59,307 --> 00:15:00,667
+de hesaplayabilirsiniz.
+
+106
+00:15:00,667 --> 00:15:02,907
+4 devirini de hesaplayabilirsiniz.
+
+107
+00:15:03,087 --> 00:15:03,847
+Size kalmış.
+
+108
+00:15:06,447 --> 00:15:07,247
+Hesaplayacağız.
+
+109
+00:15:07,347 --> 00:15:08,607
+Yarısını ya da
+
+110
+00:15:08,607 --> 00:15:09,788
+hesaplayacağız.
+
+111
+00:15:09,907 --> 00:15:10,548
+Ne yapacağız?
+
+112
+00:15:12,347 --> 00:15:13,007
+Çarpacağız.
+
+113
+00:15:13,187 --> 00:15:14,947
+İşte yarısını hesaplayacaksak
+
+114
+00:15:14,947 --> 00:15:15,967
+2 ile çarpacağız.
+
+115
+00:15:16,127 --> 00:15:17,007
+4 ile 1'i hesaplarsanız
+
+116
+00:15:17,007 --> 00:15:19,207
+4 ile çarparsanız
+
+117
+00:15:19,207 --> 00:15:20,327
+hacmini bulursunuz.
+
+118
+00:15:21,527 --> 00:15:22,427
+Peki yazalım.
+
+119
+00:15:22,887 --> 00:15:23,007
+Kürenin
+
+120
+00:15:23,827 --> 00:15:25,247
+hacmini veren
+
+121
+00:15:25,247 --> 00:15:27,127
+integrali yazalım öncelikle.
+
+122
+00:15:28,227 --> 00:15:29,707
+İlk yapacağım şey nedir?
+
+123
+00:15:30,087 --> 00:15:30,647
+Ben bunun
+
+124
+00:15:30,647 --> 00:15:31,587
+sadece
+
+125
+00:15:31,587 --> 00:15:33,107
+üst yarı kürenin
+
+126
+00:15:33,107 --> 00:15:34,207
+hacmini hesaplayıp
+
+127
+00:15:34,207 --> 00:15:35,687
+2 ile çarpmak istiyorum.
+
+128
+00:15:35,687 --> 00:15:35,847
+İlk yapalım.
+
+129
+00:15:43,796 --> 00:15:49,355
+Bunun için ne yapmam gerekecek? İlk yapacağım şey bu şeklin bir iz düşümünü almak.
+
+130
+00:15:50,936 --> 00:15:57,536
+Bunu kırmızıyla şu aşağıya çizeyim. Bunun iz düşümünü alırsanız eğer ne olacak?
+
+131
+00:16:02,004 --> 00:16:04,163
+Yani z sıfır olacak değil mi?
+
+132
+00:16:04,624 --> 00:16:10,324
+x kare y kare eşit re kare dairesi olacak.
+
+133
+00:16:18,004 --> 00:16:25,764
+Bu bizim R bölgemiz. R bölgesi gördüğünüz gibi dairesel bir bölge oluyor.
+
+134
+00:16:26,803 --> 00:16:30,663
+Şimdi bundan yararlanarak V hacmini nasıl yazarım?
+
+135
+00:16:31,224 --> 00:16:35,744
+Üst yarı küre için yazıp bunu 2 ile çarparsak
+
+136
+00:16:43,827 --> 00:16:46,788
+Yer kalmadı, siz devam ettirsiniz.
+
+137
+00:16:47,207 --> 00:16:50,707
+Üst yarı küre için yazıp 2 ile çarparsak tüm hacmi buluruz.
+
+138
+00:16:50,707 --> 00:16:53,528
+O halde hacmi 2 çarpı diyelim.
+
+139
+00:16:54,567 --> 00:16:59,967
+R bölgesi üzerinde ne yazmam gerekecek buraya?
+
+140
+00:17:01,387 --> 00:17:03,467
+Şu bana taban alanını verecek.
+
+141
+00:17:03,847 --> 00:17:05,887
+Taban alanı çarpı yükseklik.
+
+142
+00:17:06,208 --> 00:17:07,887
+Yüksekliği nasıl bulacağım?
+
+143
+00:17:07,887 --> 00:17:19,127
+Kürenin yüzeyi üzerinden tabanına indirdiğim dik doğru onun yüksekliğini verecek değil mi?
+
+144
+00:17:30,420 --> 00:17:32,019
+yüksekliğine eşit olur.
+
+145
+00:17:33,320 --> 00:17:34,680
+Şuradaki z ile
+
+146
+00:17:34,680 --> 00:17:36,700
+buradaki z'nin farkına eşit
+
+147
+00:17:36,700 --> 00:17:38,539
+olacak. Ki bunu ben
+
+148
+00:17:38,539 --> 00:17:40,620
+x y düzlemine indirdiğim için
+
+149
+00:17:40,620 --> 00:17:43,120
+çünkü izdüşümde aldığımda x y düzlemine
+
+150
+00:17:43,120 --> 00:17:44,100
+izdüşüm aldım.
+
+151
+00:17:44,560 --> 00:17:45,620
+x y düzlemine
+
+152
+00:17:45,620 --> 00:17:48,340
+şu üst taban nedir?
+
+153
+00:17:48,620 --> 00:17:50,720
+x y düzlemine oturmuş şekildedir.
+
+154
+00:17:51,060 --> 00:17:53,180
+Dolayısıyla burada z sıfırdır.
+
+155
+00:17:54,180 --> 00:17:55,160
+Ne olacak?
+
+156
+00:17:55,160 --> 00:17:56,500
+z 2 eksi
+
+157
+00:17:56,500 --> 00:17:59,019
+z 1. z 1 sıfıra
+
+158
+00:17:59,019 --> 00:18:00,560
+eşit olduğundan bu direkt
+
+159
+00:18:00,560 --> 00:18:01,640
+neye eşit olur?
+
+160
+00:18:02,140 --> 00:18:04,420
+Kök r kare eksi
+
+161
+00:18:04,420 --> 00:18:06,560
+x kare artı
+
+162
+00:18:06,560 --> 00:18:08,480
+y kareye eşit olur.
+
+163
+00:18:09,259 --> 00:18:10,000
+O halde
+
+164
+00:18:10,000 --> 00:18:12,700
+h yüksekliği yerine ben ne yazacağım?
+
+165
+00:18:12,820 --> 00:18:13,539
+Bunu yazacağım.
+
+166
+00:18:14,060 --> 00:18:15,240
+r kare eksi
+
+167
+00:18:21,044 --> 00:18:22,024
+Çarpı DA.
+
+168
+00:18:22,524 --> 00:18:26,264
+DA'yı da artık sınırları yazdıktan sonra belirleyeceğim.
+
+169
+00:18:27,024 --> 00:18:29,504
+Dolayısıyla V hacmine eşit olacak.
+
+170
+00:18:29,864 --> 00:18:30,864
+2 çarpı.
+
+171
+00:18:31,864 --> 00:18:40,964
+Şimdi burası izdüşüm bölgesi, R bölgesi bir dairesel bölge olduğu için tam bir daire.
+
+172
+00:18:40,964 --> 00:18:49,024
+Bir dairesel bölge olduğu için burada kutupsal koordinatlara geçerek sınırları yazmak daha kolay.
+
+173
+00:18:49,024 --> 00:18:51,744
+Kutupsal koordinatlara geçelim.
+
+174
+00:18:59,763 --> 00:19:18,803
+Yani kutupsal dönüşüm yapacağız. Bu dönüşüm içinde ne kullanıyorduk? X eşit, R kosinüs, teta, Y eşit, R sinüs, teta, DA'da, R, DR, D teta idi. Şunu unutmuyorduk.
+
+175
+00:19:18,803 --> 00:19:41,803
+Şimdi buna göre yazarsak, sınırlarını nasıl yazıyorduk? Önce teta'nın sınırlarını. Bu tam bir daire olduğu için ne olacak? Teta sıfırdan 2 pi'ye kadar değişecek.
+
+176
+00:19:46,387 --> 00:19:48,967
+R nereden nereye değişecek peki?
+
+177
+00:19:50,127 --> 00:19:51,187
+Şu neydi?
+
+178
+00:19:52,067 --> 00:19:56,528
+X kare artı Y kare eşit, R kare denklemiydi.
+
+179
+00:19:57,607 --> 00:19:58,268
+Denklemi bu.
+
+180
+00:19:59,028 --> 00:20:02,028
+X kare artı Y kare, R kareye eşit.
+
+181
+00:20:02,127 --> 00:20:07,827
+Dolayısıyla R kare eşit, R kare'den R eşit, R çemberi olacak değil mi?
+
+182
+00:20:07,827 --> 00:20:13,288
+O zaman R de sıfırdan büyük R'ye kadar değişecek.
+
+183
+00:20:17,907 --> 00:20:20,707
+Fonksiyonu da dönüştüreceğim.
+
+184
+00:20:23,627 --> 00:20:29,767
+R kare eksi x kare artı y kare, r kareye eşit yazdım.
+
+185
+00:20:30,687 --> 00:20:32,288
+Çarpı ne olacak yanında?
+
+186
+00:20:32,807 --> 00:20:35,927
+R, dr, d t t olacak.
+
+187
+00:20:39,508 --> 00:20:43,968
+Şimdi tahtayı silmek zorundayım bu işlemleri devam ettirebilmek için.
+
+188
+00:20:44,388 --> 00:20:49,107
+Buraya kadar sormak istediğiniz ya da anlamadığınız bir şey var mı?
+
+189
+00:21:12,339 --> 00:21:16,480
+Dinliyor musunuz beni gerçekten? Bugün selam da vermediniz siz bana.
+
+190
+00:21:28,564 --> 00:21:41,183
+Hep aynı kişiler yazıyor. [öğrenci] yazar, [öğrenci] yazar, [öğrenci] buradaysa yazar, [öğrenci] yazar, [öğrenci], [öğrenci], [öğrenci], [öğrenci]. Hep tanıdığım isimler bunlar.
+
+191
+00:21:44,423 --> 00:21:48,544
+Peki, [öğrenci] senden de beklerdim.
+
+192
+00:21:52,756 --> 00:21:53,796
+Siliyorum o halde.
+
+193
+00:22:14,996 --> 00:22:16,476
+Şuna devam edelim.
+
+194
+00:22:17,216 --> 00:22:18,615
+V hacmimiz dedik.
+
+195
+00:22:18,696 --> 00:22:21,816
+2 çarpı sıfırdan 2 pi'ye.
+
+196
+00:22:23,115 --> 00:22:26,276
+Buradan R'ye göre integral alacağım.
+
+197
+00:22:28,556 --> 00:22:33,596
+R'ye göre integral alırken nasıl yapacağım?
+
+198
+00:22:36,336 --> 00:22:39,036
+Önce şuranın integralini alıyorum.
+
+199
+00:22:39,036 --> 00:22:40,816
+R'ye göre alacağım.
+
+200
+00:22:41,696 --> 00:22:44,776
+Zaten şu büyük R sabit sayı değil mi?
+
+201
+00:22:44,776 --> 00:22:45,656
+Yarı çaptır.
+
+202
+00:22:48,676 --> 00:22:54,916
+Tek değişken olduğu zaman integralde ne yapabiliyoruz?
+
+203
+00:22:55,136 --> 00:22:57,096
+Dönüşüm uygulayabiliyoruz.
+
+204
+00:22:58,296 --> 00:23:03,936
+Yani birinci dönem tek katlı integralleri vermiştik ya size.
+
+205
+00:23:03,936 --> 00:23:12,576
+Orada nasıl yapıyorsak, nasıl böyle tek değişkenli bir fonksiyonu integre ediyorsak burada da aynı şeyi yapıyoruz.
+
+206
+00:23:12,576 --> 00:23:25,676
+Ancak şurada mesela kökün içerisinde hem teta hem R olursa o zaman tek değişkenli fonksiyonlardaki gibi bir dönüşüm yapamayız.
+
+207
+00:23:26,136 --> 00:23:28,536
+O zaman yapacağımız dönüşüm farklı oluyor.
+
+208
+00:23:28,936 --> 00:23:30,176
+Onu da göstereceğim.
+
+209
+00:23:30,176 --> 00:23:31,776
+Ama burada nedir?
+
+210
+00:23:31,776 --> 00:23:37,916
+Bildiğimiz köklü bir ifade varsa hemen ne yapıyorduk?
+
+211
+00:23:37,996 --> 00:23:43,776
+Kökün içerisindeki ifadeye t veya u gibi bir şey diyorduk.
+
+212
+00:23:43,776 --> 00:23:51,776
+R kare eksi küçük R'nin karesine t ya da t kare diyebilirsiniz.
+
+213
+00:23:52,876 --> 00:23:56,556
+Size bağlı kökle uğraşmak istemiyorsanız t kare deyin.
+
+214
+00:23:56,556 --> 00:24:01,696
+Ya da kök gelmesi önemli değil diyorsanız t dersiniz.
+
+215
+00:24:02,076 --> 00:24:03,656
+İsterseniz t kare diyelim.
+
+216
+00:24:03,756 --> 00:24:08,676
+Ben burada t demişim ama t kare demeyi tercih ettim şimdi burada.
+
+217
+00:24:09,976 --> 00:24:13,556
+Eksi 2R, DR neye eşit olacak?
+
+218
+00:24:13,876 --> 00:24:16,576
+2T, DT'ye eşit olacak.
+
+219
+00:24:16,776 --> 00:24:17,796
+İkiler de gitti.
+
+220
+00:24:18,416 --> 00:24:22,976
+R çarpı DR, eksi T çarpı DT'ye eşit olacak.
+
+221
+00:24:22,976 --> 00:24:29,615
+Belirli integralde değişken dönüşüm yaptığımızda sınırları da dönüştürüyordum.
+
+222
+00:24:30,016 --> 00:24:32,376
+O halde sınırları da dönüştürelim burada.
+
+223
+00:24:34,876 --> 00:24:36,456
+Sınırımız artık ne olacak?
+
+224
+00:24:39,396 --> 00:24:45,156
+R sıfıra eşit olduğunda t kare, R kareye yani t eşit R olacak.
+
+225
+00:24:45,396 --> 00:24:46,336
+Büyük R olacak.
+
+226
+00:24:57,844 --> 00:25:00,864
+Büyük R'ye eşit olunca da sıfır olacak değil mi?
+
+227
+00:25:02,384 --> 00:25:04,304
+Büyük R'den sıfıra oldu.
+
+228
+00:25:06,703 --> 00:25:11,943
+Kök içine T kare dersem, o da T olarak kök dışına çıkacak.
+
+229
+00:25:12,463 --> 00:25:19,744
+T çarpı, R çarpı DR yerine de eksi T çarpı DT diyeceğim.
+
+230
+00:25:19,884 --> 00:25:23,183
+O zaman bir de eksimiz var, buraya aldım.
+
+231
+00:25:23,524 --> 00:25:25,903
+Burası T kare, DT olur.
+
+232
+00:25:29,875 --> 00:25:32,455
+çarpı, dt'ten, yakın.
+
+233
+00:25:33,175 --> 00:25:37,355
+Biz, tek katlı integralde, bir şeyi biliyoruz. Nedir?
+
+234
+00:25:37,935 --> 00:25:43,695
+Sınırlar, integralde sınırların yeri değişirse, integralin işareti değişir.
+
+235
+00:25:44,036 --> 00:25:47,215
+O zaman, önce, şu eksilikten kurtulalım.
+
+236
+00:25:57,460 --> 00:26:00,420
+Şu dtt'yi şuraya da yazabilirsiniz.
+
+237
+00:26:06,067 --> 00:26:07,468
+Şimdi burayı simeyim artık.
+
+238
+00:26:18,900 --> 00:26:30,940
+Kalenin integrali, t küp bölü 3. Sınırlarımız 0'dan r'ye kadar yazdık. Çarpı ne olacak? dtt olacak.
+
+239
+00:26:34,996 --> 00:26:36,855
+R küp bölü 3 oldu.
+
+240
+00:26:36,976 --> 00:26:38,736
+0 yazdığımda 0 olacak.
+
+241
+00:26:38,896 --> 00:26:39,355
+D teta.
+
+242
+00:26:39,696 --> 00:26:41,916
+Bunun tamamı zaten sabittir.
+
+243
+00:26:42,596 --> 00:26:43,956
+2 bölü 3.
+
+244
+00:26:44,656 --> 00:26:47,816
+R küp olarak bunu integralin dışına taşırsam.
+
+245
+00:26:48,376 --> 00:26:50,536
+D teta'nın integrali de ne olur?
+
+246
+00:26:50,656 --> 00:26:51,516
+Teta olur.
+
+247
+00:26:52,956 --> 00:26:54,896
+0'dan 2 pi'ye.
+
+248
+00:26:54,896 --> 00:26:56,176
+Sonuç.
+
+249
+00:26:58,216 --> 00:27:00,996
+4 pi.
+
+250
+00:27:01,896 --> 00:27:04,976
+R küp bölü 3 çıkar.
+
+251
+00:27:04,996 --> 00:27:28,996
+R küp bölü 3.
+
+252
+00:27:09,395 --> 00:27:12,395
+Kürenin hacmi
+
+253
+00:27:12,395 --> 00:27:16,395
+4 pi re küp bölü
+
+254
+00:27:16,395 --> 00:27:18,395
+3'e eşitmiş.
+
+255
+00:27:23,571 --> 00:27:24,271
+Var mı sorunuz?
+
+256
+00:28:00,884 --> 00:28:01,764
+Görüm tahtayı.
+
+257
+00:28:40,435 --> 00:28:46,576
+Örneğimizde şu, x kare, y kare eşit 4.
+
+258
+00:28:48,615 --> 00:28:51,295
+Yüzey bu nedir? Bir silindirdir.
+
+259
+00:28:53,015 --> 00:28:55,655
+Yüzey demişiz, ben silindiri diyeyim.
+
+260
+00:28:56,675 --> 00:29:01,596
+Silindiri ile y artı z eşit 4.
+
+261
+00:29:05,428 --> 00:29:25,408
+Bu da nedir? Uzayda olduğumuzda bu bir silindir gösteriyordu. Olmayan eksen boyunca kaydırıyoruz. Yani z eksenini çevreleyen bir silindir. Tabanı nereye oturmuş? X, Y düzlemine oturmuş. Bu da Y artı Z eşit 4 düzlemidir.
+
+262
+00:29:29,652 --> 00:29:36,092
+Silindiri ile düzlemi arasında kalan hacmi hesaplayalım.
+
+263
+00:29:54,099 --> 00:30:02,919
+Ve kabaca çizelim. Çok da büyük çizip yer harcamayalım dedim ama çizdik işte.
+
+264
+00:30:08,372 --> 00:30:08,731
+Şur.
+
+265
+00:30:15,092 --> 00:30:19,872
+Tabi bu böyle olunca bunun aradan silinmesi.
+
+266
+00:30:24,884 --> 00:30:26,423
+Z yüzeyimiz bu.
+
+267
+00:30:27,104 --> 00:30:28,963
+Z koordinatımız bu.
+
+268
+00:30:29,784 --> 00:30:32,183
+Diğeri de X artı Z4.
+
+269
+00:30:32,604 --> 00:30:34,503
+Pardon, Y artı Z4.
+
+270
+00:30:34,764 --> 00:30:36,423
+Şurası X, şurası Y.
+
+271
+00:30:36,983 --> 00:30:42,503
+Dolayısıyla, Z0 olduğunda Y4, Y0 olduğunda Z4.
+
+272
+00:30:43,064 --> 00:30:45,503
+Şöylece, bunu kesecek.
+
+273
+00:30:46,663 --> 00:30:47,564
+Bu düzden.
+
+274
+00:31:02,963 --> 00:31:05,323
+Şöyle bir düzen olduğunu düşünelim.
+
+275
+00:31:08,723 --> 00:31:09,343
+Ne oldu?
+
+276
+00:31:11,343 --> 00:31:14,604
+Silindiri bu şekilde düzlemle kestik.
+
+277
+00:31:14,604 --> 00:31:18,243
+O zaman şuradan
+
+278
+00:31:28,180 --> 00:31:31,500
+Böyle de gösterelim ama biraz kötü gösterdim.
+
+279
+00:32:11,796 --> 00:32:14,155
+Şimdi biraz daha geniş çizsem daha iyi olacak.
+
+280
+00:32:15,736 --> 00:32:16,536
+Sığdıramadım.
+
+281
+00:32:20,980 --> 00:32:24,059
+Dolayısıyla şunu şöyle kesersek
+
+282
+00:32:34,708 --> 00:32:39,028
+Şu şekilde kesilmiş olur.
+
+283
+00:33:01,844 --> 00:33:03,284
+Şöylece kestik bunu.
+
+284
+00:33:05,784 --> 00:33:16,884
+Bu silindirin yalnız yüzeyi ile diyoruz ama silindirin sadece üst kısmı olmalı.
+
+285
+00:33:26,259 --> 00:33:33,559
+Nasıl söyleyeyim? Şunun altı yok. Bir de silindiri, düzleme ve
+
+286
+00:33:48,884 --> 00:34:04,324
+eksiye düzlemi diyelim. Çünkü silindirin aslında normalde aşağısı da vardır ama nedir? Sonsuza doğru uzanacak burası. Yani aşağıdan da onu sınırlamak gerekecek.
+
+287
+00:34:05,003 --> 00:34:14,023
+Bu aradaki hacmi, şu küçük parçanın hacmini hesaplayacağız. Bunun hacmini hesaplamak için yine ne yapacağım?
+
+288
+00:34:14,023 --> 00:34:27,463
+Şu düzlemle silindirin ara kesit bölgesini ki şöyle gösterdim bu ara kesit bölgesini. Bunun ne yapacağım? X, Y düzlemine iz düşümünü alacağım.
+
+289
+00:34:28,164 --> 00:34:35,264
+X, Y düzlemine iz düşümünü alınca öncelikle bunların ara kesit bölgesini hesaplamamız gerekecek.
+
+290
+00:34:36,144 --> 00:34:39,463
+Ara kesit bölgesini alırsak
+
+291
+00:34:39,463 --> 00:35:09,443
+X, Y düzlemine iz düşümünü alınca öncelikle bunların ara kesit bölgesini.
+
+292
+00:34:45,204 --> 00:34:46,224
+Y değişik
+
+293
+00:34:57,684 --> 00:34:59,744
+Bunu öyle yazmayalım, şöyle diyelim.
+
+294
+00:35:04,884 --> 00:35:18,204
+Şu şekli, burada kesince tabii ki elips gibi bir şekil çıkıyor ama biz bunun x-y düzlemi tabana olan iz düşümünü aldığımızda bu yine ne olacaktır?
+
+295
+00:35:18,644 --> 00:35:22,364
+Silindirin tabanı üzerine bir iz düşüm olacaktır.
+
+296
+00:35:26,483 --> 00:35:27,583
+Dolayısıyla
+
+297
+00:35:32,083 --> 00:35:40,903
+R bölgesi, yarı çapı, iki birim olan şu dairesel bölge olur yine.
+
+298
+00:35:42,123 --> 00:35:47,623
+Çünkü bunun iz düşümünü aldığında taban üzerine iz düşecek. Başka şeyi yok.
+
+299
+00:35:49,063 --> 00:35:53,123
+Şekli olduğu gibi, ara kesik yüzeyini olduğu gibi almıyoruz.
+
+300
+00:35:53,123 --> 00:35:58,723
+Bunun taban üzerine iz düşümünü aldığımız zaman yine ne olacak?
+
+301
+00:35:58,903 --> 00:35:59,923
+Z sıfır olacak.
+
+302
+00:36:00,143 --> 00:36:01,543
+X kare, Y kare eşit.
+
+303
+00:36:02,003 --> 00:36:05,663
+4 dairesi olacak.
+
+304
+00:36:05,864 --> 00:36:06,723
+R bölgesi.
+
+305
+00:36:07,983 --> 00:36:12,763
+Bunu yazdıktan sonra V hacmimiz eşit nedir?
+
+306
+00:36:13,563 --> 00:36:17,163
+Taban alanı çarpı yükseklik.
+
+307
+00:36:17,864 --> 00:36:20,123
+Yüksekliği nasıl belirleyeceğim?
+
+308
+00:36:20,123 --> 00:36:50,103
+Şu düzlemden bunun tabanına kadar olan mesafe.
+
+309
+00:36:50,123 --> 00:36:58,603
+Dolayısıyla H yüksekliği 4 eksi yüzeyini 4 eksi y, d, a şeklinde olacak.
+
+310
+00:36:59,403 --> 00:37:07,623
+Yine burada kutupsal koordinatları kullanırsak,
+
+311
+00:37:20,628 --> 00:37:39,128
+kullanırsak ne olacak? Tam bir daire olduğu için teta sıfırdan 2 pi'ye değişecek. R nereden nereye değişecek? X kare, y kare eşit 4, yani r kare eşit 4'den r eşit 2 çıkacak. Sıfırdan 2'ye kadar değişecek r'de.
+
+312
+00:37:39,128 --> 00:37:46,307
+Burası da ne olur? 4 eksi y, yani r sinüs teta.
+
+313
+00:37:49,588 --> 00:37:52,728
+Çarpı r, d r, d teta.
+
+314
+00:37:56,724 --> 00:38:23,844
+dt'yi şuraya yazalım. Burası ne olur? 4r eksi r kare sinüs teta dr olur. 0'dan 2'ye kadar. Bu da oraya sığmayacak. Sığdığı kadar yapayım. 0'dan 2pi'ye dt' dedim. Şurası ne olur? 4r'nin integrali 2r kaledir.
+
+315
+00:38:23,844 --> 00:38:32,344
+r karenin integrali r küp bölü 3'tür. Yanında da sinüs teta var. Sığdılarımız da 0'dan 2'ye kadar.
+
+316
+00:38:33,604 --> 00:38:39,484
+Şimdi ben şurayı silip, b'yi buradan devam ettireyim. Hatta şunu sileyim.
+
+317
+00:38:54,195 --> 00:39:01,476
+Diyarsak, 2'nin karesi 4, 8 olacak. Burası da 8 bölü 3 sinüs teta.
+
+318
+00:39:06,164 --> 00:39:09,804
+0 koyduğumuzda 0 olacağı için d theta yazdık.
+
+319
+00:39:11,284 --> 00:39:22,624
+8 theta eksi, eksi sinüs theta neyin integralidir, neyin türevidir? Kosinüsün türevidir değil mi?
+
+320
+00:39:22,624 --> 00:39:29,403
+O halde artı 8 bölü 3, kosinüs theta olacak bu da.
+
+321
+00:39:30,944 --> 00:39:44,164
+Sıfırdan 2 pi'ye, 8 çarpı 2 pi, artı 8 bölü 3, kosinüs 2 pi, eksi.
+
+322
+00:39:44,164 --> 00:39:49,764
+Buraya sıfır koyduğumda sıfır olacak, ancak burası 8 bölü 3.
+
+323
+00:39:50,324 --> 00:39:53,344
+Zaten çift fonksiyonlar, neydi?
+
+324
+00:39:53,484 --> 00:40:00,064
+Sıfır 2 pi aralığındaki çift fonksiyonun integraline eşit oluyordu, sıfıra eşit oluyordu değil mi?
+
+325
+00:40:00,524 --> 00:40:03,844
+Aslında onu direkt oradan yazabilirdik ama neyse artık yazdım.
+
+326
+00:40:04,504 --> 00:40:05,544
+Kosinüs sıfır.
+
+327
+00:40:06,704 --> 00:40:10,104
+Kosinüs 2 pi'nin değeri bir, kosinüs sıfırın değeri bir.
+
+328
+00:40:10,104 --> 00:40:11,824
+Bunlar birbirini götürecek.
+
+329
+00:40:11,824 --> 00:40:16,364
+Sonuç 16 pi'ye, sonuç 16 pi'ye çıkacak.
+
+330
+00:40:22,900 --> 00:40:24,660
+Var mı sorunuz arkadaşlar?
+
+331
+00:41:13,811 --> 00:41:18,791
+Siz bir düşünün sorunuz var mı diye. Ben de başka sorun var mı diye bakayım.
+
+332
+00:41:59,539 --> 00:42:07,739
+Bende soru var. Ancak sizin de bu soruyu yazmanız gerekecek. Siz de benimle yazın.
+
+333
+00:42:29,460 --> 00:42:30,059
+Hocam.
+
+334
+00:42:30,720 --> 00:42:31,199
+Efendim?
+
+335
+00:42:31,860 --> 00:42:38,000
+Silmeden önce o 4 eksiğe kısmını nasıl bulduğumuzu tekrar anlatabilir misiniz? Ben orayı çözemedim de.
+
+336
+00:42:39,519 --> 00:42:46,460
+Şekli sildim. Tamam canım, hemen söyleyeyim. Şekli sildim ama şuraya tekrar çizeyim.
+
+337
+00:42:51,123 --> 00:42:53,183
+küçük bir şekil çizeceğim.
+
+338
+00:42:59,155 --> 00:43:03,795
+Şu bizim silindirimizdi. Bunu şöyle bir düzlemle kestik.
+
+339
+00:43:21,715 --> 00:43:26,295
+Böyle bir düzlenme kestik biz bunu. Burası şöyle oldu. Tamam mı?
+
+340
+00:43:27,635 --> 00:43:33,635
+Şimdi hacim hesaplarken ne yapıyoruz? Öncelikle şu ara kesip yüzeyinin iz düşümünü alıyoruz.
+
+341
+00:43:34,135 --> 00:43:41,536
+Bunun iz düşümünü aldık. Bunun iz düşümü ne olacak? Tabanın üzerine iz düşecek. Başka hiçbir şansı yok.
+
+342
+00:43:42,715 --> 00:43:49,115
+Bunun iz düşümü şu çember olacak. R bölgesi burası. Düzlendi.
+
+343
+00:43:49,115 --> 00:43:52,155
+Onu zaten çizdik.
+
+344
+00:43:53,895 --> 00:43:54,395
+R diye.
+
+345
+00:43:55,775 --> 00:43:57,815
+Şimdi taban alanı ne olacak?
+
+346
+00:43:58,096 --> 00:43:59,395
+Hacim neye eşitti?
+
+347
+00:43:59,895 --> 00:44:02,315
+Taban alanı çarpı yükseklikti.
+
+348
+00:44:03,875 --> 00:44:05,855
+Şu R bölgesi üzerinde
+
+349
+00:44:05,855 --> 00:44:07,935
+alacağım
+
+350
+00:44:07,935 --> 00:44:10,875
+iki katlı integral bana neyi verir?
+
+351
+00:44:10,875 --> 00:44:13,875
+Şu R'nin alanını verir.
+
+352
+00:44:14,375 --> 00:44:16,715
+Taban alanı dolayısıyla şuradan gelecek.
+
+353
+00:44:17,315 --> 00:44:18,895
+Taban alanını yazdım.
+
+354
+00:44:19,115 --> 00:44:19,955
+Buraya da yüksekliği yazdım.
+
+355
+00:44:19,955 --> 00:44:21,855
+Buraya da yüksekliği yazmam gerekecek.
+
+356
+00:44:21,976 --> 00:44:23,295
+Yani burada H olmalı.
+
+357
+00:44:23,895 --> 00:44:26,715
+H'ı nasıl yazacağım?
+
+358
+00:44:26,715 --> 00:44:27,775
+H' nedir? Yükseklik nedir?
+
+359
+00:44:27,775 --> 00:44:29,295
+Tabandan
+
+360
+00:44:29,295 --> 00:44:32,496
+tabana kadar olan
+
+361
+00:44:32,496 --> 00:44:35,615
+şu doğrudur değil mi?
+
+362
+00:44:35,955 --> 00:44:38,295
+Bunu herhangi bir yerden alabilirsiniz.
+
+363
+00:44:38,635 --> 00:44:40,215
+Fark etmiyor nereden aldığınız.
+
+364
+00:44:40,355 --> 00:44:40,655
+Çünkü
+
+365
+00:44:40,655 --> 00:44:43,455
+integral ile hesaplayacağım sonuçta.
+
+366
+00:44:43,455 --> 00:44:46,115
+bunun
+
+367
+00:44:46,115 --> 00:44:48,235
+şu yüksekliği
+
+368
+00:44:48,235 --> 00:44:53,016
+bir yerden alanı
+
+369
+00:44:53,016 --> 00:44:53,516
+yani şu
+
+370
+00:44:53,516 --> 00:44:54,516
+uç değerlerin farkına alırız.
+
+371
+00:44:54,516 --> 00:44:55,516
+uç değerler
+
+372
+00:44:55,516 --> 00:44:56,295
+fark etmiyor.
+
+373
+00:44:56,295 --> 00:44:57,895
+uç değerler
+
+374
+00:44:57,895 --> 00:44:58,295
+değil mi?
+
+375
+00:44:58,295 --> 00:44:59,135
+bu iki noktayı
+
+376
+00:44:59,135 --> 00:45:01,076
+bu noktayı
+
+377
+00:45:01,076 --> 00:45:02,076
+bu noktayı z2 dersem aşağısı z1 olacak.
+
+378
+00:45:02,076 --> 00:45:03,076
+z2-z1
+
+379
+00:45:03,076 --> 00:45:05,275
+bana yüksekliği verecek.
+
+380
+00:45:05,275 --> 00:45:09,955
+Şu iki nokta, şu iki değer arasındaki fark bu uzunluğa eşittir.
+
+381
+00:45:09,956 --> 00:45:12,775
+bu noktayı
+
+382
+00:45:12,775 --> 00:45:12,855
+z2
+
+383
+00:45:12,855 --> 00:45:13,355
+z2-z2
+
+384
+00:45:13,355 --> 00:45:14,195
+z2 dediğim şey
+
+385
+00:45:14,195 --> 00:45:15,435
+ben nerede alıyorum?
+
+386
+00:45:15,576 --> 00:45:16,435
+bu şeklin
+
+387
+00:45:16,435 --> 00:45:17,476
+tavanı
+
+388
+00:45:17,476 --> 00:45:18,135
+nedir?
+
+389
+00:45:19,076 --> 00:45:20,155
+düzlemdir değil mi?
+
+390
+00:45:20,255 --> 00:45:21,195
+Çünkü düzlemle
+
+391
+00:45:21,195 --> 00:45:22,355
+kesilmiş bu.
+
+392
+00:45:22,915 --> 00:45:23,576
+O halde
+
+393
+00:45:23,576 --> 00:45:24,735
+şu düzlemde
+
+394
+00:45:24,735 --> 00:45:25,976
+z değeri
+
+395
+00:45:25,976 --> 00:45:26,556
+neyse
+
+396
+00:45:26,556 --> 00:45:27,655
+onu çekiyorum.
+
+397
+00:45:28,235 --> 00:45:29,036
+Buradan z'yi
+
+398
+00:45:29,036 --> 00:45:29,956
+çekerseniz
+
+399
+00:45:29,956 --> 00:45:31,155
+z eşit ne olur?
+
+400
+00:45:31,255 --> 00:45:31,556
+4-
+
+401
+00:45:31,556 --> 00:45:31,976
+eksi
+
+402
+00:45:31,975 --> 00:45:32,576
+y olur.
+
+403
+00:45:32,576 --> 00:45:34,996
+yazdım buraya
+
+404
+00:45:34,996 --> 00:45:35,576
+4-
+
+405
+00:45:35,576 --> 00:45:36,175
+eksi
+
+406
+00:45:36,175 --> 00:45:36,655
+y
+
+407
+00:45:36,655 --> 00:45:37,975
+eksi
+
+408
+00:45:37,975 --> 00:45:39,036
+z1
+
+409
+00:45:39,036 --> 00:45:39,975
+z1'i
+
+410
+00:45:39,975 --> 00:45:41,335
+nereye indirdim ben?
+
+411
+00:45:41,975 --> 00:45:43,875
+x-y düzlemine indirdim.
+
+412
+00:45:44,255 --> 00:45:45,655
+x-y düzleminde
+
+413
+00:45:45,655 --> 00:45:47,076
+z koordinatı
+
+414
+00:45:47,076 --> 00:45:47,516
+var mı?
+
+415
+00:45:48,415 --> 00:45:48,675
+yok
+
+416
+00:45:48,675 --> 00:45:49,635
+sıfırdır değil mi?
+
+417
+00:45:49,755 --> 00:45:51,016
+x-y düzleminde
+
+418
+00:45:51,016 --> 00:45:52,235
+z
+
+419
+00:45:52,235 --> 00:45:53,556
+sıfırdır.
+
+420
+00:45:54,096 --> 00:45:54,835
+Dolayısıyla
+
+421
+00:45:54,835 --> 00:45:55,675
+buraya sıfır
+
+422
+00:45:55,675 --> 00:45:57,275
+yazsanız da olur
+
+423
+00:45:57,275 --> 00:45:58,795
+yazmasanız da olur.
+
+424
+00:45:59,556 --> 00:45:59,775
+Çok
+
+425
+00:45:59,775 --> 00:46:00,675
+affedersiniz
+
+426
+00:46:00,675 --> 00:46:03,315
+şimdi
+
+427
+00:46:03,315 --> 00:46:04,175
+baktığımızda
+
+428
+00:46:04,175 --> 00:46:05,675
+h neye eşit oldu?
+
+429
+00:46:05,795 --> 00:46:06,076
+4-
+
+430
+00:46:06,076 --> 00:46:06,435
+eksi
+
+431
+00:46:06,435 --> 00:46:07,556
+y'ye eşit oldu.
+
+432
+00:46:10,415 --> 00:46:10,855
+İşte
+
+433
+00:46:10,855 --> 00:46:11,496
+bana
+
+434
+00:46:11,496 --> 00:46:11,935
+hacmi
+
+435
+00:46:11,935 --> 00:46:12,735
+verdirecek
+
+436
+00:46:12,735 --> 00:46:13,375
+olan
+
+437
+00:46:13,375 --> 00:46:15,135
+formül
+
+438
+00:46:15,135 --> 00:46:15,556
+budur.
+
+439
+00:46:17,135 --> 00:46:17,435
+Tamam
+
+440
+00:46:17,435 --> 00:46:17,755
+hocam
+
+441
+00:46:17,755 --> 00:46:18,395
+teşekkürler
+
+442
+00:46:18,395 --> 00:46:18,795
+anladım.
+
+443
+00:46:19,255 --> 00:46:19,536
+Sağ olun.
+
+444
+00:46:20,475 --> 00:46:20,755
+Ara
+
+445
+00:46:20,755 --> 00:46:21,395
+vaktimiz
+
+446
+00:46:21,395 --> 00:46:21,795
+geldi.
+
+447
+00:46:21,956 --> 00:46:22,556
+İsterseniz
+
+448
+00:46:22,556 --> 00:46:22,975
+bir ara
+
+449
+00:46:22,975 --> 00:46:23,456
+verelim.
+
+450
+00:46:23,576 --> 00:46:24,195
+Aradan sonra
+
+451
+00:46:24,195 --> 00:46:24,655
+ben size
+
+452
+00:46:24,655 --> 00:46:25,115
+bir örnek
+
+453
+00:46:25,115 --> 00:46:25,355
+daha
+
+454
+00:46:25,355 --> 00:46:25,795
+yapayım.
+
+455
+00:59:58,260 --> 01:00:03,780
+İki katlı integrallerde genel değişken dönüşümünü bugün vermemeye karar verdim.
+
+456
+01:00:04,180 --> 01:00:09,740
+Önümüzdeki hafta sadece o konu kaldı zaten. O konuyu da anlatıp bitirip soru çözeriz.
+
+457
+01:00:10,280 --> 01:00:15,060
+Bugün bu hacimlerle ilgili bence örnek yapalım. İyice bir otursun bu.
+
+458
+01:00:17,020 --> 01:00:18,720
+Elimde sorular var.
+
+459
+01:00:20,080 --> 01:00:25,040
+Başlamadan önce bu hafta ek dersimiz olacak mı soru çözümüyle ilgili acaba?
+
+460
+01:00:25,040 --> 01:00:30,180
+Evet, yapmayı düşünüyorum. Ama perşembe sen girememiştin.
+
+461
+01:00:30,860 --> 01:00:38,320
+Evet, hocam bir de bu perşembe devre hocamız da ek ders yapıyor. O yüzden dedim ikisi aynı anda olmasın diye.
+
+462
+01:00:39,080 --> 01:00:39,520
+Anladım.
+
+463
+01:00:43,360 --> 01:00:46,240
+Peki, cuma yapabilir miyiz?
+
+464
+01:00:46,240 --> 01:01:16,220
+ben cuma yapabilir miyim?
+
+465
+01:01:16,220 --> 01:01:17,220
+ben size soru hazırlayayım.
+
+466
+01:01:17,220 --> 01:01:23,220
+Ben size soru hazırlayayım. O zaman şey yapayım. Nedir o?
+
+467
+01:01:23,220 --> 01:01:32,220
+Aves ise yükleyeyim. Siz çalışın. Ama böyle birlikte çalışınca soru sorma fırsatınız da oluyor diye söyledim.
+
+468
+01:01:32,220 --> 01:01:33,220
+Söyledim.
+
+469
+01:01:33,220 --> 01:01:55,220
+Evet, evet.
+
+470
+01:01:36,467 --> 01:01:38,427
+Önümüzdeki hafta yaparız o zaman.
+
+471
+01:01:40,788 --> 01:01:45,587
+Diğer arkadaşlar da katılmak isteyen arkadaşlar da fikirlerini söylerse iyi olur.
+
+472
+01:02:03,380 --> 01:02:04,860
+Kimsenin fikri yok.
+
+473
+01:02:08,480 --> 01:02:10,760
+Cuma dersiniz yok.
+
+474
+01:02:11,940 --> 01:02:15,380
+Geçen cuma bazı arkadaşların sınavı vardı diye hatırlıyorum.
+
+475
+01:02:20,980 --> 01:02:33,300
+Yok, cumaya [kişisel bilgi] hem de ben yetişemem gibi geliyor. Daha önceden bir işim var.
+
+476
+01:02:35,619 --> 01:02:41,980
+Hocam, perşembe dersimiz 5 ile 7 arasında. Eğer uygunsanız ya da...
+
+477
+01:02:42,740 --> 01:02:46,740
+Yani çok geç saatte yapmayalım.
+
+478
+01:02:46,740 --> 01:02:59,740
+Cumartesi...
+
+479
+01:02:59,740 --> 01:03:00,619
+Yok.
+
+480
+01:03:01,519 --> 01:03:04,119
+Cumartesi de randevu var, hem de geç bir saatte.
+
+481
+01:03:04,740 --> 01:03:06,400
+Cumartesi de olmayacak.
+
+482
+01:03:06,900 --> 01:03:07,740
+Bu hafta geçebiliriz.
+
+483
+01:03:08,800 --> 01:03:10,019
+Yarın olabilir mi?
+
+484
+01:03:13,556 --> 01:03:14,936
+Yarın çarşamba.
+
+485
+01:03:17,695 --> 01:03:19,396
+Kaçla kaç arası hocam?
+
+486
+01:03:23,416 --> 01:03:25,836
+6 ile 7 arası ile olabilir.
+
+487
+01:03:29,460 --> 01:03:32,940
+Benim dersim altıda bitiyor, ben girebilirim.
+
+488
+01:03:33,920 --> 01:03:35,159
+Arkadaşları bilmiyorum.
+
+489
+01:03:35,659 --> 01:03:36,099
+Anladım.
+
+490
+01:03:46,068 --> 01:03:48,528
+Bazı arkadaşlarında sınavı varmış.
+
+491
+01:03:49,708 --> 01:03:56,068
+Tamam, o zaman şey, önümüzdeki hafta içinde isterseniz iki kere de yapabilirim.
+
+492
+01:03:56,988 --> 01:04:03,088
+Ya da zaten vaktimiz kalacak, kalan vaktimizde soru çözeceğiz.
+
+493
+01:04:03,528 --> 01:04:09,408
+Bir tek bu genel değişken dönüşümü kalıyor, size anlatmadığım.
+
+494
+01:04:10,668 --> 01:04:13,348
+Ama onu da şimdi böyle sıkıştırmak istemiyorum.
+
+495
+01:04:13,348 --> 01:04:16,968
+Pazartesi anlatırım, onunla ilgili sorular çözeriz.
+
+496
+01:04:17,988 --> 01:04:21,828
+Kalan zamanımızda yine integral ile ilgili sorular çözeriz.
+
+497
+01:04:22,388 --> 01:04:27,528
+Salı günü de genel olarak o zaman soru çözerim size.
+
+498
+01:04:31,155 --> 01:04:33,635
+Öyle yapalım. Bu hafta yapmayalım o halde.
+
+499
+01:04:35,795 --> 01:04:37,795
+Şimdi şu soruyu yapalım.
+
+500
+01:04:40,195 --> 01:04:46,375
+Şunların hepsini yapacağız ama öncelikle şu parabolomide yapalım.
+
+501
+01:04:59,443 --> 01:05:00,023
+Hadi yal!
+
+502
+01:05:21,235 --> 01:05:27,536
+2z eşit x kare artı y kare ve
+
+503
+01:05:32,596 --> 01:05:34,436
+ve z eşit 2.
+
+504
+01:05:37,735 --> 01:05:41,976
+Yüzeyleri arasında kalan cismin hacmini bulunuz.
+
+505
+01:05:43,175 --> 01:05:46,016
+Şu nedir? Bu paraboloid. Bu da bir düzlem.
+
+506
+01:06:02,036 --> 01:06:05,235
+Hacim. Nedir? Onu bulalım.
+
+507
+01:06:11,443 --> 01:06:11,983
+Şuraya
+
+508
+01:06:11,983 --> 01:06:14,683
+Çizelim şeklimizi.
+
+509
+01:06:20,659 --> 01:06:30,279
+z eksenini şöyle çevreleyen paraboloyduğumuz bu olsun. Bunu yukarıdan ne ile keseceğiz? Z eşit 2 düzlemiyle keseceğiz.
+
+510
+01:06:32,420 --> 01:06:38,199
+Kestiğimizde ara kesik yüzeyi bu olacak. Z eşit 2 düzlemiyle kestik.
+
+511
+01:06:43,411 --> 01:06:44,751
+Bu hacmi hesaplayacağız.
+
+512
+01:06:46,991 --> 01:06:49,172
+Hacim neydi?
+
+513
+01:06:50,551 --> 01:07:01,672
+Şu yüzeylerin x, y düzlemi üzerine iz düşüm bölgesi üzerindeki iki katlı integral olarak yazıyorduk.
+
+514
+01:07:02,672 --> 01:07:10,751
+Bunların, bu iki yüzeyi, iz düşümü bana neyi verecek?
+
+515
+01:07:10,751 --> 01:07:14,311
+Z yerine, burada iki yazarsanız, dört olur.
+
+516
+01:07:14,451 --> 01:07:16,051
+x kareye kare eşit, dört.
+
+517
+01:07:16,891 --> 01:07:18,411
+Daire çemberini verecek.
+
+518
+01:07:18,531 --> 01:07:23,672
+Yani bölge olarak, x kareye kare dört, dairesi çıkıyor karşımıza.
+
+519
+01:07:24,131 --> 01:07:26,591
+R bölgesi, burası.
+
+520
+01:07:37,940 --> 01:07:45,079
+V hacmimiz, taban alanı çarpı yükseklik.
+
+521
+01:07:45,340 --> 01:07:47,280
+Şimdi yüksekliğe karar verelim.
+
+522
+01:07:48,380 --> 01:07:49,760
+Yükseklikte ne olacak?
+
+523
+01:07:50,300 --> 01:07:53,179
+Şu tavanı nedir bunun üst kısmı?
+
+524
+01:07:53,679 --> 01:07:56,659
+Z eşit 2 düzlemiyle kesilen kısımdır.
+
+525
+01:07:56,659 --> 01:07:58,039
+Z eşit 2 düzlemidir.
+
+526
+01:07:58,039 --> 01:08:08,519
+Bu düzlemden şunun herhangi bir yerine aldığım uzaklık haş yüksekliğini verecek bana değil mi?
+
+527
+01:08:09,059 --> 01:08:12,720
+Haş yüksekliğini mesela şurada ölçersem budur.
+
+528
+01:08:12,720 --> 01:08:15,480
+Bu noktada bunu verecek.
+
+529
+01:08:15,659 --> 01:08:18,239
+Şu noktada tam nereye kadar gelecek?
+
+530
+01:08:19,640 --> 01:08:22,100
+İksiye düzlemine kadar gelecek.
+
+531
+01:08:27,380 --> 01:08:52,739
+Haçlar değişiyor. Ama genel olarak bu haçlardan bir tanesini yazmak istersek şunu yazalım. Neye eşit olacak? Şu iki nokta arasındaki farka eşit olacak. Bu nokta nedir? Z eşit iki düzleme olduğu için burada Z sabittir. İkidir yani. Bunu siyahla yazarsam daha iyi görünüyor galiba.
+
+532
+01:08:52,739 --> 01:09:08,000
+İki. Eksi. Buradaki Z nedir? Bu da ne? Parabolün yan tarafı değil mi? Parabol yüzeyine kadar geliyor. Parabol de Z'yi çekersek X kareye kare bölü 2 olacak.
+
+533
+01:09:12,979 --> 01:09:26,379
+İşte h yüksekliğim buna eşit. O halde buraya ne yazacakmışım? 2-x kare y kare bölü 2 çarpı d a yazacağım.
+
+534
+01:09:27,859 --> 01:09:39,419
+Yalnız benim izdüşüm bölgem yine bir daire olduğu için buradan kutupsal koordinatları kullanmak daha avantajlı olacak.
+
+535
+01:09:50,931 --> 01:10:08,692
+Kutupsal koordinatları kullanarak bunu hesaplarsak tam bir tur yapacak değil mi? Tam bir daire olduğu için şöyle merkezden çıkan doğrularla taradığında 0'dan 2 pi'ye kadar geldiğimde bölgeyi taramış oluyorum.
+
+536
+01:10:08,692 --> 01:10:15,291
+teta 0'dan 2 pi'ye kadar değişiyor. Peki re nereden nereye değişiyor?
+
+537
+01:10:16,971 --> 01:10:30,851
+Bu x kare y kare eşit 4 çemberiydi. Burası re kare eşit 4'den re eşit 2 olacak değil mi? 0'dan 2'ye kadar da re değişecek.
+
+538
+01:10:35,252 --> 01:10:36,712
+Geldik buraya.
+
+539
+01:10:37,292 --> 01:10:40,152
+X kare artı y kare, re kareyi eşit.
+
+540
+01:10:41,532 --> 01:10:48,532
+2 eksi re kare bölü 2 dersek, da yerine de r, dr, d theta yazarız.
+
+541
+01:10:48,952 --> 01:10:50,372
+Gerisi integral.
+
+542
+01:10:58,515 --> 01:11:04,315
+R'e çarptığında, şurası 2R olacak.
+
+543
+01:11:08,020 --> 01:11:13,940
+Şurası 2R eksi, R küp bölü 2 eşit olacak değil mi?
+
+544
+01:11:14,220 --> 01:11:18,860
+Şimdi buradan integral alırsam, 2R'nin integrali R kare olacak.
+
+545
+01:11:20,600 --> 01:11:26,060
+R küp bölü 3'ün integrali de, R üzeri 4 bölü 8 olacak.
+
+546
+01:11:29,180 --> 01:11:33,720
+Sınırlarımız sıfırdan 2'ye, dt'te yazdık.
+
+547
+01:11:33,720 --> 01:11:38,880
+2 yazdığımda 4
+
+548
+01:11:38,880 --> 01:11:43,280
+2 yazdık.
+
+549
+01:11:43,900 --> 01:11:45,960
+16 bölü 8'den 2
+
+550
+01:11:45,960 --> 01:11:47,480
+Sonuç 2 çıkıyor.
+
+551
+01:11:50,931 --> 01:11:53,311
+3, 2, d, teta oluyor.
+
+552
+01:12:01,716 --> 01:12:08,436
+2 tetadır, 0'dan 2 pi'ye, yani 4 pi çıkıyor.
+
+553
+01:12:19,283 --> 01:12:19,743
+Yeni bir şey, o zaman?
+
+554
+01:12:28,692 --> 01:12:36,792
+Size ikinci dereceden yüzeylerle ilgili bir fotokopi yüklemiştim.
+
+555
+01:12:37,492 --> 01:12:41,192
+Avesiste de galiba var. Ders esnasında da yüklemiştim.
+
+556
+01:12:41,692 --> 01:12:44,891
+İşte şimdi onlara bakmanın yeridir. Onlara bir bakın.
+
+557
+01:12:45,612 --> 01:12:52,712
+Kürenin denklemi, koninin denklemi, silindirin denklemi, paraboloid denklemi, elipsoid denklemi.
+
+558
+01:12:52,712 --> 01:13:00,952
+Bunların ne olduğuna bir bakın ki gelen şeklin yani verilen yüzeyin hemen ne olduğunu anlayabilirsiniz.
+
+559
+01:13:02,391 --> 01:13:04,492
+Sorunuz yoksa siliyorum.
+
+560
+01:13:19,859 --> 01:13:24,479
+Yoktu bu sorular. Bunları da yazarsanız iyi olacak.
+
+561
+01:13:40,787 --> 01:13:46,347
+Diğer bir sorumuz x kare z kare eşit 9.
+
+562
+01:13:49,971 --> 01:13:53,091
+y eşit 2
+
+563
+01:13:53,091 --> 01:13:56,652
+z eşit 0
+
+564
+01:14:00,627 --> 01:14:01,688
+0, y 0
+
+565
+01:14:07,604 --> 01:14:11,484
+Yüzeyleri arasında kalan hacmi hesaplayınız.
+
+566
+01:14:29,684 --> 01:14:42,083
+Bu yüzeylerimiz, şu bir silindirdir değil mi? Burada olmayan eksen y ekseni olduğu için y ekseni boyunca uzanan bir silindir. Çizelim.
+
+567
+01:14:47,091 --> 01:14:47,531
+İzledim.
+
+568
+01:15:12,627 --> 01:15:27,907
+Şöyle diyelim, x-z düzleminde, bunu da o kadar kötü çizdim ki bu kadar olur. Şöyle dörtte birlik bir çember gibi çizdim. Şimdi oldu sanıyorum.
+
+569
+01:15:30,307 --> 01:15:38,667
+Tabanı burada. Bu bir çember olacak. Dörtte birlik kısmını çizdim. Ne olacak? Olmayan eksen boyunca bunu uzatacağım.
+
+570
+01:15:38,667 --> 01:15:43,487
+uzayıp gidiyor. Böyle bir silindir bu.
+
+571
+01:15:44,527 --> 01:15:47,107
+Sonra ne ile sınırlandırıyoruz?
+
+572
+01:15:48,228 --> 01:15:52,007
+y eşit 2 düzlemi.
+
+573
+01:15:52,047 --> 01:15:54,127
+y eşit 2 de bunu kesersek
+
+574
+01:15:54,127 --> 01:15:57,667
+şöyle olacak değil mi?
+
+575
+01:16:02,003 --> 01:16:03,104
+Şu kısmını aldım.
+
+576
+01:16:09,908 --> 01:16:11,248
+Şurası 2 olsun.
+
+577
+01:16:11,928 --> 01:16:14,368
+Y eşit 2 düzlemiyle kestim silindirin.
+
+578
+01:16:16,628 --> 01:16:22,788
+Z eşit 0, x, y düzleminin kendisi, yani tabanda burası olacak.
+
+579
+01:16:24,448 --> 01:16:25,708
+Bununla da kestik.
+
+580
+01:16:27,168 --> 01:16:29,248
+X 0 ve y 0.
+
+581
+01:16:29,588 --> 01:16:30,728
+X 0 nedir?
+
+582
+01:16:31,328 --> 01:16:32,688
+Şu düzlem.
+
+583
+01:16:35,428 --> 01:16:36,928
+Bir de ne var?
+
+584
+01:16:36,928 --> 01:16:43,307
+Y 0'da, x, z düzleminin şu tahta, arkası yani.
+
+585
+01:16:44,948 --> 01:16:46,387
+Çok ilginç bir şekil oldu.
+
+586
+01:16:47,628 --> 01:16:51,448
+Bunlarla, yani şu tahtayla da burası da sınırlanıyor.
+
+587
+01:16:52,008 --> 01:16:52,468
+Ne oldu?
+
+588
+01:16:56,648 --> 01:16:58,387
+Kaçta kaçını aldım?
+
+589
+01:17:00,208 --> 01:17:01,288
+Dörtte biri mi?
+
+590
+01:17:03,288 --> 01:17:05,828
+Sekizde birlik kısmını aldık silindirin.
+
+591
+01:17:09,427 --> 01:17:24,507
+Alt kısım yok, sol kısım yok, sağ kısım yok, arka kısım yok. Sadece şu ön kısım var. Böyle bir şekil. Bunun hacmini hesaplayacağız.
+
+592
+01:17:24,507 --> 01:17:28,507
+Şu yüzey.
+
+593
+01:17:34,644 --> 01:17:36,904
+yüzey işte. Bunun hacmini
+
+594
+01:17:36,904 --> 01:17:37,744
+hesaplayacağız.
+
+595
+01:17:39,064 --> 01:17:40,304
+V hacmimiz
+
+596
+01:17:40,304 --> 01:17:44,804
+R bölgesi üzerinde
+
+597
+01:17:44,804 --> 01:17:47,204
+H çarpı
+
+598
+01:17:47,204 --> 01:17:48,704
+DA gibi yazarsak
+
+599
+01:17:48,704 --> 01:17:50,664
+şimdi orada H'ın falan ne olduğuna
+
+600
+01:17:50,664 --> 01:17:52,244
+karar vermemiz gerekiyor.
+
+601
+01:17:52,664 --> 01:17:55,284
+Yalnız burada şöyle bir kolaylığınız
+
+602
+01:17:55,284 --> 01:17:55,963
+da olabilir.
+
+603
+01:17:57,224 --> 01:17:58,123
+İz düşümü
+
+604
+01:17:58,123 --> 01:18:00,484
+yine de X'ye düzlemini
+
+605
+01:18:00,484 --> 01:18:02,144
+almak zorunda değilsiniz.
+
+606
+01:18:02,144 --> 01:18:04,864
+Mesela XZ düzlemi
+
+607
+01:18:04,864 --> 01:18:07,043
+üzerinde de iz düşüm alabilirsiniz.
+
+608
+01:18:08,463 --> 01:18:10,404
+Şu tahta neydi?
+
+609
+01:18:11,064 --> 01:18:12,923
+YZ düzlemi üzerinde de
+
+610
+01:18:12,923 --> 01:18:14,304
+iz düşüm alabilirsiniz.
+
+611
+01:18:15,923 --> 01:18:18,264
+Bir, iki, üç tane
+
+612
+01:18:18,264 --> 01:18:20,944
+düzlemle kuşatılmış ya
+
+613
+01:18:20,944 --> 01:18:21,923
+bu çevrelenmiş.
+
+614
+01:18:22,344 --> 01:18:24,604
+Her üç düzlem üzerine de iz düşüm
+
+615
+01:18:24,604 --> 01:18:27,024
+alabilirsiniz. Hepsinde tabii ki
+
+616
+01:18:27,024 --> 01:18:28,644
+farklı olarak
+
+617
+01:18:28,644 --> 01:18:30,244
+hacim bölgesini yazmanız
+
+618
+01:18:30,244 --> 01:18:32,244
+gerekecek. Birinci olarak
+
+619
+01:18:32,244 --> 01:18:34,404
+X, Y düzlemine iz düşüm
+
+620
+01:18:34,404 --> 01:18:36,224
+alırsanız iz düşüm
+
+621
+01:18:36,224 --> 01:18:37,404
+bölgesi ne olur?
+
+622
+01:18:44,851 --> 01:18:47,872
+x, o, y düzlemini iz düşürürsek,
+
+623
+01:18:50,072 --> 01:18:52,131
+iz düşüm bölgesi,
+
+624
+01:18:52,131 --> 01:18:53,811
+bu nedir? y eşit 2,
+
+625
+01:18:56,891 --> 01:18:58,171
+x eşit 0,
+
+626
+01:19:02,036 --> 01:19:02,676
+Ah,
+
+627
+01:19:10,131 --> 01:19:11,031
+Şu 2.
+
+628
+01:19:14,851 --> 01:19:20,152
+Şurada z 0 olursa, x kaç olacak? 3 olacak değil mi?
+
+629
+01:19:21,152 --> 01:19:26,931
+z'yi 0 yaptığınızda, x kare eşit 9'dan, x 3 olacak.
+
+630
+01:19:33,619 --> 01:19:36,539
+Kötü çizdim. Onu biraz daha düzgün çizeyim.
+
+631
+01:19:37,599 --> 01:19:40,939
+X, O, Y düzlem üzerine iz düşüm aldığınızda
+
+632
+01:19:53,555 --> 01:19:54,915
+dikdörtgen olacak.
+
+633
+01:19:55,695 --> 01:19:56,595
+R bölgesi.
+
+634
+01:19:58,515 --> 01:20:00,355
+Bunu anladınız mı?
+
+635
+01:20:02,555 --> 01:20:07,195
+Y zaten 2. Burada iki düzlemiyle kesilmiş.
+
+636
+01:20:07,655 --> 01:20:08,795
+Y 2 yazdık.
+
+637
+01:20:10,535 --> 01:20:14,355
+Şu yüzeyi iz düşürdüğümde Z 0 olacak.
+
+638
+01:20:14,615 --> 01:20:17,375
+Z yerine 0 yazdığımda X kare eşit 9.
+
+639
+01:20:17,955 --> 01:20:22,115
+Yani X eşit artı eksi 3 olacak ama artı 3.
+
+640
+01:20:22,115 --> 01:20:25,715
+Eksi 3 kısmı yok çünkü şu yüzeylerle sınırda.
+
+641
+01:20:27,076 --> 01:20:30,576
+Dolayısıyla şu dikdörtgen R bölgesi olacak.
+
+642
+01:20:31,335 --> 01:20:33,115
+Şimdi buna göre yazarsak...
+
+643
+01:20:37,395 --> 01:20:51,055
+H yüksekliği ne olur? H yüksekliği de bunun tavanından, tabana indirdiğim şu yükseklik olacak değil mi? Burada Z nedir?
+
+644
+01:20:57,363 --> 01:21:20,023
+Silindir yüzeyi olduğu için silindirin z'sini çekersiniz. Burada z neymiş? Kök 9-x karedir. Artıdır çünkü sadece pozitif kısım. Aldığımız yüzey sadece pozitif kısımda var. Kök 9-x kare.
+
+645
+01:21:27,315 --> 01:21:33,496
+Şurası z sıfır olduğu için, z bir eşit sıfır olduğu için, bu dokuz eksi x kareye eşittir.
+
+646
+01:21:33,855 --> 01:21:36,355
+Çarpı ne diyeceğiz? d a diyeceğiz.
+
+647
+01:21:36,456 --> 01:21:44,555
+Şimdi sınırları da yazarsak, bu dikdörtgen bir bölge olduğu için karteziyen koordinatlar da yapmak daha kolaydır.
+
+648
+01:21:44,555 --> 01:21:50,095
+x'e göre yaparsanız, x'e göre yaparsanız ne olacak?
+
+649
+01:21:54,996 --> 01:22:01,176
+x eksenine dik doğrularla tararsanız, bir tanesini belirgin yapalım.
+
+650
+01:22:03,136 --> 01:22:05,315
+x sıfırdan 3'e değişir.
+
+651
+01:22:07,975 --> 01:22:10,275
+Önce y'ye göre mi yapsaydım acaba?
+
+652
+01:22:15,283 --> 01:22:21,243
+Fark etmez. Sınırlar ikisi de sabit. Y de sıfırdan ikiye değişecek değil mi?
+
+653
+01:22:37,171 --> 01:22:39,271
+Dx olarak yazdık.
+
+654
+01:22:42,091 --> 01:22:48,531
+Şu y'ye göre integral alırken sabit olacağı için sabit gibi düşünürüz.
+
+655
+01:22:51,131 --> 01:22:59,491
+Sıfırdan 3'e kök 9-x kare y sıfırdan 2'ye dx.
+
+656
+01:22:59,631 --> 01:23:05,931
+Yani sıfırdan 3'e y yerine ne yazacağım?
+
+657
+01:23:05,931 --> 01:23:09,311
+2 sabit olduğu için bunu integralin dışına yazalım.
+
+658
+01:23:09,951 --> 01:23:13,211
+9-x kare dx integralidir.
+
+659
+01:23:14,331 --> 01:23:15,411
+Burada da
+
+660
+01:23:24,372 --> 01:23:28,271
+Sinüs ya da kosinüs dönüşümü yapmak daha uygun olacak değil mi?
+
+661
+01:23:35,220 --> 01:23:36,480
+Sinüs dönüşümü yapalım.
+
+662
+01:23:36,600 --> 01:23:42,380
+Kök a kare eksi x kare olunca sinüs dönüşümü genellikle yapıyorduk.
+
+663
+01:23:42,659 --> 01:23:46,199
+Ben şurayı sileyim ama bu üstteki şekil kalsın.
+
+664
+01:23:47,039 --> 01:23:49,199
+Onu integre etmek için ne yapacağım?
+
+665
+01:23:49,199 --> 01:23:59,320
+x eşit a kare dokuda olduğuna göre a 3 3 sinüs teta diyelim.
+
+666
+01:23:59,320 --> 01:24:05,840
+dx ne olacak? 3 cos teta d teta olacak.
+
+667
+01:24:06,699 --> 01:24:10,300
+Sınırları da buna göre değiştirirsek.
+
+668
+01:24:11,740 --> 01:24:14,180
+Şöyle v hacmi eşit ne olur?
+
+669
+01:24:15,760 --> 01:24:20,039
+x 0 olduğunda teta da 0 olur.
+
+670
+01:24:20,680 --> 01:24:22,320
+Sinüs 0 0'dır çünkü.
+
+671
+01:24:23,060 --> 01:24:25,440
+x 3 olduğunda 3'ü 3'e böleriz.
+
+672
+01:24:25,539 --> 01:24:27,060
+1 teta ne olur?
+
+673
+01:24:27,280 --> 01:24:28,560
+pi bölü 2 olur.
+
+674
+01:24:28,560 --> 01:24:33,260
+90'daki değeri sinüsün 1'e eşittir.
+
+675
+01:24:33,680 --> 01:24:38,480
+Dolayısıyla 0'dan pi bölü 2'ye kadar şurada 2'miz vardı.
+
+676
+01:24:38,760 --> 01:24:39,539
+Onu yazdım.
+
+677
+01:24:39,539 --> 01:24:41,840
+Şu dönüşümü yaparsam ne olacak?
+
+678
+01:24:42,920 --> 01:24:45,579
+9 eksi 9 sinüs kare teta.
+
+679
+01:24:46,060 --> 01:24:49,079
+9'u 9 parantezine alırsak.
+
+680
+01:24:51,060 --> 01:24:52,780
+Belki unutmuşsunuzdur.
+
+681
+01:24:52,880 --> 01:24:53,800
+Uzun uzun yapayım.
+
+682
+01:24:59,699 --> 01:25:01,819
+dx yerine de ne yazacağız?
+
+683
+01:25:02,359 --> 01:25:05,519
+3, kosinus teta, d teta yazacağız.
+
+684
+01:25:08,851 --> 01:25:22,872
+Şurası ne olacak? 9 parantezini aldığımızda, 3 çarpı, 1 eksi sinüs kare, kosünüs kareye eşitti, 3 kosünüs teta'ya eşit olacak. Burası 9 kosünüs kare olacak.
+
+685
+01:25:23,791 --> 01:25:38,532
+Şöyle yapalım, 9 integralin dışında olsun, şu 2'yi integralin içine alalım, 2 kosünüs kare, teta,
+
+686
+01:25:38,851 --> 01:25:39,452
+olacak.
+
+687
+01:25:41,452 --> 01:25:47,372
+2 özellikle integralin içine aldım, çünkü 2 kosünüs kare, teta neye eşittir?
+
+688
+01:25:55,412 --> 01:26:00,432
+1 artı, kosinus 2 teta'ya eşittir bu da değil mi?
+
+689
+01:26:09,203 --> 01:26:16,183
+Dolayısıyla integralini alırsak 9 çarpı, bu 9 vardı, bunun yerine 1 artı kosinüs 2 teta yazdık.
+
+690
+01:26:16,183 --> 01:26:31,243
+Birinin integrali teta, kosinüs 2 tetanın integrali sinüs 2 teta bölü 2, orada yer kalmadı. Ben bunu nereye yazayım? Şuraya yazayım.
+
+691
+01:26:38,579 --> 01:26:42,239
+Şunu buraya yazıyorum.
+
+692
+01:26:44,039 --> 01:26:48,880
+V eşit 9 çarpı, şimdi integral alıyorum.
+
+693
+01:26:49,000 --> 01:27:00,500
+Birin integrali teta, cosinus 2 teta'nın integrali sin2 teta bölü 2'dir.
+
+694
+01:27:04,180 --> 01:27:17,100
+0'dan pi bölü 2'ye alırsak, şurası sinüs değeri, hem burada, çünkü 2'ler gidecek, 2 tete olduğu için pi olacak, 0 olacak, 0'da da 0 olacak.
+
+695
+01:27:17,500 --> 01:27:23,980
+Dolayısıyla sonuç sadece neye eşit olur? 9 pi bölü 2'ye eşit olur.
+
+696
+01:27:29,108 --> 01:27:36,547
+Anlaşıldı mı bu? Bu biraz zor bir örnekti. Aslında değil.
+
+697
+01:28:11,283 --> 01:28:17,503
+Ben kalemime biraz mürekkep koyacağım ama, kedim mürekkebimi ne yaptı, onu bulmaya çalışıyorum.
+
+698
+01:29:17,939 --> 01:29:20,639
+Siz çıkmadığına göre anladınız sanırım.
+
+699
+01:29:23,059 --> 01:29:25,339
+Ha şey, [öğrenci] bir daha anlatın demiş.
+
+700
+01:29:25,899 --> 01:29:27,699
+Tabii ki [öğrenci] bir daha anlatayım.
+
+701
+01:29:37,203 --> 01:29:44,423
+Bölgeyi çizebiliyorsanız eğer gerisi biraz daha kolay olur.
+
+702
+01:29:45,203 --> 01:29:51,543
+Şimdi arkadaşlar, bölgeyi çizdikten sonra bir, bu yüzeylerin izdüşümünü alacağız.
+
+703
+01:29:52,043 --> 01:29:55,764
+Bu bizim R bölgemizi oluşturacak.
+
+704
+01:29:56,183 --> 01:30:00,823
+Yani integrallerin sınırını neye göre yazacağımızı belirleyeceğiz.
+
+705
+01:30:00,823 --> 01:30:09,943
+İzdüşüm aldığımızda, x, y düzlemine izdüşüm alıyorsanız, yükseklik neye göre olacak?
+
+706
+01:30:10,344 --> 01:30:12,224
+Z'ye göre olacak demektir.
+
+707
+01:30:13,563 --> 01:30:15,884
+X, y düzlemine göre izdüşüm aldım.
+
+708
+01:30:16,483 --> 01:30:19,363
+O zaman yükseklik z'ye göre olacak.
+
+709
+01:30:19,543 --> 01:30:23,203
+Bunun yüksekliği z kadar olacak diyeceğiz.
+
+710
+01:30:24,783 --> 01:30:28,283
+Dolayısıyla, şunları hep yapın.
+
+711
+01:30:28,283 --> 01:30:30,363
+İzdüşüm aldınız.
+
+712
+01:30:30,823 --> 01:30:38,403
+Şu görünen şeklin izdüşümünü alırsanız, bu şöyle bir dikdörtgen üzerine izdüşer.
+
+713
+01:30:52,243 --> 01:31:16,703
+Nasıl belirleriz? Y zaten 2 biliyoruz. X'i de dedik ki, iz düşüm alıyorsak, eğer iz düşüm aldığında X, Y bölgesi üzerinde Z sıfırdır. Dolayısıyla Z yerine sıfır yazıp X'i çözdüğünüzde burası da 3 gelecek. Şu dikdörtgen bizim R bölgemiz olacak. İntegralin sınırlarını buna göre yazacağız.
+
+714
+01:31:16,703 --> 01:31:40,923
+Ben şunun bunları yazmışsınızdır deyip şöyle sileyim. Peki V hacmini o zaman nasıl yazıyoruz? V hacmini şöyle yazıyoruz. V hacmi X, Y düzlemine iz düşürdüyseniz eğer yükseklik Z'ye bağlı olacak.
+
+715
+01:31:45,363 --> 01:31:47,363
+V hacmi bu şekilde yazılacak.
+
+716
+01:31:47,983 --> 01:31:51,063
+Şimdi iz, düşün bölgeniz tamam. Bunu bulduk.
+
+717
+01:31:51,884 --> 01:31:52,483
+Şu nedir?
+
+718
+01:31:57,332 --> 01:31:58,712
+Bize hacmi veriyor.
+
+719
+01:32:01,032 --> 01:32:02,072
+Belirleyeceğim.
+
+720
+01:32:02,752 --> 01:32:09,392
+Bu bölge üzerinde tavandan, hacmini hesapladığım bölgenin tavanını belirliyorum.
+
+721
+01:32:10,072 --> 01:32:15,872
+Tavandan, tabanına kadar indirdiğim dik doğru bana yüksekliği verir.
+
+722
+01:32:15,972 --> 01:32:16,452
+Doğru mu?
+
+723
+01:32:17,212 --> 01:32:17,692
+Doğru.
+
+724
+01:32:18,532 --> 01:32:21,972
+Peki ben bu Z'yi, yani H yüksekliğini nasıl yazarım?
+
+725
+01:32:21,972 --> 01:32:29,352
+Şu iki nokta arasındaki fark bana bunun uzunluğunu verecek değil mi?
+
+726
+01:32:30,052 --> 01:32:33,552
+H uzunluğu eşit, Z2-Z1'dir.
+
+727
+01:32:38,612 --> 01:32:43,752
+Yeşille yazmışım. Yine yeşille yazayım ama önce şurayı bir tamamlayayım ben.
+
+728
+01:32:48,756 --> 01:33:04,695
+Aş yüksekliğim nedir? Şu z2 noktası, eksi z1 noktasıdır. Z2 dediğim şu nokta neyin üzerinde? Silindir yüzeyi üzerinde. Silindirin denkleminde z'yi bulun ve çekin.
+
+729
+01:33:04,695 --> 01:33:15,556
+Z'yi çekerseniz ne olur? Kök 9-x kare olur. O zaman z2 neye eşitmiş? Kök 9-x kareye eşitmiş.
+
+730
+01:33:15,556 --> 01:33:24,556
+z1 nedir? Bu da x-y düzleminde olduğu için bu da 0'a eşittir. Eksi 0 ister yazın ister yazmayın.
+
+731
+01:33:24,556 --> 01:33:29,396
+O zaman z2-z1 neye eşit oluyor gördüğünüz gibi?
+
+732
+01:33:35,956 --> 01:33:41,395
+Kök 9-x kare da'ya eşit oluyor.
+
+733
+01:33:42,836 --> 01:33:47,096
+Bunu yazdıktan sonra gerisi sınırları yerine yazıp integrali almaktır.
+
+734
+01:33:48,195 --> 01:33:51,416
+R bölgesi sınırları R bölgesine göre yazıyoruz.
+
+735
+01:33:51,416 --> 01:34:00,536
+R bölgesine göre sınırları yazarken bunun üzerinde ya dik kesitler kullanacaksınız ya da yatay kesitler kullanacaksınız.
+
+736
+01:34:00,935 --> 01:34:03,155
+Biz dik kesitler kullanarak yazdık.
+
+737
+01:34:03,155 --> 01:34:06,775
+Yani dy-dx sırasıyla yazdık.
+
+738
+01:34:07,275 --> 01:34:08,636
+Fark etmiyor.
+
+739
+01:34:08,895 --> 01:34:14,536
+İki sınırda sabit olduğu için ne olacak?
+
+740
+01:34:14,536 --> 01:34:19,376
+Ben 0'dan 3'e 0'dan 2'ye şu integrali yazdım.
+
+741
+01:34:19,516 --> 01:34:21,536
+Siz tam tersini yazabilirsiniz.
+
+742
+01:34:22,235 --> 01:34:26,716
+Yani 0'dan 2'ye 0'dan 3'e x dy şeklinde de yazabilirsiniz.
+
+743
+01:34:27,596 --> 01:34:30,536
+Sonra gerisi de integral hesaplamaktır.
+
+744
+01:34:30,536 --> 01:34:35,536
+Burada dönüşüm nasıl bir dönüşüm olmak zorunda?
+
+745
+01:34:35,695 --> 01:34:38,036
+Trigonometrik bir dönüşüm olmak zorunda.
+
+746
+01:34:38,216 --> 01:34:41,056
+Çünkü kök dışında x yok.
+
+747
+01:34:41,476 --> 01:34:52,395
+Eğer x olsaydı o zaman 9-x kareye t veya t kare deyip ona göre bir dönüşüm, basit bir dönüşümle integrali çözerdim.
+
+748
+01:34:52,395 --> 01:35:00,916
+Ancak 9-x kare bunun dışında herhangi bir x değeri olmadığı için trigonometrik dönüşüm uygulamak zorundayım.
+
+749
+01:35:01,056 --> 01:35:03,336
+Mat 1'deki integrallere dönüp bakın.
+
+750
+01:35:04,275 --> 01:35:09,395
+Kök a kare eksi x kare şeklinde olunca buna ne yapıyorduk?
+
+751
+01:35:09,796 --> 01:35:12,416
+a sinüs teta dönüşümü uyguluyorduk.
+
+752
+01:35:13,155 --> 01:35:17,855
+a burada 3 olduğu için 3 sinüs teta dönüşümü uyguladım.
+
+753
+01:35:17,855 --> 01:35:23,855
+sınırları her şeyi bu dönüşüme göre yeniden yapıp integralini hesapladım.
+
+754
+01:35:25,536 --> 01:35:27,655
+[öğrenci] oldu mu?
+
+755
+01:35:27,815 --> 01:35:28,636
+Anladın mı canım?
+
+756
+01:35:37,587 --> 01:35:53,367
+Çok güzel. Ben size bir şey daha göstereyim bu örnek üzerinden. Öyle geçeyim. Başka da nasıl yapabilirsiniz? İkinci yol diyelim. Ben şekil kalacak. Şunları sileceğim.
+
+757
+01:36:22,707 --> 01:36:40,287
+Bunu sildim. Çünkü iz-düşüm bölgesini ben bu bölge üzerinde almak zorunda değilim. Şurası x-z düzlemiyle sınırlı ya da arka taraf yine y-z düzlemiyle sınırlı olduğu için y-z düzlemine de iz düşürebilirsiniz.
+
+758
+01:36:40,867 --> 01:36:44,307
+Hepsini yazayım, onların integralini hesaplamayın isterseniz.
+
+759
+01:36:44,307 --> 01:36:51,827
+İkinci çözüm, ikinci yolu diyelim.
+
+760
+01:36:51,827 --> 01:36:55,927
+Eğer neydi?
+
+761
+01:36:56,007 --> 01:36:56,407
+Yezi.
+
+762
+01:37:07,891 --> 01:37:30,171
+Y, Z düzlemine izdüşüm alırsanız, V hacmini nasıl yazarsınız? Bu R bölgeniz olacak. R bölgeniz Y ve Z eksenleri üzerinde olduğu için bu düzleme ait yükseklik nedir? Buna dik olan doğrultu, o da X doğrultusu yönündedir.
+
+763
+01:37:30,171 --> 01:37:47,771
+Yani burası X2-X1 çarpı DA. DA nedir? Burası YZ düzleme olduğu için DY-DZ veya DZ-DY şeklinde olacak. Tamam mı?
+
+764
+01:37:49,952 --> 01:37:51,851
+Şimdi izdüşümü alalım.
+
+765
+01:37:54,171 --> 01:37:57,771
+Şu Y eksenimiz, bu da Z eksenimiz olsun.
+
+766
+01:37:57,771 --> 01:38:01,391
+Direkt karşıya izdüşümü alıyorum.
+
+767
+01:38:01,391 --> 01:38:09,551
+Direkt karşıya izdüşümü alırsanız, görüyorsunuz Y eşit 2, Z'de nedir? 3'tür.
+
+768
+01:38:17,747 --> 01:38:21,427
+Yine ne oldu? Yine dikdörtgen bölge oldu.
+
+769
+01:38:22,687 --> 01:38:24,987
+Burada yazalım V hacmi.
+
+770
+01:38:27,587 --> 01:38:31,407
+Şöyle dik kesitler kullanırsam, nereden nereye?
+
+771
+01:38:32,367 --> 01:38:35,067
+Yok, hatta yatay kesitler kullanayım ben burada.
+
+772
+01:38:36,467 --> 01:38:38,567
+Fark etmez ya. Ne önemi var?
+
+773
+01:38:40,287 --> 01:38:46,907
+Y sıfırdan 2'ye kadar değişirken, Z de sıfırdan 3'e kadar değişecek.
+
+774
+01:38:47,747 --> 01:38:50,387
+Gelelim yüksekliğe.
+
+775
+01:38:51,027 --> 01:38:56,947
+Yükseklik dedik ki, şu düzleme dik olan doğrultu, yani x80'ine bağlı.
+
+776
+01:38:57,307 --> 01:39:04,367
+O zaman, bunun taban alanı, şu bölge olduğu için, bunun yüksekliği nedir?
+
+777
+01:39:04,727 --> 01:39:09,107
+Şuradan bölgeye aldığım, yüksekliktir, uzunluktur.
+
+778
+01:39:09,107 --> 01:39:10,967
+Bunu görebiliyor musunuz?
+
+779
+01:39:11,647 --> 01:39:13,768
+Tahtayı çok mu fazla karaladım acaba?
+
+780
+01:39:25,876 --> 01:39:28,256
+Sahta yüksekliğim ne olacak?
+
+781
+01:39:28,916 --> 01:39:33,136
+Şuradan buraya aldığım dik uzunluk olacak.
+
+782
+01:39:34,516 --> 01:39:38,176
+Buna da mürekkep koyuyorum ama yutuyor sanki hiç dışarı vermiyor.
+
+783
+01:39:41,056 --> 01:39:44,655
+Şurası haş olacak değil mi?
+
+784
+01:39:44,655 --> 01:39:49,815
+Yani burası x2, şurası x1 olur.
+
+785
+01:39:51,476 --> 01:39:53,396
+Dolayısıyla x2 nedir?
+
+786
+01:39:53,396 --> 01:39:58,836
+Silindir yüzey üzerindedir x2 noktası.
+
+787
+01:39:59,275 --> 01:40:10,256
+Hemen silindirden x'i çekerseniz x eşit 9-z'nin karesinin kare köküne eşit olacak.
+
+788
+01:40:10,256 --> 01:40:16,496
+O halde haş dediğim yükseklik neye eşit olacakmış?
+
+789
+01:40:17,136 --> 01:40:20,916
+9-z'nin karesinin kare köküne.
+
+790
+01:40:20,916 --> 01:40:29,476
+x1 yüksekliği zemin üzerinde olacağı için zeminde de x0'dır.
+
+791
+01:40:29,476 --> 01:40:33,536
+Dolayısıyla x0 ister değil ister demeyin.
+
+792
+01:40:33,916 --> 01:40:34,815
+Burası ne olur?
+
+793
+01:40:34,916 --> 01:40:37,916
+9-z'nin karesi.
+
+794
+01:40:38,655 --> 01:40:43,916
+Burayı şuna y'nin sınırı buna da z'nin sınırı demiştik.
+
+795
+01:40:44,036 --> 01:40:49,476
+Dolayısıyla dz, dy sırasıyla bu şekilde integral hesaplanır.
+
+796
+01:40:49,476 --> 01:40:52,536
+Bunu hesaplamak için de yine ne yaparsınız?
+
+797
+01:40:53,076 --> 01:40:58,476
+Z'ye 3 sinüs theta dönüşümü uygulayarak çözersiniz.
+
+798
+01:40:59,436 --> 01:41:00,956
+Aynı sonucu bulursunuz.
+
+799
+01:41:02,716 --> 01:41:03,896
+Bunu anladınız mı?
+
+800
+01:41:04,496 --> 01:41:05,735
+Bunu da anlamışsınızdır.
+
+801
+01:41:05,836 --> 01:41:07,256
+Deminkiyle hemen hemen aynı.
+
+802
+01:41:07,256 --> 01:41:19,876
+Bir sonraki videoda.
+
+803
+01:41:21,076 --> 01:41:42,036
+yapıyorum çünkü sınavda en zor sorulan sorular integral soruları oluyor. Size doğrudan integralin sonucunu sormuyorlar çünkü ona hesaplamak için çeşitli bilgisayar programları varmış, hazır programlar. O yüzden genelde sonucunu sormazlar.
+
+804
+01:41:42,036 --> 01:42:05,956
+İşte hacmi veren integral hangisidir? Ya da işte bunun bilmem nesini veren integral aşağıdakilerden hangisidir şeklinde aslında şu kısmı sorarlar. Daha çok. Ama belli olmaz. Bu demek değildir ki integral hesaplamayı bilmenize gerek yok.
+
+805
+01:42:05,956 --> 01:42:29,775
+bilmenize gerek var çünkü kullanacaksınız siz bu hesapları kendi mesleki derslerinizde. Onun için öğreniyorsunuz bunları. Ama şu yazım önemli. Bir de bu gibi yüzeylerde birkaç düzleme birden iz düşüm yapabileceğiniz için
+
+806
+01:42:29,775 --> 01:42:30,775
+mesela şu şekilde sorulabilir.
+
+807
+01:42:30,775 --> 01:42:53,775
+mesela şu şekilde sorulabilir. İşte böyle bir yüzey verir de. Bunun bilmem işte şu düzleme göre iz düşüm alındığında hacmini bulduran integral hangisidir şeklinde sorulabilir. O yüzden bu yaptığım şeyleri anlamanız çok önemli arkadaşlar.
+
+808
+01:42:59,123 --> 01:43:14,363
+Peki, o zaman siliyorum. Bir üçüncü yolunu daha göstereceğim size. Sıkıldınız belki biliyorum ama bunu da hemen kısaca yazayım. Eğer bunu da anlarsanız hiçbir probleminiz kalmaz.
+
+809
+01:43:22,100 --> 01:43:44,600
+Üçüncü yol, bu sefer ne yapalım? Şu düzlemle sınırlı olduğu için burası, nedir burası? XZ düzlemi. XZ düzlemine göre iz düşüm alırsanız, şu açıdan bakacaksınız. Yani bu kenardan bakıp düşürdüğünüzde, R bölgesi nasıl olacak?
+
+810
+01:43:50,260 --> 01:44:08,480
+4, 4'te 1 mi? 8 devirlik şu çember dilimi olacak değil mi? Yani x, y düzleminde 4'te 1'e karşılık gelen şu dilim olacak. Bu çemberin yarı çapı kaç? 3.
+
+811
+01:44:12,756 --> 01:44:19,216
+Çembersel bölge olduğu için, burada kutupsal koordinatları kullanabilirsiniz.
+
+812
+01:44:21,416 --> 01:44:24,676
+Dolayısıyla, V hacmimiz neye eşit olacak?
+
+813
+01:44:25,576 --> 01:44:34,916
+R bölgesi üzerinde, X, Z düzlemine dik olan doğrultu, yükseklik yani ne olmak zorunda?
+
+814
+01:44:34,916 --> 01:44:37,336
+Y eksenine göre yazılmak zorunda.
+
+815
+01:44:37,836 --> 01:44:44,836
+O halde burası, Y2-Y1, Dx, Dz şeklinde olacak.
+
+816
+01:44:45,216 --> 01:44:45,655
+Tamam mı?
+
+817
+01:44:45,776 --> 01:44:47,596
+İntegralin şekli böyle olacak.
+
+818
+01:44:49,716 --> 01:44:52,615
+Şimdi kutupsal koordinatlara geçersek,
+
+819
+01:44:54,856 --> 01:44:58,676
+Theta sıfırdan Pi bölü 2'ye kadar değişir.
+
+820
+01:45:02,323 --> 01:45:10,344
+R nereden de R değişir? Bakın çevre sıfırdan bunun çevresine kadar, 3'e kadar değişir.
+
+821
+01:45:12,423 --> 01:45:20,603
+Bu nedir? X kare artı Z kare eşit 9 çemberinin dörtte birlik kısmıdır.
+
+822
+01:45:24,051 --> 01:45:25,572
+y2-y1
+
+823
+01:45:25,572 --> 01:45:33,931
+Şimdi böyle baktığınızda yükseklik y ekseni doğrultusunda olacağı için yüksekliği nasıl yazarsınız?
+
+824
+01:45:34,072 --> 01:45:38,631
+İnşallah kırmızı kalem yazar.
+
+825
+01:45:39,112 --> 01:45:42,411
+Yükseklik şu düzlemden, bu bir düzlem.
+
+826
+01:45:42,411 --> 01:45:50,491
+Bu düzlem üzerinden, şu düzlem üzerine alacağınız şu uzunluk kadar olacak.
+
+827
+01:45:50,491 --> 01:45:54,152
+Burası nedir?
+
+828
+01:45:56,291 --> 01:46:01,551
+Şu düzlem y eşit 2 düzlemi üzerinde alıyorsunuz.
+
+829
+01:46:01,671 --> 01:46:04,051
+Burası da y eşit 0'dır.
+
+830
+01:46:04,911 --> 01:46:07,911
+Yani şu h yüksekliği bunun uzunluğu nedir?
+
+831
+01:46:07,911 --> 01:46:10,152
+y2-y1
+
+832
+01:46:10,152 --> 01:46:10,991
+Bu da nedir?
+
+833
+01:46:11,072 --> 01:46:14,192
+2-0'dan 2'ye eşitmiş doğrudan.
+
+834
+01:46:14,192 --> 01:46:21,771
+O halde 2 çarpı dxd'yi yerlere yazacağız.
+
+835
+01:46:22,131 --> 01:46:27,091
+Kutupsal koordinatlara geçtiğimiz için r, dr, dt yazacağız.
+
+836
+01:46:27,451 --> 01:46:29,652
+Çok daha kolay bir integral oldu.
+
+837
+01:46:29,652 --> 01:46:32,612
+Hemen isterseniz hesaplayalım.
+
+838
+01:46:32,612 --> 01:46:42,451
+2r'nin integrali r kare 0'dan 3'e kadar dersek 9 olacak.
+
+839
+01:46:43,091 --> 01:46:45,371
+9'u integral dışına taşıdım.
+
+840
+01:46:45,491 --> 01:46:47,951
+0'dan pi bölü 2'ye de teta.
+
+841
+01:46:48,471 --> 01:46:49,431
+Bu da teta'dır.
+
+842
+01:46:49,551 --> 01:46:50,551
+9 teta.
+
+843
+01:46:51,171 --> 01:46:52,612
+0 pi bölü 2.
+
+844
+01:46:52,991 --> 01:46:53,811
+Bakın sonuç.
+
+845
+01:46:54,391 --> 01:46:56,911
+9 pi bölü 2 çıktı.
+
+846
+01:46:57,112 --> 01:46:58,131
+Sonuç değişmez.
+
+847
+01:46:58,131 --> 01:47:02,971
+Yani hangi bölgeyi iz düşürürseniz düşürün.
+
+848
+01:47:03,411 --> 01:47:04,951
+Sonuç aynı oluyor.
+
+849
+01:47:05,131 --> 01:47:05,931
+Fark etmiyor.
+
+850
+01:47:06,471 --> 01:47:09,671
+Ama hesaplamak burada çok daha kolaymış.
+
+851
+01:47:10,591 --> 01:47:11,591
+Anlaşıldı mı bunlar?
+
+852
+01:47:13,811 --> 01:47:16,851
+Bu örneğin üzerinden bir kez daha geçin.
+
+853
+01:47:16,971 --> 01:47:19,331
+Bunu anlamanız söylediğim gibi çok önemli.
+
+854
+01:47:19,871 --> 01:47:24,572
+Bunu anlarsanız artık hepsini rahatlıkla yapabilirsiniz.
+
+855
+01:47:24,572 --> 01:47:31,251
+Burada farklı düzlemlere iz düşüm alıyorum.
+
+856
+01:47:31,411 --> 01:47:31,531
+Neden?
+
+857
+01:47:31,791 --> 01:47:34,851
+Çünkü 3 tane düzlemle sınırlı.
+
+858
+01:47:35,211 --> 01:47:37,531
+Her birinin üzerinde iz düşüm alabiliyorum.
+
+859
+01:47:37,692 --> 01:47:47,171
+Ama deminki yaptığım bölgelerde mesela paraboloidle bir düzlemi sınırlandırmıştım.
+
+860
+01:47:47,171 --> 01:47:47,511
+değil mi?
+
+861
+01:47:48,991 --> 01:47:55,391
+Bunda iz düşüm almak için farklı farklı yerlere iz düşüm almanız zor.
+
+862
+01:47:55,731 --> 01:47:57,131
+Burada sadece yapacağınız.
+
+863
+01:47:57,192 --> 01:47:59,551
+Çünkü burada bir ara kesit yüzeyiniz var.
+
+864
+01:48:00,051 --> 01:48:02,771
+Bunun dik olduğu düzlem şu.
+
+865
+01:48:02,911 --> 01:48:03,771
+X, Y düzlemi.
+
+866
+01:48:03,851 --> 01:48:04,572
+Mecburen orada.
+
+867
+01:48:04,652 --> 01:48:06,171
+X, Y düzlemine onu iz düşürüyorsunuz.
+
+868
+01:48:07,692 --> 01:48:09,511
+Ama buradaki durum biraz farklı.
+
+869
+01:48:10,112 --> 01:48:12,171
+Bir kez daha bunu gözden geçirin.
+
+870
+01:48:13,931 --> 01:48:15,251
+Dersimiz bitti.
+
+871
+01:48:15,251 --> 01:48:21,731
+Haftaya genel değişken dönüşümünü vereceğiz.
+
+872
+01:48:21,891 --> 01:48:23,491
+Ve sonra hep soru çözeceğiz.
+
+873
+01:48:23,991 --> 01:48:27,271
+Sorularınız olursa bana her zaman yazabilirsiniz.
+
+874
+01:48:28,671 --> 01:48:31,371
+Size iyi günler, iyi haftalar diliyorum.
+
+875
+01:48:31,531 --> 01:48:33,351
+Sorusu olan varsa kalıp sorabilir.
+
+876
+01:48:33,891 --> 01:48:35,831
+Sorusu olmayanlar çıkabilirler.
+
+877
+01:48:37,112 --> 01:48:38,791
+İyi bakın kendinize hepiniz.

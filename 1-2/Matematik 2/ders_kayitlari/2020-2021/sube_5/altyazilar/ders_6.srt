@@ -1,0 +1,3131 @@
+1
+00:00:17,012 --> 00:00:18,272
+Merhaba arkadaşlar.
+
+2
+00:00:24,435 --> 00:00:31,536
+İnternet bağlantısı yüzünden birazcık geç bağlandım. 4 dakikalık geçipme için özür diliyorum.
+
+3
+00:00:35,188 --> 00:00:42,908
+Arada bir ekranın dondu kamerayı ayarlarken falan umarım ders esnasında böyle sorunlar yaşamayız.
+
+4
+00:00:50,036 --> 00:00:53,795
+Ben size yine dünkü dosyayı yükleyeyim.
+
+5
+00:00:55,295 --> 00:00:57,115
+Onun devamını yükleyeyim.
+
+6
+00:01:39,668 --> 00:02:01,168
+Bugün kuvvet serileri üzerinde cebirsel işlemleri göreceğiz. Kuvvet serilerinin nasıl birbiriyle çarpılabildiğini göstereceğim. Zaten toplama, çıkarma, normal serilerde de nasıl yapıyorsak aynı şekilde yapılıyor.
+
+7
+00:02:01,168 --> 00:02:12,747
+Bölme de yine adi bölme uygulanarak yapılıyor. Bir de türev ve integralini verip serilerle, daha doğrusu kuvvet serilerini size kullanmayı göstereceğim.
+
+8
+00:02:13,268 --> 00:02:20,867
+Çünkü o kadar çok şekilde ve farklı şekilde karşınıza çıkıyor ki kuvvet serileri inanamazsınız.
+
+9
+00:02:22,608 --> 00:02:24,788
+Bol bol örnek çözeceğiz bu yüzden.
+
+10
+00:02:24,788 --> 00:02:26,788
+Kuvvet serilerin.
+
+11
+00:02:26,788 --> 00:02:34,088
+Kuvvet serileri üzerinde cebirsel işlemler derken, bütün cebirsel işlemleri göstermeyeceğim.
+
+12
+00:02:34,088 --> 00:02:38,668
+Burada kolaylık olsun diye başlığımızı yazalım da biz yine.
+
+13
+00:02:56,563 --> 00:03:09,003
+Bu serilerin gözünün diye biz buradan sıfırdan sonsuza an x üzeri n şeklindeki kuvvet serilerinin gözününle alacağız.
+
+14
+00:03:09,003 --> 00:03:27,983
+Bu seriler için gösterdiğimiz her bir özelliği x eşit x eksi c dönüşümü yaparak yazdığımız, bildiğimiz şu şekildeki kuvvet serilerini genişletebileceğiz.
+
+15
+00:03:27,983 --> 00:03:36,043
+Burada x olmayıp y de olabilir ama aynı değişkeni de kullanabilirsiniz. Fark etmez.
+
+16
+00:03:36,043 --> 00:03:51,063
+Yani an x eksi c üzeri n şeklindeki serileri buradaki her özelliği bu şekilde dönüşüm yaparak bunlara da uygulayabiliriz.
+
+17
+00:04:00,692 --> 00:04:01,512
+sileyim ben.
+
+18
+00:04:03,712 --> 00:04:05,772
+Kuvvet serileri gördüğünüz gibi
+
+19
+00:04:05,772 --> 00:04:09,012
+A0, A1x
+
+20
+00:04:17,427 --> 00:04:22,148
+Şu şekilde bir polinom fonksiyonu gibi aslında.
+
+21
+00:04:22,887 --> 00:04:34,088
+Polinoma benzediği için buradaki cevirsel işlemleri polinomlarda nasıl toplama, çıkarma yapıyorsak ya da çarpma, bölme yapıyorsak aynı şekilde yapacağız.
+
+22
+00:04:39,860 --> 00:04:54,420
+Toplama ve çıkarmaya burada değinmedik ama yani şeyde yok FEDAT'ta ama siz bunun şu şekilde olduğunu bilirsiniz herhalde. Bir AN serimiz var, bir tane de BN alalım.
+
+23
+00:04:58,932 --> 00:05:13,711
+İki kuvvet serisini toplayabilmeniz için bunların alacağınız elemanlarının ikisinin de ortak çözüm aralığı içerisinde olmasına dikkat etmek gerekiyor.
+
+24
+00:05:13,711 --> 00:05:28,912
+Yani şurası mutlak değer x küçük r çözüm aralığına sahip ise bu da aynı şekilde ortak çözüm aralıkları üzerinde bu kuvvet serilerini toplayabilirsiniz.
+
+25
+00:05:28,932 --> 00:05:40,772
+çarpabilirsiniz ya da bölebilirsiniz. Yani yapacağınız cebirsel işlemleri ortak çözüm aralığında yapmamız gerekiyor.
+
+26
+00:05:40,772 --> 00:05:50,872
+Her ikisi için de aynı r yarı çapına sahip seriler olarak bunları gözlerine aldık. Bunların toplamları ne olacak?
+
+27
+00:05:51,232 --> 00:05:57,272
+n sıfırdan sonsuza an, beni yanlış yazdım.
+
+28
+00:06:03,475 --> 00:06:16,636
+Aynı kuvvete sahip x'lerin kat sayıları toplanarak ya da eğer farkını alıyorsanız onların farkı alınarak bu seriler işleme katılır.
+
+29
+00:06:16,636 --> 00:06:18,675
+Şöyle diyelim, ne olacak?
+
+30
+00:06:21,875 --> 00:06:28,956
+a n artı veya eksi b n x n şeklinde olacak.
+
+31
+00:06:32,531 --> 00:06:56,951
+Bunu böyle söyledikten sonra, tabi burada yine ne olacak? X küçük R olacak. Aynı ortak, yani tanım aralığı ortak olacak. Şimdi bunu yazdıktan sonra biz kuvvet serileri üzerinde özellikle kuvvet serilerinin çarpımını göstereceğiz. Buna Koşi çarpımı da deniyor.
+
+32
+00:07:05,588 --> 00:07:11,468
+Ben teoremi size uzun uzun yazmayacağım. Aslında uzun uzun yazacağım.
+
+33
+00:07:16,052 --> 00:07:18,012
+Çünkü yazmadan yapamayacağım.
+
+34
+00:07:19,112 --> 00:07:21,612
+Bir a'n bir de b'n şeklinde.
+
+35
+00:07:22,492 --> 00:07:28,391
+Demin yazdığınız gibi iki tane kuvvet serisini göz önüne alıyoruz.
+
+36
+00:07:30,612 --> 00:07:38,052
+Her ikisinin de ortak çözüm aralığı üzerinde işlem yapacağız.
+
+37
+00:07:38,212 --> 00:07:43,912
+Yani aynı çözüm aralığında tanımlı olduklarını kabul edeceğiz.
+
+38
+00:07:43,912 --> 00:07:48,912
+Burada önce şunu söyleyeyim.
+
+39
+00:07:50,652 --> 00:07:51,912
+C'n şu şekilde tanımlanıyor.
+
+40
+00:07:55,192 --> 00:08:06,052
+A0 çarpı b'n artı a'nın indisi arttıkça b'nin indisi azalacak şekilde bu toplamı yazıyorum.
+
+41
+00:08:06,052 --> 00:08:11,932
+a' bir b'n eksi bir artı nokta nokta diyelim.
+
+42
+00:08:12,831 --> 00:08:19,112
+a'n eksi bir b' bir an d sıfır şeklinde.
+
+43
+00:08:19,112 --> 00:08:22,352
+Böyle bir toplam olmak üzere C'n.
+
+44
+00:08:23,412 --> 00:08:26,112
+Bunu da toplam sembolüyle şöyle ifade edelim.
+
+45
+00:08:26,112 --> 00:08:31,892
+j1'den n'e kadar.
+
+46
+00:08:31,892 --> 00:08:52,231
+a'n eksi bir artı nokta nok
+
+47
+00:08:58,899 --> 00:09:04,299
+Ya da buna koşi çarpımı da diyoruz. Koşi çarpımı şu şekilde yazılır.
+
+48
+00:09:05,919 --> 00:09:09,919
+Ben verim az olduğu için direkt yazacağım ama.
+
+49
+00:09:12,399 --> 00:09:14,079
+Ya da birkaç tanesini yazalım.
+
+50
+00:09:14,079 --> 00:09:25,539
+Şu serinin elemanları A0, A1x, artı, A2x kare, artı nokta nokta diyeceğim.
+
+51
+00:09:25,539 --> 00:09:34,860
+B'ninkilerde B0, B1x, B2x kare, artı nokta nokta diyelim.
+
+52
+00:09:36,439 --> 00:09:42,059
+Bunları çarparken tıpkı polinomlarda olduğu gibi tek tek hepsini çarpıyoruz.
+
+53
+00:09:43,439 --> 00:09:46,139
+Sabit eleman ne gelecek burada?
+
+54
+00:09:46,620 --> 00:09:48,299
+A0, B0 gelecek.
+
+55
+00:09:55,764 --> 00:09:57,724
+X'in kat sayısı ne gelecek?
+
+56
+00:09:59,563 --> 00:10:01,704
+Bir kere A0, R1 gelecek.
+
+57
+00:10:03,423 --> 00:10:07,543
+Artı A1, B0 gelecek değil mi?
+
+58
+00:10:09,683 --> 00:10:11,663
+X2'yi de yazalım.
+
+59
+00:10:14,403 --> 00:10:25,464
+A0, B2, A1, B1 ve A2, B0 olacak.
+
+60
+00:10:25,464 --> 00:10:28,203
+X2 artı nokta nokta diyelim.
+
+61
+00:10:29,543 --> 00:10:31,764
+Şimdi şu toplama dikkatinizi verin.
+
+62
+00:10:35,443 --> 00:10:44,203
+A0, B0 nedir? C0'dır değil mi? En yerine 0 koyun. A0, B0 olacak. Bu C0.
+
+63
+00:10:46,543 --> 00:11:01,764
+A0, B1, A1, B0. Bu da ne olacak? Şuraya bakarsanız C1 olacak. En yerine 1 yazarsanız ne olur? A0, B1, A1, B0. Bu da C1'e karşılık geliyor.
+
+64
+00:11:01,764 --> 00:11:14,384
+Şurası da C2 olacak. Yine en yerine 2 yazdığınızda bunun da C2'ye karşılık geldiğini göreceksiniz.
+
+65
+00:11:14,723 --> 00:11:25,923
+Dolayısıyla iki tane kuvvet serisini çarptığınızda kat sayıları burada yazdığımız şekilde C1, C2, Cn şeklinde olacak.
+
+66
+00:11:25,923 --> 00:11:36,624
+Bunu da toplam sembolünü kullanarak şu şekilde yazacağız. Ben sonucunu şuraya yazayım.
+
+67
+00:11:42,259 --> 00:11:48,259
+0'dan sonsuza, cl, xn şeklinde olacak.
+
+68
+00:11:50,259 --> 00:11:54,819
+Burada mutlak değer x küçük, r diyelim yine.
+
+69
+00:11:55,919 --> 00:12:00,559
+İsterseniz ekran paylaşımını yapayım bu notlarda ama indirebiliyorsunuz sanırım.
+
+70
+00:12:00,659 --> 00:12:03,059
+Dün bazı arkadaşlarınız indiremediler.
+
+71
+00:12:03,779 --> 00:12:07,899
+Eğer öyle bir sorun varsa, ekran paylaşımı yapayım size.
+
+72
+00:12:56,755 --> 00:13:02,096
+Burada teorem zaten açık açık uzun uzun yazılmış. Şurada Koşi teoremi.
+
+73
+00:13:04,235 --> 00:13:08,155
+Ve bu şekilde yapılmış. Şimdi örneğine bakalım.
+
+74
+00:13:09,655 --> 00:13:14,255
+Bunu ben kaydırmazsam siz görebiliyor musunuz? Kaydırabiliyor musunuz? Bilemedim.
+
+75
+00:13:14,255 --> 00:13:17,675
+Bir sorun yaşarsanız söyleyin.
+
+76
+00:13:24,179 --> 00:13:25,259
+Epeğimize göz atalım.
+
+77
+00:14:13,556 --> 00:14:26,136
+Sıfırlarımızda, eksi bir, bir aralığındaki her x için. Bu ne demek aslında? Mutlak değer x küçük bir demek. Değil mi? [kişisel bilgi]
+
+78
+00:14:30,740 --> 00:14:43,279
+Eksi 1, 1 aralığındaki her x için 1 bölü 1 eksi x. Bu fonksiyon şu şekilde.
+
+79
+00:14:58,995 --> 00:15:03,135
+x üzeri n. Eşitliği sağlanıyor.
+
+80
+00:15:06,868 --> 00:15:10,088
+eşitliği sağlanıyor demeyelim. Olmak üzere,
+
+81
+00:15:11,828 --> 00:15:22,768
+olmak üzere, şunu bulalım. 1-x'i, parantez karesi, bunu bulalım.
+
+82
+00:15:26,227 --> 00:15:39,067
+Burada şu fonksiyon, 1 bölü 1 eksi x fonksiyonunun kuvvet serisi şöyleymiş. Sıfırdan sonsuza x üzeri n şeklindeymiş.
+
+83
+00:15:40,067 --> 00:15:47,227
+Tabi bunu böyle yazmak için ne yazmak zorundayız biz? x küçük 1 yazmak zorundayız.
+
+84
+00:15:47,227 --> 00:16:03,967
+Neden bunu yazmak zorundayız? Çünkü şu kuvvet serisi olduğu halde geometrik seriden yararlanılarak yazılmış bir toplamdır aynı zamanda.
+
+85
+00:16:03,967 --> 00:16:15,267
+Şöyle ki, sıfırdan sonsuza x üzeri n. Bu aslında geometrik seridir değil mi?
+
+86
+00:16:15,747 --> 00:16:22,867
+R'si bunun nedir? R'si x'e eşittir. İlk terimi de 1'dir.
+
+87
+00:16:22,967 --> 00:16:31,907
+Burada n'e sıfırdan başlayıp değerler verdiğinizde 1 artı x artı x kare yani şu toplam olacak.
+
+88
+00:16:31,907 --> 00:17:01,887
+Dolayısıyla r'si x'e eşittir.
+
+89
+00:16:42,163 --> 00:17:00,124
+Geometrik serinin yakınsak olması için koşul neydi? R'nin mutlak değerci birden küçük olmasıdır. Burada R'ye X olduğu için mutlak değer X birden küçük ise ancak bu geometrik seriyi yakınsayacak ve toplamada neye eşit olacak?
+
+90
+00:17:00,124 --> 00:17:11,344
+A bölü 1 eksi R'den 1 bölü 1 eksi X'e eşit olacak. Bunun böyle yazılabilmesi tamamen geometrik seriden kaynaklı.
+
+91
+00:17:12,163 --> 00:17:26,344
+Dolayısıyla bundan sonra zaten özellikle kuvvet serilerinin toplamlarını yazarken, kuvvet serisinin yakınsak fonksiyonu yazarken geometrik serilerden de çok yararlanacağız.
+
+92
+00:17:29,779 --> 00:17:57,220
+Şimdi gelelim şuna. Bu da ne demektir? 1 bölü 1 eksi x fonksiyonunun kendisiyle çarpılması ya da 1 bölü 1 eksi x fonksiyonunun kuvvet serisi teksili nedir? x üzeri n'dir. O halde bu ne olacak? x üzeri n fonksiyonunun kendisiyle çarpılması sonucu yazılabilecek.
+
+93
+00:17:57,220 --> 00:17:58,680
+Dolayısıyla
+
+94
+00:18:03,571 --> 00:18:05,511
+Şunu nasıl yazarım?
+
+95
+00:18:08,711 --> 00:18:10,751
+Şöyle karesini alayım ben.
+
+96
+00:18:12,751 --> 00:18:19,651
+x üzeri n çarpı, sıfırdan sonsuza x üzeri n şeklinde yazacağım.
+
+97
+00:18:20,211 --> 00:18:27,651
+Bu iki, yani daha doğrusu bu serinin kendisiyle çarpımı bana bu fonksiyonu verecek.
+
+98
+00:18:27,651 --> 00:18:35,471
+Her iki, aynı sayıda kendisiyle çarpıldığı için mutlak değer x küçük 1'dir.
+
+99
+00:18:37,031 --> 00:18:39,891
+A n'ler nedir ikisinde de?
+
+100
+00:18:40,351 --> 00:18:43,811
+A n eşit, b n, o da eşit 1'dir değil mi?
+
+101
+00:18:43,871 --> 00:18:44,891
+Bunu görebiliyoruz.
+
+102
+00:18:45,611 --> 00:18:48,311
+Dolayısıyla, c n'ler nasıl olacak?
+
+103
+00:18:48,311 --> 00:19:03,491
+c n eşit, c n eşit, 0'dan n'e kadar, a j, b n eksi, j şeklindeydi.
+
+104
+00:19:03,951 --> 00:19:06,551
+Dolayısıyla, bu ne olacak?
+
+105
+00:19:07,211 --> 00:19:10,351
+j 0'dan n'e kadar, 1 çarpı 1 olacak.
+
+106
+00:19:10,351 --> 00:19:12,811
+Çünkü, her n için bu.
+
+107
+00:19:16,756 --> 00:19:29,496
+Her n için a'n ve b'n sayıları 1'e eşit olduğu için bu toplamda j sıfırdan n'e kadar birilerin çarpımlarının toplamı olacak.
+
+108
+00:19:30,576 --> 00:19:37,896
+Sıfırdan n'e kadar birilerin toplamı da bize neyi verir? n artı 1'i verir.
+
+109
+00:19:37,896 --> 00:19:42,355
+Dolayısıyla şu çarpım
+
+110
+00:19:50,451 --> 00:19:50,991
+Efendim?
+
+111
+00:19:55,412 --> 00:19:57,112
+Bilmiyorum ama şey yaptım.
+
+112
+00:19:58,412 --> 00:19:59,951
+Ha, birisi ermez.
+
+113
+00:20:00,432 --> 00:20:01,792
+Kapsız, yeri ziliyorum.
+
+114
+00:20:02,692 --> 00:20:03,632
+[kişisel bilgi]
+
+115
+00:20:04,412 --> 00:20:05,792
+[kişisel bilgi]
+
+116
+00:20:16,307 --> 00:20:17,627
+Bu da neye eşit olacak?
+
+117
+00:20:18,208 --> 00:20:22,288
+Cn çarpı x üzeri n'lere eşit olacak.
+
+118
+00:20:22,728 --> 00:20:23,748
+Cn nedir?
+
+119
+00:20:27,443 --> 00:20:28,604
+n artı 1'dir.
+
+120
+00:20:29,223 --> 00:20:33,144
+n artı 1, x üzeri n olur.
+
+121
+00:20:33,523 --> 00:20:37,983
+Bunu da birkaç tane açık yazarsak, n sıfır için 1 olacak.
+
+122
+00:20:40,104 --> 00:20:49,943
+1 aldığınızda 2x, 3x kare, 4x küp şeklinde olur.
+
+123
+00:20:50,644 --> 00:20:53,824
+Size bir şey daha söyleyeyim bu çarpımla ilgili.
+
+124
+00:20:53,824 --> 00:21:03,084
+Her zaman şu amm'ni yazıp bu şekilde çarpmak için uygun bir formül bulamayabilirsiniz.
+
+125
+00:21:03,844 --> 00:21:19,503
+Onunla bulmak için uğraşmayın da çarpma işlemi varsa iki seriyi çarpıyorsanız eğer her iki serinin de yani çarpıma kattığınız her iki serinin de birkaç tane terimini yazın.
+
+126
+00:21:23,824 --> 00:21:26,824
+Birkaç tane terimini yazın.
+
+127
+00:21:27,943 --> 00:21:31,384
+Onların birkaçını çarpın.
+
+128
+00:21:31,503 --> 00:21:37,584
+Yani sabit sayıyı, x'i ve x kareinin kat sayılarını belirleyip,
+
+129
+00:21:38,384 --> 00:21:39,824
+gerekiyorsa x küpü de yaparsınız.
+
+130
+00:21:41,584 --> 00:21:43,183
+Hatta o kadar gitmeye gerek yok.
+
+131
+00:21:43,324 --> 00:21:45,043
+Sabit, x, x kare, 3 oldu.
+
+132
+00:21:45,144 --> 00:21:48,063
+Bir de x küpü eklerseniz, ekleme edebilirsiniz.
+
+133
+00:21:48,063 --> 00:21:53,144
+2-3 tanesini yazıp nokta nokta koymanız yeterlidir.
+
+134
+00:21:54,943 --> 00:21:58,104
+Yani bu şekilde bırakabilirsiniz.
+
+135
+00:22:08,243 --> 00:22:10,843
+İçilmeyecek bir şey yok. Ben bunu siliyorum.
+
+136
+00:22:39,251 --> 00:22:46,011
+Sorunuz var mı? Ben ekrana yazdıklarınızı göremiyorum şundan dolayı.
+
+137
+00:22:46,871 --> 00:22:48,951
+Bir saniye, bu bir kapatırsam.
+
+138
+00:22:50,392 --> 00:22:51,132
+Şuradan.
+
+139
+00:23:26,804 --> 00:23:27,744
+Şuradan göreceğim.
+
+140
+00:23:32,500 --> 00:23:35,700
+Bir şey yazmamışsınız. Devam edelim o halde.
+
+141
+00:23:36,619 --> 00:23:38,019
+Resum diyelim. Tamam.
+
+142
+00:23:40,019 --> 00:23:43,740
+Şimdi kuvvet serilerinin türetilmesi ve integre edilmesi var.
+
+143
+00:23:46,740 --> 00:23:50,180
+Nasıl türetip integre edeceğiz? Ona da bakalım.
+
+144
+00:24:21,236 --> 00:24:25,056
+Teoremi okuyalım, üzerinde ben bunu uzun uzun yazmayayım.
+
+145
+00:24:27,016 --> 00:24:42,316
+R büyük sıfır olmak üzere, eğer sıfırdan sonsuza an, x'en serisi bir eksi r artı r aralığında fx toplamına yakın sarsa, yani o da şu demek.
+
+146
+00:24:46,003 --> 00:24:52,763
+fx eşit sıfırdan sonsuza an x üzeri n.
+
+147
+00:24:54,384 --> 00:24:57,603
+Pozitif r yarı çapına karşılık ne dedik?
+
+148
+00:24:58,603 --> 00:25:00,823
+Eksi r artı r aralığında.
+
+149
+00:25:01,743 --> 00:25:04,384
+Yani bunu şöyle de yazabilirsiniz.
+
+150
+00:25:04,384 --> 00:25:06,923
+Mutlak değer küçük r şevi.
+
+151
+00:25:07,644 --> 00:25:10,523
+Mutlak değer x, özür dilerim.
+
+152
+00:25:11,884 --> 00:25:14,144
+Mutlak değer x küçük r veya
+
+153
+00:25:14,144 --> 00:25:17,063
+Zaten bunu açtığınızda ne oluyor?
+
+154
+00:25:17,563 --> 00:25:19,563
+Eksi r artı r aralığı oluyor.
+
+155
+00:25:23,667 --> 00:25:41,927
+Diyor ki eğer bir kuvvet serisi bir eksi r artı r aralığında fx toplamına yakınsıyorsa kuvvet serisi eğer bir fx toplamına yakınsıyorsa o zaman kuvvet serisini fx eşit kuvvet serisi şeklinde yazabiliyoruz.
+
+156
+00:25:41,927 --> 00:25:51,427
+Yani bu varsa o zaman f fonksiyonu bu eksi r artı r aralığında türevlenebilirdir aynı zamanda diyor.
+
+157
+00:25:53,667 --> 00:25:59,927
+Yakınsaklık aralığı içerisinde kuvvet serisi ne olacak?
+
+158
+00:26:00,447 --> 00:26:06,788
+Buradaki bu aralıktaki her x değeri için bir f fonksiyonuna yakınsıyacak.
+
+159
+00:26:07,567 --> 00:26:13,547
+Bu söylediğim şey aslında size basit bir şey gibi geliyor ama aslında çok önemli bir şey.
+
+160
+00:26:14,207 --> 00:26:17,447
+Bir sonraki ders Taylor-McGurran serilerini vereceğiz.
+
+161
+00:26:17,907 --> 00:26:20,267
+Oradaki ikisi arasındaki fark da bu.
+
+162
+00:26:20,587 --> 00:26:21,507
+Tam olarak bu.
+
+163
+00:26:21,507 --> 00:26:31,507
+Eğer kuvvet serisi bir aralıkta bir fonksiyona yakınsıyorsa o zaman o kuvvet serisini fx eşit a en x'el şeklinde yazabiliyoruz.
+
+164
+00:26:32,727 --> 00:26:39,788
+Bu aralıktaki her x değeri için şu kuvvet serisi bu f fonksiyonuna yakınsar demek oluyor.
+
+165
+00:26:40,467 --> 00:26:42,707
+Kuvvet serilerinin bu özelliği var.
+
+166
+00:26:43,487 --> 00:26:45,507
+Bu durumda bu kuvvet serisi türevlenebilirdi.
+
+167
+00:26:46,547 --> 00:26:49,407
+Yine yakınsaklık aralığı içerisinde.
+
+168
+00:26:49,407 --> 00:26:58,227
+kuvvet serisinin türevi aynı zamanda f fonksiyonunun türevi alınarak da yazılabilir.
+
+169
+00:26:58,727 --> 00:27:11,447
+f üstü x eşit birden sonsuza en a en x üzeri en eksi bir şeklinde yazabiliriz.
+
+170
+00:27:11,447 --> 00:27:17,387
+Yani normal şurada x'e göre türevi nasıl alıyorsanız aynı şekilde aldık.
+
+171
+00:27:17,827 --> 00:27:23,767
+Ya da bunu şu kuvvet serisini açık açık yazarsınız.
+
+172
+00:27:29,428 --> 00:27:44,128
+Bunun türevi, şu açık açık yazayım, a0, a1x, a2x kare, a3x küp artı nokta nokta diyelim.
+
+173
+00:27:46,108 --> 00:27:47,088
+Türevi ne olacak?
+
+174
+00:27:51,923 --> 00:28:13,624
+Bunun terim terim hepsinin türevi olacak. A0 sabit olduğu için türevi 0 oldu. Bunun türevi ne geldi? A1. Bunun türevi 2, A2, X geldi. Bunun türevi 3, A3, X kare geldi. Gerisine nokta nokta diyelim.
+
+175
+00:28:13,624 --> 00:28:16,703
+Şimdi bunu seri olarak yazarsak ne göreceğiz?
+
+176
+00:28:17,824 --> 00:28:29,203
+N eşit, birden başlatacağım. Çünkü A0 değeri 0 oldu gitti. Sıfırdan başlatsam da A0 değeri 0.
+
+177
+00:28:29,203 --> 00:28:36,023
+birden sonsuza ne var?
+
+178
+00:28:38,023 --> 00:28:49,283
+N çarpı A, N, X üzeri N, X'i 1 şeklinde bunu yazabilirim.
+
+179
+00:28:50,183 --> 00:28:51,384
+N'i 1 aldık.
+
+180
+00:28:52,104 --> 00:28:54,783
+A1, burası 0 oldu.
+
+181
+00:28:55,203 --> 00:28:56,983
+Üzeri 0 olduğu için 1 oldu.
+
+182
+00:28:56,983 --> 00:29:26,963
+A1, A1, 2 aldık.
+
+183
+00:29:26,963 --> 00:29:28,963
+Fonksiyonu hangi aralık.
+
+184
+00:29:28,963 --> 00:29:33,963
+Fonksiyonu hangi aralıkta tanımlıysa, daha doğrusu şu kuvvet serisi hangi aralıkta tanımlıysa,
+
+185
+00:29:33,963 --> 00:29:35,963
+yine bu aralıkta...
+
+186
+00:29:35,963 --> 00:29:39,263
+Ay sonsuz yazdım.
+
+187
+00:29:45,748 --> 00:30:07,847
+Burada değil. Yazdın mı bana? Ne dedi? Bekle biraz, derstedir. Bu şekilde türev almaya devam edebiliriz. Yani bunun istediğiniz kadar türevini alabilirsiniz.
+
+188
+00:30:07,847 --> 00:30:24,847
+İkinci türevini almak isterseniz. İkinci türevide ne olacak? Artık türevini aldığımda yine sabit A1 değeri de sıfır olacağı için bu sefer de n'i 2'den başlatacağım.
+
+189
+00:30:24,847 --> 00:30:37,307
+n, n-1, an, x üzeri n-2 olacak. Bu şekilde türev alıp almaya devam edebiliriz.
+
+190
+00:30:37,307 --> 00:30:47,607
+Yani aldığımız her türev alıp almaya devam edebiliriz. Yani aldığımız her sürede yine ne olacak? Başlangıçtaki kuvvet serisinin yakınsaklık aralığına ait olacak.
+
+191
+00:30:51,251 --> 00:31:06,231
+Ayrıca bu teorem diyor ki, ayrıca f fonksiyonu bu eksi r artı r aralığının her kapalı alt aralığında integrallenebilirdir.
+
+192
+00:31:06,231 --> 00:31:11,811
+Ve integralide, şunu sileyim.
+
+193
+00:31:16,531 --> 00:31:17,991
+Her kapalı alt aralığında
+
+194
+00:31:17,991 --> 00:31:19,432
+integrallenebilir diyor.
+
+195
+00:31:19,831 --> 00:31:21,871
+İntegralini de şu şekilde yazıyoruz.
+
+196
+00:31:22,031 --> 00:31:23,731
+Sıfırdan x'e
+
+197
+00:31:23,731 --> 00:31:28,211
+f'in
+
+198
+00:31:28,211 --> 00:31:29,571
+integralini alıyorum.
+
+199
+00:31:30,172 --> 00:31:31,692
+f'in integralini
+
+200
+00:31:31,692 --> 00:31:33,291
+alırken
+
+201
+00:31:33,291 --> 00:31:36,031
+bunu bir 0x aralığında
+
+202
+00:31:36,031 --> 00:31:37,971
+alıyorum. Çünkü her kapalı
+
+203
+00:31:37,971 --> 00:31:39,551
+aralıkta diyoruz.
+
+204
+00:31:39,551 --> 00:31:41,692
+Bir de bu şunun için oluyor.
+
+205
+00:31:42,731 --> 00:31:43,711
+Belirsiz
+
+206
+00:31:43,711 --> 00:31:45,172
+integral alırsam
+
+207
+00:31:45,172 --> 00:31:47,951
+integrasyon sabiti c eklemem
+
+208
+00:31:47,951 --> 00:31:50,011
+gerekecek. O c'yi de yine
+
+209
+00:31:50,011 --> 00:31:52,432
+çözüp sıfır olduğunu göstermem
+
+210
+00:31:52,432 --> 00:31:54,071
+gerekecek. Onun
+
+211
+00:31:54,071 --> 00:31:56,571
+yerine 0x aralığında
+
+212
+00:31:56,571 --> 00:31:58,011
+integrali alıyoruz.
+
+213
+00:31:58,491 --> 00:32:00,311
+Böyle sınırda x'i
+
+214
+00:32:00,311 --> 00:32:01,711
+yazdığım zaman
+
+215
+00:32:01,711 --> 00:32:04,091
+fonksiyonun değişkenini artık
+
+216
+00:32:04,091 --> 00:32:06,451
+x yazamıyorum. Başka herhangi
+
+217
+00:32:06,451 --> 00:32:08,031
+bir değişken yazıyoruz. Burada
+
+218
+00:32:08,031 --> 00:32:09,311
+t kullanmışız.
+
+219
+00:32:10,991 --> 00:32:12,231
+Bu integralde
+
+220
+00:32:12,231 --> 00:32:14,131
+normal integralini nasıl
+
+221
+00:32:14,131 --> 00:32:15,891
+alıyorsak o şekilde alınır.
+
+222
+00:32:16,231 --> 00:32:17,451
+Böyle bir fonksiyonun
+
+223
+00:32:17,451 --> 00:32:18,511
+integralini nasıl alınır?
+
+224
+00:32:18,652 --> 00:32:20,211
+Daha doğrusu şöyle yukarıdakine
+
+225
+00:32:20,211 --> 00:32:22,091
+bakın. Böyle bir fonksiyonun
+
+226
+00:32:22,091 --> 00:32:23,551
+integralini nasıl alınır?
+
+227
+00:32:24,011 --> 00:32:25,652
+x'in kuvveti bir
+
+228
+00:32:25,652 --> 00:32:26,652
+artırılır.
+
+229
+00:32:26,652 --> 00:32:29,571
+bir fonksiyonun
+
+230
+00:32:29,571 --> 00:32:30,432
+aralığında
+
+231
+00:32:30,432 --> 00:32:31,571
+bir fonksiyonun
+
+232
+00:32:31,571 --> 00:32:32,432
+aralığında
+
+233
+00:32:32,432 --> 00:32:33,031
+bir fonksiyonun
+
+234
+00:32:33,031 --> 00:32:33,471
+aralığında
+
+235
+00:32:33,471 --> 00:32:34,031
+bir fonksiyonun
+
+236
+00:32:34,031 --> 00:32:34,471
+aralığında
+
+237
+00:32:34,471 --> 00:32:35,031
+bir fonksiyonun
+
+238
+00:32:35,031 --> 00:32:35,571
+aralığında
+
+239
+00:32:35,571 --> 00:32:35,971
+bir fonksiyonun
+
+240
+00:32:35,971 --> 00:32:36,471
+aralığında
+
+241
+00:32:36,471 --> 00:32:37,571
+bir fonksiyonun
+
+242
+00:32:37,571 --> 00:32:37,871
+aralığında
+
+243
+00:32:37,871 --> 00:32:38,571
+bir fonksiyonun
+
+244
+00:32:38,571 --> 00:32:39,091
+aralığında
+
+245
+00:32:39,091 --> 00:32:39,491
+bir fonksiyonun
+
+246
+00:32:39,491 --> 00:32:40,432
+aralığında
+
+247
+00:32:40,432 --> 00:32:41,432
+bir fonksiyonun
+
+248
+00:32:41,432 --> 00:32:41,531
+aralığında
+
+249
+00:32:41,531 --> 00:32:42,432
+bir fonksiyonun
+
+250
+00:32:42,432 --> 00:32:43,432
+aralığında
+
+251
+00:32:43,432 --> 00:32:43,491
+bir fonksiyonun
+
+252
+00:32:43,491 --> 00:32:43,971
+aralığında
+
+253
+00:32:43,971 --> 00:32:44,571
+bir fonksiyonun
+
+254
+00:32:44,571 --> 00:32:45,432
+aralığında
+
+255
+00:32:31,220 --> 00:32:36,420
+Ve bu kuvvete bölünür değil mi? O zaman a, n'i bir de böleceğim.
+
+256
+00:32:37,539 --> 00:32:42,500
+n artı 1'e böleceğim. Bu şekilde de integralini alıyoruz.
+
+257
+00:32:44,940 --> 00:32:53,019
+Ya da bunun terim terim integralini almış oluyoruz. Terim terim integralini alırsak, şunun elemanları nelerdi?
+
+258
+00:32:53,019 --> 00:32:57,839
+A0, a1x, a2x kare şeklindeydi.
+
+259
+00:32:57,839 --> 00:33:00,039
+a0x olacak.
+
+260
+00:33:02,319 --> 00:33:05,759
+a1x kare bölü 2
+
+261
+00:33:05,759 --> 00:33:12,220
+a2x küp bölü 3
+
+262
+00:33:12,220 --> 00:33:13,740
+artı nokta nokta.
+
+263
+00:33:14,039 --> 00:33:16,759
+Yani şuradaki gibi olacak integralin.
+
+264
+00:33:16,759 --> 00:33:20,160
+Yine bu integralinde yakınsaklık aralı
+
+265
+00:33:20,160 --> 00:33:25,579
+şunu bir türlü konuşurken yazınca en son söylediğim şeyi yazıyorum.
+
+266
+00:33:25,579 --> 00:33:27,579
+mutlak değerli olarak.
+
+267
+00:33:27,579 --> 00:33:29,579
+mutlak değerli olarak
+
+268
+00:33:29,579 --> 00:33:32,579
+mutlak değerli olarak x küçük r
+
+269
+00:33:32,579 --> 00:33:33,579
+şeklinde olacak.
+
+270
+00:33:33,579 --> 00:33:35,579
+kısacası
+
+271
+00:33:35,579 --> 00:33:45,579
+fonksiyonlarda öğrendiğimiz o türev ve integral alma işlemini kuvvet serilerinde de yapabiliyoruz.
+
+272
+00:33:45,579 --> 00:34:11,579
+bu şekilde
+
+273
+00:33:50,932 --> 00:33:52,951
+Ve burada şunu da söyleyelim.
+
+274
+00:33:54,072 --> 00:34:04,132
+Terim terim türetilmiş ya da integre edilmiş serinin yakınsaklık yarı çapı verilen serinin yakınsaklık yarı çapı ile aynıdır.
+
+275
+00:34:04,471 --> 00:34:06,852
+Bunun yakınsaklık yarı çapı nedir? R'dir.
+
+276
+00:34:06,852 --> 00:34:11,652
+Bakın, türevini de aldığımızda hep yakınsaklık yarı çapı R oldu.
+
+277
+00:34:12,072 --> 00:34:17,452
+İntegrelini de aldığımızda yakınsaklık yarı çapını R olarak yazdık.
+
+278
+00:34:17,452 --> 00:34:26,351
+Yani tanım aralığı içerisinde bir kuvvet serisi türevlenebilir veya integrellenebilir.
+
+279
+00:34:27,811 --> 00:34:30,012
+Kısaca bunu söylüyoruz.
+
+280
+00:34:30,411 --> 00:34:32,532
+Bunlar bizim çok işimize yarayacak.
+
+281
+00:34:32,711 --> 00:34:32,931
+Neden?
+
+282
+00:34:33,871 --> 00:34:37,211
+Bir fonksiyonun kuvvet serisini yazarken
+
+283
+00:34:37,211 --> 00:34:44,992
+bildiğimiz bir fonksiyonun türevine ya da integraline benziyorsa
+
+284
+00:34:44,992 --> 00:34:49,851
+onlardan yararlanarak o kuvvet serilerini elde edebileceğiz.
+
+285
+00:35:18,579 --> 00:35:30,699
+Buradaki şu teoreme de bakalım. Bu arada sorunuz falan varsa sorabilirsiniz diyeceğim ama daha teoremleri geçemedik. Çok örnekleri falan gelemedik.
+
+286
+00:35:33,420 --> 00:35:34,059
+Eyvah eyvah.
+
+287
+00:35:44,788 --> 00:35:46,288
+Teoreme geldik şimdi.
+
+288
+00:35:47,588 --> 00:35:50,507
+Bu teoremden sonra da zaten örnekler yapacağız.
+
+289
+00:35:53,148 --> 00:35:54,847
+Okuyalım teoremi.
+
+290
+00:35:54,847 --> 00:36:17,068
+Eğer an x'en kuvvet serisi mutlak değer x küçük r için mutlak yakınsak ise o zaman her sürekli f fonksiyonu için an fx'en serisi de mutlak değer fx küçük r için yakınsak.
+
+291
+00:36:17,068 --> 00:36:34,288
+Yani şunu diyoruz yakınsaklık aralığı içerisindeki her x değeri için eğer şu kuvvet serisi mutlak yakınsak ise mutlak yakınsak olmanın ne demek olduğunu dün öğrendik.
+
+292
+00:36:34,688 --> 00:36:40,048
+Bunun terimlerinin mutlak değerlerinden oluşan serinin yakınsak olması anlamına geliyor.
+
+293
+00:36:40,048 --> 00:36:50,047
+Eğer bu seri mutlak yakınsak ise kuvvet serisi o zaman bu kuvvet serisinde değişken dönüşümü yapabilirsiniz.
+
+294
+00:36:51,327 --> 00:37:07,047
+Tabi ki her sürekli f fonksiyonu için f'i sürekli seçtiğinizde şöyle diyeyim kuvvet serisini kullanarak burada değişken dönüşümü yapıp başka bir kuvvet serisi de elde edebiliyorsunuz.
+
+295
+00:37:07,048 --> 00:37:15,387
+Bu değişken dönüşümü yaptığınız kuvvet serisinde yakınsaklık aralığı şu değişkene göre değişecektir.
+
+296
+00:37:16,208 --> 00:37:28,048
+Bu teoremin önemi şu yani bunun bize sağladığı şey kuvvet serisi eğer mutlak yakınsak ise biz onda değişken dönüşümü yapabiliyoruz.
+
+297
+00:37:29,407 --> 00:37:29,568
+Tamam.
+
+298
+00:37:30,248 --> 00:37:32,068
+Bakın hemen bunun örneği var.
+
+299
+00:37:32,268 --> 00:37:33,568
+Bunun örneğini yapalım.
+
+300
+00:37:33,987 --> 00:37:35,867
+Çünkü bunları çok kullanacağız.
+
+301
+00:37:35,867 --> 00:37:43,568
+Onlarla ilgili örnekler de çok yapacağız.
+
+302
+00:37:44,867 --> 00:37:47,068
+Sınavda mutlaka bunlar soruluyor.
+
+303
+00:38:05,588 --> 00:38:06,548
+Bir eksi, eksi.
+
+304
+00:38:10,612 --> 00:38:20,112
+Fonksiyon dedik ki, bunun kuvvet serisi temsilini, size sadece bu fonksiyon verilip kuvvet serisi temsili sorulsa ne yaparsınız?
+
+305
+00:38:20,912 --> 00:38:32,612
+Bunun kuvvet serisi temsilini yazmak için şu toplam, biz neleri biliyoruz? Geometrik serilerin toplamının yazılabileceğini, hesaplanabileceğini biliyoruz değil mi?
+
+306
+00:38:32,612 --> 00:38:34,791
+Bir geometrik seride
+
+307
+00:38:40,532 --> 00:38:44,312
+Sıfıra göre yazarsam a, n, r üzeri, n şeklinde olur.
+
+308
+00:38:44,312 --> 00:38:53,092
+Eğer mutlak değerde yani ortak oran birden küçük ise geometrik seri yakınsıyordu.
+
+309
+00:38:53,751 --> 00:38:55,771
+Ve toplamı da neye eşit oluyordu?
+
+310
+00:38:58,092 --> 00:39:00,412
+A pardon a, n yok özür dilerim.
+
+311
+00:39:00,852 --> 00:39:03,632
+A vardı burada geometrik seri de.
+
+312
+00:39:04,092 --> 00:39:05,452
+A ilk eleman oluyordu.
+
+313
+00:39:05,952 --> 00:39:08,892
+A bölü 1 eksi r'ye eşit oluyordu.
+
+314
+00:39:08,892 --> 00:39:25,512
+Bakın burada şunu eğer bu fonksiyonun seri temsili size soruluyorsa bir geometrik serinin toplamı olsaydı nasıl bir geometrik serinin toplamı olurdu diye düşünün.
+
+315
+00:39:27,112 --> 00:39:30,452
+1 bölü 1 eksi x olduğuna göre bu neye benziyor?
+
+316
+00:39:30,452 --> 00:39:34,812
+A bölü 1 eksi r formülünden a'yı 1 alırsınız.
+
+317
+00:39:35,292 --> 00:39:37,771
+R'yi de ne alırsınız? x alırsınız.
+
+318
+00:39:37,771 --> 00:39:41,231
+Ancak şunu mutlaka yazın.
+
+319
+00:39:41,612 --> 00:39:45,192
+Mutlak değer x küçük 1 için bunu yazabilirsiniz.
+
+320
+00:39:45,952 --> 00:39:51,432
+x birden büyük olduğu zaman artık seri ıraksayacak ve bu toplama yakın sanayacak.
+
+321
+00:39:51,992 --> 00:39:59,271
+Mutlak değer x küçük 1 için geometrik serisini yazarsanız seri temsili neye eşit olacak?
+
+322
+00:39:59,271 --> 00:40:06,692
+Sıfırdan sonsuza an'yı 1 olacak.
+
+323
+00:40:06,692 --> 00:40:11,771
+Çünkü bunun ilk terimi a'sı 1 olduğuna göre bütün an'yı 1 olmalı.
+
+324
+00:40:12,652 --> 00:40:17,152
+R'de x olduğuna göre x üzeri n'e eşit olacak.
+
+325
+00:40:20,884 --> 00:40:24,083
+Mutlak değer x küçük biri mutlaka yazıyorsunuz.
+
+326
+00:40:25,543 --> 00:40:29,664
+Şimdi bu örneğimizde ben bu açıklamaları sileyim tekrar.
+
+327
+00:40:33,811 --> 00:40:35,471
+örneğimizde diyor ki
+
+328
+00:40:35,471 --> 00:40:38,051
+şu verilen
+
+329
+00:40:38,051 --> 00:40:39,311
+seri nedir?
+
+330
+00:40:39,751 --> 00:40:41,152
+Mutlak yakınsaktır.
+
+331
+00:40:43,851 --> 00:40:45,731
+Bu mutlak yakınsak olduğu
+
+332
+00:40:45,731 --> 00:40:47,572
+için burada biz
+
+333
+00:40:47,572 --> 00:40:49,931
+x yerine değişken dönüşüm yaparak
+
+334
+00:40:49,931 --> 00:40:50,572
+başka
+
+335
+00:40:50,572 --> 00:40:53,731
+fonksiyonların kuvvet serilerini
+
+336
+00:40:53,731 --> 00:40:54,911
+elde edebiliriz.
+
+337
+00:40:55,831 --> 00:40:57,991
+Bu teoreme göre burada ne yapmış?
+
+338
+00:40:57,991 --> 00:40:59,132
+x yerine
+
+339
+00:40:59,132 --> 00:41:00,871
+4
+
+340
+00:41:00,871 --> 00:41:03,791
+x kale almış.
+
+341
+00:41:04,711 --> 00:41:05,811
+Daha doğrusu
+
+342
+00:41:05,811 --> 00:41:07,311
+fx olarak
+
+343
+00:41:07,311 --> 00:41:10,572
+yani fx eşit
+
+344
+00:41:10,572 --> 00:41:12,831
+4 x kale almış.
+
+345
+00:41:13,231 --> 00:41:13,891
+Tamam mı?
+
+346
+00:41:14,431 --> 00:41:17,072
+Bu yazdığımız teoreme göre
+
+347
+00:41:17,072 --> 00:41:19,251
+bu mutlak yakınsak olduğuna göre
+
+348
+00:41:19,251 --> 00:41:21,471
+x yerine fx yazdığında
+
+349
+00:41:21,471 --> 00:41:23,211
+yine mutlak yakınsak olacak.
+
+350
+00:41:23,751 --> 00:41:25,592
+x yerine fx yazarsam
+
+351
+00:41:25,592 --> 00:41:26,072
+ne olur?
+
+352
+00:41:26,072 --> 00:41:28,371
+1 bölü 1 eksi
+
+353
+00:41:28,371 --> 00:41:30,192
+4 x kare olur.
+
+354
+00:41:30,551 --> 00:41:31,951
+Bu da neye eşit olacak?
+
+355
+00:41:31,951 --> 00:41:34,331
+sıfırdan sonsuza
+
+356
+00:41:34,331 --> 00:41:38,711
+4 x karenin
+
+357
+00:41:38,711 --> 00:41:41,511
+eninci kuvveti gelecek buradan da.
+
+358
+00:41:42,051 --> 00:41:43,092
+Yakınsaklık
+
+359
+00:41:43,092 --> 00:41:45,391
+yarı çapıda nasıl değişecek?
+
+360
+00:41:45,911 --> 00:41:46,851
+Mutlak değer
+
+361
+00:41:46,851 --> 00:41:48,851
+fx küçük
+
+362
+00:41:48,851 --> 00:41:50,152
+r olacaktı.
+
+363
+00:41:50,431 --> 00:41:52,351
+r burada 1 olduğuna göre
+
+364
+00:41:52,351 --> 00:41:55,692
+fx de 4 x kare olduğuna göre
+
+365
+00:41:55,692 --> 00:41:57,072
+4 x kare
+
+366
+00:41:57,072 --> 00:41:58,451
+küçük
+
+367
+00:41:58,451 --> 00:41:59,751
+1 için
+
+368
+00:41:59,751 --> 00:42:03,251
+yakınsaklık yarı çapını bulacağız.
+
+369
+00:42:03,751 --> 00:42:04,572
+Burada ne olacak?
+
+370
+00:42:04,572 --> 00:42:05,971
+eksi 1 artı 1
+
+371
+00:42:05,971 --> 00:42:07,092
+4 x kare
+
+372
+00:42:07,092 --> 00:42:08,911
+2 x
+
+373
+00:42:08,911 --> 00:42:11,031
+değil mi?
+
+374
+00:42:11,031 --> 00:42:12,031
+1
+
+375
+00:42:12,031 --> 00:42:19,791
+5 x kare
+
+376
+00:42:19,791 --> 00:42:23,791
+6 x kare
+
+377
+00:42:23,027 --> 00:42:31,807
+2x artı eksi 1, 2x küçük 1, büyük, eksi 1 aralığında olacak.
+
+378
+00:42:32,027 --> 00:42:39,507
+Dolayısıyla, x küçük, mutlak değer x küçük, 1 bölü 2.
+
+379
+00:42:39,507 --> 00:42:51,227
+Ya da şöyle diyelim, eksi 1 bölü 2, x 1 bölü 2'den, buradan ne yazarız? Mutlak değer x küçük, 1 bölü 2 yazarız.
+
+380
+00:42:51,227 --> 00:42:57,647
+Şunu, x küçük, 1 bölü 2 için yazabiliyormuşuz.
+
+381
+00:42:57,867 --> 00:43:00,047
+Bu seriyi şöyle de yazabilirim.
+
+382
+00:43:00,727 --> 00:43:02,887
+Bunu biraz küçük yazayım, şuraya sığdırayım.
+
+383
+00:43:15,635 --> 00:43:23,476
+450N, x üzeri 2N şeklinde olacak değil mi? Bunu bu şekilde de yazabiliriz.
+
+384
+00:43:26,175 --> 00:43:35,016
+Demek ki böyle bir serinin de yakınsadığı fonksiyon şu şekilde olacakmış.
+
+385
+00:43:45,396 --> 00:43:51,456
+Uzun uzun f fonksiyonu olarak seçmeyip, hemen x yerine ne koymak istiyorsanız yazarsınız.
+
+386
+00:43:51,876 --> 00:43:58,996
+Ya da yine buradan, 1-x'in serisi buysa, 1 artı x'in serisi nasıl olur?
+
+387
+00:43:59,356 --> 00:44:02,115
+Onu da buradan yararlanarak yine yazabiliriz.
+
+388
+00:44:03,916 --> 00:44:11,416
+x eşit, x yerine x'i x alacağım ki, burası 1 artı x olsun.
+
+389
+00:44:11,416 --> 00:44:19,036
+1 bölü, 1 artı x'in serisi bu durumda ne olacak?
+
+390
+00:44:19,756 --> 00:44:22,196
+Burada x yerine eksi x yazıyorum.
+
+391
+00:44:25,296 --> 00:44:29,356
+x yerine eksi x yazdım, üzerine n koydum.
+
+392
+00:44:29,716 --> 00:44:31,196
+Dolayısıyla ne olur bu?
+
+393
+00:44:33,976 --> 00:44:39,196
+Eksi 1 üzeri n, x üzeri n şeklinde olurmuş.
+
+394
+00:44:39,196 --> 00:44:46,596
+1 bölü, 1 bölü, 1 artı x'in serisi de, n'i 0 aldığımız zaman,
+
+395
+00:44:46,596 --> 00:44:57,676
+x artı 1, eksi 1, eksi 1 aldığımız zaman, eksi x,
+
+396
+00:45:07,668 --> 00:45:24,048
+1 bölü 1 artı x fonksiyonunun kuvvet serisi temsili de şu şekilde 1 artı x, eksi x artı x kare, eksi x küp şeklinde şunun serisinin artı eksilisi olarak, alternesi olarak yazılabiliyormuş.
+
+397
+00:45:24,528 --> 00:45:30,807
+Burada ya da 1 bölü 1 artı x kare serisini de yazabilirsiniz.
+
+398
+00:45:30,807 --> 00:45:34,228
+Artık burada yazılabilecek ne varsa yazabilirsiniz.
+
+399
+00:45:34,228 --> 00:45:39,508
+1 bölü 1 artı x kareyi yazmak isterseniz, o zaman ne yaparsınız?
+
+400
+00:45:40,387 --> 00:45:44,108
+Şu seride x yerine eksi x kare yazarsınız.
+
+401
+00:45:45,768 --> 00:45:49,208
+Tamam mı? Bu örnekler artık çoğaltılabilir.
+
+402
+00:46:07,923 --> 00:46:13,344
+Şimdi biraz ara verelim. Aradan sonra yine örneklerimizle devam ederiz.
+
+403
+00:56:38,708 --> 00:56:41,088
+Hazır mısınız arkadaşlar? Başlayalım.
+
+404
+00:56:43,447 --> 00:56:44,708
+Buradayız hocam.
+
+405
+00:56:45,508 --> 00:56:46,288
+Tamam, çok iyi.
+
+406
+00:56:47,827 --> 00:56:51,068
+Şimdi bu yapacağım örnekler gerçekten çok önemli.
+
+407
+00:56:52,347 --> 00:57:00,668
+Dersten sonra vaktiniz olduğunda, yani akşam falan vaktiniz olursa, bu örnekleri tekrar gözden geçirmenizi istiyorum.
+
+408
+00:57:01,307 --> 00:57:06,208
+Çünkü dediğim gibi sınavda da benzer sorular çok geliyor.
+
+409
+00:57:06,208 --> 00:57:10,708
+Yani bir kuvvet serisi karşımıza nasıl çıkacak, kestirmek zor.
+
+410
+00:57:10,847 --> 00:57:14,748
+Sınavda nasıl geleceğini kestirmek zor ama mutlaka gelecek.
+
+411
+00:57:15,407 --> 00:57:22,927
+Hiç ummadığınız serilerin toplamında bile kuvvet serisini kullanmak o kadar işinizi kolaylaştırıyor ki anlatamam.
+
+412
+00:57:23,407 --> 00:57:25,028
+Şimdi geçelim örneklerimize.
+
+413
+00:57:32,244 --> 00:57:45,024
+Bu kitaptaki bir örnek, yani Thomas'ın kitabındaki örnek, diyor ki aşağıdaki fonksiyonun kapalı formunu bulunuz ya da burada ek fonksiyonunu bulunuz da diyebilirdi.
+
+414
+00:57:51,380 --> 00:58:06,860
+f fonksiyonu sıfırdan sonsuza, eksi bir üzeri n, x üzeri 2n artı 1, bölü 2n artı 1.
+
+415
+00:58:09,360 --> 00:58:14,400
+Bunun birkaç tanesini yazmış, belki daha çok işimize yarar, biz de yazalım.
+
+416
+00:58:21,876 --> 00:58:28,556
+Yakınsaklık aralığı da eksi bir, bir aralığıymış.
+
+417
+00:58:37,172 --> 00:58:48,952
+Böyle bir kuvvet serisinin toplamı olduğuna göre f fonksiyonunu bulun diyor. Fonksiyonun kapalı halini bulun demesi o anlama geliyor sanırım.
+
+418
+00:58:51,032 --> 00:59:01,211
+Bulalım. Şimdi şu toplamda bir yere varabilecek miyim? Varamayacak gibi görüyorum kendimi.
+
+419
+00:59:01,211 --> 00:59:14,791
+Ancak bunun sanki böyle integrali alınmış gibi görüyorum. Bir türevini alalım. Türevini alırsak en azından şu artı birer gidecek değil mi?
+
+420
+00:59:15,311 --> 00:59:23,411
+Türevini alalım biz bunun. FX'in türevi acaba bildiğimiz bir fonksiyona benzeyecek mi? Ona bakıyoruz.
+
+421
+00:59:23,411 --> 00:59:30,632
+FX'in türevi neye eşit olacak? Fonksiyonun türevi şu serinin türevini alarak yazılıyordu.
+
+422
+00:59:31,211 --> 01:00:01,192
+O halde burası neye eşit olacak?
+
+423
+00:59:39,507 --> 00:59:43,007
+Direkt seriyi yazmamış ama neyse biz yazalım.
+
+424
+00:59:43,527 --> 00:59:45,167
+Eksi 1 üzeri n.
+
+425
+00:59:46,047 --> 00:59:47,967
+Türevini aldığımda ne olacak?
+
+426
+00:59:48,247 --> 00:59:50,527
+2n artı 1 buraya çarpım gelecek.
+
+427
+00:59:50,927 --> 00:59:53,447
+Payda da 2n artı 1 var gidecekler.
+
+428
+00:59:53,847 --> 00:59:56,027
+x üzeri 2n olacak.
+
+429
+00:59:57,247 --> 01:00:00,907
+Yani şuradan türev alırsak ne olacak?
+
+430
+01:00:00,907 --> 01:00:05,227
+1 eksi x kare artı
+
+431
+01:00:05,227 --> 01:00:11,288
+x üzeri 4 eksi nokta nokta diyelim.
+
+432
+01:00:12,167 --> 01:00:15,367
+Eksi 1, 1 aralığında bunlar geçerli.
+
+433
+01:00:19,572 --> 01:00:22,251
+Şunu eksi 1, 1 aralığında yazacağım. Neden?
+
+434
+01:00:25,572 --> 01:00:32,692
+Çünkü bu bana tanıdık geldi. Şimdi aralığı yazmayın. Biraz sonra isterseniz yazayım.
+
+435
+01:00:33,452 --> 01:00:36,192
+F'in türevini aldım. Bu çıktı.
+
+436
+01:00:38,572 --> 01:00:41,251
+Burada baktığımda neyi görüyorum?
+
+437
+01:00:41,251 --> 01:00:44,072
+Biz biraz önce
+
+438
+01:00:44,072 --> 01:00:46,492
+1 bölü
+
+439
+01:00:46,492 --> 01:00:48,811
+1-x'in fonksiyonunda
+
+440
+01:00:48,811 --> 01:00:50,811
+x yerine x-x yazdığımızda
+
+441
+01:00:51,552 --> 01:00:55,592
+1 artı x'in fonksiyonunu elde etmiştik.
+
+442
+01:00:55,711 --> 01:00:57,592
+Dolayısıyla bunun kuvvet serisi de
+
+443
+01:00:57,592 --> 01:00:59,092
+neye eşit çıkmıştı?
+
+444
+01:00:59,972 --> 01:01:01,392
+1 üzeri n
+
+445
+01:01:01,392 --> 01:01:04,271
+x üzeri n'e eşit çıkmıştı.
+
+446
+01:01:04,271 --> 01:01:04,532
+Değil mi?
+
+447
+01:01:05,172 --> 01:01:07,572
+Burada x üzeri ne var?
+
+448
+01:01:07,852 --> 01:01:08,692
+2 n var.
+
+449
+01:01:08,692 --> 01:01:38,672
+O halde x yerine
+
+450
+01:01:38,672 --> 01:01:41,492
+gerisi zaten gelecek.
+
+451
+01:01:41,492 --> 01:01:43,492
+Bu artık
+
+452
+01:01:43,492 --> 01:01:43,652
+bu artık
+
+453
+01:01:43,652 --> 01:01:47,492
+nedir?
+
+454
+01:01:47,492 --> 01:01:53,492
+Bir geometrik seri toplamı olarak da ifade edilebilir değil mi?
+
+455
+01:01:53,492 --> 01:01:55,492
+Geometrik seri gibi
+
+456
+01:01:55,492 --> 01:01:57,492
+bunu düşünürsem
+
+457
+01:01:57,492 --> 01:01:59,492
+ne olacak burada?
+
+458
+01:01:59,492 --> 01:02:00,892
+R'si
+
+459
+01:02:00,892 --> 01:02:04,892
+x kare olacak.
+
+460
+01:02:04,892 --> 01:02:07,492
+Daha doğrusu eksi x kare olacak.
+
+461
+01:02:07,492 --> 01:02:34,311
+bu
+
+462
+01:02:38,867 --> 01:02:39,967
+Şunu silmiyorum.
+
+463
+01:02:41,467 --> 01:02:43,067
+Bunu böyle yazdık.
+
+464
+01:02:47,827 --> 01:03:03,527
+Dolayısıyla fx fonksiyonu şu seride, bu seri dedik ki 1 bölü 1 artı x karenin serisine benziyor.
+
+465
+01:03:03,668 --> 01:03:11,407
+O halde f üstü x fonksiyonu 1 bölü 1 artı x kare fonksiyonu oldu değil mi?
+
+466
+01:03:11,407 --> 01:03:19,407
+Bu da nedir? Serisi 1'den sonsuza eksi 1 üzeri n, x üzeri 2n olan şu seri.
+
+467
+01:03:20,588 --> 01:03:25,887
+Bakın f fonksiyonunun ne olduğunu bilmiyorum ama türevini biliyorum.
+
+468
+01:03:27,168 --> 01:03:31,527
+f'in türevini biliyorsam integralini alarak f'i bulabilirim.
+
+469
+01:03:31,608 --> 01:03:37,648
+Yani türevi 1 bölü 1 artı x kare olan fonksiyonun integralini aldığında f'i bulurum.
+
+470
+01:03:37,648 --> 01:03:41,507
+fx fonksiyonu bu durumda neye eşit olacak?
+
+471
+01:03:42,307 --> 01:03:48,867
+Sıfırdan x'e şu f üstü t diyelim buna.
+
+472
+01:03:49,567 --> 01:03:53,027
+f üstü t'nin integraline eşit olacak.
+
+473
+01:03:53,807 --> 01:03:57,608
+x'i sınıra koyduğum için burada t'yi kullandım.
+
+474
+01:03:57,608 --> 01:04:01,588
+Ya da siz burada şunu da yapabilirsiniz.
+
+475
+01:04:03,807 --> 01:04:06,447
+Belirsiz integral de kullanabilirsiniz.
+
+476
+01:04:06,447 --> 01:04:09,987
+Notlarda sanırım ben belirsiz integral ile çözmüşüm.
+
+477
+01:04:10,068 --> 01:04:15,427
+Kitaptaki çözümü yazmışım oraya ama belirli integral ile onu şu şekilde yazabilirsiniz.
+
+478
+01:04:17,068 --> 01:04:23,228
+fx fonksiyonu 0x aralığındaki f üstü fonksiyonunun integraline eşit olacak.
+
+479
+01:04:23,228 --> 01:04:28,768
+Dolayısıyla bunu da nasıl yazarız?
+
+480
+01:04:28,768 --> 01:04:31,407
+f üstü x fonksiyonunu biliyorum.
+
+481
+01:04:31,568 --> 01:04:36,088
+0'dan x'e f üstü 1 bölü 1 artı x kareydi.
+
+482
+01:04:36,188 --> 01:04:39,407
+1 bölü 1 artı t kare diyeceğim buna.
+
+483
+01:04:40,688 --> 01:04:41,748
+dt diyeceğim.
+
+484
+01:04:41,748 --> 01:04:47,407
+neyin türevidir bu?
+
+485
+01:04:47,827 --> 01:04:50,088
+Arktanjant t'nin türevidir değil mi?
+
+486
+01:04:50,407 --> 01:04:52,168
+O halde bu integral neye eşit?
+
+487
+01:04:54,527 --> 01:04:56,447
+Arktanjant x'e eşit.
+
+488
+01:04:56,568 --> 01:05:00,967
+Belirli integral olduğu için t yerine üst sınırı x'i yazıyorum.
+
+489
+01:05:01,128 --> 01:05:02,708
+Arktanjant x oluyor.
+
+490
+01:05:02,708 --> 01:05:10,867
+0 yazdığımda arktanjant 0, 0 olduğunda burası arktanjant x'i eşit oluyor.
+
+491
+01:05:14,047 --> 01:05:24,788
+İşte f fonksiyonunu yani verilen şu seriden önce türev alıp sonra integral alarak f fonksiyonunu bu şekilde belirliyorum.
+
+492
+01:05:25,248 --> 01:05:26,307
+Arktanjant x.
+
+493
+01:05:26,688 --> 01:05:28,887
+Ben buraya nereden geldim?
+
+494
+01:05:28,887 --> 01:05:34,628
+Şu f üstü fonksiyonunun integralinden geldiğim için bunun tanım aralığı da nedir?
+
+495
+01:05:35,248 --> 01:05:40,387
+Şu türevini aldığım fonksiyonun daha doğrusu integralini aldığım fonksiyonun tanım aralığıdır.
+
+496
+01:05:42,248 --> 01:05:50,688
+Ancak arktanjant x fonksiyonu eksi 1 ve artı 1'de de tanımlı olduğu için buralarda da yakınsayacak.
+
+497
+01:05:50,688 --> 01:05:58,027
+Dolayısıyla bunun yakınsaklık aralığı uçlarda incelediğinizde artı 1 ve eksi 1'de dahil çıkacak.
+
+498
+01:05:58,887 --> 01:06:03,047
+İşte bu şekilde belirlemiş olduk.
+
+499
+01:06:04,427 --> 01:06:05,467
+Anlaşıldı mı bu?
+
+500
+01:06:23,731 --> 01:06:31,692
+Peki, bir tek [öğrenci] cevap verdi. Tamam, [öğrenci] da cevap verdi. Güzel. O zaman başka örneklere geçelim.
+
+501
+01:06:40,115 --> 01:07:04,115
+Şunu da söyleyeyim arkadaşlar. Ben burada belirli integral yaptım. Belirsiz integral yaparsanız da notlardaki gibi olacak. Belirsiz integral koyduğunuzda integrasyon sabitliği C gelecek. C'nin de sıfıra eşit olduğunu göstermeniz gerekecek. O da zor değil. Notlarda öyle yapmışım. İncelersiniz.
+
+502
+01:07:04,115 --> 01:07:12,016
+Hangisi size daha kolay gelirse onu yapın. Herhangi bir şey yok orada. Zorunluluğunuz yok.
+
+503
+01:07:15,096 --> 01:07:22,815
+Geldik diğer örneğimize. Aşağıdaki fonksiyonların kuvvet serisi temsillerini ve geçerli oldukları aralıkları bulunsun.
+
+504
+01:07:24,655 --> 01:07:31,195
+Böyle yazalım. Bir bölüm. Bir eksi x'in kalesi.
+
+505
+01:07:31,195 --> 01:07:34,956
+Bunun seri temsilleri soruluyor.
+
+506
+01:07:35,916 --> 01:07:37,655
+Diğerinde bir bölüm.
+
+507
+01:07:37,655 --> 01:07:41,215
+Bir eksi x'in küpü var.
+
+508
+01:07:42,115 --> 01:07:43,376
+Diğerinde de
+
+509
+01:07:43,376 --> 01:07:47,215
+Elen bir artı x var.
+
+510
+01:07:47,456 --> 01:07:52,615
+Bana öyle geliyor ki aynı fonksiyonla yapılan işlemler sonucu bulacağız gibi geldi bunu.
+
+511
+01:07:59,476 --> 01:08:02,056
+Kuvvet serisi temsilini bulmamız isteniyor.
+
+512
+01:08:04,976 --> 01:08:06,816
+A şıkkıyla başlayalım biz.
+
+513
+01:08:10,387 --> 01:08:16,908
+Bir kere, 1 bölü, 1 eksi x'in serisini biliyorum, bu onun karesi alınarak yapılmış.
+
+514
+01:08:16,988 --> 01:08:20,547
+Yani kendisiyle çarpılması sonucu elde edilmiş.
+
+515
+01:08:20,688 --> 01:08:25,587
+Dolayısıyla, 1 bölü, 1 eksi x'in kuvvet serisi neydi?
+
+516
+01:08:26,528 --> 01:08:29,307
+Birden sonsuza x üzeri endi.
+
+517
+01:08:29,688 --> 01:08:36,728
+Bunun geçerli olduğu aralık da, eksi 1 artı 1 aralığıydı, bunu biliyoruz.
+
+518
+01:08:36,728 --> 01:08:45,207
+Burada, bunu bildiğim için, buradan hemen şuna yazabilirim.
+
+519
+01:08:45,587 --> 01:08:47,408
+Bunu kendisiyle çarpacağım.
+
+520
+01:09:03,444 --> 01:09:06,724
+Peki, serinin çarpımı, bana neyi verecek?
+
+521
+01:09:07,764 --> 01:09:10,004
+1 bölü 1 eksi x'i
+
+522
+01:09:14,228 --> 01:09:27,688
+türevini alırsak da aynı şey oluyor. Çarparsak da türevini alırsak da iki şekilde de aynısı oluyor. Biz bunun çarparsak ne olacak? AN1, BN1 her N için.
+
+523
+01:09:35,123 --> 01:09:40,003
+Her en için a'n ve b'n 1 olduğu için c'n neye eşit olacak?
+
+524
+01:09:42,463 --> 01:09:45,663
+Sıfırdan n'e, birilerin toplamına.
+
+525
+01:09:45,743 --> 01:09:47,783
+Dolayısıyla bu ne çıkacak? n artı 1.
+
+526
+01:09:47,903 --> 01:09:49,363
+Demin bunu yapmıştık zaten.
+
+527
+01:09:49,923 --> 01:09:52,423
+Dolayısıyla bu o zaman neye eşit olur?
+
+528
+01:09:52,423 --> 01:10:04,523
+n eşit sıfırdan sonsuza c'n yani n artı 1, x üzeri n şeklinde olacak.
+
+529
+01:10:05,123 --> 01:10:05,583
+1.
+
+530
+01:10:12,627 --> 01:10:14,907
+şekilde çarparak
+
+531
+01:10:14,907 --> 01:10:16,747
+yazabildiğimiz gibi
+
+532
+01:10:16,747 --> 01:10:18,627
+ikinci yol olarak da
+
+533
+01:10:19,407 --> 01:10:22,447
+türeterek de bulabiliriz.
+
+534
+01:10:22,688 --> 01:10:23,507
+Türev alalım.
+
+535
+01:10:26,327 --> 01:10:28,987
+Bir bölü, bir eksi x'in
+
+536
+01:10:28,987 --> 01:10:30,728
+türevi
+
+537
+01:10:30,728 --> 01:10:31,867
+neye eşit olacak?
+
+538
+01:10:32,867 --> 01:10:34,587
+Bölüm türevi, daha doğrusu
+
+539
+01:10:34,587 --> 01:10:36,587
+bir bölü fx fonksiyonunun türevi
+
+540
+01:10:36,587 --> 01:10:37,067
+neydi?
+
+541
+01:10:40,067 --> 01:10:41,067
+Eksi
+
+542
+01:10:41,067 --> 01:10:44,667
+f'in türevi bölü
+
+543
+01:10:44,667 --> 01:10:45,967
+f'in karesiydi.
+
+544
+01:10:46,347 --> 01:10:48,307
+Bunun türevinden eksi bir gelecek.
+
+545
+01:10:48,507 --> 01:10:50,627
+Eksi de formülden geliyor bölüm türevinden
+
+546
+01:10:50,627 --> 01:10:51,567
+artı oluyor.
+
+547
+01:10:52,107 --> 01:10:54,567
+Bir bölü, bir eksi x'in
+
+548
+01:10:54,567 --> 01:10:56,627
+parantez karesini eşit.
+
+549
+01:10:57,347 --> 01:10:58,207
+Dolayısıyla
+
+550
+01:10:58,207 --> 01:11:00,327
+şu fonksiyonun türevini
+
+551
+01:11:00,327 --> 01:11:01,407
+alırsak
+
+552
+01:11:01,407 --> 01:11:02,907
+bir bölü.
+
+553
+01:11:02,907 --> 01:11:07,067
+Bir bölü.
+
+554
+01:11:09,300 --> 01:11:22,520
+Şunu 1 değil, 0'dan başlatacaktık. Çok özür diliyorum. Şu 0 olacak. Ben 1 yazmışım ama. Burada 0, burada 1. Böyle anormal bir şey yapmışım. 0 hepsi.
+
+555
+01:11:25,119 --> 01:11:37,400
+Şöyle yapacağız. Türevi fonksiyonun 1 bölü 1 eksi x fonksiyonu bu olduğuna göre türevi ne olacak? n çarpı x üzeri n eksi 1 olacak.
+
+556
+01:11:37,400 --> 01:11:48,220
+Bu nerede? n eşit 0'dan, pardon, 1'den sonsuza. Türevi aldığımda çünkü n'i bir yukarıdan başlatıyorum.
+
+557
+01:11:49,659 --> 01:11:56,520
+Bunu da şöyle, böyle de bırakabilirsiniz. Ya da bunu şöyle de, 0'dan başlatmak isterseniz ne yaparsınız?
+
+558
+01:12:00,420 --> 01:12:03,560
+Buradan 1 çıkarırsam, buraya 1 eklerim.
+
+559
+01:12:27,667 --> 01:12:34,347
+Gördüğünüz gibi aynı şeyi elde etmiş olduk. Bu ikisi birbirine eşit indisini değiştirdik sadece.
+
+560
+01:12:36,287 --> 01:12:51,247
+Gelelim B şıkkına. B'de de 1 bölü 1 eksi x'in küpü var. Bunu 3 kere kendisiyle çarpmak yerine 1 bölü 1 eksi x karenin nesini biliyoruz artık?
+
+561
+01:12:51,247 --> 01:13:01,887
+Serisini biliyoruz. Bunun serisinden türev alarak 1 bölü 1 eksi x küpün serisini elde edebiliriz.
+
+562
+01:13:04,007 --> 01:13:07,367
+O zaman bana lazım olan şu.
+
+563
+01:13:09,947 --> 01:13:13,927
+1 bölü 1 eksi x karenin serisi buna eşit.
+
+564
+01:13:21,844 --> 01:13:32,663
+Sıfırdan başlatırsak, şurası n artı bir, x üzeri n oluyordu. Bunun serisi buna eşit. Türevini alırsak,
+
+565
+01:13:39,412 --> 01:13:40,612
+Şunun türevi
+
+566
+01:13:49,524 --> 01:13:51,744
+Ne olacak? 2 gelecek şuraya.
+
+567
+01:13:53,744 --> 01:13:58,064
+2 bölü, 1-x'in küpü olacak.
+
+568
+01:14:03,188 --> 01:14:07,948
+O halde, şunun türevi neye eşit olacak?
+
+569
+01:14:08,988 --> 01:14:16,988
+N eşit birden sonsuza türev aldığında n artı bir, n, n eksi bir oldu.
+
+570
+01:14:20,595 --> 01:14:30,095
+2'ye bölersek iki tarafı, ya da şunu sıfırdan başlatmak istersek, burada sıfıra göre mi yazmışız, bire göre mi?
+
+571
+01:14:31,215 --> 01:14:34,755
+2'ye göre yazmışız. Önemli değil.
+
+572
+01:14:36,975 --> 01:14:38,475
+Şöyle yapalım.
+
+573
+01:14:40,275 --> 01:14:48,295
+2'ye bölersek, bir bölü, bir artı x'i, bir eksi x'i, küpü.
+
+574
+01:14:51,731 --> 01:14:53,832
+1 bölü 2 ile çarpacağım.
+
+575
+01:14:54,671 --> 01:15:05,231
+Yani n eşit 1'den sonsuza n artı 1, n bölü 2, x üzeri n eklesi 1.
+
+576
+01:15:05,612 --> 01:15:09,271
+Bunun indisini değiştirerek farklı şekillerde de yazabilirsiniz.
+
+577
+01:15:09,891 --> 01:15:14,971
+Sıfırdan başlatırsanız, buradan 1 çıkarırsanız bunlara 1 eklemeniz gerekecek.
+
+578
+01:15:14,971 --> 01:15:19,912
+Veya, burada 2'ye göre yazmışız ama hiç fark etmiyor.
+
+579
+01:15:20,011 --> 01:15:21,992
+Bu şekilde de bırakabilirsiniz.
+
+580
+01:15:23,511 --> 01:15:25,011
+Bunun nesi değişmeyecek?
+
+581
+01:15:25,431 --> 01:15:27,891
+Yakınsaklık aralığı değişmeyecek.
+
+582
+01:15:28,532 --> 01:15:31,591
+Mutlak değer x küçük, 1 için yine yakınsak olacak.
+
+583
+01:15:51,572 --> 01:15:52,971
+Sıramınız yoksa sileceğim.
+
+584
+01:16:12,819 --> 01:16:27,880
+Bunun türevini alırsanız ne olacak? 1 bölü 1 artı x olacak. O halde biz 1 bölü 1 artı x'in nesini biliyoruz?
+
+585
+01:16:31,572 --> 01:16:43,752
+1 bölü 1 eksi x'i biliyorduk zaten. 1 bölü 1 eksi x'den 1 bölü 1 artı x'i de elde etmiştik. Şöyle diyelim, 1 bölü 1 artı x'in seri temsili neye eşitti?
+
+586
+01:16:47,412 --> 01:16:53,952
+n eşit sıfırdan sonsuza, eksi bir üzeri n, x üzeri n'e eşitti.
+
+587
+01:16:55,092 --> 01:16:58,872
+x yerine, eksi x yazdığımızda buna eşit oluyordu.
+
+588
+01:16:59,712 --> 01:17:11,391
+Dolayısıyla, bunun integralini alırsak, elen bir artı x'e ilgi ederiz.
+
+589
+01:17:12,432 --> 01:17:15,891
+Bunun integralini alacaksam, eğer şöyle yapalım.
+
+590
+01:17:17,412 --> 01:17:22,652
+Elen bir artı x, şuna eşit olacak.
+
+591
+01:17:23,992 --> 01:17:32,552
+Sıfırdan x'e, bir bölü, bir artı t, dt integraline eşit olacak.
+
+592
+01:17:37,971 --> 01:17:39,671
+Şunun integrali ne olur?
+
+593
+01:17:40,831 --> 01:17:44,451
+Elen 1 artı t olacak.
+
+594
+01:17:46,251 --> 01:17:48,612
+Sınırları yerine yazdığınızda da ne olur?
+
+595
+01:17:49,072 --> 01:17:51,112
+Elen 1 artı x olur.
+
+596
+01:17:52,091 --> 01:18:00,271
+Sıfır yazdığınızda elen 1, elen 1 de sıfır olduğundan elen 1 artı x şunun integrali oluyor doğrudan.
+
+597
+01:18:01,171 --> 01:18:07,891
+Bunu böyle gördükten sonra artık şu serinin bir kez integraliyle almam gerekecek.
+
+598
+01:18:07,971 --> 01:18:08,751
+Bu da nedir?
+
+599
+01:18:09,471 --> 01:18:15,851
+n eşit sıfırdan sonsuza eksi 1 üzeri n işareti koydum.
+
+600
+01:18:17,112 --> 01:18:18,971
+İntegralini alacağım terim nedir?
+
+601
+01:18:19,072 --> 01:18:19,811
+x üzeri n.
+
+602
+01:18:19,891 --> 01:18:21,891
+x üzeri n'in integrali de ne olur?
+
+603
+01:18:22,051 --> 01:18:26,751
+x üzeri n artı bir bölü n artı bir olur.
+
+604
+01:18:26,751 --> 01:18:36,891
+Dolayısıyla elen 1 artı x'in kuvvet serisi temsili neye eşitmiş?
+
+605
+01:18:36,891 --> 01:18:38,671
+eksi 1 üzeri n.
+
+606
+01:18:39,152 --> 01:18:42,612
+x üzeri n artı bir bölü n artı bir'e eşitmiş.
+
+607
+01:18:43,451 --> 01:18:49,551
+Burada ben buraya nereden geldim?
+
+608
+01:18:49,671 --> 01:18:50,572
+Şuradan geldim.
+
+609
+01:18:50,891 --> 01:18:52,612
+Bu seri için neyi yazıyorduk?
+
+610
+01:18:52,731 --> 01:18:55,011
+Mutlak değer x küçük 1 yazıyorduk.
+
+611
+01:18:55,011 --> 01:19:00,391
+Burada da mutlak değer x küçük 1'dir.
+
+612
+01:19:00,572 --> 01:19:05,591
+Ancak aralığın uç noktalarında burada bir şey olacak.
+
+613
+01:19:06,011 --> 01:19:08,391
+Uç noktalarda seriyi incelersek
+
+614
+01:19:08,391 --> 01:19:15,351
+eksi 1 artı bir oluyor değil mi?
+
+615
+01:19:15,751 --> 01:19:18,751
+Uç noktalarda seriyi incelersek ne olacak?
+
+616
+01:19:18,751 --> 01:19:20,751
+Elan...
+
+617
+01:19:20,751 --> 01:19:36,751
+...
+
+618
+01:19:24,884 --> 01:19:35,323
+Elen bir seriyi inceleyeceğim. Eleni yazmama gerekiyor. Şu seri neydi? Önce x eşit artı bir için yapalım.
+
+619
+01:19:38,996 --> 01:19:54,256
+x eşit 1 için yaparsak, n eşit 0'dan sonsuza, eksi 1 üzeri n, x yerine 1 yazdığımda burası 1 üzeri n artı 1 oldu. Yani bölüm n artı 1.
+
+620
+01:19:55,596 --> 01:20:00,475
+Şu nedir? Alterne harmonik seri gibi aslında davranacaktır bu.
+
+621
+01:20:06,707 --> 01:20:08,187
+Mutlak yakınsak değil,
+
+622
+01:20:17,140 --> 01:20:28,100
+Serini alırsak, mutlak yakınsak değildir. Çünkü harmonik seri gibi davranıyor. Şöyle diyelim, uzun uzun yapayım ben bunu size.
+
+623
+01:20:30,600 --> 01:20:43,140
+Şu seri. Artık kuvvet serisinden çıktım. Şu seri. Bu seri, şurayı sileyim ben, sonra buna döneceğim.
+
+624
+01:20:43,140 --> 01:20:59,460
+Sıfırdan sonsuza bir bölü, en artı birdir. Bu nedir? Şu biri görmezseniz, bir bölü en serisi harmonik seridir. Zaten nedir? En, en artı birden küçük olduğu için
+
+625
+01:21:05,555 --> 01:21:08,576
+Burada doğrudan karşılaşma yapamıyorum galiba.
+
+626
+01:21:19,539 --> 01:21:27,939
+Neyse, doğrudan karşılaştırma değil de burada 1 bölü n ile limit karşılaştırma yapın isterseniz ya da hiç ona da gerek yok.
+
+627
+01:21:28,340 --> 01:21:35,300
+1 bölü n artı 1 harmonik seri gibi davranır her zaman. Dolayısıyla ıraksayacak bu.
+
+628
+01:21:37,079 --> 01:21:44,460
+Yani mutlak yakınsak değil. Mutlak yakınsak olmaması yakınsak olduğu anlamına gelmez.
+
+629
+01:21:49,587 --> 01:21:57,608
+Çünkü alterni seri. Alterni seri olunca, mutlak yakınsak değilse, alterni seri testini uyguluyorduk.
+
+630
+01:21:58,027 --> 01:22:08,967
+Alterni seri testine göre ne olacak bu? Azalandır. Çünkü 1 bölü n artı 1 küçük 1 bölü endir.
+
+631
+01:22:08,967 --> 01:22:15,108
+Yani an artı 1, an'den nedir? Küçük kalıyor. Azalan.
+
+632
+01:22:15,108 --> 01:22:21,567
+Ve de genel teriminin limiti neye eşit? Sıfıra eşit.
+
+633
+01:22:25,140 --> 01:22:33,980
+Olduğu için, arterne seri testine göre bu seri yakınsaktır. Yakınsak olduğu için, şu seriye ne diyeceğiz? Şartlı yakınsar.
+
+634
+01:22:39,731 --> 01:22:44,792
+Eksi 1 üzeri n bölü, n artı 1 serisi şartlı yakınsak.
+
+635
+01:22:45,572 --> 01:22:49,771
+Şartlı yakınsadığı için artı 1'i dahil edeceğiz.
+
+636
+01:22:54,963 --> 01:23:17,783
+Aralığa. Eksi bir için bakarsanız da, x yerine eksi bir yazdığınızda, şurası da eksi bir üzerine gelecek, en artı bir gelecek. Dolayısıyla bunları topladığınızda, eksi bir üzeri, en artı, pardon, iki en artı bir olduğu için, alternatör seri değildir bu.
+
+637
+01:23:28,115 --> 01:23:32,015
+2L artı 1 daima tek sayı olduğu için bu eksi işaretli.
+
+638
+01:23:34,735 --> 01:23:43,916
+Eksi işareti olan, yani deminki, dedik ki bir bölü L artı 1 serisi ıraksıyordu.
+
+639
+01:23:44,615 --> 01:23:47,435
+Bunun eksi 1 ile çarpılmış halde yine ne olacak?
+
+640
+01:23:47,775 --> 01:23:48,735
+Iraksayacak.
+
+641
+01:23:49,216 --> 01:23:50,435
+Şu seri ıraksar.
+
+642
+01:23:50,435 --> 01:24:00,216
+Iraksadığı için eksi 1 de açık artı 1 de kapalı bir tanım aralığı olacak.
+
+643
+01:24:00,576 --> 01:24:07,235
+Bunun geçerli olduğu aralık eksi 1 açık artı 1 kapalı aralığı olacak.
+
+644
+01:24:10,055 --> 01:24:12,855
+Uç noktalarda yani inceledik.
+
+645
+01:24:31,475 --> 01:24:50,975
+Bir not daha düşmüşüz. Demişiz ki, x eşit 1 için, alterne harmonik serisi, bu seri değil tabii ki, şu seri, alterne harmonik seri, ln 2'ye yakınsıyormuş.
+
+646
+01:24:50,975 --> 01:24:58,195
+x yerine 1 yazdığımda, ln 2 olacak. Burası da ne olacak? Alterne harmonik seri olacak.
+
+647
+01:25:03,315 --> 01:25:07,555
+Ne anladınız mı? Burada uçlarda da inceledik seriyi.
+
+648
+01:25:20,948 --> 01:25:31,588
+Diğerlerinde de uçlarda inceleyebilirsiniz ama uçlarda incelediğinizde bunların yakınsaklık aralığı değişmiyor. Yine eksi bir artı bir açık aralığı oluyordu.
+
+649
+01:25:32,248 --> 01:25:36,387
+Şimdi siliyorum o halde. Sizden ses yok. Anladınız herhalde.
+
+650
+01:26:04,595 --> 01:26:12,155
+Bir başka örneğimiz de şu.
+
+651
+01:26:20,916 --> 01:26:22,556
+Şu birden başlıyormuş.
+
+652
+01:26:24,556 --> 01:26:26,735
+N'in karesi x üzeri n.
+
+653
+01:26:28,076 --> 01:26:31,256
+Kuvvet serisinin toplamını bulunuz, diyor.
+
+654
+01:26:35,188 --> 01:26:47,908
+Bunun toplamını bulunuz. Ve bunu kullanarak diyor, şu serinin de, birden sonsuza,
+
+655
+01:26:53,011 --> 01:26:57,112
+n kare bölü, ne var orada? 2 üzeri n.
+
+656
+01:27:01,203 --> 01:27:03,804
+Bunun yakınsadığı değer, onun toplamını bulun.
+
+657
+01:27:04,563 --> 01:27:08,384
+Kuvvet serisinden yararlanarak da şu serinin toplamını bulacağız.
+
+658
+01:27:10,483 --> 01:27:11,503
+İkisini de bulalım.
+
+659
+01:27:11,943 --> 01:27:13,943
+Öncelikle şunu bulmak zorundayız.
+
+660
+01:27:15,043 --> 01:27:17,804
+Bu serinin toplamını nasıl bulacağız?
+
+661
+01:27:36,404 --> 01:27:44,844
+1 bölü 1 eksi x'in biraz önce karesini aldığımızda ne çıkmıştı?
+
+662
+01:27:47,084 --> 01:27:59,164
+n eşit 1'den sonsuza n çarpı x üzeri n eksi 1 olması lazım değil mi? x üzeri n eksi 1 çıkmıştı.
+
+663
+01:28:12,564 --> 01:28:14,804
+Çünkü biraz önce gösterdik biz bunu.
+
+664
+01:28:17,604 --> 01:28:22,003
+Burada ne yapabiliriz?
+
+665
+01:28:22,003 --> 01:28:26,344
+n kare olacak, şu da x üzeri n olacak.
+
+666
+01:28:26,503 --> 01:28:35,704
+x üzeri n yaparız. İndislerle oynayarak onu yaparız ama n kare olması için bunun bir kez daha
+
+667
+01:28:39,507 --> 01:28:46,887
+Türevini almamız lazım. Ancak bir kez daha türevini almadan önce şunu yapalım.
+
+668
+01:28:48,427 --> 01:28:54,827
+Çünkü n kare, buradan türev alırsam n-1 çarpanı gelecek. n çarpanı gelsin istiyorum.
+
+669
+01:28:54,827 --> 01:29:00,627
+n çarpanının gelmesi için öncelikle iki tarafı da x ile çarpalım.
+
+670
+01:29:00,987 --> 01:29:06,228
+Burada bir tarafa bir işlem yapacaksanız öbür tarafa da aynı işlemi yapmak gerekiyor.
+
+671
+01:29:06,228 --> 01:29:10,667
+Çünkü bunun eşiti bu. Yani serinin toplamı buna eşit.
+
+672
+01:29:11,007 --> 01:29:15,627
+Seriyi x ile çarpacaksam onun toplamını da x ile çarpmalıyım.
+
+673
+01:29:16,028 --> 01:29:18,827
+Her iki tarafı da öncelikle x ile çarpalım.
+
+674
+01:29:22,547 --> 01:29:27,987
+Burası ne oldu? x bölü, 1-x'in karesi oldu.
+
+675
+01:29:31,828 --> 01:29:34,588
+n, x üzeri n oldu burası da.
+
+676
+01:29:35,528 --> 01:29:41,848
+Şimdi, artık bir kez daha türev alırsam, bir kez daha n gelecek, burası n kare olacak.
+
+677
+01:29:42,548 --> 01:29:45,088
+Dolayısıyla, şimdi iki tarafın türevini alıyorum.
+
+678
+01:29:49,235 --> 01:29:52,555
+Türev alırsam, şunun türevinden ne gelecek?
+
+679
+01:29:55,036 --> 01:29:56,815
+Bölüm türevidir, değil mi?
+
+680
+01:29:56,876 --> 01:30:05,536
+X'in türevi 1, 1-X'in parantez karesi eksi, X çarpı, paydanın türevinden ne gelir?
+
+681
+01:30:07,355 --> 01:30:19,055
+2, 2 çarpı 1 eksi X, çarpı parantez içinin türevinden eksi 1 gelecek, şurası artı 1 olacak.
+
+682
+01:30:19,235 --> 01:30:21,395
+Bölüm, bunun da nesi olacak?
+
+683
+01:30:21,595 --> 01:30:28,796
+Kalesi 1 eksi X'in 4. kuvveti, 1 eksi X, bunun kalesi bu gitti, küpü kaldı.
+
+684
+01:30:29,496 --> 01:30:37,315
+Şurayı şimdi parantezi açarak toparlarsak, 2X, X gitti, burada 1 artı X kaldı.
+
+685
+01:30:41,747 --> 01:30:47,927
+1 artı x bölü, 1 eksi x'in küpü oldu.
+
+686
+01:30:58,420 --> 01:31:09,340
+Yazalım şimdi 1 artı x bölü 1 eksi x'in küpü. Neye eşit olacak? Şunun türevini aldığımda
+
+687
+01:31:22,612 --> 01:31:31,931
+Bunu 2 yapmama gerek yok. 1. n kare x üzeri n eksi 1 oldu.
+
+688
+01:31:35,051 --> 01:31:41,072
+Şey yapmadım, bunu bir üstten başlatmadım. Neden? Çünkü 1 için bu değer 0 olmuyor.
+
+689
+01:31:41,931 --> 01:31:47,591
+1 yazdım da burası 1. x'in sıfırıncı kuvveti 1. Dolayısıyla 1 gelecek.
+
+690
+01:31:47,591 --> 01:31:54,672
+Türevini aldık. Bu çıktı. Bizden ne soruyor? x üzeri n soruluyor.
+
+691
+01:31:54,992 --> 01:32:04,952
+O halde şurası x üzeri n eksi 1 ya, bunu tekrar x üzeri n yapmak için iki tarafı x ile yine çarpalım.
+
+692
+01:32:10,579 --> 01:32:12,340
+Tekrar x ile çarpıyorum.
+
+693
+01:32:13,159 --> 01:32:15,779
+x çarpı, şöyle diyeyim.
+
+694
+01:32:19,636 --> 01:32:25,656
+x çarpı 1 artı x bölü, 1 eksi, eksi, küpü.
+
+695
+01:32:33,619 --> 01:32:58,239
+Oldu. İşte, n kare çarpı x üzeri n kuvvet serisinin toplamı, neye eşitmiş? x çarpı 1 artı x bölü 1 eksi x'in küpüne eşitmiş. Bunun yakınsadığı fonksiyonu bulduk. Şimdi de diyor ki, bundan yararlanarak şunun toplamını bulun. Onun için ben şu yukarayı sileceğim.
+
+696
+01:33:03,155 --> 01:33:04,996
+Şunlara ihtiyacım yok.
+
+697
+01:33:05,536 --> 01:33:07,876
+Toplamını bulmam gereken şey neymiş?
+
+698
+01:33:08,336 --> 01:33:13,735
+Birden sonsuza n kare bölü 2 üzeri n.
+
+699
+01:33:16,015 --> 01:33:19,195
+Peki bununla arasında ne gibi bir ilişki var?
+
+700
+01:33:19,815 --> 01:33:21,756
+n kare, n kare.
+
+701
+01:33:23,336 --> 01:33:24,895
+x üzeri n.
+
+702
+01:33:25,536 --> 01:33:28,076
+Burada ne var? 1 bölü 2 üzeri n.
+
+703
+01:33:28,076 --> 01:33:35,435
+Demek ki şu toplamda x yerine 1 bölü 2 yazarsak ne çıkıyor?
+
+704
+01:33:36,115 --> 01:33:41,076
+Bu toplamda x yerine 1 bölü 2 yazarsak şu çıkıyor.
+
+705
+01:33:42,635 --> 01:33:45,456
+Ben şöyle söyleyeyim o zaman bunu.
+
+706
+01:33:46,395 --> 01:33:48,515
+n kare, x üzeri n.
+
+707
+01:33:48,935 --> 01:33:49,935
+Bu neye eşit?
+
+708
+01:33:49,935 --> 01:33:56,355
+x çarpı 1 artı x bölü 1 eksi x'in küpüne eşit.
+
+709
+01:33:56,355 --> 01:34:00,855
+Burada x yerine 1 bölü 2 yazarsak.
+
+710
+01:34:11,796 --> 01:34:18,896
+Ne olacak? Şu seri, n eşit birden sonsuza, x yerine 1 bölü 2 yazdım.
+
+711
+01:34:19,396 --> 01:34:22,036
+n kade bölü, 2 üzeri n oldu.
+
+712
+01:34:22,636 --> 01:34:24,655
+Bu serinin toplamı da ne eşit olacak?
+
+713
+01:34:24,655 --> 01:34:26,896
+x yerine yazın 1 bölü 2'ye.
+
+714
+01:34:27,856 --> 01:34:34,655
+1 artı 1 bölü 2, 1 eksi 1 bölü 2, bunun küpü.
+
+715
+01:34:36,096 --> 01:34:38,195
+Şimdi bunu hesaplayın.
+
+716
+01:34:38,195 --> 01:34:45,655
+2 3 bölü 2, 3 bölü 4 oldu burası değil mi?
+
+717
+01:34:45,735 --> 01:34:51,896
+Burası da 1 bölü 2'nin küpü, yani 1 bölü 8 oldu.
+
+718
+01:34:52,816 --> 01:34:55,676
+4, 2, sonuç ne çıktı?
+
+719
+01:34:56,256 --> 01:34:56,976
+6 çıktı.
+
+720
+01:35:02,068 --> 01:35:02,868
+Anlaşıldı mı?
+
+721
+01:35:07,155 --> 01:35:15,055
+Kuvvet serisinden yararlanarak bir serinin toplamını bulurken, orada x yerine bir değer bu seriyi verecek.
+
+722
+01:35:15,996 --> 01:35:22,836
+Değer hangisiyse x yerine onu yazarak serinin toplamını bu şekilde bulabilirsiniz.
+
+723
+01:35:28,404 --> 01:35:34,624
+Burada son bir örneğim var. Bunu da yapalım. Bunlarla ilgili sorunuz var mı?
+
+724
+01:35:42,676 --> 01:35:48,776
+Sanırım yok. 10 dakika zamanımız var. 10 dakikada da şu diğer örneği yapalım.
+
+725
+01:35:51,376 --> 01:35:57,756
+Hemen hemen kuvvet serisinin sorulabilecek bütün tiplerine örnek vermiş oluyoruz bununla.
+
+726
+01:36:05,171 --> 01:36:07,171
+Örde daha iyi yazan bir kalem alayım.
+
+727
+01:36:17,908 --> 01:36:25,768
+2 artı x için x eksi bilim kuvvetlerine göre bir seri temsili bulunuz.
+
+728
+01:36:43,988 --> 01:36:45,948
+Yakınsaklık aralığını da sormuştum.
+
+729
+01:36:50,260 --> 01:37:06,920
+x-1'in kuvvetlerine göre bir seri temsili bulmam istendiği için, öncelikle çözümü yaparken, çözüm diyelim şuraya, t yerine x-1 yazalım.
+
+730
+01:37:07,640 --> 01:37:16,840
+t yerine x-1 yazarsak, buradan x'i çekin, x neye eşit olacak? t artı 1'e eşit olacak.
+
+731
+01:37:16,840 --> 01:37:26,140
+O halde şu f fonksiyonunda, x yerine 1 artı t yazarak, bunu yeniden düzenleyelim.
+
+732
+01:37:28,520 --> 01:37:32,020
+Yani x yerine t artı 1 dönüşümü yapmış oluyoruz.
+
+733
+01:37:38,260 --> 01:37:50,500
+Bir bölü ne olacak? X yerine t artı bir yazarsak, bir bölü iki artı x fonksiyonu neye eşit olacak? 3 artı t'ye eşit olacak.
+
+734
+01:37:57,587 --> 01:38:03,087
+3 artı T'nin kuvvet serisi temsilini yazmam gerekecek.
+
+735
+01:38:03,807 --> 01:38:19,268
+Demiştim ki dersin başında bir fonksiyonun kuvvet serisi eğer soruluyorsa nasıl bir geometrik seriden yararlanıp bu toplamı yazabilirim?
+
+736
+01:38:19,268 --> 01:38:20,547
+Yani şunu düşüneceğim.
+
+737
+01:38:21,047 --> 01:38:26,947
+Şu toplam hangi geometrik serinin toplamı olabilir diye düşüneceğim.
+
+738
+01:38:27,587 --> 01:38:36,967
+Dolayısıyla bunu geometrik seri toplamı olabilmesi için A bölü 1-R şeklinde bir ifadeye benzetmem gerekecek.
+
+739
+01:38:37,747 --> 01:38:39,287
+Bunu yapabilmek için
+
+740
+01:38:44,884 --> 01:38:47,444
+Paydayı 3 parantezine alalım.
+
+741
+01:38:56,467 --> 01:39:12,648
+Şimdi oldu. A'yı 1 bölü 3 olarak göz önüne alırsak, R'yi de ne alacağım? Eksi t bölü 3 olarak göz önüne alırım. Böyle bir geometrik serinin toplamı gerçekten buna eşit olur.
+
+742
+01:39:26,836 --> 01:39:30,436
+Şunu parantezde yazmama gerek yok ki. Şöyle yazalım.
+
+743
+01:39:38,228 --> 01:39:41,007
+Oldu mu? Bakın, tam bir geometrik seri toplamı.
+
+744
+01:39:41,108 --> 01:39:45,288
+Dolayısıyla, bu geometrik seriyi nasıl ifade ederiz?
+
+745
+01:39:46,648 --> 01:39:50,207
+n, birden veya sıfırdan başlatacağım.
+
+746
+01:39:50,528 --> 01:39:53,328
+Hangisini yapmışız buradan? Sıfırdan başlatmışız.
+
+747
+01:39:53,707 --> 01:39:59,288
+Sıfırdan sonsuza, sıfırdan başlatınca a çarpı r üzeri n olması gerekiyor.
+
+748
+01:39:59,288 --> 01:40:08,887
+a neydi? 1 bölü 3, r eksi t bölü 3, üzeri n olacak.
+
+749
+01:40:12,532 --> 01:40:19,391
+Yazdıktan sonra ne yapacağım? T yerine ama önce biraz daha düzenleyelim bunu.
+
+750
+01:40:26,868 --> 01:40:40,228
+Yani şu t üzeri n, hatta şöyle olacak, eksi 1 üzeri n, t üzeri n, bölü, 3 üzeri n artı 1 olacak değil mi?
+
+751
+01:40:42,088 --> 01:40:54,948
+Bunu da, x eksi 1'in kuvvetlerinde demişti ya, biz de t'yi x eksi 1 yazıp, buradan t'ye geçmiştik.
+
+752
+01:40:54,948 --> 01:40:59,948
+Yani x yerine t artı 1 dönüşümü yaparak, bu ifadeye ulaşmıştık.
+
+753
+01:41:00,548 --> 01:41:08,048
+O halde burada t yerine x eksi 1 yazarsak, bizden istenen seriyi elde etmiş oluruz.
+
+754
+01:41:08,868 --> 01:41:15,428
+n eşit sıfırdan sonsuza, eksi 1 üzeri n, t yerine de ne yazacağım? x eksi 1.
+
+755
+01:41:17,228 --> 01:41:22,748
+Üzeri n bölü, 3 üzeri n artı, 1 yazdığımda, işte,
+
+756
+01:41:22,748 --> 01:41:31,408
+2 artı 2 artı 2 artı x'in kuvvet serisini bu şekilde elde etmiş oluyorum.
+
+757
+01:41:31,408 --> 01:41:35,968
+Peki, şimdi yakınsaklık aralığını yazmak gerekiyor.
+
+758
+01:41:36,408 --> 01:41:41,288
+Geometrik seriden yararlanarak, biz bunu yazdığımız için,
+
+759
+01:41:42,448 --> 01:41:44,028
+ne olması gerekiyor?
+
+760
+01:41:44,708 --> 01:41:49,388
+Mutlak değer, r'nin birden küçük olması gerekiyor ki yakınsak olsun.
+
+761
+01:41:49,388 --> 01:41:50,968
+r nedir?
+
+762
+01:41:51,128 --> 01:41:52,448
+eksi t bölü 3.
+
+763
+01:41:52,807 --> 01:41:53,748
+t dediğim,
+
+764
+01:41:55,008 --> 01:41:55,608
+eksi,
+
+765
+01:41:57,608 --> 01:41:59,448
+x eksi 1.
+
+766
+01:42:00,448 --> 01:42:02,188
+Şu eksiyi de içeri alıp,
+
+767
+01:42:02,248 --> 01:42:03,428
+1 eksi x diyelim.
+
+768
+01:42:03,988 --> 01:42:05,368
+1 eksi x,
+
+769
+01:42:07,868 --> 01:42:08,388
+küçük,
+
+770
+01:42:09,307 --> 01:42:10,608
+bölü 3'ü de vardı.
+
+771
+01:42:14,868 --> 01:42:30,268
+Küçük 1 dersek, buradan da ne çıkar? Mutlak değer olduğu için 1-x yerine x-1 olarak da bunu yazabilirim. Bir şey değişmez. Küçük 3 olur. Buradan da ne gelecek?
+
+772
+01:42:30,268 --> 01:42:45,408
+eksi 1 artı 1, 3 olur. 4 olur. Burada x kalır. Burada da eksi 3'den 1 çıkarsa eksi 2 kalır değil mi? Eksi 2, 4 aralığında yakın sarmış.
+
+773
+01:42:52,020 --> 01:42:53,000
+Bu anlaşıldı mı?
+
+774
+01:43:14,420 --> 01:43:22,760
+Sizden isteğim bu örnekleri evde bir kere daha tekrar etmeniz, hatta benzer sorular bulup çözmeniz.
+
+775
+01:43:22,760 --> 01:43:33,079
+Ben size geçen senenin sınav sorularından derleyip, Avesis'e yükleyeyim, oradan alın hafta sonu.
+
+776
+01:43:33,480 --> 01:43:39,840
+Bunlara biraz çalışın, çünkü dediğim gibi çok önemli. Sınavda da sürekli karşınıza çıkacak bunlar.
+
+777
+01:43:39,840 --> 01:43:47,640
+Çalışırken anlamadığınız bir şey olursa, isterseniz bana mail ile de yazıp sorabilirsiniz.
+
+778
+01:43:47,819 --> 01:43:52,840
+Size dönerim hemen ya da derste sorabilirsiniz sorularınızı.
+
+779
+01:43:53,520 --> 01:44:01,199
+Bugünlük bu kadar diyelim. Bu haftayı tamamladık. Önümüzdeki hafta görüşmek üzere.
+
+780
+01:44:01,760 --> 01:44:05,680
+Hepiniz iyi bakın kendinize. Hoşçakalın.
+
+781
+01:44:05,680 --> 01:44:11,800
+Bu arada [öğrenci] beni duyuyorsan seçtiğim bu karakteri çok beğendim.
+
+782
+01:44:14,220 --> 01:44:17,619
+Çizgi film karakterlerini çok severim. Anime karakterlerini de.
+
+783
+01:44:20,000 --> 01:44:21,760
+Hepinize iyi haftalar diliyorum.
