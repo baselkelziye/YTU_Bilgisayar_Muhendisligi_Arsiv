@@ -1,6 +1,6 @@
 # İLERİ İNGİLİZCE 2 Ders Kayıtları Altyazıları
 
-Bu klasör, 2020-2021 eğitim öğretim yılı Bahar dönemindeki İLERİ İNGİLİZCE 2 (MDB1032 - 13. şube) ders kayıtlarının altyazılarını içerir.
+Bu klasör, 2020-2021 eğitim öğretim yılı Bahar dönemindeki İLERİ İNGİLİZCE 2 (MDB1032 - 13. şube) ders kayıtlarının altyazılarını içerir. Aynı yılın diğer şube ya da dönem kayıtları bir üst klasördedir (`../`).
 
 * **Dersi Veren Akademisyen:** Bulunamadı
 
