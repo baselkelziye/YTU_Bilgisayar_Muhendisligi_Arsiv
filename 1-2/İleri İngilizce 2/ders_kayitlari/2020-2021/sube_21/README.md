@@ -4,7 +4,7 @@
 
 ### 📋 Genel Bilgiler
 * **Ders:** İLERİ İNGİLİZCE 2 (MDB1032)
-* **Hoca:** Bulunamadı
+* **Hoca:** Ebru Osborne
 * **Dönem:** Bahar
 * **Akademik Yıl:** 2020-2021
 * **Şube:** MDB1032 - 21
