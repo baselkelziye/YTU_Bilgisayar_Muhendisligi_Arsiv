@@ -1,0 +1,8439 @@
+1
+00:00:06,772 --> 00:00:10,092
+Good morning everyone.
+
+2
+00:00:12,411 --> 00:00:21,292
+Okay, so I'm sorry I am a little bit late because I had to make something about the lecturers.
+
+3
+00:00:22,411 --> 00:00:24,932
+Okay.
+
+4
+00:00:40,851 --> 00:01:05,852
+Good morning to everyone. Hello, hello. Good morning. Hi to everyone. Okay, so we can think this is our first lesson. For the first lesson, I will use my lecture notes, which I gave you one or two days ago. You can find on my Avesis page. Okay.
+
+5
+00:01:05,852 --> 00:01:16,792
+Okay, so I will open the lecture notes and I will write on the lecture notes if I have necessary things.
+
+6
+00:01:16,792 --> 00:01:21,671
+One second. Let us find the screen. Okay.
+
+7
+00:01:36,084 --> 00:01:38,884
+Okay, I think it is okay.
+
+8
+00:01:46,195 --> 00:01:51,316
+Böyle mi daha iyi, böyle mi daha iyi arkadaşlar? Sanki böyle biraz daha geniş gösteriyor.
+
+9
+00:01:51,316 --> 00:01:55,316
+I think that's okay.
+
+10
+00:02:02,355 --> 00:02:08,955
+Ben de bu programı yeni kullanıyorum. Çok kullanmamıştım. Bir yandan da sinyal ziklerimizi görmek istiyordum ama...
+
+11
+00:02:25,427 --> 00:02:44,427
+Okay. Now I can see. Okay. So we will start with functions. Actually, you'll see functions in high school, but we have to remember some properties and some different types of functions. Okay. Okay. So what do we know about functions?
+
+12
+00:02:44,427 --> 00:02:55,427
+Okay. So our subject is...
+
+13
+00:03:08,563 --> 00:03:38,563
+FUNCTIONS'e bu konuda FUNCTIONS'e bu konuda FUNCTIONS'e bu konuda FUNCTIONS'e bu konuda FUNCTIONS'e bu konuda FUNCTIONS'e bu konuda FUNCTIONS'e bu konuda FUNCTIONS'e bu konuda FUNCTIONS'e bu konuda FUNCTIONS'e bu konuda FUNCTIONS'e bu konuda FUNCTIONS'e bu konuda FUNCTIONS'e bu konuda FUNCTIONS'e bu konuda FUNCTIONS'e bu konuda FUNCTIONS'e bu konuda FUNCTIONS'e bu konuda FUNCTIONS'e bu konuda FUNCTIONS'e bu konuda FUNCTIONS'e bu konuda FUNCTIONS'e bu konuda FUNCTIONS'e bu konuda FUNC
+
+14
+00:03:38,563 --> 00:04:02,563
+between these two sets like this if we can find a relation for example like this on here okay then this relation is called a function but we have some properties about the functions okay what is that the first important part in D
+
+15
+00:04:10,036 --> 00:04:29,596
+çeş
+
+16
+00:04:18,196 --> 00:04:43,876
+So in D, we can't have any empty points. And in your domain, okay, in your domain, one point can't go two different ways. Okay, it is wrong. So this is our domain. This is your range. Okay, this is your range of L.
+
+17
+00:04:50,932 --> 00:04:52,932
+F'ye dek bir şey.
+
+18
+00:04:52,932 --> 00:05:22,932
+Bu, bu
+
+19
+00:05:22,932 --> 00:05:49,532
+Okay, we know from high school. Okay, this is your domain. This is your range. In here, range is also equals to y but in some cases range if can be subset of y. Okay, this condition is related to covering. Yani örtenlikle alakalı.
+
+20
+00:05:49,532 --> 00:05:57,152
+İlla r, f, y, y, y eşit olması gerekmiyor. Örtende ise ne yapıyor? Y dedi boş fazlalıklar olabiliyor.
+
+21
+00:05:58,972 --> 00:06:12,451
+Okay, now I want to talk about identifying domain and range. I will write here. Okay. Okay, now here let us try to find domain and range of this simple function. Okay.
+
+22
+00:06:12,451 --> 00:06:23,692
+Okay, so let us look at this function. This function is very easy. I want to show in the graph also.
+
+23
+00:06:25,052 --> 00:06:34,292
+This is your axis and y equals x squared is a curve. Okay.
+
+24
+00:06:34,292 --> 00:06:49,152
+So, what can we say about domain? Our function is y. Okay. So, your domain consists of x terms and you can see that x can be any number in negative and positive parts.
+
+25
+00:06:49,532 --> 00:06:57,052
+So, your domain for this function, it will be real number. You can write everything for x. But, what about range?
+
+26
+00:06:57,052 --> 00:07:10,652
+You can see that we don't have any point in y-axis for negative parts. Only I can take this part for y-axis. This is your range. And our range will be from 0 to infinity.
+
+27
+00:07:11,652 --> 00:07:17,792
+Infinite part will be always open. But, what about 0? Can we take 0 as our range?
+
+28
+00:07:17,792 --> 00:07:23,352
+Can we find 0 in the function? Yes. Yes. Yes, we can.
+
+29
+00:07:23,352 --> 00:07:35,492
+If x is 0, then we can find 0. So, in the 0, the interval will be closed. So, this is our domain. This is our range. It is a very easy example.
+
+30
+00:07:36,392 --> 00:07:46,692
+Okay. But, in the later we will see more complex functions and we will try to find domain. Okay. What about this? Let us look at the graph. I want to show in the graph. Okay.
+
+31
+00:07:46,692 --> 00:07:53,032
+Y equals 1 over x. The shape of this function is this. It is a curve here.
+
+32
+00:07:54,432 --> 00:08:03,451
+For positive. But, we don't touch. Okay. And, in here we have 4 negative parts. This is the graph of this function.
+
+33
+00:08:04,391 --> 00:08:13,752
+So, what can we say about domain and range? You can see that actually this is 1 over x. I can write everything. Only I have problem at 0.
+
+34
+00:08:13,752 --> 00:08:20,752
+So, I can say that for domain I can take every real number but I have to subtract.
+
+35
+00:08:20,752 --> 00:08:21,912
+Yes.
+
+36
+00:08:21,912 --> 00:08:22,912
+Okay.
+
+37
+00:08:22,912 --> 00:08:24,792
+Or,
+
+38
+00:08:24,792 --> 00:08:43,731
+Or, you can write in a different way minus infinity to 0. Okay. Open interval and union 0 to infinity. Okay. These two expressions are the same.
+
+39
+00:08:43,731 --> 00:09:07,491
+Okay.
+
+40
+00:08:45,235 --> 00:08:48,436
+But what about range? What can we say about range?
+
+41
+00:08:48,436 --> 00:08:50,275
+You have to look at 4 y-axis.
+
+42
+00:08:50,755 --> 00:08:53,635
+For negative terms, I can see this part.
+
+43
+00:08:54,336 --> 00:08:58,035
+And for positive parts, I can take this.
+
+44
+00:08:58,216 --> 00:09:01,056
+But only I have problem at 0.
+
+45
+00:09:01,515 --> 00:09:04,155
+So our range also will be the same.
+
+46
+00:09:04,495 --> 00:09:08,836
+Real number and I have to subtract real number to 0.
+
+47
+00:09:09,235 --> 00:09:11,556
+This is our range for this one.
+
+48
+00:09:12,176 --> 00:09:12,415
+Okay.
+
+49
+00:09:13,775 --> 00:09:15,015
+Do you have any questions here?
+
+50
+00:09:15,956 --> 00:09:17,755
+I think it is easy.
+
+51
+00:09:18,956 --> 00:09:19,475
+Okay.
+
+52
+00:09:19,615 --> 00:09:21,895
+So let's look at the other example.
+
+53
+00:09:22,076 --> 00:09:23,395
+Y equals square root x.
+
+54
+00:09:23,596 --> 00:09:25,515
+Actually, when you see this question,
+
+55
+00:09:26,035 --> 00:09:27,675
+if you want to sketch the graph,
+
+56
+00:09:27,775 --> 00:09:29,775
+it can be difficult to see directly.
+
+57
+00:09:29,915 --> 00:09:32,395
+But I want to write another way.
+
+58
+00:09:33,816 --> 00:09:36,255
+If you take square of each part,
+
+59
+00:09:36,375 --> 00:09:37,875
+actually x will be y squared.
+
+60
+00:09:38,816 --> 00:09:40,576
+And you know that it is a circle.
+
+61
+00:09:40,576 --> 00:09:43,696
+It is a curve like this.
+
+62
+00:09:43,696 --> 00:09:48,436
+Here and here.
+
+63
+00:09:49,175 --> 00:09:52,175
+But they didn't give as this.
+
+64
+00:09:52,355 --> 00:09:53,716
+They give this part.
+
+65
+00:09:53,855 --> 00:09:57,596
+Actually, this function have two different branch.
+
+66
+00:09:57,755 --> 00:10:01,535
+But here we'll have one branch.
+
+67
+00:10:01,675 --> 00:10:02,956
+But with which branch?
+
+68
+00:10:02,956 --> 00:10:06,696
+Here I know this squared function can be positive.
+
+69
+00:10:06,696 --> 00:10:10,995
+So I have to take where y is positive in this part.
+
+70
+00:10:11,115 --> 00:10:14,375
+So I have to delete this part.
+
+71
+00:10:14,375 --> 00:10:21,775
+So this is the graph of this function is this.
+
+72
+00:10:22,096 --> 00:10:22,255
+Okay.
+
+73
+00:10:24,096 --> 00:10:27,836
+So this is our graph.
+
+74
+00:10:27,836 --> 00:10:29,995
+So let us write our domain.
+
+75
+00:10:30,415 --> 00:10:35,875
+You can see that I can take any x in here.
+
+76
+00:10:36,096 --> 00:10:38,596
+So I can write from 0 to infinity.
+
+77
+00:10:39,336 --> 00:10:41,556
+Infinity part will be always open.
+
+78
+00:10:41,676 --> 00:10:42,615
+But what about 0?
+
+79
+00:10:42,735 --> 00:10:43,775
+Can we find 0?
+
+80
+00:10:44,275 --> 00:10:46,196
+When I write x is 0,
+
+81
+00:10:46,196 --> 00:10:48,255
+I can find y is 0.
+
+82
+00:10:48,696 --> 00:10:51,176
+So here it will be closed in turbo.
+
+83
+00:10:52,176 --> 00:10:52,556
+Okay.
+
+84
+00:10:52,635 --> 00:10:53,836
+What about range?
+
+85
+00:10:54,415 --> 00:10:56,615
+You can see that range is here.
+
+86
+00:10:57,615 --> 00:10:59,216
+It will be positive.
+
+87
+00:10:59,536 --> 00:11:01,995
+And also it can be 0.
+
+88
+00:11:02,796 --> 00:11:03,355
+Yes.
+
+89
+00:11:05,936 --> 00:11:06,995
+Do you have any questions?
+
+90
+00:11:08,355 --> 00:11:09,796
+No.
+
+91
+00:11:12,403 --> 00:11:29,903
+Okay, if you don't have any question. Okay, so what about this square root function? Let me write one thing here. Before that, I want to write in a place. Okay, let us write here.
+
+92
+00:11:29,903 --> 00:11:47,244
+First, I want to talk about square root function. Okay, actually we have two different square root function. We can see u is a function of x. Okay, and here is a number n. In here we have two conditions. What happens if n is even?
+
+93
+00:11:48,903 --> 00:11:54,923
+What can we say about our domain? And what is, what happens if n is odd?
+
+94
+00:11:54,923 --> 00:12:06,024
+Also, on my basis page, I gave you some mathematic terms in Turkish. Okay, you can look at my basis page and I write the important
+
+95
+00:12:06,024 --> 00:12:21,024
+Mathematic terms and in Turkish meanings and you can look at, okay. Even means, shift, odd means take. Okay, so if n is even inside of the square root function has to be greater or equal to zero.
+
+96
+00:12:21,024 --> 00:12:28,024
+If n is even if n is even if n is even if n is even if n is even if n is even if n is even if n is odd your domain will be real number because you can find everything. For example,
+
+97
+00:12:28,024 --> 00:12:42,024
+minus 1 in the cube root the result will be negative so you can find negative parts. But in here if it is even for example to only a
+
+98
+00:12:42,024 --> 00:12:44,024
+sorry
+
+99
+00:12:49,460 --> 00:12:57,780
+For example, here if it is x for domain our condition will be x has to be greater or equal to
+
+100
+00:12:57,780 --> 00:13:03,460
+0. But if it is in your denominator, denominator means payda,
+
+101
+00:13:04,340 --> 00:13:08,900
+in here for domain x has to be greater than zero, it can't be zero.
+
+102
+00:13:08,900 --> 00:13:18,259
+Okay, this is the conditions for root function. If the power of the root is even inside of the
+
+103
+00:13:18,259 --> 00:13:24,900
+function has to be greater or equal to zero. But if it is odd you can write everything. Your domain is
+
+104
+00:13:24,900 --> 00:13:34,019
+real number. Yes, it can be negative. You can write everything. Okay, so if you look at our question
+
+105
+00:13:34,019 --> 00:13:42,340
+here you can see that our root is two. It is even. So our condition for this function 4 minus x has
+
+106
+00:13:42,340 --> 00:13:54,259
+to be greater or equal to zero. So here I can write x is less or equal to 4. So our domain for this function
+
+107
+00:13:54,820 --> 00:14:05,540
+will be minus infinity open interval to 4. From this equality it will be closed interval. This is our domain.
+
+108
+00:14:05,540 --> 00:14:12,660
+Okay, so what is your opinion about range? What can I write here?
+
+109
+00:14:12,660 --> 00:14:19,379
+Dr. We can just put the lowest and the highest terms in the same functions we have the range.
+
+110
+00:14:21,700 --> 00:14:30,180
+But we have to put 4 in the function. It gave us zero. We put the negative infinity. We have infinity.
+
+111
+00:14:30,180 --> 00:14:37,620
+Yes, okay. Okay, let me write one thing. If you can't see the graph of this function, actually it is the same
+
+112
+00:14:37,620 --> 00:14:45,060
+like the previous example. If you take square x squared plus y squared equals 4. Actually it is a circle.
+
+113
+00:14:45,700 --> 00:14:54,340
+But in this circle y has to be positive. So this is the graph of this function. Okay,
+
+114
+00:14:54,340 --> 00:15:03,220
+we will take one branch. So if you look at here, it is 2. It is minus 2.
+
+115
+00:15:07,460 --> 00:15:08,980
+Okay, so
+
+116
+00:15:11,460 --> 00:15:13,460
+where did the x squared came from?
+
+117
+00:15:13,460 --> 00:15:19,220
+I'm sorry. I'm sorry. I'm sorry. It is different. Sorry, sorry. I wrong here.
+
+118
+00:15:21,860 --> 00:15:28,100
+It is wrong. Sorry, sorry, sorry, sorry, sorry. It will be like this. One second.
+
+119
+00:15:29,700 --> 00:15:35,540
+If you take square x will be 4 minus y squared. Okay, sorry.
+
+120
+00:15:35,540 --> 00:15:47,700
+Okay, sorry. X is 4 minus y squared. It is a curve. Okay, normally if x equals minus y squared,
+
+121
+00:15:47,700 --> 00:16:01,940
+it will be like this. Okay, but the starting point is 4 here. Okay, so it will be here.
+
+122
+00:16:01,940 --> 00:16:14,660
+Okay, this is the shape of this function. But here they give y is positive here. So we will cancel this part. Okay, so our
+
+123
+00:16:16,100 --> 00:16:23,220
+graph is this. So you can see your domain will be minus infinity to 4. But what about range?
+
+124
+00:16:23,220 --> 00:16:27,379
+is this. So you can see your domain will be minus infinity to 4. But here we go.
+
+125
+00:16:27,379 --> 00:16:35,379
+So you can see your domain will be minus infinity to 5. So you can see your domain will be minus infinity to 5.
+
+126
+00:16:27,059 --> 00:16:29,459
+Zero from zero to infinity.
+
+127
+00:16:29,839 --> 00:16:34,500
+Zero to infinity.
+
+128
+00:16:36,179 --> 00:16:38,279
+Okay, infinity will be closed.
+
+129
+00:16:38,379 --> 00:16:39,359
+But what about zero?
+
+130
+00:16:39,479 --> 00:16:40,339
+Can we find zero?
+
+131
+00:16:40,459 --> 00:16:42,079
+If I write four, yes, I can.
+
+132
+00:16:42,159 --> 00:16:42,759
+Yes, of course.
+
+133
+00:16:43,579 --> 00:16:44,939
+It is zero to infinity.
+
+134
+00:16:45,339 --> 00:16:46,399
+This is our rate.
+
+135
+00:16:47,059 --> 00:16:51,579
+In square root functions, you will find...
+
+136
+00:16:51,579 --> 00:16:52,439
+Let me show.
+
+137
+00:16:57,059 --> 00:17:04,200
+Okay, so in square root functions, it will be always positive.
+
+138
+00:17:04,440 --> 00:17:11,720
+Okay, because if the degree is an even function, even number, so it will be positive.
+
+139
+00:17:12,399 --> 00:17:16,879
+Okay, this is our last example for easy questions.
+
+140
+00:17:17,159 --> 00:17:21,539
+Okay, so the power of this function is to, it is even.
+
+141
+00:17:21,539 --> 00:17:28,839
+I know that one minus x squared has to be greater or equal to zero.
+
+142
+00:17:29,919 --> 00:17:31,799
+Here, you can write directly.
+
+143
+00:17:31,940 --> 00:17:35,480
+But if you can't see directly, you can make a sign table.
+
+144
+00:17:35,819 --> 00:17:39,960
+Okay, according to your knowledge from high school.
+
+145
+00:17:40,179 --> 00:17:41,899
+Okay, but I want to write in detail.
+
+146
+00:17:41,899 --> 00:17:49,099
+So the components of 1 minus x squared is 1 minus x, 1 plus x.
+
+147
+00:17:51,980 --> 00:17:54,279
+And I have 1 minus x squared.
+
+148
+00:17:55,200 --> 00:17:59,059
+If you can see, you don't need to make a sign table, but I want to show.
+
+149
+00:18:00,039 --> 00:18:00,259
+Okay.
+
+150
+00:18:01,559 --> 00:18:04,679
+For the roots, I have minus 1 and 1 here.
+
+151
+00:18:04,679 --> 00:18:10,299
+1 until 1, it will be positive, negative.
+
+152
+00:18:10,759 --> 00:18:14,399
+For here, it is minus 1, negative, positive.
+
+153
+00:18:14,759 --> 00:18:17,819
+And the product will be negative, positive, negative.
+
+154
+00:18:18,460 --> 00:18:24,259
+And here they are asking at which x numbers it is positive or 0 here.
+
+155
+00:18:24,259 --> 00:18:33,039
+So for these functions, our domain will be minus 1 to 1.
+
+156
+00:18:34,460 --> 00:18:37,779
+But what about the end points you have to look at?
+
+157
+00:18:38,619 --> 00:18:39,480
+One second.
+
+158
+00:18:41,379 --> 00:18:41,980
+Here.
+
+159
+00:18:42,619 --> 00:18:42,920
+Okay.
+
+160
+00:18:43,519 --> 00:18:46,759
+If you have equality, then it will be closed interval.
+
+161
+00:18:46,879 --> 00:18:50,240
+But if you don't have inequality, you will write open interval.
+
+162
+00:18:50,240 --> 00:18:57,559
+And our range will be, we have a squalidage function and it will be 0 to 2.
+
+163
+00:18:58,139 --> 00:18:59,480
+0 to 2.
+
+164
+00:18:59,839 --> 00:19:00,139
+Yes.
+
+165
+00:19:00,779 --> 00:19:01,879
+It is open.
+
+166
+00:19:02,299 --> 00:19:03,559
+Here is closed.
+
+167
+00:19:04,319 --> 00:19:07,460
+Until 2, I don't think it's infinity.
+
+168
+00:19:09,139 --> 00:19:10,460
+Yeah, it's maximum 0 to 2.
+
+169
+00:19:11,679 --> 00:19:12,500
+0 to 2.
+
+170
+00:19:12,500 --> 00:19:13,399
+It should be 0 to 2.
+
+171
+00:19:13,399 --> 00:19:13,759
+One second.
+
+172
+00:19:13,980 --> 00:19:14,539
+Okay, okay.
+
+173
+00:19:14,539 --> 00:19:14,599
+Okay.
+
+174
+00:19:14,899 --> 00:19:19,480
+Now, this is the previous part I mentioned here.
+
+175
+00:19:20,240 --> 00:19:23,559
+It is y squared plus x squared equals 1.
+
+176
+00:19:24,000 --> 00:19:25,220
+Demi yaptım oydun.
+
+177
+00:19:26,119 --> 00:19:29,679
+So, the graph of this function will be here.
+
+178
+00:19:30,460 --> 00:19:31,659
+So, one second.
+
+179
+00:19:32,099 --> 00:19:32,519
+Yes.
+
+180
+00:19:32,819 --> 00:19:34,859
+This part will be here.
+
+181
+00:19:35,819 --> 00:19:36,240
+Sorry.
+
+182
+00:19:36,759 --> 00:19:38,659
+So, what can we say about our range?
+
+183
+00:19:38,720 --> 00:19:41,619
+Our range is this from 0 to 1.
+
+184
+00:19:41,619 --> 00:19:43,259
+1.
+
+185
+00:19:43,259 --> 00:19:43,819
+Yes.
+
+186
+00:19:44,839 --> 00:19:46,220
+Okay.
+
+187
+00:19:46,799 --> 00:19:49,619
+So, your function is 1 over...
+
+188
+00:19:50,700 --> 00:19:51,559
+Do you have any question?
+
+189
+00:19:52,359 --> 00:19:55,079
+Can you repeat how did you find the domain?
+
+190
+00:19:57,599 --> 00:19:58,240
+Domain?
+
+191
+00:19:58,339 --> 00:19:58,899
+Okay.
+
+192
+00:19:59,639 --> 00:20:03,000
+Firstly, we have a squalidage function and the power is 2.
+
+193
+00:20:03,099 --> 00:20:03,619
+It is even.
+
+194
+00:20:03,619 --> 00:20:08,359
+So, inside of squalidage function has to be positive or 0.
+
+195
+00:20:08,500 --> 00:20:08,759
+Okay.
+
+196
+00:20:09,779 --> 00:20:11,539
+This is our condition for domain.
+
+197
+00:20:11,659 --> 00:20:12,940
+I made a sign table.
+
+198
+00:20:13,399 --> 00:20:17,740
+And according to our sign table, I have to take the positive or 0 part.
+
+199
+00:20:17,859 --> 00:20:18,740
+And it is here.
+
+200
+00:20:21,379 --> 00:20:21,879
+Okay.
+
+201
+00:20:19,104 --> 00:20:23,024
+So our domain will be the interval from minus 1 to 1.
+
+202
+00:20:23,384 --> 00:20:25,223
+From here we have equalities.
+
+203
+00:20:25,364 --> 00:20:27,304
+So the interval will be closed.
+
+204
+00:20:28,044 --> 00:20:30,804
+About the range, if you look at your function,
+
+205
+00:20:31,884 --> 00:20:35,004
+it will be positive.
+
+206
+00:20:35,284 --> 00:20:36,784
+So I have to start from 0.
+
+207
+00:20:36,784 --> 00:20:39,183
+But it can't be from infinity
+
+208
+00:20:39,183 --> 00:20:42,463
+because when I write minus 1 here,
+
+209
+00:20:42,744 --> 00:20:43,784
+I will find 0.
+
+210
+00:20:43,903 --> 00:20:45,544
+But when I write 0,
+
+211
+00:20:46,304 --> 00:20:48,084
+I can find at most 1.
+
+212
+00:20:48,084 --> 00:20:51,223
+Actually, the graph of this function is this.
+
+213
+00:20:51,564 --> 00:20:51,764
+Okay.
+
+214
+00:20:52,124 --> 00:20:53,463
+Normally it is a circle,
+
+215
+00:20:53,644 --> 00:20:55,663
+but I have to take the circle,
+
+216
+00:20:55,784 --> 00:20:57,844
+which the positive part of y,
+
+217
+00:20:58,203 --> 00:21:00,064
+the graph of this function is this.
+
+218
+00:21:00,324 --> 00:21:01,384
+This is minus 1.
+
+219
+00:21:01,524 --> 00:21:03,044
+This is 1.
+
+220
+00:21:03,044 --> 00:21:05,644
+So y is range of your function.
+
+221
+00:21:05,784 --> 00:21:08,443
+And you can see that I can see from 0 to 1
+
+222
+00:21:08,443 --> 00:21:09,884
+and the closed interval.
+
+223
+00:21:10,364 --> 00:21:10,463
+Okay.
+
+224
+00:21:11,324 --> 00:21:13,423
+If your function is this,
+
+225
+00:21:13,544 --> 00:21:16,024
+what can you say about range and domain?
+
+226
+00:21:18,084 --> 00:21:20,703
+The same square root function,
+
+227
+00:21:20,824 --> 00:21:24,344
+but it is in the square root function
+
+228
+00:21:24,344 --> 00:21:25,683
+is in your denominator.
+
+229
+00:21:27,004 --> 00:21:29,124
+The condition will be the same,
+
+230
+00:21:29,403 --> 00:21:31,644
+but you don't have any equality
+
+231
+00:21:31,644 --> 00:21:34,923
+because if the denominator is 0,
+
+232
+00:21:35,264 --> 00:21:36,224
+it will be a problem.
+
+233
+00:21:36,484 --> 00:21:37,744
+So for this function,
+
+234
+00:21:37,923 --> 00:21:39,264
+your domain will be the same,
+
+235
+00:21:39,484 --> 00:21:40,423
+minus 1 to 1,
+
+236
+00:21:40,423 --> 00:21:43,584
+but it will be open interval
+
+237
+00:21:43,584 --> 00:21:45,324
+because at the end points,
+
+238
+00:21:45,443 --> 00:21:46,663
+your function may be 0.
+
+239
+00:21:46,963 --> 00:21:48,364
+What about range?
+
+240
+00:21:48,443 --> 00:21:49,884
+Range will be the same also,
+
+241
+00:21:50,044 --> 00:21:50,683
+0 to 1,
+
+242
+00:21:50,884 --> 00:21:54,084
+but it will be open interval.
+
+243
+00:21:54,544 --> 00:21:56,624
+Okay.
+
+244
+00:21:56,663 --> 00:21:58,084
+Do you have any question until here?
+
+245
+00:21:58,084 --> 00:21:58,663
+Okay.
+
+246
+00:21:58,663 --> 00:21:59,163
+Do you have any question?
+
+247
+00:21:59,163 --> 00:21:59,183
+Okay.
+
+248
+00:21:59,183 --> 00:22:24,163
+Do you have any question?
+
+249
+00:22:04,403 --> 00:22:05,403
+Evet.
+
+250
+00:22:05,403 --> 00:22:06,403
+Tamam.
+
+251
+00:22:06,403 --> 00:22:08,403
+Eğer bir soru var,
+
+252
+00:22:08,403 --> 00:22:10,403
+bir soru var.
+
+253
+00:22:10,403 --> 00:22:11,403
+Şimdi,
+
+254
+00:22:11,403 --> 00:22:14,403
+bu soru var.
+
+255
+00:22:14,403 --> 00:22:24,403
+Bir soru var.
+
+256
+00:22:24,403 --> 00:22:28,403
+Bu soru var.
+
+257
+00:22:28,403 --> 00:25:59,403
+Bir soru var.
+
+258
+00:25:57,236 --> 00:25:59,516
+Here are some other power functions.
+
+259
+00:25:59,696 --> 00:26:02,396
+Here the power is not integer.
+
+260
+00:26:02,396 --> 00:26:04,196
+It is here for example.
+
+261
+00:26:04,496 --> 00:26:07,536
+It is the power is 1 over 2.
+
+262
+00:26:08,716 --> 00:26:10,156
+This is 1 over 2.
+
+263
+00:26:11,836 --> 00:26:12,136
+Okay.
+
+264
+00:26:13,556 --> 00:26:15,516
+Here 3 over 2 or 2 over 3.
+
+265
+00:26:15,596 --> 00:26:18,336
+But you don't need to know the graph of these functions.
+
+266
+00:26:18,456 --> 00:26:19,496
+Only they are examples.
+
+267
+00:26:19,896 --> 00:26:20,016
+Okay.
+
+268
+00:26:21,176 --> 00:26:24,016
+Now we know polynomials.
+
+269
+00:26:24,216 --> 00:26:25,355
+What is polynomials?
+
+270
+00:26:25,355 --> 00:26:27,836
+You have to be careful about the polynomials.
+
+271
+00:26:28,036 --> 00:26:28,916
+About one thing.
+
+272
+00:26:29,696 --> 00:26:30,276
+Polynomials.
+
+273
+00:26:30,276 --> 00:26:32,556
+If you have some power functions.
+
+274
+00:26:32,896 --> 00:26:35,076
+But the important part.
+
+275
+00:26:35,436 --> 00:26:36,776
+And has to be.
+
+276
+00:26:38,516 --> 00:26:39,356
+Integer.
+
+277
+00:26:39,496 --> 00:26:41,156
+But it can be also 0.
+
+278
+00:26:41,616 --> 00:26:43,516
+Or positive integer.
+
+279
+00:26:44,156 --> 00:26:46,176
+If you add these two.
+
+280
+00:26:46,716 --> 00:26:49,616
+Power functions with integer power.
+
+281
+00:26:50,016 --> 00:26:52,476
+And here a and a and minus 1.
+
+282
+00:26:52,576 --> 00:26:54,676
+All these terms are constants.
+
+283
+00:26:54,676 --> 00:26:56,656
+And they are real numbers.
+
+284
+00:26:56,976 --> 00:26:57,256
+Okay.
+
+285
+00:26:57,436 --> 00:26:59,076
+This is called polynomials.
+
+286
+00:26:59,556 --> 00:27:03,536
+And polynomials domain will be always real number.
+
+287
+00:27:04,336 --> 00:27:06,676
+And let us write.
+
+288
+00:27:06,856 --> 00:27:08,876
+Polynomials domain is real number.
+
+289
+00:27:09,115 --> 00:27:12,136
+And range is also real number.
+
+290
+00:27:12,136 --> 00:27:16,796
+There are some graphs of the polynomials.
+
+291
+00:27:16,976 --> 00:27:17,936
+But don't look at it.
+
+292
+00:27:18,016 --> 00:27:24,196
+Because in the middle of the semester we will see how can we sketch the graph of polynomials.
+
+293
+00:27:24,376 --> 00:27:24,616
+Okay.
+
+294
+00:27:24,736 --> 00:27:26,316
+But only I give some examples.
+
+295
+00:27:27,256 --> 00:27:28,916
+Bunların çizimlerini zaten göreceğiz.
+
+296
+00:27:29,016 --> 00:27:30,476
+Ana konumlarımızdan bir tanesi.
+
+297
+00:27:31,116 --> 00:27:33,716
+O yüzden şu an sadece bir şekil olarak size verdim.
+
+298
+00:27:33,896 --> 00:27:36,836
+Sadece polinomların nasıl olduğu ile alakalı.
+
+299
+00:27:36,836 --> 00:27:39,596
+Ama bunların grafikleri zaten tamamen ayrı bir konu.
+
+300
+00:27:41,496 --> 00:27:41,976
+Okay.
+
+301
+00:27:44,376 --> 00:27:44,896
+Oh, sorry.
+
+302
+00:27:45,036 --> 00:27:45,576
+I want to.
+
+303
+00:27:47,096 --> 00:27:49,096
+And please don't forget.
+
+304
+00:27:49,216 --> 00:27:50,796
+For example, 1 over x.
+
+305
+00:27:51,036 --> 00:27:51,696
+What is that?
+
+306
+00:27:51,696 --> 00:27:53,696
+It is x to the power minus 1.
+
+307
+00:27:54,396 --> 00:27:56,556
+But it is not a polynomial.
+
+308
+00:27:57,056 --> 00:27:59,536
+Sometimes you are confusing about this.
+
+309
+00:28:00,016 --> 00:28:01,776
+1 over x is not polynomial.
+
+310
+00:28:02,196 --> 00:28:02,296
+Okay.
+
+311
+00:28:03,236 --> 00:28:07,276
+Because the power is not positive or zero integer.
+
+312
+00:28:08,496 --> 00:28:10,776
+The other one is rational function.
+
+313
+00:28:10,896 --> 00:28:12,096
+What is rational function?
+
+314
+00:28:12,236 --> 00:28:13,356
+If you have a division.
+
+315
+00:28:13,656 --> 00:28:14,756
+If you have a ratio.
+
+316
+00:28:14,756 --> 00:28:19,456
+And here px and qx are polynomials.
+
+317
+00:28:19,716 --> 00:28:21,016
+Then this is called.
+
+318
+00:28:22,876 --> 00:28:25,436
+Then it is called rational function.
+
+319
+00:28:26,156 --> 00:28:27,656
+And in rational function.
+
+320
+00:28:27,876 --> 00:28:29,336
+What can we say about domain?
+
+321
+00:28:29,516 --> 00:28:32,436
+Normally px and qx are polynomials.
+
+322
+00:28:32,816 --> 00:28:37,536
+So their range is real number.
+
+323
+00:28:37,536 --> 00:28:40,396
+So for your rational function.
+
+324
+00:28:41,296 --> 00:28:43,216
+Your domain will be real number.
+
+325
+00:28:44,496 --> 00:28:47,476
+But you have to subtract the points or points.
+
+326
+00:28:50,296 --> 00:28:52,076
+What are the points?
+
+327
+00:28:52,316 --> 00:28:57,576
+Where qx is zero.
+
+328
+00:28:58,576 --> 00:29:03,116
+Then this will be your domain.
+
+329
+00:29:03,576 --> 00:29:03,716
+Okay.
+
+330
+00:29:03,716 --> 00:29:08,776
+There are some different rational functions.
+
+331
+00:29:09,256 --> 00:29:10,216
+Graphs here.
+
+332
+00:29:11,256 --> 00:29:11,596
+Okay.
+
+333
+00:29:13,736 --> 00:29:16,036
+We will have some asymptotes.
+
+334
+00:29:16,156 --> 00:29:17,176
+But we will see later.
+
+335
+00:29:17,296 --> 00:29:19,336
+I will explain the meaning of asymptotes.
+
+336
+00:29:20,036 --> 00:29:20,396
+Okay.
+
+337
+00:29:20,656 --> 00:29:25,056
+Actually we have two main groups for functions.
+
+338
+00:29:25,256 --> 00:29:25,635
+Actually.
+
+339
+00:29:26,176 --> 00:29:26,836
+It is.
+
+340
+00:29:27,276 --> 00:29:29,396
+The first one is algebraic function.
+
+341
+00:29:29,716 --> 00:29:31,396
+What is algebraic function?
+
+342
+00:29:31,656 --> 00:29:33,696
+Algebraic function is a function.
+
+343
+00:29:33,716 --> 00:29:35,996
+Construct from polynomials.
+
+344
+00:29:36,236 --> 00:29:37,456
+Using the operations.
+
+345
+00:29:37,616 --> 00:29:38,576
+What are the operations?
+
+346
+00:29:38,836 --> 00:29:40,196
+Addition means plus.
+
+347
+00:29:40,896 --> 00:29:42,256
+Subtraction is minus.
+
+348
+00:29:42,996 --> 00:29:44,496
+Multiplication is product.
+
+349
+00:29:45,096 --> 00:29:46,476
+Division is this.
+
+350
+00:29:47,336 --> 00:29:48,716
+And taking roots.
+
+351
+00:29:48,956 --> 00:29:50,156
+Any of roots here.
+
+352
+00:29:50,156 --> 00:29:51,056
+Okay.
+
+353
+00:29:52,211 --> 00:29:54,711
+Bu algebraik operasyon,
+
+354
+00:29:54,711 --> 00:29:56,511
+you can find a new function.
+
+355
+00:29:56,511 --> 00:29:59,511
+And this new function will be algebraic functions.
+
+356
+00:29:59,511 --> 00:30:01,811
+For example, if you look at the examples,
+
+357
+00:30:01,811 --> 00:30:03,011
+let us look at here.
+
+358
+00:30:03,711 --> 00:30:05,811
+This is an algebraic function.
+
+359
+00:30:05,811 --> 00:30:09,011
+This is polynomial.
+
+360
+00:30:09,011 --> 00:30:12,311
+They take a root of this function
+
+361
+00:30:12,311 --> 00:30:15,311
+and after that they product these two functions.
+
+362
+00:30:15,311 --> 00:30:17,211
+So it is an algebraic function.
+
+363
+00:30:17,211 --> 00:30:20,112
+Here, this is your polynomial.
+
+364
+00:30:20,112 --> 00:30:22,811
+They take the power of these polynomials.
+
+365
+00:30:22,811 --> 00:30:25,211
+So this is an algebraic function.
+
+366
+00:30:25,211 --> 00:30:26,612
+Here also similar.
+
+367
+00:30:26,612 --> 00:30:28,211
+It is algebraic function.
+
+368
+00:30:28,511 --> 00:30:30,412
+We have two main function types.
+
+369
+00:30:30,412 --> 00:30:32,211
+The first one is algebraic.
+
+370
+00:30:36,403 --> 00:30:39,344
+diğer bir şey, bu bir şey, transcendental
+
+371
+00:30:41,763 --> 00:30:45,763
+Can you repeat the last point?
+
+372
+00:30:45,763 --> 00:30:49,364
+Evet, you are asking about algebraic function, I think.
+
+373
+00:30:49,364 --> 00:30:50,144
+Evet.
+
+374
+00:30:50,144 --> 00:30:51,144
+Ok.
+
+375
+00:30:51,144 --> 00:30:54,263
+Öncelikle, polynomials yapabilirsiniz.
+
+376
+00:30:54,263 --> 00:30:57,844
+Ve algebraik operasyon,
+
+377
+00:30:57,844 --> 00:30:59,644
+o algebraik operasyon,
+
+378
+00:30:59,644 --> 00:31:02,503
+addition, multiplication, subtraction,
+
+379
+00:31:02,503 --> 00:31:04,344
+you can take any roots.
+
+380
+00:31:04,344 --> 00:31:07,743
+For example, let me write some examples here.
+
+381
+00:31:07,743 --> 00:31:11,243
+For example, y equals, let us take x squared.
+
+382
+00:31:11,243 --> 00:31:16,243
+This is a polynomial over x minus 1 cubed, for example.
+
+383
+00:31:16,243 --> 00:31:19,243
+This is an algebraic function.
+
+384
+00:31:19,243 --> 00:31:25,243
+Or let us write x minus 1 cubed root.
+
+385
+00:31:26,884 --> 00:31:31,483
+And let us write product x squared plus 1, for example.
+
+386
+00:31:31,483 --> 00:31:33,604
+This is another algebraic function.
+
+387
+00:31:33,604 --> 00:31:34,604
+Ok.
+
+388
+00:31:34,604 --> 00:31:37,003
+If you use algebraic operation,
+
+389
+00:31:37,003 --> 00:31:39,003
+and if you take some polynomials,
+
+390
+00:31:39,003 --> 00:31:42,503
+all these functions are algebraic functions.
+
+391
+00:31:42,503 --> 00:31:43,503
+Ok.
+
+392
+00:31:43,503 --> 00:31:45,503
+We have two main type of functions.
+
+393
+00:31:45,503 --> 00:31:48,003
+They are called algebraic functions.
+
+394
+00:31:48,003 --> 00:31:50,003
+And the other one is transcendental.
+
+395
+00:31:50,003 --> 00:31:52,503
+Let me show here one second.
+
+396
+00:31:52,503 --> 00:31:53,503
+I write here.
+
+397
+00:31:53,503 --> 00:31:54,903
+Ok.
+
+398
+00:31:54,903 --> 00:31:58,903
+The other type is transcendental functions.
+
+399
+00:31:58,903 --> 00:32:00,903
+What is transcendental functions?
+
+400
+00:32:00,903 --> 00:32:03,903
+If your functions are not algebraic,
+
+401
+00:32:03,903 --> 00:32:04,903
+what is that?
+
+402
+00:32:04,903 --> 00:32:06,903
+For example, trigonometric functions.
+
+403
+00:32:06,903 --> 00:32:07,903
+Sine x.
+
+404
+00:32:07,903 --> 00:32:10,903
+You can't find this function using polynomials.
+
+405
+00:32:10,903 --> 00:32:12,903
+Or cosine x.
+
+406
+00:32:12,903 --> 00:32:16,304
+All these trigonometric functions are transcendental functions.
+
+407
+00:32:16,304 --> 00:32:17,304
+Or,
+
+408
+00:32:17,304 --> 00:32:18,304
+Inverse trigonometric,
+
+409
+00:32:18,304 --> 00:32:19,304
+we will see later,
+
+410
+00:32:19,304 --> 00:32:21,304
+but I want to write.
+
+411
+00:32:21,304 --> 00:32:23,304
+Arc means inverse.
+
+412
+00:32:23,304 --> 00:32:23,903
+If you write sine,
+
+413
+00:32:23,903 --> 00:32:27,304
+it is inverse of sine function.
+
+414
+00:32:27,304 --> 00:32:28,304
+Or,
+
+415
+00:32:28,304 --> 00:32:29,304
+Arc
+
+416
+00:32:29,304 --> 00:32:30,304
+Cosine x.
+
+417
+00:32:30,304 --> 00:32:31,304
+It is
+
+418
+00:32:31,304 --> 00:32:33,304
+Inverse of cosine function.
+
+419
+00:32:33,304 --> 00:32:34,304
+All these functions are transcendental.
+
+420
+00:32:34,304 --> 00:32:35,304
+Or,
+
+421
+00:32:35,304 --> 00:32:36,304
+Exponent function.
+
+422
+00:32:36,304 --> 00:32:37,304
+What is that?
+
+423
+00:32:37,304 --> 00:32:38,304
+A to the power x.
+
+424
+00:32:38,304 --> 00:32:39,304
+Or,
+
+425
+00:32:39,304 --> 00:32:40,304
+2 to the power x.
+
+426
+00:32:40,304 --> 00:32:41,304
+This is also transcendental function.
+
+427
+00:32:41,304 --> 00:32:42,304
+What about logarithm function?
+
+428
+00:32:42,304 --> 00:32:43,304
+For example,
+
+429
+00:32:43,304 --> 00:32:44,304
+ln x.
+
+430
+00:32:44,304 --> 00:32:45,304
+Logarithm on the base of 2x.
+
+431
+00:32:45,304 --> 00:32:47,304
+These functions are also algebraic function.
+
+432
+00:32:47,304 --> 00:32:48,304
+And also,
+
+433
+00:32:48,304 --> 00:32:50,304
+we will see last the hyperbolic and trigonometric functions.
+
+434
+00:32:50,304 --> 00:32:51,304
+So,
+
+435
+00:32:51,304 --> 00:32:53,304
+we will see the hyperbolic and trigonometric functions.
+
+436
+00:32:53,304 --> 00:32:54,304
+So,
+
+437
+00:32:54,304 --> 00:32:55,304
+we will see the hyperbolic functions.
+
+438
+00:32:55,304 --> 00:32:56,304
+So,
+
+439
+00:32:56,304 --> 00:32:57,304
+we will see the hyperbolic functions.
+
+440
+00:32:57,304 --> 00:32:58,304
+So,
+
+441
+00:32:58,304 --> 00:32:59,304
+we will see the hyperbolic functions.
+
+442
+00:32:59,304 --> 00:33:00,304
+So,
+
+443
+00:33:00,304 --> 00:33:01,304
+we will see the hyperbolic functions.
+
+444
+00:33:01,304 --> 00:33:02,304
+So,
+
+445
+00:33:02,304 --> 00:33:04,304
+we will see the hyperbolic and inverse hyperbolic.
+
+446
+00:33:04,304 --> 00:33:05,304
+What is that?
+
+447
+00:33:05,304 --> 00:33:06,304
+Sine
+
+448
+00:33:06,304 --> 00:33:09,304
+hyperbolic x.
+
+449
+00:33:09,304 --> 00:33:10,304
+Or,
+
+450
+00:33:10,304 --> 00:33:11,304
+cosine
+
+451
+00:33:11,304 --> 00:33:13,304
+hyperbolic x.
+
+452
+00:33:13,304 --> 00:33:14,304
+Here,
+
+453
+00:33:14,304 --> 00:33:16,304
+h means hyperbolic.
+
+454
+00:33:16,304 --> 00:33:17,304
+Okay?
+
+455
+00:33:17,304 --> 00:33:18,304
+So,
+
+456
+00:33:18,304 --> 00:33:20,304
+we have two main type of functions.
+
+457
+00:33:20,304 --> 00:33:24,304
+If you can find your function using polynomials,
+
+458
+00:33:24,304 --> 00:33:26,304
+it is algebraic function.
+
+459
+00:33:26,304 --> 00:33:27,304
+If it is not,
+
+460
+00:33:27,304 --> 00:33:29,304
+they are called transcendental function.
+
+461
+00:33:29,304 --> 00:33:30,304
+But,
+
+462
+00:33:30,304 --> 00:33:34,304
+you don't need to know so much about transcendental.
+
+463
+00:33:34,304 --> 00:33:36,304
+It is not so important.
+
+464
+00:33:36,304 --> 00:33:37,304
+Okay?
+
+465
+00:33:37,304 --> 00:33:38,304
+But,
+
+466
+00:33:38,304 --> 00:33:42,304
+you have to know that we have two main function types.
+
+467
+00:33:42,304 --> 00:33:43,304
+Okay?
+
+468
+00:33:43,304 --> 00:34:08,304
+Do you have any question?
+
+469
+00:33:51,859 --> 00:33:57,359
+Evet, evet. Evet. Evet, evet. Evet, it is through Dida.
+
+470
+00:34:01,779 --> 00:34:05,759
+ters trigonometrik fonksiyon diye geçiyor. Didem'in yazdığı doğru.
+
+471
+00:34:12,724 --> 00:34:18,724
+Okay, so let us look at the first transcendental function.
+
+472
+00:34:18,724 --> 00:34:22,724
+You know the trigonometric functions,
+
+473
+00:34:22,724 --> 00:34:28,644
+but when I ask this question many of the people make wrong here.
+
+474
+00:34:28,644 --> 00:34:34,644
+When I ask the domain of the sine or cosine they directly say that it is between minus 1 to 1,
+
+475
+00:34:34,644 --> 00:34:35,604
+but it is wrong.
+
+476
+00:34:35,604 --> 00:34:42,884
+Okay, so you can see for sine and cosine they are wave functions.
+
+477
+00:34:42,884 --> 00:34:50,644
+The shape is wave and your domain for cosine and sine your domain will be real number.
+
+478
+00:34:50,644 --> 00:34:58,484
+Okay, you can write everything but for range you can see that it is between minus 1 to 1.
+
+479
+00:34:58,484 --> 00:35:07,364
+So your range will be minus 1 to 1 for sine and cosine function.
+
+480
+00:35:07,364 --> 00:35:10,403
+Domains are the same and range also are the same.
+
+481
+00:35:10,403 --> 00:35:10,724
+Okay.
+
+482
+00:35:13,284 --> 00:35:20,884
+Okay, so we will see later but these functions are also periodic functions.
+
+483
+00:35:20,884 --> 00:35:29,443
+At the periodic interval they will confuse the exact shape.
+
+484
+00:35:29,443 --> 00:35:33,844
+For example, for cosine function the period is 2 pi.
+
+485
+00:35:34,484 --> 00:35:45,764
+You can see that we will take from here, here, here.
+
+486
+00:35:45,764 --> 00:35:50,244
+Okay, after that they will go the same thing.
+
+487
+00:35:50,244 --> 00:35:54,403
+For sine functions our domain is the same, our period is the same.
+
+488
+00:35:54,403 --> 00:36:04,724
+We will take from 0 to here.
+
+489
+00:36:02,612 --> 00:36:08,311
+And if we talk about tangent and cotangent, they are a little bit different. Why?
+
+490
+00:36:08,311 --> 00:36:15,152
+What is tangent x? Tangent x is sine x over cosine x.
+
+491
+00:36:18,452 --> 00:36:25,872
+And it is not rational function, but it is similar to rational function.
+
+492
+00:36:25,872 --> 00:36:30,311
+You can think your domain will be you have to subtract real number.
+
+493
+00:36:30,311 --> 00:36:36,932
+OK, your domain, you will subtract real number to all these points.
+
+494
+00:36:37,211 --> 00:36:41,132
+OK, if I write x here, x is the points.
+
+495
+00:36:41,331 --> 00:36:47,932
+What are they? For example, here where cosine x is zero.
+
+496
+00:36:48,072 --> 00:36:50,172
+The number, the points is this.
+
+497
+00:36:50,592 --> 00:36:54,372
+Where is this? For example, cosine pi over two here.
+
+498
+00:36:54,372 --> 00:36:58,872
+The function has a asymptote. We will see later.
+
+499
+00:36:59,412 --> 00:37:06,592
+For three pi over two, the function can't be at this point here and here.
+
+500
+00:37:07,412 --> 00:37:12,512
+So your graph consists of piecewise functions.
+
+501
+00:37:13,072 --> 00:37:17,172
+So your domain will be real number and you have to subtract these points.
+
+502
+00:37:17,172 --> 00:37:20,771
+But for range, you can see that your range will be real number.
+
+503
+00:37:20,771 --> 00:37:24,532
+But the period for tangent and cotangent are different.
+
+504
+00:37:24,751 --> 00:37:28,811
+You can see that the function shape is the same here.
+
+505
+00:37:29,831 --> 00:37:32,372
+Only for this period.
+
+506
+00:37:32,532 --> 00:37:34,231
+And this period is pi.
+
+507
+00:37:35,692 --> 00:37:37,492
+For tangent function.
+
+508
+00:37:37,672 --> 00:37:39,311
+What about cotangent function?
+
+509
+00:37:39,311 --> 00:37:45,572
+For cotangent function, it is cosine x over sine x.
+
+510
+00:37:48,372 --> 00:37:55,452
+And for domain, I have to write real number minus x.
+
+511
+00:37:55,572 --> 00:37:56,652
+What is x point?
+
+512
+00:37:56,771 --> 00:37:59,052
+X point is this.
+
+513
+00:37:59,052 --> 00:38:01,912
+And our range will be infinity.
+
+514
+00:38:02,751 --> 00:38:04,012
+Sorry, a real number.
+
+515
+00:38:04,472 --> 00:38:07,172
+And you can see that what are the points?
+
+516
+00:38:07,311 --> 00:38:08,372
+Sine x is zero.
+
+517
+00:38:08,452 --> 00:38:09,152
+It is zero.
+
+518
+00:38:10,012 --> 00:38:10,331
+Here.
+
+519
+00:38:11,711 --> 00:38:12,372
+Pi.
+
+520
+00:38:13,231 --> 00:38:14,192
+Two pi.
+
+521
+00:38:14,291 --> 00:38:15,731
+I have to subtract here.
+
+522
+00:38:16,291 --> 00:38:19,012
+And actually, we have one main graph.
+
+523
+00:38:19,271 --> 00:38:22,211
+And all other graphs are the same.
+
+524
+00:38:22,211 --> 00:38:25,092
+So this is our graph.
+
+525
+00:38:25,351 --> 00:38:28,372
+And you can see our period is from zero to pi.
+
+526
+00:38:28,552 --> 00:38:30,331
+So your period will be pi.
+
+527
+00:38:32,592 --> 00:38:32,851
+Okay.
+
+528
+00:38:33,672 --> 00:38:38,692
+And actually, you don't need to know the graph of second and cosecant.
+
+529
+00:38:38,831 --> 00:38:40,972
+But only you have to know what is second.
+
+530
+00:38:41,112 --> 00:38:42,912
+Second is one over cosine x.
+
+531
+00:38:45,112 --> 00:38:48,012
+And cosecant is one over sine x.
+
+532
+00:38:48,012 --> 00:38:50,192
+Bunun sadece grafini bilmenize gerek yok.
+
+533
+00:38:50,872 --> 00:38:52,952
+Sadece bunların ne anlama geldiğini bilmeniz yeter.
+
+534
+00:38:53,851 --> 00:38:54,251
+Okay?
+
+535
+00:38:56,251 --> 00:38:57,192
+Do you have any question?
+
+536
+00:38:58,692 --> 00:38:59,052
+Hey.
+
+537
+00:38:59,592 --> 00:38:59,912
+Yes.
+
+538
+00:39:01,132 --> 00:39:05,012
+When we said the pi over the...
+
+539
+00:39:07,432 --> 00:39:09,932
+Hocam, cotangentta.
+
+540
+00:39:10,512 --> 00:39:12,251
+Evet, sana Sötükçe söyleyebilirsin.
+
+541
+00:39:12,251 --> 00:39:15,092
+Orada dedik ya hani işte burası pi.
+
+542
+00:39:15,872 --> 00:39:17,731
+Uzunluğundan bahsediyoruz değil mi oranın?
+
+543
+00:39:18,012 --> 00:39:18,172
+Tabii.
+
+544
+00:39:18,412 --> 00:39:20,392
+Yani ne kadar da bir devam ediyor.
+
+545
+00:39:20,512 --> 00:39:23,192
+O pi aralığından sonra bakın grafik aynı devam ediyor.
+
+546
+00:39:23,632 --> 00:39:26,771
+Dolayısıyla bunun almamız gereken bir tane aralığı var.
+
+547
+00:39:27,291 --> 00:39:32,132
+Çünkü buradan sonra biz direbirlik ve örtenlik olması gerektiği için hangi şeyde devam ediyor?
+
+548
+00:39:32,432 --> 00:39:34,972
+Bir pi aralığında fonksiyonun grafiği aynı.
+
+549
+00:39:35,472 --> 00:39:37,652
+Sonra onu kopya edip devamını alıyorsunuz.
+
+550
+00:39:37,711 --> 00:39:41,572
+Dolayısıyla bir tam grafiğin olduğu aralık bizim periyodumuz.
+
+551
+00:39:41,572 --> 00:39:41,851
+Bak.
+
+552
+00:39:42,211 --> 00:39:42,731
+Buraya bak.
+
+553
+00:39:43,972 --> 00:39:45,552
+If you look at here,
+
+554
+00:39:45,552 --> 00:39:48,012
+this function,
+
+555
+00:39:48,412 --> 00:39:48,892
+okay,
+
+556
+00:39:49,211 --> 00:39:50,912
+this function is the same.
+
+557
+00:39:50,992 --> 00:39:51,572
+After it,
+
+558
+00:39:51,632 --> 00:39:52,492
+we can use
+
+559
+00:39:52,492 --> 00:39:53,372
+symmetry.
+
+560
+00:39:53,612 --> 00:39:53,831
+Okay.
+
+561
+00:39:53,831 --> 00:39:54,632
+So,
+
+562
+00:39:54,992 --> 00:39:56,632
+what is your period for here?
+
+563
+00:39:56,872 --> 00:39:57,331
+2 pi.
+
+564
+00:39:57,572 --> 00:39:57,811
+Here,
+
+565
+00:39:58,572 --> 00:39:59,532
+the graph for this,
+
+566
+00:39:59,612 --> 00:39:59,932
+it is
+
+567
+00:39:59,932 --> 00:40:00,932
+birçok.
+
+568
+00:40:00,932 --> 00:40:01,432
+Evet.
+
+569
+00:40:01,432 --> 00:40:18,432
+Birçok.
+
+570
+00:40:00,000 --> 00:40:07,199
+2 pi. So period will be 2 pi for sine and cosine for tangent and cotent pi olacak.
+
+571
+00:40:08,000 --> 00:40:16,880
+But let me, hatta şey yazmıştım ama şuraya göstereyim. Okay. Actually I will show later
+
+572
+00:40:16,880 --> 00:40:27,280
+but for example I write periodic here. For example normally for periodic function we know that sine
+
+573
+00:40:27,280 --> 00:40:34,800
+and cosine function are periodic with 2 pi. But what about if it is not x? If it is another
+
+574
+00:40:36,719 --> 00:40:45,199
+term for example if it is sine 2 x you will divide your period with the coefficient of x. It is 2.
+
+575
+00:40:45,920 --> 00:40:56,480
+So your period will be pi. Or if your function is cosine 3 x normally for cosine x your period is 2 pi.
+
+576
+00:40:56,480 --> 00:41:03,280
+You have to divide what is the coefficient of x. It is 3. So your period will be 2 pi over 3. Okay.
+
+577
+00:41:06,480 --> 00:41:12,719
+Yani o period da devam ediyor. Bunlar hep birbirini takip eden simetrik şeyler zaten. Bir tanesini çizdikten
+
+578
+00:41:12,719 --> 00:41:17,440
+sonra diğerini çizmeye gerek yok. Periodik olan fonksiyonlar zaten aynı şekilde devam ediyor.
+
+579
+00:41:17,440 --> 00:41:24,639
+Burada bilmemiz gereken. Domain ve range bir şey değil. Domain ve range'ler in here you have to know
+
+580
+00:41:24,639 --> 00:41:33,039
+what is domain especially for sine and cosine. What is domain and range? What is period? For tangent and
+
+581
+00:41:33,039 --> 00:41:41,440
+cotentian function your domain and range. For second and cosecant what is the other formula? It is 1 over cosine and 1 over sine x.
+
+582
+00:41:41,440 --> 00:41:46,800
+But you don't need to know the graph or period for these functions. Okay.
+
+583
+00:41:48,559 --> 00:41:58,400
+And now I will explain exponent functions but before that I want to take a break for 10 minutes. Okay. I will start at 10 o'clock. Okay.
+
+584
+00:41:58,400 --> 00:42:03,400
+Ara verip gidelim. Bir 10 dakika ara veririm. Saat 10 gibi başlarız. Tamam.
+
+585
+00:42:03,920 --> 00:42:06,000
+Can I ask something? Yes, yes. Of course.
+
+586
+00:42:06,639 --> 00:42:10,320
+These periods are for the domains, right?
+
+587
+00:42:12,079 --> 00:42:12,559
+Period?
+
+588
+00:42:13,920 --> 00:42:18,800
+We talked about the piece. They are for the domains.
+
+589
+00:42:22,000 --> 00:42:23,280
+Are they for the domains?
+
+590
+00:42:23,280 --> 00:42:30,159
+Yes, yes. Period is actually period is related to sketching the graph. Okay.
+
+591
+00:42:30,800 --> 00:42:39,760
+If you have period it is enough to sketch the graph in one period. After that you can make the same thing for the other parts.
+
+592
+00:42:40,480 --> 00:42:42,480
+Because always, yes.
+
+593
+00:42:43,679 --> 00:42:52,480
+Is it have, is it have, does it have to be between the values of domain, right?
+
+594
+00:42:53,280 --> 00:43:01,440
+Uh, it has to be in your domain. But for example, if you look at cosine function, your domain is real number. Okay.
+
+595
+00:43:02,559 --> 00:43:07,360
+You can't sketch the graph on your domain because it is minus infinity to infinity.
+
+596
+00:43:08,480 --> 00:43:18,480
+Actually only we will, we will have to sketch this graph in the period parts, in the smallest part. One second. What is our period here?
+
+597
+00:43:18,480 --> 00:43:24,480
+Period is the smallest value of p.
+
+598
+00:43:24,880 --> 00:43:29,440
+Yani bunu periodun aralığında çizmeniz yetiyor periodik olan fonksiyonlarla.
+
+599
+00:43:29,519 --> 00:43:32,139
+Bu da çoğunlukla zaten sadece trigonometrikte oluyor.
+
+600
+00:43:32,639 --> 00:43:35,079
+Diğer fonksiyonlarda pek periodikliği görmüyoruz.
+
+601
+00:43:35,599 --> 00:43:37,159
+Dolayısıyla period ne demek?
+
+602
+00:43:37,559 --> 00:43:39,000
+Aynı şekilde devam ediyor.
+
+603
+00:43:39,559 --> 00:43:42,420
+Dolayısıyla domeyinin sonsuza kadar gidebilir.
+
+604
+00:43:42,420 --> 00:43:43,380
+O bir sorun değil.
+
+605
+00:43:43,380 --> 00:43:44,980
+Ama bizim için şu önemli.
+
+606
+00:43:45,179 --> 00:43:46,340
+Ya ben bununla niye uğraşıyorum?
+
+607
+00:43:46,539 --> 00:43:47,380
+En küçüğünü bulayım.
+
+608
+00:43:47,960 --> 00:43:49,380
+Özellikle grafik çizimlerinde.
+
+609
+00:43:49,820 --> 00:43:53,920
+En küçüğünü bulduktan sonra zaten diğeri aynı şekilde ekliyorsunuz yanına.
+
+610
+00:43:54,255 --> 00:44:20,375
+Dolayısıyla bizim için periyodunu burada bilmek önemli. Ben bunu en kısa olarak nerede çizmem gerekiyor? Yani aynı şekilde devam ediyorsa bunun en küçük çizebileceğim yeri bizim. Aralığı bizim için önemli. Yani burada genişlik buluyorsunuz. Genişlik buluyorsunuz. Yeri değil. Genişliği buluyorsunuz. Ben hangi genişlikte bu şekilde devam ediyor? Bunu belirliyorsunuz. Periyot dediğimiz şey bu aslında.
+
+611
+00:44:20,375 --> 00:44:25,096
+Aralık işte şeyin üzerinde. Değil mi? X ekseninin.
+
+612
+00:44:25,975 --> 00:44:33,955
+Tabii. Tabii. Evet. Evet. Pardon. Yani ben tamamlayamadım önce de. Yes. Periyot is on x-axis. If you look at here.
+
+613
+00:44:35,056 --> 00:44:43,596
+Okay. Because if you write p here, here it is related to domain. So it has to be in x-axis.
+
+614
+00:44:44,536 --> 00:44:48,975
+Okay. Okay. So let's take a break. After the break, let us continue. Okay?
+
+615
+00:55:50,931 --> 00:55:53,891
+Okay, so let us continue our lesson.
+
+616
+00:55:55,411 --> 00:56:01,331
+And now we will see exponent function. Actually you see exponent function also in high school.
+
+617
+00:56:02,131 --> 00:56:12,211
+But here I want to say a different case. If your function is a to the power x here, a is a base,
+
+618
+00:56:12,211 --> 00:56:20,451
+it will be a positive constant. Okay, it can be in a real number. You can write 1 over 2 for example.
+
+619
+00:56:21,571 --> 00:56:27,011
+if your function is a to the power x, then it is called exponent function. And
+
+620
+00:56:28,931 --> 00:56:37,811
+a will be positive constant. And a can't be 1 because when you write 1 and if you take x is infinity,
+
+621
+00:56:37,811 --> 00:56:47,491
+1 over infinity is an in-determined form. And I gave you some graphs of exponent function. For example,
+
+622
+00:56:47,491 --> 00:56:54,851
+if your function is 10 to the power x is 10 to the power x, it is your shape 3 to the power x, 2 to the power x.
+
+623
+00:56:55,411 --> 00:57:08,131
+Here 10 to the power x, actually you can write this number as 1 over 10 to the power x.
+
+624
+00:57:08,131 --> 00:57:20,771
+and it is another exponent function. Yes.
+
+625
+00:57:20,771 --> 00:57:23,411
+Grafik çok küçük. Yes.
+
+626
+00:57:23,411 --> 00:57:25,411
+Grafik çok küçük.
+
+627
+00:57:25,411 --> 00:57:27,411
+Grafik çok küçük de hocam.
+
+628
+00:57:27,411 --> 00:57:28,371
+Küçük mü?
+
+629
+00:57:28,371 --> 00:57:33,411
+Ya şey, yok zaten biliyorum birazcık şey çıktı.
+
+630
+00:57:33,411 --> 00:57:35,411
+Sadece bir örnek olsun diye koydum zaten.
+
+631
+00:57:35,411 --> 00:57:50,051
+bu 10 üzeri x.
+
+632
+00:57:50,051 --> 00:57:52,051
+Bu 10 üzeri x.
+
+633
+00:57:52,051 --> 00:57:54,051
+10 üzeri x.
+
+634
+00:57:44,980 --> 00:57:49,699
+bu kadar büyütte ama yine de çok şey gözükmedi, kopyalık öfişlediğimiz için bu
+
+635
+00:57:49,699 --> 00:57:51,780
+power x
+
+636
+00:57:51,780 --> 00:57:54,099
+okay this is 2 to the power x
+
+637
+00:57:54,099 --> 00:57:56,740
+there are some examples only
+
+638
+00:57:56,740 --> 00:57:59,619
+for the exponent function
+
+639
+00:57:59,619 --> 00:58:03,699
+this is 10 to the power minus x
+
+640
+00:58:03,699 --> 00:58:07,539
+this is 3 to the power minus x
+
+641
+00:58:07,539 --> 00:58:11,219
+it is 2 to the power minus x okay
+
+642
+00:58:11,219 --> 00:58:16,260
+and the domain from the 0 to the limited
+
+643
+00:58:16,260 --> 00:58:20,659
+your domain for exponent function is real number
+
+644
+00:58:20,659 --> 00:58:24,659
+but the range is different you can see that range will be
+
+645
+00:58:24,659 --> 00:58:29,860
+greater than 0 to infinity for exponent functions it will be the same
+
+646
+00:58:29,860 --> 00:58:38,099
+okay but we have one spatial exponent function it is called natural
+
+647
+00:58:38,099 --> 00:58:42,179
+exponent function and you know this exponent function
+
+648
+00:58:42,179 --> 00:58:46,099
+natural exponents
+
+649
+00:58:48,340 --> 00:58:55,139
+function and it is e to the power x if your base is the number e
+
+650
+00:58:55,139 --> 00:58:58,260
+then it is called natural exponent function
+
+651
+00:58:58,260 --> 00:59:03,300
+and the natural exponent functions graph is
+
+652
+00:59:03,300 --> 00:59:10,340
+this and this is 1 sorry yes it is 1
+
+653
+00:59:10,340 --> 00:59:13,460
+this is natural exponent function
+
+654
+00:59:13,460 --> 00:59:16,260
+this is the other general exponent functions
+
+655
+00:59:16,260 --> 00:59:19,059
+but it is called natural exponent function
+
+656
+00:59:19,059 --> 00:59:23,139
+and for exponent functions your domain will be real number
+
+657
+00:59:23,139 --> 00:59:27,220
+but your range will be 0 to infinity
+
+658
+00:59:27,220 --> 00:59:32,659
+because it is the power of a number for example for natural function it is e
+
+659
+00:59:32,659 --> 00:59:36,740
+for here 1 over 10 so it can't be 0
+
+660
+00:59:37,619 --> 00:59:43,780
+so it will be 0 to infinity in the open interval this is the exponent function
+
+661
+00:59:43,780 --> 00:59:48,179
+okay and what about the logarithm function
+
+662
+00:59:48,740 --> 00:59:52,260
+logarithm function if you have a function logarithm
+
+663
+00:59:52,260 --> 01:00:00,739
+on the base of a x it is called logarithm function and a can't be 1 or you can write
+
+664
+01:00:00,739 --> 01:00:07,940
+your logarithm function as ln x over ln a
+
+665
+01:00:10,099 --> 01:00:17,380
+what is ln actually y equals ln x is called natural
+
+666
+01:00:17,380 --> 01:00:22,980
+logarithm function
+
+667
+01:00:22,980 --> 01:00:45,860
+so
+
+668
+01:00:26,420 --> 01:00:33,539
+Logaritmik function and you can write general logaritmic function as ln x over ln a.
+
+669
+01:00:33,539 --> 01:00:42,340
+These two expressions are the same. For ln function, inside of ln function has to be positive.
+
+670
+01:00:43,220 --> 01:00:49,940
+For domain a condition for ln function inside of ln function has to be positive.
+
+671
+01:00:49,940 --> 01:00:56,980
+So if you talk about a domain of the function there are some different kind of logarithm function.
+
+672
+01:00:58,500 --> 01:01:02,500
+Let me show the ln functions graph.
+
+673
+01:01:02,500 --> 01:01:07,460
+Okay this is your ln function here.
+
+674
+01:01:11,220 --> 01:01:18,260
+Okay this is the graph of ln x and let me add one other graph.
+
+675
+01:01:18,260 --> 01:01:22,019
+Okay this is the graph of
+
+676
+01:01:25,539 --> 01:01:31,139
+exponent function and these two functions are inverse functions each other.
+
+677
+01:01:32,099 --> 01:01:37,940
+In logarithm functions and exponent functions are inverse functions to each other
+
+678
+01:01:38,500 --> 01:01:42,260
+and they are symmetric about y equals x.
+
+679
+01:01:42,260 --> 01:01:44,260
+Okay this is the graph of x.
+
+680
+01:01:44,260 --> 01:01:46,260
+I will say that the graph of x is the graph of x.
+
+681
+01:01:46,260 --> 01:01:48,260
+They are symmetric about y equals x.
+
+682
+01:01:48,260 --> 01:01:52,260
+Okay this is the graph of x.
+
+683
+01:01:54,420 --> 01:02:02,099
+Efendim, 2 to the power x and logarithm on the base of 2x
+
+684
+01:02:02,099 --> 01:02:05,300
+also inverse functions each other.
+
+685
+01:02:05,300 --> 01:02:06,300
+Okay?
+
+686
+01:02:06,300 --> 01:02:09,900
+And they are symmetric about y equals x.
+
+687
+01:02:09,900 --> 01:02:10,900
+Okay?
+
+688
+01:02:11,539 --> 01:02:14,220
+Can you repeat the last point?
+
+689
+01:02:14,220 --> 01:02:17,220
+Here you are talking about this one.
+
+690
+01:02:17,220 --> 01:02:18,220
+Yes.
+
+691
+01:02:18,220 --> 01:02:19,619
+Okay.
+
+692
+01:02:19,619 --> 01:02:28,500
+Normally logarithm functions and exponent functions are inverse each other.
+
+693
+01:02:28,500 --> 01:02:30,500
+Y birinin tersi.
+
+694
+01:02:30,500 --> 01:02:37,500
+So, if you take the inverse of this is exponent function.
+
+695
+01:02:37,500 --> 01:02:38,500
+Okay?
+
+696
+01:02:38,500 --> 01:02:46,500
+If you take the inverse of this function, inverse of this function is logarithm 2 to the base x.
+
+697
+01:02:46,500 --> 01:02:47,500
+Okay?
+
+698
+01:02:47,500 --> 01:02:56,380
+And at the same time logarithm, for example, 3 to the base x, the inverse of this function
+
+699
+01:02:56,380 --> 01:03:01,380
+is 3 to the power x.
+
+700
+01:03:01,380 --> 01:03:02,380
+Okay?
+
+701
+01:03:02,380 --> 01:03:07,380
+They are inverse to each other.
+
+702
+01:03:07,380 --> 01:03:08,380
+Yani birbirlerinin tersi.
+
+703
+01:03:08,380 --> 01:03:10,380
+Birinin tersi olduğunu olursanız diğerine eşit oluyor.
+
+704
+01:03:10,380 --> 01:03:11,380
+And...
+
+705
+01:03:11,380 --> 01:03:12,380
+Okay.
+
+706
+01:03:12,380 --> 01:03:17,260
+Do you understand?
+
+707
+01:03:17,260 --> 01:03:21,260
+Let me write one thing here.
+
+708
+01:03:21,260 --> 01:03:22,260
+We will see later.
+
+709
+01:03:22,260 --> 01:03:24,260
+But I want to write one thing.
+
+710
+01:03:24,260 --> 01:03:32,139
+For example, if I have ln x equals 3, for example.
+
+711
+01:03:32,139 --> 01:03:38,139
+And if you want to find x, you have to take inverse of this function.
+
+712
+01:03:38,139 --> 01:03:43,139
+ln x is logarithm function and inverse of the logarithm function is exponent function.
+
+713
+01:03:43,139 --> 01:03:52,019
+So, if you take exponent functions as the power e to the power x, e to the power 3.
+
+714
+01:03:52,019 --> 01:03:57,019
+So, you can cancel exponent and logarithm functions.
+
+715
+01:03:57,019 --> 01:04:00,900
+So, you can find x is eq.
+
+716
+01:04:00,900 --> 01:04:03,900
+You can use inverse process.
+
+717
+01:04:03,900 --> 01:04:13,900
+For example, if you have logarithm on the base of 3 x is y.
+
+718
+01:04:13,900 --> 01:04:16,780
+That's not a lot of that.
+
+719
+01:04:16,780 --> 01:04:18,780
+But let me write here.
+
+720
+01:04:18,780 --> 01:04:22,780
+If you want to write x, x is 3 to the power y.
+
+721
+01:04:22,780 --> 01:04:23,780
+Okay?
+
+722
+01:04:23,780 --> 01:04:27,780
+This is another properties of logarithm function.
+
+723
+01:04:27,780 --> 01:04:28,780
+Maybe you can remember.
+
+724
+01:04:28,780 --> 01:04:29,780
+Okay?
+
+725
+01:04:29,780 --> 01:04:32,780
+But especially this part will be important.
+
+726
+01:04:32,780 --> 01:04:35,780
+We will see some examples later.
+
+727
+01:04:35,780 --> 01:04:36,780
+Okay?
+
+728
+01:04:36,780 --> 01:04:41,900
+If you want to cancel ln function, you have to take at the base of a.
+
+729
+01:04:41,900 --> 01:04:49,019
+e to the power ln x will be e to the power 3.
+
+730
+01:04:49,019 --> 01:04:52,579
+Exponent function and logarithm functions are the same.
+
+731
+01:04:52,579 --> 01:04:53,579
+I can cancel.
+
+732
+01:04:53,579 --> 01:04:58,059
+So, I have only x is e to the power 3.
+
+733
+01:05:01,588 --> 01:05:09,248
+And before that I want to write some information about natural logarithm function.
+
+734
+01:05:10,208 --> 01:05:13,327
+I can give you later also but I want to write.
+
+735
+01:05:14,768 --> 01:05:19,128
+Şuraya, I think you know in high school but I want to write again.
+
+736
+01:05:19,128 --> 01:05:19,568
+Okay.
+
+737
+01:05:22,088 --> 01:05:27,748
+What about NLA plus NLB?
+
+738
+01:05:27,848 --> 01:05:29,688
+How can you write in one place?
+
+739
+01:05:29,788 --> 01:05:30,807
+You see in high school.
+
+740
+01:05:30,807 --> 01:05:35,608
+What is the meaning of NLA minus NLB?
+
+741
+01:05:36,948 --> 01:05:38,748
+And what is B?
+
+742
+01:05:42,996 --> 01:05:44,996
+[öğrenci] high school I think.
+
+743
+01:05:44,996 --> 01:05:52,996
+Okay, if you have plus between these two ln function you can write inside as product.
+
+744
+01:05:52,996 --> 01:05:55,996
+a product b.
+
+745
+01:05:55,996 --> 01:06:00,996
+If you have minus it means it is division ln a over b.
+
+746
+01:06:00,996 --> 01:06:02,996
+Okay.
+
+747
+01:06:02,996 --> 01:06:10,996
+And if you have any number outside of the ln function you can write inside as a power a to the power b.
+
+748
+01:06:10,996 --> 01:06:18,996
+These three properties will be very important in your other examples.
+
+749
+01:06:18,996 --> 01:06:19,996
+Okay.
+
+750
+01:06:19,996 --> 01:06:24,996
+And let me write one thing here.
+
+751
+01:06:24,996 --> 01:06:36,996
+But it doesn't mean ln a product ln b equals ln a plus b or something like that.
+
+752
+01:06:36,996 --> 01:06:37,996
+Okay.
+
+753
+01:06:37,996 --> 01:06:39,996
+It is wrong.
+
+754
+01:06:39,996 --> 01:06:41,996
+The inverse is not true.
+
+755
+01:06:41,996 --> 01:06:44,996
+Only these three properties are true.
+
+756
+01:06:44,996 --> 01:06:45,996
+Okay.
+
+757
+01:06:45,996 --> 01:06:58,996
+Why I write this one because for example I have 2 ln x is for example e.
+
+758
+01:06:58,996 --> 01:06:59,996
+sorry.
+
+759
+01:06:59,996 --> 01:07:01,996
+And let me write one thing.
+
+760
+01:07:01,996 --> 01:07:02,996
+Okay.
+
+761
+01:07:02,996 --> 01:07:05,996
+It is for example y.
+
+762
+01:07:05,996 --> 01:07:06,996
+Okay.
+
+763
+01:07:06,996 --> 01:07:15,996
+So if I want to cancel ln function before that I have to cancel two.
+
+764
+01:07:15,996 --> 01:07:17,996
+So I can write inside.
+
+765
+01:07:17,996 --> 01:07:22,996
+So I can take ln x square is y.
+
+766
+01:07:22,996 --> 01:07:30,996
+After that I can take exponent of each part.
+
+767
+01:07:30,996 --> 01:07:31,996
+left side and right side.
+
+768
+01:07:31,996 --> 01:07:33,996
+Okay.
+
+769
+01:07:33,996 --> 01:07:37,996
+And I can find that this equation is also x square is a to the power one.
+
+770
+01:07:37,996 --> 01:07:38,996
+Okay.
+
+771
+01:07:38,996 --> 01:07:43,996
+If you want to cancel these inverse functions.
+
+772
+01:07:43,996 --> 01:07:47,996
+Firstly, the coefficient of ln function has to be one.
+
+773
+01:07:47,996 --> 01:07:50,996
+So firstly you have to cancel two.
+
+774
+01:07:50,996 --> 01:07:54,996
+I write two inside of the ln function as a power.
+
+775
+01:07:54,996 --> 01:07:58,996
+After that I can take exponent of left side and right side.
+
+776
+01:07:58,996 --> 01:08:00,996
+Okay.
+
+777
+01:08:00,996 --> 01:08:01,996
+So.
+
+778
+01:08:01,996 --> 01:08:02,996
+Okay.
+
+779
+01:08:02,996 --> 01:08:03,996
+So.
+
+780
+01:08:03,996 --> 01:08:04,996
+Okay.
+
+781
+01:08:04,996 --> 01:08:05,996
+So.
+
+782
+01:08:08,628 --> 01:08:14,628
+Evet, bu kadar da bilgisayar var.
+
+783
+01:08:14,628 --> 01:08:16,628
+Ama nasıl bulunduruz?
+
+784
+01:08:16,628 --> 01:08:40,628
+Bir saniye kadar bilgisayar var.
+
+785
+01:08:40,628 --> 01:08:42,628
+Bu bilgisayar var.
+
+786
+01:08:42,628 --> 01:08:44,628
+Bir saniye kadar bilgisayar var.
+
+787
+01:08:44,628 --> 01:08:46,628
+Evet, bu bilgisayar var.
+
+788
+01:08:46,628 --> 01:08:48,628
+Çünkü bu bilgisayar var.
+
+789
+01:08:48,628 --> 01:10:40,628
+Bir saniye kadar bilgisayar var.
+
+790
+01:10:32,884 --> 01:10:40,564
+Şimdi, even and odd functions, you know in high school I think.
+
+791
+01:10:40,564 --> 01:10:41,844
+What is even function?
+
+792
+01:10:42,644 --> 01:10:49,123
+When you write minus x in your function, if you find the same function, then it is called even function.
+
+793
+01:10:50,404 --> 01:10:55,043
+For example, cosine function, especially you know that it is even function.
+
+794
+01:10:55,043 --> 01:11:01,123
+x squared, 3x to the power 4 plus 2x squared is also even functions.
+
+795
+01:11:01,123 --> 01:11:03,123
+But what can we say about symmetry?
+
+796
+01:11:03,764 --> 01:11:06,724
+There are symmetries according to even and odd functions.
+
+797
+01:11:06,724 --> 01:11:08,963
+Let us show in an example.
+
+798
+01:11:08,963 --> 01:11:12,484
+I said that y equals x squared is symmetric.
+
+799
+01:11:13,123 --> 01:11:15,043
+So I have two parts.
+
+800
+01:11:16,163 --> 01:11:25,043
+According to which parts it is symmetric about x-axis, y-axis, origin or any line, what can you say?
+
+801
+01:11:25,923 --> 01:11:27,524
+Even functions
+
+802
+01:11:27,524 --> 01:11:34,163
+Are symmetric about
+
+803
+01:11:34,163 --> 01:11:34,793
+And then we are going to make sure that we are going to make sure that we are going to make sure that we are going to make sure that we are going to make sure that we are going to make sure that we are going to make sure that we are going to make sure that we are going to make sure that we are going to make sure that we are going to make sure that we are going to make sure that we are going to make sure that we are going to make sure that we are going to make sure that we are going to make sure that we are going to make sure that we are going to make sure that we are going to make sure that we are going to make sure that we are going to make sure that we are going to make sure that we are going to make sure that we are going to make sure that we are going to make sure that we are going to make sure that we are going to make sure that we are going to make sure that we are going to make sure that we are going to make sure that we are going to make sure that we are going to
+
+804
+01:11:46,131 --> 01:11:48,531
+Evet, çeyi kullanırken,
+
+805
+01:11:48,831 --> 01:11:52,231
+I don't see chatbox at the same time.
+
+806
+01:11:53,331 --> 01:11:55,751
+I had to look at very often.
+
+807
+01:11:56,431 --> 01:11:58,791
+Okay, it is symmetric about y-axis.
+
+808
+01:11:59,311 --> 01:12:03,791
+The y-axis divides your graph into same two parts.
+
+809
+01:12:04,251 --> 01:12:06,291
+So it is symmetric about y-axis.
+
+810
+01:12:07,991 --> 01:12:08,631
+Okay.
+
+811
+01:12:09,171 --> 01:12:12,091
+And you can sketch only this part
+
+812
+01:12:12,091 --> 01:12:15,411
+and using this symmetry you can find this part also.
+
+813
+01:12:16,131 --> 01:12:16,531
+Okay.
+
+814
+01:12:17,731 --> 01:12:21,551
+And what about odd function?
+
+815
+01:12:21,551 --> 01:12:27,411
+Can you repeat the even function?
+
+816
+01:12:27,851 --> 01:12:28,652
+I didn't get it.
+
+817
+01:12:29,192 --> 01:12:30,051
+Okay, okay.
+
+818
+01:12:30,351 --> 01:12:31,471
+Let me write again.
+
+819
+01:12:31,751 --> 01:12:31,971
+Okay.
+
+820
+01:12:35,171 --> 01:12:39,451
+First, you have to determine your function is even or odd function.
+
+821
+01:12:40,051 --> 01:12:45,131
+Some functions are neither even or odd.
+
+822
+01:12:45,131 --> 01:12:50,551
+When you write minus x in the function, for example, y is...
+
+823
+01:12:50,551 --> 01:12:55,711
+When you write minus x in your function, I have x square.
+
+824
+01:12:56,411 --> 01:12:57,791
+It is also y.
+
+825
+01:12:57,971 --> 01:12:59,351
+So it is even function.
+
+826
+01:12:59,351 --> 01:13:04,291
+And I want to sketch a line of y equals x square here.
+
+827
+01:13:04,551 --> 01:13:06,211
+This is the graph of this function.
+
+828
+01:13:07,231 --> 01:13:12,652
+How can we divide this graph into two parts and it will be symmetric to each other?
+
+829
+01:13:12,652 --> 01:13:15,851
+If you divide according to y-axis, okay.
+
+830
+01:13:16,331 --> 01:13:20,611
+This is one branch of graph and this is one branch of graph.
+
+831
+01:13:21,311 --> 01:13:25,211
+And these graphs is symmetric about y-axis.
+
+832
+01:13:25,211 --> 01:13:31,051
+So here you don't need to sketch the left side.
+
+833
+01:13:31,251 --> 01:13:31,451
+Okay.
+
+834
+01:13:31,831 --> 01:13:33,971
+You don't need to sketch left side.
+
+835
+01:13:34,491 --> 01:13:37,971
+Firstly, you know that it is symmetric.
+
+836
+01:13:37,971 --> 01:13:40,051
+It is enough to sketch this graph.
+
+837
+01:13:40,051 --> 01:13:44,291
+And I know that it is symmetric about y-axis.
+
+838
+01:13:44,631 --> 01:13:54,591
+And according to y-axis, I can sketch here, here, here, here, here, here, here.
+
+839
+01:13:54,711 --> 01:14:02,192
+So I can sketch according to y-axis because the distance here, here, it will be the same.
+
+840
+01:14:02,192 --> 01:14:05,751
+It is important in sketching of the graph.
+
+841
+01:14:06,091 --> 01:14:06,231
+Okay.
+
+842
+01:14:06,811 --> 01:14:11,531
+Even and odd functions are important when sketch a complex functions graph.
+
+843
+01:14:12,051 --> 01:14:16,851
+For example, if you have a polynomial, a complex graph, a polynomial.
+
+844
+01:14:17,411 --> 01:14:17,931
+Okay.
+
+845
+01:14:18,192 --> 01:14:21,571
+Then it is even or odd function.
+
+846
+01:14:21,692 --> 01:14:22,551
+It will be important.
+
+847
+01:14:22,771 --> 01:14:24,192
+Yes.
+
+848
+01:14:24,271 --> 01:14:24,451
+What?
+
+849
+01:14:25,131 --> 01:14:26,911
+What about odd function?
+
+850
+01:14:27,051 --> 01:14:32,171
+When you write minus x in the function, if you have minus fx, then it is odd.
+
+851
+01:14:32,192 --> 01:14:35,851
+And sine function is an odd function.
+
+852
+01:14:36,011 --> 01:14:37,391
+What about tangent x?
+
+853
+01:14:37,531 --> 01:14:42,311
+Tangent x is sine x over cosine x.
+
+854
+01:14:43,591 --> 01:14:47,911
+When you write minus x, I know that sine function is odd.
+
+855
+01:14:48,031 --> 01:14:49,791
+So I will have minus here.
+
+856
+01:14:50,251 --> 01:14:52,911
+But cosine function is even function.
+
+857
+01:14:53,271 --> 01:14:54,511
+We don't have any minus.
+
+858
+01:14:54,631 --> 01:14:57,951
+So you can see that it is minus tangent x.
+
+859
+01:14:58,192 --> 01:15:00,351
+And it is odd function.
+
+860
+01:15:00,351 --> 01:15:03,571
+And it is similar for cotangent x cube.
+
+861
+01:15:03,771 --> 01:15:05,491
+And all these kind of functions.
+
+862
+01:15:06,111 --> 01:15:08,351
+Let me sketch the graph of x cube.
+
+863
+01:15:08,511 --> 01:15:10,591
+And let's try to find what is in it.
+
+864
+01:15:10,831 --> 01:15:11,551
+Can you repeat it?
+
+865
+01:15:11,831 --> 01:15:12,571
+I didn't understand.
+
+866
+01:15:12,891 --> 01:15:13,071
+Yes.
+
+867
+01:15:13,171 --> 01:15:14,152
+For tangent function.
+
+868
+01:15:15,231 --> 01:15:15,731
+Yes.
+
+869
+01:15:15,811 --> 01:15:16,152
+For tangent.
+
+870
+01:15:16,152 --> 01:15:16,391
+Yes.
+
+871
+01:15:16,391 --> 01:15:17,851
+Okay.
+
+872
+01:15:18,692 --> 01:15:20,011
+For tangent function.
+
+873
+01:15:20,211 --> 01:15:21,131
+Let us write.
+
+874
+01:15:22,011 --> 01:15:22,531
+Sine.
+
+875
+01:15:26,031 --> 01:15:26,851
+Minus x.
+
+876
+01:15:27,652 --> 01:15:28,031
+Over.
+
+877
+01:15:29,431 --> 01:15:30,111
+Cosine.
+
+878
+01:15:30,591 --> 01:15:31,231
+Minus x.
+
+879
+01:15:33,371 --> 01:15:35,851
+I know that sine function is odd function.
+
+880
+01:15:35,951 --> 01:15:36,431
+What is that?
+
+881
+01:15:36,531 --> 01:15:38,111
+I will write minus outside.
+
+882
+01:15:38,391 --> 01:15:38,911
+I have.
+
+883
+01:15:39,631 --> 01:15:40,911
+Minus sine x.
+
+884
+01:15:40,911 --> 01:16:08,911
+Minus x.
+
+885
+01:15:41,268 --> 01:15:45,988
+And I know that cosine function and even function it will be cosine x.
+
+886
+01:15:46,408 --> 01:15:50,268
+So what do you have? I have minus tangent x.
+
+887
+01:15:51,908 --> 01:15:58,807
+So outside I have minus. It means that it is odd function because you have minus fx.
+
+888
+01:15:59,587 --> 01:16:02,207
+Okay. So it is an odd function.
+
+889
+01:16:02,807 --> 01:16:09,408
+Let me sketch the graph of x cube. The graph of x cube is this.
+
+890
+01:16:09,408 --> 01:16:15,188
+Now what can you say about symmetry? It is symmetric about x-axis y-axis.
+
+891
+01:16:15,188 --> 01:16:21,247
+When you divide your function you have to have two same parts.
+
+892
+01:16:21,568 --> 01:16:22,068
+That's wrong.
+
+893
+01:16:23,108 --> 01:16:23,387
+What?
+
+894
+01:16:24,747 --> 01:16:36,368
+Yes. It is symmetric. Odd function is symmetric about origin.
+
+895
+01:16:38,368 --> 01:16:38,707
+Okay.
+
+896
+01:16:39,408 --> 01:16:42,167
+It is symmetric about origin.
+
+897
+01:16:43,368 --> 01:16:47,828
+So firstly I have to sketch the graph of the first part.
+
+898
+01:16:49,828 --> 01:16:59,007
+And about the origin you will take the distance here, here, here, here, here, here.
+
+899
+01:16:59,568 --> 01:17:02,707
+So you can sketch according to origin.
+
+900
+01:17:02,707 --> 01:17:09,148
+So evil functions is symmetric about y-axis and odd functions are symmetric about origin.
+
+901
+01:17:10,988 --> 01:17:11,347
+Okay.
+
+902
+01:17:11,347 --> 01:17:17,488
+So if you have one part here, the other part will be here.
+
+903
+01:17:17,488 --> 01:17:20,927
+If you have one part here, the other part will be here.
+
+904
+01:17:22,688 --> 01:17:22,988
+Okay.
+
+905
+01:17:23,328 --> 01:17:28,807
+But about y-axis, if you have some part here, the other part will be here.
+
+906
+01:17:28,807 --> 01:17:29,807
+Okay.
+
+907
+01:17:29,807 --> 01:17:32,228
+You will see these concepts later also.
+
+908
+01:17:32,228 --> 01:17:35,148
+Okay.
+
+909
+01:17:35,148 --> 01:18:00,068
+So now we can start our domain examples.
+
+910
+01:18:00,068 --> 01:18:05,528
+If your functions are very complex like this, how can we determine our domain?
+
+911
+01:18:05,528 --> 01:18:11,188
+The important concept for the functions are determining the domain, not range.
+
+912
+01:18:11,188 --> 01:18:11,488
+Okay.
+
+913
+01:18:11,488 --> 01:18:16,608
+But before that, I want to start with an easy example.
+
+914
+01:18:16,608 --> 01:18:18,868
+Let me write one thing here.
+
+915
+01:18:18,868 --> 01:18:24,547
+Before that, I want to mention about inverse trigonometric functions.
+
+916
+01:18:24,547 --> 01:18:30,007
+Normally we will see inverse trigonometric functions in detail, but in domain, we need to
+
+917
+01:18:30,007 --> 01:18:34,167
+see, I want to write here.
+
+918
+01:18:34,167 --> 01:18:37,627
+If you have sine x, what is domain of sine or cosine x?
+
+919
+01:18:37,627 --> 01:18:40,728
+They are the same.
+
+920
+01:18:40,728 --> 01:18:42,667
+Our domain is real number.
+
+921
+01:18:42,667 --> 01:18:43,667
+Okay.
+
+922
+01:18:43,667 --> 01:18:52,948
+And our range for sine and cosine, it is minus one to one.
+
+923
+01:18:52,948 --> 01:18:56,967
+It is also minus one to one.
+
+924
+01:18:56,967 --> 01:19:01,967
+If you want to take inverse of these trigonometric functions, you will write arc.
+
+925
+01:19:01,967 --> 01:19:07,127
+Arc means inverse arc sine x.
+
+926
+01:19:07,127 --> 01:19:12,047
+And it will be arc cosine x.
+
+927
+01:19:12,047 --> 01:19:17,587
+In inverse trigonometric functions, the domain and range position will change.
+
+928
+01:19:17,587 --> 01:19:23,307
+So your domain will be minus one to one.
+
+929
+01:19:23,307 --> 01:19:25,747
+And your range will be real number.
+
+930
+01:19:25,747 --> 01:19:29,587
+Here also the same, minus one to one.
+
+931
+01:19:29,587 --> 01:19:53,427
+And your range will be real number.
+
+932
+01:19:32,724 --> 01:19:38,884
+So, what does it mean? It means that here, what is inside of the inverse trigonometric function x?
+
+933
+01:19:38,884 --> 01:19:51,463
+So, x will be between minus 1 to 1. For example, if you want to find x cube, so x cube also will be between minus 1 to 1.
+
+934
+01:19:51,604 --> 01:19:58,784
+Or, if you have arc sin a to the power x, okay?
+
+935
+01:19:58,784 --> 01:20:06,104
+So, I know that inside of arc sin functions, be between minus 1 to 1, okay?
+
+936
+01:20:06,104 --> 01:20:08,604
+This is the important part.
+
+937
+01:20:10,703 --> 01:20:11,043
+Okay?
+
+938
+01:20:12,724 --> 01:20:16,163
+If you don't have any questions, let us look at our examples.
+
+939
+01:20:16,463 --> 01:20:19,304
+First, I want to start this example.
+
+940
+01:20:19,684 --> 01:20:19,764
+Okay?
+
+941
+01:20:20,663 --> 01:20:24,984
+So, the question is, find the domain of these functions.
+
+942
+01:20:24,984 --> 01:20:25,604
+Okay?
+
+943
+01:20:25,604 --> 01:20:25,644
+Okay.
+
+944
+01:20:25,644 --> 01:20:32,043
+In this kind of questions, we will have more than one conditions for the domain.
+
+945
+01:20:32,043 --> 01:20:37,043
+Firstly, the big function, outside the big function is arc sin function.
+
+946
+01:20:37,043 --> 01:20:41,564
+But, one second, I want to write.
+
+947
+01:20:41,564 --> 01:20:45,203
+Öncesinde şuraya bir şey yazmak istiyorum.
+
+948
+01:20:45,203 --> 01:20:45,703
+Boş.
+
+949
+01:20:45,703 --> 01:20:46,203
+One second.
+
+950
+01:20:46,203 --> 01:20:54,963
+Okay.
+
+951
+01:20:52,212 --> 01:20:57,732
+Before that let us summarize some important domains.
+
+952
+01:20:57,732 --> 01:21:05,012
+Okay, first step. If your function is polynomial,
+
+953
+01:21:05,412 --> 01:21:09,572
+what is your range? Sorry, what is your domain?
+
+954
+01:21:09,572 --> 01:21:12,212
+Domain will be...
+
+955
+01:21:12,212 --> 01:21:13,812
+It's all.
+
+956
+01:21:13,812 --> 01:21:16,532
+Yes? It's all, it's all.
+
+957
+01:21:16,532 --> 01:21:21,492
+Okay, if your function is
+
+958
+01:21:21,492 --> 01:21:25,332
+exponent function or
+
+959
+01:21:26,452 --> 01:21:30,692
+natural exponent function or any exponent function, what is that?
+
+960
+01:21:30,692 --> 01:21:35,252
+Your domain of this function will be real number.
+
+961
+01:21:35,252 --> 01:21:41,412
+Okay, let us write also your range real number to real number for
+
+962
+01:21:41,412 --> 01:21:45,892
+polynomial. For exponent functions real number to
+
+963
+01:21:45,892 --> 01:21:50,852
+zero to infinity. One zero count here.
+
+964
+01:21:50,852 --> 01:21:57,492
+If your function is logarithm function or natural logarithm function,
+
+965
+01:21:57,492 --> 01:22:04,932
+or logarithm on the base of a x, our domain will be
+
+966
+01:22:04,932 --> 01:22:12,692
+zero to infinity, but it can't be zero and your domain will be real, sorry, your range
+
+967
+01:22:12,692 --> 01:22:20,372
+will be real number. What do we remember? For cosine x or sine x.
+
+968
+01:22:20,372 --> 01:22:27,332
+Okay, so your domain will be real number. Your range will be between minus one to one.
+
+969
+01:22:27,332 --> 01:22:31,652
+Okay, and let us write here.
+
+970
+01:22:31,652 --> 01:22:35,892
+And for square root function, okay.
+
+971
+01:22:35,892 --> 01:22:44,052
+If n is even, inside of the squared function will be positive or zero.
+
+972
+01:22:44,052 --> 01:22:49,332
+If n is odd, your domain will be real number.
+
+973
+01:22:49,332 --> 01:22:50,692
+Okay.
+
+974
+01:22:50,692 --> 01:22:52,692
+So, if n is odd, your domain will be real number.
+
+975
+01:22:52,692 --> 01:22:54,692
+Okay.
+
+976
+01:22:54,692 --> 01:22:58,692
+So, if n is odd, your domain will be real number.
+
+977
+01:22:54,068 --> 01:22:58,068
+Şimdi, şimdi, let us look at our examples.
+
+978
+01:22:58,068 --> 01:23:03,068
+I want to start an easy example 3, I think.
+
+979
+01:23:03,068 --> 01:23:09,068
+Victor, if you didn't delete the notes you right,
+
+980
+01:23:09,068 --> 01:23:11,068
+can I take a picture of it?
+
+981
+01:23:11,068 --> 01:23:13,068
+Yes, yes. Do you want to see this?
+
+982
+01:23:13,068 --> 01:23:15,068
+Yes, okay.
+
+983
+01:23:15,068 --> 01:23:17,068
+Okay, thank you.
+
+984
+01:23:17,068 --> 01:23:18,068
+Not at all.
+
+985
+01:23:18,068 --> 01:23:22,068
+And you can watch later also again, okay?
+
+986
+01:23:22,068 --> 01:23:25,068
+Okay, so I want to start with this example.
+
+987
+01:23:25,068 --> 01:23:30,068
+The first big, the biggest, the outside function is arcsine function.
+
+988
+01:23:30,068 --> 01:23:32,068
+What do we say about arcsine function?
+
+989
+01:23:32,068 --> 01:23:35,068
+Arcsine function is the inverse of sine function.
+
+990
+01:23:35,068 --> 01:23:47,068
+So, inside of the function has to be between minus 1 to 1.
+
+991
+01:23:47,068 --> 01:23:51,068
+Okay, this is our function.
+
+992
+01:23:52,068 --> 01:23:54,068
+This is our first condition.
+
+993
+01:23:54,068 --> 01:23:58,068
+After that, now we can cancel arcsine function.
+
+994
+01:23:58,068 --> 01:24:02,068
+Now, the other function is logarithm function.
+
+995
+01:24:02,068 --> 01:24:05,068
+What do we know about logarithm function?
+
+996
+01:24:05,068 --> 01:24:07,068
+About the logarithm function inside.
+
+997
+01:24:07,068 --> 01:24:09,068
+And I have to write AND.
+
+998
+01:24:09,068 --> 01:24:14,068
+For the logarithm function, inside of the function has to be positive.
+
+999
+01:24:14,068 --> 01:24:22,068
+So, for our domain we have two conditions and each of them I have to write AND.
+
+1000
+01:24:22,068 --> 01:24:25,068
+We have to take the intersection of these conditions.
+
+1001
+01:24:25,068 --> 01:24:29,068
+Okay, now, firstly I want to cancel logarithm function.
+
+1002
+01:24:29,068 --> 01:24:31,068
+How can we cancel logarithm function?
+
+1003
+01:24:31,068 --> 01:24:36,068
+I said that inverse of logarithm function is exponent function.
+
+1004
+01:24:36,068 --> 01:24:43,068
+Okay, but it is not natural exponent and natural logarithm function.
+
+1005
+01:24:43,068 --> 01:24:55,068
+If you don't have anything here, it means that your base is what?
+
+1006
+01:24:55,068 --> 01:24:56,068
+It is 10.
+
+1007
+01:24:56,068 --> 01:24:57,068
+In high school, 10.
+
+1008
+01:24:57,068 --> 01:24:58,068
+10.
+
+1009
+01:24:58,068 --> 01:25:00,068
+So, we have to put 10 in the...
+
+1010
+01:25:00,068 --> 01:25:10,068
+So, I have to write 10 to the power minus 1 less or equal to 10 to the power logarithm.
+
+1011
+01:25:10,068 --> 01:25:22,068
+Now, I can cancel here and here.
+
+1012
+01:25:22,068 --> 01:25:25,068
+I have 1 over 10.
+
+1013
+01:25:25,068 --> 01:25:28,068
+Less or equal to...
+
+1014
+01:25:28,068 --> 01:25:31,068
+I have x over 10.
+
+1015
+01:25:31,068 --> 01:25:34,068
+Less or equal to 10.
+
+1016
+01:25:34,068 --> 01:25:38,068
+Here, I want to find what is x.
+
+1017
+01:25:38,068 --> 01:25:41,068
+And lastly, I have to product with 10.
+
+1018
+01:25:41,068 --> 01:25:47,068
+Of each part, I will have 1 less or equal to x less or equal to 100.
+
+1019
+01:25:47,068 --> 01:25:50,068
+This is the first condition.
+
+1020
+01:25:50,068 --> 01:25:51,068
+And lastly, I will have to do this condition.
+
+1021
+01:25:51,068 --> 01:26:19,068
+Thank you.
+
+1022
+01:25:54,420 --> 01:26:01,739
+For logaritma function, if they don't write anything, the base will be always 10.
+
+1023
+01:26:01,739 --> 01:26:08,699
+Okay. For the other base, they have to write, but if they don't write anything, the base will be always 10.
+
+1024
+01:26:08,699 --> 01:26:17,880
+This is your first condition. Okay. This is the first condition. And what about the other condition?
+
+1025
+01:26:17,880 --> 01:26:27,880
+I can write that here x has to be positive. If you product with 10. Okay. Now I have to take the intersection.
+
+1026
+01:26:27,880 --> 01:26:36,480
+They said that from the first condition, it will be between 1 and 100. Okay. It is closed interval.
+
+1027
+01:26:39,988 --> 01:26:56,387
+and for here x has to be greater than zero. This part is open interval to the infinity. And now I have to take the intersection of these two conditions.
+
+1028
+01:26:59,956 --> 01:27:10,216
+So our domain will be domain of f will be between 1 to 100.
+
+1029
+01:27:11,216 --> 01:27:13,416
+What about the endpoints?
+
+1030
+01:27:13,596 --> 01:27:17,516
+I have here equality here and here.
+
+1031
+01:27:20,256 --> 01:27:21,956
+It would be closed bracket.
+
+1032
+01:27:22,115 --> 01:27:23,815
+So I have a closed interval, yes.
+
+1033
+01:27:24,756 --> 01:27:25,916
+This is our domain.
+
+1034
+01:27:26,916 --> 01:27:27,275
+Okay.
+
+1035
+01:27:27,836 --> 01:27:29,056
+Do you have any question here?
+
+1036
+01:27:29,056 --> 01:27:30,296
+Did you understand?
+
+1037
+01:27:31,775 --> 01:27:33,056
+Doctor, why did we...
+
+1038
+01:27:33,916 --> 01:27:37,636
+The numbers between 0 and 1, we didn't take it.
+
+1039
+01:27:38,296 --> 01:27:41,596
+It must be from 0 until 100.
+
+1040
+01:27:42,115 --> 01:27:43,516
+Okay, let me explain.
+
+1041
+01:27:44,395 --> 01:27:50,476
+If you have more than one condition, you have to take the intersection of these conditions
+
+1042
+01:27:50,476 --> 01:27:54,576
+because for each condition, it has to possess the function.
+
+1043
+01:27:54,576 --> 01:27:55,076
+Okay.
+
+1044
+01:27:55,716 --> 01:28:07,036
+But in here, if you take this part, if you take this part, okay, and this part, the first condition is possessed, but the second condition is not possessed.
+
+1045
+01:28:07,036 --> 01:28:08,036
+Sorry.
+
+1046
+01:28:08,036 --> 01:28:09,036
+I understand.
+
+1047
+01:28:09,036 --> 01:28:09,416
+Sorry.
+
+1048
+01:28:09,416 --> 01:28:13,496
+The second condition possessed, but here it doesn't possess.
+
+1049
+01:28:13,496 --> 01:28:17,256
+So you have to take the intersection of all conditions.
+
+1050
+01:28:17,775 --> 01:28:20,296
+Bütün hepsini ortağına almak zorundasın.
+
+1051
+01:28:20,376 --> 01:28:22,096
+Çünkü bütün hepsini sağlamak zorunda.
+
+1052
+01:28:22,695 --> 01:28:23,935
+Okay.
+
+1053
+01:28:23,935 --> 01:28:29,655
+In this kind of questions, the important part is to determine the number of conditions.
+
+1054
+01:28:29,655 --> 01:28:34,456
+If you forgot something, your solution, your domain will be wrong.
+
+1055
+01:28:34,636 --> 01:28:34,916
+Okay.
+
+1056
+01:28:35,576 --> 01:28:37,895
+So you have to continue step by step.
+
+1057
+01:28:38,136 --> 01:28:38,296
+Okay.
+
+1058
+01:28:38,775 --> 01:28:39,416
+Can I ask something?
+
+1059
+01:28:39,615 --> 01:28:40,016
+Yes.
+
+1060
+01:28:40,016 --> 01:28:40,416
+Of course.
+
+1061
+01:28:40,996 --> 01:28:42,655
+Why we let arksine...
+
+1062
+01:28:42,655 --> 01:28:44,076
+Could you repeat?
+
+1063
+01:28:44,815 --> 01:28:45,355
+Yes.
+
+1064
+01:28:45,695 --> 01:28:49,775
+Firstly, you have to start with the outside function.
+
+1065
+01:28:50,275 --> 01:28:54,596
+So arksine function, the condition for arksine function is minus one to one.
+
+1066
+01:28:54,596 --> 01:28:58,756
+So after that, you don't need to look at arksine function.
+
+1067
+01:28:58,876 --> 01:29:00,775
+You have to look at inside of the function.
+
+1068
+01:29:00,935 --> 01:29:02,416
+So I delete here.
+
+1069
+01:29:02,895 --> 01:29:03,115
+Okay.
+
+1070
+01:29:03,376 --> 01:29:03,916
+No problem.
+
+1071
+01:29:04,636 --> 01:29:05,275
+And already...
+
+1072
+01:29:05,275 --> 01:29:06,115
+Can I...
+
+1073
+01:29:06,115 --> 01:29:06,916
+Yes.
+
+1074
+01:29:07,996 --> 01:29:10,355
+Can I...
+
+1075
+01:29:10,355 --> 01:29:15,516
+Can you explain the 10 that cancel the logarithm?
+
+1076
+01:29:15,836 --> 01:29:16,076
+Here.
+
+1077
+01:29:16,296 --> 01:29:17,556
+I still don't understand.
+
+1078
+01:29:17,996 --> 01:29:18,195
+Here.
+
+1079
+01:29:18,195 --> 01:29:19,195
+The 10...
+
+1080
+01:29:19,195 --> 01:29:19,876
+No.
+
+1081
+01:29:21,076 --> 01:29:21,996
+That part.
+
+1082
+01:29:21,996 --> 01:29:25,016
+When you cancel the logarithm.
+
+1083
+01:29:25,655 --> 01:29:25,956
+Okay.
+
+1084
+01:29:26,416 --> 01:29:27,476
+Let me kick.
+
+1085
+01:29:27,476 --> 01:29:27,796
+Okay.
+
+1086
+01:29:33,043 --> 01:29:39,923
+If you have ln or logarithm function,
+
+1087
+01:29:40,644 --> 01:29:46,403
+I have to cancel. The inverse of logarithm function is exponent function.
+
+1088
+01:29:46,403 --> 01:29:52,003
+For this I have to take, let me write one thing, if you have ln x over 10,
+
+1089
+01:29:52,003 --> 01:30:00,884
+if it is like this, and if you want to cancel, your base for ln function is e.
+
+1090
+01:30:00,884 --> 01:30:08,804
+So you have to write e to the power minus one less or equal to e to the power ln x over 10,
+
+1091
+01:30:10,403 --> 01:30:16,564
+less or equal to e to the power one. I know that exponent functions and ln functions are
+
+1092
+01:30:16,564 --> 01:30:26,243
+inverse to each other, so I can cancel directly. So your result will be one over e less or equal to x
+
+1093
+01:30:26,243 --> 01:30:35,684
+over 10 less or equal to e. Okay, now I cancel the ln function. But in this example, it is logarithm.
+
+1094
+01:30:36,243 --> 01:30:43,203
+If they don't write anything, it means that your base is 10. Okay, so you will make the same thing.
+
+1095
+01:30:43,203 --> 01:30:51,523
+So 10 to the power minus one less or equal to 10 to the power logarithm
+
+1096
+01:30:53,203 --> 01:31:02,083
+x over 10 less or equal to 10 to the power one. Now I know that they are inverse of each other,
+
+1097
+01:31:02,083 --> 01:31:10,323
+so I can cancel logarithm and 10 here. So I will have 1 over 10 less or equal to x over 10
+
+1098
+01:31:10,323 --> 01:31:26,644
+and less or equal to 10. And lastly, I product each part with 10. Okay.
+
+1099
+01:31:22,163 --> 01:31:23,663
+Aaaaay.
+
+1100
+01:31:28,979 --> 01:31:35,979
+Okay, actually this written as yes, yes, yes.
+
+1101
+01:31:35,979 --> 01:31:40,639
+Yes, you can write, you are asking like this.
+
+1102
+01:31:41,299 --> 01:31:49,919
+Minus one less or equal to it is logarithm x minus logarithm 10.
+
+1103
+01:31:51,619 --> 01:31:52,599
+But it is difficult.
+
+1104
+01:31:56,459 --> 01:31:58,000
+Arkadaşlar onu götürmedik.
+
+1105
+01:31:58,000 --> 01:32:00,459
+Hani bir daha ona bakmayın diye ben üzerini çizdim.
+
+1106
+01:32:00,579 --> 01:32:02,439
+Hani onunla işimiz bitti anlamında çizdim.
+
+1107
+01:32:02,539 --> 01:32:03,679
+İptal etmiyoruz tabii ki.
+
+1108
+01:32:04,459 --> 01:32:06,759
+Arkasında işimiz bitti artık ona bakmıyorsunuz.
+
+1109
+01:32:07,159 --> 01:32:09,239
+İçine bakarak devam ediyorsunuz.
+
+1110
+01:32:09,799 --> 01:32:13,979
+Okay, firstly, you write your first condition about arcsine function.
+
+1111
+01:32:14,939 --> 01:32:17,619
+When you write your condition, you don't need to look at.
+
+1112
+01:32:17,779 --> 01:32:19,639
+After that, you have to look at insights.
+
+1113
+01:32:20,199 --> 01:32:22,679
+And after that, you have to look at insights also.
+
+1114
+01:32:23,699 --> 01:32:23,979
+Okay?
+
+1115
+01:32:23,979 --> 01:32:26,179
+Let me give you another example.
+
+1116
+01:32:26,179 --> 01:32:27,619
+After that, you will understand.
+
+1117
+01:32:30,039 --> 01:32:30,439
+Okay.
+
+1118
+01:32:30,559 --> 01:32:32,599
+For example, let us look at this example.
+
+1119
+01:32:33,199 --> 01:32:33,339
+Okay.
+
+1120
+01:32:34,119 --> 01:32:36,299
+I have ln function.
+
+1121
+01:32:36,919 --> 01:32:42,559
+What do we know about ln function for the domain inside of the ln function has to be positive.
+
+1122
+01:32:42,559 --> 01:32:45,019
+So, let us write our condition.
+
+1123
+01:32:45,019 --> 01:32:45,819
+Okay.
+
+1124
+01:32:48,819 --> 01:33:02,839
+Our condition is x squared minus 3x plus 2 over x plus 1 has to be positive.
+
+1125
+01:33:04,419 --> 01:33:09,399
+And, okay, now I write the condition about ln function.
+
+1126
+01:33:09,399 --> 01:33:11,359
+Now, I will look at insight.
+
+1127
+01:33:12,319 --> 01:33:15,419
+Inside of ln function, I have a rational function.
+
+1128
+01:33:16,299 --> 01:33:20,019
+Because in your numerator and denominator, you have polynomials.
+
+1129
+01:33:20,559 --> 01:33:22,619
+What do we know about rational function?
+
+1130
+01:33:23,139 --> 01:33:26,399
+The important part, denominator can't be zero.
+
+1131
+01:33:26,399 --> 01:33:32,759
+So, I have to write x plus 1 has to be negative.
+
+1132
+01:33:34,119 --> 01:33:38,119
+So, here, for this question, we have two conditions.
+
+1133
+01:33:38,579 --> 01:33:41,459
+The first condition comes from ln function.
+
+1134
+01:33:41,459 --> 01:33:45,019
+And the other condition comes from rational function.
+
+1135
+01:33:45,539 --> 01:33:47,539
+Now, until here, do you have any question?
+
+1136
+01:33:47,539 --> 01:33:51,459
+You have to start from the outside.
+
+1137
+01:33:51,619 --> 01:33:54,159
+After that, you have to look at insight and insight.
+
+1138
+01:33:54,979 --> 01:33:55,359
+Okay.
+
+1139
+01:33:55,579 --> 01:33:58,919
+For the first condition, I want to make a sign table.
+
+1140
+01:33:59,739 --> 01:34:02,319
+But before that, let us find the roots here.
+
+1141
+01:34:02,759 --> 01:34:07,699
+Our roots will be 2, 1, negative, negative.
+
+1142
+01:34:07,699 --> 01:34:10,879
+So, let us make a sign table here.
+
+1143
+01:34:12,839 --> 01:34:23,000
+Our functions will be x minus 1, x minus 2, x plus 1.
+
+1144
+01:34:23,000 --> 01:34:25,000
+So, let us make a sign table here.
+
+1145
+01:34:25,000 --> 01:34:27,000
+Our functions will be x minus 1, x minus 2, x plus 1.
+
+1146
+01:34:27,000 --> 01:34:29,000
+So, let us make a sign table here.
+
+1147
+01:34:29,000 --> 01:34:35,000
+Our functions will be x minus 1, x minus 2, x plus 1.
+
+1148
+01:34:26,739 --> 01:34:33,380
+ve yazarız 1, 2, 3
+
+1149
+01:34:33,380 --> 01:34:37,779
+ve 1 ve 1 ve 2
+
+1150
+01:34:37,779 --> 01:35:07,779
+ve 1 ve
+
+1151
+01:35:07,779 --> 01:35:37,779
+1 ve 1
+
+1152
+01:35:37,779 --> 01:35:42,059
+ve 1 ve
+
+1153
+01:35:45,587 --> 01:36:07,688
+minus 1 to 1 and union 2 to infinity. Now let us look at the endpoints. Do we have any equality here? No. So all the intervals will be open interval. This part comes from the first condition.
+
+1154
+01:36:07,688 --> 01:36:26,188
+Okay. Comes from the first condition. For the second condition, I will say that x can't be minus 1. Now I have to take the intersection of these two conditions.
+
+1155
+01:36:30,707 --> 01:36:34,847
+Okay, so what can you say about your domain? What I will write here.
+
+1156
+01:36:39,699 --> 01:37:04,500
+Okay, this is your root. Okay, from the before the root and after the root, the sign will change. You can write any number. For example, if you write 0 here, it is negative. 0 is on the left side, so it will be minus, minus. After that, it will be positive, positive. Or, you can say that until the root, you will take the opposite sign of x.
+
+1157
+01:37:09,140 --> 01:37:13,140
+Okay, okay. Okay, let me make again, okay?
+
+1158
+01:37:21,140 --> 01:37:26,579
+Okay, firstly, we find the components of the function. What are they?
+
+1159
+01:37:30,020 --> 01:37:32,100
+It is x minus 1.
+
+1160
+01:37:35,539 --> 01:37:40,119
+x minus 2 over x plus 1.
+
+1161
+01:37:43,119 --> 01:37:47,279
+And in the result, I want to find our condition.
+
+1162
+01:37:48,439 --> 01:37:49,979
+It is our condition, it is this.
+
+1163
+01:37:50,300 --> 01:37:50,399
+Okay.
+
+1164
+01:37:51,199 --> 01:37:54,220
+I want to determine this product, the division.
+
+1165
+01:37:54,699 --> 01:38:00,380
+So we have three roots here, here, here.
+
+1166
+01:38:00,380 --> 01:38:00,859
+Okay.
+
+1167
+01:38:00,859 --> 01:38:05,600
+So the roots will be minus 1, 1 and 2.
+
+1168
+01:38:06,239 --> 01:38:07,460
+For here, it is 1.
+
+1169
+01:38:07,859 --> 01:38:08,979
+For here, 2.
+
+1170
+01:38:09,359 --> 01:38:10,819
+Here, it will be minus 1.
+
+1171
+01:38:11,739 --> 01:38:18,760
+The left side of the roots and the right side of the roots sign will be different.
+
+1172
+01:38:19,279 --> 01:38:22,439
+So for the left side, you can write any number.
+
+1173
+01:38:22,619 --> 01:38:25,840
+If I write 0 here, it will be negative.
+
+1174
+01:38:25,840 --> 01:38:28,140
+0 is on the left side, it will be negative.
+
+1175
+01:38:28,279 --> 01:38:28,579
+Negative.
+
+1176
+01:38:28,579 --> 01:38:30,920
+After that, it will be positive.
+
+1177
+01:38:31,640 --> 01:38:34,600
+If I write 0 here, you can see that it is negative.
+
+1178
+01:38:35,180 --> 01:38:36,640
+0 is on the left side.
+
+1179
+01:38:36,880 --> 01:38:39,000
+Negative, negative, negative, positive.
+
+1180
+01:38:39,739 --> 01:38:41,960
+Here, if I write 0, it will be positive.
+
+1181
+01:38:42,619 --> 01:38:44,340
+So 0 is on this side.
+
+1182
+01:38:44,760 --> 01:38:47,199
+It will be positive, positive, positive.
+
+1183
+01:38:47,720 --> 01:38:49,220
+It will be negative.
+
+1184
+01:38:49,220 --> 01:38:51,979
+Now, I have to find this.
+
+1185
+01:38:52,060 --> 01:38:54,019
+This is the division or product.
+
+1186
+01:38:54,239 --> 01:38:55,279
+It is not important.
+
+1187
+01:38:55,680 --> 01:38:56,800
+The product is the same.
+
+1188
+01:38:57,399 --> 01:39:01,539
+Negative, positive.
+
+1189
+01:39:01,539 --> 01:39:05,500
+And I want to take the positive part here and here.
+
+1190
+01:39:05,500 --> 01:39:12,659
+So this part is between minus 1 to 1 in the open interval because here I don't have any equality here.
+
+1191
+01:39:13,380 --> 01:39:15,420
+It will be open interval and union.
+
+1192
+01:39:16,060 --> 01:39:20,279
+For the second part, it is 2 to infinity and it will be open interval.
+
+1193
+01:39:20,279 --> 01:39:24,500
+For the second condition, they said that x can't be minus 1.
+
+1194
+01:39:25,659 --> 01:39:34,399
+And you can see that the first condition also contained x is not equal to minus 1.
+
+1195
+01:39:34,399 --> 01:39:43,420
+So our domain of f will be minus 1 to 1, union 2 to infinity.
+
+1196
+01:39:43,539 --> 01:39:45,939
+Zaten değil, ikinci koşulu zaten içeriyor.
+
+1197
+01:39:46,800 --> 01:39:49,239
+So our domain will be this.
+
+1198
+01:39:52,739 --> 01:39:53,079
+Okay?
+
+1199
+01:39:58,676 --> 01:39:59,796
+Doğru yemen o kesin?
+
+1200
+01:40:07,315 --> 01:40:14,155
+Okay, so if you don't have any question, I will solve one more question. After that, we can take a break.
+
+1201
+01:40:14,155 --> 01:40:17,515
+And look at the questions. Okay.
+
+1202
+01:40:21,427 --> 01:40:29,108
+ok let's look at the first example in the first example we have different functions and there is
+
+1203
+01:40:29,108 --> 01:40:36,387
+a sum here so you have to look at step by step for the first equation for the first function
+
+1204
+01:40:36,387 --> 01:40:43,028
+it is this it is a rational function and what do we know about rational function in the rational
+
+1205
+01:40:43,028 --> 01:40:55,188
+function our domain is real number but only x square minus 4 can't be 0 this is our first condition and
+
+1206
+01:40:57,907 --> 01:41:07,108
+now i have to look at the second part x square plus 1 it will be always positive because the roots of
+
+1207
+01:41:07,108 --> 01:41:13,667
+these functions are have complex root but we are studying in a real number so it will be always
+
+1208
+01:41:13,667 --> 01:41:22,148
+positive only i have condition for the square root function the power is even so i have to write our
+
+1209
+01:41:22,148 --> 01:41:36,707
+condition is x minus 2 has to be positive or zero and for the last it is a square root function and
+
+1210
+01:41:36,707 --> 01:41:47,347
+the power is even our condition will be x minus 1 has to be greater or equal to zero now we have three
+
+1211
+01:41:47,347 --> 01:42:00,307
+conditions for domain of this function if you look at the second and the third condition it is x is greater
+
+1212
+01:42:00,307 --> 01:42:16,307
+or equal to zero it is x greater or equal to zero you can see that this part contains the last part so the intersection of these conditions x is greater or equal to two
+
+1213
+01:42:17,268 --> 01:42:29,907
+for the last example for the first condition i can say that x can't be plus or minus two okay now i have to find the intersection of these conditions
+
+1214
+01:42:29,907 --> 01:42:36,148
+let me sketch here they said that x will be greater or equal to zero
+
+1215
+01:42:36,148 --> 01:42:41,907
+sorry it is two they said that it is greater or equal to two
+
+1216
+01:42:45,028 --> 01:42:57,907
+and x can't be two or
+
+1217
+01:42:57,475 --> 01:43:19,475
+Bir sonraki bölümünde.
+
+1218
+01:43:19,475 --> 01:43:21,475
+Çünkü bir sonraki bölümünde.
+
+1219
+01:43:21,475 --> 01:43:23,475
+Bir sonraki bölümünde.
+
+1220
+01:43:23,475 --> 01:43:25,475
+E.
+
+1221
+01:43:25,475 --> 01:43:27,475
+Bu bir sonraki bölümünde.
+
+1222
+01:43:27,475 --> 01:44:11,475
+Bir sonraki bölümünde.
+
+1223
+01:44:11,475 --> 01:44:13,475
+Kıskara artı bir.
+
+1224
+01:44:13,475 --> 01:44:15,475
+Bir sonraki bölümünde.
+
+1225
+01:44:15,475 --> 01:44:17,475
+bölümünde.
+
+1226
+01:44:17,475 --> 01:44:19,475
+Köklerin artı eksi i olması gerekiyor.
+
+1227
+01:44:19,475 --> 01:44:21,475
+Ama biz real saylarda çalışıyoruz.
+
+1228
+01:44:21,475 --> 01:44:23,475
+Kopleksde çalışmadığımız için.
+
+1229
+01:44:23,475 --> 01:44:25,475
+O kökler buralarda.
+
+1230
+01:44:25,475 --> 01:44:27,475
+burada da çalıştığımız için.
+
+1231
+01:44:27,475 --> 01:44:29,475
+Hiçbir zaman bu sıfır olmayacak.
+
+1232
+01:44:29,475 --> 01:44:31,475
+Dolayısıyla bizim denominaltor'imizde.
+
+1233
+01:44:31,475 --> 01:44:33,475
+Hiçbir problemimiz yok.
+
+1234
+01:44:33,475 --> 01:44:35,475
+O yüzden oraya bir condition gelmiyor.
+
+1235
+01:44:35,475 --> 01:44:44,585
+Bu, bu
+
+1236
+01:44:49,140 --> 01:45:05,140
+2 to infinity
+
+1237
+01:45:07,140 --> 01:45:09,140
+ok
+
+1238
+01:45:09,140 --> 01:45:11,140
+do you have any questions
+
+1239
+01:45:11,140 --> 01:45:13,140
+ok
+
+1240
+01:45:13,140 --> 01:45:15,140
+if you don't have any questions let's take a break
+
+1241
+01:45:15,140 --> 01:45:17,140
+after the break I will solve some other questions
+
+1242
+01:45:17,140 --> 01:45:19,140
+ok
+
+1243
+01:45:19,140 --> 01:45:21,140
+can I ask a question
+
+1244
+01:45:21,140 --> 01:45:23,140
+yes
+
+1245
+01:45:23,140 --> 01:45:25,140
+when we're talking about arcsine
+
+1246
+01:45:25,140 --> 01:45:27,140
+functions
+
+1247
+01:45:27,140 --> 01:45:29,140
+yes
+
+1248
+01:45:29,140 --> 01:45:31,140
+like we write arcsine
+
+1249
+01:45:31,140 --> 01:45:33,140
+e power of x
+
+1250
+01:45:33,140 --> 01:45:35,140
+what is the domain
+
+1251
+01:45:35,140 --> 01:45:37,140
+and range of this
+
+1252
+01:45:37,140 --> 01:45:39,140
+function
+
+1253
+01:45:39,140 --> 01:45:41,140
+arcsine
+
+1254
+01:45:41,140 --> 01:45:43,140
+you can write everything
+
+1255
+01:45:43,140 --> 01:45:45,140
+domain of range are the same
+
+1256
+01:45:45,140 --> 01:45:47,140
+you are talking about
+
+1257
+01:45:47,140 --> 01:45:49,140
+it's real number
+
+1258
+01:45:49,140 --> 01:45:51,140
+ok arcsine
+
+1259
+01:45:51,140 --> 01:45:53,140
+you are talking about e to the power of x
+
+1260
+01:45:53,140 --> 01:45:55,140
+ok
+
+1261
+01:45:55,140 --> 01:45:56,140
+yes yes
+
+1262
+01:45:56,140 --> 01:45:57,140
+ok so let us find our domain
+
+1263
+01:45:57,140 --> 01:45:59,140
+it will be between minus 1
+
+1264
+01:45:59,140 --> 01:46:01,140
+less or equal to e to the power of x
+
+1265
+01:46:01,140 --> 01:46:03,140
+less or equal to 1
+
+1266
+01:46:03,140 --> 01:46:04,140
+ok
+
+1267
+01:46:04,140 --> 01:46:06,140
+so if you want to cancel
+
+1268
+01:46:06,140 --> 01:46:08,140
+exponent function
+
+1269
+01:46:08,140 --> 01:46:10,140
+you will take
+
+1270
+01:46:10,140 --> 01:46:12,140
+logarithm
+
+1271
+01:46:12,140 --> 01:46:14,140
+sorry
+
+1272
+01:46:14,140 --> 01:46:16,140
+x'i göndermek istiyorsak
+
+1273
+01:46:16,140 --> 01:46:18,140
+ln olarak yazmamız gerekiyor
+
+1274
+01:46:18,140 --> 01:46:20,140
+bir saniye
+
+1275
+01:46:20,140 --> 01:46:24,140
+ln x'i zaten şu kısmı almıyorsunuz
+
+1276
+01:46:24,140 --> 01:46:30,140
+because i know that ln x is greater than 0
+
+1277
+01:46:30,140 --> 01:46:32,140
+it is related to range of functions
+
+1278
+01:46:32,140 --> 01:46:34,140
+so it will be 0
+
+1279
+01:46:34,140 --> 01:46:36,140
+e to the power of x
+
+1280
+01:46:36,140 --> 01:46:38,140
+less or equal to 1
+
+1281
+01:46:38,140 --> 01:46:39,140
+ok
+
+1282
+01:46:39,140 --> 01:46:41,140
+şu kısmı zaten olmayacak
+
+1283
+01:46:41,140 --> 01:46:43,140
+çünkü exponent function'ın zaten
+
+1284
+01:46:43,140 --> 01:46:44,140
+hatta şey
+
+1285
+01:46:44,140 --> 01:46:45,140
+0 da olmayacak
+
+1286
+01:46:45,140 --> 01:46:47,140
+şurayı silmem gerekiyor
+
+1287
+01:46:47,140 --> 01:46:48,140
+aslında şöyle al
+
+1288
+01:46:48,140 --> 01:46:49,140
+yani öbür kısmı değil de
+
+1289
+01:46:49,140 --> 01:46:50,140
+buraya alıyorsunuz
+
+1290
+01:46:50,140 --> 01:46:51,140
+aa
+
+1291
+01:46:51,140 --> 01:46:52,140
+bir saniye
+
+1292
+01:46:52,140 --> 01:46:53,140
+ah
+
+1293
+01:46:53,140 --> 01:46:54,140
+o zaman ne yapacağız
+
+1294
+01:46:54,140 --> 01:46:56,140
+exponent function'ın burada olması
+
+1295
+01:46:56,140 --> 01:46:58,140
+olması gerektiği için
+
+1296
+01:46:58,140 --> 01:47:00,140
+ln
+
+1297
+01:47:00,140 --> 01:47:02,140
+0 artı
+
+1298
+01:47:02,140 --> 01:47:04,140
+küçük eşit x
+
+1299
+01:47:04,140 --> 01:47:05,140
+küçük eşit
+
+1300
+01:47:05,140 --> 01:47:06,140
+aa
+
+1301
+01:47:06,140 --> 01:47:08,140
+bir saniye kafam karıştı
+
+1302
+01:47:08,140 --> 01:47:10,140
+ya
+
+1303
+01:47:10,140 --> 01:47:12,140
+aynı olması gerekiyor ya
+
+1304
+01:47:12,140 --> 01:47:13,140
+eee
+
+1305
+01:47:15,140 --> 01:47:17,140
+bunu bir düşüneyim olur mu şimdi
+
+1306
+01:47:17,140 --> 01:47:18,140
+alright
+
+1307
+01:47:18,140 --> 01:47:19,140
+yanlış bir şey yazmayın çünkü
+
+1308
+01:47:19,140 --> 01:47:21,140
+şimdi bakmam lazım tamam
+
+1309
+01:47:21,140 --> 01:47:22,140
+ama şimdi şeyden sonra bakayım
+
+1310
+01:47:22,140 --> 01:47:24,140
+o tarz bir örnek vereyim size
+
+1311
+01:47:24,140 --> 01:47:26,140
+senin sorduğun içi sırrı x değil de
+
+1312
+01:47:26,140 --> 01:47:27,140
+başka bir şey olursa ne olur
+
+1313
+01:47:27,140 --> 01:47:28,140
+diye soruyorsun değil mi
+
+1314
+01:47:28,140 --> 01:47:31,140
+eee
+
+1315
+01:47:31,140 --> 01:47:32,140
+eee siz gösterdiniz de
+
+1316
+01:47:32,140 --> 01:47:34,140
+çok geçtiğiniz için ben anlayamadım
+
+1317
+01:47:34,140 --> 01:47:36,140
+yalnız hızlı devam ediyorsan
+
+1318
+01:47:36,140 --> 01:47:38,140
+devam ediyorsan bana söyleyin lütfen
+
+1319
+01:47:38,140 --> 01:47:40,140
+ben bazen kaptırıp gidebiliyorum
+
+1320
+01:47:40,140 --> 01:47:42,140
+ben bununla ilgili başka örnek var mıydı
+
+1321
+01:47:42,140 --> 01:47:43,140
+aslında var diyelim de
+
+1322
+01:47:43,140 --> 01:47:44,140
+bir bakayım
+
+1323
+01:47:44,140 --> 01:47:45,140
+tamam
+
+1324
+01:47:45,140 --> 01:47:46,140
+teşekkürler
+
+1325
+01:47:46,140 --> 01:47:47,140
+tamam
+
+1326
+01:47:47,140 --> 01:47:48,140
+bak burada var mesela bir tane daha
+
+1327
+01:47:48,140 --> 01:47:50,140
+onu da çözeceğim
+
+1328
+01:47:50,140 --> 01:47:52,140
+bir ara vereyim sonra anlatayım ben size gel tamam
+
+1329
+01:57:11,155 --> 01:57:22,676
+Okay, so let us start again. Your friend asked about inverse function. Actually, we will see inverse function later, but I want to show something here, okay?
+
+1330
+01:57:26,036 --> 01:57:34,595
+I want to correct one thing here. Okay, this is your sine, cosine, tangent and cotangent function.
+
+1331
+01:57:34,595 --> 01:57:53,576
+But if you want to take inverse of this function, the important part, it has to be one to one. Okay, so we can't take the sine or cosine functions graph, all of them. Only I can take this part because only at this part it will be one to one.
+
+1332
+01:57:53,576 --> 01:58:13,536
+So for inverse functions, we will see later actually. I want to show here. This is the inverse arc sine x. Your domain will be between minus one to one. But what about range? Range is different. Range will be between minus pi over two to pi over two.
+
+1333
+01:58:13,536 --> 01:58:26,475
+Only in this interval, only in this interval, it will be one to one. Okay, we can't take any all of the real number for inverse trigonometric function. For cosine, your domain will be between minus one to one.
+
+1334
+01:58:26,475 --> 01:58:40,076
+But our range will be only between from zero to pi. For tangent function, our domain is real number, but our range will be similar with cosine function.
+
+1335
+01:58:40,076 --> 01:58:58,395
+But it will be open interval and for let me look at here for cotangent functions. Our domain is real number, but our range will be between zero to pi. Okay, we will see these functions in detail in the next weeks.
+
+1336
+01:58:58,395 --> 01:59:13,655
+But only you have to know that if we want to take inverse of this function, it has to be one to one. So for range, we have some restriction. For sine function, it will be between minus pi over two to pi over two.
+
+1337
+01:59:13,655 --> 01:59:20,496
+For cosine function, it will be from zero to pi. Only these two parts will be important for you.
+
+1338
+01:59:23,996 --> 01:59:25,336
+Okay, one second.
+
+1339
+01:59:25,336 --> 01:59:26,336
+And then, let's go back to the next.
+
+1340
+01:59:26,336 --> 01:59:43,336
+Okay, let's go back to the next.
+
+1341
+01:59:39,252 --> 01:59:41,072
+Evet 1'e 1 olması gerekiyor.
+
+1342
+01:59:41,172 --> 01:59:45,912
+Tersini alacağımız için 1'e 1 olması gerektiği için range'lerde farklılık var.
+
+1343
+01:59:46,012 --> 01:59:47,132
+Range'de R'yi alamıyor.
+
+1344
+01:59:47,272 --> 01:59:52,552
+Çünkü orada zaten fonksiyonlarda periyodik oldukları için 1'den fazla yere çakışacak.
+
+1345
+01:59:52,712 --> 01:59:57,552
+O yüzden sadece 1'e 1 olan kısmı aldığımız için range'lerimizde değişiklik var.
+
+1346
+01:59:58,552 --> 01:59:59,692
+Evet, evet, evet.
+
+1347
+01:59:59,812 --> 02:00:01,231
+1'e 1 ve örten olması gerekiyor.
+
+1348
+02:00:01,231 --> 02:00:08,532
+O yüzden sadece range'lerimizde sin üstü eksi P bölü 2 ile P bölü 2, kosün üstü de 0 P arasında almamız gerekiyor.
+
+1349
+02:00:08,532 --> 02:00:10,832
+Ok, let's look at this example.
+
+1350
+02:00:11,712 --> 02:00:13,212
+We have two different functions.
+
+1351
+02:00:13,432 --> 02:00:15,372
+The first one is arcsign function.
+
+1352
+02:00:15,612 --> 02:00:20,612
+I know that for domain of arcsign function, it has to be between minus 1 to 1.
+
+1353
+02:00:21,612 --> 02:00:28,132
+x minus 5 over 2, less or equal to 1.
+
+1354
+02:00:29,292 --> 02:00:35,592
+And also first I want to write the other question your friend asked previously.
+
+1355
+02:00:35,592 --> 02:00:39,632
+What is the domain of this function and range?
+
+1356
+02:00:39,832 --> 02:00:47,772
+Ok, I said that it will be between minus 1 e to the power x, less or equal to 1.
+
+1357
+02:00:48,272 --> 02:00:51,892
+And I know that exponent function has to be greater than 0.
+
+1358
+02:00:52,372 --> 02:00:56,392
+Ok, so e to the power x, less or equal to 1.
+
+1359
+02:00:56,392 --> 02:00:57,692
+You can take this one.
+
+1360
+02:00:57,692 --> 02:01:01,731
+If you want to cancel exponent function, you have to take ln.
+
+1361
+02:01:02,692 --> 02:01:13,192
+ln 0 less or equal to ln e to the power x, less or equal to ln 1.
+
+1362
+02:01:13,192 --> 02:01:21,072
+Ok, and I know that ln 0 is undefined, but here you don't have any equality.
+
+1363
+02:01:21,492 --> 02:01:26,572
+Here it means that minus infinity ln 1 is 0.
+
+1364
+02:01:27,231 --> 02:01:30,932
+And I can cancel ln x and exponent function.
+
+1365
+02:01:31,192 --> 02:01:31,792
+It is x.
+
+1366
+02:01:31,792 --> 02:01:40,152
+Ok, so your domain will be between minus infinity to 0 for this function.
+
+1367
+02:01:40,632 --> 02:01:43,392
+Why the answer is between minus infinity to the 0?
+
+1368
+02:01:43,852 --> 02:01:44,872
+Can you explain that?
+
+1369
+02:01:45,412 --> 02:01:48,412
+Yes, because exponent function can't be 0.
+
+1370
+02:01:49,792 --> 02:01:51,892
+What is exponent function?
+
+1371
+02:01:51,892 --> 02:01:54,032
+Done.
+
+1372
+02:01:56,756 --> 02:02:07,916
+x is this. But it can't be zero. Okay? Your domain is real number, but your range will be from zero to infinity.
+
+1373
+02:02:08,916 --> 02:02:14,956
+And according to your range, it can't be zero. So this part has to be opal interval. Okay?
+
+1374
+02:02:16,496 --> 02:02:25,136
+But if it is equality, L'N0 is not defined. So here I can write minus infinity because here I don't have any quality. Okay?
+
+1375
+02:02:25,136 --> 02:02:34,096
+They don't have any quality. So your domain will be between minus infinity to zero, zero close, this is opal. Okay?
+
+1376
+02:02:34,476 --> 02:02:35,636
+Your domain is this.
+
+1377
+02:02:43,028 --> 02:03:08,967
+About the range, I said that for arcsine function will be between minus pi over 2, less or equal to, sorry, your range will be minus pi over 2 to pi over 2. It won't change, okay?
+
+1378
+02:03:08,967 --> 02:03:35,328
+Okay, not at all. Okay, so let us look at our example. For arcsine function, the domain will be between minus 1 to 1. This is our first condition. And for the other function, we have logarithm function. For the logarithm function, inside of the logarithm function has to be post.
+
+1379
+02:03:40,979 --> 02:03:52,559
+Yes, e to the power minus infinity is 0. e to the power infinity is infinity. e to the power minus infinity is 0. Yes.
+
+1380
+02:03:54,019 --> 02:03:58,939
+Okay, so let us look at our conditions. Firstly, let us product each part with 2.
+
+1381
+02:03:58,939 --> 02:04:13,119
+I have minus 2, less or equal to x minus 5, less or equal to 2. And for the other condition, x will be less than 6.
+
+1382
+02:04:14,279 --> 02:04:22,919
+After that, let us add each part with 5. It is 3, less or equal to x, less or equal to 7.
+
+1383
+02:04:22,919 --> 02:04:33,299
+Okay, and this is your condition. And the other condition, x is less than 6.
+
+1384
+02:04:33,299 --> 02:04:35,500
+Let us see.
+
+1385
+02:04:39,828 --> 02:04:49,368
+Okay, now I have to take the intersection. In the first condition, they said that it is 3, this is 6, this is 7.
+
+1386
+02:04:49,868 --> 02:05:03,888
+From the first condition, I have an interval from 3 to 7, close interval. And in the second condition, they said that x is less than 6, open interval, to the minus infinity.
+
+1387
+02:05:03,888 --> 02:05:10,488
+After that, I have to take the intersection of these two conditions.
+
+1388
+02:05:15,091 --> 02:05:20,471
+Hayır. Yok, hayır.
+
+1389
+02:05:23,471 --> 02:05:29,612
+For the logaritm function, only inside of the logaritm function has to be 0.
+
+1390
+02:05:30,211 --> 02:05:34,751
+Okay, so our domain is the intersection of these two conditions.
+
+1391
+02:05:35,751 --> 02:05:37,891
+It will be 3 to 6.
+
+1392
+02:05:39,051 --> 02:05:40,791
+Okay, but what?
+
+1393
+02:05:46,931 --> 02:05:47,331
+Evet.
+
+1394
+02:05:51,412 --> 02:05:54,292
+Okay, so what about the endpoints?
+
+1395
+02:05:55,132 --> 02:06:02,992
+For 3, 3 comes from this condition, and this condition I have equality, so it will be closed interval.
+
+1396
+02:06:03,652 --> 02:06:11,492
+6 comes from this condition, and in this condition we don't have inequality, so it will be open interval.
+
+1397
+02:06:15,283 --> 02:06:16,283
+ok?
+
+1398
+02:06:18,743 --> 02:06:20,743
+Do you have any question here?
+
+1399
+02:06:25,908 --> 02:06:28,148
+x5'ten 1'lik konmak zorunda değil mi?
+
+1400
+02:06:29,788 --> 02:06:31,347
+Yok öyle bir şart yok.
+
+1401
+02:06:33,768 --> 02:06:35,288
+x-5 bölü 2'nin
+
+1402
+02:06:35,288 --> 02:06:37,307
+x-1'i artı bir resmin olması gerekiyor.
+
+1403
+02:06:39,008 --> 02:06:40,728
+Ok let us look at again.
+
+1404
+02:06:41,568 --> 02:06:43,628
+Will you understand? Do you have any questions?
+
+1405
+02:06:46,688 --> 02:06:47,048
+Ok.
+
+1406
+02:06:48,268 --> 02:06:50,968
+Ok so let us look at our examples.
+
+1407
+02:06:51,328 --> 02:06:52,448
+We solve one.
+
+1408
+02:06:53,568 --> 02:06:54,807
+Let us look at two.
+
+1409
+02:06:55,908 --> 02:06:56,948
+Ok.
+
+1410
+02:07:00,468 --> 02:07:01,028
+Evet.
+
+1411
+02:07:01,548 --> 02:07:01,868
+Yes.
+
+1412
+02:07:03,108 --> 02:07:03,368
+No.
+
+1413
+02:07:03,908 --> 02:07:06,168
+For the domain you don't have.
+
+1414
+02:07:07,108 --> 02:07:09,948
+For domain of arcsine and arccosine
+
+1415
+02:07:09,948 --> 02:07:12,128
+you will take inside of this function
+
+1416
+02:07:12,128 --> 02:07:13,488
+between minus 1 to 1.
+
+1417
+02:07:14,307 --> 02:07:15,768
+The range is different
+
+1418
+02:07:15,768 --> 02:07:17,268
+but we don't find the range.
+
+1419
+02:07:17,508 --> 02:07:20,188
+Ok only we will find domain of this function.
+
+1420
+02:07:20,408 --> 02:07:23,168
+So for arcsine and arccosine function
+
+1421
+02:07:23,168 --> 02:07:25,028
+it will be between minus 1 to 1.
+
+1422
+02:07:25,028 --> 02:07:26,488
+Ok.
+
+1423
+02:07:26,488 --> 02:07:28,648
+Now let us look at this example.
+
+1424
+02:07:28,648 --> 02:07:31,347
+Firstly we have a square root function
+
+1425
+02:07:31,347 --> 02:07:33,608
+and the square root function
+
+1426
+02:07:33,608 --> 02:07:34,788
+the power is 2.
+
+1427
+02:07:34,788 --> 02:07:35,508
+It is even.
+
+1428
+02:07:36,148 --> 02:07:38,068
+Our first condition will be
+
+1429
+02:07:38,068 --> 02:07:38,628
+ln
+
+1430
+02:07:38,628 --> 02:07:40,668
+and 5x
+
+1431
+02:07:40,668 --> 02:07:44,488
+minus x square over 4
+
+1432
+02:07:44,488 --> 02:07:45,488
+has to be
+
+1433
+02:07:45,488 --> 02:07:49,068
+greater or equal to 0.
+
+1434
+02:07:49,068 --> 02:07:49,908
+And
+
+1435
+02:07:49,908 --> 02:07:53,228
+now we write the condition
+
+1436
+02:07:53,228 --> 02:07:54,908
+about square root functions.
+
+1437
+02:07:55,088 --> 02:07:56,288
+Now we can look at
+
+1438
+02:07:56,288 --> 02:07:58,088
+inside of the square root functions.
+
+1439
+02:07:58,088 --> 02:08:00,168
+It is ln function.
+
+1440
+02:08:00,168 --> 02:08:00,708
+Ok.
+
+1441
+02:08:00,708 --> 02:08:04,088
+Now I have to write condition for ln function.
+
+1442
+02:08:04,088 --> 02:08:06,887
+What is the condition for ln function?
+
+1443
+02:08:06,887 --> 02:08:10,008
+Inside of the ln function
+
+1444
+02:08:10,008 --> 02:08:13,068
+has to be
+
+1445
+02:08:13,068 --> 02:08:13,868
+post.
+
+1446
+02:08:14,628 --> 02:08:15,188
+Ok.
+
+1447
+02:08:15,188 --> 02:08:18,307
+and that's enough.
+
+1448
+02:08:18,428 --> 02:08:20,347
+We have two conditions for here.
+
+1449
+02:08:21,748 --> 02:08:22,128
+Ok.
+
+1450
+02:08:22,768 --> 02:08:23,288
+So
+
+1451
+02:08:23,288 --> 02:08:25,548
+in the first condition
+
+1452
+02:08:25,548 --> 02:08:27,708
+I want to cancel ln function.
+
+1453
+02:08:27,868 --> 02:08:29,988
+How can I cancel ln function?
+
+1454
+02:08:30,648 --> 02:08:32,568
+The inverse of ln function
+
+1455
+02:08:32,568 --> 02:08:34,068
+is exponent function.
+
+1456
+02:08:34,068 --> 02:08:34,908
+So
+
+1457
+02:08:34,908 --> 02:08:40,208
+I want to write as
+
+1458
+02:08:40,208 --> 02:08:42,788
+e to the power ln
+
+1459
+02:08:42,788 --> 02:08:44,927
+5x
+
+1460
+02:08:44,927 --> 02:08:48,008
+minus x square over 4
+
+1461
+02:08:48,008 --> 02:08:50,307
+will be
+
+1462
+02:08:50,307 --> 02:08:52,208
+greater or equal to
+
+1463
+02:08:52,208 --> 02:08:53,688
+e to the power 0.
+
+1464
+02:08:54,508 --> 02:08:55,228
+Now here
+
+1465
+02:08:55,228 --> 02:08:57,788
+I know that ln exponent functions
+
+1466
+02:08:57,788 --> 02:08:59,008
+are inverse function.
+
+1467
+02:08:59,188 --> 02:09:00,807
+I can cancel directly.
+
+1468
+02:09:01,408 --> 02:09:01,708
+So
+
+1469
+02:09:01,708 --> 02:09:02,448
+I have
+
+1470
+02:09:02,448 --> 02:09:03,668
+5x
+
+1471
+02:09:03,668 --> 02:09:06,168
+minus x square
+
+1472
+02:09:06,168 --> 02:09:07,628
+over 4
+
+1473
+02:09:07,628 --> 02:09:08,648
+will be
+
+1474
+02:09:08,648 --> 02:09:11,488
+greater or equal to 1.
+
+1475
+02:09:12,008 --> 02:09:13,548
+This is our first condition
+
+1476
+02:09:13,548 --> 02:09:14,728
+without ln function.
+
+1477
+02:09:15,708 --> 02:09:16,088
+And
+
+1478
+02:09:16,088 --> 02:09:19,387
+the other condition was
+
+1479
+02:09:19,387 --> 02:09:20,468
+5x
+
+1480
+02:09:20,468 --> 02:09:22,108
+minus x square
+
+1481
+02:09:22,108 --> 02:09:23,128
+over 4
+
+1482
+02:09:23,128 --> 02:09:23,788
+is
+
+1483
+02:09:23,788 --> 02:09:25,768
+greater than 0.
+
+1484
+02:09:26,628 --> 02:09:27,807
+Then you can see that
+
+1485
+02:09:27,807 --> 02:09:29,188
+the first condition
+
+1486
+02:09:29,188 --> 02:09:30,048
+contains also
+
+1487
+02:09:30,048 --> 02:09:31,228
+the second condition.
+
+1488
+02:09:32,068 --> 02:09:32,268
+So
+
+1489
+02:09:32,268 --> 02:09:33,048
+from here
+
+1490
+02:09:33,048 --> 02:09:33,908
+I can write
+
+1491
+02:09:33,908 --> 02:09:35,188
+our condition
+
+1492
+02:09:35,188 --> 02:09:36,128
+is only
+
+1493
+02:09:36,128 --> 02:09:37,548
+5x
+
+1494
+02:09:37,548 --> 02:09:40,008
+minus x square
+
+1495
+02:09:40,008 --> 02:09:42,268
+minus 4
+
+1496
+02:09:42,268 --> 02:09:43,248
+will be greater
+
+1497
+02:09:43,248 --> 02:09:44,448
+or equal to 0.
+
+1498
+02:09:45,248 --> 02:09:45,748
+Because
+
+1499
+02:09:45,748 --> 02:09:46,968
+the first condition
+
+1500
+02:09:46,968 --> 02:09:47,888
+this condition
+
+1501
+02:09:47,888 --> 02:09:48,908
+contains also
+
+1502
+02:09:48,908 --> 02:09:50,208
+the second condition.
+
+1503
+02:09:50,708 --> 02:09:51,548
+If you rewrite
+
+1504
+02:09:51,548 --> 02:09:52,347
+this condition
+
+1505
+02:09:52,347 --> 02:09:52,908
+it is
+
+1506
+02:09:52,908 --> 02:09:54,708
+5x minus x square
+
+1507
+02:09:54,708 --> 02:09:55,368
+minus 4
+
+1508
+02:09:55,368 --> 02:09:55,868
+will be
+
+1509
+02:09:55,868 --> 02:09:57,508
+0 or
+
+1510
+02:09:57,508 --> 02:09:58,668
+greater than 0.
+
+1511
+02:09:58,988 --> 02:09:59,268
+Now
+
+1512
+02:09:59,268 --> 02:10:00,188
+I have to find
+
+1513
+02:10:00,188 --> 02:10:01,568
+loss of this function
+
+1514
+02:10:01,568 --> 02:10:02,268
+okay
+
+1515
+02:10:02,268 --> 02:10:03,828
+it's right here
+
+1516
+02:10:03,828 --> 02:10:05,248
+minus x square
+
+1517
+02:10:05,248 --> 02:10:06,968
+plus
+
+1518
+02:10:06,968 --> 02:10:08,588
+5x
+
+1519
+02:10:08,588 --> 02:10:09,288
+and
+
+1520
+02:10:09,288 --> 02:10:10,568
+minus 4
+
+1521
+02:10:10,568 --> 02:10:12,768
+it will be
+
+1522
+02:10:12,768 --> 02:10:16,408
+minus xx
+
+1523
+02:10:16,408 --> 02:10:18,268
+here it is
+
+1524
+02:10:18,268 --> 02:10:18,748
+4
+
+1525
+02:10:18,748 --> 02:10:20,008
+1
+
+1526
+02:10:20,008 --> 02:10:21,008
+and
+
+1527
+02:10:21,008 --> 02:10:22,148
+I have to find
+
+1528
+02:10:22,148 --> 02:10:23,148
+that
+
+1529
+02:10:23,148 --> 02:10:24,188
+I have to find
+
+1530
+02:10:24,188 --> 02:10:25,148
+that
+
+1531
+02:10:25,148 --> 02:10:26,148
+I have to find
+
+1532
+02:10:26,148 --> 02:10:27,148
+that
+
+1533
+02:10:27,148 --> 02:10:27,807
+I have to find
+
+1534
+02:10:27,807 --> 02:10:28,548
+that
+
+1535
+02:10:28,548 --> 02:10:29,088
+I have to find
+
+1536
+02:10:29,088 --> 02:10:29,708
+that
+
+1537
+02:10:29,708 --> 02:10:30,288
+I have to find
+
+1538
+02:10:30,288 --> 02:10:30,868
+that
+
+1539
+02:10:30,868 --> 02:10:31,188
+I have to find
+
+1540
+02:10:31,188 --> 02:10:31,708
+that
+
+1541
+02:10:31,708 --> 02:10:32,288
+I have to find
+
+1542
+02:10:25,043 --> 02:10:25,423
+Okay.
+
+1543
+02:10:26,983 --> 02:10:29,423
+The product will be...
+
+1544
+02:10:29,423 --> 02:10:31,423
+[öğrenci], it's...
+
+1545
+02:10:32,583 --> 02:10:34,923
+Minus plus.
+
+1546
+02:10:36,743 --> 02:10:41,423
+Doctor, we can multiply by minus 1 and we can...
+
+1547
+02:10:41,423 --> 02:10:42,144
+Yes, yes.
+
+1548
+02:10:42,144 --> 02:10:44,423
+Have the inverse of the...
+
+1549
+02:10:44,423 --> 02:10:45,564
+It's better.
+
+1550
+02:10:46,043 --> 02:10:47,043
+Yes, I think so.
+
+1551
+02:10:47,983 --> 02:10:49,923
+I usually make this one.
+
+1552
+02:10:51,104 --> 02:10:53,423
+Okay, you can think that...
+
+1553
+02:10:53,423 --> 02:10:57,423
+X squared minus 5X...
+
+1554
+02:10:58,943 --> 02:11:02,523
+Plus 4 will be less or equal to 0.
+
+1555
+02:11:02,923 --> 02:11:04,663
+We have to find this condition.
+
+1556
+02:11:05,323 --> 02:11:09,644
+It is for 1 minus minus.
+
+1557
+02:11:10,043 --> 02:11:13,943
+So I have to find the root X minus 4.
+
+1558
+02:11:16,384 --> 02:11:17,623
+X minus 1.
+
+1559
+02:11:17,724 --> 02:11:20,323
+You don't need to make a sign table.
+
+1560
+02:11:20,503 --> 02:11:22,243
+If you know, you can write directly.
+
+1561
+02:11:22,243 --> 02:11:23,963
+But I want to make a table.
+
+1562
+02:11:26,243 --> 02:11:27,623
+Okay, this is 1.
+
+1563
+02:11:27,743 --> 02:11:28,423
+This is 4.
+
+1564
+02:11:30,283 --> 02:11:32,543
+Until here, minus plus.
+
+1565
+02:11:33,203 --> 02:11:34,823
+Until here, it is minus.
+
+1566
+02:11:35,184 --> 02:11:36,344
+Plus, plus.
+
+1567
+02:11:36,463 --> 02:11:37,963
+The product will be plus.
+
+1568
+02:11:38,804 --> 02:11:39,884
+Minus, plus.
+
+1569
+02:11:40,423 --> 02:11:43,144
+And I need to find 4 negative parts.
+
+1570
+02:11:43,144 --> 02:11:48,144
+So our domain of this function will be...
+
+1571
+02:11:49,804 --> 02:11:51,483
+1 to 4.
+
+1572
+02:11:52,703 --> 02:11:53,023
+Okay.
+
+1573
+02:11:54,144 --> 02:11:57,003
+But what about the endpoints here?
+
+1574
+02:11:57,144 --> 02:11:58,844
+I have equality here.
+
+1575
+02:11:59,144 --> 02:12:00,144
+So it will be...
+
+1576
+02:12:01,144 --> 02:12:03,863
+Closed interval here.
+
+1577
+02:12:03,863 --> 02:12:04,863
+Okay.
+
+1578
+02:12:07,863 --> 02:12:30,203
+Do you have any questions?
+
+1579
+02:12:20,627 --> 02:12:21,027
+Okey.
+
+1580
+02:12:21,327 --> 02:12:25,447
+Hocam, sıfıra büyük eşitti. Artı asımları alacağız.
+
+1581
+02:12:26,527 --> 02:12:46,607
+Hayır, şey yaptım. O denklemi tamamen şeye geçirdim. Karşıya geçirip işaretini değiştirdim. Hani eksiyle uğraşmayalım diye. x karenin işareti eksi ya, köklerini bulmak daha zor oluyor. O yüzden şunu yaptım. Yanlış bir dakika bir daha yapayım. Eksiyle çarptım. Yanlış olmasın da. Burada şunu yaptım. Küçük eşit.
+
+1582
+02:12:51,444 --> 02:12:53,923
+Ama bakacağım bir dakika.
+
+1583
+02:12:53,944 --> 02:12:56,344
+Artıya göre yazmıştık.
+
+1584
+02:12:57,064 --> 02:12:58,884
+Eksi 4 ve eksi 1'e göre yazmadık.
+
+1585
+02:13:00,004 --> 02:13:00,984
+Tamam, şöyle yapalım.
+
+1586
+02:13:01,144 --> 02:13:01,884
+Bak, şöyle yapalım.
+
+1587
+02:13:01,964 --> 02:13:03,464
+Her tarafı eksi ile çarparsak.
+
+1588
+02:13:03,624 --> 02:13:13,164
+x kare eksi 5x artı 4 işaretinde değişeceği için küçük eşittir 0.
+
+1589
+02:13:13,584 --> 02:13:14,484
+Bu iki denklem aynı.
+
+1590
+02:13:15,644 --> 02:13:17,004
+Benim bunu bulmam gerekiyor.
+
+1591
+02:13:18,004 --> 02:13:18,184
+Tamam.
+
+1592
+02:13:18,184 --> 02:13:19,884
+Bunun da kökleri
+
+1593
+02:13:19,884 --> 02:13:21,584
+eksi 4'e eksi 1.
+
+1594
+02:13:21,923 --> 02:13:23,064
+İşaret tablosu bu.
+
+1595
+02:13:23,264 --> 02:13:25,684
+Burada işaret tablosunda küçük olanları alıyorum.
+
+1596
+02:13:25,804 --> 02:13:26,944
+Yani negatif olanları alıyorum.
+
+1597
+02:13:27,064 --> 02:13:27,564
+O da burası.
+
+1598
+02:13:28,944 --> 02:13:29,964
+Yanlış mı yaptım ben?
+
+1599
+02:13:30,264 --> 02:13:31,944
+Bir yanlış göremedim ama.
+
+1600
+02:13:33,044 --> 02:13:33,304
+Tamam.
+
+1601
+02:13:33,904 --> 02:13:34,744
+Doğru hocam, doğru.
+
+1602
+02:13:34,844 --> 02:13:35,064
+Pardon.
+
+1603
+02:13:35,124 --> 02:13:35,284
+Tamam.
+
+1604
+02:13:35,724 --> 02:13:36,084
+Yok yok.
+
+1605
+02:13:36,164 --> 02:13:38,004
+Yani şey, ben de yanlış yapabiliyorum bazen.
+
+1606
+02:13:38,704 --> 02:13:38,904
+Okey.
+
+1607
+02:13:39,484 --> 02:13:40,324
+I have a question.
+
+1608
+02:13:40,684 --> 02:13:41,724
+Yes, yes, of course.
+
+1609
+02:13:42,044 --> 02:13:43,944
+It is bigger than zero.
+
+1610
+02:13:43,944 --> 02:13:49,204
+So, why did we put it's bigger or equal zero?
+
+1611
+02:13:50,024 --> 02:13:50,404
+Okay.
+
+1612
+02:13:50,564 --> 02:13:51,564
+In the first equation.
+
+1613
+02:13:51,564 --> 02:13:52,084
+Yes.
+
+1614
+02:13:52,264 --> 02:13:57,304
+In this part, the sine of x square is negative.
+
+1615
+02:13:57,304 --> 02:13:58,304
+So, in my opinion.
+
+1616
+02:13:58,304 --> 02:14:01,264
+So, in my opinion, it is difficult to determine the root.
+
+1617
+02:14:01,264 --> 02:14:05,864
+So, I product each part with negative minus one.
+
+1618
+02:14:05,864 --> 02:14:10,624
+So, I rewrite this equation as x square minus five x plus one.
+
+1619
+02:14:11,344 --> 02:14:15,484
+This part will be less or equal to zero.
+
+1620
+02:14:15,624 --> 02:14:17,544
+These two equations are the same.
+
+1621
+02:14:17,684 --> 02:14:21,084
+So, I investigate the sine of this function.
+
+1622
+02:14:21,684 --> 02:14:23,324
+Yani siz onu şey yapmayabilirsiniz.
+
+1623
+02:14:23,564 --> 02:14:27,544
+Yani çarpanla ayırmak, eksi x kadarını çarpanla ayırmak daha zor olduğu için.
+
+1624
+02:14:28,104 --> 02:14:28,724
+Hani görmesi.
+
+1625
+02:14:28,824 --> 02:14:30,744
+O yüzden bunu bu şekilde çevirip yapıyorum.
+
+1626
+02:14:30,844 --> 02:14:32,164
+Yoksa size kalmış bir şey bu.
+
+1627
+02:14:32,164 --> 02:14:38,504
+If you investigate this sign table, I have to take the negative part.
+
+1628
+02:14:38,624 --> 02:14:39,404
+It is this one.
+
+1629
+02:14:40,544 --> 02:14:42,184
+Var mı arkadaşlar sorunuz?
+
+1630
+02:14:42,484 --> 02:14:44,004
+Hocam bir soru sorabilir miyim?
+
+1631
+02:14:44,044 --> 02:14:44,504
+Tabii tabii.
+
+1632
+02:14:45,504 --> 02:14:49,504
+Sağ tarafta 5 x, x, x kare bölü 4 büyüktür 0 yaptık ya.
+
+1633
+02:14:49,864 --> 02:14:50,124
+Evet.
+
+1634
+02:14:50,304 --> 02:14:51,804
+Onu nasıl kaybettik diye mi soracaksın?
+
+1635
+02:14:52,004 --> 02:14:53,524
+Ona neden devam etmedik?
+
+1636
+02:14:53,584 --> 02:14:58,904
+Ben onu 5 x, x, x kare büyüktür 0 diye devam edip hani iki farklı yönden çözerdim de.
+
+1637
+02:14:58,904 --> 02:15:28,884
+ya şöyle bak, şöyle söyleyeyim.
+
+1638
+02:15:28,904 --> 02:15:30,324
+İsterseksiyonla alıyorsun ya.
+
+1639
+02:15:30,864 --> 02:15:33,024
+Yaptığımda zaten aynı cevap çıkacak.
+
+1640
+02:15:33,064 --> 02:15:34,084
+Aynı cevap çıkıyor.
+
+1641
+02:15:34,204 --> 02:15:37,464
+Dolayısıyla hani işten fazlalığı yapmanıza gerek yok.
+
+1642
+02:15:37,584 --> 02:15:41,664
+Zaten bu birden büyük olduğu için şimdi intersection'ını alıyoruz ya zaten burada.
+
+1643
+02:15:42,044 --> 02:15:44,044
+Öyleyse şuna bakmaya gerek yok.
+
+1644
+02:15:44,624 --> 02:15:45,304
+Tamam mı?
+
+1645
+02:15:45,304 --> 02:16:16,304
+Tamam.
+
+1646
+02:16:20,627 --> 02:16:25,107
+This is the product of x minus 4, x minus 1.
+
+1647
+02:16:26,747 --> 02:16:27,507
+Okay.
+
+1648
+02:16:29,167 --> 02:16:29,867
+Yes.
+
+1649
+02:16:30,827 --> 02:16:37,868
+Minus product minus is positive, plus minus product is negative, plus product plus is positive.
+
+1650
+02:16:38,327 --> 02:16:39,448
+This is your function.
+
+1651
+02:16:39,647 --> 02:16:39,847
+Okay.
+
+1652
+02:16:41,227 --> 02:16:43,467
+Teacher, we have done something wrong here.
+
+1653
+02:16:44,047 --> 02:16:44,467
+Where?
+
+1654
+02:16:45,467 --> 02:16:46,227
+Because,
+
+1655
+02:16:47,507 --> 02:16:50,028
+wait a minute.
+
+1656
+02:16:50,628 --> 02:16:51,387
+Yes.
+
+1657
+02:16:51,507 --> 02:16:52,028
+No, it's okay.
+
+1658
+02:16:52,028 --> 02:16:52,368
+It's okay.
+
+1659
+02:16:53,948 --> 02:16:54,747
+Is there any wrong?
+
+1660
+02:16:54,827 --> 02:16:57,807
+Maybe we can look at it again.
+
+1661
+02:16:59,347 --> 02:17:00,967
+Did you see any wrong here?
+
+1662
+02:17:00,967 --> 02:17:01,268
+No.
+
+1663
+02:17:07,092 --> 02:17:07,772
+Evet.
+
+1664
+02:17:12,051 --> 02:17:13,611
+Yanlış varsa gösterin.
+
+1665
+02:17:18,067 --> 02:17:20,307
+Okay, if you don't have any question, okay.
+
+1666
+02:17:23,447 --> 02:17:27,467
+Okay, so let us look at 3, find 3.
+
+1667
+02:17:27,567 --> 02:17:33,427
+Okay, now, especially I want to talk about this example, because in this example, it will be different.
+
+1668
+02:17:33,547 --> 02:17:34,387
+What is the difference?
+
+1669
+02:17:35,047 --> 02:17:43,688
+If you have absolute veru function in the domain, you don't take the intersection, you will take the union.
+
+1670
+02:17:47,667 --> 02:17:51,227
+Elinin içi her zaman sıfırdan büyük olmak zorunda. Evet.
+
+1671
+02:17:55,540 --> 02:17:56,540
+Evet, öyle.
+
+1672
+02:18:01,492 --> 02:18:05,652
+Evet sıfırdan büyük olmak zorunda. Zaten ilk koşulunu sağlıyor [öğrenci].
+
+1673
+02:18:07,731 --> 02:18:09,291
+Sorry, I have a question.
+
+1674
+02:18:09,572 --> 02:18:19,352
+Can you please repeat where and when we take the union and the intersection?
+
+1675
+02:18:20,951 --> 02:18:25,752
+Okay. For domains, you will always take intersection of the conditions.
+
+1676
+02:18:25,752 --> 02:18:29,152
+Okay. You will always take intersection.
+
+1677
+02:18:29,152 --> 02:18:34,832
+Here, this is your first condition. This is your second condition.
+
+1678
+02:18:34,832 --> 02:18:37,311
+You will take intersection of this condition.
+
+1679
+02:18:37,311 --> 02:18:45,092
+Only if your function is absolute value function, you will take union. Why?
+
+1680
+02:18:45,532 --> 02:18:47,391
+First, let me solve this example.
+
+1681
+02:18:48,192 --> 02:18:52,811
+What is our condition about this function?
+
+1682
+02:18:52,811 --> 02:19:00,971
+We have a, it is like a rational function, but I know that this part will be always positive.
+
+1683
+02:19:00,971 --> 02:19:12,572
+Only our condition is in the absolute value 2x plus 5 minus 3 has to be greater or equal to 0.
+
+1684
+02:19:12,572 --> 02:19:18,652
+We have one condition, but we know that absolute value function we can open two different ways.
+
+1685
+02:19:18,652 --> 02:19:39,612
+So, from here I can write that 2x plus 5 minus 3 has to be greater or equal to 0.
+
+1686
+02:19:39,612 --> 02:19:40,172
+Okay.
+
+1687
+02:19:40,172 --> 02:19:51,532
+So, from here I can write that 2x plus 5 minus 2.
+
+1688
+02:19:51,532 --> 02:19:54,412
+X is greater or equal to minus 1.
+
+1689
+02:19:54,412 --> 02:19:56,731
+This is the first condition.
+
+1690
+02:19:56,731 --> 02:19:59,692
+If you take it is positive.
+
+1691
+02:19:59,692 --> 02:20:02,731
+What about the second?
+
+1692
+02:20:04,092 --> 02:20:11,131
+If you rewrite this equation, minus 8 will be greater or equal to 2x.
+
+1693
+02:20:12,652 --> 02:20:17,051
+And we find that minus 4 less or equal to x.
+
+1694
+02:20:17,051 --> 02:20:17,291
+Okay.
+
+1695
+02:20:18,492 --> 02:20:22,332
+In absolute value function you will find two different parts.
+
+1696
+02:20:22,891 --> 02:20:29,051
+And here you have to take union because in absolute value function,
+
+1697
+02:20:29,051 --> 02:20:30,412
+there is no intersection.
+
+1698
+02:20:30,412 --> 02:20:31,291
+Let me show here.
+
+1699
+02:20:31,852 --> 02:20:36,412
+They said that minus 4 minus 1.
+
+1700
+02:20:36,971 --> 02:20:37,291
+Okay.
+
+1701
+02:20:38,412 --> 02:20:42,652
+In the first condition they said that x is greater or equal to minus 1.
+
+1702
+02:20:45,932 --> 02:20:49,852
+For the second condition it is less or equal to minus 4.
+
+1703
+02:20:52,332 --> 02:20:58,332
+If you take intersection it will be always empty for absolute value function.
+
+1704
+02:20:58,332 --> 02:21:02,572
+Only in absolute value function you will have to take union.
+
+1705
+02:21:02,572 --> 02:21:04,811
+So, your domain will be here.
+
+1706
+02:21:06,172 --> 02:21:13,371
+Our domain will be minus infinity to minus 4.
+
+1707
+02:21:13,371 --> 02:21:17,131
+Minus 4 will be closed because of your equality.
+
+1708
+02:21:17,131 --> 02:21:18,891
+And here.
+
+1709
+02:21:21,532 --> 02:21:28,332
+And union minus 1 closed interval to infinity.
+
+1710
+02:21:28,332 --> 02:21:30,412
+This is your domain of this function.
+
+1711
+02:21:30,412 --> 02:21:31,692
+If your function...
+
+1712
+02:21:31,692 --> 02:21:32,572
+Yes.
+
+1713
+02:21:32,572 --> 02:21:33,692
+It's okay.
+
+1714
+02:21:33,692 --> 02:21:34,811
+Okay.
+
+1715
+02:21:34,811 --> 02:21:35,291
+I got it.
+
+1716
+02:21:35,291 --> 02:21:40,412
+Because if you have absolute value function the intersection will be always empty.
+
+1717
+02:21:40,412 --> 02:21:42,572
+Okay.
+
+1718
+02:21:43,051 --> 02:21:45,131
+But only in absolute value function.
+
+1719
+02:21:46,572 --> 02:21:48,172
+Yes.
+
+1720
+02:21:48,172 --> 02:21:51,451
+For absolute value function you can't have any intersection.
+
+1721
+02:21:52,731 --> 02:21:56,652
+For the absolute value function you will take union.
+
+1722
+02:21:56,652 --> 02:21:57,371
+Okay.
+
+1723
+02:21:58,963 --> 02:22:07,164
+Or, yes, you can write that real number minus minus 4 comma minus 1.
+
+1724
+02:22:08,843 --> 02:22:15,164
+And x4 buraya çıkarıyoruz. Burası da böyle oldu.
+
+1725
+02:22:18,355 --> 02:22:19,355
+Evet.
+
+1726
+02:22:19,355 --> 02:22:48,355
+Tamam.
+
+1727
+02:22:32,691 --> 02:22:35,131
+Tamam. Eğer bir soru yok.
+
+1728
+02:22:35,731 --> 02:22:36,171
+Hocam.
+
+1729
+02:22:36,671 --> 02:22:37,051
+Efendim?
+
+1730
+02:22:37,551 --> 02:22:44,411
+Daha deminki yere bakabiliriz daha. Burada x4 ile x1'in kapalı parantezlu olması gerekmiyor mu? Real seylerden çıkartılmak.
+
+1731
+02:22:46,111 --> 02:22:55,171
+Yok. x4 ile x1'i çıkartıyoruz. Geri kalanlar bizim domenimiz oluyor. x4 ile x1'in domeninde kalabilmesi için oranın açık olması gerekiyor.
+
+1732
+02:22:55,191 --> 02:22:56,371
+Pardon ben yanlış anladım.
+
+1733
+02:22:56,651 --> 02:22:57,611
+Tamam. Sorun da.
+
+1734
+02:23:01,940 --> 02:23:04,200
+Okey, okey, let me look at this example.
+
+1735
+02:23:06,120 --> 02:23:09,159
+Evet, evet. Eski sınav soruları çoğu.
+
+1736
+02:23:09,880 --> 02:23:16,420
+Yani bunların %80'i eski sınav soruları ama daha elimde soru var. Bunlar sadece burada yaptıklarım. Uygulama için ayrı sorularım daha var.
+
+1737
+02:23:19,891 --> 02:23:49,851
+Okay, so let us look at this example. We have many logarithm functions. We will start from the outside function. For logarithm, this logarithm function inside of the logarithm function has to be positive. So, 1 minus logarithm x squared minus 5x plus 16 has to be positive.
+
+1738
+02:23:49,891 --> 02:24:16,551
+And now, we don't have a look at the logarithm function. Now, if you look at inside of here, one is not important. Inside, I have another logarithm function. So, I have another condition for here. x squared minus 5x plus 16 has to be positive.
+
+1739
+02:24:22,291 --> 02:24:47,451
+Okay, so if we ask in test, we will write that what is the domain of this function and here we will write some terms. For example, in B real number in A real number in B minus 4 comma 1, for example. In C we will write 1 comma 3 like this. Okay.
+
+1740
+02:24:47,451 --> 02:25:05,531
+We will write nt for example. In E we will write anything else. Okay. If we write in test format, we will ask what is domain of this function. Okay. And we will write some results here. Okay.
+
+1741
+02:25:09,716 --> 02:25:34,416
+Okay, so here we have two conditions. Now let us continue from here. I want to cancel logarithm function. Before that, I want to write logarithm on the right side. So logarithm x squared minus 5x plus 16 will be less than 1.
+
+1742
+02:25:34,416 --> 02:25:40,416
+If I want to cancel logarithm function, I have to take according to...
+
+1743
+02:25:44,416 --> 02:25:46,416
+Ya şöyle söyleyeyim aslında...
+
+1744
+02:25:56,371 --> 02:26:00,371
+Evet, evet, evet.
+
+1745
+02:26:00,371 --> 02:26:07,371
+If I want to cancel logatim function, I have to write 10 to the power 1, 10 to the power logatim function.
+
+1746
+02:26:07,371 --> 02:26:09,371
+We can cancel.
+
+1747
+02:26:09,371 --> 02:26:19,371
+So we have x squared minus 5x plus 16 will be less than 10.
+
+1748
+02:26:19,371 --> 02:26:27,371
+So our first equation will be x squared minus 5x plus 6 has to be negative.
+
+1749
+02:26:27,371 --> 02:26:30,371
+This is our first condition.
+
+1750
+02:26:30,371 --> 02:26:41,371
+And the second condition x squared minus 5x plus 16 will be positive.
+
+1751
+02:26:41,371 --> 02:26:44,371
+This is our second condition.
+
+1752
+02:26:44,371 --> 02:26:46,371
+Okay.
+
+1753
+02:26:46,371 --> 02:26:50,371
+Okay, now we have to find the roots.
+
+1754
+02:26:50,371 --> 02:26:54,371
+But before that, before that, I want to say something.
+
+1755
+02:26:54,371 --> 02:27:03,371
+If this equation has complex roots, you don't need to investigate because it will be always positive.
+
+1756
+02:27:03,371 --> 02:27:05,371
+Okay.
+
+1757
+02:27:05,371 --> 02:27:10,371
+For example, for this example, we can find the roots directly.
+
+1758
+02:27:10,371 --> 02:27:15,371
+It is x squared minus 5x plus 6.
+
+1759
+02:27:15,371 --> 02:27:16,371
+Okay.
+
+1760
+02:27:16,371 --> 02:27:18,371
+So the roots will be 3, 2.
+
+1761
+02:27:18,371 --> 02:27:20,371
+Negative, negative.
+
+1762
+02:27:20,371 --> 02:27:24,371
+So for this example, we don't have any difficult.
+
+1763
+02:27:24,371 --> 02:27:29,371
+x minus 3, x plus 2 has to be negative.
+
+1764
+02:27:29,371 --> 02:27:31,371
+Okay.
+
+1765
+02:27:31,371 --> 02:27:32,371
+What about this?
+
+1766
+02:27:32,371 --> 02:27:34,371
+Can you find the root directly?
+
+1767
+02:27:34,371 --> 02:27:36,371
+This one, I think it's unsolvable.
+
+1768
+02:27:36,371 --> 02:27:37,371
+Difficult.
+
+1769
+02:27:37,371 --> 02:27:38,371
+Yes.
+
+1770
+02:27:38,371 --> 02:27:42,371
+If you can't find the root directly, firstly, I can look at the determinant.
+
+1771
+02:27:42,371 --> 02:27:43,371
+What is that?
+
+1772
+02:27:43,371 --> 02:27:44,371
+B squared.
+
+1773
+02:27:44,371 --> 02:27:45,371
+Minus 4.
+
+1774
+02:27:45,371 --> 02:27:46,371
+A.
+
+1775
+02:27:46,371 --> 02:27:47,371
+Minus 4.
+
+1776
+02:27:47,371 --> 02:27:48,371
+Multiply 16.
+
+1777
+02:27:48,371 --> 02:27:49,371
+See.
+
+1778
+02:27:49,371 --> 02:27:50,371
+And you can see that it is negative.
+
+1779
+02:27:50,371 --> 02:27:51,371
+It means that complex root.
+
+1780
+02:27:51,371 --> 02:27:52,371
+Okay.
+
+1781
+02:27:52,371 --> 02:28:03,371
+It means that this is always positive.
+
+1782
+02:28:03,371 --> 02:28:04,371
+Okay.
+
+1783
+02:28:04,371 --> 02:28:05,371
+It means that this is always positive.
+
+1784
+02:28:05,371 --> 02:28:21,371
+Okay.
+
+1785
+02:28:08,340 --> 02:28:27,000
+Okay, so you don't need to investigate the second condition because the roots are complex roots and you don't have to investigate because it will be always positive. Only you have to investigate the sine of x minus 3, x minus 2.
+
+1786
+02:28:30,963 --> 02:28:34,564
+So, our roots will be 2x3.
+
+1787
+02:28:38,835 --> 02:28:40,715
+It is 3, this is 2.
+
+1788
+02:28:42,155 --> 02:28:47,155
+Until here, negative, positive, negative, positive, positive.
+
+1789
+02:28:47,815 --> 02:28:53,475
+And the product, it is x squared minus 5x plus 6.
+
+1790
+02:28:54,635 --> 02:28:57,095
+Positive, negative, positive.
+
+1791
+02:28:57,095 --> 02:28:59,456
+I have to find the negative here.
+
+1792
+02:29:00,495 --> 02:29:02,115
+So it will be here.
+
+1793
+02:29:02,775 --> 02:29:07,675
+Our domain will be, domain of f will be 2,
+
+1794
+02:29:07,675 --> 02:29:09,235
+2, 3.
+
+1795
+02:29:10,235 --> 02:29:12,536
+And here we don't have any equality.
+
+1796
+02:29:12,815 --> 02:29:14,536
+It will be open in fervor.
+
+1797
+02:29:18,355 --> 02:29:26,556
+Okay, if your roots are complex roots, your equation will be always positive.
+
+1798
+02:29:27,735 --> 02:29:36,136
+Okay, it can't be negative or zero. If you have complex roots, the equation will be always positive.
+
+1799
+02:29:36,136 --> 02:29:42,015
+For example, you know that x squared plus 1.
+
+1800
+02:29:43,216 --> 02:29:51,896
+I know that it is always positive because the roots are plus minus e, but it will be always positive.
+
+1801
+02:29:52,036 --> 02:29:56,155
+If the roots are complex roots, the equation will be always positive.
+
+1802
+02:29:56,155 --> 02:30:00,235
+Okay, so our domain is this.
+
+1803
+02:30:04,724 --> 02:30:11,603
+9'u çözdük. 8'e bakalım. 8 güzel bir soru. Hani bayağı bir şey var.
+
+1804
+02:30:12,744 --> 02:30:14,264
+Ok, let's look at 8.
+
+1805
+02:30:25,268 --> 02:30:30,708
+Okay, so let us determine how many conditions we have.
+
+1806
+02:30:31,507 --> 02:30:35,427
+Firstly, you have to start with the square root function.
+
+1807
+02:30:35,427 --> 02:30:41,347
+In the square root function, inside of the square root function has to be positive or zero.
+
+1808
+02:30:43,667 --> 02:30:47,907
+And near this function I have ln function.
+
+1809
+02:30:47,907 --> 02:30:52,948
+I know that inside of the ln function has to be positive.
+
+1810
+02:30:52,948 --> 02:31:00,067
+And in your denominator this function has to be...
+
+1811
+02:31:04,531 --> 02:31:10,411
+None. So for this function, we have three conditions.
+
+1812
+02:31:12,051 --> 02:31:14,551
+Can I ask a question? Yes, yes, of course.
+
+1813
+02:31:14,551 --> 02:31:25,271
+I wrote like ln x squared minus x over 1 minus x squared root.
+
+1814
+02:31:25,971 --> 02:31:31,451
+Like there's a, I don't know how to explain it.
+
+1815
+02:31:31,451 --> 02:31:34,652
+You can explain in Turkish also if you don't.
+
+1816
+02:31:35,111 --> 02:31:41,471
+Üsttekini ben ln x kare eksi x üzeri kök bir eksi x.
+
+1817
+02:31:41,471 --> 02:31:42,251
+Bir eksi x kare aldın.
+
+1818
+02:31:42,791 --> 02:31:44,911
+Evet, çarpma olduğu için.
+
+1819
+02:31:45,931 --> 02:31:47,271
+Olabilir, o da olabilir.
+
+1820
+02:31:48,391 --> 02:31:49,072
+O da olabilir.
+
+1821
+02:31:49,451 --> 02:31:50,751
+O da olabilir, sorun değil.
+
+1822
+02:31:51,531 --> 02:31:52,652
+You can take olsa.
+
+1823
+02:31:53,652 --> 02:31:55,971
+Öyle de yapabilirsin ama biraz daha zor olur senin için.
+
+1824
+02:31:56,971 --> 02:31:58,931
+Burada çarpma olmasının bir önemi yok.
+
+1825
+02:31:58,931 --> 02:32:00,631
+Her birisi için ayrı düşünüyorsun.
+
+1826
+02:32:00,631 --> 02:32:02,371
+Sonuçta buradaki işlemler değil.
+
+1827
+02:32:03,031 --> 02:32:06,711
+O fonksiyonların tanım kümeleriyle alakalı bir işlem bu.
+
+1828
+02:32:06,811 --> 02:32:08,011
+Yani onu yukarı da alabilirsin.
+
+1829
+02:32:08,072 --> 02:32:09,051
+Öyle de devam edebilirsin.
+
+1830
+02:32:09,152 --> 02:32:11,971
+Sorun değil ama biz buradaki fonksiyonları tek tek inceliyoruz.
+
+1831
+02:32:12,152 --> 02:32:13,831
+Hangisinin ne koşulu olması gerekiyor?
+
+1832
+02:32:13,911 --> 02:32:15,051
+Onların intersection'ını alıyoruz.
+
+1833
+02:32:15,152 --> 02:32:16,171
+Ama senin yaptığında doğru.
+
+1834
+02:32:16,591 --> 02:32:18,072
+Ama çözerken biraz zorlanırsın.
+
+1835
+02:32:18,631 --> 02:32:19,211
+Tamam mı?
+
+1836
+02:32:19,211 --> 02:32:22,711
+Bir de.
+
+1837
+02:32:23,092 --> 02:32:36,811
+Okay, so let us find our roots. It is 3, 1, positive, negative. So from the last equation, I can say that x can't be 1 or minus 3.
+
+1838
+02:32:37,852 --> 02:32:48,852
+What about the first and the second condition? Let us make a sign table. For the first equations, I will write 1 minus x, 1 plus x.
+
+1839
+02:32:48,852 --> 02:32:58,612
+For the second equation, I have x and x minus 1. Okay.
+
+1840
+02:33:01,332 --> 02:33:16,492
+But if you don't want, you can write directly, but sketching a sign table will be more useful for you. Okay, I have minus 1, 0, 1, I think.
+
+1841
+02:33:22,260 --> 02:33:23,260
+Ok,
+
+1842
+02:33:25,760 --> 02:33:29,760
+The root here is 1, until here it will be positive.
+
+1843
+02:33:31,059 --> 02:33:34,760
+The opposite sign of x, after that it will be negative.
+
+1844
+02:33:34,760 --> 02:33:37,760
+The root is minus 1, until here minus.
+
+1845
+02:33:39,860 --> 02:33:42,260
+You can write, you can write what you want.
+
+1846
+02:33:44,860 --> 02:33:47,760
+Country to the table, the denominator as well.
+
+1847
+02:33:47,760 --> 02:33:53,260
+In your denominator the sign is not important, only it can't be 0.
+
+1848
+02:33:53,260 --> 02:34:00,260
+So only this condition is important, the sign of this, the sign of your denominator is not important.
+
+1849
+02:34:00,260 --> 02:34:00,760
+Ok,
+
+1850
+02:34:01,760 --> 02:34:10,260
+This is 0, minus minus plus plus, x minus 1 is the opposite, minus minus minus plus.
+
+1851
+02:34:12,260 --> 02:34:12,760
+Ok,
+
+1852
+02:34:12,760 --> 02:34:13,760
+Now,
+
+1853
+02:34:14,760 --> 02:34:16,760
+Let us look at the first,
+
+1854
+02:34:17,760 --> 02:34:20,260
+This product has to be positive.
+
+1855
+02:34:20,760 --> 02:34:23,260
+This product is negative, this is positive,
+
+1856
+02:34:24,260 --> 02:34:25,260
+This is positive,
+
+1857
+02:34:25,260 --> 02:34:26,260
+This is negative.
+
+1858
+02:34:28,260 --> 02:34:30,260
+From the first condition our domain is this.
+
+1859
+02:34:31,260 --> 02:34:36,260
+For the second condition it has to be positive, so it is positive,
+
+1860
+02:34:37,260 --> 02:34:38,260
+Positive,
+
+1861
+02:34:38,760 --> 02:34:39,260
+Negative,
+
+1862
+02:34:39,260 --> 02:34:39,760
+Positive.
+
+1863
+02:34:39,760 --> 02:34:40,760
+Okay,
+
+1864
+02:34:40,760 --> 02:34:46,260
+Now I have to take the intersection of these conditions, it is only here.
+
+1865
+02:34:48,760 --> 02:34:56,760
+So our domain of f will be between minus 1 to 0, but what about the end points?
+
+1866
+02:34:57,260 --> 02:34:59,260
+Minus 1 comes from here,
+
+1867
+02:35:02,260 --> 02:35:02,760
+Here,
+
+1868
+02:35:03,760 --> 02:35:05,260
+And here at the same time.
+
+1869
+02:35:05,260 --> 02:35:06,260
+But,
+
+1870
+02:35:06,260 --> 02:35:09,260
+Let me show you in graph.
+
+1871
+02:35:09,260 --> 02:35:10,260
+Ok,
+
+1872
+02:35:10,260 --> 02:35:13,260
+From the first equation,
+
+1873
+02:35:13,260 --> 02:35:18,260
+First condition we have minus 1 to 1, it is closed.
+
+1874
+02:35:18,260 --> 02:35:19,260
+Minus 1 to 1.
+
+1875
+02:35:19,260 --> 02:35:20,260
+Ok,
+
+1876
+02:35:20,260 --> 02:35:23,260
+It is closed in terms.
+
+1877
+02:35:23,260 --> 02:35:26,260
+This comes from the first equation.
+
+1878
+02:35:26,260 --> 02:35:27,260
+Ok,
+
+1879
+02:35:27,260 --> 02:35:28,260
+For the second equation,
+
+1880
+02:35:28,260 --> 02:35:29,260
+Ok,
+
+1881
+02:35:29,260 --> 02:35:30,260
+For the second equation, it is,
+
+1882
+02:35:31,260 --> 02:35:33,260
+Minus 1 to 0.
+
+1883
+02:35:33,260 --> 02:35:35,260
+Minus 1 is open.
+
+1884
+02:35:35,260 --> 02:35:36,260
+And 0 is open.
+
+1885
+02:35:36,260 --> 02:35:37,260
+Here.
+
+1886
+02:35:37,260 --> 02:35:39,260
+And when you take the intersection of here.
+
+1887
+02:35:39,260 --> 02:35:40,260
+For minus 1, one of them is open.
+
+1888
+02:35:40,260 --> 02:35:42,260
+One of them is closed.
+
+1889
+02:35:42,260 --> 02:35:43,260
+You have to take open interval.
+
+1890
+02:35:43,260 --> 02:35:44,260
+For 0, it comes here.
+
+1891
+02:35:44,260 --> 02:35:45,260
+It is open.
+
+1892
+02:35:45,260 --> 02:35:46,260
+It is closed.
+
+1893
+02:35:46,260 --> 02:35:47,260
+You have to take open interval.
+
+1894
+02:35:47,260 --> 02:35:48,260
+Ok,
+
+1895
+02:35:48,260 --> 02:35:50,260
+So our domain will be between minus 1 to 1.
+
+1896
+02:35:50,260 --> 02:35:51,260
+Eksi 1'i alamıyoruz.
+
+1897
+02:35:51,260 --> 02:35:52,260
+Çünkü şurası sıkıntı.
+
+1898
+02:35:52,260 --> 02:35:53,260
+If you take minus 1,
+
+1899
+02:35:53,260 --> 02:36:19,260
+Bir saniye,
+
+1900
+02:36:19,260 --> 02:36:20,260
+Bir yok zaten,
+
+1901
+02:36:20,260 --> 02:36:22,260
+Bir de hiç işimiz yok.
+
+1902
+02:36:22,260 --> 02:36:23,260
+Eksi bir.
+
+1903
+02:36:25,260 --> 02:36:28,260
+Your points is minus 1 to 0,
+
+1904
+02:36:28,260 --> 02:36:30,260
+And all of them are open interval.
+
+1905
+02:36:30,260 --> 02:36:31,260
+Why?
+
+1906
+02:36:31,260 --> 02:36:33,260
+If you look at minus 1,
+
+1907
+02:36:33,260 --> 02:36:36,260
+If I take the close interval because of here,
+
+1908
+02:36:36,260 --> 02:36:38,260
+It doesn't possess.
+
+1909
+02:36:38,260 --> 02:36:41,260
+If I take 0 also from here,
+
+1910
+02:36:41,260 --> 02:36:42,260
+It won't possess.
+
+1911
+02:36:42,260 --> 02:36:45,260
+So it will be open interval for all of them.
+
+1912
+02:36:45,260 --> 02:36:47,260
+Hayır,
+
+1913
+02:36:47,260 --> 02:36:49,260
+Eksi 1'i buraya yazarsan,
+
+1914
+02:36:49,260 --> 02:36:50,260
+Bir saniye,
+
+1915
+02:36:50,260 --> 02:36:52,260
+Bir dakika,
+
+1916
+02:36:52,260 --> 02:36:53,260
+Bir yanlış yapmayın.
+
+1917
+02:36:53,260 --> 02:36:56,260
+Bir saniye,
+
+1918
+02:36:56,260 --> 02:36:58,260
+Bir daha kontrol edeyim,
+
+1919
+02:36:58,260 --> 02:36:59,260
+Yanlış olmasın.
+
+1920
+02:37:00,260 --> 02:37:04,260
+Zero için açık olacak o kesimde,
+
+1921
+02:37:04,260 --> 02:37:06,260
+Eksi 1 artı 1 için,
+
+1922
+02:37:06,260 --> 02:37:07,260
+Eksi 1'i buraya yazarsak,
+
+1923
+02:37:07,260 --> 02:37:08,260
+0 sorun değil.
+
+1924
+02:37:08,260 --> 02:37:09,260
+Evet,
+
+1925
+02:37:09,260 --> 02:37:14,260
+Eksi 1'de bir sıkıntı var mı?
+
+1926
+02:37:14,260 --> 02:37:16,260
+Burada değiştik onu,
+
+1927
+02:37:16,260 --> 02:37:17,260
+Evet, kapalı olacak.
+
+1928
+02:37:17,260 --> 02:37:18,260
+Tamam.
+
+1929
+02:37:18,260 --> 02:37:19,260
+Evet,
+
+1930
+02:37:19,260 --> 02:37:20,260
+Eksi 1 kapalı olacak.
+
+1931
+02:37:20,260 --> 02:37:49,260
+Evet,
+
+1932
+02:37:22,611 --> 02:37:26,971
+Bir daha bakalım. Burası sıfır sağlıyor. Burası...
+
+1933
+02:37:26,971 --> 02:37:35,331
+Hocam, doğruya çizerken eksi 1 ile sıfır arası değil de sıfırdan eksi sonsuza bir de birden artı sonsuza gitmiyor mu?
+
+1934
+02:37:35,971 --> 02:37:38,631
+Ben şeyi karıştırdım, şurayı karıştırdım.
+
+1935
+02:37:39,851 --> 02:37:43,811
+Şurayı karıştırdım, şunun kökleri eksi 1 gibi kafamda kaldı.
+
+1936
+02:37:43,871 --> 02:37:46,171
+Halbuki şunun kökü 1, o yüzden şey yapmadım.
+
+1937
+02:37:46,911 --> 02:37:48,971
+Grafik yanlış oldu, bir daha çizeyim.
+
+1938
+02:37:48,971 --> 02:37:59,831
+Birincisinin kökü 1'nin kökü 1'nin kökü 1 olarak şunu gibi gördüm.
+
+1939
+02:38:00,331 --> 02:38:01,591
+İkincisini de
+
+1940
+02:38:01,591 --> 02:38:04,191
+eksi 1 ile
+
+1941
+02:38:04,191 --> 02:38:08,731
+eksi 1 açık aralık
+
+1942
+02:38:08,731 --> 02:38:11,991
+ve 0.
+
+1943
+02:38:15,860 --> 02:38:17,500
+sıfırdan açık arası.
+
+1944
+02:38:20,340 --> 02:38:22,760
+1 ile sıfır arası olmayacak mı hocam?
+
+1945
+02:38:23,579 --> 02:38:25,840
+İşaretle hata mı yaptım bir saniye?
+
+1946
+02:38:27,040 --> 02:38:34,040
+1'e kadar eksi, 1'den sonra artı, evet, artı, artı, eksi, artı.
+
+1947
+02:38:36,360 --> 02:38:38,020
+Bir yerde yanlış yaptım ben sanki.
+
+1948
+02:38:38,340 --> 02:38:43,180
+Hocam, sıfırdan eksi sonsuza, sonra birden artı sonsuza gitmesi gerekmiyor mu?
+
+1949
+02:38:43,180 --> 02:38:47,340
+Yani aslında çizdiğimiz yerin boşluk, diğer yerlerinin olması gerekmiyor.
+
+1950
+02:38:47,360 --> 02:38:48,520
+İkincisini yanlış çizdim.
+
+1951
+02:38:49,560 --> 02:38:52,819
+Birincisinde sorun yok, ikincisinde, şurayı diyorsun.
+
+1952
+02:38:53,500 --> 02:38:57,480
+Eksi sonsuzdan, evet, sıfıra kadar sıfır açık, şimdi oldu.
+
+1953
+02:38:58,739 --> 02:39:00,340
+Şöyle, tamam.
+
+1954
+02:39:02,120 --> 02:39:05,480
+O yüzden bunun intersection'ını aldığımız zaman şuraya denk geliyorum.
+
+1955
+02:39:05,940 --> 02:39:07,140
+Tamam, pardon, şimdi oldu.
+
+1956
+02:39:07,600 --> 02:39:10,420
+Şeyi, şurayı çizmedim, orayı kapatmış gibi oldu, tamam.
+
+1957
+02:39:10,420 --> 02:39:15,180
+So, the intersection will be minus 1 is closed and 0 is open.
+
+1958
+02:39:15,260 --> 02:39:16,760
+Okay, now it's correct.
+
+1959
+02:39:17,300 --> 02:39:17,600
+Sorry.
+
+1960
+02:39:20,440 --> 02:39:25,280
+Yani ben şurayı sadece sanki burada bitiyormuş gibi düşüş şey yaptım da o yüzden grafiği çizmek gerekiyordu.
+
+1961
+02:39:25,520 --> 02:39:25,680
+Okay.
+
+1962
+02:39:26,500 --> 02:39:27,819
+This is the correct answer.
+
+1963
+02:39:28,819 --> 02:39:31,380
+And, okay.
+
+1964
+02:39:32,540 --> 02:39:34,140
+So, that's enough for today.
+
+1965
+02:39:34,140 --> 02:39:37,980
+I will give homework about 1 çizmek gerekiyor.
+
+1966
+02:39:37,980 --> 02:39:38,520
+1 çizmek gerekiyor.
+
+1967
+02:39:38,520 --> 02:39:39,079
+2 çizmek gerekiyor.
+
+1968
+02:39:40,159 --> 02:39:42,880
+At home, please try to solve 5.
+
+1969
+02:39:43,140 --> 02:39:43,540
+Okay.
+
+1970
+02:39:44,079 --> 02:39:44,800
+And 10.
+
+1971
+02:39:45,579 --> 02:39:46,500
+Yes, and 10.
+
+1972
+02:39:48,120 --> 02:39:48,480
+Okay.
+
+1973
+02:39:48,700 --> 02:39:49,800
+This is homework for you.
+
+1974
+02:39:49,800 --> 02:39:54,620
+Next week I will solve, but until next week, please try to solve 5 and 10.
+
+1975
+02:39:54,800 --> 02:39:57,159
+Okay.
+
+1976
+02:39:57,159 --> 02:40:02,280
+So, do you have any question about the lesson or about any question?
+
+1977
+02:40:02,280 --> 02:40:03,280
+or do you have any question?
+
+1978
+02:40:03,280 --> 02:40:13,900
+Okay.
+
+1979
+02:40:07,987 --> 02:40:14,827
+atayım sizi göreyim. Tamam. Evet, şimdi var mı sorunuz? Anlaşıldı mı şu anki fonksiyonlar konusu?
+
+1980
+02:40:15,487 --> 02:40:33,047
+Okay, this subject is for, today we talk about functions. And next week we will start to see limit, continuity and after the continuity I will make an application lesson about functions, domains, limit and continuity.
+
+1981
+02:40:33,047 --> 02:40:46,047
+Okay, I will give you some questions and I will give you some time. After that I will solve the questions. And that's all. I think that's enough for today.
+
+1982
+02:40:46,047 --> 02:41:02,487
+I have a question. Yes, of course. I'm listening. If I can. Yeah, about the period when we talk about the sin x, the period of it is it named pi. That means that when we try to draw the
+
+1983
+02:41:03,047 --> 02:41:18,047
+the line we will draw the line we will draw the line we will draw from 0 to 2 pi and after that it will repeat itself. Is it that right? Yes. You are talking about symmetry and periodicity. Period. Yeah, period.
+
+1984
+02:41:18,047 --> 02:41:30,047
+Yeah, period. Period. For example, let me show one thing. Okay. For example, what is cosine function? Sorry.
+
+1985
+02:41:30,047 --> 02:41:31,047
+What is cosine function?
+
+1986
+02:41:37,012 --> 02:41:45,652
+Okay, what is cosine function? Cosine function is like a wave function. Cosine 0 is 1. So it is like this.
+
+1987
+02:41:46,471 --> 02:41:49,432
+Okay, this is periodic function like this.
+
+1988
+02:41:50,432 --> 02:41:59,672
+Okay, but in your function, only we will take, for example, for our cosine function, we will take from 0 to pi.
+
+1989
+02:41:59,672 --> 02:42:11,992
+This is 0. This is pi over 2. This is pi. Okay, for example, we will take this part for our cosine function.
+
+1990
+02:42:12,132 --> 02:42:19,292
+After that, all these functions will be similar. But for periodicity, you will take only these parts.
+
+1991
+02:42:20,252 --> 02:42:27,072
+Okay, after that, all the parts will be the same. And cosine function is symmetric about y-axis.
+
+1992
+02:42:27,072 --> 02:42:34,752
+Okay, so I will symmetry here. After that, you will sketch the same thing. Okay?
+
+1993
+02:42:35,272 --> 02:42:43,272
+And the periodicity here. 0 to 2 pi for sine and cosine function. Okay?
+
+1994
+02:42:44,192 --> 02:42:45,212
+Okay, thank you.
+
+1995
+02:42:45,452 --> 02:42:46,231
+Not at all.
+
+1996
+02:42:47,072 --> 02:42:48,452
+Hocam, ben de bir şey sorabilir miyim?
+
+1997
+02:42:49,632 --> 02:42:50,912
+Tabii, tabii, sorabilirsin.
+
+1998
+02:42:50,912 --> 02:42:57,992
+Şey, Avesis'te sizin dosyaları yükledim dediğiniz yeri ben bulamadım da bir türlü.
+
+1999
+02:42:58,391 --> 02:43:00,032
+Nasıl aratıp bulabiliriz?
+
+2000
+02:43:00,192 --> 02:43:04,112
+Şimdi bak, şöyle, bir saniye ben göstereyim size.
+
+2001
+02:43:08,112 --> 02:43:10,391
+Buradan herhalde şuna girebiliyoruz.
+
+2002
+02:43:10,552 --> 02:43:12,311
+Ben direkt chat'e link attım hocam.
+
+2003
+02:43:12,992 --> 02:43:16,512
+Evet, oradan da şey yapabiliyorsun ya da buradan direkt şey yapabiliyorsun.
+
+2004
+02:43:16,512 --> 02:43:18,992
+Avesis Yıldız diye giriyorum ben mesela.
+
+2005
+02:43:19,792 --> 02:43:24,672
+Avesis'e geldiğin zaman Ebru Dash diye yazarsan oradan direkt sayfam çıkıyor zaten.
+
+2006
+02:43:26,372 --> 02:43:31,912
+Avesis Yıldız Ebru Dash yazarsan oradan zaten otomatikman çıkıyor.
+
+2007
+02:43:32,811 --> 02:43:33,811
+Oradan bulurum, tamam.
+
+2008
+02:43:33,932 --> 02:43:34,471
+Evet, evet.
+
+2009
+02:43:34,552 --> 02:43:38,552
+Adamın soyadımı yazarsan oradan dokümanlara giriyorsun ya da buradan direkt görebiliyorsun.
+
+2010
+02:43:38,552 --> 02:43:51,692
+There is no password and on my Avesis page I upload the lecture notes and also yesterday I put the matematik terms with Turkish meanings.
+
+2011
+02:43:51,971 --> 02:43:53,692
+It will be useful in this semester.
+
+2012
+02:43:53,952 --> 02:43:58,172
+I gave you all the matematik terms we will use in this semester.
+
+2013
+02:43:58,352 --> 02:43:58,492
+Okey?
+
+2014
+02:43:59,932 --> 02:44:03,752
+Yani o yazdıkların bu dönem tamamen işinize yarayacak olan şeyler.
+
+2015
+02:44:03,752 --> 02:44:07,592
+Yani bu ders, yani şey değil, bu dönemin tamamında kullanacaklarımıza.
+
+2016
+02:44:08,552 --> 02:44:14,852
+Are you going to upload the PDF that we are using before the class, right?
+
+2017
+02:44:16,891 --> 02:44:17,672
+Before the?
+
+2018
+02:44:17,872 --> 02:44:20,252
+Before the class, before the lecture.
+
+2019
+02:44:20,372 --> 02:44:20,971
+Yes, yes.
+
+2020
+02:44:21,212 --> 02:44:27,832
+In the weekend I will upload the next week's lecture notes.
+
+2021
+02:44:28,192 --> 02:44:29,932
+After that you can download.
+
+2022
+02:44:30,172 --> 02:44:30,332
+Okey?
+
+2023
+02:44:30,471 --> 02:44:31,772
+In the weekend I will give.
+
+2024
+02:44:32,712 --> 02:44:32,932
+All right.
+
+2025
+02:44:34,231 --> 02:44:35,811
+Son yaptığımızın cevap.
+
+2026
+02:44:35,811 --> 02:44:36,811
+Evet.
+
+2027
+02:44:36,811 --> 02:44:44,872
+Dikta, is there any book or note that we can solve more mathematical problems from it to practice?
+
+2028
+02:44:44,872 --> 02:44:45,592
+Yes.
+
+2029
+02:44:45,692 --> 02:44:45,971
+Okey.
+
+2030
+02:44:46,172 --> 02:44:52,332
+Normally we use Thomas Kalkulus.
+
+2031
+02:44:52,492 --> 02:44:56,432
+But in Thomas Kalkulus questions are a little bit easy for us.
+
+2032
+02:44:56,592 --> 02:44:56,772
+Okey.
+
+2033
+02:44:57,332 --> 02:45:03,832
+You can use Thomas Kalkulus.
+
+2034
+02:45:03,971 --> 02:45:05,412
+You can find many questions.
+
+2035
+02:45:05,552 --> 02:45:08,971
+But the questions are a little bit easy for us.
+
+2036
+02:45:08,971 --> 02:45:13,132
+I will give you very more questions.
+
+2037
+02:45:13,391 --> 02:45:13,572
+Okey.
+
+2038
+02:45:14,252 --> 02:45:17,731
+If you don't enough, we can talk again.
+
+2039
+02:45:17,992 --> 02:45:21,932
+But if you want to look at, you can look at Thomas Kalkulus in English.
+
+2040
+02:45:22,172 --> 02:45:22,372
+Okey?
+
+2041
+02:45:23,971 --> 02:45:55,231
+Okey.
+
+2042
+02:45:48,244 --> 02:45:50,144
+bakalım soruya bir daha olmasa.
+
+2043
+02:45:57,203 --> 02:46:01,644
+Hangi soruyu yapmıştık biz? Şuydu herhalde değil mi?
+
+2044
+02:46:08,819 --> 02:46:15,000
+Bu soruyu şey yaptım ama bir tanesinde şöyle çıkmıştı hatırladığım kadarıyla.
+
+2045
+02:46:19,059 --> 02:46:20,219
+Bir tanesinde
+
+2046
+02:46:20,219 --> 02:46:22,920
+eksi 1 ile 1 arasında mı çıktı?
+
+2047
+02:46:23,039 --> 02:46:25,260
+Ya şimdi soruyu kapattım ya. O yüzden göremiyorum.
+
+2048
+02:46:26,279 --> 02:46:27,079
+Eksi 1 ile 1
+
+2049
+02:46:27,079 --> 02:46:28,939
+arasındaydı galiba. Hatırladığım.
+
+2050
+02:46:30,739 --> 02:46:31,819
+Diğeri de
+
+2051
+02:46:31,819 --> 02:46:33,500
+sıfırla
+
+2052
+02:46:33,500 --> 02:46:35,459
+eksi sonsuz arasındaydı.
+
+2053
+02:46:35,579 --> 02:46:36,039
+Şöyleydi.
+
+2054
+02:46:37,840 --> 02:46:39,239
+Hocam diğer iş olmaz mı?
+
+2055
+02:46:39,579 --> 02:46:41,260
+Eksi sonsuzla sıfır arasında ve
+
+2056
+02:46:41,260 --> 02:46:43,359
+birleşim bir de sonsuz arasında
+
+2057
+02:46:43,359 --> 02:46:45,659
+olmaz mı? Hayır. Bunların ortak
+
+2058
+02:46:45,659 --> 02:46:47,459
+şeylerini alıyorsun. Kesişimlerini
+
+2059
+02:46:47,459 --> 02:46:47,899
+alıyorsun.
+
+2060
+02:46:49,059 --> 02:46:52,579
+Şimdi 1 eksi x kareninki
+
+2061
+02:46:52,579 --> 02:46:54,399
+1 eksi x kareninki
+
+2062
+02:46:54,399 --> 02:46:57,059
+eksi 1 ile artı 1 arasında olacak
+
+2063
+02:46:57,059 --> 02:46:57,600
+zaten.
+
+2064
+02:46:59,299 --> 02:47:01,379
+Şu x kare eksi x'inkini
+
+2065
+02:47:01,379 --> 02:47:02,500
+de hemen hatırlayalım.
+
+2066
+02:47:03,579 --> 02:47:05,239
+x kare eksi x'inki de
+
+2067
+02:47:05,239 --> 02:47:06,119
+sıfırla 1.
+
+2068
+02:47:10,708 --> 02:47:13,228
+Şurası 0 ve burası 1.
+
+2069
+02:47:14,188 --> 02:47:14,968
+Bunun arasında
+
+2070
+02:47:14,968 --> 02:47:16,388
+eksi olursa eksi 1
+
+2071
+02:47:16,388 --> 02:47:18,808
+eksi 4.
+
+2072
+02:47:18,948 --> 02:47:21,048
+Burası pozitif olacak. Burası negatif
+
+2073
+02:47:21,048 --> 02:47:22,448
+olacak. Burası pozitif olacak.
+
+2074
+02:47:23,828 --> 02:47:25,228
+Değil mi? O zaman şuraları
+
+2075
+02:47:25,228 --> 02:47:26,388
+ve şuraları.
+
+2076
+02:47:27,448 --> 02:47:28,868
+O zaman ne yapıyorum? Eksi sonsuza
+
+2077
+02:47:28,868 --> 02:47:30,748
+bir arasında ve birden sonsuza kadar
+
+2078
+02:47:30,748 --> 02:47:32,448
+şurası açık. Tamam.
+
+2079
+02:47:33,268 --> 02:47:34,888
+Bir tanesinin bu. Diğerinin ki bu.
+
+2080
+02:47:35,448 --> 02:47:37,028
+Dolayısıyla bunların hepsinin
+
+2081
+02:47:37,028 --> 02:47:38,828
+ortak kesişimini alıyorsun. Dolayısıyla
+
+2082
+02:47:38,828 --> 02:47:40,228
+ortak kesiştiği yer burası.
+
+2083
+02:47:40,708 --> 02:47:42,507
+Burada bir kesişme yok.
+
+2084
+02:47:43,268 --> 02:47:45,328
+Dolayısıyla ortak kesiştiği yer sadece burası.
+
+2085
+02:47:45,948 --> 02:47:47,167
+O yüzden eksi 1'de
+
+2086
+02:47:47,167 --> 02:47:49,308
+0 arası oluyor. 0 burada
+
+2087
+02:47:49,308 --> 02:47:51,167
+açık aralık olduğu için açık oluyor.
+
+2088
+02:47:51,308 --> 02:47:53,048
+Ama eksi 1'de zaten burası kapalı.
+
+2089
+02:47:53,128 --> 02:47:55,308
+Burası da kapalı olduğu için şurası da kapalı oluyor.
+
+2090
+02:47:55,788 --> 02:47:56,888
+Tamam hocam. Çok pardon.
+
+2091
+02:47:57,007 --> 02:47:59,128
+Gözümden kaçmış bir kısmı. Yok yok. Önemliyim.
+
+2092
+02:47:59,388 --> 02:48:00,808
+Tamam. Sağ olun. Bir şey değil.
+
+2093
+02:48:01,068 --> 02:48:03,208
+Okay. So if you don't have another question
+
+2094
+02:48:03,208 --> 02:48:04,507
+let us finish for today.
+
+2095
+02:48:05,388 --> 02:48:07,128
+Please look at the weekend.
+
+2096
+02:48:07,128 --> 02:48:09,268
+I will upload the next
+
+2097
+02:48:09,268 --> 02:48:11,028
+week's lecture notes
+
+2098
+02:48:11,028 --> 02:48:13,587
+I will upload
+
+2099
+02:48:13,587 --> 02:48:15,048
+in the weekend.
+
+2100
+02:48:15,408 --> 02:48:15,568
+Okay.
+
+2101
+02:48:16,228 --> 02:48:17,468
+And after the lesson
+
+2102
+02:48:17,468 --> 02:48:19,388
+please take any
+
+2103
+02:48:19,388 --> 02:48:21,488
+printer or anything else
+
+2104
+02:48:21,488 --> 02:48:23,388
+you can look at before the lesson
+
+2105
+02:48:23,388 --> 02:48:24,007
+also. Okay.
+
+2106
+02:48:24,688 --> 02:48:26,868
+Okay. For today. Bye bye for everyone.
+
+2107
+02:48:29,108 --> 02:48:30,228
+Görüşürüz hocam. Teşekkürler.
+
+2108
+02:48:30,228 --> 02:48:30,768
+Görüşürüz.
+
+2109
+02:48:30,768 --> 02:48:32,087
+Bye bye.
+
+2110
+02:48:32,347 --> 02:48:32,888
+İyi dersler.

@@ -1,0 +1,6119 @@
+1
+00:00:04,179 --> 00:00:07,900
+Good morning. Good morning to everyone.
+
+2
+00:00:21,044 --> 00:00:24,763
+Hi, hi. How are you today? How was your weekend?
+
+3
+00:00:51,667 --> 00:00:53,307
+Good morning to everyone.
+
+4
+00:00:56,979 --> 00:01:12,500
+Okay. So this week we will see the limit continuity of the functions. Last week we see what is the definition of a general function, what kind of functions we have.
+
+5
+00:01:46,388 --> 00:01:50,388
+Bundan daha biraz alışamadım. Sizin yazdıklarınızı sürekli göremek istiyorum.
+
+6
+00:01:50,388 --> 00:01:52,388
+Ah, herhalde şöyle.
+
+7
+00:02:00,436 --> 00:02:09,316
+Okay, so last week we see the domain of the function. What kind of functions can we see?
+
+8
+00:02:09,316 --> 00:02:16,836
+We see a polynomial trigonometric function, power functions, logarithm function, any trigonometric
+
+9
+00:02:16,836 --> 00:02:22,516
+and inverse trigonometric functions but we will see inverse trigonometric functions in detail in
+
+10
+00:02:22,516 --> 00:02:34,196
+the next two weeks probably. Last week we see in the on my analysis page I put the lecture notes about
+
+11
+00:02:35,236 --> 00:02:41,956
+domain limits and continuity you can take from my analysis page. Last week we talked about the
+
+12
+00:02:41,956 --> 00:02:49,475
+function types here there are some function types here and they are domain and range of the functions
+
+13
+00:02:49,475 --> 00:03:03,556
+especially you can see these kind of functions and sine cosine ln exponent function arc sine function.
+
+14
+00:03:03,556 --> 00:03:11,556
+You have to know the domain of this kind of functions okay and we saw some questions but
+
+15
+00:03:12,116 --> 00:03:17,396
+last week I don't remember we couldn't finish all the domain questions I think.
+
+16
+00:03:17,396 --> 00:03:25,396
+I am not sure we saw some questions but I think in your group we have we hadn't time so much.
+
+17
+00:03:25,396 --> 00:03:30,276
+Geçen hafta sizinkinde hangileri kalmıştı? Şu kosinus ile olan kaldı sanırım.
+
+18
+00:03:32,116 --> 00:03:43,316
+I think this one and maybe this one but I am not sure. Do you remember the which number? I remember six
+
+19
+00:03:43,316 --> 00:03:49,876
+but I don't remember the other words. Beş ve on hocam. Beş ve on. Kosinus'ü çözmüş müydü ki?
+
+20
+00:03:51,316 --> 00:03:53,316
+Bunu çözdük. Bunu çözdük.
+
+21
+00:03:53,316 --> 00:03:58,756
+Yes, we saw it. Hocam sizde eee 6. soru ama bizde 5. soru.
+
+22
+00:03:58,756 --> 00:04:04,756
+Evet, bu daha detaylı bir not. Altıncı soruyu çözmedik. Yani evet bu notta 6 oluyor.
+
+23
+00:04:04,756 --> 00:04:08,756
+Evet, diğeri kaç? Diğerine bakacağım bir dakika.
+
+24
+00:04:08,756 --> 00:04:10,756
+Bunu çözdük diye hatırlıyoruz. 10 oldu.
+
+25
+00:04:10,756 --> 00:04:12,756
+10 mu? Şu.
+
+26
+00:04:12,756 --> 00:05:12,755
+Evet.
+
+27
+00:04:59,444 --> 00:05:01,444
+What are the points? The points where
+
+28
+00:05:04,444 --> 00:05:06,444
+Qx equals zero.
+
+29
+00:05:06,444 --> 00:05:09,444
+This is related to rational function.
+
+30
+00:05:09,444 --> 00:05:14,444
+In here, in your denominator you have one.
+
+31
+00:05:14,444 --> 00:05:17,444
+We don't have any problem, but only we have problem.
+
+32
+00:05:17,444 --> 00:05:19,444
+This function can't be zero.
+
+33
+00:05:19,444 --> 00:05:21,444
+So it has to be non-zero.
+
+34
+00:05:21,444 --> 00:05:24,444
+This is your condition about your domain.
+
+35
+00:05:24,444 --> 00:05:26,444
+If this is not zero,
+
+36
+00:05:26,444 --> 00:05:30,444
+then I can write that cosinus
+
+37
+00:05:30,444 --> 00:05:32,444
+square x
+
+38
+00:05:32,444 --> 00:05:35,444
+not equal to 1 over 4.
+
+39
+00:05:35,444 --> 00:05:39,444
+Okay, if you square off left side and right side,
+
+40
+00:05:39,444 --> 00:05:41,444
+we can find that
+
+41
+00:05:41,444 --> 00:05:44,444
+which points, at which points,
+
+42
+00:05:44,444 --> 00:05:47,444
+cosine x not equal to plus or minus 1 over 2.
+
+43
+00:05:47,444 --> 00:05:50,444
+So we know that cosine function is a periodic function.
+
+44
+00:05:50,444 --> 00:05:54,444
+So we will find many different points.
+
+45
+00:05:54,444 --> 00:05:57,444
+Okay, this is your cosine function.
+
+46
+00:05:57,444 --> 00:05:58,444
+Cosine zero is one.
+
+47
+00:05:58,444 --> 00:06:00,444
+It will like this.
+
+48
+00:06:00,444 --> 00:06:02,444
+And like this.
+
+49
+00:06:02,444 --> 00:06:03,444
+Okay.
+
+50
+00:06:03,444 --> 00:06:06,444
+So if, let's start with the positive one.
+
+51
+00:06:06,444 --> 00:06:08,444
+If it is 1 over 2.
+
+52
+00:06:11,444 --> 00:06:14,444
+In the, if we talk about the cosine in the first quadrant,
+
+53
+00:06:14,444 --> 00:06:17,444
+cosine is positive, negative, negative, positive.
+
+54
+00:06:17,444 --> 00:06:22,444
+So we will find the angles in the first quadrant and in the fourth quadrant.
+
+55
+00:06:22,444 --> 00:06:24,444
+In the first quadrant, it is pi over 3.
+
+56
+00:06:24,444 --> 00:06:27,444
+And in the fourth quadrant, it is minus pi over 3.
+
+57
+00:06:27,444 --> 00:06:37,444
+So for the, for zero to pi, for zero to 2 pi, if only to, if you talk about zero to 2 pi,
+
+58
+00:06:37,444 --> 00:06:42,444
+the angle will be plus minus pi over 3.
+
+59
+00:06:42,444 --> 00:06:46,444
+And because of the period, we will add 2 key p.
+
+60
+00:06:46,444 --> 00:06:50,444
+So if, for the first part, our points will be these.
+
+61
+00:06:50,444 --> 00:06:55,444
+And here I have to write an index.
+
+62
+00:06:55,444 --> 00:06:57,444
+Actually, you can write like that.
+
+63
+00:06:57,444 --> 00:06:59,444
+X key also.
+
+64
+00:06:59,444 --> 00:07:00,444
+Okay.
+
+65
+00:07:00,444 --> 00:07:06,444
+Plus minus pi over 3 plus 2 key pi.
+
+66
+00:07:06,444 --> 00:07:11,444
+You have to write a, depends on a index.
+
+67
+00:07:11,444 --> 00:07:12,444
+Okay.
+
+68
+00:07:12,444 --> 00:07:13,444
+Because of here key.
+
+69
+00:07:13,444 --> 00:07:16,444
+For the second part, we have to...
+
+70
+00:07:16,444 --> 00:07:17,444
+I have a question.
+
+71
+00:07:17,444 --> 00:07:18,444
+Yes.
+
+72
+00:07:18,444 --> 00:07:19,444
+Okay.
+
+73
+00:07:19,444 --> 00:07:22,444
+Why did you put a plus 2 key pi?
+
+74
+00:07:22,444 --> 00:07:24,444
+Because, yes, yes, yes.
+
+75
+00:07:24,444 --> 00:07:25,444
+Okay.
+
+76
+00:07:25,444 --> 00:07:26,444
+Look at here.
+
+77
+00:07:26,444 --> 00:07:28,444
+At this point.
+
+78
+00:07:28,444 --> 00:07:29,444
+Okay.
+
+79
+00:07:29,444 --> 00:07:30,444
+At this point.
+
+80
+00:07:30,444 --> 00:07:31,444
+Sorry.
+
+81
+00:07:31,444 --> 00:07:32,444
+Pi over 3.
+
+82
+00:07:32,444 --> 00:07:33,444
+Okay.
+
+83
+00:07:33,444 --> 00:07:34,444
+Let's.
+
+84
+00:07:34,444 --> 00:07:38,444
+At pi over 3, the functions is 1 over 2.
+
+85
+00:07:38,444 --> 00:07:39,444
+Okay.
+
+86
+00:07:39,444 --> 00:07:43,444
+But if you look at here, it is also pi over 2.
+
+87
+00:07:43,444 --> 00:07:44,444
+This is pi over 2.
+
+88
+00:07:44,444 --> 00:07:46,444
+Here is 2 pi.
+
+89
+00:07:46,444 --> 00:07:47,444
+Okay.
+
+90
+00:07:47,444 --> 00:07:50,444
+Let me show right here.
+
+91
+00:07:50,444 --> 00:07:51,444
+Okay.
+
+92
+00:07:51,444 --> 00:07:53,444
+This is 0.
+
+93
+00:07:53,444 --> 00:07:55,444
+This is 2 pi.
+
+94
+00:07:55,444 --> 00:07:58,444
+Cosine functions are trigonometric functions.
+
+95
+00:07:58,444 --> 00:07:59,444
+Okay.
+
+96
+00:07:59,444 --> 00:08:01,444
+Here is 4 pi.
+
+97
+00:08:01,444 --> 00:08:03,444
+Here.
+
+98
+00:08:03,444 --> 00:08:04,444
+0.
+
+99
+00:08:04,444 --> 00:08:05,444
+Here.
+
+100
+00:08:05,444 --> 00:08:06,444
+Sorry.
+
+101
+00:08:06,444 --> 00:08:07,444
+I couldn't.
+
+102
+00:08:07,444 --> 00:08:08,444
+Sorry.
+
+103
+00:08:08,444 --> 00:08:15,444
+I couldn't.
+
+104
+00:08:15,444 --> 00:08:16,444
+Okay.
+
+105
+00:08:16,444 --> 00:08:18,444
+So, cosine 0 is 1.
+
+106
+00:08:18,444 --> 00:08:19,444
+Okay.
+
+107
+00:08:19,444 --> 00:08:20,444
+This is 1.
+
+108
+00:08:20,444 --> 00:08:22,444
+This is pi.
+
+109
+00:08:22,444 --> 00:08:23,444
+Pardon.
+
+110
+00:08:23,444 --> 00:08:24,444
+Cosine 0, 1.
+
+111
+00:08:24,444 --> 00:08:25,444
+Evet.
+
+112
+00:08:25,444 --> 00:08:26,444
+Doğru.
+
+113
+00:08:26,444 --> 00:08:28,444
+Okay.
+
+114
+00:08:28,444 --> 00:08:30,444
+So, it will be like this.
+
+115
+00:08:30,444 --> 00:08:33,443
+Here.
+
+116
+00:08:33,443 --> 00:08:34,443
+Like this.
+
+117
+00:08:34,443 --> 00:08:35,443
+Okay.
+
+118
+00:08:35,443 --> 00:08:36,443
+It will be like this.
+
+119
+00:08:36,443 --> 00:08:38,443
+In here, cosine function is this.
+
+120
+00:08:38,443 --> 00:08:39,443
+And if it is 1 over 2.
+
+121
+00:08:39,443 --> 00:08:40,443
+Okay.
+
+122
+00:08:40,443 --> 00:08:41,443
+In 1 over 2.
+
+123
+00:08:41,443 --> 00:08:42,443
+We can have this one.
+
+124
+00:08:42,443 --> 00:08:43,443
+This one.
+
+125
+00:08:43,443 --> 00:08:45,443
+Okay.
+
+126
+00:08:45,443 --> 00:08:46,443
+So, if it is 1 over 2.
+
+127
+00:08:46,443 --> 00:08:47,443
+Okay.
+
+128
+00:08:47,443 --> 00:08:48,443
+In 1 over 2.
+
+129
+00:08:48,443 --> 00:08:49,443
+We can have this one.
+
+130
+00:08:49,443 --> 00:08:50,443
+This one.
+
+131
+00:08:50,443 --> 00:08:51,443
+Okay.
+
+132
+00:08:51,443 --> 00:08:52,443
+So, if it is 1 over 2.
+
+133
+00:08:52,443 --> 00:08:53,443
+Okay.
+
+134
+00:08:53,443 --> 00:08:54,443
+So, if it is 1 over 2.
+
+135
+00:08:54,443 --> 00:08:55,443
+Okay.
+
+136
+00:08:55,443 --> 00:08:56,443
+So, if it is 1 over 2.
+
+137
+00:08:56,443 --> 00:08:57,443
+Okay.
+
+138
+00:08:57,443 --> 00:08:58,443
+So, if it is 1 over 2.
+
+139
+00:08:58,443 --> 00:08:59,443
+Okay.
+
+140
+00:08:59,443 --> 00:09:00,443
+So, if it is 1 over 2.
+
+141
+00:09:00,443 --> 00:09:01,443
+Okay.
+
+142
+00:09:01,443 --> 00:09:02,443
+So, if it is 1 over 2.
+
+143
+00:09:02,443 --> 00:09:03,443
+Okay.
+
+144
+00:09:03,443 --> 00:09:04,443
+So, if it is 1 over 2.
+
+145
+00:09:04,443 --> 00:09:05,443
+Okay.
+
+146
+00:09:05,443 --> 00:09:06,443
+So, if it is 1 over 2.
+
+147
+00:08:54,580 --> 00:08:57,639
+And this one in the other part it will be like this.
+
+148
+00:08:57,780 --> 00:09:01,020
+So the cosine function is periodic function.
+
+149
+00:09:02,320 --> 00:09:09,340
+In the interval from 0 to 2 pi your angle will be pi over 3.
+
+150
+00:09:10,120 --> 00:09:15,120
+But if you want to talk about 2 pi, 4 pi, okay?
+
+151
+00:09:16,700 --> 00:09:20,840
+You have to add 2 pi, 2 pi.
+
+152
+00:09:21,040 --> 00:09:24,480
+So it will be 7 pi over 3.
+
+153
+00:09:25,580 --> 00:09:30,300
+If you want to talk about 4 pi, 6 pi, okay?
+
+154
+00:09:31,440 --> 00:09:35,320
+The angle will change because cosine and sine functions are periodic functions.
+
+155
+00:09:36,220 --> 00:09:39,440
+Şimdi burada birden fazla noktalarda bu değerleri alabilir.
+
+156
+00:09:39,860 --> 00:09:44,860
+Çünkü cosinus ve sinus fonksiyonları periodic oldukları için belirli yerlerde hep aynı.
+
+157
+00:09:45,080 --> 00:09:53,220
+If you want to find these points, you have many points here for cosine function here, here, here, here, here.
+
+158
+00:09:53,220 --> 00:09:54,060
+Okay.
+
+159
+00:09:54,680 --> 00:09:56,360
+So we have many functions.
+
+160
+00:09:56,940 --> 00:10:01,100
+It will be pi 1 over 2 or minus pi over 2.
+
+161
+00:10:01,600 --> 00:10:02,640
+Minus 1 over 2.
+
+162
+00:10:02,980 --> 00:10:04,780
+So it will be periodic.
+
+163
+00:10:04,780 --> 00:10:09,240
+For pi over 3.
+
+164
+00:10:09,240 --> 00:10:12,600
+It will be this one.
+
+165
+00:10:12,820 --> 00:10:19,960
+If you want to look at 4 minus pi over 2, it will be the angle for the cosine function.
+
+166
+00:10:19,960 --> 00:10:22,680
+The negative in the second quadrant.
+
+167
+00:10:22,680 --> 00:10:25,140
+And in the third quadrant, it will be negative.
+
+168
+00:10:25,680 --> 00:10:29,779
+So the angle for the second quadrant, it will be 2 pi over 3.
+
+169
+00:10:30,100 --> 00:10:33,980
+For the third quadrant, it will be minus pi over 3.
+
+170
+00:10:33,980 --> 00:10:36,780
+And you have to add 2 pi.
+
+171
+00:10:36,780 --> 00:10:41,140
+For the periodic points for periodicity.
+
+172
+00:10:41,820 --> 00:10:45,780
+So the second part for these questions, it will be this.
+
+173
+00:10:45,880 --> 00:10:47,200
+Or you can write like that.
+
+174
+00:10:47,500 --> 00:10:57,820
+Y key will be plus minus 2p 3 over 3 plus 2p.
+
+175
+00:10:58,080 --> 00:10:59,680
+You can write also like that.
+
+176
+00:10:59,680 --> 00:11:00,140
+Okay.
+
+177
+00:11:00,320 --> 00:11:02,920
+You don't need to write one comma, two comma.
+
+178
+00:11:03,580 --> 00:11:03,940
+Okay.
+
+179
+00:11:04,340 --> 00:11:05,380
+Maybe you can confuse.
+
+180
+00:11:05,519 --> 00:11:08,580
+So for the domain, I have to write 3.
+
+181
+00:11:08,780 --> 00:11:09,019
+Yes.
+
+182
+00:11:10,080 --> 00:11:10,460
+Do you agree?
+
+183
+00:11:11,400 --> 00:11:13,720
+Is it 5 pi on 3 0 2?
+
+184
+00:11:14,840 --> 00:11:15,360
+Sorry.
+
+185
+00:11:15,620 --> 00:11:16,660
+I couldn't hear you.
+
+186
+00:11:17,780 --> 00:11:19,940
+5 pi on 3 0 2.
+
+187
+00:11:19,940 --> 00:11:24,800
+So I think it must be plus pi on 2 k.
+
+188
+00:11:26,180 --> 00:11:27,759
+You are 5 pi.
+
+189
+00:11:27,960 --> 00:11:29,840
+You say that 5 pi?
+
+190
+00:11:30,840 --> 00:11:31,440
+On 3.
+
+191
+00:11:32,040 --> 00:11:32,600
+Over 3.
+
+192
+00:11:32,600 --> 00:11:34,220
+Like 240.
+
+193
+00:11:36,360 --> 00:11:39,160
+I couldn't hear so much.
+
+194
+00:11:39,600 --> 00:11:40,740
+5 pi over 2.
+
+195
+00:11:40,820 --> 00:11:41,580
+Can you write?
+
+196
+00:11:41,880 --> 00:11:43,340
+It's like 240.
+
+197
+00:11:43,800 --> 00:11:45,320
+This angle is 0 2.
+
+198
+00:11:46,000 --> 00:11:47,600
+You are talking about this.
+
+199
+00:11:48,400 --> 00:11:48,700
+Yeah.
+
+200
+00:11:48,700 --> 00:11:50,200
+Yes.
+
+201
+00:11:51,200 --> 00:11:58,660
+It will be 3 pi over 2 minus pi over 6.
+
+202
+00:12:00,660 --> 00:12:02,280
+5 pi on 3, I think.
+
+203
+00:12:02,680 --> 00:12:03,120
+Yes.
+
+204
+00:12:04,200 --> 00:12:07,180
+So it's going to be in this interval.
+
+205
+00:12:07,440 --> 00:12:10,880
+It must be plus pi on 2 k.
+
+206
+00:12:11,840 --> 00:12:12,820
+Plus 90.
+
+207
+00:12:13,380 --> 00:12:14,220
+90 degree.
+
+208
+00:12:14,220 --> 00:12:15,220
+2.
+
+209
+00:12:15,220 --> 00:12:16,280
+Can you say again?
+
+210
+00:12:16,280 --> 00:12:17,340
+Yes.
+
+211
+00:12:17,340 --> 00:12:18,920
+Let me look at.
+
+212
+00:12:19,560 --> 00:12:21,320
+Pi on 3 plus 90 degree.
+
+213
+00:12:22,700 --> 00:12:23,140
+2.
+
+214
+00:12:24,420 --> 00:12:25,320
+Can you say again?
+
+215
+00:12:26,220 --> 00:12:29,539
+Pi on 3 plus pi on 2 k plus 90.
+
+216
+00:12:29,800 --> 00:12:30,900
+It's 90 degree.
+
+217
+00:12:31,039 --> 00:12:32,700
+Every 90 degree we have a 0.
+
+218
+00:12:32,700 --> 00:12:36,380
+You are talking about second points.
+
+219
+00:12:36,519 --> 00:12:37,780
+You are talking about this one?
+
+220
+00:12:38,320 --> 00:12:38,780
+This one?
+
+221
+00:12:38,820 --> 00:12:39,200
+Yes.
+
+222
+00:12:39,259 --> 00:12:39,840
+We have to.
+
+223
+00:12:40,180 --> 00:12:41,380
+I think we have to edit.
+
+224
+00:12:44,000 --> 00:12:47,160
+You say that we have different points also.
+
+225
+00:12:47,160 --> 00:12:48,920
+Yeah.
+
+226
+00:12:49,120 --> 00:12:52,120
+In every quarter we have a point.
+
+227
+00:12:52,120 --> 00:12:53,120
+Yeah.
+
+228
+00:12:53,120 --> 00:12:54,200
+In every quarter we have a point.
+
+229
+00:12:54,200 --> 00:12:55,120
+Yeah.
+
+230
+00:12:55,120 --> 00:12:56,120
+In every quarter we have a point.
+
+231
+00:12:56,120 --> 00:12:57,120
+Yeah.
+
+232
+00:12:57,120 --> 00:12:59,120
+In every quarter we have a point.
+
+233
+00:12:59,120 --> 00:13:00,120
+Yeah.
+
+234
+00:13:00,120 --> 00:13:01,120
+In every quarter we have a point.
+
+235
+00:13:01,120 --> 00:13:02,120
+Yeah.
+
+236
+00:13:02,120 --> 00:13:03,120
+In every quarter we have a point.
+
+237
+00:13:03,120 --> 00:13:04,120
+Yeah.
+
+238
+00:13:04,120 --> 00:13:05,120
+In every quarter we have a point.
+
+239
+00:13:05,120 --> 00:13:06,120
+Yeah.
+
+240
+00:13:06,120 --> 00:13:07,120
+In every quarter we have a point.
+
+241
+00:13:07,120 --> 00:13:08,120
+Yeah.
+
+242
+00:13:08,120 --> 00:13:09,120
+In every quarter we have a point.
+
+243
+00:13:09,120 --> 00:13:10,120
+Yeah.
+
+244
+00:13:10,120 --> 00:13:11,120
+In every quarter we have a point.
+
+245
+00:13:11,120 --> 00:13:12,120
+Yeah.
+
+246
+00:13:12,120 --> 00:13:13,120
+In every quarter we have a point.
+
+247
+00:12:52,692 --> 00:12:58,192
+Bu sadece 2 ve 3 ve 3 ve 3.
+
+248
+00:12:58,192 --> 00:13:03,192
+Bu bu kadranın 2 pi over 3.
+
+249
+00:13:03,192 --> 00:13:06,692
+2 pi over 3.
+
+250
+00:13:06,692 --> 00:13:08,192
+Ok.
+
+251
+00:13:08,192 --> 00:13:12,192
+Ve 3 ve 3.
+
+252
+00:13:12,192 --> 00:13:19,192
+Bu da belki minus 2 pi over 3.
+
+253
+00:13:19,192 --> 00:13:20,192
+Ok.
+
+254
+00:13:20,192 --> 00:14:08,192
+Bu da bu.
+
+255
+00:13:50,035 --> 00:14:20,035
+Bu, bu
+
+256
+00:14:20,035 --> 00:14:23,195
+and this angle will be minus 2 pi over 3.
+
+257
+00:14:24,635 --> 00:14:25,915
+Okay.
+
+258
+00:14:26,215 --> 00:14:31,195
+And after that we will add 2 pi plus pi because of the periodicity.
+
+259
+00:14:32,295 --> 00:14:32,596
+Okay.
+
+260
+00:14:33,535 --> 00:14:36,055
+Maybe I couldn't explain so much.
+
+261
+00:14:37,435 --> 00:14:37,955
+Exactly.
+
+262
+00:14:38,155 --> 00:14:40,575
+I couldn't understand your question so much.
+
+263
+00:14:40,675 --> 00:14:42,495
+If you have a pen you can write also.
+
+264
+00:14:43,315 --> 00:14:45,675
+But I don't know you can write or not.
+
+265
+00:14:45,675 --> 00:14:50,096
+If you want, let's talk about in the interval.
+
+266
+00:14:50,096 --> 00:14:50,395
+Okay.
+
+267
+00:14:51,335 --> 00:14:52,815
+Again, if you don't understand.
+
+268
+00:14:54,455 --> 00:14:54,795
+Okay.
+
+269
+00:14:54,795 --> 00:15:02,255
+So we can write also this domain as real number minus x key comma y key.
+
+270
+00:15:02,655 --> 00:15:04,315
+You can also write like this.
+
+271
+00:15:04,655 --> 00:15:04,995
+Okay.
+
+272
+00:15:05,096 --> 00:15:11,935
+If you are confusing about this index, you can write x key, y key, but you have to write some index because
+
+273
+00:15:11,935 --> 00:15:15,875
+in your points, you have a variable key here.
+
+274
+00:15:16,555 --> 00:15:16,875
+Okay.
+
+275
+00:15:17,295 --> 00:15:23,175
+If you want to talking about in the first interval, it will be 1.
+
+276
+00:15:23,395 --> 00:15:24,935
+For here, key will be 2.
+
+277
+00:15:25,096 --> 00:15:26,355
+For here, it will be 3.
+
+278
+00:15:26,775 --> 00:15:29,755
+You have to subtract all these points from the real number.
+
+279
+00:15:30,336 --> 00:15:30,495
+Okay.
+
+280
+00:15:31,715 --> 00:15:35,096
+And for the last question, I think 10.
+
+281
+00:15:36,055 --> 00:15:36,336
+Yes.
+
+282
+00:15:36,335 --> 00:15:40,795
+Okay.
+
+283
+00:15:40,915 --> 00:15:44,715
+If you look at the question 10, we have two different functions.
+
+284
+00:15:44,895 --> 00:15:47,455
+We have arc sine function and we have a LN function.
+
+285
+00:15:48,495 --> 00:15:55,155
+For domain of the arc sine function, our domain has to be between minus 1 to 1.
+
+286
+00:15:55,395 --> 00:15:55,575
+Okay.
+
+287
+00:15:55,855 --> 00:15:57,596
+Between minus 1 to 1.
+
+288
+00:15:58,775 --> 00:16:04,435
+Inside of the arc sine function, we have 1 minus x less or equal to 1.
+
+289
+00:16:04,435 --> 00:16:09,336
+And that's enough for arc sine function.
+
+290
+00:16:09,775 --> 00:16:11,695
+The other function is LN function.
+
+291
+00:16:12,076 --> 00:16:15,535
+And I know that inside of the LN function has to be positive.
+
+292
+00:16:17,615 --> 00:16:19,815
+This is the condition.
+
+293
+00:16:20,475 --> 00:16:20,735
+Okay.
+
+294
+00:16:20,815 --> 00:16:22,675
+Now I have to look at the inside.
+
+295
+00:16:22,815 --> 00:16:25,775
+Inside of the LN function, I have another LN function.
+
+296
+00:16:25,775 --> 00:16:33,495
+And for this function, x has to be greater than 0.
+
+297
+00:16:34,435 --> 00:16:37,875
+Here, for domain of this question, we have three conditions.
+
+298
+00:16:38,855 --> 00:16:48,055
+If you look at the last two examples, conditions, if LN x is greater than 0, I want to cancel LN function.
+
+299
+00:16:48,055 --> 00:16:51,055
+For this, I have to write as a power of exponent function.
+
+300
+00:16:52,096 --> 00:16:55,515
+Because exponent and LN function are inverse to each other.
+
+301
+00:16:55,515 --> 00:17:11,475
+Okay.
+
+302
+00:17:00,052 --> 00:17:03,812
+Şimdi, ikan cancel exponent and ln function.
+
+303
+00:17:04,552 --> 00:17:10,672
+So, actually, this condition is the same with x greater than e to the power 0 is 1.
+
+304
+00:17:12,372 --> 00:17:15,031
+The other condition is 0.
+
+305
+00:17:15,471 --> 00:17:22,672
+Now, if you look at the last two conditions, the intersection of these two conditions is this.
+
+306
+00:17:22,672 --> 00:17:24,412
+X is greater than 1.
+
+307
+00:17:25,112 --> 00:17:29,052
+If you look at here, they said that this is 0, this is 1.
+
+308
+00:17:29,052 --> 00:17:32,112
+One of them, they said that greater than 0.
+
+309
+00:17:32,552 --> 00:17:34,852
+The other one says greater than 1.
+
+310
+00:17:35,412 --> 00:17:44,291
+When you take the intersection of these conditions, you can see that x is greater than 1.
+
+311
+00:17:44,572 --> 00:17:46,832
+Now, let us look at this condition.
+
+312
+00:17:47,672 --> 00:17:49,072
+I want to find x.
+
+313
+00:17:49,072 --> 00:17:50,892
+Firstly, I want to cancel 1.
+
+314
+00:17:50,892 --> 00:17:55,192
+So, I add minus 1 at each part.
+
+315
+00:17:55,432 --> 00:17:59,332
+Minus 1, minus 1, minus 1.
+
+316
+00:17:59,912 --> 00:18:07,231
+So, I have minus 2, less or equal to minus x, less or equal to 0.
+
+317
+00:18:07,231 --> 00:18:10,251
+Now, I have to change the sign.
+
+318
+00:18:10,251 --> 00:18:12,332
+I will product each part with minus.
+
+319
+00:18:12,932 --> 00:18:17,172
+But, also, the position of the symbol will change also.
+
+320
+00:18:17,392 --> 00:18:23,291
+0, less or equal to x, less or equal to 2.
+
+321
+00:18:24,031 --> 00:18:26,031
+Now, we have two conditions.
+
+322
+00:18:26,491 --> 00:18:29,412
+The first condition and the second condition is this.
+
+323
+00:18:29,412 --> 00:18:31,632
+Now, let us find the intersection.
+
+324
+00:18:32,491 --> 00:18:32,692
+Okay.
+
+325
+00:18:33,432 --> 00:18:37,672
+In the first condition, they said that it is 0 to 2.
+
+326
+00:18:38,192 --> 00:18:40,812
+The closed interval here and here.
+
+327
+00:18:41,632 --> 00:18:41,832
+Okay.
+
+328
+00:18:42,892 --> 00:18:45,092
+And in the second part, 1.
+
+329
+00:18:46,412 --> 00:18:48,132
+Greater than 1.
+
+330
+00:18:48,592 --> 00:18:49,072
+Here.
+
+331
+00:18:49,072 --> 00:18:55,852
+And when we take the intersection of these two conditions here.
+
+332
+00:18:56,432 --> 00:18:59,852
+So, our domain will be 1 to 2.
+
+333
+00:19:00,291 --> 00:19:02,852
+Because of here, 2 is closed here.
+
+334
+00:19:04,511 --> 00:19:07,751
+Because of the 1 here, it is open interval.
+
+335
+00:19:07,951 --> 00:19:11,112
+So, I will write open interval from 1 to 2.
+
+336
+00:19:11,491 --> 00:19:14,592
+It is a semi-open, semi-closed interval.
+
+337
+00:19:14,932 --> 00:19:15,192
+Okay.
+
+338
+00:19:16,652 --> 00:19:18,172
+Do you have any questions here?
+
+339
+00:19:18,271 --> 00:19:18,471
+Yes.
+
+340
+00:19:18,471 --> 00:19:18,812
+Okay.
+
+341
+00:19:18,932 --> 00:19:22,711
+But, if we don't have intersection, do we take the union?
+
+342
+00:19:23,832 --> 00:19:24,231
+No.
+
+343
+00:19:24,392 --> 00:19:24,991
+Intersection.
+
+344
+00:19:25,692 --> 00:19:28,352
+Except, absolute value function.
+
+345
+00:19:28,791 --> 00:19:32,711
+For the other functions, you will take intersection all the conditions.
+
+346
+00:19:32,711 --> 00:19:37,372
+But, only it is different in absolute value function.
+
+347
+00:19:37,592 --> 00:19:37,731
+Okay?
+
+348
+00:19:38,991 --> 00:19:41,832
+In absolute value function, I have to take the union.
+
+349
+00:19:42,332 --> 00:19:42,751
+Why?
+
+350
+00:19:43,572 --> 00:19:45,392
+Let me explain again.
+
+351
+00:19:46,291 --> 00:19:47,672
+This is your conditions.
+
+352
+00:19:47,672 --> 00:19:48,291
+Okay.
+
+353
+00:19:48,392 --> 00:19:51,112
+They said that x is minus 4.
+
+354
+00:19:51,751 --> 00:19:53,271
+This is minus 1.
+
+355
+00:19:54,791 --> 00:19:59,412
+They said that in the first condition, x is greater or equal to minus 1.
+
+356
+00:19:59,412 --> 00:20:05,291
+The second condition says that x is less or equal to minus 4.
+
+357
+00:20:05,971 --> 00:20:12,991
+For absolute value function, the intersection of these conditions, it will be always empty.
+
+358
+00:20:13,652 --> 00:20:14,192
+Okay?
+
+359
+00:20:14,192 --> 00:20:21,471
+So, for absolute value function, you have to take the union of the conditions here and here.
+
+360
+00:20:21,471 --> 00:20:22,432
+Okay?
+
+361
+00:20:22,432 --> 00:20:22,932
+Okay.
+
+362
+00:20:22,932 --> 00:20:26,132
+But, for all the other functions, you have to take the intersection.
+
+363
+00:20:27,471 --> 00:20:27,872
+Okay.
+
+364
+00:20:27,872 --> 00:20:28,372
+Okay?
+
+365
+00:20:28,372 --> 00:20:28,711
+Okay.
+
+366
+00:20:28,711 --> 00:20:30,692
+For example, you can take like this.
+
+367
+00:20:30,692 --> 00:20:32,192
+You have some conditions.
+
+368
+00:20:32,192 --> 00:20:40,592
+And you have to find for which value of x, it possesses all the conditions here.
+
+369
+00:20:41,711 --> 00:20:44,511
+But, only it is different for absolute value function.
+
+370
+00:20:44,511 --> 00:20:49,152
+Because, the intersection in the absolute value functions, it will be always empty.
+
+371
+00:20:49,152 --> 00:20:49,872
+Okay?
+
+372
+00:20:51,372 --> 00:20:51,811
+Okay.
+
+373
+00:20:51,811 --> 00:20:56,031
+So, if you don't have any other question, I want to talk about limits.
+
+374
+00:20:56,031 --> 00:20:56,372
+Okay?
+
+375
+00:20:56,372 --> 00:20:56,872
+Okay.
+
+376
+00:20:56,872 --> 00:20:58,592
+Now.
+
+377
+00:20:58,592 --> 00:21:28,572
+Okay.
+
+378
+00:20:59,059 --> 00:21:03,059
+What is the meaning of limit? Why do we need limits?
+
+379
+00:21:03,059 --> 00:21:07,059
+First, I want to explain in an example.
+
+380
+00:21:07,059 --> 00:21:12,059
+For limits, actually we have formal definition and informal definition.
+
+381
+00:21:12,059 --> 00:21:16,059
+We can find the limit directly, but we have a formal definition
+
+382
+00:21:16,059 --> 00:21:20,059
+that contains epsilon delta, but I will explain in the next week.
+
+383
+00:21:20,059 --> 00:21:23,059
+I don't want to talk about for now.
+
+384
+00:21:23,059 --> 00:21:28,059
+It is algebra.
+
+385
+00:21:28,059 --> 00:21:31,059
+Let us look at this example.
+
+386
+00:21:31,059 --> 00:21:38,059
+What is the behavior of this function at the point near x equals 1?
+
+387
+00:21:38,059 --> 00:21:46,059
+Firstly, if you look at your function, our domain of this function is real number.
+
+388
+00:21:46,059 --> 00:21:51,059
+But only we have a problem, I have to subtract one.
+
+389
+00:21:51,059 --> 00:21:56,059
+So the function fx is defined for all real numbers.
+
+390
+00:21:56,059 --> 00:21:59,059
+Only I have a problem at x equals 1.
+
+391
+00:21:59,059 --> 00:22:06,059
+So for we can write this function for not x equals to 1.
+
+392
+00:22:06,059 --> 00:22:11,059
+The function is x square minus 1 over x minus 1.
+
+393
+00:22:11,059 --> 00:22:15,059
+I can write this product as x minus 1, x plus 1.
+
+394
+00:22:15,059 --> 00:22:21,059
+And if you cancel these functions, your function will be the same with x equals 1.
+
+395
+00:22:21,059 --> 00:22:24,059
+What is x equals 1? Let's try to sketch.
+
+396
+00:22:24,059 --> 00:22:28,059
+If x is 0, it is a line here.
+
+397
+00:22:28,059 --> 00:22:32,059
+If x is 0, y is 1.
+
+398
+00:22:32,059 --> 00:22:36,059
+If y is 0, x will be minus 1.
+
+399
+00:22:36,059 --> 00:22:39,059
+It will be here.
+
+400
+00:22:39,059 --> 00:22:40,059
+Okay.
+
+401
+00:22:40,059 --> 00:22:43,059
+This is the graph of this function.
+
+402
+00:22:43,059 --> 00:22:49,059
+But our function has a problem at x equals 1.
+
+403
+00:22:49,059 --> 00:22:50,059
+Okay.
+
+404
+00:22:50,059 --> 00:22:53,059
+At x equals 1, we have a problem.
+
+405
+00:22:53,059 --> 00:22:58,059
+So the graph of our function will be dissimilar with x plus 1.
+
+406
+00:22:58,059 --> 00:23:05,059
+But only we have a gap at x equals 1 because our function is not defined.
+
+407
+00:23:05,059 --> 00:23:06,059
+Okay.
+
+408
+00:23:06,059 --> 00:23:09,059
+So why do we need limits?
+
+409
+00:23:09,059 --> 00:23:12,059
+I want to sketch the graph of this function.
+
+410
+00:23:12,059 --> 00:23:16,059
+But okay, we have a problem at x equals 1.
+
+411
+00:23:16,059 --> 00:23:20,059
+But how can we sketch the graph at 1?
+
+412
+00:23:20,059 --> 00:23:29,059
+I want to find what is the approximate value of f x near 1.
+
+413
+00:23:29,059 --> 00:23:33,059
+For example, here or here.
+
+414
+00:23:33,059 --> 00:23:34,059
+I need to find.
+
+415
+00:23:34,059 --> 00:23:35,059
+Okay.
+
+416
+00:23:35,059 --> 00:23:38,059
+The function is not defined at x equals 1.
+
+417
+00:23:38,059 --> 00:23:44,059
+But it is defined at 0.9 or 1.1.
+
+418
+00:23:44,059 --> 00:23:50,059
+So for this, I will find the limit of this function.
+
+419
+00:23:50,059 --> 00:23:53,059
+And I can say that, okay, we have a gap.
+
+420
+00:23:53,059 --> 00:23:58,059
+But it will be approximately very near to this point.
+
+421
+00:23:58,059 --> 00:23:59,059
+It will be equals to 1.
+
+422
+00:23:59,059 --> 00:24:01,059
+How can you find these limits?
+
+423
+00:24:01,059 --> 00:24:15,059
+And then we have a gap in the middle of the function.
+
+424
+00:24:09,332 --> 00:24:24,332
+So, I can take the limit. Maybe we have a problem at equals 1. So, for limit, the function f doesn't need...
+
+425
+00:24:27,859 --> 00:24:29,179
+to be defined. Okay?
+
+426
+00:24:32,723 --> 00:24:52,604
+Your function can be or cannot be defined. It is not important. Okay. In this question, it is not defined. So, let us find the limit. Limit x goes to 1. The open form of x squared minus 1 is x minus 1, x plus 1.
+
+427
+00:24:56,019 --> 00:25:07,240
+x-1, we can cancel. So, the limit will be 2. It means that the function is not defined, but no problem.
+
+428
+00:25:07,240 --> 00:25:16,980
+In the graph of this function, I can sketch the function fx will be approximately equals to 2 here.
+
+429
+00:25:16,980 --> 00:25:31,200
+So, if you have a problem at some points, you can find the limits. You can see that the function of this function is not continuous.
+
+430
+00:25:31,200 --> 00:25:39,700
+Why? Because I have a gap here. But if I rewrite our function as a piecewise function,
+
+431
+00:25:39,700 --> 00:25:49,619
+we will see later about continuity, but I want to write here. Our function is x squared minus 1 over x plus 1.
+
+432
+00:25:50,980 --> 00:25:51,619
+If, sorry.
+
+433
+00:25:56,372 --> 00:26:02,352
+This is our function. If all the points not equal to 1, we don't have any problem
+
+434
+00:26:02,352 --> 00:26:07,951
+about this function. Only we have a problem at x equals 1. And if you write
+
+435
+00:26:07,951 --> 00:26:15,252
+if x equals 1, if you write the limit value here, then your function, your new
+
+436
+00:26:15,252 --> 00:26:24,211
+function will be continuous at everywhere, every real number.
+
+437
+00:26:24,211 --> 00:26:33,792
+Can you repeat the last point about the continuity? Yes, okay. Normally your function is not continuous
+
+438
+00:26:33,792 --> 00:26:40,652
+because what is continuous here you have a gap. So the function is not defined. But if
+
+439
+00:26:40,652 --> 00:26:46,932
+you rewrite your function using a piecewise function like this, your function can be extended
+
+440
+00:26:46,932 --> 00:26:53,211
+to continuous. What is that? I know that if the function is not equals to 1 here, we don't
+
+441
+00:26:53,211 --> 00:27:00,832
+have any problem. So I write that if x not equals 1, this is your function. If x equals 1,
+
+442
+00:27:00,832 --> 00:27:09,172
+normally it is not defined. So I define your function at x equals 1 as the limit.
+
+443
+00:27:09,172 --> 00:27:16,852
+What is our limit? Our limit is 2. If I write the limit value here, okay. So your new
+
+444
+00:27:16,852 --> 00:27:22,672
+function, your piecewise function will be continuous at everywhere on real number.
+
+445
+00:27:22,672 --> 00:27:32,692
+Normally your function is, normally your function is continuous at real number
+
+446
+00:27:32,692 --> 00:27:42,652
+subtract 1. Okay. But if you rewrite your function, if you write extension as a piecewise function,
+
+447
+00:27:42,652 --> 00:27:48,471
+your new function will be continuous at everywhere. We will see later. Okay. Only I want to give
+
+448
+00:27:48,471 --> 00:27:50,272
+some explanation for continuity.
+
+449
+00:27:50,272 --> 00:27:58,892
+Can I ask something? Yes. Okay. In the second one, the empty gap is going to be filled?
+
+450
+00:27:58,892 --> 00:28:15,172
+Yes. Yes. Yes. Okay. Okay. This graph is this one. Okay. If you sketch like this, let me sketch the new functions graph. Okay.
+
+451
+00:28:15,172 --> 00:28:27,172
+Okay. Here it is open, but here it will be closed. Yes. Okay. It will be the graph of this function will be this.
+
+452
+00:28:27,172 --> 00:28:45,152
+Okay. Thank you. Not as well. Okay. So let's ask. Okay. Now, this is here. For before the questions, I want to ask you to
+
+453
+00:28:45,152 --> 00:28:50,592
+talk about also one-sided limit, left limit and right limit. Firstly, why do we need
+
+454
+00:28:51,792 --> 00:29:00,672
+this kind of limits? Okay. If you have a piecewise function, especially if you have piecewise function,
+
+455
+00:29:01,231 --> 00:29:07,152
+part of the function, if you have absolute value function, okay.
+
+456
+00:29:10,675 --> 00:29:13,675
+Ve bu bir diğer funcions.
+
+457
+00:29:13,675 --> 00:29:15,675
+Bu funcionsin birçok birçok birçok.
+
+458
+00:29:15,675 --> 00:29:19,675
+Bu birçok birçok ve birçok birçok birçok.
+
+459
+00:29:19,675 --> 00:29:20,675
+Çünkü...
+
+460
+00:29:20,675 --> 00:29:25,675
+Bir second, birçok birçok.
+
+461
+00:29:25,675 --> 00:29:29,675
+Birçok birçok.
+
+462
+00:29:29,675 --> 00:29:31,675
+Ve bu birçok.
+
+463
+00:29:31,675 --> 00:29:33,675
+Birçok birçok.
+
+464
+00:29:33,675 --> 00:30:03,675
+Birçok, birçok.
+
+465
+00:30:03,675 --> 00:30:05,675
+Birçok.
+
+466
+00:30:05,675 --> 00:30:54,675
+Birçok, birçok.
+
+467
+00:30:54,675 --> 00:31:00,935
+Bu, bu
+
+468
+00:31:04,884 --> 00:31:11,203
+Ok, so actually one second I will show one thing first.
+
+469
+00:31:11,203 --> 00:31:19,284
+Ok, before the questions I want to show the relation between one sided and two sided limit.
+
+470
+00:31:20,003 --> 00:31:26,243
+If your function have a limit at the point A, ok, if the limit is L,
+
+471
+00:31:27,044 --> 00:31:32,644
+then your left side limit will be equals to right side limit.
+
+472
+00:31:32,644 --> 00:31:43,203
+If left side is equal to right side, then I can say that, ok, this function have limit at point A.
+
+473
+00:31:43,844 --> 00:31:49,844
+But in many questions we can have only one sided. Let me give some examples, ok.
+
+474
+00:31:52,163 --> 00:31:59,683
+This means left side limit minus means left side. We have another formula, I will give you an example,
+
+475
+00:31:59,683 --> 00:32:07,764
+Ok, for the right side limit the return is this plus and we have another formula, I will give an example
+
+476
+00:32:08,403 --> 00:32:15,284
+after this question. Let us look at this example. What is the limit of signum function?
+
+477
+00:32:15,284 --> 00:32:23,604
+In the signum function you can see that we have an absolute value function. So it will be different. If x is less than 0,
+
+478
+00:32:23,604 --> 00:32:32,644
+your function will be minus x. If x is greater than 0, you know that your function is x. We have different functions.
+
+479
+00:32:33,124 --> 00:32:39,844
+So for absolute value function, I need to look at left side and right side limit.
+
+480
+00:32:39,844 --> 00:32:49,203
+So for the right side limit x goes to 0, your function will be x. So x over x will be 1. This is your
+
+481
+00:32:50,644 --> 00:32:56,723
+right side limit. Right or you can directly say that it is right limit. Ok.
+
+482
+00:32:56,723 --> 00:33:08,324
+If you want to talk about left side limit 0 goes to from the left side. Your function is minus x and when you write in the function,
+
+483
+00:33:08,324 --> 00:33:14,003
+your limit is minus 1. This is your left limit. Left sided limit, left limit. Ok.
+
+484
+00:33:16,884 --> 00:33:18,723
+So I can say that we have
+
+485
+00:33:18,723 --> 00:33:19,274
+and I will give you a little bit of a little bit of a little bit of a little bit of a little bit of a little bit of a little bit of a little bit of a little bit of a little bit of a little bit of a little bit of a little bit of a little bit of a little bit of a little bit of a little bit of a little bit of a little bit of a little bit of a little bit of a little bit of a little bit of a little bit of a little bit of a little bit of a little bit of a little bit of a little bit of a little bit of a little bit of a little bit of a little bit of a little bit of a little bit of a little bit of a little bit of a little bit of a little bit of a little bit of a little bit of a little bit of a little bit of a little bit of a little bit of a little bit of a little bit of a little bit of a little bit of a little bit of a little bit of a little bit of a little bit of a little bit of
+
+486
+00:33:22,324 --> 00:33:23,744
+left, limit,
+
+487
+00:33:28,211 --> 00:33:31,672
+And we have right limit.
+
+488
+00:33:32,932 --> 00:33:34,751
+We have one-sided limit.
+
+489
+00:33:35,192 --> 00:33:36,612
+But what about limit?
+
+490
+00:33:37,352 --> 00:33:43,291
+I said that if you want to have a limit, left side limit has to be equal to right side limit.
+
+491
+00:33:43,412 --> 00:33:45,811
+But they are not equal to each other.
+
+492
+00:33:46,392 --> 00:33:48,112
+So we don't have limit.
+
+493
+00:33:48,672 --> 00:33:48,932
+Okay?
+
+494
+00:33:49,471 --> 00:33:51,372
+Only we have one-sided limit.
+
+495
+00:33:51,652 --> 00:33:56,491
+Şimdi limitin var olması için sağın solun birbirine eşit olması gerekiyor.
+
+496
+00:33:56,491 --> 00:33:58,511
+Çünkü hiçbir zaman limit farklı olamaz.
+
+497
+00:33:59,392 --> 00:34:03,831
+The important point for the limit, limit has to be unique.
+
+498
+00:34:04,331 --> 00:34:06,011
+You can't find different limits.
+
+499
+00:34:06,271 --> 00:34:06,372
+Okay?
+
+500
+00:34:07,172 --> 00:34:12,572
+But in our example, we have right limit as one and your left limit is minus one.
+
+501
+00:34:13,472 --> 00:34:17,711
+We have one-sided limit but we don't have limit.
+
+502
+00:34:18,652 --> 00:34:22,612
+Yani limitin var olması için sağın solun birbirine eşit olması gerekiyor.
+
+503
+00:34:22,612 --> 00:34:26,132
+Tek taraflı ve çift iki taraflı limit dediğimiz şey var aslında.
+
+504
+00:34:26,492 --> 00:34:27,512
+Ne yapıyorsunuz?
+
+505
+00:34:27,891 --> 00:34:29,472
+Sağ limitiniz tek başına var.
+
+506
+00:34:29,711 --> 00:34:31,211
+Sol limitiniz de tek başına var.
+
+507
+00:34:31,431 --> 00:34:36,871
+Ama ikisi birbirine eşit olmadığı için size limit var mı diye sormuşsam yok.
+
+508
+00:34:38,152 --> 00:34:41,012
+Sağ limit, sol limit var mı diye sormuşsam var.
+
+509
+00:34:42,052 --> 00:34:42,492
+Okay.
+
+510
+00:34:42,692 --> 00:34:44,391
+If they ask, do you have limits?
+
+511
+00:34:44,672 --> 00:34:44,891
+No.
+
+512
+00:34:44,891 --> 00:34:47,592
+Do you have one-sided limit?
+
+513
+00:34:47,791 --> 00:34:48,132
+Yes.
+
+514
+00:34:48,251 --> 00:34:52,452
+I have left limit and I have right limit but no limit.
+
+515
+00:34:52,811 --> 00:34:53,092
+Okay?
+
+516
+00:34:53,931 --> 00:34:55,952
+We have left shoe.
+
+517
+00:34:56,351 --> 00:34:57,512
+You have right shoe.
+
+518
+00:34:57,711 --> 00:35:00,972
+But if you want to talk about total, no.
+
+519
+00:35:01,492 --> 00:35:01,811
+Okay?
+
+520
+00:35:01,811 --> 00:35:06,871
+If you look at your graph, this is the graph of signal function.
+
+521
+00:35:07,632 --> 00:35:12,092
+If y equals one, okay, your function is this.
+
+522
+00:35:12,211 --> 00:35:13,211
+We have a gap here.
+
+523
+00:35:14,311 --> 00:35:19,152
+For negative values, the function is this.
+
+524
+00:35:19,331 --> 00:35:20,592
+And we have a gap here.
+
+525
+00:35:20,592 --> 00:35:21,592
+Okay?
+
+526
+00:35:22,971 --> 00:35:27,371
+The function is not defined at x equals zero.
+
+527
+00:35:27,711 --> 00:35:27,791
+Okay?
+
+528
+00:35:28,112 --> 00:35:31,632
+The function is not defined at x equals zero.
+
+529
+00:35:32,132 --> 00:35:39,351
+And we can write our domain will be real number minus zero for this function.
+
+530
+00:35:39,492 --> 00:35:39,771
+Okay?
+
+531
+00:35:40,251 --> 00:35:41,371
+This is signal function.
+
+532
+00:35:41,512 --> 00:35:42,311
+İşaret function.
+
+533
+00:35:42,311 --> 00:35:44,911
+Did you understand here?
+
+534
+00:35:45,012 --> 00:35:45,592
+Until here?
+
+535
+00:35:46,032 --> 00:35:47,731
+We will see some other questions.
+
+536
+00:35:49,311 --> 00:35:49,711
+Okay.
+
+537
+00:35:50,672 --> 00:35:56,251
+I said that if you want to talk about limit, left side and right side will be equal to each other.
+
+538
+00:35:56,791 --> 00:35:57,112
+Okay.
+
+539
+00:35:57,152 --> 00:35:58,371
+Let's look at this example.
+
+540
+00:35:58,911 --> 00:36:01,431
+We have an absolute value function.
+
+541
+00:36:01,431 --> 00:36:05,371
+And they asked that what is right side limit at 2?
+
+542
+00:36:05,831 --> 00:36:06,871
+What is left limit?
+
+543
+00:36:07,211 --> 00:36:09,231
+And what is normal limit?
+
+544
+00:36:10,152 --> 00:36:10,471
+Okay.
+
+545
+00:36:10,471 --> 00:36:14,192
+First, I want to rewrite this equation as 3, 2.
+
+546
+00:36:15,751 --> 00:36:17,971
+The biggest one is positive.
+
+547
+00:36:18,112 --> 00:36:19,311
+The product is negative.
+
+548
+00:36:19,311 --> 00:36:23,032
+So, I can write this part as x plus 3.
+
+549
+00:36:24,092 --> 00:36:24,751
+Okay.
+
+550
+00:36:25,032 --> 00:36:26,711
+Product x minus 2.
+
+551
+00:36:28,411 --> 00:36:29,052
+Okay.
+
+552
+00:36:29,351 --> 00:36:34,411
+So, let us look at, firstly, from the right side.
+
+553
+00:36:34,711 --> 00:36:38,552
+From the right side, it means that your point will be like this.
+
+554
+00:36:38,672 --> 00:36:39,971
+2.1.
+
+555
+00:36:40,471 --> 00:36:44,072
+A little bit bigger than your point 2.
+
+556
+00:36:44,192 --> 00:36:46,152
+If you write 2.1 here,
+
+557
+00:36:47,331 --> 00:36:49,112
+The absolute value will be positive.
+
+558
+00:36:49,311 --> 00:36:51,152
+So, you write x minus 2.
+
+559
+00:36:51,851 --> 00:36:54,371
+x minus 2 product x plus 3.
+
+560
+00:36:54,471 --> 00:36:56,331
+I can cancel these two terms.
+
+561
+00:36:56,831 --> 00:36:58,931
+And the result will be 1 over 5.
+
+562
+00:36:58,931 --> 00:37:00,471
+What does it mean?
+
+563
+00:37:00,532 --> 00:37:02,692
+I have right limit.
+
+564
+00:37:02,692 --> 00:37:03,391
+What does it mean?
+
+565
+00:37:03,391 --> 00:37:04,771
+I have right limit.
+
+566
+00:37:06,579 --> 00:37:14,039
+Now let us look at the other part. They ask it, what is the left side limit adds to?
+
+567
+00:37:15,259 --> 00:37:23,380
+So I will write a point like 1.9. And when you write 1.9 here,
+
+568
+00:37:26,139 --> 00:37:35,319
+if I write 1.9, you can see that it is a negative. So I will write minus here. The other functions are the same.
+
+569
+00:37:35,319 --> 00:37:42,639
+If I cancel these two terms, the value is minus 1 over 5. So I can say that I have left.
+
+570
+00:37:45,779 --> 00:37:48,920
+Okay. But what about 2?
+
+571
+00:37:50,259 --> 00:37:55,639
+For this, the left limit and the right limit has to be equals to each other, but they are different.
+
+572
+00:37:55,920 --> 00:38:03,519
+So if you want to talk about this limit, this limit doesn't exist. So it will be 1 over 5.
+
+573
+00:38:03,519 --> 00:38:13,179
+This is minus 1 over 5. For this question, we don't have limit. No limit. It doesn't exist.
+
+574
+00:38:13,480 --> 00:38:13,739
+Okay.
+
+575
+00:38:15,480 --> 00:38:18,920
+Only I can talk about one-sided limit here.
+
+576
+00:38:18,920 --> 00:38:26,239
+Okay. Let us look at this example. This is another, a different kind of question.
+
+577
+00:38:26,940 --> 00:38:29,940
+Why do we need a one-sided limit?
+
+578
+00:38:30,579 --> 00:38:34,179
+Okay. What one-sided limit for this function?
+
+579
+00:38:34,340 --> 00:38:36,440
+This function is a semicircle.
+
+580
+00:38:36,440 --> 00:38:41,960
+Okay. This is your semicircle from minus 1 to 1.
+
+581
+00:38:42,799 --> 00:38:43,319
+Okay.
+
+582
+00:38:44,139 --> 00:38:45,119
+Here is one.
+
+583
+00:38:45,799 --> 00:38:49,259
+Firstly, what is your domain of this function?
+
+584
+00:38:49,500 --> 00:38:53,659
+You can easily see from the graph, our domain is between minus 1 to 1.
+
+585
+00:38:53,659 --> 00:39:00,659
+And you can see that your function is not defined less than minus 1.
+
+586
+00:39:01,019 --> 00:39:04,599
+And the function is not defined is greater than 1.
+
+587
+00:39:05,059 --> 00:39:12,340
+So at this point, here and here, only I can talk about one-sided limit.
+
+588
+00:39:12,340 --> 00:39:16,039
+Because less than minus 1, you don't have any function.
+
+589
+00:39:16,659 --> 00:39:20,259
+And for greater than 1, you don't have any function.
+
+590
+00:39:20,619 --> 00:39:24,579
+So at this point, I can talk only one-sided limit.
+
+591
+00:39:25,019 --> 00:39:29,259
+But at this point, you can talk left side, both of them.
+
+592
+00:39:29,380 --> 00:39:34,039
+But at the end points, only I can talk about one-sided limit.
+
+593
+00:39:34,039 --> 00:39:39,739
+So I can say that minus 1 from the right side here.
+
+594
+00:39:40,059 --> 00:39:40,299
+Okay.
+
+595
+00:39:40,559 --> 00:39:44,099
+From this part, the limit is 0.
+
+596
+00:39:44,699 --> 00:39:46,759
+Your function is this.
+
+597
+00:39:47,059 --> 00:39:47,299
+Okay.
+
+598
+00:39:47,739 --> 00:39:49,039
+Your function is this.
+
+599
+00:39:52,532 --> 00:39:57,532
+Ve bu noktada bir noktada,
+
+600
+00:39:57,532 --> 00:40:02,532
+ve bu noktada bir noktada,
+
+601
+00:40:02,532 --> 00:40:07,532
+bu noktada bir noktada,
+
+602
+00:40:07,532 --> 00:40:09,532
+ama,
+
+603
+00:40:09,532 --> 00:40:12,532
+bu noktada bir noktada,
+
+604
+00:40:12,532 --> 00:40:13,532
+gx,
+
+605
+00:40:13,532 --> 00:40:17,532
+çünkü,
+
+606
+00:40:17,532 --> 00:40:19,532
+bu noktada bir noktada,
+
+607
+00:40:19,532 --> 00:40:26,532
+ve bu noktada bir noktada,
+
+608
+00:40:26,532 --> 00:40:27,532
+gx,
+
+609
+00:40:27,532 --> 00:40:29,532
+ve bu noktada bir noktada,
+
+610
+00:40:29,532 --> 00:40:30,532
+çünkü,
+
+611
+00:40:30,532 --> 00:40:46,532
+bu noktada bir noktada,
+
+612
+00:40:41,972 --> 00:40:45,972
+ve bu bir şey, bu bir şey, bu bir şey.
+
+613
+00:40:46,972 --> 00:40:47,532
+Okay?
+
+614
+00:40:51,027 --> 00:40:55,367
+Anlaşıldı mı? Mesela bu soruda sadece tek taraf limitden bahsedebiliyorum.
+
+615
+00:40:55,527 --> 00:40:57,788
+Çünkü zaten öbür tarafta fonksiyon yok ki.
+
+616
+00:40:58,907 --> 00:41:00,687
+Let us look at this exam.
+
+617
+00:41:00,707 --> 00:41:11,447
+Hocam, biz lise müfredatında bir fonksiyonun şey, devamını bilmiyorsak ve orası kapalıysa bize sorduğu nokta,
+
+618
+00:41:11,447 --> 00:41:16,327
+şey dedik, tek taraftan limit olması, limit var demek için yeterli dedik.
+
+619
+00:41:16,527 --> 00:41:18,047
+Yani Map Kitabı'nda böyleydi.
+
+620
+00:41:18,047 --> 00:41:23,947
+Hatta hocalarımız bize gerçekliği olmadığını söylüyordu ama biz öyle kabul ediyorduk yani.
+
+621
+00:41:25,207 --> 00:41:33,807
+Yani şöyle normalde fonksiyon olmadığı için, yani şöyle uç noktalar için evet bunu da söyleyebiliriz.
+
+622
+00:41:33,907 --> 00:41:37,247
+Ama aslında normal realitede de yok aslında.
+
+623
+00:41:37,247 --> 00:41:40,267
+Ama lisede falan biraz biz o şekilde öğretiyoruz.
+
+624
+00:41:40,267 --> 00:41:52,067
+Ama normal yabancı kitaplarda da bakarsanız aslında, yani nasıl diyeyim, çok aslında şey değil, önemli değil aslında.
+
+625
+00:41:52,227 --> 00:41:57,087
+Ama fonksiyon olmadığı için aslında normalde tek taraftadır.
+
+626
+00:41:57,087 --> 00:42:02,167
+Yani bilemedim şimdi kafanızı çok karıştırmak istemiyorum.
+
+627
+00:42:02,268 --> 00:42:04,307
+Normalde aslında tek taraftı limit var orada.
+
+628
+00:42:06,107 --> 00:42:10,967
+Ama yani siz bu şekilde öğrendiğiniz için istiyorsanız bu şekilde düşünebilirsiniz.
+
+629
+00:42:11,227 --> 00:42:12,207
+Kafanız karışmasın.
+
+630
+00:42:12,268 --> 00:42:13,867
+Çünkü fonksiyon yok orada aslında.
+
+631
+00:42:14,947 --> 00:42:18,707
+Ben bir daha bakayım ama belki şöyle söyleyebilirim aslında.
+
+632
+00:42:18,707 --> 00:42:29,387
+Eğer ki fonksiyonunuzun tanımlı olduğu kısımdan bakarsak sonrası olmadığı için, uç noktaları için aynı zamanda direkt limit var dedi de diyebiliriz.
+
+633
+00:42:29,487 --> 00:42:31,707
+Ama o çok sadece şeyler için geçerli.
+
+634
+00:42:32,567 --> 00:42:35,407
+Fonksiyonunuzun tanım kümesiyle alakalı bir şey aslında.
+
+635
+00:42:38,527 --> 00:42:39,927
+Bir düşüneyim olur mu?
+
+636
+00:42:40,007 --> 00:42:41,107
+Bir daha ben bir şey yapayım.
+
+637
+00:42:41,187 --> 00:42:42,268
+Normalde biz bu şekilde söylüyoruz.
+
+638
+00:42:42,268 --> 00:42:43,607
+Tamam hocam teşekkür ederim.
+
+639
+00:42:44,747 --> 00:42:48,627
+Lisede anlatılan, üniversitede anlatılan bazı yerlerde şeyler olabiliyor.
+
+640
+00:42:48,707 --> 00:42:50,207
+Değişiklikler olabiliyor.
+
+641
+00:42:50,307 --> 00:42:52,427
+Ama ben bir daha yabancı kitapları inceleyeyim.
+
+642
+00:42:52,507 --> 00:42:56,347
+Çünkü Türkçeler değil de yabancı benim elindeki kaynağa bir daha bakayım.
+
+643
+00:42:56,467 --> 00:42:56,747
+Olur mu?
+
+644
+00:42:57,387 --> 00:42:57,847
+Tamam hocam.
+
+645
+00:42:57,847 --> 00:42:59,087
+Ama normalde böyle söylüyoruz.
+
+646
+00:42:59,187 --> 00:42:59,307
+Tamam.
+
+647
+00:43:00,127 --> 00:43:02,007
+Ya buna da ben Thomas'tan bakmıştım.
+
+648
+00:43:02,167 --> 00:43:03,647
+Yani ama gene de emin olmak isterim.
+
+649
+00:43:03,747 --> 00:43:03,887
+Tamam.
+
+650
+00:43:05,187 --> 00:43:07,047
+Bakarım ben şimdi de teneffüs arasında.
+
+651
+00:43:07,587 --> 00:43:08,367
+Tamam hocam.
+
+652
+00:43:08,487 --> 00:43:09,487
+Sen şey diyeyim.
+
+653
+00:43:10,087 --> 00:43:11,447
+Can I ask a question?
+
+654
+00:43:11,447 --> 00:43:12,647
+Yes, yes, of course.
+
+655
+00:43:12,647 --> 00:43:18,687
+About why the limit is not defined when x approach minus one from the left.
+
+656
+00:43:18,707 --> 00:43:21,567
+Because the limit is not continue at that point.
+
+657
+00:43:23,667 --> 00:43:25,507
+Which one you are talking?
+
+658
+00:43:25,747 --> 00:43:26,907
+Limit x goes to?
+
+659
+00:43:27,788 --> 00:43:29,768
+Close to minus one from the left.
+
+660
+00:43:30,268 --> 00:43:31,268
+From the left.
+
+661
+00:43:31,467 --> 00:43:36,047
+Why it is not defined at that point?
+
+662
+00:43:37,047 --> 00:43:38,447
+Because we don't have a limit?
+
+663
+00:43:38,447 --> 00:43:40,587
+Yes.
+
+664
+00:43:41,067 --> 00:43:41,987
+One second.
+
+665
+00:43:43,288 --> 00:43:44,427
+You are asking this one?
+
+666
+00:43:45,768 --> 00:43:46,247
+No.
+
+667
+00:43:46,367 --> 00:43:46,987
+Yes, this one.
+
+668
+00:43:47,527 --> 00:43:49,827
+No, but it is one, not minus one.
+
+669
+00:43:50,788 --> 00:43:53,067
+From the left side, I have function here.
+
+670
+00:43:54,967 --> 00:43:56,288
+From the right side.
+
+671
+00:43:58,147 --> 00:44:00,707
+From the right side, we don't have limit here.
+
+672
+00:44:00,707 --> 00:44:02,707
+Because we...
+
+673
+00:44:02,707 --> 00:44:03,987
+You don't have any function.
+
+674
+00:44:05,087 --> 00:44:05,827
+Yeah, thank you.
+
+675
+00:44:06,268 --> 00:44:07,447
+Okay, for example, here.
+
+676
+00:44:08,067 --> 00:44:10,627
+1.2, we don't have anything here.
+
+677
+00:44:11,288 --> 00:44:15,627
+Because your domain is between minus one to one.
+
+678
+00:44:15,627 --> 00:44:24,207
+But your friends also asked that in the high school you learned at this point, we can say that we have limits.
+
+679
+00:44:24,707 --> 00:44:27,567
+But I have to look at again from the Thomas calculus.
+
+680
+00:44:27,787 --> 00:44:30,027
+Normally, you don't have any function.
+
+681
+00:44:30,727 --> 00:44:35,007
+Only we can talk about for this point, for example, left side limit.
+
+682
+00:44:35,007 --> 00:44:40,207
+But maybe I want to look at again because of the domain.
+
+683
+00:44:40,447 --> 00:44:43,667
+Maybe we can say also directly limit, but I'm not sure.
+
+684
+00:44:43,768 --> 00:44:45,887
+I have to look at the Thomas.
+
+685
+00:44:45,887 --> 00:44:46,288
+Okay.
+
+686
+00:44:47,155 --> 00:44:52,235
+Şimdi lisede gördüğünüz ve bizim İngilizce kitaplarda gördüğümüz bazı yerlerde gerçekten şey farklılık olabiliyor.
+
+687
+00:44:52,556 --> 00:44:55,215
+Ama ben bir daha bakayım. Emin olmadan bir şey söylemek istemiyorum.
+
+688
+00:44:56,795 --> 00:45:01,335
+Okay, so let us look at these examples after that. Let's take a break. Okay.
+
+689
+00:45:02,355 --> 00:45:06,135
+So they asked some limits and here we have a piecewise function.
+
+690
+00:45:06,615 --> 00:45:10,315
+Firstly, they asked what is the limit minus one from the left side?
+
+691
+00:45:10,315 --> 00:45:11,355
+Minus one here.
+
+692
+00:45:12,275 --> 00:45:14,215
+Less than minus one. Okay.
+
+693
+00:45:14,215 --> 00:45:17,456
+R function is this. Greater than minus one.
+
+694
+00:45:17,556 --> 00:45:18,755
+R function is this.
+
+695
+00:45:19,235 --> 00:45:22,375
+From the left side, R function will be x minus one.
+
+696
+00:45:23,056 --> 00:45:25,135
+So for this question.
+
+697
+00:45:26,496 --> 00:45:26,956
+Okay.
+
+698
+00:45:28,395 --> 00:45:29,375
+Minus one.
+
+699
+00:45:30,016 --> 00:45:32,996
+From the left side, R function is x minus one.
+
+700
+00:45:33,115 --> 00:45:36,635
+And if I write minus one here, our limit will be minus two.
+
+701
+00:45:37,675 --> 00:45:40,436
+In B, they ask minus one from the left side.
+
+702
+00:45:40,436 --> 00:45:45,615
+It means that greater than minus one, R function is x square plus one here.
+
+703
+00:45:47,996 --> 00:45:52,416
+And if I write minus one here, minus one square plus one.
+
+704
+00:45:53,576 --> 00:45:54,895
+It will be two.
+
+705
+00:45:56,395 --> 00:46:01,735
+In C, they ask zero from the right side for x is greater than zero.
+
+706
+00:46:01,775 --> 00:46:03,016
+R function is this.
+
+707
+00:46:03,016 --> 00:46:06,675
+So we will write x plus pi square.
+
+708
+00:46:06,815 --> 00:46:09,715
+And if I write zero, our limit will be pi square.
+
+709
+00:46:10,755 --> 00:46:14,135
+Zero from the right side, R function is this.
+
+710
+00:46:14,596 --> 00:46:16,155
+It is x square plus one.
+
+711
+00:46:16,295 --> 00:46:20,556
+And when I write zero, your limit will be one here.
+
+712
+00:46:21,755 --> 00:46:22,056
+Okay.
+
+713
+00:46:22,096 --> 00:46:23,275
+This is your limits.
+
+714
+00:46:23,275 --> 00:46:26,275
+And if you want to talk about, do we have limits?
+
+715
+00:46:26,576 --> 00:46:26,835
+No.
+
+716
+00:46:27,255 --> 00:46:30,255
+Because left side and right side limits are different.
+
+717
+00:46:30,956 --> 00:46:33,335
+For minus one, it is minus two.
+
+718
+00:46:33,456 --> 00:46:34,076
+This is two.
+
+719
+00:46:34,175 --> 00:46:34,815
+They are different.
+
+720
+00:46:35,255 --> 00:46:36,235
+We don't have limit.
+
+721
+00:46:36,355 --> 00:46:40,416
+Only we have one side limit at zero and minus one.
+
+722
+00:46:41,755 --> 00:46:42,115
+Okay.
+
+723
+00:46:42,115 --> 00:46:46,496
+Now let's take a break.
+
+724
+00:46:46,655 --> 00:46:51,875
+After that, we can look at some calculation rules for limits.
+
+725
+00:46:51,996 --> 00:46:52,255
+Okay.
+
+726
+00:46:53,315 --> 00:46:55,016
+Let's take a break for 10 minutes.
+
+727
+00:46:55,155 --> 00:46:55,295
+Okay.
+
+728
+00:46:55,395 --> 00:46:57,335
+After the break, I will continue again.
+
+729
+00:46:58,715 --> 00:47:16,895
+Hocam, bir şey sorabilir miyim?
+
+730
+00:47:04,724 --> 00:47:05,864
+Evet, dinledim.
+
+731
+00:47:06,224 --> 00:47:09,684
+Hocam, bunlardan önce bir tane soru çözmüştük.
+
+732
+00:47:09,764 --> 00:47:11,544
+Yani sıfır olmuyordu.
+
+733
+00:47:12,384 --> 00:47:13,604
+Domain kısmında.
+
+734
+00:47:14,084 --> 00:47:15,744
+Daha doğrusu sıfırda limitimiz yoktu.
+
+735
+00:47:16,364 --> 00:47:17,864
+Signal fonksiyonu mu diyorsun?
+
+736
+00:47:18,963 --> 00:47:19,304
+Diyorsun.
+
+737
+00:47:20,084 --> 00:47:21,344
+Şurada grafikli olan.
+
+738
+00:47:21,864 --> 00:47:22,104
+Evet.
+
+739
+00:47:22,844 --> 00:47:29,344
+Biz orada domain kısmına real sayılar yazıp sıfırı çıkarsak limitimiz var diyebilir miyiz?
+
+740
+00:47:31,184 --> 00:47:33,284
+Ya zaten şöyle bir şey var.
+
+741
+00:47:33,284 --> 00:47:37,044
+Limitin olması için o fonksiyonun illa orada tanımlı olması gerekmiyor.
+
+742
+00:47:38,684 --> 00:47:42,604
+Limitin olması için o fonksiyonun o noktada tanımlı olması gerekmiyor.
+
+743
+00:47:45,484 --> 00:47:46,984
+Süreklilikte o gerekiyor.
+
+744
+00:47:47,423 --> 00:47:48,544
+Limitte gerekmiyor.
+
+745
+00:47:49,484 --> 00:47:51,024
+Ama şöyle bir şey var.
+
+746
+00:47:51,244 --> 00:47:52,423
+Şimdi buradaki problem şu.
+
+747
+00:47:53,784 --> 00:47:55,844
+Bunun sağında solunda fonksiyon var.
+
+748
+00:47:56,684 --> 00:48:00,104
+Ama öbür dediğimizde öbür tarafta hiçbir fonksiyon yok.
+
+749
+00:48:00,104 --> 00:48:05,564
+Bunda sadece sıfırda problem var.
+
+750
+00:48:05,664 --> 00:48:12,903
+Ama sıfır öncesinde ve sonrasında fonksiyon olduğu için bu noktada sen yine çift taraflı limit olabilir.
+
+751
+00:48:13,564 --> 00:48:14,824
+Çünkü limitin şeyi şu.
+
+752
+00:48:14,963 --> 00:48:15,923
+Sadece koşulu şu.
+
+753
+00:48:16,923 --> 00:48:20,304
+Sıfıra sağdan soldan gittiğinde bunlar birbirini eşit mi?
+
+754
+00:48:20,304 --> 00:48:22,963
+Fonksiyonun orada tanımlı olma zorunluluğu yok burada.
+
+755
+00:48:23,584 --> 00:48:24,224
+Limitte yok.
+
+756
+00:48:24,384 --> 00:48:25,224
+Süreklilikte var.
+
+757
+00:48:26,024 --> 00:48:29,004
+Bunlar birbirine eşitse fonksiyonun burada tanımlı olmasının bir önemi yok.
+
+758
+00:48:29,584 --> 00:48:30,923
+Limit vardır diyebiliriz.
+
+759
+00:48:31,044 --> 00:48:33,084
+Ama şuradaki soru farklı.
+
+760
+00:48:34,104 --> 00:48:35,164
+Sorunun farkı şu.
+
+761
+00:48:35,304 --> 00:48:36,804
+Fonksiyon yok öbür tarafta.
+
+762
+00:48:37,903 --> 00:48:39,204
+Şimdi buraya geldiğin zaman.
+
+763
+00:48:39,443 --> 00:48:40,704
+Mesela buraya geliyorsun ya bak.
+
+764
+00:48:40,804 --> 00:48:41,443
+Buradan geldi.
+
+765
+00:48:41,984 --> 00:48:43,204
+Tamam burada bir fonksiyon var.
+
+766
+00:48:43,204 --> 00:48:44,624
+Ama buradan geldiğin zaman.
+
+767
+00:48:45,284 --> 00:48:47,064
+Bakacağın hiçbir fonksiyon yok burada.
+
+768
+00:48:48,864 --> 00:48:50,104
+Ama ben şimdi bakacağım.
+
+769
+00:48:50,244 --> 00:48:52,024
+Şimdi buz şundan kaynaklanıyor.
+
+770
+00:48:52,844 --> 00:48:54,484
+Sizin domaininizle alakalı.
+
+771
+00:48:55,064 --> 00:48:58,744
+Şurada domainde bir kapalı aralık yok.
+
+772
+00:48:58,984 --> 00:48:59,984
+Bak şunun yazımı şu.
+
+773
+00:49:00,724 --> 00:49:02,403
+Eksi sonsuzdan sıfıra.
+
+774
+00:49:03,484 --> 00:49:06,324
+Ve sıfırdan sonsuza.
+
+775
+00:49:07,044 --> 00:49:08,324
+Burada bir sorunumuz yok.
+
+776
+00:49:08,443 --> 00:49:09,744
+Endpointimiz yok burada.
+
+777
+00:49:09,744 --> 00:49:13,963
+Ama bizim burada domainimiz bir endpoint.
+
+778
+00:49:14,403 --> 00:49:17,324
+Yani şey kapalı bir aralık olduğu için burada endpointlerimiz var.
+
+779
+00:49:17,884 --> 00:49:21,684
+Aslında bunu süreklilikte de göreceğiz.
+
+780
+00:49:22,024 --> 00:49:26,124
+Bu şekilde kapalı aralıkların uçlarını aslında biz daha farklı inceliyoruz.
+
+781
+00:49:26,284 --> 00:49:27,443
+Süreklilikte bunu göreceğiz.
+
+782
+00:49:28,064 --> 00:49:33,524
+Uç noktalarda biz tek taraflı süreklilikten çok sürekli olduğunu da alabiliyoruz.
+
+783
+00:49:33,604 --> 00:49:35,423
+Siz şeyde de onu görmüşsünüzdür lisede.
+
+784
+00:49:35,423 --> 00:49:38,804
+Sizin sıkıntı yani sizdeki farklılık bu lisedekinde.
+
+785
+00:49:38,804 --> 00:49:43,324
+Buranın öbür tarafında olmadığı için hani acaba bu tek taraflı mı?
+
+786
+00:49:43,384 --> 00:49:45,284
+Direkt limit var mı diye söyleyebiliyor muyuz?
+
+787
+00:49:45,344 --> 00:49:46,564
+Ben onu bir kitaba bakacağım.
+
+788
+00:49:46,864 --> 00:49:49,524
+Çünkü İngilizce kaynaklar bizim Türkçe'de bazen değişebiliyor.
+
+789
+00:49:50,304 --> 00:49:52,224
+Ama eminimden ben bir şey söylemek istemiyorum.
+
+790
+00:49:52,963 --> 00:49:53,444
+Tamam mı?
+
+791
+00:49:53,444 --> 00:49:54,184
+Şimdi bir bakacağım.
+
+792
+00:49:54,344 --> 00:49:54,903
+Tamam mı?
+
+793
+00:49:54,903 --> 00:49:55,104
+Tamam.
+
+794
+00:49:55,104 --> 00:49:59,104
+Tamam mı?
+
+795
+00:49:59,104 --> 00:50:23,104
+Bir dakika.
+
+796
+01:01:27,635 --> 01:01:31,315
+Hocam, sesinizi biz duyamıyoruz. Kapalı sanırım.
+
+797
+01:01:32,536 --> 01:01:34,775
+Yok daha açmadım zaten. Şu an yazıyordum.
+
+798
+01:01:35,295 --> 01:01:35,516
+Tamam.
+
+799
+01:01:36,195 --> 01:01:38,155
+Yok açmadım zaten ben. Şimdi yazıyorum.
+
+800
+01:01:39,516 --> 01:01:46,916
+Okay, so I look at the book and also I search.
+
+801
+01:01:46,916 --> 01:01:54,215
+Okay, so we can say that if your domain is a closed interval, it is actually a spatial case.
+
+802
+01:01:54,215 --> 01:01:58,496
+Okay, if your domain is a closed interval, I can say that.
+
+803
+01:01:58,896 --> 01:02:10,076
+If domain is a closed interval, at the end points, one-sided limit is enough for limits.
+
+804
+01:02:10,076 --> 01:02:17,295
+Okay, if you have one-sided limit, then you can say that we have a limit at the end points.
+
+805
+01:02:17,355 --> 01:02:22,355
+Because the behavior at the end points are different if your domain is a closed interval.
+
+806
+01:02:22,355 --> 01:02:27,155
+Okay, but for other functions, it is different.
+
+807
+01:02:28,036 --> 01:02:33,715
+You, for example, in this example, okay, it is different.
+
+808
+01:02:34,195 --> 01:02:40,835
+You have different functions, but if it is a closed interval, if your domain is a closed interval,
+
+809
+01:02:40,835 --> 01:02:48,056
+and if you want to find the limit at the end points, if you have one-sided limit, it will be enough for normal limit.
+
+810
+01:02:48,056 --> 01:02:48,416
+Okay?
+
+811
+01:02:48,416 --> 01:03:10,795
+Okay.
+
+812
+01:02:53,940 --> 01:03:00,940
+bu
+
+813
+01:03:00,940 --> 01:03:20,940
+evet
+
+814
+01:03:20,940 --> 01:03:25,940
+if it is a closed interval, okay?
+
+815
+01:03:25,940 --> 01:03:28,940
+okay
+
+816
+01:03:28,940 --> 01:03:33,940
+so now let us look at some calculating rules for limits
+
+817
+01:03:33,940 --> 01:03:43,940
+if your function has a limit, if the function, the limit of fx is l and the limit of the functions gx is m
+
+818
+01:03:43,940 --> 01:03:51,940
+then if you want to add or subtract these two functions, you have to make the same thing for the limit, okay?
+
+819
+01:03:51,940 --> 01:03:56,940
+if it is plus, it will be plus, if it is minus, it will be minus
+
+820
+01:03:56,940 --> 01:04:09,940
+if you want to product these two functions, you can write the limits also as the product, for example, we will use this expression later, for example, let me write an example
+
+821
+01:04:09,940 --> 01:04:15,940
+for example, sin x over x square, okay?
+
+822
+01:04:15,940 --> 01:04:20,940
+and i can rewrite our function as
+
+823
+01:04:20,940 --> 01:04:24,940
+sin x over x
+
+824
+01:04:24,940 --> 01:04:26,940
+product 1 over x
+
+825
+01:04:26,940 --> 01:04:31,940
+then i can write the limits separately, this is one
+
+826
+01:04:31,940 --> 01:04:44,940
+the limit of this function is infinity, so the limit will be one product infinity, it is infinity
+
+827
+01:04:44,940 --> 01:04:46,940
+okay?
+
+828
+01:04:46,940 --> 01:04:51,940
+so you can find the limits separately as the product
+
+829
+01:04:51,940 --> 01:05:00,940
+if you have a product of a constant, you can write the constant outside of the function, after that you can find the limit here
+
+830
+01:05:00,940 --> 01:05:11,940
+if you have a division, the limit will be the limit of fx over gx will be l over m, but m can't be 0
+
+831
+01:05:11,940 --> 01:05:29,940
+and in the fifth one, if m an integer and n is a positive number, actually you can rewrite this function as fx to the power m
+
+832
+01:05:29,940 --> 01:05:38,940
+and this is the root of n, these two expressions are the same
+
+833
+01:05:38,940 --> 01:05:44,940
+so here they said that n has to be a positive integer because of the root
+
+834
+01:05:44,940 --> 01:05:50,940
+and we can write m is any integer, it can be plus or it can be minus, okay?
+
+835
+01:05:50,940 --> 01:05:52,940
+it can be also 0
+
+836
+01:05:52,940 --> 01:06:00,940
+so if you want to find this limit, the limit will be l to the power m square root n
+
+837
+01:06:00,940 --> 01:06:05,940
+but here we have some conditions here
+
+838
+01:06:05,940 --> 01:06:16,940
+if l, if n is even, if you remember in the root function, if n is even, inside of the function has to be positive
+
+839
+01:06:16,940 --> 01:06:21,940
+so it is the same, the limits of l has to be positive
+
+840
+01:06:21,940 --> 01:06:34,940
+and if l is non-zero, if m is negative, what is that? if m is negative, your function will be like this 1 over fx
+
+841
+01:06:34,940 --> 01:06:38,940
+and your limit will be like 1 over l
+
+842
+01:06:38,940 --> 01:06:42,940
+so because of this condition, l has to be non-zero
+
+843
+01:06:42,940 --> 01:06:52,940
+so if n is even, we have one condition, if m is less than 0, we have another condition for limit, okay?
+
+844
+01:06:57,108 --> 01:07:04,827
+6.1. If you have a relation between these two functions, if fx is less or equal to gx,
+
+845
+01:07:04,827 --> 01:07:11,948
+then you will have the same thing for the limits also. L less or equal to m here.
+
+846
+01:07:13,108 --> 01:07:17,288
+You don't look at the 7 and 6, you will see in the polynomials.
+
+847
+01:07:18,327 --> 01:07:25,628
+Now, we have a theorem. Actually, this theorem is important in some questions, but in this
+
+848
+01:07:25,628 --> 01:07:34,568
+semester, we probably will make tests. Maybe in tests, you don't see any proof questions.
+
+849
+01:07:35,528 --> 01:07:42,327
+Okay, so Sandwich theorem, actually, it is an important theorem. They said that if you have
+
+850
+01:07:42,327 --> 01:07:50,827
+three functions and if there is a relation between these three functions as fx is less or equal to gx,
+
+851
+01:07:50,827 --> 01:07:58,608
+less or equal to hx in some open interval. Then, if you take the limit of the beginning function
+
+852
+01:07:58,608 --> 01:08:07,448
+and end function at a point a, if these two limits are equal to each other, then at the middle of the
+
+853
+01:08:07,448 --> 01:08:15,448
+here, the function is gx, limit has to be also l. This is called Sandwich theorem or in Turkish,
+
+854
+01:08:15,448 --> 01:08:25,368
+it is sıkıştırma. Sıkıştırma teoremi de diyoruz. Okay, how can we say this question? For example,
+
+855
+01:08:26,228 --> 01:08:32,807
+using the Sandwich theorem show that this limit is zero. Normally, in classical example, we can ask this kind of questions.
+
+856
+01:08:34,228 --> 01:08:42,307
+Okay, firstly, if I want to use the Sandwich theorem, I need to find two functions like fx and gx. Okay,
+
+857
+01:08:42,307 --> 01:08:52,387
+especially we can use the Sandwich theorem if your function is a bounded function. Okay, so if let's look at our function,
+
+858
+01:08:52,387 --> 01:09:01,748
+it is x squared cosine 1 over x. Normally, I know that for a cosine function, cosine function is a bounded function
+
+859
+01:09:01,748 --> 01:09:09,668
+and you can say the same thing for sine function also. Cosine function is between minus 1 to 1.
+
+860
+01:09:09,668 --> 01:09:23,828
+And actually, the cosine function's domain is real number. Okay, so I can write everything inside of the cosine function.
+
+861
+01:09:23,828 --> 01:09:31,608
+And here, I want to write, because of this function, I can say the same thing for cosine 1 over x.
+
+862
+01:09:31,608 --> 01:09:42,967
+Okay, it is a bounded function. So cosine 1 over x also between minus 1 to 1. In here, our function has also x squared.
+
+863
+01:09:43,608 --> 01:10:13,927
+Here, for this, I will product each part with x squared.
+
+864
+01:09:54,484 --> 01:09:58,404
+So, I find the new functions as minus x square.
+
+865
+01:10:01,811 --> 01:10:28,692
+x kare artı 1 over x, less or equal to x kare. Now, I find two new functions in our theorem. It is f, this is g, this is h. Now, in the Sandwich theorem, they said that, okay, if you have these functions, what are the limits of these functions here?
+
+866
+01:10:28,692 --> 01:10:39,731
+The function, the limit of this function is zero. The limit of x square is zero. Then, from the Sandwich theorem, I can say that,
+
+867
+01:10:39,731 --> 01:10:52,612
+so, in that case, the limit of our functions limit will be also zero. Okay? This is a Sandwich theorem question. Actually, it is a proof.
+
+868
+01:10:54,471 --> 01:10:55,471
+Let me
+
+869
+01:10:55,471 --> 01:11:25,452
+let me
+
+870
+01:11:09,747 --> 01:11:13,467
+Okay, let me write another example, similar example. Okay.
+
+871
+01:11:23,188 --> 01:11:44,868
+I can make similar things for a sign function also. For example, what happens? x for let us write sign x cube.
+
+872
+01:11:48,467 --> 01:11:57,427
+Let us write limit x goes to 0. This is 0. But show this limit using the sandemiş terim. Okay.
+
+873
+01:11:58,287 --> 01:12:06,907
+So, I know that sin function also is a bounded function. And I know that sin x is between minus 1 to 1.
+
+874
+01:12:10,644 --> 01:12:15,244
+And I can change inside of the sine function for all of them.
+
+875
+01:12:15,423 --> 01:12:17,123
+It will be between minus one to one.
+
+876
+01:12:17,244 --> 01:12:18,744
+So I can add x cube here.
+
+877
+01:12:18,864 --> 01:12:19,484
+It is the same.
+
+878
+01:12:20,484 --> 01:12:23,344
+Now in the function I have also x to the power four.
+
+879
+01:12:23,463 --> 01:12:26,104
+Let us product each part with x to the power four.
+
+880
+01:12:26,104 --> 01:12:38,923
+So I will have minus x to the power four less or equal to x four sine x cube less or equal to x four.
+
+881
+01:12:38,923 --> 01:12:40,123
+Okay.
+
+882
+01:12:40,524 --> 01:12:42,784
+Now this is your f function.
+
+883
+01:12:43,284 --> 01:12:44,904
+This is your h function.
+
+884
+01:12:45,384 --> 01:12:48,244
+And if you look at the limit of these functions.
+
+885
+01:12:50,244 --> 01:12:54,543
+Minus x to the power four will be also limit.
+
+886
+01:12:55,204 --> 01:12:57,024
+x to the power four.
+
+887
+01:12:57,344 --> 01:12:58,184
+It is zero.
+
+888
+01:13:00,204 --> 01:13:03,884
+Then these functions limit will be also zero.
+
+889
+01:13:05,083 --> 01:13:05,423
+Okay.
+
+890
+01:13:05,423 --> 01:13:09,844
+So these questions are related to Sandviç Teorem.
+
+891
+01:13:10,123 --> 01:13:11,284
+And in Sandviç Teorem.
+
+892
+01:13:12,244 --> 01:13:16,104
+In the next week I will make an application lesson on Wednesday.
+
+893
+01:13:16,384 --> 01:13:16,623
+Okay.
+
+894
+01:13:16,724 --> 01:13:21,503
+I will give you some more examples about Sandviç Teorem.
+
+895
+01:13:22,384 --> 01:13:22,704
+Okay.
+
+896
+01:13:24,384 --> 01:13:26,284
+And formal definition.
+
+897
+01:13:26,744 --> 01:13:30,003
+I said that I will explain this formal definition next week.
+
+898
+01:13:30,003 --> 01:13:30,384
+Okay.
+
+899
+01:13:31,204 --> 01:13:31,824
+Why?
+
+900
+01:13:31,824 --> 01:13:35,923
+Because actually we see this concept in classical exam.
+
+901
+01:13:36,043 --> 01:13:37,164
+But we will make tests.
+
+902
+01:13:37,244 --> 01:13:40,844
+So I will explain this formal definition next week.
+
+903
+01:13:41,003 --> 01:13:41,224
+Okay.
+
+904
+01:13:42,583 --> 01:13:44,224
+Bunları haftaya göreceğiz arkadaşlar.
+
+905
+01:13:44,423 --> 01:13:45,543
+Bunu şimdi geçmek istemiyorum.
+
+906
+01:13:45,644 --> 01:13:48,404
+Şu an direkt uygulamalı limitlere bakalım.
+
+907
+01:13:48,404 --> 01:13:49,604
+Okay.
+
+908
+01:13:50,963 --> 01:13:55,284
+So let us look at limits of the rational function first.
+
+909
+01:13:55,604 --> 01:13:55,923
+Okay.
+
+910
+01:13:58,164 --> 01:14:00,184
+So what is rational function?
+
+911
+01:14:00,184 --> 01:14:02,404
+If you remember from the previous week.
+
+912
+01:14:02,503 --> 01:14:07,104
+Rational function is the function as Px over Qx.
+
+913
+01:14:07,104 --> 01:14:11,344
+Here Px and Qx are polynomials.
+
+914
+01:14:11,524 --> 01:14:14,963
+And I know that polynomials domain is real number.
+
+915
+01:14:15,884 --> 01:14:17,524
+This is polynomials domain.
+
+916
+01:14:17,524 --> 01:14:18,104
+Okay.
+
+917
+01:14:19,844 --> 01:14:20,444
+Now.
+
+918
+01:14:21,664 --> 01:14:26,104
+Here we will look at the limit of the rational functions at infinity.
+
+919
+01:14:27,064 --> 01:14:27,384
+Okay.
+
+920
+01:14:29,384 --> 01:14:31,024
+For rational functions.
+
+921
+01:14:31,244 --> 01:14:33,224
+You can write at any point.
+
+922
+01:14:33,344 --> 01:14:34,244
+It will be directly.
+
+923
+01:14:34,244 --> 01:14:36,484
+For example, if you want to look at 1.
+
+924
+01:14:37,043 --> 01:14:39,824
+x plus 1 over x plus 2.
+
+925
+01:14:40,644 --> 01:14:41,604
+The limit is very easy.
+
+926
+01:14:41,644 --> 01:14:42,224
+You will write.
+
+927
+01:14:42,664 --> 01:14:43,784
+It will be 2 over 3.
+
+928
+01:14:44,644 --> 01:14:44,923
+Okay.
+
+929
+01:14:46,944 --> 01:14:50,204
+Now here we will look at limit at infinity.
+
+930
+01:14:50,543 --> 01:14:51,144
+What happens?
+
+931
+01:14:53,524 --> 01:14:57,784
+Assume we have instead of x can be still multiplied.
+
+932
+01:14:59,404 --> 01:15:00,904
+We generally use this with.
+
+933
+01:15:01,364 --> 01:15:01,784
+Okay.
+
+934
+01:15:01,784 --> 01:15:03,304
+Before the question.
+
+935
+01:15:03,444 --> 01:15:05,524
+I have you save some questions.
+
+936
+01:15:05,744 --> 01:15:06,204
+[öğrenci].
+
+937
+01:15:06,284 --> 01:15:09,224
+Assume we have instead of x to the power 4.
+
+938
+01:15:09,404 --> 01:15:11,003
+x can be still multiplied.
+
+939
+01:15:11,264 --> 01:15:14,024
+Yes.
+
+940
+01:15:14,583 --> 01:15:15,423
+[öğrenci].
+
+941
+01:15:15,984 --> 01:15:17,784
+If you have x also.
+
+942
+01:15:17,984 --> 01:15:19,884
+You will product with the same.
+
+943
+01:15:20,423 --> 01:15:21,684
+We generally use this.
+
+944
+01:15:21,864 --> 01:15:22,043
+Yes.
+
+945
+01:15:22,404 --> 01:15:22,704
+Okay.
+
+946
+01:15:22,704 --> 01:15:26,684
+Actually we can use Sandeviç theorem with bounded functions.
+
+947
+01:15:26,844 --> 01:15:29,684
+If you know your function is a bounded function.
+
+948
+01:15:30,164 --> 01:15:32,984
+Then you can solve this kind of questions.
+
+949
+01:15:33,564 --> 01:15:39,564
+But especially Sandeviç theorem we can see in sine and cosine functions.
+
+950
+01:15:39,564 --> 01:15:44,104
+Because we know that these functions are bounded from left side and right side.
+
+951
+01:15:44,104 --> 01:15:46,463
+But we have some other functions also.
+
+952
+01:15:46,764 --> 01:15:46,984
+Okay.
+
+953
+01:15:48,083 --> 01:15:51,484
+Now if we talk about rational functions.
+
+954
+01:15:52,043 --> 01:15:55,463
+We have three cases in the limits at infinity.
+
+955
+01:15:56,224 --> 01:15:58,304
+Firstly let me write here.
+
+956
+01:15:58,304 --> 01:16:05,003
+Let us assume the rational function is px over gx.
+
+957
+01:16:05,543 --> 01:16:06,264
+Qx sorry.
+
+958
+01:16:06,264 --> 01:16:27,944
+Sorry.
+
+959
+01:16:07,731 --> 01:16:15,211
+And let us take degree of the polynomial of px, let us take as m.
+
+960
+01:16:17,532 --> 01:16:22,211
+And let us take the degree of...
+
+961
+01:16:28,884 --> 01:16:30,884
+let us take the degree.
+
+962
+01:16:34,931 --> 01:16:43,171
+Degree of Qx, let us take n. Okay, in the first case, if the degree of numerator it is m,
+
+963
+01:16:43,891 --> 01:16:51,731
+is the same with the degree of the denominator it is n. Numerator pi and denominator pi dynamic.
+
+964
+01:16:51,731 --> 01:16:55,171
+If m equals n, what happens? Let's see.
+
+965
+01:16:58,131 --> 01:17:03,492
+We have a rational function and if you look at your numerator, the degree of this polynomial
+
+966
+01:17:03,492 --> 01:17:12,051
+is the highest derivative it is 2. In your denominator, the highest degree of this polynomial it is 2.
+
+967
+01:17:12,851 --> 01:17:19,572
+This is m, this is n, they are the same. So let's see what happens if m equals n.
+
+968
+01:17:21,731 --> 01:17:28,851
+You have to write x squared outside in your numerator and in your denominator. So if I write
+
+969
+01:17:28,851 --> 01:17:40,371
+x squared outside, okay, inside I will have 5 plus 8 over x minus 3 over x squared. In your denominator,
+
+970
+01:17:40,371 --> 01:17:49,251
+you will have x squared, 3 plus 2 over x squared. Now I can cancel these two terms here.
+
+971
+01:17:49,251 --> 01:18:01,811
+I know that 1 over x is, sorry, 1 over 0 is infinity or you can have any number, it is not important. So this will be 0.
+
+972
+01:18:01,811 --> 01:18:06,371
+0, 0, 0. In that case, I have 5 over 3.
+
+973
+01:18:06,371 --> 01:18:16,612
+From this equation, from this example, actually we can make a generalization. The limits, if m equals m,
+
+974
+01:18:17,891 --> 01:18:31,731
+the limit will be the ratio of coefficients of px, the highest term of the coefficient of the highest term of px,
+
+975
+01:18:31,731 --> 01:18:40,931
+over coefficients of the highest term of the coefficient. Here, if you look at your example,
+
+976
+01:18:43,331 --> 01:18:52,771
+what is the highest term is this? What is coefficient? It is 5. The highest term is this and the coefficient
+
+977
+01:18:52,771 --> 01:18:57,331
+is 3. So the limit will be 5 over 3. You can find directly.
+
+978
+01:18:57,331 --> 01:19:07,572
+Okay. If the degree of px and qx are the same, the limit at the infinity will be the ratio of 5 over 3.
+
+979
+01:19:09,731 --> 01:19:16,771
+Okay. For example, if you have x for minus x squared over
+
+980
+01:19:16,771 --> 01:19:34,612
+So at the limit x goes to infinity, actually plus minus, it doesn't important, the limit will be 1 over 4.
+
+981
+01:19:34,612 --> 01:19:43,971
+The coefficient here is 1, here is 4. The limit will be 1 over 4. If the degree are the same.
+
+982
+01:19:43,971 --> 01:19:57,971
+Okay. In the second case, if the degree of numerator, m is less than your denominator. If m less than n, what happens? Let's see.
+
+983
+01:19:57,971 --> 01:20:09,331
+Here, in your numerator, m is 1. The highest term is x. So m will be 1. In your denominator,
+
+984
+01:20:09,331 --> 01:20:23,331
+n is the highest degree of x. It is 3. So m is less than n.
+
+985
+01:20:16,083 --> 01:20:24,644
+Now in this case what we will do, the smallest term in your numerator and denominator is x.
+
+986
+01:20:24,644 --> 01:20:30,323
+So I write x outside here. I have 11 plus 2 over x.
+
+987
+01:20:30,804 --> 01:20:34,443
+In your denominator only I will write 1x outside.
+
+988
+01:20:35,323 --> 01:20:39,483
+So I have 2x squared minus 1 over x. We can cancel here.
+
+989
+01:20:40,243 --> 01:20:41,823
+This is 0, 0.
+
+990
+01:20:41,823 --> 01:20:45,943
+So I have 11 over 2x squared.
+
+991
+01:20:47,543 --> 01:20:52,304
+Limit x goes to minus infinity.
+
+992
+01:20:52,943 --> 01:21:00,224
+So it will be 11 over 2 product 1 over minus infinity squared.
+
+993
+01:21:01,063 --> 01:21:05,563
+This is 0. So your limit will be 0.
+
+994
+01:21:06,264 --> 01:21:09,884
+If x goes to infinity the result will be also the same.
+
+995
+01:21:09,884 --> 01:21:16,963
+So if m is less than n it will be always 0.
+
+996
+01:21:18,804 --> 01:21:22,983
+If m is less than n it will be always 0.
+
+997
+01:21:24,043 --> 01:21:25,724
+And in the last case
+
+998
+01:21:25,724 --> 01:21:29,043
+if m is
+
+999
+01:21:29,043 --> 01:21:32,903
+greater than n let's see what happens.
+
+1000
+01:21:32,903 --> 01:21:41,503
+So if you look at here in the last example here m is 3
+
+1001
+01:21:41,503 --> 01:21:45,503
+and n is 1.
+
+1002
+01:21:46,144 --> 01:21:47,783
+m is greater than n.
+
+1003
+01:21:48,804 --> 01:21:53,203
+So the smallest term in your question is x.
+
+1004
+01:21:53,203 --> 01:21:55,184
+I write 1x outside.
+
+1005
+01:21:55,663 --> 01:21:56,003
+Okay.
+
+1006
+01:21:56,243 --> 01:21:57,684
+So I can cancel here.
+
+1007
+01:21:58,304 --> 01:21:59,963
+This is 0.
+
+1008
+01:22:00,283 --> 01:22:03,003
+So only I have x squared here.
+
+1009
+01:22:03,583 --> 01:22:06,203
+Limit x goes to infinity.
+
+1010
+01:22:07,003 --> 01:22:08,623
+I have x squared.
+
+1011
+01:22:09,163 --> 01:22:11,003
+And this limit will be infinity.
+
+1012
+01:22:11,623 --> 01:22:15,463
+But in some cases it can be minus infinity also.
+
+1013
+01:22:15,463 --> 01:22:18,104
+So for example let me give an example.
+
+1014
+01:22:19,423 --> 01:22:20,724
+Or şöyle yapalım.
+
+1015
+01:22:21,384 --> 01:22:21,703
+Okay.
+
+1016
+01:22:23,903 --> 01:22:26,503
+I want to change the question is minus.
+
+1017
+01:22:27,264 --> 01:22:27,623
+Okay.
+
+1018
+01:22:27,623 --> 01:22:32,764
+And I want to write that this is 4.
+
+1019
+01:22:33,323 --> 01:22:34,603
+Let's see what happens.
+
+1020
+01:22:35,023 --> 01:22:36,283
+If it is 4.
+
+1021
+01:22:37,144 --> 01:22:39,243
+Here I will have x cubed.
+
+1022
+01:22:40,203 --> 01:22:40,563
+Okay.
+
+1023
+01:22:41,103 --> 01:22:43,384
+So I can cancel these terms.
+
+1024
+01:22:43,583 --> 01:22:45,163
+This is 0, 0.
+
+1025
+01:22:45,703 --> 01:22:46,144
+Okay.
+
+1026
+01:22:46,463 --> 01:22:50,384
+So I will have limit x goes to minus infinity.
+
+1027
+01:22:50,384 --> 01:22:54,003
+Only I will have x cubed.
+
+1028
+01:22:54,963 --> 01:22:59,463
+And our limit will be minus infinity.
+
+1029
+01:22:59,903 --> 01:23:00,184
+Okay.
+
+1030
+01:23:01,403 --> 01:23:03,863
+So in the second case.
+
+1031
+01:23:04,384 --> 01:23:06,123
+In the second case.
+
+1032
+01:23:06,983 --> 01:23:09,503
+Limit x goes to minus or plus infinity.
+
+1033
+01:23:09,783 --> 01:23:10,703
+It is not important.
+
+1034
+01:23:10,884 --> 01:23:12,384
+The result will be always 0.
+
+1035
+01:23:12,983 --> 01:23:16,764
+But if it is related to third case.
+
+1036
+01:23:16,764 --> 01:23:18,783
+It depends on your question.
+
+1037
+01:23:18,783 --> 01:23:20,804
+If it is minus infinity.
+
+1038
+01:23:21,043 --> 01:23:23,443
+You can have minus infinity or infinity.
+
+1039
+01:23:24,043 --> 01:23:24,304
+Okay.
+
+1040
+01:23:25,264 --> 01:23:26,764
+It depends on your question.
+
+1041
+01:23:26,963 --> 01:23:29,083
+But at last it will be infinity.
+
+1042
+01:23:31,123 --> 01:23:32,163
+Anlaşıldı mı buraya kadar?
+
+1043
+01:23:32,184 --> 01:23:33,083
+How about the first case?
+
+1044
+01:23:34,144 --> 01:23:34,583
+First?
+
+1045
+01:23:35,663 --> 01:23:36,043
+Yeah.
+
+1046
+01:23:36,104 --> 01:23:36,764
+The first case.
+
+1047
+01:23:37,623 --> 01:23:39,243
+It doesn't matter what I like.
+
+1048
+01:23:39,264 --> 01:23:40,923
+The first case will be a real number.
+
+1049
+01:23:41,583 --> 01:23:45,344
+In the first case only it will be the ratio of the coefficients.
+
+1050
+01:23:45,344 --> 01:23:46,943
+It will be a real number.
+
+1051
+01:23:46,943 --> 01:23:49,323
+If the degrees are the same.
+
+1052
+01:23:49,523 --> 01:23:52,703
+Then the result will be the ratio of the coefficients.
+
+1053
+01:23:53,043 --> 01:23:54,543
+And it will be a real number.
+
+1054
+01:23:54,644 --> 01:23:54,884
+Always.
+
+1055
+01:23:55,203 --> 01:23:55,403
+Okay.
+
+1056
+01:23:55,844 --> 01:23:56,344
+Yeah.
+
+1057
+01:23:56,423 --> 01:24:02,884
+But it doesn't matter if x comes from the right to the infinity or minus infinity.
+
+1058
+01:24:03,483 --> 01:24:03,983
+No.
+
+1059
+01:24:04,203 --> 01:24:04,844
+Or the first.
+
+1060
+01:24:04,943 --> 01:24:05,463
+No.
+
+1061
+01:24:05,543 --> 01:24:05,943
+It doesn't matter.
+
+1062
+01:24:05,963 --> 01:24:06,144
+Okay.
+
+1063
+01:24:06,224 --> 01:24:07,144
+Let us write.
+
+1064
+01:24:07,564 --> 01:24:09,503
+Because you don't have any x term.
+
+1065
+01:24:09,783 --> 01:24:11,604
+All the x terms will be 0.
+
+1066
+01:24:11,604 --> 01:24:29,184
+Only you will have numbers.
+
+1067
+01:24:14,479 --> 01:24:44,479
+Yani, bu kadar önemli değil, ora da
+
+1068
+01:24:44,479 --> 01:24:52,719
+Okay, it depends on your question here. Okay, only the sign is important in the last case. Okay.
+
+1069
+01:24:55,199 --> 01:25:05,519
+Okay, now I want to talk about some important limits we will use in our questions, but before that, let me ask you one thing firstly.
+
+1070
+01:25:06,639 --> 01:25:12,799
+Okay, in high school every people learn some limits, basic limit.
+
+1071
+01:25:14,719 --> 01:25:18,319
+Let us see what do you remember limit
+
+1072
+01:25:20,479 --> 01:25:21,839
+x goes to zero
+
+1073
+01:25:22,879 --> 01:25:24,879
+sine x over x
+
+1074
+01:25:28,340 --> 01:25:28,840
+1.
+
+1075
+01:25:28,840 --> 01:25:36,279
+Wait one second. x goes to infinity, it is sin x over x.
+
+1076
+01:25:39,180 --> 01:25:49,100
+And limit x goes to infinity sin 1 over x over 1 over x.
+
+1077
+01:25:51,220 --> 01:25:56,539
+Okay. We have three questions. What are they?
+
+1078
+01:26:06,355 --> 01:26:07,456
+Hocam bir şey sorabilir miyim?
+
+1079
+01:26:07,475 --> 01:26:08,595
+Tabii tabii dinliyorum.
+
+1080
+01:26:09,076 --> 01:26:11,515
+Hocam limit de hani sonuç sonsuz çıkıyor ya
+
+1081
+01:26:11,515 --> 01:26:13,395
+aslında orada limit yoktur demek değil mi?
+
+1082
+01:26:13,695 --> 01:26:15,615
+Hani bizim orada çıkaracağımız
+
+1083
+01:26:15,615 --> 01:26:17,895
+sonuç limitin sonsuz çıkması orada limitin olmadığı anlamda.
+
+1084
+01:26:18,135 --> 01:26:19,416
+Yakınsaklık, ıraksaklık
+
+1085
+01:26:19,416 --> 01:26:20,956
+düşünürsen evet tabii.
+
+1086
+01:26:21,956 --> 01:26:23,695
+Limit bir sayıysa
+
+1087
+01:26:23,695 --> 01:26:25,595
+aslında o sayıya yaklaşıyor
+
+1088
+01:26:25,595 --> 01:26:27,615
+demektir. Yani yakınsak diyebiliriz aslında.
+
+1089
+01:26:27,615 --> 01:26:29,675
+Ama sayının sonsuz çıkması
+
+1090
+01:26:29,675 --> 01:26:31,615
+ya da mevcut olmaması ıraksaklıkla
+
+1091
+01:26:31,615 --> 01:26:32,095
+alakalı.
+
+1092
+01:26:32,975 --> 01:26:33,715
+Teşekkürler.
+
+1093
+01:26:33,715 --> 01:26:36,835
+1, 0, infinity.
+
+1094
+01:26:37,175 --> 01:26:38,416
+OK, let's see.
+
+1095
+01:26:39,295 --> 01:26:40,815
+In high school you learned that
+
+1096
+01:26:40,815 --> 01:26:42,416
+sin x over x is 1.
+
+1097
+01:26:42,595 --> 01:26:45,615
+But only you have to be careful
+
+1098
+01:26:45,615 --> 01:26:47,315
+about x goes
+
+1099
+01:26:47,315 --> 01:26:49,456
+where? 0 or infinity.
+
+1100
+01:26:49,655 --> 01:26:51,235
+If x goes to 0, OK.
+
+1101
+01:26:51,395 --> 01:26:53,416
+In that case the limit will be 1.
+
+1102
+01:26:54,076 --> 01:26:55,135
+OK, this is 1.
+
+1103
+01:26:56,055 --> 01:26:56,996
+What about this?
+
+1104
+01:26:57,855 --> 01:27:00,175
+It is when you write x goes to infinity
+
+1105
+01:27:00,175 --> 01:27:02,456
+I have 1 over infinity
+
+1106
+01:27:02,456 --> 01:27:05,355
+product sin infinity.
+
+1107
+01:27:06,215 --> 01:27:07,855
+OK, this is 0.
+
+1108
+01:27:08,076 --> 01:27:08,195
+OK.
+
+1109
+01:27:09,755 --> 01:27:11,815
+But what about sin infinity?
+
+1110
+01:27:12,335 --> 01:27:14,115
+OK, I asked in the example
+
+1111
+01:27:14,115 --> 01:27:16,615
+that I said that, OK, what is
+
+1112
+01:27:16,615 --> 01:27:18,015
+x goes to infinity?
+
+1113
+01:27:18,015 --> 01:27:34,155
+What is signings?
+
+1114
+01:27:22,707 --> 01:27:24,707
+bu
+
+1115
+01:27:26,228 --> 01:27:32,707
+bir
+
+1116
+01:27:32,707 --> 01:27:34,707
+çünkü
+
+1117
+01:27:34,707 --> 01:31:23,707
+bir
+
+1118
+01:31:22,228 --> 01:31:24,328
+e to the power x minus 1.
+
+1119
+01:31:25,408 --> 01:31:27,028
+This limit will be also 1.
+
+1120
+01:31:27,347 --> 01:31:31,148
+When you write x equals to 0, do you have 0 over 0?
+
+1121
+01:31:31,288 --> 01:31:33,288
+Yes, I have 0 over 0.
+
+1122
+01:31:33,948 --> 01:31:38,408
+This function and this function are the same, so the limit will be 1.
+
+1123
+01:31:38,507 --> 01:31:40,288
+You can write directly, okay?
+
+1124
+01:31:46,707 --> 01:31:55,167
+Yani bunun gelmesi L'Hospital'den geliyor ama şu an L'Hospital'i zaten sonra göreceğiz. Bu sadece şeyde gördüğümüz.
+
+1125
+01:32:00,979 --> 01:32:12,419
+Hocam, sağ altta kutucukta t değişkenini kullandınız ya orada sonsuza gidiyordu ama siz sıfıra gidiyor diye şey yaptınız.
+
+1126
+01:32:12,419 --> 01:32:13,239
+Evet, evet.
+
+1127
+01:32:13,239 --> 01:32:14,619
+Yaptınız.
+
+1128
+01:32:14,619 --> 01:32:37,139
+Anlaşıldı mı?
+
+1129
+01:32:37,979 --> 01:32:38,619
+Anlaşıldı.
+
+1130
+01:32:38,619 --> 01:32:41,199
+Gönüşümü ona da uyguluyorsun çünkü birebir.
+
+1131
+01:32:41,199 --> 01:32:53,119
+Hocam, bu sizin yukarıda yazdığınız sinisik ilk sonsuza giderken 10'da nedenli mi?
+
+1132
+01:32:54,119 --> 01:32:54,959
+Şurada mı?
+
+1133
+01:32:55,859 --> 01:32:56,479
+Şurası.
+
+1134
+01:32:57,679 --> 01:32:58,739
+Yoksa o taraftan yani.
+
+1135
+01:32:59,139 --> 01:32:59,819
+Şurayı diyorsun.
+
+1136
+01:33:01,619 --> 01:33:01,859
+Evet.
+
+1137
+01:33:02,419 --> 01:33:03,219
+Burayı diyorsun değil mi?
+
+1138
+01:33:03,519 --> 01:33:04,339
+Sinisiksi diyorsun.
+
+1139
+01:33:05,199 --> 01:33:05,339
+Aynen.
+
+1140
+01:33:06,159 --> 01:33:08,119
+İstersen şöyle Türkçü de açıklayayım.
+
+1141
+01:33:08,119 --> 01:33:14,739
+Şimdi sinis sonsuz eksi 1 ile artı 1 arasında bir değer alır.
+
+1142
+01:33:14,799 --> 01:33:15,919
+Bak şu grafiği burada.
+
+1143
+01:33:15,979 --> 01:33:17,719
+Eksi 1 ile artı 1 arasında bir değer alır.
+
+1144
+01:33:17,799 --> 01:33:20,699
+Ama bu sonsuz da burada da olabilir, burada da olabilir, burada da olabilir.
+
+1145
+01:33:21,239 --> 01:33:22,199
+Ben şunu biliyorum.
+
+1146
+01:33:22,359 --> 01:33:25,359
+Sinis sonsuz eksi 1 ile artı 1 arasında bir sayıdır.
+
+1147
+01:33:26,039 --> 01:33:28,659
+Ama ne olduğu ile ilgili kesin bir şey söyleyemiyoruz.
+
+1148
+01:33:29,739 --> 01:33:32,539
+Limitin en önemli özelliği tek olması gerektiğidir.
+
+1149
+01:33:32,539 --> 01:33:40,679
+Dolayısıyla burada ben birden fazla değer bulabildiğim için sinis x'in sonsuzdaki değeri belli değildir.
+
+1150
+01:33:40,759 --> 01:33:43,439
+Bir sürü farklı değer aldığı için burada limiti yoktur.
+
+1151
+01:33:44,699 --> 01:33:47,219
+Aynı şey cos x için de geçerli.
+
+1152
+01:33:47,219 --> 01:33:51,639
+You can say, talk, talk, every, the same thing for cos x also.
+
+1153
+01:33:52,479 --> 01:33:55,479
+Cosine function is similar here.
+
+1154
+01:33:56,139 --> 01:33:56,379
+Okay.
+
+1155
+01:33:57,019 --> 01:34:00,739
+So you can say the same function for cos x.
+
+1156
+01:34:01,500 --> 01:34:05,819
+At the infinity, cos x also doesn't have limit.
+
+1157
+01:34:06,779 --> 01:34:08,719
+Because the limit has to be unique.
+
+1158
+01:34:08,719 --> 01:34:15,459
+But cos infinity or sin infinity, we don't have information only.
+
+1159
+01:34:15,599 --> 01:34:19,579
+We know that it is a number between minus 1 to 1.
+
+1160
+01:34:20,239 --> 01:34:23,079
+But it will take some different points.
+
+1161
+01:34:23,159 --> 01:34:27,859
+For example, here, I can take this point at the infinity here or here.
+
+1162
+01:34:28,459 --> 01:34:28,599
+Okay?
+
+1163
+01:34:30,059 --> 01:34:34,139
+Sonsuz da bunlardan eksi 1 ile artı 1 arasında bir değer aldığını biliyorum ama
+
+1164
+01:34:34,139 --> 01:34:36,059
+bu aralık da değişebiliyor.
+
+1165
+01:34:36,059 --> 01:34:39,799
+O yüzden birden fazla nokta olduğu için limiti yok.
+
+1166
+01:34:40,139 --> 01:34:43,579
+Ama burada bunun önemi yok çünkü sıfırla çarptığın için sıfır yazabiliyorum direkt.
+
+1167
+01:34:44,199 --> 01:34:44,379
+Okay?
+
+1168
+01:34:45,199 --> 01:34:45,839
+Teşekkür ederim.
+
+1169
+01:34:46,019 --> 01:34:46,599
+Bir şey değil.
+
+1170
+01:34:47,399 --> 01:34:48,339
+Okay, so.
+
+1171
+01:34:51,539 --> 01:34:54,159
+You have to know this limit especially.
+
+1172
+01:34:54,419 --> 01:34:55,159
+This is one.
+
+1173
+01:34:57,279 --> 01:35:04,599
+And I can say the same limit for tenjan and arktenjan also.
+
+1174
+01:35:04,599 --> 01:35:08,959
+These limits also arktenjan also will be one.
+
+1175
+01:35:09,159 --> 01:35:11,000
+Let me show for tenjan x.
+
+1176
+01:35:11,719 --> 01:35:12,500
+What is this?
+
+1177
+01:35:12,699 --> 01:35:14,419
+Limit x goes to zero.
+
+1178
+01:35:15,500 --> 01:35:19,479
+Tenjan x is sine over sine x over cosine x.
+
+1179
+01:35:19,559 --> 01:35:20,239
+Okay.
+
+1180
+01:35:20,239 --> 01:35:23,899
+And I have also one over x.
+
+1181
+01:35:25,179 --> 01:35:28,559
+And I know that sine x over x is one.
+
+1182
+01:35:31,359 --> 01:35:33,119
+Cosine zero is one.
+
+1183
+01:35:33,439 --> 01:35:35,419
+So this limit will be always one.
+
+1184
+01:35:35,879 --> 01:35:38,859
+So sine x over x is one.
+
+1185
+01:35:38,979 --> 01:35:41,219
+Also tenjan x over x is one.
+
+1186
+01:35:41,219 --> 01:35:45,859
+And you can say the same thing for arktenjan x over x also will be one.
+
+1187
+01:35:46,339 --> 01:35:49,119
+And the inverse of these functions are the same.
+
+1188
+01:35:49,199 --> 01:35:49,679
+Like this.
+
+1189
+01:35:50,199 --> 01:35:51,479
+X over sine x.
+
+1190
+01:35:51,839 --> 01:35:54,379
+This limit is also will be one.
+
+1191
+01:35:54,379 --> 01:36:18,079
+Okay.
+
+1192
+01:35:57,300 --> 01:36:02,980
+or x over tangent x, x over arctangent x, all these limits will be 1.
+
+1193
+01:36:03,260 --> 01:36:06,000
+Okay, you can write directly when you see in the question.
+
+1194
+01:36:06,940 --> 01:36:09,000
+But it is different for cosine x.
+
+1195
+01:36:09,159 --> 01:36:11,300
+For cosine x, we have this limit.
+
+1196
+01:36:11,840 --> 01:36:14,579
+Cosine x minus 1 over x is 0.
+
+1197
+01:36:15,039 --> 01:36:15,300
+Okay.
+
+1198
+01:36:18,100 --> 01:36:21,680
+Now, what can we say about exponent function?
+
+1199
+01:36:21,800 --> 01:36:23,779
+What is the graph of the exponent function?
+
+1200
+01:36:23,779 --> 01:36:26,760
+Let us remember here, this is e to the power of x.
+
+1201
+01:36:27,300 --> 01:36:37,260
+Okay, for cosine x, sorry, for exponent function is this.
+
+1202
+01:36:37,500 --> 01:36:37,600
+Okay.
+
+1203
+01:36:39,900 --> 01:36:48,000
+Now, x goes to infinity, you can see that x goes to infinity, limit goes to infinity.
+
+1204
+01:36:49,000 --> 01:36:54,820
+x goes to minus infinity, you can see that it goes to 0.
+
+1205
+01:36:54,820 --> 01:36:57,980
+From the graph, you can easily see that.
+
+1206
+01:36:58,739 --> 01:37:01,500
+Now, let us see what x for a length function.
+
+1207
+01:37:01,640 --> 01:37:03,820
+The length function's graph is this.
+
+1208
+01:37:03,820 --> 01:37:13,659
+And let us look at what happens if x goes to infinity, you can see that it goes to infinity.
+
+1209
+01:37:15,100 --> 01:37:17,980
+A length function is not defined at 0.
+
+1210
+01:37:18,279 --> 01:37:21,440
+It is defined from 0 from the right side.
+
+1211
+01:37:21,640 --> 01:37:22,600
+And look at here.
+
+1212
+01:37:22,600 --> 01:37:30,960
+When x goes to 0, y is minus infinity here.
+
+1213
+01:37:32,340 --> 01:37:32,640
+Okay.
+
+1214
+01:37:33,060 --> 01:37:39,220
+When x goes to 0 here, very near to 0, your limit will be minus infinity.
+
+1215
+01:37:39,860 --> 01:37:43,159
+And here we have a relation, but we don't use so much.
+
+1216
+01:37:43,159 --> 01:37:43,659
+Okay.
+
+1217
+01:37:45,079 --> 01:37:47,520
+And then x plus 1 over x is also 1.
+
+1218
+01:37:49,279 --> 01:37:52,860
+And what about logarithm function?
+
+1219
+01:37:53,220 --> 01:38:03,079
+So, in logarithm function, sorry, for exponent function, we have three cases.
+
+1220
+01:38:03,079 --> 01:38:05,380
+It depends on your base.
+
+1221
+01:38:05,560 --> 01:38:05,779
+Okay.
+
+1222
+01:38:08,779 --> 01:38:09,980
+Evet, bir saniye.
+
+1223
+01:38:11,980 --> 01:38:14,539
+Şu chatimize de bir bakacağım da.
+
+1224
+01:38:15,900 --> 01:38:16,460
+Trigonometrik.
+
+1225
+01:38:16,960 --> 01:38:19,340
+Şimdi arkadaşlar, bunları gördünüz buraya kadar değil mi?
+
+1226
+01:38:19,420 --> 01:38:22,420
+Ben şimdi aynı zamanda şeyi okuyamıyorum da.
+
+1227
+01:38:24,699 --> 01:38:28,420
+Yani şu an zaten burada gördüklerinizi ben her şeyini bir daha anlatacağım zaten.
+
+1228
+01:38:28,520 --> 01:38:29,000
+Anlatıyorum.
+
+1229
+01:38:29,560 --> 01:38:31,119
+Sadece siz şeyleri bileceksiniz.
+
+1230
+01:38:31,119 --> 01:38:33,720
+Türev, integral'i zaten baştan anlatacağım.
+
+1231
+01:38:34,100 --> 01:38:34,940
+Anlatıyoruz zaten.
+
+1232
+01:38:35,600 --> 01:38:36,760
+Sadece bunlar temel şeyleri.
+
+1233
+01:38:36,840 --> 01:38:38,980
+Bunları zaten liseden de biliyor olmanız gerekiyor.
+
+1234
+01:38:39,760 --> 01:38:40,000
+Okay.
+
+1235
+01:38:40,279 --> 01:38:48,000
+So, if the base is between 0 to 1, for example 1 over 2, let's see what happens.
+
+1236
+01:38:48,940 --> 01:38:49,140
+Okay.
+
+1237
+01:38:51,279 --> 01:38:59,239
+If x goes to infinity, if x goes to infinity, you can see that 1 over 2, 2 goes to the,
+
+1238
+01:38:59,239 --> 01:39:06,180
+2 is greater than 1, so the limit when x goes to infinity, it will be 0.
+
+1239
+01:39:06,579 --> 01:39:09,460
+Çünkü aşağısı yukarıdan daha hızlı büyüyecek.
+
+1240
+01:39:09,460 --> 01:39:12,440
+If x goes to infinity, if x goes to minus infinity,
+
+1241
+01:39:12,440 --> 01:39:39,440
+if x goes to infinity,
+
+1242
+01:39:17,427 --> 01:39:20,927
+Actually, this is the same expression with 2 to the infinity.
+
+1243
+01:39:21,768 --> 01:39:30,287
+Because you can write minus inside here and the inside will be 2, 2 to the infinity will be infinity.
+
+1244
+01:39:32,127 --> 01:39:38,047
+If your base is greater than 1, for example, let us take, what is 2 to the infinity?
+
+1245
+01:39:38,047 --> 01:39:41,568
+is infinity here.
+
+1246
+01:39:43,087 --> 01:39:53,247
+2 to the power infinity is the same with the expression 1 over 2 to the infinity and it is 0.
+
+1247
+01:40:01,779 --> 01:40:03,659
+Arkadaşlar,
+
+1248
+01:40:14,676 --> 01:40:16,676
+yazıklarını bir yandan okumaya çalışıyorum.
+
+1249
+01:40:19,676 --> 01:40:21,936
+Hiç mi limit görmediniz? Hiç mi?
+
+1250
+01:40:22,296 --> 01:40:23,936
+You didn't see any limit.
+
+1251
+01:40:32,275 --> 01:40:34,876
+Zaten ben baştan sona anlatıyorum zaten.
+
+1252
+01:40:36,855 --> 01:40:37,755
+Burada sadece
+
+1253
+01:40:37,755 --> 01:40:40,996
+zaten en baştan basic olarak anlatıyorum.
+
+1254
+01:40:41,315 --> 01:40:42,715
+Soruları ona göre çözeceğiz zaten.
+
+1255
+01:40:45,235 --> 01:40:46,536
+Dördüncü kısımda
+
+1256
+01:40:46,536 --> 01:40:49,555
+ben dördüncü soruda
+
+1257
+01:40:49,555 --> 01:40:51,195
+eksi sonsuz olan kısmı
+
+1258
+01:40:51,195 --> 01:40:53,416
+evet.
+
+1259
+01:40:54,036 --> 01:40:55,076
+Dördüncü soru derken
+
+1260
+01:40:55,076 --> 01:40:56,876
+hastan dördüncü soru derken
+
+1261
+01:40:56,876 --> 01:40:58,095
+bundan mı bahsediyorsun?
+
+1262
+01:40:59,036 --> 01:41:01,095
+Soru olarak mı dörtten bahsediyorsun?
+
+1263
+01:41:01,215 --> 01:41:01,655
+Anlayamadım.
+
+1264
+01:41:02,275 --> 01:41:03,395
+Bundan mı bahsediyorsun?
+
+1265
+01:41:03,996 --> 01:41:05,336
+Grafikten gördüm zaten.
+
+1266
+01:41:05,975 --> 01:41:07,315
+If you look at your graph
+
+1267
+01:41:07,315 --> 01:41:09,615
+This is the graph of a land function.
+
+1268
+01:41:10,275 --> 01:41:11,515
+If x goes to 0
+
+1269
+01:41:11,515 --> 01:41:12,355
+look at here
+
+1270
+01:41:12,355 --> 01:41:14,255
+where are you going?
+
+1271
+01:41:14,555 --> 01:41:15,496
+Minus infinity.
+
+1272
+01:41:16,956 --> 01:41:19,275
+But it has to be from the right side
+
+1273
+01:41:19,275 --> 01:41:20,555
+because domain
+
+1274
+01:41:20,555 --> 01:41:22,855
+is 0 to infinity.
+
+1275
+01:41:24,996 --> 01:41:26,215
+Grafiğe bakarsan
+
+1276
+01:41:26,215 --> 01:41:27,916
+x sıfıra doğru giderken
+
+1277
+01:41:27,916 --> 01:41:28,615
+y nereye gidiyor?
+
+1278
+01:41:28,695 --> 01:41:29,595
+X sonsuza gidiyor.
+
+1279
+01:41:29,595 --> 01:41:31,555
+Okay.
+
+1280
+01:41:32,935 --> 01:41:35,255
+We have some relation here
+
+1281
+01:41:35,255 --> 01:41:36,855
+and in the 7th
+
+1282
+01:41:36,855 --> 01:41:37,836
+they said that
+
+1283
+01:41:37,836 --> 01:41:40,796
+e to the power gx minus 1
+
+1284
+01:41:40,796 --> 01:41:42,135
+over gx is 1
+
+1285
+01:41:42,135 --> 01:41:44,836
+if the limit gx is 0.
+
+1286
+01:41:44,935 --> 01:41:46,496
+Let me write an example.
+
+1287
+01:41:46,895 --> 01:41:47,435
+For example
+
+1288
+01:41:47,435 --> 01:41:49,715
+x goes to 0
+
+1289
+01:41:49,715 --> 01:41:52,755
+e to the power x
+
+1290
+01:41:52,755 --> 01:41:54,876
+minus x over x
+
+1291
+01:41:54,876 --> 01:41:57,315
+this limit will be 1.
+
+1292
+01:41:57,735 --> 01:41:58,115
+Why?
+
+1293
+01:41:59,175 --> 01:42:01,655
+Look at this is your gx function.
+
+1294
+01:42:02,095 --> 01:42:02,996
+When you write 0
+
+1295
+01:42:02,996 --> 01:42:03,555
+it is 0.
+
+1296
+01:42:03,675 --> 01:42:03,935
+Yes.
+
+1297
+01:42:04,695 --> 01:42:06,395
+This function and this function
+
+1298
+01:42:06,395 --> 01:42:07,175
+are the same.
+
+1299
+01:42:07,275 --> 01:42:07,515
+Yes.
+
+1300
+01:42:07,615 --> 01:42:08,796
+So the limit will be 1.
+
+1301
+01:42:08,956 --> 01:42:09,215
+Or
+
+1302
+01:42:09,215 --> 01:42:10,935
+let me write another example.
+
+1303
+01:42:10,935 --> 01:42:38,975
+e to the power
+
+1304
+01:42:38,975 --> 01:42:41,855
+sin
+
+1305
+01:42:41,855 --> 01:42:43,655
+x
+
+1306
+01:42:43,655 --> 01:42:45,755
+minus 1 over
+
+1307
+01:42:45,755 --> 01:42:46,755
+sin x.
+
+1308
+01:42:48,336 --> 01:42:48,735
+Okay.
+
+1309
+01:42:50,315 --> 01:42:51,036
+Limit
+
+1310
+01:42:51,036 --> 01:42:53,055
+x goes to 0.
+
+1311
+01:42:53,775 --> 01:42:54,255
+Okay.
+
+1312
+01:42:55,055 --> 01:42:56,715
+So when you write 0
+
+1313
+01:42:56,715 --> 01:42:57,916
+sin 0 is 0.
+
+1314
+01:42:58,055 --> 01:42:58,416
+Yes.
+
+1315
+01:42:58,815 --> 01:42:59,536
+This function
+
+1316
+01:42:59,536 --> 01:43:00,315
+are this function
+
+1317
+01:43:00,315 --> 01:43:00,956
+are the same.
+
+1318
+01:43:01,115 --> 01:43:01,416
+Yes.
+
+1319
+01:43:01,536 --> 01:43:02,615
+The limit will be 1.
+
+1320
+01:43:03,215 --> 01:43:03,576
+Okay.
+
+1321
+01:43:04,775 --> 01:43:06,255
+Did you understand this?
+
+1322
+01:43:06,255 --> 01:43:08,355
+yok yok.
+
+1323
+01:43:08,395 --> 01:43:09,735
+Grafini bilmenize gerek yok.
+
+1324
+01:43:09,836 --> 01:43:11,655
+Ben sadece basit olanları gösterdim.
+
+1325
+01:43:12,235 --> 01:43:13,355
+Elen ve e üzeri
+
+1326
+01:43:13,355 --> 01:43:14,175
+hatırlamanız için.
+
+1327
+01:43:14,376 --> 01:43:15,355
+Yoksa diğerlerin grafiği
+
+1328
+01:43:15,355 --> 01:43:16,036
+ile alakamız yok.
+
+1329
+01:43:16,836 --> 01:43:17,315
+Okay.
+
+1330
+01:43:17,395 --> 01:43:18,076
+Did you understand
+
+1331
+01:43:18,076 --> 01:43:18,876
+the seventh one?
+
+1332
+01:43:22,036 --> 01:43:23,876
+I think it is not difficult.
+
+1333
+01:43:24,996 --> 01:43:26,355
+What about 8?
+
+1334
+01:43:26,475 --> 01:43:27,475
+8 is the last.
+
+1335
+01:43:28,315 --> 01:43:29,235
+They said that
+
+1336
+01:43:29,235 --> 01:43:31,775
+limit x goes to 0.
+
+1337
+01:43:32,115 --> 01:43:32,956
+1 plus
+
+1338
+01:43:32,956 --> 01:43:34,715
+this part is very important.
+
+1339
+01:43:34,715 --> 01:43:36,515
+this part will be always
+
+1340
+01:43:36,515 --> 01:43:37,355
+1 plus
+
+1341
+01:43:37,355 --> 01:43:38,195
+ax
+
+1342
+01:43:38,195 --> 01:43:39,555
+1
+
+1343
+01:43:39,555 --> 01:43:40,315
+over
+
+1344
+01:43:40,315 --> 01:43:40,836
+x.
+
+1345
+01:43:41,115 --> 01:43:41,435
+Okay.
+
+1346
+01:43:41,755 --> 01:43:43,456
+The limit will be e to the power
+
+1347
+01:43:43,456 --> 01:43:43,855
+a.
+
+1348
+01:43:44,215 --> 01:43:45,255
+a is a number.
+
+1349
+01:43:45,376 --> 01:43:46,195
+a is a coefficient.
+
+1350
+01:43:46,595 --> 01:43:47,876
+a is a real number.
+
+1351
+01:43:48,395 --> 01:43:50,336
+So the limit will be e to the power
+
+1352
+01:43:50,336 --> 01:43:50,655
+a.
+
+1353
+01:43:50,916 --> 01:43:52,595
+If you write x goes to 0
+
+1354
+01:43:52,595 --> 01:43:53,536
+actually you have
+
+1355
+01:43:53,536 --> 01:43:54,675
+indeterminate for
+
+1356
+01:43:54,675 --> 01:43:55,715
+1 to the infinity.
+
+1357
+01:43:56,416 --> 01:43:57,615
+In the second part
+
+1358
+01:43:57,615 --> 01:43:58,336
+if you have
+
+1359
+01:43:58,336 --> 01:43:59,315
+1 plus
+
+1360
+01:43:59,315 --> 01:44:00,775
+a over
+
+1361
+01:44:00,775 --> 01:44:01,376
+x
+
+1362
+01:44:01,376 --> 01:44:03,695
+to the power
+
+1363
+01:44:03,695 --> 01:44:04,215
+x
+
+1364
+01:44:04,215 --> 01:44:06,655
+the limit will be e to the power
+
+1365
+01:44:06,655 --> 01:44:07,076
+a.
+
+1366
+01:44:07,876 --> 01:44:09,015
+And when you write
+
+1367
+01:44:09,015 --> 01:44:10,055
+x goes to infinity
+
+1368
+01:44:10,055 --> 01:44:10,956
+you will have
+
+1369
+01:44:10,956 --> 01:44:12,055
+1 to the power
+
+1370
+01:44:12,055 --> 01:44:12,735
+infinity.
+
+1371
+01:44:14,615 --> 01:44:15,595
+Let me write
+
+1372
+01:44:15,595 --> 01:44:18,595
+x
+
+1373
+01:44:18,595 --> 01:44:19,635
+Okay.
+
+1374
+01:44:21,395 --> 01:44:22,155
+Can you repeat
+
+1375
+01:44:22,155 --> 01:44:22,695
+the last
+
+1376
+01:44:22,695 --> 01:44:23,655
+point?
+
+1377
+01:44:24,275 --> 01:44:24,895
+Yes.
+
+1378
+01:44:25,175 --> 01:44:26,015
+You are talking
+
+1379
+01:44:26,015 --> 01:44:26,956
+about this one.
+
+1380
+01:44:27,315 --> 01:44:27,496
+Yeah.
+
+1381
+01:44:27,595 --> 01:44:27,956
+The ace.
+
+1382
+01:44:28,615 --> 01:44:28,975
+Okay.
+
+1383
+01:44:29,635 --> 01:44:30,456
+Let me write
+
+1384
+01:44:30,456 --> 01:44:30,956
+again.
+
+1385
+01:44:31,215 --> 01:44:31,715
+Okay.
+
+1386
+01:44:32,787 --> 01:44:49,807
+In both of them, we have power form. Okay. So they said that if x goes to infinity, this part will be always 1 plus if you have a number a over x to the power x.
+
+1387
+01:44:49,807 --> 01:45:06,027
+When you write x goes to infinity, you will have 1 over a over infinity to the power infinity. Okay. This is 0. So it will be an indeterminate form 1 to the power infinity. Okay.
+
+1388
+01:45:07,287 --> 01:45:19,327
+So in that case, your limit will be e to the power a. a is the number of here. Let me write an example. For example, limit x goes to 0.
+
+1389
+01:45:19,807 --> 01:45:31,487
+1 plus 3 over x to the power x to the power x. In that case, your limit will be e to the power x. Okay.
+
+1390
+01:45:33,107 --> 01:45:35,047
+Sorry, it will be infinity.
+
+1391
+01:45:39,123 --> 01:46:09,103
+yorum yapı
+
+1392
+01:45:43,475 --> 01:45:45,195
+Okay, did you understand?
+
+1393
+01:45:46,795 --> 01:45:47,635
+E ne dedi?
+
+1394
+01:45:48,295 --> 01:45:49,655
+E zaten tanımdan geliyor.
+
+1395
+01:45:49,815 --> 01:45:51,155
+E is this here.
+
+1396
+01:45:52,455 --> 01:45:54,475
+The limit will be e to the power a.
+
+1397
+01:45:55,475 --> 01:45:58,175
+In this example here, a is 3.
+
+1398
+01:45:58,335 --> 01:46:00,095
+It will be, the limit will be e cube.
+
+1399
+01:46:00,095 --> 01:46:04,015
+For example, limit x goes to 0.
+
+1400
+01:46:04,895 --> 01:46:10,515
+1 minus 2x to the power 1 over x.
+
+1401
+01:46:10,515 --> 01:46:13,715
+In here, what is a?
+
+1402
+01:46:13,915 --> 01:46:16,635
+a is minus 2.
+
+1403
+01:46:17,576 --> 01:46:20,955
+Because in the formula, it is plus.
+
+1404
+01:46:21,215 --> 01:46:26,235
+So your result will be e to the power minus 2.
+
+1405
+01:46:26,235 --> 01:46:27,055
+Okay?
+
+1406
+01:46:28,375 --> 01:46:29,555
+Did you understand?
+
+1407
+01:46:31,615 --> 01:46:33,135
+Let me explain this again.
+
+1408
+01:46:34,435 --> 01:46:39,655
+Okay, so if you look at 8a, limit x goes to 0.
+
+1409
+01:46:39,655 --> 01:46:41,975
+So the formula is 1 plus.
+
+1410
+01:46:42,076 --> 01:46:43,536
+This is the important one.
+
+1411
+01:46:43,675 --> 01:46:45,755
+1 plus a product x.
+
+1412
+01:46:45,996 --> 01:46:47,455
+a is a real number.
+
+1413
+01:46:47,735 --> 01:46:51,695
+To the power 1 over x, the limit will be e to the power a.
+
+1414
+01:46:51,955 --> 01:46:52,975
+This is your formula.
+
+1415
+01:46:53,475 --> 01:46:55,975
+Now let's compare the question and the formula.
+
+1416
+01:46:55,975 --> 01:47:03,815
+In here, I have to write like here, 1 plus minus 2 product x.
+
+1417
+01:47:04,315 --> 01:47:04,675
+Okay?
+
+1418
+01:47:04,955 --> 01:47:07,775
+In that case, a will be minus 2.
+
+1419
+01:47:07,996 --> 01:47:11,496
+So your limit will be e to the power minus 2.
+
+1420
+01:47:11,675 --> 01:47:13,675
+Your limit will be 1 over e square.
+
+1421
+01:47:14,435 --> 01:47:17,835
+But if it is positive, then it will be e square.
+
+1422
+01:47:17,835 --> 01:47:20,875
+Let me write one more example.
+
+1423
+01:47:21,155 --> 01:47:23,036
+After that, I will come to you tomorrow.
+
+1424
+01:47:23,536 --> 01:47:23,695
+Okay.
+
+1425
+01:47:24,975 --> 01:47:26,576
+For example, limit.
+
+1426
+01:47:26,576 --> 01:47:30,155
+If we don't know the formula, how can we do it?
+
+1427
+01:47:30,155 --> 01:47:38,595
+Actually, we have a second way, but we will see in L'Hopital rule.
+
+1428
+01:47:40,395 --> 01:47:42,115
+Logarithmic limit.
+
+1429
+01:47:42,475 --> 01:47:45,635
+It is related to it is in L'Hopital rule.
+
+1430
+01:47:45,755 --> 01:47:49,395
+You will see at the middle of the semester.
+
+1431
+01:47:49,615 --> 01:47:50,215
+Okay.
+
+1432
+01:47:50,576 --> 01:47:55,675
+First, you have to until the first exam, you have to use this formula.
+
+1433
+01:47:55,675 --> 01:47:56,115
+Okay.
+
+1434
+01:47:57,055 --> 01:47:59,175
+So let me write an ender example.
+
+1435
+01:47:59,675 --> 01:48:01,435
+Like x goes to 0.
+
+1436
+01:48:01,715 --> 01:48:02,095
+Okay.
+
+1437
+01:48:03,355 --> 01:48:13,795
+1 plus 2 x to the power x, for example.
+
+1438
+01:48:15,615 --> 01:48:16,435
+What is this?
+
+1439
+01:48:16,755 --> 01:48:17,455
+What time is it?
+
+1440
+01:48:17,455 --> 01:48:21,635
+So if you look at here, 1 plus, yes.
+
+1441
+01:48:21,635 --> 01:48:26,576
+Here, according to the limit, it is a is 3.
+
+1442
+01:48:26,935 --> 01:48:28,996
+So your limit will be e cube.
+
+1443
+01:48:30,255 --> 01:48:34,036
+But we will see different kind of questions like this.
+
+1444
+01:48:34,475 --> 01:48:37,135
+Limit x goes to infinity.
+
+1445
+01:48:37,895 --> 01:48:38,235
+Okay.
+
+1446
+01:48:39,155 --> 01:48:46,855
+1 plus 2 over x square to the power x.
+
+1447
+01:48:47,175 --> 01:48:47,555
+Okay.
+
+1448
+01:48:47,555 --> 01:48:50,835
+Let me make this example.
+
+1449
+01:48:51,036 --> 01:48:52,735
+After that, I will continue tomorrow.
+
+1450
+01:48:52,915 --> 01:48:53,155
+Okay.
+
+1451
+01:48:53,915 --> 01:48:55,695
+This question is different.
+
+1452
+01:48:56,275 --> 01:48:56,555
+Why?
+
+1453
+01:48:56,675 --> 01:48:59,855
+Because if you look at your here.
+
+1454
+01:49:01,935 --> 01:49:02,475
+Okay.
+
+1455
+01:49:03,635 --> 01:49:06,355
+If you look at your formula in the formula.
+
+1456
+01:49:06,355 --> 01:49:12,495
+I have, I need to have x and x.
+
+1457
+01:49:13,475 --> 01:49:15,655
+Actually, it doesn't need to be x.
+
+1458
+01:49:15,915 --> 01:49:21,715
+If you have 1 to the power infinity in the time net form, it can change everything.
+
+1459
+01:49:22,036 --> 01:49:23,495
+It can be x square also.
+
+1460
+01:49:23,995 --> 01:49:25,795
+For example, here it is different.
+
+1461
+01:49:25,795 --> 01:49:31,655
+So I want to rewrite this limit as x goes to infinity.
+
+1462
+01:49:32,695 --> 01:49:36,036
+1 plus 2 over x square.
+
+1463
+01:49:36,495 --> 01:49:36,635
+Okay.
+
+1464
+01:49:38,755 --> 01:49:39,175
+Here.
+
+1465
+01:49:39,175 --> 01:49:55,996
+Okay.
+
+1466
+01:49:39,604 --> 01:49:43,364
+I need x squared. So I want to write x squared firstly here.
+
+1467
+01:49:45,664 --> 01:49:51,184
+If you add anything, you have to write the inverse according to product.
+
+1468
+01:49:51,184 --> 01:49:54,364
+I want to make a big parenthesis here.
+
+1469
+01:49:55,204 --> 01:49:59,984
+And I want to write 1 over x squared because the product has to be the same.
+
+1470
+01:50:00,664 --> 01:50:04,304
+And also I have also outside x here.
+
+1471
+01:50:05,164 --> 01:50:06,184
+X is this.
+
+1472
+01:50:06,184 --> 01:50:10,083
+So the product of this part will be 1.
+
+1473
+01:50:10,224 --> 01:50:11,664
+It doesn't change anything.
+
+1474
+01:50:11,664 --> 01:50:12,083
+Okay.
+
+1475
+01:50:12,884 --> 01:50:26,944
+Now I can say that from the limits formula, these limits will be e squared.
+
+1476
+01:50:26,944 --> 01:50:34,904
+And these limits will be 1 over x.
+
+1477
+01:50:34,904 --> 01:50:37,824
+And 1 over x, x goes to infinity is 0.
+
+1478
+01:50:37,944 --> 01:50:39,384
+I want to write here.
+
+1479
+01:50:40,384 --> 01:50:41,764
+It will be 1.
+
+1480
+01:50:42,404 --> 01:50:43,984
+Şimdi kafanız karıştı şimdi.
+
+1481
+01:50:44,124 --> 01:50:44,604
+Ben biliyorum.
+
+1482
+01:50:44,604 --> 01:50:48,484
+Hocam bir şey sorabilir miyim?
+
+1483
+01:50:48,564 --> 01:50:49,083
+Evet.
+
+1484
+01:50:51,083 --> 01:50:55,164
+Biz 1 üzeri sonsuz bulduk ya sonra e üzeri a'ya nasıl geçtik?
+
+1485
+01:50:55,224 --> 01:50:56,164
+Ben onu pek anlamadım.
+
+1486
+01:50:56,524 --> 01:50:57,564
+O formül zaten.
+
+1487
+01:50:58,304 --> 01:50:59,744
+Size verilen bir formül bu.
+
+1488
+01:51:00,824 --> 01:51:04,003
+Şimdi diyor ki eğer senin elinde böyle bir şey varsa,
+
+1489
+01:51:04,144 --> 01:51:05,444
+onun çıkartılışı var.
+
+1490
+01:51:05,583 --> 01:51:07,564
+Biz bunu l'hôpitalden çıkartıyoruz zaten.
+
+1491
+01:51:07,764 --> 01:51:09,844
+Ama şu an l'hôpital görmediğimiz için.
+
+1492
+01:51:10,344 --> 01:51:11,583
+Sadece bu formülleri efendim.
+
+1493
+01:51:11,583 --> 01:51:16,423
+Hocam onun açıklama için her iki tarafı elenle çarpsak aslında o a'ya.
+
+1494
+01:51:16,524 --> 01:51:18,064
+Ya normalde yapılıyor zaten.
+
+1495
+01:51:18,264 --> 01:51:22,684
+Normalde biz logaritmik limit yapıyoruz da konumuza gelmedik daha.
+
+1496
+01:51:23,324 --> 01:51:25,184
+Bunlar dönemin ortasında olan konular.
+
+1497
+01:51:25,664 --> 01:51:28,224
+Limiti biz daha bundan birkaç sefer daha göreceğiz.
+
+1498
+01:51:28,364 --> 01:51:29,524
+L'hôpitalde de göreceğiz.
+
+1499
+01:51:30,344 --> 01:51:32,704
+Bu üsteller normalde şeyle çözülüyor.
+
+1500
+01:51:32,844 --> 01:51:36,904
+Logaritmik olarak önce her tarafın logaritmasını alıp sonra limiti alıyorsunuz.
+
+1501
+01:51:37,003 --> 01:51:38,984
+Limitle logaritmanın yerini değiştiriyorsunuz.
+
+1502
+01:51:38,984 --> 01:51:41,503
+Bunlar l'hôpitalde göreceğimiz konular.
+
+1503
+01:51:41,583 --> 01:51:44,404
+Bunlar indeterminate form dediğimiz şey.
+
+1504
+01:51:46,904 --> 01:51:48,304
+Tamam teşekkür ederim hocam.
+
+1505
+01:51:48,584 --> 01:51:48,784
+Tamam.
+
+1506
+01:51:49,304 --> 01:51:51,003
+Bunları dönemin ortasında göreceğiz.
+
+1507
+01:51:51,124 --> 01:51:54,524
+Şu an oraya geçmediğimiz için bu formülleri kullanarak götürüyoruz şu an.
+
+1508
+01:51:55,384 --> 01:51:57,124
+Bunu yarın yine anlatayım olur mu?
+
+1509
+01:51:57,704 --> 01:51:59,003
+Şu anda siz şöyle bir bakın.
+
+1510
+01:51:59,003 --> 01:52:00,904
+Sadece şunu yazayım buraya.
+
+1511
+01:52:01,204 --> 01:52:02,344
+Let me write one thing.
+
+1512
+01:52:02,423 --> 01:52:04,724
+I will explain this example again.
+
+1513
+01:52:04,884 --> 01:52:05,164
+Okay.
+
+1514
+01:52:05,364 --> 01:52:08,224
+If you have a limit like this.
+
+1515
+01:52:08,724 --> 01:52:08,904
+Okay.
+
+1516
+01:52:08,904 --> 01:52:13,124
+Or anything.
+
+1517
+01:52:13,324 --> 01:52:14,884
+You can write any number also.
+
+1518
+01:52:15,144 --> 01:52:20,543
+You can write limit separately as limit x goes to anything.
+
+1519
+01:52:20,543 --> 01:52:24,484
+And fx to the power.
+
+1520
+01:52:25,864 --> 01:52:43,083
+Okay.
+
+1521
+01:52:30,963 --> 01:52:39,304
+Limit x goes to anything to the power gx. I made this one here.
+
+1522
+01:52:39,304 --> 01:52:43,823
+But I will explain tomorrow again.
+
+1523
+01:52:44,344 --> 01:52:50,083
+So let's finish for today. I have another lesson for the minutes later.
+
+1524
+01:52:52,823 --> 01:52:57,344
+Bunu anlamamışsınızdır. Gayet normal. Çünkü ben bunu yarın daha detaylı anlatacağım.
+
+1525
+01:52:57,344 --> 01:53:01,104
+Bu şekilde dediğimiz sorularını da yine böyle düzenleme yaparak bulacağız.
+
+1526
+01:53:01,344 --> 01:53:05,844
+Ama dediğiniz kısım, başka türlü tabii ki bunun çözümü var ama L'Hospital'i var.
+
+1527
+01:53:05,984 --> 01:53:09,743
+L'Hospital'de dönemin ortasında vereceğiz. Şu an L'Hospital'i size anlatıyorum.
+
+1528
+01:53:09,743 --> 01:53:10,024
+Tamam.
+
+1529
+01:53:10,804 --> 01:53:12,823
+Okay, so let's finish for today.
+
+1530
+01:53:14,104 --> 01:53:16,604
+See you tomorrow. Okay? Bye bye.
