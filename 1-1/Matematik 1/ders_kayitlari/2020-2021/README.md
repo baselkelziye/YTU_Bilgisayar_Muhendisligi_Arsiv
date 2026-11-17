@@ -12,6 +12,7 @@
 | 11 | Güz | Bayram Ali Ersoy | [sube_11/](sube_11/) |
 | 12 | Güz | Bulunamadı | [sube_12/](sube_12/) |
 | 14 | Güz | Serpil Karayel | [sube_14/](sube_14/) |
+| 16 | Güz | Bulunamadı | [sube_16/](sube_16/) |
 | 18 | Güz | Bulunamadı | [sube_18/](sube_18/) |
 | 20 | Güz | Bulunamadı | [sube_20/](sube_20/) |
 | 22 | Güz | Erdal Gül | [sube_22/](sube_22/) |
