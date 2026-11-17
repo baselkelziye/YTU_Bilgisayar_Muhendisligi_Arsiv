@@ -1,0 +1,2951 @@
+1
+00:02:40,659 --> 00:02:43,359
+Okay, so today we will start chapter 14.
+
+2
+00:02:46,000 --> 00:02:49,859
+And there are no classes tomorrow.
+
+3
+00:02:51,859 --> 00:02:54,159
+And next week is the exam week.
+
+4
+00:02:55,019 --> 00:02:57,460
+So there are no classes next week either.
+
+5
+00:03:00,240 --> 00:03:03,079
+So after today's class, we will meet two weeks later.
+
+6
+00:03:06,836 --> 00:03:08,816
+Okay, so let's start chapter 14.
+
+7
+00:03:26,195 --> 00:03:27,115
+Serti, derivatets.
+
+8
+00:03:27,675 --> 00:03:30,276
+So we first started functions of several variables.
+
+9
+00:03:31,135 --> 00:03:34,156
+Functions with more than one variable.
+
+10
+00:03:37,587 --> 00:03:38,787
+So here is the definition.
+
+11
+00:03:41,507 --> 00:03:45,027
+So suppose D is a set of n tuples of real numbers.
+
+12
+00:03:45,228 --> 00:03:48,228
+N tuples means something like this.
+
+13
+00:03:48,787 --> 00:03:51,127
+X1, X2, dot, dot, dot, Xn.
+
+14
+00:03:52,127 --> 00:03:56,127
+N numbers in parentheses separated by commas.
+
+15
+00:03:57,048 --> 00:03:59,867
+N tuple means, so this is not a set.
+
+16
+00:04:00,027 --> 00:04:03,407
+This is not a set of n numbers.
+
+17
+00:04:03,587 --> 00:04:05,947
+N tuple means, so this is not set notation.
+
+18
+00:04:05,947 --> 00:04:07,007
+Not at the parentheses.
+
+19
+00:04:07,587 --> 00:04:09,847
+The parentheses means the ordering is important.
+
+20
+00:04:09,967 --> 00:04:12,467
+So if you change the order of X1 and X2, for example,
+
+21
+00:04:12,768 --> 00:04:14,447
+that's going to be a different entable.
+
+22
+00:04:16,627 --> 00:04:22,767
+Now a real valid function F on D is a rule that assigns a unique real number W
+
+23
+00:04:22,767 --> 00:04:25,187
+equals F of X1, X2, Xn.
+
+24
+00:04:25,927 --> 00:04:32,408
+So here, the functions we have seen so far are single variable functions.
+
+25
+00:04:32,408 --> 00:04:35,168
+They are like Y is equal to F of X.
+
+26
+00:04:35,168 --> 00:04:39,567
+So X is the input variable there, and there was only one input variable.
+
+27
+00:04:39,767 --> 00:04:44,387
+Now we look at functions which have more than one input variable, basically.
+
+28
+00:04:44,387 --> 00:04:52,648
+So this at D here is, which is the set of all n tuple like this, is called the domain of the function.
+
+29
+00:04:53,247 --> 00:04:59,788
+And the set of W values taken by the function F is called the range of the function, which is the same for single variable functions.
+
+30
+00:05:00,447 --> 00:05:03,127
+The symbol W is called the dependent variable.
+
+31
+00:05:03,127 --> 00:05:09,867
+And F is said to be a functional and independent variables, X1 through Xn.
+
+32
+00:05:10,048 --> 00:05:12,048
+So this is important.
+
+33
+00:05:12,468 --> 00:05:20,888
+Now in this equation, the variables X1, X2, and X10, X10, all these variables are independent of each other.
+
+34
+00:05:20,887 --> 00:05:23,608
+But W depends on them.
+
+35
+00:05:24,807 --> 00:05:25,847
+They are this function.
+
+36
+00:05:26,788 --> 00:05:34,288
+So basically, this function determines what the value of W is depending on X1, X2, and Xn.
+
+37
+00:05:37,387 --> 00:05:42,247
+Also, these numbers, X1 through Xn, are called input variables, and the W is called output variable.
+
+38
+00:05:42,247 --> 00:05:52,447
+So if we have a single variable function, Y equals F of X, X is the input variable, W is the output variable, X is the independent variable, Y is the dependent variable.
+
+39
+00:05:53,067 --> 00:05:55,127
+Here we have more than one input variables.
+
+40
+00:05:56,888 --> 00:05:58,007
+So for example,
+
+41
+00:06:01,247 --> 00:06:04,347
+okay, we can, we can understand this as follows.
+
+42
+00:06:04,347 --> 00:06:04,747
+So,
+
+43
+00:06:09,939 --> 00:06:15,519
+For example, think of a two variable function, z equals f of xy, z equals f of xy.
+
+44
+00:06:16,060 --> 00:06:20,100
+Think of the domain, domain of the function as some subset of the xy plane.
+
+45
+00:06:20,480 --> 00:06:22,439
+So the set of xy pairs basically.
+
+46
+00:06:23,319 --> 00:06:28,680
+Instead of, instead of writing x1, y1, let me go back.
+
+47
+00:06:30,279 --> 00:06:38,720
+Here if n is 1, if n is 1, only input variables x1, we usually choose the variable x for our input variable.
+
+48
+00:06:38,720 --> 00:06:53,439
+If n is 2, if there are only two input variables x1 and x2, instead of using x1, x2, instead of using subindexes, we usually choose x and y as our input variables and we call our output variable as z.
+
+49
+00:06:54,060 --> 00:06:56,500
+So we write our function as z equals f of xy.
+
+50
+00:06:57,040 --> 00:07:07,959
+If n is 3, on the other hand, if you have three input variables x1, x2, and x3, we usually choose our input variables as x, y, and z and call our output variables w.
+
+51
+00:07:07,959 --> 00:07:11,819
+And so, of course, this is not a rule.
+
+52
+00:07:12,139 --> 00:07:12,699
+I mean, this is.
+
+53
+00:07:15,019 --> 00:07:21,579
+As like y equals f of x is not, I mean, we don't have to use x as the input variable, y as the output variable.
+
+54
+00:07:21,699 --> 00:07:26,139
+We can define n equals f of m, whatever.
+
+55
+00:07:26,139 --> 00:07:33,060
+When we, when talking about real numbers, we usually choose variables x, y, z, and so on.
+
+56
+00:07:34,100 --> 00:07:40,000
+If we define a two variable function, input variables, the independent variables are x and y.
+
+57
+00:07:40,000 --> 00:07:45,480
+So the domain is, domain is a subset of the set of all two tuples.
+
+58
+00:07:46,019 --> 00:07:50,439
+Two tuples means all pairs of the form x, y.
+
+59
+00:07:50,879 --> 00:07:54,399
+So these pairs can be represented as points on x, y plane.
+
+60
+00:07:55,079 --> 00:08:02,519
+And the function f takes any such pair, any such pair to some number z in the z coordinate.
+
+61
+00:08:02,519 --> 00:08:08,279
+So a b, f of a, b is here, this number, f of this number is this number, whatever.
+
+62
+00:08:09,360 --> 00:08:11,180
+We can understand it like that.
+
+63
+00:08:11,620 --> 00:08:13,879
+For example, here's a three variable function.
+
+64
+00:08:14,439 --> 00:08:18,319
+f of x, y, z is equal to square root of x square plus y square plus z square.
+
+65
+00:08:18,319 --> 00:08:27,180
+If you evaluate this function at 304, we get f of 304 is square root of three square plus zero square plus four square, which is equal to five, for example.
+
+66
+00:08:29,000 --> 00:08:39,680
+Now let's understand the domains and ranges of, domains and ranges of variable functions and three variable functions.
+
+67
+00:08:39,680 --> 00:08:41,639
+So for example,
+
+68
+00:08:55,635 --> 00:08:57,175
+Let me actually graph this.
+
+69
+00:09:09,395 --> 00:09:16,716
+Okay, we will see examples later. Anyway, so for example, think about this function, z equals square root of y minus x square.
+
+70
+00:09:17,475 --> 00:09:21,755
+Now, this is a two variable function. The input variables are x and y, the output variable is z.
+
+71
+00:09:22,575 --> 00:09:29,855
+Now, what is the domain of this function? Well, this is a square root function, so the number inside the square root must be bigger than or equal to zero.
+
+72
+00:09:29,855 --> 00:09:35,175
+So y minus x square must be bigger than or equal to zero, which means y must be bigger than or equal to x square.
+
+73
+00:09:37,055 --> 00:09:38,375
+Let's grab somewhere here.
+
+74
+00:09:41,716 --> 00:09:42,635
+It is actually.
+
+75
+00:09:44,956 --> 00:09:48,796
+Y minus X squared must be bigger than or equal to zero.
+
+76
+00:09:50,515 --> 00:09:51,475
+This part.
+
+77
+00:09:53,995 --> 00:09:56,355
+So this is the graph of Y equals X squared.
+
+78
+00:09:56,875 --> 00:09:58,576
+This is the graph of Y equals X squared.
+
+79
+00:09:58,755 --> 00:10:01,355
+Above the graph, Y is bigger than X squared.
+
+80
+00:10:01,855 --> 00:10:04,676
+Below this graph, on this part, Y is less than X squared.
+
+81
+00:10:05,056 --> 00:10:06,836
+So Y is bigger than or equal to X squared.
+
+82
+00:10:06,836 --> 00:10:09,676
+In other words, Y minus X squared is bigger than or equal to zero.
+
+83
+00:10:09,676 --> 00:10:13,556
+Is this curve and all points above the curve.
+
+84
+00:10:13,916 --> 00:10:15,995
+So that's the domain of this function, basically.
+
+85
+00:10:18,635 --> 00:10:20,096
+That's the domain of this function.
+
+86
+00:10:21,076 --> 00:10:23,355
+That's this figure.
+
+87
+00:10:23,456 --> 00:10:23,975
+That's the domain.
+
+88
+00:10:24,096 --> 00:10:29,696
+So it's going to be a function from whatever points over there into the Z axis.
+
+89
+00:10:32,395 --> 00:10:33,655
+How about the range?
+
+90
+00:10:34,436 --> 00:10:37,796
+We know that the square root of a number is never negative.
+
+91
+00:10:37,956 --> 00:10:39,096
+It's always zero or positive.
+
+92
+00:10:39,096 --> 00:10:42,255
+So the range is the set of all non-negative real numbers.
+
+93
+00:10:44,255 --> 00:10:46,375
+Think about this function, Z equals one over X, Y.
+
+94
+00:10:47,316 --> 00:10:52,855
+Well, for this expression to be defined, the denominator cannot be zero.
+
+95
+00:10:52,975 --> 00:10:58,676
+So this is the set of all real numbers except for when X, Y is equal to zero.
+
+96
+00:10:58,676 --> 00:11:07,836
+So this domain of this function actually is, if you graph it, it's going to be the whole plane except for the X axis and the Y axis.
+
+97
+00:11:08,316 --> 00:11:10,316
+Because on the X axis, Y is zero.
+
+98
+00:11:10,495 --> 00:11:12,076
+So this product is going to be zero.
+
+99
+00:11:12,076 --> 00:11:14,176
+On the Y axis, X is zero.
+
+100
+00:11:14,755 --> 00:11:16,576
+And again, the product is going to be zero.
+
+101
+00:11:16,576 --> 00:11:23,115
+So except for the coordinate axis, all points on the plane is in the domain of this function.
+
+102
+00:11:23,115 --> 00:11:24,656
+How about this range?
+
+103
+00:11:24,655 --> 00:11:30,056
+Well, this X times Y can be any positive number, any negative number, but it cannot be zero.
+
+104
+00:11:30,056 --> 00:11:34,995
+So this one over X, Y can be any positive number, any negative number, but it can never be zero.
+
+105
+00:11:34,995 --> 00:11:38,436
+So the range of this function is the set of all real numbers except zero.
+
+106
+00:11:41,716 --> 00:11:43,436
+Another example, sine X, Y.
+
+107
+00:11:43,655 --> 00:11:46,755
+So we know that the sine function is defined for all real numbers.
+
+108
+00:11:47,176 --> 00:11:48,515
+So there's no constraint here.
+
+109
+00:11:48,596 --> 00:11:49,696
+X and Y can be anything.
+
+110
+00:11:50,735 --> 00:11:53,395
+So the domain of this function is the entire plane.
+
+111
+00:11:53,776 --> 00:11:54,516
+How about the range?
+
+112
+00:11:54,596 --> 00:11:57,936
+We know that what are the Z values taken by this function?
+
+113
+00:11:58,076 --> 00:12:01,516
+We know that sine of any number is always between minus one and one.
+
+114
+00:12:01,516 --> 00:12:05,196
+So the Z values taken by this function is between minus one and one.
+
+115
+00:12:05,836 --> 00:12:06,895
+That's the range of the function.
+
+116
+00:12:08,576 --> 00:12:11,296
+Here are some examples of three variable functions.
+
+117
+00:12:12,756 --> 00:12:15,836
+W equals square root of X squared plus Y squared plus Z squared.
+
+118
+00:12:17,235 --> 00:12:18,895
+What is the domain of this function?
+
+119
+00:12:18,895 --> 00:12:25,456
+Well, note that the expression inside the square root, no matter whether X, Y, or Z are positive or negative,
+
+120
+00:12:25,816 --> 00:12:30,615
+since their squares are taken, this expression is always going to be bigger than or equal to zero.
+
+121
+00:12:30,615 --> 00:12:32,615
+So this expression is always defined.
+
+122
+00:12:33,416 --> 00:12:35,016
+Its domain is the entire space.
+
+123
+00:12:35,056 --> 00:12:35,916
+It's defined everywhere.
+
+124
+00:12:36,995 --> 00:12:38,256
+How about its range?
+
+125
+00:12:39,235 --> 00:12:41,936
+Well, similar to this one, this one over here.
+
+126
+00:12:42,576 --> 00:12:47,176
+We know that square root of something is always going to be bigger than or equal to zero.
+
+127
+00:12:47,256 --> 00:12:49,756
+So W is always going to be bigger than or equal to zero.
+
+128
+00:12:50,276 --> 00:12:53,036
+The range of this function is the set of all non-negative real numbers.
+
+129
+00:12:53,036 --> 00:12:56,255
+How about this?
+
+130
+00:12:56,836 --> 00:13:00,675
+In this case, denominator should not be zero.
+
+131
+00:13:01,936 --> 00:13:03,875
+And when is the denominator zero?
+
+132
+00:13:04,155 --> 00:13:08,355
+The sum of the squares of three numbers is equal to zero if and only if all three are zero.
+
+133
+00:13:08,355 --> 00:13:15,836
+So if X, Y, Z is zero, zero, zero, which is the origin, the origin of the three-dimensional space,
+
+134
+00:13:16,096 --> 00:13:18,115
+in that case, the function is undefined.
+
+135
+00:13:18,395 --> 00:13:23,056
+At any other point, so all, the whole entire space except for the origin,
+
+136
+00:13:24,156 --> 00:13:25,796
+the function is defined.
+
+137
+00:13:25,996 --> 00:13:26,936
+That's the domain of the function.
+
+138
+00:13:27,536 --> 00:13:28,516
+How about its range?
+
+139
+00:13:29,156 --> 00:13:32,336
+Well, we know that the denominator cannot be zero.
+
+140
+00:13:32,336 --> 00:13:36,375
+And since it is the sum of the squares of three numbers, it's always going to be positive.
+
+141
+00:13:37,172 --> 00:13:44,772
+So, the denominator is always going to be positive, so this number is always going to be positive, and any positive number can be obtained, actually, via this function.
+
+142
+00:13:45,172 --> 00:13:48,672
+So, the set of all positive numbers is the region of this function.
+
+143
+00:13:50,932 --> 00:13:52,831
+How about this? X, Y, L, and Z.
+
+144
+00:13:53,652 --> 00:13:59,112
+Well, here in this expression, there is no constraint on X or Y. X or Y can be anything.
+
+145
+00:13:59,812 --> 00:14:06,112
+How about Z? We know that the logarithmic function is defined for positive real numbers, so Z must be positive.
+
+146
+00:14:06,112 --> 00:14:14,132
+Z must be positive, so the domain of this function is the half space, the space above the X, Y plane.
+
+147
+00:14:16,072 --> 00:14:19,012
+Space Z, the half space Z bigger than zero.
+
+148
+00:14:20,372 --> 00:14:22,632
+That's the domain of this function. How about range?
+
+149
+00:14:23,052 --> 00:14:34,032
+Here, we know that range of the logarithmic function is the set of all real numbers, so L and Z can be any real number, X, Y can be any real number, so when we take the product, we can produce any real number here.
+
+150
+00:14:34,032 --> 00:14:37,632
+So, the set of all real numbers is the range of this function.
+
+151
+00:14:52,115 --> 00:14:55,735
+Okay, I'm skipping those definitions.
+
+152
+00:14:56,836 --> 00:14:58,755
+But we described the domain of this function.
+
+153
+00:14:58,956 --> 00:15:01,216
+We say that it's this portion over here.
+
+154
+00:15:01,895 --> 00:15:05,076
+Now, graphs, level curves, and contours of functions author variables.
+
+155
+00:15:07,216 --> 00:15:07,816
+So,
+
+156
+00:15:11,796 --> 00:15:14,956
+Now, how can we graph a function, a variable function?
+
+157
+00:15:17,355 --> 00:15:18,316
+First of all,
+
+158
+00:15:21,812 --> 00:15:23,892
+Let me go back here.
+
+159
+00:15:25,851 --> 00:15:28,392
+So think of one variable function.
+
+160
+00:15:28,512 --> 00:15:29,611
+Do we graphic like this?
+
+161
+00:15:29,692 --> 00:15:29,871
+No.
+
+162
+00:15:30,471 --> 00:15:35,532
+We draw x-axis here and the y-axis here and say that it's from x-values to y-values.
+
+163
+00:15:35,692 --> 00:15:35,851
+No.
+
+164
+00:15:36,451 --> 00:15:42,831
+We draw x-axis as our input and the y-axis which is perpendicular to it as our output variable.
+
+165
+00:15:43,192 --> 00:15:48,132
+And we plot the set of all points x-y such that y is equal to f of x.
+
+166
+00:15:48,491 --> 00:15:49,412
+And that gives a curve.
+
+167
+00:15:50,632 --> 00:15:51,491
+Y equals f of x.
+
+168
+00:15:51,812 --> 00:15:53,392
+Now have a lot of two variable function.
+
+169
+00:15:54,432 --> 00:16:04,312
+If you have a two variable function, in this case, our input points will be pairs, x-y pairs.
+
+170
+00:16:04,932 --> 00:16:10,611
+So our input, the domain of the function is going to be some subset of the x-y plane.
+
+171
+00:16:11,532 --> 00:16:13,392
+And the output variable is z.
+
+172
+00:16:13,552 --> 00:16:15,412
+So we draw as z-axis.
+
+173
+00:16:15,991 --> 00:16:18,632
+Z-axis perpendicular to the x-y plane.
+
+174
+00:16:18,632 --> 00:16:27,152
+And for any x-y, for any point on the x-y plane, there's a corresponding point f of x-y, which is z.
+
+175
+00:16:27,512 --> 00:16:28,892
+So whatever that point is.
+
+176
+00:16:28,892 --> 00:16:32,231
+So x-y and f of x-y.
+
+177
+00:16:32,231 --> 00:16:36,672
+So z is going to be basically z is going to be f of x-y.
+
+178
+00:16:36,672 --> 00:16:44,991
+So the set of all points satisfying this is going to form some surface on the three-dimensional space.
+
+179
+00:16:45,211 --> 00:16:46,951
+That's called the graph of this function.
+
+180
+00:16:46,951 --> 00:16:53,552
+So basically, this graph of f is called the surface z equals f of x-y.
+
+181
+00:16:53,971 --> 00:16:57,272
+Remember, in two dimensions, y equals f of x.
+
+182
+00:16:57,351 --> 00:16:59,692
+The graph of y equals f of x is called a curve.
+
+183
+00:16:59,692 --> 00:17:07,771
+In three dimensions, the graph of such a function z equals f of x-y, z equals f of x-y is called a surface.
+
+184
+00:17:08,572 --> 00:17:12,771
+It's going to be some two-dimensional surface, basically, in three dimensions.
+
+185
+00:17:12,771 --> 00:17:23,172
+And for any constant c, for any constant value c, the function z f of x-y equals z is called a level curve of f.
+
+186
+00:17:23,172 --> 00:17:35,791
+So for example, let's graph this function and plot its level curves for f of x-y equals 0, f of x-y equals 51, f of x-y equals 75.
+
+187
+00:17:36,271 --> 00:17:37,832
+Why are the level curves important?
+
+188
+00:17:37,991 --> 00:17:43,132
+Well, it makes it easier to understand how the graph of the function looks like.
+
+189
+00:17:43,491 --> 00:17:44,432
+Here's the graph, basically.
+
+190
+00:17:45,592 --> 00:17:48,092
+First, let's understand the level curves.
+
+191
+00:17:48,352 --> 00:17:50,632
+So, for example, f of x-y equals 0.
+
+192
+00:17:50,632 --> 00:17:53,711
+So when f of x-y equals 0, what do we get?
+
+193
+00:17:54,112 --> 00:17:57,672
+We get this is equal to 0, which means x square plus y square equals 100.
+
+194
+00:17:58,392 --> 00:18:02,771
+Well, this is the circle of radius 10 centered at the origin, this.
+
+195
+00:18:03,432 --> 00:18:05,271
+This red circle over here.
+
+196
+00:18:05,872 --> 00:18:08,711
+So that's the level curve at level 0.
+
+197
+00:18:09,271 --> 00:18:10,731
+Basically, what does it mean?
+
+198
+00:18:11,451 --> 00:18:17,811
+So at any point on this circle of radius 10, the value of the function is going to be 0.
+
+199
+00:18:17,811 --> 00:18:23,672
+So whenever x square plus y square is equal to 100, the value of this function is going to be 0.
+
+200
+00:18:24,112 --> 00:18:25,311
+So z is going to be 0.
+
+201
+00:18:25,872 --> 00:18:28,412
+On this circle, z is going to be 0.
+
+202
+00:18:28,531 --> 00:18:30,511
+So we get this circle on the x-y plane.
+
+203
+00:18:31,892 --> 00:18:33,132
+Now, look at this.
+
+204
+00:18:33,971 --> 00:18:36,192
+So here's some point.
+
+205
+00:18:36,412 --> 00:18:38,852
+So, for example, somewhere here we get z equals 51.
+
+206
+00:18:39,372 --> 00:18:40,031
+Z equals 51.
+
+207
+00:18:40,031 --> 00:18:45,692
+So what are the set of x-y pairs for which the value of the function is 51?
+
+208
+00:18:46,731 --> 00:18:47,632
+Look at that.
+
+209
+00:18:48,332 --> 00:18:51,672
+If the value of the function is 51, we get this.
+
+210
+00:18:51,791 --> 00:18:57,332
+We get x square plus y square equals 49, which is the circle of radius 7 centered at the origin.
+
+211
+00:18:58,072 --> 00:19:02,231
+So that's this red curve over here.
+
+212
+00:19:02,872 --> 00:19:03,672
+This red curve.
+
+213
+00:19:03,672 --> 00:19:06,132
+A typical level curve in the function domain.
+
+214
+00:19:06,251 --> 00:19:07,392
+F of x-y equals 51.
+
+215
+00:19:07,632 --> 00:19:07,991
+This one.
+
+216
+00:19:09,711 --> 00:19:12,112
+So whenever f of x-y equals 51.
+
+217
+00:19:13,032 --> 00:19:17,592
+So whenever we have a point, our x-y pair is on this.
+
+218
+00:19:17,592 --> 00:19:30,592
+So if we have a point, our x-y equals 51.
+
+219
+00:19:18,483 --> 00:20:52,483
+Yükselin bir kere.
+
+220
+00:21:01,971 --> 00:22:01,971
+Yeni Y
+
+221
+00:22:01,971 --> 00:22:18,951
+surface of this form for any constant value C, the set of all XYZ triples for which F of XY equals C form a level surface in this case, it's going to be a two dimensional surface in the three dimensional space.
+
+222
+00:22:20,132 --> 00:22:21,711
+It's called the level surface of F.
+
+223
+00:22:23,031 --> 00:22:25,652
+So for example, describe the level surface of this function.
+
+224
+00:22:27,051 --> 00:22:30,192
+F of XYZ equals square root of X square plus Y square plus C square.
+
+225
+00:22:30,192 --> 00:22:32,612
+So for example,
+
+226
+00:22:36,531 --> 00:23:06,531
+Yükselen Eksiyonu Kuzma, Yükselen Eksiyonu Kuzma, Yükselen Eksiyonu Kuzma, Yükselen Eksiyonu Kuzma, Yükselen Eksiyonu Kuzma, Yükselen Eksiyonu Kuzma, Yükselen Eksiyonu Kuzma, Yükselen Eksiyonu Kuzma, Yükselen Eksiyonu Kuzma, Yükselen Eksiyonu Kuzma, Yükselen Eksiyonu Kuzma, Yükselen Eksiyonu Kuzma, Yükselen Eksiyonu Kuzma, Yükselen Eksiyonu Kuzma, Yükselen Eksiyonu Kuzma, Yükselen Eksiyonu Kuzma, Yükselen Eksiyonu Kuzma, Yük
+
+227
+00:23:06,531 --> 00:23:36,581
+Yükselen Eksiyonu Kuzma, Yükselen Eksiyonu Kuzma, Yükselen Eksiyonu Kuzma, Yükselen Eksiyonu Kuzma, Yükselen Eksiyonu Kuzma, Yükselen Eksiyonu Kuzma, Yükselen Eksiyonu Kuzma, Yükselen Eksiyonu Kuzma, Yükselen Eksiyonu Kuzma, Yükselen Eksiyonu Kuzma, Yükselen Eksiyonu Kuzma, Yükselen Eksiyonu Kuzma, Yükselen Eksiyonu Kuzma, Yükselen Eksiyonu Kuzma, Yükselen Eksiyonu Kuzma, Yükselen Eksiyonu Kuzma, Yükselen Eksiyonu Kuzma,
+
+228
+00:23:40,660 --> 00:23:44,779
+Boundary point interior, exterior, computer graphing, no.
+
+229
+00:23:46,560 --> 00:23:47,160
+Okay.
+
+230
+00:23:48,340 --> 00:23:52,259
+But that was the end of 14.1. Let's continue to 14.2.
+
+231
+00:23:53,279 --> 00:23:53,480
+Now,
+
+232
+00:23:56,060 --> 00:24:02,400
+we have two variable functions now. We will talk about their limits, continuity, derivatives, integrals.
+
+233
+00:24:02,840 --> 00:24:09,660
+So we first start with limits and continuity in these higher dimensions, in two variables, three variables, and so on.
+
+234
+00:24:09,660 --> 00:24:11,360
+We first start with two variable functions.
+
+235
+00:24:14,360 --> 00:24:16,200
+Limits for functions of two variables.
+
+236
+00:24:17,980 --> 00:24:18,240
+So,
+
+237
+00:24:22,675 --> 00:24:24,275
+Here's the technical definition.
+
+238
+00:24:26,755 --> 00:24:28,295
+Basically, it's this.
+
+239
+00:24:30,915 --> 00:24:32,295
+Let me go over this.
+
+240
+00:24:32,995 --> 00:24:37,175
+Here, take a point, x0, y0, x0, y0.
+
+241
+00:24:37,675 --> 00:24:40,556
+Take a point, x0, y0 in the domain of this function.
+
+242
+00:24:42,596 --> 00:24:49,655
+So, we say that the limit of this function as xy approaches x0, y0 is equal to L.
+
+243
+00:24:49,655 --> 00:24:57,495
+If given any epsilon, if given any positive number epsilon,
+
+244
+00:25:01,175 --> 00:25:06,816
+whenever we can find the delta, we can find the delta, positive number delta,
+
+245
+00:25:06,816 --> 00:25:14,455
+such that whenever our point xy is inside the circle of radius delta,
+
+246
+00:25:15,155 --> 00:25:19,155
+centered at this point x0, y0, this blue point, any blue point,
+
+247
+00:25:19,655 --> 00:25:25,175
+f of that xy is going to be within epsilon distance from L.
+
+248
+00:25:25,576 --> 00:25:28,816
+So, it's going to be between L minus epsilon and L plus epsilon.
+
+249
+00:25:29,255 --> 00:25:32,175
+So, for any given epsilon, no matter how small epsilon is,
+
+250
+00:25:32,495 --> 00:25:34,455
+we can always find the delta such that
+
+251
+00:25:34,455 --> 00:25:39,515
+for any point within delta distance from x0, y0,
+
+252
+00:25:40,015 --> 00:25:42,955
+the value of the function is going to be within epsilon distance of L.
+
+253
+00:25:42,955 --> 00:25:44,875
+So, that's what this says, basically.
+
+254
+00:25:45,596 --> 00:25:49,675
+Whenever, whenever this holds, what does this mean?
+
+255
+00:25:49,795 --> 00:25:54,576
+Whenever, so this means the distance between xy and x0, y0 is less than delta.
+
+256
+00:25:55,255 --> 00:26:02,015
+Distance between xy and x0, y0 is less than delta means xy is inside this circle,
+
+257
+00:26:02,875 --> 00:26:06,336
+inside this circle of radius delta, centered at x0, y0.
+
+258
+00:26:06,336 --> 00:26:10,715
+Whenever xy is, of course, it's bigger than zero.
+
+259
+00:26:10,816 --> 00:26:12,816
+It doesn't have to be defined at x0, y0.
+
+260
+00:26:12,895 --> 00:26:13,855
+It may be undefined there.
+
+261
+00:26:15,375 --> 00:26:18,695
+Whenever it's inside that ball, that circle,
+
+262
+00:26:19,535 --> 00:26:21,795
+the value of the function f of xy
+
+263
+00:26:21,795 --> 00:26:25,275
+is going to be within epsilon distance from L.
+
+264
+00:26:25,355 --> 00:26:28,675
+So, it's going to be, basically, between L minus epsilon and L plus epsilon.
+
+265
+00:26:28,675 --> 00:26:58,655
+So, let's go.
+
+266
+00:26:34,579 --> 00:26:40,019
+As for single variable functions it's it's easy to show that using the definition that limit x y
+
+267
+00:26:40,019 --> 00:26:46,579
+approaches x zero y zero x is x zero basically just plug in x for x zero x zero for x.
+
+268
+00:26:48,980 --> 00:26:54,339
+Limit x y approach x zero y zero y is just y zero and limit of a constant is just that constant
+
+269
+00:26:54,339 --> 00:27:02,259
+itself. I'm skipping the proofs of this now making use of them
+
+270
+00:27:02,259 --> 00:27:08,419
+and the properties for limits of single variable functions hold for properties of
+
+271
+00:27:09,220 --> 00:27:14,980
+all for functions of two variables as well. Which properties are they the following properties.
+
+272
+00:27:15,539 --> 00:27:24,419
+So suppose that limit as x y so this is how we write it limit as x y approaches x zero y zero of f of x y.
+
+273
+00:27:24,980 --> 00:27:29,779
+If this is equal to l some real number and g of x y approaches m.
+
+274
+00:27:29,779 --> 00:27:38,819
+M is again a real number and k is another real number. Then limit of the sum of two functions
+
+275
+00:27:39,859 --> 00:27:44,740
+is the sum of their limits limit of the difference of two functions is the difference of their limits.
+
+276
+00:27:45,779 --> 00:27:51,619
+Limit of a function multiplied by a constant is its limit multiplied by the constant.
+
+277
+00:27:51,619 --> 00:28:00,659
+Basically we can factor constants out limit of a product is the product of the limits limit of a
+
+278
+00:28:00,659 --> 00:28:06,659
+quotient is the quotient of the limits provided the denominator is not zero. So we can add subtract
+
+279
+00:28:06,659 --> 00:28:11,619
+multiply divide limits as four single variable functions the same properties all to you.
+
+280
+00:28:11,619 --> 00:28:20,899
+our rule limit of f of x y to the power n is l to the power n. Well, this is just repeated
+
+281
+00:28:21,859 --> 00:28:24,019
+repeated use of this product rule basically.
+
+282
+00:28:24,019 --> 00:28:34,740
+And the rule through limit of and root of x y is the same as and through total.
+
+283
+00:28:36,099 --> 00:28:36,899
+Provide that.
+
+284
+00:28:36,899 --> 00:28:44,980
+n is a positive integer and whenever if n is even l is positive because if n is even l must be positive so that this is defined.
+
+285
+00:28:46,259 --> 00:28:52,019
+So we can add some we can apply all these algebraic operations to limits basically we can add subtract
+
+286
+00:28:52,019 --> 00:28:56,980
+multiply divide take powers and take groups and factor constants out.
+
+287
+00:28:56,980 --> 00:29:01,779
+So, for example, making use of this.
+
+288
+00:29:03,859 --> 00:29:13,539
+Now, the limit as x y approaches zero one, as we said, we can add subtract divide limits so just plug in zero for x and one for y.
+
+289
+00:29:13,539 --> 00:29:23,779
+So this is going to be zero minus zero plus three over zero plus zero minus one, which is three over minus one, which is minus three basically that's it.
+
+290
+00:29:23,779 --> 00:29:31,940
+limit as x y approaches three minus four squared of x squared plus y squared just plug in three for x minus four over y, we get this fine.
+
+291
+00:29:32,740 --> 00:29:34,420
+So then there's nothing special here.
+
+292
+00:29:35,619 --> 00:29:44,179
+When do we get something special we get something special we if the denominator is zero, if we get something like zero over zero or infinity over infinity something like that.
+
+293
+00:29:44,740 --> 00:29:46,179
+If you get an indeterminate form.
+
+294
+00:29:47,379 --> 00:29:49,539
+So, for example, here in this limit.
+
+295
+00:29:50,740 --> 00:29:52,339
+As x y approaches zero zero.
+
+296
+00:29:52,339 --> 00:29:59,539
+Well, as x y approaches zero zero the numerator is zero denominator is zero so this is zero over zero is an indeterminate form.
+
+297
+00:30:01,139 --> 00:30:04,019
+There is no L'Hospital's rule here we cannot apply L'Hospital.
+
+298
+00:30:05,460 --> 00:30:10,019
+Okay, keep this in mind, we cannot apply L'Hospital's rule because what does L'Hospital's rule say.
+
+299
+00:30:10,899 --> 00:30:14,419
+It says the limit is the same as the limit.
+
+300
+00:30:14,419 --> 00:30:24,899
+of this quotient is the same as the limit of the numerator is the derivative of the numerator or the derivative of the denominator, but how are we going to differentiate this differentiate with respect to what.
+
+301
+00:30:24,899 --> 00:30:28,500
+differentiate with respect to x or differentiate with respect to y.
+
+302
+00:30:30,339 --> 00:30:31,619
+That's that's not going to work.
+
+303
+00:30:31,619 --> 00:30:58,319
+Okay.
+
+304
+00:30:33,236 --> 00:30:36,536
+So forget about L'Opital's rule for two variable functions.
+
+305
+00:30:36,536 --> 00:30:38,716
+So what can we do?
+
+306
+00:30:38,756 --> 00:30:40,056
+We can apply some algebraic theory.
+
+307
+00:30:40,256 --> 00:30:43,855
+Of course, if the square root of x minus square root of y in the denominator,
+
+308
+00:30:44,096 --> 00:30:47,276
+we can multiply and divide this by the conjugate of that.
+
+309
+00:30:47,936 --> 00:30:50,136
+And multiply and divide by the conjugate of that.
+
+310
+00:30:52,896 --> 00:30:55,456
+Which is root x plus root y over root x plus root y.
+
+311
+00:30:55,976 --> 00:30:56,516
+Do we get?
+
+312
+00:30:57,996 --> 00:31:00,616
+This can be factored as x times x minus y.
+
+313
+00:31:00,616 --> 00:31:03,416
+And this product in the denominator is x minus y.
+
+314
+00:31:03,416 --> 00:31:05,016
+So x minus y is cancelled.
+
+315
+00:31:05,416 --> 00:31:06,196
+We get this.
+
+316
+00:31:06,796 --> 00:31:10,716
+And as xy approaches 0, 0, this is now 0 times 0, which is 0.
+
+317
+00:31:11,416 --> 00:31:13,115
+But that's the limit of this function, 0.
+
+318
+00:31:14,896 --> 00:31:18,236
+And of course, we can cancel x minus y.
+
+319
+00:31:18,896 --> 00:31:19,776
+This is important.
+
+320
+00:31:19,936 --> 00:31:24,115
+We can cancel the factor x minus y, y, because the path y equals x.
+
+321
+00:31:26,496 --> 00:31:28,136
+Along which x minus y is 0.
+
+322
+00:31:28,276 --> 00:31:29,476
+So then is x minus 0.
+
+323
+00:31:29,476 --> 00:31:34,396
+x minus y is 0 if y is equal to x, which is that line.
+
+324
+00:31:35,516 --> 00:31:36,556
+This line, right?
+
+325
+00:31:37,396 --> 00:31:40,596
+The line having 45 degrees on the xy plane.
+
+326
+00:31:40,976 --> 00:31:46,696
+On that line, when x is equal to y, this function itself is undefined.
+
+327
+00:31:47,556 --> 00:31:50,856
+This function itself is undefined because the denominator is 0.
+
+328
+00:31:50,856 --> 00:31:59,136
+So there's no, we know that the path, this line, is not in the domain of the function.
+
+329
+00:31:59,256 --> 00:32:02,376
+Therefore, we can cancel these factors x minus y.
+
+330
+00:32:02,376 --> 00:32:03,376
+And then we can cancel these factors.
+
+331
+00:32:03,376 --> 00:32:23,876
+So we can cancel these factors.
+
+332
+00:32:07,028 --> 00:32:20,107
+So, look at this now, another example, for which we are going to make use of the definition.
+
+333
+00:32:24,948 --> 00:32:35,468
+Let me see, example 3, example 4, okay, continuity, example 5, example 6, 2, pat test.
+
+334
+00:32:50,675 --> 00:32:57,635
+Okay, find the limit as x y approaches 0 0 of 4 x y squared over x squared plus y squared if it exists.
+
+335
+00:33:12,500 --> 00:33:15,079
+So, let's read this.
+
+336
+00:33:15,160 --> 00:33:17,460
+First observe that along the line x equals 0.
+
+337
+00:33:17,579 --> 00:33:21,039
+So, if x is 0 and y is not 0.
+
+338
+00:33:22,200 --> 00:33:24,579
+So, let's say x is 0 and y is not 0.
+
+339
+00:33:25,400 --> 00:33:26,819
+What is the value of this function?
+
+340
+00:33:27,519 --> 00:33:31,660
+X is 0, the numerator is 0, y is not 0, the denominator is not 0.
+
+341
+00:33:31,839 --> 00:33:33,180
+So, this is going to be 0, right?
+
+342
+00:33:33,779 --> 00:33:42,140
+So, on the line x equals 0, on the line x equals 0, the vertical line, the y-axis on that line,
+
+343
+00:33:42,500 --> 00:33:47,180
+at any point on that line, except for the origin, the value of the function is 0.
+
+344
+00:33:47,299 --> 00:33:52,259
+So, when we approach 0 from that direction, its value is going to be 0.
+
+345
+00:33:52,400 --> 00:33:58,000
+So, we may guess that the same holds on the line y equals 0.
+
+346
+00:33:58,079 --> 00:34:00,720
+We may guess that this limit must be 0.
+
+347
+00:34:01,319 --> 00:34:05,980
+Now, we can prove it.
+
+348
+00:34:10,579 --> 00:34:12,259
+Let me solve this in two ways.
+
+349
+00:34:12,619 --> 00:34:15,259
+I'm going to solve it in another way on the board.
+
+350
+00:34:16,400 --> 00:34:18,259
+So one way is...
+
+351
+00:34:18,259 --> 00:34:19,259
+So...
+
+352
+00:34:21,880 --> 00:34:25,480
+Basically, we make use of three methods
+
+353
+00:34:25,480 --> 00:34:27,420
+for finding the limit of a function.
+
+354
+00:34:28,139 --> 00:34:30,079
+For finding the limit of a two-variable function.
+
+355
+00:34:30,559 --> 00:34:32,199
+First is this.
+
+356
+00:34:33,539 --> 00:34:35,579
+Making some algebraic trick.
+
+357
+00:34:36,559 --> 00:34:39,199
+Like multiplying and dividing by the conjugates
+
+358
+00:34:39,199 --> 00:34:40,500
+or something like that.
+
+359
+00:34:40,920 --> 00:34:43,360
+Or making use of some known limits.
+
+360
+00:34:44,739 --> 00:34:48,079
+Like sine x over x or e to the power x minus one over x.
+
+361
+00:34:48,460 --> 00:34:49,199
+Something like that.
+
+362
+00:34:49,679 --> 00:34:51,119
+Making use of known limits.
+
+363
+00:34:51,900 --> 00:34:53,179
+Or making use...
+
+364
+00:34:53,179 --> 00:34:55,380
+And applying some algebraic trick.
+
+365
+00:34:55,960 --> 00:34:57,279
+We can find the limit.
+
+366
+00:34:57,400 --> 00:34:58,860
+Try to find the limit of the function.
+
+367
+00:34:58,960 --> 00:34:59,440
+That's one way.
+
+368
+00:34:59,960 --> 00:35:02,559
+Second is making use of the epsilon-delta definition.
+
+369
+00:35:04,299 --> 00:35:06,440
+So what does the epsilon-delta definition say?
+
+370
+00:35:07,340 --> 00:35:08,360
+So let's...
+
+371
+00:35:08,360 --> 00:35:09,960
+Given any epsilon...
+
+372
+00:35:10,579 --> 00:35:12,420
+Let epsilon bigger than zero be given.
+
+373
+00:35:12,619 --> 00:35:13,119
+But arbitrary.
+
+374
+00:35:14,219 --> 00:35:15,319
+It's an arbitrary epsilon.
+
+375
+00:35:15,559 --> 00:35:16,340
+Bigger than equal to zero.
+
+376
+00:35:16,679 --> 00:35:17,119
+It's given.
+
+377
+00:35:17,819 --> 00:35:19,779
+So we want to find a delta.
+
+378
+00:35:22,039 --> 00:35:24,480
+We want to find the delta bigger than or equal to zero.
+
+379
+00:35:24,619 --> 00:35:25,239
+Bigger than zero.
+
+380
+00:35:25,360 --> 00:35:26,360
+Such that...
+
+381
+00:35:26,360 --> 00:35:29,119
+Let's remember.
+
+382
+00:35:29,299 --> 00:35:30,940
+Such that this holds.
+
+383
+00:35:30,940 --> 00:35:36,940
+So the value of the function minus L, the absolute value of that, is less than epsilon.
+
+384
+00:35:37,539 --> 00:35:38,480
+Whenever...
+
+385
+00:35:38,480 --> 00:35:42,539
+The distance between x, y and zero, zero.
+
+386
+00:35:43,319 --> 00:35:46,579
+So in our case, in our example, x, zero and y, zero are zero.
+
+387
+00:35:46,579 --> 00:35:49,219
+So this is just square root of x square plus y square.
+
+388
+00:35:49,299 --> 00:35:50,400
+It's going to be less than delta.
+
+389
+00:35:52,360 --> 00:35:52,679
+So...
+
+390
+00:35:52,679 --> 00:36:00,420
+We're trying to find delta, positive delta, such that, depending on this epsilon, of course,
+
+391
+00:36:01,159 --> 00:36:02,519
+epsilon bigger than zero is given.
+
+392
+00:36:02,519 --> 00:36:04,799
+We are trying to find the delta bigger than zero.
+
+393
+00:36:05,319 --> 00:36:06,440
+Such that...
+
+394
+00:36:06,440 --> 00:36:08,000
+F of x, y, which is this.
+
+395
+00:36:08,799 --> 00:36:09,840
+That's our function.
+
+396
+00:36:10,739 --> 00:36:12,360
+F of x, y minus L.
+
+397
+00:36:13,099 --> 00:36:14,659
+We guessed to be zero.
+
+398
+00:36:15,259 --> 00:36:17,519
+Is going to be less than epsilon whenever...
+
+399
+00:36:18,559 --> 00:36:19,360
+This...
+
+400
+00:36:19,360 --> 00:36:21,519
+The distance between x, y and zero, zero is...
+
+401
+00:36:22,519 --> 00:36:23,440
+Between zero and delta.
+
+402
+00:36:23,440 --> 00:36:27,920
+Well, how are we going to obtain this?
+
+403
+00:36:28,259 --> 00:36:29,159
+Let's work on this.
+
+404
+00:36:30,019 --> 00:36:30,759
+What is this?
+
+405
+00:36:30,920 --> 00:36:31,480
+Minus zero.
+
+406
+00:36:31,599 --> 00:36:32,619
+Let's forget about it.
+
+407
+00:36:33,219 --> 00:36:34,400
+X square plus y square.
+
+408
+00:36:34,519 --> 00:36:37,159
+I can take it outside the absolute value.
+
+409
+00:36:37,739 --> 00:36:39,239
+Also, four and y square.
+
+410
+00:36:39,319 --> 00:36:40,880
+We can take them outside the absolute value.
+
+411
+00:36:41,340 --> 00:36:43,840
+The only thing that's left in the absolute value is x.
+
+412
+00:36:44,559 --> 00:36:47,319
+We want to make this less than epsilon.
+
+413
+00:36:47,819 --> 00:36:50,420
+We want to make this less than epsilon whenever this is true.
+
+414
+00:36:51,779 --> 00:36:52,940
+Now, what do we know?
+
+415
+00:36:53,440 --> 00:36:59,599
+We know that here, y square is less than or equal to x square plus y square.
+
+416
+00:37:00,639 --> 00:37:02,819
+So, we can say that this is...
+
+417
+00:37:02,819 --> 00:37:05,099
+This is less than or equal to four absolute value of x.
+
+418
+00:37:05,239 --> 00:37:06,800
+Because think about this.
+
+419
+00:37:07,960 --> 00:37:11,659
+Here, think about four absolute value of x.
+
+420
+00:37:12,300 --> 00:37:13,739
+Multiply it by y squared.
+
+421
+00:37:13,940 --> 00:37:15,940
+Then divide it by x squared plus y squared.
+
+422
+00:37:16,380 --> 00:37:22,139
+So, the number we divide it by is bigger than or equal to the number we multiply it by.
+
+423
+00:37:22,139 --> 00:37:24,079
+So, this is going to be...
+
+424
+00:37:24,079 --> 00:37:27,440
+This expression on the left side is going to be less than or equal to four absolute value of x.
+
+425
+00:37:27,799 --> 00:37:30,779
+Which is absolute value of x is the same as square root of x squared.
+
+426
+00:37:30,779 --> 00:37:34,059
+Which is less than or equal to square root of x squared plus y squared.
+
+427
+00:37:34,619 --> 00:37:37,940
+Now, if we choose our delta...
+
+428
+00:37:37,940 --> 00:37:43,940
+So, we want to choose our delta in such a way that this is going to be less than epsilon.
+
+429
+00:37:44,599 --> 00:37:47,319
+So, if we choose our delta as our epsilon over four...
+
+430
+00:37:47,319 --> 00:38:16,639
+If we choose...
+
+431
+00:38:08,371 --> 00:38:15,291
+We get this expression, which we prove to be less than or equal to this, is going to be less than 4 delta.
+
+432
+00:38:16,371 --> 00:38:26,111
+Since this is less than delta, this is going to be less than 4 delta, and we have chosen delta as epsilon over 4, so this is going to be, this expression is going to be less than epsilon.
+
+433
+00:38:26,632 --> 00:38:35,571
+So, if we choose our delta as epsilon over 4, whenever this is true, this is going to be true, which proves that limit of the function is 0, which proves this.
+
+434
+00:38:35,571 --> 00:38:41,451
+Now, let me solve the same example in a different way on the board.
+
+435
+00:38:46,387 --> 00:38:54,148
+So what was it again? 4 x y square over x square plus y square.
+
+436
+00:39:04,052 --> 00:39:14,312
+Y'ı y
+
+437
+00:39:24,403 --> 00:39:54,403
+Evet, o zaman, o zaman, o zaman, o zaman, o zaman, o zaman, o zaman, o zaman, o zaman, o zaman, o zaman, o zaman, o zaman, o zaman, o zaman, o zaman, o zaman, o zaman, o zaman, o zaman, o zaman, o zaman, o zaman, o zaman, o zaman, o zaman, o zaman, o zaman, o zaman, o zaman, o zaman, o zaman, o zaman, o zaman, o zaman, o zaman, o zaman, o zaman, o zaman, o zaman, o zaman, o zaman, o zaman, o zaman, o zaman, o zaman, o zaman, o zaman, o zaman, o zaman, o zaman, o zaman, o zaman, o zaman, o zaman, o zaman, o zaman, o zaman, o zaman, o zaman, o zaman, o zaman, o zaman, o zaman, o zaman, o zaman, o zaman, o zaman, o zaman, o zaman, o zaman, o zaman, o zaman, o zaman
+
+438
+00:39:54,403 --> 00:39:57,724
+Makin use of these, the color is from
+
+439
+00:40:02,804 --> 00:40:05,804
+Cartesian-de-polar.
+
+440
+00:40:05,804 --> 00:40:07,804
+And what else do we know?
+
+441
+00:40:07,804 --> 00:40:14,804
+As xy approaches 0, 0, r approaches 0.
+
+442
+00:40:14,804 --> 00:40:17,804
+Because on the…
+
+443
+00:40:17,804 --> 00:40:20,804
+This is the point 0, 0, right?
+
+444
+00:40:20,804 --> 00:40:23,804
+No matter from which direction we approach that point…
+
+445
+00:40:27,347 --> 00:40:33,347
+R-value, R-value, R-value is the distance between the origin and that point.
+
+446
+00:40:33,867 --> 00:40:37,447
+If X, Y approaches that point 0, 0, R is going to approach 0.
+
+447
+00:40:38,447 --> 00:40:39,567
+So, what are we going to do?
+
+448
+00:40:39,567 --> 00:40:41,228
+Oh, this is really the same.
+
+449
+00:40:47,635 --> 00:41:09,516
+Bu, bu
+
+450
+00:41:14,195 --> 00:41:17,996
+over this, x kare plus y kare, this is r kare.
+
+451
+00:41:25,204 --> 00:41:29,204
+R-square is canceled.
+
+452
+00:41:29,204 --> 00:41:33,204
+We get the limit as R approaches.
+
+453
+00:41:33,204 --> 00:41:36,204
+0 of 4R
+
+454
+00:41:36,204 --> 00:41:39,204
+cosin theta
+
+455
+00:41:39,204 --> 00:41:41,204
+sin2 theta.
+
+456
+00:41:41,204 --> 00:41:43,204
+Now,
+
+457
+00:41:43,204 --> 00:41:45,204
+what do we know about this?
+
+458
+00:41:45,204 --> 00:41:47,204
+cosin theta sin2 theta.
+
+459
+00:41:47,204 --> 00:41:49,204
+Well, cosin theta
+
+460
+00:41:49,204 --> 00:41:51,204
+sin2 theta
+
+461
+00:41:51,204 --> 00:41:53,204
+cosin theta
+
+462
+00:41:53,204 --> 00:41:57,204
+is always between minus one and one.
+
+463
+00:41:57,204 --> 00:41:59,204
+Sin theta is always between minus one and one.
+
+464
+00:41:59,204 --> 00:42:03,204
+So this program is always between minus one and one.
+
+465
+00:42:03,204 --> 00:42:04,204
+Right?
+
+466
+00:42:04,204 --> 00:42:06,204
+It's always between minus one and one.
+
+467
+00:42:06,204 --> 00:42:08,204
+And we multiply it with 4R.
+
+468
+00:42:08,204 --> 00:42:11,204
+We get minus 4R is less than or equal to
+
+469
+00:42:11,204 --> 00:42:13,204
+4R cosin theta
+
+470
+00:42:13,204 --> 00:42:15,204
+sin theta sin2 theta.
+
+471
+00:42:15,204 --> 00:42:17,204
+This is as well as 4R.
+
+472
+00:42:17,204 --> 00:42:21,204
+So this expression over here is always between minus 4 and 4.
+
+473
+00:42:21,204 --> 00:42:23,204
+What do we know?
+
+474
+00:42:23,204 --> 00:42:24,204
+The limit,
+
+475
+00:42:24,204 --> 00:42:27,204
+limit as R approaches 0 minus 4R
+
+476
+00:42:27,204 --> 00:42:31,204
+is the same as the limit R approaches 0 of 4R,
+
+477
+00:42:31,204 --> 00:42:33,204
+which is equal to 0.
+
+478
+00:42:33,204 --> 00:42:34,204
+So,
+
+479
+00:42:34,204 --> 00:42:36,204
+by the send-in-ish theorem,
+
+480
+00:42:36,204 --> 00:42:38,204
+this is between those two.
+
+481
+00:42:38,204 --> 00:42:40,204
+Both approach 0.
+
+482
+00:42:40,204 --> 00:42:42,204
+By the send-in-ish theorem,
+
+483
+00:42:42,204 --> 00:42:43,204
+this is also a video.
+
+484
+00:42:43,204 --> 00:42:44,204
+By the send-in-ish theorem,
+
+485
+00:42:44,204 --> 00:42:45,204
+this is also a video.
+
+486
+00:42:45,204 --> 00:42:47,204
+By the send-in-ish theorem, this is also a video.
+
+487
+00:42:55,155 --> 00:42:56,275
+503 teorem,
+
+488
+00:42:57,476 --> 00:42:58,076
+Piss limit
+
+489
+00:42:58,076 --> 00:42:59,695
+is
+
+490
+00:43:04,980 --> 00:43:08,980
+Bu bir başka bir şekilde bulunuyoruz.
+
+491
+00:43:22,547 --> 00:43:24,767
+Ok, it's 13.49.
+
+492
+00:43:27,887 --> 00:43:29,987
+Ok, let me give a 10 minutes break.
+
+493
+00:43:30,487 --> 00:43:31,867
+So, I will continue at 14.
+
+494
+00:43:32,587 --> 00:43:33,047
+Ok.
+
+495
+00:43:34,787 --> 00:43:36,547
+We will continue 10 minutes later.
+
+496
+00:54:30,291 --> 00:54:31,351
+Ok, let's continue.
+
+497
+00:54:33,231 --> 00:54:36,231
+If yi over x yi over x, does this limit exist?
+
+498
+00:54:39,132 --> 00:54:42,351
+Well, let's understand it on the board.
+
+499
+00:55:07,860 --> 00:55:10,300
+Let me tell you this first.
+
+500
+00:55:11,420 --> 00:55:14,780
+Let's say, let's look at the one variable function first.
+
+501
+00:55:17,460 --> 00:55:19,320
+This is what we see, right?
+
+502
+00:55:20,860 --> 00:55:22,599
+Let's say this is true.
+
+503
+00:55:23,180 --> 00:55:25,820
+This is the graph of 5 to a hoax.
+
+504
+00:55:27,360 --> 00:55:34,059
+Now, limit as x approaches to a hoax.
+
+505
+00:55:34,059 --> 00:55:38,840
+When I talk about this, I say that it does not exist.
+
+506
+00:55:40,680 --> 00:55:41,680
+This limit does not exist.
+
+507
+00:55:42,019 --> 00:55:43,180
+That's what we see, right?
+
+508
+00:55:45,780 --> 00:55:53,360
+The limit doesn't exist because when I approach 2 from left and approach 2 from right, I get different limits.
+
+509
+00:55:56,340 --> 00:56:02,180
+In one dimension, in one dimension, so when we say x approaches 2,
+
+510
+00:56:04,059 --> 00:56:05,300
+we are on a line.
+
+511
+00:56:06,500 --> 00:56:11,660
+There are only two ways, there are only two paths through which we can approach 2.
+
+512
+00:56:12,140 --> 00:56:14,940
+We can either approach from left or from right.
+
+513
+00:56:15,280 --> 00:56:15,700
+That's it.
+
+514
+00:56:16,579 --> 00:56:18,420
+And those two limits must be the same.
+
+515
+00:56:18,980 --> 00:56:19,860
+So that is limited.
+
+516
+00:56:20,340 --> 00:56:22,440
+In this case, those two limits are different.
+
+517
+00:56:22,760 --> 00:56:23,980
+We say that the limit doesn't exist.
+
+518
+00:56:23,980 --> 00:56:51,980
+Now, in two dimensions...
+
+519
+00:56:31,380 --> 00:56:34,599
+There are infinitely many different ways of approaching a point.
+
+520
+00:56:36,360 --> 00:56:46,960
+If you say f of x equals y over x, and we are looking for this limit, as x, y approaches 0, 0, or f of x, y.
+
+521
+00:56:46,960 --> 00:56:48,500
+F of x is y.
+
+522
+00:56:55,507 --> 00:56:58,117
+Bu, bu
+
+523
+00:57:01,492 --> 00:57:05,292
+Now, let me draw this. This is the domain of the function.
+
+524
+00:57:11,891 --> 00:57:13,611
+At 0, 0, it's undefined.
+
+525
+00:57:17,684 --> 00:57:19,964
+Okay, look at this.
+
+526
+00:57:24,980 --> 00:57:26,519
+Take any point on the slide.
+
+527
+00:57:43,572 --> 00:57:46,372
+Let's say this is the xy-plank, this is z.
+
+528
+00:57:47,652 --> 00:57:47,952
+Okay?
+
+529
+00:57:49,872 --> 00:57:51,452
+So take this point for example.
+
+530
+00:57:52,472 --> 00:57:55,211
+I don't care what the x-coordinate is.
+
+531
+00:57:55,952 --> 00:57:57,412
+It's y-coordinate is 0, right?
+
+532
+00:57:58,271 --> 00:58:02,372
+The value of the function is 0 over x, which is 0.
+
+533
+00:58:03,152 --> 00:58:04,192
+This value is 0.
+
+534
+00:58:05,452 --> 00:58:06,791
+Take some point here.
+
+535
+00:58:07,791 --> 00:58:11,392
+Again, y-value is 0, x-value is some positive number.
+
+536
+00:58:11,512 --> 00:58:13,152
+We get 0 over x, which is 0.
+
+537
+00:58:14,452 --> 00:58:15,452
+Take any point here.
+
+538
+00:58:17,092 --> 00:58:18,172
+Again, 0.
+
+539
+00:58:18,352 --> 00:58:19,412
+Take any point here.
+
+540
+00:58:20,271 --> 00:58:20,512
+Here.
+
+541
+00:58:21,552 --> 00:58:24,912
+The value of the function is 0, right?
+
+542
+00:58:25,492 --> 00:58:28,012
+Here, the value of the function is 0.
+
+543
+00:58:29,291 --> 00:58:36,311
+So no matter from whether I approach this point from left or right, right?
+
+544
+00:58:36,311 --> 00:58:46,572
+For any point on the x-axis where y is 0, we get 0 over some number, except for the origin.
+
+545
+00:58:47,291 --> 00:58:50,452
+We get some 0 over some positive or negative number.
+
+546
+00:58:50,532 --> 00:58:51,052
+We get 0.
+
+547
+00:58:51,052 --> 00:58:52,512
+The value of the function is 0.
+
+548
+00:58:53,012 --> 00:58:59,152
+So if we approach this point from left or right, we should get the limit 0.
+
+549
+00:58:59,152 --> 00:59:04,872
+But this is two dimensions.
+
+550
+00:59:05,112 --> 00:59:06,092
+This is not one dimension.
+
+551
+00:59:06,311 --> 00:59:09,271
+We can approach this point from several other directions.
+
+552
+00:59:09,271 --> 00:59:14,532
+So now let's approach it from this.
+
+553
+00:59:16,884 --> 00:59:18,003
+Bakın bu saniye.
+
+554
+00:59:22,963 --> 00:59:27,623
+Y'e x
+
+555
+00:59:33,012 --> 00:59:40,012
+bu
+
+556
+00:59:40,012 --> 01:00:03,012
+5
+
+557
+01:00:03,012 --> 01:00:04,012
+6
+
+558
+01:00:04,012 --> 01:00:05,012
+5
+
+559
+01:00:05,012 --> 01:00:07,012
+6
+
+560
+01:00:07,012 --> 01:00:08,012
+7
+
+561
+01:00:08,012 --> 01:00:09,012
+8
+
+562
+01:00:09,012 --> 01:00:10,012
+9
+
+563
+01:00:10,012 --> 01:00:12,012
+10
+
+564
+01:00:12,012 --> 01:00:14,012
+11
+
+565
+01:00:14,012 --> 01:00:16,012
+12
+
+566
+01:00:16,012 --> 01:00:17,012
+13
+
+567
+01:00:17,012 --> 01:00:19,012
+14
+
+568
+01:00:19,012 --> 01:00:33,012
+15
+
+569
+01:00:12,148 --> 01:00:18,307
+So, for any point on this line, except for the origin, the value of the function is always 1, equal to 1.
+
+570
+01:00:19,168 --> 01:00:29,468
+So, if I approach this point 0, 0, through this line, y equals x, from above or below, it doesn't matter, the limit should be equal to 1, actually.
+
+571
+01:00:30,168 --> 01:00:33,068
+So, which one is the limit? Is the limit 0 or 1? It's none of them.
+
+572
+01:00:33,068 --> 01:00:35,788
+So, we conclude that the limit doesn't exist.
+
+573
+01:00:36,347 --> 01:00:45,508
+Because, if we approach this point 0, 0, through this line, through the line y equals 0, we get the limit 0.
+
+574
+01:00:46,248 --> 01:00:52,128
+But, if we approach it from the line y equals x, through that path, we get the limit 1.
+
+575
+01:00:52,887 --> 01:00:53,528
+Which are different.
+
+576
+01:00:54,028 --> 01:00:58,088
+So, we conclude that the limit does not exist, if that happens.
+
+577
+01:00:59,768 --> 01:01:02,108
+We combat the two path test.
+
+578
+01:01:03,068 --> 01:01:05,428
+So, okay.
+
+579
+01:01:12,275 --> 01:01:17,545
+Bu limitin yok. Bu konuda açıklamayı açıklamayı açıklamayı açıklamayı açıklamayı açıklamayı açıklamayı açıklamayı açıklamayı açıklamayı açıklamayı açıklamayı açıklamayı açıklamayı açıklamayı açıklamayı açıklamayı açıklamayı açıklamayı açıklamayı açıklamayı açıklamayı açıklamayı açıklamayı açıklamayı açıklamayı açıklamayı açıklamayı açıklamayı açıklamayı açıklamayı açıklamayı açıklamayı açıklamayı açıklamayı açıklamayı açıklamayı açıklamayı açıklamayı açıklamayı açıklamayı açıklamayı açıklamayı açıklamayı açıklamayı açıklamayı açıklamayı açıklamayı açıklamayı açıklamayı açıklamayı açıklamayı açıklamayı açıklamayı açıklamayı açıklamayı açıklamayı açıklamayı açıklamayı açıklamayı açıklamayı açıklamayı açıklamayı açıklamayı açıklamayı açıklamayı açıklamayı açıklamayı açıklamayı açıklamayı açıklamayı açıklam
+
+580
+01:01:20,596 --> 01:01:24,076
+Definition of continuity is made, but before that, here.
+
+581
+01:01:25,775 --> 01:01:27,976
+2-pad test for non-existence of a limit.
+
+582
+01:01:28,695 --> 01:01:46,695
+If a function fxy has different limits along two different paths, as on the example on the board, has different limits along two different paths in the domain of f, as xy approaches x0 via 0, then this limit does not exist.
+
+583
+01:01:46,695 --> 01:01:55,056
+So, if you can find two different paths through which the limit of the function is different, you conclude that the limit doesn't exist.
+
+584
+01:01:57,536 --> 01:01:58,615
+What continuity?
+
+585
+01:01:58,956 --> 01:02:02,056
+The definition of continuity is the same as the definition of...
+
+586
+01:02:03,655 --> 01:02:16,056
+...
+
+587
+01:02:07,539 --> 01:02:09,619
+They continue to four single variable functions.
+
+588
+01:02:10,099 --> 01:02:16,659
+So a function f of x y is continuous at the point x zero y zero if these three conditions are satisfied.
+
+589
+01:02:16,800 --> 01:02:16,980
+What?
+
+590
+01:02:17,559 --> 01:02:18,860
+One, f is defined there.
+
+591
+01:02:19,420 --> 01:02:21,179
+Two, its limit exists there.
+
+592
+01:02:21,679 --> 01:02:25,300
+Three, the value of the limit is equal to the value of the function at that point.
+
+593
+01:02:26,119 --> 01:02:29,500
+And f of a function is continuous if it is continuous at every point of its domain.
+
+594
+01:02:29,500 --> 01:02:41,400
+So for example, show that this partially defined function f of x y equals to x over x square plus y squared is continuous at every point except the origin.
+
+595
+01:02:43,000 --> 01:02:44,880
+First of all, this is a rational function.
+
+596
+01:02:45,639 --> 01:02:54,179
+So the limit of whenever x y is different than zero, the function is defined here and the limit of the function is just going to be the value of the function.
+
+597
+01:02:54,179 --> 01:02:59,820
+Because there's no indeterminates form of something whenever x y is different than zero.
+
+598
+01:03:00,300 --> 01:03:02,559
+Whatever the value of the function, its limit is going to be that.
+
+599
+01:03:02,639 --> 01:03:04,059
+So it's continuous everywhere.
+
+600
+01:03:06,119 --> 01:03:10,159
+Whenever x y is different than zero, zero, the function is continuous.
+
+601
+01:03:10,960 --> 01:03:12,000
+Now how about zero, zero?
+
+602
+01:03:13,139 --> 01:03:15,059
+Now the function is defined there, zero.
+
+603
+01:03:15,940 --> 01:03:19,239
+Does its limit exist and is it equal to zero?
+
+604
+01:03:19,440 --> 01:03:20,340
+That's the question now.
+
+605
+01:03:20,840 --> 01:03:22,360
+We will see that the limit doesn't exist.
+
+606
+01:03:22,360 --> 01:03:26,039
+Now look at this expression, 2 x y over x square plus y square.
+
+607
+01:03:30,132 --> 01:03:40,211
+If we approach this along any line y equals x mx, actually here on the on the board example, this is the line y equals zero.
+
+608
+01:03:41,172 --> 01:03:48,492
+In other words, it's the line y equals zero x. The other one is y equals one x. So we could generalize this. Let me do it.
+
+609
+01:03:52,083 --> 01:03:55,223
+We could write this as hell.
+
+610
+01:03:59,092 --> 01:04:55,092
+İstediğe de baktılarını düşünüyorum.
+
+611
+01:04:55,092 --> 01:04:57,092
+Y'e de baktılarını düşünüyorum.
+
+612
+01:04:57,092 --> 01:04:59,092
+Yani mx'e de baktılarını düşünüyorum.
+
+613
+01:05:02,003 --> 01:05:32,003
+Ve altyazı yıza yı
+
+614
+01:05:32,003 --> 01:05:58,083
+if we approach the point along the line y equals zero the limit is going to be zero if we approach along the line y equals one y equals x the limit is going to be one if we approach along the line y equals two x the limit is going to be two so we see that the limit depends on m so different values of m are going to give different limits so from that we conclude that the limit doesn't exist now similarly
+
+615
+01:06:02,708 --> 01:06:07,068
+So, for example, here, if we approach this along this line y equals mx.
+
+616
+01:06:07,847 --> 01:06:12,968
+So, what is the value of the function at when y on the line y equals mx?
+
+617
+01:06:13,988 --> 01:06:16,847
+The function is here 2x y over x squared plus y squared.
+
+618
+01:06:17,488 --> 01:06:19,367
+And why are we choosing y equals mx?
+
+619
+01:06:19,468 --> 01:06:22,668
+Because look at the numerator here x times y.
+
+620
+01:06:22,887 --> 01:06:23,728
+Its degree is 2.
+
+621
+01:06:24,327 --> 01:06:28,447
+And in the denominator x squared has degree 2, y squared has degree 2.
+
+622
+01:06:28,548 --> 01:06:29,548
+Everything has degree 2.
+
+623
+01:06:29,548 --> 01:06:40,028
+So, so here, if you replace y with mx, we get 2x times mx over x squared plus mx squared,
+
+624
+01:06:40,728 --> 01:06:42,708
+which is numerator is 2mx squared.
+
+625
+01:06:42,807 --> 01:06:44,907
+The denominator is factor x squared out.
+
+626
+01:06:45,347 --> 01:06:46,488
+We get 1 plus m squared.
+
+627
+01:06:46,608 --> 01:06:47,788
+So, x squared is cancelled.
+
+628
+01:06:48,608 --> 01:06:52,208
+In the numerator and denominator, we get 2m over 1 plus m squared.
+
+629
+01:06:52,208 --> 01:06:59,907
+So, the function, the value of the function on the line y equals mx depends on m.
+
+630
+01:07:01,008 --> 01:07:07,447
+So, we conclude that the limit of this function along this line y equals mx is the limit of this function,
+
+631
+01:07:09,048 --> 01:07:11,887
+which is this, 2m over 1 plus m squared.
+
+632
+01:07:12,327 --> 01:07:15,248
+Now, limit changes with each value of the slope m.
+
+633
+01:07:15,248 --> 01:07:17,927
+As m changes, the limit changes.
+
+634
+01:07:18,728 --> 01:07:20,288
+The limit depends on the value of m.
+
+635
+01:07:20,427 --> 01:07:26,148
+So, different lines of different slope give us different limits.
+
+636
+01:07:26,548 --> 01:07:32,108
+Therefore, we conclude that the limit does not exist there.
+
+637
+01:07:32,448 --> 01:07:35,268
+And therefore, the function is not continuous at the point 0, 0.
+
+638
+01:07:35,268 --> 01:07:38,588
+Here is another example.
+
+639
+01:07:40,088 --> 01:07:47,367
+Of that function, fxy equals 2x squared y over x4 plus y squared has no limit xy as xy approaches 0, 0.
+
+640
+01:07:48,588 --> 01:07:49,588
+This limit doesn't exist.
+
+641
+01:07:50,427 --> 01:07:51,968
+Now, look at this.
+
+642
+01:07:52,248 --> 01:07:57,208
+Now, if we approach through y equals mx, it's not going to work.
+
+643
+01:07:57,208 --> 01:08:00,968
+But, because, look at the denominator here.
+
+644
+01:08:01,387 --> 01:08:04,628
+We have x to the power 4, y squared on the other side.
+
+645
+01:08:05,268 --> 01:08:14,907
+So, note that if we replace y with x squared, if you replace y with x squared, this is also going to be x to the power 4.
+
+646
+01:08:15,327 --> 01:08:16,748
+This is going to be x to the power 4.
+
+647
+01:08:17,047 --> 01:08:19,448
+And here, we will have x squared times x squared.
+
+648
+01:08:19,547 --> 01:08:21,028
+This is also going to be x to the power 4.
+
+649
+01:08:21,028 --> 01:08:26,007
+So, we can cancel x to the power 4s and get some limit depending on m, k, whatever.
+
+650
+01:08:26,608 --> 01:08:32,728
+So, we approach this along the curves y equals kx squared along these curves.
+
+651
+01:08:32,728 --> 01:08:38,608
+These y equals x squared, y equals 2x squared, y equals 3x squared and so on.
+
+652
+01:08:40,368 --> 01:08:41,467
+Minus x squared.
+
+653
+01:08:41,467 --> 01:08:46,927
+So, we approach the point 0, 0.
+
+654
+01:08:47,448 --> 01:08:49,148
+We approach the 0, 0.
+
+655
+01:08:49,507 --> 01:08:52,948
+Not along linear paths, but along these curves.
+
+656
+01:08:53,627 --> 01:08:58,047
+We approach this way, this point, this way, this way.
+
+657
+01:08:58,108 --> 01:08:59,708
+We will see that we will get different limits.
+
+658
+01:08:59,847 --> 01:09:00,028
+How?
+
+659
+01:09:00,828 --> 01:09:05,427
+Well, with the value of the function at when y is equal to kx squared is this.
+
+660
+01:09:05,427 --> 01:09:08,408
+x squared times replace y with kx squared.
+
+661
+01:09:08,868 --> 01:09:14,148
+We have x to the power 4 plus kx squared squared, which is the numerator is 2k x to the power 4.
+
+662
+01:09:14,228 --> 01:09:18,688
+Denominator is x to the power 4 plus k squared x to the power 4.
+
+663
+01:09:18,748 --> 01:09:19,948
+So, x to the power 4 is canceled.
+
+664
+01:09:20,087 --> 01:09:21,988
+We get 2k over 1 plus k squared.
+
+665
+01:09:22,427 --> 01:09:29,167
+Again, along this curve, that's the limit of the function, which depends on k.
+
+666
+01:09:29,167 --> 01:09:32,988
+So, different values of k are going to give us different limits.
+
+667
+01:09:33,608 --> 01:09:39,688
+Therefore, by the two path test, we conclude that the limit of this function does not exist.
+
+668
+01:09:40,708 --> 01:09:41,908
+So, this is important.
+
+669
+01:09:42,408 --> 01:09:48,528
+Doing the same limit along all straight lines approaching x0, y0 does not imply that the limit exists.
+
+670
+01:09:49,368 --> 01:09:57,248
+So, actually, if you checked it, if we have used y equals mx, use any line y equals mx,
+
+671
+01:09:57,248 --> 01:09:59,648
+you will see that the value of the limit is going to be 0.
+
+672
+01:10:00,000 --> 01:10:02,000
+Bu da ne demek bu da ne demek bu.
+
+673
+01:10:02,000 --> 01:10:29,000
+Bu da ne demek bu.
+
+674
+01:10:32,787 --> 01:10:35,067
+Okay, what else? Continuity of composites.
+
+675
+01:10:38,687 --> 01:10:45,607
+What does it say? If f is continuous at x0, y0, and g is a single variable function, continuous at f of x0, y0,
+
+676
+01:10:45,767 --> 01:10:51,967
+then this composite function h g of f is defined by this, is continuous at x0, y0.
+
+677
+01:10:51,967 --> 01:11:00,267
+So, for example, x minus y. Well, that's an algebraic two-variable function, x minus y. It's continuous everywhere.
+
+678
+01:11:00,267 --> 01:11:05,247
+e to the power, we know that the exponential function is a single variable continuous function.
+
+679
+01:11:05,707 --> 01:11:09,547
+So, e to the power x, y, y is a continuous two-variable function.
+
+680
+01:11:10,307 --> 01:11:16,167
+Similarly, x squared plus one is always positive. So, x, y over x squared plus y plus one.
+
+681
+01:11:16,167 --> 01:11:19,587
+This is an algebraic function. It's defined everywhere and continuous everywhere.
+
+682
+01:11:20,147 --> 01:11:24,967
+Cosine function is a continuous function. So, this is a two-variable continuous function.
+
+683
+01:11:25,567 --> 01:11:29,667
+Similarly, this is continuous everywhere. Logatmic function is continuous everywhere.
+
+684
+01:11:29,667 --> 01:11:32,687
+So, if their composite is continuous everywhere.
+
+685
+01:11:33,887 --> 01:11:38,287
+And, of course, we can say exactly the same thing for functions of more than two variables.
+
+686
+01:11:39,127 --> 01:11:42,367
+This is a continuous function. This is a continuous function.
+
+687
+01:11:42,367 --> 01:11:42,387
+This is a continuous function.
+
+688
+01:11:52,243 --> 01:11:57,483
+So, for example, e to the power x plus z over z square plus cosine root xy.
+
+689
+01:11:58,143 --> 01:11:59,764
+Now, x plus z, that's continuous.
+
+690
+01:12:00,203 --> 01:12:02,523
+e to the power is continuous, so this is continuous.
+
+691
+01:12:02,884 --> 01:12:03,943
+Z square is continuous.
+
+692
+01:12:04,743 --> 01:12:05,623
+xy is continuous.
+
+693
+01:12:05,823 --> 01:12:07,083
+Square root function is continuous.
+
+694
+01:12:07,823 --> 01:12:09,043
+Cosine function is continuous.
+
+695
+01:12:09,283 --> 01:12:10,163
+So, this is continuous.
+
+696
+01:12:10,683 --> 01:12:12,804
+Sum of two continuous functions is continuous.
+
+697
+01:12:14,323 --> 01:12:18,123
+Quotient of two continuous functions is continuous, wherever they are defined.
+
+698
+01:12:18,563 --> 01:12:20,863
+So, this is continuous wherever it's defined.
+
+699
+01:12:20,863 --> 01:12:31,043
+So, for example, the limit of this function as p approaches 1, 0, minus 1 is just replace x with 1, y with 0, and z with minus 1.
+
+700
+01:12:31,203 --> 01:12:38,503
+We get e to the power x plus z, which is 0, e to the power 0 over this minus 1 squared plus cosine 0.
+
+701
+01:12:38,943 --> 01:12:40,783
+That's 1 plus 1 is 2.
+
+702
+01:12:40,863 --> 01:12:41,943
+That's 1 over 2, basically.
+
+703
+01:12:42,243 --> 01:12:42,563
+That's it.
+
+704
+01:12:43,523 --> 01:12:44,304
+We'll find the limit.
+
+705
+01:12:44,483 --> 01:12:46,583
+We can just substitute x, y, and z.
+
+706
+01:12:46,583 --> 01:12:53,223
+We are not going through the details of the limits of three variable functions.
+
+707
+01:12:53,384 --> 01:12:55,663
+That's it for three variable functions.
+
+708
+01:12:55,663 --> 01:13:01,264
+Okay, that's the end of section 14.2.
+
+709
+01:13:02,403 --> 01:13:11,183
+And we will solve problems from this section two weeks later.
+
+710
+01:13:11,183 --> 01:13:16,103
+So, again, tomorrow is April 23rd.
+
+711
+01:13:16,503 --> 01:13:17,583
+It's a national holiday.
+
+712
+01:13:17,764 --> 01:13:18,543
+There are no classes.
+
+713
+01:13:19,363 --> 01:13:27,503
+Next week is the exam week throughout the whole university.
+
+714
+01:13:28,103 --> 01:13:29,043
+There are no classes.
+
+715
+01:13:30,923 --> 01:13:32,844
+So, we will continue two weeks later.
+
+716
+01:13:32,844 --> 01:13:34,823
+When is it?
+
+717
+01:13:35,143 --> 01:13:40,183
+On May 6th, Thursday.
+
+718
+01:13:40,983 --> 01:13:42,743
+We'll continue on May 6th, Thursday.
+
+719
+01:13:42,863 --> 01:13:46,823
+We will solve problems from section 14.1 and 13.2.
+
+720
+01:13:46,983 --> 01:13:48,243
+And the exam.
+
+721
+01:13:49,844 --> 01:13:51,844
+Exam is going to be after the...
+
+722
+01:13:51,844 --> 01:14:01,703
+May 7th, May 7th, May 7th.
+
+723
+01:14:02,143 --> 01:14:04,844
+And the exam topics included on the exam is...
+
+724
+01:14:05,844 --> 01:14:09,683
+Up to and including this 14.2.
+
+725
+01:14:10,683 --> 01:14:12,663
+So, whatever we covered...
+
+726
+01:14:12,663 --> 01:14:15,844
+Whatever we covered from the beginning of the semester...
+
+727
+01:14:16,844 --> 01:14:21,143
+Until the end of today's lecture is included in the first exam.
+
+728
+01:14:21,844 --> 01:14:26,623
+And, of course, as I said, two weeks later, on Thursday...
+
+729
+01:14:26,623 --> 01:14:29,463
+We will solve problems from 14.1 and 14.2.
+
+730
+01:14:29,543 --> 01:14:35,263
+And then, on Thursday and Friday, we will continue with 14.3.
+
+731
+01:14:35,563 --> 01:14:36,423
+We will continue.
+
+732
+01:14:36,603 --> 01:14:41,403
+But 14.3 and so on are not going to be included on the exam.
+
+733
+01:14:43,043 --> 01:14:44,363
+Okay, that's it for today.
+
+734
+01:14:44,543 --> 01:14:45,283
+Any questions?
+
+735
+01:14:45,623 --> 01:14:46,223
+Any comments?
+
+736
+01:15:00,115 --> 01:15:01,895
+Tamam, sizleriniz iyi günler.
+
+737
+01:15:05,195 --> 01:15:07,275
+Yani, sizler iki hafta sonra görüşürüz.
+
+738
+01:15:09,855 --> 01:15:11,855
+Have a nice day. Bye.

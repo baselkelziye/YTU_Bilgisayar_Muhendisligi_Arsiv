@@ -1,0 +1,3511 @@
+1
+00:05:10,387 --> 00:05:12,387
+İyi günler.
+
+2
+00:05:23,475 --> 00:05:32,255
+İlk önce, bu konuları başlayalım ve bugün, bu konuları başlayalım.
+
+3
+00:05:36,180 --> 00:05:36,680
+Okay.
+
+4
+00:05:41,019 --> 00:05:42,459
+What is an infinite series?
+
+5
+00:05:43,500 --> 00:05:47,400
+An infinite series is the sum of an infinite sequence of numbers.
+
+6
+00:05:48,600 --> 00:05:49,079
+I will back.
+
+7
+00:05:59,252 --> 00:06:02,492
+An infinite series is the sum of an infinite sequence of numbers.
+
+8
+00:06:02,651 --> 00:06:05,572
+So remember from yesterday, what is an infinite sequence?
+
+9
+00:06:05,812 --> 00:06:07,031
+It's a list of numbers.
+
+10
+00:06:07,552 --> 00:06:08,672
+A1, A2, A3.
+
+11
+00:06:09,352 --> 00:06:14,432
+A list of numbers in order separated by commas.
+
+12
+00:06:15,192 --> 00:06:18,372
+On the other hand, an infinite series is the sum of these numbers.
+
+13
+00:06:19,112 --> 00:06:22,432
+So in between, we have pluses.
+
+14
+00:06:22,432 --> 00:06:31,192
+We just add these, add all numbers in this infinite sequence.
+
+15
+00:06:31,692 --> 00:06:33,132
+And that's called an infinite series.
+
+16
+00:06:34,992 --> 00:06:37,492
+So, okay.
+
+17
+00:06:38,132 --> 00:06:44,232
+If there's no dot, dot, dot here, if we ignore this, if we have only n numbers, right?
+
+18
+00:06:44,692 --> 00:06:46,831
+This is what we see in primary school, right?
+
+19
+00:06:47,512 --> 00:06:47,912
+Addition.
+
+20
+00:06:48,292 --> 00:06:49,072
+Just add numbers.
+
+21
+00:06:49,632 --> 00:06:51,012
+3 plus 5 is 8.
+
+22
+00:06:51,012 --> 00:06:53,612
+Then 8 plus 7 is 15.
+
+23
+00:06:54,211 --> 00:06:56,912
+15 plus 20 is 35.
+
+24
+00:06:57,032 --> 00:06:57,512
+And so on.
+
+25
+00:06:58,032 --> 00:06:59,872
+We can add up finitely many numbers.
+
+26
+00:06:59,971 --> 00:07:01,192
+There's no problem with that.
+
+27
+00:07:01,591 --> 00:07:07,572
+But once we put a dot, dot, dot here, which means there are infinitely many numbers here
+
+28
+00:07:07,572 --> 00:07:08,471
+in this list.
+
+29
+00:07:09,132 --> 00:07:12,492
+Now, while adding infinitely many numbers, we have to be careful.
+
+30
+00:07:13,572 --> 00:07:16,752
+So the main question, the main question here is.
+
+31
+00:07:16,752 --> 00:07:22,752
+So these are these A1, A2, A3, A, and these are all real numbers.
+
+32
+00:07:22,932 --> 00:07:32,512
+The main question is, can we add them up and at the end get a real number or we get something else?
+
+33
+00:07:32,512 --> 00:07:37,032
+So obviously think of, think of this sequence.
+
+34
+00:07:37,032 --> 00:07:42,032
+1 plus 2 plus 3 plus 4 plus 5 plus 6 plus 7 plus 8 plus 9.
+
+35
+00:07:42,831 --> 00:07:44,831
+Think of the sum of that sequence.
+
+36
+00:07:45,292 --> 00:07:46,992
+It's obviously going to be infinity.
+
+37
+00:07:46,992 --> 00:07:49,072
+It's not going to be a number, right?
+
+38
+00:07:50,072 --> 00:07:57,552
+If you add infinitely many positive numbers, positive integers, you'll get infinity.
+
+39
+00:07:57,951 --> 00:07:59,052
+You won't get a number.
+
+40
+00:07:59,652 --> 00:08:04,872
+But there are some cases where we add infinitely many real numbers and at the end get a real number.
+
+41
+00:08:05,572 --> 00:08:06,912
+So how can that happen?
+
+42
+00:08:08,711 --> 00:08:09,792
+How can that happen?
+
+43
+00:08:10,292 --> 00:08:11,432
+Let's see this example.
+
+44
+00:08:11,432 --> 00:08:13,492
+Look at this.
+
+45
+00:08:13,992 --> 00:08:18,812
+1 plus 1 over 2 plus 1 over 4 plus 1 over 8 plus 1 over 16 plus.
+
+46
+00:08:23,432 --> 00:08:25,831
+Can you close your voice?
+
+47
+00:08:34,676 --> 00:08:35,475
+Ne arıyorsunuz?
+
+48
+00:08:36,076 --> 00:08:36,916
+Ne buluyorsunuz?
+
+49
+00:08:36,916 --> 00:08:37,676
+Ama ben buldum.
+
+50
+00:08:37,676 --> 00:08:38,975
+Mute him.
+
+51
+00:08:50,388 --> 00:08:51,528
+Ok, let's continue.
+
+52
+00:08:57,844 --> 00:09:02,484
+Bu, think of this infinite series, 1 plus, 1 over 2 plus, 1 over 4 plus, 1 over 8.
+
+53
+00:09:02,804 --> 00:09:04,304
+There are infinitely many numbers here.
+
+54
+00:09:04,844 --> 00:09:08,844
+So, at the next step, we will get 1 over 32, 1 over 64.
+
+55
+00:09:09,364 --> 00:09:16,504
+The next number we add is going to be half of what we have added in the last step.
+
+56
+00:09:17,804 --> 00:09:25,644
+So, we can understand what it behaves like if you look at a picture like this.
+
+57
+00:09:31,731 --> 00:09:38,932
+Let's say this is 0, here is 1, here is 2, 3 and so on.
+
+58
+00:09:40,932 --> 00:09:42,932
+At the beginning we have nothing.
+
+59
+00:09:42,932 --> 00:09:44,932
+We start from here.
+
+60
+00:09:44,932 --> 00:09:46,932
+Now I'm adding 1.
+
+61
+00:09:49,932 --> 00:09:55,731
+If I add 1, I get to this point, right?
+
+62
+00:09:55,731 --> 00:09:56,932
+That's 1.
+
+63
+00:09:56,932 --> 00:09:59,932
+Now I'm going to add 1 over 2 to that.
+
+64
+00:09:59,932 --> 00:10:04,131
+So 1 plus 1 over 2, that's going to be here.
+
+65
+00:10:09,011 --> 00:10:13,131
+1 plus 1 over 2 is going to be this number over here, 3 over 2.
+
+66
+00:10:14,851 --> 00:10:18,891
+Then we will add 1 over 4 to that. What is 1 over 4?
+
+67
+00:10:19,211 --> 00:10:27,031
+So 2 minus this, this is 1 over 2, right? 1 over 4 is exactly half of this.
+
+68
+00:10:28,171 --> 00:10:29,071
+That's 1 over 4.
+
+69
+00:10:31,431 --> 00:10:32,411
+1 over 4.
+
+70
+00:10:33,571 --> 00:10:36,431
+So then we add 1 over 4, we get 7 over 4.
+
+71
+00:10:36,431 --> 00:10:39,191
+Now in the next step.
+
+72
+00:10:48,436 --> 00:10:48,916
+Okay.
+
+73
+00:10:50,076 --> 00:10:52,396
+In the next step, we will add 1 over 8.
+
+74
+00:10:53,336 --> 00:10:56,796
+Note that here, this distance is 1 over 4.
+
+75
+00:10:56,995 --> 00:10:58,576
+So 1 over 8 is half of this.
+
+76
+00:10:59,716 --> 00:11:01,336
+If I add half of this,
+
+77
+00:11:03,855 --> 00:11:05,836
+I'll get 15 over 8 here.
+
+78
+00:11:07,016 --> 00:11:09,076
+We added 1 over 8 to this.
+
+79
+00:11:11,776 --> 00:11:15,056
+Then, in the next step, we will add 1 over 16.
+
+80
+00:11:15,716 --> 00:11:17,136
+So note that this is 1 over 8.
+
+81
+00:11:17,136 --> 00:11:18,975
+So 1 over 16 is half of this.
+
+82
+00:11:20,076 --> 00:11:21,336
+Exactly half of this.
+
+83
+00:11:22,656 --> 00:11:24,436
+That's going to be 1 over 16.
+
+84
+00:11:26,156 --> 00:11:27,136
+And so on.
+
+85
+00:11:28,156 --> 00:11:30,396
+So that's going to be 31 over 16.
+
+86
+00:11:31,636 --> 00:11:32,556
+So these numbers,
+
+87
+00:11:32,936 --> 00:11:34,936
+if we keep adding, we will get 1,
+
+88
+00:11:35,696 --> 00:11:38,516
+3 over 2, 7 over 4, 15 over 8,
+
+89
+00:11:38,975 --> 00:11:40,596
+31 over 16, and so on.
+
+90
+00:11:41,016 --> 00:11:44,656
+Then, exactly half of whatever there is left to 2.
+
+91
+00:11:44,656 --> 00:11:46,456
+Exactly half of whatever is left to 2.
+
+92
+00:11:46,456 --> 00:11:47,115
+And so on.
+
+93
+00:11:47,696 --> 00:11:49,196
+And as we see,
+
+94
+00:11:49,615 --> 00:11:52,176
+if we keep adding these numbers,
+
+95
+00:11:52,656 --> 00:11:54,735
+we will get closer and closer to 2.
+
+96
+00:11:54,875 --> 00:11:56,456
+But we will never exceed 2.
+
+97
+00:11:56,796 --> 00:11:56,996
+Right?
+
+98
+00:11:57,336 --> 00:11:59,355
+Because at each step,
+
+99
+00:12:00,115 --> 00:12:00,456
+wherever,
+
+100
+00:12:01,456 --> 00:12:03,076
+at whichever point we are,
+
+101
+00:12:03,716 --> 00:12:04,636
+at the next step,
+
+102
+00:12:04,636 --> 00:12:06,696
+we add half of whatever is left,
+
+103
+00:12:06,756 --> 00:12:07,756
+whatever is left to 2.
+
+104
+00:12:08,896 --> 00:12:10,475
+So we are always behind 2,
+
+105
+00:12:10,596 --> 00:12:12,436
+but we get closer and closer to 2.
+
+106
+00:12:13,056 --> 00:12:13,756
+So we will,
+
+107
+00:12:15,336 --> 00:12:17,256
+we can intuitively think that
+
+108
+00:12:17,256 --> 00:12:18,475
+the sum of this series
+
+109
+00:12:18,475 --> 00:12:20,235
+converges,
+
+110
+00:12:20,796 --> 00:12:23,276
+which means it gets closer and closer to 2.
+
+111
+00:12:23,276 --> 00:12:24,276
+and then we will see that
+
+112
+00:12:24,276 --> 00:12:36,016
+we will see that
+
+113
+00:12:29,748 --> 00:12:31,818
+Daha daha
+
+114
+00:12:37,203 --> 00:12:38,383
+Tamam, [öğrenci], no problem.
+
+115
+00:12:46,004 --> 00:12:55,004
+So, basically, technically, how do we define the sum of this series? So, we define it like this. S1. S1 is...
+
+116
+00:12:57,940 --> 00:12:58,740
+S1 is 1.
+
+117
+00:13:00,640 --> 00:13:04,060
+S2 is the sum of the first two terms.
+
+118
+00:13:04,800 --> 00:13:05,620
+S3 over 2.
+
+119
+00:13:06,400 --> 00:13:08,680
+S3 is the sum of the first three terms.
+
+120
+00:13:09,560 --> 00:13:10,480
+That's 7 over 4.
+
+121
+00:13:10,580 --> 00:13:12,380
+Then the sum of the first four terms.
+
+122
+00:13:13,760 --> 00:13:14,260
+And so on.
+
+123
+00:13:15,700 --> 00:13:18,640
+And if you look at these numbers, so what are these numbers?
+
+124
+00:13:19,200 --> 00:13:21,680
+So 1 is 2 minus 1, right?
+
+125
+00:13:28,724 --> 00:13:34,484
+So here, this one is 2-1.
+
+126
+00:13:34,964 --> 00:13:36,884
+Then the next one is S1 is 1.
+
+127
+00:13:37,524 --> 00:13:41,124
+S2 is 3 over 2, which is 2-1 health.
+
+128
+00:13:41,604 --> 00:13:43,684
+So what is left to 2? 1 health is left.
+
+129
+00:13:44,244 --> 00:13:47,764
+S3 is the sum of the first three terms, then 7 over 4,
+
+130
+00:13:48,403 --> 00:13:50,564
+which is the same as 2-1 over 4.
+
+131
+00:13:51,204 --> 00:13:53,684
+Then S4 is 15 over 8,
+
+132
+00:13:55,204 --> 00:13:57,764
+which is the same as 2-1 over 8 and so on.
+
+133
+00:13:57,764 --> 00:13:59,844
+Now, in general, S n.
+
+134
+00:14:00,403 --> 00:14:01,364
+What is S n?
+
+135
+00:14:01,364 --> 00:14:03,844
+S n is the sum of the first n terms.
+
+136
+00:14:03,844 --> 00:14:08,004
+So basically, S n is a1 plus a2 plus a n.
+
+137
+00:14:08,644 --> 00:14:12,564
+Sum of the first n terms is going to be S n,
+
+138
+00:14:12,564 --> 00:14:17,124
+which is going to be 2-1 over 2 to the power n minus 1.
+
+139
+00:14:17,124 --> 00:14:21,044
+As we see, this 2-1, 2-1 health, 2-1 over 4,
+
+140
+00:14:21,044 --> 00:14:22,804
+2-1 over 8 and so on.
+
+141
+00:14:22,804 --> 00:14:25,764
+Goes like 2-1 over 2 to the power something.
+
+142
+00:14:25,764 --> 00:14:29,044
+And now, let me look at this.
+
+143
+00:14:29,044 --> 00:14:33,844
+We get a sequence of numbers.
+
+144
+00:14:33,844 --> 00:14:34,884
+S n.
+
+145
+00:14:34,884 --> 00:14:37,764
+1, 3 over 2, 7 over 4, these numbers.
+
+146
+00:14:38,324 --> 00:14:38,964
+These dots.
+
+147
+00:14:38,964 --> 00:14:41,444
+And what is the limit of that?
+
+148
+00:14:41,444 --> 00:14:50,084
+Limit as n approaches infinity of S n is the limit as n approaches infinity of this.
+
+149
+00:14:50,084 --> 00:14:53,684
+2 minus 1 over 2 to the power n minus 1.
+
+150
+00:14:53,684 --> 00:14:56,004
+And which is equal to 2, not surprisingly.
+
+151
+00:14:56,004 --> 00:15:04,804
+Because this, this amount over here, which is the difference between 2 and the last dot over there,
+
+152
+00:15:06,084 --> 00:15:09,204
+is going to get smaller, smaller, smaller and approach 0.
+
+153
+00:15:09,204 --> 00:15:10,644
+This part will approach 0.
+
+154
+00:15:10,644 --> 00:15:13,124
+So the limit of this sequence is going to be 2.
+
+155
+00:15:13,124 --> 00:15:20,324
+So we define the sum of the series as the limit of the sequence of partial sums.
+
+156
+00:15:20,324 --> 00:15:25,604
+So we can see the difference between the two and the two and the two.
+
+157
+00:15:25,604 --> 00:15:37,604
+So we can see the difference between the two and the two.
+
+158
+00:15:28,403 --> 00:15:34,984
+So, here is the definition.
+
+159
+00:15:37,144 --> 00:15:44,443
+So, given a sequence of numbers a n, an expression of this form a1 plus a2 plus dot dot dot,
+
+160
+00:15:44,443 --> 00:15:49,043
+the sum of all terms of the sequence is called an infinite series.
+
+161
+00:15:49,984 --> 00:15:52,403
+The number a n is called the nth term of the series.
+
+162
+00:15:52,403 --> 00:15:58,384
+And this sequence, S n, we define another, we define a sequence, not the difference.
+
+163
+00:15:59,144 --> 00:16:03,364
+This sum a n, this is a series, S n is a sequence.
+
+164
+00:16:04,264 --> 00:16:05,764
+How do we define S n?
+
+165
+00:16:05,963 --> 00:16:11,484
+S1 is a1, S2 is a1 plus a2, S3 is a1 plus a2 plus a3, and so on.
+
+166
+00:16:11,543 --> 00:16:14,163
+In general, S n is the sum of the first n terms.
+
+167
+00:16:15,183 --> 00:16:16,903
+Sum of these, k equals 1 to n, a k.
+
+168
+00:16:17,663 --> 00:16:21,344
+And this is called the sequence of partial sums of the series.
+
+169
+00:16:22,403 --> 00:16:25,384
+And the number S n is called the nth partial sum.
+
+170
+00:16:26,744 --> 00:16:30,364
+So, of course, S n is the sum of the n terms, right?
+
+171
+00:16:30,423 --> 00:16:31,124
+First n terms.
+
+172
+00:16:31,344 --> 00:16:35,303
+As n increases, as n increases, we add more numbers.
+
+173
+00:16:36,144 --> 00:16:40,563
+We make n large, large, large, large, large, and we let n approach infinity.
+
+174
+00:16:41,104 --> 00:16:47,644
+As n approaches infinity, the limit of this S n is going to give us the sum of this infinite series over here.
+
+175
+00:16:47,644 --> 00:16:50,823
+And if it converges, of course.
+
+176
+00:16:51,403 --> 00:16:55,124
+If it does not converge, series does not converge either.
+
+177
+00:16:55,403 --> 00:17:03,663
+So, if the sequence of partial sums converges to a limit L, as in the example over here, that S n converges to a number two.
+
+178
+00:17:03,663 --> 00:17:08,263
+We say that the series converges, and its sum is L.
+
+179
+00:17:08,703 --> 00:17:12,483
+So, here in this example, we say that the series over here.
+
+180
+00:17:12,483 --> 00:17:44,023
+Uh...
+
+181
+00:17:19,412 --> 00:17:20,592
+So, let me write it.
+
+182
+00:17:22,352 --> 00:17:23,211
+So, this series,
+
+183
+00:17:25,832 --> 00:17:28,092
+He say that, this series,
+
+184
+00:17:30,451 --> 00:17:31,572
+Which series? This.
+
+185
+00:17:31,912 --> 00:17:38,412
+Sum n equals 1 to infinity, 1 over 2 to the power n minus 1.
+
+186
+00:17:40,072 --> 00:17:47,652
+Which is equal to 1 plus 1 over 2 plus 1 over 4 plus 1 over 8 plus dot dot dot.
+
+187
+00:17:47,652 --> 00:17:52,771
+Converges,
+
+188
+00:17:52,991 --> 00:17:54,132
+And its sum,
+
+189
+00:17:54,392 --> 00:17:56,751
+Its sum is 2.
+
+190
+00:17:57,832 --> 00:18:00,052
+Sum of the series is equal to 2.
+
+191
+00:18:09,971 --> 00:18:32,172
+Bu, bu
+
+192
+00:18:37,907 --> 00:18:40,288
+We usually use these notations.
+
+193
+00:18:41,007 --> 00:18:44,127
+N equals 1 to infinity an, or k equals 1 to infinity ak.
+
+194
+00:18:44,767 --> 00:18:49,747
+Here, n or k, whatever index you use, it's just a dummy variable.
+
+195
+00:18:50,067 --> 00:18:52,947
+So this one and this one have the same meaning, basically.
+
+196
+00:18:53,447 --> 00:19:00,667
+They both mean this, a1 plus, a2 plus, a3 plus, dot, dot, dot, like that, that infinite series.
+
+197
+00:19:00,667 --> 00:19:14,987
+Or sometimes we omit, if you are not interested in the exact value of the sum, but if you are just interested in whether it converges or not, then we omit the boundaries.
+
+198
+00:19:14,987 --> 00:19:17,227
+We just write it like some an.
+
+199
+00:19:24,211 --> 00:19:24,672
+Oh, okay.
+
+200
+00:19:32,948 --> 00:19:36,108
+An important type of series is geometric series.
+
+201
+00:19:36,988 --> 00:19:39,128
+What are geometric series?
+
+202
+00:19:39,508 --> 00:19:41,468
+Geometric series are series of this form.
+
+203
+00:19:43,988 --> 00:19:47,968
+A plus, AR plus, AR square plus, dot, dot, dot.
+
+204
+00:19:48,067 --> 00:19:50,088
+So it starts, its first term is some number.
+
+205
+00:19:50,928 --> 00:19:54,728
+And each term is R times the previous one.
+
+206
+00:19:55,548 --> 00:19:58,088
+So in other words, the terms of the series
+
+207
+00:19:58,088 --> 00:20:02,508
+increase or decrease geometrically.
+
+208
+00:20:02,508 --> 00:20:04,968
+Geometrically means this,
+
+209
+00:20:05,268 --> 00:20:08,328
+the ratio of the consecutive terms is a constant, R.
+
+210
+00:20:09,868 --> 00:20:12,208
+Each term is just R times the previous one.
+
+211
+00:20:13,428 --> 00:20:16,508
+Here, A and R are fixed real numbers and A is not zero.
+
+212
+00:20:16,588 --> 00:20:17,768
+Of course, if A is zero,
+
+213
+00:20:18,208 --> 00:20:20,048
+if A is zero, there's nothing interesting here.
+
+214
+00:20:20,128 --> 00:20:23,268
+If A is zero, we get zero plus zero plus zero plus zero plus zero,
+
+215
+00:20:23,328 --> 00:20:24,088
+which is equal to zero.
+
+216
+00:20:24,848 --> 00:20:26,028
+There's nothing special there.
+
+217
+00:20:26,568 --> 00:20:29,468
+If A is different than zero and R is any number,
+
+218
+00:20:29,468 --> 00:20:30,668
+and a real number,
+
+219
+00:20:31,448 --> 00:20:34,428
+then this is called a geometric series.
+
+220
+00:20:35,848 --> 00:20:37,368
+So we can write it like this.
+
+221
+00:20:37,508 --> 00:20:39,048
+As N equals zero to infinity,
+
+222
+00:20:39,268 --> 00:20:41,168
+A times R to the power N.
+
+223
+00:20:41,728 --> 00:20:42,688
+So what does this mean?
+
+224
+00:20:43,348 --> 00:20:45,108
+When N is zero, this is just A.
+
+225
+00:20:45,228 --> 00:20:46,728
+When N is one, this is AR.
+
+226
+00:20:47,008 --> 00:20:48,608
+When N is two, it's AR squared.
+
+227
+00:20:48,848 --> 00:20:50,528
+When N is three, it's AR cubed and so on.
+
+228
+00:20:50,528 --> 00:20:51,548
+It goes like that.
+
+229
+00:20:51,668 --> 00:20:55,948
+A plus AR plus AR squared plus AR cubed plus AR to the power four and so on.
+
+230
+00:20:56,888 --> 00:20:59,628
+So the series we have already seen is a geometric series,
+
+231
+00:21:00,288 --> 00:21:03,508
+which sums to two, for example,
+
+232
+00:21:04,228 --> 00:21:05,628
+whose A value is one.
+
+233
+00:21:05,928 --> 00:21:10,168
+A is the first term and whose ratio R is one over two.
+
+234
+00:21:10,268 --> 00:21:12,268
+Each term is one over two times the previous one.
+
+235
+00:21:12,268 --> 00:21:14,488
+or the ratio may be negative.
+
+236
+00:21:15,288 --> 00:21:16,448
+As in this example,
+
+237
+00:21:16,688 --> 00:21:22,108
+one minus one over three plus one over nine minus one over 27 plus one over 81 and so on.
+
+238
+00:21:22,568 --> 00:21:25,028
+So here the first term A is equal to one again.
+
+239
+00:21:25,728 --> 00:21:29,648
+And the common ratio is minus one over three.
+
+240
+00:21:30,148 --> 00:21:32,488
+So each term is minus one over three times.
+
+241
+00:21:34,168 --> 00:21:37,008
+It can be understood from this general term as well.
+
+242
+00:21:45,811 --> 00:21:46,791
+I lost it again.
+
+243
+00:22:19,412 --> 00:22:49,412
+Şimdi, şimdi, bu birçok birç
+
+244
+00:22:49,412 --> 00:23:19,412
+birçok birç
+
+245
+00:23:19,412 --> 00:23:35,532
+a's right where here a is a number different than zero so if a is positive number if a is a positive number in the case when r is equal to one if a is a positive number we will get infinity if a is a negative number we will get minus infinity you can see that by looking at the partial sum
+
+246
+00:23:36,812 --> 00:23:42,532
+here what is sn and partial sum going to be a plus a plus a plus a plus a plus a plus
+
+247
+00:23:42,532 --> 00:24:05,751
+sum of n a's which is going to be n times a and depending on whether a is positive or negative as n approaches infinity the limit of this is going to be either positive infinity or negative infinity and so it's going to diverge it's going to diverge the series diverges when r is equal to one if r is minus one
+
+248
+00:24:11,251 --> 00:24:18,251
+If r is minus 1, we have to be careful with that. Let's understand this when r is minus 1.
+
+249
+00:24:20,991 --> 00:24:24,571
+When r is minus 1, what does this geometric series look like?
+
+250
+00:24:43,124 --> 00:24:44,764
+Ok, if r is minus 1,
+
+251
+00:24:48,819 --> 00:24:51,379
+A' minus A'
+
+252
+00:24:52,720 --> 00:24:56,799
+So, then our square is plus 1, so we get plus A.
+
+253
+00:24:56,859 --> 00:25:03,439
+Then R' kubin minus 1, we get minus A.
+
+254
+00:25:03,439 --> 00:25:05,939
+Plus A, minus A, and so on.
+
+255
+00:25:07,399 --> 00:25:15,019
+So, when we look at this series, at first, at first you may think, well, isn't it equal to 0?
+
+256
+00:25:15,019 --> 00:25:20,639
+Just A minus A, A minus A, A minus A, A minus A, they all cancel out, right?
+
+257
+00:25:22,379 --> 00:25:25,279
+They all cancel out, 0, 0, 0, 0, we should get 0.
+
+258
+00:25:29,779 --> 00:25:34,099
+I can think of it like that. A minus A plus A minus A.
+
+259
+00:25:36,299 --> 00:25:38,740
+Minus A plus A minus A.
+
+260
+00:25:41,180 --> 00:25:42,559
+I will write it again.
+
+261
+00:25:50,612 --> 00:26:20,612
+Bu bir bir örneğe bir örneğe bir örneğe bir örneğe bir örneğe bir örneğe bir örneğe bir örneğe bir örneğe bir örneğe bir örneğe bir örneğe bir örneğe bir örneğe bir örneğe bir örneğe bir örneğe bir örneğe bir örneğe bir örneğe bir örneğe bir örneğe bir örneğe bir örneğe bir örneğe bir örneğe bir örneğe bir örneğe bir örneğe bir örneğe bir örneğe bir örneğe bir örneğe bir örneğe bir örneğe bir örneğe bir örneğe bir örneğe bir örneğe bir örneğe bir örneğe bir örneğe bir örneğe bir örneğe bir
+
+262
+00:26:20,612 --> 00:26:50,612
+örneğe bir örneğe bir örneğe bir örneğe bir örneğe bir örneğe bir örneğe bir örneğe bir örneğe bir örneğe bir örneğe bir örneğe bir örneğe bir örneğe bir örneğe bir örneğe bir örneğe bir örneğe bir örneğe bir örneğe bir örneğe bir örneğe bir örneğe bir örneğe bir örneğe bir örneğe bir örneğe bir örneğe bir örneğe bir örneğe bir örneğe bir örneğe bir örneğe bir örneğe bir örneğe bir örneğe bir örneğe bir örneğe bir örneğe bir örneğe bir örneğe bir örneğe bir örneğe bir örneğe bir ör
+
+263
+00:26:50,612 --> 00:26:52,971
+which one is correct?
+
+264
+00:26:54,112 --> 00:26:55,272
+they are both wrong
+
+265
+00:26:55,272 --> 00:26:57,812
+but there this is wrong
+
+266
+00:26:57,812 --> 00:26:58,892
+this is wrong
+
+267
+00:26:58,892 --> 00:27:02,032
+so we cannot
+
+268
+00:27:02,032 --> 00:27:04,592
+we cannot do this cancellation like this
+
+269
+00:27:04,592 --> 00:27:06,432
+if we have infinitely many numbers
+
+270
+00:27:06,432 --> 00:27:07,592
+as i say
+
+271
+00:27:07,592 --> 00:27:09,432
+if we have these dot dot dots
+
+272
+00:27:09,432 --> 00:27:11,592
+if we have infinitely many numbers we have to be careful
+
+273
+00:27:11,592 --> 00:27:13,352
+so what is the correct?
+
+274
+00:27:13,872 --> 00:27:14,512
+what is correct?
+
+275
+00:27:14,872 --> 00:27:15,672
+they are both wrong
+
+276
+00:27:15,672 --> 00:27:18,731
+so how are we going to find the sum?
+
+277
+00:27:18,731 --> 00:27:20,731
+we are going to look at the definition
+
+278
+00:27:20,731 --> 00:27:22,252
+what do the definition say?
+
+279
+00:27:22,252 --> 00:27:24,252
+look at the sequence of partial sums
+
+280
+00:27:25,052 --> 00:27:26,252
+and look at the limit of it
+
+281
+00:27:27,451 --> 00:27:29,372
+so i'm going to arrange this now
+
+282
+00:27:29,372 --> 00:27:30,412
+these are both wrongs
+
+283
+00:27:32,812 --> 00:27:34,572
+look at the sequence of partial sums
+
+284
+00:27:35,772 --> 00:27:37,052
+so what is s1 here?
+
+285
+00:27:37,692 --> 00:27:37,932
+a
+
+286
+00:27:39,692 --> 00:27:41,772
+s2 sum of the first two terms
+
+287
+00:27:42,812 --> 00:27:45,052
+s3 sum of the first three terms
+
+288
+00:27:45,052 --> 00:27:49,052
+s4 sum of the first four terms
+
+289
+00:27:49,932 --> 00:27:50,492
+and so
+
+290
+00:27:50,492 --> 00:27:53,692
+s5 sum of the first five terms
+
+291
+00:27:55,932 --> 00:27:58,572
+s6 sum of the first six terms
+
+292
+00:28:00,572 --> 00:28:01,052
+and so
+
+293
+00:28:02,731 --> 00:28:03,372
+what do we get?
+
+294
+00:28:03,372 --> 00:28:04,731
+s1 is a
+
+295
+00:28:05,772 --> 00:28:06,652
+s2 is 0
+
+296
+00:28:06,652 --> 00:28:08,092
+s3 is a
+
+297
+00:28:08,092 --> 00:28:09,772
+s4 is 0
+
+298
+00:28:09,772 --> 00:28:11,292
+s5 is a
+
+299
+00:28:11,292 --> 00:28:12,731
+s6 is 0
+
+300
+00:28:13,692 --> 00:28:14,492
+so sn
+
+301
+00:28:15,852 --> 00:28:16,492
+sn
+
+302
+00:28:17,612 --> 00:28:19,052
+sn is this sequence
+
+303
+00:28:20,332 --> 00:28:20,892
+sn
+
+304
+00:28:21,932 --> 00:28:22,812
+is this sequence
+
+305
+00:28:23,532 --> 00:28:27,772
+a 0
+
+306
+00:28:30,332 --> 00:28:32,492
+it oscillates between a and 0
+
+307
+00:28:32,492 --> 00:28:34,251
+where a is different than 0
+
+308
+00:28:34,251 --> 00:28:35,612
+a is a non-zero number
+
+309
+00:28:36,172 --> 00:28:38,332
+the sn oscillates between a and 0
+
+310
+00:28:38,332 --> 00:28:40,251
+and it does not converge anywhere
+
+311
+00:28:40,251 --> 00:28:41,451
+it's a divergent series
+
+312
+00:28:41,451 --> 00:28:42,812
+so sn diverges
+
+313
+00:28:44,972 --> 00:28:46,892
+it does not converge to any specific number
+
+314
+00:28:47,692 --> 00:28:48,251
+therefore
+
+315
+00:28:51,292 --> 00:28:53,852
+the series
+
+316
+00:28:54,572 --> 00:28:58,251
+a minus a plus a minus a plus a minus a plus a minus a
+
+317
+00:28:58,972 --> 00:29:01,211
+that also diverges
+
+318
+00:29:01,211 --> 00:29:04,572
+so this series diverges
+
+319
+00:29:09,140 --> 00:29:12,820
+Tamam, şimdi r'ı 1'e serisinin birleştiriyor.
+
+320
+00:29:12,820 --> 00:29:15,700
+R'ı 1'e serisinin birleştiriyor.
+
+321
+00:29:17,700 --> 00:29:19,060
+Şimdi geri dönelim.
+
+322
+00:29:33,683 --> 00:29:35,144
+5 diverges, which one?
+
+323
+00:29:42,836 --> 00:29:44,536
+This, set it over here.
+
+324
+00:29:48,500 --> 00:29:50,140
+Ok, that's...
+
+325
+00:29:53,395 --> 00:29:55,316
+This sequence diverges, is that okay?
+
+326
+00:29:56,755 --> 00:30:00,355
+This sequence, A0, A0, A0, A0.
+
+327
+00:30:01,155 --> 00:30:04,036
+It does not converge, it oscillates between A and 0, right?
+
+328
+00:30:04,435 --> 00:30:05,635
+We have seen that yesterday.
+
+329
+00:30:06,675 --> 00:30:08,675
+We have seen such a sequence yesterday.
+
+330
+00:30:10,435 --> 00:30:12,036
+It oscillates between two numbers.
+
+331
+00:30:12,036 --> 00:30:14,036
+It does not converge to a specific number.
+
+332
+00:30:14,675 --> 00:30:17,715
+This diverges, right?
+
+333
+00:30:17,715 --> 00:30:20,036
+This is the sequence of partial sums.
+
+334
+00:30:20,036 --> 00:30:22,755
+S1, S2, S3, S4, S5, S6.
+
+335
+00:30:22,755 --> 00:30:23,635
+It diverges.
+
+336
+00:30:25,076 --> 00:30:27,395
+And the rest is just the definition.
+
+337
+00:30:27,395 --> 00:30:28,115
+Let's go back.
+
+338
+00:30:28,675 --> 00:30:29,875
+Here's how we defined it.
+
+339
+00:30:31,076 --> 00:30:34,675
+Given a sequence of numbers, this is called an infinite series.
+
+340
+00:30:35,635 --> 00:30:38,115
+The sequence, Sn, is defined like this.
+
+341
+00:30:38,115 --> 00:30:40,915
+S1 is A1, S2 is the sum of the first two terms.
+
+342
+00:30:40,915 --> 00:30:43,395
+And in general, Sn is the sum of the first n terms.
+
+343
+00:30:44,675 --> 00:30:46,036
+And what did we say?
+
+344
+00:30:46,036 --> 00:30:47,076
+This is the definition.
+
+345
+00:30:47,076 --> 00:30:52,675
+If sequence of partial sums, if this sequence, Sn, converges to elements,
+
+346
+00:30:53,316 --> 00:30:55,955
+we say that the series converges and its sum is L.
+
+347
+00:30:57,475 --> 00:31:04,915
+If the sequence of partial sums, Sn, does not converge, we say that the series diverges.
+
+348
+00:31:05,635 --> 00:31:08,596
+So that's the definition of the sum of the series.
+
+349
+00:31:08,596 --> 00:31:10,915
+Now, the sequence of Sn diverges.
+
+350
+00:31:11,635 --> 00:31:13,715
+Therefore, we say that the series diverges.
+
+351
+00:31:14,675 --> 00:31:14,995
+Okay?
+
+352
+00:31:14,995 --> 00:31:17,556
+Okay.
+
+353
+00:31:19,380 --> 00:31:37,200
+S n is infinity and that make it, no, S n is not infinity. It does not diverge to infinity. It diverges because it does not converge to a specific number. It oscillates between a and zero. A zero, a zero, a zero, a zero. It never converges to a specific number. It just oscillates.
+
+354
+00:31:42,259 --> 00:31:49,379
+Evet, şimdi, if r is 1, the series diverges. If r is minus 1, the series diverges again.
+
+355
+00:31:49,379 --> 00:31:54,740
+So now let's say r is neither 1 nor minus 1. R, the absolute value of r is different than 1.
+
+356
+00:31:56,339 --> 00:31:56,980
+Look at this.
+
+357
+00:31:59,379 --> 00:32:03,700
+What is that? N is the sum of the first n terms.
+
+358
+00:32:04,819 --> 00:32:09,779
+This is the first term. Second term is a r. Third term is a r squared.
+
+359
+00:32:09,779 --> 00:32:16,019
+And in general, nth term is a r to the power n minus 1. This is a sum of the first n terms.
+
+360
+00:32:16,019 --> 00:32:20,259
+Now multiply this by r. If you multiply this by r, what do we get?
+
+361
+00:32:20,259 --> 00:32:27,059
+We get this r times sn is, so this is just a times r plus a times r squared plus and so on.
+
+362
+00:32:27,940 --> 00:32:31,460
+And this last term is going to become a times r to the power n.
+
+363
+00:32:31,460 --> 00:32:36,819
+So this expression over here is r times sn. Now, when we subtract these two,
+
+364
+00:32:36,819 --> 00:32:44,500
+subtract these two, we get sn minus r times sn is equal to, here ars cancel,
+
+365
+00:32:44,500 --> 00:32:50,019
+ar squares cancel, these a r to the power n minus 1s all cancel. Only an a is left here.
+
+366
+00:32:50,900 --> 00:32:58,500
+And minus a r to the power n is left here. Only the first term here and the last term here are left.
+
+367
+00:32:58,500 --> 00:33:04,500
+everything else is canceled out. So we get sn minus r sn is equal to a minus a r to the power n.
+
+368
+00:33:05,220 --> 00:33:14,099
+And now, when we factor this says, at some times one minus r is equal to here. This is a times one
+
+369
+00:33:14,099 --> 00:33:21,700
+minus r to the power n. So when we divide now, r is not equal to one, r is not equal to one. We assume
+
+370
+00:33:21,700 --> 00:33:27,380
+that r is neither one nor minus one. So this is not zero. One minus r is not zero. If we divide both
+
+371
+00:33:27,380 --> 00:33:33,940
+sides by one minus r, we get this. That's n is equal to a times one minus r to power n over one minus r.
+
+372
+00:33:34,980 --> 00:33:37,940
+Now, what are we interested in? When does this converge?
+
+373
+00:33:40,660 --> 00:33:45,539
+Now, let's look at it. Do we consider oscillation between two numbers as a divergence, but it does not
+
+374
+00:33:45,539 --> 00:33:53,700
+diverge to a specific number. Okay, divergence means it does not converge to a specific number means
+
+375
+00:33:53,700 --> 00:34:02,980
+divergence. So the term diverging to a specific number makes no sense. Okay. Divergence already
+
+376
+00:34:02,980 --> 00:34:08,340
+means itself that the the sequence does not converge to a specific number. That's the definition of divergence.
+
+377
+00:34:10,579 --> 00:34:10,900
+Okay.
+
+378
+00:34:17,268 --> 00:34:46,708
+There's a special type of divergence, which is divergence to infinity or divergence to minus infinity. Infinity or minus infinity is not a number. Infinity is infinity. Infinity means larger than anything. Minus infinity, this is smaller than any. If the sequence can be larger than any positive number, it means that it diverges infinity. Okay? Okay, let's go back to this. So Sn is equal to this.
+
+379
+00:34:47,268 --> 00:35:13,108
+A times 1 minus R to the power n over 1 minus R. Now, the only term here, the only term that depends on n is this, R to the power n. What is R to the power n? If R is R to the power n. Let's go back. We have seen that yesterday.
+
+380
+00:35:17,139 --> 00:35:18,500
+Let me go back here.
+
+381
+00:35:23,795 --> 00:35:33,435
+Evet, x to the power n. If x is between minus 1 and 1, this x to the power n converges to 0.
+
+382
+00:35:34,435 --> 00:35:34,955
+Okay.
+
+383
+00:35:39,731 --> 00:35:40,192
+So,
+
+384
+00:35:45,556 --> 00:35:46,556
+Where am I?
+
+385
+00:35:49,775 --> 00:35:52,615
+Here, so the term over here, r to the power n.
+
+386
+00:35:54,056 --> 00:36:01,615
+If absolute value of r is less than 1, which means r is between minus 1 and 1, this term converges to 0,
+
+387
+00:36:02,436 --> 00:36:05,836
+which means as n approaches infinity, this part converges to 0.
+
+388
+00:36:06,235 --> 00:36:09,135
+So we just get a over 1 minus r.
+
+389
+00:36:09,675 --> 00:36:14,576
+So sn converges to a over 1 minus r in this case, if r is between minus 1 and 1.
+
+390
+00:36:14,576 --> 00:36:22,336
+On the other hand, if absolute value of r is bigger than 1, then absolute value of r to power n converges to infinity.
+
+391
+00:36:23,556 --> 00:36:29,695
+In this case, if r is positive, if r is bigger than 1, this converges to positive infinity.
+
+392
+00:36:29,695 --> 00:36:35,916
+If r is less than minus 1, it oscillates between positive and negative numbers.
+
+393
+00:36:36,056 --> 00:36:39,195
+Positive numbers diverge to infinity, negative numbers diverge to minus infinity.
+
+394
+00:36:39,356 --> 00:36:41,496
+So in both cases, it diverges.
+
+395
+00:36:41,496 --> 00:36:50,396
+So this sequence over here converges if and only if the absolute value of r is less than 1.
+
+396
+00:36:50,615 --> 00:36:57,115
+And in that case, this part converges to 0 and the whole sequence converges to this, a over 1 minus r.
+
+397
+00:36:57,175 --> 00:36:57,976
+So here is the summary.
+
+398
+00:36:57,976 --> 00:37:07,896
+As a summary, if absolute value of r is less than 1, which means if r is between minus 1 and 1,
+
+399
+00:37:08,336 --> 00:37:13,356
+this geometric series converges to this number, a over 1 minus r.
+
+400
+00:37:13,356 --> 00:37:17,135
+And we say this, we write it like this.
+
+401
+00:37:17,615 --> 00:37:20,755
+The sum of this geometric series is a over 1 minus r.
+
+402
+00:37:20,755 --> 00:37:43,755
+So here is the summary.
+
+403
+00:37:24,692 --> 00:37:34,052
+Eğer, on the other hand, absolute value of R is bigger than 1, which means R is bigger than 1 or R is less than 1, the series diverges.
+
+404
+00:37:36,052 --> 00:37:37,692
+And let's remember,
+
+405
+00:37:41,235 --> 00:37:45,275
+Remember our series?
+
+406
+00:37:55,476 --> 00:37:58,476
+Bu, bu, 1 plus 1 over 2 plus 1 over 2.
+
+407
+00:38:01,876 --> 00:38:31,876
+Evet, bu bir tane de bir tane de bir tane de bir tane de bir tane de bir tane de bir tane de bir tane de bir tane de bir tane de bir tane de bir tane de bir tane de bir tane de bir tane de bir tane de bir tane de bir tane de bir tane de bir tane de bir tane de bir tane de bir tane de bir tane de bir tane de bir tane de bir tane de bir tane de bir tane de bir tane de bir tane de bir tane de bir tane de bir tane de bir tane de bir tane de bir tane de bir tane de bir tane de bir tane de bir tane de bir tane de bir tane de bir tane de bir tane de bir tane de bir tane de bir tane de bir tane de bir tane de bir tane de bir tane de bir tane de bir tane de bir tane de bir tane de bir tane de bir tane de bir tane de bir tane de bir tane de bir tane de bir tane de bir tane de bir tane de bir tane de bir tane de bir tane de bir tane de bir tane de bir tane de bir tane de bir tane de bir
+
+408
+00:38:31,876 --> 00:38:54,406
+bir tane de bir tane de bir tane de bir tane de bir tane de bir tane de bir tane de bir tane de bir tane de bir tane de bir tane de bir tane de bir tane de bir tane de bir tane de bir tane de bir tane de bir tane de bir tane de bir tane de bir tane de bir tane de bir tane de bir tane de bir tane de bir tane de bir tane de bir tane de bir tane de bir tane de bir tane de bir tane de bir tane de bir tane de bir tane de bir tane de bir tane de bir tane de bir tane de bir tane de bir tane de bir tane de bir tane de bir tane de bir tane de bir tane de bir tane de bir tane de bir tane de bir tane de bir tane de bir tane de bir tane de bir tane de bir tane de bir tane de bir tane de bir tane de bir tane de bir tane de bir tane de bir tane de bir tane de bir tane de bir tane de bir tane de bir tane de bir tane de bir tane de bir tane de bir tane de bir tane de bir tane de bir tane
+
+409
+00:38:59,764 --> 00:39:05,304
+So here are other examples. So for example, a geometric series with a equals 1 over 9 and r equals 1 over 3.
+
+410
+00:39:05,884 --> 00:39:10,324
+Here, 1 over 9 plus 1 over 27 plus 1 over 81 plus dot dot dot.
+
+411
+00:39:10,724 --> 00:39:16,983
+So the first term is 1 over 9, that's a value. And the common ratio is 1 over 3.
+
+412
+00:39:17,384 --> 00:39:24,284
+Each term is 1 over 3 times the previous. So its sum is equal to a over 1 minus r.
+
+413
+00:39:24,923 --> 00:39:27,963
+That's 1 over 9 over 2 over 3, which is equal to 1 over 6.
+
+414
+00:39:27,963 --> 00:39:30,044
+Here's another example.
+
+415
+00:39:31,244 --> 00:39:36,644
+As you see, we can start the indices from 0 or 1 or any other number.
+
+416
+00:39:36,724 --> 00:39:41,384
+We can start the index of an infinite series from whichever integer we like.
+
+417
+00:39:41,503 --> 00:39:45,903
+So n equals 0 to infinity minus 1 to power n 5 over 4 to power n.
+
+418
+00:39:46,344 --> 00:39:49,224
+So what is this? When n is 0, this is just 5.
+
+419
+00:39:49,704 --> 00:39:52,584
+When n is 1, we get minus 5 over 4.
+
+420
+00:39:53,403 --> 00:39:57,224
+When n is 2, we get 5 over 16 and so on.
+
+421
+00:39:57,224 --> 00:40:03,124
+So as you see, it's a geometric series whose first term is 5.
+
+422
+00:40:04,204 --> 00:40:06,204
+So a is equal to 5 here.
+
+423
+00:40:06,204 --> 00:40:07,104
+And its ratio is 5.
+
+424
+00:40:07,104 --> 00:40:09,104
+And its ratio is...
+
+425
+00:40:09,104 --> 00:40:21,184
+...
+
+426
+00:40:12,500 --> 00:40:14,780
+Its ratio is minus 1 over 4.
+
+427
+00:40:15,800 --> 00:40:20,820
+So, each term is minus 1 over 4 times the previous one.
+
+428
+00:40:21,639 --> 00:40:23,239
+R is equal to minus 1 over 4.
+
+429
+00:40:23,780 --> 00:40:34,079
+We get, its sum is, it converges to the sum, A over 1 minus R, 5 over 1 minus minus 1 over 4, which is equal to 5 over 5 over 4, that's 4.
+
+430
+00:40:35,960 --> 00:40:38,940
+Okay, I'm going to skip that question, that one too.
+
+431
+00:40:45,076 --> 00:40:49,235
+Evet, bu örneğin bir örneğin, bu örneğin bir örneğin bir örneğin bir örneğin.
+
+432
+00:40:49,235 --> 00:40:54,115
+Bu örneğin bir örneğin bir örneğin bir örneğin bir örneğin bir örneğin bir örneğin.
+
+433
+00:40:54,115 --> 00:41:06,186
+Bu örneğin bir örneğin bir örneğin bir örneğin bir örneğin bir örneğin bir örneğin bir örneğin bir örneğin bir örneğin bir örneğin bir örneğin bir örneğin bir örneğin bir örneğin bir örneğin bir örneğin bir örneğin bir örneğin bir örneğin bir örneğin bir örneğin bir örneğin bir örneğin bir örneğin bir örneğin bir örneğin bir örneğin bir örneğin bir örneğin bir örneğin bir örneğin bir örneğin bir örneğin bir örneğin bir örneğin bir örneğin bir örneğin bir örneğin bir örneğin bir örneğin bir örneğin bir örneğin bir örneğin bir örneğin bir örneğin bir örneğin bir örneğin bir örneğin bir örneğin bir örneğin bir örneğin bir örneğin bir örneğin bir örneğin bir örne
+
+434
+00:41:15,764 --> 00:41:16,144
+Ok.
+
+435
+00:41:43,603 --> 00:41:45,603
+Ok, şimdi n'ı kısma yukarı var.
+
+436
+00:41:50,612 --> 00:42:03,612
+Bu, bu, 1 over 1 times 2 plus 1 over 2 times 3 plus 1 over 3 times 4 plus 1 over 4 times 5 and so on.
+
+437
+00:42:15,188 --> 00:42:30,588
+n is the sum of the first term term, which can be written as this. n equals 1 to infinity, sorry. k equals 1 to n, 1 over k, k plus 1.
+
+438
+00:42:31,387 --> 00:42:36,688
+That's the sum of the first n terms. k equals 1 to n, 1 over k, k plus 1.
+
+439
+00:42:40,340 --> 00:42:44,940
+Bu, şimdi 1 over k k plus 1.
+
+440
+00:42:45,980 --> 00:42:49,140
+1 over k k plus 1
+
+441
+00:42:49,140 --> 00:42:53,720
+is the same as 1 over k minus 1 over k plus 1.
+
+442
+00:42:55,720 --> 00:42:58,240
+We can separate this fraction like this.
+
+443
+00:42:59,320 --> 00:43:00,160
+What is this difference?
+
+444
+00:43:00,600 --> 00:43:02,300
+This is k plus 1 minus k,
+
+445
+00:43:02,500 --> 00:43:05,140
+which is 1 over k times k plus 1, right?
+
+446
+00:43:05,500 --> 00:43:06,420
+This is equal to this.
+
+447
+00:43:06,420 --> 00:43:08,420
+1 over k minus 1 over k plus 1.
+
+448
+00:43:08,420 --> 00:43:09,940
+So if we put that here,
+
+449
+00:43:10,720 --> 00:43:12,980
+the sum as n is the same as sum
+
+450
+00:43:12,980 --> 00:43:16,480
+k equals 1 to n
+
+451
+00:43:16,480 --> 00:43:20,100
+1 over k minus 1 over k plus 1.
+
+452
+00:43:21,780 --> 00:43:22,880
+So what is this?
+
+453
+00:43:23,840 --> 00:43:25,039
+So when k is 1,
+
+454
+00:43:25,559 --> 00:43:27,539
+we get 1 minus 1 over 2.
+
+455
+00:43:28,440 --> 00:43:29,539
+When k is 2,
+
+456
+00:43:29,840 --> 00:43:31,960
+we get 1 over 2 minus 1 over 3.
+
+457
+00:43:32,740 --> 00:43:33,740
+When k is 3,
+
+458
+00:43:33,740 --> 00:43:36,100
+we get 1 over 3 minus 1 over 4.
+
+459
+00:43:36,100 --> 00:43:37,960
+Then,
+
+460
+00:43:38,260 --> 00:43:40,059
+and so on.
+
+461
+00:43:40,260 --> 00:43:41,120
+It goes like that.
+
+462
+00:43:41,340 --> 00:43:41,760
+Plus,
+
+463
+00:43:42,600 --> 00:43:43,079
+finally,
+
+464
+00:43:43,220 --> 00:43:44,519
+when k is equal to n,
+
+465
+00:43:44,820 --> 00:43:46,420
+the last term is going to be
+
+466
+00:43:46,420 --> 00:43:48,519
+1 over n minus 1 over n plus 1.
+
+467
+00:43:52,820 --> 00:44:22,820
+Bu nedenle bu senebili bu senebili bu senebili bu senebili bu senebili bu senebili bu senebili bu senebili bu senebili bu senebili bu senebili bu senebili bu senebili bu senebili bu senebili bu senebili bu senebili bu senebili bu senebili bu senebili bu senebili bu senebili bu senebili bu senebili bu senebili bu senebili bu senebili bu senebili bu senebili bu senebili bu senebili bu senebili bu senebili bu senebili bu senebili bu senebili bu senebili bu senebili bu senebili bu senebili bu senebili bu senebili bu senebili bu senebili
+
+468
+00:44:22,820 --> 00:44:33,640
+senebili bu senebili bu senebili bu senebili bu senebili bu senebili bu senebili bu senebili bu senebili bu senebili bu senebili bu senebili bu senebili bu senebili bu senebili bu senebili bu senebili bu senebili bu senebili bu senebili bu senebili bu senebili bu senebili bu senebili bu senebili bu senebili bu senebili bu senebili bu senebili bu senebili bu senebili bu senebili bu senebili bu senebili bu senebili bu senebili bu senebili bu senebili bu senebili bu senebili bu senebili bu senebili bu senebili bu senebili bu s
+
+469
+00:44:42,068 --> 00:44:55,648
+If Sn is this, then the sum of the series is the limit of this. Limit as n approaches infinity of Sn is what? Limit as n approaches infinity of 1 minus 1 over n plus 1.
+
+470
+00:44:56,428 --> 00:45:05,648
+Which is equal to, now as n approaches infinity, this part over here, 1 over n plus 1, that approach is 0. So the limit of this is 1.
+
+471
+00:45:05,648 --> 00:45:13,948
+So since the limit of Sn is 1, it means that the sequence of partial sums converges, which means that the series converges.
+
+472
+00:45:13,948 --> 00:45:17,848
+Therefore, the series converges.
+
+473
+00:45:17,848 --> 00:45:29,268
+Series converges and its sum is 1.
+
+474
+00:45:29,268 --> 00:45:34,468
+So basically sum of these numbers is equal to 1.
+
+475
+00:46:18,612 --> 00:46:21,771
+Okay, the end-term test for a divergent series.
+
+476
+00:46:34,260 --> 00:46:38,740
+Okay, let's give a break. Any questions before the break?
+
+477
+00:46:46,547 --> 00:46:49,867
+I'll give you a 20-minutes break. Any questions before the break?
+
+478
+00:47:02,835 --> 00:47:05,395
+20 minit bir süreç, ok?
+
+479
+00:47:05,935 --> 00:47:07,015
+10.
+
+480
+00:47:07,655 --> 00:47:09,675
+10.20.
+
+481
+01:15:46,484 --> 01:15:47,484
+Arka plandaki...
+
+482
+01:18:09,268 --> 01:18:18,188
+70% or 100%? It should be 70%. It's definitely not 100%, but I don't know.
+
+483
+01:18:22,627 --> 01:18:26,368
+Okay, let's... Is my voice on? Yes. Let's continue.
+
+484
+01:18:28,108 --> 01:18:30,167
+This. Okay, sorry.
+
+485
+01:18:38,547 --> 01:18:43,228
+Ok, let's continue with the Anth-Therm test, for a Divergent series.
+
+486
+01:18:50,739 --> 01:18:51,739
+So, first
+
+487
+01:18:56,115 --> 01:18:57,155
+Think about this series.
+
+488
+01:19:00,155 --> 01:19:05,695
+2 over 1 plus 3 over 2 plus 4 over 3 plus n plus 1 over n plus plus dot dot dot.
+
+489
+01:19:06,376 --> 01:19:07,195
+This diverges.
+
+490
+01:19:08,576 --> 01:19:10,155
+Why? Because...
+
+491
+01:19:15,988 --> 01:19:17,948
+Çünkü her zaman bir tane daha büyük bir tane daha büyük.
+
+492
+01:19:18,887 --> 01:19:21,307
+Ve yine de bir tane daha büyük.
+
+493
+01:19:21,307 --> 01:19:24,628
+Bu, iki, bir tane daha büyük.
+
+494
+01:19:24,628 --> 01:19:25,668
+Bir tane daha büyük bir tane daha büyük.
+
+495
+01:19:26,368 --> 01:19:28,168
+Bu, iki, bir tane daha büyük bir tane daha büyük.
+
+496
+01:19:28,168 --> 01:19:30,728
+Bir tane daha büyük bir tane daha büyük.
+
+497
+01:19:31,788 --> 01:19:43,208
+Bir tane daha büyük.
+
+498
+01:19:43,208 --> 01:19:44,408
+Ve bir tane daha büyük.
+
+499
+01:19:44,408 --> 01:19:44,488
+Bir tane daha büyük.
+
+500
+01:19:48,948 --> 01:19:55,807
+Actually, so this is important. Let me show it here.
+
+501
+01:20:03,988 --> 01:20:06,568
+Let's understand this. Let's understand this.
+
+502
+01:20:36,275 --> 01:20:41,275
+S1
+
+503
+01:20:41,275 --> 01:20:43,275
+n equals 1 to infinity
+
+504
+01:20:43,275 --> 01:20:46,275
+a n is equal to l.
+
+505
+01:20:46,275 --> 01:20:47,275
+It converges.
+
+506
+01:20:47,275 --> 01:20:50,275
+Suppose that it converges to the number l.
+
+507
+01:20:50,275 --> 01:20:51,275
+What does that mean?
+
+508
+01:20:51,275 --> 01:20:53,275
+So, it means that the limit
+
+509
+01:20:53,275 --> 01:20:55,275
+as n approaches infinity of
+
+510
+01:20:55,275 --> 01:20:57,275
+s n is equal to l.
+
+511
+01:20:57,275 --> 01:20:59,275
+s n is the sequence of partial sums.
+
+512
+01:20:59,275 --> 01:21:04,275
+Now, let's write it here.
+
+513
+01:21:04,275 --> 01:21:06,275
+s1
+
+514
+01:21:06,275 --> 01:21:08,275
+is equal to
+
+515
+01:21:08,275 --> 01:21:10,275
+a1
+
+516
+01:21:10,275 --> 01:21:12,275
+s2 is equal to a1 plus a2
+
+517
+01:21:12,275 --> 01:21:16,275
+s3 is equal to a1 plus a2 plus a3
+
+518
+01:21:16,275 --> 01:21:20,275
+s4 is equal to s4
+
+519
+01:21:20,275 --> 01:21:22,275
+and so on.
+
+520
+01:21:22,275 --> 01:21:24,275
+Goes like that.
+
+521
+01:21:29,811 --> 01:21:39,711
+Sn is this, and this Sn approaches the limit L. Sn approaches the limit L. The sum of this series.
+
+522
+01:21:42,231 --> 01:21:44,612
+Let me look at Sn minus 1.
+
+523
+01:22:09,171 --> 01:22:18,371
+S1, s1, s1, is equal to a1. Here, just next to this, let me write s2, which is a1 plus a2.
+
+524
+01:22:21,411 --> 01:22:36,591
+Let me write one more term, s4, a1 plus a2 plus a3 plus a4, and next to it, let's write s3, a1 plus a2 plus a3, and so on, goes like that.
+
+525
+01:22:36,591 --> 01:22:39,411
+This next to this, let's write sn minus 1.
+
+526
+01:22:39,611 --> 01:22:41,651
+S n, s n minus 1.
+
+527
+01:22:51,796 --> 01:23:21,796
+bu sebebiyle bu sebebiyle bu sebebiyle bu sebebiyle bu sebebiyle bu sebebiyle bu sebebiyle bu sebebiyle bu sebebiyle bu sebebiyle bu sebebiyle bu sebebiyle bu sebebiyle bu sebebiyle bu sebebiyle bu sebebiyle bu sebebiyle bu sebebiyle bu sebebiyle bu sebebiyle bu sebebiyle bu sebebiyle bu sebebiyle bu sebebiyle bu sebebiyle bu sebebiyle bu sebebiyle bu sebebiyle bu sebebiyle bu sebebiyle bu sebebiyle bu sebebiyle bu sebebiyle bu sebebiyle bu sebebiyle bu sebebiyle bu sebebiyle bu sebebiyle bu sebebiyle bu sebebiyle bu sebebiyle bu sebebiyle bu sebebiyle bu sebebiyle bu sebe
+
+528
+01:23:21,796 --> 01:23:29,676
+bu sebebiyle bu sebebiyle bu sebebiyle bu sebebiyle bu sebebiyle bu sebebiyle bu sebebiyle bu sebebiyle bu sebebiyle bu sebebiyle bu sebebiyle bu sebebiyle bu sebebiyle bu sebebiyle bu sebebiyle bu sebebiyle bu sebebiyle bu sebebiyle bu sebebiyle bu sebebiyle bu sebebiyle bu sebebiyle bu sebebiyle bu sebebiyle bu sebebiyle bu sebebiyle bu sebebiyle bu sebebiyle bu sebebiyle bu sebebiyle bu sebebiyle bu sebebiyle bu sebebiyle bu sebebiyle bu sebebiyle bu sebebiyle bu sebebiyle bu sebebiyle bu sebebiyle bu sebebiyle bu sebebiyle bu sebebiyle bu sebebiyle bu sebebiyle bu
+
+529
+01:23:33,427 --> 01:23:54,367
+Let's write it like that. An is Sn minus Sn minus 1, right? Sn minus 1 is sum of the first n minus 1. So if I subtract Sn minus 1 from Sn, everything cancels out. Only An is left. So Sn minus 1 is the same as An.
+
+530
+01:23:54,367 --> 01:24:09,807
+When I take the limit as n approaches infinity, the limit as n approaches infinity of An is the same as the limit as n approaches infinity of Sn minus the limit as n approaches infinity of Sn minus 1.
+
+531
+01:24:09,807 --> 01:24:15,807
+The limit of An must be the limit, the difference between the limits of these, which is equal to...
+
+532
+01:24:15,807 --> 01:24:27,807
+Now the limit of Sn is L. Limit of Sn minus 1 is also L. The same limit. This is L minus L, which is 0.
+
+533
+01:24:27,807 --> 01:24:41,807
+So if a series converges, what is our conclusion? Our conclusion is this. If sum n equals 1 to infinity An converges,
+
+534
+01:24:41,807 --> 01:24:55,807
+Then limit as n approaches infinity of An must be 0. Look, here we are talking about the series. Here we are talking about the sequence.
+
+535
+01:24:55,807 --> 01:25:09,807
+If the series converges, then the sequence An must approach 0. The opposite is not true in general. Although this limit is 0, it is still possible that the series diverges.
+
+536
+01:25:09,807 --> 01:25:21,807
+But if the series converges, then the limit of An must be 0. Which means that if the limit of An is not 0, we can immediately conclude that the series is divergent.
+
+537
+01:25:21,807 --> 01:25:27,807
+So here are some examples.
+
+538
+01:25:32,659 --> 01:25:41,659
+So here is the if some of the n converges, then a n must approach zero. In other words, we can say that if
+
+539
+01:25:41,659 --> 01:25:52,300
+if the limit of a n does not exist or is different than zero, then we can immediately conclude that the set is diverges.
+
+540
+01:25:52,300 --> 01:26:07,699
+For example, sum of n squared. Does this converge or diverge? Look at the nth term. Does it approach zero? No. The limit of n squared is infinity. So the set is diverges.
+
+541
+01:26:08,699 --> 01:26:21,939
+Sum of n plus one over n. Just look at the nth term. Does it approach zero? No. It approaches one. It's not zero. The limit of the nth term is not zero. It's one. Therefore, the set is diverges.
+
+542
+01:26:22,300 --> 01:26:28,239
+Look at this sequence. Minus one to the power n plus one. What is its limit? Its limit doesn't exist.
+
+543
+01:26:29,699 --> 01:26:38,019
+Why? Because this minus one to the power n plus one oscillates between one and minus one. One minus one, one minus one, one minus one, one minus one. It does not converge to a number.
+
+544
+01:26:38,680 --> 01:26:45,439
+The limit doesn't exist, which means that the series diverges. Look at this. What is the limit of a n?
+
+545
+01:26:46,139 --> 01:26:51,899
+As an approach is infinity. This part approaches one minus one over two. It's not zero. It's different than zero.
+
+546
+01:26:52,300 --> 01:26:53,840
+Therefore, the series diverges.
+
+547
+01:26:56,139 --> 01:26:58,880
+So whenever, let's repeat.
+
+548
+01:27:00,180 --> 01:27:06,319
+Given a series, given a series sum of n. First, look at this. Look at the limit of a n.
+
+549
+01:27:08,539 --> 01:27:10,019
+If it doesn't exist.
+
+550
+01:27:10,019 --> 01:27:19,680
+Or if it exists, but is different than zero, then we can immediately conclude that the series diverges.
+
+551
+01:27:20,979 --> 01:27:25,979
+On the other hand, if the limit a n is equal to zero, can we make any conclusion?
+
+552
+01:27:26,539 --> 01:27:26,779
+No.
+
+553
+01:27:26,779 --> 01:27:48,399
+Thank you.
+
+554
+01:27:32,180 --> 01:27:35,119
+Bu, bu önemli bir şey.
+
+555
+01:27:40,627 --> 01:27:41,507
+Bu önemli.
+
+556
+01:27:57,427 --> 01:28:04,427
+Divergence test, o da, anther test.
+
+557
+01:28:04,427 --> 01:28:06,427
+Anther test, anther test.
+
+558
+01:28:12,467 --> 01:28:16,467
+So, Lagrange ve Infiniti Serisi
+
+559
+01:28:19,731 --> 01:28:21,731
+Tamam, tamam, tamam, tamam, tamam.
+
+560
+01:28:40,435 --> 01:28:46,815
+If limit as n approaches infinity a n does not exist,
+
+561
+01:28:52,115 --> 01:28:57,115
+ve seri, seri, seri, som an diverges.
+
+562
+01:29:00,115 --> 01:29:01,115
+Evet,
+
+563
+01:29:02,115 --> 01:29:05,115
+ve seri, as n approaches infinity an,
+
+564
+01:29:05,115 --> 01:29:06,115
+exist,
+
+565
+01:29:07,115 --> 01:29:08,115
+but
+
+566
+01:29:09,115 --> 01:29:11,115
+is not zero.
+
+567
+01:29:12,115 --> 01:29:13,115
+Not zero.
+
+568
+01:29:14,115 --> 01:29:15,115
+The seri,
+
+569
+01:29:16,115 --> 01:29:17,115
+som an,
+
+570
+01:29:17,115 --> 01:29:19,115
+diverges again.
+
+571
+01:29:24,884 --> 01:29:29,123
+last possibility
+
+572
+01:29:29,123 --> 01:29:30,963
+if the limit as an opportunity
+
+573
+01:29:30,963 --> 01:29:32,404
+is equal to 0
+
+574
+01:29:32,404 --> 01:29:35,104
+the series then
+
+575
+01:29:35,104 --> 01:29:37,344
+no conclusion can be made
+
+576
+01:29:37,344 --> 01:29:39,423
+using this test and the series
+
+577
+01:29:39,423 --> 01:29:41,783
+may be
+
+578
+01:29:41,783 --> 01:29:46,243
+may converge
+
+579
+01:29:46,243 --> 01:29:48,543
+or diverge
+
+580
+01:29:48,543 --> 01:29:50,863
+both possible it may converge
+
+581
+01:29:50,863 --> 01:29:51,984
+it may diverge
+
+582
+01:29:51,984 --> 01:29:53,583
+no conclusion can be made
+
+583
+01:29:53,583 --> 01:29:57,104
+so the divergence test
+
+584
+01:29:57,104 --> 01:29:58,783
+is a one way test
+
+585
+01:29:58,783 --> 01:30:01,503
+it only says something
+
+586
+01:30:01,503 --> 01:30:04,663
+if the limit of an doesn't exist
+
+587
+01:30:04,663 --> 01:30:06,644
+or exists but is not 0
+
+588
+01:30:06,644 --> 01:30:08,583
+it says that the series must be divergent
+
+589
+01:30:08,583 --> 01:30:09,804
+but on the other hand
+
+590
+01:30:09,804 --> 01:30:12,304
+if the limit of an is equal to 0
+
+591
+01:30:12,304 --> 01:30:13,703
+the test tells nothing
+
+592
+01:30:13,703 --> 01:30:15,944
+the series may still be convergent
+
+593
+01:30:15,944 --> 01:30:17,524
+or it may be divergent
+
+594
+01:30:17,524 --> 01:30:18,003
+okay
+
+595
+01:30:22,804 --> 01:30:24,283
+Can you explain the b part?
+
+596
+01:30:26,583 --> 01:30:28,623
+Y1, b part.
+
+597
+01:30:29,984 --> 01:30:31,123
+In this example,
+
+598
+01:30:33,644 --> 01:30:34,684
+this example,
+
+599
+01:30:37,503 --> 01:30:44,024
+this limit as n approaches infinity, so this n plus 1 over n, what is the limit of this as n approaches infinity?
+
+600
+01:30:45,344 --> 01:30:47,444
+Are you asking why the limit is equal to 1?
+
+601
+01:30:47,444 --> 01:30:53,043
+What's the limit as n approaches infinity of n plus 1 over n?
+
+602
+01:30:54,324 --> 01:30:55,864
+Its limit is 1, right?
+
+603
+01:30:57,003 --> 01:30:58,184
+n plus 1 over n.
+
+604
+01:31:02,228 --> 01:31:15,127
+n plus 1 over n is what? n plus 1 over n is 1 plus 1 over n, right? As n approaches infinity, this part approaches 0, its limit is 1.
+
+605
+01:31:16,507 --> 01:31:21,248
+And the limit 1, the limit is 1, so the limit is different than 0, in this case.
+
+606
+01:31:21,868 --> 01:31:30,467
+Limit exists, but is not 0. Limit of a n exists, but is not 0. Therefore, the sum of the series, the series diverges.
+
+607
+01:31:30,467 --> 01:31:34,167
+The sequence converges to 1, the series diverges.
+
+608
+01:31:37,087 --> 01:31:41,108
+If the limit is equal to infinity, the same bits do not exist, right?
+
+609
+01:31:41,728 --> 01:31:48,667
+If the limit of a sequence or a series is infinity or minus infinity, we say that it doesn't exist.
+
+610
+01:31:50,307 --> 01:31:54,488
+When we say the limit exists, we mean that the limit is a number.
+
+611
+01:31:55,528 --> 01:31:57,868
+Existence means it's a number, okay?
+
+612
+01:32:12,500 --> 01:32:13,500
+Evet.
+
+613
+01:32:15,500 --> 01:32:36,500
+İzlediğiniz için.
+
+614
+01:32:36,500 --> 01:33:06,500
+A-Sum-an-b-n-
+
+615
+01:33:06,500 --> 01:33:36,500
+plus-b-n
+
+616
+01:33:36,500 --> 01:34:03,100
+The sum is going to be b. So sum of this is going to be a minus b. And also if sum of k times a n we have that we can factor the k out it's just again what is this ka1 plus ka2 plus ka3 plus dot dot dot dot ka and just factor the k out we will get k times a n as the partial sum so the total sum is going to be k times a.
+
+617
+01:34:03,819 --> 01:34:05,640
+That's what this rule says.
+
+618
+01:34:16,435 --> 01:34:21,956
+Okay, these two are important. Let me explain this. Every non-zero constant multiple of a divergent series diverges.
+
+619
+01:34:31,572 --> 01:34:35,652
+Let me explain this. This is important. And the other one, also important.
+
+620
+01:35:01,235 --> 01:35:05,836
+k, kbf, non-zero number.
+
+621
+01:35:05,836 --> 01:35:06,336
+Then,
+
+622
+01:35:08,735 --> 01:35:09,175
+then,
+
+623
+01:35:10,675 --> 01:35:12,956
+some, an, and
+
+624
+01:35:12,956 --> 01:35:15,456
+some, k, an.
+
+625
+01:35:16,695 --> 01:35:17,256
+Either,
+
+626
+01:35:18,315 --> 01:35:19,376
+both converge,
+
+627
+01:35:20,815 --> 01:35:22,215
+or,
+
+628
+01:35:22,215 --> 01:35:24,055
+both diverge.
+
+629
+01:35:28,851 --> 01:35:32,652
+It is not possible that one of them converges and the other one diverges.
+
+630
+01:35:32,731 --> 01:35:33,431
+That's not possible.
+
+631
+01:35:33,811 --> 01:35:35,572
+Either both converge or both diverge.
+
+632
+01:35:35,612 --> 01:35:36,251
+Why is this so?
+
+633
+01:35:37,251 --> 01:35:38,511
+I mean, it's easy to understand.
+
+634
+01:35:39,311 --> 01:35:41,452
+If this, let's take a non-zero number.
+
+635
+01:35:41,992 --> 01:35:45,351
+If this one converges, let's say to the number A,
+
+636
+01:35:46,311 --> 01:35:47,831
+then this is just K times that.
+
+637
+01:35:47,831 --> 01:35:49,011
+This one also converges.
+
+638
+01:35:49,511 --> 01:35:50,912
+This converges to K times it.
+
+639
+01:35:51,891 --> 01:35:54,652
+On the other hand, if this one converges,
+
+640
+01:35:55,391 --> 01:35:56,952
+let's say to the number C,
+
+641
+01:35:56,952 --> 01:35:59,992
+then this one is 1 over K times that.
+
+642
+01:36:00,431 --> 01:36:02,391
+So if this converges to the number C,
+
+643
+01:36:02,872 --> 01:36:05,572
+then this one is going to converge to 1 over K times C.
+
+644
+01:36:06,872 --> 01:36:09,631
+So if this converges, then this one converges.
+
+645
+01:36:09,751 --> 01:36:11,631
+If this one converges, then this one converges.
+
+646
+01:36:11,711 --> 01:36:14,912
+So it's not possible that one of them converges and the other diverges.
+
+647
+01:36:14,912 --> 01:36:17,452
+So they either both converge or both diverge.
+
+648
+01:36:17,831 --> 01:36:18,891
+So why is that important?
+
+649
+01:36:19,452 --> 01:36:21,471
+Now, we are given a series.
+
+650
+01:36:21,471 --> 01:36:33,251
+is 723 times pi times e to the power of 5 times 1 over K times R.
+
+651
+01:36:33,251 --> 01:36:37,391
+Does this series converge or diverge?
+
+652
+01:36:37,591 --> 01:36:38,391
+That's the question.
+
+653
+01:36:38,591 --> 01:36:40,152
+Does the series converge or diverge?
+
+654
+01:36:40,152 --> 01:36:44,912
+Well, if I'm just interested, if I'm not interested in the sum of the series,
+
+655
+01:36:44,912 --> 01:36:48,291
+if I'm only interested in whether the series converges and diverges,
+
+656
+01:36:49,192 --> 01:36:53,671
+I don't care what this number is.
+
+657
+01:36:53,671 --> 01:36:55,511
+It's just a constant, right?
+
+658
+01:36:55,891 --> 01:36:57,112
+Just some constant number.
+
+659
+01:36:57,112 --> 01:37:27,112
+So this is the same as 723 pi
+
+660
+01:37:27,112 --> 01:37:50,341
+pi pi
+
+661
+01:38:07,923 --> 01:38:09,923
+The same is true for...
+
+662
+01:38:10,764 --> 01:38:11,844
+...difference, actually.
+
+663
+01:38:14,344 --> 01:38:15,344
+Uh...
+
+664
+01:38:16,564 --> 01:38:17,423
+...ı write that down.
+
+665
+01:38:26,484 --> 01:38:32,644
+Let's say sum of n, sum of n, and sum of n plus n.
+
+666
+01:40:37,619 --> 01:40:52,319
+Ok, let's consider these four cases. Sum of am converges, sum of am converges, sum of am converges, sum of am converges, sum of am converges.
+
+667
+01:40:58,292 --> 01:40:59,172
+Diverges.
+
+668
+01:41:03,380 --> 01:41:09,880
+A n diverges, some of the n converges, and they both diverge.
+
+669
+01:41:15,764 --> 01:41:23,284
+Evet, if sum of an converges and sum of bn converges, what can we say about sum of an plus bn?
+
+670
+01:41:23,784 --> 01:41:33,364
+That's what the theorem says. If this one converges to a, this one converges to b, then sum of an plus bn is going to converge to a plus b.
+
+671
+01:41:33,784 --> 01:41:36,203
+So if they both converge, this one also converges.
+
+672
+01:41:41,043 --> 01:41:46,123
+Bu durumda, bir durum convergesin ve diğer bir durum divergesin.
+
+673
+01:41:46,644 --> 01:41:48,083
+Neyden bir durumda?
+
+674
+01:41:49,163 --> 01:41:50,724
+Bir durumda bir durum convergesin.
+
+675
+01:41:54,676 --> 01:42:00,615
+Bu, bu
+
+676
+01:42:05,524 --> 01:42:06,844
+is the following possible.
+
+677
+01:42:08,604 --> 01:42:09,484
+Diverges, I think.
+
+678
+01:42:09,624 --> 01:42:11,704
+Change is no, diverges no, diverges.
+
+679
+01:42:11,904 --> 01:42:13,484
+Okay, most of you say diverges
+
+680
+01:42:13,484 --> 01:42:14,284
+and you are right.
+
+681
+01:42:15,184 --> 01:42:16,204
+It must diverge.
+
+682
+01:42:16,364 --> 01:42:17,344
+Let's understand why.
+
+683
+01:42:17,984 --> 01:42:19,524
+So is it possible that it converges?
+
+684
+01:42:19,724 --> 01:42:20,184
+Let's see.
+
+685
+01:42:20,664 --> 01:42:22,404
+Sum of a n, let's say,
+
+686
+01:42:23,064 --> 01:42:24,144
+converges to a.
+
+687
+01:42:25,544 --> 01:42:27,003
+Sum of a n converges to a.
+
+688
+01:42:27,503 --> 01:42:30,204
+Sum of b n diverges.
+
+689
+01:42:31,963 --> 01:42:34,724
+Sum of a n plus b n
+
+690
+01:42:34,724 --> 01:42:37,584
+let's say this converges to c.
+
+691
+01:42:38,104 --> 01:42:39,064
+Is this possible?
+
+692
+01:42:39,804 --> 01:42:40,744
+The answer is no.
+
+693
+01:42:41,064 --> 01:42:41,604
+Why not?
+
+694
+01:42:42,844 --> 01:42:44,244
+But the simplest way of seeing
+
+695
+01:42:44,244 --> 01:42:45,324
+that this is not possible.
+
+696
+01:42:48,204 --> 01:42:50,923
+I can just subtract this from this, right?
+
+697
+01:42:53,724 --> 01:42:55,984
+If this converges to c,
+
+698
+01:42:56,884 --> 01:42:58,463
+this converges to a,
+
+699
+01:42:58,764 --> 01:43:00,124
+I can just subtract them.
+
+700
+01:43:01,244 --> 01:43:02,164
+I'll get this one.
+
+701
+01:43:02,864 --> 01:43:04,024
+So if this converges to c
+
+702
+01:43:04,024 --> 01:43:05,144
+and this converges to a,
+
+703
+01:43:05,423 --> 01:43:07,164
+this one should have converged
+
+704
+01:43:07,164 --> 01:43:08,224
+to c minus a.
+
+705
+01:43:08,684 --> 01:43:09,384
+So it's not possible
+
+706
+01:43:09,384 --> 01:43:10,304
+that this diverges
+
+707
+01:43:10,304 --> 01:43:11,724
+if these both converge.
+
+708
+01:43:12,104 --> 01:43:13,044
+So this is not possible.
+
+709
+01:43:13,304 --> 01:43:14,044
+The answer is no.
+
+710
+01:43:15,463 --> 01:43:16,704
+This is not possible.
+
+711
+01:43:17,104 --> 01:43:18,544
+So if one of them converges
+
+712
+01:43:18,544 --> 01:43:19,784
+and the other diverges,
+
+713
+01:43:19,963 --> 01:43:20,864
+it's not so possible
+
+714
+01:43:20,864 --> 01:43:22,003
+that there are some converges.
+
+715
+01:43:22,124 --> 01:43:23,244
+There is some must diverge.
+
+716
+01:43:23,244 --> 01:43:26,724
+The same is here.
+
+717
+01:43:26,984 --> 01:43:28,724
+If the second one converges
+
+718
+01:43:28,724 --> 01:43:29,724
+to the first one diverges,
+
+719
+01:43:29,864 --> 01:43:30,144
+again,
+
+720
+01:43:30,864 --> 01:43:32,364
+this one must diverge.
+
+721
+01:43:33,904 --> 01:43:35,324
+How about this last case?
+
+722
+01:43:35,584 --> 01:43:37,024
+What if both diverge?
+
+723
+01:43:39,423 --> 01:43:40,984
+If sum of n diverges
+
+724
+01:43:40,984 --> 01:43:42,364
+and sum of b n diverges,
+
+725
+01:43:42,923 --> 01:43:45,324
+what can I say about sum of a n plus b n?
+
+726
+01:43:45,324 --> 01:43:58,423
+What if I say about sum of n?
+
+727
+01:43:49,300 --> 01:43:55,680
+Divers plus diverge, in some cases can converge when a diverge to infinity and b diverge to minus infinity, for example.
+
+728
+01:43:55,980 --> 01:44:00,100
+It doesn't have to, but it may, then it makes sense that it converges.
+
+729
+01:44:05,043 --> 01:44:12,163
+The answer is, it may converge, it may diverge. Both are possible. It may converge or diverge.
+
+730
+01:44:14,564 --> 01:44:18,644
+May converge or diverge.
+
+731
+01:44:21,923 --> 01:44:24,644
+Well, we can see examples of that.
+
+732
+01:44:29,363 --> 01:44:42,323
+So, for example, take this sum n equals 1 to infinity, 1, which is 1 plus 1 plus 1 plus 1 diverges.
+
+733
+01:44:44,803 --> 01:44:46,463
+Diverges to infinity, right?
+
+734
+01:44:48,923 --> 01:44:51,884
+Take the same one, it diverges to infinity.
+
+735
+01:44:52,283 --> 01:44:55,023
+Take some of n as that one, it diverges to infinity.
+
+736
+01:44:55,523 --> 01:44:59,163
+Take some of bn as the same series, it diverges to infinity.
+
+737
+01:44:59,963 --> 01:45:07,823
+When we add them up, when we add an and bn, we get sum of, we get 2 plus 2 plus 2 plus 2 plus 2, it again diverges to infinity.
+
+738
+01:45:08,103 --> 01:45:11,723
+So, it's possible that an and bn both diverge and their sum also diverges.
+
+739
+01:45:12,203 --> 01:45:18,043
+But, if for example we take the simplest example, take this one, sum of minus 1.
+
+740
+01:45:18,703 --> 01:45:20,863
+Minus 1, minus 1, minus 1, minus 1.
+
+741
+01:45:22,083 --> 01:45:24,943
+It diverges to minus infinity in this case.
+
+742
+01:45:24,943 --> 01:45:31,483
+So, here an is equal to 1, bn is equal to minus 1.
+
+743
+01:45:31,583 --> 01:45:32,323
+They are both constant.
+
+744
+01:45:33,083 --> 01:45:35,703
+So, an plus bn is 0.
+
+745
+01:45:36,863 --> 01:45:41,703
+So, sum of an plus bn is going to be sum of 0.
+
+746
+01:45:42,343 --> 01:45:46,783
+0 plus 0 plus 0 plus 0 plus 0 plus dot dot dot, which converges to 0.
+
+747
+01:45:46,783 --> 01:45:49,743
+It is one converges.
+
+748
+01:45:50,683 --> 01:45:58,923
+So, it is possible that an, sum of an and sum of bn both diverge, but their sum, sum of an plus bn converges.
+
+749
+01:45:58,923 --> 01:46:03,183
+So, in this case, both cases are possible.
+
+750
+01:46:03,443 --> 01:46:04,923
+It may converge, it may diverge.
+
+751
+01:46:04,923 --> 01:46:08,303
+All right.
+
+752
+01:46:09,303 --> 01:46:10,143
+Let's continue.
+
+753
+01:46:22,100 --> 01:46:29,600
+Tamam, here are what is said here. Remember that sum of n can convert when sum of n and sum of n both diverge. And here the same example is given.
+
+754
+01:46:31,940 --> 01:46:37,140
+Okay, let's look at this example. This is a geometric series. So find the sum of the following series.
+
+755
+01:46:38,880 --> 01:46:43,520
+N equals 1 to infinity, 3 to the power n minus 1 minus 1 over 6 to the power n minus 1.
+
+756
+01:46:43,579 --> 01:46:51,160
+So here if we separate this numerator, we get 3 to the power n minus 1 over 6 to the power n minus 1, which is this, 1 over 2 to the power n minus 1.
+
+757
+01:46:51,160 --> 01:47:07,420
+And here minus we get 1 over 6 to the power n minus. And now using the difference rule over here, this sum of n minus bn is the same as sum of n minus sum of bn, as long as both sum of n and sum of bn converge.
+
+758
+01:47:07,900 --> 01:47:17,020
+This one here, this term over here forms a geometric series whose ratio r is 1 over 2, which is less than 1.
+
+759
+01:47:17,020 --> 01:47:28,200
+This one forms another. This one forms another geometric series whose ratio is 1 over 6, which is also less than 1. So they both converge. So I can separate this.
+
+760
+01:47:28,840 --> 01:47:37,180
+So this is sum of 1 over 2 to the power n minus 1 minus sum of 6 to the power n minus 1. They both converge. They are both convergent geometric series.
+
+761
+01:47:37,180 --> 01:47:46,660
+Their first terms are both 1. So here, look at this. When n is equal to 1, we get 1 over 2 to the power 0, which is 1.
+
+762
+01:47:47,140 --> 01:47:52,120
+So its first term is 1. A is 1. 1 over 1 minus its common ratio is 1 over 2.
+
+763
+01:47:52,120 --> 01:48:01,220
+Minus, this is another geometric series whose first term is again 1. When n is equal to 1, we get 1 over 6 to the power 0, which is 1.
+
+764
+01:48:01,780 --> 01:48:08,300
+So its sum is A over 1 minus r. That's 1 over 1 minus 1 over 6, which is its common ratio.
+
+765
+01:48:08,960 --> 01:48:13,120
+So we get this is 2 and this is 6 over 5. We get 4 over 5.
+
+766
+01:48:14,079 --> 01:48:14,900
+Some of this series.
+
+767
+01:48:14,900 --> 01:48:25,100
+So for example, n equals 0 to infinity, 4 over 2 to the power n could be written as so this 4 is a constant.
+
+768
+01:48:25,300 --> 01:48:26,360
+We could take it out.
+
+769
+01:48:27,740 --> 01:48:31,320
+And write it as 4 times n equals 0 to infinity, 1 over 2 to the power n.
+
+770
+01:48:31,420 --> 01:48:34,440
+And this is going to be 4 times.
+
+771
+01:48:34,579 --> 01:48:37,520
+Of course, we could just consider it like this.
+
+772
+01:48:38,760 --> 01:48:41,680
+But we can also take constant factors out if you like.
+
+773
+01:48:41,680 --> 01:48:45,940
+And this is a geometric series whose first term is 1 and common ratio is 1 over 2.
+
+774
+01:48:46,260 --> 01:48:47,060
+So its sum is this.
+
+775
+01:48:47,360 --> 01:48:48,300
+But then we get 8.
+
+776
+01:48:48,300 --> 01:48:49,300
+Thank you.
+
+777
+01:48:56,787 --> 01:48:58,787
+İndirmeyi ve deletimlerdenin.
+
+778
+01:49:05,011 --> 01:49:22,011
+Okay, I'll come back to that. Let's look at this re-indexing. We can re-index. For example, n equals 1 to infinity to an can be written as n equals replace just n with n minus h.
+
+779
+01:49:23,011 --> 01:49:34,271
+So it is n equals 1 plus h to infinity to an minus h. Shifting it h units up or down. So for example,
+
+780
+01:49:39,380 --> 01:50:09,380
+Bu, bu
+
+781
+01:50:09,380 --> 01:50:16,039
+1 over 4, we get the same series. Or we could even write it like this. N equals 5 to infinity 1 over 2 to the power n minus 5.
+
+782
+01:50:18,260 --> 01:50:34,159
+It's the same series. Just the index is shifted. So it starts from n equals 5. When n is 5, we get 1 over 2 to the power 0. This. When n is 6, we get 1 over 2. When n is 7, we get 1 over 2 squared and so on.
+
+783
+01:50:34,159 --> 01:50:41,779
+Or we could even start it from a negative number. When n is minus 4, we get 1 over 2 to the power 0. Again, it starts from this.
+
+784
+01:50:42,300 --> 01:50:56,659
+Then n is minus 3, we get 1 over 2. When n is minus 2, always the first term have to be 1. Well, the first term doesn't have to be 1. No. In a geometric series, the first term does not have to be 1.
+
+785
+01:50:58,600 --> 01:51:03,980
+For example, we have seen such examples like this.
+
+786
+01:51:10,292 --> 01:51:12,252
+Here is an example of a geometric series.
+
+787
+01:51:12,832 --> 01:51:14,271
+First term is 1 over 9.
+
+788
+01:51:16,972 --> 01:51:19,692
+I mean, the first term of a series does not have to be 1.
+
+789
+01:51:26,579 --> 01:51:37,819
+In this example, when we look at this series, this series over here can be written in many ways, by changing the indexes.
+
+790
+01:51:48,212 --> 01:51:55,852
+Okay, adding or deleting terms. Let me explain something else. And then that's going to be the end of this section.
+
+791
+01:52:03,444 --> 01:52:05,664
+Okay, let's look at this. Let me ask you a question.
+
+792
+01:52:37,203 --> 01:52:39,323
+[öğrenci], orda?
+
+793
+01:52:47,667 --> 01:53:01,627
+721, plus e to the power 7, plus cosine pi over 5.
+
+794
+01:53:06,868 --> 01:53:17,628
+Minus 1 over sky root of tangent e to the power 7.
+
+795
+01:53:19,528 --> 01:53:23,807
+Plus 1 over 3.
+
+796
+01:53:24,288 --> 01:53:25,768
+Minus 1 over 9.
+
+797
+01:53:26,088 --> 01:53:27,708
+Plus 1 over 27.
+
+798
+01:53:28,188 --> 01:53:29,888
+Minus 1 over 81.
+
+799
+01:53:30,807 --> 01:53:33,568
+Plus 1 over 143.
+
+800
+01:53:34,288 --> 01:53:35,248
+Minus and so on.
+
+801
+01:53:36,868 --> 01:53:38,868
+Does the series converge or dialogue?
+
+802
+01:53:39,708 --> 01:53:41,528
+What can you say about the series?
+
+803
+01:53:42,307 --> 01:53:42,768
+Over here.
+
+804
+01:53:45,408 --> 01:53:46,608
+It starts with this.
+
+805
+01:53:46,748 --> 01:53:47,948
+Skirt of 721.
+
+806
+01:53:48,248 --> 01:53:49,248
+Plus e to the power 7.
+
+807
+01:53:49,388 --> 01:53:50,608
+Plus cosin pi over 5.
+
+808
+01:53:50,688 --> 01:53:53,288
+Minus 1 over square root of tangent e to the power 7.
+
+809
+01:53:53,408 --> 01:53:53,668
+Whatever.
+
+810
+01:53:54,847 --> 01:53:55,807
+Plus 1 over 3.
+
+811
+01:53:55,908 --> 01:53:56,708
+Minus 1 over 9.
+
+812
+01:53:56,807 --> 01:53:57,648
+Plus 1 over 27.
+
+813
+01:53:57,868 --> 01:53:58,648
+Minus 1 over 81.
+
+814
+01:53:58,928 --> 01:53:59,188
+Plus.
+
+815
+01:54:00,028 --> 01:54:01,188
+And it goes like this.
+
+816
+01:54:02,948 --> 01:54:04,388
+Does the series converge or dialogue?
+
+817
+01:54:05,088 --> 01:54:06,468
+Can we answer this question?
+
+818
+01:54:06,868 --> 01:54:36,847
+Divert?
+
+819
+01:54:19,252 --> 01:54:21,252
+Tamam, [öğrenci] says converges.
+
+820
+01:54:27,539 --> 01:54:29,539
+İnglior the first four turns.
+
+821
+01:54:32,739 --> 01:54:34,619
+Converges, converges, converges.
+
+822
+01:54:37,380 --> 01:54:38,060
+Okay.
+
+823
+01:54:38,659 --> 01:54:39,899
+[öğrenci] says diverges.
+
+824
+01:54:42,859 --> 01:54:44,300
+It's like health.
+
+825
+01:54:44,979 --> 01:54:45,960
+It's like 50-50.
+
+826
+01:54:49,560 --> 01:54:53,619
+Minus and plus makes it something like go up and down.
+
+827
+01:54:54,439 --> 01:54:55,800
+All of them are constant.
+
+828
+01:54:55,800 --> 01:54:56,720
+Yeah, exactly.
+
+829
+01:54:56,840 --> 01:54:58,359
+We can ignore the first four turns.
+
+830
+01:54:58,500 --> 01:54:59,019
+Diverges.
+
+831
+01:54:59,420 --> 01:54:59,640
+Yes.
+
+832
+01:55:00,300 --> 01:55:04,579
+Whoever says we can ignore the first four terms and they're just constants, you're right.
+
+833
+01:55:05,000 --> 01:55:05,720
+It converges.
+
+834
+01:55:06,619 --> 01:55:07,699
+Why does it converge?
+
+835
+01:55:07,819 --> 01:55:08,859
+Let's understand this.
+
+836
+01:55:09,519 --> 01:55:10,220
+What is this?
+
+837
+01:55:11,960 --> 01:55:12,819
+This part.
+
+838
+01:55:14,060 --> 01:55:18,399
+This is a geometric series with r equals minus 1 over 3, right?
+
+839
+01:55:18,399 --> 01:55:27,180
+The sum of this part is its first term is 1 over 3 divided by 1 minus its common ratio.
+
+840
+01:55:27,500 --> 01:55:28,479
+Minus 1 over 3.
+
+841
+01:55:31,119 --> 01:55:35,800
+Sum of this part, this tail, including this, all terms over here is this.
+
+842
+01:55:36,220 --> 01:55:37,979
+1 over 3 over 4 over 3.
+
+843
+01:55:38,060 --> 01:55:39,380
+That's 1 over 4, right?
+
+844
+01:55:39,380 --> 01:55:45,619
+So, sum of the tail of the series is a number.
+
+845
+01:55:45,720 --> 01:55:46,779
+It converges to a number.
+
+846
+01:55:47,239 --> 01:55:50,479
+Now, I'm going to add four more numbers to it.
+
+847
+01:55:50,479 --> 01:55:53,439
+But now I have five numbers, right?
+
+848
+01:55:53,880 --> 01:55:57,760
+I have one number here, one number here, one number here, one number here, and one number
+
+849
+01:55:57,760 --> 01:55:57,960
+here.
+
+850
+01:55:58,380 --> 01:55:59,300
+I have five numbers.
+
+851
+01:56:00,300 --> 01:56:02,079
+I have finitely many numbers now.
+
+852
+01:56:02,140 --> 01:56:03,159
+I don't have any problem.
+
+853
+01:56:03,279 --> 01:56:04,359
+I can add five numbers.
+
+854
+01:56:04,359 --> 01:56:09,819
+Whatever the sum of those five numbers is equal to, that's going to be the sum of the series.
+
+855
+01:56:10,920 --> 01:56:12,840
+So, why am I telling this?
+
+856
+01:56:13,899 --> 01:56:19,979
+When we are interested in whether a series converges or diverges, we don't have to look at the head
+
+857
+01:56:19,979 --> 01:56:23,619
+of the series.
+
+858
+01:56:24,100 --> 01:56:25,840
+We have to look at the tail of the series.
+
+859
+01:56:26,399 --> 01:56:27,260
+This dot, dot, dot.
+
+860
+01:56:28,079 --> 01:56:30,939
+So, as the terms approach infinity, what happens there?
+
+861
+01:56:30,939 --> 01:56:34,340
+I can ignore the first finitely many terms.
+
+862
+01:56:34,960 --> 01:56:39,539
+That the finitely many terms does not change the characteristic of a series.
+
+863
+01:56:40,319 --> 01:56:44,180
+Because if the tail converges, I can add a finitely many numbers to that.
+
+864
+01:56:44,520 --> 01:56:45,920
+The whole series is going to be convergent.
+
+865
+01:56:46,279 --> 01:56:53,180
+If the tail diverges, adding finitely many terms to it is not going to make it convergent.
+
+866
+01:56:53,279 --> 01:56:55,800
+So, the whole series is going to be divergent again.
+
+867
+01:56:55,800 --> 01:57:07,619
+So, if I have a series and if I start the indexing from the kth term, so starting from the kth term,
+
+868
+01:57:07,779 --> 01:57:10,800
+kth term, k plus first term, k plus second term and so on.
+
+869
+01:57:11,220 --> 01:57:15,519
+If that tail of the series converges, I can conclude that the whole series converges.
+
+870
+01:57:15,519 --> 01:57:45,500
+So, let's see.
+
+871
+01:57:22,931 --> 01:57:26,692
+Ok, bu serisi converges, over here.
+
+872
+01:57:43,028 --> 01:58:04,328
+Ok, so, should we continue with integral test? No, I don't think so. We can start the integral test next week. It's 11.10. I think we can stop here for today.
+
+873
+01:58:08,307 --> 01:58:11,087
+ve diğer testi, çift katlı bir şey.
+
+874
+01:58:16,435 --> 01:58:17,735
+Tamam, ne sorun?
+
+875
+01:58:18,055 --> 01:58:32,895
+Ne sorun?
+
+876
+01:58:28,467 --> 01:58:30,947
+Okey, you too.
+
+877
+01:58:36,659 --> 01:58:42,840
+Okay, if there are no questions, I'm going to end the lecture for today, and we will continue with the tests next week.
+
+878
+01:58:45,079 --> 01:58:51,279
+Alright, I'm ending the lecture. Have a nice weekend, and I will see you next week.

@@ -1,0 +1,6219 @@
+1
+00:08:30,420 --> 00:08:31,180
+Good morning, everybody.
+
+2
+00:08:37,395 --> 00:08:38,995
+Okay, I think I can start.
+
+3
+00:08:39,235 --> 00:08:39,815
+You can start.
+
+4
+00:08:42,375 --> 00:08:47,435
+Okay, so we have solved some problems from what?
+
+5
+00:08:47,575 --> 00:08:48,535
+Directional derivatives.
+
+6
+00:08:50,355 --> 00:08:54,795
+And then tangent planes, normal lines, linearization.
+
+7
+00:08:59,515 --> 00:09:00,315
+Yesterday.
+
+8
+00:09:01,475 --> 00:09:05,115
+And now, today we will finish this chapter.
+
+9
+00:09:07,395 --> 00:09:12,395
+By solving some problems from extreme values and...
+
+10
+00:09:19,475 --> 00:09:23,355
+Maximum points, minimum points, settle points, and so on.
+
+11
+00:09:24,056 --> 00:09:25,596
+And then we will start chapter 15.
+
+12
+00:09:28,495 --> 00:09:30,235
+Okay, let's start with this question.
+
+13
+00:09:30,375 --> 00:09:40,015
+Find and classify the critical points of f of xy equals 2x cubed plus 9xy squared plus 15x squared plus 27y squared.
+
+14
+00:09:41,216 --> 00:09:47,755
+Okay, so first of all, this function is differentiable of all orders.
+
+15
+00:09:47,755 --> 00:10:01,375
+I mean, if you look at what's fx, fx, it's first partial derivative with respect to x is what?
+
+16
+00:10:02,155 --> 00:10:10,495
+Here we get 6x squared plus 9y squared plus 30x.
+
+17
+00:10:10,995 --> 00:10:12,975
+That's the partial derivative with respect to x.
+
+18
+00:10:13,495 --> 00:10:15,336
+How about the partial derivative with respect to y?
+
+19
+00:10:15,336 --> 00:10:16,316
+This is 0.
+
+20
+00:10:16,855 --> 00:10:19,975
+This is 18xy here.
+
+21
+00:10:20,436 --> 00:10:21,255
+That's 0.
+
+22
+00:10:21,475 --> 00:10:23,316
+And that's 54y here.
+
+23
+00:10:23,816 --> 00:10:25,615
+So that's the partial derivative with respect to y.
+
+24
+00:10:26,355 --> 00:10:32,115
+And of course, the partial derivatives, remember, when do the critical points occur?
+
+25
+00:10:32,615 --> 00:10:42,755
+Critical points occur where either fx is undefined or fy is undefined or they are both equal to 0.
+
+26
+00:10:42,755 --> 00:10:48,836
+So here, fx and fy are defined everywhere for all values of x and y.
+
+27
+00:10:48,975 --> 00:10:54,775
+Therefore, the only critical points occur when they are both equal to 0.
+
+28
+00:10:54,775 --> 00:10:59,536
+So let me set them both equal to 0.
+
+29
+00:10:59,615 --> 00:11:00,255
+What do we get?
+
+30
+00:11:00,775 --> 00:11:08,115
+So first of all, from which one is, it's easy, it's better to start from the simpler one.
+
+31
+00:11:08,775 --> 00:11:09,995
+So this one is simpler.
+
+32
+00:11:09,995 --> 00:11:13,936
+So if fy is 0, this one is 0, what do we get from that?
+
+33
+00:11:14,216 --> 00:11:16,155
+We can factor 18y out.
+
+34
+00:11:16,635 --> 00:11:19,515
+If we factor 18y, we get x plus 3.
+
+35
+00:11:20,436 --> 00:11:28,336
+So this is equal to 0 means either y is equal to 0 or x plus 3 is equal to 0, which means x is minus 3.
+
+36
+00:11:28,596 --> 00:11:30,875
+So either y is 0 or x is minus 3.
+
+37
+00:11:31,836 --> 00:11:38,956
+So in the first case, if it's the first case, if y is 0, from the first equation, what do we get?
+
+38
+00:11:38,956 --> 00:11:47,716
+This is, if y is 0, fx is equal to 0 gives us, so this is 0, gives us 6x squared plus 30x is 0.
+
+39
+00:11:48,515 --> 00:11:52,576
+And if we factor 6x out, we get 6x times x plus 5 is 0.
+
+40
+00:11:52,935 --> 00:11:55,196
+So either x is 0 or x is minus 5.
+
+41
+00:11:55,655 --> 00:11:57,216
+So it gives us two critical points.
+
+42
+00:11:57,216 --> 00:12:03,395
+So when y is 0, when y is 0, x is 0 or x is minus 5.
+
+43
+00:12:03,776 --> 00:12:07,076
+We get these two critical points, 0, 0 and minus 5, 0.
+
+44
+00:12:08,076 --> 00:12:09,135
+What's the second case?
+
+45
+00:12:09,196 --> 00:12:10,956
+The second case is x is minus 3.
+
+46
+00:12:11,816 --> 00:12:12,776
+What do we get?
+
+47
+00:12:12,836 --> 00:12:17,596
+When x is minus 3, then we put that into the first equation.
+
+48
+00:12:17,596 --> 00:12:23,995
+Not equation, this is, and we put it here and let fx equal to 0.
+
+49
+00:12:24,735 --> 00:12:27,635
+So what do we get when x is minus 3?
+
+50
+00:12:27,735 --> 00:12:28,895
+So minus 3 squared is 9.
+
+51
+00:12:28,975 --> 00:12:31,875
+So that's 54 plus 9y squared.
+
+52
+00:12:31,875 --> 00:12:35,676
+x is minus 3, so this is minus 90, equals 0.
+
+53
+00:12:36,296 --> 00:12:39,235
+So this gives us 9y squared minus 36 is 0.
+
+54
+00:12:39,456 --> 00:12:40,735
+So y squared is equal to 4.
+
+55
+00:12:41,316 --> 00:12:43,875
+So y squared is equal to 4 means y is plus or minus 2.
+
+56
+00:12:44,216 --> 00:12:45,776
+So we get two more critical points.
+
+57
+00:12:46,755 --> 00:12:50,135
+When x is minus 3, we get y is plus or minus 2.
+
+58
+00:12:50,255 --> 00:12:50,915
+We get these two.
+
+59
+00:12:51,016 --> 00:12:52,836
+Minus 3, minus 2 and minus 3, 2.
+
+60
+00:12:52,836 --> 00:12:55,676
+So we get four critical points.
+
+61
+00:12:56,696 --> 00:13:00,155
+0, 0, minus 5, 0, minus 3, minus 2 and minus 3, 2.
+
+62
+00:13:00,576 --> 00:13:01,936
+Now we will classify them.
+
+63
+00:13:03,155 --> 00:13:08,556
+So remember, let's, should I open that?
+
+64
+00:13:09,395 --> 00:13:10,495
+Let me open that.
+
+65
+00:13:11,776 --> 00:13:14,556
+Let's remember the second derivative test.
+
+66
+00:13:29,844 --> 00:13:30,264
+Okay.
+
+67
+00:13:33,264 --> 00:13:34,424
+Let's remember this.
+
+68
+00:13:38,964 --> 00:13:41,844
+Bu da 2nd derivative test say?
+
+69
+00:13:42,404 --> 00:13:45,624
+Fxy and its 1st and 2nd partial derivatives
+
+70
+00:13:45,624 --> 00:13:47,664
+are continuous throughout the center of AB
+
+71
+00:13:47,664 --> 00:13:51,864
+and that Fx AB equals Fy AB equals 0.
+
+72
+00:13:52,424 --> 00:13:53,824
+The 1st partial derivatives,
+
+73
+00:13:54,484 --> 00:13:57,944
+Fx and Fy are both equal to 0 at that point AB.
+
+74
+00:13:58,404 --> 00:14:01,884
+So these points at 0, 0, minus 5, 0,
+
+75
+00:14:01,984 --> 00:14:04,164
+minus 3, minus 10, minus 3, minus 2.
+
+76
+00:14:04,164 --> 00:14:08,304
+At these 4 points, both Fx and Fy are equal to 0.
+
+77
+00:14:08,964 --> 00:14:10,384
+Okay, these are critical points.
+
+78
+00:14:11,164 --> 00:14:15,364
+So if that's the case, then we look at this discriminant,
+
+79
+00:14:15,584 --> 00:14:17,964
+Fx, X, Fy, Y minus Fxy squared.
+
+80
+00:14:18,084 --> 00:14:20,384
+So we find the 2nd order partial derivatives.
+
+81
+00:14:20,524 --> 00:14:21,704
+We look at the discriminant.
+
+82
+00:14:22,184 --> 00:14:24,304
+If the discriminant is positive at that point
+
+83
+00:14:24,304 --> 00:14:26,204
+and if Fx, X is negative,
+
+84
+00:14:27,204 --> 00:14:29,504
+that point is a local maximum point.
+
+85
+00:14:30,004 --> 00:14:32,124
+If the discriminant is positive but Fx,
+
+86
+00:14:32,124 --> 00:14:33,684
+if X, X is also positive,
+
+87
+00:14:34,064 --> 00:14:35,944
+it gives us a local minimum point.
+
+88
+00:14:36,364 --> 00:14:38,424
+On the other hand, if the discriminant is negative,
+
+89
+00:14:38,964 --> 00:14:39,784
+we get a subtle point.
+
+90
+00:14:40,903 --> 00:14:42,204
+But if discriminant is 0,
+
+91
+00:14:42,364 --> 00:14:43,764
+then the test is inconclusive,
+
+92
+00:14:43,884 --> 00:14:45,804
+which means we have to look at something else
+
+93
+00:14:45,804 --> 00:14:47,204
+if that's the case.
+
+94
+00:14:47,204 --> 00:14:51,124
+Okay, so...
+
+95
+00:14:51,124 --> 00:14:52,124
+So...
+
+96
+00:14:55,187 --> 00:15:25,187
+Bu ne? Bu
+
+97
+00:15:25,187 --> 00:17:55,188
+Bu ne? Bu ne
+
+98
+00:17:55,188 --> 00:18:21,307
+Second one minus five zero. What do we get here? When x is minus five, y is zero. X is minus five. So that's 25 times two is 50. Minus 55 here plus 15. And y is zero. So this is zero. So what do we get? 50 minus 50 y is minus five plus 15 is 10. It's again positive. So six times 18 times 10 is again positive. What is f x x?
+
+99
+00:18:21,307 --> 00:18:32,728
+If x x is when x is minus five, this is minus 60 plus 30, which is minus 30. Minus 30, which is negative. So in this case, it's a local maximum.
+
+100
+00:18:35,327 --> 00:18:38,867
+So the next point is minus three minus two. What do we get?
+
+101
+00:18:41,307 --> 00:18:48,867
+And actually, the other one is the same. So when x is minus three, y is plus or minus two. When x is minus three,
+
+102
+00:18:48,867 --> 00:18:52,847
+so this is x square is nine. So two times nine is 18.
+
+103
+00:18:52,867 --> 00:18:52,887
+So this is x square is nine. So two times nine is 18.
+
+104
+00:18:53,428 --> 00:18:59,708
+11 times minus 3 is minus 33 plus 15 is here minus 3 y squared.
+
+105
+00:18:59,868 --> 00:19:02,548
+So, it doesn't matter whether y is minus 2 or 2.
+
+106
+00:19:03,068 --> 00:19:04,568
+This y squared is always going to be 4.
+
+107
+00:19:05,028 --> 00:19:07,088
+So, we get minus 12 here in both cases.
+
+108
+00:19:07,848 --> 00:19:08,648
+So, we get what?
+
+109
+00:19:08,828 --> 00:19:18,748
+18 minus 33 is minus 15 plus 15 is, sorry, 18, that's minus 15 plus 15, that's 0.
+
+110
+00:19:18,988 --> 00:19:21,708
+So, this part is 0 minus 12.
+
+111
+00:19:21,708 --> 00:19:24,668
+So, it's 6 times, 18 times minus 12.
+
+112
+00:19:28,648 --> 00:19:29,748
+In both cases.
+
+113
+00:19:30,388 --> 00:19:33,128
+Which means, so, the discriminant is a negative number.
+
+114
+00:19:34,108 --> 00:19:35,028
+Discrimant is negative.
+
+115
+00:19:35,208 --> 00:19:39,448
+So, in these two cases, these points are subtle points.
+
+116
+00:19:40,088 --> 00:19:41,348
+Since the discriminant is negative.
+
+117
+00:19:44,068 --> 00:19:45,228
+Okay, let's continue.
+
+118
+00:19:45,888 --> 00:19:46,968
+The next problem.
+
+119
+00:19:47,108 --> 00:19:51,688
+Find and classify the critical points of f of x, y equals 3 x, y, x, y.
+
+120
+00:19:51,708 --> 00:20:02,748
+So, the procedure is exactly the same.
+
+121
+00:20:03,768 --> 00:20:05,168
+We first find fx and fy.
+
+122
+00:20:05,728 --> 00:20:06,528
+What is fx?
+
+123
+00:20:07,088 --> 00:20:09,968
+Derivative of this with respect to x, that's 6 x, y.
+
+124
+00:20:10,568 --> 00:20:11,128
+That's 0.
+
+125
+00:20:11,568 --> 00:20:12,807
+That's minus 6 y.
+
+126
+00:20:12,807 --> 00:20:13,828
+And that's 0.
+
+127
+00:20:14,008 --> 00:20:15,188
+6 x, y minus 6 y.
+
+128
+00:20:15,848 --> 00:20:17,688
+Plus the partial derivative with respect to y.
+
+129
+00:20:18,088 --> 00:20:19,148
+This is 3 x squared.
+
+130
+00:20:19,828 --> 00:20:20,908
+This is 3 y squared.
+
+131
+00:20:21,648 --> 00:20:23,348
+And this is minus 6 x.
+
+132
+00:20:23,768 --> 00:20:24,028
+This.
+
+133
+00:20:24,968 --> 00:20:27,568
+So, again, fx and fy are defined everywhere.
+
+134
+00:20:27,768 --> 00:20:30,708
+So, the only critical points of q when they are both equal to 0.
+
+135
+00:20:31,708 --> 00:20:32,928
+The first one is simpler.
+
+136
+00:20:32,928 --> 00:20:35,988
+If we set this one, fx equal to 0, what do we get?
+
+137
+00:20:36,068 --> 00:20:37,428
+6 x, y minus 6 y is 0.
+
+138
+00:20:37,788 --> 00:20:39,748
+Then we factor 6 y out.
+
+139
+00:20:39,848 --> 00:20:40,928
+We get x minus 1.
+
+140
+00:20:41,828 --> 00:20:43,748
+So, this is equal to 0.
+
+141
+00:20:43,848 --> 00:20:46,288
+It means either y is equal to 0 or x is equal to 1.
+
+142
+00:20:48,208 --> 00:20:50,248
+In the first case, y is equal to 0.
+
+143
+00:20:50,328 --> 00:20:54,768
+If y is equal to 0, what do we get from the second equation?
+
+144
+00:20:54,768 --> 00:21:02,168
+So, when y is 0, if we set fy equal to 0, we get 3 x squared minus 6 x equal to 0.
+
+145
+00:21:02,888 --> 00:21:06,908
+So, 3 x times x minus 2 is 0, which means x is 0 or x is 2.
+
+146
+00:21:07,428 --> 00:21:09,368
+So, when y is 0, we get two points.
+
+147
+00:21:09,448 --> 00:21:10,448
+x is 0 or x is 2.
+
+148
+00:21:10,568 --> 00:21:12,328
+So, we get 0, 0 or 2, 0.
+
+149
+00:21:13,488 --> 00:21:15,448
+The second case is x is equal to 1.
+
+150
+00:21:15,908 --> 00:21:21,168
+So, if you put that into the second equation, fy equal to 0.
+
+151
+00:21:21,168 --> 00:21:24,528
+So, when x is 1, we get here.
+
+152
+00:21:24,668 --> 00:21:32,128
+When x is 1, we get 3 plus 3 y squared minus 6 equals 0, which means 3 y squared is equal to 3.
+
+153
+00:21:32,248 --> 00:21:33,248
+So, y squared is 1.
+
+154
+00:21:33,348 --> 00:21:34,688
+So, y is plus or minus 1.
+
+155
+00:21:37,708 --> 00:21:42,828
+So, the case x equals 1 gives us two critical points, 1 minus 1 and 1, 1.
+
+156
+00:21:45,248 --> 00:21:47,568
+So, we get these four critical points.
+
+157
+00:21:48,148 --> 00:21:50,948
+Again, we need to find the second order partial derivatives.
+
+158
+00:21:51,168 --> 00:21:52,028
+What is f x x?
+
+159
+00:21:52,728 --> 00:21:55,428
+Derivative of this with respect to x is 6 y.
+
+160
+00:21:58,068 --> 00:21:58,908
+This y y.
+
+161
+00:21:59,728 --> 00:22:01,668
+Derivative of this with respect to y.
+
+162
+00:22:02,248 --> 00:22:03,288
+This is 0.
+
+163
+00:22:03,348 --> 00:22:04,508
+Derivative of this is 6 y.
+
+164
+00:22:05,148 --> 00:22:06,528
+F y y is also 6 y.
+
+165
+00:22:06,848 --> 00:22:08,228
+This is 6 y.
+
+166
+00:22:08,608 --> 00:22:09,648
+What is f x y?
+
+167
+00:22:10,348 --> 00:22:12,148
+Derivative of this with respect to y.
+
+168
+00:22:12,988 --> 00:22:17,728
+6 x minus 6.
+
+169
+00:22:18,448 --> 00:22:20,068
+So, what is the discriminant?
+
+170
+00:22:21,168 --> 00:22:28,648
+f x x times f y y minus f x y squared is 6 y times 6 y minus this 6 x minus 6 squared.
+
+171
+00:22:29,248 --> 00:22:42,448
+So, again, here this is 36 y squared minus, if you factor 6 out here, this is 6 times x minus 1 squared, which is, this is 36 y squared minus, this is 36 times x minus 1 squared.
+
+172
+00:22:42,448 --> 00:22:47,948
+So, if we factor 36 out, this is y squared minus x minus 1 squared.
+
+173
+00:22:48,908 --> 00:22:50,988
+So, y squared minus x minus 1 squared.
+
+174
+00:22:51,488 --> 00:22:52,328
+36 times that.
+
+175
+00:22:52,328 --> 00:23:10,928
+So, y squared minus 1 squared.
+
+176
+00:22:53,172 --> 00:22:54,172
+Tamam, bu da.
+
+177
+00:22:54,172 --> 00:24:24,172
+Bu da.
+
+178
+00:24:23,443 --> 00:24:26,003
+Okay, let's continue with the next one.
+
+179
+00:24:27,043 --> 00:24:32,584
+And then classify the critical points of fxy equals x minus 1, y plus 1, x plus y minus 3.
+
+180
+00:24:42,516 --> 00:24:46,115
+Okay, here, this is given in factored form, actually.
+
+181
+00:24:46,576 --> 00:24:50,056
+If xy equals x minus 1 times y plus 1 times x plus y minus 3.
+
+182
+00:24:50,416 --> 00:24:57,536
+Of course, we can multiply this out, write a long expression and then differentiate it, if you like.
+
+183
+00:24:57,736 --> 00:25:00,516
+Or we can differentiate it using the product rule immediately.
+
+184
+00:25:01,756 --> 00:25:06,516
+So, derivative of this with respect to x is what?
+
+185
+00:25:06,976 --> 00:25:11,596
+Note that when we differentiate it with respect to x, this part, y plus 1, is a constant.
+
+186
+00:25:11,596 --> 00:25:15,375
+So, just take it out, y plus 1, that's a constant.
+
+187
+00:25:15,956 --> 00:25:21,615
+So, we will differentiate x minus 1 times x plus y minus 3.
+
+188
+00:25:22,036 --> 00:25:23,875
+So, derivative, we use the product rule.
+
+189
+00:25:24,016 --> 00:25:34,316
+Derivative of x minus 1 is 1 times x plus y minus 3 plus x minus 1 itself times derivative of x plus y minus 3 with respect to x, which is 1.
+
+190
+00:25:34,736 --> 00:25:35,536
+So, we get this.
+
+191
+00:25:36,135 --> 00:25:38,036
+And then we simplify this, what do we get?
+
+192
+00:25:38,096 --> 00:25:39,236
+This is y plus 1 times.
+
+193
+00:25:39,236 --> 00:25:42,196
+This is 2x plus y minus 4.
+
+194
+00:25:42,796 --> 00:25:43,496
+We get this.
+
+195
+00:25:44,976 --> 00:25:50,135
+Okay, now, when we differentiate it with respect to y, in this case, this part.
+
+196
+00:25:50,516 --> 00:25:51,756
+x minus 1 is a constant.
+
+197
+00:25:51,896 --> 00:25:52,756
+So, we take it out.
+
+198
+00:25:52,756 --> 00:25:57,436
+So, we will differentiate this product with respect to y.
+
+199
+00:25:57,936 --> 00:25:59,316
+Again, using the product rule.
+
+200
+00:25:59,716 --> 00:26:09,096
+Derivative of y plus 1 is 1 times x plus y minus 3 plus y plus 1 itself times derivative of x plus y minus 3 with respect to y, which is 1.
+
+201
+00:26:09,896 --> 00:26:10,696
+We get this.
+
+202
+00:26:10,836 --> 00:26:13,056
+So, when we simplify this part, what do we get?
+
+203
+00:26:13,056 --> 00:26:15,115
+We get x plus 2y minus 2.
+
+204
+00:26:15,176 --> 00:26:16,355
+x plus 2y minus 2.
+
+205
+00:26:16,796 --> 00:26:18,016
+So, x minus 1 times 10.
+
+206
+00:26:18,516 --> 00:26:20,976
+So, these are the partial derivatives with respect to x and y.
+
+207
+00:26:24,216 --> 00:26:26,635
+Again, fx and fy are defined everywhere.
+
+208
+00:26:26,635 --> 00:26:31,696
+So, only the critical points occur only when they are both equal to 0.
+
+209
+00:26:33,696 --> 00:26:35,635
+So, let's start with...
+
+210
+00:26:37,635 --> 00:26:41,816
+I mean, neither of these is less complicated than the other.
+
+211
+00:26:41,936 --> 00:26:43,756
+So, it doesn't matter which one you start with.
+
+212
+00:26:44,016 --> 00:26:44,976
+Let's start with fx.
+
+213
+00:26:44,976 --> 00:26:48,855
+So, if fx is equal to 0, if x is equal to 0, what does that mean?
+
+214
+00:26:48,936 --> 00:26:55,576
+Either this, either y plus 1 is equal to 0, or this, 2x plus y minus 4 is equal to 0.
+
+215
+00:26:56,056 --> 00:26:58,836
+If this is the case, it means y is minus 1.
+
+216
+00:27:00,036 --> 00:27:01,635
+If this is y is minus 1.
+
+217
+00:27:02,135 --> 00:27:06,276
+Or if this is the case, it means y is minus 2x plus 4.
+
+218
+00:27:06,896 --> 00:27:07,836
+So, we have two cases.
+
+219
+00:27:08,996 --> 00:27:10,916
+The first, fx equals 0.
+
+220
+00:27:11,416 --> 00:27:13,576
+The equation fx equals 0 gives us two cases.
+
+221
+00:27:13,576 --> 00:27:17,336
+Now, we will put them into the equation fy equals 0.
+
+222
+00:27:17,996 --> 00:27:20,855
+In the first case, y is minus 1.
+
+223
+00:27:22,476 --> 00:27:24,296
+fy is equal to 0 gives us what?
+
+224
+00:27:24,496 --> 00:27:25,176
+fy is what?
+
+225
+00:27:25,256 --> 00:27:26,855
+x minus 1 times...
+
+226
+00:27:26,855 --> 00:27:30,916
+So, when y is minus 1, if you put it here, this is minus 2.
+
+227
+00:27:30,976 --> 00:27:32,896
+So, we get x minus 2 minus 2 equals 0.
+
+228
+00:27:33,236 --> 00:27:37,156
+So, this equation gives us either x is equal to 1 or x is equal to 4.
+
+229
+00:27:37,855 --> 00:27:38,436
+We get this.
+
+230
+00:27:38,696 --> 00:27:40,436
+So, that gives us...
+
+231
+00:27:40,436 --> 00:27:42,496
+So, when y is minus 1,
+
+232
+00:27:42,496 --> 00:27:44,176
+x is 1 or 4.
+
+233
+00:27:44,456 --> 00:27:46,416
+So, we get 1 minus 1 and 4 minus 1.
+
+234
+00:27:46,576 --> 00:27:48,036
+We get these two critical points.
+
+235
+00:27:49,655 --> 00:27:53,096
+This is the second case, when y is minus 2x plus 4.
+
+236
+00:27:53,576 --> 00:27:56,516
+If you put that into fy equals 0, what do we get?
+
+237
+00:27:56,615 --> 00:27:58,256
+fy is x minus 1 times...
+
+238
+00:27:58,996 --> 00:28:01,176
+...x plus 2y.
+
+239
+00:28:01,416 --> 00:28:02,556
+2 times y is what?
+
+240
+00:28:02,936 --> 00:28:05,096
+2 times y is minus 4x plus 8.
+
+241
+00:28:05,096 --> 00:28:06,716
+Here, minus 4x plus 8.
+
+242
+00:28:06,796 --> 00:28:08,556
+That's 2y minus 2.
+
+243
+00:28:09,436 --> 00:28:10,176
+Which gives...
+
+244
+00:28:11,176 --> 00:28:13,176
+This gives x minus 1 times...
+
+245
+00:28:14,096 --> 00:28:15,855
+This is minus 3x plus 6.
+
+246
+00:28:16,176 --> 00:28:16,696
+It equals 0.
+
+247
+00:28:17,456 --> 00:28:19,736
+So, either this is 0, which means x is 1.
+
+248
+00:28:19,976 --> 00:28:21,176
+Or this is 0, which means...
+
+249
+00:28:22,376 --> 00:28:23,756
+...x is 2.
+
+250
+00:28:23,756 --> 00:28:30,855
+So, when y is minus 2x plus 4, x is 1 or x is 2.
+
+251
+00:28:31,416 --> 00:28:34,336
+So, if x is 1, what is y?
+
+252
+00:28:34,476 --> 00:28:37,876
+When x is 1, in this case, y is minus 2x plus 4.
+
+253
+00:28:37,956 --> 00:28:40,115
+So, y is minus 2 plus 4, which is 2.
+
+254
+00:28:40,436 --> 00:28:41,336
+So, we get this point.
+
+255
+00:28:41,336 --> 00:29:05,336
+So, y is minus 1.
+
+256
+00:28:41,907 --> 00:28:42,907
+We get this point.
+
+257
+00:28:43,048 --> 00:28:44,167
+When x is 1, y is 2.
+
+258
+00:28:44,967 --> 00:28:45,887
+We get 1, 2.
+
+259
+00:28:46,307 --> 00:28:47,587
+On the other hand, the second is,
+
+260
+00:28:47,727 --> 00:28:48,487
+when x is 2,
+
+261
+00:28:49,167 --> 00:28:50,788
+when x is 2, we get y is
+
+262
+00:28:50,788 --> 00:28:52,548
+minus 4 plus 4, which is 0.
+
+263
+00:28:53,187 --> 00:28:55,048
+When x is 2, we get y is equal to 0.
+
+264
+00:28:55,467 --> 00:28:56,367
+So we get this point.
+
+265
+00:28:57,747 --> 00:28:58,767
+When x is 2, y is 0.
+
+266
+00:28:59,227 --> 00:29:00,767
+So we get these four points.
+
+267
+00:29:02,227 --> 00:29:04,407
+1 minus 1, 4 minus 1.
+
+268
+00:29:05,647 --> 00:29:07,407
+1 minus 1, 4 minus 1,
+
+269
+00:29:07,487 --> 00:29:08,567
+1, 2, and 2, 0.
+
+270
+00:29:08,567 --> 00:29:09,967
+We get these four points.
+
+271
+00:29:09,967 --> 00:29:12,647
+Okay, what is next?
+
+272
+00:29:13,167 --> 00:29:14,687
+As usual, now we will,
+
+273
+00:29:15,207 --> 00:29:17,027
+we need to find the second order
+
+274
+00:29:17,027 --> 00:29:17,727
+partial derivatives.
+
+275
+00:29:18,107 --> 00:29:20,227
+So apply the second derivative test.
+
+276
+00:29:21,027 --> 00:29:22,548
+Where is fx of f1?
+
+277
+00:29:22,788 --> 00:29:23,607
+fx is here.
+
+278
+00:29:25,707 --> 00:29:27,247
+We need to differentiate this
+
+279
+00:29:27,247 --> 00:29:29,387
+with respect to x to find fxx.
+
+280
+00:29:29,687 --> 00:29:31,347
+So y plus 1 is a constant here.
+
+281
+00:29:32,187 --> 00:29:33,527
+y plus 1 is a constant here.
+
+282
+00:29:33,607 --> 00:29:34,967
+Just take it over there.
+
+283
+00:29:35,507 --> 00:29:37,407
+Then derivative of this
+
+284
+00:29:37,407 --> 00:29:38,867
+with respect to x is just 2.
+
+285
+00:29:39,967 --> 00:29:41,847
+We get y plus 1 times 2,
+
+286
+00:29:41,907 --> 00:29:43,487
+which is 2 times y plus 1.
+
+287
+00:29:43,847 --> 00:29:44,288
+Let's write it.
+
+288
+00:29:45,227 --> 00:29:46,167
+This is fyy.
+
+289
+00:29:47,427 --> 00:29:48,887
+We'll differentiate this one
+
+290
+00:29:48,887 --> 00:29:49,847
+with respect to y.
+
+291
+00:29:50,307 --> 00:29:51,887
+x minus 1 is a constant there.
+
+292
+00:29:52,107 --> 00:29:53,147
+Just leave it like that.
+
+293
+00:29:53,427 --> 00:29:54,367
+Derivative of this part
+
+294
+00:29:54,367 --> 00:29:55,527
+with respect to y is 2.
+
+295
+00:29:55,907 --> 00:29:57,607
+So we get 2 times x minus 1.
+
+296
+00:29:57,607 --> 00:29:58,607
+here.
+
+297
+00:29:58,607 --> 00:29:59,847
+So,
+
+298
+00:29:59,987 --> 00:30:02,367
+fx, y.
+
+299
+00:30:03,487 --> 00:30:04,747
+Find fx, y.
+
+300
+00:30:06,767 --> 00:30:07,207
+Here,
+
+301
+00:30:07,447 --> 00:30:08,987
+we need to differentiate this
+
+302
+00:30:08,987 --> 00:30:10,567
+with respect to y.
+
+303
+00:30:11,527 --> 00:30:13,048
+We need to apply the product flow
+
+304
+00:30:13,048 --> 00:30:13,667
+in this case.
+
+305
+00:30:13,667 --> 00:30:17,367
+because both factors involve y.
+
+306
+00:30:17,847 --> 00:30:19,227
+Derivative of y plus 1,
+
+307
+00:30:19,307 --> 00:30:19,867
+which is 1,
+
+308
+00:30:20,507 --> 00:30:22,527
+times 2x plus y minus 4,
+
+309
+00:30:22,827 --> 00:30:23,147
+here,
+
+310
+00:30:23,847 --> 00:30:26,007
+plus y plus 1 itself,
+
+311
+00:30:26,607 --> 00:30:26,947
+here,
+
+312
+00:30:27,327 --> 00:30:29,507
+times derivative of 2x plus y minus 4
+
+313
+00:30:29,507 --> 00:30:30,427
+with respect to y,
+
+314
+00:30:30,627 --> 00:30:31,127
+which is 1.
+
+315
+00:30:32,048 --> 00:30:32,907
+So we get that.
+
+316
+00:30:35,407 --> 00:30:36,407
+We get that,
+
+317
+00:30:36,827 --> 00:30:38,147
+which is simplified as,
+
+318
+00:30:38,147 --> 00:30:42,467
+so this is 2x plus 2y minus 3.
+
+319
+00:30:42,587 --> 00:30:44,367
+2x plus 2y minus 3.
+
+320
+00:30:44,907 --> 00:30:46,247
+That's what fxy is.
+
+321
+00:30:47,307 --> 00:30:47,527
+So,
+
+322
+00:30:48,847 --> 00:30:49,967
+what is the discriminant?
+
+323
+00:30:50,247 --> 00:30:52,527
+fx, x, fy, y minus fxy squared,
+
+324
+00:30:52,707 --> 00:30:53,147
+which is,
+
+325
+00:30:54,307 --> 00:30:55,687
+here's fx, x,
+
+326
+00:30:56,227 --> 00:30:57,247
+2y plus 1,
+
+327
+00:30:57,307 --> 00:30:58,548
+and here's fyy,
+
+328
+00:30:58,747 --> 00:30:59,527
+2x plus 1.
+
+329
+00:30:59,607 --> 00:31:00,587
+When we multiply them,
+
+330
+00:31:00,647 --> 00:31:01,727
+we get 4 times
+
+331
+00:31:01,727 --> 00:31:03,747
+y plus 1 times x minus 1.
+
+332
+00:31:04,327 --> 00:31:06,907
+This minus fxy squared
+
+333
+00:31:06,907 --> 00:31:07,947
+minus this 1 squared.
+
+334
+00:31:08,147 --> 00:31:09,827
+So,
+
+335
+00:31:09,967 --> 00:31:10,288
+let's,
+
+336
+00:31:10,607 --> 00:31:12,347
+let's leave it like this,
+
+337
+00:31:12,427 --> 00:31:13,627
+and let's compute the,
+
+338
+00:31:14,187 --> 00:31:19,427
+value of this discriminant
+
+339
+00:31:19,427 --> 00:31:20,027
+that these two,
+
+340
+00:31:20,127 --> 00:31:21,167
+four critical points.
+
+341
+00:31:21,288 --> 00:31:21,407
+So,
+
+342
+00:31:21,827 --> 00:31:22,307
+remember,
+
+343
+00:31:22,687 --> 00:31:23,907
+what were the critical points?
+
+344
+00:31:24,067 --> 00:31:24,887
+1 minus 1,
+
+345
+00:31:25,067 --> 00:31:25,768
+4 minus 1,
+
+346
+00:31:26,027 --> 00:31:27,027
+1, 2, 2, 0.
+
+347
+00:31:27,927 --> 00:31:28,607
+1 minus 1,
+
+348
+00:31:28,647 --> 00:31:29,207
+4 minus 1,
+
+349
+00:31:29,247 --> 00:31:29,947
+1, 2, 2, 0.
+
+350
+00:31:30,447 --> 00:31:31,607
+That's 1 minus 1,
+
+351
+00:31:32,288 --> 00:31:32,907
+what do we get?
+
+352
+00:31:35,567 --> 00:31:36,007
+So,
+
+353
+00:31:36,007 --> 00:31:36,887
+when x is 1,
+
+354
+00:31:36,987 --> 00:31:37,387
+basically,
+
+355
+00:31:37,387 --> 00:31:38,307
+when x is 1,
+
+356
+00:31:38,387 --> 00:31:38,907
+this is 0,
+
+357
+00:31:39,087 --> 00:31:39,288
+right?
+
+358
+00:31:39,347 --> 00:31:40,087
+This part is 0.
+
+359
+00:31:41,087 --> 00:31:41,467
+So,
+
+360
+00:31:41,567 --> 00:31:42,427
+what do we get here?
+
+361
+00:31:44,207 --> 00:31:44,567
+2x,
+
+362
+00:31:44,647 --> 00:31:45,288
+this is 2,
+
+363
+00:31:45,487 --> 00:31:46,607
+plus 2y,
+
+364
+00:31:47,307 --> 00:31:48,007
+that's minus 2,
+
+365
+00:31:48,047 --> 00:31:48,667
+we get 0,
+
+366
+00:31:49,347 --> 00:31:50,587
+minus 3 squared is 9,
+
+367
+00:31:50,587 --> 00:31:51,587
+so we get minus 9.
+
+368
+00:31:52,067 --> 00:31:53,007
+We get minus 9,
+
+369
+00:31:53,147 --> 00:31:54,247
+which is a negative number,
+
+370
+00:31:54,367 --> 00:31:55,048
+so that's the second,
+
+371
+00:31:55,048 --> 00:31:55,768
+second point,
+
+372
+00:31:55,847 --> 00:31:56,268
+settle point.
+
+373
+00:31:57,407 --> 00:31:58,427
+4 minus 1,
+
+374
+00:31:58,907 --> 00:31:59,548
+the next point,
+
+375
+00:31:59,807 --> 00:32:01,907
+so when y is minus 1,
+
+376
+00:32:02,048 --> 00:32:03,187
+when y is minus 1,
+
+377
+00:32:03,607 --> 00:32:04,427
+this part,
+
+378
+00:32:04,507 --> 00:32:05,387
+y plus 1 is 0,
+
+379
+00:32:05,467 --> 00:32:06,527
+so this is completely 0.
+
+380
+00:32:07,527 --> 00:32:08,967
+And when x is 4,
+
+381
+00:32:09,107 --> 00:32:09,967
+y is minus 1,
+
+382
+00:32:10,007 --> 00:32:10,527
+what do we get?
+
+383
+00:32:10,707 --> 00:32:11,307
+This is 8,
+
+384
+00:32:11,307 --> 00:32:13,567
+8 minus 2 is 6,
+
+385
+00:32:13,627 --> 00:32:14,667
+6 minus 3 is 3,
+
+386
+00:32:14,768 --> 00:32:15,507
+3 squared is 9,
+
+387
+00:32:15,667 --> 00:32:16,567
+so we get minus 9,
+
+388
+00:32:16,707 --> 00:32:18,288
+which is negative,
+
+389
+00:32:18,427 --> 00:32:19,647
+so this is also a settle point.
+
+390
+00:32:20,427 --> 00:32:20,867
+At 1,
+
+391
+00:32:20,947 --> 00:32:21,147
+2,
+
+392
+00:32:21,647 --> 00:32:21,987
+again,
+
+393
+00:32:22,067 --> 00:32:23,048
+when x is 1,
+
+394
+00:32:23,227 --> 00:32:24,467
+this part is 0,
+
+395
+00:32:24,987 --> 00:32:25,927
+completely 0.
+
+396
+00:32:26,548 --> 00:32:27,307
+When x is 1,
+
+397
+00:32:27,447 --> 00:32:28,527
+we get 2 plus,
+
+398
+00:32:28,947 --> 00:32:29,667
+y is 2,
+
+399
+00:32:29,768 --> 00:32:30,847
+we get 4,
+
+400
+00:32:30,947 --> 00:32:31,867
+2 plus 4 is 6,
+
+401
+00:32:31,927 --> 00:32:33,288
+minus 3 is 3,
+
+402
+00:32:33,647 --> 00:32:34,427
+3 squared is 9,
+
+403
+00:32:34,527 --> 00:32:34,768
+again,
+
+404
+00:32:34,847 --> 00:32:35,768
+we get minus 9,
+
+405
+00:32:36,347 --> 00:32:37,067
+which is negative,
+
+406
+00:32:37,067 --> 00:32:38,447
+so this is also a settle point.
+
+407
+00:32:38,847 --> 00:32:40,207
+So we get 3 settle points
+
+408
+00:32:40,207 --> 00:32:40,807
+in this case.
+
+409
+00:32:41,683 --> 00:32:43,543
+And the last one is 2,0.
+
+410
+00:32:44,223 --> 00:32:45,824
+When x is 2, y is 0.
+
+411
+00:32:46,324 --> 00:32:49,163
+In this case, so y is 0, this is 1.
+
+412
+00:32:49,723 --> 00:32:52,523
+So this is 4 times 1 times 1, which is 4.
+
+413
+00:32:52,864 --> 00:32:59,303
+This part is 4 minus 4 plus 0 minus 3 is 1 squared, which is 1.
+
+414
+00:32:59,303 --> 00:33:01,703
+So 4 minus 1 is 3, which is positive in this case.
+
+415
+00:33:02,283 --> 00:33:04,523
+So when the discriminant is positive, we look at fxx.
+
+416
+00:33:04,864 --> 00:33:05,503
+What is fxx?
+
+417
+00:33:06,023 --> 00:33:08,104
+Fxx is here, 2 times y plus 1.
+
+418
+00:33:08,463 --> 00:33:10,803
+2 times y plus 1, which is 1.
+
+419
+00:33:10,803 --> 00:33:11,983
+2 times 1 is 2.
+
+420
+00:33:12,663 --> 00:33:13,804
+fxx is positive.
+
+421
+00:33:14,163 --> 00:33:15,543
+Therefore, it's a local minimum.
+
+422
+00:33:18,463 --> 00:33:19,023
+Okay.
+
+423
+00:33:20,023 --> 00:33:21,283
+The next question.
+
+424
+00:33:22,163 --> 00:33:23,543
+Again, same type of question.
+
+425
+00:33:23,543 --> 00:33:31,523
+Find and classify critical points of fxy equals xy plus 1 over x plus 8 over y.
+
+426
+00:33:35,955 --> 00:33:36,735
+Let me see.
+
+427
+00:33:37,895 --> 00:33:43,215
+1, 2, 3, 4, 4 questions are left.
+
+428
+00:33:43,836 --> 00:33:44,815
+No, 5 questions.
+
+429
+00:33:45,815 --> 00:33:47,855
+Okay, 5 questions are left.
+
+430
+00:34:02,900 --> 00:34:04,140
+I'll be back in a second.
+
+431
+00:35:33,331 --> 00:35:34,331
+Okay, I'm back again.
+
+432
+00:35:38,331 --> 00:35:39,431
+Okay, let's continue.
+
+433
+00:35:39,871 --> 00:35:42,092
+So again, same type of question.
+
+434
+00:35:42,351 --> 00:35:44,632
+Find and classify the critical points of fxy
+
+435
+00:35:44,632 --> 00:35:47,051
+equals xy plus 1 over x plus 8 over y.
+
+436
+00:35:49,991 --> 00:35:50,471
+Okay.
+
+437
+00:35:51,391 --> 00:35:52,891
+Now, what is f again?
+
+438
+00:35:53,051 --> 00:35:53,791
+What is fx?
+
+439
+00:35:58,692 --> 00:36:00,551
+fx is here.
+
+440
+00:36:01,551 --> 00:36:02,511
+We get y.
+
+441
+00:36:03,331 --> 00:36:05,811
+Then derivative of 1 over x is minus 1 over x squared.
+
+442
+00:36:05,891 --> 00:36:06,871
+Then derivative of this is 0.
+
+443
+00:36:06,951 --> 00:36:08,551
+So we get y minus 1 over x squared.
+
+444
+00:36:09,172 --> 00:36:09,931
+What is fy?
+
+445
+00:36:10,751 --> 00:36:12,092
+Derivative of this is x.
+
+446
+00:36:13,071 --> 00:36:14,031
+Derivative of this is 0.
+
+447
+00:36:14,152 --> 00:36:17,051
+Derivative of 8 over y is minus 8 over y squared.
+
+448
+00:36:17,192 --> 00:36:17,871
+We get this one.
+
+449
+00:36:18,711 --> 00:36:22,231
+So now, in this case, fx and fy are not defined everywhere.
+
+450
+00:36:22,771 --> 00:36:25,271
+So fx is undefined when x is 0.
+
+451
+00:36:26,331 --> 00:36:27,711
+fx is undefined when x is 0.
+
+452
+00:36:27,711 --> 00:36:37,231
+So those values of x, those values of x, those points whose x value is 0 may give a critical point.
+
+453
+00:36:37,331 --> 00:36:37,971
+But let's see.
+
+454
+00:36:38,531 --> 00:36:41,771
+When x is 0, the function itself is undefined already.
+
+455
+00:36:41,771 --> 00:36:44,771
+But when x is 0, it is also undefined.
+
+456
+00:36:45,051 --> 00:36:47,571
+Therefore, there is no critical point with x equals 0.
+
+457
+00:36:47,991 --> 00:36:54,211
+Because those points where x equals 0 are not in the domain of the function, so they cannot be critical points.
+
+458
+00:36:54,951 --> 00:36:57,571
+Similarly, fy is undefined when y is 0.
+
+459
+00:36:57,571 --> 00:37:03,571
+But when y is 0, the function itself is already undefined.
+
+460
+00:37:04,192 --> 00:37:07,132
+Therefore, again, it doesn't give any critical point.
+
+461
+00:37:09,172 --> 00:37:13,951
+So, again, the only critical points are pure when fx and fy are both equal to 0.
+
+462
+00:37:16,431 --> 00:37:18,211
+fx and fy are both equal to 0.
+
+463
+00:37:18,391 --> 00:37:19,451
+So where are they?
+
+464
+00:37:21,031 --> 00:37:22,711
+So fx is equal to 0.
+
+465
+00:37:22,851 --> 00:37:23,811
+What does that give us?
+
+466
+00:37:23,811 --> 00:37:27,551
+fx is equal to 0 is us y is equal to 1 over x squared.
+
+467
+00:37:28,592 --> 00:37:32,351
+And if we set fy is equal to 0, what does that give us?
+
+468
+00:37:32,451 --> 00:37:34,931
+It gives us x is equal to 8 over y squared.
+
+469
+00:37:35,551 --> 00:37:37,072
+So we get these two occasions.
+
+470
+00:37:37,391 --> 00:37:38,692
+y is equal to 1 over x squared.
+
+471
+00:37:38,831 --> 00:37:40,172
+x is equal to 8 over y squared.
+
+472
+00:37:40,672 --> 00:37:44,072
+So just plug in one of them into the other.
+
+473
+00:37:44,771 --> 00:37:50,811
+If we just let x equals 8 over y squared, then just replace y with...
+
+474
+00:37:50,811 --> 00:37:54,771
+So in the second equation, if we replace y with 1 over x squared, what do we get?
+
+475
+00:37:55,251 --> 00:37:56,551
+We get 8 over...
+
+476
+00:37:56,551 --> 00:37:59,672
+Instead of y squared, we will write 1 over x to the power 4.
+
+477
+00:38:00,071 --> 00:38:01,951
+So we get 8 x to the power 4.
+
+478
+00:38:02,351 --> 00:38:04,692
+So x is equal to 8 x to the power 4.
+
+479
+00:38:05,091 --> 00:38:08,551
+So from this equation, we get 8 x to the power 4 minus x is equal to 0.
+
+480
+00:38:08,551 --> 00:38:15,112
+If factor x out, get x times 8 x cubed minus 1 is 0.
+
+481
+00:38:15,991 --> 00:38:17,991
+x times 8 x cubed minus 1 is 0.
+
+482
+00:38:20,271 --> 00:38:24,771
+Of course, here don't cancel out x's from both sides of the equation.
+
+483
+00:38:25,612 --> 00:38:28,711
+So this equation, x is equal to 8 x to the power 4.
+
+484
+00:38:28,711 --> 00:38:34,391
+You can cancel x's out from both sides of the equation if you know that x is not 0.
+
+485
+00:38:36,632 --> 00:38:42,831
+But actually, yeah, you could do that because you could do that since we know that x is not...
+
+486
+00:38:42,831 --> 00:38:45,231
+x is equal to 0 is not in the domain of the function.
+
+487
+00:38:45,632 --> 00:38:48,211
+We could actually cancel out x's from both sides of the equation.
+
+488
+00:38:48,311 --> 00:38:53,531
+But in general, in general, while solving such an equation, of course, we cannot cancel them out.
+
+489
+00:38:53,531 --> 00:39:00,672
+So if we throw one to the other side of the equation, get such an equation, polynomial equation,
+
+490
+00:39:00,851 --> 00:39:02,251
+then factor...
+
+491
+00:39:02,251 --> 00:39:05,731
+When we factor this, this is x times 8 x cubed minus 1 is 0.
+
+492
+00:39:06,211 --> 00:39:09,711
+So either x is 0, which is not in the domain of the function.
+
+493
+00:39:09,931 --> 00:39:11,731
+So that does this part...
+
+494
+00:39:11,731 --> 00:39:13,711
+This does not give us any critical point.
+
+495
+00:39:14,132 --> 00:39:16,391
+Or the second case is 8 x cubed is 1.
+
+496
+00:39:17,072 --> 00:39:18,051
+8 x cubed is 1.
+
+497
+00:39:18,112 --> 00:39:20,871
+So x cubed is 1 over 8, which means x is 1 over 2.
+
+498
+00:39:21,612 --> 00:39:23,072
+So x is 1 over 2.
+
+499
+00:39:23,072 --> 00:39:26,072
+So if you put that...
+
+500
+00:39:26,072 --> 00:39:28,072
+Into this...
+
+501
+00:39:28,072 --> 00:39:32,072
+X is 1 over 2, we get y is 1 over...
+
+502
+00:39:32,947 --> 00:39:34,268
+1 over 2 squared,
+
+503
+00:39:35,087 --> 00:39:36,847
+which is 1 over 1 over 4, which is 4.
+
+504
+00:39:37,467 --> 00:39:38,827
+That's the only critical point.
+
+505
+00:39:39,127 --> 00:39:40,547
+This is 1 over 2, y is 4.
+
+506
+00:39:40,967 --> 00:39:42,347
+There's only one critical point.
+
+507
+00:39:43,527 --> 00:39:47,167
+So now, again, to apply the second derivative test,
+
+508
+00:39:47,248 --> 00:39:49,288
+we will find xx.
+
+509
+00:39:49,288 --> 00:39:51,907
+So, this is fx.
+
+510
+00:39:53,087 --> 00:39:55,687
+Derivative of this with respect to x is what?
+
+511
+00:39:55,927 --> 00:39:56,887
+Derivative of this is 0.
+
+512
+00:39:57,647 --> 00:40:01,027
+So, this is minus x to the power minus 2.
+
+513
+00:40:01,027 --> 00:40:03,307
+When we differentiate it,
+
+514
+00:40:03,347 --> 00:40:06,027
+we get 2 times x to the power minus 3.
+
+515
+00:40:06,248 --> 00:40:07,327
+2 over x to the power 3.
+
+516
+00:40:08,187 --> 00:40:09,007
+This is fyy.
+
+517
+00:40:09,607 --> 00:40:10,407
+This is 0.
+
+518
+00:40:10,947 --> 00:40:13,887
+This is minus 8 times y to the power minus 2.
+
+519
+00:40:14,288 --> 00:40:15,387
+When we differentiate it,
+
+520
+00:40:15,387 --> 00:40:17,587
+we get minus 8 times minus 2,
+
+521
+00:40:17,667 --> 00:40:19,847
+which is 16 times y to the power minus 3.
+
+522
+00:40:20,487 --> 00:40:22,268
+That's 16 over y to the power 3.
+
+523
+00:40:23,007 --> 00:40:24,187
+And what is fxy?
+
+524
+00:40:24,827 --> 00:40:28,847
+Derivative of this with respect to y is what?
+
+525
+00:40:29,667 --> 00:40:29,927
+Here.
+
+526
+00:40:29,927 --> 00:40:35,248
+So, discriminant of this function is fx,
+
+527
+00:40:35,307 --> 00:40:37,027
+xfy minus fxy squared.
+
+528
+00:40:37,147 --> 00:40:41,307
+This 2 over x cubed times 16 over y cubed minus this one squared,
+
+529
+00:40:41,407 --> 00:40:41,827
+one squared.
+
+530
+00:40:41,927 --> 00:40:45,467
+So, we get 32 over x cubed, y cubed minus 1.
+
+531
+00:40:46,427 --> 00:40:48,427
+So, this is our only critical point.
+
+532
+00:40:48,647 --> 00:40:51,208
+So, at that critical point, what do we get?
+
+533
+00:40:51,567 --> 00:40:55,367
+Value of the discriminant is 32 over x cubed,
+
+534
+00:40:55,367 --> 00:40:57,427
+which is 1 over 8 times y cubed,
+
+535
+00:40:57,487 --> 00:40:59,288
+which is 64 minus 1,
+
+536
+00:40:59,427 --> 00:40:59,847
+which is,
+
+537
+00:41:00,387 --> 00:41:02,127
+so, 64 over 8 is 8 here.
+
+538
+00:41:02,467 --> 00:41:03,688
+32 over 8 is 4.
+
+539
+00:41:03,987 --> 00:41:04,847
+You get 4 minus 1,
+
+540
+00:41:04,887 --> 00:41:05,347
+which is 3,
+
+541
+00:41:05,427 --> 00:41:06,007
+which is positive.
+
+542
+00:41:06,007 --> 00:41:08,047
+So, the discriminant is positive.
+
+543
+00:41:08,268 --> 00:41:09,887
+So, we look at fx, x.
+
+544
+00:41:09,987 --> 00:41:10,827
+What is fx, x?
+
+545
+00:41:10,987 --> 00:41:11,907
+2 over x cubed.
+
+546
+00:41:12,228 --> 00:41:14,288
+2 over x cubed,
+
+547
+00:41:14,427 --> 00:41:15,268
+which is 1 over 8.
+
+548
+00:41:15,367 --> 00:41:16,367
+So, this gives 16,
+
+549
+00:41:16,427 --> 00:41:17,147
+which is positive.
+
+550
+00:41:17,768 --> 00:41:18,627
+Discrimant is positive.
+
+551
+00:41:18,748 --> 00:41:19,627
+fx, x is positive.
+
+552
+00:41:19,627 --> 00:41:21,947
+So, it's a local minimum point.
+
+553
+00:41:25,811 --> 00:41:37,592
+Next question, again, the same type of question. Find and classify the critical points of fxy equals 1 over x plus 4 over y plus 9 over 4 minus x minus 1.
+
+554
+00:41:40,491 --> 00:41:51,271
+What's the partial derivative of this with respect to x? Derivative of 1 over x is minus 1 over x squared. Derivative of this is 0. What is the derivative of this?
+
+555
+00:41:51,271 --> 00:42:04,211
+I mean, let me do it this way. The best way of thinking of this is 9, 9 times, 9 times.
+
+556
+00:42:07,699 --> 00:42:18,939
+9 times 4 minus x minus y to the power minus 1.
+
+557
+00:42:20,599 --> 00:42:24,099
+When you think of it like that, what is this derivative with respect to x?
+
+558
+00:42:24,539 --> 00:42:26,779
+It's 9 times minus 1.
+
+559
+00:42:27,759 --> 00:42:29,119
+9 times minus 1.
+
+560
+00:42:29,239 --> 00:42:33,039
+So, that's minus 9 times 4 minus x minus y to the power minus 2.
+
+561
+00:42:33,460 --> 00:42:35,699
+Times the derivative of the inner function.
+
+562
+00:42:35,699 --> 00:42:38,219
+The derivative of this inner function is minus 1.
+
+563
+00:42:38,879 --> 00:42:40,179
+So, 9 times minus 1.
+
+564
+00:42:40,279 --> 00:42:41,980
+Another minus 1 comes from here.
+
+565
+00:42:42,059 --> 00:42:42,679
+So, we get 9.
+
+566
+00:42:42,960 --> 00:42:48,599
+This times 4 minus x minus y to the power minus 2, which is this, divided by 4 minus x minus y squared.
+
+567
+00:42:49,779 --> 00:42:51,839
+That's the derivative of that with respect to x.
+
+568
+00:42:52,480 --> 00:42:55,500
+What is the derivative of this function with respect to y?
+
+569
+00:42:55,859 --> 00:42:56,439
+This is 0.
+
+570
+00:42:56,819 --> 00:42:58,919
+The derivative of 4 over y is minus 4 over y squared.
+
+571
+00:42:58,919 --> 00:43:02,739
+And similarly, the same way, derivative of this with respect to y is the same.
+
+572
+00:43:02,879 --> 00:43:04,919
+9 over 4 minus x minus y squared.
+
+573
+00:43:05,699 --> 00:43:16,439
+So, again, when we look at fx, fx is undefined when x is 0 or when this 4 minus x minus y is equal to 0.
+
+574
+00:43:16,539 --> 00:43:21,719
+But in both cases, fx itself is also undefined.
+
+575
+00:43:21,879 --> 00:43:24,779
+But when x is 0, fx is undefined.
+
+576
+00:43:24,879 --> 00:43:28,239
+When 4 minus x minus y is equal to 0, again, this is 0.
+
+577
+00:43:28,299 --> 00:43:29,079
+So, fx is undefined.
+
+578
+00:43:29,079 --> 00:43:32,339
+So, those don't give us any critical points.
+
+579
+00:43:32,759 --> 00:43:36,539
+fx is undefined when y is 0 or 4 minus x minus y is 0.
+
+580
+00:43:36,639 --> 00:43:39,500
+And again, in both cases, f is already undefined.
+
+581
+00:43:39,779 --> 00:43:48,319
+Therefore, again, the points where fx or fy are undefined do not give us any critical point
+
+582
+00:43:48,319 --> 00:43:51,599
+because those points are not in the domain of the function.
+
+583
+00:43:52,399 --> 00:43:56,599
+So, again, the only critical points occur and fx and fy are both equal to 0.
+
+584
+00:43:57,259 --> 00:44:02,480
+When we set them equal to 0, fx is equal to 0 gives us 1 over x.
+
+585
+00:44:02,619 --> 00:44:08,460
+If you throw one to the other side, so we get 1 over x squared is equal to 9 over 4 minus x minus y squared.
+
+586
+00:44:08,460 --> 00:44:14,099
+And fy is equal to 0 gives us 4 over y squared equals 9 over 4 minus x minus y squared.
+
+587
+00:44:16,559 --> 00:44:19,559
+From this, of course, now we need to solve these two equations.
+
+588
+00:44:20,039 --> 00:44:22,279
+What I prefer here is, what do we see?
+
+589
+00:44:22,339 --> 00:44:23,779
+We see that the right-hand sides are equal.
+
+590
+00:44:24,399 --> 00:44:26,759
+So, since the right-hand sides of these two equations are equal,
+
+591
+00:44:27,739 --> 00:44:33,179
+I would prefer to set the left-hand sides equal because that's going to give us a simple equation.
+
+592
+00:44:34,299 --> 00:44:38,179
+So, since these are both equal to 9 over 4 minus x minus y squared,
+
+593
+00:44:38,179 --> 00:44:40,399
+so 1 over x squared is equal to 4 over y squared.
+
+594
+00:44:40,799 --> 00:44:41,819
+What do we get from here?
+
+595
+00:44:41,919 --> 00:44:43,799
+We get y squared is equal to 4x squared.
+
+596
+00:44:44,399 --> 00:44:49,519
+So, y squared is 2x squared, which means that y is plus or minus 2x.
+
+597
+00:44:50,059 --> 00:44:51,559
+y is plus or minus 2x.
+
+598
+00:44:51,659 --> 00:44:53,460
+We get these equations, this equation.
+
+599
+00:44:54,439 --> 00:44:57,980
+So, we can put that, so we have two cases,
+
+600
+00:44:58,279 --> 00:45:00,480
+either y is minus 2x or y is plus 2x.
+
+601
+00:45:01,019 --> 00:45:03,359
+We can put that into one of these equations.
+
+602
+00:45:04,579 --> 00:45:06,299
+Let's put that into the first equation.
+
+603
+00:45:06,299 --> 00:45:09,039
+If we put that into the second equation,
+
+604
+00:45:09,139 --> 00:45:13,419
+we will get the same thing because we already made use of the fact that these two are equal
+
+605
+00:45:13,419 --> 00:45:15,980
+while finding y is plus or minus 2x.
+
+606
+00:45:16,019 --> 00:45:20,599
+So, it doesn't matter which one we put this into now.
+
+607
+00:45:21,039 --> 00:45:22,319
+So, let's use the first one.
+
+608
+00:45:22,899 --> 00:45:25,119
+So, when y is minus 2x, that's the first case.
+
+609
+00:45:25,699 --> 00:45:26,719
+What do we get here?
+
+610
+00:45:26,719 --> 00:45:34,299
+1 over x squared is equal to 9 over 4 minus x minus y minus y is plus 2x.
+
+611
+00:45:34,359 --> 00:45:36,599
+So, 4 minus x plus 2x, that's 4 plus x.
+
+612
+00:45:37,079 --> 00:45:38,159
+4 plus x squared.
+
+613
+00:45:38,739 --> 00:45:39,379
+We get this.
+
+614
+00:45:39,939 --> 00:45:41,039
+What does this mean?
+
+615
+00:45:41,239 --> 00:45:44,279
+This means 4 plus x squared is equal to 9x squared.
+
+616
+00:45:44,419 --> 00:45:46,299
+9x squared is this 3x squared.
+
+617
+00:45:46,299 --> 00:45:50,599
+So, 4 plus x is plus or minus 3x.
+
+618
+00:45:51,859 --> 00:45:53,179
+So, we get two cases.
+
+619
+00:45:53,599 --> 00:45:59,739
+Either 4 plus x is minus 3x, which means we get minus 4x is 4.
+
+620
+00:45:59,839 --> 00:46:00,859
+So, x is minus 1.
+
+621
+00:46:01,299 --> 00:46:02,259
+That's the first case.
+
+622
+00:46:02,259 --> 00:46:05,460
+or 4 plus x is plus 3x.
+
+623
+00:46:05,460 --> 00:46:07,460
+So, we get this.
+
+624
+00:46:05,807 --> 00:46:08,547
+...which gives us 2x equals 4, so x is equal to 2.
+
+625
+00:46:08,887 --> 00:46:10,588
+We get two solutions.
+
+626
+00:46:11,347 --> 00:46:14,907
+So, these are the cases when y is minus 2x.
+
+627
+00:46:15,268 --> 00:46:21,347
+If x is minus 1, if x is minus 1, y is minus 2 times that, which is 2.
+
+628
+00:46:21,967 --> 00:46:22,967
+We get this point.
+
+629
+00:46:23,487 --> 00:46:24,728
+X is minus 1, y is 2.
+
+630
+00:46:25,188 --> 00:46:28,068
+If x is 2, y is minus 4.
+
+631
+00:46:28,608 --> 00:46:29,487
+We get this point.
+
+632
+00:46:29,768 --> 00:46:30,568
+2 comma minus 4.
+
+633
+00:46:31,527 --> 00:46:34,467
+Now, let's repeat the same thing with x2.
+
+634
+00:46:34,467 --> 00:46:36,648
+The second case is y is plus 2x.
+
+635
+00:46:37,427 --> 00:46:38,608
+Y is plus 2x.
+
+636
+00:46:38,648 --> 00:46:42,847
+If we put that into this equation, we get 1 over x squared equals 9 over.
+
+637
+00:46:42,967 --> 00:46:45,507
+When y is 2x, we get 4 minus 3x now.
+
+638
+00:46:46,347 --> 00:46:47,668
+4 minus 3x squared.
+
+639
+00:46:48,407 --> 00:46:54,327
+This equation gives us 4 minus 3x squared equals 9x squared, which is the square of 3x.
+
+640
+00:46:54,907 --> 00:47:00,088
+But the squares of these two are equal to each other, means one of them is plus or minus the other one.
+
+641
+00:47:00,128 --> 00:47:02,768
+So, 4 minus 3x is plus or minus 3x.
+
+642
+00:47:02,768 --> 00:47:10,947
+So, the first case is 4 minus 3x is minus 3x, which gives us the contradiction 4 equals 0.
+
+643
+00:47:11,027 --> 00:47:12,887
+So, this has no solution.
+
+644
+00:47:13,547 --> 00:47:14,628
+This part has no solution.
+
+645
+00:47:15,608 --> 00:47:20,228
+The second case, 4 minus 3x equals 3x gives us 6x equals 4.
+
+646
+00:47:20,708 --> 00:47:21,867
+So, x is 2 over 3.
+
+647
+00:47:21,867 --> 00:47:25,847
+X is 2 over 3.
+
+648
+00:47:25,947 --> 00:47:28,608
+And this is the case we are looking for.
+
+649
+00:47:29,128 --> 00:47:31,487
+When x is 2 over 3, y is 4 over 3.
+
+650
+00:47:31,907 --> 00:47:33,288
+So, we get this critical point.
+
+651
+00:47:33,708 --> 00:47:35,288
+So, we get these three critical points.
+
+652
+00:47:35,407 --> 00:47:37,268
+This one, this one, and this one.
+
+653
+00:47:37,268 --> 00:47:40,967
+So, minus 1, 2.
+
+654
+00:47:41,748 --> 00:47:42,608
+2 minus 4.
+
+655
+00:47:43,228 --> 00:47:43,728
+Let's see.
+
+656
+00:47:44,088 --> 00:47:44,987
+Minus 1, 2.
+
+657
+00:47:45,608 --> 00:47:45,907
+Here.
+
+658
+00:47:46,307 --> 00:47:47,367
+2 minus 4 here.
+
+659
+00:47:47,447 --> 00:47:48,047
+And 2 over 3.
+
+660
+00:47:48,108 --> 00:47:48,867
+4 over 3 here.
+
+661
+00:47:49,588 --> 00:47:50,427
+A critical point.
+
+662
+00:47:50,427 --> 00:47:52,168
+Okay.
+
+663
+00:47:52,168 --> 00:47:58,248
+Now, we need to find where?
+
+664
+00:47:59,027 --> 00:48:00,527
+The second order partial derivatives.
+
+665
+00:48:01,347 --> 00:48:03,047
+So, let me make this.
+
+666
+00:48:03,927 --> 00:48:05,228
+Or did I write them?
+
+667
+00:48:05,728 --> 00:48:05,987
+Okay.
+
+668
+00:48:05,987 --> 00:48:07,748
+I have written them on the next page as well.
+
+669
+00:48:08,228 --> 00:48:08,807
+FX is here.
+
+670
+00:48:08,887 --> 00:48:39,347
+Minus 1.
+
+671
+00:48:12,916 --> 00:48:17,276
+Fx is minus 1 over x squared plus 9 over 4 minus x minus y squared.
+
+672
+00:48:17,456 --> 00:48:19,836
+Fy is minus 4 over y squared plus that.
+
+673
+00:48:21,396 --> 00:48:21,836
+Here.
+
+674
+00:48:22,536 --> 00:48:23,936
+Here are fx and fy.
+
+675
+00:48:24,836 --> 00:48:26,176
+So now what is fx?
+
+676
+00:48:27,176 --> 00:48:29,176
+Derivative of this with respect to x.
+
+677
+00:48:30,456 --> 00:48:32,676
+So this is minus x to the power of minus 2.
+
+678
+00:48:33,135 --> 00:48:36,076
+Its derivative is 2 times x to the power of minus 3 here.
+
+679
+00:48:36,796 --> 00:48:37,236
+Plus.
+
+680
+00:48:38,236 --> 00:48:40,615
+So 9 times this to the power of minus 2.
+
+681
+00:48:40,615 --> 00:48:42,776
+Its derivative is minus 18.
+
+682
+00:48:43,496 --> 00:48:44,756
+Times another derivative.
+
+683
+00:48:45,135 --> 00:48:47,356
+Another minus 1 comes from the derivative of the inside.
+
+684
+00:48:47,476 --> 00:48:48,356
+We get plus 18.
+
+685
+00:48:49,436 --> 00:48:52,115
+Times this 1 to the power of minus 3.
+
+686
+00:48:52,216 --> 00:48:53,016
+Which is this.
+
+687
+00:48:53,596 --> 00:48:55,536
+18 over 4 minus x minus 1 cubed.
+
+688
+00:48:56,536 --> 00:48:57,576
+And what is fy?
+
+689
+00:48:57,655 --> 00:48:58,916
+Derivative of this.
+
+690
+00:48:59,796 --> 00:49:02,356
+So y to the power of minus 2.
+
+691
+00:49:02,416 --> 00:49:05,176
+Minus 2 times minus 4 is 8.
+
+692
+00:49:05,756 --> 00:49:07,635
+So 8 times y to the power of minus 3.
+
+693
+00:49:07,696 --> 00:49:08,236
+Which is this.
+
+694
+00:49:08,236 --> 00:49:09,655
+And derivative of this is the same.
+
+695
+00:49:10,256 --> 00:49:12,076
+18 over 4 minus x minus y cubed.
+
+696
+00:49:12,076 --> 00:49:13,736
+What is fx y?
+
+697
+00:49:15,476 --> 00:49:17,436
+Derivative of this with respect to y.
+
+698
+00:49:17,655 --> 00:49:18,756
+Derivative of this is 0.
+
+699
+00:49:19,256 --> 00:49:22,155
+Derivative of this with respect to y is the same as this.
+
+700
+00:49:22,496 --> 00:49:27,316
+18 over 4 minus x minus y.
+
+701
+00:49:27,816 --> 00:49:28,576
+Must be cubed.
+
+702
+00:49:29,135 --> 00:49:29,856
+This is cubed.
+
+703
+00:49:30,396 --> 00:49:31,376
+It's not squared.
+
+704
+00:49:32,316 --> 00:49:32,976
+This is not correct.
+
+705
+00:49:33,056 --> 00:49:33,736
+This must be cubed.
+
+706
+00:49:33,736 --> 00:49:34,176
+Okay.
+
+707
+00:49:34,236 --> 00:49:35,516
+I used it correctly here.
+
+708
+00:49:35,836 --> 00:49:36,635
+But this is not correct.
+
+709
+00:49:36,776 --> 00:49:37,615
+This must keep cubed.
+
+710
+00:49:39,216 --> 00:49:39,655
+Okay.
+
+711
+00:49:41,736 --> 00:49:43,016
+So what do we get?
+
+712
+00:49:43,436 --> 00:49:44,436
+This is the discriminant.
+
+713
+00:49:44,536 --> 00:49:47,996
+fx x times fy y minus fxy squared.
+
+714
+00:49:48,176 --> 00:49:49,016
+So it is this.
+
+715
+00:49:49,135 --> 00:49:52,196
+2 over x cubed plus 18 over 4 minus x minus y cubed.
+
+716
+00:49:52,196 --> 00:49:54,296
+times this one.
+
+717
+00:49:54,436 --> 00:49:57,655
+8 over y cubed plus 18 over 4 minus x minus y cubed.
+
+718
+00:49:57,976 --> 00:49:58,236
+Here.
+
+719
+00:49:58,776 --> 00:50:00,496
+Minus fxy squared.
+
+720
+00:50:00,635 --> 00:50:01,276
+This one squared.
+
+721
+00:50:02,276 --> 00:50:03,536
+This is cubed of course.
+
+722
+00:50:03,816 --> 00:50:04,416
+Not squared.
+
+723
+00:50:04,416 --> 00:50:07,256
+So now.
+
+724
+00:50:07,655 --> 00:50:08,756
+Without simplifying it.
+
+725
+00:50:08,796 --> 00:50:09,996
+We can just leave it like that.
+
+726
+00:50:10,076 --> 00:50:11,496
+And compute the value of.
+
+727
+00:50:13,236 --> 00:50:14,916
+That's the critical points.
+
+728
+00:50:14,976 --> 00:50:15,936
+What were the critical points?
+
+729
+00:50:16,056 --> 00:50:16,756
+Minus 1, 2.
+
+730
+00:50:17,196 --> 00:50:18,036
+2 minus 4.
+
+731
+00:50:18,336 --> 00:50:18,976
+And 2 over 3.
+
+732
+00:50:19,056 --> 00:50:19,576
+4 over 3.
+
+733
+00:50:20,576 --> 00:50:21,196
+Minus 1, 2.
+
+734
+00:50:21,376 --> 00:50:22,016
+2 minus 4.
+
+735
+00:50:22,115 --> 00:50:22,676
+And 4 over 3.
+
+736
+00:50:22,716 --> 00:50:23,176
+4 over 3.
+
+737
+00:50:23,655 --> 00:50:25,236
+The value of the discriminant at this point.
+
+738
+00:50:26,236 --> 00:50:26,596
+Here.
+
+739
+00:50:26,756 --> 00:50:27,796
+When x is minus 1.
+
+740
+00:50:27,836 --> 00:50:28,456
+Y is 2.
+
+741
+00:50:29,456 --> 00:50:31,135
+We get minus 2 here.
+
+742
+00:50:31,696 --> 00:50:32,096
+Plus.
+
+743
+00:50:32,096 --> 00:50:35,036
+So 4 plus 1 is 5.
+
+744
+00:50:35,115 --> 00:50:36,056
+5 minus 2 is 3.
+
+745
+00:50:36,316 --> 00:50:37,076
+We get 3 cubed.
+
+746
+00:50:37,135 --> 00:50:38,256
+Which is 27 here.
+
+747
+00:50:39,316 --> 00:50:39,716
+Times.
+
+748
+00:50:40,696 --> 00:50:42,336
+8 over y cubed.
+
+749
+00:50:42,516 --> 00:50:43,536
+8 over 8 is 1.
+
+750
+00:50:43,936 --> 00:50:44,936
+Plus 18 over.
+
+751
+00:50:45,056 --> 00:50:45,576
+This is the same.
+
+752
+00:50:45,655 --> 00:50:46,016
+27.
+
+753
+00:50:46,976 --> 00:50:47,416
+Minus.
+
+754
+00:50:47,536 --> 00:50:48,196
+Again the same.
+
+755
+00:50:48,276 --> 00:50:49,516
+18 over 27 squared.
+
+756
+00:50:50,256 --> 00:50:50,856
+Which is what?
+
+757
+00:50:51,936 --> 00:50:52,756
+18 over 27.
+
+758
+00:50:52,916 --> 00:50:53,635
+That's 2 over 3.
+
+759
+00:50:54,676 --> 00:50:55,936
+Minus 2 plus 2 over 3.
+
+760
+00:50:56,036 --> 00:50:57,236
+Times 1 plus 2 over 3.
+
+761
+00:50:57,356 --> 00:50:58,296
+Minus 2 over 3 squared.
+
+762
+00:50:58,996 --> 00:50:59,976
+When we compute it.
+
+763
+00:51:00,036 --> 00:51:01,596
+We get minus 24 over 9.
+
+764
+00:51:01,596 --> 00:51:02,615
+which is negative.
+
+765
+00:51:02,796 --> 00:51:03,615
+So which is settled for.
+
+766
+00:51:04,776 --> 00:51:05,216
+Next.
+
+767
+00:51:05,956 --> 00:51:06,356
+Again.
+
+768
+00:51:06,496 --> 00:51:08,135
+So I'm not going to go over this.
+
+769
+00:51:10,836 --> 00:51:12,115
+You put these points.
+
+770
+00:51:12,236 --> 00:51:13,115
+2 and minus 4.
+
+771
+00:51:14,316 --> 00:51:15,676
+Into this expression.
+
+772
+00:51:15,996 --> 00:51:16,736
+You will get.
+
+773
+00:51:17,155 --> 00:51:18,596
+We'll compute that value.
+
+774
+00:51:18,756 --> 00:51:20,736
+You will get minus 5 over 1 and then 44.
+
+775
+00:51:21,036 --> 00:51:21,916
+That's a negative number.
+
+776
+00:51:21,996 --> 00:51:22,896
+So it's a settled print.
+
+777
+00:51:23,536 --> 00:51:24,176
+Last one.
+
+778
+00:51:25,256 --> 00:51:26,236
+4 over 3.
+
+779
+00:51:26,236 --> 00:51:28,096
+Is going to give you a positive number.
+
+780
+00:51:28,096 --> 00:51:29,316
+So since it is positive.
+
+781
+00:51:29,856 --> 00:51:31,356
+And we look at fxx.
+
+782
+00:51:31,456 --> 00:51:31,996
+Where is fxx?
+
+783
+00:51:33,596 --> 00:51:34,655
+fxx is here.
+
+784
+00:51:35,816 --> 00:51:37,336
+And fxx is here.
+
+785
+00:51:37,416 --> 00:51:38,115
+Actually here.
+
+786
+00:51:38,676 --> 00:51:39,296
+Found here.
+
+787
+00:51:40,896 --> 00:51:41,716
+This one.
+
+788
+00:51:41,836 --> 00:51:42,655
+This one is fxx.
+
+789
+00:51:43,936 --> 00:51:44,256
+9.
+
+790
+00:51:45,216 --> 00:51:46,236
+fxx is positive.
+
+791
+00:51:46,236 --> 00:51:47,496
+So it gives a local minimum.
+
+792
+00:51:50,496 --> 00:51:53,115
+You can go over these computations yourself.
+
+793
+00:51:53,115 --> 00:52:15,115
+You can go over these computations.
+
+794
+00:51:57,492 --> 00:52:06,752
+Okay, now the next question, the statement of the question is different from those of the previous ones now.
+
+795
+00:52:07,392 --> 00:52:15,572
+Find all critical points of the function fxy equals square root of 1 plus x square y square and evaluate its extreme values.
+
+796
+00:52:15,872 --> 00:52:17,092
+Evaluate its extreme values.
+
+797
+00:52:17,632 --> 00:52:20,512
+So find its maximum and minimum values.
+
+798
+00:52:22,211 --> 00:52:24,932
+So let's find its critical points first of all.
+
+799
+00:52:27,492 --> 00:52:34,772
+So what is the partial derivative of this with respect to x?
+
+800
+00:52:35,292 --> 00:52:38,452
+Derivative of the square root is 1 over 2 times the square root.
+
+801
+00:52:38,512 --> 00:52:46,632
+So 1 over 2 times the square root of 1 plus x square root of y square times derivative of the inner function with respect to x, which is 2xy squared.
+
+802
+00:52:47,652 --> 00:52:48,512
+So 2 is cancelled.
+
+803
+00:52:48,652 --> 00:52:52,172
+We get xy squared over square root of 1 plus x squared y squared.
+
+804
+00:52:52,172 --> 00:53:02,932
+Similarly, when we differentiate it with respect to y squared, we get 1 over 2 times the square root of 1 plus x squared y squared times derivative of inside with respect to y, which is 2x squared y.
+
+805
+00:53:03,272 --> 00:53:04,252
+Again, 2 is cancelled.
+
+806
+00:53:04,392 --> 00:53:07,711
+We get x squared y over square root of 1 plus x squared y squared.
+
+807
+00:53:07,711 --> 00:53:10,792
+And now look at the denominator.
+
+808
+00:53:11,092 --> 00:53:16,152
+Note that x squared y squared is always bigger than or equal to 0 plus 1.
+
+809
+00:53:16,211 --> 00:53:17,231
+So this is always positive.
+
+810
+00:53:18,211 --> 00:53:19,772
+This expression is always positive.
+
+811
+00:53:20,052 --> 00:53:21,812
+So this is never 0.
+
+812
+00:53:21,952 --> 00:53:24,092
+So it's defined everywhere.
+
+813
+00:53:24,731 --> 00:53:26,172
+Fx and Fy are defined everywhere.
+
+814
+00:53:26,172 --> 00:53:30,852
+So the critical points occur only when fx and Fy are both equal to 0.
+
+815
+00:53:31,692 --> 00:53:32,832
+Now fx is 0.
+
+816
+00:53:32,952 --> 00:53:35,752
+If fx is 0, it means that the numerator is 0.
+
+817
+00:53:36,912 --> 00:53:40,472
+If a rational expression is equal to 0, its numerator must be equal to 0.
+
+818
+00:53:40,992 --> 00:53:42,412
+So xy squared must be 0.
+
+819
+00:53:42,832 --> 00:53:45,672
+And fy is equal to 0 means x squared y is equal to 0.
+
+820
+00:53:45,672 --> 00:53:49,412
+So when do these equations hold?
+
+821
+00:53:49,692 --> 00:53:52,592
+These equations hold when x is...
+
+822
+00:53:52,592 --> 00:53:57,532
+So this one is equal to 0 means either x is 0 or y is 0.
+
+823
+00:53:57,812 --> 00:54:02,332
+And this one is equal to 0 means, again, either x is 0 or y is equal to 0.
+
+824
+00:54:02,532 --> 00:54:06,452
+And if one of these hold, if x is 0, what do we get?
+
+825
+00:54:06,752 --> 00:54:08,972
+If x is 0, both equations hold.
+
+826
+00:54:09,292 --> 00:54:11,672
+Or if y is 0, again, both equations hold.
+
+827
+00:54:11,672 --> 00:54:19,392
+So critical points are the points whose either x-coordinate is 0 or the y-coordinate is 0.
+
+828
+00:54:19,472 --> 00:54:21,812
+So basically, these are the critical points.
+
+829
+00:54:25,619 --> 00:54:27,619
+Bu da xy-corner sistem.
+
+830
+00:54:27,619 --> 00:54:30,859
+So, any point on the x-axis,
+
+831
+00:54:30,859 --> 00:54:32,519
+any point on the x-axis,
+
+832
+00:54:33,039 --> 00:54:34,619
+here, these points,
+
+833
+00:54:34,779 --> 00:54:35,659
+these type of points,
+
+834
+00:54:36,039 --> 00:54:36,779
+x, 0.
+
+835
+00:54:37,339 --> 00:54:38,619
+Any point on the x-axis
+
+836
+00:54:38,619 --> 00:54:40,039
+is a critical point
+
+837
+00:54:40,039 --> 00:54:41,219
+because y is 0 there.
+
+838
+00:54:41,639 --> 00:54:43,460
+And any point on the y-axis,
+
+839
+00:54:44,359 --> 00:54:45,460
+these type of points,
+
+840
+00:54:45,940 --> 00:54:46,679
+0, y.
+
+841
+00:54:47,079 --> 00:54:48,420
+Any point on the y-axis
+
+842
+00:54:48,420 --> 00:54:50,179
+is also a critical point
+
+843
+00:54:50,179 --> 00:54:51,239
+because x is 0
+
+844
+00:54:51,239 --> 00:54:53,480
+on those points.
+
+845
+00:54:54,159 --> 00:54:55,440
+So, these are the critical points.
+
+846
+00:54:55,440 --> 00:54:56,599
+There are infinitely many
+
+847
+00:54:56,599 --> 00:54:57,559
+critical points now.
+
+848
+00:54:58,059 --> 00:54:59,659
+All points on the x-axis
+
+849
+00:54:59,659 --> 00:55:01,059
+and all points on the y-axis.
+
+850
+00:55:01,839 --> 00:55:02,339
+In other words,
+
+851
+00:55:02,400 --> 00:55:03,239
+all points on the x-axis
+
+852
+00:55:03,239 --> 00:55:04,639
+and y-axis are critical points.
+
+853
+00:55:06,739 --> 00:55:08,500
+What is the value?
+
+854
+00:55:09,679 --> 00:55:11,699
+And are these local minimum
+
+855
+00:55:11,699 --> 00:55:12,539
+or local maximum?
+
+856
+00:55:13,119 --> 00:55:14,480
+Well, if you like,
+
+857
+00:55:14,539 --> 00:55:16,480
+you can apply the second derivative test here,
+
+858
+00:55:16,539 --> 00:55:17,880
+but you don't really need
+
+859
+00:55:17,880 --> 00:55:19,500
+the second derivative test in this case
+
+860
+00:55:19,500 --> 00:55:21,359
+because when you look at this expression,
+
+861
+00:55:22,539 --> 00:55:23,539
+when x is 0
+
+862
+00:55:23,539 --> 00:55:25,159
+or when y is 0,
+
+863
+00:55:25,159 --> 00:55:25,900
+what do we get?
+
+864
+00:55:26,380 --> 00:55:27,619
+When either x is 0
+
+865
+00:55:27,619 --> 00:55:28,339
+or y is 0,
+
+866
+00:55:28,440 --> 00:55:29,619
+this part becomes 0
+
+867
+00:55:29,619 --> 00:55:30,739
+because square of all 1
+
+868
+00:55:30,739 --> 00:55:31,179
+which is 1.
+
+869
+00:55:35,920 --> 00:55:38,079
+0, y is always 1
+
+870
+00:55:38,079 --> 00:55:39,099
+and fx 0 is 1.
+
+871
+00:55:39,199 --> 00:55:40,319
+So, at any point
+
+872
+00:55:40,319 --> 00:55:41,500
+on the x-axis or y-axis,
+
+873
+00:55:41,599 --> 00:55:42,659
+the value of the function is 1.
+
+874
+00:55:43,659 --> 00:55:44,859
+We look at this function.
+
+875
+00:55:46,339 --> 00:55:47,199
+This expression,
+
+876
+00:55:47,299 --> 00:55:48,719
+x square y is always bigger
+
+877
+00:55:48,719 --> 00:55:49,579
+than or equal to 0.
+
+878
+00:55:49,579 --> 00:55:50,759
+so this is always bigger
+
+879
+00:55:50,759 --> 00:55:51,619
+than or equal to 1.
+
+880
+00:55:52,380 --> 00:55:53,579
+For all xy,
+
+881
+00:55:53,699 --> 00:55:55,039
+fxy is always bigger
+
+882
+00:55:55,039 --> 00:55:55,839
+than or equal to 1.
+
+883
+00:55:56,319 --> 00:55:57,339
+The value of the function
+
+884
+00:55:57,339 --> 00:55:58,880
+at the critical points is 1
+
+885
+00:55:58,880 --> 00:56:00,099
+and the value of the function
+
+886
+00:56:00,099 --> 00:56:01,099
+at any other point
+
+887
+00:56:01,099 --> 00:56:02,420
+is always bigger than 1
+
+888
+00:56:02,420 --> 00:56:03,420
+which means that
+
+889
+00:56:03,420 --> 00:56:04,359
+these critical points
+
+890
+00:56:04,359 --> 00:56:06,599
+are local minimum points
+
+891
+00:56:06,599 --> 00:56:08,339
+and the minimum value
+
+892
+00:56:08,339 --> 00:56:09,139
+of this function,
+
+893
+00:56:09,719 --> 00:56:10,579
+the minimum value
+
+894
+00:56:10,579 --> 00:56:11,699
+of this function is 1.
+
+895
+00:56:12,440 --> 00:56:12,719
+Basically.
+
+896
+00:56:18,356 --> 00:56:20,596
+Okay, next question.
+
+897
+00:56:23,196 --> 00:56:29,896
+Yeah, now find the local extreme and values of fxy equals x ln x squared plus y squared.
+
+898
+00:56:30,376 --> 00:56:32,636
+Similar to the previous one, no.
+
+899
+00:56:37,684 --> 00:57:07,684
+Bu da bu
+
+900
+00:57:07,684 --> 00:57:08,724
+in addition
+
+901
+00:57:08,724 --> 00:57:18,324
+yeah what is the partial what is the partial derivative of this function with respect to x
+
+902
+00:57:18,324 --> 00:57:25,403
+so using the product rule derivative of x is one times ln x squared plus y squared plus x itself
+
+903
+00:57:25,403 --> 00:57:30,344
+times derivative of ln x squared plus y squared what is l derivative of ln something
+
+904
+00:57:30,344 --> 00:57:36,864
+it's derivative of inside divided by inside derivative of inside is 2x divided by
+
+905
+00:57:36,864 --> 00:57:42,944
+the function x squared plus y squared so we get this ln x squared plus y squared plus
+
+906
+00:57:42,944 --> 00:57:52,004
+this 2x squared over x squared plus y squared this is fx what is fy well to find fy in this
+
+907
+00:57:52,004 --> 00:57:57,064
+case x is a constant just take it out derivative of this with respect to y derivative of inside
+
+908
+00:57:57,064 --> 00:58:02,104
+this 2y divided by inside is x squared plus y squared so that's the derivative of ln x squared plus y
+
+909
+00:58:02,104 --> 00:58:10,864
+so we get 2x y over x squared plus y squared so again first let's look at the points where
+
+910
+00:58:10,864 --> 00:58:21,984
+fx or fy are undefined well fx here look at this expression when x squared plus y squared is zero
+
+911
+00:58:21,984 --> 00:58:27,444
+this is undefined when x squared plus y squared is zero this is undefined and when x squared plus y
+
+912
+00:58:27,444 --> 00:58:33,864
+squared is zero this ln zero which is also undefined so they're all undefined if x and fy are undefined
+
+913
+00:58:33,864 --> 00:58:40,464
+when x squared plus y squared is zero which which happens only when x and y are both equal to zero
+
+914
+00:58:40,464 --> 00:58:47,923
+but that's already not in the domain of the function look at the function when x and y are both zero we
+
+915
+00:58:47,923 --> 00:58:52,024
+get ln zero that's not in the domain of the function so we don't have to worry about that point
+
+916
+00:58:52,024 --> 00:58:59,804
+it's not a critical point therefore again the point on the point where fx or fy is undefined is
+
+917
+00:58:59,804 --> 00:59:05,024
+already out out of the domain of the function therefore the only critical points are those
+
+918
+00:59:05,024 --> 00:59:11,344
+where fx and fy are both equal to zero now let's start with the second one simpler
+
+919
+00:59:11,344 --> 00:59:17,684
+i mean the first one fx is more complicated f is simpler so let's start with fy equals zero
+
+920
+00:59:17,684 --> 00:59:24,423
+so fy is equal to zero fy is equal to zero means the numerator is zero numerator is zero so x times
+
+921
+00:59:24,423 --> 00:59:31,864
+y is zero x times y is zero means either x is zero or y is you we get this now let's analyze these two
+
+922
+00:59:31,864 --> 00:59:41,644
+cases and let's put them into the first equation fx equals zero but if let me pick this so in the first
+
+923
+00:59:41,644 --> 00:59:50,524
+case x is zero if x is zero if x is zero if x is what if x is zero if x is ln y squared plus this is zero
+
+924
+00:59:50,524 --> 00:59:59,804
+which is zero so ln y squared is zero means y squared is one so y squared e to the power zero basically
+
+925
+00:59:59,804 --> 01:00:03,564
+which is what and y squared is one means y is plus or minus one
+
+926
+01:00:03,564 --> 01:00:08,304
+which is what and y squared is zero means y squared is zero means y squared is zero means y squared is zero
+
+927
+01:00:08,304 --> 01:00:17,304
+so y squared is zero means y squared is zero means y squared is zero means y squared is zero means y squared is zero
+
+928
+01:00:14,356 --> 01:00:16,896
+Y squared is 1, so y is plus or minus 1.
+
+929
+01:00:17,996 --> 01:00:19,696
+So we get two critical points.
+
+930
+01:00:19,796 --> 01:00:22,976
+When x is 0, when x is 0, y is plus or minus 1.
+
+931
+01:00:23,096 --> 01:00:25,696
+So 0, minus 1 and 0, 1 are two critical points.
+
+932
+01:00:26,416 --> 01:00:27,356
+What's the second case?
+
+933
+01:00:27,396 --> 01:00:28,816
+The second case is y is 0.
+
+934
+01:00:29,516 --> 01:00:34,076
+So when we put that into fx, when y is 0, we get ln x squared.
+
+935
+01:00:34,936 --> 01:00:36,576
+We get ln x squared plus.
+
+936
+01:00:37,956 --> 01:00:41,976
+When y is 0, we get 2x squared over x squared, which is 2.
+
+937
+01:00:41,976 --> 01:00:47,576
+We get ln x squared plus 2 equals 0, which means ln x squared is minus 2.
+
+938
+01:00:48,116 --> 01:00:50,436
+So x squared is e to the power of minus 2.
+
+939
+01:00:51,336 --> 01:00:56,236
+So x is the square root of that, which is plus or minus e to the power of minus 1.
+
+940
+01:00:56,836 --> 01:00:58,976
+X is plus or minus e to the power of minus 1.
+
+941
+01:00:59,036 --> 01:01:00,156
+So we get two critical points.
+
+942
+01:01:01,236 --> 01:01:06,996
+When y is 0, we get x is minus 1 over e or plus 1 over e.
+
+943
+01:01:07,576 --> 01:01:10,536
+These are the four critical points now.
+
+944
+01:01:10,536 --> 01:01:13,036
+Now, what is next?
+
+945
+01:01:13,336 --> 01:01:14,596
+You need to find fx, x.
+
+946
+01:01:16,876 --> 01:01:18,096
+Make it even smaller.
+
+947
+01:01:19,036 --> 01:01:19,756
+Here, fx.
+
+948
+01:01:20,916 --> 01:01:21,116
+Here.
+
+949
+01:01:22,096 --> 01:01:23,076
+What is fx, x?
+
+950
+01:01:23,076 --> 01:01:51,416
+What is next?
+
+951
+01:01:28,596 --> 01:01:30,295
+Bu da fx, fx is here.
+
+952
+01:01:31,655 --> 01:01:33,416
+So, it's partial derivative with respect to x.
+
+953
+01:01:33,795 --> 01:01:35,615
+So, derivative of this with respect to x
+
+954
+01:01:35,615 --> 01:01:38,516
+is 2x over x squared plus y squared here
+
+955
+01:01:38,516 --> 01:01:42,976
+plus derivative of this with respect to x.
+
+956
+01:01:43,056 --> 01:01:44,135
+We need to use a quotient rule.
+
+957
+01:01:44,576 --> 01:01:46,356
+Derivative of the numerator is 4x
+
+958
+01:01:46,356 --> 01:01:50,076
+times the denominator is x squared plus y squared
+
+959
+01:01:50,076 --> 01:01:52,496
+minus the numerator itself is 2x squared
+
+960
+01:01:52,496 --> 01:01:55,275
+times the derivative of the denominator, which is 2x
+
+961
+01:01:55,275 --> 01:01:58,195
+divided by the denominator squared.
+
+962
+01:01:58,996 --> 01:02:01,476
+So, we get, when we simplify this, what do we get?
+
+963
+01:02:01,956 --> 01:02:02,715
+4x cubed.
+
+964
+01:02:04,635 --> 01:02:06,655
+And here we have 4x cubed.
+
+965
+01:02:09,735 --> 01:02:11,556
+4x cubed minus 4x cubed.
+
+966
+01:02:11,635 --> 01:02:12,335
+They cancel out.
+
+967
+01:02:12,416 --> 01:02:14,936
+We are left with 4xy squared here.
+
+968
+01:02:15,016 --> 01:02:15,775
+4xy squared.
+
+969
+01:02:16,016 --> 01:02:17,976
+So, this is 2x over x squared plus y squared
+
+970
+01:02:17,976 --> 01:02:21,076
+plus 4xy squared over x squared plus y squared squared.
+
+971
+01:02:22,235 --> 01:02:24,956
+And which is equal to,
+
+972
+01:02:24,956 --> 01:02:26,735
+so, if we multiply this with,
+
+973
+01:02:26,735 --> 01:02:28,695
+if you multiply this,
+
+974
+01:02:29,275 --> 01:02:29,976
+this one,
+
+975
+01:02:30,335 --> 01:02:32,876
+multiply and divide this one by x squared plus y squared,
+
+976
+01:02:33,516 --> 01:02:33,996
+we get
+
+977
+01:02:33,996 --> 01:02:39,195
+2x cubed plus
+
+978
+01:02:39,195 --> 01:02:40,615
+2xy squared
+
+979
+01:02:40,615 --> 01:02:41,596
+plus this,
+
+980
+01:02:41,755 --> 01:02:44,476
+which gives us 2x cubed plus 6xy squared.
+
+981
+01:02:44,476 --> 01:02:49,036
+divided by x squared plus y squared squared.
+
+982
+01:02:49,615 --> 01:02:50,815
+So, that's fx, x.
+
+983
+01:02:51,295 --> 01:02:52,615
+What is fy, y?
+
+984
+01:02:53,255 --> 01:02:55,355
+So, derivative of this with respect to y,
+
+985
+01:02:55,436 --> 01:02:56,715
+again, use the caution rule,
+
+986
+01:02:56,996 --> 01:02:57,996
+derivative of the numerators,
+
+987
+01:02:58,155 --> 01:03:00,916
+2x times the denominator is x squared plus y squared
+
+988
+01:03:00,916 --> 01:03:02,996
+minus numerators, 2xy,
+
+989
+01:03:03,396 --> 01:03:04,835
+times derivative of the denominator,
+
+990
+01:03:05,096 --> 01:03:05,896
+which is 2y,
+
+991
+01:03:06,135 --> 01:03:07,576
+divided by denominator squared,
+
+992
+01:03:07,576 --> 01:03:08,896
+which is
+
+993
+01:03:08,896 --> 01:03:10,956
+2x cubed plus
+
+994
+01:03:10,956 --> 01:03:12,675
+2xy squared
+
+995
+01:03:12,675 --> 01:03:14,496
+minus
+
+996
+01:03:14,496 --> 01:03:16,036
+4xy squared.
+
+997
+01:03:16,115 --> 01:03:18,135
+So, 2x squared minus 4xy squared
+
+998
+01:03:18,135 --> 01:03:20,016
+is minus 2xy squared.
+
+999
+01:03:20,476 --> 01:03:21,315
+Divide it by this.
+
+1000
+01:03:21,416 --> 01:03:21,936
+We get this
+
+1001
+01:03:21,936 --> 01:03:23,376
+as fyy.
+
+1002
+01:03:24,215 --> 01:03:25,576
+And now, what is fxy?
+
+1003
+01:03:27,576 --> 01:03:28,576
+Well, fxy,
+
+1004
+01:03:28,576 --> 01:03:31,476
+we can differentiate this with respect to y.
+
+1005
+01:03:31,556 --> 01:03:33,056
+That's what we have done so far
+
+1006
+01:03:33,056 --> 01:03:34,255
+to find fxy.
+
+1007
+01:03:34,735 --> 01:03:34,976
+But,
+
+1008
+01:03:35,556 --> 01:03:36,376
+let's not do that.
+
+1009
+01:03:37,155 --> 01:03:38,695
+Let's find fyx instead.
+
+1010
+01:03:39,056 --> 01:03:40,536
+We know by the mixed derivative theorem,
+
+1011
+01:03:40,635 --> 01:03:42,695
+we know that fxy and fyx are the same.
+
+1012
+01:03:42,956 --> 01:03:43,836
+Since this is simpler,
+
+1013
+01:03:44,416 --> 01:03:45,655
+let's find fyx.
+
+1014
+01:03:46,456 --> 01:03:47,556
+What is fyx?
+
+1015
+01:03:48,876 --> 01:03:50,735
+It's derivative of this with respect to x.
+
+1016
+01:03:51,155 --> 01:03:52,576
+The derivative of the numerator is 2y
+
+1017
+01:03:52,576 --> 01:03:53,775
+times the denominator
+
+1018
+01:03:53,775 --> 01:03:55,795
+minus the numerator itself,
+
+1019
+01:03:56,036 --> 01:03:56,476
+2xy,
+
+1020
+01:03:56,735 --> 01:03:57,896
+times derivative of the denominator,
+
+1021
+01:03:58,056 --> 01:03:58,615
+which is 2x,
+
+1022
+01:03:58,896 --> 01:04:01,476
+divided by x squared plus y squared squared.
+
+1023
+01:04:02,096 --> 01:04:02,775
+So, we get
+
+1024
+01:04:02,775 --> 01:04:04,416
+minus 2x squared y
+
+1025
+01:04:04,416 --> 01:04:05,755
+minus 4x squared y
+
+1026
+01:04:05,755 --> 01:04:07,215
+that's minus 2x squared y
+
+1027
+01:04:07,215 --> 01:04:09,016
+plus 2y cubed here.
+
+1028
+01:04:09,215 --> 01:04:11,096
+So, 2y cubed minus 2x squared y
+
+1029
+01:04:11,096 --> 01:04:12,695
+over x squared plus y squared squared.
+
+1030
+01:04:13,356 --> 01:04:14,856
+But, what is the discriminant?
+
+1031
+01:04:15,356 --> 01:04:16,836
+fx is here.
+
+1032
+01:04:17,476 --> 01:04:19,155
+x squared plus 6xy squared
+
+1033
+01:04:19,155 --> 01:04:21,096
+over x squared plus y squared squared
+
+1034
+01:04:21,096 --> 01:04:22,635
+times fyy,
+
+1035
+01:04:22,996 --> 01:04:23,596
+which is here,
+
+1036
+01:04:24,356 --> 01:04:26,036
+2x cubed minus 2xy squared
+
+1037
+01:04:26,036 --> 01:04:27,936
+divided by x squared plus y squared squared
+
+1038
+01:04:27,936 --> 01:04:30,596
+minus fxy squared.
+
+1039
+01:04:30,775 --> 01:04:31,436
+This one squared.
+
+1040
+01:04:31,436 --> 01:04:36,336
+So, the denominators are common.
+
+1041
+01:04:36,496 --> 01:04:38,255
+Denominators are x squared plus y squared
+
+1042
+01:04:38,255 --> 01:04:39,155
+to the power of 4.
+
+1043
+01:04:39,655 --> 01:04:40,635
+So, what do we get?
+
+1044
+01:04:43,715 --> 01:04:44,855
+What do we get?
+
+1045
+01:04:45,036 --> 01:04:47,135
+Here, we can factor something out, actually.
+
+1046
+01:04:47,556 --> 01:04:48,715
+What can we factor out?
+
+1047
+01:04:49,155 --> 01:04:50,496
+Here, we can factor
+
+1048
+01:04:50,496 --> 01:04:53,275
+2x out, right?
+
+1049
+01:04:53,376 --> 01:04:55,195
+Here, we can factor 2x out.
+
+1050
+01:04:55,195 --> 01:04:56,396
+and here also,
+
+1051
+01:04:56,476 --> 01:04:58,355
+we can factor 2x out, right?
+
+1052
+01:04:58,675 --> 01:05:00,215
+If we factor 2x out
+
+1053
+01:05:00,215 --> 01:05:01,235
+in both,
+
+1054
+01:05:01,815 --> 01:05:02,916
+we get 2x times 2x
+
+1055
+01:05:02,916 --> 01:05:03,996
+as 4x squared
+
+1056
+01:05:03,996 --> 01:05:04,896
+times,
+
+1057
+01:05:04,976 --> 01:05:06,016
+when we factor 2x out,
+
+1058
+01:05:06,076 --> 01:05:07,155
+we get x squared plus
+
+1059
+01:05:07,155 --> 01:05:08,556
+3y squared here
+
+1060
+01:05:08,556 --> 01:05:09,315
+times,
+
+1061
+01:05:09,695 --> 01:05:10,795
+when 2x is factored out,
+
+1062
+01:05:10,855 --> 01:05:11,976
+we get x squared minus
+
+1063
+01:05:11,976 --> 01:05:12,976
+y squared here.
+
+1064
+01:05:13,815 --> 01:05:14,376
+Minus,
+
+1065
+01:05:14,735 --> 01:05:15,596
+and here,
+
+1066
+01:05:15,715 --> 01:05:17,536
+we can factor 2y out
+
+1067
+01:05:17,536 --> 01:05:18,896
+and when we square it,
+
+1068
+01:05:18,936 --> 01:05:20,096
+we get 4y squared
+
+1069
+01:05:20,096 --> 01:05:21,096
+times,
+
+1070
+01:05:21,715 --> 01:05:22,855
+when we factor 2y out,
+
+1071
+01:05:22,916 --> 01:05:23,456
+we are left at
+
+1072
+01:05:23,456 --> 01:05:24,355
+y squared minus
+
+1073
+01:05:24,355 --> 01:05:25,275
+x squared.
+
+1074
+01:05:25,775 --> 01:05:46,635
+Square.
+
+1075
+01:05:27,123 --> 01:05:30,763
+Divided by the common denominator x squared plus y squared 2 power 4.
+
+1076
+01:05:30,963 --> 01:05:31,863
+But that's the discriminant.
+
+1077
+01:05:32,683 --> 01:05:35,183
+Now, here are our four critical points.
+
+1078
+01:05:35,323 --> 01:05:36,823
+0 minus 1, 0, 1.
+
+1079
+01:05:37,384 --> 01:05:39,463
+Minus 1 over e comma 0.
+
+1080
+01:05:39,723 --> 01:05:41,063
+And 1 over e comma 0.
+
+1081
+01:05:42,163 --> 01:05:45,203
+So what's the value of the discriminant at this point?
+
+1082
+01:05:46,163 --> 01:05:48,223
+0 minus 1, 0, 1.
+
+1083
+01:05:48,884 --> 01:05:50,343
+Minus 1 over e comma 0.
+
+1084
+01:05:50,543 --> 01:05:51,143
+1 over e comma 0.
+
+1085
+01:05:53,123 --> 01:05:55,963
+And yeah, I repeated the discriminant here.
+
+1086
+01:05:55,963 --> 01:05:57,384
+So this is the discriminant.
+
+1087
+01:05:57,823 --> 01:06:00,503
+What's the value of the function?
+
+1088
+01:06:01,543 --> 01:06:03,363
+What's the value of this discriminant at this point?
+
+1089
+01:06:03,463 --> 01:06:05,563
+So when x is 0, y is minus 1.
+
+1090
+01:06:05,963 --> 01:06:08,023
+When x is 0, this part is 0 completely.
+
+1091
+01:06:09,143 --> 01:06:13,463
+When x is 0, and also the same is true for when x is 0, y is 1.
+
+1092
+01:06:14,123 --> 01:06:18,123
+In these two cases, y is either minus 1 or 1.
+
+1093
+01:06:18,923 --> 01:06:19,863
+y squared is 1.
+
+1094
+01:06:20,163 --> 01:06:21,663
+So we get minus 4 times.
+
+1095
+01:06:22,263 --> 01:06:24,243
+y squared is 1 minus x squared is 0.
+
+1096
+01:06:24,323 --> 01:06:25,203
+So 1 squared is 1.
+
+1097
+01:06:25,203 --> 01:06:26,384
+So we get minus 4.
+
+1098
+01:06:26,903 --> 01:06:30,463
+Divided by, this is 1 to the power of 4, which is 1.
+
+1099
+01:06:30,884 --> 01:06:33,123
+So we get minus 4 in these first two cases.
+
+1100
+01:06:33,983 --> 01:06:35,703
+This discriminant is minus 4, which is negative.
+
+1101
+01:06:35,843 --> 01:06:37,703
+So these two cases give us settled points.
+
+1102
+01:06:37,703 --> 01:06:43,463
+The last two cases, minus e to the power of minus 1, 0, and e to the power of minus 1, 0.
+
+1103
+01:06:43,463 --> 01:06:44,583
+What do they give us?
+
+1104
+01:06:46,283 --> 01:06:48,763
+When y is 0 in this case.
+
+1105
+01:06:49,143 --> 01:06:50,743
+In these two cases, y is 0.
+
+1106
+01:06:50,884 --> 01:06:55,723
+So when y is 0, we get 4x squared, 4 e to the power of minus 2 times.
+
+1107
+01:06:56,163 --> 01:06:58,483
+Here we have x squared, which is e to the power of minus 2.
+
+1108
+01:06:58,803 --> 01:07:01,443
+Here we get another x squared, which is e to the power of minus 2.
+
+1109
+01:07:01,443 --> 01:07:03,763
+minus y is 0.
+
+1110
+01:07:03,843 --> 01:07:05,263
+So this part is 0 completely.
+
+1111
+01:07:06,143 --> 01:07:06,863
+y is 0.
+
+1112
+01:07:06,943 --> 01:07:07,603
+So this is 0.
+
+1113
+01:07:07,703 --> 01:07:09,983
+So this is e to the power of minus 2 to the power of 4.
+
+1114
+01:07:10,663 --> 01:07:15,183
+So we get 4 e to the power of minus 6 divided by e to the power of minus 8.
+
+1115
+01:07:15,563 --> 01:07:17,123
+That gives us 4 e squared.
+
+1116
+01:07:17,863 --> 01:07:23,063
+4 e squared, we know that e is a number 2.71, something like that.
+
+1117
+01:07:23,063 --> 01:07:25,103
+So this is a positive number.
+
+1118
+01:07:25,183 --> 01:07:26,123
+And of course, it's square.
+
+1119
+01:07:27,263 --> 01:07:28,183
+But it doesn't matter.
+
+1120
+01:07:28,323 --> 01:07:30,363
+So that's a positive number.
+
+1121
+01:07:30,843 --> 01:07:32,723
+So since it is positive, we look at fxx.
+
+1122
+01:07:33,003 --> 01:07:35,303
+What is fxx?
+
+1123
+01:07:35,303 --> 01:07:39,943
+It's x cubed plus 6xy squared over x squared plus y squared squared.
+
+1124
+01:07:45,652 --> 01:07:47,652
+2 times
+
+1125
+01:07:47,652 --> 01:07:50,831
+y is 0.
+
+1126
+01:07:51,251 --> 01:07:52,032
+This part is 0.
+
+1127
+01:07:52,152 --> 01:07:53,572
+So 2x cubed over
+
+1128
+01:07:53,572 --> 01:07:56,132
+2x cubed 2 times
+
+1129
+01:07:56,132 --> 01:07:57,831
+x cubed.
+
+1130
+01:07:58,072 --> 01:08:00,412
+x cubed is minus e to the power minus 3
+
+1131
+01:08:00,412 --> 01:08:02,251
+divided by sum of their
+
+1132
+01:08:02,251 --> 01:08:03,052
+squares, squares.
+
+1133
+01:08:03,811 --> 01:08:05,251
+Squares, squares.
+
+1134
+01:08:05,612 --> 01:08:08,231
+This, which is minus 2 e to the power
+
+1135
+01:08:08,231 --> 01:08:10,192
+minus 3 over e to the power minus 4
+
+1136
+01:08:10,192 --> 01:08:11,851
+which is minus 2 e
+
+1137
+01:08:11,851 --> 01:08:13,271
+which is a negative number.
+
+1138
+01:08:13,672 --> 01:08:15,251
+So we get the local maximum there.
+
+1139
+01:08:15,652 --> 01:08:17,752
+And what is the local maximum value
+
+1140
+01:08:17,752 --> 01:08:19,971
+at that point? The value of the function
+
+1141
+01:08:19,971 --> 01:08:21,752
+at that point, minus e to the power
+
+1142
+01:08:21,752 --> 01:08:23,692
+minus 1, 0, is a function.
+
+1143
+01:08:24,712 --> 01:08:25,771
+When x is e to the power
+
+1144
+01:08:25,771 --> 01:08:27,891
+minus 1, sorry, x is minus
+
+1145
+01:08:27,891 --> 01:08:29,851
+e to the power minus 1 and y is 0
+
+1146
+01:08:29,851 --> 01:08:30,872
+we get
+
+1147
+01:08:30,872 --> 01:08:33,412
+value of the function is
+
+1148
+01:08:33,412 --> 01:08:35,832
+minus e to the power minus 1, 0 is
+
+1149
+01:08:35,832 --> 01:08:37,792
+minus e to the power minus 1. That's x
+
+1150
+01:08:37,792 --> 01:08:39,952
+times ln x squared plus y squared
+
+1151
+01:08:39,952 --> 01:08:41,752
+which is ln e to the power minus 2
+
+1152
+01:08:41,752 --> 01:08:43,771
+and ln e to the power minus 2 is
+
+1153
+01:08:43,771 --> 01:08:45,591
+minus 2. So we get
+
+1154
+01:08:45,591 --> 01:08:47,731
+minus 2 times this which is
+
+1155
+01:08:47,731 --> 01:08:50,051
+2 e to the power minus 1 which is 2 over e.
+
+1156
+01:08:50,771 --> 01:08:51,431
+So that's
+
+1157
+01:08:51,431 --> 01:08:53,872
+the local maximum
+
+1158
+01:08:53,872 --> 01:08:55,131
+value at that point.
+
+1159
+01:08:56,591 --> 01:08:57,872
+And at the other point
+
+1160
+01:08:57,872 --> 01:08:59,152
+e to the power minus 1 is 0.
+
+1161
+01:08:59,551 --> 01:09:01,612
+Again, everything is similar.
+
+1162
+01:09:03,931 --> 01:09:05,712
+When we square them, we will get
+
+1163
+01:09:05,712 --> 01:09:06,231
+this.
+
+1164
+01:09:06,771 --> 01:09:07,032
+The
+
+1165
+01:09:07,032 --> 01:09:09,811
+discriminant turns out to be the same
+
+1166
+01:09:09,811 --> 01:09:11,131
+which is positive since
+
+1167
+01:09:11,131 --> 01:09:13,591
+we all get
+
+1168
+01:09:13,591 --> 01:09:15,391
+x squared everywhere. And what is
+
+1169
+01:09:15,391 --> 01:09:17,131
+fxx? It's 2x
+
+1170
+01:09:17,131 --> 01:09:18,891
+cubed which is
+
+1171
+01:09:18,891 --> 01:09:21,672
+e to the power minus 3 divided by x squared plus y
+
+1172
+01:09:21,672 --> 01:09:22,872
+squared squared which is this.
+
+1173
+01:09:23,252 --> 01:09:25,152
+We get 2e which is positive in this case
+
+1174
+01:09:25,152 --> 01:09:26,692
+which is a local minimum point now.
+
+1175
+01:09:27,051 --> 01:09:28,792
+And that's the value of the function at that point
+
+1176
+01:09:28,792 --> 01:09:31,172
+which is x which is e to the power
+
+1177
+01:09:31,172 --> 01:09:33,292
+minus 1 times ln x squared plus y
+
+1178
+01:09:33,292 --> 01:09:35,112
+squared is e to the power minus 2.
+
+1179
+01:09:35,112 --> 01:09:37,311
+but we get e to the power minus 1
+
+1180
+01:09:37,311 --> 01:09:38,992
+times minus 2 which is minus 2 over e.
+
+1181
+01:09:39,292 --> 01:09:40,992
+So that's the local minimum
+
+1182
+01:09:40,992 --> 01:09:42,252
+value at that point.
+
+1183
+01:09:44,011 --> 01:09:45,292
+But at this point
+
+1184
+01:09:45,292 --> 01:09:47,391
+the function is a local maximum
+
+1185
+01:09:47,391 --> 01:09:47,851
+value.
+
+1186
+01:09:48,672 --> 01:09:50,332
+And the value of the local maximum
+
+1187
+01:09:50,332 --> 01:09:51,351
+is 2 over e.
+
+1188
+01:09:51,912 --> 01:09:53,271
+And at this point
+
+1189
+01:09:53,271 --> 01:09:54,792
+the function is a local minimum
+
+1190
+01:09:54,792 --> 01:09:56,851
+and the value of the local minimum
+
+1191
+01:09:56,851 --> 01:09:58,771
+is minus 2 over e at that point.
+
+1192
+01:10:01,292 --> 01:10:01,771
+Okay.
+
+1193
+01:10:02,152 --> 01:10:03,372
+So I think this is
+
+1194
+01:10:03,372 --> 01:10:04,172
+the last question.
+
+1195
+01:10:05,112 --> 01:10:10,752
+Find the local extreme values of
+
+1196
+01:10:10,752 --> 01:10:13,391
+find the local extreme values of
+
+1197
+01:10:13,391 --> 01:10:15,731
+fxy equals x squared plus y squared
+
+1198
+01:10:15,731 --> 01:10:17,011
+times e to the power x.
+
+1199
+01:10:19,231 --> 01:10:19,712
+Okay.
+
+1200
+01:10:22,011 --> 01:10:22,792
+So again
+
+1201
+01:10:22,792 --> 01:10:24,811
+the procedure is exactly the same.
+
+1202
+01:10:25,351 --> 01:10:27,212
+Let's find the partial derivative of this
+
+1203
+01:10:27,212 --> 01:10:28,172
+with respect to x.
+
+1204
+01:10:28,692 --> 01:10:29,931
+So derivative of
+
+1205
+01:10:29,931 --> 01:10:31,131
+this
+
+1206
+01:10:31,131 --> 01:10:34,372
+derivative of x squared plus y squared
+
+1207
+01:10:34,372 --> 01:10:34,931
+is 2x
+
+1208
+01:10:34,931 --> 01:10:37,311
+times e to the power x itself
+
+1209
+01:10:37,311 --> 01:10:38,271
+plus
+
+1210
+01:10:38,271 --> 01:10:40,311
+x squared plus y squared
+
+1211
+01:10:40,311 --> 01:10:42,011
+times derivative of e to the power x.
+
+1212
+01:10:42,851 --> 01:10:44,511
+So when we factor e to the power x
+
+1213
+01:10:44,511 --> 01:10:45,931
+out we get 2x plus
+
+1214
+01:10:45,931 --> 01:10:47,032
+x squared plus y squared
+
+1215
+01:10:47,032 --> 01:10:47,931
+times e to the power x.
+
+1216
+01:10:49,412 --> 01:10:50,712
+And what is its derivative
+
+1217
+01:10:50,712 --> 01:10:51,872
+with respect to y?
+
+1218
+01:10:51,872 --> 01:10:52,712
+Now in this case
+
+1219
+01:10:52,712 --> 01:10:53,931
+e to the power x is a constant
+
+1220
+01:10:53,931 --> 01:10:55,412
+just take that constant out.
+
+1221
+01:10:55,752 --> 01:10:57,332
+Derivative of x squared plus y squared
+
+1222
+01:10:57,332 --> 01:10:58,591
+with respect to y is 2y.
+
+1223
+01:10:58,952 --> 01:10:59,591
+We get this.
+
+1224
+01:11:00,152 --> 01:11:01,292
+2y e to the power x.
+
+1225
+01:11:02,532 --> 01:11:02,931
+Again
+
+1226
+01:11:02,931 --> 01:11:03,252
+now
+
+1227
+01:11:03,252 --> 01:11:04,771
+when we look at these two
+
+1228
+01:11:04,771 --> 01:11:05,912
+functions
+
+1229
+01:11:05,912 --> 01:11:07,112
+they are defined everywhere.
+
+1230
+01:11:07,672 --> 01:11:08,511
+E to the power x
+
+1231
+01:11:08,511 --> 01:11:09,292
+the domain of the
+
+1232
+01:11:09,292 --> 01:11:10,212
+exponential functions
+
+1233
+01:11:10,212 --> 01:11:11,692
+the set of all real numbers.
+
+1234
+01:11:12,072 --> 01:11:12,091
+So
+
+1235
+01:11:12,091 --> 01:11:14,811
+both fx and fy
+
+1236
+01:11:14,811 --> 01:11:15,712
+are defined everywhere.
+
+1237
+01:11:15,712 --> 01:11:16,372
+so the
+
+1238
+01:11:16,372 --> 01:11:17,551
+only critical points
+
+1239
+01:11:17,551 --> 01:11:18,011
+occur
+
+1240
+01:11:18,011 --> 01:11:19,891
+when fx and fy
+
+1241
+01:11:19,891 --> 01:11:20,832
+are both equal to 0.
+
+1242
+01:11:22,271 --> 01:11:22,712
+So
+
+1243
+01:11:22,712 --> 01:11:25,072
+again
+
+1244
+01:11:25,072 --> 01:11:26,471
+let's start with the simpler one.
+
+1245
+01:11:27,532 --> 01:11:30,292
+fy is 0
+
+1246
+01:11:30,292 --> 01:11:30,692
+means
+
+1247
+01:11:30,692 --> 01:11:32,851
+2y times e to the power x is 0.
+
+1248
+01:11:33,212 --> 01:11:34,091
+What do we know about
+
+1249
+01:11:34,091 --> 01:11:34,891
+e to the power x?
+
+1250
+01:11:34,971 --> 01:11:35,712
+No matter what
+
+1251
+01:11:35,712 --> 01:11:36,731
+x is
+
+1252
+01:11:36,731 --> 01:11:38,152
+remember
+
+1253
+01:11:38,152 --> 01:11:39,172
+what is e to the power x?
+
+1254
+01:11:43,667 --> 01:11:45,228
+y equals e to the power x.
+
+1255
+01:11:45,307 --> 01:11:47,268
+That's the graph of y equals e to the power x, right?
+
+1256
+01:11:47,847 --> 01:11:49,987
+So no matter whether x is negative or positive,
+
+1257
+01:11:50,327 --> 01:11:53,367
+what the value of x is, e to the power x is always positive.
+
+1258
+01:11:53,947 --> 01:11:55,347
+e to the power x is always positive.
+
+1259
+01:11:56,447 --> 01:11:57,967
+E to the power x is always positive.
+
+1260
+01:11:57,967 --> 01:12:02,007
+So for this expression, 2y to the power x to be zero,
+
+1261
+01:12:02,347 --> 01:12:03,188
+y must be zero.
+
+1262
+01:12:03,467 --> 01:12:05,407
+So this is equal to zero means y is equal to zero.
+
+1263
+01:12:06,427 --> 01:12:08,287
+So from the second equation,
+
+1264
+01:12:08,987 --> 01:12:10,747
+if y equals zero, we get y equals zero.
+
+1265
+01:12:11,107 --> 01:12:12,987
+Now, when we put that into the first one,
+
+1266
+01:12:13,667 --> 01:12:15,747
+so fx is equal to zero,
+
+1267
+01:12:15,927 --> 01:12:18,327
+and we plug in y equals zero into this,
+
+1268
+01:12:18,427 --> 01:12:21,087
+we get 2x plus x squared times 8 to the power x is zero.
+
+1269
+01:12:21,147 --> 01:12:22,827
+And again, this is always positive.
+
+1270
+01:12:23,327 --> 01:12:26,367
+So this being equal to zero means 2x plus x squared is zero.
+
+1271
+01:12:26,487 --> 01:12:28,047
+So when we factor x out,
+
+1272
+01:12:28,287 --> 01:12:30,107
+it means x times 2 plus x is zero.
+
+1273
+01:12:30,487 --> 01:12:32,188
+So x is zero or x is minus two.
+
+1274
+01:12:32,567 --> 01:12:33,728
+So we get two critical points.
+
+1275
+01:12:33,847 --> 01:12:34,688
+y is always zero.
+
+1276
+01:12:35,127 --> 01:12:36,567
+x is either zero or minus two.
+
+1277
+01:12:37,007 --> 01:12:38,747
+So zero, zero, and minus two, zero.
+
+1278
+01:12:38,927 --> 01:12:40,207
+These are the only critical points.
+
+1279
+01:12:41,467 --> 01:12:42,987
+Now, what is fx, x?
+
+1280
+01:12:43,667 --> 01:12:47,107
+derivative of this with respect to x.
+
+1281
+01:12:47,567 --> 01:12:48,347
+But derivative of,
+
+1282
+01:12:48,707 --> 01:12:52,047
+derivative of this with respect to x,
+
+1283
+01:12:52,087 --> 01:12:53,367
+which is 2 plus 2x,
+
+1284
+01:12:54,047 --> 01:12:56,007
+times e to the power x,
+
+1285
+01:12:56,467 --> 01:12:58,228
+plus this one itself,
+
+1286
+01:12:58,807 --> 01:13:01,707
+plus derivative of this,
+
+1287
+01:13:01,927 --> 01:13:02,728
+which is e to the power x,
+
+1288
+01:13:03,188 --> 01:13:04,167
+which is equal to,
+
+1289
+01:13:05,167 --> 01:13:06,907
+when we factor e to the power x out,
+
+1290
+01:13:06,907 --> 01:13:11,807
+we get 2 plus 4x plus x squared plus y squared,
+
+1291
+01:13:12,347 --> 01:13:13,387
+times e to the power x.
+
+1292
+01:13:13,387 --> 01:13:15,287
+So that's fx, x.
+
+1293
+01:13:16,067 --> 01:13:17,367
+What is fy, y?
+
+1294
+01:13:18,167 --> 01:13:18,768
+fy.
+
+1295
+01:13:19,927 --> 01:13:20,327
+Of course,
+
+1296
+01:13:20,407 --> 01:13:21,447
+2 times e to the power x,
+
+1297
+01:13:21,507 --> 01:13:22,127
+that's the constant,
+
+1298
+01:13:22,287 --> 01:13:22,887
+times y,
+
+1299
+01:13:22,987 --> 01:13:24,527
+its derivative is 2 times e to the power x.
+
+1300
+01:13:25,007 --> 01:13:25,587
+There it is.
+
+1301
+01:13:26,268 --> 01:13:27,387
+What is fx, y?
+
+1302
+01:13:27,768 --> 01:13:28,287
+Of course,
+
+1303
+01:13:28,447 --> 01:13:31,207
+instead of finding the derivative of this with respect to y,
+
+1304
+01:13:31,347 --> 01:13:33,307
+let's find the derivative of this with respect to x.
+
+1305
+01:13:33,307 --> 01:13:39,027
+is 2y e to the power x.
+
+1306
+01:13:40,547 --> 01:13:41,768
+2y is a constant there,
+
+1307
+01:13:41,867 --> 01:13:43,527
+derivative of this with respect to x is e to the power x.
+
+1308
+01:13:43,667 --> 01:13:43,787
+So,
+
+1309
+01:13:45,188 --> 01:13:46,047
+we get these.
+
+1310
+01:13:46,307 --> 01:13:47,728
+Now, what is the discriminant?
+
+1311
+01:13:48,207 --> 01:13:50,787
+fx, x times fy, y minus fxy squared.
+
+1312
+01:13:53,007 --> 01:13:55,927
+This one times this one.
+
+1313
+01:13:56,587 --> 01:13:58,547
+So, it's two times this,
+
+1314
+01:13:58,627 --> 01:14:00,527
+2 plus 4x plus x squared plus y squared,
+
+1315
+01:14:00,647 --> 01:14:02,567
+times e to the power 2x.
+
+1316
+01:14:03,307 --> 01:14:05,427
+minus this one squared,
+
+1317
+01:14:05,667 --> 01:14:07,947
+which is 4y squared e to the power 2x.
+
+1318
+01:14:08,407 --> 01:14:08,967
+Of course,
+
+1319
+01:14:09,007 --> 01:14:10,987
+we can factor e to the power 2x out.
+
+1320
+01:14:11,587 --> 01:14:13,387
+We can factor e to the power 2x out.
+
+1321
+01:14:13,847 --> 01:14:14,447
+What do we get?
+
+1322
+01:14:14,507 --> 01:14:17,847
+We get 4 plus 8x plus 2x squared
+
+1323
+01:14:17,847 --> 01:14:20,647
+plus 2y squared minus 4y squared.
+
+1324
+01:14:20,907 --> 01:14:22,007
+That's minus 2y squared.
+
+1325
+01:14:22,427 --> 01:14:23,188
+We get this.
+
+1326
+01:14:23,587 --> 01:14:24,367
+This is discriminant.
+
+1327
+01:14:25,367 --> 01:14:25,627
+Now,
+
+1328
+01:14:26,188 --> 01:14:27,567
+here are our critical points.
+
+1329
+01:14:27,947 --> 01:14:29,087
+We want the two critical points.
+
+1330
+01:14:29,907 --> 01:14:31,007
+At 0, 0,
+
+1331
+01:14:31,627 --> 01:14:32,367
+at 0, 0,
+
+1332
+01:14:32,367 --> 01:14:33,607
+what do we get?
+
+1333
+01:14:34,247 --> 01:14:35,747
+So, this is 0, 0, 0.
+
+1334
+01:14:35,827 --> 01:14:36,427
+Everything is 0.
+
+1335
+01:14:36,527 --> 01:14:38,228
+So, 4 times e to the power 0,
+
+1336
+01:14:38,307 --> 01:14:38,747
+which is 4,
+
+1337
+01:14:38,827 --> 01:14:39,347
+which is positive.
+
+1338
+01:14:40,688 --> 01:14:42,707
+So, discriminant is positive at 0, 0.
+
+1339
+01:14:42,807 --> 01:14:44,047
+So, we look at fx, x.
+
+1340
+01:14:44,268 --> 01:14:45,127
+Here's fx, x.
+
+1341
+01:14:45,627 --> 01:14:46,547
+At 0, 0,
+
+1342
+01:14:47,207 --> 01:14:47,787
+0, 0,
+
+1343
+01:14:47,887 --> 01:14:48,787
+everything is 0.
+
+1344
+01:14:48,847 --> 01:14:50,688
+So, we get 2 times e to the power 0.
+
+1345
+01:14:51,188 --> 01:14:52,188
+fx, x is 2,
+
+1346
+01:14:52,268 --> 01:14:52,927
+which is positive.
+
+1347
+01:14:53,447 --> 01:14:54,307
+fx, x is positive.
+
+1348
+01:14:54,307 --> 01:14:55,947
+So, we get a local minimum.
+
+1349
+01:14:57,787 --> 01:14:59,547
+And what is the local minimum value?
+
+1350
+01:15:00,547 --> 01:15:02,967
+Value of local minimum is f, 0, 0,
+
+1351
+01:15:03,188 --> 01:15:04,127
+which is 0.
+
+1352
+01:15:04,667 --> 01:15:07,228
+0 plus 0 times e to the power 0,
+
+1353
+01:15:07,287 --> 01:15:07,667
+which is 0.
+
+1354
+01:15:08,527 --> 01:15:09,927
+So, the local minimum value
+
+1355
+01:15:09,927 --> 01:15:11,587
+at that point is 0.
+
+1356
+01:15:13,087 --> 01:15:14,287
+How about the other point?
+
+1357
+01:15:14,347 --> 01:15:15,347
+Minus 2, 0.
+
+1358
+01:15:15,347 --> 01:15:17,768
+So, at minus 2, 0,
+
+1359
+01:15:17,867 --> 01:15:18,967
+here's the discriminant.
+
+1360
+01:15:20,268 --> 01:15:21,307
+Minus 2, 0.
+
+1361
+01:15:21,627 --> 01:15:22,627
+Here's the discriminant.
+
+1362
+01:15:23,387 --> 01:15:24,707
+Get 4 plus,
+
+1363
+01:15:25,607 --> 01:15:26,567
+so when x is minus 2,
+
+1364
+01:15:26,587 --> 01:15:27,567
+we get minus 16,
+
+1365
+01:15:28,247 --> 01:15:31,867
+plus 8 here,
+
+1366
+01:15:32,207 --> 01:15:32,887
+minus 0,
+
+1367
+01:15:33,587 --> 01:15:35,607
+that times e to the power minus 4,
+
+1368
+01:15:36,247 --> 01:15:36,787
+which is,
+
+1369
+01:15:37,907 --> 01:15:39,487
+here, that we get minus 4.
+
+1370
+01:15:40,083 --> 01:15:46,903
+e to the power of 4. e to the power of 4 is a positive number, so minus 4 over that is negative. So we get a subtle point in this case.
+
+1371
+01:15:54,355 --> 01:15:59,115
+Okay, so that's the end of these problems from chapter 14.
+
+1372
+01:16:01,095 --> 01:16:07,975
+Any questions? Any questions from whatever we covered so far from chapter 14?
+
+1373
+01:16:14,963 --> 01:16:23,083
+Okay, I will give you a half an hour break, and then after the break, I will continue with, I will continue with chapter 50.
+
+1374
+01:16:28,948 --> 01:16:30,968
+So, we will continue with chapter 50.
+
+1375
+01:16:36,500 --> 01:16:50,420
+Okay, so we will continue at, what time is it? 10.17. So let's continue at 10.45. We'll continue at 10.45 with chapter 50.
+
+1376
+01:47:06,163 --> 01:47:08,884
+Okay, let's continue with chapter 15.
+
+1377
+01:47:13,427 --> 01:47:31,367
+Bu, bu
+
+1378
+01:47:38,707 --> 01:47:43,827
+Okay, let's start with the idea. Okay, let's say we have a function
+
+1379
+01:47:45,907 --> 01:47:52,387
+defined on this rectangular region. I mean, we have a two variable function, z equals f of xy,
+
+1380
+01:47:52,867 --> 01:47:59,827
+which is defined on this rectangular region. So basically x is between a and b, y is between c
+
+1381
+01:47:59,827 --> 01:48:06,707
+and d, x is between a and b, y is between c and d. Of course, this is not that this, these inequalities
+
+1382
+01:48:06,707 --> 01:48:13,507
+over here define a rectangle on the xy-quartner system. So we have a function defined on this
+
+1383
+01:48:13,507 --> 01:48:23,027
+rectangular region. Now, what do we do? We divide this rectangular region into smaller rectangles.
+
+1384
+01:48:23,027 --> 01:48:30,067
+So basically, divide this interval a, b into smaller intervals, and divide this interval c,
+
+1385
+01:48:30,067 --> 01:48:38,307
+d into smaller intervals again, sub intervals. So we get a few rectangles. Let's say we have n
+
+1386
+01:48:38,307 --> 01:48:45,187
+rectangles here, n small rectangles here. Take one of the rectangles. Take one of these rectangles.
+
+1387
+01:48:45,187 --> 01:48:52,307
+Let's say this is the kth rectangle, and pick a random point, random point, call it xkyk,
+
+1388
+01:48:52,307 --> 01:49:00,787
+on this rectangle. And the area of this rectangle is called delta a, k, which is basically delta xk.
+
+1389
+01:49:00,787 --> 01:49:09,987
+Delta xk is this distance. Delta xk is this, basically. And delta yk is this distance. So this delta a, k over
+
+1390
+01:49:09,987 --> 01:49:17,507
+here is delta xk times delta yk. The area of this small, this red rectangle over here. And pick a random
+
+1391
+01:49:17,507 --> 01:49:26,228
+point, call it xk yk on this rectangle. Now, we look at this expression over here. The value of the
+
+1392
+01:49:26,228 --> 01:49:33,747
+function at that point, which is f of xyk, basically, this, where is the picture? Computes this.
+
+1393
+01:49:36,707 --> 01:49:47,187
+The base area, delta a, k is the base area, and f of f of xk yk is the height of this rectangular prism.
+
+1394
+01:49:47,507 --> 01:49:59,107
+Okay. Rectangular prism. Its volume of this rectangular prism is its base area, which is delta a, k,
+
+1395
+01:49:59,107 --> 01:50:04,867
+and times its height, which is f of xk yk. So that's the volume of that rectangular prism.
+
+1396
+01:50:04,867 --> 01:50:06,867
+Yes.
+
+1397
+01:50:09,268 --> 01:50:39,268
+K'ın k
+
+1398
+01:50:39,268 --> 01:50:49,268
+we make these subintervals between a and b as much as we can so that these delta x k's
+
+1399
+01:50:49,268 --> 01:50:56,188
+these delta x k's become smaller and smaller and the subintervals between c and d as much as we can
+
+1400
+01:50:56,188 --> 01:51:03,047
+so that delta y k's become smaller and smaller so delta a a k basically approach zero they get
+
+1401
+01:51:03,047 --> 01:51:07,608
+smaller and smaller and the number of these rectangles increase increase increase they approach
+
+1402
+01:51:07,608 --> 01:51:08,028
+infinity
+
+1403
+01:51:09,268 --> 01:51:10,768
+and once we do that
+
+1404
+01:51:10,768 --> 01:51:19,288
+look at the limit of this ascent as this norm approaches zero in other words as n approaches
+
+1405
+01:51:19,288 --> 01:51:25,007
+infinity the number of these rectangles approach infinity we look at the sum of these the limit
+
+1406
+01:51:25,007 --> 01:51:31,648
+of the sum of these and we call this so this is a remon sum basically and we call this limit
+
+1407
+01:51:31,648 --> 01:51:38,228
+double integral if when a limit of the sums ascent exists
+
+1408
+01:52:08,228 --> 01:52:17,788
+double integral which is shown this way double integral over the region r of f of x y d a or
+
+1409
+01:52:17,788 --> 01:52:27,807
+instead of d a we could write dx dy not that just look at this expression over here let me take the limit of this sum and then approach
+
+1410
+01:52:27,807 --> 01:52:40,047
+to infinity the sum becomes integral f x k y k becomes f x y and delta ak becomes d a or delta ak is the same as delta x k delta y k becomes dx dy basically
+
+1411
+01:52:40,047 --> 01:52:54,488
+so this is what the double integral is and as we say the double integral is just the volume of this region but if this is the z equals f of x y this blue if this blue surface is
+
+1412
+01:52:54,488 --> 01:53:09,488
+the surface is equal to x y defined on this rectangular region where x is between a and b y is between c and d then when we divide this rectangular region into smaller rectangles and on each of these rectangles on each of these rectangles
+
+1413
+01:53:09,488 --> 01:53:22,627
+let's say this is the kth one the volume of this rectangular prism is the base area which is delta ak times the height which is f of x k y k we get this volume of this red rectangle
+
+1414
+01:53:22,627 --> 01:53:29,448
+we add them up we look at the sum of all these rectangles call it as n and let s n approach infinity
+
+1415
+01:53:29,448 --> 01:53:41,788
+to find the actual volume of so we define this this we define the volume under we define the volume under this
+
+1416
+01:53:41,788 --> 01:53:51,268
+uh surface over this rectangular region the volume of this shape over here as this double integral
+
+1417
+01:53:51,268 --> 01:53:57,427
+the limit of s which is the double integral over this rectangular region r of f of x y d
+
+1418
+01:53:57,427 --> 01:54:01,268
+okay so
+
+1419
+01:54:02,836 --> 01:54:32,836
+Bu da bu
+
+1420
+01:54:32,836 --> 01:54:39,076
+we'll get the sum of the volumes of this 256 rectangular prisms as an increases increases increases increases
+
+1421
+01:54:39,076 --> 01:54:46,256
+the sum of the volumes of these rectangular prisms gets closer and closer and closer to the actual volume
+
+1422
+01:54:46,256 --> 01:54:52,615
+under that surface over that rectangular region and as we let an approach infinity and look at the limit of
+
+1423
+01:54:52,615 --> 01:54:58,655
+that rem and sub we get the exact value of the volume under that surface over that rectangular prism
+
+1424
+01:54:58,655 --> 01:55:08,155
+okay so in practice how do we find uh how do we compute volumes of the compute these double
+
+1425
+01:55:08,155 --> 01:55:17,056
+integrals okay so this is the foobinies theorem for calculating double integrals basically what is it
+
+1426
+01:55:17,056 --> 01:55:23,076
+what does it say so for example think of this suppose that we wish to calculate the volume under this plane
+
+1427
+01:55:23,076 --> 01:55:32,115
+z equals four minus x minus y this plane over here over the rectangular region r x is between zero and
+
+1428
+01:55:32,115 --> 01:55:39,036
+two y is between zero and one in the xy plane in the xy plane we have this rectangle and we have this
+
+1429
+01:55:39,036 --> 01:55:44,416
+plane z equals four minus x minus y we are going to compute the volume of this solid over here
+
+1430
+01:55:44,416 --> 01:55:52,176
+so if you apply the method of slicing from section 6.1 so that we have seen in
+
+1431
+01:55:52,176 --> 01:55:59,176
+z equals four minus xy plane in the xy plane in the xy plane in the xy plane in the xy plane
+
+1432
+01:55:59,176 --> 01:56:11,636
+so we have seen in the xy plane in the xy plane in the xy plane in the xy plane in the xy plane
+
+1433
+01:56:11,636 --> 01:56:15,636
+so we have seen in the xy plane in the xy plane in the xy plane in the xy plane in the xy plane in the xy plane
+
+1434
+01:56:15,636 --> 01:56:23,235
+if these slides if you slice is perpendicular to the xy plane so for example this blue slice is a
+
+1435
+01:56:23,235 --> 01:56:35,016
+typical slice it's a typical slice just just uh cut this solid with uh parallel to the yz plane
+
+1436
+01:56:35,016 --> 01:56:40,956
+parallel to the yz plane so this is a parallel to the yz plane here is another here is another
+
+1437
+01:56:40,956 --> 01:56:49,676
+another plane another plane another plane cut cut cut cut like this this this this this and so on
+
+1438
+01:56:49,676 --> 01:56:55,996
+so this is a typical slice what is the volume of this slice what's the volume of this slice
+
+1439
+01:56:55,996 --> 01:56:59,275
+and
+
+1440
+01:56:59,275 --> 01:57:21,996
+so
+
+1441
+01:57:05,844 --> 01:57:26,484
+The volume of the slice is, if we call this, this blue area, if we call the base area of this as Ax, then this small height of this object, this slice, the height of the slice is going to be dx.
+
+1442
+01:57:26,484 --> 01:57:31,503
+Well, actually, it's going to be delta x, but when we take the limit, it's going to become dx.
+
+1443
+01:57:31,963 --> 01:57:38,003
+So, the volume of this blue slice is its base area, which is Ax, times its height, which is dx.
+
+1444
+01:57:38,463 --> 01:57:40,224
+So, that's the volume of that slice.
+
+1445
+01:57:40,804 --> 01:57:50,123
+Now, when we add them up, when we look at the sum of all the, sum of all the, sum of the volumes of all these slices, we get sum of Ax dx.
+
+1446
+01:57:50,344 --> 01:57:55,264
+And when we take the limit of that as an approach, we'll get the integral of Ax dx.
+
+1447
+01:57:55,264 --> 01:58:10,684
+As x goes from 0 to 2 because here, the slices, the slices, the slices get different values, these Ax's get different values for when x changes between 0 and 2.
+
+1448
+01:58:11,583 --> 01:58:12,163
+Okay, here.
+
+1449
+01:58:13,684 --> 01:58:14,404
+So, that's the volume.
+
+1450
+01:58:15,003 --> 01:58:16,323
+How about Ax, what is Ax?
+
+1451
+01:58:20,500 --> 01:58:26,939
+Bu bir yer, bu bir yer.
+
+1452
+01:58:30,220 --> 01:58:31,979
+Bu yer, bu yer, bu yer,
+
+1453
+01:58:31,979 --> 01:58:34,619
+bu yer, bu yer yer,
+
+1454
+01:58:34,619 --> 01:58:38,260
+bu yer yer, bu yer yer,
+
+1455
+01:58:38,260 --> 01:58:42,260
+bu yer yer, bu yer yer, bu yer yer, bu yer yer.
+
+1456
+01:58:42,260 --> 01:59:12,260
+Bu yer
+
+1457
+01:59:12,260 --> 01:59:14,460
+Y changes between 0 and 1.
+
+1458
+01:59:15,060 --> 01:59:17,600
+As Y changes between 0 and 1, we get this line.
+
+1459
+01:59:17,920 --> 01:59:22,260
+So the area, this blue area over here is the area under this curve.
+
+1460
+01:59:22,939 --> 01:59:25,899
+Area under this curve as Y goes from 0 to 1.
+
+1461
+01:59:26,279 --> 01:59:35,340
+So AX, which is this blue area, is the integral of this function, 4 minus X minus Y, DY, as Y goes from 0 to 1.
+
+1462
+01:59:35,899 --> 01:59:36,960
+Because X is fixed there.
+
+1463
+01:59:36,960 --> 01:59:37,960
+So AX is fixed there.
+
+1464
+01:59:37,960 --> 01:59:43,340
+For each fixed value, for each fixed value of X, the value of this area AX is this integral.
+
+1465
+01:59:43,840 --> 01:59:48,939
+So if you put that, put that into this over here, what do we get?
+
+1466
+01:59:49,000 --> 02:00:01,039
+So the volume of the solid, solid is integral from 0 to 2, integral from X equals 0 to X equals 2, times AX, which is DX, which is, replace AX with this.
+
+1467
+02:00:01,039 --> 02:00:11,140
+So it's integral from X equals 0 to X equals 2, integral from Y equals 0 to Y equals 1, 4 minus X minus Y DY, which is this, AX, times DX.
+
+1468
+02:00:11,739 --> 02:00:14,140
+So we first compute this integral inside.
+
+1469
+02:00:15,180 --> 02:00:18,340
+Note that here, at the end, we have DY DX.
+
+1470
+02:00:18,899 --> 02:00:23,039
+Note that this DY corresponds to this inner integral.
+
+1471
+02:00:23,800 --> 02:00:26,720
+The DX outsize corresponds to this outer integral.
+
+1472
+02:00:26,720 --> 02:00:33,720
+So DX integral and DX inside, we have another integral and DY.
+
+1473
+02:00:34,979 --> 02:00:37,199
+So what is the value of this integral inside?
+
+1474
+02:00:37,699 --> 02:00:44,359
+Integral of 4 minus X minus Y with respect to Y is integral of 4 is 4Y minus integral of X is XY.
+
+1475
+02:00:44,920 --> 02:00:46,460
+Integral of Y is Y square over 2.
+
+1476
+02:00:46,920 --> 02:00:48,600
+From Y equals 0 to Y equals 1.
+
+1477
+02:00:48,600 --> 02:00:57,699
+When we compute this, when Y is 1, we get 4 minus X minus 1 over 2, which is 7 over 2 minus X.
+
+1478
+02:00:58,239 --> 02:00:59,859
+And when Y is 0, we get 0.
+
+1479
+02:01:00,180 --> 02:01:01,819
+So we get 7 over 2 minus X.
+
+1480
+02:01:01,880 --> 02:01:02,939
+That's the value of this integral.
+
+1481
+02:01:03,680 --> 02:01:09,699
+So now we will integrate 7 over 2 minus X with respect to X as X goes from 0 to 2.
+
+1482
+02:01:09,699 --> 02:01:14,380
+That's this integral now.
+
+1483
+02:01:15,340 --> 02:01:17,039
+This outside, the outer integral.
+
+1484
+02:01:17,819 --> 02:01:19,239
+Now what is the integral of this?
+
+1485
+02:01:19,380 --> 02:01:21,359
+Integral of 7 over 2 is 7 over 2X.
+
+1486
+02:01:21,439 --> 02:01:22,960
+Integral of X is X square over 2.
+
+1487
+02:01:23,340 --> 02:01:24,779
+From 0 to 2, what do we get?
+
+1488
+02:01:24,819 --> 02:01:27,539
+When X is 2, we get 7 minus 2, which is 5.
+
+1489
+02:01:28,000 --> 02:01:29,199
+When X is 0, we get 0.
+
+1490
+02:01:29,319 --> 02:01:30,479
+So 5 minus 0 is 5.
+
+1491
+02:01:30,840 --> 02:01:32,619
+That's the volume of this one, 5.
+
+1492
+02:01:34,600 --> 02:01:36,300
+Okay, now let's do it a different way.
+
+1493
+02:01:36,300 --> 02:01:43,600
+If instead of using slices perpendicular to the X axis, parallel to the Y Z plane,
+
+1494
+02:01:44,060 --> 02:01:49,979
+if we have used slices perpendicular to the Y axis, which are parallel to the X Z plane,
+
+1495
+02:01:50,619 --> 02:01:52,180
+we have used such slices.
+
+1496
+02:01:53,260 --> 02:02:00,119
+A slice like this, slice this, many slices between Y equals 0 and Y equals 1.
+
+1497
+02:02:00,119 --> 02:02:06,739
+So we are slicing perpendicular to the Y axis now, where Y is between 0 and 1.
+
+1498
+02:02:06,859 --> 02:02:08,420
+It's sliced like this in this case.
+
+1499
+02:02:09,399 --> 02:02:14,579
+So now look at this blue small.
+
+1500
+02:02:15,060 --> 02:05:06,060
+...
+
+1501
+02:05:08,627 --> 02:05:15,807
+İner integral is with respect to y, from y equals 0 to 1, and the outer integral is with respect to x, x equals 0 to 2 to 2.
+
+1502
+02:05:16,307 --> 02:05:23,947
+On the other side, if we add a dx dy, the inner integral is with respect to x, where x goes from 0 to 2.
+
+1503
+02:05:24,247 --> 02:05:27,487
+The outer integral is with respect to y, where y goes from 0 to 1.
+
+1504
+02:05:28,188 --> 02:05:31,148
+And we have seen that on this example, these two are equal.
+
+1505
+02:05:31,787 --> 02:05:35,228
+And that's the case in general, it's true in general.
+
+1506
+02:05:35,228 --> 02:05:46,827
+So, general, over a region, so dA, dA is basically, dA can be written, dA can be written as dx dy or dy dy.
+
+1507
+02:05:47,507 --> 02:05:54,827
+So, the Fubini's theorem, first form, says that if fxy is continuous throughout the rectangular region R,
+
+1508
+02:05:55,707 --> 02:05:57,947
+there are x's between A and y's between C and D.
+
+1509
+02:05:57,947 --> 02:06:08,087
+Then, the integral, the double integral, the double integral of f of x, y, dA over this rectangular region R can be computed in both ways.
+
+1510
+02:06:08,087 --> 02:06:15,027
+If we first integrate with respect to x, then the limits of integration for x are A and B,
+
+1511
+02:06:15,327 --> 02:06:19,587
+and then integrate with respect to y, where the limits are C and D, from C to D.
+
+1512
+02:06:20,047 --> 02:06:24,887
+Or, if we integrate first with respect to y, the limits of integration are C and D,
+
+1513
+02:06:25,407 --> 02:06:29,247
+and then we integrate with respect to x, where the limits of integration are A and D.
+
+1514
+02:06:29,247 --> 02:06:32,527
+So, the theorem says that these two are equal.
+
+1515
+02:06:36,532 --> 02:06:41,011
+So, for example, just a second, we'll be back.
+
+1516
+02:08:13,524 --> 02:08:20,524
+Yüce Yüceyik'in
+
+1517
+02:08:20,524 --> 02:12:19,524
+İkincisi
+
+1518
+02:12:12,671 --> 02:14:04,671
+...
+
+1519
+02:13:48,532 --> 02:13:50,391
+Okay, let me see.
+
+1520
+02:13:52,431 --> 02:13:54,192
+İntegral over general regions.
+
+1521
+02:13:58,963 --> 02:13:59,764
+Olayınç.
+
+1522
+02:14:19,923 --> 02:14:20,304
+Ok.
+
+1523
+02:14:43,524 --> 02:14:45,524
+Bu bir şey var.
+
+1524
+02:14:45,524 --> 02:14:47,524
+15.2
+
+1525
+02:14:47,524 --> 02:14:51,524
+ve
+
+1526
+02:14:51,524 --> 02:14:53,524
+double integration
+
+1527
+02:14:53,524 --> 02:14:55,524
+ve
+
+1528
+02:14:55,524 --> 02:14:57,524
+bir şey var.
+
+1529
+02:14:57,524 --> 02:14:59,524
+Ve
+
+1530
+02:14:59,524 --> 02:15:05,524
+polar form
+
+1531
+02:15:08,564 --> 02:15:37,564
+ve
+
+1532
+02:15:26,260 --> 02:15:28,260
+İki videoda daha sonraki videoda.
+
+1533
+02:15:28,260 --> 02:15:30,260
+Evet, iki videoda daha sonraki videoda.
+
+1534
+02:15:30,260 --> 02:15:32,260
+Bu videoda daha sonraki videoda.
+
+1535
+02:15:32,260 --> 02:15:36,260
+İlk videoda görüşmek üzere.
+
+1536
+02:15:36,260 --> 02:15:38,260
+Evet, bu videoda görüşmek üzere.
+
+1537
+02:15:38,260 --> 02:15:44,260
+Bu videoda görüşmek üzere.
+
+1538
+02:15:47,260 --> 02:15:49,260
+Evet, şimdi burada.
+
+1539
+02:15:49,260 --> 02:15:50,260
+So...
+
+1540
+02:16:11,123 --> 02:16:16,923
+So, double integrals, double integrals, integrals over rectangles, double integrals as volumes, Hübbeni's theorem first form.
+
+1541
+02:16:17,423 --> 02:16:19,423
+Okay, we covered up to this point.
+
+1542
+02:16:19,543 --> 02:16:20,703
+We covered up to this point.
+
+1543
+02:16:21,663 --> 02:16:22,283
+What is left?
+
+1544
+02:16:23,224 --> 02:16:29,163
+Double integrals over general regions, double integrals over bounded non-rectangular regions, volumes, Hübbeni's theorem, stronger form.
+
+1545
+02:16:29,983 --> 02:16:33,703
+Finding limits on integration using vertical cross-sections, using horizontal cross-sections.
+
+1546
+02:16:34,463 --> 02:16:38,783
+Properties of double integrals, area by double integration, average value theorem.
+
+1547
+02:16:38,783 --> 02:16:47,384
+Double integrals, a polar form, finding limits changing into polar form using polar coordinates, volume between two surfaces, substitution double integrals.
+
+1548
+02:16:50,835 --> 02:16:54,095
+Evet, bu da bu.
+
+1549
+02:16:54,675 --> 02:16:55,295
+Bu da bu.
+
+1550
+02:16:55,415 --> 02:16:56,935
+Evet, bu da bu.
+
+1551
+02:16:56,935 --> 02:17:07,536
+Bu da bu.
+
+1552
+02:17:11,188 --> 02:17:13,587
+Any questions from whatever we covered today?
+
+1553
+02:17:21,427 --> 02:17:24,407
+Okay, if there are no questions, that's it for today.
+
+1554
+02:17:26,268 --> 02:17:31,067
+So, I'll see you next week, next Thursday.
+
+1555
+02:17:31,747 --> 02:17:33,188
+So, you all have a nice day. Bye.
