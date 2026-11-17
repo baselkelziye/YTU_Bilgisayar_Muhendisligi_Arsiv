@@ -7,3 +7,4 @@
 | 12 | BAHAR | Arzuhan Kocabaş | [sube_12/](sube_12/) |
 | 13 | BAHAR | Hilal Tufan | [sube_13/](sube_13/) |
 | 17 | BAHAR | Arzuhan Kocabaş | [sube_17/](sube_17/) |
+| 19 | BAHAR | Arzuhan Kocabaş | [sube_19/](sube_19/) |
