@@ -8,3 +8,4 @@
 | 14 | Bahar | Seda (soyadı bulunamadı) | [sube_14/](sube_14/) |
 | 20 | Bahar | Özlem Sezan | [sube_20/](sube_20/) |
 | 21 | Bahar | Bulunamadı | [sube_21/](sube_21/) |
+| 23 | Bahar | Bulunamadı | [sube_23/](sube_23/) |
