@@ -1,0 +1,3059 @@
+1
+00:10:27,508 --> 00:10:28,528
+Merhaba arkadaşlar.
+
+2
+00:10:31,468 --> 00:10:32,288
+Sesim geliyor mu?
+
+3
+00:10:33,948 --> 00:10:34,748
+GELİYOR HOCAM.
+
+4
+00:10:36,187 --> 00:10:41,508
+En son...
+
+5
+00:10:41,508 --> 00:10:43,508
+Galiba...
+
+6
+00:10:49,620 --> 00:10:51,460
+integral 2'ye işliyorduk.
+
+7
+00:11:10,067 --> 00:11:11,447
+Onda nerede kaldık arkadaşlar?
+
+8
+00:11:43,860 --> 00:11:46,180
+bu sekant köpikse falan yaptık değil mi?
+
+9
+00:12:02,995 --> 00:12:04,055
+Bunları yaptık.
+
+10
+00:12:06,975 --> 00:12:12,755
+Sinüs mx çarpı kosinüs nx şeklindeki integrallere gelmiştik en son hatırladığım kadarıyla.
+
+11
+00:12:14,755 --> 00:12:20,375
+Bu integrallere çözümlerine bakacağız.
+
+12
+00:12:21,415 --> 00:12:24,716
+Şimdi sinüs mx çarpı kosinüs nx şeklindeki integralde
+
+13
+00:12:28,916 --> 00:12:33,136
+Trivoremetrik bazı dönüşümleri kullanacağız.
+
+14
+00:12:34,136 --> 00:12:37,136
+Onlardan çarpım şeklinde olanlar
+
+15
+00:12:37,136 --> 00:12:39,536
+sin mx çarpı cos nx neydi?
+
+16
+00:12:39,916 --> 00:12:43,936
+1 bölü 2 sin mx nx artı sin m artı nx.
+
+17
+00:12:44,796 --> 00:12:46,296
+Bunu yapmamızın nedeni neydi?
+
+18
+00:12:47,676 --> 00:12:48,736
+Şimdi buna u desek
+
+19
+00:12:48,736 --> 00:12:52,116
+du m çarpı cos mx oluyor.
+
+20
+00:12:52,116 --> 00:12:54,056
+Yani cos nx dışarıda kalıyor.
+
+21
+00:12:54,716 --> 00:12:55,876
+Ya da buna u desek
+
+22
+00:12:55,876 --> 00:13:00,276
+cos nx'in türevi
+
+23
+00:13:00,276 --> 00:13:03,696
+eksi sin nx oluyor.
+
+24
+00:13:04,116 --> 00:13:05,855
+Sin mx yine dışarıda kalıyor.
+
+25
+00:13:06,696 --> 00:13:08,355
+Ya kısmı integrasyon yapacaksınız.
+
+26
+00:13:09,836 --> 00:13:11,396
+İndirgeme formülü kullanacaksınız.
+
+27
+00:13:11,496 --> 00:13:13,996
+Ya da bu dönüşümlerden birini kullanacaksınız.
+
+28
+00:13:16,816 --> 00:13:18,676
+Sin mx çarpı cos nx
+
+29
+00:13:18,676 --> 00:13:21,996
+1 bölü 2 sin mx nx artı sin m artı nx dönüşümünü.
+
+30
+00:13:21,996 --> 00:13:29,676
+sin mx çarpı sin nx de cos mx nx eksi cos m artı nx dönüşümü var.
+
+31
+00:13:30,376 --> 00:13:35,776
+Bir de cos mx çarpı cos nx de de cos mx n artı cos m artı n.
+
+32
+00:13:36,456 --> 00:13:38,656
+Şeklinde 3 tane formül var.
+
+33
+00:13:39,576 --> 00:13:40,396
+Bu 3 tane formülü
+
+34
+00:13:40,396 --> 00:13:42,396
+Bu işlem dönüşümü kullanarak
+
+35
+00:13:42,396 --> 00:13:44,296
+İntegrali kolay bir şekilde çözmemiz mümkün.
+
+36
+00:13:44,296 --> 00:13:44,796
+Çünkü bu
+
+37
+00:13:44,796 --> 00:13:48,336
+Burada u dönüşümü değişken dönüşümü de yapamıyoruz.
+
+38
+00:13:48,536 --> 00:13:50,256
+Kısmı integrasyon yaptığımız zaman da
+
+39
+00:13:50,256 --> 00:13:52,996
+Arda arda tekrar tekrar aynı integraller gelebiliyor.
+
+40
+00:13:53,716 --> 00:13:55,436
+Bundan dolayı bu şekilde ikiye bölüp
+
+41
+00:13:55,436 --> 00:13:57,736
+Önce sinüsü
+
+42
+00:13:57,736 --> 00:14:01,076
+Daha sonra sinüsü ya da cos nüslü ise
+
+43
+00:14:01,076 --> 00:14:02,816
+Cos nüslü kısmının integralini almak
+
+44
+00:14:02,816 --> 00:14:06,016
+Ayrı ayrı cos nüslü fonksiyonun integralini almak daha kolay.
+
+45
+00:14:10,004 --> 00:14:15,464
+Mesela sinüs 3x çarpı cos 5x dx şeklinde bir integral vermiş. Bakalım formüle.
+
+46
+00:14:17,464 --> 00:14:35,604
+Sinüs çarpı cos, sinüs nx çarpı, sinüs mx çarpı cos nx. Ne yapacağız? 1 bölü 2, sinüs m eksen, bakın 1 bölü 2, sinüs 3x eksi 5x artı, sinüs m artı nx, yani sinüs 3x artı 5x dx şeklinde integralı böldük.
+
+47
+00:14:35,844 --> 00:14:38,744
+Artık bundan sonra integralı almak biraz daha kolay. Bakın.
+
+48
+00:14:40,004 --> 00:14:52,543
+1 bölü 2 çarpı 1 bölü 2 çarpı 1 bölü 2 çarpı eksi sinüs 2x artı sinüs 8x olarak integralı elde ettik.
+
+49
+00:14:56,083 --> 00:14:59,543
+Kosinüs nasıl fonksiyonlu, çift fonksiyonlu, sinüs nasıl fonksiyonlu arkadaşlar?
+
+50
+00:15:12,820 --> 00:15:26,500
+Sinüs nasıl fonksiyon arkadaşlar? Tek mi, çift mi? Teşekkürler. Tek olduğu için, eksi sinüs 2x şeklinde çıkıyor değil mi? Sinüs eksi 2x, eksi sinüs 2x oluyor. Burası da sinüs 8x, tek tek,
+
+51
+00:15:26,500 --> 00:15:44,620
+İntegrallerini alıyorum. Sinüs 2x'in integrali, kosinüs 2x bölü 2, burada 1 bölü 2 var, 4 oldu. Yani eksi, eksi, eksi, artı oldu. Sinüsün integrali, eksi kosinüs yine, burada da eksi kosinüs de ama eksi var başında, artı oldu.
+
+52
+00:15:45,000 --> 00:15:54,820
+Eksi kosinüs 8x bölü 8, 1 bölü 2 ile çarptık, 1 bölü 16 oldu. Eksi kosinüs 8x bölü 16 olarak elde ettik, artı c oldu arkadaşlar.
+
+53
+00:15:56,500 --> 00:15:58,500
+Bu soru da anlaşılmayan bir kısım var mı?
+
+54
+00:17:35,316 --> 00:17:37,456
+Burası anlaşıldıysa, devam ediyorum.
+
+55
+00:17:41,683 --> 00:17:43,683
+İndirgeme formülleri.
+
+56
+00:17:45,683 --> 00:17:46,683
+Bakın...
+
+57
+00:17:51,092 --> 00:17:52,372
+Dün şunu yapmıştık.
+
+58
+00:17:53,272 --> 00:17:54,092
+Buradaki...
+
+59
+00:18:02,003 --> 00:18:03,723
+e üzeri x kosünus x dx
+
+60
+00:18:03,723 --> 00:18:05,223
+integralini yapmıştık.
+
+61
+00:18:06,023 --> 00:18:07,103
+Buna i demiştik.
+
+62
+00:18:07,763 --> 00:18:09,623
+İki kez kısmı integrasyonu uygulamıştık.
+
+63
+00:18:09,843 --> 00:18:11,384
+Bir kez kısmı integrasyonu uyguladık.
+
+64
+00:18:11,463 --> 00:18:13,543
+e üzeri x sinus x integralini bulduk.
+
+65
+00:18:14,083 --> 00:18:15,983
+Buna kısmı integrasyon uygulayınca da
+
+66
+00:18:15,983 --> 00:18:18,083
+e üzeri x kosünus x
+
+67
+00:18:18,083 --> 00:18:19,343
+dx'i tekrar elde ettik.
+
+68
+00:18:19,803 --> 00:18:21,803
+Buna i demiştik. Başka tekrar elde ettik.
+
+69
+00:18:21,803 --> 00:18:23,023
+Eksi i olduğu için
+
+70
+00:18:23,023 --> 00:18:25,363
+bunu bu tarafa artı i olarak geçirdik.
+
+71
+00:18:25,523 --> 00:18:27,323
+İki i yaptık. İki i'yi
+
+72
+00:18:27,323 --> 00:18:29,963
+bu fonksiyon bulduğumuz için de
+
+73
+00:18:29,963 --> 00:18:31,503
+i fonksiyonu e üzeri x bir iki
+
+74
+00:18:31,503 --> 00:18:33,323
+kosünus x artı c oldu.
+
+75
+00:18:34,223 --> 00:18:35,843
+Hatta for while döngüsü örneği
+
+76
+00:18:35,843 --> 00:18:37,783
+falan vermiştik. Arda arda
+
+77
+00:18:37,783 --> 00:18:39,723
+çıkıyor demiştik sürekli integrasyon
+
+78
+00:18:39,723 --> 00:18:40,303
+yaptığımızda.
+
+79
+00:18:44,339 --> 00:18:51,399
+İşte bu tarz integrallerde de indirgeme formüllerini kullanacağız.
+
+80
+00:18:51,579 --> 00:18:54,099
+Bunları bir genel sınıf olarak düşüneceğiz.
+
+81
+00:18:54,519 --> 00:19:00,019
+Yani mesela tanjant nx şeklinde bir integral verdi.
+
+82
+00:19:01,220 --> 00:19:02,419
+Bize soru da şunu soruyor.
+
+83
+00:19:03,459 --> 00:19:06,059
+İntegrali için bir indirgeme formülü bulun diyor.
+
+84
+00:19:06,059 --> 00:19:10,059
+Yani ben bunu bir formül yardımıyla nasıl çözebilirim?
+
+85
+00:19:10,059 --> 00:19:10,639
+Çözebilirim.
+
+86
+00:19:11,399 --> 00:19:14,819
+I n eşittir tanjant nx dx olsun diyeceğiz.
+
+87
+00:19:15,559 --> 00:19:17,599
+I n eşittir tanjant nx dx olsun.
+
+88
+00:19:18,139 --> 00:19:19,279
+I n'in formülü nedir?
+
+89
+00:19:19,539 --> 00:19:21,159
+Yani I n integrali nasıl bulunur?
+
+90
+00:19:21,319 --> 00:19:22,119
+Nasıl elde edilir?
+
+91
+00:19:22,839 --> 00:19:31,099
+Yine tabii bu integralin sonucu da I n eşittir tanjant x'e n-1 bölü n-1 eksi i n-2 oluyormuş.
+
+92
+00:19:31,099 --> 00:19:34,819
+Yani tekrar aynı integrali içinde çıkartıyoruz.
+
+93
+00:19:34,960 --> 00:19:36,659
+Benzeri bir integral elde ediyoruz tekrar.
+
+94
+00:19:36,659 --> 00:19:43,740
+Yani bu I n formülünde I n-2 integral de çıkıyor burada.
+
+95
+00:19:44,459 --> 00:19:45,339
+Ama ne olmuş oluyor?
+
+96
+00:19:46,119 --> 00:19:49,419
+I n-2 de integral iki mertebe daha düşük.
+
+97
+00:19:50,879 --> 00:19:53,740
+Dolayısıyla biraz daha basitleştirmiş oluyor bu integrali.
+
+98
+00:19:54,799 --> 00:19:56,579
+Şimdi mesela soru da şunu neymiş?
+
+99
+00:19:56,579 --> 00:20:01,359
+tanjant n'inci dereceden x dx integral için bir indirgeme formülü bulup
+
+100
+00:20:01,359 --> 00:20:07,819
+bu formül yardımıyla tanjant 5x dx integralini hesaplayınız diyor.
+
+101
+00:20:09,819 --> 00:20:13,419
+O zaman I n eşittir tanjant nx dx olsun.
+
+102
+00:20:14,179 --> 00:20:14,980
+I n'i alalım.
+
+103
+00:20:16,379 --> 00:20:22,179
+Tanjant x üzeri n-2 çarpı tanjant kare x dx diyoruz.
+
+104
+00:20:22,179 --> 00:20:28,759
+tanjant kare x sekant kare x sekant kare x eksi birdir aynı zamanda.
+
+105
+00:20:30,159 --> 00:20:34,899
+Bu integralide böldüğüm zaman tanjant x üzeri n-2 çarpı sekant kare x dx
+
+106
+00:20:34,899 --> 00:20:41,319
+eksi tanjant x üzeri n-2 dx olarak böldüm integrali.
+
+107
+00:20:41,319 --> 00:20:43,480
+Şimdi burada işim kolay.
+
+108
+00:20:43,619 --> 00:20:45,099
+Tanjant x'e u dersem
+
+109
+00:20:45,099 --> 00:20:50,179
+sekant kare x dx kısmı du oluyor.
+
+110
+00:20:50,619 --> 00:20:53,439
+Tanjant x'in türevi sekant kare x dx.
+
+111
+00:20:54,599 --> 00:20:57,259
+Ben dolayısıyla sekant kare x dx'e du dersem
+
+112
+00:20:57,259 --> 00:21:00,819
+bu integral u üzeri n-2 du haline gelmiş oluyor.
+
+113
+00:21:01,460 --> 00:21:02,919
+Ancak burada işim kolay değil.
+
+114
+00:21:02,919 --> 00:21:09,460
+tekrar tanjant x üzeri n gibi bir integral elde etti.
+
+115
+00:21:10,059 --> 00:21:11,639
+Sadece iki mertebe daha düşük.
+
+116
+00:21:13,579 --> 00:21:16,259
+Yani benim karşıma tekrar tanjant x üzeri n geldi.
+
+117
+00:21:17,859 --> 00:21:18,919
+Ama nasıl geldi?
+
+118
+00:21:19,859 --> 00:21:21,079
+İki mertebe daha düşük.
+
+119
+00:21:21,980 --> 00:21:26,539
+Tanjant x üzeri n-2 geldi.
+
+120
+00:21:26,539 --> 00:21:45,539
+Tanjant x üzeri n-2.
+
+121
+00:21:31,923 --> 00:21:33,763
+buna ben i n-2 diyeceğim.
+
+122
+00:22:19,347 --> 00:22:42,107
+Dolayısıyla ben artık integrenin çözümünü elde edebilirim. Bakın burada u üzeri n-2 du, u üzeri n-2 artı 1 bölü u üzeri n-2 artı 1 bölü n-2 artı 1'dir değil mi?
+
+123
+00:22:49,395 --> 00:23:16,615
+Çünkü x üzeri n-2 dx'de ne yapıyoruz? x üzeri n-2 artı 1, bölü n-2 artı 1 yapıyoruz. Burada u üzeri n-2 artı 1, bölü n-2 artı 1. Yani u üzeri n-1 bölü n-1 yapıyoruz. Eksi i n-2 şeklinde integrali elde etmiş olduk. Bize bir deneyi sormuş. Tanjant 5. dereceden x dx'i sormuş. Şimdi ona bakalım. Burada anlaşılmayan bir şey var mı bu formülün çıkartılmasında arkadaşlar?
+
+124
+00:23:32,435 --> 00:23:34,255
+Sorunuz yoksa diğer soruya geçiyorum.
+
+125
+00:23:48,564 --> 00:23:52,423
+Yani diğer soru derken, tanjant 5x'in çözümüne bakalım şimdi.
+
+126
+00:23:53,824 --> 00:23:55,244
+Şimdi formülü elde ettik.
+
+127
+00:23:57,784 --> 00:23:59,444
+Formülüm I n eşittir.
+
+128
+00:24:01,944 --> 00:24:03,403
+I n eşittir.
+
+129
+00:24:04,764 --> 00:24:09,704
+Tanjant x'i n-1, bölü n-1, eksi I n-2.
+
+130
+00:24:11,104 --> 00:24:12,444
+Benim formülüm bu.
+
+131
+00:24:13,264 --> 00:24:17,683
+I n eşittir. Tanjant x'i n-1, bölü n-1, eksi I n-2.
+
+132
+00:24:21,364 --> 00:24:47,183
+Şimdi i5'i bulalım. Tanjant x üzeri 5dx, i5'tir değil mi arkadaşlar? i5'i istiyor bizden. Bu nedir? Tanjant x üzeri 5-1 bölü 5-1 eksi i5-2. Yani tanjant x üzeri 4 bölü 4 eksi i3'tür. En yerine 5 yazdım bu formülde. Tanjant x üzeri 4 bölü 4 eksi i3 elde ettim.
+
+133
+00:24:47,183 --> 00:24:48,824
+Şimdi
+
+134
+00:24:48,824 --> 00:24:58,004
+Tanjant x üzeri 4 bölü 4 eksi i3 elde edelim.
+
+135
+00:24:59,584 --> 00:25:00,683
+i3 nedir?
+
+136
+00:25:07,220 --> 00:25:09,500
+Evet [öğrenci], sorun ne? Sorabilirsin.
+
+137
+00:25:10,299 --> 00:25:12,180
+I3'te tanjantik üzeri.
+
+138
+00:25:19,380 --> 00:25:21,440
+tanjant x 3x1 bölü
+
+139
+00:25:26,420 --> 00:25:29,400
+Bir dakika, kaç kişi katılmış? 96 kişi var.
+
+140
+00:25:31,300 --> 00:25:39,440
+Bazılar, şey, katılım linkini, WhatsApp'a atayım olmadı ya.
+
+141
+00:25:40,820 --> 00:25:43,539
+Gerekirse oradan gelsin arkadaşlarınız.
+
+142
+00:25:47,220 --> 00:25:48,579
+Whatsapp'tan attınız mı?
+
+143
+00:25:50,819 --> 00:25:52,600
+Grupta bir sürü mesaj var.
+
+144
+00:25:53,360 --> 00:25:54,839
+Ben Whatsapp'a bakmadım ya.
+
+145
+00:26:07,284 --> 00:26:07,903
+Allah Allah.
+
+146
+00:26:30,483 --> 00:26:32,803
+Ne oldu? Şu an durum ne? Giriyor musunuz arkadaşlar?
+
+147
+00:26:42,708 --> 00:26:43,548
+Allah Allah.
+
+148
+00:26:51,347 --> 00:26:55,347
+Şu an derse katılan 97 kişi gözüküyor. O 97 kişi...
+
+149
+00:27:00,723 --> 00:27:09,843
+Dinliyor mu? Yani sesim geliyor mu? Dersde mi şu an herkes? Sorumsuz bir şekilde bire basabilir misiniz? Sorumsuz bir şekilde ders dinleyenler.
+
+150
+00:27:15,508 --> 00:27:36,188
+Şimdi, herkes bire bassın, sorunsuz bir şekilde katılabilenler. Sayıyı alalım, bakalım, genel bir sorun mu, sizden bir sorun var, belki sadece sizin internet sistemden bir sorun var. 25 kişi yazmış, 26 kişi, Allah Allah.
+
+151
+00:27:51,059 --> 00:27:53,619
+Ya olmadı, linkle gelin arkadaşlar.
+
+152
+00:28:02,259 --> 00:28:03,799
+Yoklama olmuyor. Allah Allah.
+
+153
+00:28:13,587 --> 00:28:19,768
+yoklamayla ilgili sorun olmasın diye oradan girin diye tavsiye ettiler ama arkadaşlar bilmiyorum yoklama nasıl olacak.
+
+154
+00:28:25,364 --> 00:28:28,443
+Ya o zaman arkadaşlar şey yapın, nedir onun adı?
+
+155
+00:28:31,703 --> 00:28:34,244
+Bildirin yani, vektörle falan.
+
+156
+00:28:45,748 --> 00:28:48,148
+siteden bağlanmakta problem oluyorsa, onu
+
+157
+00:28:58,483 --> 00:29:02,443
+Yıldız mailinizle bilgi işleme yazın arkadaşlar bilgi işleme.
+
+158
+00:29:04,843 --> 00:29:10,483
+Yani şöyle, siteden bağlanmakta problem yaşıyoruz gibisinden.
+
+159
+00:29:10,703 --> 00:29:19,384
+Eğer sizinle ilgili bir problem varsa, yoklamalarla ilgili de rektörlüğe de bildirebilirsiniz.
+
+160
+00:29:19,583 --> 00:29:24,263
+Genel olarak diğer derslerde problem yaşıyorsanız, rektörlüğe de bildirin.
+
+161
+00:29:24,263 --> 00:29:33,063
+Hani en azından şunu yaparlar, siz mail atarsanız, şey yaparsanız, yoklamaları en azından dikkate almazlar.
+
+162
+00:29:35,884 --> 00:29:37,763
+Yoksa zorluk yaşayacaksınız.
+
+163
+00:29:41,183 --> 00:29:43,263
+Sadece bugün özgü bir şeyse de...
+
+164
+00:29:50,708 --> 00:29:51,368
+Bilemiyorum.
+
+165
+00:29:54,740 --> 00:29:59,279
+Şu an ekrandaki tanjantı falan görüyorsunuz değil mi arkadaşlar? Bir sorun yok.
+
+166
+00:30:03,827 --> 00:30:05,167
+Şimdi I3'ü yapalım.
+
+167
+00:30:07,567 --> 00:30:11,988
+Olmadı arkadaşlar kayıttan izlersiniz ilk kısımlarını.
+
+168
+00:30:14,208 --> 00:30:15,768
+En kötü ihtimal kayıttan izleyin.
+
+169
+00:30:18,468 --> 00:30:20,008
+Şimdi I3'ü yapıyoruz.
+
+170
+00:30:20,627 --> 00:30:21,447
+I-M formülüm.
+
+171
+00:30:21,508 --> 00:30:23,667
+Tangentik süre n-1, n-1 çıktı.
+
+172
+00:30:23,847 --> 00:30:25,127
+Eksi I, n-2 çıktı.
+
+173
+00:30:25,887 --> 00:30:29,067
+I3'de tangentik süre n yerine 3 yazıyorum.
+
+174
+00:30:29,167 --> 00:30:30,048
+3-1 bölü.
+
+175
+00:30:30,048 --> 00:30:31,228
+3-1.
+
+176
+00:30:33,827 --> 00:30:36,367
+3-1 bölü.
+
+177
+00:30:36,708 --> 00:30:37,407
+3-1.
+
+178
+00:30:38,907 --> 00:30:40,468
+Eksi I, n-2.
+
+179
+00:30:41,008 --> 00:30:43,687
+Yani I3'ü 2.
+
+180
+00:30:45,988 --> 00:30:47,748
+I3'ü 2 ne? I1.
+
+181
+00:30:48,347 --> 00:30:50,208
+Yani tangentik sin karesi bölü 2.
+
+182
+00:30:50,548 --> 00:30:51,447
+Eksi I1 oldu.
+
+183
+00:30:52,667 --> 00:30:54,067
+Burayı da düzenlediğim zaman.
+
+184
+00:30:54,488 --> 00:30:56,268
+Tangentik süre 4 bölü 4.
+
+185
+00:30:56,268 --> 00:30:58,887
+Eksi tangent kare x bölü 2.
+
+186
+00:30:59,347 --> 00:31:01,268
+Artı integral I1.
+
+187
+00:31:01,268 --> 00:31:04,567
+Yani tangent 1x.
+
+188
+00:31:05,228 --> 00:31:06,968
+Tangentik süre 1, dx.
+
+189
+00:31:08,387 --> 00:31:10,087
+Tangentik sin integrali neydi?
+
+190
+00:31:11,387 --> 00:31:12,028
+Ne yapıyorduk?
+
+191
+00:31:13,028 --> 00:31:15,107
+İntegral sinüs bölü kosinüstü.
+
+192
+00:31:20,051 --> 00:31:42,591
+cos x'e u diyorduk. cos x'e u deyince, eksi sin x dx du oluyordu. du bölü u'dan da, eksi du bölü u'dan da, eksi ln u oluyordu. Yani eksi ln cos x oluyordu, tanjant x'in integrali. Hatırlayın. Dolayısıyla eksi ln cos x artı c olarak bu integrali elde ediyorum arkadaşlar.
+
+193
+00:31:45,411 --> 00:31:47,831
+Burada anlaşılmayan bir şey var mı bu soruda?
+
+194
+00:31:55,604 --> 00:32:09,304
+Yoklama aldı ne demek arkadaşlar? Yani sizin derse girdiğinize dair mail mi geliyor? Ne oluyor? Veya o ders sayfanızda dersin derse girdiğinize dair bilgi mi oluyor?
+
+195
+00:32:14,355 --> 00:32:16,996
+mail geliyor. Derse katıldınız.
+
+196
+00:32:18,435 --> 00:32:19,195
+Şeklinde.
+
+197
+00:32:27,988 --> 00:32:32,988
+Kaç dakika derse girdiğiniz mi kaydetiliyor? Allah Allah. O da değişikmiş.
+
+198
+00:32:41,556 --> 00:32:45,615
+Teknolojinin gelişmesi aleyhimize gidiyor.
+
+199
+00:32:50,516 --> 00:33:02,576
+Mesela derste yoklama imza atıyorsun, sonra dinleme ya da dışarı çık. Online dersler önce açmak zorundasın. Bir bilgisayar ya da telefonu ona ayırmak zorunda kalıyorsun.
+
+200
+00:33:18,996 --> 00:33:20,896
+katılım durumundan kaç dakika derste?
+
+201
+00:33:21,496 --> 00:33:21,776
+Ooo.
+
+202
+00:33:28,180 --> 00:33:29,560
+Öğrencilik de zor be kardeşim.
+
+203
+00:33:53,619 --> 00:33:57,159
+x üzeri n, e üzeri ax şeklinde bir integral vermiş.
+
+204
+00:33:57,699 --> 00:33:59,699
+Diyor ki, indirgeme formülü bulun diyor.
+
+205
+00:34:00,159 --> 00:34:02,579
+İntegrel için bir indirgeme formülü bulun.
+
+206
+00:34:03,000 --> 00:34:05,099
+x küp e üzeri ax hesaplayın diyor.
+
+207
+00:34:06,119 --> 00:34:09,179
+i n eşittir, x üzeri n, e üzeri ax diye x diyeceğiz.
+
+208
+00:34:10,179 --> 00:34:10,779
+Ne yapacağız?
+
+209
+00:34:11,920 --> 00:34:14,359
+Sırayla kısmi integrasyon yapalım.
+
+210
+00:34:15,359 --> 00:34:19,559
+Ve kısmi integrasyona göre bir formül elde edeceğiz değil mi?
+
+211
+00:34:33,172 --> 00:34:37,211
+Açılıyormuş arkadaşlar. Tekrar bir deneyin. Yoklama sorunu olanlar.
+
+212
+00:34:44,052 --> 00:34:45,372
+U, D, V yapıyorum.
+
+213
+00:34:45,532 --> 00:34:46,612
+X'e N'e U dedim.
+
+214
+00:34:47,152 --> 00:34:49,412
+E üzeri A, X, D, X'e D, V diyorum.
+
+215
+00:34:50,352 --> 00:34:52,592
+N çarpı X'e N'e eksi 1, D, X.
+
+216
+00:34:53,112 --> 00:34:54,012
+D, U oldu.
+
+217
+00:34:54,291 --> 00:34:56,932
+E üzeri A, X bölü A'da V oldu.
+
+218
+00:34:57,012 --> 00:34:58,092
+Bunu değil tekriliğine aldım.
+
+219
+00:34:58,152 --> 00:34:59,092
+Bunu türevine aldım.
+
+220
+00:35:00,152 --> 00:35:01,751
+U, V, X, V, D, U'da.
+
+221
+00:35:04,152 --> 00:35:06,452
+X'e E üzeri A, X bölü A.
+
+222
+00:35:07,731 --> 00:35:08,832
+U'da X'e N.
+
+223
+00:35:08,832 --> 00:35:11,992
+U çarpı V eksi integral V, D, U'yu alıyorum.
+
+224
+00:35:11,992 --> 00:35:15,372
+V yerine de E üzeri A, X bölü A'yı aldım.
+
+225
+00:35:18,192 --> 00:35:19,291
+D, X yerine de
+
+226
+00:35:19,291 --> 00:35:22,972
+D, V yerine de pardon
+
+227
+00:35:22,972 --> 00:35:25,211
+X üzeri N, X'e 1 çarpı N alıyorum.
+
+228
+00:35:26,052 --> 00:35:28,291
+N çarpı X üzeri N, X'e 1, D, X'de
+
+229
+00:35:28,291 --> 00:35:31,372
+D, U oluyor.
+
+230
+00:35:31,632 --> 00:35:33,492
+U, V eksi V, D, U'yu aldım.
+
+231
+00:35:34,251 --> 00:35:34,992
+D, U'yu bakın.
+
+232
+00:35:34,992 --> 00:35:37,912
+N çarpı X üzeri N, X'e 1, D, X.
+
+233
+00:35:39,832 --> 00:35:41,271
+V, D, U burası.
+
+234
+00:35:41,271 --> 00:35:42,092
+Bu V.
+
+235
+00:35:43,812 --> 00:35:45,672
+E üzeri A, X bölü A kısmı.
+
+236
+00:35:46,251 --> 00:35:47,472
+D, U da bu.
+
+237
+00:35:47,812 --> 00:35:48,592
+V, D, U.
+
+238
+00:35:49,852 --> 00:35:51,231
+Şimdi bu integrali alayım.
+
+239
+00:35:53,251 --> 00:35:53,751
+Burası
+
+240
+00:35:53,751 --> 00:35:54,251
+B, D, U
+
+241
+00:36:09,972 --> 00:36:12,292
+Düzenlediğim zaman n bölü a
+
+242
+00:36:12,292 --> 00:36:13,852
+i n-1 oldu burası.
+
+243
+00:36:14,252 --> 00:36:15,012
+Bakın şurası
+
+244
+00:36:15,012 --> 00:36:17,332
+bir mertebe düştük.
+
+245
+00:36:17,672 --> 00:36:19,912
+x'e n'e x'e n demiştik.
+
+246
+00:36:20,392 --> 00:36:21,832
+x'e n-1 e üzeri a x
+
+247
+00:36:21,832 --> 00:36:22,732
+i n-1 oldu.
+
+248
+00:36:23,752 --> 00:36:24,652
+Demek ki i n
+
+249
+00:36:24,652 --> 00:36:27,832
+bir bölü a x'e n e üzeri a x
+
+250
+00:36:27,832 --> 00:36:30,132
+eksi n bölü a
+
+251
+00:36:30,132 --> 00:36:31,172
+i n-1 oldu.
+
+252
+00:36:31,892 --> 00:36:34,032
+Buraya kadar anlaşılmayan bir kısım var mı arkadaşlar?
+
+253
+00:36:35,372 --> 00:36:36,012
+Bir kez
+
+254
+00:36:36,012 --> 00:36:37,112
+kısmi
+
+255
+00:36:37,112 --> 00:36:39,132
+integrasyon uyguladık.
+
+256
+00:36:39,752 --> 00:36:42,272
+Bir kez kısmi integrasyon uyguladıktan sonra da
+
+257
+00:36:49,940 --> 00:36:54,960
+Bir kez kısmı integrasyon uyguladıktan sonra da bir mertebe düşmüş olduk.
+
+258
+00:36:55,139 --> 00:37:01,059
+Yani I n, 1 bölü A x'e n, e üzeri A x, x n bölü A n-1 şekline gelmiş oldu.
+
+259
+00:37:02,220 --> 00:37:07,639
+Şimdi I 3'ü sormuş bize, yani x küp, e üzeri A x'i sormuş, I 3'ü hesaplayalım.
+
+260
+00:37:09,240 --> 00:37:12,000
+1 bölü A x üzeri 3, e üzeri A x.
+
+261
+00:37:12,559 --> 00:37:15,940
+Formülü uyguluyorum. 3 bölü A, I 2 olacak.
+
+262
+00:37:17,280 --> 00:37:18,720
+Şimdi I 2'yi hesaplayalım.
+
+263
+00:37:47,123 --> 00:38:07,783
+I2'yi hesaplarken de yine formülü uygulayalım I2 için. Burayı yazdık zaten. 3 bölü A parantezinde I2'yi yazıyorum. 1 bölü A x kare evzili A x, eksi 2 bölü A çarpı I1 olacak. Bir mertebe düştük bakın. Tekrar burada I1'i yazalım.
+
+264
+00:38:18,771 --> 00:38:19,811
+x kare artı 1 ne olacak?
+
+265
+00:38:24,436 --> 00:38:28,776
+Bakın bu kolay bir soru ama arda arda işlemler yaparken işlem sırasını karıştırmayın.
+
+266
+00:38:29,956 --> 00:38:30,816
+I1 ne olacak?
+
+267
+00:38:32,476 --> 00:38:37,336
+1 bölü A x üzeri 1 e üzeri A x eksi 1 bölü A I0 olacak.
+
+268
+00:38:38,756 --> 00:38:39,635
+I0 nedir?
+
+269
+00:38:40,756 --> 00:38:42,956
+I n x üzeri n e üzeri A x diye ya.
+
+270
+00:38:43,615 --> 00:38:46,576
+I0 da x üzeri 0 e üzeri A x olacak.
+
+271
+00:38:46,896 --> 00:38:48,876
+Yani integral e üzeri A x de x olacak.
+
+272
+00:38:48,876 --> 00:38:50,135
+Artık bakın.
+
+273
+00:38:51,756 --> 00:38:53,756
+İyice kolaylaştırdım.
+
+274
+00:38:55,316 --> 00:38:56,476
+İndirgedim indirgedim.
+
+275
+00:38:56,836 --> 00:38:57,996
+En altı kadar indirgedim.
+
+276
+00:38:58,976 --> 00:39:02,696
+Yani x e üzeri A x'den daha da basit bir hale getirmiş oldum.
+
+277
+00:39:03,256 --> 00:39:05,635
+Bir kısmı integrasyondan daha kurtulmuş oldum.
+
+278
+00:39:08,256 --> 00:39:09,456
+1 bölü A x küp.
+
+279
+00:39:09,635 --> 00:39:11,276
+E üzeri A x ilk başta çıkmıştı.
+
+280
+00:39:11,536 --> 00:39:12,316
+İkinci de çıktı.
+
+281
+00:39:12,576 --> 00:39:13,376
+Üçüncü de çıktı.
+
+282
+00:39:13,976 --> 00:39:17,336
+En sonunda 6 bölü A küp e üzeri A x de x'in integrali var elinde.
+
+283
+00:39:17,336 --> 00:39:19,135
+Bunu çözdüğüm anda bitiyor zaten.
+
+284
+00:39:19,736 --> 00:39:20,876
+E üzeri A x de x.
+
+285
+00:39:21,016 --> 00:39:22,816
+1 bölü A e üzeri A x'dir.
+
+286
+00:39:22,816 --> 00:39:28,396
+6 bölü A küp ile 1 bölü A'yı çarptığım zaman 6 bölü A üzeri 4 olur.
+
+287
+00:39:28,996 --> 00:39:30,756
+E üzeri A x'i yazdım.
+
+288
+00:39:31,076 --> 00:39:32,536
+Artı C yazdım.
+
+289
+00:39:33,016 --> 00:39:35,416
+İntegral sonucu da böylece elde edilmiş olur.
+
+290
+00:39:35,416 --> 00:39:41,176
+Çözüm aşamalarında aldışılmayan bir kısım var mı arkadaşlar?
+
+291
+00:40:44,788 --> 00:40:48,208
+Soru yoksa devam edelim arkadaşlar diğer soruya.
+
+292
+00:40:49,788 --> 00:40:54,987
+Şimdi burada trigonometrik değişken dönüşümlerine geçeceğiz artık.
+
+293
+00:40:54,987 --> 00:41:08,568
+Bazı trigonometrik ifadelerin çözümünü yaparken sadece trigonometrik integrallerin çözümünde değil,
+
+294
+00:41:08,568 --> 00:41:15,427
+aynı zamanda bazı zor integrallerin kariköklü integrallerin çözümünde de işimize yarayan bir araç.
+
+295
+00:41:16,288 --> 00:41:23,088
+Mesela trigonometrik ifadeleri aynı zamanda bazı zor integrallerin çözümlerinde de kullanıyoruz.
+
+296
+00:41:24,088 --> 00:41:30,788
+Mesela şöyle bir integral verildi.
+
+297
+00:41:32,228 --> 00:41:34,728
+5-x kare üzeri 3 bölü 2.
+
+298
+00:41:34,728 --> 00:41:39,027
+Bu integralde bir dönüşüm yapıp bu integrali çözmemiz mümkün.
+
+299
+00:41:39,268 --> 00:41:42,788
+Yani x eşittir kök 5 sin theta diyoruz ve bu integrali çözebiliyoruz.
+
+300
+00:41:42,967 --> 00:41:45,347
+Ya da şöyle bir integral verdi.
+
+301
+00:41:45,748 --> 00:41:48,407
+x kare bölü kare köküşüne 1-x kare.
+
+302
+00:41:48,648 --> 00:41:51,768
+x eşittir sin theta diyoruz ve bu integrali çözebiliyoruz.
+
+303
+00:41:52,027 --> 00:41:56,088
+Bu dönüşümü yaptıktan sonra bu integrali çözebiliyoruz.
+
+304
+00:41:56,608 --> 00:41:57,367
+Nasıl çözüyoruz?
+
+305
+00:41:57,367 --> 00:42:07,288
+x eşittir sin theta aslında bu üçgende yani karşısı x olan hipotenüsü kök 5 olan bir üçgende.
+
+306
+00:42:08,887 --> 00:42:11,228
+Mesela şurada x bölü kök 5 sin theta ya.
+
+307
+00:42:12,268 --> 00:42:13,588
+x bölü kök 5 ne demek?
+
+308
+00:42:13,967 --> 00:42:15,007
+Karşı bölü hipotenüs.
+
+309
+00:42:15,148 --> 00:42:19,407
+Karşısı x hipotenüsü kök 5 olan bir üçgen oluşturuyor bu dönüşümde bize.
+
+310
+00:42:20,208 --> 00:42:23,788
+Bu üçgende sinüsü ve kosünüsü bularak yerini yazarak yapabiliyoruz.
+
+311
+00:42:23,788 --> 00:42:31,148
+Ya da şöyle bir integralde bakın mesela burada şöyle bir integral vermiş.
+
+312
+00:42:32,907 --> 00:42:35,128
+dx bölü kökçene 4 artı x kare.
+
+313
+00:42:36,427 --> 00:42:44,688
+Yine bu integralde 4-x x kare olsa işte arksin üstü falan yapıyorduk ama 4 artı x kare olunca ne yapacağız?
+
+314
+00:42:45,327 --> 00:42:51,128
+x eşittir 2 tanjant theta dönüşümüyle bunların şimdi neye göre vereceğimizi işleyeceğiz.
+
+315
+00:42:51,128 --> 00:42:54,347
+Böyle bir dönüşüm yaparak tanjant theta nedir o zaman?
+
+316
+00:42:54,447 --> 00:42:55,148
+x bölü 2'dir.
+
+317
+00:42:55,528 --> 00:42:57,367
+Karşı bölü komşu x bölü 2'dir.
+
+318
+00:42:57,867 --> 00:43:00,588
+O zaman hipotenüs 4 artı x kare oluyor bakın.
+
+319
+00:43:01,927 --> 00:43:09,128
+Böylelikle işte dx yerine 2 sekant kare theta d theta yazıyoruz ve integrali kolaylıkla çözüyoruz.
+
+320
+00:43:09,128 --> 00:43:13,447
+Ya da böyle bir integralde tanjant theta 3x oluyor.
+
+321
+00:43:14,568 --> 00:43:16,728
+Şimdi bunları nasıl vereceğimizi göstereceğim.
+
+322
+00:43:17,748 --> 00:43:21,867
+Şu an sadece neden böyle yaptığımızı açıklamaya çalışıyorum.
+
+323
+00:43:22,887 --> 00:43:27,967
+Mesela böyle bir integralde normalde kare köklü bir integral çözmemiz çok zor.
+
+324
+00:43:28,347 --> 00:43:32,088
+Ama x eşittir 2 sekant theta diyerek bu integrali çözebiliyoruz.
+
+325
+00:43:37,427 --> 00:43:40,127
+Daha sonra zaten basit kesirlerle integrasyona geçeceğiz.
+
+326
+00:43:41,688 --> 00:43:45,607
+Şimdi herhalde trigonometrik değişken dönüşüm neden yaptığımız anlaşıldı.
+
+327
+00:43:48,007 --> 00:43:55,847
+Şöyle ki, bize kök içinde a kare eksi x kare şeklinde bir terim verildi.
+
+328
+00:43:59,188 --> 00:44:07,887
+kök içinde a kare eksi x kare içeren bir integral verildi. Yani böyle bir integralde nasıl bir dönüşüm uygulamalıyım?
+
+329
+00:44:09,028 --> 00:44:16,148
+Kök içinde a kare eksi x kare ifadesi a'lar eksi a ile a arasındayken anlamlıdır.
+
+330
+00:44:17,367 --> 00:44:20,728
+x'ler eksi a ile a arasındayken anlamlıdır. Ne demek bu?
+
+331
+00:44:20,728 --> 00:44:26,628
+a kare eksi x karenin sıfırdan büyük eşit olmasını sağlamaya çalışıyorum.
+
+332
+00:44:27,468 --> 00:44:29,468
+Kare kökün içerisi sıfırdan büyük eşit olmalı.
+
+333
+00:44:30,128 --> 00:44:30,568
+Bu ise
+
+334
+00:44:30,568 --> 00:44:35,048
+eksi pi bölü 2, teta pi bölü 2 için mümkündür.
+
+335
+00:44:36,427 --> 00:44:37,508
+Yani ne demek bu?
+
+336
+00:44:38,367 --> 00:44:39,128
+Teta eşittir.
+
+337
+00:44:39,248 --> 00:44:42,528
+A sinüs x bölü a dönüşümü yapmaya çalışıyoruz.
+
+338
+00:44:43,448 --> 00:44:45,427
+x'e ben a sinüs teta dersem
+
+339
+00:44:45,427 --> 00:44:48,028
+x'e a sinüs teta dersem
+
+340
+00:44:52,403 --> 00:44:56,043
+Sinüs deta nedir? Sinüs deta x bölü a'dır.
+
+341
+00:45:04,211 --> 00:45:05,951
+x bölü a'dır.
+
+342
+00:45:08,552 --> 00:45:14,451
+Şimdi sinüs ne demek? 90 derecelik bir üçgende teta açısının sinüsü ne demek?
+
+343
+00:45:14,711 --> 00:45:24,891
+90 derecelik bir üçgende teta açısının karşısının x hipotenüsünün a olması demek.
+
+344
+00:45:25,431 --> 00:45:26,972
+O zaman komşu kenar nedir?
+
+345
+00:45:28,391 --> 00:45:29,672
+Burayı biliyorum, burayı biliyorum.
+
+346
+00:45:29,871 --> 00:45:31,612
+Burası nedir? a kareksi x karedir.
+
+347
+00:45:31,992 --> 00:45:33,492
+Kök içinde a kareksi x karedir.
+
+348
+00:45:42,452 --> 00:45:44,332
+Kök içinde a kare eksi x kare tur.
+
+349
+00:45:58,291 --> 00:46:07,731
+Dolayısıyla artık ben sin teta x bölü a, cos teta, kök içinde a kare x x kare bölü a ve tanjan teta'yı biliyorum mesela.
+
+350
+00:46:08,931 --> 00:46:10,011
+Bunları kullanabilirim.
+
+351
+00:46:13,072 --> 00:46:21,331
+x eşittir a sin teta'yı yazdığım zaman a kare x x kare, a kare x'i a kare sin kare teta.
+
+352
+00:46:21,331 --> 00:46:28,371
+Bu da a kare parantezinde 1 eksi sin kare teta, 1 eksi sin kare teta da cos kare teda'dır.
+
+353
+00:46:28,471 --> 00:46:30,471
+a çarpı mutlak cos teta olur.
+
+354
+00:46:30,831 --> 00:46:32,851
+Yani a cos teta'yı verir bana.
+
+355
+00:46:34,251 --> 00:46:40,251
+x eşittir a sin teta, d x zaten a cos teta d teta'dır.
+
+356
+00:46:42,011 --> 00:46:46,692
+Aynı zamanda cos teta kök içinde a kare x x kare bölü a'dır.
+
+357
+00:46:47,072 --> 00:46:51,092
+Bakın teta'nın cos teta'nın komşu bölü hipotenüstür.
+
+358
+00:46:51,331 --> 00:46:56,851
+cos teta'da kök içinde a kare x x kare bölü a'dır.
+
+359
+00:46:57,552 --> 00:46:59,971
+Kök içinde a kare x x kare bölü a'dır.
+
+360
+00:47:00,371 --> 00:47:01,612
+Komşu bölü hipotenüstür.
+
+361
+00:47:02,751 --> 00:47:05,951
+Tanjan teta'da karşı bölü komşudur.
+
+362
+00:47:05,951 --> 00:47:14,271
+Yani x açısı bölü komşu açı kök içinde a kare x x kare'dır.
+
+363
+00:47:14,911 --> 00:47:16,991
+Bakın hepsini elde ettim.
+
+364
+00:47:22,132 --> 00:47:27,432
+Bu sayede integrali daha basit bir integral haline getirip çözmem mümkün olur.
+
+365
+00:47:27,632 --> 00:47:39,132
+Yani kare kök içinde akareksi x kare şeklinde bir ifade varsa, ben bu ifade x eşittir a sin theta yaparım ve bu integrali çözerim.
+
+366
+00:47:40,731 --> 00:47:44,392
+Theta nedir burada? Arksinüs x bölü a'dır dolayısıyla.
+
+367
+00:47:45,532 --> 00:47:49,351
+Sin theta x bölü a'dır, theta da arksinüs x bölü a'dır.
+
+368
+00:47:49,351 --> 00:47:52,992
+Bu dönüşümde anlaşılmayan bir şey var mı?
+
+369
+00:47:53,892 --> 00:47:55,412
+Birazdan örneklere de bakacağız.
+
+370
+00:47:59,027 --> 00:48:02,367
+Bu dönüşümün nasıl yapıldığı ile ilgili anlaşılmayan bir şey var mı arkadaşlar?
+
+371
+00:50:38,963 --> 00:50:41,623
+Anlaşılmayan bir şey yoksa arkadaşlar, geçiyorum burayı.
+
+372
+00:50:42,943 --> 00:50:49,523
+Şimdi benzer şekilde x eşittir a tanjant teta dönüşümüne bakalım.
+
+373
+00:50:52,344 --> 00:50:55,423
+x eşittir a tanjant teta dönüşümünde de
+
+374
+00:50:59,507 --> 00:51:00,567
+tanjant nedir?
+
+375
+00:51:02,768 --> 00:51:03,707
+tanjant teta
+
+376
+00:51:13,300 --> 00:51:14,820
+x bölü a'dır arkadaşlar.
+
+377
+00:51:20,916 --> 00:51:50,016
+tanjant teta x bölü a'dır. O zaman şöyle bir üçgen çizersek teta açılı. Tanjantı neymiş? Teta açılı. Bir dik üçgen çizdik. Tanjant teta x bölü a'ymış. Yani karşı bölü komşu x bölü a arkadaşlar. O zaman hipotenüs nedir? a kare artı x karedir.
+
+378
+00:51:57,235 --> 00:51:59,855
+Yani kök içinde a kare artı x kare içeren
+
+379
+00:52:03,476 --> 00:52:10,115
+veya a kare artı x kare içeren integrallerde bu dönüşümü kullanabilirim.
+
+380
+00:52:12,036 --> 00:52:17,756
+Şöyle ki, kök içinde a kare x x artı x kare, a kare artı a kare tanjant kare tete olur.
+
+381
+00:52:18,615 --> 00:52:20,356
+1 artı tanjant kare tete da neydi?
+
+382
+00:52:20,436 --> 00:52:23,135
+a kare parantezinde burası 1 artı tanjant kare tete'dir.
+
+383
+00:52:23,135 --> 00:52:26,316
+1 artı tan kare tete da sekant kare idi.
+
+384
+00:52:26,996 --> 00:52:30,175
+Sekant kare de bu a kareyi dışarı a olarak çıkardık.
+
+385
+00:52:30,316 --> 00:52:32,655
+a çarpı mutlak sekant tete oldu.
+
+386
+00:52:32,655 --> 00:53:02,635
+a mutlak sekant tete eşittir.
+
+387
+00:53:18,291 --> 00:53:21,391
+x eşittir, a tanjant teta ise, dx nedir?
+
+388
+00:53:22,891 --> 00:53:24,552
+a tanjant teta'nın türevini alıyorum.
+
+389
+00:53:24,672 --> 00:53:28,711
+a kaldı, tanjantın türevisi sekant kare teta, d teta oldu.
+
+390
+00:53:29,011 --> 00:53:34,911
+Yani dx yerine a sekant kare teta, d teta yazabilirim arkadaşlar dönüşümde.
+
+391
+00:53:36,112 --> 00:53:39,692
+Bu dönüşümde bu şekilde alınıyor arkadaşlar.
+
+392
+00:53:39,871 --> 00:53:41,271
+Bununla ilgili sorusu olan var mı?
+
+393
+00:53:47,155 --> 00:53:49,496
+x eşit a sekant öte dönüşümüne bakalım.
+
+394
+00:53:52,596 --> 00:53:56,135
+Bu dönüşümde bunlara benzer şekilde yapılan bir dönüşüm.
+
+395
+00:54:01,876 --> 00:54:04,056
+teta eşittir ark sekant x böl a.
+
+396
+00:54:22,771 --> 00:54:25,271
+x eşit a sekant theta dersek
+
+397
+00:54:31,411 --> 00:54:33,931
+secant theta ne olur? x bölü a olur.
+
+398
+00:54:35,391 --> 00:54:36,411
+Kosinüs theta ne olur?
+
+399
+00:54:40,115 --> 00:54:42,255
+a bölü x olur değil mi arkadaşlar?
+
+400
+00:54:49,204 --> 00:55:13,084
+kosinüs theta a bölü x olur. Kosinüs tetasının a bölü x olduğu üçgen nedir? Bakın theta açılı dik üçgeni çizdim. Komşusu a, hipotenüsü x olan üçgen oldu. Sekant neydi? 1 bölü kosinüs, kosinüs theta a bölü x oldu. Dolayısıyla karşı kenarda kökçünün x kare eksi akar oldu.
+
+401
+00:55:13,084 --> 00:55:19,684
+bunu da x kare eksi akar içeren integrallerde kullanabiliriz bu dönüşümü de.
+
+402
+00:55:50,483 --> 00:56:01,443
+Ve tabi arki sekant teta'nın tanım kümesi sıfırdan büyük eşittir teta küçüktür pi bölü 2 ve pi bölü 2 ile pi arasında işlem kolaylığı içinde sıfırdan pi bölü 2'yi seçersek.
+
+403
+00:56:02,043 --> 00:56:03,423
+Kök içinde x kare eksi a kare.
+
+404
+00:56:05,003 --> 00:56:07,483
+Kök içinde a kare sekant kare teta eksi a kare.
+
+405
+00:56:08,483 --> 00:56:10,663
+Bu da sekant kare eksi bir tanjant.
+
+406
+00:56:11,423 --> 00:56:14,523
+Burası a kare kare kök içerisinden a olarak çıktı.
+
+407
+00:56:15,523 --> 00:56:18,143
+Sekant kare eksi bir yerine de tanjant teta.
+
+408
+00:56:18,143 --> 00:56:22,183
+O da kökten tanjant teta olarak çıktı arkadaşlar.
+
+409
+00:56:22,923 --> 00:56:24,884
+a tanjant teta olarak elde ediyorum.
+
+410
+00:56:25,723 --> 00:56:28,563
+Bu tanımlılığıyla ilgili kare kökün içerisinin.
+
+411
+00:56:29,103 --> 00:56:33,923
+x işte a sekant teta yazdım.
+
+412
+00:56:34,103 --> 00:56:34,844
+dx nedir?
+
+413
+00:56:35,163 --> 00:56:38,943
+a sekant teta tanjant teta d teta olarak elde edilir.
+
+414
+00:56:38,943 --> 00:56:42,543
+Yani dx yerine a sekant teta tanjant teta yazıyorum.
+
+415
+00:56:43,023 --> 00:56:46,344
+x yerine a sekant teta yazıyorum bu kökün içerisinde.
+
+416
+00:56:46,344 --> 00:56:51,023
+Dolayısıyla bu köklü ifadeden kurtulmuş oluyorum arkadaşlar ben.
+
+417
+00:56:51,563 --> 00:56:55,183
+Bu köklü ifade dışarı a tanjant teta olarak çıkıyor.
+
+418
+00:56:55,943 --> 00:56:57,963
+Dolayısıyla kökten kurtulmuş oluyorum.
+
+419
+00:56:58,123 --> 00:56:59,304
+dx yerine de bunu yazıyorum.
+
+420
+00:56:59,943 --> 00:57:01,403
+Ve gerekli düzenlemeler yaparak
+
+421
+00:57:01,403 --> 00:57:04,503
+integrali hesaplıyorum arkadaşlar.
+
+422
+00:57:04,503 --> 00:57:08,423
+Şimdi örneklere geçelim.
+
+423
+00:57:13,235 --> 00:57:15,096
+Anlaşılmayan bir şey var mı buralarda?
+
+424
+00:57:18,315 --> 00:57:19,516
+İlk örneğe bakalım.
+
+425
+00:57:25,043 --> 00:57:26,304
+5x x kare
+
+426
+00:57:31,476 --> 00:57:48,916
+5xx karenin küpü kare kök içerisinde. Yani 5xx karenin üzeri 3 bölü 2 olarak vermiş bize. Bu tür bir ifade ne yapıyorduk? Hemen bakalım. Nasıl bir ifade bu? x kare x a kare mi?
+
+427
+00:57:54,867 --> 00:57:56,128
+a kare artı x kare mi?
+
+428
+00:57:57,407 --> 00:58:00,648
+Yoksa a kare eksi x kare mi?
+
+429
+00:58:00,887 --> 00:58:02,168
+Hangisini kullanacağım bunlardan?
+
+430
+00:58:09,619 --> 00:58:12,000
+Bakın, a kare eksi x kare şeklinde değil mi?
+
+431
+00:58:13,099 --> 00:58:17,519
+a kare eksi x kare şeklinde bir ifade. Yani kökbeşin karesi eksi x kare şeklinde bir ifade.
+
+432
+00:58:19,519 --> 00:58:20,659
+Kökbeşin karesi
+
+433
+00:58:33,204 --> 00:58:37,304
+Benim a kare eksi x kare mi bu? Kökbeşin karesi eksi x kare.
+
+434
+00:58:38,284 --> 00:58:41,923
+a kare eksi x kare şeklinde bir ifade var karı kök içerisinde.
+
+435
+00:58:47,731 --> 00:58:52,891
+Yani daha doğrusu a kare x x karenin köpü var kare kök içerisinde.
+
+436
+00:58:55,512 --> 00:59:00,731
+Bu tür ifade de x eşittir a sin theta dönüşümü yapıyorum.
+
+437
+00:59:01,092 --> 00:59:04,791
+Yani x eşittir kök 5 sin theta dönüşümünü yapacağım.
+
+438
+00:59:06,172 --> 00:59:07,552
+O zaman dx ne olacak?
+
+439
+00:59:08,271 --> 00:59:11,771
+Kök 5 cos theta d theta olacak.
+
+440
+00:59:12,711 --> 00:59:13,652
+Bu dönüşümü yapalım.
+
+441
+00:59:14,391 --> 00:59:15,751
+Diğerine yazalım bu ifadeleri.
+
+442
+00:59:15,751 --> 00:59:18,552
+Yani ne demek istiyorum?
+
+443
+00:59:19,471 --> 00:59:21,711
+x yerine kök 5 sin theta,
+
+444
+00:59:23,711 --> 00:59:27,791
+dx yerine de kök 5 cos theta d theta yazalım.
+
+445
+00:59:29,612 --> 00:59:33,632
+dx yerine kök 5 cos theta d theta yazdım.
+
+446
+00:59:38,963 --> 00:59:44,203
+5 eksi x kare üzeri 3 bölü 2 yerine de x yerine kök 5 sintetı yaz.
+
+447
+00:59:44,203 --> 00:59:50,304
+5 eksi ne oldu? 5 eksi 5
+
+448
+00:59:54,068 --> 00:59:56,108
+sin kare teta oldu arkadaşlar.
+
+449
+01:00:05,940 --> 01:00:13,420
+Bu da nedir? 5 parantezinde 1-sin kare tetadır.
+
+450
+01:00:24,500 --> 01:00:26,380
+Yani 1-sin kare teta da nedir?
+
+451
+01:00:27,219 --> 01:00:28,119
+Kos kare teta'dır.
+
+452
+01:00:28,380 --> 01:00:30,619
+Çünkü kos kare teta artı sin kare teta neydi?
+
+453
+01:00:31,559 --> 01:00:33,480
+Kos kare teta artı sin kare teta 1'di.
+
+454
+01:00:35,280 --> 01:00:38,179
+1-sin kare teta da kos kare teta'dır.
+
+455
+01:00:39,320 --> 01:00:41,400
+Kos kare teta oldu.
+
+456
+01:00:41,579 --> 01:00:42,559
+5 kos kare teta.
+
+457
+01:00:43,679 --> 01:00:45,420
+Benim içerideki ifadem neydi?
+
+458
+01:00:45,739 --> 01:00:48,039
+5-x karenin küpünün kare küküydü.
+
+459
+01:00:48,780 --> 01:00:52,880
+5 kos kare teta'nın küpünün kare kükünü alıyorum.
+
+460
+01:00:54,500 --> 01:00:56,199
+O zaman ne olacak?
+
+461
+01:00:57,639 --> 01:01:04,380
+Bu ifadeyi dışarı çıkartırsam 5'in küpü 5 çarpı 5 çarpı 5.
+
+462
+01:01:05,219 --> 01:01:09,280
+Dolayısıyla 5 kök 5 olarak kare kökten dışarı çıkacak.
+
+463
+01:01:10,659 --> 01:01:12,199
+5 5 olarak çıkacak.
+
+464
+01:01:12,280 --> 01:01:14,280
+Bir tane 5 içeride kalacak kök 5 olarak.
+
+465
+01:01:15,519 --> 01:01:20,320
+Kos kare teta üzeri küp de kos teta üzeri 6 olacak.
+
+466
+01:01:20,320 --> 01:01:23,980
+Kos teta üzeri 6 da kos küp teta olarak dışarı çıkacak arkadaşlar.
+
+467
+01:01:23,980 --> 01:01:25,079
+Burası anlaşıldı mı?
+
+468
+01:01:28,179 --> 01:01:34,039
+Burayı düzenlersem de kos teta ile de bu 3 gidecek.
+
+469
+01:01:34,440 --> 01:01:36,559
+Aşağıda kos kare teta kalacak.
+
+470
+01:01:37,840 --> 01:01:40,239
+1 bölü kos kare teta da sekant kare teta.
+
+471
+01:01:40,519 --> 01:01:42,239
+Kök 5'ler de gitti bakın arkadaşlar.
+
+472
+01:01:43,159 --> 01:01:47,079
+1 bölü 5 sekant kare teta de teta kaldı.
+
+473
+01:01:47,800 --> 01:01:49,880
+Sekant kare neyi türü türeviydi arkadaşlar?
+
+474
+01:01:49,880 --> 01:01:53,099
+1 bölü kos kare neyin türüviydi?
+
+475
+01:01:53,840 --> 01:01:54,860
+Tanjantın türüviydi.
+
+476
+01:01:55,880 --> 01:01:58,639
+O zaman artık ben sonucu elde ettim.
+
+477
+01:01:58,760 --> 01:01:59,380
+Çözümü buldum.
+
+478
+01:01:59,599 --> 01:02:03,559
+1 bölü 5 tanjant teta artı c olarak çözümü elde ettim.
+
+479
+01:02:03,659 --> 01:02:04,619
+Peki çözümün bu mu?
+
+480
+01:02:06,320 --> 01:02:07,699
+Şimdi bana sorduğu soru
+
+481
+01:02:07,699 --> 01:02:10,679
+D x bölü 5 eksi x kare üzeri 3 bölü 2.
+
+482
+01:02:11,119 --> 01:02:13,780
+Ben 1 bölü 5 tanjant teta artı c buldum.
+
+483
+01:02:13,780 --> 01:02:16,739
+Adama demezler mi bu teta ne?
+
+484
+01:02:17,139 --> 01:02:17,880
+Nereden geldi?
+
+485
+01:02:19,619 --> 01:02:21,420
+Yani böyle bir çözüm olabilir mi?
+
+486
+01:02:22,440 --> 01:02:23,679
+Olmaz değil mi arkadaşlar?
+
+487
+01:02:23,840 --> 01:02:25,199
+Burada bir dönüşüm yaptım.
+
+488
+01:02:25,719 --> 01:02:28,579
+Tekrar bu tetayı x cinsinden yazmak zorundayım ben.
+
+489
+01:02:33,235 --> 01:02:37,435
+Şurada bakın, şu işlemi yapmış zaten. Daha ayrıntılı biçimde.
+
+490
+01:02:39,775 --> 01:02:45,215
+Burada tekrar bir teta dönüşümünü yapmak zorundayım ben. Onu da yapmam gerekiyor.
+
+491
+01:02:47,415 --> 01:02:54,576
+Ben ne demiştim? x eşitir kök 5 sin teta. Sin teta nedir burada? Sin teta x bölü kök 5'tir.
+
+492
+01:02:56,076 --> 01:02:57,155
+Sin üst teta.
+
+493
+01:03:01,139 --> 01:03:03,500
+x bölü kök 5'tir arkadaşlar.
+
+494
+01:03:10,452 --> 01:03:12,652
+sinüs theta x bölü kök 5 ise
+
+495
+01:03:12,652 --> 01:03:16,752
+ben bir üçgen çizeceğim.
+
+496
+01:03:18,372 --> 01:03:19,792
+Bu nasıl bir üçgen oldu ya?
+
+497
+01:03:24,500 --> 01:03:28,059
+teta açılı 90 derecelik bir dik üçgen.
+
+498
+01:03:30,059 --> 01:03:33,559
+Bu dik üçgenin sinüs tetası x bölü kök 5'miş.
+
+499
+01:03:34,199 --> 01:03:38,980
+Yani sinüsü, karşısı x, hipotenüsü kök 5'miş.
+
+500
+01:03:43,092 --> 01:03:49,192
+Benim tanjant teta'yı bulmam gerekiyor bakın burada. Bana tanjant teta lazım. Bu teta açısının tanjantı lazım.
+
+501
+01:03:50,572 --> 01:03:56,012
+Teta açısının karşısı x'miş, hipotenüsü kök 5'miş arkadaşlar.
+
+502
+01:04:06,260 --> 01:04:10,400
+Karşısı x'miş, hipotenüsü kök 5'miş arkadaşlar.
+
+503
+01:04:34,547 --> 01:04:38,527
+O zaman bu kenar nedir arkadaşlar? Şu kenarı bulabilir misiniz bana?
+
+504
+01:04:40,867 --> 01:04:42,027
+Nedir bu kenar?
+
+505
+01:04:44,167 --> 01:04:50,027
+Ben tanjant teteyi bulmaya çalışıyorum. Onun için bu kenar bana lazım. Bu nedir?
+
+506
+01:05:34,963 --> 01:05:35,603
+Güzel.
+
+507
+01:05:38,003 --> 01:05:39,163
+Nedir bu kenar?
+
+508
+01:05:40,603 --> 01:05:41,923
+Bu kenarım var.
+
+509
+01:05:42,023 --> 01:05:42,903
+Hipotenüsüm var.
+
+510
+01:05:43,663 --> 01:05:45,143
+Kök 5'in karesi eksi.
+
+511
+01:05:46,463 --> 01:05:47,563
+X karedir.
+
+512
+01:05:48,163 --> 01:05:49,123
+Yani 5 eksi.
+
+513
+01:05:49,583 --> 01:05:50,784
+X karedir bu kenar.
+
+514
+01:05:52,923 --> 01:05:54,703
+O zaman tanjant etam ne olacak?
+
+515
+01:05:56,583 --> 01:05:57,443
+Karşı bölü.
+
+516
+01:05:58,603 --> 01:05:59,324
+Komşu kenar.
+
+517
+01:06:00,083 --> 01:06:00,443
+Yani.
+
+518
+01:06:01,324 --> 01:06:02,083
+Tanjant etam.
+
+519
+01:06:02,083 --> 01:06:02,744
+X bölü.
+
+520
+01:06:02,963 --> 01:06:03,824
+Kök içinde 5 eksi.
+
+521
+01:06:03,824 --> 01:06:04,364
+X kare olacak.
+
+522
+01:06:04,364 --> 01:06:04,864
+Bakın.
+
+523
+01:06:04,943 --> 01:06:05,983
+Tanjant etam yerine.
+
+524
+01:06:06,663 --> 01:06:07,364
+X bölü.
+
+525
+01:06:07,463 --> 01:06:08,463
+Kök içinde 5 eksi.
+
+526
+01:06:08,523 --> 01:06:09,203
+X kare yazıyorum.
+
+527
+01:06:27,059 --> 01:06:29,440
+x bölü kök içinde 5x x kare yazıyor.
+
+528
+01:06:30,000 --> 01:06:31,619
+Tarjan tıdayı da yerine yazdım.
+
+529
+01:06:32,519 --> 01:06:38,179
+O zaman benim çözümüm 1 bölü 5 x bölü kök içinde 5x x kare artı c olur arkadaşlar.
+
+530
+01:06:40,139 --> 01:06:41,759
+Anlaşılmayan bir yer var mı arkadaşlar?
+
+531
+01:06:42,259 --> 01:06:43,400
+Bu integralin çözümünde.
+
+532
+01:06:43,960 --> 01:06:48,039
+Yani a kare eksi x kare şeklinde bir ifade verdiyse kare köklü bir ifade.
+
+533
+01:06:48,779 --> 01:06:52,299
+Bakın illa orada dediği gibi kare köklü de olacak değil.
+
+534
+01:06:52,460 --> 01:06:55,739
+Yani 5x x karenin küpünün kare kökü de olabilir.
+
+535
+01:06:57,059 --> 01:06:58,059
+Önemli olan burada bu dönüşümden.
+
+536
+01:06:58,059 --> 01:07:05,779
+Önemli olan burada bu dönüşümden daha basit bir integral, integral alınabilir bir ifade elde etmeye çalışmak.
+
+537
+01:07:06,480 --> 01:07:11,619
+Ben burada bir dönüşümü yapıp daha basit, integral kolayca alınabilir bir ifade elde ediyorum.
+
+538
+01:07:12,179 --> 01:07:21,079
+Ve bu integral kolayca alınabilir ifadeyi de bildiğim integrasyon metotlarıyla çözüyorum arkadaşlar.
+
+539
+01:07:23,940 --> 01:07:25,619
+Yaptığım işlem burada bu.
+
+540
+01:07:48,179 --> 01:07:52,559
+Anlamadığınız bir yer var mı arkadaşlar bu soruda? Anlaşılmayan bir kısım var mı?
+
+541
+01:08:16,372 --> 01:08:19,811
+Anlaşılmayan bir kısım yoksa devam ediyorum arkadaşlar diğer soruyla.
+
+542
+01:08:22,332 --> 01:08:23,532
+Umarım anlaşılmıştır.
+
+543
+01:08:28,659 --> 01:08:37,880
+Şu integral'e bakalım. x kare bölü, kök içinde 1-x kare dx. Yine bakın, kök içinde a kare eksi x kare şeklinde bir ifade var.
+
+544
+01:08:38,939 --> 01:08:46,420
+x eşittir a sin teta dönüşüm yapacağım. x eşittir sin teta dedim. dx, kosinüs teta, d teta oldu.
+
+545
+01:08:49,908 --> 01:08:51,228
+Değişken dönüşümü gibi.
+
+546
+01:08:54,488 --> 01:08:57,488
+Ama buradaki değişkeni sin üst teta alıyorum.
+
+547
+01:08:59,688 --> 01:09:01,428
+Kosün üst teta d teta oldu.
+
+548
+01:09:03,988 --> 01:09:05,048
+1 eksi x kare nedir?
+
+549
+01:09:05,928 --> 01:09:09,347
+1 eksi sin kare teta kos kare tetadır.
+
+550
+01:09:09,428 --> 01:09:11,488
+O da kök içinden kos teta olarak çıkar.
+
+551
+01:09:12,948 --> 01:09:16,248
+x kare yerine sin kare teta yazıyorum.
+
+552
+01:09:16,788 --> 01:09:18,928
+x'i sin teta demiştim çünkü.
+
+553
+01:09:18,928 --> 01:09:22,368
+1 eksi x karede kök içine 1 eksi x karede kos teta olarak çıktı.
+
+554
+01:09:22,748 --> 01:09:24,288
+Sin kare teta bölü kos teta oldu.
+
+555
+01:09:25,108 --> 01:09:25,408
+Burası.
+
+556
+01:09:26,768 --> 01:09:27,968
+dx yerine ne yazacağım?
+
+557
+01:09:28,208 --> 01:09:29,328
+Bakın dx'i ne buldum?
+
+558
+01:09:29,548 --> 01:09:30,428
+Kos teta d teta.
+
+559
+01:09:30,807 --> 01:09:32,188
+Kos teta d teta yazacağım.
+
+560
+01:09:32,728 --> 01:09:33,548
+Bu dx.
+
+561
+01:09:34,468 --> 01:09:40,068
+dx yerine kos teta d teta'yı yazdım arkadaşlar.
+
+562
+01:09:41,988 --> 01:09:45,048
+Bu kos teta ile bu kos teta birbirini götürdü.
+
+563
+01:09:45,528 --> 01:09:46,108
+Ne kaldı?
+
+564
+01:09:46,108 --> 01:09:50,148
+sin kare teta d teta kaldı elimde.
+
+565
+01:09:50,148 --> 01:09:53,307
+bu integral
+
+566
+01:09:53,307 --> 01:09:57,548
+artık alınabilir bir integral.
+
+567
+01:09:57,628 --> 01:09:59,528
+Aslında bu integral alınamaz sin kare teta.
+
+568
+01:10:00,188 --> 01:10:03,648
+Burada da bu integralin nasıl alınacağını daha önce göstermiştik.
+
+569
+01:10:03,928 --> 01:10:04,968
+Ne yapıyorduk sin karede?
+
+570
+01:10:04,968 --> 01:10:08,908
+1 eksi kos teta bölü 2 formülünü kullanıyorduk.
+
+571
+01:10:09,408 --> 01:10:11,368
+Bu formülü kullanarak bu integral çözeceğiz.
+
+572
+01:10:13,008 --> 01:10:16,508
+Tabii integral sorularında bir dönüşüm yaptım hemen çıkacak diye bir şey yok.
+
+573
+01:10:16,868 --> 01:10:18,347
+Bir kez daha dönüşüm yapacaksınız.
+
+574
+01:10:18,488 --> 01:10:21,728
+Belki bir kez daha kısmı integrasyon yapacaksınız bu tip sorularda.
+
+575
+01:10:21,728 --> 01:10:24,768
+belki bir değişken dönüşümü daha yapacaksınız.
+
+576
+01:10:24,887 --> 01:10:27,288
+Bir trigonometrik integral kullanacaksınız.
+
+577
+01:10:29,288 --> 01:10:30,847
+Bu şekilde çözeceksiniz arkadaşlar.
+
+578
+01:10:31,448 --> 01:10:33,668
+Sadece bir dönüşüm yaptım çıkacak diye bir şey yok.
+
+579
+01:10:33,668 --> 01:10:39,168
+birkaç kez dönüşüm yapmanız gerekebilir.
+
+580
+01:10:41,728 --> 01:10:44,768
+1 eksi kos 2 teta bölü 2 integral nispeten kolay.
+
+581
+01:10:45,008 --> 01:10:46,908
+1 bölü 2 eksi kos 2 teta bölü 2 bu.
+
+582
+01:10:47,568 --> 01:10:50,268
+1 bölü 2'nin integrali teta bölü 2.
+
+583
+01:10:50,908 --> 01:10:51,768
+Neden teta bölü 2?
+
+584
+01:10:51,828 --> 01:10:52,908
+Bakın burada dikkat edin.
+
+585
+01:10:53,728 --> 01:10:55,968
+dx veya du değil değişkenim.
+
+586
+01:10:56,048 --> 01:10:56,768
+Artık teta.
+
+587
+01:10:57,188 --> 01:10:57,748
+d teta.
+
+588
+01:10:58,508 --> 01:10:59,468
+Dolayısıyla buradaki
+
+589
+01:10:59,468 --> 01:11:02,568
+1 bölü 2 d teta integrali
+
+590
+01:11:02,568 --> 01:11:05,368
+1 bölü 2 dx nedir?
+
+591
+01:11:05,428 --> 01:11:06,068
+x bölü 2.
+
+592
+01:11:06,807 --> 01:11:08,108
+1 bölü 2 d teta da
+
+593
+01:11:08,108 --> 01:11:09,307
+teta bölü 2 oluyor.
+
+594
+01:11:10,228 --> 01:11:11,028
+x'e göre değil
+
+595
+01:11:11,028 --> 01:11:12,968
+teta değişkenine göre integral oluyor.
+
+596
+01:11:13,427 --> 01:11:14,188
+teta bölü 2
+
+597
+01:11:14,188 --> 01:11:16,728
+eksi sin 2 teta bölü 2
+
+598
+01:11:16,728 --> 01:11:20,528
+Bakın burada kos 2 teta'nın integrali sin 2 teta bölü 2
+
+599
+01:11:20,528 --> 01:11:22,208
+Bir de burada payda da 2 var.
+
+600
+01:11:22,927 --> 01:11:23,788
+2 kere 2 4
+
+601
+01:11:23,788 --> 01:11:26,048
+sin 2 teta bölü 4 oldu.
+
+602
+01:11:26,208 --> 01:11:27,408
+Artı c alıyor.
+
+603
+01:11:28,427 --> 01:11:29,608
+teta bölü 2 eksi
+
+604
+01:11:29,608 --> 01:11:32,488
+sin teta çarpı kos teta bölü 2
+
+605
+01:11:32,488 --> 01:11:33,188
+artı c oldu.
+
+606
+01:11:33,588 --> 01:11:35,288
+sin 2 teta yerine ne yazdım?
+
+607
+01:11:36,368 --> 01:11:40,108
+2 sin teta kos teta formülünü kullandım.
+
+608
+01:11:40,347 --> 01:11:43,328
+2 sin teta kos teta formülünü kullanıyorum.
+
+609
+01:11:44,728 --> 01:11:52,888
+2 sin teta kos teta formülünü kullanıyorum arkadaşlar.
+
+610
+01:11:52,887 --> 01:11:54,588
+3 sin teta.
+
+611
+01:11:54,588 --> 01:11:55,648
+4 sin teta.
+
+612
+01:11:55,648 --> 01:11:58,148
+5 sin teta.
+
+613
+01:12:00,148 --> 01:12:06,188
+sin 2tta yerine 2 sin tta kos tta yazdım. 2 ile 4 sadeleşti. sin tta kos tta bölü 2 oldu burası.
+
+614
+01:12:07,328 --> 01:12:21,467
+A artı c. Peki sonucum bu mu? Tabii ki değil. Bana x'e göre bir integral vermiş. x'e göre çözülmesi gereken bir integral vermiş.
+
+615
+01:12:23,467 --> 01:12:28,967
+Ben neye göre buldum? ttaya göre bir sonuç buldum. Bu sonuç bir şey ifade etmiyor.
+
+616
+01:12:30,148 --> 01:12:33,748
+Bu sonuç benim için bir değeri yok.
+
+617
+01:12:42,676 --> 01:12:45,136
+teta'yı x'e göre yazmak zorundayım.
+
+618
+01:12:46,556 --> 01:12:49,096
+Şimdi tekrar teta'yı x'e göre yazayım ben.
+
+619
+01:12:52,276 --> 01:12:55,096
+Sinüs teta x bölü 1'di arkadaşlar.
+
+620
+01:12:59,699 --> 01:13:00,899
+x bölü 1'dir.
+
+621
+01:13:07,091 --> 01:13:10,431
+Yani karşı bölü hipotenüs x bölü 1'miş.
+
+622
+01:13:10,551 --> 01:13:12,591
+90 derecelik bir üçgen alıyorum.
+
+623
+01:13:12,751 --> 01:13:13,631
+Theta açısı olan.
+
+624
+01:13:14,671 --> 01:13:17,831
+Karşısı x, hipotenüsü 1 olacak.
+
+625
+01:13:18,152 --> 01:13:19,331
+O zaman komşu nedir?
+
+626
+01:13:19,612 --> 01:13:21,031
+Kök içinde 1-x karetir.
+
+627
+01:13:23,051 --> 01:13:25,231
+Bu theta için
+
+628
+01:13:25,231 --> 01:13:29,971
+Theta bölü 2 lazım bana.
+
+629
+01:13:30,131 --> 01:13:31,351
+Sin theta ve cos theta lazım.
+
+630
+01:13:31,451 --> 01:13:33,391
+Sin theta ve cos theta'yı bu üçgenden bulurum.
+
+631
+01:13:33,391 --> 01:13:35,991
+Ama theta'yı nereden bulacağım?
+
+632
+01:13:35,991 --> 01:13:36,871
+Theta yerine
+
+633
+01:13:36,871 --> 01:13:39,531
+Arksinüs x yazacağım arkadaşlar.
+
+634
+01:13:40,991 --> 01:13:41,692
+Sin theta
+
+635
+01:13:41,692 --> 01:13:43,731
+x'e
+
+636
+01:13:43,731 --> 01:13:45,612
+Theta da Arksinüs x'tir.
+
+637
+01:13:47,271 --> 01:13:49,331
+Bana x cinsinden bir tekrar vermiş.
+
+638
+01:13:49,491 --> 01:13:50,971
+X cinsinden istiyor sonucu.
+
+639
+01:13:51,251 --> 01:13:53,311
+Dolayısıyla theta yerine de Arksinüs x yazıyorum.
+
+640
+01:13:54,192 --> 01:13:55,652
+Theta yerine Arksinüs x yazdım.
+
+641
+01:13:55,731 --> 01:13:57,391
+Arksinüs x bölü 2 eksi
+
+642
+01:13:57,391 --> 01:13:59,451
+1 bölü 2 çarpı
+
+643
+01:13:59,451 --> 01:14:00,911
+Sin theta yerine ne yazıyorum?
+
+644
+01:14:01,471 --> 01:14:03,231
+Sin theta karşı bölü
+
+645
+01:14:03,231 --> 01:14:04,731
+Hipotenüs x bölü 1
+
+646
+01:14:04,731 --> 01:14:05,891
+x oldu.
+
+647
+01:14:06,211 --> 01:14:06,711
+Sin theta.
+
+648
+01:14:07,251 --> 01:14:08,571
+Cos theta da komşu bölü
+
+649
+01:14:08,571 --> 01:14:09,112
+Hipotenüs.
+
+650
+01:14:09,331 --> 01:14:10,871
+Komşu kök 1-x kare
+
+651
+01:14:10,871 --> 01:14:11,811
+Bölü 1 oldu.
+
+652
+01:14:12,471 --> 01:14:13,612
+Kök 1-x kare
+
+653
+01:14:13,612 --> 01:14:14,692
+Bölü 1 oldu.
+
+654
+01:14:15,652 --> 01:14:16,211
+Artı
+
+655
+01:14:16,211 --> 01:14:17,551
+c olarak
+
+656
+01:14:17,551 --> 01:14:18,551
+İntegrali
+
+657
+01:14:18,551 --> 01:14:19,811
+aldım arkadaşlar.
+
+658
+01:14:21,031 --> 01:14:23,711
+Bu integrasyonda sorusu olan var mı arkadaşlar?
+
+659
+01:14:23,711 --> 01:14:25,871
+Dönüşümlerde aşamalarında.
+
+660
+01:15:58,739 --> 01:16:01,000
+Soru yoksa diğer soruya geçelim arkadaşlar.
+
+661
+01:16:06,163 --> 01:16:14,003
+Burada kök içerisinde a kare artı x kare şeklinde bir ifade var.
+
+662
+01:16:14,983 --> 01:16:16,643
+Kök içinde a kare eksi x kare.
+
+663
+01:16:16,743 --> 01:16:20,003
+Bakın a kare artı x kare değil.
+
+664
+01:16:21,503 --> 01:16:23,344
+Kök içerisinde a kare artı x kare var.
+
+665
+01:16:25,684 --> 01:16:28,503
+Zaten a kare artı x karede ark tanjanı kullanıyorduk.
+
+666
+01:16:29,523 --> 01:16:34,703
+Ancak yine a kare artı x karenin karesi şeklinde bir ifade varsa.
+
+667
+01:16:34,703 --> 01:16:38,304
+Mesela burada ark tanjanı kullanamıyoruz değil mi?
+
+668
+01:16:38,363 --> 01:16:39,423
+Bakın bu soruya bakın mesela.
+
+669
+01:16:41,023 --> 01:16:44,483
+Burada yine tanjan teta eşittir.
+
+670
+01:16:45,103 --> 01:16:46,264
+3x'ü vermiş mesela.
+
+671
+01:16:47,823 --> 01:16:49,863
+Her zaman ark tanjan kullanamıyoruz.
+
+672
+01:16:50,963 --> 01:16:52,443
+Yine bir dönüşüm yapmamız gerekiyor.
+
+673
+01:16:53,043 --> 01:16:55,844
+A kare artı x kare ifadeler derken onu kastediyor aslında.
+
+674
+01:16:57,503 --> 01:17:00,123
+Kök içerisinde a kare artı x kare dönüşüm var.
+
+675
+01:17:00,804 --> 01:17:04,523
+x eşittir a tanjan teta dönüşümünü kullanacağız.
+
+676
+01:17:04,523 --> 01:17:06,384
+x eşittir a tanjan teta.
+
+677
+01:17:06,983 --> 01:17:09,563
+x eşittir 2 tanjan teta oldu.
+
+678
+01:17:11,143 --> 01:17:11,884
+Türevini aldım.
+
+679
+01:17:12,384 --> 01:17:13,623
+2 tanjan teta'nın türevi.
+
+680
+01:17:13,724 --> 01:17:14,923
+2 sekant kare teta.
+
+681
+01:17:15,224 --> 01:17:15,863
+D teta oldu.
+
+682
+01:17:17,224 --> 01:17:18,804
+D x eşittir 2 sekant kare.
+
+683
+01:17:19,304 --> 01:17:20,583
+D teta oldu.
+
+684
+01:17:20,583 --> 01:17:29,403
+D x eşittir 2 tanja.
+
+685
+01:17:25,140 --> 01:17:35,860
+Kök içerisinde 4 artı x karede 4 artı 4 tançant kare teta, 4 parantizinde 1 artı tan kare teta, 2 sekant kare teta, 2 sekant teta oldu.
+
+686
+01:17:38,039 --> 01:17:42,760
+Demek ki o zaman ben kök için 4 artı x kare yerine 2 sekant teta yazabilirim.
+
+687
+01:17:43,880 --> 01:17:46,860
+dx yerine de 2 sekant kare teta yazabilirim.
+
+688
+01:17:47,680 --> 01:17:48,160
+Yazdım.
+
+689
+01:17:48,920 --> 01:17:50,780
+Sekantın karesiyle sekant gitti.
+
+690
+01:17:51,760 --> 01:17:52,900
+İkiler birbirini götürdü.
+
+691
+01:17:53,240 --> 01:17:54,440
+Ne kaldı?
+
+692
+01:17:55,140 --> 01:17:58,300
+Sekant teta, d teta kaldı.
+
+693
+01:17:59,220 --> 01:18:00,300
+Bu neydi?
+
+694
+01:18:01,020 --> 01:18:04,720
+Burada sekant teta artı tançant teta ile çarpıp bölüyordum hatırlayın.
+
+695
+01:18:05,619 --> 01:18:12,079
+Çarpıp böldüğüm zaman da sekant teta d teta integrali ln sekant teta artı tançant teta oluyordu.
+
+696
+01:18:13,119 --> 01:18:14,260
+Buna girmiyorum burada.
+
+697
+01:18:15,039 --> 01:18:19,960
+Yani sekant teta artı tançant teta ile çarpıp bölme kısmını daha önce anlatmıştık.
+
+698
+01:18:19,960 --> 01:18:24,780
+Sekant teta d teta'nın integrali ln sekant teta artı tançant teta'dır.
+
+699
+01:18:25,140 --> 01:18:31,800
+Bu integrali alırken sekant teta'yı sekant teta artı tançant teta ile çarpıp bölüyordum.
+
+700
+01:18:32,720 --> 01:18:34,840
+Sekant teta artı tançant teta'yı u diyordum.
+
+701
+01:18:35,680 --> 01:18:42,800
+Sekant teta çarpıp sekant teta artı tançant teta kısmı d teta kısmı sekant teta artı tançant teta'nın türevi oluyordu.
+
+702
+01:18:42,800 --> 01:18:44,960
+Yani burası d u bölü u oluyordu.
+
+703
+01:18:48,659 --> 01:18:49,380
+Burası
+
+704
+01:19:28,851 --> 01:19:39,511
+Burayı silersek, du bölü u oldu, u neydi? Sekant tete artı tanjant tete idi. du bölü u, elen odur, elen sekant tete artı tanjant tete oldu.
+
+705
+01:19:40,971 --> 01:19:42,211
+Şimdi burayı bir temizleyelim.
+
+706
+01:19:44,811 --> 01:19:52,131
+Elen sekant tete artı tanjant tete artı c, benim sonucum mu? Değil. Bana integralı x'e göre vermiş bakın.
+
+707
+01:19:52,771 --> 01:19:58,131
+x'e göre bir ifade elde etmem lazım. Ben tanjant tete x bölü 2 buldum.
+
+708
+01:19:58,851 --> 01:20:05,652
+Tanjant tete x bölü 2'dir burada. O zaman tanjant tete x bölü 2 ise bir dik üçgen çizdim.
+
+709
+01:20:05,912 --> 01:20:08,391
+Tete açısı ve 90 derece olan.
+
+710
+01:20:09,091 --> 01:20:14,631
+Tete'nin tanjantı karşı bölü komşu. x bölü 2 oldu buralar.
+
+711
+01:20:15,492 --> 01:20:18,652
+Hipotenüs de kare kök 4 artı x kare oldu.
+
+712
+01:20:19,631 --> 01:20:21,051
+O zaman sekant nedir?
+
+713
+01:20:22,711 --> 01:20:27,051
+Kosünüs 2 bölü kök 4 artı x karedir. Komşu bölü hipotenüs.
+
+714
+01:20:27,051 --> 01:20:30,211
+Sekant da kök 4 artı x kare bölü 2'dir.
+
+715
+01:20:35,283 --> 01:20:47,923
+Tanjant teta nedir? Karşı bölü komşu zaten, x bölü 2. Zaten tanjantı buradan biliyoruz, x bölü 2 olduğunu. Tanjantta yazdım. Artı c olarak elde ediyorum integrasyonu arkadaşlar, integral.
+
+716
+01:20:50,923 --> 01:20:53,403
+Bu soruda anlaşılmayan bir kısım var mı arkadaşlar?
+
+717
+01:22:48,340 --> 01:22:51,220
+Anlaşılmayan bir kısım yoksa diğer soruya geçelim arkadaşlar.
+
+718
+01:22:53,039 --> 01:22:59,760
+Bakın burada 1 artı x kare şeklinde bir ifade var. Aslında 1 artı 3x'in karesi şeklinde bir ifade var.
+
+719
+01:22:59,760 --> 01:23:00,600
+1 artı.
+
+720
+01:23:04,500 --> 01:23:06,619
+3x'in karesi şeklinde bir ifade var.
+
+721
+01:23:14,804 --> 01:23:16,484
+ve bunun karesini almış bir de.
+
+722
+01:23:17,884 --> 01:23:22,324
+Yani o zaman a kare artı x kare, a kare artı 3x'in kare şeklinde düşüneceğiz.
+
+723
+01:23:23,404 --> 01:23:24,783
+u gibi düşüneceğiz yani bunu.
+
+724
+01:23:25,524 --> 01:23:29,444
+Tanjant teta eşittir. 3x bölü 1 dönüşümü yapacağız.
+
+725
+01:23:32,484 --> 01:23:33,484
+O zaman
+
+726
+01:23:37,684 --> 01:23:44,423
+Dönüşümü uyguladığım takdirde 3dx eşittir, sekant kare teta d teta oldu.
+
+727
+01:23:45,123 --> 01:23:48,824
+Yani 1 artı 9x kare eşittir, sekant kare teta oluyor.
+
+728
+01:23:50,663 --> 01:23:53,644
+1 artı tanjant kare, sekant kare teta oluyor.
+
+729
+01:23:57,811 --> 01:24:23,211
+1 artı 9x kare yerine sekant kare yazdım. Sekant 4 teta oldu. 3 dx yerine de sekant kare teta bölü 3 yazdım. Bakın burası dx sekant kare teta, d teta bölü 3 yazdım. Burayı düzenlediğim zaman sekant kare ile bu 4 gitti, burada 2 kaldı. 1 bölü sekant kare teta oldu, o da kos kare teta'dır. 1 bölü 3 kos kare teta, d teta kaldı.
+
+730
+01:24:23,211 --> 01:24:32,612
+Bu kos kare teta'yı da 1 artı kos kare teta bölü 2 ile çözüyorum. 1 bölü 3, 1 artı kos kare teta bölü 2 d teta oldu.
+
+731
+01:24:44,083 --> 01:24:47,283
+1 artı kos 2t bölü 2, dt oldu.
+
+732
+01:24:58,260 --> 01:25:08,560
+1 artı cos 2teta bölü 2'yi de 1 bölü 2 artı cos 2teta bölü 2 yapıyorum. 1 bölü 2'nin integralı teta, cos 2teta'nın sin 2teta bölü 2 oldu arkadaşlar.
+
+733
+01:25:08,920 --> 01:25:15,500
+Buradan da düzenlediğim zaman teta bölü 6 artı 1 bölü 6 sin teta cos teta oldu.
+
+734
+01:25:16,960 --> 01:25:21,840
+sin 2teta yerine 2 sin teta cos teta yazdım. sin teta cos teta artı c oldu burası.
+
+735
+01:25:22,460 --> 01:25:24,960
+teta yerine arktanjant x yazıyorum.
+
+736
+01:25:32,180 --> 01:25:50,320
+Burası ark tancant 3x olacak arkadaşlar. Ark tancant 3x bölü 6, artı 1 bölü 6, sin teta kos teta. Üçgenimi çizdim. Tancant teta ne? 3x bölü 1. Karşı bölü komşu 3x bölü 1. Hipotenüsüm ne? Kök içine 1 artı 9x kare.
+
+737
+01:25:50,320 --> 01:26:07,640
+Dolayısıyla, sinüs teta ne? 3x bölü kök içine 1 artı 9x kare. Kosinüs teta ne? 1 bölü, yani komşu kenar bölü, 1 bölü kök içine 1 artı 9x kare. Artı c oldu arkadaşlar.
+
+738
+01:26:10,539 --> 01:26:16,240
+Böylelikle sonucu elde etmiş oldum arkadaşlar. Bu soru ile ilgili sorusu olan var mı?
+
+739
+01:27:07,699 --> 01:27:09,699
+Son bir örneğimiz kaldı.
+
+740
+01:27:12,819 --> 01:27:18,159
+Burada da dx bölü x çarpı kök içinde x kare eksi 4.
+
+741
+01:27:18,359 --> 01:27:20,299
+x kare eksi a kare şeklinde ifade var.
+
+742
+01:27:21,119 --> 01:27:21,579
+Ne yapacağız?
+
+743
+01:27:21,699 --> 01:27:24,099
+x eşittir 2 sekant teta yapacağız.
+
+744
+01:27:25,519 --> 01:27:27,779
+x kare eksi a kare şeklinde ifade var bakın.
+
+745
+01:27:28,519 --> 01:27:29,259
+dx ne olacak?
+
+746
+01:27:29,859 --> 01:27:33,019
+2 sekant teta tanjant teta d teta olacak.
+
+747
+01:27:34,619 --> 01:27:38,139
+Kök içinde x kare eksi 4'te 4 çarpı sekant kare teta eksi 1.
+
+748
+01:27:39,139 --> 01:27:41,639
+Bu da 2 tanjant teta olarak çıkar kökten dışarı.
+
+749
+01:27:42,819 --> 01:27:48,739
+dx yerine 2 sekant teta d teta 2 sekant teta tanjant teta d teta yazdım.
+
+750
+01:27:49,599 --> 01:27:55,119
+x çarpı x kare eksi 4 yerine de 2 tanjant teta kök içinde x kare eksi 4.
+
+751
+01:27:55,819 --> 01:27:58,279
+x yerine de 2 sekant teta yazıyorum arkadaşlar.
+
+752
+01:27:59,059 --> 01:27:59,960
+Bunlar birbirini götürdü.
+
+753
+01:28:00,039 --> 01:28:04,119
+2 sekant teta 2 sekant teta'yı tanjant teta tanjant teta'yı götürdü.
+
+754
+01:28:04,719 --> 01:28:06,119
+d teta bölü 2 kaldı geriye.
+
+755
+01:28:07,779 --> 01:28:09,880
+1 bölü 2 teta artı c'dir bu da.
+
+756
+01:28:09,880 --> 01:28:15,939
+yani 1 bölü 2 arki sekant x bölü 2 artı c olarak elde ediyorum bunda arkadaşlar.
+
+757
+01:28:16,439 --> 01:28:19,539
+Hiç üçgene falan gerek, ihtiyaç kalmadı bu.
+
+758
+01:28:19,539 --> 01:28:22,000
+bu soruda anlaşılmayan bir kısım var mı?
+
+759
+01:28:33,779 --> 01:28:36,859
+Sorusu olan var mı arkadaşlar? Burada bitiriyorum.
+
+760
+01:28:40,916 --> 01:28:42,815
+Umarım verimli bir ders olmuştur.
+
+761
+01:28:43,735 --> 01:28:44,855
+Hepinize iyi günler diliyorum.
+
+762
+01:28:46,436 --> 01:28:47,416
+Sorusu olan var mı?
+
+763
+01:28:48,275 --> 01:28:49,416
+Yoksa bitiriyorum arkadaşlar.
+
+764
+01:28:53,363 --> 01:28:55,923
+O zaman iyi günler hepinize. Kendinize iyi bakın.
+
+765
+01:29:12,083 --> 01:29:17,863
+Derse katılımlarınız için de teşekkür ederim. Hepinize çok sağ olun. Hepinize iyi günler.

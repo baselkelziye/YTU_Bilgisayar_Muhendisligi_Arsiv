@@ -5,6 +5,7 @@
 | Şube | Dönem | Hoca | Klasör |
 | :---: | :---: | :--- | :--- |
 | 1 | Güz | Yasemin Alagöz | [sube_1/](sube_1/) |
+| 2 | Güz | Bulunamadı | [sube_2/](sube_2/) |
 | 3 | Güz | Serpil Karayel | [sube_3/](sube_3/) |
 | 5 | Güz | Bulunamadı | [sube_5/](sube_5/) |
 | 7 | Güz | Servet Es | [sube_7/](sube_7/) |

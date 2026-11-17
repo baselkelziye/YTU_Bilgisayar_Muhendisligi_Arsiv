@@ -1,0 +1,1095 @@
+1
+00:17:56,915 --> 00:17:58,035
+Günaydın arkadaşlar.
+
+2
+00:18:14,867 --> 00:18:15,847
+Sesim geliyor mu?
+
+3
+00:18:26,228 --> 00:18:28,087
+Günaydın arkadaşlar, sesim geliyor mu?
+
+4
+00:26:45,460 --> 00:26:48,900
+Günaydın arkadaşlar, sesim geliyor mu? Sesimi alabiliyor musunuz?
+
+5
+00:26:51,180 --> 00:26:55,240
+Günaydın arkadaşlar, sesimi alabiliyor musunuz?
+
+6
+00:27:08,564 --> 00:27:09,564
+Teşekkürler.
+
+7
+00:27:10,584 --> 00:27:11,984
+Bugün ters türevi ve
+
+8
+00:27:11,984 --> 00:27:14,484
+integrali işleyeceğiz. Bir I aralığındaki
+
+9
+00:27:14,484 --> 00:27:15,884
+her X için
+
+10
+00:27:15,884 --> 00:27:17,183
+FX'in türevi
+
+11
+00:27:17,183 --> 00:27:21,423
+bu büyük FX fonksiyonuna
+
+12
+00:27:21,423 --> 00:27:23,544
+FX'in ters türevi
+
+13
+00:27:23,544 --> 00:27:24,524
+diyeceğiz.
+
+14
+00:27:26,264 --> 00:27:27,244
+Ne demek bu?
+
+15
+00:27:28,183 --> 00:27:29,744
+Aslında bu
+
+16
+00:27:29,744 --> 00:27:32,584
+yani
+
+17
+00:27:32,584 --> 00:27:36,704
+konuşuyorum.
+
+18
+00:27:40,704 --> 00:27:42,344
+Aslında
+
+19
+00:27:42,344 --> 00:27:49,504
+bu
+
+20
+00:27:49,504 --> 00:27:49,903
+aslında
+
+21
+00:27:49,903 --> 00:27:50,464
+integral
+
+22
+00:27:50,464 --> 00:27:51,184
+kavramına
+
+23
+00:27:51,183 --> 00:28:21,144
+bir
+
+24
+00:29:50,548 --> 00:29:54,688
+ve iftah ile fonksiyonların genel ters türevlerine bakalım.
+
+25
+00:29:59,443 --> 00:30:01,783
+x'in l fonksiyonu, genel ters türevi.
+
+26
+00:30:06,579 --> 00:30:10,099
+x'e n artı 1 bölü n artı 1 artı c'dir.
+
+27
+00:30:10,419 --> 00:30:13,759
+Bakın bunun türevi ne aldığımızda x'e n'i verir.
+
+28
+00:30:14,919 --> 00:30:20,339
+x'e n artı 1 eksi 1 çarpı n artı 1 olduğu için n artı 1'ler birbirini götürecek.
+
+29
+00:30:21,059 --> 00:30:23,299
+Ve x'e n artı 1 bölü n artı 1 artı c olur.
+
+30
+00:30:23,939 --> 00:30:29,740
+Sinus kx'in genel ters türevi eksi kosinus kx bölü k artı c olur.
+
+31
+00:30:31,039 --> 00:30:36,259
+Kosinus kx'in genel ters türevi sinus kx bölü k artı c olur.
+
+32
+00:30:36,259 --> 00:30:41,720
+Çünkü bunun türevini aldığımızda bakın sinus kx bölü k'nın türevi k çarpı kosinus kx bölü k.
+
+33
+00:30:41,839 --> 00:30:42,879
+K'lar birbirini götürdü.
+
+34
+00:30:43,099 --> 00:30:44,599
+Kosinus kx'i verir.
+
+35
+00:30:45,019 --> 00:30:46,220
+Zaten c'nin türevi 0.
+
+36
+00:30:47,379 --> 00:30:53,179
+Sekant kare kx'in genel ters türevi de tanjant kx bölü k artı c oluyor arkadaşlar.
+
+37
+00:30:53,859 --> 00:30:59,220
+Şimdi burada bir diğer kavramımız belirsiz integral.
+
+38
+00:31:31,892 --> 00:31:33,552
+Belirsiz integral nedir?
+
+39
+00:31:34,652 --> 00:31:36,192
+fx'in tüm ters türevlerinin
+
+40
+00:31:36,192 --> 00:31:38,192
+kümesine belirsiz integral
+
+41
+00:31:38,192 --> 00:31:38,672
+diyoruz.
+
+42
+00:31:39,392 --> 00:31:41,612
+Ve integral fx'le
+
+43
+00:31:41,612 --> 00:31:43,632
+gösteriyoruz.
+
+44
+00:31:45,991 --> 00:31:47,792
+Bu ne demek?
+
+45
+00:31:48,412 --> 00:31:50,552
+Buradaki fx fonksiyonun
+
+46
+00:31:50,552 --> 00:31:51,272
+ters türevi
+
+47
+00:31:51,272 --> 00:31:52,652
+arkadaşlar.
+
+48
+00:31:54,772 --> 00:31:56,612
+İntegral tablosu
+
+49
+00:31:56,612 --> 00:32:00,632
+ise bize bu fonksiyonların
+
+50
+00:32:00,632 --> 00:32:02,491
+tüm bu fonksiyonların ters türevlerini
+
+51
+00:32:02,491 --> 00:32:03,152
+veren tablo.
+
+52
+00:32:03,731 --> 00:32:04,951
+x üzeri n'in integrali
+
+53
+00:32:04,951 --> 00:32:07,612
+aslında x üzeri n artı 1 artı 1 artı 1 artı.
+
+54
+00:32:07,932 --> 00:32:09,352
+Yani x üzeri n'in ters türevi.
+
+55
+00:32:10,612 --> 00:32:11,632
+Kosinus'ün integrali
+
+56
+00:32:11,632 --> 00:32:13,372
+sin x bölü k artı c.
+
+57
+00:32:13,592 --> 00:32:15,751
+Sinus'ün integrali kosinus k x bölü k
+
+58
+00:32:15,751 --> 00:32:17,532
+x kosinus k x bölü k artı c.
+
+59
+00:32:18,132 --> 00:32:19,152
+Bakın burada hepsinde
+
+60
+00:32:19,152 --> 00:32:21,552
+artı c'ler var.
+
+61
+00:32:21,632 --> 00:32:23,772
+Bu sabitleri unutmayın tabloya
+
+62
+00:32:23,772 --> 00:32:27,112
+bakarken.
+
+63
+00:32:28,231 --> 00:32:29,792
+Ve tanjantın, potanjantın
+
+64
+00:32:29,792 --> 00:32:31,251
+sekantın, kosekantın
+
+65
+00:32:31,251 --> 00:32:33,731
+dx bölü x'in, e üzeri x'in
+
+66
+00:32:33,731 --> 00:32:34,711
+a üzeri x'in
+
+67
+00:32:34,711 --> 00:32:35,932
+integralleri.
+
+68
+00:32:36,092 --> 00:32:37,112
+Bunlar hepsinin bakın
+
+69
+00:32:37,112 --> 00:32:39,231
+dikkat edin ters türevleri
+
+70
+00:32:39,231 --> 00:32:40,731
+olarak verilmiş.
+
+71
+00:32:41,372 --> 00:32:43,012
+Mesela a üzeri x dx
+
+72
+00:32:43,012 --> 00:32:44,652
+a üzeri x bölü n'e n'e artı
+
+73
+00:32:44,652 --> 00:32:45,512
+c.
+
+74
+00:32:46,491 --> 00:32:47,751
+Sinus hiperbolik x'in
+
+75
+00:32:47,751 --> 00:32:49,951
+integrali kosinus hiperbolik x artı c.
+
+76
+00:32:50,392 --> 00:32:51,451
+Kosinus hiperbolik x'in
+
+77
+00:32:51,451 --> 00:32:51,951
+integrali
+
+78
+00:32:51,951 --> 00:32:54,372
+bildiğimiz gibi bunların ters türevleri
+
+79
+00:32:54,372 --> 00:32:55,211
+ve türevleri
+
+80
+00:32:55,211 --> 00:32:56,852
+zaten birbirini veriyordu.
+
+81
+00:32:56,852 --> 00:32:58,632
+Yani sinus hiperbolik x'in türevi
+
+82
+00:32:58,632 --> 00:32:59,592
+kosinus hiperbolik x.
+
+83
+00:32:59,672 --> 00:33:00,852
+Kosinus hiperbolik x'in türevi
+
+84
+00:33:00,852 --> 00:33:01,951
+sinus hiperbolik x olarak
+
+85
+00:33:01,951 --> 00:33:02,892
+verilmişti zaten.
+
+86
+00:33:04,792 --> 00:33:06,672
+Sekant x çarpı tanjant x'in
+
+87
+00:33:06,672 --> 00:33:07,231
+integrali
+
+88
+00:33:07,231 --> 00:33:08,731
+sekant x artı c.
+
+89
+00:33:08,912 --> 00:33:09,832
+Kosekant x çarpı
+
+90
+00:33:09,832 --> 00:33:10,572
+kotanjant x'in
+
+91
+00:33:10,572 --> 00:33:11,251
+integrali ise
+
+92
+00:33:11,251 --> 00:33:13,092
+eksi kosekant x artı c
+
+93
+00:33:13,092 --> 00:33:14,172
+olarak verilmiş.
+
+94
+00:33:15,112 --> 00:33:16,251
+Ve benzer şekilde
+
+95
+00:33:16,251 --> 00:33:17,152
+arktanjant
+
+96
+00:33:17,152 --> 00:33:19,612
+x bölü a'nın
+
+97
+00:33:19,612 --> 00:33:20,292
+türevi neydi?
+
+98
+00:33:21,092 --> 00:33:22,552
+dx bölü akar artı x kare
+
+99
+00:33:22,552 --> 00:33:23,372
+bir bölü.
+
+100
+00:33:23,771 --> 00:33:24,471
+Dolayısıyla bakın
+
+101
+00:33:24,471 --> 00:33:25,552
+tersini aldığımızda
+
+102
+00:33:25,552 --> 00:33:26,912
+dx bölü akar artı x kare
+
+103
+00:33:26,912 --> 00:33:29,592
+integrali bir bölü a artı tanjant x bölü a artı
+
+104
+00:33:29,592 --> 00:33:30,892
+c olarak veriliyor.
+
+105
+00:33:31,372 --> 00:33:33,132
+Yine dx bölü akar eksi x kare
+
+106
+00:33:33,132 --> 00:33:33,912
+kök içerisinde
+
+107
+00:33:33,912 --> 00:33:35,292
+arktanjant x bölü a artı
+
+108
+00:33:35,292 --> 00:33:36,951
+c olarak veriliyor.
+
+109
+00:33:36,951 --> 00:33:57,951
+çarpı
+
+110
+00:33:40,660 --> 00:33:57,259
+Belirli integral kavramına geçelim. Belirli integralde şöyle bir şey var. Bir y eşitir fx fonksiyonu var. Bu fonksiyonun belli bir aralıkta integralini alıyoruz. Yani y eşitir fx fonksiyonunun a noktasından b noktasına kadar integralini alıyoruz.
+
+111
+00:33:57,259 --> 00:33:59,400
+İşte bu aralıktaki integral'e
+
+112
+00:33:59,400 --> 00:34:04,220
+eğer a'dan b'ye kadar integral alıyorsak
+
+113
+00:34:04,220 --> 00:34:05,380
+mesela normal
+
+114
+00:34:05,380 --> 00:34:07,860
+x'e n'in integrali neydi?
+
+115
+00:34:09,440 --> 00:34:12,559
+Ya da diyelim ki özel olarak bir örnek yapalım.
+
+116
+00:34:12,659 --> 00:34:14,099
+x kare bx'in integrali ne?
+
+117
+00:34:14,659 --> 00:34:16,079
+x küp bölü c.
+
+118
+00:34:25,715 --> 00:34:31,875
+Ancak, x karenin, 1'den 2'ye kadar integralini alalım.
+
+119
+00:34:36,916 --> 00:34:39,756
+Bu integral ise x kare fonksiyonunun
+
+120
+00:34:39,756 --> 00:34:41,135
+mesela x kare
+
+121
+00:34:41,135 --> 00:34:42,276
+grafiği neydi arkadaşlar?
+
+122
+00:34:43,456 --> 00:34:44,576
+Şöyle bir grafiği vardı.
+
+123
+00:34:45,556 --> 00:34:46,956
+x kare fonksiyonunun
+
+124
+00:34:46,956 --> 00:34:48,916
+birden ikiye kadar olan
+
+125
+00:34:48,916 --> 00:34:51,076
+bir, iki
+
+126
+00:35:03,476 --> 00:35:08,635
+1'den 2'ler, y'e işte x kare fonksiyonunun altında kalan,
+
+127
+00:35:08,635 --> 00:35:14,796
+dolayısıyla bakın, bu,
+
+128
+00:35:22,099 --> 00:35:28,099
+x kare artı 2x'lerin integrali, x küp bölü 3'lü ters türevi.
+
+129
+00:38:30,132 --> 00:38:32,612
+x0, x1, x'en kümesini
+
+130
+00:38:32,612 --> 00:38:34,392
+AB'nin bir bölüntüsü
+
+131
+00:38:34,392 --> 00:38:34,992
+diyerek
+
+132
+00:38:34,992 --> 00:38:38,231
+x'i eksi bir x'i alt aralıklarına da
+
+133
+00:38:38,231 --> 00:38:40,311
+P bölümünün alt aralıkları
+
+134
+00:38:40,311 --> 00:38:41,432
+diyoruz.
+
+135
+00:38:42,331 --> 00:38:43,831
+Ve bu alt aralıkların
+
+136
+00:38:43,831 --> 00:38:45,592
+sonsuz toplamını alarak
+
+137
+00:38:45,592 --> 00:38:47,711
+Riemann integralini
+
+138
+00:38:47,711 --> 00:38:49,392
+oluşturuyoruz arkadaşlar.
+
+139
+00:38:53,632 --> 00:38:55,152
+Ve böylelikle
+
+140
+00:38:55,152 --> 00:38:57,751
+bir sürü integral
+
+141
+00:38:57,751 --> 00:39:00,032
+bir sürü dikdörtgen oluşuyor arkadaşlar.
+
+142
+00:39:00,132 --> 00:39:00,612
+burada bakın.
+
+143
+00:39:01,612 --> 00:39:03,012
+ax1 aralığında
+
+144
+00:39:03,012 --> 00:39:05,052
+c1 uzunluklu
+
+145
+00:39:05,052 --> 00:39:07,492
+n'i olan
+
+146
+00:39:07,492 --> 00:39:08,532
+ve
+
+147
+00:39:08,532 --> 00:39:10,172
+x
+
+148
+00:39:10,172 --> 00:39:15,532
+1'e kadar uzak uzunluğu olan
+
+149
+00:39:15,532 --> 00:39:17,331
+yani yüksekliği x1 olan
+
+150
+00:39:17,331 --> 00:39:18,211
+bir
+
+151
+00:39:18,211 --> 00:39:21,311
+dikdörtgen oluşuyor.
+
+152
+00:39:22,132 --> 00:39:23,831
+Bakın bu dikdörtgenin
+
+153
+00:39:23,831 --> 00:39:24,552
+ortasında
+
+154
+00:39:24,552 --> 00:39:26,992
+bir c1 noktası alalım.
+
+155
+00:39:26,992 --> 00:39:29,052
+Bu c1 noktası
+
+156
+00:39:29,052 --> 00:39:31,711
+x0 x1 aralığında
+
+157
+00:39:31,711 --> 00:39:32,271
+bir nokta
+
+158
+00:39:32,271 --> 00:39:35,572
+fc1 bu dikdörtgenin
+
+159
+00:39:35,572 --> 00:39:36,291
+yüksekliğidir.
+
+160
+00:39:37,152 --> 00:39:38,392
+Yani c1 noktasından
+
+161
+00:39:38,392 --> 00:39:39,672
+bir dikdörtgen oluşturalım.
+
+162
+00:39:40,291 --> 00:39:41,152
+delta x1 ise
+
+163
+00:39:41,152 --> 00:39:43,052
+x1 eksi a olarak
+
+164
+00:39:43,052 --> 00:39:46,552
+bu a x1 aralığıdır ve
+
+165
+00:39:46,552 --> 00:39:48,472
+dikdörtgenin enidir.
+
+166
+00:39:48,932 --> 00:39:50,032
+Bu ikisini çarptığımız zaman
+
+167
+00:39:50,032 --> 00:39:51,372
+bu dikdörtgenin alanı buluruz.
+
+168
+00:39:51,371 --> 00:39:53,672
+fc1 delta x1
+
+169
+00:39:53,672 --> 00:39:54,731
+birinci dikdörtgenin alanı.
+
+170
+00:39:54,912 --> 00:39:56,092
+fc2 delta x2
+
+171
+00:39:56,092 --> 00:39:57,251
+ikinci dikdörtgenin alanı
+
+172
+00:39:57,251 --> 00:40:00,092
+ve fcn delta xn
+
+173
+00:40:00,092 --> 00:40:02,371
+eninci dikdörtgenin alanı.
+
+174
+00:40:03,972 --> 00:40:05,032
+Bu en tane dikdörtgeni
+
+175
+00:40:05,592 --> 00:40:07,972
+toplarsak
+
+176
+00:40:07,972 --> 00:40:09,912
+aslında buranın alanına
+
+177
+00:40:09,912 --> 00:40:11,432
+yani bu fonksiyonun çizdiği
+
+178
+00:40:11,432 --> 00:40:12,831
+grafiğin altında kalan alanı
+
+179
+00:40:12,831 --> 00:40:14,652
+yaklaşık olarak hesaplamış oluruz.
+
+180
+00:40:14,652 --> 00:40:17,452
+Biz bu
+
+181
+00:40:17,452 --> 00:40:20,612
+sonlu toplama
+
+182
+00:40:20,612 --> 00:40:21,972
+yani sn eşittir
+
+183
+00:40:21,972 --> 00:40:23,492
+i eşittir birden n'e kadar
+
+184
+00:40:23,492 --> 00:40:25,351
+fc1 delta x'i toplamına
+
+185
+00:40:25,351 --> 00:40:27,052
+f fonksiyonu ve p fonksiyonu için
+
+186
+00:40:27,052 --> 00:40:29,472
+genel riman toplama diyoruz.
+
+187
+00:40:30,391 --> 00:40:31,172
+Eğer biz buradaki
+
+188
+00:40:31,172 --> 00:40:32,052
+n sayısını
+
+189
+00:40:32,052 --> 00:40:34,172
+sonsuza götürsek
+
+190
+00:40:34,172 --> 00:40:36,371
+bu n sonsuza giderse
+
+191
+00:40:36,371 --> 00:40:38,572
+o zaman ne oluyor bizim için?
+
+192
+00:40:39,192 --> 00:40:40,251
+n sonsuza giderken
+
+193
+00:40:40,251 --> 00:40:40,751
+sn
+
+194
+00:40:40,751 --> 00:40:42,932
+bu toplam
+
+195
+00:40:42,932 --> 00:40:45,492
+sonsuz bir toplam
+
+196
+00:40:45,492 --> 00:40:46,012
+olmuş oluyor.
+
+197
+00:40:46,172 --> 00:40:47,512
+Eni sonsuza götürdüğümüz zaman
+
+198
+00:40:47,512 --> 00:40:48,572
+bunun limiti de
+
+199
+00:40:48,572 --> 00:40:49,372
+aslında bu
+
+200
+00:40:49,372 --> 00:40:51,132
+grafiğin altında kalan alanı
+
+201
+00:40:51,132 --> 00:40:53,092
+bize veriyor.
+
+202
+00:40:53,952 --> 00:40:54,612
+Çünkü biz
+
+203
+00:40:54,612 --> 00:40:54,892
+bu
+
+204
+00:40:54,892 --> 00:40:56,851
+bölgenin alanına
+
+205
+00:40:56,851 --> 00:40:58,652
+sonsuz tane
+
+206
+00:40:58,652 --> 00:40:59,372
+dikdörtgeni
+
+207
+00:40:59,372 --> 00:40:59,771
+bölerek
+
+208
+00:40:59,771 --> 00:41:01,311
+bu bölgenin altındaki kısmı
+
+209
+00:41:01,311 --> 00:41:02,632
+sonsuz tane dikdörtgeni
+
+210
+00:41:02,632 --> 00:41:03,851
+bölerek hesaplamış oluyoruz.
+
+211
+00:41:04,331 --> 00:41:05,092
+Bu sonsuz tane
+
+212
+00:41:05,092 --> 00:41:05,952
+dikdörtgeni alanı
+
+213
+00:41:05,952 --> 00:41:06,912
+topladığımız zaman
+
+214
+00:41:06,912 --> 00:41:07,452
+zaten
+
+215
+00:41:07,452 --> 00:41:09,072
+tam olarak aslında
+
+216
+00:41:09,072 --> 00:41:11,412
+bu grafiğin altında kalan
+
+217
+00:41:11,412 --> 00:41:11,892
+alanı
+
+218
+00:41:11,891 --> 00:41:13,692
+hesaplamış oluyoruz.
+
+219
+00:41:13,771 --> 00:41:14,771
+Belirli integralde
+
+220
+00:41:14,771 --> 00:41:16,331
+bizim bu işimize yarıyor.
+
+221
+00:41:16,871 --> 00:41:18,211
+Yani bölgenin altında kalan
+
+222
+00:41:18,211 --> 00:41:18,612
+alanı
+
+223
+00:41:18,612 --> 00:41:19,612
+hesaplamamıza
+
+224
+00:41:19,612 --> 00:41:20,291
+yarıyor.
+
+225
+00:41:21,032 --> 00:41:21,912
+Bu toplamda
+
+226
+00:41:21,912 --> 00:41:24,032
+yaklaşık olarak
+
+227
+00:41:24,032 --> 00:41:25,572
+şöyle hesaplanıyor.
+
+228
+00:41:26,572 --> 00:41:27,271
+Şimdi buradaki
+
+229
+00:41:27,271 --> 00:41:28,512
+aralıkları
+
+230
+00:41:28,512 --> 00:41:29,672
+delta x'i'leri
+
+231
+00:41:29,672 --> 00:41:31,391
+b-a bölü n'le
+
+232
+00:41:31,391 --> 00:41:32,271
+hesaplıyoruz.
+
+233
+00:41:33,271 --> 00:41:34,492
+Ve f fonksiyonunda
+
+234
+00:41:34,492 --> 00:41:35,992
+a artı
+
+235
+00:41:35,992 --> 00:41:36,552
+i çarpı
+
+236
+00:41:36,552 --> 00:41:37,552
+b-a bölü n
+
+237
+00:41:37,552 --> 00:41:39,652
+ci noktasına
+
+238
+00:41:39,652 --> 00:41:40,652
+veriyor bize.
+
+239
+00:41:43,192 --> 00:41:43,831
+Bakın
+
+240
+00:41:43,831 --> 00:41:44,331
+a'ya
+
+241
+00:41:44,331 --> 00:41:45,952
+a noktasına
+
+242
+00:41:45,952 --> 00:41:47,311
+a eşittir
+
+243
+00:41:47,311 --> 00:41:48,492
+x sıfır noktası olsun
+
+244
+00:41:48,492 --> 00:41:50,391
+b-a artı
+
+245
+00:41:50,391 --> 00:41:51,612
+bölü n'i
+
+246
+00:41:51,612 --> 00:41:52,472
+eklediğimiz zaman
+
+247
+00:41:52,472 --> 00:41:53,871
+x1'i elde ederiz.
+
+248
+00:41:54,871 --> 00:41:55,311
+İki tane
+
+249
+00:41:55,311 --> 00:41:56,291
+b-a bölü n'i
+
+250
+00:41:56,291 --> 00:41:57,032
+eklediğimiz zaman
+
+251
+00:41:57,032 --> 00:41:58,152
+x2'i elde ederiz.
+
+252
+00:41:58,152 --> 00:41:59,532
+üç tane eklediğimiz zaman
+
+253
+00:41:59,532 --> 00:42:00,972
+x3'i elde ederiz.
+
+254
+00:42:01,572 --> 00:42:02,892
+n tane eklediğimiz zaman
+
+255
+00:42:02,892 --> 00:42:03,572
+aslında
+
+256
+00:42:03,572 --> 00:42:05,311
+x'ini elde ederiz.
+
+257
+00:42:05,432 --> 00:42:06,052
+Yani n'inci
+
+258
+00:42:06,052 --> 00:42:10,251
+dikdörtgene kadar
+
+259
+00:42:10,251 --> 00:42:11,472
+olan kısmı
+
+260
+00:42:11,472 --> 00:42:13,152
+hesaplamış oluruz.
+
+261
+00:42:14,992 --> 00:42:16,052
+Dolayısıyla bakın
+
+262
+00:42:16,052 --> 00:42:18,112
+şu nokta
+
+263
+00:42:18,112 --> 00:42:19,092
+x'i noktası
+
+264
+00:42:19,092 --> 00:42:20,211
+a artı
+
+265
+00:42:20,211 --> 00:42:20,791
+i çarpı
+
+266
+00:42:20,791 --> 00:42:21,632
+b-a bölü
+
+267
+00:42:21,632 --> 00:42:22,992
+n olarak
+
+268
+00:42:22,992 --> 00:42:24,172
+belirlenir.
+
+269
+00:42:24,172 --> 00:42:27,331
+e indi.
+
+270
+00:42:27,331 --> 00:42:40,012
+bir şey.
+
+271
+00:42:27,827 --> 00:42:43,867
+ci noktası a artı i çarpı b eksi a bölü en ile belirlenir. Böylelikle o noktayı hesaplarız. O noktanın fonksiyonda karşı geldiği noktayı da hesapladığımız zaman aslında oluşturacağımız ilk dörtgenin enini ve boyunu bulmuş oluruz.
+
+272
+00:42:43,867 --> 00:43:00,907
+ve bu en parçayı sonsuza götürdüğümüz zaman da bu bölüntüyü bu en parçanın sonsuza gittiğini varsaydığımızda limit alarak eni sonsuza götürdüğümüzde orayı sonsuz tane dikdörtgene bölmüş oluyoruz aslında.
+
+273
+00:43:02,367 --> 00:43:10,847
+Dolayısıyla sonsuz tane dikdörtgenin alanı hesaplayarak da grafiğin altında kalan bölgenin alanının hesabını yapıyoruz.
+
+274
+00:45:15,251 --> 00:45:20,271
+Bu hafta sınav haftasıymış arkadaşlar, kusura bakmayın. Ben bitiriyorum dersi.
