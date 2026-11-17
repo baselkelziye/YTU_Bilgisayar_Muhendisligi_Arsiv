@@ -1,0 +1,1359 @@
+1
+00:05:04,755 --> 00:05:06,995
+Günaydın arkadaşlar, beni duyabiliyor musunuz?
+
+2
+00:05:17,875 --> 00:05:35,375
+Döner yüzey hacimleri hesaplamayla ilgili bilgiler vermiştik. Bunun içindeki yöntem, hat 3 yöntem verdik. Birinci risk yöntemi, pul yöntemi ve silirik kabuk yöntemiydi. Bugün ise yay uzunluğu ve döner yüzey alanı şeklinde 2 tane konudan bahsedeceğiz. Zaten çok uzun değiller.
+
+3
+00:05:35,375 --> 00:06:01,855
+Arkadaşlar, yay uzunluğu birinci olarak, yay uzunludaki hedefimiz örnek olarak mesela şekil üzerine baktığımızda a'dan b'ye y eşittir fx fonksiyonunun şu uzunluğunu hesap etmek arkadaşlar. Yani l uzunluğunu hesap etmeye çalışıyoruz. Bunun için de formülümüz şu, a'dan b'ye karakök içerisinde 1 artı fonksiyonun türev'in karesi dx şeklinde hesap ediliyor.
+
+4
+00:06:01,855 --> 00:06:07,475
+Biz bu ifadeye fx fonksiyonunun abx fonksiyonunun abdaki uzunluğu diyoruz arkadaşlar.
+
+5
+00:06:09,536 --> 00:06:17,955
+Tabi fonksiyon bu arakta sürekli olmak zorunda arkadaşlar. Törenlebilir olmak zorunda aynı zamanda. Bu şartlarda tabi unutmadan süremek lazım.
+
+6
+00:06:28,788 --> 00:06:30,867
+fonksiyon şu
+
+7
+00:06:30,867 --> 00:06:32,548
+y eşitti. 4 kök
+
+8
+00:06:32,548 --> 00:06:34,668
+2 bölü 3 çarpı
+
+9
+00:06:34,668 --> 00:06:36,168
+x üzeri 3 bölü 2 eksi 1
+
+10
+00:06:36,168 --> 00:06:38,588
+0 bölü 1 aralığında arkadaşlar.
+
+11
+00:06:39,268 --> 00:06:40,927
+Tabi sadece yeryüzümle yer isteniyorsa
+
+12
+00:06:40,927 --> 00:06:42,268
+şekil çizmeye gerek yok.
+
+13
+00:06:43,268 --> 00:06:44,828
+Direkt fonksiyonun türevini alıp
+
+14
+00:06:44,828 --> 00:06:46,648
+arkadaşlar formülüne yerine
+
+15
+00:06:46,648 --> 00:06:48,528
+yazarsak yetiyor. Fonksiyonun türevi
+
+16
+00:06:48,528 --> 00:06:50,548
+2 kökü 2 çarpı
+
+17
+00:06:50,548 --> 00:06:51,927
+x üzeri 1 bölü 2
+
+18
+00:06:51,927 --> 00:06:54,567
+bunun karesini aldığınız zaman da 8x yapar.
+
+19
+00:06:54,627 --> 00:06:56,528
+O halde integralimiz karı kök içerisinde
+
+20
+00:06:56,528 --> 00:06:58,448
+1 artı 8x.
+
+21
+00:06:58,788 --> 00:07:00,888
+sınırlarda
+
+22
+00:07:00,888 --> 00:07:01,867
+0'dan 1'e.
+
+23
+00:07:02,508 --> 00:07:04,968
+Tabi bu integral almak için bir değişken değişikliği
+
+24
+00:07:04,968 --> 00:07:06,848
+yapmamız lazım. 1 artı 8x'e
+
+25
+00:07:06,848 --> 00:07:08,788
+u dersek du eşittir
+
+26
+00:07:08,788 --> 00:07:10,088
+8x olur.
+
+27
+00:07:11,008 --> 00:07:12,947
+x eşittir 0 için u arkadaşlar
+
+28
+00:07:12,947 --> 00:07:14,888
+1'dir. x eşittir 1 için de
+
+29
+00:07:14,888 --> 00:07:15,908
+u 9'dur.
+
+30
+00:07:16,388 --> 00:07:18,228
+İntegrasyon sınırlarını yer değiştirirsek
+
+31
+00:07:18,228 --> 00:07:20,128
+buradan arkadaşlar
+
+32
+00:07:20,128 --> 00:07:21,408
+yeni tekrarımız
+
+33
+00:07:21,408 --> 00:07:24,987
+1 bölü 8 çarpı
+
+34
+00:07:24,987 --> 00:07:26,388
+u üzeri 1 bölü 2 du olur.
+
+35
+00:07:26,408 --> 00:07:27,968
+Arkadaşlar bir eklediğimiz zaman
+
+36
+00:07:27,968 --> 00:07:30,708
+u üzeri 3 bölü 2 bölü 3 bölü 2 yapar.
+
+37
+00:07:31,187 --> 00:07:32,888
+Gerekli sağda değişimlerden sonra ve
+
+38
+00:07:32,888 --> 00:07:34,148
+u yerine önce
+
+39
+00:07:34,148 --> 00:07:36,427
+9 sonra 1 yazdığınızda
+
+40
+00:07:36,427 --> 00:07:37,968
+cevap 13 bölü 6 birim
+
+41
+00:07:37,968 --> 00:07:39,228
+olacaktır.
+
+42
+00:07:39,228 --> 00:07:40,427
+uzunluk belirttiği için.
+
+43
+00:07:40,427 --> 00:07:44,927
+bir diğer örnek
+
+44
+00:07:44,927 --> 00:07:46,987
+zaten şekil verilmiş.
+
+45
+00:07:47,348 --> 00:07:49,168
+fx eşittir x küp bölü 12
+
+46
+00:07:49,168 --> 00:07:51,427
+artı 1 bölü x
+
+47
+00:07:51,427 --> 00:07:53,028
+1,4 aralığında
+
+48
+00:07:53,028 --> 00:07:55,608
+fonksiyon türevini alıyoruz arkadaşlar.
+
+49
+00:07:56,687 --> 00:07:58,388
+1 artı fonksiyon türevinin
+
+50
+00:07:58,388 --> 00:07:59,067
+karesi
+
+51
+00:07:59,067 --> 00:08:00,367
+hesap ettiğiniz zaman
+
+52
+00:08:00,367 --> 00:08:02,668
+aslında yine şu ifade oluyor.
+
+53
+00:08:03,228 --> 00:08:04,768
+Bunun da kare kökü arkadaşlar
+
+54
+00:08:04,768 --> 00:08:05,268
+budur.
+
+55
+00:08:05,268 --> 00:08:06,588
+Bu ifadenin
+
+56
+00:08:06,588 --> 00:08:07,948
+integrali de x küp bölü
+
+57
+00:08:07,948 --> 00:08:08,548
+12
+
+58
+00:08:08,548 --> 00:08:10,367
+eksi
+
+59
+00:08:10,367 --> 00:08:11,807
+1 bölü x'dir arkadaşlar.
+
+60
+00:08:13,108 --> 00:08:14,487
+x yerine önce 4
+
+61
+00:08:14,487 --> 00:08:15,668
+sonra 1 yazdığınızda
+
+62
+00:08:15,668 --> 00:08:17,367
+cevap 6 birim
+
+63
+00:08:17,367 --> 00:08:18,148
+olacaktır.
+
+64
+00:08:18,148 --> 00:08:23,067
+eğer ki
+
+65
+00:08:23,067 --> 00:08:25,028
+y yüzümünü hesap ederken arkadaşlar
+
+66
+00:08:25,028 --> 00:08:27,307
+mesela fx'in türevini aldığınızda
+
+67
+00:08:27,307 --> 00:08:28,908
+v'ler aralıkta fonksiyon sürekli
+
+68
+00:08:28,908 --> 00:08:29,508
+değilse
+
+69
+00:08:29,508 --> 00:08:33,028
+şöyle bir şey yapabilirsiniz.
+
+70
+00:08:34,148 --> 00:08:35,408
+İntegrasyonu y'ye göre
+
+71
+00:08:35,408 --> 00:08:36,847
+alabilirsiniz arkadaşlar.
+
+72
+00:08:37,028 --> 00:08:37,847
+Peki nasıl olacak?
+
+73
+00:08:38,468 --> 00:08:39,908
+Hemen örnek üzerinde konuşalım.
+
+74
+00:08:40,927 --> 00:08:42,607
+Bakın d'ye bölü d x eşittir.
+
+75
+00:08:43,187 --> 00:08:44,528
+Fonksiyon türevini aldığınızda
+
+76
+00:08:44,528 --> 00:08:45,927
+fonksiyon türevi bu.
+
+77
+00:08:46,528 --> 00:08:47,488
+Bakın bu fonksiyon
+
+78
+00:08:47,488 --> 00:08:49,028
+verilen aralıkta
+
+79
+00:08:49,028 --> 00:08:49,827
+sürekli değildir.
+
+80
+00:08:49,908 --> 00:08:50,087
+Neden?
+
+81
+00:08:50,248 --> 00:08:51,768
+x yerine sıfır yazdığınızda
+
+82
+00:08:51,768 --> 00:08:53,448
+sonsuz olacaktır.
+
+83
+00:08:53,567 --> 00:08:54,708
+Yani bir süreksizlik var.
+
+84
+00:08:55,208 --> 00:08:56,427
+Böyle durumlarda arkadaşlar
+
+85
+00:08:56,427 --> 00:08:58,288
+integrasyonu y'ye göre alabilirsiniz.
+
+86
+00:08:58,427 --> 00:08:59,668
+Peki nasıl alacağız arkadaşlar?
+
+87
+00:09:00,488 --> 00:09:01,228
+Öncelikle tabii
+
+88
+00:09:01,228 --> 00:09:03,168
+y eşittir fx ifadesinden
+
+89
+00:09:03,168 --> 00:09:05,087
+x'i yalnız bırakacaksınız
+
+90
+00:09:05,087 --> 00:09:05,628
+bu ifadede.
+
+91
+00:09:05,728 --> 00:09:06,228
+x nedir?
+
+92
+00:09:06,708 --> 00:09:07,847
+x eşittir
+
+93
+00:09:07,847 --> 00:09:09,807
+2 çarpı y üzeri 3 bölü 2'dir.
+
+94
+00:09:10,427 --> 00:09:11,827
+Bunun y'ye göre türevi
+
+95
+00:09:11,827 --> 00:09:13,988
+3 çarpı y üzeri 1 bölü 2'dir.
+
+96
+00:09:14,128 --> 00:09:15,148
+O halde formülde
+
+97
+00:09:15,148 --> 00:09:17,728
+1 artı g üstü y'nin karesi
+
+98
+00:09:17,728 --> 00:09:18,168
+yerine
+
+99
+00:09:18,168 --> 00:09:19,508
+1 artı
+
+100
+00:09:19,508 --> 00:09:20,968
+şunun karesindedir arkadaşlar.
+
+101
+00:09:21,228 --> 00:09:22,368
+4 çarpı
+
+102
+00:09:22,368 --> 00:09:23,748
+yani
+
+103
+00:09:23,748 --> 00:09:24,847
+buranın karesini alacak.
+
+104
+00:09:28,067 --> 00:09:30,228
+Daha doğrusu türevi buradaydı.
+
+105
+00:09:30,728 --> 00:09:31,268
+Buranın karesi
+
+106
+00:09:31,268 --> 00:09:32,468
+9 çarpı y'dir.
+
+107
+00:09:33,268 --> 00:09:33,827
+O halde
+
+108
+00:09:33,827 --> 00:09:34,827
+1 artı
+
+109
+00:09:34,827 --> 00:09:35,768
+9 çarpı y'nin
+
+110
+00:09:35,768 --> 00:09:36,687
+kara kökü 0'dan
+
+111
+00:09:36,687 --> 00:09:37,228
+bir ediyoruz.
+
+112
+00:09:37,307 --> 00:09:37,628
+Neye?
+
+113
+00:09:38,067 --> 00:09:39,687
+Tabii integrasyonu sınav değişecek.
+
+114
+00:09:39,768 --> 00:09:40,648
+x eşittir 0 için
+
+115
+00:09:40,648 --> 00:09:41,368
+y'nidir arkadaşlar.
+
+116
+00:09:41,488 --> 00:09:42,108
+7'i 0'dır.
+
+117
+00:09:42,107 --> 00:09:43,427
+x eşittir 2 için
+
+118
+00:09:43,427 --> 00:09:43,687
+y'nidir.
+
+119
+00:09:44,367 --> 00:09:44,687
+O yüzden
+
+120
+00:09:44,687 --> 00:09:46,028
+yeni integrasyonu sınavı da
+
+121
+00:09:46,028 --> 00:09:47,148
+0'dan 1 olacaktır.
+
+122
+00:09:47,888 --> 00:09:48,867
+Bu integrasyonu almak için de
+
+123
+00:09:48,867 --> 00:09:49,307
+1 artı
+
+124
+00:09:49,307 --> 00:09:50,028
+9 y'ye
+
+125
+00:09:50,028 --> 00:09:50,768
+u dediğiniz zaman
+
+126
+00:09:50,768 --> 00:09:52,728
+ve arkadaşlar
+
+127
+00:09:52,728 --> 00:09:54,367
+yeni integrasyonumuz
+
+128
+00:09:54,367 --> 00:09:54,847
+şu olacak.
+
+129
+00:09:54,968 --> 00:09:56,268
+1 bölü 9 çarpı 1'den
+
+130
+00:09:56,268 --> 00:09:56,628
+ona
+
+131
+00:09:56,628 --> 00:09:57,947
+u üzeri 1 bölü 2.
+
+132
+00:09:58,028 --> 00:09:58,648
+Bu ifadenin
+
+133
+00:09:58,648 --> 00:09:59,888
+integrasyonu aldığınız zaman da
+
+134
+00:09:59,888 --> 00:10:00,488
+cevap
+
+135
+00:10:00,488 --> 00:10:01,388
+arkadaşlar
+
+136
+00:10:01,388 --> 00:10:02,988
+2 bölü 27
+
+137
+00:10:02,988 --> 00:10:03,867
+10 kök
+
+138
+00:10:03,867 --> 00:10:04,207
+10
+
+139
+00:10:04,207 --> 00:10:05,107
+eksi 1
+
+140
+00:10:05,107 --> 00:10:06,048
+birim
+
+141
+00:10:06,048 --> 00:10:06,548
+şeklinde
+
+142
+00:10:06,548 --> 00:10:07,168
+bulacaksınız.
+
+143
+00:10:07,168 --> 00:10:13,548
+2 bölü 2.
+
+144
+00:10:13,548 --> 00:10:15,488
+3 bölü 2.
+
+145
+00:10:22,451 --> 00:10:23,011
+Evet.
+
+146
+00:10:24,052 --> 00:10:25,812
+Yay uzunluğu için diferansiyel
+
+147
+00:10:25,812 --> 00:10:27,111
+bir formül diyoruz arkadaşlar.
+
+148
+00:10:29,731 --> 00:10:30,032
+Eğer
+
+149
+00:10:30,032 --> 00:10:31,532
+y eşittir fx ve
+
+150
+00:10:31,532 --> 00:10:33,412
+f üstü fonksiyonların
+
+151
+00:10:33,412 --> 00:10:35,692
+a virgül b aralığında sürekli ise
+
+152
+00:10:35,692 --> 00:10:38,032
+k kürsünün temel teoremiyle
+
+153
+00:10:38,032 --> 00:10:39,812
+farklı formülü biraz daha
+
+154
+00:10:39,812 --> 00:10:41,011
+değiştirebiliriz arkadaşlar.
+
+155
+00:10:41,991 --> 00:10:43,792
+Avantajı ne olacak? Onu görelim.
+
+156
+00:10:44,591 --> 00:10:44,831
+Şimdi
+
+157
+00:10:44,831 --> 00:10:47,511
+x'e bağlı bir fonksiyon olarak
+
+158
+00:10:47,511 --> 00:10:49,011
+ifade ettiğiniz zaman arkadaşlar
+
+159
+00:10:49,011 --> 00:10:50,711
+yay uzunluğu formülünü
+
+160
+00:10:50,711 --> 00:10:52,412
+sonuçta
+
+161
+00:10:52,412 --> 00:10:55,971
+sınır x olduğu için
+
+162
+00:10:55,971 --> 00:10:57,572
+cevabımız x'e bağlı bir şey
+
+163
+00:10:57,572 --> 00:10:59,312
+çıkacağından yani biz sadece
+
+164
+00:10:59,312 --> 00:11:01,392
+üst sınıra x gibi bir şey yazdık.
+
+165
+00:11:01,871 --> 00:11:03,412
+O yüzden denklem sağ tarafa x'e
+
+166
+00:11:03,412 --> 00:11:05,912
+bağlı bir fonksiyon olduğu için sol tarafına
+
+167
+00:11:05,912 --> 00:11:07,172
+sx yazdık.
+
+168
+00:11:08,812 --> 00:11:09,451
+Arkadaşlar
+
+169
+00:11:09,451 --> 00:11:11,172
+sx ifadesinin
+
+170
+00:11:11,172 --> 00:11:13,072
+her iki tarafın
+
+171
+00:11:13,072 --> 00:11:14,572
+x'e göre türemini aldığınızda
+
+172
+00:11:14,572 --> 00:11:16,971
+hatırlayalım arkadaşlar. Kalkos'un
+
+173
+00:11:16,971 --> 00:11:18,132
+esas teoreminin
+
+174
+00:11:18,131 --> 00:11:21,672
+birinci kısmında şunu söyledik arkadaşlar.
+
+175
+00:11:22,292 --> 00:11:23,772
+İntegre alınmış bir fonksiyon
+
+176
+00:11:23,772 --> 00:11:25,192
+tekrar türemini aldığınızda
+
+177
+00:11:25,192 --> 00:11:27,632
+burada t yerine x yazarak
+
+178
+00:11:27,632 --> 00:11:29,211
+şu fonksiyonu yazıyorduk.
+
+179
+00:11:29,331 --> 00:11:30,331
+Yani bir artı
+
+180
+00:11:30,331 --> 00:11:31,591
+f üstü x kare
+
+181
+00:11:31,591 --> 00:11:33,072
+kare kök yazıyorduk arkadaşlar.
+
+182
+00:11:33,072 --> 00:11:58,572
+bir soru
+
+183
+00:11:39,412 --> 00:11:46,492
+f'ü x arkadaşlar, d'ye bölüldüğü. İlk tarafa d'x'e çarptığımız zaman d's eşittir. En son şu olur arkadaşlar.
+
+184
+00:11:47,172 --> 00:11:55,792
+Ve buradan da eşittir. Her iki tarafın karesini aldığınızda d's'nin karesi eşittir. d'x'in karesi artı d'ye'nin karesi şeklinde bulabiliriz.
+
+185
+00:11:55,792 --> 00:12:08,572
+Tabii bu şekilde yaptığımız zaman arkadaşlar sadece verilen aralığı, yani bir aralık, birden fazla aralıktan yayınlığına hesap etmek gerekiyorsa ne yaparsınız?
+
+186
+00:12:08,672 --> 00:12:16,292
+Tek bir formül hesap edersiniz. Daha sonra verilen aralığı değiştirip x yerine verilen aralıktaki değerleri yazarak arkadaşlar sonuca ulaşabilirsiniz.
+
+187
+00:12:16,432 --> 00:12:17,831
+Böyle bir avantaj var bu formülü.
+
+188
+00:12:19,432 --> 00:12:23,792
+Şimdi örnek üzerinde durursak, bakın bu fonksiyonu yayınlığına hesap edelim.
+
+189
+00:12:23,792 --> 00:12:53,772
+Ki bir önceki örnek üzerinde.
+
+190
+00:12:53,792 --> 00:12:59,892
+S yerine arkadaşlar 4 yazıyorsunuz cevabı 6 birim bu şekilde de ulaşılabilir arkadaşlar.
+
+191
+00:13:00,132 --> 00:13:07,512
+Yani birden fazla aynı fonksiyonu, birden fazla aralıktan ki yayınlığına hesap edildiği zaman bu formülü işe yarayabilir arkadaşlar.
+
+192
+00:13:07,872 --> 00:13:08,951
+Evet böyle bir avantaj var.
+
+193
+00:13:11,152 --> 00:13:13,652
+Evet yayınlığının ilgili soru soru var mı arkadaşlar?
+
+194
+00:13:20,244 --> 00:13:21,464
+Evet sanırım yok.
+
+195
+00:13:22,803 --> 00:13:24,423
+Şimdi geldik döner yüzeyler
+
+196
+00:13:24,423 --> 00:13:26,584
+kısmına arkadaşlar. Döner yüzeyler
+
+197
+00:13:26,584 --> 00:13:27,704
+bakalım.
+
+198
+00:13:28,604 --> 00:13:30,444
+Biraz yayınlığı formülünü
+
+199
+00:13:30,444 --> 00:13:31,964
+kullanarak yapıyoruz aslında.
+
+200
+00:13:32,824 --> 00:13:34,584
+Yine bir fx fonksiyonu var.
+
+201
+00:13:34,684 --> 00:13:36,564
+Sıfırdan büyük. A, B aralığında sürekli
+
+202
+00:13:36,564 --> 00:13:38,163
+türevlenebilir bir fonksiyon ise
+
+203
+00:13:38,163 --> 00:13:40,004
+y eşittir fx'in
+
+204
+00:13:40,004 --> 00:13:42,384
+grafiğin x eksine etrafına
+
+205
+00:13:42,384 --> 00:13:44,504
+döndürülmesiyle oluşan yüzey
+
+206
+00:13:44,504 --> 00:13:45,923
+alanının formülü şu arkadaşlar.
+
+207
+00:13:45,923 --> 00:13:46,903
+S eşittir.
+
+208
+00:13:46,903 --> 00:13:49,964
+2pi A'dan
+
+209
+00:13:49,964 --> 00:13:52,824
+fx 1 artı
+
+210
+00:13:52,824 --> 00:13:54,244
+f üstü x'in karesinin
+
+211
+00:13:54,244 --> 00:13:56,264
+kare kökü şeklinde hesap
+
+212
+00:13:56,264 --> 00:13:58,364
+ediyoruz arkadaşlar. Bakın y eşittir.
+
+213
+00:13:58,683 --> 00:14:00,043
+2 kök x eğrisini
+
+214
+00:14:00,043 --> 00:14:02,104
+x eksine etrafına döndürdüğümüz zaman
+
+215
+00:14:02,104 --> 00:14:03,984
+oluşan döner yüzey bu. Bu yüzey alanı.
+
+216
+00:14:04,564 --> 00:14:05,663
+Sıfırdan 2'ye
+
+217
+00:14:05,663 --> 00:14:07,844
+2 kök x dediğimiz şey fx'in kendisi.
+
+218
+00:14:07,944 --> 00:14:09,324
+Foksyon türevinin karesi burası.
+
+219
+00:14:09,923 --> 00:14:11,543
+Bu ifadenin integralini aldığımızda cevap
+
+220
+00:14:11,543 --> 00:14:13,624
+8pi bölü 3. 3 kökü
+
+221
+00:14:13,624 --> 00:14:16,004
+ceksi bir birim kare alan ifade ettiği için
+
+222
+00:14:16,004 --> 00:14:17,944
+o yüzden birim kare ediyoruz arkadaşlar.
+
+223
+00:14:20,204 --> 00:14:21,464
+Yine bunun farklı versiyonları var.
+
+224
+00:14:21,604 --> 00:14:23,803
+Eğer arkadaşlar y eksene etrafına
+
+225
+00:14:23,803 --> 00:14:25,283
+döndürürseniz o zaman ne olacak?
+
+226
+00:14:25,403 --> 00:14:25,764
+Formül.
+
+227
+00:14:26,224 --> 00:14:28,183
+x ve y'nin rolleri değişecek arkadaşlar.
+
+228
+00:14:28,344 --> 00:14:29,964
+Burası artık dx bölü dy olacak.
+
+229
+00:14:29,964 --> 00:14:33,244
+işte bir y eşittir k tarafında ve
+
+230
+00:14:33,244 --> 00:14:35,283
+k arkadaşlar
+
+231
+00:14:35,283 --> 00:14:37,764
+eğer x eksenin
+
+232
+00:14:37,764 --> 00:14:38,764
+sağ tarafında ise
+
+233
+00:14:38,764 --> 00:14:43,264
+daha doğrusu y eşittir k
+
+234
+00:14:43,264 --> 00:14:45,344
+y eksenin
+
+235
+00:14:45,344 --> 00:14:47,764
+pozitif kısmında ise bunu kullanacağız arkadaşlar.
+
+236
+00:14:49,364 --> 00:14:51,604
+Gerçi fark etmez ki bu da mutlak bir ifadesi var.
+
+237
+00:14:51,683 --> 00:14:53,124
+Evet burada aslında fark etmeyecektir.
+
+238
+00:14:53,923 --> 00:14:55,804
+fx eksi k ve k eksi fx
+
+239
+00:14:55,804 --> 00:14:57,484
+fark etmez ki mutlak bir yer olduğu için
+
+240
+00:14:57,484 --> 00:15:00,264
+dönen yüzey alana
+
+241
+00:15:00,264 --> 00:15:01,824
+bakın değişen tek şey
+
+242
+00:15:01,824 --> 00:15:02,724
+fx eksi k.
+
+243
+00:15:02,844 --> 00:15:04,044
+Şurada bir k faresi geliyor.
+
+244
+00:15:04,984 --> 00:15:05,184
+Eğer
+
+245
+00:15:05,184 --> 00:15:06,364
+x eksene
+
+246
+00:15:06,364 --> 00:15:07,283
+yani
+
+247
+00:15:07,283 --> 00:15:10,403
+eğer ki siz x eşittir p etrafına
+
+248
+00:15:10,403 --> 00:15:11,644
+döndürmek istiyorsanız da
+
+249
+00:15:11,644 --> 00:15:14,044
+x eşittir p y eksenine
+
+250
+00:15:14,044 --> 00:15:15,944
+paralel bir doğru olduğu için arkadaşlar
+
+251
+00:15:15,944 --> 00:15:16,783
+o zaman
+
+252
+00:15:16,783 --> 00:15:18,124
+integrasyonu y'ye göre alacağız.
+
+253
+00:15:18,304 --> 00:15:19,304
+Sadece değişen tek şey
+
+254
+00:15:19,304 --> 00:15:21,224
+g y eksi p diyeceğiz burada.
+
+255
+00:15:21,423 --> 00:15:21,923
+Mutlak değer.
+
+256
+00:15:22,144 --> 00:15:22,244
+Evet.
+
+257
+00:15:22,244 --> 00:15:25,744
+Bunun örneği olarak da arkadaşlar
+
+258
+00:15:25,744 --> 00:15:27,024
+şu fonksiyonu alalım.
+
+259
+00:15:27,163 --> 00:15:28,224
+x eşittir p y eksi
+
+260
+00:15:28,224 --> 00:15:29,443
+bir doğrudur.
+
+261
+00:15:30,163 --> 00:15:31,524
+Sıfırla bir aralığında
+
+262
+00:15:31,524 --> 00:15:32,324
+doğru parçası
+
+263
+00:15:32,324 --> 00:15:32,844
+y eksi k'e
+
+264
+00:15:32,844 --> 00:15:34,144
+etrafına dönülmesi elde edilen
+
+265
+00:15:34,144 --> 00:15:36,124
+koninin yanal yüzeyinin alanı.
+
+266
+00:15:36,403 --> 00:15:37,244
+Taban alanı hariç.
+
+267
+00:15:37,344 --> 00:15:37,524
+Yani
+
+268
+00:15:37,524 --> 00:15:38,224
+bize
+
+269
+00:15:38,224 --> 00:15:40,024
+dönen yüze alanı sorgulmuşa
+
+270
+00:15:40,024 --> 00:15:41,364
+konumlu kullanımız isteniliyor.
+
+271
+00:15:42,124 --> 00:15:43,384
+Şimdi arkadaşlar ne diyeceğiz?
+
+272
+00:15:44,044 --> 00:15:45,163
+x eşittir p y eksi
+
+273
+00:15:45,163 --> 00:15:46,764
+y fonksiyonu yazdık.
+
+274
+00:15:47,384 --> 00:15:48,044
+Bakın buraya.
+
+275
+00:15:49,044 --> 00:15:49,903
+1 artı
+
+276
+00:15:49,903 --> 00:15:51,304
+şuranın y'ye göre türevi.
+
+277
+00:15:51,423 --> 00:15:51,644
+Çünkü
+
+278
+00:15:51,644 --> 00:15:53,284
+y eksenine
+
+279
+00:15:53,284 --> 00:15:54,044
+mesela
+
+280
+00:15:54,044 --> 00:15:55,344
+bakın bu disk yöntemiyle
+
+281
+00:15:55,344 --> 00:15:56,684
+disk yöntemiyle
+
+282
+00:15:56,684 --> 00:15:57,684
+pul yöntemiyle
+
+283
+00:15:57,684 --> 00:16:01,064
+eğer y eksenine
+
+284
+00:16:01,064 --> 00:16:02,104
+etrafına dönecekseniz
+
+285
+00:16:02,104 --> 00:16:05,564
+integrasyonu y'ye göre alacaksınız.
+
+286
+00:16:05,663 --> 00:16:06,724
+x'i sene tanıdıacaksınız
+
+287
+00:16:06,724 --> 00:16:08,903
+x'e göre türevi alacaksınız.
+
+288
+00:16:09,524 --> 00:16:10,524
+Kamuk yönteminde ise
+
+289
+00:16:10,524 --> 00:16:11,604
+bunlar tam tersiydi.
+
+290
+00:16:12,604 --> 00:16:13,403
+1 artı
+
+291
+00:16:13,403 --> 00:16:14,903
+dx bölü d y'ye dediğimiz şey
+
+292
+00:16:14,903 --> 00:16:15,744
+arkadaşlar
+
+293
+00:16:15,744 --> 00:16:16,683
+x'i y'ye göre türevi
+
+294
+00:16:16,683 --> 00:16:17,884
+eksi bir tersi doğru mu?
+
+295
+00:16:18,344 --> 00:16:18,824
+Ve bunların da
+
+296
+00:16:18,824 --> 00:16:20,364
+top 1 artı birin karesinin
+
+297
+00:16:20,364 --> 00:16:21,244
+kare kökü kökü
+
+298
+00:16:21,244 --> 00:16:21,704
+kökü gelir.
+
+299
+00:16:22,344 --> 00:16:22,624
+Buradan
+
+300
+00:16:22,624 --> 00:16:23,464
+iki kökü p
+
+301
+00:16:23,464 --> 00:16:24,544
+bir eksi yerine
+
+302
+00:16:24,544 --> 00:16:25,084
+integrerle
+
+303
+00:16:25,084 --> 00:16:26,264
+y eksi y kare bölük
+
+304
+00:16:26,264 --> 00:16:26,824
+x yerine
+
+305
+00:16:26,824 --> 00:16:28,024
+önce bir
+
+306
+00:16:28,024 --> 00:16:29,764
+sonra sıfır yazdığımızda
+
+307
+00:16:29,764 --> 00:16:30,544
+cevap
+
+308
+00:16:30,544 --> 00:16:31,163
+kök 2
+
+309
+00:16:31,163 --> 00:16:32,004
+çarpı p
+
+310
+00:16:32,004 --> 00:16:32,423
+birin
+
+311
+00:16:32,423 --> 00:16:33,384
+kare olacak
+
+312
+00:16:33,384 --> 00:16:34,824
+alan ifade etti için.
+
+313
+00:16:36,204 --> 00:16:37,384
+Yani şekil soru
+
+314
+00:16:37,384 --> 00:16:38,744
+bakın böyle gördüğünüz gibi
+
+315
+00:16:38,744 --> 00:16:40,084
+konu şeklinde bir şekil.
+
+316
+00:16:42,764 --> 00:16:43,044
+Evet.
+
+317
+00:16:43,403 --> 00:16:48,244
+anlaşmayan bir yer var mı arkadaşlar?
+
+318
+00:16:48,244 --> 00:16:48,584
+Evet.
+
+319
+00:16:48,584 --> 00:16:48,824
+Anlaşmayan bir yer var mı arkadaşlar?
+
+320
+00:16:48,824 --> 00:16:49,244
+Evet.
+
+321
+00:16:49,244 --> 00:17:04,244
+Anlaşmayan bir yer var mı arkadaşlar?
+
+322
+00:16:58,035 --> 00:17:23,435
+Evet, sanırım yok. Evet, konu olarak arkadaşlar şu anda daha fazla konu işlemeyeceğiz, bitirdik. Artık zaten haftaya biliyorsunuz sınav var. Yani haftaya çarşamba, perşembe sadece soru çözeceğiz. Sınav da zaten cuma günü arkadaşlar. Sizler de tabii daha önce çözmüş sorunlarla da yine tekrar ederseniz, hazırlık da yaparsanız arkadaşlar çok etkili olacaktır. Haftaya 2 günde sadece soru çözeceğiz, bilginiz olsun.
+
+323
+00:17:23,435 --> 00:17:32,775
+Evet, söyleyeceğiniz bir şey yoksa arkadaşlar. Evet, söyleyeceğiniz bir şey yoksa arkadaşlar, dersi bitireceğiz. Var mı söylemek istediğiniz bir şey? Sorusu olan.
+
+324
+00:17:47,028 --> 00:17:50,028
+Yani sesli soru sormak isteyenler varsa sorabilirler.
+
+325
+00:17:51,408 --> 00:17:57,887
+Hocam bu dx bölü dy türevi nasıl eksi 1 oldu ben onu anlamadım.
+
+326
+00:17:58,488 --> 00:18:05,028
+Şöyle, x eşittir 1 eksi y olduğu için her tarafın y'ye göre türevini aldığımızda...
+
+327
+00:18:06,488 --> 00:18:07,067
+Ha, tamam.
+
+328
+00:18:10,548 --> 00:18:11,268
+Anladım hocam.
+
+329
+00:18:11,627 --> 00:18:13,028
+Y'nin...
+
+330
+00:18:13,028 --> 00:18:15,067
+İspetti değil mi İspet?
+
+331
+00:18:15,567 --> 00:18:16,668
+Evet, evet. Şimdi anladım.
+
+332
+00:18:16,668 --> 00:18:18,367
+y'ye göre türevini alınca falan.
+
+333
+00:18:18,587 --> 00:18:19,147
+Tamam şimdi anladım.
+
+334
+00:18:19,528 --> 00:18:20,847
+Aynen. Roller değişik burada.
+
+335
+00:18:20,968 --> 00:18:24,448
+Çünkü y'ye x'e retranlarına rol olduğun için x'in y'ye göre türevini alacağız.
+
+336
+00:18:24,988 --> 00:18:26,908
+Normalde hep y'nin x'e göre türevini aldık.
+
+337
+00:18:27,428 --> 00:18:28,968
+Burada x'in y'ye göre türevini alıyoruz.
+
+338
+00:18:30,827 --> 00:18:32,168
+Başka sorusu olan var mı?
+
+339
+00:18:37,619 --> 00:18:46,819
+Sanırım yok. O zaman arkadaşlar görüşürüz. Kendinize iyi bakın. Dediğim gibi sorunuz olursa her zaman bana yazabilirsiniz. Haftaya zaten sadece soru çöreceğiz arkadaşlar.
+
+340
+00:18:48,599 --> 00:18:50,939
+Evet, kendinize çok iyi bakın arkadaşlar. Görüşmek üzere.

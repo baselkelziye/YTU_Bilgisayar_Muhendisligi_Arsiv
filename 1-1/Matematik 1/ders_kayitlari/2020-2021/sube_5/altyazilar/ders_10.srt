@@ -1,0 +1,2863 @@
+1
+00:06:38,963 --> 00:06:41,324
+Günaydın arkadaşlar. Sesimi duyabiliyor musunuz?
+
+2
+00:06:58,579 --> 00:07:03,800
+Bazı yankılanmalar yaptığı için arkadaşlar, yanlış anlamayın, sesi kısmak zorundayım.
+
+3
+00:07:04,459 --> 00:07:08,519
+Ama siz sessiz soru sormak istediğiniz zaman her zaman bağlanabilirsiniz.
+
+4
+00:07:09,219 --> 00:07:14,279
+Çünkü birden fazla bazen mikrofon açık kaldı, ses yankılanıyor, ses kötü gelebiliyor.
+
+5
+00:07:14,919 --> 00:07:20,740
+O yüzden sizlerinkini kapattım arkadaşlar ama dediğim gibi soru soracağınız zaman her zaman açabilirim.
+
+6
+00:07:21,060 --> 00:07:21,740
+Bunda sorun yok.
+
+7
+00:07:22,419 --> 00:07:27,120
+Evet, bugünkü konumuz arkadaşlar belirsizlikler ve leputel kuralı ile başlayacağız.
+
+8
+00:07:27,120 --> 00:07:30,419
+Sizin aslında çok öyle uzak olduğunuz bir bilgi değil.
+
+9
+00:07:31,639 --> 00:07:39,279
+Yani eğer sıfır bölü sıfır veya sonsuz bölü sonsuz limiti çıktığınızda karşınıza yani işlemleri yapıyorsunuz.
+
+10
+00:07:39,339 --> 00:07:45,939
+Pay ve paylarının limiti arkadaşlar sıfır veya sonsuz olduğu durumlarda leputel kuralını uyguluyorsunuz.
+
+11
+00:07:46,000 --> 00:07:53,419
+Yani pay ve paydanın birbirinden bağımsız bölümün türevi kuralını uygulamadan arkadaşlar ayrı ayrı türevlerini alarak limit alıyorsunuz.
+
+12
+00:07:53,419 --> 00:07:55,819
+Tabii şöyle olması gerekiyor.
+
+13
+00:07:56,019 --> 00:08:00,500
+Bu belirsizlik türüne kadar yani devam ettiği sürece defalarca alabilirsiniz.
+
+14
+00:08:00,639 --> 00:08:03,399
+Yani belirsizlik bitene kadar bu metodunu devam ettirebilirsiniz.
+
+15
+00:08:04,139 --> 00:08:11,959
+Yalnız pay ve paydanın limiti sadece birbirinden farklı olarak biri sıfır veya biri sonsuz çıktığı zaman o zaman durdurur.
+
+16
+00:08:12,060 --> 00:08:20,219
+Yani pay ve paydanın aynı anda sonsuz veya aynı anda sıfır bölü sıfır olması lazım ki leputel kuralını uygulayabilelim arkadaşlar.
+
+17
+00:08:20,699 --> 00:08:21,120
+Durum bu.
+
+18
+00:08:21,120 --> 00:08:26,319
+Şimdi örnek üzerine zaten direkt görürsek arkadaşlar.
+
+19
+00:08:27,319 --> 00:08:33,940
+Bakın limit sınavlarla ilgili arkadaşlar evet daha sonra bilgi vereceğim size arkadaşlar.
+
+20
+00:08:34,059 --> 00:08:35,019
+Tahihler de belli oldu.
+
+21
+00:08:35,500 --> 00:08:37,519
+Onlarla ilgili bilgi rendirme yapacağım arkadaşlar.
+
+22
+00:08:37,899 --> 00:08:39,679
+Dersimizi bitirelim sonra söyleyeceğim sizlere.
+
+23
+00:08:40,639 --> 00:08:45,220
+3x eksi sinüs x bölü x limiti var arkadaşlar.
+
+24
+00:08:45,220 --> 00:08:54,299
+x sıfıra yaklaşırken gördüğünüz gibi limit noktasını fonksiyonlarda yerine koyduğunuzda pay ve payda bakın sıfır yapıyor.
+
+25
+00:08:54,740 --> 00:08:57,120
+Bu durumda payın türevini alacaksınız.
+
+26
+00:08:57,700 --> 00:08:59,399
+Payın türevi 3 eksi kosmüs x'tir.
+
+27
+00:08:59,480 --> 00:08:59,899
+X'e göre.
+
+28
+00:09:00,939 --> 00:09:02,019
+Paydan türevi ise birdir.
+
+29
+00:09:02,019 --> 00:09:06,679
+Buranın limiti ise 3 eksi kosmüs 0'dan 1 gelir yani cevap 2 gelir.
+
+30
+00:09:06,679 --> 00:09:13,759
+Devam ettiğinizde arkadaşlar limit kara kök 1 artı x eksi 1 bölü x limiti var.
+
+31
+00:09:14,879 --> 00:09:17,939
+x sıfır koyduğunuzda 1 eksi 1 sıfır.
+
+32
+00:09:18,339 --> 00:09:19,099
+Payda da sıfır.
+
+33
+00:09:19,259 --> 00:09:20,500
+0 bölü sıfır belirsizliği var.
+
+34
+00:09:21,000 --> 00:09:24,579
+Payın türevini alırsanız 1 bölü 2 çarpı kara kök 1 artı kök x yapar.
+
+35
+00:09:24,980 --> 00:09:26,339
+Paydan türevi ise 1 yapar.
+
+36
+00:09:26,559 --> 00:09:29,720
+Limit noktasına yerine yazdığınızda cevap 1 bölü 2'dir.
+
+37
+00:09:29,720 --> 00:09:30,360
+Evet.
+
+38
+00:09:31,759 --> 00:09:37,819
+Limit kara kök 1 artı x eksi 1 eksi x bölü 2 bölü x kare limitinde ise arkadaşlar
+
+39
+00:09:37,819 --> 00:09:42,440
+yine pay ve paydanın limiti 0 çıktığı için arkadaşlar ne yapıyoruz?
+
+40
+00:09:42,519 --> 00:09:44,079
+Repüter kuramını uyguluyoruz.
+
+41
+00:09:45,039 --> 00:09:49,039
+Payın türevini alırsak 1 bölü 2 kara kök 1 artı x yapar.
+
+42
+00:09:49,600 --> 00:09:51,919
+x bölü 2'nin türevi ise eksi 1 bölü 2'dir.
+
+43
+00:09:52,500 --> 00:09:54,440
+Eksi 1'in zaten türevi 0'dır.
+
+44
+00:09:55,440 --> 00:09:57,559
+x kare türevi de 2x'tir.
+
+45
+00:09:57,559 --> 00:10:00,480
+Bakın halen belirsizlik devam ediyor mu?
+
+46
+00:10:00,519 --> 00:10:00,679
+Yok.
+
+47
+00:10:00,779 --> 00:10:01,299
+Devam etmiyor.
+
+48
+00:10:01,659 --> 00:10:05,659
+1 bölü 2'ler sadeleşirse yani 1 bölü 4 şeklinde alırsak yukarıya arkadaşlar.
+
+49
+00:10:06,379 --> 00:10:07,240
+Cevap burada.
+
+50
+00:10:07,679 --> 00:10:11,559
+x yerine 0 yazdığımızda eksi 1 bölü 8 çıkacaktır.
+
+51
+00:10:14,700 --> 00:10:16,059
+Bir sonraki soru.
+
+52
+00:10:16,159 --> 00:10:18,659
+x eksi sinüs x bölü x küp limiti var.
+
+53
+00:10:19,259 --> 00:10:22,960
+Burada türevini aldığımızda 1 eksi kosmos x yapar.
+
+54
+00:10:23,079 --> 00:10:24,759
+Payda ise 3x kare.
+
+55
+00:10:24,759 --> 00:10:27,659
+Bakın belirsizlik devam ediyor.
+
+56
+00:10:28,259 --> 00:10:29,799
+x yerine 0 yazdığımızda
+
+57
+00:10:29,799 --> 00:10:32,539
+yani 1 eksi 1 sıfır bölü 0 yapar.
+
+58
+00:10:32,960 --> 00:10:34,679
+Bir kez daha leputar kuramını uyguluyoruz.
+
+59
+00:10:35,079 --> 00:10:36,960
+Kosmos x'in türevi eksi sinüs x'tir.
+
+60
+00:10:37,480 --> 00:10:38,639
+Bir de önünde eksi olduğu için
+
+61
+00:10:38,639 --> 00:10:40,399
+artı sinüs x bölü 6x.
+
+62
+00:10:40,960 --> 00:10:42,419
+Halen devam ediyor belirsizlik.
+
+63
+00:10:42,579 --> 00:10:44,600
+Bir kez daha aldık ve en son cevabı
+
+64
+00:10:44,600 --> 00:10:46,460
+1 bölü 6 bulduk arkadaşlar.
+
+65
+00:10:46,659 --> 00:10:48,860
+Gördüğünüz gibi belirsizliklerine kadar
+
+66
+00:10:48,860 --> 00:10:49,799
+ne yapıyoruz?
+
+67
+00:10:49,799 --> 00:10:51,700
+Leputar kuramını çalıştırıyoruz.
+
+68
+00:10:56,692 --> 00:11:16,392
+Bir diğer soru, 1-kosnüs x bölü x artı x kare limiti. x yerine 0 koyduğumuzda, bakın 0 bölü 0 bölirsizliği yapar. Burada payın türevi arkadaşlar, 1'in türevi zaten 0'dur. Kosnüs x'in türevi ise eksi sinüs x, bir dönümde eksisi var.
+
+69
+00:11:16,392 --> 00:11:41,371
+artı sinüs x yapar. x artı x karenin türevi ise, 1 artı 2x yapar. Buradan paya limit noktasını yazdığınızda, sinüs 0 0'dur. 0 bölü 1, cevap 0 çıkar arkadaşlar. Bu da bir real sayı olduğu için sonuçlu arkadaşlar. Yani burada L'Hospital kuralı devam ettirmiyoruz. Cevap 0'dur deyip geçiyoruz arkadaşlar.
+
+70
+00:11:41,371 --> 00:11:43,371
+geldik sinüs x karenin türevi.
+
+71
+00:11:43,371 --> 00:11:45,371
+geldik sinüs x bölü x kare limiti.
+
+72
+00:11:45,371 --> 00:11:51,371
+geldik sinüs x bölü x kare limitine. Sinüs x'in limiti arkadaşlar, kosnüs x'tir. x karenin limiti ise 2x'tir.
+
+73
+00:11:51,371 --> 00:12:01,372
+kosnüs 0 1, aşağısı 0 1 bölü 0 sonsuzdur arkadaşlar. Bu da bir cevap olarak kabul edebiliyoruz. Yani cevap sonsuzdur.
+
+74
+00:12:01,372 --> 00:12:03,372
+evet.
+
+75
+00:12:03,372 --> 00:12:30,372
+Evet.
+
+76
+00:12:34,772 --> 00:12:36,812
+Evet, sınavlar test olacak arkadaşlar.
+
+77
+00:12:37,192 --> 00:12:37,392
+Aynen.
+
+78
+00:12:42,548 --> 00:12:47,067
+Diğer örnekler ise sonsuz bölü sonsuz limitler arkadaşlar.
+
+79
+00:12:48,607 --> 00:12:51,427
+Sekant x bölü 1 artı tanjant x limiti var.
+
+80
+00:12:52,087 --> 00:12:54,408
+Sekant p bölü 2 sonsuzdur arkadaşlar.
+
+81
+00:12:55,008 --> 00:12:58,028
+Tanjant p bölü 2 de yine sonsuzdur.
+
+82
+00:12:58,128 --> 00:13:01,067
+Çünkü sekant 1 bölü kosmüs x'dir.
+
+83
+00:13:01,567 --> 00:13:03,587
+Sekant da sinüs x bölü x'dir.
+
+84
+00:13:03,587 --> 00:13:06,408
+Yani 0 bölü sonsuz.
+
+85
+00:13:06,668 --> 00:13:11,727
+Daha doğrusu 1 bölü arkadaşlar sıfır sonsuzdur.
+
+86
+00:13:11,727 --> 00:13:14,408
+Yani 1 bölü sonsuz.
+
+87
+00:13:14,768 --> 00:13:18,788
+1 bölü 0 sonsuz olacağı için sekant p bölü 2 sonsuzdur.
+
+88
+00:13:18,827 --> 00:13:19,748
+Aşağısta sonsuz.
+
+89
+00:13:20,248 --> 00:13:23,307
+Şimdi bu durumda pay ve paydanın birbirinden bağımsız türevini alacağız.
+
+90
+00:13:23,427 --> 00:13:25,368
+Sekant x'in türevi hatırlayalım arkadaşlar.
+
+91
+00:13:26,048 --> 00:13:27,788
+Sekant x çarpı tanjant x'dir.
+
+92
+00:13:28,587 --> 00:13:31,327
+1 artı tanjant x'in türevi ise 1'in türevi 0'dır.
+
+93
+00:13:31,748 --> 00:13:34,168
+Tanjant x'in türevi sekant kare x'dir.
+
+94
+00:13:34,727 --> 00:13:39,268
+Bakın sekantları sadeleştirirsek en son tanjant x bölü sekant x gibi bir ifade kalır.
+
+95
+00:13:39,268 --> 00:13:41,668
+O da tanjant sinüs x bölü kosmüs x.
+
+96
+00:13:41,727 --> 00:13:43,927
+Sekant x'i 1 bölü kosmüs x'dir.
+
+97
+00:13:44,128 --> 00:13:47,967
+Paydaki kosmüs x'ler sadeleşirse direkt sinüs x kalır.
+
+98
+00:13:48,268 --> 00:13:53,107
+Limit x pi bölüke yaklaşırken sinüs x de 1'dir arkadaşlar.
+
+99
+00:13:53,268 --> 00:13:53,827
+Bunu biliyorum.
+
+100
+00:13:53,827 --> 00:14:04,067
+Devam edersek limit x sonsuza yaklaşırken ln x bölü 2 kare kök x ifadesine baktığınızda arkadaşlar.
+
+101
+00:14:04,807 --> 00:14:08,768
+Yine pay ve paydanın türevi bakın limiti sonsuz çıkıyor.
+
+102
+00:14:08,868 --> 00:14:12,427
+Sonsuz bölü sonsuz belirsizliği var.
+
+103
+00:14:13,508 --> 00:14:15,288
+ln x'in türevi 1 bölü x'dir.
+
+104
+00:14:15,288 --> 00:14:20,008
+Kök x'in türevi de 1 bölü 2 kök x olduğu için 2 değer sadeleşir.
+
+105
+00:14:20,447 --> 00:14:21,628
+1 bölü kök x kalır.
+
+106
+00:14:22,148 --> 00:14:27,227
+Bunu da arkadaşlar tek bir x'in kuvveti şeklinde yazarsanız 1 bölü kare kök x şeklinde.
+
+107
+00:14:27,768 --> 00:14:29,028
+Bakın cevap 0 olur.
+
+108
+00:14:29,107 --> 00:14:31,908
+Yani 1 bölü sonsuzdan da 0 gelecektir arkadaşlar.
+
+109
+00:14:31,908 --> 00:14:37,967
+Şimdi devam ederseniz bir diğer soru.
+
+110
+00:14:38,447 --> 00:14:43,467
+Limit x sonsuza yaklaşırken e üzeri x bölü x kare limiti var.
+
+111
+00:14:44,947 --> 00:14:52,707
+E üzeri x'in arkadaşlar türevi yani e üzeri x yerine 0 sonsuz koyduğunuzda sonsuz yapar.
+
+112
+00:14:53,187 --> 00:14:54,567
+E üzeri sonsuz sonsuzdur.
+
+113
+00:14:55,927 --> 00:14:57,427
+Aşağı zaten sonsuz.
+
+114
+00:14:57,427 --> 00:15:00,788
+O zaman löpü tak kuralını uygularsak e üzeri x'in türevi e üzeri x.
+
+115
+00:15:01,288 --> 00:15:02,768
+x karelin türevisi 2x.
+
+116
+00:15:03,408 --> 00:15:06,567
+Halen belirsizlik devam ediyor olduğu için bir kez daha türevi aldık.
+
+117
+00:15:06,927 --> 00:15:08,467
+E üzeri x'in türevi e üzeri x.
+
+118
+00:15:09,028 --> 00:15:10,187
+2x'in türevisi 2.
+
+119
+00:15:10,847 --> 00:15:15,187
+Cevap sonsuz bölü 2'den cevap yine sonsuz geliyor arkadaşlar.
+
+120
+00:15:15,508 --> 00:15:16,427
+Bu da bir cevaptır.
+
+121
+00:15:17,148 --> 00:15:18,508
+Yani belirsizlikleri bu şekilde.
+
+122
+00:15:20,268 --> 00:15:21,807
+Şey ne yapmış olduk.
+
+123
+00:15:21,807 --> 00:15:27,788
+Bu şekilde arkadaşlar sonsuz olarak çıkarmış olduk.
+
+124
+00:15:31,251 --> 00:15:32,851
+Evet, sorusudan var mı arkadaşlar?
+
+125
+00:15:45,844 --> 00:15:46,244
+Evet.
+
+126
+00:15:49,491 --> 00:15:57,391
+Şimdi ise arkadaşlar bir diğer belirsizlik türü 0 çarpı sonsuz veya ve sonsuz eksi sonsuz belirsizlikleri arkadaşlar.
+
+127
+00:15:58,271 --> 00:16:06,531
+Bakın bu iki belirsizlikte ya sonsuz bölü sonsuza veya 0 bölü 0'a dönüştürülerek leputar kuram uygulanır.
+
+128
+00:16:06,531 --> 00:16:10,771
+Sistem bu. Yani görür görmez direkt leputar kuramını uygulayamıyoruz arkadaşlar.
+
+129
+00:16:10,771 --> 00:16:31,211
+Limit x sonsuza giderken x çarpı sinüs 1 bölü x ifadesine baktığınız zaman burada 1 bölü x ifadesine arkadaşlar h dersek değişken değişikliği yaparsak x sonsuza giderken h nereye gider arkadaşlar 1 bölüksinden o da 0'a gider.
+
+130
+00:16:31,211 --> 00:16:34,771
+Yani bakın sinüs h bölü h limitine dönüştürmüş olduk direkt olarak.
+
+131
+00:16:34,771 --> 00:16:45,971
+Bu da zaten arkadaşlar 0 bölü 0 belirsizlik olduğu için veya daha önce sandviç teoremini de ispatladığımız gibi bunun cevabı zaten leputar kuramda uygularsanız yine cevap 1 gelecektir.
+
+132
+00:16:49,091 --> 00:16:54,072
+x 0'a sağdan yaklaşırken kara kök x çarpı ln x diyoruz arkadaşlar.
+
+133
+00:16:54,251 --> 00:16:56,851
+Bakın burada ise 0'a sağdan yaklaşıyordur.
+
+134
+00:16:56,951 --> 00:17:00,711
+Sebebi ise logaritmik fonksiyonunu hatırlarsanız tam hükümesi değil arkadaşlar.
+
+135
+00:17:00,711 --> 00:17:01,911
+Pozitif real sayılar idi.
+
+136
+00:17:02,371 --> 00:17:04,551
+O yüzden 0'a ancak sağdan yaklaşabilir.
+
+137
+00:17:04,551 --> 00:17:05,331
+Soldan olmaz.
+
+138
+00:17:06,731 --> 00:17:14,932
+Kara kök x çarpı ln x ifadesinde ln x bölü 1 bölü kök x şeklinde yazarsak arkadaşlar buradan ne gelecek?
+
+139
+00:17:15,632 --> 00:17:17,392
+ln x'in türevi 1 bölü x'dir.
+
+140
+00:17:17,912 --> 00:17:20,071
+1 bölü kök x'in türevi ise arkadaşlar nedir?
+
+141
+00:17:20,311 --> 00:17:23,392
+Eksi 1 bölü 2 çarpı x üzeri 3 bölü 2'dir.
+
+142
+00:17:24,711 --> 00:17:29,471
+Bununla tek bir x'in kuvveti şeklinde yazarsak eksi 2 çarpı kök x yapar.
+
+143
+00:17:29,971 --> 00:17:32,672
+x 0'a yaklaşırken de bunun limiti 0'dır arkadaşlar.
+
+144
+00:17:36,435 --> 00:17:36,935
+Evet.
+
+145
+00:17:45,236 --> 00:17:46,696
+Bir diğer soru.
+
+146
+00:17:47,196 --> 00:17:49,476
+1 bölü x, 1 bölü sinüs x eksi
+
+147
+00:17:49,476 --> 00:17:51,355
+1 bölü x şeklinde bir limit var
+
+148
+00:17:51,355 --> 00:17:51,816
+arkadaşlar.
+
+149
+00:17:54,596 --> 00:17:55,216
+Bakın
+
+150
+00:17:55,216 --> 00:17:57,296
+x sıfıra yaklaşırken 1 bölü
+
+151
+00:17:57,296 --> 00:17:58,116
+sıfır sonsuz.
+
+152
+00:17:59,056 --> 00:18:01,036
+x sıfıra yaklaşırken 1 bölü
+
+153
+00:18:01,036 --> 00:18:03,196
+x de arkadaşlar sonsuz yapar.
+
+154
+00:18:03,256 --> 00:18:05,096
+Yani sonsuz eksi, sonsuz belirsizliği var.
+
+155
+00:18:06,496 --> 00:18:07,236
+Bunu da
+
+156
+00:18:07,236 --> 00:18:08,936
+arkadaşlar şöyle düzeltelim.
+
+157
+00:18:08,936 --> 00:18:10,416
+Mesela payları eşitlersek
+
+158
+00:18:10,416 --> 00:18:12,796
+x eksi sinüs x bölü
+
+159
+00:18:12,796 --> 00:18:15,056
+x çarpı sinüs x yapar.
+
+160
+00:18:15,936 --> 00:18:17,556
+Şimdi buradan payın türevi ne
+
+161
+00:18:17,556 --> 00:18:19,355
+yapar arkadaşlar? 1 eksi
+
+162
+00:18:19,355 --> 00:18:21,096
+sinüs x'in türevi kosmüs x'tir.
+
+163
+00:18:21,636 --> 00:18:23,696
+Aşağı ise x çarpı sinüs x'tir.
+
+164
+00:18:23,776 --> 00:18:25,436
+Burada da çarpım türevi kuralını uygulayacağım.
+
+165
+00:18:26,116 --> 00:18:27,536
+x'in türevi çarpı sinüs x
+
+166
+00:18:27,536 --> 00:18:29,716
+artı x çarpı sinüs x'in
+
+167
+00:18:29,716 --> 00:18:30,856
+türevi de kosmüs x'tir.
+
+168
+00:18:31,896 --> 00:18:32,496
+Buradan
+
+169
+00:18:32,496 --> 00:18:35,476
+bir kez daha löpüter kuralını
+
+170
+00:18:35,476 --> 00:18:37,576
+uygularsak çünkü hala sıfır bölü sıfır
+
+171
+00:18:37,576 --> 00:18:38,696
+belirsizliği devam ediyor.
+
+172
+00:18:39,556 --> 00:18:41,316
+Kosmüs x'in türevi eksi sinüs x'tir.
+
+173
+00:18:41,396 --> 00:18:43,136
+Bir önünde eksisi olduğu için artık sinüs x.
+
+174
+00:18:43,136 --> 00:18:45,416
+sinüs x'in türevi kosmüs x'tir.
+
+175
+00:18:46,036 --> 00:18:48,016
+x çarpı kosmüs x'in türevi ise
+
+176
+00:18:48,016 --> 00:18:49,596
+arkadaşlar çarpım türevi kuralından
+
+177
+00:18:49,596 --> 00:18:51,476
+birinci türevi çarpı ikinci
+
+178
+00:18:51,476 --> 00:18:53,156
+artı birinci çarpı ikinci türevi.
+
+179
+00:18:53,656 --> 00:18:55,676
+Buradan bakın cevap 0 bölü 2'den
+
+180
+00:18:55,676 --> 00:18:56,956
+0 çıkacak.
+
+181
+00:18:59,836 --> 00:19:00,196
+Evet.
+
+182
+00:19:00,836 --> 00:19:02,896
+Böylelikle 0 çarpı sonsuz ve
+
+183
+00:19:02,896 --> 00:19:05,276
+sonsuz eksi sonsuz belirsizliklerinde
+
+184
+00:19:05,276 --> 00:19:07,956
+arkadaşlar burada ifade etmiş olduk.
+
+185
+00:19:07,956 --> 00:19:12,896
+devam edersek arkadaşlar
+
+186
+00:19:12,896 --> 00:19:14,836
+bir diğer belirsizlik türlerinden
+
+187
+00:19:14,836 --> 00:19:15,916
+bahsedelim.
+
+188
+00:19:16,916 --> 00:19:19,416
+1 üzeri sonsuz, 0 üzeri sonsuz ve
+
+189
+00:19:19,416 --> 00:19:21,576
+sonsuz üzeri 0 belirsizlikleri
+
+190
+00:19:21,576 --> 00:19:23,456
+bunlar arkadaşlar bir arada veriyoruz.
+
+191
+00:19:23,576 --> 00:19:25,356
+Çünkü aynı çözüm yoluyla
+
+192
+00:19:25,356 --> 00:19:27,196
+gidildiği için bir arada vermemizin
+
+193
+00:19:27,196 --> 00:19:27,736
+sebebi o.
+
+194
+00:19:28,896 --> 00:19:30,776
+Arkadaşlar burada şöyle bir yol izliyoruz.
+
+195
+00:19:30,776 --> 00:19:32,696
+y eşittir.
+
+196
+00:19:33,756 --> 00:19:35,716
+Yani y'yi eşitliyoruz bize verilen
+
+197
+00:19:35,716 --> 00:19:36,636
+fonksiyonu.
+
+198
+00:19:37,336 --> 00:19:39,196
+O limit alacağımız fonksiyonu.
+
+199
+00:19:39,616 --> 00:19:40,976
+Ve daha sonra eşittir her tarafın
+
+200
+00:19:40,976 --> 00:19:42,156
+doğal log etmesini alıyoruz.
+
+201
+00:19:42,276 --> 00:19:43,416
+Yani ln y eşittir.
+
+202
+00:19:43,896 --> 00:19:46,356
+1 bölü x çarpı ln 1 artı x
+
+203
+00:19:46,356 --> 00:19:47,156
+şeklinde arkadaşlar.
+
+204
+00:19:50,708 --> 00:19:52,888
+devam ettiğimizde
+
+205
+00:19:52,888 --> 00:19:55,148
+eşitliğin her iki tarafının
+
+206
+00:19:55,148 --> 00:19:56,948
+arkadaşlar limitini alıyoruz. Yani limit
+
+207
+00:19:56,948 --> 00:19:59,168
+ln y eşitti. Limit x
+
+208
+00:19:59,168 --> 00:20:01,048
+sıfıra giderken bir bölükü çarpı
+
+209
+00:20:01,048 --> 00:20:02,988
+ln bir artı x.
+
+210
+00:20:03,468 --> 00:20:05,008
+Bakın denklemin sağ tarafına bakın.
+
+211
+00:20:05,108 --> 00:20:07,208
+Şu ifadeye. Sağ tarafına bakalım.
+
+212
+00:20:07,968 --> 00:20:09,288
+Şurada sıfır çarpı sonsuz
+
+213
+00:20:09,288 --> 00:20:10,688
+belirsizliği var arkadaşlar.
+
+214
+00:20:12,548 --> 00:20:13,548
+Daha sonra
+
+215
+00:20:13,548 --> 00:20:14,928
+baktığınız zaman bunu da
+
+216
+00:20:14,928 --> 00:20:16,548
+şöyle yazıyorsunuz arkadaşlar.
+
+217
+00:20:16,548 --> 00:20:18,448
+ln bir artı x
+
+218
+00:20:18,448 --> 00:20:20,067
+bölü x şeklinde yazdığınız zaman
+
+219
+00:20:20,067 --> 00:20:22,348
+sıfır bölü sıfır belirsizliği olmuş olur.
+
+220
+00:20:22,448 --> 00:20:23,388
+Çünkü ln bir sıfır.
+
+221
+00:20:24,288 --> 00:20:26,088
+Şimdi löpüter kuralı uygularsak buraya.
+
+222
+00:20:28,728 --> 00:20:30,788
+Payın türevi bir bölükstir.
+
+223
+00:20:30,948 --> 00:20:32,508
+Çünkü ln bir artı x'in türevi
+
+224
+00:20:32,508 --> 00:20:34,368
+bir bölükstir. Paydan türevi ise
+
+225
+00:20:34,368 --> 00:20:36,388
+birdir. Buradan limit sonucu ne çıkar arkadaşlar?
+
+226
+00:20:36,508 --> 00:20:38,248
+Bir çıkar. O halde biz neyin
+
+227
+00:20:38,248 --> 00:20:39,307
+limitini arıyoruz arkadaşlar?
+
+228
+00:20:39,827 --> 00:20:40,988
+Y'nin limitini arıyoruz.
+
+229
+00:20:41,928 --> 00:20:43,948
+Yani ln'inde bakın bu
+
+230
+00:20:43,948 --> 00:20:46,208
+şöyle bir teorem vardı. Eğer şu
+
+231
+00:20:46,208 --> 00:20:48,268
+fonksiyon sürekli ise
+
+232
+00:20:48,268 --> 00:20:50,288
+sürekli fonksiyonun içine
+
+233
+00:20:50,288 --> 00:20:51,567
+limiti yazabiliyoruz yani
+
+234
+00:20:51,567 --> 00:20:52,948
+bileşke fonksiyonu olarak.
+
+235
+00:20:53,388 --> 00:20:54,448
+Yani doğal logaritmayı
+
+236
+00:20:54,448 --> 00:20:55,768
+limitin dışında yazabiliyoruz.
+
+237
+00:20:55,827 --> 00:20:56,628
+Böyle bir teorem vardı
+
+238
+00:20:56,628 --> 00:20:57,488
+limitte arkadaşlar.
+
+239
+00:20:59,188 --> 00:21:00,268
+Eleni dışarı çıkardığımızda
+
+240
+00:21:01,028 --> 00:21:02,868
+denklerin sağ tarafı
+
+241
+00:21:02,868 --> 00:21:03,708
+zaten sıfırdı.
+
+242
+00:21:04,208 --> 00:21:06,168
+Limit x sıfıra yaklaşırken y
+
+243
+00:21:06,168 --> 00:21:07,768
+logaritma fonksiyonu üzerinden
+
+244
+00:21:07,768 --> 00:21:08,508
+e üzeri bir
+
+245
+00:21:08,508 --> 00:21:09,888
+e üzeri bir de e'dir zaten.
+
+246
+00:21:10,148 --> 00:21:10,548
+O halde
+
+247
+00:21:10,548 --> 00:21:12,388
+bizden istenen
+
+248
+00:21:12,388 --> 00:21:14,268
+sorunun cevabını
+
+249
+00:21:14,268 --> 00:21:14,708
+burada
+
+250
+00:21:14,708 --> 00:21:16,148
+vermiş olduk arkadaşlar.
+
+251
+00:21:18,008 --> 00:21:18,807
+Evet.
+
+252
+00:21:22,451 --> 00:21:24,051
+Buradanlaşmayan bir yer var mı acaba?
+
+253
+00:22:35,412 --> 00:22:52,912
+Evet, bir diğer soru var arkadaşlar. Limit x üzeri 1 bölü x limiti var. Burada ise yine aslında baktığınız zaman 0 üzeri sonsuz belirsizliği var arkadaşlar. Ama bir önceki soruyla aynı yoldan o şekilde ilerleyeceğiz.
+
+254
+00:23:37,683 --> 00:23:43,824
+yine y eşittir x üzeri 1 bölük şeklinde yazarsak arkadaşlar bizden istenen fonksiyonu.
+
+255
+00:23:45,104 --> 00:23:48,683
+Buradan eşittir her tarafının doğal logaritmasını aldığınızda
+
+256
+00:23:49,963 --> 00:23:54,324
+ln y eşittir 1 bölü x çarpı ln x yapar arkadaşlar.
+
+257
+00:23:59,124 --> 00:24:12,183
+Devam ettiğimizde, denklemi sağ tarafındaki 1xx lnx limiti arkadaşlar, 0x sonsuz belirsizliği olduğu için bunu da lnx bölü x şeklinde yazabilme şansına sahibiz.
+
+258
+00:24:17,683 --> 00:24:26,824
+ve L'n'i de limit dışına çıkardığımızda L'n limit x sonsuza yaklaşırken y eşittir. Limit x sonsuza yaklaşırken L'n x bölü x yapar.
+
+259
+00:24:27,384 --> 00:24:37,124
+Buradan arkadaşlar L'n x'in türevi 1 bölü x'dir. Çünkü sonsuz bölü sonsuz belirsiz olduğu için. x'in türevi ise 1'dir.
+
+260
+00:24:39,124 --> 00:24:45,663
+Cevap ne gelecek arkadaşlar burada? Yani L'n sonsuz nedir? Daha doğrusu bir bölü sonsuz nedir? Sıfırdır.
+
+261
+00:24:45,663 --> 00:24:53,644
+Sıfır çıktığı için o zaman limit x sonsuzda giderken y, e üzeri sıfırdan cevap 1 gelecek arkadaşlar.
+
+262
+00:24:55,384 --> 00:25:06,144
+Bakın burada önemli bilgi var. Sıfır üzeri sonsuz arkadaşlar sıfırdır. Bir belirsizlik türü değildir. Bunu da aklınızın bir köşesine yazalım arkadaşlar.
+
+263
+00:25:11,316 --> 00:25:24,056
+Evet, belirsizlik türlerini bu şekilde bitirmiş olduk. Arkadaşlar, belirsizlikle ilgili sorunuz var mı? Belirsizlik türlerini bitirdik şu anda. Başka belirsizlik tipi yani modelimiz yok. Bunlar sadece görmemiz gereken.
+
+264
+00:27:46,675 --> 00:27:50,395
+Evet arkadaşlar şimdi ise yeni bir kısma geçiyoruz.
+
+265
+00:27:50,596 --> 00:27:51,735
+Extremum değerler.
+
+266
+00:27:52,635 --> 00:27:54,195
+Şu an haftalık içeriye baktım.
+
+267
+00:27:54,336 --> 00:27:58,596
+Hani hangi sırada gitmesi gerekiyor ona göre devam etmek için arkadaşlar.
+
+268
+00:28:00,076 --> 00:28:00,235
+Evet.
+
+269
+00:28:02,615 --> 00:28:04,735
+Şimdi TREV'in uygulamaları diyoruz arkadaşlar.
+
+270
+00:28:05,655 --> 00:28:07,655
+Yani buradaki söyleyeceğimiz şey şu.
+
+271
+00:28:07,655 --> 00:28:09,076
+Fonksiyon ekstrem noktaları.
+
+272
+00:28:09,455 --> 00:28:14,995
+Fonksiyon ekstrem noktaları vasıtasıyla fonksiyon hakkında arkadaşlar bilgi sahibi olacağız.
+
+273
+00:28:15,115 --> 00:28:15,935
+Bunları konuşacağız.
+
+274
+00:28:16,675 --> 00:28:25,455
+Tabi bu tanım kümesinin tamamında konuşulabilir veya tanım kümesinin belli bir alt aralığında ve alt kümesinde de konuşulabilir.
+
+275
+00:28:25,975 --> 00:28:27,295
+Ona göre isim değişebiliyor.
+
+276
+00:28:28,155 --> 00:28:35,275
+Mesela arkadaşlar fonksiyonun eğer belli bir alt tanım kümesinin belli bir alt kümesinde veya aralık olabilir.
+
+277
+00:28:35,275 --> 00:28:44,795
+Alt aralığında fonksiyonun alabileceği en büyük değere biz yerel maksimum değer alabileceği en küçük değere de yerel minimum değer diyoruz.
+
+278
+00:28:44,795 --> 00:28:54,655
+Tanım kümesinin tamamında bu geçerliyse arkadaşlar yani tanım kümesinin tamamında F'in alacağı bir yani bütün değerlerden büyükse Fc değeri misal.
+
+279
+00:28:55,155 --> 00:28:57,836
+Bu Fc değerine biricelik biz mutlak maksimum diyoruz.
+
+280
+00:28:57,836 --> 00:29:05,915
+Eğer bu Fc değeri tanım kümesinin tamamında hepsinin tüm Fx değerlerinden küçükse de biz buna da mutlak minimum değer diyoruz.
+
+281
+00:29:06,035 --> 00:29:09,395
+Aslında ekstrem değerlerin arkadaşlar özeti bu.
+
+282
+00:29:09,395 --> 00:29:26,935
+Şimdi arkadaşlar bazı basit elementer örnekler üzerinde durursak y eşittir x kare fonksiyonunun aralığa göre maksimum ve minimum değerlerinin değişebileceğini buradan konuşalım.
+
+283
+00:29:27,596 --> 00:29:34,455
+Y eşittir x kare fonksiyonunun aslında tanım kümesi arkadaşlar eksi sonsuz artı sonsuz aralığıdır normal şartlarda.
+
+284
+00:29:34,455 --> 00:29:39,775
+Eğer biz bu aralık üzerine düşünüyorsak tanım kümesinin o zaman mutlak maksimum değer yoktur arkadaşlar.
+
+285
+00:29:40,475 --> 00:29:43,056
+Bakın zaten A şıkkında şekli de burada.
+
+286
+00:29:43,775 --> 00:29:46,235
+Çünkü bilemiyoruz sonsuza doğru gidiyor.
+
+287
+00:29:46,775 --> 00:29:49,375
+Ama mutlak minimum değer vardır o da sıfır noktasıdır.
+
+288
+00:29:49,816 --> 00:29:52,035
+Sıfır noktasında F sıfır eşittir sıfırdır.
+
+289
+00:29:52,495 --> 00:29:57,536
+Tüm Fx'in alabileceği değerlerden küçük olduğu için biz buna mutlak maksimum değer diyoruz arkadaşlar.
+
+290
+00:29:57,536 --> 00:30:06,855
+Geldik B şıkkı için eğer karalımız 0,2 ise 0 ve 2 den kapalı ise bakın F sıfır eşittir sıfır olduğundan.
+
+291
+00:30:06,955 --> 00:30:13,615
+Diyoruz ki arkadaşlar yani biz buna alabileceği minimum değerdir arkadaşlar.
+
+292
+00:30:13,955 --> 00:30:15,355
+Şöyle göstereyim ben size.
+
+293
+00:30:17,336 --> 00:30:20,836
+Aslında şu B şıkkı örneği için konuşuyorum arkadaşlar.
+
+294
+00:30:20,836 --> 00:30:25,596
+B şıkkı örneğinin de grafiği zaten hemen şurada.
+
+295
+00:30:26,275 --> 00:30:30,475
+Yani biz şu grafik ve B şıkkı için şu anda konuşuyoruz.
+
+296
+00:30:31,455 --> 00:30:36,275
+Bakın bu fonksiyonun grafiği 0,2 aralığında olacak şekilde seçtik.
+
+297
+00:30:37,415 --> 00:30:41,115
+F sıfır eşittir sıfırda burası mutlak minimum değerdir.
+
+298
+00:30:41,695 --> 00:30:43,895
+Şurası da arkadaşlar mutlak maksimum değerdir.
+
+299
+00:30:44,596 --> 00:30:48,715
+Yani aralığa göre değişebileceğini buradan söylüyoruz.
+
+300
+00:30:48,715 --> 00:30:54,715
+Mesela C şıkkı için eğer fonksiyonun tanım kümesi olarak 0,2 alırsanız
+
+301
+00:30:55,235 --> 00:30:56,935
+olan fonksiyonun grafiği bu şekilde olacak.
+
+302
+00:30:57,035 --> 00:30:58,775
+Sıfırdan açık 2 den kapalı.
+
+303
+00:30:59,275 --> 00:31:00,815
+Bakın mutlak minimum değer yoktur.
+
+304
+00:31:00,915 --> 00:31:02,955
+Çünkü açık burası tam ne olduğunu bilmiyoruz.
+
+305
+00:31:03,035 --> 00:31:05,135
+Ama mutlak maksimum değer vardı burada kapalı.
+
+306
+00:31:05,695 --> 00:31:10,576
+Yani bu örnekte de C şıkkında ise mutlak maksimum değer arkadaşlar 2'dir.
+
+307
+00:31:13,455 --> 00:31:15,715
+D şıkkı için konuşalım arkadaşlar.
+
+308
+00:31:15,715 --> 00:31:17,515
+Tabii ekranda silelim mi?
+
+309
+00:31:18,715 --> 00:31:21,295
+Zoom'da böyle bir tarz sorunlar olabiliyor.
+
+310
+00:31:24,715 --> 00:31:25,195
+Evet.
+
+311
+00:31:36,211 --> 00:31:43,892
+D şıkkında ise 0,2 açık aralığı. Bakın tanı kümesi 0,2 açık aralığı. Tanı kümesi bu.
+
+312
+00:31:46,011 --> 00:31:51,491
+Bu durumda arkadaşlar ne yapıyoruz? Biz 0'dan ve 2'den de açık gördüğünüz gibi.
+
+313
+00:31:53,392 --> 00:32:00,991
+Bu örnekte ise fonksiyonun y eşit x kare ne mutlak maksimum ne mutlak minimum değeri vardır. Doğru mu? Evet.
+
+314
+00:32:04,884 --> 00:32:08,503
+Evet. Çünkü kitle haklında açık olduğu için arkadaşlar.
+
+315
+00:32:19,571 --> 00:32:24,191
+Şimdi devam edersek yani bunun özeti olarak şunu söyleyebiliriz arkadaşlar.
+
+316
+00:32:24,191 --> 00:32:33,391
+Bir fonksiyonun mutlak maksimum, mutlak minimum değerleri fonksiyonun tanım kümesinin seçilişine göre değişebilir.
+
+317
+00:32:33,671 --> 00:32:36,871
+Aslında bu örneği vermekle onu göstermek istedik arkadaşlar.
+
+318
+00:32:39,491 --> 00:32:42,371
+Evet gelelim ekstremum değer teoremini arkadaşlar.
+
+319
+00:32:42,611 --> 00:32:43,991
+Ekstremum değer teoremi de şu.
+
+320
+00:32:43,991 --> 00:32:52,411
+Bir fonksiyon değeri yani fx değeri onun mutlak minimum değeri ile mutlak maksimum değeri arasındadır.
+
+321
+00:32:52,551 --> 00:32:54,571
+Yani bakın teoremin şunu söylüyor.
+
+322
+00:32:55,431 --> 00:33:10,831
+Eğer küçük m arkadaşlar mutlak minimum ise büyük m de mutlak maksimum değeri ise fonksiyonun kendisi yani fx değeri bunun mutlak maksimum ve mutlak minimum değeri arasında yer alır arkadaşlar.
+
+323
+00:33:13,991 --> 00:33:41,991
+Müzik
+
+324
+00:33:49,715 --> 00:33:59,875
+Şimdi ise arkadaşlar yine mutlak maksimum, mutlak yerel maksimum, yerel maksimum değerlerini daha iyi anlayabilmek için şöyle bir grafik veriyorum arkadaşlar.
+
+325
+00:34:00,975 --> 00:34:03,895
+Bu baya önemli ve her şeyi özetleyen yine bir grafik.
+
+326
+00:34:05,535 --> 00:34:10,895
+Arkadaşlar eğer bakın şunlar tepe şeklinde işaretli.
+
+327
+00:34:11,476 --> 00:34:12,855
+Bakın bunlar tepe şeklinde.
+
+328
+00:34:13,915 --> 00:34:15,615
+Şunlar çukur şeklinde gördüğünüz gibi.
+
+329
+00:34:15,615 --> 00:34:22,775
+Tamam mı? Tepe şeklinde olanlarda arkadaşlar maksimum değerler aranır.
+
+330
+00:34:22,955 --> 00:34:28,155
+Yani çünkü fonksiyon bakanı artmış, azalmış, artmış, azalmış, en yükseğe çıkmış.
+
+331
+00:34:28,596 --> 00:34:30,155
+Burada ise azalmış, tekrar artmış.
+
+332
+00:34:30,235 --> 00:34:35,556
+Yani şu ikisi zaten arkadaşlar nedir? Mutlak maksimum değerdir. Doğru mu?
+
+333
+00:34:38,556 --> 00:34:39,675
+Şimdi renk değiştirelim.
+
+334
+00:34:41,755 --> 00:34:45,516
+Şunlar ise arkadaşlar minimum değerlerdir.
+
+335
+00:34:45,615 --> 00:34:50,056
+Çünkü burada fonksiyon azalanlıktan artanlığa geçiş yapmış.
+
+336
+00:34:50,675 --> 00:34:52,815
+Burada ise yine azalanlıktan artanlığa geçiş yapmış.
+
+337
+00:34:52,955 --> 00:34:53,355
+Burada öyle.
+
+338
+00:34:54,335 --> 00:35:00,735
+Bu maviler arasında arkadaşlar, maviler arasında en büyük olanı yani yerel, bunların hepsi aslında yerel maksimumdur.
+
+339
+00:35:01,056 --> 00:35:02,596
+Bu maviler her biri yerel maksimumdur.
+
+340
+00:35:03,036 --> 00:35:05,615
+Yerel maksimumların en büyüğüne biz mutlak maksimum diyoruz.
+
+341
+00:35:05,615 --> 00:35:10,215
+Yani şu aynı zamanda arkadaşlar FX'in en büyük değeri olduğu için mutlak maksimum oluyor.
+
+342
+00:35:11,456 --> 00:35:12,655
+Geldik minimum arasına.
+
+343
+00:35:12,755 --> 00:35:21,435
+Minimumlar arasında da arkadaşlar en küçük olanla da, bunlar her biri yerel minimum, en küçük olanla da mutlak minimum değer diyoruz arkadaşlar.
+
+344
+00:35:21,435 --> 00:35:22,435
+Tamam mı?
+
+345
+00:35:22,496 --> 00:35:45,455
+Bu işin mantığı bu.
+
+346
+00:35:34,963 --> 00:35:44,703
+Şimdi, evet, burada az önce söylediğim ifade var. Şimdi bir de arkadaşlar, yerel ekstrem noktalarını bulabilmek için 1. türev testini hakkında konuşalım.
+
+347
+00:35:45,463 --> 00:35:58,443
+Buradaki mevzuda şu arkadaşlar, fonksiyonun 1. türev ile 0 eşitliyorsunuz. 1. türevi 0 yapan veya 1. türev ile tanımsız yapan değerlere biz kritik noktalar diyoruz arkadaşlar. Bu C noktalar.
+
+348
+00:35:59,663 --> 00:36:01,583
+Kritik noktalar diyoruz.
+
+349
+00:36:05,844 --> 00:36:30,884
+Bunun akabinde arkadaşlar Rol teoremini verelim. Rol teoremi şunu söylüyor. fx fonksiyonu a,b kapalı aralığında sürekli a,b açık aralığında diferansiyelenebilir ve fa eşittir fb ise f üstü c eşittir 0 olacak şekilde bir en az a,b açık aralığına ait bir c sayısı vardır diyoruz arkadaşlar.
+
+350
+00:36:35,380 --> 00:36:35,880
+Evet.
+
+351
+00:36:37,559 --> 00:36:39,440
+Şimdi burada arkadaşlar
+
+352
+00:36:39,440 --> 00:36:41,619
+şöyle bir soru üzerinde
+
+353
+00:36:41,619 --> 00:36:43,800
+konuşalım. Verilen bir fonksiyon
+
+354
+00:36:43,800 --> 00:36:45,619
+var. O fonksiyonun
+
+355
+00:36:45,619 --> 00:36:47,160
+x1,1 aralığında
+
+356
+00:36:47,160 --> 00:36:49,680
+zor teorema uygulanabilir mi? Uygulanabilir
+
+357
+00:36:49,680 --> 00:36:51,740
+ise c sayısını bulunur şeklinde
+
+358
+00:36:51,740 --> 00:36:53,900
+bir soru. Bu tarz sorularda
+
+359
+00:36:53,900 --> 00:36:55,840
+zaman zaman geçmişlere baktığımızda
+
+360
+00:36:55,840 --> 00:36:57,519
+karşımıza gelmiş soru
+
+361
+00:36:57,519 --> 00:36:58,820
+tiplerinden biridir arkadaşlar.
+
+362
+00:36:59,480 --> 00:37:01,700
+Neye bakacaksınız? x kare x1 fonksiyonu
+
+363
+00:37:01,700 --> 00:37:03,559
+zaten polinom fonksiyonu olduğu için arkadaşlar
+
+364
+00:37:03,559 --> 00:37:06,039
+tüm real sayılarda süreklidir
+
+365
+00:37:06,039 --> 00:37:07,860
+ve türevi de vardır. Bunu söylemek
+
+366
+00:37:07,860 --> 00:37:10,160
+lazım. Bir de
+
+367
+00:37:10,160 --> 00:37:12,460
+aranın uç noktalarında
+
+368
+00:37:12,460 --> 00:37:14,059
+fonksiyonun aldığı değerlerin
+
+369
+00:37:14,059 --> 00:37:16,019
+birbirine eşit olması lazım. Yani f-1
+
+370
+00:37:16,019 --> 00:37:17,300
+eşittir f1 doğru mu?
+
+371
+00:37:17,860 --> 00:37:18,940
+Onlar da zaten sıfırdır.
+
+372
+00:37:20,900 --> 00:37:21,940
+Fonksiyonun türevi
+
+373
+00:37:21,940 --> 00:37:24,180
+f üstü x eşittir. 2x'tir.
+
+374
+00:37:25,039 --> 00:37:26,360
+Bunu sıfıra eşitlediğiniz
+
+375
+00:37:26,360 --> 00:37:28,059
+zaman x değerine çıkar karşınıza.
+
+376
+00:37:28,140 --> 00:37:30,340
+Sıfır çıkar. Bu da eksi 1,1
+
+377
+00:37:30,340 --> 00:37:31,400
+aralığına
+
+378
+00:37:31,400 --> 00:37:34,160
+dahil olduğu için demek ki
+
+379
+00:37:34,160 --> 00:37:35,860
+rol teoremi uygulanabilir.
+
+380
+00:37:38,019 --> 00:37:39,340
+Bir diğer teorem
+
+381
+00:37:39,340 --> 00:37:40,660
+ortalama değer teoremi
+
+382
+00:37:40,660 --> 00:37:41,800
+önemli teoremlerden biri.
+
+383
+00:37:42,340 --> 00:37:43,960
+Bunda ise arkadaşlar şöyle
+
+384
+00:37:43,960 --> 00:37:46,059
+f fonksiyonu a virgül b
+
+385
+00:37:46,059 --> 00:37:47,500
+kapalı aralığında sürekli
+
+386
+00:37:47,880 --> 00:37:49,220
+a virgül b açık aralığında
+
+387
+00:37:49,220 --> 00:37:50,099
+türevi dönebilir ise
+
+388
+00:37:50,099 --> 00:37:51,840
+f üstü c eşittir
+
+389
+00:37:51,840 --> 00:37:53,760
+fb eksi f a bölü b eksi a
+
+390
+00:37:53,760 --> 00:37:55,920
+şeklinde bu şartı sağlayan
+
+391
+00:37:55,920 --> 00:38:00,079
+en az bir tane
+
+392
+00:38:00,079 --> 00:38:02,340
+a virgül b açık aralığına ait
+
+393
+00:38:02,340 --> 00:38:03,680
+c sayısı vardır
+
+394
+00:38:03,680 --> 00:38:04,480
+diyoruz arkadaşlar.
+
+395
+00:38:10,099 --> 00:38:11,460
+Devam edersek
+
+396
+00:38:11,460 --> 00:38:13,180
+ortalama değer teoreminin
+
+397
+00:38:13,180 --> 00:38:13,599
+arkadaşlar
+
+398
+00:38:13,599 --> 00:38:15,200
+iki tane sonuç var.
+
+399
+00:38:15,440 --> 00:38:16,559
+Bunları biraz bahsedelim.
+
+400
+00:38:18,960 --> 00:38:20,340
+Ortalama değer teoreminin
+
+401
+00:38:20,340 --> 00:38:20,760
+arkadaşlar
+
+402
+00:38:20,760 --> 00:38:22,559
+birinci sonucu şu
+
+403
+00:38:22,559 --> 00:38:24,099
+eğer bir
+
+404
+00:38:24,099 --> 00:38:25,720
+a v aralığının
+
+405
+00:38:25,720 --> 00:38:26,900
+her x noktasında
+
+406
+00:38:26,900 --> 00:38:28,240
+f üstü x eşittir
+
+407
+00:38:28,240 --> 00:38:28,780
+sıfır ise
+
+408
+00:38:28,780 --> 00:38:31,480
+c bir sabit olmak üzere
+
+409
+00:38:31,480 --> 00:38:33,260
+yani fonksiyon türevi
+
+410
+00:38:33,260 --> 00:38:34,059
+sıfırsa arkadaşlar
+
+411
+00:38:34,059 --> 00:38:34,960
+fonksiyonun kendisi
+
+412
+00:38:34,960 --> 00:38:35,680
+sabittir.
+
+413
+00:38:36,480 --> 00:38:37,320
+Bunu söyleyebiliriz.
+
+414
+00:38:38,039 --> 00:38:39,059
+Bu sonuç 2 de yine
+
+415
+00:38:39,059 --> 00:38:39,880
+ilerleyen kısmında
+
+416
+00:38:39,880 --> 00:38:40,920
+integralde aslında
+
+417
+00:38:40,920 --> 00:38:41,940
+biz buraya
+
+418
+00:38:41,940 --> 00:38:43,320
+referans göstereceğiz
+
+419
+00:38:43,320 --> 00:38:43,740
+arkadaşlar.
+
+420
+00:38:44,140 --> 00:38:45,220
+Sonuç 2 ise şunu söylüyor.
+
+421
+00:38:45,760 --> 00:38:46,180
+Eğer bir
+
+422
+00:38:46,180 --> 00:38:47,400
+a virgül b aralığının
+
+423
+00:38:47,400 --> 00:38:48,420
+her x noktasında
+
+424
+00:38:48,420 --> 00:38:49,460
+f üstü x eşittir
+
+425
+00:38:49,460 --> 00:38:50,240
+g üstü x ise
+
+426
+00:38:50,240 --> 00:38:51,619
+her x'e remanır
+
+427
+00:38:51,619 --> 00:38:52,200
+a b için
+
+428
+00:38:52,200 --> 00:38:53,039
+f x eşittir
+
+429
+00:38:53,039 --> 00:38:53,940
+g x artı c
+
+430
+00:38:53,940 --> 00:38:54,559
+olacak şekilde
+
+431
+00:38:54,559 --> 00:38:55,760
+bir c sabiti vardır.
+
+432
+00:38:55,900 --> 00:38:56,079
+Yani
+
+433
+00:38:56,079 --> 00:38:57,740
+f eksi g farkı
+
+434
+00:38:57,740 --> 00:38:58,680
+a b üzerinde
+
+435
+00:38:58,680 --> 00:39:00,200
+bir sabit fonksiyon
+
+436
+00:39:00,200 --> 00:39:00,720
+duruyoruz.
+
+437
+00:39:00,900 --> 00:39:01,079
+Tamam.
+
+438
+00:39:10,931 --> 00:39:11,431
+Evet.
+
+439
+00:39:24,532 --> 00:39:36,852
+x'i 1,2 aralığında arkadaşlar, fx eşittir x küf fonksiyonu, bunun ortalama değerli teoremi uygulanabilir mi diye. Uygulanabilir ise söz konusu c sayısını bulalım diyoruz arkadaşlar.
+
+440
+00:39:37,771 --> 00:39:45,292
+Şimdi fonksiyonun arkadaşlar zaten yine polinom fonksiyonu olduğu için tüm real sayılarda süreklidir, türevi de vardır.
+
+441
+00:39:45,292 --> 00:39:54,472
+O yüzden diyoruz ki f'i c eşittir fb-fa bölü b-a denklerini sağlayan bir c sayısı bulacağız.
+
+442
+00:39:54,532 --> 00:40:08,052
+Arkadaşlar fonksiyonun türevi nedir? 3x kare nedir? 3x kare nedir? x yana c yazdığımızda 3c kare eşittir fb-fa yani f2-f1 bölü ve 2-eksi eksi birden o da 3 yapar.
+
+443
+00:40:08,052 --> 00:40:17,372
+Yani 3c kare eşittir 9 bölüşte c eşittir artı eksi birdir. Bakın bunlar içerisinde eksi 1,2 açık aralığına dahil olanı tercih edeceğiz.
+
+444
+00:40:17,512 --> 00:40:20,771
+Yani sadece 1'i alacağız arkadaşlar. c eşittir 1.
+
+445
+00:40:37,844 --> 00:40:44,344
+Artan o zaman fonksiyonları arkadaşlar, buradan aslında daha önce birazcık bahsetmiştik aslında arkadaşlar.
+
+446
+00:40:48,692 --> 00:40:59,831
+Yani fonksiyonun birinci türevinin sıfır olduğu yerlerde, sıfırdan büyük olduğu yerlerde fonksiyon artan, sıfırdan küçük olduğu yerlerde ise azalandır arkadaşlar.
+
+447
+00:41:15,092 --> 00:41:24,291
+devam ettiğimizde bir aralıkta artan veya azalan bir fonksiyonla monoton fonksiyonu da diyoruz aynı zamanda arkadaşlar.
+
+448
+00:41:25,711 --> 00:41:31,311
+Koşu ortalama, yani koşu teoremi veya genelleştirmiş ortalama değer teoremi ifademiz var arkadaşlar.
+
+449
+00:41:31,311 --> 00:41:34,632
+Bunu konuşalım. Biraz fazla ileri gittik.
+
+450
+00:41:45,811 --> 00:41:46,351
+Çok pardon.
+
+451
+00:41:55,795 --> 00:41:59,355
+Bakın, genelleştirmiş ortlama değer veya koşit öremi dedik arkadaşlar.
+
+452
+00:42:00,115 --> 00:42:15,576
+Burada ise fx ve gx a, b kapalı aralığında sürekli olmak üzere, a, b açık aralığında da diferans edilebilirse, g, a farklı g, b olması durumunda arkadaşlar.
+
+453
+00:42:15,576 --> 00:42:29,755
+işte fg eksi f a bölü gb eksi g a eşittir, f üstü c eşittir, f üstü c bölü g üstü c olacak şekilde en az bir tane arkadaşlar c sayısı vardır.
+
+454
+00:42:30,495 --> 00:42:37,415
+Bu da genelleştirilmiş ortlama değer veya koşit öremi olarak adlandırıyoruz arkadaşlar.
+
+455
+00:42:50,900 --> 00:42:54,340
+Yerel ekstremim değerler için arkadaşlar birinci türevi test ediyoruz.
+
+456
+00:42:55,300 --> 00:43:04,500
+Sürekli bir f fonksiyonunun kritik noktasının c olduğunu ve c'yi içeren bir aralığın her noktasında f türevlerinin emin olduğunu bahsedelim.
+
+457
+00:43:04,740 --> 00:43:15,500
+Buralarda soldan sağa ilerlerken arkadaşlar f üstü c'den yani negatiften pozitif ile geçiyorsa bunda bir yerel minimum vardır diyoruz arkadaşlar.
+
+458
+00:43:15,500 --> 00:43:21,360
+f üstünün işareti pozitif ile negatif ile değişiyorsa da yerel maksimum değeri vardır.
+
+459
+00:43:21,840 --> 00:43:24,860
+İşaret değiştirmiyorsa arkadaşlar herhangi bir şey söyleyemeyiz.
+
+460
+00:43:24,940 --> 00:43:27,599
+Yani bir ekstrem noktası yoktur diyoruz.
+
+461
+00:43:27,660 --> 00:43:30,440
+Bunu örnek üzerinde çok daha rahat göreceğiz arkadaşlar.
+
+462
+00:43:32,760 --> 00:43:43,780
+Şimdi x kübün arkadaşlar türevi 3x karedir ve sıfır eşitlediğiniz zaman iki katlı kökü olur arkadaşlar.
+
+463
+00:43:43,780 --> 00:43:48,720
+Yani fonksiyonun birinci türevi 2 katlı kökü var doğru mu?
+
+464
+00:43:49,599 --> 00:43:54,820
+Yani x1 eşittir 0 ve x2 eşittir 0 gibi 2 farklı kökü var arkadaşlar.
+
+465
+00:43:55,039 --> 00:43:57,000
+Şimdi bu durumda şöyle bir şey yapıyoruz.
+
+466
+00:43:57,140 --> 00:44:00,360
+Diyoruz ki işaret tablosu yapıyoruz arkadaşlar.
+
+467
+00:44:01,300 --> 00:44:04,820
+Denklemin yani bu işaret tablosunu çizerken en sağdan başlıyoruz.
+
+468
+00:44:04,920 --> 00:44:06,800
+Öncelikle tabii kökü yerleştiriyoruz.
+
+469
+00:44:07,300 --> 00:44:08,780
+Sıfırı yerleştirdik çift katlı kök.
+
+470
+00:44:09,640 --> 00:44:12,539
+Sağdan başladığımız zaman 3x kredimin işareti nedir arkadaşlar?
+
+471
+00:44:12,539 --> 00:44:13,180
+Artıdır.
+
+472
+00:44:14,160 --> 00:44:16,440
+Çift katlı kökü olduğu için işaret değiştirme de artı.
+
+473
+00:44:16,900 --> 00:44:21,160
+Fonksiyon yani türevin işareti pozitif olduğu için artan artan.
+
+474
+00:44:21,700 --> 00:44:23,000
+Böyle bu durumda ne diyoruz arkadaşlar?
+
+475
+00:44:23,639 --> 00:44:28,740
+Fonksiyon bu aralığın tamamında artan olduğu için herhangi bir ekstrem noktası yoktur arkadaşlar.
+
+476
+00:44:29,019 --> 00:44:30,440
+Bunu söylüyoruz.
+
+477
+00:44:30,440 --> 00:44:30,820
+Evet.
+
+478
+00:44:33,760 --> 00:44:35,099
+Bir diğer soru.
+
+479
+00:44:35,340 --> 00:44:36,300
+Gx eşittir.
+
+480
+00:44:36,380 --> 00:44:38,099
+1 bölü 3 x küp.
+
+481
+00:44:38,760 --> 00:44:40,680
+Eksi 3 bölü 2 x kare.
+
+482
+00:44:41,180 --> 00:44:45,640
+Eksi 10x artı 7 gibi bir arkadaşlar bir fonksiyon var.
+
+483
+00:44:46,140 --> 00:44:48,840
+Bunun ekstrem noktası olup olmadığını konuşacağız.
+
+484
+00:44:48,840 --> 00:44:52,559
+Fonksiyonun birinci türevi x kare eksi 3 x.
+
+485
+00:44:53,159 --> 00:44:54,440
+Eksi 10 eşittir sıfırdır.
+
+486
+00:44:55,099 --> 00:44:56,300
+X'in türevi arkadaşlar.
+
+487
+00:44:56,400 --> 00:45:00,220
+Yani bunu sıfır eşitlediğiniz zaman birinci kökü yani bir kökü eksi 2'dir.
+
+488
+00:45:00,300 --> 00:45:01,700
+Diğer kökü de 5'dir arkadaşlar.
+
+489
+00:45:02,480 --> 00:45:05,099
+Eksi 2 ve 5'i de bu tabloya yerleştirdiğiniz zaman.
+
+490
+00:45:05,099 --> 00:45:08,980
+Eksi artı sonuçluğu önce yazıyorsunuz.
+
+491
+00:45:09,099 --> 00:45:11,059
+En büyük geniş tanım adına yazıyorsunuz.
+
+492
+00:45:11,559 --> 00:45:12,780
+Eksi 2 ve 5 köküdür.
+
+493
+00:45:13,300 --> 00:45:16,180
+Böyle işaret tablosunda arkadaşlar ne yapıyorsunuz?
+
+494
+00:45:16,200 --> 00:45:17,860
+Şöyle sıfır işareti koyuyorsunuz.
+
+495
+00:45:18,000 --> 00:45:19,420
+Hani kökü olduğunu belirtmek için.
+
+496
+00:45:20,380 --> 00:45:22,280
+Buradan devam ettiğinizde arkadaşlar.
+
+497
+00:45:23,820 --> 00:45:25,079
+Şöyle bir yol var.
+
+498
+00:45:25,619 --> 00:45:31,940
+Ya en sağdan başlayıp x kare fonksiyonun türevini türevini x kare işaret nedir?
+
+499
+00:45:32,059 --> 00:45:32,420
+Artıdır.
+
+500
+00:45:33,019 --> 00:45:33,860
+Artıyla başladık.
+
+501
+00:45:33,860 --> 00:45:35,200
+Kökü olduğu için işaret değiştirdi.
+
+502
+00:45:35,300 --> 00:45:35,539
+Eksi.
+
+503
+00:45:36,240 --> 00:45:37,860
+Eksi 2 kökü olduğu için işaret değiştirdi.
+
+504
+00:45:37,940 --> 00:45:38,360
+Artı.
+
+505
+00:45:38,539 --> 00:45:40,500
+Fonksiyon artanlıktan azalanına geçiş yaptığı için.
+
+506
+00:45:40,599 --> 00:45:41,220
+Yerel maksimum.
+
+507
+00:45:41,780 --> 00:45:43,960
+Azalanlıktan artanına geçiş yaptığı için de arkadaşlar.
+
+508
+00:45:44,460 --> 00:45:46,720
+Bir yerel minimum noktadır diyoruz.
+
+509
+00:45:46,800 --> 00:45:47,619
+Eksi 2 ve 5'e.
+
+510
+00:45:48,240 --> 00:45:49,800
+Daha doğrusu 5'e yerel minimum nokta diyoruz.
+
+511
+00:45:49,800 --> 00:45:52,480
+Bunların fonksiyonunda aldığı değer de arkadaşlar.
+
+512
+00:45:52,599 --> 00:45:56,599
+Yerel minimum değer ve yerel maksimum değer olarak da adlandırıyoruz.
+
+513
+00:45:58,860 --> 00:46:02,400
+Her zaman bazen kafa karışıklığı olabilir arkadaşlar.
+
+514
+00:46:02,579 --> 00:46:03,539
+Şöyle bir şey yapabilirsiniz.
+
+515
+00:46:03,860 --> 00:46:06,220
+Mesela fonksiyon türevinin işaretini inceliyorsak ya.
+
+516
+00:46:06,820 --> 00:46:09,320
+Mesela 5'ten büyük sağdan baştan hep yine.
+
+517
+00:46:09,780 --> 00:46:12,760
+5'ten büyük değer koyarsanız fonksiyon türevini.
+
+518
+00:46:12,840 --> 00:46:14,380
+Mesela x eşitir 6 koyarsanız.
+
+519
+00:46:14,960 --> 00:46:16,760
+Şu g üstü x değeri nedir arkadaşlar?
+
+520
+00:46:16,940 --> 00:46:17,920
+Postif çıkacağı için.
+
+521
+00:46:17,920 --> 00:46:21,820
+O yüzden 5'ten büyük değerlerden zaten şuraya direkt artıyı yerleştirebilirsiniz.
+
+522
+00:46:21,980 --> 00:46:25,360
+Veya en büyük dereceli terim yani x karenin işaretine bakarsınız.
+
+523
+00:46:25,500 --> 00:46:26,400
+İki tiste olur.
+
+524
+00:46:30,963 --> 00:46:32,483
+Bakın hx fonksiyonu var.
+
+525
+00:46:32,983 --> 00:46:34,963
+hx fonksiyonu 1 bölü x karedir.
+
+526
+00:46:35,443 --> 00:46:36,824
+Bunun ekstrem noktalı olmadığına
+
+527
+00:46:36,824 --> 00:46:37,603
+bakacağız arkadaşlar.
+
+528
+00:46:38,443 --> 00:46:40,623
+Fonksiyon türevi nedir? h3x eşittir.
+
+529
+00:46:40,703 --> 00:46:42,304
+Eksi 2 bölü x kültür. Doğru mu?
+
+530
+00:46:43,183 --> 00:46:44,983
+3 katlı kök vardı aslında
+
+531
+00:46:44,983 --> 00:46:46,683
+burada. 3 katlı kök olduğu için
+
+532
+00:46:46,683 --> 00:46:48,623
+arkadaşlar işaret değişikliği yani
+
+533
+00:46:48,623 --> 00:46:50,364
+tek olduğu için
+
+534
+00:46:50,364 --> 00:46:52,264
+x'in kuvveti. O yüzden
+
+535
+00:46:52,264 --> 00:46:54,224
+arkadaşlar işaret değişikliği olacaktır.
+
+536
+00:46:54,724 --> 00:46:56,824
+Şimdi ekstrem noktalı olması için arkadaşlar
+
+537
+00:46:56,824 --> 00:46:58,724
+birinci türevi
+
+538
+00:46:58,724 --> 00:47:00,423
+sıfır veya tanımsız yapması lazım.
+
+539
+00:47:00,423 --> 00:47:02,563
+Tanımsız yapıyor. Doğru. Kritik nokta.
+
+540
+00:47:03,023 --> 00:47:04,543
+Kritik nokta olabilmesi için
+
+541
+00:47:04,543 --> 00:47:06,884
+fonksiyonun nedir arkadaşlar?
+
+542
+00:47:07,503 --> 00:47:08,804
+Fonksiyon türevi sıfır
+
+543
+00:47:08,804 --> 00:47:10,543
+veya tanımsız yapması lazım. Doğru.
+
+544
+00:47:12,563 --> 00:47:14,864
+Tanımsız yapıyor. İşaret değişikliği
+
+545
+00:47:14,864 --> 00:47:16,543
+de yapıyor. Ama sorun şu.
+
+546
+00:47:17,304 --> 00:47:18,284
+x eşittir 0
+
+547
+00:47:18,284 --> 00:47:20,724
+hx fonksiyonu tanımı değil arkadaşlar.
+
+548
+00:47:20,943 --> 00:47:22,683
+Yani hx fonksiyonu x yerine
+
+549
+00:47:22,683 --> 00:47:24,523
+0 koyarsanız böyle bir
+
+550
+00:47:24,523 --> 00:47:26,123
+h değeri bulamayacağınız için
+
+551
+00:47:26,123 --> 00:47:28,503
+aslında her ne kadar işaret değişikliği
+
+552
+00:47:28,503 --> 00:47:30,603
+yapsa da bir ekstrem nokta
+
+553
+00:47:30,603 --> 00:47:31,963
+olarak alamayız arkadaşlar.
+
+554
+00:47:32,643 --> 00:47:33,623
+Burası anlaşılır mı acaba?
+
+555
+00:47:46,931 --> 00:47:47,431
+Evet.
+
+556
+00:47:52,083 --> 00:47:53,384
+Bakın bir diğer soru.
+
+557
+00:47:54,344 --> 00:47:55,923
+Kx eşittir.
+
+558
+00:47:56,523 --> 00:47:57,923
+Üçüncü dereceden kök
+
+559
+00:47:57,923 --> 00:47:58,864
+x kare.
+
+560
+00:47:59,723 --> 00:48:01,763
+Fonksiyonun ekstrem noktasının
+
+561
+00:48:01,763 --> 00:48:03,523
+olup olmadığını gösteren şeklinde.
+
+562
+00:48:04,163 --> 00:48:05,503
+Fonksiyonun türevi nedir arkadaşlar?
+
+563
+00:48:05,783 --> 00:48:07,123
+K üstü eşittir. İki bölü.
+
+564
+00:48:07,783 --> 00:48:10,003
+Üç çarpı küp kök x'tir.
+
+565
+00:48:10,003 --> 00:48:10,844
+Arkadaşlar.
+
+566
+00:48:12,583 --> 00:48:13,923
+Bunun devamında
+
+567
+00:48:13,923 --> 00:48:16,603
+arkadaşlar bunu sıfır eşitlediğinizde
+
+568
+00:48:16,603 --> 00:48:19,283
+sıfır eşitlediğinizde
+
+569
+00:48:19,283 --> 00:48:21,103
+ne olacaktır?
+
+570
+00:48:21,103 --> 00:48:22,723
+Ve daha doğrusu sıfır eşitleyemiyoruz ama
+
+571
+00:48:22,723 --> 00:48:24,923
+bunu tanımsız yapar. K üstü'yü tanımsız
+
+572
+00:48:24,923 --> 00:48:26,643
+yapan bir değer var. Yine
+
+573
+00:48:26,643 --> 00:48:28,723
+tek kuvvet olduğu için
+
+574
+00:48:28,723 --> 00:48:30,023
+işaret değişikliği yapıyor.
+
+575
+00:48:31,023 --> 00:48:32,463
+Bakın işaret değişikliği yapıyor sıfır.
+
+576
+00:48:33,203 --> 00:48:34,884
+İşaret değişikliği yapıyor ve fonksiyonu
+
+577
+00:48:34,884 --> 00:48:36,643
+tanınılmayan x eşittir sıfırı
+
+578
+00:48:36,643 --> 00:48:38,683
+asıl fonksiyonu kx fonksiyonu yerine yazdığında
+
+579
+00:48:38,683 --> 00:48:40,344
+evet kx sıfır eşittir sıfır oluyor.
+
+580
+00:48:40,803 --> 00:48:42,463
+O halde bakın bunu arkadaşlar
+
+581
+00:48:42,463 --> 00:48:44,623
+bir ekstrem nokta olarak alabiliriz ki o da
+
+582
+00:48:44,623 --> 00:48:46,503
+bir minimum noktadır arkadaşlar.
+
+583
+00:48:46,723 --> 00:48:48,583
+Yerel minimum noktadır. Tamam.
+
+584
+00:48:51,103 --> 00:48:53,903
+Yani bir öncekiyle farkı var gördüğünüz gibi.
+
+585
+00:48:54,823 --> 00:48:55,923
+Bir diğer soru arkadaşlar.
+
+586
+00:48:58,663 --> 00:49:00,123
+Bu örnekte arkadaşlar
+
+587
+00:49:00,123 --> 00:49:02,864
+bakın bu örnekte şu kx örneğinde
+
+588
+00:49:02,864 --> 00:49:04,844
+fonksiyonla tanımlı yani fonksiyonun
+
+589
+00:49:04,844 --> 00:49:05,783
+kendisinde tanımlı.
+
+590
+00:49:06,263 --> 00:49:08,003
+Yani bakın
+
+591
+00:49:08,003 --> 00:49:09,683
+türevinde tanımlı değil.
+
+592
+00:49:09,923 --> 00:49:12,283
+Zaten türevinde ya tanımlı olmayacak
+
+593
+00:49:12,283 --> 00:49:13,443
+ya da
+
+594
+00:49:13,443 --> 00:49:16,523
+türevini sıfır yapacak değerler
+
+595
+00:49:16,523 --> 00:49:17,403
+kritik noktadır.
+
+596
+00:49:17,403 --> 00:49:19,344
+Yani türevinde tanımlı olmadığı için
+
+597
+00:49:19,344 --> 00:49:20,364
+türev tanımlı yaptığı için
+
+598
+00:49:20,364 --> 00:49:21,203
+x eşittir sıfır
+
+599
+00:49:21,203 --> 00:49:22,364
+kritik noktadır.
+
+600
+00:49:22,443 --> 00:49:23,503
+Bunu diyebiliyoruz.
+
+601
+00:49:23,943 --> 00:49:25,183
+Arkasından şöyle neye bakıyoruz?
+
+602
+00:49:25,283 --> 00:49:26,344
+İşaret değişikliği yapıyor mu?
+
+603
+00:49:26,384 --> 00:49:26,923
+Yapıyor çünkü
+
+604
+00:49:26,923 --> 00:49:28,263
+tek kuvvet. Eyvallah.
+
+605
+00:49:28,423 --> 00:49:29,003
+Bunlara soracağım.
+
+606
+00:49:29,483 --> 00:49:30,423
+Bir de neye bakmanız lazım
+
+607
+00:49:30,423 --> 00:49:31,143
+en son arkadaşlar?
+
+608
+00:49:31,803 --> 00:49:32,563
+x eşittir sıfır
+
+609
+00:49:32,563 --> 00:49:33,783
+asıl fonksiyonla tanımlı.
+
+610
+00:49:34,003 --> 00:49:35,884
+kx de tanımlı olduğu için
+
+611
+00:49:35,884 --> 00:49:38,043
+o yüzden ekstrem noktadır diyoruz.
+
+612
+00:49:38,403 --> 00:49:39,483
+Bir önceki örnekte ise
+
+613
+00:49:39,483 --> 00:49:40,983
+her şey tamamdı ama
+
+614
+00:49:40,983 --> 00:49:41,723
+arkadaşlar
+
+615
+00:49:41,723 --> 00:49:43,323
+fonksiyonla tanımlı değildir.
+
+616
+00:49:43,463 --> 00:49:44,583
+Yani bir bölü x kalede sıfır
+
+617
+00:49:44,583 --> 00:49:45,364
+tanımlı değildir.
+
+618
+00:49:45,364 --> 00:49:47,344
+O yüzden bir önceki örnekte
+
+619
+00:49:47,344 --> 00:49:49,243
+ekstrem noktada olmamasına rağmen
+
+620
+00:49:49,243 --> 00:49:50,203
+bu örnekte
+
+621
+00:49:50,203 --> 00:49:51,623
+kx örneğinde arkadaşlar
+
+622
+00:49:51,623 --> 00:49:52,643
+ekstrem noktadır.
+
+623
+00:49:52,763 --> 00:49:55,063
+Hatta bir yerel minimum noktadır arkadaşlar.
+
+624
+00:50:00,000 --> 00:50:05,059
+Şimdi bir diğer soru. x kare artı 100 bölü x kare eksi 25 diyoruz arkadaşlar.
+
+625
+00:50:05,280 --> 00:50:14,519
+Burada da yine türevini aldığımız zaman, türevin, bölümün türevi kuralını uyguladığımız zaman en son eksi 250x bölü x kare eksi 25'in karesi olur arkadaşlar.
+
+626
+00:50:14,519 --> 00:50:18,840
+Bakın burada hangi değerler var aslında baktığınız zaman?
+
+627
+00:50:29,811 --> 00:50:59,551
+fonksiyonun yine sıfır veya tanımsız yapan değerlere bakıyoruz arkadaşlar şimdi fonksiyonun tanım aralığı eksi 1 ile 3 arkadaşlar bir kere onu da yerleştirmemiz lazım eksi 1 ile 3'ü işaret tablosunda yerleştiriyoruz eğer böyle bir kısıtlama olmasaydı en geniş tanım kümeyi yazıyorduk ama eksi 1 ile 3 arasında inceleyin dediği için en genişini yazıyoruz arkadaşlar eksi 1 ile 3 eksi 250 x bölü x kare eksi 25'i arkadaşlar sıkışık dediğinizde ne oluyor arkadaşlar
+
+628
+00:50:59,551 --> 00:51:21,451
+buradan x eşittir 0 buluyorsunuz doğru mu x eşittir 0 için bir değer bulabiliyoruz eksi 1 için de değer bulabiliyoruz 3 için de değer bulabiliyoruz bakın fonksiyon buradan hatta şöyle 0 kökü olduğunu söyleyebiliriz şöyle yapalım şurası bakın bir köküdür türevin köküdür
+
+629
+00:51:25,940 --> 00:51:28,019
+F0'da fonksiyonun değeri
+
+630
+00:51:28,019 --> 00:51:29,880
+eksi 4'tür. F-1'de
+
+631
+00:51:29,880 --> 00:51:31,880
+eksi 101 bölü 24'tür.
+
+632
+00:51:32,200 --> 00:51:34,400
+F3'de de eksi 109 bölü 16'dır.
+
+633
+00:51:34,940 --> 00:51:35,639
+Fonksiyon burada
+
+634
+00:51:35,639 --> 00:51:38,240
+azalanlıktan artan kalanına geçiş yaptığı
+
+635
+00:51:38,240 --> 00:51:40,000
+için x eşittir 0'da
+
+636
+00:51:40,000 --> 00:51:42,260
+bir iler maksimum noktası vardır diyoruz arkadaşlar.
+
+637
+00:51:44,220 --> 00:51:45,159
+Yani 3'te de
+
+638
+00:51:45,159 --> 00:51:47,840
+yani bunun arasında en küçük değer yani F0
+
+639
+00:51:47,840 --> 00:51:50,300
+F-1 F3 değerler arasında
+
+640
+00:51:50,300 --> 00:51:52,200
+bunun arasında en küçük olanada arkadaşlar
+
+641
+00:51:52,200 --> 00:51:53,800
+mutlak minimum değer diyoruz ki o da
+
+642
+00:51:53,800 --> 00:51:55,760
+eksi 109 bölü 16'dır.
+
+643
+00:51:55,940 --> 00:51:57,840
+Bunun arasında en büyük olan da
+
+644
+00:51:57,840 --> 00:52:00,079
+mutlak maksimum zaten. O da
+
+645
+00:52:00,079 --> 00:52:02,220
+eksi 4 zaten. Başka da
+
+646
+00:52:02,220 --> 00:52:02,980
+büyük değer yok.
+
+647
+00:52:03,840 --> 00:52:06,200
+Devam ettiğinize bakın şöyle bir şey dikkatinizi çektim
+
+648
+00:52:06,200 --> 00:52:06,639
+arkadaşlar.
+
+649
+00:52:07,800 --> 00:52:09,159
+Fonksiyonun türevine bakın.
+
+650
+00:52:09,639 --> 00:52:12,159
+Eksi 250x bölü x kare eksi 25'in
+
+651
+00:52:12,159 --> 00:52:14,019
+karesi. Burada sadece 0
+
+652
+00:52:14,019 --> 00:52:15,639
+bir kritik nokta değil değil mi?
+
+653
+00:52:16,059 --> 00:52:17,980
+x kare eksi 25 eşittir 0'dan
+
+654
+00:52:17,980 --> 00:52:20,159
+tanımsız yaptığı için artı eksi 5
+
+655
+00:52:20,159 --> 00:52:22,300
+de bir kritik noktadır. Ama artı eksi 5
+
+656
+00:52:22,300 --> 00:52:24,119
+yine asıl fonksiyonu tanımlı
+
+657
+00:52:24,119 --> 00:52:25,900
+olmadığı için hiç bakın onunla
+
+658
+00:52:25,900 --> 00:52:28,380
+hiç bahsetmedik. Buna da dikkat edin yine.
+
+659
+00:52:28,740 --> 00:52:29,039
+Tamam mı?
+
+660
+00:52:29,639 --> 00:52:32,179
+Artı eksi 5'i dikkat
+
+661
+00:52:32,179 --> 00:52:34,159
+almadık çünkü asıl fonksiyonu da
+
+662
+00:52:34,159 --> 00:52:35,460
+tanımlı olmadığı için.
+
+663
+00:52:37,340 --> 00:52:38,179
+Evet son bir soru
+
+664
+00:52:38,179 --> 00:52:39,039
+çözüyorum arkadaşlar.
+
+665
+00:52:39,039 --> 00:52:46,519
+f r eksi 0'dan r'ye f x eşittir x artı 1 bölü x.
+
+666
+00:52:46,599 --> 00:52:50,599
+Neden 0'ı çıkartıyorum? Çünkü 1 bölü x de fonksiyonu tanımlı olabilmesi için.
+
+667
+00:52:50,599 --> 00:52:52,440
+fonksiyonun türevini aldık.
+
+668
+00:52:52,440 --> 00:52:54,920
+f üstü x eşittir 1 eksi 1 bölü x kare.
+
+669
+00:52:55,380 --> 00:52:59,000
+0 eşittir x eşittir artı eksi 1 gibi kritik noktamızı bulduk.
+
+670
+00:52:59,519 --> 00:53:00,880
+İşaret tablosuna yerleştireceğiz.
+
+671
+00:53:00,960 --> 00:53:02,720
+Ne en geniş bir aralık
+
+672
+00:53:02,720 --> 00:53:04,659
+eksi artı sonsuz olarak belirlersek.
+
+673
+00:53:04,659 --> 00:53:07,700
+Burada arkadaşlar ne yapıyoruz?
+
+674
+00:53:08,200 --> 00:53:09,820
+Fonksiyonun sağ tarafından başlıyoruz.
+
+675
+00:53:09,980 --> 00:53:11,340
+Artı eksi artı diye.
+
+676
+00:53:12,960 --> 00:53:15,179
+Burada fonksiyon artmış azalmış artmış.
+
+677
+00:53:15,280 --> 00:53:15,559
+O yüzden
+
+678
+00:53:15,559 --> 00:53:17,240
+eksi 2'de yerel maksimum
+
+679
+00:53:17,240 --> 00:53:19,639
+artı 2'de de bir yerel minimum.
+
+680
+00:53:20,119 --> 00:53:21,000
+Yanlış söyledim yani
+
+681
+00:53:21,000 --> 00:53:23,220
+x x eşittir x 1'de bir yerel maksimum
+
+682
+00:53:23,220 --> 00:53:25,579
+x eşittir 1'de bir yerel minimum nokta vardır.
+
+683
+00:53:26,019 --> 00:53:26,780
+Bunlara karşılık gelen
+
+684
+00:53:26,780 --> 00:53:28,539
+f eksi 1 eşittir x 2'dir
+
+685
+00:53:28,539 --> 00:53:30,019
+f 1 eşittir 2'de
+
+686
+00:53:30,019 --> 00:53:31,460
+bunların da eksi alın değerlerdir.
+
+687
+00:53:31,559 --> 00:53:33,099
+Yani yerel maksimum değer
+
+688
+00:53:33,099 --> 00:53:37,519
+eksi 2 artı 2'de yerel minimum değerdir arkadaşlar.
+
+689
+00:53:37,519 --> 00:53:38,139
+Evet.
+
+690
+00:53:41,460 --> 00:53:43,039
+Arkadaşlar sorusu olan var mı?
+
+691
+00:53:58,804 --> 00:54:02,384
+Bugünkü derse özetlerse arkadaşlar, benim gibi her zaman söylüyoruz.
+
+692
+00:54:02,884 --> 00:54:05,463
+Dersten sonra lütfen bir sorulara bir kez daha çözüm.
+
+693
+00:54:06,144 --> 00:54:06,923
+Biz neyi gördük?
+
+694
+00:54:07,064 --> 00:54:08,664
+Belirsizlik türlerini gördük arkadaşlar.
+
+695
+00:54:09,264 --> 00:54:13,164
+0 bölü 0 belirsizliği, sonsuz bölü sonsuz belirsizliği dedik.
+
+696
+00:54:13,164 --> 00:54:20,844
+Eğer böyle belirsizlikler varsa direkt olarak yok ithal kuramının pay ve payların birbirine bağlı türevini alarak limiti buluyorduk arkadaşlar.
+
+697
+00:54:22,124 --> 00:54:27,824
+Devam ettiğimizde 0 çarpı sonsuz ve sonsuz eksi sonsuz belirsizliğini gördük.
+
+698
+00:54:27,824 --> 00:54:36,604
+Bunda ise ya sonsuz bölü sonsuz veya sıfır belirsizliğine dönüştürerek yok ithal kuramını uygulayıp limitin değerini buluyorduk arkadaşlar.
+
+699
+00:54:36,604 --> 00:54:44,364
+En son olarak da işte 1 üzeri sonsuz, 0 üzeri 0 ve sonsuz üzeri 0 gibi bir belirsizlik tür gördük.
+
+700
+00:54:44,463 --> 00:54:50,384
+Orada arkadaşlar verilen fonksiyonu y'yi eşitleyip her iki tarafı el yerini aldıktan sonra limitini alıyorsunuz.
+
+701
+00:54:50,423 --> 00:54:51,543
+Bu şekilde buluyorduk.
+
+702
+00:54:52,104 --> 00:54:56,284
+Biraz az önce de arkadaşlar fonksiyonun ekstrem değerlerinden bahsettik.
+
+703
+00:54:56,284 --> 00:55:01,983
+Onun için de ekstrem değerleri bulabilmek için de birinci türev testini kullandık.
+
+704
+00:55:02,764 --> 00:55:04,784
+Örnekler çözdük ve burada bırakıyoruz.
+
+705
+00:55:04,923 --> 00:55:08,923
+Yarın ise arkadaşlar ikinci türev testinden başlayacağız.
+
+706
+00:55:08,923 --> 00:55:35,624
+Evet.
+
+707
+00:55:13,331 --> 00:55:19,271
+artı eksiki aslı fonksiyona göre mi koyuyoruz? Şimdi arkadaşlar, biz neyin işaretini inceliyoruz?
+
+708
+00:55:19,471 --> 00:55:32,851
+Fonksiyonun türevinin işaretini inceliyoruz. Yani bakın, tekrar yaklaştırırsak tabloya, biz aslında şöyle şu satır, bakın fonksiyonun türevi, bir nevi fonksiyonun, bakın buradan türevinin işaretini incelemiş oluyoruz.
+
+709
+00:55:32,911 --> 00:55:39,071
+Burası da fx'in olduğu satır. Burada fx'in alacağı değerler. Şurası da x, burada x'in alacağı değerler arkadaşlar.
+
+710
+00:55:39,071 --> 00:55:46,951
+Yani biz aslında fonksiyonun türevinin işaretini inceleyerek fonksiyonun ekstrem noktasının varlık olmadığına karar veriyoruz arkadaşlar.
+
+711
+00:55:46,951 --> 00:55:47,692
+Evet.
+
+712
+00:56:03,347 --> 00:56:07,327
+Başka soru var mı arkadaşlar?
+
+713
+00:56:24,115 --> 00:56:31,076
+Evet, başka sorunuz yoksa arkadaşlar, yarın 2. türev testiyle devam edeceğiz. Kendinize çok iyi bakın.
+
+714
+00:56:34,135 --> 00:56:45,735
+Arkadaşlar, buna bir mail atacağım. Sınavla ilgili en güzel. Çünkü derse katılmayanlar da olabilir. Sınavla ilgili ben e-mail atacağım herkese usus üzerinden. En güzel o. Herkes görsün. Çünkü derse şu an katmamışlar dolayı tekrarlamayayım.
+
+715
+00:56:46,335 --> 00:56:50,556
+Sınav nereye kadar ve sınav tarihiyle ilgili birazdan size e-mail atacağım arkadaşlar.
+
+716
+00:56:50,556 --> 00:56:56,376
+Evet. Kendinize iyi bakın arkadaşlar. Görüşmek üzere. Sağlıklı kalın.
