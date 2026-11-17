@@ -1,0 +1,5511 @@
+1
+00:08:27,827 --> 00:08:28,787
+Good morning, everybody.
+
+2
+00:08:32,659 --> 00:08:39,299
+Let me wait one more minute, so it's 9.09. Let me wait one more minute, then I will start.
+
+3
+00:08:47,604 --> 00:09:02,644
+Ok, 9, 10. Ok, let's start. So today, as I said, as I mentioned yesterday, we will cover the problems, the 16 problems from chapter 15 that I put on my website yesterday.
+
+4
+00:09:04,663 --> 00:09:07,544
+And then we will finish the semester.
+
+5
+00:09:07,544 --> 00:09:20,024
+Ok, let's start with this problem. Evaluate this integral 0 to 1, square root of x to 1, 1 over square root of 1 plus 3y cubed dy dx.
+
+6
+00:09:20,903 --> 00:09:28,024
+Ok, when you look at this integral, look at this integral, now inside we have this, this integral.
+
+7
+00:09:32,659 --> 00:09:34,639
+Okay, how can we evaluate this integral?
+
+8
+00:09:35,279 --> 00:09:39,219
+To evaluate this integral, we have to evaluate this integral with respect to y.
+
+9
+00:09:39,699 --> 00:09:42,679
+Now, 1 over square root of 1 plus 3y cube.
+
+10
+00:09:42,959 --> 00:09:47,500
+How can we integrate with this function with respect to y?
+
+11
+00:09:48,799 --> 00:09:52,379
+Well, if we substitute u equals 1 plus 3y cube,
+
+12
+00:09:52,379 --> 00:09:57,539
+then du is going to be 9y squared dy.
+
+13
+00:09:57,939 --> 00:10:00,379
+We need 9y squared, something like that.
+
+14
+00:10:00,439 --> 00:10:02,179
+So, substitution doesn't work.
+
+15
+00:10:03,659 --> 00:10:10,319
+And, I mean, if you try several methods that you have seen in math 1,
+
+16
+00:10:10,879 --> 00:10:13,259
+you will see that you cannot integrate this with respect to y.
+
+17
+00:10:13,599 --> 00:10:14,339
+That's not easy.
+
+18
+00:10:15,419 --> 00:10:19,339
+This is not an elementary function to be integrated with respect to y.
+
+19
+00:10:19,980 --> 00:10:27,579
+So, well, and so basically there are three methods we can apply
+
+20
+00:10:27,579 --> 00:10:29,099
+to evaluate such a double integral.
+
+21
+00:10:29,099 --> 00:10:38,079
+One is to change the order of integration from dx dy to dy dx or dy dx to dx dy.
+
+22
+00:10:38,519 --> 00:10:40,399
+One is to change the order of integration.
+
+23
+00:10:40,599 --> 00:10:42,899
+Second is to convert it into polar.
+
+24
+00:10:42,899 --> 00:10:56,500
+We can apply some transformation.
+
+25
+00:10:56,500 --> 00:10:59,199
+for any other transformation that we have seen yesterday.
+
+26
+00:11:02,000 --> 00:11:04,779
+The polar transformation is especially useful.
+
+27
+00:11:05,720 --> 00:11:08,480
+Polar transformation is especially useful if the region,
+
+28
+00:11:08,480 --> 00:11:11,699
+if the region or if the region, this region,
+
+29
+00:11:12,699 --> 00:11:19,159
+if the region over which the integration is made looks like a circular region.
+
+30
+00:11:19,960 --> 00:11:20,919
+Circular region.
+
+31
+00:11:20,919 --> 00:11:25,720
+So, so that I mean it has some circular borders so that when converted to polar,
+
+32
+00:11:25,839 --> 00:11:26,639
+it becomes simpler.
+
+33
+00:11:27,519 --> 00:11:29,720
+Now, this one, this one is not like that.
+
+34
+00:11:30,019 --> 00:11:34,659
+So, the best, let's first, first, let's draw this region.
+
+35
+00:11:35,779 --> 00:11:37,000
+Let's see what this region is.
+
+36
+00:11:37,460 --> 00:11:38,419
+Now, first of all,
+
+37
+00:11:39,919 --> 00:11:40,879
+what is it?
+
+38
+00:11:40,879 --> 00:11:46,519
+Here we see that outside the integrate the variable on the region outside is X.
+
+39
+00:11:47,279 --> 00:11:50,740
+So, the limits of integration for X are from X equals zero to X equals one.
+
+40
+00:11:51,539 --> 00:11:53,399
+Here, two vertical lines.
+
+41
+00:11:54,240 --> 00:11:57,019
+X equals zero and X equals one.
+
+42
+00:11:57,879 --> 00:11:58,939
+These two vertical lines.
+
+43
+00:11:59,799 --> 00:12:01,679
+And between these two vertical lines,
+
+44
+00:12:02,699 --> 00:12:03,720
+Y is between.
+
+45
+00:12:03,720 --> 00:12:13,099
+It's bounded from below by Y equals squared of X and from above by Y equals one.
+
+46
+00:12:13,839 --> 00:12:15,240
+Y equals squared of X.
+
+47
+00:12:15,919 --> 00:12:17,359
+Here, Y equals squared of X.
+
+48
+00:12:18,679 --> 00:12:20,339
+This is Y equals squared of X.
+
+49
+00:12:20,599 --> 00:12:21,359
+And Y equals one.
+
+50
+00:12:22,120 --> 00:12:23,620
+Bound above by Y equals one.
+
+51
+00:12:24,480 --> 00:12:25,759
+So, it's this region over here.
+
+52
+00:12:26,939 --> 00:12:27,399
+This region.
+
+53
+00:12:31,443 --> 00:12:36,603
+Evet, bu region over here, bu region olarak bu bir region olarak bir şekilde bir region olarak.
+
+54
+00:12:36,603 --> 00:12:52,103
+So, the best way here is to consider this region, so instead of considering it as a region between two vertical lines, now we consider it as a region, we do horizontal lines. Of course, what is this kind of intersection?
+
+55
+00:12:53,884 --> 00:13:04,603
+On the vertical line x equals 1, y equals 2 of x and y equals 1, they intersect at this point, right? When x is 1, y is 1 at this point.
+
+56
+00:13:04,603 --> 00:13:18,103
+So, if we slice this basically region horizontally, what do we get? We get this horizontal line, y equals 0, and this horizontal line, y equals 1.
+
+57
+00:13:18,423 --> 00:13:28,144
+So, if we express this integral instead of dy dx, if we use dx dy, if we change the order of integration, what are we going to get?
+
+58
+00:13:28,144 --> 00:13:37,983
+The same integral over here, instead of dy dx, if we write dx dy, now the limits of integration are going to be here.
+
+59
+00:13:37,983 --> 00:13:53,283
+y is between 0 and 1, from y equals 0 to y equals 1, these two horizontal lines, and between these two horizontal lines, it's bounded from left, bounded from left by x equals 0.
+
+60
+00:13:53,283 --> 00:14:02,983
+Here, x equals 0, and bounded from right by this function, x equals, this is y equals square root of x, so x equals y square.
+
+61
+00:14:03,543 --> 00:14:05,083
+Here, x equals y square.
+
+62
+00:14:07,283 --> 00:14:29,063
+So, this is the integral we get.
+
+63
+00:14:12,532 --> 00:14:18,532
+İntegro ile ilgili bir tanı var.
+
+64
+00:14:18,532 --> 00:14:20,532
+Şimdi, bir tanı var.
+
+65
+00:14:20,532 --> 00:16:24,532
+İntegro ile ilgili bir tanı var.
+
+66
+00:16:12,340 --> 00:16:41,840
+İntegral of, this is u to the power minus 1 health, its integral is u to the power 1 health, times 2, which is this, 2 squared over u, plus the integral of 1 over root u, divide by 9 is over here, we get this, over 9 squared of u, from u equals 1 to u equals 4, which is 2 over 9 is constant, when u is 4, we get 2, when u is 1, we get 1, so 2 minus 1 is 1, we get 2 over 9, as the value of this integral.
+
+67
+00:16:45,460 --> 00:16:48,240
+Okay, let's continue with the next problem.
+
+68
+00:16:48,420 --> 00:16:56,600
+Evaluate the integral 1 to 4, square root of x to e to the power y over 1 plus y dy dx.
+
+69
+00:16:57,519 --> 00:16:58,879
+Okay, this is the same.
+
+70
+00:16:59,180 --> 00:17:00,460
+The idea is the same here.
+
+71
+00:17:00,620 --> 00:17:06,079
+Now, when we look at this integral over here, look at this integral.
+
+72
+00:17:06,420 --> 00:17:10,539
+If we try to evaluate this integral with respect to y, we cannot do that.
+
+73
+00:17:10,539 --> 00:17:13,539
+E to the power y over 1 plus y, that's not easy.
+
+74
+00:17:13,539 --> 00:17:16,299
+That's not easy to integrate with respect to y.
+
+75
+00:17:17,380 --> 00:17:20,920
+So, again, the best way is to change the order of integration.
+
+76
+00:17:21,819 --> 00:17:22,779
+Let's try that.
+
+77
+00:17:23,019 --> 00:17:24,900
+Now, first, we have to draw this region.
+
+78
+00:17:25,620 --> 00:17:26,480
+This region over here.
+
+79
+00:17:27,279 --> 00:17:27,860
+What is that?
+
+80
+00:17:28,559 --> 00:17:30,160
+X outside, we have x.
+
+81
+00:17:30,819 --> 00:17:31,700
+It's vertical.
+
+82
+00:17:32,680 --> 00:17:34,519
+X equals 1, x equals 4.
+
+83
+00:17:34,799 --> 00:17:38,380
+It's between x equals 1, two vertical lines.
+
+84
+00:17:38,380 --> 00:17:40,559
+X equals 1 and x equals 4.
+
+85
+00:17:40,559 --> 00:17:50,620
+And between these two vertical lines, it's bounded below by y equals root x and bounded above by y equals 2.
+
+86
+00:17:51,620 --> 00:17:53,319
+Y equals root x and y equals 2.
+
+87
+00:17:53,860 --> 00:17:55,319
+Here, y equals root x.
+
+88
+00:17:55,319 --> 00:17:57,799
+And here, y equals 2.
+
+89
+00:17:58,900 --> 00:18:03,240
+And, of course, when x is 4, when x is 4, root x is 2.
+
+90
+00:18:03,539 --> 00:18:06,420
+So, when x is 1, root x is 1.
+
+91
+00:18:06,680 --> 00:18:08,340
+When x is 4, root x is 2.
+
+92
+00:18:08,460 --> 00:18:09,900
+So, it goes like this.
+
+93
+00:18:09,960 --> 00:18:13,720
+They intersect at this point with this line y equals 2.
+
+94
+00:18:14,140 --> 00:18:14,940
+So, this is the region.
+
+95
+00:18:15,640 --> 00:18:16,200
+This is the region.
+
+96
+00:18:16,200 --> 00:18:19,779
+Now, we will take the same region again, of course.
+
+97
+00:18:20,319 --> 00:18:22,519
+So, these are the points x equals 1, x equals 4.
+
+98
+00:18:22,640 --> 00:18:24,500
+These are the points y equals 1, y equals 2.
+
+99
+00:18:25,279 --> 00:18:27,420
+Now, consider it horizontally.
+
+100
+00:18:28,660 --> 00:18:30,819
+So, it's between these two horizontal lines.
+
+101
+00:18:30,940 --> 00:18:33,039
+y equals 1 and y equals 2.
+
+102
+00:18:33,799 --> 00:18:35,539
+And between these two horizontal lines.
+
+103
+00:18:35,539 --> 00:18:41,779
+So, we write the same integral by changing dy dx to dx dy.
+
+104
+00:18:41,779 --> 00:18:46,100
+And now, outside, what do we have?
+
+105
+00:18:46,380 --> 00:18:48,160
+It's between two horizontal lines.
+
+106
+00:18:48,259 --> 00:18:51,420
+y equals 1, y equals 1, and y equals 2.
+
+107
+00:18:52,039 --> 00:18:55,240
+And between these two horizontal lines, it's bounded from left.
+
+108
+00:18:57,420 --> 00:18:59,220
+Bound us from left by this line.
+
+109
+00:18:59,360 --> 00:19:00,100
+x equals 1.
+
+110
+00:19:00,660 --> 00:19:01,960
+Here, x equals 1.
+
+111
+00:19:02,600 --> 00:19:04,640
+And bounded from right by this curve.
+
+112
+00:19:04,900 --> 00:19:07,160
+y equals root x, which is x equals y squared.
+
+113
+00:19:08,180 --> 00:19:09,160
+x equals y squared.
+
+114
+00:19:09,160 --> 00:19:13,420
+bounded by x equals 1 and x equals y squared.
+
+115
+00:19:13,840 --> 00:19:14,680
+So, we get this.
+
+116
+00:19:15,660 --> 00:19:20,800
+Again, now, since this function is a constant with respect to x,
+
+117
+00:19:20,900 --> 00:19:22,800
+it's easy to integrate with respect to x.
+
+118
+00:19:23,180 --> 00:19:25,640
+Now, if we integrate this with respect to x,
+
+119
+00:19:25,900 --> 00:19:29,340
+we get itself e to power y over 1 plus y times x,
+
+120
+00:19:29,880 --> 00:19:32,900
+where x is going to be evaluated from 1 to y squared.
+
+121
+00:19:33,640 --> 00:19:35,340
+x equals 1 to x equals y squared.
+
+122
+00:19:36,000 --> 00:19:36,720
+What do we get?
+
+123
+00:19:36,720 --> 00:19:39,720
+This is a constant, e to power y over 1 plus y.
+
+124
+00:19:39,799 --> 00:19:41,140
+I just write it like that.
+
+125
+00:19:42,079 --> 00:19:43,900
+When x is y squared, we get y squared.
+
+126
+00:19:44,000 --> 00:19:45,059
+When x is 1, we get 1.
+
+127
+00:19:45,220 --> 00:19:46,360
+We get y squared minus 1.
+
+128
+00:19:47,620 --> 00:19:54,000
+So, y squared minus 1, of course, can be factored as y plus 1, y minus 1.
+
+129
+00:19:54,039 --> 00:19:55,420
+And then y plus 1 is canceled.
+
+130
+00:19:55,559 --> 00:19:56,920
+We get y minus 1 left here.
+
+131
+00:19:56,920 --> 00:20:01,140
+So, when we divide y squared plus 1 by y plus 1, basically,
+
+132
+00:20:01,500 --> 00:20:02,920
+we get this, y minus 1.
+
+133
+00:20:03,420 --> 00:20:05,519
+So, we get y minus 1 is the power y dy.
+
+134
+00:20:05,519 --> 00:20:23,220
+And...
+
+135
+00:20:10,900 --> 00:20:28,240
+We can do integration by parts. Let's do it. So if we use u equals y minus 1 and dv equals e to the power y dy, then if u is y minus 1, du is dy. If dv is e to the power y dy, v is e to the power y.
+
+136
+00:20:28,240 --> 00:20:41,840
+So what is this? Integral of the integration by parts says that integral of u dv is the same as uv, which is y minus 1 times e to the power y minus vdu.
+
+137
+00:20:43,980 --> 00:20:47,720
+vdu is e to the power y dy. Integral of vdu.
+
+138
+00:20:47,720 --> 00:20:54,440
+So which is, so this is y minus 1 e to the power y minus integral of this is e to the power y.
+
+139
+00:20:54,940 --> 00:20:59,080
+We believe why it is from 1 to 2. So when we simplify, this is y minus 2 e to the power y.
+
+140
+00:20:59,880 --> 00:21:03,220
+So when y is 2, we get 0.
+
+141
+00:21:04,480 --> 00:21:12,580
+Minus, when y is 1, we get minus e to the power 1, which is minus e. So we get e at n.
+
+142
+00:21:14,880 --> 00:21:16,480
+That's the value of this integral.
+
+143
+00:21:17,720 --> 00:21:29,140
+Okay, next question. Evaluate the integral 0 to y, y to cube root of y, 1 over 1 plus x to the power 4 dx dy.
+
+144
+00:21:30,019 --> 00:21:38,140
+Again, this 1 over 1 to the power 1 over 1 plus x to the power 4. That's not easy to integrate with respect to x.
+
+145
+00:21:39,540 --> 00:21:43,280
+So let's draw the region. Now outside we have y.
+
+146
+00:21:43,280 --> 00:21:48,400
+It's horizontal line. So it's between y equals 0 and y equals 1.
+
+147
+00:21:49,340 --> 00:21:49,560
+Here.
+
+148
+00:21:51,340 --> 00:21:53,720
+y equals 0. These two horizontal lines.
+
+149
+00:21:53,880 --> 00:21:56,080
+y equals 0 and y equals 1.
+
+150
+00:21:56,080 --> 00:22:02,519
+And between these two horizontal lines, it's bounded from left by x equals y.
+
+151
+00:22:02,760 --> 00:22:04,300
+x equals y is this line.
+
+152
+00:22:05,980 --> 00:22:07,100
+x equals y.
+
+153
+00:22:07,100 --> 00:22:13,100
+which intersects this line at y equals 0 and this line at x equals 1.
+
+154
+00:22:13,480 --> 00:22:15,540
+At these two points, 0, 0 and 1, 1.
+
+155
+00:22:16,320 --> 00:22:19,320
+And it's bounded from right by this.
+
+156
+00:22:19,400 --> 00:22:21,519
+x equals cube root of y.
+
+157
+00:22:21,519 --> 00:22:26,500
+x equals cube root of y is same as y equals x cube here.
+
+158
+00:22:27,500 --> 00:22:28,000
+This curve.
+
+159
+00:22:29,140 --> 00:22:32,980
+Of course, x equals cube root of y or y equals x cube.
+
+160
+00:22:33,140 --> 00:22:36,519
+That also passes through the points 0, 0 and 1, 1.
+
+161
+00:22:36,720 --> 00:22:38,480
+So they intersect at these two points.
+
+162
+00:22:38,860 --> 00:22:39,640
+But this is the region.
+
+163
+00:22:40,800 --> 00:22:41,360
+This is the region.
+
+164
+00:22:41,360 --> 00:22:44,380
+Now we consider this region vertically now.
+
+165
+00:22:45,519 --> 00:22:51,280
+So since this point is 1, 1, 1, 2, 0, 0, it's two vertical lines.
+
+166
+00:22:51,380 --> 00:22:53,580
+x equals 0, x equals 1.
+
+167
+00:22:54,720 --> 00:22:58,580
+And between these two vertical lines, it's bounded below.
+
+168
+00:23:01,320 --> 00:23:02,880
+Bounded below by this.
+
+169
+00:23:03,100 --> 00:23:05,560
+X equals cube root of y, which is y equals x cube.
+
+170
+00:23:05,920 --> 00:23:07,540
+And bounded above by this.
+
+171
+00:23:08,840 --> 00:23:10,660
+x equals y, which is y equals x.
+
+172
+00:23:10,660 --> 00:23:15,960
+So the same integral can be written as x, dy, change to dy, dx.
+
+173
+00:23:16,680 --> 00:23:20,120
+Now the limits of integration for x are these two vertical lines.
+
+174
+00:23:20,200 --> 00:23:23,680
+x equals 0 and x equals 1.
+
+175
+00:23:24,200 --> 00:23:28,200
+And y is, between these two vertical lines,
+
+176
+00:23:28,280 --> 00:23:30,720
+is bounded below by y equals x cube.
+
+177
+00:23:31,420 --> 00:23:32,259
+y equals x cube.
+
+178
+00:23:32,640 --> 00:23:34,440
+And bounded above by y equals x.
+
+179
+00:23:35,519 --> 00:23:37,380
+These are the limits of integration for y.
+
+180
+00:23:38,080 --> 00:23:39,340
+So what do we get?
+
+181
+00:23:40,660 --> 00:23:45,960
+Now, again, we can integrate this with respect to y,
+
+182
+00:23:46,039 --> 00:23:46,800
+because it's a constant.
+
+183
+00:23:47,580 --> 00:23:50,200
+Integral of 1 over 1 plus x to the power of 4,
+
+184
+00:23:50,240 --> 00:23:52,420
+with respect to y, is just itself times y.
+
+185
+00:23:52,420 --> 00:23:58,420
+And the limit is going to be evaluated from y equals x cube to y equals x.
+
+186
+00:23:59,640 --> 00:24:01,680
+So, then we evaluate this integral.
+
+187
+00:24:02,060 --> 00:24:04,540
+1 over 1 plus x to the power of 4 is the constant.
+
+188
+00:24:05,180 --> 00:24:06,900
+When y is x, we get x.
+
+189
+00:24:07,060 --> 00:24:08,940
+When y is x cube, we get x cube.
+
+190
+00:24:08,940 --> 00:24:31,320
+1 over 1 plus x cube.
+
+191
+00:24:09,556 --> 00:24:11,056
+Here, x minus x cubed.
+
+192
+00:24:11,736 --> 00:24:13,155
+So, we get this integral.
+
+193
+00:24:14,355 --> 00:24:18,855
+So, when we separate this, so x minus x cubed over 1 plus x cubed.
+
+194
+00:24:19,036 --> 00:24:25,736
+When we separate this x over 1 plus x to the power 4 and x cubed over 1 plus x to the power 4 separately.
+
+195
+00:24:27,216 --> 00:24:32,076
+Now, if we, think about this.
+
+196
+00:24:32,076 --> 00:24:39,436
+If we make substitution, if we substitute 1 plus x to the power 4, then du is going to be 4x cubed.
+
+197
+00:24:39,536 --> 00:24:41,076
+So, that's going to be useful here.
+
+198
+00:24:42,576 --> 00:24:46,496
+That substitution, u equals 1 plus x cubed, is useful here.
+
+199
+00:24:47,635 --> 00:24:54,036
+Because du is 4x cubed dx and that x cubed dx appears there, x cubed dx.
+
+200
+00:24:54,996 --> 00:24:55,956
+So, it's useful here.
+
+201
+00:24:56,276 --> 00:25:00,395
+But if we substitute u equals 1 plus x to the power 4 here, it's not useful.
+
+202
+00:25:00,395 --> 00:25:04,256
+Because then, I cannot use 4x cubed dx.
+
+203
+00:25:04,776 --> 00:25:06,956
+But in the numerator, instead, we have x.
+
+204
+00:25:08,076 --> 00:25:09,316
+x to the power of 1.
+
+205
+00:25:09,996 --> 00:25:20,336
+So, if we substitute one more power, if we substitute u equals x squared here, du is going to be 2x dx and that x dx appears there.
+
+206
+00:25:20,655 --> 00:25:23,655
+So, that's going to be useful in this case, in the left hand side.
+
+207
+00:25:24,776 --> 00:25:26,736
+This left integral.
+
+208
+00:25:27,675 --> 00:25:29,115
+Let's make that substitution.
+
+209
+00:25:29,115 --> 00:25:33,576
+So, when we make u equals x squared here, du is 2x dx.
+
+210
+00:25:33,576 --> 00:25:39,395
+And when x is 0, x is 0, u is 0.
+
+211
+00:25:39,536 --> 00:25:41,056
+When x is 1, u is 1.
+
+212
+00:25:41,895 --> 00:25:43,576
+So, this integral becomes 1.
+
+213
+00:25:45,236 --> 00:25:50,496
+So, x to the power 4, when we substitute u equals x squared, this x to the power 4 becomes u squared.
+
+214
+00:25:50,496 --> 00:25:54,476
+So, we get 1 over 1 plus u squared here.
+
+215
+00:25:54,675 --> 00:25:56,615
+So, the denominator is 1 plus u squared.
+
+216
+00:25:56,716 --> 00:25:57,895
+And this x dx.
+
+217
+00:25:57,895 --> 00:26:01,276
+x dx over here is du over 2.
+
+218
+00:26:01,276 --> 00:26:03,256
+So, du over 2.
+
+219
+00:26:03,816 --> 00:26:04,615
+That's what we get.
+
+220
+00:26:04,615 --> 00:26:10,655
+That's nice substitution because we know how to integrate 1 over 1 plus u squared.
+
+221
+00:26:11,076 --> 00:26:12,115
+That's our tangent u.
+
+222
+00:26:12,895 --> 00:26:14,276
+That's one of the elementary integrals.
+
+223
+00:26:14,276 --> 00:26:17,076
+Over here, what do we get?
+
+224
+00:26:17,076 --> 00:26:21,395
+When we substitute u equals 1 plus x to the power 4, du is 4x cubed dx.
+
+225
+00:26:21,395 --> 00:26:25,635
+And on this substitution, when x is 0, u is 1.
+
+226
+00:26:26,256 --> 00:26:28,076
+When x is 1, u is 2.
+
+227
+00:26:28,655 --> 00:26:30,836
+So, we get the integral from 1 to 2.
+
+228
+00:26:31,135 --> 00:26:33,496
+Now, from u equals 1 to u equals 2.
+
+229
+00:26:34,056 --> 00:26:36,155
+This 1 plus x to the power 4 is u.
+
+230
+00:26:36,496 --> 00:26:38,056
+Here, u in the denominator.
+
+231
+00:26:38,615 --> 00:26:43,296
+And this x cubed dx, x cubed dx, x cubed dx is du over 4.
+
+232
+00:26:43,756 --> 00:26:44,996
+Here, du over 4.
+
+233
+00:26:45,675 --> 00:26:46,296
+We get this.
+
+234
+00:26:46,296 --> 00:26:50,316
+And now, rest is evaluating the integral.
+
+235
+00:26:50,976 --> 00:26:54,056
+Integral of 1 over 1 plus u squared is arctangent u.
+
+236
+00:26:54,456 --> 00:26:58,175
+So, together with this constant, we get 1 over 2 arctangent u from 0 to 1.
+
+237
+00:26:58,635 --> 00:27:01,516
+And here, integral of 1 over u is ln absolute value of u.
+
+238
+00:27:01,776 --> 00:27:05,996
+So, together with this constant, we get 1 over 4 ln absolute value of u from 1 to 2.
+
+239
+00:27:06,696 --> 00:27:11,296
+So, here, when u is 1, so 1 over 3 is a constant.
+
+240
+00:27:11,296 --> 00:27:13,875
+When u is 1, arctangent 1 is pi over 4.
+
+241
+00:27:14,196 --> 00:27:15,256
+Arctangent 0 is 0.
+
+242
+00:27:15,355 --> 00:27:16,016
+We get this.
+
+243
+00:27:16,296 --> 00:27:18,756
+And then, over here, 1 over 4 is a constant.
+
+244
+00:27:18,916 --> 00:27:20,276
+When u is 2, we get ln 2.
+
+245
+00:27:20,655 --> 00:27:22,576
+When u is 1, we get ln 0, which is 0.
+
+246
+00:27:23,115 --> 00:27:31,096
+So, we get pi over 8 minus ln 2 over 4 as the result of this double integral.
+
+247
+00:27:35,284 --> 00:27:36,664
+Okay, let's continue.
+
+248
+00:27:37,364 --> 00:27:45,124
+Evaluate the integral 1 to 2, 1 over 2 to 1 over y, e to the power ln x minus x dx dy.
+
+249
+00:27:45,784 --> 00:27:46,664
+Same idea.
+
+250
+00:27:47,384 --> 00:27:53,684
+Here, if we first, if we use this order, e to the power ln x minus x,
+
+251
+00:27:54,524 --> 00:27:57,264
+evaluating that integral with respect to x is not easy.
+
+252
+00:27:57,524 --> 00:27:58,924
+We cannot evaluate that integral easier.
+
+253
+00:28:00,304 --> 00:28:01,403
+Let's draw the region.
+
+254
+00:28:01,804 --> 00:28:03,024
+Outside, we have this.
+
+255
+00:28:03,024 --> 00:28:06,224
+y equals 1, y equals 2, horizontal lines.
+
+256
+00:28:06,924 --> 00:28:09,664
+y equals 1 and y equals 2.
+
+257
+00:28:10,244 --> 00:28:15,424
+Between these two horizontal lines, it's bounded from left by x equals 1 over 2.
+
+258
+00:28:15,984 --> 00:28:18,144
+x equals 1 over 2 is a vertical line here.
+
+259
+00:28:19,384 --> 00:28:20,504
+x equals 1 over 2.
+
+260
+00:28:20,924 --> 00:28:26,384
+And x equals 1 over y comes from right by x equals 1 over y.
+
+261
+00:28:26,604 --> 00:28:27,164
+Let's be careful.
+
+262
+00:28:27,164 --> 00:28:30,044
+So here, these horizontal lines are y equals 1 and y equals 2.
+
+263
+00:28:30,044 --> 00:28:32,184
+So x equals 1 over y.
+
+264
+00:28:32,464 --> 00:28:39,044
+When x is 1 over 2, when x is 1 over 2, y is 2, right?
+
+265
+00:28:39,104 --> 00:28:40,484
+So they intersect at this point.
+
+266
+00:28:40,864 --> 00:28:42,384
+And when x is 1, y is 1.
+
+267
+00:28:42,944 --> 00:28:43,944
+That's the truth of this point.
+
+268
+00:28:44,744 --> 00:28:45,744
+So it's such a curve.
+
+269
+00:28:46,524 --> 00:28:47,024
+This curve.
+
+270
+00:28:48,204 --> 00:28:49,444
+This curve over here.
+
+271
+00:28:49,444 --> 00:28:51,864
+So it's this region over there.
+
+272
+00:28:54,864 --> 00:28:55,764
+Now, we...
+
+273
+00:28:55,764 --> 00:28:59,184
+So this point is x equals 1, y equals 1.
+
+274
+00:28:59,264 --> 00:29:01,724
+This point is x equals 1 over 2, y equals 1.
+
+275
+00:29:01,824 --> 00:29:05,044
+And this point over here is x equals 1 over 2, y equals 2.
+
+276
+00:29:05,044 --> 00:29:10,184
+So now, we consider the same region vertically.
+
+277
+00:29:12,184 --> 00:29:13,184
+So...
+
+278
+00:29:13,184 --> 00:29:18,664
+Now, this region is between these two vertical lines.
+
+279
+00:29:18,784 --> 00:29:21,024
+x equals 1 over 2 and x equals 1.
+
+280
+00:29:23,544 --> 00:29:24,564
+So let's see.
+
+281
+00:29:25,324 --> 00:29:27,224
+So this same integral over here.
+
+282
+00:29:27,464 --> 00:29:30,524
+We will replace dx dy with dy dx.
+
+283
+00:29:30,524 --> 00:29:36,664
+Now, outside, we have x equals 1 over 2 and x equals 1.
+
+284
+00:29:36,864 --> 00:29:39,484
+These are the two vertical lines bounding this region.
+
+285
+00:29:40,064 --> 00:29:45,724
+Between these two vertical lines, the region is bounded below by y equals 1.
+
+286
+00:29:46,324 --> 00:29:48,124
+Here, y equals 1.
+
+287
+00:29:48,644 --> 00:29:51,604
+And bounded above at this curve.
+
+288
+00:29:52,264 --> 00:29:53,104
+This curve.
+
+289
+00:29:53,284 --> 00:29:55,164
+This curve is x equals 1 over y.
+
+290
+00:29:55,164 --> 00:30:00,284
+Which, if we written as y as a function of x, is y equals 1 over x.
+
+291
+00:30:00,824 --> 00:30:02,524
+It's bounded below by y equals 1.
+
+292
+00:30:02,944 --> 00:30:03,684
+Y equals 1.
+
+293
+00:30:04,024 --> 00:30:05,884
+And bounded above by y equals 1 over x.
+
+294
+00:30:07,104 --> 00:30:08,724
+So we get this integral over here.
+
+295
+00:30:09,704 --> 00:30:10,984
+And now...
+
+296
+00:30:10,984 --> 00:30:14,084
+Now we can evaluate this integral with respect to y.
+
+297
+00:30:14,164 --> 00:30:14,903
+It's a constant.
+
+298
+00:30:15,304 --> 00:30:18,423
+E to power ln x minus x times y.
+
+299
+00:30:19,224 --> 00:30:22,704
+This integral evaluated from y equals 1 to y equals 1 over x.
+
+300
+00:30:23,184 --> 00:30:23,944
+What do we get?
+
+301
+00:30:23,944 --> 00:30:28,144
+Here's the power ln x minus x times y is 1 over x.
+
+302
+00:30:28,204 --> 00:30:29,124
+We get 1 over x.
+
+303
+00:30:29,204 --> 00:30:30,284
+When y is 1, we get 1.
+
+304
+00:30:30,884 --> 00:30:32,504
+We get e to power ln x minus x.
+
+305
+00:30:32,764 --> 00:30:33,944
+1 over x minus 1 dx.
+
+306
+00:30:34,624 --> 00:30:38,544
+Now, this integral actually looks complicated, right?
+
+307
+00:30:38,824 --> 00:30:42,084
+This integral looks more complicated than the original one, actually.
+
+308
+00:30:42,664 --> 00:30:43,544
+But actually, it's not.
+
+309
+00:30:43,644 --> 00:30:44,684
+It's easier to integrate.
+
+310
+00:30:44,903 --> 00:30:46,684
+Because when you note that...
+
+311
+00:30:46,684 --> 00:30:48,084
+Let's look at this ln x minus x.
+
+312
+00:30:48,324 --> 00:30:49,224
+What is this derivative?
+
+313
+00:30:49,923 --> 00:30:52,664
+Derivative of ln x minus x is 1 over x minus 1.
+
+314
+00:30:52,764 --> 00:30:53,284
+Here it is.
+
+315
+00:30:53,284 --> 00:30:55,484
+So that's nice because...
+
+316
+00:30:55,484 --> 00:30:58,344
+It's nice because we can make this substitution.
+
+317
+00:30:58,744 --> 00:31:01,484
+When we substitute u equals ln x minus x,
+
+318
+00:31:02,184 --> 00:31:04,364
+du is going to be 1 over x minus 1 dx.
+
+319
+00:31:05,084 --> 00:31:06,364
+So this is just going to be...
+
+320
+00:31:06,364 --> 00:31:07,324
+This is going to be u.
+
+321
+00:31:07,604 --> 00:31:08,544
+So e to power u.
+
+322
+00:31:08,923 --> 00:31:11,864
+And this part, 1 over x minus 1 dx, is going to be du.
+
+323
+00:31:11,864 --> 00:31:14,724
+It's going to be a very simple integral.
+
+324
+00:31:15,244 --> 00:31:16,464
+What are the limits of integration?
+
+325
+00:31:17,284 --> 00:31:25,204
+When x is 1 half, when x is 1 half, u is ln 1 half minus 1 half.
+
+326
+00:31:25,204 --> 00:31:32,903
+So that's going to be...
+
+327
+00:31:31,796 --> 00:31:35,496
+ln 1.5 is the same as ln 2 to the power minus 1.
+
+328
+00:31:36,076 --> 00:31:38,395
+So ln, this ln 1.5.
+
+329
+00:31:39,516 --> 00:31:45,196
+ln 1.5 is the same as ln 2 to the power minus 1, right?
+
+330
+00:31:45,875 --> 00:31:47,895
+1.5 can be written as 2 to the power minus 1.
+
+331
+00:31:47,936 --> 00:31:49,256
+And we can take this minus 1,
+
+332
+00:31:50,615 --> 00:31:53,115
+this exponent minus 1 outside as a factor.
+
+333
+00:31:53,216 --> 00:31:54,155
+We get minus ln 2.
+
+334
+00:31:54,155 --> 00:31:56,476
+So ln 1.5 is the same as minus ln 2.
+
+335
+00:31:58,056 --> 00:32:00,395
+Minus ln 2 and minus 1.5.
+
+336
+00:32:00,395 --> 00:32:02,355
+So this minus ln 2 minus 1.5.
+
+337
+00:32:02,796 --> 00:32:06,875
+When x is 1, u is ln 1, which is 0 minus 1.
+
+338
+00:32:06,956 --> 00:32:07,796
+So u is minus 1.
+
+339
+00:32:07,916 --> 00:32:08,655
+So we get this.
+
+340
+00:32:08,996 --> 00:32:13,436
+When x is 1 over 2, u is this minus ln 2 minus 1.5.
+
+341
+00:32:13,776 --> 00:32:15,276
+When x is 1, u is minus 1.
+
+342
+00:32:15,496 --> 00:32:16,696
+So these are the limits of integration.
+
+343
+00:32:17,375 --> 00:32:18,296
+So we get this integral.
+
+344
+00:32:18,536 --> 00:32:19,176
+E to the power of u.
+
+345
+00:32:19,496 --> 00:32:21,355
+Integral of e to the power of u is e to the power of u.
+
+346
+00:32:21,355 --> 00:32:23,316
+We will evaluate at these points.
+
+347
+00:32:23,895 --> 00:32:25,576
+So when u is minus 1, we get this.
+
+348
+00:32:25,655 --> 00:32:26,676
+e to the power of minus 1.
+
+349
+00:32:26,676 --> 00:32:30,816
+When u is this minus ln 2 minus 1.5,
+
+350
+00:32:30,916 --> 00:32:31,516
+we get this.
+
+351
+00:32:31,635 --> 00:32:33,176
+e to the power of minus ln 2 minus 1.5.
+
+352
+00:32:33,855 --> 00:32:36,576
+So this is e to the power of minus 1 is 1 over e.
+
+353
+00:32:36,836 --> 00:32:37,316
+Minus.
+
+354
+00:32:38,895 --> 00:32:42,635
+This is 1 over e to the power ln 2 times e to the power 1.5.
+
+355
+00:32:42,736 --> 00:32:43,796
+We can write it like that.
+
+356
+00:32:44,596 --> 00:32:46,635
+And this e to the power of ln 2 is just 2.
+
+357
+00:32:47,036 --> 00:32:49,056
+e to the power of 1.5 is square root of e.
+
+358
+00:32:49,056 --> 00:32:50,076
+So we get this.
+
+359
+00:32:50,236 --> 00:32:52,635
+1 over e minus 1 over 2 square root of e
+
+360
+00:32:52,635 --> 00:32:55,256
+as a result of this double integral.
+
+361
+00:33:04,180 --> 00:33:04,580
+Okay.
+
+362
+00:33:06,980 --> 00:33:08,799
+Now, another type of problem.
+
+363
+00:33:10,019 --> 00:33:13,900
+Find the volume of the solid, which is bounded by the planes.
+
+364
+00:33:15,840 --> 00:33:26,960
+Find the volume of the solid, which is bounded by the planes, x equals 0, y equals x, z equals 0, and the parabolic cylinder, z equals 4 minus y squared in the first octane.
+
+365
+00:33:30,644 --> 00:33:34,064
+Find the volume of the solid which is bounded by the planes x equals 0.
+
+366
+00:33:34,963 --> 00:33:37,144
+So x equals 0, which plane is x equals 0?
+
+367
+00:33:37,223 --> 00:33:38,963
+X equals 0 is the yz plane.
+
+368
+00:33:40,384 --> 00:33:43,983
+Y equals x is another plane.
+
+369
+00:33:44,524 --> 00:33:48,124
+Z equals 0 is the xy plane.
+
+370
+00:33:48,324 --> 00:33:52,584
+And this parabolic cylinder, z equals 4 minus y squared in the first of the graph.
+
+371
+00:33:52,923 --> 00:33:53,804
+Let's catch the graph.
+
+372
+00:33:54,403 --> 00:33:55,384
+So it looks like this.
+
+373
+00:33:56,203 --> 00:33:56,483
+Graph.
+
+374
+00:33:56,723 --> 00:33:57,663
+X equals 0.
+
+375
+00:33:58,483 --> 00:34:00,104
+X equals 0 is this.
+
+376
+00:34:00,644 --> 00:34:01,723
+Yz plane.
+
+377
+00:34:01,824 --> 00:34:03,683
+X equals 0 is this yz plane.
+
+378
+00:34:04,344 --> 00:34:04,584
+OK.
+
+379
+00:34:05,723 --> 00:34:07,024
+This yz plane over here.
+
+380
+00:34:07,524 --> 00:34:08,483
+That's x equals 0.
+
+381
+00:34:09,443 --> 00:34:10,384
+Let's understand this.
+
+382
+00:34:10,603 --> 00:34:14,164
+So think of this as x axis, y axis, and z axis.
+
+383
+00:34:14,724 --> 00:34:16,623
+X equals 0 is this yz plane.
+
+384
+00:34:17,003 --> 00:34:17,264
+OK.
+
+385
+00:34:17,983 --> 00:34:18,443
+This part.
+
+386
+00:34:19,543 --> 00:34:21,923
+What is z equals 0?
+
+387
+00:34:21,923 --> 00:34:26,704
+Z equals 0 is this xy plane on the horizontal.
+
+388
+00:34:26,704 --> 00:34:27,864
+OK.
+
+389
+00:34:29,063 --> 00:34:31,403
+So it's between this plane and this plane.
+
+390
+00:34:32,103 --> 00:34:34,583
+This plane is the yz plane.
+
+391
+00:34:34,704 --> 00:34:36,123
+This plane is the xy plane.
+
+392
+00:34:37,083 --> 00:34:39,103
+Between those two planes and what?
+
+393
+00:34:39,224 --> 00:34:41,724
+Y equals x.
+
+394
+00:34:42,384 --> 00:34:44,103
+Think of this as on the xy plane.
+
+395
+00:34:44,184 --> 00:34:45,423
+Y equals x is this line.
+
+396
+00:34:45,423 --> 00:34:48,164
+Just consider z as anything.
+
+397
+00:34:48,583 --> 00:34:49,224
+So this.
+
+398
+00:34:50,083 --> 00:34:50,824
+Such a plane.
+
+399
+00:34:53,063 --> 00:34:54,364
+So this.
+
+400
+00:34:54,903 --> 00:34:55,423
+Y.
+
+401
+00:34:55,543 --> 00:34:57,304
+This x equals 0 yz plane.
+
+402
+00:34:57,483 --> 00:34:58,123
+And this one.
+
+403
+00:34:58,324 --> 00:34:59,123
+Y equals x.
+
+404
+00:34:59,824 --> 00:35:00,684
+It looks like this.
+
+405
+00:35:01,344 --> 00:35:02,123
+It looks like.
+
+406
+00:35:02,123 --> 00:35:05,244
+A book is open 45 degrees.
+
+407
+00:35:05,724 --> 00:35:06,563
+It looks like this.
+
+408
+00:35:07,423 --> 00:35:07,684
+OK.
+
+409
+00:35:08,043 --> 00:35:08,704
+Looks like that.
+
+410
+00:35:09,103 --> 00:35:11,364
+Just open a book 45 degrees.
+
+411
+00:35:12,144 --> 00:35:13,023
+That's how it looks like.
+
+412
+00:35:13,384 --> 00:35:15,483
+And in the bottom, we have the xy plane.
+
+413
+00:35:16,764 --> 00:35:18,164
+These are these three.
+
+414
+00:35:18,644 --> 00:35:20,443
+And z equals 4 minus x squared.
+
+415
+00:35:21,443 --> 00:35:23,123
+Z equals 4 minus x squared.
+
+416
+00:35:23,123 --> 00:35:23,563
+So.
+
+417
+00:35:25,844 --> 00:35:26,963
+Between those two.
+
+418
+00:35:28,483 --> 00:35:30,123
+Z equals 4 minus x squared.
+
+419
+00:35:30,244 --> 00:35:30,864
+Bounds this.
+
+420
+00:35:31,784 --> 00:35:32,023
+Region.
+
+421
+00:35:32,164 --> 00:35:34,164
+Z equals 4 minus x squared.
+
+422
+00:35:34,284 --> 00:35:35,623
+So on the yz plane.
+
+423
+00:35:35,704 --> 00:35:36,943
+Z equals 4 minus x squared.
+
+424
+00:35:37,023 --> 00:35:37,844
+Looks like this.
+
+425
+00:35:39,144 --> 00:35:40,443
+So when we bound it with.
+
+426
+00:35:40,804 --> 00:35:42,264
+These three planes.
+
+427
+00:35:42,264 --> 00:35:43,543
+We get such a region.
+
+428
+00:35:45,324 --> 00:35:45,563
+So.
+
+429
+00:35:47,284 --> 00:35:49,204
+Behind we have this yz plane.
+
+430
+00:35:50,123 --> 00:35:51,123
+On this side.
+
+431
+00:35:51,224 --> 00:35:53,083
+We have this x equals y plane.
+
+432
+00:35:53,123 --> 00:35:54,764
+So these are.
+
+433
+00:35:57,864 --> 00:35:59,684
+How the pages of this book looks like.
+
+434
+00:35:59,784 --> 00:36:01,423
+And in the bottom, we have this.
+
+435
+00:36:02,744 --> 00:36:03,543
+X, y plane.
+
+436
+00:36:04,083 --> 00:36:05,543
+So we have such a region.
+
+437
+00:36:06,403 --> 00:36:08,583
+Now, when we look at this region.
+
+438
+00:36:08,583 --> 00:36:09,884
+On the xy plane.
+
+439
+00:36:12,264 --> 00:36:12,684
+Let's.
+
+440
+00:36:12,724 --> 00:36:13,543
+Let's do it on.
+
+441
+00:36:13,923 --> 00:36:14,563
+Method one.
+
+442
+00:36:14,663 --> 00:36:15,384
+This is method one.
+
+443
+00:36:16,184 --> 00:36:16,344
+So.
+
+444
+00:36:16,443 --> 00:36:17,844
+When we look at the region.
+
+445
+00:36:18,163 --> 00:36:19,244
+On the xy plane.
+
+446
+00:36:19,804 --> 00:36:21,103
+Region on the xy plane.
+
+447
+00:36:21,204 --> 00:36:21,844
+Looks like this.
+
+448
+00:36:23,123 --> 00:36:23,384
+Look.
+
+449
+00:36:23,864 --> 00:36:31,224
+One of the.
+
+450
+00:36:28,371 --> 00:36:31,251
+On the xy-plane we have this region, okay?
+
+451
+00:36:33,571 --> 00:36:36,451
+This is the y-axis, okay?
+
+452
+00:36:36,831 --> 00:36:37,672
+The y-axis.
+
+453
+00:36:38,911 --> 00:36:42,331
+This is the line y equals 2.
+
+454
+00:36:42,531 --> 00:36:44,652
+The horizontal line y equals 2 here.
+
+455
+00:36:45,091 --> 00:36:45,911
+Y equals 2.
+
+456
+00:36:46,331 --> 00:36:48,711
+And this is the line y equals x.
+
+457
+00:36:49,391 --> 00:36:51,172
+Y equals x here.
+
+458
+00:36:54,291 --> 00:36:55,351
+This triangle.
+
+459
+00:36:55,351 --> 00:36:58,811
+This triangle over here on the xy-plane is this triangle over.
+
+460
+00:37:02,643 --> 00:37:22,023
+Okay, so if we call this region R, if we call this region R, what's the question? We're trying to find the volume of the solid. So this is the solid over this region, over this region R, and bounded above under the surface, under the surface, Z equals 4 minus Y squared.
+
+461
+00:37:22,023 --> 00:37:45,243
+So, volume of the solid is the double integral over R of this function, minus Y squared dA. Now, if we use dxdy, solve it in both ways. If we use dxdy, then, if we use dxdy, so outside I will use y.
+
+462
+00:37:45,243 --> 00:38:08,884
+So, it's going to be between y equals 0 and y equals 2. Okay, y equals 0 and y equals 2. Between those two horizontal lines, it's going to be bounded from left, bounded from left by this, x equals 0, x equals 0, and bounded from right by this, x equals y. So, x equals 0 to x equals y.
+
+463
+00:38:08,883 --> 00:38:21,883
+So, then we evaluate this integral, 4 minus y squared. There's a constant with respect to x. The integral is 4 minus y squared times x. Evaluated from x equals 0 to x equals y.
+
+464
+00:38:21,883 --> 00:38:28,523
+So, when x is y, we get y. When x is 0, we get 0. So, this becomes y. So, we get 4 minus y squared times y.
+
+465
+00:38:29,323 --> 00:38:40,743
+Then we multiply that, that's 4y minus y cubed. Now, we integrate it with respect to y. Integral of 4y is 2y squared. Integral of y cubed, this y to the power of 4 over 4. Evaluated from 0 to 2.
+
+466
+00:38:41,583 --> 00:38:50,843
+When y is 0, everything is 0. When y is 2, we get 2 times 4 is 8 minus 16 over 4, which is 4. 8 minus 4 is 4. That's what we get.
+
+467
+00:38:51,884 --> 00:39:02,943
+Okay, method 2. Let's do it the other way. If we use dy dx instead. So, outside, we will have x. Two horizontal lines now.
+
+468
+00:39:04,143 --> 00:39:16,003
+For the two vertical lines. So, it's going to be between x equals 0 and this. Of course, they intersected. The line y equals 2 and y equals x intersect at this point, which is 2, 2.
+
+469
+00:39:16,003 --> 00:39:26,063
+So, this between two vertical lines. X equals 0, x equals 0 and x equals 2. And between these two vertical lines, it's bounded below.
+
+470
+00:39:26,763 --> 00:39:32,143
+On the below by this line, y equals x and bounded above by this line, y equals 2.
+
+471
+00:39:32,843 --> 00:39:35,743
+It's from y equals x to y equals 2.
+
+472
+00:39:35,743 --> 00:39:37,763
+Now, we will integrate.
+
+473
+00:39:39,023 --> 00:39:44,943
+Now, we will integrate with respect to y first. Integral of 4 minus y squared is 4y minus y cubed over 3.
+
+474
+00:39:45,243 --> 00:39:47,803
+From y equals x to y equals 2.
+
+475
+00:39:49,303 --> 00:39:54,563
+So, when y equals 2, we get 8 minus 8 over 3.
+
+476
+00:39:55,543 --> 00:39:59,463
+When y equals x, we get 4x minus x cubed over 3.
+
+477
+00:39:59,463 --> 00:40:05,163
+And then we simplify this. 8 minus 8 over 3. That's 24 minus 8. That's 16 over 3.
+
+478
+00:40:05,423 --> 00:40:07,383
+Minus 4x plus x cubed over 3.
+
+479
+00:40:07,703 --> 00:40:11,063
+Now, we will integrate this with respect to x.
+
+480
+00:40:11,763 --> 00:40:14,103
+Integral of 16 over 3 is 16 over 3x.
+
+481
+00:40:14,363 --> 00:40:16,423
+Integral of 4x is 2x squared.
+
+482
+00:40:17,083 --> 00:40:19,803
+Integral of x to the power of 3 is x to the power of 4 over 4.
+
+483
+00:40:19,884 --> 00:40:22,103
+Together with this, we get x to the power of 4 over 12.
+
+484
+00:40:22,783 --> 00:40:24,323
+Evaluated from 0 to 2.
+
+485
+00:40:24,323 --> 00:40:29,003
+When x is 0, everything is 0.
+
+486
+00:40:29,003 --> 00:40:36,263
+Already when x is 2, we get 32 over 3 minus 8 plus 16 over 12.
+
+487
+00:40:36,343 --> 00:40:38,083
+16 over 12 is 4 over 3.
+
+488
+00:40:38,843 --> 00:40:43,043
+So, 32 plus 4 is 36 over 3.
+
+489
+00:40:43,123 --> 00:40:43,643
+That's 12.
+
+490
+00:40:43,743 --> 00:40:44,843
+12 minus 8 is 4.
+
+491
+00:40:45,263 --> 00:40:50,483
+Of course, we get the same result in both ways.
+
+492
+00:40:50,483 --> 00:40:59,003
+Of course, in the question, we were not asked to solve it in two ways.
+
+493
+00:40:59,323 --> 00:41:00,483
+I just wanted to show...
+
+494
+00:41:00,483 --> 00:41:18,483
+...
+
+495
+00:41:01,235 --> 00:41:02,955
+It can be done in both ways.
+
+496
+00:41:06,096 --> 00:41:06,695
+Okay.
+
+497
+00:41:08,635 --> 00:41:22,335
+Next question, using double integrals, find the area of the region and close by, find the area of the region and close by, y equals x squared, y equals 2 minus x, and y equals 0 sketch the region.
+
+498
+00:41:23,135 --> 00:41:26,215
+Okay, y equals x squared, y equals x squared is this.
+
+499
+00:41:31,956 --> 00:41:36,195
+y equals 2 minus x, y equals 2 minus x is this.
+
+500
+00:41:40,019 --> 00:41:44,440
+ve y'e 0, y'e 0'ı x-axis.
+
+501
+00:41:49,652 --> 00:41:58,552
+So, when we look at these three, I mean the region that's enclosed by these three is this region over here.
+
+502
+00:42:01,072 --> 00:42:09,952
+Here on this side we have y equals x squared, here on this side we have y equals 2 minus x and here we have y equals 0.
+
+503
+00:42:10,811 --> 00:42:12,092
+This region over here.
+
+504
+00:42:12,612 --> 00:42:14,192
+We are asked to find the area of this region.
+
+505
+00:42:14,192 --> 00:42:20,152
+So, let's find the points of intersection of these two, this curve and this line.
+
+506
+00:42:20,891 --> 00:42:21,452
+What are these?
+
+507
+00:42:21,891 --> 00:42:23,811
+y equals x squared and y equals 2 minus 1.
+
+508
+00:42:24,371 --> 00:42:30,612
+When we set them equal to each other, x squared is 2 minus x gives us x squared plus x minus 2 equals 0.
+
+509
+00:42:31,132 --> 00:42:33,132
+It factors as x plus 2x minus 1.
+
+510
+00:42:33,552 --> 00:42:35,572
+Either x is minus 2 or x is 1.
+
+511
+00:42:36,432 --> 00:42:38,851
+x is minus 2 corresponds to this point.
+
+512
+00:42:39,271 --> 00:42:40,811
+x is 1 corresponds to this point.
+
+513
+00:42:40,811 --> 00:42:45,331
+When x is 1 and when x is 1, here y is equal to 1.
+
+514
+00:42:45,811 --> 00:42:47,251
+That's the point we need here.
+
+515
+00:42:47,632 --> 00:42:48,052
+This point.
+
+516
+00:42:50,052 --> 00:42:54,351
+At this point, when x is 1, y is equal to 1 at this point.
+
+517
+00:42:54,592 --> 00:43:01,811
+This point is, of course, this point is the point where this line y equals 2 minus x intersects the x-axis.
+
+518
+00:43:01,811 --> 00:43:05,211
+where y is 0, when y is 0, x is 2.
+
+519
+00:43:05,652 --> 00:43:06,092
+That point.
+
+520
+00:43:06,492 --> 00:43:07,231
+And that's the origin.
+
+521
+00:43:10,172 --> 00:43:10,652
+Okay.
+
+522
+00:43:11,711 --> 00:43:14,652
+So, the best way is find the area.
+
+523
+00:43:14,652 --> 00:43:17,652
+Of course, if I...
+
+524
+00:43:17,652 --> 00:43:28,992
+If I use vertical cross-sections and try to bond it from below, it's bounded from below by this, but from above,
+
+525
+00:43:30,271 --> 00:43:34,992
+it's bounded by this curve from 0 to 1 and bounded by this line from 1 to 2.
+
+526
+00:43:34,992 --> 00:43:41,152
+So, if I use vertical cross-sections, I will have to divide it from 0 to 1 and then from 1 to 2.
+
+527
+00:43:41,552 --> 00:43:44,172
+I will have to write two separate integrals and then the bound.
+
+528
+00:43:44,871 --> 00:43:45,831
+You can try it.
+
+529
+00:43:46,052 --> 00:43:49,412
+You can try and see that you'll find the same answer we bound.
+
+530
+00:43:50,472 --> 00:43:57,412
+But, of course, if you do use horizontal, it's easier because it's bounded from left by a single function, this curve,
+
+531
+00:43:57,751 --> 00:44:00,711
+and found it from right by a single function again, this line.
+
+532
+00:44:00,711 --> 00:44:03,072
+So, let's use horizontal.
+
+533
+00:44:03,672 --> 00:44:04,871
+y equals 0, y equals 1.
+
+534
+00:44:04,972 --> 00:44:06,672
+So, basically, what was the question?
+
+535
+00:44:07,092 --> 00:44:09,092
+Using double integrals, find the area of this region.
+
+536
+00:44:09,731 --> 00:44:13,371
+The area of this region is the double integral over this region, a.
+
+537
+00:44:14,512 --> 00:44:18,331
+Remember, the area of the region is the double integral of the function 1.
+
+538
+00:44:20,092 --> 00:44:20,672
+Which is what?
+
+539
+00:44:22,371 --> 00:44:28,492
+Which is, as I said, I prefer horizontal cross-sections because that becomes easier.
+
+540
+00:44:28,492 --> 00:44:30,731
+So, we use dy outside.
+
+541
+00:44:31,351 --> 00:44:32,412
+So, we use dx dy.
+
+542
+00:44:32,992 --> 00:44:34,412
+So, outside, we have dy.
+
+543
+00:44:34,731 --> 00:44:37,152
+Limits of integration for y are these two horizontal lines.
+
+544
+00:44:37,231 --> 00:44:39,391
+y equals 0 to y equals 1.
+
+545
+00:44:40,072 --> 00:44:45,231
+And between these two horizontal lines, it's bounded from left by this.
+
+546
+00:44:46,512 --> 00:44:48,751
+So, we will write x as a function of y.
+
+547
+00:44:48,992 --> 00:44:50,871
+This function is y equals x squared.
+
+548
+00:44:50,992 --> 00:44:52,412
+So, x equals squared to y.
+
+549
+00:44:52,771 --> 00:44:54,112
+x equals squared to y.
+
+550
+00:44:54,112 --> 00:45:02,711
+And on the right, we have this line bounded from right by this line, which is y equals 2 minus x, which can be written as x equals 2 minus y.
+
+551
+00:45:03,331 --> 00:45:04,932
+Here, x equals 2 minus y.
+
+552
+00:45:06,092 --> 00:45:11,572
+So, integral of dx is x.
+
+553
+00:45:11,572 --> 00:45:17,612
+When we evaluated that 2 minus y and root y, we get this 2 minus y minus 2 minus y minus root y.
+
+554
+00:45:18,432 --> 00:45:23,152
+And we will evaluate this integral with respect to y now from 0 to 1.
+
+555
+00:45:23,851 --> 00:45:25,072
+Integral of 2 is 2y.
+
+556
+00:45:25,211 --> 00:45:26,872
+Integral of y is y squared over 2.
+
+557
+00:45:27,412 --> 00:45:31,692
+Integral of y to the power 1 half is y to the power 3 half times 2 over 3.
+
+558
+00:45:31,692 --> 00:45:35,572
+So, when y is 0, everything is 0 already.
+
+559
+00:45:35,672 --> 00:45:39,231
+When y is 1, we get 2 minus 1 over 2 minus 2 over 3.
+
+560
+00:45:42,172 --> 00:45:44,472
+Which is 3 over 2 minus 2 over 3.
+
+561
+00:45:44,552 --> 00:45:46,052
+That's 5 over 6.
+
+562
+00:45:48,851 --> 00:45:49,411
+Okay.
+
+563
+00:45:51,851 --> 00:45:53,471
+Another area question.
+
+564
+00:45:54,571 --> 00:45:58,511
+Using double integrals, find the area of the region and close by.
+
+565
+00:46:00,692 --> 00:46:08,291
+Using double integrals, find the area of the region and close by y equals lnx, x equals e, and y equals 0.
+
+566
+00:46:10,451 --> 00:46:11,911
+Y equals lnx.
+
+567
+00:46:12,971 --> 00:46:14,571
+That's the graph of y.
+
+568
+00:46:14,571 --> 00:46:20,551
+Okay, it passes through this point, 1, 0.
+
+569
+00:46:20,811 --> 00:46:24,132
+When x is 1, ln1 is 0, and it goes like that.
+
+570
+00:46:25,031 --> 00:46:27,152
+Y equals lnx, x equals e.
+
+571
+00:46:27,331 --> 00:46:29,291
+X equals e is a vertical line here.
+
+572
+00:46:30,571 --> 00:46:33,132
+And what is this point, the point of intersection?
+
+573
+00:46:33,632 --> 00:46:37,531
+When x equals e, y equals ln1, which is 1, right?
+
+574
+00:46:37,771 --> 00:46:38,491
+This point is 1.
+
+575
+00:46:39,451 --> 00:46:41,031
+Y equals 1, corresponds to.
+
+576
+00:46:41,371 --> 00:46:42,291
+And y equals 0.
+
+577
+00:46:42,411 --> 00:46:43,851
+Y equals 0 is the x-axis.
+
+578
+00:46:44,571 --> 00:46:46,172
+Y equals 0.
+
+579
+00:46:46,551 --> 00:46:47,632
+It's this region over here.
+
+580
+00:46:49,491 --> 00:46:50,771
+This region over here.
+
+581
+00:46:52,551 --> 00:46:56,951
+That's the region to find the area.
+
+582
+00:46:57,771 --> 00:46:59,571
+Okay, I have done it in both ways here.
+
+583
+00:47:00,051 --> 00:47:00,551
+Let's do it.
+
+584
+00:47:00,551 --> 00:47:02,271
+Let's do it using both integrals.
+
+585
+00:47:02,652 --> 00:47:02,751
+Oh.
+
+586
+00:47:03,451 --> 00:47:04,811
+In the first case, yeah.
+
+587
+00:47:05,471 --> 00:47:09,411
+If you use vertical, use vertical cross-sections.
+
+588
+00:47:09,411 --> 00:47:13,531
+You do it like this first.
+
+589
+00:47:15,351 --> 00:47:17,391
+Okay, the question is to find the area of this region.
+
+590
+00:47:17,791 --> 00:47:21,692
+Now, so the area of this region, the double integral over this region of dA.
+
+591
+00:47:21,692 --> 00:47:41,291
+If we use vertical, I mean, if you use dy dx, so outside we have x, it's going to be between x equals 1, vertical line, x equals, of course, line y equals lnx intersects the x-axis at this point, x equals 1.
+
+592
+00:47:41,291 --> 00:47:45,351
+So we get this, x equals 1 to x equals e, from 1 to e.
+
+593
+00:47:46,011 --> 00:47:50,731
+In these two vertical lines, it's bounded below y equals 0.
+
+594
+00:47:51,291 --> 00:47:52,591
+Here, y equals 0.
+
+595
+00:47:52,811 --> 00:47:56,431
+And bounded above by this, y equals lnx.
+
+596
+00:47:56,891 --> 00:47:58,011
+Here, y equals lnx.
+
+597
+00:47:58,011 --> 00:48:04,491
+So, integral of dy is y already.
+
+598
+00:48:04,911 --> 00:48:07,451
+Of course, it's been evaluated from 0 to lnx.
+
+599
+00:48:07,491 --> 00:48:08,612
+We get lnx minus 0.
+
+600
+00:48:09,851 --> 00:48:11,112
+So it's just lnx.
+
+601
+00:48:12,231 --> 00:48:13,331
+From 1 to e.
+
+602
+00:48:14,112 --> 00:48:15,591
+1 to e lnx dx.
+
+603
+00:48:17,511 --> 00:48:23,672
+Remember from math 1, the way we integrate lnx is to use integration by parts.
+
+604
+00:48:23,672 --> 00:48:28,771
+So, u equals lnx, we choose dv equals dx, so that this is u dv.
+
+605
+00:48:29,411 --> 00:48:31,811
+If u is lnx, then du is 1 over x dx.
+
+606
+00:48:32,091 --> 00:48:33,911
+And if dv is dx, v is x.
+
+607
+00:48:34,371 --> 00:48:41,211
+So this u dv over here is the same as u v, which is x lnx, minus v du.
+
+608
+00:48:42,071 --> 00:48:44,571
+v du is x times 1 over x, cancel.
+
+609
+00:48:44,692 --> 00:48:46,311
+v du is just integral of dx.
+
+610
+00:48:46,951 --> 00:48:48,491
+Integral of dx is just x.
+
+611
+00:48:48,911 --> 00:48:50,571
+So we get x lnx minus x.
+
+612
+00:48:51,112 --> 00:48:53,192
+x lnx minus x from 1 to e.
+
+613
+00:48:53,672 --> 00:48:59,831
+And if x is e, x is e, we get lnx.
+
+614
+00:48:59,951 --> 00:49:00,791
+lnx is 1.
+
+615
+00:49:00,911 --> 00:49:02,211
+So we get e minus e.
+
+616
+00:49:03,271 --> 00:49:04,951
+Minus, and x is 1.
+
+617
+00:49:05,751 --> 00:49:06,771
+lnx is 1.
+
+618
+00:49:06,771 --> 00:49:08,231
+So this is 0 minus 1.
+
+619
+00:49:08,471 --> 00:49:09,071
+We get this.
+
+620
+00:49:09,132 --> 00:49:11,331
+So this is 0 minus minus 1, which is 1.
+
+621
+00:49:12,031 --> 00:49:12,811
+That's what we get.
+
+622
+00:49:13,791 --> 00:49:14,911
+It's the area of this region.
+
+623
+00:49:15,931 --> 00:49:17,172
+Let's do it the other way.
+
+624
+00:49:18,231 --> 00:49:22,011
+Instead of vertical cross sections, if you use horizontal cross sections,
+
+625
+00:49:22,011 --> 00:49:25,371
+is going to be between y equals 0 and y equals 1.
+
+626
+00:49:26,652 --> 00:49:27,031
+Okay?
+
+627
+00:49:27,451 --> 00:49:30,351
+Instead of dy dx, if we choose dx dy.
+
+628
+00:49:31,311 --> 00:49:34,431
+Now outside, we will have y equals 0 to y equals 1.
+
+629
+00:49:35,071 --> 00:49:36,411
+y equals 0 to y equals 1.
+
+630
+00:49:36,511 --> 00:49:37,731
+These two horizontal lines.
+
+631
+00:49:37,731 --> 00:49:44,112
+And between these two horizontal lines, this region is bounded from left by this.
+
+632
+00:49:44,112 --> 00:49:44,491
+And if we choose to do this, we will have y equals 0 to y equals 0 to y equals 0 to y equals 0 to y equals 0 to y equals 0 to y equals 0 to y equals 0 to y equals 0 to y equals 0 to y equals 0 to y equals 0 to y equals 0 to y equals 0 to y equals 0 to y equals 0 to y equals 0 to y equals 0 to y equals 0 to y equals 0 to y equals 0 to y equals 0 to y equals 0 to y equals 0 to y equals 0 to y equals 0 to y equals 0 to y equals 0 to y equals 0 to y equals 0 to y equals 0 to y equals 0 to y equals 0 to y equals 0 to y equals 0 to y equals 0 to y equals 0 to y equals 0 to y equals 0 to y equals 0 to y equals 0 to y equals 0 to y equals 0 to y equals 0 to y equals 0 to y equals 0 to y equals 0 to y equals 0 to y equals 0 to y equals 0 to y equals 0 to y equals 0 to y equals
+
+633
+00:49:44,755 --> 00:50:14,755
+Y'e y
+
+634
+00:50:14,755 --> 00:50:44,755
+y'e y'
+
+635
+00:50:44,755 --> 00:50:48,056
+Ok
+
+636
+00:50:53,043 --> 00:51:06,943
+Let D be the region enclosed by the curve y equals 2 minus x squared and the line y equals x.
+
+637
+00:51:07,543 --> 00:51:16,043
+Find the volume of the solid bounded above by the surface z equals x squared and below by this region d on the x, y, y.
+
+638
+00:51:16,683 --> 00:51:20,503
+And find the average value of the function fxy equals x squared on this region d.
+
+639
+00:51:20,503 --> 00:51:24,943
+Okay, what is this region?
+
+640
+00:51:25,103 --> 00:51:30,103
+Region is the region enclosed by the curve y equals 2 minus x squared and y equals x.
+
+641
+00:51:32,003 --> 00:51:33,804
+y equals 2 minus x squared.
+
+642
+00:51:33,983 --> 00:51:34,884
+It looks like this.
+
+643
+00:51:39,603 --> 00:52:09,603
+ve y'e x'e y'e y'e x'e y'e
+
+644
+00:52:09,603 --> 00:52:15,443
+a solid bounded by this surface by some surface z equals x squared z equals x squared looks like
+
+645
+00:52:15,443 --> 00:52:23,443
+something like this actually z equals x squared and below by this region d definition the volume is
+
+646
+00:52:23,443 --> 00:52:29,843
+the integral over that region d of that function the function z equals x squared we will integrate
+
+647
+00:52:29,843 --> 00:52:38,083
+that function equals x squared over that region d okay now do you see it's better to use vertical
+
+648
+00:52:38,083 --> 00:52:46,803
+cross sections so if we choose this so it's better to write it as dy dx let's see what happens
+
+649
+00:52:46,803 --> 00:52:53,364
+if we choose x dy if we have chosen dx dy if we have chosen horizontal cross sections like this
+
+650
+00:52:55,364 --> 00:53:00,803
+now we will have to bond this from left okay it's bounded from left by this curve but how about
+
+651
+00:53:00,803 --> 00:53:08,003
+bounded you think from right it's bounded from right by this line up to this point so we would have to
+
+652
+00:53:08,003 --> 00:53:15,283
+separate but separated and bounded from right by this curve up to this point that's not going to be
+
+653
+00:53:15,283 --> 00:53:21,683
+i mean we would have to separate it into two integrals and also we would have to express we would have to
+
+654
+00:53:21,683 --> 00:53:29,123
+express this function as x as a function of y and we would write what x equals square root of two minus y
+
+655
+00:53:29,123 --> 00:53:36,723
+it would be much more complicated okay so this is better using d y dx is better using vertical cross
+
+656
+00:53:36,723 --> 00:53:44,163
+sections so it's between we have already found the points of intersection x equals minus two and x equals
+
+657
+00:53:44,163 --> 00:53:50,643
+one but x equals minus two and x equals one is between these two vertical lines and between these two
+
+658
+00:53:50,643 --> 00:53:59,843
+vertical lines is bounded below by this line y equals x y equals x and bounded above by this curve y equals 2
+
+659
+00:53:59,843 --> 00:54:12,643
+minus x square minus x square here so volume volume of this solid is double integral of x squared full integral of
+
+660
+00:54:12,643 --> 00:54:41,843
+of this function
+
+661
+00:54:18,643 --> 00:54:19,483
+bu region.
+
+662
+00:54:20,023 --> 00:54:20,543
+Bu da bu?
+
+663
+00:54:20,543 --> 00:54:50,543
+Bu da bu
+
+664
+00:54:50,543 --> 00:54:57,783
+x3 minus x to the power of 5 over 5 minus x to the power of 4 over 4 evaluates from minus 2 to 1.
+
+665
+00:54:59,483 --> 00:55:04,243
+So, when x is 1 we get 2 over 3 minus 1 over 5 minus 1 over 4 here.
+
+666
+00:55:04,823 --> 00:55:15,183
+When x is minus 2 we get minus 16 over 3 plus 32 over 5 minus 16 over 4 which is 4.
+
+667
+00:55:15,183 --> 00:55:20,963
+And when you just evaluate this expression, you will get 63 over n.
+
+668
+00:55:21,523 --> 00:55:22,903
+That's the volume of this one.
+
+669
+00:55:23,823 --> 00:55:26,603
+The next question is find the average value of the function.
+
+670
+00:55:27,083 --> 00:55:31,043
+Find the average value of this function on this region.
+
+671
+00:55:31,943 --> 00:55:32,763
+Average value.
+
+672
+00:55:34,003 --> 00:55:35,583
+Remember, we have seen that.
+
+673
+00:55:37,143 --> 00:55:38,723
+We have seen that last week actually.
+
+674
+00:55:39,263 --> 00:55:41,743
+The average value of a function over a region D is
+
+675
+00:55:41,743 --> 00:55:48,403
+the double integral of the function over that region divided by area of that region.
+
+676
+00:55:50,043 --> 00:55:51,443
+We have found this already.
+
+677
+00:55:52,443 --> 00:55:53,183
+We have found it.
+
+678
+00:55:53,543 --> 00:55:54,443
+63 over 20.
+
+679
+00:55:54,563 --> 00:55:55,923
+That's the volume of the solid.
+
+680
+00:55:56,723 --> 00:55:59,283
+To find the average value, we have to find the area of this region.
+
+681
+00:56:00,063 --> 00:56:01,384
+Now, what is the area of this region?
+
+682
+00:56:02,163 --> 00:56:03,523
+Area of this region is
+
+683
+00:56:03,523 --> 00:56:05,903
+the double integral over the region of da.
+
+684
+00:56:06,923 --> 00:56:07,683
+It's the same.
+
+685
+00:56:07,683 --> 00:56:14,643
+y dx minus 2 to 1 x to 2 minus x squared minus 2 to 1 x to 2 minus x squared.
+
+686
+00:56:15,103 --> 00:56:16,863
+That now we integrate the function 1.
+
+687
+00:56:17,263 --> 00:56:20,003
+Find the area of this region itself.
+
+688
+00:56:21,203 --> 00:56:21,623
+So again,
+
+689
+00:56:23,023 --> 00:56:25,623
+a dy is just 2 minus x squared minus x.
+
+690
+00:56:26,384 --> 00:56:27,583
+Then we evaluate this integral.
+
+691
+00:56:28,103 --> 00:56:29,823
+So when we integrate it with respect to x,
+
+692
+00:56:29,884 --> 00:56:34,283
+now we get 2x minus x cubed over 3 minus x squared over 2 plus minus 2 to 1.
+
+693
+00:56:34,283 --> 00:56:38,063
+When x is 1, we get 2 minus 1 over 3 minus 1 over 2.
+
+694
+00:56:38,563 --> 00:56:43,543
+And when x is minus 2, we get minus 4 plus 8 over 3 minus 2.
+
+695
+00:56:43,963 --> 00:56:46,703
+And when we evaluate this expression, we get 9 over 2.
+
+696
+00:56:47,083 --> 00:56:48,623
+So the average value of this function
+
+697
+00:56:48,623 --> 00:56:51,743
+over on this region is
+
+698
+00:56:51,743 --> 00:56:53,523
+its volume,
+
+699
+00:56:53,823 --> 00:56:55,123
+the volume under the surface,
+
+700
+00:56:55,623 --> 00:56:58,384
+which is found to be 63 over 20,
+
+701
+00:56:58,763 --> 00:57:00,823
+divided by the area of the region
+
+702
+00:57:00,823 --> 00:57:02,863
+over which we integrate the function,
+
+703
+00:57:03,523 --> 00:57:04,963
+which is 9 over 2.
+
+704
+00:57:05,163 --> 00:57:07,823
+And it is 7 over 10.
+
+705
+00:57:08,063 --> 00:57:09,483
+That's the average value of this function.
+
+706
+00:57:13,876 --> 00:57:18,416
+Okay, we finished half of the problems. There were 16 problems. We finished 8 of them.
+
+707
+00:57:19,615 --> 00:57:39,896
+And we will continue with polar coordinates. Let's give a break. Let's give a 12-minute break. 12-minute break. I will continue at 9, no, at 10, 10. So we will continue at 10, 10.
+
+708
+00:57:43,539 --> 00:57:45,259
+Okay, any questions before the break?
+
+709
+00:57:47,579 --> 00:57:49,519
+Any questions before the break?
+
+710
+00:57:52,800 --> 00:57:55,759
+All right, no questions, so let's give this break.
+
+711
+01:09:19,731 --> 01:09:20,992
+Alright, let's continue.
+
+712
+01:09:26,579 --> 01:09:32,279
+Okay, the next problem is about double integrals over polar coordinates.
+
+713
+01:09:35,019 --> 01:09:40,460
+So, convert the integral, integral 0 to 1, 0 to square root of 1 minus x squared,
+
+714
+01:09:40,619 --> 01:09:43,920
+f of x squared plus y squared dy dx to polar coordinates.
+
+715
+01:09:45,319 --> 01:09:46,960
+Okay, first let's draw this region.
+
+716
+01:09:48,159 --> 01:09:53,699
+So, x, outside we have x, so two vertical lines, x equals 0 and x equals 1.
+
+717
+01:09:53,699 --> 01:09:57,939
+Here, x equals 0 and x equals 1.
+
+718
+01:09:58,279 --> 01:10:04,420
+And between these two vertical lines, y is between 0, y equals 0, and y equals root 1 minus x squared.
+
+719
+01:10:04,899 --> 01:10:09,859
+Y equals 0 and y equals root 1 minus x squared.
+
+720
+01:10:11,640 --> 01:10:15,220
+Here, this circular region.
+
+721
+01:10:16,600 --> 01:10:21,659
+Of course, y equals root 1 minus x squared means y squared is 1 minus x squared.
+
+722
+01:10:21,659 --> 01:10:25,579
+So, x squared plus y squared is 1 is the circle.
+
+723
+01:10:26,340 --> 01:10:30,220
+Actually, y equals root 1 minus x squared is this.
+
+724
+01:10:30,640 --> 01:10:32,760
+This is y equals root 1 minus x squared.
+
+725
+01:10:33,260 --> 01:10:33,500
+Okay?
+
+726
+01:10:34,960 --> 01:10:36,920
+This is y equals root 1 minus x squared.
+
+727
+01:10:37,019 --> 01:10:43,760
+So, for example, if we had y equals, if we had, for example, y equals minus root 1 minus x squared.
+
+728
+01:10:43,760 --> 01:10:50,720
+Again, when we square both sides, we get y squared equals 1 minus x squared.
+
+729
+01:10:50,819 --> 01:10:53,640
+So, x squared plus y squared equals 1 is, again, the circle.
+
+730
+01:10:53,779 --> 01:10:55,340
+But y is negative in this case.
+
+731
+01:10:55,340 --> 01:11:02,460
+So, if we had this, for example, y equals minus 1 minus x squared, it would be this circle, this half circle.
+
+732
+01:11:02,880 --> 01:11:03,859
+Bottom half circle.
+
+733
+01:11:04,380 --> 01:11:05,720
+The upper half circle is this.
+
+734
+01:11:05,779 --> 01:11:07,359
+Y equals root 1 minus x squared.
+
+735
+01:11:07,359 --> 01:11:09,479
+The bottom half circle is this.
+
+736
+01:11:09,760 --> 01:11:11,779
+Well, minus root 1 minus x squared.
+
+737
+01:11:12,519 --> 01:11:12,800
+Okay?
+
+738
+01:11:14,479 --> 01:11:16,100
+So, now, this is our integral.
+
+739
+01:11:16,239 --> 01:11:16,640
+Where is it?
+
+740
+01:11:17,180 --> 01:11:17,779
+Here it is.
+
+741
+01:11:17,960 --> 01:11:27,199
+So, now, when we convert it to polar, this region over here, now, when we consider it in polar, it's between these two rays.
+
+742
+01:11:27,779 --> 01:11:29,500
+Theta equals 0 and this.
+
+743
+01:11:30,539 --> 01:11:34,399
+Theta equals 0 and theta equals pi over 2.
+
+744
+01:11:34,399 --> 01:11:40,260
+So, what is x squared plus y squared?
+
+745
+01:11:40,399 --> 01:11:42,220
+X squared plus y squared is r squared.
+
+746
+01:11:42,579 --> 01:11:46,159
+So, this f of x squared plus y squared becomes f of r squared.
+
+747
+01:11:46,920 --> 01:11:49,659
+dy dx becomes r dr d theta.
+
+748
+01:11:50,059 --> 01:11:55,279
+Remember, we have this Jacobian factor r when we convert from Cartesian to polar.
+
+749
+01:11:56,039 --> 01:11:57,840
+dy dx is r dr d theta.
+
+750
+01:11:58,199 --> 01:11:59,460
+What are the limits of integration?
+
+751
+01:12:03,252 --> 01:12:31,462
+Bu da'ın ilimine de bu da'ın ilimine de bu da'ın ilimine de bu da'ın ilimine de bu da'ın ilimine de bu da'ın ilimine de bu da'ın ilimine de bu da'ın ilimine de bu da'ın ilimine de bu da'ın ilimine de bu da'ın ilimine de bu da'ın ilimine de bu da'ın ilimine de bu da'ın ilimine de bu da'ın ilimine de bu da'ın ilimine de bu da'ın ilimine de bu da'ın ilimine de bu da'ın ilimine de bu da'ın ilimine de bu da'ın ilimine de bu da'ın ilimine de bu da'ın ilimine de bu da'ın ilimine de bu da'ın ilimine de bu da'ın ilimine de bu da'ın ilimine de bu da'ın ilimine
+
+752
+01:12:34,612 --> 01:12:43,992
+So next question, next problem, evaluate this integral 0 to 1, 0 to square root of 1 minus x squared 1 over 1 plus x squared plus y squared dx dy.
+
+753
+01:12:45,452 --> 01:12:54,032
+Now if we try to evaluate this integral with respect to x, this is not easy to evaluate with respect to x.
+
+754
+01:12:55,212 --> 01:13:02,412
+And even if we change the order of integration and evaluate, try to evaluate it with respect to y, again it's not easy, it's complicated.
+
+755
+01:13:02,412 --> 01:13:11,231
+So instead of that, when we draw this region, so outside we have y1, y now.
+
+756
+01:13:11,551 --> 01:13:17,591
+So it's between y equals 0 and y equals 1, it's two horizontal lines, y equals 0 and y equals 1.
+
+757
+01:13:18,492 --> 01:13:27,632
+And between these horizontal lines, x is between x equals 0, this vertical line, x equals 0 from left, it's bounded from left by this vertical line, x equals 0.
+
+758
+01:13:28,051 --> 01:13:31,511
+And x equals square root of 1 minus y squared, so x equals.
+
+759
+01:13:32,412 --> 01:13:37,172
+Again, x equals square root of 1 minus y squared.
+
+760
+01:13:40,332 --> 01:13:41,132
+What is this?
+
+761
+01:13:41,212 --> 01:13:45,712
+X is positive here, it's square root of something, non-negative let me say.
+
+762
+01:13:46,132 --> 01:13:50,292
+So x square is 1 minus y squared, which means x square plus y square equals 1.
+
+763
+01:13:50,391 --> 01:13:54,011
+So it's the circle of radius 1 where x is positive, so it's the right-hand side.
+
+764
+01:13:54,011 --> 01:13:58,672
+The right-hand side of the circle of radius 1, center-de-tourage, you get this.
+
+765
+01:14:00,471 --> 01:14:05,872
+So it's bounded from right by this circle, so we get this circular, this quarter circle.
+
+766
+01:14:07,311 --> 01:14:08,572
+Quarter circle region.
+
+767
+01:14:09,391 --> 01:14:14,471
+Now, since our region is circular, it's better to convert this into polar.
+
+768
+01:14:14,471 --> 01:14:21,091
+If we convert into polar, this x squared plus y squared is r squared.
+
+769
+01:14:22,271 --> 01:14:23,051
+Here it is.
+
+770
+01:14:23,051 --> 01:14:28,672
+This x squared plus y squared can be replaced with r squared in polar.
+
+771
+01:14:29,252 --> 01:14:31,311
+So we get 1 over 1 plus r squared.
+
+772
+01:14:31,612 --> 01:14:34,492
+D x dy is the same as r dr d theta.
+
+773
+01:14:35,152 --> 01:14:36,612
+What are the limits of integration?
+
+774
+01:14:37,992 --> 01:14:39,471
+It's between these two rays.
+
+775
+01:14:40,152 --> 01:14:41,511
+Same as the above, actually.
+
+776
+01:14:41,692 --> 01:14:42,591
+Theta equals 0.
+
+777
+01:14:43,271 --> 01:14:44,672
+Theta equals pi over 2.
+
+778
+01:14:44,672 --> 01:14:45,452
+Here.
+
+779
+01:14:46,231 --> 01:14:48,832
+Theta equals 0 to theta equals pi over 2.
+
+780
+01:14:49,311 --> 01:14:53,851
+And inside the limits of integration for r, r between these two rays, region is bounded
+
+781
+01:14:53,851 --> 01:14:56,672
+low by nothing.
+
+782
+01:14:56,971 --> 01:15:00,612
+By this point, r equals 0 and bound above by this circle.
+
+783
+01:15:01,212 --> 01:15:02,672
+With equations, r equals 1.
+
+784
+01:15:02,912 --> 01:15:05,212
+So it's between r equals 0 and r equals 1.
+
+785
+01:15:06,771 --> 01:15:08,592
+So get this integrals.
+
+786
+01:15:09,192 --> 01:15:13,672
+And now, as you see, in the numerator denominator, we have 1 plus r squared.
+
+787
+01:15:13,672 --> 01:15:15,351
+But in the numerator, we have r.
+
+788
+01:15:16,051 --> 01:15:17,952
+So we can make substitution.
+
+789
+01:15:18,452 --> 01:15:23,091
+If we substitute u equals 1 plus r squared, du is 2r dr, which appears over there.
+
+790
+01:15:23,692 --> 01:15:27,672
+When r is 0, when r is 0, u is 1.
+
+791
+01:15:28,292 --> 01:15:31,511
+When r is 1, here, u is 2.
+
+792
+01:15:31,931 --> 01:15:34,172
+So we get the integral from 1 to 2.
+
+793
+01:15:34,311 --> 01:15:35,832
+u equals 1 to u equals 2.
+
+794
+01:15:37,192 --> 01:15:38,471
+U equals 1 to u equals 2.
+
+795
+01:15:39,252 --> 01:15:41,592
+This 1 plus r squared, this is u.
+
+796
+01:15:41,752 --> 01:15:43,072
+So we get 1 over u here.
+
+797
+01:15:43,672 --> 01:15:47,612
+And this r dr, r dr is du over 2.
+
+798
+01:15:47,912 --> 01:15:49,252
+We get 1 over 2 du.
+
+799
+01:15:50,212 --> 01:15:51,851
+We get this from 1 to 2.
+
+800
+01:15:52,572 --> 01:15:54,351
+So what is the value of that integral?
+
+801
+01:15:54,851 --> 01:15:58,572
+This 1 over 2, l an absolute value of u from 1 to 2.
+
+802
+01:15:58,572 --> 01:16:02,811
+When u is 2, we get l an absolute value.
+
+803
+01:16:02,811 --> 01:16:04,511
+When u is 1, we get l an absolute value.
+
+804
+01:16:04,511 --> 01:16:06,252
+So we get 1 over 2, l an absolute value.
+
+805
+01:16:06,252 --> 01:16:10,192
+So we evaluate the integral 1 over 2, l an absolute value.
+
+806
+01:16:10,192 --> 01:16:11,811
+From 0 to pi over 2 theta.
+
+807
+01:16:11,811 --> 01:16:14,032
+So we get this integral.
+
+808
+01:16:14,872 --> 01:16:18,971
+Which is just pi over 2 minus 0 times this.
+
+809
+01:16:19,072 --> 01:16:20,452
+So it's pi over 2 times this.
+
+810
+01:16:20,872 --> 01:16:24,172
+We get pi ln 2 over 4 as the value of this integral.
+
+811
+01:16:24,172 --> 01:16:32,612
+So we get 1 over 2.
+
+812
+01:16:27,731 --> 01:16:28,292
+Okay.
+
+813
+01:16:30,652 --> 01:16:42,091
+Next, evaluate the integral minus 1 to 0 minus square to 1 minus x square to 0, 2 over 1 plus root x square plus y square d y dx.
+
+814
+01:16:42,511 --> 01:16:45,652
+It's similar again, similar to the previous problem.
+
+815
+01:16:46,271 --> 01:16:55,771
+Again, if we try to evaluate this integral with respect to y, or even if we change the order of integration and try to integrate it with respect to x, that's not going to be easy.
+
+816
+01:16:55,771 --> 01:17:01,311
+But if we draw the region, outside we have x, x is between minus 1 and 0.
+
+817
+01:17:01,851 --> 01:17:08,292
+So it's between these two vertical lines, but this is the y-axis, this is the x-axis.
+
+818
+01:17:08,572 --> 01:17:12,851
+So it's x equals minus 1 and x equals 0, two vertical lines.
+
+819
+01:17:13,631 --> 01:17:20,971
+Between these two vertical lines, it's between y equals minus root 1 minus x square.
+
+820
+01:17:20,971 --> 01:17:24,872
+As I said above, y equals minus root 1 minus x square.
+
+821
+01:17:25,631 --> 01:17:28,431
+It's again, it's the bottom half circle.
+
+822
+01:17:28,931 --> 01:17:30,112
+The bottom half circle.
+
+823
+01:17:30,731 --> 01:17:33,211
+This circle over here is bounded below by this.
+
+824
+01:17:34,372 --> 01:17:37,051
+y equals minus root 1 minus x square.
+
+825
+01:17:37,591 --> 01:17:40,032
+And bounded above by this, y equals 0.
+
+826
+01:17:40,492 --> 01:17:42,471
+Bound above by this, y equals 0.
+
+827
+01:17:42,471 --> 01:17:49,652
+Okay, so it's this, this quarter circle in the third quadrant.
+
+828
+01:17:49,652 --> 01:18:07,131
+Now, now, so the integral over here, the integral over here can be written as, now we can replace x square by x plus y square with, so square root of x square plus y square, actually, we can replace the square root of x square plus y square by r.
+
+829
+01:18:07,131 --> 01:18:08,572
+Just r.
+
+830
+01:18:08,891 --> 01:18:11,872
+We can replace dy dx by r dr d theta.
+
+831
+01:18:13,372 --> 01:18:15,511
+And what are the limits of integrations?
+
+832
+01:18:15,692 --> 01:18:17,011
+Well, look at this region.
+
+833
+01:18:17,112 --> 01:18:18,572
+It's between these rays, right?
+
+834
+01:18:19,231 --> 01:18:20,292
+It equals pi.
+
+835
+01:18:20,752 --> 01:18:22,171
+That's 180 degrees.
+
+836
+01:18:22,292 --> 01:18:23,971
+And theta equals 3 pi over 2.
+
+837
+01:18:24,692 --> 01:18:25,931
+Theta equals 3 pi over 2.
+
+838
+01:18:26,992 --> 01:18:27,872
+Between these two rays.
+
+839
+01:18:28,551 --> 01:18:32,231
+So theta is between pi and 3 pi over 2.
+
+840
+01:18:32,231 --> 01:18:37,692
+And between these two rays, bounded below by nothing, point, r equals 0.
+
+841
+01:18:37,851 --> 01:18:39,752
+And above by this circle, r equals 1.
+
+842
+01:18:40,152 --> 01:18:43,211
+R is between 0 and 1.
+
+843
+01:18:44,811 --> 01:18:47,872
+So, now the rest is to evaluate this integral.
+
+844
+01:18:48,551 --> 01:18:49,112
+What is this?
+
+845
+01:18:49,192 --> 01:18:50,652
+2r over 1 plus r.
+
+846
+01:18:52,292 --> 01:18:53,252
+Let's separate it.
+
+847
+01:18:53,311 --> 01:18:54,631
+2r over 1 plus r.
+
+848
+01:18:54,752 --> 01:18:58,872
+This 2r over 1 plus r can be written as 2r plus 2 minus 2 over 1 plus r.
+
+849
+01:18:58,872 --> 01:19:02,631
+So, that 2r plus 2 over 1 plus r.
+
+850
+01:19:02,692 --> 01:19:03,771
+This part is just 2.
+
+851
+01:19:04,292 --> 01:19:06,971
+So, it's 2 minus 2 over 1 plus r.
+
+852
+01:19:07,752 --> 01:19:08,671
+Let's write it like this.
+
+853
+01:19:09,332 --> 01:19:11,671
+So, this 2r over 1 plus r can be written like this.
+
+854
+01:19:11,771 --> 01:19:13,391
+2 minus 2 over 1 plus r.
+
+855
+01:19:15,692 --> 01:19:18,032
+Now, integral of 2 is 2r.
+
+856
+01:19:18,532 --> 01:19:22,471
+Integral of 2 over 1 plus r is 2 ln absolute value of 1 plus r.
+
+857
+01:19:22,832 --> 01:19:25,192
+We will evaluate this from r equals 0 to r equals 1.
+
+858
+01:19:25,192 --> 01:19:29,412
+When r equals 1, we get 2 minus 2 ln 2.
+
+859
+01:19:29,851 --> 01:19:33,591
+When r is 0, we get 0 minus 2 ln 1, which is also 0.
+
+860
+01:19:34,671 --> 01:19:36,332
+So, we get 2 minus 2 ln 2.
+
+861
+01:19:36,931 --> 01:19:39,112
+Now, we will evaluate the integral of that.
+
+862
+01:19:39,612 --> 01:19:42,192
+Theta from theta equals pi to 3 pi over 2.
+
+863
+01:19:42,652 --> 01:19:46,372
+We just get this times 3 pi over 2 minus pi,
+
+864
+01:19:47,091 --> 01:19:52,431
+which is 2 times 1 minus ln 2 times this is pi over 2.
+
+865
+01:19:52,431 --> 01:19:55,591
+So, 2 is cancelled, we get minus ln 2 times pi.
+
+866
+01:19:56,591 --> 01:19:58,072
+That's the view of this integral.
+
+867
+01:20:01,844 --> 01:20:16,344
+Okay, next question. Let R be the region. Let R be the region. X, Y in R squared such that X squared plus Y squared is between 1 and 4. So 1 is less than or equal to X squared plus Y squared less than or equal to 4.
+
+868
+01:20:17,623 --> 01:20:20,543
+And 0 is less than or equal to Y less than or equal to X.
+
+869
+01:20:21,923 --> 01:20:23,243
+Evaluate this integral.
+
+870
+01:20:24,503 --> 01:20:31,224
+The double integral over this region R. R is this region. R tangent Y over X da.
+
+871
+01:20:31,844 --> 01:20:39,064
+Okay, sketch the region R. So let's sketch the region R. X squared plus Y squared. X squared plus Y squared equals 1.
+
+872
+01:20:40,323 --> 01:20:46,684
+X squared plus Y squared equals 1 is this circle. X squared plus Y squared equals 4 is this circle.
+
+873
+01:20:46,984 --> 01:20:50,944
+This circle over radius 2. The circle over radius 1 and the circle over radius 2.
+
+874
+01:20:51,703 --> 01:20:56,163
+So you want X squared plus Y squared to be between these two.
+
+875
+01:20:56,583 --> 01:20:59,764
+Between, our region is going to be between these two circles.
+
+876
+01:20:59,764 --> 01:21:05,264
+And in addition, Y is between 0 and X.
+
+877
+01:21:07,684 --> 01:21:10,323
+So Y equals 0. This is Y equals 0.
+
+878
+01:21:11,743 --> 01:21:13,304
+And this is Y equals X.
+
+879
+01:21:15,003 --> 01:21:16,663
+Y must be bigger than X.
+
+880
+01:21:17,123 --> 01:21:18,904
+Sorry, Y must be bigger than 0.
+
+881
+01:21:19,423 --> 01:21:21,003
+Y must be bigger than or equal to 0.
+
+882
+01:21:22,043 --> 01:21:23,644
+It's above the X axis.
+
+883
+01:21:23,644 --> 01:21:25,844
+And Y must be less than or equal to X.
+
+884
+01:21:25,923 --> 01:21:26,963
+So it's below this line.
+
+885
+01:21:26,963 --> 01:21:26,984
+So it's above this line.
+
+886
+01:21:30,292 --> 01:21:33,872
+Y is between these two circles is above the x-axis
+
+887
+01:21:33,872 --> 01:21:36,152
+and is below the line y equals x.
+
+888
+01:21:36,152 --> 01:21:38,412
+It's this region over here.
+
+889
+01:21:39,532 --> 01:21:41,212
+Okay, now,
+
+890
+01:21:43,912 --> 01:21:46,292
+so of course this is a circular region.
+
+891
+01:21:46,292 --> 01:21:50,092
+So it's better to evaluate this integral over here.
+
+892
+01:21:50,092 --> 01:21:52,592
+We get the double integral over R
+
+893
+01:21:52,592 --> 01:21:55,771
+or tangent y over x da as,
+
+894
+01:21:57,132 --> 01:21:59,112
+what is our tangent y over x?
+
+895
+01:22:00,292 --> 01:22:02,372
+A tangent y over x is just theta.
+
+896
+01:22:04,552 --> 01:22:05,632
+Remember in polar,
+
+897
+01:22:07,452 --> 01:22:08,692
+what is y over x?
+
+898
+01:22:08,692 --> 01:22:09,731
+What is y over x?
+
+899
+01:22:09,731 --> 01:22:12,492
+Y is R sine theta,
+
+900
+01:22:12,492 --> 01:22:14,112
+X is R cosine theta.
+
+901
+01:22:14,112 --> 01:22:18,112
+So R sine theta over R cosine theta is tangent theta.
+
+902
+01:22:19,292 --> 01:22:21,832
+R tangent of that is just theta.
+
+903
+01:22:24,771 --> 01:22:26,892
+So this function over here is just theta
+
+904
+01:22:26,892 --> 01:22:30,312
+and da is, we know that da is R dr d theta.
+
+905
+01:22:30,312 --> 01:22:31,152
+We get that.
+
+906
+01:22:31,152 --> 01:22:32,872
+What are the limits of integration?
+
+907
+01:22:32,872 --> 01:22:35,432
+Well, this region is between these two rays.
+
+908
+01:22:35,432 --> 01:22:36,372
+Theta equals zero.
+
+909
+01:22:36,372 --> 01:22:39,712
+And this, since this is the line y equals x,
+
+910
+01:22:39,712 --> 01:22:40,932
+this is line y equals x.
+
+911
+01:22:40,932 --> 01:22:42,731
+This is 45 degrees.
+
+912
+01:22:42,731 --> 01:22:46,152
+So this is the ray theta equals pi over four.
+
+913
+01:22:46,152 --> 01:22:49,812
+So theta is between zero and pi over four.
+
+914
+01:22:49,812 --> 01:22:52,832
+And between these two rays,
+
+915
+01:22:52,832 --> 01:22:54,372
+between these two rays,
+
+916
+01:22:54,372 --> 01:22:57,372
+R is between R equals one and R equals two.
+
+917
+01:22:58,312 --> 01:23:00,152
+These are the two functions.
+
+918
+01:23:00,152 --> 01:23:01,872
+R equals one.
+
+919
+01:23:01,872 --> 01:23:02,932
+That's the circle.
+
+920
+01:23:02,932 --> 01:23:05,412
+And it's bounded below by the circle R equals one
+
+921
+01:23:05,412 --> 01:23:07,532
+and bound above by the circle R equals two.
+
+922
+01:23:07,532 --> 01:23:09,532
+But these are the limits of integration for R.
+
+923
+01:23:09,532 --> 01:23:11,292
+R equals one and R equals two.
+
+924
+01:23:11,292 --> 01:23:12,172
+What do we get?
+
+925
+01:23:14,912 --> 01:23:17,472
+But then if we first integrate with respect to R,
+
+926
+01:23:17,472 --> 01:23:19,212
+theta is a constant here.
+
+927
+01:23:19,212 --> 01:23:21,672
+Integral of R is R square over two.
+
+928
+01:23:21,672 --> 01:23:23,092
+The value is from one to two.
+
+929
+01:23:24,452 --> 01:23:26,692
+So theta over two is a constant here.
+
+930
+01:23:26,692 --> 01:23:27,812
+When R is two, we get four.
+
+931
+01:23:27,812 --> 01:23:28,972
+When R is one, we get one.
+
+932
+01:23:28,972 --> 01:23:29,812
+Four minus one.
+
+933
+01:23:29,812 --> 01:23:30,652
+That's three.
+
+934
+01:23:30,652 --> 01:23:31,892
+over two.
+
+935
+01:23:31,892 --> 01:23:33,472
+Three theta over two.
+
+936
+01:23:33,472 --> 01:23:37,432
+It's going to be integrated from zero to pi over four.
+
+937
+01:23:37,432 --> 01:23:39,392
+Integral of theta is theta square over two.
+
+938
+01:23:39,392 --> 01:23:41,352
+So we get three theta square over four
+
+939
+01:23:41,352 --> 01:23:43,212
+from zero to pi over four.
+
+940
+01:23:43,212 --> 01:23:44,052
+And theta is zero.
+
+941
+01:23:44,052 --> 01:23:45,012
+Everything is zero.
+
+942
+01:23:45,012 --> 01:23:46,312
+And theta is pi over four.
+
+943
+01:23:46,312 --> 01:23:48,092
+We get pi squared over 16.
+
+944
+01:23:48,972 --> 01:23:50,532
+So pi over four squared.
+
+945
+01:23:50,532 --> 01:23:53,752
+So we get three pi squared over 64.
+
+946
+01:23:53,752 --> 01:23:55,512
+That is the value of this integral.
+
+947
+01:23:57,632 --> 01:23:58,472
+Okay.
+
+948
+01:24:00,652 --> 01:24:02,231
+Next question.
+
+949
+01:24:03,332 --> 01:24:04,692
+Using double integrals.
+
+950
+01:24:07,252 --> 01:24:10,012
+Find the volume of this solid inside the paraboloid.
+
+951
+01:24:11,352 --> 01:24:13,332
+Z equals X squared plus Y squared.
+
+952
+01:24:13,692 --> 01:24:14,992
+So this is the paraboloid.
+
+953
+01:24:15,072 --> 01:24:16,792
+Z equals X squared plus Y squared.
+
+954
+01:24:19,072 --> 01:24:20,192
+Here, of course,
+
+955
+01:24:21,792 --> 01:24:23,032
+X squared plus Y squared.
+
+956
+01:24:23,032 --> 01:24:25,412
+So Z is always zero or positive.
+
+957
+01:24:25,412 --> 01:24:29,172
+As Z increases, when Z is zero, we get the point zero, zero.
+
+958
+01:24:29,172 --> 01:24:31,792
+But as Z increases, we get circles.
+
+959
+01:24:32,731 --> 01:24:36,231
+When Z is, when Z is nine, we get circle of radius three.
+
+960
+01:24:36,231 --> 01:24:38,872
+When Z is 16, we get circle of radius four and so on.
+
+961
+01:24:38,872 --> 01:24:40,372
+So it starts from the origin.
+
+962
+01:24:40,372 --> 01:24:41,152
+It opens up.
+
+963
+01:24:41,152 --> 01:24:42,592
+It's growing circles.
+
+964
+01:24:42,592 --> 01:24:43,892
+That's how this looks like.
+
+965
+01:24:44,972 --> 01:24:46,812
+And below the plane, Z equals one.
+
+966
+01:24:47,692 --> 01:24:50,152
+Find the volume of the solid inside this paraboloid.
+
+967
+01:24:50,231 --> 01:24:51,592
+And below the plane, Z equals one.
+
+968
+01:24:52,152 --> 01:24:52,932
+Z equals one.
+
+969
+01:24:53,012 --> 01:24:54,452
+When Z equals one, we get this.
+
+970
+01:24:56,532 --> 01:24:57,712
+When Z equals one,
+
+971
+01:24:58,392 --> 01:24:58,812
+we get
+
+972
+01:24:58,812 --> 01:25:02,052
+the plane, Z equals one.
+
+973
+01:25:02,192 --> 01:25:03,252
+And this paraboloid
+
+974
+01:25:03,252 --> 01:25:05,172
+intersects at
+
+975
+01:25:05,172 --> 01:25:07,672
+X squared plus Y squared equals one.
+
+976
+01:25:07,992 --> 01:25:08,932
+Circle of radius one.
+
+977
+01:25:08,932 --> 01:25:11,512
+This intersects at this circle.
+
+978
+01:25:12,652 --> 01:25:14,652
+On the, at the base, we have that circle.
+
+979
+01:25:14,652 --> 01:25:16,292
+At the base, we have the circle.
+
+980
+01:25:16,852 --> 01:25:17,932
+Above that base.
+
+981
+01:25:22,484 --> 01:25:33,524
+above that over this region r basically over the circular region r surface is bounded
+
+982
+01:25:33,524 --> 01:25:41,364
+bounded below by this bounded below by this by this paraboloid and it's bounded above
+
+983
+01:25:42,724 --> 01:25:50,244
+on above by this plane by this plane z equals one so this is the volume this is the volume
+
+984
+01:25:50,244 --> 01:25:56,324
+is the whole integral over r of
+
+985
+01:25:58,884 --> 01:26:04,884
+one bounding it above which is one minus the one bounding it below which is this x squared plus y
+
+986
+01:26:04,884 --> 01:26:11,524
+squared equals one is the plane bounding it region above equals x squared plus y squared is the
+
+987
+01:26:11,524 --> 01:26:18,244
+region bounding it from love one minus x squared plus y squared yeah but that's the one now of
+
+988
+01:26:18,244 --> 01:26:23,444
+course since region over which we are to evaluate the integral is a circular region it's better to
+
+989
+01:26:23,444 --> 01:26:29,844
+use polar corner system what is this whole region well this is between theta equals zero and theta
+
+990
+01:26:29,844 --> 01:26:38,324
+equals two pi the whole circle from theta equals zero to theta equals two pi r is between zero and one
+
+991
+01:26:38,324 --> 01:26:47,764
+so this is let's write this uh x squared plus y squared r squared right this is one minus r squared
+
+992
+01:26:47,764 --> 01:26:58,004
+right da as r dr d theta and theta is between zero and pi this is the whole circle r is between zero and
+
+993
+01:26:58,004 --> 01:27:05,284
+one since it is the whole region inside the circular radius one r equals zero to one so the rest is evaluating
+
+994
+01:27:05,284 --> 01:27:12,484
+the integral but first let's multiply this we get r minus r cubed when we integrate it integral of r
+
+995
+01:27:12,484 --> 01:27:17,284
+is r square over two integral of r cubed is r over four over four well it's from zero to one get one
+
+996
+01:27:17,284 --> 01:27:24,884
+over two minus one over four that's one over four d theta evaluated from zero to two pi it's one over
+
+997
+01:27:24,884 --> 01:27:30,164
+four times two pi which is pi over two that's the value of this integral
+
+998
+01:27:30,164 --> 01:27:52,164
+so
+
+999
+01:27:33,268 --> 01:27:33,788
+Okay.
+
+1000
+01:27:36,587 --> 01:27:52,667
+Next, let d be the region, d equals xy in r-squared, one is less than or equal to x-squared plus y-squared is less than or equal to e, x-squared plus y-squared is between one and e, y is less than or equal to zero.
+
+1001
+01:27:59,315 --> 01:28:00,795
+Y is less than or equal to zero.
+
+1002
+01:28:01,815 --> 01:28:04,795
+Find the volume of the solid bounded above by the surface
+
+1003
+01:28:04,795 --> 01:28:08,695
+and below by the region D on the XY plane.
+
+1004
+01:28:11,055 --> 01:28:14,015
+Find the volume of the solid bound above by this surface
+
+1005
+01:28:14,015 --> 01:28:16,135
+and below by this region D.
+
+1006
+01:28:16,315 --> 01:28:18,755
+Let's first graph sketched region D.
+
+1007
+01:28:20,735 --> 01:28:23,956
+So, again, X squared plus Y squared equals one,
+
+1008
+01:28:24,036 --> 01:28:25,336
+that's the circle of radius one.
+
+1009
+01:28:25,336 --> 01:28:27,695
+And X squared plus Y squared equals E,
+
+1010
+01:28:27,695 --> 01:28:30,355
+that's the circle of radius square root of E.
+
+1011
+01:28:31,795 --> 01:28:33,815
+So, this circle of radius one
+
+1012
+01:28:33,815 --> 01:28:36,956
+and circle of radius square root of E.
+
+1013
+01:28:37,655 --> 01:28:39,775
+Our region is between these two circles.
+
+1014
+01:28:41,036 --> 01:28:43,155
+Our region D is between these two circles
+
+1015
+01:28:43,155 --> 01:28:44,876
+and Y is less than or equal to zero.
+
+1016
+01:28:45,255 --> 01:28:46,836
+It's below X axis.
+
+1017
+01:28:47,815 --> 01:28:50,055
+Between these two circles and below the X axis.
+
+1018
+01:28:50,195 --> 01:28:51,855
+So, this region over here.
+
+1019
+01:28:52,935 --> 01:28:53,355
+This region.
+
+1020
+01:28:53,355 --> 01:28:58,076
+Now, okay, so what is the question?
+
+1021
+01:28:58,255 --> 01:28:59,635
+Find the volume of the solid
+
+1022
+01:28:59,635 --> 01:29:01,935
+under the above by this surface
+
+1023
+01:29:01,935 --> 01:29:03,975
+or by this region D.
+
+1024
+01:29:04,055 --> 01:29:05,935
+So, its volume is the double integral
+
+1025
+01:29:05,935 --> 01:29:09,456
+over that region D of this function, D A.
+
+1026
+01:29:11,036 --> 01:29:12,675
+And again, this is a circular region.
+
+1027
+01:29:13,215 --> 01:29:13,755
+What is this?
+
+1028
+01:29:13,815 --> 01:29:15,055
+It's between these two rays.
+
+1029
+01:29:15,315 --> 01:29:16,695
+This one, T equals pi
+
+1030
+01:29:16,695 --> 01:29:19,255
+and this one, T equals two pi.
+
+1031
+01:29:19,755 --> 01:29:22,175
+So, since it is below the below the X axis,
+
+1032
+01:29:22,295 --> 01:29:23,135
+it's between these two.
+
+1033
+01:29:23,376 --> 01:29:24,735
+From T equals pi
+
+1034
+01:29:24,735 --> 01:29:26,055
+to T equals two pi.
+
+1035
+01:29:26,376 --> 01:29:26,675
+Return.
+
+1036
+01:29:27,515 --> 01:29:27,975
+And now,
+
+1037
+01:29:29,395 --> 01:29:31,435
+it's between T equals pi
+
+1038
+01:29:31,435 --> 01:29:33,576
+and T equals two pi.
+
+1039
+01:29:34,155 --> 01:29:36,055
+R is between this.
+
+1040
+01:29:36,775 --> 01:29:38,036
+Between these two rays
+
+1041
+01:29:38,036 --> 01:29:39,496
+is bounded below by this.
+
+1042
+01:29:43,828 --> 01:30:13,828
+Yüce Kuzma, Yüce Kuzma, Yüce Kuzma, Yüce Kuzma, Yüce Kuzma, Yüce Kuzma, Yüce Kuzma, Yüce Kuzma, Yüce Kuzma, Yüce Kuzma, Yüce Kuzma, Yüce Kuzma, Yüce Kuzma, Yüce Kuzma, Yüce Kuzma, Yüce Kuzma, Yüce Kuzma, Yüce Kuzma, Yüce Kuzma, Yüce Kuzma, Yüce Kuzma, Yüce Kuzma, Yüce Kuzma, Yüce Kuzma, Yüce Kuzma, Yüce Kuzma, Yüce Kuzma, Yüce Kuzma, Yüce Kuzma, Yüce Kuzma, Yüce Kuzma, Yüce Kuzma
+
+1043
+01:30:13,828 --> 01:31:43,828
+Yüce Kuzma, Yüce Kuzma, Yüce Kuzma, Yüce Kuzma, Yüce Kuzma, Yüce Kuzma, Yüce Kuzma, Yüce Kuzma, Yüce Kuzma, Yüce Kuzma, Yüce Kuzma, Yüce Kuzma, Yüce Kuzma, Yüce Kuzma, Yüce Kuzma, Yüce Kuzma, Yüce Kuzma, Yüce Kuzma, Yüce Kuzma, Yüce Kuzma, Yüce Kuzma, Yüce Kuzma, Yüce Kuzma, Yüce Kuzma, Yüce Kuzma, Yüce Kuzma, Yüce Kuzma, Yüce Kuzma, Yüce Kuzma, Yüce Kuzma, Yüce Kuzma, Yüce K
+
+1044
+01:31:43,828 --> 01:32:13,807
+Sd
+
+1045
+01:32:17,108 --> 01:32:20,828
+Okay, next question.
+
+1046
+01:32:23,568 --> 01:32:42,328
+Let R be the region bounded by the curves, let R be the region bounded by the curves, y equals 1 over x, y equals 9 over x, and the lines y equals x, y equals 4x, on the first quadrant of the x-y plane, on the first quadrant of the x-y plane.
+
+1047
+01:32:42,868 --> 01:32:45,168
+Using substitution, evaluate this integral.
+
+1048
+01:32:47,108 --> 01:32:52,288
+Double integral over this region, R of square of y over x plus square of x-y, tx, dy.
+
+1049
+01:32:52,967 --> 01:32:54,047
+Okay, let's see.
+
+1050
+01:32:54,307 --> 01:32:55,488
+Let's look at the region first.
+
+1051
+01:32:57,268 --> 01:32:58,328
+Y equals 1 over x.
+
+1052
+01:32:58,887 --> 01:33:00,248
+Y equals 1 over x is here.
+
+1053
+01:33:00,988 --> 01:33:02,128
+X times y equals 1.
+
+1054
+01:33:02,908 --> 01:33:04,768
+The other one is y equals 9 over x.
+
+1055
+01:33:05,068 --> 01:33:06,608
+So, that's x times y equals 9.
+
+1056
+01:33:10,036 --> 01:33:12,176
+Y equals X and Y equals 4X.
+
+1057
+01:33:13,916 --> 01:33:14,836
+Y equals X.
+
+1058
+01:33:15,996 --> 01:33:19,416
+Of course, where do these intersect the line Y equals X?
+
+1059
+01:33:19,855 --> 01:33:21,355
+This is X times Y equals 1.
+
+1060
+01:33:21,416 --> 01:33:24,275
+So, it intersects the line Y equals X at 1, 1.
+
+1061
+01:33:24,935 --> 01:33:27,355
+This is the line X times Y.
+
+1062
+01:33:27,435 --> 01:33:29,615
+This is the curve X times Y equals 9.
+
+1063
+01:33:29,895 --> 01:33:32,796
+So, it intersects the line Y equals X at the point 3, 3.
+
+1064
+01:33:34,716 --> 01:33:38,655
+And the other last line is Y equals 4X.
+
+1065
+01:33:38,655 --> 01:33:41,556
+Y equals 4X.
+
+1066
+01:33:42,136 --> 01:33:43,395
+Y equals 4X here.
+
+1067
+01:33:46,056 --> 01:33:47,836
+So, it's this region over here.
+
+1068
+01:33:48,395 --> 01:33:49,256
+This region.
+
+1069
+01:33:50,456 --> 01:33:57,176
+This region between Y equals 1 over X, Y equals 9 over X, Y equals X, and Y equals 4X.
+
+1070
+01:34:00,627 --> 01:34:09,827
+It has four borders. Y equals 4x, y equals x, y equals 1 over x, and y equals 9 over x.
+
+1071
+01:34:10,827 --> 01:34:11,627
+These curves.
+
+1072
+01:34:14,067 --> 01:34:14,547
+Okay.
+
+1073
+01:34:16,327 --> 01:34:23,387
+Now here, here we have squareth of y over x and squareth of x, y.
+
+1074
+01:34:23,787 --> 01:34:26,827
+So we can call, we can make this substitution.
+
+1075
+01:34:26,827 --> 01:34:30,887
+We can call one of them as u, y over x, and x, y.
+
+1076
+01:34:30,967 --> 01:34:32,367
+One of them as u, and one of them as v.
+
+1077
+01:34:32,927 --> 01:34:39,127
+Or we could make the substitution u equals squareth of y over x, and v equals squareth of x, y.
+
+1078
+01:34:39,207 --> 01:34:40,307
+That's also another way.
+
+1079
+01:34:40,707 --> 01:34:44,987
+You can try and solve, try to solve this using that substitution as well.
+
+1080
+01:34:45,688 --> 01:34:46,648
+I'm leaving it to you.
+
+1081
+01:34:47,247 --> 01:34:48,447
+I'm using this substitution.
+
+1082
+01:34:48,648 --> 01:34:52,367
+U equals y over x, and v equals x, y.
+
+1083
+01:34:52,367 --> 01:34:57,427
+When we make that substitution, where is our integral?
+
+1084
+01:35:00,667 --> 01:35:06,667
+Okay, this squareth of y over x is going to become squareth of u, and this squareth of x, y is going to become squareth of v.
+
+1085
+01:35:06,667 --> 01:35:15,527
+And this integral over here, over this region, r is going to convert to a region integral over some region g that's going to be on the uv plane.
+
+1086
+01:35:16,967 --> 01:35:21,587
+Of the Jacobian factor, absolute value of the Jacobian factor times du d.
+
+1087
+01:35:22,148 --> 01:35:23,447
+Now let's use the Jacobian factor.
+
+1088
+01:35:23,567 --> 01:35:24,927
+This is what we have covered yesterday.
+
+1089
+01:35:25,787 --> 01:35:26,847
+Let's find the Jacobian factor.
+
+1090
+01:35:26,987 --> 01:35:29,307
+To find the Jacobian factor, what do we need?
+
+1091
+01:35:29,307 --> 01:35:32,527
+We need to first solve these occasions for x and y.
+
+1092
+01:35:33,387 --> 01:35:39,707
+First of all, if we multiply these two equations, u times v, x is cancelled, we get y squared.
+
+1093
+01:35:40,107 --> 01:35:41,867
+So y is squared of uv.
+
+1094
+01:35:42,688 --> 01:35:43,728
+y is squared of uv.
+
+1095
+01:35:44,427 --> 01:35:51,627
+If we divide the second one by the first, if you look at v over u, now y is cancelled, we get x squared.
+
+1096
+01:35:52,047 --> 01:35:55,027
+So x is squared of v over u.
+
+1097
+01:35:55,027 --> 01:36:02,148
+Well, of course, I'm taking x squared v over u.
+
+1098
+01:36:02,148 --> 01:36:12,887
+So actually x is actually x is plus or minus squared of v over u, but over this region, over this region, on the first quadrant, x and y are both positive.
+
+1099
+01:36:13,728 --> 01:36:18,347
+So I don't have to worry about that minus x and y are both positive, so they're discouraged.
+
+1100
+01:36:19,627 --> 01:36:22,207
+Now, but what is the Jacobian factor?
+
+1101
+01:36:22,207 --> 01:36:29,688
+Delta x over delta, u delta x over delta, v delta y over delta, u delta y over delta.
+
+1102
+01:36:30,307 --> 01:36:32,268
+What's the derivative of x with respect to u?
+
+1103
+01:36:32,387 --> 01:36:35,787
+X is here.
+
+1104
+01:36:35,887 --> 01:36:36,447
+X is what?
+
+1105
+01:36:36,567 --> 01:36:38,527
+X is, let me write it.
+
+1106
+01:36:38,827 --> 01:36:39,487
+X is what?
+
+1107
+01:36:39,728 --> 01:36:49,707
+X is v to the power of 1 half times u to the power of 1 half.
+
+1108
+01:36:49,707 --> 01:36:50,608
+Minus 1.
+
+1109
+01:36:54,003 --> 01:36:59,144
+So, derivative of x with respect to u, v to the power of 1.1 is a constant here.
+
+1110
+01:36:59,764 --> 01:37:04,804
+Derivative of u to the power of minus 1.1 is minus 1.1 times u to the power of minus 3.1.
+
+1111
+01:37:05,104 --> 01:37:05,384
+This.
+
+1112
+01:37:07,524 --> 01:37:09,764
+Plus the derivative of x with respect to v.
+
+1113
+01:37:10,583 --> 01:37:17,823
+Now in this case, derivative of v to the power of minus 1.1 times this constant.
+
+1114
+01:37:18,123 --> 01:37:19,804
+This is a constant now, u to the power of minus 1.1.
+
+1115
+01:37:20,083 --> 01:37:20,923
+You get this?
+
+1116
+01:37:24,003 --> 01:37:28,623
+So, about derivative of y with respect to u, the same.
+
+1117
+01:37:28,743 --> 01:37:30,604
+This is u to the power of 1.1, v to the power of 1.1.
+
+1118
+01:37:30,684 --> 01:37:35,783
+It's derivative of respect to u is 1.1 u to the power of minus 1.1 times v to the power of 1.1.
+
+1119
+01:37:36,423 --> 01:37:42,403
+And derivative of y with respect to v is 1.1 v to the power of minus 1.1 times the constant u to the power of 1.
+
+1120
+01:37:42,863 --> 01:37:43,463
+You get this?
+
+1121
+01:37:45,363 --> 01:37:52,243
+So, determinant of this matrix is the product of these two, which is minus 1 over 4 times.
+
+1122
+01:37:52,243 --> 01:37:56,203
+So, v to the power of 1.1 and v to the power of minus 1.1 they cancel.
+
+1123
+01:37:56,963 --> 01:38:01,283
+u to the power of minus 3.1 times u to the power of 1.1 is u to the power of minus 1.
+
+1124
+01:38:01,384 --> 01:38:01,983
+You get this?
+
+1125
+01:38:02,423 --> 01:38:02,623
+Product.
+
+1126
+01:38:03,703 --> 01:38:05,503
+Minus this product.
+
+1127
+01:38:05,884 --> 01:38:08,363
+Minus this product, which is 1 over 4 times.
+
+1128
+01:38:09,083 --> 01:38:12,344
+Again, v to the power of minus 1.1 and v to the power of 1.1 they cancel.
+
+1129
+01:38:13,024 --> 01:38:17,163
+u to the power of minus 1.1 times u to the power of minus 1.1 is u to the power of minus 1.
+
+1130
+01:38:17,623 --> 01:38:18,203
+You get this?
+
+1131
+01:38:18,203 --> 01:38:21,224
+It's minus 1 over 4 u to the power of minus 1.
+
+1132
+01:38:21,524 --> 01:38:23,583
+Another minus 1 over 4 u to the power of minus 1.
+
+1133
+01:38:23,623 --> 01:38:27,724
+So, we get minus 1 over 2 u to the power of minus 1, which is minus 1 over 2u.
+
+1134
+01:38:28,684 --> 01:38:29,844
+Minus 1 over 2u.
+
+1135
+01:38:30,543 --> 01:38:32,743
+So, since we know that what is u?
+
+1136
+01:38:32,804 --> 01:38:39,163
+u is y over x, whose square root is taken.
+
+1137
+01:38:39,283 --> 01:38:40,983
+So, it's not a negative number.
+
+1138
+01:38:40,983 --> 01:38:47,283
+So, if u is bigger than equals to 0, the absolute value of this Jacobian vector is 1 over 2u.
+
+1139
+01:38:48,604 --> 01:38:56,884
+So, when we put it here, so this is square root of u plus square root of v times the Jacobian vector, which is 1 over 2u du dv.
+
+1140
+01:38:56,943 --> 01:38:57,503
+We get this.
+
+1141
+01:38:58,043 --> 01:38:59,323
+Now, what are the limits of integration?
+
+1142
+01:39:00,703 --> 01:39:03,663
+What are the boundaries of this region r?
+
+1143
+01:39:03,663 --> 01:39:05,604
+Sorry.
+
+1144
+01:39:07,923 --> 01:39:08,764
+This region r.
+
+1145
+01:39:14,104 --> 01:39:14,503
+Yes.
+
+1146
+01:39:15,003 --> 01:39:16,104
+y equals 1 over x.
+
+1147
+01:39:17,483 --> 01:39:19,724
+y equals 9 over x here.
+
+1148
+01:39:20,523 --> 01:39:23,583
+y equals x here.
+
+1149
+01:39:23,884 --> 01:39:27,443
+and y equals 4x here.
+
+1150
+01:39:27,623 --> 01:39:29,344
+These are the boundaries of this region r.
+
+1151
+01:39:29,823 --> 01:39:31,144
+What do they correspond to?
+
+1152
+01:39:31,503 --> 01:39:33,243
+This means x times y is 1.
+
+1153
+01:39:33,243 --> 01:39:34,804
+What is x times y?
+
+1154
+01:39:36,144 --> 01:39:37,884
+x times y is v, basically.
+
+1155
+01:39:38,844 --> 01:39:40,344
+This means equals 1.
+
+1156
+01:39:41,043 --> 01:39:42,623
+This means x, y is 9.
+
+1157
+01:39:43,163 --> 01:39:44,064
+This means v is 9.
+
+1158
+01:39:45,543 --> 01:39:47,923
+y is equal to x means y over x is 1.
+
+1159
+01:39:49,503 --> 01:39:50,863
+Our y over x is u.
+
+1160
+01:39:51,583 --> 01:39:52,403
+That's u equals 1.
+
+1161
+01:39:53,304 --> 01:39:56,323
+And this is y over x is 4, which means v equals 4.
+
+1162
+01:39:56,724 --> 01:39:58,884
+So, we get this rectangle on the u of a plane.
+
+1163
+01:39:58,884 --> 01:40:07,923
+On the u of a plane, we get v equals 1 horizontal line, v equals 9, u equals 1, and u equals 4.
+
+1164
+01:40:07,923 --> 01:40:12,663
+So, limits of integration are easy.
+
+1165
+01:40:12,823 --> 01:40:13,863
+It's a rectangular region.
+
+1166
+01:40:13,863 --> 01:40:25,064
+So, if we write it as du dv, then outside we have v from v equals 1 to v equals 9, and inside we have u from u equals 1 to u equals 4.
+
+1167
+01:40:25,064 --> 01:40:27,304
+So, this is this integral.
+
+1168
+01:40:28,304 --> 01:40:30,024
+Now, the rest is to evaluate this integral.
+
+1169
+01:40:30,024 --> 01:40:34,243
+First, we will evaluate it with respect to u.
+
+1170
+01:40:36,064 --> 01:40:36,984
+What is this?
+
+1171
+01:40:39,264 --> 01:40:49,264
+So, when we distribute this, root u times 1 over 2 u is this, 1 over 2 root u plus root v over 2 u, du dv.
+
+1172
+01:40:49,264 --> 01:40:51,884
+Let me integrate this with respect to u.
+
+1173
+01:40:52,307 --> 01:40:55,347
+İntegre olarak 1 over 2, root u is root u.
+
+1174
+01:40:56,207 --> 01:40:58,988
+İntegre olarak 1 over u is ln absolute value of u.
+
+1175
+01:40:59,068 --> 01:41:00,728
+This root v over 2 is a constant.
+
+1176
+01:41:00,908 --> 01:41:03,167
+Root v over 2 times ln absolute value of u.
+
+1177
+01:41:03,427 --> 01:41:04,028
+We get this.
+
+1178
+01:41:06,127 --> 01:41:11,247
+And we evaluate that from 1 to 4.
+
+1179
+01:41:11,427 --> 01:41:12,127
+What do we get?
+
+1180
+01:41:12,528 --> 01:41:18,707
+When u is 4, we get 2 plus root v over 2 ln 4 minus.
+
+1181
+01:41:18,707 --> 01:41:22,847
+When u is 1, we get 1 plus this ln 1 is 0.
+
+1182
+01:41:23,188 --> 01:41:24,108
+So, this part is 0.
+
+1183
+01:41:24,967 --> 01:41:26,988
+So, this is 2 minus 1 is 1.
+
+1184
+01:41:27,068 --> 01:41:28,068
+We get 1 plus.
+
+1185
+01:41:30,528 --> 01:41:33,167
+This ln 4 can be written as ln 2 squared.
+
+1186
+01:41:33,368 --> 01:41:35,868
+And then when we take that 2 out, 2 is cancel.
+
+1187
+01:41:36,127 --> 01:41:37,188
+This can be written as ln 2.
+
+1188
+01:41:37,188 --> 01:41:39,268
+So, ln 4 over 2 can be written as ln 2.
+
+1189
+01:41:39,707 --> 01:41:42,247
+We get 1 plus ln 2 root v.
+
+1190
+01:41:44,707 --> 01:41:48,047
+Now, we will integrate this with respect to v on 1 to 9.
+
+1191
+01:41:48,707 --> 01:42:07,568
+So,
+
+1192
+01:41:55,028 --> 01:41:57,807
+So, integral of 1 is v.
+
+1193
+01:41:58,668 --> 01:42:01,868
+Integral of root v is v to power 1, half.
+
+1194
+01:42:01,948 --> 01:42:08,708
+Its integral is v to power 3, half times 2, over 3, times this constant ln 2, from 1 to 9.
+
+1195
+01:42:09,288 --> 01:42:15,788
+So, when v is 9, we get 9 plus 2 over 3 ln 2 times 9 to the power 3, half.
+
+1196
+01:42:16,768 --> 01:42:19,688
+9 to the power, square root of 9 is 3, 3 cubed is 27.
+
+1197
+01:42:19,688 --> 01:42:26,807
+We get this minus, then v is 1, we get 1 plus 2 over 3 ln 2 times 1.
+
+1198
+01:42:27,668 --> 01:42:38,368
+And which is going to be, so 9 minus 1 is 8, plus, that's 54 over 3 ln 2, minus 2 over 3 ln 2, that's 52 over 3 ln 2.
+
+1199
+01:42:38,948 --> 01:42:40,068
+We get this result.
+
+1200
+01:42:41,588 --> 01:42:43,548
+As the value of that integral.
+
+1201
+01:42:46,228 --> 01:42:49,088
+Okay, last problem, 16.
+
+1202
+01:42:49,688 --> 01:42:57,608
+Using substitution in double integrals, find the area of the region, find the area of the region, enclosed by the parabolas.
+
+1203
+01:42:58,387 --> 01:43:01,887
+Find the area of the region, enclosed by the parabolas.
+
+1204
+01:43:02,568 --> 01:43:03,608
+Y equals x squared.
+
+1205
+01:43:04,807 --> 01:43:06,507
+Y equals x squared here.
+
+1206
+01:43:07,268 --> 01:43:08,568
+Y equals 2x squared.
+
+1207
+01:43:09,408 --> 01:43:11,368
+Y equals 2x squared is here.
+
+1208
+01:43:12,467 --> 01:43:13,768
+X equals y squared.
+
+1209
+01:43:13,768 --> 01:43:17,688
+Here is x equals y squared.
+
+1210
+01:43:18,347 --> 01:43:20,048
+And x equals 3y squared.
+
+1211
+01:43:20,668 --> 01:43:20,887
+Here.
+
+1212
+01:43:20,887 --> 01:43:25,088
+So it is this region over here.
+
+1213
+01:43:26,368 --> 01:43:27,868
+Founded by these four curves.
+
+1214
+01:43:29,307 --> 01:43:35,228
+We know that area of the region, R, area of this region, R is the double integral over this region, R, dA.
+
+1215
+01:43:35,608 --> 01:43:39,368
+It is double integral over this region, R, dx, dy.
+
+1216
+01:43:39,368 --> 01:43:48,028
+But as you see, over rectangular, in the system, we cannot, I mean, there's nothing hard to integrate.
+
+1217
+01:43:48,188 --> 01:43:50,168
+The integrative is not a integrative as well.
+
+1218
+01:43:50,427 --> 01:43:53,048
+I mean, we can integrate this function with respect to x or y.
+
+1219
+01:43:53,268 --> 01:43:55,648
+But how are we going to determine the limits of integration?
+
+1220
+01:43:56,967 --> 01:44:04,528
+I mean, if we use two vertical lines, well, between these two, I mean, we have to use another vertical line here.
+
+1221
+01:44:04,528 --> 01:44:08,948
+And bounding it from below and above, that's going to be complicated.
+
+1222
+01:44:10,268 --> 01:44:12,748
+Because none of the sides is linear.
+
+1223
+01:44:13,368 --> 01:44:17,427
+All four sides, all four sides of this region are curves.
+
+1224
+01:44:19,507 --> 01:44:23,188
+So using substitution, what kind of a substitution can we use?
+
+1225
+01:44:25,748 --> 01:44:26,748
+What do we see?
+
+1226
+01:44:27,148 --> 01:44:28,168
+We see that here.
+
+1227
+01:44:29,188 --> 01:44:30,088
+Look at this.
+
+1228
+01:44:30,828 --> 01:44:32,788
+Y equals x squared and y equals 2x squared.
+
+1229
+01:44:32,788 --> 01:44:39,028
+So if we call y over x squared as u, y over x squared as u, why am I doing that?
+
+1230
+01:44:39,807 --> 01:44:40,807
+What's the use of that?
+
+1231
+01:44:41,668 --> 01:44:42,068
+Here.
+
+1232
+01:44:42,988 --> 01:44:45,228
+Y equals x squared and y equals 2x squared.
+
+1233
+01:44:45,788 --> 01:44:51,128
+If we call y over x squared as u, this y equals x squared is going to become u equals 1.
+
+1234
+01:44:51,467 --> 01:44:55,648
+And this y over y equals 2x squared is going to become u equals 2.
+
+1235
+01:44:56,188 --> 01:44:58,847
+So I will get u equals 1 and u equals 2, two lines.
+
+1236
+01:44:58,847 --> 01:45:05,467
+Similarly, here we have x equals y squared and x equals 3y squared.
+
+1237
+01:45:05,467 --> 01:45:09,467
+So x divided by y squared, call that v.
+
+1238
+01:45:10,427 --> 01:45:17,427
+If I call that v, these boundaries, x equals y squared is x over y equals 1, which is v equals 1.
+
+1239
+01:45:17,807 --> 01:45:24,288
+And this x equals 3y squared becomes x over y squared equals 3, which is going to become v equals 3.
+
+1240
+01:45:24,288 --> 01:45:33,188
+My region on the uv plane is going to be between u equals 1, u equals 2, v equals 1, v equals 3.
+
+1241
+01:45:33,268 --> 01:45:36,788
+It's going to be a rectangular region and it's going to be easy to evaluate the intake.
+
+1242
+01:45:36,788 --> 01:45:43,188
+I mean, it's going to be easy to determine the limits of integration.
+
+1243
+01:45:43,488 --> 01:45:45,688
+So that's a nice choice of substitution.
+
+1244
+01:45:48,188 --> 01:45:49,528
+So we choose the substitution.
+
+1245
+01:45:49,748 --> 01:45:52,847
+U equals y squared y over x squared equals x over y squared.
+
+1246
+01:45:52,847 --> 01:45:58,807
+No.
+
+1247
+01:45:57,747 --> 01:45:58,707
+What do we get?
+
+1248
+01:45:59,207 --> 01:46:01,147
+Now we need to solve this for x and y.
+
+1249
+01:46:01,467 --> 01:46:04,427
+So from the first equation, we get y equals u x squared.
+
+1250
+01:46:06,247 --> 01:46:09,947
+And so if you put that into the second equation,
+
+1251
+01:46:09,947 --> 01:46:14,027
+we get v equals x over y squared.
+
+1252
+01:46:14,147 --> 01:46:16,407
+If you replace y with this, u x squared squared,
+
+1253
+01:46:16,567 --> 01:46:20,727
+we get x over u squared x to the power of 4.
+
+1254
+01:46:20,727 --> 01:46:31,207
+So from this x cubed, if you throw x,
+
+1255
+01:46:31,447 --> 01:46:34,667
+so this is 1 over u squared x cubed, right?
+
+1256
+01:46:34,667 --> 01:46:36,927
+So if you throw to the left-hand side,
+
+1257
+01:46:37,047 --> 01:46:39,087
+x cubed is equal to 1 over u squared v.
+
+1258
+01:46:40,447 --> 01:46:42,087
+That's what we get from this equation.
+
+1259
+01:46:42,227 --> 01:46:44,327
+x cubed is 1 over u squared v.
+
+1260
+01:46:44,687 --> 01:46:47,527
+Therefore, x is cube root of 1 over u squared v,
+
+1261
+01:46:47,527 --> 01:46:52,487
+which is u to the power of minus 2 over 3 times v
+
+1262
+01:46:52,487 --> 01:46:53,768
+to the power of minus 1 over 3.
+
+1263
+01:46:54,007 --> 01:46:54,927
+That's what x is.
+
+1264
+01:46:55,827 --> 01:46:56,647
+How about y?
+
+1265
+01:46:57,187 --> 01:46:58,967
+Now once x is equal to this,
+
+1266
+01:46:59,527 --> 01:47:01,167
+y is equal to u x squared,
+
+1267
+01:47:01,667 --> 01:47:02,987
+y is equal to u x squared.
+
+1268
+01:47:03,127 --> 01:47:04,947
+So u times square of this,
+
+1269
+01:47:05,547 --> 01:47:09,268
+u times u to the power of minus 4 over 3 times
+
+1270
+01:47:09,268 --> 01:47:10,507
+v to the power of minus 2 over 3,
+
+1271
+01:47:10,507 --> 01:47:13,507
+which is u to the power of minus 1 over 3 times
+
+1272
+01:47:13,507 --> 01:47:14,667
+v to the power of minus 2 over 3.
+
+1273
+01:47:14,667 --> 01:47:18,987
+So x is u to the power of minus 2 over 3,
+
+1274
+01:47:19,067 --> 01:47:20,567
+v to the power of minus 1 over 3.
+
+1275
+01:47:20,947 --> 01:47:23,047
+y is u to the power of minus 1 over 3,
+
+1276
+01:47:23,087 --> 01:47:24,347
+v to the power of minus 2 over 3.
+
+1277
+01:47:24,987 --> 01:47:26,947
+So what is the Jacobian factor?
+
+1278
+01:47:30,847 --> 01:47:33,167
+Au v is delta x over delta u,
+
+1279
+01:47:33,247 --> 01:47:34,327
+delta x over delta v,
+
+1280
+01:47:34,427 --> 01:47:35,527
+delta y over delta u,
+
+1281
+01:47:35,587 --> 01:47:36,607
+delta y over delta v,
+
+1282
+01:47:37,007 --> 01:47:40,327
+which is the derivative of x with respect to u.
+
+1283
+01:47:41,887 --> 01:47:43,627
+The derivative of x with respect to u is
+
+1284
+01:47:43,627 --> 01:47:47,247
+minus 2 over 3 times u to the power of minus 5 over 3 times
+
+1285
+01:47:47,247 --> 01:47:48,387
+this constant.
+
+1286
+01:47:49,427 --> 01:47:51,787
+Derivative of x with respect to v is
+
+1287
+01:47:51,787 --> 01:47:54,687
+this constant u to the power of minus 2 over 3 times
+
+1288
+01:47:54,687 --> 01:47:58,447
+minus 1 over 3 times v to the power of minus 4 over 3 here.
+
+1289
+01:47:59,507 --> 01:48:01,307
+Derivative of y with respect to u
+
+1290
+01:48:01,307 --> 01:48:05,107
+is constant v to the power of minus 2 over 3 is left there,
+
+1291
+01:48:05,527 --> 01:48:08,487
+minus 1 over 3 times u to the power of minus 4 over 3 here.
+
+1292
+01:48:08,487 --> 01:48:11,047
+And derivative of y with respect to v
+
+1293
+01:48:11,047 --> 01:48:14,807
+is this constant u to the power of minus 1 over 3 times
+
+1294
+01:48:14,807 --> 01:48:18,887
+minus 2 over 3 times v to the power of minus 5 over 3 here.
+
+1295
+01:48:19,607 --> 01:48:21,907
+What's the determinant of this matrix?
+
+1296
+01:48:22,447 --> 01:48:25,287
+Product of these two is minus 2 over 3 times
+
+1297
+01:48:25,287 --> 01:48:26,907
+minus 2 over 3 is 4 over 9.
+
+1298
+01:48:26,907 --> 01:48:31,287
+u to the power of minus 5 over 3 times u to the power of minus 1 over 3 is
+
+1299
+01:48:31,287 --> 01:48:32,867
+u to the power of minus 6 over 3.
+
+1300
+01:48:32,947 --> 01:48:34,087
+That's u to the power of minus 2.
+
+1301
+01:48:34,967 --> 01:48:38,307
+And v to the power of minus 1 over 3 times v to the power of minus 5 over 3
+
+1302
+01:48:38,307 --> 01:48:40,268
+is v to the power of minus 6 over 3.
+
+1303
+01:48:40,327 --> 01:48:41,567
+That's v to the power of minus 2.
+
+1304
+01:48:42,627 --> 01:48:42,987
+Minus
+
+1305
+01:48:42,987 --> 01:48:45,747
+this product,
+
+1306
+01:48:46,167 --> 01:48:47,527
+which is minus 1 over 3 times
+
+1307
+01:48:47,527 --> 01:48:48,627
+minus 1 over 3 is minus,
+
+1308
+01:48:48,927 --> 01:48:50,027
+sorry, 1 over 9.
+
+1309
+01:48:50,707 --> 01:48:52,507
+U to the power of minus 2 over 3 times
+
+1310
+01:48:52,507 --> 01:48:54,747
+is v to the power of minus 4 over 3 is v to the power of minus 2.
+
+1311
+01:48:55,287 --> 01:48:59,647
+v to the power of minus 4 over 3 times v to the power of minus 2 over 3 is v to the power of minus 2.
+
+1312
+01:49:00,087 --> 01:49:03,547
+So we get 4 over 9 this minus 1 over 9 that.
+
+1313
+01:49:03,927 --> 01:49:04,707
+That's 3 over 9.
+
+1314
+01:49:04,787 --> 01:49:06,827
+That's 1 over 3 times this.
+
+1315
+01:49:06,827 --> 01:49:08,947
+So 1 over 3 u square v square.
+
+1316
+01:49:09,247 --> 01:49:09,847
+That's what we get.
+
+1317
+01:49:10,268 --> 01:49:11,107
+That's the Jacobian fact.
+
+1318
+01:49:11,887 --> 01:49:13,587
+We have already worked on the boundaries.
+
+1319
+01:49:13,787 --> 01:49:16,347
+We have found that the boundaries are u equals 1, u equals 2,
+
+1320
+01:49:16,727 --> 01:49:17,827
+v equals 1, v equals 3.
+
+1321
+01:49:19,067 --> 01:49:21,107
+It's a rectangular region like this.
+
+1322
+01:49:21,107 --> 01:49:25,407
+So area, let's go back.
+
+1323
+01:49:25,647 --> 01:49:27,667
+We are trying to find the area of this region.
+
+1324
+01:49:28,147 --> 01:49:31,367
+Area of this region is the double integral over R of dx dy,
+
+1325
+01:49:33,427 --> 01:49:37,467
+which is the double integral over this region g of,
+
+1326
+01:49:38,807 --> 01:49:42,607
+now we replace dx dy with the absolute value of the Jacobian times du d.
+
+1327
+01:49:42,967 --> 01:49:47,067
+And the absolute value of the Jacobian is 1 over 3 u square v square here,
+
+1328
+01:49:47,207 --> 01:49:49,847
+1 over 3 v square v square du dv.
+
+1329
+01:49:49,847 --> 01:49:51,727
+And what is the limits of integration?
+
+1330
+01:49:52,607 --> 01:49:54,227
+u equals 1 to u equals 2.
+
+1331
+01:49:54,227 --> 01:50:07,987
+And what is the limit of the Jacobian times du dv.
+
+1332
+01:49:54,640 --> 01:49:59,660
+Here, inside, u equals 1 to u equals 2. Outside, we have v equals 1 to v equals 3.
+
+1333
+01:50:00,200 --> 01:50:01,380
+V equals 1 to v equals 3.
+
+1334
+01:50:02,900 --> 01:50:03,340
+So,
+
+1335
+01:50:07,220 --> 01:50:10,360
+İntegre ile ilgili bir u.
+
+1336
+01:50:10,360 --> 01:50:46,079
+Bu, bir u.
+
+1337
+01:50:46,079 --> 01:50:47,079
+u.
+
+1338
+01:50:47,079 --> 01:51:09,659
+Bu, bir u.
+
+1339
+01:51:09,659 --> 01:51:14,880
+1 over 9 as area of that region.
+
+1340
+01:51:14,880 --> 01:51:19,320
+Okay, that was the last question.
+
+1341
+01:51:19,320 --> 01:51:24,539
+That was the last problem I would like to solve.
+
+1342
+01:51:24,539 --> 01:51:27,619
+And that's the end of the semester.
+
+1343
+01:51:27,619 --> 01:51:39,500
+So, any questions from whatever we covered today or any questions from whatever we covered
+
+1344
+01:51:39,500 --> 01:51:40,500
+is.
+
+1345
+01:51:40,500 --> 01:51:41,500
+Throughout the semester.
+
+1346
+01:51:41,500 --> 01:51:43,500
+Any questions?
+
+1347
+01:51:43,500 --> 01:52:09,500
+Thank you.
+
+1348
+01:51:48,083 --> 01:51:49,423
+Her şey için teşekkürler.
+
+1349
+01:51:51,583 --> 01:51:54,863
+Hocam matematik adına güzel vakaliteli bir dönemde sayenizde çalışmalarınıza başarlar dileriz.
+
+1350
+01:51:54,943 --> 01:51:56,384
+Teşekkür ederim. Ben de teşekkür ederim.
+
+1351
+01:51:57,563 --> 01:51:59,344
+Katılımınız için, dinlediğiniz için.
+
+1352
+01:52:03,304 --> 01:52:04,903
+Ben de hepinize teşekkür ederim.
+
+1353
+01:52:05,844 --> 01:52:06,583
+Katılımınız için.
+
+1354
+01:52:07,743 --> 01:52:11,403
+Thank you all for your attendance and for listening my lectures.
+
+1355
+01:52:14,764 --> 01:52:17,543
+Good luck in your final exams and in
+
+1356
+01:52:17,543 --> 01:52:19,963
+all other exams and in your life.
+
+1357
+01:52:25,743 --> 01:52:28,384
+Any questions about the final exam or
+
+1358
+01:52:28,384 --> 01:52:31,823
+I mean final exam is just like the midterm exam.
+
+1359
+01:52:31,903 --> 01:52:33,224
+It's going to be multiple choice.
+
+1360
+01:52:37,003 --> 01:52:40,503
+I mean it's I think it's going to be the same.
+
+1361
+01:52:41,123 --> 01:52:42,604
+There'll be 20 questions again.
+
+1362
+01:52:43,443 --> 01:52:43,823
+And
+
+1363
+01:52:43,823 --> 01:52:47,523
+it's going to cover everything.
+
+1364
+01:52:47,543 --> 01:52:47,963
+actually
+
+1365
+01:52:47,963 --> 01:52:49,443
+the whole semester
+
+1366
+01:52:49,443 --> 01:52:50,823
+all subjects
+
+1367
+01:52:50,823 --> 01:52:52,523
+we cover throughout the semester.
+
+1368
+01:52:54,123 --> 01:52:55,224
+And yeah that's it.
+
+1369
+01:52:56,443 --> 01:52:58,344
+Okay so if there are no questions
+
+1370
+01:52:58,344 --> 01:53:00,583
+let's finish the semester here.
+
+1371
+01:53:00,724 --> 01:53:01,943
+So good luck in your exams.
+
+1372
+01:53:02,583 --> 01:53:03,804
+Thank you all again.
+
+1373
+01:53:04,523 --> 01:53:06,804
+So you all have a nice day and have a nice holiday
+
+1374
+01:53:06,804 --> 01:53:08,463
+after your exams.
+
+1375
+01:53:08,463 --> 01:53:09,463
+so yeah that's it.
+
+1376
+01:53:09,463 --> 01:53:13,463
+So yeah that's it.
+
+1377
+01:53:17,943 --> 01:53:18,844
+Have a nice holiday.
+
+1378
+01:53:18,844 --> 01:53:32,384
+Bye.

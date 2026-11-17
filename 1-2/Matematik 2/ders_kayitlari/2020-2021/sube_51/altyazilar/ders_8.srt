@@ -1,0 +1,5283 @@
+1
+00:06:49,492 --> 00:06:50,432
+İyi günler, herkes.
+
+2
+00:07:32,339 --> 00:07:33,399
+Okay, let's start.
+
+3
+00:07:37,359 --> 00:07:46,199
+Today we are going to start Chapter 11, Parametric Equations and Polar Coordinates.
+
+4
+00:07:47,139 --> 00:07:50,139
+So, we first start with parametric equations.
+
+5
+00:07:55,539 --> 00:07:57,419
+Parametrizations of playing curves.
+
+6
+00:07:58,959 --> 00:08:01,439
+So, first, so I need this.
+
+7
+00:08:27,956 --> 00:08:28,396
+Ok.
+
+8
+00:08:37,908 --> 00:08:38,908
+İlk başlayalım.
+
+9
+00:08:38,908 --> 00:08:40,908
+Bakın bu fotoğraf.
+
+10
+00:08:40,908 --> 00:11:54,908
+Bu fotoğraf.
+
+11
+00:12:24,563 --> 00:12:38,384
+Yurda Kuzma, ok. Let's continue. Let's say at t equals a, the particle is at this point, and as t increases from a to b, it moves on this curve, and when t is equal to b, the particle is at this point.
+
+12
+00:12:38,384 --> 00:12:56,163
+Yurda Kuzma, Then this point. Responding to equals a F of GA that point is going to be called the initial point of the curve and fob go be the last point on the curve is going to be called the terminal point.
+
+13
+00:12:57,303 --> 00:12:59,443
+Yurda Kuzma, Of this curve and
+
+14
+00:13:04,243 --> 00:13:07,843
+Yurda Kuzma, Okay, let's continue. So, and this is called the parameterization of the curve.
+
+15
+00:13:08,384 --> 00:13:10,223
+Yurda Kuzma, For example, let's start with this.
+
+16
+00:13:11,923 --> 00:13:27,723
+Yurda Kuzma, Look at this. X equals t squared, y equals t plus one. So both x is a function of t, y is a function of t, and here, the interval on which this parametric curve is defined is the set of all real numbers.
+
+17
+00:13:27,723 --> 00:13:32,923
+Yurda Kuzma, So let's look at this first.
+
+18
+00:13:32,923 --> 00:13:41,024
+Yurda Kuzma, Let's look at this table. What is x again x is t squared y is t plus one. Let's give some values.
+
+19
+00:13:41,723 --> 00:13:43,083
+Yurda Kuzma, Some values for t.
+
+20
+00:13:43,083 --> 00:13:52,124
+Yurda Kuzma, Let's say t is minus three minus two minus one zero one two. Let's see what are the x values and y values for these values of t.
+
+21
+00:13:52,124 --> 00:14:04,683
+Yurda Kuzma, What was x? X is t squared. So minus three squared is nine minus two squared is four one zero one four nine. So these are the x values corresponding to these t values. What is y? Y is t plus one.
+
+22
+00:14:04,683 --> 00:14:18,803
+Yurda Kuzma, So when t is minus three, y is minus two. When t is minus two, y is minus one, and so on. So in other words, when t is minus three, the particle is at the point nine comma minus two. Where is it here?
+
+23
+00:14:18,803 --> 00:14:26,203
+9 comma minus two, this point. Then when t is minus two, the particle is at the point four comma minus one.
+
+24
+00:14:27,103 --> 00:14:36,864
+X coordinate is four, y coordinate is minus one, this point. So at t is equal to two, the particle is at this point. Then when t is minus one, it's going to be on one comma zero, this point.
+
+25
+00:14:37,384 --> 00:14:48,783
+Then zero comma one, one comma two, four comma three, nine comma four, and so on. So as t goes from minus three to three, the particle is at the point four comma minus one.
+
+26
+00:14:48,803 --> 00:15:13,583
+So the particle moves on this curve in this direction. So these arrows. These arrows show the direction of movement as t increases. Of course, as t comes from minus infinity, this comes from that infinity minus infinity, that direction. And as t goes to infinity, the particle moves on that direction like that.
+
+27
+00:15:13,583 --> 00:15:30,783
+Of course, this is a parabola actually. And we could, we could actually get the equation of this parabola. And without making use of t, how can we get that? Well, we have two parametric, we have parametric equations here, depending on t.
+
+28
+00:15:30,783 --> 00:15:39,463
+We can solve one of these equations for t and just plug in that into the other equation and see what this equation of this parabola is actually.
+
+29
+00:15:40,483 --> 00:15:42,024
+Where is it? Here.
+
+30
+00:15:43,024 --> 00:15:46,864
+So y is equal to t plus one. What does that mean? T is y minus one.
+
+31
+00:15:46,864 --> 00:15:53,303
+So x is t squared. Just write y minus one for t. We get x is equal to y minus one squared.
+
+32
+00:15:54,943 --> 00:15:59,823
+So x is y squared minus two y plus one. So this is the parabola represented by that.
+
+33
+00:16:00,003 --> 00:16:02,163
+X is equal to y minus one squared.
+
+34
+00:16:03,203 --> 00:16:05,783
+X is equal to y minus one squared. Its graph is this.
+
+35
+00:16:07,223 --> 00:16:09,783
+It's the graph of x equals y minus one squared.
+
+36
+00:16:09,783 --> 00:16:15,283
+So this is basically the, the one passing through the origin is x equals y squared.
+
+37
+00:16:15,583 --> 00:16:20,443
+If we shifted one unit up, we get x equals y minus one squared.
+
+38
+00:16:24,755 --> 00:16:25,755
+Okay.
+
+39
+00:16:27,155 --> 00:16:36,755
+Another example of the parametric curves x equals cosin t y equals sin t, where t is between 0 and 2 pi.
+
+40
+00:16:39,555 --> 00:16:40,755
+Let me see.
+
+41
+00:16:42,155 --> 00:16:43,155
+Okay, no.
+
+42
+00:16:44,155 --> 00:16:46,755
+Okay, think about these two
+
+43
+00:16:48,755 --> 00:16:49,755
+equations.
+
+44
+00:16:49,755 --> 00:16:50,755
+Okay.
+
+45
+00:16:50,755 --> 00:16:54,755
+So when t is 0, when t is 0, what is this?
+
+46
+00:16:56,055 --> 00:17:03,755
+Cosine 0 is 1, sine 0 is 0. So we get this point. When t is 0, we get this point, 1, 0, here.
+
+47
+00:17:04,556 --> 00:17:12,755
+When t is pi over 2, when t is 90 degrees, pi over 2, cosine t is 0, sine t is 1.
+
+48
+00:17:12,755 --> 00:17:21,755
+So when t is pi over 2, we get 0, 1, this point. At t equals pi over 2, the particle is at this point, 0, 1.
+
+49
+00:17:22,755 --> 00:17:30,755
+Then when t is equal to pi, cosine pi is minus 1, sine pi is 0. So we get minus 1, 0 at this point.
+
+50
+00:17:30,755 --> 00:17:33,755
+When t is equal to pi, we get to this point.
+
+51
+00:17:34,755 --> 00:17:43,755
+Then when t is 3 pi over 2, cosine t, cosine 3 pi over 2 is 0, sine 3 pi over 2 is minus 1, we get 0 minus 1, this point.
+
+52
+00:17:44,755 --> 00:17:46,755
+When t is 3 pi over 2, we get to this point.
+
+53
+00:17:46,755 --> 00:17:52,755
+And when t is 2 pi, that's the same as when t is 0, we get to come back to this point again.
+
+54
+00:17:53,755 --> 00:18:03,755
+And at any point in between, so from 0 to 2 pi, as t goes from 0 to 2 pi, x coordinate being cosine t and y coordinate being sine t,
+
+55
+00:18:04,755 --> 00:18:09,755
+the particle traverses this circle in this direction, in the counterclockwise direction.
+
+56
+00:18:09,755 --> 00:18:19,755
+It starts from this point, when t is equal to 0, it moves in this direction, when t is equal to pi, it's going to be here, t is equal to 3 pi over 2, it's going to be here, and so on.
+
+57
+00:18:20,755 --> 00:18:37,755
+Goes like that. So for example, when t is, well, pi over 3, 60 degrees, then cosine pi over 3 is 1 over 2, sine pi over 3 is root 3 over 2, it's going to be at some point over here, corresponding to 60 degrees, basically.
+
+58
+00:18:37,755 --> 00:18:58,755
+1 over 2, root 3 over 2, something like that. And so, so from 0 to 2 pi, this parametric curve is going to, the parametric curve with these equations is going to traverse this circle in the counterclockwise direction exactly once.
+
+59
+00:18:58,755 --> 00:19:10,755
+How about this? Of course, this is the unit circle, unit circle, the circle of radius one. How about this in part b? Well, in this case, everything is multiplied by a.
+
+60
+00:19:11,755 --> 00:19:20,755
+Both cosine t is multiplied by a, sine t is multiplied by a. If you multiply both by a, instead of getting the circle of radius one, we will get the circle of radius a, basically.
+
+61
+00:19:20,755 --> 00:19:30,755
+So for example, when t is 0, cosine 0 is 1, so x is going to be a, y is going to be 0. a comma 0, somewhere here, a comma 0.
+
+62
+00:19:31,755 --> 00:19:44,755
+Then when t is pi over 2, we will get 0 comma a. When t is pi, we will get minus a comma 0. When t is 3 pi over 2, we will get 0 minus a.
+
+63
+00:19:44,755 --> 00:19:54,755
+And the, in this case, in this case, this parametric curve is going to traverse the circle of radius a, centered at the origin.
+
+64
+00:20:00,372 --> 00:20:03,092
+Okay, another example.
+
+65
+00:20:06,211 --> 00:20:18,711
+Position Pxy of a particle moving in the xy plane given by equations and parametric interval x equals root t y equals t, where t is bigger than or equal to zero.
+
+66
+00:20:18,711 --> 00:20:28,211
+Of course, when you look at these equations, x is equal to square root of t, x is equal to square root of t.
+
+67
+00:20:28,211 --> 00:20:35,252
+So, we know that square root function is defined for non-negative numbers only.
+
+68
+00:20:35,252 --> 00:20:36,772
+So, t cannot be negative here.
+
+69
+00:20:36,772 --> 00:20:39,652
+So, we take t to be bigger than or equal to zero.
+
+70
+00:20:40,372 --> 00:20:51,172
+And what kind of a graph does, what kind of a curve does this parametric equations give us?
+
+71
+00:20:51,172 --> 00:21:00,211
+Well, it's, we can just see that t, which is y, which is bigger than or equal to zero, is what?
+
+72
+00:21:00,211 --> 00:21:02,372
+It's just root t squared, right?
+
+73
+00:21:02,372 --> 00:21:03,492
+It's just x squared.
+
+74
+00:21:03,492 --> 00:21:07,892
+So, on the, on these two equations, we can see that y is equal to x squared.
+
+75
+00:21:08,532 --> 00:21:11,892
+So, this basically traverses y is equal to x squared.
+
+76
+00:21:11,892 --> 00:21:20,692
+But, it starts from this point, it does not have the left part of the y equals x squared equation, the graph.
+
+77
+00:21:20,692 --> 00:21:22,211
+It doesn't have the left part.
+
+78
+00:21:22,211 --> 00:21:23,491
+It only has the right part.
+
+79
+00:21:24,292 --> 00:21:24,612
+Why?
+
+80
+00:21:24,612 --> 00:21:26,772
+Because t is bigger than or equal to zero.
+
+81
+00:21:26,772 --> 00:21:30,292
+I mean, here, t is positive, t is bigger than or equal to zero.
+
+82
+00:21:30,292 --> 00:21:32,932
+So, y is always bigger than or equal to zero.
+
+83
+00:21:32,932 --> 00:21:36,772
+X is also square root of t, x is also always bigger than or equal to zero.
+
+84
+00:21:37,332 --> 00:21:40,211
+So, we only have this right part, this part.
+
+85
+00:21:41,971 --> 00:21:43,092
+This part of the graph.
+
+86
+00:21:44,211 --> 00:21:46,692
+Of course, when t is zero, we get zero, zero.
+
+87
+00:21:46,692 --> 00:21:48,372
+When t is one, we get one, one.
+
+88
+00:21:49,092 --> 00:21:56,532
+When t is four, when t is four, we will get two, four, this point, and so on.
+
+89
+00:21:56,532 --> 00:22:03,092
+So, it starts at this point, when t is equal to zero, and it moves on this direction, on this curve,
+
+90
+00:22:03,092 --> 00:22:09,812
+and as t approaches infinity, it goes to infinity, infinity, infinity, both the x-coronant and the y-coronant goes to infinity.
+
+91
+00:22:11,172 --> 00:22:12,532
+Now, let's look at another one.
+
+92
+00:22:14,852 --> 00:22:16,932
+X equals t, y equals t squared.
+
+93
+00:22:17,731 --> 00:22:20,132
+Well, again, when you think of this.
+
+94
+00:22:21,971 --> 00:22:22,211
+Here.
+
+95
+00:22:25,172 --> 00:22:30,052
+This parametric equations gives us, give us that y is the square of x.
+
+96
+00:22:30,052 --> 00:22:31,812
+Y is the square of x.
+
+97
+00:22:33,492 --> 00:22:36,692
+Here, we also have that y is the square of x.
+
+98
+00:22:36,692 --> 00:22:37,012
+Same.
+
+99
+00:22:38,132 --> 00:22:41,572
+But, in this case, we don't have a square root, something like that.
+
+100
+00:22:41,572 --> 00:22:42,852
+We don't have a radical.
+
+101
+00:22:42,852 --> 00:22:44,772
+So, t can be any real number in this case.
+
+102
+00:22:45,492 --> 00:22:50,451
+So, in this parametric curve, in this case, we have the negative part as well.
+
+103
+00:22:50,451 --> 00:22:52,612
+So, we have both sides of this curve.
+
+104
+00:22:52,612 --> 00:22:54,932
+We have the complete curve.
+
+105
+00:22:55,812 --> 00:23:00,211
+As t goes from minus infinity to infinity, it moves on this direction.
+
+106
+00:23:00,211 --> 00:23:02,372
+And t is equal to zero, it's going to be here.
+
+107
+00:23:02,372 --> 00:23:04,451
+And t is one, it's going to be here.
+
+108
+00:23:04,451 --> 00:23:08,211
+When t is two, in this case, it's going to be on the point two comma four.
+
+109
+00:23:08,772 --> 00:23:10,932
+So, note the difference here.
+
+110
+00:23:13,012 --> 00:23:16,932
+For each value of t is this curve on the point two comma four.
+
+111
+00:23:16,932 --> 00:23:19,012
+It's going to be there when t is four, right?
+
+112
+00:23:19,012 --> 00:23:19,492
+This one.
+
+113
+00:23:19,492 --> 00:23:22,612
+When t is four, we will get x equals two, y equals four.
+
+114
+00:23:23,172 --> 00:23:27,412
+But, on the other hand, this one is us.
+
+115
+00:23:30,451 --> 00:23:32,532
+When t is two, we will get to that point.
+
+116
+00:23:32,532 --> 00:23:35,412
+When t is two, x is going to be due to y is going to be four.
+
+117
+00:23:35,412 --> 00:23:39,812
+So, for t bigger than or equal to zero, they both traverse
+
+118
+00:23:39,812 --> 00:23:45,572
+the right half of this curve, y equals x squared, for different values of t.
+
+119
+00:23:45,572 --> 00:23:48,612
+I mean, one of them is faster than the other, actually.
+
+120
+00:23:48,612 --> 00:23:52,292
+The motion of the particle on one of the parameters.
+
+121
+00:23:55,332 --> 00:23:56,292
+Oh, let's see.
+
+122
+00:23:56,292 --> 00:23:58,292
+I'm going to skip this example.
+
+123
+00:23:58,292 --> 00:24:00,292
+Okay, let's look at this one.
+
+124
+00:24:02,003 --> 00:24:32,003
+Y'e t'in t
+
+125
+00:24:32,003 --> 00:24:41,443
+for y right and t is one we get this when t is two when t is two one over two is zero point five
+
+126
+00:24:42,243 --> 00:24:49,283
+so x is the sum of them which is two point five y is the difference of them which is one point five
+
+127
+00:24:50,723 --> 00:24:56,884
+when t is five one over t is one over five which is zero point two so x is the sum of them which is
+
+128
+00:24:56,884 --> 00:25:02,963
+five point two y is the difference of them which is four point eight and so on and also when uh for
+
+129
+00:25:02,963 --> 00:25:09,523
+example when t is zero point one in this case one over t is going to be ten x is the sum of them ten
+
+130
+00:25:09,523 --> 00:25:14,483
+point one why is the difference t minus one over t is going to be zero point one minus ten which is
+
+131
+00:25:14,483 --> 00:25:22,403
+minus nine point nine so we get these values so when we put them in to the earth what do we get
+
+132
+00:25:22,403 --> 00:25:31,523
+oh one one sorry when t is one we get two comma zero two comma zero this point point when t is one
+
+133
+00:25:33,043 --> 00:25:46,483
+when t is two we get two point five one point five here and t is mine zero point
+
+134
+00:25:43,347 --> 00:25:45,667
+0.5, they didn't write it.
+
+135
+00:25:49,028 --> 00:25:55,827
+When t is 5, we will get 5.2, 4.8 here and 10.1, 9.9 when t is 10.
+
+136
+00:25:56,627 --> 00:26:01,748
+And on the other side, when t is 0.1, we get 10.1 minus 9.9.
+
+137
+00:26:02,387 --> 00:26:05,907
+Just the symmetry of this around the x-axis.
+
+138
+00:26:06,627 --> 00:26:10,147
+And when t is 0.2, we get 5.2 minus 4.8.
+
+139
+00:26:10,147 --> 00:26:14,147
+Just the reflection of these points through the x-axis.
+
+140
+00:26:14,147 --> 00:26:18,788
+So we get a hyperball actually, which is symmetric around the x-axis.
+
+141
+00:26:18,788 --> 00:26:21,268
+And we can actually get the equation of that hyperball.
+
+142
+00:26:21,268 --> 00:26:21,748
+Let's see.
+
+143
+00:26:22,548 --> 00:26:23,107
+Done here.
+
+144
+00:26:24,467 --> 00:26:27,587
+So let's just, let's look at these two equations.
+
+145
+00:26:28,467 --> 00:26:30,067
+If you subtract them, what do we get?
+
+146
+00:26:33,347 --> 00:26:35,587
+If you subtract them, x minus y is
+
+147
+00:26:35,587 --> 00:26:41,107
+t plus 1 over t minus t minus 1 over t.
+
+148
+00:26:41,107 --> 00:26:42,947
+So t is canceled, we get 2 over t.
+
+149
+00:26:44,387 --> 00:26:48,387
+If you add them on the other side hand, if you add x and y.
+
+150
+00:26:50,867 --> 00:26:53,748
+Get t plus 1 over t plus t minus 1 over t.
+
+151
+00:26:53,748 --> 00:26:55,827
+In this case, 1 over t is canceled, we get 2t.
+
+152
+00:26:56,788 --> 00:27:01,587
+Now, when we multiply these two, t's are going to be canceled.
+
+153
+00:27:01,587 --> 00:27:05,907
+So when we multiply these two equations, multiply these three equations,
+
+154
+00:27:05,907 --> 00:27:10,067
+x minus y times x plus y is going to be 2 over t times 2t.
+
+155
+00:27:10,067 --> 00:27:11,667
+t is canceled, we get 4.
+
+156
+00:27:11,667 --> 00:27:12,867
+So we get this equation.
+
+157
+00:27:13,667 --> 00:27:15,988
+x minus y times x plus y is equal to 4.
+
+158
+00:27:15,988 --> 00:27:19,028
+Of course, the left hand side is x square minus y square.
+
+159
+00:27:19,028 --> 00:27:20,788
+But we get this equation.
+
+160
+00:27:20,788 --> 00:27:23,508
+x squared minus y squared is equal to 4.
+
+161
+00:27:23,508 --> 00:27:26,707
+And this is minus y squared equals 4.
+
+162
+00:27:26,707 --> 00:27:29,748
+This is basically graph of this hyperball.
+
+163
+00:27:30,707 --> 00:27:32,548
+x squared minus y squared equals 4.
+
+164
+00:27:34,707 --> 00:27:38,467
+And again, okay.
+
+165
+00:27:38,467 --> 00:27:40,387
+So here, what are the t values?
+
+166
+00:27:40,387 --> 00:27:41,187
+t is positive.
+
+167
+00:27:42,228 --> 00:27:42,947
+It's positive.
+
+168
+00:27:45,667 --> 00:27:48,307
+As t approaches 0, the curve is going to be here.
+
+169
+00:27:48,307 --> 00:27:55,347
+It comes from this direction as t starts to be a positive number.
+
+170
+00:27:55,347 --> 00:27:56,467
+It comes from this direction.
+
+171
+00:27:56,467 --> 00:28:01,508
+So 0.1 t is equal to 0.2 t is equal to 0.4 t is equal to 1.
+
+172
+00:28:01,508 --> 00:28:03,988
+When t is 1, it's going to be at this vertex.
+
+173
+00:28:04,708 --> 00:28:07,187
+Then t equals 2, 5, 10.
+
+174
+00:28:07,827 --> 00:28:10,548
+As t increases, it's going to move on this direction.
+
+175
+00:28:13,587 --> 00:28:14,147
+Okay.
+
+176
+00:28:14,147 --> 00:28:16,067
+Now let's look at another example.
+
+177
+00:28:21,556 --> 00:28:22,756
+Let's look at this one now.
+
+178
+00:28:24,115 --> 00:28:25,556
+X equals 2 second T.
+
+179
+00:28:26,076 --> 00:28:27,496
+Y equals 2 tangent T.
+
+180
+00:28:27,936 --> 00:28:31,336
+Where T is between minus pi over 2 and pi over 2.
+
+181
+00:28:32,296 --> 00:28:34,355
+Now, we have this identity.
+
+182
+00:28:34,635 --> 00:28:37,276
+Second square T minus tangent square T is equal to 1.
+
+183
+00:28:38,175 --> 00:28:40,056
+That's one of the trigonometric identities.
+
+184
+00:28:41,036 --> 00:28:43,336
+Second square T minus tangent square T is 1.
+
+185
+00:28:43,756 --> 00:28:47,576
+So, what is X squared minus Y squared?
+
+186
+00:28:47,576 --> 00:28:49,135
+X squared minus Y squared.
+
+187
+00:28:49,256 --> 00:28:50,976
+X squared is the square of this.
+
+188
+00:28:50,976 --> 00:28:55,196
+4 second square T minus Y squared, which is 4 tangent square T,
+
+189
+00:28:55,635 --> 00:28:58,855
+which is equal to 4 times second square T minus tangent square T.
+
+190
+00:28:59,196 --> 00:29:03,556
+We know that this second square T minus tangent square T is 1.
+
+191
+00:29:04,056 --> 00:29:04,776
+So, we get 4.
+
+192
+00:29:05,395 --> 00:29:07,756
+So, we get X squared minus Y squared equals 4.
+
+193
+00:29:08,696 --> 00:29:09,476
+Look at this.
+
+194
+00:29:11,436 --> 00:29:13,395
+We get exactly the same hyperbole.
+
+195
+00:29:13,996 --> 00:29:15,976
+X squared minus Y squared is equal to 4.
+
+196
+00:29:16,236 --> 00:29:20,776
+So, note that this one is parameterized as X equals T plus 1 over T.
+
+197
+00:29:20,976 --> 00:29:25,956
+Y equals T minus 1 over T, which gives us the hyperbole X squared minus Y squared equals 4.
+
+198
+00:29:25,956 --> 00:29:34,956
+Here, this is parameterized as X equals 2 second T, Y equals 2 tangent T on this interval.
+
+199
+00:29:34,956 --> 00:29:44,236
+And it gives us the same hyperbole X squared minus Y squared equals 4.
+
+200
+00:29:44,236 --> 00:29:56,836
+But, of course, difference is that this one, X equals 2 seconds, 2 second T, Y equals 2 tangent T is going to traverse the same curve,
+
+201
+00:29:57,336 --> 00:29:59,096
+but for different values of T.
+
+202
+00:29:59,096 --> 00:30:05,836
+So, for example, the one above is going to run the vertex when T is equal to 1, but this one,
+
+203
+00:30:08,096 --> 00:30:11,375
+this one is going to be there when T is equal to 0 and T is 0.
+
+204
+00:30:12,096 --> 00:30:13,056
+I can 0 is 1.
+
+205
+00:30:13,056 --> 00:30:14,596
+So, we get X equals 2.
+
+206
+00:30:14,596 --> 00:30:16,736
+So, we get Y equals 0.
+
+207
+00:30:17,135 --> 00:30:19,655
+So, when T is 0, we get 2, 0.
+
+208
+00:30:20,635 --> 00:30:26,956
+This curve over here, parametric curve over here, the vertex is at the vertex when T is 0.
+
+209
+00:30:27,895 --> 00:30:28,536
+So on.
+
+210
+00:30:28,615 --> 00:30:33,895
+And as T goes from minus pi over 2 and goes to pi over 2, it traverses this curve.
+
+211
+00:30:33,895 --> 00:30:44,716
+And as I said, both parametric equations trace the same curve, but for different value, they're at different points for different values of T.
+
+212
+00:30:47,096 --> 00:30:55,596
+So, in general, general, curve can be parametrized in many different ways.
+
+213
+00:30:56,115 --> 00:31:01,036
+Actually, a curve can be parametrized in infinitely many different ways.
+
+214
+00:31:01,036 --> 00:31:08,695
+So, this is one example, this is one example where the same curve is parametrized in two different ways.
+
+215
+00:31:08,996 --> 00:31:14,216
+And as I said, in general, any curve can be parametrized in infinitely many different ways.
+
+216
+00:31:14,216 --> 00:31:18,216
+So, this is one example where the same curve is parametrized in two different ways.
+
+217
+00:31:18,579 --> 00:31:21,839
+Ok, I'm going to skip this example. Ok, no.
+
+218
+00:31:24,899 --> 00:31:29,159
+Alright, so that's the end of 11.1. What time is it? 9.30. Ok, let's continue.
+
+219
+00:31:36,980 --> 00:31:39,920
+Okay, let's do some calculus now, with metric cars.
+
+220
+00:31:52,852 --> 00:31:53,352
+Okay.
+
+221
+00:31:56,032 --> 00:32:02,432
+So, we want to make some calculations, make, I mean, differentiating, integrating and so on.
+
+222
+00:32:02,752 --> 00:32:09,592
+So, what can we do and how are we going to do those calculations?
+
+223
+00:32:10,872 --> 00:32:13,912
+So, first, let's start with a parametric curve.
+
+224
+00:32:14,572 --> 00:32:16,932
+X is equal to f of t, y is equal to g of t.
+
+225
+00:32:17,471 --> 00:32:19,272
+X and y are both functions of t.
+
+226
+00:32:19,272 --> 00:32:24,152
+And suppose that these two functions are differentiable at t.
+
+227
+00:32:28,932 --> 00:32:32,092
+And here, so here, this is a definition, actually.
+
+228
+00:32:32,451 --> 00:32:41,951
+So, we say that, we say that a parametrized curve is differentiable at t if both functions, if both f and g are differentiable at that point.
+
+229
+00:32:41,951 --> 00:32:58,231
+Now, consider a point on a curve where, on a differentiable parameterized curve, where also y is a, y is a differentiable function of x.
+
+230
+00:32:58,231 --> 00:33:06,971
+So, in other words, derivative of y with respect to t exists because this is differentiable.
+
+231
+00:33:07,592 --> 00:33:11,292
+Derivative of x with respect to t exists because this is differentiable.
+
+232
+00:33:11,711 --> 00:33:18,672
+And also, suppose that the derivative of y with respect to x also exists, which is this, dy or dx.
+
+233
+00:33:18,672 --> 00:33:21,272
+Now, what does the chain rule say?
+
+234
+00:33:21,392 --> 00:33:30,532
+Chain rule says that the derivative of y with respect to t is the same as the derivative of y with respect to x times the derivative of x with respect to t.
+
+235
+00:33:30,672 --> 00:33:33,772
+So, this is chain rule, right, that you have seen in math 1.
+
+236
+00:33:35,112 --> 00:33:39,892
+So, this gives us a way of finding dy over dx.
+
+237
+00:33:39,892 --> 00:33:49,812
+So, if we move this dx over dt to the other side, it gives us this dy over dx is the same as dy over dt divided by dx over dt.
+
+238
+00:33:50,772 --> 00:33:54,072
+As long as this dx over dt is different than 0.
+
+239
+00:33:55,352 --> 00:34:03,412
+If all, so in other words, if all these three derivatives exist and this is different than 0, dx over dt is different than 0,
+
+240
+00:34:03,892 --> 00:34:08,512
+then dy over dt over dx over dt gives us dy over dx.
+
+241
+00:34:08,512 --> 00:34:11,012
+So, why is this useful?
+
+242
+00:34:11,012 --> 00:34:11,072
+Why is this useful?
+
+243
+00:34:22,195 --> 00:34:25,115
+And okay, let's look at the second derivative as well.
+
+244
+00:34:26,476 --> 00:34:30,155
+So, let's say we want to find the second derivative of y with respect to x.
+
+245
+00:34:32,175 --> 00:34:34,895
+Well, what is the second derivative of y with respect to x?
+
+246
+00:34:35,556 --> 00:34:43,556
+By definition, the second derivative of y with respect to x is the derivative of the first derivative of y with respect to x.
+
+247
+00:34:44,516 --> 00:34:45,915
+Let's say y prime.
+
+248
+00:34:46,096 --> 00:34:47,875
+Y prime is this dy over dx.
+
+249
+00:34:47,976 --> 00:34:48,996
+Let's call that y prime.
+
+250
+00:34:48,996 --> 00:34:59,875
+If we call dy over dx y prime, then derivative of y prime with respect to x is going to be the second derivative of y with respect to x.
+
+251
+00:35:00,215 --> 00:35:00,976
+And what is this?
+
+252
+00:35:01,395 --> 00:35:02,815
+Again, use the same chain rule.
+
+253
+00:35:02,996 --> 00:35:03,695
+Use the same rule.
+
+254
+00:35:05,076 --> 00:35:12,335
+Derivative of y prime with respect to dy prime over dx is the same as dy prime over dt over dx over dt.
+
+255
+00:35:12,335 --> 00:35:24,375
+So, to find the second derivative of y with respect to x, we can find the derivative of the first derivative with respect to t.
+
+256
+00:35:24,596 --> 00:35:27,795
+Then find the derivative of x with respect to d and divide these two.
+
+257
+00:35:28,395 --> 00:35:31,295
+We can get second derivative of y with respect to t.
+
+258
+00:35:31,295 --> 00:35:36,795
+Of course, again, as long as this derivative in the denominator is different than zero.
+
+259
+00:35:38,295 --> 00:35:39,715
+So, what does it give us?
+
+260
+00:35:40,275 --> 00:35:41,016
+So, let's say,
+
+261
+00:35:41,016 --> 00:35:45,815
+In geometrical, what does dy over dx mean?
+
+262
+00:35:47,135 --> 00:35:47,675
+What is it?
+
+263
+00:35:48,355 --> 00:35:49,935
+What is this dy over dx?
+
+264
+00:35:51,476 --> 00:35:53,956
+By over dx, we have some curve.
+
+265
+00:35:54,435 --> 00:35:59,956
+At any point, dy over dx gives us the slope of the tangent line at that point.
+
+266
+00:35:59,956 --> 00:36:00,655
+Right?
+
+267
+00:36:01,435 --> 00:36:11,076
+So, this gives us a way of finding the slope of the tangent line at a point on a curve which is parametrically defined.
+
+268
+00:36:12,115 --> 00:36:13,056
+For example,
+
+269
+00:36:15,895 --> 00:36:20,695
+x equals second t, y equals tangent t, where t is between minus pi over 2 and pi over 2.
+
+270
+00:36:21,255 --> 00:36:27,155
+We have seen that this actually we have seen this with both multiplied with 2.
+
+271
+00:36:27,155 --> 00:36:30,415
+So, this is basically just x squared minus y squared equals 1.
+
+272
+00:36:30,755 --> 00:36:32,036
+This hyperball over here.
+
+273
+00:36:32,615 --> 00:36:33,875
+This blue hyperball.
+
+274
+00:36:35,576 --> 00:36:37,215
+That's this parametric curve.
+
+275
+00:36:38,395 --> 00:36:44,235
+Okay, now the question is find the tangent to this curve at this point.
+
+276
+00:36:44,456 --> 00:36:45,096
+Root 2, 1.
+
+277
+00:36:48,596 --> 00:36:53,496
+Where t is pi over 4. Let's check this first. When t is pi over 4, what is second pi over 4?
+
+278
+00:36:54,016 --> 00:36:58,215
+Well, cosine pi over 4 is 1 over root 2. So second pi over 4 is root 2.
+
+279
+00:36:59,255 --> 00:37:03,556
+X-coordinates is root 2. And tangent pi over 4. Tangent 45 degrees is 1.
+
+280
+00:37:04,295 --> 00:37:09,755
+Y-coordinates 1. So when t is pi over 4, when t is pi over 4, the curve
+
+281
+00:37:11,195 --> 00:37:18,436
+is at the point root 2, 1. And we are now trying to find the tangent, the equation of the tangent,
+
+282
+00:37:18,596 --> 00:37:26,436
+to this curve when t is equal to pi over 4. So the formula we have obtained above, so to find the
+
+283
+00:37:26,436 --> 00:37:30,416
+to find the equation of this line, we have to find the slope.
+
+284
+00:37:30,976 --> 00:37:38,155
+And the slope of slope is, the slope of this curve is the derivative of y with respect to x at this point.
+
+285
+00:37:39,115 --> 00:37:43,536
+So the formula above says that the derivative of y with respect to x is the same as
+
+286
+00:37:43,536 --> 00:37:47,516
+derivative of y with respect to t divided by the derivative of x with respect to t.
+
+287
+00:37:48,596 --> 00:37:54,096
+What is derivative of y with respect to t? Here it is. Derivatives of tangent t is second square t.
+
+288
+00:37:54,835 --> 00:38:00,096
+What is the derivative of x with respect to t? Derivative of second t is second t tangent t.
+
+289
+00:38:00,436 --> 00:38:03,576
+So second t is cancelled, we get second t over tangent t.
+
+290
+00:38:05,775 --> 00:38:11,896
+So we are looking for the value of this when t is pi over 4.
+
+291
+00:38:11,896 --> 00:38:19,655
+So when t is pi over 4, we get second pi over 4 over tangent pi over 4, which is square root of 2 over 1, which is square root of 2.
+
+292
+00:38:20,215 --> 00:38:26,516
+So this is, this square root of 2, which is dy over dx when t is pi over 4.
+
+293
+00:38:26,516 --> 00:38:35,836
+The value of dy over dx when t is equal to pi over 4 is root 2, which means that slope of this red line over here,
+
+294
+00:38:37,036 --> 00:38:41,695
+red or purple, I don't know, purple probably.
+
+295
+00:38:42,235 --> 00:38:45,496
+This purple line, slope of this purple line is square root of 2.
+
+296
+00:38:45,496 --> 00:38:45,795
+So this is the value of the value of the value of the value of the value of the value of the value of the value of the value of the value of the value of the value of the value of the value of the value of the value of the value of the value of the value of the value of the value of the value of the value of the value of the value of the value of the value of the value of the value of the value of the value of the value of the value of the value of the value of the value of the value of the value of the value of the value of the value of the value of the value of the value of the value of the value of the value of the value of the value of the value of the value of the value of the value of the value of the value of the value of the value of the value of the value of the value of the value of the value of the value of the value of the value of the value of the value of the value of the value of the value of the value of the value of the value
+
+297
+00:38:50,483 --> 00:39:10,603
+Or, if, and also it passes through this point, root 2, comma 1, but now the equation of the line at whose slope is root, and which passes through the point root 2, comma 1 is y minus the y-coordinate of that point, 1 is equal to slope times x minus the x-coordinate of that point, which is root 2.
+
+298
+00:39:10,603 --> 00:39:17,003
+And then when we simplify this, we get the equation of the tangent line, y equals root 2x minus 1.
+
+299
+00:39:20,628 --> 00:39:24,708
+Okay, next example.
+
+300
+00:39:26,688 --> 00:39:35,807
+Find d2y over dx2 as a function of t if x is equal to t minus t2, y is equal to t minus t3.
+
+301
+00:39:39,219 --> 00:40:09,219
+Evet, bu bir
+
+302
+00:40:09,219 --> 00:40:09,959
+bir bir
+
+303
+00:40:15,380 --> 00:40:19,380
+2nd t y equals tangent t
+
+304
+00:40:19,380 --> 00:40:25,380
+t is between minus pi over 2 and pi over 2
+
+305
+00:40:25,380 --> 00:40:31,380
+and we were asked to find dy over dx
+
+306
+00:40:31,380 --> 00:40:35,380
+we were trying to find dy over dx
+
+307
+00:40:35,380 --> 00:40:39,380
+at t equals pi over 4
+
+308
+00:40:39,380 --> 00:40:43,380
+where xy is rule 2 comma 1
+
+309
+00:40:43,380 --> 00:40:47,380
+we are trying to find it
+
+310
+00:40:47,380 --> 00:40:51,380
+and in that example it has been done parametrically
+
+311
+00:40:51,380 --> 00:40:55,380
+making use of the formula dy over dx is the same as dy over dt
+
+312
+00:40:55,380 --> 00:40:59,380
+over dx over dt actually on this example
+
+313
+00:40:59,380 --> 00:41:03,380
+we could do it directly as well we could just
+
+314
+00:41:03,380 --> 00:41:07,380
+find the equation of the hyperbola
+
+315
+00:41:07,380 --> 00:41:11,380
+which is of course x squared minus y squared
+
+316
+00:41:11,380 --> 00:41:15,380
+x squared minus y squared is second square t minus tangent square t
+
+317
+00:41:15,380 --> 00:41:17,380
+which you have done early
+
+318
+00:41:17,380 --> 00:41:21,380
+which is 1 that's one of the trigonometric identities so
+
+319
+00:41:21,380 --> 00:41:25,380
+this equation of this hyperbola is this x squared minus y squared is equal to 1
+
+320
+00:41:25,380 --> 00:41:29,380
+and we could do implicit differentiation
+
+321
+00:41:29,380 --> 00:41:33,380
+x squared minus y squared equals 1
+
+322
+00:41:33,380 --> 00:41:39,380
+we are trying to find the derivative of y with respect to x
+
+323
+00:41:39,380 --> 00:41:41,380
+so differentiate both sides with respect to y
+
+324
+00:41:41,380 --> 00:41:43,380
+sorry x
+
+325
+00:41:43,380 --> 00:41:45,380
+differentiate
+
+326
+00:41:45,380 --> 00:41:47,380
+both sides
+
+327
+00:41:47,380 --> 00:41:51,380
+with respect to x
+
+328
+00:41:51,380 --> 00:41:53,380
+x
+
+329
+00:41:58,900 --> 00:42:28,900
+Ve bu,
+
+330
+00:42:28,900 --> 00:42:31,160
+So, implicit differentiation, what are we going to get?
+
+331
+00:42:31,880 --> 00:42:35,300
+If we differentiate both sides of this equation with respect to x, what do we get?
+
+332
+00:42:35,440 --> 00:42:37,300
+Derivative of x squared is 2x.
+
+333
+00:42:38,539 --> 00:42:39,059
+Minus
+
+334
+00:42:39,059 --> 00:42:43,960
+Derivative of y squared, well, y is a function of x, y depends on x.
+
+335
+00:42:44,360 --> 00:42:49,559
+So, we use chain rule. Derivative of y squared is 2y times the derivative of y.
+
+336
+00:42:50,760 --> 00:42:51,240
+Respective.
+
+337
+00:42:52,220 --> 00:42:54,539
+Equals, derivative of 1 is 0.
+
+338
+00:42:54,880 --> 00:42:55,539
+1 is a constant.
+
+339
+00:42:56,400 --> 00:42:57,220
+So, we get this.
+
+340
+00:42:57,220 --> 00:43:00,599
+So, if we divide this equation by 2, we get
+
+341
+00:43:00,599 --> 00:43:04,300
+Or
+
+342
+00:43:04,300 --> 00:43:09,360
+So, we get basically x equals y times dy over dx.
+
+343
+00:43:09,639 --> 00:43:09,920
+Right?
+
+344
+00:43:10,780 --> 00:43:13,539
+If we move this to the other side and cancel out 2s,
+
+345
+00:43:13,940 --> 00:43:15,940
+we get x is equal to y times dy over dx.
+
+346
+00:43:16,300 --> 00:43:18,400
+So, from this, we get dy over dx.
+
+347
+00:43:19,180 --> 00:43:21,380
+dy over dx is equal to x over y.
+
+348
+00:43:22,480 --> 00:43:23,400
+We got this.
+
+349
+00:43:24,740 --> 00:43:25,860
+And then we see
+
+350
+00:43:25,860 --> 00:43:26,980
+They are the same.
+
+351
+00:43:27,400 --> 00:43:27,619
+Right?
+
+352
+00:43:27,780 --> 00:43:28,460
+x over y.
+
+353
+00:43:29,000 --> 00:43:32,960
+Second, t over tangent t is the same as x over y.
+
+354
+00:43:33,880 --> 00:43:34,900
+So, we got the same.
+
+355
+00:43:34,900 --> 00:43:42,599
+And of course, when t is equal to pi over 4, we get root 2 over 1, which is root 2.
+
+356
+00:43:42,920 --> 00:43:46,240
+Or if you look at x over y, x is root 2, y is 1.
+
+357
+00:43:46,320 --> 00:43:47,420
+We get root 2 again.
+
+358
+00:43:47,420 --> 00:43:50,340
+So, we could do it that way as well.
+
+359
+00:43:50,340 --> 00:43:53,300
+But now, let's look at the next example.
+
+360
+00:43:54,019 --> 00:43:54,559
+Of course,
+
+361
+00:43:56,180 --> 00:43:56,900
+we have a
+
+362
+00:43:56,900 --> 00:44:00,619
+parametrically defined curve.
+
+363
+00:44:00,619 --> 00:44:03,059
+if we have some parametric equations.
+
+364
+00:44:03,059 --> 00:44:07,079
+Let's say parametrize with the parametric variable t.
+
+365
+00:44:07,079 --> 00:44:20,640
+If we can solve one of these equations for t and plug it into the other, or we can make some algebraic manipulation and make use of some identity, a trigonometric identity in this case, just like this.
+
+366
+00:44:20,640 --> 00:44:33,099
+Then you can express, you can get rid of t and express the curve in terms of x, y, z, whatever variables you have.
+
+367
+00:44:33,340 --> 00:44:35,160
+Then you can make your calculus.
+
+368
+00:44:35,680 --> 00:44:37,660
+You can make your calculations on that as well.
+
+369
+00:44:37,659 --> 00:44:40,740
+But sometimes it's not easy to do that.
+
+370
+00:44:41,059 --> 00:44:41,760
+So, for example,
+
+371
+00:44:43,800 --> 00:44:45,539
+look at the next example now.
+
+372
+00:44:47,720 --> 00:44:51,400
+And d square y over dx squared as a function of t.
+
+373
+00:44:51,619 --> 00:44:54,940
+If x is t minus t squared, y is t minus t cubed.
+
+374
+00:44:57,099 --> 00:45:03,380
+If we try to solve here, for example, one of them for t, here we will have a quadratic equation.
+
+375
+00:45:03,380 --> 00:45:06,820
+So, we will get, what is this?
+
+376
+00:45:06,900 --> 00:45:10,460
+This is going to be t squared minus t plus x is equal to zero.
+
+377
+00:45:11,159 --> 00:45:15,360
+Then solve that quadratic equation for t, plug that into this one.
+
+378
+00:45:16,019 --> 00:45:20,240
+So, this is going to be square root of something cubed.
+
+379
+00:45:20,360 --> 00:45:21,639
+This is going to be complicated.
+
+380
+00:45:22,320 --> 00:45:26,099
+It is going to be much more complicated than it looks here.
+
+381
+00:45:26,099 --> 00:45:37,440
+If we try to solve one of them for t and plug into other and express this, just in terms of x and y, it's going to be much more complicated than it looks here.
+
+382
+00:45:38,119 --> 00:45:38,519
+Okay.
+
+383
+00:45:38,619 --> 00:45:43,680
+So, instead of that, of course, we can do it directly, making use of the formula we have a thing.
+
+384
+00:45:43,940 --> 00:45:49,000
+So, to find the second derivative of y with respect to x, we first have to find the first derivative.
+
+385
+00:45:49,000 --> 00:45:51,880
+of y with respect to x.
+
+386
+00:45:51,920 --> 00:45:52,740
+Again, use the formula.
+
+387
+00:45:52,840 --> 00:45:56,539
+So, y prime, which we call the first derivative of y with respect to x.
+
+388
+00:45:57,204 --> 00:46:01,464
+is the derivative of y with respect to t divided by derivative of x with respect to t.
+
+389
+00:46:01,903 --> 00:46:04,824
+So in the numerator we have this derivative of y with respect to t.
+
+390
+00:46:04,884 --> 00:46:05,364
+What is that?
+
+391
+00:46:06,004 --> 00:46:07,644
+1 minus 3t squared.
+
+392
+00:46:08,204 --> 00:46:09,943
+That's the derivative of y with respect to t.
+
+393
+00:46:10,004 --> 00:46:12,764
+Divided by derivative of x with respect to t.
+
+394
+00:46:12,844 --> 00:46:13,384
+What is that?
+
+395
+00:46:13,804 --> 00:46:14,884
+1 minus 2t.
+
+396
+00:46:15,664 --> 00:46:17,264
+So this is y prime.
+
+397
+00:46:18,304 --> 00:46:19,704
+Now y prime is this.
+
+398
+00:46:19,984 --> 00:46:21,384
+So dy over dx is this.
+
+399
+00:46:21,724 --> 00:46:24,064
+1 minus 3t squared over 1 minus 2t.
+
+400
+00:46:24,064 --> 00:46:29,524
+Now our goal is find the derivative of y prime with respect to t.
+
+401
+00:46:30,124 --> 00:46:31,284
+So what is this?
+
+402
+00:46:32,184 --> 00:46:32,644
+So no.
+
+403
+00:46:35,044 --> 00:46:38,144
+Let me look at this then I'll go back to 2.
+
+404
+00:46:38,664 --> 00:46:44,964
+Our goal is to find the second derivative of y with respect to x which is the derivative of y prime with respect to x.
+
+405
+00:46:45,144 --> 00:46:52,064
+And the derivative of y prime with respect to x is the derivative of y prime with respect to t divided by derivative of x with respect to t.
+
+406
+00:46:52,064 --> 00:46:56,204
+So we need to find the derivative of y prime with respect to t which is found here.
+
+407
+00:46:57,524 --> 00:47:01,923
+So derivative of y with respect to t is the derivative of this with respect to t.
+
+408
+00:47:03,164 --> 00:47:04,824
+Of course let's do it on the board.
+
+409
+00:47:06,504 --> 00:47:07,484
+Derivative of what is it?
+
+410
+00:47:07,564 --> 00:47:08,784
+1 minus 3t squared.
+
+411
+00:47:10,084 --> 00:47:14,284
+So y prime is 1 minus 3t squared over 1 minus 2t.
+
+412
+00:47:14,284 --> 00:47:18,044
+So it's derivative of y prime with respect to t is the derivative of y prime with respect to t is...
+
+413
+00:47:18,044 --> 00:47:19,903
+Let's make you...
+
+414
+00:47:19,903 --> 00:47:20,903
+Let's remember...
+
+415
+00:47:20,903 --> 00:47:23,664
+How to differentiate...
+
+416
+00:47:23,664 --> 00:47:25,804
+From that one.
+
+417
+00:47:26,804 --> 00:47:28,884
+So we use the quotient rule basically.
+
+418
+00:47:28,884 --> 00:47:33,684
+It's the derivative of the numerator which is minus 6t times the denominator...
+
+419
+00:47:33,684 --> 00:47:35,284
+1 minus 2t...
+
+420
+00:47:35,284 --> 00:47:36,284
+minus...
+
+421
+00:47:36,284 --> 00:47:39,284
+The numerator itself...
+
+422
+00:47:39,284 --> 00:47:42,284
+Times the derivative of the denominator which is minus 2...
+
+423
+00:47:42,284 --> 00:47:43,284
+The denominator which is minus 2...
+
+424
+00:47:43,284 --> 00:47:44,284
+Divided by the denominator squared.
+
+425
+00:47:44,284 --> 00:47:45,284
+So what is this?
+
+426
+00:47:45,284 --> 00:47:47,284
+Minus 6t...
+
+427
+00:47:47,284 --> 00:47:48,284
+Plus 12t squared...
+
+428
+00:47:48,284 --> 00:47:49,284
+So what is this?
+
+429
+00:47:49,284 --> 00:48:18,284
+Minus 6t...
+
+430
+00:48:10,164 --> 00:48:16,204
+2 minus 6t plus 6t squared.
+
+431
+00:48:16,864 --> 00:48:21,444
+2 minus 6t plus 6t squared divided by 1 minus 2t squared.
+
+432
+00:48:22,004 --> 00:48:22,744
+So we get this.
+
+433
+00:48:27,304 --> 00:48:28,403
+Where is it?
+
+434
+00:48:30,004 --> 00:48:33,684
+Here. 2 minus 6t plus 6t squared.
+
+435
+00:48:34,244 --> 00:48:34,504
+Right.
+
+436
+00:48:35,024 --> 00:48:36,424
+Over 1 minus 2t squared.
+
+437
+00:48:36,424 --> 00:48:40,344
+Then after finding the derivative of y prime with respect to t,
+
+438
+00:48:40,724 --> 00:48:43,403
+now the second derivative of y with respect to x,
+
+439
+00:48:43,624 --> 00:48:48,624
+which is the derivative of y prime with respect to x,
+
+440
+00:48:48,744 --> 00:48:51,144
+which is derivative of y prime with respect to t
+
+441
+00:48:51,144 --> 00:48:53,584
+divided by derivative of x with respect to t
+
+442
+00:48:53,584 --> 00:48:57,544
+is equal to this, which we found over here.
+
+443
+00:48:58,224 --> 00:49:02,664
+This divided by dx over dt, which is dx over dt.
+
+444
+00:49:03,284 --> 00:49:04,564
+We have found it over here.
+
+445
+00:49:04,564 --> 00:49:06,104
+1 minus 2t here.
+
+446
+00:49:06,344 --> 00:49:07,044
+Derivative of this.
+
+447
+00:49:07,204 --> 00:49:07,903
+1 minus 2t.
+
+448
+00:49:08,824 --> 00:49:09,403
+So we get
+
+449
+00:49:09,403 --> 00:49:15,724
+2 minus 6t plus 6t squared divided by 1 minus 2t cubed.
+
+450
+00:49:15,944 --> 00:49:16,324
+Basically.
+
+451
+00:49:16,324 --> 00:49:35,704
+We have found it over here.
+
+452
+00:49:20,628 --> 00:49:21,148
+Okey.
+
+453
+00:49:25,235 --> 00:49:27,935
+So now let's look at another example.
+
+454
+00:49:29,516 --> 00:49:38,655
+Finding the area of some region enclosed by a curve.
+
+455
+00:49:40,115 --> 00:49:42,576
+Or find the area enclosed by this asteroid.
+
+456
+00:49:43,576 --> 00:49:46,655
+X equals cosine cube T, Y equals sine cube T.
+
+457
+00:49:47,516 --> 00:49:49,096
+Let's understand this first.
+
+458
+00:49:50,235 --> 00:49:52,375
+Let's understand how the graph looks.
+
+459
+00:49:55,235 --> 00:50:01,695
+First of all, when T is 0, cosine 0 is 1.
+
+460
+00:50:01,775 --> 00:50:02,395
+So this is 1.
+
+461
+00:50:02,835 --> 00:50:03,516
+Sine 0 is 0.
+
+462
+00:50:03,596 --> 00:50:04,215
+So this is 0.
+
+463
+00:50:04,375 --> 00:50:04,996
+1, 0.
+
+464
+00:50:05,215 --> 00:50:06,056
+Here, this point.
+
+465
+00:50:06,655 --> 00:50:09,695
+When T is pi over 2, cosine pi over 2 is 0.
+
+466
+00:50:09,875 --> 00:50:11,195
+Sine pi over 2 is 1.
+
+467
+00:50:11,255 --> 00:50:11,975
+We get 0, 1.
+
+468
+00:50:12,295 --> 00:50:12,795
+This point.
+
+469
+00:50:13,715 --> 00:50:17,795
+When T is pi, cosine pi is minus 1.
+
+470
+00:50:17,855 --> 00:50:19,835
+So minus 1 cubed is minus 1.
+
+471
+00:50:20,155 --> 00:50:21,335
+Sine pi is 0.
+
+472
+00:50:21,516 --> 00:50:22,255
+Its cube is 0.
+
+473
+00:50:22,355 --> 00:50:23,576
+So we get minus 1, 0.
+
+474
+00:50:24,175 --> 00:50:24,775
+And so on.
+
+475
+00:50:24,775 --> 00:50:27,615
+When T is 3 pi over 2, we get this 0 minus 1.
+
+476
+00:50:28,036 --> 00:50:33,775
+So these points are exactly the same points that are on the circle.
+
+477
+00:50:34,275 --> 00:50:38,056
+Circle whose parametric equations are X equals cosine T and Y cosine T.
+
+478
+00:50:38,536 --> 00:50:39,536
+These points are the same.
+
+479
+00:50:40,235 --> 00:50:42,455
+But in the middle, they change.
+
+480
+00:50:42,455 --> 00:50:48,935
+So for example, somewhere here, where is it?
+
+481
+00:50:49,996 --> 00:50:54,215
+When T is pi over 3, let's say pi over 3.
+
+482
+00:50:55,215 --> 00:50:56,615
+Cosine pi over T is what?
+
+483
+00:50:57,016 --> 00:50:59,455
+1 over 2, which is 0.5.
+
+484
+00:51:00,215 --> 00:51:02,076
+Sine pi over T is root 3 over 2.
+
+485
+00:51:02,155 --> 00:51:04,315
+Root 3 over 2 is around 0.85.
+
+486
+00:51:04,315 --> 00:51:05,195
+Right?
+
+487
+00:51:05,855 --> 00:51:08,036
+Somewhere here on the circle.
+
+488
+00:51:08,536 --> 00:51:10,435
+On the circle, there's a circle here.
+
+489
+00:51:10,835 --> 00:51:11,895
+Cosine T sine T.
+
+490
+00:51:13,076 --> 00:51:17,955
+The cosine T sine T, the point on that is 0.5 comma 20 is.
+
+491
+00:51:18,955 --> 00:51:20,635
+Sorry, when T is 60 degrees.
+
+492
+00:51:21,076 --> 00:51:21,955
+And T is 60 degrees.
+
+493
+00:51:22,295 --> 00:51:26,096
+We are going to get 0.5 comma something around 0.85.
+
+494
+00:51:26,096 --> 00:51:33,355
+Now, when we cube both numbers, when we take the cube of a number, which is less than 1, it's going to get smaller.
+
+495
+00:51:34,076 --> 00:51:35,715
+So 0.5 cubed.
+
+496
+00:51:36,275 --> 00:51:39,135
+If you multiply 0.5 by itself, you get 0.25.
+
+497
+00:51:39,715 --> 00:51:42,475
+Multiply by itself again, you get 0.125.
+
+498
+00:51:43,375 --> 00:51:45,815
+So on the circle, it was 0.5.
+
+499
+00:51:46,596 --> 00:51:50,996
+Now, on this asteroid, it's going to be 0.125.
+
+500
+00:51:51,536 --> 00:51:52,155
+Gets smaller.
+
+501
+00:51:52,775 --> 00:51:54,135
+The same is for the y coordinate.
+
+502
+00:51:54,135 --> 00:51:57,755
+When you cube a number less than 1, you get smaller number.
+
+503
+00:51:58,255 --> 00:52:02,315
+So both the x-coordinate and y-coordinate get smaller when we cube them.
+
+504
+00:52:02,895 --> 00:52:04,076
+Let me take their cubes.
+
+505
+00:52:04,255 --> 00:52:06,155
+And that's why this graph looks like this.
+
+506
+00:52:07,815 --> 00:52:11,835
+Okay, now the question is to find the area enclosed by this.
+
+507
+00:52:13,315 --> 00:52:14,635
+Of course, this is symmetric.
+
+508
+00:52:15,175 --> 00:52:19,215
+This is symmetric with respect to the x-axis and with respect to the y-axis.
+
+509
+00:52:19,215 --> 00:52:24,215
+So it's enough to find the area of this part on the first quadrant.
+
+510
+00:52:25,975 --> 00:52:26,455
+And
+
+511
+00:52:29,395 --> 00:52:30,556
+multiply that by 4.
+
+512
+00:52:31,096 --> 00:52:33,135
+Now, before that, so let's see.
+
+513
+00:52:34,576 --> 00:52:35,155
+In general,
+
+514
+00:52:35,155 --> 00:52:40,496
+So we have such a something like this.
+
+515
+00:52:43,315 --> 00:52:44,815
+We are trying to find that area.
+
+516
+00:52:45,596 --> 00:52:46,355
+What's that area?
+
+517
+00:52:46,496 --> 00:52:47,155
+So this is 0.
+
+518
+00:52:47,315 --> 00:52:47,855
+This is 1.
+
+519
+00:52:49,335 --> 00:52:50,056
+What's that area?
+
+520
+00:52:50,275 --> 00:52:51,635
+That area is area.
+
+521
+00:52:51,635 --> 00:52:54,016
+This area over here.
+
+522
+00:52:54,215 --> 00:52:55,355
+This area over here is what?
+
+523
+00:52:55,475 --> 00:52:56,895
+Integral from 0 to 1.
+
+524
+00:52:58,915 --> 00:53:01,556
+Let's say this is y equals f of x.
+
+525
+00:53:03,795 --> 00:53:05,275
+Integral from 0 to 1.
+
+526
+00:53:05,375 --> 00:53:06,675
+f of x dx.
+
+527
+00:53:07,475 --> 00:53:07,895
+Right?
+
+528
+00:53:08,915 --> 00:53:12,655
+That's what the area under some curve between a and b is.
+
+529
+00:53:13,295 --> 00:53:14,295
+That's what integral is.
+
+530
+00:53:14,855 --> 00:53:16,155
+Integral from 0 to 1.
+
+531
+00:53:16,635 --> 00:53:17,795
+Of f of x dx.
+
+532
+00:53:17,795 --> 00:53:37,496
+What is f of x?
+
+533
+00:53:19,507 --> 00:53:24,807
+f of x is y, right? So that area is the same as 0 to 1 y dx.
+
+534
+00:53:27,587 --> 00:53:32,827
+This area over here is the integral from 0 to 1 y dx.
+
+535
+00:53:36,127 --> 00:53:43,727
+Now, we don't have a function in our hand. We don't have a function that defines y as a function of x.
+
+536
+00:53:43,727 --> 00:53:47,907
+We don't know that function y equals f of x. We don't know what that f function is.
+
+537
+00:53:47,907 --> 00:53:52,768
+but we don't need it. We can express everything in terms of t now.
+
+538
+00:53:53,987 --> 00:53:54,987
+Let's go back.
+
+539
+00:53:57,427 --> 00:54:04,087
+So, what did we say? By symmetry, we can just find the area of this part on the first quadrant and multiply it by 4.
+
+540
+00:54:04,887 --> 00:54:07,547
+What is it? The total area is 4 times
+
+541
+00:54:07,547 --> 00:54:11,827
+this area, which I said is the integral
+
+542
+00:54:11,827 --> 00:54:14,167
+from 0 to 1 y dx.
+
+543
+00:54:14,167 --> 00:54:17,768
+Now, we know what y is in terms of t.
+
+544
+00:54:17,768 --> 00:54:19,288
+y is here. Sine cubed t.
+
+545
+00:54:19,288 --> 00:54:21,607
+Just write sine cubed t for y.
+
+546
+00:54:21,607 --> 00:54:23,047
+What is dx?
+
+547
+00:54:23,047 --> 00:54:26,647
+Well, x is cosine cubed t.
+
+548
+00:54:26,647 --> 00:54:28,647
+So, what is dx?
+
+549
+00:54:28,647 --> 00:54:30,647
+It's derivative times dt.
+
+550
+00:54:30,647 --> 00:54:32,647
+If x is cosine cubed t, dx is, its derivative is 3 times cosine squared t times the derivative of cosine t, which is sine t.
+
+551
+00:54:32,647 --> 00:54:47,127
+minus sine t, actually.
+
+552
+00:54:47,127 --> 00:54:49,127
+actually.
+
+553
+00:54:49,127 --> 00:54:53,127
+um
+
+554
+00:54:52,436 --> 00:54:59,796
+Today's switch, let me see, y is sine,
+
+555
+00:55:14,260 --> 00:55:27,500
+sin cubed t, y sin cubed t, times, b times, cos sine squared t, times, minus sin t, that's the derivative of cosin t, minus sin t, times dt.
+
+556
+00:55:28,520 --> 00:55:30,580
+What are the limits of integration?
+
+557
+00:55:34,000 --> 00:55:39,520
+Oh, okay, okay, okay. They changed the limits of integration. So, let me show you what's going on here.
+
+558
+00:55:41,860 --> 00:55:43,880
+Okay, let me write it.
+
+559
+00:55:44,260 --> 00:55:49,620
+In the book, they have written two stacks at once.
+
+560
+00:56:01,876 --> 00:56:02,536
+Bu, o da?
+
+561
+00:56:04,756 --> 00:56:09,856
+4 times the integral from 0 to 1 y dx.
+
+562
+00:56:10,615 --> 00:56:13,996
+Which is equal to 4 times integral.
+
+563
+00:56:14,676 --> 00:56:15,496
+Y is what?
+
+564
+00:56:16,516 --> 00:56:18,096
+Y is sine cubed.
+
+565
+00:56:21,136 --> 00:56:22,416
+Dx is what?
+
+566
+00:56:23,636 --> 00:56:24,476
+Let me write it.
+
+567
+00:56:24,656 --> 00:56:26,076
+X is cosine cubed.
+
+568
+00:56:26,756 --> 00:56:27,896
+Y is sine cubed.
+
+569
+00:56:29,756 --> 00:56:31,156
+X is cosine cubed.
+
+570
+00:56:31,156 --> 00:56:33,056
+What is dx?
+
+571
+00:56:33,676 --> 00:56:39,476
+3 cosine squared t times the derivative of cosine t, which is minus sine t, times dt.
+
+572
+00:56:40,216 --> 00:56:41,936
+Now what are the limits of integration?
+
+573
+00:56:42,936 --> 00:56:44,496
+Here the variable was x.
+
+574
+00:56:44,836 --> 00:56:46,316
+We change the variable to t.
+
+575
+00:56:47,216 --> 00:56:50,796
+So here, when x is 0, the lower.
+
+576
+00:56:52,856 --> 00:56:56,056
+And when x is 1, what are the values of t?
+
+577
+00:56:56,936 --> 00:56:58,036
+When x is 0,
+
+578
+00:56:58,036 --> 00:57:09,036
+We change the variable to t.
+
+579
+00:57:01,907 --> 00:57:07,668
+Here, we are looking at this actually, this curve, right?
+
+580
+00:57:09,708 --> 00:57:11,748
+When x is 0, we are at this point.
+
+581
+00:57:12,268 --> 00:57:16,427
+When x is 0, we are at this point that corresponds to t equals pi over 2.
+
+582
+00:57:19,147 --> 00:57:20,947
+X is 0, corresponds to this point.
+
+583
+00:57:21,147 --> 00:57:26,627
+When x is 1, x is 1, corresponds to t equals 0, right?
+
+584
+00:57:26,627 --> 00:57:29,947
+When t is pi over 2, we get x equals 0.
+
+585
+00:57:29,947 --> 00:57:32,867
+When t is 0, we get x equal 1.
+
+586
+00:57:32,867 --> 00:57:40,027
+So, when x is 0, t is pi over 2, and when x is 1, we get t is equal to 0.
+
+587
+00:57:40,027 --> 00:57:47,027
+Now then, just change the limits of integration and remove this minus.
+
+588
+00:57:47,027 --> 00:57:55,347
+Remove this minus, we get, so that's going to be equal to 4 times 0 to pi over 2.
+
+589
+00:57:55,347 --> 00:57:57,347
+So, we get to change the limits of integration.
+
+590
+00:57:57,347 --> 00:57:59,347
+The rest is the same.
+
+591
+00:57:59,347 --> 00:58:04,347
+So, sin q of t, 3 cosine squared, t sin t.
+
+592
+00:58:04,347 --> 00:58:08,347
+So, that's why that's there's no minus over there.
+
+593
+00:58:08,347 --> 00:58:12,347
+The limits of integration are reversed.
+
+594
+00:58:14,347 --> 00:58:16,347
+So, let's continue.
+
+595
+00:58:16,347 --> 00:58:18,347
+So, we get this.
+
+596
+00:58:18,347 --> 00:58:20,347
+We get this.
+
+597
+00:58:20,347 --> 00:58:28,347
+Then, so here we get sine to the power of 40.
+
+598
+00:58:28,347 --> 00:58:29,347
+Sine to the power of 40.
+
+599
+00:58:29,347 --> 00:58:31,347
+The power of sine is even.
+
+600
+00:58:31,347 --> 00:58:34,347
+We get cosine squared, it's also even.
+
+601
+00:58:34,347 --> 00:58:41,347
+Since both are even, we make use of the double angle or half angle, double angle formulas.
+
+602
+00:58:41,347 --> 00:58:46,347
+So, basically, cosine squared t is this.
+
+603
+00:58:46,347 --> 00:58:47,347
+This is cosine squared t.
+
+604
+00:58:47,347 --> 00:58:49,347
+1 plus cosine 2t over 2.
+
+605
+00:58:49,347 --> 00:58:52,347
+And sine to the power of 40 is.
+
+606
+00:58:52,347 --> 00:58:54,347
+So, this is sine squared t.
+
+607
+00:58:54,347 --> 00:58:57,347
+1 minus cosine 2t over 2 is sine squared t.
+
+608
+00:58:57,347 --> 00:59:01,347
+It's squared is sine to the power of 40, basically.
+
+609
+00:59:01,347 --> 00:59:04,347
+Now, when we simplify this, what do we get?
+
+610
+00:59:04,347 --> 00:59:13,347
+1 minus cosine 2t squared is 1 minus 2 cosine 2t plus cosine squared 2t divided by 4.
+
+611
+00:59:13,347 --> 00:59:16,347
+And here we get 1 plus cosine 2t divided by 2.
+
+612
+00:59:16,347 --> 00:59:18,347
+So, we get divided by 8.
+
+613
+00:59:18,347 --> 00:59:20,347
+So, we get 12 over 8.
+
+614
+00:59:20,347 --> 00:59:21,347
+12 comes from this.
+
+615
+00:59:21,347 --> 00:59:22,347
+4 times 3.
+
+616
+00:59:22,347 --> 00:59:23,347
+12 over 8.
+
+617
+00:59:23,347 --> 00:59:24,347
+That's 3 over 2.
+
+618
+00:59:24,347 --> 00:59:28,347
+Then, multiply these.
+
+619
+00:59:28,347 --> 00:59:34,347
+So, we get 1 plus cosine 2t minus 2 cosine 2t.
+
+620
+00:59:34,347 --> 00:59:36,347
+That gives minus cosine 2t.
+
+621
+00:59:36,347 --> 00:59:43,347
+Then, minus 2 cosine squared 2t plus 1 cosine squared t.
+
+622
+00:59:43,347 --> 00:59:45,347
+That gives minus cosine squared 2t.
+
+623
+00:59:45,347 --> 00:59:47,347
+And then, cosine cubed 2t.
+
+624
+00:59:47,347 --> 00:59:48,347
+And so on.
+
+625
+00:59:48,347 --> 00:59:52,347
+I'm not going to go over the integration.
+
+626
+00:59:52,347 --> 00:59:55,347
+This is, look at follow these integrals.
+
+627
+00:59:55,347 --> 00:59:58,347
+That's what you have seen from math one, actually.
+
+628
+00:59:58,347 --> 01:00:01,347
+And.
+
+629
+01:00:05,460 --> 01:00:10,460
+Evet, bu ne?
+
+630
+01:00:10,460 --> 01:00:13,460
+İngilizce.
+
+631
+01:00:13,460 --> 01:00:14,460
+Bu ne?
+
+632
+01:00:14,460 --> 01:00:17,460
+Lengk olarak parametrically defined curve.
+
+633
+01:00:17,460 --> 01:00:20,460
+C be a curve given parametrically by Diggs' equation.
+
+634
+01:00:20,460 --> 01:00:24,460
+So here, I'm going to just give you the formula.
+
+635
+01:00:24,460 --> 01:00:26,460
+Here is the formula.
+
+636
+01:00:26,460 --> 01:00:29,460
+Here is the length formula.
+
+637
+01:00:29,460 --> 01:00:41,460
+But if C is defined parametrically by these equations, x equals f of t and y equals g of t, where t is between a and b.
+
+638
+01:00:41,460 --> 01:00:43,460
+Inclusive.
+
+639
+01:00:43,460 --> 01:00:49,460
+Where f' and g' are continuous and not simultaneously zero on a, b, closing the interval and c is traveled.
+
+640
+01:00:49,460 --> 01:00:51,460
+This is important.
+
+641
+01:00:51,460 --> 01:00:57,460
+C is traversed exactly once, exactly once.
+
+642
+01:00:57,460 --> 01:01:01,460
+C is traversed exactly once as t increases from t equals a to t equals b.
+
+643
+01:01:01,460 --> 01:01:04,460
+Then the length of this curve is this.
+
+644
+01:01:04,460 --> 01:01:06,460
+It's computed with this formula.
+
+645
+01:01:06,460 --> 01:01:14,460
+L equals the integral from a to b square root of f' t squared plus g' t squared.
+
+646
+01:01:14,460 --> 01:01:17,460
+or it could also be written this way.
+
+647
+01:01:17,460 --> 01:01:26,460
+This way integral from a to b square root of f' t, which is the same as dx over dt because f' t is x equals f' t.
+
+648
+01:01:26,460 --> 01:01:36,460
+So derivative of f is the same as derivative of x with respect to t squared plus g' t, which is the same as derivative of y with respect to t squared dt.
+
+649
+01:01:36,460 --> 01:01:40,460
+We get this.
+
+650
+01:01:40,460 --> 01:01:46,460
+So this is the length formula length of a parametric curve.
+
+651
+01:01:46,460 --> 01:01:50,460
+So, for example, let's start with this.
+
+652
+01:01:50,460 --> 01:01:52,460
+Length of, we know it.
+
+653
+01:01:52,460 --> 01:02:00,460
+You know what the length of, we know the circumference of a circle of radius r.
+
+654
+01:02:00,460 --> 01:02:03,460
+The length of a circle of radius r, what is it? 2 pi r, right?
+
+655
+01:02:03,460 --> 01:02:05,460
+That's the circumference of a circle.
+
+656
+01:02:05,460 --> 01:02:08,460
+Let's find it using calculus.
+
+657
+01:02:08,460 --> 01:02:16,460
+So a circle of radius r can be parameterized this way. x equals r cosine t y equals r sine t where t goes from 0 to 2 pi.
+
+658
+01:02:16,460 --> 01:02:19,460
+We have seen that before.
+
+659
+01:02:19,460 --> 01:02:21,460
+Where is it?
+
+660
+01:02:21,460 --> 01:02:25,460
+Here, I'm going to go back to that example.
+
+661
+01:02:25,460 --> 01:02:26,460
+So, let's go back to that.
+
+662
+01:02:26,460 --> 01:02:46,460
+Let's go back to that.
+
+663
+01:02:28,692 --> 01:02:55,532
+Here, we have seen that this x equals cosin t, y equals sin t. This parametrizes this circle, circle of radius 1. And this one, x equals a cosin t, y equals a sin t. As t goes from 0 to 2 pi, this is going to traverse the circle of radius a, centered at the origin. And as t goes from 0 to 2 pi, the circle is traversed exactly once.
+
+664
+01:02:55,532 --> 01:03:04,012
+Now, let's go back to this example. So, now let's think of the circle of radius r.
+
+665
+01:03:06,351 --> 01:03:07,871
+Circle of radius r.
+
+666
+01:03:11,284 --> 01:03:15,903
+Circle of radius r, which is parametrized as x equals r cos sine t y equals r sine t.
+
+667
+01:03:16,084 --> 01:03:21,064
+And as t goes from 0 to 2 pi, the whole circle is traversed exactly once.
+
+668
+01:03:21,764 --> 01:03:36,864
+So the formula says that its length is the integral from a to b, which is 0 to 2 pi of 0 to 2 pi of square of dx over dt squared plus dy over dt squared dt.
+
+669
+01:03:36,864 --> 01:03:37,604
+What is it?
+
+670
+01:03:37,604 --> 01:03:45,124
+What is dx over dt? Derivative of x with respect to t. R is a constant here. Derivative of cos sine t is minus sine t.
+
+671
+01:03:46,023 --> 01:03:51,704
+What is derivative of y with respect to t? Again, r is a constant. Derivative of sine t is cos sine t. We get this.
+
+672
+01:03:52,184 --> 01:03:57,483
+So when we square them, x over dt squared is r square sine squared t.
+
+673
+01:03:58,064 --> 01:04:00,963
+And dy over dt squared is r square cosine squared t.
+
+674
+01:04:01,104 --> 01:04:05,864
+So when we add them up, we get r squared times sine squared t plus cos sine squared t, which is 1.
+
+675
+01:04:05,864 --> 01:04:09,344
+The sine squared t plus cos sine squared t is 1. So we get r squared.
+
+676
+01:04:10,044 --> 01:04:13,564
+So this thing inside the radical is just r squared.
+
+677
+01:04:14,044 --> 01:04:15,884
+Of course, r is a positive number here.
+
+678
+01:04:16,584 --> 01:04:19,604
+R is a positive number. It's the radius of the circle.
+
+679
+01:04:20,624 --> 01:04:22,983
+It's the length of something. It's positive.
+
+680
+01:04:23,884 --> 01:04:27,684
+We get, now this expression is square root of r squared, which is just r.
+
+681
+01:04:27,684 --> 01:04:30,443
+This is just r.
+
+682
+01:04:30,884 --> 01:04:35,884
+And integral of the constant r times dt is just r times t from 0 to 2 pi.
+
+683
+01:04:36,304 --> 01:04:38,524
+When we evaluate t from 0 to 2 pi, we get 2 pi.
+
+684
+01:04:39,024 --> 01:04:41,024
+2 pi minus 0, which is 2 pi.
+
+685
+01:04:41,204 --> 01:04:41,983
+So we get 2 pi r.
+
+686
+01:04:42,624 --> 01:04:43,903
+Of course, that's what we know.
+
+687
+01:04:44,244 --> 01:04:44,943
+We already knew.
+
+688
+01:04:45,443 --> 01:04:47,324
+That's the circumference of a circle.
+
+689
+01:04:50,024 --> 01:04:51,544
+It is 2 pi r, basically.
+
+690
+01:04:51,544 --> 01:04:57,024
+Okay, let's find the length of this asteroid over here.
+
+691
+01:04:58,684 --> 01:04:59,204
+This one.
+
+692
+01:04:59,503 --> 01:05:00,844
+How about the length of this one?
+
+693
+01:05:01,544 --> 01:05:03,824
+This unit asteroid, actually.
+
+694
+01:05:04,003 --> 01:05:05,943
+X equals cos sine cubed, Y equals sine cubed.
+
+695
+01:05:22,963 --> 01:05:25,483
+Okay, before that, let's see.
+
+696
+01:05:36,403 --> 01:05:42,003
+If you look at this unit circle, 1, 1, 1, 1, 1, 1.
+
+697
+01:05:42,003 --> 01:05:43,003
+What is this length?
+
+698
+01:05:43,003 --> 01:05:46,003
+2 pi r.
+
+699
+01:05:46,003 --> 01:05:48,003
+R is 1 here, 2 pi.
+
+700
+01:05:48,003 --> 01:05:57,003
+2 pi, which is approximately 2 pi, which is approximately.
+
+701
+01:05:57,003 --> 01:05:59,003
+So pi is around 3.14.
+
+702
+01:05:59,003 --> 01:06:07,003
+So this is approximately, the length of the unit circle is approximately 6.28, something like that.
+
+703
+01:06:07,003 --> 01:06:09,003
+How about the asteroid?
+
+704
+01:06:09,003 --> 01:06:10,003
+Asteroid.
+
+705
+01:06:10,003 --> 01:06:18,003
+So as we see, it's at the same points, but multiples of pi over 2, but it goes like this instead.
+
+706
+01:06:20,884 --> 01:06:25,884
+Evet, yi, kısmi türev ve katlı, yi, kısmi türev ve katlı.
+
+707
+01:06:26,884 --> 01:06:32,483
+So, we can see from the pictures is that this part and this part look similar.
+
+708
+01:06:33,284 --> 01:06:35,364
+They shouldn't be much different.
+
+709
+01:06:35,483 --> 01:06:42,164
+So, we should expect the length of this to be close to this, 6.28.
+
+710
+01:06:42,684 --> 01:06:43,844
+Let's see what it is.
+
+711
+01:06:44,523 --> 01:06:45,784
+Let's see what the value of it is.
+
+712
+01:06:46,224 --> 01:06:48,583
+It should be something close to 6.2 pi.
+
+713
+01:06:48,583 --> 01:06:50,144
+Let's see.
+
+714
+01:06:52,344 --> 01:06:54,244
+Again, we are going to make use of the formula.
+
+715
+01:06:54,824 --> 01:06:55,923
+We need to find this.
+
+716
+01:06:56,224 --> 01:06:58,664
+dx over dt squared plus dy over dt squared.
+
+717
+01:06:59,144 --> 01:07:00,083
+Take the square root of that.
+
+718
+01:07:00,963 --> 01:07:06,403
+And again, the whole curve is traversed exactly once as t goes from 0 to 2 pi.
+
+719
+01:07:06,664 --> 01:07:06,864
+Again.
+
+720
+01:07:07,704 --> 01:07:09,543
+So, x is equal to cosine cubed t.
+
+721
+01:07:09,543 --> 01:07:10,963
+What is dx over dt?
+
+722
+01:07:11,384 --> 01:07:17,684
+dx over dt is 3 cosine squared t times the derivative of cosine t, which is minus sine t.
+
+723
+01:07:18,583 --> 01:07:48,563
+9 cosine to the power of cosine t.
+
+724
+01:07:47,123 --> 01:07:48,663
+Ok, let me go back.
+
+725
+01:07:49,603 --> 01:07:51,423
+Ok, let's do it again.
+
+726
+01:07:53,143 --> 01:07:54,343
+Ok, x equals cosine cubed.
+
+727
+01:07:55,663 --> 01:07:58,483
+Again, so what are we trying to find?
+
+728
+01:07:59,083 --> 01:08:01,203
+We need to find this expression
+
+729
+01:08:01,203 --> 01:08:03,543
+and we are going to integrate it from 0 to 2 pi.
+
+730
+01:08:04,063 --> 01:08:05,703
+It's the same for this asteroid.
+
+731
+01:08:06,643 --> 01:08:08,023
+Whole, where is it?
+
+732
+01:08:08,583 --> 01:08:10,843
+Whole asteroid is traversed exactly once
+
+733
+01:08:10,843 --> 01:08:12,363
+as t goes from 0 to 2 pi.
+
+734
+01:08:13,384 --> 01:08:15,323
+So, what is dx over dt?
+
+735
+01:08:15,323 --> 01:08:17,983
+Derivative of cosine cubed t is 3 cosine squared t
+
+736
+01:08:17,983 --> 01:08:19,603
+times the derivative of cosine t,
+
+737
+01:08:19,684 --> 01:08:20,603
+which is minus sine t.
+
+738
+01:08:20,943 --> 01:08:22,144
+Then square the whole thing,
+
+739
+01:08:22,203 --> 01:08:24,743
+we get 9 cosine to the power of 40 sine squared t.
+
+740
+01:08:25,844 --> 01:08:27,443
+What is dy over dt?
+
+741
+01:08:28,264 --> 01:08:28,983
+Derivative of this,
+
+742
+01:08:29,103 --> 01:08:31,344
+the perspective t is 3 sine squared t
+
+743
+01:08:31,344 --> 01:08:33,283
+times derivative of sine t,
+
+744
+01:08:33,363 --> 01:08:34,184
+which is cosine t.
+
+745
+01:08:34,623 --> 01:08:36,923
+The whole thing, now square everything.
+
+746
+01:08:37,523 --> 01:08:40,403
+We get 9 sine to the power of 40 cosine squared t.
+
+747
+01:08:40,863 --> 01:08:42,983
+Now, so dx over dt squared
+
+748
+01:08:42,983 --> 01:08:44,264
+plus dy over dt squared.
+
+749
+01:08:44,264 --> 01:08:45,323
+when we add these,
+
+750
+01:08:46,283 --> 01:08:47,203
+when we add these up,
+
+751
+01:08:47,863 --> 01:08:48,603
+what is common?
+
+752
+01:08:49,123 --> 01:08:50,743
+9 cosine squared t,
+
+753
+01:08:50,823 --> 01:08:51,903
+sine squared t is common,
+
+754
+01:08:53,264 --> 01:08:53,563
+right?
+
+755
+01:08:53,844 --> 01:08:55,224
+Then, what is left here?
+
+756
+01:08:55,323 --> 01:08:56,503
+Cosine squared t is left here
+
+757
+01:08:56,503 --> 01:08:57,703
+and sine squared t is left here.
+
+758
+01:08:58,083 --> 01:09:00,323
+Cosine squared t plus sine squared t in parentheses.
+
+759
+01:09:01,644 --> 01:09:02,403
+The whole thing,
+
+760
+01:09:02,543 --> 01:09:03,903
+the square root of,
+
+761
+01:09:04,163 --> 01:09:04,703
+the whole thing.
+
+762
+01:09:05,123 --> 01:09:07,304
+Now, this cosine squared t plus sine squared t,
+
+763
+01:09:07,363 --> 01:09:07,823
+that's one.
+
+764
+01:09:07,823 --> 01:09:09,403
+and when we take the square root
+
+765
+01:09:09,403 --> 01:09:10,184
+of the whole thing,
+
+766
+01:09:10,863 --> 01:09:13,563
+it's going to be square root
+
+767
+01:09:13,563 --> 01:09:15,764
+of 9 cosine squared t sine squared t,
+
+768
+01:09:15,764 --> 01:09:17,983
+which is 3 absolute value
+
+769
+01:09:17,983 --> 01:09:19,203
+of cosine t sine t.
+
+770
+01:09:19,884 --> 01:09:20,363
+But,
+
+771
+01:09:20,503 --> 01:09:21,583
+of course,
+
+772
+01:09:21,623 --> 01:09:22,943
+we have some symmetry here.
+
+773
+01:09:24,943 --> 01:09:25,684
+Where is this?
+
+774
+01:09:26,863 --> 01:09:27,503
+This is symmetric.
+
+775
+01:09:27,724 --> 01:09:28,943
+Instead of finding the length
+
+776
+01:09:28,943 --> 01:09:29,943
+of the whole thing,
+
+777
+01:09:30,224 --> 01:09:31,184
+we can find the length
+
+778
+01:09:31,184 --> 01:09:32,323
+of this part only
+
+779
+01:09:32,323 --> 01:09:34,264
+and multiply that by 4,
+
+780
+01:09:34,663 --> 01:09:35,443
+by symmetry again.
+
+781
+01:09:36,083 --> 01:09:36,804
+So, this part,
+
+782
+01:09:37,344 --> 01:09:38,983
+on just this part of the curve,
+
+783
+01:09:41,083 --> 01:09:43,503
+sine t is positive,
+
+784
+01:09:43,623 --> 01:09:44,603
+cosine t is positive,
+
+785
+01:09:44,743 --> 01:09:44,963
+right?
+
+786
+01:09:45,743 --> 01:09:46,123
+I mean,
+
+787
+01:09:46,443 --> 01:09:47,123
+non-negative,
+
+788
+01:09:47,283 --> 01:09:47,724
+let me say.
+
+789
+01:09:48,144 --> 01:09:49,384
+On this part of the curve,
+
+790
+01:09:50,563 --> 01:09:52,123
+both sine t and cosine t
+
+791
+01:09:52,123 --> 01:09:52,923
+are non-negative.
+
+792
+01:09:53,123 --> 01:09:54,384
+So, their absolute value
+
+793
+01:09:54,384 --> 01:09:55,703
+are just themselves.
+
+794
+01:09:57,023 --> 01:09:57,503
+So,
+
+795
+01:09:57,684 --> 01:09:58,663
+let's go back
+
+796
+01:09:58,663 --> 01:09:59,304
+here.
+
+797
+01:10:00,363 --> 01:10:01,663
+Whenever t is between
+
+798
+01:10:01,663 --> 01:10:02,823
+and pi over 2,
+
+799
+01:10:04,764 --> 01:10:06,123
+cosine t and sine t
+
+800
+01:10:06,123 --> 01:10:06,603
+are both
+
+801
+01:10:06,603 --> 01:10:07,863
+bigger than or two zero.
+
+802
+01:10:08,023 --> 01:10:08,943
+So, the absolute value
+
+803
+01:10:08,943 --> 01:10:09,543
+is itself.
+
+804
+01:10:10,203 --> 01:10:10,884
+So, the length
+
+805
+01:10:10,884 --> 01:10:12,483
+of the first quadrant portion,
+
+806
+01:10:13,443 --> 01:10:15,083
+just the portion
+
+807
+01:10:15,083 --> 01:10:16,163
+between t,
+
+808
+01:10:16,304 --> 01:10:19,063
+t between 0 and pi over 2,
+
+809
+01:10:19,123 --> 01:10:20,463
+the portion of that,
+
+810
+01:10:20,884 --> 01:10:21,583
+its length is
+
+811
+01:10:21,583 --> 01:10:23,243
+the integral
+
+812
+01:10:23,243 --> 01:10:24,983
+from 0 to pi over 2
+
+813
+01:10:24,983 --> 01:10:27,283
+of this,
+
+814
+01:10:28,463 --> 01:10:28,743
+dt.
+
+815
+01:10:29,384 --> 01:10:30,003
+What is that?
+
+816
+01:10:30,003 --> 01:10:30,943
+Well,
+
+817
+01:10:31,363 --> 01:10:32,623
+2 times cosine t
+
+818
+01:10:32,623 --> 01:10:33,043
+sine t
+
+819
+01:10:33,043 --> 01:10:33,804
+is sine 2t.
+
+820
+01:10:33,923 --> 01:10:34,703
+So, if we multiply
+
+821
+01:10:34,703 --> 01:10:35,344
+and divide us
+
+822
+01:10:35,344 --> 01:10:35,884
+by 2,
+
+823
+01:10:36,003 --> 01:10:37,463
+we get 3 over 2 times
+
+824
+01:10:37,463 --> 01:10:39,243
+2 cosine t sine t,
+
+825
+01:10:39,304 --> 01:10:40,063
+which is sine 2t.
+
+826
+01:10:40,764 --> 01:10:41,184
+Now,
+
+827
+01:10:41,243 --> 01:10:41,583
+the integral
+
+828
+01:10:41,583 --> 01:10:42,363
+of sine 2t
+
+829
+01:10:42,363 --> 01:10:42,724
+is
+
+830
+01:10:42,724 --> 01:10:44,443
+sine 2t
+
+831
+01:10:44,443 --> 01:10:45,083
+over 2.
+
+832
+01:10:46,023 --> 01:10:46,563
+Its integral
+
+833
+01:10:46,563 --> 01:10:47,384
+is cosine 2t
+
+834
+01:10:47,384 --> 01:10:47,943
+over 2.
+
+835
+01:10:48,103 --> 01:10:48,623
+So, we get,
+
+836
+01:10:49,063 --> 01:10:49,264
+sorry,
+
+837
+01:10:50,144 --> 01:10:50,603
+its integral
+
+838
+01:10:50,603 --> 01:10:50,963
+is
+
+839
+01:10:50,963 --> 01:10:53,563
+minus cosine 2t
+
+840
+01:10:53,563 --> 01:10:54,023
+over 2.
+
+841
+01:10:55,503 --> 01:10:56,403
+Integral of sine
+
+842
+01:10:56,403 --> 01:10:57,983
+x is minus cosine x.
+
+843
+01:10:58,144 --> 01:10:58,283
+Right.
+
+844
+01:10:58,943 --> 01:10:59,543
+Its integral
+
+845
+01:10:59,543 --> 01:11:00,743
+is minus cosine 2t
+
+846
+01:11:00,743 --> 01:11:01,203
+over 2.
+
+847
+01:11:01,323 --> 01:11:01,783
+So, we get
+
+848
+01:11:01,783 --> 01:11:03,203
+minus 3 over 4
+
+849
+01:11:03,203 --> 01:11:04,123
+cosine 2t
+
+850
+01:11:04,123 --> 01:11:05,344
+evaluated from 0
+
+851
+01:11:05,344 --> 01:11:06,144
+to pi over 2.
+
+852
+01:11:06,423 --> 01:11:07,163
+What do we get?
+
+853
+01:11:07,644 --> 01:11:08,823
+When t is pi over 2,
+
+854
+01:11:10,264 --> 01:11:12,163
+we get cosine pi,
+
+855
+01:11:12,264 --> 01:11:13,103
+which is minus 1.
+
+856
+01:11:13,203 --> 01:11:14,623
+So, minus minus 3 over 4,
+
+857
+01:11:14,684 --> 01:11:15,603
+we get 3 over 4.
+
+858
+01:11:16,184 --> 01:11:17,083
+When t is 0,
+
+859
+01:11:18,304 --> 01:11:18,724
+we get,
+
+860
+01:11:19,063 --> 01:11:20,144
+this is 1,
+
+861
+01:11:20,203 --> 01:11:21,403
+we get minus 3 over 4.
+
+862
+01:11:21,403 --> 01:11:22,783
+So, we get 3 over 4
+
+863
+01:11:22,783 --> 01:11:23,304
+minus,
+
+864
+01:11:23,384 --> 01:11:24,523
+minus 3 over 4,
+
+865
+01:11:24,903 --> 01:11:25,523
+which gives us
+
+866
+01:11:25,523 --> 01:11:26,144
+3 over 2.
+
+867
+01:11:26,863 --> 01:11:27,543
+3 over 2,
+
+868
+01:11:27,623 --> 01:11:28,384
+that's the length
+
+869
+01:11:28,384 --> 01:11:28,863
+of the
+
+870
+01:11:28,863 --> 01:11:30,103
+one quarter of it.
+
+871
+01:11:30,844 --> 01:11:31,243
+So, it's,
+
+872
+01:11:31,384 --> 01:11:32,103
+the total length
+
+873
+01:11:32,103 --> 01:11:33,103
+is 4 times that,
+
+874
+01:11:33,283 --> 01:11:34,203
+which is going to be 6.
+
+875
+01:11:35,063 --> 01:11:35,344
+And,
+
+876
+01:11:35,943 --> 01:11:36,623
+as I said,
+
+877
+01:11:37,363 --> 01:11:37,644
+that's,
+
+878
+01:11:41,587 --> 01:11:45,587
+Bu bir şey.
+
+879
+01:11:45,587 --> 01:11:47,587
+6'e 6'e 6'e.
+
+880
+01:11:47,587 --> 01:11:49,587
+Ve söylediğim gibi,
+
+881
+01:11:49,587 --> 01:11:52,587
+bu bir yukarı ve yukarı ve yukarı
+
+882
+01:11:52,587 --> 01:11:54,587
+yukarı ve yukarı yukarı
+
+883
+01:11:54,587 --> 01:11:56,587
+yukarı.
+
+884
+01:12:02,195 --> 01:12:02,775
+Okey.
+
+885
+01:12:08,851 --> 01:12:09,851
+Er...
+
+886
+01:12:13,492 --> 01:12:17,492
+Arklaring, Differential, Lengke Vector Vycus.
+
+887
+01:12:24,819 --> 01:12:25,819
+Bence bu.
+
+888
+01:12:27,819 --> 01:12:28,819
+No.
+
+889
+01:12:30,019 --> 01:12:32,819
+Areas of surface of revolution, no.
+
+890
+01:12:32,819 --> 01:12:34,819
+Not covering these.
+
+891
+01:12:39,764 --> 01:12:44,764
+Evet, bu da end of 11.2.
+
+892
+01:12:44,764 --> 01:12:45,764
+Let me check, but...
+
+893
+01:12:49,971 --> 01:12:51,851
+Let me check, I'm sorry.
+
+894
+01:13:56,307 --> 01:14:16,368
+Evet, we don't cover that. Length, calculositive parametri curves, derivative length of parametrily defined curve, then polar coordinates, polar equations, polar line, cardinal coordinates, graphing in polar coordinates, line, circle, cardia, eriz, length, polar coordinates, area, plane lengths of polar curve, right, then factors.
+
+895
+01:14:16,368 --> 01:14:35,368
+So what? Oh, the fifth week. We're on the fourth week, right? This is the fourth week of the semester. So we are moving ahead, actually. That's fine. That's fine. Okay, so...
+
+896
+01:14:38,127 --> 01:14:43,408
+Right, so you didn't... Oh, okay. That was an early message.
+
+897
+01:14:46,368 --> 01:14:55,307
+What time is it? What time is it? What time is it? 10.13. Okay, any questions? Any questions so far? I mean, any questions?
+
+898
+01:14:58,547 --> 01:15:02,868
+Any questions on whatever I covered so far today?
+
+899
+01:15:06,568 --> 01:15:09,807
+All right, so let's give it 20 minutes, actually.
+
+900
+01:15:10,807 --> 01:15:14,108
+10.13. So let's give it 22 minutes break.
+
+901
+01:15:14,108 --> 01:15:21,608
+10.13. Let's continue at 10.13. Let's continue at 10.13.5 with polar coordinates. Okay.
+
+902
+01:15:21,608 --> 01:15:23,667
+Okay. 22 minutes break.
+
+903
+01:15:26,667 --> 01:15:29,047
+All right, so yeah.
+
+904
+01:15:30,047 --> 01:15:31,807
+I'll see you in 20 minutes.
+
+905
+01:37:54,899 --> 01:37:59,699
+Okay, let's continue with polar coordinates.
+
+906
+01:38:10,195 --> 01:38:13,416
+Okay, before this, let me do something on the board.
+
+907
+01:38:15,655 --> 01:38:16,055
+Okay.
+
+908
+01:38:36,180 --> 01:38:48,720
+So, when working on a plane, so far we have always worked on the x-y coordinate system, the Cartesian coordinate system.
+
+909
+01:38:49,579 --> 01:38:57,039
+Now we are going to define the polar coordinate system, but before that, how does the Cartesian coordinate system work?
+
+910
+01:38:57,900 --> 01:39:02,240
+So, what's a coordinate system, basically? What's a coordinate system?
+
+911
+01:39:02,240 --> 01:39:08,240
+So, let's say I have some point. Let me make it a little bit bigger.
+
+912
+01:39:10,100 --> 01:39:23,240
+I have some point on the polar. I want to describe the location of that point. I want to describe the location of that point by making use of some coordinates.
+
+913
+01:39:26,868 --> 01:39:29,268
+Okay, how does the x-y coordinate system work?
+
+914
+01:39:29,268 --> 01:39:33,428
+First, we agree on an origin.
+
+915
+01:39:33,988 --> 01:39:39,028
+So, on the plane, the whole plane, we have a plane, we agree on an origin.
+
+916
+01:39:39,028 --> 01:39:39,668
+Let's see.
+
+917
+01:39:48,115 --> 01:39:48,435
+Evet, şimdi,
+
+918
+01:39:48,435 --> 01:39:49,115
+evet,
+
+919
+01:39:49,115 --> 01:39:50,115
+şimdi,
+
+920
+01:39:53,716 --> 01:39:55,716
+Peki, bu konuda bir şey.
+
+921
+01:39:55,716 --> 01:40:05,716
+Bu konuda bir şey.
+
+922
+01:40:05,716 --> 01:40:07,716
+Bir şey.
+
+923
+01:40:07,716 --> 01:40:09,716
+Bir yi'ye.
+
+924
+01:40:09,716 --> 01:40:19,716
+Bir şey.
+
+925
+01:40:19,716 --> 01:40:21,716
+Bir konuda bir şey.
+
+926
+01:40:21,716 --> 01:40:25,716
+Bu konuda bir şey.
+
+927
+01:40:25,716 --> 01:42:25,716
+Bir şey.
+
+928
+01:42:27,123 --> 01:42:29,123
+First, we agree on a pole.
+
+929
+01:42:33,123 --> 01:42:38,123
+It's the same as the origin of the Cartesian coordinate system. So we agree on this.
+
+930
+01:42:38,123 --> 01:42:43,123
+And we agree on an initial array, some direction.
+
+931
+01:42:43,123 --> 01:42:50,123
+So when we put the Cartesian coordinate system and polar coordinate system on one on the other,
+
+932
+01:42:50,123 --> 01:43:01,123
+we always assume that the initial array of the polar coordinate system is the same as the positive x direction of the Cartesian coordinates.
+
+933
+01:43:01,123 --> 01:43:05,123
+Let me take our initial array like this.
+
+934
+01:43:05,123 --> 01:43:07,123
+This is our work.
+
+935
+01:43:17,363 --> 01:43:27,043
+So, in the Cartesian coordinate system, in addition to the origin, we needed an x-axis and a y-axis and both directions of them.
+
+936
+01:43:27,823 --> 01:43:34,563
+In the polar coordinate system, in addition to the origin or pole, we only need one ray on one direction.
+
+937
+01:43:35,303 --> 01:43:36,763
+We don't need another axis.
+
+938
+01:43:37,043 --> 01:43:40,463
+Now, I can describe the location of this point.
+
+939
+01:43:41,163 --> 01:43:41,423
+How?
+
+940
+01:43:42,643 --> 01:43:45,423
+Well, let me say...
+
+941
+01:43:47,363 --> 01:43:49,363
+Let's say...
+
+942
+01:43:51,103 --> 01:43:51,463
+What?
+
+943
+01:43:53,203 --> 01:43:54,363
+One-hander it...
+
+944
+01:43:57,747 --> 01:44:17,007
+I don't know, let me see, maybe 90, 95, let me say, come on, let's see, it looks like 40 degrees, something like that, so what is 40 degrees, pi, 2 pi over 9, let's say.
+
+945
+01:44:23,667 --> 01:44:34,407
+So, these coordinates are going to specify the location of this point. How? The first is in terms of our units, whatever units we use, centimeters, let's say. The other is irradiance.
+
+946
+01:44:35,307 --> 01:44:50,947
+So, this says that 2 pi over 9, 2 pi over 9 is 40 degrees. Just start with this initial ray and turn in the counterclockwise direction, the counterclockwise direction, turn 2 pi over 9 radius.
+
+947
+01:44:50,947 --> 01:45:05,807
+We get to this, this is 30. So, that's 40 degrees. This is 2 pi over 9. Turn that many. And then, once you turn, you will get...
+
+948
+01:45:09,076 --> 01:45:39,076
+Şimdi bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde,
+
+949
+01:45:39,076 --> 01:46:42,636
+bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde
+
+950
+01:46:46,547 --> 01:46:49,427
+R is the directed distance from O to P.
+
+951
+01:46:50,127 --> 01:46:52,648
+Directed means we can move on the opposite direction.
+
+952
+01:46:52,648 --> 01:46:56,887
+If you move on the opposite direction, that's going to give us a negative R value.
+
+953
+01:46:57,728 --> 01:47:00,467
+And this is the directed angle from initial ray to O to P.
+
+954
+01:47:00,907 --> 01:47:07,447
+Directed angle means if you turn into counterclockwise direction, that's positive angle.
+
+955
+01:47:07,447 --> 01:47:15,527
+If you turn on the negative X, Y direction, that's negative.
+
+956
+01:47:15,907 --> 01:47:18,907
+Sorry, if you turn on the clockwise direction, that's negative X.
+
+957
+01:47:19,527 --> 01:47:21,268
+So, for example, look at this point.
+
+958
+01:47:21,867 --> 01:47:28,108
+This point can be given R theta coordinates in many different ways.
+
+959
+01:47:28,347 --> 01:47:30,347
+Actually, in infinitely many different ways.
+
+960
+01:47:30,407 --> 01:47:35,127
+We will see in a moment how, for example, I can start with the initial ray.
+
+961
+01:47:35,127 --> 01:47:43,367
+Turn pi over 6 radians in the counterclockwise direction, pi over 6, and 6 radians, and then move 2 units.
+
+962
+01:47:44,108 --> 01:47:47,527
+So, it may be described with these coordinates, 2, pi over 6.
+
+963
+01:47:48,127 --> 01:47:49,568
+Or we could do this.
+
+964
+01:47:49,887 --> 01:47:59,967
+Instead of turning in the counterclockwise direction, we could turn 11 pi over 6 radians on the clockwise direction,
+
+965
+01:48:00,247 --> 01:48:02,967
+which would give us a minus 11 pi over 6.
+
+966
+01:48:02,967 --> 01:48:05,627
+Theta coordinates.
+
+967
+01:48:05,947 --> 01:48:10,527
+It's minus because we are turning on the clockwise direction, on the opposite direction.
+
+968
+01:48:11,167 --> 01:48:19,367
+And again, after we turn that many radians, then we get to this ray, then move 2 units on that ray.
+
+969
+01:48:19,367 --> 01:48:22,927
+That gives us this coordinate, the same point.
+
+970
+01:48:23,407 --> 01:48:30,127
+So, the same point here, as we see, the same point is described in two different ways.
+
+971
+01:48:31,407 --> 01:48:33,347
+On the R theta coordinate system.
+
+972
+01:48:33,347 --> 01:48:38,347
+So, this is the main difference between the polar coordinate system and the XY coordinates.
+
+973
+01:48:40,007 --> 01:48:48,108
+On the XY coordinate system, on the XY coordinate system, if you have a point, it has a unique X coordinate and a unique Y coordinate.
+
+974
+01:48:48,108 --> 01:48:51,867
+You cannot give it a different XY coordinate.
+
+975
+01:48:52,587 --> 01:48:53,447
+Different numbers.
+
+976
+01:48:53,967 --> 01:48:58,627
+I mean, different XY pairs represent different points on the plane.
+
+977
+01:48:59,268 --> 01:49:01,467
+But on the polar coordinate system, that's not true.
+
+978
+01:49:01,907 --> 01:49:05,947
+The same point can be given infinitely many.
+
+979
+01:49:05,947 --> 01:49:13,347
+actually here, we can see two examples, but in general, the same point can be given infinitely many polar coordinates.
+
+980
+01:49:14,867 --> 01:49:19,947
+Definitely many actually there are two infinite classes, what are they so let's describe the same point.
+
+981
+01:49:19,947 --> 01:49:23,947
+Let's find all possible coordinates to describe the same point.
+
+982
+01:49:23,947 --> 01:49:26,947
+So, first of all, if we turn clockwise.
+
+983
+01:49:26,947 --> 01:49:28,947
+pi over six.
+
+984
+01:49:28,947 --> 01:49:30,947
+And then move two units.
+
+985
+01:49:30,947 --> 01:49:33,947
+We got this right.
+
+986
+01:49:33,947 --> 01:49:35,947
+We got this this one.
+
+987
+01:49:35,947 --> 01:49:36,947
+We become a pi over six.
+
+988
+01:49:36,947 --> 01:49:41,947
+But instead of pi over six actually we could turn pi over six and then turn two pi more.
+
+989
+01:49:41,947 --> 01:49:44,947
+So two pi plus pi over six that's 13 pi over six.
+
+990
+01:49:44,947 --> 01:49:57,947
+13 pi over six comes to the same rate and another two pi become to the same rate so we can add or subtract multiples of two pi that doesn't change anything.
+
+991
+01:49:58,947 --> 01:50:10,947
+Actually, let me take articles to all possible angles are these pi over six pi over six plus or minus two pi pi over six plus or minus four pi plus or minus six by and so on.
+
+992
+01:50:10,947 --> 01:50:15,947
+So we can add or subtract multiples of two pi to pi over six.
+
+993
+01:50:15,947 --> 01:50:19,947
+What are equals minus two is that possible?
+
+994
+01:50:19,947 --> 01:50:20,947
+The answer is yes.
+
+995
+01:50:20,947 --> 01:50:22,947
+What they could do is this.
+
+996
+01:50:22,947 --> 01:50:25,947
+Start from zero.
+
+997
+01:50:25,947 --> 01:50:27,947
+Turn seven pi over six.
+
+998
+01:50:27,947 --> 01:50:29,947
+So pi over six plus another pi.
+
+999
+01:50:29,947 --> 01:50:31,947
+Turn seven pi over six radians.
+
+1000
+01:50:31,947 --> 01:50:33,947
+Then we turn seven pi over six radians.
+
+1001
+01:50:33,947 --> 01:50:36,947
+We come to this right over here.
+
+1002
+01:50:36,947 --> 01:50:37,947
+Then on this ray.
+
+1003
+01:50:37,947 --> 01:50:38,947
+We come to this right over here.
+
+1004
+01:50:38,947 --> 01:50:39,947
+Then on this ray.
+
+1005
+01:50:39,947 --> 01:50:40,947
+We come to this right over here.
+
+1006
+01:50:40,947 --> 01:50:41,947
+Then on this ray.
+
+1007
+01:50:41,947 --> 01:50:42,947
+We come to this right over here.
+
+1008
+01:50:42,947 --> 01:50:43,947
+Then on this ray.
+
+1009
+01:50:43,947 --> 01:50:44,947
+We come to this right over here.
+
+1010
+01:50:44,947 --> 01:50:45,947
+Then on this ray.
+
+1011
+01:50:45,947 --> 01:50:46,947
+We come to this right over here.
+
+1012
+01:50:46,947 --> 01:50:47,947
+Then on this ray.
+
+1013
+01:50:47,947 --> 01:50:48,947
+We come to this right over here.
+
+1014
+01:50:48,947 --> 01:50:49,947
+Then on this ray.
+
+1015
+01:50:49,947 --> 01:51:03,947
+We come to this ray.
+
+1016
+01:50:46,283 --> 01:50:48,283
+Bu şekilde bir şekilde.
+
+1017
+01:50:56,692 --> 01:50:59,692
+Şimdi bu noktada, bu noktada,
+
+1018
+01:50:59,692 --> 01:51:26,692
+bu noktada,
+
+1019
+01:51:26,739 --> 01:51:30,420
+7 pi over 6, which is the exact opposite of this.
+
+1020
+01:51:31,619 --> 01:51:34,979
+Opposite of this. 7 pi over 6 radios.
+
+1021
+01:51:35,619 --> 01:51:38,899
+Now when we do 7 pi over 6 radios, we are in this direction.
+
+1022
+01:51:40,260 --> 01:51:46,340
+So on this direction, move minus 2 units. Minus 2 units means move on the opposite direction.
+
+1023
+01:51:46,340 --> 01:51:49,779
+So on the opposite direction, we will move 2 units.
+
+1024
+01:51:50,659 --> 01:51:56,659
+We'll come to the same point. So the corners of this point can be described as minus 2 comma 3
+
+1025
+01:51:56,659 --> 01:52:03,539
+pi over 6 as well. So 2 comma pi over 6 and minus 2 comma 7 pi over 6 represent the same point.
+
+1026
+01:52:04,500 --> 01:52:06,979
+Again, what does this mean? You first apply the angle.
+
+1027
+01:52:07,779 --> 01:52:11,619
+Turn in the counterclockwise direction 7 pi over 6 units.
+
+1028
+01:52:12,739 --> 01:52:18,099
+We come to this ray. Then minus 2 means move 2 units on the opposite direction.
+
+1029
+01:52:18,099 --> 01:52:20,739
+Move 2 units on the opposite direction. We come to this point.
+
+1030
+01:52:20,739 --> 01:52:28,819
+So the r value of that point can be either 2 or minus 2. If it is 2,
+
+1031
+01:52:32,420 --> 01:52:39,539
+either 2 or minus 2. If it is 2, its angle is going to be pi over 6 or we can add multiples of 2 pi to that.
+
+1032
+01:52:39,539 --> 01:52:49,460
+Or if r is minus 2, then we can take 7 pi over 6 or this one.
+
+1033
+01:52:50,500 --> 01:52:58,420
+7 pi over 6 comes to that ray or minus 5 pi over 6. If you look at this minus 5 pi over 6, that comes to the same ray.
+
+1034
+01:52:58,420 --> 01:53:02,739
+We could take that one minus 5 pi over 6 and add multiples of 2 pi to that.
+
+1035
+01:53:02,739 --> 01:53:13,779
+That also gives us same point. So this point over here, the same point can be represented in two different infinite families.
+
+1036
+01:53:13,779 --> 01:53:23,380
+So 2 comma r is equal to 2 and theta is pi over 6 plus multiples of 2 pi where n is any integer here.
+
+1037
+01:53:23,380 --> 01:53:37,779
+Okay, what is next?
+
+1038
+01:53:39,539 --> 01:53:48,019
+Fuller equations and graphs.
+
+1039
+01:53:49,203 --> 01:53:51,203
+Polar Equations and Graphs
+
+1040
+01:53:55,636 --> 01:53:58,796
+Okay, and easy equation is this. R equals a.
+
+1041
+01:54:00,896 --> 01:54:02,296
+What does that give us?
+
+1042
+01:54:06,876 --> 01:54:09,496
+Again, let's go back to the Cartesian coordinate system.
+
+1043
+01:54:09,556 --> 01:54:14,156
+On the Cartesian coordinate system, our coordinates are x and y, x and y coordinates.
+
+1044
+01:54:14,716 --> 01:54:16,156
+So x equals some constant.
+
+1045
+01:54:16,576 --> 01:54:20,356
+X equals some constant that gives us a vertical line, right?
+
+1046
+01:54:20,916 --> 01:54:22,476
+So x equals 5, for example.
+
+1047
+01:54:22,476 --> 01:54:27,156
+X equals 5 gives us the set of all points whose x coordinate is 5.
+
+1048
+01:54:27,376 --> 01:54:28,296
+That's a vertical line.
+
+1049
+01:54:29,596 --> 01:54:31,956
+So y equals minus 3, for example.
+
+1050
+01:54:32,136 --> 01:54:33,115
+Y equals a constant.
+
+1051
+01:54:33,296 --> 01:54:34,336
+Y equals minus 3.
+
+1052
+01:54:34,736 --> 01:54:36,256
+That's going to be a horizontal line.
+
+1053
+01:54:36,356 --> 01:54:39,936
+The set of all points whose y coordinate is minus 3.
+
+1054
+01:54:40,956 --> 01:54:43,156
+Now, how about the polar coordinate system?
+
+1055
+01:54:43,936 --> 01:54:45,056
+R equals a constant.
+
+1056
+01:54:45,456 --> 01:54:46,416
+What does that give us?
+
+1057
+01:54:46,736 --> 01:54:47,856
+So r equals 5.
+
+1058
+01:54:48,736 --> 01:54:51,396
+R equals 5 means r is what?
+
+1059
+01:54:51,396 --> 01:54:51,936
+What is r?
+
+1060
+01:54:51,936 --> 01:54:54,916
+r is the directed distance from the origin to that point.
+
+1061
+01:54:55,316 --> 01:54:58,636
+R equals 5 means that the set of all points whose r coordinate is 5.
+
+1062
+01:54:58,736 --> 01:54:59,836
+That's going to be a circle.
+
+1063
+01:55:00,596 --> 01:55:02,336
+The circle of radius 5, basically.
+
+1064
+01:55:03,076 --> 01:55:09,516
+The set of all points whose r coordinate is 5 gives us the circle whose center is the origin and whose radius is 5.
+
+1065
+01:55:10,696 --> 01:55:12,716
+Okay, how about r equals minus 5?
+
+1066
+01:55:13,656 --> 01:55:15,236
+r equals minus 5 is the same.
+
+1067
+01:55:15,236 --> 01:55:17,836
+It's exactly the same circle.
+
+1068
+01:55:18,615 --> 01:55:19,836
+Exactly the same circle.
+
+1069
+01:55:19,836 --> 01:55:30,856
+because all points on the circle of radius 5 can be represented with some coordinate pairs whose r values minus 5.
+
+1070
+01:55:30,856 --> 01:55:33,536
+So r equals 5 and r equals minus 5.
+
+1071
+01:55:33,536 --> 01:55:34,796
+They're both the same circle.
+
+1072
+01:55:34,796 --> 01:55:37,256
+The circle with radius 5 centered at the origin.
+
+1073
+01:55:37,256 --> 01:55:41,936
+How about theta equals some constant?
+
+1074
+01:55:41,936 --> 01:55:43,036
+For example,
+
+1075
+01:55:44,736 --> 01:55:45,596
+theta equals
+
+1076
+01:55:45,596 --> 01:55:48,376
+pi over 3.
+
+1077
+01:55:48,876 --> 01:55:50,516
+Theta equals pi over 3.
+
+1078
+01:55:50,896 --> 01:55:52,636
+That's the set of all points.
+
+1079
+01:55:53,636 --> 01:55:55,056
+Theta equals pi over 3.
+
+1080
+01:55:55,056 --> 01:56:07,276
+The set of all points whose theta coordinates is pi over 3.
+
+1081
+01:56:07,276 --> 01:56:08,115
+These points.
+
+1082
+01:56:09,516 --> 01:56:10,636
+All points on the slide.
+
+1083
+01:56:16,467 --> 01:56:27,068
+So this line is the graph of the equation theta equals pi over 3 because these are all the points whose are going to this pi over 3.
+
+1084
+01:56:27,068 --> 01:56:34,167
+So for example, here's a point 1, pi over 3. Here's another point 2, pi over 3.
+
+1085
+01:56:35,867 --> 01:56:39,068
+So here 2.5, pi over 3.
+
+1086
+01:56:39,068 --> 01:56:48,068
+And of course, on the opposite direction, we have minus 1 over pi over 3, minus 2, pi over 3 and so on.
+
+1087
+01:56:48,068 --> 01:56:57,068
+So give any value to R, give any real number value to R, fix the theta to pi over 3, we get all points on this line.
+
+1088
+01:56:57,068 --> 01:57:11,108
+So in general, in general, equation of the form R equals some constant, that's a circle, centered at the origin whose radius is the absolute value of A.
+
+1089
+01:57:13,507 --> 01:57:24,947
+An equation of the form theta equals some constant, that's a line passing through the origin, making an angle theta 0, that angle with the initial rate, in general.
+
+1090
+01:57:24,947 --> 01:57:28,347
+So, for example, look at these graphs.
+
+1091
+01:57:29,347 --> 01:57:34,347
+R equals 1 and R equals minus 1 are equations for the same circle, radius 1 and so on.
+
+1092
+01:57:34,648 --> 01:57:35,608
+Okay, another example.
+
+1093
+01:57:36,867 --> 01:57:38,247
+Okay, let's look at these examples.
+
+1094
+01:57:38,688 --> 01:57:41,747
+After sets of points whose polar coordinates, let's find the following conditions.
+
+1095
+01:57:42,387 --> 01:57:43,568
+R is between 1 and 2.
+
+1096
+01:57:45,148 --> 01:57:46,907
+So here's the graph actually.
+
+1097
+01:57:48,007 --> 01:57:50,247
+And theta is between 0 and pi over 2.
+
+1098
+01:57:50,247 --> 01:57:58,007
+So theta is between 0 and pi over 2 means theta equals 0 is this positive x axis.
+
+1099
+01:57:58,947 --> 01:58:01,287
+Theta equals pi over 2, that's the positive y axis.
+
+1100
+01:58:01,768 --> 01:58:06,327
+Theta being between 0 and pi over 2 means, my point is on the first quadrant.
+
+1101
+01:58:06,568 --> 01:58:09,307
+It's between theta equals 0 and theta equals pi over 2 here.
+
+1102
+01:58:09,947 --> 01:58:11,367
+And R is between 1 and 2.
+
+1103
+01:58:11,367 --> 01:58:16,427
+So on this quadrant, R equals 1 is this circle or radius 1.
+
+1104
+01:58:16,707 --> 01:58:18,827
+R equals 2 is this circle or radius 2.
+
+1105
+01:58:19,148 --> 01:58:26,847
+So R is between 1 and 2 means, the point is on this, whatever shape this is.
+
+1106
+01:58:28,287 --> 01:58:32,768
+This shaded region, basically, is the graph of this.
+
+1107
+01:58:32,768 --> 01:58:35,587
+How about this?
+
+1108
+01:58:36,127 --> 01:58:39,028
+Minus 3 is less than R less than equal to 2 and theta is pi over 4.
+
+1109
+01:58:39,127 --> 01:58:40,188
+Theta equals pi over 4.
+
+1110
+01:58:40,667 --> 01:58:42,387
+Theta equals pi over 4 is this.
+
+1111
+01:58:44,047 --> 01:58:47,167
+Theta equals pi over 4 is this line.
+
+1112
+01:58:48,648 --> 01:58:52,728
+And since theta is pi over 4, pi over 4 is this ray, right?
+
+1113
+01:58:53,148 --> 01:58:54,568
+So this is the positive direction.
+
+1114
+01:58:55,028 --> 01:58:56,287
+This is the negative direction.
+
+1115
+01:58:56,287 --> 01:59:01,707
+So on the positive direction, here we have 1 comma pi over 4, 2 comma pi over 4.
+
+1116
+01:59:01,747 --> 01:59:04,667
+On the negative direction, minus 1, minus 2, minus 3.
+
+1117
+01:59:05,287 --> 01:59:10,907
+So if we take r to b between minus 3 and 2, here this point is minus 3 comma pi over 2.
+
+1118
+01:59:11,007 --> 01:59:12,608
+This point is 2 comma pi over 2.
+
+1119
+01:59:12,907 --> 01:59:15,028
+We get all points on this line segment.
+
+1120
+01:59:16,507 --> 01:59:21,148
+Where the distance of this point to the origin is 2, distance of this point to the origin is 3.
+
+1121
+01:59:23,887 --> 01:59:24,967
+How about this?
+
+1122
+01:59:24,967 --> 01:59:28,407
+Theta is between 2 pi over 3 and 5 pi over 6.
+
+1123
+01:59:28,488 --> 01:59:29,447
+No restriction on R.
+
+1124
+01:59:30,367 --> 01:59:31,887
+So theta equals 2 pi over 3.
+
+1125
+01:59:32,007 --> 01:59:33,667
+2 pi over 3 is 120 degrees.
+
+1126
+01:59:33,807 --> 01:59:34,967
+This one, this line.
+
+1127
+01:59:36,188 --> 01:59:37,707
+Theta equals 5 pi over 6.
+
+1128
+01:59:37,768 --> 01:59:39,547
+5 pi over 6 is 150 degrees.
+
+1129
+01:59:39,907 --> 01:59:40,427
+This line.
+
+1130
+01:59:41,347 --> 01:59:44,068
+And here, R is anything, any real number.
+
+1131
+01:59:44,068 --> 01:59:54,568
+So this part on the second quadrant, this shaded region on the second quadrant, gives us all points satisfying this and having positive R value.
+
+1132
+01:59:54,967 --> 02:00:03,807
+This shaded region on the fourth quadrant over here, gives us the set of all points whose theta satisfies this and whose R value is negative.
+
+1133
+02:00:04,807 --> 02:00:05,367
+These points.
+
+1134
+02:00:06,028 --> 02:00:07,587
+For both shaded regions.
+
+1135
+02:00:07,587 --> 02:00:27,887
+The whole shaded region is the graph of this.
+
+1136
+02:00:14,996 --> 02:00:15,996
+Peki, sonra ne?
+
+1137
+02:00:15,996 --> 02:00:44,996
+Ne?
+
+1138
+02:00:28,659 --> 02:00:48,460
+Okay, so again, if you put the xy coordinate system and the polar coordinate system on one on top of the other, so that the origin of the common origin, the origin of the Cartesian coordinate system, the xy coordinate system and the pole of the polar coordinate system is the same.
+
+1139
+02:00:48,460 --> 02:00:56,420
+And the positive x-axis of the Cartesian coordinate system is the same as the initial ray of the polar coordinate system.
+
+1140
+02:00:56,960 --> 02:00:57,960
+Then what do we have?
+
+1141
+02:00:58,659 --> 02:01:08,059
+Take any point, take any point, which can be represented as xy on the Cartesian coordinate system or r theta on the polar coordinate system.
+
+1142
+02:01:08,599 --> 02:01:11,059
+So now look at the point, look at this triangle.
+
+1143
+02:01:11,439 --> 02:01:12,300
+What does that mean?
+
+1144
+02:01:12,300 --> 02:01:19,720
+The xy coordinate system means that this distance is x, this distance is y, those are the x and y coordinates of the point.
+
+1145
+02:01:20,279 --> 02:01:23,279
+The r value gives this, that's r.
+
+1146
+02:01:24,180 --> 02:01:24,979
+And what is theta?
+
+1147
+02:01:25,139 --> 02:01:26,699
+Theta is this angle over here.
+
+1148
+02:01:26,699 --> 02:01:36,599
+And you can work on this and see that it doesn't matter if x, y, r or theta are negative, you will always get the same thing.
+
+1149
+02:01:36,599 --> 02:01:48,300
+Of course, different cases for each of them being positive or negative have to be considered, but you can try and see that in all cases, this always works.
+
+1150
+02:01:48,300 --> 02:01:54,399
+It always works that, so if we take this with theta, so on this triangle, what is cosine theta?
+
+1151
+02:01:54,399 --> 02:01:58,779
+Cosine theta is x over r, which means that x is r times cosine theta.
+
+1152
+02:01:58,779 --> 02:02:05,399
+Again, on the triangle, sine theta is y over r, which means that y is r sine theta.
+
+1153
+02:02:06,399 --> 02:02:11,979
+Also, again, by the Pythagorean theorem, on the triangle, x square plus y square is equal to r square.
+
+1154
+02:02:12,619 --> 02:02:13,800
+Get this equation.
+
+1155
+02:02:14,840 --> 02:02:18,139
+Moreover, what is tangent theta on this triangle?
+
+1156
+02:02:18,460 --> 02:02:20,840
+Tangent theta is y over x, which is this.
+
+1157
+02:02:20,840 --> 02:02:28,599
+So we get all these identities that relate the x, y coordinate system with the r theta coordinate system.
+
+1158
+02:02:28,819 --> 02:02:29,659
+These are the relations.
+
+1159
+02:02:30,319 --> 02:02:40,319
+So making use of this, we can convert an equation given in Cartesian coordinate system into an equation in polar coordinate system, vice versa.
+
+1160
+02:02:40,319 --> 02:03:10,300
+So making use of this, we can convert an equation given in Cartesian coordinate system into an equation given in Cartesian coordinate system.
+
+1161
+02:02:46,644 --> 02:02:58,404
+Oh, for example, r cos theta equals to, a polar equation, it's the same Cartesian equation with x equals to, because r cos theta is x. Remember, r cos theta, that's x.
+
+1162
+02:03:03,123 --> 02:03:15,684
+R-square, cosine theta, sin theta, what is this? Here, R-cosine theta is x, another R we have, R-sine theta is y, so we get x times y equals 4, that's the Cartesian equivalent of this equation.
+
+1163
+02:03:18,063 --> 02:03:24,603
+R-square, cosine, square theta, that's x squared, minus R-square, sin square theta, that's y squared equals 1, we get this equation.
+
+1164
+02:03:26,523 --> 02:03:32,463
+R equals 1 plus 2 R-cosine theta, that's actually more complicated.
+
+1165
+02:03:33,123 --> 02:03:46,144
+So, this is x, R-cosine theta is x, so we get 1 plus 2 x on the left side, 1 plus 2 x.
+
+1166
+02:03:47,063 --> 02:03:48,144
+So, let's do this.
+
+1167
+02:03:51,667 --> 02:03:54,768
+What is it? R equals 1 plus R cosine theta.
+
+1168
+02:04:01,619 --> 02:04:02,619
+Evet.
+
+1169
+02:04:14,292 --> 02:04:19,292
+1 plus 2 R cosign.
+
+1170
+02:04:19,292 --> 02:04:24,292
+Now what is this R cosign theta is x we get 1 plus 2x.
+
+1171
+02:04:24,292 --> 02:04:30,292
+So R could be written as square root of x square plus y square but instead of that square both sides.
+
+1172
+02:04:30,292 --> 02:04:36,292
+You get R square equals 1 plus 2x square.
+
+1173
+02:04:36,292 --> 02:04:43,292
+So we get R square equals 1 plus 4x plus 4x square.
+
+1174
+02:04:43,292 --> 02:04:49,292
+And now I can replace R square with x square plus y square.
+
+1175
+02:04:49,292 --> 02:04:55,292
+So we get x square plus y square equals 1 plus 4x plus 4x square.
+
+1176
+02:04:55,292 --> 02:05:09,292
+And then that gives us y square equals 1 plus 4x plus if you move this x square to the other side plus 3x square.
+
+1177
+02:05:09,292 --> 02:05:11,292
+And she gives us this.
+
+1178
+02:05:11,292 --> 02:05:15,292
+And that's probably what is found on the book.
+
+1179
+02:05:15,292 --> 02:05:17,292
+Right.
+
+1180
+02:05:17,292 --> 02:05:19,292
+They are written in a different way.
+
+1181
+02:05:19,292 --> 02:05:23,292
+Y square minus 3x square minus 4x minus 1 equals 0.
+
+1182
+02:05:23,292 --> 02:05:37,292
+So we get to see the next one.
+
+1183
+02:05:28,275 --> 02:05:30,796
+And similarly, you can work on the last one.
+
+1184
+02:05:31,615 --> 02:05:32,355
+So let's continue.
+
+1185
+02:05:34,456 --> 02:05:38,935
+So okay, for example, find a polar equation for this circle.
+
+1186
+02:05:39,416 --> 02:05:42,416
+X squared plus y minus 3 squared equals 9.
+
+1187
+02:05:42,695 --> 02:05:45,796
+Remember, how does the equation of a circle look like?
+
+1188
+02:05:46,135 --> 02:05:50,876
+X minus h squared plus y minus k squared equals r squared.
+
+1189
+02:05:51,395 --> 02:05:55,796
+Where h, k is the center of the circle, r is the radius of the circle.
+
+1190
+02:05:55,796 --> 02:06:00,055
+So here, this is x minus 0 squared, basically, y minus 3 squared.
+
+1191
+02:06:00,055 --> 02:06:01,675
+So 0, 3, that's the center.
+
+1192
+02:06:01,796 --> 02:06:02,895
+0, 3 is the center.
+
+1193
+02:06:03,655 --> 02:06:06,395
+And this is 3 squared, so its radius is 3.
+
+1194
+02:06:07,135 --> 02:06:11,675
+So this is the equation of the circle whose center is 0, 3, whose radius is 3.
+
+1195
+02:06:11,996 --> 02:06:15,996
+So it passes through the origin, passes through this point, 0, 6, this circle.
+
+1196
+02:06:16,735 --> 02:06:19,395
+Now let's find polar equation for this circle.
+
+1197
+02:06:19,935 --> 02:06:24,475
+So this y minus 3 squared can be written as y squared minus 6y plus 9.
+
+1198
+02:06:24,475 --> 02:06:28,595
+Now, so 9's cancel.
+
+1199
+02:06:28,735 --> 02:06:31,115
+We get x squared plus y squared minus 6y equals 0.
+
+1200
+02:06:31,675 --> 02:06:34,695
+X squared plus y squared, we can replace that by r squared.
+
+1201
+02:06:35,395 --> 02:06:38,895
+And y, we can replace y with r sine theta.
+
+1202
+02:06:38,895 --> 02:06:44,115
+So we get r squared minus 6y plus r sine theta equals 0.
+
+1203
+02:06:46,655 --> 02:06:53,796
+So when we factor r here, when we factor r, we get r times r minus 6 sine theta equals 0.
+
+1204
+02:06:53,916 --> 02:06:56,435
+So either r is 0 or r is equal to 6 sine theta.
+
+1205
+02:06:56,435 --> 02:07:03,916
+And r equals 6 sine theta actually includes both possibilities because r equals 6 sine theta.
+
+1206
+02:07:04,155 --> 02:07:11,715
+When we give theta equals 0, I mean, this equation includes the case r equals 0 as well.
+
+1207
+02:07:12,095 --> 02:07:14,095
+Because when theta is 0, r is going to be 0.
+
+1208
+02:07:14,095 --> 02:07:21,015
+So both equations, both cases can be summarized in one equation.
+
+1209
+02:07:21,296 --> 02:07:22,555
+This r equals 6 sine theta.
+
+1210
+02:07:22,975 --> 02:07:25,975
+So that's the equation of this circle, r equals 6 sine theta.
+
+1211
+02:07:27,475 --> 02:07:28,235
+In polar.
+
+1212
+02:07:28,235 --> 02:07:33,055
+For other examples, we do the opposite.
+
+1213
+02:07:33,836 --> 02:07:38,635
+We replace Cartesian equations, flow equations with their Cartesian equivalence.
+
+1214
+02:07:39,195 --> 02:07:41,376
+For example, r cosine theta equals minus 4.
+
+1215
+02:07:41,735 --> 02:07:44,175
+r cosine theta can just replace with x.
+
+1216
+02:07:44,635 --> 02:07:46,135
+So it's x equals minus 4.
+
+1217
+02:07:46,195 --> 02:07:47,376
+So it's a vertical line.
+
+1218
+02:07:48,155 --> 02:07:49,395
+This is a vertical line.
+
+1219
+02:07:49,916 --> 02:07:50,576
+There's a graph.
+
+1220
+02:07:51,195 --> 02:07:52,355
+Now, the graph is not shown.
+
+1221
+02:07:53,015 --> 02:07:53,175
+Okay.
+
+1222
+02:07:53,975 --> 02:07:56,975
+This is, the polar equation is just a vertical line.
+
+1223
+02:07:57,036 --> 02:07:57,855
+X equals minus 4.
+
+1224
+02:07:58,235 --> 02:08:01,155
+R square equals 4 r cosine theta.
+
+1225
+02:08:01,515 --> 02:08:01,996
+Let's see.
+
+1226
+02:08:02,115 --> 02:08:05,015
+R square equals 4 r cosine theta.
+
+1227
+02:08:05,336 --> 02:08:06,416
+The Cartesian equivalent.
+
+1228
+02:08:07,275 --> 02:08:10,315
+R squared, that can be replaced with x squared plus y squared.
+
+1229
+02:08:11,076 --> 02:08:14,015
+R cosine theta on the right side can be replaced with x.
+
+1230
+02:08:14,336 --> 02:08:16,456
+So we get x squared plus y squared equals 4x.
+
+1231
+02:08:16,796 --> 02:08:18,855
+Then move 4x to the other side.
+
+1232
+02:08:19,435 --> 02:08:20,695
+We get this equation.
+
+1233
+02:08:21,336 --> 02:08:26,895
+Now, this part involving x, to complete it to a squared, we need to add 4 to that.
+
+1234
+02:08:26,895 --> 02:08:29,475
+So add 4 to both sides of the equation.
+
+1235
+02:08:29,475 --> 02:08:30,355
+We get this.
+
+1236
+02:08:30,855 --> 02:08:32,876
+And now, x squared minus 4x plus 4.
+
+1237
+02:08:33,036 --> 02:08:36,755
+This is just x minus 2 squared plus y squared equals 4.
+
+1238
+02:08:36,755 --> 02:08:43,775
+So we get a circle whose radius is 2 and whose center is 2, 0.
+
+1239
+02:08:44,376 --> 02:08:44,935
+We get this.
+
+1240
+02:08:46,376 --> 02:08:47,515
+And what is the next?
+
+1241
+02:08:49,175 --> 02:08:52,395
+4 r equals 4 over 2 cosine theta minus sine theta.
+
+1242
+02:08:52,395 --> 02:08:56,395
+r equals 4 over 2 cosine theta minus sine theta.
+
+1243
+02:08:57,076 --> 02:09:02,515
+But if we multiply this both sides by this, we get r times this is equal to 4.
+
+1244
+02:09:03,076 --> 02:09:07,635
+So this is 2 r cosine theta minus r sine theta equals 4.
+
+1245
+02:09:08,036 --> 02:09:09,895
+Here r cosine theta is just x.
+
+1246
+02:09:09,895 --> 02:09:12,355
+And here r sine theta is just y.
+
+1247
+02:09:12,615 --> 02:09:17,836
+We get 2x minus y equals 4, which is y equals 2x minus 4.
+
+1248
+02:09:17,935 --> 02:09:19,735
+So that's a line.
+
+1249
+02:09:20,135 --> 02:09:25,755
+That's the equation of a line whose slope is 2 and whose, which passes through the point, 0 comma minus 4.
+
+1250
+02:09:25,755 --> 02:09:55,735
+So that's the equation of a line.
+
+1251
+02:09:28,948 --> 02:09:29,427
+Ok.
+
+1252
+02:09:32,427 --> 02:09:34,548
+Krafting in polar coordinates.
+
+1253
+02:09:36,608 --> 02:09:38,548
+And then...
+
+1254
+02:09:48,819 --> 02:09:55,819
+ve
+
+1255
+02:10:01,619 --> 02:10:03,920
+Should I start this? I don't think so.
+
+1256
+02:10:14,612 --> 02:10:22,632
+11.08, ben çok
+
+1257
+02:10:22,632 --> 02:10:24,492
+bilmiyorum, ben çok çok
+
+1258
+02:10:24,492 --> 02:10:25,492
+başlayacağım.
+
+1259
+02:10:25,492 --> 02:10:26,692
+11.4
+
+1260
+02:10:32,180 --> 02:10:43,680
+Oh, and we have circles, line circles, later.
+
+1261
+02:10:46,200 --> 02:10:48,100
+Yeah, we can do them next week.
+
+1262
+02:10:54,899 --> 02:10:59,199
+I think that's enough for today. We can continue this next week.
+
+1263
+02:11:03,091 --> 02:11:05,091
+Evet, bu bölümde bu bölümde.
+
+1264
+02:11:06,291 --> 02:11:09,411
+Bu bölümde, bu bölümde,
+
+1265
+02:11:09,411 --> 02:11:12,612
+bu bölümde,
+
+1266
+02:11:20,884 --> 02:11:23,863
+And then on Friday we can solve problems.
+
+1267
+02:11:25,543 --> 02:11:29,703
+And then next week we can start chapter 12.
+
+1268
+02:11:29,863 --> 02:11:31,003
+That's going to be fine.
+
+1269
+02:11:31,844 --> 02:11:32,703
+Yeah, I think that's enough.
+
+1270
+02:11:32,783 --> 02:11:33,564
+That's enough for today.
+
+1271
+02:11:34,703 --> 02:11:35,703
+Okay, any questions?
+
+1272
+02:11:39,636 --> 02:11:46,856
+I see questions here. Let me see. So do we have two midterm one final? Yes, two midterm one final.
+
+1273
+02:11:48,896 --> 02:11:50,296
+Hocam ama...
+
+1274
+02:11:50,296 --> 02:11:54,115
+Vizeyen konularda ayrılacak bilmiyorum henüz. Tekrar söyle.
+
+1275
+02:11:55,096 --> 02:12:04,076
+Vize takvimi yayınlanmıştı. Sadece 17 Mayıs'ta Matematik'in birinci vizesi görünüyordu. Biz de o yüzden bir kafa karışıklığı yaşadık.
+
+1276
+02:12:04,976 --> 02:12:06,736
+17 Mayıs'ta...
+
+1277
+02:12:06,736 --> 02:12:07,016
+Evet.
+
+1278
+02:12:07,016 --> 02:12:11,016
+Vize takvimi bölüm web sayfasında mı?
+
+1279
+02:12:11,816 --> 02:12:12,556
+Evet hocam.
+
+1280
+02:12:14,556 --> 02:12:15,636
+Bir saniye.
+
+1281
+02:12:19,016 --> 02:12:20,615
+Öyleyse de benim haberim yok.
+
+1282
+02:12:21,956 --> 02:12:24,416
+Bakalım bir, bakayım bir bölüm web sayfasına.
+
+1283
+02:12:24,536 --> 02:12:25,796
+Servis dersleri duyurularında.
+
+1284
+02:12:26,736 --> 02:12:29,296
+Servis dersleri birinci yıl için ve mazere sınav tarihleri.
+
+1285
+02:12:30,196 --> 02:12:31,736
+Bahar dönemi, bu da tarihler dahil.
+
+1286
+02:12:33,736 --> 02:12:34,896
+Ney, mat 1072.
+
+1287
+02:12:34,896 --> 02:12:37,236
+Birinci yıl için birinci yıl için.
+
+1288
+02:12:37,236 --> 02:12:37,256
+Birinci yıl için sınav takvimi.
+
+1289
+02:12:38,136 --> 02:12:39,596
+17 Mayıs pazartesi.
+
+1290
+02:12:41,436 --> 02:12:43,336
+Servis dersleri mazere takvimi.
+
+1291
+02:12:45,896 --> 02:12:46,956
+8 Haziran salı.
+
+1292
+02:12:46,996 --> 02:12:49,316
+8 Haziran salı zaten dönemin son haftası mı oluyor?
+
+1293
+02:12:49,816 --> 02:12:50,896
+Mazer sınavı zaten de.
+
+1294
+02:12:51,036 --> 02:12:52,316
+17 Mayıs, 17 Mayıs.
+
+1295
+02:12:52,576 --> 02:12:53,416
+Bayağı geç.
+
+1296
+02:12:54,256 --> 02:12:54,836
+17 Mayıs.
+
+1297
+02:12:54,936 --> 02:12:55,776
+17 Mayıs hatta ne?
+
+1298
+02:12:55,856 --> 02:12:57,556
+Ramazan bayramından sonraki hafta değil mi?
+
+1299
+02:12:58,656 --> 02:13:00,176
+11. hafta oluyormuş.
+
+1300
+02:13:00,176 --> 02:13:01,176
+Kaçınca.
+
+1301
+02:13:01,176 --> 02:13:01,456
+Kaçınca?
+
+1302
+02:13:01,456 --> 02:13:03,256
+9, 10, 10, 11. hafta mı?
+
+1303
+02:13:03,776 --> 02:13:04,336
+Evet, 11.
+
+1304
+02:13:04,736 --> 02:13:05,816
+11. hafta.
+
+1305
+02:13:06,956 --> 02:13:09,056
+Yani ikinci vize zamanı aslında.
+
+1306
+02:13:09,316 --> 02:13:10,615
+Aynen, ikinci vize zamanı.
+
+1307
+02:13:10,736 --> 02:13:15,196
+Zaten şayet iki vize olsaydı bu ikinci vizenin zamanı olmuş olurdu.
+
+1308
+02:13:17,596 --> 02:13:19,476
+Öyle karar vermişler demek ki.
+
+1309
+02:13:19,556 --> 02:13:19,936
+Bilmiyorum.
+
+1310
+02:13:20,156 --> 02:13:21,016
+Vize de bildirmediler.
+
+1311
+02:13:21,216 --> 02:13:22,876
+Ben bir sorayım bölüm başkanlığına.
+
+1312
+02:13:22,876 --> 02:13:45,756
+yarın net bilgi vereyim size.
+
+1313
+02:13:45,756 --> 02:13:47,716
+Tamam hocam.
+
+1314
+02:13:47,716 --> 02:14:14,176
+Evet.
+
+1315
+02:13:51,507 --> 02:13:52,827
+Başka sorusu olan var mı?
+
+1316
+02:13:56,047 --> 02:13:57,167
+Any other question?
+
+1317
+02:13:59,648 --> 02:14:01,688
+Vize hangi konuların dahil olacağını bilmiyorum henüz.
+
+1318
+02:14:02,387 --> 02:14:05,967
+O vize zamanı ki zaten 17 Mayıs'taysa vize daha zamana çok var.
+
+1319
+02:14:10,195 --> 02:14:11,635
+Başka sorusu olan yok mu?
+
+1320
+02:14:14,095 --> 02:14:15,055
+No more questions?
+
+1321
+02:14:18,868 --> 02:14:22,388
+Okay, you all have a nice day. I'll see you tomorrow then. Bye.

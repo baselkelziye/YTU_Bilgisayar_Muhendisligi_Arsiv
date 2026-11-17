@@ -1,0 +1,5883 @@
+1
+00:03:04,116 --> 00:03:05,496
+Okay, good morning everybody.
+
+2
+00:03:10,963 --> 00:03:16,084
+So, we are on the left with this section, this section 14.7 from chapter 14.
+
+3
+00:03:17,103 --> 00:03:20,544
+We will probably finish it right now.
+
+4
+00:03:22,044 --> 00:03:25,584
+And then today I am going to solve problems from chapter 14.
+
+5
+00:03:26,644 --> 00:03:34,563
+So, first I want to finish chapter 14, this section, and then let me open this.
+
+6
+00:03:38,264 --> 00:03:39,324
+This file.
+
+7
+00:03:39,324 --> 00:03:44,223
+I have already put this on the, on my website.
+
+8
+00:03:44,884 --> 00:03:49,043
+Let's see, we have covered these questions from domains.
+
+9
+00:03:49,843 --> 00:03:50,743
+We have done these.
+
+10
+00:03:55,003 --> 00:03:55,603
+Limit.
+
+11
+00:03:56,283 --> 00:03:57,804
+The limit questions.
+
+12
+00:04:07,508 --> 00:04:08,268
+13.
+
+13
+00:04:08,748 --> 00:04:36,728
+Evet.
+
+14
+00:04:34,836 --> 00:04:47,415
+Okay, I'm going to solve the problems from this file, but before that, let's finish chapter 14.
+
+15
+00:04:51,415 --> 00:04:58,756
+This is the only section left from chapter 14. So let's see, 52. Okay, it's 9.10. I think we can start.
+
+16
+00:04:58,756 --> 00:05:08,276
+It's going to take about half an hour, I guess. I'm going to give a break, and we will solve problems. Okay.
+
+17
+00:05:10,556 --> 00:05:16,376
+Extreme values and settle points. So first, derivative test for local extreme values.
+
+18
+00:05:22,803 --> 00:05:28,843
+What do we know about, first of all, let's start with these definitions.
+
+19
+00:05:29,723 --> 00:05:31,203
+What does a local maximum mean?
+
+20
+00:05:32,263 --> 00:05:37,603
+So let fxy be defined on a region R containing the point a, b.
+
+21
+00:05:37,943 --> 00:05:39,243
+Then, look at this picture.
+
+22
+00:05:39,243 --> 00:05:47,343
+I mean, this point over here is a local maximum, which means the value of the function, this is the x-axis, y-axis, and this is the z-axis over here.
+
+23
+00:05:47,343 --> 00:05:54,983
+And the value of the function at that point is greater than the value of the function at all nearby points.
+
+24
+00:05:55,783 --> 00:05:59,243
+So look at this definition.
+
+25
+00:05:59,243 --> 00:06:04,463
+So f, a, b is a local maximum value.
+
+26
+00:06:04,763 --> 00:06:14,943
+f, a, b is a local maximum value of f if f, a, b is bigger than or equal to fxy for all domain points x, y in an open disk centered at a, b.
+
+27
+00:06:14,943 --> 00:06:18,943
+So this is, for example, this is probably the point 0, 0.
+
+28
+00:06:19,723 --> 00:06:24,363
+Okay, the point 0, 0, f 0, 0 is this value, whatever that value is.
+
+29
+00:06:24,683 --> 00:06:28,963
+And take it, take it, take it this nearby 0, 0 and open this.
+
+30
+00:06:29,483 --> 00:06:35,323
+So at the value of fxy nearby is always less than or equal to the value of f, a, b.
+
+31
+00:06:35,943 --> 00:06:39,524
+So f, a, b is always bigger than fxy at nearby points.
+
+32
+00:06:39,524 --> 00:06:45,843
+So that point, that a, b is called the local maximum point and f, a, b is called the local maximum value.
+
+33
+00:06:46,543 --> 00:06:56,603
+Similarly, f, a, b is a local, called the local minimum value if f, a, b is less than or equal to fxy for all domain points x, y in an open disk centered at a, b.
+
+34
+00:07:01,267 --> 00:07:04,187
+So for example, here this point is a local maximum point.
+
+35
+00:07:08,407 --> 00:07:11,827
+It's greater than or equal to the value of the function at nearby points.
+
+36
+00:07:13,507 --> 00:07:13,907
+Okay.
+
+37
+00:07:15,907 --> 00:07:24,367
+These local extrema are all called local relative extrema.
+
+38
+00:07:24,367 --> 00:07:32,667
+So local maximum and local minimum together, they are called local extremum values.
+
+39
+00:07:34,048 --> 00:07:34,827
+Local extrema.
+
+40
+00:07:37,307 --> 00:07:39,867
+And they're also called relative extreme values.
+
+41
+00:07:44,276 --> 00:07:45,836
+So here, here's another picture.
+
+42
+00:07:46,456 --> 00:07:49,475
+This point, these are local maxima points.
+
+43
+00:07:50,196 --> 00:07:52,936
+So note that this is not, so here,
+
+44
+00:07:53,456 --> 00:07:57,175
+here the function has greater values than this point.
+
+45
+00:07:57,576 --> 00:08:00,115
+But we are not looking at the whole function.
+
+46
+00:08:00,276 --> 00:08:02,436
+We are not looking at the domain of the whole function.
+
+47
+00:08:02,975 --> 00:08:06,596
+Just take this point, look at the value of the function at nearby points.
+
+48
+00:08:07,376 --> 00:08:09,795
+Nearby points, the value of the function at this point
+
+49
+00:08:09,795 --> 00:08:12,995
+is greater than or equal to the value of the function at nearby points.
+
+50
+00:08:12,995 --> 00:08:15,756
+So that makes this a local maxima.
+
+51
+00:08:16,036 --> 00:08:17,756
+This is true for this point as well.
+
+52
+00:08:17,876 --> 00:08:20,115
+So this point over here, that's a local minimum
+
+53
+00:08:20,115 --> 00:08:22,096
+because the value of the function at nearby points
+
+54
+00:08:22,096 --> 00:08:24,576
+is always bigger than or equal to the value of the function there.
+
+55
+00:08:27,076 --> 00:08:28,915
+So now, what is next?
+
+56
+00:08:30,875 --> 00:08:32,296
+The first derivative test.
+
+57
+00:08:32,956 --> 00:08:33,316
+Let's see.
+
+58
+00:08:36,036 --> 00:08:38,336
+Yeah, the tips are mixed in this.
+
+59
+00:08:39,475 --> 00:08:39,655
+Okay.
+
+60
+00:08:39,656 --> 00:08:44,495
+So we'll look at the first derivative test,
+
+61
+00:08:44,596 --> 00:08:46,395
+but let me throw something here.
+
+62
+00:08:46,936 --> 00:08:49,375
+Let me not throw it there, but let me use this.
+
+63
+00:08:50,416 --> 00:09:17,975
+Let me use this.
+
+64
+00:08:54,707 --> 00:08:59,467
+Okay, what do we know about single variable functions? Y equals f of x.
+
+65
+00:09:01,847 --> 00:09:17,408
+If it is a differentiable function, y equals f of x, a differentiable function. So here, here we have a local maximum, right? What do we know about the derivative of the function at that point? We know that its derivative is zero at the local maximum point, right?
+
+66
+00:09:17,408 --> 00:09:29,647
+Also, if it is a local minimum, if it is differentiable and if it is a local minimum, its derivative is also zero there. But it could be like this as well. So let me continue this.
+
+67
+00:09:35,539 --> 00:09:36,599
+It could be like this.
+
+68
+00:09:36,659 --> 00:09:39,620
+For example, at this point, it's not differentiable.
+
+69
+00:09:39,860 --> 00:09:40,779
+It has a corner.
+
+70
+00:09:41,679 --> 00:09:45,240
+It's not differentiable, but it also has a local minimum.
+
+71
+00:09:45,779 --> 00:09:48,219
+So the first derivative test for single variable functions,
+
+72
+00:09:48,319 --> 00:09:49,000
+what does that say?
+
+73
+00:09:49,339 --> 00:09:51,579
+It says that for single variable functions,
+
+74
+00:09:51,579 --> 00:09:55,779
+it says that if a function y equals f of x
+
+75
+00:09:55,779 --> 00:09:59,480
+has a local maximum or a local minimum at a point,
+
+76
+00:09:59,480 --> 00:10:05,819
+then either its derivative does not exist at that point
+
+77
+00:10:05,819 --> 00:10:08,480
+or its derivative is zero at that point.
+
+78
+00:10:09,219 --> 00:10:10,860
+That's what the first derivative test say
+
+79
+00:10:10,860 --> 00:10:12,120
+for single variable functions.
+
+80
+00:10:12,639 --> 00:10:15,620
+Now we get something very similar for two variable functions.
+
+81
+00:10:16,220 --> 00:10:17,539
+So look at this picture.
+
+82
+00:10:18,980 --> 00:10:21,519
+Here, if we have a smooth curve,
+
+83
+00:10:21,919 --> 00:10:25,179
+if we have a curve which is differentiable at that point,
+
+84
+00:10:25,179 --> 00:10:27,919
+if it is a maximum,
+
+85
+00:10:29,139 --> 00:10:31,159
+if it is a local maximum at that point,
+
+86
+00:10:31,659 --> 00:10:33,980
+then its partial derivative with respect to x
+
+87
+00:10:33,980 --> 00:10:36,299
+and its partial derivative with respect to y
+
+88
+00:10:36,299 --> 00:10:37,539
+must both be zero.
+
+89
+00:10:38,000 --> 00:10:39,559
+In other words, its tangent plane,
+
+90
+00:10:40,120 --> 00:10:43,099
+its tangent plane is going to be a horizontal plane.
+
+91
+00:10:44,099 --> 00:10:45,799
+The tangent plane is going to be parallel
+
+92
+00:10:45,799 --> 00:10:47,639
+to the xy plane at that point.
+
+93
+00:10:48,939 --> 00:10:51,379
+And if the tangent plane is parallel to the xy plane,
+
+94
+00:10:51,759 --> 00:10:53,819
+then its partial derivative with respect to x is zero,
+
+95
+00:10:53,819 --> 00:10:55,519
+so its partial derivative with respect to y is zero.
+
+96
+00:10:55,639 --> 00:10:56,639
+They are both going to be zero.
+
+97
+00:10:57,879 --> 00:11:00,039
+But if it is differentiable, of course.
+
+98
+00:11:00,259 --> 00:11:01,879
+So let's read the theorem.
+
+99
+00:11:02,399 --> 00:11:07,299
+If xy is the local maximum or minimum value
+
+100
+00:11:07,299 --> 00:11:08,599
+at an interior point a, b.
+
+101
+00:11:09,259 --> 00:11:11,519
+If it is a local maximum or a minimum point,
+
+102
+00:11:11,899 --> 00:11:14,319
+minimum value at an interior point of its domain,
+
+103
+00:11:14,980 --> 00:11:18,259
+and if the first partial derivatives exist there,
+
+104
+00:11:19,379 --> 00:11:23,220
+then these partial derivatives must both be equal to zero.
+
+105
+00:11:23,819 --> 00:11:25,939
+That's the first derivative test.
+
+106
+00:11:27,639 --> 00:11:32,439
+So, now, okay, this is not the next page.
+
+107
+00:11:32,779 --> 00:11:33,639
+So this is the next page.
+
+108
+00:11:34,879 --> 00:11:37,699
+So, if we are looking for,
+
+109
+00:11:38,139 --> 00:11:40,419
+if we want to find the local,
+
+110
+00:11:40,679 --> 00:11:42,519
+if we want to find the local maximum
+
+111
+00:11:42,519 --> 00:11:44,879
+and local minimum values of two variable functions,
+
+112
+00:11:44,879 --> 00:11:48,879
+we need to find the points where the function,
+
+113
+00:11:49,460 --> 00:11:52,559
+its partial derivative with respect to x
+
+114
+00:11:52,559 --> 00:11:54,480
+or with respect to y doesn't exist,
+
+115
+00:11:55,220 --> 00:11:58,699
+or if they exist, they're equal to zero.
+
+116
+00:11:58,699 --> 00:12:02,439
+So these points are the only candidates
+
+117
+00:12:02,439 --> 00:12:05,639
+for being local maximum or local minimum points.
+
+118
+00:12:05,959 --> 00:12:08,039
+So these points are called the critical points.
+
+119
+00:12:08,259 --> 00:12:10,839
+It's the same for the single variable functions.
+
+120
+00:12:11,579 --> 00:12:15,179
+So, an interior point of the domain of a function fxy,
+
+121
+00:12:15,839 --> 00:12:17,859
+where both fx and fy are zero.
+
+122
+00:12:18,720 --> 00:12:21,119
+They both exist and they're both equal to zero,
+
+123
+00:12:21,120 --> 00:12:25,339
+or where one or both of x, y and x, y do not exist.
+
+124
+00:12:26,360 --> 00:12:29,439
+If x, y doesn't, if x, y exists,
+
+125
+00:12:29,559 --> 00:12:30,679
+but fx doesn't exist,
+
+126
+00:12:31,279 --> 00:12:33,599
+or fx exists, but fy doesn't exist,
+
+127
+00:12:34,019 --> 00:12:36,079
+or fx and fy both doesn't exist,
+
+128
+00:12:36,799 --> 00:12:39,200
+or they both exist and they're both equal to zero.
+
+129
+00:12:39,779 --> 00:12:40,659
+If that's the case,
+
+130
+00:12:40,740 --> 00:12:43,019
+then that point is called the critical point of f.
+
+131
+00:12:43,019 --> 00:12:45,819
+And as I said, these points,
+
+132
+00:12:46,679 --> 00:12:48,299
+so if the theorem,
+
+133
+00:12:49,740 --> 00:12:51,039
+theorem 10 says that,
+
+134
+00:12:51,779 --> 00:12:53,379
+in other words, theorem 10 says that,
+
+135
+00:12:54,240 --> 00:12:55,619
+if, if
+
+136
+00:12:55,619 --> 00:13:00,759
+AB is a local minimum or local maximum point,
+
+137
+00:13:01,119 --> 00:13:04,079
+then AB must be a critical point.
+
+138
+00:13:04,639 --> 00:13:06,279
+But the converse is not true.
+
+139
+00:13:06,980 --> 00:13:07,939
+The converse is not true.
+
+140
+00:13:08,539 --> 00:13:10,279
+Although AB is a critical point,
+
+141
+00:13:10,279 --> 00:13:11,579
+it may not have,
+
+142
+00:13:12,779 --> 00:13:14,279
+both AB is a critical point,
+
+143
+00:13:15,480 --> 00:13:17,199
+the function may not have
+
+144
+00:13:17,199 --> 00:13:19,139
+extreme value there.
+
+145
+00:13:19,620 --> 00:13:21,179
+So that's, for example, remember,
+
+146
+00:13:22,299 --> 00:13:25,220
+let's understand this from the single variable functions.
+
+147
+00:13:26,220 --> 00:13:27,099
+For example,
+
+148
+00:13:28,340 --> 00:13:32,180
+We get such situations for single variable functions, right?
+
+149
+00:13:32,480 --> 00:13:33,240
+Here, for example.
+
+150
+00:13:33,759 --> 00:13:35,720
+At this point, this point is a critical point.
+
+151
+00:13:36,800 --> 00:13:40,080
+Because the slope of the tangent line is horizontal.
+
+152
+00:13:40,280 --> 00:13:41,560
+The tangent line is horizontal.
+
+153
+00:13:42,120 --> 00:13:45,360
+The derivative of the function is zero there at this point.
+
+154
+00:13:46,340 --> 00:13:51,399
+But it is a critical point, but it's not a local maximum or local minimum point, right?
+
+155
+00:13:52,560 --> 00:13:54,980
+The same holds for two variable functions.
+
+156
+00:13:54,980 --> 00:14:02,660
+So, although a point is a critical point, it may not have a local maximum or local minimum there.
+
+157
+00:14:03,139 --> 00:14:04,080
+But the converse is true.
+
+158
+00:14:04,200 --> 00:14:09,139
+If it is a local maximum or local minimum point, then it must be a critical point.
+
+159
+00:14:09,600 --> 00:14:11,040
+So, as I said, let me repeat it.
+
+160
+00:14:11,080 --> 00:14:17,100
+The critical points are the only candidates for being local maximum or local minimum points.
+
+161
+00:14:17,100 --> 00:14:33,700
+So, what if for single variable functions, such points, such points, where such points, which are critical points, but not local maximum or local minimum points, were called inflection points?
+
+162
+00:14:34,820 --> 00:14:38,139
+In here, for two variable functions, such points are called saddle points.
+
+163
+00:14:38,139 --> 00:14:40,360
+Let's read the definition.
+
+164
+00:14:41,220 --> 00:14:45,500
+A differentiable function fxy has a saddle point at a critical point.
+
+165
+00:14:46,480 --> 00:14:55,060
+If in every open distance center that AB, there are domain points xy where xy is bigger than FAB and domain points xy where fxy is less than FAB.
+
+166
+00:14:55,340 --> 00:14:58,460
+In other words, it's neither maximum nor minimum.
+
+167
+00:14:58,879 --> 00:15:01,920
+There are points which are bigger and there are points which are lower.
+
+168
+00:15:01,920 --> 00:15:05,259
+It's neither local maximum nor local minimum.
+
+169
+00:15:05,440 --> 00:15:06,340
+It's a critical point.
+
+170
+00:15:06,639 --> 00:15:07,740
+It is a critical point.
+
+171
+00:15:08,100 --> 00:15:10,500
+But it is neither local maximum nor local minimum point.
+
+172
+00:15:10,660 --> 00:15:12,300
+Then that point is called a saddle point.
+
+173
+00:15:13,360 --> 00:15:18,500
+And the corresponding point, AB, FAB on the surface, is called the saddle point on the surface.
+
+174
+00:15:20,340 --> 00:15:22,000
+Okay, so let's see some examples.
+
+175
+00:15:22,759 --> 00:15:23,960
+Let's start with this example.
+
+176
+00:15:24,460 --> 00:15:31,540
+In the local extreme values of fxy equals x squared plus y squared minus 4y plus 9.
+
+177
+00:15:35,539 --> 00:15:36,439
+So, look at this.
+
+178
+00:15:37,319 --> 00:15:39,059
+The domain of the function is the entire plane
+
+179
+00:15:39,059 --> 00:15:40,179
+defined everywhere.
+
+180
+00:15:41,039 --> 00:15:42,339
+So, there are no boundary points.
+
+181
+00:15:42,339 --> 00:15:44,159
+And the partial derivatives,
+
+182
+00:15:44,719 --> 00:15:47,939
+the partial derivatives fx,
+
+183
+00:15:49,879 --> 00:15:51,120
+what are the partial derivatives?
+
+184
+00:15:51,539 --> 00:15:54,319
+Partial derivative with respect to x is fx equals 2x.
+
+185
+00:15:54,719 --> 00:15:58,299
+This partial derivative with respect to y is 2y minus 4 here.
+
+186
+00:15:58,620 --> 00:16:00,039
+And they exist everywhere.
+
+187
+00:16:01,419 --> 00:16:03,819
+The partial derivatives exist everywhere.
+
+188
+00:16:03,819 --> 00:16:07,819
+It means that the only critical points are those.
+
+189
+00:16:08,259 --> 00:16:12,139
+Therefore, the local extreme values can occur only when both are equal to 0.
+
+190
+00:16:12,219 --> 00:16:16,099
+The only critical points are those where both fx and fy are equal to 0.
+
+191
+00:16:16,779 --> 00:16:18,620
+So, fx is equal to 0 means x is 0.
+
+192
+00:16:18,719 --> 00:16:19,319
+x is 0.
+
+193
+00:16:19,459 --> 00:16:20,980
+fy is equal to 0 means y is 2.
+
+194
+00:16:21,419 --> 00:16:23,139
+So, that's the only critical point.
+
+195
+00:16:23,939 --> 00:16:25,579
+This is the only critical point.
+
+196
+00:16:25,679 --> 00:16:31,659
+So, that's the only possibility for the solution of these two.
+
+197
+00:16:31,659 --> 00:16:33,839
+So, that's the only critical point.
+
+198
+00:16:34,279 --> 00:16:35,860
+So, what's the value of the function at that point?
+
+199
+00:16:35,939 --> 00:16:43,879
+The value of the function at that point is 0 plus 2 squared is 4 minus 8 is minus 4 plus 9 is 5.
+
+200
+00:16:44,480 --> 00:16:46,379
+So, the value of the function is 5 there.
+
+201
+00:16:46,839 --> 00:16:50,860
+But when we look at this function, we can complete this to a square.
+
+202
+00:16:50,860 --> 00:16:54,279
+We can write this as y squared minus 4y plus 4 plus 5.
+
+203
+00:16:54,860 --> 00:16:57,579
+And that y squared minus 4y plus 4 is this, plus 5.
+
+204
+00:16:58,779 --> 00:17:01,299
+Now, note that this x squared is always bigger than or equal to 0.
+
+205
+00:17:02,199 --> 00:17:04,480
+y minus 2 squared is always bigger than or equal to 0.
+
+206
+00:17:04,720 --> 00:17:08,259
+So, this part is always bigger than or equal to 0.
+
+207
+00:17:08,259 --> 00:17:13,159
+So, the whole function, the value of the function is always bigger than or equal to 5.
+
+208
+00:17:13,359 --> 00:17:14,639
+So, it can never be less than 5.
+
+209
+00:17:15,159 --> 00:17:19,159
+Therefore, we see that this critical point gives us a local minimum.
+
+210
+00:17:19,619 --> 00:17:20,920
+Actually, the graph looks like this.
+
+211
+00:17:21,720 --> 00:17:24,859
+So, at that point, at 0, 2, the value of the function is 5.
+
+212
+00:17:25,200 --> 00:17:26,839
+And it opens up like that.
+
+213
+00:17:27,240 --> 00:17:28,259
+It opens up like that.
+
+214
+00:17:30,139 --> 00:17:32,259
+With growing circles like this.
+
+215
+00:17:32,639 --> 00:17:33,500
+That's local minimum.
+
+216
+00:17:33,500 --> 00:17:37,900
+Okay, let's look at another example.
+
+217
+00:17:38,519 --> 00:17:40,940
+fxy equals y squared minus x squared.
+
+218
+00:17:41,720 --> 00:17:42,920
+The graph here.
+
+219
+00:17:47,604 --> 00:17:50,604
+Here's the graph of t equals y² minus x².
+
+220
+00:17:57,715 --> 00:17:58,075
+Okay.
+
+221
+00:17:59,775 --> 00:18:03,795
+Now let's find the local extreme values of, if any, of this function.
+
+222
+00:18:03,955 --> 00:18:05,695
+Fxy equals y squared minus x squared.
+
+223
+00:18:05,995 --> 00:18:09,096
+Again, the domain of the function is the whole plane.
+
+224
+00:18:09,375 --> 00:18:10,195
+It's defined everywhere.
+
+225
+00:18:11,715 --> 00:18:12,915
+How about its partial derivatives?
+
+226
+00:18:13,215 --> 00:18:15,855
+Well, its partial derivative with respect to x is minus 2x.
+
+227
+00:18:16,275 --> 00:18:18,335
+Its partial derivative with respect to y is 2y.
+
+228
+00:18:18,395 --> 00:18:19,995
+And they exist everywhere.
+
+229
+00:18:20,635 --> 00:18:25,395
+So again, the only critical points are those where both fx and fy are equal to 0.
+
+230
+00:18:25,395 --> 00:18:28,395
+fx is equal to 0 gives x equals 0.
+
+231
+00:18:28,515 --> 00:18:30,455
+fy equals 0 gives y is equal to 0.
+
+232
+00:18:30,515 --> 00:18:33,415
+So 0, 0 is the only critical point.
+
+233
+00:18:34,495 --> 00:18:36,395
+0, 0 is the only critical point.
+
+234
+00:18:36,655 --> 00:18:41,795
+But, okay, let's try to make an analysis similar to this previous example.
+
+235
+00:18:42,075 --> 00:18:44,035
+So the value of the function at 0, 0.
+
+236
+00:18:44,235 --> 00:18:46,295
+The value of the function at 0, 0 is 0.
+
+237
+00:18:47,335 --> 00:18:49,895
+Is it a local maximum or local minimum or neither?
+
+238
+00:18:50,735 --> 00:18:55,096
+Well, when we look at this, along the positive x-axis, for example,
+
+239
+00:18:55,395 --> 00:19:01,015
+along the positive x-axis or also along the negative x-axis, it doesn't matter,
+
+240
+00:19:01,235 --> 00:19:06,596
+along the x-axis, along the x-axis, the y value is 0.
+
+241
+00:19:07,055 --> 00:19:10,215
+So the value of the function is minus x squared, which is always negative.
+
+242
+00:19:11,615 --> 00:19:14,435
+So along the x-axis, the value of the function is always negative.
+
+243
+00:19:15,255 --> 00:19:19,735
+Along the y-axis, on the other hand, along the y-axis, x is 0.
+
+244
+00:19:19,735 --> 00:19:23,335
+The value of the function is y squared, which is always positive.
+
+245
+00:19:25,096 --> 00:19:27,495
+So the value of the function at 0, 0 is 0.
+
+246
+00:19:28,675 --> 00:19:30,835
+And the origin, the value of the function is 0.
+
+247
+00:19:31,175 --> 00:19:35,535
+But at nearby points on the x-axis, the value of the function is negative.
+
+248
+00:19:36,075 --> 00:19:38,975
+At nearby points on the y-axis, the value of the function is positive.
+
+249
+00:19:39,355 --> 00:19:41,596
+So it's neither local minimum nor local maximum.
+
+250
+00:19:41,596 --> 00:19:46,415
+Therefore, this is a saddle point.
+
+251
+00:19:47,035 --> 00:19:51,596
+The function is a saddle point at the origin, and it has no local maximum, no local minimum.
+
+252
+00:19:53,596 --> 00:19:59,695
+So here is, here is the graph, how the graph looks like.
+
+253
+00:20:00,435 --> 00:20:01,015
+Note that,
+
+254
+00:20:01,015 --> 00:20:08,295
+So when we take, when we take
+
+255
+00:20:08,295 --> 00:20:18,575
+y equals 0, so on the x-axis, in other words, on the x-axis, when we take y equals 0, we get z equals minus x squared.
+
+256
+00:20:18,575 --> 00:20:23,775
+This yellow curve, this yellow curve, z equals minus x squared.
+
+257
+00:20:24,355 --> 00:20:26,375
+That's the curve when y is 0, right?
+
+258
+00:20:26,375 --> 00:20:33,475
+So on the x-axis, so we are like at the point on a mountain, on a mountain, we are at a point.
+
+259
+00:20:33,935 --> 00:20:38,155
+When we turn right or turn left, we are at the top point.
+
+260
+00:20:38,935 --> 00:20:43,855
+But if we turn straight or back, we are at the lower point, like this.
+
+261
+00:20:44,655 --> 00:20:52,335
+So this, on the, on the xz plane, we get a curve like this, z equals minus x squared, which opens down.
+
+262
+00:20:52,335 --> 00:20:59,975
+But on the yz plane, on the other hand, we have a, in this case, x is 0, we get z equals y squared, this blue curve.
+
+263
+00:21:00,295 --> 00:21:00,855
+It opens up.
+
+264
+00:21:01,435 --> 00:21:05,495
+So that point 0, 0 over there is neither local maximum nor local minimum.
+
+265
+00:21:05,755 --> 00:21:06,515
+That's a saddle point.
+
+266
+00:21:09,455 --> 00:21:09,935
+Okay.
+
+267
+00:21:11,275 --> 00:21:12,275
+What is next?
+
+268
+00:21:13,795 --> 00:21:20,275
+Now, similar to second derivative test for single variable functions, we have, we also have second derivative test for variable functions.
+
+269
+00:21:20,715 --> 00:21:21,655
+So let's see.
+
+270
+00:21:22,335 --> 00:21:25,576
+Okay, we will see two examples after that.
+
+271
+00:21:27,695 --> 00:21:28,255
+Okay.
+
+272
+00:21:29,596 --> 00:21:32,275
+Second derivative test for local extreme values.
+
+273
+00:21:33,395 --> 00:21:34,415
+Let's read the test.
+
+274
+00:21:35,076 --> 00:21:44,615
+Suppose that fxy and its first and second partial derivatives are continuous throughout a disk-centered data adb,
+
+275
+00:21:44,615 --> 00:21:50,395
+and that this fxab is equal to fyab is equal to 0.
+
+276
+00:21:50,395 --> 00:21:55,635
+So in other words...
+
+277
+00:21:53,844 --> 00:21:57,364
+It's a critical point, but the partial derivatives exist there.
+
+278
+00:21:57,963 --> 00:22:04,544
+So the second derivative test cannot be applied for critical points where the partial derivatives do not exist.
+
+279
+00:22:05,004 --> 00:22:11,264
+It can be applied only for those critical points where both partial derivatives are equal to zero.
+
+280
+00:22:12,104 --> 00:22:22,064
+Now, in this case, instead of making an analysis as in these two examples, you can apply the second derivative test.
+
+281
+00:22:22,064 --> 00:22:28,244
+find the local maximum, minimum, or subtle find.
+
+282
+00:22:32,531 --> 00:22:35,711
+This expression over here, let's look at this expression first,
+
+283
+00:22:36,811 --> 00:22:39,851
+which is the determinant of this two-by-two matrix,
+
+284
+00:22:40,511 --> 00:22:44,511
+fxx, fxy, fyx, fyy.
+
+285
+00:22:44,891 --> 00:22:46,692
+Fyx and fxy are the same thing.
+
+286
+00:22:46,692 --> 00:22:52,251
+So the determinant of this matrix is fxx times fyy minus fxy squared.
+
+287
+00:22:53,291 --> 00:22:55,371
+So this expression is called the discriminant.
+
+288
+00:22:56,531 --> 00:22:57,811
+Discriminant of the function f.
+
+289
+00:22:57,811 --> 00:23:02,871
+It's called the discriminant of the function f.
+
+290
+00:23:04,631 --> 00:23:08,491
+This determinant form is just given so that you can remember it,
+
+291
+00:23:09,131 --> 00:23:10,631
+you can memorize it easily.
+
+292
+00:23:11,751 --> 00:23:16,491
+Just make a two-by-two matrix, write fxx, fxy, fyx, fxy.
+
+293
+00:23:17,311 --> 00:23:20,291
+Write all four second-order partial derivatives.
+
+294
+00:23:20,412 --> 00:23:22,432
+Then the determinant of that two-by-two matrix
+
+295
+00:23:22,432 --> 00:23:27,192
+is going to give you the discriminant.
+
+296
+00:23:27,192 --> 00:23:29,412
+Now, the second derivative test says that
+
+297
+00:23:29,412 --> 00:23:34,531
+if the discriminant is positive,
+
+298
+00:23:35,231 --> 00:23:37,231
+we have these two cases.
+
+299
+00:23:37,652 --> 00:23:39,111
+If the discriminant is positive,
+
+300
+00:23:39,611 --> 00:23:42,231
+then that point is either a local maximum point
+
+301
+00:23:42,231 --> 00:23:43,251
+or a local minimum point.
+
+302
+00:23:43,672 --> 00:23:44,172
+Which one?
+
+303
+00:23:44,851 --> 00:23:46,331
+That's determined by fxx.
+
+304
+00:23:47,011 --> 00:23:48,811
+If the discriminant is positive,
+
+305
+00:23:49,031 --> 00:23:51,432
+and at the same time fxx is negative,
+
+306
+00:23:51,951 --> 00:23:53,331
+then there's a local maximum there.
+
+307
+00:23:53,331 --> 00:23:55,651
+If the discriminant is positive,
+
+308
+00:23:56,451 --> 00:23:58,551
+but, and fxx is also positive,
+
+309
+00:23:59,152 --> 00:24:01,511
+then there's a local minimum at that point.
+
+310
+00:24:02,331 --> 00:24:03,071
+On the other hand,
+
+311
+00:24:03,411 --> 00:24:04,891
+if the discriminant is negative,
+
+312
+00:24:05,471 --> 00:24:07,432
+then that's a set of them.
+
+313
+00:24:08,271 --> 00:24:10,451
+It's neither local maximum nor local minimum.
+
+314
+00:24:10,652 --> 00:24:12,531
+Select set of them if the discriminant is negative.
+
+315
+00:24:12,531 --> 00:24:17,051
+And what if the discriminant is zero?
+
+316
+00:24:17,291 --> 00:24:18,531
+If the discriminant is zero,
+
+317
+00:24:18,771 --> 00:24:19,891
+the test is inconclusive.
+
+318
+00:24:20,391 --> 00:24:21,631
+Which means that in this case,
+
+319
+00:24:21,672 --> 00:24:23,351
+we must find some other way
+
+320
+00:24:23,351 --> 00:24:26,031
+to determine the behavior of the function at that point.
+
+321
+00:24:27,672 --> 00:24:29,511
+So let's go back to this.
+
+322
+00:24:30,192 --> 00:24:31,511
+Let me go back to these examples.
+
+323
+00:24:34,471 --> 00:24:35,571
+It's not written there,
+
+324
+00:24:35,672 --> 00:24:37,911
+but let's look at these examples.
+
+325
+00:24:37,912 --> 00:24:40,451
+Try to analyze them using the second derivatives.
+
+326
+00:24:41,891 --> 00:24:43,391
+So what is the, what is fxx?
+
+327
+00:24:44,211 --> 00:24:46,871
+The second derivative with respect to x is two, right?
+
+328
+00:24:47,471 --> 00:24:48,311
+fxx is two.
+
+329
+00:24:50,291 --> 00:24:55,111
+fyy, the derivative of fy with respect to y is two.
+
+330
+00:24:55,911 --> 00:24:58,652
+So fxx is two, fyy is two.
+
+331
+00:24:59,051 --> 00:25:00,051
+What is fxy?
+
+332
+00:25:00,991 --> 00:25:03,831
+fxy is the derivative of this with respect to y.
+
+333
+00:25:03,891 --> 00:25:04,291
+That's zero.
+
+334
+00:25:04,291 --> 00:25:08,131
+So fxx, which is two times fyy,
+
+335
+00:25:08,331 --> 00:25:10,891
+which is also two minus fxy squared,
+
+336
+00:25:11,031 --> 00:25:11,591
+which is zero.
+
+337
+00:25:11,971 --> 00:25:13,471
+We get four minus zero, which is four.
+
+338
+00:25:14,411 --> 00:25:16,571
+So the discriminant of this function
+
+339
+00:25:16,571 --> 00:25:19,471
+is four.
+
+340
+00:25:20,591 --> 00:25:22,211
+It's independent of the point, actually.
+
+341
+00:25:22,331 --> 00:25:22,731
+It's constant.
+
+342
+00:25:22,851 --> 00:25:23,172
+It's four.
+
+343
+00:25:23,331 --> 00:25:24,431
+Discriminant is four means
+
+344
+00:25:24,431 --> 00:25:26,152
+discriminant is positive.
+
+345
+00:25:26,711 --> 00:25:27,951
+So it's either local maximum.
+
+346
+00:25:28,211 --> 00:25:30,152
+This point, the point we found
+
+347
+00:25:30,152 --> 00:25:31,811
+is either a local maximum or a local minimum,
+
+348
+00:25:32,271 --> 00:25:33,451
+which is determined by fxx.
+
+349
+00:25:33,451 --> 00:25:35,731
+We found that the derivative of fx
+
+350
+00:25:35,731 --> 00:25:36,912
+with respect to x is two.
+
+351
+00:25:37,291 --> 00:25:38,632
+fxx is two positive.
+
+352
+00:25:39,091 --> 00:25:39,932
+So it's a local minimum.
+
+353
+00:25:42,871 --> 00:25:44,132
+But let me go back
+
+354
+00:25:44,132 --> 00:25:46,412
+here again.
+
+355
+00:25:47,271 --> 00:25:47,511
+Here.
+
+356
+00:25:48,231 --> 00:25:49,192
+This is the case.
+
+357
+00:25:49,551 --> 00:25:51,291
+Discriminant is four, which is positive.
+
+358
+00:25:51,672 --> 00:25:53,391
+fxx is two, which is also positive.
+
+359
+00:25:53,711 --> 00:25:54,551
+So that's a local minimum.
+
+360
+00:25:56,291 --> 00:25:58,371
+How about this second example?
+
+361
+00:25:58,371 --> 00:26:00,391
+This one.
+
+362
+00:26:00,891 --> 00:26:02,571
+Found fx as minus two x.
+
+363
+00:26:02,891 --> 00:26:03,711
+f y is two y.
+
+364
+00:26:04,211 --> 00:26:04,932
+What is fxx?
+
+365
+00:26:05,291 --> 00:26:07,731
+Derivative of fx with respect to x is minus two.
+
+366
+00:26:08,571 --> 00:26:11,611
+f y is derivative of y with respect to y.
+
+367
+00:26:11,652 --> 00:26:12,111
+That's two.
+
+368
+00:26:12,871 --> 00:26:14,051
+So minus two times two.
+
+369
+00:26:14,131 --> 00:26:14,911
+We get minus four.
+
+370
+00:26:15,571 --> 00:26:16,551
+What is fxy?
+
+371
+00:26:16,991 --> 00:26:17,891
+fxy is zero.
+
+372
+00:26:18,471 --> 00:26:19,652
+So fxy squared is zero.
+
+373
+00:26:19,751 --> 00:26:20,991
+We get minus four minus zero,
+
+374
+00:26:21,051 --> 00:26:21,672
+which is minus four.
+
+375
+00:26:21,672 --> 00:26:22,891
+So this one
+
+376
+00:26:22,891 --> 00:26:24,711
+has a negative discriminant.
+
+377
+00:26:24,791 --> 00:26:25,851
+Discriminant is negative.
+
+378
+00:26:26,271 --> 00:26:27,132
+That's the third case.
+
+379
+00:26:27,491 --> 00:26:28,771
+It gives us saddle point,
+
+380
+00:26:29,111 --> 00:26:30,211
+which is what we found
+
+381
+00:26:30,211 --> 00:26:32,111
+by making this analysis over here.
+
+382
+00:26:33,587 --> 00:26:37,107
+But that could also be found using the second derivative test.
+
+383
+00:26:38,248 --> 00:26:38,988
+That's this case.
+
+384
+00:26:39,327 --> 00:26:42,327
+The discriminant is negative, and that point is a subtle point.
+
+385
+00:26:43,008 --> 00:26:44,288
+Okay, let's see two more examples.
+
+386
+00:26:45,307 --> 00:26:47,307
+Find the local extreme values of this function.
+
+387
+00:26:47,788 --> 00:26:51,847
+If xy equals xy minus x square minus y square minus 2x minus 2y plus 4.
+
+388
+00:26:52,707 --> 00:26:55,307
+So, first of all,
+
+389
+00:27:00,756 --> 00:27:30,756
+Füncüün
+
+390
+00:27:30,756 --> 00:27:36,836
+x that's zero minus two that's zero zero this y minus two x minus two that's the derivative
+
+391
+00:27:36,836 --> 00:27:45,376
+it's respect to x the partial derivative with respect to y is x minus two y minus two here x minus two y minus
+
+392
+00:27:45,376 --> 00:27:49,796
+two so when we let them both equal to zero what do we get
+
+393
+00:27:49,796 --> 00:28:00,256
+if these are both equal to zero we get we get two equations on two variables we get y minus two x is
+
+394
+00:28:00,256 --> 00:28:09,036
+equal to two actually just solve this one for y what do we get y is equal to 2x plus two right y is
+
+395
+00:28:09,036 --> 00:28:16,176
+equal to 2x plus two put them into this equation 2x plus two multiply that by two we get 4x plus four
+
+396
+00:28:16,176 --> 00:28:20,776
+so x minus 4x plus four is what minus 3x
+
+397
+00:28:20,776 --> 00:28:28,776
+minus 3x minus 4 minus 2 we get minus 3x minus 6
+
+398
+00:28:28,776 --> 00:28:35,115
+minus 3x minus 6 equals zero so 3x equals minus 6 x is equal to minus 2 we get x is equal to minus 2
+
+399
+00:28:35,115 --> 00:28:40,615
+put it into one of the equations we get y is equal to minus 2 so that's the only critical point so
+
+400
+00:28:40,615 --> 00:28:49,736
+that's the only point which satisfies both of these equations minus 2 minus 2 now to determine whether it
+
+401
+00:28:49,736 --> 00:28:54,696
+has a local maximum local minimum or settle point there we are going to make use of the second derivative
+
+402
+00:28:54,696 --> 00:28:59,736
+test what is f x x is derivative of this with respect to x which is minus 2
+
+403
+00:28:59,736 --> 00:29:08,896
+f y y is the derivative of this with respect to y which is minus 2 f x y is the derivative of this
+
+404
+00:29:08,896 --> 00:29:14,736
+with respect to y which is 1 or we could also take the derivative of this one with respect to x which
+
+405
+00:29:14,736 --> 00:29:20,416
+is also 1 of course by the mixed derivative theorem we know that f x y and f y x are equal to each other
+
+406
+00:29:20,416 --> 00:29:25,156
+we found this so these are all independent of the point they're all constant
+
+407
+00:29:25,156 --> 00:29:34,456
+what's the discriminant of the function f this point it's f x x f y y minus f x y squared which is
+
+408
+00:29:34,456 --> 00:29:40,736
+minus 2 times minus 2 minus 1 squared which is 4 minus 1 which is 3 but the discriminant is positive
+
+409
+00:29:40,736 --> 00:29:46,355
+which means that this point has a local maximum or local minimum which is going to be determined by
+
+410
+00:29:46,355 --> 00:29:53,355
+what is f x x f x x minus 2 f x x is negative so it's the first case there's a local maximum
+
+411
+00:29:53,355 --> 00:30:00,256
+so f has a local maximum at that point the discriminant is positive f x x is negative so
+
+412
+00:30:00,256 --> 00:30:06,196
+there's a local maximum and value of the local maximum what is the local maximum value
+
+413
+00:30:06,196 --> 00:30:12,956
+the local maximum value the value of the function there's a function the value of the function at minus
+
+414
+00:30:12,956 --> 00:30:23,956
+minus 2 minus 2 is what 4 minus 4 that's 0 minus 4 minus 4 minus minus 4 that's again 0
+
+415
+00:30:23,956 --> 00:30:31,856
+plus 4 plus another 4 that's 8 but the local maximum value is 8
+
+416
+00:30:31,855 --> 00:30:36,156
+okay last example
+
+417
+00:30:36,156 --> 00:31:00,855
+you
+
+418
+00:30:40,756 --> 00:30:47,816
+Find the local extreme values of fxy equals 3y squared minus 2y cubed minus 3x squared plus 6xy.
+
+419
+00:30:48,296 --> 00:30:48,816
+Okay.
+
+420
+00:30:52,176 --> 00:30:54,576
+Now again, f is differentiable everywhere.
+
+421
+00:30:56,096 --> 00:31:01,836
+F is differentiable everywhere, so there's no point, there's no critical point where fx doesn't exist or fy doesn't exist.
+
+422
+00:31:02,136 --> 00:31:06,636
+The only critical points are those where fx is 0 and fy is 0 at the same time.
+
+423
+00:31:06,636 --> 00:31:12,496
+So the extreme values can occur only when fx, which is what?
+
+424
+00:31:14,176 --> 00:31:19,456
+That's 0, 0, derivative of this is minus 6x, derivative of this is plus 6y.
+
+425
+00:31:19,875 --> 00:31:23,635
+So minus 6x plus 6y here, that's the partial derivative with respect to x.
+
+426
+00:31:24,115 --> 00:31:31,816
+This partial derivative with respect to y is 6y minus 6y squared plus 6x.
+
+427
+00:31:32,156 --> 00:31:34,476
+6y minus 6y squared plus 6x equals 0.
+
+428
+00:31:34,696 --> 00:31:35,276
+That's fy.
+
+429
+00:31:36,636 --> 00:32:06,615
+So we're going to be.
+
+430
+00:31:55,059 --> 00:31:57,059
+Sorry, where is it?
+
+431
+00:31:57,059 --> 00:31:59,059
+Yes, it continues here.
+
+432
+00:31:59,059 --> 00:32:03,059
+So, from the first equation we get x equals y, right?
+
+433
+00:32:07,251 --> 00:32:08,251
+Let's see.
+
+434
+00:32:09,271 --> 00:32:12,331
+From the first equation, we get 6y equals 6x, so x equals y.
+
+435
+00:32:12,871 --> 00:32:18,551
+That into the other equation, we get 6x minus 6x squared plus 6x equals 0.
+
+436
+00:32:18,811 --> 00:32:22,392
+So we get 12x minus 12x squared equals 0.
+
+437
+00:32:27,347 --> 00:32:32,367
+At this, we substitute that into the second equation, we get 6x minus 6x squared plus 6x equals 0.
+
+438
+00:32:33,248 --> 00:32:35,728
+So 12x minus 6x squared equals 0.
+
+439
+00:32:35,847 --> 00:32:39,127
+If we factor 6x, we get 6x times 2 minus x equals 0.
+
+440
+00:32:39,587 --> 00:32:43,467
+So when we solve this equation, we get x equals 0 or x equals 2.
+
+441
+00:32:43,947 --> 00:32:45,447
+And we know that y is equal to x.
+
+442
+00:32:45,988 --> 00:32:48,488
+So when x is equal to 0, we get y is equal to 0.
+
+443
+00:32:48,567 --> 00:32:50,127
+We get this critical point, 0, 0.
+
+444
+00:32:50,587 --> 00:32:53,587
+And when x is equal to 2, we get y is equal to 2.
+
+445
+00:32:53,768 --> 00:32:55,687
+We get this critical point, 2, 2.
+
+446
+00:32:55,687 --> 00:32:59,427
+So there are two critical points, 0, 0 and 2, 2.
+
+447
+00:33:00,067 --> 00:33:02,447
+Now we are going to find the discriminant at these points.
+
+448
+00:33:02,587 --> 00:33:05,748
+So to find the discriminant, we need to find the second order partial derivatives.
+
+449
+00:33:08,407 --> 00:33:09,407
+What is fxx?
+
+450
+00:33:10,528 --> 00:33:12,667
+So let's go back.
+
+451
+00:33:16,276 --> 00:33:26,036
+fxx, partial derivative of this with respect to x is minus 6. fyy, partial derivative of this with respect to y is 6 minus 12y.
+
+452
+00:33:28,016 --> 00:33:43,036
+6 minus 12y. fxx is minus 6. fyy is 6 minus 12y. What is fxy? fxy is partial derivative of this with respect to y, which is 6. fxy is 6.
+
+453
+00:33:46,451 --> 00:33:46,932
+Here.
+
+454
+00:33:48,412 --> 00:33:49,731
+FXX is minus 6.
+
+455
+00:33:50,092 --> 00:33:51,392
+5Y is 6 minus 12.
+
+456
+00:33:51,592 --> 00:33:52,932
+FXY is 6.
+
+457
+00:33:53,332 --> 00:33:57,652
+So the discriminant is FXX and 5Y minus FXXY squared,
+
+458
+00:33:57,771 --> 00:33:58,332
+which is what?
+
+459
+00:34:00,731 --> 00:34:02,112
+This times this.
+
+460
+00:34:04,852 --> 00:34:05,412
+Sorry.
+
+461
+00:34:05,832 --> 00:34:06,951
+This times this.
+
+462
+00:34:07,271 --> 00:34:09,572
+Minus 6 times 6 minus 12Y,
+
+463
+00:34:09,652 --> 00:34:13,032
+which is minus 36 plus 72Y
+
+464
+00:34:13,032 --> 00:34:14,911
+minus this one squared,
+
+465
+00:34:15,431 --> 00:34:16,172
+which is 36.
+
+466
+00:34:16,452 --> 00:34:19,512
+So we get 72Y minus 72,
+
+467
+00:34:19,791 --> 00:34:21,891
+which is 72 times Y minus 1.
+
+468
+00:34:22,231 --> 00:34:23,251
+So that's the discriminant.
+
+469
+00:34:24,012 --> 00:34:28,211
+Now, we will check that for both points.
+
+470
+00:34:28,811 --> 00:34:31,532
+So at 0, 0, at the critical point 0, 0,
+
+471
+00:34:32,112 --> 00:34:33,391
+the discriminant is what?
+
+472
+00:34:33,472 --> 00:34:34,072
+Y is 0.
+
+473
+00:34:34,172 --> 00:34:35,112
+We get minus 72.
+
+474
+00:34:35,411 --> 00:34:36,871
+The discriminant is minus 72.
+
+475
+00:34:37,291 --> 00:34:38,492
+The discriminant is negative.
+
+476
+00:34:39,052 --> 00:34:41,672
+So the function has a subtle point at that point.
+
+477
+00:34:42,192 --> 00:34:43,952
+So 0, 0 is a subtle point.
+
+478
+00:34:44,952 --> 00:34:45,192
+Okay.
+
+479
+00:34:46,452 --> 00:34:47,431
+On the other hand,
+
+480
+00:34:47,512 --> 00:34:48,811
+at the critical point 2, 2,
+
+481
+00:34:49,012 --> 00:34:49,751
+what do we have?
+
+482
+00:34:49,911 --> 00:34:51,371
+Y is 2 in this case.
+
+483
+00:34:51,791 --> 00:34:52,711
+We get 72.
+
+484
+00:34:53,251 --> 00:34:54,652
+The discriminant is 72,
+
+485
+00:34:54,751 --> 00:34:55,311
+which is positive.
+
+486
+00:34:56,012 --> 00:34:57,811
+So we have to look at FXX.
+
+487
+00:34:58,391 --> 00:34:59,552
+FXX is minus 6.
+
+488
+00:34:59,672 --> 00:34:59,992
+Negative.
+
+489
+00:35:00,672 --> 00:35:02,132
+Therefore, it's the second case.
+
+490
+00:35:03,572 --> 00:35:04,692
+It's the second case.
+
+491
+00:35:04,692 --> 00:35:05,291
+by the theorem.
+
+492
+00:35:05,291 --> 00:35:07,592
+The critical point gives us a local maximum value.
+
+493
+00:35:08,112 --> 00:35:09,652
+What is that local maximum value?
+
+494
+00:35:09,731 --> 00:35:12,172
+Local maximum value is the value of F2, 2.
+
+495
+00:35:12,612 --> 00:35:13,592
+F2, 2 is what?
+
+496
+00:35:14,331 --> 00:35:15,972
+Go back to the definition of the function.
+
+497
+00:35:18,472 --> 00:35:21,692
+F2, 2 is 12 minus 16.
+
+498
+00:35:21,791 --> 00:35:22,612
+That's minus 4.
+
+499
+00:35:23,371 --> 00:35:24,092
+And it's 12.
+
+500
+00:35:24,831 --> 00:35:26,391
+That's minus 16.
+
+501
+00:35:26,391 --> 00:35:28,692
+plus 24.
+
+502
+00:35:28,811 --> 00:35:29,251
+That's 8.
+
+503
+00:35:30,052 --> 00:35:32,072
+So that's the local maximum value
+
+504
+00:35:32,072 --> 00:35:33,672
+at that point.
+
+505
+00:35:34,371 --> 00:35:36,791
+Local maximum value at that point is 8.
+
+506
+00:35:39,751 --> 00:35:41,132
+This is the graph, I guess.
+
+507
+00:35:42,891 --> 00:35:43,112
+Yeah.
+
+508
+00:35:43,552 --> 00:35:44,371
+At 0, 0,
+
+509
+00:35:44,811 --> 00:35:46,692
+you see 0, 0 is a subtle point.
+
+510
+00:35:47,231 --> 00:35:49,371
+It opens up on the y direction.
+
+511
+00:35:49,532 --> 00:35:51,431
+It opens up on the x direction.
+
+512
+00:35:51,552 --> 00:35:52,711
+Opens down on the x direction.
+
+513
+00:35:53,092 --> 00:35:53,851
+That's a subtle point.
+
+514
+00:35:53,851 --> 00:35:54,891
+But on the other hand,
+
+515
+00:35:55,012 --> 00:35:58,532
+2, 2 is a local maximum point.
+
+516
+00:35:59,992 --> 00:36:01,492
+That's how the graph looks like.
+
+517
+00:36:02,652 --> 00:36:02,871
+Okay.
+
+518
+00:36:02,952 --> 00:36:03,871
+That's the end of chapter.
+
+519
+00:36:04,112 --> 00:36:05,711
+We don't cover absolute maximum,
+
+520
+00:36:05,911 --> 00:36:07,371
+absolute minimum on close,
+
+521
+00:36:07,851 --> 00:36:08,532
+on the regions.
+
+522
+00:36:08,791 --> 00:36:10,831
+And 14.7 is the last section
+
+523
+00:36:10,831 --> 00:36:12,771
+we cover from chapter 14.
+
+524
+00:36:13,552 --> 00:36:15,112
+But that's the end of chapter 14.
+
+525
+00:36:16,431 --> 00:36:17,592
+So any questions from,
+
+526
+00:36:18,012 --> 00:36:20,411
+any questions from the subjects
+
+527
+00:36:20,411 --> 00:36:21,831
+I covered for today?
+
+528
+00:36:23,851 --> 00:36:28,211
+Any questions from whatever we covered so far?
+
+529
+00:36:28,211 --> 00:36:29,211
+or any questions from the subject?
+
+530
+00:36:29,211 --> 00:36:54,211
+Any questions from the subject?
+
+531
+00:36:34,260 --> 00:36:38,280
+Okay, if there are no questions, I am giving a half an hour break.
+
+532
+00:36:39,040 --> 00:36:42,560
+Okay, after half an hour, we will continue with this.
+
+533
+00:36:43,700 --> 00:36:46,220
+We will continue with this problem.
+
+534
+00:36:48,380 --> 00:36:49,860
+We will continue with these problems.
+
+535
+00:36:50,660 --> 00:36:51,740
+Okay, so we will continue.
+
+536
+00:36:53,060 --> 00:36:53,980
+We will continue.
+
+537
+00:36:54,320 --> 00:36:55,340
+Let me write it here.
+
+538
+00:36:56,440 --> 00:36:57,900
+At, what time is it?
+
+539
+00:36:57,900 --> 00:36:58,420
+At 10.
+
+540
+00:37:01,340 --> 00:37:02,640
+Okay, half an hour break.
+
+541
+01:07:10,003 --> 01:07:11,043
+Okay, hello again.
+
+542
+01:07:15,539 --> 01:07:17,340
+Okay, let's continue with these problems.
+
+543
+01:07:21,179 --> 01:07:24,400
+Okay, after the midterm exam, what did we cover?
+
+544
+01:07:24,500 --> 01:07:26,279
+We covered partial derivatives.
+
+545
+01:07:26,679 --> 01:07:29,179
+We covered partial derivatives, chain rule.
+
+546
+01:07:29,960 --> 01:07:36,480
+Then yesterday we covered, what was that?
+
+547
+01:07:37,440 --> 01:07:39,239
+Directional derivatives and gradients.
+
+548
+01:07:39,239 --> 01:07:45,000
+And then tangent planes, normal lines,
+
+549
+01:07:46,139 --> 01:07:47,559
+differential linearization.
+
+550
+01:07:47,920 --> 01:07:50,239
+And finally, today we covered extreme values.
+
+551
+01:07:52,960 --> 01:07:55,500
+Okay, we will solve problems from these subjects.
+
+552
+01:07:57,360 --> 01:07:59,820
+First, given the function fxy equals
+
+553
+01:07:59,820 --> 01:08:02,300
+cube root of x to the power of 4 plus y squared,
+
+554
+01:08:02,860 --> 01:08:07,039
+calculate the values of fx at 0, 0, and fy at 0, 0,
+
+555
+01:08:07,039 --> 01:08:09,719
+where there are first partial derivatives of f
+
+556
+01:08:09,719 --> 01:08:12,300
+with respect to x and y at this point respectively,
+
+557
+01:08:12,460 --> 01:08:12,960
+if they exist.
+
+558
+01:08:13,840 --> 01:08:16,300
+So first of all, if you look at this function,
+
+559
+01:08:16,380 --> 01:08:17,479
+if you differentiate it,
+
+560
+01:08:18,760 --> 01:08:25,359
+if you differentiate it with respect to x
+
+561
+01:08:25,359 --> 01:08:26,359
+or with respect to y,
+
+562
+01:08:28,359 --> 01:08:32,720
+you'll get something like 1 over x to the power 4 plus y
+
+563
+01:08:32,720 --> 01:08:34,760
+squared to the power 2 over 3.
+
+564
+01:08:34,760 --> 01:08:37,479
+So something in the denominator and that's 0, 0,
+
+565
+01:08:38,140 --> 01:08:39,939
+that the denominator is going to be 0.
+
+566
+01:08:40,460 --> 01:08:41,899
+So you'll get indeterminate for,
+
+567
+01:08:42,140 --> 01:08:43,359
+I mean, you'll get,
+
+568
+01:08:44,680 --> 01:08:48,399
+you will see that the,
+
+569
+01:08:48,399 --> 01:09:15,279
+that the power 3 plus y,
+
+570
+01:08:54,707 --> 01:08:58,347
+you'll get something like 0 over 0 for the derivative.
+
+571
+01:08:58,967 --> 01:09:00,667
+So instead of differentiating directly,
+
+572
+01:09:01,147 --> 01:09:04,268
+the best way is to make use of the definition of the derivative.
+
+573
+01:09:05,367 --> 01:09:08,768
+So, its partial derivative with respect to x is by definition,
+
+574
+01:09:08,768 --> 01:09:12,627
+it's this, limit, the h approach is 0,
+
+575
+01:09:13,268 --> 01:09:15,887
+f0 plus h, 0 minus f0, 0.
+
+576
+01:09:15,987 --> 01:09:17,347
+So note that y is fixed.
+
+577
+01:09:18,187 --> 01:09:21,667
+Here, y is fixed, y is 0.
+
+578
+01:09:22,307 --> 01:09:24,127
+But x is increased by h.
+
+579
+01:09:25,247 --> 01:09:28,387
+So f, 0 plus h, 0 minus f, 0, 0 divided by h.
+
+580
+01:09:29,547 --> 01:09:30,567
+So what is this?
+
+581
+01:09:32,247 --> 01:09:33,107
+This is a function.
+
+582
+01:09:34,067 --> 01:09:36,587
+So f, what is f, h, 0?
+
+583
+01:09:37,027 --> 01:09:38,347
+x is, h, y is, 0.
+
+584
+01:09:38,407 --> 01:09:39,987
+We get cube root of h to the power 4.
+
+585
+01:09:40,707 --> 01:09:43,707
+f, 0, 0, f, 0, 0 is 0 divided by h.
+
+586
+01:09:43,887 --> 01:09:44,627
+So we get this.
+
+587
+01:09:45,527 --> 01:09:48,287
+This is h to the power 4 over 3 divided h.
+
+588
+01:09:48,647 --> 01:09:50,147
+This is h to the power 1 over 3.
+
+589
+01:09:50,747 --> 01:09:51,827
+cube root of h, basically.
+
+590
+01:09:51,827 --> 01:09:55,807
+So the limit as h approaches 0 of cube root of h is 0,
+
+591
+01:09:56,147 --> 01:09:57,187
+because it's 0 itself.
+
+592
+01:09:58,947 --> 01:10:01,728
+On the other hand, what is the partial derivative with respect to y?
+
+593
+01:10:02,107 --> 01:10:04,467
+In this case, we fix x, 0.
+
+594
+01:10:05,187 --> 01:10:06,728
+If here is y by h,
+
+595
+01:10:06,987 --> 01:10:11,627
+we look at f, 0, 0 plus h minus f, 0, 0 divided by h.
+
+596
+01:10:11,627 --> 01:10:13,867
+The limit of this as h approaches 0.
+
+597
+01:10:14,407 --> 01:10:15,947
+Now this expression over here,
+
+598
+01:10:16,887 --> 01:10:17,847
+if 0 h,
+
+599
+01:10:18,747 --> 01:10:20,027
+if 0 h is what?
+
+600
+01:10:20,527 --> 01:10:22,327
+In this case, x is 0, y is h.
+
+601
+01:10:22,747 --> 01:10:24,027
+We get cube root of h squared.
+
+602
+01:10:25,107 --> 01:10:28,667
+This, root of h squared minus 0 divided by h.
+
+603
+01:10:30,587 --> 01:10:31,467
+What is this?
+
+604
+01:10:32,607 --> 01:10:35,087
+This is h to the power 2 over 3 divided by h.
+
+605
+01:10:35,087 --> 01:10:36,087
+Now in this case,
+
+606
+01:10:36,627 --> 01:10:38,667
+when we simplify h to the power 2 over 3,
+
+607
+01:10:38,747 --> 01:10:40,627
+we get 1 over h to the power 1 over 3.
+
+608
+01:10:41,247 --> 01:10:42,768
+And as h approaches 0,
+
+609
+01:10:42,867 --> 01:10:43,467
+now in this case,
+
+610
+01:10:43,547 --> 01:10:44,807
+the denominator approaches 0.
+
+611
+01:10:45,268 --> 01:10:46,127
+So this limit,
+
+612
+01:10:46,787 --> 01:10:50,007
+limit as h approaches 0 of 1 over h to the power 1 over 3,
+
+613
+01:10:50,327 --> 01:10:51,627
+this one does not exist.
+
+614
+01:10:52,127 --> 01:10:54,667
+So the partial derivative with respect to x exists,
+
+615
+01:10:54,807 --> 01:10:55,247
+it's 0.
+
+616
+01:10:55,547 --> 01:10:57,867
+The partial derivative with respect to y doesn't exist.
+
+617
+01:10:57,867 --> 01:11:02,327
+Okay, the next question.
+
+618
+01:11:04,987 --> 01:11:08,467
+Let f xy equals x squared plus y squared times
+
+619
+01:11:08,467 --> 01:11:11,607
+sine 1 over square root of x squared plus y squared.
+
+620
+01:11:12,287 --> 01:11:14,567
+Whenever xy is different than 0, 0.
+
+621
+01:11:14,707 --> 01:11:16,027
+Of course, when xy is 0, 0,
+
+622
+01:11:16,107 --> 01:11:18,247
+this is denominator 0, it's undefined.
+
+623
+01:11:18,667 --> 01:11:20,827
+And when xy is 0, 0, it's defined as 0.
+
+624
+01:11:22,247 --> 01:11:24,707
+Now find the values of the partial derivative
+
+625
+01:11:24,707 --> 01:11:26,287
+of this function with respect to x
+
+626
+01:11:26,287 --> 01:11:27,747
+and this partial derivative with respect to y.
+
+627
+01:11:27,867 --> 01:11:29,047
+if they exist at 0, 0.
+
+628
+01:11:29,487 --> 01:11:32,487
+Again, the best way is to make use of the definition.
+
+629
+01:11:33,847 --> 01:11:35,707
+Partial derivative of f with respect to x
+
+630
+01:11:35,707 --> 01:11:38,687
+at the point 0, 0 is the limit as h approaches 0.
+
+631
+01:11:38,847 --> 01:11:41,407
+Again, f 0 plus h 0 minus f 0, 0 over h.
+
+632
+01:11:41,827 --> 01:11:42,567
+The same as above.
+
+633
+01:11:44,227 --> 01:11:45,227
+So what is this?
+
+634
+01:11:45,807 --> 01:11:46,967
+f h 0.
+
+635
+01:11:47,587 --> 01:11:49,307
+So when we look at f h 0,
+
+636
+01:11:49,467 --> 01:11:51,247
+here h is different than 0.
+
+637
+01:11:51,887 --> 01:11:53,147
+h is different than 0.
+
+638
+01:11:53,147 --> 01:11:54,487
+So we don't have the 0, 0 point.
+
+639
+01:11:54,567 --> 01:11:55,147
+We have this.
+
+640
+01:11:55,147 --> 01:11:57,947
+f h 0 is what?
+
+641
+01:11:59,107 --> 01:12:00,907
+So x is h, y is 0.
+
+642
+01:12:01,047 --> 01:12:02,807
+We get h square plus 0,
+
+643
+01:12:03,247 --> 01:12:04,768
+which is h square times
+
+644
+01:12:04,768 --> 01:12:07,167
+sine 1 over square root of h square.
+
+645
+01:12:08,247 --> 01:12:10,887
+This h square times sine 1 over square root of h square.
+
+646
+01:12:11,547 --> 01:12:12,768
+Minus f 0, 0.
+
+647
+01:12:12,768 --> 01:12:13,967
+f 0 is defined here.
+
+648
+01:12:14,228 --> 01:12:15,768
+f 0 is defined as 0.
+
+649
+01:12:15,768 --> 01:12:17,547
+divided by h.
+
+650
+01:12:20,487 --> 01:12:22,127
+Which is divided by h,
+
+651
+01:12:22,207 --> 01:12:24,787
+which is now the h is canceled.
+
+652
+01:12:25,307 --> 01:12:30,867
+Here we get h times sine 1 over square root of h square.
+
+653
+01:12:30,867 --> 01:12:34,547
+So h times sine 1 over absolute value of h.
+
+654
+01:12:36,667 --> 01:12:38,327
+Now, what do we know?
+
+655
+01:12:39,147 --> 01:12:41,887
+Now we can make use of Sandwich theorem here.
+
+656
+01:12:41,887 --> 01:12:44,427
+For all values of h,
+
+657
+01:12:44,487 --> 01:12:45,407
+which are different than...
+
+658
+01:12:45,407 --> 01:12:47,087
+So look at this expression here.
+
+659
+01:12:47,547 --> 01:12:48,507
+Let's analyze this.
+
+660
+01:12:48,587 --> 01:12:50,167
+As h approaches 0, what happens?
+
+661
+01:12:50,787 --> 01:12:51,707
+As h approaches 0,
+
+662
+01:12:51,827 --> 01:12:53,347
+this one approaches 0, right?
+
+663
+01:12:53,347 --> 01:12:53,847
+So,
+
+664
+01:12:53,847 --> 01:12:54,347
+we can make use of the same thing.
+
+665
+01:12:54,347 --> 01:12:54,587
+So,
+
+666
+01:12:54,587 --> 01:12:55,347
+we can make use of the same thing.
+
+667
+01:12:55,347 --> 01:12:56,347
+So,
+
+668
+01:12:56,347 --> 01:12:56,447
+we can make use of the same thing.
+
+669
+01:12:56,447 --> 01:12:57,347
+So,
+
+670
+01:12:57,347 --> 01:12:58,347
+we can make use of the same thing.
+
+671
+01:12:58,347 --> 01:12:58,847
+So,
+
+672
+01:12:58,847 --> 01:12:59,347
+we can make use of the same thing.
+
+673
+01:12:59,347 --> 01:13:00,347
+So,
+
+674
+01:13:00,347 --> 01:13:01,347
+we can make use of the same thing.
+
+675
+01:13:01,347 --> 01:13:01,847
+So,
+
+676
+01:13:01,847 --> 01:13:02,347
+we can make use of the same thing.
+
+677
+01:13:02,347 --> 01:13:02,847
+So,
+
+678
+01:13:02,847 --> 01:13:03,347
+we can make use of the same thing.
+
+679
+01:13:03,347 --> 01:13:03,847
+So,
+
+680
+01:13:03,847 --> 01:13:04,347
+we can make use of the same thing.
+
+681
+01:13:04,347 --> 01:13:04,847
+So,
+
+682
+01:13:04,847 --> 01:13:05,347
+we can make use of the same thing.
+
+683
+01:13:05,347 --> 01:13:05,847
+So,
+
+684
+01:13:05,847 --> 01:13:06,347
+we can make use of the same thing.
+
+685
+01:13:06,347 --> 01:13:06,847
+So,
+
+686
+01:13:06,847 --> 01:13:07,347
+we can make use of the same thing.
+
+687
+01:13:07,347 --> 01:13:07,847
+So,
+
+688
+01:13:07,847 --> 01:13:08,347
+we can make use of the same thing.
+
+689
+01:13:08,347 --> 01:13:08,847
+So,
+
+690
+01:13:08,847 --> 01:13:09,347
+we can make use of the same thing.
+
+691
+01:13:09,347 --> 01:13:09,847
+So,
+
+692
+01:12:53,663 --> 01:14:54,663
+Bu ne?
+
+693
+01:14:31,123 --> 01:14:32,264
+Okay, the next question.
+
+694
+01:14:35,384 --> 01:14:39,323
+Z be a function of the independent variables x and y.
+
+695
+01:14:41,963 --> 01:14:50,804
+Does z be a function of the independent variables x and y, such that the first order partial derivatives of z with respect to x and y exist?
+
+696
+01:14:54,771 --> 01:14:57,091
+And this equation over here is satisfied.
+
+697
+01:14:57,471 --> 01:15:03,671
+X times the partial derivative of z with respect to X plus Y times the partial derivative of z with respect to Y is 0.
+
+698
+01:15:04,032 --> 01:15:05,952
+Find the corresponding equation in polar coordinates.
+
+699
+01:15:07,351 --> 01:15:09,271
+In polar coordinates, what do we have?
+
+700
+01:15:11,211 --> 01:15:13,492
+X equals R cosignety, Y equals R sinety.
+
+701
+01:15:13,912 --> 01:15:15,072
+So we can consider this.
+
+702
+01:15:15,072 --> 01:15:18,792
+So Z is a function of X and Y, right?
+
+703
+01:15:19,952 --> 01:15:22,692
+Z is a function of two independent variables X and Y.
+
+704
+01:15:22,692 --> 01:15:28,051
+And consider X as a function of R and theta, Y as a function of R and theta.
+
+705
+01:15:28,671 --> 01:15:34,511
+So we can look at the partial derivative of z with respect to R and partial derivative of z with respect to theta.
+
+706
+01:15:35,251 --> 01:15:36,372
+So you can check both.
+
+707
+01:15:36,591 --> 01:15:39,971
+Of course, you have to try and see whether you get something like this.
+
+708
+01:15:40,631 --> 01:15:47,112
+If you try both derivatives, you will see that when we differentiate z with respect to R,
+
+709
+01:15:48,351 --> 01:15:52,591
+by the chain rule on this picture, partial derivative of z with respect to R is what?
+
+710
+01:15:52,692 --> 01:15:57,731
+Partial derivative of z with respect to X times the partial derivative of X with respect to R here,
+
+711
+01:15:58,131 --> 01:16:02,851
+plus partial derivative of z with respect to Y times the partial derivative of Y with respect to R.
+
+712
+01:16:02,992 --> 01:16:03,231
+This.
+
+713
+01:16:03,971 --> 01:16:04,811
+What is this?
+
+714
+01:16:05,891 --> 01:16:10,832
+So partial derivative of z with respect to X times partial derivative of X with respect to R.
+
+715
+01:16:11,671 --> 01:16:14,612
+Well, derivative of X with respect to R is this, cosign theta.
+
+716
+01:16:14,612 --> 01:16:19,211
+And here, derivative of Y with respect to R is this, cosign theta.
+
+717
+01:16:20,851 --> 01:16:24,131
+Now, we are trying to get such an equation over here.
+
+718
+01:16:24,131 --> 01:16:30,351
+Now, if we multiply both sides of this equation by R, what do we get?
+
+719
+01:16:30,771 --> 01:16:38,431
+If these are equal, multiply both sides by R, we get R, delta z over delta R equals R cosign theta times this,
+
+720
+01:16:38,872 --> 01:16:40,992
+plus R sin theta times this.
+
+721
+01:16:41,452 --> 01:16:42,532
+And what is R cosign theta?
+
+722
+01:16:43,091 --> 01:16:44,792
+We know that R cosign theta is just X.
+
+723
+01:16:46,091 --> 01:16:47,992
+R sin theta is just Y.
+
+724
+01:16:47,992 --> 01:16:49,492
+Replace them here.
+
+725
+01:16:49,992 --> 01:16:50,692
+What do we get?
+
+726
+01:16:51,971 --> 01:16:57,971
+R, delta z over delta R is equal to X times delta z over delta X plus Y times delta z over delta Y,
+
+727
+01:16:58,412 --> 01:17:00,652
+which is this.
+
+728
+01:17:00,952 --> 01:17:02,731
+Is this given to be equal to zero?
+
+729
+01:17:04,011 --> 01:17:07,372
+So the corresponding equation, the follow-up coordinates is this.
+
+730
+01:17:07,671 --> 01:17:10,231
+R times delta z over delta R equals zero.
+
+731
+01:17:11,152 --> 01:17:14,231
+That's the corresponding equation in follow-up.
+
+732
+01:17:14,231 --> 01:17:18,731
+Okay, next question.
+
+733
+01:17:19,091 --> 01:17:24,912
+Show that for the function, z equals xy plus x times fy over x.
+
+734
+01:17:25,692 --> 01:17:31,492
+The equation x zx plus y zy equals xy plus z is satisfied.
+
+735
+01:17:36,340 --> 01:17:39,980
+So here, z is a two-variable function, right?
+
+736
+01:17:45,779 --> 01:17:50,859
+These are two variable functions. These are functions of x and y. How about f? Let me ask you a question.
+
+737
+01:17:54,059 --> 01:17:56,420
+What is the number of variables of the function f?
+
+738
+01:18:01,140 --> 01:18:05,760
+F'e 1 variable function, 2 variable function, 3 variable function, whatever.
+
+739
+01:18:06,720 --> 01:18:08,880
+What is the number of variables of the function F?
+
+740
+01:18:13,524 --> 01:18:14,784
+How do you understand that?
+
+741
+01:18:17,463 --> 01:18:18,384
+Any answer?
+
+742
+01:18:39,956 --> 01:18:40,556
+Nobody?
+
+743
+01:18:41,756 --> 01:18:42,796
+Come on.
+
+744
+01:18:44,056 --> 01:18:44,895
+How many variables?
+
+745
+01:18:50,387 --> 01:18:52,948
+How many independent variables does the function f has?
+
+746
+01:18:55,327 --> 01:18:55,988
+Two.
+
+747
+01:18:56,787 --> 01:18:57,347
+Any other?
+
+748
+01:18:58,068 --> 01:18:58,728
+Anyone else?
+
+749
+01:19:10,323 --> 01:19:22,243
+Okay, thank you, [öğrenci]. Let me answer your question. The answer is one. Okay, f is not a two-variable function. Look at the notation here. What does it look like?
+
+750
+01:19:22,243 --> 01:19:40,743
+F, in parentheses, there's a single number, right? Don't have two numbers separated by a comma here. Here, we don't have two numbers separated by a comma. We have a single number, just one number. Y divided by X, whatever that number is.
+
+751
+01:19:40,743 --> 01:20:04,523
+So, for example, if X is 2, Y is 6, this is F3. F3, whatever F3 is. So, it's a single variable function, okay? Understand this by just looking at the number of commas between the parentheses, right? How many commas are there between the parentheses? There's no comma there.
+
+752
+01:20:04,523 --> 01:20:15,423
+So, that's just a single number, Y over X, whatever that number is. So, there are two letters, X and Y here. You should not confuse you, okay? This is a one-variable function.
+
+753
+01:20:16,703 --> 01:20:32,523
+Okay, now, we are going to show that this equation is satisfied. So, let's first find this, ZX. What is ZX? So, on this equation, what is ZX? The derivative of this with respect to X is Y.
+
+754
+01:20:32,523 --> 01:20:48,483
+Plus, now, to find the derivative of this part with respect to X, we need to use the product rule. Derivative of X is 1 times FY over X itself plus X itself times derivative of this.
+
+755
+01:20:48,483 --> 01:21:03,823
+derivative of this with respect to X is what? F prime Y over X times derivative of inside. Derivative of this with respect to X is, so here Y is a constant. Derivative of 1 over X is minus 1 over X squared.
+
+756
+01:21:03,823 --> 01:21:23,563
+So, we get this. And if we simplify it a little bit, so here, here, one of the X is canceled. We get Y plus FY over X minus Y over X times F prime Y over X.
+
+757
+01:21:23,563 --> 01:21:37,844
+Okay, this is ZX. How about ZY? We need to find ZY. Derivative of this with respect to Y is X plus, again, to find the derivative of this one, we need to use the product. Derivative of X is, sorry.
+
+758
+01:21:38,304 --> 01:21:44,804
+No, no, we don't need to use the product rule here because X is a constant here in this case. X is a constant. Just take it there.
+
+759
+01:21:44,803 --> 01:21:54,603
+times the derivative of this with respect to Y. Derivative of this with respect to Y is F prime Y over X. I can use F prime because F is a single variable function. Okay?
+
+760
+01:21:55,543 --> 01:22:02,823
+F prime Y over X is derivative times the derivative of the inner function. Derivative of inside with respect to Y is just 1 over X.
+
+761
+01:22:04,003 --> 01:22:10,083
+This is just 1 over X times Y. Its derivative is 1 over X. So, we get this, which is, so X is canceled.
+
+762
+01:22:10,083 --> 01:22:15,403
+Let me simplify it. We get X plus F prime Y over X. What is our equation here?
+
+763
+01:22:16,403 --> 01:22:22,823
+X times ZX. So, what is X times ZX? X times this is X, Y.
+
+764
+01:22:23,443 --> 01:22:30,884
+Here, X times this, X times FY over X minus X times this, which is minus Y times F prime Y over X.
+
+765
+01:22:31,123 --> 01:22:34,543
+So, this is XZX plus YZY.
+
+766
+01:22:34,543 --> 01:22:43,403
+This times Y times Y times this, which is XY here, plus Y times F prime Y over X.
+
+767
+01:22:43,983 --> 01:22:49,344
+Here, minus Y times F prime Y over X and plus Y times Y over X. Cancel out.
+
+768
+01:22:49,844 --> 01:22:56,563
+Get this. XY plus another XY here plus X times Y over X.
+
+769
+01:22:56,563 --> 01:23:02,463
+This, XY plus X times F Y over X is part of Z.
+
+770
+01:23:03,323 --> 01:23:04,683
+We get XY plus Z.
+
+771
+01:23:05,283 --> 01:23:08,923
+And we prove that XZX plus YZY is equal to XY plus Z.
+
+772
+01:23:10,484 --> 01:23:11,164
+Get this.
+
+773
+01:23:14,707 --> 01:23:15,087
+Ok.
+
+774
+01:23:29,427 --> 01:23:31,568
+Okay, next, a similar question.
+
+775
+01:23:31,747 --> 01:23:33,568
+If z is equal to x plus fu,
+
+776
+01:23:34,667 --> 01:23:36,507
+again, f is a single variable function.
+
+777
+01:23:37,028 --> 01:23:38,127
+If it's a single variable function,
+
+778
+01:23:38,847 --> 01:23:40,127
+z equals x plus fu,
+
+779
+01:23:40,528 --> 01:23:42,787
+where u is xy, u is xy.
+
+780
+01:23:43,188 --> 01:23:44,167
+Show that this holds.
+
+781
+01:23:45,087 --> 01:23:48,728
+x delta z over delta x minus y delta z over delta y z over x.
+
+782
+01:23:49,068 --> 01:23:51,068
+Again, find delta z over delta x.
+
+783
+01:23:51,847 --> 01:23:53,488
+What's the derivative of z with respect to x?
+
+784
+01:23:53,967 --> 01:23:58,148
+Well, derivative of this is 1 plus derivative of fu.
+
+785
+01:23:58,148 --> 01:24:02,467
+derivative of fu, f prime u times the derivative of inside,
+
+786
+01:24:02,747 --> 01:24:04,127
+derivative of u with respect to x.
+
+787
+01:24:05,387 --> 01:24:09,427
+U is here, which is equal to 1 plus f prime u times
+
+788
+01:24:09,427 --> 01:24:12,108
+derivative of u with respect to x is y,
+
+789
+01:24:13,167 --> 01:24:15,627
+which gives us 1 plus y f prime u.
+
+790
+01:24:16,448 --> 01:24:18,387
+How about delta z over delta y?
+
+791
+01:24:19,467 --> 01:24:23,188
+Derivative of x is 0 with respect to y plus derivative of,
+
+792
+01:24:23,188 --> 01:24:25,507
+this is f prime u times the derivative of u,
+
+793
+01:24:25,507 --> 01:24:27,327
+again using the chain rule,
+
+794
+01:24:27,747 --> 01:24:31,547
+which is f prime u times derivative of u with respect to y is x,
+
+795
+01:24:32,087 --> 01:24:34,587
+which gives us this, x times f prime u.
+
+796
+01:24:35,207 --> 01:24:37,728
+So what is the question you are asked to prove this?
+
+797
+01:24:38,268 --> 01:24:39,988
+x times delta z over delta x,
+
+798
+01:24:40,167 --> 01:24:40,967
+x times this,
+
+799
+01:24:42,467 --> 01:24:46,587
+x times this is x plus xy f prime u
+
+800
+01:24:46,587 --> 01:24:49,528
+minus y times delta z over delta y.
+
+801
+01:24:49,528 --> 01:24:50,867
+y times this,
+
+802
+01:24:51,467 --> 01:24:52,768
+which is x, y, f prime u.
+
+803
+01:24:52,847 --> 01:24:54,028
+So x, y, f prime u is,
+
+804
+01:24:54,287 --> 01:24:55,347
+cancel out, we get x.
+
+805
+01:24:58,648 --> 01:25:01,927
+We get the expression is equal to x.
+
+806
+01:25:01,927 --> 01:25:23,927
+x times this is equal to x.
+
+807
+01:25:07,444 --> 01:25:08,904
+Okay, next question is similar.
+
+808
+01:25:09,664 --> 01:25:11,864
+Again, f is a single variable function here.
+
+809
+01:25:12,584 --> 01:25:17,844
+Z is equal to f of some two variable function of x and y.
+
+810
+01:25:18,324 --> 01:25:20,144
+So, this is a single variable.
+
+811
+01:25:21,364 --> 01:25:23,724
+So, let's call this u, for example.
+
+812
+01:25:24,344 --> 01:25:31,064
+Again, if we call this u, z is equal to f of u.
+
+813
+01:25:32,744 --> 01:25:36,744
+F is a single variable function, where this u is a two variable function.
+
+814
+01:25:37,444 --> 01:25:43,204
+Okay, verify that this function satisfies this equation.
+
+815
+01:25:43,344 --> 01:25:46,844
+x squared delta z over delta x minus y squared delta z over delta y equals 0.
+
+816
+01:25:49,344 --> 01:25:51,604
+Okay, again, we need to find delta z over delta x.
+
+817
+01:25:51,824 --> 01:25:52,384
+What is it?
+
+818
+01:25:53,124 --> 01:25:56,444
+The derivative of z with respect to x is derivative of this.
+
+819
+01:25:56,444 --> 01:26:00,084
+f prime x y over x plus y times derivative of inside.
+
+820
+01:26:00,684 --> 01:26:02,844
+Derivative of inside with respect to x.
+
+821
+01:26:03,644 --> 01:26:04,164
+What is it?
+
+822
+01:26:04,224 --> 01:26:05,564
+We use the quotient rule.
+
+823
+01:26:05,564 --> 01:26:12,704
+Derivative of the numerator, which is y, times the denominator x plus y minus numerator itself,
+
+824
+01:26:13,184 --> 01:26:16,244
+x times y, times the derivative of the denominator, which is 1,
+
+825
+01:26:16,684 --> 01:26:19,744
+divided by the denominator squared, x plus y squared.
+
+826
+01:26:20,404 --> 01:26:21,564
+So, let me simplify this.
+
+827
+01:26:21,664 --> 01:26:23,404
+So, this is yx minus yx.
+
+828
+01:26:23,464 --> 01:26:23,864
+They cancel.
+
+829
+01:26:24,004 --> 01:26:25,224
+Plus y squared is left there.
+
+830
+01:26:25,224 --> 01:26:30,844
+So, this is y squared over x plus y squared times this, f prime x y over x plus y.
+
+831
+01:26:31,904 --> 01:26:34,464
+How about the partial derivative of z with respect to y?
+
+832
+01:26:34,564 --> 01:26:35,204
+It's similar.
+
+833
+01:26:35,204 --> 01:26:42,004
+Again, f prime x y over x plus y times, using the quotient rule again,
+
+834
+01:26:42,624 --> 01:26:46,104
+derivative of the numerator is x, times the denominator is x plus y,
+
+835
+01:26:46,423 --> 01:26:50,264
+minus numerator is x y, times the derivative of the denominator is 1,
+
+836
+01:26:50,684 --> 01:26:54,124
+divided by the denominator squared, x plus y squared.
+
+837
+01:26:54,284 --> 01:26:56,324
+We get, again, x y is canceled.
+
+838
+01:26:56,444 --> 01:26:57,824
+We get x squared left here now.
+
+839
+01:26:57,824 --> 01:27:01,124
+x squared over x plus y squared times f prime x y over x plus y.
+
+840
+01:27:02,064 --> 01:27:04,284
+So, x squared times delta z over delta x.
+
+841
+01:27:06,304 --> 01:27:11,344
+X squared times, x squared times this, delta z over delta x is this.
+
+842
+01:27:11,784 --> 01:27:15,184
+X squared y squared over x plus y squared times this, f prime.
+
+843
+01:27:15,844 --> 01:27:21,164
+And y squared times delta z y squared, delta z over delta y, y squared times this,
+
+844
+01:27:21,264 --> 01:27:24,704
+is also equal to x squared y squared over x plus y squared times this.
+
+845
+01:27:24,704 --> 01:27:29,923
+So, you see that x squared times delta z over delta x and y squared times delta z over delta y,
+
+846
+01:27:30,024 --> 01:27:31,024
+they are both equal to each other.
+
+847
+01:27:31,604 --> 01:27:34,104
+So, we subtract them, we get zero.
+
+848
+01:27:34,644 --> 01:27:36,864
+That's what we were asked to verify.
+
+849
+01:27:40,435 --> 01:27:48,275
+Okay, next question. Let z equals z x y, let phi be a differentiable function.
+
+850
+01:27:51,636 --> 01:28:00,516
+Let z equals z x y, and let phi be a differentiable function which satisfies the equation 2 z minus x squared is equal to phi 2 z minus y squared.
+
+851
+01:28:00,836 --> 01:28:03,216
+Here, again, phi is a single variable function.
+
+852
+01:28:04,716 --> 01:28:10,656
+And here, z is not defined explicitly, z is not defined explicitly as a function of x and y.
+
+853
+01:28:11,056 --> 01:28:13,336
+This is an implicit equation, right?
+
+854
+01:28:13,376 --> 01:28:16,196
+Because there is z on the left side, there is z on the right side.
+
+855
+01:28:16,836 --> 01:28:19,176
+This implicitly defines z as a function of x and y.
+
+856
+01:28:19,756 --> 01:28:20,076
+Okay.
+
+857
+01:28:21,636 --> 01:28:26,236
+We satisfy this equation, then verify that y z x plus x z y is equal to x y.
+
+858
+01:28:27,056 --> 01:28:27,756
+Verify this.
+
+859
+01:28:28,316 --> 01:28:30,796
+Y z x plus x z y equals x y.
+
+860
+01:28:40,372 --> 01:28:42,311
+YZX plus XZY equals XY.
+
+861
+01:28:42,512 --> 01:28:42,712
+Okay.
+
+862
+01:28:44,492 --> 01:28:44,912
+Oh.
+
+863
+01:28:51,028 --> 01:28:55,708
+So, we differentiate this equation, both sides of this equation, with respect to x.
+
+864
+01:28:56,728 --> 01:29:00,688
+To find zx, we differentiate both sides of this equation with respect to x.
+
+865
+01:29:00,887 --> 01:29:01,347
+What do we get?
+
+866
+01:29:03,228 --> 01:29:07,007
+Derivative of this is 2 times the derivative of z with respect to x,
+
+867
+01:29:07,967 --> 01:29:10,608
+minus derivative of x squared is 2x,
+
+868
+01:29:11,408 --> 01:29:15,847
+equals derivative of the right-hand side is phi prime 2z minus y squared,
+
+869
+01:29:16,307 --> 01:29:17,807
+times the derivative of inside.
+
+870
+01:29:18,507 --> 01:29:20,908
+Derivative of this function with respect to x,
+
+871
+01:29:21,028 --> 01:29:23,868
+is 2 times derivative of z with respect to x.
+
+872
+01:29:24,068 --> 01:29:27,847
+So, here, note that x and y are independent,
+
+873
+01:29:28,347 --> 01:29:29,448
+x and y are independent,
+
+874
+01:29:30,048 --> 01:29:31,528
+z is a function of x and y.
+
+875
+01:29:31,628 --> 01:29:35,028
+So, z depends on x and y, but x and y are independent.
+
+876
+01:29:35,467 --> 01:29:39,208
+So, the derivative of z with respect to x is this, zx, whatever it is.
+
+877
+01:29:39,868 --> 01:29:41,927
+Derivative of y squared with respect to x, that's 0,
+
+878
+01:29:42,128 --> 01:29:43,368
+because y is independent of x.
+
+879
+01:29:44,268 --> 01:29:45,467
+We get this equation.
+
+880
+01:29:46,548 --> 01:29:47,668
+Let me simplify it.
+
+881
+01:29:47,668 --> 01:29:49,347
+So, divide both sides by 2,
+
+882
+01:29:49,927 --> 01:29:56,347
+get zx minus x is equal to zx times phi prime 2z minus y squared.
+
+883
+01:29:58,048 --> 01:30:01,868
+So, take this to the left side of the equation
+
+884
+01:30:01,868 --> 01:30:04,288
+and take this one to the right side of the equation.
+
+885
+01:30:04,387 --> 01:30:10,588
+We get zx times 1 minus this phi prime 2z minus y squared is equal to x.
+
+886
+01:30:10,588 --> 01:30:13,728
+So, from this, we get zx is equal to,
+
+887
+01:30:14,467 --> 01:30:20,048
+we get zx is equal to x over 1 minus phi prime 2z minus y squared.
+
+888
+01:30:20,048 --> 01:30:36,307
+So, we get zx is equal to x.
+
+889
+01:30:24,180 --> 01:30:28,200
+Okay, now what is next? We need to find zy.
+
+890
+01:30:29,360 --> 01:30:34,440
+Again, now we differentiate both sides of this equation with respect to y now.
+
+891
+01:30:35,820 --> 01:30:43,180
+Derivative of 2z is 2zy, 2zy with respect to y, minus derivative of x square is 0.
+
+892
+01:30:45,180 --> 01:30:50,140
+Derivative of phi 2z minus y square is phi prime 2z minus y square,
+
+893
+01:30:50,920 --> 01:30:54,039
+times derivative of inside, derivative of the inner function.
+
+894
+01:30:54,180 --> 01:30:57,220
+Which is 2zy minus 2y.
+
+895
+01:30:58,320 --> 01:31:00,060
+2zy minus 2y.
+
+896
+01:31:00,740 --> 01:31:04,440
+Now, again, divide both sides by 2.
+
+897
+01:31:04,560 --> 01:31:11,600
+We get zy equals, here zy, zy times this minus y times this.
+
+898
+01:31:12,420 --> 01:31:13,079
+We get this.
+
+899
+01:31:13,760 --> 01:31:18,159
+So, to solve this for zy, just throw this to the left side of the equation.
+
+900
+01:31:18,159 --> 01:31:24,740
+We get zy times 1 minus phi prime 2zy minus y squared is equal to this part,
+
+901
+01:31:24,980 --> 01:31:27,740
+minus y times phi prime 2z minus y squared.
+
+902
+01:31:28,220 --> 01:31:33,480
+So, zy is equal to this minus y times phi prime 2z minus y squared,
+
+903
+01:31:33,560 --> 01:31:36,940
+divided by this, 1 minus phi prime 2z minus y squared.
+
+904
+01:31:36,940 --> 01:31:38,600
+So, what are we looking for?
+
+905
+01:31:38,700 --> 01:31:41,640
+We are looking for y zx plus x zy.
+
+906
+01:31:42,400 --> 01:31:44,320
+y zx plus x zy.
+
+907
+01:31:45,180 --> 01:31:46,260
+So, y zx,
+
+908
+01:31:46,400 --> 01:31:50,380
+y zx is y times this,
+
+909
+01:31:50,840 --> 01:31:54,000
+which is xy over 1 minus phi prime 2z minus y squared,
+
+910
+01:31:54,000 --> 01:31:56,220
+plus x zy.
+
+911
+01:31:56,820 --> 01:31:57,880
+x times this,
+
+912
+01:31:58,579 --> 01:32:00,060
+x times this is
+
+913
+01:32:00,060 --> 01:32:03,180
+minus,
+
+914
+01:32:03,500 --> 01:32:04,520
+because of this minus,
+
+915
+01:32:05,020 --> 01:32:09,640
+xy times phi prime 2z minus y squared over 1 minus phi prime 2z minus y squared.
+
+916
+01:32:10,360 --> 01:32:11,119
+Which is equal to,
+
+917
+01:32:11,740 --> 01:32:13,980
+when we factor xy out in the numerator,
+
+918
+01:32:14,159 --> 01:32:17,260
+we get xy times 1 minus phi prime 2z minus y squared,
+
+919
+01:32:17,600 --> 01:32:20,039
+divided by 1 minus phi prime 2z minus y squared.
+
+920
+01:32:20,320 --> 01:32:21,140
+They cancel out.
+
+921
+01:32:21,380 --> 01:32:22,000
+We get xy.
+
+922
+01:32:22,000 --> 01:32:22,460
+like that.
+
+923
+01:32:23,140 --> 01:32:24,000
+x is equal to xy.
+
+924
+01:32:24,220 --> 01:32:26,940
+That satisfies this equation over here.
+
+925
+01:32:30,836 --> 01:32:32,836
+Okay, next, what is next?
+
+926
+01:32:32,956 --> 01:32:33,956
+Again, a similar question.
+
+927
+01:32:34,115 --> 01:32:35,876
+Let u equals fs plus gr
+
+928
+01:32:35,876 --> 01:32:37,815
+continuous partial derivatives
+
+929
+01:32:37,815 --> 01:32:38,976
+with respect to s and r.
+
+930
+01:32:39,636 --> 01:32:42,155
+Let s equals 5x plus y
+
+931
+01:32:42,155 --> 01:32:44,416
+and r equals y minus 5x.
+
+932
+01:32:45,356 --> 01:32:46,396
+Then show that
+
+933
+01:32:46,396 --> 01:32:48,636
+the second order partial derivative
+
+934
+01:32:48,636 --> 01:32:49,695
+of u with respect to x
+
+935
+01:32:49,695 --> 01:32:52,356
+minus 25 delta square u
+
+936
+01:32:52,356 --> 01:32:53,096
+over delta y square
+
+937
+01:32:53,096 --> 01:32:53,576
+equals zero
+
+938
+01:32:53,576 --> 01:32:54,235
+using the chain.
+
+939
+01:32:55,476 --> 01:32:55,735
+Okay.
+
+940
+01:32:58,036 --> 01:32:59,336
+Here u, note that
+
+941
+01:32:59,336 --> 01:33:00,556
+f is a single variable function,
+
+942
+01:33:00,556 --> 01:33:01,756
+g is a single variable function.
+
+943
+01:33:01,856 --> 01:33:03,256
+So here u is equal to
+
+944
+01:33:03,256 --> 01:33:04,796
+some expression on x
+
+945
+01:33:04,796 --> 01:33:06,815
+plus some expression on r.
+
+946
+01:33:07,096 --> 01:33:08,476
+So u is a two variable function.
+
+947
+01:33:08,796 --> 01:33:09,876
+This is a function of s and r.
+
+948
+01:33:10,775 --> 01:33:12,996
+Here, this is a function of x and y.
+
+949
+01:33:13,556 --> 01:33:15,036
+r is a function of x and y.
+
+950
+01:33:16,296 --> 01:33:17,576
+U is a function of s and r.
+
+951
+01:33:18,456 --> 01:33:20,536
+s and r are both functions of x and y.
+
+952
+01:33:21,416 --> 01:33:23,496
+So, find the derivative of u
+
+953
+01:33:23,496 --> 01:33:25,115
+with respect to x first.
+
+954
+01:33:26,256 --> 01:33:27,416
+First, we need to find the derivative
+
+955
+01:33:27,416 --> 01:33:28,516
+of u with respect to x
+
+956
+01:33:28,516 --> 01:33:29,756
+using the chain rule here.
+
+957
+01:33:30,556 --> 01:33:32,836
+The derivative of u with respect to x
+
+958
+01:33:32,836 --> 01:33:34,136
+is the partial derivative of u
+
+959
+01:33:34,136 --> 01:33:35,056
+with respect to s
+
+960
+01:33:35,056 --> 01:33:36,356
+times the derivative of s
+
+961
+01:33:36,356 --> 01:33:37,256
+with respect to x
+
+962
+01:33:37,256 --> 01:33:39,976
+plus derivative of u with respect to r
+
+963
+01:33:39,976 --> 01:33:41,296
+times the derivative of r
+
+964
+01:33:41,296 --> 01:33:42,096
+with respect to x.
+
+965
+01:33:42,676 --> 01:33:42,876
+Here.
+
+966
+01:33:43,775 --> 01:33:44,176
+Which is
+
+967
+01:33:44,176 --> 01:33:47,856
+derivative of u with respect to s.
+
+968
+01:33:47,976 --> 01:33:48,476
+What is that?
+
+969
+01:33:48,636 --> 01:33:49,416
+It's f prime s.
+
+970
+01:33:49,896 --> 01:33:51,296
+f prime s plus zero.
+
+971
+01:33:53,016 --> 01:33:54,155
+Derivative of this part is zero
+
+972
+01:33:54,155 --> 01:33:54,976
+with respect to s.
+
+973
+01:33:54,976 --> 01:33:56,396
+It's just f prime s.
+
+974
+01:33:57,396 --> 01:33:59,436
+f prime s times derivative of s
+
+975
+01:33:59,436 --> 01:34:00,396
+with respect to x,
+
+976
+01:34:00,516 --> 01:34:01,056
+which is five.
+
+977
+01:34:02,155 --> 01:34:02,636
+Plus,
+
+978
+01:34:04,016 --> 01:34:05,815
+derivative of u with respect to r.
+
+979
+01:34:06,476 --> 01:34:07,296
+This is zero.
+
+980
+01:34:07,836 --> 01:34:09,195
+Derivative of this is g prime r,
+
+981
+01:34:09,376 --> 01:34:10,016
+whatever it is.
+
+982
+01:34:10,556 --> 01:34:13,056
+Times derivative of r with respect to x,
+
+983
+01:34:13,436 --> 01:34:14,216
+which is minus five.
+
+984
+01:34:15,155 --> 01:34:15,676
+We get
+
+985
+01:34:15,676 --> 01:34:17,356
+five f prime s
+
+986
+01:34:17,356 --> 01:34:19,115
+minus five g prime r.
+
+987
+01:34:19,115 --> 01:34:21,536
+On the other hand,
+
+988
+01:34:21,615 --> 01:34:22,735
+the partial derivative of u
+
+989
+01:34:22,735 --> 01:34:23,836
+with respect to y
+
+990
+01:34:23,836 --> 01:34:24,476
+is what?
+
+991
+01:34:24,956 --> 01:34:26,136
+Let's call it u y.
+
+992
+01:34:27,235 --> 01:34:27,596
+Again,
+
+993
+01:34:27,716 --> 01:34:28,536
+using the chain rule,
+
+994
+01:34:28,636 --> 01:34:30,315
+it's derivative of u with respect to s
+
+995
+01:34:30,315 --> 01:34:31,376
+times the derivative of s
+
+996
+01:34:31,376 --> 01:34:32,256
+with respect to y
+
+997
+01:34:32,256 --> 01:34:34,956
+plus derivative of u with respect to r
+
+998
+01:34:34,956 --> 01:34:36,036
+times the derivative of r
+
+999
+01:34:36,036 --> 01:34:36,836
+with respect to y.
+
+1000
+01:34:37,615 --> 01:34:37,815
+Here.
+
+1001
+01:34:38,556 --> 01:34:39,056
+Which is,
+
+1002
+01:34:39,416 --> 01:34:39,695
+again,
+
+1003
+01:34:40,275 --> 01:34:41,356
+derivative of u with respect to
+
+1004
+01:34:41,356 --> 01:34:42,416
+s is f prime s,
+
+1005
+01:34:42,496 --> 01:34:43,695
+derivative of u with respect to r
+
+1006
+01:34:43,695 --> 01:34:44,336
+is g prime r.
+
+1007
+01:34:44,376 --> 01:34:45,155
+We have found them.
+
+1008
+01:34:45,655 --> 01:34:47,336
+Derivative of s with respect to y.
+
+1009
+01:34:47,735 --> 01:34:49,096
+Derivative of s with respect to y,
+
+1010
+01:34:49,115 --> 01:34:49,615
+is one.
+
+1011
+01:34:50,655 --> 01:34:53,096
+Derivative of r with respect to y
+
+1012
+01:34:53,096 --> 01:34:54,195
+is also one.
+
+1013
+01:34:55,235 --> 01:34:55,456
+Here.
+
+1014
+01:34:56,016 --> 01:34:58,176
+So we get f prime s plus g prime r.
+
+1015
+01:34:59,456 --> 01:35:01,275
+We need to find the second order
+
+1016
+01:35:01,275 --> 01:35:01,815
+partial derivative.
+
+1017
+01:35:02,615 --> 01:35:03,115
+In other words,
+
+1018
+01:35:03,155 --> 01:35:03,655
+what is this?
+
+1019
+01:35:04,476 --> 01:35:06,176
+What is delta square u over delta x
+
+1020
+01:35:06,176 --> 01:35:06,456
+square?
+
+1021
+01:35:06,576 --> 01:35:08,396
+This is the derivative of ux
+
+1022
+01:35:08,396 --> 01:35:09,496
+with respect to x,
+
+1023
+01:35:09,836 --> 01:35:10,056
+right?
+
+1024
+01:35:10,496 --> 01:35:12,556
+So we need to differentiate this ux
+
+1025
+01:35:12,556 --> 01:35:14,096
+with respect to x again.
+
+1026
+01:35:15,436 --> 01:35:17,815
+Now ux is a function of s and r.
+
+1027
+01:35:19,115 --> 01:35:20,735
+ux is a function of s and r.
+
+1028
+01:35:21,615 --> 01:35:23,315
+s and r are functions of x and y.
+
+1029
+01:35:23,815 --> 01:35:25,596
+So this is the second derivative.
+
+1030
+01:35:26,136 --> 01:35:27,936
+This delta square u over delta x
+
+1031
+01:35:27,936 --> 01:35:29,536
+square is the derivative of ux
+
+1032
+01:35:29,536 --> 01:35:30,416
+with respect to x.
+
+1033
+01:35:31,815 --> 01:35:33,896
+So derivative of ux with respect to x,
+
+1034
+01:35:33,956 --> 01:35:34,195
+again,
+
+1035
+01:35:34,235 --> 01:35:35,115
+using the chain rule.
+
+1036
+01:35:35,775 --> 01:35:37,396
+Derivative of ux with respect to x
+
+1037
+01:35:37,396 --> 01:35:39,096
+is derivative of ux with respect to r
+
+1038
+01:35:39,096 --> 01:35:41,676
+s times the derivative of s with respect to x
+
+1039
+01:35:41,676 --> 01:35:43,936
+plus derivative of ux with respect to r
+
+1040
+01:35:43,936 --> 01:35:45,916
+times the derivative of r with respect to x.
+
+1041
+01:35:46,056 --> 01:35:46,275
+This.
+
+1042
+01:35:47,315 --> 01:35:49,516
+So what is derivative of ux with respect to s?
+
+1043
+01:35:50,056 --> 01:35:50,676
+ux is here.
+
+1044
+01:35:51,556 --> 01:35:52,956
+Derivative with respect to s,
+
+1045
+01:35:53,456 --> 01:35:54,676
+derivative of this part is 0.
+
+1046
+01:35:55,136 --> 01:35:57,655
+Derivative of this is 5f double primus.
+
+1047
+01:35:58,115 --> 01:35:59,355
+5f double primus.
+
+1048
+01:35:59,356 --> 01:36:02,356
+times derivative of s with respect to x,
+
+1049
+01:36:03,076 --> 01:36:03,735
+which is 5.
+
+1050
+01:36:06,316 --> 01:36:09,216
+Plus derivative of ux with respect to r.
+
+1051
+01:36:10,476 --> 01:36:11,176
+ux is here.
+
+1052
+01:36:11,316 --> 01:36:13,636
+It's derivative with respect to r is 0.
+
+1053
+01:36:13,856 --> 01:36:15,596
+This is minus 5g double primus.
+
+1054
+01:36:16,356 --> 01:36:18,496
+Times derivative of r with respect to x.
+
+1055
+01:36:19,036 --> 01:36:21,056
+Derivative of r with respect to x is minus 5.
+
+1056
+01:36:21,056 --> 01:36:24,195
+which is when simplified,
+
+1057
+01:36:24,856 --> 01:36:28,336
+we get 25f double primus plus.
+
+1058
+01:36:28,800 --> 01:36:30,800
+25GW'i.
+
+1059
+01:36:32,039 --> 01:36:33,039
+Similarly,
+
+1060
+01:36:34,640 --> 01:36:36,920
+to find the second derivative of,
+
+1061
+01:36:36,920 --> 01:36:39,720
+to find delta square U over delta Y squared,
+
+1062
+01:36:41,239 --> 01:36:44,600
+we need to find the derivative of UY with respect to Y.
+
+1063
+01:36:44,600 --> 01:36:45,760
+And what is UY?
+
+1064
+01:36:45,760 --> 01:36:47,640
+UY is a function of S and R.
+
+1065
+01:36:49,279 --> 01:36:51,239
+Y is a function of S and R.
+
+1066
+01:36:51,239 --> 01:36:52,640
+S and R are functions of X and Y.
+
+1067
+01:36:52,640 --> 01:36:56,579
+To find the derivative of UY with respect to Y,
+
+1068
+01:36:56,579 --> 01:36:57,720
+using the chain rule,
+
+1069
+01:36:58,800 --> 01:37:03,800
+it's derivative of UY with respect to S times the derivative of S with respect to Y,
+
+1070
+01:37:03,800 --> 01:37:08,800
+plus derivative of UY with respect to R times the derivative of R with respect to Y,
+
+1071
+01:37:08,800 --> 01:37:09,800
+which is,
+
+1072
+01:37:09,800 --> 01:37:11,800
+UY is here, where is UY?
+
+1073
+01:37:11,800 --> 01:37:12,800
+UY is here.
+
+1074
+01:37:12,800 --> 01:37:15,800
+Derivative with respect to S is F double prime S,
+
+1075
+01:37:15,800 --> 01:37:18,800
+times derivative of S with respect to Y.
+
+1076
+01:37:18,800 --> 01:37:21,800
+Derivative of S with respect to Y is 1,
+
+1077
+01:37:21,800 --> 01:37:23,800
+derivative of R with respect to Y is 1.
+
+1078
+01:37:23,800 --> 01:37:25,800
+Here.
+
+1079
+01:37:25,800 --> 01:37:28,800
+And derivative of UY with respect to R,
+
+1080
+01:37:28,800 --> 01:37:32,800
+derivative of UY with respect to R is double prime R.
+
+1081
+01:37:32,800 --> 01:37:38,800
+So, this is F double prime S plus F double prime R,
+
+1082
+01:37:38,800 --> 01:37:39,800
+D double prime R.
+
+1083
+01:37:39,800 --> 01:37:44,800
+So, note that this one is 25 times this one.
+
+1084
+01:37:44,800 --> 01:37:46,800
+So, basically,
+
+1085
+01:37:46,800 --> 01:37:52,800
+we were asked to find delta square U over delta X squared minus 25 times delta square U over delta Y squared
+
+1086
+01:37:52,800 --> 01:37:57,800
+is equal to minus 25 times this is going to be 0.
+
+1087
+01:37:57,800 --> 01:37:58,800
+Okay.
+
+1088
+01:37:58,800 --> 01:38:00,800
+That's the conclusion.
+
+1089
+01:38:00,800 --> 01:38:03,800
+Because this is just 25 times this.
+
+1090
+01:38:03,800 --> 01:38:07,800
+This one minus 25 times this is going to be 0.
+
+1091
+01:38:07,800 --> 01:38:08,800
+Okay.
+
+1092
+01:38:08,800 --> 01:38:12,800
+Next question.
+
+1093
+01:38:12,800 --> 01:38:25,800
+Let the function Z equals F be defined implicitly as Z equals X minus cosine Z square minus 1.
+
+1094
+01:38:25,800 --> 01:38:26,800
+Yeah.
+
+1095
+01:38:26,800 --> 01:38:29,800
+Let the function Z equals F be defined implicitly as this.
+
+1096
+01:38:29,800 --> 01:38:34,800
+Z equals X minus cosine Z square minus 1.
+
+1097
+01:38:34,800 --> 01:38:39,800
+This is implicit because the right hand side of the equation also involves the variable Z.
+
+1098
+01:38:39,800 --> 01:38:43,800
+So, find the value of delta square Z over delta X square.
+
+1099
+01:38:43,800 --> 01:38:47,800
+At this point, P211.
+
+1100
+01:38:47,800 --> 01:38:48,800
+Okay.
+
+1101
+01:38:48,800 --> 01:38:54,800
+To find the derivative of Z with respect to the second derivative of Z with respect to X,
+
+1102
+01:38:54,800 --> 01:38:57,800
+we first need to find the first derivative of Z with respect to X.
+
+1103
+01:38:57,800 --> 01:39:01,800
+To find it, we need to differentiate both sides of this equation with respect to X.
+
+1104
+01:39:01,800 --> 01:39:10,800
+So, derivative of the left hand side is delta Z over delta X is equal to, note that here, okay, again,
+
+1105
+01:39:10,800 --> 01:39:17,800
+X and Y are independent variables.
+
+1106
+01:39:17,800 --> 01:39:23,800
+X and Y are independent means derivative of X with respect to Y is 0, derivative of Y with respect to X is 0.
+
+1107
+01:39:23,800 --> 01:39:25,800
+Changing one of them does not change the others.
+
+1108
+01:39:25,800 --> 01:39:26,800
+They are independent of each other.
+
+1109
+01:39:26,800 --> 01:39:28,800
+But Z is a function of them.
+
+1110
+01:39:28,800 --> 01:39:30,800
+Z depends on X and Y.
+
+1111
+01:39:30,800 --> 01:39:33,800
+So, if we change X, if we change Y, Z changes.
+
+1112
+01:39:33,800 --> 01:39:39,800
+So, the derivative of the left hand side with respect to X is the derivative of Z with respect to X.
+
+1113
+01:39:39,800 --> 01:39:41,800
+Whatever it is.
+
+1114
+01:39:41,800 --> 01:39:45,800
+Is equal to derivative of this with respect to X is Y.
+
+1115
+01:39:45,800 --> 01:39:47,800
+Because Y is a constant there.
+
+1116
+01:39:47,800 --> 01:39:55,800
+Minus derivative of cosine Z square minus one is minus sine Z square minus one times the derivative of inside.
+
+1117
+01:39:55,800 --> 01:39:59,800
+Derivative of Z square is 2Z times the derivative of Z.
+
+1118
+01:39:59,800 --> 01:40:01,800
+2Z times the derivative of Z.
+
+1119
+01:40:01,800 --> 01:40:04,800
+So, let me simplify this.
+
+1120
+01:40:04,800 --> 01:40:06,800
+What do we get?
+
+1121
+01:40:06,800 --> 01:40:09,800
+Delta Z over delta X is equal to Y.
+
+1122
+01:40:09,800 --> 01:40:10,800
+Plus.
+
+1123
+01:40:10,800 --> 01:40:16,800
+2Z times sine Z square minus one times one times delta Z or delta X.
+
+1124
+01:40:16,800 --> 01:40:20,800
+So, we need the value of this at this point.
+
+1125
+01:40:20,800 --> 01:40:21,800
+2, 1, 1.
+
+1126
+01:40:21,800 --> 01:40:23,800
+At this point, 2, 1, 1.
+
+1127
+01:40:23,800 --> 01:40:24,800
+What do we get?
+
+1128
+01:40:24,800 --> 01:40:29,800
+At this point, 2, 1, 1.
+
+1129
+01:40:28,724 --> 01:40:39,144
+So delta z over delta x at the point 211 is equal to y is 1 plus 2 times z is 1 times sine z square minus 1 is 0.
+
+1130
+01:40:39,224 --> 01:40:41,224
+So it's sine 0 times whatever this is.
+
+1131
+01:40:41,543 --> 01:40:42,764
+So this part is completely 0.
+
+1132
+01:40:43,543 --> 01:40:44,203
+Sine 0 is 0.
+
+1133
+01:40:44,764 --> 01:40:47,304
+So we get delta z over delta x211 is equal to 1.
+
+1134
+01:40:48,384 --> 01:40:48,644
+Okay.
+
+1135
+01:40:49,324 --> 01:40:51,684
+So the first derivative of z with respect to x is equal to 1.
+
+1136
+01:40:52,404 --> 01:40:55,444
+Now, look at this equation.
+
+1137
+01:40:55,444 --> 01:41:01,623
+To find the second derivative of z with respect to x, we differentiate both sides of this equation with respect to x.
+
+1138
+01:41:03,184 --> 01:41:07,944
+Differentiating both sides of this with respect to x, what do we get?
+
+1139
+01:41:08,944 --> 01:41:12,003
+Derivative of this with respect to x is delta square z over delta x square.
+
+1140
+01:41:12,503 --> 01:41:15,043
+Derivative of y is 0 plus.
+
+1141
+01:41:16,344 --> 01:41:18,304
+Now we need to use the product rule here.
+
+1142
+01:41:23,796 --> 01:41:26,956
+Derivative of 2z, which is 2,
+
+1143
+01:41:30,836 --> 01:41:38,876
+which is 2, sorry, derivative of 2z is 2 times the derivative of z times this expression itself,
+
+1144
+01:41:39,376 --> 01:41:48,775
+sine z square minus 1 times delta z or delta x, plus 2z itself here times the derivative of this part.
+
+1145
+01:41:49,235 --> 01:41:51,576
+To find the derivative of this part, we use product rule again.
+
+1146
+01:41:52,336 --> 01:41:55,836
+Derivative of sine z square minus 1, which is cosine z square minus 1,
+
+1147
+01:41:55,976 --> 01:42:00,376
+times the derivative of inside, which is 2z times the derivative of z.
+
+1148
+01:42:01,596 --> 01:42:09,115
+So this is, this is the derivative of sine z square minus 1 times delta z over delta x here,
+
+1149
+01:42:10,115 --> 01:42:15,996
+plus this itself, plus this itself, sine z square minus 1 itself,
+
+1150
+01:42:16,336 --> 01:42:19,396
+times the derivative of this, which is delta square z over delta x square.
+
+1151
+01:42:20,896 --> 01:42:25,615
+So now, we don't need to solve this for delta square z over delta x square.
+
+1152
+01:42:26,036 --> 01:42:28,336
+We need the value of this at the point 2, 1, 1.
+
+1153
+01:42:28,615 --> 01:42:30,356
+So at the point 2, 1, 1, what do we get?
+
+1154
+01:42:30,836 --> 01:42:36,376
+Delta square z over delta x square at the point 1, 1 is what?
+
+1155
+01:42:36,996 --> 01:42:40,695
+2 times this, which we found to be what?
+
+1156
+01:42:41,315 --> 01:42:45,556
+Delta z over delta x is found to be what?
+
+1157
+01:42:47,220 --> 01:43:10,480
+2 times 1, this is 1, times sine 0, times 1, this part is 0, plus 2 times z, z is 1, here, times cosine 0, times 2 times z is 1, delta z over delta x is 1, 2 times 1 times 1 times 1, this, plus sine 0 times this, again.
+
+1158
+01:43:10,480 --> 01:43:16,500
+So this is 0 again. So we get only this part, cosine 0 is 1, we get 2 here, 2 times 2 is 4.
+
+1159
+01:43:17,220 --> 01:43:21,260
+Get, delta z or delta z squared, at this point, is equal to 4.
+
+1160
+01:43:24,260 --> 01:43:26,760
+That's how we can find it.
+
+1161
+01:43:31,283 --> 01:43:39,344
+Okay, what is next? Directional derivatives. Let me see. I want to give a break.
+
+1162
+01:43:41,283 --> 01:43:48,423
+So, before I start directional derivatives, any questions? Any questions? So, let's continue.
+
+1163
+01:43:50,344 --> 01:43:58,483
+Let's continue at 11. Let me give a 10-minute break, okay? 10-minute break, we will continue at 11.
+
+1164
+01:55:48,404 --> 01:55:54,344
+Alright, let's continue from some problems on direction derivatives and gradients.
+
+1165
+01:55:56,144 --> 01:56:02,544
+Okay, first, yeah, the first question is just an immediate question.
+
+1166
+01:56:02,644 --> 01:56:12,704
+Find the directional derivative of this three variable function fxyz equals xy plus arctangent z at the point p110 in the direction of this vector.
+
+1167
+01:56:12,704 --> 01:56:26,424
+Remember from yesterday, the directional derivative is the dot product of the gradient of the function at that point with the unit vector in that direction.
+
+1168
+01:56:26,664 --> 01:56:30,384
+So first of all, this is not a unit vector. We need to find a unit vector in this direction.
+
+1169
+01:56:30,764 --> 01:56:36,144
+What is the length of this vector? It's square root of two squared plus two squared plus one squared, which is three.
+
+1170
+01:56:36,144 --> 01:56:44,644
+So when we divide this vector by its length, we get this vector, two over three i minus two over three j plus one over three k.
+
+1171
+01:56:45,044 --> 01:56:47,684
+So this is a unit vector in the direction of the vector v.
+
+1172
+01:56:48,704 --> 01:56:57,424
+What is next? Next step is to find the directional derivative of this function f with respect to the, sorry,
+
+1173
+01:56:57,424 --> 01:57:02,524
+The second step is to find the gradient of this function at this point.
+
+1174
+01:57:03,224 --> 01:57:07,624
+The gradient is find the gradient. We need to find its partial derivatives.
+
+1175
+01:57:09,184 --> 01:57:10,984
+With respect to x is y.
+
+1176
+01:57:12,164 --> 01:57:14,084
+If derivative with respect to y is x.
+
+1177
+01:57:14,864 --> 01:57:19,904
+Derivative with respect to z is derivative of arctangent, which is one over z square plus one.
+
+1178
+01:57:21,424 --> 01:57:22,624
+At this point,
+
+1179
+01:57:23,764 --> 01:57:24,764
+point 110.
+
+1180
+01:57:25,444 --> 01:57:26,624
+At the point 110,
+
+1181
+01:57:27,424 --> 01:57:29,784
+This value is one. This is one.
+
+1182
+01:57:30,364 --> 01:57:32,764
+This is one over zero squared plus one, which is also one.
+
+1183
+01:57:33,264 --> 01:57:37,444
+So the gradient vector is the vector whose components are one, one, and one.
+
+1184
+01:57:37,764 --> 01:57:38,404
+So which is this?
+
+1185
+01:57:38,984 --> 01:57:40,964
+That's the gradient vector, i plus v, a plus k.
+
+1186
+01:57:42,264 --> 01:57:43,524
+All components are one.
+
+1187
+01:57:44,464 --> 01:57:44,784
+So
+
+1188
+01:57:44,784 --> 01:57:49,104
+the formula says that the directional derivative of this function
+
+1189
+01:57:49,104 --> 01:57:51,364
+in this direction
+
+1190
+01:57:51,364 --> 01:57:55,784
+at this point is the dot product of this gradient vector, which is with this unit vector,
+
+1191
+01:57:55,784 --> 01:57:58,984
+which is the dot product, which is
+
+1192
+01:57:58,984 --> 01:58:07,864
+1 times 2 over 3 plus 1 times minus 2 over 3 plus 1 times 1 over 3, which is 1 over 3.
+
+1193
+01:58:08,324 --> 01:58:09,404
+That's the directional derivative.
+
+1194
+01:58:09,404 --> 01:58:12,484
+of this function at this point.
+
+1195
+01:58:12,484 --> 01:58:14,824
+Okay, what is next?
+
+1196
+01:58:14,824 --> 01:58:15,824
+is next?
+
+1197
+01:58:15,824 --> 01:58:20,164
+Let f x y equals x square plus x y plus y square.
+
+1198
+01:58:20,164 --> 01:58:23,944
+Is f increasing or decreasing at the point p minus 2 over 1?
+
+1199
+01:58:24,724 --> 01:58:26,844
+At this point, is f increasing or decreasing?
+
+1200
+01:58:27,504 --> 01:58:29,044
+In the direction of this vector.
+
+1201
+01:58:29,044 --> 01:58:29,384
+is f increasing or decreasing or decreasing or decreasing or decreasing or decreasing or decreasing or decreasing or decreasing or decreasing or decreasing or decreasing or decreasing or decreasing or decreasing or decreasing or decreasing or decreasing or decreasing or decreasing or decreasing or decreasing or decreasing or decreasing or decreasing or decreasing or decreasing or decreasing or decreasing or decreasing or decreasing or decreasing or decreasing or decreasing or decreasing or decreasing or decreasing or decreasing or decreasing or decreasing or decreasing or decreasing or decreasing or decreasing or decreasing or decreasing or decreasing or decreasing or decreasing or decreasing or decreasing or decreasing or decreasing or decreasing or decreasing or decreasing or decreasing or decreasing or decreasing or decreasing or decreasing or decreasing or decreasing or decreasing or decreasing or decreasing or decreasing or decreasing or decreasing or decreasing or decreasing or decreasing or decreasing or decreasing or decreasing or decreasing or decreasing or decreasing or decreasing or decreasing or decreasing or decreasing or decreasing or decreasing or decreasing or decreasing or decreasing or decreasing or decreasing or decreasing or decreasing or decreasing or decreasing or decreasing or decreasing or decreasing or decreasing or decreasing or decreasing or decreasing or decreasing or decreasing or decreasing or decreasing or decreasing or decreasing or decreasing or decreasing or decreasing or decreasing
+
+1202
+01:58:35,252 --> 01:58:38,932
+And the next question, in which direction does f has zero change at this point?
+
+1203
+01:58:39,952 --> 01:58:45,452
+First of all, let's determine whether f is increasing or decreasing at this point in the direction of this vector.
+
+1204
+01:58:49,252 --> 01:58:52,731
+To determine whether it's increasing or decreasing, we need to find this derivative.
+
+1205
+01:58:53,712 --> 01:58:57,832
+So, if the derivative in that direction is positive, the function is increasing.
+
+1206
+01:58:58,772 --> 01:59:02,512
+If the derivative in that direction is negative, the function is decreasing at that direction.
+
+1207
+01:59:02,512 --> 01:59:10,572
+So, again, as in the previous example, first of all, this is another unit vector.
+
+1208
+01:59:10,572 --> 01:59:12,512
+We need to find the unit vector in that direction.
+
+1209
+01:59:13,332 --> 01:59:16,192
+What is its length?
+
+1210
+01:59:16,492 --> 01:59:20,231
+It's square root of 1 plus 2, which is square root of 3.
+
+1211
+01:59:20,731 --> 01:59:25,832
+So, when we divide it by its length, we get 1 over square root of 3i plus root over root 3j.
+
+1212
+01:59:26,731 --> 01:59:29,192
+That's a unit vector in the direction of this vector v.
+
+1213
+01:59:29,672 --> 01:59:32,052
+Now, we need to find the gradient of this function.
+
+1214
+01:59:32,512 --> 01:59:36,192
+Its partial derivative with respect to x is 2x plus y.
+
+1215
+01:59:37,472 --> 01:59:37,652
+Here.
+
+1216
+01:59:38,952 --> 01:59:43,472
+And its partial derivative with respect to y is x plus 2y.
+
+1217
+01:59:44,492 --> 01:59:44,932
+Here.
+
+1218
+01:59:45,412 --> 01:59:46,132
+X plus 2y.
+
+1219
+01:59:46,872 --> 01:59:50,032
+At this point, we are looking at the point minus 2, 1.
+
+1220
+01:59:50,892 --> 01:59:54,932
+At the point minus 2, 1.
+
+1221
+01:59:55,012 --> 01:59:59,052
+The value of fx is minus 4 plus 1, which is minus 3.
+
+1222
+01:59:59,052 --> 02:00:02,272
+The value of fy is minus 2 plus 2, which is 0.
+
+1223
+02:00:02,272 --> 02:00:09,112
+So, the gradient vector is minus 3i plus 0j, which is this, minus 3i.
+
+1224
+02:00:09,112 --> 02:00:21,412
+So, the directional derivative of this function in this direction at its point is the dot product of this unit vector, this gradient vector.
+
+1225
+02:00:22,172 --> 02:00:23,032
+They are dot product.
+
+1226
+02:00:23,032 --> 02:00:25,432
+So, this is the vector minus 3, 0.
+
+1227
+02:00:25,952 --> 02:00:29,172
+This is the vector 1 over root 3 comma root 2 over root 3.
+
+1228
+02:00:29,272 --> 02:00:34,572
+But that product is minus 3 over root 3, which is minus root 3, which is a negative number.
+
+1229
+02:00:35,052 --> 02:00:35,731
+It's negative.
+
+1230
+02:00:36,012 --> 02:00:38,672
+Since the directional derivative is negative there, f is decreasing.
+
+1231
+02:00:38,672 --> 02:00:42,832
+It's decreasing at this point in the direction of me.
+
+1232
+02:00:42,832 --> 02:01:02,012
+So, the directional derivative is negative.
+
+1233
+02:00:46,260 --> 02:00:50,480
+Now, M does F has zero change at this point.
+
+1234
+02:00:51,060 --> 02:00:56,900
+We have seen yesterday that the direction of the gradient vector, it increases most rapidly.
+
+1235
+02:00:57,119 --> 02:01:01,159
+In the opposite direction of the gradient vector, it decreases most rapidly.
+
+1236
+02:01:01,360 --> 02:01:04,239
+And in the orthogonal directions, it has zero change.
+
+1237
+02:01:04,880 --> 02:01:08,020
+So, gradient vector is here at this point, minus 3i.
+
+1238
+02:01:08,780 --> 02:01:14,020
+Minus 3i is this vector, minus 3i in the negative x direction.
+
+1239
+02:01:14,020 --> 02:01:18,739
+So, these vectors, j and minus j, these two vectors are orthogonal.
+
+1240
+02:01:19,739 --> 02:01:20,539
+They have 90 degrees.
+
+1241
+02:01:21,720 --> 02:01:26,940
+So, F has zero change at this point in these two directions, j and minus j.
+
+1242
+02:01:27,420 --> 02:01:29,579
+In these two directions, it has zero change.
+
+1243
+02:01:31,000 --> 02:01:39,300
+Of course, note that a product of this with each of these two vectors is equal to zero.
+
+1244
+02:01:42,100 --> 02:01:43,520
+Okay, what is next?
+
+1245
+02:01:43,520 --> 02:01:44,380
+Next question.
+
+1246
+02:01:44,579 --> 02:01:50,320
+In which directions does the function, if xy equals e to the power y sine y square minus x,
+
+1247
+02:01:50,619 --> 02:01:52,840
+has zero change at the point pi zero?
+
+1248
+02:01:53,380 --> 02:01:56,480
+Again, we need to find its gradient vector.
+
+1249
+02:01:56,960 --> 02:02:01,180
+If we find this gradient vector, the orthogonal directions, the two orthogonal directions,
+
+1250
+02:02:01,579 --> 02:02:04,020
+are going to be the directions of zero change.
+
+1251
+02:02:04,020 --> 02:02:12,820
+So, to find this gradient vector, we need to find this partial derivative with respect to x and y.
+
+1252
+02:02:12,820 --> 02:02:13,720
+What is fx?
+
+1253
+02:02:14,720 --> 02:02:22,300
+Here, e to the power y is a constant with respect to x, times derivative of this is cosine y square minus x,
+
+1254
+02:02:22,400 --> 02:02:26,180
+times the derivative of the inner function with respect to x, which is minus 1.
+
+1255
+02:02:56,180 --> 02:02:57,280
+minus 1, which is equal to 1.
+
+1256
+02:02:57,940 --> 02:03:00,400
+So, that's the value of fx at this point pi comma zero.
+
+1257
+02:03:01,140 --> 02:03:02,119
+What about fy?
+
+1258
+02:03:02,500 --> 02:03:04,400
+What's the derivative of this with respect to y?
+
+1259
+02:03:04,400 --> 02:03:07,560
+Now, we need to use the product rule in this case.
+
+1260
+02:03:08,780 --> 02:03:12,860
+Derivative of e to the power y, this times sine y square minus x itself,
+
+1261
+02:03:13,260 --> 02:03:17,760
+plus e to the power y itself, times derivative of sine y square minus x,
+
+1262
+02:03:17,800 --> 02:03:22,619
+which is cosine y square minus x, times derivative of the inner function, which is 2y.
+
+1263
+02:03:22,619 --> 02:03:23,739
+We get this.
+
+1264
+02:03:24,739 --> 02:03:29,199
+And what is the value of this at point pi comma zero?
+
+1265
+02:03:30,060 --> 02:03:32,199
+What's the value of this at the point pi comma zero?
+
+1266
+02:03:33,840 --> 02:03:36,239
+d to the power zero times sine minus pi.
+
+1267
+02:03:36,320 --> 02:03:39,720
+Sine minus pi is zero, plus here y is zero.
+
+1268
+02:03:40,079 --> 02:03:40,800
+y is zero.
+
+1269
+02:03:41,000 --> 02:03:42,579
+So, the whole thing over here is zero.
+
+1270
+02:03:43,119 --> 02:03:46,579
+So, this is sine zero because of, this is zero because of sine zero,
+
+1271
+02:03:46,699 --> 02:03:48,119
+and this is zero because of y.
+
+1272
+02:03:48,460 --> 02:03:49,980
+It's zero plus zero, which is equal to zero.
+
+1273
+02:03:49,980 --> 02:03:54,220
+Therefore, the gradient vector has components of one comma zero.
+
+1274
+02:03:54,680 --> 02:03:55,560
+It's the vector i.
+
+1275
+02:03:56,420 --> 02:03:57,820
+i is the gradient vector.
+
+1276
+02:03:58,380 --> 02:04:02,780
+If i is the gradient vector, orthogonal directions are j and minus j.
+
+1277
+02:04:03,300 --> 02:04:04,500
+These are the orthogonal directions.
+
+1278
+02:04:04,500 --> 02:04:09,140
+Therefore, the function f has zero change at this point in the directions,
+
+1279
+02:04:09,300 --> 02:04:13,579
+which are orthogonal to its gradient vector, which are the directions j and minus j.
+
+1280
+02:04:16,560 --> 02:04:17,800
+Okay, let's continue.
+
+1281
+02:04:17,800 --> 02:04:23,420
+Let fxy equals xy.
+
+1282
+02:04:24,239 --> 02:04:29,560
+In which directions is the directional derivative of f at the point two comma zero is minus one?
+
+1283
+02:04:31,420 --> 02:04:36,159
+So, in which directions is the directional derivative equal to this value, minus one?
+
+1284
+02:04:36,159 --> 02:04:38,680
+Again, let's find this directional derivative.
+
+1285
+02:04:38,680 --> 02:04:39,680
+Let's find...
+
+1286
+02:04:39,680 --> 02:05:05,680
+Find...
+
+1287
+02:04:41,908 --> 02:04:57,648
+We need to find the gradient factor first. Derivative of f with respect to x is y. Derivative of f with respect to y is x. At this point, 2,0. At this point, fx is equal to y, which is 0. Fy is equal to x, which is 2.
+
+1288
+02:04:57,648 --> 02:05:07,828
+So, the components of the gradient factor are 0 and 2, 0,2, which is the vector 2j. 2j is the gradient factor.
+
+1289
+02:05:09,688 --> 02:05:16,488
+Now, we are trying to find the directions in which the directional derivative is equal to minus 1.
+
+1290
+02:05:16,868 --> 02:05:22,307
+Let u equals u and u to be a unit factor such that its directional derivative is minus 1.
+
+1291
+02:05:22,307 --> 02:05:31,008
+So, what does that mean? It means that dot product of this gradient factor with vector u must be equal to minus 1.
+
+1292
+02:05:31,828 --> 02:05:41,248
+What is the dot product? 0 times u1 plus 2 times u2, right? This must be equal to minus 1.
+
+1293
+02:05:41,568 --> 02:05:45,788
+What does that mean? This means that u2 must be minus 1 over 2.
+
+1294
+02:05:46,968 --> 02:05:51,828
+u2 must be minus 1 over 2, but at the same time, you use a unit factor.
+
+1295
+02:05:52,307 --> 02:05:52,988
+with a unit factor.
+
+1296
+02:05:53,688 --> 02:05:56,528
+So, its length is 1. u1 squared plus u2 squared is 1.
+
+1297
+02:05:56,768 --> 02:06:01,788
+Therefore, u1 squared plus u2 squared, which is 1 over 4, is 1.
+
+1298
+02:06:01,908 --> 02:06:03,268
+So, u1 squared is 3 over 4.
+
+1299
+02:06:03,608 --> 02:06:05,887
+So, u1 is minus or plus root 3 over 2.
+
+1300
+02:06:06,328 --> 02:06:07,968
+Therefore, we get two directions.
+
+1301
+02:06:08,628 --> 02:06:13,668
+Therefore, directional derivative of f at this point in the direction of u is minus 1.
+
+1302
+02:06:13,668 --> 02:06:15,328
+for these two unit vectors.
+
+1303
+02:06:16,428 --> 02:06:23,048
+u equals minus root 3 over 2 minus 1 over 2 or u equals root 3 over 2 minus 1 over 2.
+
+1304
+02:06:23,568 --> 02:06:25,208
+So, u2 is minus 1 over 2.
+
+1305
+02:06:25,648 --> 02:06:28,288
+u1 is either minus root 3 over 2 or root 3 over 2.
+
+1306
+02:06:28,847 --> 02:06:33,628
+These two directions are the directions at which the value of the directional derivative is equal to minus 1.
+
+1307
+02:06:33,628 --> 02:06:46,628
+So, u2 is minus 1 over 2.
+
+1308
+02:06:37,939 --> 02:06:39,319
+Okay, next.
+
+1309
+02:06:42,319 --> 02:06:51,099
+Suppose that the directional derivative of a function f, the point p122 is 1, in the direction v1 equals i plus 2j plus 2k.
+
+1310
+02:06:57,268 --> 02:07:02,927
+So the directional derivative of a function f at this point is 1 in this direction.
+
+1311
+02:07:04,007 --> 02:07:08,228
+And it is root 2 in this direction.
+
+1312
+02:07:09,408 --> 02:07:12,707
+Find the directional derivative of f at this point in this direction.
+
+1313
+02:07:13,528 --> 02:07:14,488
+In the direction of minus f.
+
+1314
+02:07:16,387 --> 02:07:16,728
+Okay.
+
+1315
+02:07:17,847 --> 02:07:19,148
+First of all, eva.
+
+1316
+02:07:20,068 --> 02:07:21,587
+This is another unit vector.
+
+1317
+02:07:22,068 --> 02:07:24,667
+Length is square to 1 plus 4 plus 4, which is 3.
+
+1318
+02:07:24,667 --> 02:07:28,467
+So the unit vector vector in that direction is divided by 3.
+
+1319
+02:07:28,568 --> 02:07:31,387
+We get 1 over 3i plus 2 over 3j plus 2 over 3k.
+
+1320
+02:07:31,688 --> 02:07:33,667
+That's a unit vector in the direction of v1.
+
+1321
+02:07:33,988 --> 02:07:34,707
+Let's call it u1.
+
+1322
+02:07:35,948 --> 02:07:42,427
+Now, what is the directional derivative of f at this point in this direction?
+
+1323
+02:07:42,948 --> 02:07:44,127
+It must be equal to 1.
+
+1324
+02:07:45,068 --> 02:07:45,507
+What is it?
+
+1325
+02:07:46,188 --> 02:07:48,707
+It's not product of the gradient vector.
+
+1326
+02:07:49,828 --> 02:07:53,288
+Is fx at 1, 2, 2, fy at 1, 2, 2, fc at 1, 2, 2.
+
+1327
+02:07:53,288 --> 02:07:55,268
+These are the components of the gradient vector.
+
+1328
+02:07:56,068 --> 02:07:59,207
+Dot is dot product with this unit vector.
+
+1329
+02:08:00,127 --> 02:08:01,608
+Which this must be equal to 1.
+
+1330
+02:08:02,207 --> 02:08:03,427
+This must be equal to 1.
+
+1331
+02:08:03,528 --> 02:08:05,368
+So this equation gives us this.
+
+1332
+02:08:05,728 --> 02:08:06,648
+Plus their dot product.
+
+1333
+02:08:07,268 --> 02:08:11,828
+1 over 3fx plus 2 over 3fy plus 2 over 3fz is equal to 1.
+
+1334
+02:08:12,148 --> 02:08:14,427
+So if you multiply both sides by 3, get this.
+
+1335
+02:08:15,307 --> 02:08:17,568
+Fx plus 2fy plus 2fz is equal to 3.
+
+1336
+02:08:18,028 --> 02:08:18,807
+We get one equation.
+
+1337
+02:08:18,807 --> 02:08:20,967
+Okay.
+
+1338
+02:08:20,967 --> 02:08:21,868
+Let's call this star.
+
+1339
+02:08:22,747 --> 02:08:24,868
+Now, next, what is the next information?
+
+1340
+02:08:25,887 --> 02:08:27,908
+Directional derivative of the function f.
+
+1341
+02:08:28,908 --> 02:08:32,368
+This direction at this point is equal to square root of 2.
+
+1342
+02:08:33,228 --> 02:08:34,127
+What is this direction?
+
+1343
+02:08:34,307 --> 02:08:35,007
+j plus k.
+
+1344
+02:08:35,868 --> 02:08:36,927
+It is j plus k.
+
+1345
+02:08:37,087 --> 02:08:38,328
+Its length is root 2.
+
+1346
+02:08:38,908 --> 02:08:44,047
+But divided by its length, we get 1 over root 2 j plus 1 over root 2 k.
+
+1347
+02:08:44,047 --> 02:08:46,247
+This j plus k.
+
+1348
+02:08:46,448 --> 02:08:48,127
+Divided by root 2, we get this.
+
+1349
+02:08:48,608 --> 02:08:50,667
+So u2 is a unit vector in this direction.
+
+1350
+02:08:51,368 --> 02:08:55,007
+But the product of the gradient vector with this unit vector.
+
+1351
+02:08:55,368 --> 02:08:57,908
+This unit vector is 0, 1 over root 1 over root 2.
+
+1352
+02:08:58,488 --> 02:09:00,467
+This dot product must be equal to root 2.
+
+1353
+02:09:01,207 --> 02:09:02,347
+That's what is given in the question.
+
+1354
+02:09:04,688 --> 02:09:05,828
+So what is this?
+
+1355
+02:09:06,387 --> 02:09:07,768
+What does this equation give us?
+
+1356
+02:09:07,768 --> 02:09:13,707
+0 plus 1 over root 2 fy plus 1 over root 2 fz is equal to root 2.
+
+1357
+02:09:14,068 --> 02:09:15,507
+Multiply both sides by root 2.
+
+1358
+02:09:15,587 --> 02:09:17,528
+We get fy plus fz is equal to 2.
+
+1359
+02:09:18,627 --> 02:09:20,068
+fy plus fz is equal to 2.
+
+1360
+02:09:20,948 --> 02:09:25,207
+Now, if we put this, we get two equations, right?
+
+1361
+02:09:25,368 --> 02:09:27,667
+Fx plus 2 fy plus 2 fz is equal to 3.
+
+1362
+02:09:28,368 --> 02:09:30,207
+fy plus fz is equal to 2.
+
+1363
+02:09:30,207 --> 02:09:34,188
+We put this into this equation.
+
+1364
+02:09:34,768 --> 02:09:35,467
+What do we get?
+
+1365
+02:09:36,127 --> 02:09:39,948
+Get fx plus 2 times the sum of these two.
+
+1366
+02:09:40,047 --> 02:09:40,627
+2 times 2.
+
+1367
+02:09:41,207 --> 02:09:45,108
+fx plus 4 is equal to 3.
+
+1368
+02:09:45,627 --> 02:09:47,127
+So we get fx is equal to minus 1.
+
+1369
+02:09:48,087 --> 02:09:52,728
+fx is minus 1.
+
+1370
+02:09:55,207 --> 02:09:56,587
+So we found this.
+
+1371
+02:09:56,648 --> 02:09:57,427
+fx is minus 1.
+
+1372
+02:09:57,927 --> 02:09:58,768
+What is the question?
+
+1373
+02:10:00,207 --> 02:10:07,807
+This is the directional derivative of f at the point p122 in this direction, in the direction minus i.
+
+1374
+02:10:08,387 --> 02:10:11,847
+In the direction minus i, minus i is itself a unit vector.
+
+1375
+02:10:12,427 --> 02:10:23,707
+The direction of the derivative in this minus i is the product of the gradient vector with the vector minus i, which is minus 1, 0, 0, which is just this, which is minus fx.
+
+1376
+02:10:24,228 --> 02:10:27,228
+We found fx to be minus 1, so minus fx is equal to y.
+
+1377
+02:10:27,228 --> 02:10:34,507
+So we find the direction derivative of f at this point in the direction minus i equal to 1, by using these two.
+
+1378
+02:10:34,507 --> 02:10:53,507
+So we find the direction of the gradient vector.
+
+1379
+02:10:49,811 --> 02:10:56,131
+Okay, let fxy equals xy, where x and y are both positive.
+
+1380
+02:10:57,351 --> 02:11:03,992
+Parametrize the level curve, parametrize this level curve, fxy equals 1, according to the parameter t.
+
+1381
+02:11:05,652 --> 02:11:09,291
+Parametrize it. It's up to you. After parametrize it, it is up to you.
+
+1382
+02:11:09,291 --> 02:11:20,091
+Using this parametrize then, show that the tangent vector and the gradient vector of the level curve at the point corresponding to t equals 2 are perpendicular.
+
+1383
+02:11:21,091 --> 02:11:24,751
+Okay, how can we parametrize this? What is this level curve?
+
+1384
+02:11:24,971 --> 02:11:27,372
+If xy equals 1, this curve, xy equals 1.
+
+1385
+02:11:27,671 --> 02:11:29,731
+xy equals 1, where x and y are both positive.
+
+1386
+02:11:31,072 --> 02:11:33,032
+This curve, basically.
+
+1387
+02:11:33,631 --> 02:11:34,891
+x and y are both positive.
+
+1388
+02:11:34,891 --> 02:11:39,271
+x times y is equal to 1, this curve, in the first curve.
+
+1389
+02:11:41,971 --> 02:11:46,891
+Of course, there are infinitely many different ways of parametrizing it with respect to the parameter t.
+
+1390
+02:11:46,992 --> 02:11:48,751
+But the one I choose is this.
+
+1391
+02:11:49,291 --> 02:11:50,791
+Call x equals t.
+
+1392
+02:11:51,332 --> 02:11:53,671
+If we call x equals t, then y is equal to 1 over t.
+
+1393
+02:11:54,171 --> 02:11:55,131
+So this is a parametrize.
+
+1394
+02:11:55,391 --> 02:11:57,332
+x equals t, y equals 1 over t.
+
+1395
+02:11:58,612 --> 02:11:59,891
+We get this parametrize.
+
+1396
+02:12:00,211 --> 02:12:02,192
+Of course, t must be positive, because x is positive.
+
+1397
+02:12:02,532 --> 02:12:03,891
+X and y are positive, so t is positive.
+
+1398
+02:12:03,891 --> 02:12:04,891
+x equals t, y equals t, y equals t.
+
+1399
+02:12:04,891 --> 02:12:05,271
+We get this parametrize.
+
+1400
+02:12:05,271 --> 02:12:08,891
+x equals t, y equals t.
+
+1401
+02:12:08,891 --> 02:12:10,231
+Now this level curve.
+
+1402
+02:12:14,355 --> 02:12:19,456
+So, this level, now, under this parametrization, we get this position vector.
+
+1403
+02:12:20,235 --> 02:12:23,055
+So, x is t, y is 1 over t.
+
+1404
+02:12:23,835 --> 02:12:27,855
+The position vector, position vector of this level curve,
+
+1405
+02:12:30,496 --> 02:12:33,876
+this level curve, position vector of that level curve is this.
+
+1406
+02:12:35,655 --> 02:12:37,675
+T equals ti plus 1 over tj.
+
+1407
+02:12:38,576 --> 02:12:40,916
+Because x is equal to t, y is equal to 1 over t.
+
+1408
+02:12:41,355 --> 02:12:42,675
+Now, what is this velocity vector?
+
+1409
+02:12:42,675 --> 02:12:45,015
+It's derivative. Derivative of t is 1.
+
+1410
+02:12:45,315 --> 02:12:47,275
+Derivative of 1 over t is minus 1 over t squared.
+
+1411
+02:12:47,795 --> 02:12:51,555
+This is the velocity vector, which is the tangent to that curve.
+
+1412
+02:12:52,456 --> 02:12:53,876
+Velocity vector is tangent to that curve.
+
+1413
+02:12:55,496 --> 02:12:58,876
+So, at the point t equals 2, what is the question?
+
+1414
+02:12:59,655 --> 02:13:04,155
+Question is, show that tangent vector, which is the velocity vector,
+
+1415
+02:13:04,635 --> 02:13:11,055
+the gradient vector of the level curve at this point corresponding to t equals 2 are perpendicular.
+
+1416
+02:13:12,675 --> 02:13:20,595
+At t equals 2, t equals 2, what is the velocity vector?
+
+1417
+02:13:21,315 --> 02:13:22,456
+The value of the velocity vector.
+
+1418
+02:13:22,595 --> 02:13:24,315
+This is i and t is 2.
+
+1419
+02:13:24,376 --> 02:13:25,975
+We get minus 1 over 4j.
+
+1420
+02:13:26,076 --> 02:13:28,095
+So, this is the tangent vector, basically.
+
+1421
+02:13:28,095 --> 02:13:31,335
+Okay, how about the gradient vector?
+
+1422
+02:13:32,335 --> 02:13:33,175
+Gradient vector.
+
+1423
+02:13:36,851 --> 02:13:38,652
+This is the function fxy equals xy.
+
+1424
+02:13:43,091 --> 02:13:45,452
+Partial derivative with respect to x is y.
+
+1425
+02:13:45,992 --> 02:13:48,011
+Partial derivative with respect to y is x.
+
+1426
+02:13:51,431 --> 02:13:53,952
+Partial derivative with respect to y is y.
+
+1427
+02:13:54,711 --> 02:13:57,231
+Which is whose value at t equals 2.
+
+1428
+02:13:57,452 --> 02:13:58,112
+So y is what?
+
+1429
+02:13:58,211 --> 02:13:59,091
+Y is 1 over t.
+
+1430
+02:13:59,452 --> 02:14:00,572
+It is 1 over t.
+
+1431
+02:14:01,152 --> 02:14:03,091
+And this value at t equals 2 is 1 over 2.
+
+1432
+02:14:03,872 --> 02:14:04,431
+What about x?
+
+1433
+02:14:04,471 --> 02:14:05,412
+X is equal to t.
+
+1434
+02:14:05,412 --> 02:14:07,372
+And this value at t equals 2 is 2.
+
+1435
+02:14:08,051 --> 02:14:11,711
+So the components of the gradient vector are 1 over 2m2.
+
+1436
+02:14:11,831 --> 02:14:12,992
+So this is the gradient vector.
+
+1437
+02:14:13,211 --> 02:14:14,452
+1 over 2i plus 2j.
+
+1438
+02:14:14,952 --> 02:14:18,492
+So the question is to ask, show that these two are perpendicular.
+
+1439
+02:14:19,391 --> 02:14:20,731
+Show that two vectors are perpendicular.
+
+1440
+02:14:21,072 --> 02:14:22,091
+We look at their dot product.
+
+1441
+02:14:22,452 --> 02:14:23,311
+What is their dot product?
+
+1442
+02:14:24,391 --> 02:14:28,931
+Their dot product is 1 times 1 over 2 minus 1 over 4 times 2.
+
+1443
+02:14:29,051 --> 02:14:31,112
+Which is 1 over 2 minus 1 over 2, which is 0.
+
+1444
+02:14:31,112 --> 02:14:34,271
+Therefore, these two vectors are perpendicular.
+
+1445
+02:14:44,243 --> 02:14:48,863
+Okay, we finished 28 questions. Let me see.
+
+1446
+02:14:56,659 --> 02:14:57,180
+51.
+
+1447
+02:14:59,220 --> 02:15:01,340
+23 questions are left.
+
+1448
+02:15:02,119 --> 02:15:02,539
+23.
+
+1449
+02:15:03,739 --> 02:15:05,920
+I think that's enough for today.
+
+1450
+02:15:07,500 --> 02:15:08,639
+We can stop here.
+
+1451
+02:15:09,859 --> 02:15:12,739
+And we can finish these problems next Thursday.
+
+1452
+02:15:14,619 --> 02:15:14,939
+Okay.
+
+1453
+02:15:17,019 --> 02:15:18,559
+Let's stop here.
+
+1454
+02:15:19,220 --> 02:15:21,220
+Tangent planes and differentials.
+
+1455
+02:15:22,800 --> 02:15:23,960
+So what is left?
+
+1456
+02:15:24,159 --> 02:15:26,639
+Tangent planes, normal lines, linearization.
+
+1457
+02:15:26,659 --> 02:15:30,340
+Differentials and then local extreme points.
+
+1458
+02:15:31,059 --> 02:15:33,739
+We are left with those problems.
+
+1459
+02:15:40,275 --> 02:15:40,695
+Evet.
+
+1460
+02:15:42,336 --> 02:15:44,255
+Let's stop here today.
+
+1461
+02:15:45,215 --> 02:15:52,195
+And yes, we will finish these problems next Thursday, and then next Friday we can start Chapter 50.
+
+1462
+02:15:54,695 --> 02:15:57,615
+Okay, any questions from whatever we covered today?
+
+1463
+02:16:00,576 --> 02:16:07,095
+By the way, this morning I received your grades, midterm grades.
+
+1464
+02:16:07,095 --> 02:16:11,055
+So, I'll put them on USCIS just after class.
+
+1465
+02:16:12,975 --> 02:16:20,215
+So, within 10 or 20 minutes, within 10 or 20 minutes, you can see your midterm exam grades from USCIS.
+
+1466
+02:16:20,775 --> 02:16:21,015
+Okay?
+
+1467
+02:16:22,635 --> 02:16:23,515
+Any questions?
+
+1468
+02:16:26,815 --> 02:16:28,076
+Okay, I thank you all.
+
+1469
+02:16:28,515 --> 02:16:30,555
+So, I will see you next Thursday then.
+
+1470
+02:16:31,935 --> 02:16:32,935
+Have a nice day.
+
+1471
+02:16:33,255 --> 02:16:33,515
+Bye.

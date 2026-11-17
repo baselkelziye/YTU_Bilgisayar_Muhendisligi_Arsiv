@@ -1,0 +1,3235 @@
+1
+00:06:45,492 --> 00:06:45,951
+Hi everybody.
+
+2
+00:06:50,803 --> 00:07:05,743
+So, the last time we have started chapter 14. Here we have covered 14.1 and 14.2, which are included on the exam, which is two weeks later.
+
+3
+00:07:09,396 --> 00:07:15,156
+So today we are going to solve some problems from sections 14.1 and 14.2.
+
+4
+00:07:17,235 --> 00:07:19,536
+Are there any questions before I start?
+
+5
+00:07:22,355 --> 00:07:24,855
+Okay, the three participants, that's fine.
+
+6
+00:07:25,656 --> 00:07:27,536
+Any questions before I start?
+
+7
+00:07:40,564 --> 00:07:52,784
+Okay, no questions. Let me start then. Okay, let's start with this first question. Oh, I forgot to put this file on my website. Let me do it first.
+
+8
+00:08:14,932 --> 00:08:17,132
+Problems from chapter 14.
+
+9
+00:09:42,035 --> 00:09:44,835
+Okay. So now it's available there.
+
+10
+00:09:54,868 --> 00:09:57,868
+Bu soru soru.
+
+11
+00:09:57,868 --> 00:09:58,868
+Evet.
+
+12
+00:09:58,868 --> 00:10:00,868
+Bu soru soru.
+
+13
+00:10:09,139 --> 00:10:10,419
+Okay, the first question.
+
+14
+00:10:11,840 --> 00:10:14,100
+Determine and graph the domain of the function.
+
+15
+00:10:16,720 --> 00:10:20,879
+fxy equals rcos y'er x squared plus ln 1 minus x squared.
+
+16
+00:10:22,279 --> 00:10:26,240
+So, to find the domain of this function,
+
+17
+00:10:31,700 --> 00:10:32,900
+Laptop battery is low.
+
+18
+00:10:35,920 --> 00:10:36,879
+Yes, I know.
+
+19
+00:10:37,560 --> 00:10:39,440
+How many questions you will ask?
+
+20
+00:10:40,280 --> 00:10:41,120
+I don't know.
+
+21
+00:10:41,259 --> 00:10:42,520
+Either 20 or 25.
+
+22
+00:10:49,812 --> 00:10:56,052
+20 or 25 questions that will be on the exam. Let me change my position. Wait a second.
+
+23
+00:11:17,652 --> 00:11:18,092
+Tamam.
+
+24
+00:11:21,620 --> 00:11:26,139
+Okay, any other question? Any other question before I start?
+
+25
+00:11:32,532 --> 00:11:42,292
+Bu sorunlar, 14.1 ve 14.2'ye bahsede.
+
+26
+00:11:42,852 --> 00:11:53,892
+Bu sorunlar, bu sorunlar, 14.3'ye bahsede.
+
+27
+00:11:58,131 --> 00:12:06,511
+So, chapters 10, 11, 12, 13, and sections 14.1 and 14.2 are included on the exam.
+
+28
+00:12:07,271 --> 00:12:07,531
+Okay?
+
+29
+00:12:10,531 --> 00:12:11,431
+Anything else?
+
+30
+00:12:19,155 --> 00:12:22,815
+All right. So, determine and graph the domain of this function.
+
+31
+00:12:24,835 --> 00:12:31,575
+So, this is a two-variable function. So, its domain is going to be some subset of the xy-plane.
+
+32
+00:12:31,575 --> 00:12:33,015
+So,
+
+33
+00:12:39,028 --> 00:12:45,327
+So to find the domain of this function, we need to know the domains of the R-cosine function, L-m function, the squared function, and so on.
+
+34
+00:12:46,128 --> 00:12:48,908
+So first of all, what do we know about the domain of this function?
+
+35
+00:12:49,028 --> 00:12:50,148
+So R-cosine function.
+
+36
+00:12:50,447 --> 00:12:52,348
+What do we know about the R-cosine function?
+
+37
+00:12:52,348 --> 00:13:02,028
+We know that the domain of the R-cosine function is the set of all real numbers between minus 1 and 1.
+
+38
+00:13:02,028 --> 00:13:10,768
+So for the R-cosine function to be defined, this expression over here, y over x squared must be between minus 1 and 1.
+
+39
+00:13:10,868 --> 00:13:12,028
+That's the first condition we have.
+
+40
+00:13:12,687 --> 00:13:14,368
+This must be between minus 1 and 1.
+
+41
+00:13:14,868 --> 00:13:16,468
+That's the domain of the R-cosine function.
+
+42
+00:13:16,728 --> 00:13:20,587
+So from this, what do we get if we multiply this by x squared?
+
+43
+00:13:21,947 --> 00:13:30,728
+So, of course, knowing that x squared is different than 0, that's the second condition, actually.
+
+44
+00:13:30,728 --> 00:13:34,087
+This denominator over here cannot be 0.
+
+45
+00:13:34,508 --> 00:13:37,868
+So x squared must be different than 0, which means x is different than 0.
+
+46
+00:13:38,108 --> 00:13:39,208
+That's the second condition.
+
+47
+00:13:39,728 --> 00:13:43,447
+And once x is different than 0, I can multiply this inequality by x squared.
+
+48
+00:13:43,628 --> 00:13:46,827
+I get minus x squared is less than or equal to y, less than or equal to x squared.
+
+49
+00:13:46,947 --> 00:13:49,848
+So y is going to be between minus x squared and x squared.
+
+50
+00:13:50,768 --> 00:13:52,248
+x is going to be different than 0.
+
+51
+00:13:52,768 --> 00:13:53,388
+What else?
+
+52
+00:13:53,768 --> 00:13:54,728
+Look at the L-m function.
+
+53
+00:13:54,947 --> 00:13:55,608
+What do we know?
+
+54
+00:13:56,108 --> 00:13:59,648
+We know the logarithmic function is defined on positive real numbers.
+
+55
+00:13:59,648 --> 00:14:02,528
+So this 1 minus x squared must be positive.
+
+56
+00:14:04,048 --> 00:14:05,008
+The third condition.
+
+57
+00:14:05,528 --> 00:14:07,128
+1 minus x squared must be positive.
+
+58
+00:14:07,368 --> 00:14:08,168
+What does that mean?
+
+59
+00:14:08,368 --> 00:14:10,228
+It means that x squared is less than 1.
+
+60
+00:14:10,868 --> 00:14:15,208
+x squared is less than 1 means x is going to be, x must be between minus 1 and 1.
+
+61
+00:14:17,067 --> 00:14:19,687
+So these are the three conditions.
+
+62
+00:14:20,348 --> 00:14:23,148
+Y must be between minus x squared and x squared.
+
+63
+00:14:23,148 --> 00:14:26,968
+x must be between minus 1 and 1, but x cannot be 0.
+
+64
+00:14:28,168 --> 00:14:31,488
+So this is the graph of the domain.
+
+65
+00:14:32,748 --> 00:14:34,827
+So here, if you graph...
+
+66
+00:14:36,427 --> 00:14:38,028
+Let me make a small little bit.
+
+67
+00:14:38,028 --> 00:14:41,028
+If we graph this, y equals x squared.
+
+68
+00:14:41,268 --> 00:14:46,927
+This is the graph of y equals x squared.
+
+69
+00:14:48,028 --> 00:14:50,268
+And here is the graph of y equals minus x squared.
+
+70
+00:14:50,268 --> 00:14:56,307
+So this inequality here tells us that y is going to be between these two.
+
+71
+00:14:57,288 --> 00:15:00,208
+y is going to be between x squared and minus x squared.
+
+72
+00:15:00,888 --> 00:15:04,327
+And also, x is going to be between minus 1 and 1.
+
+73
+00:15:04,548 --> 00:15:06,128
+Here is x equals minus 1.
+
+74
+00:15:06,368 --> 00:15:07,348
+Here is x equals 1.
+
+75
+00:15:07,347 --> 00:15:09,528
+So x must be between these two.
+
+76
+00:15:10,708 --> 00:15:12,248
+And also, x cannot be 0.
+
+77
+00:15:13,168 --> 00:15:15,347
+So note that...
+
+78
+00:15:16,187 --> 00:15:19,807
+Note that this part is not included.
+
+79
+00:15:20,028 --> 00:15:20,888
+x equals 1.
+
+80
+00:15:21,268 --> 00:15:22,947
+x equals 1 is not included.
+
+81
+00:15:23,827 --> 00:15:25,827
+x equals minus 1 is not included.
+
+82
+00:15:27,528 --> 00:15:28,947
+The inner part is included.
+
+83
+00:15:29,087 --> 00:15:30,548
+Also, x equals 0 is not included.
+
+84
+00:15:31,288 --> 00:15:33,988
+And this part, y equals x squared.
+
+85
+00:15:34,208 --> 00:15:36,048
+This part, y equals x squared.
+
+86
+00:15:36,048 --> 00:15:37,587
+on this curve.
+
+87
+00:15:37,888 --> 00:15:40,028
+And y equals minus x squared on this curve.
+
+88
+00:15:40,368 --> 00:15:41,567
+These parts are included.
+
+89
+00:15:42,067 --> 00:15:43,448
+Because these are less than or equal to.
+
+90
+00:15:44,228 --> 00:15:45,348
+Here, these are less than.
+
+91
+00:15:46,307 --> 00:15:47,888
+So these sides are not included.
+
+92
+00:15:48,368 --> 00:15:49,768
+But these are less than or equal to.
+
+93
+00:15:49,807 --> 00:15:52,307
+So these parts are included on the graph.
+
+94
+00:15:52,788 --> 00:15:53,728
+The domain of this function.
+
+95
+00:15:56,148 --> 00:15:57,388
+Okay, what is next?
+
+96
+00:15:59,608 --> 00:16:00,488
+Another question.
+
+97
+00:16:00,748 --> 00:16:01,868
+Termine and graph.
+
+98
+00:16:02,448 --> 00:16:03,488
+Domain of the function.
+
+99
+00:16:04,228 --> 00:16:05,288
+x, y equals.
+
+100
+00:16:06,048 --> 00:16:07,648
+Okay, root of x minus y squared
+
+101
+00:16:07,648 --> 00:16:09,448
+divided by ln x minus 2.
+
+102
+00:16:10,228 --> 00:16:11,348
+So what do we know?
+
+103
+00:16:11,728 --> 00:16:13,067
+Now, first of all, look at the numerator.
+
+104
+00:16:14,148 --> 00:16:15,168
+Look at the square root function.
+
+105
+00:16:15,268 --> 00:16:16,468
+We know that the square root function
+
+106
+00:16:16,468 --> 00:16:18,587
+is defined on non-negative real numbers.
+
+107
+00:16:19,128 --> 00:16:21,268
+So x minus y squared
+
+108
+00:16:21,268 --> 00:16:22,807
+must be bigger than or equal to 0.
+
+109
+00:16:22,908 --> 00:16:23,908
+That's our first condition.
+
+110
+00:16:24,388 --> 00:16:26,448
+But x must be bigger than or equal to y squared.
+
+111
+00:16:27,728 --> 00:16:29,668
+The first, the square root.
+
+112
+00:16:29,668 --> 00:16:34,408
+Second, logarithmic function
+
+113
+00:16:34,408 --> 00:16:36,548
+is defined for positive numbers only.
+
+114
+00:16:36,648 --> 00:16:38,548
+So x minus 2 must be bigger than 0.
+
+115
+00:16:38,548 --> 00:16:58,928
+So x minus 1.
+
+116
+00:16:40,019 --> 00:16:41,039
+This must be positive.
+
+117
+00:16:43,139 --> 00:16:44,919
+X minus 2 is bigger than 0,
+
+118
+00:16:45,100 --> 00:16:47,220
+so which means that X must be bigger than 2.
+
+119
+00:16:47,319 --> 00:16:48,319
+That's the second condition.
+
+120
+00:16:49,620 --> 00:16:52,620
+Third condition, this denominator cannot be 0.
+
+121
+00:16:53,679 --> 00:16:54,659
+Get this quotient.
+
+122
+00:16:55,419 --> 00:16:56,779
+Denominator cannot be 0.
+
+123
+00:16:57,639 --> 00:16:59,480
+So denominator cannot be 0 means,
+
+124
+00:16:59,699 --> 00:17:00,879
+when is this equal to 0?
+
+125
+00:17:01,360 --> 00:17:02,759
+Ln1 is 0, right?
+
+126
+00:17:03,179 --> 00:17:04,940
+So X minus 2 cannot be 1,
+
+127
+00:17:05,579 --> 00:17:07,420
+which means that X cannot be 3.
+
+128
+00:17:08,059 --> 00:17:09,299
+Because if X is 3,
+
+129
+00:17:09,299 --> 00:17:11,579
+this is going to be Ln1, which is 0,
+
+130
+00:17:11,879 --> 00:17:12,619
+which is not allowed.
+
+131
+00:17:13,279 --> 00:17:14,619
+So these are the three conditions.
+
+132
+00:17:14,779 --> 00:17:16,440
+X must be bigger than or equal to y squared.
+
+133
+00:17:16,900 --> 00:17:18,200
+X must be bigger than 2.
+
+134
+00:17:18,579 --> 00:17:20,700
+And X must be different than 3.
+
+135
+00:17:21,539 --> 00:17:22,519
+But when we graph it,
+
+136
+00:17:24,160 --> 00:17:25,079
+here's the graph.
+
+137
+00:17:26,759 --> 00:17:29,420
+Here's the graph of X equals y squared.
+
+138
+00:17:30,200 --> 00:17:31,639
+Graph of X equals y squared.
+
+139
+00:17:31,639 --> 00:17:33,759
+And we know that X is bigger than or equal to y squared.
+
+140
+00:17:34,079 --> 00:17:35,440
+So it's going to be,
+
+141
+00:17:36,139 --> 00:17:37,779
+domain of the function is going to be
+
+142
+00:17:37,779 --> 00:17:38,859
+to the right of this.
+
+143
+00:17:39,299 --> 00:17:39,839
+curve.
+
+144
+00:17:40,079 --> 00:17:41,160
+To the right of this curve.
+
+145
+00:17:41,980 --> 00:17:43,779
+Also, X is going to be bigger than 2.
+
+146
+00:17:44,359 --> 00:17:45,359
+Here's X equals 2.
+
+147
+00:17:45,579 --> 00:17:46,619
+The line X equals 2.
+
+148
+00:17:47,319 --> 00:17:48,960
+And here's the line X equals 3.
+
+149
+00:17:49,420 --> 00:17:51,099
+So X is going to be bigger than 2,
+
+150
+00:17:51,500 --> 00:17:52,839
+but it cannot be equal to 3.
+
+151
+00:17:52,839 --> 00:17:56,380
+So it's to the right of this line X equals 2,
+
+152
+00:17:56,460 --> 00:17:57,339
+but it's not 3.
+
+153
+00:17:57,759 --> 00:18:00,539
+This part, X equals 3, is excluded.
+
+154
+00:18:01,119 --> 00:18:02,099
+So everything else,
+
+155
+00:18:03,420 --> 00:18:04,099
+so anything,
+
+156
+00:18:04,700 --> 00:18:06,599
+anything to the right of this curve
+
+157
+00:18:06,599 --> 00:18:09,539
+between 2 and 3 and above 3
+
+158
+00:18:09,539 --> 00:18:11,180
+are in the domain of this function.
+
+159
+00:18:11,180 --> 00:18:15,720
+So this is the graph of the domain of this function.
+
+160
+00:18:20,051 --> 00:18:21,411
+Tamam, next question.
+
+161
+00:18:22,551 --> 00:18:28,671
+Termine and graph the domain of the function z equals ln y squared x minus 1 plus y squared minus x.
+
+162
+00:18:29,331 --> 00:18:31,311
+But this is just a logaritmic function.
+
+163
+00:18:31,731 --> 00:18:35,471
+You know that the logaritmic function is defined for positive numbers only, positive numbers.
+
+164
+00:18:36,071 --> 00:18:40,871
+The only condition we have is that this expression over here must be positive.
+
+165
+00:18:41,451 --> 00:18:43,051
+This expression must be bigger than 0.
+
+166
+00:18:43,511 --> 00:18:45,271
+Now, we have to simplify it.
+
+167
+00:18:45,271 --> 00:18:57,192
+Okay, if we factor these two, factor y squared out, we get y squared times x plus 1.
+
+168
+00:18:58,311 --> 00:19:03,971
+Then minus these two, minus another x plus 1.
+
+169
+00:19:05,351 --> 00:19:07,251
+That's how we factor this expression.
+
+170
+00:19:07,471 --> 00:19:14,451
+So now when we factor x plus 1, we get y squared minus 1 times x plus 1.
+
+171
+00:19:15,271 --> 00:19:19,371
+So this is this expression factor.
+
+172
+00:19:20,031 --> 00:19:24,251
+It's y squared x minus 1 plus y squared minus x.
+
+173
+00:19:24,891 --> 00:19:26,672
+So that's going to be bigger than 0.
+
+174
+00:19:27,391 --> 00:19:33,411
+The product of two numbers, product of two numbers is positive in two ways.
+
+175
+00:19:33,971 --> 00:19:35,251
+Either both are positive.
+
+176
+00:19:35,251 --> 00:19:40,811
+Either these y minus y squared minus 1 must be positive and x plus 1 must be positive.
+
+177
+00:19:41,291 --> 00:19:43,051
+Or they are both negative.
+
+178
+00:19:43,591 --> 00:19:46,251
+If they are both negative, their product is going to be positive again.
+
+179
+00:19:46,471 --> 00:19:47,451
+So there are two cases.
+
+180
+00:19:49,151 --> 00:19:49,991
+There are two cases.
+
+181
+00:19:50,091 --> 00:19:52,571
+Either they are both positive or they are both negative.
+
+182
+00:19:53,071 --> 00:19:56,151
+Now, in the first case, they are both positive.
+
+183
+00:19:56,151 --> 00:19:56,932
+What do we get?
+
+184
+00:19:57,811 --> 00:19:59,051
+Y squared minus 1 is positive.
+
+185
+00:19:59,211 --> 00:20:00,672
+Means y squared is bigger than 1.
+
+186
+00:20:02,371 --> 00:20:05,971
+Y squared is bigger than 1 means, and x plus 1 is bigger than 0.
+
+187
+00:20:06,051 --> 00:20:07,391
+Means x is bigger than minus 1.
+
+188
+00:20:07,911 --> 00:20:13,571
+And y squared is bigger than 1 means, y is either bigger than 1 or y is less than minus 1.
+
+189
+00:20:13,571 --> 00:20:17,551
+So this part, so this case, is as what?
+
+190
+00:20:18,431 --> 00:20:20,051
+X is bigger than minus 1.
+
+191
+00:20:20,331 --> 00:20:20,571
+Here.
+
+192
+00:20:21,091 --> 00:20:25,192
+Here is the line x equals minus 1.
+
+193
+00:20:25,551 --> 00:20:27,211
+X is going to be bigger than this.
+
+194
+00:20:27,431 --> 00:20:29,931
+And at the same time, y is bigger than 1.
+
+195
+00:20:30,531 --> 00:20:32,391
+This part, y is bigger than 1.
+
+196
+00:20:33,731 --> 00:20:35,931
+Or y is less than 1 minus 1.
+
+197
+00:20:36,071 --> 00:20:37,111
+Y is less than minus 1.
+
+198
+00:20:37,151 --> 00:20:37,511
+This part.
+
+199
+00:20:37,511 --> 00:20:47,471
+So if x is bigger than 1, if x is bigger than minus 1, y has to be either bigger than 1 or less than minus 1.
+
+200
+00:20:47,531 --> 00:20:48,172
+We get this part.
+
+201
+00:20:48,491 --> 00:20:56,571
+In the second case, if they are both negative, then this means y squared is less than 1, which means y is between minus 1 and 1.
+
+202
+00:20:56,991 --> 00:20:58,851
+And this means x is less than minus 1.
+
+203
+00:20:59,251 --> 00:21:02,491
+So in this case, we get x is less than minus 1.
+
+204
+00:21:03,011 --> 00:21:05,531
+Here on the left side of this line, x equals minus 1.
+
+205
+00:21:05,531 --> 00:21:07,911
+And y is between minus 1 and 1.
+
+206
+00:21:08,311 --> 00:21:11,871
+So when x is less than minus 1, we get y is between minus 1 and 1.
+
+207
+00:21:11,951 --> 00:21:13,011
+We get this part.
+
+208
+00:21:13,731 --> 00:21:21,211
+So that's, and of course, all lines are excluded because these are all less than, bigger than, signs.
+
+209
+00:21:22,031 --> 00:21:53,031
+So that's the graph of the domain of this function.
+
+210
+00:21:28,756 --> 00:21:29,236
+Okay.
+
+211
+00:21:29,976 --> 00:21:31,156
+Any questions so far?
+
+212
+00:21:36,468 --> 00:21:37,807
+Tamam, let's continue then.
+
+213
+00:21:38,668 --> 00:21:41,288
+Termine and graph the level surface of the function.
+
+214
+00:21:41,768 --> 00:21:47,008
+Fxyz equals x square plus y square minus z at the point 112.
+
+215
+00:21:48,448 --> 00:21:53,168
+The level surface where three variable function is what?
+
+216
+00:21:53,608 --> 00:21:58,768
+It's fxyz equals some constant.
+
+217
+00:21:58,768 --> 00:22:02,728
+So at this point, at this point, what is the value of the function?
+
+218
+00:22:03,388 --> 00:22:05,468
+112, the value of the function is?
+
+219
+00:22:05,468 --> 00:22:07,948
+1 square plus 1 square minus 2, which is 0.
+
+220
+00:22:08,488 --> 00:22:13,548
+So the level surface of this function at this point is this level surface.
+
+221
+00:22:14,848 --> 00:22:16,488
+Fxyz equals some constant.
+
+222
+00:22:16,567 --> 00:22:17,327
+What is that constant?
+
+223
+00:22:17,428 --> 00:22:18,327
+That constant is 0.
+
+224
+00:22:18,567 --> 00:22:20,168
+That's the value of the function at this point.
+
+225
+00:22:21,067 --> 00:22:25,368
+So we are asked to find the level surface, this level surface.
+
+226
+00:22:25,508 --> 00:22:26,448
+Fxyz equals 0.
+
+227
+00:22:26,548 --> 00:22:27,788
+What is this surface?
+
+228
+00:22:28,268 --> 00:22:33,067
+x square plus y square minus z equals 0, which is d equals x square plus y square.
+
+229
+00:22:33,067 --> 00:22:35,028
+equals x square plus y square.
+
+230
+00:22:35,688 --> 00:22:36,307
+It's this.
+
+231
+00:22:37,088 --> 00:22:38,408
+Such a surface over here.
+
+232
+00:22:40,528 --> 00:22:43,248
+So when z is 0, we get this point.
+
+233
+00:22:43,988 --> 00:22:44,928
+Z is 1.
+
+234
+00:22:45,448 --> 00:22:48,288
+When z is 1, we get x square plus y square equals 1.
+
+235
+00:22:48,288 --> 00:22:50,048
+We get such a circle.
+
+236
+00:22:50,768 --> 00:22:52,368
+x square plus z square equals 1.
+
+237
+00:22:52,428 --> 00:22:53,148
+When z is 1.
+
+238
+00:22:54,067 --> 00:23:00,567
+When z is 4, for example, we get x square plus y square equals 4.
+
+239
+00:23:00,948 --> 00:23:02,288
+A circle of radius 2.
+
+240
+00:23:02,288 --> 00:23:09,668
+And so as z increases, so for any fixed value of z, this is a circle, right?
+
+241
+00:23:09,788 --> 00:23:12,368
+x square plus y square equals some number.
+
+242
+00:23:12,668 --> 00:23:15,327
+That's a circle of radius the square root of z.
+
+243
+00:23:15,807 --> 00:23:18,088
+So as z increases, we get bigger circles.
+
+244
+00:23:18,408 --> 00:23:23,448
+So it starts from the origin and it opens up with growing circles like that.
+
+245
+00:23:23,448 --> 00:23:42,888
+So that's the level surface of this function at this point.
+
+246
+00:23:37,203 --> 00:23:39,084
+Okay, next question.
+
+247
+00:23:40,344 --> 00:23:43,624
+Now, so these are the questions from 14.1 basically.
+
+248
+00:23:44,003 --> 00:23:46,503
+Demain of the functions, two variable functions.
+
+249
+00:23:47,423 --> 00:23:51,003
+Now, 14.2 was the limits and continuity.
+
+250
+00:23:51,563 --> 00:23:56,624
+So now we will solve, I think, nine problems from this section.
+
+251
+00:23:59,124 --> 00:24:00,463
+Okay, let's start with this.
+
+252
+00:24:00,463 --> 00:24:12,203
+Find the limit as x, y approaches zero from right to from left of x plus y minus two over squared of x plus squared of two minus y.
+
+253
+00:24:12,723 --> 00:24:17,104
+First of all, if x is zero and y is two, what do we get?
+
+254
+00:24:17,324 --> 00:24:24,443
+Zero plus two minus two, that's zero, divided by squared of zero, which is zero, plus squared of two minus two, which is also zero.
+
+255
+00:24:24,824 --> 00:24:26,243
+So we get zero over zero.
+
+256
+00:24:26,824 --> 00:24:29,403
+So this is an indeterminate form of type zero over zero.
+
+257
+00:24:29,403 --> 00:24:35,463
+Of course, when we have some radicals like expressions like this, expressions involving radicals,
+
+258
+00:24:36,104 --> 00:24:44,043
+the algebraic trick to get rid of that radicals is to multiply and divide this quotient by the conjugate of that radical expression.
+
+259
+00:24:44,783 --> 00:24:51,384
+So conjugate of this squared of x plus root two minus y is this squared of x minus squared of two minus y.
+
+260
+00:24:51,384 --> 00:24:58,743
+So to find this limit, we multiply this expression by multiply and divide by the conjugate of this denominator,
+
+261
+00:24:58,963 --> 00:25:01,423
+which is squared of x minus squared of two minus y.
+
+262
+00:25:02,104 --> 00:25:03,683
+Now, when we do that, what do we get?
+
+263
+00:25:04,624 --> 00:25:11,584
+This is numerator is as it is x plus y minus two times this squared of x minus squared of two minus y.
+
+264
+00:25:11,583 --> 00:25:36,583
+The denominator is x minus two times y.
+
+265
+00:25:21,428 --> 00:25:29,528
+Denominator is square of this, which is x minus square of this, which is 2 minus y.
+
+266
+00:25:29,528 --> 00:25:36,488
+So, this is an expression of the form a plus b times a minus b, a plus b times a minus b is a square minus b square.
+
+267
+00:25:36,608 --> 00:25:39,848
+So, square of this is x, square of this is 2 minus y.
+
+268
+00:25:40,428 --> 00:25:45,008
+So, we get this x minus 2 minus y, which is the same as x plus 2 minus y.
+
+269
+00:25:45,788 --> 00:25:50,968
+So, now these x plus y minus 2 is canceled.
+
+270
+00:25:51,428 --> 00:25:55,468
+We are left with this square of x minus square of 2 minus y.
+
+271
+00:25:55,908 --> 00:25:59,328
+And this x approaches 0 from right.
+
+272
+00:25:59,648 --> 00:26:01,388
+This is square of 0, which is 0.
+
+273
+00:26:01,808 --> 00:26:05,828
+As y approaches 2 from left, this is square of 2 minus 0, which is 0.
+
+274
+00:26:06,068 --> 00:26:07,628
+We get 0 minus 0, which is 0.
+
+275
+00:26:07,968 --> 00:26:09,828
+That's the limit of this function.
+
+276
+00:26:11,348 --> 00:26:16,248
+And, of course, once we cancel out these, there's no ambiguity.
+
+277
+00:26:17,128 --> 00:26:18,768
+There's no indeterminant form anymore.
+
+278
+00:26:18,888 --> 00:26:21,228
+This is the term, which is 0.
+
+279
+00:26:21,428 --> 00:26:29,048
+Remember, remember from, actually, it was two weeks ago.
+
+280
+00:26:29,608 --> 00:26:33,648
+Two weeks ago, when we have seen the limits of two variable functions, I said that
+
+281
+00:26:33,648 --> 00:26:41,108
+there are basically three ways of finding the limit of a function.
+
+282
+00:26:41,108 --> 00:26:47,388
+The first is making some algebraic trick, like multiplying and dividing by the conjugate,
+
+283
+00:26:48,128 --> 00:26:53,448
+or making use of some known limits to find the limit of the function.
+
+284
+00:26:53,928 --> 00:26:57,288
+The second is to make use of the epsilon-delta definition.
+
+285
+00:26:57,928 --> 00:27:04,288
+To first guess what the limit should be, and then make use of the epsilon-delta definition
+
+286
+00:27:04,288 --> 00:27:06,688
+to prove that that is the limit.
+
+287
+00:27:07,568 --> 00:27:09,848
+And the third is to convert the polar.
+
+288
+00:27:14,168 --> 00:27:22,888
+Replace x with r cosine theta, replace y with r sine theta, and try to find the limit using
+
+289
+00:27:22,888 --> 00:27:24,468
+that polar conversion.
+
+290
+00:27:27,028 --> 00:27:32,108
+Now, okay, let's look at the second next example.
+
+291
+00:27:32,108 --> 00:27:32,988
+Find the limit.
+
+292
+00:27:33,508 --> 00:27:36,048
+It has x, y approaches 0, 0 of this.
+
+293
+00:27:36,307 --> 00:27:40,608
+Square root of x times e to the power of y minus 1 plus 1 minus 1 over x, y.
+
+294
+00:27:40,608 --> 00:27:45,408
+Now, again, first of all, as x, y approaches 0, 0, what is this?
+
+295
+00:27:45,588 --> 00:27:46,288
+0 times.
+
+296
+00:27:47,388 --> 00:27:49,148
+So e to the power of 0 is 1.
+
+297
+00:27:49,268 --> 00:27:50,468
+So 1 minus 1 is 0.
+
+298
+00:27:50,868 --> 00:27:52,468
+This is 0 plus 1, which is 1.
+
+299
+00:27:53,108 --> 00:27:54,328
+So square root of 1 is 1.
+
+300
+00:27:54,908 --> 00:27:56,108
+1 minus 1 is 0.
+
+301
+00:27:56,568 --> 00:27:57,388
+Numerate with 0.
+
+302
+00:27:57,468 --> 00:27:59,108
+The denominator is 0 times 0, which is 0.
+
+303
+00:27:59,628 --> 00:28:03,228
+So this is, again, 0 over 0 in the terminate form of type 0 over 0.
+
+304
+00:28:03,688 --> 00:28:07,848
+Again, we have some radical expression minus 1 in the numerator.
+
+305
+00:28:07,848 --> 00:28:11,888
+So the same algebraic rate, so let's read off that radical.
+
+306
+00:28:12,108 --> 00:28:15,248
+We can multiply and divide this expression by the conjugate of that.
+
+307
+00:28:16,228 --> 00:28:19,428
+So find this limit.
+
+308
+00:28:19,528 --> 00:28:25,468
+We multiply and divide by the conjugate of this, which is, so if we call this a, if we call
+
+309
+00:28:25,468 --> 00:28:33,328
+this a, and call, so if this is a minus 1, a minus 1 is conjugate, this is a plus 1.
+
+310
+00:28:33,328 --> 00:28:36,588
+So multiply this by a plus 1.
+
+311
+00:28:37,268 --> 00:28:39,068
+Multiply and divide by a plus 1.
+
+312
+00:28:39,708 --> 00:28:40,648
+So what do we get?
+
+313
+00:28:41,048 --> 00:28:45,168
+The denominator is x times y times this a plus 1, whatever it is.
+
+314
+00:28:45,588 --> 00:28:49,208
+The numerator is, now we have a minus 1 times a plus 1.
+
+315
+00:28:49,648 --> 00:28:52,228
+A minus 1 times a plus 1 is a square minus 1.
+
+316
+00:28:52,748 --> 00:28:54,448
+So a square, a square is here.
+
+317
+00:28:54,448 --> 00:28:56,848
+x times e to the power of 1 minus 1 plus 1.
+
+318
+00:28:57,408 --> 00:28:58,708
+A square minus 1.
+
+319
+00:28:59,188 --> 00:29:01,988
+So that's the product of these two expressions over here.
+
+320
+00:29:03,008 --> 00:29:03,708
+We get this.
+
+321
+00:29:04,388 --> 00:29:05,768
+Now, let me simplify it now.
+
+322
+00:29:07,948 --> 00:29:10,968
+So this plus 1 minus 1 cancel out.
+
+323
+00:29:11,228 --> 00:29:13,448
+We get x times e to the power of 1 minus 1.
+
+324
+00:29:14,408 --> 00:29:14,848
+Here.
+
+325
+00:29:14,848 --> 00:29:18,288
+And now, in this expression, x is cancel out.
+
+326
+00:29:18,288 --> 00:29:43,288
+So
+
+327
+00:29:20,564 --> 00:29:22,663
+We get e to the power of y minus 1 over y.
+
+328
+00:29:22,824 --> 00:29:24,163
+So, let me separate this.
+
+329
+00:29:24,324 --> 00:29:26,163
+Now, e to the power of y minus 1 over y,
+
+330
+00:29:26,284 --> 00:29:28,804
+this part, e to the power of y minus 1 over 5,
+
+331
+00:29:29,744 --> 00:29:32,104
+that's limit as x, y approaches 0, 0.
+
+332
+00:29:32,264 --> 00:29:36,364
+And the other part, 1 over square root of x,
+
+333
+00:29:36,923 --> 00:29:38,744
+whatever, that expression.
+
+334
+00:29:39,403 --> 00:29:41,663
+Now, if we consider these two separately,
+
+335
+00:29:42,384 --> 00:29:43,524
+note that first of all,
+
+336
+00:29:43,903 --> 00:29:45,524
+even after cancelling out x's,
+
+337
+00:29:46,183 --> 00:29:48,384
+this is 0 over 0, right?
+
+338
+00:29:48,864 --> 00:29:49,744
+Look at this.
+
+339
+00:29:50,564 --> 00:29:52,284
+Find the limit of this.
+
+340
+00:29:52,403 --> 00:29:53,964
+Now, this is a one variable limit.
+
+341
+00:29:54,423 --> 00:29:55,504
+There is no x anymore.
+
+342
+00:29:56,564 --> 00:29:58,144
+There is no x anymore here.
+
+343
+00:29:58,604 --> 00:30:00,824
+And the limit of this part
+
+344
+00:30:00,824 --> 00:30:03,064
+is just the limit as y approaches 0
+
+345
+00:30:03,064 --> 00:30:04,403
+because it's independent of x.
+
+346
+00:30:04,884 --> 00:30:06,244
+It's independent of x.
+
+347
+00:30:06,384 --> 00:30:08,784
+Its limit is the limit as y approaches 0
+
+348
+00:30:08,784 --> 00:30:10,564
+of e to the power of y minus 1 over y.
+
+349
+00:30:11,024 --> 00:30:12,484
+Now, this is 0 over 0.
+
+350
+00:30:12,584 --> 00:30:14,724
+But since this is a single variable limit now,
+
+351
+00:30:15,204 --> 00:30:16,484
+I can apply it off with elsewhere.
+
+352
+00:30:17,423 --> 00:30:18,864
+So, the derivative of e to the power of y
+
+353
+00:30:18,864 --> 00:30:19,784
+is e to the power of y.
+
+354
+00:30:20,163 --> 00:30:21,403
+Derivative of 1 minus 1 is 0.
+
+355
+00:30:21,884 --> 00:30:22,944
+Derivative of y is 1.
+
+356
+00:30:23,524 --> 00:30:24,184
+We get this.
+
+357
+00:30:24,264 --> 00:30:25,403
+As y approaches 0,
+
+358
+00:30:25,544 --> 00:30:27,684
+this is e to the power of 0, which is 1.
+
+359
+00:30:29,144 --> 00:30:30,864
+So, the limit of this part is 1.
+
+360
+00:30:31,464 --> 00:30:32,224
+How about this?
+
+361
+00:30:32,984 --> 00:30:34,984
+Well, this part is not indeterminate anymore.
+
+362
+00:30:35,864 --> 00:30:36,724
+This is just,
+
+363
+00:30:37,084 --> 00:30:38,464
+as x, y approaches 0, 0,
+
+364
+00:30:38,584 --> 00:30:40,444
+we get square root of 0 plus 1,
+
+365
+00:30:40,504 --> 00:30:41,944
+which is square root of 1 plus 1,
+
+366
+00:30:42,084 --> 00:30:43,124
+which is 1 plus 1 is 2.
+
+367
+00:30:43,124 --> 00:30:44,423
+So, this is 1 over 2.
+
+368
+00:30:45,344 --> 00:30:46,403
+That's the limit of this,
+
+369
+00:30:46,724 --> 00:30:47,224
+1 over 2.
+
+370
+00:30:47,744 --> 00:30:49,764
+So, the limit of the left part is 1.
+
+371
+00:30:49,844 --> 00:30:52,324
+The limit of the right-hand part is 1 over 2.
+
+372
+00:30:52,864 --> 00:30:55,044
+So, we get 1 times 1 over 2,
+
+373
+00:30:55,084 --> 00:30:55,784
+which is 1 over 2.
+
+374
+00:30:55,984 --> 00:30:57,644
+It's the limit of this function.
+
+375
+00:30:59,104 --> 00:30:59,504
+Okay?
+
+376
+00:30:59,504 --> 00:30:59,644
+Okay.
+
+377
+00:31:03,988 --> 00:31:05,988
+Bu da bu.
+
+378
+00:31:05,988 --> 00:31:07,688
+Bu da aynı algebraclar,
+
+379
+00:31:07,688 --> 00:31:09,548
+ve bu konjugorla ve
+
+380
+00:31:09,548 --> 00:31:17,988
+ve bu konjugorla
+
+381
+00:31:17,988 --> 00:31:18,988
+bir konjugorla
+
+382
+00:31:18,988 --> 00:31:33,968
+ve bu konjugorla
+
+383
+00:31:22,099 --> 00:31:32,359
+On the other hand, to show that a limit does not exist, we make use of the two-pad test.
+
+384
+00:31:33,459 --> 00:31:46,519
+So if the limit differs, if we approach the function, approach the point through different paths and get different limits, then we say that limit doesn't exist.
+
+385
+00:31:46,839 --> 00:31:50,419
+Now look at this expression, show that this limit doesn't exist.
+
+386
+00:31:50,419 --> 00:31:54,500
+Now, as x, y approaches 0, 0, look at this expression.
+
+387
+00:31:54,619 --> 00:31:55,980
+This is 0 over 0, first of all.
+
+388
+00:31:56,279 --> 00:31:57,039
+It's indeterminate.
+
+389
+00:31:58,019 --> 00:32:03,539
+Now, in the denominator, we have x term and we have y cube term.
+
+390
+00:32:05,439 --> 00:32:11,139
+So if we express x as a cubic function of y, what are we going to get?
+
+391
+00:32:11,240 --> 00:32:14,139
+So think of replacing x with y cube.
+
+392
+00:32:14,699 --> 00:32:17,259
+If we replace x with y cube, what do we get?
+
+393
+00:32:17,259 --> 00:32:20,359
+We get y cube plus y cube.
+
+394
+00:32:20,439 --> 00:32:22,119
+So the denominator is going to be 2y cube.
+
+395
+00:32:22,319 --> 00:32:25,859
+In the numerator, if you replace x with y cube, this is going to be y.
+
+396
+00:32:26,259 --> 00:32:28,619
+Y times y square is going to be y cube again.
+
+397
+00:32:28,939 --> 00:32:30,879
+So everything will be in terms of y cube.
+
+398
+00:32:30,879 --> 00:32:37,259
+It's good to approach this function along these curves.
+
+399
+00:32:37,500 --> 00:32:39,059
+X equals my cube.
+
+400
+00:32:41,759 --> 00:32:46,959
+Because, as I said, we will get y cube terms everywhere and they will cancel out.
+
+401
+00:32:47,099 --> 00:32:47,719
+Let's see how.
+
+402
+00:32:47,719 --> 00:32:50,599
+If we replace x with my cube, what do we get?
+
+403
+00:32:50,859 --> 00:32:58,439
+This is my cube to the power of 1 over 3 times y squared divided by this x is my cube plus y cube.
+
+404
+00:32:59,000 --> 00:33:04,099
+Now, in the numerator, we have n to the power of 1 over 3 times this is y.
+
+405
+00:33:04,199 --> 00:33:09,759
+y cube to the power of 1 over 3 is y times y squared divided by when we factor y cube in the denominator,
+
+406
+00:33:09,899 --> 00:33:11,299
+we get n plus 1 times y cube.
+
+407
+00:33:11,299 --> 00:33:15,259
+So now, this y times y squared is y cube divided by y cube.
+
+408
+00:33:15,740 --> 00:33:16,679
+The cubes cancel out.
+
+409
+00:33:17,139 --> 00:33:17,619
+Get this.
+
+410
+00:33:18,039 --> 00:33:20,039
+To the power of 1 over 3 over n plus 1.
+
+411
+00:33:20,480 --> 00:33:26,179
+The limit, limit of this function along these curves depends on m,
+
+412
+00:33:26,799 --> 00:33:30,579
+which means that the different values of m give different limits.
+
+413
+00:33:31,679 --> 00:33:35,139
+Therefore, we say that the limit does not exist by the two-pad test.
+
+414
+00:33:35,139 --> 00:33:42,619
+Because, for example, when we take m equals 0, we'll get a different limit along that path.
+
+415
+00:33:42,899 --> 00:33:46,239
+If we take m equals 1, we are going to get a different limit along that path.
+
+416
+00:33:47,039 --> 00:33:52,299
+So along different paths, we get different limits, which proves that the limit does not exist.
+
+417
+00:33:52,299 --> 00:34:10,299
+So along different paths, we get different paths.
+
+418
+00:33:55,827 --> 00:34:03,968
+Okay, evaluate this limit. The limit as x, y approach is 0, 0, x ln 1 plus y over x square plus y square, if it exists.
+
+419
+00:34:08,820 --> 00:34:18,880
+Okay, the trick here is, again, when x, y is, so what is ln 1 plus y?
+
+420
+00:34:19,320 --> 00:34:21,539
+The trick here is this, ln 1 plus y.
+
+421
+00:34:24,039 --> 00:34:31,820
+We know, ln 1 plus y, we know it's Maclaurin series expansion.
+
+422
+00:34:31,820 --> 00:34:58,680
+It's y, ln 1 plus y is y minus y squared over 2, so this is squared, plus y cubed over 3, plus y cubed over 3, minus y to the power of 4 over 4, plus y to the power of 5 over 5, and so on.
+
+423
+00:34:58,680 --> 00:35:13,840
+And when y is close to 0, when y is close to 0, y squared y cubed over 4 terms, these terms, these terms are going to be much smaller than the y term.
+
+424
+00:35:13,840 --> 00:35:22,460
+So when y is close to 0, ln 1 plus y is very close to y.
+
+425
+00:35:23,760 --> 00:35:30,500
+So this is like y, when y is close to 0, this is like y, we will get x, y over x squared plus y squared.
+
+426
+00:35:30,500 --> 00:35:43,200
+And so, again, when we just replace y with x, for example, we get x squared plus x squared in the denominator, x times x, which is x squared in the numerator, so we can cancel out.
+
+427
+00:35:43,420 --> 00:35:48,060
+So the best approach is this, y equals mx.
+
+428
+00:35:49,039 --> 00:35:49,840
+Let's take that one.
+
+429
+00:35:49,840 --> 00:35:55,059
+So look at this limit along these lines, y equals mx.
+
+430
+00:35:55,440 --> 00:35:56,160
+What do we get?
+
+431
+00:35:56,980 --> 00:36:05,579
+x times ln, so along these paths, this limit is x times ln 1 plus mx over x squared plus mx squared as x approaches 0.
+
+432
+00:36:05,760 --> 00:36:07,039
+Of course, we got rid of y.
+
+433
+00:36:07,700 --> 00:36:08,740
+We don't have y anymore.
+
+434
+00:36:08,860 --> 00:36:10,579
+This x equals x squared approaches 0.
+
+435
+00:36:11,100 --> 00:36:11,840
+What do we get?
+
+436
+00:36:11,840 --> 00:36:16,160
+Here in the denominator, x squared can be factored out.
+
+437
+00:36:16,300 --> 00:36:17,940
+We get x squared times 1 plus m squared.
+
+438
+00:36:18,920 --> 00:36:21,260
+And here, one of the x's cancel.
+
+439
+00:36:21,900 --> 00:36:24,220
+This x cancels out with one of these x's.
+
+440
+00:36:24,640 --> 00:36:33,079
+We get 1 plus mx over 1 plus m squared times x, which is now we can use L'Hôpital's rule because there's a single variable limit.
+
+441
+00:36:34,060 --> 00:36:41,160
+So as x approaches 0, first of all, as x approaches 0, this is ln 1 over 0, which is 0 over 0.
+
+442
+00:36:41,840 --> 00:36:52,420
+When we apply L'Hôpital, the derivative of this, derivative of inside, which is m, divided by inside itself, 1 plus mx.
+
+443
+00:36:53,039 --> 00:36:56,039
+So derivative of 1 plus mx divided by 1 plus mx.
+
+444
+00:36:56,400 --> 00:37:03,580
+This is the derivative of ln 1 plus mx divided by derivative of the denominator with respect to x is this, 1 plus m squared.
+
+445
+00:37:03,860 --> 00:37:05,560
+Because 1 plus m squared is a constant here.
+
+446
+00:37:05,940 --> 00:37:07,060
+Some constant times x.
+
+447
+00:37:07,460 --> 00:37:08,600
+This derivative is that constant.
+
+448
+00:37:09,460 --> 00:37:10,700
+So which is equal to...
+
+449
+00:37:11,840 --> 00:37:20,900
+Now, as x approaches 0, as x approaches 0, this part approaches 0, we get m over 1 plus m squared, which again depends on m.
+
+450
+00:37:21,320 --> 00:37:23,960
+So different values of m, different limits.
+
+451
+00:37:24,260 --> 00:37:27,880
+Therefore, we conclude that this limit does not exist by the two-pet.
+
+452
+00:37:27,880 --> 00:37:28,260
+So that's the limit of the limit of the limit of the limit of the limit of the limit of the limit of the limit of the limit of the limit of the limit of the limit of the limit of the limit of the limit of the limit of the limit of the limit of the limit of the limit of the limit of the limit of the limit of the limit of the limit of the limit of the limit of the limit of the limit of the limit of the limit of the limit of the limit of the limit of the limit of the limit of the limit of the limit of the limit of the limit of the limit of the limit of the limit of the limit of the limit of the limit of the limit of the limit of the limit of the limit of the limit of the limit of the limit of the limit of the limit of the limit of the limit of the limit of the limit of the limit of the limit of the limit of the limit of the limit of the limit of the limit of the limit of the limit of the limit of the limit of the limit of the limit of the limit
+
+453
+00:37:32,244 --> 00:37:33,784
+It can be converted to polar.
+
+454
+00:37:36,604 --> 00:37:39,884
+We can convert it to polar, but it may be even...
+
+455
+00:37:42,264 --> 00:37:43,064
+Let's see.
+
+456
+00:37:43,884 --> 00:37:45,724
+When we convert it to polar, what do we get?
+
+457
+00:37:46,943 --> 00:37:48,224
+Let me write it here.
+
+458
+00:37:49,884 --> 00:37:50,544
+What do we get?
+
+459
+00:37:51,144 --> 00:37:52,604
+Limit as r approach is zero.
+
+460
+00:37:53,084 --> 00:37:55,884
+Limit, because...
+
+461
+00:37:55,884 --> 00:38:00,544
+Limit as r approach is zero.
+
+462
+00:38:02,244 --> 00:38:04,264
+Of what?
+
+463
+00:38:06,324 --> 00:38:08,264
+X is r cosine theta.
+
+464
+00:38:09,164 --> 00:38:10,604
+R cosine theta.
+
+465
+00:38:14,867 --> 00:38:21,447
+R cosin theta times ln 1 plus y.
+
+466
+00:38:21,927 --> 00:38:25,067
+1 plus y is R sin theta.
+
+467
+00:38:25,827 --> 00:38:27,407
+R sin theta.
+
+468
+00:38:28,047 --> 00:38:28,947
+Sine theta.
+
+469
+00:38:29,208 --> 00:38:29,748
+Okay, whatever.
+
+470
+00:38:29,987 --> 00:38:30,728
+I'm going to write it.
+
+471
+00:38:31,288 --> 00:38:35,567
+1 plus R sin theta divided by x squared plus y squared is R squared.
+
+472
+00:38:36,347 --> 00:38:37,927
+X squared plus y squared is I squared.
+
+473
+00:38:38,268 --> 00:38:41,867
+And now one of the R's cancel out.
+
+474
+00:38:41,867 --> 00:38:48,607
+We get this cosine theta times ln 1 plus R sin theta divided by R.
+
+475
+00:38:50,628 --> 00:38:55,728
+Okay, we will have to make use of the Sandovich theorem.
+
+476
+00:38:57,367 --> 00:39:00,827
+And again, we will have to apply the L'Hopital's rule.
+
+477
+00:39:01,768 --> 00:39:04,467
+I mean, we have to bond this.
+
+478
+00:39:04,567 --> 00:39:07,087
+So we know that cosine theta is between minus 1 and 1.
+
+479
+00:39:07,087 --> 00:39:16,847
+So we know that this expression is going to be between minus ln 1 plus R sin theta over R and plus ln 1 plus R sin theta over R.
+
+480
+00:39:17,148 --> 00:39:18,748
+And also we have to bond this R.
+
+481
+00:39:19,407 --> 00:39:20,587
+Sorry, this sin theta.
+
+482
+00:39:20,587 --> 00:39:27,467
+So this is going to be, so sine theta is between minus 1 and 1.
+
+483
+00:39:27,467 --> 00:39:32,728
+So, and we know that ln functions are increasing function.
+
+484
+00:39:32,847 --> 00:39:38,387
+So this expression over here is going to be between ln 1 minus R and ln 1 plus R.
+
+485
+00:39:38,387 --> 00:39:50,947
+So the whole expression is going to be between minus ln 1 minus R over R and plus ln 1 plus R over R.
+
+486
+00:39:51,327 --> 00:39:55,768
+Then you will apply the L'Hopital's rule for both sides and you'll get that.
+
+487
+00:39:55,768 --> 00:40:01,547
+No, you are not going to get anything actually.
+
+488
+00:40:02,887 --> 00:40:09,248
+Because, I mean, at the end, so here, what is our conclusion?
+
+489
+00:40:09,427 --> 00:40:11,367
+We conclude that the limit does not exist.
+
+490
+00:40:11,847 --> 00:40:12,067
+Okay?
+
+491
+00:40:12,668 --> 00:40:14,587
+We conclude that the limit does not exist.
+
+492
+00:40:16,288 --> 00:40:20,288
+If you have converted the polar and then look at the limit,
+
+493
+00:40:20,288 --> 00:40:23,447
+we are not going to approach anywhere.
+
+494
+00:40:24,788 --> 00:40:29,168
+Because, I mean, you cannot even make use of the Sandivich theorem
+
+495
+00:40:29,168 --> 00:40:31,827
+and prove that the limit is equal to something
+
+496
+00:40:31,827 --> 00:40:34,827
+because we already proved that the limit does not exist.
+
+497
+00:40:35,347 --> 00:40:38,248
+I mean, the polar conversion can be used if the limit exists.
+
+498
+00:40:39,327 --> 00:40:42,087
+It can be used to find the limit if the limit exists.
+
+499
+00:40:43,847 --> 00:40:44,007
+Okay?
+
+500
+00:40:46,947 --> 00:40:48,367
+So the next question,
+
+501
+00:40:48,367 --> 00:40:54,527
+determine whether the function fxy of this has a limit at 2, 0.
+
+502
+00:40:54,527 --> 00:40:54,648
+So,
+
+503
+00:40:57,907 --> 00:41:00,248
+Now look at this function now.
+
+504
+00:41:01,007 --> 00:41:03,248
+First of all, when x is 2 and y is 0,
+
+505
+00:41:03,967 --> 00:41:08,027
+you get 2y minus 2y, which is 0 over 0 plus 0.
+
+506
+00:41:08,268 --> 00:41:09,627
+This is 0. 0 over 0 again.
+
+507
+00:41:11,467 --> 00:41:13,708
+Okay, now look at this expression.
+
+508
+00:41:13,947 --> 00:41:15,208
+So look at the numerator.
+
+509
+00:41:15,827 --> 00:41:19,407
+This is x minus 2 times y, right?
+
+510
+00:41:21,268 --> 00:41:23,208
+The numerator is x minus 2.
+
+511
+00:41:23,208 --> 00:41:28,487
+The numerator is this, x minus 2 times y.
+
+512
+00:41:30,007 --> 00:41:32,567
+And the denominator is such an expression.
+
+513
+00:41:33,188 --> 00:41:36,967
+Again, if we replace y with x minus 2,
+
+514
+00:41:37,927 --> 00:41:40,708
+we will get x minus 2 to power 4, x minus 2 to power 4.
+
+515
+00:41:40,768 --> 00:41:41,887
+When we take the square root,
+
+516
+00:41:41,947 --> 00:41:44,748
+we will get some constant times x minus 2 squared.
+
+517
+00:41:45,268 --> 00:41:46,827
+And in the numerator, again,
+
+518
+00:41:46,827 --> 00:41:48,947
+when y is replaced with x minus 2,
+
+519
+00:41:49,447 --> 00:41:52,127
+we will get x minus 2 squared, and they will cancel out.
+
+520
+00:41:52,127 --> 00:41:54,867
+So that's why we make this choice.
+
+521
+00:41:56,567 --> 00:42:02,027
+So we approach this point 2, 0 along these lines.
+
+522
+00:42:02,248 --> 00:42:04,067
+y equals mx minus 2.
+
+523
+00:42:04,987 --> 00:42:06,447
+So when we make use of that,
+
+524
+00:42:06,748 --> 00:42:10,387
+now look at this limit along these lines.
+
+525
+00:42:11,007 --> 00:42:13,527
+So replace y with mx minus 2.
+
+526
+00:42:13,527 --> 00:42:15,887
+So the numerator is x minus 2 times y,
+
+527
+00:42:16,007 --> 00:42:17,527
+which is this, mx minus 2,
+
+528
+00:42:17,887 --> 00:42:20,228
+divided by x minus 2 to power 4,
+
+529
+00:42:20,307 --> 00:42:23,067
+plus this, y to the power 4,
+
+530
+00:42:23,127 --> 00:42:25,987
+which is m to the power 4 times x to the power 4.
+
+531
+00:42:26,648 --> 00:42:27,387
+What do we get?
+
+532
+00:42:27,467 --> 00:42:29,728
+The numerator is m times x minus 2 squared.
+
+533
+00:42:30,668 --> 00:42:31,668
+In the new denominator,
+
+534
+00:42:32,467 --> 00:42:35,087
+we factor x minus 2 to the power 4 out,
+
+535
+00:42:35,148 --> 00:42:36,587
+and take it outside the radical.
+
+536
+00:42:36,587 --> 00:42:38,927
+It's this, x minus 2 to power 2 squared.
+
+537
+00:42:39,427 --> 00:42:40,168
+And when we factor,
+
+538
+00:42:40,288 --> 00:42:42,768
+we get 1 plus m to the power 4 in the radical.
+
+539
+00:42:43,228 --> 00:42:43,507
+This.
+
+540
+00:42:44,467 --> 00:42:46,807
+Now these x minus 2 squares cancel.
+
+541
+00:42:49,288 --> 00:42:50,087
+They cancel.
+
+542
+00:42:50,728 --> 00:42:54,027
+We get m over squared of m plus 1 plus m to power 4.
+
+543
+00:42:54,127 --> 00:42:55,507
+Again, we get a limit.
+
+544
+00:42:55,987 --> 00:42:57,208
+It only depends on m.
+
+545
+00:42:58,407 --> 00:43:00,327
+So again, we make the same conclusion.
+
+546
+00:43:00,467 --> 00:43:02,367
+Different values of m give different limits.
+
+547
+00:43:02,367 --> 00:43:05,648
+Therefore, this limit does not exist by the toolpath test.
+
+548
+00:43:06,148 --> 00:43:06,967
+Same conclusion.
+
+549
+00:43:10,804 --> 00:43:12,003
+Okay, next question.
+
+550
+00:43:13,264 --> 00:43:16,483
+Show that limit as xy approaches 0, 0,
+
+551
+00:43:17,463 --> 00:43:19,584
+x square to the power y to the power 4
+
+552
+00:43:19,584 --> 00:43:21,784
+over x to the power 4 plus y to the power equals 0.
+
+553
+00:43:22,463 --> 00:43:24,463
+So, show that this limit is equal to 0.
+
+554
+00:43:25,644 --> 00:43:27,224
+So, polar coordinate transformation
+
+555
+00:43:27,224 --> 00:43:28,864
+or epsilon delta method can be used.
+
+556
+00:43:30,264 --> 00:43:32,564
+Let's solve it both ways.
+
+557
+00:43:34,284 --> 00:43:35,324
+Let's see both ways.
+
+558
+00:43:35,443 --> 00:43:36,604
+Now, as you see,
+
+559
+00:43:37,164 --> 00:43:40,043
+it's going to show that the limit is equal to some number.
+
+560
+00:43:40,043 --> 00:43:41,184
+The limit exists now.
+
+561
+00:43:42,403 --> 00:43:44,324
+Now, if we make the polar transformation,
+
+562
+00:43:45,144 --> 00:43:47,864
+x equals r cosine theta, y equals r sine theta.
+
+563
+00:43:48,204 --> 00:43:48,903
+So, what is this?
+
+564
+00:43:48,943 --> 00:43:51,423
+This limit is the limit as r approaches 0.
+
+565
+00:43:51,784 --> 00:43:54,084
+Again, as xy approaches 0, 0,
+
+566
+00:43:54,184 --> 00:43:55,543
+as xy approaches the origin,
+
+567
+00:43:56,204 --> 00:43:58,164
+the r, which is the distance from the point
+
+568
+00:43:58,164 --> 00:43:59,664
+to the origin, approaches 0.
+
+569
+00:44:00,144 --> 00:44:02,144
+So, we get this.
+
+570
+00:44:02,224 --> 00:44:05,664
+x square is r square cosine square theta.
+
+571
+00:44:06,443 --> 00:44:07,903
+y to the power 4 is this,
+
+572
+00:44:07,983 --> 00:44:09,724
+r to the power 4 sine to power 4 theta.
+
+573
+00:44:10,043 --> 00:44:12,184
+divided by x to the power 4
+
+574
+00:44:12,184 --> 00:44:14,224
+plus y to the power 4 here.
+
+575
+00:44:14,224 --> 00:44:16,364
+and...
+
+576
+00:44:16,364 --> 00:44:22,144
+Okay.
+
+577
+00:44:22,264 --> 00:44:23,564
+So, in the numerator,
+
+578
+00:44:23,744 --> 00:44:24,604
+we have r to the...
+
+579
+00:44:24,604 --> 00:44:25,784
+In the numerator,
+
+580
+00:44:25,784 --> 00:44:27,084
+we have this.
+
+581
+00:44:27,443 --> 00:44:28,584
+We have r to the power 6.
+
+582
+00:44:29,064 --> 00:44:29,884
+In the denominator,
+
+583
+00:44:30,023 --> 00:44:31,884
+when we factor out r to the power 4,
+
+584
+00:44:32,644 --> 00:44:34,344
+so r to the power 4 is cancelled.
+
+585
+00:44:35,503 --> 00:44:37,043
+r to the power 4 is cancelled,
+
+586
+00:44:37,224 --> 00:44:37,564
+basically.
+
+587
+00:44:38,224 --> 00:44:39,724
+Get r square cosine square theta
+
+588
+00:44:39,724 --> 00:44:41,624
+sine to the power 4 theta.
+
+589
+00:44:41,624 --> 00:44:42,423
+in the numerator,
+
+590
+00:44:42,864 --> 00:44:43,784
+cosine to the power 4 theta
+
+591
+00:44:43,784 --> 00:44:44,923
+plus sine to the power 4 theta
+
+592
+00:44:44,923 --> 00:44:45,503
+in the denominator.
+
+593
+00:44:46,943 --> 00:44:47,184
+Now,
+
+594
+00:44:48,443 --> 00:44:48,724
+here,
+
+595
+00:44:48,864 --> 00:44:49,903
+cosine square theta
+
+596
+00:44:49,903 --> 00:44:51,104
+is the expression.
+
+597
+00:44:51,264 --> 00:44:52,084
+We know that it's always
+
+598
+00:44:52,084 --> 00:44:53,043
+between 0 and 1.
+
+599
+00:44:53,943 --> 00:44:54,604
+It's squared,
+
+600
+00:44:54,764 --> 00:44:56,204
+so it's always bigger than 0,
+
+601
+00:44:56,264 --> 00:44:57,644
+and it's always less than 2,
+
+602
+00:44:57,764 --> 00:44:58,664
+because of the range
+
+603
+00:44:58,664 --> 00:44:59,483
+of the cosine function.
+
+604
+00:44:59,943 --> 00:45:00,584
+On the other hand,
+
+605
+00:45:00,644 --> 00:45:01,884
+this expression over here,
+
+606
+00:45:02,844 --> 00:45:03,963
+sine to the power 4 theta
+
+607
+00:45:03,963 --> 00:45:05,704
+divided by cosine to the power 4 theta
+
+608
+00:45:05,704 --> 00:45:06,923
+plus sine to the power 4 theta.
+
+609
+00:45:06,923 --> 00:45:07,564
+Here,
+
+610
+00:45:07,664 --> 00:45:08,344
+this expression,
+
+611
+00:45:09,364 --> 00:45:10,844
+everything is the fourth power,
+
+612
+00:45:10,983 --> 00:45:13,064
+so it is never negative.
+
+613
+00:45:13,184 --> 00:45:14,264
+It's always bigger than 0.
+
+614
+00:45:14,624 --> 00:45:15,244
+And also,
+
+615
+00:45:15,684 --> 00:45:15,923
+here,
+
+616
+00:45:16,064 --> 00:45:16,684
+in the expression,
+
+617
+00:45:16,864 --> 00:45:17,403
+the denominator
+
+618
+00:45:17,403 --> 00:45:18,384
+is bigger than the numerator,
+
+619
+00:45:19,224 --> 00:45:20,463
+bigger than or equal to the numerator.
+
+620
+00:45:20,963 --> 00:45:21,844
+So this expression
+
+621
+00:45:21,844 --> 00:45:22,903
+is less than or equal to 1.
+
+622
+00:45:23,503 --> 00:45:24,104
+This expression
+
+623
+00:45:24,104 --> 00:45:25,384
+is also between 0 and 1.
+
+624
+00:45:25,744 --> 00:45:26,184
+Therefore,
+
+625
+00:45:27,124 --> 00:45:28,204
+when we multiply
+
+626
+00:45:28,204 --> 00:45:29,224
+these two expressions
+
+627
+00:45:29,224 --> 00:45:30,664
+and multiply it by r square,
+
+628
+00:45:30,664 --> 00:45:33,344
+this expression over here
+
+629
+00:45:33,344 --> 00:45:35,684
+is this one
+
+630
+00:45:35,684 --> 00:45:36,844
+times this one
+
+631
+00:45:36,844 --> 00:45:37,624
+times r square
+
+632
+00:45:37,624 --> 00:45:38,423
+is going to be
+
+633
+00:45:38,423 --> 00:45:40,064
+between 0 and r square.
+
+634
+00:45:41,184 --> 00:45:41,624
+Now,
+
+635
+00:45:42,244 --> 00:45:43,124
+the left-hand side,
+
+636
+00:45:43,364 --> 00:45:43,844
+this one,
+
+637
+00:45:44,344 --> 00:45:44,864
+its limit
+
+638
+00:45:44,864 --> 00:45:45,824
+as our approach is 0
+
+639
+00:45:45,824 --> 00:45:46,304
+is 0.
+
+640
+00:45:46,483 --> 00:45:47,003
+It's constant.
+
+641
+00:45:47,344 --> 00:45:48,124
+On the right-hand side,
+
+642
+00:45:48,184 --> 00:45:48,903
+we have r squared.
+
+643
+00:45:49,224 --> 00:45:49,543
+The limit
+
+644
+00:45:49,543 --> 00:45:50,423
+as our approach is 0,
+
+645
+00:45:50,503 --> 00:45:51,364
+r squared is 0.
+
+646
+00:45:52,084 --> 00:45:53,244
+So by the Sandivishter
+
+647
+00:45:53,244 --> 00:45:54,244
+we conclude that
+
+648
+00:45:54,244 --> 00:45:55,423
+the one in the middle
+
+649
+00:45:55,423 --> 00:45:56,923
+has limit 0 as well.
+
+650
+00:45:56,923 --> 00:46:02,064
+That's the polar transformation method.
+
+651
+00:46:02,483 --> 00:46:03,304
+On the other hand,
+
+652
+00:46:04,403 --> 00:46:05,324
+epsilon-delta method.
+
+653
+00:46:06,304 --> 00:46:06,584
+So,
+
+654
+00:46:07,144 --> 00:46:07,604
+how we use
+
+655
+00:46:07,604 --> 00:46:08,584
+the epsilon-delta method?
+
+656
+00:46:08,704 --> 00:46:09,844
+Let epsilon bigger than 0
+
+657
+00:46:09,844 --> 00:46:10,224
+be given.
+
+658
+00:46:14,452 --> 00:46:16,252
+So we want to choose delta.
+
+659
+00:46:17,732 --> 00:46:20,292
+So I'm going to choose it.
+
+660
+00:46:20,612 --> 00:46:23,072
+So and choose delta equals something.
+
+661
+00:46:23,612 --> 00:46:26,652
+So let's say we didn't write anything here yet.
+
+662
+00:46:27,272 --> 00:46:36,452
+So whenever our point is going to be within distance delta from this point 0, 0,
+
+663
+00:46:37,152 --> 00:46:41,852
+which means the distance between x, y, and 0, 0 is this.
+
+664
+00:46:41,852 --> 00:46:44,652
+This distance between x, y, and 0, 0 is this.
+
+665
+00:46:45,952 --> 00:46:52,612
+Whenever this distance is less than delta and is bigger than 0, we're going to have what?
+
+666
+00:46:52,692 --> 00:46:56,012
+We want to have our function.
+
+667
+00:46:56,552 --> 00:46:58,972
+We want to have f of x, y, minus l.
+
+668
+00:46:59,812 --> 00:47:00,812
+l is this.
+
+669
+00:47:01,372 --> 00:47:02,232
+This is the limit, 0.
+
+670
+00:47:02,992 --> 00:47:08,092
+We want to have f of x, y, minus l, the salt value of that, be less than epsilon.
+
+671
+00:47:08,652 --> 00:47:09,872
+What is this expression?
+
+672
+00:47:10,432 --> 00:47:11,712
+What do we know about this expression?
+
+673
+00:47:11,852 --> 00:47:14,872
+Well, everything is non-negative here.
+
+674
+00:47:14,952 --> 00:47:18,932
+So we can take everything outside the radical as x to the power of y to the power of r over
+
+675
+00:47:18,932 --> 00:47:21,092
+x to the power of 4 plus y to the power of 4.
+
+676
+00:47:21,412 --> 00:47:26,432
+Now this expression over here, using the same trick as we did over here,
+
+677
+00:47:28,412 --> 00:47:31,412
+y to the power of 4 over x to the power of 4 plus y to the power of 4.
+
+678
+00:47:32,052 --> 00:47:33,792
+The expression is less than or equal to 1.
+
+679
+00:47:34,632 --> 00:47:37,452
+So it's between 0 and 1, basically.
+
+680
+00:47:37,452 --> 00:47:40,692
+So this expression over here, how all expression is less than or equal to x squared.
+
+681
+00:48:11,852 --> 00:48:14,532
+root of x squared plus y squared is less than delta.
+
+682
+00:48:14,972 --> 00:48:17,412
+So x squared plus y squared is less than delta squared.
+
+683
+00:48:17,912 --> 00:48:22,432
+So if we choose our delta as square root of epsilon, this delta square is going to be epsilon.
+
+684
+00:48:22,792 --> 00:48:25,792
+So we have shown that this is less than epsilon.
+
+685
+00:48:25,792 --> 00:48:29,912
+So therefore, limit is equal to 0.
+
+686
+00:48:30,192 --> 00:48:32,252
+Proves limit is equal to 0.
+
+687
+00:48:33,312 --> 00:48:35,092
+Using the epsilon delta method.
+
+688
+00:48:38,547 --> 00:48:43,427
+Okay, the next question, so three questions are left, three problems are left.
+
+689
+00:48:44,387 --> 00:48:50,547
+Let fxy equals one minus cosine squared of x squared plus y squared over x squared plus y squared.
+
+690
+00:48:51,167 --> 00:48:52,807
+Then xy is different than zero, zero.
+
+691
+00:48:53,267 --> 00:48:56,047
+And one over square of two, if xy is zero, zero.
+
+692
+00:48:56,627 --> 00:48:58,307
+Is f continuous at the origin?
+
+693
+00:48:59,507 --> 00:49:01,207
+So three conditions must solve.
+
+694
+00:49:01,567 --> 00:49:03,987
+First, f must be defined at that point.
+
+695
+00:49:05,607 --> 00:49:07,907
+Second, its limit must exist.
+
+696
+00:49:07,907 --> 00:49:11,207
+Third, the value of the function must be equal to the limit.
+
+697
+00:49:11,827 --> 00:49:12,767
+So let's check.
+
+698
+00:49:13,247 --> 00:49:14,207
+Is it defined there?
+
+699
+00:49:14,347 --> 00:49:14,587
+Yes.
+
+700
+00:49:14,867 --> 00:49:16,367
+At zero, zero, the function is defined.
+
+701
+00:49:17,287 --> 00:49:18,867
+The value of the function is one over root two.
+
+702
+00:49:19,027 --> 00:49:19,387
+It's defined.
+
+703
+00:49:20,207 --> 00:49:23,007
+Second, this limit exists.
+
+704
+00:49:24,107 --> 00:49:30,587
+Well, easiest way of finding the limit in this case is making polar transformation.
+
+705
+00:49:30,587 --> 00:49:34,307
+So let's let r be a square root of x squared plus y squared, basically.
+
+706
+00:49:34,307 --> 00:49:38,567
+Then as xy approaches zero, zero, r approaches zero.
+
+707
+00:49:39,027 --> 00:49:44,687
+So this limit, the limit of this function f of xy as xy approaches zero, zero is the limit
+
+708
+00:49:44,687 --> 00:49:45,267
+of this.
+
+709
+00:49:46,007 --> 00:49:52,827
+The limit of this is xy approaches zero, zero, which is limit as r approaches zero.
+
+710
+00:49:52,987 --> 00:49:55,987
+This is one minus cosine r divided by r squared.
+
+711
+00:49:55,987 --> 00:50:01,947
+Now, as r approaches zero, we get one minus one over zero, which is zero over zero.
+
+712
+00:50:02,447 --> 00:50:03,347
+So we apply L'Hôpital.
+
+713
+00:50:05,087 --> 00:50:06,367
+Derivative of one is zero.
+
+714
+00:50:06,887 --> 00:50:09,787
+Derivative of minus cosine r is sine r.
+
+715
+00:50:10,927 --> 00:50:12,727
+And derivative of r squared is two r.
+
+716
+00:50:13,147 --> 00:50:13,847
+We get this.
+
+717
+00:50:13,847 --> 00:50:16,727
+And we know this is a non-limit sine r over r.
+
+718
+00:50:17,507 --> 00:50:19,047
+Derivative, sorry.
+
+719
+00:50:19,467 --> 00:50:22,547
+The limit as r approaches zero of sine r over r is one.
+
+720
+00:50:23,207 --> 00:50:24,807
+So the limit of this is one over two.
+
+721
+00:50:25,667 --> 00:50:27,127
+So the first condition holds.
+
+722
+00:50:27,287 --> 00:50:28,807
+The function is defined at that point.
+
+723
+00:50:28,987 --> 00:50:30,187
+The second condition holds.
+
+724
+00:50:30,587 --> 00:50:31,947
+The limit exists at that point.
+
+725
+00:50:32,427 --> 00:50:33,747
+The third condition fails.
+
+726
+00:50:34,527 --> 00:50:37,207
+Value of the function must be equal to the limit.
+
+727
+00:50:37,467 --> 00:50:38,067
+They're not equal.
+
+728
+00:50:38,387 --> 00:50:39,687
+One over two and one over root two.
+
+729
+00:50:39,747 --> 00:50:42,647
+The limit of the function is not equal to the value of the function at that point.
+
+730
+00:50:42,647 --> 00:50:46,947
+Therefore, we conclude that this is not continuous at that point.
+
+731
+00:50:51,219 --> 00:50:51,719
+Ok.
+
+732
+00:50:57,940 --> 00:51:02,940
+Yükselen
+
+733
+00:51:27,940 --> 00:51:37,940
+We are going to look at the limits, so the limit as limit as xy approaches 00 of this function is the limit of this.
+
+734
+00:51:39,940 --> 00:51:40,940
+Sorry.
+
+735
+00:51:42,940 --> 00:51:43,940
+depends on the.
+
+736
+00:51:46,940 --> 00:51:47,940
+Okay.
+
+737
+00:51:47,940 --> 00:52:02,940
+So whenever y is zero basically whenever y is zero, I mean y is zero is the x axis right by zero is the x axis if y is zero if we approach this.
+
+738
+00:52:03,940 --> 00:52:11,940
+If we approach the point 00 along the line y equals zero the limit of the function is zero because it's value zero everywhere that like.
+
+739
+00:52:11,940 --> 00:52:17,940
+The other hand if y is different than zero, we have to approach through this function.
+
+740
+00:52:18,940 --> 00:52:22,940
+So we have to look at the limit of this function as xy approach 00.
+
+741
+00:52:23,940 --> 00:52:33,940
+Now, what do we know about sign one over y I don't care whenever y is different than zero I don't care what one over y is sign one over y is always between minus one and one.
+
+742
+00:52:33,940 --> 00:52:44,940
+So I see some sign is then get multiplied this x squared square is non negative so I can multiply any any felt by a non negative number.
+
+743
+00:52:45,940 --> 00:52:51,940
+It's not going to change the inequality size so we get minus x squares less than x square times this less than x square.
+
+744
+00:52:52,940 --> 00:52:54,940
+Now.
+
+745
+00:52:54,940 --> 00:52:56,940
+X y approach is 00.
+
+746
+00:52:56,940 --> 00:53:05,940
+This one approach is zero minus x square approaches zero x square approaches you so by the standard which term conclude that the function in the middle.
+
+747
+00:53:06,940 --> 00:53:12,940
+The X limit as x y approach 00 of x y which is the limit of this function approaches you as well.
+
+748
+00:53:13,940 --> 00:53:20,940
+Actually, something is missing here if y is zero limit is zero if y is different than zero limit is right so.
+
+749
+00:53:20,940 --> 00:53:23,940
+limit is zero through any path.
+
+750
+00:53:23,940 --> 00:53:41,940
+So now the first condition is all the function is defined there is value zero limit is zero and value of the function equal to the limit of the function about zero before we conclude that the function is continuous at point zero zero.
+
+751
+00:53:42,940 --> 00:53:44,940
+All three conditions all.
+
+752
+00:53:49,396 --> 00:53:53,536
+Okay, next question. Question 13. That's the last question for today.
+
+753
+00:53:58,056 --> 00:54:04,516
+Let fxy equals x square minus y square over x square plus y square for xy different than 0, 0.
+
+754
+00:54:04,856 --> 00:54:10,276
+Is it possible to define f0, 0 in a way that makes f continuous at the origin?
+
+755
+00:54:10,896 --> 00:54:12,856
+But it's like this one, for example.
+
+756
+00:54:12,856 --> 00:54:20,376
+For example, this function over here is undefined at y equals 0, right?
+
+757
+00:54:20,896 --> 00:54:25,236
+So whenever y is 0, this expression is undefined because it makes this denominator 0.
+
+758
+00:54:26,056 --> 00:54:28,936
+But we know that its limit is 0.
+
+759
+00:54:29,135 --> 00:54:38,196
+So if we define the function to be 0 whenever y is equal to 0, then it's going to be continuous at that point, 0, 0.
+
+760
+00:54:38,836 --> 00:54:40,836
+Now, look at this function.
+
+761
+00:54:40,836 --> 00:54:43,256
+This function is undefined at 0, 0.
+
+762
+00:54:44,156 --> 00:54:46,936
+When x is 0, 0, xy is 0, 0, this is undefined.
+
+763
+00:54:47,416 --> 00:54:50,956
+But can we define it in such a way that it's continuous?
+
+764
+00:54:52,796 --> 00:54:56,296
+To be able to make it continuous, its limit must exist.
+
+765
+00:54:56,356 --> 00:55:04,236
+So, for example, if the limit of fxy is xy approach 0, 0 of this function was equal to 5, for example,
+
+766
+00:55:04,856 --> 00:55:09,036
+then we could define, we could make this function piecewise defined,
+
+767
+00:55:09,036 --> 00:55:14,776
+and we could define its value at 0, 0 as 5, then it would be continuous.
+
+768
+00:55:14,836 --> 00:55:15,836
+It would become continuous.
+
+769
+00:55:16,256 --> 00:55:22,696
+So the only thing we need to check is whether the limit of this function as xy approaches 0, 0 exists or not.
+
+770
+00:55:22,696 --> 00:55:26,956
+Now, again, everything is square term.
+
+771
+00:55:26,956 --> 00:55:32,036
+So if we approach this function along this line, y equals mx,
+
+772
+00:55:32,536 --> 00:55:39,076
+then this becomes x square minus m square x square divided by x square plus m square x square.
+
+773
+00:55:39,416 --> 00:55:42,736
+And again, x squares can be factored and canceled out.
+
+774
+00:55:43,096 --> 00:55:45,556
+This is 1 minus m square over 1 plus m square.
+
+775
+00:55:45,676 --> 00:55:46,456
+Whose limit is this?
+
+776
+00:55:46,456 --> 00:55:50,276
+Again, so different values of m give different limits.
+
+777
+00:55:50,276 --> 00:55:55,416
+Therefore, by the two path test, we conclude that the limit of this function does not exist.
+
+778
+00:55:56,316 --> 00:56:03,736
+Now, once the limit does not exist, it is not possible to define f0, 0 in a way that makes f continuous at this point.
+
+779
+00:56:05,036 --> 00:56:06,956
+Because the limit doesn't exist anyway.
+
+780
+00:56:06,956 --> 00:56:14,155
+I mean, no matter what we define f0, 0 as, since the limit doesn't exist, it's never going to be continuous at 0, 0.
+
+781
+00:56:15,496 --> 00:56:17,856
+The second condition basically fails.
+
+782
+00:56:22,256 --> 00:56:24,336
+Okay, the next question is from derivatives.
+
+783
+00:56:24,676 --> 00:56:27,456
+So we covered only the first 13 questions.
+
+784
+00:56:27,936 --> 00:56:30,696
+Okay, so I uploaded this file.
+
+785
+00:56:31,396 --> 00:56:35,376
+File problems 14 is available on my AWS's website,
+
+786
+00:56:35,376 --> 00:56:40,916
+but we covered only the first 13 questions and these are only included on the exam.
+
+787
+00:56:40,916 --> 00:56:48,976
+The rest, starting from question 14 until the end of this file, not included on the exam.
+
+788
+00:56:49,796 --> 00:56:50,036
+Okay.
+
+789
+00:56:51,896 --> 00:56:53,516
+So that's it for today.
+
+790
+00:56:53,655 --> 00:56:55,696
+Any questions from whatever we covered today?
+
+791
+00:56:56,336 --> 00:57:01,516
+Tomorrow we will start, tomorrow I will start section 14.3, partial derivatives.
+
+792
+00:57:03,336 --> 00:57:04,416
+Any questions?
+
+793
+00:57:05,376 --> 00:57:07,916
+From today's lecture?
+
+794
+00:57:08,716 --> 00:57:10,916
+Or any other question?
+
+795
+00:57:11,416 --> 00:57:12,736
+Anything you would like to ask?
+
+796
+00:57:12,916 --> 00:57:14,036
+Thank you.
+
+797
+00:57:19,668 --> 00:57:44,108
+Again, on the exam, chapters 10, 11, 12, 13, and sections 14.1 and 14.2. These are included on the exam. These are graphing in the exam. What do you mean? It's multiple choice. The exam is multiple choice. There may be graphing multiple choice questions as well. But the whole exam is multiple choice, okay?
+
+798
+00:57:56,275 --> 00:57:57,295
+Any other question?
+
+799
+00:58:03,123 --> 00:58:08,423
+I mean, this is the first time, this is the first time we are making multiple choice exam on this course.
+
+800
+00:58:08,423 --> 00:58:16,603
+And I don't have example multiple choice questions from previous years because these are the problems from previous years.
+
+801
+00:58:17,783 --> 00:58:19,763
+They were all written exams.
+
+802
+00:58:20,263 --> 00:58:24,203
+And as I said, this is the first time we are making multiple choice exam.
+
+803
+00:58:26,963 --> 00:58:29,103
+And we don't have example questions.
+
+804
+00:58:30,884 --> 00:58:31,923
+Okay, another question.
+
+805
+00:58:33,123 --> 00:58:34,623
+I thank you all for listening.
+
+806
+00:58:37,163 --> 00:58:40,043
+And okay, that's it for today.
+
+807
+00:58:40,223 --> 00:58:41,163
+I'll see you tomorrow then.
+
+808
+00:58:43,884 --> 00:58:45,103
+You all have a nice day.
+
+809
+00:58:46,023 --> 00:58:46,463
+Bye.

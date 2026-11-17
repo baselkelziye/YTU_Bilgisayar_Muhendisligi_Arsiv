@@ -1,0 +1,3367 @@
+1
+00:00:21,524 --> 00:00:22,724
+Okay, hello everybody.
+
+2
+00:00:25,644 --> 00:00:27,743
+Let's wait a little bit.
+
+3
+00:00:29,884 --> 00:00:31,204
+One, two more minutes.
+
+4
+00:01:20,019 --> 00:01:22,019
+Tamam, sanırım başlayabiliriz.
+
+5
+00:01:50,019 --> 00:01:55,039
+[kişisel bilgi] Matbirde devam zorunluğu var mıydı?
+
+6
+00:01:55,699 --> 00:02:00,159
+Bölüm sayfasında çakışan dersler için daha öncesinde bir duyuru yayınlanmıştı.
+
+7
+00:02:00,259 --> 00:02:05,400
+Hani devamsızlık sorunu olmayacağıyla ilgili matematikte ama şu an öyle bir duyuru görmedim.
+
+8
+00:02:05,560 --> 00:02:09,500
+O yüzden de hani siz biliyor musunuz diye sormak istedim.
+
+9
+00:02:11,099 --> 00:02:16,579
+[kişisel bilgi]
+
+10
+00:02:16,699 --> 00:02:18,340
+[kişisel bilgi]
+
+11
+00:02:18,340 --> 00:02:21,379
+[kişisel bilgi]
+
+12
+00:02:21,379 --> 00:02:21,719
+O yüzden.
+
+13
+00:02:32,340 --> 00:02:33,300
+Düştü galiba.
+
+14
+00:02:35,719 --> 00:02:37,219
+Hocam sesimi duydunuz mu?
+
+15
+00:02:37,240 --> 00:02:38,180
+Ses gitti, değil mi?
+
+16
+00:02:41,120 --> 00:02:42,219
+Şu an geldi hocam.
+
+17
+00:02:47,828 --> 00:02:48,307
+Evet.
+
+18
+00:02:51,508 --> 00:02:54,367
+Tamam, kaç kişi var? 102 kişi. Ben dahil 102.
+
+19
+00:02:59,539 --> 00:03:00,439
+Okay, let me share.
+
+20
+00:03:07,828 --> 00:03:08,587
+Um,
+
+21
+00:03:12,723 --> 00:03:18,363
+Evet, şimdi ben de 25 problemi ile ilgili bir soru var.
+
+22
+00:03:24,580 --> 00:03:28,580
+Bu, bu file, bu problem 10,
+
+23
+00:03:28,580 --> 00:03:36,580
+bu problem 10, bu problem 10,
+
+24
+00:03:36,580 --> 00:03:52,580
+bu problem 10, bu problem 10, bu problem 10,
+
+25
+00:03:50,771 --> 00:03:54,012
+Faces Yıldız, yar, slash
+
+26
+00:03:57,716 --> 00:03:58,716
+Hoşçakalın.
+
+27
+00:04:08,147 --> 00:04:18,028
+Okay, if you go to this website, you can find this file. This file is there. Okay, these problems, you can find them there.
+
+28
+00:04:21,684 --> 00:04:25,684
+Alright, let's start with...
+
+29
+00:04:34,803 --> 00:04:41,003
+Okay, find the limit of the sequence with general term a n equals n minus ln e to the power n plus 1.
+
+30
+00:04:43,403 --> 00:04:45,543
+Now first of all, let me look at this.
+
+31
+00:04:47,123 --> 00:04:48,743
+Let me look at the sequence.
+
+32
+00:04:49,383 --> 00:04:54,283
+As n approaches infinity, so as n approaches infinity, what does it behave like?
+
+33
+00:04:54,343 --> 00:04:55,303
+What does it look like?
+
+34
+00:04:55,303 --> 00:05:04,563
+When an approach is infinity, this e to the power n is going to dominate 1.
+
+35
+00:05:05,323 --> 00:05:07,243
+So this is going to dominate 1.
+
+36
+00:05:07,323 --> 00:05:09,144
+So this is going to be like e to the power n.
+
+37
+00:05:09,603 --> 00:05:16,583
+And we know that ln e to the power n is just n because the logarithmic function and the exponential function are inverses of each other.
+
+38
+00:05:17,163 --> 00:05:18,683
+ln e to the power n is just n.
+
+39
+00:05:20,423 --> 00:05:25,723
+So if we didn't have this 1 over here, this would be just n and we would have n minus n.
+
+40
+00:05:26,563 --> 00:05:28,583
+But what does this 1 make here?
+
+41
+00:05:29,003 --> 00:05:29,863
+What does it change?
+
+42
+00:05:30,843 --> 00:05:33,524
+So technically, how are we going to find its limit?
+
+43
+00:05:33,524 --> 00:05:42,483
+So since we know the logarithmic function has some properties, by making use of those properties, we can find the limit of this sequence.
+
+44
+00:05:43,823 --> 00:05:51,803
+So the trick here is, the trick here is to replace n, to replace n with this, ln e to the power n.
+
+45
+00:05:51,803 --> 00:05:59,223
+And when we make that, now we know that ln a minus ln b is the same as ln a over b.
+
+46
+00:05:59,443 --> 00:06:05,703
+So we can write this difference now as ln e to the power n over e to the power n plus 1.
+
+47
+00:06:05,703 --> 00:06:15,623
+And now it's easier to find the limit because now the limit of a n as n approaches infinity is the limit of this as n approaches infinity.
+
+48
+00:06:15,623 --> 00:06:18,603
+And here we have a rational expression.
+
+49
+00:06:19,043 --> 00:06:22,384
+We can divide both the numerator and denominator by e to the power n.
+
+50
+00:06:23,103 --> 00:06:26,024
+That will give us 1 over 1 plus 1 over e to the power n.
+
+51
+00:06:26,024 --> 00:06:31,103
+And now as n approaches infinity, this part, 1 over e to the power n, that approach is 0.
+
+52
+00:06:31,483 --> 00:06:32,863
+So we get ln 1.
+
+53
+00:06:33,163 --> 00:06:34,123
+And ln 1 is 0.
+
+54
+00:06:34,603 --> 00:06:37,903
+So that's the limit of this sequence.
+
+55
+00:06:38,463 --> 00:06:39,024
+0.
+
+56
+00:06:39,823 --> 00:06:44,823
+As n approaches infinity, this sequence approaches 0.
+
+57
+00:06:44,823 --> 00:06:48,923
+Okay, the second one.
+
+58
+00:06:49,144 --> 00:06:50,943
+Toplate the limit of the sequence.
+
+59
+00:06:51,183 --> 00:06:55,943
+A n equals n square over 2n plus 1 times sine 2 over n.
+
+60
+00:07:02,463 --> 00:07:06,004
+There's a very trick here that is used.
+
+61
+00:07:06,963 --> 00:07:14,803
+The trick is that limit as n as x approaches 0 of sine x over x is equal to 0.
+
+62
+00:07:14,823 --> 00:07:21,823
+The limit as x approaches 0 of sine x over x is equal to 0.
+
+63
+00:07:21,823 --> 00:07:36,103
+In other words, when x is very small, when x is close to 0, sine x and x are sine x behaves like x.
+
+64
+00:07:36,624 --> 00:07:41,024
+So when we know that, here, look at this, sine 2 over n.
+
+65
+00:07:41,024 --> 00:07:45,623
+Now we are interested in the limit of this whole expression as n approaches infinity.
+
+66
+00:07:46,163 --> 00:07:49,963
+As n approaches infinity, this 2 to the power n becomes small.
+
+67
+00:07:50,443 --> 00:07:51,983
+This 2 to the power n approaches 0.
+
+68
+00:07:51,983 --> 00:07:57,163
+So this is going to be like sine 0 as n approaches infinity.
+
+69
+00:07:57,524 --> 00:08:08,323
+And of course, when we look at this, this is going to be an indeterminous form of type infinity times 0.
+
+70
+00:08:09,043 --> 00:08:10,524
+But how are we going to resolve it?
+
+71
+00:08:10,524 --> 00:08:15,264
+Now, as I said, as an approach is infinity, this part approaches 0.
+
+72
+00:08:15,923 --> 00:08:17,363
+And what did we say?
+
+73
+00:08:18,363 --> 00:08:22,144
+Near 0, sine x behaves like x.
+
+74
+00:08:22,583 --> 00:08:26,264
+So this sine 2 to the power n is going to be like 2 to the power n.
+
+75
+00:08:26,923 --> 00:08:29,623
+So the trick is to replace it with 2 to the power n.
+
+76
+00:08:29,623 --> 00:08:34,063
+The limit is n square over 2n plus 1 times sine 2 to the power n.
+
+77
+00:08:34,740 --> 00:08:38,560
+We just multiply and divide this term by 2 to the power n.
+
+78
+00:08:39,539 --> 00:08:42,960
+Just multiply by 2 to the power n and then divide by 2 to the power n.
+
+79
+00:08:43,560 --> 00:08:44,500
+Why are we doing that?
+
+80
+00:08:44,560 --> 00:08:54,139
+We know that this limit, so as n approaches, if we call this 2 over n as x, this is like
+
+81
+00:08:54,139 --> 00:08:55,259
+sine x over x.
+
+82
+00:08:55,899 --> 00:08:57,460
+This is sine x over x.
+
+83
+00:08:58,399 --> 00:08:59,560
+Sine x over x.
+
+84
+00:08:59,560 --> 00:09:03,759
+And as n approaches infinity, this 2 to the power n x approaches 0.
+
+85
+00:09:03,759 --> 00:09:07,860
+So this is going to be the limit as x approaches 0 of sine x over x.
+
+86
+00:09:08,399 --> 00:09:09,720
+We know that its limit is 1.
+
+87
+00:09:10,340 --> 00:09:12,480
+That's one of the known limits.
+
+88
+00:09:12,740 --> 00:09:13,580
+You need to know this limit.
+
+89
+00:09:14,799 --> 00:09:16,180
+But now, let me do this.
+
+90
+00:09:16,320 --> 00:09:17,940
+Now we can simplify this part.
+
+91
+00:09:18,279 --> 00:09:22,360
+Part is going to be 2n squared over 2n squared plus n, this part.
+
+92
+00:09:23,399 --> 00:09:24,740
+And this part is this.
+
+93
+00:09:25,539 --> 00:09:30,240
+And yeah, just replace 2 over n by t here on the left side.
+
+94
+00:09:30,240 --> 00:09:35,860
+On the left side, sorry, here, just this is just divide the numerator and denominator
+
+95
+00:09:35,860 --> 00:09:36,659
+by n squared.
+
+96
+00:09:36,779 --> 00:09:38,539
+We get 2 over 2 plus 1 over n.
+
+97
+00:09:39,000 --> 00:09:43,139
+And on this side, just replace 2 over n with t.
+
+98
+00:09:43,820 --> 00:09:46,960
+And as n approaches infinity, t approaches 0.
+
+99
+00:09:47,360 --> 00:09:50,399
+So this is the limit as t approaches 0 of sine t over t.
+
+100
+00:09:50,399 --> 00:09:53,860
+Now, this limit is just 2 over 2, which is 1.
+
+101
+00:09:54,220 --> 00:09:56,259
+And we know that this limit is equal to 1.
+
+102
+00:09:56,700 --> 00:09:58,159
+At the end, we get 1.
+
+103
+00:09:58,580 --> 00:10:00,059
+That's the limit of this sequence.
+
+104
+00:10:00,060 --> 00:10:19,060
+So this is the limit of this sequence.
+
+105
+00:10:04,884 --> 00:10:06,204
+Another similar example.
+
+106
+00:10:06,744 --> 00:10:13,504
+And the limit of the sequence and the power of 5 over 2 over 2n squared plus 1 sine 1 over n root n.
+
+107
+00:10:13,724 --> 00:10:19,964
+Again, as n approaches infinity, as n approaches infinity, this term, 1 over root n approaches 0.
+
+108
+00:10:20,524 --> 00:10:22,864
+So we can look at this expression.
+
+109
+00:10:23,024 --> 00:10:28,604
+We can manipulate this expression so that we get an expression of this form.
+
+110
+00:10:28,783 --> 00:10:30,744
+Sine 1 over root n over 1 over root n.
+
+111
+00:10:31,264 --> 00:10:33,244
+Because we know that its limit is going to be 1.
+
+112
+00:10:33,244 --> 00:10:37,264
+So to obtain such a quotient, what do we do?
+
+113
+00:10:37,464 --> 00:10:38,984
+We start with this expression.
+
+114
+00:10:39,364 --> 00:10:42,504
+We multiply and divide it by 1 over root n.
+
+115
+00:10:43,004 --> 00:10:45,563
+Times 1 over root n divided by 1 over root n.
+
+116
+00:10:46,244 --> 00:10:48,943
+And simplify this part.
+
+117
+00:10:49,764 --> 00:10:50,803
+It gives us what?
+
+118
+00:10:50,923 --> 00:10:54,764
+n to the power of 5 over 2 divided by, multiply this by root n.
+
+119
+00:10:54,803 --> 00:10:58,423
+We get 2 to the power of n to the power of 5 over 2 plus n to the power of 1 half.
+
+120
+00:10:58,943 --> 00:11:01,964
+Times the limit of this quotient.
+
+121
+00:11:01,964 --> 00:11:11,624
+Again, just on the left side, on this side, divide the numerator and denominator by the highest power of n, n to the power of 5 half.
+
+122
+00:11:11,864 --> 00:11:14,864
+We get 1 over 2 plus 1 over n squared.
+
+123
+00:11:14,864 --> 00:11:18,903
+And on this side, just replace 1 over root n by t.
+
+124
+00:11:19,504 --> 00:11:22,764
+And we know that as an approach is infinity, t approaches 0.
+
+125
+00:11:22,884 --> 00:11:24,584
+So this is sine t over t.
+
+126
+00:11:25,004 --> 00:11:27,024
+The limit of it as t approaches 0.
+
+127
+00:11:27,764 --> 00:11:32,744
+The limit of this part is going to be 1 over 2 because this approach is 0.
+
+128
+00:11:32,744 --> 00:11:35,884
+And this limit of this is known to be 1.
+
+129
+00:11:36,423 --> 00:11:39,344
+The limit as t approaches 0 of sine t over t is 1.
+
+130
+00:11:39,764 --> 00:11:42,183
+So we get 1 half times 1, which is equal to 1 half.
+
+131
+00:11:45,587 --> 00:11:50,387
+Next question, a recursively defined sequence.
+
+132
+00:11:52,788 --> 00:11:56,947
+So a sequence a n is defined recursively as a1 equals 1 half.
+
+133
+00:11:57,747 --> 00:12:03,507
+The first term is 1 half and for any natural number n bigger than or equal to 1 a n plus
+
+134
+00:12:03,507 --> 00:12:11,747
+1 is defined as square root of 3 plus a n minus 1. So the question is if it is known that the limit
+
+135
+00:12:11,747 --> 00:12:16,147
+as n approaches infinity of a n is 1. The limit of a n is 1.
+
+136
+00:12:18,548 --> 00:12:22,867
+Find the limit of this sequence a n minus 1 or minus 1 over a n minus 1.
+
+137
+00:12:25,347 --> 00:12:31,747
+This is the question limit as n approaches infinity of a n plus 1 minus 1 over a n minus 1.
+
+138
+00:12:32,387 --> 00:12:36,867
+So what do we know? We know that a n plus 1 is this. It's given here.
+
+139
+00:12:36,867 --> 00:12:43,187
+root 3 plus a n minus 1. Another minus 1 comes from this.
+
+140
+00:12:45,267 --> 00:12:49,587
+Now to get rid of the radical, the get rid of the radical.
+
+141
+00:12:51,747 --> 00:12:52,548
+The trick is
+
+142
+00:12:55,028 --> 00:13:00,548
+of course before that we simplify this, we get root 3 plus a n minus 2.
+
+143
+00:13:01,187 --> 00:13:05,427
+And of course, first before applying any trick, look at this. What is the limit of this?
+
+144
+00:13:06,067 --> 00:13:08,147
+As n approaches infinity. What are we given?
+
+145
+00:13:08,147 --> 00:13:12,707
+Are given that the limit then approaches infinity of a n is equal to 1.
+
+146
+00:13:14,387 --> 00:13:17,908
+This is equal to 1. So when we replace that
+
+147
+00:13:20,467 --> 00:13:21,827
+here, what do we get?
+
+148
+00:13:22,387 --> 00:13:27,908
+Fk of 3 plus 1. That's 4. Fk of 4 is 2. So 2 minus 2 is 0.
+
+149
+00:13:27,908 --> 00:13:34,867
+In a denominator, we get 1 minus 1, which is also 0. So we get an indeterminate form of type 0 over 0.
+
+150
+00:13:34,867 --> 00:13:38,867
+So to deal with this indeterminate form, the trick is to multiply this
+
+151
+00:13:38,867 --> 00:13:44,947
+numerator by its conjugate, multiply and divide by the conjugate of this to get rid of the radical.
+
+152
+00:13:45,508 --> 00:13:49,987
+So we multiply and divide this by the conjugate of this, which is root 3 plus n plus 2.
+
+153
+00:13:49,987 --> 00:14:18,947
+So we get rid of this.
+
+154
+00:13:54,932 --> 00:13:56,932
+Şimdi bu n'ı da bu n'ı da.
+
+155
+00:13:56,932 --> 00:14:26,932
+Şimdi bu n'ı da bu n'ı da bu n'ı da bu n'ı da bu n'ı da bu n'ı da bu n'ı da bu n'ı da bu n'ı da bu n'ı da bu n'ı da bu n'ı da bu n'ı da bu n'ı da bu n'ı da bu n'ı da bu n'ı da bu n'ı da bu n'ı da bu n'ı da bu n'ı da bu n'ı da bu n'ı da bu n'ı da bu n'ı da bu n'ı da bu n'ı da bu n'ı da bu n'ı da bu n'ı da bu n'ı da bu n'ı da bu n'ı da bu n'ı da bu n'ı da bu n'ı da bu n'ı da bu n'ı da bu n'ı da bu n'ı da bu n'ı da bu n'ı da bu n'ı da bu n'ı da bu n
+
+156
+00:14:26,932 --> 00:14:56,932
+n'ı da bu n'ı da bu n'ı da bu n'ı da bu n'ı da bu n'ı da bu n'ı da bu n'ı da bu n'ı da bu n'ı da bu n'ı da bu n'ı da bu n'ı da bu n'ı da bu n'ı da bu n'ı da bu n'ı da bu n'ı da bu n'ı da bu n'ı da bu n'ı da bu n'ı da bu n'ı da bu n'ı da bu n'ı da bu n'ı da bu n'ı da bu n'ı da bu n'ı da bu n'ı da bu n'ı da bu n'ı da bu n'ı da bu n'ı da bu n'ı da bu n'ı da bu n'ı da bu n'ı da bu n'ı da bu n'ı da bu n'ı da bu n'ı da bu n'ı da bu n'ı da bu n
+
+157
+00:14:56,932 --> 00:15:03,932
+series are convergent or divergent. So that's the main question. In many, in many problems in this chapter,
+
+158
+00:15:06,392 --> 00:15:10,132
+we're only interested in whether a given series is convergent or divergent.
+
+159
+00:15:19,604 --> 00:15:23,604
+Evet, bu.
+
+160
+00:15:23,604 --> 00:15:27,604
+N equals 1 to infinity 3 to power n over 1 plus n 3 to power n.
+
+161
+00:15:27,604 --> 00:15:31,604
+Now, first of all, let's remember all the tests.
+
+162
+00:15:31,604 --> 00:15:33,604
+Look at this.
+
+163
+00:15:33,604 --> 00:15:35,604
+Um...
+
+164
+00:15:45,076 --> 00:15:51,716
+So, first of all, when n is a positive integer, 3 to the power n is positive, n times 3 to the power n is positive.
+
+165
+00:15:51,836 --> 00:15:53,196
+So, everything is positive, right?
+
+166
+00:15:53,436 --> 00:16:01,995
+So, we can apply integral test, comparison test, limit comparison test, ratio test, root test.
+
+167
+00:16:02,355 --> 00:16:04,176
+Actually, this can be solved in many ways.
+
+168
+00:16:04,296 --> 00:16:09,796
+But the easiest way is to analyze what happens to this term when n gets too large.
+
+169
+00:16:09,975 --> 00:16:14,776
+When n gets too large, this n times 3 to the power n dominates 1, right?
+
+170
+00:16:15,076 --> 00:16:16,375
+So, I can ignore this one.
+
+171
+00:16:16,836 --> 00:16:21,416
+So, it's going to look like 3 to the power n over n times 3 to the power n, which is 1 over n.
+
+172
+00:16:21,716 --> 00:16:23,896
+So, I can compare this with 1 over n.
+
+173
+00:16:26,135 --> 00:16:30,436
+If we compare this with 1 over n, we'll make limit comparison.
+
+174
+00:16:31,436 --> 00:16:33,276
+Look at the quotient, positive quotient.
+
+175
+00:16:33,436 --> 00:16:38,355
+When we simplify this, we get n times 3 to the power n over 1 plus n times 3 to the power n.
+
+176
+00:16:38,596 --> 00:16:43,456
+If we divide both the numerator and denominator by n times 3 to the power n, we get 1 over
+
+177
+00:16:43,456 --> 00:16:46,676
+1 over n times 3 to the power n plus 1, whose limit is 1.
+
+178
+00:16:47,336 --> 00:16:52,536
+So, in the limit comparison test, we are interested in whether the limit is 0, a positive integer,
+
+179
+00:16:52,735 --> 00:16:53,276
+or infinity.
+
+180
+00:16:53,716 --> 00:16:54,735
+So, it's a positive integer.
+
+181
+00:16:54,735 --> 00:17:00,995
+And the first condition of the limit comparison test says that the series with this term and
+
+182
+00:17:00,995 --> 00:17:04,935
+the series with this term are either both convergent or both divergent.
+
+183
+00:17:04,935 --> 00:17:10,415
+So, we know that this one diverges.
+
+184
+00:17:10,415 --> 00:17:12,375
+It's the harmonic series.
+
+185
+00:17:12,375 --> 00:17:18,016
+Therefore, by the limit comparison test, we conclude that given series also convergent.
+
+186
+00:17:19,576 --> 00:17:20,716
+Can you repeat this example?
+
+187
+00:17:23,016 --> 00:17:23,796
+I didn't understand.
+
+188
+00:17:26,556 --> 00:17:26,895
+So,
+
+189
+00:17:29,596 --> 00:17:31,655
+which part did you understand?
+
+190
+00:17:31,655 --> 00:18:02,056
+I mean,
+
+191
+00:17:39,667 --> 00:17:40,747
+Oh, we got 1 over n.
+
+192
+00:17:40,907 --> 00:17:42,667
+So why am I comparing it to 1 over n?
+
+193
+00:17:43,267 --> 00:17:43,507
+Okay.
+
+194
+00:17:45,247 --> 00:17:49,007
+Again, first, I said that this is always positive, right?
+
+195
+00:17:49,327 --> 00:17:50,687
+These terms are always positive.
+
+196
+00:17:51,207 --> 00:17:57,327
+So I can apply integral test, comparison test, limit comparison test, root test, ratio test, whichever one I apply.
+
+197
+00:17:58,247 --> 00:17:59,707
+First, I try comparison.
+
+198
+00:17:59,847 --> 00:18:01,087
+Can I compare this with something?
+
+199
+00:18:02,207 --> 00:18:09,187
+What I say, when n is too large in the denominator here, in the denominator, when n is too large,
+
+200
+00:18:09,667 --> 00:18:14,087
+this, n 3 to the power n dominates 1, right?
+
+201
+00:18:14,507 --> 00:18:15,807
+So just ignore one.
+
+202
+00:18:16,607 --> 00:18:17,687
+Just ignore one.
+
+203
+00:18:18,427 --> 00:18:18,967
+Ignore it.
+
+204
+00:18:19,767 --> 00:18:20,447
+What do we have?
+
+205
+00:18:20,887 --> 00:18:24,727
+We have 3 to the power n over n times 3 to the power n.
+
+206
+00:18:26,147 --> 00:18:29,187
+Just 3 to the power n is cancelled, we get 1 over n, right?
+
+207
+00:18:29,247 --> 00:18:29,647
+That's it.
+
+208
+00:18:30,487 --> 00:18:34,407
+So when n is too large, this is like 1 over n.
+
+209
+00:18:35,547 --> 00:18:38,807
+So that's why I'm comparing it 1 over n.
+
+210
+00:18:39,667 --> 00:18:43,347
+Now I'm like making limit comparison with 1 over n.
+
+211
+00:18:43,347 --> 00:18:46,347
+The rest is just algebra.
+
+212
+00:18:47,347 --> 00:18:51,788
+Making some limit, which is a positive integer.
+
+213
+00:18:52,367 --> 00:18:58,507
+So the limit comparison test says that if this one diverges, this one also diverges.
+
+214
+00:18:58,507 --> 00:19:01,127
+If this one converges, this one also converges.
+
+215
+00:19:01,207 --> 00:19:04,647
+So we know that the other one also diverges.
+
+216
+00:19:05,048 --> 00:19:05,927
+Can we use ratio test?
+
+217
+00:19:05,987 --> 00:19:06,187
+Yes.
+
+218
+00:19:06,307 --> 00:19:08,327
+The ratio test also works for this one.
+
+219
+00:19:10,507 --> 00:19:12,347
+You can also use the ratio test.
+
+220
+00:19:12,347 --> 00:19:28,727
+It's a positive integer.
+
+221
+00:19:27,667 --> 00:19:57,667
+Evet, bu bir n yöntem, n yöntem 9 n yöntem n yöntem n yöntem n yöntem n yöntem n yöntem n yöntem n yöntem n yöntem n yöntem n yöntem n yöntem n yöntem n yöntem n yöntem n yöntem n yöntem n yöntem n yöntem n yöntem n yöntem n yöntem n yöntem n yöntem n yöntem n yöntem n yöntem n yöntem n yöntem n yöntem n yöntem n yöntem n yöntem n yöntem n yöntem n yöntem n yöntem n yöntem n yöntem n yöntem n yöntem n y
+
+222
+00:19:57,667 --> 00:20:27,667
+n yöntem n yöntem n yöntem n yöntem n yöntem n yöntem n yöntem n yöntem n yöntem n yöntem n yöntem n yöntem n yöntem n yöntem n yöntem n yöntem n yöntem n yöntem n yöntem n yöntem n yöntem n yöntem n yöntem n yöntem n yöntem n yöntem n yöntem n yöntem n yöntem n yöntem n yöntem n yöntem n yöntem n yöntem n yöntem n yöntem n yöntem n yöntem n yöntem n yöntem n yöntem n yöntem n yöntem n yöntem n
+
+223
+00:20:27,667 --> 00:20:38,807
+What does the ratio test say? If the limit is less than 1, the series converges. If the limit is bigger than 1, the series diverges. If the limit is equal to 1, we don't know. We have to apply some other tests in that case.
+
+224
+00:20:39,347 --> 00:20:45,247
+Now in this case, the limit is 0, it's less than 1, but the ratio test says that the series converges.
+
+225
+00:20:47,887 --> 00:20:50,907
+Okay, so this is just a simple application of the ratio test.
+
+226
+00:20:53,727 --> 00:20:54,727
+Next example.
+
+227
+00:20:54,727 --> 00:21:08,447
+Equals 1 to infinity n over n plus 1 to the power n squared. Again, all terms are positive. I can apply all those terms. And when we look at this, this is something to the power n squared.
+
+228
+00:21:09,227 --> 00:21:17,647
+So if I take the nth root of that, it's going to become simpler. So the best test to be applied to this one is the root test.
+
+229
+00:21:17,647 --> 00:21:31,487
+If we call this n, n over n plus 1 to the power n squared, then nth root of n is going to be nth root of this, which is n over n plus 1 to the power n.
+
+230
+00:21:31,487 --> 00:21:41,807
+nth root of n, which is written as 1 over n plus 1 over n to the power n. And this n plus 1 over n can be written as 1 plus 1 over n.
+
+231
+00:21:42,527 --> 00:21:45,607
+And what do we know? This is one of the known limits, commonly used limits.
+
+232
+00:21:45,607 --> 00:21:51,507
+n plus 1 plus 1 over n to the power n. Its limit is e as an approach is infinity.
+
+233
+00:21:52,327 --> 00:22:00,788
+So as an approach is infinity, the limit of this is going to be 1 over e, which is 1 over e.
+
+234
+00:22:00,788 --> 00:22:07,788
+We know that e is a number 2.7 something. So 1 over e is going to be less than 1. That's what we are interested in.
+
+235
+00:22:07,788 --> 00:22:13,788
+In the ratio test and the root test, in the root test, if the limit is less than 1, the series converges.
+
+236
+00:22:13,788 --> 00:22:15,788
+If the limit is bigger than 1, the series diverges.
+
+237
+00:22:17,788 --> 00:22:23,788
+So the limit is less than 1 in this case. So the root test says that the series converges.
+
+238
+00:22:23,788 --> 00:22:51,788
+Any questions so far on this example 6, 7?
+
+239
+00:22:35,412 --> 00:22:36,531
+Alright, next example.
+
+240
+00:22:40,500 --> 00:22:45,720
+1 to infinity sin 3 to the power minus n over 1 plus 3 to the power n.
+
+241
+00:22:47,279 --> 00:22:51,259
+So this is kind of tricky, but when we analyze this,
+
+242
+00:22:52,180 --> 00:22:56,460
+again, sin 3 to the power minus n, which is like what?
+
+243
+00:22:56,640 --> 00:23:00,579
+This 3 to the power minus n is like 1 over 3 to the power n.
+
+244
+00:23:00,920 --> 00:23:07,819
+So when n is a positive integer, this takes the values 1, 1 over 3, 1 over 9, 1 over 27, and so on.
+
+245
+00:23:07,819 --> 00:23:09,900
+So these numbers are always less than 1.
+
+246
+00:23:10,500 --> 00:23:12,400
+And these numbers are always less than 1 means.
+
+247
+00:23:12,579 --> 00:23:14,259
+Sine of that is going to be always positive.
+
+248
+00:23:14,880 --> 00:23:16,180
+This is always going to be positive.
+
+249
+00:23:16,960 --> 00:23:18,119
+Denominator is also positive.
+
+250
+00:23:18,940 --> 00:23:21,359
+So I can have, again, apply all those tests.
+
+251
+00:23:21,859 --> 00:23:22,700
+But what do you know?
+
+252
+00:23:22,779 --> 00:23:24,099
+Let's analyze this again.
+
+253
+00:23:24,579 --> 00:23:27,140
+What does it look like when n is too large?
+
+254
+00:23:28,000 --> 00:23:31,539
+When n is too large, denominator is like 3 to the power n.
+
+255
+00:23:32,279 --> 00:23:35,240
+The denominator is like just 3 to the power n when n is too large.
+
+256
+00:23:35,240 --> 00:23:36,299
+How about the numerator?
+
+257
+00:23:37,420 --> 00:23:39,980
+Well, I don't care what this is.
+
+258
+00:23:40,500 --> 00:23:43,259
+I don't care what is inside the sine function.
+
+259
+00:23:43,900 --> 00:23:46,859
+Sine of something is always less than 1.
+
+260
+00:23:47,500 --> 00:23:49,779
+This is always less than 1, right?
+
+261
+00:23:51,319 --> 00:23:53,240
+The numerator is always less than 1.
+
+262
+00:23:53,299 --> 00:23:54,519
+The denominator grows.
+
+263
+00:23:54,660 --> 00:23:56,420
+The denominator is like 3 to the power n.
+
+264
+00:23:56,420 --> 00:23:58,740
+So actually we can make comparison.
+
+265
+00:23:59,519 --> 00:24:00,640
+We can apply comparison.
+
+266
+00:24:01,039 --> 00:24:01,740
+What do we know?
+
+267
+00:24:01,880 --> 00:24:10,420
+For all n, this 0 is less than 3 power minus n, which is 1 over 3 to the power n, which is less than 1 over 3.
+
+268
+00:24:10,660 --> 00:24:11,740
+This is always true.
+
+269
+00:24:11,740 --> 00:24:20,420
+And therefore, sine 3 to the power minus n is sine of something between 0 and 1 over 3, which is always between 0 and 1.
+
+270
+00:24:20,420 --> 00:24:30,880
+And therefore, when I divide this by 1 plus 3 to the power n, it's going to be positive.
+
+271
+00:24:30,880 --> 00:24:39,240
+Bigger than 0 and this is going to be less than or equal to 1 over 1 plus 3 to the power n, which is also less than or equal to 1 over 3 to the power n.
+
+272
+00:24:39,240 --> 00:24:40,599
+Because this one is a bigger denominator.
+
+273
+00:24:40,599 --> 00:24:44,559
+And now we know that some of these converge.
+
+274
+00:24:46,019 --> 00:24:47,980
+We know that some of these converge.
+
+275
+00:24:48,940 --> 00:24:50,319
+There's a geometric series.
+
+276
+00:24:51,460 --> 00:24:55,500
+It's a ratio because 1 over 3 is less than 1.
+
+277
+00:24:55,759 --> 00:24:59,980
+Therefore, by the comparison test, this is smaller than that.
+
+278
+00:25:00,339 --> 00:25:01,420
+This is smaller than that.
+
+279
+00:25:01,819 --> 00:25:05,940
+So the comparison test says that the given series also works.
+
+280
+00:25:14,228 --> 00:25:19,067
+Okay, n equals 1 to infinity, 1 over 2 n squared plus n sine n.
+
+281
+00:25:22,996 --> 00:25:26,956
+Again, first let's look at this and let's make some analogies.
+
+282
+00:25:29,236 --> 00:25:36,416
+Well, this sine n, this is going to be between minus 1 and 1 always.
+
+283
+00:25:36,896 --> 00:25:42,615
+So this term over here is going to be always, this term is always going to be between minus n and n.
+
+284
+00:25:43,496 --> 00:25:49,136
+Therefore, when n gets large, this term is always going to be positive actually.
+
+285
+00:25:49,136 --> 00:26:00,196
+And I mean, again, since this is going to be just between minus n and n, when n is large, this n squared term is going to dominate.
+
+286
+00:26:01,296 --> 00:26:04,396
+This n squared term is going to be dominating term.
+
+287
+00:26:04,996 --> 00:26:09,615
+So when n is too large, this is going to be just like 1 over 2 n squared.
+
+288
+00:26:10,716 --> 00:26:15,276
+And we know that that's a p series with n p equals 2, it's going to be convergent.
+
+289
+00:26:15,276 --> 00:26:19,476
+So I can try to compare this with 1 over n squared, something like that.
+
+290
+00:26:19,836 --> 00:26:21,836
+So let's make this analysis, start this.
+
+291
+00:26:22,496 --> 00:26:26,176
+Can actually, yes, we can actually limit compare it with 1 over n squared.
+
+292
+00:26:26,336 --> 00:26:28,115
+We can make limit comparison 1 over n squared.
+
+293
+00:26:29,836 --> 00:26:31,256
+Again, how did I get that?
+
+294
+00:26:31,615 --> 00:26:33,816
+How did I get this?
+
+295
+00:26:34,216 --> 00:26:35,916
+Why am I comparing it 1 over n squared?
+
+296
+00:26:36,036 --> 00:26:37,556
+Again, what is this?
+
+297
+00:26:37,556 --> 00:26:42,676
+I don't know what sine n is, but I know that it's always between minus 1 and 1.
+
+298
+00:26:42,816 --> 00:26:45,796
+Therefore, n times sine n is always between minus n and n.
+
+299
+00:26:46,456 --> 00:26:47,336
+Minus n and n.
+
+300
+00:26:47,416 --> 00:26:49,256
+Between minus n and n means it's linear.
+
+301
+00:26:49,536 --> 00:26:50,656
+It's in terms of n.
+
+302
+00:26:51,476 --> 00:26:56,976
+And the square term, n squared, is going to be dominating the n term over here.
+
+303
+00:26:57,615 --> 00:26:59,536
+Therefore, this is going to be the dominating term.
+
+304
+00:26:59,936 --> 00:27:01,816
+So this is going to be like 1 over 2 n squared.
+
+305
+00:27:01,816 --> 00:27:06,516
+We can compare it with 1 over 2 n squared or 1 over n squared.
+
+306
+00:27:06,516 --> 00:27:07,176
+It doesn't matter.
+
+307
+00:27:07,316 --> 00:27:08,536
+That's just a constant there.
+
+308
+00:27:09,676 --> 00:27:12,036
+So when we compare it 1 over n squared, what do we get?
+
+309
+00:27:12,115 --> 00:27:15,836
+This quotient is equal to n squared over 2 n squared plus n sine n.
+
+310
+00:27:16,296 --> 00:27:19,615
+Now divide both the numerator and denominator by n squared.
+
+311
+00:27:19,796 --> 00:27:22,736
+We get 1 over 2 plus sine n over n.
+
+312
+00:27:23,156 --> 00:27:25,276
+And as n approaches infinity, be careful here.
+
+313
+00:27:26,096 --> 00:27:26,736
+Be careful.
+
+314
+00:27:28,356 --> 00:27:29,956
+And it's not approaching zero here.
+
+315
+00:27:30,036 --> 00:27:30,816
+And approaches infinity.
+
+316
+00:27:31,816 --> 00:27:35,656
+If n approaches zero, sine n over n approaches one.
+
+317
+00:27:35,836 --> 00:27:37,256
+But here n approaches infinity.
+
+318
+00:27:37,456 --> 00:27:40,296
+As n approaches infinity, sine n over n approaches zero.
+
+319
+00:27:41,236 --> 00:27:44,635
+That's that followed by the sandwich theorem, actually.
+
+320
+00:27:44,836 --> 00:27:48,115
+Sine n over n is always between minus 1 over n and 1 over n.
+
+321
+00:27:48,496 --> 00:27:49,456
+Both approach zero.
+
+322
+00:27:49,676 --> 00:27:51,076
+Therefore, this one also approaches zero.
+
+323
+00:27:51,596 --> 00:27:53,176
+So the limit of this is 1 over 2.
+
+324
+00:27:56,096 --> 00:28:00,156
+Limit comparison test says that since this limit is
+
+325
+00:28:00,156 --> 00:28:02,536
+is some positive number.
+
+326
+00:28:02,536 --> 00:28:04,115
+I don't care what positive number is.
+
+327
+00:28:04,196 --> 00:28:05,456
+It's some positive number.
+
+328
+00:28:05,456 --> 00:28:09,436
+Therefore, since this one converges, some of these converges.
+
+329
+00:28:10,056 --> 00:28:12,296
+The p series equals 2.
+
+330
+00:28:12,836 --> 00:28:13,336
+It's 1.
+
+331
+00:28:13,936 --> 00:28:17,816
+Therefore, by the limit comparison test, we conclude that the given series also converges.
+
+332
+00:28:18,816 --> 00:28:20,356
+Teacher, can I ask a question?
+
+333
+00:28:20,716 --> 00:28:20,956
+Sure.
+
+334
+00:28:20,956 --> 00:28:27,115
+How could we decide to compare with 1 over n squared?
+
+335
+00:28:27,916 --> 00:28:28,356
+Okay.
+
+336
+00:28:28,576 --> 00:28:30,496
+Let me explain it for the third time.
+
+337
+00:28:32,976 --> 00:28:34,016
+What did I say?
+
+338
+00:28:34,596 --> 00:28:35,176
+Here again.
+
+339
+00:28:35,816 --> 00:28:36,196
+Sine n.
+
+340
+00:28:36,296 --> 00:28:37,436
+What do I know about this?
+
+341
+00:28:37,436 --> 00:28:40,476
+is always between minus 1 and 1.
+
+342
+00:28:40,936 --> 00:28:41,236
+Right?
+
+343
+00:28:42,276 --> 00:28:44,196
+It's always between minus 1 and 1.
+
+344
+00:28:44,956 --> 00:28:46,615
+So when I multiply it with n,
+
+345
+00:28:47,816 --> 00:28:51,916
+this term, n times sine n, is always between minus n and n.
+
+346
+00:28:52,656 --> 00:28:52,956
+Right?
+
+347
+00:28:53,896 --> 00:28:55,456
+So this whole term,
+
+348
+00:28:56,276 --> 00:28:57,916
+the whole term over here,
+
+349
+00:28:57,956 --> 00:29:00,576
+is going to be always between
+
+350
+00:29:00,576 --> 00:29:03,016
+2n squared minus n
+
+351
+00:29:03,016 --> 00:29:05,156
+and 2n squared plus n.
+
+352
+00:29:05,536 --> 00:29:05,836
+Right?
+
+353
+00:29:06,436 --> 00:29:08,615
+On one side, I have 2n squared minus n.
+
+354
+00:29:09,115 --> 00:29:11,536
+On the other side, I have 2n squared plus n.
+
+355
+00:29:13,036 --> 00:29:15,016
+But when I think of it as a polynomial,
+
+356
+00:29:15,796 --> 00:29:17,876
+2n squared plus n or 2n squared minus n.
+
+357
+00:29:18,291 --> 00:29:43,111
+Bu, bu
+
+358
+00:29:47,092 --> 00:29:49,951
+Therefore, that's why I'm comparing with this, 1 over n squared.
+
+359
+00:29:50,152 --> 00:29:52,772
+I mean, we could compare it with 1 over 2 n squared.
+
+360
+00:29:52,872 --> 00:29:53,451
+It doesn't matter.
+
+361
+00:29:53,552 --> 00:29:54,872
+It's just going to change the limit.
+
+362
+00:29:55,612 --> 00:29:56,752
+I don't care, actually.
+
+363
+00:29:57,672 --> 00:29:58,711
+Constants don't matter.
+
+364
+00:30:00,192 --> 00:30:00,772
+Thank you, sir.
+
+365
+00:30:02,272 --> 00:30:03,652
+Is it more clear now?
+
+366
+00:30:05,252 --> 00:30:05,692
+Yes.
+
+367
+00:30:06,052 --> 00:30:06,312
+Thank you.
+
+368
+00:30:06,392 --> 00:30:07,132
+All right, thanks.
+
+369
+00:30:09,012 --> 00:30:09,451
+Okay.
+
+370
+00:30:10,492 --> 00:30:12,632
+Next is this one.
+
+371
+00:30:14,052 --> 00:30:15,451
+Now, this is trickier than that.
+
+372
+00:30:15,451 --> 00:30:16,451
+Look at this.
+
+373
+00:30:18,032 --> 00:30:20,211
+Here, we have 2 n squared plus n sine.
+
+374
+00:30:20,932 --> 00:30:23,872
+In this case, I have 2 n plus n sine.
+
+375
+00:30:26,392 --> 00:30:29,272
+Now, again, let's make the same analysis.
+
+376
+00:30:32,072 --> 00:30:38,532
+Now, in this case, again, sine n is always between minus 1 and 1.
+
+377
+00:30:39,192 --> 00:30:40,312
+n times sine n.
+
+378
+00:30:40,432 --> 00:30:43,312
+This is always between minus n and n, right?
+
+379
+00:30:43,892 --> 00:30:45,451
+It's always between minus n and n.
+
+380
+00:30:45,451 --> 00:30:51,492
+So, when I add 2 n to that, the whole expression is, now I cannot ignore this.
+
+381
+00:30:51,912 --> 00:30:53,012
+Because this is also linear.
+
+382
+00:30:53,112 --> 00:30:53,692
+This is linear.
+
+383
+00:30:53,852 --> 00:30:54,692
+Both linear terms.
+
+384
+00:30:55,152 --> 00:30:57,012
+None of them dominates the other in this case.
+
+385
+00:30:57,012 --> 00:30:58,012
+And then, let's make the same analysis.
+
+386
+00:30:58,012 --> 00:31:07,852
+I'm going to add 2 n.
+
+387
+00:31:00,468 --> 00:31:03,668
+So why did we say convergence in this example?
+
+388
+00:31:05,508 --> 00:31:06,307
+In this example?
+
+389
+00:31:08,788 --> 00:31:11,028
+Well, what does the limit comparison test say?
+
+390
+00:31:12,067 --> 00:31:13,508
+Limit is a positive number.
+
+391
+00:31:14,307 --> 00:31:17,188
+This is the first condition of the limit comparison test.
+
+392
+00:31:17,188 --> 00:31:22,628
+It says that the series with this term and the series with this term,
+
+393
+00:31:22,628 --> 00:31:24,708
+either they both converge or both diverge.
+
+394
+00:31:25,988 --> 00:31:27,428
+We know that this one converges.
+
+395
+00:31:27,428 --> 00:31:29,188
+This is a p-series with p equals 2.
+
+396
+00:31:30,628 --> 00:31:32,868
+The p-series converge when p is bigger than 1.
+
+397
+00:31:33,587 --> 00:31:34,788
+This one converges.
+
+398
+00:31:34,788 --> 00:31:35,268
+It is known.
+
+399
+00:31:35,908 --> 00:31:39,668
+So by the limit comparison test, we conclude that the other one also converges.
+
+400
+00:31:40,948 --> 00:31:41,188
+Okay.
+
+401
+00:31:44,148 --> 00:31:45,348
+Okay, let's come back to this.
+
+402
+00:31:46,388 --> 00:31:47,827
+Yeah, what did you say?
+
+403
+00:31:47,827 --> 00:31:50,307
+This is always between minus n and n.
+
+404
+00:31:50,307 --> 00:31:54,708
+Therefore, the whole thing is always going to be between minus 3 and n.
+
+405
+00:31:55,908 --> 00:31:59,188
+So it's going to be between 1 over minus 1 over 3.
+
+406
+00:31:59,188 --> 00:32:00,388
+Sorry, not minus 3.
+
+407
+00:32:02,468 --> 00:32:04,468
+This is between minus n and n.
+
+408
+00:32:04,468 --> 00:32:08,788
+So if we add 2 n to this, the whole thing is going to be between n and 3 n.
+
+409
+00:32:09,988 --> 00:32:14,628
+So this is going to be like 1 over n between 1 over n and 1 over 3 n.
+
+410
+00:32:15,268 --> 00:32:16,148
+But what do we know?
+
+411
+00:32:16,148 --> 00:32:18,148
+We don't care about the constants actually.
+
+412
+00:32:18,148 --> 00:32:19,508
+1 over n, 1 over 3 n.
+
+413
+00:32:20,228 --> 00:32:22,628
+1 over 3 is just a constant factor over there.
+
+414
+00:32:22,628 --> 00:32:24,228
+So it will look like 1 over n.
+
+415
+00:32:24,228 --> 00:32:26,868
+So we expect it to diverge actually.
+
+416
+00:32:27,988 --> 00:32:31,028
+We expect it to look like 1 over n, the harmonic series.
+
+417
+00:32:31,028 --> 00:32:33,188
+But let's make the analysis we made.
+
+418
+00:32:33,188 --> 00:32:34,388
+Okay, what did we say?
+
+419
+00:32:35,347 --> 00:32:37,908
+For all n, we always know this.
+
+420
+00:32:37,908 --> 00:32:39,908
+And n is always between minus 1 and 1.
+
+421
+00:32:39,908 --> 00:32:41,668
+So I multiplied with n.
+
+422
+00:32:41,668 --> 00:32:42,548
+I get this.
+
+423
+00:32:42,548 --> 00:32:46,628
+n times minus n is less than n sine n less than n.
+
+424
+00:32:46,628 --> 00:32:48,948
+I had 2 n everything.
+
+425
+00:32:49,748 --> 00:32:51,188
+And we had 2 n to everything.
+
+426
+00:32:52,148 --> 00:32:52,788
+We get this.
+
+427
+00:32:54,708 --> 00:32:59,268
+And this is going to be n is less than 2 n plus n sine n less than n to 3 n.
+
+428
+00:32:59,268 --> 00:33:01,108
+And of course n is bigger than 0.
+
+429
+00:33:01,108 --> 00:33:01,668
+You know that.
+
+430
+00:33:01,668 --> 00:33:02,388
+That's important.
+
+431
+00:33:02,948 --> 00:33:07,188
+Now I will go to take the reciprocals of that.
+
+432
+00:33:08,148 --> 00:33:08,868
+What do we know?
+
+433
+00:33:09,988 --> 00:33:11,428
+Which side is more useful?
+
+434
+00:33:11,428 --> 00:33:12,948
+This side is useful for me.
+
+435
+00:33:13,668 --> 00:33:18,468
+So this inequality, this inequality, this inequality is not useful.
+
+436
+00:33:19,028 --> 00:33:20,148
+The other one is useful.
+
+437
+00:33:21,188 --> 00:33:21,908
+This one is useful.
+
+438
+00:33:21,908 --> 00:33:22,628
+Why?
+
+439
+00:33:22,628 --> 00:33:29,108
+So this saves me that 1 over 3 n, since 3 n is bigger than this, 1 over 3 n is going to be smaller than this.
+
+440
+00:33:29,588 --> 00:33:31,588
+2 n plus n sine n.
+
+441
+00:33:31,588 --> 00:33:32,628
+Why is that important?
+
+442
+00:33:33,748 --> 00:33:41,188
+I know that some of this, of the sum of this, is just 1 over 3 times the harmonic series.
+
+443
+00:33:42,788 --> 00:33:44,468
+Which is known to be divergent.
+
+444
+00:33:44,468 --> 00:33:46,228
+Harmonic series diverges.
+
+445
+00:33:46,228 --> 00:33:50,548
+So some of these diverges to infinity and this is bigger than that.
+
+446
+00:33:51,508 --> 00:33:52,628
+This is bigger than that.
+
+447
+00:33:52,628 --> 00:34:00,548
+So divided by the comparison test, we conclude that some of this converges, sorry, diverges as well.
+
+448
+00:34:01,108 --> 00:34:04,628
+This is bigger than the one third of the harmonic series.
+
+449
+00:34:04,628 --> 00:34:05,508
+So let's do this.
+
+450
+00:34:05,508 --> 00:34:05,827
+Okay.
+
+451
+00:34:05,827 --> 00:34:07,908
+Any questions about this example?
+
+452
+00:34:10,708 --> 00:34:11,028
+Okay.
+
+453
+00:34:13,827 --> 00:34:14,228
+All right.
+
+454
+00:34:14,228 --> 00:34:15,588
+Let's continue with the next one.
+
+455
+00:34:15,588 --> 00:34:29,188
+n equals 1 to infinity sine 1 over n.
+
+456
+00:34:31,188 --> 00:35:01,188
+Bu bir
+
+457
+00:35:01,188 --> 00:35:54,698
+bir bir
+
+458
+00:35:59,027 --> 00:36:01,047
+Look at this expression over here.
+
+459
+00:36:02,767 --> 00:36:05,207
+When n is too large, what does it look like?
+
+460
+00:36:06,788 --> 00:36:09,047
+Okay, again, we make the same analysis.
+
+461
+00:36:09,907 --> 00:36:13,947
+When n is too large, sin 1 over n is just like 1 over n.
+
+462
+00:36:15,247 --> 00:36:16,547
+So this is n squared.
+
+463
+00:36:17,007 --> 00:36:19,687
+n squared times 1 over n, this is going to be like n.
+
+464
+00:36:20,907 --> 00:36:24,447
+Okay, as n approaches infinity, this is going to be like n.
+
+465
+00:36:25,288 --> 00:36:26,247
+How about the denominator?
+
+466
+00:36:27,207 --> 00:36:30,107
+Well, the n squared term dominates the n plus 1 term.
+
+467
+00:36:30,227 --> 00:36:30,727
+Ignore it.
+
+468
+00:36:31,307 --> 00:36:34,227
+This is going to be just like squared of n squared, which is also n.
+
+469
+00:36:35,007 --> 00:36:40,487
+So this is going to be, when n is too large, this is going to be like n over n, which is 1, not 0.
+
+470
+00:36:41,407 --> 00:36:50,007
+So the very first test, the first test, the nth term test, by making use of the nth term test, we will conclude that this diverges.
+
+471
+00:36:50,907 --> 00:36:52,707
+Remember, what does the nth term test say?
+
+472
+00:36:53,147 --> 00:36:55,707
+If the limit of an is not 0, the series diverges.
+
+473
+00:36:55,867 --> 00:36:56,227
+That's it.
+
+474
+00:36:56,247 --> 00:36:59,007
+But we just look at the limit of the series itself.
+
+475
+00:36:59,527 --> 00:37:08,527
+The limit of n squared times sin 1 over n over this, which can be written as, again, just multiply and divide this by 1 over n.
+
+476
+00:37:08,527 --> 00:37:14,907
+So actually, we are replacing this n squared with n times n times 1 over n.
+
+477
+00:37:15,547 --> 00:37:16,327
+That's n squared.
+
+478
+00:37:16,887 --> 00:37:17,907
+And the rest is the same.
+
+479
+00:37:17,907 --> 00:37:25,027
+This part, here, just factor n squared and take it outside the radical.
+
+480
+00:37:25,167 --> 00:37:25,827
+We get this.
+
+481
+00:37:26,907 --> 00:37:28,947
+And here, replace 1 over n with t.
+
+482
+00:37:29,787 --> 00:37:30,927
+We get this limit.
+
+483
+00:37:32,127 --> 00:37:33,627
+Well, n's canceled here.
+
+484
+00:37:33,627 --> 00:37:35,947
+The limit of this as n approaches infinity is 1.
+
+485
+00:37:36,307 --> 00:37:37,427
+The limit of this is 1.
+
+486
+00:37:37,807 --> 00:37:40,067
+So the limit of an as n approaches infinity is 1.
+
+487
+00:37:40,127 --> 00:37:40,667
+It's not 0.
+
+488
+00:37:41,987 --> 00:37:46,027
+Therefore, the nth term test, we conclude that the series diverges.
+
+489
+00:37:46,027 --> 00:37:49,747
+Okay.
+
+490
+00:37:49,747 --> 00:37:53,347
+All right.
+
+491
+00:37:53,387 --> 00:37:54,027
+Next one.
+
+492
+00:37:55,507 --> 00:37:55,727
+Okay.
+
+493
+00:37:55,727 --> 00:37:57,447
+Now, we have negative terms now.
+
+494
+00:37:58,827 --> 00:38:01,307
+Now, we have this minus 1 to the power n.
+
+495
+00:38:01,887 --> 00:38:03,107
+We have negative terms now.
+
+496
+00:38:03,707 --> 00:38:05,707
+And this is an alternating series, actually.
+
+497
+00:38:05,707 --> 00:38:10,527
+So we cannot apply those integral comparison ratio root tests.
+
+498
+00:38:11,227 --> 00:38:13,007
+But, of course, this is an alternating series.
+
+499
+00:38:13,107 --> 00:38:14,907
+So we can try the alternating series test.
+
+500
+00:38:15,647 --> 00:38:16,007
+Does it?
+
+501
+00:38:17,527 --> 00:38:24,847
+So if you call this part, this, if you call this n squared over n to the power of 4 plus ln,
+
+502
+00:38:24,947 --> 00:38:28,027
+n, remember, if you call it un, three conditions must solve.
+
+503
+00:38:28,187 --> 00:38:30,827
+One, those un's must be positive.
+
+504
+00:38:31,667 --> 00:38:33,067
+Two, they must be decreasing.
+
+505
+00:38:33,768 --> 00:38:35,487
+Three, their limit must be zero.
+
+506
+00:38:35,707 --> 00:38:41,307
+If these three conditions hold, we can conclude that the series converges by the alternating series test.
+
+507
+00:38:41,887 --> 00:38:42,768
+So let's check that.
+
+508
+00:38:43,768 --> 00:38:45,127
+Let's a n equals to this.
+
+509
+00:38:45,507 --> 00:38:46,587
+This absolute value of n.
+
+510
+00:38:47,027 --> 00:38:48,087
+This n square over.
+
+511
+00:38:49,167 --> 00:38:50,507
+Power of 4 plus ln.
+
+512
+00:38:50,627 --> 00:38:53,447
+Oh, actually, I'm not doing the.
+
+513
+00:38:54,987 --> 00:38:55,807
+Yeah, I see.
+
+514
+00:38:57,387 --> 00:38:57,967
+I see.
+
+515
+00:38:58,027 --> 00:38:59,087
+I'm not applying the.
+
+516
+00:39:02,167 --> 00:39:04,367
+Actually, applying the absolute convergence test here.
+
+517
+00:39:04,367 --> 00:39:05,567
+Could apply.
+
+518
+00:39:05,807 --> 00:39:06,027
+Okay.
+
+519
+00:39:06,167 --> 00:39:07,227
+Let me, let me say it.
+
+520
+00:39:07,268 --> 00:39:10,307
+We could apply alternating series test here.
+
+521
+00:39:10,307 --> 00:39:14,167
+I mean, it is true that this n square over n to the power of 4 plus ln, n.
+
+522
+00:39:14,527 --> 00:39:16,147
+It is true that it's always positive.
+
+523
+00:39:16,547 --> 00:39:19,107
+It's decreasing and it approaches zero.
+
+524
+00:39:19,487 --> 00:39:23,587
+But to show that it's decreasing, we would have to define a function.
+
+525
+00:39:23,587 --> 00:39:27,407
+fx equals x square over x to the power of 4 plus ln x.
+
+526
+00:39:28,107 --> 00:39:31,547
+And to find this derivative and show that the derivative is negative.
+
+527
+00:39:32,387 --> 00:39:34,587
+So that the sequence is decreasing.
+
+528
+00:39:35,127 --> 00:39:38,627
+But instead of that, actually, we ignore this minus 1 to power n.
+
+529
+00:39:39,007 --> 00:39:39,947
+Look at this term.
+
+530
+00:39:40,367 --> 00:39:41,307
+Look at the absolute values.
+
+531
+00:39:41,307 --> 00:39:43,627
+What does this look like when n is too large?
+
+532
+00:39:46,047 --> 00:39:47,227
+Well, what did you say?
+
+533
+00:39:47,467 --> 00:39:52,027
+We said in class that when n is too large, powers of n dominate logarithm of n.
+
+534
+00:39:52,747 --> 00:39:56,367
+So here in the denominator, the dominating term is this, n to power 4.
+
+535
+00:39:57,107 --> 00:39:58,027
+Just ignore ln n.
+
+536
+00:39:58,027 --> 00:40:24,187
+So here in the denominator, the
+
+537
+00:39:58,579 --> 00:41:28,579
+Bu, bu
+
+538
+00:41:28,579 --> 00:41:35,860
+This is converges. Say this. Say that the original series also converges. And that's it.
+
+539
+00:41:39,476 --> 00:41:40,756
+Ok, next one.
+
+540
+00:41:43,576 --> 00:41:45,215
+N equals 2 to infinity.
+
+541
+00:41:46,635 --> 00:41:51,615
+N times ln, sorry, n times ln, 1 minus n to the power minus 1.
+
+542
+00:41:55,668 --> 00:41:56,668
+Evet.
+
+543
+00:42:00,179 --> 00:42:01,879
+I mean, this is also a tricky one.
+
+544
+00:42:02,539 --> 00:42:05,079
+Actually, just look at the limit of this.
+
+545
+00:42:05,500 --> 00:42:07,299
+So, when n is too large, what does it look like?
+
+546
+00:42:07,839 --> 00:42:09,440
+When n is too large, what does it look like?
+
+547
+00:42:09,480 --> 00:42:11,839
+Look at the limit of this when n approaches infinity.
+
+548
+00:42:12,460 --> 00:42:14,559
+This is ln 1 minus 1 over n.
+
+549
+00:42:15,559 --> 00:42:18,379
+And just take this n inside.
+
+550
+00:42:19,679 --> 00:42:25,279
+So, this n times ln 1 minus 1 over n can be written as ln 1 minus 1 over n to the power n.
+
+551
+00:42:25,279 --> 00:42:30,719
+This then approaches infinity as one of our special limits.
+
+552
+00:42:31,559 --> 00:42:36,379
+So, this is like 1 plus minus 1 over n divided to the power n.
+
+553
+00:42:36,799 --> 00:42:39,619
+As n approaches infinity, it approaches e to the power minus 1.
+
+554
+00:42:39,980 --> 00:42:43,519
+So, we get ln e to the power minus 1, which is just minus 1.
+
+555
+00:42:45,500 --> 00:42:47,739
+So, the limit of the nth term is minus 1.
+
+556
+00:42:47,779 --> 00:42:49,919
+It's not 0.
+
+557
+00:42:50,119 --> 00:42:50,739
+Minus 1.
+
+558
+00:42:50,739 --> 00:42:55,259
+Therefore, by the nth term test, conclude that series averages.
+
+559
+00:42:57,859 --> 00:42:59,819
+And the last one, 15,
+
+560
+00:43:02,399 --> 00:43:05,799
+n squared over root n plus e to the power n.
+
+561
+00:43:06,980 --> 00:43:08,839
+Again, let's analyze this.
+
+562
+00:43:10,139 --> 00:43:12,920
+When n is too large, in the denominator,
+
+563
+00:43:13,699 --> 00:43:16,559
+exponential term dominates the linear term.
+
+564
+00:43:17,420 --> 00:43:19,719
+So, e to the power 2n dominates n.
+
+565
+00:43:19,719 --> 00:43:25,599
+So, the denominator looks like root e to the power 2n, which is like e to the power n, actually.
+
+566
+00:43:26,179 --> 00:43:28,679
+So, this is like n squared over e to the power n.
+
+567
+00:43:29,199 --> 00:43:31,139
+And n squared over e to the power n,
+
+568
+00:43:32,719 --> 00:43:37,539
+that can be easily found to be convergent by Riesinger ratio or root test.
+
+569
+00:43:37,539 --> 00:43:43,719
+So, first, this is what we do here.
+
+570
+00:43:44,000 --> 00:43:47,239
+First, let this b n b n squared over e to the power n.
+
+571
+00:43:48,339 --> 00:43:50,039
+That's what this looks like, right?
+
+572
+00:43:50,099 --> 00:43:50,879
+When n is too large.
+
+573
+00:43:51,879 --> 00:43:53,679
+b n equals n squared over e to power n.
+
+574
+00:43:53,679 --> 00:44:00,339
+Now, when we find its nth root, nth root of b n is nth root of n squared over e to power n,
+
+575
+00:44:00,399 --> 00:44:02,719
+which is nth root of n squared divided by e,
+
+576
+00:44:03,239 --> 00:44:05,500
+whose limit as n approaches infinity is 1 over e.
+
+577
+00:44:05,599 --> 00:44:08,659
+You know that this is one of the commonly used limits.
+
+578
+00:44:08,819 --> 00:44:09,619
+Its limit is 1.
+
+579
+00:44:10,119 --> 00:44:11,359
+So, we get this 1 over e.
+
+580
+00:44:11,359 --> 00:44:13,879
+And again, e is around 2.7.
+
+581
+00:44:14,259 --> 00:44:15,679
+So, this is going to be less than 1.
+
+582
+00:44:17,019 --> 00:44:20,980
+So, by the root test, we conclude that this series, sum of b n,
+
+583
+00:44:21,339 --> 00:44:23,179
+converges by the root test.
+
+584
+00:44:23,739 --> 00:44:26,399
+Now, we go back to our series.
+
+585
+00:44:27,099 --> 00:44:30,699
+Now, I can compare this one with this, sum of b n.
+
+586
+00:44:32,039 --> 00:44:35,199
+We call it an n squared over root n plus e to power n.
+
+587
+00:44:35,199 --> 00:44:40,379
+Then, this is less than or equal to n squared over root into power n,
+
+588
+00:44:40,379 --> 00:44:42,079
+because this one is a bigger denominator.
+
+589
+00:44:42,639 --> 00:44:45,000
+And this root e to power n is just e to power n.
+
+590
+00:44:45,059 --> 00:44:45,719
+So, this is b n.
+
+591
+00:44:46,059 --> 00:44:47,759
+Now, we know that an is less than b n.
+
+592
+00:44:47,839 --> 00:44:49,759
+They are both positive and an is smaller than b n.
+
+593
+00:44:50,420 --> 00:44:52,139
+But now, by the comparison test,
+
+594
+00:44:53,559 --> 00:44:56,460
+here we show that sum of b n converges,
+
+595
+00:44:56,940 --> 00:44:57,599
+the root test,
+
+596
+00:44:58,539 --> 00:45:00,159
+we show that sum of b n converges.
+
+597
+00:45:00,899 --> 00:45:02,579
+An's are smaller than b n's.
+
+598
+00:45:02,839 --> 00:45:04,299
+By the comparison test,
+
+599
+00:45:04,859 --> 00:45:07,019
+conclude that sum of an's also converge.
+
+600
+00:45:10,379 --> 00:45:34,500
+All right, any questions so far?
+
+601
+00:45:18,356 --> 00:45:20,356
+Evet, bir daha.
+
+602
+00:45:20,356 --> 00:45:21,356
+16.
+
+603
+00:45:23,356 --> 00:45:25,356
+Evet, bir daha.
+
+604
+00:45:25,356 --> 00:45:26,356
+16.
+
+605
+00:45:26,356 --> 00:45:30,356
+Evet, bir daha.
+
+606
+00:45:30,356 --> 00:45:56,356
+Bir daha.
+
+607
+00:45:48,211 --> 00:45:50,911
+Bu bir an last part.
+
+608
+00:45:52,612 --> 00:45:56,112
+Bu bir an.
+
+609
+00:45:58,311 --> 00:45:59,612
+Ok, bir an.
+
+610
+00:46:00,811 --> 00:46:02,411
+Aplik bir test, basically.
+
+611
+00:46:02,711 --> 00:46:03,911
+Oh, yeah.
+
+612
+00:46:04,311 --> 00:46:05,911
+Oh, let's be an answer over again.
+
+613
+00:46:06,612 --> 00:46:07,211
+It's a power.
+
+614
+00:46:07,711 --> 00:46:10,311
+Take it and through and through the bn.
+
+615
+00:46:11,512 --> 00:46:15,911
+Is this this and what is this limit one over a which is less than one.
+
+616
+00:46:16,411 --> 00:46:17,811
+Now, what does the rule test say?
+
+617
+00:46:18,211 --> 00:46:21,311
+The rule test says that if the limit is less than one, the series converges.
+
+618
+00:46:21,311 --> 00:46:23,512
+If the limit is bigger than one, the series diverges.
+
+619
+00:46:24,112 --> 00:46:26,311
+Here in this case, we found the limit to be less than one.
+
+620
+00:46:26,911 --> 00:46:29,612
+So by the rule test, we conclude that this series converges.
+
+621
+00:46:31,411 --> 00:46:31,911
+Okay.
+
+622
+00:46:33,411 --> 00:46:35,911
+And then we compare an with bn.
+
+623
+00:46:35,911 --> 00:46:37,811
+We say that an is smaller than bn.
+
+624
+00:46:38,512 --> 00:46:42,911
+If some of the n converges, the comparison test, we conclude that some of an also converges.
+
+625
+00:46:45,612 --> 00:46:46,711
+Okay, this one.
+
+626
+00:46:46,711 --> 00:46:49,612
+And I'm not going to show it.
+
+627
+00:46:49,612 --> 00:46:50,811
+But if you try.
+
+628
+00:46:50,811 --> 00:46:52,512
+So for example, again, make the n l n.
+
+629
+00:46:52,512 --> 00:46:55,112
+When n is large, your l n n dominates one.
+
+630
+00:46:55,411 --> 00:46:57,211
+So this is like one over n l n.
+
+631
+00:46:58,012 --> 00:46:59,012
+One over n l n.
+
+632
+00:46:59,811 --> 00:47:05,911
+If you try to compare it with one over n to the power of p for some p, it's not going to work.
+
+633
+00:47:05,911 --> 00:47:08,811
+Because this one over n l n n.
+
+634
+00:47:08,811 --> 00:47:11,711
+It's smaller than one over n.
+
+635
+00:47:11,711 --> 00:47:14,012
+There one over n is divergent.
+
+636
+00:47:14,012 --> 00:47:15,012
+This is smaller.
+
+637
+00:47:15,012 --> 00:47:16,711
+We cannot say anything.
+
+638
+00:47:16,711 --> 00:47:21,612
+But it's bigger than one over n to the power of 1.0000001.
+
+639
+00:47:21,612 --> 00:47:22,512
+Something like that.
+
+640
+00:47:22,512 --> 00:47:24,512
+If you compare it with that, this is bigger.
+
+641
+00:47:24,512 --> 00:47:25,512
+This is bigger.
+
+642
+00:47:25,512 --> 00:47:26,512
+That's convergent.
+
+643
+00:47:26,512 --> 00:47:27,512
+This is bigger.
+
+644
+00:47:27,512 --> 00:47:34,512
+Again, you will get some no conclusion comparison tests of this with any p series is going to fail.
+
+645
+00:47:34,512 --> 00:47:35,512
+Fail.
+
+646
+00:47:35,512 --> 00:47:37,211
+It's not going to work.
+
+647
+00:47:38,211 --> 00:47:41,711
+And this is an example of where the integral test is used.
+
+648
+00:47:42,612 --> 00:47:44,612
+Basically, let fx be this function.
+
+649
+00:47:45,411 --> 00:47:46,711
+This is a continuous function.
+
+650
+00:47:47,612 --> 00:47:50,012
+It's composed of continuous functions.
+
+651
+00:47:51,311 --> 00:47:52,711
+Positive, roll x.
+
+652
+00:47:53,512 --> 00:47:57,911
+And also, as x increases, the denominator increases.
+
+653
+00:47:57,911 --> 00:47:59,311
+Both x and ln x increase.
+
+654
+00:47:59,311 --> 00:48:01,911
+So the whole thing decreases.
+
+655
+00:48:01,911 --> 00:48:08,811
+So this is a continuous positive and decreasing function of fx for x bigger than x to 1.
+
+656
+00:48:08,811 --> 00:48:12,211
+So the conditions of the integral test are satisfied.
+
+657
+00:48:13,012 --> 00:48:15,411
+So now we can apply the integral test.
+
+658
+00:48:15,411 --> 00:48:23,411
+So integral test says that if integral of this from 1 to infinity converges, then the integral of this,
+
+659
+00:48:24,411 --> 00:48:25,911
+then the sum also converges.
+
+660
+00:48:25,911 --> 00:48:30,112
+If the integral of this diverges, the sum also diverges.
+
+661
+00:48:30,112 --> 00:48:32,012
+We look at the integral.
+
+662
+00:48:33,711 --> 00:48:38,112
+Or we look at the integral from 1 to infinity, 1 over x, 1 plus ln x.
+
+663
+00:48:40,411 --> 00:48:41,112
+So what is this?
+
+664
+00:48:41,112 --> 00:48:47,012
+This is the limit as t approaches infinity from 1 to t, 1 over x, 1 plus ln x dx.
+
+665
+00:48:47,012 --> 00:48:49,811
+Now we make this substitution.
+
+666
+00:48:50,512 --> 00:48:52,612
+Call this 1 plus ln x as u.
+
+667
+00:48:52,612 --> 00:48:54,612
+If we call this u, what is du?
+
+668
+00:48:54,612 --> 00:48:56,612
+Derivative of 1 is 0.
+
+669
+00:48:56,612 --> 00:48:58,311
+Derivative of ln x is 1 over x.
+
+670
+00:48:59,612 --> 00:49:00,811
+Is not t, sorry.
+
+671
+00:49:02,811 --> 00:49:03,811
+These are not correct.
+
+672
+00:49:04,911 --> 00:49:07,612
+Du is 1 over x dx actually, not dt.
+
+673
+00:49:10,211 --> 00:49:11,811
+Du is 1 over x dx.
+
+674
+00:49:12,211 --> 00:49:14,012
+This should be dx, not dt.
+
+675
+00:49:14,012 --> 00:49:15,012
+Du is 1 over x dx.
+
+676
+00:49:15,012 --> 00:49:19,012
+And what are the limits?
+
+677
+00:49:19,012 --> 00:49:25,012
+When x is 1, when x is 1, we get 1 plus 1 times 1 plus ln 1, which is 1.
+
+678
+00:49:26,012 --> 00:49:27,012
+U is 1.
+
+679
+00:49:27,012 --> 00:49:31,012
+When x is t, when x is t, we get 1 plus ln t, basically.
+
+680
+00:49:31,012 --> 00:49:32,012
+u equals 1 plus ln t.
+
+681
+00:49:32,012 --> 00:49:37,012
+So this limit is, as t approaches infinity, again, the limit as t approaches infinity integral
+
+682
+00:49:37,012 --> 00:49:41,012
+from 1 to 1 plus ln t.
+
+683
+00:49:42,012 --> 00:49:44,012
+So this, uh,
+
+684
+00:49:44,012 --> 00:49:45,012
+uh,
+
+685
+00:49:44,851 --> 00:49:53,172
+1 plus ln x this is 1 over u and 1 over x dx 1 over x dx part is the du so we get 1 over u du
+
+686
+00:49:53,172 --> 00:49:59,031
+and we know that the integral of 1 over u is this ln u ln absolute value of u actually
+
+687
+00:49:59,031 --> 00:50:10,791
+from 1 to 1 plus ln t so what do we get when u is 1 plus ln t we get this ln 1 plus ln t minus ln 1
+
+688
+00:50:10,791 --> 00:50:18,811
+ln 1 is 0 that's that's gone so as t we get the limit as t approaches infinity ln 1 plus ln t
+
+689
+00:50:18,811 --> 00:50:27,491
+as t approaches infinity this part ln t approaches infinity so we get ln of something that approaches
+
+690
+00:50:27,491 --> 00:50:32,011
+infinity we get infinity again so the limit as t approaches infinity of this is infinity
+
+691
+00:50:32,011 --> 00:50:39,971
+therefore improper integral diverges integral says that series also diverges
+
+692
+00:50:44,307 --> 00:50:52,588
+Evet, let's give a 10-min break, then we will continue. We have 9 more questions.
+
+693
+00:50:54,108 --> 00:50:58,588
+We have 9 more questions, so after 10-min break, we will continue with those 9 questions.
+
+694
+00:50:58,827 --> 00:51:00,168
+Any questions before the break?
+
+695
+00:51:07,860 --> 00:51:10,780
+10 minit bir süreç, 14.05.
+
+696
+01:01:23,027 --> 01:01:28,347
+Okay, let's continue with the next example.
+
+697
+01:01:29,867 --> 01:01:45,427
+Termine whether the series n equals 1 to infinity a n converges or diverges, where the sequence n is defined recursively in this case, as a1 is 1 over 2 and a n plus 1 is 1 over 2 times 1 plus n, 1 over n times n.
+
+698
+01:01:45,427 --> 01:01:59,527
+Okay, now when we look at this, the easiest, the easiest test to apply is the ratio test.
+
+699
+01:01:59,527 --> 01:02:03,927
+But actually before that, for that, let's check this.
+
+700
+01:02:04,047 --> 01:02:05,847
+A1 is 1 half, right?
+
+701
+01:02:05,847 --> 01:02:16,507
+And a1 is 1 half, this is a positive number, and 1 half times this, 1 half times 1 over 1 plus 1 over n is always positive.
+
+702
+01:02:17,267 --> 01:02:22,167
+So I start with 1 over 2, multiply it with this to get a2.
+
+703
+01:02:22,527 --> 01:02:26,667
+Then multiply a2 with something like this to get a3 and so on.
+
+704
+01:02:26,967 --> 01:02:31,007
+I keep multiplying with positive numbers, so I will always get positive numbers.
+
+705
+01:02:31,887 --> 01:02:34,987
+So a n is always positive, which means that I can apply any test I like.
+
+706
+01:02:35,847 --> 01:02:40,327
+And actually the easiest test is the ratio test, because the ratio is already given here.
+
+707
+01:02:43,764 --> 01:02:54,604
+n plus 1 over n, here, n plus 1 over n is this, 1 over 2 times 1 plus 1 over n, that's an plus 1 over n.
+
+708
+01:02:55,104 --> 01:02:59,744
+And as an approach to infinity, this approach is 1 over 2, which is less than 1. And that's what we care about.
+
+709
+01:03:00,324 --> 01:03:07,483
+By the ratio test, since this limit is less than 1, the ratio test will conclude that series converges.
+
+710
+01:03:07,483 --> 01:03:08,344
+That's it.
+
+711
+01:03:08,344 --> 01:03:13,624
+Okay, next example.
+
+712
+01:03:14,624 --> 01:03:15,144
+Again.
+
+713
+01:03:18,900 --> 01:03:28,160
+Okay, find the limit of the sequence an equals n plus 1 over n plus 2 to the power n and then determine whether this series converges or not.
+
+714
+01:03:29,119 --> 01:03:31,340
+First, let's find the limit of this sequence.
+
+715
+01:03:33,260 --> 01:03:35,720
+n plus 1 over n plus 2 to the power n.
+
+716
+01:03:36,240 --> 01:03:40,380
+Again, you can write this as 1 minus 1 over n plus 2.
+
+717
+01:03:41,340 --> 01:03:45,099
+This one can be written as this way, 1 minus 1 over n plus 2.
+
+718
+01:03:45,099 --> 01:03:58,320
+Now, to make the exponent look like this, we can write instead of n, I can write n plus 2 times n over n plus 2 to the exponent.
+
+719
+01:03:59,400 --> 01:04:06,920
+Now, this expression over here, 1 minus 1 over n plus 2 to the power n plus 2.
+
+720
+01:04:08,440 --> 01:04:13,740
+So, if we call this n plus 2, for example, n, let's call this n.
+
+721
+01:04:13,740 --> 01:04:23,740
+This is like 1 minus 1 over m to the power n as m approaches infinity because when n approaches infinity, m equals n plus 2 also approaches infinity.
+
+722
+01:04:24,300 --> 01:04:27,200
+So, the limit of this is going to be e to the power minus 1.
+
+723
+01:04:27,640 --> 01:04:29,180
+That's one of the commonly used limits.
+
+724
+01:04:29,980 --> 01:04:33,980
+To the power this, as n approaches infinity, this part approaches 1.
+
+725
+01:04:33,980 --> 01:04:38,740
+So, we get e to the power minus 1 to the power 1, which is just e to the power minus 1.
+
+726
+01:04:38,820 --> 01:04:39,400
+That's 1 over e.
+
+727
+01:04:40,019 --> 01:04:41,920
+So, that's the limit of this sequence.
+
+728
+01:04:42,440 --> 01:04:43,940
+Limit of this sequence is 1 over e.
+
+729
+01:04:44,700 --> 01:04:47,700
+The question is, what can we say about the series?
+
+730
+01:04:48,659 --> 01:04:50,659
+Now, since the sequence does not approach 0,
+
+731
+01:04:52,500 --> 01:04:54,440
+the other n is not 0, the other n is 0.
+
+732
+01:04:54,440 --> 01:05:00,539
+So, by the n-term test, we conclude that the series sum of a n diverges.
+
+733
+01:05:00,539 --> 01:05:24,039
+Thank you.
+
+734
+01:05:05,204 --> 01:05:14,324
+Ok, next question. Ok, in questions 19 through 24, question is to find the sum of the series.
+
+735
+01:05:15,124 --> 01:05:24,324
+Find the sum of the series. Ok, first this one is just a sum of two geometrics series. Just
+
+736
+01:05:25,044 --> 01:05:31,364
+separate this as 2 over 2 to the power n plus minus 1 over 2 to the power n.
+
+737
+01:05:31,364 --> 01:05:39,204
+And so what is this? And we can actually, this is just 1 over 2 to the power n minus 1,
+
+738
+01:05:39,204 --> 01:05:45,124
+and this is just minus 1 over 2 to the power n. If you write first a few terms of these,
+
+739
+01:05:46,484 --> 01:05:53,604
+when n is 1, we get 2 to the power 0, which is 1. So it started 1. When n is 2, we get 1 over 2. When
+
+740
+01:05:53,604 --> 01:06:00,804
+n is 3, we get 1 over 4 and so on. It goes like that. Plus this one, when n is 1, we get minus 1 over 2.
+
+741
+01:06:01,364 --> 01:06:06,644
+When n is 2, we get 1 over 4 and so on. It goes like that. They are both geometric series.
+
+742
+01:06:07,923 --> 01:06:17,044
+Sum of this is a first term 1 over 1 minus r. It's r values 1 over 2. Plus what is the sum of this
+
+743
+01:06:17,044 --> 01:06:25,764
+geometric series? A, the first term minus 1 over 2 over 1 minus r. It's r values minus 1 over 2.
+
+744
+01:06:26,724 --> 01:06:33,604
+So we get this. The rest is just calculation. 1 over 1 over 2. That's plus s 1 over 2 over 3 over 2.
+
+745
+01:06:33,604 --> 01:06:38,164
+This is 2 and this is just minus 1 over 3. We get 5 over 3.
+
+746
+01:06:38,164 --> 01:06:48,403
+Next example. N equals 1 to infinity square root of e to the power 1 minus 4n.
+
+747
+01:06:50,403 --> 01:06:55,444
+Again, square root of e to the power 1 minus 4n. Let's just simplify it. It's square root of e over
+
+748
+01:06:55,444 --> 01:07:02,164
+square root of e to power 4n. And square root of e is e to power 1 half. So this is just e to power 2n.
+
+749
+01:07:02,164 --> 01:07:08,403
+Square root of e over e to power 2n. If you write it, when n is 1, we get square root of e over e squared.
+
+750
+01:07:09,044 --> 01:07:14,324
+Plus when n is 2, we get square root of e over e to power 4, square root of e over e to power 6 and so on.
+
+751
+01:07:14,964 --> 01:07:21,684
+This is again a geometric series. Its first term is this. Geometric series whose first term is this.
+
+752
+01:07:21,684 --> 01:07:25,844
+Square root of e over e squared. And its common term is 1 over e squared.
+
+753
+01:07:25,844 --> 01:07:36,084
+So a over 1 minus r. Its r values this. So we get root e over e squared divided by e squared minus 1 over e squared.
+
+754
+01:07:36,084 --> 01:07:39,844
+The e squared cancel. We get this. root e over e squared minus 1.
+
+755
+01:07:42,644 --> 01:07:44,644
+And
+
+756
+01:07:47,219 --> 01:07:48,759
+0 to infinity
+
+757
+01:07:53,588 --> 01:07:56,408
+pi to the power minus n over cosine n pi.
+
+758
+01:07:57,128 --> 01:07:58,688
+So, this is a tricky one actually.
+
+759
+01:07:59,788 --> 01:08:01,048
+Think about cosine n pi.
+
+760
+01:08:01,148 --> 01:08:02,168
+What is cosine n pi?
+
+761
+01:08:03,868 --> 01:08:05,968
+When n is 0, cosine 0 is 1.
+
+762
+01:08:06,827 --> 01:08:08,368
+Cosine pi is minus 1.
+
+763
+01:08:08,928 --> 01:08:10,208
+Cosine 2 pi is 1.
+
+764
+01:08:10,368 --> 01:08:11,968
+Cosine 3 pi is minus 1.
+
+765
+01:08:12,428 --> 01:08:17,047
+So, this term cosine n pi just oscillates between 1 and minus 1.
+
+766
+01:08:17,148 --> 01:08:20,668
+So, cosine n pi is the same as minus 1 to the power n.
+
+767
+01:08:20,668 --> 01:08:29,967
+So, when n is an even number, if n is an even number, we get cosine 0, cosine 2 pi, cosine 4 pi, cosine 6 pi.
+
+768
+01:08:30,047 --> 01:08:31,628
+They are all equal to 1, right?
+
+769
+01:08:32,528 --> 01:08:33,988
+When n is an even number, we get 1.
+
+770
+01:08:34,307 --> 01:08:40,068
+When n is an odd number, we get cosine pi, cosine 3 pi, cosine 5 pi, cosine 7 pi.
+
+771
+01:08:40,648 --> 01:08:42,248
+Their values are all minus 1.
+
+772
+01:08:42,948 --> 01:08:44,347
+So, when n is odd, we get minus 1.
+
+773
+01:08:44,347 --> 01:08:47,387
+So, this cosine n pi is the same as minus 1 to the power n.
+
+774
+01:08:47,387 --> 01:08:48,788
+So, what do we get?
+
+775
+01:08:49,028 --> 01:08:58,307
+Pi to the power minus n over minus 1 to the power n, which is 1 over minus 1 to the power n times pi to the power n, which is minus 1 over pi to the power n.
+
+776
+01:08:59,347 --> 01:09:01,368
+So, n is 0.
+
+777
+01:09:01,467 --> 01:09:02,047
+We get 1.
+
+778
+01:09:02,347 --> 01:09:04,728
+It's this series over here.
+
+779
+01:09:04,788 --> 01:09:09,288
+1 minus 1 over pi plus 1 over pi squared minus pi over pi cubed plus and so on.
+
+780
+01:09:09,688 --> 01:09:11,228
+So, this is, again, a geometric series.
+
+781
+01:09:11,228 --> 01:09:15,328
+First term is 1, a over 1 minus r.
+
+782
+01:09:15,467 --> 01:09:17,148
+Its r value is minus 1 over pi.
+
+783
+01:09:17,528 --> 01:09:20,328
+Each term is minus 1 over pi times the previous one.
+
+784
+01:09:20,688 --> 01:09:25,328
+We get this 1 over 1 plus 1 over pi, which is equal to this pi over pi plus 1.
+
+785
+01:09:27,507 --> 01:09:31,268
+Again, all examples we have seen are examples of geometric series, basically.
+
+786
+01:09:32,448 --> 01:09:36,908
+This one, root n plus 1 minus root n over root n squared plus n.
+
+787
+01:09:36,908 --> 01:09:39,328
+This is actually a telescoping series.
+
+788
+01:09:39,488 --> 01:09:43,108
+It looks like an example we have covered in class.
+
+789
+01:09:44,028 --> 01:09:56,188
+Actually, when we look at this, root n minus 1 minus root n over root n squared plus n is the same as root n plus 1 minus root n over this n squared plus n can be written as n plus 1 times n.
+
+790
+01:09:56,847 --> 01:10:00,368
+And this is the same as 1 over root n minus 1 over root n minus 1.
+
+791
+01:10:00,608 --> 01:10:01,648
+Just think about it.
+
+792
+01:10:01,807 --> 01:10:03,368
+What is this difference?
+
+793
+01:10:03,368 --> 01:10:07,648
+It's root n minus 1 minus root n over the product of this.
+
+794
+01:10:08,668 --> 01:10:12,768
+So, this term over here is the same as 1 over root n minus 1 over root n plus 1.
+
+795
+01:10:12,908 --> 01:10:24,007
+So, this n, which is k equals 1 to n, this root k plus 1 minus root k over root k squared plus k.
+
+796
+01:10:24,007 --> 01:10:30,268
+This can be written as, so this expression can be written as 1 over root k minus 1 over root k plus 1.
+
+797
+01:10:30,828 --> 01:10:32,748
+But as what we did over here.
+
+798
+01:10:33,728 --> 01:10:36,608
+And now, as k equals 1 to n, what is this?
+
+799
+01:10:36,788 --> 01:10:39,268
+When k is 1, this is 1 minus 1 over root 2.
+
+800
+01:10:39,748 --> 01:10:42,368
+When k is 2, this is 1 over root 2 minus 1 over root 3.
+
+801
+01:10:42,847 --> 01:10:46,128
+When k is 3, this is 1 over root 3 minus 1 over root 4 and so on.
+
+802
+01:10:46,128 --> 01:10:52,007
+And finally, when k takes the value n, we get 1 over root n minus 1 over root n plus 1.
+
+803
+01:10:52,587 --> 01:10:56,648
+So, this 1 over root 2, 1 over root 3, 1 over root 4 and so on.
+
+804
+01:10:57,028 --> 01:10:59,887
+Here, we will have minus 1 over root n plus 1 over root n.
+
+805
+01:10:59,927 --> 01:11:01,007
+They will all cancel out.
+
+806
+01:11:01,528 --> 01:11:07,268
+Only the 1 at the beginning and this minus 1 over root n plus 1 at the end are going to be left.
+
+807
+01:11:07,268 --> 01:11:11,748
+So, this is going to be equal to 1 minus 1 over root n plus 1.
+
+808
+01:11:12,288 --> 01:11:21,587
+And know that sum of the series is equal to limit of its sequence of partial sum.
+
+809
+01:11:24,916 --> 01:11:35,916
+So some of the series, same as the limit of SN as an approach to infinity, we found SN as this, its limit as an approach to infinity is 1. This part approaches 0 basically.
+
+810
+01:11:38,355 --> 01:11:47,895
+So next question, this is also a tricky one. N equals 1 to infinity ln 1 plus 2 over n n plus 3.
+
+811
+01:11:47,895 --> 01:12:04,456
+Let's work with this, ln 1 plus 2 over n n plus 3. If we simplify it, this is as a simple, if we write it as a simple fraction, this is n times n plus 3 plus 2 over n times n plus 3.
+
+812
+01:12:04,456 --> 01:12:15,596
+And the numerator is what? n squared plus 3 n plus 2 over n times n plus 3. And we can factor the numerator and we factor that n plus 1 times n plus 2.
+
+813
+01:12:15,596 --> 01:12:35,596
+So it's n plus 1 times n plus 2 over n times n plus 3, which is equal to, now using the properties of the logarithmic function, this whole expression can be written as ln n plus 1 plus ln n plus 2 minus ln n minus ln n plus 3.
+
+814
+01:12:35,596 --> 01:13:05,596
+So, this is n plus 3. So, this is n plus n
+
+815
+01:13:05,596 --> 01:15:17,865
+n plus n
+
+816
+01:15:17,971 --> 01:15:21,131
+ln 3 n plus 3 over n plus 3 as n approaches infinity.
+
+817
+01:15:21,612 --> 01:15:27,171
+And as n approaches infinity, this part approaches 3, so the limit is ln 3.
+
+818
+01:15:27,591 --> 01:15:34,771
+Therefore, sum of the series, sum of the series over here is equal to ln 3.
+
+819
+01:15:43,347 --> 01:15:51,627
+Ok, oh, haven't covered, oh no, we haven't covered this yet. Question 24. Okay, I skip this.
+
+820
+01:15:54,327 --> 01:16:02,488
+Let's look at 25. This is simple actually. If n is bigger than 0 is an integer, find the sum of this series.
+
+821
+01:16:02,488 --> 01:16:06,807
+k equals n to infinity to 3 to the power n minus 4 k. Just write the terms.
+
+822
+01:16:06,807 --> 01:16:13,467
+When k is n, k starts from n. When k is n, we get 3 to the power 0, 1.
+
+823
+01:16:13,467 --> 01:16:20,627
+When k is n plus 1, we get 3 to the power n minus n plus 1, we get 3 to the power minus 1.
+
+824
+01:16:21,307 --> 01:16:25,507
+When k is the next term, n plus 2, we get 3 to the power minus 2.
+
+825
+01:16:25,887 --> 01:16:29,827
+It goes like that, 1 plus 3 to the power minus 1 plus 3 to the power minus 2 and so on.
+
+826
+01:16:30,247 --> 01:16:36,427
+This is just this geometric series. First term is 1, its ratio is 1 over 3, now 1 minus 1 over 3 is.
+
+827
+01:16:36,807 --> 01:16:43,627
+1 over 2 over 3, that's 3 over 2. That's it. And okay, that's power series.
+
+828
+01:16:43,627 --> 01:16:55,768
+Okay, haven't covered this yet. 24. We'll see that later. We will see it after we cover the power series.
+
+829
+01:16:56,327 --> 01:17:04,627
+Or maybe find that node on our basis. Yes, I put it there. Here. Here. Okay.
+
+830
+01:17:06,807 --> 01:17:34,627
+Let me write it again.
+
+831
+01:17:12,564 --> 01:17:19,364
+Okay, where is this file? You can find this file here. Okay, there are more questions. I mean,
+
+832
+01:17:21,844 --> 01:17:24,244
+we got up to 24, I guess.
+
+833
+01:17:31,028 --> 01:17:38,507
+So, we will, how many, 35 questions, right, there are 35, there are 11 questions, we covered 24 questions today.
+
+834
+01:17:39,068 --> 01:17:43,368
+We have 11 more questions in this, but we will cover that after we cover power series.
+
+835
+01:17:44,608 --> 01:17:45,728
+Okay, that's it for today.
+
+836
+01:17:47,887 --> 01:17:49,088
+Any other questions?
+
+837
+01:17:56,275 --> 01:17:58,275
+Bu da bu da bu.
+
+838
+01:17:59,675 --> 01:18:00,675
+Teşekkürler.
+
+839
+01:18:01,275 --> 01:18:02,275
+Bu da izleyiciler.
+
+840
+01:18:05,475 --> 01:18:06,475
+Tamam.
+
+841
+01:18:06,475 --> 01:18:09,275
+Bu da bu Power Series'nin devamı.
+
+842
+01:18:14,475 --> 01:18:15,475
+Bye.

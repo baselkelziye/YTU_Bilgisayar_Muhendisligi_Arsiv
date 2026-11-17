@@ -1,0 +1,2411 @@
+1
+00:04:32,596 --> 00:04:33,636
+Okay, hello everyone.
+
+2
+00:04:36,495 --> 00:04:38,295
+Yeah, I think it's time to start.
+
+3
+00:04:40,875 --> 00:04:49,675
+Okay, so today we are going to cover our last topic, substitutions in multiple integrals, actual substitutions in double integrals.
+
+4
+00:04:54,115 --> 00:04:55,716
+Okay, so let's start with this.
+
+5
+00:05:03,124 --> 00:05:05,164
+Evet, let's see this.
+
+6
+00:05:05,584 --> 00:05:06,524
+Let me read this.
+
+7
+00:05:06,604 --> 00:05:11,364
+Polar coordinate substitution is a special case of a more general substitution method
+
+8
+00:05:11,364 --> 00:05:12,324
+for double integrals.
+
+9
+00:05:12,324 --> 00:05:16,424
+A method that pictures changes in variables as transformations of regions.
+
+10
+00:05:16,884 --> 00:05:23,664
+So remember, we have already seen last week that we can convert a rectangular double
+
+11
+00:05:23,664 --> 00:05:29,924
+integral into polar double integrals, where dx dy changes into rdr d theta.
+
+12
+00:05:29,924 --> 00:05:35,864
+Now, in general, in general, suppose that the region g in the uv plane.
+
+13
+00:05:36,104 --> 00:05:43,984
+So let's say we have an xy plane and the uv plane and a region g in the uv plane is transformed
+
+14
+00:05:43,984 --> 00:05:50,244
+one to one into the region r in the xy plane by these two equations.
+
+15
+00:05:50,924 --> 00:05:52,484
+So this is one to one means.
+
+16
+00:05:52,884 --> 00:05:54,004
+What does this one to one means?
+
+17
+00:05:54,044 --> 00:05:54,724
+This is important.
+
+18
+00:05:54,844 --> 00:05:58,244
+So we cannot choose our x and y just randomly.
+
+19
+00:05:58,244 --> 00:06:04,804
+We have to choose x as a function of u and v, y as a function of u and v, so that
+
+20
+00:06:04,804 --> 00:06:12,364
+these two equations can be solved simultaneously for u and v in a unique way.
+
+21
+00:06:12,684 --> 00:06:14,604
+There has to be only one solution for u and v.
+
+22
+00:06:15,884 --> 00:06:21,224
+So let's call, we call r the image of g under this transformation and the prime g as the
+
+23
+00:06:21,224 --> 00:06:21,824
+prime image of r.
+
+24
+00:06:21,824 --> 00:06:28,184
+So this region on the xy plane r and this region on the uv plane g, they correspond into
+
+25
+00:06:28,184 --> 00:06:28,624
+each other.
+
+26
+00:06:28,884 --> 00:06:29,864
+They correspond to each other.
+
+27
+00:06:29,864 --> 00:06:36,864
+Now any function fxy defined by...
+
+28
+00:06:37,267 --> 00:06:40,767
+F of G u v h u.
+
+29
+00:06:41,007 --> 00:06:44,727
+If you replace x with g u v and y with h u v,
+
+30
+00:06:45,027 --> 00:06:48,287
+now it's going to become a function of u and v.
+
+31
+00:06:48,767 --> 00:06:50,747
+How is the integral of r related to the integral?
+
+32
+00:06:51,007 --> 00:06:51,927
+Now, the answer is this.
+
+33
+00:06:52,507 --> 00:06:52,667
+Here.
+
+34
+00:06:53,327 --> 00:06:56,007
+So, let's say in general, we have such an integral,
+
+35
+00:06:56,607 --> 00:07:01,007
+a double integral over this region r on the xy plane
+
+36
+00:07:01,007 --> 00:07:03,987
+of some function f of xy dx dy.
+
+37
+00:07:03,987 --> 00:07:08,707
+Now, we want to convert this integral into an integral
+
+38
+00:07:08,707 --> 00:07:11,787
+on the two variables u and v.
+
+39
+00:07:11,927 --> 00:07:12,747
+How do we do that?
+
+40
+00:07:12,867 --> 00:07:16,247
+Now, we replace x with g of u v, whatever it is.
+
+41
+00:07:16,327 --> 00:07:18,967
+We replace y with h of u v, whatever it is.
+
+42
+00:07:19,647 --> 00:07:26,827
+Now, we replace dx dy with du dy times some factor,
+
+43
+00:07:27,967 --> 00:07:29,067
+the Jacobian factor.
+
+44
+00:07:29,527 --> 00:07:32,967
+It's the absolute value of the Jacobian of u v.
+
+45
+00:07:32,967 --> 00:07:36,327
+What is that?
+
+46
+00:07:36,387 --> 00:07:37,347
+That's called the Jacobian.
+
+47
+00:07:38,747 --> 00:07:39,887
+So, this is what?
+
+48
+00:07:39,967 --> 00:07:40,467
+What it is?
+
+49
+00:07:40,527 --> 00:07:41,687
+The Jacobian determinant.
+
+50
+00:07:42,027 --> 00:07:44,467
+It's called the Jacobian determinant or just the Jacobian.
+
+51
+00:07:44,788 --> 00:07:47,767
+Of the coordinate transformation, x equals g u v,
+
+52
+00:07:48,107 --> 00:07:50,207
+y equals h u v is this.
+
+53
+00:07:50,207 --> 00:07:56,707
+j u v is delta x over delta u.
+
+54
+00:07:56,827 --> 00:07:59,127
+That is the derivative of x with respect to u,
+
+55
+00:07:59,687 --> 00:08:01,367
+derivative of x with respect to v,
+
+56
+00:08:01,807 --> 00:08:03,487
+derivative of y with respect to u,
+
+57
+00:08:03,747 --> 00:08:05,327
+derivative of y with respect to v.
+
+58
+00:08:05,587 --> 00:08:08,527
+Basically, the determinant of this matrix,
+
+59
+00:08:08,647 --> 00:08:11,427
+which is derivative of x with respect to u
+
+60
+00:08:11,427 --> 00:08:13,827
+times the partial derivative of y with respect to v
+
+61
+00:08:13,827 --> 00:08:18,267
+minus partial derivative of y with respect to u
+
+62
+00:08:18,267 --> 00:08:20,267
+times the partial derivative of x with respect to v.
+
+63
+00:08:20,747 --> 00:08:23,387
+This difference, this is called the Jacobian.
+
+64
+00:08:23,548 --> 00:08:27,507
+Now, of course, changing the order of u and v, x and y,
+
+65
+00:08:27,967 --> 00:08:29,387
+we can get the other way,
+
+66
+00:08:29,487 --> 00:08:31,187
+but we take the absolute value here
+
+67
+00:08:31,187 --> 00:08:33,247
+and put that into our integrity.
+
+68
+00:08:40,908 --> 00:08:55,127
+Thank you.
+
+69
+00:08:38,259 --> 00:08:56,980
+So, now, let's use this, let's use this to find the Jacobian for the x equals r cosine theta, y equals r sine theta, polar coordinate transformation, and convert this into the polar intact.
+
+70
+00:08:57,879 --> 00:09:03,120
+Of course, here, what is important? The important thing is to determine this region.
+
+71
+00:09:03,120 --> 00:09:13,159
+We'll come back to that in our examples. To find the limits of integration, we have to find what that region corresponds to.
+
+72
+00:09:13,460 --> 00:09:20,779
+What that region r on the x, y plane corresponds to region on the uv plane. We'll work on that.
+
+73
+00:09:21,740 --> 00:09:24,100
+Let's first start with this Jacobian. What do we know?
+
+74
+00:09:24,100 --> 00:09:31,779
+We hope we hope we hope we hope we hope we have already seen in section 15.4 that the x, d y.
+
+75
+00:09:32,879 --> 00:09:37,539
+Transforms into r dr d data, right? Let's see whether it's
+
+76
+00:09:40,240 --> 00:09:41,200
+works here.
+
+77
+00:09:42,860 --> 00:09:43,419
+So, okay.
+
+78
+00:09:44,860 --> 00:09:45,460
+What do I want?
+
+79
+00:09:50,196 --> 00:10:00,196
+transformation that means right here. So x equals r cosign theta y equals r sin theta.
+
+80
+00:10:00,196 --> 00:10:08,196
+If we make this transformation what is the Jacobian r theta? Jacobian r theta is the
+
+81
+00:10:08,196 --> 00:10:15,196
+determinant of the matrix. Derivative of x with respect to r, derivative of x with respect
+
+82
+00:10:15,196 --> 00:10:22,196
+to theta, derivative of y with respect to r, derivative of y with respect to theta. This is the determinant.
+
+83
+00:10:22,196 --> 00:10:32,196
+What is this? What is the derivative of x with respect to r? Derivative of x with respect to r is cosine theta.
+
+84
+00:10:32,196 --> 00:10:38,196
+Derivative of x with respect to theta. Derivative of x with respect to theta is
+
+85
+00:10:38,196 --> 00:10:53,196
+Derivative of cosine theta is minus sine theta. So this is minus r sine theta. Derivative of y with respect to r. Derivative of y with respect to r is this, sine theta.
+
+86
+00:10:53,196 --> 00:11:00,196
+And derivative of y with respect to theta is derivative of sine theta is cosine theta. So we get r cosine theta.
+
+87
+00:11:00,196 --> 00:11:07,196
+Now what's the determinant of this matrix? This product with
+
+88
+00:11:07,196 --> 00:11:17,196
+Let me write cosine theta times r cosine theta minus this product. Sine theta times minus r sine theta.
+
+89
+00:11:17,196 --> 00:11:22,196
+What do we get? This is r cosine square theta.
+
+90
+00:11:22,196 --> 00:11:29,196
+R cosine theta plus r sine theta.
+
+91
+00:11:29,196 --> 00:11:37,196
+Which is equal to the factor of r. We get r times cosine theta plus sine theta.
+
+92
+00:11:37,196 --> 00:11:42,196
+Which is, of course, we know that this is one. So we get r.
+
+93
+00:11:42,196 --> 00:11:56,196
+So basically, that's what we get. So dx dy is the same as the Jacobian absolute value of the Jacobian dr dt.
+
+94
+00:11:56,196 --> 00:11:59,196
+Which is, we found as r. Which is r dr dt.
+
+95
+00:11:59,196 --> 00:12:03,196
+Which is what we have already seen.
+
+96
+00:12:03,196 --> 00:12:12,196
+Okay, so the Jacobian factor, the Jacobian factor for the polar transformation is that r.
+
+97
+00:12:12,196 --> 00:12:16,196
+Okay, now let's see other examples.
+
+98
+00:12:16,196 --> 00:12:23,196
+Let's see other examples, other types of transformations, let's say.
+
+99
+00:12:23,196 --> 00:12:28,196
+So this is what we got, actually, is what we have already seen.
+
+100
+00:12:28,196 --> 00:12:33,196
+So replace f of xy with f of r cosine theta r sine theta.
+
+101
+00:12:33,196 --> 00:12:38,196
+And replace dx dy with r dr dt theta because of this Jacobian factor r.
+
+102
+00:12:38,196 --> 00:12:48,196
+And transform this region on the xy plane into a region g on the polar r theta plane.
+
+103
+00:12:48,196 --> 00:12:54,196
+Okay, now let's evaluate this integral by using this transformation, by applying this transformation.
+
+104
+00:12:54,196 --> 00:12:59,196
+Evaluate the integral. Let me first write this down, then I will see.
+
+105
+00:12:59,196 --> 00:13:14,196
+Let me first write this down, then I will see.
+
+106
+00:13:11,892 --> 00:13:14,872
+Ok, evaluate 0 to 4.
+
+107
+00:13:20,980 --> 00:13:21,700
+Evet, bir şey.
+
+108
+00:13:25,395 --> 00:13:27,555
+No, I cannot see it.
+
+109
+00:13:37,139 --> 00:13:39,139
+Let me first...
+
+110
+00:14:19,155 --> 00:14:24,155
+Evet, şimdi...
+
+111
+00:14:29,779 --> 00:14:56,980
+What's my function? Integral from 0 to 4, integral from what? x equals y over 2. So x equals y over 2 plus 1. y over 2 plus 1. 2x minus y over 2. 2x minus y over 2. dxdy. dxdy.
+
+112
+00:14:56,980 --> 00:15:16,079
+Okay. Evaluate this integral by applying the transformation. U equals what? 2x minus y over 2. U equals 2x minus y over 2.
+
+113
+00:15:16,779 --> 00:15:20,679
+And v equals y over 2. v equals y over 2.
+
+114
+00:15:20,679 --> 00:15:28,279
+And integrating over an appropriate region in the next one. Okay. Let's evaluate this integral by making this transformation.
+
+115
+00:15:29,899 --> 00:15:36,500
+Of course, we can evaluate this integral directly. It's not a hard integral. We can integrate this with respect to x and then with respect to y.
+
+116
+00:15:36,939 --> 00:15:39,740
+But let's apply this transformation and let's see what we get.
+
+117
+00:15:39,740 --> 00:15:40,139
+Now.
+
+118
+00:15:45,652 --> 00:15:46,672
+Okay, let's try.
+
+119
+00:15:47,451 --> 00:15:48,932
+This is equal to integral.
+
+120
+00:15:51,552 --> 00:15:54,772
+Now, I don't know what the limits of integration are going to be.
+
+121
+00:15:54,992 --> 00:15:56,752
+We will determine that limits of integration.
+
+122
+00:15:57,172 --> 00:15:58,352
+Let's keep that for now.
+
+123
+00:15:58,852 --> 00:15:59,812
+What about the function?
+
+124
+00:16:00,072 --> 00:16:01,211
+2x minus y over 2.
+
+125
+00:16:01,211 --> 00:16:04,932
+Now, I want to express the function, the integral, in terms of u and v.
+
+126
+00:16:05,451 --> 00:16:07,032
+Well, we have already called that u.
+
+127
+00:16:07,292 --> 00:16:08,992
+So, that 2x minus y over 2 is u.
+
+128
+00:16:08,992 --> 00:16:18,412
+So, that's our integral u times dx dy is going to be replaced with the Jacobian.
+
+129
+00:16:18,792 --> 00:16:21,272
+Absolute value of the Jacobian times du dv.
+
+130
+00:16:22,852 --> 00:16:26,112
+Du dv or dv dv, I will choose this.
+
+131
+00:16:26,432 --> 00:16:27,831
+Let me leave it like that for now.
+
+132
+00:16:28,192 --> 00:16:29,732
+Now, we need to find the Jacobian first.
+
+133
+00:16:30,652 --> 00:16:38,372
+To find the Jacobian, we have to hold these equations for x and y.
+
+134
+00:16:38,992 --> 00:16:40,472
+Let's solve them for x and y.
+
+135
+00:16:40,972 --> 00:16:45,951
+Now, if we add these up, what do we get?
+
+136
+00:16:46,092 --> 00:16:46,992
+What is u plus x?
+
+137
+00:16:47,572 --> 00:16:48,132
+U plus v.
+
+138
+00:16:48,272 --> 00:16:48,392
+Sorry.
+
+139
+00:16:50,112 --> 00:16:53,172
+If we add them up, y over 2 is cancelled.
+
+140
+00:16:53,372 --> 00:16:54,812
+We get 2x over 2, which is x.
+
+141
+00:16:55,112 --> 00:16:55,992
+U plus v is x.
+
+142
+00:16:56,292 --> 00:16:56,451
+Right?
+
+143
+00:16:57,832 --> 00:16:59,992
+And what is y?
+
+144
+00:17:00,332 --> 00:17:02,672
+Well, we can solve for y from this equation.
+
+145
+00:17:03,372 --> 00:17:04,271
+y is equal to 2v.
+
+146
+00:17:04,271 --> 00:17:08,072
+So, y is equal to 2v.
+
+147
+00:17:08,172 --> 00:17:09,652
+x is equal to e plus v.
+
+148
+00:17:09,652 --> 00:17:09,932
+That's it.
+
+149
+00:17:13,107 --> 00:17:15,687
+X is equal to u plus v, y is equal to 2.
+
+150
+00:17:16,187 --> 00:17:17,488
+Now, what is the Jacobian?
+
+151
+00:17:17,947 --> 00:17:25,288
+Jacobian is derivative of x with respect to u, derivative of x with respect to v,
+
+152
+00:17:26,427 --> 00:17:30,427
+derivative of y with respect to u, derivative of y with respect to v.
+
+153
+00:17:31,548 --> 00:17:32,768
+Determin top is matrix.
+
+154
+00:17:32,768 --> 00:17:33,187
+How did it?
+
+155
+00:17:33,268 --> 00:17:35,528
+Derivative of x with respect to u, that's 1.
+
+156
+00:17:36,447 --> 00:17:39,268
+Derivative of x with respect to v is 1.
+
+157
+00:17:40,387 --> 00:17:42,707
+Derivative of y with respect to u is 0.
+
+158
+00:17:43,107 --> 00:17:45,387
+Derivative of y with respect to v is 2.
+
+159
+00:17:46,067 --> 00:17:48,887
+And the determinant of this matrix is 2 minus 0, which is 2.
+
+160
+00:17:49,727 --> 00:17:51,228
+So that Jacobian factor is 2.
+
+161
+00:17:52,387 --> 00:17:54,087
+Let me directly write it there.
+
+162
+00:17:58,067 --> 00:18:28,067
+Bu, u bu, bu, ve dx, dy bu, ds, dy bu, ds,
+
+163
+00:18:28,067 --> 00:18:52,107
+So on the xy plane, what reason is this? Now outside I have y, right? The variable outside is y, so the limits on integration for y are from y equals 0 to 5 equals 4. These are two horizontal lines. Y equals 0 to y equals 4.
+
+164
+00:18:52,107 --> 00:19:05,407
+And between these two horizontal lines, we have two functions from the our region is bounded from left and right by two functions. These two functions x equals y over 2.
+
+165
+00:19:05,867 --> 00:19:08,768
+x equals y over 2 is the same as y equals 2x.
+
+166
+00:19:11,228 --> 00:19:12,667
+x equals y over 2.
+
+167
+00:19:13,788 --> 00:19:18,288
+And the other is x equals y over 2 plus 1. Just add one to this.
+
+168
+00:19:19,788 --> 00:19:21,407
+x equals y over 2 plus 1.
+
+169
+00:19:22,107 --> 00:20:57,107
+x equals y over 2.
+
+170
+00:20:45,971 --> 00:20:52,731
+If x equals y over 2, here we get u equals 0, right?
+
+171
+00:20:54,951 --> 00:20:59,632
+If x is y over 2, in other words, we could write it like this.
+
+172
+00:20:59,692 --> 00:21:00,692
+x equals y over 2.
+
+173
+00:21:00,771 --> 00:21:01,872
+Just replace x with this.
+
+174
+00:21:01,971 --> 00:21:02,932
+x is u plus v.
+
+175
+00:21:03,571 --> 00:21:05,731
+This means u plus v equals y over 2.
+
+176
+00:21:06,051 --> 00:21:07,412
+y over 2 is v.
+
+177
+00:21:08,051 --> 00:21:10,491
+u plus v is equal to v, which means u equals 0.
+
+178
+00:21:11,372 --> 00:21:13,352
+And x equals y over 2 plus 1.
+
+179
+00:21:13,771 --> 00:21:15,311
+x is u plus v.
+
+180
+00:21:15,971 --> 00:21:17,872
+y is 2 v.
+
+181
+00:21:17,951 --> 00:21:19,811
+So y over 2 is v plus 1.
+
+182
+00:21:20,051 --> 00:21:21,471
+And from this, we get u equals 1.
+
+183
+00:21:21,731 --> 00:21:23,132
+So we get these four lines.
+
+184
+00:21:23,791 --> 00:21:26,571
+v equals 0, v equals 2, u equals 0, u equals 1.
+
+185
+00:21:26,912 --> 00:21:33,451
+So on the u-v plane, on the u-v plane, our region is a rectangle actually.
+
+186
+00:21:33,451 --> 00:21:34,991
+Our region is a rectangle.
+
+187
+00:21:37,511 --> 00:21:44,531
+u equals 0, u equals 1, v equals 0.
+
+188
+00:21:44,531 --> 00:21:46,791
+and v equals 2.
+
+189
+00:21:46,791 --> 00:21:46,852
+v equals 2.
+
+190
+00:21:46,852 --> 00:21:48,291
+This is a rectangle.
+
+191
+00:21:48,291 --> 00:21:55,351
+And since it's a rectangle region, actually, we could write this in both ways.
+
+192
+00:21:55,831 --> 00:21:57,251
+Be careful with the order here.
+
+193
+00:21:57,951 --> 00:21:58,791
+Be careful with the order.
+
+194
+00:21:59,291 --> 00:22:01,951
+So I could write it like this.
+
+195
+00:22:01,951 --> 00:22:03,672
+If I write it as v u, v, v.
+
+196
+00:22:03,672 --> 00:22:06,352
+Let me do it this way.
+
+197
+00:22:06,352 --> 00:22:07,852
+If I write it as v u, v.
+
+198
+00:22:07,852 --> 00:22:09,311
+Let me do it the other way.
+
+199
+00:22:10,412 --> 00:22:11,811
+If I do d v, v, v, v, v.
+
+200
+00:22:11,811 --> 00:22:15,011
+Then the limits of integration for u will be outside.
+
+201
+00:22:15,291 --> 00:22:15,672
+What are they?
+
+202
+00:22:15,791 --> 00:22:17,092
+u equals 0 and u equals 1.
+
+203
+00:22:17,511 --> 00:22:19,432
+I will have u equals 0, u equals 1.
+
+204
+00:22:19,991 --> 00:22:23,132
+And inside, v equals 0 to v equals 2.
+
+205
+00:22:24,211 --> 00:22:26,672
+I will get this integral.
+
+206
+00:22:27,071 --> 00:22:28,511
+We can evaluate this integral.
+
+207
+00:22:28,511 --> 00:22:33,152
+Or instead of that, I can write it as d u, d v.
+
+208
+00:22:33,311 --> 00:22:33,991
+It's up to you.
+
+209
+00:22:34,912 --> 00:22:39,551
+Whichever way is easier to integrate this function.
+
+210
+00:22:39,711 --> 00:22:40,831
+In this case, to you.
+
+211
+00:22:40,951 --> 00:22:42,412
+That's not a hard function.
+
+212
+00:22:42,551 --> 00:22:44,831
+It's easier to integrate with respect to you or v.
+
+213
+00:22:45,172 --> 00:22:48,791
+So it doesn't matter in which order you write it.
+
+214
+00:22:49,011 --> 00:22:53,771
+But whichever order you write it, you have to choose the limits of integration that way.
+
+215
+00:22:53,771 --> 00:22:59,511
+So if I write d u, d v, in this case, v is outside for v is from 0 to 2.
+
+216
+00:22:59,991 --> 00:23:01,592
+This limit will be 0 to 2.
+
+217
+00:23:02,051 --> 00:23:03,331
+And inside, I will have u.
+
+218
+00:23:03,432 --> 00:23:05,672
+The limits of integration for u are from 0 to 1.
+
+219
+00:23:06,271 --> 00:23:07,211
+I will have this one.
+
+220
+00:23:08,051 --> 00:23:09,412
+But let's do it this way.
+
+221
+00:23:09,851 --> 00:23:10,731
+So this is our integral.
+
+222
+00:23:11,751 --> 00:23:12,731
+This is our integral.
+
+223
+00:23:13,592 --> 00:23:19,392
+Now, as you see, when we compare it with this integral, this is much simpler to evaluate.
+
+224
+00:23:20,172 --> 00:23:22,951
+Now, integral of 2 u with respect to u is u square.
+
+225
+00:23:23,771 --> 00:23:29,491
+So we get u squared from 0 to 1 d v.
+
+226
+00:23:29,971 --> 00:23:33,432
+Which is equal to integral from 0 to 2 u squared.
+
+227
+00:23:33,632 --> 00:23:34,612
+When u is 1, we get 1.
+
+228
+00:23:34,692 --> 00:23:35,811
+When u is 0, we get 0.
+
+229
+00:23:35,892 --> 00:23:36,791
+So 1 minus 0 is 1.
+
+230
+00:23:37,231 --> 00:23:38,192
+So we just get d v.
+
+231
+00:23:39,271 --> 00:23:41,731
+So basically, the integral is just v from 0 to 2.
+
+232
+00:23:41,991 --> 00:23:44,072
+So that's 2 minus 0, which is 2.
+
+233
+00:23:46,051 --> 00:23:47,592
+That's the value of respect.
+
+234
+00:23:50,051 --> 00:23:52,471
+And let's see what is done on the book.
+
+235
+00:23:57,748 --> 00:24:10,028
+Evet, as you see, this rectangle parallelogram on the xy plane corresponds to this rectangle on the uv plane via this transformation.
+
+236
+00:24:10,688 --> 00:24:14,248
+These boundaries are found using these equations. The Jacobin is 2.
+
+237
+00:24:14,988 --> 00:24:23,148
+So this corresponds to this, which is this actually, which is found to be 2, as we found on the board.
+
+238
+00:24:23,148 --> 00:24:27,688
+Now, next example, let's look at next example.
+
+239
+00:24:29,508 --> 00:24:37,768
+Example 3. So evaluate this integral. Now, in this case, it's not given. The transformation is not given.
+
+240
+00:24:38,327 --> 00:24:40,448
+Let's evaluate this integral. Let me write it on the board.
+
+241
+00:25:03,188 --> 00:25:13,828
+0 to 1, 0 to 1 minus x, 0 to 1, 0 to 1 minus x, s² to x plus y.
+
+242
+00:25:18,099 --> 00:25:19,639
+y-2x
+
+243
+00:25:19,639 --> 00:25:21,980
+and
+
+244
+00:25:21,980 --> 00:25:24,339
+dy-dx
+
+245
+00:25:28,660 --> 00:25:31,660
+Okay, first of all, um...
+
+246
+00:25:36,819 --> 00:25:38,399
+Then you look at this integral.
+
+247
+00:25:39,319 --> 00:25:44,079
+If we try to integrate this with respect to y, that's going to be a hard integral.
+
+248
+00:25:44,980 --> 00:25:51,599
+Because there's a square term here, y square term, and multiplied with some square root of some number plus y.
+
+249
+00:25:52,419 --> 00:25:58,000
+If we change the order of integration and try to integrate it with respect to x, it's a tangent.
+
+250
+00:25:58,240 --> 00:26:00,159
+It's again hard work to integrate with respect to x.
+
+251
+00:26:01,179 --> 00:26:03,179
+So a transformation is going to be useful.
+
+252
+00:26:03,179 --> 00:26:10,419
+So what transformation can I make so that this integral over here becomes simpler?
+
+253
+00:26:10,799 --> 00:26:13,039
+Of course, my transformation has to be one to one.
+
+254
+00:26:13,539 --> 00:26:18,220
+So one choice is just look at this complicated function here.
+
+255
+00:26:18,980 --> 00:26:19,759
+x plus y.
+
+256
+00:26:19,919 --> 00:26:21,299
+There's a term x plus y there.
+
+257
+00:26:21,440 --> 00:26:23,139
+And there's a term y minus 2x there.
+
+258
+00:26:23,899 --> 00:26:25,759
+So let me just call them u and v.
+
+259
+00:26:26,460 --> 00:26:27,079
+Let's do that.
+
+260
+00:26:27,079 --> 00:26:35,019
+So let's call u equals x plus y and v equals y minus 2x.
+
+261
+00:26:36,480 --> 00:26:40,079
+So now our integral is going to become integral.
+
+262
+00:26:41,240 --> 00:26:43,179
+We will determine the limits of integration later.
+
+263
+00:26:43,720 --> 00:26:46,879
+Now the square root of x plus y is going to be just square root of u.
+
+264
+00:26:46,879 --> 00:26:50,740
+And this y minus 2x squared is going to be v squared.
+
+265
+00:26:52,240 --> 00:26:56,639
+Times, I will write the absolute value of the Jacobian here.
+
+266
+00:26:58,559 --> 00:27:00,759
+Times du dv or dv du.
+
+267
+00:27:00,759 --> 00:27:01,500
+I'll choose.
+
+268
+00:27:02,299 --> 00:27:03,599
+Let me leave it like that for now.
+
+269
+00:27:04,419 --> 00:27:06,659
+So we will complete the rest.
+
+270
+00:27:08,319 --> 00:27:09,379
+He'll complete the rest.
+
+271
+00:27:09,579 --> 00:27:10,359
+Let's leave it like that.
+
+272
+00:27:10,359 --> 00:27:15,799
+Okay, now let's solve this for x and y.
+
+273
+00:27:20,220 --> 00:27:22,679
+First of all, if I subtract the second one.
+
+274
+00:27:22,859 --> 00:27:25,179
+So if I subtract the second one from the first.
+
+275
+00:27:26,539 --> 00:27:27,259
+So what do I get?
+
+276
+00:27:27,319 --> 00:27:28,099
+U minus v.
+
+277
+00:27:28,639 --> 00:27:29,779
+U minus v is what?
+
+278
+00:27:29,839 --> 00:27:30,440
+Y is cancelled.
+
+279
+00:27:30,539 --> 00:27:31,279
+I get 3x.
+
+280
+00:27:31,879 --> 00:27:37,819
+So from this, x is equal to u over 3 minus v over 3.
+
+281
+00:27:37,960 --> 00:27:38,879
+Let me write it like that.
+
+282
+00:27:38,879 --> 00:27:44,819
+And then we can just put that in one of these equations.
+
+283
+00:27:45,079 --> 00:27:46,539
+Just put that in the first equation.
+
+284
+00:27:46,679 --> 00:27:47,240
+What's y?
+
+285
+00:27:47,500 --> 00:27:49,099
+Y is u minus x.
+
+286
+00:27:50,339 --> 00:27:51,579
+So u minus this.
+
+287
+00:27:52,659 --> 00:27:53,960
+Y is u minus this.
+
+288
+00:27:54,039 --> 00:27:54,519
+What is that?
+
+289
+00:27:57,259 --> 00:28:01,099
+U minus this is 2u over 3 plus v over 3.
+
+290
+00:28:01,799 --> 00:28:02,059
+Right?
+
+291
+00:28:02,799 --> 00:28:04,039
+So these are our variables.
+
+292
+00:28:04,039 --> 00:28:06,519
+x equals u over 3 minus v over 3.
+
+293
+00:28:06,899 --> 00:28:07,779
+Y is equal to this.
+
+294
+00:28:08,859 --> 00:28:11,319
+2u over 3 plus v over 3.
+
+295
+00:28:12,039 --> 00:28:13,659
+So what is our objective?
+
+296
+00:28:13,659 --> 00:28:18,659
+The objective of u, v is the derivative of x with respect to u.
+
+297
+00:28:18,779 --> 00:28:20,480
+Derivative of x with respect to v.
+
+298
+00:28:20,879 --> 00:28:22,579
+Derivative of y with respect to u.
+
+299
+00:28:22,740 --> 00:28:24,299
+Derivative of y with respect to v.
+
+300
+00:28:24,299 --> 00:28:25,699
+Is 1 over 3.
+
+301
+00:28:25,699 --> 00:28:29,779
+Derivative of x with respect to v.
+
+302
+00:28:29,779 --> 00:28:30,679
+Is 1 over 3.
+
+303
+00:28:31,879 --> 00:28:33,559
+Derivative of x with respect to v.
+
+304
+00:28:33,740 --> 00:28:34,859
+Is minus 1 over 3.
+
+305
+00:28:35,779 --> 00:28:37,679
+Derivative of y with respect to u.
+
+306
+00:28:37,819 --> 00:28:38,819
+Is 2 over 3.
+
+307
+00:28:39,859 --> 00:28:41,659
+Derivative of y with respect to v.
+
+308
+00:28:41,779 --> 00:28:42,500
+Is 1 over 3.
+
+309
+00:28:42,500 --> 00:28:47,279
+Which is 1 over 3 times 1 over 3 is 1 over 9.
+
+310
+00:28:47,399 --> 00:28:47,919
+Minus.
+
+311
+00:28:48,599 --> 00:28:50,480
+Derivative of y with respect to v over 9.
+
+312
+00:28:50,599 --> 00:28:51,480
+Minus 2 over 9.
+
+313
+00:28:51,559 --> 00:28:53,319
+That's 3 over 9.
+
+314
+00:28:53,419 --> 00:28:54,119
+Which is 1 over 3.
+
+315
+00:28:56,399 --> 00:28:57,679
+So that's the Jacobian.
+
+316
+00:28:57,839 --> 00:28:59,819
+So our Jacobian factor is 1 over 3.
+
+317
+00:29:00,379 --> 00:29:02,199
+Times du dv.
+
+318
+00:29:02,399 --> 00:29:03,379
+Or dv du.
+
+319
+00:29:03,500 --> 00:29:03,960
+I don't know.
+
+320
+00:29:05,259 --> 00:29:08,279
+We may change this if necessary.
+
+321
+00:29:08,899 --> 00:29:10,559
+Let's see what the region looks like.
+
+322
+00:29:10,559 --> 00:29:13,420
+Now let's see what the region looks like.
+
+323
+00:29:15,819 --> 00:29:16,259
+Okay.
+
+324
+00:29:16,480 --> 00:29:17,679
+Let's draw this region.
+
+325
+00:29:19,019 --> 00:29:20,139
+On this region R.
+
+326
+00:29:21,019 --> 00:29:22,759
+So on the xy plane.
+
+327
+00:29:24,339 --> 00:29:25,879
+On the xy plane.
+
+328
+00:29:26,019 --> 00:29:26,740
+What is our region?
+
+329
+00:29:28,299 --> 00:29:29,559
+Outside I have x.
+
+330
+00:29:30,099 --> 00:29:30,319
+Now.
+
+331
+00:29:30,819 --> 00:29:33,399
+So it's between x equals 0 and x equals 1.
+
+332
+00:29:34,291 --> 00:29:37,151
+X equals zero, two vertical lines now.
+
+333
+00:29:38,071 --> 00:29:43,211
+Two vertical lines, X equals zero and X equals one.
+
+334
+00:29:43,591 --> 00:29:51,091
+These two vertical lines, between these two vertical lines, it's bounded below by Y equals zero, this.
+
+335
+00:29:52,631 --> 00:29:56,692
+Y equals zero and bounded above by this, Y equals one minus six.
+
+336
+00:29:57,871 --> 00:29:59,511
+Y equals one minus six, this.
+
+337
+00:30:00,591 --> 00:30:01,711
+Y equals one minus six.
+
+338
+00:30:02,491 --> 00:30:03,411
+So it's this triangle.
+
+339
+00:30:09,523 --> 00:30:39,523
+Bu, bu
+
+340
+00:30:39,523 --> 00:30:54,323
+history. What do they correspond to? On the uv plane, what do they correspond to? X equals 0. X equals 0 means what? X plus Y equals 0. Sorry.
+
+341
+00:30:55,903 --> 00:31:05,303
+Sorry. X equals 0. Where is X? Here. X equals 0 means u over 3 minus v over 3 is 0, which means b is equal to u.
+
+342
+00:31:05,303 --> 00:31:15,383
+Y is equal to 0. Y is equal to 0 is here. 2u over 3 plus v over 3 is 0, which means v is minus 2u.
+
+343
+00:31:17,303 --> 00:31:21,983
+V is minus 2u. And the last one is y equals 1 minus x.
+
+344
+00:31:23,743 --> 00:31:28,903
+So y equals 1 minus x means x plus y is equal to 1. The easiest way of writing down is this.
+
+345
+00:31:29,563 --> 00:31:35,263
+Of course, you can just replace y with this. Replace x with this and solve that equation.
+
+346
+00:31:35,303 --> 00:31:39,363
+You will get the same thing. But the easiest way is write this as x plus y equals 1.
+
+347
+00:31:39,603 --> 00:31:43,183
+You know that x plus y is u. So this is the same as u equal to 1.
+
+348
+00:31:43,303 --> 00:32:01,303
+So this is the same as u equal to 1.
+
+349
+00:31:48,915 --> 00:32:09,836
+If I have just wrote this down, what would I get? I would get 2u over 3 plus v over 3. That's y equals 1 minus x. 1 minus x is 1 minus u over 3 plus v over 3. We will get this. V over 3 would cancel. If I throw this to the left side, I would get u equal to. As you see, we get the same.
+
+350
+00:32:09,836 --> 00:32:27,435
+u equal to. So, now on the uv plan, what is this region g on the uv plan? It has 3 borders. V equals u, v equals minus x is 1.
+
+351
+00:32:27,435 --> 00:32:30,935
+For the day, v equals u is this.
+
+352
+00:32:42,675 --> 00:32:43,576
+V equals U.
+
+353
+00:32:46,035 --> 00:32:47,375
+That's V equals U.
+
+354
+00:32:47,935 --> 00:32:49,816
+The other one is V equals minus 2U.
+
+355
+00:32:50,115 --> 00:32:52,215
+That's the line with slope minus 2.
+
+356
+00:32:52,675 --> 00:32:54,955
+This V equals minus 2U.
+
+357
+00:32:55,495 --> 00:32:57,135
+And another one, U equals 1.
+
+358
+00:32:57,275 --> 00:32:57,995
+U equals 1.
+
+359
+00:33:00,895 --> 00:33:02,135
+That's not a good picture.
+
+360
+00:33:09,940 --> 00:35:30,940
+İki yüzeyde.
+
+361
+00:35:30,940 --> 00:35:32,940
+9's cancel.
+
+362
+00:35:32,940 --> 00:35:34,940
+We get zero to one.
+
+363
+00:35:34,940 --> 00:35:36,940
+U cubed root u.
+
+364
+00:35:36,940 --> 00:35:38,940
+And u is.
+
+365
+00:35:38,940 --> 00:35:40,940
+U to the power one half.
+
+366
+00:35:40,940 --> 00:35:42,940
+So u cubed times u to the power one half.
+
+367
+00:35:42,940 --> 00:35:44,940
+Is u to the power seven over two.
+
+368
+00:35:44,940 --> 00:35:46,940
+U to the power seven over two.
+
+369
+00:35:46,940 --> 00:35:48,940
+Its integral is.
+
+370
+00:35:48,940 --> 00:35:50,940
+U to the power nine over two.
+
+371
+00:35:50,940 --> 00:35:52,940
+Times two over nine.
+
+372
+00:35:52,940 --> 00:35:54,940
+From zero to one.
+
+373
+00:35:54,940 --> 00:35:56,940
+Which is two over nine.
+
+374
+00:35:56,940 --> 00:35:58,940
+That's the value of this integral.
+
+375
+00:35:58,940 --> 00:36:02,940
+We found it as two over nine.
+
+376
+00:36:02,940 --> 00:36:04,940
+So let's see.
+
+377
+00:36:04,940 --> 00:36:06,940
+Let's check the book.
+
+378
+00:36:06,940 --> 00:36:08,940
+As you see.
+
+379
+00:36:08,940 --> 00:36:10,940
+X is u over three minus v over three.
+
+380
+00:36:10,940 --> 00:36:12,940
+Y is two u over three plus v over three.
+
+381
+00:36:12,940 --> 00:36:14,940
+Is chosen.
+
+382
+00:36:14,940 --> 00:36:15,940
+And.
+
+383
+00:36:15,940 --> 00:36:16,940
+We draw the region r.
+
+384
+00:36:16,940 --> 00:36:18,940
+We found the boundaries of this region r.
+
+385
+00:36:18,940 --> 00:36:20,940
+These three lines.
+
+386
+00:36:20,940 --> 00:36:22,940
+Then we convert them into the u v.
+
+387
+00:36:22,940 --> 00:36:24,940
+Coordinate system.
+
+388
+00:36:24,940 --> 00:36:26,940
+We get u equals one.
+
+389
+00:36:26,940 --> 00:36:28,940
+V equals u and v equals minus two u.
+
+390
+00:36:28,940 --> 00:36:30,940
+Which.
+
+391
+00:36:30,940 --> 00:36:32,940
+And.
+
+392
+00:36:32,940 --> 00:36:34,940
+We find the value of the integral as two over nine.
+
+393
+00:36:34,940 --> 00:36:58,940
+And.
+
+394
+00:36:58,940 --> 00:37:00,940
+The value of the integral as two over nine.
+
+395
+00:37:00,940 --> 00:37:01,940
+As.
+
+396
+00:37:01,940 --> 00:37:02,940
+This is done here.
+
+397
+00:37:02,940 --> 00:37:03,940
+And.
+
+398
+00:37:03,940 --> 00:37:04,940
+Also.
+
+399
+00:37:04,940 --> 00:37:05,940
+On the board.
+
+400
+00:37:05,940 --> 00:37:06,940
+The example four.
+
+401
+00:37:06,940 --> 00:37:08,940
+That's going to be our last example.
+
+402
+00:37:11,411 --> 00:37:14,851
+Evaluate this integral, integral from 1 to 2.
+
+403
+00:37:15,971 --> 00:37:17,511
+Any questions so far?
+
+404
+00:37:18,431 --> 00:37:20,692
+Before I erase the board, any questions?
+
+405
+00:37:24,340 --> 00:37:28,400
+Alright, let's look at our last example.
+
+406
+00:37:52,916 --> 00:38:07,856
+Integral from 1 to 2, integral from 1 over y, y, square root of y over x,
+
+407
+00:38:11,251 --> 00:38:13,351
+e to the power squared of x, y.
+
+408
+00:38:17,139 --> 00:38:18,139
+DXDY
+
+409
+00:38:22,356 --> 00:38:23,936
+So, let's evaluate this integral.
+
+410
+00:38:25,616 --> 00:38:26,356
+Okay, now...
+
+411
+00:38:30,068 --> 00:38:37,828
+Örneğin, if we don't make any transformation, if we don't make any transformation, just
+
+412
+00:38:37,828 --> 00:38:42,828
+try to evaluate this integral with respect to x or with respect to y, that's not going
+
+413
+00:38:42,828 --> 00:38:43,828
+to be easy.
+
+414
+00:38:43,828 --> 00:38:49,948
+Because with respect to x, here we have each of our squared of x term and here in front
+
+415
+00:38:49,948 --> 00:38:52,548
+we have one over squared of x term.
+
+416
+00:38:52,548 --> 00:38:53,548
+That's going to be complicated.
+
+417
+00:38:53,548 --> 00:38:58,628
+Even if we change the order of integration and try to integrate it with respect to y,
+
+418
+00:38:58,628 --> 00:39:04,468
+again, this e to power squared of y and that squared of y term, that's going to be complicated.
+
+419
+00:39:04,468 --> 00:39:08,828
+Now, but we can simplify it by making some transformation.
+
+420
+00:39:08,828 --> 00:39:15,448
+First thing you could choose is to call this y over x and xy, one of them as u and one of
+
+421
+00:39:15,448 --> 00:39:16,448
+them as v.
+
+422
+00:39:16,448 --> 00:39:23,188
+If we have done that, if we have done this, u equals y over x and b equals xy.
+
+423
+00:39:23,188 --> 00:39:30,028
+If we have done this, this integral would become square root of u e to the power squared of
+
+424
+00:39:30,028 --> 00:39:31,028
+v.
+
+425
+00:39:31,028 --> 00:39:36,028
+And some Jacobian term.
+
+426
+00:39:36,028 --> 00:39:39,148
+Of course, the Jacobian term may save us actually here.
+
+427
+00:39:39,148 --> 00:39:40,148
+We don't know.
+
+428
+00:39:40,148 --> 00:39:42,028
+We haven't computed the Jacobian term yet.
+
+429
+00:39:42,028 --> 00:39:44,868
+So, this e to the power squared of v.
+
+430
+00:39:44,868 --> 00:39:45,868
+That doesn't look nice.
+
+431
+00:39:45,868 --> 00:39:46,868
+Okay?
+
+432
+00:39:46,868 --> 00:39:52,868
+The evaluating the integral of e to the power squared root of v is not going to be easy.
+
+433
+00:39:52,868 --> 00:39:54,868
+So, that's not a good choice.
+
+434
+00:39:54,868 --> 00:39:55,868
+This is not a good choice.
+
+435
+00:39:55,868 --> 00:40:02,588
+Instead of that, instead of just calling y over x as u and xy as v, we can just call
+
+436
+00:40:02,588 --> 00:40:04,028
+square root of them as u and v.
+
+437
+00:40:04,028 --> 00:40:07,868
+If you do that, so not square root of them.
+
+438
+00:40:07,868 --> 00:40:08,868
+We can do that.
+
+439
+00:40:08,868 --> 00:40:33,868
+Thank you.
+
+440
+00:40:11,347 --> 00:40:16,847
+So we will choose the whole part over here, call it u, and the whole part over here as b.
+
+441
+00:40:16,847 --> 00:40:25,847
+So u equals k root of y over x and v equals k root of x y.
+
+442
+00:40:25,847 --> 00:40:32,847
+And now this integral is going to become, this is going to be just u and this is going to be e to power u.
+
+443
+00:40:32,847 --> 00:40:34,847
+Now it looks much simpler, right?
+
+444
+00:40:34,847 --> 00:40:40,847
+Of course there is going to be a Jacobian term over here, we don't know what it is yet, but it's going to be much simpler.
+
+445
+00:40:40,847 --> 00:40:46,347
+Now, let's solve this problem.
+
+446
+00:40:46,347 --> 00:40:51,347
+First of all, if we multiply this u times v is what?
+
+447
+00:40:51,347 --> 00:40:53,347
+u times v is what?
+
+448
+00:40:53,347 --> 00:40:58,347
+squared of x is cancel, I get squared of y times squared of y, which is y.
+
+449
+00:40:58,347 --> 00:41:00,347
+u times v is y.
+
+450
+00:41:00,347 --> 00:41:04,347
+And if I divide the second one by the first one, v over u.
+
+451
+00:41:04,347 --> 00:41:06,347
+v over u is what?
+
+452
+00:41:06,347 --> 00:41:07,347
+v over u is this.
+
+453
+00:41:07,347 --> 00:41:17,847
+squared of y is cancel now we get squared of x times squared of x which is x.
+
+454
+00:41:17,847 --> 00:41:20,347
+So, so x is.
+
+455
+00:41:20,347 --> 00:41:28,347
+So, if I divide the second one, x is v over u, y is u.
+
+456
+00:41:28,347 --> 00:41:30,347
+These are numbers.
+
+457
+00:41:30,347 --> 00:41:31,347
+Very good.
+
+458
+00:41:31,347 --> 00:41:32,347
+X and y.
+
+459
+00:41:32,347 --> 00:41:35,347
+So, we can compute the Jacobian now.
+
+460
+00:41:35,347 --> 00:41:43,847
+Jacobian is the derivative of x with respect to u, derivative of x with respect to b, derivative of y with respect to u, derivative of y with respect to u.
+
+461
+00:41:43,847 --> 00:41:48,347
+of y with respect to u, derivative of y with respect to u.
+
+462
+00:41:48,347 --> 00:41:50,347
+Determinant of this matrix, which is.
+
+463
+00:41:50,347 --> 00:41:50,847
+which is.
+
+464
+00:41:50,847 --> 00:42:18,847
+This is.
+
+465
+00:41:54,260 --> 00:42:01,140
+Derivettum x'ı respect to u. Derivettum 1 over u is minus 1 over u square. So we get minus v over u square.
+
+466
+00:42:03,220 --> 00:42:13,620
+Derivettum x'ı respect to v is 1 over u. Derivettum y'ı respect to u is v. Derivettum y'ı respect to v is u.
+
+467
+00:42:13,620 --> 00:42:27,060
+Derivettum y'ı respect to u. What do we get as the determinant of this matrix? Product of these two which is minus v over u minus the product of these two which is another v over u.
+
+468
+00:42:27,060 --> 00:42:38,980
+We get minus 2 v over u. Minus 2 v over u. Of course here, the square root of a number by definition of the square root u is bigger than every square root of 0.
+
+469
+00:42:38,980 --> 00:42:53,140
+v is third of something if she's bigger than this growth. So this is less than or equal to 0. And we take this absolute value. We need the absolute value of it as a factor here. So the absolute value of the Jacobian factor is 2 v over u.
+
+470
+00:42:54,260 --> 00:43:02,900
+So that's our Jacobian. So 2 v over u is over Jacobian. 2 v over u. Absolute value of Jacobian. And now,
+
+471
+00:43:02,900 --> 00:43:16,740
+next is du db or dv d. Let's leave it like that for now. We will, depending on what the region looks like, we will determine which order to choose.
+
+472
+00:43:19,620 --> 00:43:27,380
+Okay. Actually, as I remember, one order is not going to work nicely. The other one will work nicely. So let's try both.
+
+473
+00:43:27,380 --> 00:43:35,460
+Okay. How does the region look like? Now, how does the region look like?
+
+474
+00:43:35,460 --> 00:43:37,220
+Um,
+
+475
+00:43:41,844 --> 00:43:44,664
+Let me do it here, then I'm going to erase that part.
+
+476
+00:43:45,784 --> 00:43:47,624
+Okay, what does the region look like?
+
+477
+00:43:49,644 --> 00:43:50,943
+On the xy plane.
+
+478
+00:43:55,043 --> 00:43:57,264
+Yeah, let me use this part, then I can erase it.
+
+479
+00:43:58,364 --> 00:44:00,224
+Or actually, let me erase this part.
+
+480
+00:44:01,503 --> 00:44:02,604
+I've already killed it.
+
+481
+00:44:04,864 --> 00:44:08,224
+So here, we chose x equals v over y equals v.
+
+482
+00:44:08,704 --> 00:44:10,344
+We have already written that down.
+
+483
+00:44:11,844 --> 00:44:13,644
+Yeah, let me leave this.
+
+484
+00:44:14,124 --> 00:44:14,864
+Let me leave this.
+
+485
+00:44:15,244 --> 00:44:16,284
+Yeah, found the Jacobin.
+
+486
+00:44:16,344 --> 00:44:17,543
+Jacobin is pluvia over you.
+
+487
+00:44:17,704 --> 00:44:19,063
+Let me erase that.
+
+488
+00:44:19,824 --> 00:44:20,983
+In order to put that over you.
+
+489
+00:44:22,124 --> 00:44:22,364
+Okay.
+
+490
+00:44:23,543 --> 00:44:26,864
+Now, let's draw this region r on the xy plane.
+
+491
+00:44:33,139 --> 00:44:43,319
+Okay, outside I have y, outside I have y, limit of integration for y are from y equals 1 to y equals 2, two horizontal lines, two horizontal lines.
+
+492
+00:44:44,679 --> 00:44:48,859
+y equals 1 and y equals 2.
+
+493
+00:44:50,179 --> 00:45:00,099
+And between these two horizontal lines is bound from left by x equals 1 over y, x equals 1 over y is the same as y equals 1 over x, this.
+
+494
+00:45:01,719 --> 00:45:03,059
+Something like this.
+
+495
+00:45:03,139 --> 00:45:05,699
+So this is actually 1 over y.
+
+496
+00:45:11,764 --> 00:45:40,764
+x equals 1 over y, and it's bounded from right by x equals y. x equals y, looks like this. x equals y. Of course, they intersect here, right? And y is 1, x is 1, x is 1, here on both. This x equals 1, this is actually x equals 1 over 2, and here we have
+
+497
+00:45:40,764 --> 00:45:48,804
+x equals 2, and y equals 2. We have such a region. This is our region.
+
+498
+00:46:01,715 --> 00:46:07,715
+Bu ne?
+
+499
+00:46:07,715 --> 00:46:09,715
+Y'e 2.
+
+500
+00:46:09,715 --> 00:46:11,715
+Bir de bu.
+
+501
+00:46:11,715 --> 00:46:13,715
+Y'e 1'e y.
+
+502
+00:46:13,715 --> 00:46:15,715
+Bir de bu.
+
+503
+00:46:15,715 --> 00:46:17,715
+Y'e 2'e y.
+
+504
+00:46:17,715 --> 00:46:21,715
+Bu ne?
+
+505
+00:46:21,715 --> 00:46:51,715
+Y'e 2
+
+506
+00:46:51,715 --> 00:46:54,855
+We can cancel U's. We get V squared equals 1.
+
+507
+00:46:57,275 --> 00:46:58,635
+V squared equals 1.
+
+508
+00:46:59,715 --> 00:47:04,076
+So V is plus or minus 1, but we know that V is a correct of something.
+
+509
+00:47:04,435 --> 00:47:06,476
+So by definition is positive, so V is 1.
+
+510
+00:47:07,496 --> 00:47:10,395
+V is 1. The other one is X equals 1.
+
+511
+00:47:10,635 --> 00:47:13,415
+X is V over U equals Y.
+
+512
+00:47:14,996 --> 00:47:16,536
+Y, Y is U V.
+
+513
+00:47:17,596 --> 00:47:21,556
+So here V is canceled now. We get U squared equals 1.
+
+514
+00:47:21,715 --> 00:47:26,175
+Again, U is a correct of something, so U is not negative.
+
+515
+00:47:27,315 --> 00:47:28,596
+So U is not the minus 1.
+
+516
+00:47:28,735 --> 00:47:30,355
+It is 1. We get these three.
+
+517
+00:47:32,295 --> 00:47:34,976
+V equals 2 over U, V equals 1, and U equals 1.
+
+518
+00:47:35,556 --> 00:47:38,795
+So what is the region G on the U V plane?
+
+519
+00:47:40,456 --> 00:47:41,456
+U V plane.
+
+520
+00:47:42,956 --> 00:47:44,996
+U equals 1 is a vertical line.
+
+521
+00:47:46,056 --> 00:47:46,855
+U equals 1.
+
+522
+00:47:47,355 --> 00:47:49,096
+V equals 1 is a horizontal line.
+
+523
+00:47:49,096 --> 00:47:52,915
+And V equals 2 over U.
+
+524
+00:47:55,795 --> 00:47:57,556
+That's not a good feature.
+
+525
+00:47:57,556 --> 00:47:58,556
+Let me...
+
+526
+00:47:58,556 --> 00:48:01,056
+Let's be careful here.
+
+527
+00:48:01,056 --> 00:48:15,456
+Let's go.
+
+528
+00:48:05,780 --> 00:48:35,760
+Let's be careful. Let me draw it like this. U equals 1 is a horizontal line. V equals 1 is a vertical line. And this. U times V equals 2. This. U times V equals 2. Note that here this point is 1, 1. So this point is 1, 1. So the curve V equals 2 is above. So actually at this point, when U is 1, V is going to be 2.
+
+529
+00:48:35,780 --> 00:48:42,780
+So that their product is 2. So we get this region over here.
+
+530
+00:48:46,483 --> 00:49:16,463
+Tamam, şimdi,
+
+531
+00:49:09,876 --> 00:49:16,436
+Let me do it this way, du dv. Let's try this first. Let's try this du dv.
+
+532
+00:49:17,796 --> 00:49:21,476
+If we try this, what do we get? Outside I will have v.
+
+533
+00:49:24,036 --> 00:49:27,556
+So the limits of integration for v are going to be two horizontal lines.
+
+534
+00:49:28,115 --> 00:49:33,236
+v equals 1 to v equals 2. v equals 1 to v equals 2. These two horizontal lines
+
+535
+00:49:33,236 --> 00:49:36,996
+and between these two horizontal lines is bounded from left by u equals 1
+
+536
+00:49:36,996 --> 00:49:40,596
+and bounded from right by u equals 2.
+
+537
+00:49:42,836 --> 00:49:46,676
+We will get this. Now let's try to evaluate this integral.
+
+538
+00:49:47,156 --> 00:49:53,956
+Now of course since u is cancelled, we need to evaluate the integral of 2v to power with respect to u.
+
+539
+00:49:55,716 --> 00:49:58,596
+With respect to u. What do we get?
+
+540
+00:49:59,396 --> 00:50:01,316
+This is the integral from 1 to 2.
+
+541
+00:50:01,316 --> 00:50:08,036
+Of course, 2v to power v, that's a constant. So 2v to power v, u.
+
+542
+00:50:09,156 --> 00:50:15,316
+From u equals 1 to u equals 2 over v dv, which is 1 to 2.
+
+543
+00:50:15,876 --> 00:50:21,556
+When u is 2 over v, when u is 2 over v, v is cancelled.
+
+544
+00:50:21,556 --> 00:50:30,115
+We get 4 e to power v, v minus when u is 1, we get 2v to power v dv.
+
+545
+00:50:32,436 --> 00:50:35,796
+We can evaluate this integral. I think this is the...
+
+546
+00:50:36,676 --> 00:50:38,115
+Let me see. Let me check.
+
+547
+00:50:38,115 --> 00:50:57,556
+Let me check.
+
+548
+00:50:42,675 --> 00:50:47,355
+dvd u
+
+549
+00:50:50,675 --> 00:50:53,675
+oh ok, they called u and v sub differently.
+
+550
+00:50:53,675 --> 00:50:55,675
+This is the way it is done on the book.
+
+551
+00:50:57,476 --> 00:50:59,476
+This is the way it is done on the book, but let's see.
+
+552
+00:50:59,476 --> 00:51:01,076
+I will try the other way as well.
+
+553
+00:51:02,275 --> 00:51:04,076
+Ok, now let me evaluate this integral.
+
+554
+00:51:04,076 --> 00:51:05,076
+What are we going to get?
+
+555
+00:51:05,076 --> 00:51:20,675
+It is equal to integral of 4e to the power of v minus integral of 2v to the power of v is 2v minus 1e to the power of v.
+
+556
+00:51:20,675 --> 00:51:23,476
+That actually comes from integration by parts.
+
+557
+00:51:24,275 --> 00:51:27,956
+To integrate v to the power of v, you have to integrate by parts.
+
+558
+00:51:28,675 --> 00:51:30,675
+I'm not going to show you the details.
+
+559
+00:51:30,675 --> 00:51:33,476
+If you just remember that from math 1.
+
+560
+00:51:35,076 --> 00:51:37,076
+Um
+
+561
+00:51:43,987 --> 00:51:47,467
+Evet, bu 1-2, değil mi?
+
+562
+00:51:47,467 --> 00:52:17,467
+Evet, bu, 1-2, 2
+
+563
+00:52:17,467 --> 00:52:23,288
+And let me go back to the book.
+
+564
+00:52:25,927 --> 00:52:34,207
+Here actually I called u equals root y over x and b equals root xy in the book.
+
+565
+00:52:34,647 --> 00:52:41,367
+They call root xy as u and root y over x as b and it's opposite.
+
+566
+00:52:42,147 --> 00:52:44,307
+It's opposite of what I have done.
+
+567
+00:52:44,307 --> 00:52:52,567
+So I have computed du dv, compute dv du, but of course their v is my u, their u is my v,
+
+568
+00:52:52,667 --> 00:52:56,187
+so they get exactly the same thing and at the end they get this integral.
+
+569
+00:52:56,647 --> 00:52:58,527
+But let me try the other way.
+
+570
+00:52:59,587 --> 00:53:00,507
+Let me try the other way.
+
+571
+00:53:00,567 --> 00:53:03,667
+What if I have used dv du?
+
+572
+00:53:05,207 --> 00:53:06,087
+What would I get?
+
+573
+00:53:07,788 --> 00:53:10,387
+It would probably be more difficult.
+
+574
+00:53:16,148 --> 00:53:25,748
+dv du, right. If I have not dv du, now outside I have u, now I will have two vertical lines, u equals 1 and u equals 2.
+
+575
+00:53:25,748 --> 00:53:33,748
+Between these two vertical lines, it's found below y equals 1 and above y equals 2.
+
+576
+00:53:33,748 --> 00:53:37,748
+Now, what would I have?
+
+577
+00:53:41,235 --> 00:53:42,235
+Bu da bu?
+
+578
+00:53:42,235 --> 00:55:20,235
+Bu da bu.
+
+579
+00:55:20,235 --> 00:55:22,235
+And see whether it works nicely.
+
+580
+00:55:22,235 --> 00:55:33,235
+Okay, that's how substitution and double integrals work and that's actually the end of our lectures.
+
+581
+00:55:33,235 --> 00:55:37,235
+So tomorrow I will solve some problems from chapter 15.
+
+582
+00:55:37,235 --> 00:55:41,235
+Let me actually put them here.
+
+583
+00:55:41,235 --> 00:55:42,235
+Here.
+
+584
+00:55:55,284 --> 00:55:57,284
+Okay, here.
+
+585
+00:55:59,923 --> 00:56:02,744
+Problems from chapter 15, let me put that.
+
+586
+00:56:05,744 --> 00:56:25,068
+Problems from chapter 15.
+
+587
+00:56:30,771 --> 00:56:32,211
+Okay, where are they?
+
+588
+00:56:40,500 --> 00:56:41,059
+Yerim.
+
+589
+00:57:14,867 --> 00:57:17,467
+Let's see how many problems there are on this file.
+
+590
+00:57:21,876 --> 00:57:24,956
+18 pages long.
+
+591
+00:57:27,516 --> 00:57:29,856
+The last one is 16.
+
+592
+00:57:29,996 --> 00:57:31,156
+Okay, 16 problems.
+
+593
+00:57:32,276 --> 00:57:33,416
+Yes, 16 problems.
+
+594
+00:57:33,556 --> 00:57:36,796
+We will cover these 16 problems tomorrow.
+
+595
+00:57:38,876 --> 00:57:40,576
+Yeah, it's available there now.
+
+596
+00:57:40,896 --> 00:57:42,036
+So I put it on my website.
+
+597
+00:57:42,396 --> 00:57:44,796
+You can look at these problems today if you like.
+
+598
+00:57:45,416 --> 00:57:48,516
+And we will solve them tomorrow and finish the semester.
+
+599
+00:57:48,516 --> 00:57:52,096
+Okay, any questions from whatever we covered today?
+
+600
+00:57:52,096 --> 00:57:52,176
+Okay.
+
+601
+00:57:55,668 --> 00:58:00,728
+As I said, we will cover these 16 problems tomorrow and finish the semester.
+
+602
+00:58:01,448 --> 00:58:02,008
+Any questions?
+
+603
+00:58:11,731 --> 00:58:17,371
+All right, no questions. So, I'll see you tomorrow then. You all have a nice day. Bye.
