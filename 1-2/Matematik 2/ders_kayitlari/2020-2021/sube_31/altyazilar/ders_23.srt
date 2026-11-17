@@ -1,0 +1,5335 @@
+1
+00:00:07,988 --> 00:00:26,187
+Merhaba arkadaşlar, nasılsınız? İyi misiniz? Bugün neden bu kadar açsınız? Evet, şimdi dün integrallere başladık. Bugün de devam edeceğiz arkadaşlar.
+
+2
+00:00:26,187 --> 00:00:47,287
+Derse başlamadan önce bana sormak istediğiniz bir şey var mı acaba? Anlamadığınız bir şey, sormak istediğiniz bir şey? Evet. O zaman yine biz dersimize başlayalım arkadaşlar. Herhalde katılım artar diye düşünüyorum. Şimdi yine bir ekran paylaşımı yapacağım.
+
+3
+00:00:56,500 --> 00:01:03,100
+Şimdi arkadaşlar dün size şunu ödev diye vermiştim biraz üzerinde konuşmuştuk arkadaşlarınızın
+
+4
+00:01:03,100 --> 00:01:12,340
+soruları vardı onları tartışmıştık şimdi bugün şu soruyla başlıyoruz şimdi ben size soru sormak
+
+5
+00:01:12,340 --> 00:01:19,539
+istiyorum şimdi soru da şöyle denilmiş bakın ben soruyu yazayım hemen sonra da diyor ki örnek
+
+6
+00:01:19,539 --> 00:01:40,900
+örnek sıfırdan biri x den biri e üzeri x bölü y d y d x nedir diye soruyor şimdi sadece bu kadar demesi sizin integral
+
+7
+00:01:40,900 --> 00:01:48,579
+bilginizi ölçmesi için yeterli zaten şimdi arkadaşlar öğrenci eğer integral iki katlı
+
+8
+00:01:48,579 --> 00:01:57,280
+görevleri biliyorsa ne yapacağını bilir ama bilmiyorsa hemen çözmeye çalışır şimdi ilk öncelikle öğrenci
+
+9
+00:01:57,280 --> 00:02:05,079
+şunu yapıp birinci yolu dener şu birinci yolda şu şimdi içerideki der ki bana her şey verilmiş şöyle
+
+10
+00:02:05,079 --> 00:02:16,240
+sıfırdan biri şurası x ten biri e üzeri x bölü y d y d x yani ilk öncelikle şu içeridekini çözmeye
+
+11
+00:02:16,240 --> 00:02:24,939
+çalışır peki bu çözülebilir mi arkadaşlar şöyle düşünün hiç sınırlarını düşünmesek e üzeri x bölü y d y ne
+
+12
+00:02:24,939 --> 00:02:33,639
+d y ne demek ne demek ne demek arkadaşlar yani şu integralı almak istesek nasıl alacağız şimdi
+
+13
+00:02:33,639 --> 00:03:03,639
+bu y
+
+14
+00:03:03,639 --> 00:03:19,420
+kolay ne derdiniz? e üzeri 5y bölü 5 değil mi arkadaşlar? ama y aşağıda olunca yani şurada olunca şöyle payda da e üzeri 5 bölü y şeklinde olunca bunu çözmek kolay değil.
+
+15
+00:03:19,420 --> 00:03:28,180
+Şimdi soruya başlamadan önce integraline karar vermeniz lazım. Demek ki ben burada şunu çözemeyeceğim.
+
+16
+00:03:28,180 --> 00:03:37,340
+Tamam mı? Evet. Şimdi o zaman ne diyecek? Ben dy dx verilmiş şurası. Bunu ne yapmalıyım?
+
+17
+00:03:37,819 --> 00:03:47,560
+dx dy olmalı. Peki dx dy olursa ne olur? Bakın dx dy olsaydı sınırlarını yazmıyorum. Şöyle olurdu değil mi arkadaşlar?
+
+18
+00:03:48,340 --> 00:03:58,159
+e üzeri x bölüye dx dy olurdu. Peki böyle olunca ne olur arkadaşlar? Bakın hiç sınırlarını yazmadım. Şurayı çözecektiniz.
+
+19
+00:03:58,180 --> 00:04:06,040
+Bu da nedir arkadaşlar? e üzeri x bölüye dx'i ilk önce. Şurayı çözecektiniz. Peki çözelim.
+
+20
+00:04:07,120 --> 00:04:15,460
+Bu nedir arkadaşlar? Neye göre integral al? x'e göre. x'e göre alacaksanız y sabit. Mesela şöyle.
+
+21
+00:04:15,900 --> 00:04:23,819
+Mesela aklımdan düşünüyorum. Şöyle bir şey. e üzeri x bölü 3 dx.
+
+22
+00:04:23,819 --> 00:04:32,039
+Bunun integralı nedir? Söyleyebilecek olan var mı? Evet. Merak ediyorum.
+
+23
+00:04:32,680 --> 00:04:37,439
+Bilen var mı? Evet. Hiç kimse bilmiyor mu?
+
+24
+00:04:41,620 --> 00:04:45,740
+e üzeri x bölü 3 bölü 1 bölü 3'tür değil mi?
+
+25
+00:04:45,920 --> 00:04:48,540
+Yani 3 tane e üzeri x bölü 3'tür.
+
+26
+00:04:49,300 --> 00:04:50,759
+Mesela bu böyledir.
+
+27
+00:04:51,319 --> 00:04:54,980
+O zaman diyorum ki ben bunun integralini alabilirim.
+
+28
+00:04:55,420 --> 00:04:56,840
+Şimdi soruya geri dönelim.
+
+29
+00:04:57,000 --> 00:04:57,920
+Şuydu soru değil mi?
+
+30
+00:04:58,319 --> 00:05:00,100
+Şimdi soruyu yeniden yazıyorum.
+
+31
+00:05:00,300 --> 00:05:01,040
+Örnek diyorum.
+
+32
+00:05:01,040 --> 00:05:03,600
+Bunu kafanızdan düşündünüz.
+
+33
+00:05:04,259 --> 00:05:10,660
+0'dan 1'e x'den 1'e e üzeri x bölü y, d'ye dx.
+
+34
+00:05:10,660 --> 00:05:15,420
+Bunu böyle çözemeyeceğinizi nasıl olması gerektiğine karar verdiniz.
+
+35
+00:05:15,579 --> 00:05:18,800
+Şuranın dx, d'ye olması gerektiğine karar verdiniz.
+
+36
+00:05:19,259 --> 00:05:20,939
+Peki dx, d'ye yazalım.
+
+37
+00:05:23,300 --> 00:05:26,540
+x bölü y, dx, d'ye.
+
+38
+00:05:26,540 --> 00:05:32,600
+Şimdi buraya dx yazarsak şu dx bu x eşittir bir şeyden x eşittir bir şeye.
+
+39
+00:05:33,120 --> 00:05:36,800
+Bu d'ye y eşittir bir şeyden y eşittir bir şeye.
+
+40
+00:05:36,960 --> 00:05:38,060
+Peki bu taraf peki?
+
+41
+00:05:38,060 --> 00:05:44,079
+Burası d y, burası y eşittir x'den y eşittir bir'e.
+
+42
+00:05:44,579 --> 00:05:48,519
+Dx'de x eşittir sıfırdan x eşittir bir'e.
+
+43
+00:05:48,519 --> 00:05:49,100
+Evet.
+
+44
+00:05:50,019 --> 00:05:52,279
+Şimdi bir dakika arkadaşlar.
+
+45
+00:05:53,740 --> 00:05:55,800
+Chat'i açabilecek miyim?
+
+46
+00:05:56,279 --> 00:05:57,980
+Yine açamadım tabii ki.
+
+47
+00:05:58,840 --> 00:06:00,659
+Hocam sistem çökmüş galiba.
+
+48
+00:06:00,819 --> 00:06:03,120
+Bazı arkadaşlar derse giremiyormuş.
+
+49
+00:06:03,120 --> 00:06:05,939
+Kimse giremiyor.
+
+50
+00:06:07,680 --> 00:06:08,480
+Yok.
+
+51
+00:06:08,819 --> 00:06:14,460
+Derse girmenizde eğer siz de arkadaşlarınıza link atabiliyorsanız link atın arkadaşlar.
+
+52
+00:06:15,699 --> 00:06:18,300
+Yani yoklamada sorun yaşamazsınız.
+
+53
+00:06:19,139 --> 00:06:19,580
+Tamam mı?
+
+54
+00:06:19,639 --> 00:06:21,139
+Arkadaşlarınızla söyleyin.
+
+55
+00:06:21,300 --> 00:06:21,759
+[öğrenci].
+
+56
+00:06:21,759 --> 00:06:32,980
+Eğer söyleyebiliyorsanız veya [öğrenci] veya burada olan birisi, derste olan birisi söyleyebiliyorsa söylesin.
+
+57
+00:06:33,840 --> 00:06:35,279
+Yoklamada sıkıntı olmaz.
+
+58
+00:06:35,439 --> 00:06:40,460
+Bugün için linki de paylaşabiliyorsanız paylaşın arkadaşlar.
+
+59
+00:06:41,019 --> 00:06:41,460
+Tamam mı?
+
+60
+00:06:41,460 --> 00:06:42,680
+Evet.
+
+61
+00:06:43,120 --> 00:06:44,660
+Böyle diyebilirim.
+
+62
+00:06:45,699 --> 00:06:45,840
+Evet.
+
+63
+00:06:46,560 --> 00:06:48,379
+Şimdi bir dakika.
+
+64
+00:06:49,500 --> 00:06:50,040
+Yazdım.
+
+65
+00:06:50,139 --> 00:06:50,860
+Teşekkürler.
+
+66
+00:06:50,960 --> 00:06:51,840
+Yazmışsın [öğrenci].
+
+67
+00:06:51,980 --> 00:06:53,060
+Çok teşekkür ederim.
+
+68
+00:06:53,560 --> 00:06:55,779
+Şimdi kaldığımız yerden devam ediyorum.
+
+69
+00:06:56,439 --> 00:06:59,920
+Şimdi şöyle arkadaşlar.
+
+70
+00:07:00,500 --> 00:07:02,100
+Demek ki bölgeler değişecek.
+
+71
+00:07:02,259 --> 00:07:04,200
+Bölgeleri değiştiriyorum arkadaşlar.
+
+72
+00:07:04,899 --> 00:07:06,319
+Bölgeleri değiştiriyorum.
+
+73
+00:07:06,840 --> 00:07:08,159
+Nereden değiştireceğim?
+
+74
+00:07:08,159 --> 00:07:09,819
+Burada verilen bilgilerden.
+
+75
+00:07:09,980 --> 00:07:11,720
+X'ye koordinat sisteminde.
+
+76
+00:07:12,199 --> 00:07:13,500
+Nasıl verilmiş arkadaşlar?
+
+77
+00:07:13,740 --> 00:07:14,500
+Şöyle verilmiş.
+
+78
+00:07:15,199 --> 00:07:19,480
+Y eşittir X.
+
+79
+00:07:19,899 --> 00:07:20,419
+Başka?
+
+80
+00:07:20,939 --> 00:07:23,960
+Y eşittir 1.
+
+81
+00:07:24,620 --> 00:07:28,579
+Şurası 1 ise, şu X ile çakıştığı yerde şurası 1'dir.
+
+82
+00:07:28,579 --> 00:07:30,620
+Sonra neler var arkadaşlar?
+
+83
+00:07:30,819 --> 00:07:31,579
+Bakın.
+
+84
+00:07:31,840 --> 00:07:32,039
+1.
+
+85
+00:07:32,500 --> 00:07:33,680
+Y eşittir X.
+
+86
+00:07:34,419 --> 00:07:35,639
+Y eşittir 1.
+
+87
+00:07:35,819 --> 00:07:36,259
+Başka?
+
+88
+00:07:36,779 --> 00:07:37,939
+X eşittir 0.
+
+89
+00:07:38,159 --> 00:07:39,000
+Şurasıdır.
+
+90
+00:07:39,299 --> 00:07:40,379
+Ve X eşittir 1.
+
+91
+00:07:40,699 --> 00:07:42,439
+Aslında bölge şurası değil mi?
+
+92
+00:07:43,399 --> 00:07:44,560
+Ve bölgesi şurası.
+
+93
+00:07:45,060 --> 00:07:47,240
+Hakikaten şöyle kontrol edebilirsiniz.
+
+94
+00:07:48,019 --> 00:07:48,379
+Neydi?
+
+95
+00:07:48,539 --> 00:07:50,460
+Burası Y'ye göre yazılmıştı.
+
+96
+00:07:50,899 --> 00:07:52,620
+Y eksenine paralel gidiyoruz.
+
+97
+00:07:52,860 --> 00:07:53,159
+Bakın.
+
+98
+00:07:53,240 --> 00:07:54,939
+Y eşittir X'ten geldi.
+
+99
+00:07:55,699 --> 00:07:56,019
+Hop.
+
+100
+00:07:56,279 --> 00:07:57,879
+Y eşittir 1'den çıktı.
+
+101
+00:07:57,879 --> 00:08:01,720
+Ve bölgede 0'dan 1'e kadar.
+
+102
+00:08:02,319 --> 00:08:03,240
+Tamam mı arkadaşlar?
+
+103
+00:08:03,860 --> 00:08:06,779
+Şimdi bölgeyi çizdikten sonra kolay arkadaşlar.
+
+104
+00:08:06,779 --> 00:08:08,100
+Şunu silelim.
+
+105
+00:08:09,060 --> 00:08:09,860
+Şimdi.
+
+106
+00:08:10,919 --> 00:08:13,800
+Şimdi artık biz nasıl yazacağız?
+
+107
+00:08:14,220 --> 00:08:15,319
+Şu halde yazacağız.
+
+108
+00:08:16,180 --> 00:08:16,500
+Şöyle.
+
+109
+00:08:17,860 --> 00:08:18,080
+Tamam.
+
+110
+00:08:18,500 --> 00:08:20,560
+Bölgeyi, bundan bölgeyi çizdik.
+
+111
+00:08:20,899 --> 00:08:21,699
+Şimdi yazıyorum.
+
+112
+00:08:22,199 --> 00:08:22,779
+Burası ne?
+
+113
+00:08:22,779 --> 00:08:24,019
+Dx.
+
+114
+00:08:24,659 --> 00:08:27,100
+Dx ise bu sefer nereye paralel?
+
+115
+00:08:27,500 --> 00:08:28,759
+X'e paralel gidiyoruz.
+
+116
+00:08:28,899 --> 00:08:30,519
+Eksi X'ten artı X'e doğru.
+
+117
+00:08:31,039 --> 00:08:31,840
+X eşittir.
+
+118
+00:08:31,960 --> 00:08:33,319
+Şurası kaçtır arkadaşlar?
+
+119
+00:08:33,920 --> 00:08:34,680
+X eşittir.
+
+120
+00:08:34,799 --> 00:08:35,680
+Sıfırdan giriyor.
+
+121
+00:08:35,799 --> 00:08:36,120
+Bakın.
+
+122
+00:08:37,120 --> 00:08:42,819
+Yeniden.
+
+123
+00:08:36,659 --> 00:08:37,500
+Geldik.
+
+124
+00:08:37,620 --> 00:08:39,439
+X eşittir sıfırdan giriyor.
+
+125
+00:08:39,980 --> 00:08:42,139
+X eşittir kaçtan çıktı bölgeden?
+
+126
+00:08:42,279 --> 00:08:43,919
+X eşittir sıfırdan girdi.
+
+127
+00:08:44,459 --> 00:08:46,100
+X eşittir y'den çıktı.
+
+128
+00:08:46,719 --> 00:08:47,480
+Değil mi arkadaşlar?
+
+129
+00:08:47,959 --> 00:08:49,759
+Hep X eşittir sıfırdan girdi.
+
+130
+00:08:49,879 --> 00:08:51,379
+X eşittir y'den çıktı.
+
+131
+00:08:51,959 --> 00:08:57,379
+Peki y bölgede, bölge y ekseninde nereden nereye değişiyor?
+
+132
+00:08:57,899 --> 00:08:59,179
+Sıfırdan 1'e.
+
+133
+00:09:00,579 --> 00:09:01,339
+Evet.
+
+134
+00:09:02,059 --> 00:09:04,559
+Artık bu integral çözülebilir.
+
+135
+00:09:04,980 --> 00:09:06,259
+Soru bitti.
+
+136
+00:09:06,659 --> 00:09:07,980
+Gördüğünüz gibi bakın.
+
+137
+00:09:08,319 --> 00:09:08,620
+Şöyle.
+
+138
+00:09:10,579 --> 00:09:11,159
+Kendi.
+
+139
+00:09:12,339 --> 00:09:12,639
+Evet.
+
+140
+00:09:12,860 --> 00:09:14,259
+Şurada bakın arkadaşlar.
+
+141
+00:09:14,980 --> 00:09:15,659
+Çizdik.
+
+142
+00:09:15,959 --> 00:09:17,579
+X eşittir sıfırdan.
+
+143
+00:09:17,740 --> 00:09:20,779
+X eşittir y'ye sıfırdan 1'e doğru gitti.
+
+144
+00:09:21,199 --> 00:09:22,620
+Bunu çözelim mi arkadaşlar?
+
+145
+00:09:22,879 --> 00:09:24,299
+Veya hızlıca çözelim.
+
+146
+00:09:24,919 --> 00:09:25,819
+Bahsettik ama.
+
+147
+00:09:26,199 --> 00:09:27,399
+Şöyle değil mi arkadaşlar?
+
+148
+00:09:28,360 --> 00:09:28,860
+Şöyle.
+
+149
+00:09:29,519 --> 00:09:32,679
+Y eşittir sıfırdan y eşittir 1'e.
+
+150
+00:09:32,679 --> 00:09:35,980
+İlk önce şu içerideki integral alınacak.
+
+151
+00:09:35,980 --> 00:09:37,099
+Ne oluyor?
+
+152
+00:09:37,360 --> 00:09:38,099
+Şöyle değil mi?
+
+153
+00:09:39,379 --> 00:09:41,019
+X eşittir sıfırdan.
+
+154
+00:09:41,139 --> 00:09:42,480
+X eşittir y'ye.
+
+155
+00:09:42,659 --> 00:09:44,079
+E üzeri x bölü y.
+
+156
+00:09:44,379 --> 00:09:45,199
+D x.
+
+157
+00:09:45,699 --> 00:09:46,279
+D y.
+
+158
+00:09:46,639 --> 00:09:48,220
+Şimdi bu integral'i alalım.
+
+159
+00:09:48,639 --> 00:09:49,539
+Tamam mı arkadaşlar?
+
+160
+00:09:50,379 --> 00:09:50,879
+Alalım.
+
+161
+00:09:51,679 --> 00:09:52,620
+Nedir arkadaşlar?
+
+162
+00:09:53,220 --> 00:09:54,639
+E üzeri x bölü y.
+
+163
+00:09:54,639 --> 00:09:55,980
+Biraz önce dedim ya.
+
+164
+00:09:56,079 --> 00:09:57,500
+E üzeri x bölü y.
+
+165
+00:09:58,039 --> 00:09:59,460
+D x neye eşittir?
+
+166
+00:09:59,559 --> 00:10:01,399
+Mesela 3 için şöyleydi.
+
+167
+00:10:01,500 --> 00:10:01,779
+Bakın.
+
+168
+00:10:02,199 --> 00:10:03,879
+E üzeri x bölü 3.
+
+169
+00:10:04,139 --> 00:10:04,960
+Y sabit ya.
+
+170
+00:10:05,039 --> 00:10:06,159
+Burada 3 de sabit.
+
+171
+00:10:06,559 --> 00:10:08,839
+3 e üzeri x bölü 3'e eşittir.
+
+172
+00:10:09,240 --> 00:10:10,620
+O zaman bu neye eşittir?
+
+173
+00:10:10,919 --> 00:10:12,199
+Söyleyebilecek olan var mı?
+
+174
+00:10:13,000 --> 00:10:13,779
+Merak ediyorum.
+
+175
+00:10:13,879 --> 00:10:15,559
+Bu integral kaç eşittir?
+
+176
+00:10:16,500 --> 00:10:16,879
+Evet.
+
+177
+00:10:17,379 --> 00:10:18,639
+Kimse bir şey yazmamış.
+
+178
+00:10:18,639 --> 00:10:19,379
+yazmamış.
+
+179
+00:10:20,120 --> 00:10:20,439
+Evet.
+
+180
+00:10:20,799 --> 00:10:22,439
+Var mı arkadaşlar fikri olan?
+
+181
+00:10:22,919 --> 00:10:23,360
+Nedir?
+
+182
+00:10:24,799 --> 00:10:25,259
+Evet.
+
+183
+00:10:25,480 --> 00:10:26,639
+Yine sessizsiniz.
+
+184
+00:10:28,079 --> 00:10:28,399
+Evet.
+
+185
+00:10:30,259 --> 00:10:30,539
+Y.
+
+186
+00:10:30,539 --> 00:10:33,379
+E üzeri x bölü y'ye eşittir.
+
+187
+00:10:33,679 --> 00:10:34,259
+X'e göre.
+
+188
+00:10:34,620 --> 00:10:35,319
+Değil mi arkadaşlar?
+
+189
+00:10:35,980 --> 00:10:36,799
+O zaman şöyle.
+
+190
+00:10:37,279 --> 00:10:39,279
+Y eşittir sıfırdan 1'e.
+
+191
+00:10:39,759 --> 00:10:41,199
+Burası ne olur arkadaşlar?
+
+192
+00:10:41,199 --> 00:10:42,480
+Şöyle olur.
+
+193
+00:10:43,779 --> 00:10:44,059
+Y.
+
+194
+00:10:44,379 --> 00:10:46,980
+E üzeri x bölü y'ye eşittir.
+
+195
+00:10:46,980 --> 00:10:50,359
+Sınırları x eşittir y'den.
+
+196
+00:10:50,699 --> 00:10:52,159
+X eşittir sıfıra.
+
+197
+00:10:53,519 --> 00:10:54,259
+D y'dir.
+
+198
+00:10:56,519 --> 00:10:58,059
+Şimdi burada arkadaşlar.
+
+199
+00:10:58,619 --> 00:10:58,879
+Şöyle.
+
+200
+00:10:59,539 --> 00:11:01,339
+Y eşittir sıfırdan 1'e.
+
+201
+00:11:02,939 --> 00:11:04,039
+Sıfırdan 1'e.
+
+202
+00:11:04,539 --> 00:11:05,659
+Şimdi gelelim buraya.
+
+203
+00:11:06,220 --> 00:11:07,039
+Şimdi arkadaşlar.
+
+204
+00:11:07,839 --> 00:11:09,740
+X gördüğün yere ne koy?
+
+205
+00:11:09,939 --> 00:11:10,480
+Y koy.
+
+206
+00:11:10,480 --> 00:11:12,779
+Şöyle daha belirle.
+
+207
+00:11:12,899 --> 00:11:14,879
+X gördüğün yere y koy.
+
+208
+00:11:14,959 --> 00:11:15,359
+Koyalım.
+
+209
+00:11:15,360 --> 00:11:18,360
+X gördüğümüz yere y koyduk.
+
+210
+00:11:19,319 --> 00:11:20,079
+Eksi.
+
+211
+00:11:20,579 --> 00:11:23,139
+X gördüğümüz yere sıfır koyduk.
+
+212
+00:11:25,039 --> 00:11:26,039
+D y.
+
+213
+00:11:26,740 --> 00:11:27,759
+Tamam mı arkadaşlar?
+
+214
+00:11:28,399 --> 00:11:29,299
+Buradan ne gelir?
+
+215
+00:11:29,740 --> 00:11:30,779
+Şurası kaçtır?
+
+216
+00:11:31,440 --> 00:11:31,659
+1.
+
+217
+00:11:31,919 --> 00:11:33,000
+Şurası kaçtır?
+
+218
+00:11:33,700 --> 00:11:33,940
+E.
+
+219
+00:11:34,259 --> 00:11:35,120
+Yani şu geldi.
+
+220
+00:11:35,240 --> 00:11:36,339
+Y parantezinde.
+
+221
+00:11:36,480 --> 00:11:37,419
+E eksi 1.
+
+222
+00:11:37,419 --> 00:11:38,319
+D y.
+
+223
+00:11:38,480 --> 00:11:38,699
+Gelir.
+
+224
+00:11:38,779 --> 00:11:39,980
+Şuraya devam etsem.
+
+225
+00:11:40,139 --> 00:11:40,599
+Devamı.
+
+226
+00:11:41,299 --> 00:11:42,500
+Y parantezinde.
+
+227
+00:11:42,639 --> 00:11:43,240
+Yani şöyle.
+
+228
+00:11:43,519 --> 00:11:44,480
+Sıfırdan 1'e.
+
+229
+00:11:44,980 --> 00:11:46,039
+Y parantezinde.
+
+230
+00:11:46,199 --> 00:11:47,000
+E eksi 1.
+
+231
+00:11:47,139 --> 00:11:47,519
+D y.
+
+232
+00:11:47,639 --> 00:11:47,819
+D.
+
+233
+00:11:47,819 --> 00:11:49,459
+Bu neye eşittir arkadaşlar?
+
+234
+00:11:49,699 --> 00:11:50,959
+Şurası sabittir.
+
+235
+00:11:51,099 --> 00:11:51,879
+Dışarı çıkar.
+
+236
+00:11:52,419 --> 00:11:53,779
+Y kare bölü 2'dir.
+
+237
+00:11:53,980 --> 00:11:54,939
+Sıfırdan 1'e.
+
+238
+00:11:55,299 --> 00:11:56,459
+O da 1 bölü 2.
+
+239
+00:11:57,019 --> 00:11:58,139
+E eksi 1'dir.
+
+240
+00:11:58,139 --> 00:11:59,419
+Evet.
+
+241
+00:12:00,419 --> 00:12:01,639
+Anlaşıldı mı arkadaşlar?
+
+242
+00:12:01,860 --> 00:12:02,919
+Şuraya eşittir koyalım.
+
+243
+00:12:03,600 --> 00:12:04,500
+Şuraya yıldız.
+
+244
+00:12:04,919 --> 00:12:06,500
+Yıldız işleminin devamı.
+
+245
+00:12:07,299 --> 00:12:07,600
+Evet.
+
+246
+00:12:08,059 --> 00:12:09,620
+Var mı bir sorunuz burada bana?
+
+247
+00:12:11,740 --> 00:12:12,039
+Evet.
+
+248
+00:12:12,220 --> 00:12:13,419
+Zannedersem yok.
+
+249
+00:12:13,659 --> 00:12:14,639
+Şimdi arkadaşlar.
+
+250
+00:12:15,360 --> 00:12:20,220
+İki katlı integrallerde de bir sabit varsa sabit integralin dışına çıkar.
+
+251
+00:12:20,659 --> 00:12:28,679
+İkinci olarak ayrı ayrı aynı bölgede iki fonksiyonun integreli ayrı ayrı yazılabilir.
+
+252
+00:12:29,059 --> 00:12:32,740
+Yalnız bölgeleri eşit gördüğünüz gibi aynı bölgedeler.
+
+253
+00:12:32,740 --> 00:12:35,500
+Sonra şu önemli arkadaşlar.
+
+254
+00:12:36,120 --> 00:12:39,100
+Şimdi mesela şöyle bir R1 bölgeniz var.
+
+255
+00:12:39,379 --> 00:12:40,579
+Mesela burası R1.
+
+256
+00:12:41,100 --> 00:12:43,339
+Şurası da şöyle olsun R2.
+
+257
+00:12:44,399 --> 00:12:46,699
+Burası R1, şurası R2.
+
+258
+00:12:47,100 --> 00:12:49,259
+Buranın tamamı R bölgesi olsun.
+
+259
+00:12:49,860 --> 00:12:51,220
+O zaman şöyle yapılabilir.
+
+260
+00:12:51,360 --> 00:12:59,559
+R1 bölgesindeki integral artı R2 bölgesindeki integral şeklinde ikisinin toplamı yazılabilir.
+
+261
+00:12:59,559 --> 00:13:03,159
+Tabi bakın R1 ile R2 kesişmeyen bölgeler.
+
+262
+00:13:03,939 --> 00:13:11,620
+Sonra eğer bir integral büyük eşit sıfırsa içeride integralini aldığınız fonksiyon da pozitif büyük eşit sıfırdır.
+
+263
+00:13:11,620 --> 00:13:24,259
+Eğer bir F integralı R bölgesinde G integralinden büyük eşitse o zaman fonksiyonu da F fonksiyonu da G'den büyük eşittir.
+
+264
+00:13:24,259 --> 00:13:31,139
+Şimdi alan arkadaşlar bu çok çıkan bir şey.
+
+265
+00:13:32,179 --> 00:13:33,139
+Bu da çok çıkıyor.
+
+266
+00:13:33,639 --> 00:13:40,199
+Şimdi alan bir R bölgesinin siz mat 1'de bir R bölgesinin alanını tek katlı integralle gördünüz.
+
+267
+00:13:40,839 --> 00:13:45,039
+Mat 2'de mesela size dediler ki şu bölgenin alanı nedir?
+
+268
+00:13:45,039 --> 00:13:46,579
+R bölgesi.
+
+269
+00:13:46,579 --> 00:13:52,779
+İşte bunun mat 2'de yani iki katlı integralde alanını buraya R bölgesini yazıyorsunuz.
+
+270
+00:13:53,059 --> 00:13:55,639
+Buraya fonksiyon olarak 1 yapıyorsunuz.
+
+271
+00:13:56,019 --> 00:13:56,519
+D A.
+
+272
+00:13:57,319 --> 00:13:58,939
+İşte bu size alanı veriyor.
+
+273
+00:13:58,939 --> 00:14:04,120
+Yani R bölgesinin alanını bu şekilde hesaplıyorsunuz arkadaşlar.
+
+274
+00:14:04,759 --> 00:14:06,819
+Şimdi gelin bir tane örnek yapalım.
+
+275
+00:14:06,980 --> 00:14:08,179
+Bakın ne diyor?
+
+276
+00:14:08,579 --> 00:14:08,799
+1.
+
+277
+00:14:09,299 --> 00:14:11,419
+Y eşittir E üzeri X eğrisi.
+
+278
+00:14:11,799 --> 00:14:21,459
+Y eşittir 0, X eşittir 0 ve X eşittir Ln2 doğruları ile arasında kalan bölgenin alanını veren ifadeyi bulalım.
+
+279
+00:14:21,679 --> 00:14:23,000
+Gelin bulalım arkadaşlar.
+
+280
+00:14:23,639 --> 00:14:24,819
+Şimdi ben yazıyorum.
+
+281
+00:14:24,819 --> 00:14:35,500
+Örneğin şöyle örneğin şöyle nasıl verilmiş?
+
+282
+00:14:35,500 --> 00:14:36,779
+1 dakika arkadaşlar.
+
+283
+00:14:38,039 --> 00:14:42,059
+Y eşittir E üzeri X eğrisi.
+
+284
+00:14:43,179 --> 00:14:54,799
+Y eşittir 0, X eşittir 0 ve X eşittir Ln2 doğruları ile arasında kalan bölgenin alanını veren ifadeyi bulalım.
+
+285
+00:14:54,799 --> 00:14:58,799
+Bölgenin alanını veren ifadeyi bulalım.
+
+286
+00:14:58,799 --> 00:15:02,799
+Bu zaten notlarda var arkadaşlar.
+
+287
+00:15:03,799 --> 00:15:04,419
+Şimdi bakın.
+
+288
+00:15:04,879 --> 00:15:11,220
+X'in koordinat sisteminde 1.
+
+289
+00:15:11,759 --> 00:15:13,240
+Y eşittir E üzeri X.
+
+290
+00:15:13,419 --> 00:15:14,220
+O da şu değil mi?
+
+291
+00:15:15,079 --> 00:15:18,480
+Mat 1'den E üzeri X.
+
+292
+00:15:18,480 --> 00:15:20,480
+X'in koordinat sisteminde 1.
+
+293
+00:15:20,480 --> 00:15:22,480
+Y eşittir E üzeri X.
+
+294
+00:15:22,480 --> 00:15:54,480
+Y eşittir 0.
+
+295
+00:15:38,932 --> 00:15:48,292
+başka x eşittir l2 bu da şurası oldu yani bu da x eşittir l2
+
+296
+00:15:48,292 --> 00:15:56,172
+evet bu şekilde verilmiş şimdi bu dördünün arasında kalan bölge neresidir arkadaşlar
+
+297
+00:15:56,172 --> 00:16:04,491
+dördünün arasında kalan bölge burasıdır re bölgesi burası buranın alanını istiyor
+
+298
+00:16:04,491 --> 00:16:13,372
+ne olacak alan şimdi yazıyorum bakın alan arkadaşlar şöyle olur alana neyin re bölgesi
+
+299
+00:16:13,372 --> 00:16:29,091
+nedir integral şöyle re bölgesi buraya yazdım fonksiyonumuzu ne alacağım 1xd bu kadar şimdi bu 1 şurası ya dxd'ye
+
+300
+00:16:29,091 --> 00:16:40,372
+ya da ne olacak arkadaşlar ya da d y dx şimdi buna karar vereceksiniz şurası 1 zaten 1 olduğu için şurası
+
+301
+00:16:40,372 --> 00:16:48,971
+dxd y'nin integraliydi d y dx'in integraliydi aynı yani dx'in integraliydi x d y'nin ki de y gelecek fark etmeyecek
+
+302
+00:16:48,971 --> 00:16:58,331
+peki hangisini alacaksınız burası önemli arkadaşlar şimdi bakın birisi dedi ki ben şöyle yazayım birinci yol
+
+303
+00:16:58,331 --> 00:17:13,971
+şimdi birinci yol başlıyor dedi ki ben şöyle yazdım d y d x pardon d x d y yazalım zorunu yazdı zor olanı yapmaya çalıştı
+
+304
+00:17:13,971 --> 00:17:29,971
+1 çarpı d x d y yazdım şimdi d x d y demek ne demek hangi eksene göre x80'ine göre paralel demek şimdi x80'ine göre paralel gidecek bakın şimdi arkadaşlar x80'ine göre paralel gidiyoruz
+
+305
+00:17:29,971 --> 00:17:43,172
+şimdi bölgeniz şurada başlıyoruz hemen şöyle bakın belirginleştireyim şimdi çok renkli bir kalemle x80'ine göre paralel gidelim hangi renk olsun şöyle yeşil olsun
+
+306
+00:17:43,172 --> 00:17:57,971
+posfordu şimdi gidiyorum bakın x80'ine xx'den artı x'e doğru gitti x80'i şimdi ne olacak x80'i x eşittir hangi x eşittir sıfırdan girdi x eşittir kaçtan çıktı
+
+307
+00:17:57,971 --> 00:18:14,971
+elen ikiden çıktı elen ikiden çıktı x eşittir sıfırdan girdi x eşittir kaçtan çıktı elen ikiden çıktı x eşittir sıfırdan gitti x eşittir elen ikiden çıktı bitti mi peki yelleri ne şimdi buraya kadar böyle
+
+308
+00:18:14,971 --> 00:18:36,971
+şimdi y nereden nereye değişti sıfırdan bir de yani şurası da ye eşittir sıfırdan ye eşittir bile değişti bitti mi ama bölge bitti mi arkadaşlar bitmedi şurası kaldı bakın onu hangi renkte göstereyim şuraya kadar
+
+309
+00:18:36,971 --> 00:18:53,971
+yaptık şurası r1 şurası r1 ama bir de şurası var r2 orayı daha göremedik arkadaşlar çünkü ışınlar oraya gitmiyor yani bu ışınlar bu şurayla şu iki doğru arasında gitti
+
+310
+00:18:53,971 --> 00:19:21,971
+şimdi devam ediyorum diyorum ki o zaman şuradaki ışınları da yazmam lazım şimdi bakın devam ediyorum bitmedi bölgem şimdi hangi bölgeye geldim r2 bölgesi peki yine ışınlarım dxt y şurası bir tamam mı arkadaşlar şurası bir şimdi arkadaşlar ne yapacak şimdi ışın çiziyorum bakın devam ediyorum ne olacak arkadaşlar bakın
+
+311
+00:19:21,971 --> 00:19:38,971
+x eşittir nereden giriyor bu eğri x eşittir nedir bu eğri x'i çekerseniz elen x olur x eşittir elen x den girdi nereden çıktı x eşittir elen 2
+
+312
+00:19:39,667 --> 00:19:48,367
+sonra x eşittir elen x den girdi x eşittir elen ikiden çıktı x eşittir elen x den girdi x eşittir elen ikiden çıktı
+
+313
+00:19:48,367 --> 00:19:51,367
+Peki y si nereden nereye değişti?
+
+314
+00:19:51,367 --> 00:19:54,367
+y si söyleyebilecek olan var mı?
+
+315
+00:19:54,367 --> 00:19:56,827
+y si bakın arkadaşlar
+
+316
+00:19:56,827 --> 00:20:00,007
+nereden nereye? şuradan birden
+
+317
+00:20:00,007 --> 00:20:01,927
+şurası kaçtır?
+
+318
+00:20:01,927 --> 00:20:06,507
+bakın x'i elen 2 iken şurada kaçtır?
+
+319
+00:20:06,507 --> 00:20:10,167
+y eşittir elen 2 den kaç gelir?
+
+320
+00:20:10,167 --> 00:20:12,207
+e tabanında şunlar gider
+
+321
+00:20:12,207 --> 00:20:14,207
+2 dir dimi şurası
+
+322
+00:20:14,207 --> 00:20:16,907
+yani ne olur arkadaşlar
+
+323
+00:20:16,907 --> 00:20:21,707
+y si birden y si kaçır?
+
+324
+00:20:21,707 --> 00:20:24,007
+2 ye değişir
+
+325
+00:20:24,007 --> 00:20:26,207
+demek ki bu soruyu
+
+326
+00:20:26,207 --> 00:20:29,207
+dx dy ye göre göre yaparsanız
+
+327
+00:20:29,207 --> 00:20:30,807
+ne olur arkadaşlar
+
+328
+00:20:30,807 --> 00:20:34,467
+bunu iki tane ayrı r1 ve r2
+
+329
+00:20:34,467 --> 00:20:40,507
+yani r bölgesi r1 ve r2 bölgesinin toplamına eşitir
+
+330
+00:20:40,507 --> 00:20:44,007
+yani şurası ikisinin toplamı r bölgesi değil mi?
+
+331
+00:20:44,007 --> 00:20:46,507
+yani ancak böyle bulabilirsiniz
+
+332
+00:20:46,507 --> 00:20:48,507
+dx dy ye göre yaparsanız
+
+333
+00:20:48,507 --> 00:20:49,507
+sonra çözülür
+
+334
+00:20:49,507 --> 00:20:51,507
+ama integral böyledir
+
+335
+00:20:51,507 --> 00:20:54,507
+şimdi bana burada bir sorunuz var mı?
+
+336
+00:20:54,507 --> 00:20:58,807
+evet var mı arkadaşlar?
+
+337
+00:20:58,807 --> 00:20:59,807
+yok
+
+338
+00:20:59,807 --> 00:21:01,007
+şimdi
+
+339
+00:21:01,007 --> 00:21:04,507
+devam edecek olursak
+
+340
+00:21:04,507 --> 00:21:08,548
+ama başka bir öğrenci şunu der
+
+341
+00:21:08,548 --> 00:21:12,547
+ya ben niye bu kadar uzun işlemlerle uğraşayım der
+
+342
+00:21:12,547 --> 00:21:13,567
+ikinci yol
+
+343
+00:21:13,567 --> 00:21:16,107
+alan neydi?
+
+344
+00:21:16,367 --> 00:21:17,567
+bakın yazıyorum yine
+
+345
+00:21:17,567 --> 00:21:19,167
+r bölgesinde
+
+346
+00:21:19,167 --> 00:21:21,387
+bakın r bölgesinde
+
+347
+00:21:21,387 --> 00:21:23,587
+1 çarpı d a'ydi
+
+348
+00:21:23,587 --> 00:21:26,387
+şekli ben buraya yeniden çiziyorum
+
+349
+00:21:26,387 --> 00:21:27,527
+şekil neydi?
+
+350
+00:21:28,247 --> 00:21:30,288
+x y koordinat sisteminde
+
+351
+00:21:30,288 --> 00:21:33,187
+nasıldı arkadaşlar?
+
+352
+00:21:34,887 --> 00:21:36,087
+y eşittir
+
+353
+00:21:36,087 --> 00:21:37,727
+e üzeri x
+
+354
+00:21:37,727 --> 00:21:40,387
+şurası
+
+355
+00:21:40,387 --> 00:21:42,047
+ve şöyle
+
+356
+00:21:42,047 --> 00:21:43,347
+elenik
+
+357
+00:21:43,347 --> 00:21:45,307
+değil mi arkadaşlar?
+
+358
+00:21:45,727 --> 00:21:46,687
+bu şekildeydi
+
+359
+00:21:46,687 --> 00:21:48,727
+bölgemiz buydu
+
+360
+00:21:48,727 --> 00:21:50,727
+şimdi
+
+361
+00:21:50,727 --> 00:21:52,527
+bu da r bölgesi
+
+362
+00:21:52,527 --> 00:21:53,727
+şimdi arkadaşlar
+
+363
+00:21:53,727 --> 00:21:55,227
+r bölgesi de buydu
+
+364
+00:21:55,227 --> 00:21:56,327
+şimdi
+
+365
+00:21:56,327 --> 00:21:59,027
+bir öğrenci de dedi ki
+
+366
+00:21:59,027 --> 00:22:00,767
+bu çok uzun oldu
+
+367
+00:22:00,767 --> 00:22:01,727
+şöyle eşittir
+
+368
+00:22:01,727 --> 00:22:02,507
+şöyle alalım
+
+369
+00:22:02,507 --> 00:22:03,907
+şöyle yapardım ben dedi
+
+370
+00:22:03,907 --> 00:22:06,827
+1 çarpı
+
+371
+00:22:06,827 --> 00:22:08,927
+dy dx yazardım
+
+372
+00:22:08,927 --> 00:22:10,927
+dy dx yazınca
+
+373
+00:22:10,927 --> 00:22:11,807
+ne diyecek?
+
+374
+00:22:12,047 --> 00:22:12,927
+içerideki y
+
+375
+00:22:12,927 --> 00:22:15,267
+y eksenine paralel gider
+
+376
+00:22:15,267 --> 00:22:16,027
+yani şöyle
+
+377
+00:22:16,027 --> 00:22:17,288
+y eksenine
+
+378
+00:22:17,288 --> 00:22:18,107
+hop şöyle
+
+379
+00:22:18,107 --> 00:22:20,607
+şimdi burası içerideki y
+
+380
+00:22:20,607 --> 00:22:22,107
+y eşittir bir şeyden
+
+381
+00:22:22,107 --> 00:22:23,407
+y eşittir bir şeye
+
+382
+00:22:23,407 --> 00:22:25,407
+y eksenine paralel gidiyor
+
+383
+00:22:25,407 --> 00:22:26,007
+arkadaşlar
+
+384
+00:22:26,007 --> 00:22:27,407
+ne olacak şimdi
+
+385
+00:22:27,407 --> 00:22:27,807
+bakın
+
+386
+00:22:27,807 --> 00:22:29,347
+y eşittir
+
+387
+00:22:29,347 --> 00:22:30,327
+şuradan girdi
+
+388
+00:22:30,327 --> 00:22:31,147
+y eşittir
+
+389
+00:22:31,147 --> 00:22:32,267
+sıfırdan girdi
+
+390
+00:22:32,267 --> 00:22:33,727
+kaçtan çıktı?
+
+391
+00:22:34,267 --> 00:22:35,067
+y eşittir
+
+392
+00:22:35,067 --> 00:22:36,267
+e üzeri x ten
+
+393
+00:22:36,267 --> 00:22:36,947
+çıktı
+
+394
+00:22:36,947 --> 00:22:38,467
+peki
+
+395
+00:22:38,467 --> 00:22:41,227
+x'lerden
+
+396
+00:22:41,227 --> 00:22:41,567
+bakın
+
+397
+00:22:41,567 --> 00:22:42,667
+y eşittir
+
+398
+00:22:42,667 --> 00:22:43,767
+sıfırdan girdi
+
+399
+00:22:43,767 --> 00:22:45,107
+e üzeri x ten
+
+400
+00:22:45,107 --> 00:22:45,527
+çıktı
+
+401
+00:22:45,527 --> 00:22:46,347
+y eşittir
+
+402
+00:22:46,347 --> 00:22:47,307
+sıfırdan girdi
+
+403
+00:22:47,307 --> 00:22:48,427
+e üzeri x ten
+
+404
+00:22:48,427 --> 00:22:49,387
+çıktı
+
+405
+00:22:49,387 --> 00:22:50,967
+hep bu şekilde
+
+406
+00:22:50,967 --> 00:22:52,007
+yani tek bir tane
+
+407
+00:22:52,007 --> 00:22:53,207
+integral yazıyoruz
+
+408
+00:22:53,207 --> 00:22:54,707
+gördüğünüz gibi
+
+409
+00:22:54,707 --> 00:22:55,387
+peki
+
+410
+00:22:55,387 --> 00:22:56,768
+x'ler nereden
+
+411
+00:22:56,768 --> 00:22:57,607
+nereye değişiyor
+
+412
+00:22:57,607 --> 00:22:58,347
+bölgede?
+
+413
+00:22:58,347 --> 00:22:59,607
+x'ler
+
+414
+00:22:59,607 --> 00:23:00,347
+sıfırdan
+
+415
+00:23:00,947 --> 00:23:01,647
+kaça kadar
+
+416
+00:23:01,647 --> 00:23:02,347
+değişiyor?
+
+417
+00:23:02,807 --> 00:23:03,067
+x'ler
+
+418
+00:23:03,067 --> 00:23:04,107
+elen ikiye kadar
+
+419
+00:23:04,107 --> 00:23:05,507
+x eşittir
+
+420
+00:23:05,507 --> 00:23:06,268
+sıfırdan
+
+421
+00:23:06,268 --> 00:23:07,768
+x eşittir
+
+422
+00:23:07,768 --> 00:23:09,048
+elen ikiye kadar
+
+423
+00:23:09,048 --> 00:23:10,687
+gördüğünüz gibi
+
+424
+00:23:10,687 --> 00:23:11,587
+bu şekilde
+
+425
+00:23:11,587 --> 00:23:11,967
+olun
+
+426
+00:23:11,967 --> 00:23:13,048
+ilk önce
+
+427
+00:23:13,048 --> 00:23:14,127
+şu içerideki
+
+428
+00:23:14,127 --> 00:23:15,487
+integrali alırsak
+
+429
+00:23:15,487 --> 00:23:17,267
+alalım arkadaşlar
+
+430
+00:23:17,267 --> 00:23:18,767
+x eşittir
+
+431
+00:23:18,767 --> 00:23:19,407
+sıfırdan
+
+432
+00:23:19,407 --> 00:23:20,247
+elen ikiye
+
+433
+00:23:20,247 --> 00:23:20,647
+şöyle
+
+434
+00:23:20,647 --> 00:23:21,827
+ne olur
+
+435
+00:23:21,827 --> 00:23:22,567
+arkadaşlar
+
+436
+00:23:22,567 --> 00:23:24,947
+şu
+
+437
+00:23:24,947 --> 00:23:25,867
+d'ye
+
+438
+00:23:25,867 --> 00:23:26,687
+min bir
+
+439
+00:23:26,687 --> 00:23:27,167
+çarpı
+
+440
+00:23:27,167 --> 00:23:27,487
+d'ye
+
+441
+00:23:27,487 --> 00:23:28,187
+integrali
+
+442
+00:23:28,187 --> 00:23:28,887
+y'dir
+
+443
+00:23:28,887 --> 00:23:30,207
+y eşittir
+
+444
+00:23:30,207 --> 00:23:30,947
+sıfırdan
+
+445
+00:23:30,947 --> 00:23:31,647
+y eşittir
+
+446
+00:23:31,647 --> 00:23:32,788
+e üzeri x'e
+
+447
+00:23:32,788 --> 00:23:54,907
+y
+
+448
+00:23:33,299 --> 00:23:43,200
+bu da ne olur arkadaşlar ne demek bu arkadaşlar y gördüğün yere e üzeri x yaz x eşittir 0'dan
+
+449
+00:23:43,200 --> 00:23:53,940
+elen ikiye y gördüğümüz yere e üzeri x yazdık eksi y gördüğüm yere 0 yazdım 0 dx olur bu da
+
+450
+00:23:53,940 --> 00:24:01,680
+e üzeri x'tir e üzeri x'inin tekrarı e üzeri x'tir 0'dan elen ikiye Peki bu nedir bu nedir
+
+451
+00:24:01,680 --> 00:24:09,899
+arkadaşlar hatırlayalım hat 2'den nedir arkadaşlar e üzeri bu x'tir değil mi x eşittir 0'dan x eşittir elen ikiye
+
+452
+00:24:09,899 --> 00:24:18,779
+x gördüğün yere elen ikiye yaz eksi x gördüğün yere 0 yaz yazdık e tabanında e tabanında
+
+453
+00:24:18,779 --> 00:24:28,200
+bunlar gider 2 eksi birden birdir alınabilmiş var mı bana bir sorunuz burada arkadaşlar
+
+454
+00:24:28,200 --> 00:24:40,079
+bu Evet alanını bu şekilde gösterdik burada diğer yöntem yazmıyor Ben yazarak yaptım Sizlerde
+
+455
+00:24:40,079 --> 00:24:51,420
+anlamışsınızdır Umarım şimdi arkadaşlar yani mesela bu bir sınav sorusu olabilir sınav sorusu olabilir ama
+
+456
+00:24:51,420 --> 00:25:21,420
+bu bir sınav sorusu olabilir bu bir sınav sorusu olabilir bu bir sınav sorusu olabilir bu bir sınav sorusu olabilir bu bir sınav sorusu olabilir bu bir sınav sorusu olabilir bu bir sınav sorusu olabilir bu bir sınav sorusu olabilir bu bir sınav sorusu olabilir bu bir sınav sorusu olabilir bu bir sınav sorusu olabilir bu bir sınav sorusu olabilir bu bir sınav sorusu olabilir bu bir sınav sorusu olabilir bu bir sınav sorusu olabilir bu bir sınav sorusu olabilir bu bir sınav sorusu olabilir bu bir sınav sorusu olabilir bu bir sınav sorusu olabilir bu sınav sorusu olabilir bu sınav sorusu olabilir bu sınav sorusu olabilir bu sınav sorusu olabilir bu sınav sorusu olabilir bu sınav sorusu olabilir bu sınav sorusu olabilir bu sınav sorusu olabilir bu sınav sorusu olabilir bu sınav sorusu
+
+457
+00:25:51,420 --> 00:26:21,420
+bu sınav sorusu olabilir bu sınav sorusu olabilir bu sınav sorusu olabilir bu sınav sorusu olabilir bu sınav sorusu olabilir bu sınav sorusu olabilir bu sınav sorusu olabilir bu sınav sorusu olabilir bu sınav sorusu olabilir bu sınav sorusu olabilir bu sınav sorusu olabilir bu sınav sorusu olabilir bu sınav sorusu olabilir bu sınav sorusu olabilir bu sınav sorusu olabilir bu sınav sorusu olabilir bu sınav sorusu olabilir bu sınav sorusu olabilir bu sınav sorusu olabilir bu sınav sorusu olabilir bu sınav sorusu olabilir bu sınav sorusu olabilir bu sınav sorusu olabilir bu sınav sorusu olabilir bu sınav sorusu olabilir bu sınav sorusu olabilir bu sınav sorusu olabilir bu sınav sorusu olabilir bu sınav sorusu olabilir bu sınav sorusu olabilir bu sınav soru olabilir bu sınav
+
+458
+00:26:21,420 --> 00:26:26,819
+şimdi bakın bunu da hızlıca göstereyim ben size örneğin
+
+459
+00:26:30,163 --> 00:26:46,584
+ne diyor? y² eşittir 4x, y eşittir 2x-4 arasında kalan bölgenin alanı. Şöyle arkadaşlar, yine x'ye koordinat sisteminde y² eşittir 4x biliyorsunuz parabol şöyle.
+
+460
+00:26:46,584 --> 00:27:06,163
+bu y² eşittir 4x. 2x-4 de kabaca şöyle. Şöyle. Tamam mı arkadaşlar? İkisi karası arasında kalan bölge arkadaşlar şurası. R bölgesi. İkisi arasında, yani şöyle gösterelim.
+
+461
+00:27:12,852 --> 00:27:20,652
+şöyle gösterelim ikisi arasında kalan bölge R bölgesi bu şimdi arkadaşlar R bölgesinin alanı
+
+462
+00:27:20,652 --> 00:27:33,372
+R bölgesinin alanı 1 çarpı dA şimdi şuna karar vereceksiniz burayı dx dy mi yoksa dydx mi acaba hangisi
+
+463
+00:27:33,372 --> 00:27:46,092
+şimdi onun içinde eğer mesela ne dediniz dx dy olsun mesela şöyle olsun birincisi dy dx olsun yani şöyle olsun
+
+464
+00:27:46,092 --> 00:27:58,812
+R bölgesinde 1 çarpı dy dx eğer böyle alırsınız ne olur şöyle olur y eksenine burası dy olduğu için ne olacak arkadaşlar
+
+465
+00:27:58,812 --> 00:28:11,892
+y eksenine paralel olacak yani şöyle y ekseni burası dy y eksenine y y eksenine paralel bakın şimdi 1 parabolin
+
+466
+00:28:11,892 --> 00:28:19,092
+alt kanadından geliyor üst kanadından çıkıyor sonra yine alt kanadından giriyor üst kanadından çıkıyor
+
+467
+00:28:19,092 --> 00:28:28,692
+alt kanadından giriyor üst kanadından çıkıyor nereye kadar bunu böyle devam ettiriyor şöyle şurası R1 bölgesi
+
+468
+00:28:28,692 --> 00:28:39,252
+sonra ne oluyor arkadaşlar sonra demek ki şöyle eğer ben bunu şöyle yazarsam 1 dy dx şimdi 1
+
+469
+00:28:39,252 --> 00:28:53,052
+R1 bölgesinde dy dx var artı sonra ne yapıyor arkadaşlar bakın doğrudan giriyor parabolin üst kanadından çıkıyor doğrudan giriyor parabolin üst kanadından çıkıyor
+
+470
+00:28:53,052 --> 00:29:10,052
+burası da ne olsun R2 bölgesi olsun şurası R2 bölgesinde ne olacak R2 bölgesinde 1 d ye dx olacak birinci yol bu
+
+471
+00:29:10,052 --> 00:29:20,612
+tamam mı arkadaşlar tamam mı arkadaşlar anlaşıldı mı şimdi gelelim ikinci yola ben ikinci yolu yapacağım bunu kolaylıkla
+
+472
+00:29:20,612 --> 00:29:31,172
+kolaylıkla yazabilirsiniz değil mi arkadaşlar şuradan hemen yazalım isterseniz R1 bölgesi nedir şurası arkadaşlar y'yi çekerseniz
+
+473
+00:29:31,172 --> 00:30:31,172
+y'yi eğer y'yi eğer y'yi eğer y'yi eğer y'yi eğer y'yi eğer y'yi eğer y'yi eğer y'yi eğer y'yi eğer y'yi eğer y'yi eğer y'yi eğer y'yi eğer y'yi eğer y'yi eğer y'yi eğer y'yi eğer y'yi eğer y'yi eğer y'yi eğer y'yi eğer y'yi eğer y'yi eğer y'yi eğer y'yi eğer y'yi eğer y'yi eğer y'yi eğer y'yi eğer y'yi eğer y'yi eğer y'yi eğer y'yi eğer y'yi eğer y'yi eğer y'yi eğer y'yi eğer y'yi eğer y'yi eğer y'yi eğer y'yi eğer y'yi eğer y'yi eğer y
+
+474
+00:30:31,172 --> 00:30:53,692
+şurası 1 şurası 1 arkadaşlar yani x'i birden 0 ile 1 arasında şurası x eşittir 0 x eşittir 1 o zaman burası da birden şuraya kadar burası kaç arkadaşlar 4 ise 8 böyle 2'den şurası da 4 galiba yanlış bulmadıysam
+
+475
+00:30:53,692 --> 00:31:10,572
+şurası da x'i şurası şurası 1 x'i 1 şurası 4 birden x eşittir birden 4'e kadar evet yani kabaca böyle yazılabilir
+
+476
+00:31:11,284 --> 00:31:27,444
+Tabii umarım işlem hatası yapmamışımdır. Bu şekilde yazılabilir. Şimdi gelelim ikinci yola. İkinci yol. O da şöyle arkadaşlar. Bakın. X-Y koordinat sisteminde şöyle.
+
+477
+00:31:29,444 --> 00:31:30,403
+Şöyle.
+
+478
+00:31:35,316 --> 00:31:39,316
+şöyleydi R bölgesi buydu değil mi?
+
+479
+00:31:39,316 --> 00:31:41,316
+R bölgesi buydu.
+
+480
+00:31:41,316 --> 00:31:44,316
+y² eşittir 4x'ti.
+
+481
+00:31:44,316 --> 00:31:48,316
+burası da y eşittir 2x eksi 4.
+
+482
+00:31:48,316 --> 00:31:50,316
+şimdi yazıyorum bakın.
+
+483
+00:31:50,316 --> 00:31:53,316
+ya bir öğrenci de der ki y'li yazmak çok zor.
+
+484
+00:31:53,316 --> 00:31:57,316
+ben şöyle integral
+
+485
+00:31:57,316 --> 00:32:01,316
+R bölgesinde bir tane d a idi.
+
+486
+00:32:01,316 --> 00:32:03,316
+alan alan
+
+487
+00:32:03,316 --> 00:32:09,316
+bu sefer yukarıda
+
+488
+00:32:09,316 --> 00:32:11,316
+dy dx almıştık
+
+489
+00:32:11,316 --> 00:32:13,316
+şimdi ne alacağım?
+
+490
+00:32:13,316 --> 00:32:15,316
+mesela der ki
+
+491
+00:32:15,316 --> 00:32:17,316
+dx dy olsun
+
+492
+00:32:17,316 --> 00:32:19,316
+burası dx ise
+
+493
+00:32:19,316 --> 00:32:21,316
+burası x'e paralar gidecek
+
+494
+00:32:21,316 --> 00:32:25,316
+burası x eşittir bir şeyden x eşittir bir şeye
+
+495
+00:32:25,316 --> 00:32:31,316
+bakın arkadaşlar x'e paralar gidince x eşittir paraboldan x eşittir doğruya
+
+496
+00:32:31,316 --> 00:32:41,316
+x eşittir paraboldan doğruya
+
+497
+00:32:41,316 --> 00:32:43,316
+o zaman buradan x eşittir kaçtır?
+
+498
+00:32:43,316 --> 00:32:45,316
+y² bölü 4
+
+499
+00:32:45,316 --> 00:32:47,316
+burada ise x eşittir kaçtır?
+
+500
+00:32:47,316 --> 00:32:49,316
+y artı 4 bölü 2'dir
+
+501
+00:32:49,316 --> 00:32:51,316
+o zaman
+
+502
+00:32:51,316 --> 00:32:55,316
+x eşittir paraboldan doğruya
+
+503
+00:32:55,316 --> 00:32:57,316
+x eşittir
+
+504
+00:32:57,316 --> 00:32:59,316
+y² bölü 4'ten
+
+505
+00:32:59,316 --> 00:33:01,316
+x eşittir doğru
+
+506
+00:33:01,316 --> 00:33:05,316
+yani x eşittir y artı 4 bölü 2'den çıktı
+
+507
+00:33:05,316 --> 00:33:09,316
+peki y'ler nereden nereye değişiyor?
+
+508
+00:33:09,316 --> 00:33:11,316
+şuraları arkadaşlar
+
+509
+00:33:11,316 --> 00:33:13,316
+iki eğrinin birleşme noktalarından kaçtı
+
+510
+00:33:13,316 --> 00:33:15,316
+eksi 2'ye
+
+511
+00:33:15,316 --> 00:33:17,316
+şurası da
+
+512
+00:33:17,316 --> 00:33:19,316
+4'müş
+
+513
+00:33:19,316 --> 00:33:21,316
+o zaman
+
+514
+00:33:21,316 --> 00:33:23,316
+eksi 2'den
+
+515
+00:33:23,316 --> 00:33:25,316
+4'e kadardır
+
+516
+00:33:25,316 --> 00:33:27,316
+evet
+
+517
+00:33:27,316 --> 00:33:31,316
+bundan sonrası çok kolaylıkla
+
+518
+00:33:31,316 --> 00:33:33,316
+yapılabilir
+
+519
+00:33:33,316 --> 00:33:35,316
+yani y² bölü 4'ten
+
+520
+00:33:35,316 --> 00:33:37,316
+bakın arkadaşlar
+
+521
+00:33:37,316 --> 00:33:39,316
+y² bölü 4'ten
+
+522
+00:33:39,316 --> 00:33:41,316
+y artı 4 bölü 2 eksi 2'den 4'e
+
+523
+00:33:41,316 --> 00:33:43,316
+ve buradan da kolaylıkla bulunabilir
+
+524
+00:33:43,316 --> 00:33:45,316
+var mı bana bir sorunuz?
+
+525
+00:33:45,316 --> 00:33:47,316
+evet
+
+526
+00:33:47,316 --> 00:33:49,316
+şimdi bundan sonrasını yapmayacağım
+
+527
+00:33:49,316 --> 00:33:51,316
+şurası işlem
+
+528
+00:33:51,316 --> 00:33:53,316
+zaten işlemler açık yazılmış
+
+529
+00:33:53,316 --> 00:33:55,316
+ödev çok kolay bir soru arkadaşlar
+
+530
+00:33:55,316 --> 00:33:57,316
+kolaylıkla yapabilirsiniz
+
+531
+00:33:57,316 --> 00:33:59,316
+her şey yazılı
+
+532
+00:33:59,316 --> 00:34:01,316
+şimdi gelelim
+
+533
+00:34:01,316 --> 00:34:03,316
+hacime
+
+534
+00:34:03,316 --> 00:34:05,316
+arkadaşlar bu hacimi anlamalısınız
+
+535
+00:34:05,316 --> 00:34:07,316
+yani en genel anlamıyla
+
+536
+00:34:07,316 --> 00:34:09,315
+ben bunu daha önce size anlattım
+
+537
+00:34:09,315 --> 00:34:11,315
+mesela burada
+
+538
+00:34:11,315 --> 00:34:13,315
+tabi şekil temsilidir
+
+539
+00:34:13,315 --> 00:34:15,315
+x, y, z
+
+540
+00:34:15,315 --> 00:34:17,315
+şimdi arkadaşlar
+
+541
+00:34:17,315 --> 00:34:19,315
+bir tane
+
+542
+00:34:19,315 --> 00:34:21,315
+z eşittir
+
+543
+00:34:21,315 --> 00:34:23,315
+f1, y, y var
+
+544
+00:34:23,315 --> 00:34:25,315
+bir tane daha
+
+545
+00:34:25,315 --> 00:34:27,315
+cism var
+
+546
+00:34:27,315 --> 00:34:29,315
+pardon bir tane daha yüzey var
+
+547
+00:34:29,315 --> 00:34:30,315
+z eşittir
+
+548
+00:34:30,315 --> 00:34:31,315
+f2, x, y
+
+549
+00:34:31,315 --> 00:34:32,315
+tamam mı?
+
+550
+00:34:32,315 --> 00:34:33,315
+şimdi
+
+551
+00:34:33,315 --> 00:34:34,315
+diyor ki
+
+552
+00:34:34,315 --> 00:34:36,315
+bu ikisi arasında kalan
+
+553
+00:34:36,315 --> 00:34:38,315
+cismin hacmini bulunuz
+
+554
+00:34:38,315 --> 00:34:40,315
+tamam mı?
+
+555
+00:34:40,315 --> 00:34:41,315
+bu cismin hacmi
+
+556
+00:34:41,315 --> 00:34:42,315
+hacmi
+
+557
+00:34:42,315 --> 00:34:44,315
+nedir?
+
+558
+00:34:44,315 --> 00:34:47,315
+hacmi bulmak için şöyle yapıyorsunuz
+
+559
+00:34:47,315 --> 00:34:49,315
+arkadaşlar
+
+560
+00:34:49,315 --> 00:34:51,315
+şimdi bir tane ok çiziyorsunuz
+
+561
+00:34:51,315 --> 00:34:53,315
+artı z den eksi z ye doğru
+
+562
+00:34:53,315 --> 00:34:55,315
+yukarıdan girdiniz
+
+563
+00:34:55,315 --> 00:34:57,315
+hacim
+
+564
+00:34:57,315 --> 00:34:59,315
+hacim dediniz
+
+565
+00:34:59,315 --> 00:35:01,315
+hangisinden girdiniz?
+
+566
+00:35:01,315 --> 00:35:02,315
+pozitiften
+
+567
+00:35:02,315 --> 00:35:03,315
+yani yukarıdan geliyorsunuz
+
+568
+00:35:03,315 --> 00:35:06,315
+f1, x, y, eksi
+
+569
+00:35:06,315 --> 00:35:07,315
+çıktığı
+
+570
+00:35:07,315 --> 00:35:09,315
+bölgeden çıktığı kısım
+
+571
+00:35:09,315 --> 00:35:10,315
+f2, x, y
+
+572
+00:35:10,315 --> 00:35:12,315
+bu da f2, x, y
+
+573
+00:35:12,315 --> 00:35:14,315
+tabi yine buraya ne yazıyorsunuz?
+
+574
+00:35:14,315 --> 00:35:16,315
+bakın z yazmıyoruz
+
+575
+00:35:16,315 --> 00:35:17,315
+integrallerin içine
+
+576
+00:35:17,315 --> 00:35:18,315
+d, a
+
+577
+00:35:18,315 --> 00:35:19,315
+şimdi gelelim bölge
+
+578
+00:35:19,315 --> 00:35:21,315
+peki bölge neresi arkadaşlar?
+
+579
+00:35:21,315 --> 00:35:24,315
+bölge yine x, y ekseni boyunca
+
+580
+00:35:24,315 --> 00:35:27,315
+genelde x, y üzerine iz düşümü veriliyor
+
+581
+00:35:27,315 --> 00:35:29,315
+şimdi bunu böyle
+
+582
+00:35:29,315 --> 00:35:30,315
+şöyle bakın yine
+
+583
+00:35:30,315 --> 00:35:32,315
+şöyle göstereceğim
+
+584
+00:35:32,315 --> 00:35:33,315
+bir şey
+
+585
+00:35:33,715 --> 00:35:48,435
+şöyle arkadaşlar, görüntüyle, şimdi bakın bu bir, pardon, arkadaşlar, beni görebiliyor musunuz?
+
+586
+00:35:56,596 --> 00:35:58,416
+ekranı görüyor musunuz arkadaşlar?
+
+587
+00:35:59,096 --> 00:35:59,596
+Evet hocam.
+
+588
+00:36:00,556 --> 00:36:02,735
+Ekranda ne görüyorsunuz?
+
+589
+00:36:07,987 --> 00:36:09,727
+yapacağım şimdi. Allah Allah.
+
+590
+00:36:17,940 --> 00:36:23,579
+şu anda ekran geldi mi? birden zoom gitti. beni görüyor musunuz? bakın bu bir yüzey.
+
+591
+00:36:23,579 --> 00:36:30,659
+tamam beni görüyorsunuz. teşekkürler [öğrenci]. şimdi bakın bu bir yüzey. bu da bir yüzey.
+
+592
+00:36:30,659 --> 00:36:41,460
+şimdi re bölgesi nasıl biliyor musunuz? bunları böyle preslediniz. ortaya çıkan şekli en geniş haliyle bütün noktaların içine girdiği
+
+593
+00:36:41,460 --> 00:36:50,340
+böyle preslenen x'ye düzlemindeki şekil olarak düşüneceksiniz. tamam mı arkadaşlar? yani böyle ya da bir ışık tuttunuz yukarıda
+
+594
+00:36:50,340 --> 00:36:59,340
+bütün hepsini kapsayan en geniş şekil. tamam mı arkadaşlar? şimdi buna göre şöyle paylaşayım ekranı.
+
+595
+00:36:59,340 --> 00:37:10,059
+evet şunu bir dakika arkadaşlar. evet şimdi o zaman re bölgesi neresidir arkadaşlar? bunu preslediğiniz zaman
+
+596
+00:37:10,059 --> 00:37:17,940
+şu aşağıda oluşan şekildir. yani şurası re bölgesidir. dikdörtgen değil. şöyle yapayım da şöyle birazcık.
+
+597
+00:37:17,940 --> 00:37:29,940
+bu da şunlardan şöyle aşağıya gelen şekildir re bölgesi. re bölgesi. tamam mı arkadaşlar? şimdi bunu bilirseniz
+
+598
+00:37:29,940 --> 00:37:38,380
+bundan sonraki sorularda çok rahat yapabilirsiniz. şimdi bakın soruyu okuyalım. şimdi diyor ki
+
+599
+00:37:38,380 --> 00:37:46,260
+eğer aşağıdan z eşittir 0 diyorsa genelde şekli bir de pozitif taraftaysa şekli çizmeden de soruyu
+
+600
+00:37:46,260 --> 00:38:02,139
+çözebilirsiniz arkadaşlar. şimdi bakın diyor ki üstten z eşittir 10 artı x kare artı 3 ye kare paraboliti alttan z eşittir 0 ile taralı cisim. şimdi bakın şöyle
+
+601
+00:38:02,139 --> 00:38:08,019
+şöyle şimdi bir tane x y y z düzlemi var. ben şekli bilmiyorum mesela.
+
+602
+00:38:08,019 --> 00:38:30,019
+x y z düzlemi var. diyorum ki üstten şöyle bir tane kabaca z eşittir. işte 10 artı x kare artı 3 ye kare. alttan neresi arkadaşlar? bakın alttan şimdi geliyor cismin. nereye kadar? z eşittir 0'a. şöyle şurada z eşittir 0.
+
+603
+00:38:30,019 --> 00:38:53,019
+z eşittir 0. şurası x y düzlemi demek. değil mi? şu düzlem demek. z eşittir. yani şu düzlem. başka renkle göstereyim. şu düzlem. z eşittir 0 düzlemi. değil mi? z eşittir 0 düzlemi. alttan da bununla sınırlı. işte sizin cisminiz bu arkadaşlar. şöyle cisim bu. şurası.
+
+604
+00:38:53,019 --> 00:39:23,000
+z eşittir 0.
+
+605
+00:39:23,000 --> 00:39:48,000
+z eşittir 0 ile çıkar. yani şu olur. şurası şu olur. peki bölge? bölge. diyor ki bunun tabi ki bu şekli preslediğiniz zaman şöyle hangi renkte göstersem farklı bir renk olsun. şimdi diyor ki siz bunu preslediğiniz zaman şurada bir r bölgesi oluşuyor. değil mi? şu yukarıdan aldık. bu şekli böyle presledik.
+
+606
+00:39:48,000 --> 00:39:59,720
+riskledik. x y düzlemini düşürdük. r bölgen senin ne diyor? sana vermiş. r bölgen bu. o zaman ne diyeceksiniz? r bölgem de buraya yazıyorum.
+
+607
+00:40:00,440 --> 00:40:05,619
+soru bitti. artık bir integral soruz. r bölgesi nasıl bir bölge?
+
+608
+00:40:05,619 --> 00:40:12,400
+dikdörtgensel en kolay bölge. bakın hacim nedir? şimdi bundan şunu yazdık.
+
+609
+00:40:12,688 --> 00:40:15,807
+sonra re bölgesi dikdörtgensel
+
+610
+00:40:15,807 --> 00:40:18,288
+buraya dy dx yazarsanız
+
+611
+00:40:18,288 --> 00:40:20,208
+ilk önce y'lileri yazıyoruz
+
+612
+00:40:20,208 --> 00:40:21,768
+bakın sıfırdan ikiye
+
+613
+00:40:21,768 --> 00:40:24,568
+tabi ki yine aynı bakın buraya dy yazdık
+
+614
+00:40:24,568 --> 00:40:26,367
+burası y eşittir
+
+615
+00:40:26,367 --> 00:40:28,668
+nereden nereye sıfırdan ikiye
+
+616
+00:40:28,668 --> 00:40:30,248
+dışarıdaki dx
+
+617
+00:40:30,248 --> 00:40:32,608
+kaçtan kaça sıfırdan
+
+618
+00:40:32,608 --> 00:40:34,068
+bire bitti
+
+619
+00:40:34,068 --> 00:40:36,788
+ve sorunun çözümü
+
+620
+00:40:36,788 --> 00:40:39,088
+kolaylıkla yapılabilir
+
+621
+00:40:39,088 --> 00:40:41,008
+bu anlaşıldı mı arkadaşlar
+
+622
+00:40:41,008 --> 00:40:42,068
+çözeyim mi bunu
+
+623
+00:40:42,068 --> 00:40:44,708
+çözün derseniz çözerim
+
+624
+00:40:44,708 --> 00:40:46,668
+evet
+
+625
+00:40:46,668 --> 00:40:49,387
+evet sessizsiniz
+
+626
+00:40:49,387 --> 00:40:51,048
+biz anladık
+
+627
+00:40:51,048 --> 00:40:52,387
+dediğinizi düşünüyorum
+
+628
+00:40:52,387 --> 00:40:54,948
+bu da sınavlarda çok çıkan
+
+629
+00:40:54,948 --> 00:40:57,168
+bir soru çeşidi
+
+630
+00:40:57,168 --> 00:40:59,188
+yani bunların arasında
+
+631
+00:40:59,188 --> 00:41:00,988
+diyemiyorum bu daha fazla çıkar
+
+632
+00:41:00,988 --> 00:41:02,948
+çünkü hepsi integral çözümüne
+
+633
+00:41:02,948 --> 00:41:04,968
+işte alan olması ne demek
+
+634
+00:41:04,968 --> 00:41:07,407
+alansa buna bir yaz demek
+
+635
+00:41:07,407 --> 00:41:10,068
+bir çarpı d a r bölgesinde
+
+636
+00:41:10,068 --> 00:41:11,168
+bir alan sorusu
+
+637
+00:41:11,168 --> 00:41:12,887
+ortalama değerse
+
+638
+00:41:12,887 --> 00:41:15,208
+ortalama değer demek ne demek
+
+639
+00:41:15,208 --> 00:41:18,168
+r üzerinde bir fonksiyonun
+
+640
+00:41:18,168 --> 00:41:20,268
+ortalama değeri demek arkadaşlar
+
+641
+00:41:20,268 --> 00:41:20,927
+şu demek
+
+642
+00:41:20,927 --> 00:41:22,148
+diyor ki
+
+643
+00:41:22,148 --> 00:41:23,327
+sen diyor
+
+644
+00:41:23,327 --> 00:41:26,088
+f'nin r bölgesindeki
+
+645
+00:41:26,088 --> 00:41:27,387
+integralini bul
+
+646
+00:41:27,387 --> 00:41:29,448
+bir de r'nin alanına böl
+
+647
+00:41:29,448 --> 00:41:30,768
+bu integralı
+
+648
+00:41:30,768 --> 00:41:32,268
+bir bölü r'nin alanı
+
+649
+00:41:32,268 --> 00:41:33,688
+buna da ortalama değer
+
+650
+00:41:33,688 --> 00:41:35,128
+deniliyor
+
+651
+00:41:35,128 --> 00:41:37,407
+yani size alanı sorarsa
+
+652
+00:41:37,407 --> 00:41:39,188
+buraya bir yazıyorsunuz
+
+653
+00:41:39,188 --> 00:41:40,988
+f'in r üzerindeki
+
+654
+00:41:40,988 --> 00:41:42,648
+ortalama değer ederse
+
+655
+00:41:42,648 --> 00:41:44,148
+r'nin alanı
+
+656
+00:41:44,148 --> 00:41:47,407
+sonra r bölgesinde
+
+657
+00:41:47,407 --> 00:41:49,407
+f'in integralini
+
+658
+00:41:49,407 --> 00:41:50,407
+çarpımı
+
+659
+00:41:50,407 --> 00:41:51,867
+bir bölü r'nin alanı
+
+660
+00:41:51,867 --> 00:41:53,168
+çarpı
+
+661
+00:41:53,168 --> 00:41:54,407
+şurası integral
+
+662
+00:41:54,407 --> 00:41:55,548
+şudur
+
+663
+00:41:55,548 --> 00:41:56,268
+şunu soruyor
+
+664
+00:41:56,268 --> 00:41:57,168
+yani formül
+
+665
+00:41:57,168 --> 00:41:59,468
+yani ask olan nedir yine burada
+
+666
+00:41:59,468 --> 00:42:00,748
+size bir şekilde
+
+667
+00:42:00,748 --> 00:42:02,168
+integral aldırmak
+
+668
+00:42:02,168 --> 00:42:02,948
+bakın böyle
+
+669
+00:42:02,948 --> 00:42:03,628
+yine
+
+670
+00:42:03,628 --> 00:42:05,228
+integralleri aldırıyor
+
+671
+00:42:05,228 --> 00:42:06,048
+arkadaşlar
+
+672
+00:42:06,048 --> 00:42:07,548
+şimdi mesela
+
+673
+00:42:07,548 --> 00:42:08,088
+gelin
+
+674
+00:42:08,088 --> 00:42:09,448
+beraber çözelim
+
+675
+00:42:09,448 --> 00:42:10,028
+bu soruyu
+
+676
+00:42:10,028 --> 00:42:11,008
+diyor ki
+
+677
+00:42:11,008 --> 00:42:12,427
+f fonksiyonunun
+
+678
+00:42:12,427 --> 00:42:13,628
+ortalama değeri
+
+679
+00:42:13,628 --> 00:42:14,488
+aşağıdaki
+
+680
+00:42:14,488 --> 00:42:15,807
+bölge üzerinde
+
+681
+00:42:15,807 --> 00:42:16,327
+bulunuz
+
+682
+00:42:16,327 --> 00:42:16,548
+diyor
+
+683
+00:42:16,548 --> 00:42:17,728
+gidelim bulalım
+
+684
+00:42:17,728 --> 00:42:19,907
+şimdi nasıl yapacağız
+
+685
+00:42:19,907 --> 00:42:23,048
+formüller çok az zaten
+
+686
+00:42:23,048 --> 00:42:26,387
+evet örneğin
+
+687
+00:42:26,387 --> 00:42:27,668
+diyor ki
+
+688
+00:42:27,668 --> 00:42:29,228
+şöyle diyor
+
+689
+00:42:29,228 --> 00:42:31,288
+ben açayım buradan
+
+690
+00:42:31,288 --> 00:42:32,748
+bir dakika arkadaşlar
+
+691
+00:42:32,748 --> 00:42:34,668
+f fonksiyonu
+
+692
+00:42:34,668 --> 00:42:35,788
+kaç verilmiş
+
+693
+00:42:35,788 --> 00:42:37,288
+fx y
+
+694
+00:42:37,288 --> 00:42:40,427
+sinüs x artı y
+
+695
+00:42:40,427 --> 00:42:41,728
+diyor ki
+
+696
+00:42:41,728 --> 00:42:43,327
+f'nin
+
+697
+00:42:43,327 --> 00:42:45,668
+ortalama değeri
+
+698
+00:42:45,668 --> 00:42:46,168
+nedir
+
+699
+00:42:46,168 --> 00:42:47,807
+ortalama değeri
+
+700
+00:42:47,807 --> 00:42:48,508
+hangi
+
+701
+00:42:48,508 --> 00:42:49,188
+nerede
+
+702
+00:42:49,188 --> 00:42:50,648
+f'nin
+
+703
+00:42:50,648 --> 00:42:51,748
+şuraya
+
+704
+00:42:51,748 --> 00:42:52,307
+r
+
+705
+00:42:52,307 --> 00:42:55,807
+r bölgesi
+
+706
+00:42:55,807 --> 00:42:56,668
+üzerindeki
+
+707
+00:42:56,668 --> 00:42:57,228
+f'nin
+
+708
+00:42:57,228 --> 00:42:58,807
+r bölgesi
+
+709
+00:42:58,807 --> 00:42:59,968
+üzerindeki
+
+710
+00:42:59,968 --> 00:43:02,248
+şöyle diyelim
+
+711
+00:43:02,248 --> 00:43:03,228
+ortalama değeri
+
+712
+00:43:03,228 --> 00:43:03,708
+nedir
+
+713
+00:43:03,708 --> 00:43:04,968
+peki r bölgesi
+
+714
+00:43:04,968 --> 00:43:05,768
+nasıl verilmiş
+
+715
+00:43:05,768 --> 00:43:06,588
+r bölgesi
+
+716
+00:43:06,588 --> 00:43:07,448
+şöyle verilmiş
+
+717
+00:43:07,448 --> 00:43:07,827
+0
+
+718
+00:43:07,827 --> 00:43:08,908
+küçük eşit x
+
+719
+00:43:08,908 --> 00:43:09,927
+küçük eşit p
+
+720
+00:43:09,927 --> 00:43:10,827
+0
+
+721
+00:43:10,827 --> 00:43:11,788
+küçük eşit y
+
+722
+00:43:11,788 --> 00:43:12,628
+küçük eşit
+
+723
+00:43:12,628 --> 00:43:14,008
+p şeklinde
+
+724
+00:43:14,008 --> 00:43:14,588
+verilmiş
+
+725
+00:43:14,588 --> 00:43:15,568
+yazıyorum
+
+726
+00:43:15,568 --> 00:43:16,728
+p'nin
+
+727
+00:43:16,728 --> 00:43:19,807
+ortalama değeri
+
+728
+00:43:19,807 --> 00:43:22,188
+değeri
+
+729
+00:43:22,188 --> 00:43:23,768
+eşittir
+
+730
+00:43:23,768 --> 00:43:25,068
+bir bölü
+
+731
+00:43:25,068 --> 00:43:26,048
+r'nin
+
+732
+00:43:26,048 --> 00:43:26,648
+alanı
+
+733
+00:43:26,648 --> 00:43:29,068
+çarpı
+
+734
+00:43:29,068 --> 00:43:29,608
+şöyle
+
+735
+00:43:29,608 --> 00:43:31,008
+integral
+
+736
+00:43:31,008 --> 00:43:33,108
+r bölgesinde
+
+737
+00:43:33,108 --> 00:43:34,248
+p'nin
+
+738
+00:43:34,248 --> 00:43:37,448
+p x y
+
+739
+00:43:37,448 --> 00:43:38,827
+d a'dır
+
+740
+00:43:38,827 --> 00:43:39,608
+bu kadar
+
+741
+00:43:39,608 --> 00:43:40,748
+şimdi yazıyorum
+
+742
+00:43:40,748 --> 00:43:41,128
+bakın
+
+743
+00:43:41,128 --> 00:43:43,208
+r nedir peki
+
+744
+00:43:43,208 --> 00:43:44,528
+r'nin alanı
+
+745
+00:43:44,528 --> 00:43:46,268
+şöyle
+
+746
+00:43:46,268 --> 00:43:49,208
+r bölgesi
+
+747
+00:43:49,208 --> 00:43:51,228
+x y koordinat sisteminde
+
+748
+00:43:51,228 --> 00:43:52,188
+r bölgesi
+
+749
+00:43:52,188 --> 00:43:53,068
+nasıl verilmiş
+
+750
+00:43:53,068 --> 00:43:54,788
+x'ler 0'dan pi'ye
+
+751
+00:43:54,788 --> 00:43:55,648
+değil mi
+
+752
+00:43:55,648 --> 00:43:56,188
+şöyle
+
+753
+00:43:56,188 --> 00:43:57,887
+0'dan pi'ye
+
+754
+00:43:57,887 --> 00:43:59,908
+y'ler 0'dan pi'ye
+
+755
+00:43:59,908 --> 00:44:01,028
+nasıl bir bölge
+
+756
+00:44:01,028 --> 00:44:03,408
+dikdörtgensel bir bölge
+
+757
+00:44:03,408 --> 00:44:05,887
+r bölgesi
+
+758
+00:44:06,608 --> 00:44:09,548
+dikdörtgensel bölge
+
+759
+00:44:09,548 --> 00:44:11,847
+hatta kare
+
+760
+00:44:11,847 --> 00:44:12,188
+değil mi
+
+761
+00:44:13,588 --> 00:44:20,788
+Evet şimdi R'nin alanı nedir arkadaşlar?
+
+762
+00:44:21,888 --> 00:44:23,968
+R'nin alanı bulabiliyoruz değil mi?
+
+763
+00:44:24,088 --> 00:44:26,508
+Kaçtır?
+
+764
+00:44:27,628 --> 00:44:32,748
+P çarpı P'den P2'dir.
+
+765
+00:44:33,508 --> 00:44:35,748
+Demek ki şimdi buradan devam ediyoruz.
+
+766
+00:44:36,548 --> 00:44:38,268
+R'nin alanı P2.
+
+767
+00:44:38,268 --> 00:44:39,888
+O zaman 1 bölü P2.
+
+768
+00:44:39,888 --> 00:44:43,348
+R bölgesinde Fx, C'ye ne?
+
+769
+00:44:44,307 --> 00:44:45,408
+Sinus x artı y.
+
+770
+00:44:49,008 --> 00:44:50,768
+Şurayı hatta sileyim.
+
+771
+00:44:52,068 --> 00:44:52,348
+Şöyle.
+
+772
+00:44:53,368 --> 00:44:54,608
+Böyledir değil mi arkadaşlar?
+
+773
+00:44:54,868 --> 00:44:56,408
+Bunu yapmak kolay değil mi?
+
+774
+00:44:56,488 --> 00:44:57,448
+Bu nasıl bir bölge?
+
+775
+00:44:58,068 --> 00:45:01,048
+Şurası dikdörtgensel bir bölgedir.
+
+776
+00:45:01,408 --> 00:45:02,108
+Şöyle bakın.
+
+777
+00:45:02,108 --> 00:45:02,908
+Şurada.
+
+778
+00:45:03,668 --> 00:45:05,868
+Şurası dikdörtgensel bir bölgedir.
+
+779
+00:45:05,868 --> 00:45:10,827
+Dolayısıyla arkadaşlar bunun çözümü istediğinize göre alırsınız.
+
+780
+00:45:10,948 --> 00:45:14,788
+1 bölü P2 mesela sinüs x artı y.
+
+781
+00:45:15,327 --> 00:45:17,128
+Mesela dx dy yazın.
+
+782
+00:45:17,408 --> 00:45:18,168
+dx dy.
+
+783
+00:45:18,788 --> 00:45:20,048
+İlk önce x yaz.
+
+784
+00:45:20,528 --> 00:45:21,368
+x eşittir.
+
+785
+00:45:21,488 --> 00:45:22,508
+Sıfırdan piye.
+
+786
+00:45:22,648 --> 00:45:22,848
+Değil mi?
+
+787
+00:45:22,928 --> 00:45:26,048
+X'ler sıfırdan piye kadar değişiyor.
+
+788
+00:45:26,188 --> 00:45:27,608
+Hatta farklı bir renkle.
+
+789
+00:45:27,608 --> 00:45:29,788
+Şöyle sıfırdan piye.
+
+790
+00:45:29,788 --> 00:45:35,988
+y'ler arkadaşlar onlar da sıfırdan piye kadar değişiyor.
+
+791
+00:45:36,807 --> 00:45:39,988
+İşte gördüğünüz gibi bunun çözümü de çok kolay.
+
+792
+00:45:40,728 --> 00:45:42,148
+İsterseniz hemen yapalım.
+
+793
+00:45:42,508 --> 00:45:44,568
+İlk önce içerideki integral.
+
+794
+00:45:45,208 --> 00:45:45,688
+Ne olur?
+
+795
+00:45:45,768 --> 00:45:46,768
+1 bölü pi kare.
+
+796
+00:45:47,628 --> 00:45:48,168
+Pi kare.
+
+797
+00:45:48,328 --> 00:45:49,048
+Şurası pi.
+
+798
+00:45:50,828 --> 00:45:51,848
+Olmadı arkadaşlar.
+
+799
+00:45:51,848 --> 00:46:07,848
+İlk önceki videoda görüşmek üzere.
+
+800
+00:45:56,820 --> 00:46:22,120
+şöyle bir bölü pi kareye şöyle sıfırdan piye y eşittir sıfırdan piye sinüsün mesela bu nedir sinüs x artı y dx bunu nasıl hayal edeceksiniz şöyle değil mi x'e göre x var mesela sinüs x artı 3 gibi bir şey gibi bu sabit sabit
+
+801
+00:46:22,120 --> 00:46:51,840
+o zaman bunun sinüs x artı 3 olsaydı integre ne olurdu eksi kosünüs x artı 3 o zaman bununki ne olur eksi kosünüs x artı y olur demek ki burası eksi kosünüs x artı y'dir neden nereye kadar x eşittir sıfırdan x eşittir piye kadardır dışarıda ne var d y var şimdi o zaman ne diyoruz arkadaşlar x gördüğün yere ilk önce pi
+
+802
+00:46:51,840 --> 00:47:17,660
+1 bölü pi kare bakın x gördüğümüz yere sıfırdan piye kadar y eşittir x gördüğüm yere ilk önce pi eksi kosünüs pi artı y sonra da eksi eksi daha artı olur kosünüs x gördüğüm yere sıfır ya sıfır artı y'den y gelir d y'dir artık bunu yapabilirsiniz
+
+803
+00:47:17,660 --> 00:47:29,660
+kosünüs kosünüs sinüsün integralidir yani kosünüsün integralidir yani kosünüsün integralidir sinüstür eksi kosünüs nedir eksi sinüs pi artı y'dir
+
+804
+00:47:29,660 --> 00:47:44,660
+şurası ise arkadaşlar sinüs y'dir kaçtan kaça kadar sıfırdan piye kadardır buradan ne gelir bu sefer y'ler değil mi bunlar y eşittir sıfırdan y eşittir piye
+
+805
+00:47:44,660 --> 00:48:02,660
+y gördüğün yere pi koy 1 bölü pi'nin karesi y gördüğümüz yere pi koyduk sinüs 2pi sinüs pi y gördüğünüz yere sıfır koy eksi şöyle olur eksi sinüs pi artı sinüs sıfır
+
+806
+00:48:02,660 --> 00:48:18,660
+aslında bunu yazmadan da hemen cevap verebilirsiniz 2pi hepsi bunların sıfırdır değil mi arkadaşlar dolayısıyla 1 bölü pi kare çarpı sıfırdan sonuç sıfırdır ortalama değeri neymiş sıfırmış arkadaşlar
+
+807
+00:48:18,660 --> 00:48:40,660
+Evet soruyu anladınız mı şimdi arkadaşlar şu soru çok güzel tam bir sınav sorusu sınav sorusudur lütfen çözünüz bunu size ödev olarak veriyorum tamam mı arkadaşlar lütfen çözünüz diye
+
+808
+00:48:40,660 --> 00:49:08,660
+Bakınız burada sadece nasıl alabilirsiniz d y d x neden çünkü şu integral şöyle ya şöyle x cos x y şimdi eğer d x yazarsanız d x d y şöyle düşünün şöyle şuranın integrali yani şu integral
+
+809
+00:49:08,660 --> 00:49:36,660
+x y d x kolay hesaplamak kolay hesaplayamazsınız kısmi integrasyon vardır kısmi integrasyon zor olur tamam mı zor hesaplamak hesaplamak ama ama şöyle alırsanız bakın böyle alırsanız d y d x x'lerin hepsi sabit olacağı için kolay bu integrali hesaplamak
+
+810
+00:49:36,660 --> 00:49:56,660
+kolay olur kolay olur kolay olur tamam mı arkadaşlar Evet bunu da söyledik şimdi ikinci pdf geçeceğiz ama bir ara verelim isterseniz arkadaşlar olur mu
+
+811
+00:49:57,139 --> 00:50:16,879
+Yoruldunuz mu? Bilmiyorum. Şimdi ikinci pdf de önemli. Şöyle bir ara veriyoruz arkadaşlar. Saat 51 geçiyor, 52 geçiyor, 7 geçe görüşmek dileğiyle. 15 dakika ara veriyoruz. Tamam mı?
+
+812
+01:05:19,347 --> 01:05:26,067
+Merhaba arkadaşlar dersimizde kaldığımız yerden devam ediyoruz ekran paylaşımı yapıyorum
+
+813
+01:05:26,067 --> 01:05:37,587
+Şimdi arkadaşlar iki katlı integrallerde dikkat etmeniz gereken hususlardan şimdiye kadar bahsettik
+
+814
+01:05:37,587 --> 01:05:45,327
+bazen de öyle integraller çıkacak ki çözümü çok zor değişken dönüşümü yapmanız lazım hani nasıl
+
+815
+01:05:45,327 --> 01:05:52,407
+iki katlı integrallerde değişken dönüşümü yapıyorsanız iki katlı integrallerde de değişken
+
+816
+01:05:52,407 --> 01:06:00,628
+dönüşümü yapacaksınız bunların ilk başı arkadaşlar şöyle en genelini biraz önce gördünüz ilk başı
+
+817
+01:06:00,628 --> 01:06:08,907
+kutupsal koordinatlara geçeceksiniz bu da bir değişken dönüşümü tamam mı arkadaşlar kutupsal
+
+818
+01:06:08,907 --> 01:06:14,967
+koordinatlara geçeceksiniz Peki bunu ne zaman yapacaksınız şimdi ben şöyle özetleyeyim
+
+819
+01:06:14,967 --> 01:06:25,047
+arkadaşlar şimdi size bir tane integral verildi bu verildi hangi koordinatlardasınız x'ye koordinat sistemindesiniz
+
+820
+01:06:25,047 --> 01:06:35,128
+ama işlemler çok karışık ne zaman yapacağınızı ona söyleyeceğim o zaman x yerine r cos theta y yerine r sint theta
+
+821
+01:06:35,128 --> 01:06:43,208
+yapacaksınız o zaman bütün buradaki x'ler y'ler gidecek neler gelecek eğer x kare artı y kare de varsa o da r kare olacak
+
+822
+01:06:43,208 --> 01:07:09,208
+şimdi arkadaşlar şuradaki d a neye eşit arkadaşlar ya d x d y ya da neye eşit arkadaşlar d y d x'i bu de ister d y d x olsun ister d x d y olsun bunun yerine arkadaşlar r d r d t eta ya da bunun yerine r d r d t eta gelecek
+
+823
+01:07:09,208 --> 01:07:19,288
+yani artık sizin buradaki x'nin yerine r d y yazdınız y'nin yerine r sin theta yazdınız fonksiyonu böyle yazdınız
+
+824
+01:07:19,288 --> 01:07:45,288
+ama en önemli kısım bu sakın ama sakın şuraya r d r d r d t eta olacak sakın r y unutmuyorsunuz sakın bakın beni unutma yazıyorum beni unutma mutlaka bu olmalı eğer bunu yazmazsanız şöyle yıldızlayalım eğer bunu yazmazsanız sorunuz yanlış olur
+
+825
+01:07:45,288 --> 01:07:55,367
+yani burada sadece d x d y var ya da d y d x ama burada d r d t eta ve r var tamam mı arkadaşlar e tamam
+
+826
+01:07:55,367 --> 01:08:06,648
+şimdi nasıl oldu şurası f işte ifadesi çarpı r d r d t eta o zaman sınırlar neyle alakalı olacak arkadaşlar
+
+827
+01:08:06,648 --> 01:08:20,728
+burada r varsa r den bir ifade eden bir ifadeye şöyle e r den bir e r d t eta da bir açıdan bir açıya olacak kısaca böyle özetleyebilirim
+
+828
+01:08:20,728 --> 01:08:36,728
+şimdi alanda da aynı şey bakın burada d x d y'nin yerine r bakın beni yıldız bu olmalı bunu yazmazsanız sata olur d r d t eta olacak
+
+829
+01:08:36,728 --> 01:08:56,728
+şimdi burası f'nin içini yazdınız sınırlar da bu şekilde olacak şimdi alanda ne arkadaşlar bu d x d y'nin yerine ne gelecek 1 1 dir d x d y'nin yerine r d r d t eta gelecek sınırlar yine r ve t t da
+
+830
+01:08:56,728 --> 01:09:06,728
+nereler ise o şekilde yazılacak yine nerelerde kullanacağımızı ve nasıl kullanacağımızı sorular üzerinde görelim
+
+831
+01:09:06,728 --> 01:09:17,728
+şimdi mesela örneğin örneğin şöyle verilmiş 0'dan 1'e 0'dan
+
+832
+01:09:17,971 --> 01:09:32,971
+karakök içinde 1-x kare e üzeri x kare artı y kare d y d x nedir diye sorulmuş şimdi arkadaşlar birincisi
+
+833
+01:09:32,971 --> 01:09:44,671
+birincisi şimdi ilk önce çözmeye kalktığınız zaman bu çok karışık eğer x kare artı y kareler varsa
+
+834
+01:09:44,671 --> 01:09:57,032
+yani çemberler varsa bu re bölgesinde de olabilir burada da olabilir tamam mı mesela yarı çember yarı
+
+835
+01:09:57,032 --> 01:10:08,971
+çember bir çember dörtte bir çember bir bölü dört çember şöyle yazsam kısal olsun diye veya buna benzer
+
+836
+01:10:08,971 --> 01:10:17,251
+çemberler varsa bakın yukarıda var mesela şurada var mutlaka koordinat dönüşümü yapın çok daha kolay
+
+837
+01:10:17,251 --> 01:10:26,971
+kare köklü ifadelerden kurtulun arkadaşlar ve x kare artı y kareler varsa kutupsala geç tamam mı kutupsala
+
+838
+01:10:26,971 --> 01:10:41,251
+kutupsala geç çünkü işlemler daha kolay olur çünkü bakın işlemler daha kolay olacak öbür türlü çözemeyeceksiniz çok zor olacak
+
+839
+01:10:41,251 --> 01:10:49,731
+çözeceksiniz de yani birini 3 dakikaya çözüyorsan öbürünü belki 10 dakikaya 15 dakikaya çözeceğim şimdi bakın
+
+840
+01:10:49,731 --> 01:11:09,731
+bu da şimdi örnek aynı soruyu yazıyorum 1 şimdi diyorum ki ne verilmiş bana e üzeri x kare artı y kare dx d y dx verilmiş 1 sonra sınırları sıfırdan 1 eksi x kareye sıfırdan 1 e verilmiş
+
+841
+01:11:09,731 --> 01:11:23,731
+şimdi diyorum ki ben birincisi şurada x kare artı y kare var 1 kareler x kare artı y kare bu bana kutupsalı anımsatıyor kutupsal sanki kullansam daha iyi
+
+842
+01:11:23,731 --> 01:11:37,731
+bölgeye bakıyorum r bölgesi özellikle bölge çemberse kesinlikle kutupsal kullanın şimdi r bölgesi çiziyorum bakın x y koordinat sisteminde şimdi bakın arkadaşlar çizelim
+
+843
+01:11:37,731 --> 01:11:46,731
+şimdi bu nedir y eşittir sıfırdan şurası d y olduğuna göre y eşittir bakın y eşittir sıfır burası
+
+844
+01:11:46,731 --> 01:11:52,731
+y eşittir kare kük içinde 1 eksi x kare o da budur
+
+845
+01:11:52,731 --> 01:12:11,731
+bu böyledir sonra burası ney x eşittir sıfırdan x eşittir 1 e bir de neymiş x eşittir sıfırdan x eşittir 1 e şurası o zaman şu kısım yok yani neresi kalır arkadaşlar şurası
+
+846
+01:12:11,731 --> 01:12:38,731
+şöyle çizelim şu kısım şu kısım şöyle sıfırdan 1 olsun şurası değil mi yani sadece bu bölge varmış bu önemli dörtte bir çember değil mi dörtte bir çember şöyle yazdım ama şimdi dörtte bir çemberimiz var r bölgesi çember
+
+847
+01:12:38,731 --> 01:12:49,731
+diyorum ki eğer bölge çemberse [öğrenci] sen kesinlikle kutupsal kullan işlemler daha kolay olur şimdi bakın kutupsala geçiyorum
+
+848
+01:12:49,731 --> 01:13:00,731
+aynı değişken dönüşümünde yaptığınız gibi hiçbir değişiklik yani her şeyi değiştireceksiniz ne diyeceksiniz kutupsala geçiyorum kutupsal
+
+849
+01:13:00,731 --> 01:13:11,731
+ne biliyorum x yerine r cos teta y yerine r sin teta yazarsın ya da x kare artı y kare nedir arkadaşlar r karedir bunları biliyoruz
+
+850
+01:13:11,731 --> 01:13:18,731
+şimdi yazıyorum bakın sıfırdan 1 e
+
+851
+01:13:17,524 --> 01:13:23,884
+sıfırdan 1-x² e üzeri x² artı y²
+
+852
+01:13:23,884 --> 01:13:26,284
+d y d x
+
+853
+01:13:26,284 --> 01:13:28,864
+şimdi her şeyi değiştirmeye başlıyoruz
+
+854
+01:13:28,864 --> 01:13:32,704
+şöyle diyelim kutupsala geçiyoruz
+
+855
+01:13:32,704 --> 01:13:34,264
+şöyle bir
+
+856
+01:13:34,264 --> 01:13:39,784
+e üzeri x² artı y² neye eşit? r² bitti
+
+857
+01:13:39,784 --> 01:13:42,484
+d y d x yerine ne gelecek?
+
+858
+01:13:42,484 --> 01:13:45,884
+r d r d t t
+
+859
+01:13:45,884 --> 01:13:47,884
+bak yine diyorum beni unutma
+
+860
+01:13:47,884 --> 01:13:49,884
+beni yazmayı unutma
+
+861
+01:13:49,884 --> 01:13:51,884
+unutma
+
+862
+01:13:51,884 --> 01:13:55,884
+unutursanız çözemezsiniz soruyu
+
+863
+01:13:55,884 --> 01:13:57,884
+tamam mı? şöyle ünlem koyalım
+
+864
+01:13:57,884 --> 01:14:01,884
+şimdi hatta üstüne bir de yıldız koyalım
+
+865
+01:14:01,884 --> 01:14:02,884
+bu bitti
+
+866
+01:14:02,884 --> 01:14:05,884
+şimdi gelelim sınırlara
+
+867
+01:14:05,884 --> 01:14:08,884
+ne diyor? bunu bulduk
+
+868
+01:14:08,884 --> 01:14:10,884
+sınırları bakın çizdik
+
+869
+01:14:10,884 --> 01:14:12,884
+şimdi kutupsalda sınırlar
+
+870
+01:14:12,884 --> 01:14:13,884
+şimdi ne olacak?
+
+871
+01:14:13,884 --> 01:14:15,884
+d r r eşittir
+
+872
+01:14:15,884 --> 01:14:16,884
+bir şeyden
+
+873
+01:14:16,884 --> 01:14:18,884
+bunların yeri değişebilir fark etmez
+
+874
+01:14:18,884 --> 01:14:19,884
+birbirinden bağımsızdır
+
+875
+01:14:19,884 --> 01:14:21,884
+bu da teta
+
+876
+01:14:21,884 --> 01:14:23,884
+r eşittir
+
+877
+01:14:23,884 --> 01:14:25,884
+pardon bu da teta eşittir
+
+878
+01:14:25,884 --> 01:14:27,884
+şimdi bakın r'sini nasıl buluyoruz?
+
+879
+01:14:27,884 --> 01:14:30,884
+her zaman için orjine koyuyoruz şöyle
+
+880
+01:14:30,884 --> 01:14:31,884
+orjinden
+
+881
+01:14:31,884 --> 01:14:33,884
+orjine koyuyorsunuz
+
+882
+01:14:33,884 --> 01:14:35,884
+bir
+
+883
+01:14:35,884 --> 01:14:37,884
+hemen bölgeye girdi mi uzunluğa r'ye bakacaksınız
+
+884
+01:14:37,884 --> 01:14:39,884
+hemen bölgeye girdi
+
+885
+01:14:39,884 --> 01:14:43,884
+r eşittir sıfırdan r eşittir çembere
+
+886
+01:14:43,884 --> 01:14:46,884
+r eşittir sıfırdan çembere
+
+887
+01:14:46,884 --> 01:14:51,884
+sıfırdan çembere
+
+888
+01:14:51,884 --> 01:14:53,884
+peki bu çember ne arkadaşlar?
+
+889
+01:14:53,884 --> 01:14:54,884
+bakın bu çember
+
+890
+01:14:54,884 --> 01:14:57,884
+y kare artı x kare eşittir 1
+
+891
+01:14:57,884 --> 01:14:58,884
+birim çember
+
+892
+01:14:58,884 --> 01:14:59,884
+yani r eşittir kaçtı?
+
+893
+01:14:59,884 --> 01:15:00,884
+birdir
+
+894
+01:15:00,884 --> 01:15:02,884
+yani kutupsaldasın artık
+
+895
+01:15:02,884 --> 01:15:04,884
+x'ler yok
+
+896
+01:15:04,884 --> 01:15:08,884
+o zaman bu çemberin kutupsal denklemine r eşittir 1
+
+897
+01:15:08,884 --> 01:15:10,884
+o zaman ne diyorsunuz?
+
+898
+01:15:10,884 --> 01:15:15,884
+r eşittir sıfırdan r eşittir 1'e
+
+899
+01:15:15,884 --> 01:15:17,884
+sıra geldi teta'ya
+
+900
+01:15:17,884 --> 01:15:19,884
+teta açı
+
+901
+01:15:19,884 --> 01:15:20,884
+açıyı nasıl yapıyorduk?
+
+902
+01:15:20,884 --> 01:15:22,884
+başlangıç ışını dedik
+
+903
+01:15:22,884 --> 01:15:24,884
+başlangıç ışınından
+
+904
+01:15:24,884 --> 01:15:26,884
+hemen bölgeye girdik
+
+905
+01:15:26,884 --> 01:15:27,884
+artı yönde gidiyoruz
+
+906
+01:15:27,884 --> 01:15:28,884
+ne kadar gittik?
+
+907
+01:15:28,884 --> 01:15:30,884
+sıfırdan kaça kadar gittik?
+
+908
+01:15:30,884 --> 01:15:34,884
+pi bölü 2'ye kadar gittik
+
+909
+01:15:34,884 --> 01:15:36,884
+arkadaşlar
+
+910
+01:15:36,884 --> 01:15:37,884
+evet
+
+911
+01:15:37,884 --> 01:15:39,884
+ve sorunun çoğu bitti
+
+912
+01:15:39,884 --> 01:15:41,884
+bu o kadar karışık bir soru ki normalde
+
+913
+01:15:41,884 --> 01:15:43,884
+yani karışık demeyeyim de
+
+914
+01:15:43,884 --> 01:15:45,884
+işlemleri yorucu bir soru
+
+915
+01:15:45,884 --> 01:15:49,884
+ama bir anda işlemleri çok kolaylaşıyor
+
+916
+01:15:49,884 --> 01:15:51,884
+şimdi buradan ne olur arkadaşlar?
+
+917
+01:15:51,884 --> 01:15:54,884
+bakın ilk önce içerideki integral yapacağız
+
+918
+01:15:54,884 --> 01:15:55,884
+şöyle
+
+919
+01:15:55,884 --> 01:15:59,884
+sıfırdan teta eşittir
+
+920
+01:15:59,884 --> 01:16:00,884
+pi bölü 2'ye
+
+921
+01:16:00,884 --> 01:16:03,884
+şimdi içerideki nedir?
+
+922
+01:16:03,884 --> 01:16:05,884
+r eşittir sıfırdan 1'e
+
+923
+01:16:05,884 --> 01:16:08,884
+e üzeri r kare r dr
+
+924
+01:16:08,884 --> 01:16:11,884
+dışarıda da d t t var
+
+925
+01:16:11,884 --> 01:16:13,884
+şimdi arkadaşlar
+
+926
+01:16:13,884 --> 01:16:15,884
+şuraya açıklama yapalım
+
+927
+01:16:15,884 --> 01:16:17,884
+peki bu integral nasıldır?
+
+928
+01:16:17,884 --> 01:16:20,884
+e üzeri r kare r dr
+
+929
+01:16:20,884 --> 01:16:23,884
+nasıl yaparsınız bu integralı?
+
+930
+01:16:23,884 --> 01:16:25,884
+mat bir bilgilerinizden
+
+931
+01:16:25,884 --> 01:16:28,884
+şimdi bakın r karenin türevi
+
+932
+01:16:28,884 --> 01:16:58,884
+r 2 r d
+
+933
+01:16:58,884 --> 01:17:06,664
+d d
+
+934
+01:17:06,868 --> 01:17:12,148
+yani integralin sınırlarını da u değişkenine göre yazdım
+
+935
+01:17:12,148 --> 01:17:13,148
+bu da ne olur?
+
+936
+01:17:13,148 --> 01:17:16,048
+e üzeri u bölü 2 sıfırdan 1
+
+937
+01:17:16,048 --> 01:17:17,548
+buradan ne gelir?
+
+938
+01:17:17,548 --> 01:17:19,248
+ilk önce 1 koy
+
+939
+01:17:19,248 --> 01:17:22,248
+e bölü 2 pardon
+
+940
+01:17:22,248 --> 01:17:26,188
+sonra da e bölü 2
+
+941
+01:17:26,188 --> 01:17:28,688
+sonra da 0 koy
+
+942
+01:17:28,688 --> 01:17:31,048
+e üzeri 0'dan 1 bölü 2
+
+943
+01:17:31,048 --> 01:17:34,048
+e eksi 1 bölü 2 olur arkadaşlar
+
+944
+01:17:34,048 --> 01:17:37,888
+şimdi o zaman şöyle geliyor bakın
+
+945
+01:17:37,888 --> 01:17:39,847
+şöyle devam ederse
+
+946
+01:17:39,847 --> 01:17:42,168
+0'dan pi bölü 2'ye
+
+947
+01:17:42,168 --> 01:17:44,488
+e eksi 1 bölü 2
+
+948
+01:17:44,488 --> 01:17:46,048
+d tet olur
+
+949
+01:17:46,048 --> 01:17:47,328
+bu da nedir?
+
+950
+01:17:47,328 --> 01:17:49,168
+hiçbiri tet'e bağlı mı?
+
+951
+01:17:49,168 --> 01:17:50,168
+sabit
+
+952
+01:17:50,168 --> 01:17:52,528
+d tetanın integralı tetadır
+
+953
+01:17:52,528 --> 01:17:56,448
+d x'in integralı x ise d tetanın 2 de tetadır
+
+954
+01:17:56,448 --> 01:17:59,048
+başında sadece kastayı var
+
+955
+01:17:59,048 --> 01:18:02,847
+yani o da e eksi 1 bölü 2 tetadır
+
+956
+01:18:02,847 --> 01:18:05,408
+0'dan pi bölü 2'ye olur
+
+957
+01:18:05,408 --> 01:18:10,968
+burada da tet'e gördüğüm yere ilk önce pi bölü 2 koy
+
+958
+01:18:10,968 --> 01:18:12,328
+sonra da 0 koy
+
+959
+01:18:12,328 --> 01:18:15,388
+0 koyunca 0 gelir
+
+960
+01:18:15,388 --> 01:18:19,228
+yani sonuç o zaman şudur
+
+961
+01:18:19,228 --> 01:18:22,307
+evet buraya kadar anladınız mı?
+
+962
+01:18:22,307 --> 01:18:31,788
+yani bir soruda bölgede çember varsa siz bu bölgede bakın dörtte bir çember var işlemlerinizi çok rahatlaştırın
+
+963
+01:18:31,788 --> 01:18:43,428
+çünkü şuralarda hep kare kökli işlemler gelir zor olabilir arkadaşlar bunları çözmek zor değil de böyle uğraştırıcı
+
+964
+01:18:43,428 --> 01:18:46,988
+şimdi bakın arkadaşlar bir tane kardiyoidiniz var
+
+965
+01:18:46,988 --> 01:19:09,268
+1 artı kosünüs tete kardiyoidinin içinde bakın kardiyoid tete eşittir 0 için x'e koordinat sisteminde tete eşittir 0 için rsi kaçtır? kosünüs 0 1 1 artı 1'den 2 tete eşittir pi bölü 2 için 1 kosünüs pi bölü 2 0'dır 1 olur
+
+966
+01:19:09,268 --> 01:19:27,948
+1 olur tete eşittir pi için 0 olur yani şöyle gittikçe azalır yani ilk önce 2 azaldı azaldı 1 oldu şurası 1 sonra 0 gittikçe yine azaldı azaldı en sonunda 1 oldu ve kosünüsler bu şekildeydi
+
+967
+01:19:27,948 --> 01:19:37,048
+kosünüsler ya şöyle ya da şöyleydi sinüsler ise şöyle ya da şöyleydi değil mi?
+
+968
+01:19:37,048 --> 01:19:44,128
+şuranın kosünüs ya da sinüs olmasına göre bu hatırlatmadan sonra 1 artı kosünüs tete kardiyoidi bu
+
+969
+01:19:44,128 --> 01:19:54,388
+çember değil mi? r eşittir 1 çemberi merkezi ne olan? 0'a 0 olan yarı çapı 1 olan çember yani o da şu
+
+970
+01:19:54,388 --> 01:19:56,347
+şöyle değil mi?
+
+971
+01:19:57,968 --> 01:20:05,928
+birden geçen şurası 1 şurası eksi 1 böyle bir çember bakın şimdi arkadaşlar burada çizili olan var
+
+972
+01:20:05,928 --> 01:20:13,008
+diyor ki kardiyoidinin içinde çemberinin dışında kalan re bölgesi üzerinde
+
+973
+01:20:13,008 --> 01:20:21,168
+integrasyon limitlerini bulunuz diyor ki f'i vermiyorum sana diyor sadece sınırlarını yani
+
+974
+01:20:21,168 --> 01:20:29,928
+integralde bu tetalı ve re'li sınırlar nelerdir bulunuz diyor şimdi o zaman şöyle yapıyoruz arkadaşlar şimdi
+
+975
+01:20:29,928 --> 01:20:52,928
+kardiyoidinin içinde çemberin dışında kalan kısım bu re bölgesi şimdi re bölgesinin integralini yazacağız bakın biz kendimiz yazalım isterseniz öyle daha kalıcı olur oradan bakarsanız bir şey anlamayabilirsiniz şöyle arkadaşlar bir tane kardiyoid var
+
+976
+01:20:52,928 --> 01:21:01,128
+x'i koordinat sisteminde şöyle bir kardiyoid var biraz çirkin bir kardiyoid oldu
+
+977
+01:21:01,128 --> 01:21:04,928
+evet şöyle yapalım
+
+978
+01:21:05,587 --> 01:21:14,587
+kardiyoid şöyle olsun şöyle tamam şimdi bir kardiyoidimiz var arkadaşlar bir tane de
+
+979
+01:21:14,587 --> 01:21:26,887
+çember var çember şurası bir şurası iki şöyle bu da çember şurası da eksi bir şimdi diyor ki
+
+980
+01:21:26,887 --> 01:21:35,527
+kardiyoidin içinde çemberin dışında kalan bölge şurası ve bölgesi şimdi bunun için
+
+981
+01:21:35,527 --> 01:21:46,087
+ki r bölgesi için şöyle bir tane f fonksiyonu var rtt'ye bağlı sınırlarını yazınız diyor tamam mı şimdi
+
+982
+01:21:46,087 --> 01:21:59,287
+yazıyoruz bakın şöyle diyorum r bölgesi fr theta d a açık halini yazacağız yazalım şimdi bakın burası
+
+983
+01:21:59,287 --> 01:22:09,847
+r r theta bilmiyorum ne olduğunu şimdi hangi kutupsallarda r theta'lı buraya ne gelecek r d r d theta
+
+984
+01:22:09,847 --> 01:22:23,847
+bak bunu unutmadık yıldız beni yazmayı unutma beni yazmayı unutma yeniden yazdık şimdi gelelim sınırlara arkadaşlar
+
+985
+01:22:23,847 --> 01:22:38,407
+bakın arkadaşlar r bir şeyden bir şeye nereden nereye şimdi bu r eşittir bir çember bu ne arkadaşlar r eşittir bir artı kosünüs theta
+
+986
+01:22:38,407 --> 01:22:48,967
+peki yine r'leri nasıl yapıyoruz hep orjinden bakın orjinden şöyle farklı bir renkte yapalım orjinden ışın
+
+987
+01:22:48,967 --> 01:23:06,967
+çiziyoruz hop r eşittir kaçtan girdi birden r eşittir yani çemberden girdi kardiyoiden çıktı çemberden girdi kardiyoiden çıktı çemberden girdi kardiyoiden çıktı
+
+988
+01:23:06,967 --> 01:23:13,967
+demek ki çember kaç r eşittir birden girdi kardiyoiden çıktı r eşittir kardiyoiden çıktı
+
+989
+01:23:13,967 --> 01:23:18,967
+r eşittir kardiyoiden 1 artı kosünüs theta'dan çıktı
+
+990
+01:23:18,967 --> 01:23:22,967
+efendim bir dakika arkadaşlar
+
+991
+01:23:22,967 --> 01:23:24,967
+bir dakika arkadaşlar
+
+992
+01:23:24,967 --> 01:23:34,967
+bir dakika
+
+993
+01:23:33,011 --> 01:23:43,771
+Pardon arkadaşlar. Şimdi, tetalar, peki açı, nereden nereye değişiyor? Arkadaşlar, teta, bakın, teta, başlangıç ışınınız burası.
+
+994
+01:23:45,652 --> 01:23:47,692
+Başlangıç ışını, kutupsal.
+
+995
+01:23:49,371 --> 01:23:58,051
+Götü ışını, nasıl olacak teta, açısı? Evet, yukarıya doğru bölge kaç dereceye kadar gitmiş?
+
+996
+01:23:58,051 --> 01:24:01,311
+Artı yönde, pi bölü 2'ye kadar.
+
+997
+01:24:02,051 --> 01:24:03,971
+Peki, aşağıda ne kadar gitmiş?
+
+998
+01:24:04,711 --> 01:24:06,951
+Eksi yönde, pi bölü 2 kadar.
+
+999
+01:24:07,171 --> 01:24:09,411
+Yani, teta açısı ne olacak arkadaşlar?
+
+1000
+01:24:10,491 --> 01:24:13,411
+Teta açısı, eksi pi bölü 2'den,
+
+1001
+01:24:14,171 --> 01:24:18,032
+eksi, teta açısı, artı pi bölü 2'ye kadar.
+
+1002
+01:24:18,711 --> 01:24:19,751
+Şurası, şöyle,
+
+1003
+01:24:21,631 --> 01:24:22,192
+olmadı.
+
+1004
+01:24:27,604 --> 01:24:32,384
+var mı bir sorunuz buraya kadar arkadaşlar
+
+1005
+01:24:32,384 --> 01:24:37,324
+dolayısıyla ne olur arkadaşlar bakın şöyle olur
+
+1006
+01:24:37,324 --> 01:24:40,824
+şöyle işte
+
+1007
+01:24:40,824 --> 01:24:48,484
+1 re eşittir birden 1 artı kostete eksi p bölü 2 den p bölü 2 ye kadar olur
+
+1008
+01:24:48,484 --> 01:24:53,104
+işte ışınlarda burada da görebiliriz bir daha şöyle
+
+1009
+01:24:53,104 --> 01:25:01,984
+1 re eşittir birden giriyor 1 artı kostete dan çıkıyor birden giriyor 1 artı kostete dan çıkıyor ve
+
+1010
+01:25:01,984 --> 01:25:12,664
+aynı şekilde açıda gördüğünüz gibi bu tarafa doğru p bölü 2 burada da eksi p bölü 2 değil mi bu yön eksi bu yön artı
+
+1011
+01:25:12,664 --> 01:25:20,524
+eksi p bölü 2 den burası da p bölü 2 ye kadar var mı bir sorunuz arkadaşlar
+
+1012
+01:25:20,524 --> 01:25:27,404
+şimdi mesela bir tane lemniskat verilmiş bu soruyu çözmeyeceğim sadece bir kısmını söyleyeceğim
+
+1013
+01:25:27,404 --> 01:25:29,404
+şekli de şu
+
+1014
+01:25:29,404 --> 01:25:31,404
+şurası p bölü 4
+
+1015
+01:25:31,404 --> 01:25:33,404
+p bölü 4
+
+1016
+01:25:33,404 --> 01:25:35,804
+şekil bu alanını soruyor
+
+1017
+01:25:35,804 --> 01:25:40,404
+şimdi alan bu alan bu alan hepsi birbirine eşit
+
+1018
+01:25:40,404 --> 01:25:48,284
+artı eksiler gelmesin diye sadece birinci bölge birinci bölgedekini alacağız tamam mı arkadaşlar
+
+1019
+01:25:48,284 --> 01:25:53,284
+şöyle arkadaşlar birinci bölgede o zaman 4 tane alan olacak
+
+1020
+01:25:53,284 --> 01:26:08,404
+alan neydi alan bir tane d a r bölgesi o zaman ne diyeceksiniz bir tane d a ne olacak bunu kutupsal vermiş zaten kutupsal ile çözeceğiz
+
+1021
+01:26:08,404 --> 01:26:15,404
+bu
+
+1022
+01:26:15,404 --> 01:26:23,284
+r eşittir bir şeyden r eşittir bir şeye bakıyoruz r'ler nereden nereye bakın arkadaşlar daha böyle renkli
+
+1023
+01:26:23,284 --> 01:26:50,284
+hangisi renk olsun tembi olsun şöyle bakın r eşittir hemen bölgeye giriyor r eşittir sıfırdan lemniskatı r eşittir sıfırdan lemniskatı r eşittir sıfırdan lemniskatı r eşittir sıfırdan peki burada r'si kaçtır ilk bölge olduğu için r'yi karesinden kurtarırsak iki tane kosünüs 2 teto olur yani r eşittir sıfırdan r eşittir iki tane kosünüs 2 teto olur
+
+1024
+01:26:50,284 --> 01:26:57,284
+peki tetalar nereden nereye değişiyor
+
+1025
+01:26:57,284 --> 01:27:25,284
+yine şöyle yapıyorsunuz şurası başlangıç işini diyorsunuz ve ne yapıyoruz arkadaşlar açı sıfırdan kaça kadar pi bölü 4'e kadar tetası sıfırdan pi bölü 4'e kadar olur sonra bunun çözümü çok kolay arkadaşlar bakın şuraya r yazmazsanız bu soru çok zor olur hep kare köklüler gelir bunu unutmayın tamam mı arkadaşlar
+
+1026
+01:27:25,284 --> 01:27:55,284
+yani d r d t t t t r r d r d r d t
+
+1027
+01:27:55,284 --> 01:28:25,284
+t t
+
+1028
+01:28:25,284 --> 01:28:26,423
+Mestida
+
+1029
+01:28:26,847 --> 01:28:28,047
+soru verilmiş.
+
+1030
+01:28:28,507 --> 01:28:31,247
+Bu biraz önce yaptığımız soruya çok benziyor.
+
+1031
+01:28:31,807 --> 01:28:32,287
+Diyor ki
+
+1032
+01:28:32,287 --> 01:28:34,408
+bir tane integral var.
+
+1033
+01:28:34,908 --> 01:28:37,688
+İçerisinde x kare artı y kareler var.
+
+1034
+01:28:37,908 --> 01:28:39,707
+Bakın x kare artı y kareler.
+
+1035
+01:28:40,167 --> 01:28:41,488
+Aklıma hemen ne geldi?
+
+1036
+01:28:42,148 --> 01:28:43,007
+Ya dedim bu
+
+1037
+01:28:43,007 --> 01:28:44,347
+kutupsal olabilir.
+
+1038
+01:28:45,247 --> 01:28:46,608
+Baktım burada da
+
+1039
+01:28:46,608 --> 01:28:49,148
+zaten bunu ancak öyle çözebilirsiniz.
+
+1040
+01:28:49,707 --> 01:28:51,148
+Yoksa e üzeri x karenin
+
+1041
+01:28:51,148 --> 01:28:52,688
+integralini alamayacaksınız.
+
+1042
+01:28:52,688 --> 01:28:54,667
+Yani şöyle e üzeri x kare
+
+1043
+01:28:54,667 --> 01:28:57,368
+d x'in integralini almak kolay değil.
+
+1044
+01:28:57,927 --> 01:28:58,807
+Yapamayacaksınız.
+
+1045
+01:28:59,268 --> 01:29:01,287
+Dolayısıyla hemen kutupsala
+
+1046
+01:29:01,287 --> 01:29:01,847
+geçiyorum.
+
+1047
+01:29:02,408 --> 01:29:04,028
+Kutupsala geçtim.
+
+1048
+01:29:04,707 --> 01:29:06,667
+Ne oldu arkadaşlar? Bunun yerine
+
+1049
+01:29:06,667 --> 01:29:07,667
+ne geldi?
+
+1050
+01:29:08,747 --> 01:29:11,028
+Şöyle veya şurada
+
+1051
+01:29:11,028 --> 01:29:12,467
+hemen hızlıca yazalım.
+
+1052
+01:29:13,167 --> 01:29:14,807
+Bakın şimdi ne oldu?
+
+1053
+01:29:15,448 --> 01:29:16,148
+Şöyle değil mi?
+
+1054
+01:29:16,967 --> 01:29:18,207
+Re bölgesinde
+
+1055
+01:29:18,207 --> 01:29:21,247
+e üzeri x kare artı y kare
+
+1056
+01:29:21,247 --> 01:29:22,927
+d y
+
+1057
+01:29:22,927 --> 01:29:24,387
+d x
+
+1058
+01:29:24,387 --> 01:29:26,167
+arkadaşlar bu
+
+1059
+01:29:26,167 --> 01:29:27,847
+re bölgesi de şu
+
+1060
+01:29:27,847 --> 01:29:29,307
+x ekseni
+
+1061
+01:29:29,307 --> 01:29:33,387
+y eşittir kare kök içinde
+
+1062
+01:29:33,387 --> 01:29:34,587
+1 eksi x kare
+
+1063
+01:29:34,587 --> 01:29:37,387
+eğrisi
+
+1064
+01:29:37,387 --> 01:29:44,387
+ve
+
+1065
+01:29:44,387 --> 01:29:48,167
+y
+
+1066
+01:29:41,300 --> 01:29:52,300
+y eşittir 1-x kare kare kök içine sınırlı yarı dairesel bölgeymiş
+
+1067
+01:29:52,300 --> 01:29:57,300
+şimdi bakın şimdi zaten soru da vermiş
+
+1068
+01:29:57,300 --> 01:29:59,300
+şimdi yazıyorum
+
+1069
+01:29:59,300 --> 01:30:01,300
+soru şu
+
+1070
+01:30:01,300 --> 01:30:09,300
+r bölgesinde e üzeri x kare artı y kare d y d x
+
+1071
+01:30:09,300 --> 01:30:15,300
+dedim ki burada x kare artı y kare var bunun integralini zaten alamayacağım
+
+1072
+01:30:15,300 --> 01:30:22,300
+iki çemberler var o zaman ben bunu hemen kutupsal çevireyim
+
+1073
+01:30:22,300 --> 01:30:27,300
+şimdi arkadaşlar bölgeyi çizelim bölgeden başlayalım veya şöyle çevirelim şuradan
+
+1074
+01:30:27,300 --> 01:30:30,300
+hatta eşittir şöyle yazalım
+
+1075
+01:30:30,300 --> 01:30:38,300
+şimdi r bölgesi daha bunu açmadık e üzeri x yerine r cos theta y yerine r sin theta yazıyoruz
+
+1076
+01:30:38,300 --> 01:30:45,300
+ama x kare artı y kare varsa zaten ne geliyor r kare geliyor yazdık burası e üzeri r kare oldu
+
+1077
+01:30:45,300 --> 01:30:52,300
+d y d x yerine ne gelecek r d r d theta
+
+1078
+01:30:52,300 --> 01:30:54,300
+değil mi şurada theta
+
+1079
+01:30:54,300 --> 01:30:58,300
+şimdi bunu da dedik şimdi geldik şuraya sınırlara
+
+1080
+01:30:58,300 --> 01:31:04,300
+r bölgesi ne verilmiş r bölgesi şöyle verilmiş x y koordinat sisteminde
+
+1081
+01:31:04,300 --> 01:31:08,300
+x y koordinat sisteminde ne verilmiş arkadaşlar
+
+1082
+01:31:08,300 --> 01:31:19,300
+1 x ekseni 2 çemberin yarısı pozitif kısmı y eşittir 1-x kare şu
+
+1083
+01:31:19,300 --> 01:31:33,300
+değil mi demiş ki x ekseni ve yarı dairesel bölge şöyle sınır peki burada daha kaçtır biri x 1-x 1-x kare
+
+1084
+01:31:33,300 --> 01:32:01,300
+şimdi o zaman bölgeyi yazalım bölge nedir arkadaşlar şöyle şunu silelim bölge arkadaşlar şöyle hemen pardon şöyle yapalım hangi renk kullansak şu rengi kullanalım şimdi d r r eşittir r şurası orjin biraz asimetrik olmuş ama hatta şöyle yapalım
+
+1085
+01:32:10,260 --> 01:32:18,840
+şöyle olsun, ye, yine simetrik oldu. Neyse arkadaşlar, x'i şöyle yapalım.
+
+1086
+01:32:35,604 --> 01:33:03,824
+Şimdi arkadaşlar, şimdi bölgemiz şöyleydi. Şimdi şurası da y ekseni. Şimdi arkadaşlar, gelin beraber çözelim. Ne olacak? R eşittir bir şeyden bir şeye. Orjine koyuyoruz. R eşittir hemen bölgeye girdi. Sıfırdan, R eşittir çembere. R eşittir sıfırdan çembere, sıfırdan çembere, sıfırdan çembere, sıfırdan çembere.
+
+1087
+01:33:03,824 --> 01:33:22,644
+Çember ne? Birim çembere değil mi bu? X kare artı y kare eşittir bir, yani R eşittir birdir. Birim çembere. Peki, tetası nereden nereye? Teta, D teta. Teta nereden nereye? Başlangıç işini, pardon.
+
+1088
+01:33:45,524 --> 01:33:55,544
+başlangıç işini ne yapıyordu arkadaşlar şöyle sıfırdan başladı kaça kadar gitti pi bölü ikiye kadar
+
+1089
+01:33:55,544 --> 01:34:04,544
+sıfırdan teteş pardon piye kadar açı piye kadar gider işte bu kadar karışık bir integral bakın
+
+1090
+01:34:04,544 --> 01:34:11,804
+burası ne kadar karışıktı böyle çok sade çözümü çok kolay bir integrale dönüşüyor ve çözümü
+
+1091
+01:34:11,804 --> 01:34:21,884
+arkadaşlar burada var çok kolay şöyle göstereyim kolaylıkla buradan görülebilir Evet şimdi
+
+1092
+01:34:21,884 --> 01:34:30,764
+arkadaşlar bunu size örnek olarak vereyim mi pardon ödev olarak vereyim mi yani bakın yine ne var
+
+1093
+01:34:30,764 --> 01:34:38,984
+çember var mesela buraya çözeceksiniz d y d x alacaksınız ama şurada çember olduğu için
+
+1094
+01:34:38,984 --> 01:34:49,064
+normal çözmeye çember olduğundan dolayı normal çözüm çok zor zor yani zor değil de karışık karışık
+
+1095
+01:34:49,064 --> 01:34:57,984
+karışık çünkü kara kökler var kara kök var yani integrallerinde zorlanabilirsiniz ama kutupsala
+
+1096
+01:34:57,984 --> 01:35:04,984
+geçersiniz çok kolay bakın kutupsala beraber geçelim kutupsala geçtiniz burada x kare artı y kareyi
+
+1097
+01:35:04,984 --> 01:35:13,064
+gördünüz bu olmasa bile özellikle bölgede çember varsa kutupsala geçin arkadaşlar yarı çember
+
+1098
+01:35:13,064 --> 01:35:22,984
+dörtte bir çember çemberin tamamı vesaire o zaman burası x kare artı y kare yerine ne gelecek r kare bir iki
+
+1099
+01:35:22,984 --> 01:35:52,984
+d y d x d e t t e t e t t t e t t t e t
+
+1100
+01:35:52,984 --> 01:36:17,984
+y eşittir 0 dan şöyle y eşittir 1 eksi x kareye şöyle sonra ne deniliyor x eşittir 0 dan x eşittir 1 e sıfırdan 1 e yani sadece şu bölge dolayısıyla şu kısım yok dolayısıyla bu kısım
+
+1101
+01:36:17,984 --> 01:36:47,984
+bu da artık çok kolay bakın hepsinde gördüğünüz gibi ne oluyor r s t
+
+1102
+01:36:47,984 --> 01:37:17,984
+t t
+
+1103
+01:37:17,984 --> 01:37:43,664
+bir tane parabolik var yukarıdan üstten demiş üstten bir tane parabolik var şöyle z eşittir 9-x-y-y-2 alttan nereli sınırlı yine x-y düzlemiyle yani z eşittir 0'da
+
+1104
+01:37:44,115 --> 01:37:46,655
+Z eşittir sıfırla sınırlı.
+
+1105
+01:37:46,916 --> 01:37:49,376
+Alttan şöyle farklı renkte göstereyim.
+
+1106
+01:37:49,836 --> 01:37:51,735
+Şurada sınırlı bir cisim var.
+
+1107
+01:37:52,855 --> 01:37:54,416
+Şöyle verilmiş bir cisim.
+
+1108
+01:37:54,416 --> 01:38:01,996
+Bu cismin katı cismin birim çemberle sınırlı.
+
+1109
+01:38:02,216 --> 01:38:02,876
+Onu da demiş.
+
+1110
+01:38:03,055 --> 01:38:04,475
+Demek ki burada ne varmış?
+
+1111
+01:38:05,576 --> 01:38:06,376
+Birim çember.
+
+1112
+01:38:06,576 --> 01:38:07,416
+Şurası birim çembermiş.
+
+1113
+01:38:08,095 --> 01:38:09,416
+Hatta farklı renkte gösterelim.
+
+1114
+01:38:10,496 --> 01:38:12,315
+Şöyle birazcık daha belirgin olsun.
+
+1115
+01:38:12,956 --> 01:38:13,235
+Şöyle.
+
+1116
+01:38:13,235 --> 01:38:15,235
+Burası birim çembermiş.
+
+1117
+01:38:16,636 --> 01:38:17,576
+Tamam mı arkadaşlar?
+
+1118
+01:38:17,796 --> 01:38:20,996
+Birim çemberle sınırlı bir katı cisim var.
+
+1119
+01:38:20,996 --> 01:38:23,155
+O zaman hacmini bulunuz diyor.
+
+1120
+01:38:23,595 --> 01:38:25,275
+Hacim ne olacak arkadaşlar?
+
+1121
+01:38:25,475 --> 01:38:25,956
+Hacim.
+
+1122
+01:38:26,815 --> 01:38:27,956
+Re bölgesinde.
+
+1123
+01:38:28,435 --> 01:38:31,055
+Şimdi üstten gelirken nasıl arkadaşlar?
+
+1124
+01:38:31,615 --> 01:38:31,996
+Şöyle.
+
+1125
+01:38:32,655 --> 01:38:34,815
+Üstten Z eşittir.
+
+1126
+01:38:35,536 --> 01:38:36,355
+9-
+
+1127
+01:38:36,355 --> 01:38:39,855
+X kare eksi Y kare ile girdi.
+
+1128
+01:38:41,036 --> 01:38:42,695
+Eksi geldi.
+
+1129
+01:38:42,695 --> 01:38:45,155
+Altta kaç Z eşitti?
+
+1130
+01:38:45,756 --> 01:38:46,615
+Sıfırla çıktı.
+
+1131
+01:38:47,655 --> 01:38:48,536
+Çarpı DA.
+
+1132
+01:38:49,256 --> 01:38:50,336
+Kapalı formülü bu.
+
+1133
+01:38:50,935 --> 01:38:51,996
+Re bölgesi de ne?
+
+1134
+01:38:52,475 --> 01:38:55,336
+Re bölgesi.
+
+1135
+01:38:55,336 --> 01:38:57,536
+Birim çember.
+
+1136
+01:38:57,536 --> 01:39:02,095
+Şimdi siz bunu gördüğünüz zaman şöyle diyeceksiniz.
+
+1137
+01:39:02,095 --> 01:39:03,376
+Birim çember.
+
+1138
+01:39:03,376 --> 01:39:09,935
+Bölge birim çember olduğuna göre ben bu soruyu birim çember kutupsal ile çöz.
+
+1139
+01:39:10,395 --> 01:39:10,956
+Neden?
+
+1140
+01:39:11,315 --> 01:39:12,595
+Çemberi gördük çünkü.
+
+1141
+01:39:13,095 --> 01:39:17,336
+Çemberi görünce kutupsal ile çözeceksiniz arkadaşlar.
+
+1142
+01:39:17,336 --> 01:39:19,655
+Bakın o zaman ne oluyor?
+
+1143
+01:39:19,655 --> 01:39:21,256
+Kutupsal'a geçelim.
+
+1144
+01:39:21,256 --> 01:39:23,716
+Burası 9 eksi.
+
+1145
+01:39:24,076 --> 01:39:25,636
+Şurası ne olacak arkadaşlar?
+
+1146
+01:39:25,855 --> 01:39:26,336
+Re kare.
+
+1147
+01:39:26,655 --> 01:39:26,876
+Bir.
+
+1148
+01:39:27,475 --> 01:39:28,296
+Burası ne olacak?
+
+1149
+01:39:28,475 --> 01:39:29,395
+Dx, d'ye.
+
+1150
+01:39:29,916 --> 01:39:32,536
+Re, dr, d tet olacak.
+
+1151
+01:39:32,836 --> 01:39:33,416
+Bu da bitti.
+
+1152
+01:39:34,095 --> 01:39:35,555
+Şimdi sınırları.
+
+1153
+01:39:35,716 --> 01:39:36,595
+Bakın arkadaşlar.
+
+1154
+01:39:36,815 --> 01:39:37,636
+Burası orji.
+
+1155
+01:39:37,636 --> 01:39:39,555
+Hemen bölgeye giriyor.
+
+1156
+01:39:39,655 --> 01:39:40,935
+Bilim çember olduğu için.
+
+1157
+01:39:41,536 --> 01:39:43,076
+O zaman ne olacak arkadaşlar?
+
+1158
+01:39:43,296 --> 01:39:43,496
+Şöyle.
+
+1159
+01:39:43,496 --> 01:39:45,555
+Re eşittir sıfırdan.
+
+1160
+01:39:46,155 --> 01:39:47,456
+Re eşittir bire.
+
+1161
+01:39:47,935 --> 01:39:49,655
+Re eşittir sıfırdan bire.
+
+1162
+01:39:49,895 --> 01:39:51,876
+Sıfırdan bire.
+
+1163
+01:39:52,296 --> 01:39:57,735
+Demek ki Re'ler sıfırdan Re eşittir bire olacak.
+
+1164
+01:39:57,935 --> 01:39:59,916
+Yani şurası Re eşittir sıfır.
+
+1165
+01:40:00,275 --> 01:40:01,676
+Re eşittir bire olacak.
+
+1166
+01:40:01,876 --> 01:40:02,595
+Peki açı?
+
+1167
+01:40:03,256 --> 01:40:04,775
+Açı ne olacak arkadaşlar?
+
+1168
+01:40:05,496 --> 01:40:06,036
+Açısı.
+
+1169
+01:40:06,036 --> 01:40:07,996
+Şurası başlangıç işini.
+
+1170
+01:40:09,475 --> 01:40:10,655
+Başlangıç işini.
+
+1171
+01:40:11,275 --> 01:40:11,676
+Ne olacak?
+
+1172
+01:40:12,296 --> 01:40:16,256
+Sıfırdan bölgenin tamamını kapsıyor.
+
+1173
+01:40:16,456 --> 01:40:20,576
+Teta da sıfırdan 2 piye olacak.
+
+1174
+01:40:21,775 --> 01:40:21,956
+Evet.
+
+1175
+01:40:23,536 --> 01:40:25,136
+Bu anlaşıldı mı arkadaşlar?
+
+1176
+01:40:25,496 --> 01:40:28,176
+Bakın burada da döndürülmüş hali var.
+
+1177
+01:40:28,296 --> 01:40:29,895
+Peki buna nasıl karar verdik?
+
+1178
+01:40:30,395 --> 01:40:31,935
+Çember gördük.
+
+1179
+01:40:32,775 --> 01:40:34,716
+Yani bölgede çember varsa.
+
+1180
+01:40:34,716 --> 01:40:36,756
+Bölgede çember varsa.
+
+1181
+01:40:36,756 --> 01:40:38,735
+Ne yap diyoruz arkadaşlar?
+
+1182
+01:40:39,355 --> 01:40:41,115
+Hemen kutupsala geç.
+
+1183
+01:40:41,496 --> 01:40:43,775
+Varsa kutupsal da yap.
+
+1184
+01:40:45,636 --> 01:40:46,775
+Saldı çöz.
+
+1185
+01:40:47,315 --> 01:40:48,416
+Tamam mı arkadaşlar?
+
+1186
+01:40:49,456 --> 01:40:50,775
+Var mı bir sorunuz burada?
+
+1187
+01:40:50,775 --> 01:40:54,595
+Şimdi bu ödev çok güzel bir soru.
+
+1188
+01:40:54,815 --> 01:40:56,416
+Lütfen çözün arkadaşlar.
+
+1189
+01:40:58,615 --> 01:41:02,576
+Bunu yapabilirseniz diğer soruları da yaparsınız.
+
+1190
+01:41:02,695 --> 01:41:04,235
+Şimdi bu soruyu çözeceğiz.
+
+1191
+01:41:05,235 --> 01:41:06,296
+Şöyle bakın.
+
+1192
+01:41:06,555 --> 01:41:08,015
+Ben soruyu yazıyorum.
+
+1193
+01:41:08,015 --> 01:41:11,456
+Örnek.
+
+1194
+01:41:11,456 --> 01:41:12,956
+Şurada çözelim.
+
+1195
+01:41:12,956 --> 01:41:31,376
+Bir soru.
+
+1196
+01:41:18,195 --> 01:41:18,815
+Burn in.
+
+1197
+01:41:22,452 --> 01:41:36,771
+örnek x kare artı y kare eşittir 4 silindiri ve y artı z eşittir 4
+
+1198
+01:41:36,771 --> 01:41:42,332
+z eşittir 0 düzlemleri ile
+
+1199
+01:41:42,332 --> 01:41:55,132
+ile sınırlanan cismin hacmini bulunuz
+
+1200
+01:41:55,132 --> 01:42:00,092
+şimdi arkadaşlar şöyle
+
+1201
+01:42:00,092 --> 01:42:08,431
+şöyle arkadaşlar normalde bu nedir x kare artı y kare eşittir 4 çemberdir
+
+1202
+01:42:08,431 --> 01:42:16,351
+demek ki 3 boyutlu dayız silindirmiş normalde x kare artı y kare bir çember ama 4 boyutlu da bir silindir
+
+1203
+01:42:16,351 --> 01:42:29,012
+nasılmış şöyle bakın 4'e 4 değil mi şöyle x y z de böyle devam ediyor silindir yukarıdan ve aşağıdan şöyle devam ediyor
+
+1204
+01:42:29,012 --> 01:42:38,931
+böyle bir silindir var bir y artı z eşittir 4 y artı z eşittir 4 de şöyle arkadaşlar bir tane düzlem
+
+1205
+01:42:38,931 --> 01:42:47,731
+gelmiş bunu böyle kesti yukarıdan bunu kestik o zaman ne olacak arkadaşlar şurası yok artık kestik
+
+1206
+01:42:47,731 --> 01:43:07,652
+şimdi ve z eşittir 0 z eşittir 0 da şurası değil mi x y düzlemi bu kısımda yok yani geriye kalan yani şöyle oluyor değil mi x y z düzleminde şöyle bir şekil oluyor
+
+1207
+01:43:07,652 --> 01:43:30,572
+şimdi aşağıdan z eşittir 0 ile yani aşağısı yok sınırlandırdık yukarıdan da ne ile kestik şöyle şöyle bir düzlemle kestik değil mi bu düzlemde şu şurada kestik böyle geldi kesti bu da y artı z eşittir 4
+
+1208
+01:43:30,572 --> 01:43:44,132
+şurası nerede x y düzlemi yani x y düzlemi demek ne demek burası z eşittir 0 düzlemindeyiz buraya kadar tamam mı arkadaşlar şimdi oluşan cismimiz artık bu
+
+1209
+01:43:44,132 --> 01:43:57,572
+şimdi bunun hacmi nedir diye soruluyor şimdi gelin beraber yazalım şöyle şimdi ben şu şekli çiziyorum siliyorum pardon sildim
+
+1210
+01:43:57,572 --> 01:44:00,572
+şimdi hacim diyorum
+
+1211
+01:44:00,572 --> 01:44:27,552
+hacim şöyle hacim hacim dedim şimdi hacim nasıldı arkadaşlar ne yapıyorduk şimdi geliyorduk yukarıdan yukarıdan z eşittir buradaki z nedir arkadaşlar bakın dikkat edin kenarları silindir ama yukarıdaki ne böyle bir kağıt parçası gibi bir düzlem
+
+1212
+01:44:27,552 --> 01:44:52,552
+z eşittir 4 eksi y yukarıdaki yukarıdaki y artı z eşittir 4 z eşittir 4 eksi y'dir yukarıdan 4 eksi pardon 4 eksi y ile sınırlı eksi devam etti böyle devam etti hop burada bitti burada z nedir z eşittir 0'dır
+
+1213
+01:44:52,552 --> 01:45:21,902
+z eşittir 4 eksi yukarıdaki yukarıdaki yukarıdaki yukarıdaki yukarıdaki yukarıdaki yukarıdaki yukarıdaki yukarıdaki yukarıdaki yukarıdaki yukarıdaki yukarıdaki yukarıdaki yukarıdaki yukarıdaki yukarıdaki yukarıdaki yukarıdaki yukarıdaki yukarıdaki yukarıdaki yukarıdaki yukarıdaki yukarıdaki yukarıdaki yukarıdaki yukarıdaki yukarıdaki yukarıdaki yukarıdaki yukarıdaki yukarıdaki yukarıdaki yukarıdaki yukarıdaki yukarıdaki yukarıdaki yukarıdaki yukarıdaki yukarıdaki yukarıdaki yukarıd
+
+1214
+01:45:21,904 --> 01:45:33,904
+yarı çapı 2 olan re bölgesi de budur.
+
+1215
+01:45:33,904 --> 01:45:40,904
+re bölgesi çember
+
+1216
+01:45:40,904 --> 01:45:46,904
+o zaman ne gidecek? kutupsala geç
+
+1217
+01:45:46,904 --> 01:45:53,904
+şimdi geçelim her şey bitti yazıyorum bakın hacim
+
+1218
+01:45:53,904 --> 01:45:56,904
+şuna v diyelim
+
+1219
+01:45:56,904 --> 01:46:01,904
+şuna v diyelim v eşittir kutupsala geçiyoruz
+
+1220
+01:46:01,904 --> 01:46:04,904
+4 yazdım şurası y
+
+1221
+01:46:04,904 --> 01:46:08,904
+y'nin yerine ne gelir? x yerine r cos theta
+
+1222
+01:46:08,904 --> 01:46:11,904
+y yerine r sin theta yazıyorduk
+
+1223
+01:46:11,904 --> 01:46:15,904
+o zaman r sin theta geldi
+
+1224
+01:46:15,904 --> 01:46:22,904
+sonra d a bunun yerine ne geliyor? r d r d theta geliyor
+
+1225
+01:46:22,904 --> 01:46:25,904
+r d r d theta geldi
+
+1226
+01:46:25,904 --> 01:46:28,904
+peki arkadaşlar
+
+1227
+01:46:28,904 --> 01:46:31,904
+bölge çember
+
+1228
+01:46:31,904 --> 01:46:34,904
+gördüğünüz gibi şöyle bir çember
+
+1229
+01:46:34,904 --> 01:46:38,904
+şimdi gelin beraber şöyle renklendirelim
+
+1230
+01:46:38,904 --> 01:46:45,904
+şimdi arkadaşlar bölge r'ler nereden nereye değişiyor?
+
+1231
+01:46:45,904 --> 01:46:48,904
+her zaman için ne yapıyorduk arkadaşlar? orjin
+
+1232
+01:46:48,904 --> 01:46:50,904
+şurada orjin
+
+1233
+01:46:50,904 --> 01:46:53,904
+r eşittir sıfırdan r eşittir çembere
+
+1234
+01:46:53,904 --> 01:46:55,904
+çemberin yarı çapı kaç?
+
+1235
+01:46:55,904 --> 01:47:02,904
+bu merkezi yani şu x kare artı y kare eşittir 4 ise r eşittir 2
+
+1236
+01:47:02,904 --> 01:47:05,904
+yarı çapı 2 olan çember değil mi? şu 2'nin karesi
+
+1237
+01:47:05,904 --> 01:47:09,904
+r eşittir sıfırdan r eşittir 2'ye
+
+1238
+01:47:09,904 --> 01:47:12,904
+r eşittir hatta sarıyla yapalım
+
+1239
+01:47:12,904 --> 01:47:19,904
+r eşittir sıfırdan 2'ye
+
+1240
+01:47:19,904 --> 01:47:20,904
+dedik
+
+1241
+01:47:20,904 --> 01:47:23,904
+peki açısı nedir arkadaşlar?
+
+1242
+01:47:23,904 --> 01:47:26,904
+açısı başlangıç ışını burası
+
+1243
+01:47:26,904 --> 01:47:28,904
+sıfırdan kaça?
+
+1244
+01:47:28,904 --> 01:47:29,904
+2 pi'ye
+
+1245
+01:47:29,904 --> 01:47:33,904
+t t eşittir sıfırdan 2 pi'ye
+
+1246
+01:47:33,904 --> 01:47:36,904
+evet bunu yazdıktan sonra
+
+1247
+01:47:36,904 --> 01:47:39,904
+bundan sonrası artık sadece işlemler arkadaşlar
+
+1248
+01:47:39,904 --> 01:47:40,904
+bakın
+
+1249
+01:47:40,904 --> 01:47:45,904
+4 r sinteta sıfırdan 2'ye
+
+1250
+01:47:45,904 --> 01:47:47,904
+sıfırdan 2 pi'ye
+
+1251
+01:47:47,904 --> 01:47:51,904
+burada sadece işlem yapıyorsunuz arkadaşlar
+
+1252
+01:47:51,904 --> 01:47:52,904
+basit bir işlem
+
+1253
+01:47:52,904 --> 01:47:55,904
+şimdi şunu söyleyeceğim şu soruda da
+
+1254
+01:47:55,904 --> 01:47:56,904
+ondan sonra
+
+1255
+01:47:56,904 --> 01:47:58,904
+bir bakayım arkadaşlar
+
+1256
+01:47:58,904 --> 01:47:59,904
+sonra
+
+1257
+01:47:59,904 --> 01:48:01,904
+bunu
+
+1258
+01:48:01,904 --> 01:48:03,904
+bu da güzel bir soru
+
+1259
+01:48:03,904 --> 01:48:05,904
+bunu size ödev versem anlamazsanız
+
+1260
+01:48:05,904 --> 01:48:07,904
+şimdi arkadaşlar bakın
+
+1261
+01:48:07,904 --> 01:48:08,904
+bunda da aynısı
+
+1262
+01:48:08,904 --> 01:48:10,904
+sadece şu
+
+1263
+01:48:10,904 --> 01:48:13,904
+x kare artı y eksi 2'nin karesi
+
+1264
+01:48:13,904 --> 01:48:14,904
+eşittir 2'nin karesi
+
+1265
+01:48:14,904 --> 01:48:15,904
+yani şu
+
+1266
+01:48:15,904 --> 01:48:17,904
+merkezi
+
+1267
+01:48:17,904 --> 01:48:19,904
+sıfırı 2 olan
+
+1268
+01:48:19,904 --> 01:48:21,904
+şurası 2, 4
+
+1269
+01:48:21,904 --> 01:48:23,904
+çember
+
+1270
+01:48:23,904 --> 01:48:24,904
+şu çember, bu çember
+
+1271
+01:48:24,904 --> 01:48:25,904
+bakın bunun
+
+1272
+01:48:25,904 --> 01:48:28,904
+bu x y koordinat sistemindeki
+
+1273
+01:48:28,904 --> 01:48:30,904
+yani y ekseninde
+
+1274
+01:48:30,904 --> 01:48:31,904
+değil mi arkadaşlar?
+
+1275
+01:48:31,904 --> 01:48:33,904
+ona dikkat edin
+
+1276
+01:48:33,904 --> 01:48:35,904
+burası y ekseninde
+
+1277
+01:48:35,904 --> 01:48:36,904
+hatta şöyle
+
+1278
+01:48:36,904 --> 01:48:37,904
+farklı renk
+
+1279
+01:48:37,904 --> 01:48:38,904
+gösterin
+
+1280
+01:48:38,904 --> 01:48:40,904
+şurası y ekseninde
+
+1281
+01:48:40,904 --> 01:48:41,904
+bakın burada
+
+1282
+01:48:41,904 --> 01:48:42,904
+çizerken de
+
+1283
+01:48:42,904 --> 01:48:43,904
+y ekseninde
+
+1284
+01:48:43,904 --> 01:48:44,904
+silindir
+
+1285
+01:48:44,904 --> 01:48:47,904
+x, y, z koordinat sisteminde
+
+1286
+01:48:47,904 --> 01:48:48,904
+şöyle
+
+1287
+01:48:48,904 --> 01:48:50,904
+y ekseninde
+
+1288
+01:48:50,904 --> 01:48:53,904
+şöyle bir silindir
+
+1289
+01:48:53,904 --> 01:48:54,904
+yukarıya doğru
+
+1290
+01:48:54,904 --> 01:48:56,904
+ve aşağıya doğru
+
+1291
+01:48:56,904 --> 01:48:59,904
+aynı biraz önceki sorudaki gibi
+
+1292
+01:48:59,904 --> 01:49:01,904
+yukarıdan x artı z eşittir
+
+1293
+01:49:01,904 --> 01:49:02,904
+4 de kesilmiş
+
+1294
+01:49:02,904 --> 01:49:03,904
+şöyle kesilmiş
+
+1295
+01:49:03,904 --> 01:49:05,904
+şöyle kestik
+
+1296
+01:49:05,904 --> 01:49:09,904
+çünkü x de z var
+
+1297
+01:49:09,904 --> 01:49:10,904
+şöyle kestik
+
+1298
+01:49:10,904 --> 01:49:13,904
+aşağıdan da z eşittir
+
+1299
+01:49:13,904 --> 01:49:14,904
+0 ile kesilmiş
+
+1300
+01:49:14,904 --> 01:49:15,904
+şurası yok
+
+1301
+01:49:15,904 --> 01:49:17,904
+yani şekil
+
+1302
+01:49:17,904 --> 01:49:18,904
+yaklaşık olarak
+
+1303
+01:49:18,904 --> 01:49:20,904
+şöyle bir şekil olur
+
+1304
+01:49:20,904 --> 01:49:21,904
+bir şey
+
+1305
+01:49:21,904 --> 01:49:49,904
+yok
+
+1306
+01:49:22,899 --> 01:49:23,779
+Tamam mı arkadaşlar?
+
+1307
+01:49:24,939 --> 01:49:27,920
+Aynı bundan sonrası hacmini bulacaksınız.
+
+1308
+01:49:28,579 --> 01:49:32,079
+Yani bunu kendiniz yaparsanız daha iyi olur.
+
+1309
+01:49:32,759 --> 01:49:33,599
+Öyle söyleyeyim.
+
+1310
+01:49:33,699 --> 01:49:33,920
+Öde.
+
+1311
+01:49:34,399 --> 01:49:37,920
+Şimdi arkadaşlar şöyle söyleyeyim.
+
+1312
+01:49:38,519 --> 01:49:39,579
+Şu soru kaldı.
+
+1313
+01:49:39,839 --> 01:49:42,059
+Belki haftaya bu sorudan bahsederim.
+
+1314
+01:49:42,519 --> 01:49:47,819
+Yani gerçi iki tane yüzey ama bu soru çözeyim mi?
+
+1315
+01:49:48,199 --> 01:49:49,759
+Yoksa bırakalım mı arkadaşlar?
+
+1316
+01:49:50,000 --> 01:49:51,159
+İsterseniz çözeyim.
+
+1317
+01:49:51,159 --> 01:49:53,619
+Haftaya sadece diğer konu kalsın.
+
+1318
+01:49:53,699 --> 01:49:57,279
+Yok hocam biz biraz kendimiz bakalım, bırakalım derseniz.
+
+1319
+01:49:57,839 --> 01:49:59,379
+Haftayı isterseniz çözelim.
+
+1320
+01:50:00,219 --> 01:50:01,699
+Konularımız az kaldı.
+
+1321
+01:50:01,779 --> 01:50:02,859
+Üç sayfalık bir şey.
+
+1322
+01:50:03,019 --> 01:50:06,399
+Haftaya bunları bitirdikten sonra tamamen uygulama yapacağız.
+
+1323
+01:50:06,879 --> 01:50:09,019
+Evet çözelim mi bırakalım mı arkadaşlar?
+
+1324
+01:50:10,359 --> 01:50:11,519
+Yazarsanız bir şey.
+
+1325
+01:50:12,019 --> 01:50:13,739
+Tabii eğer dersi dinliyorsanız.
+
+1326
+01:50:14,599 --> 01:50:17,019
+Hocam kimya dersimiz başlayacak mı?
+
+1327
+01:50:17,339 --> 01:50:17,659
+Tamam.
+
+1328
+01:50:17,839 --> 01:50:18,539
+Tamam [öğrenci].
+
+1329
+01:50:18,539 --> 01:50:19,739
+O zaman bırakalım.
+
+1330
+01:50:19,739 --> 01:50:21,659
+Haftaya görüşmek üzere.
+
+1331
+01:50:21,839 --> 01:50:23,479
+Kendinize iyi bakın arkadaşlar.
+
+1332
+01:50:24,859 --> 01:50:25,859
+İyi haftalar.
+
+1333
+01:50:26,019 --> 01:50:27,839
+İyi hafta sonu diliyorum arkadaşlar.
+
+1334
+01:50:37,876 --> 01:50:40,615
+İyi günler [öğrenci]. Herkese iyi günler arkadaşlar.
