@@ -14,3 +14,4 @@
 | 23 | Güz | Arzuhan Kocabaş | [sube_23/](sube_23/) |
 | 24 | Güz | Hilal Tufan | [sube_24/](sube_24/) |
 | 25 | Güz | Nurullah Arvas | [sube_25/](sube_25/) |
+| 26 | Güz | Nurullah Arvas | [sube_26/](sube_26/) |
