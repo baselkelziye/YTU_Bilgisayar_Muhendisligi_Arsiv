@@ -1,0 +1,2487 @@
+1
+00:00:15,667 --> 00:00:21,647
+Günaydın arkadaşlar. Ben bir 5 dakika katılım için bekleyeceğim. Ondan sonra derse başlayacağım.
+
+2
+00:07:14,867 --> 00:07:20,668
+Evet, tekrardan günaydın arkadaşlar. Burada mıyız?
+
+3
+00:07:21,867 --> 00:07:23,207
+Buradayız hocam, günaydın.
+
+4
+00:07:23,707 --> 00:07:31,408
+Günaydın. Şimdi dersimize kaldığımız yerden.
+
+5
+00:07:34,247 --> 00:07:35,788
+Hocam, bir şey sorabilir miyim?
+
+6
+00:07:36,108 --> 00:07:36,427
+Evet.
+
+7
+00:07:36,927 --> 00:07:41,687
+Geçen hafta derse katılamadım da, eğer soru attıysanız tekrar atabilir misiniz çete?
+
+8
+00:07:44,867 --> 00:07:49,867
+Geçen hafta attığım soru, vektör uzaylarıyla...
+
+9
+00:07:50,908 --> 00:07:51,887
+Bir dakika.
+
+10
+00:08:05,459 --> 00:08:08,459
+Şu dördüncüye attım.
+
+11
+00:08:10,560 --> 00:08:12,239
+Tamam, teşekkür ederim.
+
+12
+00:08:12,419 --> 00:08:22,299
+Yapmıştık. Zaten vektör uzaylarında birinci, ikinci, şunları atmıştım zaten size.
+
+13
+00:08:29,588 --> 00:08:31,948
+Bunu atmıştım. Bir daha atayım.
+
+14
+00:09:11,508 --> 00:09:13,328
+Yani hepsini yeniden atmış oldum.
+
+15
+00:09:13,828 --> 00:09:14,908
+Teşekkür ederim hocam.
+
+16
+00:09:17,307 --> 00:09:20,768
+Şimdi özdeğer özvektörler arkadaşlar.
+
+17
+00:09:22,488 --> 00:09:24,448
+Yeni bir konuya geçiyoruz.
+
+18
+00:09:26,008 --> 00:09:29,187
+A matrisi n çarpı n mertebesinden bir matris.
+
+19
+00:09:29,368 --> 00:09:31,748
+X'de bilinmeyenlerin bulunduğu bir matris.
+
+20
+00:09:33,228 --> 00:09:36,228
+Olmak üzere AX eşittir lambda X.
+
+21
+00:09:36,228 --> 00:09:45,388
+Denklemini sağlayan lambda'ya A matrisinin özdeğeri ya da karakteristik değeri diyoruz.
+
+22
+00:09:46,608 --> 00:09:49,927
+AX eşittir lambda X denkleminden.
+
+23
+00:09:50,408 --> 00:09:57,128
+Şimdi bunu eşitliğin karşı istikametine geçirdiğimiz zaman AX eksi lambda X eşittir sıfır olur.
+
+24
+00:09:57,868 --> 00:09:59,567
+Burada X'ler ortak.
+
+25
+00:09:59,668 --> 00:10:00,868
+X parantezini alırım.
+
+26
+00:10:00,868 --> 00:10:04,828
+X parantezini aldığımda A eksi lambda oldu.
+
+27
+00:10:04,828 --> 00:10:08,388
+A matris lambda ise skaler bir sayı.
+
+28
+00:10:10,307 --> 00:10:12,187
+Matristen sayı çıkmaz.
+
+29
+00:10:12,648 --> 00:10:13,927
+Bunun da ne olması lazım?
+
+30
+00:10:14,048 --> 00:10:16,028
+Bu tarafın da matris olması lazım.
+
+31
+00:10:16,448 --> 00:10:17,368
+Yani dediğim şu.
+
+32
+00:10:31,220 --> 00:10:35,540
+A eksi lambda x parantezini alıyorum.
+
+33
+00:10:36,279 --> 00:10:36,800
+Tamam mı?
+
+34
+00:10:37,120 --> 00:10:41,540
+Çarptığım zaman A x lambda x olur.
+
+35
+00:10:42,019 --> 00:10:45,480
+Ama matristen sayı çıkmaz.
+
+36
+00:10:45,620 --> 00:10:46,779
+Bunun da ne olması lazım?
+
+37
+00:10:46,899 --> 00:10:48,040
+Matris olması lazım.
+
+38
+00:10:48,160 --> 00:10:49,740
+Ve eşitliğin bozulmaması lazım.
+
+39
+00:10:49,920 --> 00:10:51,399
+O yüzden buraya ö geliyor.
+
+40
+00:10:52,080 --> 00:10:53,420
+Birim matris geliyor yani.
+
+41
+00:10:53,420 --> 00:10:59,920
+Şimdi çarptığımız zaman A x eksi lambda x oldu.
+
+42
+00:10:59,920 --> 00:11:04,420
+Eşittir 0 diye bunu bu şekilde yazıyoruz.
+
+43
+00:11:04,940 --> 00:11:05,080
+Tamam.
+
+44
+00:11:05,980 --> 00:11:07,800
+Şimdi x'ler bilinmeyenlerdi.
+
+45
+00:11:08,220 --> 00:11:11,779
+Bilinmeyenler olduğu için şu da matris olduğundan
+
+46
+00:11:11,779 --> 00:11:15,639
+yani bunu B matrisi gibi düşünürsek
+
+47
+00:11:15,639 --> 00:11:18,040
+B çarpı x eşittir 0'dır.
+
+48
+00:11:18,440 --> 00:11:19,100
+Bu da nedir?
+
+49
+00:11:19,879 --> 00:11:22,040
+Lineer homojen denklem sistemidir.
+
+50
+00:11:22,040 --> 00:11:22,759
+Öyle değil mi?
+
+51
+00:11:22,840 --> 00:11:26,779
+İkinci taraf 0 olduğundan lineer homojen denklem sistemidir.
+
+52
+00:11:26,779 --> 00:11:34,379
+Bu homojen denklem sisteminin 0 çözümden başka çözümünün olması için ne olması lazım arkadaşlar?
+
+53
+00:11:35,320 --> 00:11:40,440
+Rank n'e eşitse tek çözüm o da 0 çözümdü.
+
+54
+00:11:42,200 --> 00:11:47,100
+0 çözümden başka çözümünün olması için rank n'den küçük olması lazım.
+
+55
+00:11:47,100 --> 00:11:51,420
+Şimdi tek çözüm 0 çözüm olması için şart neydi?
+
+56
+00:11:52,480 --> 00:11:53,660
+Şunu aşağıya atayım.
+
+57
+00:11:54,680 --> 00:12:00,800
+A'nın determinantı rangın n'e eşit olması için 0'dan farklı olmalıydı.
+
+58
+00:12:01,960 --> 00:12:08,539
+0 çözümden başka çözümünün olması içinse determinant 0'a eşit olmalıydı.
+
+59
+00:12:08,540 --> 00:12:09,540
+Tamam mı?
+
+60
+00:12:10,920 --> 00:12:22,080
+O zaman şunun determinantı yani şuna B dersem bu B bir matris öyle değil mi?
+
+61
+00:12:22,080 --> 00:12:29,759
+Bu matrisin determinantı yani A eksi lambda I'nın determinantı eşit 0 olmalıdır.
+
+62
+00:12:34,100 --> 00:12:38,820
+Şimdi lambda çarpı I dediğim asal köşegende ne olacak?
+
+63
+00:12:39,779 --> 00:12:44,100
+Şimdi I birim matristi.
+
+64
+00:12:44,320 --> 00:12:46,340
+Asal köşegende birler vardı.
+
+65
+00:12:49,019 --> 00:12:54,980
+Lambda çarpı I dediğim zaman asal köşegende lambalar olacak.
+
+66
+00:12:57,560 --> 00:12:57,860
+Tamam.
+
+67
+00:12:58,259 --> 00:13:00,200
+Asal köşegende lambalar olacak.
+
+68
+00:13:00,200 --> 00:13:05,740
+A eksi lambda dediğim zaman asal köşegenden lambalar çıkacak.
+
+69
+00:13:05,940 --> 00:13:07,240
+Diğerleri sıfır olduğu için.
+
+70
+00:13:07,360 --> 00:13:09,379
+Asal köşegenden lambalar çıkacak.
+
+71
+00:13:09,600 --> 00:13:12,700
+Bunun determinantı sıfıra eşit olmalıdır.
+
+72
+00:13:13,480 --> 00:13:20,500
+Şimdi bunun determinantı açtığım zaman burada lambalar bilinmeyenler ya
+
+73
+00:13:20,500 --> 00:13:24,680
+lambdaya göre eninci dereceden bir polinom karşıma çıkar.
+
+74
+00:13:25,420 --> 00:13:28,620
+Bu polinoma karakteristik polinom deniliyor.
+
+75
+00:13:30,200 --> 00:13:33,340
+Ve bu şu şekildedir.
+
+76
+00:13:33,460 --> 00:13:34,340
+Lambda üzeri en.
+
+77
+00:13:34,519 --> 00:13:36,220
+A1 lambda üzeri en eksi bir.
+
+78
+00:13:36,440 --> 00:13:37,420
+Artı nokta nokta.
+
+79
+00:13:37,600 --> 00:13:39,220
+An şeklindedir.
+
+80
+00:13:40,639 --> 00:13:46,580
+A eksi lambda I'nın determinantı eşit sıfır denklemine de karakteristik denklem deniliyor.
+
+81
+00:13:47,860 --> 00:13:53,160
+Karakteristik polinomda en tane gerçel ya da karmaşık kök vardır.
+
+82
+00:13:53,160 --> 00:13:59,980
+Yani ben bu polinomdan lambda I, lambda II, nokta nokta lambda n'leri bulacağım.
+
+83
+00:14:00,300 --> 00:14:01,399
+Köklerimi bulacağım.
+
+84
+00:14:01,840 --> 00:14:04,019
+Bu bulduğum kökler nedir?
+
+85
+00:14:04,360 --> 00:14:05,920
+Öz değerlerdir.
+
+86
+00:14:08,420 --> 00:14:09,420
+Tamam.
+
+87
+00:14:09,800 --> 00:14:10,800
+Öz değerlerdir.
+
+88
+00:14:10,800 --> 00:14:15,300
+Burada A1 eksi iz A'yı eşittir.
+
+89
+00:14:15,480 --> 00:14:16,480
+İz dediğim neydi?
+
+90
+00:14:17,899 --> 00:14:19,860
+Bir kare matrisin izi neydi?
+
+91
+00:14:20,360 --> 00:14:24,039
+Asal köşegendeki elemanların toplamıydı.
+
+92
+00:14:24,039 --> 00:14:32,680
+A n de eksi bir üzeri en çarpı A'nın determinantına eşittir.
+
+93
+00:14:34,039 --> 00:14:35,560
+Şimdi öz vektörler.
+
+94
+00:14:36,200 --> 00:14:41,240
+A bir kare matris ve lambda A'nın bir öz değeri olmak üzere
+
+95
+00:14:41,240 --> 00:14:51,700
+A x eşittir lambda x denklemini sağlayan x vektörüne lambda öz değerine karşılık gelen öz vektör ya da karakteristik vektör denilir.
+
+96
+00:14:51,700 --> 00:14:55,080
+Yani ben şimdi burada lambdaları buldum ya.
+
+97
+00:14:55,420 --> 00:14:59,580
+Bu bulduğum lambdaların her birini götüreceğim.
+
+98
+00:15:04,659 --> 00:15:06,860
+Şurada yerine yazıyorum.
+
+99
+00:15:08,159 --> 00:15:09,539
+Karşıma ne çıkıyor gene?
+
+100
+00:15:09,980 --> 00:15:11,860
+Homojen denklem sistemi çıkıyor.
+
+101
+00:15:11,860 --> 00:15:16,679
+Ve bu homojen denklem sistemini çözdüğüm zaman neyi bulacağım?
+
+102
+00:15:17,100 --> 00:15:20,919
+Lambda 1'e karşılık gelen x1 vektörünü bulacağım.
+
+103
+00:15:21,339 --> 00:15:22,799
+Sonra ne yapıyorum?
+
+104
+00:15:23,219 --> 00:15:24,639
+Lambda 2'yi alıyorum.
+
+105
+00:15:25,199 --> 00:15:32,159
+Lambda 2'yi gene götürüp burada yerine yazıyorum.
+
+106
+00:15:32,620 --> 00:15:33,259
+Neyi buluyorum?
+
+107
+00:15:33,259 --> 00:15:38,220
+Lambda 2'ye karşılık gelen x2 vektörünü buluyorum.
+
+108
+00:15:38,379 --> 00:15:39,879
+Ve bu şekilde devam ediyorum.
+
+109
+00:15:39,879 --> 00:15:43,879
+Her bir özdeğere karşılık gelen öz vektörü buluyoruz.
+
+110
+00:15:44,679 --> 00:15:46,000
+Şimdi bir örnek yapalım.
+
+111
+00:15:49,439 --> 00:15:50,599
+A matrisi bu.
+
+112
+00:15:51,019 --> 00:15:55,879
+A matrisinin özdeğerini ve bunlara karşılık gelen öz vektörlerini bulunuz.
+
+113
+00:15:56,860 --> 00:16:00,599
+Özdeğerini ve bunlara karşılık gelen öz vektörlerini bulunuz.
+
+114
+00:16:00,599 --> 00:16:07,319
+Şimdi arkadaşlar öncelikle ne yapıyoruz?
+
+115
+00:16:08,219 --> 00:16:16,279
+Lambda'yı bulmak için a eksi lambda ının determinantı eşittir sıfır diyorum.
+
+116
+00:16:17,339 --> 00:16:17,519
+Tamam.
+
+117
+00:16:17,899 --> 00:16:20,980
+A eksi lambda ının determinantı eşit sıfır diyorum.
+
+118
+00:16:20,980 --> 00:16:24,460
+Yani asal köşegenden lambdaları çıkıyorum.
+
+119
+00:16:25,939 --> 00:16:27,639
+Şu determinantı yazdık.
+
+120
+00:16:27,720 --> 00:16:31,600
+Determinantı açarsak bununla bunun çarpımı eksi bununla bunun çarpımı.
+
+121
+00:16:32,819 --> 00:16:36,799
+Buradan karşıma karakteristik polinomum çıktı.
+
+122
+00:16:36,799 --> 00:16:38,639
+Şimdi ne yapıyoruz?
+
+123
+00:16:39,240 --> 00:16:41,259
+Bunun köklerini bulacağım.
+
+124
+00:16:41,899 --> 00:16:42,039
+Tamam.
+
+125
+00:16:42,439 --> 00:16:43,579
+Köklerim nelerdir?
+
+126
+00:16:43,799 --> 00:16:44,620
+Eksi 3'e 4.
+
+127
+00:16:45,819 --> 00:16:47,740
+Birinci köküm eksi 3.
+
+128
+00:16:48,459 --> 00:16:53,500
+Eksi 3'e karşılık gelen bu özdeğere karşılık gelen öz vektörü bulacağım.
+
+129
+00:16:54,000 --> 00:16:55,439
+Yani ne yapıyoruz?
+
+130
+00:16:55,919 --> 00:17:02,360
+A eksi lambda bir ı çarpı x eşittir sıfır diyorum.
+
+131
+00:17:02,360 --> 00:17:05,519
+Ne yaptık?
+
+132
+00:17:05,819 --> 00:17:06,539
+Götürdük.
+
+133
+00:17:06,539 --> 00:17:19,879
+Eksi 3'ü yerine yazdığım zaman eksi 3'ü yerine yazdığımda 6, 2, 3, 1 diye şunu buldum.
+
+134
+00:17:20,619 --> 00:17:21,819
+Çarpı nedir?
+
+135
+00:17:21,900 --> 00:17:22,700
+X1, X2.
+
+136
+00:17:23,079 --> 00:17:24,500
+İki tane bilinmeyen var.
+
+137
+00:17:25,400 --> 00:17:29,720
+Karşıma yani şunu elde etmiş oldum.
+
+138
+00:17:30,599 --> 00:17:32,079
+Karşıma ne çıktı?
+
+139
+00:17:32,079 --> 00:17:34,099
+Homojen denklem sistemi çıktı.
+
+140
+00:17:34,259 --> 00:17:36,700
+Ve bu homojen denklem sistemini çözüyorum.
+
+141
+00:17:37,160 --> 00:17:38,839
+Yani şöyle bunu çözeyim ben.
+
+142
+00:17:39,039 --> 00:17:40,799
+6, 2, 3, 1.
+
+143
+00:17:43,880 --> 00:17:50,240
+Buradan ne yaparız?
+
+144
+00:17:50,920 --> 00:17:52,240
+1 bölü 6 diyeyim hadi.
+
+145
+00:17:52,420 --> 00:17:54,299
+1 bölü 6 dersem 1.
+
+146
+00:17:54,299 --> 00:17:57,680
+1 bölü 6'dan 1 bölü 3.
+
+147
+00:17:59,480 --> 00:18:01,059
+3, 1.
+
+148
+00:18:01,059 --> 00:18:05,680
+Eksi 3 ile çarpıp eklediğimde 1.
+
+149
+00:18:05,680 --> 00:18:06,920
+1 bölü 3.
+
+150
+00:18:07,079 --> 00:18:08,599
+Eksi 3 ile çarptım 0.
+
+151
+00:18:09,099 --> 00:18:10,339
+Eksi 3 ile çarptım.
+
+152
+00:18:10,659 --> 00:18:11,240
+Eksi 1.
+
+153
+00:18:12,139 --> 00:18:12,740
+0 oldu.
+
+154
+00:18:14,400 --> 00:18:14,720
+Tamam.
+
+155
+00:18:14,720 --> 00:18:20,539
+Şimdi burası X1'in, burası X2'nin, burası da B'lerin bulunduğu sütun.
+
+156
+00:18:21,099 --> 00:18:22,119
+Rank nedir burada?
+
+157
+00:18:22,279 --> 00:18:22,920
+Rank 1.
+
+158
+00:18:23,639 --> 00:18:25,579
+N bilinmeyen sayım 2.
+
+159
+00:18:26,700 --> 00:18:27,359
+N-R.
+
+160
+00:18:27,359 --> 00:18:31,519
+Homojen sistemde biliyorsunuz her zaman sistemin çözümü vardı.
+
+161
+00:18:31,619 --> 00:18:33,319
+Çözümsüzlük mümkün değildi.
+
+162
+00:18:33,539 --> 00:18:34,740
+Onun için R'ye bakıyorum.
+
+163
+00:18:35,839 --> 00:18:36,500
+N-R.
+
+164
+00:18:37,460 --> 00:18:37,880
+1.
+
+165
+00:18:38,599 --> 00:18:42,180
+Bir tane keyfiye bağlı sonsuz çözüm var.
+
+166
+00:18:43,759 --> 00:18:46,299
+Ve bu 1 bana neyi söylüyor?
+
+167
+00:18:46,700 --> 00:18:48,099
+Vektör sayısını söylüyor.
+
+168
+00:18:48,359 --> 00:18:51,279
+1 bana vektör sayısını söylüyor.
+
+169
+00:18:51,279 --> 00:18:52,859
+Tamam mı arkadaşlar?
+
+170
+00:18:53,079 --> 00:18:54,639
+Bir vektör sayısını söylüyor.
+
+171
+00:18:57,460 --> 00:19:01,819
+Demek ki lambda 1'e karşılık gelen vektör sayım 1'miş.
+
+172
+00:19:02,000 --> 00:19:03,860
+Şimdi aralarındaki bağıntıyı yazalım.
+
+173
+00:19:04,340 --> 00:19:09,180
+x1 artı 1 bölü 3 x2 eşittir 0'a.
+
+174
+00:19:10,240 --> 00:19:14,500
+Şimdi x2'ye 3 diyeyim.
+
+175
+00:19:15,799 --> 00:19:16,880
+x1'im ne olur?
+
+176
+00:19:18,880 --> 00:19:20,240
+Eksi 1 olur.
+
+177
+00:19:21,160 --> 00:19:21,360
+Tamam.
+
+178
+00:19:22,680 --> 00:19:24,500
+Ben bunu keyfi olarak aldım.
+
+179
+00:19:24,500 --> 00:19:35,400
+Eğer ki ben burada başka mesela x1'e 1 seçseydim x2'im ne olacaktı?
+
+180
+00:19:38,420 --> 00:19:40,500
+Eksi 3 olacaktı.
+
+181
+00:19:42,579 --> 00:19:42,779
+Tamam?
+
+182
+00:19:44,460 --> 00:19:45,539
+Tamam hocam.
+
+183
+00:19:47,440 --> 00:19:50,579
+Şimdi lambda 2 eşittir 4 için.
+
+184
+00:19:50,579 --> 00:19:56,799
+Lambda 2 eşit 4 için 4 yazdığımız zaman 4 yazdığımda ne olacak?
+
+185
+00:19:57,039 --> 00:20:00,180
+Eksi 1, 2, 3, eksi 6.
+
+186
+00:20:02,480 --> 00:20:03,200
+Tamam.
+
+187
+00:20:03,460 --> 00:20:04,120
+Şunu yazdık.
+
+188
+00:20:05,039 --> 00:20:07,720
+x1, x2 eşittir 0'dan.
+
+189
+00:20:08,079 --> 00:20:09,360
+Karşıma gene ne çıktı?
+
+190
+00:20:09,539 --> 00:20:11,360
+Homojen denklem sistemi çıktı.
+
+191
+00:20:11,900 --> 00:20:12,579
+Bunu da gene çözelim.
+
+192
+00:20:12,579 --> 00:20:16,500
+Eksi 1, 2.
+
+193
+00:20:16,860 --> 00:20:18,160
+Şurası zaten ne oluyor?
+
+194
+00:20:18,319 --> 00:20:20,980
+Direkt kat sayılar maddesi oluyor.
+
+195
+00:20:21,539 --> 00:20:23,079
+3, eksi 6.
+
+196
+00:20:25,299 --> 00:20:25,860
+Buradan
+
+197
+00:20:25,860 --> 00:20:30,559
+eksi 1, 2, 3 ile çarptım 0.
+
+198
+00:20:30,799 --> 00:20:32,180
+3 ile çarptım 0.
+
+199
+00:20:34,039 --> 00:20:35,579
+Eksi 1 ile çarparsak
+
+200
+00:20:35,579 --> 00:20:36,490
+4, 3, 4, 5, 5, 5, 6, 6, 7, 7, 8, 9, 9, 9, 10, 9, 10, 10, 10, 11, 11, 11, 11, 12, 12, 13, 13, 14, 14, 14, 14, 15, 15, 15, 15, 16, 17, 16, 17, 17, 17, 17, 17, 17, 17, 17, 18, 18, 18, 18, 18, 18, 18, 19, 18, 19
+
+201
+00:20:40,596 --> 00:20:43,476
+x1, x2 bunlar da b'ler.
+
+202
+00:20:43,955 --> 00:20:48,715
+Rank gene 1, n2, n-r1.
+
+203
+00:20:49,195 --> 00:20:51,895
+Bir tane keyfiye bağlı sonsuz çözüm var.
+
+204
+00:20:52,316 --> 00:20:54,016
+Ve bu 1 bana neyi söylüyor?
+
+205
+00:20:54,375 --> 00:20:55,596
+Vektör sayısını söylüyor.
+
+206
+00:20:55,675 --> 00:20:57,435
+Şimdi aralarındaki bağıntıyı yazalım.
+
+207
+00:20:57,635 --> 00:21:00,895
+x1-2, x2 eşittir 0'a.
+
+208
+00:21:00,895 --> 00:21:11,596
+Buradan diyelim ki x2'yi 1 seçeyim.
+
+209
+00:21:11,976 --> 00:21:15,855
+x2-1 ise keyfi olarak keyfi seçtim.
+
+210
+00:21:16,855 --> 00:21:20,276
+x1'i 2 olacaktır.
+
+211
+00:21:20,715 --> 00:21:28,955
+Demek ki lambda 2'ye karşılık gelen benim x2 vektörüm 2'ye 1'miş.
+
+212
+00:21:28,955 --> 00:21:30,395
+Tamam.
+
+213
+00:21:33,096 --> 00:21:33,955
+Anlaşıldı mı?
+
+214
+00:21:36,135 --> 00:21:36,875
+Evet hocam.
+
+215
+00:21:38,796 --> 00:21:39,135
+Peki.
+
+216
+00:21:40,915 --> 00:21:43,195
+Şimdi başka bir soru.
+
+217
+00:21:45,695 --> 00:21:49,276
+Şuradan ben bir tane beyaz kağıt açayım.
+
+218
+00:22:05,875 --> 00:22:08,375
+Şimdi şunu, şu soruyu çözeyim size.
+
+219
+00:22:08,855 --> 00:22:10,336
+Eksi 3, eksi 7, eksi 6.
+
+220
+00:22:17,011 --> 00:22:19,851
+3-3, 7-6
+
+221
+00:22:31,443 --> 00:22:34,604
+Final ne zaman olacak? Final tarihi?
+
+222
+00:22:35,723 --> 00:22:39,183
+Hocam 17 Haziran sanırım. Açıklanmış final.
+
+223
+00:22:39,604 --> 00:22:41,723
+Değil mi? Açıklanmış olması lazım. Evet.
+
+224
+00:22:42,124 --> 00:22:42,824
+17 Haziran.
+
+225
+00:22:46,516 --> 00:22:50,696
+Ben de tam şimdi hatırlamadım da bakacaktım. İyi oldu söyledin.
+
+226
+00:22:51,416 --> 00:22:59,016
+Matematik bölümünün sayfasında arkadaşlar her türlü servis dersleriyle ilgili her türlü detayları görebilirsiniz. 1, 5, 6.
+
+227
+00:23:04,500 --> 00:23:08,819
+1, 5, 6,
+
+228
+00:23:10,880 --> 00:23:12,799
+eksi 1, eksi 1, eksi 2.
+
+229
+00:23:24,372 --> 00:23:33,152
+Şimdi bu A maçısına karşılık gelen öz değer ve öz vektörleri bulun diyor soru.
+
+230
+00:23:35,752 --> 00:23:42,872
+Bunu çözmeden evvel şimdi bir öbür sınıfta arkadaşlar ben soruyu bir yanlış yazmıştım.
+
+231
+00:23:43,092 --> 00:23:46,752
+Tabi soruyu yanlış yazınca şu eksi 2'yi 2 diye almışım.
+
+232
+00:23:47,332 --> 00:23:49,092
+Farklı bir soru çıktı.
+
+233
+00:23:49,092 --> 00:23:51,432
+Bunu da size çözeyim.
+
+234
+00:23:51,432 --> 00:23:54,432
+En azından eksik kalmasın.
+
+235
+00:23:54,532 --> 00:23:57,792
+Size de böyle bir soru çözmüş olayım.
+
+236
+00:23:58,912 --> 00:24:00,132
+Sonra öbür günü çözeyim.
+
+237
+00:24:00,692 --> 00:24:03,812
+Şurayı eksi 2 alacağıma 2 diye almışım soruyu.
+
+238
+00:24:03,951 --> 00:24:05,552
+Soru farklı bir soru oldu.
+
+239
+00:24:06,292 --> 00:24:07,792
+Bunu da ben değiştirdim.
+
+240
+00:24:07,792 --> 00:24:20,792
+Dedim ki A matrisine karşılık gelen öz değerlerin en küçüğünün...
+
+241
+00:24:20,792 --> 00:24:25,731
+Şimdi şöyle diyeyim soruyu toparlayayım.
+
+242
+00:24:25,731 --> 00:24:31,272
+A matrisinin ne karşılık gelen öz değerleri bulunuz.
+
+243
+00:24:31,992 --> 00:24:39,412
+Bulduğun en küçük öz değere karşılık gelen öz vektörü bulun diye soruyu böyle değiştirdim ben.
+
+244
+00:24:40,272 --> 00:24:42,692
+Soruyu yanlış yazınca soruyu böyle değiştirdim.
+
+245
+00:24:43,272 --> 00:24:47,792
+En küçük öz değere karşılık gelen öz vektörü bul sorusuna döndürdüm.
+
+246
+00:24:47,792 --> 00:24:48,192
+Tamam.
+
+247
+00:24:48,832 --> 00:24:49,892
+Şimdi ne yaptık gene?
+
+248
+00:24:50,312 --> 00:24:52,692
+Asal köşegenden lambdaları çıkartıyorum.
+
+249
+00:24:54,231 --> 00:24:56,772
+Burada direkt determinantı açmayın.
+
+250
+00:24:56,912 --> 00:25:00,231
+Direkt determinantı açarsan büyük bir polinom karşına çıkar.
+
+251
+00:25:00,612 --> 00:25:03,652
+Ve o polinomun köklerini bulmakta zorluk çekersin.
+
+252
+00:25:03,652 --> 00:25:14,812
+Onun için polinomun hani öyle bir şeylerle uğraşmamak adına uğraşmamak adına burada şu işlemi yap.
+
+253
+00:25:16,172 --> 00:25:22,932
+Hepsini mesela yani ortak bir çarpan bulup dışarıya determinantın dışına atmaya çalış.
+
+254
+00:25:23,432 --> 00:25:24,892
+Yapman gereken işlem bu.
+
+255
+00:25:25,312 --> 00:25:26,312
+Bunda da ne yapıyorduk?
+
+256
+00:25:26,632 --> 00:25:28,451
+Mesela hepsini birinci sütuna toplayalım.
+
+257
+00:25:28,451 --> 00:25:31,451
+Hepsini birinci sütuna toplarsak bunlar birbirini götürdü.
+
+258
+00:25:32,471 --> 00:25:33,632
+Eksi üç eksi lambda.
+
+259
+00:25:34,372 --> 00:25:36,632
+Bunu topladığımda dört eksi lambda.
+
+260
+00:25:36,751 --> 00:25:38,832
+Bunu da topladığımda ne oldu?
+
+261
+00:25:40,592 --> 00:25:43,552
+Eksi üç eksi lambda oldu.
+
+262
+00:25:44,132 --> 00:25:46,471
+Bunları topladığımda bunlar birbirini götürdü.
+
+263
+00:25:46,532 --> 00:25:48,412
+İki eksi lambda olmadı.
+
+264
+00:25:49,032 --> 00:25:54,751
+Şimdi ikiye yani yukarıya doğru toplayacak olursam yukarıya doğru topladığımda bunlar eksi.
+
+265
+00:25:54,872 --> 00:25:56,192
+Bak bunlar artı olacak.
+
+266
+00:25:56,412 --> 00:25:56,992
+Gene olmaz.
+
+267
+00:25:56,992 --> 00:25:59,312
+Şimdi ikili düşünüyorum.
+
+268
+00:25:59,792 --> 00:26:02,812
+Bunu birle çarpıp buraya eklediğimde ne olacak?
+
+269
+00:26:04,192 --> 00:26:05,451
+Eksi iki eksi lambda.
+
+270
+00:26:05,731 --> 00:26:07,072
+Birle çarptık ekledik.
+
+271
+00:26:07,152 --> 00:26:08,312
+Eksi iki eksi lambda.
+
+272
+00:26:08,492 --> 00:26:09,471
+Bunlar sıfır.
+
+273
+00:26:10,192 --> 00:26:11,572
+O zaman ne yaparım?
+
+274
+00:26:11,672 --> 00:26:13,192
+Burada ortak bir çarpan var.
+
+275
+00:26:13,352 --> 00:26:17,152
+Bu sıfır ama sıfırı neyle çarparsam çarpayım sıfır olduğu için.
+
+276
+00:26:18,032 --> 00:26:19,492
+Bu sütunda ortak.
+
+277
+00:26:19,912 --> 00:26:23,992
+Eksi iki eksi lambda var dedim ve ben bunu dışarıya attım.
+
+278
+00:26:23,992 --> 00:26:28,492
+Dışarıya attığımda burada bir birler kaldı.
+
+279
+00:26:28,552 --> 00:26:29,652
+Burası sıfır zaten.
+
+280
+00:26:29,812 --> 00:26:31,852
+Geri kalanın olduğu gibi yazdım.
+
+281
+00:26:32,152 --> 00:26:32,971
+Şimdi ne yapacağım?
+
+282
+00:26:33,052 --> 00:26:33,971
+Burayı sıfırlayacağım.
+
+283
+00:26:34,152 --> 00:26:35,032
+Eksi bir ile çarp.
+
+284
+00:26:35,172 --> 00:26:35,872
+Buraya ekle.
+
+285
+00:26:35,872 --> 00:26:37,392
+eklersem sıfır.
+
+286
+00:26:37,532 --> 00:26:38,652
+Eksi bir ile çarptım.
+
+287
+00:26:38,812 --> 00:26:39,251
+Ekledim.
+
+288
+00:26:39,312 --> 00:26:40,211
+Dört eksi lambda.
+
+289
+00:26:40,352 --> 00:26:41,432
+Eksi bir ile çarptım.
+
+290
+00:26:41,552 --> 00:26:42,052
+Ekledim.
+
+291
+00:26:42,172 --> 00:26:42,532
+Sıfır.
+
+292
+00:26:43,032 --> 00:26:46,471
+Şimdi determinantı şuna göre açarsam.
+
+293
+00:26:46,951 --> 00:26:50,312
+Bununla bunun çarpımı eksi sıfır zaten.
+
+294
+00:26:50,312 --> 00:26:52,792
+Böylelikle.
+
+295
+00:26:52,792 --> 00:26:53,792
+bir ile çarpım.
+
+296
+00:26:53,792 --> 00:27:21,792
+Bir.
+
+297
+00:26:54,548 --> 00:26:57,748
+Benim lambda köklerim nelermiş?
+
+298
+00:26:58,067 --> 00:27:00,008
+Eksi 2, 4 ve 2.
+
+299
+00:27:00,508 --> 00:27:02,268
+En küçük olan hangisi?
+
+300
+00:27:02,627 --> 00:27:03,248
+Eksi 2.
+
+301
+00:27:03,248 --> 00:27:07,988
+Eksi 2'ye karşılık gelen öz vektör soruluyor benden.
+
+302
+00:27:08,488 --> 00:27:15,327
+O zaman a eksi lambdaı çarpı x eşittir sıfırdan şimdi lambdayı götürüp yerine yazıyorum.
+
+303
+00:27:15,468 --> 00:27:17,827
+Yani eksi 2'yi burada yerine yazıyorum.
+
+304
+00:27:18,028 --> 00:27:20,228
+Eksi 2'yi yazdığımda ne oldu?
+
+305
+00:27:20,347 --> 00:27:21,788
+Bu artı 2 oldu.
+
+306
+00:27:21,788 --> 00:27:27,607
+Eksi 1 artı 1 eksi 1.
+
+307
+00:27:28,807 --> 00:27:31,147
+7 eksi 2'yi yazdık.
+
+308
+00:27:32,428 --> 00:27:37,907
+Eksi 7, 7 eksi 1.
+
+309
+00:27:39,188 --> 00:27:42,567
+Eksi 6, 6, 4.
+
+310
+00:27:44,587 --> 00:27:44,827
+Tamam.
+
+311
+00:27:45,347 --> 00:27:49,788
+Şimdi bu katsayalar maddesi buradan sistemi çözüyorum.
+
+312
+00:27:49,788 --> 00:27:50,428
+çözüyorum.
+
+313
+00:27:51,147 --> 00:27:53,127
+Çözersem homojen sistemi yapalım.
+
+314
+00:27:53,367 --> 00:27:54,928
+Homojen sistemi çözüyorum.
+
+315
+00:27:55,688 --> 00:27:57,367
+Çözdüğümde ne yapacağım?
+
+316
+00:27:57,788 --> 00:28:04,347
+Bunu eksi 7 ile çarpıp 2'ye, eksi 6 ile çarpıp 3'e ekleyeyim.
+
+317
+00:28:04,347 --> 00:28:10,968
+Eklediğimde eksi 7 ile 0, eksi 7 ile 0, eksi 7 ile 6, 7, 6 oldu.
+
+318
+00:28:11,468 --> 00:28:16,927
+Eksi 6 ile 0, eksi 6 ile 0, eksi 6 ile ne oldu?
+
+319
+00:28:17,087 --> 00:28:19,548
+Artı 6, 10 oldu.
+
+320
+00:28:19,548 --> 00:28:23,048
+Buradan ikinci satırı ne yaparım?
+
+321
+00:28:23,048 --> 00:28:24,448
+Bir bölü 6 yaparım.
+
+322
+00:28:24,768 --> 00:28:27,147
+Birinci satırı da eksi 1 ile çarparım.
+
+323
+00:28:28,768 --> 00:28:29,827
+Şunu elde ettim.
+
+324
+00:28:30,307 --> 00:28:37,288
+Şimdi ikinci satırı eksi 1 ile çarp 1'e, ikinci satırı eksi 10 ile çarp 3'e ekle.
+
+325
+00:28:38,268 --> 00:28:39,488
+Şuraları da sıfırladım.
+
+326
+00:28:39,847 --> 00:28:40,627
+İşlemin bitti.
+
+327
+00:28:40,627 --> 00:28:43,887
+Şimdi ranka bakıyorum.
+
+328
+00:28:44,008 --> 00:28:44,587
+Rank nedir?
+
+329
+00:28:44,708 --> 00:28:45,688
+1, 2.
+
+330
+00:28:46,827 --> 00:28:47,627
+N kaç?
+
+331
+00:28:48,028 --> 00:28:48,307
+3.
+
+332
+00:28:49,067 --> 00:28:50,168
+N eksi R nedir?
+
+333
+00:28:50,347 --> 00:28:50,548
+1.
+
+334
+00:28:50,927 --> 00:28:56,067
+Bir tane keyfiye bağlı sonsuz çözüm var ve bu 1 bana neyi söylüyor?
+
+335
+00:28:56,407 --> 00:28:57,668
+Vektör sayısını söylüyor.
+
+336
+00:28:57,968 --> 00:28:59,827
+Şimdi aralarındaki bağıntıyı yazalım.
+
+337
+00:29:00,347 --> 00:29:05,728
+x1 eksi x2 eşittir 0'a, x3 eşittir 0'a.
+
+338
+00:29:05,728 --> 00:29:11,427
+Buradan ben x1'i 1 olarak keyfi olarak verdim.
+
+339
+00:29:11,867 --> 00:29:12,927
+x'i kimde ne oldu?
+
+340
+00:29:13,208 --> 00:29:13,728
+1 oldu.
+
+341
+00:29:14,188 --> 00:29:18,008
+O zaman lambda 1'e karşılık gelen benim vektörüm nedir?
+
+342
+00:29:18,147 --> 00:29:21,407
+1, 1, 0'dır.
+
+343
+00:29:23,327 --> 00:29:24,127
+Anlaşıldı mı?
+
+344
+00:29:27,548 --> 00:29:28,407
+Anladık mı?
+
+345
+00:29:29,567 --> 00:29:30,427
+Evet hocam.
+
+346
+00:29:31,448 --> 00:29:31,748
+Tamam.
+
+347
+00:29:31,748 --> 00:29:35,968
+Şimdi bir 10 dakika ara vereyim.
+
+348
+00:29:36,148 --> 00:29:37,748
+Çünkü 2 kişiyle ders yapıyor gibiyim.
+
+349
+00:29:38,887 --> 00:29:41,067
+Öyle hissediyorum arkadaşlar.
+
+350
+00:29:41,327 --> 00:29:42,508
+Bir 10 dakika ara vereyim.
+
+351
+00:29:42,607 --> 00:29:44,627
+Lütfen bir su, kahve, bir şey için.
+
+352
+00:29:45,087 --> 00:29:47,148
+Ve ondan sonra dikkatle beni dinleyin.
+
+353
+00:29:47,228 --> 00:29:48,208
+Anlatacağım şeyleri.
+
+354
+00:29:48,288 --> 00:29:49,407
+Dikkatle dinleyiniz.
+
+355
+00:29:49,528 --> 00:29:49,988
+Tamam mı?
+
+356
+00:29:50,708 --> 00:29:52,008
+Bu soruyu çözeceğim.
+
+357
+00:29:52,508 --> 00:29:53,168
+Tamam hocam.
+
+358
+00:29:54,387 --> 00:29:56,668
+Yani 40'ta burada olun.
+
+359
+00:29:59,748 --> 00:30:01,668
+9.40'ta görüşüyoruz.
+
+360
+00:30:01,748 --> 00:30:16,367
+10 dakika.
+
+361
+00:40:49,172 --> 00:40:52,211
+Evet, geldik mi? Burada mıyız?
+
+362
+00:40:53,172 --> 00:40:54,112
+Geldik hocam.
+
+363
+00:40:55,552 --> 00:40:55,871
+Peki.
+
+364
+00:40:58,552 --> 00:41:02,391
+Şimdi, sorumuzu çözelim.
+
+365
+00:41:03,271 --> 00:41:06,452
+A matrisine karşılık gelen özdeğer ve özvektörleri bul.
+
+366
+00:41:07,452 --> 00:41:11,371
+A-Lambda I'nın determinantını yazıyorum.
+
+367
+00:41:12,811 --> 00:41:13,532
+Eksi 3.
+
+368
+00:41:13,532 --> 00:41:15,152
+Şunu aşağıya atalım.
+
+369
+00:41:17,052 --> 00:41:17,851
+Eksi lambda.
+
+370
+00:41:19,172 --> 00:41:21,572
+1-1
+
+371
+00:41:21,572 --> 00:41:23,911
+Eksi 7.
+
+372
+00:41:24,731 --> 00:41:25,992
+5-Lambda
+
+373
+00:41:25,992 --> 00:41:27,672
+Eksi 1.
+
+374
+00:41:27,972 --> 00:41:28,711
+Eksi 6.
+
+375
+00:41:29,152 --> 00:41:29,572
+6.
+
+376
+00:41:30,452 --> 00:41:31,411
+Eksi 2.
+
+377
+00:41:31,472 --> 00:41:32,052
+Eksi lambda.
+
+378
+00:41:36,244 --> 00:41:50,624
+Şimdi bunların hepsini birinci sütuna toplasak, eksi 3 eksi lambda topladığımda, eksi 3 eksi lambda, bunu topladığımda eksi 2 eksi lambda oldu, olmadı.
+
+379
+00:41:51,344 --> 00:41:55,744
+Yukarıya doğru topladığımda eksi bunlar artı oluyor, gene olmaz.
+
+380
+00:41:55,744 --> 00:42:00,744
+O zaman şöyle yapayım, 1 ile çarpıp buraya ekleyeyim.
+
+381
+00:42:00,744 --> 00:42:06,624
+Eklersen, ne olacak?
+
+382
+00:42:08,164 --> 00:42:27,724
+Eksi 2 eksi lambda, eksi 2 eksi lambda, burası da 0, 1, 5 eksi lambda, 6, eksi 1, eksi 1, eksi 2 eksi lambda.
+
+383
+00:42:30,744 --> 00:42:34,443
+Eklersen, bunu dışarıya atarım.
+
+384
+00:42:38,356 --> 00:42:49,316
+1, 1, 0, 1, 5 eksi lambda, 6, eksi 1, eksi 1, eksi 2 eksi lambda.
+
+385
+00:42:50,756 --> 00:42:53,256
+Şimdi eksi 1 ile çarpıyorum.
+
+386
+00:42:55,096 --> 00:43:03,036
+Eksi 2 eksi lambda, 1, 1, eksi 1, eksi 1 ile çarptım.
+
+387
+00:43:03,036 --> 00:43:13,576
+0, eksi 1 ile çarptım, 4 eksi lambda, eksi 1 ile çarptım, 0, 0, 6, eksi 2 eksi lambda.
+
+388
+00:43:16,096 --> 00:43:19,356
+Buna göre açarsak, ne oldu?
+
+389
+00:43:20,116 --> 00:43:32,796
+Eksi 2 eksi lambda, bununla bunun çarpımı eksi 0'dan, eksi 2 eksi lambda, 4 eksi lambda eşittir.
+
+390
+00:43:32,796 --> 00:43:33,476
+0 olur.
+
+391
+00:43:34,016 --> 00:43:37,916
+Buradan lambda 1, lambda 2, eksi 2 katlı kök var.
+
+392
+00:43:38,636 --> 00:43:40,876
+Lambda 3 de 4'tür.
+
+393
+00:43:42,336 --> 00:43:42,556
+Tamam.
+
+394
+00:43:43,576 --> 00:43:50,876
+Şimdi lambda 1, lambda 2 eşit, eksi 2 için.
+
+395
+00:43:50,876 --> 00:43:58,115
+a eksi lambda i çarpı x eşittir 0 diyelim.
+
+396
+00:43:59,416 --> 00:44:04,436
+Eksi 2'yi yerine yazdığımız zaman, ne olacaktır?
+
+397
+00:44:04,596 --> 00:44:07,036
+Eksi 2'yi yerine yazdık, artı oldu.
+
+398
+00:44:08,036 --> 00:44:10,796
+Eksi 1, 1, eksi 1.
+
+399
+00:44:10,796 --> 00:44:11,206
+Eksi 1, 2, 1, eksi 1, 2, 1, 2
+
+400
+00:44:14,291 --> 00:44:17,132
+eksi bir, bir, eksi bir
+
+401
+00:44:22,643 --> 00:44:33,643
+eksi yedi, artı yedi, eksi bir
+
+402
+00:44:33,643 --> 00:44:44,283
+eksi altı, altı, sıfır
+
+403
+00:44:53,619 --> 00:44:54,900
+şey yapayım da
+
+404
+00:45:14,675 --> 00:45:15,135
+Evet.
+
+405
+00:45:19,443 --> 00:45:19,963
+Şimdi
+
+406
+00:45:26,068 --> 00:45:40,548
+x1, x2, x3, 0, 0, 0, homojen denklem sistemi. Şurası nedir? Kat sayılar matrisidir. Bu kat sayılar matrisini çözelim.
+
+407
+00:45:41,828 --> 00:45:52,948
+Çözersek, eksi 1, 1, eksi 1, eksi 7, 7, eksi 1, eksi 6, 6, 0.
+
+408
+00:45:57,396 --> 00:46:00,876
+Birinci satırı eksi 7 ile çarp 2'ye.
+
+409
+00:46:02,376 --> 00:46:07,216
+Birinci satırı eksi 6 ile çarp 3'e ekle.
+
+410
+00:46:09,156 --> 00:46:11,876
+Eksi 1, 1, eksi 1.
+
+411
+00:46:12,176 --> 00:46:18,456
+Eksi 7 ile çarptım 0, eksi 7 ile 0, eksi 7 ile çarptık, ekledik 6.
+
+412
+00:46:19,576 --> 00:46:24,536
+Eksi 6 ile 0, eksi 6 ile 0, eksi 6 ile 6.
+
+413
+00:46:24,536 --> 00:46:29,836
+Birinci satırı eksi 1 ile çarpıyorum.
+
+414
+00:46:30,115 --> 00:46:33,356
+İkinci satırı 1 bölü 6 ile çarpıyorum.
+
+415
+00:46:33,356 --> 00:46:45,516
+Buradan 1, eksi 1, 1, 0, 0, 1, 0, 0, 6.
+
+416
+00:46:49,556 --> 00:47:13,476
+Tamam. Şimdi ne yapıyoruz? İkinci satırı, eksi bir ile çarp, bire, ikinci satırı, eksi altı ile çarp, üçe, eklersek, bir, eksi bir, sıfır, sıfır, sıfır, sıfır, bir, sıfır, sıfır, sıfır.
+
+417
+00:47:19,188 --> 00:47:24,968
+Burası x1'in, x2'nin, x3'ün, burası da B'lerin bulunduğu sütun.
+
+418
+00:47:26,268 --> 00:47:33,347
+Rank nedir? Rank 1, n2, n-r1.
+
+419
+00:47:33,847 --> 00:47:37,827
+Bir tane keyfiye bağlı sonsuz çözüm var ve bir tane vektörüm var.
+
+420
+00:47:38,307 --> 00:47:44,208
+Tamam, katlı köke karşılık, yani iki tane özdeğere karşılık gelen vektör sayım 1.
+
+421
+00:47:44,588 --> 00:47:47,148
+Aralarındaki bağıntıyı yazıyorum şimdi.
+
+422
+00:47:47,148 --> 00:47:54,288
+x1-x2 eşittir 0'a, x3 eşittir 0'a.
+
+423
+00:47:54,708 --> 00:47:58,648
+Homojen sistemde asla 0'ı keyfi olarak vermiyorum.
+
+424
+00:47:59,088 --> 00:48:03,827
+Çünkü 0 çözüm, yani 0 verdiğim zaman bu da 0, bu da 0, bu da 0 oldu.
+
+425
+00:48:04,768 --> 00:48:07,168
+0 çözüm zaten var olan çözüm.
+
+426
+00:48:07,288 --> 00:48:09,988
+Benim amacım burada ne? 0'dan başka çözüm bulmak.
+
+427
+00:48:09,988 --> 00:48:10,988
+x1-x1'e 1 diyeyim.
+
+428
+00:48:10,988 --> 00:48:18,548
+Yani x1-x1'e 1 diyeyim keyfiye olarak, x2'im de 1 olur, x3'üm 0 olur.
+
+429
+00:48:18,548 --> 00:48:22,588
+Rank hiçbir zaman n'e eşit çıkmaz.
+
+430
+00:48:22,807 --> 00:48:27,048
+Eğer ki r n'e eşit çıktıysa yanlış işlem yaptın demektir.
+
+431
+00:48:27,148 --> 00:48:28,948
+Dön işlemlerini kontrol et.
+
+432
+00:48:29,208 --> 00:48:33,588
+Çünkü rankın n'e eşit olması demek, 0 vektör var demektir.
+
+433
+00:48:33,588 --> 00:48:34,588
+böyle bir şey olmaz.
+
+434
+00:48:34,588 --> 00:48:37,588
+Tamam.
+
+435
+00:48:37,588 --> 00:48:45,347
+Burada şimdi lambda 1-2'ye karşılık gelen benim vektörüm tek bir tane.
+
+436
+00:48:45,347 --> 00:48:47,387
+O da neymiş?
+
+437
+00:48:47,387 --> 00:48:50,228
+1-1-0'mış.
+
+438
+00:48:50,228 --> 00:48:52,648
+Tamam.
+
+439
+00:48:52,648 --> 00:48:56,688
+Anlaşıldı mı?
+
+440
+00:48:56,688 --> 00:49:24,688
+Evet hocam.
+
+441
+00:49:24,148 --> 00:49:25,208
+Aynı soruda.
+
+442
+00:49:26,768 --> 00:49:28,908
+Ne oldu? 4 eksi lambda.
+
+443
+00:49:29,367 --> 00:49:33,208
+Eksi 4 artı lambda oldu.
+
+444
+00:49:34,208 --> 00:49:34,668
+Sıfır.
+
+445
+00:49:34,668 --> 00:49:36,128
+Bak burada.
+
+446
+00:49:40,244 --> 00:49:42,244
+Şunu şöyle yazabilirim.
+
+447
+00:49:44,064 --> 00:49:47,184
+Birinci satırdan 4 eksi lambdalar dışarıya çıkar.
+
+448
+00:49:47,923 --> 00:49:50,544
+Burada 1, burada eksi 1, burada da 0 kalır.
+
+449
+00:49:52,704 --> 00:49:55,903
+Bu sefer bunu 1 ile çarpıp buraya ekliyorum.
+
+450
+00:49:56,903 --> 00:49:58,304
+Bunu 0 yapmak için.
+
+451
+00:49:58,784 --> 00:50:02,204
+1 ile çarptık, ekledik.
+
+452
+00:50:03,483 --> 00:50:04,504
+Şuna göre açtık.
+
+453
+00:50:07,144 --> 00:50:08,104
+Determinantımızı.
+
+454
+00:50:13,076 --> 00:50:30,775
+Daha doğrusu burada ne yapmışım? Şunu eksi parantezine almışım. Bir dakika. Şurayı. Eksi parantezine alırsam 2 artı lambda olur bu. İkinci sütundan da 2 artı lambdaları dışarıya atıp sonra açmışım.
+
+455
+00:50:30,775 --> 00:50:45,315
+Açtığım zaman bununla bunun çarpımı, eksi bununla bunun çarpımından şunu elde ettik. Burada da gene aynı şekilde 2 kat kök var ve öbürküsü de lambda eşit 4. Tamam.
+
+456
+00:50:46,315 --> 00:50:52,715
+Lambda eşit 4'ü yapmayacağım artık çünkü onda bir şey yok. Aynı işlemleri yapıyoruz.
+
+457
+00:50:52,715 --> 00:51:01,596
+Onun yerine ben şimdi şu soruyu çözeceğim.
+
+458
+00:51:06,771 --> 00:51:17,692
+A matçesi eksi 1, 1, 1, 1, eksi 1, 1, 1, eksi 1 olsun.
+
+459
+00:51:19,731 --> 00:51:22,951
+A'ya karşılık gelen özdeğer ve öz vektörleri bulalım.
+
+460
+00:51:24,791 --> 00:51:26,572
+A eksi lambda I.
+
+461
+00:51:26,572 --> 00:51:56,572
+A'ya karşılık gelen özdeğer ve özdeğer ve özdeğer ve özdeğer ve özdeğer ve özdeğer ve özdeğer ve özdeğer ve özdeğer ve özdeğer ve özdeğer ve özdeğer ve özdeğer ve özdeğer ve özdeğer ve özdeğer ve özdeğer ve özdeğer ve özdeğer ve özdeğer ve özdeğer ve özdeğer ve özdeğer ve özdeğer ve özdeğer ve özdeğer ve özdeğer ve özdeğer ve özdeğer ve özdeğer ve özdeğer ve özdeğer ve özdeğer ve özdeğer ve özdeğer ve özdeğer ve özdeğer ve özdeğer ve özdeğer ve özdeğer ve özdeğer ve özdeğer ve özdeğer ve özdeğer ve özdeğer ve özdeğer ve özdeğer ve özdeğer ve özdeğer ve özdeğer ve özdeğer ve özdeğer ve özdeğer ve özdeğer ve
+
+462
+00:51:56,572 --> 00:52:26,572
+özdeğer ve özdeğer ve özdeğer ve özdeğer ve özdeğer ve özdeğer ve özdeğer ve özdeğer ve özdeğer ve özdeğer ve özdeğer ve özdeğer ve özdeğer ve özdeğer ve özdeğer ve özdeğer ve özdeğer ve özdeğer ve özdeğer ve özdeğer ve özdeğer ve özdeğer ve özdeğer ve özdeğer ve özdeğer ve özdeğer ve özdeğer ve özdeğer ve özdeğer ve özdeğer ve özdeğer ve özdeğer ve özdeğer ve özdeğer ve özdeğer ve özdeğer ve özdeğer ve özdeğer ve özdeğer ve özdeğer ve özdeğer ve özdeğer ve özdeğer ve özdeğer ve özdeğer ve özdeğer ve özdeğer ve özdeğer ve özdeğer ve özdeğer ve özdeğer ve özdeğer ve özdeğer ve özdeğer ve özdeğer ve öz
+
+463
+00:52:26,572 --> 00:52:56,572
+ve özdeğer ve özdeğer ve özdeğer ve özdeğer ve özdeğer ve özdeğer ve özdeğer ve özdeğer ve özdeğer ve özdeğer ve özdeğer ve özdeğer ve özdeğer ve özdeğer ve özdeğer ve özdeğer ve özdeğer ve özdeğer ve özdeğer ve özdeğer ve özdeğer ve özdeğer ve özdeğer ve özdeğer ve özdeğer ve özdeğer ve özdeğer ve özdeğer ve özdeğer ve özdeğer ve özdeğer ve özdeğer ve özdeğer ve özdeğer ve özdeğer ve özdeğer ve özdeğer ve özdeğer ve özdeğer ve özdeğer ve özdeğer ve özdeğer ve özdeğer ve özdeğer ve özdeğer ve özdeğer ve özdeğer ve özdeğer ve özdeğer ve özdeğer ve özdeğer ve özdeğer ve özdeğer ve özdeğer ve özdeğer ve
+
+464
+00:52:56,572 --> 00:53:26,572
+özdeğer ve özdeğer ve özdeğer ve özdeğer ve özdeğer ve özdeğer ve özdeğer ve özdeğer ve özdeğer ve özdeğer ve özdeğer ve özdeğer ve özdeğer ve özdeğer ve özdeğer ve özdeğer ve özdeğer ve özdeğer ve özdeğer ve özdeğer ve özdeğer ve özdeğer ve özdeğer ve özdeğer ve özdeğer ve özdeğer ve özdeğer ve özdeğer ve özdeğer ve özdeğer ve özdeğer ve özdeğer ve özdeğer ve özdeğer ve özdeğer ve özdeğer ve özdeğer ve özdeğer ve özdeğer ve özdeğer ve özdeğer ve özdeğer ve özdeğer ve özdeğer ve özdeğer ve özdeğer ve özdeğer ve özdeğer ve özdeğer ve özdeğer ve özdeğer ve özdeğer ve özdeğer ve özdeğer ve özdeğer ve öz
+
+465
+00:53:56,572 --> 00:54:03,052
+bir oldu
+
+466
+00:54:03,052 --> 00:54:06,471
+ne kadar kötü ya
+
+467
+00:54:21,235 --> 00:54:21,615
+Tamam.
+
+468
+00:54:22,915 --> 00:54:25,755
+Burası zaten kat sayılar madresiydi.
+
+469
+00:54:25,875 --> 00:54:35,016
+Direkt işlem yapacak olursak birinci satırı eksi bir ile çarpıp ikiye birinci satırı eksi bir ile çarpıp üçe ekleyelim.
+
+470
+00:54:35,295 --> 00:54:37,435
+Eklediğimde ne olacaktır?
+
+471
+00:54:37,635 --> 00:54:45,076
+Bir, bir, bir, sıfır, sıfır, sıfır, sıfır, sıfır, sıfırı buldum.
+
+472
+00:54:45,076 --> 00:54:51,996
+Burası x1'in, x2'nin, x3'ün.
+
+473
+00:54:52,455 --> 00:54:54,195
+Bu da B'lerin bulunduğu sütun.
+
+474
+00:54:54,735 --> 00:55:01,455
+Rank burada bir, n, üç, n-r, iki.
+
+475
+00:55:02,076 --> 00:55:07,395
+İki tane keyfiye bağlı sonsuz çözüm var ve bu iki bana vektör sayısını söylüyor.
+
+476
+00:55:07,395 --> 00:55:08,895
+Bak burada katlı kök var.
+
+477
+00:55:09,295 --> 00:55:13,115
+Bu katlı kökte kaç tane vektör karşılık geliyor?
+
+478
+00:55:13,115 --> 00:55:15,675
+İki, biraz önceki soruda katlı köktü.
+
+479
+00:55:16,155 --> 00:55:20,016
+O katlı köke karşılık gelen vektör sayı birdi.
+
+480
+00:55:21,335 --> 00:55:21,536
+Tamam.
+
+481
+00:55:22,855 --> 00:55:28,775
+Yani katlı kök olduğunda bir tane olacak ya da iki tane olacak böyle bir şey söyleyemem.
+
+482
+00:55:29,135 --> 00:55:29,615
+Tamam mı?
+
+483
+00:55:30,036 --> 00:55:30,975
+Bunu söyleyen ne?
+
+484
+00:55:31,275 --> 00:55:32,235
+n-r bana.
+
+485
+00:55:33,235 --> 00:55:35,295
+Şimdi aralarındaki bağıntıyı yazalım.
+
+486
+00:55:35,295 --> 00:55:36,315
+Burası önemli.
+
+487
+00:55:36,576 --> 00:55:37,435
+Dikkatle dinle.
+
+488
+00:55:37,655 --> 00:55:41,335
+x1 artı x2 artı x3 eşittir sıfır.
+
+489
+00:55:42,056 --> 00:55:42,235
+Tamam.
+
+490
+00:55:43,115 --> 00:55:44,516
+İki tane keyfi dedim.
+
+491
+00:55:44,835 --> 00:55:46,315
+İki tane keyfiye alacağım.
+
+492
+00:55:48,556 --> 00:55:52,175
+x1, x2'yi keyfiye olarak alayım.
+
+493
+00:55:52,455 --> 00:55:53,516
+Birinci vektörüm için.
+
+494
+00:55:54,596 --> 00:55:55,295
+Şimdi şöyle.
+
+495
+00:55:55,675 --> 00:55:59,996
+Birinci vektörde hangi iki taneyi keyfiye olarak aldıysam,
+
+496
+00:56:00,315 --> 00:56:04,415
+ikinci vektörde de aynı iki taneyi keyfiye olarak alıyorum.
+
+497
+00:56:04,415 --> 00:56:15,275
+keyfiye dedim ama ben rastgele 3, 5, 7, 8 gibi rakamlar alacak olursam burada çıkan vektörlerin lineer bağımsız olduğunu göstermek zorundayım.
+
+498
+00:56:15,275 --> 00:56:17,715
+O yüzden şöyle al.
+
+499
+00:56:17,715 --> 00:56:21,195
+Böyle alırsan zaten otomatik lineer bağımsız çıkar.
+
+500
+00:56:21,496 --> 00:56:22,435
+Buna bir aldın.
+
+501
+00:56:22,835 --> 00:56:24,955
+Bir aldığını götürüp burada sıfır alıyorsun.
+
+502
+00:56:25,855 --> 00:56:27,795
+Sıfır alıyorsun ikincisini.
+
+503
+00:56:28,036 --> 00:56:29,875
+Sıfır aldığını götürüp bir alıyorsun.
+
+504
+00:56:29,875 --> 00:56:38,375
+Buna bağlı olarak x3'ün de eksi 1 diye çıkıyor.
+
+505
+00:56:38,815 --> 00:56:50,735
+Yani lambda 2, 3'e karşılık gelen birinci vektörün x2 vektörün 1, 0, eksi 1 iken
+
+506
+00:56:50,735 --> 00:57:02,335
+diğer vektörün 0, 1, 0, 1, eksi 1 dir.
+
+507
+00:57:06,963 --> 00:57:07,923
+Anlaşıldı mı?
+
+508
+00:57:10,324 --> 00:57:11,603
+Anlaşıldı hocam.
+
+509
+00:57:12,943 --> 00:57:13,364
+Evet.
+
+510
+00:57:27,731 --> 00:57:29,951
+Bir diğer sorumuz da şu.
+
+511
+00:57:33,780 --> 00:57:35,380
+A matrisi veriliyor.
+
+512
+00:57:37,760 --> 00:57:45,100
+A matrisinin bir öz değeri lambda 1 eşittir 1 olduğuna göre k değerini bulunuz.
+
+513
+00:57:46,000 --> 00:57:53,440
+Bulunan k değerine göre lambda 1 öz değerine karşılık gelen öz vektörü bulunuz.
+
+514
+00:57:53,440 --> 00:57:56,280
+Tamam soru bu.
+
+515
+00:57:57,960 --> 00:58:02,360
+Şimdi lambda 1 eşittir 1.
+
+516
+00:58:03,780 --> 00:58:05,480
+Bu verilmiş bana.
+
+517
+00:58:06,160 --> 00:58:08,180
+Neyi soruyor? Şuradaki k'yi soruyor.
+
+518
+00:58:09,000 --> 00:58:11,540
+Ben nasıl buluyordum öz değeri?
+
+519
+00:58:11,780 --> 00:58:16,700
+A eksi lambda I eşittir 0 diyordum.
+
+520
+00:58:17,200 --> 00:58:20,060
+Ama burada ben neyi biliyorum?
+
+521
+00:58:21,600 --> 00:58:22,620
+Lambdayı biliyorum.
+
+522
+00:58:22,620 --> 00:58:26,600
+O zaman yani ilk önce şunu yazarım.
+
+523
+00:58:27,120 --> 00:58:29,000
+A eksi lambda I.
+
+524
+00:58:30,160 --> 00:58:30,880
+Şunu yazayım.
+
+525
+00:58:30,880 --> 00:58:33,400
+Eksi 11 eksi lambda.
+
+526
+00:58:34,620 --> 00:58:36,800
+Eksi 5 eksi 3.
+
+527
+00:58:37,460 --> 00:58:37,780
+8.
+
+528
+00:58:39,160 --> 00:58:40,200
+7 eksi lambda.
+
+529
+00:58:40,980 --> 00:58:41,280
+2.
+
+530
+00:58:42,100 --> 00:58:42,620
+K.
+
+531
+00:58:43,400 --> 00:58:44,120
+5.
+
+532
+00:58:44,920 --> 00:58:45,960
+4 eksi lambda.
+
+533
+00:58:45,960 --> 00:58:48,060
+Tamam.
+
+534
+00:58:48,820 --> 00:58:50,680
+Şimdi ben neyi biliyorum?
+
+535
+00:58:51,060 --> 00:58:52,800
+Lambdanın 1 olduğunu biliyorum.
+
+536
+00:58:53,000 --> 00:58:54,900
+O zaman gidiyorum burada.
+
+537
+00:58:55,480 --> 00:58:57,760
+1'leri yerine yazıyorum.
+
+538
+00:58:58,220 --> 00:59:00,340
+Yerine yazdığımda bu ne oldu?
+
+539
+00:59:00,580 --> 00:59:01,680
+Eksi 12 oldu.
+
+540
+00:59:02,340 --> 00:59:04,340
+Burası 6 oldu.
+
+541
+00:59:04,820 --> 00:59:06,240
+Burası da ne oldu?
+
+542
+00:59:06,620 --> 00:59:07,120
+3 oldu.
+
+543
+00:59:07,600 --> 00:59:09,140
+1'leri yerine yazdığım zaman.
+
+544
+00:59:09,660 --> 00:59:09,900
+Tamam.
+
+545
+00:59:09,900 --> 00:59:11,580
+Diğerleri aynı zaten.
+
+546
+00:59:12,240 --> 00:59:15,940
+Şimdi bu determinant neye eşit?
+
+547
+00:59:16,220 --> 00:59:16,980
+Sıfıra eşit.
+
+548
+00:59:18,820 --> 00:59:20,060
+Şunu biliyorum.
+
+549
+00:59:20,500 --> 00:59:20,640
+Tamam.
+
+550
+00:59:22,460 --> 00:59:23,360
+Peki arkadaşlar.
+
+551
+00:59:23,820 --> 00:59:26,700
+Şimdi burada ya bu determinantı böyle açarsın.
+
+552
+00:59:27,000 --> 00:59:29,400
+Ya da determinant özelliklerini kullanarak.
+
+553
+00:59:33,268 --> 00:59:40,688
+Şuna bir bakarsan, determinantta iki satır birbirinin katıysa determinantın değeri sıfıra eşitti.
+
+554
+00:59:41,648 --> 00:59:47,608
+Bak bu bunun eksisi, bu bunun eksisi, bu da bunun eksisi olursa ne olacaktır?
+
+555
+00:59:47,688 --> 00:59:54,168
+Yani k eşit 12 olursa determinant sıfıra eşittir deyip ben direkt k'yi 12 diye söyleyebilirim.
+
+556
+00:59:54,268 --> 00:59:56,168
+Şu işlemi yapmama gerek yok.
+
+557
+00:59:56,168 --> 01:00:07,487
+Sonra bulunan k değerine göre lambda eşittir bir öz değerine karşılık gelen öz vektörü bulunuz.
+
+558
+01:00:08,088 --> 01:00:11,387
+Öz değere karşılık gelen öz vektörü bulunuz.
+
+559
+01:00:12,507 --> 01:00:13,608
+Şimdi ne yapacağız?
+
+560
+01:00:13,608 --> 01:00:27,907
+Zaten ben burada şunu yazıyordum ya, a-lambda-i çarpı x eşittir sıfır.
+
+561
+01:00:28,548 --> 01:00:31,887
+Lambda bir eşittir bir için.
+
+562
+01:00:35,927 --> 01:00:37,768
+Şu neresi?
+
+563
+01:00:38,327 --> 01:00:39,168
+Şurasıydı.
+
+564
+01:00:39,367 --> 01:00:39,867
+Öyle değil mi?
+
+565
+01:00:40,307 --> 01:00:42,668
+K yerine sadece burada 12'yi yazacağım.
+
+566
+01:00:42,668 --> 01:00:48,548
+12'yi yazdığımda kat sayılar matrisini elde ettim.
+
+567
+01:00:49,028 --> 01:00:52,048
+Şimdi bu kat sayılar matrisini ne yapacağım?
+
+568
+01:00:52,847 --> 01:00:55,407
+Direkt kullanarak sistemi çözeceğim.
+
+569
+01:00:55,568 --> 01:00:58,068
+Homojen denklem sistemini çözeceğim.
+
+570
+01:00:58,847 --> 01:01:00,108
+Ne yapıyoruz arkadaşlar?
+
+571
+01:01:00,708 --> 01:01:04,228
+Bir defa ben bunu bir ile çarpıp 3'ü eklerim.
+
+572
+01:01:04,327 --> 01:01:05,387
+Burayı sıfır yaparım.
+
+573
+01:01:05,867 --> 01:01:09,228
+Sonra ikinci satırı da 1 bölü 8 ile çarparım.
+
+574
+01:01:09,367 --> 01:01:11,728
+1 bölü 8 ile çarptığımda burası 1 olur.
+
+575
+01:01:11,728 --> 01:01:14,847
+1 bölü 8 ile çarptığımda 3 bölü 4 oldu.
+
+576
+01:01:15,847 --> 01:01:16,987
+Bu da ne oldu?
+
+577
+01:01:17,288 --> 01:01:18,487
+1 bölü 4 oldu.
+
+578
+01:01:19,708 --> 01:01:20,588
+Şimdi ne yapacağım?
+
+579
+01:01:20,728 --> 01:01:22,387
+2 ile 1'i yer değiştireceğim.
+
+580
+01:01:22,827 --> 01:01:26,847
+2 ile 1'i yer değiştirdiğimde şunu elde ettim.
+
+581
+01:01:27,228 --> 01:01:31,088
+Sonra birinci satırı 12 ile çarpıp 2'ye ekliyorum.
+
+582
+01:01:31,088 --> 01:01:32,708
+12 ile çarptım.
+
+583
+01:01:32,708 --> 01:01:36,367
+12 ile çarptığımda burası ne oldu?
+
+584
+01:01:36,927 --> 01:01:37,447
+3 oldu.
+
+585
+01:01:37,568 --> 01:01:38,347
+9 oldu.
+
+586
+01:01:38,967 --> 01:01:40,467
+Toplayınca 4 oldu.
+
+587
+01:01:40,668 --> 01:01:42,887
+12 ile çarptığımda 3 oldu.
+
+588
+01:01:43,068 --> 01:01:44,367
+Artı 3 ekledim.
+
+589
+01:01:44,568 --> 01:01:45,188
+0 oldu.
+
+590
+01:01:45,648 --> 01:01:46,588
+Şimdi ne yapacağız?
+
+591
+01:01:46,728 --> 01:01:49,128
+İkinci satırı 1 bölü 4 ile çarpıyorum.
+
+592
+01:01:49,748 --> 01:01:51,168
+Burasını da 1 yaptım.
+
+593
+01:01:51,568 --> 01:01:52,548
+Şimdi ne yapıyorum?
+
+594
+01:01:53,387 --> 01:01:57,847
+İkinci satırı eksi 3 bölü 4 ile çarpıp 1'e ekliyorum.
+
+595
+01:01:57,847 --> 01:01:59,108
+Şunu elde ettim.
+
+596
+01:01:59,528 --> 01:02:07,367
+Şimdi burada burası x1'in, burası x2'nin, burası da x3'ün bulunduğu sütun.
+
+597
+01:02:08,548 --> 01:02:09,307
+Rank nedir?
+
+598
+01:02:09,528 --> 01:02:10,387
+Rank 2.
+
+599
+01:02:11,148 --> 01:02:11,967
+n 3.
+
+600
+01:02:12,268 --> 01:02:13,548
+n-r 1.
+
+601
+01:02:14,628 --> 01:02:18,188
+Bir tane keyfi değişkene bağlı sonsuz çözüm var.
+
+602
+01:02:18,367 --> 01:02:19,788
+Ve bu 1 bana neyi söylüyor?
+
+603
+01:02:20,007 --> 01:02:21,427
+Vektör sayısını söylüyor.
+
+604
+01:02:21,427 --> 01:02:27,148
+Şimdi aralarındaki bağıntıyı yazacak olursak x1 artı 1 bölü 4.
+
+605
+01:02:27,148 --> 01:02:29,327
+x3 eşittir 0'a.
+
+606
+01:02:29,807 --> 01:02:31,548
+x2 eşittir 0'a.
+
+607
+01:02:32,007 --> 01:02:34,387
+Çünkü şurası b'ler 0 ya.
+
+608
+01:02:36,288 --> 01:02:39,148
+Burada x2'nin 0 olduğunu biliyorum.
+
+609
+01:02:39,708 --> 01:02:41,708
+x3 için ne derim?
+
+610
+01:02:41,907 --> 01:02:47,568
+4 olursa, x3'e 4 dersem, x1'im ne olur?
+
+611
+01:02:47,847 --> 01:02:48,728
+Eksi 1 olur.
+
+612
+01:02:48,728 --> 01:02:53,887
+Yani şuradan ne dedik biz?
+
+613
+01:02:54,768 --> 01:03:01,867
+x3'e 4 için x1'i eksi 1 oldu.
+
+614
+01:03:02,507 --> 01:03:08,327
+O zaman lambda 1'e karşılık gelen x1 vektörüm benim nedir?
+
+615
+01:03:08,327 --> 01:03:13,467
+x1, x1, x1, x4 diye bulunur.
+
+616
+01:03:13,467 --> 01:03:13,867
+x2'i eksi 1'i eksi 1'i eksi 1'i eksi 1'i eksi 1'i eksi 1'i eksi 1'i eksi 1'i eksi 1'i eksi 1'i eksi 1'i eksi 1'i eksi 1'i eksi 1'i eksi 1'i eksi 1'i eksi 1'i eksi 1'i eksi 1'i eksi 1'i eksi 1'i eksi 1'i eksi 1'i eksi 1'i eksi 1'i eksi 1'i eksi 1'i eksi 1'i eksi 1'i eksi 1'i eksi 1'i eksi 1'i eksi 1'i eksi 1'i eksi 1'i eksi 1'i eksi 1'i eksi 1'i eksi 1'i eksi 1'i eksi 1'i eksi 1'i eksi 1'i eksi
+
+617
+01:03:18,260 --> 01:03:23,460
+Tamam. Var mı sorusu olan, anlamayan sorusu olan?
+
+618
+01:03:24,840 --> 01:03:26,280
+Yok hocam, teşekkürler.
+
+619
+01:03:27,660 --> 01:03:40,560
+Peki arkadaşlar, o zaman bugünlük bu kadar. Kylie Hamilton'ı haftaya anlatacağım teoremi. Bugünlük bu kadar o zaman. Haftaya görüşmek üzere.
+
+620
+01:03:41,140 --> 01:03:41,920
+Görüşürüz hocam.
+
+621
+01:03:42,340 --> 01:03:43,340
+İyi günler hocam.
+
+622
+01:03:43,560 --> 01:03:46,920
+İyi günler, hoşçakalın. Sağlıklı günler hepinize.

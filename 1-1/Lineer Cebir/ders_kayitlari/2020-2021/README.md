@@ -13,6 +13,7 @@
 | 6 | Güz | Bayram Ali Ersoy | [sube_6/](sube_6/) |
 | 6 | Bahar | Murat Alan | [sube_6_bahar/](sube_6_bahar/) |
 | 7 | Güz | Mehmet Emin Köroğlu | [sube_7/](sube_7/) |
+| 8 | Bahar | Hülya Burhanzade | [sube_8/](sube_8/) |
 | 10 | Bahar | Hülya Burhanzade | [sube_10/](sube_10/) |
 | 11 | Güz | Mehmet Emin Köroğlu | [sube_11/](sube_11/) |
 | 12 | Güz | Hülya Burhanzade | [sube_12/](sube_12/) |
