@@ -27,3 +27,4 @@
 | 37 | Güz | Bulunamadı | [sube_37/](sube_37/) |
 | 38 | Güz | İsmail Doğru | [sube_38/](sube_38/) |
 | 39 | Güz | Sibel Atmaca | [sube_39/](sube_39/) |
+| 40 | Güz | Ebru Osborne | [sube_40/](sube_40/) |
