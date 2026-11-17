@@ -1,0 +1,2815 @@
+1
+00:00:44,084 --> 00:00:44,444
+Good morning.
+
+2
+00:01:25,876 --> 00:01:45,276
+Last week, we were talking about some tests that allows us to determine the convergence of the ionis of the positive terms series.
+
+3
+00:01:45,276 --> 00:01:52,576
+The last of them was comparison test.
+
+4
+00:02:05,364 --> 00:02:08,364
+The comparison test says...
+
+5
+00:02:14,515 --> 00:02:16,515
+4 positive term series
+
+6
+00:02:19,195 --> 00:02:21,195
+an and bn
+
+7
+00:02:24,515 --> 00:02:25,515
+first one
+
+8
+00:02:28,756 --> 00:02:31,835
+if the limit of an over bn
+
+9
+00:02:32,435 --> 00:02:34,915
+is a real number which is different from zero
+
+10
+00:02:35,635 --> 00:02:38,235
+then an and bn
+
+11
+00:02:39,515 --> 00:02:42,316
+behaves similar or same
+
+12
+00:02:42,316 --> 00:02:44,756
+means if an
+
+13
+00:02:45,756 --> 00:02:48,275
+converse then bn also converse
+
+14
+00:02:48,955 --> 00:02:50,555
+and if an
+
+15
+00:02:51,276 --> 00:02:52,276
+diverse
+
+16
+00:02:52,716 --> 00:02:53,835
+bn also
+
+17
+00:02:54,315 --> 00:02:55,115
+diverse
+
+18
+00:02:56,395 --> 00:02:58,395
+and second case for this
+
+19
+00:02:58,955 --> 00:03:01,115
+limit comparison theorem is that
+
+20
+00:03:01,276 --> 00:03:03,435
+if this limit is equal to zero
+
+21
+00:03:11,187 --> 00:03:18,548
+And if BN is a convergent series, then AN is also convergent.
+
+22
+00:03:18,548 --> 00:03:26,147
+If this limit is equal to infinity, then if BN diverse, also AN diverse.
+
+23
+00:03:27,587 --> 00:03:31,067
+We need also some examples about limit comparison test.
+
+24
+00:03:31,067 --> 00:03:42,987
+Then we will solve these three examples of limit comparison test.
+
+25
+00:03:48,372 --> 00:03:51,732
+First, first one.
+
+26
+00:03:59,891 --> 00:04:01,891
+Since we have AM,
+
+27
+00:04:09,395 --> 00:04:14,235
+1 over square root n plus 1.
+
+28
+00:04:15,756 --> 00:04:18,495
+We use limit comparison test.
+
+29
+00:04:19,656 --> 00:04:23,295
+When we use or when we want to use limit comparison test,
+
+30
+00:04:24,295 --> 00:04:28,395
+we need to make this limit
+
+31
+00:04:28,395 --> 00:04:35,355
+a n over v n
+
+32
+00:04:35,355 --> 00:04:38,735
+b 1.
+
+33
+00:04:39,395 --> 00:04:42,395
+Because we know that
+
+34
+00:04:44,895 --> 00:04:51,495
+if the limit of a n over b n is equal to a real number different from 0,
+
+35
+00:04:52,596 --> 00:04:57,995
+then they behave same as each other.
+
+36
+00:04:57,995 --> 00:05:03,096
+So if we make the limit a n over b n as 1,
+
+37
+00:05:03,395 --> 00:05:07,096
+because it is easy to make this limit 1,
+
+38
+00:05:07,096 --> 00:05:09,096
+we generally make this limit.
+
+39
+00:05:09,096 --> 00:05:11,596
+We generally choose
+
+40
+00:05:11,596 --> 00:05:15,096
+the series b n
+
+41
+00:05:15,096 --> 00:05:19,195
+such that this limit will be 1.
+
+42
+00:05:19,195 --> 00:05:28,195
+So if b n is convergent and limit of a n over b n is 1,
+
+43
+00:05:28,195 --> 00:05:31,295
+then a n is also convergent.
+
+44
+00:05:31,295 --> 00:05:36,195
+In this case, if b n is divergent, then also a n is divergent.
+
+45
+00:05:36,195 --> 00:05:48,195
+So for this example, if we compare
+
+46
+00:05:55,091 --> 00:05:58,812
+An, so
+
+47
+00:06:03,411 --> 00:06:07,791
+BN, which is 1 over sukarut N,
+
+48
+00:06:14,132 --> 00:06:35,012
+Then, we have the limit of this function, which is limit and goes to the infinity, an over bn.
+
+49
+00:06:36,872 --> 00:06:40,932
+Actually, this is not an. an is this one.
+
+50
+00:06:45,555 --> 00:07:14,315
+So, limit n goes to the infinity, an is 1 over square root n plus 1 over b n is 1 over square root n. At this limit is, limit n goes to the infinity, square root n,
+
+51
+00:07:22,867 --> 00:07:27,608
+m² plus 1.
+
+52
+00:07:30,408 --> 00:07:32,468
+So, what is the result of this limit?
+
+53
+00:07:38,867 --> 00:07:40,247
+İkiz 1,
+
+54
+00:07:44,851 --> 00:07:46,951
+So, why do you compare some test?
+
+55
+00:08:02,355 --> 00:08:25,036
+An, Converse, Since, Sorry, Sorry, What can you say about the divergence or common use of this series? Is it divergent or convergent?
+
+56
+00:08:37,139 --> 00:09:07,139
+Bu, bu
+
+57
+00:09:07,139 --> 00:09:10,419
+So, by limit comparison test, this series diverse
+
+58
+00:09:14,004 --> 00:09:34,884
+Since 1 over square root n is a divergent p-series, which p is equal to 1 over 2.
+
+59
+00:09:34,884 --> 00:09:41,884
+Okay, this is actually...
+
+60
+00:10:02,451 --> 00:10:14,091
+1 over n to the power 1 over 2. So this is P series with P 1 over 2. Therefore it is divergent.
+
+61
+00:10:15,091 --> 00:10:24,572
+Bind limit comparison test since an over bn is equal to 1. Limit of an over bn is equal to 1.
+
+62
+00:10:24,572 --> 00:10:32,251
+and bn is a divergent series. So an is also divergent.
+
+63
+00:10:35,131 --> 00:10:35,772
+Okay.
+
+64
+00:10:57,716 --> 00:11:05,816
+ve, aslında, you know, we have already, we have already solved this example.
+
+65
+00:11:08,735 --> 00:11:14,115
+This is actually a sum of two geometric series.
+
+66
+00:11:14,936 --> 00:11:27,096
+We have already found its sum, but here, we will show that this series is convergent by using limit comparison test.
+
+67
+00:11:27,096 --> 00:11:27,855
+Okay.
+
+68
+00:11:30,816 --> 00:11:32,096
+So, for the...
+
+69
+00:11:33,176 --> 00:11:34,096
+For...
+
+70
+00:11:37,364 --> 00:11:38,903
+Example B
+
+71
+00:11:44,275 --> 00:11:50,955
+We have the series, 2 to the power m plus 1 over 3 to the power m.
+
+72
+00:12:00,755 --> 00:12:02,795
+Kımpıya bir serisi bu.
+
+73
+00:12:13,875 --> 00:12:15,015
+Geometrik seri,
+
+74
+00:12:22,644 --> 00:12:26,423
+2 turds to the power n.
+
+75
+00:12:27,423 --> 00:12:29,504
+This is a geometric seri.
+
+76
+00:12:37,235 --> 00:12:38,735
+Geometric series.
+
+77
+00:12:50,707 --> 00:12:59,987
+Width R is 2 thirds, therefore, it is, is it convergent or divergent?
+
+78
+00:13:09,299 --> 00:13:11,299
+Bu, ''Conugincisi''
+
+79
+00:13:14,419 --> 00:13:17,019
+R is smaller than 1.
+
+80
+00:13:18,240 --> 00:13:25,240
+Now, let us compare these two series by using limit comparison test.
+
+81
+00:13:26,579 --> 00:13:30,919
+Limit n goes to the infinity.
+
+82
+00:13:30,919 --> 00:13:41,519
+An over Bn is equal to limit n goes to the infinity.
+
+83
+00:13:41,519 --> 00:13:43,219
+An.
+
+84
+00:14:02,419 --> 00:14:03,219
+1.pn
+
+85
+00:14:25,556 --> 00:14:34,596
+We have from here, limit and goes to infinity.
+
+86
+00:14:40,563 --> 00:14:51,723
+2 to the power n plus 1 over 2 to the power n. This is also equal to limit and goes to infinity.
+
+87
+00:15:01,683 --> 00:15:10,323
+1 plus 1 plus 1 over 2 to the power n.
+
+88
+00:15:12,423 --> 00:15:27,483
+So, this is also equal to limit and goes to the infinity, 1 plus limit and goes to the infinity, 1 over 2 to the power n.
+
+89
+00:15:27,483 --> 00:15:29,203
+This is 1.
+
+90
+00:15:30,863 --> 00:15:32,103
+What about this?
+
+91
+00:15:34,943 --> 00:15:41,223
+Do you know that this is 0 because when...
+
+92
+00:15:41,223 --> 00:15:50,683
+...
+
+93
+00:15:46,100 --> 00:15:46,940
+Limit
+
+94
+00:15:56,467 --> 00:15:59,247
+Sorry, limit x goes to the infinity.
+
+95
+00:16:02,932 --> 00:16:04,192
+R to the x
+
+96
+00:16:04,192 --> 00:16:06,971
+is equal to 0,
+
+97
+00:16:07,111 --> 00:16:07,372
+then
+
+98
+00:16:14,676 --> 00:16:17,176
+So, this is zero.
+
+99
+00:16:22,707 --> 00:16:36,067
+Actually, we gave this as the common used limits in the sequences part. So, this is 0.
+
+100
+00:16:36,067 --> 00:16:42,307
+We have, consequently, the limit of a n over v n is 1.
+
+101
+00:16:42,307 --> 00:16:46,707
+Why the limit comparison test
+
+102
+00:16:46,707 --> 00:16:50,247
+Since
+
+103
+00:16:57,427 --> 00:16:58,307
+Dn
+
+104
+00:17:03,124 --> 00:17:05,124
+is convergent,
+
+105
+00:17:08,124 --> 00:17:09,124
+then
+
+106
+00:17:10,124 --> 00:17:12,124
+an is also
+
+107
+00:17:13,124 --> 00:17:14,124
+convergent.
+
+108
+00:17:31,028 --> 00:17:31,468
+Tamam.
+
+109
+00:17:37,683 --> 00:17:38,703
+Does it make sense?
+
+110
+00:17:48,372 --> 00:17:53,932
+Last one, which is L n over n square.
+
+111
+00:17:56,812 --> 00:18:02,372
+Last one is some different and also the hardest one.
+
+112
+00:18:20,403 --> 00:18:26,523
+El-En-En, [öğrenci], El-Zükar.
+
+113
+00:18:31,700 --> 00:18:45,100
+Örneğin, bu seri ile 1 n'ı, çünkü,
+
+114
+00:18:45,100 --> 00:18:48,500
+6
+
+115
+00:18:54,451 --> 00:18:57,612
+L n n is smaller than n.
+
+116
+00:18:58,652 --> 00:19:00,991
+First, let us compare this series with
+
+117
+00:19:12,019 --> 00:19:22,019
+Bu serisi, Farnoğuz N. Do you know the name of this serisi? Is this special serisi?
+
+118
+00:19:26,740 --> 00:19:30,740
+This is, is it a special seri?
+
+119
+00:19:36,564 --> 00:19:45,064
+This is harmonic, thank you, [öğrenci], [öğrenci], [öğrenci], and it is divergent.
+
+120
+00:19:46,403 --> 00:19:56,564
+Now first let us compare this one with the harmonic series, the divergent harmonic series, limit.
+
+121
+00:20:03,539 --> 00:20:15,799
+n goes to the infinity, n over n zükar, times n.
+
+122
+00:20:21,236 --> 00:20:21,776
+Maybe.
+
+123
+00:20:51,443 --> 00:20:53,663
+over pl is 1 over l.
+
+124
+00:20:55,523 --> 00:20:56,183
+Gives
+
+125
+00:20:56,183 --> 00:21:04,503
+Limit
+
+126
+00:21:07,763 --> 00:21:12,083
+n n n over n squared times n.
+
+127
+00:21:14,663 --> 00:21:15,983
+So, this is
+
+128
+00:21:24,660 --> 00:21:31,700
+Limit n goes to the infinity, n over n.
+
+129
+00:21:33,000 --> 00:21:36,120
+So, in order to evaluate this limit,
+
+130
+00:21:38,320 --> 00:21:48,360
+first evaluate the limit as x goes to the infinity of the real value function,
+
+131
+00:21:48,360 --> 00:21:52,100
+f of x
+
+132
+00:21:52,100 --> 00:21:56,320
+is equal to ln x
+
+133
+00:21:56,320 --> 00:21:58,660
+over x.
+
+134
+00:21:59,320 --> 00:22:02,140
+So, these two limits are equal
+
+135
+00:22:02,140 --> 00:22:03,620
+and
+
+136
+00:22:03,620 --> 00:22:05,940
+making this change
+
+137
+00:22:05,940 --> 00:22:07,960
+allows us to use
+
+138
+00:22:07,960 --> 00:22:08,780
+lob test rule.
+
+139
+00:22:09,600 --> 00:22:11,820
+So, we obtain
+
+140
+00:22:11,820 --> 00:22:14,420
+limit
+
+141
+00:22:14,420 --> 00:22:17,539
+x goes to the infinity
+
+142
+00:22:17,540 --> 00:22:21,800
+f of x
+
+143
+00:22:21,800 --> 00:22:24,000
+is equal to ln x
+
+144
+00:22:24,000 --> 00:22:26,200
+or x
+
+145
+00:22:26,200 --> 00:22:29,019
+since we have
+
+146
+00:22:29,019 --> 00:22:31,000
+infinity or infinity
+
+147
+00:22:31,000 --> 00:22:32,380
+in the terminal form
+
+148
+00:22:32,380 --> 00:22:34,700
+we can use
+
+149
+00:22:34,700 --> 00:22:36,940
+lob test rule
+
+150
+00:22:36,940 --> 00:22:41,200
+which gives
+
+151
+00:22:41,200 --> 00:22:47,519
+f of x
+
+152
+00:22:46,483 --> 00:22:54,603
+Derivative of x is 1 over x, and derivative of x is equal to 1.
+
+153
+00:22:54,603 --> 00:22:57,603
+Therefore, this limit is...
+
+154
+00:23:02,259 --> 00:23:05,160
+1 over x, which is equal to 0.
+
+155
+00:23:09,556 --> 00:23:13,996
+Here, here, he have a problem.
+
+156
+00:23:23,220 --> 00:23:36,380
+Therefore, we have limit n goes to the infinity ln n over n is equal to zero.
+
+157
+00:23:42,003 --> 00:23:51,703
+So, we are looking for limit angles to infinity a n over b n, which is,
+
+158
+00:23:57,428 --> 00:24:06,868
+So, limit n goes to the infinity, an over b, n is equal to zero.
+
+159
+00:24:09,348 --> 00:24:10,948
+But we have a problem here.
+
+160
+00:24:15,155 --> 00:24:15,875
+Siz,
+
+161
+00:24:19,667 --> 00:24:22,427
+Denimit cost 0.
+
+162
+00:24:32,180 --> 00:24:37,180
+since the limit is 0, but...
+
+163
+00:24:41,395 --> 00:25:03,235
+The series that we compare with a n, 1 over n, which is the harmonic series, diverse, we cannot use limit comparison test, or the limit comparison test,
+
+164
+00:25:13,332 --> 00:25:20,392
+vekiketler, çift katlı
+
+165
+00:25:29,940 --> 00:25:58,220
+Here, if we, if we, where, here, if we have, if we had, limit a n over b n is a real number, which is different from 0, then we can compute that since 1 over n is divergent, we can say that a n is also divergent, but
+
+166
+00:25:58,220 --> 00:26:15,700
+we found this limit is equal to 0, so we cannot use limit comparison test, or the limit comparison test does not say any information about this convergence or divergence of this series.
+
+167
+00:26:17,580 --> 00:26:19,580
+In this case, also,
+
+168
+00:26:24,180 --> 00:26:31,100
+[öğrenci], we have three cases in limit comparison test.
+
+169
+00:26:35,539 --> 00:26:40,019
+Bakın, ilk birçok.
+
+170
+00:26:40,220 --> 00:26:43,420
+Eğer bu limitin 0'ı farklı birçok,
+
+171
+00:26:43,619 --> 00:26:47,579
+bu birçok.
+
+172
+00:26:47,579 --> 00:26:54,700
+Ve bu limitin 0'ı, B'n'ı veren,
+
+173
+00:26:54,899 --> 00:26:58,059
+bu, A'n'ı veren.
+
+174
+00:26:58,259 --> 00:26:59,619
+Ok.
+
+175
+00:26:59,819 --> 00:27:02,019
+Bu, B'n'ı veren,
+
+176
+00:27:02,220 --> 00:27:04,819
+B'n'ı veren,
+
+177
+00:27:05,019 --> 00:27:24,460
+bu, B'n'ı veren,
+
+178
+00:27:24,659 --> 00:27:27,500
+B'n'ı veren,
+
+179
+00:27:27,700 --> 00:27:38,899
+bu, A'n'ı veren,
+
+180
+00:27:39,099 --> 00:27:41,899
+B'n'ı veren,
+
+181
+00:27:41,899 --> 00:27:47,180
+bu, B'n'ı veren,
+
+182
+00:27:47,379 --> 00:28:11,019
+bu, A'n'ı veren,
+
+183
+00:28:11,019 --> 00:28:30,019
+bu, A'nı veren,
+
+184
+00:28:23,988 --> 00:28:27,148
+In our case, we have limit
+
+185
+00:28:41,299 --> 00:28:42,579
+Limit is 0.
+
+186
+00:28:46,771 --> 00:28:50,771
+ve BN-diverse.
+
+187
+00:28:53,771 --> 00:29:00,771
+Bu durumda, bu durumda bir şey yok.
+
+188
+00:29:00,771 --> 00:29:03,771
+Tamam, sadece 3 durumda.
+
+189
+00:29:07,476 --> 00:29:14,476
+Bu bir durumda bu bir durumda
+
+190
+00:29:14,476 --> 00:29:21,476
+Bu, bu durumda ne yapacağız
+
+191
+00:29:21,476 --> 00:29:55,456
+Bu, bu sayesinde
+
+192
+00:29:30,036 --> 00:29:38,036
+Now, instead of this harmonic series, compare this.
+
+193
+00:29:45,011 --> 00:29:46,331
+Kampere week.
+
+194
+00:29:59,667 --> 00:30:01,007
+1 avur, az yükser.
+
+195
+00:30:11,892 --> 00:30:15,251
+Bu, convergent,
+
+196
+00:30:18,251 --> 00:30:19,292
+çünkü
+
+197
+00:30:20,812 --> 00:30:24,132
+t is equal to 2 greater than 1.
+
+198
+00:30:24,652 --> 00:30:25,451
+Now,
+
+199
+00:30:26,132 --> 00:30:28,292
+we use limit comparison test
+
+200
+00:30:28,292 --> 00:30:31,292
+with bn1 over n2.
+
+201
+00:30:31,292 --> 00:30:32,372
+In this case,
+
+202
+00:30:35,692 --> 00:30:38,572
+limit n goes to the infinity
+
+203
+00:30:38,572 --> 00:30:41,092
+a n over
+
+204
+00:30:45,076 --> 00:30:45,875
+Bn
+
+205
+00:30:45,875 --> 00:30:50,276
+is equal to
+
+206
+00:30:50,276 --> 00:30:52,115
+An is
+
+207
+00:30:52,115 --> 00:30:55,135
+Ln over n-sükâr
+
+208
+00:31:06,003 --> 00:31:12,644
+n-suker, which gives, what is result of this limit?
+
+209
+00:31:23,124 --> 00:31:23,884
+Infinity.
+
+210
+00:31:25,943 --> 00:31:30,344
+So, so, since,
+
+211
+00:31:34,036 --> 00:31:38,536
+bu limit is infinity.
+
+212
+00:31:42,451 --> 00:31:43,172
+But
+
+213
+00:31:47,635 --> 00:31:48,816
+Diz seriiz
+
+214
+00:31:53,076 --> 00:31:53,836
+Konular,
+
+215
+00:32:05,107 --> 00:32:10,207
+Can you say anything about the convergence or divergence of a n?
+
+216
+00:32:11,207 --> 00:32:15,627
+Is it convergent or divergent by using the limit comparison test?
+
+217
+00:32:16,687 --> 00:32:18,107
+Can you say anything?
+
+218
+00:32:19,967 --> 00:32:29,387
+Again, since the limit is infinity, but b n converts, the test still does not say anything.
+
+219
+00:32:33,107 --> 00:32:33,907
+Kutup test.
+
+220
+00:32:37,779 --> 00:32:38,339
+still
+
+221
+00:32:44,884 --> 00:32:48,844
+does not provide any information.
+
+222
+00:33:00,852 --> 00:33:13,492
+So, finally, finally, let us choose, oops, we have no space to write it, maybe.
+
+223
+00:33:16,612 --> 00:33:19,492
+Okay, I will continue from here.
+
+224
+00:33:22,372 --> 00:33:27,892
+So now we try a series between these two series we have already tried,
+
+225
+00:33:27,892 --> 00:33:30,532
+choosing.
+
+226
+00:33:35,284 --> 00:33:36,684
+D'n s
+
+227
+00:33:43,731 --> 00:33:52,851
+Seri'is 1 over M to the 3 over 2.
+
+228
+00:34:02,516 --> 00:34:09,276
+Now, we will compare this with n over n2.
+
+229
+00:34:09,276 --> 00:34:11,836
+Limit.
+
+230
+00:34:20,659 --> 00:34:28,420
+Limit n, goes to the infinity, an over, bn is equal to,
+
+231
+00:34:36,724 --> 00:34:49,963
+Limit, and most of the infinity, and an n, over n square times, n to the power.
+
+232
+00:34:54,099 --> 00:34:59,049
+3, 2, 3, 3, 4, 5, 5, 6, 7, 8, 9, 10, 10, 11, 12, 13, 14, 14, 15, 16, 17, 18, 19, 20, 21, 21, 22, 22, 22, 22, 22, 23, 23, 24, 23, 24, 24, 25, 25, 25, 25, 25, 25, 26, 25, 26, 26, 26, 27, 27, 28, 28, 29, 30, 29, 30, 29, 30
+
+233
+00:35:09,427 --> 00:35:10,427
+aynı net
+
+234
+00:35:14,420 --> 00:35:14,920
+Peki.
+
+235
+00:35:36,340 --> 00:35:39,140
+İleti Page, wrong place.
+
+236
+00:35:48,692 --> 00:35:49,092
+Ok.
+
+237
+00:35:57,780 --> 00:35:58,780
+Limit
+
+238
+00:36:01,180 --> 00:36:03,060
+ve bu kadar infinity
+
+239
+00:36:03,260 --> 00:36:04,700
+bu kadar
+
+240
+00:36:19,092 --> 00:36:49,092
+ve n'a 3'e 2'e
+
+241
+00:36:49,092 --> 00:37:19,072
+bu
+
+242
+00:36:54,195 --> 00:37:05,195
+x goes to the infinity f of x is equal to ln x over square root x.
+
+243
+00:37:06,596 --> 00:37:17,375
+So the limit x goes to the infinity we have ln x over square root x.
+
+244
+00:37:17,375 --> 00:37:22,315
+This is infinity over infinity in determinate form.
+
+245
+00:37:22,315 --> 00:37:37,076
+So you can use the test rule taking the derivatives of both numerator and denominator of this functional function.
+
+246
+00:37:37,076 --> 00:37:47,635
+We have mid x goes to the infinity 1 over x 1 over.
+
+247
+00:37:53,172 --> 00:37:55,172
+1 over 2 times
+
+248
+00:37:57,871 --> 00:37:59,371
+Sükör root x
+
+249
+00:38:04,532 --> 00:38:11,532
+Ok, so, we have...
+
+250
+00:38:16,980 --> 00:38:18,800
+[öğrenci], iş falan.
+
+251
+00:38:25,652 --> 00:38:29,652
+Anan an times
+
+252
+00:38:58,132 --> 00:39:01,552
+İçin bir şey mi? İçin bir şey mi?
+
+253
+00:39:12,500 --> 00:39:15,579
+Biz, is this wrong?
+
+254
+00:39:27,380 --> 00:39:54,619
+We have this one. Okay. So, this means that, n over n squared times n to the minus 2. So, it gives this one, right?
+
+255
+00:40:03,539 --> 00:40:04,139
+[öğrenci]?
+
+256
+00:40:15,251 --> 00:40:16,311
+Zaten bir tuturun.
+
+257
+00:40:22,963 --> 00:40:28,264
+Then, this gives limit x cos to the infinity.
+
+258
+00:40:33,268 --> 00:40:41,887
+2 to the 2 times square root x over x.
+
+259
+00:40:43,407 --> 00:40:56,887
+So this gives limit x goes to the infinity 2 over square root x, which is equal to 0.
+
+260
+00:40:56,887 --> 00:41:14,188
+Now we can use limit comparison test since limit n goes to the infinity an over bn.
+
+261
+00:41:28,532 --> 00:41:30,532
+0
+
+262
+00:41:30,532 --> 00:41:34,532
+and
+
+263
+00:41:34,532 --> 00:41:36,532
+series
+
+264
+00:41:36,532 --> 00:41:38,532
+which is
+
+265
+00:41:38,532 --> 00:41:40,532
+1 over and
+
+266
+00:41:40,532 --> 00:41:42,532
+the
+
+267
+00:41:45,268 --> 00:41:51,268
+3 over 2, is diversion, not conversion.
+
+268
+00:41:58,516 --> 00:42:26,036
+Is this series divergent or convergent? It's convergent because it is P series with P is equal to 3 over 2, which is greater than 1. Since limit is equal to 0 and Pn is convergent, by the limit comparison test,
+
+269
+00:42:28,516 --> 00:42:30,516
+am is also
+
+270
+00:42:39,027 --> 00:42:39,867
+Komüşşans.
+
+271
+00:42:51,092 --> 00:43:08,892
+Ok, so choosing the right series to use limit comparison test is very important
+
+272
+00:43:08,892 --> 00:43:15,132
+because we saw here that we chose three series,
+
+273
+00:43:15,132 --> 00:43:27,132
+but two of them did not provide any information about or we cannot use limit comparison test with these two series.
+
+274
+00:43:27,132 --> 00:43:35,132
+[öğrenci], you can use the internal test, but I'm not sure it is.
+
+275
+00:43:48,148 --> 00:43:49,387
+Solve this integral.
+
+276
+00:43:50,148 --> 00:43:58,807
+If you can solve this integral easily, then you can use integral test.
+
+277
+00:44:00,008 --> 00:44:00,887
+Okay?
+
+278
+00:44:04,916 --> 00:44:15,596
+Ama you are right. We use the integral test generally, a function that includes ln, ln function.
+
+279
+00:44:15,596 --> 00:44:33,596
+But here, if we have, this is not x square, x, maybe it is very easy, because we say ln x is u, and 1 over x dx is equal to du,
+
+280
+00:44:33,596 --> 00:44:42,556
+and it is very easy to solve, but in this case, I think it is not easy to solve this integral.
+
+281
+00:44:42,556 --> 00:44:44,336
+Okay.
+
+282
+00:44:48,307 --> 00:44:58,307
+İntegral testi, bu last choice, bu last choice, bu last choice, bu last choice. Bu last choice. Bu last choice.
+
+283
+00:44:58,307 --> 00:45:07,307
+If you can easily see that the integral is solved, then you can use the integral test.
+
+284
+00:45:07,307 --> 00:45:17,307
+Now, now, all, maybe these two,
+
+285
+00:45:26,963 --> 00:45:43,523
+Maybe this tool can be homework for you, but the first one, we will talk about the order of the tests later.
+
+286
+00:45:43,523 --> 00:46:09,344
+Okay, but last lecture, I said that first, if it is possible or if it is easy, first check if the limit of the n-term of a series a n is 0 or not.
+
+287
+00:46:09,344 --> 00:46:23,663
+If the n-term, the limit of n-term is not equal to 0, then by the divergence of test, you can conclude that this series is divergent.
+
+288
+00:46:24,483 --> 00:46:31,123
+But if the limit of the n-term of a series is 0, then you cannot conclude anything.
+
+289
+00:46:31,123 --> 00:46:46,344
+Then check or look to the series if it is geometric series or P series.
+
+290
+00:46:46,344 --> 00:46:59,403
+Because we know that geometric series are convergent for R is smaller than 1 and P series are convergent for P is greater than 1.
+
+291
+00:46:59,403 --> 00:47:09,284
+Then the third one may be the limit comparison test or comparison test.
+
+292
+00:47:09,284 --> 00:47:24,543
+And fourth one, we will see the ratio and root test later.
+
+293
+00:47:25,543 --> 00:47:29,844
+And the last one will be the integral test.
+
+294
+00:47:29,844 --> 00:47:44,844
+And the third one will be the limit of the test.
+
+295
+00:47:34,195 --> 00:47:35,195
+Tamam.
+
+296
+00:47:37,655 --> 00:47:59,195
+So, if it is possible, first check if the n-term of, limit of the n-term of series is zero or not. If it is not zero, then it is divergent. So, no need to use any test to determine the convergence or divergence of this test.
+
+297
+00:48:05,043 --> 00:48:06,583
+Dersin, neşte soru yetinir.
+
+298
+00:48:12,980 --> 00:48:18,980
+Şimdi, konvergence ve direnç olabiliyoruz.
+
+299
+00:48:23,251 --> 00:48:23,731
+Son.
+
+300
+00:48:27,764 --> 00:48:54,204
+So, disregarding all terms, but the highest powers of in the numerators and the denominator, you can compare this series with, because we in limit comparison test, in limit comparison test, we want,
+
+301
+00:48:54,204 --> 00:49:01,804
+or we should or we may, we may choose.
+
+302
+00:49:05,300 --> 00:49:08,100
+BN, saçlık,
+
+303
+00:49:12,563 --> 00:49:19,844
+Limit of a n over b n is equal to one.
+
+304
+00:49:21,523 --> 00:49:33,603
+So for this we choose or we have to choose b n such that the powers of a n and b n are the same.
+
+305
+00:49:33,603 --> 00:49:48,163
+Okay, so we can compare this series with choose the series.
+
+306
+00:50:06,867 --> 00:50:09,327
+n-square, so,
+
+307
+00:50:12,288 --> 00:50:14,007
+the degree of
+
+308
+00:50:14,007 --> 00:50:18,007
+denominator is 1 over 2,
+
+309
+00:50:20,748 --> 00:50:23,327
+the degree of denominator is 2.
+
+310
+00:50:25,668 --> 00:50:26,467
+So,
+
+311
+00:50:27,107 --> 00:50:31,367
+we have to choose,
+
+312
+00:50:33,788 --> 00:50:34,347
+n-square,
+
+313
+00:50:44,052 --> 00:50:45,172
+Same as this one.
+
+314
+00:50:57,492 --> 00:50:59,292
+H'e de equal to
+
+315
+00:51:02,867 --> 00:51:04,867
+1 saat,
+
+316
+00:51:06,067 --> 00:51:06,867
+and to the
+
+317
+00:51:10,708 --> 00:51:11,748
+3 over 2.
+
+318
+00:51:13,248 --> 00:51:13,648
+Son.
+
+319
+00:51:23,891 --> 00:51:24,491
+Yaps!
+
+320
+00:51:48,179 --> 00:51:55,179
+ve
+
+321
+00:52:00,436 --> 00:52:01,635
+O'vm
+
+322
+00:52:01,635 --> 00:52:04,956
+isli, kultur
+
+323
+00:52:13,492 --> 00:52:15,772
+Limit n goes to the infinity.
+
+324
+00:52:16,472 --> 00:52:24,432
+An is square root n n square plus 1.
+
+325
+00:52:25,231 --> 00:52:28,132
+Bn is square root n over n square.
+
+326
+00:52:28,132 --> 00:52:32,332
+Or maybe we can write this also.
+
+327
+00:52:34,152 --> 00:52:37,832
+n square over square root n.
+
+328
+00:52:37,832 --> 00:52:43,332
+Therefore, we have limit n goes to the infinity.
+
+329
+00:52:46,211 --> 00:52:52,192
+n square over n square plus 1, which gives 1.
+
+330
+00:52:52,192 --> 00:53:06,512
+Now, since Bn is a P series with P3 over 2 is greater than 1, it is convergent.
+
+331
+00:53:06,512 --> 00:53:16,512
+Since Bn is convergent and the limit of a n over Bn is 1, then also...
+
+332
+00:53:16,512 --> 00:53:31,512
+...
+
+333
+00:53:20,500 --> 00:53:23,980
+Bu serisi, convergent.
+
+334
+00:53:36,179 --> 00:53:39,779
+Ok?
+
+335
+00:53:44,659 --> 00:53:51,359
+I leave this example as a homework for you.
+
+336
+00:54:15,731 --> 00:54:19,731
+ve sonra konuşacağız.
+
+337
+00:54:19,731 --> 00:54:35,731
+15-70 min.
+
+338
+00:54:35,731 --> 00:54:39,731
+Ok, we will continue at 10-15.
+
+339
+00:54:48,628 --> 00:54:54,168
+Mühendis, bu ne? Mühendis, bu ne? Pag. 15.
+
+340
+00:54:59,168 --> 00:55:01,168
+Bu ne?
+
+341
+00:55:11,923 --> 00:55:15,923
+Tamam, sonra bir break konuşacağız.
+
+342
+00:55:15,923 --> 00:55:21,923
+Tamam, 15 minit break.
+
+343
+00:55:24,923 --> 00:55:27,923
+Continuar.
+
+344
+00:55:32,724 --> 00:55:33,304
+15.
+
+345
+01:13:45,140 --> 01:13:45,980
+Hello again.
+
+346
+01:13:48,180 --> 01:13:59,940
+We will continue with the absolute and conditional convergence, but before starting with this topic, [öğrenci] asked that we have a homework or we have a problem
+
+347
+01:14:02,060 --> 01:14:06,180
+that we gave last week.
+
+348
+01:14:07,820 --> 01:14:08,500
+Which one?
+
+349
+01:14:09,780 --> 01:14:12,780
+I don't remember which one, [öğrenci].
+
+350
+01:14:12,780 --> 01:14:15,900
+Can you please show which one?
+
+351
+01:14:19,020 --> 01:14:22,619
+Page 15, which is 15.
+
+352
+01:14:29,332 --> 01:14:29,692
+Son.
+
+353
+01:14:38,804 --> 01:14:48,264
+Bu, bu
+
+354
+01:14:52,243 --> 01:14:55,943
+Ölen en olur, en süker.
+
+355
+01:15:09,108 --> 01:15:11,108
+Bu bir şey gibi bir şey var.
+
+356
+01:15:11,108 --> 01:15:39,108
+Bu bir şey var.
+
+357
+01:15:37,076 --> 01:15:39,636
+So, so.
+
+358
+01:15:44,724 --> 01:15:45,224
+Çin.
+
+359
+01:15:50,739 --> 01:15:52,739
+Lnn
+
+360
+01:15:54,739 --> 01:15:56,739
+Grodur daha kolay.
+
+361
+01:16:05,203 --> 01:16:35,183
+ve
+
+362
+01:16:09,555 --> 01:16:12,915
+m to the power t
+
+363
+01:16:12,915 --> 01:16:16,435
+for any positive
+
+364
+01:16:24,884 --> 01:16:29,884
+Constant t, sorry, Constant.
+
+365
+01:16:39,155 --> 01:16:43,555
+Bu serisi ile bir conversion serisi ile bir konvergantı serisi.
+
+366
+01:17:05,203 --> 01:17:06,923
+So, ek konverjant.
+
+367
+01:17:11,188 --> 01:17:12,167
+P-Series
+
+368
+01:17:16,756 --> 01:17:18,396
+T is
+
+369
+01:17:24,627 --> 01:17:26,827
+Biger dan 0
+
+370
+01:17:31,988 --> 01:17:32,748
+Savaş tık.
+
+371
+01:17:45,908 --> 01:18:05,828
+3 over 2 minus t is greater than 1 implies that t is between 0 and 1 over 2.
+
+372
+01:18:05,828 --> 01:18:08,988
+Therefore, therefore,
+
+373
+01:18:12,467 --> 01:18:13,307
+An
+
+374
+01:18:13,307 --> 01:18:17,268
+is
+
+375
+01:18:17,268 --> 01:18:18,287
+an an
+
+376
+01:18:18,287 --> 01:18:22,347
+an
+
+377
+01:18:22,996 --> 01:18:45,615
+n to the power 3 over 2, which is smaller than n to the 1 over 4, which is between 0 and 1 over 2, or n to the 3 over 2.
+
+378
+01:18:45,615 --> 01:18:51,296
+and this is equal to 1 over
+
+379
+01:19:02,163 --> 01:19:04,804
+5 over 4.
+
+380
+01:19:05,804 --> 01:19:09,083
+Then taking BN as 1 over
+
+381
+01:19:09,083 --> 01:19:11,923
+Antelope
+
+382
+01:19:11,923 --> 01:19:13,724
+5 over
+
+383
+01:19:13,724 --> 01:19:15,783
+4
+
+384
+01:19:30,323 --> 01:19:32,823
+Kıri, Comparison Test.
+
+385
+01:19:40,724 --> 01:19:54,184
+An is smaller than Bn, and Bn is a P series with P is 5 over 4, so this is convergent.
+
+386
+01:19:55,784 --> 01:20:10,503
+Since the big one is convergent, also the small one is convergent, so by the direct comparison test, An is convergent.
+
+387
+01:20:16,051 --> 01:20:26,051
+Bu bir şey değil, bu bir şey değil, bu bir şey değil.
+
+388
+01:20:26,051 --> 01:20:30,051
+İstediğiniz, bu bir şey değil, bu bir şey değil.
+
+389
+01:20:30,051 --> 01:20:36,051
+Ama yine, bu bir şey değil, bu bir şey değil.
+
+390
+01:20:36,051 --> 01:20:44,051
+Bir şey değil, bu bir şey değil.
+
+391
+01:20:54,036 --> 01:20:55,036
+Yüz
+
+392
+01:20:58,260 --> 01:21:10,260
+series, which is 1 over n to the 5 over 4 for limit comparison test.
+
+393
+01:21:15,091 --> 01:21:45,091
+Bu, bu
+
+394
+01:21:45,091 --> 01:22:13,692
+Okay, you can choose BN 1 over N to 5 over 4 and using direct comparison test you can compute that AN is also convergent. You can also use the limit comparison test and you can again compute that this series is convergent.
+
+395
+01:22:15,091 --> 01:22:29,091
+Okay, maybe you want to write the solution of this one because these nodes are
+
+396
+01:22:34,612 --> 01:22:37,252
+Belongs to the last week.
+
+397
+01:22:37,851 --> 01:22:43,752
+So, I will not upload these notes again to your lesson world.
+
+398
+01:23:04,979 --> 01:23:06,219
+Tamam, tamam mı?
+
+399
+01:23:21,268 --> 01:23:51,268
+Şimdi, bu konvergenden ve konvergenden konvergenden konvergenden konvergenden konvergenden konvergenden konvergenden konvergenden konvergenden konvergenden konvergenden konvergenden konvergenden konvergenden konvergenden konvergenden konvergenden konvergenden konvergenden konvergenden konvergenden konvergenden konvergenden konvergenden konvergenden konvergenden konvergenden konvergenden konvergenden konvergenden konvergenden konvergenden konvergenden konvergenden konvergenden konvergenden konvergenden konvergenden konvergenden konvergenden konvergenden konvergenden konvergenden konvergenden konvergenden konvergenden konvergenden konvergenden konvergenden konvergenden konvergenden konvergenden konvergenden konverg
+
+400
+01:23:51,268 --> 01:25:21,268
+konvergenden konvergenden konvergenden konvergenden konvergenden konvergenden konvergenden konvergenden konvergenden konvergenden konvergenden konvergenden konvergenden konvergenden konvergenden konvergenden konvergenden konvergenden konvergenden konvergenden konvergenden konvergenden konvergenden konvergenden konvergenden konvergenden konvergenden konvergenden konvergenden konvergenden konvergenden konvergenden konvergenden konvergenden konvergenden konvergenden konvergenden konvergenden konvergenden konvergenden konvergenden konvergenden konvergenden konvergenden konvergenden konvergenden konvergenden konvergenden konvergenden konvergenden konvergenden konvergenden konvergenden konvergenden konvergenden kon
+
+401
+01:25:21,268 --> 01:25:26,728
+whose terms alternate in sign
+
+402
+01:25:34,036 --> 01:25:37,655
+For example
+
+403
+01:25:42,644 --> 01:25:55,804
+An alternating series is a series whose terms are alternately positive or negative.
+
+404
+01:25:55,804 --> 01:25:58,604
+Here we have two examples.
+
+405
+01:26:00,484 --> 01:26:02,963
+This starts with positive term.
+
+406
+01:26:03,744 --> 01:26:06,463
+The second starts with the negative term.
+
+407
+01:26:06,463 --> 01:26:14,064
+So this is equal to the n 1 to the infinity minus 1 to the power n minus 1.
+
+408
+01:26:15,564 --> 01:26:18,623
+And this is minus 1 to the power n.
+
+409
+01:26:18,623 --> 01:26:30,324
+So in alternating series, we have two forms of the n term.
+
+410
+01:26:30,324 --> 01:26:41,144
+One of them is an is equal to minus 1 to the power n minus 1 times bn.
+
+411
+01:26:41,144 --> 01:26:48,104
+Here bn are all positive.
+
+412
+01:26:51,144 --> 01:26:56,724
+And the other form of the authentic series is minus 1 to the n.
+
+413
+01:26:56,724 --> 01:26:58,984
+Ok.
+
+414
+01:27:10,579 --> 01:27:34,979
+So, for alternating series, for the convergence of alternating series, we have a theorem, which is called alternating series theorem, A, S, T, series.
+
+415
+01:27:34,979 --> 01:28:04,960
+If you have an alternating series of the form, this or this, it's not important, then this alternating series converse or is convergent if Bn plus 1 is smaller than Bn, means that Bn is decreasing.
+
+416
+01:28:04,979 --> 01:28:12,640
+Also, also, also, Bn is positive.
+
+417
+01:28:27,988 --> 01:28:30,868
+ve, second condition,
+
+418
+01:28:32,128 --> 01:28:34,948
+is that the limit of Pn
+
+419
+01:28:34,948 --> 01:28:37,748
+has to be 0.
+
+420
+01:28:38,708 --> 01:28:42,708
+If Pn is decreasing and the limit of Pn is 0,
+
+421
+01:28:42,887 --> 01:28:46,148
+then this alternating series is
+
+422
+01:28:46,148 --> 01:28:48,068
+convergent.
+
+423
+01:28:51,636 --> 01:28:58,636
+We only use the alternating series test for alternating series.
+
+424
+01:29:01,636 --> 01:29:18,636
+Okay. If you have alternating series, then you can use the alternating series test to determine the series is convergent or divergent.
+
+425
+01:29:22,100 --> 01:29:23,020
+For example
+
+426
+01:29:28,500 --> 01:29:34,060
+Bu iki series, bu iki series'i alternatif, ve
+
+427
+01:29:34,500 --> 01:29:39,500
+deneyelim, if they are convergent or divergent.
+
+428
+01:29:42,771 --> 01:29:43,591
+First one.
+
+429
+01:29:52,212 --> 01:30:01,472
+n1 to the infinity minus 1 to the n plus 1, 1 over n square.
+
+430
+01:30:01,472 --> 01:30:14,612
+So, this is on the form n1 to the infinity minus 1 to the n plus 1, bn.
+
+431
+01:30:16,552 --> 01:30:20,572
+So, this is bn.
+
+432
+01:30:22,212 --> 01:30:25,572
+The alternating series test.
+
+433
+01:30:25,572 --> 01:30:28,392
+So, this is an alternating series.
+
+434
+01:30:28,392 --> 01:30:35,572
+We can use the alternating series test to determine its convergence or divergence.
+
+435
+01:30:35,572 --> 01:30:43,712
+First, we have to look at if it is decreasing or not.
+
+436
+01:30:43,712 --> 01:31:00,712
+Since bn plus 1 is equal to 1 over n plus 1 square is smaller than bn.
+
+437
+01:31:03,923 --> 01:31:08,623
+1 over 10 square, which is dn, which is?
+
+438
+01:31:16,948 --> 01:31:46,948
+Ve bu bölümde, bn'in 1'e n²
+
+439
+01:31:46,948 --> 01:31:59,427
+n²'e n²' n²'e n²' n²'e n²'
+
+440
+01:32:03,923 --> 01:32:04,503
+Bye!
+
+441
+01:32:08,083 --> 01:32:16,083
+Alternating Serious Test, Serious Converse.
+
+442
+01:32:44,564 --> 01:32:45,984
+Vatır vatlı saygı uzun.
+
+443
+01:33:03,699 --> 01:33:17,279
+Dolimit, n goes to the infinity, bn, is n over n plus 1, which is alternatif serisi, is equal to 1.
+
+444
+01:33:18,760 --> 01:33:20,079
+We cannot use
+
+445
+01:33:26,100 --> 01:33:37,360
+We cannot use alternating series test to determine the divergence or convergence of this series.
+
+446
+01:33:37,360 --> 01:33:41,780
+Instead, we use end term test.
+
+447
+01:33:45,555 --> 01:33:55,095
+using and term test, since the limit of this
+
+448
+01:33:59,155 --> 01:34:20,555
+n ve n'ı n'
+
+449
+01:34:30,292 --> 01:34:30,652
+Ok.
+
+450
+01:34:53,395 --> 01:34:54,395
+Veçom var,
+
+451
+01:34:55,175 --> 01:34:55,775
+veçom var,
+
+452
+01:34:59,572 --> 01:35:29,572
+Bir de bu bölümde, bu bölümde, bu bölümde, bu bölümde, bu bölümde, bu bölümde, bu bölümde, bu bölümde, bu bölümde, bu bölümde, bu bölümde, bu bölümde, bu bölümde, bu bölümde, bu bölümde, bu bölümde, bu bölümde, bu bölümde, bu bölümde, bu bölümde, bu bölümde, bu bölümde, bu bölümde, bu bölümde, bu bölümde, bu bölümde, bu bölümde, bu bölümde, bu bölümde, bu bölümde, bu bölümde, bu bölümde, bu bölümde, bu bölümde, bu bölümde, bu bölümde, bu bölümde, bu bölümde, bu bölümde, bu bölümde, bu bölümde, bu bölümde, bu bölümde, bu bölümde, bu
+
+453
+01:35:29,572 --> 01:35:40,072
+n goes to the infinity, 3 times n, 4 and minus 1 is equal to,
+
+454
+01:35:45,171 --> 01:35:55,171
+3 over 4, which is not 0, then we cannot use...
+
+455
+01:36:03,923 --> 01:36:09,703
+Alternative Serious Test, Bat, Bat.
+
+456
+01:36:13,363 --> 01:36:14,083
+Agin?
+
+457
+01:36:17,587 --> 01:36:19,587
+Y2 Divergence Test
+
+458
+01:36:45,011 --> 01:36:46,131
+Düz selam sikiyonuz.
+
+459
+01:36:51,539 --> 01:36:52,979
+which is
+
+460
+01:36:56,243 --> 01:36:57,264
+A2N.
+
+461
+01:36:59,963 --> 01:37:12,203
+So, if you take N as 2N, the limit of this will be 3 over 4, because this is positive.
+
+462
+01:37:12,203 --> 01:37:12,764
+Okay?
+
+463
+01:37:13,963 --> 01:37:24,663
+For N, 2N, we have this positive, so we only have 3N over 4N minus 1.
+
+464
+01:37:24,663 --> 01:37:28,583
+So, the limit is 3 over 4.
+
+465
+01:37:29,203 --> 01:37:34,563
+So, the subsequence A, 2N, kumurs.
+
+466
+01:37:38,868 --> 01:37:46,268
+3 over 4, but, but the subsequent,
+
+467
+01:37:50,963 --> 01:37:52,623
+Faktlı, sabsikus.
+
+468
+01:38:03,604 --> 01:38:14,664
+A, 2N-1. If we take N as 2N-1, we have minus sign in front of the BN.
+
+469
+01:38:17,404 --> 01:38:18,024
+Therefore,
+
+470
+01:38:25,108 --> 01:38:32,927
+Converse to minus 3 over 4.
+
+471
+01:38:32,927 --> 01:38:35,427
+This implies that.
+
+472
+01:38:46,515 --> 01:38:47,335
+A-M
+
+473
+01:38:51,123 --> 01:38:51,963
+Laiters.
+
+474
+01:38:57,844 --> 01:39:16,043
+Actually, in this case, in these and above cases, if the limit of the n term of the alternating series is not zero, is not zero, use a divergence test.
+
+475
+01:39:16,043 --> 01:39:36,543
+Actually, we use divergence test like this. We know that if the series is convergent or if the sequence is convergent, then all of its subsequences has to converge the same numbers.
+
+476
+01:39:36,543 --> 01:39:58,543
+Limit and goes to the infinity. If a n is convergent, it converts to a real number and then a m plus one is also convergent.
+
+477
+01:39:58,543 --> 01:40:11,543
+So in these cases and the above cases, we have n term 3 n over 4 n minus one.
+
+478
+01:40:11,543 --> 01:40:19,543
+But the limit of this n term is not zero. So we cannot use the alternative series test.
+
+479
+01:40:19,543 --> 01:40:27,543
+Instead of this, we take this whole series and look at its limit.
+
+480
+01:40:27,543 --> 01:40:33,543
+So. Limit n goes to the infinity.
+
+481
+01:40:33,543 --> 01:40:36,543
+Minus one.
+
+482
+01:40:36,543 --> 01:40:38,543
+To the n.
+
+483
+01:40:38,543 --> 01:41:07,543
+Minus one.
+
+484
+01:40:46,771 --> 01:41:05,572
+If it is not zero, then we can compute from the divergence test that this is divergent. Or if this limit does not exist, then we can compute that this series is divergent.
+
+485
+01:41:05,572 --> 01:41:35,271
+Here, since the sine of the n term depends on the n, the power of minus 1, if you take the subsequence a to n, then we have all of these terms as positive, because this is limit and goes to the infinity.
+
+486
+01:41:49,779 --> 01:41:57,239
+Since this is positive, then this gives 3 over 4.
+
+487
+01:41:58,119 --> 01:42:19,000
+And if you take the subsequence a2 m-1, then we have 2 m-1, which gives negative, then the limit of this sequence will be minus 3 over 4.
+
+488
+01:42:19,779 --> 01:42:26,199
+It means that, it means that, the limit of this sequence does not exist.
+
+489
+01:42:26,840 --> 01:42:33,880
+If the limit does not exist, then we can conclude that the series is diverged.
+
+490
+01:42:33,880 --> 01:42:37,880
+Okay, we can generally...
+
+491
+01:42:41,363 --> 01:42:42,863
+Write this as
+
+492
+01:42:58,996 --> 01:43:01,756
+May I write this as...
+
+493
+01:43:05,268 --> 01:43:06,228
+More generally,
+
+494
+01:43:40,819 --> 01:43:42,819
+Generally, if...
+
+495
+01:43:48,083 --> 01:43:50,823
+An is an alternating sequence.
+
+496
+01:44:08,564 --> 01:44:38,543
+Limit ve bu nokta'ya
+
+497
+01:44:33,108 --> 01:44:47,108
+an is not zero, make sure this is equal to bn, then, then,
+
+498
+01:44:52,404 --> 01:44:54,404
+AM virus,
+
+499
+01:44:56,904 --> 01:44:57,404
+and,
+
+500
+01:44:58,104 --> 01:44:59,904
+bio-divergence test,
+
+501
+01:45:22,547 --> 01:45:25,188
+A and also Libres.
+
+502
+01:45:32,340 --> 01:45:32,819
+Kutuzi.
+
+503
+01:45:38,323 --> 01:45:55,523
+So, in alternating series, in alternating series, if the limit is not, the limit of the end term is not equal to zero, it is most probably divergent.
+
+504
+01:45:58,868 --> 01:46:02,728
+Last example, no, not last example.
+
+505
+01:46:07,956 --> 01:46:09,016
+Bu da vossin,
+
+506
+01:46:21,844 --> 01:46:25,823
+Düzden alternatif serisi, and B, and
+
+507
+01:46:34,515 --> 01:46:36,735
+n² n² n² plus 1,
+
+508
+01:46:39,735 --> 01:46:40,835
+is positive,
+
+509
+01:46:43,975 --> 01:46:47,215
+and is it decreasing or not?
+
+510
+01:46:54,195 --> 01:47:19,756
+Limit n'ı n'
+
+511
+01:47:23,539 --> 01:47:27,140
+If there is no bridge, şerefe.
+
+512
+01:47:33,684 --> 01:47:35,543
+We will finish it.
+
+513
+01:47:39,123 --> 01:47:40,503
+11.20. Ok.
+
+514
+01:47:43,063 --> 01:47:47,804
+So, only we need to show that this is increasing.
+
+515
+01:48:09,076 --> 01:48:15,136
+So, how can we show bn is decreasing?
+
+516
+01:48:38,612 --> 01:48:53,391
+How we can show? [öğrenci], how can you see b n plus 1 is smaller than b n? I think it is not clear.
+
+517
+01:49:01,460 --> 01:49:26,060
+You know from calculus 1 that if the derivative of a function is smaller than 0, then it is decreasing. So the easy way to show a fractional function or a function is decreasing, take its derivative and show or look if it is negative or positive.
+
+518
+01:49:26,060 --> 01:49:41,859
+Therefore, let f of x be x square over x cube plus 1 and take its derivative.
+
+519
+01:49:41,859 --> 01:49:50,859
+Then f of prime x is equal to
+
+520
+01:49:55,539 --> 01:50:02,019
+2x times x³ plus 1 minus
+
+521
+01:50:08,979 --> 01:50:10,299
+Şu ekstükar,
+
+522
+01:50:13,844 --> 01:50:14,564
+Fives.
+
+523
+01:50:18,612 --> 01:50:26,372
+x² over xq plus 1 to the power 2.
+
+524
+01:50:28,372 --> 01:50:31,252
+So, we can write this as,
+
+525
+01:50:33,391 --> 01:50:37,832
+this is 2x to the 4,
+
+526
+01:50:37,832 --> 01:50:42,072
+and minus 3x to the 4 gives,
+
+527
+01:50:44,072 --> 01:50:46,612
+minus x to the 4,
+
+528
+01:50:53,587 --> 01:51:09,247
+ve 2x, 2x-x4, over x3, plus 1, to the power of 2.
+
+529
+01:51:29,460 --> 01:51:30,420
+Fırsız.
+
+530
+01:51:58,195 --> 01:51:59,355
+Sofort
+
+531
+01:52:06,420 --> 01:52:09,100
+X is bigger than
+
+532
+01:52:12,532 --> 01:52:17,832
+Kür, rot, su.
+
+533
+01:52:21,652 --> 01:52:22,471
+Ve ter,
+
+534
+01:52:31,347 --> 01:52:39,347
+If x is bigger than this number, then x is positive and...
+
+535
+01:52:46,931 --> 01:53:12,931
+2 over x cubed is negative. Therefore, f prime x is negative. It means that f is ultimately decreasing. Therefore, b n is decreasing. So, from the alternating series test, it is convergent.
+
+536
+01:53:12,931 --> 01:53:20,612
+So, by alternating series test.
+
+537
+01:53:52,692 --> 01:53:53,752
+Last example.
+
+538
+01:53:59,539 --> 01:54:01,539
+Sizin için çalışma işlemler?
+
+539
+01:54:11,060 --> 01:54:13,060
+Şimdi,
+
+540
+01:54:13,060 --> 01:54:18,060
+Öncelik ve
+
+541
+01:54:18,060 --> 01:54:19,060
+bu,
+
+542
+01:54:19,060 --> 01:54:21,060
+altyanlık seris.
+
+543
+01:54:21,060 --> 01:54:22,060
+Şimdi,
+
+544
+01:54:22,060 --> 01:54:23,060
+bu,
+
+545
+01:54:23,060 --> 01:54:25,060
+altyanlık seris.
+
+546
+01:54:25,060 --> 01:54:26,060
+Şimdi,
+
+547
+01:54:26,060 --> 01:54:27,060
+altyanlık seris.
+
+548
+01:54:36,180 --> 01:54:45,100
+[öğrenci], we only use Alternative Series Test.
+
+549
+01:54:45,980 --> 01:54:52,860
+First, this is BN, this is Alternative Series, and this is BN.
+
+550
+01:54:52,860 --> 01:55:06,460
+So, in Alternative Series Test, we know that if BN is positive and the limit of BN is 0,
+
+551
+01:55:08,340 --> 01:55:14,000
+and if BN is decreasing, then it is conversion series.
+
+552
+01:55:15,000 --> 01:55:19,880
+So, we need to show that BN is decreasing.
+
+553
+01:55:19,880 --> 01:55:29,600
+From calculus 1, we know that if the function, the derivative of a function is negative,
+
+554
+01:55:29,920 --> 01:55:32,159
+then it is a decreasing function.
+
+555
+01:55:32,840 --> 01:55:41,659
+So, using or taking this N term as the function f of x, x2, over x3, plus 1,
+
+556
+01:55:41,659 --> 01:55:44,480
+and taking its derivative we have,
+
+557
+01:55:44,480 --> 01:56:14,460
+to the function f of x3, x3, plus 1, and taking this to the function f of x3,
+
+558
+01:55:51,604 --> 01:55:53,204
+F'n x
+
+559
+01:55:53,204 --> 01:55:56,324
+is
+
+560
+01:56:00,372 --> 01:56:10,632
+2x minus x to the 4 over x cubed plus 1 square.
+
+561
+01:56:11,632 --> 01:56:21,432
+Now, we will determine if a prime x is negative or positive.
+
+562
+01:56:22,432 --> 01:56:26,712
+At the denominator of this function, we have square.
+
+563
+01:56:26,712 --> 01:56:28,712
+So, this is always...
+
+564
+01:56:32,659 --> 01:56:39,659
+Şimdi, bu
+
+565
+01:56:45,203 --> 01:56:46,603
+We are looking for
+
+566
+01:56:50,355 --> 01:56:58,355
+We are looking for when this function is negative.
+
+567
+01:56:59,355 --> 01:57:04,355
+For what values of x this function is negative or positive?
+
+568
+01:57:05,355 --> 01:57:08,355
+Ok, so first find the root of this.
+
+569
+01:57:08,355 --> 01:57:10,355
+This is always positive.
+
+570
+01:57:10,355 --> 01:57:16,355
+We only need to investigate or study with this one.
+
+571
+01:57:16,355 --> 01:57:24,355
+So first find the roots of this, which is 2x minus x to the 4 is equal to 0.
+
+572
+01:57:24,355 --> 01:57:33,355
+So factor out x, 2 minus x cube is equal to 0.
+
+573
+01:57:33,355 --> 01:57:42,355
+It means that x is 0 and x is equal to.
+
+574
+01:57:48,659 --> 01:57:49,639
+Şu prut.
+
+575
+01:57:53,524 --> 01:57:54,524
+2
+
+576
+01:57:54,524 --> 01:57:55,524
+ok
+
+577
+01:57:55,524 --> 01:57:57,524
+now
+
+578
+01:57:57,524 --> 01:58:00,524
+if
+
+579
+01:58:00,524 --> 01:58:02,524
+or maybe you can
+
+580
+01:58:02,524 --> 01:58:07,524
+make also the box table
+
+581
+01:58:07,524 --> 01:58:15,524
+0
+
+582
+01:58:19,188 --> 01:58:26,188
+2x-x4.
+
+583
+01:58:29,188 --> 01:58:31,188
+These are roots.
+
+584
+01:58:31,188 --> 01:58:47,188
+So, since the biggest degree term has the minus sign, minus, positive, minus.
+
+585
+01:58:47,188 --> 01:59:01,188
+And we are working on the series, so we only look at the numbers, which is bigger from zero, so we are looking at this part.
+
+586
+01:59:01,188 --> 01:59:19,188
+If x is bigger than, if x is bigger than, cube root 2, then, then, this expression or this function is negative.
+
+587
+01:59:19,188 --> 01:59:21,188
+Okay.
+
+588
+01:59:21,188 --> 01:59:28,188
+So, so, so, for x is bigger than, cube root 2,
+
+589
+01:59:28,188 --> 01:59:30,188
+and we are looking at this part.
+
+590
+01:59:32,595 --> 01:59:44,315
+This is negative. Since the denominator is positive, it gives that the derivative of f or f prime is negative.
+
+591
+01:59:44,315 --> 01:59:54,635
+Therefore, we conclude that f, which is x to k over x cubed plus 1 is decreasing.
+
+592
+01:59:54,635 --> 02:00:01,635
+Since f is decreasing, also b n is decreasing.
+
+593
+02:00:01,635 --> 02:00:18,235
+Maybe, maybe you can, you can say that if, if x is smaller than cube root 2, but there are finitely many terms here.
+
+594
+02:00:18,235 --> 02:00:26,955
+So, we can skip or we can, we cannot think these numbers in series.
+
+595
+02:00:26,955 --> 02:00:32,855
+Because it does not change the convergence or divergence of the series.
+
+596
+02:00:32,855 --> 02:00:33,855
+So, this function is ultimately decreasing.
+
+597
+02:00:33,855 --> 02:00:49,855
+So, this function is ultimately decreasing and from the alternating series test, we say that the series is converged.
+
+598
+02:00:49,855 --> 02:00:51,855
+Okay.
+
+599
+02:01:09,140 --> 02:01:30,740
+[öğrenci], 1 over n is not an alternating series, but we will talk about it later. Minus 1 to the n, 1 over n is an alternating harmonic series.
+
+600
+02:01:38,195 --> 02:01:40,195
+Now [öğrenci],
+
+601
+02:01:43,195 --> 02:01:49,195
+we cannot use the comparison test or limit comparison test
+
+602
+02:01:49,195 --> 02:01:53,195
+to look at the decreasing of a function
+
+603
+02:01:53,195 --> 02:01:56,195
+or you cannot use the comparison test
+
+604
+02:01:56,195 --> 02:02:00,195
+to test the convergence of alternating series.
+
+605
+02:02:03,195 --> 02:02:07,195
+We are now talking about the alternating test.
+
+606
+02:02:08,195 --> 02:02:13,195
+The alternating test is only used for the alternating series.
+
+607
+02:02:13,195 --> 02:02:14,195
+Okay.
+
+608
+02:02:14,195 --> 02:02:18,195
+So for using alternating series,
+
+609
+02:02:18,195 --> 02:02:25,195
+we have to show that the n term of the series is decreasing or not.
+
+610
+02:02:25,195 --> 02:02:31,195
+We only use the derivative of the function.
+
+611
+02:02:31,195 --> 02:02:37,195
+We take the derivative and show that the derivative of the function is negative.
+
+612
+02:02:37,195 --> 02:02:40,195
+So the function is decreasing.
+
+613
+02:02:40,195 --> 02:02:46,195
+Then we compute that it is converged from the alternating series test.
+
+614
+02:02:46,195 --> 02:02:47,195
+Now,
+
+615
+02:02:47,195 --> 02:02:56,195
+we talk about, we will talk about absolute end.
+
+616
+02:02:59,604 --> 02:03:01,104
+Conditional Corrosions
+
+617
+02:03:08,148 --> 02:03:08,768
+Thüs.
+
+618
+02:03:16,787 --> 02:03:19,227
+Consider a series a n.
+
+619
+02:03:25,011 --> 02:03:26,652
+ve, related series.
+
+620
+02:03:37,524 --> 02:03:51,524
+absolute value of a n. Here, we discuss the possibilities for the relation between the convergence of these two series.
+
+621
+02:03:55,636 --> 02:03:56,856
+Ve kompilir.
+
+622
+02:04:04,115 --> 02:04:10,876
+The convergence of, relation between the convergence of these two series.
+
+623
+02:04:15,667 --> 02:04:16,487
+For example,
+
+624
+02:04:21,140 --> 02:04:23,140
+Bakın, bit theme.
+
+625
+02:04:26,420 --> 02:04:32,539
+ve çevirin,
+
+626
+02:04:37,076 --> 02:04:40,076
+For example, consider the alternating harmonic series.
+
+627
+02:04:55,539 --> 02:04:57,640
+This is alternating carbonic series.
+
+628
+02:05:08,756 --> 02:05:12,195
+Since this is alternative series,
+
+629
+02:05:16,627 --> 02:05:23,148
+Using alternating series test, this is BN, 1 over N is BN.
+
+630
+02:05:24,067 --> 02:05:29,947
+1 over N is positive, it is decreasing and also the limit of 1 over N is 0.
+
+631
+02:05:29,947 --> 02:05:38,947
+Therefore, from alternating series test, this series, this harmonic series is convergent.
+
+632
+02:05:39,747 --> 02:05:42,167
+But, but, but.
+
+633
+02:06:02,899 --> 02:06:06,920
+Bu tarzıda bu tarzıda
+
+634
+02:06:15,091 --> 02:06:29,011
+1 over n, which is harmonic series, and it is 5 version.
+
+635
+02:06:41,747 --> 02:06:48,487
+Convergent, vek this is Divergent.
+
+636
+02:06:48,487 --> 02:06:58,367
+So, it gives the conditional conversions here, and if you think,
+
+637
+02:07:00,007 --> 02:07:01,747
+if you think,
+
+638
+02:07:10,068 --> 02:07:14,708
+Bu serisi, Vanover, Enşükar, bu serisi, alternatif serisi.
+
+639
+02:07:24,532 --> 02:07:25,851
+Alternatif series.
+
+640
+02:07:27,092 --> 02:07:31,212
+And it is conversion from the Alternatif series test.
+
+641
+02:07:32,132 --> 02:07:35,212
+And also the absolute value of this series is
+
+642
+02:07:36,692 --> 02:07:40,172
+P series, which is 1 over n squared.
+
+643
+02:07:40,612 --> 02:07:41,891
+And it is also
+
+644
+02:07:48,212 --> 02:07:49,132
+Kımlı ojit.
+
+645
+02:07:54,195 --> 02:08:15,576
+So, in the first case, if the alternating series is convergent, and after taking its absolute value, the series is divergent, we say this, we have a conditional conversion.
+
+646
+02:08:21,747 --> 02:08:22,867
+Conditional
+
+647
+02:08:33,171 --> 02:08:40,231
+Eğer bu alternatif serisi ve absoluteliyonlar, çift katlı
+
+648
+02:08:42,631 --> 02:08:45,731
+absoluteliyonlar, çift katlı
+
+649
+02:08:51,796 --> 02:08:56,796
+Ok, so, what is absolute collusion?
+
+650
+02:09:00,724 --> 02:09:08,043
+Serisi an is called absolutely convergent or has the absolute convergenci.
+
+651
+02:09:08,043 --> 02:09:24,764
+If the absolute value is serious, if you take the absolute value of the series, then if this series is convergent, then an is called absolutely convergent series.
+
+652
+02:09:24,764 --> 02:09:28,324
+Is it okay?
+
+653
+02:09:33,011 --> 02:09:33,671
+If
+
+654
+02:09:46,292 --> 02:09:49,152
+Komörs, dön,
+
+655
+02:09:53,716 --> 02:09:57,276
+A, N, Absolutive Chorus
+
+656
+02:10:04,340 --> 02:10:19,579
+If an converts, but the absolute value of an diverse, then an is conditionally converts.
+
+657
+02:10:21,060 --> 02:10:21,340
+Okay.
+
+658
+02:10:21,340 --> 02:10:22,920
+Now.
+
+659
+02:10:47,412 --> 02:10:54,271
+If any series is absolutely convergent, then it is also convergent.
+
+660
+02:10:54,932 --> 02:10:55,192
+Okay.
+
+661
+02:10:57,072 --> 02:11:04,092
+If series is absolutely convergent, then it is also convergent.
+
+662
+02:11:04,752 --> 02:11:13,752
+If a series is diverse, then it cannot converge absolutely or it cannot converge conditionally.
+
+663
+02:11:13,752 --> 02:11:17,612
+If series diverse, then it cannot converge absolutely.
+
+664
+02:11:18,932 --> 02:11:27,692
+If the series is positive term series, then there is no difference between the absolute value of A and A and A.
+
+665
+02:11:27,692 --> 02:11:35,072
+And so the absolute convergence and convergence are the same.
+
+666
+02:11:36,192 --> 02:11:36,472
+Okay.
+
+667
+02:11:37,012 --> 02:11:43,391
+For the positive term series, we have only absolute convergence or convergence.
+
+668
+02:11:43,752 --> 02:12:11,752
+Thank you.
+
+669
+02:11:46,963 --> 02:11:52,863
+So, so we have three cases for the alternating series.
+
+670
+02:12:06,836 --> 02:12:35,976
+The series can be converse absolutely. It means that the absolute value of this series converse. The series can be diverse. The series can be converse, but the absolute value of this series can be diverse. For example, look at this one, two, examples.
+
+671
+02:12:40,916 --> 02:12:47,996
+Bu series, M-1 over N2, is an alternating series.
+
+672
+02:12:50,336 --> 02:12:55,576
+So, this is absolutely convergent series,
+
+673
+02:12:55,796 --> 02:12:59,516
+because if you take the absolute value of this series,
+
+674
+02:12:59,815 --> 02:13:04,355
+you have the P series, 1 over N2.
+
+675
+02:13:05,476 --> 02:13:07,136
+Since P is 2,
+
+676
+02:13:12,916 --> 02:13:36,916
+10 minutes later, we will finalize, [öğrenci]. Ok. It will finish at 10 minutes later. So, this is convergent. Since the absolute value of a n is convergent, this series is absolutely convergent.
+
+677
+02:13:44,595 --> 02:14:00,595
+Again, since this is an alternating series, and taking the absolute value of this series, we have the harmonic series, but the harmonic series is divergent.
+
+678
+02:14:02,595 --> 02:14:08,595
+So, this series is not absolutely convergent.
+
+679
+02:14:08,595 --> 02:14:14,595
+Now, we have another definition which is called conditional convergent.
+
+680
+02:14:15,595 --> 02:14:32,595
+If a n is convergent, but not absolutely convergent, then it is conditional convergent.
+
+681
+02:14:32,595 --> 02:14:38,595
+It means... it means...
+
+682
+02:14:49,779 --> 02:14:51,779
+an-converse,
+
+683
+02:14:53,779 --> 02:14:56,779
+by alternating series test,
+
+684
+02:14:56,779 --> 02:14:58,779
+but,
+
+685
+02:15:00,779 --> 02:15:04,779
+the absolute value of an-biverse.
+
+686
+02:15:05,779 --> 02:15:11,779
+So, in this case, it's called conditionally converged.
+
+687
+02:15:18,899 --> 02:15:19,739
+For example,
+
+688
+02:15:32,692 --> 02:15:55,591
+ve tamamen bir şekilde seriçte bir şekilde seriçte bir şekilde seriçte bir şekilde seriçte bir şekilde seriçte bir şekilde seriçte bir şekilde seriçte bir şekilde seriçte bir şekilde seriçte bir şekilde seriçte bir şekilde seriçte bir şekilde seriçte bir şekilde seriçte bir şekilde seriçte bir şekilde seriçte bir şekilde seriçte bir şekilde seriçte bir şekilde seriçte bir şekilde seriçte bir şekilde seriçte bir şekilde seriçte bir şekilde seriçte bir şekilde seriçte bir şekilde seriçte bir şekilde seriçte bir şekilde seriçte bir şekilde seriçte bir şekilde seriçte bir şekilde seriçte bir şekilde seriçte bir şekilde seriçte bir şekilde seriçte bir şekilde seriçte bir şekilde seriçte bir şekilde seriçte bir şekilde seriçte bir şekilde seri
+
+689
+02:15:59,507 --> 02:16:00,528
+1 hours,
+
+690
+02:16:01,967 --> 02:16:02,568
+and to the
+
+691
+02:16:13,460 --> 02:16:15,460
+1 over 2.
+
+692
+02:16:17,460 --> 02:16:24,460
+Since this is a p-series with p1 over 2,
+
+693
+02:16:30,131 --> 02:17:00,971
+Bu, bu
+
+694
+02:17:14,324 --> 02:17:22,844
+BN is equal to one over square root n. BN is positive.
+
+695
+02:17:29,203 --> 02:17:36,203
+ve BN'in
+
+696
+02:17:36,203 --> 02:17:38,203
+0'in
+
+697
+02:17:38,203 --> 02:17:59,203
+Bu,
+
+698
+02:18:12,915 --> 02:18:23,755
+Does it make sense? Is it clear? Good. So, these and these are homework for you.
+
+699
+02:18:27,796 --> 02:18:30,015
+ve bu çalışma için de çalışma için de çalışma.
+
+700
+02:18:33,015 --> 02:18:37,115
+Ve sonra, devam edelim.
+
+701
+02:18:37,476 --> 02:18:40,015
+Tamam, do you have any questions or comments?
+
+702
+02:18:49,811 --> 02:18:53,971
+I will upload these notes to your lesson hall.
+
+703
+02:19:00,207 --> 02:19:02,287
+Ve her zaman bir gün güzel bir günler.
+
+704
+02:19:20,404 --> 02:19:23,664
+Tamam, tamamen, tamamen, see you.

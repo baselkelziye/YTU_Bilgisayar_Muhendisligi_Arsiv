@@ -1,0 +1,2331 @@
+1
+00:00:52,851 --> 00:00:53,731
+Kudatının
+
+2
+00:01:53,524 --> 00:01:57,183
+Today, we continue to talk about the power series.
+
+3
+00:02:00,819 --> 00:02:13,840
+I left an example as a homework for you yesterday. I start lecture solving this example.
+
+4
+00:02:25,939 --> 00:02:34,340
+[öğrenci], evet, if we have enough time, we try to solve all of the homeworks.
+
+5
+00:02:39,092 --> 00:02:58,572
+Okay. Now, first, it is asked us to evaluate or to solve this integral or write this integral as a power series. First, first,
+
+6
+00:03:02,324 --> 00:03:18,124
+We express the integral, which is 1 over 1 plus x to the 7, as sum of power series. As we've done before, we use...
+
+7
+00:03:21,939 --> 00:03:49,259
+Power series equation, which is equal to the 1 over 1 minus x is equal to the geometric series, which is n to the infinity, x to the n. And this equation holds for the absolute value of x is smaller than 1.
+
+8
+00:03:55,123 --> 00:04:15,024
+So, to obtain 1 over 1 plus x to the 7, we write this as 1 over 1 minus x to the 7.
+
+9
+00:04:15,024 --> 00:04:31,024
+So, in this equation, we replace x with minus x to the 7.
+
+10
+00:04:48,115 --> 00:04:52,036
+Sorry for this, please wait a minute.
+
+11
+00:05:26,803 --> 00:05:38,163
+Ok, sure, for this, we replace x with minus x to the 7. So, this is equal to the power series.
+
+12
+00:05:41,763 --> 00:05:52,083
+And 0 to infinity, minus x to the 7 to the n.
+
+13
+00:05:52,083 --> 00:06:03,763
+Where minus x to the 7, the absolute value of minus x to the 7.
+
+14
+00:06:08,339 --> 00:06:10,239
+is smaller than 1.
+
+15
+00:06:11,459 --> 00:06:12,060
+So,
+
+16
+00:06:14,619 --> 00:06:17,119
+1 over 1 plus x to the 7
+
+17
+00:06:17,119 --> 00:06:19,239
+is equal to the
+
+18
+00:06:19,239 --> 00:06:23,839
+and 0 to the infinity.
+
+19
+00:06:24,500 --> 00:06:25,759
+This is equal to
+
+20
+00:06:25,759 --> 00:06:28,479
+minus 1 to the n
+
+21
+00:06:28,479 --> 00:06:30,859
+times
+
+22
+00:06:30,859 --> 00:06:32,079
+x to the
+
+23
+00:06:32,079 --> 00:06:34,620
+7n
+
+24
+00:06:34,620 --> 00:06:35,399
+and
+
+25
+00:06:35,399 --> 00:06:37,679
+then
+
+26
+00:06:37,679 --> 00:06:40,599
+the absolute value of x is smaller than
+
+27
+00:06:40,599 --> 00:06:41,419
+1.
+
+28
+00:06:43,159 --> 00:06:43,639
+So,
+
+29
+00:06:43,639 --> 00:06:45,959
+this is also equal to
+
+30
+00:06:55,475 --> 00:06:57,475
+Bir şey, Fris'e de ders olmuyor mu?
+
+31
+00:06:57,475 --> 00:06:59,475
+Bir şey var.
+
+32
+00:06:59,475 --> 00:07:01,475
+Var mı?
+
+33
+00:07:01,475 --> 00:07:05,475
+Dersleyin.
+
+34
+00:07:12,468 --> 00:07:24,228
+Bu, bu, 1-x7, plus x14, minus, probably.
+
+35
+00:07:25,748 --> 00:07:28,588
+Now, we can evaluate this integral.
+
+36
+00:07:32,564 --> 00:07:39,484
+integral 1 over 1 plus x to the 7 dx is equal to
+
+37
+00:07:43,827 --> 00:07:49,687
+I write this series instead of this function.
+
+38
+00:07:56,052 --> 00:08:02,852
+Minus 1 to the n, x to the 7n, dx.
+
+39
+00:08:06,292 --> 00:08:17,812
+This is, what is the integral of this function or this series? We have already known from here.
+
+40
+00:08:17,812 --> 00:08:27,972
+We only take the integral of this part.
+
+41
+00:08:27,972 --> 00:08:29,732
+So.
+
+42
+00:08:33,716 --> 00:08:37,716
+İntegral bu sayesinde bu sayesinde
+
+43
+00:08:38,716 --> 00:08:40,716
+C plus
+
+44
+00:08:46,355 --> 00:08:48,475
+0 to infinity,
+
+45
+00:08:51,395 --> 00:08:53,475
+minus 1 to the n,
+
+46
+00:09:02,100 --> 00:09:09,680
+x to do 7m plus 1 over 7m plus 1.
+
+47
+00:09:12,240 --> 00:09:12,580
+Okay.
+
+48
+00:09:14,259 --> 00:09:22,060
+So, this integral is equal to a power series like this.
+
+49
+00:09:24,320 --> 00:09:25,240
+Now,
+
+50
+00:09:25,240 --> 00:09:31,600
+we will give some properties of power series,
+
+51
+00:09:33,820 --> 00:09:42,759
+which allow us to add or subtract or multiply to power series.
+
+52
+00:09:46,899 --> 00:09:57,819
+I begin with the example. You can also read this theorem. I think this is not important. The application of this theorem is important.
+
+53
+00:10:00,299 --> 00:10:12,500
+Now, use the power series representation of 1 over 1 minus x, which is
+
+54
+00:10:17,011 --> 00:10:24,731
+x to the n, and construct the power series' representation of these functions.
+
+55
+00:10:29,620 --> 00:10:30,519
+4K
+
+56
+00:10:40,916 --> 00:10:54,376
+f of x is equal to 3x times 1 over 1 plus x square.
+
+57
+00:10:54,376 --> 00:11:11,696
+So, first of all, we can write this part of the function as the sum of power series.
+
+58
+00:11:11,696 --> 00:11:27,536
+So, this is equal to 3x times 1 over 1 minus x square.
+
+59
+00:11:33,203 --> 00:11:37,243
+This is also equal to 3x times.
+
+60
+00:11:38,783 --> 00:11:42,423
+We can write the power series representation of this function,
+
+61
+00:11:43,503 --> 00:11:49,483
+which we only write minus x square instead of x here.
+
+62
+00:11:49,743 --> 00:11:59,603
+So this is equal to 0 to the infinity minus x square to the n.
+
+63
+00:11:59,603 --> 00:12:07,203
+where minus x square is smaller than 1.
+
+64
+00:12:08,823 --> 00:12:18,583
+So this is also equal to 3x times.
+
+65
+00:12:24,724 --> 00:12:36,844
+Minus 1 to the n, x to the 2 n, absolutor of x is smaller than 1.
+
+66
+00:12:36,844 --> 00:12:38,944
+Now,
+
+67
+00:12:46,100 --> 00:13:15,180
+We can multiply x with x to the 2n. So, also we can multiply 3 with this term. So, this series is equal to 3 times minus 1 to the n x to the 2n plus 1, where
+
+68
+00:13:18,292 --> 00:13:23,192
+Under the condition, absolute value of x is smaller than 1.
+
+69
+00:13:33,812 --> 00:13:37,932
+Fakat bu sebebi,
+
+70
+00:13:40,659 --> 00:13:51,860
+How can you write the function in B as a sum of power series? What can we do?
+
+71
+00:14:09,268 --> 00:14:11,388
+Evet, elif nas, bu.
+
+72
+00:14:11,388 --> 00:14:41,368
+Öncelikle, bu funksiyonlar, bu funksiyonlar,
+
+73
+00:14:34,740 --> 00:14:58,019
+B, f of x is equal to 1 over x minus 1 times x minus 3 is equal to a over x minus 1 plus b over x minus 3.
+
+74
+00:14:58,019 --> 00:15:05,460
+And here we have to find the constants a and b.
+
+75
+00:15:07,860 --> 00:15:16,820
+A times x minus 3 plus b times x minus 1 is equal to 1.
+
+76
+00:15:17,639 --> 00:15:24,879
+Therefore, we have if we take x as 1, this is 0.
+
+77
+00:15:24,879 --> 00:15:26,539
+So this is minus 2.
+
+78
+00:15:27,840 --> 00:15:31,060
+A is minus 1 over 2.
+
+79
+00:15:32,680 --> 00:15:36,980
+And to find b, write x as 3.
+
+80
+00:15:37,220 --> 00:15:37,960
+This is 0.
+
+81
+00:15:38,419 --> 00:15:39,480
+So this is 2b.
+
+82
+00:15:40,480 --> 00:15:43,460
+B is 1 over 2.
+
+83
+00:15:43,460 --> 00:16:06,920
+It means that f of x is equal to minus 1 over 2 x minus 1 plus 1 over 2 x minus 3.
+
+84
+00:16:06,920 --> 00:16:32,920
+B.
+
+85
+00:16:10,932 --> 00:16:14,971
+Or, or we can write this as
+
+86
+00:16:18,548 --> 00:16:25,927
+1 over 3.
+
+87
+00:16:29,427 --> 00:16:36,427
+Çünkü bu olarak 1-x'in formu için,
+
+88
+00:16:36,427 --> 00:16:38,427
+bu olarak,
+
+89
+00:16:38,427 --> 00:16:42,427
+1-1,
+
+90
+00:16:42,427 --> 00:16:44,427
+2-1,
+
+91
+00:16:44,427 --> 00:16:46,427
+1-x,
+
+92
+00:16:46,427 --> 00:16:48,427
+1-1,
+
+93
+00:16:48,427 --> 00:16:50,427
+1-2,
+
+94
+00:16:50,427 --> 00:16:54,427
+3-x.
+
+95
+00:16:54,427 --> 00:16:56,427
+Şimdi,
+
+96
+00:16:56,427 --> 00:16:58,427
+bu olarak,
+
+97
+00:16:58,427 --> 00:17:00,427
+1-x.
+
+98
+00:17:00,427 --> 00:17:02,427
+Ok.
+
+99
+00:17:02,427 --> 00:17:04,427
+Now,
+
+100
+00:17:04,427 --> 00:17:06,427
+we can write,
+
+101
+00:17:06,427 --> 00:17:08,427
+this and this,
+
+102
+00:17:08,427 --> 00:17:10,427
+as the sum of power series.
+
+103
+00:17:17,140 --> 00:17:20,140
+Bu, bu ok.
+
+104
+00:17:20,140 --> 00:17:47,140
+Bu ok.
+
+105
+00:17:30,963 --> 00:17:45,144
+1 over 3 minus x is equal to factor at 3 here, 1 minus x over 3.
+
+106
+00:17:48,660 --> 00:18:18,580
+So, f of x is equal to 1 over 2, 1 minus x minus, take 3 here, 1 over 6, 1 minus x over 3.
+
+107
+00:18:18,660 --> 00:18:26,660
+Now, we can write the power series representation of this function, which is 1 over...
+
+108
+00:18:31,284 --> 00:18:35,784
+2 times x to the n
+
+109
+00:18:39,604 --> 00:18:40,163
+This one.
+
+110
+00:18:42,943 --> 00:18:43,384
+Sorry.
+
+111
+00:18:44,104 --> 00:18:46,324
+First.
+
+112
+00:18:52,531 --> 00:18:58,531
+F is equal to this decomposition of fractions.
+
+113
+00:18:58,531 --> 00:19:07,531
+Now, first write the power series of this function,
+
+114
+00:19:07,531 --> 00:19:23,531
+which is n0 to infinity, 1 over 2 x to the n, when the absolute value of x is smaller than 1.
+
+115
+00:19:23,531 --> 00:19:27,531
+And for this one,
+
+116
+00:19:30,420 --> 00:19:32,420
+This is equal to
+
+117
+00:19:34,880 --> 00:19:36,880
+1 over
+
+118
+00:19:43,443 --> 00:19:44,663
+6 times.
+
+119
+00:19:49,779 --> 00:19:59,899
+x over 3 to the n, then 4, absolute to the of x is smaller than 3.
+
+120
+00:20:08,788 --> 00:20:23,728
+Since we are combining power series, the interval convergence of the difference must be the smaller of these two intervals.
+
+121
+00:20:23,728 --> 00:20:30,728
+So, using the theorem in part...
+
+122
+00:20:34,195 --> 00:20:37,076
+I of the, this program,
+
+123
+00:20:46,355 --> 00:20:49,175
+This is a Kultun
+
+124
+00:20:54,132 --> 00:20:56,231
+0 to infinity.
+
+125
+00:20:59,923 --> 00:21:14,963
+1 over 2, minus 1 over 6 to the 1 over 6.
+
+126
+00:21:17,104 --> 00:21:19,463
+We have also 3 to the n here.
+
+127
+00:21:25,236 --> 00:21:40,496
+1 over 6 times 3 to the n, x to the n, where x is smaller than 1.
+
+128
+00:21:45,652 --> 00:22:14,832
+Ok, so, we can add or subtract to power series, but the interval of the convergence must be the intersection of the intervals or the smaller one.
+
+129
+00:22:19,028 --> 00:22:24,768
+In here, we learn how to multiply 2 power series.
+
+130
+00:22:26,228 --> 00:22:34,448
+Actually, this is the same as, or very similar to multiplying 2 polynomials.
+
+131
+00:22:38,448 --> 00:22:39,448
+Let...
+
+132
+00:22:45,140 --> 00:23:04,160
+We have two power series, and we want to multiply this and this series. So we have to multiply each term of the first series with each term of the second one.
+
+133
+00:23:04,160 --> 00:23:22,600
+So this is equal to C0 times D0 plus C0 times D1x plus C0 times D2x2 plus blah blah.
+
+134
+00:23:22,600 --> 00:23:46,620
+So it is not easy to multiply two power series, but we can only multiply a finite number of terms, then maybe we have a pattern or we have a general form of the series.
+
+135
+00:23:46,620 --> 00:23:51,620
+For example, for example,
+
+136
+00:24:00,948 --> 00:24:25,148
+We know the power series representation of this function. So using this, we have the power series representation of 1 over 1 minus x ucres, this one. So using these two power series, construct a power series for f of x.
+
+137
+00:24:25,148 --> 00:24:27,008
+Well,
+
+138
+00:24:31,028 --> 00:24:32,228
+İkbalı X.
+
+139
+00:24:36,468 --> 00:24:46,548
+is 1 over 1 minus x times 1 minus x2.
+
+140
+00:24:49,827 --> 00:25:05,268
+Make sure this is equal to the first series, n 0 to infinity, x to the n times n 0 to the infinity,
+
+141
+00:25:06,468 --> 00:25:10,628
+x to the 2 n.
+
+142
+00:25:10,628 --> 00:25:13,428
+or
+
+143
+00:25:13,428 --> 00:25:16,148
+you can write this as
+
+144
+00:25:16,148 --> 00:25:23,508
+1 plus x plus x2 plus x3
+
+145
+00:25:23,508 --> 00:25:26,788
+times
+
+146
+00:25:26,788 --> 00:25:32,608
+1 plus x2 plus x to the 4
+
+147
+00:25:32,608 --> 00:25:34,768
+plus x to the 6
+
+148
+00:25:34,768 --> 00:25:36,768
+blablabla
+
+149
+00:25:43,412 --> 00:25:50,412
+ve
+
+150
+00:25:52,147 --> 00:25:57,307
+İç term in the first series, with each term in the second one.
+
+151
+00:25:58,247 --> 00:26:16,467
+So, one times this one, this one, this one, and this one, and this times this, this, this, and this.
+
+152
+00:26:16,467 --> 00:26:31,607
+So, this is equal to one plus x square plus x to the four plus x to the six plus blah blah.
+
+153
+00:26:35,347 --> 00:26:36,067
+plus
+
+154
+00:26:36,067 --> 00:26:40,187
+x to
+
+155
+00:26:40,187 --> 00:26:42,587
+x times 1
+
+156
+00:26:42,587 --> 00:26:43,228
+x
+
+157
+00:26:43,228 --> 00:26:44,827
+so
+
+158
+00:26:44,827 --> 00:26:46,647
+ok, x
+
+159
+00:26:51,316 --> 00:26:51,935
+Scoop.
+
+160
+00:26:56,019 --> 00:26:57,400
+x2.5
+
+161
+00:27:02,291 --> 00:27:32,271
+x to the 5, x to the 7, plus x to the 4, plus x to the 6, plus x to the 8, plus x to the
+
+162
+00:27:32,271 --> 00:27:45,231
+9, plus x to the 5, plus x to the 7, plus x to the 9, and goes on.
+
+163
+00:27:45,231 --> 00:28:02,991
+So, this is equal to 1 plus x plus 2x square plus 2x cube.
+
+164
+00:28:02,991 --> 00:28:28,991
+Thank you.
+
+165
+00:28:11,412 --> 00:28:12,132
+Kıs.
+
+166
+00:28:16,980 --> 00:28:27,779
+3x to the 4 plus 3x to the 5 and goes on.
+
+167
+00:28:28,519 --> 00:28:28,839
+Okay.
+
+168
+00:28:30,220 --> 00:28:40,559
+Multiplying power series means multiply each term of the first one with each term of the second one.
+
+169
+00:28:40,559 --> 00:28:51,779
+Now, we will talk about Taylor and Maclaurin series, which are very, very important in our lecture.
+
+170
+00:28:58,612 --> 00:29:28,612
+Öncelikle, bu bölümde, bu bölümde, bu bölümde, bu bölümde, bu bölümde, bu bölümde, bu bölümde, bu bölümde, bu bölümde, bu bölümde, bu bölümde, bu bölümde, bu bölümde, bu bölümde, bu bölümde, bu bölümde, bu bölümde, bu bölümde, bu bölümde, bu bölümde, bu bölümde, bu bölümde, bu bölümde, bu bölümde, bu bölümde, bu bölümde, bu bölümde, bu bölümde, bu bölümde, bu bölümde, bu bölümde, bu bölümde, bu bölümde, bu bölümde, bu bölümde, bu bölümde, bu bölümde, bu bölümde, bu bölümde, bu bölümde, bu bölümde, bu bölümde, bu bölümde, bu bölüm
+
+171
+00:29:28,612 --> 00:29:31,992
+suppose that
+
+172
+00:29:35,859 --> 00:29:41,579
+f is a function that can be written as the sum of the power series.
+
+173
+00:29:44,099 --> 00:30:01,419
+f of x is equal to the power series and 0 to the infinity cn x minus a to the n.
+
+174
+00:30:01,419 --> 00:30:08,059
+we can write this also c0 plus
+
+175
+00:30:08,059 --> 00:30:12,919
+c1 x minus a
+
+176
+00:30:12,919 --> 00:30:16,679
+plus c2 x minus a2
+
+177
+00:30:16,679 --> 00:30:16,879
+c2 x minus a2
+
+178
+00:30:20,852 --> 00:30:27,812
+plus c3 x minus a cube, blablabla.
+
+179
+00:30:27,812 --> 00:30:41,892
+Where the interval of convergence for this equation is, this equation holds on x minus a is smaller than r.
+
+180
+00:30:41,892 --> 00:30:49,652
+Okay, we have a function f, which can be written as sum of the power series.
+
+181
+00:30:49,652 --> 00:31:00,612
+Now, we will or we try to find the coefficients of these series.
+
+182
+00:31:00,612 --> 00:31:07,332
+We try to find c0, c1, c2, and so on.
+
+183
+00:31:26,324 --> 00:31:27,974
+Coefe
+
+184
+00:31:39,571 --> 00:32:09,551
+İzper, serisi,
+
+185
+00:31:49,299 --> 00:31:56,279
+4F, centered at A.
+
+186
+00:32:01,299 --> 00:32:24,299
+ve, when we take x as a, taking x as a, we have 0, 0, 0. So we only have c 0. So f of a is equal to c 0.
+
+187
+00:32:24,299 --> 00:32:42,559
+which determines the constant of this, the constant coefficient. Now, in order to determine c1, we differentiate f, taking the derivative of this function.
+
+188
+00:32:52,084 --> 00:32:58,084
+We know how to take the differential of the power series.
+
+189
+00:33:02,132 --> 00:33:11,932
+n1 to the infinity, n times cn, x minus a to the,
+
+190
+00:33:15,700 --> 00:33:45,700
+m-1. So, this is equal to c1 plus c1 plus 2 c2 x minus a plus 3 c3 x minus a square,
+
+191
+00:33:45,700 --> 00:33:48,460
+plus...
+
+192
+00:33:51,476 --> 00:34:18,215
+4, c4, or so on. We have no enough space for this one. So, we have, again writing x as a, we have a prime a is equal to c1.
+
+193
+00:34:18,215 --> 00:34:25,096
+So, we also found the second coefficient, which is c1.
+
+194
+00:34:26,376 --> 00:34:31,896
+Continue, if we continue in this fashion,
+
+195
+00:34:34,776 --> 00:34:38,215
+again take the second derivative of f,
+
+196
+00:34:41,496 --> 00:34:45,736
+f2 prime x is equal to,
+
+197
+00:34:48,215 --> 00:34:51,175
+and 2 to the infinity,
+
+198
+00:34:53,016 --> 00:34:53,816
+n times,
+
+199
+00:34:55,576 --> 00:34:56,856
+m minus 1,
+
+200
+00:34:59,256 --> 00:35:00,056
+cn,
+
+201
+00:35:01,576 --> 00:35:03,175
+x minus a to the,
+
+202
+00:35:04,456 --> 00:35:05,496
+n minus 2.
+
+203
+00:35:06,936 --> 00:35:08,776
+So, this is equal to,
+
+204
+00:35:08,776 --> 00:35:09,496
+2,
+
+205
+00:35:09,496 --> 00:35:12,456
+2, c2,
+
+206
+00:35:12,456 --> 00:35:14,776
+plus 6,
+
+207
+00:35:14,776 --> 00:35:16,536
+or,
+
+208
+00:35:16,536 --> 00:35:20,896
+2 times 3,
+
+209
+00:35:20,896 --> 00:35:24,056
+times,
+
+210
+00:35:24,056 --> 00:35:26,456
+c3,
+
+211
+00:35:26,456 --> 00:35:37,256
+x minus a,
+
+212
+00:35:33,172 --> 00:35:38,492
+3 times 4
+
+213
+00:35:45,012 --> 00:35:58,572
+c4, x-a2, x-a2, x-a2, and goes on.
+
+214
+00:35:58,572 --> 00:36:14,092
+So, from here, we have f2' a is equal to 2c2, and
+
+215
+00:36:27,603 --> 00:36:50,103
+The third derivative of f is equal to n3 to the infinity n times n minus 1 times n minus 2 cn x minus a to the n minus 3.
+
+216
+00:36:53,844 --> 00:36:56,983
+Which is equal to
+
+217
+00:37:09,172 --> 00:37:17,072
+1 x 2 x 3 c3
+
+218
+00:37:20,628 --> 00:37:21,307
+Plus
+
+219
+00:37:25,588 --> 00:37:40,648
+2 x, 3 x, 4 x, 5 x, c5 x-a, bla bla.
+
+220
+00:37:47,699 --> 00:37:56,139
+Sorry, sorry, sorry. 3x, 2x, 3x, 4x, C4.
+
+221
+00:37:59,956 --> 00:38:00,576
+M3.
+
+222
+00:38:04,980 --> 00:38:05,900
+C4
+
+223
+00:38:13,268 --> 00:38:14,748
+x-d
+
+224
+00:38:20,115 --> 00:38:36,835
+Blablabla, so, f3a, is equal to the, 6, c3, and this is the last one.
+
+225
+00:38:36,835 --> 00:39:01,376
+The fourth power of x is equal to, and begins with 4 to the infinity, n times, n minus 1 times, n minus 2 times, n minus 3.
+
+226
+00:39:05,780 --> 00:39:09,620
+cn x minus a to the n minus 4.
+
+227
+00:39:11,380 --> 00:39:13,620
+And this is equal to
+
+228
+00:39:22,771 --> 00:39:30,771
+1x2x3x4
+
+229
+00:39:30,771 --> 00:39:34,771
+C4
+
+230
+00:39:38,867 --> 00:39:39,587
+plus
+
+231
+00:39:39,587 --> 00:39:48,427
+4 times 3 times 4 times 5 c5
+
+232
+00:39:48,427 --> 00:39:53,307
+times x minus a
+
+233
+00:39:53,307 --> 00:39:54,628
+plus
+
+234
+00:39:54,628 --> 00:40:01,668
+3 times 4 times 5 times 6
+
+235
+00:40:01,668 --> 00:40:05,188
+c6
+
+236
+00:40:05,188 --> 00:40:09,027
+x minus a
+
+237
+00:40:09,027 --> 00:40:09,668
+sükür
+
+238
+00:40:09,668 --> 00:40:12,067
+and goes on
+
+239
+00:40:12,067 --> 00:40:15,668
+so
+
+240
+00:40:19,795 --> 00:40:35,875
+From here, f to the fourth, or the fourth derivative of f at the point a, is equal to
+
+241
+00:40:39,476 --> 00:40:43,476
+24C4
+
+242
+00:40:43,476 --> 00:40:49,476
+By induction, or if we generalize this
+
+243
+00:40:53,204 --> 00:40:54,584
+We can write
+
+244
+00:40:59,123 --> 00:40:59,923
+İndaşın.
+
+245
+00:41:05,235 --> 00:41:34,556
+n derivative of f at the point a is equal to n factorial times cn. Since we are looking for the coefficient cn, it means that cn is equal to the n derivative of f
+
+246
+00:41:34,556 --> 00:41:38,955
+at the point a always and factory.
+
+247
+00:41:45,523 --> 00:41:56,804
+So, we can write the coefficients of the power series with taking the derivative of the function.
+
+248
+00:41:57,763 --> 00:41:58,083
+Okay.
+
+249
+00:42:00,723 --> 00:42:10,723
+So, the coefficients can be written by using the derivative of the function.
+
+250
+00:42:15,476 --> 00:42:44,856
+So, we have the following theorem, which says, if you have a function f, which has the power series representation, like this, and which is centered at 8, it means that its interval of convergence is like this, then the coefficients cn are given by this formula.
+
+251
+00:42:48,275 --> 00:42:50,275
+ve a power series,
+
+252
+00:42:52,275 --> 00:42:56,275
+which can be written as the form
+
+253
+00:42:57,275 --> 00:42:58,275
+like here,
+
+254
+00:42:58,275 --> 00:43:00,275
+the coefficients are
+
+255
+00:43:00,275 --> 00:43:03,275
+the coefficients of this series are
+
+256
+00:43:03,275 --> 00:43:05,275
+in this form
+
+257
+00:43:06,275 --> 00:43:08,275
+is called Taylor series.
+
+258
+00:43:09,275 --> 00:43:10,275
+So,
+
+259
+00:43:10,275 --> 00:43:12,275
+you only write
+
+260
+00:43:13,275 --> 00:43:15,275
+in the Taylor series
+
+261
+00:43:15,275 --> 00:43:19,275
+cn or c the coefficient c0 to the cn
+
+262
+00:43:20,275 --> 00:43:23,275
+as the derivative of the function.
+
+263
+00:43:23,275 --> 00:43:26,275
+So, this is a Taylor series at the
+
+264
+00:43:27,275 --> 00:43:30,275
+with center a and if you
+
+265
+00:43:31,275 --> 00:43:34,275
+take a as 0
+
+266
+00:43:37,275 --> 00:43:40,275
+it means that a series with center 0
+
+267
+00:43:40,275 --> 00:43:43,275
+is called MacDoran series.
+
+268
+00:43:49,748 --> 00:44:01,108
+Okay. Taylor serisi, with center 0, is called Maclaurin serisi, and Taylor serisi, are power serisi,
+
+269
+00:44:01,947 --> 00:44:09,768
+which the coefficients of the power serisi can be represented as the derivative of the function.
+
+270
+00:44:14,195 --> 00:44:20,916
+Ok?
+
+271
+00:44:26,867 --> 00:44:29,228
+Can you hear me? Or are you sleeping?
+
+272
+00:44:36,371 --> 00:44:38,571
+[öğrenci] 6, Bik, ok.
+
+273
+00:44:45,748 --> 00:44:46,088
+Ok.
+
+274
+00:44:52,148 --> 00:45:12,488
+Let us look at the example. Find the Taylor series at a of the function, which is e to the x, and find its radius of convergence.
+
+275
+00:45:12,488 --> 00:45:21,807
+In the first case, let me look to the Taylor series of this function at a0.
+
+276
+00:45:22,068 --> 00:45:27,908
+Actually, this means that if we take a0, this is Maclaurin series.
+
+277
+00:45:37,460 --> 00:45:39,800
+I don't like these colors.
+
+278
+00:45:48,436 --> 00:45:56,436
+Which color do you like much? Blue or red? Which one?
+
+279
+00:45:59,731 --> 00:46:00,672
+Bulur, yes.
+
+280
+00:46:02,971 --> 00:46:04,851
+Ok, bir vaqulıyoruz, bulur.
+
+281
+00:46:10,068 --> 00:46:11,568
+We have no break [öğrenci].
+
+282
+00:46:18,068 --> 00:46:24,068
+Now, first of all, first of all,
+
+283
+00:46:28,980 --> 00:46:49,079
+f of x is equal to or has a power series representation of n 0 to the infinity cn times x minus a to the n.
+
+284
+00:46:49,079 --> 00:47:02,599
+and in Taylor series, we can write the coefficient cn with respect to the derivative of this function.
+
+285
+00:47:02,599 --> 00:47:09,400
+So this is equal to n 0 to infinity.
+
+286
+00:47:14,643 --> 00:47:30,423
+And derivative of f at point a over n factorial times x minus a to the n.
+
+287
+00:47:30,423 --> 00:47:56,423
+And this is equal to f a plus f prime a times x minus a plus f two prime a over two x minus a square plus
+
+288
+00:48:01,492 --> 00:48:17,652
+3rd power of f at the point a over 3 factorial, which is 6, x minus a cube, and goes on.
+
+289
+00:48:17,652 --> 00:48:35,972
+So, we have to find the ant derivative of function since f of x is equal to the e to the x, then we know that
+
+290
+00:48:40,083 --> 00:49:09,483
+So, every derivative of e to the x is equal to itself. So the ant derivative of f is equal to e to the x. And also, since a is 0, f n at point 0 is equal to a 0, e 0, sorry.
+
+291
+00:49:10,083 --> 00:49:23,043
+is equal to 1. Therefore, the Taylor series or Maclaurin series for this function is equal to
+
+292
+00:49:33,108 --> 00:49:34,807
+ve 0 to
+
+293
+00:49:34,807 --> 00:49:37,948
+infinity
+
+294
+00:49:42,708 --> 00:49:44,568
+FN, 0,
+
+295
+00:49:48,947 --> 00:50:18,947
+n! times x minus 0 to the n. So, this is equal to n! 0 to infinity. f n! 0 is 1. So, x to the n! over n! factorial.
+
+296
+00:50:18,947 --> 00:50:30,947
+We only take the derivative of the function and write their places in the Taylor series.
+
+297
+00:50:36,019 --> 00:50:40,019
+What about if we take AS2?
+
+298
+00:50:57,780 --> 00:50:58,780
+Oh sorry.
+
+299
+00:50:58,780 --> 00:51:01,780
+And find its radius of convergence.
+
+300
+00:51:01,780 --> 00:51:09,780
+So since this is a power series, you can use...
+
+301
+00:51:10,780 --> 00:51:16,780
+Why we have not enough place to write this solution?
+
+302
+00:51:16,780 --> 00:51:18,780
+Okay.
+
+303
+00:51:18,780 --> 00:51:26,780
+Since this is power series, use the ratio test to find its radius of convergence.
+
+304
+00:51:26,780 --> 00:51:53,780
+So limit and goes to the infinity absolute value of a n plus 1, which is x to the n plus 1 over n plus 1 factorial times n factorial x to the n.
+
+305
+00:51:53,780 --> 00:51:57,780
+So this limit is equal to...
+
+306
+00:52:02,356 --> 00:52:16,936
+Limit, and goes to the infinity, 1 over n plus 1 times absolute value of x.
+
+307
+00:52:17,596 --> 00:52:19,196
+What is the result of this limit?
+
+308
+00:52:28,244 --> 00:52:44,224
+0, so, it is smaller than 1, and converge for all x.
+
+309
+00:52:45,504 --> 00:52:55,864
+Therefore, the radius of convergence is infinity.
+
+310
+00:52:55,864 --> 00:52:57,264
+Ok.
+
+311
+00:53:10,164 --> 00:53:12,864
+ve if we take A as 2,
+
+312
+00:53:16,340 --> 00:53:17,440
+The Taylor seriyi
+
+313
+00:53:25,139 --> 00:53:44,359
+is given as n 0 to infinity, f n at the point 2 over n factorial times x minus 2 to the n.
+
+314
+00:53:44,359 --> 00:54:00,319
+So, what is f 2? It is e2. Therefore, this series is equal to.
+
+315
+00:54:05,012 --> 00:54:09,711
+İyi süker olur, M faktoriyon.
+
+316
+00:54:14,675 --> 00:54:22,315
+x-2 to the n, again by the ratio test,
+
+317
+00:54:34,003 --> 00:54:41,003
+ve
+
+318
+00:54:47,059 --> 00:54:47,420
+Ok?
+
+319
+00:54:53,204 --> 00:55:18,964
+Oh, we have some other examples. Now, let us take a very, very small break, 5 minutes break. Okay. We will continue at 2, 0, 5.
+
+320
+01:06:37,300 --> 01:06:51,580
+Sorry for the late, let us look at the example, maybe you can, maybe you already did this example.
+
+321
+01:06:58,996 --> 01:06:59,996
+Öncelikle,
+
+322
+01:07:02,496 --> 01:07:04,996
+ve hala da
+
+323
+01:07:04,996 --> 01:07:05,996
+yi derivative de
+
+324
+01:07:05,996 --> 01:07:28,996
+yi derivative
+
+325
+01:07:14,612 --> 01:07:36,372
+f of x is sin x, and the first derivative of sin x is cos x, second derivative, minus sin x,
+
+326
+01:07:52,820 --> 01:07:53,680
+çöp 1,
+
+327
+01:07:55,960 --> 01:07:57,240
+minus cosine,
+
+328
+01:08:01,652 --> 01:08:03,192
+vekiket bir şey.
+
+329
+01:08:11,188 --> 01:08:12,188
+sin x.
+
+330
+01:08:14,948 --> 01:08:22,627
+So, the cycle repeats after 4 derivative.
+
+331
+01:08:23,748 --> 01:08:29,788
+And since this is actually a, not x.
+
+332
+01:08:33,028 --> 01:08:36,748
+So, we are looking for the Maclaurin series.
+
+333
+01:08:37,748 --> 01:08:40,228
+Maclaurin series of sin x.
+
+334
+01:08:55,796 --> 01:08:55,956
+Eğer A'a 0'a, bu nektörn
+
+335
+01:09:11,188 --> 01:09:13,748
+So, F0 is
+
+336
+01:09:17,363 --> 01:09:22,763
+0, f'0'1,
+
+337
+01:09:28,595 --> 01:09:33,375
+If 2 prime 0 is 0,
+
+338
+01:09:37,939 --> 01:10:00,359
+F3'0'
+
+339
+01:10:04,212 --> 01:10:08,832
+f of x, which is sin x, is a ctrl.
+
+340
+01:10:14,547 --> 01:10:17,188
+0 to infinity.
+
+341
+01:10:20,979 --> 01:10:34,659
+f n 0 n factorial x to the n which is equal to f 0
+
+342
+01:10:38,259 --> 01:10:45,139
+f prime 0 x plus f 2 prime
+
+343
+01:10:45,139 --> 01:10:53,539
+0 over 2 x square plus
+
+344
+01:10:56,979 --> 01:10:59,059
+f 3 prime 0
+
+345
+01:11:01,379 --> 01:11:04,179
+over 6 x cube
+
+346
+01:11:10,420 --> 01:11:10,980
+problem.
+
+347
+01:11:12,980 --> 01:11:13,460
+So,
+
+348
+01:11:15,380 --> 01:11:18,899
+this is equal to
+
+349
+01:11:26,644 --> 01:11:54,204
+F0 is 0, F' 0 is 1, so this is equal to X minus X cubed over 3 factorial plus X to the 5 over 5 factorial minus
+
+350
+01:11:56,644 --> 01:12:14,764
+X to the 7 over 7 factorial and goes on, which is equal to power series, which we can write this as minus 1 to the n.
+
+351
+01:12:19,060 --> 01:12:30,400
+x2, 2n plus 1 over 2n plus 1 factory.
+
+352
+01:12:35,731 --> 01:12:45,631
+So, we have found the power series representation of the function sine x.
+
+353
+01:12:45,631 --> 01:12:48,072
+Okay.
+
+354
+01:13:02,804 --> 01:13:24,804
+Sine x is a power series, centered at x is equal to pi over 3. It means that find the Taylor series of sine x at point, this is not actually x, this is a.
+
+355
+01:13:37,587 --> 01:13:40,567
+Şimdi, aynı zamanda, aynı zamanda,
+
+356
+01:13:40,567 --> 01:13:43,567
+o kadar daha yüksek derivadilerimiz var.
+
+357
+01:13:50,676 --> 01:13:55,796
+sin x, f'x, cos x.
+
+358
+01:14:27,028 --> 01:14:57,007
+2x, sin x, and writing a as pi over 3, we have pi over 3, is equal to square root 3 over 2, and f prime pi over 3, which is cosine pi over 3, and equal to 1 over 3.
+
+359
+01:14:57,028 --> 01:14:57,288
+4,
+
+360
+01:15:02,355 --> 01:15:13,235
+f2' pi over 3 is equal to minus square root 3 over 2.
+
+361
+01:15:15,055 --> 01:15:26,416
+And third derivative of f at the point pi over 3, we have minus 1 over 2.
+
+362
+01:15:26,416 --> 01:15:36,795
+And the last one, f2' 4, pi over 3.
+
+363
+01:15:42,195 --> 01:15:43,796
+is equal to
+
+364
+01:15:43,796 --> 01:15:47,916
+square root
+
+365
+01:15:47,916 --> 01:15:49,036
+3
+
+366
+01:15:49,036 --> 01:15:51,496
+over 2.
+
+367
+01:15:52,576 --> 01:15:53,355
+So,
+
+368
+01:15:54,355 --> 01:15:56,735
+the Taylor series for this function
+
+369
+01:15:56,735 --> 01:15:59,855
+is
+
+370
+01:16:21,619 --> 01:16:23,380
+And zero to the infinity.
+
+371
+01:16:29,427 --> 01:16:44,667
+f to the n at the point pi over 3 over n factorial times x minus pi over 3 to the n.
+
+372
+01:16:54,292 --> 01:16:56,292
+Bu, bu, Kul'ta.
+
+373
+01:17:01,011 --> 01:17:13,131
+Sq. root 3 over 2 plus 1 over 2 times x minus pi over 3 minus
+
+374
+01:17:17,619 --> 01:17:21,979
+3 over 2 times 2 faktoril.
+
+375
+01:17:26,420 --> 01:17:32,119
+x minus pi over 3 to the 2 minus
+
+376
+01:17:35,764 --> 01:17:42,923
+1 over 2 times 3 factorial, x minus,
+
+377
+01:17:47,667 --> 01:17:49,667
+5 over 3, cube
+
+378
+01:17:51,667 --> 01:17:53,667
+and goes on
+
+379
+01:17:55,667 --> 01:17:57,667
+so
+
+380
+01:18:07,828 --> 01:18:16,088
+We have some terms are negative and some terms are positive.
+
+381
+01:18:19,796 --> 01:18:22,216
+You can write this sum as
+
+382
+01:18:32,884 --> 01:18:35,123
+0 to infinity
+
+383
+01:18:41,108 --> 01:18:45,748
+Minus 1 to the n.
+
+384
+01:18:50,420 --> 01:18:55,600
+Ski, alınma 3, 2x,
+
+385
+01:19:01,876 --> 01:19:03,355
+Şu an, faktoril.
+
+386
+01:19:07,252 --> 01:19:20,292
+x minus pi over 3 to the 2n, this is for the even degrees plus
+
+387
+01:19:31,220 --> 01:19:39,460
+0 to the infinity minus 1 to the n square root.
+
+388
+01:19:41,180 --> 01:19:42,020
+No, square root.
+
+389
+01:19:46,387 --> 01:20:15,387
+bu
+
+390
+01:20:00,307 --> 01:20:11,988
+2n plus 1 factorial, x minus pi over 3 to the 2n plus 1.
+
+391
+01:20:16,083 --> 01:20:16,543
+Ok.
+
+392
+01:20:23,539 --> 01:20:32,539
+Find the Taylor series for cosine x at 0, or find the Microna series for function cosine x.
+
+393
+01:20:32,539 --> 01:20:38,539
+Actually, you can find or you can compute.
+
+394
+01:20:43,028 --> 01:20:48,528
+The high derivatives of function and...
+
+395
+01:20:52,948 --> 01:21:11,788
+Bu, bu
+
+396
+01:21:24,787 --> 01:21:27,287
+instead of this, since
+
+397
+01:21:32,659 --> 01:21:37,859
+Cosine x is the derivative of sine x.
+
+398
+01:21:38,979 --> 01:21:45,079
+And we have the Macdonald series for the sine x here.
+
+399
+01:21:46,359 --> 01:21:51,319
+So we only take the derivative of this power series.
+
+400
+01:21:51,319 --> 01:21:55,159
+We also know how to take the derivative of the power series.
+
+401
+01:21:55,159 --> 01:22:08,779
+So cosine x is equal to the derivative of what is the series representation of sine x.
+
+402
+01:22:08,779 --> 01:22:14,680
+And 0 to infinity minus 1 to the n.
+
+403
+01:22:17,119 --> 01:22:25,460
+X to the 2n plus 1 over 2n plus 1 factorial.
+
+404
+01:22:25,460 --> 01:22:35,899
+So cosine x is equal to the derivative of this.
+
+405
+01:22:35,899 --> 01:22:37,899
+We have...
+
+406
+01:22:45,876 --> 01:22:47,576
+0 to infinity.
+
+407
+01:22:52,307 --> 01:22:57,887
+Minus 1 to the n, 2n plus 1.
+
+408
+01:23:01,460 --> 01:23:02,819
+x to the 2 n
+
+409
+01:23:02,819 --> 01:23:05,980
+over
+
+410
+01:23:11,859 --> 01:23:15,259
+2n plus 1!
+
+411
+01:23:15,259 --> 01:23:19,619
+So, we have 2n plus 1 and 2n plus 1 here.
+
+412
+01:23:19,619 --> 01:23:23,259
+So, we can cancel it.
+
+413
+01:23:24,539 --> 01:23:37,219
+This is equal to n 0 to infinity minus 1 to the n x to the 2n over 2n factorial.
+
+414
+01:23:39,219 --> 01:23:39,579
+Okay.
+
+415
+01:23:45,587 --> 01:24:13,268
+This is the easiest way to find the Maclaurin series of cosine x. And also we have a Taylor polynomial. By taking the part of the series to the n, it's called the nth Taylor polynomial of f.
+
+416
+01:24:13,268 --> 01:24:20,307
+And if you take a as 0, this is the Maclaurin polynomial for f.
+
+417
+01:24:20,307 --> 01:24:21,587
+Okay.
+
+418
+01:24:27,572 --> 01:24:35,431
+Find the Taylor series for 1 over x at x1. This is actually a1.
+
+419
+01:24:54,323 --> 01:24:58,603
+Actually, this is homework for you.
+
+420
+01:25:09,043 --> 01:25:09,703
+Onluk.
+
+421
+01:25:15,347 --> 01:25:27,347
+ve bu Maclaurin'in serisi için, bu Maclaurin'in serisi için çok önemli. Bu, bu tablaların serisi için çok önemli.
+
+422
+01:25:33,492 --> 01:25:53,132
+We have found e x, sin x, cos x. We have already known 1 over 1 minus x. We also find this and this one. And this is very similar to this one. So, you have to know this table. Okay, this table is very important.
+
+423
+01:26:03,091 --> 01:26:26,351
+And, for example, using this table or using the equation from here, write each function as the sum of Macdonald series.
+
+424
+01:26:26,351 --> 01:26:29,331
+For the first one.
+
+425
+01:26:41,460 --> 01:26:42,239
+Siz,
+
+426
+01:26:50,387 --> 01:27:09,068
+Cosine x, the Taylor series, sorry, Maclaurin series for cosine x is equal to, from here, we have minus 1 to the n, x to the 2n.
+
+427
+01:27:13,203 --> 01:27:26,203
+0 to infinity minus 1 to the n x to the 2n over 2n factorial.
+
+428
+01:27:26,203 --> 01:27:51,203
+We only write x as square root x. So cosine square root x is equal to n 0 to infinity minus 1 to the n.
+
+429
+01:27:51,203 --> 01:28:01,203
+Write x as square root x to the 2n over 2n factorial.
+
+430
+01:28:08,564 --> 01:28:10,344
+Bu, bu, kultu.
+
+431
+01:28:14,547 --> 01:28:40,987
+n0 to infinity, minus 1 to the n, and this is equal to x to the n, over 2n factorial, or you can write several terms of this series, s, for n0, this is 1, for n1, we have x over 2 factorial, for n2, we have plus
+
+432
+01:28:46,100 --> 01:28:53,620
+x² over 4! ve 4 ve 3,
+
+433
+01:28:53,620 --> 01:29:00,860
+we have x³ over 6!
+
+434
+01:29:00,860 --> 01:29:02,780
+and goes on.
+
+435
+01:29:02,780 --> 01:29:04,780
+OK!
+
+436
+01:29:07,891 --> 01:29:12,931
+And what about the second one? Sin hyperbolic x.
+
+437
+01:29:19,699 --> 01:29:34,479
+To solve this example, or to write sine hyperbolic x as the sum of Maclaurin series, you have to know the definition of sine hyperbolic x.
+
+438
+01:29:38,996 --> 01:29:42,355
+sin hypervali x
+
+439
+01:29:42,355 --> 01:29:44,456
+is the call to
+
+440
+01:29:48,148 --> 01:29:54,268
+e to the x minus e to the minus x over 2.
+
+441
+01:29:56,648 --> 01:30:08,507
+So, we know the Macdonald series for e to the x, and using this one, we can also write the Macdonald series for e to the minus x.
+
+442
+01:30:25,395 --> 01:30:31,815
+Macdonaldan series ne var? E'ye de x'ye de x'ye de n'ye
+
+443
+01:30:34,996 --> 01:30:35,996
+So...
+
+444
+01:30:43,347 --> 01:30:59,127
+n0 to the infinity, x to the n over n factorial, minus n0 to the infinity,
+
+445
+01:31:05,332 --> 01:31:13,672
+minus x to the n over n factorial over 2.
+
+446
+01:31:16,012 --> 01:31:22,952
+Now, now, this is equal to,
+
+447
+01:31:22,952 --> 01:31:27,832
+and 0 to the infinity
+
+448
+01:31:27,832 --> 01:31:32,212
+x to the n
+
+449
+01:31:32,212 --> 01:31:33,811
+minus
+
+450
+01:31:33,811 --> 01:31:37,212
+minus x to the n
+
+451
+01:31:37,212 --> 01:31:38,932
+over
+
+452
+01:31:42,739 --> 01:31:50,939
+Ağız, en fatürük ve her yerine, 2.
+
+453
+01:31:57,171 --> 01:32:01,171
+ok, bunu ilk önce yazıyoruz.
+
+454
+01:32:01,171 --> 01:32:04,171
+Şimdi, bu, n'a burada.
+
+455
+01:32:04,171 --> 01:32:09,171
+4, n'a,
+
+456
+01:32:15,283 --> 01:32:16,283
+This term
+
+457
+01:32:23,828 --> 01:32:42,388
+This term. Since this is even, this is positive. So it means that xn minus x to the n. So this is 0. This term is 0.
+
+458
+01:32:42,388 --> 01:32:45,008
+For an odd.
+
+459
+01:32:51,828 --> 01:33:21,828
+Bu n-o'de, bu n-o'de, bu n-o'de, bu n-o'de, bu n-o'de, bu n-o'de, bu n-o'de, bu n-o'de, bu n-o'de, bu n-o'de, bu n-o'de, bu n-o'de, bu n-o'de, bu n-o'de, bu n-o'de, bu n-o'de, bu n-o'de, bu n-o'de, bu n-o'de, bu n-o'de, bu n-o'de, bu n-o'de, bu n-o'de, bu n-o'de, bu n-o'de, bu n-o'de, bu n-o'de, bu n-o'de, bu n-o'de, bu n-o'de, bu n-o'de, bu n-o'de
+
+460
+01:33:21,828 --> 01:33:32,468
+sine hyperbaric x has only odd terms, or only odd order terms, and this is equal to
+
+461
+01:33:38,420 --> 01:33:42,159
+Bu, bu, bir kodol.
+
+462
+01:33:46,579 --> 01:33:53,819
+n 0 to infinity, 2x to the n, we have
+
+463
+01:34:09,076 --> 01:34:09,515
+Söyle.
+
+464
+01:34:20,819 --> 01:34:28,399
+We can write this as 2x to the n over n factorial.
+
+465
+01:34:45,460 --> 01:34:56,420
+But, we have to write n as odd, because if n is even, then it is zero. So we have to write this as
+
+466
+01:35:01,171 --> 01:35:24,511
+x to do, x to do, 2 and plus 1 over, 2 and plus 1 factorial, because, it has, only,
+
+467
+01:35:30,739 --> 01:35:32,119
+Old Old Old Times
+
+468
+01:35:42,612 --> 01:35:50,851
+Bu, bu, homework for you. Find the Maclaurin series for sine x2r. On the right,
+
+469
+01:35:53,492 --> 01:35:59,672
+instead of x, x2r, in the Maclaurin series of sine x, which is very easy.
+
+470
+01:36:01,672 --> 01:36:03,912
+Maybe this one is
+
+471
+01:36:07,667 --> 01:36:09,927
+Hard to see how to solve this one.
+
+472
+01:36:15,572 --> 01:36:17,112
+Sama bu serisi.
+
+473
+01:36:19,152 --> 01:36:27,971
+So, if you want to find the sum of the series, first of all, you can write the compact form of this series.
+
+474
+01:36:27,971 --> 01:36:32,971
+So, this is equal to
+
+475
+01:36:32,971 --> 01:36:38,032
+1 over 1 times 2 minus
+
+476
+01:36:38,032 --> 01:36:41,632
+1 over 2 times 2 squared
+
+477
+01:36:41,632 --> 01:36:42,832
+plus
+
+478
+01:36:42,832 --> 01:36:45,872
+1 over 3 times
+
+479
+01:36:45,872 --> 01:36:47,551
+2 to the 3
+
+480
+01:36:47,551 --> 01:36:51,431
+minus 1 over 4 times
+
+481
+01:36:51,431 --> 01:36:54,252
+2 to the 4
+
+482
+01:36:54,252 --> 01:36:55,692
+and goes on.
+
+483
+01:36:55,692 --> 01:36:58,212
+So, how can we represent or
+
+484
+01:36:58,212 --> 01:37:01,652
+how can we write this as a power series?
+
+485
+01:37:01,652 --> 01:37:03,891
+This is actually
+
+486
+01:37:03,891 --> 01:37:05,172
+equal to the
+
+487
+01:37:05,172 --> 01:37:11,292
+we have minus 1 to the n
+
+488
+01:37:15,507 --> 01:37:17,507
+Çünkü bu alternatif serisi.
+
+489
+01:37:19,747 --> 01:37:23,507
+Ve 1 over...
+
+490
+01:37:29,268 --> 01:37:34,387
+1 over n.
+
+491
+01:37:36,948 --> 01:37:37,288
+Oh.
+
+492
+01:37:39,127 --> 01:37:39,927
+1 over n.
+
+493
+01:37:40,007 --> 01:37:40,347
+Okay.
+
+494
+01:37:41,467 --> 01:37:43,648
+Okay, this is n minus 1.
+
+495
+01:37:44,268 --> 01:37:46,127
+And n begins with 1.
+
+496
+01:37:48,207 --> 01:37:52,288
+Because we have n in the denominator,
+
+497
+01:37:52,908 --> 01:37:55,228
+we cannot take n as 0.
+
+498
+01:37:55,228 --> 01:37:57,948
+So, I begin n with 1.
+
+499
+01:37:58,688 --> 01:38:01,247
+And take minus 1 to the n minus 1.
+
+500
+01:38:01,568 --> 01:38:02,988
+1 over n times
+
+501
+01:38:02,988 --> 01:38:05,807
+This is
+
+502
+01:38:09,747 --> 01:38:11,747
+2 to the n.
+
+503
+01:38:14,727 --> 01:38:15,047
+Okay.
+
+504
+01:38:16,127 --> 01:38:19,947
+We can write this as the power series like this.
+
+505
+01:38:22,527 --> 01:38:25,447
+And this is actually
+
+506
+01:38:30,420 --> 01:38:32,420
+ve 1 to the infinity.
+
+507
+01:38:35,828 --> 01:38:36,548
+Çeydi!
+
+508
+01:38:43,891 --> 01:38:44,652
+İhid.
+
+509
+01:38:48,564 --> 01:38:52,164
+Minus 1, so da M minus 1,
+
+510
+01:38:56,467 --> 01:39:03,347
+1 over 2 to the n over n.
+
+511
+01:39:10,707 --> 01:39:20,887
+ve mcdonaldı mcdonaldı m1 plus x,
+
+512
+01:39:20,887 --> 01:39:21,787
+here.
+
+513
+01:39:26,260 --> 01:39:35,260
+Bu, bizim için, x'e 1 over 2.
+
+514
+01:39:40,275 --> 01:39:56,715
+Bu, bu
+
+515
+01:40:00,000 --> 01:40:00,180
+Ok?
+
+516
+01:40:21,363 --> 01:40:51,363
+Şimdi bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu ör
+
+517
+01:40:51,363 --> 01:40:58,683
+0 over 0, and using the logitest rule, you can easily find
+
+518
+01:41:03,412 --> 01:41:14,811
+You can easily find the limit of this function, which is e to the x minus 1 over 2x.
+
+519
+01:41:15,811 --> 01:41:18,972
+Again, this is 0 over 0.
+
+520
+01:41:20,332 --> 01:41:20,972
+Taking...
+
+521
+01:41:24,884 --> 01:41:28,144
+Orada, using Lotus Rule, again, we have
+
+522
+01:41:33,876 --> 01:41:41,756
+e to the x over 2, which is 1 over 2.
+
+523
+01:41:41,756 --> 01:41:56,636
+Now, using the power series representation of e to the x, let us find the limit of this is equal to 1 over 2.
+
+524
+01:42:00,340 --> 01:42:05,380
+Remember that, what is the Macduin series of e to the x?
+
+525
+01:42:06,819 --> 01:42:26,640
+e to the x is equal to x to the n over n factorial, or we can write this as 1 plus x plus x square over 2 plus x cube over 6
+
+526
+01:42:26,640 --> 01:42:34,159
+plus x to the 4 over 24 and 4.
+
+527
+01:42:35,360 --> 01:42:46,640
+So writing this in its place in the limit, this limit is equal to limit x goes to 0.
+
+528
+01:42:51,412 --> 01:43:21,391
+e to x minus 1 minus x, over x square is equal to, limit, x goes to the 0, e to the x is this one, 1 plus x, 1 plus x, plus x square over 2,
+
+529
+01:43:21,412 --> 01:43:43,512
+plus x cube over 6, and goes on, minus 1, minus x, over x to the, sorry, over x square, so, cancelling 1 and x,
+
+530
+01:43:49,619 --> 01:43:59,840
+We have, this limit is equal to, limit x goes to the zero.
+
+531
+01:44:06,547 --> 01:44:14,367
+x2 over 2, plus x3 over 6,
+
+532
+01:44:21,043 --> 01:44:41,323
+X2. Now, writing X as 0, we have again 0 or 0 in determinate form. And using Lagrange çarpanı, we have the limit of this series or this function is
+
+533
+01:44:46,323 --> 01:45:15,923
+2x over 2, we only have x here, x plus, 2x yuker, over 6, 2x, so, so, the limit is equal to, 1 over,
+
+534
+01:45:16,323 --> 01:45:28,323
+2, it means that we can compute the limit of a function by using its representation of power series.
+
+535
+01:45:28,323 --> 01:45:36,983
+Okay, we write e x as the power series, Maclaurin series, then find its limit.
+
+536
+01:45:36,983 --> 01:45:47,623
+Again, we can evaluate or we can compute this integral by using
+
+537
+01:45:47,623 --> 01:45:48,623
+and...
+
+538
+01:45:48,623 --> 01:46:11,623
+...
+
+539
+01:45:53,971 --> 01:46:03,652
+No
+
+540
+01:45:59,283 --> 01:46:16,483
+e to the minus x to the n over n factorial. So this is equal to n zero to infinity minus x to the n over n factorial.
+
+541
+01:46:16,483 --> 01:46:29,683
+So this is equal to n zero to infinity minus one to the n, x to the n over n factorial.
+
+542
+01:46:29,683 --> 01:46:35,283
+Or we can write some several terms of this series, which is one minus.
+
+543
+01:46:39,283 --> 01:46:54,563
+x square plus x to the 4 over 2 minus x to the 6 over 6 and goes on.
+
+544
+01:46:54,563 --> 01:46:58,943
+therefore, for all x,
+
+545
+01:47:02,644 --> 01:47:09,043
+Therefore, the integral of this function is equal to
+
+546
+01:47:14,612 --> 01:47:18,152
+Actually, we cannot compute this integral.
+
+547
+01:47:21,112 --> 01:47:27,771
+If we don't use this power series representation, you cannot compute this integral.
+
+548
+01:47:29,692 --> 01:47:36,872
+The only way to compute this integral is using the Maclaurin series of this function.
+
+549
+01:47:37,431 --> 01:47:43,771
+So, the power series representation of functions are very important in calculus.
+
+550
+01:47:44,612 --> 01:47:47,072
+especially in the fascial calculus.
+
+551
+01:47:48,431 --> 01:47:51,271
+So, this is the kutu, the integral of...
+
+552
+01:47:54,676 --> 01:47:58,476
+and 0 to the infinity minus 1 to the n,
+
+553
+01:48:00,476 --> 01:48:03,676
+x to the 2n over n factorial.
+
+554
+01:48:04,676 --> 01:48:09,676
+And this integral is equal to
+
+555
+01:48:10,676 --> 01:48:12,676
+c plus
+
+556
+01:48:14,676 --> 01:48:20,276
+and 0 to the infinity minus 1 to the n,
+
+557
+01:48:20,676 --> 01:48:23,476
+x to the 2n plus 1,
+
+558
+01:48:23,476 --> 01:48:31,476
+x to the infinity minus 1 over 2n plus 1 times n factorial.
+
+559
+01:48:34,676 --> 01:48:35,176
+Tamam.
+
+560
+01:48:37,736 --> 01:48:40,615
+The main examples are homework for you.
+
+561
+01:48:42,316 --> 01:48:44,396
+Again, if we have enough time,
+
+562
+01:48:46,076 --> 01:48:47,756
+in the previous week,
+
+563
+01:48:47,756 --> 01:48:50,756
+we will solve all of these examples.
+
+564
+01:48:52,476 --> 01:48:52,596
+Okay.
+
+565
+01:48:55,716 --> 01:48:58,476
+Any questions, comments, or anything?
+
+566
+01:49:01,115 --> 01:49:02,796
+No, hocam, clear.
+
+567
+01:49:04,676 --> 01:49:05,756
+We speak.
+
+568
+01:49:12,819 --> 01:49:14,000
+What is your name?
+
+569
+01:49:17,239 --> 01:49:17,799
+[öğrenci].
+
+570
+01:49:19,059 --> 01:49:20,099
+[öğrenci], thank you.
+
+571
+01:49:22,139 --> 01:49:23,579
+So, hope to see you
+
+572
+01:49:23,579 --> 01:49:25,779
+in the
+
+573
+01:49:25,779 --> 01:49:28,819
+next week
+
+574
+01:49:28,819 --> 01:49:30,439
+and have a nice day
+
+575
+01:49:30,439 --> 01:49:32,579
+all of you. I also
+
+576
+01:49:32,579 --> 01:49:34,199
+upload these notes
+
+577
+01:49:34,199 --> 01:49:36,460
+to your list symbol
+
+578
+01:49:36,460 --> 01:49:38,779
+and you can
+
+579
+01:49:38,779 --> 01:49:42,579
+find the examples
+
+580
+01:49:42,579 --> 01:49:44,019
+and
+
+581
+01:49:44,019 --> 01:49:44,420
+there
+
+582
+01:49:44,420 --> 01:50:12,579
+and
+
+583
+01:49:48,627 --> 01:49:50,827
+So, see you and take care.

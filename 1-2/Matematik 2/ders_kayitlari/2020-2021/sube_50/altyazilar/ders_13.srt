@@ -1,0 +1,3243 @@
+1
+00:00:33,268 --> 00:00:33,807
+Good morning.
+
+2
+00:01:15,475 --> 00:01:16,956
+Good morning, can you hear me?
+
+3
+00:01:25,396 --> 00:01:26,156
+Tamam, iyi.
+
+4
+00:01:57,012 --> 00:02:12,692
+Last week we were talking about vectors, the inner product of vectors, the cross product, and finally, we gave the equation of a line in space.
+
+5
+00:02:12,692 --> 00:02:30,692
+First, I want to remember the equation of a line in a space in three-dimensional space or in a space or in R cube.
+
+6
+00:02:31,972 --> 00:02:42,192
+A line L is determined when we know a point on this line and the direction of this line.
+
+7
+00:02:42,692 --> 00:02:49,171
+So, if we are working on a three-dimensional space,
+
+8
+00:02:55,156 --> 00:03:06,776
+z, y, x, and let we have a line L.
+
+9
+00:03:33,364 --> 00:03:38,403
+If we have a point P0 on this line here,
+
+10
+00:03:44,211 --> 00:03:50,431
+x0, y0, z0.
+
+11
+00:03:53,876 --> 00:04:06,855
+And this line L can be described by a vector and let V be a vector parallel to the L.
+
+12
+00:04:39,572 --> 00:04:52,012
+bu ve
+
+13
+00:04:57,076 --> 00:04:59,316
+Arbitrary point,
+
+14
+00:04:59,316 --> 00:05:03,136
+P,
+
+15
+00:05:08,564 --> 00:05:16,064
+On this line, P is x, y, and z.
+
+16
+00:05:18,463 --> 00:05:28,124
+And let R0 and R be the position vectors of P0 and P.
+
+17
+00:05:29,124 --> 00:05:31,963
+So we have position vectors.
+
+18
+00:05:46,291 --> 00:05:47,012
+0,
+
+19
+00:05:58,836 --> 00:06:05,836
+ve
+
+20
+00:06:10,836 --> 00:06:17,896
+This is the position vector r0, and this is the position vector of p, which is r.
+
+21
+00:06:22,483 --> 00:06:46,563
+If a is the vector with representation p0p, this is the vector a, and from the triangle law for vector addition, we have r is equal to r is equal to r0 plus
+
+22
+00:06:52,244 --> 00:06:52,744
+A.
+
+23
+00:06:53,744 --> 00:06:55,304
+These are all vectors.
+
+24
+00:06:58,836 --> 00:07:27,036
+Since, since the line L, also the vector A is parallel to the vector V, we have a scalar T such that since A is parallel to the vector V, we have a scalar T, for scalar T,
+
+25
+00:07:28,836 --> 00:07:55,855
+we have a is equal to T times the vector V. Therefore, therefore we have r is equal to r0 plus T times the vector V.
+
+26
+00:07:55,855 --> 00:08:06,735
+and this is called the vector representation of r.
+
+27
+00:08:10,995 --> 00:08:20,315
+t is between infinity and minus infinity.
+
+28
+00:08:20,315 --> 00:08:27,735
+We have already know this vector representation of a line in three-dimensional space.
+
+29
+00:08:27,735 --> 00:08:50,135
+And also, also, using this equation, we have the parametric representation of L with the parameter t s, x is equal to x0 plus a times t,
+
+30
+00:08:50,135 --> 00:08:56,535
+and y is equal to y0 plus b times t,
+
+31
+00:08:56,535 --> 00:09:07,175
+and z is equal to z0 plus c times t,
+
+32
+00:09:07,175 --> 00:09:11,556
+where
+
+33
+00:09:11,556 --> 00:09:14,135
+p is
+
+34
+00:09:14,135 --> 00:09:18,735
+a point x0, y0, z0,
+
+35
+00:09:18,735 --> 00:09:23,355
+and v is equal to z0, and v is a vector parallel to the line,
+
+36
+00:09:23,355 --> 00:09:25,615
+and given y,
+
+37
+00:09:25,615 --> 00:09:29,615
+a, b, c.
+
+38
+00:09:29,615 --> 00:09:32,336
+This is the
+
+39
+00:09:32,336 --> 00:09:35,056
+parametric representation of L.
+
+40
+00:09:44,563 --> 00:09:49,683
+This is the vector's representation of L.
+
+41
+00:09:57,491 --> 00:09:58,491
+ve, finally,
+
+42
+00:10:07,091 --> 00:10:35,891
+If we use this parametric representation and factor at t in each equation, we have, we have from here, t is equal to x minus x0 over a, and from the second equation, t is equal to y minus y0 over b,
+
+43
+00:10:37,091 --> 00:10:55,511
+and from the last equation, we have t is equal to z minus z minus z0 over c, and this is the symmetric representation of l.
+
+44
+00:11:08,916 --> 00:11:35,116
+Okay. We all know these definitions. So, we have two examples from last week. Let us first solve these examples and then talk about, we will talk about an equation of a plane in three-dimensional space.
+
+45
+00:11:35,116 --> 00:11:45,855
+Find a vector equation and parametric equations for the line that passes through the point and is parallel to the vectors.
+
+46
+00:11:47,416 --> 00:12:00,936
+And in B, find two other points on the line. Here, we have a point. Again, we have three-dimensional space.
+
+47
+00:12:09,908 --> 00:12:10,548
+Z
+
+48
+00:12:15,379 --> 00:12:20,379
+y and x.
+
+49
+00:12:22,379 --> 00:12:24,220
+We have a vector,
+
+50
+00:12:27,340 --> 00:12:29,299
+position vector r0,
+
+51
+00:12:32,100 --> 00:12:34,539
+which is 5, 1, 3.
+
+52
+00:12:45,620 --> 00:12:50,340
+ve her yerler, line add.
+
+53
+00:13:27,443 --> 00:13:31,443
+So, line L, k.
+
+54
+00:13:37,779 --> 00:13:55,000
+We have three-dimensional space, z, x, y. We have a point, 5, 1, 3. So the position vector of this vector is r0.
+
+55
+00:14:02,740 --> 00:14:18,519
+R0 is equal to 5, 1, 3, which is actually equal to 5i plus j plus 3k.
+
+56
+00:14:24,628 --> 00:14:32,168
+Ve bu ve v'ye ve bu ve v'ye ve bu ve v'ye ve bu ve v'ye ve bu ve v'ye ve bu ve v'ye ve bu ve v'ye ve bu ve v'ye ve bu ve v'ye ve bu ve v'ye ve bu ve v'ye ve bu ve v'ye ve bu ve v'ye ve bu ve v'ye ve bu ve v'ye ve bu ve v'ye ve bu ve v'ye ve bu ve v'ye ve bu ve v'ye ve bu ve v'ye ve bu ve v'ye ve bu ve v'ye ve bu ve v'ye ve bu ve v'ye ve bu ve v'ye ve bu ve v'ye ve bu ve v'ye ve bu ve v'ye ve bu ve v'ye ve bu ve v'ye ve bu ve v'ye ve bu ve v'ye ve bu ve v'ye ve bu ve v'ye ve bu ve v'ye ve bu ve v'ye ve bu ve v'ye ve
+
+57
+00:14:36,340 --> 00:14:42,740
+i plus 4 times j plus minus 42 times k.
+
+58
+00:14:43,740 --> 00:14:46,740
+This is the vector, so...
+
+59
+00:14:49,235 --> 00:14:56,056
+Vektor, which is parallel to the, this line, is V.
+
+60
+00:15:01,875 --> 00:15:03,716
+This is the vector V.
+
+61
+00:15:07,700 --> 00:15:09,700
+ve bu, yada al.
+
+62
+00:15:14,355 --> 00:15:31,515
+Now, from the equation of a line in three-dimensional space, we have r is equal to r0 plus t times v.
+
+63
+00:15:32,316 --> 00:15:36,635
+This is the vector equation of a line in three-dimensional space.
+
+64
+00:15:36,635 --> 00:15:38,775
+We have r0, we have v.
+
+65
+00:15:38,775 --> 00:15:42,775
+So, r is equal to...
+
+66
+00:15:47,572 --> 00:16:05,552
+5i plus j plus 3 times k plus t times v i plus 4j minus 2k.
+
+67
+00:16:05,552 --> 00:16:19,892
+Therefore, we have, we have, r is equal to 5 plus ti.
+
+68
+00:16:26,419 --> 00:16:32,500
+1 plus 4 times tj
+
+69
+00:16:39,764 --> 00:16:44,303
+plus 3 minus 2 tk.
+
+70
+00:16:49,172 --> 00:17:01,451
+This is the vector equation of a line that passes through the point 513 and is parallel to the vectors uvi.
+
+71
+00:17:03,072 --> 00:17:03,372
+Okay.
+
+72
+00:17:04,372 --> 00:17:14,971
+We can also write, this is the vector equation, sorry, and the parametric equations is,
+
+73
+00:17:14,971 --> 00:17:17,971
+x is equal to
+
+74
+00:17:17,971 --> 00:17:21,451
+x0 plus
+
+75
+00:17:21,451 --> 00:17:26,251
+a times t, x0 is here, 5
+
+76
+00:17:26,251 --> 00:17:29,612
+5
+
+77
+00:17:29,612 --> 00:17:30,771
+plus
+
+78
+00:17:30,771 --> 00:17:33,072
+t times
+
+79
+00:17:33,072 --> 00:17:34,892
+a
+
+80
+00:17:34,892 --> 00:17:37,392
+a is 1
+
+81
+00:17:41,140 --> 00:18:03,480
+This is vector v, which is given by a, b, c. So a is 1, b is 4, and c is minus 2. And this is the point, p0, x0, y0, z0.
+
+82
+00:18:03,480 --> 00:18:11,400
+So x0 is 5, and a is 1. So 1 times t.
+
+83
+00:18:15,380 --> 00:18:34,980
+y is equal to 1 plus 40, and z is equal to 3 times, sorry, 3 plus minus 2t, so this is 3 minus 2t.
+
+84
+00:18:36,580 --> 00:18:39,860
+This is parametric equations.
+
+85
+00:18:48,531 --> 00:18:52,192
+vektör ekran.
+
+86
+00:19:02,804 --> 00:19:03,184
+Okay.
+
+87
+00:19:05,224 --> 00:19:11,444
+And in B, find two other points on the line.
+
+88
+00:19:12,403 --> 00:19:25,744
+Actually, you can find infinitely many points on this line, choosing the parameter value between 0 and 1.
+
+89
+00:19:25,744 --> 00:19:35,124
+So, choosing the parameter value t as 1 in B.
+
+90
+00:19:38,996 --> 00:19:47,836
+B, seçim t as 1,
+
+91
+00:19:50,355 --> 00:19:59,476
+it gives, if we take t as 1 from here, x is 6.
+
+92
+00:20:03,476 --> 00:20:05,716
+y is 5
+
+93
+00:20:10,355 --> 00:20:13,256
+Z is 1.
+
+94
+00:20:20,852 --> 00:20:47,732
+So, the first point is 651. And if you take, actually you can take t as real numbers between minus 2, minus infinity and infinity. But, but, okay, here we take t as minus 1.
+
+95
+00:20:53,940 --> 00:20:55,740
+Then we have point
+
+96
+00:20:55,740 --> 00:20:58,880
+4
+
+97
+00:21:04,884 --> 00:21:07,963
+Minus 1, sorry, minus 3,
+
+98
+00:21:07,963 --> 00:21:13,003
+and 5.
+
+99
+00:21:23,028 --> 00:21:23,387
+Ok?
+
+100
+00:21:28,915 --> 00:21:58,915
+Fakat bu parametre ve yi
+
+101
+00:21:58,915 --> 00:22:28,895
+or in a space first in here we are not given a vector parallel to this line so first we have to find a vector which is parallel to this line because we know that the equation of a line in three dimensional space is determined by a point
+
+102
+00:22:28,915 --> 00:22:45,316
+and a vector which is parallel to this line so so how can we find a vector which is parallel to this line
+
+103
+00:22:45,316 --> 00:22:53,935
+which vector is parallel to this line what do you think
+
+104
+00:23:08,339 --> 00:23:08,939
+Okay.
+
+105
+00:23:12,627 --> 00:23:17,147
+Actually, we can take, we can take the vectors
+
+106
+00:23:17,147 --> 00:23:20,307
+a, b
+
+107
+00:23:28,084 --> 00:23:44,984
+Take the vector AB, which is determined by the points A and B as the vector V.
+
+108
+00:23:44,984 --> 00:23:58,923
+Take the vector AB as the vector V that is parallel to the line.
+
+109
+00:24:03,731 --> 00:24:05,771
+Son, V is
+
+110
+00:24:09,971 --> 00:24:26,551
+V is the vector AB, which is 3 minus 2, minus 1, minus 4, and 1, minus, minus 3.
+
+111
+00:24:28,731 --> 00:24:36,531
+Therefore, the vector V is 1, minus 5, and 4.
+
+112
+00:24:36,531 --> 00:24:45,652
+So, we have a vector V, which is parallel to this line, and we have actually 3 point, 2 points.
+
+113
+00:24:46,652 --> 00:24:50,652
+We can take one of these 2 points,
+
+114
+00:24:53,652 --> 00:24:58,652
+taking the point A as P0.
+
+115
+00:25:03,380 --> 00:25:04,920
+Sexto point
+
+116
+00:25:09,940 --> 00:25:34,700
+A, sp0, we have, we are looking for the parametric anti-symmetric equations, so parametric equations for this line is equal to, x is equal to x0, 2 plus,
+
+117
+00:25:34,700 --> 00:25:53,660
+a times a is 1, t, y is equal to y0 is 4, plus, b times t, which is minus 5, so this is,
+
+118
+00:25:56,400 --> 00:26:01,140
+minus 5, t, and z is equal to,
+
+119
+00:26:01,140 --> 00:26:04,240
+minus 3,
+
+120
+00:26:04,240 --> 00:26:08,140
+plus,
+
+121
+00:26:08,140 --> 00:26:12,299
+c times t, 4, t.
+
+122
+00:26:13,779 --> 00:26:15,140
+And this is,
+
+123
+00:26:15,779 --> 00:26:18,220
+the parametric equations of line,
+
+124
+00:26:19,539 --> 00:26:23,259
+that passes through the points a and b.
+
+125
+00:26:31,028 --> 00:26:53,468
+And the symmetric equations for this line can be written from these parametric equations, substitute t from each equation. So we have x minus 2.
+
+126
+00:26:57,971 --> 00:27:06,771
+y-4
+
+127
+00:27:10,548 --> 00:27:20,347
+over minus 5 is equal to z plus 3.
+
+128
+00:27:24,788 --> 00:27:26,788
+4 ve 4.
+
+129
+00:27:28,147 --> 00:27:30,788
+And this is the symmetric equations
+
+130
+00:27:32,468 --> 00:27:34,468
+of this line.
+
+131
+00:27:45,779 --> 00:27:57,119
+At what point in B, at what point does this line intersect the xy plane?
+
+132
+00:28:00,723 --> 00:28:01,843
+This line
+
+133
+00:28:09,395 --> 00:28:09,836
+Tamam.
+
+134
+00:28:14,867 --> 00:28:19,508
+xy-plane
+
+135
+00:28:24,884 --> 00:28:25,503
+Lan
+
+136
+00:28:29,044 --> 00:28:31,644
+Z is 0.
+
+137
+00:28:36,435 --> 00:28:40,375
+Ok? Son, son.
+
+138
+00:28:44,180 --> 00:28:47,940
+ve put z is 0
+
+139
+00:28:53,364 --> 00:28:59,423
+set as 0, in the symmetric equation that we found in here.
+
+140
+00:29:16,692 --> 00:29:18,011
+İmmetrik ekvasion.
+
+141
+00:29:25,523 --> 00:29:29,183
+So, x minus 2.
+
+142
+00:29:33,107 --> 00:29:38,327
+Y-4,
+
+143
+00:29:38,327 --> 00:29:42,727
+Y-5,
+
+144
+00:29:42,727 --> 00:29:47,048
+3,
+
+145
+00:29:47,048 --> 00:29:47,967
+4.
+
+146
+00:29:49,187 --> 00:29:50,687
+So, it gives
+
+147
+00:29:56,884 --> 00:30:25,524
+This gives, x is equal to, 4x is, sorry, 4x minus 8 is equal to 3, so 4x is equal to 11, and x is equal to 11 over 4, and y is equal to,
+
+148
+00:30:30,644 --> 00:30:34,064
+1 over 4.
+
+149
+00:30:35,324 --> 00:30:35,963
+Therefore,
+
+150
+00:30:41,172 --> 00:30:43,211
+So, line
+
+151
+00:30:43,211 --> 00:30:46,451
+Interseks
+
+152
+00:30:50,675 --> 00:30:51,955
+x-y-plane,
+
+153
+00:30:56,500 --> 00:30:57,740
+At the point
+
+154
+00:31:02,932 --> 00:31:09,132
+11 over 4, 1 over 4, and 0.
+
+155
+00:31:15,412 --> 00:31:16,412
+Tamam.
+
+156
+00:31:18,572 --> 00:31:21,172
+Ne sorun, sorun, diğer şeyleri?
+
+157
+00:31:22,572 --> 00:31:23,852
+Yeni bir şey mi?
+
+158
+00:31:32,147 --> 00:31:34,307
+Evet, I think also it's clear.
+
+159
+00:31:36,788 --> 00:31:37,627
+Now,
+
+160
+00:31:39,687 --> 00:31:45,447
+we give an equation of a plane in three-dimensional space.
+
+161
+00:31:46,227 --> 00:31:56,947
+We know that a line, the equation of line in a space is determined by a point and a direction,
+
+162
+00:31:56,947 --> 00:32:05,427
+but a plane in three-dimensional space is actually more difficult to describe.
+
+163
+00:32:07,207 --> 00:32:08,207
+A single vector
+
+164
+00:32:08,207 --> 00:32:15,227
+parallel to the plane is not enough to convey the direction of plane.
+
+165
+00:32:16,028 --> 00:32:16,447
+But
+
+166
+00:32:16,447 --> 00:32:18,207
+if we have a vector
+
+167
+00:32:18,207 --> 00:32:23,727
+which is perpendicular to or which is orthogonal to the plane
+
+168
+00:32:23,727 --> 00:32:30,207
+does completely determine, thus completely determine its direction.
+
+169
+00:32:33,327 --> 00:32:33,727
+Now,
+
+170
+00:32:35,407 --> 00:32:35,788
+now,
+
+171
+00:32:39,067 --> 00:32:39,788
+a plane
+
+172
+00:32:43,347 --> 00:32:53,228
+İçin 3D space, or in space, a plane, in a space,
+
+173
+00:32:57,364 --> 00:32:58,923
+is determined by
+
+174
+00:33:08,564 --> 00:33:13,683
+A point, again, a point, P0,
+
+175
+00:33:20,627 --> 00:33:24,327
+X0, Y0, Z0,
+
+176
+00:33:24,887 --> 00:33:27,788
+in the plane,
+
+177
+00:33:36,948 --> 00:33:39,828
+ve vektör n
+
+178
+00:33:54,836 --> 00:33:59,796
+vektör N
+
+179
+00:34:06,867 --> 00:34:12,128
+That is orthogonal to
+
+180
+00:34:19,507 --> 00:34:20,268
+Display.
+
+181
+00:34:22,087 --> 00:34:22,387
+Ok.
+
+182
+00:34:23,827 --> 00:34:25,947
+So, so.
+
+183
+00:34:34,068 --> 00:34:49,628
+If you want to write the equation of a plane in three-dimensional space, we need a point P0, X0, Y0, Z0, and a vector which is orthogonal to this plane.
+
+184
+00:34:50,748 --> 00:35:01,828
+And this vector, which is orthogonal to plane, is called, here, the vector n is called the normal vector of the plane.
+
+185
+00:35:05,588 --> 00:35:18,008
+Again, as in the line case, let P is an arbitrary point in the plane.
+
+186
+00:35:18,008 --> 00:35:19,648
+We have an arbitrary point.
+
+187
+00:35:20,168 --> 00:35:28,188
+We have also the point P0 and the vector N, which is orthogonal to plane.
+
+188
+00:35:28,868 --> 00:35:34,728
+Take a point, arbitrary point on this plane, P, P, X, Y, Z.
+
+189
+00:35:35,588 --> 00:35:46,768
+And the position vectors of P is R and the position vector of P0 is R0.
+
+190
+00:35:47,988 --> 00:35:57,568
+Then the vector R minus R0 is the vector, which is P0, P.
+
+191
+00:35:57,568 --> 00:36:07,327
+Then since the vector N or the normal vector N is perpendicular or orthogonal to the plane,
+
+192
+00:36:07,327 --> 00:36:16,508
+it is also perpendicular to the vector P0, P, which is R minus R0.
+
+193
+00:36:16,508 --> 00:36:28,088
+So we know from the dot product or scalar product that if two vectors are orthogonal to each other,
+
+194
+00:36:28,328 --> 00:36:33,948
+then the inner product or the dot product of these vectors is 0.
+
+195
+00:36:33,948 --> 00:36:50,048
+So the inner product of N, the normal vector N, and the vector P0, P, or it is same as the R minus R0 is equal to 0.
+
+196
+00:36:50,048 --> 00:36:57,968
+So then using the properties of the dot product or scalar product,
+
+197
+00:36:57,968 --> 00:37:06,528
+we know that this equation is equal to N dot R minus,
+
+198
+00:37:06,528 --> 00:37:23,128
+this is actually equal to N dot R0 is equal to 0.
+
+199
+00:37:23,128 --> 00:37:30,327
+Therefore, we have N dot R0.
+
+200
+00:37:30,327 --> 00:37:31,228
+OK.
+
+201
+00:37:34,931 --> 00:37:42,831
+So, so this is called the vector equation of the plane.
+
+202
+00:37:44,831 --> 00:37:50,231
+This one and this one. Actually, we cannot use these two equations.
+
+203
+00:37:50,231 --> 00:38:05,871
+If you take the normal vector and as ABC and if R is taken by the X, Y and Z and R0 is equal to X0, Y0 and Z0.
+
+204
+00:38:05,871 --> 00:38:24,511
+So, this vector equation can be written as if you put an R and R0 in their pages in this equation, we have the inner product or the dot product of this is equal to zero.
+
+205
+00:38:24,511 --> 00:38:39,071
+So, we have A times X minus X0 plus B times Y minus Y0 plus C times Z minus Z0 is equal to zero.
+
+206
+00:38:39,071 --> 00:39:01,311
+So, so, the equation in seven is an equation of a plane or a scalar equation of a plane which is, passes through the point P0 and has the normal vector N.
+
+207
+00:39:11,347 --> 00:39:28,367
+So, writing the equation of a plane in three-dimensional space or only space, we need a point and we need a vector which is orthogonal to this plane.
+
+208
+00:39:28,367 --> 00:39:43,527
+and writing the equation of a line in three-dimensional space, we need a point and we need a vector which is parallel to this line.
+
+209
+00:39:46,527 --> 00:39:47,367
+Okay.
+
+210
+00:39:49,887 --> 00:39:51,567
+We'll get to the example.
+
+211
+00:39:56,916 --> 00:40:12,556
+find an equation of a plane which is persist through the point 2, 4, minus 1 and the normal vector n and find the intersects and sketch this plane.
+
+212
+00:40:13,316 --> 00:40:17,756
+So, we have the point and we have the normal vector n.
+
+213
+00:40:17,756 --> 00:40:26,676
+we underwrite the point p0 and n in its place in this equation.
+
+214
+00:40:26,676 --> 00:40:28,916
+So,
+
+215
+00:40:37,076 --> 00:40:37,795
+putting
+
+216
+00:40:37,795 --> 00:40:41,076
+a is 2
+
+217
+00:40:46,356 --> 00:41:00,616
+b is 3, c is 4, and x0 is 2, y0 is 4, and z0 is minus 1.
+
+218
+00:41:04,467 --> 00:41:06,007
+Dequition of Plane
+
+219
+00:41:15,668 --> 00:41:45,668
+A'x-x0, 2x-2, plus B'y-y0, plus C'y-z0,
+
+220
+00:41:45,668 --> 00:41:48,668
+is equal to 0.
+
+221
+00:41:50,928 --> 00:42:03,268
+Actually, if we compute this equation, then we have 2x.
+
+222
+00:42:08,916 --> 00:42:29,096
+3y, plus 4z, we have minus 4 here, minus 12, minus 14, plus 4, so we have minus 10.
+
+223
+00:42:37,523 --> 00:42:54,943
+Minus 4, minus 16, minus 12, sorry. So this is equal to 12. We can also write this equation like this.
+
+224
+00:42:54,943 --> 00:43:08,063
+And find the intersects and sketch the plane. To find the x-intercept, we set y and z is equal to 0.
+
+225
+00:43:12,115 --> 00:43:23,456
+Y and Z is equal to 0, then we have 2X is equal to 12 and X is equal to 6.
+
+226
+00:43:23,456 --> 00:43:49,635
+So this plane intercepts the X plane at X axis at 6, 0, 0, then taking X and Z as 0, we have Y is 3, 4, sorry.
+
+227
+00:43:49,635 --> 00:44:02,376
+And taking X and Y as 0, then Z is 3.
+
+228
+00:44:03,596 --> 00:44:07,695
+So we have a plane like this.
+
+229
+00:44:50,612 --> 00:45:04,572
+Bu nokta, 600, ve bu nokta, 003 ve bu nokta, 040.
+
+230
+00:45:09,235 --> 00:45:30,556
+As we've done in this example, if we collect in terms in the equation 7, it means writing this as Ax plus By plus Cz and A times X0, B times Y0, and C times Z0.
+
+231
+00:45:30,556 --> 00:45:43,195
+So, we have this equation, or we can write this equation as Ax plus By plus Cz plus D, where D is equal to this expression.
+
+232
+00:45:44,096 --> 00:45:53,315
+And this is also called linear equation of a plane in Ax, Y, and Z.
+
+233
+00:45:54,195 --> 00:45:54,955
+Okay.
+
+234
+00:46:01,811 --> 00:46:03,711
+find an equation of the plane.
+
+235
+00:46:05,231 --> 00:46:05,652
+Now,
+
+236
+00:46:07,692 --> 00:46:10,371
+we have three points
+
+237
+00:46:10,371 --> 00:46:12,391
+on the plane
+
+238
+00:46:12,391 --> 00:46:14,731
+and
+
+239
+00:46:14,731 --> 00:46:18,331
+we want to write the equation of this plane.
+
+240
+00:46:19,612 --> 00:46:20,391
+We know that
+
+241
+00:46:20,391 --> 00:46:24,911
+to write the equation of a plane
+
+242
+00:46:24,911 --> 00:46:27,672
+in three-dimensional space, we need a point
+
+243
+00:46:27,672 --> 00:46:31,172
+and we need a vector, normal vector,
+
+244
+00:46:31,172 --> 00:46:33,572
+which is orthogonal to this plane
+
+245
+00:46:33,572 --> 00:46:35,411
+but here we have
+
+246
+00:46:35,411 --> 00:46:36,451
+only
+
+247
+00:46:36,451 --> 00:46:39,031
+three points
+
+248
+00:46:39,031 --> 00:46:41,911
+we have to find a normal vector
+
+249
+00:46:41,911 --> 00:46:43,411
+which is
+
+250
+00:46:43,411 --> 00:46:46,351
+orthogonal to the plane
+
+251
+00:46:46,351 --> 00:46:49,112
+which vector is
+
+252
+00:46:49,112 --> 00:46:51,271
+orthogonal to the
+
+253
+00:46:51,271 --> 00:46:52,511
+this plane
+
+254
+00:46:56,052 --> 00:47:25,452
+Bu, bu
+
+255
+00:47:33,396 --> 00:47:35,396
+Yani bu, böyle bir tane.
+
+256
+00:47:35,396 --> 00:47:38,396
+Ve bu, 3 tane.
+
+257
+00:47:38,396 --> 00:47:39,396
+Evet.
+
+258
+00:47:42,396 --> 00:47:43,396
+P, Q.
+
+259
+00:47:53,172 --> 00:47:54,811
+ve R,
+
+260
+00:48:03,188 --> 00:48:11,988
+If we write the vectors pr and pq,
+
+261
+00:48:16,788 --> 00:48:19,748
+Let the lectures
+
+262
+00:48:26,771 --> 00:48:28,552
+A and B
+
+263
+00:48:28,552 --> 00:48:32,092
+corresponding to the
+
+264
+00:48:43,411 --> 00:48:44,751
+PQ and
+
+265
+00:48:49,139 --> 00:48:51,139
+PR.
+
+266
+00:48:51,139 --> 00:48:58,139
+So, A is, what is A?
+
+267
+00:48:58,139 --> 00:49:02,139
+A is the vector PQ,
+
+268
+00:49:02,139 --> 00:49:08,139
+which is 3 minus 1, 2,
+
+269
+00:49:08,139 --> 00:49:12,139
+minus 1, minus 3, minus 4,
+
+270
+00:49:12,139 --> 00:49:18,139
+and 6 minus 2, 4.
+
+271
+00:49:18,139 --> 00:49:26,139
+And B is the vector PR, which is 5 minus 1,
+
+272
+00:49:26,139 --> 00:49:30,139
+4, 2 minus 3 minus 1,
+
+273
+00:49:30,139 --> 00:49:33,139
+and 0 minus 2.
+
+274
+00:49:33,139 --> 00:49:36,139
+This is minus 2.
+
+275
+00:49:36,139 --> 00:49:41,139
+So, we have two vectors in this plane,
+
+276
+00:49:41,139 --> 00:49:43,139
+and from the cross product of vectors,
+
+277
+00:49:43,139 --> 00:49:53,139
+we know that the cross product of two vectors is perpendicular to both of these vectors.
+
+278
+00:49:53,139 --> 00:50:01,139
+So, we can take, or we are looking for a vector which is orthogonal to this plane.
+
+279
+00:50:01,139 --> 00:50:09,139
+So, if we take the cross product of these two vectors, we have a vector N,
+
+280
+00:50:09,139 --> 00:50:15,139
+which is perpendicular to both of these vectors.
+
+281
+00:50:19,476 --> 00:50:30,506
+Bu, bu
+
+282
+00:50:40,659 --> 00:50:42,299
+Both A and B
+
+283
+00:50:48,724 --> 00:50:50,104
+Lie on the plane,
+
+284
+00:50:58,195 --> 00:50:59,596
+değil, cross product.
+
+285
+00:51:08,820 --> 00:51:15,900
+A' b' is orthogonal to the plane.
+
+286
+00:51:31,891 --> 00:51:35,071
+Therefore, we can take
+
+287
+00:51:39,315 --> 00:51:47,076
+We can take n, s, d, cross product, b.
+
+288
+00:51:50,708 --> 00:51:51,208
+So,
+
+289
+00:51:57,300 --> 00:52:03,740
+Normal vector n is equal to a cross product b.
+
+290
+00:52:04,880 --> 00:52:16,960
+We can find the cross product of two vectors using the determinant, writing the first row, the basis vectors i, j, and k.
+
+291
+00:52:16,960 --> 00:52:28,820
+On the second row, we have the components of a, which are two, minus four, four.
+
+292
+00:52:29,180 --> 00:52:37,720
+At the last row, we have the components of b, which are four, minus one, and minus two.
+
+293
+00:52:37,720 --> 00:52:47,740
+Actually, we have another way to compute this determinant in linear algebra.
+
+294
+00:52:48,740 --> 00:52:56,820
+Write the first two columns on the right side of the determinant.
+
+295
+00:53:05,043 --> 00:53:08,304
+write these two columns on the right again.
+
+296
+00:53:22,452 --> 00:53:35,772
+And, multiply the elements on the left above corner to the right below corner.
+
+297
+00:53:47,347 --> 00:53:54,347
+ve bu
+
+298
+00:53:57,460 --> 00:54:01,800
+Elements on the right above corner to the
+
+299
+00:54:08,371 --> 00:54:10,731
+Left blue corner
+
+300
+00:54:17,556 --> 00:54:18,016
+So,
+
+301
+00:54:28,403 --> 00:54:31,523
+This is equal to
+
+302
+00:54:36,275 --> 00:54:37,475
+8i
+
+303
+00:54:37,475 --> 00:54:40,475
+plus
+
+304
+00:54:44,083 --> 00:54:45,523
+16J
+
+305
+00:54:45,523 --> 00:54:50,243
+minus 2K
+
+306
+00:54:58,036 --> 00:55:18,115
+Minus 16k, minus 16k, so plus 16k, plus 4i.
+
+307
+00:55:23,027 --> 00:55:24,967
+And plus
+
+308
+00:55:24,967 --> 00:55:29,627
+4j.
+
+309
+00:55:30,627 --> 00:55:33,267
+Therefore, this is equal to the
+
+310
+00:55:33,267 --> 00:55:35,427
+12
+
+311
+00:55:35,427 --> 00:55:38,427
+i
+
+312
+00:55:38,427 --> 00:55:44,087
+plus 20j
+
+313
+00:55:44,087 --> 00:55:47,027
+plus
+
+314
+00:55:47,027 --> 00:55:49,927
+14
+
+315
+00:55:49,927 --> 00:55:51,567
+k.
+
+316
+00:55:51,567 --> 00:55:53,567
+ok
+
+317
+00:55:53,567 --> 00:55:54,567
+we have
+
+318
+00:55:54,567 --> 00:55:56,167
+the normal vector n
+
+319
+00:55:56,167 --> 00:55:58,167
+so
+
+320
+00:55:58,167 --> 00:55:59,867
+n is
+
+321
+00:55:59,867 --> 00:56:23,867
+ok
+
+322
+00:56:14,675 --> 00:56:29,835
+n is equal to 12, 20, and 14. We have the point, you can take one of these three points, so take the point P.
+
+323
+00:56:31,956 --> 00:56:38,556
+The equation of this line is, you can write here,
+
+324
+00:56:43,795 --> 00:56:59,195
+12 x x minus, we take the point P, this is 1, 3, and 2, so x minus 1, plus 20 x y minus 3.
+
+325
+00:57:03,027 --> 00:57:11,087
+14 times z minus 2 is equal to 0.
+
+326
+00:57:11,087 --> 00:57:31,587
+Or, if you compute this equation, we have, okay, this is homework for you, write this as ax plus by plus cz plus d.
+
+327
+00:57:31,587 --> 00:57:32,187
+Okay.
+
+328
+00:57:46,835 --> 00:57:49,445
+Bakın, örneğin, örneğin, örneğin örneğin, örneğin ör
+
+329
+00:57:53,556 --> 00:58:09,096
+Find the point at which line with the parametric equations. We have a line which is given in the parametric equations as x is 2 plus 3t and y is equal to minus 40 and z is 5 plus t.
+
+330
+00:58:11,596 --> 00:58:21,976
+We are looking for a point that intersects the plane which is given by this equation.
+
+331
+00:58:25,715 --> 00:58:43,815
+[öğrenci], we have 15 minutes break and you will solve this and this example, example 6 and example 2.50.
+
+332
+00:58:48,340 --> 00:58:54,240
+So, we have 15 minutes break and continue it.
+
+333
+00:58:59,635 --> 00:59:01,875
+10, 70.
+
+334
+01:14:26,644 --> 01:14:27,463
+Hello again.
+
+335
+01:14:28,844 --> 01:14:41,463
+We'll continue with the example 6, but before this, if we write this as, or we can write this equation of the plane as,
+
+336
+01:14:41,463 --> 01:14:43,664
+So...
+
+337
+01:14:46,899 --> 01:14:51,899
+İçeride 6x plus 10y.
+
+338
+01:14:55,507 --> 01:15:00,967
+Plus, 7z, is equal to, 50.
+
+339
+01:15:06,195 --> 01:15:19,216
+Now, look at the example 6. We are looking for a point on the line, which is given by parametric equations and intersects the plane.
+
+340
+01:15:20,336 --> 01:15:28,935
+Actually, we only substitute the expression for x, y, and z from the parametric equations into the equation of the plane.
+
+341
+01:15:28,935 --> 01:15:36,996
+It means write the points x, y, and z in their places in the plane.
+
+342
+01:15:37,296 --> 01:15:43,076
+So, we have 4 times x is equal to 2 plus 3t.
+
+343
+01:15:46,804 --> 01:15:55,743
+Maybe I write with another color, distinguish the example 6 and the example.
+
+344
+01:16:02,100 --> 01:16:04,320
+4 x x is
+
+345
+01:16:04,320 --> 01:16:08,340
+2 plus 3 k
+
+346
+01:16:11,988 --> 01:16:30,588
+Y plus 5 times, Y is minus 40, minus 2 times Z is 5 plus T, is equal to 18.
+
+347
+01:16:34,131 --> 01:16:38,231
+O yüzden bu Synthetize Tool'u var.
+
+348
+01:16:43,315 --> 01:16:51,595
+12, minus 20, minus 8, minus 20.
+
+349
+01:16:56,340 --> 01:17:13,739
+is equal to 8, minus 10, minus 2, 20, means that t is minus 2.
+
+350
+01:17:13,739 --> 01:17:27,560
+therefore, the point of the intersection equals when the parameter value of t is minus 2, then the intersection point is
+
+351
+01:17:31,699 --> 01:17:39,979
+x is, writing t is minus 2, we have x is minus 4.
+
+352
+01:17:49,171 --> 01:18:00,031
+Y is minus, sorry, Y is 8, and Z is,
+
+353
+01:18:05,108 --> 01:18:05,587
+3.
+
+354
+01:18:07,347 --> 01:18:08,108
+Só
+
+355
+01:18:08,108 --> 01:18:12,988
+no point is
+
+356
+01:18:18,836 --> 01:18:19,836
+...
+
+357
+01:18:24,340 --> 01:18:25,779
+İntestation is
+
+358
+01:18:33,332 --> 01:18:38,412
+Minus 4, 8, 3.
+
+359
+01:18:40,512 --> 01:18:41,592
+Ok.
+
+360
+01:18:54,644 --> 01:19:04,844
+find an equation of the plane that passes through the point and contains the line given by this parametric equation.
+
+361
+01:19:07,423 --> 01:19:12,623
+Actually, we are looking for an equation of a plane.
+
+362
+01:19:12,623 --> 01:19:24,503
+We have a point, but we need a vector which is normal, which is perpendicular to the plane.
+
+363
+01:19:24,644 --> 01:19:38,324
+So, from this symmetric equation of a line in the three-dimensional space, we have this line.
+
+364
+01:19:43,380 --> 01:19:58,220
+x minus x zero over a is equal to y minus y zero over b z minus z zero over c.
+
+365
+01:19:58,220 --> 01:20:02,180
+So, this line passes through the point.
+
+366
+01:20:18,452 --> 01:20:32,811
+We have x0 is 0, y0 is 1, and z0 is minus 1, and parallel to the vectors,
+
+367
+01:20:47,923 --> 01:20:55,104
+A is 1, B is 2, and C is 1.
+
+368
+01:20:56,623 --> 01:21:13,564
+So, using the point 1, 4, 3, to identify a second vector parallel to the plane, we can use this point, sorry, which point? This point.
+
+369
+01:21:13,564 --> 01:21:17,003
+Because
+
+370
+01:21:29,811 --> 01:21:41,251
+A point on it, one, four, three, and we have a line.
+
+371
+01:21:44,851 --> 01:21:47,851
+Bu, bu simetrik ekonomik bir şey.
+
+372
+01:21:47,851 --> 01:21:50,851
+Bu, bir point Q
+
+373
+01:21:53,851 --> 01:21:54,851
+on the plane.
+
+374
+01:22:02,260 --> 01:22:26,699
+We found a point on the plane, q, and we also know the equation of the line. If we write or if we take the vector pq,
+
+375
+01:22:31,444 --> 01:22:35,684
+Then this is another vector which is parallel to the plane.
+
+376
+01:22:37,084 --> 01:22:39,844
+So.
+
+377
+01:22:43,923 --> 01:22:51,304
+Q is 0, 1, minus 1, and P is 1, 4, 3.
+
+378
+01:22:52,743 --> 01:22:54,644
+Then the vector PQ,
+
+379
+01:22:58,612 --> 01:23:00,271
+0-1
+
+380
+01:23:07,699 --> 01:23:29,800
+0, minus 1, minus 1, 1, minus 4, minus 3, minus 1, minus 3, minus 4, is another vector.
+
+381
+01:23:36,404 --> 01:23:38,284
+That is parallel tutun.
+
+382
+01:23:47,123 --> 01:23:47,684
+Plane.
+
+383
+01:23:49,304 --> 01:23:53,583
+But we are looking for a vector which is orthogonal to the plane.
+
+384
+01:23:54,523 --> 01:23:59,503
+Again, using the cross product of these two vectors.
+
+385
+01:24:07,796 --> 01:24:22,376
+We can take the normal of this plane as the cross product of these two vectors, i, j, and k.
+
+386
+01:24:22,376 --> 01:24:26,016
+The first vector
+
+387
+01:24:26,016 --> 01:24:32,235
+is actually, we say this is
+
+388
+01:24:32,235 --> 01:24:33,836
+v1
+
+389
+01:24:33,836 --> 01:24:36,076
+and
+
+390
+01:24:36,076 --> 01:24:38,556
+this is v2
+
+391
+01:24:46,003 --> 01:25:03,564
+We can take the normal of this plane as the cross product of the vectors v1 and v2, ijk, the components of v1, 1 to 1.
+
+392
+01:25:07,475 --> 01:25:15,195
+ve vektör V2'i-1,-3,-4.
+
+393
+01:25:51,539 --> 01:25:59,699
+İçin, bu elementlerle ekleyip,
+
+394
+01:25:59,699 --> 01:26:37,979
+ve bu elementlerle ekleyip,
+
+395
+01:26:33,140 --> 01:26:34,539
+Minus 8
+
+396
+01:26:41,235 --> 01:26:50,215
+i, minus j, and minus 3k.
+
+397
+01:26:56,180 --> 01:26:57,659
+Plus 2K
+
+398
+01:27:03,572 --> 01:27:04,931
+Plus 3i
+
+399
+01:27:11,731 --> 01:27:13,271
+ve 4G
+
+400
+01:27:17,203 --> 01:27:25,903
+That gives 5i, 5i, plus 3j.
+
+401
+01:27:35,347 --> 01:27:41,427
+ve k'e bu normal
+
+402
+01:27:41,427 --> 01:28:03,007
+bu plana
+
+403
+01:28:06,228 --> 01:28:35,908
+Minus 5, x minus taking the point, the first point, 1, plus 3 times y minus 4, minus z minus 3, is equal to 0, or, or,
+
+404
+01:28:36,228 --> 01:29:01,627
+minus 5, x plus 3, y minus z, is equal to, we have 5, minus 7, minus 4, so this is equal to 4.
+
+405
+01:29:12,180 --> 01:29:12,539
+Ok.
+
+406
+01:29:19,604 --> 01:29:25,204
+How can we find the angles between two planes?
+
+407
+01:29:26,204 --> 01:29:37,364
+Actually, actually, the angle between two planes is determined by their normals.
+
+408
+01:29:37,364 --> 01:29:50,224
+means the angle between two planes is the angle between the normal vectors of them.
+
+409
+01:29:50,224 --> 01:29:51,324
+Okay.
+
+410
+01:29:54,804 --> 01:30:03,264
+The angle between two planes is defined as the angle between their normal vectors.
+
+411
+01:30:05,043 --> 01:30:14,764
+And we say that two planes are parallel if their normal vectors are parallel.
+
+412
+01:30:14,764 --> 01:30:19,724
+For example, look at the planes.
+
+413
+01:30:20,724 --> 01:30:23,804
+X plus 2, y minus 3, z is equal to 4.
+
+414
+01:30:23,923 --> 01:30:28,663
+And 2, x plus 4, y minus 6, z is equal to 3.
+
+415
+01:30:29,524 --> 01:30:42,003
+These are parallel because, because looking at the normals, the normal of the first plane is 1.
+
+416
+01:30:45,876 --> 01:30:53,436
+2, minus 3, and the normal of the second one is 2.
+
+417
+01:30:56,948 --> 01:30:57,588
+4,
+
+418
+01:30:58,588 --> 01:30:59,908
+minus 6.
+
+419
+01:31:07,380 --> 01:31:29,980
+So, you can get to the normal of the first one and the second one. The normal of the second one is two multiple of the normal of the first one. So, these two vectors are parallel. It means these two planes are parallel.
+
+420
+01:31:29,980 --> 01:31:35,779
+And if two planes are not parallel, then they intersect in a straight line.
+
+421
+01:31:37,880 --> 01:31:41,180
+Then we can also find these intersection line.
+
+422
+01:31:42,400 --> 01:31:43,920
+Look at the example seven.
+
+423
+01:31:48,500 --> 01:32:00,619
+Fikta angle between these two planes in A, and find symmetric equations for the line of intersection, which is L, of these two planes.
+
+424
+01:32:01,840 --> 01:32:17,739
+Look at the figure 10. We have two planes, and they intersect among or through a line, and we can find the equation of this line.
+
+425
+01:32:17,739 --> 01:32:35,380
+First of all, find the angle. We are looking for the normals of the planes for, so the normal of the first one, the normal of the plane one is one, one, one.
+
+426
+01:32:41,971 --> 01:32:45,971
+Normalde de birçok birçok birçok birçok.
+
+427
+01:32:45,971 --> 01:32:49,971
+Birçok birçok.
+
+428
+01:32:49,971 --> 01:33:01,971
+Birçok.
+
+429
+01:33:05,203 --> 01:33:10,203
+İndir product, or the dot product of two vectors, is equal to
+
+430
+01:33:12,203 --> 01:33:14,203
+magnitude of
+
+431
+01:33:14,203 --> 01:33:16,203
+m1
+
+432
+01:33:16,203 --> 01:33:19,203
+times the magnitude of
+
+433
+01:33:19,203 --> 01:33:20,203
+m2
+
+434
+01:33:20,203 --> 01:33:24,203
+times the cosine of the angle
+
+435
+01:33:24,203 --> 01:33:26,203
+between these two vectors.
+
+436
+01:33:26,203 --> 01:33:27,203
+So,
+
+437
+01:33:30,260 --> 01:33:56,000
+That product of N1 and N2 is 1 times 1 plus 1 times minus 2 plus 1 times 3. We have, we have minus 1, 2. 2 is equal to the magnitude of M1 is square root.
+
+438
+01:33:56,000 --> 01:34:23,520
+1 plus 1 plus 1 plus 1 times the magnitude of N2 is 1 plus minus 2 plus 3 times cosine theta. Therefore, cosine theta is equal to
+
+439
+01:34:30,515 --> 01:34:37,455
+2 over, we have 3, 9, 10, 14.
+
+440
+01:34:41,203 --> 01:34:42,023
+42
+
+441
+01:34:46,355 --> 01:34:57,956
+means, theta is equal to, rcos, 2 over square root 42.
+
+442
+01:35:08,372 --> 01:35:23,792
+And look at the question B. We are looking for the line L, which is the intersection line of these two planes.
+
+443
+01:35:23,792 --> 01:35:44,752
+In here, we first need to find a point on this line because we know that in three-dimensional space, if you want to write the equation of a line, we need a point and we need a direction of this line.
+
+444
+01:35:44,752 --> 01:35:51,292
+So, first of all, we have to find the point on this line.
+
+445
+01:35:53,292 --> 01:35:56,372
+So, if we take
+
+446
+01:36:02,739 --> 01:36:05,819
+Z as 0
+
+447
+01:36:05,819 --> 01:36:08,479
+in the
+
+448
+01:36:08,479 --> 01:36:10,800
+equations of both planes
+
+449
+01:36:23,507 --> 01:36:25,087
+OPPO, please.
+
+450
+01:36:30,868 --> 01:36:45,268
+Then, we have x plus y is equal to 1, and x minus 2y is equal to 1.
+
+451
+01:36:45,268 --> 01:36:57,828
+Then, this gives the equations, these two equations, and the solution of these two equations gives, we have
+
+452
+01:36:57,828 --> 01:37:05,588
+3y is equal to 2, and y is
+
+453
+01:37:09,652 --> 01:37:10,152
+Sorry.
+
+454
+01:37:12,771 --> 01:37:22,612
+If we take this as minus, if we multiply this as with minus 1, then we have y is 0.
+
+455
+01:37:23,431 --> 01:37:31,652
+And if we multiply this with minus 2, then we have x is 1.
+
+456
+01:37:31,652 --> 01:37:37,731
+x is 1 and y is 0.
+
+457
+01:37:38,872 --> 01:37:41,011
+Therefore, the point
+
+458
+01:37:50,868 --> 01:38:06,368
+1, 0, and we take Z as 0, lies, lies on the, lies on L.
+
+459
+01:38:10,195 --> 01:38:14,015
+Now, we have a point on this line.
+
+460
+01:38:16,095 --> 01:38:36,655
+Now, now, since this line L lies in both planes, looking at this figure, this line L both lies in the first and the second plane,
+
+461
+01:38:36,655 --> 01:38:47,836
+it is, it is perpendicular to the both of the normal vectors of these two planes.
+
+462
+01:38:48,775 --> 01:38:57,115
+So, it means that since it is both perpendicular to the M1 and M2,
+
+463
+01:38:57,115 --> 01:39:05,775
+so, it is parallel to the cross product of M1 and M2.
+
+464
+01:39:08,775 --> 01:39:09,615
+Since
+
+465
+01:39:16,340 --> 01:39:18,340
+ve lize,
+
+466
+01:39:19,539 --> 01:39:21,539
+both planes.
+
+467
+01:39:26,131 --> 01:39:28,131
+İtiz, perpendicular to...
+
+468
+01:39:54,003 --> 01:39:56,123
+vektör V
+
+469
+01:40:10,036 --> 01:40:11,056
+Paralel tutu.
+
+470
+01:40:16,979 --> 01:40:26,039
+A is given by the cross product.
+
+471
+01:40:39,060 --> 01:40:57,960
+which is V is equal to M1 cross product N2 IJK
+
+472
+01:40:57,960 --> 01:41:16,620
+the components of M1 1 1 1 and the components of N2 is 1 minus 2 3
+
+473
+01:41:16,620 --> 01:41:40,500
+this determinant is equal to I times 3 5 5 I minus 2 J plus minus 3 K
+
+474
+01:41:40,500 --> 01:41:56,000
+so the vector which is parallel to this line is 5 minus 2 minus 3
+
+475
+01:41:56,000 --> 01:42:05,260
+we are looking for the symmetric equations of the line this line so the symmetric equation
+
+476
+01:42:20,884 --> 01:42:22,884
+Bu dizinin,
+
+477
+01:42:27,572 --> 01:42:42,011
+x minus x zero, what is x zero? We have found the point on this line, which is the point, this one.
+
+478
+01:42:45,747 --> 01:42:55,287
+X minus X zero is one over A, which is the direction of this line.
+
+479
+01:42:58,467 --> 01:43:04,607
+Five is equal to Z minus Z zero is zero.
+
+480
+01:43:04,607 --> 01:43:22,467
+So, Z over B minus two is equal to, sorry, Y over minus two is equal to Z minus Z zero is zero over minus three.
+
+481
+01:43:30,228 --> 01:43:58,028
+ve bir note, please read this note, because it says, if we have two linear equations, it means that, it means that these two linear equations is an equation of line, which is the intersection lines of two planes, okay?
+
+482
+01:44:03,283 --> 01:44:05,283
+This is a homework for you.
+
+483
+01:44:10,292 --> 01:44:25,292
+Çünkü bu konuda çok örneklerle ilgili
+
+484
+01:44:28,340 --> 01:44:28,840
+Mua!
+
+485
+01:44:33,171 --> 01:44:41,551
+We begin to study a new topic, which is called vector-valued functions.
+
+486
+01:44:42,551 --> 01:44:58,931
+Actually, the functions that we have been using so far have been real valid functions, but now we see the functions whose values are vectors.
+
+487
+01:44:58,931 --> 01:45:08,631
+And such functions are needed to describe curves and surfaces in space.
+
+488
+01:45:08,631 --> 01:45:10,151
+Okay.
+
+489
+01:45:13,971 --> 01:45:20,811
+In general, what is a vector function or vector valid function?
+
+490
+01:45:23,011 --> 01:45:38,091
+We know from the calculus 1 or in high school that a function is actually a rule that assigns to each element in the domain to do each element on the range.
+
+491
+01:45:38,091 --> 01:45:58,731
+But in vector valid function or vector function, its domain is a set of real numbers, but the range of this function is set of vectors.
+
+492
+01:45:58,731 --> 01:46:07,791
+So we have a function whose domain is set of real numbers and whose range is the set of vectors.
+
+493
+01:46:08,091 --> 01:46:09,091
+Okay.
+
+494
+01:46:09,091 --> 01:46:24,091
+And we are in this course, we are interested in vector functions whose range are three-dimensional space.
+
+495
+01:46:24,091 --> 01:46:29,091
+So we are working on our cube.
+
+496
+01:46:29,091 --> 01:46:51,091
+And we are working on our cube.
+
+497
+01:46:41,684 --> 01:47:10,184
+And if we have a real number t in the domain of the real vector value function r, then it means that r, the function r takes the t to the functions f t, g t, and h t,
+
+498
+01:47:10,184 --> 01:47:16,484
+which are called as the component functions of r.
+
+499
+01:47:20,692 --> 01:47:47,511
+These are the component functions of R, and the vector function can be described as Rt is equal to, since we are working on three-dimensional space, Rt is equal to Ft, Gt, Ht, or we can write this since this is a vector.
+
+500
+01:47:51,828 --> 01:47:52,828
+So,
+
+501
+01:47:54,508 --> 01:47:55,328
+Aş
+
+502
+01:47:58,355 --> 01:48:01,475
+VektorVeditFunction
+
+503
+01:48:01,475 --> 01:48:04,076
+takes
+
+504
+01:48:09,492 --> 01:48:13,652
+t to the rt
+
+505
+01:48:13,652 --> 01:48:16,492
+which is equal to
+
+506
+01:48:16,492 --> 01:48:22,052
+the vector in three-dimensional space
+
+507
+01:48:22,052 --> 01:48:27,632
+and we show this as
+
+508
+01:48:27,632 --> 01:48:33,731
+rt is equal to ft gt and ht
+
+509
+01:48:33,731 --> 01:48:37,632
+and these are the component functions of this vector function
+
+510
+01:48:37,632 --> 01:48:44,592
+okay and definition of this vector value function is here
+
+511
+01:48:44,592 --> 01:48:48,012
+look at the example
+
+512
+01:48:48,012 --> 01:48:54,632
+this example is important to understand the vector functions
+
+513
+01:48:54,632 --> 01:48:58,931
+if we have a vector function
+
+514
+01:48:58,931 --> 01:49:03,752
+rt is equal to t cube
+
+515
+01:49:03,752 --> 01:49:07,351
+ln three minus t and square root two
+
+516
+01:49:07,351 --> 01:49:14,311
+then it means that the component functions of this vector value function is
+
+517
+01:49:14,311 --> 01:49:16,311
+this is f
+
+518
+01:49:16,311 --> 01:49:17,832
+this is g
+
+519
+01:49:17,832 --> 01:49:20,311
+and this is h
+
+520
+01:49:23,572 --> 01:49:33,532
+So, ft is equal to t cubed, gt is equal to ln 3 minus t, and ht is equal to square root t.
+
+521
+01:49:34,271 --> 01:49:47,132
+And again, from calculus 1, we know that the domain of a function consists of all values of x in calculus 1.
+
+522
+01:49:47,132 --> 01:49:59,051
+Here, we have t. The domain of r consists of all values of t for which the expression is defined.
+
+523
+01:49:59,412 --> 01:50:04,712
+So, look at the first component function, f of t is equal to t cubed.
+
+524
+01:50:04,712 --> 01:50:22,092
+This is defined for all real numbers, all real numbers, all real numbers t, and ln 3 minus t is defined only for all.
+
+525
+01:50:26,131 --> 01:50:34,951
+t. This is defined for 3 minus t is bigger than 0.
+
+526
+01:50:36,491 --> 01:50:47,011
+And ht is defined for the square root is bigger than or positive, bigger than 0.
+
+527
+01:50:47,011 --> 01:51:07,131
+It means that this real-valid function rt or the domain of the real-valid function rt is the intersection of these three domains, which is t is bigger than 0 and smaller than 3.
+
+528
+01:51:08,351 --> 01:51:11,551
+Okay. This is important.
+
+529
+01:51:11,551 --> 01:51:28,551
+And similar to the limit of a real-valid function, the limit of a vector function r is defined by taking the limits of each component functions.
+
+530
+01:51:28,551 --> 01:51:35,551
+We take the limit of each component functions.
+
+531
+01:51:35,551 --> 01:51:47,551
+So limit t goes to the a rt is equal to the limit of f, limit of g and limit of h.
+
+532
+01:51:47,551 --> 01:51:51,551
+Okay.
+
+533
+01:52:00,212 --> 01:52:08,492
+Find the limit t goes to the zero of the vector valid function rt.
+
+534
+01:52:09,892 --> 01:52:13,932
+So according to the definition, this definition or the property,
+
+535
+01:52:15,572 --> 01:52:25,052
+the limit of r is the vector whose, again, look at, please note that the limit of the,
+
+536
+01:52:25,052 --> 01:52:32,972
+the limit of the vector valid function is also a vector.
+
+537
+01:52:32,972 --> 01:52:44,412
+So, so the limit of r is the vector whose components are the limits of the component functions of r.
+
+538
+01:52:44,412 --> 01:52:48,452
+So, limit.
+
+539
+01:52:55,028 --> 01:52:57,268
+t goes to the zero
+
+540
+01:53:01,908 --> 01:53:04,068
+RT is equal to
+
+541
+01:53:10,036 --> 01:53:22,876
+Limit of the components of this vector function, t goes to the 0, the first one, 1 plus t3.
+
+542
+01:53:29,076 --> 01:53:31,235
+i plus
+
+543
+01:53:35,091 --> 01:53:37,531
+Limit, GOSTO do 0.
+
+544
+01:53:41,716 --> 01:53:44,436
+t times e to the minus t
+
+545
+01:53:44,436 --> 01:53:49,556
+j plus
+
+546
+01:53:49,556 --> 01:53:53,796
+limit t goes to the zero
+
+547
+01:54:02,644 --> 01:54:08,204
+sin t, over t, k.
+
+548
+01:54:09,164 --> 01:54:15,963
+So, we only look at the limit of each functions in inside.
+
+549
+01:54:20,115 --> 01:54:30,956
+What is the limit of this one? Write t as 0, we have 1. So this is i.
+
+550
+01:54:36,307 --> 01:54:49,648
+And the limit of this is, this is t times 1 over e to the t, so 0 times 1, so this is 0, so we have now j in this vector.
+
+551
+01:54:51,787 --> 01:54:53,127
+This is 0.
+
+552
+01:54:57,684 --> 01:55:03,724
+ve t'inlimit olarak t'in 0 sin t'in t
+
+553
+01:55:08,020 --> 01:55:09,980
+1, thank you, [öğrenci].
+
+554
+01:55:12,060 --> 01:55:12,780
+So,
+
+555
+01:55:14,040 --> 01:55:14,820
+we have
+
+556
+01:55:14,820 --> 01:55:16,300
+plus
+
+557
+01:55:16,300 --> 01:55:20,420
+k, this is 1.
+
+558
+01:55:23,200 --> 01:55:26,120
+Therefore, the limit of this
+
+559
+01:55:26,120 --> 01:55:29,100
+vector function is
+
+560
+01:55:29,100 --> 01:55:31,100
+equal to
+
+561
+01:55:31,100 --> 01:55:34,240
+i plus
+
+562
+01:55:34,240 --> 01:55:36,440
+k.
+
+563
+01:55:38,020 --> 01:55:38,520
+or
+
+564
+01:55:38,520 --> 01:55:40,600
+you can write this as
+
+565
+01:55:40,600 --> 01:55:42,940
+1, 0, 1.
+
+566
+01:55:52,595 --> 01:55:58,595
+vektör function r, cümtününün,
+
+567
+01:56:02,612 --> 01:56:05,872
+It is same as the real valid functions.
+
+568
+01:56:07,872 --> 01:56:12,872
+If the limit of rt is equal to the...
+
+569
+01:56:16,148 --> 01:56:29,007
+Sorry, a vector function r is continuous at the point a if limit of r is equal to the r of a.
+
+570
+01:56:30,007 --> 01:56:30,427
+Okay.
+
+571
+01:56:31,648 --> 01:56:36,068
+Now look at the figure, this figure.
+
+572
+01:56:36,068 --> 01:56:48,788
+It says, it says, there is a very close connection between the continuous vector functions and space curves.
+
+573
+01:56:48,788 --> 01:57:00,188
+Suppose that f, g, and h are continuous real valid functions on the interval i.
+
+574
+01:57:00,608 --> 01:57:10,108
+Then set c of all points x, y, z in space, which x is f of t.
+
+575
+01:57:10,108 --> 01:57:17,708
+And y is g of t and z is h of t.
+
+576
+01:57:18,448 --> 01:57:21,608
+And t varies through the interval i.
+
+577
+01:57:22,608 --> 01:57:25,547
+Is called a space curve.
+
+578
+01:57:27,648 --> 01:57:36,688
+The set of all points x, y, and z, which is given by the parametric equation.
+
+579
+01:57:36,688 --> 01:57:46,328
+X is equal to f of t and y is equal to g of t and z is equal to h of t is called space curve.
+
+580
+01:57:47,967 --> 01:57:56,927
+And we already know this in this equation are called the parametric equation of a space curve.
+
+581
+01:57:57,887 --> 01:58:01,728
+And t is called the parameters.
+
+582
+01:58:01,728 --> 01:58:13,068
+So here it means that we can think the space curve c is being traced out by a moving particle or particle.
+
+583
+01:58:13,068 --> 01:58:13,467
+Sorry.
+
+584
+01:58:14,507 --> 01:58:19,188
+Whose position at time t is at time t.
+
+585
+01:58:28,083 --> 01:58:41,264
+The position at time t is p, f of t, g of t, and h of t.
+
+586
+01:58:42,184 --> 01:58:55,043
+Okay, so it means that any continuous vector function r, it is important, any continuous vector function r, defines a space curve,
+
+587
+01:58:55,043 --> 01:59:01,644
+c that is traced out by the tip of the moving vector r of t.
+
+588
+01:59:02,063 --> 01:59:11,083
+So, if you have a continuous function, vector function, then it means that you have a curve in the three-dimensional space.
+
+589
+01:59:13,304 --> 01:59:14,823
+Look at the example.
+
+590
+01:59:17,463 --> 01:59:20,184
+Describe the curve defined by the vector function.
+
+591
+01:59:30,387 --> 01:59:47,728
+First, we write this vector function S, since this is f of t, this is g of t, and this is h of t.
+
+592
+01:59:47,728 --> 02:00:12,927
+The corresponding parametric equations for x is equal to 1 plus t, y is equal to 2 plus 5t, and z is equal to minus 1 plus 60.
+
+593
+02:00:12,927 --> 02:00:21,408
+So, we actually know these equations as parametric equations of a line.
+
+594
+02:00:23,587 --> 02:00:29,768
+You know this, or we recognize this as the parametric equation of a line.
+
+595
+02:00:30,908 --> 02:00:34,728
+Actually, this is the parametric equation of a line.
+
+596
+02:00:46,420 --> 02:00:48,579
+The pieces through the point
+
+597
+02:01:01,587 --> 02:01:06,487
+Passing through the point, 1, 2, minus 1.
+
+598
+02:01:14,612 --> 02:01:16,572
+And parallel to the vectors.
+
+599
+02:01:28,404 --> 02:01:30,404
+...
+
+600
+02:01:37,300 --> 02:01:39,840
+1, 5, 6
+
+601
+02:01:45,747 --> 02:01:57,707
+Or, alternatifli, we could observe that the function can be written as, this function can be written as, sorry, this one, this is equal to, or,
+
+602
+02:02:01,235 --> 02:02:16,855
+RT is equal to R0 plus t times v, where R0 is,
+
+603
+02:02:23,060 --> 02:02:23,640
+Wong!
+
+604
+02:02:27,891 --> 02:02:33,291
+2, minus 1, and v is
+
+605
+02:02:37,747 --> 02:02:40,747
+1, 5, 6.
+
+606
+02:02:42,307 --> 02:02:45,947
+So, this is the vector equation of a line.
+
+607
+02:02:51,699 --> 02:03:00,619
+This is the vector occasion of a line.
+
+608
+02:03:14,195 --> 02:03:31,815
+We'll get to the example 4. Now, sketch the curve whose vector equation is given by the vector-valid function, which is rt is equal to cosine ti plus sine tj plus t times k.
+
+609
+02:03:31,815 --> 02:04:00,796
+Actually, we draw the graph of or the sketch the curve on the left, but here, here, it is important to say or not that for sketching the curve with given in vector equation or with given in the function
+
+610
+02:04:00,796 --> 02:04:17,775
+vector-valid function, we use the parametric equations of this curve, means, means here, x is equal to cosine t.
+
+611
+02:04:22,292 --> 02:04:24,292
+Parametric Equations
+
+612
+02:04:36,884 --> 02:04:38,203
+for this curve
+
+613
+02:04:38,203 --> 02:04:40,743
+as
+
+614
+02:05:00,083 --> 02:05:13,844
+X is equal to cosine t, y is equal to sine t, and z is equal to t.
+
+615
+02:05:15,684 --> 02:05:23,003
+So, since we have x square plus y square is equal to,
+
+616
+02:05:31,507 --> 02:05:40,127
+cosin sqare t plus sin sqare t, which is equal to 1.
+
+617
+02:05:42,407 --> 02:05:48,467
+It means that this curve or the curve must lie on the circular cylinder.
+
+618
+02:05:52,307 --> 02:05:56,688
+x square plus y square is equal to 1.
+
+619
+02:05:57,828 --> 02:06:00,148
+Then, the point
+
+620
+02:06:05,300 --> 02:06:07,760
+X, Y, Z
+
+621
+02:06:07,760 --> 02:06:11,159
+Hoş
+
+622
+02:06:14,676 --> 02:06:18,996
+We have no enough space to write this, but maybe.
+
+623
+02:06:44,532 --> 02:07:08,532
+x2 plus y2 is equal to cosine t plus sine t is equal to 1. It means that the curve must lie, the curve must lie on the circular cylinder.
+
+624
+02:07:27,572 --> 02:07:41,292
+X2 plus Y2 is equal to 1. So we have a circle on the bottom of the cylinder, which is given by the equation, X2 plus Y2 is equal to 1.
+
+625
+02:07:43,072 --> 02:07:44,792
+We have no break, [öğrenci].
+
+626
+02:07:46,471 --> 02:07:47,891
+So the point,
+
+627
+02:07:52,756 --> 02:07:54,756
+x, y, and z
+
+628
+02:07:54,756 --> 02:07:59,076
+y is directly
+
+629
+02:07:59,076 --> 02:08:00,216
+above the point
+
+630
+02:08:00,216 --> 02:08:02,796
+x, y
+
+631
+02:08:02,796 --> 02:08:04,356
+0
+
+632
+02:08:04,356 --> 02:08:06,655
+which moves
+
+633
+02:08:06,655 --> 02:08:07,856
+the counter
+
+634
+02:08:07,856 --> 02:08:10,816
+clockwise around the
+
+635
+02:08:10,816 --> 02:08:11,596
+circle
+
+636
+02:08:11,596 --> 02:08:14,956
+x square plus
+
+637
+02:08:14,956 --> 02:08:16,716
+y square is
+
+638
+02:08:16,716 --> 02:08:17,756
+equal to 1
+
+639
+02:08:17,756 --> 02:08:20,816
+so it means that
+
+640
+02:08:20,816 --> 02:08:22,296
+z is equal to t
+
+641
+02:08:22,296 --> 02:08:24,296
+x, y, and z
+
+642
+02:08:26,579 --> 02:08:30,420
+ve bu şekilde kürtelik ile çöpürelse
+
+643
+02:08:30,420 --> 02:08:35,460
+yöntemde yöntemde yöntemde
+
+644
+02:08:35,460 --> 02:08:38,340
+ve bu helye kürtelik
+
+645
+02:08:51,764 --> 02:08:52,123
+Ok.
+
+646
+02:08:55,667 --> 02:08:57,747
+ve 9
+
+647
+02:09:05,140 --> 02:09:10,539
+We also define a derivative of a vector functions.
+
+648
+02:09:11,440 --> 02:09:23,980
+The derivative r prime of a vector function r is defined in the same way for the real-relipped functions.
+
+649
+02:09:23,980 --> 02:09:39,860
+dr over dt is the derivative of r, which is equal to limit h goes to the 0, r t plus h minus r t over h.
+
+650
+02:09:41,280 --> 02:09:44,100
+If this limit exists.
+
+651
+02:09:44,100 --> 02:09:49,260
+Now, look at the figure on the left.
+
+652
+02:09:51,260 --> 02:09:55,119
+It explains the geometric meaning of the derivative.
+
+653
+02:10:01,203 --> 02:10:28,103
+Now, if the points P and Q have position vectors Rt and Rt plus H, then PQ represents the vectors Rt plus H minus Rt, so which can be regarded as a second vector, so we can write here as a second vector,
+
+654
+02:10:28,103 --> 02:10:44,583
+and if H is positive, then a scalar multiple of, maybe I have to write all of this here,
+
+655
+02:10:53,619 --> 02:10:54,859
+If the points
+
+656
+02:11:00,851 --> 02:11:05,851
+P and Q have position vectors.
+
+657
+02:11:19,315 --> 02:11:23,475
+vektörs R of t and
+
+658
+02:11:32,243 --> 02:11:36,143
+R, t plus h
+
+659
+02:11:40,500 --> 02:11:41,039
+Then,
+
+660
+02:11:44,948 --> 02:11:59,528
+PQ is, or can be regarded as, R t plus h minus R t.
+
+661
+02:12:02,996 --> 02:12:12,735
+And false or if h is bigger than zero.
+
+662
+02:12:16,243 --> 02:12:26,243
+Scalar multiple 1 over h times
+
+663
+02:12:30,163 --> 02:12:37,983
+rt plus h minus rt has the same direction.
+
+664
+02:12:41,876 --> 02:12:47,296
+Ski etmeler, it has the same direction.
+
+665
+02:13:01,043 --> 02:13:03,604
+same direction as
+
+666
+02:13:07,475 --> 02:13:16,036
+vektör, rt plus h minus rt.
+
+667
+02:13:17,555 --> 02:13:28,835
+Now, as h goes to zero, it appears that this vector approach to the vector
+
+668
+02:13:28,835 --> 02:13:39,555
+that lies on the tangent line. So, so, from this fact, the vector
+
+669
+02:13:45,971 --> 02:13:48,731
+R' t
+
+670
+02:13:48,731 --> 02:13:51,431
+is called
+
+671
+02:13:56,851 --> 02:13:58,231
+The tangent vector.
+
+672
+02:14:03,572 --> 02:14:05,891
+vektör,
+
+673
+02:14:09,395 --> 02:14:10,496
+Toplu Curve
+
+674
+02:14:18,228 --> 02:14:19,988
+Defined by h,
+
+675
+02:14:26,899 --> 02:14:29,639
+at point P.
+
+676
+02:14:37,268 --> 02:14:54,148
+at the point P. So, the derivative of a vector function is called the tangent vector of curve determined by or defined by
+
+677
+02:14:54,148 --> 02:15:04,967
+R at the point P. Okay.
+
+678
+02:15:10,771 --> 02:15:31,751
+So, if we have a vector valid function, RT, which is given by the parametric equations or the component functions, f of t, g of t, h of t, then we only take, or we only differentiate each component of this vector function.
+
+679
+02:15:31,751 --> 02:15:42,391
+So, the derivative of RT here is equal to the derivative of f, the derivative of g, and the derivative of h.
+
+680
+02:15:43,591 --> 02:15:49,511
+Okay, we only take the derivative of each component.
+
+681
+02:15:50,872 --> 02:15:52,292
+We get to the example.
+
+682
+02:16:03,475 --> 02:16:13,255
+find the derivative of r, and find the unit tangent vector at the point t is 0.
+
+683
+02:16:13,255 --> 02:16:14,795
+First,
+
+684
+02:16:19,475 --> 02:16:23,055
+if r is given by
+
+685
+02:16:26,547 --> 02:16:41,268
+1 plus t küp, i plus t times e to the minus t j plus sine 2 t k.
+
+686
+02:16:46,388 --> 02:16:58,728
+Then the derivative of this function is the derivative of each component.
+
+687
+02:16:58,728 --> 02:17:08,168
+So the derivative of this function is 3 times t squared i.
+
+688
+02:17:13,427 --> 02:17:41,407
+Ve derivative of the multiplication of or product of two functions plus the derivative of t is 1 times e to the minus t plus t times minus 1 to the e to the minus t.
+
+689
+02:17:41,407 --> 02:17:54,788
+So it is equal to 1 minus t times e to the minus t j.
+
+690
+02:17:56,468 --> 02:18:04,968
+And the derivative of sine 2t is equal to plus 2 cosine 2t.
+
+691
+02:18:09,139 --> 02:18:12,299
+Tamam.
+
+692
+02:18:17,811 --> 02:18:18,371
+No
+
+693
+02:18:23,059 --> 02:18:25,539
+What is the solution for B?
+
+694
+02:18:31,188 --> 02:18:35,548
+Actually, we are looking for a unique tangent vector.
+
+695
+02:18:35,688 --> 02:18:40,667
+First of all, what is a tangent vector at point t is 0?
+
+696
+02:18:43,268 --> 02:18:54,528
+The tangent vector at t is 0 is equal to r prime, sorry, r prime 0.
+
+697
+02:18:57,188 --> 02:18:58,927
+This is the tangent vector.
+
+698
+02:19:06,708 --> 02:19:10,308
+at t is 0.
+
+699
+02:19:15,028 --> 02:19:29,157
+Ve altyazı alty
+
+700
+02:19:36,852 --> 02:19:50,252
+[öğrenci], we have defined the tangent vector of a curve is the derivative of the vector function r.
+
+701
+02:19:51,032 --> 02:19:59,692
+So, here we are looking for the tangent vector at the point t is 0.
+
+702
+02:19:59,692 --> 02:20:10,652
+So, we only take the derivative of r and write t as 0 in its derivative.
+
+703
+02:20:11,252 --> 02:20:14,052
+We have already found the derivative of r here.
+
+704
+02:20:14,252 --> 02:20:17,472
+So, we only write 0 as t.
+
+705
+02:20:18,952 --> 02:20:23,532
+So, r0 prime is, this is 0.
+
+706
+02:20:25,072 --> 02:20:28,032
+This is 1.
+
+707
+02:20:28,032 --> 02:20:30,392
+So, j
+
+708
+02:20:30,392 --> 02:20:36,892
+And, cosine 0 is 1
+
+709
+02:20:36,892 --> 02:20:40,252
+Plus
+
+710
+02:20:40,252 --> 02:20:42,752
+2k
+
+711
+02:20:42,752 --> 02:20:45,772
+This is the tangent vector
+
+712
+02:20:45,772 --> 02:20:47,512
+At t is 0.
+
+713
+02:20:47,612 --> 02:20:49,672
+But we are looking for the unit tangent vector.
+
+714
+02:20:50,792 --> 02:20:53,811
+So,
+
+715
+02:20:53,811 --> 02:21:23,792
+The unit tangent vector.
+
+716
+02:21:08,500 --> 02:21:37,260
+At, if you write t as 0, we have, to write t as 0, we have 0.100, so the unit tangent vector at 100 is r prime 0 over the magnitude of r prime 0.
+
+717
+02:21:38,500 --> 02:21:46,000
+So, we have already found r prime 0, which is j plus k, 2k.
+
+718
+02:21:51,956 --> 02:22:02,956
+ve
+
+719
+02:22:02,956 --> 02:22:05,956
+1 over
+
+720
+02:22:05,956 --> 02:22:06,956
+square root
+
+721
+02:22:06,956 --> 02:22:08,956
+5j
+
+722
+02:22:08,956 --> 02:22:09,956
+plus
+
+723
+02:22:09,956 --> 02:22:12,956
+2 over
+
+724
+02:22:12,956 --> 02:22:13,956
+square root
+
+725
+02:22:13,956 --> 02:22:15,956
+5k
+
+726
+02:22:15,956 --> 02:22:16,956
+ok
+
+727
+02:22:16,956 --> 02:22:22,956
+this is the unit tangent vector at the point t is 0 or at the point 1 0 0
+
+728
+02:22:22,956 --> 02:22:25,956
+ok
+
+729
+02:22:36,147 --> 02:22:42,987
+Bu kurv, bu tanemizde bu tanemizde.
+
+730
+02:22:57,043 --> 02:23:05,943
+Bu, tanjent vektör, find i' t' and sketch the position vector r1 and the tangent vector r' 1.
+
+731
+02:23:06,543 --> 02:23:16,144
+So, first of all, find the derivative of r, which we take the derivative of each component.
+
+732
+02:23:16,144 --> 02:23:24,043
+The derivative of square root t is 1 over 2 times square root t i.
+
+733
+02:23:25,043 --> 02:23:31,244
+And the derivative of 2 minus t is minus t, minus 1, sorry.
+
+734
+02:23:31,984 --> 02:23:35,304
+So, minus j.
+
+735
+02:23:37,644 --> 02:23:46,123
+And what is the tangent vector at the,
+
+736
+02:23:46,144 --> 02:23:47,543
+t is 1?
+
+737
+02:23:47,543 --> 02:24:01,244
+So, it is r' 1 is equal to 1 over 2 times square root i minus j.
+
+738
+02:24:05,683 --> 02:24:35,363
+Then look at the graph of the curve. The curve is a plain curve. And if we eliminate the parameter from the equations, I mean, in this curve or in this vector function, we have x is equal to square root t and y is equal to 2 minus t.
+
+739
+02:24:35,683 --> 02:24:58,804
+It means that t is equal to x square. Now writing t in place in here, we have y is equal to 2 minus x square. So, so, we draw the position vector r1.
+
+740
+02:25:02,388 --> 02:25:03,347
+which is
+
+741
+02:25:03,347 --> 02:25:06,528
+i plus
+
+742
+02:25:06,528 --> 02:25:08,028
+j
+
+743
+02:25:08,028 --> 02:25:12,347
+which is
+
+744
+02:25:12,347 --> 02:25:14,428
+i plus
+
+745
+02:25:14,428 --> 02:25:16,428
+j
+
+746
+02:25:16,915 --> 02:25:41,456
+X is 1, and Y is 1. So, it's here. And the tangent vector, R'1, is the tangent vector at the point 1, 1. So, it's starting at the corresponding point 1, 1, 1. And it's like this.
+
+747
+02:25:45,172 --> 02:26:00,612
+The last example, no, not the last example, find the parametric equations for the tangent line to the helix with parametric equations at the point, this point.
+
+748
+02:26:00,612 --> 02:26:23,792
+So, we have a helix, which is given by the parametric equations. It means that this helix can be written as rt is equal to, since x is equal to 2 cosign t, this is 2 cosign t.
+
+749
+02:26:27,667 --> 02:26:31,627
+sin t ve t.
+
+750
+02:26:34,028 --> 02:26:37,028
+Vektör Ecclesi'nin de helipç.
+
+751
+02:26:54,164 --> 02:27:15,324
+So, we can take the derivative of this function easily. R' t is equal to the derivative of each component of this function. So, this is minus 2 sin t, cosin t and 1.
+
+752
+02:27:19,443 --> 02:27:27,523
+Now, the parameter value corresponding to the point 0, 1, pi over 2.
+
+753
+02:27:31,412 --> 02:27:59,412
+X is 0, y is 1, and t is, sorry, z is pi over 2. So, it means that t is, or the t which corresponds to this point is pi over 2. Okay.
+
+754
+02:28:01,412 --> 02:28:09,932
+So, we are looking for the tangent line at the point t is pi over 2. Then the tangent line
+
+755
+02:28:20,468 --> 02:28:24,468
+Oh, sorry. Okay, tangent vector.
+
+756
+02:28:28,051 --> 02:28:48,271
+Tangent vector at t pi over 2 is r' pi over 2, which is minus 2, 0, 1.
+
+757
+02:28:48,271 --> 02:28:58,011
+We are looking for the parametric equations for the tangent line.
+
+758
+02:28:58,011 --> 02:29:06,231
+So we have a line.
+
+759
+02:29:08,391 --> 02:29:09,271
+Sorry.
+
+760
+02:29:10,371 --> 02:29:12,971
+We are looking for the equation of the line.
+
+761
+02:29:15,731 --> 02:29:17,291
+The tangent line.
+
+762
+02:29:24,979 --> 02:29:27,979
+bu da
+
+763
+02:29:30,164 --> 02:29:52,424
+Bu, bu
+
+764
+02:30:01,843 --> 02:30:05,623
+Minus 2, 0, 1.
+
+765
+02:30:06,384 --> 02:30:07,843
+Therefore, we have...
+
+766
+02:30:12,147 --> 02:30:18,527
+Parametric equation for the tangent line is, x is equal to x0.
+
+767
+02:30:25,268 --> 02:30:55,247
+0, plus t, times a, minus 2, t, y, is equal to, 1 plus, 0 times t, so y is 1, and z is equal to, z0 is equal to,
+
+768
+02:30:55,268 --> 02:31:01,487
+1, sorry, what is z0, pi over 2,
+
+769
+02:31:06,164 --> 02:31:09,164
+t t t t.
+
+770
+02:31:09,884 --> 02:31:15,004
+This is the tangent vector line, the equation of the tangent line,
+
+771
+02:31:15,704 --> 02:31:27,444
+which is tangent to the helix with the parametric equations at the point 0, 1, pi over 2.
+
+772
+02:31:27,444 --> 02:31:36,384
+Also, we have some rules about the differential of vector functions.
+
+773
+02:31:36,384 --> 02:31:40,084
+These are important to know.
+
+774
+02:31:40,084 --> 02:31:43,084
+Please know all of these properties.
+
+775
+02:31:46,932 --> 02:32:15,412
+For example, for example, look at the 4, the derivative of, the derivative of, the product of two vectors is equal to the, it is actually very similar to the derivative of a multiplication of two functions, the derivative of the first vector function,
+
+776
+02:32:15,412 --> 02:32:28,292
+inner product or that product, second one plus the inner product of the first one with the derivative of the second one.
+
+777
+02:32:39,379 --> 02:32:41,859
+This will be the last example.
+
+778
+02:32:43,420 --> 02:32:53,500
+Show that if the length of the vector function or the magnitude of the vector function is a constant,
+
+779
+02:32:54,420 --> 02:33:05,799
+then the derivative of this vector function is orthogonal to this vector function for all t.
+
+780
+02:33:09,379 --> 02:33:26,379
+We are looking for, we know from the inner product or dot product of the vector that if the inner product of two vectors is zero,
+
+781
+02:33:27,219 --> 02:33:38,500
+then these two vectors are perpendicular to or orthogonal to each other.
+
+782
+02:33:38,500 --> 02:33:48,279
+So, we have to use this fact to prove if a vector function is constant,
+
+783
+02:33:48,279 --> 02:33:56,739
+if the magnitude of the vector function is constant, then the derivative of this vector function is orthogonal to itself.
+
+784
+02:33:56,739 --> 02:34:04,119
+We use, we will use the property for here.
+
+785
+02:34:04,119 --> 02:34:32,119
+Thank you.
+
+786
+02:34:07,924 --> 02:34:10,704
+Since, we know that.
+
+787
+02:34:14,548 --> 02:34:26,028
+İngiltere, dot product of two vectors is equal to the square roots, the squares of the magnitude of these vectors.
+
+788
+02:34:28,688 --> 02:34:37,028
+And we know that the magnitude of this vector is equal to c, so this is equal to c square.
+
+789
+02:34:37,028 --> 02:34:52,868
+Now, using the formula in 4, in 4, d, dt, we take the derivative of both sides.
+
+790
+02:35:09,043 --> 02:35:09,543
+Sol
+
+791
+02:35:21,139 --> 02:35:50,239
+We have from 4, this is equal to r' t dot product r t plus r t dot product r' t is equal to the derivative of the left side, sorry, right side, which is the derivative of the constant is 0.
+
+792
+02:35:51,139 --> 02:36:02,139
+Therefore, we have 2 r' t inner product r' t is equal to 0.
+
+793
+02:36:02,139 --> 02:36:15,279
+It means that r' t is orthogonal to r' t for all t.
+
+794
+02:36:15,279 --> 02:36:34,279
+Actually, it means in geometrically, if a curve lies on a sphere with center the origin, then tangent vector r' t is always perpendicular to the position vector r' t.
+
+795
+02:36:34,279 --> 02:36:35,279
+r' t.
+
+796
+02:36:35,279 --> 02:36:55,279
+R' t.
+
+797
+02:36:51,379 --> 02:36:52,819
+Lies on a spare.
+
+798
+02:37:02,067 --> 02:37:03,608
+İçin, içi, centered, orijin.
+
+799
+02:37:15,827 --> 02:37:17,827
+Tanrı ve tanrı ve tanrı ve tanrı ve tanrı ve tanrı ve tanrı ve tanrı ve tanrı ve tanrı ve tanrı ve tanrı ve tanrı ve tanrı ve tanrı ve tanrı ve tanrı ve tanrı ve tanrı ve tanrı ve tanrı ve tanrı ve tanrı ve tanrı ve tanrı ve tanrı ve tanrı ve tanrı ve tanrı ve tanrı ve tanrı ve tanrı ve tanrı ve tanrı ve tanrı ve tanrı ve tanrı ve tanrı ve tanrı ve tanrı ve tanrı ve tanrı ve tanrı ve tanrı ve tanrı ve tanrı ve tanrı ve tanrı ve tanrı ve tanrı ve tanrı ve tanrı ve tanrı ve tanrı ve tanrı ve tanrı
+
+800
+02:37:28,691 --> 02:37:29,811
+r' t
+
+801
+02:37:29,811 --> 02:37:33,771
+is always
+
+802
+02:37:38,004 --> 02:37:39,463
+Fırsten integral ortada,
+
+803
+02:37:47,443 --> 02:37:49,543
+Vektör artikl.
+
+804
+02:37:59,476 --> 02:38:06,435
+Today is enough. We will continue with the velocity direction and speed tomorrow.
+
+805
+02:38:08,756 --> 02:38:19,556
+We have only two topics. Then we will start to study the multivariable functions tomorrow.
+
+806
+02:38:20,756 --> 02:38:23,076
+Do you have any questions, comments, or other things?
+
+807
+02:38:23,076 --> 02:38:29,855
+I will upload these notes to your lesson wall today.
+
+808
+02:38:29,855 --> 02:38:31,855
+Thank you.
+
+809
+02:38:40,115 --> 02:38:41,195
+Everything is okay.
+
+810
+02:38:45,780 --> 02:38:46,680
+Ok, gut.
+
+811
+02:38:52,564 --> 02:38:55,963
+So, have a nice day all of you and hope to see you tomorrow.
