@@ -21,4 +21,5 @@
 | 35 | Bahar | Bulunamadı | [sube_35/](sube_35/) |
 | 36 | Bahar | Nuran Güzel | [sube_36/](sube_36/) |
 | 50 | Bahar | İsmail (soyadı bulunamadı) | [sube_50/](sube_50/) |
+| 51 | Bahar | Emre Kolotoğlu | [sube_51/](sube_51/) |
 | 52 | Bahar | Muttalip Özavşar | [sube_52/](sube_52/) |

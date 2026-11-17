@@ -1,0 +1,5539 @@
+1
+00:02:03,347 --> 00:02:04,707
+Good morning, everybody.
+
+2
+00:02:07,128 --> 00:02:10,367
+7 to 5. I think we can start. It's 9, 10.
+
+3
+00:02:13,467 --> 00:02:16,147
+Or let me wait two more minutes.
+
+4
+00:02:18,627 --> 00:02:20,127
+Two minutes later, I will start.
+
+5
+00:03:23,443 --> 00:03:27,223
+Oh, let me put this on, Avesis, I forgot that.
+
+6
+00:03:29,143 --> 00:03:30,163
+Yeah, let me do it.
+
+7
+00:05:21,300 --> 00:05:23,879
+Ok, I put this file on Oasis, you can see it now.
+
+8
+00:05:29,492 --> 00:05:31,352
+Evet, bu file is available now.
+
+9
+00:05:32,132 --> 00:05:34,552
+There are 10 problemes from Chapter 11.
+
+10
+00:05:35,692 --> 00:05:38,451
+So I will solve 10 problemes from Chapter 11 today.
+
+11
+00:05:39,812 --> 00:05:42,372
+And then we will start Chapter 12.
+
+12
+00:05:45,292 --> 00:05:46,272
+Okay, let's start.
+
+13
+00:05:48,092 --> 00:05:50,632
+First, find the length of the parametric curve.
+
+14
+00:05:50,891 --> 00:05:51,932
+Xt equals t cubed.
+
+15
+00:05:52,252 --> 00:05:54,932
+Yt equals 1 minus t squared to the power 3 half.
+
+16
+00:05:55,292 --> 00:05:57,772
+Where t is between minus 1 and 1.
+
+17
+00:05:57,772 --> 00:06:05,272
+Well, these type of problems are just immediate application of the formula.
+
+18
+00:06:06,572 --> 00:06:12,132
+So basically, we have seen two main things in this chapter.
+
+19
+00:06:12,592 --> 00:06:15,732
+We have seen them yesterday, the length formula and the area formula.
+
+20
+00:06:16,292 --> 00:06:17,331
+So this is the length formula.
+
+21
+00:06:18,052 --> 00:06:19,552
+Length of a parametric curve.
+
+22
+00:06:20,831 --> 00:06:22,872
+Sorry, this is not what we have seen yesterday.
+
+23
+00:06:22,872 --> 00:06:27,412
+We have seen the length formula for polar curves.
+
+24
+00:06:27,772 --> 00:06:30,552
+This is what we have seen last Friday, last week.
+
+25
+00:06:31,492 --> 00:06:40,451
+The length of a parametric curve, its formula is the integral from a to b square root of dx over dt squared plus dy over dt squared dt.
+
+26
+00:06:40,451 --> 00:06:45,712
+So we are going to apply this formula, basically, to find the length of this curve.
+
+27
+00:06:45,892 --> 00:06:51,472
+So we need to find the derivatives of x with respect to t and the derivative of y with respect to t.
+
+28
+00:06:51,912 --> 00:06:55,072
+But if xt is t cubed, so its derivative is 3t squared.
+
+29
+00:06:56,072 --> 00:06:57,232
+Here is yt.
+
+30
+00:06:57,392 --> 00:07:06,872
+Its derivative with respect to t is 3 over 2 times 1 minus t squared to the power 1 half times derivative of this inner function, which is minus 2t.
+
+31
+00:07:06,872 --> 00:07:10,492
+And this is when we simplify it.
+
+32
+00:07:10,692 --> 00:07:11,951
+So here, 2s cancel.
+
+33
+00:07:12,072 --> 00:07:17,451
+We get minus 3t, minus 3t times this, 1 minus t squared to the power 1 half.
+
+34
+00:07:18,532 --> 00:07:19,412
+What do we need?
+
+35
+00:07:19,451 --> 00:07:21,372
+We need the sum of the squares of these.
+
+36
+00:07:21,372 --> 00:07:24,192
+Square of this.
+
+37
+00:07:24,732 --> 00:07:28,412
+Square of this is 90 to the power 4 here.
+
+38
+00:07:29,391 --> 00:07:37,152
+And then square of this is 90 squared plus 90 squared times 1 minus t squared here.
+
+39
+00:07:37,152 --> 00:07:47,372
+Then when we add this and simplify this, when we simplify this, we get 90 squared minus 90 to the power 4 here.
+
+40
+00:07:47,812 --> 00:07:51,252
+And then when we add them up, 90 to the power 4 is canceled.
+
+41
+00:07:51,752 --> 00:07:53,072
+We get just 90 squared.
+
+42
+00:07:53,652 --> 00:07:56,612
+Square root of 90 squared is 3 absolute value of t.
+
+43
+00:07:56,612 --> 00:08:04,072
+So 3 absolute value of t, that's this integrand over here.
+
+44
+00:08:04,472 --> 00:08:05,612
+3 absolute value of t.
+
+45
+00:08:05,711 --> 00:08:07,732
+So we are going to integrate this function.
+
+46
+00:08:07,912 --> 00:08:09,091
+3 absolute value of t.
+
+47
+00:08:09,732 --> 00:08:11,451
+What are the limits of integration here?
+
+48
+00:08:12,091 --> 00:08:15,812
+Limits of integration are between t between minus 1 and 1.
+
+49
+00:08:17,752 --> 00:08:19,772
+So here it is.
+
+50
+00:08:19,772 --> 00:08:27,912
+integral from minus 1 to 1, 3 absolute value of t dt, which is the same as.
+
+51
+00:08:28,652 --> 00:08:29,312
+Now the.
+
+52
+00:08:36,884 --> 00:08:52,683
+Let me write it here. The absolute value function, 3 absolute value of t, it's like this. Absolute value function. It's an even function. It's symmetric with respect to the y-axis. So, the integral from minus 1 to 0 is the same as the integral from 0 to 1.
+
+53
+00:08:58,131 --> 00:09:58,131
+Bu, bu
+
+54
+00:09:58,131 --> 00:10:28,111
+Mutlak değer t, t eksi 1 ile 0 arasındayken eksi t'ye eşit, 0 ile 1 arasındayken artı t'ye eşit, ayırmak zorundasın, eğer böyle yapmazsan da şöyle yapacaksın, eksi 1'den 0'a, eksi 1'den 0'a 3 mutlak değer t dediğin eksi 3, eksi 3 t'dir, eksi 3 t'de t, eksi 1'den 0'a eksi 3 dtt integralini bulacaksın, artı, bir de 0'dan 1'e şu, yani bir de 0'dan 1'e şu,
+
+55
+00:10:28,131 --> 00:10:37,231
+3 t'de t integralini bulacaksın, daha sonra ikisini toplayacaksın, bakarsan ikisi de 3 bölü 2 çıkacak, toplamları 3 olacak.
+
+56
+00:10:38,451 --> 00:10:39,531
+Anladım, teşekkür ederim.
+
+57
+00:10:43,508 --> 00:10:44,307
+Another question?
+
+58
+00:10:55,412 --> 00:10:56,652
+Okay, let's continue.
+
+59
+00:11:03,923 --> 00:11:05,244
+Another lengthy question.
+
+60
+00:11:05,963 --> 00:11:06,884
+The same type of question.
+
+61
+00:11:07,004 --> 00:11:08,124
+Find the length of the curve.
+
+62
+00:11:08,783 --> 00:11:12,043
+X equals 8 cosin t plus 8 t sin t.
+
+63
+00:11:12,483 --> 00:11:17,063
+X equals 8 sin t minus 8 t cosin t for t between 0 and pi over 2.
+
+64
+00:11:17,783 --> 00:11:19,463
+Again, we will apply the same formula.
+
+65
+00:11:19,823 --> 00:11:23,463
+So first, we need to find the derivative of x with respect to t
+
+66
+00:11:23,463 --> 00:11:25,744
+and the derivative of y with respect to t.
+
+67
+00:11:28,423 --> 00:11:30,543
+Okay, derivative of x with respect to t.
+
+68
+00:11:30,603 --> 00:11:31,083
+What is it?
+
+69
+00:11:31,083 --> 00:11:33,823
+Derivative of 8 cosin t is minus 8 sin t.
+
+70
+00:11:35,423 --> 00:11:42,343
+Now, to find the derivative of this, we need to use the product formula.
+
+71
+00:11:43,384 --> 00:11:44,884
+Derivative of 8 t is 8.
+
+72
+00:11:45,783 --> 00:11:48,603
+So when we think of this as 8 t times sin t,
+
+73
+00:11:49,683 --> 00:11:53,583
+derivative of 8 t is 8 times sin t itself
+
+74
+00:11:53,583 --> 00:11:59,283
+plus 8 t itself times derivative of sin t, which is cosin t.
+
+75
+00:11:59,283 --> 00:12:05,443
+So minus 8 sin t plus 8 sin t, they cancel out, we get 8 t cosin t.
+
+76
+00:12:06,403 --> 00:12:08,764
+8 t cosin t is derivative of x with respect to t.
+
+77
+00:12:09,504 --> 00:12:12,903
+Now, derivative of y with respect to t here.
+
+78
+00:12:13,663 --> 00:12:17,364
+Derivative of 8 sin t is 8 cosin t minus,
+
+79
+00:12:17,364 --> 00:12:21,603
+again, the product formula for this,
+
+80
+00:12:22,243 --> 00:12:23,843
+derivative of 8 t is 8,
+
+81
+00:12:24,483 --> 00:12:30,043
+and cosin t itself plus 8 t itself times derivative of cosin t,
+
+82
+00:12:30,103 --> 00:12:31,024
+which is minus sin t.
+
+83
+00:12:31,583 --> 00:12:32,203
+Get this.
+
+84
+00:12:32,683 --> 00:12:35,663
+Again, 8 cosin t minus 8 cosin t, they cancel out,
+
+85
+00:12:35,663 --> 00:12:39,144
+we get minus minus 8 t sin t, we get 8 t sin t.
+
+86
+00:12:40,103 --> 00:12:41,683
+At the derivative of a wide respect to t.
+
+87
+00:12:42,323 --> 00:12:46,063
+So, some of their squares is,
+
+88
+00:12:46,243 --> 00:12:50,063
+so square of this is 64 t square cosin t,
+
+89
+00:12:50,303 --> 00:12:54,843
+and square of this is 64 t square sin square t.
+
+90
+00:12:54,843 --> 00:13:00,364
+So, when we factor 64 t squared,
+
+91
+00:13:01,803 --> 00:13:05,283
+we get 64 t squared times cosin square t plus sin square t.
+
+92
+00:13:05,403 --> 00:13:07,283
+This is one.
+
+93
+00:13:07,663 --> 00:13:08,963
+So, we get 64 t squared.
+
+94
+00:13:09,563 --> 00:13:13,443
+It's square root of 64 t squared is 8 times absolute value of t.
+
+95
+00:13:15,144 --> 00:13:16,943
+8 times absolute value of t.
+
+96
+00:13:18,183 --> 00:13:20,323
+What are the limits of integration here?
+
+97
+00:13:21,323 --> 00:13:24,563
+So, integration are non-negative now.
+
+98
+00:13:24,563 --> 00:13:26,024
+from 0 to pi over 2.
+
+99
+00:13:26,744 --> 00:13:30,803
+So, we integrate this function from 0 to pi over 2
+
+100
+00:13:30,803 --> 00:13:33,283
+to find the length of this curve on that interval.
+
+101
+00:13:34,163 --> 00:13:37,283
+So, since t is between 0 and pi over 2,
+
+102
+00:13:37,463 --> 00:13:38,644
+absolute value of t is t.
+
+103
+00:13:39,504 --> 00:13:43,864
+So, we don't have to separate this like the previous one.
+
+104
+00:13:44,124 --> 00:13:45,504
+It's already positive.
+
+105
+00:13:46,823 --> 00:13:49,124
+So, integral of a t is 4 t squared.
+
+106
+00:13:49,563 --> 00:13:51,043
+So, from 0 to pi squared,
+
+107
+00:13:51,183 --> 00:13:53,703
+when t is pi, sorry, 0 to pi over 2,
+
+108
+00:13:53,703 --> 00:13:54,943
+when t is pi over 2,
+
+109
+00:13:54,963 --> 00:13:56,083
+we get pi squared over 4
+
+110
+00:13:56,083 --> 00:13:57,644
+minus 0.
+
+111
+00:13:57,983 --> 00:13:59,203
+So, we get pi squared.
+
+112
+00:14:01,364 --> 00:14:03,384
+So, that's the length of this curve, pi squared.
+
+113
+00:14:03,384 --> 00:14:19,884
+So, that's the length of this curve.
+
+114
+00:14:09,427 --> 00:14:11,908
+Okay, any questions from this problem?
+
+115
+00:14:12,947 --> 00:14:17,288
+It was another application of the length formula, basically.
+
+116
+00:14:17,827 --> 00:14:22,268
+Just finding derivatives, finding integrals, and putting everything into the formula.
+
+117
+00:14:28,288 --> 00:14:29,668
+Another length problem.
+
+118
+00:14:31,868 --> 00:14:33,207
+No, not the length problem.
+
+119
+00:14:34,548 --> 00:14:35,908
+Equation of the tandem line, okay.
+
+120
+00:14:35,908 --> 00:14:40,467
+Assuming x is equal to xt and y is equal to yt.
+
+121
+00:14:41,248 --> 00:14:45,187
+So x and y are parametrized with the parametric variable t.
+
+122
+00:14:46,628 --> 00:14:58,168
+Find the equation of the line tangent to the curve given parametrically as t squared sine x plus x cube equals e to the power t, y is equal to t sine t minus 2t.
+
+123
+00:14:59,628 --> 00:15:02,748
+So first, let's understand this.
+
+124
+00:15:02,748 --> 00:15:05,648
+Note that y is given as a function of t immediately.
+
+125
+00:15:05,908 --> 00:15:08,947
+y is explicitly given as a function of t, right?
+
+126
+00:15:09,268 --> 00:15:10,967
+y is equal to some function of t.
+
+127
+00:15:11,467 --> 00:15:14,148
+But x is not given explicitly as a function of t.
+
+128
+00:15:14,248 --> 00:15:17,008
+It is given implicitly as a function of t.
+
+129
+00:15:17,427 --> 00:15:20,607
+I mean, there's an equation involving x and t.
+
+130
+00:15:21,128 --> 00:15:25,607
+This equation defines x implicitly as a function of t.
+
+131
+00:15:25,607 --> 00:15:29,148
+Okay, what is our goal?
+
+132
+00:15:29,248 --> 00:15:33,967
+Our goal is to find the equation of the line tangent to the curve at this point.
+
+133
+00:15:35,248 --> 00:15:37,748
+So what are we going to do?
+
+134
+00:15:37,748 --> 00:15:38,307
+We're going to do this.
+
+135
+00:15:38,307 --> 00:15:38,888
+So what are we going to do?
+
+136
+00:15:38,888 --> 00:15:40,388
+We're going to do this.
+
+137
+00:15:40,388 --> 00:15:41,207
+So what are we going to do?
+
+138
+00:15:41,207 --> 00:15:43,888
+We're going to do this.
+
+139
+00:15:40,755 --> 00:15:41,755
+Evet.
+
+140
+00:15:44,475 --> 00:15:45,755
+O zaman, bu bir kurdu.
+
+141
+00:15:46,755 --> 00:15:48,755
+Bu bir kurdu.
+
+142
+00:15:49,755 --> 00:19:25,755
+Bu kurdu.
+
+143
+00:19:25,755 --> 00:19:26,755
+e to the power of 0.
+
+144
+00:19:26,755 --> 00:19:27,755
+Which is 1.
+
+145
+00:19:27,755 --> 00:19:28,755
+x cube equals 1.
+
+146
+00:19:28,755 --> 00:19:30,755
+Which means that x is equal to 1.
+
+147
+00:19:30,755 --> 00:19:32,755
+On real numbers that has only one solution.
+
+148
+00:19:32,755 --> 00:19:33,755
+x is equal to 1.
+
+149
+00:19:33,755 --> 00:19:35,755
+So putting that into this equation.
+
+150
+00:19:35,755 --> 00:19:37,755
+We get 3 times 1.
+
+151
+00:19:37,755 --> 00:19:58,755
+x cube equals 1.
+
+152
+00:19:38,644 --> 00:19:41,163
+Dx over dt is equal to 1.
+
+153
+00:19:41,784 --> 00:19:44,743
+And from this we get dx over dt equals 1 over 3.
+
+154
+00:19:45,243 --> 00:19:48,324
+So the value of dx over dt at t equals 0 is 1 over 3.
+
+155
+00:19:48,963 --> 00:19:52,084
+This denominator is going to be 1 over 3.
+
+156
+00:19:53,243 --> 00:19:55,564
+Now our next goal is to find dy over dt.
+
+157
+00:19:57,044 --> 00:19:59,443
+Y is already written as a function of t.
+
+158
+00:20:00,144 --> 00:20:03,483
+Its derivative is here.
+
+159
+00:20:03,483 --> 00:20:20,463
+This y equals t sine t minus 2t derivative of y with respect to t is derivative of t which is 1 times sine t plus t itself times derivative of sine t which is cosine t minus derivative of 2t which is 2.
+
+160
+00:20:21,304 --> 00:20:25,144
+Again the value of this at t equals 0 is what?
+
+161
+00:20:25,584 --> 00:20:26,703
+Sine 0 is 0.
+
+162
+00:20:27,064 --> 00:20:30,284
+0 times cosine 0 is 0 minus 2 which is minus 2.
+
+163
+00:20:30,284 --> 00:20:35,463
+So this numerator is minus 2.
+
+164
+00:20:35,524 --> 00:20:36,764
+Denominator is 1 over 3.
+
+165
+00:20:36,963 --> 00:20:39,963
+We get the slope of the tangent line which is dy over dx.
+
+166
+00:20:40,524 --> 00:20:47,183
+The slope of the tangent line at t equals 0 is y over dx at t equals 0 which is the coefficient of this.
+
+167
+00:20:47,344 --> 00:20:49,663
+That's minus 2 over 1 over 3 which is minus 6.
+
+168
+00:20:51,264 --> 00:20:54,264
+And where does the at t equals 0?
+
+169
+00:20:55,463 --> 00:20:56,824
+At t equals 0.
+
+170
+00:20:56,824 --> 00:21:00,223
+We have already found x.
+
+171
+00:21:00,923 --> 00:21:02,324
+We have found that x is equal to 1.
+
+172
+00:21:03,264 --> 00:21:04,024
+How about y?
+
+173
+00:21:05,884 --> 00:21:08,963
+When t is 0, y is 0.
+
+174
+00:21:09,104 --> 00:21:10,264
+0 minus 0 which is 0.
+
+175
+00:21:10,844 --> 00:21:14,764
+So when t is equal to 0, the curve passes through this point.
+
+176
+00:21:15,503 --> 00:21:16,044
+1, 0.
+
+177
+00:21:16,044 --> 00:21:19,864
+So it passes through this point.
+
+178
+00:21:19,943 --> 00:21:23,163
+1, 0 and its slope is 6.
+
+179
+00:21:23,624 --> 00:21:25,844
+So when we work with that, we can get that.
+
+180
+00:21:25,903 --> 00:21:28,884
+This equation is y is equal to minus 6x plus 6.
+
+181
+00:21:28,884 --> 00:21:43,884
+So when we work with that, we can get that.
+
+182
+00:21:33,140 --> 00:21:41,759
+Um, that's the equation of the line, passing through this point, 1, 0, and whose slope is minus 6, basically.
+
+183
+00:21:44,320 --> 00:21:46,580
+Okay, any questions on this problem?
+
+184
+00:21:51,124 --> 00:21:52,304
+Alright, let's continue.
+
+185
+00:21:54,423 --> 00:21:57,163
+Okay, now some problems from polar coordinates.
+
+186
+00:22:01,299 --> 00:22:14,039
+Okay, sketch the graph of this set of points which satisfy theta equals minus pi over 3 and minus 1 is less than or equal to r less than 2 in polar coordinates.
+
+187
+00:22:14,759 --> 00:22:16,599
+So this is basically this.
+
+188
+00:22:17,019 --> 00:22:18,919
+Theta is minus 2 pi over 3.
+
+189
+00:22:19,039 --> 00:22:26,960
+Minus 2 pi over 3 means we need to turn in clockwise direction.
+
+190
+00:22:28,139 --> 00:22:30,700
+Because counterclockwise direction is a positive direction.
+
+191
+00:22:30,700 --> 00:22:32,039
+Clockwise direction is negative.
+
+192
+00:22:33,019 --> 00:22:36,619
+In the clockwise direction, mean will no move 2 pi over 3.
+
+193
+00:22:36,740 --> 00:22:39,420
+That's 2 pi over 3 is 120 degrees.
+
+194
+00:22:39,500 --> 00:22:42,039
+So we get minus 120 degrees this.
+
+195
+00:22:43,619 --> 00:22:45,879
+So we get to this ray over here.
+
+196
+00:22:46,500 --> 00:22:47,779
+This is the ray we get.
+
+197
+00:22:49,399 --> 00:22:53,139
+We get this direction.
+
+198
+00:22:53,139 --> 00:23:02,240
+Okay, now on that direction, on that direction, we want r to be between minus 1 and 2.
+
+199
+00:23:02,799 --> 00:23:05,599
+Minus 1 is not, minus 1 is included, 2 is not included.
+
+200
+00:23:06,539 --> 00:23:07,460
+Minus 1 to 2.
+
+201
+00:23:07,819 --> 00:23:09,920
+But this is our positive direction now.
+
+202
+00:23:10,420 --> 00:23:11,579
+This is our positive direction.
+
+203
+00:23:11,579 --> 00:23:15,440
+So we move 2 units on this direction and 2 is not included.
+
+204
+00:23:16,099 --> 00:23:17,940
+And y unit on the opposite direction.
+
+205
+00:23:19,119 --> 00:23:20,299
+This is minus 1.
+
+206
+00:23:20,460 --> 00:23:21,799
+This point is minus 1.
+
+207
+00:23:23,200 --> 00:23:24,679
+This point is 2, basically.
+
+208
+00:23:25,440 --> 00:23:29,759
+The set of all points, our coordinate is between minus 1 and 2.
+
+209
+00:23:30,079 --> 00:23:31,059
+Minus 1 is included.
+
+210
+00:23:31,940 --> 00:23:32,740
+2 is not included.
+
+211
+00:23:32,960 --> 00:23:36,899
+Is the set of points on this line segment, including this point, excluding this point.
+
+212
+00:23:36,899 --> 00:23:38,779
+That's the graph of that.
+
+213
+00:23:42,859 --> 00:23:47,740
+This set of points satisfying these two equations and that inequality.
+
+214
+00:23:51,443 --> 00:23:53,983
+Ok, let's continue.
+
+215
+00:23:59,508 --> 00:24:10,528
+Replace the Cartesian equations x squared plus y squared equals 2x and x squared plus y squared equals 2y by equivalent polar equations and identify their graphs.
+
+216
+00:24:11,508 --> 00:24:19,067
+We have done similar problems in class on last week, I guess.
+
+217
+00:24:19,188 --> 00:24:20,347
+Yeah, last Friday.
+
+218
+00:24:21,408 --> 00:24:21,928
+Okay, let's see.
+
+219
+00:24:21,988 --> 00:24:22,448
+What do we know?
+
+220
+00:24:22,448 --> 00:24:28,627
+We know that r equals x equals r cosine theta equals r sine theta and x squared plus y squared equals r squared.
+
+221
+00:24:28,627 --> 00:24:35,188
+We're going to make use of these three to convert a Cartesian equation into polar equation.
+
+222
+00:24:36,128 --> 00:24:40,128
+On the first equation, immediately get the left hand side is r squared.
+
+223
+00:24:41,048 --> 00:24:43,448
+Right hand side, 2x is 2r cosine theta.
+
+224
+00:24:44,128 --> 00:24:47,288
+So from this, we get r squared minus 2r cosine theta equals 0.
+
+225
+00:24:48,067 --> 00:24:51,888
+We factor r, we get r times r minus 2 cosine theta equals 0.
+
+226
+00:24:52,648 --> 00:24:57,307
+So either r is 0 or this is 0, which means r is 2 cosine theta.
+
+227
+00:24:57,307 --> 00:25:01,528
+And this r equals 2 cosine theta.
+
+228
+00:25:02,668 --> 00:25:05,748
+That includes the case r equals 0.
+
+229
+00:25:11,388 --> 00:25:16,188
+So when we combine these two, we can get this equation, r equals 2 cosine theta.
+
+230
+00:25:16,188 --> 00:25:19,768
+What other one?
+
+231
+00:25:19,827 --> 00:25:21,508
+x squared plus y squared equals 2y.
+
+232
+00:25:22,307 --> 00:25:25,008
+That's, again, the left hand side is r squared.
+
+233
+00:25:25,587 --> 00:25:27,908
+Right hand side is 2y, which is 2r sine theta.
+
+234
+00:25:28,468 --> 00:25:29,587
+Again, do the same thing.
+
+235
+00:25:29,648 --> 00:25:31,807
+Subtract, factor out.
+
+236
+00:25:32,508 --> 00:25:35,408
+Then we will get r equals 0 or r equals 2 sine theta.
+
+237
+00:25:35,548 --> 00:25:36,428
+Similar to above.
+
+238
+00:25:36,428 --> 00:25:40,648
+Again, this one contains this one, the case r equals 0 already.
+
+239
+00:25:41,648 --> 00:25:43,067
+So we get r equals 2 sine theta.
+
+240
+00:25:44,968 --> 00:25:54,728
+And to identify their graphs, we can make use of the Cartesian equations or can make use of the polar equation.
+
+241
+00:25:55,048 --> 00:25:55,607
+We can do that.
+
+242
+00:25:55,607 --> 00:25:58,847
+Actually, we have seen these yesterday, right?
+
+243
+00:25:58,988 --> 00:26:10,608
+The last thing we have seen yesterday was the polar equations of circles whose centers are on the x-axis or y-axis and whose...
+
+244
+00:26:10,607 --> 00:26:12,607
+Um...
+
+245
+00:26:17,140 --> 00:26:20,140
+ve orijinal birçok kısımda.
+
+246
+00:26:20,140 --> 00:26:21,140
+2 kısımda.
+
+247
+00:26:21,140 --> 00:26:25,140
+So, remember 2A kısımda.
+
+248
+00:26:25,140 --> 00:26:27,140
+2A kısımda.
+
+249
+00:26:27,140 --> 00:26:34,140
+R equals 2A kısımda is a circle
+
+250
+00:26:34,140 --> 00:26:38,140
+with radius a whose center is at the positive x-axis.
+
+251
+00:26:38,140 --> 00:26:42,140
+And R equals 2A kısımda is a circle of radius a
+
+252
+00:26:42,140 --> 00:26:45,140
+whose center is at the positive y-axis.
+
+253
+00:26:45,140 --> 00:26:46,140
+Here 2A kısımda.
+
+254
+00:26:46,140 --> 00:26:47,140
+Here A is one.
+
+255
+00:26:47,140 --> 00:26:49,140
+So, its center is 1,0.
+
+256
+00:26:49,140 --> 00:26:50,140
+The radius is one.
+
+257
+00:26:50,140 --> 00:26:52,140
+R equals 2 kısımda.
+
+258
+00:26:52,140 --> 00:26:54,140
+And R equals 2 kısımda.
+
+259
+00:26:54,140 --> 00:26:56,140
+Here again 2A kısımda.
+
+260
+00:26:56,140 --> 00:26:57,140
+A is one.
+
+261
+00:26:57,140 --> 00:26:58,140
+Its radius is one.
+
+262
+00:26:58,140 --> 00:27:01,140
+And its center is at the positive y-axis passes through the origin.
+
+263
+00:27:01,140 --> 00:27:06,140
+So, this is the R equals 2 kısımda.
+
+264
+00:27:06,140 --> 00:27:10,140
+Of course, we could work on the Cartesian equations
+
+265
+00:27:10,140 --> 00:27:13,140
+and to find these graphs as well.
+
+266
+00:27:13,140 --> 00:27:14,140
+Let's work to that as well.
+
+267
+00:27:14,140 --> 00:27:16,140
+x-square plus y-square equals 2x.
+
+268
+00:27:16,140 --> 00:27:20,140
+If we subtract 2x, move 2x to the other side, we get this.
+
+269
+00:27:20,140 --> 00:27:26,140
+Then, to complete this to a squared, we need to add 1 to it.
+
+270
+00:27:26,140 --> 00:27:28,140
+So, add 1 to both sides.
+
+271
+00:27:28,140 --> 00:27:29,140
+Then what do we get?
+
+272
+00:27:29,140 --> 00:27:34,140
+So, this is x-1 squared plus y-square equals 1.
+
+273
+00:27:34,140 --> 00:27:41,140
+So, this is the equation of the circle whose center is 1,0 and whose radius is 1.
+
+274
+00:27:41,140 --> 00:27:42,140
+This one.
+
+275
+00:27:42,140 --> 00:27:43,140
+Center is 1,0.
+
+276
+00:27:43,140 --> 00:27:44,140
+Radius is 1.
+
+277
+00:27:44,140 --> 00:27:45,140
+So, this is 1.
+
+278
+00:27:45,140 --> 00:27:47,140
+The next one is again do the same thing.
+
+279
+00:27:47,140 --> 00:27:48,140
+Subtract 2y.
+
+280
+00:27:48,140 --> 00:27:52,140
+Then to complete this to a square, add 1 to both sides.
+
+281
+00:27:52,140 --> 00:27:55,140
+Now, this is y-1 squared.
+
+282
+00:27:55,140 --> 00:28:02,140
+So, we get the equation of the circle whose center is 0,1 and whose radius is 1.
+
+283
+00:28:02,140 --> 00:28:04,140
+This circle.
+
+284
+00:28:04,140 --> 00:28:11,140
+So, we can find their graphs both working on Cartesian or other.
+
+285
+00:28:11,140 --> 00:28:16,140
+Are going to same, give us the same circle graph basically.
+
+286
+00:28:16,140 --> 00:28:38,140
+So, this is the second one.
+
+287
+00:28:19,508 --> 00:28:29,488
+Okay, now calculate the area of the region that lies outside the circle r equals 2 cosin theta and inside the circle r equals 2 sin theta. We have found them in the previous question.
+
+288
+00:28:30,827 --> 00:28:37,087
+So we are going to find the area of the region. r equals 2 cosin theta is here, this one, and r equals 2 sin theta is this one.
+
+289
+00:28:40,692 --> 00:28:56,912
+Alkohadere aree of the region that lies outside the circle, outside the circle, which one? Outside r equals 2 cosign theta. So outside this one, and inside the circle r equals 2 cosign theta, inside this one, but this region over here.
+
+290
+00:28:57,912 --> 00:29:04,011
+So we can separate it into two subregions, r1, which is a health circle, and r2, this region.
+
+291
+00:29:07,604 --> 00:29:09,223
+Okay, we have to be careful here.
+
+292
+00:29:13,652 --> 00:29:57,832
+Bu, bu
+
+293
+00:30:01,236 --> 00:30:03,676
+So, think about this region over here.
+
+294
+00:30:04,916 --> 00:30:05,355
+This region.
+
+295
+00:30:05,976 --> 00:30:09,956
+The region is bounded above by this curve, right?
+
+296
+00:30:10,836 --> 00:30:15,276
+Bounded above by this curve, which is 2 sin theta.
+
+297
+00:30:15,456 --> 00:30:18,936
+And it's bounded below by this curve.
+
+298
+00:30:20,836 --> 00:30:24,996
+Bounded below by this curve, which is R equals 2 cos theta.
+
+299
+00:30:25,496 --> 00:30:29,316
+So, this area over here is the area between these two curves.
+
+300
+00:30:29,316 --> 00:30:31,716
+And between which rays?
+
+301
+00:30:32,276 --> 00:30:33,336
+So, they intersect.
+
+302
+00:30:33,856 --> 00:30:45,596
+I mean, this region over here is a region between this ray and this ray over here.
+
+303
+00:30:47,356 --> 00:30:48,896
+Let's understand it.
+
+304
+00:30:51,156 --> 00:30:55,316
+When theta is pi over 4, theta is pi over 4.
+
+305
+00:30:55,316 --> 00:30:58,656
+So, sine pi over 4 is root 2 over 2.
+
+306
+00:30:58,916 --> 00:31:00,696
+R is root 2 on this curve.
+
+307
+00:31:01,376 --> 00:31:05,036
+Here, sine pi over 4 is also root 2 over 2.
+
+308
+00:31:05,476 --> 00:31:07,216
+R is root 2 on this curve as well.
+
+309
+00:31:07,396 --> 00:31:09,296
+So, we get the same point.
+
+310
+00:31:09,296 --> 00:31:16,076
+When theta is pi over 4, on both curves we get this point.
+
+311
+00:31:18,896 --> 00:31:20,876
+Theta is pi over 4, R equals root 2.
+
+312
+00:31:21,656 --> 00:31:26,036
+Basically, the cosine theta, this one, starts from here when theta is 0.
+
+313
+00:31:26,976 --> 00:31:28,536
+Theta is 0, it starts from here.
+
+314
+00:31:28,636 --> 00:31:30,876
+And when theta is pi over 4, it reaches this point.
+
+315
+00:31:30,876 --> 00:31:38,856
+And then from when theta is pi over 2, when theta is pi over 2, cosine pi over 2 is 0.
+
+316
+00:31:39,896 --> 00:31:40,816
+It decreases.
+
+317
+00:31:42,236 --> 00:31:44,996
+When theta is pi over 4, this curve is at this point.
+
+318
+00:31:44,996 --> 00:31:47,736
+And then it moves on to.
+
+319
+00:31:49,496 --> 00:31:50,596
+It starts from this point.
+
+320
+00:31:50,656 --> 00:31:53,996
+When theta is pi over 4, it moves on this direction and reaches this point.
+
+321
+00:31:54,416 --> 00:31:55,556
+And theta is pi over 2.
+
+322
+00:31:55,956 --> 00:31:59,896
+So, these arrows show the directional movement of this curve.
+
+323
+00:32:00,436 --> 00:32:02,756
+And as theta goes from pi over 4 to pi over 2.
+
+324
+00:32:04,956 --> 00:32:05,956
+How about this one?
+
+325
+00:32:06,976 --> 00:32:08,096
+Theta is pi over 4.
+
+326
+00:32:08,216 --> 00:32:10,115
+Again, it's root 2 over 2.
+
+327
+00:32:10,176 --> 00:32:10,856
+So, R is root 2.
+
+328
+00:32:10,916 --> 00:32:11,516
+It's this point.
+
+329
+00:32:11,516 --> 00:32:15,756
+And when theta is pi over 2, sine pi over 2 is 1.
+
+330
+00:32:16,156 --> 00:32:17,696
+So, we get 2 at this point.
+
+331
+00:32:18,296 --> 00:32:29,256
+So, as theta increases from pi over 4 to pi over 2, this curve over here traverses this side of this circle.
+
+332
+00:32:29,816 --> 00:32:38,115
+So, this region over here is, as I said, it's the area.
+
+333
+00:32:38,115 --> 00:32:45,615
+Area under this curve, under 2 sine theta, above 2 cosine theta.
+
+334
+00:32:46,136 --> 00:32:49,776
+And between these rays, theta equals pi over 4 and theta equals pi over 2.
+
+335
+00:32:50,556 --> 00:32:52,756
+It's the integral from pi over 4 to pi over 2.
+
+336
+00:32:52,756 --> 00:32:55,496
+Remember the formula yesterday, from yesterday.
+
+337
+00:32:55,496 --> 00:32:59,456
+The area between two curves is the integral from alpha to beta.
+
+338
+00:33:00,016 --> 00:33:02,536
+1 over 2, R2 squared minus R1 squared.
+
+339
+00:33:03,416 --> 00:33:06,696
+So, pi over 4 to pi over 2, 1 over 2, R2 squared.
+
+340
+00:33:06,816 --> 00:33:09,176
+R2 is the one which is above this one.
+
+341
+00:33:10,096 --> 00:33:10,996
+It's 2 sine theta.
+
+342
+00:33:11,556 --> 00:33:14,236
+And it's R1 squared.
+
+343
+00:33:14,436 --> 00:33:16,656
+R1 is the one below, which is 2 cosine theta squared.
+
+344
+00:33:16,656 --> 00:33:17,656
+So, we get...
+
+345
+00:33:17,656 --> 00:33:21,656
+We get...
+
+346
+00:33:24,852 --> 00:33:33,272
+Minus 1 over 2 times, so we get here 4 sine squared 10 minus 4 cosine squared theta, 4 and 1 over 2 simplify to 2.
+
+347
+00:33:33,672 --> 00:33:36,252
+This is 2 times sine squared theta minus cosine squared theta.
+
+348
+00:33:36,892 --> 00:33:42,072
+Well, you know that cosine squared theta minus sine squared theta is cosine 2 theta.
+
+349
+00:33:42,832 --> 00:33:47,232
+So this is minus 2 cosine, minus, minus cosine 2 theta.
+
+350
+00:33:49,632 --> 00:33:53,152
+So this is, this is minus cosine 2 theta.
+
+351
+00:33:53,152 --> 00:33:55,532
+So we get minus 2 cosine 2 theta.
+
+352
+00:33:55,971 --> 00:33:56,992
+Then we integrate it.
+
+353
+00:33:57,572 --> 00:34:01,592
+Integral of cosine 2 theta is sine 2 theta over 2.
+
+354
+00:34:01,792 --> 00:34:02,352
+2 is cancelled.
+
+355
+00:34:02,492 --> 00:34:03,711
+We get minus 2 sine theta.
+
+356
+00:34:04,552 --> 00:34:07,192
+Minus 2 sine theta from pi over 4 to pi over 2.
+
+357
+00:34:07,711 --> 00:34:10,072
+So when theta is pi over 2, we get minus sine pi.
+
+358
+00:34:11,831 --> 00:34:18,751
+Then when theta minus, minus, we get, when theta is pi over 4, we get sine pi over 2.
+
+359
+00:34:19,092 --> 00:34:19,851
+Sine pi is 0.
+
+360
+00:34:20,291 --> 00:34:21,132
+Sine pi over 2 is 1.
+
+361
+00:34:21,251 --> 00:34:21,652
+We get 1.
+
+362
+00:34:21,652 --> 00:34:26,552
+So area of the region R2 is 1.
+
+363
+00:34:26,672 --> 00:34:29,512
+Area of the region R1 is pi over 2 here.
+
+364
+00:34:29,751 --> 00:34:32,152
+So the total area is over 2 plus 1.
+
+365
+00:34:34,652 --> 00:34:36,132
+Okay, I want to do this.
+
+366
+00:34:38,811 --> 00:34:43,791
+Let's actually use high school geometry to find the area of R2.
+
+367
+00:34:44,211 --> 00:34:45,372
+We're going to find 1.
+
+368
+00:34:45,372 --> 00:34:48,932
+So using integrals, we found that area to be 1.
+
+369
+00:34:50,872 --> 00:34:52,791
+Actually, I mean, these are just circles.
+
+370
+00:34:53,192 --> 00:35:01,412
+So this, I mean, for example, in a few of, in the next questions, we will see cardioids.
+
+371
+00:35:01,412 --> 00:35:04,211
+To find the area inside the cardioid.
+
+372
+00:35:04,211 --> 00:35:07,052
+I mean, something like that we have seen yesterday.
+
+373
+00:35:07,192 --> 00:35:11,912
+We cannot use high school geometry to find the area inside the cardioid.
+
+374
+00:35:12,132 --> 00:35:15,592
+That's, you have to make use of integrals for doing that.
+
+375
+00:35:15,592 --> 00:35:18,072
+But for these ones, these are just circles.
+
+376
+00:35:18,152 --> 00:35:20,552
+We could use high school geometry, actually, to find this area.
+
+377
+00:35:21,512 --> 00:35:22,492
+How could we use this?
+
+378
+00:35:22,852 --> 00:35:24,331
+Well, look at this.
+
+379
+00:35:26,331 --> 00:35:27,791
+Look at this region.
+
+380
+00:35:28,932 --> 00:35:29,372
+Sorry.
+
+381
+00:35:30,271 --> 00:35:31,132
+Look at this.
+
+382
+00:35:32,132 --> 00:35:33,832
+Look at this sector over here.
+
+383
+00:35:33,831 --> 00:35:36,831
+This is just a...
+
+384
+00:35:40,831 --> 00:35:41,771
+What is this?
+
+385
+00:35:41,912 --> 00:35:45,771
+This is a quarter circle.
+
+386
+00:35:46,592 --> 00:35:47,831
+It's a quarter circle.
+
+387
+00:35:48,492 --> 00:35:49,992
+So the area of the circle is pi.
+
+388
+00:35:50,311 --> 00:35:52,992
+So the quarter circle, its area is pi over 4.
+
+389
+00:35:56,112 --> 00:36:02,092
+Pi over 4.
+
+390
+00:36:02,092 --> 00:36:05,851
+That's the area of this quarter circle.
+
+391
+00:36:07,572 --> 00:36:08,532
+How about...
+
+392
+00:36:08,532 --> 00:36:09,552
+Okay, pi over 4.
+
+393
+00:36:09,612 --> 00:36:10,532
+Let's keep that in mind.
+
+394
+00:36:10,652 --> 00:36:11,572
+I'm going to erase this.
+
+395
+00:36:11,932 --> 00:36:12,572
+Keep that in mind.
+
+396
+00:36:12,992 --> 00:36:13,992
+Now, look at this.
+
+397
+00:36:14,992 --> 00:36:15,892
+Look at this triangle.
+
+398
+00:36:17,692 --> 00:36:19,612
+Look at this right triangle over here.
+
+399
+00:36:19,952 --> 00:36:20,672
+So this is one.
+
+400
+00:36:22,472 --> 00:36:23,251
+This is one.
+
+401
+00:36:24,251 --> 00:36:25,372
+This is also one.
+
+402
+00:36:32,275 --> 00:36:36,056
+1 x 1, 2.
+
+403
+00:36:36,355 --> 00:36:37,375
+That's the area of this triangle.
+
+404
+00:36:37,475 --> 00:36:38,215
+This is 1 over 2.
+
+405
+00:36:39,655 --> 00:36:42,935
+Area of this sector is pi over 4.
+
+406
+00:36:43,036 --> 00:36:45,076
+Area of this triangle is 1 over 2.
+
+407
+00:36:45,076 --> 00:36:46,835
+Area of this part over here,
+
+408
+00:36:47,835 --> 00:36:49,235
+area of this part,
+
+409
+00:36:50,096 --> 00:36:50,955
+this region.
+
+410
+00:36:51,556 --> 00:36:53,675
+Area of this region is what?
+
+411
+00:36:53,815 --> 00:36:56,235
+Pi over 4 minus 1 over 2.
+
+412
+00:36:56,615 --> 00:36:56,795
+Right?
+
+413
+00:36:58,295 --> 00:37:00,175
+Pi over 4 minus 1 over 2.
+
+414
+00:37:00,175 --> 00:37:02,335
+Let me write.
+
+415
+00:37:03,235 --> 00:37:11,275
+Pi over 4 minus 1 over 2.
+
+416
+00:37:14,996 --> 00:37:19,816
+5 over 4 minus 1 over 2 is the area of this yellow region.
+
+417
+00:37:20,296 --> 00:37:22,956
+Now, this yellow region is symmetric.
+
+418
+00:37:23,076 --> 00:37:24,396
+By symmetry, it's the same.
+
+419
+00:37:25,096 --> 00:37:27,576
+So, the whole yellow region over here is 2 times this.
+
+420
+00:37:28,336 --> 00:37:29,796
+This times 2.
+
+421
+00:37:31,496 --> 00:37:32,516
+2 times this.
+
+422
+00:37:34,576 --> 00:37:36,876
+So, that's the whole yellow region.
+
+423
+00:37:36,876 --> 00:37:37,836
+So, what is R2?
+
+424
+00:37:38,215 --> 00:37:41,916
+R2 is this health.
+
+425
+00:37:44,996 --> 00:37:48,536
+The area of this whole circle, which is pi over 2 minus this.
+
+426
+00:37:48,996 --> 00:37:49,976
+So, pi over 2.
+
+427
+00:37:50,876 --> 00:37:52,336
+Pi over 2.
+
+428
+00:37:54,356 --> 00:37:55,235
+Minus this.
+
+429
+00:37:56,175 --> 00:37:58,416
+That's going to be the area of R2.
+
+430
+00:37:58,715 --> 00:37:59,256
+What is this?
+
+431
+00:37:59,376 --> 00:38:03,175
+When we multiply this by 2, we get pi over 2 minus 1.
+
+432
+00:38:03,496 --> 00:38:08,256
+So, when we subtract pi over 2 minus 1 from pi over 2, we get 1.
+
+433
+00:38:08,916 --> 00:38:10,476
+So, that's the area of R2, basically.
+
+434
+00:38:11,556 --> 00:38:14,376
+Which could be found using geometry.
+
+435
+00:38:14,996 --> 00:38:16,715
+This way as well.
+
+436
+00:38:20,371 --> 00:38:26,211
+Bu sorunlar için iyi bir şekilde çalışmalarız.
+
+437
+00:38:28,211 --> 00:38:29,692
+Tamam, devam edelim.
+
+438
+00:38:34,195 --> 00:38:36,295
+Seven, find the area of the region.
+
+439
+00:38:38,115 --> 00:38:40,536
+It lies outside the circle R equals one.
+
+440
+00:38:40,835 --> 00:38:43,115
+This is very similar to what we have done yesterday.
+
+441
+00:38:44,735 --> 00:38:46,295
+Outside the circle R equals one
+
+442
+00:38:46,295 --> 00:38:49,235
+and inside the cardioid R equals one plus cosine theta.
+
+443
+00:38:52,195 --> 00:38:54,036
+R equals one, that's the circle.
+
+444
+00:38:54,516 --> 00:38:56,395
+Circle of radius one centered at origin.
+
+445
+00:38:57,715 --> 00:39:00,536
+And the cardioid R equals one plus cosine theta.
+
+446
+00:39:00,655 --> 00:39:01,875
+We have seen those yesterday.
+
+447
+00:39:01,875 --> 00:39:05,175
+I've shown you the graphs of cardioids.
+
+448
+00:39:05,255 --> 00:39:07,255
+One plus cosine theta, one minus cosine theta,
+
+449
+00:39:07,795 --> 00:39:10,355
+one plus sine theta, one minus sine theta.
+
+450
+00:39:12,935 --> 00:39:15,036
+It's good to know these four graphs
+
+451
+00:39:15,036 --> 00:39:18,115
+or you can just follow what we have done yesterday.
+
+452
+00:39:19,155 --> 00:39:21,255
+So basically when theta is zero,
+
+453
+00:39:21,755 --> 00:39:23,016
+this is going to be R equals two.
+
+454
+00:39:23,115 --> 00:39:24,335
+We are going to get this point.
+
+455
+00:39:24,335 --> 00:39:26,195
+And then as theta increases,
+
+456
+00:39:27,175 --> 00:39:31,855
+when theta is pi over two,
+
+457
+00:39:31,875 --> 00:39:34,175
+we will get R equals one.
+
+458
+00:39:34,175 --> 00:39:35,255
+Then when theta is pi,
+
+459
+00:39:35,255 --> 00:39:36,255
+we will get R equals zero.
+
+460
+00:39:36,255 --> 00:39:38,255
+When theta is three pi over two,
+
+461
+00:39:38,255 --> 00:39:40,255
+we will get R equals one again
+
+462
+00:39:40,255 --> 00:39:41,675
+and come back to this point.
+
+463
+00:39:43,755 --> 00:39:46,056
+We are looking for the area of the region
+
+464
+00:39:46,056 --> 00:39:48,355
+that lies outside the circle,
+
+465
+00:39:48,355 --> 00:39:51,496
+outside the circle and inside the cardioid region.
+
+466
+00:39:52,935 --> 00:39:54,935
+Of course, we can make use of symmetry.
+
+467
+00:39:54,935 --> 00:39:57,235
+and it's symmetric.
+
+468
+00:39:57,235 --> 00:39:59,315
+What are symmetric with respect to the x-axis?
+
+469
+00:39:59,315 --> 00:40:00,855
+And what are the,
+
+470
+00:40:02,395 --> 00:40:03,235
+and we look at this,
+
+471
+00:40:04,235 --> 00:40:06,976
+where do these two curves intersect?
+
+472
+00:40:07,976 --> 00:40:09,476
+And we set them equal to each other.
+
+473
+00:40:10,235 --> 00:40:11,735
+Plus cosine theta equals one.
+
+474
+00:40:12,235 --> 00:40:13,155
+Cos cosine theta equals zero.
+
+475
+00:40:13,155 --> 00:40:15,355
+So when theta is minus pi over 10,
+
+476
+00:40:15,395 --> 00:40:15,895
+pi over two,
+
+477
+00:40:15,956 --> 00:40:16,415
+they intersect.
+
+478
+00:40:17,655 --> 00:40:22,596
+The area is integral from minus pi over two.
+
+479
+00:40:23,775 --> 00:40:24,036
+I mean,
+
+480
+00:40:24,155 --> 00:40:26,675
+this is basically the area
+
+481
+00:40:26,675 --> 00:40:29,875
+between this ray
+
+482
+00:40:29,875 --> 00:40:31,976
+and this ray.
+
+483
+00:40:33,976 --> 00:40:35,635
+Area between these two rays
+
+484
+00:40:35,635 --> 00:40:38,815
+below this cardioid,
+
+485
+00:40:39,135 --> 00:40:40,335
+below the cardioid
+
+486
+00:40:40,335 --> 00:40:41,715
+and above the circle.
+
+487
+00:40:42,195 --> 00:40:43,956
+So R2 is the cardioid.
+
+488
+00:40:44,435 --> 00:40:45,576
+R1 is the circle.
+
+489
+00:40:46,275 --> 00:40:47,076
+That's that area.
+
+490
+00:40:47,855 --> 00:40:48,815
+Area is the area
+
+491
+00:40:48,815 --> 00:40:50,695
+from minus pi over two
+
+492
+00:40:50,695 --> 00:40:51,775
+to pi over two.
+
+493
+00:40:52,395 --> 00:40:53,036
+One over two,
+
+494
+00:40:53,155 --> 00:40:54,056
+R2 squared.
+
+495
+00:40:54,235 --> 00:40:55,335
+R2 is the cardioid.
+
+496
+00:40:55,675 --> 00:40:57,255
+One plus cosine theta squared
+
+497
+00:40:57,255 --> 00:40:58,536
+minus R1 squared.
+
+498
+00:40:58,956 --> 00:40:59,615
+R1 is the circle.
+
+499
+00:40:59,815 --> 00:41:00,195
+One squared.
+
+500
+00:41:01,175 --> 00:41:01,655
+Of course,
+
+501
+00:41:01,815 --> 00:41:02,956
+making use of the symmetry,
+
+502
+00:41:03,175 --> 00:41:03,516
+we could,
+
+503
+00:41:04,456 --> 00:41:05,516
+instead of integrating it
+
+504
+00:41:05,516 --> 00:41:06,375
+from minus pi over two,
+
+505
+00:41:06,395 --> 00:41:06,976
+pi over two,
+
+506
+00:41:07,395 --> 00:41:08,175
+we could say that
+
+507
+00:41:08,175 --> 00:41:09,435
+it's two times
+
+508
+00:41:09,435 --> 00:41:09,996
+the integral
+
+509
+00:41:09,996 --> 00:41:11,155
+from zero to pi over two.
+
+510
+00:41:13,655 --> 00:41:14,556
+This is the same
+
+511
+00:41:14,556 --> 00:41:15,795
+as the two times
+
+512
+00:41:15,795 --> 00:41:16,596
+the integral
+
+513
+00:41:16,596 --> 00:41:18,056
+from zero to pi over two
+
+514
+00:41:18,056 --> 00:41:19,675
+of this.
+
+515
+00:41:21,235 --> 00:41:22,135
+So this is what?
+
+516
+00:41:22,735 --> 00:41:23,476
+This is one plus
+
+517
+00:41:23,476 --> 00:41:24,295
+two cosine theta
+
+518
+00:41:24,295 --> 00:41:25,456
+plus cosine squared theta
+
+519
+00:41:25,456 --> 00:41:26,036
+minus one.
+
+520
+00:41:26,115 --> 00:41:26,815
+So once cancel,
+
+521
+00:41:26,895 --> 00:41:27,335
+we get this
+
+522
+00:41:27,335 --> 00:41:28,036
+two cosine theta
+
+523
+00:41:28,036 --> 00:41:29,175
+plus cosine squared theta.
+
+524
+00:41:30,115 --> 00:41:30,915
+The two's cancel.
+
+525
+00:41:32,096 --> 00:41:33,255
+We get two cosine theta
+
+526
+00:41:33,255 --> 00:41:35,076
+plus cosine squared theta
+
+527
+00:41:35,076 --> 00:41:35,576
+is the same
+
+528
+00:41:35,576 --> 00:41:36,235
+as one over two
+
+529
+00:41:36,235 --> 00:41:37,195
+plus cosine two theta
+
+530
+00:41:37,195 --> 00:41:37,715
+over two.
+
+531
+00:41:38,355 --> 00:41:39,795
+And when we integrate it,
+
+532
+00:41:40,456 --> 00:41:41,516
+integral of two cosine theta
+
+533
+00:41:41,516 --> 00:41:42,415
+is two sine theta.
+
+534
+00:41:43,096 --> 00:41:43,996
+Integral of one over two
+
+535
+00:41:43,996 --> 00:41:44,815
+is theta over two.
+
+536
+00:41:45,395 --> 00:41:46,755
+Integral of cosine two theta
+
+537
+00:41:46,755 --> 00:41:48,875
+is sine two theta
+
+538
+00:41:48,875 --> 00:41:49,635
+over two.
+
+539
+00:41:50,096 --> 00:41:51,195
+So we get sine two theta
+
+540
+00:41:51,195 --> 00:41:51,795
+over four
+
+541
+00:41:51,795 --> 00:41:53,076
+together with this two.
+
+542
+00:41:54,056 --> 00:41:55,355
+From zero to pi over two.
+
+543
+00:41:55,895 --> 00:41:56,675
+What do we get?
+
+544
+00:41:57,675 --> 00:41:57,935
+When
+
+545
+00:41:57,935 --> 00:42:00,915
+theta is pi over two,
+
+546
+00:42:01,016 --> 00:42:01,415
+we get
+
+547
+00:42:01,415 --> 00:42:03,476
+sine pi over two
+
+548
+00:42:03,476 --> 00:42:03,815
+is one.
+
+549
+00:42:03,895 --> 00:42:04,435
+We get two
+
+550
+00:42:04,435 --> 00:42:05,735
+plus pi over two
+
+551
+00:42:05,735 --> 00:42:06,115
+over two
+
+552
+00:42:06,115 --> 00:42:06,996
+that's pi over four
+
+553
+00:42:06,996 --> 00:42:09,115
+plus sine pi over four
+
+554
+00:42:09,115 --> 00:42:09,675
+which is zero
+
+555
+00:42:09,675 --> 00:42:11,175
+minus when theta
+
+556
+00:42:11,175 --> 00:42:11,615
+is zero,
+
+557
+00:42:11,715 --> 00:42:12,476
+everything is zero.
+
+558
+00:42:12,935 --> 00:42:13,536
+So we get
+
+559
+00:42:13,536 --> 00:42:14,875
+two plus pi over four
+
+560
+00:42:14,875 --> 00:42:15,355
+basically.
+
+561
+00:42:17,556 --> 00:42:18,735
+This is exactly
+
+562
+00:42:18,735 --> 00:42:19,355
+the same
+
+563
+00:42:19,355 --> 00:42:20,695
+I think
+
+564
+00:42:20,695 --> 00:42:23,775
+we found yesterday.
+
+565
+00:42:26,715 --> 00:42:27,235
+Well,
+
+566
+00:42:27,295 --> 00:42:28,576
+one minus cosine theta
+
+567
+00:42:28,576 --> 00:42:28,996
+I guess.
+
+568
+00:42:29,875 --> 00:42:30,536
+Of course,
+
+569
+00:42:30,615 --> 00:42:31,315
+there is a symmetry
+
+570
+00:42:31,315 --> 00:42:32,195
+and you find
+
+571
+00:42:32,195 --> 00:42:32,615
+the same
+
+572
+00:42:32,615 --> 00:42:33,775
+answer.
+
+573
+00:42:35,315 --> 00:42:46,615
+Okay, next question. Find the area of the region and close by the curves, and close by the curves, r equals 3 sin theta. Remember, r equals 3 sin theta. This is?
+
+574
+00:42:50,963 --> 00:42:54,563
+3 sin theta, this is the circle.
+
+575
+00:42:55,844 --> 00:43:00,483
+So if you think of this as R equals 2A cos theta, A is 3 over 2 here.
+
+576
+00:43:00,483 --> 00:43:10,324
+So this is a circle of radius 1.5 whose center is at the positive y axis and which passes through the origin.
+
+577
+00:43:10,324 --> 00:43:11,123
+So it's the circle.
+
+578
+00:43:13,603 --> 00:43:20,163
+Circle of radius 3 over 2 passing through the origin and whose center is on the positive y axis.
+
+579
+00:43:21,203 --> 00:43:24,244
+This is sine. If it was cosine, it would be on the positive x axis.
+
+580
+00:43:24,884 --> 00:43:28,563
+And R equals 1 plus sine theta. 1 plus sine theta, this is a cardiate.
+
+581
+00:43:29,764 --> 00:43:36,563
+1 plus sine theta, this cardiate. 1 plus sine theta. Think about it.
+
+582
+00:43:37,123 --> 00:43:42,244
+When theta is 0, when theta is 0, sine theta is 0, so we get 1 at this point.
+
+583
+00:43:43,123 --> 00:43:50,403
+When theta is 0, we get 1. When theta is pi over 2, sine pi over 2 is 1, so we get 2.
+
+584
+00:43:50,403 --> 00:43:52,884
+When theta is pi over 2, we get 2 at this point.
+
+585
+00:43:53,523 --> 00:43:58,804
+Then when theta is pi, sine pi is 0, so at this point we get 1 again.
+
+586
+00:43:59,523 --> 00:44:02,324
+Come back to 1 here.
+
+587
+00:44:03,284 --> 00:44:11,043
+And then when theta is 3 pi over 2, and theta is 3 pi over 2, sine 3 pi over 2 is minus 1, so we get 0.
+
+588
+00:44:11,043 --> 00:44:12,003
+We get to this point.
+
+589
+00:44:13,603 --> 00:44:17,844
+And then we come back. So this is the cardiate R equals 1 plus sine theta.
+
+590
+00:44:18,963 --> 00:44:23,764
+Now, this circle and this cardiate, they intersect at these two points.
+
+591
+00:44:25,523 --> 00:44:28,643
+Where is this? They intersect at these points, point and this point.
+
+592
+00:44:28,643 --> 00:44:37,443
+What are the coordinates of these points? So, set these equations equal to each other. R equals 3 sine theta, which is equal to 1 plus cosine theta.
+
+593
+00:44:37,443 --> 00:44:38,804
+When are these equal to each other?
+
+594
+00:44:39,764 --> 00:44:43,923
+With all these equations, we get 2 sine theta equals 1, which means sine theta is 1 over 2.
+
+595
+00:44:44,804 --> 00:44:51,284
+Sine theta is 1 over 2, but theta is either 30 degrees or 150 degrees. So we get these two rays.
+
+596
+00:44:51,284 --> 00:45:01,844
+You get these two rays. R equals pi over 6, theta equals pi over 6, and this theta equals 5 pi over 6.
+
+597
+00:45:05,284 --> 00:45:09,123
+Okay, now let's be careful. We need to be careful now.
+
+598
+00:45:19,380 --> 00:48:00,827
+Evet.
+
+599
+00:48:04,019 --> 00:48:06,579
+Or, let me, let me draw it like this.
+
+600
+00:48:06,880 --> 00:48:07,800
+Think of it like this.
+
+601
+00:48:08,039 --> 00:48:09,739
+But let's say this is theta equals zero.
+
+602
+00:48:10,480 --> 00:48:13,480
+Just rotating everything, rotating everything 90 degrees.
+
+603
+00:48:13,880 --> 00:48:15,699
+Think of it as this is theta equals zero.
+
+604
+00:48:15,880 --> 00:48:18,559
+And this is theta equals pi over six.
+
+605
+00:48:19,159 --> 00:48:19,440
+Okay.
+
+606
+00:48:19,900 --> 00:48:21,860
+And this is how the circle looks like.
+
+607
+00:48:24,380 --> 00:48:26,500
+This is how the circle looks like there.
+
+608
+00:48:27,460 --> 00:48:29,639
+So when I ask you, what is the region?
+
+609
+00:48:30,159 --> 00:48:32,000
+What is the region under this curve?
+
+610
+00:48:32,000 --> 00:48:36,039
+Between theta equals zero and theta equals pi over six is this region, right?
+
+611
+00:48:36,639 --> 00:48:38,159
+It's exactly this region over here.
+
+612
+00:48:38,559 --> 00:48:39,039
+This region.
+
+613
+00:48:39,500 --> 00:48:44,380
+That region is the region under the circle from zero to pi over six.
+
+614
+00:48:45,219 --> 00:48:45,440
+This.
+
+615
+00:48:47,320 --> 00:48:48,460
+Or one is this.
+
+616
+00:48:51,000 --> 00:48:54,699
+So, the Pryantra curve is one over two R squared integral one over time squared.
+
+617
+00:48:54,800 --> 00:49:00,900
+So, integral from zero to pi over six, one over two R squared, which R is three sine theta squared D theta, which is.
+
+618
+00:49:00,900 --> 00:49:02,860
+So, let's find it first.
+
+619
+00:49:05,000 --> 00:49:06,860
+So, this is nine sine squared theta.
+
+620
+00:49:07,119 --> 00:49:08,579
+So, we get nine over two sine squared theta.
+
+621
+00:49:08,699 --> 00:49:14,480
+Nine sine squared theta is the same as one over two minus cosine two theta over two.
+
+622
+00:49:14,659 --> 00:49:18,699
+Multiplying that by nine over two, we get nine over four minus nine over four cosine two theta.
+
+623
+00:49:18,699 --> 00:49:22,739
+And its integral is integral of nine over four is nine over four theta.
+
+624
+00:49:23,559 --> 00:49:26,079
+Integral of cosine two theta is sine two theta over two.
+
+625
+00:49:26,179 --> 00:49:29,780
+So, we get nine sine two theta over eight from zero to pi over six.
+
+626
+00:49:29,780 --> 00:49:36,059
+When theta is pi over six, what do we get?
+
+627
+00:49:36,239 --> 00:49:37,960
+Nine over four times pi over six.
+
+628
+00:49:38,840 --> 00:49:40,780
+That's three pi over eight.
+
+629
+00:49:41,940 --> 00:49:42,380
+Minus.
+
+630
+00:49:43,480 --> 00:49:47,159
+When theta is pi over six, we get sine pi over three.
+
+631
+00:49:47,300 --> 00:49:49,099
+Sine pi over three is root three over two.
+
+632
+00:49:49,619 --> 00:49:50,440
+Root three over two.
+
+633
+00:49:50,500 --> 00:49:52,059
+So, we get nine root three over eight.
+
+634
+00:49:52,219 --> 00:49:52,639
+Sixteen.
+
+635
+00:49:52,639 --> 00:49:57,659
+Then, when theta is zero, this is zero, this is zero, everything is zero.
+
+636
+00:49:57,719 --> 00:49:58,380
+So, we get this.
+
+637
+00:49:59,460 --> 00:50:00,320
+We get this.
+
+638
+00:50:00,420 --> 00:50:01,519
+This is R1.
+
+639
+00:50:02,440 --> 00:50:05,599
+Three pi over eight minus nine root three over 60.
+
+640
+00:50:05,800 --> 00:50:06,260
+That's R1.
+
+641
+00:50:06,960 --> 00:50:08,739
+Now, let's look at area R2.
+
+642
+00:50:10,320 --> 00:50:11,320
+Now, R2.
+
+643
+00:50:17,076 --> 00:50:32,536
+2 is the region between theta equals pi over 6 and between theta equals pi over 6 and theta equals pi over 2 under this curve, which is the cardio 8 now.
+
+644
+00:50:32,536 --> 00:50:50,536
+So the cardio is at this point when theta is pi over 6 and it reaches this point when theta is pi over 2, so the cardio 8 traverses this curve over here between theta equals pi over 6 and pi over 2 and this region R2 is just the area under that curve.
+
+645
+00:50:50,536 --> 00:51:02,516
+So this is what we get, area R2 is the integral from integral from pi over 6 to pi over 2, 1 over 2, R squared theta, R is 1 plus sine pi over 2.
+
+646
+00:51:02,536 --> 00:51:29,516
+theta, 1 plus sine theta, that's the function of the cardio 8, plus sine theta squared, which is, so 1 over 2 plus 1 over 2 times 2 sine theta, which is sine theta plus 1 over 2 sine squared theta d theta, and sine squared theta can be written as 1 over 2 minus cosine 2 theta over 2, multiplying 1 over 2, we get this.
+
+647
+00:51:29,516 --> 00:51:39,315
+And so 1 over 2 plus 1 over 2 plus 1 over 2 plus sine theta minus sine theta over 4, we get this.
+
+648
+00:51:39,856 --> 00:51:49,135
+We integrate it, this is 3 over 4 theta, integral of sine theta is minus cosine theta, integral of cosine theta is sine 2 theta over 2, we get sine 2 theta over 8 here.
+
+649
+00:51:49,135 --> 00:52:11,896
+So when theta is pi over 2, so when theta is pi over 2, we get 3 pi over 8 here, cosine pi over 2 is 0, sine pi, we get here, which is 0, minus, and theta is pi over 6, we get pi over 8 here, minus cosine pi over 6 is root 3 over 2, minus sine pi over 3 over 8.
+
+650
+00:52:11,896 --> 00:52:32,376
+So we get sine pi over 8, minus pi over 8, minus pi over 8, which is pi over 8, which is pi over 4, plus, and this is, what is this, 8 root 3 over 2, so 9 root 3 over 16, plus 9 root 3 over 16.
+
+651
+00:52:32,376 --> 00:52:54,016
+So the area is 2 times this one, plus this one, plus this one, plus this one, and this one, 9 root 3 over 16 is cancelled, we get, this is 2 pi over 8, so we get 5 pi over 8, 5 pi over 8 times 2 is 5 pi over 4.
+
+652
+00:52:54,016 --> 00:52:56,556
+That's the area of this region.
+
+653
+00:52:58,235 --> 00:53:02,576
+Teacher, can we, let me see, do it in one integral equation?
+
+654
+00:53:02,856 --> 00:53:05,956
+No, there is no way of doing it in one integral.
+
+655
+00:53:11,699 --> 00:53:29,819
+I mean, we have to separate these two regions, R1 and R2. R1 is the, R1 is the region under the curve, under the circle, R2 is the region under the cardioid. They're separated.
+
+656
+00:53:39,092 --> 00:53:40,972
+Okay, two more questions.
+
+657
+00:53:42,211 --> 00:53:51,512
+Write a definite integral that expresses the area of the region and close by r equals two, r equals four sine theta and r sine theta equals three.
+
+658
+00:53:51,632 --> 00:53:53,492
+Sketch the region, do not evaluate the integrals.
+
+659
+00:53:56,311 --> 00:53:58,472
+We're just going to express the area.
+
+660
+00:53:59,672 --> 00:54:03,572
+And close by these three, these three.
+
+661
+00:54:03,791 --> 00:54:06,052
+R equals two, equals two is the circle.
+
+662
+00:54:06,932 --> 00:54:08,372
+R equals two is the circle.
+
+663
+00:54:09,092 --> 00:54:14,311
+Centred at the origin whose radius is two, basically.
+
+664
+00:54:16,172 --> 00:54:17,572
+R equals four sine theta.
+
+665
+00:54:19,632 --> 00:54:22,771
+Is it like the cardio eight minus two circle?
+
+666
+00:54:22,912 --> 00:54:23,092
+No.
+
+667
+00:54:24,092 --> 00:54:26,311
+It's not like the cardio eight minus two circle.
+
+668
+00:54:26,892 --> 00:54:31,291
+It's not the region between those two, between two rays.
+
+669
+00:54:32,311 --> 00:54:36,572
+Okay.
+
+670
+00:54:43,443 --> 00:55:13,443
+Bu, R'ı
+
+671
+00:55:13,443 --> 00:55:18,364
+R' sin theta is y. So R' sin theta equals 3 is y equals 3.
+
+672
+00:55:19,844 --> 00:55:24,483
+Y equals 3 basically. This line over here y equals 3.
+
+673
+00:55:27,304 --> 00:55:35,804
+Now as we see these two circles intersect at these two points. The two circles intersect at these points.
+
+674
+00:55:35,804 --> 00:55:40,284
+This point and this point. These are the intersection of the two circles and the circle
+
+675
+00:55:40,284 --> 00:55:45,683
+above intersects the line y equals 3 at these two points. And what is the, of course,
+
+676
+00:55:45,683 --> 00:55:53,663
+what is the area enclosed by these circles? Here the word enclosed is not, not, not a good
+
+677
+00:55:53,663 --> 00:56:03,103
+choice actually. Not a good choice. They mean, they mean this region over here. They mean this region.
+
+678
+00:56:08,884 --> 00:56:38,884
+...y'eqli'nin bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu bölüm
+
+679
+00:56:38,884 --> 00:56:56,724
+we get sine theta equals one over two which means theta is either 30 degrees pi over six or 150 degrees five five or six these two are the points of intersection of the two circles how about these two points so those are the intersection of this circle r equals four sine theta articles
+
+680
+00:56:57,644 --> 00:57:05,204
+or sine theta and this one sine theta equals three equals four sine theta and r sine theta equals three when we set
+
+681
+00:57:05,204 --> 00:57:13,244
+uh so from this what do we get just put this four sine theta here we get four sine squared theta equals three
+
+682
+00:57:13,963 --> 00:57:19,603
+four sine squared theta equals three gives us sine squared theta equals three over four so sine theta is root three over two
+
+683
+00:57:21,204 --> 00:57:25,603
+i'm saying root three over two i'm not taking minus root three over two because i know that the sine
+
+684
+00:57:26,244 --> 00:57:34,244
+i mean above the x-axis sine is positive from the picture we know that sine theta has to be positive so we
+
+685
+00:57:34,244 --> 00:57:41,684
+choose choose root three over two sine theta is either 60 degrees or 120 degrees pi over three or two pi over three
+
+686
+00:57:42,403 --> 00:57:43,204
+get these two
+
+687
+00:57:46,963 --> 00:57:59,684
+and so and of course in the middle we have pi over two here and this is
+
+688
+00:57:58,483 --> 00:58:05,244
+Bu, again, symmetric, respect to the y-axis, so we can find the area on the roller right-hand side and multiply it by 2.
+
+689
+00:58:06,203 --> 00:58:08,103
+Or, let me see how I do it.
+
+690
+00:58:08,804 --> 00:58:10,183
+Yeah, I have done it like that.
+
+691
+00:58:13,588 --> 00:58:18,188
+Okay, first let's look at this region, this region here.
+
+692
+00:58:18,688 --> 00:58:25,068
+So this is the area between theta equals pi over 6 and theta equals pi over 3,
+
+693
+00:58:25,268 --> 00:58:27,368
+which is under this circle.
+
+694
+00:58:27,668 --> 00:58:28,307
+Which one?
+
+695
+00:58:29,208 --> 00:58:34,748
+Under this circle, r equals 4 sine theta, above this circle, above r equals 2.
+
+696
+00:58:35,248 --> 00:58:35,827
+It's this.
+
+697
+00:58:37,668 --> 00:58:41,008
+Integral from pi over 6 to pi over 3, 1 over 2.
+
+698
+00:58:41,008 --> 00:58:46,968
+So r2 is 4 sine theta squared minus r1 is 2, r equals 2 squared.
+
+699
+00:58:47,548 --> 00:58:50,768
+4 sine theta squared minus 2 squared, 1 over 2 times that, d theta.
+
+700
+00:58:51,188 --> 00:58:53,568
+So that's the area of this low region.
+
+701
+00:58:55,708 --> 00:58:57,028
+How about this region?
+
+702
+00:58:59,168 --> 00:59:00,448
+This region over here.
+
+703
+00:59:00,568 --> 00:59:07,408
+So this region is area between theta equals pi over 3 and pi over 2.
+
+704
+00:59:07,408 --> 00:59:13,128
+equals pi over 2 under this line above this circle, r equals 2.
+
+705
+00:59:14,868 --> 00:59:16,048
+We have to be careful here.
+
+706
+00:59:16,228 --> 00:59:22,748
+When we write this, we write, I mean, this r1 equals f theta, r2 equals g theta.
+
+707
+00:59:23,148 --> 00:59:25,408
+We express r in terms of theta.
+
+708
+00:59:25,768 --> 00:59:27,408
+We express r as a function of theta.
+
+709
+00:59:27,408 --> 00:59:36,168
+Here, on this line, r sine theta equals 3 means we need to express r as a function of theta.
+
+710
+00:59:36,688 --> 00:59:38,688
+So this means r is equal to 3 over sine theta.
+
+711
+00:59:38,928 --> 00:59:40,628
+And 1 over sine theta is cosecant theta.
+
+712
+00:59:41,208 --> 00:59:43,648
+So this is r equals 3 cosecant theta.
+
+713
+00:59:43,648 --> 01:00:01,648
+So this is r equals 1 over sine theta.
+
+714
+01:00:02,931 --> 01:00:05,192
+Okay, this is R equals 3 cosecant theta.
+
+715
+01:00:07,671 --> 01:00:23,611
+So, this yellow region over here is the region between theta equals pi over 3 and theta equals pi over 2, under the line R equals 3 cosecant theta, and above the circle R equals 2.
+
+716
+01:00:23,611 --> 01:00:31,811
+So, it's the integral on pi over 3 to pi over 2, 1 over 2, because I can take the square minus 2 square d theta.
+
+717
+01:00:31,811 --> 01:00:40,071
+And the whole thing is multiplied by 2, because we found the right-hand side only, the left-hand side is symmetric, the same.
+
+718
+01:00:40,651 --> 01:00:46,051
+So, 2 times the sum of these 2, that expresses the area of this region.
+
+719
+01:00:46,051 --> 01:01:16,031
+So, let's see.
+
+720
+01:00:55,347 --> 01:00:57,567
+And last question, the last question is the length.
+
+721
+01:00:59,128 --> 01:01:00,067
+Finding the length.
+
+722
+01:01:01,347 --> 01:01:06,907
+Again, this is just like the length questions for parametric curves.
+
+723
+01:01:08,628 --> 01:01:11,067
+We just put them into the formula.
+
+724
+01:01:12,847 --> 01:01:16,128
+Find the length of the curve articles e to the power a theta,
+
+725
+01:01:16,907 --> 01:01:18,867
+where theta is between minus pi and pi.
+
+726
+01:01:21,108 --> 01:01:24,907
+This is the formula that we have seen yesterday,
+
+727
+01:01:24,907 --> 01:01:25,648
+the length formula.
+
+728
+01:01:26,148 --> 01:01:27,447
+Integral from a to b,
+
+729
+01:01:28,487 --> 01:01:31,807
+square root of r squared plus dr over d theta squared d theta.
+
+730
+01:01:32,688 --> 01:01:36,527
+So, this here, e to the power of d theta,
+
+731
+01:01:36,847 --> 01:01:37,947
+what is dr over d theta?
+
+732
+01:01:38,188 --> 01:01:42,108
+It's derivative with respect to theta is a times e to the power of d theta.
+
+733
+01:01:43,128 --> 01:01:44,807
+What is this expression over here?
+
+734
+01:01:45,288 --> 01:01:47,128
+r squared plus dr over d theta squared.
+
+735
+01:01:48,007 --> 01:01:49,867
+r is e to the power of d theta,
+
+736
+01:01:50,007 --> 01:01:53,628
+so r squared is e to the power of 2a data.
+
+737
+01:01:53,628 --> 01:01:57,407
+And dr over d theta squared is square of this,
+
+738
+01:01:57,507 --> 01:02:00,188
+which is a square e to the power 2a data.
+
+739
+01:02:00,927 --> 01:02:04,827
+And when we factor e to the power 2a theta,
+
+740
+01:02:05,367 --> 01:02:10,587
+and e to the power 2a theta can be taken outside the radical as e to the power of a theta.
+
+741
+01:02:10,587 --> 01:02:13,807
+And then inside the radical, 1 plus a squared is left.
+
+742
+01:02:14,128 --> 01:02:15,907
+1 plus a squared, that's a constant.
+
+743
+01:02:16,367 --> 01:02:17,347
+It's independent of data.
+
+744
+01:02:18,847 --> 01:02:20,608
+Number, some fixed number here.
+
+745
+01:02:21,867 --> 01:02:22,708
+What do we get?
+
+746
+01:02:23,087 --> 01:02:24,567
+And what are the limits of integration?
+
+747
+01:02:24,927 --> 01:02:25,907
+Minus pi and pi.
+
+748
+01:02:25,907 --> 01:02:31,748
+So we need to evaluate the integral from minus pi to pi.
+
+749
+01:02:33,128 --> 01:02:37,027
+Square root of 1 plus a squared times e to the power of a theta d theta.
+
+750
+01:02:39,407 --> 01:02:44,788
+And integral of e to the power of a theta is e to the power of a theta over a.
+
+751
+01:02:45,807 --> 01:02:46,967
+That's the integral of this.
+
+752
+01:02:47,307 --> 01:02:49,527
+This square root of 1 plus a squared, that's just a constant.
+
+753
+01:02:49,527 --> 01:02:52,768
+So integral of this e to the power of a theta over a, we get this.
+
+754
+01:02:53,007 --> 01:02:55,547
+Square root of 1 plus a squared over a times e to the power of a theta.
+
+755
+01:02:56,188 --> 01:02:57,407
+From minus pi to pi.
+
+756
+01:02:58,268 --> 01:03:02,608
+So square root of 1 plus a squared over a, that's a constant.
+
+757
+01:03:02,967 --> 01:03:04,248
+Just take it outside.
+
+758
+01:03:04,987 --> 01:03:08,268
+Then when theta is pi, we get e to the power of a pi.
+
+759
+01:03:08,547 --> 01:03:12,387
+Minus when theta is minus pi, we get e to the power of a pi.
+
+760
+01:03:12,867 --> 01:03:16,007
+And that's the length of this curve, basically.
+
+761
+01:03:16,007 --> 01:03:20,507
+And it was the last question.
+
+762
+01:03:23,027 --> 01:03:24,248
+Okay, any question?
+
+763
+01:03:24,748 --> 01:03:28,447
+Any question from what we covered so far?
+
+764
+01:03:30,587 --> 01:03:33,047
+From these problems.
+
+765
+01:03:37,172 --> 01:03:44,072
+Alright, I have put this file on Tavesis. You can over these problems there as well.
+
+766
+01:03:45,771 --> 01:03:47,632
+Okay, let me close this.
+
+767
+01:33:26,131 --> 01:33:28,631
+Okay, let's continue with chapter 12.
+
+768
+01:33:30,491 --> 01:33:32,511
+Vectors and the geometry of space.
+
+769
+01:33:33,871 --> 01:33:39,471
+Now, so far we have talked about the calculus of two dimensions.
+
+770
+01:33:39,791 --> 01:33:42,591
+Now, we will talk about the calculus of three dimensions.
+
+771
+01:33:44,631 --> 01:33:47,211
+First, we start with the three-dimensional coordinate systems.
+
+772
+01:33:58,771 --> 01:34:08,532
+So, here, the convention is to make use of this right-handed coordinate frame.
+
+773
+01:34:08,692 --> 01:34:09,332
+What is that?
+
+774
+01:34:10,431 --> 01:34:11,332
+So, this is...
+
+775
+01:34:18,387 --> 01:34:27,528
+So, let's read. When you hold your right hand so that, hold your right hand so that the fingers curl from the positive x-axis.
+
+776
+01:34:27,528 --> 01:34:34,967
+So, this is the positive x-axis now. This is positive x-axis. And this is the positive y-axis. I turn from x-axis to y-axis.
+
+777
+01:34:35,608 --> 01:34:44,087
+So, this is x, x, y, x, positive x to positive y. Then your thumb points along the positive z-axis. So, this direction is the positive z-axis.
+
+778
+01:34:44,648 --> 01:34:46,568
+So, that's shown on this here.
+
+779
+01:34:48,387 --> 01:34:56,528
+So, here on the picture, as you see, from x to y. When you turn from x to y, your thumb shows the positive z direction.
+
+780
+01:34:58,448 --> 01:35:07,327
+I'm making use of this convention. An x-axis, y-axis, and the z-axis. And any two of them are perpendicular to each other.
+
+781
+01:35:07,847 --> 01:35:12,087
+So, x and y-axis are perpendicular, and the z-axis is perpendicular to both.
+
+782
+01:35:13,627 --> 01:35:14,007
+And
+
+783
+01:35:14,007 --> 01:35:27,568
+So, let's see.
+
+784
+01:35:18,036 --> 01:35:23,815
+So from that, so for example, P, X, Y, Z,
+
+785
+01:35:23,956 --> 01:35:27,956
+that's if you move X unit on the X direction,
+
+786
+01:35:28,096 --> 01:35:29,475
+then Y units on the Y direction
+
+787
+01:35:29,475 --> 01:35:30,815
+and Z units on the Z direction,
+
+788
+01:35:30,935 --> 01:35:31,676
+you get to that point.
+
+789
+01:35:32,015 --> 01:35:33,355
+Of course, positive and negative.
+
+790
+01:35:33,636 --> 01:35:37,056
+Negative directions mean negative X direction,
+
+791
+01:35:37,176 --> 01:35:38,916
+negative Y direction, negative Z direction.
+
+792
+01:35:40,576 --> 01:35:43,756
+So these are called the coordinates of a point.
+
+793
+01:35:48,036 --> 01:35:50,395
+So three planes here.
+
+794
+01:35:50,615 --> 01:35:55,115
+So here, this plane over here is the X, Y plane at the base.
+
+795
+01:35:55,895 --> 01:35:58,435
+Here we have an X, Z plane here,
+
+796
+01:35:59,115 --> 01:36:00,655
+a plane called the X, Z plane.
+
+797
+01:36:00,735 --> 01:36:03,716
+And this plane over here is the Z, Y plane.
+
+798
+01:36:05,416 --> 01:36:09,296
+And these planes can be represented
+
+799
+01:36:09,296 --> 01:36:10,636
+with these equations actually.
+
+800
+01:36:11,496 --> 01:36:13,956
+X equals zero represents the Y, Z plane.
+
+801
+01:36:14,676 --> 01:36:16,716
+Y, Z plane, in other words,
+
+802
+01:36:16,716 --> 01:36:19,076
+the set of all points with X coordinate is zero.
+
+803
+01:36:19,435 --> 01:36:21,716
+On the space, if you think of the set of all points
+
+804
+01:36:21,716 --> 01:36:22,855
+with X coordinate is zero,
+
+805
+01:36:23,216 --> 01:36:24,636
+you get the Y, Z plane.
+
+806
+01:36:25,256 --> 01:36:26,855
+Similarly, for example,
+
+807
+01:36:26,956 --> 01:36:29,435
+the set of all points with Z coordinate is zero,
+
+808
+01:36:29,775 --> 01:36:31,216
+that gives us the X, Y plane.
+
+809
+01:36:33,376 --> 01:36:35,076
+And these coordinate planes,
+
+810
+01:36:35,235 --> 01:36:36,855
+these planes, just like,
+
+811
+01:36:37,355 --> 01:36:39,655
+just like how the, I mean,
+
+812
+01:36:40,296 --> 01:36:40,496
+on.
+
+813
+01:36:52,884 --> 01:36:53,304
+Ok.
+
+814
+01:37:00,819 --> 01:37:30,819
+İki yüzeyine yüzeyine yüzeyine yüzeyine yüzeyine yüzeyine yüzeyine yüzeyine yüzeyine yüzeyine yüzeyine yüzeyine yüzeyine yüzeyine yüzeyine yüzeyine yüzeyine yüzeyine yüzeyine yüzeyine yüzeyine yüzeyine yüzeyine yüzeyine yüzeyine yüzeyine yüzeyine yüzeyine yüzeyine yüzeyine yüzeyine yüzeyine yüzeyine yüzeyine yüzeyine yüzeyine yüzeyine yüzeyine yüzeyine yüzeyine yüzeyine yüzeyine yüzeyine yüzeyine y
+
+815
+01:37:30,819 --> 01:37:40,960
+only the first one where all coordinates are positive positive x point for example lies on the first octant both x y and z are positive
+
+816
+01:37:46,960 --> 01:37:56,460
+so yes that's what we see the xz plane yz plane here and the xz plane here this red one
+
+817
+01:37:56,460 --> 01:38:03,799
+so for example plane x equals 2 x equals 2 the set of all points whose x coordinate is 2
+
+818
+01:38:03,799 --> 01:38:11,059
+so x equals to this blue plane over here that's the plane no that's z equals 5 sorry x equals to it is
+
+819
+01:38:11,059 --> 01:38:20,279
+this one not this one this this green one is the x equals 2 so this point is 2 0 0 whose x coordinate is
+
+820
+01:38:20,279 --> 01:38:26,119
+2 the set of all points whose x coordinate is 2 so this is a plane which is parallel to the x
+
+821
+01:38:26,119 --> 01:38:34,819
+sorry parallel to the yz plane the plane y equals 3 for example this red one is y equals 3 take the
+
+822
+01:38:34,819 --> 01:38:41,699
+point 0 3 0 on the y-axis the set of all points whose y coordinate is 3 gives us this plane
+
+823
+01:38:41,699 --> 01:38:49,239
+and for example plane z equals 5 this blue plane over here set of all points with z coordinates is 5
+
+824
+01:38:49,239 --> 01:38:57,699
+and so for example let's look at these examples z bigger than or equal to 0 what does this mean
+
+825
+01:38:57,699 --> 01:39:04,000
+it means set of all points whose z coordinates is bigger than or equal to 0 so that's the whole space
+
+826
+01:39:04,000 --> 01:39:07,779
+consisting of the points that are on or above the xy plane
+
+827
+01:39:07,779 --> 01:39:15,699
+so x equals minus 3 just like this one it's just a plane which is parallel to the yz plane
+
+828
+01:39:15,699 --> 01:39:20,939
+whose the set of all points whose x coordinates is minus 3
+
+829
+01:39:20,939 --> 01:39:28,179
+so z is 0 x is less than or equal to 0 y is bigger than or equal to 0 what does this mean z equals 0
+
+830
+01:39:28,179 --> 01:39:34,099
+that's the xy plane itself so on the xy plane if you take if you take the set of all points with x
+
+831
+01:39:34,099 --> 01:39:37,399
+coordinates is less than or equal to 0 and y coordinates bigger than or equal to 0 you get
+
+832
+01:39:37,399 --> 01:39:39,079
+the second quadrant of the xy plane
+
+833
+01:39:39,079 --> 01:39:46,739
+so this is what we have said that's the first octant the set of all points whose both whose x
+
+834
+01:39:46,739 --> 01:39:49,219
+coordinates y coordinates and z coordinates are all bigger than or equal to 0
+
+835
+01:39:49,219 --> 01:39:57,259
+what does this mean y is between minus 1 and 1 so this is the slab between the planes y
+
+836
+01:39:57,259 --> 01:40:05,779
+equals minus 1 and y equals 1 so here so for example this is the plane y equals 3 here somewhere
+
+837
+01:40:05,779 --> 01:40:12,099
+here we have a plane y equals 1 on the other side we have a plane y equals minus 1 so the set of all
+
+838
+01:40:12,099 --> 01:40:18,420
+points between so two planes y equals 1 and y equals minus 1 they're parallel to each other the set of
+
+839
+01:40:18,420 --> 01:40:22,699
+all points between these two planes can be represented with this inequality
+
+840
+01:40:22,699 --> 01:40:34,539
+y is minus 2 z is 2 so this is a line basically this is a line which passes which is the intersection
+
+841
+01:40:34,539 --> 01:40:40,299
+of the planes y equals minus 1 z equals 2 y equals minus y equals minus 2 is going to be such a plane
+
+842
+01:40:40,299 --> 01:40:46,939
+z equals 2 is going to be another plane two planes such planes intersect on a line so the set of all
+
+843
+01:40:46,939 --> 01:40:54,859
+points for example this point 0 minus 2 2 is on this line
+
+844
+01:40:53,615 --> 01:40:56,595
+Bu, x-coordinatı free, x-coordinatı can be anything.
+
+845
+01:40:56,775 --> 01:41:07,595
+Just take the second y-coordinat to be minus 2, z-coordinat to be 2, x-coordinat can be any real number, so we get a line, basically, where, which is parallel to the x-axis.
+
+846
+01:41:13,108 --> 01:41:21,068
+So, for example, what points PXYZ satisfy the equations X square plus Y square 4 and Z equals 3. Z equals 3 is this circle.
+
+847
+01:41:22,568 --> 01:41:38,288
+Sorry, this Z equals 3 is this plane that's parallel to the XY plane, Z equals 3. On that Z equals 3 plane, take this circle, set of all points, X, Y, whose sum of squares is equal to 4. So that's the equation of a circle.
+
+848
+01:41:38,288 --> 01:41:50,268
+So this circle X square plus Y square equals 4 just take it on the circle. So this blue circle is this one X square plus Y square equals 4, Z is 0.
+
+849
+01:41:50,547 --> 01:41:57,387
+This red circle is this circle X square plus Y square is 4, Z is 3. It's just 3 units above this one.
+
+850
+01:42:06,931 --> 01:42:08,612
+Ok, and
+
+851
+01:42:15,444 --> 01:42:19,604
+Oh, bir page is missing here. 662.
+
+852
+01:42:21,724 --> 01:42:23,624
+Yeah, they just switched.
+
+853
+01:42:24,644 --> 01:42:26,484
+Okay, 662 is here.
+
+854
+01:42:26,624 --> 01:42:28,824
+What's the distance and spheres in space?
+
+855
+01:42:30,284 --> 01:42:31,724
+If you take two points,
+
+856
+01:42:33,824 --> 01:42:36,064
+x1, y1, z1, and x2, y2, z2,
+
+857
+01:42:36,484 --> 01:42:41,584
+it's just like the distance formula for two points on the plane.
+
+858
+01:42:41,584 --> 01:42:43,923
+We just add one more term here.
+
+859
+01:42:43,923 --> 01:42:46,044
+Add one more term.
+
+860
+01:42:47,304 --> 01:42:49,264
+So that's the distance between the two points,
+
+861
+01:42:49,264 --> 01:42:50,964
+P1 and P2 in the space.
+
+862
+01:42:50,964 --> 01:42:54,464
+The square root of x2 minus x1 squared
+
+863
+01:42:54,464 --> 01:42:57,244
+plus y2 minus y1 squared plus z2 minus z1 squared.
+
+864
+01:43:00,304 --> 01:43:05,304
+And it just follows from Pythagorean theorem basically.
+
+865
+01:43:05,304 --> 01:43:08,024
+Applying Pythagorean theorem twice, we get that formula.
+
+866
+01:43:09,284 --> 01:43:13,224
+And then if we take a sphere,
+
+867
+01:43:13,923 --> 01:43:15,464
+you can take a sphere in space.
+
+868
+01:43:15,844 --> 01:43:18,384
+Let's say sphere whose center is this point,
+
+869
+01:43:18,844 --> 01:43:19,923
+x0, y0, z0,
+
+870
+01:43:20,464 --> 01:43:21,684
+and whose radius is a.
+
+871
+01:43:22,404 --> 01:43:24,004
+Now take any arbitrary point,
+
+872
+01:43:24,084 --> 01:43:25,844
+P, x, y, z on the sphere.
+
+873
+01:43:26,404 --> 01:43:28,044
+What do we know about this arbitrary point?
+
+874
+01:43:28,124 --> 01:43:29,923
+Its distance from the center is a.
+
+875
+01:43:29,923 --> 01:43:35,784
+So x minus x0 squared plus y minus y0 squared plus z minus z0 squared is going to be a squared.
+
+876
+01:43:35,784 --> 01:43:43,004
+So this is a standard equation for a sphere of radius centered at this point on this space.
+
+877
+01:43:43,423 --> 01:43:44,204
+So as you see,
+
+878
+01:43:44,864 --> 01:43:45,844
+without this term,
+
+879
+01:43:46,044 --> 01:43:47,064
+it's just this.
+
+880
+01:43:48,644 --> 01:43:49,724
+Without this term,
+
+881
+01:43:50,423 --> 01:43:52,224
+it's just the equation of a circle in plane.
+
+882
+01:43:52,824 --> 01:43:53,744
+If we add this
+
+883
+01:43:53,744 --> 01:43:55,604
+third term here,
+
+884
+01:43:55,664 --> 01:43:57,904
+we get the equation of a sphere in space.
+
+885
+01:43:57,904 --> 01:43:59,984
+or for example,
+
+886
+01:44:00,144 --> 01:44:02,504
+find the center and radius of the sphere of the sphere.
+
+887
+01:44:02,944 --> 01:44:05,284
+It's the same as what we do in plane.
+
+888
+01:44:06,264 --> 01:44:07,964
+So let's go back.
+
+889
+01:44:08,484 --> 01:44:11,944
+X squared plus y squared plus z squared plus 3x minus 4z plus 1.
+
+890
+01:44:13,544 --> 01:44:15,124
+3x minus 4z plus 1.
+
+891
+01:44:16,744 --> 01:44:17,064
+Here.
+
+892
+01:44:17,064 --> 01:44:20,984
+But let's just collect the terms.
+
+893
+01:44:21,104 --> 01:44:22,164
+X squared plus 3x,
+
+894
+01:44:22,624 --> 01:44:24,504
+y squared and z squared minus 4z.
+
+895
+01:44:24,864 --> 01:44:26,364
+To complete this to a squared,
+
+896
+01:44:26,524 --> 01:44:29,164
+we need to add three halves squared to that.
+
+897
+01:44:30,184 --> 01:44:33,044
+So add nine over four to both sides.
+
+898
+01:44:33,464 --> 01:44:35,744
+Then to complete this to a squared,
+
+899
+01:44:35,824 --> 01:44:36,604
+we need to add four.
+
+900
+01:44:36,784 --> 01:44:37,884
+Four over two squared, basically.
+
+901
+01:44:40,464 --> 01:44:42,004
+Add this to both sides.
+
+902
+01:44:42,424 --> 01:44:45,284
+Now, this is just x plus three over two squared.
+
+903
+01:44:45,284 --> 01:44:47,024
+plus this is y squared.
+
+904
+01:44:47,204 --> 01:44:48,464
+And this is just y,
+
+905
+01:44:48,544 --> 01:44:49,644
+z minus two squared.
+
+906
+01:44:51,304 --> 01:44:52,264
+Which is equal to,
+
+907
+01:44:52,344 --> 01:44:53,104
+on the right-hand side,
+
+908
+01:44:53,144 --> 01:44:55,504
+we get minus one plus nine over four plus four,
+
+909
+01:44:55,624 --> 01:44:57,044
+which is 21 over four.
+
+910
+01:44:57,144 --> 01:44:59,284
+So we get this sphere equation.
+
+911
+01:44:59,444 --> 01:45:02,824
+So its center is x zero equals minus three over two.
+
+912
+01:45:03,064 --> 01:45:04,064
+Y zero equals zero.
+
+913
+01:45:04,324 --> 01:45:05,324
+Z zero equals two.
+
+914
+01:45:05,684 --> 01:45:07,044
+That's the center of the sphere.
+
+915
+01:45:07,504 --> 01:45:10,684
+And its radius is just square root of this.
+
+916
+01:45:11,004 --> 01:45:12,184
+It's square root of 21 over two.
+
+917
+01:45:12,884 --> 01:45:14,144
+So that's this.
+
+918
+01:45:15,284 --> 01:45:17,764
+Fear.
+
+919
+01:45:18,984 --> 01:45:20,244
+And so, for example,
+
+920
+01:45:20,624 --> 01:45:21,864
+what does this represent?
+
+921
+01:45:22,244 --> 01:45:24,664
+X square plus y square plus z square is less than four.
+
+922
+01:45:25,004 --> 01:45:27,144
+This represents the interior of the sphere.
+
+923
+01:45:28,144 --> 01:45:29,004
+Interior part.
+
+924
+01:45:29,264 --> 01:45:30,224
+The set of all points.
+
+925
+01:45:32,924 --> 01:45:36,024
+Some of the squares of whose coordinates is less than four.
+
+926
+01:45:36,424 --> 01:45:37,804
+If you take it less than or equal to four,
+
+927
+01:45:37,884 --> 01:45:40,684
+it includes the solid ball bounded by the sphere.
+
+928
+01:45:40,684 --> 01:45:44,384
+So it's the sphere itself together with its interior.
+
+929
+01:45:44,764 --> 01:45:46,684
+So it contains the sphere itself as well.
+
+930
+01:45:47,544 --> 01:45:48,584
+If it is bigger than four,
+
+931
+01:45:48,644 --> 01:45:49,084
+for example,
+
+932
+01:45:49,164 --> 01:45:51,284
+it's the exterior of that sphere.
+
+933
+01:45:51,284 --> 01:45:52,284
+So,
+
+934
+01:45:52,344 --> 01:45:52,684
+for example,
+
+935
+01:45:52,684 --> 01:45:55,604
+if you take this equal four and z is less than or equal to zero,
+
+936
+01:45:56,244 --> 01:45:57,704
+you just take half of the sphere,
+
+937
+01:45:58,184 --> 01:45:58,924
+lower hemisphere,
+
+938
+01:45:59,704 --> 01:46:00,624
+from the sphere,
+
+939
+01:46:00,964 --> 01:46:01,324
+the plane,
+
+940
+01:46:01,384 --> 01:46:01,524
+x,
+
+941
+01:46:01,524 --> 01:46:01,904
+y plane.
+
+942
+01:46:02,324 --> 01:46:04,504
+We get that sphere whose center is at the origin.
+
+943
+01:46:04,864 --> 01:46:05,604
+Just cut it.
+
+944
+01:46:06,164 --> 01:46:07,104
+Cut it with the x,
+
+945
+01:46:07,164 --> 01:46:07,584
+y plane.
+
+946
+01:46:08,244 --> 01:46:09,424
+Take the lower half.
+
+947
+01:46:09,864 --> 01:46:10,624
+Lower half.
+
+948
+01:46:10,704 --> 01:46:12,004
+Where z is less than or equal to zero.
+
+949
+01:46:12,324 --> 01:46:36,004
+We get a half sphere like that.
+
+950
+01:46:16,340 --> 01:46:24,980
+There are just some examples of equations in three dimensions.
+
+951
+01:46:29,203 --> 01:46:31,623
+Okay, what is next? Next, vectors.
+
+952
+01:46:34,603 --> 01:46:39,643
+So here, in calculus, we define a vector this way, a directed line segment.
+
+953
+01:46:40,943 --> 01:46:45,583
+So we start from a point, initial point, and we end at another point, terminal point.
+
+954
+01:46:48,163 --> 01:46:53,983
+A to B, a line segment from A to B is called a vector, a directed line segment.
+
+955
+01:46:53,983 --> 01:46:57,663
+So it has two quantities.
+
+956
+01:46:58,363 --> 01:47:00,923
+It has a direction, and it has a length.
+
+957
+01:47:03,083 --> 01:47:04,923
+So we say that...
+
+958
+01:47:08,500 --> 01:47:12,819
+Here for example, these four arrows in the plane,
+
+959
+01:47:12,819 --> 01:47:15,859
+shown here have the same length and direction.
+
+960
+01:47:15,859 --> 01:47:18,180
+They represent the same vector.
+
+961
+01:47:18,180 --> 01:47:21,460
+So A, B, C, D, O, P and E, F,
+
+962
+01:47:21,460 --> 01:47:23,060
+they all represent the same vector
+
+963
+01:47:23,060 --> 01:47:25,300
+because they have the same direction,
+
+964
+01:47:25,300 --> 01:47:27,619
+they're parallel and they have the same length.
+
+965
+01:47:30,899 --> 01:47:34,020
+And so here's the definition.
+
+966
+01:47:34,020 --> 01:47:39,060
+Vector presented by the directed line segment, A, B,
+
+967
+01:47:39,060 --> 01:47:42,739
+the initial point A, terminal point B,
+
+968
+01:47:43,539 --> 01:47:46,739
+and its length is denoted by this, its length.
+
+969
+01:47:46,739 --> 01:47:50,500
+Its length is basically the distance
+
+970
+01:47:50,500 --> 01:47:53,060
+between its initial point and the terminal point.
+
+971
+01:47:53,060 --> 01:47:57,220
+And we say that two vectors are equal
+
+972
+01:47:57,859 --> 01:47:59,779
+if they have the same length and direction.
+
+973
+01:47:59,779 --> 01:48:03,539
+So as we said, these four vectors are equal.
+
+974
+01:48:04,340 --> 01:48:06,100
+They have the same direction and same length.
+
+975
+01:48:07,220 --> 01:48:12,100
+Therefore, for example, these four vectors are equal.
+
+976
+01:48:12,739 --> 01:48:15,460
+One of them is special.
+
+977
+01:48:15,460 --> 01:48:15,939
+Which one?
+
+978
+01:48:15,939 --> 01:48:17,300
+This one, O, P.
+
+979
+01:48:17,300 --> 01:48:20,420
+This is special because its initial point is at the origin.
+
+980
+01:48:21,380 --> 01:48:24,180
+So given any vector, given any vector,
+
+981
+01:48:24,180 --> 01:48:28,739
+we can always find that equal, find the vector
+
+982
+01:48:28,739 --> 01:48:31,699
+which is equal to that and whose initial point is the origin.
+
+983
+01:48:32,260 --> 01:48:33,939
+So that's called the standard vector.
+
+984
+01:48:35,619 --> 01:48:37,220
+Standard position vector.
+
+985
+01:48:37,220 --> 01:48:38,739
+For example, if you have a PQ,
+
+986
+01:48:39,619 --> 01:48:43,539
+PQ is X1, Y1, Z1, Q is X2, Y2, Z2.
+
+987
+01:48:44,819 --> 01:48:48,739
+This vector just find a parallel vector
+
+988
+01:48:49,460 --> 01:48:51,220
+having the same length to this,
+
+989
+01:48:51,779 --> 01:48:53,539
+whose initial point is the origin.
+
+990
+01:48:53,539 --> 01:48:57,939
+We get another vector V1 whose initial point is the origin 0 0 0,
+
+991
+01:48:57,939 --> 01:49:00,020
+whose terminal point is V1 V2 V3.
+
+992
+01:49:01,939 --> 01:49:04,100
+So this vector is represented with these
+
+993
+01:49:05,779 --> 01:49:06,260
+with this
+
+994
+01:49:09,060 --> 01:49:09,859
+notation here.
+
+995
+01:49:10,340 --> 01:49:13,779
+So this represents the point with normal parentheses
+
+996
+01:49:14,420 --> 01:49:16,260
+using normal parentheses.
+
+997
+01:49:16,260 --> 01:49:19,140
+This represents this point using these
+
+998
+01:49:20,739 --> 01:49:22,260
+parentheses, actually
+
+999
+01:49:22,260 --> 01:49:25,859
+It's like the less than sign and the greater than sign.
+
+1000
+01:49:26,340 --> 01:49:29,460
+This represents the vector whose initial point is origin
+
+1001
+01:49:29,460 --> 01:49:30,899
+and the terminal point is that.
+
+1002
+01:49:30,899 --> 01:49:36,579
+And by convention, we in the book,
+
+1003
+01:49:37,300 --> 01:49:41,380
+vectors are always going to be represented using bold face letters
+
+1004
+01:49:41,380 --> 01:49:42,579
+like this.
+
+1005
+01:49:42,579 --> 01:49:45,779
+Like this.
+
+1006
+01:49:48,884 --> 01:50:01,363
+Ve say that this v is in standard position. This one is in standard position because its initial point is at the origin.
+
+1007
+01:50:06,676 --> 01:50:07,436
+In general,
+
+1008
+01:50:11,507 --> 01:50:24,807
+So, for example, if he is a two-dimensional vector in the plane, equal to the vector with initial point at the origin and terminal point v1, v2, its component form is written this way, v1, v2.
+
+1009
+01:50:25,327 --> 01:50:33,087
+And of course, if it's a three-dimensional vector, which is at the standard position at terminal point at this point, then its component form is this.
+
+1010
+01:50:33,087 --> 01:50:44,228
+So, for example, these numbers, v1, v2, and v3 are called the components of v.
+
+1011
+01:50:44,827 --> 01:50:48,688
+So, let's see. Can I write on this? No.
+
+1012
+01:51:44,595 --> 01:51:45,275
+Okay, anyway.
+
+1013
+01:51:50,547 --> 01:51:51,927
+I'll check that later.
+
+1014
+01:51:55,148 --> 01:51:56,068
+Where am I?
+
+1015
+01:51:57,847 --> 01:51:58,407
+No.
+
+1016
+01:52:27,028 --> 01:52:29,108
+Okay, let's understand the difference.
+
+1017
+01:52:29,328 --> 01:52:32,228
+So here, this is a point.
+
+1018
+01:52:32,927 --> 01:52:34,967
+This is a point on the space.
+
+1019
+01:52:35,887 --> 01:52:39,927
+These numbers, V1, V2, and V3, are called the coordinates of this point.
+
+1020
+01:52:40,788 --> 01:52:47,748
+On the other hand, this is a vector whose initial point is the origin and whose terminal point is that point.
+
+1021
+01:52:48,628 --> 01:52:52,387
+And these numbers, V1, V2, and V3, are called the components of the vector.
+
+1022
+01:52:52,387 --> 01:53:09,128
+Okay, and let's say we have, okay, if you look at a vector whose initial point is this, X1, Y1, Z1, and whose terminal point is this, X2, Y2, Z2.
+
+1023
+01:53:09,128 --> 01:53:23,887
+Then, we can get that it's, when we put it into its standard position, we get V1 equals X2 minus X1, V2 equals Y2 minus Y1, V3 equals Z2 minus Z1.
+
+1024
+01:53:23,887 --> 01:53:39,648
+So, in summary, given these points, the standard position of, the standard position vector V of this, of this vector PQ is this, V equals X2 minus X1, Y2 minus Y1, Z2 minus Z1.
+
+1025
+01:53:39,648 --> 01:54:04,648
+And the magnitude, the magnitude, or the length of this vector is this, is the distance between P and Q, which is this, or it's the same as the distance between origin and its, that point V1, V2, V3, which is this, square, so V1, square, plus V2, square, plus V2, square.
+
+1026
+01:54:04,648 --> 01:54:11,148
+So, that's the length of vector.
+
+1027
+01:54:11,847 --> 01:54:16,507
+The only vector whose length is zero is the zero vector, whose, which is this.
+
+1028
+01:54:17,088 --> 01:54:22,528
+And this is special, this vector is also the only vector with no specific direction.
+
+1029
+01:54:24,148 --> 01:54:30,268
+All vectors except, except for the zero vector has a direction, the zero vector has no specific direction.
+
+1030
+01:54:30,268 --> 01:54:40,347
+For example, in the component form and the length of the vector whose initial point is this and the terminal point is this.
+
+1031
+01:54:40,608 --> 01:54:46,228
+So, if the initial point is this, terminal point is this, so minus five minus minus three is minus two.
+
+1032
+01:54:47,007 --> 01:54:50,048
+It's the I component, we all say.
+
+1033
+01:54:50,048 --> 01:54:54,708
+The first component, let me say for now, two minus four is minus two, that's the second component.
+
+1034
+01:54:55,148 --> 01:54:57,208
+Two minus one is one, that's the third component.
+
+1035
+01:54:57,347 --> 01:54:59,347
+Its components are minus two, minus two, and one.
+
+1036
+01:55:00,188 --> 01:55:02,368
+Component form, it's this vector.
+
+1037
+01:55:02,648 --> 01:55:02,887
+Thank you.
+
+1038
+01:55:03,427 --> 01:55:11,467
+And its length is just square root of the sum of the squares of its components, which is square root of four plus four plus one, which is square root of nine, that's three.
+
+1039
+01:55:13,688 --> 01:55:14,248
+Okay.
+
+1040
+01:55:15,208 --> 01:55:15,908
+Let's see some.
+
+1041
+01:55:21,203 --> 01:55:22,283
+Okay, what is next?
+
+1042
+01:55:23,903 --> 01:55:25,583
+Vektor algebraic equation.
+
+1043
+01:55:27,183 --> 01:55:29,143
+There are two algebraic equations
+
+1044
+01:55:29,143 --> 01:55:29,783
+that are defined.
+
+1045
+01:55:31,043 --> 01:55:32,264
+Two algebraic equations
+
+1046
+01:55:32,264 --> 01:55:33,323
+are defined on vectors.
+
+1047
+01:55:35,703 --> 01:55:37,423
+One of them is a vector addition,
+
+1048
+01:55:38,363 --> 01:55:40,264
+which is done component-wise.
+
+1049
+01:55:40,783 --> 01:55:42,304
+The other is scalar multiplication.
+
+1050
+01:55:42,804 --> 01:55:43,923
+That is multiplying
+
+1051
+01:55:43,923 --> 01:55:48,224
+a vector by a scalar.
+
+1052
+01:55:48,943 --> 01:55:49,724
+Well, in general,
+
+1053
+01:55:49,724 --> 01:55:52,483
+a vector space can be defined
+
+1054
+01:55:52,483 --> 01:55:53,903
+over any algebraic field,
+
+1055
+01:55:54,224 --> 01:55:56,163
+but in this book and in this course,
+
+1056
+01:55:57,683 --> 01:56:00,123
+we are working on the algebraic field
+
+1057
+01:56:00,123 --> 01:56:00,963
+of real numbers.
+
+1058
+01:56:01,363 --> 01:56:03,344
+So in this context,
+
+1059
+01:56:03,503 --> 01:56:04,783
+whenever we say a scalar,
+
+1060
+01:56:05,083 --> 01:56:06,243
+we mean a real number actually.
+
+1061
+01:56:11,863 --> 01:56:12,764
+So for example,
+
+1062
+01:56:12,863 --> 01:56:14,983
+if you have this component form
+
+1063
+01:56:14,983 --> 01:56:16,344
+and V is this,
+
+1064
+01:56:16,743 --> 01:56:18,643
+then when we add this,
+
+1065
+01:56:18,643 --> 01:56:19,863
+U plus V is this.
+
+1066
+01:56:20,743 --> 01:56:21,503
+U1 plus V1,
+
+1067
+01:56:21,583 --> 01:56:22,384
+U2 plus V2,
+
+1068
+01:56:22,443 --> 01:56:23,363
+U3 plus V3.
+
+1069
+01:56:23,563 --> 01:56:25,183
+We just add them component-wise.
+
+1070
+01:56:25,503 --> 01:56:26,823
+That's the addition of these two vectors.
+
+1071
+01:56:27,724 --> 01:56:28,823
+And the scalar multiplication,
+
+1072
+01:56:29,023 --> 01:56:31,103
+multiplying U by a scalar K
+
+1073
+01:56:31,103 --> 01:56:32,983
+is just multiplying all components
+
+1074
+01:56:32,983 --> 01:56:33,623
+by that scalar.
+
+1075
+01:56:33,623 --> 01:56:36,764
+So K times U is K U1,
+
+1076
+01:56:36,764 --> 01:56:37,304
+K U2,
+
+1077
+01:56:37,304 --> 01:56:37,863
+K U3.
+
+1078
+01:56:38,663 --> 01:56:39,203
+That's it.
+
+1079
+01:56:40,323 --> 01:56:43,923
+And geometrically,
+
+1080
+01:56:44,043 --> 01:56:45,143
+what does this represent?
+
+1081
+01:56:46,563 --> 01:56:47,003
+Geometrically,
+
+1082
+01:56:47,103 --> 01:56:47,943
+it represents this.
+
+1083
+01:56:48,543 --> 01:56:49,603
+If this is a U,
+
+1084
+01:56:49,804 --> 01:56:51,483
+it is additional vectors
+
+1085
+01:56:51,483 --> 01:56:53,403
+is like concatenation of vectors
+
+1086
+01:56:53,403 --> 01:56:54,003
+in the space.
+
+1087
+01:56:54,003 --> 01:56:55,884
+So if this is the vector U
+
+1088
+01:56:55,884 --> 01:56:57,463
+and this is the vector V,
+
+1089
+01:56:58,264 --> 01:56:59,884
+U plus V is the vector
+
+1090
+01:56:59,884 --> 01:57:01,243
+obtained by concatenating
+
+1091
+01:57:01,243 --> 01:57:02,724
+these two vectors
+
+1092
+01:57:02,724 --> 01:57:03,884
+one onto the other.
+
+1093
+01:57:05,724 --> 01:57:06,903
+This is U plus V.
+
+1094
+01:57:07,403 --> 01:57:09,583
+Or we could think of it this way.
+
+1095
+01:57:09,663 --> 01:57:10,903
+If you put both vectors,
+
+1096
+01:57:11,003 --> 01:57:11,403
+U and V,
+
+1097
+01:57:11,443 --> 01:57:12,703
+into their standard position,
+
+1098
+01:57:12,844 --> 01:57:14,143
+where their initial points
+
+1099
+01:57:14,143 --> 01:57:14,764
+are the origin,
+
+1100
+01:57:15,163 --> 01:57:17,224
+then just form this parallelogram
+
+1101
+01:57:17,224 --> 01:57:20,403
+whose two of those sides
+
+1102
+01:57:20,403 --> 01:57:21,443
+are these two vectors,
+
+1103
+01:57:21,443 --> 01:57:22,003
+U and V,
+
+1104
+01:57:22,743 --> 01:57:27,023
+then the vector
+
+1105
+01:57:27,023 --> 01:57:27,823
+from the origin
+
+1106
+01:57:27,823 --> 01:57:28,923
+to the opposite corner
+
+1107
+01:57:28,923 --> 01:57:29,863
+of this parallelogram
+
+1108
+01:57:29,863 --> 01:57:30,923
+is going to be
+
+1109
+01:57:30,923 --> 01:57:32,663
+the geometric interpretation
+
+1110
+01:57:32,663 --> 01:57:33,963
+of U plus V.
+
+1111
+01:57:37,811 --> 01:58:07,811
+Yani, bu kadar da kalorayla kalorayla kalorayla kalorayla kalorayla kalorayla kalorayla kalorayla kalorayla kalorayla kalorayla kalorayla kalorayla kalorayla kalorayla kalorayla kalorayla kalorayla kalorayla kalorayla kalorayla kalorayla kalorayla kalorayla kalorayla kalorayla kalorayla kalorayla kalorayla kalorayla kalorayla kalorayla kalorayla kalorayla kalorayla kalorayla kalorayla kalorayla kalorayla kalorayla kalorayla kalorayla kalorayla kalorayla kalorayla kalorayla kalorayla kalorayla kalorayla kalorayla kalorayla kalorayla kalorayla kalorayla kalor
+
+1112
+01:58:07,811 --> 01:58:37,811
+kalorayla kalorayla kalorayla kalorayla kalorayla kalorayla kalorayla kalorayla kalorayla kalorayla kalorayla kalorayla kalorayla kalorayla kalorayla kalorayla kalorayla kalorayla kalorayla kalorayla kalorayla kalorayla kalorayla kalorayla kalorayla kalorayla kalorayla kalorayla kalorayla kalorayla kalorayla kalorayla kalorayla kalorayla kalorayla kalorayla kalorayla kalorayla kalorayla kalorayla kalorayla kalorayla kalorayla kalorayla kalorayla kalorayla kalorayla kalorayla kalorayla kalorayla kalorayla kalorayla kalorayla kalorayla kalorayla kal
+
+1113
+01:58:37,811 --> 01:59:01,671
+on this side this one means absolute value of k because k is a real number here k is a scalar this one this means the length of the vector u so what does this equation tell us it tells us that the length of ku is the same as the absolute value of k times the length of u so for example if this is u for example
+
+1114
+01:59:01,671 --> 01:59:30,591
+2u the length of 2u is going to be 2 times the length of u length of minus 2u is also going to be 2 times the length of u because absolute value of 2 absolute value of minus 2 they are both 2 their lengths are both 2 times the length of u but their directions are different so if k is positive if k is positive ku has the same direction as u if k is negative on the other side ku has opposite direction with u
+
+1115
+01:59:31,671 --> 02:00:00,532
+and now making use of this we can define this minus 1u minus 1u minus 1u minus 1u so for example if this is u what is minus 1 when we multiplied with the scalar minus 1 we'll get the vector in the opposite direction having the same length right just the opposite direction with the same length so that's defined as minus u now once we define minus u we can define difference
+
+1116
+02:00:00,532 --> 02:00:30,532
+u minus u minus v of two vectors u minus v u minus v u minus v u minus minus v u minus minus v u minus
+
+1117
+02:00:30,532 --> 02:01:35,881
+u minus u
+
+1118
+02:01:35,956 --> 02:01:47,956
+2 times this is minus 2 minus 6 2, 3 times this is just multiply each component by 3, we get this, then add them component wise, minus 2 plus 12 is 10, 6 plus 21 is 27, 2 plus 0 is 2.
+
+1119
+02:01:49,496 --> 02:01:58,516
+What is U minus? We just subtract them component wise. Minus 1 minus 4 is minus 5, 3 minus 7 is minus 4, 1 minus 3 is 1, that's it.
+
+1120
+02:01:58,516 --> 02:02:08,655
+What's the length of 1 over 2U? What is 1 over 2U? U is here, so 1 over 2U is 1 over 2 minus 1 over 2, 3 over 2, 1 over 2.
+
+1121
+02:02:08,655 --> 02:02:19,136
+What is this length? It's square root of the sum of the squares of this, which is 1 over 4 plus 9 over 4 plus 1 over 4 is 11 over 4, square root of that is 1 over 2, square root of 11.
+
+1122
+02:02:19,136 --> 02:02:32,855
+Okay, what kind of properties does this vector operations have? So, first of all, vector addition is commutative. U plus V is always equal to V plus U.
+
+1123
+02:02:32,855 --> 02:02:46,036
+It's also associated U plus V plus W is the same as U plus V plus W. So, we can add three or more vectors can be added in any order we like.
+
+1124
+02:02:47,416 --> 02:02:57,935
+Also, U plus 0 is 0. If we add 0 to any vector, we get the vector itself. That's obvious. U plus minus 2 gives us the 0 vector.
+
+1125
+02:02:57,935 --> 02:03:08,876
+If you multiply any vector U with the scalar 0, we get the 0 vector. Because we multiply each component by 0, all components become 0, we get the 0 vector.
+
+1126
+02:03:09,476 --> 02:03:14,996
+If we multiply a vector U with the scalar 1, we get U itself. That's also clear.
+
+1127
+02:03:16,855 --> 02:03:25,216
+Multiplying U by a scalar B first and then a scalar and then another scalar A is the same as multiplying U by the product of A and B.
+
+1128
+02:03:25,216 --> 02:03:36,036
+Also, scalars can be distributed over vector addition. So, A U plus V is A U plus A V. And also, scalar addition,
+
+1129
+02:03:38,516 --> 02:03:45,855
+vectors can be distributed over scalar addition like this. All these properties hold for vectors.
+
+1130
+02:03:47,056 --> 02:03:54,256
+Now, there are some special vectors. What are they? Unit vectors. Vector V of length 1 is called a unit vector.
+
+1131
+02:03:55,216 --> 02:04:03,695
+Let's say what a unit vector is, basically. Vector of length 1. And there are three standard unit vectors. What are they? This.
+
+1132
+02:04:04,516 --> 02:04:09,016
+What's the length of this? Rote of 1 squared plus 0 squared plus 0 squared, which is just 1.
+
+1133
+02:04:09,655 --> 02:04:16,036
+The same is true for these. Their lengths are all 1. And this is in the positive x direction. That's the vector i.
+
+1134
+02:04:16,876 --> 02:04:21,796
+The unit vector on the positive x direction. J is the unit vector on positive y direction.
+
+1135
+02:04:21,796 --> 02:04:24,796
+And k is the unit vector on the positive k direction.
+
+1136
+02:04:26,056 --> 02:04:29,395
+And now, take any vector. V equals V1, V2, V3.
+
+1137
+02:04:30,435 --> 02:04:36,956
+Now, this vector can be written as V100 plus 0V20 plus 00V3.
+
+1138
+02:04:37,296 --> 02:04:39,096
+So, this is the sum of these three.
+
+1139
+02:04:39,096 --> 02:04:42,395
+Now, here, I can factor V1 out and write this.
+
+1140
+02:04:43,355 --> 02:04:45,476
+Write this vector as V1 times 100.
+
+1141
+02:04:46,416 --> 02:04:48,815
+Write this vector as V2 times 010.
+
+1142
+02:04:49,435 --> 02:04:51,916
+Write this vector as V3 times 001.
+
+1143
+02:04:52,355 --> 02:04:54,275
+So, this is the vector i, basically.
+
+1144
+02:04:54,476 --> 02:04:55,476
+This is the vector j.
+
+1145
+02:04:55,836 --> 02:04:56,796
+This is the vector k.
+
+1146
+02:04:56,796 --> 02:04:59,876
+So, we get V1 i plus V2 j plus V3 k.
+
+1147
+02:05:00,336 --> 02:05:05,395
+So, a vector whose components are V1, V2, and V3
+
+1148
+02:05:05,395 --> 02:05:13,775
+can be written as a linear combination of these standard unit vectors as V1 i plus V2 j plus V3 k.
+
+1149
+02:05:13,775 --> 02:05:21,136
+And so, this number V1 is called the i component.
+
+1150
+02:05:21,855 --> 02:05:24,416
+So, again, let's see the difference.
+
+1151
+02:05:26,416 --> 02:05:30,435
+When we talk about the point V1, V2, V3, the point.
+
+1152
+02:05:30,931 --> 02:05:37,931
+Yüceyik, yüceyik, yüceyik, yüceyik, yüceyik, yüceyik, yüceyik, yüceyik.
+
+1153
+02:05:37,931 --> 02:06:07,931
+Yüceyik, yüceyik, yüceyik, yüceyik, yüceyik, yüceyik, yüceyik, yüceyik, yüceyik, yüceyik, yüceyik, yüceyik, yüceyik, yüceyik, yüceyik, yüceyik, yüceyik, yüceyik, yüceyik, yüceyik, yüceyik, yüceyik, yüceyik, yüceyik, yüceyik, yüceyik, yüceyik, yüceyik, yüceyik, yüceyik, yüceyik, yüceyik, yüceyik, yüceyik, yüceyik, yüceyik, yüceyik, y
+
+1154
+02:06:07,931 --> 02:06:33,331
+Now, this length, 1 over the length of V, 1 over the length of V is a scalar. It's just some real number. Times V. What is that? Here, remember what we have done here. Length of k times u, length of k times u, we have seen that it's the same as absolute value of k times the length of u.
+
+1155
+02:06:33,331 --> 02:06:59,091
+Okay? Now look at this. Consider this 1 over the length of v. 1 over the length of v is a real number. Call it k. So the length of k times v is the absolute value of k. k is 1 over the length of v. Length of v is always positive, so its absolute value is itself. 1 over the length of v times the length of v, which is 1.
+
+1156
+02:06:59,091 --> 02:07:10,371
+Because length of v is cancelled, we get 1. So in general, length of this vector. So when we started the vector v and divided by its length,
+
+1157
+02:07:11,971 --> 02:07:19,291
+dividing by its by its length means multiplying it, making scalar multiplication by 1 over its length.
+
+1158
+02:07:19,291 --> 02:07:23,311
+So that vector is going to be a unit vector on the same direction.
+
+1159
+02:07:27,444 --> 02:07:57,444
+Öncelikle, bu yüzeyde u yüzeyde u yüzeyde u yüzeyde u yüzeyde u yüzeyde u yüzeyde u yüzeyde u yüzeyde u yüzeyde u yüzeyde u yüzeyde u yüzeyde u yüzeyde u yüzeyde u yüzeyde u yüzeyde u yüzeyde u yüzeyde u yüzeyde u yüzeyde u yüzeyde u yüzeyde u yüzeyde u yüzeyde u yüzeyde u yüzeyde u yüzeyde u yüzeyde u yüzeyde u yüzeyde u yüzeyde u yüzeyde u yüzeyde u yüzeyde u yüzeyde u y
+
+1160
+02:07:57,444 --> 02:08:03,584
+What is this length? It's length is square root of the 4 plus 4 plus 1, which is 3.
+
+1161
+02:08:04,464 --> 02:08:11,224
+Now, divide this vector. The vector is this 2i plus 2j plus minus k divided by its length.
+
+1162
+02:08:11,544 --> 02:08:16,444
+Divided by 3, we get 2 over 3i plus 2 over 3j minus 1 over 3k.
+
+1163
+02:08:16,784 --> 02:08:22,744
+So this vector has the same direction with the vector p1 to p2, and this is a unit vector.
+
+1164
+02:08:22,744 --> 02:08:28,104
+It's like this one. This is the unit vector in the direction of 1p2.
+
+1165
+02:08:29,824 --> 02:08:32,364
+So this is going to be important. This is going to be used later.
+
+1166
+02:08:35,584 --> 02:08:37,904
+Okay, I'm going to skip that example.
+
+1167
+02:08:39,964 --> 02:08:46,984
+In general, if v is not a zero vector, then v over the length of v is a unit vector in the direction of v.
+
+1168
+02:08:46,984 --> 02:08:49,224
+And this equation over here,
+
+1169
+02:08:49,224 --> 02:08:55,564
+v equals the length of v times v over the length of v.
+
+1170
+02:08:55,564 --> 02:08:58,764
+Expresses v as its length and times its direction.
+
+1171
+02:08:58,904 --> 02:09:02,524
+So its length, this is its length, and this is its direction.
+
+1172
+02:09:02,624 --> 02:09:05,444
+By direction, we mean the unit vector in that direction.
+
+1173
+02:09:05,444 --> 02:09:05,804
+So it's going to be used to be used to be used to be used to be used to be used to be used to be used to be used to be used to be used to be used to be used to be used to be used to be used to be used to be used to be used to be used to be used to be used to be used to be used to be used to be used to be used to be used to be used to be used to be used to be used to be used to be used to be used to be used to be used to be used to be used to be used to be used to be used to be used to be used to be used to be used to be used to be used to be used to be used to be used to be used to be used to be used to be used to be used to be used to be used to be used to be used to be used to be used to be used to be used to be used to be used to be used to be used to be used to be used to be used to be used to
+
+1174
+02:09:09,171 --> 02:10:09,171
+Bu ne?
+
+1175
+02:09:51,283 --> 02:09:52,804
+What's next? The dot product.
+
+1176
+02:09:56,503 --> 02:10:00,683
+Let me give you a five minutes break. I will continue after five minutes, okay?
+
+1177
+02:10:01,463 --> 02:10:03,563
+Just five minutes break. I will continue.
+
+1178
+02:16:53,108 --> 02:16:56,648
+Okay, let's continue with the tart product.
+
+1179
+02:17:05,012 --> 02:17:08,432
+Ok, we start with this, the angle between vectors.
+
+1180
+02:17:15,188 --> 02:17:40,667
+Okay, think about this. U, V, are two vectors. We want to be able to find the angle between these two vectors, the angle theta. So how are we going to find that? How can we find it? Just look at this. This is U, U and V, two vectors. This is the angle between these two vectors. Look at this, W. What is W? W is, using the parallelogram law, it's U minus V.
+
+1181
+02:17:40,667 --> 02:17:50,067
+This is U minus V. So that V plus this, U minus V is going to be U. So this U minus V. So now, using the law of cosines,
+
+1182
+02:17:53,327 --> 02:18:10,327
+applying the law of cosines on this triangle, law of cosines says that the length of W squared is equal to the length of U squared plus the length of V squared minus two times the length of U times the length of V times cosine theta. We get this.
+
+1183
+02:18:13,811 --> 02:18:26,492
+So, from this we get 2 times length of u times length of v times cosine theta is equal to length of u squared plus length of v squared minus length of w squared.
+
+1184
+02:18:26,832 --> 02:18:28,832
+Now, length of u squared is this.
+
+1185
+02:18:29,771 --> 02:18:31,771
+1 squared plus u2 squared plus u2 squared.
+
+1186
+02:18:31,891 --> 02:18:33,252
+Length of v squared is this.
+
+1187
+02:18:34,231 --> 02:18:35,811
+How about length of w squared?
+
+1188
+02:18:35,932 --> 02:18:37,771
+We said that w is u minus v.
+
+1189
+02:18:38,471 --> 02:18:39,611
+W is u minus v.
+
+1190
+02:18:39,611 --> 02:18:48,471
+So, length of w squared is, I mean, the components of w are u1 minus v1, u2 minus v2, u3 minus v3.
+
+1191
+02:18:49,072 --> 02:18:55,871
+So, its length squared is u1 minus v1 squared plus u2 minus v2 squared plus u3 minus v3 squared, which is this.
+
+1192
+02:18:56,652 --> 02:19:01,291
+u1 squared minus 2 u1 v1 plus v1 squared plus, and the rest is the same.
+
+1193
+02:19:02,012 --> 02:19:04,291
+So, okay, we need to look at this one.
+
+1194
+02:19:05,271 --> 02:19:08,611
+Length of u squared plus length of v squared.
+
+1195
+02:19:08,611 --> 02:19:12,871
+So, this one plus this one minus this one.
+
+1196
+02:19:13,711 --> 02:19:23,471
+So, as we see, when we subtract this from the sum of these two, these u1 squared, u2 squared, u3 squared, v1 squared, v2 squared, v3 squared, they all cancel out.
+
+1197
+02:19:23,811 --> 02:19:24,951
+We get, we are left with this.
+
+1198
+02:19:25,992 --> 02:19:30,932
+2u1 v1, 2u2 v2, 2u3 v3.
+
+1199
+02:19:30,932 --> 02:19:33,191
+So, this one, the left-hand side is this.
+
+1200
+02:19:37,572 --> 02:19:38,951
+Left-hand side is this.
+
+1201
+02:19:39,811 --> 02:19:43,391
+So, length of u, length of v cosine theta is equal to right-hand side.
+
+1202
+02:19:43,512 --> 02:19:45,451
+This, which is equal to this.
+
+1203
+02:19:45,531 --> 02:19:49,551
+2u1 v1 plus u2 v2 plus u3 v3.
+
+1204
+02:19:49,551 --> 02:19:53,111
+This, 2s cancel, then we cancel out 2s.
+
+1205
+02:19:53,172 --> 02:19:53,811
+We get this.
+
+1206
+02:19:53,971 --> 02:19:58,211
+Length of u, length of v cosine theta is equal to this sum.
+
+1207
+02:19:58,711 --> 02:20:04,311
+So, when we divide by this length of u and length of v, of course, we take u and v to be non-zero vectors.
+
+1208
+02:20:05,131 --> 02:20:06,271
+Their lengths are positive.
+
+1209
+02:20:06,271 --> 02:20:08,791
+We get cosine theta equals this.
+
+1210
+02:20:10,412 --> 02:20:13,111
+And so, theta is cosine inverse of this.
+
+1211
+02:20:13,111 --> 02:20:43,092
+We get cosine theta equals this.
+
+1212
+02:20:17,236 --> 02:20:18,556
+That's what is written here.
+
+1213
+02:20:20,796 --> 02:20:23,356
+Beta is cosine inverse of this number.
+
+1214
+02:20:23,576 --> 02:20:28,256
+And number in the numerator over here is defined as the dot product.
+
+1215
+02:20:28,776 --> 02:20:32,016
+We define a number here.
+
+1216
+02:20:33,016 --> 02:20:34,856
+Dot product of u and v.
+
+1217
+02:20:46,644 --> 02:20:49,463
+A product of u and v is defined as this.
+
+1218
+02:20:50,543 --> 02:20:54,363
+So, u1 v1 plus u is this, u1 v is this.
+
+1219
+02:20:55,484 --> 02:20:59,504
+Just take the product of these two component-wise and add them up.
+
+1220
+02:20:59,623 --> 02:21:01,603
+That's defined as a dot product of u and v.
+
+1221
+02:21:02,144 --> 02:21:03,623
+And we use this notation for that.
+
+1222
+02:21:04,103 --> 02:21:08,103
+So, using that notation, basically the angle between two vectors is this.
+
+1223
+02:21:09,023 --> 02:21:12,224
+Cosine inverse of, so in other words, cosine theta is equal to
+
+1224
+02:21:12,224 --> 02:21:17,304
+u dot v divided by the length of u times length of v.
+
+1225
+02:21:24,531 --> 02:21:32,891
+So, for example, find the angle between u equals i minus 2j minus 2k and v equals 6i plus 3j plus 2k.
+
+1226
+02:21:34,631 --> 02:21:35,111
+So,
+
+1227
+02:21:45,363 --> 02:21:47,804
+So to find the angle, we need to find three things.
+
+1228
+02:21:48,243 --> 02:21:50,384
+Their dot product and the lengths of both.
+
+1229
+02:21:50,904 --> 02:21:51,943
+What is their dot product?
+
+1230
+02:21:52,503 --> 02:21:57,884
+1 times 6 plus minus 2 times 3 plus minus 2 times 2,
+
+1231
+02:21:58,123 --> 02:22:01,564
+which is this, 6 minus 6 minus 4, which is minus 4.
+
+1232
+02:22:02,203 --> 02:22:03,003
+What is the length of?
+
+1233
+02:22:03,003 --> 02:22:07,243
+V length of it to a square root of 1 plus 4 plus 4, which is 3.
+
+1234
+02:22:07,943 --> 02:22:14,443
+And length of v square root of 36 plus 9 plus 4, which is 7.
+
+1235
+02:22:15,363 --> 02:22:20,623
+So we get the angle between these two vectors as theta equals cosine inverse of their dot product,
+
+1236
+02:22:20,763 --> 02:22:24,224
+minus 4 divided by product of their length, 3 times 7.
+
+1237
+02:22:24,323 --> 02:22:27,123
+That's cosine inverse of minus 4 over 21.
+
+1238
+02:22:27,863 --> 02:22:31,644
+So if the cosine is negative, it means the angle is bigger than 90 degrees.
+
+1239
+02:22:32,443 --> 02:22:36,884
+If the cosine is positive, it's going to be less than 90 degrees.
+
+1240
+02:22:38,123 --> 02:22:43,743
+And I don't know, just using a calculator, you can see that it's approximately 1.76 radians,
+
+1241
+02:22:43,863 --> 02:22:44,783
+whatever angle that is.
+
+1242
+02:22:45,363 --> 02:22:52,384
+Another example, find the angle theta in the triangle ABC determined by the vertices 0, 0,
+
+1243
+02:22:52,623 --> 02:22:55,823
+B5, and C equals 5 to this angle theta.
+
+1244
+02:22:56,963 --> 02:22:59,603
+To find this angle, let's find the vectors first.
+
+1245
+02:22:59,603 --> 02:23:03,804
+So this is the angle between the vectors CA and CB, right?
+
+1246
+02:23:03,884 --> 02:23:05,243
+These two vectors, CA and CB.
+
+1247
+02:23:05,724 --> 02:23:06,343
+What is CA?
+
+1248
+02:23:06,343 --> 02:23:09,523
+5, 2.
+
+1249
+02:23:09,523 --> 02:23:10,583
+This is 0, 0.
+
+1250
+02:23:10,804 --> 02:23:13,003
+So 0 minus 5 is minus 5.
+
+1251
+02:23:13,064 --> 02:23:14,183
+0 minus 2 is minus 2.
+
+1252
+02:23:14,304 --> 02:23:15,443
+That's the vector CA.
+
+1253
+02:23:15,963 --> 02:23:19,484
+About CB, 3 minus 5 is minus 2.
+
+1254
+02:23:19,603 --> 02:23:20,804
+5 minus 2 is 3.
+
+1255
+02:23:21,224 --> 02:23:22,163
+That's the vector CB.
+
+1256
+02:23:22,163 --> 02:23:25,683
+So we need to find the angle between these two vectors.
+
+1257
+02:23:26,243 --> 02:23:29,243
+But their dot product is minus 5 times minus 2 is 10.
+
+1258
+02:23:29,583 --> 02:23:31,304
+Plus minus 2 times 3 is 6.
+
+1259
+02:23:31,523 --> 02:23:32,683
+Minus 6, we get 4.
+
+1260
+02:23:33,064 --> 02:23:33,923
+That's the dot product.
+
+1261
+02:23:33,923 --> 02:23:37,863
+Length of CA is square of 25 plus 4.
+
+1262
+02:23:37,943 --> 02:23:39,183
+That's square of 29.
+
+1263
+02:23:39,804 --> 02:23:42,183
+Length of CB is square of 4 plus 9.
+
+1264
+02:23:42,683 --> 02:23:44,064
+That's square of 13.
+
+1265
+02:23:44,064 --> 02:23:51,083
+Then that angle theta is cosine inverse of 4 over square of 29 times square of 13.
+
+1266
+02:23:51,904 --> 02:23:58,564
+And again, using a calculator, we can find that number, whatever it is.
+
+1267
+02:23:58,663 --> 02:24:00,823
+So it's around 78 degrees, whatever.
+
+1268
+02:24:07,636 --> 02:24:11,396
+Okay, what is next? Perpendicular. Orthogonal vectors.
+
+1269
+02:24:13,716 --> 02:24:18,156
+So basically, in this formula, when do we get zero?
+
+1270
+02:24:20,756 --> 02:24:27,935
+I mean, if theta is pi over 2, theta is 90 degrees, we know that cosine theta is zero.
+
+1271
+02:24:28,476 --> 02:24:32,896
+So if theta is pi over 2, this numerator must be zero. So u dot v must be zero.
+
+1272
+02:24:32,896 --> 02:24:44,115
+In general, geometrically, if you have two perpendicular vectors, the degree between the two vectors is 90 degrees, then their dot product is zero.
+
+1273
+02:24:44,896 --> 02:24:54,416
+So we generalize this and define two vectors as orthogonal or perpendicular, if and only if their dot product is zero.
+
+1274
+02:24:54,956 --> 02:24:59,416
+Here there is a minor difference between the algebraic definition and the geometric definition.
+
+1275
+02:24:59,416 --> 02:25:08,396
+When we think about the geometric definition of perpendicular, so here, I mean, the word perpendicular is more like a geometric term.
+
+1276
+02:25:09,296 --> 02:25:12,416
+The word term orthogonal is more an algebraic term.
+
+1277
+02:25:12,996 --> 02:25:19,595
+When we say perpendicular, we mean that the degree between two lines or two vectors is 90 degrees.
+
+1278
+02:25:19,595 --> 02:25:31,576
+That's more geometric. But when we say orthogonal, this definition over here includes the case that one of u or v is the zero vector.
+
+1279
+02:25:32,115 --> 02:25:39,916
+So, of course, if you take zero vector and another vector, you cannot talk about the angle between these two vectors because the zero vector does not have a direction.
+
+1280
+02:25:39,916 --> 02:25:47,216
+But as I said, the term orthogonal includes the case where one of the vectors is the zero vector.
+
+1281
+02:25:47,935 --> 02:25:51,396
+And in general, actually, the zero vector is orthogonal to any vector.
+
+1282
+02:25:51,396 --> 02:25:59,536
+For example, three minus 10, four, six, that product is 12 minus 12, which is zero.
+
+1283
+02:25:59,996 --> 02:26:01,515
+So these two vectors are orthogonal.
+
+1284
+02:26:02,796 --> 02:26:11,236
+Similarly, the dot product of these two vectors is three times zero is zero, minus two times two is four, plus one times four is four, we get zero.
+
+1285
+02:26:11,355 --> 02:26:12,576
+So these two vectors are orthogonal.
+
+1286
+02:26:12,576 --> 02:26:21,615
+As I said, zero vector is orthogonal to every vector, because when I take the dot product of the zero vector with any vector, I'll get zero.
+
+1287
+02:26:22,435 --> 02:26:31,695
+So by definition, the definition, the zero vector is just an immediate consequence of the definition, let us say.
+
+1288
+02:26:32,216 --> 02:26:34,496
+The zero vector is always orthogonal to any vector.
+
+1289
+02:26:38,451 --> 02:27:08,451
+Evet.
+
+1290
+02:27:08,451 --> 02:27:10,451
+And then multiply by the scalar C.
+
+1291
+02:27:10,451 --> 02:27:12,451
+These are all equal to the same.
+
+1292
+02:27:12,451 --> 02:27:15,451
+And it's easy actually to prove.
+
+1293
+02:27:15,451 --> 02:27:21,451
+And the dot products can be distributed over addition like this.
+
+1294
+02:27:21,451 --> 02:27:22,451
+That's also true.
+
+1295
+02:27:22,451 --> 02:27:27,451
+This is what we already say that that product of the zero vector with any vector is always
+
+1296
+02:27:27,451 --> 02:27:28,451
+zero.
+
+1297
+02:27:28,451 --> 02:27:32,451
+And the dot product of a vector by itself is its length square.
+
+1298
+02:27:32,451 --> 02:27:38,451
+Because if you think of you as you only one you want you to be three think about you as
+
+1299
+02:27:38,451 --> 02:27:39,451
+this vector.
+
+1300
+02:27:39,451 --> 02:27:40,451
+But this is not product by itself.
+
+1301
+02:27:40,451 --> 02:27:46,451
+It's not product by itself is you one times you one plus you two times you two plus you
+
+1302
+02:27:46,451 --> 02:27:50,451
+three times you three, which is its length square basically.
+
+1303
+02:27:50,451 --> 02:27:52,451
+Okay.
+
+1304
+02:27:52,451 --> 02:27:55,451
+This is this is especially going to be useful.
+
+1305
+02:27:55,451 --> 02:27:57,451
+You will not use the same as the length of you square.
+
+1306
+02:27:57,451 --> 02:28:02,451
+That's the length of you square.
+
+1307
+02:28:01,907 --> 02:28:05,007
+Okay, now let's think of vector projection.
+
+1308
+02:28:06,067 --> 02:28:12,647
+Let's say we have a vector u, this way, pq, or this way, pq.
+
+1309
+02:28:13,567 --> 02:28:19,067
+Vector u, and we have another vector v, we take the projection of u onto v.
+
+1310
+02:28:19,448 --> 02:28:28,647
+By projection, we mean draw a perpendicular line from the terminal point of the vector u to the line containing the vector v.
+
+1311
+02:28:28,647 --> 02:28:35,787
+That's going to give us a point r, then that vector pr is the projection of pq to v.
+
+1312
+02:28:36,287 --> 02:28:37,467
+The same in this picture.
+
+1313
+02:28:38,188 --> 02:28:44,087
+Take the vector pq, u, and take the vector v and draw the line containing the vector v.
+
+1314
+02:28:44,927 --> 02:28:52,907
+Draw the perpendicular line from q, the terminal point of u, to the line containing v, call that point r,
+
+1315
+02:28:53,327 --> 02:28:57,247
+then that vector pr is called the projection of u onto v.
+
+1316
+02:28:57,247 --> 02:29:03,247
+And it's denoted by this projection, the vector projection of u onto v.
+
+1317
+02:29:06,108 --> 02:29:08,067
+And how do we obtain it?
+
+1318
+02:29:08,067 --> 02:29:11,067
+So...
+
+1319
+02:29:14,995 --> 02:29:24,015
+This one, on this picture, in the first picture, if this is a, I mean, if the angle between U and V is less than 90 degrees here,
+
+1320
+02:29:26,355 --> 02:29:30,255
+then on this triangle, what do we get?
+
+1321
+02:29:30,735 --> 02:29:38,935
+The length of the projection vector, the length of the projection vector is the same as the length of U times cosine theta.
+
+1322
+02:29:39,495 --> 02:29:41,255
+This, length of U times cosine theta.
+
+1323
+02:29:41,695 --> 02:29:43,155
+That's the length of the projection vector.
+
+1324
+02:29:43,155 --> 02:29:49,075
+On the other hand, on this picture, if the angle between U and V is bigger than 90 degrees,
+
+1325
+02:29:49,855 --> 02:29:56,036
+then the length of the projection vector, PR over here, is going to be now,
+
+1326
+02:29:57,275 --> 02:30:03,795
+on this triangle, is going to be length of U times cosine of 180 degrees minus theta.
+
+1327
+02:30:04,315 --> 02:30:07,635
+Cosine of 180 minus theta is the same as minus cosine theta.
+
+1328
+02:30:07,635 --> 02:30:13,655
+So we get this minus length of U times cosine theta, if this is the case, in the second case.
+
+1329
+02:30:13,655 --> 02:30:15,495
+So,
+
+1330
+02:30:15,495 --> 02:30:21,355
+And what is the, so it is its length.
+
+1331
+02:30:22,735 --> 02:30:23,675
+Length is this.
+
+1332
+02:30:23,775 --> 02:30:24,895
+How about the direction?
+
+1333
+02:30:25,315 --> 02:30:27,515
+So now, take V.
+
+1334
+02:30:27,515 --> 02:30:30,615
+If we divide V by its length,
+
+1335
+02:30:32,355 --> 02:30:36,095
+this, divide V by its length, we will get a unit vector in this direction.
+
+1336
+02:30:36,795 --> 02:30:37,955
+Unit vector in this direction.
+
+1337
+02:30:39,095 --> 02:30:42,495
+So, unit vector in this, in the direction of PR.
+
+1338
+02:30:42,835 --> 02:30:44,655
+This is a unit vector in the direction of PR.
+
+1339
+02:30:45,036 --> 02:30:46,655
+Multiply that by length of PR.
+
+1340
+02:30:47,055 --> 02:30:48,115
+Length of PR is this.
+
+1341
+02:30:48,755 --> 02:30:51,036
+Multiply this by the length of PR.
+
+1342
+02:30:51,036 --> 02:30:53,095
+This, this is what we get.
+
+1343
+02:30:53,335 --> 02:30:56,435
+Length of U cosine theta times V over the length of V.
+
+1344
+02:30:57,655 --> 02:30:58,875
+In the second case,
+
+1345
+02:30:59,536 --> 02:31:02,795
+we say that the length of the projection vector is this.
+
+1346
+02:31:04,495 --> 02:31:11,540
+How about the direction?
+
+1347
+02:31:16,531 --> 02:31:24,031
+So here again, this vector is a vector, a unit vector in the direction of V, but PR is no opposite direction.
+
+1348
+02:31:24,152 --> 02:31:27,751
+So a unit vector in the direction of PR is this one.
+
+1349
+02:31:28,231 --> 02:31:31,311
+This one is a unit vector in the direction of PR.
+
+1350
+02:31:32,111 --> 02:31:35,391
+Multiply that by the length of PR. Length of PR is this.
+
+1351
+02:31:36,072 --> 02:31:38,391
+So when we multiply these two, we get the same thing.
+
+1352
+02:31:39,031 --> 02:31:46,271
+So in both cases, in both cases, the projection vector PR can be represented with this.
+
+1353
+02:31:46,531 --> 02:31:47,871
+It's always equal to this one.
+
+1354
+02:31:49,471 --> 02:31:50,251
+And what is that?
+
+1355
+02:31:51,171 --> 02:31:52,471
+Just look at this.
+
+1356
+02:31:52,951 --> 02:32:00,031
+This is this length of U cosine theta.
+
+1357
+02:32:00,551 --> 02:32:05,471
+Length of U cosine theta just multiplied by length of V and divide by length of V.
+
+1358
+02:32:05,831 --> 02:32:07,791
+Just multiply and divide by length of V.
+
+1359
+02:32:08,051 --> 02:32:08,731
+We get this.
+
+1360
+02:32:09,111 --> 02:32:09,851
+And what is this?
+
+1361
+02:32:10,331 --> 02:32:12,471
+Length of U, length of V cosine theta.
+
+1362
+02:32:12,751 --> 02:32:13,631
+This is U dot V.
+
+1363
+02:32:13,631 --> 02:32:17,551
+Length of U, length of V cosine theta.
+
+1364
+02:32:17,551 --> 02:32:41,691
+Length of U cosine theta.
+
+1365
+02:32:23,028 --> 02:32:27,407
+Lenght of u, Lenght of v times cosine theta, is equal to the dot product of u and v.
+
+1366
+02:32:32,788 --> 02:32:54,828
+So, what do we get? So, if you write u dot v in the numerator here, so this is, this in parentheses is the same as u dot v divided by length of v. So, this is u dot v divided by length of v times v divided by length of v. What do we get? u dot v divided by length of v squared times v.
+
+1367
+02:33:04,852 --> 02:33:05,311
+Ok.
+
+1368
+02:33:09,587 --> 02:33:14,227
+So this is what we get. This is the formula. The vector projection of u onto v is this vector.
+
+1369
+02:33:33,556 --> 02:33:34,015
+Ok.
+
+1370
+02:33:38,227 --> 02:33:39,268
+Let's see an example.
+
+1371
+02:33:57,396 --> 02:34:28,486
+Yeni Y
+
+1372
+02:34:34,739 --> 02:34:42,000
+Okay, what is u dot v? u dot v is 6, minus 6, minus 4, which is minus 4 here.
+
+1373
+02:34:42,659 --> 02:34:47,500
+What is v dot v? 1 plus 4 plus 4, it's length squared basically.
+
+1374
+02:34:48,039 --> 02:34:51,420
+We get this, times v itself, times the vector v.
+
+1375
+02:34:53,039 --> 02:35:02,420
+So we get, this is minus 4 over 9, minus 4 over 9 times the vector v, which is this vector, minus 4 over 9 i, plus 8 over 9 j, plus 8 over 9 k.
+
+1376
+02:35:04,739 --> 02:35:09,299
+And, yep.
+
+1377
+02:35:11,100 --> 02:35:13,579
+For example, that's it.
+
+1378
+02:35:14,199 --> 02:35:21,879
+I think that's enough for today, so we can, we will continue with cross product next Thursday.
+
+1379
+02:35:22,959 --> 02:35:25,739
+And probably we will finish chapter 12 next week.
+
+1380
+02:35:25,739 --> 02:35:32,539
+We have 12.5, we have 12.5, 12.6, I guess.
+
+1381
+02:35:33,319 --> 02:35:34,879
+Yeah, we will cover all next week.
+
+1382
+02:35:35,699 --> 02:35:36,639
+Okay, any questions?
+
+1383
+02:35:38,239 --> 02:35:41,139
+From, from everything we covered today?
+
+1384
+02:35:46,420 --> 02:35:54,040
+Alright, thank you all for listening. You all have a nice day. I'll see you all next Thursday then.
+
+1385
+02:35:57,620 --> 02:35:58,600
+Ve yorumlar, say bye.

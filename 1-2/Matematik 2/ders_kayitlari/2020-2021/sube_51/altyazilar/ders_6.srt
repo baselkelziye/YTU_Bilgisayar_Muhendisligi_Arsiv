@@ -1,0 +1,5779 @@
+1
+00:03:09,491 --> 00:03:10,951
+All right, good morning, everybody.
+
+2
+00:03:14,311 --> 00:03:15,852
+I think we can start.
+
+3
+00:03:17,111 --> 00:03:18,231
+Yes, that's enough.
+
+4
+00:03:19,531 --> 00:03:21,471
+So, we will continue with power series.
+
+5
+00:03:22,251 --> 00:03:26,351
+And I'm planning to finish chapter 10 today, basically.
+
+6
+00:03:33,812 --> 00:03:36,432
+Okay, let's start with this definition, the power series.
+
+7
+00:03:41,587 --> 00:03:50,548
+So a sum of this form, C0 plus C1x plus C2x squared plus dot dot dot Cnx to the power n plus dot dot dot.
+
+8
+00:03:51,507 --> 00:03:54,548
+So sum n equals 0 to infinity Cnx to the power n.
+
+9
+00:03:54,807 --> 00:03:57,367
+This is called the power series about x equals 0.
+
+10
+00:03:58,647 --> 00:04:04,668
+Basically, if you think of this without this dot dot dot, just ignore this.
+
+11
+00:04:04,967 --> 00:04:07,228
+This is just a polynomial, right?
+
+12
+00:04:07,367 --> 00:04:08,307
+That's what we know.
+
+13
+00:04:08,307 --> 00:04:17,168
+Now, you know, polynomials, polynomials, polynomial of indeterminate variable x looks like this, right?
+
+14
+00:04:17,247 --> 00:04:18,168
+It looks like this.
+
+15
+00:04:18,707 --> 00:04:20,327
+So this just looks like a polynomial.
+
+16
+00:04:21,228 --> 00:04:36,487
+But if we make it infinite, if you make this n equals 0 to infinity, if you make an infinite sum of powers of x with some coefficients in front of them, that's called the power series.
+
+17
+00:04:36,487 --> 00:04:42,108
+In general, so this is a power series about x equals 0.
+
+18
+00:04:42,207 --> 00:04:50,168
+In general, a power series about x equals a is, instead of x here, just replace x with x minus a.
+
+19
+00:04:51,048 --> 00:04:53,627
+That's called a power series about x equals a.
+
+20
+00:04:53,927 --> 00:04:59,148
+So it looks like C0 plus C1 times x minus a plus C2 times x minus a squared plus and so on.
+
+21
+00:04:59,148 --> 00:05:04,048
+Here, this number a is called the center of this power series.
+
+22
+00:05:04,268 --> 00:05:08,768
+So we will see in a moment why that word center is chosen.
+
+23
+00:05:09,608 --> 00:05:13,007
+And these numbers, C0, C1, C2, and so on, are called the coefficients.
+
+24
+00:05:13,788 --> 00:05:14,608
+These are constants.
+
+25
+00:05:14,788 --> 00:05:16,087
+These are constant real numbers.
+
+26
+00:05:16,768 --> 00:05:21,127
+As I said, this is just like a polynomial with infinitely many terms.
+
+27
+00:05:21,127 --> 00:05:26,587
+And again, let's go back to polynomials.
+
+28
+00:05:26,908 --> 00:05:31,867
+If I had a polynomial, just polynomial of degree n, forget about this, the rest.
+
+29
+00:05:32,268 --> 00:05:39,087
+If I had a polynomial of degree n, now what's the domain of, if you think of it as a polynomial function of x,
+
+30
+00:05:39,148 --> 00:05:41,687
+the domain of that function is the whole real numbers.
+
+31
+00:05:41,687 --> 00:05:45,247
+Because here we have n plus 1 terms.
+
+32
+00:05:45,608 --> 00:05:50,747
+So no matter what the value of x is, I can add those n plus 1 numbers.
+
+33
+00:05:50,867 --> 00:05:52,108
+I will get a number at the end.
+
+34
+00:05:52,467 --> 00:05:56,168
+No matter what the coefficients are and no matter what the value of x is,
+
+35
+00:05:56,408 --> 00:05:58,288
+I can add these numbers and get a number.
+
+36
+00:05:58,668 --> 00:05:59,728
+There is no problem there.
+
+37
+00:06:00,487 --> 00:06:02,408
+But when we make it an infinite sum,
+
+38
+00:06:02,408 --> 00:06:08,927
+Now, if I replace x with a specific real number,
+
+39
+00:06:09,727 --> 00:06:11,867
+if I replace x with a specific real number,
+
+40
+00:06:12,347 --> 00:06:14,507
+this sum is going to become an infinite series.
+
+41
+00:06:15,548 --> 00:06:16,807
+And that infinite series,
+
+42
+00:06:17,627 --> 00:06:20,847
+the sum of that infinite series may be equal to a number
+
+43
+00:06:20,847 --> 00:06:22,627
+or it may not be equal to a number.
+
+44
+00:06:22,887 --> 00:06:24,007
+It may converge.
+
+45
+00:06:24,288 --> 00:06:25,187
+It may diverge.
+
+46
+00:06:25,847 --> 00:06:26,367
+We don't know.
+
+47
+00:06:26,927 --> 00:06:29,567
+So depending on the value of x,
+
+48
+00:06:30,048 --> 00:06:31,467
+depending on the value of x,
+
+49
+00:06:31,467 --> 00:06:35,487
+this infinite series may converge, may diverge.
+
+50
+00:06:36,087 --> 00:06:39,947
+So the main question about the power series is that
+
+51
+00:06:39,947 --> 00:06:42,048
+for what values of x,
+
+52
+00:06:42,627 --> 00:06:47,747
+for what values of x does this power series converge to a number?
+
+53
+00:06:48,168 --> 00:06:50,727
+And for what values of x does it diverge?
+
+54
+00:06:52,467 --> 00:06:55,727
+So that for those values of x, it converges,
+
+55
+00:06:56,388 --> 00:06:58,447
+I can define it as a function of x.
+
+56
+00:06:58,447 --> 00:06:59,968
+As a function,
+
+57
+00:07:00,048 --> 00:07:01,888
+I can define this as a function of x,
+
+58
+00:07:01,947 --> 00:07:05,587
+whose domain is the set of values of x
+
+59
+00:07:05,587 --> 00:07:08,327
+for which this infinite series converges.
+
+60
+00:07:10,487 --> 00:07:11,908
+So, for example,
+
+61
+00:07:12,908 --> 00:07:15,768
+of course, this is just a special case of this.
+
+62
+00:07:15,827 --> 00:07:16,827
+This is the general case.
+
+63
+00:07:16,827 --> 00:07:18,548
+If you take a equals zero here,
+
+64
+00:07:18,967 --> 00:07:19,728
+you get this one.
+
+65
+00:07:20,327 --> 00:07:20,628
+Thank you.
+
+66
+00:07:24,980 --> 00:07:27,980
+Okay, so let's look at this first example.
+
+67
+00:07:28,500 --> 00:07:34,280
+İngiltere görevli bir şey.
+
+68
+00:07:34,480 --> 00:07:38,960
+Bir şey.
+
+69
+00:07:40,319 --> 00:07:41,360
+İngiltere görevli bir şey.
+
+70
+00:07:42,720 --> 00:08:28,220
+Bir şey.
+
+71
+00:08:28,220 --> 00:08:29,220
+R.
+
+72
+00:08:29,220 --> 00:10:03,220
+Bir şey.
+
+73
+00:10:03,220 --> 00:10:04,220
+is.
+
+74
+00:10:04,220 --> 00:10:05,220
+Bir şey.
+
+75
+00:10:08,628 --> 00:10:14,248
+So basically we can visualize it like this, but think of the partial sums, one, one plus
+
+76
+00:10:14,248 --> 00:10:19,528
+x, then one plus x plus x squared, then one plus x plus x squared plus x cubed and so
+
+77
+00:10:19,528 --> 00:10:20,528
+on.
+
+78
+00:10:20,528 --> 00:10:29,948
+When you think of the graphs of these functions here, so this is one, this is the graph of
+
+79
+00:10:29,948 --> 00:10:35,807
+one plus x, this is the graph of one plus x plus x squared and so on.
+
+80
+00:10:35,807 --> 00:10:40,208
+And so, for example, y eight, the eighth partial sum one plus x plus x squared plus x cubed
+
+81
+00:10:40,208 --> 00:10:42,048
+plus x to power four and so on.
+
+82
+00:10:42,048 --> 00:10:43,868
+This one.
+
+83
+00:10:43,868 --> 00:10:46,228
+This purple one.
+
+84
+00:10:46,228 --> 00:10:52,448
+So as you see these functions, these functions y equals one y equals one plus x y equals one
+
+85
+00:10:52,448 --> 00:10:56,828
+plus x plus x squared y plus one plus x plus x squared plus x cubed and so on.
+
+86
+00:10:56,828 --> 00:11:02,168
+These functions converge to this blue function over here, the blue function is this one over
+
+87
+00:11:02,168 --> 00:11:03,927
+one minus x.
+
+88
+00:11:03,927 --> 00:11:09,488
+These functions get close and close to this where, of course, between minus one and one
+
+89
+00:11:09,488 --> 00:11:14,408
+only in this one interval, only in this interval between minus one and one outside it.
+
+90
+00:11:14,408 --> 00:11:16,168
+Of course, they're not equal to that function.
+
+91
+00:11:16,168 --> 00:11:20,228
+They're not going to converge to that function.
+
+92
+00:11:20,228 --> 00:11:22,788
+Let's see another example.
+
+93
+00:11:22,788 --> 00:11:27,228
+Here's an example there Center is not zero.
+
+94
+00:11:27,228 --> 00:11:28,448
+The center is too.
+
+95
+00:11:28,448 --> 00:11:33,548
+So think of this one minus one over two x minus two plus one over four x minus two squared plus
+
+96
+00:11:33,548 --> 00:11:34,408
+and so on.
+
+97
+00:11:34,408 --> 00:11:38,608
+The general term is minus one over two to the power n x minus two to the power n.
+
+98
+00:11:38,608 --> 00:11:40,548
+So again, this is a geometric series.
+
+99
+00:11:40,548 --> 00:11:46,888
+So of course, this is like, this is a power series whose coefficients are one minus one
+
+100
+00:11:46,888 --> 00:11:49,248
+over two one over four and so on.
+
+101
+00:11:49,248 --> 00:11:55,307
+These are the coefficients whose a value is two because we get powers of x minus two x minus
+
+102
+00:11:55,307 --> 00:11:57,307
+two squared x minus two power n and so on.
+
+103
+00:11:57,307 --> 00:12:04,508
+So this is a geometric series whose first term is one and whose ratio is this.
+
+104
+00:12:04,508 --> 00:12:09,388
+So note that we keep multiplying by minus one over two right minus one over two one over
+
+105
+00:12:09,388 --> 00:12:12,288
+four minus one over eight and so on this term.
+
+106
+00:12:12,288 --> 00:12:16,848
+And also we keep multiplying with x minus two x minus two x minus two squared x minus two
+
+107
+00:12:16,848 --> 00:12:17,848
+and so on.
+
+108
+00:12:17,848 --> 00:12:22,168
+So it's it's ratio is minus one over two times x minus two.
+
+109
+00:12:22,168 --> 00:12:28,528
+So each term actually each term is minus one over two times x minus two times the previous
+
+110
+00:12:28,528 --> 00:12:29,927
+term.
+
+111
+00:12:29,927 --> 00:12:35,768
+So we know when a geometric series converges we know that a geometric series converges if it's
+
+112
+00:12:35,768 --> 00:12:40,908
+our value this is the absolute values less than one this.
+
+113
+00:12:40,908 --> 00:12:45,028
+So absolute value of x minus two over two is less than one means that absolute value of
+
+114
+00:12:45,028 --> 00:12:51,548
+x minus two is less than two, which means x minus two is between minus two and two.
+
+115
+00:12:51,548 --> 00:12:55,368
+Therefore, when we add two to everything, it means x is between zero and four.
+
+116
+00:12:55,368 --> 00:12:59,168
+And we solve this inequality basically we get this.
+
+117
+00:12:59,168 --> 00:13:07,548
+So this power series over here converges when x is between zero and four and where does it
+
+118
+00:13:07,548 --> 00:13:13,868
+converge it converges to a over one minus r which is one over one minus one minus this,
+
+119
+00:13:13,868 --> 00:13:18,068
+which becomes one plus x minus two over two and when we simplify get this we get two over
+
+120
+00:13:18,067 --> 00:13:19,067
+x.
+
+121
+00:13:19,067 --> 00:13:24,567
+So whenever x is between zero and four this power series converges and it converges to two
+
+122
+00:13:24,567 --> 00:13:26,567
+over x.
+
+123
+00:13:26,567 --> 00:13:27,567
+and look at this.
+
+124
+00:13:27,567 --> 00:13:39,567
+So if we look at this.
+
+125
+00:13:34,388 --> 00:13:35,807
+So think about this interval.
+
+126
+00:13:37,648 --> 00:13:40,908
+Interval where this power series converges.
+
+127
+00:13:41,307 --> 00:13:42,768
+It's between 0 and 4.
+
+128
+00:13:43,148 --> 00:13:45,088
+And what is the center of this interval?
+
+129
+00:13:45,588 --> 00:13:49,848
+The center of this interval, I mean, the midpoint of 0 and 4.
+
+130
+00:13:50,008 --> 00:13:52,548
+The midpoint of 0 and 4 is 2, right?
+
+131
+00:13:52,947 --> 00:13:54,508
+2, which is this a-value.
+
+132
+00:13:54,508 --> 00:13:58,608
+It's the center of the power series.
+
+133
+00:13:59,248 --> 00:14:01,508
+So this is not just a coincidence.
+
+134
+00:14:01,508 --> 00:14:05,948
+I mean, we will see that it's always going to be like that.
+
+135
+00:14:07,408 --> 00:14:10,508
+Wherever we will get an interval,
+
+136
+00:14:11,888 --> 00:14:15,508
+which we will call the interval of convergence of the power series.
+
+137
+00:14:15,908 --> 00:14:18,288
+And we will see that whatever that interval is,
+
+138
+00:14:18,288 --> 00:14:26,108
+the center of the midpoint of that interval is going to be this a-value,
+
+139
+00:14:26,408 --> 00:14:31,248
+the center of the power series.
+
+140
+00:14:31,508 --> 00:14:32,008
+So,
+
+141
+00:14:32,008 --> 00:14:35,948
+we will see that the interval is going to be the center of the power series.
+
+142
+00:14:35,948 --> 00:14:37,008
+So,
+
+143
+00:14:37,008 --> 00:14:39,948
+we will see that the interval is going to be the center of the power series.
+
+144
+00:14:39,948 --> 00:14:41,008
+So,
+
+145
+00:14:41,008 --> 00:14:44,008
+we will see that the interval is going to be the center of the power series.
+
+146
+00:14:44,008 --> 00:14:45,008
+So,
+
+147
+00:14:45,008 --> 00:14:47,008
+we will see that the interval is going to be the center of the power series.
+
+148
+00:14:47,008 --> 00:14:48,008
+So,
+
+149
+00:14:48,008 --> 00:14:50,008
+we will see that the interval is going to be the center of the power series.
+
+150
+00:14:50,008 --> 00:14:51,008
+So,
+
+151
+00:14:51,008 --> 00:14:53,008
+we will see that the interval is going to be the center of the power series.
+
+152
+00:14:38,676 --> 00:14:44,396
+So, let's look at these examples or
+
+153
+00:14:48,755 --> 00:14:50,755
+No, before looking at this example...
+
+154
+00:14:55,316 --> 00:14:59,256
+Evet, before that example, the Convergence Theorem for Power Series, let's see.
+
+155
+00:15:00,576 --> 00:15:02,355
+Radius of Convergence of a Power Series.
+
+156
+00:15:02,516 --> 00:15:04,816
+Okay, let me explain this on the board.
+
+157
+00:15:05,656 --> 00:15:07,296
+I will go back to the examples.
+
+158
+00:15:16,052 --> 00:15:17,711
+Ok, I'll go back to this example.
+
+159
+00:15:50,100 --> 00:15:50,540
+Ok.
+
+160
+00:16:15,124 --> 00:16:17,124
+0'ı infinity
+
+161
+00:16:17,124 --> 00:16:21,124
+x to the power x minus a to the power n
+
+162
+00:16:21,124 --> 00:16:23,124
+we have power series
+
+163
+00:16:28,052 --> 00:16:31,611
+Bu, birçok kaseye,
+
+164
+00:16:33,091 --> 00:16:35,611
+bu,
+
+165
+00:16:38,012 --> 00:16:39,812
+konvergenin,
+
+166
+00:16:43,860 --> 00:16:45,960
+ve, in total olamıyorum.
+
+167
+00:16:55,283 --> 00:17:25,284
+Bu konvergendenin bir konvergendenin bir konvergendenin bir konvergendenin bir konvergendenin bir konvergendenin bir konvergendenin bir konvergendenin bir konvergendenin bir konvergendenin bir konvergendenin bir konvergendenin bir konvergendenin bir konvergendenin bir konvergendenin bir konvergendenin bir konvergendenin bir konvergendenin bir konvergendenin bir konvergendenin bir konvergendenin bir konvergendenin bir konvergendenin bir konvergendenin bir konvergendenin bir konvergendenin bir konvergendenin bir konvergendenin bir konvergendenin bir konvergendenin bir konvergendenin bir konvergendenin bir konvergendenin bir konvergendenin bir konvergendenin bir konvergendenin bir konvergendenin bir
+
+168
+00:17:25,284 --> 00:17:55,284
+konvergendenin bir konvergendenin bir konvergendenin bir konvergendenin bir konvergendenin bir konvergendenin bir konvergendenin bir konvergendenin bir konvergendenin bir konvergendenin bir konvergendenin bir konvergendenin bir konvergendenin bir konvergendenin bir konvergendenin bir konvergendenin bir konvergendenin bir konvergendenin bir konvergendenin bir konvergendenin bir konvergendenin bir konvergendenin bir konvergendenin bir konvergendenin bir konvergendenin bir konvergendenin bir konvergendenin bir konvergendenin bir konvergendenin bir konvergendenin bir konvergendenin bir konvergendenin bir konvergendenin bir konvergendenin bir konvergendenin bir konvergendenin bir konvergendenin
+
+169
+00:17:55,284 --> 00:18:25,284
+bir konvergendenin bir konvergendenin bir konvergendenin bir konvergendenin bir konvergendenin bir konvergendenin bir konvergendenin bir konvergendenin bir konvergendenin bir konvergendenin bir konvergendenin bir konvergendenin bir konvergendenin bir konvergendenin bir konvergendenin bir konvergendenin bir konvergendenin bir konvergendenin bir konvergendenin bir konvergendenin bir konvergendenin bir konvergendenin bir konvergendenin bir konvergendenin bir konvergendenin bir konvergendenin bir konvergendenin bir konvergendenin bir konvergendenin bir konvergendenin bir konvergendenin bir konvergendenin bir konvergendenin bir konvergendenin bir konvergendenin bir konvergendenin bir konvergenden
+
+170
+00:18:25,284 --> 00:18:55,284
+konvergendenin bir konvergendenin bir konvergendenin bir konvergendenin bir konvergendenin bir konvergendenin bir konvergendenin bir konvergendenin bir konvergendenin bir konvergendenin bir konvergendenin bir konvergendenin bir konvergendenin bir konvergendenin bir konvergendenin bir konvergendenin bir konvergendenin bir konvergendenin bir konvergendenin bir konvergendenin bir konvergendenin bir konvergendenin bir konvergendenin bir konvergendenin bir konvergendenin bir konvergendenin bir konvergendenin bir konvergendenin bir konvergendenin bir konvergendenin bir konvergendenin bir konvergendenin bir konvergendenin bir konvergendenin bir konvergendenin bir konvergendenin bir konvergendenin
+
+171
+00:18:55,284 --> 00:19:01,673
+bir konvergendenin bir konvergendenin bir konvergendenin bir konvergendenin bir konvergendenin bir konvergendenin bir konvergendenin bir konvergendenin bir konvergendenin bir konvergendenin bir konvergendenin bir konvergendenin bir konvergendenin bir konvergendenin bir konvergendenin bir konvergendenin bir konvergendenin bir konvergendenin bir konvergendenin bir konvergendenin bir konvergendenin bir konvergendenin bir konvergendenin bir konvergendenin bir konvergendenin bir konvergendenin bir konvergendenin bir konvergendenin bir konvergenden bir konvergenden bir konvergenden bir konvergenden bir konvergenden bir konvergenden bir konvergenden bir konvergenden bir konvergenden bir konvergenden bir konver
+
+172
+00:19:07,827 --> 00:19:09,827
+Bu da bu 6 tz.
+
+173
+00:19:13,364 --> 00:19:15,044
+Ok, rate result convergence.
+
+174
+00:19:22,324 --> 00:19:24,324
+Interval of convergence
+
+175
+00:19:40,339 --> 00:19:41,099
+O, da ne graf?
+
+176
+00:19:50,195 --> 00:19:53,215
+Let me fill this in a little bit.
+
+177
+00:21:53,652 --> 00:21:54,412
+Çin yukarı.
+
+178
+00:22:03,059 --> 00:22:13,980
+Ok, for the radius of convergence, we can think of these three cases. Radius of convergence can be zero, it can be infinity, or it can be any positive real number.
+
+179
+00:22:15,240 --> 00:22:20,720
+And if it is this case, in this case, for the interval of convergence, there are four cases.
+
+180
+00:22:21,740 --> 00:22:26,720
+So if the interval of convergence is a positive real number, these are the four cases.
+
+181
+00:22:32,756 --> 00:22:42,236
+It means that the series converges between A-R and A-R.
+
+182
+00:22:43,436 --> 00:22:46,556
+Between A-R and A-R, the series converges.
+
+183
+00:22:47,196 --> 00:22:51,396
+At the endpoints, it may converge, it may diverge.
+
+184
+00:22:51,476 --> 00:22:52,556
+So there are four cases.
+
+185
+00:22:53,456 --> 00:22:56,156
+It may converge on both endpoints.
+
+186
+00:22:56,156 --> 00:23:03,076
+Or it may converge on the left-end point, but not on the right-end point.
+
+187
+00:23:05,876 --> 00:23:09,416
+It may converge on the right-end point, but not on the left-end point.
+
+188
+00:23:10,076 --> 00:23:15,836
+Or it may converge, may diverge on both endpoints.
+
+189
+00:23:16,355 --> 00:23:17,696
+So we have four cases.
+
+190
+00:23:19,615 --> 00:23:22,916
+So here, this is how the graph looks like.
+
+191
+00:23:23,376 --> 00:23:24,976
+This is the center, A.
+
+192
+00:23:24,976 --> 00:23:29,096
+So the interval of convergence is between A-R and A-R.
+
+193
+00:23:29,576 --> 00:23:31,256
+In this case, including both.
+
+194
+00:23:32,196 --> 00:23:35,596
+A-R, A-R.
+
+195
+00:23:37,296 --> 00:23:38,416
+It's like this.
+
+196
+00:23:41,076 --> 00:23:44,396
+Or it could be like this one.
+
+197
+00:23:44,696 --> 00:23:51,496
+It's between A-R and A-R.
+
+198
+00:23:51,496 --> 00:23:53,336
+where A-R is not included.
+
+199
+00:23:53,336 --> 00:23:54,036
+In this case.
+
+200
+00:23:55,135 --> 00:24:03,716
+Or it could be the case that the interval of convergence is between A-R and A-R.
+
+201
+00:24:05,716 --> 00:24:08,016
+Where A-R is included in this case.
+
+202
+00:24:08,096 --> 00:24:09,016
+A-R is not.
+
+203
+00:24:09,016 --> 00:24:16,996
+Or it could be the case that none of the endpoints are included.
+
+204
+00:24:19,816 --> 00:24:25,456
+And both examples we have seen fit in this category.
+
+205
+00:24:25,456 --> 00:24:29,416
+The series we have seen.
+
+206
+00:24:29,776 --> 00:24:30,576
+The geometric series.
+
+207
+00:24:30,696 --> 00:24:31,736
+Both were geometric series.
+
+208
+00:24:32,115 --> 00:24:33,635
+They diverged at that point.
+
+209
+00:24:33,796 --> 00:24:34,496
+At both endpoints.
+
+210
+00:24:35,556 --> 00:24:36,556
+So these are the cases.
+
+211
+00:24:38,855 --> 00:24:39,976
+These are the four cases.
+
+212
+00:24:41,056 --> 00:24:44,115
+If the radius of convergence is a positive real number.
+
+213
+00:24:44,115 --> 00:24:48,236
+Now the next case is that the interval of convergence is infinite.
+
+214
+00:24:48,796 --> 00:24:50,615
+If the interval of convergence is infinite.
+
+215
+00:24:50,856 --> 00:24:53,416
+It means that the series.
+
+216
+00:24:53,756 --> 00:24:55,396
+Power series converges everywhere.
+
+217
+00:24:56,256 --> 00:24:58,556
+It converges for every value of x.
+
+218
+00:24:59,436 --> 00:25:00,076
+In this case.
+
+219
+00:25:01,456 --> 00:25:03,396
+So A is the center.
+
+220
+00:25:03,676 --> 00:25:05,096
+No matter where A is.
+
+221
+00:25:06,976 --> 00:25:07,876
+It converges everywhere.
+
+222
+00:25:08,356 --> 00:25:09,896
+For all reasons.
+
+223
+00:25:09,896 --> 00:25:13,936
+If the interval of convergence is zero.
+
+224
+00:25:14,556 --> 00:25:15,436
+It means that.
+
+225
+00:25:16,716 --> 00:25:19,756
+It converges at only the center.
+
+226
+00:25:21,115 --> 00:25:21,516
+No matter where.
+
+227
+00:25:23,796 --> 00:25:24,996
+Converges at the center.
+
+228
+00:25:25,196 --> 00:25:27,496
+But not at any other point.
+
+229
+00:25:28,356 --> 00:25:30,115
+And when you think of this.
+
+230
+00:25:30,976 --> 00:25:31,916
+When you think of this.
+
+231
+00:25:32,416 --> 00:25:34,276
+It always converges at the center.
+
+232
+00:25:34,676 --> 00:25:34,876
+Right?
+
+233
+00:25:36,336 --> 00:25:36,916
+Let's.
+
+234
+00:25:37,096 --> 00:25:37,456
+Let me.
+
+235
+00:25:37,456 --> 00:25:40,615
+Let's think of this.
+
+236
+00:25:40,896 --> 00:25:41,416
+Power series.
+
+237
+00:25:41,536 --> 00:25:41,976
+What is it?
+
+238
+00:25:42,096 --> 00:25:44,716
+It's C plus C1 X minus A.
+
+239
+00:25:44,996 --> 00:25:47,216
+Plus C2 X minus A squared.
+
+240
+00:25:47,556 --> 00:25:49,736
+Plus C3 X minus A cubed.
+
+241
+00:25:50,956 --> 00:25:51,836
+And so on.
+
+242
+00:25:52,016 --> 00:25:52,236
+Right?
+
+243
+00:25:53,216 --> 00:25:54,996
+So when X is equal to A.
+
+244
+00:25:55,396 --> 00:25:56,736
+When X is equal to A.
+
+245
+00:25:57,136 --> 00:25:58,196
+When X is the center.
+
+246
+00:25:59,216 --> 00:26:00,115
+What do we get?
+
+247
+00:26:00,476 --> 00:26:01,236
+X minus A.
+
+248
+00:26:01,376 --> 00:26:01,615
+Zero.
+
+249
+00:26:01,916 --> 00:26:02,716
+X minus A squared.
+
+250
+00:26:02,836 --> 00:26:03,916
+Zero.
+
+251
+00:26:04,356 --> 00:26:05,316
+All terms.
+
+252
+00:26:05,496 --> 00:26:06,876
+Except for this first one.
+
+253
+00:26:07,456 --> 00:26:08,716
+is constant term.
+
+254
+00:26:09,496 --> 00:26:09,916
+C0.
+
+255
+00:26:10,316 --> 00:26:11,556
+Except for C0.
+
+256
+00:26:11,976 --> 00:26:13,236
+Everything else will be zero.
+
+257
+00:26:13,436 --> 00:26:15,416
+And of course it's going to converge to C0.
+
+258
+00:26:15,636 --> 00:26:16,396
+C0 is a number.
+
+259
+00:26:17,576 --> 00:26:22,016
+So a power series always converges at its center.
+
+260
+00:26:22,456 --> 00:26:25,096
+But starting from its center.
+
+261
+00:26:26,016 --> 00:26:28,136
+The interval of convergence expands.
+
+262
+00:26:28,135 --> 00:26:29,135
+is a number of the first two.
+
+263
+00:26:29,135 --> 00:26:45,635
+The interval of the first two.
+
+264
+00:26:28,627 --> 00:26:58,627
+Bu, bu
+
+265
+00:26:58,627 --> 00:27:05,187
+So, let's go back to the examples.
+
+266
+00:27:11,284 --> 00:27:41,284
+Bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örne
+
+267
+00:27:41,284 --> 00:28:02,484
+a power series, so x is a variable there, x may take positive values, negative values, right? So we cannot directly apply a ratio test, root test, or some other test to a power series, because x is a variable, x may be negative, positive, so those terms may be positive, may be negative, we don't know whether all of them are positive or not.
+
+268
+00:28:02,484 --> 00:28:13,484
+But if you look at the series of absolute values, if you look at, if you take the absolute value of each term, they are all going to be non-negative, and we can apply the ratio root test in that case.
+
+269
+00:28:14,064 --> 00:28:21,824
+So we apply the ratio test and find the interval of convergence, interval where the series converges absolutely. It will look like this.
+
+270
+00:28:21,824 --> 00:28:33,403
+And then, if the interval of the absolute convergence is finite, then we test the endpoints, both endpoints, the left endpoint and the right endpoint.
+
+271
+00:28:33,403 --> 00:28:45,044
+So in that case, if the radius is finite, in the first case, we test the endpoints to see which of these four categories the interval of convergence fits in.
+
+272
+00:28:48,564 --> 00:29:07,044
+ve if the interval of absolute convergence is this, x is between a minus r and a plus r, the series always diverges for x minus a bigger than r. So it always diverges there. It does not even converge conditionally. So,
+
+273
+00:29:09,864 --> 00:29:18,384
+above the right endpoint and below the left endpoint, there is nothing else to be checked. The series diverges there. Let's look at these examples now.
+
+274
+00:29:21,715 --> 00:29:51,715
+Bu bir
+
+275
+00:29:51,715 --> 00:31:21,715
+bir bir
+
+276
+00:31:21,715 --> 00:31:51,315
+in terms of n it's independent of n here n approaches infinity as an approaches infinity this n over n plus one approaches one so the limit of the whole thing is absolute value of x as an approaches infinity what does the ratio test say the ratio test says that the series converges if that the limit of this is less than one so if that limit is less than one we say that the series converges which series the series of the absolute values
+
+277
+00:31:51,315 --> 00:32:20,596
+converges converges if the series of the series converges converges converges if the series converges converges if the series converges absolutely in this interval and therefore it diverges if absolute value of x is bigger than one so the only thing left is the endpoints at minus one and one we have to check whether the series converges or not
+
+278
+00:32:20,596 --> 00:32:42,596
+now at x equals one when x is one what do we get let's go back x is equal to one what do we get so this is one we get minus one to power n minus one over one over n basically when x is one we get one minus one over two plus one over three minus one over four and so on
+
+279
+00:32:42,596 --> 00:32:52,596
+we get this one we get this one we get this one we get this one we get this one we get this one minus one over two plus one over three minus one over four plus and so on which is the alternating harmonic series which we know is convergent converges
+
+280
+00:32:52,596 --> 00:33:10,596
+so when x is equal to one the series converges when x is equal to minus one what do we get when x is minus one we get minus one minus one over two minus one over three minus one over four minus one over five it will go like that
+
+281
+00:33:10,836 --> 00:33:18,016
+It's going to be minus 1, minus 1 over 2, minus 1 over 3, minus 1 over 4, minus, and so on, which is the negative of the harmonic series.
+
+282
+00:33:18,336 --> 00:33:24,236
+We know that the harmonic series diverges to infinity, so this series is going to diverge to negative infinity, basically.
+
+283
+00:33:24,895 --> 00:33:29,895
+So therefore, the interval of convergence of this power series is this.
+
+284
+00:33:30,516 --> 00:33:34,016
+So when x is between minus 1 and 1, it converges.
+
+285
+00:33:34,516 --> 00:33:38,155
+At the right-hand point, when x is equal to 1, it converges here.
+
+286
+00:33:38,155 --> 00:33:41,435
+When x is equal to minus 1 at the left-hand point, it diverges.
+
+287
+00:33:42,056 --> 00:33:46,115
+So it includes the right-hand point, it excludes the left-hand point.
+
+288
+00:33:46,256 --> 00:33:50,256
+This is the interval of convergence of this power series.
+
+289
+00:33:52,956 --> 00:33:53,935
+Next example.
+
+290
+00:33:59,539 --> 00:34:11,239
+Next example, minus 1 to the power n minus, and, okay, we'll see later today, probably, that this series converges to ln 1 plus x.
+
+291
+00:34:13,179 --> 00:34:19,699
+We'll see that later. Now, minus 1 to the power n minus 1, x to the power 2n minus 1 over 2n minus 1.
+
+292
+00:34:19,699 --> 00:34:25,719
+Again, the same procedure. Apply the ratio test to the absolute values.
+
+293
+00:34:25,719 --> 00:34:38,320
+If you call this ln, its absolute value is going to be absolute value of, absolute value of this part is just 1, absolute value of x to the power 2n minus 1.
+
+294
+00:34:42,164 --> 00:34:43,903
+2N-1.
+
+295
+00:34:44,324 --> 00:34:50,403
+Bu ne?
+
+296
+00:34:50,403 --> 00:34:50,844
+Be careful.
+
+297
+00:34:50,844 --> 00:35:11,844
+Bu ne?
+
+298
+00:35:11,844 --> 00:35:16,444
+Bided by x to the power of 2N-1 over 2N-1, which is UN.
+
+299
+00:35:16,444 --> 00:35:21,964
+And when we organize it like this, we get this.
+
+300
+00:35:21,964 --> 00:35:24,403
+And now, what is the absolute value of this?
+
+301
+00:35:24,403 --> 00:35:26,484
+Again, 2N-1, that's a positive number.
+
+302
+00:35:26,484 --> 00:35:29,724
+2N plus 1 is a positive number, because N is a positive number.
+
+303
+00:35:29,724 --> 00:35:31,204
+We get that.
+
+304
+00:35:31,204 --> 00:35:35,084
+Times here, x to the power of 2N-1 is cancelled, only x square is left.
+
+305
+00:35:35,084 --> 00:35:39,124
+And x square is, absolute value of x square is the same as x square.
+
+306
+00:35:39,124 --> 00:35:46,524
+And again, as N approaches infinity, as N approaches infinity, this part, 2N minus 1 over 2N plus
+
+307
+00:35:46,524 --> 00:35:47,724
+1, its limit is 1.
+
+308
+00:35:47,724 --> 00:35:51,724
+As N approaches infinity, therefore, the limit of this expression is x square.
+
+309
+00:35:51,724 --> 00:35:59,124
+So, again, by the ratio test, ratio test says that, look at the limit of this quotient.
+
+310
+00:35:59,124 --> 00:36:01,844
+If that limit is less than 1, the series converges.
+
+311
+00:36:02,684 --> 00:36:07,844
+So, we conclude that the series converges absolutely when this limit is less than 1.
+
+312
+00:36:07,844 --> 00:36:12,964
+And it diverges if that limit is bigger than 1.
+
+313
+00:36:12,964 --> 00:36:13,964
+Again.
+
+314
+00:36:13,964 --> 00:36:14,964
+And.
+
+315
+00:36:14,964 --> 00:36:16,244
+So, x square is less than 1.
+
+316
+00:36:16,244 --> 00:36:17,244
+When is x square less than 1?
+
+317
+00:36:17,244 --> 00:36:21,244
+X square is less than 1 means x is between minus 1 and 1.
+
+318
+00:36:21,244 --> 00:36:24,244
+Again, we get the same interval minus 1 and 1.
+
+319
+00:36:24,244 --> 00:36:27,244
+Now, we have to check the endpoints again.
+
+320
+00:36:27,244 --> 00:36:30,244
+When x is equal to 1, what do we get?
+
+321
+00:36:30,244 --> 00:36:31,244
+X is equal to 1.
+
+322
+00:36:31,244 --> 00:36:47,484
+We get 1 minus 1 over 3 plus 1 over 5 minus 1 over 7 plus and so on.
+
+323
+00:36:47,484 --> 00:36:50,684
+Then alternating series.
+
+324
+00:36:50,684 --> 00:36:57,504
+And again, if you think of the terms 1, 1 over 3, 1 over 5, 1 over 7, they're all positive.
+
+325
+00:36:57,504 --> 00:36:59,464
+They decrease and they approach 0.
+
+326
+00:36:59,464 --> 00:37:03,324
+So, all three conditions of the alternating series test are satisfied.
+
+327
+00:37:03,324 --> 00:37:07,664
+This series converges by the alternating series theorem.
+
+328
+00:37:07,664 --> 00:37:10,704
+And when x is minus 1, what do we get?
+
+329
+00:37:10,704 --> 00:37:18,744
+When x is minus 1, we get minus 1 plus 1 over 3 minus 1 over 5 plus 1 over 7 and so on.
+
+330
+00:37:18,744 --> 00:37:22,144
+We just get negative of this.
+
+331
+00:37:22,144 --> 00:37:25,264
+We just get minus minus this.
+
+332
+00:37:25,264 --> 00:37:27,024
+So, this one converges.
+
+333
+00:37:27,024 --> 00:37:28,664
+So, that one also converges.
+
+334
+00:37:28,664 --> 00:37:36,624
+Where whatever number this one converges, the other one converges to minus 1 times that.
+
+335
+00:37:36,624 --> 00:37:41,224
+So, this series over here in this example, it converges at both endpoints.
+
+336
+00:37:41,224 --> 00:37:45,544
+So, its interval of convergence is this, closed interval.
+
+337
+00:37:45,544 --> 00:37:50,544
+Both endpoints are in the interval of convergence.
+
+338
+00:37:50,544 --> 00:37:52,584
+This is also an important one.
+
+339
+00:37:52,584 --> 00:37:57,504
+We will see later that this is some of the series.
+
+340
+00:37:57,504 --> 00:37:59,944
+The series over here.
+
+341
+00:37:59,944 --> 00:38:01,784
+It's in its interval of convergence.
+
+342
+00:38:01,784 --> 00:38:04,304
+The series over here converges to tangent inverse x.
+
+343
+00:38:04,304 --> 00:38:08,304
+The arctangent x function.
+
+344
+00:38:08,304 --> 00:38:09,304
+Next one.
+
+345
+00:38:09,304 --> 00:38:11,064
+X to power n over n factorial.
+
+346
+00:38:11,064 --> 00:38:17,064
+This one plus x plus x square over 2 factorial plus x cube over 3 factorial and so on.
+
+347
+00:38:17,064 --> 00:38:21,064
+Again, apply the ratio test to the absolute values.
+
+348
+00:38:21,064 --> 00:38:22,744
+Series of absolute values.
+
+349
+00:38:22,744 --> 00:38:27,704
+The n plus 1 is x to power n plus 1 over n plus 1 factorial.
+
+350
+00:38:27,704 --> 00:38:31,144
+X to power n plus 1 over n plus 1 factorial divided by u n.
+
+351
+00:38:31,144 --> 00:38:33,304
+u n is x to power n over n factorial.
+
+352
+00:38:33,327 --> 00:38:40,128
+Here, n factorials cancel and n plus 1 is left in the denominator and x to the power n's cancel.
+
+353
+00:38:40,427 --> 00:38:43,007
+We get an x, absolute value of x in the numerator.
+
+354
+00:38:44,228 --> 00:38:48,248
+And here, absolute value of x in terms of n, it's a constant.
+
+355
+00:38:48,668 --> 00:38:53,288
+As n approaches infinity, as n approaches infinity, the numerator is absolute value of x.
+
+356
+00:38:53,288 --> 00:38:53,947
+It's fixed.
+
+357
+00:38:54,588 --> 00:38:56,688
+The denominator n plus 1 approaches infinity.
+
+358
+00:38:57,788 --> 00:39:01,708
+So for each fixed value of x, the limit of this is 0.
+
+359
+00:39:01,708 --> 00:39:05,967
+Limit of this is 0 means 0 is less than 1.
+
+360
+00:39:06,188 --> 00:39:11,467
+So no matter what the value of x is, the limit of this is less than 0, which means it converges.
+
+361
+00:39:11,827 --> 00:39:15,248
+Therefore, the series converges absolutely for all values of x.
+
+362
+00:39:16,387 --> 00:39:18,148
+It converges absolutely everywhere.
+
+363
+00:39:18,788 --> 00:39:28,248
+So this is, its radius of convergence is infinity, and its interval of convergence is the set of all real numbers.
+
+364
+00:39:28,248 --> 00:39:33,327
+And the next example, n factorial times x to the power n.
+
+365
+00:39:33,748 --> 00:39:40,427
+Again, n plus 1 is, n plus 1 is n plus 1 factorial times x to the power n plus 1.
+
+366
+00:39:40,768 --> 00:39:42,807
+N is n factorial times x to the power n.
+
+367
+00:39:43,288 --> 00:39:45,927
+Again, n factorials cancel, we get n plus 1.
+
+368
+00:39:46,307 --> 00:39:49,288
+x to the power n's cancel, we get absolute value of x left here.
+
+369
+00:39:49,288 --> 00:39:58,168
+And when x is 0, when x is 0, this is just 0 times n plus 1.
+
+370
+00:39:58,887 --> 00:40:00,867
+When x is 0, this is 0 times n plus 1.
+
+371
+00:40:00,927 --> 00:40:02,367
+0 times n plus 1 is 0.
+
+372
+00:40:02,367 --> 00:40:08,827
+So it's a constant, constant sequence, 0, 0, 0, 0, 0, 0, 0, it's convergence to 0.
+
+373
+00:40:09,688 --> 00:40:19,288
+But when x is, unless x is 0, if x is not 0, if x is not a 0, 0, this absolute value of x is going to be a positive number.
+
+374
+00:40:19,748 --> 00:40:22,967
+So we multiply n plus 1 with a positive number.
+
+375
+00:40:23,467 --> 00:40:30,268
+If n approaches infinity, if n approaches infinity, a positive number times n is going to approach infinity.
+
+376
+00:40:30,268 --> 00:40:41,347
+So, which means that this series converges at its center, x equals 0, but except for its center, it's going to diverge because this limit is bigger than 1.
+
+377
+00:40:42,547 --> 00:40:43,927
+When x is not 0.
+
+378
+00:40:44,128 --> 00:40:50,728
+So this series over here has radius of convergence 0, and it converges only at its center, nowhere else.
+
+379
+00:40:50,728 --> 00:40:54,007
+Okay.
+
+380
+00:40:55,867 --> 00:41:00,728
+Let's continue with operations on power series.
+
+381
+00:41:00,847 --> 00:41:01,007
+Okay.
+
+382
+00:41:01,047 --> 00:41:05,087
+Any questions so far?
+
+383
+00:41:05,087 --> 00:41:22,972
+Okay.
+
+384
+00:41:24,632 --> 00:41:26,772
+No, it's not an indeterminist form.
+
+385
+00:41:27,412 --> 00:41:29,212
+Let's, okay, let's, let's go back.
+
+386
+00:41:35,380 --> 00:41:53,280
+So, you are thinking of this example as infinity times 0 in determinants form when x is 0. No, it's not. Think of it carefully. Okay, this is a sequence, right? So, think of this as x equals 0 when x is 0.
+
+387
+00:41:53,280 --> 00:42:05,180
+So, I'm asking you, when n is 1, what's the value of this? When n is 1, what's the value of this? X is 0. Think of it as x is equal to 0. When n is 1, what's the value of this?
+
+388
+00:42:10,547 --> 00:42:21,347
+[öğrenci], when n is 1, when n is 1, what is the value of this? I'm asking you again. [öğrenci].
+
+389
+00:42:24,980 --> 00:42:28,199
+What? Well, x is 0, n is 1.
+
+390
+00:42:29,820 --> 00:42:32,639
+When x is 0 and n is 1, what's the value of this?
+
+391
+00:42:35,219 --> 00:42:36,300
+It's just 0, right?
+
+392
+00:42:37,039 --> 00:42:37,380
+Okay.
+
+393
+00:42:38,500 --> 00:42:40,940
+It's just 2 times 0, which is 0.
+
+394
+00:42:41,740 --> 00:42:43,500
+When n is 2, what is the value of this?
+
+395
+00:42:44,000 --> 00:42:45,760
+It's 3 times 0, which is 0 again.
+
+396
+00:42:46,199 --> 00:42:48,280
+When n is 4, it's 0.
+
+397
+00:42:48,420 --> 00:42:49,519
+When n is 5, it's 0.
+
+398
+00:42:49,619 --> 00:42:50,820
+When n is 7, it's 0.
+
+399
+00:42:50,900 --> 00:42:51,960
+When n is 8, it's 0.
+
+400
+00:42:51,960 --> 00:42:56,219
+So, when x is 0, this is the sequence of 0s.
+
+401
+00:42:56,380 --> 00:42:58,780
+It's 0, 0, 0, 0, 0, 0, 0, 0, 0.
+
+402
+00:42:58,960 --> 00:43:00,699
+That sequence converges to 0.
+
+403
+00:43:01,119 --> 00:43:03,079
+So, there's no ending indeterminant form here.
+
+404
+00:43:03,340 --> 00:43:03,579
+Okay?
+
+405
+00:43:04,179 --> 00:43:07,139
+It's just a constant sequence of 0s, which converges to 0.
+
+406
+00:43:07,480 --> 00:43:07,699
+Okay?
+
+407
+00:43:30,291 --> 00:43:31,991
+Ok, operasyonun power series.
+
+408
+00:43:34,152 --> 00:43:36,052
+Series multiplication theorem,
+
+409
+00:43:36,231 --> 00:43:37,112
+what does this say?
+
+410
+00:43:37,572 --> 00:43:39,451
+It basically says that
+
+411
+00:43:39,451 --> 00:43:41,991
+you can multiply power series
+
+412
+00:43:41,991 --> 00:43:44,011
+just like multiplying polynomials
+
+413
+00:43:44,011 --> 00:43:45,672
+as long as they converge.
+
+414
+00:43:47,251 --> 00:43:48,411
+So let's say
+
+415
+00:43:48,411 --> 00:43:51,211
+this power series over here
+
+416
+00:43:51,211 --> 00:43:53,711
+N equals 0 infinity
+
+417
+00:43:53,711 --> 00:43:55,311
+to infinity A nx to power n
+
+418
+00:43:55,311 --> 00:43:57,231
+converges to the function A x
+
+419
+00:43:57,231 --> 00:43:59,592
+in this interval
+
+420
+00:43:59,592 --> 00:44:01,331
+when x is between minus 1 and R.
+
+421
+00:44:02,072 --> 00:44:02,552
+And also
+
+422
+00:44:02,552 --> 00:44:05,132
+N equals 0 to infinity
+
+423
+00:44:05,132 --> 00:44:06,371
+B nx to power n
+
+424
+00:44:06,371 --> 00:44:08,311
+converges to the function B x
+
+425
+00:44:08,311 --> 00:44:09,791
+again on the same interval.
+
+426
+00:44:11,251 --> 00:44:11,471
+Now,
+
+427
+00:44:12,411 --> 00:44:15,771
+just like multiplying
+
+428
+00:44:15,771 --> 00:44:17,072
+two polynomials
+
+429
+00:44:17,072 --> 00:44:19,771
+multiply the two power series
+
+430
+00:44:19,771 --> 00:44:21,411
+you'll get another power series.
+
+431
+00:44:22,031 --> 00:44:23,052
+The theorem says that
+
+432
+00:44:23,052 --> 00:44:24,511
+this new power series
+
+433
+00:44:24,511 --> 00:44:26,451
+which is the product of these two power series
+
+434
+00:44:26,451 --> 00:44:28,592
+converges absolutely
+
+435
+00:44:28,592 --> 00:44:29,711
+led to the product
+
+436
+00:44:29,711 --> 00:44:30,771
+of these two functions.
+
+437
+00:44:31,391 --> 00:44:33,572
+It's converges to A x times B x
+
+438
+00:44:33,572 --> 00:44:35,032
+on the same interval.
+
+439
+00:44:36,072 --> 00:44:36,692
+For example,
+
+440
+00:44:38,052 --> 00:44:40,052
+look at this.
+
+441
+00:44:41,632 --> 00:44:43,172
+Some n equals 0 to infinity
+
+442
+00:44:43,172 --> 00:44:44,072
+x to power n
+
+443
+00:44:44,072 --> 00:44:45,592
+and multiply it with this.
+
+444
+00:44:45,971 --> 00:44:48,711
+Some n equals 0 to infinity
+
+445
+00:44:48,711 --> 00:44:49,811
+minus 1 to power n
+
+446
+00:44:49,811 --> 00:44:51,371
+x to power n plus 1 over n plus 1.
+
+447
+00:44:51,371 --> 00:44:55,251
+What is this one?
+
+448
+00:44:55,251 --> 00:44:56,471
+The left one.
+
+449
+00:44:56,471 --> 00:44:57,951
+The one on the left side
+
+450
+00:44:57,951 --> 00:45:00,831
+is 1 plus x plus x square plus dot dot dot.
+
+451
+00:45:00,831 --> 00:45:02,592
+What is the series on the right side?
+
+452
+00:45:02,711 --> 00:45:03,031
+It's
+
+453
+00:45:03,031 --> 00:45:04,751
+when n is 0,
+
+454
+00:45:04,891 --> 00:45:06,192
+it's just x.
+
+455
+00:45:06,391 --> 00:45:07,152
+When n is 1,
+
+456
+00:45:07,291 --> 00:45:09,751
+it's minus x square over 2
+
+457
+00:45:09,751 --> 00:45:11,031
+plus x cube over 3
+
+458
+00:45:11,031 --> 00:45:12,831
+minus x to power 4 over 4 and so on.
+
+459
+00:45:12,831 --> 00:45:14,711
+You can just multiply
+
+460
+00:45:14,711 --> 00:45:16,211
+these two power series
+
+461
+00:45:16,211 --> 00:45:16,951
+just like
+
+462
+00:45:16,951 --> 00:45:18,891
+multiplying the
+
+463
+00:45:18,891 --> 00:45:21,011
+just like multiplying
+
+464
+00:45:21,011 --> 00:45:22,891
+two polynomials.
+
+465
+00:45:23,491 --> 00:45:23,891
+So basically
+
+466
+00:45:23,891 --> 00:45:24,751
+one times
+
+467
+00:45:24,751 --> 00:45:25,431
+the whole
+
+468
+00:45:25,431 --> 00:45:26,672
+one times
+
+469
+00:45:26,672 --> 00:45:28,451
+just distribute
+
+470
+00:45:28,451 --> 00:45:30,612
+these terms over this
+
+471
+00:45:30,612 --> 00:45:31,311
+one times
+
+472
+00:45:31,311 --> 00:45:32,112
+the whole thing
+
+473
+00:45:32,112 --> 00:45:32,731
+over here is
+
+474
+00:45:32,731 --> 00:45:33,891
+x minus x square over 2
+
+475
+00:45:33,891 --> 00:45:34,871
+plus x cube over 3
+
+476
+00:45:34,871 --> 00:45:35,751
+this
+
+477
+00:45:35,751 --> 00:45:37,211
+then plus
+
+478
+00:45:37,211 --> 00:45:40,072
+x times this
+
+479
+00:45:40,072 --> 00:45:40,751
+gives this
+
+480
+00:45:40,751 --> 00:45:42,672
+x square minus x cube over 2
+
+481
+00:45:42,672 --> 00:45:43,991
+plus x to power 4 over 3
+
+482
+00:45:43,991 --> 00:45:44,491
+and so on.
+
+483
+00:45:44,831 --> 00:45:46,112
+Then x square times
+
+484
+00:45:46,112 --> 00:45:47,251
+all these terms
+
+485
+00:45:47,251 --> 00:45:49,411
+gives x cube minus x to power
+
+486
+00:45:49,411 --> 00:45:50,052
+over 2
+
+487
+00:45:50,052 --> 00:45:50,911
+plus this
+
+488
+00:45:50,911 --> 00:45:51,911
+and so on.
+
+489
+00:45:52,891 --> 00:45:53,491
+Dot dot dot.
+
+490
+00:45:53,572 --> 00:45:54,371
+Then collect
+
+491
+00:45:54,371 --> 00:45:55,751
+like terms together.
+
+492
+00:45:56,711 --> 00:45:57,871
+There's only one x term
+
+493
+00:45:57,871 --> 00:45:58,371
+here.
+
+494
+00:45:59,271 --> 00:45:59,811
+That's here.
+
+495
+00:46:00,532 --> 00:46:01,672
+And x square terms.
+
+496
+00:46:01,871 --> 00:46:03,092
+There's an x square term here
+
+497
+00:46:03,092 --> 00:46:04,811
+and minus x square over 2 here.
+
+498
+00:46:05,451 --> 00:46:06,971
+So they add up to x square over 2.
+
+499
+00:46:07,751 --> 00:46:08,891
+Then x cube terms.
+
+500
+00:46:09,532 --> 00:46:10,692
+There's one x cube here.
+
+501
+00:46:10,751 --> 00:46:13,011
+minus 1 over 2 x cube here
+
+502
+00:46:13,011 --> 00:46:14,791
+and plus 1 over 3 x cube here.
+
+503
+00:46:15,371 --> 00:46:16,032
+Then you add them.
+
+504
+00:46:16,172 --> 00:46:17,231
+So 1 minus 1 over 2
+
+505
+00:46:17,231 --> 00:46:17,831
+is 1 over 2.
+
+506
+00:46:17,891 --> 00:46:19,032
+1 over 2 plus 1 over 3
+
+507
+00:46:19,032 --> 00:46:19,891
+is 5 over 6.
+
+508
+00:46:20,351 --> 00:46:22,011
+5 over 6 x cube and so on.
+
+509
+00:46:22,371 --> 00:46:24,072
+Just collect the like terms together.
+
+510
+00:46:24,532 --> 00:46:25,471
+You'll get a power series.
+
+511
+00:46:26,632 --> 00:46:27,052
+Now
+
+512
+00:46:27,052 --> 00:46:28,771
+this is a power series
+
+513
+00:46:28,771 --> 00:46:30,971
+and we know that actually
+
+514
+00:46:30,971 --> 00:46:32,172
+this one converges to
+
+515
+00:46:32,172 --> 00:46:33,371
+1 over 1 minus x.
+
+516
+00:46:33,711 --> 00:46:33,911
+Right?
+
+517
+00:46:34,351 --> 00:46:35,831
+Converges to 1 over 1 minus x.
+
+518
+00:46:37,251 --> 00:46:38,331
+We haven't seen where
+
+519
+00:46:38,331 --> 00:46:39,231
+this converges yet
+
+520
+00:46:39,231 --> 00:46:40,172
+but wherever
+
+521
+00:46:40,172 --> 00:46:41,612
+let's say this one converges
+
+522
+00:46:41,612 --> 00:46:42,351
+to bx
+
+523
+00:46:42,351 --> 00:46:43,231
+some function
+
+524
+00:46:43,231 --> 00:46:45,011
+on the same interval.
+
+525
+00:46:45,692 --> 00:46:46,632
+Then the theorem says
+
+526
+00:46:46,632 --> 00:46:47,951
+that this power series
+
+527
+00:46:47,951 --> 00:46:49,032
+is going to converge
+
+528
+00:46:49,032 --> 00:46:50,391
+to ax times bx
+
+529
+00:46:50,391 --> 00:46:51,652
+whatever that function is
+
+530
+00:46:51,652 --> 00:46:52,791
+on the same interval.
+
+531
+00:46:52,791 --> 00:46:55,451
+and
+
+532
+00:46:55,451 --> 00:46:58,851
+okay
+
+533
+00:46:58,851 --> 00:47:02,132
+under the theorem
+
+534
+00:47:02,132 --> 00:47:04,471
+this is a useful theorem.
+
+535
+00:47:05,311 --> 00:47:06,051
+It says that
+
+536
+00:47:06,051 --> 00:47:06,612
+basically
+
+537
+00:47:06,612 --> 00:47:08,092
+if you have a power series
+
+538
+00:47:08,092 --> 00:47:09,291
+you can replace
+
+539
+00:47:09,291 --> 00:47:10,152
+x with
+
+540
+00:47:10,152 --> 00:47:12,211
+a continuous function of x.
+
+541
+00:47:12,331 --> 00:47:12,911
+You can replace
+
+542
+00:47:12,911 --> 00:47:13,731
+x with f of x
+
+543
+00:47:13,731 --> 00:47:14,891
+just substitute
+
+544
+00:47:14,891 --> 00:47:16,032
+f of x for x
+
+545
+00:47:16,032 --> 00:47:18,011
+as long as f is continuous.
+
+546
+00:47:18,011 --> 00:47:19,211
+So in other words
+
+547
+00:47:19,211 --> 00:47:20,011
+let's read it.
+
+548
+00:47:20,411 --> 00:47:20,672
+If
+
+549
+00:47:20,672 --> 00:47:22,931
+n equals 0 to infinity
+
+550
+00:47:22,931 --> 00:47:23,851
+the nx with power n
+
+551
+00:47:23,851 --> 00:47:24,951
+converges absolutely
+
+552
+00:47:24,951 --> 00:47:25,771
+in the same interval
+
+553
+00:47:25,771 --> 00:47:27,532
+if it's radius of
+
+554
+00:47:27,532 --> 00:47:27,692
+in
+
+555
+00:47:28,032 --> 00:47:33,152
+Convergences are. Let me go back to something. Let me remind one more thing.
+
+556
+00:47:35,952 --> 00:47:40,932
+Okay, let's go back to this multiplication theorem, not this condition over here.
+
+557
+00:47:42,312 --> 00:47:47,251
+So, the multiplication theorem does not say anything about the endpoints.
+
+558
+00:47:47,251 --> 00:48:02,572
+It only says that you can multiply these and get the product of the product power series, get the limit of the product power series inside the interval, not necessarily on the endpoints.
+
+559
+00:48:03,292 --> 00:48:10,892
+So, for example, it may be the case that on the left endpoints, these two converge, but their product does not. That's possible.
+
+560
+00:48:11,372 --> 00:48:14,672
+So, the theorem says nothing about the endpoints. Be careful here.
+
+561
+00:48:14,672 --> 00:48:17,132
+Same is true here.
+
+562
+00:48:18,432 --> 00:48:32,472
+Theorem does not say anything about the endpoints. Inside the interval, so between x minus r and r, if this power series converges absolutely, then just substitute f of x for x.
+
+563
+00:48:32,472 --> 00:48:43,032
+So, replace x with a continuous function of x, then this power series converges absolutely on this interval.
+
+564
+00:48:43,032 --> 00:48:44,912
+Replace x with f of x.
+
+565
+00:48:45,832 --> 00:48:46,872
+So, for example,
+
+566
+00:48:47,372 --> 00:48:55,072
+For example, we know that this function, n equals 0 to infinity x to power n, converges to 1 over 1 minus x, where?
+
+567
+00:48:55,592 --> 00:48:58,271
+When x is between minus 1 and 1 on this interval.
+
+568
+00:48:58,271 --> 00:49:16,572
+So, the theorem says that, for example, replace x with 4x squared, replace x with 4x squared, then this function over here, n equals 0 to infinity, 4x squared to the power n, converges to this function, 1 over 1 minus 4x squared, where?
+
+569
+00:49:16,572 --> 00:49:25,352
+On this interval, then 4x squared, absolute value of 4x squared is less than 1, which is saying that x squared is less than 1 over 4.
+
+570
+00:49:25,492 --> 00:49:27,672
+So, x is between minus 1 over 10, 1 over 2.
+
+571
+00:49:27,771 --> 00:49:31,731
+So, on this interval, this power series over here converges to this one.
+
+572
+00:49:31,731 --> 00:49:41,332
+So, we can apply this trick and replace x. If we have a power series, and if we know the function
+
+573
+00:49:41,332 --> 00:49:57,112
+to which the power series converges, then on the interval, on its interval of converges, inside its interval of converges, I can replace x with a continuous function of x.
+
+574
+00:49:57,612 --> 00:50:08,552
+I get a new function, I can get a new function, and I can get a power series representation of that new function on the corresponding interval, whatever that interval is.
+
+575
+00:50:08,552 --> 00:50:13,452
+All right, one more theorem.
+
+576
+00:50:15,372 --> 00:50:16,751
+Term-by-term differentiation.
+
+577
+00:50:18,612 --> 00:50:27,352
+In summary, the theorem basically says that you can differentiate the power series just like differentiating a polynomial.
+
+578
+00:50:28,072 --> 00:50:30,792
+How do we differentiate a polynomial?
+
+579
+00:50:31,412 --> 00:50:33,332
+So, a times x to the power n.
+
+580
+00:50:33,332 --> 00:50:39,032
+So, basically, x to the power n plus the derivative of x to the power n. It's n times x to the power n minus 1.
+
+581
+00:50:39,452 --> 00:50:47,332
+So, the theorem says that you can differentiate the power series just like that, as long as you are in its interval of convergence.
+
+582
+00:50:47,972 --> 00:50:51,012
+Again, inside the interval, not necessarily on the endpoints.
+
+583
+00:50:51,012 --> 00:50:58,092
+So, let's say if this is, has a radius of, has a positive radius of convergence, it may be infinite as well.
+
+584
+00:50:59,072 --> 00:51:01,352
+And then it defines some function.
+
+585
+00:51:01,912 --> 00:51:05,852
+So, on this interval, on this interval, it's a function f of x.
+
+586
+00:51:05,912 --> 00:51:07,632
+It converges to some function f of x.
+
+587
+00:51:09,211 --> 00:51:10,592
+On that interval.
+
+588
+00:51:10,592 --> 00:51:17,132
+Then, the theorem says that the function f has derivatives of all orders.
+
+589
+00:51:17,512 --> 00:51:21,012
+You can differentiate this function just like a polynomial, just like polynomials.
+
+590
+00:51:21,492 --> 00:51:22,251
+Think of a polynomial.
+
+591
+00:51:22,532 --> 00:51:26,512
+You can differentiate a polynomial, then find a second derivative, third derivative, fourth derivative.
+
+592
+00:51:26,960 --> 00:54:34,960
+bu da
+
+593
+00:54:35,155 --> 00:54:39,056
+Okay, similar to differentiation, we can integrate.
+
+594
+00:54:39,715 --> 00:54:41,635
+We can do this process backwards.
+
+595
+00:54:43,155 --> 00:54:46,275
+Again, as long as we are on the,
+
+596
+00:54:47,096 --> 00:54:49,795
+we are inside the interval of convergence
+
+597
+00:54:49,795 --> 00:54:53,295
+of the power series and its radius is positive,
+
+598
+00:54:53,456 --> 00:54:54,195
+radius is not zero,
+
+599
+00:54:54,675 --> 00:54:56,275
+as long as we are inside this interval,
+
+600
+00:54:57,016 --> 00:54:58,795
+if we have a function like this,
+
+601
+00:54:59,315 --> 00:55:02,516
+then if we integrate it term by term,
+
+602
+00:55:03,135 --> 00:55:04,976
+plus the integral of x minus h to power n,
+
+603
+00:55:05,155 --> 00:55:08,496
+this integral is x minus h to power n plus one over n plus one.
+
+604
+00:55:09,255 --> 00:55:11,476
+So if we integrate this term by term,
+
+605
+00:55:12,076 --> 00:55:14,135
+we will get another power series.
+
+606
+00:55:14,456 --> 00:55:16,195
+The theorem says that that power series
+
+607
+00:55:16,195 --> 00:55:19,496
+converges to the integral of this.
+
+608
+00:55:20,476 --> 00:55:23,076
+Of course, this is an indefinite integral,
+
+609
+00:55:23,295 --> 00:55:25,755
+so we get a plus c here, plus constant.
+
+610
+00:55:26,315 --> 00:55:27,755
+That needs to be found.
+
+611
+00:55:29,375 --> 00:55:32,135
+So this, the integral of f of x dx
+
+612
+00:55:32,135 --> 00:55:37,195
+is the integral of this power series term by term,
+
+613
+00:55:37,976 --> 00:55:39,036
+plus some constant.
+
+614
+00:55:42,596 --> 00:55:44,715
+In its inside,
+
+615
+00:55:44,875 --> 00:55:46,536
+its interval of convergence.
+
+616
+00:55:46,536 --> 00:55:48,655
+So for example,
+
+617
+00:55:49,996 --> 00:55:50,615
+think,
+
+618
+00:55:50,715 --> 00:55:52,275
+remember this example,
+
+619
+00:55:52,516 --> 00:55:52,755
+which,
+
+620
+00:55:54,135 --> 00:55:55,135
+let me go back.
+
+621
+00:55:57,596 --> 00:55:58,215
+This one,
+
+622
+00:55:58,916 --> 00:56:00,135
+this example over here.
+
+623
+00:56:00,956 --> 00:56:02,596
+X minus x cube over three plus,
+
+624
+00:56:02,675 --> 00:56:03,295
+x to power four,
+
+625
+00:56:03,395 --> 00:56:04,195
+five over five,
+
+626
+00:56:04,576 --> 00:56:05,635
+minus and so on.
+
+627
+00:56:07,635 --> 00:56:10,076
+I've seen that it converges between minus one and one,
+
+628
+00:56:10,175 --> 00:56:10,536
+inclusive,
+
+629
+00:56:10,895 --> 00:56:11,916
+including both endpoints.
+
+630
+00:56:11,916 --> 00:56:12,916
+X minus x cube over three plus,
+
+631
+00:56:12,916 --> 00:56:13,375
+and I'll see you next time.
+
+632
+00:56:13,375 --> 00:56:13,916
+So I'll see you next time.
+
+633
+00:56:13,916 --> 00:56:23,576
+Thank you.
+
+634
+00:56:16,244 --> 00:56:18,804
+Actually, while integrating, we don't look at the endpoints.
+
+635
+00:56:22,612 --> 00:56:27,052
+Evet, minus 1 to the power n, x to the power n, 2 n plus 1 over 2 n plus 1.
+
+636
+00:56:27,492 --> 00:56:36,932
+Okay, there it, the index starts from 1, here the index starts from 0, but they're actually the same, same power series, just the index is shifted by 1.
+
+637
+00:56:37,932 --> 00:56:39,072
+Look at this power series.
+
+638
+00:56:40,172 --> 00:56:44,251
+Now, if we, what is, let's identify this function.
+
+639
+00:56:48,371 --> 00:56:53,811
+Şimdi, if we if we differentiate it, what's the derivative of this?
+
+640
+00:56:53,811 --> 00:56:59,652
+Derivative of x to the power of 2 n plus 1 is 2 n plus 1 times x to the power of 2 n, right?
+
+641
+00:57:00,111 --> 00:57:04,011
+So 2 n plus 1 is cancelled, we get x to the power of 2 n.
+
+642
+00:57:04,951 --> 00:57:07,132
+Basically, look at this. Derivative of x is 1.
+
+643
+00:57:07,811 --> 00:57:18,271
+Derivative of x to the power of 3 is 3 x to the power of 3, which is minus x to the power of 4, which is x to the power of 4, and so on.
+
+644
+00:57:19,031 --> 00:57:24,991
+But this is basically, in other words, this power series over here is integral of this one.
+
+645
+00:57:26,211 --> 00:57:35,192
+If we can identify this, but this just looks like the geometric series where x is replaced with x squared, right?
+
+646
+00:57:36,411 --> 00:57:40,951
+This is the geometric series with whose first term is 1 and ratio is minus x squared.
+
+647
+00:57:41,731 --> 00:57:46,132
+So it is 1 over 1 minus x squared, which is 1 over 1 plus x squared.
+
+648
+00:57:49,652 --> 00:57:59,152
+Okay, now knowing that this is, so this power series over here in this interval, in this interval,
+
+649
+00:58:01,152 --> 00:58:07,632
+why is it in that interval? Here, look at this. Minus x squared, that's the ratio.
+
+650
+00:58:08,211 --> 00:58:11,831
+It's a geometric series. So when is its absolute value less than one?
+
+651
+00:58:13,072 --> 00:58:16,072
+Its absolute value is less than one when x is between minus one and one.
+
+652
+00:58:16,072 --> 00:58:24,092
+So on this interval, on this interval, this power series over here is a geometric series and it converges to this, one over one minus x squared.
+
+653
+00:58:24,672 --> 00:58:33,992
+Now, we integrate this. So integral of this, integral of this is going to be the integral of this one plus a constant.
+
+654
+00:58:34,652 --> 00:58:40,612
+So basically, what is the integral of this? Integral of one over one plus x squared dx is tangent inverse x.
+
+655
+00:58:40,612 --> 00:58:52,072
+So basically, tangent inverse x plus some constant is going to be equal to this power series over here.
+
+656
+00:58:53,672 --> 00:58:56,612
+Find what that constant is, just take x equals zero.
+
+657
+00:58:57,672 --> 00:58:59,532
+When x is equal to zero, what do we get?
+
+658
+00:59:00,992 --> 00:59:03,751
+When x is equal to zero, we get zero plus zero plus zero plus zero.
+
+659
+00:59:03,751 --> 00:59:04,711
+This is zero.
+
+660
+00:59:06,072 --> 00:59:09,452
+But that zero must be equal to tangent inverse zero plus c.
+
+661
+00:59:10,231 --> 00:59:12,231
+What is tangent inverse zero? It's also zero.
+
+662
+00:59:12,432 --> 00:59:13,672
+Therefore, c must be zero.
+
+663
+00:59:14,592 --> 00:59:18,412
+So in general, to find that constant c, just plug in some value for x.
+
+664
+00:59:19,572 --> 00:59:22,552
+Plug in the center, actually. That's the easiest to calculate.
+
+665
+00:59:23,532 --> 00:59:31,632
+Just evaluate the power series and the function at the center of the power series to find what the value of c is.
+
+666
+00:59:31,632 --> 00:59:34,192
+So c must be zero.
+
+667
+00:59:34,592 --> 00:59:39,052
+It says that this is over here.
+
+668
+00:59:39,811 --> 00:59:43,672
+For series, x minus x cubed over three plus x to the power five over five and so on.
+
+669
+00:59:44,132 --> 00:59:52,932
+Which is, so this power series, which is the integral of this one, must be equal to tangent inverse x, which is the integral of this one.
+
+670
+00:59:53,891 --> 00:59:54,612
+This function.
+
+671
+00:59:54,612 --> 00:59:57,592
+So that's, that's surprising, actually.
+
+672
+00:59:57,731 --> 01:00:07,771
+This just one, I mean, actually, of course, of course, the theorem tells us nothing about the endpoints.
+
+673
+01:00:08,492 --> 01:00:09,592
+Again, let me go back.
+
+674
+01:00:10,452 --> 01:00:16,512
+We have shown that this power series over here, we have shown that this power.
+
+675
+01:00:16,512 --> 01:00:31,512
+We have shown that this power series over here, we have shown that this power series over here, we have shown that this power series over here.
+
+676
+01:00:31,512 --> 01:00:35,512
+We have shown that this power series over here, we have shown that this power series over here.
+
+677
+01:00:35,512 --> 01:00:37,512
+We have shown that this power series over here.
+
+678
+01:00:20,019 --> 01:00:20,639
+Hadi da izleyelim.
+
+679
+01:00:34,675 --> 01:00:59,476
+Okay, we have shown that this power series over here converges both endpoints, but the theorem tells us nothing about the endpoints. The theorem tells only that it converges to this function inside the interval of convergence, but actually it can also be shown that it converges at the endpoints as well. It actually does converge at the endpoints to tangent inverse x as well.
+
+680
+01:01:03,188 --> 01:01:04,188
+Evet.
+
+681
+01:01:16,148 --> 01:01:27,228
+Same can be done with this one actually, 1 over 1 plus t, 1 minus t plus t square minus t cube and so on. It converges on this interval.
+
+682
+01:01:31,603 --> 01:01:46,723
+Therefore, when I differentiate it, I don't know why they did it like this. So let's do it just like we did over here. Let me show it on the board.
+
+683
+01:02:10,516 --> 01:02:11,516
+So, what do we know?
+
+684
+01:02:12,516 --> 01:02:13,516
+1 over 1 plus x.
+
+685
+01:02:16,516 --> 01:02:17,516
+What is this equal to?
+
+686
+01:02:18,516 --> 01:02:23,516
+So, it's like the geometric series, 1 over 1 minus x, so we replaced x with minus x.
+
+687
+01:02:24,516 --> 01:02:25,516
+If we replace x with minus x, we get this.
+
+688
+01:02:25,516 --> 01:02:32,516
+1 minus x plus x square minus x square plus x to the power 4 minus x to the power 4.
+
+689
+01:02:43,443 --> 01:02:56,844
+Let me write it like this, which is equal to sum n equals 0 to infinity minus 1 to the power of n x to the power of n.
+
+690
+01:02:58,364 --> 01:02:59,844
+Let's write it like that.
+
+691
+01:03:02,764 --> 01:03:11,844
+So, where when x is between minus 1 and 1, actually it's...
+
+692
+01:03:13,443 --> 01:03:15,443
+We just replaced x with minus x.
+
+693
+01:03:15,443 --> 01:03:20,443
+So, minus x is between minus 1 and 1 means the same thing as x between minus 1 and 1.
+
+694
+01:03:20,443 --> 01:03:26,443
+So, on this interval, this power series over here converges to the function 1 over 1 plus x.
+
+695
+01:03:26,443 --> 01:03:33,443
+Or we could think of it like this is a geometric series whose first term is 1 and its common ratio is minus x.
+
+696
+01:03:33,443 --> 01:03:36,443
+So, it's going to be 1 over 1 minus minus x.
+
+697
+01:03:36,443 --> 01:03:39,443
+Now, integrating both sides...
+
+698
+01:03:39,443 --> 01:03:42,443
+Integrating both sides...
+
+699
+01:03:42,443 --> 01:03:49,443
+We get one integral of 1 over 1 plus x.
+
+700
+01:03:49,443 --> 01:03:51,443
+That's allow 1 plus x.
+
+701
+01:03:51,443 --> 01:03:56,443
+Integral of the left side is going to be...
+
+702
+01:03:56,443 --> 01:03:59,443
+Take a write the constant to the left.
+
+703
+01:03:59,443 --> 01:04:01,443
+Some constant plus...
+
+704
+01:04:01,443 --> 01:04:04,443
+Some constant plus the integral of this.
+
+705
+01:04:04,443 --> 01:04:05,443
+Plus the integral of this.
+
+706
+01:04:05,443 --> 01:04:07,443
+Integral of 1 is x.
+
+707
+01:04:07,443 --> 01:04:10,443
+Integral of minus x is minus x squared over 2.
+
+708
+01:04:10,443 --> 01:04:13,443
+Integral of this is plus x cubed over 3.
+
+709
+01:04:13,443 --> 01:04:17,443
+Minus x to the power of 4 over 4.
+
+710
+01:04:17,443 --> 01:04:20,443
+Plus x to the power of 5 over 5.
+
+711
+01:04:20,443 --> 01:04:23,443
+Minus x to the power of 6 over 6 and so on.
+
+712
+01:04:23,443 --> 01:04:24,443
+Take some time to all.
+
+713
+01:04:24,443 --> 01:04:25,443
+Hey, cheers.
+
+714
+01:04:25,443 --> 01:04:26,443
+Thank you.
+
+715
+01:04:31,092 --> 01:04:38,251
+0 to infinity, minus 1 to power n, x to power n plus 1 over n plus 1.
+
+716
+01:04:44,947 --> 01:04:46,947
+Y c
+
+717
+01:04:51,748 --> 01:04:53,748
+X equals 0
+
+718
+01:04:53,748 --> 01:05:43,547
+Y c
+
+719
+01:05:40,532 --> 01:05:44,731
+On this interval, minus 1, less than x, less than 1.
+
+720
+01:05:46,492 --> 01:05:47,532
+Well, actually,
+
+721
+01:05:49,072 --> 01:05:52,432
+Let me go back to this.
+
+722
+01:05:57,460 --> 01:06:00,780
+Ve bu ilk örnek altyazı bir örnek altyazı.
+
+723
+01:06:00,940 --> 01:06:11,740
+Bu bir örnek altyazı.
+
+724
+01:06:12,099 --> 01:06:13,900
+Ve bu örnek altyazı.
+
+725
+01:06:14,179 --> 01:06:16,059
+Bu bir örnek altyazı.
+
+726
+01:06:16,980 --> 01:06:40,099
+Altyazı.
+
+727
+01:06:38,804 --> 01:06:49,204
+It also converges at x equals 1. And where does it converge when x equals 1? What is the power series? Let's look at it again.
+
+728
+01:07:13,427 --> 01:07:43,427
+Şimdi, aslında, aslında, aslında, aslında, aslında, aslında, aslında, aslında, aslında, aslında, aslında, aslında, aslında, aslında, aslında, aslında, aslında, aslında, aslında, aslında, aslında, aslında, aslında, aslında, aslında, aslında, aslında, aslında, aslında, aslında, aslında, aslında, aslında, aslında, aslında, aslında, aslında, aslında, aslında, aslında, aslında, aslında, aslında, aslında, aslında, aslında, aslında, aslında, aslında, aslında, aslında, aslında, aslında, aslında, aslında, aslında, aslında, aslında, aslında, aslında, aslında, aslında, aslında, aslında, aslında, aslında, aslında, aslında, aslında, aslında, aslında, aslında, aslında, aslında, aslında, aslında, aslında, aslında, aslında, aslında, aslında, aslında, aslında, aslında, aslında, aslında, aslında, aslında, aslında, aslında, aslında, aslında, aslında, aslında, aslında, aslında, aslında, aslında, aslında, aslında, aslında, aslında, aslında, aslında, aslında, aslında, aslında, aslında, aslında, aslında, aslında
+
+729
+01:07:43,427 --> 01:07:54,887
+So, here we see that the sum of the alternating harmonic series, we have, which we have shown to be convergent, is ln2. ln2, that's the sum of the alternating harmonic series.
+
+730
+01:07:54,887 --> 01:07:58,087
+And remember, just remember this argument.
+
+731
+01:07:59,427 --> 01:08:00,327
+How did we add it?
+
+732
+01:08:00,827 --> 01:08:12,268
+Plus 1, minus 1 over 2, plus 1 over 3, minus 1 over 4, plus 1 over 5, minus 1 over 6, plus 1 over 7, minus 1 over 8, and so on.
+
+733
+01:08:12,268 --> 01:08:42,268
+It's convergent to some number, over here, between 1 over 1
+
+734
+01:08:42,268 --> 01:08:51,268
+So, where's the logarithmic function?
+
+735
+01:08:51,268 --> 01:09:00,268
+So, that's actually the exact value, the value of the sum of this alternating harmonic series.
+
+736
+01:09:00,268 --> 01:09:02,268
+Well, this is interesting.
+
+737
+01:09:02,268 --> 01:09:08,268
+That's what we get when we deal with infinitely many numbers.
+
+738
+01:09:08,268 --> 01:09:11,268
+So, look at these numbers we are adding here.
+
+739
+01:09:11,268 --> 01:09:16,268
+1, 1 over 2, 1 over 3, 1 over 4, 1 over 5, plus, minus, plus, minus.
+
+740
+01:09:16,268 --> 01:09:19,268
+They're all rational numbers, simple rational numbers.
+
+741
+01:09:19,268 --> 01:09:24,268
+So, in general, if you add finitely many rational numbers, you'll get a rational number.
+
+742
+01:09:24,268 --> 01:09:31,268
+But here we add up infinitely many rational numbers, and at the end we get a transcendental number, ln2.
+
+743
+01:09:31,268 --> 01:09:35,268
+ln2 is not any rational numbers, it's not even an algebraic number.
+
+744
+01:09:35,268 --> 01:09:44,268
+Well, you probably don't know what an algebraic number is, but it's a more complicated number than a rational number.
+
+745
+01:09:44,268 --> 01:09:50,268
+That's what we get at the end when we get infinitely many just simple rational numbers like that.
+
+746
+01:09:50,268 --> 01:09:53,268
+Okay.
+
+747
+01:10:06,868 --> 01:10:15,398
+Evet, tamam, devam edelim. Tayyip ve Maclaurin serisi, ama sonra 20-min bir süreçte bir soru var. Bir soru var.
+
+748
+01:10:19,060 --> 01:10:20,600
+Any questions before the break?
+
+749
+01:10:24,083 --> 01:10:26,083
+Tamam, devam edelim.
+
+750
+01:10:26,083 --> 01:10:28,083
+10.45
+
+751
+01:10:28,083 --> 01:10:30,083
+Tamam, 10.45
+
+752
+01:10:30,083 --> 01:10:32,083
+devam edelim.
+
+753
+01:30:10,195 --> 01:30:11,435
+So, okay, let's continue.
+
+754
+01:30:14,435 --> 01:30:16,195
+We started with the geometric series.
+
+755
+01:30:29,171 --> 01:30:59,171
+Şimdi, bu kadar da, bu kadar da, bu kadar da, bu kadar da, bu kadar da, bu kadar da, bu kadar da, bu kadar da, bu kadar da, bu kadar da, bu kadar da, bu kadar da, bu kadar da, bu kadar da, bu kadar da, bu kadar da, bu kadar da, bu kadar da, bu kadar da, bu kadar da, bu kadar da, bu kadar da, bu kadar da, bu kadar da, bu kadar da, bu kadar da, bu kadar da, bu kadar da, bu kadar da, bu kadar da, bu kadar da, bu kadar da, bu kadar da, bu kadar da, bu kadar da, bu kadar da, bu kadar da, bu kadar da, bu kadar da, bu kadar da, bu kadar da, bu kadar da, bu kadar da, bu kadar da, bu kadar da, bu kadar da, bu kadar da, bu kadar da, bu kadar da, bu kadar da, bu kadar da, bu kadar da, bu kadar da, bu kadar da, bu kadar da, bu
+
+756
+01:30:59,171 --> 01:31:29,171
+da, bu kadar da, bu kadar da, bu kadar da, bu kadar da, bu kadar da, bu kadar da, bu kadar da, bu kadar da, bu kadar da, bu kadar da, bu kadar da, bu kadar da, bu kadar da, bu kadar da, bu kadar da, bu kadar da, bu kadar da, bu kadar da, bu kadar da, bu kadar da, bu kadar da, bu kadar da, bu kadar da, bu kadar da, bu kadar da, bu kadar da, bu kadar da, bu kadar da, bu kadar da, bu kadar da, bu kadar da, bu kadar da, bu kadar da, bu kadar da, bu kadar da, bu kadar da, bu kadar da, bu kadar da, bu kadar da, bu kadar da, bu kadar da, bu kadar da, bu kadar da, bu kadar da, bu kadar da, bu kadar da, bu kadar da, bu kadar da, bu kadar da, bu kadar da, bu kadar da, bu kadar da, bu kadar da, bu kadar da, bu kadar da
+
+757
+01:31:29,171 --> 01:32:49,171
+...
+
+758
+01:32:54,963 --> 01:33:02,963
+Let f be any function. Let f be any function.
+
+759
+01:33:05,443 --> 01:33:11,844
+And suppose that f
+
+760
+01:33:15,188 --> 01:33:28,708
+suppose that, let me write like this, sum, cn, x minus a to the power, let me use the notation of the book, because, yeah, they use an instead.
+
+761
+01:33:30,208 --> 01:33:44,908
+Let's say an, an times x minus a to the power n, n equals zero to the infinity, suppose that this power series converges to f of x on some open integral.
+
+762
+01:33:45,188 --> 01:33:50,188
+on some internal, it has some radius of convergence, I don't know.
+
+763
+01:33:51,748 --> 01:33:59,188
+So, if such a power series converges to f of x, then what would it...
+
+764
+01:33:59,188 --> 01:34:01,188
+Oh, I lost my...
+
+765
+01:34:01,188 --> 01:34:02,108
+Ah, okay.
+
+766
+01:34:02,667 --> 01:34:02,887
+Oh.
+
+767
+01:34:07,444 --> 01:34:07,884
+Ok.
+
+768
+01:34:12,851 --> 01:34:42,851
+Bu, bu
+
+769
+01:34:42,851 --> 01:35:06,851
+sum n equal to zero to infinity an x minus a to power n which is a zero plus a one x minus a plus a two x minus a squared plus a three x minus a cubed plus a four x minus a to power four and so on
+
+770
+01:35:06,851 --> 01:35:14,192
+what do I get?
+
+771
+01:35:15,091 --> 01:35:15,431
+sum
+
+772
+01:35:15,431 --> 01:35:19,471
+n times an
+
+773
+01:35:19,471 --> 01:35:22,351
+x minus a to power n minus one
+
+774
+01:35:22,351 --> 01:35:24,271
+now of course when n is zero
+
+775
+01:35:24,271 --> 01:35:27,692
+its derivative is going to be zero so I can insert n from one now
+
+776
+01:35:27,692 --> 01:35:52,271
+so
+
+777
+01:35:31,315 --> 01:35:34,315
+Yani 1, yani A1.
+
+778
+01:35:34,315 --> 01:35:36,315
+So basically, just differentiate this.
+
+779
+01:35:36,315 --> 01:35:52,315
+Distributive is 0, A1 plus 2A2 x minus A plus 3A3 x minus A squared plus 4A4 x minus A cubed and so on.
+
+780
+01:35:52,315 --> 01:36:03,315
+So, of course, these are going to hold on the same angle.
+
+781
+01:36:03,315 --> 01:36:06,315
+Whatever that interval is.
+
+782
+01:36:06,315 --> 01:36:16,315
+The reason you say that, you will get N times N minus 1 times A and x minus A to power N minus 2.
+
+783
+01:36:16,315 --> 01:36:18,315
+And now I can start N to power it.
+
+784
+01:36:18,315 --> 01:36:26,315
+I can start N from 2 because when N is 0 or when N is 1, this is going to be 0 anyway.
+
+785
+01:36:26,315 --> 01:36:45,315
+So this is going to be, so derivative of what this is, 2A2 plus 3 times 2 times A3 x minus A plus 4 times 3 times A4 x minus A squared and so on.
+
+786
+01:36:45,315 --> 01:36:49,315
+So, let me do this one more time.
+
+787
+01:36:49,315 --> 01:37:02,315
+If the third derivative is going to be N times N minus 1 times N minus 2 times A and x minus A to the power N minus 3 from N equals 3 to infinity.
+
+788
+01:37:02,315 --> 01:37:05,315
+Again, N is 0, 1 or 2, this is going to be 0 anyway.
+
+789
+01:37:05,315 --> 01:37:17,315
+So, this is, it's derivative of what this is going to be 3 times 2A3 plus 4 times 3 times 2 times A4 x minus A plus.
+
+790
+01:37:17,315 --> 01:37:18,315
+So, it will go like that.
+
+791
+01:37:18,315 --> 01:37:30,315
+Now, what are the values of these functions at x equals A?
+
+792
+01:37:30,315 --> 01:37:35,315
+What is F of A?
+
+793
+01:37:35,315 --> 01:37:40,315
+When x is A, 0, 0, 0, 0, 0, everything will be 0.
+
+794
+01:37:40,315 --> 01:37:42,315
+Only A is 0.
+
+795
+01:37:42,315 --> 01:37:45,315
+F of A is A is 0.
+
+796
+01:37:45,315 --> 01:37:48,315
+What is F prime A?
+
+797
+01:37:48,315 --> 01:37:52,315
+F prime A, 0, 0, 0, 0, all terms are 0.
+
+798
+01:37:52,315 --> 01:37:54,315
+Only A1 is left there.
+
+799
+01:37:54,315 --> 01:37:59,315
+F double prime A.
+
+800
+01:37:59,315 --> 01:38:03,315
+Again, 0, 0, 0, all terms are 0.
+
+801
+01:38:03,315 --> 01:38:08,315
+When x is equal to A, only this first term, 2A2 is left.
+
+802
+01:38:08,315 --> 01:38:11,315
+F triple prime A.
+
+803
+01:38:11,315 --> 01:38:14,315
+Here, all terms are 0.
+
+804
+01:38:14,315 --> 01:38:16,315
+Only this one will be left.
+
+805
+01:38:16,315 --> 01:38:18,315
+F times 2 times A3.
+
+806
+01:38:18,315 --> 01:38:20,315
+Let me write one more.
+
+807
+01:38:20,315 --> 01:38:23,315
+Fourth derivative at A, I didn't write it.
+
+808
+01:38:23,315 --> 01:38:27,315
+But if you take the derivative of this one, now this will be 0.
+
+809
+01:38:27,315 --> 01:38:33,315
+This derivative will have this, 4 times 3 times 2 times A4 as the constant term.
+
+810
+01:38:33,315 --> 01:38:36,315
+The other terms will be powers of x minus A.
+
+811
+01:38:36,315 --> 01:38:37,315
+They will all be 0.
+
+812
+01:38:37,315 --> 01:38:42,315
+So the fourth derivative of A is going to be this, 4 times 3 times 3 times A4.
+
+813
+01:38:42,315 --> 01:38:47,315
+And in general, in general, we can see that.
+
+814
+01:38:47,315 --> 01:38:49,315
+Let me keep differentiating.
+
+815
+01:38:49,315 --> 01:38:52,315
+We'll get n minus 3, n minus 4, n minus 5, and so on.
+
+816
+01:38:52,315 --> 01:38:59,315
+In general, the n derivative of this function at A is going to be n factorial.
+
+817
+01:38:59,315 --> 01:39:05,315
+So here, 0 factorial, 1 factorial, 2 factorial, 3 factorial, 4 factorial, and so on.
+
+818
+01:39:05,315 --> 01:39:06,315
+Times n.
+
+819
+01:39:06,315 --> 01:39:19,315
+So here, all the different parts of A is going to be.
+
+820
+01:39:10,676 --> 01:39:14,155
+Bu, on the fourth derivative, we get four factorial times a4.
+
+821
+01:39:14,655 --> 01:39:18,276
+The fifth derivative at a is going to be five factorial times a5 and so on.
+
+822
+01:39:19,256 --> 01:39:20,136
+So we get this.
+
+823
+01:39:20,956 --> 01:39:23,036
+So it means, so what are we looking for?
+
+824
+01:39:23,176 --> 01:39:24,155
+Again, let's go back.
+
+825
+01:39:24,696 --> 01:39:28,336
+We started with a function f of x, an arbitrary function f of x.
+
+826
+01:39:28,876 --> 01:39:32,336
+We are trying to express f of x as a power series.
+
+827
+01:39:32,336 --> 01:39:43,356
+If such a power series existed, and if it really converts to f of x on some interval, what would its coefficients would be like?
+
+828
+01:39:43,816 --> 01:39:45,336
+That's what we are trying to find.
+
+829
+01:39:45,876 --> 01:39:58,076
+So we found that both coefficients, both coefficients will be n derivative of this function at the center, a, divided by a factor.
+
+830
+01:39:58,076 --> 01:40:07,856
+So this series, so if we write it over there, we get such a series.
+
+831
+01:40:07,856 --> 01:40:07,876
+So if we write it over there, we get such a series.
+
+832
+01:40:08,796 --> 01:40:22,115
+n equals zero to infinity, the n then over n factorial, which is this a n, times x minus a to the power n.
+
+833
+01:40:27,444 --> 01:40:37,984
+So again, if there is a series which converges to f of x on some interval, that series have to be this series over here.
+
+834
+01:40:39,004 --> 01:40:46,144
+And of course, it's interval of convergence, maybe finite, maybe all real numbers, it has to be determined.
+
+835
+01:40:47,524 --> 01:40:56,664
+Now that series over here is called the Taylor series. Taylor series associated with the function f of x at x equals a.
+
+836
+01:40:57,444 --> 01:41:01,064
+Now let's go back here.
+
+837
+01:41:04,064 --> 01:41:04,584
+So.
+
+838
+01:41:08,979 --> 01:41:38,979
+Bu, bu
+
+839
+01:41:38,979 --> 01:41:42,919
+at x equals a is this series, the series I wrote on the board.
+
+840
+01:41:43,459 --> 01:41:53,119
+K equals zero to infinity, the kth derivative of f at a divided by k factorial times x minus a to the power k, which can be expanded this way.
+
+841
+01:41:54,519 --> 01:42:08,619
+And as a special case, if we take x equals, if we take a to be zero, if we take a to be zero, just replace a with zero here, we get f kth derivative of f at zero over k factorial times x to the power k,
+
+842
+01:42:08,619 --> 01:42:15,219
+which is this series over here, f zero plus f prime zero x plus f double prime zero over two factorial x squared and so on.
+
+843
+01:42:16,159 --> 01:42:21,500
+The Taylor series generated by x equals zero has a special name, it's called Maclaurin series.
+
+844
+01:42:23,519 --> 01:42:29,119
+Again, Maclaurin series is just a special case of a Taylor series, it's the Taylor series at x equals zero.
+
+845
+01:42:32,299 --> 01:42:38,439
+For example, find the Taylor series generated by this function, f of x equals one over x,
+
+846
+01:42:38,619 --> 01:42:39,979
+at a equals two.
+
+847
+01:42:43,039 --> 01:42:46,079
+Okay, we need to find its derivatives at two.
+
+848
+01:42:46,939 --> 01:42:47,699
+That's what we need.
+
+849
+01:42:48,119 --> 01:42:56,500
+So to find the, you need to find all derivatives of f at the point a.
+
+850
+01:42:57,339 --> 01:43:02,759
+And then rest is divided by k factorial times x minus a to the power k, the rest is found.
+
+851
+01:43:02,759 --> 01:43:09,639
+So the only factor over here that depends on f is this one, is kth derivative at the point a.
+
+852
+01:43:11,159 --> 01:43:13,099
+So, one over x, f of x is one over x.
+
+853
+01:43:13,839 --> 01:43:16,319
+In other words, f of x is x to the power minus one.
+
+854
+01:43:16,799 --> 01:43:18,959
+Its derivative is minus x to the power minus two.
+
+855
+01:43:19,059 --> 01:43:26,919
+Its second derivative is minus two times this, which is two factorial times x to the power minus three.
+
+856
+01:43:26,919 --> 01:43:34,399
+Then we take the third derivative, we'll get minus three times two factorial x to the power minus four here.
+
+857
+01:43:34,839 --> 01:43:37,219
+So we will get minus three factorial actually.
+
+858
+01:43:37,339 --> 01:43:43,619
+And in general, in the nth derivative, of course, here you see plus, minus, plus.
+
+859
+01:43:44,259 --> 01:43:47,379
+In the next derivative, we will get a minus three in front, so it's going to be minus.
+
+860
+01:43:47,619 --> 01:43:49,959
+So it's called like plus, minus, plus, minus.
+
+861
+01:43:49,959 --> 01:43:53,719
+So in general, we have such a term, minus one to the power n as a factor.
+
+862
+01:43:54,359 --> 01:43:57,119
+And then we have the n factorial term.
+
+863
+01:43:58,399 --> 01:44:01,099
+Here in this third, second derivative, we have two factorial.
+
+864
+01:44:01,239 --> 01:44:03,599
+In the third derivative, this three will come in front.
+
+865
+01:44:03,719 --> 01:44:04,879
+We will get a three factorial.
+
+866
+01:44:05,359 --> 01:44:11,459
+In the fourth derivative, when we differentiate x to the power minus four, another minus four will come in front.
+
+867
+01:44:11,599 --> 01:44:13,419
+We'll get four factorial and so on.
+
+868
+01:44:13,539 --> 01:44:16,259
+n factorial times x to the power minus n plus one.
+
+869
+01:44:16,259 --> 01:44:19,919
+So in the first derivative, we will get minus two.
+
+870
+01:44:20,019 --> 01:44:21,759
+In the second derivative, we get minus three.
+
+871
+01:44:21,839 --> 01:44:23,379
+In the third derivative, we get minus four.
+
+872
+01:44:23,500 --> 01:44:25,859
+In general, in the nth derivative, we will get minus n plus one.
+
+873
+01:44:26,699 --> 01:44:30,259
+So we need the value of this at x equals two.
+
+874
+01:44:31,599 --> 01:44:34,199
+So when is x equal to two, what do we get?
+
+875
+01:44:35,439 --> 01:44:36,699
+F two is one over two.
+
+876
+01:44:36,919 --> 01:44:39,659
+F prime two is one over two minus one over two squared.
+
+877
+01:44:40,859 --> 01:44:41,259
+This.
+
+878
+01:44:41,259 --> 01:44:52,279
+The second derivative of x at two is two factorial times two to the power minus three.
+
+879
+01:44:52,399 --> 01:44:54,619
+And if we divide it by two factorial, we get this.
+
+880
+01:44:55,419 --> 01:45:02,519
+And in general, the nth derivative of x, the nth derivative of f at two divided by n factorial.
+
+881
+01:45:02,759 --> 01:45:05,599
+If we divide by n factorial, we get minus one to the power n times.
+
+882
+01:45:05,599 --> 01:45:06,599
+And if we divide by n factorial, we get minus one to the power n times.
+
+883
+01:45:06,599 --> 01:45:21,599
+So we get minus one to the power n times.
+
+884
+01:45:06,036 --> 01:45:09,435
+2 to the power minus n plus 1, which is over 2 to the power n plus 1.
+
+885
+01:45:10,216 --> 01:45:15,615
+So, the Taylor series, this Taylor series over here is this term.
+
+886
+01:45:16,235 --> 01:45:18,036
+n-teritle of a divided by n factorial.
+
+887
+01:45:18,475 --> 01:45:21,056
+n-teritle of a divided by n factorial is this.
+
+888
+01:45:22,336 --> 01:45:24,695
+Minus 1 to the power n over 2 to the power n plus 1.
+
+889
+01:45:25,716 --> 01:45:31,615
+Times, times this x minus 2 to the power n.
+
+890
+01:45:31,615 --> 01:45:37,355
+So, this Taylor series is this.
+
+891
+01:45:37,435 --> 01:45:41,136
+Minus 1 to the power n over 2 to the power n plus 1.
+
+892
+01:45:41,216 --> 01:45:43,615
+This term times x minus 2 to the power n.
+
+893
+01:45:44,815 --> 01:45:49,416
+So, 1 over 2 minus x minus 2 over 2 squared plus x minus 2 squared over 2 squared and so on.
+
+894
+01:45:49,475 --> 01:45:50,115
+It goes like that.
+
+895
+01:45:51,015 --> 01:45:55,416
+But when we look at this Taylor series over here, it's actually a geometric series.
+
+896
+01:45:55,695 --> 01:45:59,195
+The geometric series, first term is 1 over 2.
+
+897
+01:45:59,195 --> 01:46:02,695
+This common ratio is minus x minus 2 over 2.
+
+898
+01:46:03,176 --> 01:46:06,395
+Each term is minus x minus 2 over 2 times the previous one.
+
+899
+01:46:07,336 --> 01:46:12,195
+So, it converges absolutely when its radius is between minus 1 and 1.
+
+900
+01:46:12,956 --> 01:46:18,876
+So, this being the absolute value of this being less than 1 means absolute value of x minus 2 is less than 2.
+
+901
+01:46:19,296 --> 01:46:23,195
+So, x minus 2 is between minus 2 and 2, which means x is between 0 and 4.
+
+902
+01:46:23,195 --> 01:46:33,956
+So, on this interval, when x is between 0 and 4, in other words, geometric series sums to a over 1 minus r.
+
+903
+01:46:34,596 --> 01:46:37,056
+1 minus this is 1 plus x minus 2 over 2.
+
+904
+01:46:37,315 --> 01:46:38,216
+Then we simplify it.
+
+905
+01:46:38,235 --> 01:46:38,956
+We get 1 over x.
+
+906
+01:46:39,315 --> 01:46:43,416
+That's the function we started with.
+
+907
+01:46:43,416 --> 01:46:47,315
+Actually, we started with the function f of x equals 1 over x.
+
+908
+01:46:47,956 --> 01:46:56,015
+By finding its derivatives and evaluating at a, we found its Taylor series at a equals 2.
+
+909
+01:46:57,916 --> 01:47:03,475
+And that Taylor series converges to the function we started with on this interval.
+
+910
+01:47:03,475 --> 01:47:10,515
+So, on this interval, the Taylor series of the function 1 over x converges to the function 1 over x.
+
+911
+01:47:11,076 --> 01:47:16,076
+So, that's that way we found a way of expressing, for example, f of x equals 1 over x.
+
+912
+01:47:19,764 --> 01:47:21,764
+Evet, neyler polynomials.
+
+913
+01:47:23,203 --> 01:47:23,764
+Şimdi,
+
+914
+01:47:25,043 --> 01:47:27,444
+if we look at the Taylor series and cut it
+
+915
+01:47:28,003 --> 01:47:28,963
+at the nth term,
+
+916
+01:47:29,604 --> 01:47:29,923
+this,
+
+917
+01:47:30,724 --> 01:47:31,884
+the nth derivative of a,
+
+918
+01:47:32,564 --> 01:47:35,243
+f at a over m factorial times x minus a to power n.
+
+919
+01:47:35,404 --> 01:47:37,203
+So, we don't have plus dot dot dot here.
+
+920
+01:47:37,844 --> 01:47:38,583
+We cut it there.
+
+921
+01:47:39,384 --> 01:47:40,444
+If we cut it there,
+
+922
+01:47:40,604 --> 01:47:42,484
+that polynomial is called
+
+923
+01:47:42,484 --> 01:47:44,043
+a Taylor polynomial over n.
+
+924
+01:47:45,163 --> 01:47:47,083
+That's just the definition of Taylor polynomial.
+
+925
+01:47:47,083 --> 01:47:51,404
+Okay, now let's find the Taylor series
+
+926
+01:47:51,404 --> 01:47:53,923
+and Taylor polynomial is generated by this function.
+
+927
+01:47:53,923 --> 01:47:56,163
+f of x equals e to power x at x equals zero.
+
+928
+01:47:56,484 --> 01:47:58,184
+Basically, we are going to find the Macauland series
+
+929
+01:47:58,184 --> 01:48:00,684
+of f of x equals e to power x.
+
+930
+01:48:01,724 --> 01:48:03,784
+Now, e to power x is a very nice function.
+
+931
+01:48:03,944 --> 01:48:04,604
+In terms of what?
+
+932
+01:48:04,663 --> 01:48:05,543
+In terms of its derivatives.
+
+933
+01:48:05,923 --> 01:48:07,144
+Its derivative is e to power x.
+
+934
+01:48:07,444 --> 01:48:08,884
+Second derivative is e to power x.
+
+935
+01:48:08,944 --> 01:48:10,304
+Its third derivative is e to power x.
+
+936
+01:48:10,684 --> 01:48:12,743
+All derivatives of it is itself.
+
+937
+01:48:13,264 --> 01:48:13,923
+e to power x.
+
+938
+01:48:13,923 --> 01:48:18,083
+So, the nth derivative of f at x is just e to power x.
+
+939
+01:48:19,404 --> 01:48:21,083
+So, evaluated at zero.
+
+940
+01:48:21,463 --> 01:48:23,864
+nth derivative is e to power zero, which is one.
+
+941
+01:48:25,083 --> 01:48:27,804
+So, for every n, this value is one.
+
+942
+01:48:28,123 --> 01:48:29,384
+So, what is this Taylor series?
+
+943
+01:48:29,684 --> 01:48:32,123
+F zero plus f prime zero x plus f double prime zero
+
+944
+01:48:32,123 --> 01:48:33,784
+over two factorial x squared and so on.
+
+945
+01:48:34,423 --> 01:48:36,144
+So, these f zero, f prime zero,
+
+946
+01:48:36,243 --> 01:48:37,623
+double prime zero, these are all one.
+
+947
+01:48:38,144 --> 01:48:40,944
+We get this one plus x plus x squared over two plus this.
+
+948
+01:48:40,944 --> 01:48:43,543
+which is equal to this.
+
+949
+01:48:44,684 --> 01:48:45,884
+This is the Maclaren series.
+
+950
+01:48:45,963 --> 01:48:46,904
+And we have seen this.
+
+951
+01:48:47,764 --> 01:48:48,524
+Let me show it.
+
+952
+01:48:48,604 --> 01:48:50,764
+One plus x plus x squared over two plus this.
+
+953
+01:48:50,963 --> 01:48:52,864
+Plus x over n over time factor and so on.
+
+954
+01:48:53,304 --> 01:48:54,644
+We have seen it here.
+
+955
+01:48:55,743 --> 01:48:56,824
+Let me go back.
+
+956
+01:48:56,824 --> 01:49:20,324
+Let me show it.
+
+957
+01:49:01,524 --> 01:50:05,564
+Bu bir example.
+
+958
+01:50:11,699 --> 01:50:18,260
+F of x equals cosine x. Derivative is minus sine x. Then its second derivative is minus cosine x.
+
+959
+01:50:18,720 --> 01:50:23,679
+Its third derivative is sine x. Then its fourth derivative is going to be cosine x again.
+
+960
+01:50:24,460 --> 01:50:30,399
+So it's going to be four periodic. So its derivatives are going to move like cosine x
+
+961
+01:50:30,399 --> 01:50:36,239
+minus sine x minus cosine x sine x. Then again cosine x minus sine x minus cosine x sine x and
+
+962
+01:50:36,239 --> 01:50:41,880
+so on. So we are going to look at the values of this at x equals zero. So when x is equal
+
+963
+01:50:41,880 --> 01:50:48,559
+to zero, sine x is zero. So these on the right side, first derivative, third derivative, fifth
+
+964
+01:50:48,559 --> 01:50:54,119
+derivative, seventh derivative, the odd derivatives are going to be all zero. And the cosine zero
+
+965
+01:50:54,119 --> 01:50:58,739
+is one. So the even derivatives are going to be one minus one, one minus one, and so on
+
+966
+01:50:58,739 --> 01:51:07,800
+like that. Oh, is all derivatives. And plus first derivative. These are odd or at zero
+
+967
+01:51:07,800 --> 01:51:14,699
+are all zero. The even derivatives F to n to answer their with zero is minus one to power.
+
+968
+01:51:14,699 --> 01:51:21,859
+And why is that so? So the itself is one second derivative is minus one fourth derivative is
+
+969
+01:51:21,859 --> 01:51:29,000
+plus plus one sixth derivative is minus one and so on. So when n is an even number, we will
+
+970
+01:51:29,000 --> 01:51:36,920
+get plus one when n is an odd number, we'll get minus one. As the two nth derivative.
+
+971
+01:51:36,920 --> 01:51:47,079
+So the Taylor series generated by F is going to be this. So one plus zero times x minus minus
+
+972
+01:51:47,079 --> 01:51:52,979
+one over two factorial times x squared plus zero times x cubed plus one over four factorial
+
+973
+01:51:52,979 --> 01:51:59,579
+x to the power of four and so on. So we will get this k equals zero to infinity minus one to
+
+974
+01:51:59,579 --> 01:52:06,319
+the power k x to the power 2k over 2k factorial is basically one minus x squared over two factorial
+
+975
+01:52:06,319 --> 01:52:11,079
+plus x to the power four over four factorial minus x to the power six over six factorial and
+
+976
+01:52:11,079 --> 01:52:22,079
+so on. So this is the Maglioran series for the function cosine x and actually using the ratio
+
+977
+01:52:22,079 --> 01:52:29,119
+test, we can easily show that this series converges everywhere. Its radius of convergence is infinite.
+
+978
+01:52:29,119 --> 01:52:31,279
+And its convergence for all real numbers.
+
+979
+01:52:35,380 --> 01:52:44,079
+Okay, here are the Taylor polynomials for this function and so on. Taylor polynomials, we can see on the picture that they converge to the function cosine x actually.
+
+980
+01:52:47,119 --> 01:52:58,539
+Let's get this example. All right. What was it? Convergence of Taylor series. We are not going to look at that. We skip this section. We skip this section 10.9. Okay.
+
+981
+01:53:34,163 --> 01:53:39,923
+Okay, we'll talk about some applications, but before that, let's look at this. Let me show you something.
+
+982
+01:53:41,543 --> 01:53:44,023
+Let's understand the use of these.
+
+983
+01:54:06,771 --> 01:54:11,792
+So, for example, think of transcendental numbers like pi e.
+
+984
+01:54:13,532 --> 01:54:16,271
+So pi, for example, what's the exact value of pi?
+
+985
+01:54:16,412 --> 01:54:19,992
+Pi is 3.1416, something like that.
+
+986
+01:54:20,811 --> 01:54:26,591
+So, I mean, after the point, it has infinitely many decimal places.
+
+987
+01:54:27,231 --> 01:54:28,872
+And it's not a rational number.
+
+988
+01:54:28,992 --> 01:54:30,332
+I mean, it does not repeat.
+
+989
+01:54:31,131 --> 01:54:33,271
+It does not have a regular structure.
+
+990
+01:54:33,271 --> 01:54:39,931
+It goes like pi equal to like 3.1416, it goes like that.
+
+991
+01:54:41,032 --> 01:54:43,731
+So, what's the actual value of it?
+
+992
+01:54:44,532 --> 01:54:45,112
+God knows.
+
+993
+01:54:45,511 --> 01:54:51,731
+We human beings know the exact value of pi up to some decimal places.
+
+994
+01:54:52,971 --> 01:54:56,792
+Not many, a few hundreds, a few hundred decimal places.
+
+995
+01:54:56,971 --> 01:54:58,832
+Up to that point, we know the value of pi.
+
+996
+01:54:59,412 --> 01:55:01,832
+I mean, mathematicians have computed this value.
+
+997
+01:55:01,832 --> 01:55:03,971
+But we don't know the exact value.
+
+998
+01:55:04,271 --> 01:55:04,912
+Of course, we cannot.
+
+999
+01:55:06,612 --> 01:55:09,452
+I mean, maybe we can sometime.
+
+1000
+01:55:10,332 --> 01:55:11,251
+But today we don't.
+
+1001
+01:55:11,711 --> 01:55:12,851
+The same is for e.
+
+1002
+01:55:13,391 --> 01:55:17,211
+e is a number.
+
+1003
+01:55:18,572 --> 01:55:22,631
+2.71882, something like that.
+
+1004
+01:55:22,631 --> 01:55:25,511
+We don't know its exact value.
+
+1005
+01:55:26,072 --> 01:55:28,251
+But how are we going to compute?
+
+1006
+01:55:28,351 --> 01:55:31,652
+How can we compute its approximate value for e?
+
+1007
+01:55:31,652 --> 01:55:39,271
+So, when you use your calculator, your calculator may can...
+
+1008
+01:55:42,032 --> 01:55:43,351
+calculation with the number.
+
+1009
+01:55:43,471 --> 01:55:46,051
+It shows you some number up to some decimal places.
+
+1010
+01:55:46,171 --> 01:55:49,271
+How does the calculator calculate the value of e?
+
+1011
+01:55:49,692 --> 01:55:53,351
+A calculator can only do additional multiplication.
+
+1012
+01:55:53,351 --> 01:56:02,532
+Those are the simple operations that can be implemented in a calculator using electronic circuits.
+
+1013
+01:56:03,192 --> 01:56:03,952
+Addition multiplication.
+
+1014
+01:56:04,412 --> 01:56:06,832
+How does it compute the value of e?
+
+1015
+01:56:06,832 --> 01:56:22,391
+So, what we see is 1 plus x plus x to 10 over 2 factorial plus x to power 3 over 3 factorial plus x to power 4 over 4 factorial.
+
+1016
+01:56:25,671 --> 01:56:30,652
+So, we have seen that this is the Maclaurin series of the function e to power x.
+
+1017
+01:56:30,652 --> 01:56:35,511
+We haven't proven it actually, but it does converge to the function e to power x.
+
+1018
+01:56:36,192 --> 01:56:40,311
+So, this power series converges to the function e to power x where...
+
+1019
+01:56:41,692 --> 01:56:47,751
+For all values of x, it converges everywhere.
+
+1020
+01:56:49,131 --> 01:56:50,311
+To the function e to power x.
+
+1021
+01:56:50,771 --> 01:56:52,152
+Now, for x equals 1.
+
+1022
+01:56:54,211 --> 01:56:55,211
+For x equals 1.
+
+1023
+01:56:55,711 --> 01:56:56,872
+Then we let x equals 1.
+
+1024
+01:56:56,931 --> 01:56:57,511
+What do we get?
+
+1025
+01:56:57,511 --> 01:57:09,051
+1 plus 1 plus 1 plus 1 over 2 plus 1 over 3 factorial plus 1 over 4 factorial plus 1 over 5 factorial.
+
+1026
+01:57:10,171 --> 01:57:10,872
+And so on.
+
+1027
+01:57:12,271 --> 01:57:17,051
+So, some of these infinitely many terms is equal to the number e.
+
+1028
+01:57:17,652 --> 01:57:23,832
+And let's see on a calculator how close, how fast it converges to the number e.
+
+1029
+01:57:25,112 --> 01:57:25,771
+Let's see.
+
+1030
+01:57:27,511 --> 01:57:57,492
+Let me open my calculator again.
+
+1031
+01:57:34,996 --> 01:57:36,735
+Okay, first of all, what is E?
+
+1032
+01:57:38,456 --> 01:57:42,155
+When I press E on my calculator, it shows this number.
+
+1033
+01:57:42,935 --> 01:57:44,056
+Let me write it on the book.
+
+1034
+01:57:45,115 --> 01:57:50,096
+2.71, 828182.
+
+1035
+01:57:53,695 --> 01:57:55,096
+828182.
+
+1036
+01:57:55,516 --> 01:57:58,096
+84590.
+
+1037
+01:58:01,195 --> 01:58:02,195
+4523.
+
+1038
+01:58:04,996 --> 01:58:06,136
+And so on.
+
+1039
+01:58:06,256 --> 01:58:07,235
+I'm not going to write all.
+
+1040
+01:58:08,416 --> 01:58:09,096
+Goes like that.
+
+1041
+01:58:10,496 --> 01:58:12,516
+Okay, now let's compute.
+
+1042
+01:58:14,815 --> 01:58:17,695
+Let's compute this sum.
+
+1043
+01:58:18,275 --> 01:58:21,235
+1 plus 1 plus 1 over 2 factorial plus and so on.
+
+1044
+01:58:21,275 --> 01:58:22,815
+So 1 plus 1 is 2.
+
+1045
+01:58:23,855 --> 01:58:29,516
+2 plus...
+
+1046
+01:58:29,516 --> 01:58:34,336
+1 over t is 2 plus 0.5.
+
+1047
+01:58:34,996 --> 01:58:36,376
+That's 2.5 already.
+
+1048
+01:58:36,376 --> 01:58:56,496
+2.5 already.
+
+1049
+01:58:40,435 --> 01:58:40,915
+Okay.
+
+1050
+01:58:42,475 --> 01:58:48,215
+Plus 1 over 3.
+
+1051
+01:58:49,715 --> 01:58:50,755
+We get this.
+
+1052
+01:58:50,835 --> 01:58:51,715
+2.83.
+
+1053
+01:58:54,175 --> 01:58:54,695
+Sorry.
+
+1054
+01:58:55,115 --> 01:58:56,015
+It's not 1 over 3.
+
+1055
+01:58:56,095 --> 01:58:56,255
+Sorry.
+
+1056
+01:58:56,775 --> 01:58:58,956
+It's 1 over 3 factorial.
+
+1057
+01:58:59,095 --> 01:58:59,695
+Not 1 over 3.
+
+1058
+01:58:59,755 --> 01:58:59,915
+Sorry.
+
+1059
+01:59:00,415 --> 01:59:05,115
+So 2.5 plus 1 over 3 factorial, which is 1 over 6.
+
+1060
+01:59:05,715 --> 01:59:06,715
+1 over 6.
+
+1061
+01:59:07,855 --> 01:59:08,875
+We got to this.
+
+1062
+01:59:08,875 --> 01:59:11,956
+Then the next term is 1 over 4 factorial.
+
+1063
+01:59:12,335 --> 01:59:13,615
+That's 1 over 24.
+
+1064
+01:59:14,215 --> 01:59:17,915
+So plus 1 over 24.
+
+1065
+01:59:19,235 --> 01:59:22,055
+We got already very close to the number e, right?
+
+1066
+01:59:22,775 --> 01:59:25,235
+Then the next is going to be 1 over 5 factorial.
+
+1067
+01:59:25,415 --> 01:59:26,755
+5 factorial is 120.
+
+1068
+01:59:27,555 --> 01:59:32,895
+So plus 1 over 5 factorial.
+
+1069
+01:59:33,615 --> 01:59:35,695
+That's 2.71666.
+
+1070
+01:59:36,835 --> 01:59:37,355
+Okay.
+
+1071
+01:59:37,415 --> 01:59:38,135
+Let me continue.
+
+1072
+01:59:38,135 --> 02:00:08,115
+plus 1 over 5 factorial.
+
+1073
+02:00:00,115 --> 02:00:01,115
+I think that's enough.
+
+1074
+02:00:01,395 --> 02:00:05,956
+I mean, even if you got just up to 1 over 7 factorial,
+
+1075
+02:00:06,615 --> 02:00:07,655
+there are infinitely many terms.
+
+1076
+02:00:07,735 --> 02:00:09,136
+You just added 8 of them.
+
+1077
+02:00:09,315 --> 02:00:11,695
+And this is already very close to the number E.
+
+1078
+02:00:12,496 --> 02:00:14,176
+2.7182.
+
+1079
+02:00:14,815 --> 02:00:16,376
+So up to this point is correct now.
+
+1080
+02:00:17,036 --> 02:00:19,956
+If you keep adding more terms, more terms,
+
+1081
+02:00:20,716 --> 02:00:22,956
+you'll get more correct decimal places.
+
+1082
+02:00:23,876 --> 02:00:26,956
+And actually that's how the calculator computes it.
+
+1083
+02:00:27,456 --> 02:00:29,496
+The calculator doesn't know the exact value of E.
+
+1084
+02:00:29,496 --> 02:00:33,395
+It just computes its McLaren series up to some point.
+
+1085
+02:00:33,855 --> 02:00:37,515
+So if you compute the McLaren series up to the 100th term,
+
+1086
+02:00:38,076 --> 02:00:39,876
+you'll get a very close number to the number E.
+
+1087
+02:00:40,275 --> 02:00:43,136
+You'll get it correct up to many decimal places.
+
+1088
+02:00:43,615 --> 02:00:45,216
+That's what the calculator does actually.
+
+1089
+02:00:45,536 --> 02:00:48,615
+It doesn't calculate the actual value of E.
+
+1090
+02:00:48,655 --> 02:00:50,576
+It does calculate an approximate value
+
+1091
+02:00:50,576 --> 02:00:53,055
+by computing its McLaren series.
+
+1092
+02:00:53,655 --> 02:00:56,015
+Why is it easy for the McLaren series?
+
+1093
+02:00:56,176 --> 02:00:57,315
+Because for the McLaren series,
+
+1094
+02:00:57,315 --> 02:01:00,115
+the only operations we are making are addition, subtraction,
+
+1095
+02:01:00,735 --> 02:01:02,876
+multiplication, and division for basic operations.
+
+1096
+02:01:06,176 --> 02:01:10,256
+So that's the use of these Taylor series, McLaren series for functions.
+
+1097
+02:01:10,935 --> 02:01:12,015
+Okay, let me close it.
+
+1098
+02:01:12,275 --> 02:01:13,395
+Let me go back to this.
+
+1099
+02:01:13,395 --> 02:01:18,355
+Now, let's talk about some other applications of Taylor series.
+
+1100
+02:01:20,355 --> 02:01:21,256
+Algebraic...
+
+1101
+02:01:21,256 --> 02:01:23,576
+We skip this.
+
+1102
+02:01:25,055 --> 02:01:27,496
+Evaluating non-elementary integrals.
+
+1103
+02:01:27,735 --> 02:01:28,376
+This is one application.
+
+1104
+02:01:30,055 --> 02:01:31,115
+Look at this.
+
+1105
+02:01:31,115 --> 02:01:34,716
+So, for example, integral of sine x squared dx.
+
+1106
+02:01:35,256 --> 02:01:36,695
+How can we evaluate this integral?
+
+1107
+02:01:37,515 --> 02:01:44,595
+Well, making use of the methods you have seen in math 1,
+
+1108
+02:01:45,716 --> 02:01:47,256
+you cannot integrate this.
+
+1109
+02:01:47,615 --> 02:01:50,095
+Use substitution, use integration by parts,
+
+1110
+02:01:50,756 --> 02:01:52,355
+whatever you have seen in math 1.
+
+1111
+02:01:53,416 --> 02:01:54,136
+Use those.
+
+1112
+02:01:54,216 --> 02:01:55,256
+You cannot integrate this.
+
+1113
+02:01:55,256 --> 02:01:58,336
+But what we can do is,
+
+1114
+02:01:58,615 --> 02:01:59,256
+we know...
+
+1115
+02:02:00,256 --> 02:02:01,256
+We know...
+
+1116
+02:02:01,256 --> 02:02:04,855
+We haven't written it, actually.
+
+1117
+02:02:05,855 --> 02:02:07,515
+Let me show that first.
+
+1118
+02:02:08,855 --> 02:02:10,216
+End of this section.
+
+1119
+02:02:11,735 --> 02:02:13,036
+Okay, this is important.
+
+1120
+02:02:13,036 --> 02:02:45,676
+This is important.
+
+1121
+02:02:20,275 --> 02:02:24,855
+These are frequently used Taylor series.
+
+1122
+02:02:24,996 --> 02:02:26,015
+You need to know these series.
+
+1123
+02:02:26,496 --> 02:02:26,715
+Okay.
+
+1124
+02:02:27,175 --> 02:02:28,336
+1 over 1 minus x.
+
+1125
+02:02:28,855 --> 02:02:31,715
+That's the geometric series we started with the very first one.
+
+1126
+02:02:32,876 --> 02:02:34,855
+1 plus x plus x squared plus and so on.
+
+1127
+02:02:35,315 --> 02:02:38,076
+It converges when I think x is between minus 1 and 1.
+
+1128
+02:02:38,416 --> 02:02:41,195
+And if you replace x with minus x, you get this one.
+
+1129
+02:02:41,635 --> 02:02:43,055
+Just replace x with minus x.
+
+1130
+02:02:43,695 --> 02:02:45,255
+It converges on the same interval.
+
+1131
+02:02:45,916 --> 02:02:48,755
+This power series converges to 1 over 1 plus x.
+
+1132
+02:02:48,755 --> 02:02:50,195
+e to the power x.
+
+1133
+02:02:50,675 --> 02:02:52,296
+That's what we have just seen.
+
+1134
+02:02:52,635 --> 02:02:55,195
+1 plus x plus x squared over 2 factorial and so on.
+
+1135
+02:02:55,296 --> 02:02:56,595
+It's over n over n factorial.
+
+1136
+02:02:57,036 --> 02:02:58,135
+It converges everywhere.
+
+1137
+02:03:00,036 --> 02:03:01,695
+We have seen the cosine x.
+
+1138
+02:03:03,376 --> 02:03:08,975
+Sine x is 1 minus x squared over 2 factorial plus x to the power over 4 over 4 factorial and so on.
+
+1139
+02:03:09,496 --> 02:03:10,036
+It's this.
+
+1140
+02:03:10,496 --> 02:03:12,076
+Again, it converges everywhere.
+
+1141
+02:03:12,895 --> 02:03:18,695
+And actually, if you integrate cosine x, you can directly find sine x just like how we found cosine.
+
+1142
+02:03:18,755 --> 02:03:18,895
+x.
+
+1143
+02:03:19,015 --> 02:03:20,055
+Start with sine x.
+
+1144
+02:03:20,435 --> 02:03:23,496
+Find its derivative and find its Taylor series.
+
+1145
+02:03:24,275 --> 02:03:26,095
+We will find this series over here.
+
+1146
+02:03:26,735 --> 02:03:30,155
+But also, we can just integrate cosine x.
+
+1147
+02:03:30,235 --> 02:03:32,336
+If you integrate cosine x, integral of 1 is x.
+
+1148
+02:03:32,855 --> 02:03:34,916
+Integral of x squared is x cubed over 3.
+
+1149
+02:03:34,916 --> 02:03:36,836
+We get x cubed over 3 factorial.
+
+1150
+02:03:36,836 --> 02:03:40,135
+Then integral of x to the power 4 is x to the power 5 over 5.
+
+1151
+02:03:40,695 --> 02:03:43,215
+So, 5 times 4 factorial is going to be 5 factorial and so on.
+
+1152
+02:03:43,675 --> 02:03:44,935
+We can also do it like that.
+
+1153
+02:03:45,615 --> 02:03:46,456
+Sine x is this.
+
+1154
+02:03:47,036 --> 02:03:48,836
+It converges everywhere as well.
+
+1155
+02:03:49,015 --> 02:03:53,095
+So, you need to know these power series examples.
+
+1156
+02:03:53,595 --> 02:03:54,775
+We have seen these two as well.
+
+1157
+02:03:54,895 --> 02:03:55,836
+Ln1 plus x.
+
+1158
+02:03:55,836 --> 02:04:00,015
+We have found this one by integrating this one.
+
+1159
+02:04:00,475 --> 02:04:04,015
+If you integrate this one, 1 over 1 plus x, you'll find Ln1 plus x.
+
+1160
+02:04:04,435 --> 02:04:07,195
+Which is x minus x squared over 2 plus x cubed over 3 and so on.
+
+1161
+02:04:07,695 --> 02:04:09,115
+It converges on this interval.
+
+1162
+02:04:09,775 --> 02:04:11,655
+It converges at the right hand point as well.
+
+1163
+02:04:12,496 --> 02:04:17,395
+Also, if you replace x with x squared here and then integrate it.
+
+1164
+02:04:17,395 --> 02:04:18,916
+We have done this.
+
+1165
+02:04:19,235 --> 02:04:20,536
+We found tangent inverse x.
+
+1166
+02:04:20,635 --> 02:04:21,076
+Which is this.
+
+1167
+02:04:21,155 --> 02:04:24,555
+X minus x cubed over 3 plus x to the power 5 over 5 and so on.
+
+1168
+02:04:25,435 --> 02:04:28,975
+Which converges at both hand points actually as well.
+
+1169
+02:04:29,615 --> 02:04:31,456
+So, you need to know these one, two.
+
+1170
+02:04:34,015 --> 02:04:37,155
+Is, I mean, the geometric series.
+
+1171
+02:04:38,036 --> 02:04:42,475
+Exponential function into power x, sine x, cosine x, Ln1 plus x and tangent inverse x.
+
+1172
+02:04:42,475 --> 02:04:45,515
+You need to know all these power series.
+
+1173
+02:04:45,515 --> 02:04:48,135
+is the frequently used macro series actually.
+
+1174
+02:04:52,659 --> 02:04:56,279
+Alright, now let me go back to example.
+
+1175
+02:05:00,532 --> 02:05:02,811
+Evaluating non-elementary integrals.
+
+1176
+02:05:02,811 --> 02:05:03,132
+So,
+
+1177
+02:05:06,132 --> 02:05:06,792
+Evaluate this
+
+1178
+02:05:06,792 --> 02:05:09,891
+integral.
+
+1179
+02:05:10,471 --> 02:05:12,152
+We cannot evaluate it directly, but
+
+1180
+02:05:12,152 --> 02:05:14,652
+just, we know the expansion
+
+1181
+02:05:14,652 --> 02:05:16,612
+of sine x, just replace x with x squared.
+
+1182
+02:05:17,311 --> 02:05:18,672
+In the Taylor series
+
+1183
+02:05:18,672 --> 02:05:20,712
+expansion of sine x, replace x with
+
+1184
+02:05:20,712 --> 02:05:22,612
+x squared, we get sine x squared, which is
+
+1185
+02:05:22,612 --> 02:05:24,632
+x squared minus x squared
+
+1186
+02:05:24,632 --> 02:05:26,652
+cubed over 3 factorial plus x
+
+1187
+02:05:26,652 --> 02:05:29,132
+squared to power 5 over 5 factorial and so on.
+
+1188
+02:05:29,132 --> 02:05:31,332
+minus x to power 4 x to power 7 factorial and so on.
+
+1189
+02:05:31,712 --> 02:05:32,052
+Now,
+
+1190
+02:05:33,212 --> 02:05:35,412
+the integration, term by term integration
+
+1191
+02:05:35,412 --> 02:05:37,271
+theorem says that the integral of the left-hand
+
+1192
+02:05:37,271 --> 02:05:39,511
+side is going to be the term by term integration
+
+1193
+02:05:39,511 --> 02:05:41,471
+of the right-hand side, plus a constant.
+
+1194
+02:05:41,952 --> 02:05:42,652
+So, this
+
+1195
+02:05:42,652 --> 02:05:44,891
+integral over here
+
+1196
+02:05:44,891 --> 02:05:47,311
+can be written as some constant
+
+1197
+02:05:47,311 --> 02:05:48,752
+plus the integral of this.
+
+1198
+02:05:49,112 --> 02:05:51,391
+x cubed over 3 minus x to power 7 over 7
+
+1199
+02:05:51,391 --> 02:05:53,252
+times 3 factorial plus x to power 11
+
+1200
+02:05:53,252 --> 02:05:55,231
+over 11 times 5 factorial and so on.
+
+1201
+02:05:55,971 --> 02:05:56,231
+So,
+
+1202
+02:05:57,851 --> 02:05:58,311
+although,
+
+1203
+02:05:58,311 --> 02:06:01,431
+although we don't express this as a single
+
+1204
+02:06:01,431 --> 02:06:02,992
+function, we can,
+
+1205
+02:06:03,672 --> 02:06:04,492
+I mean, if we had,
+
+1206
+02:06:04,891 --> 02:06:06,231
+if we had
+
+1207
+02:06:06,231 --> 02:06:09,072
+definite integral like this,
+
+1208
+02:06:10,072 --> 02:06:12,332
+if we had a definite integral like this,
+
+1209
+02:06:12,391 --> 02:06:14,231
+instead of finding its actual value,
+
+1210
+02:06:14,292 --> 02:06:16,492
+we could find the approximate value for it.
+
+1211
+02:06:17,632 --> 02:06:19,552
+We didn't see the error estimation,
+
+1212
+02:06:19,692 --> 02:06:21,132
+so I'm just skipping that.
+
+1213
+02:06:22,132 --> 02:06:23,811
+We can find an approximate value
+
+1214
+02:06:23,811 --> 02:06:24,731
+for such an
+
+1215
+02:06:24,731 --> 02:06:28,311
+indefinite integral.
+
+1216
+02:06:28,992 --> 02:06:29,692
+Arctangents,
+
+1217
+02:06:29,752 --> 02:06:30,851
+we have already seen that.
+
+1218
+02:06:31,872 --> 02:06:31,971
+And,
+
+1219
+02:06:32,052 --> 02:06:32,452
+okay,
+
+1220
+02:06:32,532 --> 02:06:32,931
+the last,
+
+1221
+02:06:33,172 --> 02:06:35,212
+the last application is this,
+
+1222
+02:06:35,471 --> 02:06:36,952
+evaluating indeterminate forms.
+
+1223
+02:06:36,952 --> 02:06:40,592
+So,
+
+1224
+02:06:40,592 --> 02:06:41,431
+let's start with this.
+
+1225
+02:06:43,471 --> 02:06:43,832
+So,
+
+1226
+02:06:43,912 --> 02:06:44,212
+of course,
+
+1227
+02:06:45,552 --> 02:06:45,891
+let me,
+
+1228
+02:06:45,931 --> 02:06:46,811
+let me do it on the board.
+
+1229
+02:06:47,212 --> 02:06:48,311
+ln x over x minus 1.
+
+1230
+02:06:48,311 --> 02:06:57,712
+.
+
+1231
+02:07:17,908 --> 02:07:18,908
+Bakın, bu limit.
+
+1232
+02:07:19,908 --> 02:07:22,908
+Of course, using L'Hospital's rule, we can easily find this limit.
+
+1233
+02:07:23,908 --> 02:07:24,908
+Let's actually do it.
+
+1234
+02:07:32,724 --> 02:08:02,724
+İlk olarak bu bir yolu ile bir yolu ile bir yolu ile bir yolu ile bir yolu ile bir yolu ile bir yolu ile bir yolu ile bir yolu ile bir yolu ile bir yolu ile bir yolu ile bir yolu ile bir yolu ile bir yolu ile bir yolu ile bir yolu ile bir yolu ile bir yolu ile bir yolu ile bir yolu ile bir yolu ile bir yolu ile bir yolu ile bir yolu ile bir yolu ile bir yolu ile bir yolu ile bir yolu ile bir yolu ile bir yolu ile bir yolu ile bir yolu ile bir yolu ile bir yolu ile bir yolu ile bir yolu ile bir yolu ile bir yolu ile bir yolu ile bir yolu ile bir yolu ile bir yolu ile bir yolu ile bir yolu ile bir yolu ile bir yolu ile bir yolu ile bir yolu ile bir yolu ile bir yolu ile bir yolu ile bir yolu ile bir yolu ile bir yolu
+
+1235
+02:08:02,724 --> 02:08:53,224
+bir yolu ile bir yolu ile bir yolu ile bir yolu ile bir yolu ile bir yolu ile bir yolu ile bir yolu ile bir yolu ile bir yolu ile bir yolu ile bir yolu ile bir yolu ile bir yolu ile bir yolu ile bir yolu ile bir yolu ile bir yolu ile bir yolu ile bir yolu ile bir yolu ile bir yolu ile bir yolu ile bir yolu ile bir yolu ile bir yolu ile bir yolu ile bir yolu ile bir yolu ile bir yolu ile bir yolu ile bir yolu ile bir yolu ile bir yolu ile bir yolu ile bir yolu ile bir yolu ile bir yolu ile bir yolu ile bir yolu ile bir yolu ile bir yolu ile bir yolu ile bir yolu ile bir yolu ile bir yolu ile bir yolu ile bir yolu ile bir yolu ile bir yolu ile bir yolu ile bir yolu ile bir yolu ile bir yolu ile bir yolu ile bir
+
+1236
+02:08:56,724 --> 02:09:00,804
+I want to replace x with something so I get ln x.
+
+1237
+02:09:01,503 --> 02:09:03,484
+I can write ln x as 1 plus.
+
+1238
+02:09:04,423 --> 02:09:07,623
+I want to express this as 1 plus something.
+
+1239
+02:09:08,764 --> 02:09:09,784
+So 1 plus something.
+
+1240
+02:09:09,864 --> 02:09:11,904
+What is that something so that I get x?
+
+1241
+02:09:12,224 --> 02:09:13,864
+That something is x minus 1.
+
+1242
+02:09:15,083 --> 02:09:17,944
+So ln x is the same as ln 1 plus x minus 1.
+
+1243
+02:09:20,824 --> 02:09:21,304
+Okay?
+
+1244
+02:09:37,011 --> 02:09:43,631
+Ok, so to get an expansion for ln 1 plus x minus 1, here is replace x with x by x.
+
+1245
+02:09:44,051 --> 02:09:46,091
+Replace x with x minus 1, what do we get?
+
+1246
+02:09:46,192 --> 02:10:01,612
+x minus 1 minus x minus 1 squared over 2 plus x minus 1 cubed over 3 minus x minus 1 over 4 over 4 plus and so on.
+
+1247
+02:10:01,612 --> 02:10:08,572
+Where we just replace x with x minus 1, replace x with x minus 1, it's on this interval.
+
+1248
+02:10:08,991 --> 02:10:12,411
+When x minus 1 is between minus 1 and 1, including 1.
+
+1249
+02:10:12,692 --> 02:10:19,291
+So when we add 1 to this, it's true when x is between 0 and 2.
+
+1250
+02:10:19,671 --> 02:10:25,231
+So on this interval, on this interval, x is equal to this sum over here.
+
+1251
+02:10:27,051 --> 02:10:30,431
+Now what are we looking for? We are looking for element of x minus 1.
+
+1252
+02:10:31,612 --> 02:10:33,612
+What is element of x minus 1?
+
+1253
+02:10:38,228 --> 02:10:40,228
+İşte bu.
+
+1254
+02:10:40,228 --> 02:11:51,228
+Bu.
+
+1255
+02:11:54,323 --> 02:11:58,384
+Okay, another example, sin x minus tangent x over x cubed.
+
+1256
+02:11:59,263 --> 02:12:06,743
+Here, they use the tangent x, well, they use tangent x, which we haven't computed actually.
+
+1257
+02:12:07,643 --> 02:12:08,823
+Let me do it in a different way.
+
+1258
+02:12:09,603 --> 02:12:12,603
+I'm not going to do it on the way it's done on the book.
+
+1259
+02:12:13,323 --> 02:12:14,303
+Let me do it in a different way.
+
+1260
+02:12:14,384 --> 02:12:16,183
+Sin x minus tangent x over x cubed.
+
+1261
+02:12:19,384 --> 02:12:23,163
+Okay, again, you can do it using L'Hôpital's rule.
+
+1262
+02:12:39,315 --> 02:12:46,916
+So, the limit as x approaches 0, sin x minus tangent x over x cubed.
+
+1263
+02:12:47,715 --> 02:12:50,916
+Okay, let's first solve it using L'Opital's rule.
+
+1264
+02:12:51,515 --> 02:12:55,515
+Again, as x approaches 0, this is 0 minus 0 over 0, which is 0 over 0.
+
+1265
+02:12:56,916 --> 02:12:58,115
+0 over 0.
+
+1266
+02:12:59,515 --> 02:13:01,115
+So, let's just apply L'Opital's rule.
+
+1267
+02:13:02,215 --> 02:13:03,115
+What do we get?
+
+1268
+02:13:03,115 --> 02:13:06,115
+I'm not going to use any trick here.
+
+1269
+02:13:06,115 --> 02:13:10,115
+I'm just directly, I'm going to use, directly apply L'Opital's rule.
+
+1270
+02:13:11,115 --> 02:13:13,115
+Derivative of sine x is cosine x.
+
+1271
+02:13:13,916 --> 02:13:16,115
+Derivative of tangent x is second square x.
+
+1272
+02:13:17,115 --> 02:13:19,115
+Derivative of x cubed is 3x squared.
+
+1273
+02:13:20,715 --> 02:13:21,715
+So, what do we get?
+
+1274
+02:13:22,916 --> 02:13:24,115
+Cosine 0 is 1.
+
+1275
+02:13:24,715 --> 02:13:26,115
+Second 0 is 1.
+
+1276
+02:13:26,315 --> 02:13:27,916
+So, we get 1 minus 1 is 0.
+
+1277
+02:13:28,916 --> 02:13:29,916
+3 times 0 is 0.
+
+1278
+02:13:29,916 --> 02:13:30,916
+So, we get 0.
+
+1279
+02:13:30,916 --> 02:13:31,715
+We're 0 again.
+
+1280
+02:13:35,636 --> 02:13:39,916
+So, we again get an indeterminant form 0 over 0.
+
+1281
+02:13:39,916 --> 02:13:41,376
+So, we apply L'Opical again.
+
+1282
+02:13:42,056 --> 02:13:44,396
+Limit as x approaches 0.
+
+1283
+02:13:46,276 --> 02:13:48,476
+What is the derivative of cosine x?
+
+1284
+02:13:48,615 --> 02:13:49,976
+It's minus sine x.
+
+1285
+02:13:51,436 --> 02:13:53,556
+What's the derivative of second square x?
+
+1286
+02:13:53,776 --> 02:13:55,596
+It's 2 times second x.
+
+1287
+02:13:57,136 --> 02:13:59,376
+Times the derivative of second x.
+
+1288
+02:13:59,556 --> 02:14:02,876
+Derivative of second x is second x tangent x.
+
+1289
+02:14:02,876 --> 02:14:07,016
+Divided by derivative of 3x square, this 6x.
+
+1290
+02:14:09,115 --> 02:14:09,916
+So, we get this.
+
+1291
+02:14:11,836 --> 02:14:13,516
+As x approaches 0.
+
+1292
+02:14:15,296 --> 02:14:16,576
+Sin 0 is 0.
+
+1293
+02:14:17,376 --> 02:14:18,996
+And here tangent 0 is 0.
+
+1294
+02:14:19,115 --> 02:14:20,656
+We get 0 minus 0 which is 0.
+
+1295
+02:14:21,056 --> 02:14:22,115
+6x is also 0.
+
+1296
+02:14:22,236 --> 02:14:23,456
+We get 0 over 0 again.
+
+1297
+02:14:24,336 --> 02:14:25,836
+So, this is again an indeterminant form.
+
+1298
+02:14:28,556 --> 02:14:31,396
+So, we apply L'Opical for the third time.
+
+1299
+02:14:31,396 --> 02:14:33,596
+What are we going to get?
+
+1300
+02:14:33,736 --> 02:14:35,916
+Limit as x approaches 0.
+
+1301
+02:14:36,136 --> 02:14:36,416
+All.
+
+1302
+02:14:37,936 --> 02:14:39,476
+Derivative of minus sine x.
+
+1303
+02:14:39,476 --> 02:15:01,016
+We get 0.
+
+1304
+02:14:45,587 --> 02:14:52,947
+Derivative of minus sine x minus cosine x minus 2 times minus 2 times.
+
+1305
+02:14:53,587 --> 02:14:57,987
+Okay, so this is, I'm going to differentiate this.
+
+1306
+02:14:59,587 --> 02:15:03,027
+This is what? This is second square x times tan index.
+
+1307
+02:15:03,987 --> 02:15:07,027
+So, we will use the product rule to differentiate.
+
+1308
+02:15:08,067 --> 02:15:14,787
+So, derivative of second square x, derivative of second square x is 2 second x times derivative of second x.
+
+1309
+02:15:15,587 --> 02:15:17,987
+times times tan index.
+
+1310
+02:15:20,387 --> 02:15:25,987
+Plus, second square x itself times derivative of tan index.
+
+1311
+02:15:25,987 --> 02:15:27,027
+Which is second square.
+
+1312
+02:15:28,307 --> 02:15:32,228
+Let me just apply the product rule to find this derivative.
+
+1313
+02:15:32,787 --> 02:15:37,587
+Divided by, derivative of 6 x is 6.
+
+1314
+02:15:40,979 --> 02:16:10,979
+Bu, bu, 1'e
+
+1315
+02:16:10,979 --> 02:16:40,979
+2'e 1'
+
+1316
+02:16:40,979 --> 02:16:48,379
+Now what is this expression? Sine x minus tangent x over x cubed.
+
+1317
+02:16:49,879 --> 02:16:54,379
+Now let's write tangent x as sine x over cosine x.
+
+1318
+02:16:54,879 --> 02:17:01,680
+So this is sine x minus sine x over cosine x over x cubed.
+
+1319
+02:17:02,779 --> 02:17:04,279
+Let's simplify this.
+
+1320
+02:17:04,279 --> 02:17:13,379
+So this is going to be sine x cosine x minus sine x over x cubed times cosine x.
+
+1321
+02:17:14,279 --> 02:17:17,219
+Which is equal to, let's factor sine x out here.
+
+1322
+02:17:18,139 --> 02:17:24,100
+Sine x times cosine x minus 1 over x cubed times cosine x.
+
+1323
+02:17:25,279 --> 02:17:27,420
+Now sine x.
+
+1324
+02:17:27,879 --> 02:17:30,979
+We know an expansion of sine x.
+
+1325
+02:17:32,079 --> 02:17:33,279
+Let me write it here.
+
+1326
+02:17:33,279 --> 02:18:02,279
+Thank you.
+
+1327
+02:17:40,915 --> 02:18:10,915
+Şimdi, x'e
+
+1328
+02:18:10,915 --> 02:18:40,915
+x'e
+
+1329
+02:18:40,915 --> 02:18:43,235
+So what is this equal to?
+
+1330
+02:18:44,615 --> 02:18:48,815
+Now we multiply these two power series.
+
+1331
+02:18:49,275 --> 02:18:50,895
+Let me multiply them, what do we get?
+
+1332
+02:18:52,956 --> 02:18:57,415
+So here is the first term, x and minus x square over 2 factorial.
+
+1333
+02:18:57,575 --> 02:19:03,135
+When we multiply them, we get minus x cubed over 2.
+
+1334
+02:19:04,595 --> 02:19:08,695
+Or let me write it like this, minus 1 over 2 x cubed.
+
+1335
+02:19:08,695 --> 02:19:11,595
+That's the x cubed term.
+
+1336
+02:19:13,615 --> 02:19:15,695
+Look at this.
+
+1337
+02:19:16,135 --> 02:19:18,295
+Here the powers are all odd, right?
+
+1338
+02:19:18,875 --> 02:19:20,195
+Here the powers are all odd.
+
+1339
+02:19:20,615 --> 02:19:21,995
+Here the powers are all even.
+
+1340
+02:19:22,835 --> 02:19:26,956
+So whenever I multiply one term over here with one term over here,
+
+1341
+02:19:27,615 --> 02:19:29,715
+the power is going to be odd plus even.
+
+1342
+02:19:29,915 --> 02:19:31,036
+It's always going to be odd.
+
+1343
+02:19:31,475 --> 02:19:34,175
+So I will never get even powers in the problem.
+
+1344
+02:19:34,175 --> 02:19:35,675
+I will always get odd powers.
+
+1345
+02:19:35,675 --> 02:19:41,095
+So x cubed, x cubed can we get only one blank is two.
+
+1346
+02:19:41,956 --> 02:19:46,036
+Plus, the next is going to be something times x to power five.
+
+1347
+02:19:46,155 --> 02:19:46,956
+Let's take a look.
+
+1348
+02:19:47,956 --> 02:19:50,915
+This is x minus x to power four over four factorial.
+
+1349
+02:19:51,155 --> 02:19:55,715
+That's going to give us one over 24 x to power five, right?
+
+1350
+02:19:55,715 --> 02:19:58,215
+on the product of these two.
+
+1351
+02:19:58,815 --> 02:20:03,995
+Then x cubed over three factorial and minus x cubed over three factorial and minus x cubed over two factorial.
+
+1352
+02:20:04,795 --> 02:20:07,195
+That's minus one over six times minus one over two.
+
+1353
+02:20:07,335 --> 02:20:09,675
+That's going to give us one over two.
+
+1354
+02:20:10,675 --> 02:20:13,395
+So that's two over 24.
+
+1355
+02:20:13,395 --> 02:20:16,815
+We get three over 24 which is one over eight.
+
+1356
+02:20:16,815 --> 02:20:19,815
+This is one over eight x to power five.
+
+1357
+02:20:19,815 --> 02:20:27,555
+And so you get plus something x to power seven plus something x to power nine and so on.
+
+1358
+02:20:27,555 --> 02:20:30,795
+Well, I'll try this.
+
+1359
+02:20:30,795 --> 02:20:32,895
+I'll keep it like this.
+
+1360
+02:20:32,895 --> 02:20:38,235
+x cubed times one minus x squared over two factorial.
+
+1361
+02:20:38,235 --> 02:20:44,635
+plus x to power four over four factorial and so on.
+
+1362
+02:20:46,715 --> 02:20:47,195
+And now,
+
+1363
+02:20:48,275 --> 02:20:50,456
+we factor x cubed off here.
+
+1364
+02:20:50,456 --> 02:20:53,775
+We factor x cubed and divide by this x cubed.
+
+1365
+02:20:56,115 --> 02:20:57,315
+Divide by this x cubed.
+
+1366
+02:20:57,435 --> 02:21:00,155
+We get minus one over two plus
+
+1367
+02:21:00,155 --> 02:21:02,775
+one over eight x squared
+
+1368
+02:21:02,775 --> 02:21:06,155
+plus something x to power four
+
+1369
+02:21:06,155 --> 02:21:08,055
+plus something x to power six
+
+1370
+02:21:08,055 --> 02:21:09,055
+and so on.
+
+1371
+02:21:09,055 --> 02:21:11,615
+And the denominator will be one minus
+
+1372
+02:21:11,615 --> 02:21:14,415
+one over two x squared
+
+1373
+02:21:14,415 --> 02:21:14,995
+plus
+
+1374
+02:21:14,995 --> 02:21:18,015
+one over four factorial x to power four
+
+1375
+02:21:18,015 --> 02:21:18,595
+and so on.
+
+1376
+02:21:19,815 --> 02:21:20,935
+So this is
+
+1377
+02:21:20,935 --> 02:21:22,415
+this is what
+
+1378
+02:21:22,415 --> 02:21:25,935
+sine x minus tangent x over x cubed is equal to.
+
+1379
+02:21:26,315 --> 02:21:27,135
+It's equal to this.
+
+1380
+02:21:27,615 --> 02:21:28,635
+What are we interested in?
+
+1381
+02:21:28,715 --> 02:21:31,395
+We are interested in the limit of it as x approaches zero.
+
+1382
+02:21:31,915 --> 02:21:32,715
+Now the limit
+
+1383
+02:21:32,715 --> 02:21:35,615
+as x approaches zero of this
+
+1384
+02:21:35,615 --> 02:21:36,615
+and so on.
+
+1385
+02:21:36,615 --> 02:21:37,456
+So next,
+
+1386
+02:21:37,456 --> 02:21:39,015
+my understanding takes over x cubed.
+
+1387
+02:21:39,015 --> 02:21:40,015
+is equal to this.
+
+1388
+02:21:40,015 --> 02:21:40,575
+So next,
+
+1389
+02:21:40,575 --> 02:21:41,015
+we're going to be able to do this.
+
+1390
+02:21:41,015 --> 02:21:41,575
+So next,
+
+1391
+02:21:41,575 --> 02:21:42,015
+we're going to be able to do this.
+
+1392
+02:21:42,015 --> 02:21:42,575
+So next,
+
+1393
+02:21:42,575 --> 02:21:43,575
+we're going to be able to do this.
+
+1394
+02:21:43,575 --> 02:21:43,855
+So next,
+
+1395
+02:21:43,855 --> 02:21:44,475
+we're going to be able to do this.
+
+1396
+02:21:44,475 --> 02:21:44,975
+So next,
+
+1397
+02:21:44,975 --> 02:21:45,475
+we're going to be able to do this.
+
+1398
+02:21:45,475 --> 02:21:45,855
+So next,
+
+1399
+02:21:45,855 --> 02:21:46,475
+we're going to be able to do this.
+
+1400
+02:21:46,475 --> 02:21:46,975
+So next,
+
+1401
+02:21:46,975 --> 02:21:47,475
+we're going to be able to do this.
+
+1402
+02:21:39,731 --> 02:21:40,932
+What is it equal to?
+
+1403
+02:21:42,172 --> 02:21:51,932
+Now, in the numerator, as x approaches 0, in the numerator, we get minus 1 over 2 plus 0 plus 0 plus 0 plus 0, all 0's.
+
+1404
+02:21:52,432 --> 02:21:58,332
+In the denominator, we get 1 minus 0 plus 0 plus 0 plus 0 and so on.
+
+1405
+02:21:59,031 --> 02:22:02,832
+So, we get minus 1 over 2 over 1, which is minus 1 over 2.
+
+1406
+02:22:02,832 --> 02:22:10,731
+Of course, we get the same example with what we have found by the headline, Lopu Kalsbrough.
+
+1407
+02:22:20,564 --> 02:22:22,584
+11.38, ok.
+
+1408
+02:22:27,700 --> 02:22:31,280
+There's one more example here, 1 over sin x minus 1 over x.
+
+1409
+02:22:32,540 --> 02:22:33,460
+Let me see.
+
+1410
+02:22:35,880 --> 02:22:36,820
+Perler's identity.
+
+1411
+02:22:38,240 --> 02:22:41,579
+Yeah, so let's see this last example on this.
+
+1412
+02:22:42,600 --> 02:22:44,820
+So 1 over sin x minus 1 over x.
+
+1413
+02:22:45,040 --> 02:22:47,640
+As x approaches 0, this is 1 over 0 minus 1 over 0.
+
+1414
+02:22:47,740 --> 02:22:50,620
+That's an indeterminant form of type infinity minus infinity.
+
+1415
+02:22:51,400 --> 02:22:57,600
+So this can be written as 1 over sin x minus 1 over x can be written as x minus sin x over x times sin x.
+
+1416
+02:22:58,140 --> 02:23:01,920
+Then replace sin x with its Maclaurin series.
+
+1417
+02:23:03,120 --> 02:23:09,600
+Sin x is x minus x cube over 3 factorial plus x to the power 5 over factorial and that divided by x times that.
+
+1418
+02:23:10,420 --> 02:23:11,100
+What is it?
+
+1419
+02:23:12,640 --> 02:23:14,000
+Here x is cancelled.
+
+1420
+02:23:14,159 --> 02:23:19,300
+We get plus x cube over 3 factorial minus x to the power 5 over factorial.
+
+1421
+02:23:19,300 --> 02:23:21,980
+And if we factor x cube out, we get this.
+
+1422
+02:23:22,520 --> 02:23:25,320
+1 over 3 factorial minus x square over 5 factorial and so on.
+
+1423
+02:23:25,320 --> 02:23:33,680
+And here, if we factor x out, together with this x, we get x square times 1 minus x square over 3 factorial and so on.
+
+1424
+02:23:34,240 --> 02:23:37,120
+So here x squares cancel out and x is left.
+
+1425
+02:23:37,600 --> 02:23:42,680
+And x is left times this on the numerator and this on the denominator.
+
+1426
+02:23:43,400 --> 02:23:45,020
+Now, what are we interested in?
+
+1427
+02:23:45,079 --> 02:23:47,579
+We are interested in the limit of this as x approaches 0.
+
+1428
+02:23:47,579 --> 02:24:16,540
+x approaches 0.
+
+1429
+02:23:57,012 --> 02:23:58,012
+Evet.
+
+1430
+02:24:00,012 --> 02:24:07,012
+As x approaches 0, this part numerator over here approaches 1 over 6, the denominator over here approaches 1.
+
+1431
+02:24:07,012 --> 02:24:14,012
+So this part is 1 over 6, but together with this x, this approach is 0. 0 times 1 over 6 is going to be 0.
+
+1432
+02:24:14,012 --> 02:24:16,012
+So that's the limit of this.
+
+1433
+02:24:18,012 --> 02:24:21,012
+As x approaches 0, it approaches 0.
+
+1434
+02:24:21,012 --> 02:24:24,012
+And that's the end of chapter 10.
+
+1435
+02:24:24,012 --> 02:24:29,012
+Okay, any questions?
+
+1436
+02:24:29,012 --> 02:24:36,012
+So we will solve, we will continue with the problems I solved yesterday.
+
+1437
+02:24:36,012 --> 02:24:45,012
+So we have seen 24 problems yesterday, there were 11 more problems from power series on the file that I put on ABC's.
+
+1438
+02:24:45,012 --> 02:24:52,012
+We will continue with those next Thursday and then we will start chapter 11, probably next Friday.
+
+1439
+02:24:52,012 --> 02:24:57,012
+So any questions from what we covered today?
+
+1440
+02:24:57,012 --> 02:25:26,012
+Thank you.
+
+1441
+02:25:08,852 --> 02:25:09,372
+Okay.
+
+1442
+02:25:11,372 --> 02:25:14,292
+Thank you all and you all have a nice day.
+
+1443
+02:25:15,292 --> 02:25:18,332
+So I will see you next Thursday then.
+
+1444
+02:25:21,231 --> 02:25:22,492
+I end the lecture.
+
+1445
+02:25:24,811 --> 02:25:26,272
+See you next Thursday. Bye.

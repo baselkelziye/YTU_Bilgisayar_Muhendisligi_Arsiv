@@ -1,0 +1,3739 @@
+1
+00:09:20,851 --> 00:09:33,451
+Ok, last Friday, we have finished Chapter 14 and then we have solved some problems from this file, which I have put on my OSS' website.
+
+2
+00:09:34,511 --> 00:09:40,471
+So today we will continue solving these problems and hopefully we will finish these problems.
+
+3
+00:09:40,471 --> 00:09:44,351
+If we cannot, we can complete them tomorrow, of course.
+
+4
+00:09:47,371 --> 00:09:50,531
+So we will try to solve as much as we can from these.
+
+5
+00:09:50,851 --> 00:09:53,111
+So let's start with this problem.
+
+6
+00:09:53,231 --> 00:10:00,731
+We'll find the tangent plane of the surface fxy equals x squared plus 2y squared minus 4x minus 4y plus 6 at the point 1 minus 1, 9.
+
+7
+00:10:02,391 --> 00:10:05,851
+So we have seen that yesterday.
+
+8
+00:10:05,851 --> 00:10:11,111
+So this is how I solve it.
+
+9
+00:10:11,111 --> 00:10:23,052
+I mean, this plane over here is a level surface of this three-dimensional, this three-variable function.
+
+10
+00:10:23,052 --> 00:10:34,572
+So if you let fxyz equals this x squared plus 2y squared minus 4x minus 4y plus 6 minus z, this given surface is just a level surface of this.
+
+11
+00:10:35,031 --> 00:10:36,871
+It's f of xyz equals 0.
+
+12
+00:10:38,371 --> 00:10:39,451
+That level surface.
+
+13
+00:10:39,451 --> 00:10:44,491
+So to find the tangent plane of this level surface, what do we know?
+
+14
+00:10:44,552 --> 00:10:45,111
+What do we know?
+
+15
+00:10:45,672 --> 00:10:46,552
+Level surface.
+
+16
+00:10:48,011 --> 00:10:48,451
+Sorry.
+
+17
+00:10:48,971 --> 00:10:49,812
+Tangent plane.
+
+18
+00:10:50,052 --> 00:11:00,292
+Tangent plane of a surface, of a level surface is the plane passing through that point and which is normal to its gradient vector at that point.
+
+19
+00:11:00,991 --> 00:11:02,771
+We need to find the gradient vector at that point.
+
+20
+00:11:02,771 --> 00:11:06,331
+What is the partial derivative of this function with respect to x?
+
+21
+00:11:06,812 --> 00:11:07,731
+It's 2x.
+
+22
+00:11:08,151 --> 00:11:10,471
+2x from here minus 4.
+
+23
+00:11:10,812 --> 00:11:11,451
+The rest is 0.
+
+24
+00:11:11,572 --> 00:11:12,251
+2x minus 4.
+
+25
+00:11:12,432 --> 00:11:13,951
+That's the partial derivative with respect to x.
+
+26
+00:11:14,371 --> 00:11:16,391
+What is this partial derivative with respect to y?
+
+27
+00:11:17,131 --> 00:11:20,351
+That's 4y minus 4.
+
+28
+00:11:21,131 --> 00:11:23,131
+That's the partial derivative with respect to y.
+
+29
+00:11:24,111 --> 00:11:26,791
+And partial derivative with respect to z is minus 1.
+
+30
+00:11:27,371 --> 00:11:27,971
+The rest is 0.
+
+31
+00:11:27,971 --> 00:11:38,692
+So the partial derivative of this function with respect to x, y, and z at this point, 1 minus 1, 9, is the point 1 minus 1, 9.
+
+32
+00:11:38,791 --> 00:11:39,491
+x is 1.
+
+33
+00:11:39,791 --> 00:11:41,951
+So we get 2 minus 4, which is minus 2.
+
+34
+00:11:43,391 --> 00:11:47,432
+It's partial derivative with respect to y at this point is, so y is minus 1.
+
+35
+00:11:47,471 --> 00:11:49,471
+We get minus 4 minus 4, which is minus 8.
+
+36
+00:11:49,912 --> 00:11:52,211
+And it's partial derivative with respect to z is minus 1.
+
+37
+00:11:52,211 --> 00:11:57,052
+So its gradient vector at that point has these components, minus 2, minus 8, minus 1.
+
+38
+00:11:57,052 --> 00:12:07,211
+Therefore, the tangent plane of the surface at that point is the plane passing through this point and which is normal to this gradient vector.
+
+39
+00:12:08,192 --> 00:12:17,731
+So whose equation is minus 2 times x minus 1, minus 8 times y plus 1, minus 1 times z minus 9 equals 0.
+
+40
+00:12:17,731 --> 00:12:26,572
+When we simplify this, we get minus 2x minus 2x plus 2, minus 8y minus 8, minus 8, minus z plus 9 equals 0.
+
+41
+00:12:27,851 --> 00:12:33,351
+So when we simplify that equation, we basically get this equation, 2x plus 8y plus z equals 3.
+
+42
+00:12:33,611 --> 00:12:35,891
+That's the equation of the tangent plane.
+
+43
+00:12:35,891 --> 00:12:38,891
+Okay, let's continue.
+
+44
+00:12:40,451 --> 00:12:48,611
+Find the equation of the tangent plane and the parametric equations of the normal line to the surface z equals sine xy at this point.
+
+45
+00:12:49,051 --> 00:12:50,111
+Again, the same.
+
+46
+00:12:50,932 --> 00:12:54,031
+So let f of xy equals sine x minus z.
+
+47
+00:12:54,371 --> 00:12:58,891
+So this surface is just the level surface of this function.
+
+48
+00:12:59,211 --> 00:13:01,871
+It's f of xyz equals 0, that level surface.
+
+49
+00:13:01,871 --> 00:13:05,291
+So the given surface is a level surface of this function.
+
+50
+00:13:05,912 --> 00:13:07,711
+Again, find this gradient.
+
+51
+00:13:07,912 --> 00:13:10,991
+We need to find its partial derivatives with respect to x, y, and z.
+
+52
+00:13:11,511 --> 00:13:16,672
+Derivative with respect to x is cosine xy times the derivative of inside, which is y.
+
+53
+00:13:16,812 --> 00:13:35,892
+So it's y times cosine xy.
+
+54
+00:13:35,892 --> 00:13:36,892
+So it's y times xy.
+
+55
+00:13:18,644 --> 00:13:48,644
+Bu yi'nin parçal derivative ile yi'nin parçal derivative ile yi'nin parçal derivative ile yi'nin parçal derivative ile yi'nin parçal derivative ile yi'nin parçal derivative ile yi'nin parçal derivative ile yi'nin parçal derivative ile yi'nin parçal derivative ile yi'nin parçal derivative ile yi'nin parçal derivative ile yi'nin parçal derivative ile yi'nin parçal derivative ile yi'nin parçal derivative ile yi'nin parçal derivative ile yi'nin parçal derivative ile yi'nin parçal derivative ile yi'nin parçal derivative ile yi'nin parçal derivative ile yi'nin parçal derivative ile yi'nin parçal derivative ile yi'nin parçal derivative ile yi'nin parçal derivative ile yi'nin parçal derivative ile yi'nin parç
+
+56
+00:13:48,644 --> 00:14:00,344
+cosin minus pi over 3 is that's minus 60 degrees. Cosin is an even function so this is the same as cosin 60 degrees which is 1 over 2 basically. So minus 1 times 1 over 2 which is minus 1 over 2.
+
+57
+00:14:01,663 --> 00:14:17,823
+This one the partial derivative with respect to y is x times x is pi over 3 times cosine x y is cosine minus pi over 3 again 1 over 2 this is 1 over 2. We get pi over 3 times 1 over 2 which is pi over 6 and this partial derivative with respect to z is minus 1 itself.
+
+58
+00:14:17,823 --> 00:14:32,264
+So these are the components of the gradient factor at that point. Minus 1 over 2 pi over 6 minus 1. Therefore now the tangent plane at this point is the plane passing through this point and normal to this line.
+
+59
+00:14:32,463 --> 00:14:46,283
+The normal line at this point is the line passes through this point and is parallel to this factor. So tangent plane is this was the point. The point is here. This is the point.
+
+60
+00:14:46,283 --> 00:15:01,403
+The tangent plane is minus 1 over 2 times x minus pi over 3 plus pi over 6 times y plus 1 minus 1 times z plus root 3 over 2 which is equal to 0 equal to 0.
+
+61
+00:15:01,403 --> 00:15:05,644
+So when we simplify this equation basically at the end we get this equation.
+
+62
+00:15:06,264 --> 00:15:13,504
+It's 3x plus pi y minus 6 z equals minus 2 pi plus 0. That's the equation of the tangent plane. Let me simplify it.
+
+63
+00:15:14,344 --> 00:15:21,384
+How about the normal line? Normal line is the line again which passes through this point and which is parallel to this factor.
+
+64
+00:15:21,384 --> 00:15:27,043
+So as parametric equations of the normal line are x equals pi over 3 minus 1 over 2t.
+
+65
+00:15:28,884 --> 00:15:35,703
+Y equals minus 1 plus pi over 6t and z equals minus root 3 over 2 minus t.
+
+66
+00:15:36,364 --> 00:15:39,024
+Those are the parametric equations of the normal line.
+
+67
+00:15:39,024 --> 00:15:42,303
+Okay, let's continue.
+
+68
+00:15:45,443 --> 00:15:46,244
+Let's continue.
+
+69
+00:15:46,923 --> 00:15:49,344
+Find the equation of the plane tangent to the surface.
+
+70
+00:15:49,764 --> 00:15:55,344
+Cosine pi x minus x squared y plus e to the power xz plus yz equals 4 at this point.
+
+71
+00:15:55,884 --> 00:15:57,364
+P 0, 1, 2.
+
+72
+00:15:57,903 --> 00:16:02,844
+Again, now let's let fxyz be equal to this expression over here.
+
+73
+00:16:02,844 --> 00:16:03,923
+This.
+
+74
+00:16:04,704 --> 00:16:07,163
+So now the given surface is a level surface.
+
+75
+00:16:07,423 --> 00:16:09,564
+The level surface, which level at level 4.
+
+76
+00:16:10,043 --> 00:16:14,084
+So the given surface is the surface fxyz equals 4.
+
+77
+00:16:14,663 --> 00:16:16,064
+A level surface of this function.
+
+78
+00:16:16,964 --> 00:16:19,124
+So it's...
+
+79
+00:16:20,584 --> 00:16:24,964
+Again, to find its tangent plane at this point, we need to find the gradient vector.
+
+80
+00:16:25,144 --> 00:16:29,703
+So the tangent plane is going to be the plane testing through this point and normal to the gradient vector.
+
+81
+00:16:29,703 --> 00:16:34,604
+But to find the gradient vector, again, we need to find this partial derivative with respect to x, y, and z.
+
+82
+00:16:35,384 --> 00:16:39,844
+Derivative with respect to x is minus sine pi x times pi.
+
+83
+00:16:40,203 --> 00:16:44,543
+So minus pi times sine pi x minus 2xy here.
+
+84
+00:16:45,324 --> 00:16:50,923
+And the derivative of this with respect to x itself, e to the power xz, times the derivative of the power, which is z.
+
+85
+00:16:51,244 --> 00:16:52,443
+So z times e to the power xz.
+
+86
+00:16:52,504 --> 00:16:53,724
+And derivative of this part is zero.
+
+87
+00:16:54,384 --> 00:16:56,144
+So that's the partial derivative with respect to x.
+
+88
+00:16:56,144 --> 00:16:59,283
+And its value at this point, where is our point?
+
+89
+00:16:59,644 --> 00:17:00,384
+Zero, one, two.
+
+90
+00:17:01,403 --> 00:17:02,963
+At the point zero, one, two.
+
+91
+00:17:04,364 --> 00:17:05,163
+X is zero.
+
+92
+00:17:05,284 --> 00:17:05,983
+So this is zero.
+
+93
+00:17:06,443 --> 00:17:07,044
+X is zero.
+
+94
+00:17:07,144 --> 00:17:08,044
+So this is also zero.
+
+95
+00:17:08,384 --> 00:17:09,183
+Zero minus zero.
+
+96
+00:17:09,384 --> 00:17:10,544
+Plus z is two.
+
+97
+00:17:10,663 --> 00:17:12,564
+So two times e to the power of zero, which is two.
+
+98
+00:17:13,304 --> 00:17:15,544
+But that's the partial derivative with respect to x.
+
+99
+00:17:15,544 --> 00:17:43,884
+So this is zero.
+
+100
+00:17:16,403 --> 00:17:19,243
+So, what is the partial derivative of this function with respect to y?
+
+101
+00:17:20,104 --> 00:17:20,943
+This is 0.
+
+102
+00:17:21,884 --> 00:17:23,943
+Derivative of this is minus x squared here.
+
+103
+00:17:25,523 --> 00:17:26,403
+This is 0.
+
+104
+00:17:26,644 --> 00:17:27,743
+And derivative of this is z.
+
+105
+00:17:27,983 --> 00:17:29,304
+So, minus x squared plus z.
+
+106
+00:17:29,564 --> 00:17:31,124
+And at the point 0, 1, 2.
+
+107
+00:17:31,263 --> 00:17:31,963
+This is 0.
+
+108
+00:17:32,144 --> 00:17:32,663
+This is 2.
+
+109
+00:17:32,743 --> 00:17:33,183
+We get 2.
+
+110
+00:17:34,544 --> 00:17:38,304
+And the partial derivative of this function with respect to z is what?
+
+111
+00:17:38,644 --> 00:17:39,584
+This is 0 again.
+
+112
+00:17:39,703 --> 00:17:40,344
+This is 0.
+
+113
+00:17:40,804 --> 00:17:43,703
+Derivative of this is x times c to the power xz.
+
+114
+00:17:44,163 --> 00:17:46,104
+Plus derivative of this is y.
+
+115
+00:17:46,844 --> 00:17:47,564
+We get this.
+
+116
+00:17:47,983 --> 00:17:49,344
+And at the point 0, 1, 2.
+
+117
+00:17:50,044 --> 00:17:50,963
+This is 0.
+
+118
+00:17:51,644 --> 00:17:52,703
+This is y, which is 1.
+
+119
+00:17:53,163 --> 00:17:53,844
+So, we get 1.
+
+120
+00:17:54,463 --> 00:17:57,403
+So, the gradient vector is 2, 2, 1.
+
+121
+00:17:58,064 --> 00:18:00,584
+These are the components of the gradient vector at that point.
+
+122
+00:18:01,044 --> 00:18:07,584
+Therefore, the tangent plane is the plane passing through this point and normal to this vector.
+
+123
+00:18:07,584 --> 00:18:15,784
+which is 2 times x minus 0 plus 2 times y minus 1 plus 1 times z minus 2 equals 0,
+
+124
+00:18:16,144 --> 00:18:20,723
+which is when simplified is equal to 2x plus 2y plus z equals 4.
+
+125
+00:18:20,723 --> 00:18:24,144
+Okay.
+
+126
+00:18:24,243 --> 00:18:26,963
+So, that was the solution of this problem.
+
+127
+00:18:27,584 --> 00:18:28,463
+Let's continue.
+
+128
+00:18:29,564 --> 00:18:34,324
+Suppose that g is a differentiable function and g 0 is equal to 2.
+
+129
+00:18:34,324 --> 00:18:38,324
+Then find the plane tangent to the surface.
+
+130
+00:18:38,483 --> 00:18:40,384
+Find the plane tangent to the surface.
+
+131
+00:18:40,663 --> 00:18:41,324
+This surface.
+
+132
+00:18:41,864 --> 00:18:44,983
+z equals xy times g y over x.
+
+133
+00:18:45,384 --> 00:18:46,183
+So, note that here.
+
+134
+00:18:46,284 --> 00:18:47,624
+g is a one variable function.
+
+135
+00:18:48,584 --> 00:18:50,183
+y or x is just some number.
+
+136
+00:18:50,183 --> 00:18:52,604
+g is a one variable function.
+
+137
+00:18:52,743 --> 00:18:55,703
+z is defined as xy times g y over x.
+
+138
+00:18:56,364 --> 00:19:00,263
+So, find the tangent plane to the surface at this point.
+
+139
+00:19:00,884 --> 00:19:05,683
+So, we will proceed exactly the same way as we did on the previous problems.
+
+140
+00:19:05,683 --> 00:19:11,864
+So, again, define our three variable function f x y z as this minus z.
+
+141
+00:19:12,943 --> 00:19:19,223
+So, this surface over here is the surface capital f x y z equals 0.
+
+142
+00:19:19,223 --> 00:19:22,943
+It's a level surface of three variable of this three variable function.
+
+143
+00:19:23,544 --> 00:19:27,084
+Now, to find the tangent plane of this function,
+
+144
+00:19:27,764 --> 00:19:33,384
+this level surface of this level surface of this function at this point,
+
+145
+00:19:33,764 --> 00:19:39,943
+at the point 1, 0, 0, we need to find its gradient vector again.
+
+146
+00:19:40,344 --> 00:19:44,183
+So, let's differentiate this function with respect to x, y, and z.
+
+147
+00:19:44,884 --> 00:19:46,644
+This is derivative with respect to x.
+
+148
+00:19:46,644 --> 00:19:50,604
+Now, here we have to apply the product rule.
+
+149
+00:19:51,584 --> 00:19:56,784
+So, derivative of x, y, which is y, times g y over x itself.
+
+150
+00:19:58,124 --> 00:19:58,903
+Here is this.
+
+151
+00:19:59,064 --> 00:20:01,304
+The derivative of x, y, which is y here.
+
+152
+00:20:01,304 --> 00:20:05,104
+And times g x, g y over x itself.
+
+153
+00:20:05,284 --> 00:20:05,463
+Here.
+
+154
+00:20:06,564 --> 00:20:07,344
+G y over x.
+
+155
+00:20:07,804 --> 00:20:09,564
+Plus x y itself.
+
+156
+00:20:10,223 --> 00:20:10,523
+Here.
+
+157
+00:20:11,124 --> 00:20:13,023
+Times derivative of g y over x.
+
+158
+00:20:13,064 --> 00:20:14,604
+What is the derivative of g y over x?
+
+159
+00:20:14,683 --> 00:20:16,104
+It's g prime y over x.
+
+160
+00:20:17,084 --> 00:20:19,124
+Times derivative of inside.
+
+161
+00:20:19,963 --> 00:20:22,163
+Derivative of y over x with respect to x.
+
+162
+00:20:22,403 --> 00:20:23,384
+Here y is a constant.
+
+163
+00:20:23,384 --> 00:20:26,824
+The derivative of 1 over x is minus 1 over x squared.
+
+164
+00:20:27,064 --> 00:20:28,284
+We get minus y over x squared.
+
+165
+00:20:28,384 --> 00:20:28,543
+This.
+
+166
+00:20:29,403 --> 00:20:33,784
+Which is when simplified.
+
+167
+00:20:34,043 --> 00:20:38,144
+So, this x and this square cancel out.
+
+168
+00:20:38,923 --> 00:20:40,284
+One of the x's cancel out.
+
+169
+00:20:40,683 --> 00:20:42,864
+So, we get y times g y over x.
+
+170
+00:20:42,864 --> 00:20:46,324
+Minus, because of this minus over here.
+
+171
+00:20:46,403 --> 00:20:48,163
+Minus y squared over x.
+
+172
+00:20:48,483 --> 00:20:49,844
+Times g prime y over x.
+
+173
+00:20:50,364 --> 00:20:50,824
+Get this.
+
+174
+00:20:52,584 --> 00:20:54,584
+How about the partial derivative of this?
+
+175
+00:20:55,564 --> 00:20:56,324
+And, okay.
+
+176
+00:20:56,384 --> 00:20:58,443
+Let's find this value at this point.
+
+177
+00:20:58,503 --> 00:21:02,144
+At the point 1, 0, 0.
+
+178
+00:21:02,223 --> 00:21:03,403
+What is the value of this?
+
+179
+00:21:04,463 --> 00:21:06,384
+What is the value of this at 1, 0, 0?
+
+180
+00:21:07,223 --> 00:21:09,003
+Well, y is 0.
+
+181
+00:21:09,344 --> 00:21:10,264
+This y is 0.
+
+182
+00:21:10,644 --> 00:21:11,243
+This is 0.
+
+183
+00:21:11,243 --> 00:21:12,943
+And, y is 0.
+
+184
+00:21:13,023 --> 00:21:13,923
+So, this is also 0.
+
+185
+00:21:14,403 --> 00:21:15,983
+We get 0 minus 0, which is 0.
+
+186
+00:21:18,195 --> 00:21:24,675
+Okay, now what is next? The derivative of this with respect to y. Again, we apply the product rule.
+
+187
+00:21:26,275 --> 00:21:38,555
+So, derivative of xy, which is x, times g y over x itself here, plus xy itself here, times derivative of g y over x.
+
+188
+00:21:38,615 --> 00:21:45,755
+Derivative of g y over x with respect to y is g prime y over x times the derivative of inside.
+
+189
+00:21:45,755 --> 00:21:58,755
+Derivative of inside with respect to y is 1 over x. It's 1 over x times y, so derivative is 1 over x, which is equal to, when we simplify this, let me simplify this.
+
+190
+00:21:58,755 --> 00:22:09,055
+Okay, x and x, they cancel out. We get x times g y over x plus y times g prime y over x. We get that. What is that?
+
+191
+00:22:09,055 --> 00:22:18,935
+At this point, 1, 0, 0, what do we get? This is 1 times g 0, 1 times g 0, plus 0 times g prime 0.
+
+192
+00:22:19,555 --> 00:22:24,295
+And g 0, g 0 is given in the question. In the question, g 0 is given as 2.
+
+193
+00:22:26,175 --> 00:22:28,635
+This is 2. This is equal to 2.
+
+194
+00:22:29,055 --> 00:22:34,336
+This is fz. Of course, the derivative of this with respect to z is, derivative of this part is 0.
+
+195
+00:22:34,336 --> 00:22:35,715
+The derivative is minus 1.
+
+196
+00:22:36,255 --> 00:22:42,915
+So, components of the gradient vector are 0, 2, and 1.
+
+197
+00:22:43,215 --> 00:22:43,795
+Minus 1, sorry.
+
+198
+00:22:44,295 --> 00:22:46,596
+So, that's the gradient vector, 0 to minus 1.
+
+199
+00:22:46,995 --> 00:22:54,555
+Again, tangent plane is the plane that passes through this point, and which is normal to this vector.
+
+200
+00:22:54,555 --> 00:23:05,076
+Which is 0 times x minus 1 plus 2 times y minus 0 minus 1 times z minus 0 equals 0.
+
+201
+00:23:05,515 --> 00:23:12,235
+Which is when simplified, gives us 2y minus z equals 0.
+
+202
+00:23:12,655 --> 00:23:15,055
+That's the equation of the gradient plane.
+
+203
+00:23:18,963 --> 00:23:34,583
+Okay, another question, this is a proof question actually, show that the tangent plane to the surface, well of course in multiple choice questions you will probably not see such a question, but okay, that's fine.
+
+204
+00:23:35,124 --> 00:23:37,183
+Let's still go over this problem.
+
+205
+00:23:38,124 --> 00:23:43,503
+I mean there may be other types of questions which require what is done over here.
+
+206
+00:23:43,503 --> 00:23:54,104
+So let's see, let's go over it, show that the tangent plane to the surface, tangent plane to this surface at this point passes through the origin.
+
+207
+00:23:55,124 --> 00:23:56,003
+Passes through the origin.
+
+208
+00:23:56,683 --> 00:24:08,604
+Okay, first let's find equation of at any point, at any point, the tangent plane to this surface at any point passes through the origin.
+
+209
+00:24:08,604 --> 00:24:14,303
+Where f is one variable differentiable function.
+
+210
+00:24:15,043 --> 00:24:23,183
+Okay, let's again find the, let's find the general equation for the tangent plane passing through any arbitrary point x0, y0, z0.
+
+211
+00:24:23,823 --> 00:24:30,683
+Okay, as usual, let's define a three variable function fx, y, z equals this x times y over x minus z.
+
+212
+00:24:30,683 --> 00:24:38,043
+And again, this, this surface over here is the surface fx, y, z equals zero.
+
+213
+00:24:38,403 --> 00:24:41,604
+So it's a level surface of this function, three variable function.
+
+214
+00:24:42,163 --> 00:24:46,483
+So to find its tangent plane at an arbitrary point, we need to find this gradient factor.
+
+215
+00:24:47,403 --> 00:24:52,104
+So, this is the derivative of this with respect to x.
+
+216
+00:24:52,104 --> 00:24:55,583
+Again, we need to apply the product rule.
+
+217
+00:24:56,043 --> 00:25:09,223
+Derivative of x, which is one, times fx, f y over x here, plus x itself here, times derivative of f y over x, which is f prime y over x times the derivative of inside with respect to x, which is minus y over x squared.
+
+218
+00:25:09,783 --> 00:25:11,963
+When we simplify this, we get f y over x.
+
+219
+00:25:11,963 --> 00:25:16,283
+And here, one of the x is canceled.
+
+220
+00:25:17,124 --> 00:25:20,963
+Get y over x minus y over x times f prime y over x.
+
+221
+00:25:21,323 --> 00:25:21,923
+We get this.
+
+222
+00:25:23,163 --> 00:25:25,283
+So, at the point, what do we need?
+
+223
+00:25:25,344 --> 00:25:26,563
+We need the value of this.
+
+224
+00:25:27,303 --> 00:25:29,103
+The value of this at this point.
+
+225
+00:25:29,923 --> 00:25:31,384
+x0, y0, z0.
+
+226
+00:25:31,763 --> 00:25:41,723
+At this point, particular point, value of fx is f y0 over x0 minus y0 over x0 times f prime y0 over x0.
+
+227
+00:25:41,963 --> 00:25:43,683
+Okay.
+
+228
+00:25:43,963 --> 00:25:48,223
+This is what we found.
+
+229
+00:25:48,364 --> 00:25:48,743
+Fx.
+
+230
+00:25:49,624 --> 00:25:49,824
+Okay.
+
+231
+00:25:49,824 --> 00:25:52,144
+Let's see.
+
+232
+00:25:52,443 --> 00:25:55,864
+Derivative of this, partial derivative of this capital F, which is back to y.
+
+233
+00:25:56,063 --> 00:25:56,703
+What is that?
+
+234
+00:25:57,583 --> 00:25:57,943
+Again.
+
+235
+00:25:58,503 --> 00:26:00,243
+Now, in this case, x is a constant.
+
+236
+00:26:00,743 --> 00:26:01,344
+It's a constant.
+
+237
+00:26:01,483 --> 00:26:02,503
+Just take it there.
+
+238
+00:26:03,023 --> 00:26:07,903
+Derivative of f y over x is f prime y over x times derivative of inside, which is 1 over x.
+
+239
+00:26:08,763 --> 00:26:10,743
+And derivative of minus z is 0, of course.
+
+240
+00:26:11,063 --> 00:26:11,803
+X is canceled.
+
+241
+00:26:11,963 --> 00:26:13,403
+We get f prime y over x.
+
+242
+00:26:13,563 --> 00:26:13,903
+Directly.
+
+243
+00:26:14,443 --> 00:26:20,644
+So, its value, again, at this point, at this point, the value of this partial derivative
+
+244
+00:26:20,644 --> 00:26:24,303
+is f prime y0 over x0 at this specific point.
+
+245
+00:26:24,864 --> 00:26:25,943
+This value is this.
+
+246
+00:26:26,523 --> 00:26:28,624
+F prime y0 over x0.
+
+247
+00:26:28,624 --> 00:26:33,624
+And as usual, partial derivative of this capital F with respect to z is minus 1 here.
+
+248
+00:26:34,203 --> 00:26:36,003
+So, what is the gradient vector?
+
+249
+00:26:36,003 --> 00:26:39,384
+The i component is this.
+
+250
+00:26:39,384 --> 00:26:41,663
+j component is this.
+
+251
+00:26:41,663 --> 00:26:43,423
+and k component is this.
+
+252
+00:26:43,423 --> 00:26:43,443
+And k component is this.
+
+253
+00:26:44,043 --> 00:26:45,063
+That's the gradient vector.
+
+254
+00:26:45,063 --> 00:26:49,303
+So, the gradient vector of this function at this point is this.
+
+255
+00:26:49,303 --> 00:26:54,624
+f y0 over x0 minus y0 over x0 times f prime y0 over x0.
+
+256
+00:26:54,743 --> 00:26:55,624
+That's the i component.
+
+257
+00:26:56,183 --> 00:26:57,983
+f prime y0 over x0.
+
+258
+00:26:58,543 --> 00:26:59,763
+That's the j component.
+
+259
+00:26:59,763 --> 00:27:00,763
+f prime y0 over x0.
+
+260
+00:27:00,763 --> 00:27:01,763
+That's the k component.
+
+261
+00:27:01,763 --> 00:27:03,763
+That's the gradient vector.
+
+262
+00:27:03,763 --> 00:27:05,763
+Therefore, what do we know?
+
+263
+00:27:05,763 --> 00:27:15,364
+We know that the tangent plane to this surface at this point is the plane.
+
+264
+00:27:15,364 --> 00:27:16,364
+So, what do we know?
+
+265
+00:27:16,364 --> 00:27:42,364
+That's the gradient vector.
+
+266
+00:27:16,915 --> 00:30:08,915
+bu
+
+267
+00:30:02,067 --> 00:30:32,067
+Bu, bu
+
+268
+00:30:32,067 --> 00:30:59,367
+Y0 times F prime Y0 over X0 minus Y0 times F prime Y0 over X0. They cancel out. X0 times FY0 over X0 and minus X0 times FY0 over X0. They cancel out. We get zero. Therefore, this, the XYZ000 satisfies this equation, which shows that it is on that plane. No matter what the value of X0, Y0, Y0, Z0 is, whichever point we get on the surface,
+
+269
+00:30:59,367 --> 00:31:03,867
+the tangent plane always passes through the origin. That's what is proved here.
+
+270
+00:31:09,268 --> 00:31:10,408
+Okay, next question.
+
+271
+00:31:11,627 --> 00:31:14,168
+At which point is the plane of the surface,
+
+272
+00:31:15,087 --> 00:31:17,067
+z equals x squared plus y squared,
+
+273
+00:31:17,288 --> 00:31:24,188
+parallel to the plane passing through the points,
+
+274
+00:31:25,728 --> 00:31:29,087
+1, 2, 3, 2, 1, 4, and minus 1, 2, 5.
+
+275
+00:31:29,468 --> 00:31:31,968
+Find the occasion of the plane at this point.
+
+276
+00:31:34,168 --> 00:31:37,508
+So, z equals x squared plus y squared,
+
+277
+00:31:37,508 --> 00:31:38,908
+that's such a surface.
+
+278
+00:31:39,268 --> 00:31:46,347
+At some point, the plane, this plane over here,
+
+279
+00:31:47,327 --> 00:31:50,668
+the plane which is tangent to this surface at that point
+
+280
+00:31:50,668 --> 00:31:58,968
+is going to be parallel to the plane to this plane,
+
+281
+00:31:58,968 --> 00:32:00,428
+passing through p, q, and r.
+
+282
+00:32:01,087 --> 00:32:04,248
+So, two planes being parallel means
+
+283
+00:32:04,248 --> 00:32:06,567
+their normal vectors should be parallel.
+
+284
+00:32:06,567 --> 00:32:09,127
+The normal vector of this tangent plane
+
+285
+00:32:09,127 --> 00:32:10,607
+is the gradient vector at that point.
+
+286
+00:32:11,408 --> 00:32:13,067
+How about the normal vector of this plane?
+
+287
+00:32:13,268 --> 00:32:15,688
+Well, we have done that before the midterm exam, actually.
+
+288
+00:32:16,468 --> 00:32:19,627
+To find a normal vector passing through,
+
+289
+00:32:20,127 --> 00:32:22,867
+a normal vector of a plane passing through three points,
+
+290
+00:32:23,448 --> 00:32:26,028
+we can just look at p, q, this vector,
+
+291
+00:32:26,248 --> 00:32:28,627
+p, r, another vector, p, q, and p, r.
+
+292
+00:32:28,627 --> 00:32:32,627
+So, p, q, and p, r are both vectors on this plane.
+
+293
+00:32:32,948 --> 00:32:33,607
+If we take their,
+
+294
+00:32:34,607 --> 00:32:36,648
+if we take their cross product,
+
+295
+00:32:36,807 --> 00:32:38,768
+that's going to be a vector normal to this plane.
+
+296
+00:32:40,488 --> 00:32:42,928
+So, first of all, p, q, what is p, q?
+
+297
+00:32:43,208 --> 00:32:43,928
+And q, r here.
+
+298
+00:32:44,307 --> 00:32:45,367
+So, two minus one is one,
+
+299
+00:32:45,708 --> 00:32:47,127
+one minus two is minus one,
+
+300
+00:32:47,268 --> 00:32:48,367
+four minus three is one.
+
+301
+00:32:48,708 --> 00:32:49,488
+That's p, q.
+
+302
+00:32:49,488 --> 00:32:53,648
+So, p, r minus one minus one is minus two.
+
+303
+00:32:54,048 --> 00:32:55,327
+Two minus two is zero.
+
+304
+00:32:55,847 --> 00:32:57,208
+Five minus three is two.
+
+305
+00:32:57,748 --> 00:32:58,307
+That's p, r.
+
+306
+00:32:58,988 --> 00:33:01,908
+So, if we take the cross product of these two vectors,
+
+307
+00:33:02,148 --> 00:33:04,028
+so, one minus one, one in the second row,
+
+308
+00:33:04,127 --> 00:33:05,788
+minus two, zero, two in the third row.
+
+309
+00:33:06,268 --> 00:33:07,528
+So, their cross product is
+
+310
+00:33:07,528 --> 00:33:10,468
+i times minus two minus zero is minus two.
+
+311
+00:33:11,468 --> 00:33:16,367
+Minus j times two minus minus two, that's four.
+
+312
+00:33:16,528 --> 00:33:17,867
+So, we get minus four.
+
+313
+00:33:17,867 --> 00:33:23,827
+Then, a times zero minus two, which is minus two.
+
+314
+00:33:24,567 --> 00:33:27,168
+So, we get this minus two, minus four, minus two.
+
+315
+00:33:28,448 --> 00:33:29,907
+Minus two, minus four, minus two.
+
+316
+00:33:30,347 --> 00:33:33,127
+So, that's vector n, this vector n.
+
+317
+00:33:33,248 --> 00:33:34,468
+That's a vector parallel,
+
+318
+00:33:34,748 --> 00:33:36,488
+which is normal to the plane
+
+319
+00:33:36,488 --> 00:33:38,387
+passing through these three points.
+
+320
+00:33:39,688 --> 00:33:41,688
+So, how about this,
+
+321
+00:33:41,988 --> 00:33:44,407
+how about the gradient vector of this?
+
+322
+00:33:44,807 --> 00:33:45,648
+Now, as usual,
+
+323
+00:33:45,648 --> 00:33:48,028
+let's define a three-variable function.
+
+324
+00:33:48,148 --> 00:33:49,648
+Capital Fxyz equals
+
+325
+00:33:49,648 --> 00:33:52,288
+x squared plus y squared minus z.
+
+326
+00:33:52,648 --> 00:33:53,607
+So, this is,
+
+327
+00:33:53,847 --> 00:33:55,907
+this surface over here is the surface
+
+328
+00:33:55,907 --> 00:33:57,708
+capital Fxyz equals zero.
+
+329
+00:33:58,288 --> 00:33:59,567
+The level surface of this.
+
+330
+00:33:59,567 --> 00:34:07,188
+So, find gradient vector is partial derivative with respect to x is 2x.
+
+331
+00:34:07,607 --> 00:34:09,927
+Partial derivative with respect to y is 2y.
+
+332
+00:34:10,307 --> 00:34:12,307
+This partial derivative with respect to z is minus one.
+
+333
+00:34:12,827 --> 00:34:13,947
+Therefore, at any point,
+
+334
+00:34:14,688 --> 00:34:16,447
+take this point as an arbitrary point.
+
+335
+00:34:16,447 --> 00:34:18,648
+x zero, y zero, z zero.
+
+336
+00:34:19,228 --> 00:34:21,108
+Then a point x zero, y zero, z zero.
+
+337
+00:34:21,927 --> 00:34:25,548
+The value of the partial derivative with respect to x is 2x zero.
+
+338
+00:34:26,068 --> 00:34:29,407
+The value of the partial derivative with respect to y is 2y zero.
+
+339
+00:34:29,947 --> 00:34:30,987
+And the value of the variable,
+
+340
+00:34:31,507 --> 00:34:34,168
+the value of the derivative with respect to z is minus one.
+
+341
+00:34:34,507 --> 00:34:35,867
+So, that's the gradient vector
+
+342
+00:34:35,867 --> 00:34:37,568
+at an arbitrary point.
+
+343
+00:34:38,447 --> 00:34:40,608
+At a point x zero, y zero, z zero,
+
+344
+00:34:41,248 --> 00:34:42,367
+the gradient vector is this,
+
+345
+00:34:42,447 --> 00:34:43,907
+2x zero, 2y zero, minus one.
+
+346
+00:34:43,907 --> 00:34:47,608
+So, what do we want?
+
+347
+00:34:47,788 --> 00:34:50,708
+We want this gradient vector,
+
+348
+00:34:51,427 --> 00:34:53,907
+this normal vector of this plane,
+
+349
+00:34:54,407 --> 00:34:57,108
+and the gradient vector of this plane to be parallel.
+
+350
+00:34:57,648 --> 00:34:59,488
+If the normal vectors are parallel,
+
+351
+00:34:59,668 --> 00:35:02,307
+then the planes are going to be parallel.
+
+352
+00:35:03,688 --> 00:35:05,427
+So, two planes are parallel
+
+353
+00:35:05,427 --> 00:35:07,407
+if and only if their normal vectors are parallel.
+
+354
+00:35:07,923 --> 00:35:13,784
+Normal vector being two vector being parallel means one of them is multiple of the other.
+
+355
+00:35:15,443 --> 00:35:25,344
+So this one, 2x0, 2y0 minus one must be a constant multiple k times minus 2 minus 4 minus 2 for some scalar k.
+
+356
+00:35:25,943 --> 00:35:27,503
+Now from this, what do we get?
+
+357
+00:35:28,284 --> 00:35:31,324
+2x0 is equal to minus 2 times k.
+
+358
+00:35:32,103 --> 00:35:35,384
+Here, 2y0 equals minus 4 times k.
+
+359
+00:35:35,384 --> 00:35:38,903
+Here, and minus 1 equals minus 2 times k.
+
+360
+00:35:39,224 --> 00:35:39,443
+Here.
+
+361
+00:35:40,003 --> 00:35:43,063
+So from the third equation, we get k equals 1 over 2.
+
+362
+00:35:43,684 --> 00:35:45,184
+Then we get k equals 1 over 2.
+
+363
+00:35:45,583 --> 00:35:49,784
+Then from the first equation, x0 is minus k, which is minus 1 over 2.
+
+364
+00:35:50,423 --> 00:35:55,103
+And from the second equation, y0 is minus 2k, which is minus 1.
+
+365
+00:35:56,364 --> 00:36:00,623
+So x0 is minus 1 over 2, y0 is minus 1.
+
+366
+00:36:01,023 --> 00:36:02,083
+And what is z0?
+
+367
+00:36:02,083 --> 00:36:09,704
+Of course, it's a point on this plane, this surface, sorry, on the surface.
+
+368
+00:36:09,963 --> 00:36:11,324
+Z is x squared plus y squared.
+
+369
+00:36:12,423 --> 00:36:20,784
+So when x0 is minus 1 over 2 and y0 is minus 1, z0 is x0 squared plus y0 squared, which is 1 over 4 plus 1, which is 5 over 4.
+
+370
+00:36:20,784 --> 00:36:22,423
+So this is the point.
+
+371
+00:36:23,704 --> 00:36:24,844
+This is the point.
+
+372
+00:36:24,844 --> 00:36:30,023
+Minus x0 is minus 1 over 2, y0 is minus 1, z0 is 5 over 4.
+
+373
+00:36:30,163 --> 00:36:31,023
+This is the point.
+
+374
+00:36:31,423 --> 00:36:40,403
+At this point, at this point, the tangent plane over here is going to be parallel to the plane passing through these three points, pq and r.
+
+375
+00:36:40,403 --> 00:36:43,163
+And what is next?
+
+376
+00:36:44,123 --> 00:36:47,403
+The next is find the equation of the tangent plane at this point.
+
+377
+00:36:47,983 --> 00:36:50,103
+At this point, the equation of the tangent plane.
+
+378
+00:36:50,103 --> 00:36:51,563
+So at this point,
+
+379
+00:36:51,563 --> 00:36:51,603
+at this point,
+
+380
+00:36:56,019 --> 00:37:03,739
+At this point, what is the gradient factor?
+
+381
+00:37:04,159 --> 00:37:05,900
+Gradient factor is 2x0.
+
+382
+00:37:06,400 --> 00:37:09,039
+0 is minus 1 over 2, so 2x0 is minus 1.
+
+383
+00:37:09,940 --> 00:37:13,920
+2y0, y0 is minus 1, so 2y0 is minus 2.
+
+384
+00:37:14,259 --> 00:37:17,239
+Minus 1, minus 2, z is minus 1.
+
+385
+00:37:17,940 --> 00:37:20,519
+The value of the gradient factor at this point is this.
+
+386
+00:37:21,099 --> 00:37:25,320
+So, the tangent plane at this point is the plane passing through this point.
+
+387
+00:37:25,320 --> 00:37:42,780
+And passing through this point and parallel to this, sorry, normal to this vector, whose equation is, as usual, minus 1 times x plus 1 over 2, minus 2 times z plus 1, minus 1 times z minus 5 over 4 equals 0.
+
+388
+00:37:43,019 --> 00:37:49,500
+Which has been simplified, gives this equation, x plus 2y plus z equals minus 5 over 4.
+
+389
+00:37:50,960 --> 00:37:52,659
+That's the equation of the tangent plane.
+
+390
+00:37:52,920 --> 00:37:53,300
+That's right.
+
+391
+00:37:58,931 --> 00:38:01,011
+Okay, next question.
+
+392
+00:38:01,491 --> 00:38:08,011
+Surface is q plus 3x squared y squared plus y cubed plus 4xy minus z squared equals 0.
+
+393
+00:38:09,171 --> 00:38:15,211
+And the sphere x squared plus y squared plus z squared equals 11 intersect at a curve E.
+
+394
+00:38:16,192 --> 00:38:20,171
+The surface and the sphere intersect at a curve E.
+
+395
+00:38:20,771 --> 00:38:26,271
+Find the parametric equations for the line tangent to this E at this point P113.
+
+396
+00:38:26,271 --> 00:38:29,211
+We have done a problem similar to this.
+
+397
+00:38:30,451 --> 00:38:38,571
+So, think about, so let's let fxyz equals this, the left hand side of this equation.
+
+398
+00:38:38,871 --> 00:38:41,971
+And let gxyz equals this, the left hand side of this equation.
+
+399
+00:38:42,611 --> 00:38:47,451
+So, the first surface, the first surface is a level surface of capital F.
+
+400
+00:38:47,911 --> 00:38:52,071
+And the second surface, the sphere, is a level surface of this capital G.
+
+401
+00:38:52,071 --> 00:38:59,211
+The tangent line, therefore, the tangent line to their intersection.
+
+402
+00:39:00,511 --> 00:39:02,451
+So, they intersect at a curve E.
+
+403
+00:39:03,031 --> 00:39:07,491
+And the tangent line at E is tangent to this surface F at that point.
+
+404
+00:39:07,851 --> 00:39:10,471
+And it's also tangent to the surface G at that point.
+
+405
+00:39:10,851 --> 00:39:11,771
+It's tangent to both.
+
+406
+00:39:11,771 --> 00:39:21,251
+Now, therefore, if we take the gradient vector delta F, the tangent line to is tangent to both F and G.
+
+407
+00:39:21,751 --> 00:39:24,751
+And therefore, it's normal to their gradient vectors.
+
+408
+00:39:25,071 --> 00:39:27,271
+Because the gradient vector is normal to the tangent vector.
+
+409
+00:39:27,871 --> 00:39:36,251
+So, this line, the tangent line we are looking for, is normal to the gradient vector of both surfaces.
+
+410
+00:39:36,251 --> 00:39:39,692
+It's normal to delta F and it's normal to delta G.
+
+411
+00:39:40,071 --> 00:39:41,851
+Therefore, it's parallel to their cross product.
+
+412
+00:39:42,411 --> 00:39:53,391
+It is not, if we get, if we have two vectors, if a third vector is normal to both, it's going to be parallel to their cross product.
+
+413
+00:39:53,391 --> 00:39:56,871
+So, we need to find delta F and delta G.
+
+414
+00:39:56,951 --> 00:39:57,711
+What is delta F?
+
+415
+00:40:00,451 --> 00:40:03,291
+Here's F.
+
+416
+00:40:05,471 --> 00:40:06,591
+Delta F is what?
+
+417
+00:40:07,011 --> 00:40:08,091
+Sorry, Fx is what?
+
+418
+00:40:08,371 --> 00:40:13,131
+3x squared plus 6xy squared plus 4y.
+
+419
+00:40:13,871 --> 00:40:14,771
+That's Fx.
+
+420
+00:40:14,771 --> 00:40:25,831
+And it's value at this point, this point 113, is 3 plus 6 plus 4, which is 13.
+
+421
+00:40:26,591 --> 00:40:28,791
+It's partial derivative with respect to y is what?
+
+422
+00:40:29,531 --> 00:40:30,011
+0.
+
+423
+00:40:30,451 --> 00:40:36,531
+So, 6x squared y here plus 3y squared here plus 4x here.
+
+424
+00:40:36,991 --> 00:40:41,391
+And it's value at 113 is 6 plus 3 plus 4, which is 13 again.
+
+425
+00:40:41,391 --> 00:40:45,192
+And it's partial derivative with respect to z is minus 2 here.
+
+426
+00:40:45,791 --> 00:40:49,171
+And it's value at this point, 113, is minus 6.
+
+427
+00:40:49,991 --> 00:40:54,651
+So, the gradient vector delta F at this point is 13, 13, minus 6.
+
+428
+00:40:55,751 --> 00:40:59,731
+How about the gradient vector of G is here?
+
+429
+00:40:59,811 --> 00:41:01,371
+X squared plus y squared plus z squared.
+
+430
+00:41:02,151 --> 00:41:04,151
+It's partial derivative with respect to x is 2x.
+
+431
+00:41:04,451 --> 00:41:06,591
+Partial derivative with respect to y is 2y.
+
+432
+00:41:07,011 --> 00:41:08,871
+It's partial derivative with respect to z is 2z.
+
+433
+00:41:08,871 --> 00:41:13,871
+And their values at the point 113 are 2, 2, and 6.
+
+434
+00:41:15,192 --> 00:41:16,011
+So, 2, 2, 6.
+
+435
+00:41:16,151 --> 00:41:19,711
+That's the gradient vector delta G at this point.
+
+436
+00:41:20,411 --> 00:41:22,971
+So, a cross product.
+
+437
+00:41:23,091 --> 00:41:24,091
+What is their cross product?
+
+438
+00:41:24,391 --> 00:41:32,331
+Our vector V is their cross product is going to be parallel to the tangent line at that point.
+
+439
+00:41:32,331 --> 00:41:34,411
+So, what is that?
+
+440
+00:41:34,951 --> 00:41:36,871
+13, 13, minus 6 and 2, 2, 6.
+
+441
+00:41:37,871 --> 00:41:42,271
+I times 78 minus minus 12, that's 90.
+
+442
+00:41:43,551 --> 00:41:51,751
+And minus j times 78 minus 12, which is 90.
+
+443
+00:41:51,831 --> 00:41:52,771
+So, minus 90.
+
+444
+00:41:52,991 --> 00:41:53,911
+That's the j component.
+
+445
+00:41:53,911 --> 00:41:58,152
+And k times 26 minus 26, which is 0.
+
+446
+00:41:58,152 --> 00:42:18,231
+So, we'll see you next time.
+
+447
+00:41:59,668 --> 00:42:26,407
+Bu, bu ve bu
+
+448
+00:42:32,371 --> 00:42:33,451
+Okay, next question.
+
+449
+00:42:35,231 --> 00:42:43,551
+Determine whether the curve Rt equals 1 over Ti plus 2 minus Tj plus T square K.
+
+450
+00:42:44,351 --> 00:42:56,391
+A vector-valued function, some curve, whose position vector is given and the x, y, and z coordinates are parametrized with respect to the variable T.
+
+451
+00:42:56,391 --> 00:43:04,672
+Determine whether this curve is perpendicular to this paraboloid, x square plus y square plus 4z plus 2 equals 0.
+
+452
+00:43:04,831 --> 00:43:07,632
+At this point, 1, 1 minus 1.
+
+453
+00:43:09,411 --> 00:43:12,071
+So first of all, let's check that this point is on both.
+
+454
+00:43:12,831 --> 00:43:18,192
+When x and y are 1, x is 1, we get 1 plus 1, that's 2.
+
+455
+00:43:19,091 --> 00:43:20,891
+When z is minus 1, we get minus 4 here.
+
+456
+00:43:21,011 --> 00:43:22,951
+2 minus 4 is minus 2, plus 2 is 0.
+
+457
+00:43:22,951 --> 00:43:27,011
+So it is on this surface, it's a point on this surface.
+
+458
+00:43:27,931 --> 00:43:31,511
+And of course, here when we take T equals 1, what do we get?
+
+459
+00:43:31,591 --> 00:43:36,031
+When T is 1, this is 1, this is 1, this is minus 1.
+
+460
+00:43:36,251 --> 00:43:38,011
+We get 1, 1 minus 1, when T is 1.
+
+461
+00:43:38,172 --> 00:43:39,391
+So this is also on this curve.
+
+462
+00:43:40,891 --> 00:43:47,071
+So the question is, determine whether this curve is perpendicular to this paraboloid at that point.
+
+463
+00:43:47,071 --> 00:44:08,371
+Well, if this is the surface, let's say, the curve, the curve being perpendicular to this surface at that point means the tangent line, the tangent line of this curve, the tangent line of this curve, and the gradient vector of this function must be parallel.
+
+464
+00:44:08,371 --> 00:44:21,931
+So the curve is perpendicular to the paraboloid if and only if the tangent vector v of the curve, which is the velocity vector, the tangent vector v of the curve is parallel to the gradient vector of the paraboloid.
+
+465
+00:44:22,451 --> 00:44:30,251
+So let's find the curve r is at this point, as we say, at this point when T is equal to 1.
+
+466
+00:44:30,251 --> 00:44:34,991
+So what is its tangent vector, the velocity vector?
+
+467
+00:44:35,111 --> 00:44:36,551
+It's the derivative of the position vector.
+
+468
+00:44:37,192 --> 00:44:39,351
+Derivative of 1 over T is minus 1 over T squared.
+
+469
+00:44:39,951 --> 00:44:41,931
+Derivative of 2 minus T is minus 1.
+
+470
+00:44:42,891 --> 00:44:44,871
+Derivative of minus T squared is minus 2T.
+
+471
+00:44:45,491 --> 00:44:58,192
+So when T is equal to 1, this velocity vector, which is such a tangent vector v over here, is minus 1 i minus 1 j minus 2k.
+
+472
+00:44:58,192 --> 00:45:03,631
+So the components of the velocity vector are minus 1, minus 1, and minus 2k.
+
+473
+00:45:04,131 --> 00:45:08,411
+How about the gradient vector of this one?
+
+474
+00:45:09,791 --> 00:45:17,071
+As usual, let capital F, X, Y, Z equal to the left-hand side of this equation, X square plus Y square plus 4z plus 2k.
+
+475
+00:45:17,811 --> 00:45:19,152
+This is, sorry.
+
+476
+00:45:19,152 --> 00:45:26,451
+So this is basically a level surface of this function.
+
+477
+00:45:27,031 --> 00:45:28,571
+Find this gradient vector again.
+
+478
+00:45:29,091 --> 00:45:31,751
+Find its partial derivatives with respect to X, Y, and Z.
+
+479
+00:45:32,152 --> 00:45:34,172
+This partial derivative with respect to X is 2x.
+
+480
+00:45:34,811 --> 00:45:36,911
+Partial derivative with respect to Y is 4y.
+
+481
+00:45:37,311 --> 00:45:39,152
+Partial derivative with respect to Z is...
+
+482
+00:45:40,091 --> 00:45:42,211
+No, this is not the question, what am I thinking?
+
+483
+00:45:42,211 --> 00:45:43,631
+Okay, this is the question.
+
+484
+00:45:43,871 --> 00:45:43,971
+Sorry.
+
+485
+00:45:44,791 --> 00:45:46,091
+I'll skip to the next question.
+
+486
+00:45:47,591 --> 00:45:48,431
+Okay, here it is.
+
+487
+00:45:49,351 --> 00:45:51,091
+Partial derivative with respect to X is 2x.
+
+488
+00:45:51,172 --> 00:45:52,971
+It's partial derivative with respect to Y is 2y.
+
+489
+00:45:53,291 --> 00:45:55,071
+It's partial derivative with respect to Z is 4.
+
+490
+00:45:55,911 --> 00:45:57,891
+So at this point, where is the point?
+
+491
+00:45:58,011 --> 00:45:59,011
+1, 1 minus 1.
+
+492
+00:45:59,351 --> 00:46:02,692
+At the point, 1, 1 minus 1, this is 2, this is 2, this is 4.
+
+493
+00:46:02,692 --> 00:46:08,071
+This is the gradient vector, 2i plus 2j plus 4k.
+
+494
+00:46:08,491 --> 00:46:11,971
+Now, note that, so this is minus 1, minus 1, minus 2.
+
+495
+00:46:12,071 --> 00:46:13,071
+This is 2, 2, 4.
+
+496
+00:46:13,431 --> 00:46:16,192
+Note that this is just minus 2 times this, right?
+
+497
+00:46:16,591 --> 00:46:20,511
+The gradient vector, this one, the gradient vector of the surface
+
+498
+00:46:20,511 --> 00:46:24,511
+is just minus 2 times the velocity vector of that curve.
+
+499
+00:46:25,112 --> 00:46:26,491
+Therefore, they are parallel.
+
+500
+00:46:27,172 --> 00:46:28,311
+These two vectors are parallel.
+
+501
+00:46:28,311 --> 00:46:31,192
+Therefore, the curve is perpendicular to the parabola at the top.
+
+502
+00:46:31,507 --> 00:46:35,717
+Bu da bu
+
+503
+00:46:38,867 --> 00:46:51,668
+Next question showed that the curve of that curve, again, there's a curve, is tangent to the ellipsoid, tangent to the ellipsoid, x2 plus 2 y2 plus z2 equals 4.
+
+504
+00:46:52,128 --> 00:46:54,228
+At this point, 1 minus 1.
+
+505
+00:46:55,827 --> 00:47:00,367
+So, let's say this is the ellipsoid, some surface, and this is a curve.
+
+506
+00:47:01,587 --> 00:47:02,887
+This curve R.
+
+507
+00:47:04,007 --> 00:47:08,427
+Curve being opposite to what we had here.
+
+508
+00:47:08,867 --> 00:47:10,927
+Here we were looking whether they're perpendicular.
+
+509
+00:47:11,688 --> 00:47:15,327
+We are looking whether it is tangent to the ellipsoid.
+
+510
+00:47:15,327 --> 00:47:37,228
+The curve being tangent to the ellipsoid at this point, the parallel vector, sorry, the tangent vector or the velocity vector of this curve must be tangent to the ellipsoid, which must be therefore, which must be normal to its gradient vector.
+
+511
+00:47:37,228 --> 00:47:45,867
+So, the curve is tangent to the ellipsoid if and only if tangent vector V of the curve is perpendicular to the gradient vector of the ellipsoid.
+
+512
+00:47:45,867 --> 00:47:50,407
+But let's show that they are actually perpendicular.
+
+513
+00:47:50,407 --> 00:47:54,327
+What is here?
+
+514
+00:47:55,128 --> 00:47:56,208
+When is this?
+
+515
+00:47:56,527 --> 00:47:57,108
+So, what is this?
+
+516
+00:47:57,148 --> 00:47:59,327
+1 over t minus t, 2 minus t.
+
+517
+00:47:59,867 --> 00:48:03,288
+For which value of t do we get the point 1 minus 1, 1?
+
+518
+00:48:03,628 --> 00:48:05,288
+We get that point when t is 1, right?
+
+519
+00:48:05,327 --> 00:48:08,527
+When t is 1, this is 1, this is minus 1, this is 1.
+
+520
+00:48:08,527 --> 00:48:12,067
+So, the curve is at that point for t equals 1.
+
+521
+00:48:13,007 --> 00:48:15,387
+What is its velocity vector?
+
+522
+00:48:16,467 --> 00:48:18,847
+Derivative of 1 over t is minus 1 over t squared.
+
+523
+00:48:19,587 --> 00:48:21,288
+Derivative of 1 minus t is minus 1.
+
+524
+00:48:21,728 --> 00:48:23,327
+Derivative of 2 minus t is minus 1.
+
+525
+00:48:23,327 --> 00:48:28,867
+So, for t equals 1, we get minus i minus j minus k.
+
+526
+00:48:29,288 --> 00:48:29,608
+This.
+
+527
+00:48:30,487 --> 00:48:33,367
+This is the velocity vector.
+
+528
+00:48:33,847 --> 00:48:34,887
+This vector over here.
+
+529
+00:48:37,168 --> 00:48:38,807
+Minus i minus j minus k.
+
+530
+00:48:40,827 --> 00:48:42,608
+About the gradient vector.
+
+531
+00:48:42,887 --> 00:48:48,347
+To find the gradient vector again, we find capital Fxyz equals the left-hand side of the z-page.
+
+532
+00:48:48,347 --> 00:48:50,607
+x squared plus 2y squared plus 2z squared.
+
+533
+00:48:51,148 --> 00:48:51,527
+This.
+
+534
+00:48:51,887 --> 00:48:54,387
+So, it is a level surface of this function.
+
+535
+00:48:55,007 --> 00:49:00,087
+To find this gradient vector at the point, we find Fx, Fy and Fz.
+
+536
+00:49:00,487 --> 00:49:01,487
+Fx is 2x.
+
+537
+00:49:01,708 --> 00:49:02,788
+Fy is 4y.
+
+538
+00:49:03,047 --> 00:49:04,268
+Fz is 2z.
+
+539
+00:49:04,907 --> 00:49:09,567
+So, its value at the point 1 minus 1, 1 is 2 minus 4, 2.
+
+540
+00:49:10,127 --> 00:49:11,268
+2 minus 4, 2.
+
+541
+00:49:11,867 --> 00:49:13,047
+So, that's the gradient vector.
+
+542
+00:49:13,527 --> 00:49:14,047
+So, to show.
+
+543
+00:49:14,268 --> 00:49:15,168
+Which is this vector.
+
+544
+00:49:16,027 --> 00:49:17,728
+To show that they are perpendicular.
+
+545
+00:49:18,347 --> 00:49:19,768
+We need to look at their dot product.
+
+546
+00:49:19,927 --> 00:49:22,148
+If their dot product is 0, it means that they are perpendicular.
+
+547
+00:49:22,627 --> 00:49:23,688
+What is their dot product?
+
+548
+00:49:24,427 --> 00:49:25,107
+Gradient vector.
+
+549
+00:49:25,248 --> 00:49:27,807
+The components of the gradient vector are 2 minus 4 and 2.
+
+550
+00:49:28,268 --> 00:49:33,967
+The components of this tangent vector of the curve are minus 1, minus 1, and minus 1.
+
+551
+00:49:34,148 --> 00:49:36,327
+So, their dot product is what?
+
+552
+00:49:36,427 --> 00:49:41,487
+Minus 2 plus 4 minus 2, which is equal to 0.
+
+553
+00:49:41,967 --> 00:49:44,067
+Therefore, these vectors are orthogonal.
+
+554
+00:49:44,067 --> 00:49:46,307
+Which proves that the curve is tangent to deli.
+
+555
+00:49:46,307 --> 00:49:47,067
+So, that's right.
+
+556
+00:49:50,420 --> 00:50:01,960
+Another similar question, determine whether the sphere over here is perpendicular to the hyperbolic paraboloid, this one, at the point 2, 1, 3.
+
+557
+00:50:02,760 --> 00:50:05,039
+So we get two surfaces now.
+
+558
+00:50:06,200 --> 00:50:06,960
+Two surfaces.
+
+559
+00:50:07,180 --> 00:50:09,579
+When are two surfaces perpendicular?
+
+560
+00:50:11,099 --> 00:50:12,920
+First, let's check that this is on both.
+
+561
+00:50:13,340 --> 00:50:13,980
+2, 1, 3.
+
+562
+00:50:14,519 --> 00:50:17,220
+2 squared is 4 plus 1 plus 9.
+
+563
+00:50:17,320 --> 00:50:18,920
+4 plus 1 plus 9 is 14.
+
+564
+00:50:18,920 --> 00:50:21,480
+So it is a point on this sphere.
+
+565
+00:50:22,380 --> 00:50:23,460
+And how about this?
+
+566
+00:50:25,119 --> 00:50:26,940
+So what's x squared minus y squared?
+
+567
+00:50:27,159 --> 00:50:29,180
+x squared is 4 minus y squared is 1.
+
+568
+00:50:29,260 --> 00:50:30,059
+4 minus 1 is 3.
+
+569
+00:50:30,440 --> 00:50:33,860
+So it is also on this hyperbolic paraboloid, whatever it is.
+
+570
+00:50:34,340 --> 00:50:35,240
+We have two surfaces.
+
+571
+00:50:36,019 --> 00:50:38,519
+When are two surfaces perpendicular at a point?
+
+572
+00:50:39,079 --> 00:50:44,119
+Two surfaces are perpendicular at a point if their gradient figures are perpendicular at that point.
+
+573
+00:50:44,579 --> 00:50:48,840
+So the sphere and the hyperbolic paraboloid are perpendicular at this point if and only if,
+
+574
+00:50:48,920 --> 00:50:51,159
+their gradient vectors are perpendicular at that point.
+
+575
+00:50:51,960 --> 00:50:54,220
+Let's check whether their gradient vectors are perpendicular.
+
+576
+00:50:54,220 --> 00:50:59,099
+As usual, let capital Fxyz equals the left-hand side of this equation.
+
+577
+00:50:59,760 --> 00:51:01,780
+Capital Gxyz equals this.
+
+578
+00:51:01,920 --> 00:51:03,599
+X squared minus y squared minus z.
+
+579
+00:51:04,400 --> 00:51:08,119
+So that this sphere is a level surface.
+
+580
+00:51:08,320 --> 00:51:10,880
+Capital Fxyz equals 14 of this function.
+
+581
+00:51:10,880 --> 00:51:20,599
+And this surface over here is the level surface, capital Gxyz equals 0 of this function.
+
+582
+00:51:21,460 --> 00:51:27,380
+So there, what is x is 2x, Fy is 2y, Fz is 2z.
+
+583
+00:51:27,380 --> 00:51:31,840
+And their values at the point 213 are 4, 2, and 6.
+
+584
+00:51:32,539 --> 00:51:34,920
+So that's the gradient vector delta F.
+
+585
+00:51:35,300 --> 00:51:36,260
+4, 2, 6.
+
+586
+00:51:36,820 --> 00:51:38,139
+How about this function g?
+
+587
+00:51:38,260 --> 00:51:39,320
+Gx is 2x.
+
+588
+00:51:39,960 --> 00:51:41,300
+Gy is minus 2y.
+
+589
+00:51:41,760 --> 00:51:42,800
+Gz is minus 1.
+
+590
+00:51:42,800 --> 00:51:47,840
+So their values at the point 213 are 4, minus 2, minus 1.
+
+591
+00:51:48,559 --> 00:51:50,380
+So that's the gradient vector delta G.
+
+592
+00:51:51,200 --> 00:51:51,700
+What is there?
+
+593
+00:51:51,920 --> 00:52:04,960
+So for these two surfaces to be perpendicular, these two vectors must be orthogonal.
+
+594
+00:52:05,360 --> 00:52:06,559
+Let's check whether they're orthogonal.
+
+595
+00:52:06,559 --> 00:52:08,240
+What is their dot product?
+
+596
+00:52:08,720 --> 00:52:09,960
+4 times 4 is 16.
+
+597
+00:52:11,000 --> 00:52:12,500
+2 times minus 2 is minus 4.
+
+598
+00:52:12,880 --> 00:52:14,440
+6 times minus 1 is minus 6.
+
+599
+00:52:14,519 --> 00:52:16,760
+16 minus 4 minus 6 is 6, which is not 0.
+
+600
+00:52:17,500 --> 00:52:21,539
+But their dot product is not 0, which means that these vectors are not orthogonal.
+
+601
+00:52:22,039 --> 00:52:25,720
+Therefore, the given surfaces are not perpendicular at the spot.
+
+602
+00:52:33,715 --> 00:52:35,056
+Okay, linearization.
+
+603
+00:52:37,056 --> 00:52:38,855
+Okay, let's give a 10-minute break.
+
+604
+00:52:39,375 --> 00:52:43,175
+Let's give a 10-minute break, then we will continue with linearization problems.
+
+605
+00:52:43,775 --> 00:52:45,415
+Okay, any questions before the break?
+
+606
+00:52:46,635 --> 00:52:48,215
+Any questions before the break?
+
+607
+00:52:52,659 --> 00:52:56,500
+Let's give a 10-minutes break. We will continue with linearization problems after break.
+
+608
+01:05:09,876 --> 01:05:12,956
+Okay, let's continue with some linearization problems.
+
+609
+01:05:14,036 --> 01:05:16,556
+Linearization and differentiation or differentials.
+
+610
+01:05:17,896 --> 01:05:27,276
+Okay, the first question from this is find the linearization of the function fxy equals xy plus square of x square plus y square at the point p10.
+
+611
+01:05:28,056 --> 01:05:31,936
+So first of all, let's remember this linearization formula.
+
+612
+01:05:31,936 --> 01:05:52,216
+The linearization of a function, two variable function fxy equals fxy at that point x0 y0 is lxy equals fx0 y0 plus fxx0 y0 times x minus x0 times fxyx0 y0 times y minus y.
+
+613
+01:05:52,916 --> 01:05:58,316
+So to find the linearization of this function, we need to find its derivatives with respect to x and y.
+
+614
+01:05:58,836 --> 01:06:01,276
+So what's the partial derivative of this with respect to x?
+
+615
+01:06:01,936 --> 01:06:16,436
+The derivative of this is y here plus derivative of square of x square plus y square, which is 1 over 2 times derivative of x square plus y square times derivative of inside, which is with respect to x, which is 2x.
+
+616
+01:06:17,556 --> 01:06:21,856
+For two's cancel, we get y plus x over square of x square plus y square.
+
+617
+01:06:21,856 --> 01:06:34,576
+Similarly, its derivative with respect to y is x plus derivative of this, which is 1 over 2 root x square plus y square times the derivative of inside with respect to y, which is 2y.
+
+618
+01:06:34,576 --> 01:06:37,076
+So now we get, again, 2's cancel.
+
+619
+01:06:37,076 --> 01:06:39,856
+So we get x plus y over square of x square plus y square.
+
+620
+01:06:41,115 --> 01:06:44,476
+So at this point, 1, 0.
+
+621
+01:06:45,236 --> 01:06:54,636
+Now we need the value of this function itself, partial derivative with respect to x and this partial derivative with respect to y at this point, 1, 0.
+
+622
+01:06:54,636 --> 01:06:56,076
+What is f, 1, 0?
+
+623
+01:06:59,376 --> 01:07:00,696
+Function f is itself here.
+
+624
+01:07:00,856 --> 01:07:04,696
+f, 1, 0 is 0 plus square of 1, which is 1.
+
+625
+01:07:05,836 --> 01:07:06,276
+Here.
+
+626
+01:07:07,056 --> 01:07:08,696
+What is f, x, 1, 0?
+
+627
+01:07:09,196 --> 01:07:10,536
+f, x, 1, 0.
+
+628
+01:07:11,156 --> 01:07:17,236
+When x is 1, y is 0, we get 0 plus 1 over square of 1, which is 1, again.
+
+629
+01:07:17,236 --> 01:07:22,016
+And f, y at 1, 0 is x is 1 in this case.
+
+630
+01:07:22,076 --> 01:07:22,636
+Y is 0.
+
+631
+01:07:22,716 --> 01:07:23,556
+This part is 0.
+
+632
+01:07:23,916 --> 01:07:24,615
+We get 1 again.
+
+633
+01:07:25,615 --> 01:07:28,716
+So these values, this one, this one, this one, these are all 1.
+
+634
+01:07:29,436 --> 01:07:40,276
+The linearization is, linearization is Lxy equals f, 1, 0 plus f, x, 1, 0 times x minus 1 plus f, y, 1, 0 times y minus 0.
+
+635
+01:07:40,716 --> 01:07:41,996
+So here x, 0 is 1.
+
+636
+01:07:42,615 --> 01:07:43,656
+Y, 0 is 0.
+
+637
+01:07:44,716 --> 01:07:45,756
+So we get what?
+
+638
+01:07:45,756 --> 01:07:50,756
+1 plus 1 times x minus 1 plus 1 times y.
+
+639
+01:07:51,376 --> 01:07:53,896
+Which gives us this minus 1 and plus 1.
+
+640
+01:07:53,976 --> 01:07:55,416
+They cancel, we get x plus y.
+
+641
+01:07:55,896 --> 01:07:58,276
+That's the linearization of this function at that point.
+
+642
+01:07:58,996 --> 01:08:00,236
+And that's how we find it.
+
+643
+01:08:02,316 --> 01:08:03,356
+Okay, next.
+
+644
+01:08:04,196 --> 01:08:14,656
+Now, find an approximate value of square root of 2.08 cubed plus 8 times 0.98 to the power 4.
+
+645
+01:08:14,656 --> 01:08:16,956
+using differential approximation or linearization.
+
+646
+01:08:16,956 --> 01:08:21,136
+Now, let's define a two variable function.
+
+647
+01:08:21,516 --> 01:08:24,655
+f, x, y equals square root of x cubed.
+
+648
+01:08:25,036 --> 01:08:27,756
+So we will use this one as x 2.08.
+
+649
+01:08:27,896 --> 01:08:36,315
+So note that in this expression, there are two numbers which are close to a specific number.
+
+650
+01:08:36,376 --> 01:08:37,436
+What are those two numbers?
+
+651
+01:08:37,436 --> 01:08:41,275
+One of them is this, 2.08, which is close to 2.
+
+652
+01:08:41,855 --> 01:08:45,155
+And the other number is this, 0.98, which is close to 1.
+
+653
+01:08:45,936 --> 01:08:48,916
+So let's call this one x and this one y.
+
+654
+01:08:49,235 --> 01:08:50,815
+So we get this two variable function.
+
+655
+01:08:50,916 --> 01:08:54,756
+f, x, y equals square root of x cubed plus 8 y to the power 4.
+
+656
+01:08:54,756 --> 01:09:02,695
+Now, this value is just f of 2.08, 0.98, right?
+
+657
+01:09:03,516 --> 01:09:06,476
+Instead of finding the value of this directly,
+
+658
+01:09:06,476 --> 01:09:07,476
+f, x, y equals square root of x cubed plus 8 y to the power 4.
+
+659
+01:09:07,028 --> 01:09:11,208
+We will find its linearization at that point, which is going to be an approximate level.
+
+660
+01:09:11,528 --> 01:09:17,988
+So we will find the linearization of Lxy at this point, which is a nearby point, 2,1.
+
+661
+01:09:18,188 --> 01:09:22,988
+The point 2,1 is near this point, 2.08,0.98, right?
+
+662
+01:09:23,628 --> 01:09:30,448
+And we have a surface, we have this tangent plane, the value of the function at a nearby point,
+
+663
+01:09:30,668 --> 01:09:35,007
+at a nearby point to the point at which we find the linearization,
+
+664
+01:09:35,007 --> 01:09:39,427
+the value of the function and the value of the linearization are going to be approximately equal,
+
+665
+01:09:40,068 --> 01:09:41,007
+are going to be close.
+
+666
+01:09:42,068 --> 01:09:45,427
+So what is the linearization?
+
+667
+01:09:45,768 --> 01:09:47,288
+Again, here is the formula, right?
+
+668
+01:09:47,708 --> 01:09:50,807
+To find the linearization, we need to find this partial derivative with respect to x,
+
+669
+01:09:50,887 --> 01:09:52,168
+partial derivative with respect to y.
+
+670
+01:09:53,728 --> 01:09:56,028
+At that point, here is our function.
+
+671
+01:09:57,028 --> 01:09:59,688
+If xy equals square root of x cubed plus y to the power of 4.
+
+672
+01:09:59,688 --> 01:10:08,467
+This partial derivative with respect to x is, so this is x cubed plus 8y to the power of 1 over 2.
+
+673
+01:10:08,568 --> 01:10:13,708
+So this derivative is 1 over 2 times square root of that, times derivative of inside with respect to x,
+
+674
+01:10:13,748 --> 01:10:20,128
+which is 3x squared here, which gives us 3x squared over 2 times square root of x cubed plus 8y to the power of 4.
+
+675
+01:10:20,128 --> 01:10:25,208
+This partial derivative with respect to y is, again, 1 over 2 times square root of this,
+
+676
+01:10:25,307 --> 01:10:30,007
+times the derivative of inside with respect to y, which is 32y cubed here.
+
+677
+01:10:30,927 --> 01:10:35,467
+So we get 16y cubed over square root of x cubed plus 8y to the power of 4.
+
+678
+01:10:35,467 --> 01:10:41,188
+Now, what's the value of this function itself?
+
+679
+01:10:42,307 --> 01:10:46,168
+Partial derivative with respect to x and its partial derivative with respect to y at this point,
+
+680
+01:10:46,588 --> 01:10:51,488
+at which we are going to find the linearization.
+
+681
+01:10:51,887 --> 01:10:53,768
+And of course, why are we taking this?
+
+682
+01:10:53,868 --> 01:10:55,088
+Without, these are integers.
+
+683
+01:10:55,307 --> 01:10:56,288
+Two and one are integers.
+
+684
+01:10:56,748 --> 01:11:01,507
+Without using a calculator, we can compute the value of the function of these two points at this point.
+
+685
+01:11:01,507 --> 01:11:08,168
+We can compute this without using a calculator, but without using a calculator,
+
+686
+01:11:08,307 --> 01:11:11,668
+we cannot compute the exact value of this one, right?
+
+687
+01:11:12,568 --> 01:11:15,887
+I mean, yeah, we cannot compute it without using a calculator.
+
+688
+01:11:15,887 --> 01:11:18,768
+Okay, so let's find the value of the function itself.
+
+689
+01:11:18,887 --> 01:11:22,887
+It's partial derivative with respect to x and y at this point, 2 comma 1.
+
+690
+01:11:23,408 --> 01:11:24,048
+So where is the function?
+
+691
+01:11:24,128 --> 01:11:24,748
+Function is here.
+
+692
+01:11:24,748 --> 01:11:31,828
+So f2, 1 is square root of 2 cubed, which is 8, plus 8 times 1, which is another 8.
+
+693
+01:11:31,948 --> 01:11:34,188
+So square root of 16, which is 4 here.
+
+694
+01:11:35,628 --> 01:11:37,307
+What's the value of this one?
+
+695
+01:11:38,427 --> 01:11:40,967
+When x is 2, y is 1.
+
+696
+01:11:41,088 --> 01:11:46,847
+When x is 2, this is 3 times 2 squared, divided by 2 times square root of 16 here.
+
+697
+01:11:46,847 --> 01:11:50,608
+So that's 12 over 8, which is 3 over 2 here.
+
+698
+01:11:51,288 --> 01:11:56,148
+And the value of f, y at that point, when y is 1, in the numerator, we get 16.
+
+699
+01:11:56,467 --> 01:11:59,568
+In the denominator, we get square root of 16 again, which is 4.
+
+700
+01:11:59,728 --> 01:12:00,988
+So 16 over 4 is 4.
+
+701
+01:12:01,488 --> 01:12:02,108
+That's f, y.
+
+702
+01:12:02,608 --> 01:12:03,427
+So l, x, y.
+
+703
+01:12:05,347 --> 01:12:05,948
+f, x, y.
+
+704
+01:12:06,628 --> 01:12:16,427
+The linearization of this function at the point 2, comma 1 is l, x, y equals f2, 1 plus fx, 2, 1 times x minus the x coordinate.
+
+705
+01:12:16,847 --> 01:12:20,688
+of this point, which is 2, plus f, y, 2, 1 times y minus.
+
+706
+01:12:21,408 --> 01:12:22,387
+So this is not 2.
+
+707
+01:12:23,168 --> 01:12:24,088
+This must be 1.
+
+708
+01:12:24,148 --> 01:12:24,807
+This is not correct.
+
+709
+01:12:25,548 --> 01:12:26,528
+This must be 1.
+
+710
+01:12:26,847 --> 01:12:28,608
+f, y, y minus 1.
+
+711
+01:12:28,887 --> 01:12:30,228
+That's the y coordinate of this point.
+
+712
+01:12:30,548 --> 01:12:31,368
+This must be 1.
+
+713
+01:12:31,548 --> 01:12:32,427
+Okay, this is incorrect.
+
+714
+01:12:33,408 --> 01:12:34,368
+What do we get?
+
+715
+01:12:35,208 --> 01:12:45,307
+Get f, 2, 1 is here, 4, here, plus f, x, 2, 1 is 3 over 2 times x minus 2, plus f, y, 2, 1 is 4 times y minus 1.
+
+716
+01:12:45,307 --> 01:12:48,068
+So I have written it correctly here, but this is incorrect.
+
+717
+01:12:48,168 --> 01:12:49,288
+This must be y minus 1.
+
+718
+01:12:49,408 --> 01:12:51,168
+Okay, y minus 1.
+
+719
+01:12:51,488 --> 01:12:52,168
+So what do we get?
+
+720
+01:12:52,248 --> 01:12:58,387
+When we simplify it, we get 4 plus 3 over 2x minus 3, plus 4y minus 4.
+
+721
+01:12:58,387 --> 01:13:00,248
+So which is...
+
+722
+01:13:00,239 --> 01:13:20,019
+3 over 2x plus 4y minus 3. So, that's the linearization of this function. So, we know that f 2.08 0.98 is approximately l 2.08 0.98. So, this is the value we are looking for, and this is its approximate value. This one, we can compute this one here.
+
+723
+01:13:20,019 --> 01:13:41,239
+So, it's 3 over 2 times this x, which is 2.08, plus 4 times this 0.98 minus 3, which is, so 2.08, when we divide it by 2, we get 1.04, multiplied it by 3, we get 3.12, plus 4 times 0.98 is 3.92 and minus 3.
+
+724
+01:13:41,239 --> 01:14:04,159
+So, that gives us 7.94. So, that gives us 7.94. So, that's an approximate value for this square of 2.08, plus 8 times 0.98. So, let's actually compute that value. What's that value? I just wonder what the exact value of that is. See how close that was.
+
+725
+01:14:08,519 --> 01:14:09,899
+So, let me see.
+
+726
+01:14:11,239 --> 01:14:41,219
+0.98.
+
+727
+01:14:41,219 --> 01:14:58,719
+Now, let's take the square of that square of that square of that square of that square of that square of that is 4.04, 69565, whatever. This is the exact value. This is the exact value. This is the exact value of that expression. And we found this approximate value by just using linearization as 4.04, which is just this part.
+
+728
+01:15:03,988 --> 01:15:06,307
+Evet, bu bir dekimalde.
+
+729
+01:15:08,307 --> 01:15:09,668
+Evet, şimdi.
+
+730
+01:15:12,387 --> 01:17:55,588
+Bir sonraki sorunla.
+
+731
+01:17:55,588 --> 01:17:57,588
+So what is Lxy?
+
+732
+01:17:57,588 --> 01:18:14,588
+Lxy is linearization of this function at the point zero one is f zero one plus fx zero one times x minus the x corner of this point which is zero plus fy zero one times y minus the y corner of this point which is one.
+
+733
+01:18:14,588 --> 01:18:27,588
+It gives us f zero one is here zero zero plus fx zero one is pi here times x minus zero that's x plus fy zero one is here which is one times y minus one here.
+
+734
+01:18:27,588 --> 01:18:28,588
+So what do we get?
+
+735
+01:18:28,588 --> 01:18:32,588
+We get Lxy equals pi x plus y minus one.
+
+736
+01:18:32,588 --> 01:18:35,588
+That pi x plus y minus one.
+
+737
+01:18:35,588 --> 01:18:36,588
+So.
+
+738
+01:18:36,588 --> 01:18:42,588
+We are going to find this L0.01 comma 1.05.
+
+739
+01:18:42,588 --> 01:18:43,588
+What is that?
+
+740
+01:18:43,588 --> 01:18:55,588
+Pi times zero point zero one plus y which is one point zero five minus one which is equal to zero point zero one pi plus this part is zero point zero five.
+
+741
+01:18:55,588 --> 01:18:56,588
+So.
+
+742
+01:18:56,588 --> 01:18:57,588
+This expression.
+
+743
+01:18:57,588 --> 01:19:02,588
+Time pi zero point zero one is one point zero five plus L1.05.
+
+744
+01:19:02,588 --> 01:19:03,588
+Is.
+
+745
+01:19:03,588 --> 01:19:31,588
+Time pi.
+
+746
+01:19:04,051 --> 01:19:34,051
+Bu, bu
+
+747
+01:19:34,051 --> 01:19:44,112
+Let's find this actual value again. Let's see how good the approximation is. 0.0814. Let's see. It's the exact value.
+
+748
+01:19:51,507 --> 01:19:52,207
+What is it?
+
+749
+01:20:07,412 --> 01:20:08,032
+Sine
+
+750
+01:20:11,731 --> 01:20:12,131
+No.
+
+751
+01:20:13,771 --> 01:20:14,131
+Okay.
+
+752
+01:20:14,992 --> 01:20:16,952
+Let me do it directly.
+
+753
+01:20:16,952 --> 01:20:20,112
+So, 1.05.
+
+754
+01:20:20,372 --> 01:20:21,792
+1.05.
+
+755
+01:20:22,952 --> 01:20:23,912
+Logarayton.
+
+756
+01:20:24,152 --> 01:20:24,431
+Ln.
+
+757
+01:20:25,072 --> 01:20:26,752
+Ln 1.05 is this.
+
+758
+01:20:27,372 --> 01:20:27,811
+Plus.
+
+759
+01:20:30,792 --> 01:20:33,311
+Pi times.
+
+760
+01:20:34,051 --> 01:20:35,692
+0.01.
+
+761
+01:20:36,431 --> 01:20:36,992
+Times.
+
+762
+01:20:37,752 --> 01:20:39,311
+1.05.
+
+763
+01:20:39,311 --> 01:20:41,811
+equals.
+
+764
+01:20:42,591 --> 01:20:43,072
+It's this.
+
+765
+01:20:43,152 --> 01:20:45,431
+0.08177.
+
+766
+01:20:45,532 --> 01:20:45,692
+Whatever.
+
+767
+01:20:45,992 --> 01:20:49,211
+Now, whatever this expression, we will get the sine of this.
+
+768
+01:20:50,211 --> 01:20:51,832
+So, sine of that.
+
+769
+01:20:53,471 --> 01:20:53,971
+Oh, no.
+
+770
+01:20:54,051 --> 01:20:54,271
+Sorry.
+
+771
+01:20:56,011 --> 01:20:57,671
+I had to convert it to.
+
+772
+01:20:59,091 --> 01:21:00,271
+So, was it degrees?
+
+773
+01:21:00,431 --> 01:21:00,572
+Yeah.
+
+774
+01:21:03,131 --> 01:21:03,652
+No.
+
+775
+01:21:05,652 --> 01:21:06,091
+This.
+
+776
+01:21:11,475 --> 01:21:12,475
+Let me do it again.
+
+777
+01:21:13,375 --> 01:21:13,955
+I'll do it again.
+
+778
+01:21:14,895 --> 01:21:16,455
+1.05
+
+779
+01:21:16,455 --> 01:21:19,055
+ln of that
+
+780
+01:21:19,055 --> 01:21:22,235
+1.05
+
+781
+01:21:22,235 --> 01:21:23,695
+ln of that
+
+782
+01:21:23,695 --> 01:21:25,055
+plus
+
+783
+01:21:25,055 --> 01:21:27,475
+pi times
+
+784
+01:21:27,475 --> 01:21:29,375
+0.01
+
+785
+01:21:29,375 --> 01:21:32,455
+times 1.05
+
+786
+01:21:32,455 --> 01:21:33,655
+is equal to this.
+
+787
+01:21:35,195 --> 01:21:36,295
+Oh, it's not
+
+788
+01:21:36,295 --> 01:21:38,315
+the same as what I found
+
+789
+01:21:38,315 --> 01:21:40,536
+before. Did I do something wrong?
+
+790
+01:21:40,536 --> 01:21:44,275
+1.05
+
+791
+01:21:44,275 --> 01:21:46,555
+ln of that
+
+792
+01:21:46,555 --> 01:21:48,355
+plus
+
+793
+01:21:48,355 --> 01:21:50,576
+pi
+
+794
+01:21:50,576 --> 01:21:51,536
+times
+
+795
+01:21:51,536 --> 01:21:53,795
+0.01
+
+796
+01:21:53,795 --> 01:21:55,235
+times
+
+797
+01:21:55,235 --> 01:21:57,775
+1.05
+
+798
+01:21:57,775 --> 01:21:59,135
+is equal to
+
+799
+01:21:59,135 --> 01:22:01,036
+Okay, now it's correct.
+
+800
+01:22:03,155 --> 01:22:05,435
+Okay, now I'll find the sign
+
+801
+01:22:05,435 --> 01:22:07,235
+of this, but it shouldn't have...
+
+802
+01:22:07,235 --> 01:22:08,335
+Okay, it's radians now.
+
+803
+01:22:09,536 --> 01:22:10,095
+So
+
+804
+01:22:10,536 --> 01:22:11,555
+sign of that
+
+805
+01:22:11,555 --> 01:22:12,735
+is this.
+
+806
+01:22:13,055 --> 01:22:14,115
+So this is the exact value.
+
+807
+01:22:14,275 --> 01:22:16,275
+But what I found it...
+
+808
+01:22:16,275 --> 01:22:18,835
+We found
+
+809
+01:22:18,835 --> 01:22:19,755
+approximate value
+
+810
+01:22:19,755 --> 01:22:21,475
+of 0.0814.
+
+811
+01:22:22,855 --> 01:22:24,715
+0.0814.
+
+812
+01:22:26,175 --> 01:22:27,615
+And its actual value
+
+813
+01:22:27,615 --> 01:22:28,135
+is this.
+
+814
+01:22:28,135 --> 01:22:29,875
+is correct.
+
+815
+01:22:29,875 --> 01:22:30,795
+So it's correct
+
+816
+01:22:30,795 --> 01:22:31,775
+up to this point,
+
+817
+01:22:31,935 --> 01:22:32,195
+but
+
+818
+01:22:32,195 --> 01:22:35,375
+the fourth
+
+819
+01:22:35,375 --> 01:22:36,095
+position
+
+820
+01:22:36,095 --> 01:22:36,875
+after the...
+
+821
+01:22:38,875 --> 01:22:39,496
+I mean,
+
+822
+01:22:39,536 --> 01:22:40,015
+it's true
+
+823
+01:22:40,015 --> 01:22:41,315
+up to three decimal places.
+
+824
+01:22:41,415 --> 01:22:42,496
+The fourth decimal place
+
+825
+01:22:42,496 --> 01:22:43,195
+is not correct,
+
+826
+01:22:43,255 --> 01:22:43,555
+actually.
+
+827
+01:22:43,935 --> 01:22:44,215
+It's
+
+828
+01:22:44,215 --> 01:22:45,755
+off by
+
+829
+01:22:45,755 --> 01:22:47,715
+2, 3,
+
+830
+01:22:47,935 --> 01:22:48,815
+something like that.
+
+831
+01:22:49,155 --> 01:22:49,715
+But that's...
+
+832
+01:22:49,715 --> 01:22:51,015
+Yeah, that's an approximate value
+
+833
+01:22:51,015 --> 01:22:51,536
+we found
+
+834
+01:22:51,536 --> 01:22:52,355
+for this value,
+
+835
+01:22:52,795 --> 01:22:54,055
+which is a good approximation.
+
+836
+01:22:54,055 --> 01:22:57,955
+The error is less than
+
+837
+01:22:57,955 --> 01:23:02,155
+0.0003.
+
+838
+01:23:03,155 --> 01:23:04,536
+The error is less than that.
+
+839
+01:23:05,076 --> 01:23:05,975
+That's a good approximation.
+
+840
+01:23:05,975 --> 01:23:15,595
+Okay.
+
+841
+01:23:13,076 --> 01:23:13,836
+Let's continue.
+
+842
+01:23:17,055 --> 01:23:27,515
+For a function f of two variables, f12 is equal to 5, and the derivative of f in the direction of i plus j is 3 root 2.
+
+843
+01:23:28,275 --> 01:23:32,996
+Find an approximate value for f1, 1, 2.1, 1.1, 2.1.
+
+844
+01:23:33,855 --> 01:23:34,376
+Okay.
+
+845
+01:23:34,996 --> 01:23:37,096
+First of all, let's use this information.
+
+846
+01:23:37,935 --> 01:23:39,275
+Let's use this information.
+
+847
+01:23:39,275 --> 01:23:44,596
+The derivative of f in the direction of i plus j is 3 root 2.
+
+848
+01:23:44,775 --> 01:23:45,596
+So what does this mean?
+
+849
+01:23:46,596 --> 01:23:47,536
+What does this mean?
+
+850
+01:23:47,935 --> 01:23:49,756
+So of course, what is the derivative?
+
+851
+01:23:50,876 --> 01:23:53,576
+What's the directional derivative of a function at a point?
+
+852
+01:23:53,576 --> 01:23:55,576
+Uh.
+
+853
+01:24:01,043 --> 01:27:20,043
+Yuzhan Muzikra'ya.
+
+854
+01:27:18,579 --> 01:27:20,119
+Okay, next question.
+
+855
+01:27:21,119 --> 01:27:31,059
+Consider a function f satisfying f12 equals minus 3 and f1.01, 1.99 equals minus 2.96.
+
+856
+01:27:32,140 --> 01:27:34,279
+Now, it's the opposite question.
+
+857
+01:27:34,899 --> 01:27:37,260
+The value of the function at this point is given.
+
+858
+01:27:37,479 --> 01:27:40,359
+The value of the function at a nearby point is given.
+
+859
+01:27:40,600 --> 01:27:41,260
+These are given.
+
+860
+01:27:41,260 --> 01:27:49,079
+Now, find an approximate value for the directional derivative of f at the point p12 in this direction.
+
+861
+01:27:49,939 --> 01:27:50,939
+Now, this is the question.
+
+862
+01:27:51,159 --> 01:27:51,600
+It's opposite.
+
+863
+01:27:55,300 --> 01:27:57,239
+First, let's find linearization.
+
+864
+01:27:57,539 --> 01:28:01,059
+Linearization of f at this point 1, 2.
+
+865
+01:28:02,300 --> 01:28:04,939
+What's the linearization of f at the point 1, 2?
+
+866
+01:28:04,939 --> 01:28:11,859
+So, xy equals f12 plus fx12 times x minus 1 plus fy12 times y minus 2.
+
+867
+01:28:13,100 --> 01:28:14,819
+Which is f12 is given.
+
+868
+01:28:16,019 --> 01:28:22,800
+F12 is given as minus 3 plus fx12 times x minus 1 plus fy12 times y minus 2.
+
+869
+01:28:23,180 --> 01:28:26,720
+Now, what is the value of the linearization at this point?
+
+870
+01:28:27,140 --> 01:28:28,640
+1.01, 1.99.
+
+871
+01:28:28,640 --> 01:28:32,100
+So, l1.01, 1.99 is what?
+
+872
+01:28:32,100 --> 01:28:36,939
+minus 3 plus fx12 times x minus 1.
+
+873
+01:28:37,220 --> 01:28:43,619
+So, 1.01 minus 1 is this, 0.01 plus fy1.2 times y minus 2.
+
+874
+01:28:43,800 --> 01:28:45,000
+y is 1.99.
+
+875
+01:28:45,260 --> 01:28:48,199
+So, 1.99 minus 2 is minus 0.01.
+
+876
+01:28:49,279 --> 01:28:57,519
+Which is minus 3 plus if we factor 0.01 out, get fx1, 2 minus fy1, 2.
+
+877
+01:28:57,819 --> 01:28:58,359
+We get this.
+
+878
+01:28:58,359 --> 01:29:04,100
+So, l1.01, 1.99 is equal to this.
+
+879
+01:29:04,340 --> 01:29:05,000
+What do we know?
+
+880
+01:29:05,479 --> 01:29:15,539
+We know that f1.01, 1.99 and l1.01, 1.99 are approximate.
+
+881
+01:29:16,300 --> 01:29:18,220
+They are close to each other.
+
+882
+01:29:19,140 --> 01:29:19,760
+So, what is this?
+
+883
+01:29:19,760 --> 01:29:31,600
+The value of this one is minus 2.96, which is f1.01, 1.99, which is going to be approximately l1.01, 1.99, which is equal to this.
+
+884
+01:29:32,760 --> 01:29:33,399
+This side.
+
+885
+01:29:33,399 --> 01:29:52,180
+So, when we throw this 3 to the other side of this equation, we get that 0.04 is approximately, in this equation, through minus 3 to the other side, 3 minus 2.96, which is 0.04, is approximately this part.
+
+886
+01:29:52,180 --> 01:29:56,059
+0.01 times fx1, 2 minus f1, 2 minus f1, 2.
+
+887
+01:29:56,059 --> 01:30:03,699
+So, when we divide both sides by this 0.01, we get fx1, 2 minus f1, 2 is approximately 4.
+
+888
+01:30:05,399 --> 01:30:06,600
+We get this.
+
+889
+01:30:07,140 --> 01:30:09,000
+Not equal, but it's approximately 4.
+
+890
+01:30:09,460 --> 01:30:10,059
+That's what we get.
+
+891
+01:30:10,059 --> 01:30:16,019
+That's the information we get from this first sentence.
+
+892
+01:30:16,920 --> 01:30:18,119
+Now, what is the question?
+
+893
+01:30:18,939 --> 01:30:22,019
+Find an approximate value using this information now.
+
+894
+01:30:22,399 --> 01:30:29,399
+We will find an approximate value for the directional derivative of f at the point p12 in this direction.
+
+895
+01:30:29,979 --> 01:30:31,859
+Again, this is not a unit vector.
+
+896
+01:30:32,519 --> 01:30:33,739
+What is its length?
+
+897
+01:30:34,159 --> 01:30:36,199
+Part of 4 plus 4, which is square of 8.
+
+898
+01:30:36,279 --> 01:30:37,000
+That's 2 root 2.
+
+899
+01:30:37,000 --> 01:30:38,880
+Divide this by 2 root 2.
+
+900
+01:30:39,140 --> 01:30:42,439
+We get minus 1 over root 2 i plus 1 over root 2 j.
+
+901
+01:30:42,840 --> 01:30:45,019
+So, this is a unit vector in the direction of v.
+
+902
+01:30:45,920 --> 01:30:48,960
+And so, what are we looking for?
+
+903
+01:30:49,000 --> 01:30:51,559
+We are looking for the directional derivative of f at this point.
+
+904
+01:30:52,220 --> 01:30:53,399
+In this direction.
+
+905
+01:30:53,979 --> 01:31:01,680
+The directional derivative of f at this point in the direction of u is the gradient vector dot this unit vector u.
+
+906
+01:31:01,680 --> 01:31:07,100
+So, the gradient vector, the i component of the gradient vector is fx12.
+
+907
+01:31:07,720 --> 01:31:10,399
+j component of the gradient vector is f512.
+
+908
+01:31:11,439 --> 01:31:14,380
+And the unit vector over here is minus 1 over root 2, 1 over root.
+
+909
+01:31:14,380 --> 01:31:16,500
+So, there, what, that product is what?
+
+910
+01:31:16,800 --> 01:31:17,960
+Minus 1 over root 2.
+
+911
+01:31:17,960 --> 01:31:18,559
+So, there, what, that product is what?
+
+912
+01:31:18,559 --> 01:31:43,960
+Minus 1 over root 2.
+
+913
+01:31:18,579 --> 01:31:36,100
+This, fx, plus 1 over root 2, times this, fy, which is, when we factor minus 1 over root 2 out, we get fx12 minus fy12. We found that fx12 minus fy12 is approximately 4. That's what we have found.
+
+914
+01:31:36,100 --> 01:31:55,019
+So, this is approximately 4. Therefore, this directional derivative is approximately minus 1 over root 2 times 4, which is minus 2 root 2. So, that's an approximate value. Note that this is approximate. Approximate value of this directional derivative is minus 2 root 2.
+
+915
+01:31:56,100 --> 01:31:59,059
+That's how we can find it using linearization.
+
+916
+01:32:00,059 --> 01:32:00,539
+See ya.
+
+917
+01:32:04,979 --> 01:32:05,479
+Ok.
+
+918
+01:32:08,479 --> 01:32:13,179
+For the three, find and classify the critical points of fxy.
+
+919
+01:32:14,679 --> 01:32:15,839
+Ok, I think that's enough.
+
+920
+01:32:16,379 --> 01:32:23,759
+One, two, three, four, five.
+
+921
+01:32:24,759 --> 01:32:26,319
+Yeah, we solved five problems.
+
+922
+01:32:28,139 --> 01:32:28,699
+Yes.
+
+923
+01:32:36,627 --> 01:32:40,307
+All right, I think, yeah, eight problems are left.
+
+924
+01:32:41,547 --> 01:32:42,768
+That's enough for today.
+
+925
+01:32:42,887 --> 01:32:50,087
+Let's solve these problems, the remaining problems from finding the extreme values.
+
+926
+01:32:51,587 --> 01:32:53,148
+Yeah, eight problems are left.
+
+927
+01:32:53,327 --> 01:32:54,487
+Let's solve them from tomorrow.
+
+928
+01:32:55,527 --> 01:32:56,947
+So that's it for today.
+
+929
+01:32:57,148 --> 01:33:00,347
+Tomorrow we will finish these problems and then we will start chapter 50.
+
+930
+01:33:01,967 --> 01:33:04,467
+So any questions from whatever I covered today?
+
+931
+01:33:06,627 --> 01:33:07,867
+Any questions?
+
+932
+01:33:16,500 --> 01:33:18,520
+Okay, so that's it for today.
+
+933
+01:33:20,920 --> 01:33:22,159
+I'll see you tomorrow then.
+
+934
+01:33:23,260 --> 01:33:24,319
+All have a nice day.
+
+935
+01:33:25,020 --> 01:33:25,300
+Bye.

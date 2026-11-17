@@ -1,0 +1,3483 @@
+1
+00:01:52,531 --> 00:02:10,531
+Okay, let's see. 120, that's fine. Okay, last week we have started with infinite sequences and infinite series. We have defined what are sequences and then we defined what a series is.
+
+2
+00:02:10,531 --> 00:02:27,252
+And we say that given an infinite series, the main question is to determine whether the given series is convergent or divergent. In other words, if the sum of those infinitely many numbers add up to a real number or not. That's the general question.
+
+3
+00:02:27,252 --> 00:02:33,252
+Now, to determine whether a series is convergent or divergent,
+
+4
+00:02:39,219 --> 00:02:44,859
+There are some tests. We will basically see eight tests. We have seen one of them.
+
+5
+00:02:46,860 --> 00:02:52,219
+It was the divergence test. We have seen that last week. It was a one-way test. It says that
+
+6
+00:02:52,219 --> 00:02:59,719
+if to when we look at this infinite series, we look at the limit of the answer, limit of an.
+
+7
+00:03:00,419 --> 00:03:07,740
+If limit of an is not zero, we conclude that the series is divergent. On the other hand,
+
+8
+00:03:07,740 --> 00:03:15,519
+if the limit of an is equal to zero, then we make no conclusion. The series may be convergent.
+
+9
+00:03:15,620 --> 00:03:23,039
+It may be divergent. So if the limit an is equal to zero, how are we going to determine whether
+
+10
+00:03:23,039 --> 00:03:30,360
+the given series is convergent or divergent? There are several tests. We will see seven more tests
+
+11
+00:03:30,360 --> 00:03:35,120
+to determine whether a series is convergent or divergent. The first one is the integral test.
+
+12
+00:03:35,120 --> 00:03:37,240
+Here's the idea.
+
+13
+00:03:43,348 --> 00:03:52,948
+Yuzgur Kuzma, First of all suppose that this is an inference series with am bigger than or equal to zero, so it doesn't have any negative term.
+
+14
+00:03:54,208 --> 00:04:01,048
+Yuzgur Kuzma, There are no negative terms in the sun, a one plus a two plus a three they're all zero or positive.
+
+15
+00:04:02,428 --> 00:04:12,808
+Yuzgur Kuzma, Then, what we can conclude, then, s one is a one, s two is going to be a one plus a two, s three is going to be a one plus a two plus a three.
+
+16
+00:04:12,808 --> 00:04:18,708
+Yuzgur Kuzma, They will never decrease right because each term I add is going to be either zero or a positive number.
+
+17
+00:04:19,608 --> 00:04:24,708
+Yuzgur Kuzma, I will always get either the equal number or a bigger number, when we look at these partial sums.
+
+18
+00:04:27,708 --> 00:04:37,468
+Yuzgur Kuzma, So the monotonic sequence theorem we have seen last week says that if a sequence is bounded monotonic and bounded, then it converges.
+
+19
+00:04:37,468 --> 00:04:47,108
+Yuzgur Kuzma, So from here we can conclude that this is a monotonic sequence, this is this sequence of partial sums is going to be a monotonic sequence because of this.
+
+20
+00:04:47,108 --> 00:04:50,708
+Yuzgur Kuzma, Therefore, if it is bounded we can conclude that it converges.
+
+21
+00:04:50,708 --> 00:04:58,927
+Yuzgur Kuzma, So that's that's this corollary over here, a series, in other words, of non negative terms, this is important of non negative terms.
+
+22
+00:04:59,427 --> 00:05:00,408
+Yuzgur Kuzma, So all terms.
+
+23
+00:05:01,668 --> 00:05:05,168
+Yuzgur Kuzma, It has no negative terms in it all terms are either zero or positive.
+
+24
+00:05:06,508 --> 00:05:09,947
+Yuzgur Kuzma, Converges if and only if it's partial sums are bounded from above.
+
+25
+00:05:09,948 --> 00:05:19,908
+Yuzgur Kuzma, If it's partial sums if this sequence as one as two as three is bounded from above, it converges, otherwise it diverges to infinity basically.
+
+26
+00:05:23,315 --> 00:05:25,315
+Şimdi, let's look at the harmonic series.
+
+27
+00:05:48,339 --> 00:06:18,339
+1'e'ye
+
+28
+00:06:18,339 --> 00:06:32,339
+S1 is 1, S2 is 1 plus 1 half, that's 3 over 2. S3 is 1 plus 1 over 2 plus 1 over 3, that's going to be 3 over 2 plus 1 over 3 is 9, 11 over 12.
+
+29
+00:06:33,739 --> 00:06:37,939
+Then S4 is going to be add 1 over 4 to that.
+
+30
+00:06:40,679 --> 00:06:47,939
+That's not 11 over 12, sorry. What am I doing? 3 over 2 plus 1 over 3, that's 11 over 6. Sorry.
+
+31
+00:06:48,339 --> 00:07:02,699
+Then 11 over 6 plus 1 over 4, that's going to be what? 22, 25 over 12. And so on.
+
+32
+00:07:07,060 --> 00:07:13,100
+So, here we see that S1 is less than Rukut S2, less than Rukut S3, less than Rukut S4, and so on.
+
+33
+00:07:13,620 --> 00:07:14,959
+So, they never decrease.
+
+34
+00:07:15,420 --> 00:07:16,579
+They never decrease.
+
+35
+00:07:17,180 --> 00:07:21,980
+And as we said, the monotonic sequence theorem says that since it's a monotonic sequence now,
+
+36
+00:07:22,120 --> 00:07:25,139
+if it is bounded from above, it's going to be convergent.
+
+37
+00:07:25,220 --> 00:07:27,420
+If it is not bounded from above, it's going to be divergent.
+
+38
+00:07:28,500 --> 00:07:30,459
+So, let's see. Is this bounded or not?
+
+39
+00:07:30,759 --> 00:07:35,319
+Now, we see that in the fourth term, it exceeds 2, right?
+
+40
+00:07:35,379 --> 00:07:36,279
+This is bigger than 2.
+
+41
+00:07:37,060 --> 00:07:45,300
+At somewhere, it's probably going to exceed 3, but is it going to move like that and diverge to infinity,
+
+42
+00:07:45,420 --> 00:07:46,459
+or is it bounded somewhere?
+
+43
+00:07:46,660 --> 00:07:48,040
+Is it going to converge some number?
+
+44
+00:07:50,079 --> 00:07:50,800
+Let's see.
+
+45
+00:07:50,939 --> 00:07:52,279
+This is the trick here.
+
+46
+00:07:58,519 --> 00:08:02,620
+Now, this sequence, this sum over here, is bigger than the following.
+
+47
+00:08:03,680 --> 00:08:04,319
+Bigger than.
+
+48
+00:08:04,319 --> 00:08:17,319
+This sequence over here is...
+
+49
+00:08:11,987 --> 00:08:19,767
+1 over 3, sorry, yeah, instead of 1 over 3, I'm going to write 1 over 4.
+
+50
+00:08:30,196 --> 00:08:31,656
+Evet, let's do that.
+
+51
+00:08:34,156 --> 00:08:36,336
+Let me write a few more times.
+
+52
+00:08:41,172 --> 00:08:56,672
+1 over 6, plus 1 over 7, plus 1 over 8, plus 1 over 9, 1 over 16, plus 1 over 17, plus 1 over 17, and so on.
+
+53
+00:08:56,812 --> 00:08:57,512
+Goz like that.
+
+54
+00:09:01,875 --> 00:09:03,875
+Let me write it like this.
+
+55
+00:09:05,875 --> 00:09:07,875
+So, I'll prove that like this.
+
+56
+00:09:08,875 --> 00:09:13,875
+This one, these four, from 1 over 9 to 1 over 16, 8.
+
+57
+00:09:14,875 --> 00:09:20,875
+So, 2 terms, 4 terms, 8 terms, then 16 terms, 32 terms and so on.
+
+58
+00:09:21,875 --> 00:09:23,875
+Let's look at these groups.
+
+59
+00:09:24,875 --> 00:09:28,875
+Now, 1 over 3 plus 1 over 4.
+
+60
+00:09:28,875 --> 00:09:34,875
+I can say that, I can certainly say that this is bigger than 1 over 4 plus 1 over 4, right?
+
+61
+00:09:35,875 --> 00:09:37,875
+1 over 3 is bigger than 1 over 4.
+
+62
+00:09:38,875 --> 00:09:41,875
+So, this left-hand side is bigger. And what is this?
+
+63
+00:09:42,875 --> 00:09:44,875
+That's 2 over 4, which is 1 over 2.
+
+64
+00:09:45,875 --> 00:09:47,875
+Now, let's look at the second group.
+
+65
+00:09:48,875 --> 00:09:53,875
+Second group, 1 over 5 plus 1 over 6 plus 1 over 7 plus 1 over 8.
+
+66
+00:09:53,875 --> 00:09:59,875
+This is bigger than 1 over 8 plus 1 over 8 plus 1 over 8 plus 1 over 8, right?
+
+67
+00:10:00,875 --> 00:10:01,875
+This is bigger than that.
+
+68
+00:10:02,875 --> 00:10:06,875
+Because, 1 over 5 is bigger than 1 over 8.
+
+69
+00:10:07,875 --> 00:10:08,875
+1 over 6 is bigger than 1 over 8.
+
+70
+00:10:08,875 --> 00:10:10,875
+1 over 7 is bigger than 1 over 8.
+
+71
+00:10:10,875 --> 00:10:27,875
+So, this is bigger than 1 over 8.
+
+72
+00:10:31,316 --> 00:10:33,036
+This is going to be...
+
+73
+00:10:42,227 --> 00:11:12,227
+Bu, bu
+
+74
+00:11:12,227 --> 00:11:18,548
+As we see the sum of these terms the sequence of partial sums grows.
+
+75
+00:11:19,548 --> 00:11:21,548
+One half, one half, one half, one half.
+
+76
+00:11:21,887 --> 00:11:27,527
+We can add infinitely many one halfs and we can make the sequence of partial sums as big as possible.
+
+77
+00:11:28,007 --> 00:11:32,247
+Therefore, this is not bounded from above and it is unbounded.
+
+78
+00:11:32,347 --> 00:11:33,548
+Therefore, it diverges the infinity.
+
+79
+00:11:34,347 --> 00:11:37,707
+This here is the sequence of
+
+80
+00:11:41,395 --> 00:11:53,795
+Partial sum, unbounded, ve, it diverges, to infinity.
+
+81
+00:11:57,331 --> 00:12:06,772
+Evet, as we see, this is a sequence, where the n-th term, n-th term, approaches zero, but still the series diverges.
+
+82
+00:12:06,772 --> 00:12:08,772
+The series diverges.
+
+83
+00:12:13,364 --> 00:12:16,604
+So, the n-th term being 0 does not mean that the series converts.
+
+84
+00:12:20,532 --> 00:12:21,032
+Tamam.
+
+85
+00:12:27,796 --> 00:12:29,796
+Bu seferin olarak 1 n²'ye görebilirsiniz.
+
+86
+00:12:29,796 --> 00:12:34,796
+Bu seferin olarak bu seferin olarak
+
+87
+00:12:34,796 --> 00:12:37,796
+ve tiberin aynı şekilde
+
+88
+00:12:37,796 --> 00:12:55,796
+bir seferin olarak
+
+89
+00:12:54,292 --> 00:13:24,292
+Ok, şimdi bu son 1 n2 n
+
+90
+00:13:24,292 --> 00:13:52,692
+Now, is it like the previous one or not? Again, we start with 1. We add 1 over 4, we get 5 over 4. Then 5 over 4 plus 1 over 9, you'll get a bigger number. Then add 1 over 16, you get a bigger number, bigger number, bigger number, bigger number. So, as we keep adding new terms to our sum, we'll get bigger, bigger, bigger, bigger, bigger numbers.
+
+91
+00:13:52,692 --> 00:14:03,091
+But are those numbers going to increase, increase, increase and approach some point or are they going to diverge to infinity? So, can we bound them above or not?
+
+92
+00:14:03,812 --> 00:14:08,612
+So, the integral test is useful here. The integral test, the idea behind the integral test is this.
+
+93
+00:14:09,731 --> 00:14:12,451
+Okay, now, look at this.
+
+94
+00:14:21,940 --> 00:14:24,980
+So, look at the graph of y equals 1 over x squared.
+
+95
+00:14:26,980 --> 00:14:28,420
+The positive half of it.
+
+96
+00:14:30,340 --> 00:14:32,900
+Y equals 1 over x squared. Its graph looks like this.
+
+97
+00:14:35,780 --> 00:14:45,860
+So, let's look at the values of this function at 0.1, 2, 3, 4, 5, 6, 7, 8, and so on.
+
+98
+00:15:09,268 --> 00:15:11,388
+Ok, elform recten gibi bir şey.
+
+99
+00:15:29,683 --> 00:15:59,683
+bu kısımda y'ı y'
+
+100
+00:15:59,683 --> 00:16:28,163
+Area of this rectangle is 1 times 1 over 4. It's 1 over 4. Area of this rectangle is 1 times 1 over 9. Area of this rectangle is 1 times 1 over 16. It's 1 over 16. This one is area 1 times 1 over 25. This one is 1 times 1 over 36.
+
+101
+00:16:29,683 --> 00:16:33,283
+This one is 1 times 1 over 49. And so.
+
+102
+00:16:37,460 --> 00:16:39,460
+As we see,
+
+103
+00:16:41,460 --> 00:16:42,460
+so,
+
+104
+00:16:43,460 --> 00:16:45,460
+this sum over here,
+
+105
+00:16:46,460 --> 00:16:49,460
+sum, n equals 1 to infinity n squared,
+
+106
+00:16:50,460 --> 00:16:51,460
+this is equal to,
+
+107
+00:16:53,460 --> 00:16:54,460
+um,
+
+108
+00:17:09,619 --> 00:17:12,619
+Bu, bu sumin
+
+109
+00:17:12,619 --> 00:17:16,619
+is less than 1 plus
+
+110
+00:17:16,619 --> 00:17:19,619
+let's look at this part.
+
+111
+00:17:21,619 --> 00:17:23,619
+So, 1 plus
+
+112
+00:17:23,619 --> 00:17:27,619
+this part is 1 over 4 plus, 1 over 9 plus, 1 over 26 plus
+
+113
+00:17:27,619 --> 00:17:31,619
+and so on. That's the sum of the areas of these rectangles.
+
+114
+00:17:31,619 --> 00:17:34,619
+Right? And we can see from this picture
+
+115
+00:17:34,619 --> 00:17:37,619
+that some of the areas of these rectangles
+
+116
+00:17:37,619 --> 00:17:40,619
+is less than, is going to be less than
+
+117
+00:17:43,619 --> 00:17:46,619
+area below this curve
+
+118
+00:17:46,619 --> 00:17:49,619
+from 1 to infinity. Right?
+
+119
+00:17:49,619 --> 00:17:51,619
+Because these parts
+
+120
+00:17:54,619 --> 00:17:56,619
+these parts are missing.
+
+121
+00:17:57,619 --> 00:17:58,619
+Right?
+
+122
+00:17:58,619 --> 00:18:01,619
+So, but we know for sure that
+
+123
+00:18:01,619 --> 00:18:05,619
+the sum of these numbers, 1 over 4 plus, 1 over 9 plus, 1 over 16 and so on
+
+124
+00:18:05,619 --> 00:18:07,619
+some of the areas of these rectangles
+
+125
+00:18:07,619 --> 00:18:08,619
+is less than
+
+126
+00:18:09,619 --> 00:18:10,619
+the integral
+
+127
+00:18:10,619 --> 00:18:12,619
+from 1 to infinity
+
+128
+00:18:13,619 --> 00:18:15,619
+integral from 1 to infinity
+
+129
+00:18:15,619 --> 00:18:18,619
+of 1 over x squared dx
+
+130
+00:18:18,619 --> 00:18:21,619
+which is the area
+
+131
+00:18:22,619 --> 00:18:23,619
+under this curve
+
+132
+00:18:23,619 --> 00:18:24,619
+from 1 to infinity.
+
+133
+00:18:24,619 --> 00:18:25,619
+from 1 to infinity
+
+134
+00:18:25,619 --> 00:18:26,619
+from 1 to infinity.
+
+135
+00:18:26,619 --> 00:18:27,619
+So, that is our
+
+136
+00:18:27,619 --> 00:18:28,619
+last time
+
+137
+00:18:28,619 --> 00:18:29,619
+what is this equal to?
+
+138
+00:18:29,619 --> 00:18:31,619
+This is 1 plus
+
+139
+00:18:31,619 --> 00:18:36,619
+this is the limit as
+
+140
+00:18:36,619 --> 00:18:39,619
+B approaches infinity integral from 1 to B
+
+141
+00:18:39,619 --> 00:18:41,619
+1 over x squared dx
+
+142
+00:18:41,619 --> 00:18:42,619
+which is
+
+143
+00:18:42,619 --> 00:18:43,619
+1 plus
+
+144
+00:18:43,619 --> 00:18:45,619
+integral of 1 over x squared
+
+145
+00:18:45,619 --> 00:18:46,619
+minus 1 over x squared
+
+146
+00:18:46,619 --> 00:18:48,619
+minus 1 over x
+
+147
+00:18:48,619 --> 00:18:51,619
+so the limit as B approaches infinity
+
+148
+00:18:52,619 --> 00:18:53,619
+minus 1 over x
+
+149
+00:18:53,619 --> 00:18:54,619
+from B
+
+150
+00:18:54,619 --> 00:18:55,619
+1 to B
+
+151
+00:18:55,619 --> 00:18:58,619
+which is equal to
+
+152
+00:18:58,619 --> 00:19:00,619
+1 plus
+
+153
+00:19:00,619 --> 00:19:04,619
+the limit as B approaches infinity
+
+154
+00:19:04,619 --> 00:19:06,619
+when x is B we get minus 1 over B
+
+155
+00:19:06,619 --> 00:19:07,619
+minus minus 1
+
+156
+00:19:07,619 --> 00:19:08,619
+which gives us this.
+
+157
+00:19:08,619 --> 00:19:17,619
+and now, so that's the integral of this
+
+158
+00:19:17,619 --> 00:19:18,619
+from 1 to B
+
+159
+00:19:18,619 --> 00:19:22,619
+now the limit as B approaches infinity of this
+
+160
+00:19:22,619 --> 00:19:24,619
+integral over here is
+
+161
+00:19:24,619 --> 00:19:27,619
+as B approaches infinity this part approaches 0
+
+162
+00:19:27,619 --> 00:19:28,619
+so we get 1 plus 1
+
+163
+00:19:28,619 --> 00:19:29,619
+which is equal to 2
+
+164
+00:19:29,619 --> 00:19:30,619
+so what do we conclude?
+
+165
+00:19:30,619 --> 00:19:31,619
+so
+
+166
+00:19:31,619 --> 00:19:39,619
+n equals 1 to infinity 1 over n squared
+
+167
+00:19:39,619 --> 00:19:41,619
+is less than 2
+
+168
+00:19:41,619 --> 00:19:43,619
+less than 2
+
+169
+00:19:43,619 --> 00:19:47,619
+now
+
+170
+00:19:47,619 --> 00:19:50,619
+our theorem the corollary we have seen at the beginning
+
+171
+00:19:50,619 --> 00:19:52,619
+says that
+
+172
+00:19:52,619 --> 00:19:53,619
+if a sequence
+
+173
+00:19:53,619 --> 00:19:54,619
+if a series
+
+174
+00:19:54,619 --> 00:19:56,619
+with non-negative terms
+
+175
+00:19:56,619 --> 00:19:57,619
+is bounded
+
+176
+00:19:57,619 --> 00:19:58,619
+then it must convert
+
+177
+00:19:58,619 --> 00:20:00,619
+it is bounded
+
+178
+00:20:00,619 --> 00:20:01,619
+from above
+
+179
+00:20:01,619 --> 00:20:02,619
+it never exceeds 2
+
+180
+00:20:02,619 --> 00:20:03,619
+that sums
+
+181
+00:20:03,619 --> 00:20:05,619
+we keep adding these numbers
+
+182
+00:20:05,619 --> 00:20:08,619
+that sum is never going to exceed 2
+
+183
+00:20:08,619 --> 00:20:09,619
+so the theorem says that
+
+184
+00:20:09,619 --> 00:20:10,619
+it must converge
+
+185
+00:20:10,619 --> 00:20:12,619
+we don't know what the sum is equal to
+
+186
+00:20:12,619 --> 00:20:13,619
+actually we know
+
+187
+00:20:13,619 --> 00:20:15,619
+but we don't know from here
+
+188
+00:20:15,619 --> 00:20:16,619
+what the sum is equal to
+
+189
+00:20:16,619 --> 00:20:17,619
+but it converges
+
+190
+00:20:17,619 --> 00:20:19,619
+we can conclude that it converges
+
+191
+00:20:23,892 --> 00:20:25,892
+Bu series
+
+192
+00:20:25,892 --> 00:20:27,892
+is bounded
+
+193
+00:20:27,892 --> 00:20:29,892
+and hence
+
+194
+00:20:29,892 --> 00:20:33,892
+converges
+
+195
+00:20:35,892 --> 00:20:37,892
+Actually, its actual sum
+
+196
+00:20:37,892 --> 00:20:39,892
+of the series
+
+197
+00:20:39,892 --> 00:20:41,892
+is equal to pi squared over 6
+
+198
+00:20:43,892 --> 00:20:45,892
+pi squared over 6
+
+199
+00:20:45,892 --> 00:20:47,892
+that's around 1.6, 1.7
+
+200
+00:20:47,892 --> 00:20:49,892
+something like that
+
+201
+00:20:53,203 --> 00:20:55,303
+Evet, 1.6, 1.7.
+
+202
+00:20:57,283 --> 00:20:59,084
+That's what the sum of the series is.
+
+203
+00:20:59,223 --> 00:21:05,703
+Okay, this is the idea behind the integral test.
+
+204
+00:21:06,624 --> 00:21:07,663
+So, in general,
+
+205
+00:21:14,163 --> 00:21:14,584
+So,
+
+206
+00:21:24,084 --> 00:21:32,403
+Ok, so this series over here, when we look at this, we get this.
+
+207
+00:21:49,907 --> 00:22:02,947
+So in general, if we have a sequence of positive terms, an be a sequence of positive terms, suppose that an is equal to fn, where f is a continuous positive decreasing function. These three are important.
+
+208
+00:22:03,807 --> 00:22:10,788
+f must be continuous, positive, and decreasing, such that an is equal to fn.
+
+209
+00:22:10,788 --> 00:22:15,167
+x for all x bigger than fn.
+
+210
+00:22:15,927 --> 00:22:20,627
+Then the series and the integral both converge or both diverge.
+
+211
+00:22:24,051 --> 00:22:37,251
+In other words, if the integral, if this, if this indefinite, if this improper integral converges, then the series converges. If this improper integral diverges, then the series diverges.
+
+212
+00:22:38,791 --> 00:22:47,692
+You can see the proof in the book. I'm going to skip it. Actually, that's the idea. And this integral test over here.
+
+213
+00:22:51,731 --> 00:22:55,672
+As I said, these three are important.
+
+214
+00:22:57,051 --> 00:23:04,432
+Be able to apply the integral test, the function must be continuous, positive, and decreasing.
+
+215
+00:23:05,771 --> 00:23:13,331
+So why does it have to be decreasing? It must be decreasing so that all these rectangles lie below the curve.
+
+216
+00:23:14,791 --> 00:23:19,451
+If it was not completely decreasing, we wouldn't have such a situation over here.
+
+217
+00:23:21,731 --> 00:23:23,731
+Okay, let's see the...
+
+218
+00:23:27,443 --> 00:23:28,203
+P-series.
+
+219
+00:23:30,364 --> 00:23:31,243
+In general,
+
+220
+00:23:32,263 --> 00:23:33,223
+at the beginning,
+
+221
+00:23:33,344 --> 00:23:35,423
+we have seen some n equals 1 to infinity,
+
+222
+00:23:35,523 --> 00:23:36,104
+1 over P.
+
+223
+00:23:36,624 --> 00:23:38,644
+We say that it diverges to infinity.
+
+224
+00:23:39,104 --> 00:23:40,483
+Then we look at n equals 1 to infinity,
+
+225
+00:23:40,604 --> 00:23:41,403
+1 over n squared.
+
+226
+00:23:41,783 --> 00:23:42,884
+We say that it converges.
+
+227
+00:23:43,943 --> 00:23:45,543
+So here in general,
+
+228
+00:23:45,963 --> 00:23:46,624
+these series,
+
+229
+00:23:46,943 --> 00:23:48,144
+some n equals 1 to infinity,
+
+230
+00:23:48,283 --> 00:23:49,483
+1 over n to the power of P
+
+231
+00:23:49,483 --> 00:23:50,584
+are called P-series.
+
+232
+00:23:51,324 --> 00:23:52,663
+So what we have seen so far
+
+233
+00:23:52,663 --> 00:23:54,324
+is that when P is equal to 1,
+
+234
+00:23:55,124 --> 00:23:56,384
+the series diverges.
+
+235
+00:23:56,384 --> 00:23:57,543
+When P is equal to 2,
+
+236
+00:23:57,683 --> 00:23:58,543
+the series converges.
+
+237
+00:23:59,243 --> 00:23:59,783
+So in general,
+
+238
+00:23:59,884 --> 00:24:02,023
+can we determine whether it converges or diverges?
+
+239
+00:24:02,163 --> 00:24:02,563
+Let's see.
+
+240
+00:24:02,723 --> 00:24:03,644
+If P is bigger than 1,
+
+241
+00:24:05,763 --> 00:24:07,203
+P is bigger than 1,
+
+242
+00:24:07,844 --> 00:24:08,324
+then
+
+243
+00:24:08,324 --> 00:24:11,503
+we can look at this function.
+
+244
+00:24:12,463 --> 00:24:13,824
+So 1 over n to the power of P,
+
+245
+00:24:13,903 --> 00:24:14,943
+we can look at 1,
+
+246
+00:24:15,084 --> 00:24:16,803
+fx equals 1 over x to the power of P.
+
+247
+00:24:16,884 --> 00:24:18,503
+If P is a number bigger than 1,
+
+248
+00:24:18,923 --> 00:24:20,723
+then this function is going to be decreasing.
+
+249
+00:24:21,743 --> 00:24:22,844
+So it's going to be a positive,
+
+250
+00:24:23,723 --> 00:24:24,124
+continuous,
+
+251
+00:24:24,443 --> 00:24:25,903
+and decreasing function of x.
+
+252
+00:24:26,384 --> 00:24:28,543
+So the theorem integral test says that
+
+253
+00:24:28,543 --> 00:24:30,703
+the series and the improper integral
+
+254
+00:24:30,703 --> 00:24:32,523
+either both converge or both diverge.
+
+255
+00:24:32,584 --> 00:24:35,203
+So to determine whether the series converges or diverges,
+
+256
+00:24:35,263 --> 00:24:36,023
+we can look at this
+
+257
+00:24:36,023 --> 00:24:37,923
+improper integral from 1 to infinity,
+
+258
+00:24:38,443 --> 00:24:39,624
+1 over x to power P dx.
+
+259
+00:24:39,624 --> 00:24:41,923
+So the series of the series of the series of the series of the series of the series of the series of the series of the series of the series of the series of the series of the series of the series of the series of the series of the series of the series of the series of the series of the series of the series of the series of the series of the series of the series of the series of the series of the series of the series of the series of the series of the series of the series of the series of the series of the series of the series of the series of the series of the series of the series of the series of the series of the series of the series of the series of the series of the series of the series of the series of the series of the series of the series of the series of the series of the series of the series of the series of the series of the series of the series of the series of the series of the series of the series of the series of the series of the series of the series of the series of the series of the series of the
+
+260
+00:24:45,044 --> 00:24:53,964
+So, what is this integral? So, 1 over x to power p is x to power minus p. Its integral is x to power minus p plus 1 over minus p plus 1.
+
+261
+00:25:03,508 --> 00:25:12,248
+That's the limit as b goes to infinity, b approaches infinity of this expression wrong from one to one, one to b.
+
+262
+00:25:13,107 --> 00:25:17,367
+So here, one minus p in the denominator, that's a constant taken out.
+
+263
+00:25:18,208 --> 00:25:28,488
+Then when x is b, we get b to the power minus b plus one, which is the same as one over b to the power p minus one, minus when x is one, we get one here.
+
+264
+00:25:28,488 --> 00:25:38,867
+So as the limit of this as b approaches infinity, now, since p is a number bigger than one, since p is bigger than one, this p minus one is going to be positive.
+
+265
+00:25:39,548 --> 00:25:47,087
+If b minus one is positive in the denominator here, as b approaches infinity, this b to the power p minus one is going to approach infinity.
+
+266
+00:25:47,268 --> 00:25:50,567
+So this term over here, one over b to the power p minus one is going to approach zero.
+
+267
+00:25:50,567 --> 00:25:59,548
+So we will get the limit of this is going to be one over one minus p times zero minus one, which is going to be minus this.
+
+268
+00:25:59,788 --> 00:26:00,827
+So one over p minus one.
+
+269
+00:26:02,448 --> 00:26:05,228
+So the improper integral is equal to one over p minus one.
+
+270
+00:26:05,288 --> 00:26:09,688
+It converges since the integral converge, the series also converge.
+
+271
+00:26:11,688 --> 00:26:13,448
+But we need to be careful here.
+
+272
+00:26:13,587 --> 00:26:18,548
+So in this example, for example, we said that the integral converges to two.
+
+273
+00:26:18,548 --> 00:26:21,268
+It doesn't mean that the series converges to two as well.
+
+274
+00:26:21,468 --> 00:26:25,587
+It just says that the series converges, but we don't know what the sum of the series is equal to.
+
+275
+00:26:25,928 --> 00:26:28,768
+So here the integral converges to this number.
+
+276
+00:26:29,188 --> 00:26:32,028
+It doesn't mean that the series also converges to this number.
+
+277
+00:26:32,548 --> 00:26:34,168
+We just say that the series converges.
+
+278
+00:26:34,228 --> 00:26:35,367
+We don't know what the sum is equal.
+
+279
+00:26:37,827 --> 00:26:39,847
+On the other hand, if p is less than one.
+
+280
+00:26:41,688 --> 00:26:44,228
+If p is less than one, then one minus p is bigger than zero.
+
+281
+00:26:48,115 --> 00:26:55,756
+Then this integral, again we will get this, the same integral.
+
+282
+00:26:56,195 --> 00:27:02,016
+But in this case, this 1 over b to the power p plus 1, let's write it like this, b to the power 1 minus p.
+
+283
+00:27:02,395 --> 00:27:06,016
+If p is less than 1, then this 1 minus p is going to be positive.
+
+284
+00:27:06,615 --> 00:27:10,955
+So when b approaches infinity, this term over here is going to approach infinity.
+
+285
+00:27:11,415 --> 00:27:12,955
+So the limit of this is going to be infinity.
+
+286
+00:27:13,195 --> 00:27:14,296
+So the series will diverge.
+
+287
+00:27:14,296 --> 00:27:18,296
+If p is 1, we have already seen that, this is diharmonic series.
+
+288
+00:27:19,796 --> 00:27:20,816
+It diverges.
+
+289
+00:27:22,435 --> 00:27:31,996
+Therefore, we conclude that, we conclude that, if p is less than 1 or if p is equal to 1, the series diverges.
+
+290
+00:27:32,576 --> 00:27:38,056
+If p is bigger than 1, p is bigger than 1, the series converges.
+
+291
+00:27:38,056 --> 00:27:45,975
+In general, p series over here converges if p is bigger than 1, diverges if p is less than or equal to 1.
+
+292
+00:27:46,615 --> 00:27:49,096
+That's what we conclude about p series in general.
+
+293
+00:27:49,096 --> 00:28:19,076
+So the series will be done.
+
+294
+00:27:55,571 --> 00:27:57,251
+For example, look at this series.
+
+295
+00:27:58,011 --> 00:27:58,811
+Another example.
+
+296
+00:27:59,551 --> 00:28:01,991
+N equals 1 to infinity, 1 over n squared plus 1.
+
+297
+00:28:02,851 --> 00:28:03,831
+This is another P series.
+
+298
+00:28:05,011 --> 00:28:07,151
+But when we look at 1 over,
+
+299
+00:28:07,391 --> 00:28:09,651
+the nth term is 1 over n squared plus 1.
+
+300
+00:28:09,831 --> 00:28:13,091
+Now look at the function fx, 1 over x squared plus 1.
+
+301
+00:28:13,551 --> 00:28:16,471
+Does it satisfy the conditions of the integral test?
+
+302
+00:28:16,571 --> 00:28:16,771
+Yes.
+
+303
+00:28:17,271 --> 00:28:18,151
+It's a positive function.
+
+304
+00:28:19,371 --> 00:28:21,851
+Whatever x is, when x is a positive number,
+
+305
+00:28:21,931 --> 00:28:22,711
+this is always positive.
+
+306
+00:28:23,311 --> 00:28:24,511
+It is a continuous function,
+
+307
+00:28:24,511 --> 00:28:25,571
+and it is decreasing.
+
+308
+00:28:26,071 --> 00:28:27,631
+1 over x squared plus 1.
+
+309
+00:28:27,991 --> 00:28:29,071
+As x increases,
+
+310
+00:28:30,431 --> 00:28:32,971
+the denominator will increase
+
+311
+00:28:32,971 --> 00:28:34,271
+and the function is going to decrease.
+
+312
+00:28:35,991 --> 00:28:39,351
+So it satisfies the contingence of the integral test.
+
+313
+00:28:39,991 --> 00:28:43,751
+So to determine whether the series converges or diverges,
+
+314
+00:28:43,811 --> 00:28:45,171
+we can look at the improper integral.
+
+315
+00:28:45,711 --> 00:28:48,611
+From 1 to infinity, 1 over x squared plus 1 dx.
+
+316
+00:28:49,151 --> 00:28:51,911
+Now integral of 1 over x squared plus 1 is arctangent x.
+
+317
+00:28:51,911 --> 00:28:54,791
+from 1 to b as b approaches infinity.
+
+318
+00:28:55,651 --> 00:28:57,871
+So it's arctangent b minus arctangent 1.
+
+319
+00:28:58,211 --> 00:28:59,731
+And as b approaches infinity,
+
+320
+00:29:00,951 --> 00:29:03,011
+arctangent b approaches pi over 2.
+
+321
+00:29:04,611 --> 00:29:06,891
+And arctangent 1 is pi over 4.
+
+322
+00:29:07,071 --> 00:29:08,131
+So we get pi over 4.
+
+323
+00:29:08,131 --> 00:29:11,411
+Which means that this improper integral converges.
+
+324
+00:29:11,671 --> 00:29:13,311
+It converges to this number pi over 4.
+
+325
+00:29:13,711 --> 00:29:14,151
+Therefore,
+
+326
+00:29:14,971 --> 00:29:15,871
+we conclude that
+
+327
+00:29:15,871 --> 00:29:17,911
+this series also converges.
+
+328
+00:29:17,911 --> 00:29:18,911
+and we'll see you next time.
+
+329
+00:29:18,911 --> 00:29:38,911
+So we'll see you next time.
+
+330
+00:29:25,460 --> 00:29:29,079
+Alright, we are skipping the error estimation part.
+
+331
+00:29:30,299 --> 00:29:31,920
+Okay, that's it from integral test.
+
+332
+00:29:40,243 --> 00:29:42,043
+Okay, what is next? Comparison test.
+
+333
+00:29:58,451 --> 00:30:00,291
+Evet, o da comparisim test say?
+
+334
+00:30:00,291 --> 00:30:01,172
+Now,
+
+335
+00:30:04,051 --> 00:30:10,612
+so far we have seen two infinite families of two infinite families of
+
+336
+00:30:12,211 --> 00:30:18,932
+infinite series for which the characteristic is completely determined.
+
+337
+00:30:18,932 --> 00:30:20,291
+What are those two?
+
+338
+00:30:20,291 --> 00:30:23,491
+One is geometric series, the other is P series.
+
+339
+00:30:23,491 --> 00:30:28,771
+So geometric series are the series of the form some a r to the power n.
+
+340
+00:30:28,771 --> 00:30:37,652
+So they converge geometric series converge if r is between minus one and one and it diverges.
+
+341
+00:30:37,652 --> 00:30:39,572
+Otherwise, how about P series?
+
+342
+00:30:39,572 --> 00:30:45,092
+P series are the series of the form some any sum one over n to the power p.
+
+343
+00:30:45,092 --> 00:30:50,372
+They converge if p is bigger than one, they diverge if p is less than or equal to one.
+
+344
+00:30:53,491 --> 00:31:05,491
+So now, making use of this we can compare other series to this and determine whether they're convergent or not.
+
+345
+00:31:05,491 --> 00:31:07,491
+So,
+
+346
+00:31:12,468 --> 00:31:13,468
+Let's say...
+
+347
+00:31:17,203 --> 00:31:19,104
+Let me show an example, actually.
+
+348
+00:31:28,211 --> 00:31:29,751
+I mean, the idea is simple.
+
+349
+00:31:31,031 --> 00:31:32,071
+The idea is simple.
+
+350
+00:31:54,708 --> 00:32:24,708
+1 n'ı 1'ı
+
+351
+00:32:24,708 --> 00:33:54,708
+1'ı 1'
+
+352
+00:33:54,708 --> 00:34:03,388
+These are even smaller than them. Therefore, this must also converge since it contains only positive terms.
+
+353
+00:34:04,327 --> 00:34:10,528
+This is going on the positive terms. It's monotonic. The sequence of partial sums is monotonic and it's bounded.
+
+354
+00:34:11,387 --> 00:34:18,648
+Whatever the sum of this series is, this sum of this one is going to be smaller than that. Since it is bounded, it must also converge.
+
+355
+00:34:18,648 --> 00:34:26,028
+So, that's what the comparison test says.
+
+356
+00:34:26,768 --> 00:34:36,867
+Now, another example is look at this.
+
+357
+00:34:37,048 --> 00:34:39,168
+1 over n equals 1 to infinity.
+
+358
+00:34:40,228 --> 00:34:43,528
+1 over n minus.
+
+359
+00:34:43,528 --> 00:34:47,288
+I'm not going to start one from.
+
+360
+00:34:49,648 --> 00:34:49,867
+Yeah.
+
+361
+00:34:49,867 --> 00:35:11,648
+1 over n equals.
+
+362
+00:35:13,204 --> 00:35:15,524
+Let's look at this, 1 over root n minus 1.
+
+363
+00:35:17,764 --> 00:35:22,484
+So this is, this is not a t-series.
+
+364
+00:35:24,644 --> 00:35:28,564
+What is this? When n is 2, I start n from 2.
+
+365
+00:35:30,084 --> 00:35:37,923
+1 over 1 minus, when n is 3, 1 over root 3 minus 1 plus 1 over root 4 minus 1.
+
+366
+00:35:37,923 --> 00:35:42,724
+Sorry, this is when n is 2.
+
+367
+00:35:45,524 --> 00:35:49,044
+When n is 2, we get root 2 minus 1. Sorry, root 4 minus 1.
+
+368
+00:35:50,324 --> 00:35:51,443
+Let me write it like that.
+
+369
+00:35:52,644 --> 00:35:54,403
+root 5 minus 1 and so on.
+
+370
+00:35:56,804 --> 00:35:58,804
+Now, when we look at this, there you go.
+
+371
+00:35:58,804 --> 00:36:01,684
+What about that?
+
+372
+00:36:02,804 --> 00:36:07,764
+This is 1 over root 2 plus 1 over root 3 plus 1 over root 4.
+
+373
+00:36:07,923 --> 00:36:11,204
+plus 1 over root 5 and so on.
+
+374
+00:36:12,884 --> 00:36:16,804
+Now, when we compare these two series term by term.
+
+375
+00:36:18,244 --> 00:36:20,244
+First of all, what do we know about this?
+
+376
+00:36:21,923 --> 00:36:28,244
+This is a p-series, p-series with p equals, what is this?
+
+377
+00:36:28,244 --> 00:36:31,443
+1 over n to the power 1 half, right?
+
+378
+00:36:31,443 --> 00:36:33,923
+This is 1 over n to the power 1 half.
+
+379
+00:36:33,923 --> 00:36:36,484
+So, p equals 1 half.
+
+380
+00:36:37,204 --> 00:36:38,004
+Which is less than 1.
+
+381
+00:36:39,443 --> 00:36:40,244
+So, it diverges.
+
+382
+00:36:40,244 --> 00:36:51,124
+So, it's a p-series.
+
+383
+00:36:43,827 --> 00:36:47,108
+Evet, bu kadar da bir kere görebilecek.
+
+384
+00:36:47,108 --> 00:36:50,387
+Bir kere görebilecek, bir kere görebilecek.
+
+385
+00:36:50,387 --> 00:36:51,987
+Bu bir kere görebilecek.
+
+386
+00:36:52,547 --> 00:37:13,668
+Bir kere görebilecek.
+
+387
+00:37:13,827 --> 00:37:14,228
+Rout 5-1
+
+388
+00:37:43,827 --> 00:37:55,307
+This is what it says. Let's say we have three series with non-negative terms. This is important. There are no negative terms in the series.
+
+389
+00:37:56,467 --> 00:38:03,228
+Suppose that for some integer n, for all n after the n-th term, this is satisfied.
+
+390
+00:38:05,288 --> 00:38:09,827
+Now, if for example, look at this part first.
+
+391
+00:38:09,827 --> 00:38:21,467
+If we know that some of cn converges, now an's are smaller than cn's. If some of cn converges, then some of n also converges.
+
+392
+00:38:21,768 --> 00:38:23,567
+It's like the first example I showed.
+
+393
+00:38:24,467 --> 00:38:34,447
+On the other hand, if we know that some of dn diverges, an's are bigger than dn's. If you know that some of dn diverges, then some of n must also diverge.
+
+394
+00:38:34,568 --> 00:38:36,007
+It's the second example over here.
+
+395
+00:38:36,007 --> 00:38:57,587
+So that's what the comparison test says, basically.
+
+396
+00:38:48,083 --> 00:38:53,203
+For example, when we look at this series over here, 5 over 5n minus 1.
+
+397
+00:38:55,223 --> 00:39:03,864
+Now the nth term over here, 5 over 5n minus 1, can be written as 1 over n minus 1 over 5, which is bigger than 1 over n, because the denominator is smaller here.
+
+398
+00:39:04,303 --> 00:39:05,384
+This is bigger than 1 over n.
+
+399
+00:39:06,403 --> 00:39:15,023
+Well, we know that the sum of 1 over n diverges to infinity is the harmonic series, so this is even bigger than that.
+
+400
+00:39:15,864 --> 00:39:17,663
+So this diverges to infinity as well.
+
+401
+00:39:18,083 --> 00:39:20,083
+Um...
+
+402
+00:39:26,579 --> 00:39:38,559
+Let's look at this example. 5 plus 3, 2 over 3 plus 1 over 7 plus 1 plus this goes like this. Ignore the first four terms, just compare the rest.
+
+403
+00:39:39,159 --> 00:39:47,360
+So this is like 1 over 2 plus root 1, 1 over 4 plus root 2, 1 over 8 plus root 3. In general, 1 over 2 to the power n plus root n.
+
+404
+00:39:48,139 --> 00:39:50,599
+When we look at this, 1 over 2 to the power n plus root n.
+
+405
+00:40:00,596 --> 00:40:07,076
+Bu term over here, 1 over 2 to the power n plus root n is smaller than 1 over 2 to the power n, right?
+
+406
+00:40:07,516 --> 00:40:12,016
+Because this one has a bigger denominator, so this is smaller than 1 over 2 to the power n.
+
+407
+00:40:12,016 --> 00:40:14,315
+So in general, sum over here.
+
+408
+00:40:18,099 --> 00:40:40,079
+1 over 2 plus root 1 is less than 1 over 2. 1 over 4 plus root 2 is less than 1 over 4. 1 over 8 plus root is less than 1 over 8. And this is geometric series. This is a geometric series with r equals 1 over 2. It converges. So this is even smaller than that. Therefore, this must also converge. That's how we make use of the comparison test.
+
+409
+00:40:40,079 --> 00:40:45,819
+Sometimes the comparison test is useless.
+
+410
+00:40:47,360 --> 00:40:53,039
+But there's another test called the limit comparison test. Sometimes useful.
+
+411
+00:40:59,900 --> 00:41:04,819
+But before moving to the limit comparison test, I want to give a break.
+
+412
+00:41:05,920 --> 00:41:09,659
+Let's give a 10 minutes break. What is it? 1458.
+
+413
+00:41:10,079 --> 00:41:15,699
+So 12 minutes break. We will continue at 1410.
+
+414
+00:41:16,860 --> 00:41:19,719
+Okay? I give 12 minutes break.
+
+415
+00:41:21,079 --> 00:41:23,500
+Hocam ara verdiysek bir şey sorabilir miyim?
+
+416
+00:41:25,179 --> 00:41:25,880
+Sorabilirsin.
+
+417
+00:41:26,819 --> 00:41:29,019
+Hani Bonded diyoruz ya.
+
+418
+00:41:29,360 --> 00:41:30,360
+[öğrenci], sen misin?
+
+419
+00:41:30,840 --> 00:41:32,259
+Yok. Ben [öğrenci].
+
+420
+00:41:32,259 --> 00:41:33,340
+[öğrenci].
+
+421
+00:41:34,500 --> 00:41:38,340
+Bonded diyoruz ya. Ben onu tam olarak idrak edemedim ne olduğunu.
+
+422
+00:41:38,339 --> 00:41:40,759
+Genelde yakın sak olduğunda diyoruz ama.
+
+423
+00:41:41,299 --> 00:41:44,219
+Biraz sesin az geliyor bana. Benim sesim mi kısır?
+
+424
+00:41:44,480 --> 00:41:45,119
+Sesim kısır.
+
+425
+00:41:46,799 --> 00:41:47,559
+Evet tekrar edin.
+
+426
+00:41:48,059 --> 00:41:53,059
+Bonded diyoruz ya. Genelde yakın sak olduğunda diyoruz ama ne olduğunu tam olarak idrak edemedim.
+
+427
+00:41:53,259 --> 00:41:54,000
+Bonded mı?
+
+428
+00:41:54,420 --> 00:41:54,639
+Evet.
+
+429
+00:41:54,819 --> 00:41:55,259
+Sınırlı.
+
+430
+00:41:55,759 --> 00:41:56,639
+Üstten sınırlı.
+
+431
+00:41:57,319 --> 00:41:59,500
+Yani belli bir sayıyı geçmiyor hiç.
+
+432
+00:41:59,500 --> 00:42:03,420
+Öyle bir sayı var ki
+
+433
+00:42:03,420 --> 00:42:04,639
+O sayıyı hiç geçmiyor.
+
+434
+00:42:04,639 --> 00:42:06,559
+O sayıyla sınırlı yukarıda.
+
+435
+00:42:07,860 --> 00:42:11,119
+Anladım. O yüzden sürekli yakın sakla beraber kullanıyoruz.
+
+436
+00:42:11,279 --> 00:42:12,759
+Yani işte
+
+437
+00:42:12,759 --> 00:42:16,360
+Monotonic sequence teorem
+
+438
+00:42:16,360 --> 00:42:18,599
+Geçen hafta gördüğümüz teorem diyor ki
+
+439
+00:42:18,599 --> 00:42:20,900
+Biz bir şey monotonsa
+
+440
+00:42:20,900 --> 00:42:22,980
+Hem monoton hem sınırlıysa yakın saktır diyor.
+
+441
+00:42:23,119 --> 00:42:25,239
+Yani bir dizi var elimde.
+
+442
+00:42:25,719 --> 00:42:27,679
+Dizinin terimleri artıyor artıyor artıyor artıyor.
+
+443
+00:42:27,679 --> 00:42:29,679
+Ve aynı zamanda biliyorum ki
+
+444
+00:42:29,679 --> 00:42:30,980
+Belli bir sayı hiç geçmiyor.
+
+445
+00:42:32,480 --> 00:42:33,380
+Ya artıyor artıyor ama
+
+446
+00:42:33,380 --> 00:42:34,659
+Sonsuza kadar gitmiyor yani.
+
+447
+00:42:36,019 --> 00:42:36,460
+Sınırlı.
+
+448
+00:42:37,139 --> 00:42:38,259
+Belli bir sınırı hiç geçmiyor.
+
+449
+00:42:38,799 --> 00:42:40,259
+O zaman yakın sak olmak zorunda.
+
+450
+00:42:41,440 --> 00:42:43,099
+Bir bin bir sayıya gitmek zorunda.
+
+451
+00:42:43,159 --> 00:42:44,039
+Ulaşmak zorunda yani.
+
+452
+00:42:44,920 --> 00:42:45,719
+Teorem bunu söylüyordu.
+
+453
+00:42:46,579 --> 00:42:47,340
+Tamamdır hocam.
+
+454
+00:42:51,599 --> 00:42:52,900
+Slide değil bunlar.
+
+455
+00:42:52,980 --> 00:42:53,679
+Bunlar kitap.
+
+456
+00:42:54,920 --> 00:42:55,679
+Yani kitap
+
+457
+00:42:55,679 --> 00:42:58,619
+İlk hafta söylemiştim.
+
+458
+00:42:58,739 --> 00:42:59,539
+Thomas Kalkulus
+
+459
+00:42:59,539 --> 00:43:01,079
+12. baskısı bu.
+
+460
+00:43:02,159 --> 00:43:02,960
+Thomas Kalkulus
+
+461
+00:43:02,960 --> 00:43:04,279
+Şu tepede yazıyor.
+
+462
+00:43:04,400 --> 00:43:05,880
+Thomas Kalkulus 12th edition.
+
+463
+00:43:07,599 --> 00:43:08,639
+Tepede yazıyor.
+
+464
+00:43:09,759 --> 00:43:10,199
+Direkt yani
+
+465
+00:43:10,199 --> 00:43:11,719
+Google'a yazıp aratırsanız
+
+466
+00:43:11,719 --> 00:43:12,460
+Karşınıza çıkar.
+
+467
+00:43:13,199 --> 00:43:14,199
+Yani PDF'i mevcut.
+
+468
+00:43:15,139 --> 00:43:16,279
+İnternette mevcut bu PDF.
+
+469
+00:43:16,279 --> 00:43:20,900
+[öğrenci]'in sorusuna bakayım.
+
+470
+00:43:21,019 --> 00:43:22,400
+Let's say your first example
+
+471
+00:43:22,400 --> 00:43:22,699
+AN
+
+472
+00:43:22,699 --> 00:43:24,319
+1 over
+
+473
+00:43:24,319 --> 00:43:24,659
+N
+
+474
+00:43:24,659 --> 00:43:28,159
+2 power 1 half.
+
+475
+00:43:28,440 --> 00:43:30,099
+And let's say your second example
+
+476
+00:43:30,099 --> 00:43:30,619
+BN
+
+477
+00:43:30,619 --> 00:43:32,000
+1 over N 2 power 1 half
+
+478
+00:43:32,000 --> 00:43:32,679
+minus 1.
+
+479
+00:43:32,679 --> 00:43:34,960
+Anne Benedenk
+
+480
+00:43:34,960 --> 00:43:35,380
+[öğrenci]
+
+481
+00:43:35,380 --> 00:43:36,079
+We can say that
+
+482
+00:43:36,079 --> 00:43:36,860
+and you know
+
+483
+00:43:36,860 --> 00:43:37,719
+AN is divergent
+
+484
+00:43:37,719 --> 00:43:38,059
+so
+
+485
+00:43:38,059 --> 00:43:39,440
+BN is bigger
+
+486
+00:43:39,440 --> 00:43:40,420
+than AN
+
+487
+00:43:40,420 --> 00:43:41,759
+then it should be divergent
+
+488
+00:43:41,759 --> 00:43:42,360
+but what if
+
+489
+00:43:42,360 --> 00:43:43,119
+our BN is
+
+490
+00:43:43,119 --> 00:43:43,500
+1 over
+
+491
+00:43:43,500 --> 00:43:44,119
+4 power 1 half
+
+492
+00:43:44,119 --> 00:43:44,599
+plus 1
+
+493
+00:43:44,599 --> 00:43:46,159
+but it's
+
+494
+00:43:46,159 --> 00:43:46,639
+divergent
+
+495
+00:43:46,639 --> 00:43:47,759
+again am I wrong?
+
+496
+00:43:48,239 --> 00:43:48,739
+You're right
+
+497
+00:43:48,739 --> 00:43:50,920
+[öğrenci]
+
+498
+00:43:50,920 --> 00:43:53,619
+it also diverges
+
+499
+00:43:53,619 --> 00:43:54,519
+that's what
+
+500
+00:43:54,519 --> 00:43:55,799
+limit comparison test is for.
+
+501
+00:43:57,719 --> 00:43:58,079
+Okay
+
+502
+00:43:58,079 --> 00:44:00,319
+using the comparison test
+
+503
+00:44:00,319 --> 00:44:00,980
+we cannot prove
+
+504
+00:44:00,980 --> 00:44:01,719
+that it's divergent
+
+505
+00:44:01,719 --> 00:44:02,679
+but making use of
+
+506
+00:44:02,679 --> 00:44:03,759
+the limit comparison test
+
+507
+00:44:03,759 --> 00:44:04,719
+we will be able to show
+
+508
+00:44:04,719 --> 00:44:06,039
+that this is divergent
+
+509
+00:44:06,039 --> 00:44:07,000
+as well.
+
+510
+00:44:09,299 --> 00:44:09,940
+Aradan sonra
+
+511
+00:44:09,940 --> 00:44:12,039
+bu örneği de
+
+512
+00:44:12,039 --> 00:44:15,139
+yapmış olacağız.
+
+513
+00:44:18,260 --> 00:44:19,280
+Any other question?
+
+514
+00:44:23,059 --> 00:44:25,539
+Okay, let's give a break, then we'll continue.
+
+515
+00:55:07,891 --> 00:55:11,351
+Okay, let's continue with the limit comparison test.
+
+516
+00:55:18,291 --> 00:55:18,751
+Basically,
+
+517
+00:55:23,347 --> 00:55:28,967
+suppose that an is bigger than zero, bn is bigger than zero, for all n bigger than, again, there are no negative terms.
+
+518
+00:55:32,563 --> 00:55:38,884
+In this case, we don't allow 0 to be a term because we are going to, we are, we will look at the quotient.
+
+519
+00:55:39,303 --> 00:55:40,763
+So, we don't want to divide by 0.
+
+520
+00:55:41,643 --> 00:55:42,963
+So, all terms are positive.
+
+521
+00:55:43,163 --> 00:55:43,943
+We have two series.
+
+522
+00:55:44,143 --> 00:55:46,864
+We look at the limit of their quotient, an over bn.
+
+523
+00:55:47,983 --> 00:55:50,603
+But the limit of an over bn as an approach is infinity.
+
+524
+00:55:50,903 --> 00:55:54,344
+If that's a constant number, a c, which is bigger than 0.
+
+525
+00:55:54,943 --> 00:55:55,884
+Here c is a number.
+
+526
+00:55:55,884 --> 00:56:08,643
+Then, this two series, some of an and some of bn have the same characteristic, which means either they both converge or they both diverge.
+
+527
+00:56:10,203 --> 00:56:21,344
+If the limit is 0, limit is 0 means, limit of a quotient is 0 means an is slower than bn.
+
+528
+00:56:21,344 --> 00:56:28,423
+So, if some of bn converges, we conclude that some of an also converges.
+
+529
+00:56:29,163 --> 00:56:38,723
+On the other hand, if limit an over bn is infinity, it means an is, an grows bigger than bn.
+
+530
+00:56:39,203 --> 00:56:44,483
+When an is large, so this means when an is large, an's are bigger than bn's.
+
+531
+00:56:44,923 --> 00:56:49,143
+So, if some of bn diverges, we say, we conclude that some of an also diverges.
+
+532
+00:56:49,143 --> 00:56:54,423
+So, it's like comparison test looking at the comparison test in a different way.
+
+533
+00:56:55,183 --> 00:56:57,303
+So, again, let's understand these two again.
+
+534
+00:56:57,963 --> 00:56:59,263
+So, what does this mean?
+
+535
+00:56:59,483 --> 00:57:01,923
+Limit an over bn is 0 means what?
+
+536
+00:57:02,163 --> 00:57:10,143
+It means that when an is too large, when an grows, an over bn is going to get very small.
+
+537
+00:57:10,423 --> 00:57:14,063
+An over bn is very small means an is much smaller than bn.
+
+538
+00:57:14,943 --> 00:57:18,083
+So, if an is smaller than bn, what does that mean?
+
+539
+00:57:18,083 --> 00:57:24,483
+If some of bn converges, an's are even smaller, we can conclude that some of an also converges.
+
+540
+00:57:25,043 --> 00:57:32,643
+On the other hand, if this is infinity, it means that when an is too large, an's are going to be much bigger than bn's.
+
+541
+00:57:33,283 --> 00:57:38,763
+If an's are bigger than bn's, if some of bn diverges to infinity, an's are even bigger,
+
+542
+00:57:39,223 --> 00:57:41,663
+we will conclude that some of an also diverges to infinity.
+
+543
+00:57:41,663 --> 00:58:07,663
+Thank you.
+
+544
+00:57:46,132 --> 00:57:48,132
+[öğrenci]'in sorunu başlıyor.
+
+545
+00:57:50,132 --> 00:57:54,132
+1 over n to the power of 1 health plus 1.
+
+546
+00:58:14,003 --> 00:58:44,003
+Bu n plus 1.
+
+547
+00:58:44,003 --> 00:58:46,003
+In terms of the comparison test.
+
+548
+00:58:46,003 --> 00:58:50,003
+It's like saying that this is smaller than infinity.
+
+549
+00:58:50,003 --> 00:58:52,003
+But it may still be infinity.
+
+550
+00:58:52,003 --> 00:58:54,003
+Or it may be.
+
+551
+00:58:54,003 --> 00:58:56,003
+It may be convergent.
+
+552
+00:58:56,003 --> 00:58:58,003
+But the limit comparison test is useful.
+
+553
+00:58:58,003 --> 00:59:00,003
+When we look at the quotient.
+
+554
+00:59:00,003 --> 00:59:02,003
+So let's say a n is this.
+
+555
+00:59:02,003 --> 00:59:04,003
+1 over.
+
+556
+00:59:04,003 --> 00:59:06,003
+Rute n plus 1.
+
+557
+00:59:06,003 --> 00:59:08,003
+And b n is this.
+
+558
+00:59:08,003 --> 00:59:10,003
+1 over root n.
+
+559
+00:59:10,003 --> 00:59:12,003
+I want to compare these two.
+
+560
+00:59:12,003 --> 00:59:14,003
+I cannot make direct comparison.
+
+561
+00:59:14,003 --> 00:59:16,003
+Instead of that.
+
+562
+00:59:16,003 --> 00:59:18,003
+We make limit comparison.
+
+563
+00:59:18,003 --> 00:59:20,003
+Then we look at a n over b n.
+
+564
+00:59:20,003 --> 00:59:22,003
+What do we get?
+
+565
+00:59:22,003 --> 00:59:24,003
+1 over.
+
+566
+00:59:24,003 --> 00:59:26,003
+Rute n plus 1.
+
+567
+00:59:26,003 --> 00:59:28,003
+Over.
+
+568
+00:59:28,003 --> 00:59:30,003
+1 over root n.
+
+569
+00:59:30,003 --> 00:59:58,003
+root n.
+
+570
+00:59:58,003 --> 00:59:59,003
+n.
+
+571
+00:59:59,003 --> 01:00:56,003
+root n.
+
+572
+01:00:40,340 --> 01:01:05,380
+Bu, bu test bu, bu
+
+573
+01:01:11,380 --> 01:01:17,059
+n is 3 to power n, b n is 5 to power n, let's say limit infinity n over b n will be 0.
+
+574
+01:01:23,260 --> 01:01:31,579
+n over b n will be 0, when limit n is infinity but 3 power n isn't divergent, isn't it divergent?
+
+575
+01:01:35,635 --> 01:01:39,956
+Sum of 3 to the power n, that's divergent. Sum of 5 to the power n, that's also divergent.
+
+576
+01:01:41,155 --> 01:01:42,076
+They're both divergent.
+
+577
+01:01:46,804 --> 01:01:48,483
+The limit is going to be zero.
+
+578
+01:01:52,532 --> 01:01:58,372
+Ama 5'e kısım ve ayrıca, bu konularını işleyeceğiz.
+
+579
+01:02:01,972 --> 01:02:07,512
+You cannot make use of this because sum of BN does not converge. Sum of 5 to the power N diverges.
+
+580
+01:02:09,752 --> 01:02:20,352
+It says that if sum of BN converges, if this is 0 and sum of BN converges, then sum of N also converges.
+
+581
+01:02:21,652 --> 01:02:28,392
+And the third case says that if the limit is infinity and sum of BN diverges, then sum of N also diverges.
+
+582
+01:02:28,392 --> 01:02:32,232
+So let me be more precise on this.
+
+583
+01:02:36,275 --> 01:02:41,995
+Let me work on the comparison test and limit comparison.
+
+584
+01:03:03,027 --> 01:03:14,467
+Bu, bu
+
+585
+01:03:23,251 --> 01:03:25,931
+An is less than a gluk BN, let's say.
+
+586
+01:03:27,371 --> 01:03:30,731
+If some BN converges,
+
+587
+01:03:33,092 --> 01:03:36,211
+then some An converges.
+
+588
+01:03:53,300 --> 01:04:02,300
+ve, if sum of n converges, then sum of n converges.
+
+589
+01:04:05,556 --> 01:04:19,556
+If some of the n diverges on the other hand, we cannot say anything about some of n.
+
+590
+01:04:19,556 --> 01:04:28,556
+In this case, if some of the n diverges to infinity, some of the n diverges to infinity,
+
+591
+01:04:28,556 --> 01:04:38,556
+again note that here we are talking about series with a n, b n, a n, a n bigger than x0, b n bigger than x0, okay?
+
+592
+01:04:38,556 --> 01:04:41,556
+We are talking about series with non-negative terms.
+
+593
+01:04:41,556 --> 01:04:46,556
+So if some of the n diverges, it diverges to infinity.
+
+594
+01:04:46,556 --> 01:04:49,556
+Well, a n's are smaller than that.
+
+595
+01:04:49,556 --> 01:04:53,556
+It may still diverge to infinity or it may be finite. It may converge.
+
+596
+01:04:53,556 --> 01:04:56,556
+We cannot say anything about some of the n in this case.
+
+597
+01:04:56,556 --> 01:05:02,556
+So the other case, if a n's are bigger than b n's.
+
+598
+01:05:02,556 --> 01:05:11,556
+In this case, if some of the n diverges, then some of the n diverges.
+
+599
+01:05:11,556 --> 01:05:15,556
+If some of the n diverges, it diverges to infinity.
+
+600
+01:05:15,556 --> 01:05:18,556
+a n's are even bigger than b n's.
+
+601
+01:05:18,556 --> 01:05:21,556
+So some of the n also diverges to infinity.
+
+602
+01:05:21,556 --> 01:05:33,556
+But on the other hand, if some of the n converges, we cannot say anything about some of the n.
+
+603
+01:05:33,556 --> 01:05:45,556
+We cannot say anything about some of the n.
+
+604
+01:05:37,844 --> 01:05:41,844
+İkincisi, if sum of the n converges, now a n's are bigger.
+
+605
+01:05:43,043 --> 01:05:52,844
+If we know that sum of the n converges, then it may be possible that sum of the n converges to a bigger number, or it is possible that sum of the n diverges to infinity.
+
+606
+01:05:53,304 --> 01:05:56,324
+They are both possible, but we cannot say anything about sum of n in this case.
+
+607
+01:05:57,423 --> 01:05:58,923
+Now, what about limit converter?
+
+608
+01:06:10,900 --> 01:06:15,260
+Limit as nf'e infinity a n over b n is c.
+
+609
+01:06:17,039 --> 01:06:17,680
+Figure that one.
+
+610
+01:06:18,320 --> 01:06:18,840
+A number.
+
+611
+01:06:19,960 --> 01:06:20,740
+C is a number.
+
+612
+01:06:21,380 --> 01:06:22,200
+Sorry, not figure that one.
+
+613
+01:06:22,340 --> 01:06:22,760
+Figure that zero.
+
+614
+01:06:22,940 --> 01:06:23,720
+Positive number.
+
+615
+01:06:25,019 --> 01:06:25,760
+In this case,
+
+616
+01:06:26,579 --> 01:06:28,559
+in this case,
+
+617
+01:06:29,840 --> 01:06:33,860
+if sum of b n converges,
+
+618
+01:06:35,180 --> 01:06:37,760
+then sum of n converges.
+
+619
+01:06:37,760 --> 01:06:43,500
+If sum of b n diverges,
+
+620
+01:06:45,200 --> 01:06:47,619
+then sum of n diverges.
+
+621
+01:06:49,280 --> 01:06:51,519
+We can make both conclusions in this case.
+
+622
+01:06:52,519 --> 01:06:54,920
+They either both converge or both diverge
+
+623
+01:06:54,920 --> 01:06:57,460
+if the quotient of the limit is a constant,
+
+624
+01:06:57,599 --> 01:06:58,280
+positive number.
+
+625
+01:07:00,059 --> 01:07:01,360
+The second case,
+
+626
+01:07:01,760 --> 01:07:06,380
+the second case is the limit as n approaches infinity a n over b n equals zero.
+
+627
+01:07:06,380 --> 01:07:08,800
+If this limit is zero,
+
+628
+01:07:09,220 --> 01:07:11,420
+it means that when n is too large,
+
+629
+01:07:12,139 --> 01:07:13,880
+a n's are smaller than b n's.
+
+630
+01:07:14,139 --> 01:07:14,780
+In this case,
+
+631
+01:07:14,880 --> 01:07:16,000
+this is like this case.
+
+632
+01:07:16,660 --> 01:07:17,940
+This is like this case.
+
+633
+01:07:18,420 --> 01:07:19,079
+In this case,
+
+634
+01:07:19,260 --> 01:07:22,280
+if sum of b n converges,
+
+635
+01:07:23,740 --> 01:07:26,559
+then sum of n converges.
+
+636
+01:07:26,559 --> 01:07:30,720
+If, on the other hand,
+
+637
+01:07:30,780 --> 01:07:32,139
+sum of b n diverges,
+
+638
+01:07:34,000 --> 01:07:35,300
+if sum of b n diverges,
+
+639
+01:07:35,400 --> 01:07:37,059
+a n's are smaller than b n's
+
+640
+01:07:37,059 --> 01:07:38,079
+when it is too large,
+
+641
+01:07:39,200 --> 01:07:40,800
+we cannot say anything about sum of n.
+
+642
+01:07:40,800 --> 01:07:42,960
+Yeah.
+
+643
+01:07:42,960 --> 01:07:44,539
+You cannot say anything
+
+644
+01:07:44,539 --> 01:07:48,260
+about,
+
+645
+01:07:50,260 --> 01:07:51,619
+I mean,
+
+646
+01:07:51,740 --> 01:07:54,840
+by saying that we cannot say anything about sum of n,
+
+647
+01:07:55,320 --> 01:07:57,220
+by making use of this test,
+
+648
+01:07:57,360 --> 01:07:58,340
+we cannot say anything.
+
+649
+01:07:58,720 --> 01:07:59,220
+Of course,
+
+650
+01:07:59,780 --> 01:08:01,019
+using another test,
+
+651
+01:08:01,140 --> 01:08:02,680
+maybe this test does not apply,
+
+652
+01:08:03,079 --> 01:08:03,640
+but we can,
+
+653
+01:08:03,920 --> 01:08:05,500
+we may use the integral test,
+
+654
+01:08:05,500 --> 01:08:07,240
+and based on the integral test,
+
+655
+01:08:07,300 --> 01:08:08,099
+we can say something.
+
+656
+01:08:08,960 --> 01:08:10,119
+So based on this test,
+
+657
+01:08:10,180 --> 01:08:11,740
+we cannot say anything about sum of n.
+
+658
+01:08:14,963 --> 01:08:20,463
+The last case, limit as n approaches infinity, an over bn is equal to infinity.
+
+659
+01:08:21,363 --> 01:08:23,903
+So this is like this case over here.
+
+660
+01:08:24,543 --> 01:08:29,783
+So if the limit of n over bn is infinity, it means that when n is too large,
+
+661
+01:08:31,243 --> 01:08:36,583
+when n is large, when an approach is infinity, an over bn is going to get too large.
+
+662
+01:08:36,943 --> 01:08:39,484
+So an's are going to be much bigger than bn's.
+
+663
+01:08:39,484 --> 01:08:48,703
+In this case, if sum of bn diverges, sum of an also diverges.
+
+664
+01:08:50,743 --> 01:08:53,403
+Then sum of n diverges.
+
+665
+01:08:55,804 --> 01:09:01,804
+If, but on the other hand, sum of bn converges, we cannot see anything.
+
+666
+01:09:08,275 --> 01:09:18,836
+Okay, let's look at the examples. Let's look at more examples on the book.
+
+667
+01:09:21,536 --> 01:09:23,155
+Let me share my screen again.
+
+668
+01:09:28,564 --> 01:09:44,804
+Okay, so which of the following series converge and which diverge? Let's look at this. So 3 over 4 plus 5 over 9 plus 7 over 16, 9 over 25. So this is 2n plus 1 over n plus 1 squared. N equals 1 to infinity. That's n equals 1 to infinity. 2n plus 1 over n squared plus 2n plus 1.
+
+669
+01:09:44,804 --> 01:10:01,064
+Now when we look at this, so first of all, before looking at the solution, when we get a quotient like this, what we do is to understand. So to make use of the comparison tests is to understand the dominating term.
+
+670
+01:10:01,064 --> 01:10:14,264
+So when it is too large, let's look at this denominator. When it is too large, 2n dominates 1. Just ignore 1. This is going to be like 2n. And when it is too large, look at the denominator.
+
+671
+01:10:15,324 --> 01:10:25,003
+This n squared term is going to dominate this 2n plus 1 term. So this term over here is going to be like n squared when n is too large.
+
+672
+01:10:25,003 --> 01:10:42,204
+So think about it. When n is 1 million. When n is 1 million, this is going to be 1 trillion plus 2 million plus 1. So 2 million plus 1 is very small with respect to 1 trillion, right?
+
+673
+01:10:42,744 --> 01:10:52,244
+So n squared is going to dominate it. So when n is too large, the numerator is going to be like just 2n. And the denominator is going to be like just n squared.
+
+674
+01:10:52,244 --> 01:10:56,904
+So when n is too large, this is going to be like 2n over n squared, which is 2 over n.
+
+675
+01:10:57,844 --> 01:11:05,484
+So if you want to make use of the comparison test, we can compare it with 2 over n or just 1 over n, basically. That's what this is done.
+
+676
+01:11:08,503 --> 01:11:21,144
+So for the large n, we expect n to behave like, as it is said here, behave like 2 over n. So we can compare it with 1 over n. Look at this.
+
+677
+01:11:22,244 --> 01:11:42,024
+a n over n over n. What is n over bn? When we divide this by 1 over n, we get this 2n squared plus n over n squared plus 2n plus 1. And as an approach is infinity, its limit is going to be the quotient of the leading terms, which is going to be 2.
+
+678
+01:11:42,024 --> 01:11:44,084
+So it's the first case.
+
+679
+01:11:44,084 --> 01:11:50,144
+It's the first case. The limit is equal to c, a positive number.
+
+680
+01:11:50,923 --> 01:11:54,724
+So this is the most useful case.
+
+681
+01:11:55,923 --> 01:11:58,084
+This case, we can...
+
+682
+01:11:58,084 --> 01:12:09,024
+...
+
+683
+01:12:04,404 --> 01:12:12,084
+We know that sum of the n diverges, we conclude that sum of n also diverges.
+
+684
+01:12:14,964 --> 01:12:20,084
+So sum of the n diverges with the harmonic series, therefore we conclude that sum of n also diverges.
+
+685
+01:12:20,644 --> 01:12:29,844
+Now the second example, when we look at this again, look at the nth term, when n is too large, the denominator is constant, it's 1.
+
+686
+01:12:29,844 --> 01:12:35,524
+When n is too large, ignore this minus 1, the denominator is going to be like 2 to the power n.
+
+687
+01:12:35,524 --> 01:12:39,364
+So when n is too large, this is going to be like 1 over 2 to the power n.
+
+688
+01:12:39,364 --> 01:12:44,404
+It's the terms of a geometric series which converges, so compare it with that.
+
+689
+01:12:47,475 --> 01:12:50,675
+Is it here? Compared with 1 over 2 to power n.
+
+690
+01:12:51,715 --> 01:12:55,175
+This is an is 1 over 2 to power n minus 1, bn is 1 over 2 to power n.
+
+691
+01:12:55,215 --> 01:12:59,175
+When we divide them, an over bn is going to be this, 2 to power n over 2 to power n minus 1.
+
+692
+01:12:59,635 --> 01:13:03,215
+Then we simplify it by dividing what the numerator and denominator by 2 to power n.
+
+693
+01:13:03,515 --> 01:13:05,415
+We get this as n approaches infinity.
+
+694
+01:13:07,295 --> 01:13:08,735
+This part approaches 0.
+
+695
+01:13:09,435 --> 01:13:10,055
+We get 1.
+
+696
+01:13:10,555 --> 01:13:12,055
+Again, it's again the first case.
+
+697
+01:13:13,595 --> 01:13:15,735
+We know that this one converges.
+
+698
+01:13:15,735 --> 01:13:18,255
+How do we know it converges?
+
+699
+01:13:18,315 --> 01:13:20,675
+It's a geometric series with r equals 1 over 2.
+
+700
+01:13:21,395 --> 01:13:22,175
+It converges.
+
+701
+01:13:22,496 --> 01:13:24,595
+Therefore, we conclude that this one also converges.
+
+702
+01:13:25,855 --> 01:13:27,195
+Now look at the third one.
+
+703
+01:13:30,707 --> 01:13:34,467
+1 plus n ln n. n ln n.
+
+704
+01:13:36,147 --> 01:13:42,307
+Right? The dominating term in the numerator is n ln n. The dominating term in the denominator is n squared.
+
+705
+01:13:42,307 --> 01:13:47,987
+So when n is large, this is like n ln n over n squared. What is that? It's ln n over n.
+
+706
+01:13:50,147 --> 01:13:52,147
+It's ln n over n when n is large.
+
+707
+01:14:28,979 --> 01:14:35,099
+1 plus n ln n over n squared plus n squared plus n squared plus n squared plus n?
+
+708
+01:14:40,819 --> 01:14:41,539
+Çıkırı plus five.
+
+709
+01:14:45,747 --> 01:14:52,067
+n squared plus 5. When n is large this is like approximately like
+
+710
+01:14:53,268 --> 01:14:58,067
+dominating term in the numerator is n ln n and the dominating term in the denominator is n squared
+
+711
+01:14:59,268 --> 01:15:08,947
+which is equal to ln n over n. So this is not a geometric series it's not a p series. I don't
+
+712
+01:15:08,947 --> 01:15:16,547
+know whether this converges or diverges but what I can see is that this is even bigger than 1 over n.
+
+713
+01:15:17,187 --> 01:15:26,307
+Right? It's bigger than 1 over n because when n is too large ln n grows ln n is going to be bigger than 1.
+
+714
+01:15:26,307 --> 01:15:31,107
+So this is going to be bigger than 1 over n. What do we know? We know that some 1 over n diverges.
+
+715
+01:15:31,907 --> 01:15:36,147
+It's the harmonic series. So when n is large this is going to be even bigger.
+
+716
+01:15:36,147 --> 01:15:41,987
+So I can compare it with 1 over n. Let's make let's make that comparison there. So
+
+717
+01:15:43,347 --> 01:15:51,587
+so I will compare it with 1 over n. So 1 plus n ln n over n square plus 5. You will compare it with 1 over n.
+
+718
+01:15:52,547 --> 01:15:57,027
+So this is our n and our b n is 1 over n. What do we get?
+
+719
+01:15:57,027 --> 01:16:08,067
+So this is our n plus n plus n square ln n over n square plus 5. And when we divide both
+
+720
+01:16:08,067 --> 01:16:28,167
+n square plus n square plus n square plus n square plus n square plus n square plus n square plus n square plus n square plus n square plus n square plus n square plus n square plus n square plus n square plus n square plus n square plus n square plus n square plus n square plus n square plus n square plus n square plus n square plus n square plus n square plus n square plus n square plus n square plus n square plus n square plus n square plus n square plus n square plus n square plus n square plus n square plus n square plus n square plus n square plus n square plus n square plus n square plus n square plus n square plus n square plus n square plus n square plus n square plus n square plus n square plus n square plus n square plus n square plus n square plus n square plus n square plus n square plus n square plus n square plus n square plus n square plus n square plus n square plus n square plus n square plus n square plus n square plus n square plus n square plus n square plus n square plus n square plus n square
+
+721
+01:16:31,188 --> 01:16:53,208
+And this approach is where? When an approach is infinity. When an approach is infinity, this part approaches zero, this part approaches zero. The denominator approach is one. The numerator approach is infinity, lnm. That's lnm. So the limit of this is infinity. So it's the third case.
+
+722
+01:17:21,300 --> 01:17:22,300
+Burada bu.
+
+723
+01:17:22,940 --> 01:17:24,940
+Bu, bu.
+
+724
+01:17:24,940 --> 01:17:26,940
+Bakalım, bu.
+
+725
+01:17:26,940 --> 01:17:27,940
+Bu, bu.
+
+726
+01:17:27,940 --> 01:17:28,940
+3 adet.
+
+727
+01:17:32,180 --> 01:17:36,700
+Bu, bu, we know that sum of bn diverges, sum of bn is sum of 1 over n.
+
+728
+01:17:37,600 --> 01:17:42,860
+The harmonic series diverges, so we conclude that sum of n also diverges, it's bigger.
+
+729
+01:17:45,920 --> 01:17:48,360
+We conclude that sum of n also diverges.
+
+730
+01:17:49,000 --> 01:17:52,600
+The last example, I guess, is the last example.
+
+731
+01:17:55,380 --> 01:17:57,440
+This, ln over n to power 3 half.
+
+732
+01:18:20,275 --> 01:18:24,695
+İngilizce, LLL, over, and to power 3L.
+
+733
+01:18:37,140 --> 01:18:40,579
+Now, first of all, can I compare it with 1 over n?
+
+734
+01:18:42,420 --> 01:18:44,660
+Or 1 over n to the power 3 half?
+
+735
+01:18:46,660 --> 01:18:48,660
+Let's understand this.
+
+736
+01:18:57,555 --> 01:18:59,555
+m²³.
+
+737
+01:18:59,555 --> 01:19:03,555
+If I compare it with 1 over m²³,
+
+738
+01:19:03,555 --> 01:19:06,555
+this is going to be bigger than 1 over m²³,
+
+739
+01:19:06,555 --> 01:19:07,555
+right?
+
+740
+01:19:07,555 --> 01:19:10,555
+We know that some of this converges
+
+741
+01:19:10,555 --> 01:19:13,555
+because some of this is a p-series
+
+742
+01:19:13,555 --> 01:19:15,555
+with p equals 3 over 2.
+
+743
+01:19:15,555 --> 01:19:16,555
+p is bigger than that.
+
+744
+01:19:16,555 --> 01:19:18,555
+Some of this converges,
+
+745
+01:19:18,555 --> 01:19:20,555
+this is bigger than that.
+
+746
+01:19:20,555 --> 01:19:22,555
+We can make no conclusion.
+
+747
+01:19:22,555 --> 01:19:27,555
+This may converge to a bigger number
+
+748
+01:19:27,555 --> 01:19:29,555
+or some of this may diverge to infinity.
+
+749
+01:19:29,555 --> 01:19:31,555
+No conclusion can be.
+
+750
+01:19:31,555 --> 01:19:33,555
+It's useless.
+
+751
+01:19:35,555 --> 01:19:37,555
+No conclusion.
+
+752
+01:19:37,555 --> 01:19:41,555
+Okay, let's compare it with 1 over m.
+
+753
+01:19:44,756 --> 01:19:46,756
+n'e büyük bir şekilde
+
+754
+01:19:47,756 --> 01:19:48,756
+n'e büyük
+
+755
+01:19:49,756 --> 01:19:52,756
+Evet, bu konvergantı serisinin bir konvergantı
+
+756
+01:19:52,756 --> 01:19:54,756
+bir konvergantı yoktu.
+
+757
+01:19:54,756 --> 01:19:58,756
+Bir konvergantı bir konvergantı var.
+
+758
+01:20:01,652 --> 01:20:07,091
+Bu, LnN over n times n to power 1 health.
+
+759
+01:20:08,332 --> 01:20:13,731
+Now, LnN over n to power 1 health, n to power 1 health grows faster than LnN.
+
+760
+01:20:18,323 --> 01:20:48,323
+Bu, bu
+
+761
+01:20:48,323 --> 01:20:55,323
+Some of this converges. This is bigger. Since the limit is infinity, this is bigger. No conclusion can be made.
+
+762
+01:20:56,323 --> 01:20:58,523
+On the other hand, we compare it with 1 over n.
+
+763
+01:21:00,323 --> 01:21:03,023
+ln n over n to the power 3 half. 1 over n.
+
+764
+01:21:04,723 --> 01:21:12,623
+If I compare it with 1 over n, what do we get? Limit as n approaches infinity, ln n over n to the power 1 half.
+
+765
+01:21:12,623 --> 01:21:15,623
+n cancel, we get n to the power 1 half here.
+
+766
+01:21:15,623 --> 01:21:18,623
+Which is equal to apply L'Opital.
+
+767
+01:21:18,623 --> 01:21:21,623
+So, we get the answer to the answer to the answer to the answer.
+
+768
+01:21:21,623 --> 01:21:34,623
+We get the answer to the answer to the answer.
+
+769
+01:21:34,623 --> 01:21:36,623
+We get the answer to the answer.
+
+770
+01:21:36,623 --> 01:21:40,623
+We get the answer to the answer to the answer.
+
+771
+01:21:22,420 --> 01:21:52,420
+bu n'ı
+
+772
+01:21:52,420 --> 01:22:07,909
+n'ı n'
+
+773
+01:22:12,467 --> 01:22:14,467
+Yani ne yapacağımı?
+
+774
+01:22:24,307 --> 01:22:31,828
+Okay, here, before I explain what, before I show the solution, let me explain something.
+
+775
+01:22:32,868 --> 01:22:40,868
+So, one, Lmn approaches infinity.
+
+776
+01:22:54,228 --> 01:22:59,688
+1 is less than ln, n to the power a.
+
+777
+01:23:08,243 --> 01:23:09,844
+Here is any positive number.
+
+778
+01:23:15,764 --> 01:23:26,634
+B'ye kadar n'ye kadar n'ye kadar n'ye kadar n'ye kadar n'ye kadar n'ye kadar n'ye kadar n'ye kadar n'ye kadar n'ye kadar n'ye kadar n'ye kadar n'ye kadar n'ye kadar n'ye kadar n'ye kadar n'ye kadar n'ye kadar n'ye kadar n'ye kadar n'ye kadar n'ye kadar n'ye kadar n'ye kadar n'ye kadar n'ye kadar n'ye kadar n'ye kadar n'ye kadar n'ye kadar n'ye kadar n'ye kadar n'ye kadar n'ye kadar n'ye kadar n'ye kadar n'ye kadar n'ye kadar n'ye kadar n'ye kadar n'ye kadar n'ye kadar n'ye kadar n'ye kadar n'ye kadar n'ye kadar n'ye kadar n'ye kadar n'ye kadar n'ye kadar n'ye kadar n'ye kadar n'ye kadar n'ye kadar n'ye
+
+779
+01:23:31,572 --> 01:23:41,572
+This is logaritmic function of n, this is polynomial function of n, this is exponential function of n, this is factorial function of n, this is n to the power n.
+
+780
+01:23:41,572 --> 01:23:45,572
+When n is too large we get this order.
+
+781
+01:23:49,427 --> 01:23:53,427
+I mean, it means that n factorial over n to the power n, its limit is zero.
+
+782
+01:23:53,988 --> 01:23:56,948
+b to the power n over n factorial, its limit is zero.
+
+783
+01:23:56,948 --> 01:23:58,148
+So, this is what we mean.
+
+784
+01:23:58,787 --> 01:24:06,787
+We mean that limit as n approaches infinity of n factorial over n to the power n is zero.
+
+785
+01:24:07,667 --> 01:24:09,188
+This is smaller than this.
+
+786
+01:24:09,188 --> 01:24:14,307
+The limit as n approaches infinity of b to the power n over n factorial is zero.
+
+787
+01:24:14,307 --> 01:24:18,948
+Exponential of n is smaller than the factorial of n.
+
+788
+01:24:18,948 --> 01:24:19,747
+And it is two large.
+
+789
+01:24:20,787 --> 01:24:26,148
+Limit as n approaches infinity n to the power a over b to the power n is zero.
+
+790
+01:24:26,787 --> 01:24:34,068
+Polynomial of n, where a is a positive number, is smaller than the exponential of n, where b is a number bigger than one.
+
+791
+01:24:35,507 --> 01:24:36,228
+This is zero.
+
+792
+01:24:36,867 --> 01:24:43,188
+Limit as n approaches infinity of ln over n to the power a.
+
+793
+01:24:44,707 --> 01:24:46,228
+This is what I want to look at.
+
+794
+01:24:46,228 --> 01:24:47,347
+This is also zero.
+
+795
+01:24:47,347 --> 01:24:48,148
+This is important.
+
+796
+01:24:48,707 --> 01:24:49,347
+Why is that important?
+
+797
+01:24:49,347 --> 01:24:49,827
+Let's see.
+
+798
+01:24:49,827 --> 01:25:03,028
+Let me, let me even make a precise, a specific example.
+
+799
+01:25:03,028 --> 01:25:06,228
+n to the power zero for n zero zero one.
+
+800
+01:25:06,228 --> 01:25:07,108
+Let me look at this.
+
+801
+01:25:07,108 --> 01:25:10,707
+So, what do we see?
+
+802
+01:25:10,707 --> 01:25:14,228
+When n approaches infinity and then n approaches infinity.
+
+803
+01:25:14,228 --> 01:25:17,907
+n to the power zero for n zero zero one also approaches infinity.
+
+804
+01:25:17,907 --> 01:25:19,587
+The question is, this one is faster.
+
+805
+01:25:21,667 --> 01:25:22,547
+This one is faster.
+
+806
+01:25:23,988 --> 01:25:24,867
+This is faster.
+
+807
+01:25:24,867 --> 01:25:29,268
+I mean logarithmic function is very small.
+
+808
+01:25:29,268 --> 01:25:32,467
+It's even slower than any positive power n.
+
+809
+01:25:32,467 --> 01:25:33,507
+That's what we see.
+
+810
+01:25:33,507 --> 01:25:34,707
+We will see here.
+
+811
+01:25:34,707 --> 01:25:35,667
+Let's look at this.
+
+812
+01:25:35,667 --> 01:25:38,068
+They both approach infinity, apply lopital.
+
+813
+01:25:39,347 --> 01:25:42,467
+Then we apply lopital, just like what we did over here.
+
+814
+01:25:42,467 --> 01:25:43,667
+What are we going to get?
+
+815
+01:25:43,667 --> 01:25:45,427
+Limit as n approaches infinity.
+
+816
+01:25:45,427 --> 01:25:47,347
+l and n.
+
+817
+01:25:47,347 --> 01:25:48,627
+It's derivative is one over n.
+
+818
+01:25:49,667 --> 01:25:51,507
+n to the power zero point zero zero one.
+
+819
+01:25:51,507 --> 01:26:06,627
+It's derivative is zero point zero zero one times n to the power minus zero point nine hundred and ninety nine.
+
+820
+01:26:02,195 --> 01:26:32,195
+bu n'a karşı n'a karşı n'a karşı n'a karşı n'a karşı n'a karşı n'a karşı n'a karşı n'a karşı n'a karşı n'a karşı n'a karşı n'a karşı n'a karşı n'a karşı n'a karşı n'a karşı n'a karşı n'a karşı n'a karşı n'a karşı n'a karşı n'a karşı n'a karşı n'a karşı n'a karşı n'a karşı n'a karşı n'a karşı n'a karşı n'a karşı n'a karşı n'a karşı n'a karşı n'a karşı n'a karşı n'a karşı n'a karşı n'a karşı n'a karşı n'a karşı n'a karşı n'a karşı n'a karşı n'a karşı n'a karşı n'a karşı n'a karşı n'a karşı n'a karşı n'a karşı n'a karşı n'a karşı n'a karşı n'a karşı n'
+
+821
+01:26:32,195 --> 01:26:34,435
+A
+
+822
+01:26:36,564 --> 01:26:53,043
+n to the power n, that's very fast. n factorial is slower than that. Exponential b to the power n is slower than the factorial. Polynomials n to the power a is slower than b to the power n.
+
+823
+01:26:53,864 --> 01:27:00,604
+And logaritmic function, as I said over here, is even slower than any positive power of n.
+
+824
+01:27:08,115 --> 01:27:17,876
+So, now let's go back to this example. Comparing it with 1 over n to power 1.5 or 1 over n doesn't work.
+
+825
+01:27:19,076 --> 01:27:20,756
+But let's analyze.
+
+826
+01:27:23,636 --> 01:27:35,155
+Based on this, based on this, we know that when n is large, when n is large, when n is too large, let's say, when n is too large, l n n
+
+827
+01:27:39,380 --> 01:27:43,380
+1.0.1
+
+828
+01:27:43,380 --> 01:27:47,380
+I mean I can make this exponent as small as possible.
+
+829
+01:27:47,380 --> 01:27:49,380
+I can put any positive number there.
+
+830
+01:27:49,380 --> 01:27:51,380
+Any positive number there.
+
+831
+01:27:51,380 --> 01:27:53,380
+0.000000001
+
+832
+01:27:53,380 --> 01:27:57,380
+Lnn is even going to be slower than that.
+
+833
+01:27:57,380 --> 01:27:59,380
+Based on this.
+
+834
+01:27:59,380 --> 01:28:01,380
+It just follows by Dilophit also.
+
+835
+01:28:01,380 --> 01:28:03,380
+Lnn is between these two.
+
+836
+01:28:03,380 --> 01:28:05,380
+I am interested in this.
+
+837
+01:28:05,380 --> 01:28:07,380
+Lnn over into power 1.5
+
+838
+01:28:07,380 --> 01:28:11,380
+So when we multiply, divide everything by n to power 1.5
+
+839
+01:28:11,380 --> 01:28:13,380
+What do I get?
+
+840
+01:28:13,380 --> 01:28:15,380
+1 over n to power 1.5
+
+841
+01:28:15,380 --> 01:28:17,380
+is less than Lnn over
+
+842
+01:28:17,380 --> 01:28:19,380
+n to power 1.5
+
+843
+01:28:19,380 --> 01:28:23,380
+which is less than n to power 0.1 over n to power 1.5.
+
+844
+01:28:25,380 --> 01:28:27,380
+What is this?
+
+845
+01:28:27,380 --> 01:28:29,380
+This is 1 over n to power 1.4.
+
+846
+01:28:29,380 --> 01:28:31,380
+Now this is useful.
+
+847
+01:28:31,380 --> 01:28:35,380
+We know that some of this converges.
+
+848
+01:28:35,380 --> 01:28:37,380
+because 1.5 is bigger than 1.5.
+
+849
+01:28:37,380 --> 01:28:39,380
+Some of this converges.
+
+850
+01:28:39,380 --> 01:28:41,380
+This is smaller than that.
+
+851
+01:28:41,380 --> 01:28:43,380
+So we will conclude that this one also converges.
+
+852
+01:28:43,380 --> 01:28:49,380
+Since sum 1 over n to power 1.4 converges.
+
+853
+01:28:49,380 --> 01:28:51,380
+Why does it converge?
+
+854
+01:28:51,380 --> 01:28:59,380
+p series with p equals 1.4 bigger than 1.5.
+
+855
+01:28:59,380 --> 01:29:01,380
+This is sum Lnn over n to power 1.4.
+
+856
+01:29:01,380 --> 01:29:03,380
+5 also converges.
+
+857
+01:29:03,380 --> 01:29:09,380
+This is sum Lnn over n to power 1.4.
+
+858
+01:29:09,380 --> 01:29:11,380
+5 also converges.
+
+859
+01:29:11,380 --> 01:29:13,380
+This is sum Lnn over n to power 1.4.
+
+860
+01:29:13,380 --> 01:29:15,380
+5 also converges.
+
+861
+01:29:17,011 --> 01:29:22,511
+Şimdi, bu, L'Hôpital'e'ye kullanıyorum.
+
+862
+01:29:22,511 --> 01:29:26,511
+İçeride birçok, bu, L'Hôpital'e'ye kullanıyorum.
+
+863
+01:29:26,511 --> 01:29:31,511
+Şimdi, bu, L'Hôpital'e'ye kullanıyorum.
+
+864
+01:29:31,511 --> 01:29:40,511
+Birçok, bu, L'Hôpital'e'ye kullanıyorum.
+
+865
+01:29:40,511 --> 01:29:48,011
+Ama, bu, L'Hôpital'e'ye verirseniz, bu, L'Hôpital'e'ye verirseniz.
+
+866
+01:29:48,011 --> 01:29:52,011
+Bu, L'Hôpital'e'ye verirseniz.
+
+867
+01:29:52,011 --> 01:30:08,011
+L'Hôpital'e'ye verirseniz.
+
+868
+01:30:49,011 --> 01:30:56,491
+Tamam, 1448, bu sonunda bu konuları, bu sonunda bu konuları, 10.4'i bu konuları.
+
+869
+01:30:57,311 --> 01:31:01,931
+Bu konuları ve rüt ve rüt testi, yorumlar için devam edelim.
+
+870
+01:31:05,492 --> 01:31:06,311
+Any questions?
+
+871
+01:31:12,435 --> 01:31:16,655
+Okay, that's on the end of the lecture today. So I'll see you tomorrow.
