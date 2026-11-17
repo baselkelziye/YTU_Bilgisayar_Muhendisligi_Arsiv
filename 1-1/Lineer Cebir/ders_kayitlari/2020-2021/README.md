@@ -9,6 +9,7 @@
 | 2 | Güz | Bulunamadı | [sube_2/](sube_2/) |
 | 4 | Güz | İsmail Aydoğdu | [sube_4/](sube_4/) |
 | 4 | Bahar | Hülya Burhanzade | [sube_4_bahar/](sube_4_bahar/) |
+| 5 | Güz | Bulunamadı | [sube_5/](sube_5/) |
 | 6 | Güz | Bayram Ali Ersoy | [sube_6/](sube_6/) |
 | 7 | Güz | Mehmet Emin Köroğlu | [sube_7/](sube_7/) |
 | 10 | Bahar | Hülya Burhanzade | [sube_10/](sube_10/) |
