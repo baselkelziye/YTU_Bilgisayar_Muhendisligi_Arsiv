@@ -10,6 +10,7 @@
 | 4 | Bahar | Hilal Tufan | [sube_4/](sube_4/) |
 | 5 | Bahar | Arzuhan Kocabaş | [sube_5/](sube_5/) |
 | 6 | Bahar | Dr. Metin Işıkoğlu | [sube_6/](sube_6/) |
+| 10 | Bahar | Metin Işıkoğlu | [sube_10/](sube_10/) |
 | 11 | Bahar | Hilal Tufan | [sube_11/](sube_11/) |
 | 12 | Bahar | Arzuhan Kocabaş | [sube_12/](sube_12/) |
 | 15 | Bahar | Arzuhan Kocabaş | [sube_15/](sube_15/) |
