@@ -1,0 +1,2659 @@
+1
+00:00:19,859 --> 00:00:20,219
+Hello.
+
+2
+00:00:55,475 --> 00:00:56,635
+Can I just close your microphone?
+
+3
+00:01:15,188 --> 00:01:26,888
+Hello again, my dear students. Welcome to my online course. My name is Yonca Turgut-Sezar. I will be your instructor for the next 14 weeks.
+
+4
+00:01:56,180 --> 00:01:57,620
+Can you see my work?
+
+5
+00:03:13,683 --> 00:03:15,683
+Is it good for you?
+
+6
+00:03:32,948 --> 00:03:33,268
+Ok.
+
+7
+00:03:38,132 --> 00:03:39,512
+İlta mı şey, ok.
+
+8
+00:04:13,972 --> 00:04:16,091
+Ok, thank you [öğrenci].
+
+9
+00:04:17,852 --> 00:04:20,132
+My name is Yonca Turku-Tizezer.
+
+10
+00:04:22,292 --> 00:04:28,932
+I'm a lecturer in your Mathematik 3rd lecture course.
+
+11
+00:04:30,211 --> 00:04:36,471
+I hope that all you and your loved ones are well.
+
+12
+00:04:41,331 --> 00:04:49,791
+Bu e-mail adres, you may send all kinds of questions or any comments.
+
+13
+00:04:56,339 --> 00:05:03,719
+In our lesson, we follow this first book, Thomas Kalkulus, written by Thomas.
+
+14
+00:05:06,579 --> 00:05:15,299
+I advise you to do some exercises at the end of each of topics.
+
+15
+00:05:20,468 --> 00:05:28,388
+This table is the list of the topics of our lecture.
+
+16
+00:05:34,004 --> 00:05:44,724
+İlk başta, bir, iki, üç, ve üç.
+
+17
+00:05:48,564 --> 00:05:57,944
+İlk önce, 3 weeks, we compute the limits of sequence and series.
+
+18
+00:05:57,944 --> 00:06:06,944
+We determine the convergence of the series and the radius of convergence of power series.
+
+19
+00:06:06,944 --> 00:06:14,624
+And then we evaluate non-elementary integrals by using the series.
+
+20
+00:06:14,624 --> 00:06:24,024
+And we will evaluate the limits involving in determinate form again by using the series.
+
+21
+00:06:24,024 --> 00:06:32,864
+In the fourth and fifth weeks, we discussed two methods for describing curves.
+
+22
+00:06:32,864 --> 00:06:37,344
+First one is parametric equations.
+
+23
+00:06:37,344 --> 00:06:39,424
+Second one is polar coordinates.
+
+24
+00:06:39,424 --> 00:06:43,424
+Some curves are given in terms of parameters.
+
+25
+00:06:43,424 --> 00:06:52,384
+Some curves have their most convenient description when we use polar coordinate system.
+
+26
+00:06:55,795 --> 00:07:03,075
+In 6 weeks, we will use vector-valued functions to describe the motion of objects.
+
+27
+00:07:05,075 --> 00:07:12,635
+We give the concepts of continuity differentiation of vector-valued functions.
+
+28
+00:07:17,427 --> 00:07:41,427
+Bu, 7-week, you will study multivariable functions. We analyze limits, determine continuity, and compute partial derivatives of functions. We find tangent planes and directional derivatives.
+
+29
+00:07:54,291 --> 00:08:01,371
+And then, we applied the first and second derivative tests.
+
+30
+00:08:04,211 --> 00:08:15,211
+And last two weeks, we compute multiple integrals and apply them in problem situation involving area and volume.
+
+31
+00:08:32,244 --> 00:08:34,144
+Any question about this table?
+
+32
+00:08:46,707 --> 00:08:56,168
+Ok, I will upload limiting notes to online users after every lecture.
+
+33
+00:08:56,168 --> 00:09:06,007
+And you may also download it from Turkish Lecture.
+
+34
+00:09:10,004 --> 00:09:12,004
+MyOlysis website.
+
+35
+00:09:16,211 --> 00:09:25,211
+Avicis code is this, please note that this code, this is my, Avicis, password.
+
+36
+00:09:42,515 --> 00:09:47,096
+Grete'nin bir midterm ve final exams.
+
+37
+00:09:48,415 --> 00:09:52,655
+Açık midterm is 30%.
+
+38
+00:09:52,655 --> 00:09:58,355
+Açık final exam is 40%.
+
+39
+00:09:58,355 --> 00:10:07,096
+Dates and times of the exams will be announced later on the website of the Department of Mathematics.
+
+40
+00:10:07,096 --> 00:10:15,975
+I recommend you to follow the website of the Department of Mathematics.
+
+41
+00:10:17,755 --> 00:10:22,255
+All exams will be online with multiple choices.
+
+42
+00:10:30,580 --> 00:10:40,520
+In our lecture, I ask all of you to write and write, try to solve your problem on their own.
+
+43
+00:10:56,500 --> 00:10:59,279
+I hope you will all do well in your exams.
+
+44
+00:11:07,124 --> 00:11:07,724
+Any questions?
+
+45
+00:11:12,724 --> 00:11:16,644
+Today we are going to start with definition of infinite sequence.
+
+46
+00:11:18,444 --> 00:11:25,804
+We will give the definition of convergence of sequence.
+
+47
+00:11:50,004 --> 00:11:53,464
+If no question, we can start.
+
+48
+00:11:57,427 --> 00:11:58,668
+Are you ready to start?
+
+49
+00:12:06,868 --> 00:12:08,868
+Evet, tamam.
+
+50
+00:12:13,716 --> 00:12:16,716
+İlk bir kısım var.
+
+51
+00:12:30,388 --> 00:12:38,807
+I have to stop my video camera because I am writing to screen of my computer.
+
+52
+00:13:27,668 --> 00:13:30,028
+I think you can see Windows Journal.
+
+53
+00:14:26,676 --> 00:14:27,536
+Please write.
+
+54
+00:15:19,508 --> 00:15:20,067
+Erbet!
+
+55
+00:15:27,155 --> 00:15:30,675
+A1
+
+56
+00:15:41,524 --> 00:15:48,524
+T1'e
+
+57
+00:16:06,067 --> 00:16:10,067
+Bir şey.
+
+58
+00:16:13,524 --> 00:16:21,504
+A2, A2 equals t1.
+
+59
+00:16:33,875 --> 00:16:34,836
+Derahat.
+
+60
+00:16:39,028 --> 00:16:41,648
+Position, T2.
+
+61
+00:16:48,820 --> 00:17:18,820
+A3'e t2'ye atı t3'e atı t3'e atı t3'e atı t3'e atı t3'e atı t3'e atı t3'e atı t3'e atı t3'e atı t3'e atı t3'e atı t3'e atı t3'e atı t3'e atı t3'e atı t3'e atı t3'e atı t3'e atı t3'e atı t3'e atı t3'e atı t3'e atı t3'e atı t3'e atı t3'e atı t3'e atı t3'e atı t3'e atı t3'e atı t3'e atı t3'e atı t3'e atı t3'e atı t3'e atı t3'e atı t3'
+
+62
+00:17:18,820 --> 00:17:28,620
+t3'e atı t3'e atı t3'e atı t3'e atı t3'e atı t3'e atı t3'e atı t3'e atı t3'e atı t3'e atı t3'e atı t3'e atı t3'e atı t3'e atı t3'e atı t3'e atı t3'e atı t3'e atı t3'e atı t3'e atı t3'e atı t3'e atı t3'e atı t3'e atı t3'e atı t3'e atı t3'e atı t3'e atı t3'e atı t3'e atı t3'e atı t3'e atı t3'e atı t3'e atı t3'e atı t3'e atı t3'e at
+
+63
+00:17:35,796 --> 00:17:46,716
+The success positions of the rabbit form sequence a1, a2, a3.
+
+64
+00:17:48,836 --> 00:17:54,056
+This is the successive position of the rabbit.
+
+65
+00:17:55,056 --> 00:17:58,836
+The successive position of the turtles,
+
+66
+00:17:59,716 --> 00:18:05,355
+t1, t2, t3.
+
+67
+00:18:05,796 --> 00:18:17,036
+where a n less than t n for all n.
+
+68
+00:18:26,612 --> 00:18:32,612
+Bu şekilde, iki sektörlerle aynı zamanda.
+
+69
+00:18:38,548 --> 00:18:57,627
+As n goes to infinity, an approach the position p, and tn approach the position p.
+
+70
+00:18:59,627 --> 00:19:07,788
+It is pricely at this limit point that the rabbit overtakes the door tortoise.
+
+71
+00:19:32,211 --> 00:19:39,331
+We can explain this process with the idea of sequence.
+
+72
+00:20:00,147 --> 00:20:13,788
+A sequence A1, A2, An, et cetera, is...
+
+73
+00:20:23,827 --> 00:20:29,708
+I think the battery of the pen over, please.
+
+74
+00:20:42,644 --> 00:20:45,223
+Numbers, written,
+
+75
+00:20:49,587 --> 00:20:55,427
+in a definite order
+
+76
+00:21:02,996 --> 00:21:21,956
+This sequence is also denoted by an or an and start from 1 to infinity.
+
+77
+00:21:29,011 --> 00:21:29,771
+Number 1
+
+78
+00:21:33,875 --> 00:21:43,455
+A1 is the first term of the sequence, A2 is the second term of the sequence.
+
+79
+00:21:44,895 --> 00:21:54,875
+In general, An is called end term of the sequence.
+
+80
+00:22:01,652 --> 00:22:02,592
+Notice that.
+
+81
+00:22:03,592 --> 00:22:06,632
+For every positive integer n,
+
+82
+00:22:13,268 --> 00:22:17,208
+There is a corresponding number an.
+
+83
+00:22:24,468 --> 00:22:31,788
+So, a sequence can be defined as a function whose domain is the set of positive integers.
+
+84
+00:22:36,372 --> 00:23:06,372
+So, a sequence is a special function. Its domain is positive integer numbers. Range of this function and its real number set. This is a special function. We denoted this function by
+
+85
+00:23:06,372 --> 00:23:12,012
+an. An is a function.
+
+86
+00:23:22,740 --> 00:23:27,500
+We usually write a n instead of f of n.
+
+87
+00:23:31,731 --> 00:23:32,531
+Any questions?
+
+88
+00:23:42,548 --> 00:23:43,627
+Everything is okay?
+
+89
+00:23:52,243 --> 00:23:53,124
+Okay, thank you.
+
+90
+00:24:00,051 --> 00:24:17,861
+Örneğin, bu seksiyonu 1'i 2'i 2'i 3'i 2'i 3'i 2'i 3'
+
+91
+00:24:22,740 --> 00:24:28,960
+Can you say the end term of this sequence in terms of n? Please write.
+
+92
+00:24:31,660 --> 00:24:39,539
+What is the end term of this sequence in terms of n? Yes, thank you.
+
+93
+00:24:43,284 --> 00:25:10,584
+We can denite, we can denite this sequence in terms of just n term, 1 over n here, n start from 1, because if we write 1 instead of n, we will take the first term of this sequence.
+
+94
+00:25:10,584 --> 00:25:22,004
+And then, if we write 2 instead of n, we will find the second term of this sequence.
+
+95
+00:25:46,963 --> 00:26:01,923
+If n equals 1, a1 equals 1. If n equals 2, a2 equals 1 over 2.
+
+96
+00:26:06,324 --> 00:26:19,744
+n equals 3, n equals 1 over 3, 1 over 4, 1 over 5, 1 over 6, and so on.
+
+97
+00:26:24,723 --> 00:26:31,343
+We can visualize this sequence by polluting its terms on a number line.
+
+98
+00:26:33,343 --> 00:26:38,203
+Let's consider the real number line.
+
+99
+00:26:42,451 --> 00:26:43,011
+1
+
+100
+00:27:15,988 --> 00:27:17,587
+Please look at these figures.
+
+101
+00:27:23,731 --> 00:27:41,652
+n goes to infinity, an approach to zero. Can you see? n goes to infinity, 1 over n.
+
+102
+00:27:46,036 --> 00:27:48,716
+Approach, to zero.
+
+103
+00:28:02,675 --> 00:28:03,795
+Please write,
+
+104
+00:28:05,935 --> 00:28:07,056
+The terms of
+
+105
+00:28:09,995 --> 00:28:11,115
+Sequence
+
+106
+00:28:12,155 --> 00:28:12,655
+An
+
+107
+00:28:12,655 --> 00:28:14,655
+Are
+
+108
+00:28:18,615 --> 00:28:19,115
+Becoming
+
+109
+00:28:26,900 --> 00:28:39,900
+...
+
+110
+00:28:45,907 --> 00:29:03,667
+In fact, we can find terms as small as v-bombs by...
+
+111
+00:29:08,915 --> 00:29:10,995
+Making N Large
+
+112
+00:29:16,596 --> 00:29:28,355
+We say that the limit of the sequence is zero.
+
+113
+00:29:32,980 --> 00:29:46,279
+Ve bu yazı yaz
+
+114
+00:29:52,147 --> 00:29:53,028
+In general,
+
+115
+00:29:57,652 --> 00:30:05,652
+Notation, limit n goes to infinity a n equals l is used.
+
+116
+00:30:07,652 --> 00:30:19,412
+If the terms a n approach the number l as n becomes large.
+
+117
+00:30:28,756 --> 00:30:40,776
+This means that the numbers a, n can be made as close as we want to the number l by making n sufficiently large.
+
+118
+00:30:56,211 --> 00:31:04,211
+If no question, let's give more examples.
+
+119
+00:31:37,940 --> 00:31:40,380
+İçin bir terör, bu seksiyonlar.
+
+120
+00:31:56,788 --> 00:31:57,627
+Bu, ilk term.
+
+121
+00:31:59,367 --> 00:32:00,327
+1 over 2.
+
+122
+00:32:00,668 --> 00:32:02,307
+Bu, ilk term.
+
+123
+00:32:27,188 --> 00:32:39,188
+1 over 2
+
+124
+00:32:39,188 --> 00:32:47,188
+1 over 3
+
+125
+00:32:53,844 --> 00:32:57,683
+Please look at this sequence. This is special sequence.
+
+126
+00:32:59,724 --> 00:33:04,443
+Because its consecutive terms
+
+127
+00:33:04,443 --> 00:33:09,144
+have different sign.
+
+128
+00:33:11,264 --> 00:33:19,224
+So, a sequence whose consecutive terms with different sign is called alternating sequence.
+
+129
+00:33:33,715 --> 00:33:40,575
+an times an plus one is a negative number.
+
+130
+00:33:46,132 --> 00:33:54,211
+The consecutive terms of this sequence have different sign.
+
+131
+00:33:56,211 --> 00:33:59,251
+If no question, if it's clear.
+
+132
+00:34:12,340 --> 00:34:16,340
+Bu, eksempel, çok güzel.
+
+133
+00:34:22,195 --> 00:34:29,516
+For example, sqrt n, 1, sqrt 2, sqrt 3,
+
+134
+00:34:36,244 --> 00:34:39,244
+This is another alternating sequence.
+
+135
+00:35:20,755 --> 00:35:21,755
+What else?
+
+136
+00:35:24,755 --> 00:35:25,755
+Another alternative
+
+137
+00:35:28,755 --> 00:35:29,255
+sequence.
+
+138
+00:35:40,755 --> 00:35:43,076
+İlk ve ilk term ve ikinci term.
+
+139
+00:35:46,016 --> 00:35:49,576
+Bu sepki altyazı.
+
+140
+00:35:53,576 --> 00:35:57,016
+5 ve 5 ve 5.
+
+141
+00:35:58,995 --> 00:36:09,375
+Bu sepki altyazı.
+
+142
+00:36:10,755 --> 00:36:12,755
+5 ve 5.
+
+143
+00:36:12,755 --> 00:36:38,755
+Bu sepki altyazı.
+
+144
+00:36:31,347 --> 00:36:35,188
+Another example.
+
+145
+00:37:01,427 --> 00:37:18,307
+3 over 5, minus 4 over 25, 5 over 125, minus 6 over...
+
+146
+00:37:22,675 --> 00:37:23,835
+625.
+
+147
+00:37:25,395 --> 00:37:29,635
+Please say the end term.
+
+148
+00:37:30,056 --> 00:37:32,695
+Please say the general term of the sequence.
+
+149
+00:37:34,516 --> 00:37:37,335
+Please say the formula of the sequence.
+
+150
+00:38:07,092 --> 00:38:22,112
+Evet, let's look together. Minus 1 to the n, let me say, times n plus 2 over 5 to the n.
+
+151
+00:38:27,923 --> 00:38:28,923
+[öğrenci].
+
+152
+00:38:31,923 --> 00:38:34,083
+Let's check the first term.
+
+153
+00:38:34,643 --> 00:38:36,983
+Please write 1 instead of n.
+
+154
+00:38:42,835 --> 00:38:56,115
+If we write 1 instead of n, is it positive number or negative number? Please check, [öğrenci].
+
+155
+00:38:57,795 --> 00:38:58,395
+Yes.
+
+156
+00:39:00,475 --> 00:39:05,635
+It must be n plus 1 because the first term is positive number.
+
+157
+00:39:07,075 --> 00:39:07,635
+And
+
+158
+00:39:09,635 --> 00:39:12,596
+we have 3 over 5.
+
+159
+00:39:13,155 --> 00:39:13,955
+If we write
+
+160
+00:39:14,995 --> 00:39:19,555
+2 instead of n, we get negative number
+
+161
+00:39:21,555 --> 00:39:24,915
+minus 4 over 5 to the 2.
+
+162
+00:39:25,555 --> 00:39:26,515
+Yes, that's true.
+
+163
+00:39:30,260 --> 00:39:33,580
+İbriyatinos, can you see?
+
+164
+00:39:42,068 --> 00:39:43,608
+[öğrenci], any problem?
+
+165
+00:39:46,528 --> 00:39:47,208
+Okay.
+
+166
+00:39:53,108 --> 00:39:54,108
+Bir daha örneğin bir örneğin.
+
+167
+00:39:58,963 --> 00:40:04,963
+Some segments cannot be described by the formula of the general term directly.
+
+168
+00:40:08,724 --> 00:40:15,104
+They are defined recursively by given the values of initial terms.
+
+169
+00:40:17,704 --> 00:40:25,784
+The first or second values of terms.
+
+170
+00:40:31,123 --> 00:40:36,163
+ve bu bir rule called a recursion formula,
+
+171
+00:40:36,163 --> 00:40:42,563
+for calculating any later term from terms and preceded.
+
+172
+00:40:43,923 --> 00:41:14,683
+E.g.
+
+173
+00:41:00,148 --> 00:41:03,608
+second terms.
+
+174
+00:41:05,008 --> 00:41:10,508
+And then we give a recursion formula.
+
+175
+00:41:12,968 --> 00:41:20,448
+An equals an minus 1 plus an minus 2.
+
+176
+00:41:20,448 --> 00:41:22,448
+This is...
+
+177
+00:41:26,291 --> 00:41:27,291
+İlk uçan,
+
+178
+00:41:30,291 --> 00:41:31,291
+or calculating
+
+179
+00:41:32,491 --> 00:41:32,891
+and then
+
+180
+00:41:33,692 --> 00:41:34,052
+term
+
+181
+00:41:34,652 --> 00:41:35,592
+of the sequence.
+
+182
+00:41:39,764 --> 00:41:47,544
+Now, we can write the terms of this sequence.
+
+183
+00:41:48,284 --> 00:41:51,124
+First term is given.
+
+184
+00:41:51,923 --> 00:41:54,704
+Second term is given.
+
+185
+00:41:55,983 --> 00:42:00,204
+And what is third term?
+
+186
+00:42:02,923 --> 00:42:08,524
+We will find this term by using this formula.
+
+187
+00:42:09,764 --> 00:42:14,463
+The sum of a1 and a2.
+
+188
+00:42:15,244 --> 00:42:16,084
+Thank you, [öğrenci].
+
+189
+00:42:17,364 --> 00:42:23,124
+What is the recursive term?
+
+190
+00:42:25,884 --> 00:42:26,364
+Yes.
+
+191
+00:42:33,619 --> 00:42:37,920
+Do you know the name of this special sequence?
+
+192
+00:42:56,211 --> 00:43:05,592
+We cannot describe this sequence by a formula of the general term.
+
+193
+00:43:23,827 --> 00:43:35,907
+A1 equals 1, an equals n times an minus 1, for every n greater than 1.
+
+194
+00:43:38,327 --> 00:43:40,608
+Determine the first three terms.
+
+195
+00:43:42,067 --> 00:43:43,648
+First term is given.
+
+196
+00:43:44,088 --> 00:43:45,407
+What is the second term?
+
+197
+00:43:51,603 --> 00:43:53,323
+2nd, [öğrenci].
+
+198
+00:43:55,823 --> 00:43:57,123
+2nd, and then.
+
+199
+00:44:02,452 --> 00:44:04,452
+Bu da üçüncü.
+
+200
+00:44:11,188 --> 00:44:18,307
+We can say the general term, in terms of n, we can say the formula of n term.
+
+201
+00:44:24,115 --> 00:44:41,315
+Çünkü a1 x 1, a2 x 2, 1, a3 x 2, 3. Hossab, what is the formula of, yes, you are right, the fourth term is 24.
+
+202
+00:44:41,315 --> 00:44:47,155
+Now, what is the end term?
+
+203
+00:44:50,115 --> 00:44:59,235
+4, 3, 2, 1, a, n equals
+
+204
+00:45:10,003 --> 00:45:17,043
+I think you see, yes, n!
+
+205
+00:45:17,043 --> 00:45:30,324
+So, we can deneit this sequence by the formula n! n start from 1 to infinity.
+
+206
+00:45:30,324 --> 00:45:42,643
+And last, a1 equals 1, an plus 1 equals, or, every,
+
+207
+00:45:51,699 --> 00:45:53,699
+1.
+
+208
+00:45:53,699 --> 00:46:04,699
+2.
+
+209
+00:46:04,699 --> 00:46:05,699
+3.
+
+210
+00:46:05,699 --> 00:46:06,699
+2.
+
+211
+00:46:06,699 --> 00:46:08,699
+3.
+
+212
+00:46:08,699 --> 00:46:13,699
+4.
+
+213
+00:46:13,699 --> 00:46:21,699
+5.
+
+214
+00:46:23,923 --> 00:46:30,443
+Any questions about our examples? Not sequence.
+
+215
+00:46:34,867 --> 00:46:36,228
+Do you need copy break?
+
+216
+00:46:38,168 --> 00:46:40,987
+Before the start convergence and divergence.
+
+217
+00:46:57,619 --> 00:47:14,139
+Ok, later 5 minutes, 5 minutes enough I think, or 10? Ok, 10. After the 10 minutes, we will continue.
+
+218
+00:47:18,452 --> 00:47:19,032
+See you!
+
+219
+01:00:43,027 --> 01:00:43,847
+Hello again.
+
+220
+01:01:38,643 --> 01:01:46,643
+Please write, convergence and divergence.
+
+221
+01:02:03,155 --> 01:02:09,996
+Let's consider this example, this sequence, n plus 1.
+
+222
+01:02:12,815 --> 01:02:16,795
+1, 1 over 2, 2 over 3.
+
+223
+01:02:27,059 --> 01:02:36,820
+Birkaç bir tanrıda.
+
+224
+01:02:40,532 --> 01:02:46,652
+1 over 2, 2 over 3,
+
+225
+01:02:53,076 --> 01:02:57,115
+3 over 4, et cetera.
+
+226
+01:03:00,692 --> 01:03:10,291
+Numbers in a sequence approach a single value as index n increases.
+
+227
+01:03:17,492 --> 01:03:29,092
+The terms of the sequence approach to 1 as n increases.
+
+228
+01:03:38,195 --> 01:03:39,775
+Let's draw.
+
+229
+01:03:45,492 --> 01:03:46,492
+ve plana.
+
+230
+01:03:53,844 --> 01:03:55,224
+n'e 1,
+
+231
+01:03:56,784 --> 01:03:57,624
+the first term,
+
+232
+01:04:05,172 --> 01:04:05,572
+Tü.
+
+233
+01:04:09,331 --> 01:04:19,771
+n equals 2, 2nd term is 2 over 3, here, and then...
+
+234
+01:04:25,331 --> 01:04:32,331
+ve
+
+235
+01:04:39,572 --> 01:04:48,751
+As you see in these figures, the terms of the sequence a n are approaching 1 as n becomes large.
+
+236
+01:04:58,931 --> 01:04:59,531
+Teşekkürler.
+
+237
+01:05:05,652 --> 01:05:12,592
+We can write this a code.
+
+238
+01:05:23,572 --> 01:05:33,332
+Difference can be made as small as we like by taking an sufficiently large.
+
+239
+01:05:40,115 --> 01:05:40,675
+An
+
+240
+01:05:50,643 --> 01:05:56,923
+ve kanlı, bu
+
+241
+01:05:56,923 --> 01:05:58,563
+ve vat.
+
+242
+01:06:06,291 --> 01:06:16,552
+İndicate this, limit n goes to infinity n over n plus 1 equals 1.
+
+243
+01:06:25,940 --> 01:06:43,440
+Notice that, since a sequence is a special function, the definition of the limit of sequence is very similar to definition of a limit of a function, at infinity.
+
+244
+01:06:58,164 --> 01:07:10,464
+The only difference between the limit of a n and the limit of function.
+
+245
+01:07:15,443 --> 01:07:20,724
+Here, n is positive integer numbers.
+
+246
+01:07:21,724 --> 01:07:27,003
+Here, x is in real numbers.
+
+247
+01:07:30,516 --> 01:07:40,876
+The definition of limit of sequence is similar to the definition of limit of f of x.
+
+248
+01:07:42,016 --> 01:07:53,476
+Here x are any real numbers, here n are any positive integer numbers.
+
+249
+01:08:19,539 --> 01:08:20,380
+An
+
+250
+01:08:20,380 --> 01:08:22,619
+has
+
+251
+01:08:22,619 --> 01:08:25,060
+the limit
+
+252
+01:08:25,060 --> 01:08:27,079
+an
+
+253
+01:08:30,931 --> 01:08:33,931
+ve yazı
+
+254
+01:08:39,636 --> 01:08:50,676
+an equals l, or we write an equals lf, n equals n.
+
+255
+01:09:01,460 --> 01:09:06,220
+You can make the terms.
+
+256
+01:09:09,971 --> 01:09:12,171
+A-N is
+
+257
+01:10:03,188 --> 01:10:15,547
+If limit of an exists, we say that the sequence
+
+258
+01:10:20,979 --> 01:10:31,659
+Or, we say the sequence it is convergent.
+
+259
+01:10:38,515 --> 01:10:52,755
+Otherwise, if the limit of an doesn't exist, we say the sequence diverges or it is divergent.
+
+260
+01:10:52,755 --> 01:11:12,515
+Otherwise, we say the sequence diverges or it is divergent.
+
+261
+01:11:34,612 --> 01:12:02,612
+...
+
+262
+01:12:18,260 --> 01:12:47,260
+If limit of an doesn't exist, or limit of an equals positive infinity, or negative infinity, then an is divergent.
+
+263
+01:13:13,587 --> 01:13:17,887
+Format definition, delta-epsilon definition.
+
+264
+01:13:26,579 --> 01:13:41,800
+An, as limit L, and we write limit an equals L.
+
+265
+01:13:46,547 --> 01:13:46,947
+Evet.
+
+266
+01:13:52,307 --> 01:13:54,467
+Epsilon, positive number.
+
+267
+01:13:57,148 --> 01:13:59,547
+There is a corresponding
+
+268
+01:14:08,083 --> 01:14:13,083
+integer n,
+
+269
+01:14:15,483 --> 01:14:16,483
+such that
+
+270
+01:14:19,283 --> 01:14:20,083
+if n
+
+271
+01:14:21,884 --> 01:14:24,283
+greater than capital N,
+
+272
+01:14:30,644 --> 01:14:34,524
+This inequality is satisfied.
+
+273
+01:14:38,804 --> 01:15:00,264
+If for every positive number epsilon, there is a corresponding integer n, such that for every n greater than capital N, this inequality halts.
+
+274
+01:15:09,684 --> 01:15:15,804
+We can illustrate this formal definition on the real line.
+
+275
+01:15:15,804 --> 01:15:18,384
+For example,
+
+276
+01:15:21,384 --> 01:15:22,264
+Here,
+
+277
+01:15:23,043 --> 01:15:23,503
+A1
+
+278
+01:15:23,503 --> 01:15:26,644
+A2
+
+279
+01:15:26,644 --> 01:15:29,064
+A3
+
+280
+01:15:29,064 --> 01:15:31,583
+A4
+
+281
+01:15:31,583 --> 01:15:34,104
+A5
+
+282
+01:15:34,104 --> 01:15:38,384
+A6
+
+283
+01:15:38,384 --> 01:15:39,884
+A7
+
+284
+01:16:13,619 --> 01:16:43,599
+L'e yi'nin nesine
+
+285
+01:16:40,884 --> 01:16:51,274
+N'eşit N'e
+
+286
+01:16:55,412 --> 01:16:58,192
+must lie in this integral.
+
+287
+01:17:16,212 --> 01:17:25,332
+The sequence a n has the limit that exists and
+
+288
+01:17:32,659 --> 01:17:34,460
+Positive Integer Number
+
+289
+01:17:42,228 --> 01:17:53,667
+such that for every n plus n, an
+
+290
+01:17:59,731 --> 01:18:07,011
+The integral, L-A, L-A, L-A, L.
+
+291
+01:18:11,060 --> 01:18:15,060
+Al-Al
+
+292
+01:18:26,195 --> 01:18:35,555
+No matter how small this interval, we can take any number, any small number, epsilon.
+
+293
+01:18:37,956 --> 01:18:46,376
+This definition satisfy for all positive number L.
+
+294
+01:18:46,376 --> 01:18:52,496
+For every epsilon positive number.
+
+295
+01:18:52,496 --> 01:18:58,315
+We can take this interval.
+
+296
+01:19:02,068 --> 01:19:04,908
+As small as we like.
+
+297
+01:19:11,572 --> 01:19:14,471
+Consider the graph of this sequence.
+
+298
+01:19:19,636 --> 01:19:28,596
+ve plana, eğer a1, a2
+
+299
+01:19:44,595 --> 01:19:45,175
+türev.
+
+300
+01:20:03,636 --> 01:20:26,416
+Consider this graph of the sequence like that. A1, for example, here, an1. An1 plus 2.
+
+301
+01:20:33,203 --> 01:20:50,884
+If we take epsilon 1, any number, for epsilon 1, we can choose N1.
+
+302
+01:20:50,884 --> 01:20:55,203
+For example, here.
+
+303
+01:21:03,828 --> 01:21:14,508
+If we take epsilon 1, there exists a number an plus 1.
+
+304
+01:21:15,588 --> 01:21:30,468
+Because for every n n plus 1, an in terms of the sequence
+
+305
+01:21:30,468 --> 01:21:40,068
+and the interval l minus a1, l plus a1.
+
+306
+01:21:41,068 --> 01:21:47,488
+Let's change the number epsilon.
+
+307
+01:21:47,488 --> 01:21:54,728
+For any other epsilon, we can change
+
+308
+01:21:54,728 --> 01:22:04,728
+the number one.
+
+309
+01:22:04,728 --> 01:22:19,328
+We can change the number one.
+
+310
+01:21:59,444 --> 01:22:06,284
+İndex, we can choose any other number, n2.
+
+311
+01:22:06,284 --> 01:22:08,084
+For example,
+
+312
+01:22:18,355 --> 01:22:21,315
+If we choose a, epsilon 2,
+
+313
+01:22:23,515 --> 01:22:25,876
+smaller than epsilon 1,
+
+314
+01:22:27,195 --> 01:22:28,916
+for example, here,
+
+315
+01:22:31,715 --> 01:22:32,515
+epsilon 2.
+
+316
+01:22:40,724 --> 01:22:42,123
+We can choose
+
+317
+01:22:46,100 --> 01:22:48,180
+And the other number N2.
+
+318
+01:22:57,811 --> 01:23:08,992
+n2 here an2 plus 1 an2 plus 2
+
+319
+01:23:08,992 --> 01:23:34,891
+the all terms after the n2 turn in l minus a2 l plus a2 all terms here in this interval
+
+320
+01:23:34,891 --> 01:23:42,591
+so this sequence this graph satisfy the definition
+
+321
+01:23:46,515 --> 01:23:53,515
+ve
+
+322
+01:24:05,747 --> 01:24:06,807
+If no question,
+
+323
+01:24:22,868 --> 01:24:29,268
+1 over n equals 0 by using formal definition, delta epsilon.
+
+324
+01:24:44,404 --> 01:24:48,324
+positive number, epsilon, be given.
+
+325
+01:24:53,300 --> 01:25:05,239
+We must show that there exists an integer number n.
+
+326
+01:25:08,659 --> 01:25:16,099
+such that for all n bigger than this capital N
+
+327
+01:25:21,971 --> 01:25:32,411
+The formula of an is 1 over n minus the limit minus 0 less than epsilon.
+
+328
+01:25:34,492 --> 01:25:38,011
+This inequality must be satisfied.
+
+329
+01:25:45,939 --> 01:26:04,859
+We can rewrite this inequality, here n is positive number, and we can write this inequality, rewrite like that, they are same.
+
+330
+01:26:14,484 --> 01:26:19,044
+If this inequality satisfied,
+
+331
+01:26:25,108 --> 01:26:26,948
+İmplication will hold.
+
+332
+01:26:48,916 --> 01:26:52,916
+N N N N
+
+333
+01:26:52,916 --> 01:26:53,916
+We need
+
+334
+01:26:58,100 --> 01:27:10,840
+1 over epsilon. Here, epsilon is any constant number. We must choose N, capital N, in terms of epsilon.
+
+335
+01:27:14,963 --> 01:27:16,083
+İzleyiciniz!
+
+336
+01:27:20,787 --> 01:27:21,147
+Ben.
+
+337
+01:27:27,347 --> 01:27:29,268
+is any
+
+338
+01:27:29,268 --> 01:27:32,908
+integer
+
+339
+01:27:32,908 --> 01:27:36,068
+greater than
+
+340
+01:27:36,068 --> 01:27:38,587
+1 over epsilon
+
+341
+01:27:43,636 --> 01:27:52,316
+The definition will hold for all n n plus.
+
+342
+01:28:16,212 --> 01:28:19,572
+Definition, hakt.
+
+343
+01:28:23,123 --> 01:28:33,844
+Okay? This proves that limit of 1 over n equals 0.
+
+344
+01:28:37,395 --> 01:28:38,015
+For example,
+
+345
+01:28:42,931 --> 01:28:45,771
+Don't forget that, epsilon is any number.
+
+346
+01:29:07,956 --> 01:29:11,836
+We must choose capital M in terms of epsilon.
+
+347
+01:29:22,068 --> 01:29:24,908
+Ander condition, this inequality.
+
+348
+01:29:26,307 --> 01:29:36,847
+Let's write this inequality, 1 over m minus 0, less than epsilon.
+
+349
+01:29:40,307 --> 01:29:44,328
+We can rewrite this inequality like that.
+
+350
+01:29:52,851 --> 01:29:57,351
+O, N, bigger than capital N.
+
+351
+01:30:01,203 --> 01:30:02,963
+This inequality
+
+352
+01:30:02,963 --> 01:30:06,283
+Is satisfied
+
+353
+01:30:06,283 --> 01:30:09,844
+Please say
+
+354
+01:30:09,844 --> 01:30:15,483
+A number, positive number, integer number m
+
+355
+01:30:21,908 --> 01:30:24,208
+If we choose capital N
+
+356
+01:30:27,988 --> 01:30:37,568
+Bigger than 2, both inequality are satisfied.
+
+357
+01:30:41,460 --> 01:30:45,460
+İlk olarak 3 seçiyoruz.
+
+358
+01:30:47,460 --> 01:30:53,460
+3 ve 2.
+
+359
+01:31:00,756 --> 01:31:08,276
+Let's take any other number, epsilon. If we choose epsilon equals 1 over 3,
+
+360
+01:31:22,707 --> 01:31:26,728
+Does anyone want to say the number n to be choose?
+
+361
+01:31:37,076 --> 01:31:48,355
+Here, 1 over n minus 0 must be 1 over 3. So n must be bigger than 5.
+
+362
+01:31:51,155 --> 01:31:55,235
+We must choose n.
+
+363
+01:31:56,235 --> 01:32:00,435
+For every n bigger than n,
+
+364
+01:32:05,876 --> 01:32:09,476
+Evet [öğrenci], teşekkür ederim.
+
+365
+01:32:12,115 --> 01:32:20,436
+If we choose n, equals 6, n 5.
+
+366
+01:32:24,020 --> 01:32:30,560
+Bu, n'ın 6'ı, n'ın 5'ı, of course.
+
+367
+01:32:44,180 --> 01:33:14,159
+Bakın,
+
+368
+01:32:49,619 --> 01:32:55,399
+We solve this constant sequence.
+
+369
+01:32:57,920 --> 01:33:01,899
+All terms of this sequence is.
+
+370
+01:33:06,131 --> 01:33:07,971
+Okay, any constant.
+
+371
+01:33:09,331 --> 01:33:10,291
+This is another.
+
+372
+01:33:14,163 --> 01:33:15,264
+Aslında Sequens
+
+373
+01:33:19,572 --> 01:33:25,092
+So, limits of constant sequence equals this constant.
+
+374
+01:33:36,148 --> 01:33:41,387
+Here, k is any, kans,
+
+375
+01:33:55,796 --> 01:33:58,536
+epsilon positive number be given,
+
+376
+01:34:01,536 --> 01:34:02,695
+we must
+
+377
+01:34:02,695 --> 01:34:05,195
+show that
+
+378
+01:34:05,195 --> 01:34:09,536
+there exists
+
+379
+01:34:09,536 --> 01:34:11,756
+n
+
+380
+01:34:15,091 --> 01:34:17,891
+İnteger n such that
+
+381
+01:34:17,891 --> 01:34:23,131
+For all n bigger than n
+
+382
+01:34:26,931 --> 01:34:40,032
+An, here, the formula of An, k, minus limit, less than, epsilon.
+
+383
+01:34:42,532 --> 01:34:54,032
+Since k minus k equals zero, and since epsilon is any positive number,
+
+384
+01:34:54,032 --> 01:34:59,112
+The definition holds.
+
+385
+01:35:01,211 --> 01:35:04,631
+For any chosen positive integer n,
+
+386
+01:35:05,072 --> 01:35:06,271
+for
+
+387
+01:35:06,271 --> 01:35:10,011
+every n
+
+388
+01:35:10,011 --> 01:35:14,291
+positive integer numbers,
+
+389
+01:35:15,171 --> 01:35:17,371
+this
+
+390
+01:35:17,371 --> 01:35:19,931
+implication
+
+391
+01:35:19,931 --> 01:35:22,371
+will
+
+392
+01:35:22,371 --> 01:35:23,971
+out.
+
+393
+01:35:23,971 --> 01:35:28,471
+That is, the definition is satisfied.
+
+394
+01:35:28,471 --> 01:35:30,671
+Limit
+
+395
+01:35:30,671 --> 01:35:32,971
+of
+
+396
+01:35:32,971 --> 01:35:35,671
+constant
+
+397
+01:35:35,671 --> 01:35:37,971
+sequence equals
+
+398
+01:35:37,971 --> 01:35:39,671
+this constant.
+
+399
+01:35:39,671 --> 01:35:47,371
+We can choose any positive integer for capital M.
+
+400
+01:35:47,371 --> 01:36:13,971
+to
+
+401
+01:35:55,155 --> 01:35:55,515
+Hammer.
+
+402
+01:36:00,148 --> 01:36:07,168
+Show that limit of 2 over n cubed equals 0.
+
+403
+01:36:12,884 --> 01:36:21,623
+You must choose N, capital N, in terms of epsilon.
+
+404
+01:36:25,268 --> 01:36:27,868
+Satisfying the inequalities,
+
+405
+01:36:30,868 --> 01:36:36,148
+Satisfying the condition of the definition of limit.
+
+406
+01:37:03,699 --> 01:37:10,340
+If you cannot find this capital N, please ask later.
+
+407
+01:37:52,787 --> 01:38:01,587
+Limit as angles to infinity, a, a, equals infinity, means that
+
+408
+01:38:17,524 --> 01:38:39,364
+First of all, you must say n in terms of epsilon, because epsilon is any positive number, for every chosen epsilon, we must choose the capital N.
+
+409
+01:38:39,364 --> 01:38:46,184
+If epsilon changes, the capital N changes.
+
+410
+01:38:47,864 --> 01:38:52,544
+So, you must say n in terms of epsilon.
+
+411
+01:38:54,164 --> 01:39:05,423
+First write our condition, and then solve, and then determine n.
+
+412
+01:39:08,851 --> 01:39:12,912
+Okay, continue our definition, main state.
+
+413
+01:39:18,003 --> 01:39:18,463
+For?
+
+414
+01:39:35,636 --> 01:39:41,636
+M,
+
+415
+01:39:41,636 --> 01:39:45,636
+every M
+
+416
+01:39:45,636 --> 01:39:49,636
+there is an
+
+417
+01:39:49,636 --> 01:39:51,636
+integer M
+
+418
+01:39:51,636 --> 01:39:55,636
+such that
+
+419
+01:39:55,636 --> 01:39:59,636
+for all n n
+
+420
+01:39:59,636 --> 01:40:01,636
+we have
+
+421
+01:40:05,779 --> 01:40:09,179
+A and bigger than that.
+
+422
+01:40:12,500 --> 01:40:15,979
+Bu eksempel, bu seksiyon.
+
+423
+01:40:18,619 --> 01:40:20,579
+1, 2, 3.
+
+424
+01:40:25,971 --> 01:40:29,391
+For example, MAQs 500.
+
+425
+01:40:38,707 --> 01:40:45,747
+n equals 501.
+
+426
+01:40:47,268 --> 01:40:59,747
+Because for all n bigger than 501, a n bigger than n equals 500.
+
+427
+01:41:06,836 --> 01:41:09,756
+Another example, for example, 2M.
+
+428
+01:41:11,216 --> 01:41:15,096
+2, 4, 6.
+
+429
+01:41:17,096 --> 01:41:21,096
+If we choose M, 500.
+
+430
+01:41:21,756 --> 01:41:24,576
+Please say our capital M.
+
+431
+01:41:30,068 --> 01:41:32,068
+What can we say about Anne?
+
+432
+01:41:47,923 --> 01:41:52,043
+Be careful, our numbers 2n.
+
+433
+01:41:59,188 --> 01:42:00,188
+Evet, [öğrenci].
+
+434
+01:42:00,188 --> 01:42:24,188
+If we choose 250, yes, for all n bigger than 250, am equals 2 n bigger than 5.
+
+435
+01:42:24,188 --> 01:42:25,927
+Let's choose.
+
+436
+01:42:38,260 --> 01:42:42,199
+[öğrenci] [öğrenci], you are right.
+
+437
+01:42:42,199 --> 01:42:55,340
+Because if you choose 502 for all n bigger than 502,
+
+438
+01:42:55,340 --> 01:43:01,640
+an to n bigger than 5.
+
+439
+01:43:01,640 --> 01:43:11,039
+Because your first term equals for 1004.
+
+440
+01:43:16,083 --> 01:43:18,083
+Our number is...
+
+441
+01:43:26,260 --> 01:43:32,159
+502, yorn numbers 1004.
+
+442
+01:43:33,420 --> 01:43:34,220
+Is it clear?
+
+443
+01:43:34,560 --> 01:43:48,360
+We can choose at least 251, but you can choose any other bigger than this capital M.
+
+444
+01:43:50,260 --> 01:43:51,060
+Any question?
+
+445
+01:43:51,400 --> 01:43:52,920
+[öğrenci] [öğrenci].
+
+446
+01:44:11,091 --> 01:44:12,291
+Another definition.
+
+447
+01:44:22,547 --> 01:44:28,148
+An x minus infinity
+
+448
+01:44:28,148 --> 01:44:30,967
+means that
+
+449
+01:44:44,692 --> 01:44:45,051
+Number
+
+450
+01:44:49,363 --> 01:44:52,223
+I don't know, number M.
+
+451
+01:44:56,884 --> 01:44:57,524
+integer
+
+452
+01:45:01,332 --> 01:45:15,332
+such that for all n n n, capital N, we have an n n.
+
+453
+01:45:20,756 --> 01:45:30,655
+Bu, eğer, n-1, n-2, n-3, n-4.
+
+454
+01:45:32,756 --> 01:45:44,655
+The graph of this sequence is in the plane like that, n-1, n-2, n-3, n-4.
+
+455
+01:45:50,260 --> 01:45:59,380
+If we choose, m equals, for example, minus 5.
+
+456
+01:46:13,908 --> 01:46:15,768
+n equals minus 5.
+
+457
+01:46:17,548 --> 01:46:19,347
+We must choose
+
+458
+01:46:23,444 --> 01:46:50,864
+N, be careful [öğrenci], N is index of sequence, N must be positive integer, be careful, A1, A2, A3, what is the index of this term?
+
+459
+01:47:02,771 --> 01:47:21,072
+If we choose, yes, [öğrenci], and equals 6, a6 equals minus 6, less than m, that is minus 5. [öğrenci], is it okay?
+
+460
+01:47:29,811 --> 01:47:32,811
+Okay, is it for you? I think...
+
+461
+01:47:55,988 --> 01:48:14,988
+The limit of a n, positive infinity, or negative infinity, or the limit of n doesn't exist, we say that this sequence diverges.
+
+462
+01:48:20,756 --> 01:48:25,416
+If no limit l, the sequence diverges.
+
+463
+01:48:25,416 --> 01:48:26,576
+For example,
+
+464
+01:48:30,228 --> 01:48:32,608
+Minus 1 to the n.
+
+465
+01:48:40,851 --> 01:48:48,831
+... doesn't have any limit.
+
+466
+01:49:28,435 --> 01:49:43,036
+doesn't approach any fixed number as n increases.
+
+467
+01:49:53,043 --> 01:50:06,923
+A n'ı aşağıya
+
+468
+01:50:12,020 --> 01:50:18,800
+Ve say, just an is the origin sequence.
+
+469
+01:50:32,435 --> 01:50:33,015
+Any question?
+
+470
+01:50:41,043 --> 01:50:42,144
+If not, question.
+
+471
+01:50:47,188 --> 01:50:51,387
+Please, determine this sequence.
+
+472
+01:50:59,380 --> 01:51:03,159
+Is it divergent or convergent? What do you think?
+
+473
+01:51:08,724 --> 01:51:12,724
+Bu şekilde bu seksiyonu ve bu seksiyonu ve bu seksiyonu.
+
+474
+01:51:21,427 --> 01:51:29,427
+ve nefretler, çift katlı ve nefretler, çift katlı ve nefretler.
+
+475
+01:51:43,444 --> 01:51:45,904
+Divergent, yes, say it, that's true.
+
+476
+01:51:46,904 --> 01:51:48,624
+Yes, because
+
+477
+01:51:48,624 --> 01:51:52,764
+4
+
+478
+01:51:52,764 --> 01:51:55,423
+n
+
+479
+01:51:55,423 --> 01:52:01,384
+odd
+
+480
+01:52:01,384 --> 01:52:02,664
+number
+
+481
+01:52:02,664 --> 01:52:04,423
+1
+
+482
+01:52:04,423 --> 01:52:05,624
+3
+
+483
+01:52:05,624 --> 01:52:07,224
+5
+
+484
+01:52:07,224 --> 01:52:11,884
+4 n odd number
+
+485
+01:52:11,884 --> 01:52:13,344
+a n
+
+486
+01:52:13,344 --> 01:52:15,084
+goes
+
+487
+01:52:15,084 --> 01:52:16,204
+to infinity
+
+488
+01:52:16,204 --> 01:52:16,984
+but
+
+489
+01:52:16,984 --> 01:52:18,324
+4
+
+490
+01:52:18,324 --> 01:52:19,204
+n
+
+491
+01:52:19,204 --> 01:52:22,864
+even number
+
+492
+01:52:22,864 --> 01:52:24,384
+a n
+
+493
+01:52:24,384 --> 01:52:25,984
+minus 2
+
+494
+01:52:25,984 --> 01:52:27,264
+minus 4
+
+495
+01:52:27,264 --> 01:52:28,824
+minus 6
+
+496
+01:52:28,824 --> 01:52:29,944
+a n
+
+497
+01:52:29,944 --> 01:52:30,384
+goes
+
+498
+01:52:30,384 --> 01:52:30,764
+to
+
+499
+01:52:30,764 --> 01:52:31,524
+minus
+
+500
+01:52:31,524 --> 01:52:32,164
+infinity
+
+501
+01:52:40,307 --> 01:52:42,188
+So,
+
+502
+01:52:42,188 --> 01:52:47,927
+We cannot say for
+
+503
+01:52:52,372 --> 01:52:59,692
+n, büyük bir tanı, kapital, fiksiyonlar, n, a n,
+
+504
+01:53:06,131 --> 01:53:20,692
+doesn't approach infinity or minus infinity or any fixed number.
+
+505
+01:53:26,292 --> 01:53:35,172
+So, we can say that this sequence is divergent.
+
+506
+01:53:42,547 --> 01:53:43,228
+And one more.
+
+507
+01:53:44,127 --> 01:53:49,127
+One, zero, two, zero, three, zero, four.
+
+508
+01:54:06,836 --> 01:54:10,516
+Determine whether it is divergent or convergent.
+
+509
+01:54:17,747 --> 01:54:44,967
+Divergent, as well, yes, because let's draw for, first of all, this is not necessary here, on the line, real line, zero, zero, zero, infinite times we have zero, and then one, two, three, four.
+
+510
+01:54:54,163 --> 01:55:24,163
+A2'a
+
+511
+01:55:24,163 --> 01:55:25,363
+Ben, zero.
+
+512
+01:55:28,916 --> 01:55:30,195
+Oran equals 5.
+
+513
+01:55:32,056 --> 01:55:35,036
+1, 2, 3, 4, 5, 3.
+
+514
+01:55:42,804 --> 01:56:05,524
+An, An, An, approach 0, or An, alt number, An, please say An approach,
+
+515
+01:56:15,380 --> 01:56:16,380
+Evet.
+
+516
+01:56:17,380 --> 01:56:30,380
+Bu, bu seksiyonu konvergantı, bu seksiyonu konvergantı, bu seksiyonu konvergantı, bu seksiyonu konvergantı.
+
+517
+01:56:31,380 --> 01:56:36,380
+Bu seksiyonu konvergantı, bu seksiyonu konvergantı.
+
+518
+01:56:40,532 --> 01:56:55,092
+Because there doesn't exist n. For all n bigger than n.
+
+519
+01:57:04,916 --> 01:57:08,655
+Approach 0
+
+520
+01:57:21,876 --> 01:57:23,876
+If no question...
+
+521
+01:57:30,195 --> 01:57:30,615
+[öğrenci].
+
+522
+01:57:34,420 --> 01:57:36,159
+Your sequence is
+
+523
+01:57:36,159 --> 01:57:40,960
+Minus 1 to the 2n.
+
+524
+01:57:41,180 --> 01:57:43,359
+Is it true [öğrenci]?
+
+525
+01:57:47,539 --> 01:57:48,539
+Evet.
+
+526
+01:57:48,539 --> 01:57:49,539
+So,
+
+527
+01:57:52,039 --> 01:57:53,539
+this term is
+
+528
+01:57:54,039 --> 01:57:55,539
+1 over
+
+529
+01:57:56,039 --> 01:57:57,539
+1 to the n
+
+530
+01:57:59,039 --> 01:58:00,039
+So,
+
+531
+01:58:00,039 --> 01:58:01,539
+this is
+
+532
+01:58:02,039 --> 01:58:04,039
+a constant sequence.
+
+533
+01:58:06,239 --> 01:58:09,539
+The old terms of this sequence
+
+534
+01:58:09,539 --> 01:58:12,039
+1, 1, 1
+
+535
+01:58:29,171 --> 01:58:45,051
+We show that any constant sequence is convergent and converges to this constant.
+
+536
+01:58:48,307 --> 01:58:50,688
+[öğrenci], question?
+
+537
+01:58:54,963 --> 01:58:55,423
+Ok.
+
+538
+01:59:08,307 --> 01:59:09,587
+Please write.
+
+539
+01:59:15,956 --> 01:59:16,996
+Calculating.
+
+540
+01:59:22,323 --> 01:59:23,203
+Limit.
+
+541
+01:59:40,851 --> 01:59:43,051
+Sequence are
+
+542
+01:59:43,051 --> 01:59:47,231
+functions, special functions.
+
+543
+01:59:51,444 --> 01:59:58,644
+BitDomain is attracted to the positive integers.
+
+544
+02:00:07,667 --> 02:00:08,507
+Limit
+
+545
+02:00:08,507 --> 02:00:12,167
+of functions
+
+546
+02:00:16,851 --> 02:00:24,051
+So hold for the limits of segments.
+
+547
+02:00:44,851 --> 02:00:55,072
+[öğrenci], I will finish my lecture 10 minutes later.
+
+548
+02:01:02,612 --> 02:01:08,412
+Bu ilk lakadır, bu ilk lakadır.
+
+549
+02:01:14,676 --> 02:01:37,836
+A, N, and B, N, B, sequences of real numbers, and A and B are real numbers.
+
+550
+02:02:04,627 --> 02:02:14,987
+n'a geçiyor, n'a geçiyor, n'a geçiyor, n'a geçiyor, n'a geçiyor, n'a geçiyor, n'a geçiyor, n'a geçiyor, n'a geçiyor, n'a geçiyor, n'a geçiyor, n'a geçiyor, n'a geçiyor, n'a geçiyor, n'a geçiyor, n'a geçiyor, n'a geçiyor, n'a geçiyor, n'a geçiyor, n'a geçiyor, n'a geçiyor, n'a geçiyor, n'a geçiyor, n'a geçiyor, n'a geçiyor, n'a geçiyor, n'a geçiyor, n'a geçiyor, n'a geçiyor, n'a geçiyor, n'a geçiyor, n'a geçiyor, n'a geçiyor, n'a geçiyor, n'a geçiyor, n'a geçiyor, n'a geçiyor, n
+
+551
+02:02:19,475 --> 02:02:25,475
+Sum rule.
+
+552
+02:02:25,475 --> 02:02:31,475
+Sum of a n and b n
+
+553
+02:02:31,475 --> 02:02:41,475
+equals the limit of a n plus the limit of b n.
+
+554
+02:02:48,212 --> 02:02:55,232
+Difference rule. Limit of difference of a n and b n.
+
+555
+02:02:59,028 --> 02:03:05,688
+Aqs, difference of A and B.
+
+556
+02:03:17,300 --> 02:03:19,140
+Constant Multiple Rule
+
+557
+02:03:22,739 --> 02:03:44,019
+If we multiply a n by any constant k, limit of this product, aqs k times capital A. Here k is any number.
+
+558
+02:03:50,547 --> 02:03:51,387
+Kutu'nun türev.
+
+559
+02:03:55,123 --> 02:03:58,163
+Limit of a n over b n,
+
+560
+02:04:00,963 --> 02:04:04,844
+I'll use capital A over b,
+
+561
+02:04:05,384 --> 02:04:07,184
+here, of course,
+
+562
+02:04:07,644 --> 02:04:10,224
+b is different from 0.
+
+563
+02:04:15,475 --> 02:04:24,475
+Eğer P'ye bir kısım,
+
+564
+02:04:24,475 --> 02:04:29,475
+ve An'ı bir kısım.
+
+565
+02:04:29,475 --> 02:04:36,475
+An'ı P'ye bir kısım.
+
+566
+02:04:42,068 --> 02:04:50,068
+vek is in constant.
+
+567
+02:04:58,996 --> 02:05:04,115
+Limit of constant sequence equals this constant.
+
+568
+02:05:10,963 --> 02:05:16,963
+Bu şekilde bu konvergantı konvergesine bu konvergantı.
+
+569
+02:05:27,956 --> 02:05:55,636
+New theorem, this is sandwich theorem, if an less than bn less than cn, for n bigger than n0, here n0 is any positive integer.
+
+570
+02:06:00,180 --> 02:06:10,500
+And if limit of an equals limit of cn.
+
+571
+02:06:16,564 --> 02:06:23,463
+Ben, limit of bn, equals.
+
+572
+02:07:05,876 --> 02:07:07,855
+Samples about this rule.
+
+573
+02:07:11,956 --> 02:07:14,395
+We know that, we prove
+
+574
+02:07:19,828 --> 02:07:22,968
+Limit of 1 over n equals 0.
+
+575
+02:07:23,248 --> 02:07:24,288
+We know that.
+
+576
+02:07:29,300 --> 02:07:29,840
+Sok.
+
+577
+02:07:33,460 --> 02:07:39,980
+Limit of minus 1 over n equals 0.
+
+578
+02:08:05,076 --> 02:08:06,076
+Can you say this limit?
+
+579
+02:08:09,355 --> 02:08:10,355
+What is this limit?
+
+580
+02:08:11,555 --> 02:08:15,636
+You can use the rule of the limit of functions.
+
+581
+02:08:24,692 --> 02:08:29,692
+[öğrenci], [öğrenci], [öğrenci].
+
+582
+02:08:29,692 --> 02:08:39,692
+You can write this formula of sequence separately.
+
+583
+02:08:46,292 --> 02:09:16,262
+Bu konferentiyelde, bu konferentiyelde, bu konferentiyelde, bu konferentiyelde, bu konferentiyelde, bu konferentiyelde, bu konferentiyelde, bu konferentiyelde, bu konferentiyelde, bu konferentiyelde, bu konferentiyelde, bu konferentiyelde, bu konferentiyelde, bu konferentiyelde, bu konferentiyelde, bu konferentiyelde, bu konferentiyelde, bu konferentiyelde, bu konferentiyelde, bu konferentiyelde, bu konferentiyelde, bu konferentiyelde, bu konferentiyelde, bu konferentiyelde, bu konferentiyelde, bu konferentiyelde, bu konferentiyelde, bu konferentiyelde
+
+584
+02:09:24,787 --> 02:09:25,687
+What is this limit?
+
+585
+02:09:36,916 --> 02:09:42,815
+0, yes, now we can use
+
+586
+02:09:46,355 --> 02:09:47,355
+2nd rule
+
+587
+02:09:56,404 --> 02:09:57,224
+Kift rule.
+
+588
+02:10:00,724 --> 02:10:05,244
+Sorry, I forgot product rule. Where is product rule?
+
+589
+02:10:07,923 --> 02:10:12,663
+Sorry, please write here.
+
+590
+02:10:14,703 --> 02:10:17,423
+Sixth rule, product rule.
+
+591
+02:10:17,423 --> 02:10:18,463
+Where is it?
+
+592
+02:10:23,636 --> 02:10:43,436
+If we want to know limit of the product of a and b and, so this limit equals the product of a and b. Yes.
+
+593
+02:10:43,436 --> 02:10:49,436
+Here we use second and sixth rule.
+
+594
+02:11:06,452 --> 02:11:17,452
+5 n2
+
+595
+02:11:21,971 --> 02:11:22,451
+So,
+
+596
+02:11:26,804 --> 02:11:30,203
+1 over n is convergent sequence.
+
+597
+02:11:31,703 --> 02:11:34,623
+We can write separately.
+
+598
+02:11:38,996 --> 02:11:42,935
+ve sınır, 0, 0, 0.
+
+599
+02:11:50,387 --> 02:11:50,827
+Maman?
+
+600
+02:12:06,644 --> 02:12:07,083
+Say.
+
+601
+02:12:15,475 --> 02:12:18,375
+[öğrenci], can you say this limit?
+
+602
+02:12:21,115 --> 02:12:21,595
+Yes.
+
+603
+02:12:23,755 --> 02:12:26,435
+Minus 7, that's true.
+
+604
+02:12:27,695 --> 02:12:31,115
+[öğrenci], you can use Lepital rule.
+
+605
+02:12:31,395 --> 02:12:33,635
+I will say later, okay?
+
+606
+02:12:38,068 --> 02:12:45,068
+ve
+
+607
+02:12:59,572 --> 02:13:00,292
+Be careful.
+
+608
+02:13:15,539 --> 02:13:19,380
+Sum of an plus bn.
+
+609
+02:13:20,140 --> 02:13:20,420
+This
+
+610
+02:13:20,420 --> 02:13:24,420
+sequence
+
+611
+02:13:24,420 --> 02:13:27,220
+has a limit
+
+612
+02:13:34,292 --> 02:13:35,472
+I cannot say.
+
+613
+02:13:39,667 --> 02:13:40,487
+Each of them
+
+614
+02:13:44,851 --> 02:13:45,532
+Havuzun.
+
+615
+02:14:06,036 --> 02:14:32,615
+1, 2, 3, and bn, minus 1, minus 2, minus 3. They are both emergent sequence. But the sum of an and bn equals constant sequence.
+
+616
+02:14:32,615 --> 02:14:39,576
+So, this is convergent.
+
+617
+02:14:47,988 --> 02:14:49,628
+Be careful, here.
+
+618
+02:15:14,739 --> 02:15:27,119
+Ne?
+
+619
+02:15:23,283 --> 02:15:24,384
+Can you say this limit?
+
+620
+02:15:30,836 --> 02:15:31,896
+Calculus 1
+
+621
+02:15:37,460 --> 02:15:41,420
+0, yes, that's true, yes.
+
+622
+02:15:43,020 --> 02:15:47,539
+We can prove this limit by using sandwich theorem.
+
+623
+02:15:48,680 --> 02:15:50,800
+Because we know that
+
+624
+02:15:50,800 --> 02:15:54,600
+about
+
+625
+02:15:54,600 --> 02:15:56,659
+cosine function,
+
+626
+02:15:57,220 --> 02:15:59,239
+range of cosine function is
+
+627
+02:15:59,239 --> 02:16:01,279
+the closed interval
+
+628
+02:16:01,279 --> 02:16:02,760
+minus 1, 1.
+
+629
+02:16:06,515 --> 02:16:08,576
+We can write this inequality.
+
+630
+02:16:09,895 --> 02:16:12,576
+We need this.
+
+631
+02:16:16,307 --> 02:16:28,287
+sequence. Here n is positive integer number, so we multiply by n for every term.
+
+632
+02:16:32,468 --> 02:16:36,568
+Bu bir inequality is satisfied as well.
+
+633
+02:16:40,819 --> 02:16:57,940
+According to the theorem, Sandvich theorem, here, we know this limit, and this limit, there equals both 0.
+
+634
+02:16:57,940 --> 02:17:00,020
+So,
+
+635
+02:17:05,172 --> 02:17:10,212
+cos n over n equals zero.
+
+636
+02:17:13,092 --> 02:17:20,131
+[öğrenci], please show that this limit
+
+637
+02:17:23,572 --> 02:17:31,572
+and this limit by using the theorem, Sandwich theorem, please write
+
+638
+02:17:31,572 --> 02:17:41,252
+find inequality about one over two n
+
+639
+02:17:43,731 --> 02:17:55,252
+and for this
+
+640
+02:17:54,067 --> 02:18:00,507
+Any question about this lecture?
+
+641
+02:18:01,747 --> 02:18:04,827
+About sequence, convergent, divergent sequence?
+
+642
+02:18:09,332 --> 02:18:10,672
+Are they clear?
+
+643
+02:18:14,227 --> 02:18:15,367
+Okay, you follow me.
+
+644
+02:18:31,827 --> 02:18:34,507
+[öğrenci], okay, let's look together.
+
+645
+02:18:38,515 --> 02:18:42,876
+We can rewrite this limits.
+
+646
+02:18:45,815 --> 02:18:57,716
+If we multiply by n to do 6, the numerator and denominator, we can rewrite first,
+
+647
+02:19:00,216 --> 02:19:03,815
+reorganize numerator and denominator like that.
+
+648
+02:19:13,683 --> 02:19:21,683
+Bu seksiyon, ilk, ilk, ilk ve ilk ve ilk.
+
+649
+02:19:21,683 --> 02:19:25,683
+Bu seksiyon, ilk ve ilk ve ilk seksiyon.
+
+650
+02:19:25,683 --> 02:19:32,683
+Bu seksiyon, ilk ve ilk seksiyon, ilk ve ilk seksiyon,
+
+651
+02:19:32,683 --> 02:19:50,153
+ve ilk seksiyon, ilk seksiyon, ilk seksiyon, ilk seksiyon, ilk seksiyon, ilk seksiyon, ilk seksiyon, ilk seksiyon, ilk seksiyon, ilk seksiyon, ilk seksiyon, ilk seksiyon, ilk seksiyon, ilk seksiyon, ilk seksiyon, ilk seksiyon, ilk seksiyon, ilk seksiyon, ilk seksiyon, ilk seksiyon, ilk seksiyon, ilk seksiyon, ilk seksiyon, ilk seksiyon, ilk seksiyon, ilk seksiyon, ilk seksiyon, ilk seksiyon, ilk seksiyon, ilk seksiyon, ilk seksiyon, ilk seksiyon, ilk seksiyon, ilk seksiyon, ilk seksiyon, ilk seksiyon, ilk seksiyon,
+
+652
+02:19:53,459 --> 02:19:55,899
+So, we write
+
+653
+02:19:55,899 --> 02:20:02,199
+1 over 0 minus 7.
+
+654
+02:20:02,199 --> 02:20:04,179
+We use here
+
+655
+02:20:23,283 --> 02:20:33,324
+But, your friends use the L'Hôpital rule, like calculus 1.
+
+656
+02:20:38,388 --> 02:20:39,588
+[öğrenci], is it okay?
+
+657
+02:20:47,603 --> 02:20:54,243
+[öğrenci], there is Turkish lecture notes in Abasis.
+
+658
+02:20:56,283 --> 02:21:04,023
+Now, I will upload the online list, these live lectures notes.
+
+659
+02:21:10,772 --> 02:21:12,652
+I upload this chat.
+
+660
+02:21:16,371 --> 02:21:17,331
+Please wait.
+
+661
+02:22:39,476 --> 02:22:40,236
+Biz veit.
+
+662
+02:23:29,139 --> 02:23:30,459
+Okay, that's it all.
+
+663
+02:23:32,619 --> 02:23:33,420
+See you tomorrow.
+
+664
+02:23:34,939 --> 02:23:35,979
+Take care of yourself.
+
+665
+02:23:45,268 --> 02:23:46,927
+Have a nice day, see you.
