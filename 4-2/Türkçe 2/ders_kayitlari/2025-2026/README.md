@@ -21,3 +21,4 @@
 | 27 | Bahar | Sema Noyan | [sube_27/](sube_27/) |
 | 29 | Bahar | Metin Işıkoğlu | [sube_29/](sube_29/) |
 | 33 | Bahar | Metin Işıkoğlu | [sube_33/](sube_33/) |
+| 34 | Bahar | Sema Noyan | [sube_34/](sube_34/) |
