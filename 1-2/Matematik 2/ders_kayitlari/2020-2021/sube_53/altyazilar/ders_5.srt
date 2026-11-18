@@ -1,0 +1,5799 @@
+1
+00:01:51,156 --> 00:01:52,776
+Merhaba arkadaşlar, sesim geliyor mu?
+
+2
+00:02:09,235 --> 00:02:10,515
+Nasılsınız görüşmeyle?
+
+3
+00:02:20,403 --> 00:02:21,924
+Teşekkürler, ben de iyiyim.
+
+4
+00:02:29,972 --> 00:02:40,792
+Evet, bu hafta. Merhabalar. Testleri bitirmiştik geçen hafta. Bu hafta alternatif serilerle devam edip, konuyu tamamlayıp yeni konuyla devam edeceğiz.
+
+5
+00:02:42,752 --> 00:02:46,891
+Kısa bir tekrar yapmak istiyorum. Eğer sizin sorunuz yoksa.
+
+6
+00:02:57,235 --> 00:03:06,155
+Previously, we were at the convergence test, divergence or convergence, about positive series.
+
+7
+00:03:07,295 --> 00:03:14,995
+Integral tests are used when we have a function, that means the general term of the series, is an easy integral.
+
+8
+00:03:15,995 --> 00:03:18,656
+And also it must be a continuous, positive and decreasing function.
+
+9
+00:03:19,075 --> 00:03:21,415
+In that case, we can use the integral test.
+
+10
+00:03:21,415 --> 00:03:27,156
+We have the comparison test and two parts of comparison test.
+
+11
+00:03:27,335 --> 00:03:30,115
+We have limit comparison and this comparison test.
+
+12
+00:03:30,315 --> 00:03:36,875
+And if you remember, I advise you to use limit comparison test more efficiently for you.
+
+13
+00:03:40,563 --> 00:03:49,204
+ve limit comparison test, an is our series that we are testing, bn is the series that we choose to compare
+
+14
+00:03:49,204 --> 00:03:55,603
+and we need to just look up for the limit of the general terms, coefficients of the general terms
+
+15
+00:03:55,603 --> 00:04:02,804
+and according to the value of the limit when n is going to infinity, if it is different from 0 and infinity, they both converge or diverge.
+
+16
+00:04:02,804 --> 00:04:11,283
+If it is 0 and bn diverges, our series converges. If we have limit is infinity and bn diverges, so does our series.
+
+17
+00:04:14,644 --> 00:04:24,163
+In that case, if we are talking about or thinking about an easy limit, so you can just choose an appropriate function to have an over bn has an easy limit.
+
+18
+00:04:24,163 --> 00:04:38,163
+And next, the ratio test. For ratio test, you can understand from the series, if we have the division of an plus 1 over an has an easy limit,
+
+19
+00:04:38,723 --> 00:04:46,723
+you can just think that that means easily limit, I mean, an easy function as much as simple form of it, as much as possible.
+
+20
+00:04:46,723 --> 00:04:55,764
+am plus 1 over am, that's why we don't need any other second series to compare, that's why only our original series we are testing.
+
+21
+00:04:56,403 --> 00:05:01,683
+Of course, according to the value of the limits, we can use this test. If it is less than 1 converges,
+
+22
+00:05:01,683 --> 00:05:12,803
+greater than 1 is or infinite diverges. If we have 1, no result. So such series is very efficiently used.
+
+23
+00:05:12,803 --> 00:05:23,843
+For example, if possible, constellations of an plus 1 over an, for example, factorials, powers, so much useful in that case, the ratio test.
+
+24
+00:05:24,723 --> 00:05:32,243
+And also, next, the root test. The root test is generally used for the series that we have n power of the general term,
+
+25
+00:05:32,243 --> 00:05:39,524
+because in the root test, we have 1 over n power, or n root of the general term and the limit form of it, when it is going to infinity.
+
+26
+00:05:39,524 --> 00:05:45,843
+According to the limit, again, the same conditions with the ratio test we have.
+
+27
+00:05:46,803 --> 00:05:53,364
+Limit is less than 1, convergence 3, greater than 1, or infinite diverges. If we have 1, no result.
+
+28
+00:05:55,604 --> 00:05:58,324
+And I think we did lastly this question. Yes.
+
+29
+00:05:59,443 --> 00:06:06,884
+So, any problem up to now? I will continue with the alternating series and their convergence or divergence and different conditions.
+
+30
+00:06:06,884 --> 00:06:10,163
+Any question up to now?
+
+31
+00:06:10,163 --> 00:06:36,163
+So, any questions up to now?
+
+32
+00:06:17,651 --> 00:06:19,611
+Okay, so continue.
+
+33
+00:06:20,431 --> 00:06:22,572
+First tell me, what was the alternating series?
+
+34
+00:06:24,072 --> 00:06:24,611
+Do you remember?
+
+35
+00:06:34,548 --> 00:06:37,228
+Evet, güzel bir example.
+
+36
+00:06:37,228 --> 00:08:17,898
+Bu, bu
+
+37
+00:08:23,348 --> 00:08:30,348
+Bu, trigonometrik
+
+38
+00:08:30,348 --> 00:08:33,347
+ve negatifli bir şekilde.
+
+39
+00:08:33,347 --> 00:08:34,347
+Evet, ok.
+
+40
+00:08:34,347 --> 00:08:36,347
+Öncelikle bu örneğin,
+
+41
+00:08:36,347 --> 00:08:38,347
+örneğin,
+
+42
+00:08:38,347 --> 00:08:40,347
+bir teorim.
+
+43
+00:08:40,347 --> 00:08:42,347
+Leibniz'in
+
+44
+00:08:42,347 --> 00:08:44,347
+Bu teorimde
+
+45
+00:08:44,347 --> 00:08:45,347
+yaptığımız
+
+46
+00:08:45,347 --> 00:08:47,347
+yöntem
+
+47
+00:08:47,347 --> 00:08:48,347
+alternatif
+
+48
+00:08:48,347 --> 00:08:49,347
+Bu test
+
+49
+00:08:49,347 --> 00:08:50,347
+çok önemli
+
+50
+00:08:50,347 --> 00:08:53,347
+Bu test
+
+51
+00:08:53,347 --> 00:08:55,347
+bu konvergans
+
+52
+00:08:55,347 --> 00:11:21,327
+Bu konvergans
+
+53
+00:11:24,820 --> 00:11:33,740
+Up to now, I think there is no problem. We see the general structure and the Leibniz test to talk about the convergence of an alternating series.
+
+54
+00:11:34,620 --> 00:11:37,780
+The other example, any question?
+
+55
+00:11:40,100 --> 00:11:41,879
+Oh, okay, okay.
+
+56
+00:11:42,940 --> 00:11:49,900
+And then, the other example, minus 1 to n minus 1 over, that means times 1 over n squared plus 1.
+
+57
+00:11:49,900 --> 00:11:55,300
+Again, alternating series we can directly understand as the powers of minus 1.
+
+58
+00:11:55,860 --> 00:11:58,000
+Okay, the terms are separated.
+
+59
+00:11:58,160 --> 00:12:00,420
+1 over n squared plus 1 is the un here.
+
+60
+00:12:01,220 --> 00:12:02,780
+Let's test it for convergence.
+
+61
+00:12:04,040 --> 00:12:07,880
+Apply Leibniz test and say, first one.
+
+62
+00:12:08,820 --> 00:12:09,980
+Is the un positive?
+
+63
+00:12:11,200 --> 00:12:11,840
+Yes, of course.
+
+64
+00:12:11,940 --> 00:12:16,500
+1 over n squared plus 1 is always positive for positive integers starting from 1.
+
+65
+00:12:16,820 --> 00:12:17,060
+Yes.
+
+66
+00:12:18,120 --> 00:12:19,360
+The first condition is okay.
+
+67
+00:12:19,360 --> 00:12:20,740
+What about the second one?
+
+68
+00:12:20,740 --> 00:12:22,120
+Is it decreasing?
+
+69
+00:12:23,040 --> 00:12:23,460
+Yes.
+
+70
+00:12:23,580 --> 00:12:24,880
+When n is getting greater?
+
+71
+00:12:25,280 --> 00:12:26,200
+It's in the denominator.
+
+72
+00:12:26,400 --> 00:12:28,000
+That's why it's getting less and less.
+
+73
+00:12:28,000 --> 00:12:29,520
+So it means it's decreasing.
+
+74
+00:12:30,180 --> 00:12:30,520
+Clear.
+
+75
+00:12:31,520 --> 00:12:32,740
+Second condition holds.
+
+76
+00:12:32,800 --> 00:12:33,700
+What about the third one?
+
+77
+00:12:33,780 --> 00:12:34,680
+The limit of un.
+
+78
+00:12:36,259 --> 00:12:36,920
+Must be zero.
+
+79
+00:12:37,000 --> 00:12:37,259
+Yes.
+
+80
+00:12:37,380 --> 00:12:38,720
+Clearly, it is zero.
+
+81
+00:12:39,140 --> 00:12:40,480
+1 over n squared plus 1.
+
+82
+00:12:40,540 --> 00:12:42,420
+When n is going to infinity, going to zero.
+
+83
+00:12:42,520 --> 00:12:43,660
+So we can say that, okay,
+
+84
+00:12:51,796 --> 00:13:06,855
+But it is not so much easy to talk about the convergence of an alternating series because now you will see that the convergence of alternating series has two different forms, absolutely and conditional convergence.
+
+85
+00:13:07,436 --> 00:13:17,216
+And once you are talking about the convergence or divergence of an alternating series, it is not enough to say that, okay, it is convergent.
+
+86
+00:13:17,216 --> 00:13:22,296
+Now, you have to just classify it as a conditional or absolute convergence.
+
+87
+00:13:23,855 --> 00:13:29,516
+That's why, and also we have a few examples about the divergence of alternating series.
+
+88
+00:13:29,796 --> 00:13:40,576
+More generally, they are convergent, but sometimes absolutely, sometimes conditionally, because more generally, the likeness test holds for the alternating series.
+
+89
+00:13:40,576 --> 00:13:47,376
+More generally, I'm talking, of course, you will see examples which are divergent as alternating series.
+
+90
+00:13:47,716 --> 00:13:52,956
+But in the examples, exercises, you will see much of them absolute or conditionally convergent.
+
+91
+00:13:53,296 --> 00:13:56,276
+But again, I want to say it is important to differ them.
+
+92
+00:13:57,136 --> 00:14:00,996
+If we have a convergence of an alternating series, you have to just say that.
+
+93
+00:14:01,316 --> 00:14:04,076
+Which type of it? Absolutely or conditionally.
+
+94
+00:14:04,076 --> 00:14:08,836
+Let's first have the definitions and then let's learn the methods.
+
+95
+00:14:09,176 --> 00:14:10,855
+How can we differ these convergence?
+
+96
+00:14:11,716 --> 00:14:16,756
+That means the likeness test will not be enough to talk about the types of the convergence.
+
+97
+00:14:17,316 --> 00:14:19,916
+Because it says only, okay, it is convergent.
+
+98
+00:14:20,376 --> 00:14:22,516
+But one of them, which one?
+
+99
+00:14:23,276 --> 00:14:23,796
+Let's see.
+
+100
+00:14:25,216 --> 00:14:29,536
+This definition says that this series converges absolutely.
+
+101
+00:14:30,216 --> 00:14:33,576
+If the corresponding series of absolute values converges.
+
+102
+00:14:33,576 --> 00:14:36,355
+is you can understand from the name of it.
+
+103
+00:14:37,096 --> 00:14:42,696
+Convergence absolutely means this series, once we have the terms, all the terms in absolute value,
+
+104
+00:14:43,676 --> 00:14:48,576
+the series I'm talking, if we have the absolute values of this series, get this new series.
+
+105
+00:14:48,756 --> 00:14:53,516
+If it is convergent, that means our original series is absolutely convergent.
+
+106
+00:14:53,516 --> 00:14:57,136
+Because once we have the absolute values, it becomes the convergence.
+
+107
+00:14:57,136 --> 00:15:11,136
+That's why once we have the absolute values of the series in each term, and if it is convergent, so our original series, this one, converges absolutely.
+
+108
+00:15:11,136 --> 00:15:20,896
+And a series that converges, but does not converge absolutely, so it converges conditionally.
+
+109
+00:15:21,456 --> 00:15:30,476
+That means if we have a convergence of a series, and if you know that it is absolutely, okay, absolutely convergent.
+
+110
+00:15:30,476 --> 00:15:37,296
+But if you know that it is convergent, but not absolutely, so it must be conditionally.
+
+111
+00:15:37,296 --> 00:15:40,576
+Only two ways you have for convergence.
+
+112
+00:15:41,336 --> 00:15:42,636
+Absolute or conditional.
+
+113
+00:15:43,636 --> 00:16:06,896
+That means not both of them together.
+
+114
+00:15:51,860 --> 00:16:51,860
+Bu, bu
+
+115
+00:16:51,860 --> 00:16:52,100
+Okay
+
+116
+00:16:58,419 --> 00:19:28,420
+Bu soru?
+
+117
+00:19:41,460 --> 00:19:41,900
+Anyone?
+
+118
+00:19:52,500 --> 00:20:22,500
+Töneşte, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu
+
+119
+00:20:22,500 --> 00:20:27,400
+So, the first step must be to get the absolute values of this series, isn't it?
+
+120
+00:20:28,559 --> 00:20:46,039
+First, you get the absolute series, I'm sorry, absolute values of the series in each term, and then look, you will have a positive series, test it, and see if it is convergent or divergent, and according to your result, make the command on it.
+
+121
+00:20:46,039 --> 00:20:48,240
+If it is convergent, if it is convergent,
+
+122
+00:20:48,240 --> 00:20:51,619
+if it is convergent, absolute convergence, you will get, if it is divergent,
+
+123
+00:20:52,680 --> 00:20:53,700
+we cannot say anything.
+
+124
+00:20:55,000 --> 00:20:57,240
+It can be conditionally convergent or
+
+125
+00:20:57,240 --> 00:20:59,880
+divergent is possible.
+
+126
+00:21:02,160 --> 00:21:02,660
+Let's see.
+
+127
+00:21:06,324 --> 00:21:10,604
+Öncelikle, birkaçı olarak da birkaçı olarak da birkaçı olarak da birkaçı olarak da birkaçı olarak.
+
+128
+00:21:10,604 --> 00:21:40,604
+Şimdi, birkaçı olarak da birkaçı olarak da birkaçı olarak da birkaçı olarak da birkaçı olarak da birkaçı olarak da birkaçı olarak da birkaçı olarak da birkaçı olarak da birkaçı olarak da birkaçı olarak da birkaçı olarak da birkaçı olarak da birkaçı olarak da birkaçı olarak da birkaçı olarak da birkaçı olarak da birkaçı olarak da birkaçı olarak da birkaçı olarak da birkaçı olarak da birkaçı olarak da birkaçı olarak da birkaçı olarak da birkaçı olarak da birkaçı olarak da birkaçı olarak da birkaçı olarak da birkaçı olarak da birkaçı olarak da birkaçı olarak da birkaçı olarak da birkaçı olarak da birkaçı olarak da birkaçı olarak da birkaçı olarak da birkaçı olarak
+
+129
+00:21:40,604 --> 00:22:10,604
+buçukları olarak da birkaçı olarak da birkaçı olarak da birkaçı olarak da birkaçı olarak da birkaçı olarak da birkaçı olarak da birkaçı olarak da birkaçı olarak da birkaçı olarak da birkaçı olarak da birkaçı olarak da birkaçı olarak da birkaçı olarak da birkaçı olarak da birkaçı olarak da birkaçı olarak da birkaçı olarak da birkaçı olarak da birkaçı olarak da birkaçı olarak da birkaçı olarak da birkaçı olarak da birkaçı olarak da birkaçı olarak da birkaçı olarak da birkaçı olarak da birkaçı olarak da birkaçı olarak da birkaçı olarak da birkaçı olarak da birkaçı olarak da birkaçı olarak da birkaçı olarak da birkaçı olarak da birkaçı olarak da birkaçı olarak
+
+130
+00:22:10,604 --> 00:22:21,004
+So our original series does not converge absolutely because the absolute series divergent so does not converge absolutely.
+
+131
+00:22:22,403 --> 00:22:33,004
+So what was the result what do you think is it divergent or conditional convergent can you say anything about alternating series?
+
+132
+00:22:47,571 --> 00:22:53,291
+Can you say anything about the convergence of absolute will? I'm sorry, alternating series.
+
+133
+00:23:06,836 --> 00:23:08,836
+Don't you have an idea, please?
+
+134
+00:23:12,723 --> 00:23:19,144
+I said that, once we have the absolute value of the alternating series, we get the divergent series.
+
+135
+00:23:19,763 --> 00:23:23,624
+It means, it is not convergent absolutely.
+
+136
+00:23:24,723 --> 00:23:25,384
+So what?
+
+137
+00:23:26,384 --> 00:23:28,943
+Can you say anything about this alternating series?
+
+138
+00:23:29,063 --> 00:23:31,384
+Is it divergent or conditionally convergent?
+
+139
+00:23:32,223 --> 00:23:33,384
+What can you say?
+
+140
+00:23:37,652 --> 00:23:39,451
+Or really have a command on it.
+
+141
+00:24:05,044 --> 00:24:05,584
+Which limit?
+
+142
+00:24:13,683 --> 00:24:14,624
+We did it here.
+
+143
+00:24:25,875 --> 00:24:27,395
+What about the likeness test?
+
+144
+00:24:29,556 --> 00:24:32,096
+We did not apply the likeness test here.
+
+145
+00:24:35,635 --> 00:24:36,695
+Dövdü tükseğ
+
+146
+00:24:41,203 --> 00:24:51,943
+Bak, as you see in this alternating series, we just investigate for absolutel convergence.
+
+147
+00:24:52,463 --> 00:24:55,864
+And we get, it is not converged absolutely.
+
+148
+00:24:58,144 --> 00:25:04,763
+So what? Two other choices we have. It can be divergent or it can be conditionally convergent.
+
+149
+00:25:05,023 --> 00:25:08,884
+How can you understand it? Which one is it?
+
+150
+00:25:19,028 --> 00:25:21,408
+You can understand it from the likeness test.
+
+151
+00:25:21,928 --> 00:25:29,067
+If we apply the likeness test to this test, to this alternating series, if we have three conditions hold,
+
+152
+00:25:31,988 --> 00:25:37,008
+okay, isn't it all positive, [öğrenci]?
+
+153
+00:25:39,008 --> 00:25:47,248
+I think the first condition also holds, and 1 over 2 n minus 1, isn't it positive for n is greater than 1 n killed to 1?
+
+154
+00:25:49,028 --> 00:25:57,607
+And also, limit, 1 over 2 n minus 1, isn't it going to 0 when n is going to infinity?
+
+155
+00:26:04,307 --> 00:26:10,468
+I mean that, I can see here, when I look 1 over 2n minus 1, which is un, the Leibniz test holds.
+
+156
+00:26:12,708 --> 00:26:17,548
+Leibniz test says that, convergent, according to the conditions.
+
+157
+00:26:18,188 --> 00:26:21,508
+But this way says that it does not converge absolutely.
+
+158
+00:26:23,048 --> 00:26:24,367
+So what can it be?
+
+159
+00:26:35,395 --> 00:26:37,395
+Tamam, tamam.
+
+160
+00:26:37,395 --> 00:26:40,395
+Bu yüzden, normalde,
+
+161
+00:26:40,395 --> 00:29:09,395
+birkaç olarak,
+
+162
+00:28:53,875 --> 00:28:55,296
+Let me read it [öğrenci].
+
+163
+00:28:58,796 --> 00:29:01,816
+You said that conditionally convergent and you were right.
+
+164
+00:29:17,907 --> 00:29:21,427
+I'm sorry, but I couldn't understand your question, [öğrenci].
+
+165
+00:29:25,203 --> 00:29:41,644
+Mis, I was saying that once I said that it's conditionally convergent, then I took the question, I looked at the question and I saw the limit is 1 over 2.
+
+166
+00:29:42,384 --> 00:29:47,943
+And then I decided it's absolutely convergent, but I'm mistaken.
+
+167
+00:29:47,943 --> 00:29:55,604
+So the reason is that this is a harmonic series, which is 1 over n.
+
+168
+00:29:55,723 --> 00:29:57,923
+So I must take care of this. Am I right?
+
+169
+00:29:59,203 --> 00:30:04,003
+This is why it diverges to 1 over n, because it diverges.
+
+170
+00:30:06,023 --> 00:30:07,743
+Only this solution you are talking?
+
+171
+00:30:08,084 --> 00:30:09,463
+Yes, only that solution.
+
+172
+00:30:11,223 --> 00:30:14,884
+If you are talking about testing the positive series, yes, you're right.
+
+173
+00:30:15,884 --> 00:30:17,423
+Okay.
+
+174
+00:30:17,943 --> 00:30:24,163
+Yeah, that means once you have alternating one, first you get the absolute one and it is one that is a positive series, okay.
+
+175
+00:30:24,723 --> 00:30:30,604
+Choose the alternating series and appropriate one, because here the most suitable one is 1 over n.
+
+176
+00:30:31,043 --> 00:30:38,344
+And look up for the limit and if it is positive and divergent, it is divergent.
+
+177
+00:30:38,884 --> 00:30:39,203
+Okay.
+
+178
+00:30:39,203 --> 00:30:41,943
+And not converge, absolutely are alternating series.
+
+179
+00:30:42,563 --> 00:30:42,903
+Okay.
+
+180
+00:30:43,364 --> 00:30:45,283
+I hope I answered your question.
+
+181
+00:30:46,683 --> 00:30:47,183
+Excuse me?
+
+182
+00:30:47,183 --> 00:30:51,503
+Am I, have I answered your question?
+
+183
+00:30:51,703 --> 00:30:52,283
+Yes, yes, yes.
+
+184
+00:30:52,324 --> 00:30:53,144
+Exactly, exactly.
+
+185
+00:30:53,403 --> 00:30:56,604
+This is why the question diverges.
+
+186
+00:30:56,743 --> 00:30:59,124
+This is because of the 1 over n diverges.
+
+187
+00:30:59,324 --> 00:30:59,723
+Ah, yes.
+
+188
+00:30:59,983 --> 00:31:00,523
+Yes, yes.
+
+189
+00:31:00,604 --> 00:31:05,084
+Here, it's divergent and the first condition, so they both diverge.
+
+190
+00:31:05,443 --> 00:31:05,783
+Okay.
+
+191
+00:31:05,783 --> 00:31:06,723
+Thank you so much.
+
+192
+00:31:07,083 --> 00:31:07,523
+Not at all.
+
+193
+00:31:08,483 --> 00:31:09,543
+Any more questions?
+
+194
+00:31:12,003 --> 00:31:19,743
+Do you understand the steps about talking about the convergence or divergence and the types of the convergence of an alternating series?
+
+195
+00:31:19,743 --> 00:31:25,384
+Please.
+
+196
+00:31:27,700 --> 00:31:35,100
+Are you okay? Please ask me if you have any confusion about this topic right now.
+
+197
+00:31:44,211 --> 00:31:45,451
+Ok, so I will continue.
+
+198
+00:31:46,571 --> 00:31:49,152
+What about n cos np over 2 to n?
+
+199
+00:31:49,152 --> 00:31:55,092
+As you see, because of n cos np, it is the alternating series.
+
+200
+00:31:55,672 --> 00:31:58,892
+Once you see first of this one, it seems to be a positive series,
+
+201
+00:31:58,892 --> 00:32:02,511
+but if you have been careful about n times pi,
+
+202
+00:32:02,971 --> 00:32:07,211
+it makes it an alternating series, cos np.
+
+203
+00:32:08,951 --> 00:32:14,192
+So it is equal to, in fact, minus 1 to n, n over 2 to n.
+
+204
+00:32:14,211 --> 00:32:18,211
+Ok, and again we are testing for absolute convergence.
+
+205
+00:32:18,211 --> 00:32:24,211
+So get the absolute values of the alternating series and positive series will be n over 2 to n.
+
+206
+00:32:24,211 --> 00:32:27,211
+Let's test n over 2 to n.
+
+207
+00:32:27,211 --> 00:32:30,211
+We can apply the ratio test, for example, here.
+
+208
+00:32:30,211 --> 00:32:34,211
+Applied ratio test a n plus 1 over a n when n is going to infinity.
+
+209
+00:32:35,211 --> 00:32:41,211
+And we get n plus 1 over 2n, 1 over 2.
+
+210
+00:32:41,211 --> 00:32:44,211
+Remember the conditions of ratio test.
+
+211
+00:32:44,211 --> 00:32:46,211
+If it is less than 1, convergence.
+
+212
+00:32:46,211 --> 00:32:51,211
+So we get our positive series is convergent.
+
+213
+00:32:51,211 --> 00:32:57,211
+So our original series, that means the alternating series is convergent absolutely.
+
+214
+00:32:57,211 --> 00:32:58,211
+OK.
+
+215
+00:32:58,211 --> 00:33:06,211
+The absolute terms of the alternating series, which is the positive one n over 2 to n,
+
+216
+00:33:06,211 --> 00:33:10,211
+becomes the positive, sorry, convergence series.
+
+217
+00:33:10,211 --> 00:33:15,211
+So our alternating series convergent absolutely.
+
+218
+00:33:15,211 --> 00:33:22,211
+So it is finished because we have just specified the types of the convergence.
+
+219
+00:33:22,211 --> 00:33:24,211
+So no steps more.
+
+220
+00:33:24,211 --> 00:33:25,211
+It's OK.
+
+221
+00:33:25,211 --> 00:33:38,211
+If we have the no convergence absolutely, we need to understand divergent or conditioned convergence by applying the Leibniz rule or the Leibniz formula.
+
+222
+00:33:38,211 --> 00:33:59,211
+So we have the no convergence formula.
+
+223
+00:33:44,435 --> 00:33:48,635
+You will understand, I think, more efficiently after these exercises.
+
+224
+00:33:51,935 --> 00:33:59,275
+Now tell me, in the first exercise, it says, test the following series for absolute and conditional convergence.
+
+225
+00:34:01,655 --> 00:34:04,975
+In the first one, minus 1 to n minus 1 over n.
+
+226
+00:34:06,096 --> 00:34:12,096
+What do you think? What happens here? I think you can directly tell me the types of the convergence or divergence here.
+
+227
+00:34:22,483 --> 00:34:29,103
+We did it before because in the exercises, in the beginning, we did it.
+
+228
+00:34:33,300 --> 00:34:35,560
+What is the absolute value of this series?
+
+229
+00:34:48,532 --> 00:34:53,992
+What is the absolute series of the alternative series?
+
+230
+00:34:54,812 --> 00:34:59,872
+That means what's the corresponding positive series of the alternative series minus 1 to n minus 1 over n?
+
+231
+00:35:21,972 --> 00:35:24,552
+Arkadaşlar, sorularım anlaşılmıyor mu acaba?
+
+232
+00:35:27,672 --> 00:35:28,792
+Veya konuma anlaşılmıyor.
+
+233
+00:35:30,092 --> 00:35:32,192
+Kolay şeyler soruyorum şu anda ama...
+
+234
+00:35:39,507 --> 00:35:47,567
+Yorumunuz var mı bu konuda? Problemlerde konuşalım, çözelim ve devam edelim. Nereyi anlamadık?
+
+235
+00:36:06,643 --> 00:36:07,323
+Bekliyorum.
+
+236
+00:36:25,523 --> 00:36:28,824
+Arkadaşlar, tamam. Başka?
+
+237
+00:36:39,380 --> 00:36:40,440
+Tamam, başka?
+
+238
+00:36:52,500 --> 00:36:54,380
+Beni burada dinleyen 3 kişi değil herhalde.
+
+239
+00:36:58,291 --> 00:36:58,652
+Hmm.
+
+240
+00:37:05,300 --> 00:37:07,720
+Evet, [öğrenci], tamamen doğru. Başka?
+
+241
+00:37:30,099 --> 00:37:32,219
+Şöyle, o zaman tekrarlamak istiyorum.
+
+242
+00:37:34,539 --> 00:37:35,299
+Öncelikle,
+
+243
+00:37:38,839 --> 00:37:40,539
+derse katılımınızı anlayabilmem için,
+
+244
+00:37:41,599 --> 00:37:44,539
+gerçekten beni dinlediğinizi ve takip ettiğinizi,
+
+245
+00:37:45,119 --> 00:37:47,019
+lütfen arada cevap verin veya ses verin.
+
+246
+00:37:47,639 --> 00:37:49,099
+Buraya yazın veya bağlanın.
+
+247
+00:37:49,900 --> 00:37:51,860
+Direkt mikrofonunuzla.
+
+248
+00:37:55,799 --> 00:37:59,400
+Doğru yanlış, hiç problem deyip beraber düzeltiriz demiştim zaten.
+
+249
+00:38:00,099 --> 00:38:01,440
+Eğer anlamıyorsanız da,
+
+250
+00:38:02,119 --> 00:38:03,279
+zamanında söyleyin ki,
+
+251
+00:38:03,400 --> 00:38:05,179
+daha başındayken çözelim.
+
+252
+00:38:05,940 --> 00:38:07,000
+Yani, hiç anlamadıysanız,
+
+253
+00:38:07,079 --> 00:38:08,519
+bunu bana söylüyor olmanız lazım ki,
+
+254
+00:38:08,639 --> 00:38:10,279
+sonraki sorularda hiçbir şey anlamayacaksınız.
+
+255
+00:38:13,748 --> 00:38:34,447
+Konuyu ağır gelmiş olabilir, hızlı geçmiş olabilirim. Bunları bana söylerseniz, ben hiç ses gelmeyince ve hiç kimse bir şey söylemeyince veya bir iki kişi bana sadece cevap verince, kimsenin beni dinlemediğini düşünüyorum ister istemez, bilmiyorum çünkü ne yaptığınızı. O yüzden lütfen burada problem varsa da yazın. Neden cevap vermediniz veya niye üzerine yorum yapmadığınızına dair.
+
+256
+00:38:37,972 --> 00:38:40,192
+Yok zaten [öğrenci] biliyorum.
+
+257
+00:38:41,472 --> 00:38:45,132
+Birkaç kişi kesin dinliyor buraya yazıyor da diğerlerini ben bilmiyorum o yüzden.
+
+258
+00:38:45,892 --> 00:38:49,192
+Hocam bir de sesli bağlanın dediniz de benim annem de öğretmen.
+
+259
+00:38:49,332 --> 00:38:51,211
+O da benimle aynı zamanda derste oluyor.
+
+260
+00:38:51,512 --> 00:38:54,092
+O yüzden bazen her zaman mikrofonla bağlanamıyorum.
+
+261
+00:38:54,912 --> 00:38:57,272
+Yok yok isterseniz de benim için fark etmez.
+
+262
+00:38:57,412 --> 00:38:59,472
+İsteyenler dedim onu da yapabilir.
+
+263
+00:39:01,052 --> 00:39:03,932
+Müsait oldukça sesle bağlanmaya çalışıyorum ben de.
+
+264
+00:39:04,372 --> 00:39:05,072
+Ya bence de.
+
+265
+00:39:05,552 --> 00:39:07,292
+Ortamınız müsaitse bağlanın.
+
+266
+00:39:07,292 --> 00:39:08,412
+Değilse hiç problem değil.
+
+267
+00:39:08,492 --> 00:39:10,492
+Buradan ne isterseniz yazabilirsiniz yani.
+
+268
+00:39:10,952 --> 00:39:12,152
+Denklemleri de yazabilirsiniz.
+
+269
+00:39:12,392 --> 00:39:13,452
+Yorumunuzu da yazabilirsiniz.
+
+270
+00:39:13,592 --> 00:39:16,332
+O yüzden bu çete ben çok ciddi bir şekilde bakıyorum sürekli.
+
+271
+00:39:17,632 --> 00:39:18,832
+Demek istediğim bu yani.
+
+272
+00:39:19,132 --> 00:39:20,192
+Ama bir şey ses verin.
+
+273
+00:39:20,592 --> 00:39:21,972
+[öğrenci] sinin için söylemiyorum ama.
+
+274
+00:39:22,092 --> 00:39:24,992
+Burada birkaç öğrencim daha var yorum yapan.
+
+275
+00:39:25,852 --> 00:39:27,472
+Diğerleri için söylüyorum arkadaşlar.
+
+276
+00:39:31,072 --> 00:39:34,072
+Eğer herhangi bir yorumunuz yoksa ben devam edeceğim.
+
+277
+00:39:34,192 --> 00:39:36,072
+Hepinizin anladığını düşünerek devam edeceğim.
+
+278
+00:39:36,072 --> 00:39:37,912
+Bu çok hoşuma giden bir durum değil ama.
+
+279
+00:39:38,392 --> 00:39:40,572
+Herhangi bir yorum gelmeyince de ben devam etmek durumundayım.
+
+280
+00:39:44,307 --> 00:39:48,427
+Herkes herhalde anladı. O zaman tamam. Ben devam ediyorum.
+
+281
+00:39:53,235 --> 00:40:23,235
+ve ilk bir n ve
+
+282
+00:40:23,235 --> 00:43:03,056
+n ve n
+
+283
+00:43:03,056 --> 00:43:07,476
+Ya mutlak yakınsak ya şartlı yakınsak veya ıraksak olabilir.
+
+284
+00:43:07,615 --> 00:43:08,816
+Üç tane ihtimalimiz var.
+
+285
+00:43:08,976 --> 00:43:14,596
+Yani alternatif serilerde yakınsaklık iki tip olabilir sadece.
+
+286
+00:43:14,896 --> 00:43:20,215
+Daha doğrusu alternatif serizin yakınsaklığı sadece yakınsaklık değildir.
+
+287
+00:43:20,416 --> 00:43:21,755
+Bunu belirtmek zorundasınız.
+
+288
+00:43:21,896 --> 00:43:25,816
+Mutlak mı? Conditional mı? Yani şartlı mı?
+
+289
+00:43:26,295 --> 00:43:27,316
+Buna bakmak zorundasınız.
+
+290
+00:43:27,396 --> 00:43:30,096
+Iraksaklık elde ederseniz zaten problem yok. Iraksaktır.
+
+291
+00:43:30,096 --> 00:43:35,856
+Ama örneklerin çok büyük çoğunluğunda ıraksaklık çok da elde etmeyiz aslında.
+
+292
+00:43:36,456 --> 00:43:42,396
+Mutlaka var öyle örnekler ama genelde şartlı veya mutlak yakınsaklık buluruz.
+
+293
+00:43:42,715 --> 00:43:46,996
+Peki bunları en kısa, en sistematik şekilde nasıl yaparız?
+
+294
+00:43:47,056 --> 00:43:51,316
+Aslında ilk aklımıza hep Leibniz teoremini kullanmak gelebilir.
+
+295
+00:43:51,876 --> 00:43:54,036
+Dersiniz ki yakınsak mı, ıraksak mı bir anlayayım.
+
+296
+00:43:54,115 --> 00:43:56,755
+Leibniz teoremi kullandınız ve üç koşula baktınız.
+
+297
+00:43:57,195 --> 00:43:58,655
+Üç koşulda sağlandı diyelim.
+
+298
+00:43:58,655 --> 00:44:01,735
+O zaman alternatif seriniz yakınsak.
+
+299
+00:44:02,295 --> 00:44:04,755
+Ama hangisi mutlak mı şarta bağlı mı?
+
+300
+00:44:04,816 --> 00:44:05,675
+Nereden anlayacaksınız?
+
+301
+00:44:06,135 --> 00:44:07,255
+Bu şekilde anlayamazsınız.
+
+302
+00:44:08,215 --> 00:44:16,175
+Bunu ayırmak için serinin mutlak yakınsaklığını test etmeniz lazım.
+
+303
+00:44:16,695 --> 00:44:21,576
+Serinin mutlak yakınsaklığını test etmek için alternatif serinin mutlak değerinden oluşan,
+
+304
+00:44:21,576 --> 00:44:29,976
+yani corresponding absolute values diyorum ya, karşılık gelen pozitif terimli serisini incelemeniz lazım.
+
+305
+00:44:30,175 --> 00:44:32,436
+Yani alternatif serinin mutlak değerini alın.
+
+306
+00:44:33,956 --> 00:44:37,215
+Oraya zaten karşınıza pozitif terimli bir seri çıkacak.
+
+307
+00:44:37,215 --> 00:44:40,016
+Yani onun karşılık gelen pozitif terimli hale gelecek.
+
+308
+00:44:40,615 --> 00:44:41,356
+Onu test edin.
+
+309
+00:44:41,456 --> 00:44:43,635
+Pozitif terimli serileri test etmeyi biliyorsunuz.
+
+310
+00:44:44,135 --> 00:44:44,876
+Onu test edin.
+
+311
+00:44:45,496 --> 00:44:48,936
+Yakınsaksa demek ki mutlak yakınsak alternatif serimiz.
+
+312
+00:44:49,936 --> 00:44:52,956
+Iraksaksa, şunu diyebilirsiniz.
+
+313
+00:44:52,956 --> 00:44:56,056
+Baktım mutlak yakınsak çıkmadı.
+
+314
+00:44:56,195 --> 00:44:57,976
+O zaman gereği hangi seçenekler kalıyor?
+
+315
+00:44:58,416 --> 00:45:00,816
+Şartlı yakınsak olabilir veya iraksak olabilir.
+
+316
+00:45:01,576 --> 00:45:05,836
+O yüzden her zaman ilk önce aslında mutlak yakınsaklığı test etmekte başlarız.
+
+317
+00:45:05,936 --> 00:45:11,056
+Yani alternatif serinin karşılık gelen pozitif terimli halini test etmekte.
+
+318
+00:45:11,056 --> 00:45:17,635
+O pozitif terim seriyi test ettiğimizde yakınsak buluyorsak alternatif serimiz mutlak yakınsak ve bitti.
+
+319
+00:45:19,115 --> 00:45:19,896
+Burada bitmiş olur.
+
+320
+00:45:19,896 --> 00:45:26,456
+Ama mutlak yakınsaklık yok ise serimiz iraksak da olabilir, şartlı yakınsak da olabilir.
+
+321
+00:45:27,096 --> 00:45:29,936
+Bunu anlamak için işte o zaman alternatif seri testini,
+
+322
+00:45:30,255 --> 00:45:34,715
+likeness testinin adı alternatif seriler testi yakınsaklık için.
+
+323
+00:45:35,175 --> 00:45:36,916
+O zaman bu testi uygularız aslında.
+
+324
+00:45:36,916 --> 00:45:39,536
+Burada da gördüğünüz gibi ilk önce mutlak yakınsaklığa bakılıyor.
+
+325
+00:45:40,296 --> 00:45:42,715
+Bulunmuyor o zaman alternatif seri testi.
+
+326
+00:45:42,936 --> 00:45:44,175
+Yani likeness uygulanıyor.
+
+327
+00:45:44,735 --> 00:45:49,876
+Bu uygulandıktan sonra bakıyorsunuz hepsi sağlanmışsa mutlak değil ama yakınsaklığa.
+
+328
+00:45:49,896 --> 00:45:51,596
+Bu test diyor ki yakınsak.
+
+329
+00:45:52,016 --> 00:45:54,916
+Ama ilk koşulda baktığım ki şeyi buldum mutlak yakınsak değil.
+
+330
+00:45:55,275 --> 00:45:57,615
+O zaman şartlı yakınsak olmak zorundadır.
+
+331
+00:45:58,155 --> 00:46:02,755
+Bu üç koşuldan en az bir tanesi sağlanmazsa zaten iraksak deriz.
+
+332
+00:46:03,356 --> 00:46:05,976
+Ama her zaman bu yöntemi bu sırayı kullanır.
+
+333
+00:46:06,096 --> 00:46:07,796
+İlk önce mutlak yakınsaklığa bakılır.
+
+334
+00:46:08,396 --> 00:46:10,655
+Yoksa alternatif seri testine bakılır.
+
+335
+00:46:10,735 --> 00:46:11,936
+Likeness test uygulanır.
+
+336
+00:46:11,936 --> 00:46:19,655
+Bu likeness test hepsi sağlıyorsa yakınsak ama şartlı.
+
+337
+00:46:20,255 --> 00:46:21,836
+Sağlanmıyorsa iraksak.
+
+338
+00:46:23,536 --> 00:46:24,536
+Tamam mıyız?
+
+339
+00:46:25,635 --> 00:46:26,155
+Oldu mu şimdi?
+
+340
+00:46:32,436 --> 00:46:33,436
+Tamam.
+
+341
+00:46:33,436 --> 00:46:36,436
+Bir soru?
+
+342
+00:46:36,436 --> 00:46:37,436
+Tamam.
+
+343
+00:46:37,436 --> 00:46:42,436
+Şimdi, şimdi, ikinci soru.
+
+344
+00:46:42,436 --> 00:49:21,436
+Bir soru.
+
+345
+00:49:21,436 --> 00:49:23,436
+Hocam Türkçe bir şey sorabilir miyim burada?
+
+346
+00:49:23,436 --> 00:49:24,436
+Ah yes.
+
+347
+00:49:24,436 --> 00:49:27,436
+Şimdi burada üçüncü önermede limit değeri hesaplıyoruz ya.
+
+348
+00:49:27,436 --> 00:49:33,436
+Bu limit değerini hesaplamamızdaki yani çıkan sonucun sıfır olması mı lazım?
+
+349
+00:49:33,436 --> 00:49:34,436
+Libniz kuralına göre.
+
+350
+00:49:34,436 --> 00:49:35,436
+Yes.
+
+351
+00:49:35,436 --> 00:49:36,436
+Always it must be zero.
+
+352
+00:49:36,436 --> 00:49:37,436
+Tamam.
+
+353
+00:49:37,436 --> 00:49:38,436
+Positive.
+
+354
+00:49:38,436 --> 00:49:40,436
+Decreasing and limit of it must be zero.
+
+355
+00:49:40,436 --> 00:49:41,436
+Tamam.
+
+356
+00:49:41,436 --> 00:49:43,436
+Bu üçünü sağlıyorsa o zaman yorum yapabiliyoruz.
+
+357
+00:49:43,436 --> 00:49:44,436
+Convergent.
+
+358
+00:49:44,436 --> 00:49:48,436
+If these three condition holds, you will say only convergent but.
+
+359
+00:49:48,436 --> 00:49:49,436
+Not absolute or conditional.
+
+360
+00:49:49,436 --> 00:49:51,436
+So first the test for absolutely one.
+
+361
+00:49:51,436 --> 00:49:56,436
+Again, if you have again a convergence that means it must be conditional.
+
+362
+00:49:56,436 --> 00:49:58,436
+Okay.
+
+363
+00:49:58,436 --> 00:49:59,436
+Anyone?
+
+364
+00:49:59,436 --> 00:50:01,436
+May I ask a question?
+
+365
+00:50:01,436 --> 00:50:02,436
+Yes, sure.
+
+366
+00:50:02,436 --> 00:50:09,436
+Is there any difference between Libniz rule and alternating series test?
+
+367
+00:50:09,436 --> 00:50:10,436
+No, it's the name of it.
+
+368
+00:50:10,436 --> 00:50:12,436
+It's just the other name, isn't it?
+
+369
+00:50:12,436 --> 00:50:13,436
+Yes, you're right.
+
+370
+00:50:13,436 --> 00:50:14,436
+You're completely right.
+
+371
+00:50:14,436 --> 00:50:15,436
+Thank you.
+
+372
+00:50:15,436 --> 00:50:19,436
+It's the name of it because Libniz has used it for alternating series test.
+
+373
+00:50:19,436 --> 00:50:20,436
+They are same.
+
+374
+00:50:20,436 --> 00:50:21,436
+Thank you.
+
+375
+00:50:21,436 --> 00:50:22,436
+Not at all.
+
+376
+00:50:22,436 --> 00:50:23,436
+Hocam, bir şey daha sorabilir miyim?
+
+377
+00:50:23,436 --> 00:50:24,436
+Yes.
+
+378
+00:50:24,436 --> 00:50:48,436
+Thank you.
+
+379
+00:50:26,931 --> 00:50:31,192
+Burada hani hep şeyde belli kurallara göre yapıyoruz ya.
+
+380
+00:50:31,591 --> 00:50:34,171
+Burada mesela değer vererek yapsak da bulabilir miyiz?
+
+381
+00:50:34,591 --> 00:50:36,751
+Mesela 2'den sonsuza kadar götürümün için.
+
+382
+00:50:36,811 --> 00:50:39,451
+Eti de doğrusal bir şekilde artacak yani.
+
+383
+00:50:39,771 --> 00:50:44,171
+Götüyorum 2 verip 3 verip 4 verip belli bir orantı kurup şey yapabilir miyiz?
+
+384
+00:50:44,231 --> 00:50:45,192
+Bir yorum yapabilir miyiz?
+
+385
+00:50:46,251 --> 00:50:48,491
+Altanet serini yakışsak mı hakkında mı?
+
+386
+00:50:48,871 --> 00:50:51,011
+Yoksa test için mi söylüyorsun?
+
+387
+00:50:51,211 --> 00:50:55,091
+Test için değil de yakınsak mı yoksa bıraksak mı konusunda.
+
+388
+00:50:55,091 --> 00:50:56,251
+Olmaz mı?
+
+389
+00:50:56,251 --> 00:51:02,891
+Sonsuz tane terim için bu şekilde genelleştirme yapamazsınız hiçbir seri için yapmamalısınız.
+
+390
+00:51:03,471 --> 00:51:07,831
+Çünkü içerisinde dediğiniz gibi bir iki tane terim yok ki sonsuz tane var.
+
+391
+00:51:08,531 --> 00:51:09,531
+Ama kuralı belli.
+
+392
+00:51:09,791 --> 00:51:14,251
+O yüzden bu koşullar onları genelleştirmek adına genel bir şey söylemek.
+
+393
+00:51:14,251 --> 00:51:16,911
+Yani bu seri işte bir bölü enenenler.
+
+394
+00:51:17,251 --> 00:51:18,971
+Bu el tanelerinden oluşuyor.
+
+395
+00:51:19,611 --> 00:51:21,371
+Bir bölü enenen üzerinden gitmemiz.
+
+396
+00:51:21,371 --> 00:51:26,692
+Yani enli yani birden sonsuza kadar giden pozitif tam sayılar için konuşmamız lazım.
+
+397
+00:51:27,231 --> 00:51:31,591
+Sadece belli bir sonlu grubu için söyleyip bunu genelle yayamazsınız.
+
+398
+00:51:31,711 --> 00:51:33,451
+Sonsuz tane terimi uyarlayamazsınız.
+
+399
+00:51:33,591 --> 00:51:34,131
+Olmayabilir.
+
+400
+00:51:35,531 --> 00:51:35,931
+Anladım.
+
+401
+00:51:36,192 --> 00:51:38,991
+Yani bazen doğru çıkar evet.
+
+402
+00:51:39,471 --> 00:51:43,371
+Ama kesinlikle bir ispat değildir matematiksel açıdan.
+
+403
+00:51:43,731 --> 00:51:44,151
+Anladım.
+
+404
+00:51:44,411 --> 00:51:44,551
+Tamam.
+
+405
+00:51:45,192 --> 00:51:46,771
+Fikir verir sadece rica ederim.
+
+406
+00:51:46,971 --> 00:51:47,571
+Anladım anladım.
+
+407
+00:51:47,571 --> 00:52:00,091
+Anladım.
+
+408
+00:51:50,996 --> 00:52:02,436
+What about the third one? C. Let's do it. I'm waiting for you. Test it for convergence or divergence. It's very easy. You can do it.
+
+409
+00:52:03,956 --> 00:52:09,596
+First test for absolute convergence while having the corresponding positive series while having the absolute value.
+
+410
+00:52:10,876 --> 00:52:14,896
+And then tell me what you get tested. And then write me.
+
+411
+00:53:08,307 --> 00:53:08,668
+Ok.
+
+412
+00:53:14,483 --> 00:53:14,983
+Hmm.
+
+413
+00:53:17,864 --> 00:53:19,864
+Okay, let's talk about...
+
+414
+00:53:22,423 --> 00:53:27,264
+For example, Atterberg, how did you say that it is conditional convergence?
+
+415
+00:53:28,023 --> 00:53:31,344
+Did you test for absolute convergence?
+
+416
+00:53:34,943 --> 00:53:36,003
+Bono rent four.
+
+417
+00:53:39,344 --> 00:53:40,063
+What do you think?
+
+418
+00:53:40,063 --> 00:53:46,384
+Or [öğrenci], why do you say it is absolutely convergent?
+
+419
+00:53:46,384 --> 00:53:48,223
+Will you explain it?
+
+420
+00:53:48,223 --> 00:53:49,503
+If you want.
+
+421
+00:53:49,503 --> 00:54:15,824
+What do you think?
+
+422
+00:53:56,115 --> 00:53:58,596
+1 over n to 4, n to 4.
+
+423
+00:53:59,916 --> 00:54:01,916
+Remember P-Series, yes.
+
+424
+00:54:03,195 --> 00:54:07,795
+And the condition of convergence of P-Series was what?
+
+425
+00:54:18,003 --> 00:54:21,003
+Evet, bu yüzden bu bir şey.
+
+426
+00:54:21,423 --> 00:54:23,304
+Bir sonraki bir şey yapabiliriz.
+
+427
+00:54:23,304 --> 00:54:25,943
+Evet, bu bir şey.
+
+428
+00:54:26,963 --> 00:54:28,364
+Bir şey daha fazla bir şey.
+
+429
+00:54:28,463 --> 00:54:29,643
+Bu, bir şey daha fazla.
+
+430
+00:54:30,163 --> 00:54:40,923
+Bu, bu bir şey daha fazla.
+
+431
+00:54:41,623 --> 00:54:41,923
+Tamam.
+
+432
+00:54:43,143 --> 00:54:45,003
+Bu, bu bir şey daha fazla.
+
+433
+00:54:45,003 --> 00:54:49,003
+Bu, bu, bu, bu, bu.
+
+434
+00:54:49,003 --> 00:54:49,523
+Bu, bu, bu, bu.
+
+435
+00:54:52,264 --> 00:54:53,903
+Bu, bu, bu, bu, bu, bu, bu.
+
+436
+00:54:53,903 --> 00:55:18,023
+Evet, bu
+
+437
+00:55:21,235 --> 00:55:22,275
+I think it's okay.
+
+438
+00:55:24,596 --> 00:55:29,155
+So continue, if you don't have any question about this example.
+
+439
+00:55:34,516 --> 00:55:34,876
+Ok.
+
+440
+00:55:38,579 --> 00:55:44,219
+Bu sorunla, bu sorunla ve sorunla ilgili bir sorunla var.
+
+441
+00:55:44,219 --> 00:55:46,619
+Öncelikle, bu sorunla ve ne kadar?
+
+442
+00:55:46,619 --> 00:55:59,980
+Öncelikle, bu sorunla ve n-1, n
+
+443
+00:59:24,403 --> 00:59:29,744
+Evet, haven't you solved? We have lots of time for solving this.
+
+444
+00:59:31,664 --> 00:59:34,324
+Where do you have the problem? Okay.
+
+445
+00:59:37,244 --> 00:59:45,923
+So let's look. I'm sorry I couldn't see the chat part because no information has given. I'm sorry, I couldn't see it.
+
+446
+00:59:45,923 --> 01:00:01,304
+Now I will see. Okay. Let's see the solution. You say that divergence. Okay. Divergence, divergence, absolute convergence. Convergence. Let's see. And divergence. Let's see. Okay.
+
+447
+01:00:02,764 --> 01:00:10,463
+Yes. It was so short. It is divergent because we understand from the Alternative Series test.
+
+448
+01:00:25,364 --> 01:00:27,983
+Okay, well done, all of you.
+
+449
+01:00:32,684 --> 01:00:35,804
+Okay, [öğrenci], what was your problem?
+
+450
+01:00:35,804 --> 01:00:38,884
+Let me look, absolute convergence.
+
+451
+01:00:43,668 --> 01:00:45,668
+Evet, bu yüzden.
+
+452
+01:00:45,668 --> 01:01:15,668
+Bu yüzden bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde
+
+453
+01:01:15,668 --> 01:01:45,668
+bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde
+
+454
+01:01:45,668 --> 01:01:48,788
+for having the results.
+
+455
+01:01:50,208 --> 01:01:50,528
+Okay.
+
+456
+01:01:55,528 --> 01:01:56,548
+Do a no problem.
+
+457
+01:01:56,988 --> 01:01:57,407
+Okay.
+
+458
+01:01:57,748 --> 01:02:01,268
+If you want to ask some questions, you can ask me.
+
+459
+01:02:02,928 --> 01:02:03,408
+Okay.
+
+460
+01:02:09,172 --> 01:02:11,172
+Bu ne?
+
+461
+01:02:11,172 --> 01:02:17,172
+Minus 1 to n to n minus 1 over square root n over n minus 1.
+
+462
+01:02:38,483 --> 01:02:46,083
+ve ilk etapta, ilk etapta, ilk etapta, ne?
+
+463
+01:02:46,083 --> 01:02:48,083
+Örneğin, ilk etapta, ilk etapta, ne?
+
+464
+01:02:48,083 --> 01:02:50,203
+Ha, ok.
+
+465
+01:02:53,123 --> 01:02:55,963
+[öğrenci], are we applying the likeness test?
+
+466
+01:03:01,684 --> 01:03:03,164
+If you want, you can do it.
+
+467
+01:03:03,164 --> 01:03:04,084
+No problem.
+
+468
+01:03:04,084 --> 01:03:07,884
+That means it's not mistaken, it's right, completely right.
+
+469
+01:03:07,884 --> 01:03:14,324
+But I advise you to apply firstly absolute convergence.
+
+470
+01:03:14,324 --> 01:03:15,923
+Yes, first do it.
+
+471
+01:03:15,923 --> 01:03:23,844
+But if the question is so typical, like in the previous one, limit is different from zero.
+
+472
+01:03:23,844 --> 01:03:26,764
+If it is so typical, you can understand it's divergent.
+
+473
+01:03:26,764 --> 01:03:28,124
+For example, what about this one?
+
+474
+01:03:28,124 --> 01:03:29,484
+Is limit zero?
+
+475
+01:03:29,484 --> 01:03:30,444
+What do you think?
+
+476
+01:03:40,115 --> 01:03:47,635
+I think yes, because in the denominator we have n to 3 over 2, and here n, 1 over infinity 0.
+
+477
+01:03:48,275 --> 01:03:53,155
+That means, probably it's convergent, but don't need to test it.
+
+478
+01:03:53,155 --> 01:03:55,715
+First look up for the absolute convergence.
+
+479
+01:03:57,476 --> 01:04:01,956
+Get the positive series of the series alternating one, and test it please.
+
+480
+01:04:40,467 --> 01:04:44,587
+Ah, yes, yes, it's like a shortcut, if it is so clear.
+
+481
+01:04:54,708 --> 01:04:55,648
+Limit 0
+
+482
+01:05:30,420 --> 01:05:43,039
+Bu testi, I think, easy to test for the positive series, 2 n-1 over square root n times n-1, which test you are using, which is the proper one for you.
+
+483
+01:06:02,036 --> 01:06:19,576
+Dua, while testing the antirelentik series, first we look up for the absolute value of it, okay, the terms, and we test for the positive one, and you said that n plus, huh, I think you mean the comparison test.
+
+484
+01:06:25,588 --> 01:06:31,708
+Ah, yes. Get absolutiful, that is the positive part, which is 2n-1 over square than n-1.
+
+485
+01:06:32,868 --> 01:06:46,668
+And this is, again, I think, typical positive term series, because in my opinion, you have to use limit comparison test, or comparison test you can use, no problem.
+
+486
+01:06:46,668 --> 01:06:50,268
+I said that in the last week.
+
+487
+01:06:51,768 --> 01:07:02,708
+Once we have a rational function, I'm sorry, rational term as the division of two polynomials, do something, blah, blah, blah.
+
+488
+01:07:06,260 --> 01:07:32,360
+[öğrenci], have you got no absoluta convergence? Have you tested it? Okay, well done. So, once you have no absoluta convergence, also you need to see that the conditions of leibniz test hold. Okay. You're probably right. Anyone else?
+
+489
+01:07:45,940 --> 01:07:52,420
+[öğrenci], [öğrenci], bu şekilde testi, bu testi, bu testi?
+
+490
+01:07:57,300 --> 01:08:01,260
+Did you use limit comparison or any different one?
+
+491
+01:08:16,083 --> 01:08:24,083
+How you apply direct alternating series test? Okay. And probably I think you get convergence.
+
+492
+01:08:27,475 --> 01:08:29,775
+Ok, anyone else?
+
+493
+01:08:55,220 --> 01:09:08,860
+Arkadaşlar, tekrar açıklamak istiyorum. İlk olarak mutlak yakınsaklığa bakarız. Yani bunun pozitif terimli serisini test ederiz. Yakınsak da mutlak yakınsaktır. Bizim alternatif serimiz.
+
+494
+01:09:08,860 --> 01:09:22,220
+Değilse, likeness testi uygularız ki yakınsaklık var mı yok mu anlayalım. Mutlak yakınsaklık yok. O zaman gerçekten yakınsak mı yoksa ıraksak mı diye anlamak için likeness testi uygularız ikinci koşul olarak.
+
+495
+01:09:22,220 --> 01:09:39,920
+oradan çıkan sonuçta göre ya mutlak yakınsak ya mutlak yakınsak ya ıraksaktır. Şu soruda direkt böyle yapmamızın nedeni burada çok bariz bir durum var. Burada bu limit zaten sıfırdan farklı.
+
+496
+01:09:40,079 --> 01:09:46,740
+Yani bu şu demek zaten bu ıraksak. Böyle bir şey gördüğünüzde mutlak yakınsaklıkla hiç uğraşmayın. Bu çok tipik bir soru.
+
+497
+01:09:46,740 --> 01:09:47,740
+En artı bir soru.
+
+498
+01:09:47,740 --> 01:09:56,820
+En artı bir bölümünün en teriminin bu pozitif teriminin limitin sıfırdan farklı olduğunu görmeniz bu alternatif serinin raksak olduğunu direkt ispat etmiş olursunuz.
+
+499
+01:09:57,360 --> 01:10:05,500
+O yüzden başka hiçbir şey yapmaya gerek yoktur. Ama genel olarak, çok genel olarak terimlere baktığınızda isterseniz limitle bir check edebilirsiniz.
+
+500
+01:10:05,500 --> 01:10:09,500
+Ama bu demek değil ki her zaman ilk önceki her zaman ilk önce mutlak yakın bir şey yapın.
+
+501
+01:10:09,500 --> 01:10:16,220
+Çok tipik bir soru varsa buradaki limit de sıfır mesela sıfır olduğu gözüküyor. Yani şunu dememelisiniz.
+
+502
+01:10:16,579 --> 01:10:23,860
+Bu sıfır, o zaman lagness uygulayın gibi bir şey düşünmeyin. Bu sıfır yani büyük ihtimalle yakınsaktır bu deyip ilk önce mutlak yakınsaklık var mı diye bakın.
+
+503
+01:10:23,860 --> 01:10:32,860
+İlk adımınız her zaman buradaki limit her zaman buradaki limit her zaman buradaki limit her zaman bu kadar bağırmıyorsa size bu kadar bariz değilse tamam mı?
+
+504
+01:10:32,860 --> 01:10:43,119
+O yüzden ilk önce mutlak yakınsakla yani pozitif terimli haline buna bir bakın test edin. Test içinde artık pozitif serimli testler için hangisi uyuyorsa onu uygulayın.
+
+505
+01:10:43,119 --> 01:10:52,039
+olumlu sonuçta alıyorsanız ya ıraksaktır veya şartlı yakınsaktır. O yüzden de likness test uygulamanız gerekir ikinci olarak.
+
+506
+01:10:53,260 --> 01:10:58,360
+O yüzden şimdi bunu neden test edemiyorsunuz mesela onu düşünüyorum ben şu anda.
+
+507
+01:11:01,180 --> 01:11:02,119
+63 kişiden
+
+508
+01:11:02,119 --> 01:11:07,119
+2 kişi
+
+509
+01:11:07,119 --> 01:11:08,440
+sonuç buluyor.
+
+510
+01:11:09,340 --> 01:11:09,900
+Neden acaba?
+
+511
+01:11:15,252 --> 01:11:17,912
+Yani şunu test ediyor olmanız lazım.
+
+512
+01:11:18,052 --> 01:11:19,231
+Bu çok bariz bir seri.
+
+513
+01:11:19,952 --> 01:11:21,412
+Pozitif olan seriyi söylüyorum.
+
+514
+01:11:24,552 --> 01:11:25,872
+Limit comparison'ı hatırlayın.
+
+515
+01:11:25,972 --> 01:11:26,292
+Ne demiştim?
+
+516
+01:11:26,392 --> 01:11:32,072
+Kolay limit olması için bu polinomların bölümü yani bir rasyonel ifade.
+
+517
+01:11:32,832 --> 01:11:37,472
+Enlerin derecelerine göre BN seçeceksiniz ve limiti alacaksınız.
+
+518
+01:11:38,692 --> 01:11:40,992
+En kolay yöntem budur böyle durumlarda.
+
+519
+01:11:41,092 --> 01:11:43,252
+Burada N var, burada N var, bir de köken var.
+
+520
+01:11:43,372 --> 01:11:44,972
+Ne lazım? Burada köken lazım.
+
+521
+01:11:45,252 --> 01:11:47,492
+Yani bir böyle köken seçeceksiniz.
+
+522
+01:11:48,312 --> 01:11:49,252
+Mukayese edeceksiniz.
+
+523
+01:11:49,332 --> 01:11:50,172
+Limitli mukayese.
+
+524
+01:11:50,612 --> 01:11:51,792
+Sonucuna göre bakacaksınız.
+
+525
+01:11:53,612 --> 01:11:55,052
+Yani bunu yapmış olmanız gerekiyordu.
+
+526
+01:12:03,347 --> 01:12:04,587
+So let's see the solution.
+
+527
+01:12:06,028 --> 01:12:13,148
+Positor term series of the alternative one is 2n minus 1 over square root n n minus 1.
+
+528
+01:12:13,627 --> 01:12:18,268
+In order to get an easy limit of this expression, we need square root n in the numerator,
+
+529
+01:12:19,148 --> 01:12:25,268
+which means use limit comparison and choose 1 over square root n to compare.
+
+530
+01:12:26,327 --> 01:12:30,648
+Once we use the square root n, an over bn becomes this.
+
+531
+01:12:33,347 --> 01:12:35,228
+2, an easy limit.
+
+532
+01:12:36,108 --> 01:12:42,967
+2 means when it is different from 0 and infinity or positive, it means they both converge or diverge.
+
+533
+01:12:43,467 --> 01:12:50,768
+The series that we choose 1 over square root n is the p series with p is 1 over 2 less than 1, so divergent.
+
+534
+01:12:51,268 --> 01:12:52,667
+So does our series.
+
+535
+01:12:52,847 --> 01:13:00,327
+So does our alternating series, that means not absolutely convergent.
+
+536
+01:13:00,327 --> 01:13:04,448
+So we have to test for convergence conditionally.
+
+537
+01:13:06,408 --> 01:13:13,667
+Because if it is not absolutely convergent, maybe it is convergent but conditionally, or maybe it is divergent.
+
+538
+01:13:13,707 --> 01:13:15,587
+We can understand from the Leibniz test.
+
+539
+01:13:16,467 --> 01:13:19,087
+And the first condition of the Leibniz test says that positivity.
+
+540
+01:13:19,868 --> 01:13:22,747
+Look, 2n minus 1 over square root n minus 1.
+
+541
+01:13:22,827 --> 01:13:25,547
+Is it positive for n is greater than n equal to 1?
+
+542
+01:13:25,547 --> 01:13:28,768
+Yes, clearly.
+
+543
+01:13:29,427 --> 01:13:30,528
+They are all positive.
+
+544
+01:13:31,427 --> 01:13:32,368
+Is it decreasing?
+
+545
+01:13:34,268 --> 01:13:35,827
+You need to just look.
+
+546
+01:13:36,568 --> 01:13:38,967
+An plus 1 over an and look.
+
+547
+01:13:40,707 --> 01:13:41,728
+Yes, clearly.
+
+548
+01:13:42,608 --> 01:13:46,007
+This expression, it is less than 1.
+
+549
+01:13:46,667 --> 01:13:47,787
+It is less than 1.
+
+550
+01:13:47,787 --> 01:13:51,608
+So an plus 1 over an less than 1.
+
+551
+01:13:52,047 --> 01:13:54,507
+Which means it is decreasing.
+
+552
+01:13:56,007 --> 01:13:57,188
+And lastly, the limit.
+
+553
+01:13:57,608 --> 01:13:58,908
+Limit is clearly 0.
+
+554
+01:13:59,728 --> 01:14:02,207
+So that means Leibniz test says that,
+
+555
+01:14:02,648 --> 01:14:05,387
+OK, your alternating series is convergent in fact.
+
+556
+01:14:05,847 --> 01:14:06,827
+But not absolutely.
+
+557
+01:14:07,387 --> 01:14:23,148
+So it must be conditional.
+
+558
+01:14:47,764 --> 01:14:49,884
+Do you understand it? Are you okay?
+
+559
+01:14:55,891 --> 01:14:57,452
+Any question about the solution?
+
+560
+01:14:59,271 --> 01:15:00,671
+Okay, well done.
+
+561
+01:15:00,992 --> 01:15:01,471
+Thank you.
+
+562
+01:15:03,011 --> 01:15:07,291
+So, let me look to, ah, I'm sorry.
+
+563
+01:15:29,876 --> 01:15:38,676
+Şimdi 15min sonra devam edelim.
+
+564
+01:32:31,572 --> 01:32:32,771
+Hi again, are you okay?
+
+565
+01:32:40,243 --> 01:32:40,643
+Okay.
+
+566
+01:32:42,963 --> 01:32:43,503
+Thank you.
+
+567
+01:32:46,996 --> 01:33:15,475
+Thank you so much. And now we will continue with a new topic, power series. Again, we are working on series. In the first section, positive series. We have dealt test for positive series and then alternating series and the convergence of them. Now, totally the power series you will see. Let's see. Do you know power series?
+
+568
+01:33:21,524 --> 01:33:24,084
+Do you have any idea about the power series?
+
+569
+01:33:24,084 --> 01:33:26,084
+Okay.
+
+570
+01:33:26,963 --> 01:33:28,003
+Yes.
+
+571
+01:33:28,003 --> 01:33:30,003
+Okay.
+
+572
+01:33:30,003 --> 01:33:32,084
+We have the power of the expression.
+
+573
+01:33:33,284 --> 01:33:38,564
+And also something we have in the power series which makes it different.
+
+574
+01:33:42,244 --> 01:33:42,724
+Let's see.
+
+575
+01:33:43,844 --> 01:33:44,724
+Let's see together.
+
+576
+01:33:45,604 --> 01:33:49,444
+Look, the variable we will have now in power series X,
+
+577
+01:33:49,444 --> 01:33:54,244
+which is a variable in a series.
+
+578
+01:33:54,244 --> 01:34:00,963
+And if we have, like you said, an exponential here,
+
+579
+01:34:00,963 --> 01:34:07,124
+a power of the expression X minus A and multiply with the constant,
+
+580
+01:34:08,244 --> 01:34:09,844
+makes it a power series.
+
+581
+01:34:11,844 --> 01:34:15,124
+Of course, we will learn what's the general structure,
+
+582
+01:34:15,124 --> 01:34:17,284
+in which conditions they are convergent or not,
+
+583
+01:34:17,284 --> 01:34:20,244
+and also different structures and different concepts.
+
+584
+01:34:20,244 --> 01:34:26,244
+We will learn about the convergence because, as you see, we have a variable here.
+
+585
+01:34:26,244 --> 01:34:31,284
+And according to the values of it, we will have different cases and different concepts
+
+586
+01:34:31,284 --> 01:34:34,324
+resulting from a variable in a series.
+
+587
+01:34:34,324 --> 01:34:40,804
+which makes it different and typical or specific, I think.
+
+588
+01:34:41,844 --> 01:34:45,204
+Look, a power series about X is A.
+
+589
+01:34:46,003 --> 01:34:49,524
+About X is A means around X is A.
+
+590
+01:34:50,564 --> 01:34:55,364
+Around the point, we have a power series because we have X minus A.
+
+591
+01:34:55,364 --> 01:34:59,684
+That's why A is the center of the power series.
+
+592
+01:35:00,724 --> 01:35:04,244
+It has always this form, Cn times X minus A to N.
+
+593
+01:35:05,044 --> 01:35:06,084
+A is the center.
+
+594
+01:35:06,724 --> 01:35:08,644
+We have the power of X minus A.
+
+595
+01:35:09,204 --> 01:35:12,244
+And Cn are the coefficients, that means constants.
+
+596
+01:35:13,204 --> 01:35:18,084
+So such a series is called the power series about X is A.
+
+597
+01:35:18,084 --> 01:35:30,244
+So this series is around X is A. It's structured.
+
+598
+01:35:31,923 --> 01:35:33,124
+So let's learn.
+
+599
+01:35:35,444 --> 01:35:37,764
+Radius of convergence of a power series.
+
+600
+01:35:37,764 --> 01:35:41,364
+Now we have a very important concept, I think, in the power series.
+
+601
+01:35:41,364 --> 01:35:42,324
+Very important.
+
+602
+01:35:42,324 --> 01:35:43,604
+Radius of convergence.
+
+603
+01:35:43,604 --> 01:35:46,724
+What do you understand from the radius of convergence?
+
+604
+01:35:46,724 --> 01:35:56,963
+What's the radius?
+
+605
+01:35:51,796 --> 01:35:52,556
+In Turkish?
+
+606
+01:35:54,916 --> 01:35:55,516
+Radius?
+
+607
+01:35:59,252 --> 01:36:05,252
+Evet, evet.
+
+608
+01:36:05,252 --> 01:36:08,252
+Radius of convergence.
+
+609
+01:36:09,252 --> 01:36:11,252
+That means,
+
+610
+01:36:11,252 --> 01:36:12,252
+we need a radius,
+
+611
+01:36:12,252 --> 01:36:16,252
+like you said, a scalar value for convergence.
+
+612
+01:36:16,252 --> 01:36:17,252
+Because,
+
+613
+01:36:17,252 --> 01:36:20,252
+this convergence is related with the radius.
+
+614
+01:36:20,252 --> 01:36:22,252
+That's why it's a specific noun,
+
+615
+01:36:22,252 --> 01:36:24,252
+radius of convergence.
+
+616
+01:36:24,252 --> 01:36:29,252
+Now you will learn that why we need such an expression,
+
+617
+01:36:29,252 --> 01:36:30,252
+because,
+
+618
+01:36:30,252 --> 01:36:33,252
+here as you see, we have a variable in it.
+
+619
+01:36:33,252 --> 01:36:36,252
+And according to the different values of x here,
+
+620
+01:36:36,252 --> 01:36:39,252
+we may have convergence,
+
+621
+01:36:39,252 --> 01:36:41,252
+we may have divergence.
+
+622
+01:36:41,252 --> 01:36:44,252
+According to some specific values of it,
+
+623
+01:36:44,252 --> 01:36:46,252
+it can be different.
+
+624
+01:36:47,252 --> 01:36:48,252
+Okay.
+
+625
+01:36:48,252 --> 01:36:51,252
+So x makes it different.
+
+626
+01:36:51,252 --> 01:36:56,252
+That's why we are just talking about the values of x,
+
+627
+01:36:56,252 --> 01:36:57,252
+in which interval,
+
+628
+01:36:57,252 --> 01:36:59,252
+for which values of x,
+
+629
+01:36:59,252 --> 01:37:01,252
+for which interval of real line,
+
+630
+01:37:01,252 --> 01:37:03,252
+we have the, for example,
+
+631
+01:37:03,252 --> 01:37:05,252
+convergence of this power series, we will say.
+
+632
+01:37:05,252 --> 01:37:08,252
+That's why it is called the radius of convergence.
+
+633
+01:37:08,252 --> 01:37:10,252
+That means, in this radius,
+
+634
+01:37:10,252 --> 01:37:12,252
+the series converges.
+
+635
+01:37:12,252 --> 01:37:14,252
+But outside of it, maybe it is divergent.
+
+636
+01:37:14,252 --> 01:37:16,252
+That's why it is called the radius of convergence.
+
+637
+01:37:16,252 --> 01:37:19,252
+That means, you can just think a circle.
+
+638
+01:37:19,252 --> 01:37:22,252
+a neighborhood,
+
+639
+01:37:22,252 --> 01:37:24,252
+or how can I say, a ball,
+
+640
+01:37:24,252 --> 01:37:25,252
+you can just think.
+
+641
+01:37:25,252 --> 01:37:27,252
+And in it, we have the convergence.
+
+642
+01:37:27,252 --> 01:37:28,252
+Because in it,
+
+643
+01:37:28,252 --> 01:37:30,252
+x has the corresponding values,
+
+644
+01:37:30,252 --> 01:37:32,252
+which makes the power series convergent.
+
+645
+01:37:32,252 --> 01:37:34,252
+That's why for the power series,
+
+646
+01:37:34,252 --> 01:37:37,252
+once we are talking about the convergence and divergence,
+
+647
+01:37:37,252 --> 01:37:42,252
+you will always give some specific real values or intervals.
+
+648
+01:37:42,252 --> 01:37:44,252
+Because according to the intervals,
+
+649
+01:37:44,252 --> 01:37:46,252
+according to the values of x,
+
+650
+01:37:46,252 --> 01:37:48,252
+we will differ them.
+
+651
+01:37:48,252 --> 01:37:49,252
+Convergence, divergence,
+
+652
+01:37:49,252 --> 01:37:51,252
+and absolute convergence.
+
+653
+01:37:51,252 --> 01:37:56,252
+Or no convergence, always divergent, we can say.
+
+654
+01:37:56,252 --> 01:37:57,252
+Okay.
+
+655
+01:37:57,252 --> 01:37:59,252
+So let's learn step by step,
+
+656
+01:37:59,252 --> 01:38:01,252
+according to which values,
+
+657
+01:38:01,252 --> 01:38:04,252
+which concepts we have the corresponding conditions
+
+658
+01:38:04,252 --> 01:38:06,252
+for convergence and divergence.
+
+659
+01:38:06,252 --> 01:38:07,252
+and the convergence of convergence.
+
+660
+01:38:07,252 --> 01:38:21,252
+And the convergence of convergence.
+
+661
+01:38:10,260 --> 01:38:40,260
+Bu konvergantı bu sayesinde, bu sayesinde, bu sayesinde, bu sayesinde, bu sayesinde, bu sayesinde, bu sayesinde, bu sayesinde, bu sayesinde, bu sayesinde, bu sayesinde, bu sayesinde, bu sayesinde, bu sayesinde, bu sayesinde, bu sayesinde, bu sayesinde, bu sayesinde, bu sayesinde, bu sayesinde, bu sayesinde, bu sayesinde, bu sayesinde, bu sayesinde, bu sayesinde, bu sayesinde, bu sayesinde, bu sayesinde, bu sayesinde, bu sayesinde, bu sayesinde, bu sayesinde, bu sayesinde, bu sayesinde, bu sayesinde, bu sayesinde, bu sayesinde, bu sayesinde, bu sayesinde, bu sayesinde, bu sayesinde, bu sayesinde, bu sayesinde, bu say
+
+662
+01:38:40,260 --> 01:39:04,550
+positive number are, bu sayesinde, bu sayesinde, bu sayesinde, bu sayesinde, bu sayesinde, bu sayesinde, bu sayesinde, bu sayesinde, bu sayesinde, bu sayesinde, bu sayesinde, bu sayesinde, bu sayesinde, bu sayesinde, bu sayesinde, bu sayesinde, bu sayesinde, bu sayesinde, bu sayesinde, bu sayesinde, bu sayesinde, bu sayesinde, bu sayesinde, bu sayesinde, bu sayesinde, bu sayesinde, bu sayesinde, bu sayesinde, bu sayesinde, bu sayesinde, bu sayesinde, bu sayesinde, bu sayesinde, bu sayesinde, bu sayesinde, bu sayesinde, bu sayesinde, bu sayesinde, bu sayesinde, bu sayesinde, bu sayesinde, bu sayesinde, bu sayesinde, bu say
+
+663
+01:39:08,340 --> 01:39:09,340
+Or the balls.
+
+664
+01:39:18,292 --> 01:39:22,372
+And then left to R, not any bigger than A.
+
+665
+01:39:23,271 --> 01:39:23,692
+Okay.
+
+666
+01:39:24,712 --> 01:39:26,432
+A point on the radius.
+
+667
+01:39:26,652 --> 01:39:26,932
+Hmm.
+
+668
+01:39:27,372 --> 01:39:28,132
+I like it.
+
+669
+01:39:30,112 --> 01:39:32,212
+But greater than R.
+
+670
+01:39:32,412 --> 01:39:34,532
+That means greater than the radius, I think, [öğrenci].
+
+671
+01:39:37,092 --> 01:39:37,652
+Okay.
+
+672
+01:39:37,731 --> 01:39:39,771
+That means no problem.
+
+673
+01:39:39,872 --> 01:39:42,312
+We are just talking about it.
+
+674
+01:39:42,312 --> 01:39:43,892
+So what do you have in your mind?
+
+675
+01:39:48,979 --> 01:40:00,439
+I think you are thinking, nice, a point on the radius you say, or a point outside of the radius maybe you can just say, don't you?
+
+676
+01:40:03,719 --> 01:40:11,739
+Yes, okay, look, it is so normal if you can't imagine this.
+
+677
+01:40:11,739 --> 01:40:19,059
+Also, the mathematics sometimes has no idea about the absolute values and these expressions.
+
+678
+01:40:19,259 --> 01:40:22,039
+In fact, they are so basic information, but no problem.
+
+679
+01:40:22,419 --> 01:40:23,839
+Let's think it together.
+
+680
+01:40:25,039 --> 01:40:28,559
+X minus a greater than r.
+
+681
+01:40:29,279 --> 01:40:30,079
+Wait for me.
+
+682
+01:40:31,459 --> 01:40:32,319
+A whiteboard.
+
+683
+01:40:33,239 --> 01:40:33,599
+Okay.
+
+684
+01:40:53,235 --> 01:40:57,956
+ve, think that it has a radius here.
+
+685
+01:41:00,536 --> 01:41:00,975
+And
+
+686
+01:41:04,564 --> 01:41:21,704
+Think of points. Think of the center of it. It is a, for example. X minus a in the absolute value is, I think, just shows the difference, the distance, I'm sorry, distance between x and a. A is the center of the circle, just think.
+
+687
+01:41:21,704 --> 01:41:42,124
+So, once we have, let me write it, a, for example, here at the center a, think that we have some points in the circle, on the boundary of the circle, and outside of the circle. Lots of points we have.
+
+688
+01:41:42,124 --> 01:41:52,944
+It says, we have such points that the difference of these points with a is greater than r. Think that this radius is r. Okay.
+
+689
+01:42:00,020 --> 01:42:02,020
+Bu kadar bu kadar bu kadar r.
+
+690
+01:42:02,020 --> 01:42:04,020
+Bu kadar rada,
+
+691
+01:42:04,020 --> 01:42:18,020
+bu kadar rada,
+
+692
+01:42:22,195 --> 01:42:25,515
+Evet, bu a.
+
+693
+01:42:25,515 --> 01:42:29,675
+Bu, absolutely x minus a greater than r means
+
+694
+01:42:29,675 --> 01:42:33,435
+which x inside of the circle, outside of the circle?
+
+695
+01:42:33,435 --> 01:42:36,036
+We are talking about such points
+
+696
+01:42:36,036 --> 01:42:40,395
+that difference with a, distance to a is greater than r.
+
+697
+01:42:40,395 --> 01:42:44,916
+So, outside, isn't it?
+
+698
+01:42:44,916 --> 01:42:50,716
+It's just generalizing the points which is outside of the circle
+
+699
+01:42:50,716 --> 01:42:55,515
+and also not on the boundary points.
+
+700
+01:42:55,515 --> 01:42:58,916
+Are you okay?
+
+701
+01:42:58,916 --> 01:43:00,796
+Yes.
+
+702
+01:43:00,796 --> 01:43:06,796
+So, in these cases, this circle shows if outside points
+
+703
+01:43:06,796 --> 01:43:11,796
+for values of x which is outside of this circle
+
+704
+01:43:11,796 --> 01:43:14,595
+makes our power series divergent,
+
+705
+01:43:14,595 --> 01:43:20,475
+that means in fact this is the, how can we say,
+
+706
+01:43:20,475 --> 01:43:23,076
+radius of convergence is r.
+
+707
+01:43:23,076 --> 01:43:27,395
+The points in this circle make the power series convergent.
+
+708
+01:43:27,395 --> 01:43:30,876
+Only the points on it, in it, maybe on it,
+
+709
+01:43:30,876 --> 01:43:34,435
+because when it is outside, it makes it divergent.
+
+710
+01:43:34,435 --> 01:43:37,475
+That's why just think of a bubble or ball,
+
+711
+01:43:37,475 --> 01:43:38,956
+you can just think.
+
+712
+01:43:38,956 --> 01:43:44,876
+Inside the points for x makes it convergent,
+
+713
+01:43:44,876 --> 01:43:47,475
+outside makes it divergent.
+
+714
+01:43:47,475 --> 01:43:49,876
+Okay, let's continue.
+
+715
+01:43:49,876 --> 01:43:50,876
+And then, let's continue.
+
+716
+01:43:50,876 --> 01:44:15,876
+Let's continue.
+
+717
+01:43:57,876 --> 01:43:58,876
+Hmm.
+
+718
+01:43:58,876 --> 01:44:01,876
+Bu ilk önce bu.
+
+719
+01:44:01,876 --> 01:46:42,876
+Bu,
+
+720
+01:46:42,739 --> 01:46:44,739
+Tamam, nice.
+
+721
+01:46:46,099 --> 01:46:47,099
+So, continue.
+
+722
+01:46:47,099 --> 01:46:49,059
+Step by step, we will continue.
+
+723
+01:46:49,059 --> 01:46:51,219
+Don't worry, you will understand everything.
+
+724
+01:46:52,340 --> 01:46:56,099
+Again, it says R is called the radius of convergence of the power series
+
+725
+01:46:56,099 --> 01:47:00,979
+and the interval of radius R centered at X's A is called the interval of convergence.
+
+726
+01:47:01,539 --> 01:47:04,899
+Yes, of course, exercises you will understand better.
+
+727
+01:47:06,340 --> 01:47:10,579
+Once you specify R in the question or sometimes directly the interval,
+
+728
+01:47:10,579 --> 01:47:17,539
+once you have an interval centered at A with the radius R is called the interval of convergence.
+
+729
+01:47:19,139 --> 01:47:24,659
+Because in that interval, convergence happening for the power series.
+
+730
+01:47:24,659 --> 01:47:26,579
+So, it is called the interval of convergence.
+
+731
+01:47:26,579 --> 01:47:33,300
+That means from values of X from this interval makes the power series convergent outside divergence.
+
+732
+01:47:33,300 --> 01:47:36,739
+So, only in this interval, we have the convergence.
+
+733
+01:47:36,739 --> 01:47:39,779
+So, it's called the interval of convergence for the power series.
+
+734
+01:47:39,779 --> 01:47:44,899
+Always centered at the A, at the center point.
+
+735
+01:47:48,260 --> 01:47:53,219
+At point X with X minus A less than R, the series converges absolutely.
+
+736
+01:47:54,099 --> 01:47:59,859
+If the series converges for all values of X, again, radius of convergence is infinite because
+
+737
+01:47:59,859 --> 01:48:03,699
+interval of convergence is equal to full real line.
+
+738
+01:48:03,699 --> 01:48:05,539
+Any real number, it is convergent.
+
+739
+01:48:06,340 --> 01:48:08,260
+Like we did in the second case.
+
+740
+01:48:09,380 --> 01:48:16,579
+Again, in the third case, if it converges at only center, we say that radius is zero.
+
+741
+01:48:17,219 --> 01:48:21,059
+Because we have no interval of convergence on the one point.
+
+742
+01:48:21,059 --> 01:48:25,460
+And the point specifically, the radius is zero.
+
+743
+01:48:25,460 --> 01:48:28,500
+So, no interval of convergence we will have in the third case.
+
+744
+01:48:32,179 --> 01:48:32,500
+Next.
+
+745
+01:48:34,819 --> 01:48:39,300
+What about choosing or finding these intervals?
+
+746
+01:48:39,300 --> 01:48:46,019
+You can ask me how will you get or how will we get that interval of convergence?
+
+747
+01:48:46,019 --> 01:48:47,939
+After which operation we can find it?
+
+748
+01:48:47,939 --> 01:48:52,099
+How can we understand the radius of convergence or the interval of convergence?
+
+749
+01:48:52,739 --> 01:48:53,619
+Let's see.
+
+750
+01:48:53,619 --> 01:48:55,779
+How to test the power series for convergence?
+
+751
+01:48:56,420 --> 01:48:59,219
+More generally, we are using the ratio test.
+
+752
+01:48:59,219 --> 01:49:03,380
+Sometimes root test can be applied because the conditions are so similar.
+
+753
+01:49:03,380 --> 01:49:07,779
+And the cases of the result of the limit is similar.
+
+754
+01:49:07,779 --> 01:49:09,139
+Same conditions they have.
+
+755
+01:49:10,019 --> 01:49:12,500
+Yes, just choose the proper one, the ratio or root.
+
+756
+01:49:12,500 --> 01:49:13,219
+It doesn't matter.
+
+757
+01:49:14,179 --> 01:49:17,939
+To find the interval where the series converges absolutely.
+
+758
+01:49:18,739 --> 01:49:24,260
+And if we have such an interval, that means such an expression, it results an interval.
+
+759
+01:49:24,260 --> 01:49:28,420
+Because this absolute volume means that it is absolutely less than R.
+
+760
+01:49:28,420 --> 01:49:30,340
+That means positive one is less than R.
+
+761
+01:49:30,340 --> 01:49:32,019
+Negative one is again less than R.
+
+762
+01:49:32,019 --> 01:49:36,659
+That means A minus R less than X less than A plus R.
+
+763
+01:49:36,659 --> 01:49:37,460
+After this one.
+
+764
+01:49:38,819 --> 01:49:42,819
+Minus R less than X minus I, A less than R.
+
+765
+01:49:43,859 --> 01:49:46,340
+Add A to every side.
+
+766
+01:49:46,340 --> 01:49:49,939
+So A minus R less than X less than A plus R.
+
+767
+01:49:52,500 --> 01:49:57,619
+You will have such an expression while using the ratio or root test.
+
+768
+01:49:57,619 --> 01:50:02,019
+And then you will just specify the interval of convergence.
+
+769
+01:50:02,579 --> 01:50:13,059
+Secondly, if you get such an interval, you cannot be sure about the existence of the endpoints about the convergence to the interval.
+
+770
+01:50:13,059 --> 01:50:20,260
+We need to test for the endpoints specifically and then add if they are convergent or not.
+
+771
+01:50:21,460 --> 01:50:28,979
+So if the interval of absolute convergence is finite, test for the convergence or divergence at each endpoint.
+
+772
+01:50:28,979 --> 01:50:30,819
+A minus R, A plus R.
+
+773
+01:50:30,819 --> 01:50:37,059
+Also, I want to say that since we are having the absolute values of the power series always,
+
+774
+01:50:37,059 --> 01:50:41,699
+We are just talking about the absolute convergence if you remember.
+
+775
+01:50:41,699 --> 01:50:49,699
+So if you are having the absolute values of the power series, we are just talking about the power series.
+
+776
+01:50:49,699 --> 01:50:55,699
+So if you are having the power series, we are just talking about the power series.
+
+777
+01:50:42,068 --> 01:51:42,068
+Bu, bu
+
+778
+01:51:42,068 --> 01:51:49,807
+If the interval of absolute convergence is this, the series diverges for x minus a greater than r.
+
+779
+01:51:50,828 --> 01:51:57,688
+It doesn't even converge conditionally because the end-term test does not approach zero for those values of x.
+
+780
+01:51:57,807 --> 01:52:03,668
+That means outside any point outside of the interval of absolute convergence,
+
+781
+01:52:04,728 --> 01:52:10,228
+we can directly say the power series diverges because it has no condition for convergence.
+
+782
+01:52:10,228 --> 01:52:13,427
+so it doesn't even converge conditionally.
+
+783
+01:52:14,507 --> 01:52:14,988
+Okay.
+
+784
+01:52:20,756 --> 01:52:23,216
+You will understand, I think, easily in the exercise.
+
+785
+01:52:25,576 --> 01:52:29,356
+Let's see how we'll start with the ratio test to our power series.
+
+786
+01:52:29,796 --> 01:52:34,396
+Always we start with the limit of absolute values.
+
+787
+01:52:34,916 --> 01:52:38,916
+Normally for ratio test, we have An plus 1 over An, no absolute value.
+
+788
+01:52:39,296 --> 01:52:43,876
+But in power series, we'll use the absolute values of Un plus 1 over Un,
+
+789
+01:52:44,516 --> 01:52:45,735
+when the limit form of it.
+
+790
+01:52:45,735 --> 01:52:53,235
+You write the terms Un plus 1 over Un, and look for the limit of it.
+
+791
+01:52:53,856 --> 01:52:58,695
+The terms are just having the x minus A, x minus C, whatever it is, no problem,
+
+792
+01:52:59,036 --> 01:53:00,115
+outside of the limit.
+
+793
+01:53:00,856 --> 01:53:02,916
+Evaluate the limit when it is going to infinity.
+
+794
+01:53:03,615 --> 01:53:06,216
+That means these are the functions of N terms.
+
+795
+01:53:06,796 --> 01:53:07,695
+Get the limit of it.
+
+796
+01:53:08,356 --> 01:53:12,695
+This limit will be L always, and L is 1 over R.
+
+797
+01:53:12,695 --> 01:53:16,056
+And look at this step.
+
+798
+01:53:16,336 --> 01:53:19,256
+Once you are trying to get the limit of this expression,
+
+799
+01:53:19,796 --> 01:53:22,436
+separate x minus C always in the absolute value,
+
+800
+01:53:22,896 --> 01:53:24,936
+and the other N terms get the limit.
+
+801
+01:53:25,655 --> 01:53:26,195
+And then look.
+
+802
+01:53:27,076 --> 01:53:29,016
+Why do you think it is less than 1?
+
+803
+01:53:29,016 --> 01:53:45,016
+You're going to be the limit of this expression.
+
+804
+01:53:42,547 --> 01:53:53,307
+This expression says that it must be less than one and then so we have this interval. Why it must be less than one? Please think a little bit.
+
+805
+01:54:00,435 --> 01:54:03,275
+[öğrenci], it doesn't matter C or A.
+
+806
+01:54:03,615 --> 01:54:05,076
+Okay, any number.
+
+807
+01:54:06,095 --> 01:54:08,095
+Sometimes V, C, sometimes A.
+
+808
+01:54:08,235 --> 01:54:08,875
+It doesn't matter.
+
+809
+01:54:10,195 --> 01:54:11,815
+And Demirius, you're right completely.
+
+810
+01:54:12,595 --> 01:54:14,055
+To be convergent, of course,
+
+811
+01:54:14,135 --> 01:54:16,675
+because just remember the condition of ratio test.
+
+812
+01:54:17,675 --> 01:54:18,555
+Convergent condition.
+
+813
+01:54:18,755 --> 01:54:20,956
+If the limit is less than 1, it is convergent.
+
+814
+01:54:21,055 --> 01:54:21,355
+Well done.
+
+815
+01:54:22,095 --> 01:54:24,775
+If the limit is less than 1, it is convergent.
+
+816
+01:54:24,775 --> 01:54:28,395
+And we are just trying to get the such values of X,
+
+817
+01:54:28,395 --> 01:54:30,536
+which makes the power series convergent.
+
+818
+01:54:30,815 --> 01:54:32,996
+Of course, this condition must be satisfied.
+
+819
+01:54:33,235 --> 01:54:35,715
+Firstly, in order to say that,
+
+820
+01:54:35,855 --> 01:54:37,675
+okay, for this values of X,
+
+821
+01:54:38,175 --> 01:54:39,815
+okay, the power series convergent.
+
+822
+01:54:40,115 --> 01:54:43,036
+That's why we need to just make it satisfied
+
+823
+01:54:43,036 --> 01:54:46,215
+less than 1 to make it convergent.
+
+824
+01:54:46,635 --> 01:54:48,115
+To find the values of X,
+
+825
+01:54:48,355 --> 01:54:50,255
+which makes the power series convergent.
+
+826
+01:54:50,576 --> 01:54:53,895
+That's why this condition must be satisfied by you.
+
+827
+01:54:53,895 --> 01:54:58,315
+First to say, okay, I evaluate the limit of the terms of N.
+
+828
+01:54:58,395 --> 01:54:59,635
+function, right?
+
+829
+01:54:59,715 --> 01:55:01,675
+X minus C, X minus A, it doesn't matter.
+
+830
+01:55:02,036 --> 01:55:03,015
+Less than 1.
+
+831
+01:55:04,235 --> 01:55:05,555
+If it is less than 1,
+
+832
+01:55:05,615 --> 01:55:07,255
+let's see which values of X we get.
+
+833
+01:55:07,355 --> 01:55:09,215
+That's why it's the interval of convergence,
+
+834
+01:55:09,615 --> 01:55:10,415
+absolute convergence.
+
+835
+01:55:11,195 --> 01:55:12,456
+Absolutely convergence,
+
+836
+01:55:12,595 --> 01:55:15,175
+because we start with the absolute values of the series.
+
+837
+01:55:15,915 --> 01:55:17,295
+That's why this interval
+
+838
+01:55:17,295 --> 01:55:19,775
+is the interval of absolute convergence.
+
+839
+01:55:20,355 --> 01:55:21,395
+And here,
+
+840
+01:55:23,135 --> 01:55:25,235
+once you have this term alone,
+
+841
+01:55:25,235 --> 01:55:26,275
+X minus C,
+
+842
+01:55:26,275 --> 01:55:29,275
+less than a number R,
+
+843
+01:55:29,775 --> 01:55:30,536
+1 over L,
+
+844
+01:55:31,595 --> 01:55:33,175
+will be the radius of convergence,
+
+845
+01:55:33,695 --> 01:55:34,135
+always.
+
+846
+01:55:35,456 --> 01:55:37,555
+So, this interval you will get,
+
+847
+01:55:37,635 --> 01:55:38,835
+such an interval you will get,
+
+848
+01:55:39,095 --> 01:55:41,735
+it is the interval of absolute convergence.
+
+849
+01:55:42,576 --> 01:55:43,935
+As the last step,
+
+850
+01:55:44,135 --> 01:55:45,775
+you need to test for the endpoints,
+
+851
+01:55:45,956 --> 01:55:46,755
+R plus C,
+
+852
+01:55:47,515 --> 01:55:49,275
+minus R plus C.
+
+853
+01:55:49,275 --> 01:55:53,255
+And if these points also gives the continuous,
+
+854
+01:55:53,515 --> 01:55:53,895
+I'm sorry,
+
+855
+01:55:54,115 --> 01:55:54,555
+convergence,
+
+856
+01:55:54,915 --> 01:55:55,815
+you will add them
+
+857
+01:55:55,815 --> 01:55:57,615
+and make it closed interval,
+
+858
+01:55:57,735 --> 01:55:57,956
+maybe,
+
+859
+01:55:58,235 --> 01:55:59,496
+according to the cases.
+
+860
+01:56:01,855 --> 01:56:02,456
+Okay.
+
+861
+01:56:16,979 --> 01:56:18,319
+And so, continue.
+
+862
+01:56:22,260 --> 01:56:33,600
+İlk başta, find the radius and the interval of convergence of the power series, which is 0 to infinity n factorial x minus 2 to n over 3 to n.
+
+863
+01:56:35,680 --> 01:56:36,079
+Hmm.
+
+864
+01:56:37,800 --> 01:56:39,520
+Let's deal with this power series.
+
+865
+01:56:39,699 --> 01:56:42,600
+First, tell me, what is the center of this power series?
+
+866
+01:56:47,028 --> 01:56:54,028
+A'ın
+
+867
+01:56:53,779 --> 01:56:55,359
+Evet, you're right. 2.
+
+868
+01:56:55,779 --> 01:56:58,000
+Çünkü x minus 2 we have.
+
+869
+01:56:58,519 --> 01:56:59,759
+Yes, the center is 2.
+
+870
+01:57:00,039 --> 01:57:03,979
+And we are sure that this power series is convergent
+
+871
+01:57:03,979 --> 01:57:05,539
+at least at the point x is 2
+
+872
+01:57:05,539 --> 01:57:07,099
+and maybe the other points we have.
+
+873
+01:57:07,539 --> 01:57:08,500
+Okay, we will search.
+
+874
+01:57:11,259 --> 01:57:15,519
+And x minus a, here x minus 2.
+
+875
+01:57:16,279 --> 01:57:18,939
+And cn, that means the functions of n,
+
+876
+01:57:19,019 --> 01:57:22,219
+which is the coefficient, n factorial over 3 to n.
+
+877
+01:57:22,219 --> 01:57:25,679
+Okay, so as the first step,
+
+878
+01:57:25,819 --> 01:57:28,380
+always get the absolute value of it
+
+879
+01:57:28,380 --> 01:57:29,880
+and get the limit of it
+
+880
+01:57:29,880 --> 01:57:32,759
+and use un plus 1 over un
+
+881
+01:57:32,759 --> 01:57:34,340
+or an plus 1 over an.
+
+882
+01:57:34,439 --> 01:57:35,079
+It doesn't matter.
+
+883
+01:57:35,719 --> 01:57:41,239
+Okay, that means apply ratio test to this.
+
+884
+01:57:42,460 --> 01:57:44,859
+Apply ratio test to the power series
+
+885
+01:57:44,859 --> 01:57:46,199
+in the absolute form
+
+886
+01:57:46,199 --> 01:57:48,059
+and make it less than 1
+
+887
+01:57:48,059 --> 01:57:49,759
+and then get the interval.
+
+888
+01:57:50,259 --> 01:57:50,679
+Let's see.
+
+889
+01:57:52,219 --> 01:57:53,939
+For this example, we will do it together
+
+890
+01:57:53,939 --> 01:57:55,840
+and the next one, you will do it.
+
+891
+01:57:55,880 --> 01:57:56,759
+I think you will learn.
+
+892
+01:57:57,179 --> 01:57:57,559
+Let's see.
+
+893
+01:57:58,239 --> 01:57:58,599
+Limit.
+
+894
+01:57:58,679 --> 01:57:59,359
+When n is going to,
+
+895
+01:57:59,380 --> 01:58:00,439
+always we start with this.
+
+896
+01:58:00,859 --> 01:58:02,219
+Limit n is going to infinity
+
+897
+01:58:02,219 --> 01:58:03,340
+and the absolute value.
+
+898
+01:58:04,159 --> 01:58:05,340
+Un plus 1 over un.
+
+899
+01:58:06,199 --> 01:58:06,859
+What are they?
+
+900
+01:58:07,859 --> 01:58:09,079
+n plus 1 factorial.
+
+901
+01:58:10,279 --> 01:58:12,000
+x minus 2 to n plus 1.
+
+902
+01:58:12,059 --> 01:58:13,300
+We are writing n plus 1.
+
+903
+01:58:13,960 --> 01:58:16,679
+3 to n plus 1 over un.
+
+904
+01:58:16,679 --> 01:58:19,899
+That means times 1 over un.
+
+905
+01:58:19,899 --> 01:58:20,579
+Okay.
+
+906
+01:58:22,059 --> 01:58:24,059
+And due to the needed operations
+
+907
+01:58:24,059 --> 01:58:25,199
+and the cancellations,
+
+908
+01:58:25,399 --> 01:58:26,819
+you will have always differ.
+
+909
+01:58:27,319 --> 01:58:29,079
+Always separated x terms
+
+910
+01:58:29,079 --> 01:58:30,479
+and the n terms.
+
+911
+01:58:30,679 --> 01:58:30,819
+Okay.
+
+912
+01:58:30,859 --> 01:58:31,420
+Don't forget.
+
+913
+01:58:31,679 --> 01:58:32,960
+Separate x minus a.
+
+914
+01:58:33,300 --> 01:58:34,939
+Here it is x minus 2.
+
+915
+01:58:35,279 --> 01:58:35,719
+Absolutely.
+
+916
+01:58:36,300 --> 01:58:38,359
+Times the rest of the function.
+
+917
+01:58:38,619 --> 01:58:39,500
+Function of n.
+
+918
+01:58:39,500 --> 01:58:42,199
+And when n is going to infinity,
+
+919
+01:58:42,779 --> 01:58:44,380
+evaluate first this limit.
+
+920
+01:58:45,199 --> 01:58:45,460
+Okay.
+
+921
+01:58:46,019 --> 01:58:47,219
+Separate x minus 2.
+
+922
+01:58:47,539 --> 01:58:48,899
+x minus 2 times
+
+923
+01:58:48,899 --> 01:58:50,599
+what we have as the limit of it.
+
+924
+01:58:51,559 --> 01:58:52,979
+Limit when n is going to infinity,
+
+925
+01:58:53,119 --> 01:58:54,199
+n plus 1 over 3,
+
+926
+01:58:54,960 --> 01:58:55,819
+going to infinity.
+
+927
+01:58:57,000 --> 01:58:57,899
+What we get?
+
+928
+01:58:59,939 --> 01:59:01,539
+Limit when n is going to infinity,
+
+929
+01:59:01,679 --> 01:59:03,439
+un over un plus 1 over un
+
+930
+01:59:03,439 --> 01:59:04,639
+is going to infinity.
+
+931
+01:59:06,039 --> 01:59:06,479
+So.
+
+932
+01:59:13,140 --> 01:59:19,119
+Remember the ratio test. When it is going to infinity, what does it mean? When it is infinite.
+
+933
+01:59:23,444 --> 01:59:25,264
+Result of the limit is infinite.
+
+934
+01:59:25,384 --> 01:59:25,923
+What happens?
+
+935
+01:59:29,587 --> 01:59:30,567
+Evet, you're right.
+
+936
+01:59:30,627 --> 01:59:31,447
+It's divergent.
+
+937
+01:59:32,207 --> 01:59:37,307
+This means for any values of x, this power series is always divergent.
+
+938
+01:59:37,987 --> 01:59:41,387
+Only at the center it is convergent.
+
+939
+01:59:41,927 --> 01:59:43,167
+Only at x is 2.
+
+940
+01:59:43,167 --> 01:59:48,547
+And we cannot find any other real number which makes that convergent.
+
+941
+01:59:48,987 --> 01:59:54,407
+Which means at only one point we have the convergence at the center.
+
+942
+01:59:55,007 --> 01:59:58,087
+So the radius of convergent is 0.
+
+943
+01:59:58,087 --> 02:00:01,967
+Because one point and no interval of convergence do you have.
+
+944
+02:00:02,527 --> 02:00:04,768
+That's why we have r is 0.
+
+945
+02:00:05,648 --> 02:00:08,407
+And we have no interval of convergence here.
+
+946
+02:00:08,667 --> 02:00:11,447
+Since we have limit is going to infinity.
+
+947
+02:00:11,907 --> 02:00:15,907
+When it's infinite it is divergent because for any values of x.
+
+948
+02:00:16,307 --> 02:00:19,207
+Only at x is 2 we have different case.
+
+949
+02:00:21,228 --> 02:00:23,847
+If you want you can learn with l or r.
+
+950
+02:00:24,087 --> 02:00:25,087
+It is up to you.
+
+951
+02:00:25,087 --> 02:00:35,327
+L is limit of these terms and multiplicative inverse is directly equal to the interval of, I'm sorry, radius of convergence r.
+
+952
+02:00:35,967 --> 02:00:37,247
+R is 1 over l.
+
+953
+02:00:37,707 --> 02:00:41,747
+L is the limit of the n terms except x minus a.
+
+954
+02:00:41,747 --> 02:01:11,367
+Okay.
+
+955
+02:00:48,083 --> 02:00:49,863
+Now, I'm waiting for your questions.
+
+956
+02:01:10,387 --> 02:01:18,207
+Any question? Are you okay? Do you want me to repeat it? Okay. Okay.
+
+957
+02:01:24,724 --> 02:01:25,724
+So, continue.
+
+958
+02:01:26,404 --> 02:01:26,923
+Well done.
+
+959
+02:01:30,579 --> 02:01:36,559
+Now, please look for the first one.
+
+960
+02:01:37,220 --> 02:01:41,000
+It says, find the radius and interval of convergence of these power series.
+
+961
+02:01:44,916 --> 02:01:53,876
+x to n over n factorial. Let's see the first question, the others will be for you.
+
+962
+02:01:55,956 --> 02:02:04,516
+When limit is n is going to infinity, u n plus 1 over u n, write it, u n plus 1, x to n,
+
+963
+02:02:04,516 --> 02:02:10,195
+it was x to n over n factorial, x to n plus 1 over n plus 1 factorial times 1 over u n,
+
+964
+02:02:10,195 --> 02:02:18,195
+n factorial over x to n. See the cancellations then get what you get x over n plus 1. Always please
+
+965
+02:02:18,195 --> 02:02:25,315
+differ the terms of x and the n terms. Tell me what is the center of this power series? First,
+
+966
+02:02:25,315 --> 02:02:32,676
+tell me what's the center of it. Yes, well done. Center is 0 here because we have x minus 0. So
+
+967
+02:02:32,676 --> 02:02:40,115
+always differ them. x minus 0 times the other terms will be customs and n. Just get the limit of these
+
+968
+02:02:40,115 --> 02:02:47,155
+terms. Limit when n is going to infinity, what happens? 1 over n plus 1. Yes, it's clearly 0. So
+
+969
+02:02:47,155 --> 02:03:02,115
+the limit is going to 0. What does it mean? When the limit in the ratio test is equal to 0.
+
+970
+02:02:58,355 --> 02:02:58,895
+Ok.
+
+971
+02:03:06,131 --> 02:03:08,391
+E to X with power series, dua.
+
+972
+02:03:08,911 --> 02:03:10,131
+I couldn't understand.
+
+973
+02:03:21,555 --> 02:03:21,995
+Maybe.
+
+974
+02:03:24,995 --> 02:03:26,076
+Now tell me.
+
+975
+02:03:27,915 --> 02:03:28,955
+Ah, yes, okay.
+
+976
+02:03:29,815 --> 02:03:30,795
+Now tell me.
+
+977
+02:03:31,615 --> 02:03:36,076
+What happens in the ratio test as a result of zero?
+
+978
+02:03:36,555 --> 02:03:37,275
+What does it mean?
+
+979
+02:03:47,699 --> 02:03:48,899
+Remember the conditions?
+
+980
+02:03:48,899 --> 02:03:50,099
+What happens at zero?
+
+981
+02:03:50,899 --> 02:03:55,220
+When it is going to zero limit an plus 1 over an.
+
+982
+02:03:56,260 --> 02:03:57,539
+Yes, you're right.
+
+983
+02:03:57,539 --> 02:03:59,460
+Convergence because it's less than 1.
+
+984
+02:04:00,019 --> 02:04:01,059
+You're right.
+
+985
+02:04:01,059 --> 02:04:01,779
+What does it mean?
+
+986
+02:04:03,220 --> 02:04:05,699
+This power series is always convergent.
+
+987
+02:04:05,699 --> 02:04:09,619
+For any values of x, it is always because already less than 1.
+
+988
+02:04:10,659 --> 02:04:12,579
+For any, it's free of x.
+
+989
+02:04:12,579 --> 02:04:20,099
+Always it is directly going to zero means it is always without belonging to the values of x.
+
+990
+02:04:21,460 --> 02:04:26,500
+This limit is always going to zero means it is always convergent.
+
+991
+02:04:27,220 --> 02:04:30,500
+So yes, [öğrenci], you're right.
+
+992
+02:04:30,500 --> 02:04:33,300
+I think you mean real numbers, real line here with R.
+
+993
+02:04:34,099 --> 02:04:37,859
+So the interval of convergence, yes, that's the real line, full real line.
+
+994
+02:04:37,859 --> 02:04:42,340
+Because again, here the convergence is not belonging with x.
+
+995
+02:04:42,899 --> 02:04:49,059
+It is directly convergent, which means the series converges absolutely for any real number.
+
+996
+02:04:50,260 --> 02:04:55,380
+So radius of convergence is full real numbers, full real line.
+
+997
+02:04:55,380 --> 02:04:57,220
+So it's infinity.
+
+998
+02:04:57,220 --> 02:05:01,460
+So the interval of convergence is negative infinite to positive infinity.
+
+999
+02:05:01,460 --> 02:05:02,340
+R, real line.
+
+1000
+02:05:02,340 --> 02:05:05,220
+And the radius of convergence is infinite.
+
+1001
+02:05:06,260 --> 02:05:10,420
+Because it is always convergent for any values of x.
+
+1002
+02:05:12,260 --> 02:05:14,260
+Okay.
+
+1003
+02:05:30,931 --> 02:05:31,612
+4b.
+
+1004
+02:05:33,032 --> 02:05:34,631
+Please do it and tell me.
+
+1005
+02:05:35,831 --> 02:05:41,371
+Write limit when n is going to infinity in the absolute value un plus 1 over un.
+
+1006
+02:05:42,271 --> 02:05:43,511
+Do it and tell me.
+
+1007
+02:06:07,988 --> 02:06:08,347
+Ok.
+
+1008
+02:06:12,307 --> 02:06:14,807
+So, [öğrenci], what's the interval of convergence?
+
+1009
+02:06:26,931 --> 02:06:27,931
+Evet, you are right.
+
+1010
+02:06:28,131 --> 02:06:38,091
+If you are okay, okay, it becomes, I'm sorry, if you get divergence only,
+
+1011
+02:06:38,251 --> 02:06:44,192
+that means at the center of the power series we have convergence outside for any real value.
+
+1012
+02:06:45,331 --> 02:06:51,112
+We have divergence, means no interval of convergence and the radius of convergence becomes zero.
+
+1013
+02:06:51,572 --> 02:06:52,211
+Yes, you are right.
+
+1014
+02:06:52,291 --> 02:06:53,351
+Let's see the solution.
+
+1015
+02:06:54,492 --> 02:06:55,152
+Yes, you are right.
+
+1016
+02:06:55,231 --> 02:06:56,152
+Completely, thank you.
+
+1017
+02:06:56,931 --> 02:06:58,572
+Un plus one over Un.
+
+1018
+02:06:59,931 --> 02:07:02,112
+Un plus one factorial over Un factorial.
+
+1019
+02:07:02,271 --> 02:07:02,391
+Un plus one factorial.
+
+1020
+02:07:02,391 --> 02:07:03,471
+Un plus one over Un.
+
+1021
+02:07:03,891 --> 02:07:06,431
+Again, center is zero as you see here.
+
+1022
+02:07:06,851 --> 02:07:07,532
+Center is zero.
+
+1023
+02:07:07,612 --> 02:07:08,431
+Un plus one over Un.
+
+1024
+02:07:10,271 --> 02:07:13,471
+Un plus one factorial over Un factorial.
+
+1025
+02:07:13,471 --> 02:07:16,471
+Un plus one factorial.
+
+1026
+02:07:16,471 --> 02:07:17,471
+Un plus one over Un.
+
+1027
+02:07:17,471 --> 02:07:19,471
+Again, center is zero as you see here.
+
+1028
+02:07:19,471 --> 02:07:20,471
+Center is zero.
+
+1029
+02:07:20,471 --> 02:07:21,471
+Un plus one minus zero we have.
+
+1030
+02:07:21,471 --> 02:07:22,471
+Un plus one factorial over Un.
+
+1031
+02:07:22,471 --> 02:07:48,471
+Un plus one factorial over Un factorial.
+
+1032
+02:07:54,963 --> 02:07:55,443
+Testi.
+
+1033
+02:10:11,636 --> 02:10:13,796
+Okay, what did you get? Let me look.
+
+1034
+02:10:19,476 --> 02:10:20,115
+Wait.
+
+1035
+02:10:24,115 --> 02:10:27,216
+R is 1, limit is 1, limit is 1.
+
+1036
+02:10:32,435 --> 02:10:33,155
+X'e 1.
+
+1037
+02:10:34,675 --> 02:10:37,755
+Maybe incompleti, because limit equal to x.
+
+1038
+02:10:38,395 --> 02:10:39,115
+Let's see.
+
+1039
+02:10:41,956 --> 02:10:42,795
+Just think.
+
+1040
+02:10:43,655 --> 02:10:45,815
+While you are evaluating the limit of,
+
+1041
+02:10:46,355 --> 02:10:48,355
+in the absolute value of un plus 1 over un,
+
+1042
+02:10:49,015 --> 02:10:51,835
+possibly you need to get the absolute value of f,
+
+1043
+02:10:52,115 --> 02:10:54,255
+x minus a, or x only.
+
+1044
+02:10:54,935 --> 02:10:57,235
+You have to get, because you cannot evaluate the limit of,
+
+1045
+02:10:57,715 --> 02:11:00,195
+when n is going to infinity of x minus a,
+
+1046
+02:11:00,195 --> 02:11:01,155
+it doesn't mean anything.
+
+1047
+02:11:02,155 --> 02:11:06,675
+So, x minus a will be left always in the solution.
+
+1048
+02:11:07,355 --> 02:11:10,975
+But, as a result of the limit of the n terms,
+
+1049
+02:11:11,415 --> 02:11:13,875
+the function of n and the custom numbers,
+
+1050
+02:11:14,695 --> 02:11:17,335
+according to the values of it, values of them,
+
+1051
+02:11:17,615 --> 02:11:20,755
+it can be going to 0 or infinity or other numbers.
+
+1052
+02:11:21,015 --> 02:11:21,155
+Okay?
+
+1053
+02:11:21,675 --> 02:11:25,055
+You may have 0, infinity, or other custom numbers.
+
+1054
+02:11:25,395 --> 02:11:30,095
+And according to the case that's different from 0 and infinity,
+
+1055
+02:11:30,095 --> 02:11:32,875
+you will find an interval, always.
+
+1056
+02:11:33,595 --> 02:11:33,875
+Okay?
+
+1057
+02:11:34,155 --> 02:11:34,595
+Let's see.
+
+1058
+02:11:35,935 --> 02:11:36,695
+It's so normal.
+
+1059
+02:11:36,795 --> 02:11:37,835
+It's your first question.
+
+1060
+02:11:38,295 --> 02:11:39,015
+It's so normal.
+
+1061
+02:11:39,815 --> 02:11:40,555
+Don't worry.
+
+1062
+02:11:41,595 --> 02:11:41,875
+Look.
+
+1063
+02:11:42,536 --> 02:11:43,335
+Limit is 1.
+
+1064
+02:11:43,555 --> 02:11:43,996
+Thank you.
+
+1065
+02:11:44,175 --> 02:11:44,675
+You're right.
+
+1066
+02:11:44,675 --> 02:11:48,295
+So, you get the limit, which is equal to x.
+
+1067
+02:11:48,395 --> 02:11:50,135
+It is so normal, [öğrenci], again.
+
+1068
+02:11:51,956 --> 02:11:53,815
+Next, you have to just think that,
+
+1069
+02:11:54,295 --> 02:11:56,375
+in which conditions we have the continuity,
+
+1070
+02:11:56,456 --> 02:11:58,095
+I'm sorry, continuity, not continuity,
+
+1071
+02:11:58,175 --> 02:11:58,755
+the convergence,
+
+1072
+02:11:59,595 --> 02:12:01,315
+when it is less than 1,
+
+1073
+02:12:01,375 --> 02:12:03,915
+according to the condition of ratio test.
+
+1074
+02:12:03,915 --> 02:12:08,015
+So, say, once you get x and limit is 1,
+
+1075
+02:12:08,536 --> 02:12:09,895
+tau, always say,
+
+1076
+02:12:10,335 --> 02:12:11,175
+less than 1.
+
+1077
+02:12:11,415 --> 02:12:12,795
+If you don't have,
+
+1078
+02:12:13,095 --> 02:12:16,135
+as the result of this limit is 0 or infinity,
+
+1079
+02:12:16,475 --> 02:12:18,815
+you will have any finite number.
+
+1080
+02:12:19,415 --> 02:12:21,215
+Once you have any finite number,
+
+1081
+02:12:21,375 --> 02:12:21,835
+say that,
+
+1082
+02:12:22,076 --> 02:12:22,975
+whatever you have,
+
+1083
+02:12:23,295 --> 02:12:25,456
+say that it must be less than 1.
+
+1084
+02:12:26,255 --> 02:12:26,835
+That's all.
+
+1085
+02:12:26,835 --> 02:12:28,975
+So, in that case,
+
+1086
+02:12:29,015 --> 02:12:29,935
+you will have an interval.
+
+1087
+02:12:31,175 --> 02:12:34,015
+And since this limit is equal to 1,
+
+1088
+02:12:34,795 --> 02:12:35,956
+r is 1 over L,
+
+1089
+02:12:36,255 --> 02:12:36,975
+always 1.
+
+1090
+02:12:37,076 --> 02:12:38,496
+That means the radius of convergence
+
+1091
+02:12:38,496 --> 02:12:40,375
+is already okay.
+
+1092
+02:12:41,536 --> 02:12:41,915
+Okay.
+
+1093
+02:12:42,235 --> 02:12:43,915
+I thank you for participation.
+
+1094
+02:12:45,175 --> 02:12:45,595
+And so,
+
+1095
+02:12:46,735 --> 02:12:47,395
+this series,
+
+1096
+02:12:48,355 --> 02:12:49,935
+absolutely convergence for,
+
+1097
+02:12:50,415 --> 02:12:50,915
+absolutely,
+
+1098
+02:12:51,135 --> 02:12:52,295
+when x is less than 1,
+
+1099
+02:12:52,355 --> 02:12:54,635
+we get after applying the ratio test
+
+1100
+02:12:54,635 --> 02:12:56,496
+and apply the convergence condition.
+
+1101
+02:12:56,835 --> 02:12:59,295
+We have x less than 1.
+
+1102
+02:12:59,496 --> 02:13:00,295
+What does it mean?
+
+1103
+02:13:00,735 --> 02:13:01,755
+Which interval is it?
+
+1104
+02:13:02,235 --> 02:13:03,015
+Minus 1,
+
+1105
+02:13:03,076 --> 02:13:03,635
+less than x,
+
+1106
+02:13:03,695 --> 02:13:04,255
+less than 1.
+
+1107
+02:13:04,375 --> 02:13:04,815
+Clearly,
+
+1108
+02:13:05,115 --> 02:13:05,456
+easy.
+
+1109
+02:13:05,715 --> 02:13:05,935
+Okay.
+
+1110
+02:13:06,755 --> 02:13:07,155
+Yes,
+
+1111
+02:13:07,315 --> 02:13:08,315
+we got the interval.
+
+1112
+02:13:08,615 --> 02:13:09,895
+And this is the interval
+
+1113
+02:13:09,895 --> 02:13:11,255
+of absolute convergence.
+
+1114
+02:13:11,895 --> 02:13:13,555
+But we have not finished
+
+1115
+02:13:13,555 --> 02:13:15,055
+once you get an interval.
+
+1116
+02:13:15,895 --> 02:13:16,375
+Also,
+
+1117
+02:13:16,595 --> 02:13:17,095
+lastly,
+
+1118
+02:13:17,095 --> 02:13:19,456
+you have to test for the endpoints.
+
+1119
+02:13:20,755 --> 02:13:21,355
+Endpoints,
+
+1120
+02:13:21,475 --> 02:13:22,456
+1 and minus 1.
+
+1121
+02:13:23,576 --> 02:13:24,135
+Apply,
+
+1122
+02:13:24,915 --> 02:13:25,635
+x is 1,
+
+1123
+02:13:26,315 --> 02:13:26,815
+test it,
+
+1124
+02:13:26,835 --> 02:13:27,755
+apply,
+
+1125
+02:13:27,895 --> 02:13:28,895
+x is minus 1,
+
+1126
+02:13:29,095 --> 02:13:29,456
+again,
+
+1127
+02:13:29,595 --> 02:13:31,155
+test the power series.
+
+1128
+02:13:32,255 --> 02:13:32,935
+And then say,
+
+1129
+02:13:33,255 --> 02:13:35,055
+if these endpoints are included
+
+1130
+02:13:35,055 --> 02:13:36,935
+to the interval of convergence or not.
+
+1131
+02:13:39,735 --> 02:13:40,195
+Hmm.
+
+1132
+02:13:43,988 --> 02:13:45,568
+Okay, well done Doha.
+
+1133
+02:13:46,347 --> 02:13:47,528
+It's not late, well done.
+
+1134
+02:13:47,628 --> 02:13:49,967
+If we get 1n divergence, very nice.
+
+1135
+02:13:50,188 --> 02:13:50,548
+Thank you.
+
+1136
+02:13:52,188 --> 02:13:52,967
+Let's look.
+
+1137
+02:13:54,588 --> 02:13:55,307
+4x is 1.
+
+1138
+02:13:56,008 --> 02:13:59,488
+4x is 1 means apply x is 1 here.
+
+1139
+02:14:00,268 --> 02:14:02,868
+1 over n over 1 over 2n.
+
+1140
+02:14:03,568 --> 02:14:04,048
+I'm sorry.
+
+1141
+02:14:04,328 --> 02:14:05,967
+1 to n over n.
+
+1142
+02:14:05,967 --> 02:14:08,028
+Which means, yes.
+
+1143
+02:14:09,467 --> 02:14:10,228
+Harmonic series.
+
+1144
+02:14:10,548 --> 02:14:11,748
+And we know it is divergence.
+
+1145
+02:14:11,748 --> 02:14:16,588
+That means x is 1 is not included to the interval of convergence.
+
+1146
+02:14:17,188 --> 02:14:17,688
+Isn't it?
+
+1147
+02:14:18,387 --> 02:14:20,128
+Yes, it mustn't include it.
+
+1148
+02:14:20,128 --> 02:14:21,548
+Because it gives the divergence.
+
+1149
+02:14:22,268 --> 02:14:23,768
+Okay, 1 is outside.
+
+1150
+02:14:24,368 --> 02:14:27,628
+So this part is open from x is 1.
+
+1151
+02:14:28,148 --> 02:14:30,728
+What about the other end point?
+
+1152
+02:14:31,008 --> 02:14:34,828
+Always, since they are symmetric, as the general structure of it.
+
+1153
+02:14:34,828 --> 02:14:37,068
+Because minus r, positive r.
+
+1154
+02:14:37,208 --> 02:14:40,548
+Or a minus r, a plus r.
+
+1155
+02:14:40,548 --> 02:14:42,708
+Always, we have the symmetric intervals.
+
+1156
+02:14:43,128 --> 02:14:46,268
+Which makes one end point positive 1.
+
+1157
+02:14:46,588 --> 02:14:50,148
+The other end point, write the corresponding alternating series.
+
+1158
+02:14:50,828 --> 02:14:56,028
+So for x is minus 1, we will have the alternating harmonic series.
+
+1159
+02:14:56,288 --> 02:14:57,668
+That means alternating form of it.
+
+1160
+02:14:57,948 --> 02:14:59,248
+Always we have this case.
+
+1161
+02:14:59,307 --> 02:14:59,768
+Don't forget.
+
+1162
+02:15:00,467 --> 02:15:03,048
+At two end points, we have one of them is positive 1.
+
+1163
+02:15:03,048 --> 02:15:04,807
+The other one is alternating 1.
+
+1164
+02:15:06,728 --> 02:15:09,927
+And I advise you to start with the positive 1.
+
+1165
+02:15:13,668 --> 02:15:14,467
+Yes, [öğrenci].
+
+1166
+02:15:15,228 --> 02:15:16,887
+Interval between any two numbers.
+
+1167
+02:15:17,008 --> 02:15:18,368
+We test for end point, isn't it?
+
+1168
+02:15:18,368 --> 02:15:18,588
+Yes.
+
+1169
+02:15:18,708 --> 02:15:22,668
+Because this test does not say anything about end points.
+
+1170
+02:15:23,048 --> 02:15:26,108
+At end points, we may have always different cases.
+
+1171
+02:15:26,328 --> 02:15:27,048
+Sometimes convergence.
+
+1172
+02:15:27,847 --> 02:15:28,688
+Sometimes divergence.
+
+1173
+02:15:28,688 --> 02:15:32,688
+We need to just apply and see on our own.
+
+1174
+02:15:32,847 --> 02:15:33,068
+Okay?
+
+1175
+02:15:34,068 --> 02:15:35,168
+We need to test them.
+
+1176
+02:15:38,771 --> 02:15:51,292
+Okay, and for x is minus 1, as you see, we have the alternating harmonic series, and we know that we have, we did it two times, I think, today, and it is convergent absolutely.
+
+1177
+02:15:52,412 --> 02:16:02,711
+So, interval of convergence, that means x is minus 1, makes the power series convergent, even though it is conditional, but it doesn't matter.
+
+1178
+02:16:02,711 --> 02:16:13,192
+Again, it is convergent. So, interval of convergence, minus 1, included x less than 1, because at 1 we have the divergence.
+
+1179
+02:16:14,431 --> 02:16:21,971
+Are you okay? And also the radius of convergence is 1 here. Do you understand it? Are you okay?
+
+1180
+02:16:23,112 --> 02:16:25,311
+Any question? I can repeat it if you want.
+
+1181
+02:16:32,628 --> 02:16:33,108
+Okay.
+
+1182
+02:16:36,108 --> 02:16:38,448
+It was a nice example for you, I think.
+
+1183
+02:16:38,788 --> 02:16:40,087
+Let's continue with the other one.
+
+1184
+02:16:41,908 --> 02:16:43,488
+Hmm, what about this one?
+
+1185
+02:16:45,288 --> 02:16:48,847
+2x minus 3 to n over n times 3 to n.
+
+1186
+02:16:52,628 --> 02:16:54,488
+Is it power series? What do you think?
+
+1187
+02:17:01,427 --> 02:17:05,507
+I think, yes, it's a power series, but what is the center?
+
+1188
+02:17:07,548 --> 02:17:08,347
+Is it three?
+
+1189
+02:17:16,531 --> 02:17:26,951
+Evet, you're right. Well done. 3 over 2. Of course, because in power series, generally, we have to get x minus a to n times cn, whatever it is.
+
+1190
+02:17:27,511 --> 02:17:39,111
+So here, we need to write it. 2 outside. 2 to n times x minus 3 over 2 to n, which makes the center 3 over 2. Yes, you're right.
+
+1191
+02:17:39,111 --> 02:17:40,751
+Enda.
+
+1192
+02:17:44,111 --> 02:17:47,231
+Apply the ratio test I'm waiting for you and tell me what you get.
+
+1193
+02:18:32,788 --> 02:18:33,308
+Ok.
+
+1194
+02:18:50,739 --> 02:18:51,579
+Anyone else?
+
+1195
+02:19:38,708 --> 02:19:39,608
+En olas.
+
+1196
+02:19:45,652 --> 02:19:46,332
+Okay.
+
+1197
+02:19:48,072 --> 02:19:48,652
+Possible.
+
+1198
+02:19:57,843 --> 02:19:58,603
+Wait a minute.
+
+1199
+02:20:07,891 --> 02:20:11,731
+The seed solution together.
+
+1200
+02:20:12,672 --> 02:20:13,172
+Okay.
+
+1201
+02:20:14,131 --> 02:20:14,592
+See.
+
+1202
+02:20:16,551 --> 02:20:17,012
+Oh yes.
+
+1203
+02:20:17,572 --> 02:20:18,572
+Zero and three.
+
+1204
+02:20:21,711 --> 02:20:22,231
+Look.
+
+1205
+02:20:23,152 --> 02:20:23,631
+Well done.
+
+1206
+02:20:26,231 --> 02:20:27,231
+Two outside.
+
+1207
+02:20:27,391 --> 02:20:27,832
+Two to n.
+
+1208
+02:20:28,311 --> 02:20:30,092
+X minus three over two to n.
+
+1209
+02:20:30,592 --> 02:20:31,711
+n times three to n.
+
+1210
+02:20:31,912 --> 02:20:32,191
+Okay.
+
+1211
+02:20:32,992 --> 02:20:34,731
+Apply limit when it's going to infinity.
+
+1212
+02:20:34,871 --> 02:20:35,351
+Absolutely.
+
+1213
+02:20:35,512 --> 02:20:36,471
+Un plus one or un.
+
+1214
+02:20:36,891 --> 02:20:37,652
+As usual.
+
+1215
+02:20:38,711 --> 02:20:39,672
+And write.
+
+1216
+02:20:40,332 --> 02:20:41,231
+Un plus one.
+
+1217
+02:20:42,111 --> 02:20:42,391
+Un.
+
+1218
+02:20:42,752 --> 02:20:43,432
+One over un.
+
+1219
+02:20:44,752 --> 02:20:45,131
+And.
+
+1220
+02:20:45,992 --> 02:20:48,631
+Do the needed operations and the cancellations.
+
+1221
+02:20:48,891 --> 02:20:49,332
+And see.
+
+1222
+02:20:49,851 --> 02:20:51,291
+Differ always the terms.
+
+1223
+02:20:52,512 --> 02:20:53,111
+No problem.
+
+1224
+02:20:53,252 --> 02:20:53,492
+Please.
+
+1225
+02:20:53,572 --> 02:20:55,512
+You can do any time.
+
+1226
+02:20:55,672 --> 02:20:56,471
+Sometimes wrong.
+
+1227
+02:20:56,592 --> 02:20:57,771
+Sometimes true.
+
+1228
+02:20:57,912 --> 02:20:58,512
+No problem.
+
+1229
+02:20:59,252 --> 02:21:00,271
+I thank all of you.
+
+1230
+02:21:01,271 --> 02:21:01,551
+Okay.
+
+1231
+02:21:01,912 --> 02:21:02,412
+Don't worry.
+
+1232
+02:21:03,912 --> 02:21:05,631
+Just defer the terms.
+
+1233
+02:21:05,631 --> 02:21:07,231
+into absolute value.
+
+1234
+02:21:07,231 --> 02:21:08,211
+X minus a.
+
+1235
+02:21:08,412 --> 02:21:09,351
+And the other terms.
+
+1236
+02:21:09,512 --> 02:21:11,131
+Please always differ them like this.
+
+1237
+02:21:11,492 --> 02:21:12,311
+X minus a.
+
+1238
+02:21:12,492 --> 02:21:13,332
+And the other terms.
+
+1239
+02:21:13,771 --> 02:21:16,512
+And limit is valid for the values of n.
+
+1240
+02:21:16,992 --> 02:21:19,012
+So limit is not deal with x.
+
+1241
+02:21:19,672 --> 02:21:20,371
+So limit is.
+
+1242
+02:21:20,912 --> 02:21:22,231
+Related with this function.
+
+1243
+02:21:22,691 --> 02:21:23,271
+Two over three.
+
+1244
+02:21:23,412 --> 02:21:24,332
+N over n plus one.
+
+1245
+02:21:24,332 --> 02:21:25,512
+So we have l.
+
+1246
+02:21:25,512 --> 02:21:26,492
+Two over three.
+
+1247
+02:21:29,072 --> 02:21:29,631
+Apply.
+
+1248
+02:21:31,391 --> 02:21:32,451
+Less than one.
+
+1249
+02:21:33,031 --> 02:21:33,432
+Okay.
+
+1250
+02:21:33,432 --> 02:21:34,672
+Of course.
+
+1251
+02:21:34,832 --> 02:21:36,271
+Always you need to just write.
+
+1252
+02:21:36,391 --> 02:21:37,051
+Less than one.
+
+1253
+02:21:37,111 --> 02:21:38,512
+Because when it is less than one.
+
+1254
+02:21:38,611 --> 02:21:39,451
+It is convergent.
+
+1255
+02:21:40,012 --> 02:21:40,971
+So what you get.
+
+1256
+02:21:41,111 --> 02:21:41,291
+Look.
+
+1257
+02:21:41,851 --> 02:21:43,912
+X minus three over two times.
+
+1258
+02:21:44,332 --> 02:21:45,031
+Two over three.
+
+1259
+02:21:45,811 --> 02:21:46,672
+Less than one.
+
+1260
+02:21:47,492 --> 02:21:48,652
+So apply.
+
+1261
+02:21:49,311 --> 02:21:49,951
+I'm sorry.
+
+1262
+02:21:50,211 --> 02:21:51,672
+Multiply three over two.
+
+1263
+02:21:51,932 --> 02:21:52,731
+To both sides.
+
+1264
+02:21:53,152 --> 02:21:53,492
+And get.
+
+1265
+02:21:53,672 --> 02:21:55,031
+X minus three over two.
+
+1266
+02:21:55,291 --> 02:21:56,531
+Less than three over two.
+
+1267
+02:21:57,531 --> 02:21:58,012
+So.
+
+1268
+02:21:58,711 --> 02:21:59,492
+Get the interval.
+
+1269
+02:21:59,992 --> 02:22:01,231
+I think it's easy to do.
+
+1270
+02:22:01,652 --> 02:22:02,691
+Minus three over two.
+
+1271
+02:22:02,691 --> 02:22:03,531
+and three over two.
+
+1272
+02:22:04,592 --> 02:22:05,172
+Apply.
+
+1273
+02:22:05,711 --> 02:22:07,031
+And add three over two.
+
+1274
+02:22:07,551 --> 02:22:08,791
+And get zero.
+
+1275
+02:22:09,191 --> 02:22:09,811
+Less than x.
+
+1276
+02:22:10,031 --> 02:22:10,711
+Less than three.
+
+1277
+02:22:10,891 --> 02:22:11,652
+Is the roughly.
+
+1278
+02:22:12,092 --> 02:22:13,351
+The interval of convergence.
+
+1279
+02:22:13,912 --> 02:22:16,111
+So the radius of convergence is.
+
+1280
+02:22:16,531 --> 02:22:16,891
+What?
+
+1281
+02:22:17,172 --> 02:22:17,731
+Radius.
+
+1282
+02:22:23,156 --> 02:22:24,496
+Radius of Convergence
+
+1283
+02:22:38,164 --> 02:22:40,224
+Evet, evet, 3 veya 2.
+
+1284
+02:22:47,443 --> 02:23:00,394
+Bu, 3 over 2'ye kadar yi'ye kadar yi'ye kadar yi'ye kadar yi'ye kadar yi'ye kadar yi'ye kadar yi'ye kadar yi'ye kadar yi'ye kadar yi'ye kadar yi'ye kadar yi'ye kadar yi'ye kadar yi'ye kadar yi'ye kadar yi'ye kadar yi'ye kadar yi'ye kadar yi'ye kadar yi'ye kadar yi'ye kadar yi'ye kadar yi'ye kadar yi'ye kadar yi'ye kadar yi'ye kadar yi'ye kadar yi'ye kadar yi'ye kadar yi'ye kadar yi'ye kadar yi'ye kadar yi'ye kadar yi'ye kadar yi'ye kadar yi'ye kadar yi'ye kadar yi'ye kadar yi'ye kadar yi'ye kadar yi'ye kadar yi'ye kadar yi'ye kadar
+
+1285
+02:23:12,691 --> 02:23:18,831
+Have you tested at the endpoints? Apply XS3. And what do you get?
+
+1286
+02:23:22,291 --> 02:23:24,731
+İz 3'e included to the interval of convergence.
+
+1287
+02:23:26,611 --> 02:23:29,152
+Okay, what happens at x's 3, Doha?
+
+1288
+02:23:29,591 --> 02:23:31,511
+So, divergence we have.
+
+1289
+02:23:39,827 --> 02:23:47,047
+At 0, we have the corresponding alternating series part.
+
+1290
+02:23:52,115 --> 02:23:54,695
+At 0, maybe, we have the convergence.
+
+1291
+02:24:01,075 --> 02:24:04,595
+Evet, [öğrenci], you're right.
+
+1292
+02:24:05,875 --> 02:24:06,635
+Evet, you're right.
+
+1293
+02:24:08,475 --> 02:24:10,755
+4x is 3, because you have 1 over n,
+
+1294
+02:24:10,755 --> 02:24:11,275
+probably.
+
+1295
+02:24:12,475 --> 02:24:13,555
+So for 0,
+
+1296
+02:24:13,995 --> 02:24:15,475
+alternating harmonic series
+
+1297
+02:24:15,475 --> 02:24:17,155
+and alternating harmonic series
+
+1298
+02:24:17,155 --> 02:24:18,755
+converges conditionally.
+
+1299
+02:24:19,275 --> 02:24:20,675
+Even though it's conditional,
+
+1300
+02:24:20,815 --> 02:24:21,615
+it's convergent.
+
+1301
+02:24:21,775 --> 02:24:23,855
+It gives the conditional convergence
+
+1302
+02:24:23,855 --> 02:24:26,595
+to the power series.
+
+1303
+02:24:28,155 --> 02:24:29,575
+How do we know that
+
+1304
+02:24:29,575 --> 02:24:32,015
+these intervals are open or closed intervals?
+
+1305
+02:24:32,735 --> 02:24:33,895
+According to the end points,
+
+1306
+02:24:33,895 --> 02:24:35,255
+that's why we are testing it.
+
+1307
+02:24:36,055 --> 02:24:38,415
+If two points are not both included,
+
+1308
+02:24:38,735 --> 02:24:40,215
+it means an open interval.
+
+1309
+02:24:40,735 --> 02:24:42,375
+If one of them is included,
+
+1310
+02:24:42,735 --> 02:24:43,415
+none of them.
+
+1311
+02:24:44,015 --> 02:24:45,975
+One part is open, one part is closed.
+
+1312
+02:24:46,175 --> 02:24:47,735
+If both of them are included,
+
+1313
+02:24:48,015 --> 02:24:49,215
+they are closed intervals.
+
+1314
+02:24:49,215 --> 02:24:50,615
+That's why we are testing them
+
+1315
+02:24:51,455 --> 02:24:54,015
+in order to add to the interval or not.
+
+1316
+02:24:55,095 --> 02:24:56,095
+OK.
+
+1317
+02:24:56,655 --> 02:24:57,895
+That's why we are testing,
+
+1318
+02:24:57,895 --> 02:25:00,295
+because we cannot be sure
+
+1319
+02:25:00,295 --> 02:25:01,735
+what happens at the end points.
+
+1320
+02:25:02,455 --> 02:25:04,095
+That's why we are one by one.
+
+1321
+02:25:04,895 --> 02:25:07,295
+Just apply and see what happens
+
+1322
+02:25:07,295 --> 02:25:08,175
+at these points.
+
+1323
+02:25:08,695 --> 02:25:09,095
+Let's see.
+
+1324
+02:25:09,495 --> 02:25:10,055
+4x is 0.
+
+1325
+02:25:10,175 --> 02:25:10,735
+Like you said,
+
+1326
+02:25:10,975 --> 02:25:12,175
+the alternating harmonic series
+
+1327
+02:25:12,175 --> 02:25:13,975
+converges conditionally.
+
+1328
+02:25:14,255 --> 02:25:15,615
+That's why 0 is included.
+
+1329
+02:25:16,415 --> 02:25:17,095
+At x is 3,
+
+1330
+02:25:17,175 --> 02:25:18,655
+positive harmonic series.
+
+1331
+02:25:19,035 --> 02:25:20,375
+Of course, it is divergent.
+
+1332
+02:25:20,475 --> 02:25:21,555
+So 3 is not included.
+
+1333
+02:25:21,935 --> 02:25:23,055
+So such an interval
+
+1334
+02:25:23,055 --> 02:25:24,215
+of convergence we have.
+
+1335
+02:25:24,215 --> 02:25:24,255
+All of convergence we have.
+
+1336
+02:25:40,180 --> 02:25:41,139
+Are you okay?
+
+1337
+02:25:54,420 --> 02:25:55,659
+Ok, so let's continue.
+
+1338
+02:26:00,948 --> 02:26:02,247
+What about this question?
+
+1339
+02:26:22,324 --> 02:26:28,864
+İlk, apply limit, n is going to infinity, un plus 1 over un.
+
+1340
+02:26:28,864 --> 02:26:34,364
+But here, firstly, I think you have to just think center.
+
+1341
+02:26:51,347 --> 02:26:52,347
+Don't you think so?
+
+1342
+02:27:15,347 --> 02:27:18,028
+Evet, of course, always.
+
+1343
+02:27:18,807 --> 02:27:24,747
+If you want, firstly, put 2 outside, 2 to n, and x minus 3 over 2, right?
+
+1344
+02:27:25,368 --> 02:27:27,427
+And center is 3 over 2 again.
+
+1345
+02:27:28,208 --> 02:27:30,667
+And then, use a n plus 1 over a n.
+
+1346
+02:29:12,020 --> 02:29:13,600
+Minus to anyone. Okay.
+
+1347
+02:29:15,360 --> 02:29:16,020
+Anyone else?
+
+1348
+02:29:54,515 --> 02:29:59,355
+Ok, let's see the solution. If you have problem about solving it, let's see.
+
+1349
+02:30:03,540 --> 02:30:10,540
+ve
+
+1350
+02:30:09,012 --> 02:30:20,311
+Let's see. And 2 to n outside. Un plus 1 over un. Limit n is going to infinity in the absolute value. And do the needed operations and get.
+
+1351
+02:30:23,152 --> 02:30:32,552
+Also, at the same time, it's alternating power series, but it doesn't matter. Okay. The same techniques we are just using, no problem. Okay.
+
+1352
+02:30:32,552 --> 02:30:39,852
+Okay, though. Now we will see if 2 and 1 included or not. Okay.
+
+1353
+02:30:41,532 --> 02:30:50,632
+Do the needed operations and get. Always separate the term x minus a and the other terms, customs and functions of n, and then evaluate the limit.
+
+1354
+02:30:51,612 --> 02:31:02,231
+And say less than 1. Okay. And see, x minus 3 over 2 less than 1 over 2, because 2 times x minus 3 over 2 we had, and less than 1.
+
+1355
+02:31:02,552 --> 02:31:13,692
+So, absolutely. So, we get the interval 1 to 2. And r is, as you see, 1 over 2. And r is, as you see, 1 over 2. Radius.
+
+1356
+02:31:14,692 --> 02:31:20,012
+4x is 1. Let's test. 4x is 1. We have the series.
+
+1357
+02:31:23,212 --> 02:31:32,012
+Test it. What do you think? How will you test this positive series? 1 over n times the square root n square plus 1.
+
+1358
+02:31:32,552 --> 02:31:34,811
+How will you test it? How will you test it? Tell me.
+
+1359
+02:31:34,811 --> 02:31:34,852
+How will you test it? Tell me.
+
+1360
+02:31:55,188 --> 02:31:57,188
+Evet, bu nasıl testi?
+
+1361
+02:31:57,188 --> 02:31:59,188
+Evet.
+
+1362
+02:31:59,188 --> 02:32:03,188
+Bu, bu, Doğa'da?
+
+1363
+02:32:03,188 --> 02:32:05,188
+Doğa'da?
+
+1364
+02:32:05,188 --> 02:32:07,188
+Bence bu, limit comparison.
+
+1365
+02:32:26,324 --> 02:32:29,324
+Bu, bu pozitiflerimizin ne için?
+
+1366
+02:32:29,324 --> 02:32:38,884
+Bu, bu
+
+1367
+02:32:42,804 --> 02:32:43,683
+I think so.
+
+1368
+02:32:50,772 --> 02:32:53,872
+So, just while you are thinking the limit of it, what do you need?
+
+1369
+02:32:54,592 --> 02:32:59,572
+In the denominator, n, square root n square, n, n, n, n, n square.
+
+1370
+02:32:59,852 --> 02:33:01,932
+So, in the numerator, we need n square, don't we?
+
+1371
+02:33:02,472 --> 02:33:03,432
+We need n square.
+
+1372
+02:33:03,912 --> 02:33:05,972
+Here n, another n here.
+
+1373
+02:33:07,052 --> 02:33:09,652
+So, to get the limit is a finite number.
+
+1374
+02:33:10,772 --> 02:33:11,672
+We need n square.
+
+1375
+02:33:11,892 --> 02:33:14,992
+That means 1 over n square, of course, because an over bn.
+
+1376
+02:33:16,731 --> 02:33:17,452
+Let's see.
+
+1377
+02:33:20,979 --> 02:33:50,979
+N²'ye görelimin 1'ye görelimin 1'ye görelimin 1'ye görelimin 1'ye görelimin 1'ye görelimin 1'ye görelimin 1'ye görelimin 1'ye görelimin 1'ye görelimin 1'ye görelimin 1'ye görelimin 1'ye görelimin 1'ye görelimin 1'ye görelimin 1'ye görelimin 1'ye görelimin 1'ye görelimin 1'ye görelimin 1'ye görelimin 1'ye görelimin 1'ye görelimin 1'ye görelimin 1'ye görelimin 1'ye görelimin 1'ye görelimin 1'ye görelimin 1'ye görelimin 1'ye görelimin 1'ye görelimin 1'ye görelimin 1'ye görelimin 1'ye görelimin 1'ye görelimin 1'ye görelimin 1'ye görelimin 1'ye görelimin
+
+1378
+02:33:50,979 --> 02:34:42,859
+1'ye görelimin 1'ye görelimin 1'ye görelimin 1'ye görelimin 1'ye görelimin 1'ye görelimin 1'ye görelimin 1'ye görelimin 1'ye görelimin 1'ye görelimin 1'ye görelimin 1'ye görelimin 1'ye görelimin 1'ye görelimin 1'ye görelimin 1'ye görelimin 1'ye görelimin 1'ye görelimin 1'ye görelimin 1'ye görelimin 1'ye görelimin 1'ye görelimin 1'ye görelimin 1'ye görelimin 1'ye görelimin 1'ye görelimin 1'ye görelimin 1'ye görelimin 1'ye görelimin 1'ye görelimin 1'ye görelimin 1'ye görelimin 1'ye görelimin 1'ye görelimin 1'ye görelimin 1'ye görelimin 1'ye görelim
+
+1379
+02:34:49,363 --> 02:34:49,923
+Okay.
+
+1380
+02:34:52,304 --> 02:34:54,304
+Do you understand it? Are you okay?
+
+1381
+02:35:06,899 --> 02:35:07,619
+Any question?
+
+1382
+02:35:26,963 --> 02:35:32,644
+Are you all okay about the solution and the question? Shall we continue? Okay, so nice for me.
+
+1383
+02:35:34,724 --> 02:35:43,443
+What about the next one? n is 0 to infinity, 3x to n over n plus 1 factorial.
+
+1384
+02:35:44,724 --> 02:35:48,404
+It's such a power series. And tell me what is the center of it?
+
+1385
+02:35:54,644 --> 02:35:55,684
+Though I think so.
+
+1386
+02:35:55,863 --> 02:35:56,943
+I feel also.
+
+1387
+02:35:57,484 --> 02:35:58,623
+I feel so tired.
+
+1388
+02:35:59,384 --> 02:36:00,184
+Like you.
+
+1389
+02:36:02,584 --> 02:36:03,064
+Yes.
+
+1390
+02:36:03,783 --> 02:36:04,404
+Don't worry.
+
+1391
+02:36:04,484 --> 02:36:05,523
+This is the last question.
+
+1392
+02:36:06,384 --> 02:36:08,244
+We will be okay after that.
+
+1393
+02:36:09,184 --> 02:36:09,943
+Yes, you are right.
+
+1394
+02:36:10,984 --> 02:36:12,904
+And the topic was not so easy.
+
+1395
+02:36:13,424 --> 02:36:13,984
+You are right.
+
+1396
+02:36:14,443 --> 02:36:15,824
+It was a little bit tiring.
+
+1397
+02:36:17,043 --> 02:36:17,443
+I think.
+
+1398
+02:36:17,804 --> 02:36:19,224
+Yes, the center is zero.
+
+1399
+02:36:19,644 --> 02:36:19,984
+Okay.
+
+1400
+02:36:21,203 --> 02:36:23,824
+And you need to just put three outside.
+
+1401
+02:36:23,824 --> 02:36:25,664
+Three to n times x to n.
+
+1402
+02:36:25,804 --> 02:36:25,943
+Okay.
+
+1403
+02:36:26,463 --> 02:36:27,623
+And then please do it.
+
+1404
+02:36:27,924 --> 02:36:28,644
+Last question.
+
+1405
+02:36:28,764 --> 02:36:29,824
+Please do it for me.
+
+1406
+02:36:30,384 --> 02:36:32,384
+Apply the ratio test limit.
+
+1407
+02:36:32,523 --> 02:36:33,863
+When n is going to infinity.
+
+1408
+02:36:34,164 --> 02:36:35,064
+In the absolute value.
+
+1409
+02:36:35,164 --> 02:36:36,424
+Un plus one over un.
+
+1410
+02:36:36,984 --> 02:36:38,324
+Evaluate the limit and tell me.
+
+1411
+02:36:39,844 --> 02:36:41,504
+It will be easy I think.
+
+1412
+02:36:42,023 --> 02:36:42,904
+And the short question.
+
+1413
+02:36:54,420 --> 02:36:54,920
+I'm sorry.
+
+1414
+02:37:40,180 --> 02:37:42,860
+Is it zero or infinite? What do you think?
+
+1415
+02:37:50,772 --> 02:37:55,152
+Okay, some of you say zero, some of you say infinity.
+
+1416
+02:37:57,312 --> 02:37:59,992
+Okay, when limit is zero, yes.
+
+1417
+02:38:00,812 --> 02:38:03,192
+If you are right, convergence.
+
+1418
+02:38:09,907 --> 02:38:22,407
+Hmm, if you get the limit is zero, that means it is convergent for any number, because it is less than one always convergent.
+
+1419
+02:38:22,407 --> 02:38:27,688
+So what is the radius of convergence once you have zero? Radius of convergence.
+
+1420
+02:38:31,924 --> 02:38:33,344
+[öğrenci], you're right, yes.
+
+1421
+02:38:34,464 --> 02:38:36,384
+Yes, r is infinite, it means.
+
+1422
+02:38:37,664 --> 02:38:41,324
+So the interval of convergence will be real line.
+
+1423
+02:38:43,204 --> 02:38:44,624
+Yes, I understand you.
+
+1424
+02:38:44,864 --> 02:38:46,444
+You mean radius infinite.
+
+1425
+02:38:48,544 --> 02:38:50,964
+Okay, so let's see the solution.
+
+1426
+02:38:52,644 --> 02:38:54,024
+Yes, you're completely right.
+
+1427
+02:38:54,124 --> 02:38:56,164
+Thank you and well done, all of you.
+
+1428
+02:38:56,704 --> 02:39:00,924
+3 to n, x to n over n plus 1 factorial, center is 0.
+
+1429
+02:39:01,924 --> 02:39:13,824
+Apply this expression and see, according to the limit, it is directly 0, which means free of x, that means without belonging to x, this limit is always 0.
+
+1430
+02:39:14,204 --> 02:39:19,164
+That means without belonging x, this power series is always convergent.
+
+1431
+02:39:19,804 --> 02:39:26,464
+Always convergent means for any values of x, so the interval of convergence is the old real line.
+
+1432
+02:39:26,964 --> 02:39:29,944
+That means the radius of convergence is infinite.
+
+1433
+02:39:29,944 --> 02:39:31,824
+Yes, yes, you're right.
+
+1434
+02:39:31,824 --> 02:39:31,904
+Yes, you're right.
+
+1435
+02:39:44,275 --> 02:39:46,956
+So, do you have any questions?
+
+1436
+02:39:53,203 --> 02:39:55,884
+No, it's enough you say, I think I understand you.
+
+1437
+02:39:56,943 --> 02:40:01,163
+Today we did lots of different and important topics.
+
+1438
+02:40:01,163 --> 02:40:07,244
+I think alternating series are so important topic and also the power series are so important topic.
+
+1439
+02:40:07,623 --> 02:40:15,863
+Two topics were together today and I know it was a little bit detailed and challenging topics.
+
+1440
+02:40:16,484 --> 02:40:20,463
+Please study all of them. Study every question that we did today.
+
+1441
+02:40:20,463 --> 02:40:23,304
+and tomorrow we will continue.
+
+1442
+02:40:25,724 --> 02:40:28,404
+And if you have any questions, now you can ask me.
+
+1443
+02:40:28,564 --> 02:40:30,404
+So we are okay for today.
+
+1444
+02:40:30,783 --> 02:40:34,283
+Please study all of them.
+
+1445
+02:40:34,804 --> 02:40:38,043
+Repeat again and again and solve the questions again and again.
+
+1446
+02:40:38,343 --> 02:40:38,564
+Okay.
+
+1447
+02:40:39,423 --> 02:40:41,543
+Thank you so much for your participation.
+
+1448
+02:40:43,023 --> 02:40:47,163
+And I will look forward to seeing you tomorrow.
+
+1449
+02:40:48,283 --> 02:40:49,503
+Take care all of you.
+
+1450
+02:40:49,503 --> 02:41:19,484
+Thank you so much.

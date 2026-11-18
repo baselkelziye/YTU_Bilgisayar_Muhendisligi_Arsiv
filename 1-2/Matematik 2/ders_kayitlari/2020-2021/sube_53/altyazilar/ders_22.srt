@@ -1,0 +1,6543 @@
+1
+00:02:23,060 --> 00:02:24,020
+Arkadaşlar, merhaba.
+
+2
+00:02:28,563 --> 00:02:30,723
+Umarım hepiniz iyisiniz. Görüşmeyelim.
+
+3
+00:02:38,484 --> 00:02:40,984
+Şimdi son iki haftaya girdik.
+
+4
+00:02:41,463 --> 00:02:43,204
+Büyük ihtimalle konularımız yetişecek.
+
+5
+00:02:44,004 --> 00:02:47,864
+Belki son hafta uygulama konusunda ekstra bir şeyler yapabiliriz diye düşünüyorum.
+
+6
+00:02:49,284 --> 00:02:52,924
+Geçen hafta bu konuyu aslında tamamlamıştık ama ben çok kısa üzerinden geçip
+
+7
+00:02:52,924 --> 00:02:58,704
+son kısımda Taylor-McLaurin çok değişken fonksiyonlar için Taylor-McLaurin serileri ve açılımları vardı.
+
+8
+00:02:59,784 --> 00:03:02,183
+O konu sınava dahil olmayabilir. O konuda emin değilim.
+
+9
+00:03:02,243 --> 00:03:04,804
+Müfredatta yok zaten ama bir görmenizi istiyorum.
+
+10
+00:03:05,084 --> 00:03:06,084
+Çok üstünde durmayacağım.
+
+11
+00:03:06,084 --> 00:03:09,704
+Sonrasında hızlı bir şekilde katlı integrallere başlamamız gerekiyor.
+
+12
+00:03:10,204 --> 00:03:14,164
+Son ve en önemli konulardan biri katlı integraller.
+
+13
+00:03:14,843 --> 00:03:17,903
+Daha doğrusu bu müfredat için sadece iki katlı integraller var.
+
+14
+00:03:19,124 --> 00:03:28,384
+İlk önce temel yapısı, işte integrasyon sınırlarının belirlenmesi, bölgenin incelenmesi, özellikler vesaire hesaplanmasıyla ilgileneceğiz.
+
+15
+00:03:29,283 --> 00:03:31,184
+Bu oldukça uzun sürecek zaten.
+
+16
+00:03:31,184 --> 00:03:34,384
+Sonrasında da integrasyonların değiştirilmesi vesaire.
+
+17
+00:03:34,384 --> 00:03:46,283
+Sonrasında polar iki katlı integraller yani iki katlı integrallerin polar dönüşümleri ve polar eğitimler arasında kalan alanları iki katlı integrallerle hesaplamak.
+
+18
+00:03:46,403 --> 00:03:51,804
+Son olarak da iki katlı integrallerde değişken dönüşümüyle dönemi tamamlayacağız inşallah.
+
+19
+00:03:51,804 --> 00:03:56,924
+O yüzden yetişeceğini düşünüyorum.
+
+20
+00:03:57,084 --> 00:03:59,984
+Bugün iki katlı integrallerde epey ilerleriz diye düşünüyorum.
+
+21
+00:04:00,144 --> 00:04:02,584
+Sonrasında kalan bütün sürenizi uygulamaya ayırırız.
+
+22
+00:04:03,424 --> 00:04:04,884
+Ve bu şekilde de tamamlarız.
+
+23
+00:04:05,764 --> 00:04:08,644
+Şu ana kadar olan konularla ilgili bir problem var mı?
+
+24
+00:04:08,804 --> 00:04:09,724
+Sormak istediğiniz bir şey.
+
+25
+00:04:09,723 --> 00:04:13,723
+Geçen hafta oldukça hızlı ilerledik.
+
+26
+00:04:15,064 --> 00:04:19,244
+En son zincir kuralından başlamıştık geçen hafta.
+
+27
+00:04:19,704 --> 00:04:20,864
+Zincir kuralını tamamladık.
+
+28
+00:04:20,923 --> 00:04:23,183
+Çok değişkenli fonksiyonlar ve kısmı türevlerde.
+
+29
+00:04:23,644 --> 00:04:24,644
+Kapalı türevi yaptık.
+
+30
+00:04:24,644 --> 00:04:31,864
+Sonrasında gradiyen vektörler ve yönlü türevler konusunu işledik.
+
+31
+00:04:31,944 --> 00:04:38,064
+Sonrasında gradiyen vektörlerin kullanım alanları olan t-düzlem ve normal doğru denklemleriyle ilgilendik.
+
+32
+00:04:38,524 --> 00:04:47,163
+Sonrasında da son bu konu olan ekstrem değerler ve saddle noktalar yani eğer noktaları.
+
+33
+00:04:48,704 --> 00:04:53,543
+Buradaki ekstrem değerler maksimum minimum ama çok değişkenli fonksiyonlar da tabii ki.
+
+34
+00:04:53,543 --> 00:04:54,903
+Bunların hesaplanması.
+
+35
+00:04:55,084 --> 00:04:56,524
+Birinci ve ikinci türev testi.
+
+36
+00:04:57,064 --> 00:04:59,724
+Sonrasında da son da kısa bir bölüm var.
+
+37
+00:04:59,903 --> 00:05:00,683
+Tekrar söylüyorum.
+
+38
+00:05:00,803 --> 00:05:01,884
+Bu taylor maktörenle ilgili.
+
+39
+00:05:01,984 --> 00:05:02,903
+Orayı çok hızlı geçeceğim.
+
+40
+00:05:03,004 --> 00:05:04,244
+Orası müfedat olmayabilir.
+
+41
+00:05:05,144 --> 00:05:07,803
+Sonrasında iki katlaya başlayacağız eğer tamamsanız.
+
+42
+00:05:13,139 --> 00:05:15,139
+Tamam çok güzel.
+
+43
+00:05:17,620 --> 00:05:19,620
+Let's remember.
+
+44
+00:05:19,620 --> 00:05:21,620
+Extran values are settled points.
+
+45
+00:05:25,779 --> 00:05:30,500
+Firstly, we have to remember what are the extra points.
+
+46
+00:05:30,500 --> 00:05:33,620
+Local maximum and local minimum.
+
+47
+00:05:33,620 --> 00:05:35,939
+And settled points are not extra points.
+
+48
+00:05:35,939 --> 00:05:39,860
+Settled points are the points, critical points, but not extra.
+
+49
+00:05:39,860 --> 00:05:46,339
+Because they do not satisfy the properties of maximum or minimum.
+
+50
+00:05:46,339 --> 00:05:47,139
+Nor minimum.
+
+51
+00:05:47,139 --> 00:05:53,379
+That's why firstly in order to get the extra points of a function of two or more variables.
+
+52
+00:05:53,379 --> 00:06:00,819
+For two variables in this course, for three variables are there different properties normally we have.
+
+53
+00:06:00,819 --> 00:06:02,899
+But in this course it is not included.
+
+54
+00:06:02,899 --> 00:06:09,620
+So only two variable function we can investigate the critical points and the extrema.
+
+55
+00:06:10,500 --> 00:06:14,500
+For critical points, if you remember, we need to get the first letter points.
+
+56
+00:06:15,219 --> 00:06:19,459
+Which makes the all first order partial derivatives equal to zero.
+
+57
+00:06:20,419 --> 00:06:22,500
+And we specify the critical points.
+
+58
+00:06:22,500 --> 00:06:27,379
+And then in order to understand and classify them, we use the second derivative test.
+
+59
+00:06:27,379 --> 00:06:31,219
+So the first derivative test is used to get the critical points.
+
+60
+00:06:31,219 --> 00:06:35,139
+Second derivative test is used to classify the extra points.
+
+61
+00:06:35,139 --> 00:06:36,579
+And also the settled points.
+
+62
+00:06:36,579 --> 00:06:38,500
+Let's remember.
+
+63
+00:06:41,379 --> 00:06:42,740
+Critical points are okay.
+
+64
+00:06:43,459 --> 00:06:50,179
+Also we can say that critical point is not only the point which makes fx or fy zero.
+
+65
+00:06:50,179 --> 00:06:56,179
+At the same time, it is the point which makes fx and fy fails to exist.
+
+66
+00:06:56,740 --> 00:06:57,939
+It is possible also.
+
+67
+00:06:57,939 --> 00:07:03,939
+But more generally in the exams, a polynomial function is more generally asked.
+
+68
+00:07:03,939 --> 00:07:07,379
+But maybe a different kind of a function you may have.
+
+69
+00:07:07,379 --> 00:07:08,659
+So don't forget this case.
+
+70
+00:07:09,219 --> 00:07:10,019
+Critical point.
+
+71
+00:07:10,899 --> 00:07:13,939
+And then classification.
+
+72
+00:07:13,939 --> 00:07:16,179
+Second derivative test.
+
+73
+00:07:16,740 --> 00:07:18,179
+We need to get the second order.
+
+74
+00:07:18,819 --> 00:07:20,819
+Pure and mixed partial derivatives.
+
+75
+00:07:21,620 --> 00:07:25,059
+And you need to specify for every, for each critical point.
+
+76
+00:07:25,860 --> 00:07:26,579
+B, A, C.
+
+77
+00:07:26,579 --> 00:07:31,379
+A is fxx, b is fxy, and c is fyy.
+
+78
+00:07:31,939 --> 00:07:35,139
+At every critical point, these are the real numbers.
+
+79
+00:07:36,419 --> 00:07:42,980
+According to the values of b squared minus ac, we can say that if b squared minus ac is negative,
+
+80
+00:07:43,620 --> 00:07:44,899
+it is an extra point.
+
+81
+00:07:44,899 --> 00:07:48,579
+Also, if a is negative, it is local maximum.
+
+82
+00:07:48,579 --> 00:07:50,579
+If a is positive, it is local minimum.
+
+83
+00:07:51,139 --> 00:07:57,139
+If b squared minus ac is positive, that means f is not an extra point, it's the only a stable point.
+
+84
+00:07:58,819 --> 00:08:06,339
+When we have b squared minus ac is equal to zero, inconclusive, that means we cannot say anything about these critical points.
+
+85
+00:08:06,339 --> 00:08:09,059
+So other techniques we need to follow.
+
+86
+00:08:09,620 --> 00:08:12,419
+You will have such exercises in the exercises part.
+
+87
+00:08:12,419 --> 00:08:12,980
+Don't worry.
+
+88
+00:08:12,980 --> 00:08:14,340
+Not now.
+
+89
+00:08:15,939 --> 00:08:19,060
+And we did lots of exercises about it in the last week.
+
+90
+00:08:20,019 --> 00:08:21,699
+And we get,
+
+91
+00:08:23,620 --> 00:08:30,339
+I said that be careful about specifying every critical point which makes both fx and fy equal to zero.
+
+92
+00:08:32,179 --> 00:08:38,659
+And then we apply the second derivative test and specify a, b, c for each critical point.
+
+93
+00:08:39,940 --> 00:08:40,579
+We did them.
+
+94
+00:08:40,579 --> 00:08:42,819
+And it's easy, I think.
+
+95
+00:08:43,860 --> 00:08:49,220
+And Tyler's formula and McLaurin, you know,
+
+96
+00:08:51,940 --> 00:08:53,460
+is at the point zero zero.
+
+97
+00:08:54,819 --> 00:08:57,700
+But Tyler's formula at any point, a, b.
+
+98
+00:08:57,700 --> 00:09:03,059
+And related with this formalization, this is the general term of this, um, sasquequence.
+
+99
+00:09:03,059 --> 00:09:05,059
+Um, sasquequence.
+
+100
+00:09:05,059 --> 00:09:05,100
+And I'm going to say, I'm going to say, I'm going to say, I'm going to say, I'm going to say, I'm going to say, I'm going to say, I'm going to say, I'm going to say, I'm going to say, I'm going to say, I'm going to say, I'm going to say, I'm going to say, I'm going to say, I'm going to say, I'm going to say, I'm going to say, I'm going to say, I'm going to say, I'm going to say, I'm going to say, I'm going to say, I'm going to say, I'm going to say, I'm going to say, I'm going to say, I'm going to say, I'm going to say, I'm going to say, I'm going to say, I'm going to say, I'm going to say, I'm going to say, I'm going to say, I'm going to say, I'm going to
+
+101
+00:09:06,451 --> 00:09:12,692
+1 over n! is the general form x minus a d dx y minus b times d dy.
+
+102
+00:09:13,351 --> 00:09:21,392
+And this n shows at the same time like having a power of this expression at the same time and shows the order of the derivative.
+
+103
+00:09:22,011 --> 00:09:25,011
+And this operation applied to f at the point ab.
+
+104
+00:09:25,652 --> 00:09:27,371
+So such terms you will have.
+
+105
+00:09:28,011 --> 00:09:33,392
+At point 0, 0 you will have only the difference as this.
+
+106
+00:09:33,392 --> 00:09:39,011
+So x minus 0, y minus 0 makes these coefficients easier.
+
+107
+00:09:39,371 --> 00:09:42,792
+Again, the similar main term we have.
+
+108
+00:09:44,631 --> 00:09:48,971
+And also at the end we have a remainder term, rn.
+
+109
+00:09:50,471 --> 00:10:00,111
+In this example it says that find the Tyler formula of fx y e to x sin y at the point 0.0 over 2 until the third order derivative.
+
+110
+00:10:00,111 --> 00:10:09,511
+That means until the third order only these terms.
+
+111
+00:10:10,652 --> 00:10:14,152
+That means second order is included up to third order.
+
+112
+00:10:14,152 --> 00:10:17,672
+The formalization is this.
+
+113
+00:10:17,892 --> 00:10:19,432
+Point is 0 and pi over 2.
+
+114
+00:10:19,552 --> 00:10:26,312
+So x minus 0 d dx y minus pi over 2 d dy will be applied to f at the point 0.0 over 2.
+
+115
+00:10:26,812 --> 00:10:28,871
+This is the first degree term.
+
+116
+00:10:29,172 --> 00:10:29,652
+First term.
+
+117
+00:10:30,211 --> 00:10:32,272
+First expression, let's say not the first term.
+
+118
+00:10:32,312 --> 00:10:34,091
+First term is f0.0 over 2.
+
+119
+00:10:34,091 --> 00:10:49,392
+And the second order derivative and the second power of this expression is 1 over 2 factorial x square d square f dx square plus 2x y minus pi over 2.
+
+120
+00:10:49,392 --> 00:11:03,032
+d square f dx dy 0.0 over 2 plus lastly y minus pi over 2 all square d square f dy square at point 0.0 over 2 plus r.
+
+121
+00:11:03,552 --> 00:11:04,672
+Like you see here.
+
+122
+00:11:04,672 --> 00:11:11,751
+And so you need to evaluate first the f0 pi over 2 and first order derivatives.
+
+123
+00:11:12,511 --> 00:11:15,611
+Second order derivatives mixed and pure.
+
+124
+00:11:16,211 --> 00:11:21,312
+And then evaluate them at point 0.0 pi over 2 and then substitute to the power series expansion.
+
+125
+00:11:23,251 --> 00:11:24,351
+And so you get this.
+
+126
+00:11:24,351 --> 00:11:28,552
+So this one.
+
+127
+00:11:29,831 --> 00:11:33,011
+And the second one at the point 0.0.
+
+128
+00:11:34,572 --> 00:11:36,672
+And for xe to xy.
+
+129
+00:11:37,412 --> 00:11:39,731
+Again, we will do it up to third order.
+
+130
+00:11:41,632 --> 00:11:46,372
+Again, we need first order and all second order partial derivatives at the point 0.0.
+
+131
+00:11:47,152 --> 00:11:48,971
+And the value of the function at that point.
+
+132
+00:11:49,412 --> 00:11:52,951
+And then substitute to related formalization.
+
+133
+00:11:52,951 --> 00:11:55,451
+F0.0.
+
+134
+00:11:57,091 --> 00:11:58,091
+F2 0.
+
+135
+00:11:58,211 --> 00:11:58,532
+I'm sorry.
+
+136
+00:11:58,652 --> 00:11:59,292
+F2 0.
+
+137
+00:11:59,672 --> 00:12:02,771
+Plus x minus 2 df dx at 2 0.
+
+138
+00:12:02,991 --> 00:12:05,792
+Plus y times df dy at 2 0.
+
+139
+00:12:05,951 --> 00:12:08,731
+Plus second expression 1 over 2 factorial.
+
+140
+00:12:09,392 --> 00:12:11,192
+x minus 2 all square.
+
+141
+00:12:12,172 --> 00:12:14,292
+d square f dx square.
+
+142
+00:12:14,971 --> 00:12:18,771
+Plus 2 times x minus 2 y minus 0.
+
+143
+00:12:18,771 --> 00:12:22,531
+times d square f dx dy at 2 0.
+
+144
+00:12:22,531 --> 00:12:25,312
+Plus y square.
+
+145
+00:12:25,751 --> 00:12:29,192
+d square f dy square at 2 0.
+
+146
+00:12:29,192 --> 00:12:31,731
+It's like having second power at the same time.
+
+147
+00:12:31,812 --> 00:12:34,652
+And also shows the second order partial derivatives.
+
+148
+00:12:34,652 --> 00:12:38,231
+And sort the related formula as this.
+
+149
+00:12:38,231 --> 00:12:51,231
+And then we'll see you next time.
+
+150
+00:12:50,912 --> 00:12:51,912
+Bir soru?
+
+151
+00:13:07,091 --> 00:13:10,251
+PowerPoint of double integral spayt.
+
+152
+00:14:04,628 --> 00:14:08,268
+Ve bu dağılıklarınız var.
+
+153
+00:14:09,408 --> 00:14:11,528
+Bu dağılıklarınız için,
+
+154
+00:14:11,528 --> 00:14:15,408
+bu dağılıklarınız için,
+
+155
+00:14:22,131 --> 00:14:26,931
+İnteklisi, indefinite integration, a positive function, non-interval.
+
+156
+00:14:28,251 --> 00:14:31,051
+What is the result of this expression, what do you think?
+
+157
+00:14:31,331 --> 00:14:32,511
+I think, of course you know.
+
+158
+00:14:51,668 --> 00:14:55,827
+İngilizce orduble integrals?
+
+159
+00:14:55,827 --> 00:14:56,947
+[öğrenci], birçok?
+
+160
+00:14:59,168 --> 00:15:00,368
+Volum?
+
+161
+00:15:05,268 --> 00:15:09,268
+Evet, evet, evet, o zamanı var.
+
+162
+00:15:09,268 --> 00:15:13,268
+O zamanı var, o zamanı var.
+
+163
+00:15:17,940 --> 00:15:21,500
+Evet, teşekkür ederim. Bu, doğru.
+
+164
+00:15:21,500 --> 00:15:24,980
+Bu, definite and proper integral, we evaluate an area.
+
+165
+00:15:24,980 --> 00:15:26,500
+Which area is it?
+
+166
+00:15:26,500 --> 00:15:38,340
+It is the area which is just below the graph of a positive function between the x-axis or another function on a specific interval of r.
+
+167
+00:15:38,340 --> 00:15:42,020
+Gives the area of that region.
+
+168
+00:15:42,020 --> 00:15:46,420
+So, it is the integration of the function.
+
+169
+00:15:46,420 --> 00:15:50,820
+That means in order to integrate, integration is an operation.
+
+170
+00:15:50,820 --> 00:15:58,260
+So, in order to integrate a function, we just evaluate the area.
+
+171
+00:15:58,260 --> 00:16:02,980
+In which conditions it is a kilter in area, how you think about it?
+
+172
+00:16:02,980 --> 00:16:11,940
+Why an integration gives the area of that region bounded by a positive function and the x-axis with an integral?
+
+173
+00:16:33,775 --> 00:16:37,115
+Hmm, şey Varnur, I think you are right.
+
+174
+00:16:38,055 --> 00:16:39,375
+I understand what you mean.
+
+175
+00:16:40,955 --> 00:16:43,635
+Think of an area we have and...
+
+176
+00:16:43,635 --> 00:16:47,295
+Wait for me.
+
+177
+00:16:56,532 --> 00:16:59,112
+I think that this is x and this is y.
+
+178
+00:17:10,867 --> 00:17:17,867
+think that we have such a graph, think that this is fx.
+
+179
+00:17:20,067 --> 00:17:23,867
+I'm getting difficult about writing, I'm sorry.
+
+180
+00:17:23,867 --> 00:17:25,867
+I'm not get used to this.
+
+181
+00:17:25,867 --> 00:17:31,867
+And think that this is a to b.
+
+182
+00:17:31,867 --> 00:17:37,867
+And we are talking about this area, area of this region.
+
+183
+00:17:37,867 --> 00:17:40,867
+Yes.
+
+184
+00:17:40,867 --> 00:17:43,867
+What is the area of that region is asked firstly.
+
+185
+00:17:43,867 --> 00:17:50,867
+And in order to answer this question, maybe you can just think if it was, for example, a rectangle,
+
+186
+00:17:50,867 --> 00:17:59,867
+it was easy to evaluate the area or if it was a triangle or a circle or something that we know the specific shape in geometrical meaning.
+
+187
+00:17:59,867 --> 00:18:02,867
+With the formalization, we can easily evaluate it.
+
+188
+00:18:02,867 --> 00:18:09,867
+But it is not. Not every region is rectangular or triangular or a circle, a circular region.
+
+189
+00:18:09,867 --> 00:18:19,867
+That's why these cases unshaped regions, any with a function with any curve, we just define the region here, as you see, bounded by the x axis.
+
+190
+00:18:19,867 --> 00:18:28,867
+In that case, in order to evaluate the exact value of that region, firstly, basically, which formalization we take?
+
+191
+00:18:28,867 --> 00:18:32,867
+For example, we know the formula of a rectangle.
+
+192
+00:18:32,867 --> 00:19:01,867
+I'm sorry.
+
+193
+00:18:44,115 --> 00:18:45,375
+ve know of a rectangle.
+
+194
+00:18:46,296 --> 00:18:46,536
+So,
+
+195
+00:18:50,483 --> 00:18:53,943
+If we just cut into small rectangles.
+
+196
+00:18:57,811 --> 00:19:02,831
+Normalde, bu şekilde farklı birçok.
+
+197
+00:19:02,831 --> 00:19:32,831
+Bu, bu
+
+198
+00:19:32,831 --> 00:19:38,531
+and then evaluate the value of the function at that point.
+
+199
+00:19:39,711 --> 00:19:45,591
+Multiply with the length of the every subinterval gives the area of every rectangle.
+
+200
+00:19:46,951 --> 00:19:53,211
+And some of them is just approximately the exact value, not the correct one.
+
+201
+00:19:53,551 --> 00:19:56,271
+How can we make it equal to the exact value?
+
+202
+00:19:56,771 --> 00:20:00,171
+If we make this partitioning is going to infinity.
+
+203
+00:20:00,171 --> 00:20:06,951
+If we have infinitely many numbers of subintervals here of the point of the interval a, b,
+
+204
+00:20:07,531 --> 00:20:11,331
+so the length of every subinterval will go to zero,
+
+205
+00:20:11,851 --> 00:20:17,491
+in that case, if we have infinitely numbers of rectangles,
+
+206
+00:20:17,791 --> 00:20:23,391
+in that case, the sum of them will be the exact value of the region, area of the region.
+
+207
+00:20:23,951 --> 00:20:25,371
+How can we make it possible?
+
+208
+00:20:27,192 --> 00:20:28,551
+It is the Riemann sum.
+
+209
+00:20:28,551 --> 00:20:31,551
+So the Riemann sum, when n is going to infinity,
+
+210
+00:20:32,151 --> 00:20:39,291
+will be the proper and the definite integral of the function f on the interval a, b.
+
+211
+00:20:39,831 --> 00:20:44,531
+So the area of that region is integration of f on the interval a, b.
+
+212
+00:20:44,971 --> 00:20:45,291
+Okay.
+
+213
+00:20:46,051 --> 00:20:49,031
+I think you have remembered it a little bit.
+
+214
+00:20:49,411 --> 00:20:50,511
+And no problem, I hope.
+
+215
+00:20:50,511 --> 00:20:58,211
+I think you were used to about Riemann sums in mathematics one.
+
+216
+00:21:00,611 --> 00:21:08,891
+Any point of inch interval multiply with the value of the function and the length of the subinterval.
+
+217
+00:21:09,251 --> 00:21:11,311
+Here's the areas of rectangles.
+
+218
+00:21:11,311 --> 00:21:13,311
+And some of them, that's why it's the Riemann sum.
+
+219
+00:21:14,672 --> 00:21:16,571
+f x i delta x i,
+
+220
+00:21:17,211 --> 00:21:19,151
+when n is one to infinity,
+
+221
+00:21:20,051 --> 00:21:23,891
+in that case, it is equal to the integration of f on the interval a, b,
+
+222
+00:21:24,131 --> 00:21:26,491
+is equal to the area of that region.
+
+223
+00:21:29,131 --> 00:21:30,011
+Are you okay now?
+
+224
+00:21:31,411 --> 00:21:32,891
+Is it okay a little bit?
+
+225
+00:21:32,891 --> 00:21:58,891
+Is it okay?
+
+226
+00:21:37,652 --> 00:21:38,271
+And done.
+
+227
+00:21:40,491 --> 00:21:42,052
+Now let's think.
+
+228
+00:21:46,579 --> 00:21:58,679
+What about double integrals? Hmm, we have a double integral of not a single variable function. Yes, it is a two variable function. Yes, of course.
+
+229
+00:22:00,039 --> 00:22:15,240
+Now, as we did many times before, for continuity, limit, partial derivatives, external values, like this. This is the other concept for several variable functions.
+
+230
+00:22:15,240 --> 00:22:20,599
+So, it is for two variable function double integrals. So, what do we evaluate here? Let's see.
+
+231
+00:22:32,147 --> 00:23:02,147
+Şimdi, bu
+
+232
+00:23:02,147 --> 00:23:11,207
+What we get? We got the volume of the solid which is bounded by the surface set and with the domain set.
+
+233
+00:23:11,987 --> 00:23:22,707
+This is R or G or anyone else, no problem. If we integrate the two variable function over a region, you get the volume of the solid between them.
+
+234
+00:23:22,707 --> 00:23:26,187
+Don't forget, integrate F over R.
+
+235
+00:23:26,187 --> 00:23:35,587
+So, double integral of F over R is equal to the volume of the solid between F and R.
+
+236
+00:23:36,548 --> 00:23:42,367
+The solid which has the top surface is F and the base region is R.
+
+237
+00:23:42,367 --> 00:23:49,627
+Okay, so the volume of the solid shown here is the double integral of F over the base region R.
+
+238
+00:23:49,707 --> 00:23:54,768
+This is the main idea for a double integral of a positive function, of course.
+
+239
+00:23:54,768 --> 00:23:59,407
+Okay, this is the main idea. Let's learn how can we make it possible.
+
+240
+00:24:00,167 --> 00:24:03,207
+So, let's come to the first slide and see.
+
+241
+00:24:04,927 --> 00:24:09,707
+In this section, we will define the double integral of a continuous function of two variables.
+
+242
+00:24:09,707 --> 00:24:11,627
+Of course, continuity is again important.
+
+243
+00:24:12,167 --> 00:24:14,167
+Over a bounded rectangle R.
+
+244
+00:24:14,727 --> 00:24:20,107
+Now, firstly, we will just see domain set as a rectangle.
+
+245
+00:24:20,107 --> 00:24:23,867
+But normally, of course, non-rectangular regions will work.
+
+246
+00:24:23,867 --> 00:24:27,227
+But first, let's understand it and then we will continue with the other form.
+
+247
+00:24:30,127 --> 00:24:34,788
+Integrals are limits of approximating Riemann sums.
+
+248
+00:24:34,788 --> 00:24:44,107
+And the Riemann sums for the integral of a single variable function fx are obtained by partitioning a finite interval into 10 subintervals.
+
+249
+00:24:44,107 --> 00:24:54,127
+Again, multiplying the width of each subinterval by the value of f at the point ck inside that subinterval.
+
+250
+00:24:54,607 --> 00:24:57,427
+And then adding them together all the products.
+
+251
+00:24:57,427 --> 00:25:03,407
+This is making up the main idea of the single integral that I said before.
+
+252
+00:25:04,807 --> 00:25:16,627
+Partitioning into finite numbers of subintervals and multiplying the length of each subinterval with the value of any random point in each subinterval.
+
+253
+00:25:16,867 --> 00:25:20,067
+And then make them getting together.
+
+254
+00:25:20,067 --> 00:25:26,967
+So, a similar method of partitioning, multiplying, and sum is used to construct the double integrals.
+
+255
+00:25:27,387 --> 00:25:29,548
+So, similar methods we will follow.
+
+256
+00:25:30,447 --> 00:25:31,167
+So, let's see.
+
+257
+00:25:32,887 --> 00:25:36,227
+We consider a function f on a rectangular region R.
+
+258
+00:25:36,907 --> 00:25:37,587
+And take that.
+
+259
+00:25:38,067 --> 00:25:39,288
+It is a rectangular region.
+
+260
+00:25:39,427 --> 00:25:40,827
+So, x is between A to B.
+
+261
+00:25:41,087 --> 00:25:42,467
+Y is between C to D.
+
+262
+00:25:42,528 --> 00:25:43,307
+So, it's a rectangle.
+
+263
+00:25:45,768 --> 00:25:47,207
+It's a region of integral.
+
+264
+00:25:47,207 --> 00:25:51,947
+So, I want to say that for single integrals, we have an interval only.
+
+265
+00:25:53,048 --> 00:25:55,967
+But for single integrals, you need a region.
+
+266
+00:25:56,647 --> 00:25:57,167
+Don't forget.
+
+267
+00:25:57,927 --> 00:26:00,927
+And we subdivide R into small rectangles.
+
+268
+00:26:01,627 --> 00:26:09,548
+Like for single integrals, cutting interval A, B into small intervals.
+
+269
+00:26:10,268 --> 00:26:13,527
+Now we have an integration region, a rectangle.
+
+270
+00:26:13,527 --> 00:26:16,367
+And we just cut into small rectangles.
+
+271
+00:26:16,367 --> 00:26:20,007
+Using parallel lines to x and y axis, yes.
+
+272
+00:26:20,527 --> 00:26:23,407
+And these rectangles form a partitioning of areas.
+
+273
+00:26:24,407 --> 00:26:31,187
+A small rectangular piece of width delta x and the height delta y has the area delta a.
+
+274
+00:26:32,788 --> 00:26:42,087
+Şimdi, if we make ares of every small rectangle on the basal region of the integral,
+
+275
+00:26:42,807 --> 00:26:44,168
+and then look what we are doing.
+
+276
+00:26:44,668 --> 00:26:48,288
+If we number the small pieces partitioning R in the same order,
+
+277
+00:26:49,367 --> 00:26:54,367
+then their ares are given by numbers delta A1, delta A2, delta An,
+
+278
+00:26:54,688 --> 00:26:57,948
+where delta Ak is the area of the kth small rectangle.
+
+279
+00:26:57,948 --> 00:27:08,107
+To form a Riemann sum over R, we choose any point in a random point xk, yk,
+
+280
+00:27:08,627 --> 00:27:15,948
+in the kth small rectangle, and multiply the value of f at the point by the area delta Ak,
+
+281
+00:27:16,508 --> 00:27:18,208
+and add together the products.
+
+282
+00:27:20,188 --> 00:27:23,728
+Firstly, we have a surface.
+
+283
+00:27:23,728 --> 00:27:28,168
+fx1. fx1 shows the surface on R3.
+
+284
+00:27:28,887 --> 00:27:29,208
+Okay.
+
+285
+00:27:29,867 --> 00:27:32,688
+And we have a region, a rectangular region.
+
+286
+00:27:32,887 --> 00:27:33,448
+It's a rectangle.
+
+287
+00:27:34,428 --> 00:27:39,087
+And in order to get the double integral of f over R,
+
+288
+00:27:39,567 --> 00:27:44,168
+firstly, we need to just cut into small rectangles here,
+
+289
+00:27:44,168 --> 00:27:50,208
+and then evaluate areas of every small rectangle with delta x and delta y,
+
+290
+00:27:50,508 --> 00:27:51,548
+which is delta Ak,
+
+291
+00:27:51,728 --> 00:27:54,248
+and choose a point again,
+
+292
+00:27:54,768 --> 00:28:00,048
+like choosing any random point in small subintervals in single integral.
+
+293
+00:28:00,587 --> 00:28:04,468
+Again, we are just choosing a point in every small rectangle.
+
+294
+00:28:04,468 --> 00:28:08,188
+and evaluate the value of the function at that point.
+
+295
+00:28:09,448 --> 00:28:12,948
+Think that we choose xk, yk in this small rectangle.
+
+296
+00:28:13,528 --> 00:28:15,048
+Evaluate the value of it on f.
+
+297
+00:28:15,428 --> 00:28:16,508
+It will be that value.
+
+298
+00:28:16,988 --> 00:28:18,307
+fxk, yk.
+
+299
+00:28:18,468 --> 00:28:20,728
+And tell me what happens
+
+300
+00:28:20,728 --> 00:28:24,668
+if we multiply delta Ak with this value.
+
+301
+00:28:25,347 --> 00:28:26,768
+What do you evaluate?
+
+302
+00:28:26,768 --> 00:28:27,768
+And tell me what happens
+
+303
+00:28:27,768 --> 00:28:28,768
+if we multiply the value of it on the left side.
+
+304
+00:28:28,768 --> 00:28:29,768
+And tell me what happens
+
+305
+00:28:29,768 --> 00:28:30,768
+if we multiply the value of it on the right side.
+
+306
+00:28:30,768 --> 00:28:31,768
+And tell me what happens
+
+307
+00:28:31,768 --> 00:28:32,768
+if we multiply the value of it on the right side.
+
+308
+00:28:32,768 --> 00:28:33,768
+And tell me what happens
+
+309
+00:28:33,768 --> 00:28:34,768
+if we multiply the value of it on the right side.
+
+310
+00:28:34,768 --> 00:28:35,768
+And tell me what happens
+
+311
+00:28:35,768 --> 00:28:36,768
+if we multiply the value of it on the right side.
+
+312
+00:28:36,768 --> 00:28:37,768
+And tell me what happens
+
+313
+00:28:37,768 --> 00:28:38,768
+that we do not have to do that.
+
+314
+00:28:38,768 --> 00:28:39,768
+And tell me what happens
+
+315
+00:28:39,768 --> 00:28:40,768
+that we do not have to do that.
+
+316
+00:28:40,768 --> 00:28:41,768
+And tell me what happens
+
+317
+00:28:41,768 --> 00:28:42,768
+that we do not have to do that.
+
+318
+00:28:42,768 --> 00:28:43,768
+And tell me what happens
+
+319
+00:28:43,768 --> 00:28:44,768
+that we do not have to do that.
+
+320
+00:28:44,768 --> 00:28:45,768
+And tell me what happens
+
+321
+00:28:45,768 --> 00:28:46,768
+that we do not have to do that.
+
+322
+00:28:46,768 --> 00:28:47,768
+And tell me what happens
+
+323
+00:28:47,768 --> 00:28:48,768
+that we do not have to do that.
+
+324
+00:28:48,768 --> 00:28:49,768
+And tell me what happens
+
+325
+00:28:30,483 --> 00:28:32,103
+Geometrically, what is it?
+
+326
+00:28:48,051 --> 00:28:49,811
+Evet, tabii ki. Völüm o ne?
+
+327
+00:29:03,251 --> 00:29:04,251
+Evet.
+
+328
+00:29:04,251 --> 00:29:05,251
+Rectangular?
+
+329
+00:29:05,251 --> 00:29:06,251
+Evet.
+
+330
+00:29:06,251 --> 00:29:10,251
+Prizm, değil mi?
+
+331
+00:29:10,251 --> 00:29:13,251
+Vertical rectangular boxes, you can just think.
+
+332
+00:29:13,251 --> 00:29:17,251
+Evet.
+
+333
+00:29:17,251 --> 00:29:30,251
+That means by partitioning of this area, normally, in fact, we aim to just cut into small vertical boxes of the solid and evaluate the volume of each of them and then get together.
+
+334
+00:29:30,251 --> 00:29:37,251
+Like for a region, area of a region, cut into small rectangles and then evaluate areas and get some of them.
+
+335
+00:29:37,251 --> 00:29:55,251
+Now, in evaluating the volume of a solid, for solid, we just cut into small rectangular vertical boxes, evaluate the volumes of them by multiplying the base region and the height and then get some of them and then make the partitioning going to infinity.
+
+336
+00:29:55,251 --> 00:30:01,251
+In that case, the sum of them will be the exact volume of the solid.
+
+337
+00:30:01,251 --> 00:30:03,251
+Now, are you okay?
+
+338
+00:30:03,251 --> 00:30:04,251
+Do you understand that?
+
+339
+00:30:09,556 --> 00:30:11,236
+Orada, bu da bir şeyin?
+
+340
+00:30:11,236 --> 00:30:14,756
+Ok, şimdi de formalizasyon.
+
+341
+00:30:14,756 --> 00:30:17,635
+Eğitim, bu da bir şeyin var.
+
+342
+00:30:17,635 --> 00:30:20,655
+İlk bölümde de küçük bir bölümde de
+
+343
+00:30:20,655 --> 00:30:23,375
+İnteklisinde de küçük bölümde.
+
+344
+00:30:23,375 --> 00:31:00,375
+İnteklisinde de
+
+345
+00:31:00,375 --> 00:31:44,375
+İnteklisinde
+
+346
+00:31:31,347 --> 00:31:47,367
+İçin birçok ile ilgili birçok ile ilgili birçok ile ilgili birçok ile ilgili birçok ile ilgili birçok ile ilgili birçok ile ilgili birçok ile ilgili birçok ile ilgili birçok ile ilgili birçok ile ilgili birçok ile ilgili birçok ile ilgili birçok ile ilgili birçok ile ilgili birçok ile ilgili birçok ile ilgili birçok ile ilgili birçok ile ilgili birçok ile ilgili birçok ile ilgili birçok ile ilgili birçok ile ilgili birçok ile ilgili birçok ile ilgili birçok ile ilgili birçok ile ilgili birçok ile ilgili birçok ile ilgili birçok ile ilgili birçok ile ilgili birçok ile ilgili birçok ile ilgili birçok ile ilgili birçok ile ilgili birçok ile ilgili birçok ile ilgili birçok ile ilgili birçok ile ilgili birçok ile ilgili birçok ile ilgili birçok ile ilgili birçok ile ilgili birçok ile ilgili
+
+347
+00:31:51,251 --> 00:31:52,791
+So Sn is this.
+
+348
+00:31:52,932 --> 00:31:55,511
+When n is going to infinity delta Ak is going to 0.
+
+349
+00:31:56,132 --> 00:31:58,271
+So when limit n is going to infinity,
+
+350
+00:31:58,432 --> 00:32:02,031
+this sum is equal to limit n is infinity Sn.
+
+351
+00:32:02,551 --> 00:32:05,392
+So when a limit of the sums Sn exist,
+
+352
+00:32:06,111 --> 00:32:07,811
+given the same limiting volume,
+
+353
+00:32:08,731 --> 00:32:11,471
+no matter what choices are made,
+
+354
+00:32:11,951 --> 00:32:14,311
+then the function is said to be integrable.
+
+355
+00:32:14,311 --> 00:32:17,932
+And the limit is called the double integral of f over r.
+
+356
+00:32:17,932 --> 00:32:24,791
+So if the limit is existed and it says,
+
+357
+00:32:25,071 --> 00:32:27,031
+no matter what choices are made means,
+
+358
+00:32:27,892 --> 00:32:32,172
+it's free of making the choice of points,
+
+359
+00:32:32,432 --> 00:32:34,051
+any point, because in this region,
+
+360
+00:32:34,371 --> 00:32:36,371
+in this rectangular region, many points you have,
+
+361
+00:32:36,511 --> 00:32:37,892
+in any point, it doesn't matter.
+
+362
+00:32:38,471 --> 00:32:39,851
+When n is going to infinity,
+
+363
+00:32:39,851 --> 00:32:44,011
+if the function is integrable, it will be the same value.
+
+364
+00:32:44,511 --> 00:32:47,051
+So that's why given the same limiting value,
+
+365
+00:32:47,051 --> 00:32:48,912
+no matter what choices are made.
+
+366
+00:32:49,912 --> 00:32:52,371
+So then the function is integrable.
+
+367
+00:32:53,491 --> 00:32:54,392
+And this is the,
+
+368
+00:32:54,692 --> 00:33:00,051
+this sum when n is going to infinity is called the double integral of f over r
+
+369
+00:33:00,051 --> 00:33:04,531
+and written with this notation on r f dx dy.
+
+370
+00:33:05,311 --> 00:33:08,591
+dx dy is coming from the area of every rectangle.
+
+371
+00:33:08,591 --> 00:33:10,991
+f is the value of the point,
+
+372
+00:33:11,091 --> 00:33:15,152
+which is choice for any sub rectangle.
+
+373
+00:33:17,051 --> 00:33:20,412
+So the volume of the solid,
+
+374
+00:33:20,412 --> 00:33:22,231
+which is,
+
+375
+00:33:22,231 --> 00:33:25,652
+which is having the top surface is that,
+
+376
+00:33:26,172 --> 00:33:26,771
+r function,
+
+377
+00:33:27,251 --> 00:33:28,632
+and the base region is r,
+
+378
+00:33:29,251 --> 00:33:30,771
+is the solid of,
+
+379
+00:33:30,932 --> 00:33:31,912
+the volume of the solid,
+
+380
+00:33:32,371 --> 00:33:34,791
+is the double integral of f over r.
+
+381
+00:33:34,791 --> 00:33:38,571
+That means once you integrate the function over a region,
+
+382
+00:33:39,371 --> 00:33:39,791
+you are,
+
+383
+00:33:40,192 --> 00:33:40,991
+just get,
+
+384
+00:33:41,991 --> 00:33:44,331
+the volume of the solid between them,
+
+385
+00:33:44,851 --> 00:33:45,451
+f to r.
+
+386
+00:33:45,791 --> 00:33:45,912
+Okay.
+
+387
+00:33:46,652 --> 00:33:49,071
+Integrate f over r means,
+
+388
+00:33:50,132 --> 00:33:52,892
+you got the volume of the solid between them.
+
+389
+00:33:53,491 --> 00:33:55,491
+Base region is the region of integration.
+
+390
+00:33:56,251 --> 00:33:57,412
+Top surface is the,
+
+391
+00:33:57,932 --> 00:33:58,711
+r function,
+
+392
+00:33:59,071 --> 00:33:59,271
+z,
+
+393
+00:33:59,771 --> 00:34:00,531
+fx y.
+
+394
+00:34:00,531 --> 00:34:01,672
+Okay.
+
+395
+00:34:02,912 --> 00:34:06,511
+This is the main idea of the double integral.
+
+396
+00:34:07,991 --> 00:34:08,771
+So again,
+
+397
+00:34:08,871 --> 00:34:09,791
+I will repeat them.
+
+398
+00:34:11,751 --> 00:34:15,291
+One fx y is a positive function over a rectangular region,
+
+399
+00:34:15,391 --> 00:34:15,632
+r,
+
+400
+00:34:15,751 --> 00:34:16,672
+in the xy plane.
+
+401
+00:34:18,092 --> 00:34:19,911
+We may interpret or show,
+
+402
+00:34:20,032 --> 00:34:22,072
+it means the double integral of f over r
+
+403
+00:34:22,072 --> 00:34:24,592
+as the volume of the three-dimensional solid region
+
+404
+00:34:24,592 --> 00:34:26,511
+over the xy plane,
+
+405
+00:34:26,771 --> 00:34:27,371
+base region,
+
+406
+00:34:27,891 --> 00:34:29,211
+bounded below by r,
+
+407
+00:34:29,411 --> 00:34:31,371
+and above surface z.
+
+408
+00:34:31,851 --> 00:34:32,811
+That means it says,
+
+409
+00:34:33,311 --> 00:34:34,211
+bounded below what,
+
+410
+00:34:34,371 --> 00:34:35,072
+by r,
+
+411
+00:34:35,492 --> 00:34:37,552
+and above z.
+
+412
+00:34:42,547 --> 00:34:50,707
+And again, as I said before, fx, k, y, k, delta, ak is the volume of every vertical rectangular box.
+
+413
+00:34:51,667 --> 00:34:55,527
+And the sum just approximates the total volume of the solid.
+
+414
+00:34:55,707 --> 00:35:00,127
+That means if you just cut into, you have a solid, just cut into small rectangular boxes.
+
+415
+00:35:00,807 --> 00:35:07,107
+And if you have n numbers of rectangular boxes, you just evaluate the volume of each rectangular box and then get some of them.
+
+416
+00:35:07,107 --> 00:35:08,587
+So it's an approximation.
+
+417
+00:35:09,527 --> 00:35:14,547
+So we define this volume to be 1 n is going to infinity of the sum.
+
+418
+00:35:15,267 --> 00:35:22,987
+It results the exact volume of the volume bounded above by f below yr with respect to x and y,
+
+419
+00:35:23,507 --> 00:35:28,307
+where delta ak is going to 0 as n is going to infinity, as I said before.
+
+420
+00:35:30,967 --> 00:35:32,307
+Are you okay up to now?
+
+421
+00:35:32,307 --> 00:35:40,087
+This is the most important thing, I think, in double integrals in order to understand the main structure and the main idea.
+
+422
+00:35:40,087 --> 00:35:40,107
+So, this is the most important thing, I think, in double integrals in order to understand the main structure and the main idea.
+
+423
+00:35:43,731 --> 00:35:45,192
+ve de aim to do it.
+
+424
+00:35:54,675 --> 00:35:56,675
+Do you want me to repeat it? Are you okay?
+
+425
+00:36:03,987 --> 00:36:18,407
+Okay, now you learn why do we need to integrate a double integral, a function of two variables, and you understand that it results a volume for a positive function.
+
+426
+00:36:23,059 --> 00:36:28,500
+Maybe you can ask me, so how can we write the limits of integration, for example?
+
+427
+00:36:29,079 --> 00:36:34,860
+I think the most challenging topic is to specify the region of integral
+
+428
+00:36:34,860 --> 00:36:37,860
+and then write the limits of integration according to that region.
+
+429
+00:36:38,840 --> 00:36:42,019
+For single integrals, we just have only one integral,
+
+430
+00:36:42,019 --> 00:36:46,340
+so A to B, B to C, any real number between two real numbers.
+
+431
+00:36:46,759 --> 00:36:48,820
+We have a continuous function and that's okay.
+
+432
+00:36:48,820 --> 00:36:54,820
+We emulate and put two points and it results always a real number for a continuous function.
+
+433
+00:36:56,019 --> 00:37:00,500
+Here, the problem is writing the limits of integral.
+
+434
+00:37:01,779 --> 00:37:06,579
+So, in order to write it, Fubinus theorem we will use.
+
+435
+00:37:07,139 --> 00:37:11,860
+Firstly, the first form, the easier one.
+
+436
+00:37:11,860 --> 00:37:14,340
+Second, that is the stronger form we will use.
+
+437
+00:37:14,340 --> 00:37:19,940
+In the first form, the first form is used to write the limits of integration of a double integral
+
+438
+00:37:19,940 --> 00:37:24,340
+once we use the rectangular region, R.
+
+439
+00:37:24,340 --> 00:37:29,219
+When R is a rectangular region, we use first Fubinus theorem in order to write the limits.
+
+440
+00:37:29,779 --> 00:37:31,940
+It's very, very easier.
+
+441
+00:37:31,940 --> 00:37:36,099
+That means the most easier double integrals are rectangular regions.
+
+442
+00:37:36,099 --> 00:37:39,940
+They are evaluated on rectangular regions because the limits are so easy to write.
+
+443
+00:37:39,940 --> 00:37:44,179
+Because it's a rectangle between A to B, C to D. It's easy.
+
+444
+00:37:45,299 --> 00:37:50,340
+In the second part, you will see non-rectangular regions once you have,
+
+445
+00:37:50,340 --> 00:37:54,099
+what will you do, and how will you write the limits of integration is important.
+
+446
+00:37:54,819 --> 00:37:59,779
+Firstly, let's start with the first form of the Fubinus theorem and then see the stronger form.
+
+447
+00:38:00,900 --> 00:38:02,500
+Step by step, we will continue.
+
+448
+00:38:02,500 --> 00:38:06,659
+So Fubinus theorem for calculating double integrals.
+
+449
+00:38:06,659 --> 00:38:08,980
+That means to write the limits of integral.
+
+450
+00:38:10,420 --> 00:38:15,619
+First form, if Fx,y is continuous throughout the rectangular region,
+
+451
+00:38:16,500 --> 00:38:20,019
+R, X is A to B, Y is C to D, then
+
+452
+00:38:22,179 --> 00:38:28,420
+double integral of F over R over that rectangular region is evaluated by what?
+
+453
+00:38:28,420 --> 00:38:31,860
+Now here, dx, dy and the order is important here.
+
+454
+00:38:32,420 --> 00:38:35,059
+Firstly, x and then y or first y and then x,
+
+455
+00:38:35,619 --> 00:38:41,779
+it is changing the integrations of limits of integrations completely.
+
+456
+00:38:41,779 --> 00:38:44,659
+You have to be careful about the order of dx and dy.
+
+457
+00:38:44,659 --> 00:38:46,259
+Which one firstly write?
+
+458
+00:38:46,259 --> 00:38:47,139
+This is important.
+
+459
+00:38:47,779 --> 00:38:52,259
+Firstly, you need to specify this which one to write.
+
+460
+00:38:52,259 --> 00:38:57,219
+It is related with the smoothness of the region, but once we have a rectangular region,
+
+461
+00:38:57,219 --> 00:38:58,500
+no problem, just look up.
+
+462
+00:38:58,980 --> 00:38:59,779
+Lastly, dy.
+
+463
+00:39:00,819 --> 00:39:02,179
+Firstly, with respect to x.
+
+464
+00:39:02,179 --> 00:39:04,980
+So double integral is an iterative integral.
+
+465
+00:39:04,980 --> 00:39:10,099
+Firstly, you evaluate the first integral and then the second one.
+
+466
+00:39:10,099 --> 00:39:11,699
+That's why iterated integral.
+
+467
+00:39:12,659 --> 00:39:14,500
+So the first integral is what?
+
+468
+00:39:14,500 --> 00:39:15,460
+With respect to x.
+
+469
+00:39:16,019 --> 00:39:16,819
+First integral.
+
+470
+00:39:17,539 --> 00:39:20,819
+A to B, that means one by one you will integrate.
+
+471
+00:39:21,380 --> 00:39:24,900
+A to B, fx,y dx first you will evaluate.
+
+472
+00:39:24,900 --> 00:39:31,380
+And then you will get the function of y and then integrate it with respect to y, c to d.
+
+473
+00:39:31,380 --> 00:39:38,980
+So the first integral, that means insider integral will be, if it is written dx dy, will be the limits of x.
+
+474
+00:39:40,500 --> 00:39:42,099
+X is between A to B.
+
+475
+00:39:42,099 --> 00:39:44,179
+So the first integral A to B.
+
+476
+00:39:44,179 --> 00:39:46,340
+When I mean first integral, maybe you mean this.
+
+477
+00:39:46,340 --> 00:39:49,219
+So let's say insider integrals.
+
+478
+00:39:49,219 --> 00:39:51,059
+That means first integral to evaluate.
+
+479
+00:39:51,619 --> 00:39:53,139
+A to B, f dx.
+
+480
+00:39:54,739 --> 00:39:55,059
+Okay.
+
+481
+00:39:55,860 --> 00:39:58,099
+Then with respect to y.
+
+482
+00:39:58,099 --> 00:40:03,300
+So lastly, this integral will be in terms of y, c to d.
+
+483
+00:40:03,860 --> 00:40:04,500
+C to d.
+
+484
+00:40:04,500 --> 00:40:04,980
+Okay.
+
+485
+00:40:04,980 --> 00:40:08,099
+That's why A to B, c to d dx dy.
+
+486
+00:40:09,139 --> 00:40:12,900
+If you do just a converse order, no problem.
+
+487
+00:40:12,900 --> 00:40:27,300
+You can do it for rectangular regions, no problem.
+
+488
+00:40:16,019 --> 00:40:19,019
+Eksiyon, ikinci bir de yi'ye görebilirsiniz.
+
+489
+00:40:19,019 --> 00:41:10,019
+Öncelikle, yi'ye görebilirsiniz.
+
+490
+00:41:10,019 --> 00:41:16,019
+Fubini's theorem says that double integrals over rectangles as iterated integrals.
+
+491
+00:41:16,019 --> 00:41:18,019
+That means one by one you integrate.
+
+492
+00:41:18,019 --> 00:41:24,019
+Thus, we can evaluate the double integral by integrating with respect to one variable at a time.
+
+493
+00:41:24,019 --> 00:41:26,019
+And then continue with the other one.
+
+494
+00:41:26,019 --> 00:41:28,019
+Okay.
+
+495
+00:41:38,835 --> 00:42:28,775
+Bu, bu
+
+496
+00:42:33,588 --> 00:42:34,588
+İzlediğiniz için,
+
+497
+00:42:34,588 --> 00:45:46,588
+bu,
+
+498
+00:45:46,588 --> 00:45:47,588
+1 square,
+
+499
+00:45:47,588 --> 00:45:48,588
+1.
+
+500
+00:45:48,588 --> 00:45:49,588
+So,
+
+501
+00:45:49,588 --> 00:45:50,588
+this is the first one,
+
+502
+00:45:50,588 --> 00:45:51,588
+the upper limit,
+
+503
+00:45:51,588 --> 00:45:53,588
+minus the lower limit,
+
+504
+00:45:53,588 --> 00:45:55,588
+substitute minus 1 to y only,
+
+505
+00:45:55,588 --> 00:45:59,588
+don't do anything with x.
+
+506
+00:45:59,588 --> 00:46:00,588
+if you do it,
+
+507
+00:46:00,588 --> 00:46:04,588
+you will have a completely mistaken result.
+
+508
+00:46:04,588 --> 00:46:05,588
+Be careful.
+
+509
+00:46:05,588 --> 00:46:06,588
+It is the,
+
+510
+00:46:06,588 --> 00:46:09,588
+a common mistake that we meet.
+
+511
+00:46:09,588 --> 00:46:10,588
+Okay.
+
+512
+00:46:10,588 --> 00:46:11,588
+Be careful.
+
+513
+00:46:11,588 --> 00:46:14,588
+Minus 1 will be substituted to 1.
+
+514
+00:46:14,588 --> 00:46:16,588
+Minus 100,
+
+515
+00:46:16,588 --> 00:46:18,588
+minus 3x square times 1.
+
+516
+00:46:18,588 --> 00:46:20,588
+So,
+
+517
+00:46:20,588 --> 00:46:23,588
+the result of this integration is 200,
+
+518
+00:46:23,588 --> 00:46:24,588
+200,
+
+519
+00:46:24,588 --> 00:46:25,588
+0 to 2.
+
+520
+00:46:25,588 --> 00:46:26,588
+So,
+
+521
+00:46:26,588 --> 00:46:27,588
+the result of this integration is 200,
+
+522
+00:46:27,588 --> 00:46:28,588
+200,
+
+523
+00:46:28,588 --> 00:46:29,588
+0 to 2.
+
+524
+00:46:29,588 --> 00:46:30,588
+So,
+
+525
+00:46:30,588 --> 00:46:31,588
+the result of this integration is 200,
+
+526
+00:46:31,588 --> 00:46:32,588
+200,
+
+527
+00:46:32,588 --> 00:46:33,588
+0 to 2.
+
+528
+00:46:33,588 --> 00:46:34,588
+So,
+
+529
+00:46:34,588 --> 00:46:35,588
+the result of this integration is 200,
+
+530
+00:46:35,588 --> 00:46:36,588
+200,
+
+531
+00:46:36,588 --> 00:46:37,588
+0 to 2.
+
+532
+00:46:37,588 --> 00:46:38,588
+So,
+
+533
+00:46:38,588 --> 00:46:39,588
+the result of this integration is 200,
+
+534
+00:46:39,588 --> 00:46:40,588
+0 to 2.
+
+535
+00:46:40,588 --> 00:46:41,588
+So,
+
+536
+00:46:41,588 --> 00:46:42,588
+the result of this integration is 200,
+
+537
+00:46:26,612 --> 00:46:36,552
+200 is a custom number of course for x, so 200 times x, 0 to 2, 2 minus 0 times 200, results 400.
+
+538
+00:46:38,731 --> 00:46:43,711
+Are you okay? How we integrate one integration is okay and continue with the other one.
+
+539
+00:46:44,211 --> 00:46:49,452
+And also, at this step, if you have any mistake about substituting the limits of integration,
+
+540
+00:46:49,452 --> 00:46:55,032
+for example, if you put these values to x mistakenly, you will have y left.
+
+541
+00:46:55,032 --> 00:47:00,632
+And if you have integrated of a function, integrate the function with respect to y.
+
+542
+00:47:01,192 --> 00:47:05,072
+And as a result of it, if you have still the variable y, that means you are mistaken.
+
+543
+00:47:06,012 --> 00:47:10,692
+You must see no y anymore if you put also the limits of integration.
+
+544
+00:47:10,692 --> 00:47:17,072
+That means the result of this integral can include only custom numbers or x.
+
+545
+00:47:18,211 --> 00:47:21,372
+No more y here.
+
+546
+00:47:22,112 --> 00:47:23,672
+Okay, I hope you understand.
+
+547
+00:47:23,672 --> 00:47:27,192
+If you have still the values of y here, that means you are mistaken.
+
+548
+00:47:27,731 --> 00:47:31,711
+You have forgotten to substitute the limits of integration to y, it means.
+
+549
+00:47:32,012 --> 00:47:32,152
+Okay.
+
+550
+00:47:32,412 --> 00:47:35,192
+Or mistakenly, you substitute the values to x function.
+
+551
+00:47:35,652 --> 00:47:36,492
+Mistakenly again.
+
+552
+00:47:37,132 --> 00:47:37,851
+So be careful.
+
+553
+00:47:39,552 --> 00:47:41,572
+What if we have always the second way?
+
+554
+00:47:42,092 --> 00:47:42,992
+More generally.
+
+555
+00:47:44,412 --> 00:47:47,851
+Except some fundamental integrals.
+
+556
+00:47:47,851 --> 00:47:48,932
+I'm sorry.
+
+557
+00:47:49,311 --> 00:47:52,532
+Some basic and problem integrals.
+
+558
+00:47:53,012 --> 00:47:59,851
+More generally, the integrations, double integrations, can be written according to two different ways.
+
+559
+00:47:59,992 --> 00:48:03,092
+First the dx and then dy, or first the dy and then dx.
+
+560
+00:48:04,652 --> 00:48:08,351
+They result, of course, the same way, always, if you are not mistaken.
+
+561
+00:48:08,351 --> 00:48:11,851
+But calculation is different.
+
+562
+00:48:12,372 --> 00:48:14,771
+Limits of integrations are completely different.
+
+563
+00:48:14,892 --> 00:48:15,412
+Don't forget.
+
+564
+00:48:17,032 --> 00:48:19,271
+So sometimes you can prefer one of them.
+
+565
+00:48:19,392 --> 00:48:24,012
+Sometimes, for example, dx dy is easier than dy dx.
+
+566
+00:48:24,012 --> 00:48:25,692
+You can say and then evaluate.
+
+567
+00:48:26,112 --> 00:48:26,771
+No problem.
+
+568
+00:48:26,872 --> 00:48:27,672
+It's up to you.
+
+569
+00:48:27,672 --> 00:48:30,791
+Just be careful about the limits of integration.
+
+570
+00:48:31,291 --> 00:48:38,211
+This is the first and the main and the most important step for evaluating the double integral before evaluating it.
+
+571
+00:48:39,632 --> 00:48:39,932
+Okay.
+
+572
+00:48:40,592 --> 00:48:44,351
+So if I prefer to write first the dx and then dy.
+
+573
+00:48:45,172 --> 00:48:51,432
+So this integral, this insider integral with respect to x, so must include the limits of x.
+
+574
+00:48:51,512 --> 00:48:53,331
+x was 0 to 2.
+
+575
+00:48:53,472 --> 00:48:53,711
+Yes.
+
+576
+00:48:54,152 --> 00:48:54,751
+0 to 2.
+
+577
+00:48:54,751 --> 00:48:57,231
+Because first I will integrate with respect to x.
+
+578
+00:48:57,672 --> 00:49:00,132
+So I need to use the limits of x 0 to 2.
+
+579
+00:49:00,251 --> 00:49:01,872
+And then with respect to y.
+
+580
+00:49:02,291 --> 00:49:04,311
+y was between minus 1 and 1.
+
+581
+00:49:04,392 --> 00:49:08,251
+So this integral will include the limits of y.
+
+582
+00:49:09,432 --> 00:49:11,112
+So let's look up the first integral.
+
+583
+00:49:11,652 --> 00:49:16,172
+0 to 2, 100 minus x squared y with respect to x.
+
+584
+00:49:16,172 --> 00:49:17,271
+Just think.
+
+585
+00:49:18,152 --> 00:49:21,452
+y will be constant for x.
+
+586
+00:49:32,244 --> 00:50:02,244
+100 ile x'e 100 ile x'e 100 ile x'e 100 ile x'e 100 ile x'e 100 ile x'e 100 ile x'e 100 ile x'e 100 ile x'e 100 ile x'e 100 ile x'e 100 ile x'e 100 ile x'e 100 ile x'e 100 ile x'e 100 ile x'e 100 ile x'e 100 ile x'e 100 ile x'e 100 ile x'e 100 ile x'e 100 ile x'e 100 ile x'e 100 ile x'e 100 ile x'e 100 ile x'e 100 ile x'e 100 ile x'e 100 ile x'e 100 ile x'e 100 ile x'e 100 ile x'e 100 ile x'e 100 ile x'e 100 ile x'e 100 ile x'e 100 ile x'e 100 ile x'e 100 ile x'e 100 ile x'e 100 ile x'e 100 ile x'e 100 ile x'e 100 ile x'e 100 ile x
+
+587
+00:50:02,244 --> 00:50:17,764
+x'e 100 ile x'e 100 ile x'e 100 ile x'e 100 ile x'e 100 ile x'e 100 ile x'e 100 ile x'e 100 ile x'e 100 ile x'e 100 ile x'e 100 ile x'e 100 ile x'e 100 ile x'e 100 ile x'e 100 ile x'e 100 ile x'e 100 ile x'e 100 ile x'e 100 ile x'e 100 ile x'e 100 ile x'e 100 ile x'e 100 ile x'e 100 ile x'e 100 ile x'e 100 ile x'e 100 ile x'e 100 ile x'e 100 ile x'e 100 ile x'e 100 ile x'e 100 ile x'e 100 ile x'e 100 ile x'e 100 ile x'e 100 ile x'e 100 ile x'e 100 ile x'e 100 ile x'e 100 ile x'e 100 ile x'e 100 ile x'e 100 ile x'e 100 ile x
+
+588
+00:51:19,476 --> 00:51:20,796
+Now, can you hear me?
+
+589
+00:51:25,235 --> 00:51:25,835
+Ah, yes.
+
+590
+00:51:27,255 --> 00:51:28,536
+It suddenly stopped.
+
+591
+00:51:28,775 --> 00:51:30,835
+I'm sorry about...
+
+592
+00:51:30,835 --> 00:51:31,556
+I don't know.
+
+593
+00:51:31,615 --> 00:51:32,755
+We had a disconnection.
+
+594
+00:51:33,855 --> 00:51:35,795
+And I was talking about...
+
+595
+00:51:38,496 --> 00:51:39,215
+Here.
+
+596
+00:51:41,455 --> 00:51:43,715
+Integration with respect to X
+
+597
+00:51:43,715 --> 00:51:46,175
+and then substituting the limits of integral.
+
+598
+00:51:46,975 --> 00:51:48,115
+Upper limit 2.
+
+599
+00:51:48,755 --> 00:51:51,076
+So 200 minus...
+
+600
+00:51:51,076 --> 00:51:53,275
+Minus 2 times 8, 16.
+
+601
+00:51:53,395 --> 00:51:55,076
+16y minus...
+
+602
+00:51:55,235 --> 00:51:57,895
+For 0, you will have both 0 minus 0.
+
+603
+00:51:58,096 --> 00:51:59,175
+So this integral.
+
+604
+00:51:59,615 --> 00:52:01,496
+As you see, as a result of this integral,
+
+605
+00:52:01,635 --> 00:52:02,395
+no X here.
+
+606
+00:52:02,795 --> 00:52:03,915
+That means...
+
+607
+00:52:03,915 --> 00:52:05,175
+Probably, yes, you're right.
+
+608
+00:52:05,255 --> 00:52:06,355
+No problem about X.
+
+609
+00:52:07,135 --> 00:52:08,455
+So...
+
+610
+00:52:08,455 --> 00:52:11,695
+It results always a single variable function.
+
+611
+00:52:12,455 --> 00:52:13,775
+If you are not mistaken.
+
+612
+00:52:14,715 --> 00:52:16,695
+And so now it results...
+
+613
+00:52:16,695 --> 00:52:18,096
+And now a single integral.
+
+614
+00:52:18,556 --> 00:52:19,395
+A definite integral.
+
+615
+00:52:19,496 --> 00:52:20,496
+Minus 1 to 1.
+
+616
+00:52:21,036 --> 00:52:22,735
+This function with respect to Y.
+
+617
+00:52:22,735 --> 00:52:25,955
+So 200 and Y minus 6Y squared.
+
+618
+00:52:26,556 --> 00:52:27,635
+Minus 1 to 1.
+
+619
+00:52:27,675 --> 00:52:28,996
+Again, it results...
+
+620
+00:52:28,996 --> 00:52:29,895
+400 and...
+
+621
+00:52:29,895 --> 00:52:31,895
+If you are not mistaken...
+
+622
+00:52:31,895 --> 00:52:33,795
+Always they result the same...
+
+623
+00:52:33,795 --> 00:52:35,315
+Integral value.
+
+624
+00:52:36,056 --> 00:52:37,596
+With respect to...
+
+625
+00:52:37,596 --> 00:52:38,795
+First the X and then Y.
+
+626
+00:52:38,895 --> 00:52:40,235
+Or first the Y and then X.
+
+627
+00:52:40,615 --> 00:52:42,056
+You can choose any of them.
+
+628
+00:52:42,115 --> 00:52:42,775
+It doesn't matter.
+
+629
+00:52:43,175 --> 00:52:44,275
+If you are not mistaken...
+
+630
+00:52:44,275 --> 00:52:46,235
+Always they result the same number.
+
+631
+00:52:48,096 --> 00:52:49,935
+For some non-elementary integrals...
+
+632
+00:52:49,935 --> 00:52:51,215
+Sometimes...
+
+633
+00:52:51,215 --> 00:52:52,715
+For some few examples...
+
+634
+00:52:52,715 --> 00:52:55,036
+We have only one...
+
+635
+00:52:55,036 --> 00:52:56,315
+One of them.
+
+636
+00:52:56,735 --> 00:52:58,155
+It's possible to integrate.
+
+637
+00:52:58,955 --> 00:53:00,556
+You will see now in the exercises.
+
+638
+00:53:00,556 --> 00:53:01,175
+And then...
+
+639
+00:53:01,175 --> 00:53:21,556
+You will see now in the exercises.
+
+640
+00:53:06,643 --> 00:53:08,663
+And the question up to now, are you okay?
+
+641
+00:53:15,923 --> 00:53:22,503
+Okay, let's see the next exercise.
+
+642
+00:53:23,224 --> 00:53:30,063
+It says find the volume of the region bounded above by the elliptical paraboloid.
+
+643
+00:53:30,324 --> 00:53:33,503
+That means the top surface is part of elliptical paraboloid.
+
+644
+00:53:34,704 --> 00:53:37,063
+And below the base region is a rectangle again.
+
+645
+00:53:37,284 --> 00:53:39,704
+X is between 0 and 1, O is between 0 and 2.
+
+646
+00:53:39,704 --> 00:53:55,903
+Okay, of course, the integral of z, integral of z over the region r gives the volume of the region of the solid bounded above with our function and below by the rectangle r.
+
+647
+00:53:56,523 --> 00:53:58,083
+Yes, it is okay.
+
+648
+00:53:59,003 --> 00:54:04,103
+The volume of it can be evaluated by the double integral of z over the region r.
+
+649
+00:54:04,103 --> 00:54:34,083
+So, you need to write the integral.
+
+650
+00:54:17,012 --> 00:54:18,012
+İzlediğiniz için çok kolay.
+
+651
+00:54:18,012 --> 00:54:20,012
+İntek için çok kolay.
+
+652
+00:54:20,012 --> 00:57:20,012
+İntek için.
+
+653
+00:57:28,115 --> 00:57:29,036
+I think it's clear.
+
+654
+00:57:30,835 --> 00:57:32,175
+First Fubuni Theorem.
+
+655
+00:57:33,175 --> 00:57:37,596
+You have learned what to do for rectangular regions.
+
+656
+00:57:38,096 --> 00:57:38,235
+Okay.
+
+657
+00:57:40,355 --> 00:57:40,956
+Yes.
+
+658
+00:57:41,096 --> 00:57:41,315
+Okay.
+
+659
+00:57:41,396 --> 00:57:41,775
+Well done.
+
+660
+00:57:42,695 --> 00:57:48,675
+Now let's continue with double integrals over bounded but non-rectangular regions.
+
+661
+00:57:48,896 --> 00:57:51,076
+Any form of a region you may have.
+
+662
+00:57:51,155 --> 00:57:54,036
+Each region you may have bounded by a specific function.
+
+663
+00:57:54,036 --> 00:58:00,496
+That means when it is between some functions how to write limits of integration.
+
+664
+00:58:00,496 --> 00:58:02,715
+Now you will not have only custom numbers.
+
+665
+00:58:03,175 --> 00:58:05,715
+Now you will have functions on the limits of integral.
+
+666
+00:58:06,755 --> 00:58:10,056
+Specifically in the insider function of course, in the insider integral.
+
+667
+00:58:17,427 --> 00:58:23,847
+Şimdi, bu bölümde bir bölümde bir bölümde bir bölümde bir bölümde bir bölümde.
+
+668
+00:58:23,847 --> 00:58:53,847
+Bu, bu bölümde bir bölümde bir bölümde bir bölümde bir bölümde bir bölümde bir bölümde bir bölümde bir bölümde bir bölümde bir bölümde bir bölümde bir bölümde bir bölümde bir bölümde bir bölümde bir bölümde bir bölümde bir bölümde bir bölümde bir bölümde bir bölümde bir bölümde bir bölümde bir bölümde bir bölümde bir bölümde bir bölümde bir bölümde bir bölümde bir bölümde bir bölümde bir bölümde bir bölümde bir bölümde bir bölümde bir bölümde bir bölümde bir bölümde bir bölümde bir bölümde bir bölümde bir bölümde bir bölümde bir bölümde bir bölümde bir bölümde bir bölümde bir bölümde bir bölümde bir bölümde bir bölümde bir bölümde bir bölümde bir bölümde bir
+
+669
+00:58:53,847 --> 00:59:53,847
+bölümde bir bölümde bir bölümde bir bölümde bir bölümde bir bölümde bir bölümde bir bölümde bir bölümde bir bölümde bir bölümde bir bölümde bir bölümde bir bölümde bir bölümde bir bölümde bir bölümde bir bölümde bir bölümde bir bölümde bir bölümde bir bölümde bir bölümde bir bölümde bir bölümde bir bölümde bir bölümde bir bölümde bir bölümde bir bölümde bir bölümde bir bölümde bir bölümde bir bölümde bir bölümde bir bölümde bir bölümde bir bölümde bir bölümde bir bölümde bir bölümde bir bölümde bir bölümde bir bölümde bir bölümde bir bölümde bir bölümde bir bölümde bir bölümde bir bölümde bir bölümde bir bölümde bir bölümde bir bölümde bir bölümde bir böl
+
+670
+00:59:53,847 --> 00:59:56,708
+Let's see what's happening
+
+671
+00:59:56,708 --> 01:00:00,547
+Again we are evaluating volumes
+
+672
+01:00:00,547 --> 01:00:05,708
+But for volumes let's see how can we specify the limits of integration this is the problem
+
+673
+01:00:05,708 --> 01:00:09,228
+Evaluating part is the same but the important thing is here
+
+674
+01:00:09,228 --> 01:00:11,307
+To write limits of integral
+
+675
+01:00:17,972 --> 01:00:28,352
+If fx y is positive and continuous over r, we define the volume of the solid region between r and the surface.
+
+676
+01:00:29,012 --> 01:00:36,152
+Yes, of course we know that the positive function f and if we integrate double integral of f over a base region r,
+
+677
+01:00:36,972 --> 01:00:41,652
+it results or it corresponds to the volume of the solid which is between f and r.
+
+678
+01:00:42,072 --> 01:00:44,232
+Yes, again the same condition.
+
+679
+01:00:44,232 --> 01:00:53,592
+That means it doesn't need to be a rectangular region to talk about this relation, about volume and the double integral.
+
+680
+01:00:54,452 --> 01:01:05,812
+So if there is a non-rectangular region in the xy plane bounded above and below by the curves g2 and g1 and on the sides by x's a and x's b,
+
+681
+01:01:05,812 --> 01:01:12,012
+we may calculate the volume again by slicing into small rectangular boxes.
+
+682
+01:01:12,012 --> 01:01:24,952
+Also, we need to consider smoothness in that case because we need to specify firstly x and then y or first y and then x.
+
+683
+01:01:25,352 --> 01:01:29,552
+This is very important firstly before writing the limits of integration.
+
+684
+01:01:29,552 --> 01:01:37,472
+So in order to decide which variable first is right, you need to just understand smooth region.
+
+685
+01:01:38,472 --> 01:01:50,612
+Smooth region means that if you have a cross vertical, I'm sorry, if you have a vertical section, vertical to x,
+
+686
+01:01:50,612 --> 01:01:51,612
+section and move it along the region r.
+
+687
+01:01:51,612 --> 01:01:56,612
+And this section is once you move it from a to b along the whole shape.
+
+688
+01:01:56,612 --> 01:02:05,372
+If you still you have on the bottom and top the same curves or lines or same values, that means it is smooth.
+
+689
+01:02:05,372 --> 01:02:11,252
+You get a vertical section to x axis.
+
+690
+01:02:11,252 --> 01:02:18,512
+Okay, vertical section and move it along the region r.
+
+691
+01:02:18,512 --> 01:02:30,192
+Above always g2 below always g1 means it is smooth with respect to x because with respect to x I have considered.
+
+692
+01:02:30,192 --> 01:02:37,452
+In that case, smoothness is important because when it is smooth with respect to x,
+
+693
+01:02:37,452 --> 01:02:41,712
+lastly you need to write with respect to x.
+
+694
+01:02:41,712 --> 01:02:46,912
+So dy dx you need to write in order to make the limits of integration easier.
+
+695
+01:02:46,912 --> 01:02:54,912
+Because if it is not smooth with respect to x and if you insist on writing the limits with respect to x,
+
+696
+01:02:54,912 --> 01:02:57,252
+you need to just cut into smooth parts.
+
+697
+01:02:57,252 --> 01:03:02,752
+So at least two integrals, two double integrals you will have and you need to evaluate.
+
+698
+01:03:02,752 --> 01:03:07,012
+In that case, look, look at the section.
+
+699
+01:03:07,012 --> 01:03:11,252
+Section shows that this region is smooth.
+
+700
+01:03:11,852 --> 01:03:14,092
+Section is between which lines or curves.
+
+701
+01:03:14,231 --> 01:03:15,032
+This is important.
+
+702
+01:03:15,552 --> 01:03:16,632
+G1 to g2.
+
+703
+01:03:16,912 --> 01:03:19,952
+Firstly, the smaller one and then the biggest one.
+
+704
+01:03:19,952 --> 01:03:22,152
+G1 to g2.
+
+705
+01:03:26,420 --> 01:03:27,780
+G1 to G2.
+
+706
+01:03:27,900 --> 01:03:28,960
+They are functions of x.
+
+707
+01:03:29,200 --> 01:03:29,680
+Be careful.
+
+708
+01:03:30,500 --> 01:03:31,659
+And lastly write x.
+
+709
+01:03:31,800 --> 01:03:32,320
+Don't forget.
+
+710
+01:03:33,099 --> 01:03:36,360
+If we choose smooth region with respect to x.
+
+711
+01:03:36,760 --> 01:03:39,300
+Lastly write with respect to x dx.
+
+712
+01:03:39,300 --> 01:03:43,180
+So these limits will be G1 to G2.
+
+713
+01:03:43,320 --> 01:03:45,079
+But in terms of x must be written.
+
+714
+01:03:45,300 --> 01:03:46,860
+No y you can write here.
+
+715
+01:03:47,480 --> 01:03:49,599
+If you write y here it's a big mistake.
+
+716
+01:03:50,159 --> 01:03:51,220
+Because your integral.
+
+717
+01:03:51,700 --> 01:03:54,059
+The result of the first integral will be in terms of y.
+
+718
+01:03:54,059 --> 01:03:57,099
+But and then you will integrate with respect to x.
+
+719
+01:03:57,380 --> 01:03:58,519
+And then you will understand.
+
+720
+01:03:58,860 --> 01:03:59,980
+We have a problem here.
+
+721
+01:04:00,139 --> 01:04:00,380
+Okay.
+
+722
+01:04:00,920 --> 01:04:01,860
+So it's important.
+
+723
+01:04:02,619 --> 01:04:06,220
+When your region is smooth with respect to x.
+
+724
+01:04:06,220 --> 01:04:08,700
+So lastly write dx.
+
+725
+01:04:08,960 --> 01:04:10,320
+So write dy dx.
+
+726
+01:04:11,559 --> 01:04:13,659
+And what about the first integral?
+
+727
+01:04:13,940 --> 01:04:16,079
+First integral is the limits of x.
+
+728
+01:04:16,760 --> 01:04:17,400
+Just look.
+
+729
+01:04:18,639 --> 01:04:22,019
+Just look up the projection of the region on x-axis.
+
+730
+01:04:22,019 --> 01:04:25,000
+projection of region on x-axis.
+
+731
+01:04:25,180 --> 01:04:26,119
+You will see a to b.
+
+732
+01:04:26,880 --> 01:04:27,720
+Yes a to b.
+
+733
+01:04:27,800 --> 01:04:28,880
+So the first integral.
+
+734
+01:04:29,240 --> 01:04:30,000
+Or this integral.
+
+735
+01:04:30,180 --> 01:04:30,840
+The last one.
+
+736
+01:04:31,079 --> 01:04:31,619
+In fact.
+
+737
+01:04:32,220 --> 01:04:32,880
+a to b.
+
+738
+01:04:33,340 --> 01:04:34,559
+G1 to g2.
+
+739
+01:04:34,900 --> 01:04:35,500
+dy dx.
+
+740
+01:04:36,780 --> 01:04:38,680
+Why they are written in terms of x?
+
+741
+01:04:38,760 --> 01:04:41,119
+Because you will integrate first with respect to y.
+
+742
+01:04:41,760 --> 01:04:44,320
+But at the end you need to get a function of x.
+
+743
+01:04:44,740 --> 01:04:46,860
+So they must be written in terms of x.
+
+744
+01:04:46,860 --> 01:04:51,559
+These functions are the boundaries of the section that you choose here.
+
+745
+01:04:52,159 --> 01:04:52,940
+That you sketch.
+
+746
+01:04:53,360 --> 01:04:54,480
+G1 to g2.
+
+747
+01:04:54,720 --> 01:04:56,740
+Sections between g1 to g2.
+
+748
+01:04:57,280 --> 01:04:58,820
+So in order to.
+
+749
+01:04:59,760 --> 01:05:01,039
+How can we say.
+
+750
+01:05:01,500 --> 01:05:02,700
+Trace all the region.
+
+751
+01:05:03,079 --> 01:05:05,159
+I need to also prefer a to b.
+
+752
+01:05:05,300 --> 01:05:06,019
+I need to write.
+
+753
+01:05:06,579 --> 01:05:08,180
+So a to b.
+
+754
+01:05:08,280 --> 01:05:09,320
+G1 to g2.
+
+755
+01:05:09,440 --> 01:05:10,480
+F dy dx.
+
+756
+01:05:10,480 --> 01:05:13,539
+Is the corresponding double integral and the limits.
+
+757
+01:05:16,119 --> 01:05:17,039
+What about.
+
+758
+01:05:17,800 --> 01:05:18,659
+Your region.
+
+759
+01:05:18,920 --> 01:05:19,800
+If your region is.
+
+760
+01:05:20,539 --> 01:05:21,900
+Smooth with respect to y.
+
+761
+01:05:22,000 --> 01:05:22,639
+Like this one.
+
+762
+01:05:24,300 --> 01:05:24,780
+Sometimes.
+
+763
+01:05:25,039 --> 01:05:25,659
+Both of them.
+
+764
+01:05:25,860 --> 01:05:27,000
+Sometimes one of them.
+
+765
+01:05:27,139 --> 01:05:28,340
+Sometimes none of them.
+
+766
+01:05:28,639 --> 01:05:29,260
+We can have.
+
+767
+01:05:29,420 --> 01:05:30,119
+According to the.
+
+768
+01:05:30,460 --> 01:05:30,900
+Region.
+
+769
+01:05:31,059 --> 01:05:31,740
+Of the integral.
+
+770
+01:05:32,559 --> 01:05:33,619
+So region is very important.
+
+771
+01:05:33,740 --> 01:05:34,639
+Of double integrals.
+
+772
+01:05:35,500 --> 01:05:37,300
+Once you have a non-rectangular.
+
+773
+01:05:37,639 --> 01:05:37,940
+Region.
+
+774
+01:05:37,940 --> 01:05:40,320
+Think that.
+
+775
+01:05:40,820 --> 01:05:41,659
+Your region is.
+
+776
+01:05:42,780 --> 01:05:44,139
+Smooth with respect to y.
+
+777
+01:05:44,300 --> 01:05:45,320
+How will you understand.
+
+778
+01:05:45,880 --> 01:05:46,880
+You will get a.
+
+779
+01:05:47,320 --> 01:05:47,800
+Vertical.
+
+780
+01:05:48,720 --> 01:05:49,200
+Section.
+
+781
+01:05:49,340 --> 01:05:49,680
+To y.
+
+782
+01:05:49,760 --> 01:05:49,920
+Exile.
+
+783
+01:05:50,039 --> 01:05:51,420
+That means horizontal to x.
+
+784
+01:05:52,480 --> 01:05:52,720
+Okay.
+
+785
+01:05:53,200 --> 01:05:54,019
+Such a.
+
+786
+01:05:55,720 --> 01:05:56,200
+Section.
+
+787
+01:05:56,539 --> 01:05:57,519
+You need to just sketch.
+
+788
+01:05:57,619 --> 01:05:58,019
+And look.
+
+789
+01:05:58,720 --> 01:05:59,940
+On the right hand side.
+
+790
+01:06:00,059 --> 01:06:01,400
+Always the same line.
+
+791
+01:06:01,559 --> 01:06:01,960
+Or curve.
+
+792
+01:06:02,519 --> 01:06:02,720
+Yes.
+
+793
+01:06:02,780 --> 01:06:03,059
+Always.
+
+794
+01:06:03,180 --> 01:06:04,340
+G2 on the right hand side.
+
+795
+01:06:04,940 --> 01:06:06,059
+On the left hand side.
+
+796
+01:06:06,059 --> 01:06:08,099
+When I move the section.
+
+797
+01:06:09,000 --> 01:06:10,099
+Along raw r.
+
+798
+01:06:10,920 --> 01:06:11,840
+On the right hand side.
+
+799
+01:06:11,900 --> 01:06:12,200
+Always.
+
+800
+01:06:12,280 --> 01:06:13,039
+I see g2.
+
+801
+01:06:13,159 --> 01:06:14,059
+On the left hand side.
+
+802
+01:06:14,140 --> 01:06:14,980
+Always g1.
+
+803
+01:06:15,099 --> 01:06:15,480
+Means.
+
+804
+01:06:16,079 --> 01:06:16,980
+This is smooth.
+
+805
+01:06:17,059 --> 01:06:17,940
+With respect to y.
+
+806
+01:06:18,240 --> 01:06:19,019
+In that case.
+
+807
+01:06:19,140 --> 01:06:20,420
+The corresponding integral.
+
+808
+01:06:21,599 --> 01:06:22,079
+Lastly.
+
+809
+01:06:22,159 --> 01:06:22,400
+Write.
+
+810
+01:06:22,519 --> 01:06:22,880
+Dx.
+
+811
+01:06:22,960 --> 01:06:23,320
+Dy.
+
+812
+01:06:24,320 --> 01:06:25,140
+Not lastly.
+
+813
+01:06:25,220 --> 01:06:25,619
+I'm sorry.
+
+814
+01:06:25,900 --> 01:06:26,720
+Lastly integrate.
+
+815
+01:06:26,720 --> 01:06:27,720
+With respect to y.
+
+816
+01:06:27,940 --> 01:06:28,519
+I mean.
+
+817
+01:06:28,659 --> 01:06:29,119
+That firstly.
+
+818
+01:06:29,240 --> 01:06:29,500
+Write.
+
+819
+01:06:29,980 --> 01:06:30,340
+Dx.
+
+820
+01:06:30,480 --> 01:06:30,840
+And dy.
+
+821
+01:06:30,840 --> 01:06:33,599
+So be careful.
+
+822
+01:06:33,599 --> 01:06:34,360
+About the limits.
+
+823
+01:06:34,960 --> 01:06:35,539
+Once you.
+
+824
+01:06:35,860 --> 01:06:36,380
+Decide.
+
+825
+01:06:36,500 --> 01:06:36,720
+Which.
+
+826
+01:06:37,800 --> 01:06:38,320
+Differential.
+
+827
+01:06:38,500 --> 01:06:38,840
+To first.
+
+828
+01:06:38,960 --> 01:06:39,280
+To write.
+
+829
+01:06:39,840 --> 01:06:40,579
+Since it is.
+
+830
+01:06:40,800 --> 01:06:40,980
+Smooth.
+
+831
+01:06:41,019 --> 01:06:41,800
+With respect to y.
+
+832
+01:06:41,900 --> 01:06:42,420
+So lastly.
+
+833
+01:06:42,420 --> 01:06:42,940
+Write dy.
+
+834
+01:06:43,140 --> 01:06:43,940
+So dx dy.
+
+835
+01:06:44,360 --> 01:06:45,140
+F dx dy.
+
+836
+01:06:45,340 --> 01:06:45,619
+And then.
+
+837
+01:06:45,760 --> 01:06:46,480
+Write the limits.
+
+838
+01:06:46,480 --> 01:06:47,079
+Of integral.
+
+839
+01:06:48,500 --> 01:06:49,400
+These limits.
+
+840
+01:06:49,760 --> 01:06:50,400
+Must be.
+
+841
+01:06:51,039 --> 01:06:52,059
+Limits of section.
+
+842
+01:06:52,579 --> 01:06:53,019
+Section.
+
+843
+01:06:53,220 --> 01:06:53,860
+Starts here.
+
+844
+01:06:54,300 --> 01:06:54,860
+Finish here.
+
+845
+01:06:55,200 --> 01:06:55,860
+Starts here.
+
+846
+01:06:56,039 --> 01:06:56,680
+Finishes here.
+
+847
+01:06:56,840 --> 01:06:56,980
+So.
+
+848
+01:06:57,519 --> 01:06:58,500
+H1 to h2.
+
+849
+01:06:58,559 --> 01:06:59,519
+Or do you want to g2?
+
+850
+01:06:59,519 --> 01:07:00,000
+I'm sorry.
+
+851
+01:07:00,579 --> 01:07:01,619
+G1 to g2.
+
+852
+01:07:01,860 --> 01:07:02,099
+Okay.
+
+853
+01:07:02,240 --> 01:07:02,440
+Here.
+
+854
+01:07:03,039 --> 01:07:04,059
+G1 to g2.
+
+855
+01:07:04,300 --> 01:07:05,000
+Right hand side.
+
+856
+01:07:05,079 --> 01:07:05,619
+Always great.
+
+857
+01:07:05,700 --> 01:07:06,740
+And then the left hand side.
+
+858
+01:07:06,880 --> 01:07:07,820
+According to y-axis.
+
+859
+01:07:08,539 --> 01:07:09,920
+So g1 to g2.
+
+860
+01:07:11,159 --> 01:07:12,119
+Other integral.
+
+861
+01:07:12,820 --> 01:07:13,840
+Just get the.
+
+862
+01:07:14,760 --> 01:07:15,980
+Projection of this region.
+
+863
+01:07:16,139 --> 01:07:16,740
+On to y-axis.
+
+864
+01:07:16,920 --> 01:07:17,900
+It starts at c.
+
+865
+01:07:18,240 --> 01:07:19,280
+And finishes at d.
+
+866
+01:07:19,420 --> 01:07:20,500
+So c to d8.
+
+867
+01:07:20,659 --> 01:07:21,680
+G1 to g2.
+
+868
+01:07:22,079 --> 01:07:23,539
+F dx dy.
+
+869
+01:07:28,340 --> 01:07:33,280
+Now do you understand it? Is it clear for you? A little bit.
+
+870
+01:07:40,532 --> 01:07:48,432
+Bir sonraki
+
+871
+01:07:57,427 --> 01:08:04,487
+Bu, Fubuniz'in Theorem 2'i'in de
+
+872
+01:08:04,487 --> 01:08:12,487
+Bu, Fubuniz'in Theorem'in de
+
+873
+01:08:12,487 --> 01:08:22,688
+Fubuniz'in Theorem'in de
+
+874
+01:08:22,688 --> 01:08:24,688
+Fubuniz'in Theorem'in Theorem'in
+
+875
+01:08:24,688 --> 01:08:26,847
+The integration of F on that
+
+876
+01:08:26,847 --> 01:08:28,568
+region R can be written
+
+877
+01:08:28,568 --> 01:08:31,307
+A to B, G1 to G2, be careful,
+
+878
+01:08:31,448 --> 01:08:32,087
+dy dx.
+
+879
+01:08:33,028 --> 01:08:34,807
+That means smooth with respect to
+
+880
+01:08:34,807 --> 01:08:37,127
+X. So, look, X is A to B
+
+881
+01:08:37,127 --> 01:08:41,087
+and Y is between G1x and G2x.
+
+882
+01:08:41,867 --> 01:08:41,988
+Okay.
+
+883
+01:08:43,948 --> 01:08:44,387
+Also,
+
+884
+01:08:45,007 --> 01:08:46,907
+equivalently or alternatively,
+
+885
+01:08:47,367 --> 01:08:48,407
+the same integral
+
+886
+01:08:48,407 --> 01:08:50,867
+is the kilt of once you change
+
+887
+01:08:50,867 --> 01:08:52,608
+the order of integration, as you see,
+
+888
+01:08:52,608 --> 01:08:54,327
+dx dy. What happens?
+
+889
+01:08:54,688 --> 01:08:57,247
+That means it is smooth with respect to Y.
+
+890
+01:08:58,347 --> 01:09:00,988
+So, C to D, Y is C to D,
+
+891
+01:09:01,648 --> 01:09:03,988
+and X is between H1 to H2.
+
+892
+01:09:04,608 --> 01:09:05,448
+But be careful.
+
+893
+01:09:06,087 --> 01:09:08,747
+If you lastly integrate with respect to Y,
+
+894
+01:09:09,268 --> 01:09:10,167
+all the limits,
+
+895
+01:09:10,807 --> 01:09:12,728
+first integral with respect to Y,
+
+896
+01:09:13,028 --> 01:09:15,307
+second integral with respect to custom numbers,
+
+897
+01:09:15,847 --> 01:09:17,688
+no X you can put here.
+
+898
+01:09:18,528 --> 01:09:21,667
+Similarly, once you integrate lastly with respect to X,
+
+899
+01:09:21,667 --> 01:09:23,148
+no Y can see
+
+900
+01:09:23,148 --> 01:09:26,188
+you can see in the limits of integral.
+
+901
+01:09:26,787 --> 01:09:27,988
+Otherwise, it's mistaken.
+
+902
+01:09:37,844 --> 01:09:39,123
+What about exercises?
+
+903
+01:09:43,412 --> 01:10:01,492
+The first example, it says, find the volume of the prism whose base is the triangle in the x-y plane and bounded by the x-axis and the lines y-axis and x-axis 1 and whose top lies in the plane that is 3-x-y.
+
+904
+01:10:03,271 --> 01:10:12,292
+Here the volume of the prism is asked, what is the important idea? How can I write the volume formalization with a double integral?
+
+905
+01:10:13,412 --> 01:10:22,212
+Base region is given, top surface is given. That means, I need to integrate top surface z over the base region r.
+
+906
+01:10:22,891 --> 01:10:30,351
+And the double integral of them gives the volume of the prism. Yes. So the base region is the region of integral.
+
+907
+01:10:31,271 --> 01:10:36,192
+Top surface is the function that we need to integrate. Always this relation we have.
+
+908
+01:10:40,724 --> 01:10:49,724
+Bu basal region, always you need to sketch, if it is non-rectangular, always you need to sketch the basal region, not volume.
+
+909
+01:10:50,203 --> 01:10:54,264
+Basal region is enough in order to specify the limits of integral correctly.
+
+910
+01:10:55,244 --> 01:10:55,644
+Let's see.
+
+911
+01:10:56,184 --> 01:11:01,663
+It says it's a triangle and bounded by x-axis weighs x and x is 1.
+
+912
+01:11:01,764 --> 01:11:02,144
+Let's see.
+
+913
+01:11:02,144 --> 01:11:12,163
+X-axis weighs x and x is 1 and this is the basal region of the prism.
+
+914
+01:11:14,444 --> 01:11:21,384
+Let's see which variable we need to write.
+
+915
+01:11:21,644 --> 01:11:22,644
+Lastly, let's see.
+
+916
+01:11:24,224 --> 01:11:25,404
+Smooth region is important.
+
+917
+01:11:25,623 --> 01:11:28,104
+Now tell me, is it smooth with respect to x?
+
+918
+01:11:28,104 --> 01:11:28,644
+Let's see.
+
+919
+01:11:28,644 --> 01:11:30,184
+Cross-section.
+
+920
+01:11:30,844 --> 01:11:33,904
+Move it along the whole region R.
+
+921
+01:11:34,963 --> 01:11:36,923
+Above all the way is x.
+
+922
+01:11:37,663 --> 01:11:39,604
+Below all these x-axis.
+
+923
+01:11:39,804 --> 01:11:41,543
+That means it's smooth with respect to x.
+
+924
+01:11:41,764 --> 01:11:41,844
+Okay.
+
+925
+01:11:42,824 --> 01:11:45,444
+So write dy dx.
+
+926
+01:11:46,824 --> 01:11:47,784
+Firstly, write this.
+
+927
+01:11:47,904 --> 01:11:50,503
+First, specify this and then write the limits of integral.
+
+928
+01:11:50,703 --> 01:11:50,824
+Okay.
+
+929
+01:11:51,484 --> 01:11:54,524
+First, write dy dx because it's smooth with respect to x.
+
+930
+01:11:54,524 --> 01:11:57,724
+So this integral, firstly, you can write.
+
+931
+01:11:58,644 --> 01:11:59,444
+The first integral.
+
+932
+01:11:59,724 --> 01:12:06,984
+First means, in fact, the last integral because I iterated and you got, firstly, this integration and then this one.
+
+933
+01:12:07,503 --> 01:12:11,543
+So this integral must include the limits of x on x-axis.
+
+934
+01:12:12,623 --> 01:12:14,524
+Projection of the region on x-axis.
+
+935
+01:12:14,724 --> 01:12:15,423
+Zero to one.
+
+936
+01:12:15,824 --> 01:12:16,784
+So zero to one.
+
+937
+01:12:17,043 --> 01:12:22,043
+And then sections between which lines are curves but with respect to x.
+
+938
+01:12:22,043 --> 01:12:22,543
+Don't forget.
+
+939
+01:12:22,904 --> 01:12:23,144
+Here.
+
+940
+01:12:23,684 --> 01:12:24,304
+What do we have?
+
+941
+01:12:24,744 --> 01:12:25,463
+X-axis.
+
+942
+01:12:26,564 --> 01:12:27,264
+Y is zero.
+
+943
+01:12:29,003 --> 01:12:30,184
+What is y here?
+
+944
+01:12:30,604 --> 01:12:31,043
+X.
+
+945
+01:12:31,684 --> 01:12:33,003
+So zero to x.
+
+946
+01:12:34,043 --> 01:12:34,884
+Y is zero.
+
+947
+01:12:35,364 --> 01:12:36,244
+Y is x.
+
+948
+01:12:38,884 --> 01:12:40,324
+So zero to x.
+
+949
+01:12:40,324 --> 01:12:42,503
+Three minus x minus y.
+
+950
+01:12:42,864 --> 01:12:43,824
+Dy dx.
+
+951
+01:12:43,824 --> 01:12:48,543
+First, with respect to y, you need to integrate.
+
+952
+01:12:49,264 --> 01:12:54,244
+Three, three y minus x, like custom, minus x times y.
+
+953
+01:12:54,583 --> 01:12:57,264
+Minus y minus y squared over two.
+
+954
+01:12:57,963 --> 01:12:59,123
+Zero to x.
+
+955
+01:12:59,804 --> 01:12:59,984
+Okay.
+
+956
+01:13:01,123 --> 01:13:03,064
+And put these limits.
+
+957
+01:13:03,784 --> 01:13:05,724
+Zero x to y only.
+
+958
+01:13:06,064 --> 01:13:07,364
+Don't do anything with x.
+
+959
+01:13:07,364 --> 01:13:10,064
+Just keep it fixed.
+
+960
+01:13:11,524 --> 01:13:12,524
+Three times.
+
+961
+01:13:13,003 --> 01:13:13,923
+Upper limit is x.
+
+962
+01:13:14,043 --> 01:13:18,123
+Three x minus x times x minus x squared over two.
+
+963
+01:13:19,024 --> 01:13:20,644
+Minus zero.
+
+964
+01:13:21,144 --> 01:13:22,304
+Zero, zero, zero.
+
+965
+01:13:22,484 --> 01:13:22,684
+Yes.
+
+966
+01:13:23,224 --> 01:13:26,583
+So integral becomes zero to one.
+
+967
+01:13:26,663 --> 01:13:29,083
+Three x minus three over two x squared dx.
+
+968
+01:13:29,083 --> 01:13:31,503
+That's single and the proper and the definite integral.
+
+969
+01:13:31,944 --> 01:13:33,264
+And the rest of it is very easy.
+
+970
+01:13:33,264 --> 01:13:36,423
+And for three x, three over two x squared.
+
+971
+01:13:36,864 --> 01:13:38,583
+Minus three x squared over two.
+
+972
+01:13:38,703 --> 01:13:40,104
+Minus x cubed over two.
+
+973
+01:13:40,623 --> 01:13:41,384
+Zero to one.
+
+974
+01:13:41,744 --> 01:13:42,604
+It results one.
+
+975
+01:13:51,283 --> 01:13:53,203
+Are you okay? Do you understand it?
+
+976
+01:13:57,492 --> 01:14:00,172
+Do you understand how we write limits of integral here?
+
+977
+01:14:02,891 --> 01:14:03,452
+Ah, yes.
+
+978
+01:14:04,811 --> 01:14:05,632
+It's so nice.
+
+979
+01:14:05,752 --> 01:14:06,292
+Thank you.
+
+980
+01:14:07,412 --> 01:14:08,832
+And, okay.
+
+981
+01:14:10,952 --> 01:14:12,372
+So, I think it's better.
+
+982
+01:14:12,832 --> 01:14:15,332
+Once we have now a break and then continue.
+
+983
+01:14:23,604 --> 01:14:25,324
+15 minuten, ok.
+
+984
+01:31:14,996 --> 01:31:16,996
+Tamam, devam edelim.
+
+985
+01:31:16,996 --> 01:31:20,996
+Öncelikle diğer eğitimlerinde de daha çok daha iyi.
+
+986
+01:31:20,996 --> 01:31:24,996
+Öncelikle, bu şekilde daha iyi.
+
+987
+01:31:24,996 --> 01:31:30,996
+Öncelikle, şimdi, ilk olarak,
+
+988
+01:31:30,996 --> 01:31:36,996
+ilk olarak, x'e ve x'e ve yi'ye göre,
+
+989
+01:31:36,996 --> 01:31:38,996
+bu region'e ve x'e ve yi'ye göre?
+
+990
+01:31:38,996 --> 01:31:42,996
+Öncelikle, ilk olarak, bu sorunlu ve yi'ye göre,
+
+991
+01:31:42,996 --> 01:31:46,996
+bu sorunlu ve yi'ye göre,
+
+992
+01:31:46,996 --> 01:31:48,996
+ve sorunlu ve yi'ye göre,
+
+993
+01:31:48,996 --> 01:31:50,996
+ve sorunlu ve yi'ye göre.
+
+994
+01:31:50,996 --> 01:31:52,996
+Öncelikle, ilk olarak,
+
+995
+01:31:52,996 --> 01:31:54,996
+sorunlu ve yi'ye göre,
+
+996
+01:31:54,996 --> 01:31:58,996
+bu sorunlu ve yi'ye göre?
+
+997
+01:31:58,996 --> 01:32:00,996
+Evet, çünkü,
+
+998
+01:32:00,996 --> 01:32:04,996
+şimdi, horizontal, kreşt, yi'ye göre.
+
+999
+01:32:04,996 --> 01:32:06,996
+Horizontal x ve yi'ye göre.
+
+1000
+01:32:06,996 --> 01:32:10,996
+Öncelikle, yi'ye göre.
+
+1001
+01:32:10,996 --> 01:32:12,996
+Bu sorunlu ve yi'ye göre,
+
+1002
+01:32:12,996 --> 01:32:18,996
+yi'ye göre,
+
+1003
+01:32:18,996 --> 01:32:20,996
+yi'ye göre.
+
+1004
+01:32:20,996 --> 01:32:22,996
+Bu sorunlu ve yi'ye göre.
+
+1005
+01:32:22,996 --> 01:32:24,996
+Yi'ye göre,
+
+1006
+01:32:24,996 --> 01:32:26,996
+yi'ye göre,
+
+1007
+01:32:26,996 --> 01:32:28,996
+yi'ye göre.
+
+1008
+01:32:28,996 --> 01:32:48,996
+yi'ye göre,
+
+1009
+01:32:48,996 --> 01:32:50,996
+yi'ye göre, yi'ye göre,
+
+1010
+01:32:50,996 --> 01:33:34,996
+yi'ye göre,
+
+1011
+01:33:34,996 --> 01:33:40,996
+must be the correct limits of integral and order of integration.
+
+1012
+01:33:40,996 --> 01:33:42,996
+So first integrate with respect to x.
+
+1013
+01:33:42,996 --> 01:33:44,996
+3 times x,
+
+1014
+01:33:44,996 --> 01:33:47,996
+minus x square over 2,
+
+1015
+01:33:47,996 --> 01:33:48,996
+minus y.
+
+1016
+01:33:48,996 --> 01:33:50,996
+Minus y is a constant for x,
+
+1017
+01:33:50,996 --> 01:33:52,996
+so minus x times y.
+
+1018
+01:33:52,996 --> 01:33:56,996
+y to 1.
+
+1019
+01:33:56,996 --> 01:33:58,996
+These numbers,
+
+1020
+01:33:58,996 --> 01:34:00,996
+these limits,
+
+1021
+01:34:00,996 --> 01:34:02,996
+will be substituted to x,
+
+1022
+01:34:02,996 --> 01:34:04,996
+integrated with respect to x,
+
+1023
+01:34:04,996 --> 01:34:06,996
+don't forget, not y.
+
+1024
+01:34:06,996 --> 01:34:08,996
+You will substitute these limits to x.
+
+1025
+01:34:08,996 --> 01:34:10,996
+Upper limit is 1.
+
+1026
+01:34:10,996 --> 01:34:12,996
+So 3 times 1.
+
+1027
+01:34:12,996 --> 01:34:14,996
+Minus 1 square over 2,
+
+1028
+01:34:14,996 --> 01:34:16,996
+minus 1 times y.
+
+1029
+01:34:16,996 --> 01:34:17,996
+Okay.
+
+1030
+01:34:17,996 --> 01:34:19,996
+So such a function you will have.
+
+1031
+01:34:19,996 --> 01:34:21,996
+Minus, do the same thing for y.
+
+1032
+01:34:21,996 --> 01:34:23,996
+3y minus y square over 2,
+
+1033
+01:34:23,996 --> 01:34:25,996
+minus y times y.
+
+1034
+01:34:25,996 --> 01:34:26,996
+Okay.
+
+1035
+01:34:26,996 --> 01:34:27,996
+Upper limit,
+
+1036
+01:34:27,996 --> 01:34:29,996
+lower limit.
+
+1037
+01:34:29,996 --> 01:34:34,996
+And then we get a single integral and single variable function,
+
+1038
+01:34:34,996 --> 01:34:36,996
+what it needed to be,
+
+1039
+01:34:36,996 --> 01:34:39,996
+and the proper integral and the definite integral.
+
+1040
+01:34:39,996 --> 01:34:41,996
+So I evaluate with respect to y.
+
+1041
+01:34:41,996 --> 01:34:44,996
+I have 5 over 2 times y,
+
+1042
+01:34:44,996 --> 01:34:46,996
+minus 2y square,
+
+1043
+01:34:46,996 --> 01:34:48,996
+plus y cube over 2,
+
+1044
+01:34:48,996 --> 01:34:49,996
+0 to 1,
+
+1045
+01:34:49,996 --> 01:34:51,996
+results again 1,
+
+1046
+01:34:51,996 --> 01:34:53,996
+like in the first case we did.
+
+1047
+01:34:53,996 --> 01:34:56,996
+Always results the same value.
+
+1048
+01:35:06,644 --> 01:36:28,644
+İnteklal var.
+
+1049
+01:37:39,412 --> 01:37:46,832
+Okay, anyone else? 32 over 10 or 8, which one? Now we will see. Anyone else who did it?
+
+1050
+01:38:15,604 --> 01:38:21,684
+Ah, okay. You got the same result. Okay. Thank you, both of you. Let's see.
+
+1051
+01:38:24,164 --> 01:38:30,724
+Integral is, I'm sorry, region is this. It says x is 0, x is 2, y is 0, y is x squared. That means
+
+1052
+01:38:30,724 --> 01:38:41,904
+x axis, y axis, I'm sorry, y axis, x axis, x is 2, y is x squared. Yes, between now. And so,
+
+1053
+01:38:41,904 --> 01:38:53,664
+have you did it? I'm sorry, did you do it with respect to x or y? I want to ask you.
+
+1054
+01:38:53,664 --> 01:39:04,884
+Is it smooth with respect to x? Yes. If we have written first the y, that means you just choose
+
+1055
+01:39:04,884 --> 01:39:13,344
+the smooth region with respect to x. Say, yes. Like this. Yes, you're right. Because it is
+
+1056
+01:39:13,344 --> 01:39:19,664
+smooth with respect to x. Since you got the cross section, then move it along the region
+
+1057
+01:39:19,664 --> 01:39:27,043
+and see this section. Move it. Start here and finish here. This section starts always x axis
+
+1058
+01:39:27,043 --> 01:39:35,923
+and finish z always y is x squared. Yes, clearly it is smooth with respect to x. And so you can write
+
+1059
+01:39:35,923 --> 01:39:44,963
+dy dx. Firstly, do it. If it is smooth with respect to x, firstly, write function dy dx and then write
+
+1060
+01:39:44,963 --> 01:39:54,164
+the limits of integral. This integral always includes real numbers, custom numbers, not a function,
+
+1061
+01:39:54,164 --> 01:40:00,804
+only custom numbers. And these custom numbers coming from x axis. Be careful. Which numbers coming from
+
+1062
+01:40:00,804 --> 01:40:08,644
+x axis? Just the projection of the region on x axis. Starts at 0, finishes at 2, this region. Okay. So 0 to 2.
+
+1063
+01:40:08,644 --> 01:40:17,764
+The next one will include, can include the functions of x or custom not y. It's with respect to y. Because,
+
+1064
+01:40:17,764 --> 01:40:21,524
+the functions of x axis is x axis. So, this is the function of x axis. So, this is the function of x axis.
+
+1065
+01:40:21,524 --> 01:40:30,564
+So, these equations with respect to x will be the limits of integration. Here, y is 0. Here, y is x
+
+1066
+01:40:30,564 --> 01:40:39,284
+square. So, 0 to x square. 0 to x square. So, 0 to x square. So, 0 to x square. Y dy dx are correct limits.
+
+1067
+01:40:43,091 --> 01:40:43,591
+Ok.
+
+1068
+01:40:56,532 --> 01:41:26,532
+Ve nasıl nasıl yi'n
+
+1069
+01:41:26,532 --> 01:41:43,912
+x to 5 over 10? Yes. 0 to 2? So 16 over 5 is the correct answer. Now tell me, I want to ask you, is that smooth also with respect to y? That means can you evaluate with one integral once you write dx dy? What happens?
+
+1070
+01:42:13,363 --> 01:42:23,223
+The bounds of the integral that inside will be square root 1 and 2. Yes, you're right, [öğrenci]. Square root 2, yes, you're right.
+
+1071
+01:42:25,623 --> 01:42:31,663
+Peki, so, peki. Peki sizce nasıl olur sınırları diyecektim bir anda öyle oldu.
+
+1072
+01:42:33,283 --> 01:42:35,483
+That means you mean that is it smooth?
+
+1073
+01:42:45,427 --> 01:42:47,148
+who wants to talk about this
+
+1074
+01:43:02,387 --> 01:43:09,387
+Şimdi, şimdi,
+
+1075
+01:43:09,387 --> 01:43:12,387
+bir şekilde yazıyor.
+
+1076
+01:43:12,387 --> 01:43:14,387
+Şimdi,
+
+1077
+01:43:14,387 --> 01:43:20,387
+nasıl yazıklarımızın,
+
+1078
+01:43:20,387 --> 01:43:21,387
+şimdi,
+
+1079
+01:43:21,387 --> 01:43:22,387
+horizontal,
+
+1080
+01:43:22,387 --> 01:43:23,387
+x,
+
+1081
+01:43:23,387 --> 01:44:29,387
+y,
+
+1082
+01:44:12,243 --> 01:44:18,243
+İntegral y dx dy
+
+1083
+01:44:18,243 --> 01:44:22,243
+Çünkü y ishuzd.
+
+1084
+01:44:22,243 --> 01:44:24,243
+Evet, y ishuzd.
+
+1085
+01:44:24,243 --> 01:44:25,243
+Yani bu informasyonu,
+
+1086
+01:44:25,243 --> 01:44:27,243
+bu y ishuzd.
+
+1087
+01:44:27,243 --> 01:44:29,243
+Y dx dy
+
+1088
+01:44:29,243 --> 01:44:33,243
+Bu y ishuzd.
+
+1089
+01:44:33,243 --> 01:45:36,243
+Y ishuzd.
+
+1090
+01:45:38,996 --> 01:45:40,996
+Şimdi, bu evlilikini arayın.
+
+1091
+01:45:40,996 --> 01:45:44,996
+2 y to 2 y dx.
+
+1092
+01:45:44,996 --> 01:45:47,996
+Öncelikle x'e y.
+
+1093
+01:45:47,996 --> 01:45:49,996
+y times x.
+
+1094
+01:45:49,996 --> 01:45:54,996
+Y is because, like a custom number for x, y times x.
+
+1095
+01:45:54,996 --> 01:45:58,996
+Squared y to 2, put the limits and get this function.
+
+1096
+01:45:58,996 --> 01:46:04,996
+Now it returns, it becomes the proper and the definite integral with respect to y.
+
+1097
+01:46:04,996 --> 01:46:08,996
+And the integration is, it was 2y minus y to 3 over 2.
+
+1098
+01:46:08,996 --> 01:46:16,996
+So the integration is y squared minus 2 over 5, y to 5 over 2, 0 to 4.
+
+1099
+01:46:16,996 --> 01:46:20,996
+And put the limits, upper limit, lower limit you will get.
+
+1100
+01:46:20,996 --> 01:46:23,996
+Again, the same number of course, 16 over 5.
+
+1101
+01:46:23,996 --> 01:46:25,996
+Now tell me, are you okay?
+
+1102
+01:46:25,996 --> 01:46:28,996
+That means it's not so hard, just be careful.
+
+1103
+01:46:38,387 --> 01:46:40,347
+Any question up to now? Are you okay?
+
+1104
+01:46:50,771 --> 01:46:53,692
+I think you have learned it so quickly, so I'm so happy.
+
+1105
+01:46:54,992 --> 01:46:55,471
+Really.
+
+1106
+01:46:57,631 --> 01:46:59,091
+And I want to thank you.
+
+1107
+01:47:05,876 --> 01:47:07,216
+Any question up to now?
+
+1108
+01:47:15,507 --> 01:47:16,627
+Ok, so nice.
+
+1109
+01:47:21,203 --> 01:47:29,224
+So, what do you think about this integral? Limits are given. Oh, it's so nice. Can you relate it?
+
+1110
+01:47:34,163 --> 01:47:46,264
+If an integral is given you, with limits of integration, you need to just think, there must be a problem here, because the limit must be written in the question. That means there is a problem, probably.
+
+1111
+01:47:48,943 --> 01:47:51,844
+Bu şaşırtma işte soru gibi bir şey oluyor yani arkadaşlar tam olarak.
+
+1112
+01:47:53,503 --> 01:47:56,983
+Neden limitler verilmiş? Neden sınırlar yazılmış sizce?
+
+1113
+01:48:02,163 --> 01:48:07,363
+Do you have an idea? Or can you integrate it directly? Tell me.
+
+1114
+01:48:10,163 --> 01:48:15,363
+Bel don [öğrenci], why? I'm so happy to hear this answer.
+
+1115
+01:48:21,332 --> 01:48:31,912
+Hocam, yazacaktım, direkt söyleyeyim. Sinus x karenin integralini alnımız çok zor. O yüzden y ile x'in yerini değiştirirsek, integralini daha iyi alacağız. O yüzden sınırları değiştirmemiz lazım.
+
+1116
+01:48:32,512 --> 01:48:33,811
+Evet, çok teşekkür ederim.
+
+1117
+01:48:34,432 --> 01:48:34,852
+You're welcome.
+
+1118
+01:48:34,852 --> 01:48:36,231
+You're completely right.
+
+1119
+01:48:37,172 --> 01:48:46,832
+Since sin x karenin integralini alın, sin x karenin integralini alın, sin x karenin integralini alın, sin x karenin integralini alın,
+
+1120
+01:48:46,832 --> 01:48:55,771
+bu integralini alın, bu integralini alın, bu bir diğer metodelerini alın, bu bir sürü çalışma.
+
+1121
+01:48:55,771 --> 01:49:02,752
+Ama bu metodelerin alın, bu bir sürü çalışma, bu bir sürü çalışma, bu bir sürü çalışma.
+
+1122
+01:49:02,752 --> 01:49:12,392
+So, like [öğrenci] says, we need to just change the limits of integral, and that means that the change of order of integration.
+
+1123
+01:49:12,392 --> 01:49:18,912
+That means if it is written dx dy, maybe we can write it dy dx, and then it may be possible to integrate.
+
+1124
+01:49:19,852 --> 01:49:21,992
+So, this is a non-elementary integral.
+
+1125
+01:49:21,992 --> 01:49:25,572
+That's what I mean when I was talking about that.
+
+1126
+01:49:25,872 --> 01:49:32,231
+Every double integral has two forms, but in some cases, one of them is impossible to solve.
+
+1127
+01:49:32,231 --> 01:49:35,412
+So, the other one is a nice solution for this case.
+
+1128
+01:49:35,412 --> 01:49:44,592
+But more generally, for normal and for normal elementary integrals, we possibly solve the double integral of a function with two different methods.
+
+1129
+01:49:44,592 --> 01:49:46,192
+dx dy or dy dx.
+
+1130
+01:49:46,192 --> 01:49:57,092
+Of course, changing the limits of integral, the type of the function will be different and the solution will be different, but the result always the same.
+
+1131
+01:49:57,092 --> 01:49:58,092
+Okay.
+
+1132
+01:49:58,092 --> 01:50:01,271
+Sometimes, both of them are easy.
+
+1133
+01:50:01,271 --> 01:50:03,271
+Sometimes, one of them is easier.
+
+1134
+01:50:03,271 --> 01:50:15,552
+So, if you are not, if you don't have a rule about solving firstly, for example, only solve it with respect to dx dy was given in the question, you need to do it.
+
+1135
+01:50:15,552 --> 01:50:21,792
+But if you have no case about the solution of this, you can choose any of them easier to you.
+
+1136
+01:50:22,692 --> 01:50:26,512
+And like this one, the other part is only possible to integrate.
+
+1137
+01:50:26,892 --> 01:50:29,572
+That's why we need to change the limits of integration.
+
+1138
+01:50:29,872 --> 01:50:41,392
+Now, please write me the region and then sketch it and then tell me what will be the alternative form of this double integral.
+
+1139
+01:50:41,392 --> 01:50:42,392
+So, let's go.
+
+1140
+01:50:42,392 --> 01:51:10,392
+Let's go.
+
+1141
+01:50:45,108 --> 01:51:10,087
+İzlediğiniz için, bu bölümün
+
+1142
+01:51:24,916 --> 01:51:28,956
+Before sketching the region R, because you need to write the boundary lines or curves.
+
+1143
+01:51:29,756 --> 01:51:35,355
+So what is R? What kind of a region? Which boundary curves they have?
+
+1144
+01:51:45,108 --> 01:51:51,547
+Bak, ilk önce, bu region?
+
+1145
+01:51:51,547 --> 01:51:53,068
+Ha, [öğrenci].
+
+1146
+01:51:58,648 --> 01:51:59,547
+Evet.
+
+1147
+01:52:00,087 --> 01:52:00,768
+And also,
+
+1148
+01:52:01,967 --> 01:52:06,268
+bir daha,
+
+1149
+01:52:11,028 --> 01:52:15,828
+Maybe you mean y is between 0 and 1, so you mean x-axis.
+
+1150
+01:52:17,108 --> 01:52:20,548
+Okay, and yes, yes, completely right.
+
+1151
+01:52:20,548 --> 01:52:22,307
+X is 1 and x is y, thank you.
+
+1152
+01:52:23,188 --> 01:52:27,188
+And so, can you tell me, is it smooth region?
+
+1153
+01:52:30,387 --> 01:52:36,467
+That means you can understand, if you have one double integral, is it smooth with respect to x or y?
+
+1154
+01:52:36,467 --> 01:52:39,427
+Tell me, I think this is the right question for you.
+
+1155
+01:52:41,028 --> 01:52:45,588
+Is this integral with respect to y or x?
+
+1156
+01:52:55,380 --> 01:52:57,380
+Y'e dey'in değil mi? Çünkü,
+
+1157
+01:52:57,380 --> 01:52:59,380
+bu öncekiyi yaptım.
+
+1158
+01:52:59,380 --> 01:53:01,380
+Ve bunu yaparak,
+
+1159
+01:53:01,380 --> 01:53:03,380
+eğer,
+
+1160
+01:53:03,380 --> 01:53:05,380
+bu,
+
+1161
+01:53:05,380 --> 01:53:07,380
+y'e dey'in değil mi?
+
+1162
+01:53:07,380 --> 01:53:09,380
+Ve bu,
+
+1163
+01:53:09,380 --> 01:53:11,380
+y'e dey'in değil mi?
+
+1164
+01:53:11,380 --> 01:53:13,380
+Bu,
+
+1165
+01:53:13,380 --> 01:53:15,380
+y'e dey'in değil mi?
+
+1166
+01:53:15,380 --> 01:53:17,380
+Bu,
+
+1167
+01:53:17,380 --> 01:53:19,380
+y'e dey'in değil mi?
+
+1168
+01:53:19,380 --> 01:53:21,380
+Bu,
+
+1169
+01:53:21,380 --> 01:53:23,380
+y'e dey'in değil mi?
+
+1170
+01:53:23,380 --> 01:53:25,380
+Bu,
+
+1171
+01:53:25,380 --> 01:53:27,380
+y'e dey'in değil mi?
+
+1172
+01:53:27,380 --> 01:53:31,380
+Y'e dey'in değil mi?
+
+1173
+01:53:31,380 --> 01:53:33,380
+0-1 means,
+
+1174
+01:53:33,380 --> 01:53:35,380
+boundary points of the y-axis
+
+1175
+01:53:35,380 --> 01:53:37,380
+of this region.
+
+1176
+01:53:37,380 --> 01:53:39,380
+That means, once you get the projection of this region
+
+1177
+01:53:39,380 --> 01:53:41,380
+onto y-axis, you will see it starts at 0
+
+1178
+01:53:41,380 --> 01:53:43,380
+and finishes at 1.
+
+1179
+01:53:43,380 --> 01:53:45,380
+What about the section?
+
+1180
+01:53:45,380 --> 01:53:47,380
+Section is between the x.
+
+1181
+01:53:47,380 --> 01:53:49,380
+X is y and x is 1.
+
+1182
+01:53:49,380 --> 01:53:53,380
+So, you need to just get the region bounded by x is y.
+
+1183
+01:53:53,380 --> 01:53:57,380
+x is 1, y is 0, y is 1.
+
+1184
+01:53:57,380 --> 01:53:59,380
+And then sketch the region
+
+1185
+01:53:59,380 --> 01:54:01,380
+correspondingly look
+
+1186
+01:54:01,380 --> 01:54:03,380
+and ask this question.
+
+1187
+01:54:03,380 --> 01:54:05,380
+Is it also smooth with respect to x?
+
+1188
+01:54:05,380 --> 01:54:07,380
+Please sketch it and then tell me
+
+1189
+01:54:07,380 --> 01:54:09,380
+is it smooth with respect to x also?
+
+1190
+01:54:09,380 --> 01:54:10,060
+x is 1, y
+
+1191
+01:54:46,068 --> 01:55:04,188
+I think it's an easy region to sketch. Y is 0, y is 1, x is y, and x is 1. And sketch it, and then you will see if it is smooth with respect to x or y. X or not, I mean.
+
+1192
+01:55:39,636 --> 01:55:40,636
+bu region.
+
+1193
+01:55:42,636 --> 01:55:45,276
+Ve şimdi,
+
+1194
+01:55:45,276 --> 01:55:47,276
+bu şekilde x'e geçiyor.
+
+1195
+01:55:47,996 --> 01:55:48,676
+Evet,
+
+1196
+01:55:48,676 --> 01:55:49,876
+bu şekilde
+
+1197
+01:55:49,876 --> 01:55:50,636
+y'e geçiyor.
+
+1198
+01:55:51,276 --> 01:55:54,276
+Ve bu bölümde y'e geçiyor.
+
+1199
+01:55:54,276 --> 01:55:59,076
+Ve y'e geçiyor.
+
+1200
+01:55:59,396 --> 01:56:05,636
+Bu bölümde y'e geçiyor.
+
+1201
+01:56:05,636 --> 01:56:09,636
+D y'e geçiyor.
+
+1202
+01:56:09,636 --> 01:56:11,636
+Bu bölümde y'e geçiyor.
+
+1203
+01:56:11,636 --> 01:56:33,636
+Ve bu bölümde y'e geçiyor.
+
+1204
+01:56:33,636 --> 01:57:39,636
+Y'e geçiyor.
+
+1205
+01:57:32,083 --> 01:57:47,563
+Şimdi, with a substitution or directly you can integrate, it's up to you. X square is given to substitution, say t, so 2x dx is dt, so x dx is 1 over 2 dt, 1 over 2.
+
+1206
+01:57:47,563 --> 01:58:13,304
+Limits are same for 0 again 0, for 1 again 1, so 1 over 2, 0 to 1, it results x dx dt, sin t dt, results minus cos t, and 1 over 2 we have, coming from differential, 0 to 1, minus 1 over 2 times cos 1, minus cos 0, which is 1 over 2 times 1 minus cos 1.
+
+1207
+01:58:13,304 --> 01:58:17,684
+Is it okay for you?
+
+1208
+01:58:32,404 --> 01:58:33,984
+[öğrenci], didn't you solve it?
+
+1209
+01:58:36,604 --> 01:58:45,404
+I was waiting for [öğrenci], [öğrenci], and also [öğrenci], like [öğrenci], were solving it.
+
+1210
+01:58:45,504 --> 01:58:46,184
+I thought that.
+
+1211
+01:58:46,864 --> 01:58:47,764
+Couldn't you solve them?
+
+1212
+01:58:48,624 --> 01:58:49,844
+Or do you have any problem?
+
+1213
+01:58:57,460 --> 01:58:57,819
+Ok.
+
+1214
+01:59:01,779 --> 01:59:10,819
+Okay, now are you okay, [öğrenci]? Is there any problem up to now? Okay, thank you.
+
+1215
+01:59:15,412 --> 01:59:16,452
+So, let's continue.
+
+1216
+01:59:20,435 --> 01:59:21,775
+And this is your question.
+
+1217
+01:59:24,015 --> 01:59:26,275
+Now I think all of you can solve it.
+
+1218
+01:59:26,735 --> 01:59:28,135
+Now you know what to do.
+
+1219
+02:00:13,619 --> 02:00:14,460
+It can tell me.
+
+1220
+02:00:16,000 --> 02:00:23,720
+Here, like in the previous question, limits are given. Can we integrate it directly? Or a similar case we have?
+
+1221
+02:00:26,199 --> 02:00:27,180
+What do you think?
+
+1222
+02:01:44,851 --> 02:01:47,692
+Anyone who is solving the question, I'm waiting for you, please tell me.
+
+1223
+02:01:48,511 --> 02:01:49,211
+What are you doing?
+
+1224
+02:02:05,971 --> 02:02:08,351
+Okay, thank you [öğrenci]. Anyone else?
+
+1225
+02:02:11,692 --> 02:02:12,891
+Okay, no problem.
+
+1226
+02:02:18,612 --> 02:02:20,351
+Now we will see the correct answer.
+
+1227
+02:02:23,011 --> 02:02:23,532
+Okay.
+
+1228
+02:02:24,471 --> 02:02:27,192
+That means 1 over 6 times e minus 1.
+
+1229
+02:02:27,672 --> 02:02:28,051
+Okay.
+
+1230
+02:02:29,391 --> 02:02:30,332
+Anyone else?
+
+1231
+02:02:36,627 --> 02:02:41,327
+How did you solve it? I hope you have just revised the order of integral.
+
+1232
+02:03:03,252 --> 02:03:03,572
+Ok.
+
+1233
+02:03:09,363 --> 02:03:13,123
+And then write the new limits of integral, I hope.
+
+1234
+02:03:13,323 --> 02:03:15,743
+And yes, you write dy dx and then integrate.
+
+1235
+02:03:16,943 --> 02:03:21,123
+Now, like this question is similar to the previous one,
+
+1236
+02:03:21,663 --> 02:03:23,323
+again, it's a non-elementary integral
+
+1237
+02:03:23,323 --> 02:03:26,043
+because e to x squared dx cannot be integrable.
+
+1238
+02:03:26,863 --> 02:03:28,063
+We cannot integrate it.
+
+1239
+02:03:29,283 --> 02:03:30,583
+We need x here.
+
+1240
+02:03:30,743 --> 02:03:34,003
+That's why we need to change the order of integration here
+
+1241
+02:03:34,003 --> 02:03:36,423
+in order to make the integration possible.
+
+1242
+02:03:37,803 --> 02:03:39,203
+To solve it's possible.
+
+1243
+02:03:39,363 --> 02:03:43,603
+So to do it, first we need to sketch the graph
+
+1244
+02:03:43,603 --> 02:03:45,443
+and see the region of integral
+
+1245
+02:03:45,443 --> 02:03:47,743
+and then write the new limits of integral
+
+1246
+02:03:47,743 --> 02:03:50,423
+according to dy dx now.
+
+1247
+02:03:51,503 --> 02:03:52,703
+What about the region?
+
+1248
+02:03:53,143 --> 02:03:55,423
+Region says that, this integral says that
+
+1249
+02:03:55,423 --> 02:03:57,843
+region is y is between 0 and 1.
+
+1250
+02:03:57,983 --> 02:03:59,263
+So y is 0, y is 1.
+
+1251
+02:03:59,843 --> 02:04:01,943
+And x is 3y and x is 3.
+
+1252
+02:04:02,843 --> 02:04:03,343
+Let's see.
+
+1253
+02:04:03,343 --> 02:04:04,343
+And then we'll see you next time.
+
+1254
+02:04:04,343 --> 02:04:16,083
+Thank you.
+
+1255
+02:04:10,484 --> 02:04:40,484
+Bu region, bu region, bu region, bu region, bu region, bu region, bu region, bu region, bu region, bu region, bu region, bu region, bu region, bu region, bu region, bu region, bu region, bu region, bu region, bu region, bu region, bu region, bu region, bu region, bu region, bu region, bu region, bu region, bu region, bu region, bu region, bu region, bu region, bu region, bu region, bu region, bu region, bu region, bu region, bu region, bu region, bu region, bu region, bu region, bu region, bu region, bu region, bu region, bu region, bu region, bu region, bu region, bu region, bu region, bu region, bu region, bu region, bu region, bu region, bu region, bu region, bu region, bu region, bu region, bu region, bu region, bu region, bu region, bu region, bu region, bu region, bu region, bu region, bu region, bu
+
+1256
+02:04:40,484 --> 02:04:49,704
+So this integral will include the points coming from x-axis, the limits of the boundary region, 0 to 3.
+
+1257
+02:04:51,044 --> 02:04:54,104
+The projection of the region on x-axis, 0 to 3.
+
+1258
+02:04:54,624 --> 02:04:55,463
+0 to 3.
+
+1259
+02:04:56,564 --> 02:04:57,724
+What about y?
+
+1260
+02:04:58,004 --> 02:05:01,284
+Y has which limits with respect to x?
+
+1261
+02:05:02,864 --> 02:05:05,064
+Section start here and finishes here.
+
+1262
+02:05:05,704 --> 02:05:06,423
+Here is
+
+1263
+02:05:06,423 --> 02:05:08,144
+y is 0,
+
+1264
+02:05:08,864 --> 02:05:09,484
+y is
+
+1265
+02:05:09,484 --> 02:05:10,724
+x over 3.
+
+1266
+02:05:10,944 --> 02:05:13,084
+x is 3, y, so y is x over 3.
+
+1267
+02:05:13,644 --> 02:05:15,664
+So 0 to x over 3
+
+1268
+02:05:15,664 --> 02:05:18,244
+e to x squared
+
+1269
+02:05:18,244 --> 02:05:19,004
+dy dx.
+
+1270
+02:05:21,024 --> 02:05:22,744
+[öğrenci], do you have the problem about
+
+1271
+02:05:22,744 --> 02:05:23,684
+writing this limit?
+
+1272
+02:05:24,963 --> 02:05:26,764
+Resulting e to 9 minus 1.
+
+1273
+02:05:33,363 --> 02:05:37,003
+Orada, do you have the integral problem here, the solution of it?
+
+1274
+02:05:37,003 --> 02:05:37,403
+Maybe.
+
+1275
+02:05:42,899 --> 02:05:43,439
+Ah, ok.
+
+1276
+02:05:48,724 --> 02:05:50,684
+Okay, no problem.
+
+1277
+02:05:52,404 --> 02:05:55,923
+So, integrate e to x squared dy.
+
+1278
+02:05:56,123 --> 02:06:00,644
+First, with respect to y, so y times e to x squared, 0 to x over 3.
+
+1279
+02:06:01,364 --> 02:06:08,484
+Substitute to y only, these limits, e to x squared times x over 3 minus 0.
+
+1280
+02:06:09,163 --> 02:06:11,384
+Okay, now it's an easy integral.
+
+1281
+02:06:11,384 --> 02:06:22,264
+x e to x squared dx, possible to solve, and get a 1 over 2 e to x squared is the result of that integral.
+
+1282
+02:06:22,784 --> 02:06:27,184
+And 1 over 3 also we have, so 1 over 6 times e to x squared, 0 to 3.
+
+1283
+02:06:28,224 --> 02:06:29,744
+So, put it here.
+
+1284
+02:06:30,083 --> 02:06:34,703
+1 over 6 times e to 9 minus 1, because e to 0.
+
+1285
+02:06:45,908 --> 02:06:46,847
+Now is it okay?
+
+1286
+02:06:51,315 --> 02:06:51,855
+Ok.
+
+1287
+02:07:02,131 --> 02:07:11,911
+In this question says that sketch the region of integral of this one and write an equivalent integral with the order of integration reversed.
+
+1288
+02:07:12,631 --> 02:07:19,011
+That means again the limits of integration is given but it says that don't solve it in this form.
+
+1289
+02:07:19,451 --> 02:07:25,471
+Sketch the region and write once you change the order of integral.
+
+1290
+02:07:26,331 --> 02:07:31,971
+That means it says that write the limits of integration such that the integral includes dxd1.
+
+1291
+02:07:32,131 --> 02:07:36,331
+So please sketch the region and then tell me the limits.
+
+1292
+02:07:37,751 --> 02:07:38,311
+And tell me.
+
+1293
+02:07:39,311 --> 02:07:40,771
+First I want to ask you.
+
+1294
+02:07:42,652 --> 02:07:48,251
+This region is smooth region possibly with respect to which variable according to this integral?
+
+1295
+02:07:50,331 --> 02:07:53,231
+With respect to x or y it is smooth.
+
+1296
+02:07:53,491 --> 02:07:55,152
+We can understand from this integral.
+
+1297
+02:08:08,819 --> 02:08:15,799
+Bir integral we have, that means it is smooth with respect to, because it is smooth, but with respect to which variable it is.
+
+1298
+02:08:18,159 --> 02:08:19,859
+X or Y, which one?
+
+1299
+02:08:35,796 --> 02:08:40,636
+Evet, of course x, çünkü lastly x is written, that means it is smooth with respect to x.
+
+1300
+02:08:41,016 --> 02:08:43,476
+We can understand from this writing of double integral.
+
+1301
+02:08:44,016 --> 02:08:50,036
+Also, secondly, you can understand from the limits of integral, area of the region.
+
+1302
+02:08:50,636 --> 02:08:53,296
+I'm not area, I'm sorry, region of integral I mean.
+
+1303
+02:08:54,275 --> 02:08:57,496
+So what are the boundary curves or lines of this region are?
+
+1304
+02:08:57,996 --> 02:08:59,275
+And then please sketch it.
+
+1305
+02:09:11,220 --> 02:09:14,020
+It says only write the limits of integral, don't solve it.
+
+1306
+02:09:16,780 --> 02:09:19,320
+So if you can, please write me the limits.
+
+1307
+02:09:57,363 --> 02:09:58,603
+Here, region R,
+
+1308
+02:10:00,923 --> 02:10:07,783
+consisting of x, x is 0, x is 2, y is x squared, y is 2x.
+
+1309
+02:10:08,303 --> 02:10:09,303
+Have you sketched it.
+
+1310
+02:10:12,163 --> 02:10:15,023
+And then tell me, is it smooth also with respect to y?
+
+1311
+02:10:28,819 --> 02:10:34,259
+Okay, so, [öğrenci], what can be the corresponding limits of integral?
+
+1312
+02:10:35,460 --> 02:10:38,199
+Once you write 4x plus 2 dx dy.
+
+1313
+02:11:04,020 --> 02:11:07,500
+0 to 4, v over 2 to square root y, ok?
+
+1314
+02:11:09,600 --> 02:11:10,380
+Let's see it.
+
+1315
+02:11:16,916 --> 02:11:18,516
+Evet, [öğrenci].
+
+1316
+02:11:18,516 --> 02:11:19,516
+You are completely right.
+
+1317
+02:11:21,996 --> 02:11:24,056
+I think you have sketched this region.
+
+1318
+02:11:25,655 --> 02:11:26,636
+I thank you.
+
+1319
+02:11:27,556 --> 02:11:29,336
+This is y is x square.
+
+1320
+02:11:30,536 --> 02:11:31,536
+And y is 2x.
+
+1321
+02:11:32,496 --> 02:11:33,916
+It's smooth with respect to x.
+
+1322
+02:11:33,996 --> 02:11:34,516
+It's clear.
+
+1323
+02:11:36,076 --> 02:11:37,195
+What about y?
+
+1324
+02:11:37,516 --> 02:11:40,076
+Yes, it is again smooth with respect to y.
+
+1325
+02:11:41,136 --> 02:11:41,615
+Section.
+
+1326
+02:11:41,996 --> 02:11:43,076
+Move it along the region.
+
+1327
+02:11:43,216 --> 02:11:44,536
+Right hand side parabola.
+
+1328
+02:11:44,536 --> 02:11:45,855
+Left hand side line.
+
+1329
+02:11:45,855 --> 02:11:46,695
+Okay.
+
+1330
+02:11:47,735 --> 02:11:49,176
+For first integral.
+
+1331
+02:11:49,876 --> 02:11:52,416
+For outer integral we may say.
+
+1332
+02:11:53,355 --> 02:11:54,796
+Coming from x-axis.
+
+1333
+02:11:54,916 --> 02:11:56,756
+The limits of the region on x-axis.
+
+1334
+02:12:04,979 --> 02:12:07,159
+But there is a problem here.
+
+1335
+02:12:08,979 --> 02:12:10,500
+With respect to x.
+
+1336
+02:12:11,019 --> 02:12:11,619
+I'm sorry.
+
+1337
+02:12:13,500 --> 02:12:15,039
+It must be dxdy.
+
+1338
+02:12:15,219 --> 02:12:15,879
+I'm so sorry.
+
+1339
+02:12:16,379 --> 02:12:17,919
+dxdy, this is mistaken.
+
+1340
+02:12:18,599 --> 02:12:18,759
+Okay.
+
+1341
+02:12:19,319 --> 02:12:21,219
+dxdy, because we are just searching.
+
+1342
+02:12:22,639 --> 02:12:23,979
+It is mistaken.
+
+1343
+02:12:26,619 --> 02:12:29,939
+And here, coming from y axis.
+
+1344
+02:12:30,279 --> 02:12:31,179
+0 to 4.
+
+1345
+02:12:31,799 --> 02:12:32,179
+Yes.
+
+1346
+02:12:32,819 --> 02:12:34,159
+And to look at the section.
+
+1347
+02:12:34,159 --> 02:12:37,519
+Section starts at line and finishes at parabola.
+
+1348
+02:12:37,799 --> 02:12:39,759
+Line to parabola.
+
+1349
+02:12:40,359 --> 02:12:42,519
+Line, but it must be in terms of y.
+
+1350
+02:12:43,139 --> 02:12:44,479
+Line is y is 2x.
+
+1351
+02:12:45,079 --> 02:12:46,359
+So, x is y over 2.
+
+1352
+02:12:47,579 --> 02:12:50,179
+Parabola is x, y is x squared.
+
+1353
+02:12:50,939 --> 02:12:53,479
+So, x is minus plus squared y.
+
+1354
+02:12:53,559 --> 02:12:56,159
+But this is the positive branch of the parabola.
+
+1355
+02:12:56,579 --> 02:12:57,599
+The other one is negative.
+
+1356
+02:12:58,199 --> 02:13:00,079
+So, positive squared y.
+
+1357
+02:13:00,079 --> 02:13:01,959
+This integral must be.
+
+1358
+02:13:18,612 --> 02:13:21,051
+What about properties of double integrals?
+
+1359
+02:13:23,372 --> 02:13:32,811
+Like single integrals, the same properties we have for double integrals of continuous functions have the same algebraic properties,
+
+1360
+02:13:33,931 --> 02:13:42,412
+for example, which one is custom multiples, sum and difference, and domination and additivity.
+
+1361
+02:13:42,412 --> 02:13:44,851
+Let's see.
+
+1362
+02:13:45,452 --> 02:13:50,511
+If f and g are continuous on the bounded region R, then the following properties hold.
+
+1363
+02:13:54,100 --> 02:13:55,300
+Custom multiple rule.
+
+1364
+02:13:56,500 --> 02:14:00,320
+Custom multiple rule means once we have single integrals.
+
+1365
+02:14:00,980 --> 02:14:03,539
+Custom multiple of a function, integrable functions.
+
+1366
+02:14:04,220 --> 02:14:09,520
+And so we can put custom number outside and then integrate any number c.
+
+1367
+02:14:10,420 --> 02:14:11,220
+Sum and difference.
+
+1368
+02:14:11,720 --> 02:14:14,520
+We can separate the double integral at the same time.
+
+1369
+02:14:14,620 --> 02:14:16,620
+The triple one, the single one, it doesn't matter.
+
+1370
+02:14:17,360 --> 02:14:18,140
+Sum and differences.
+
+1371
+02:14:18,140 --> 02:14:22,860
+We can just separate them and integrate, evaluate one by one.
+
+1372
+02:14:22,860 --> 02:14:32,700
+And domination means, for example, first case, if f is positive, integration will be positive.
+
+1373
+02:14:33,700 --> 02:14:36,079
+In single integrals, you know, we have the same case.
+
+1374
+02:14:36,500 --> 02:14:40,600
+For a positive function, the integration of it, again, results a positive number.
+
+1375
+02:14:41,560 --> 02:14:45,300
+And secondly, that means for double integrals, we have the same relation.
+
+1376
+02:14:45,300 --> 02:14:55,860
+Secondly, if f is greater than g, this is the relation between these two functions on the values of x and y on r.
+
+1377
+02:14:56,640 --> 02:15:02,660
+If f is greater than g, so the double integral will be greater than double integral of g.
+
+1378
+02:15:03,340 --> 02:15:07,000
+Same relation they have, again, like the double integral.
+
+1379
+02:15:07,000 --> 02:15:09,000
+Additivity.
+
+1380
+02:15:11,220 --> 02:15:20,480
+Here, just remember, for single integrals, for example, if we cut into, if we have an interval, for example, a to b, we can separate the integral.
+
+1381
+02:15:20,480 --> 02:15:26,820
+For example, if c, point c is between a and b, you can just separate the integral into two parts.
+
+1382
+02:15:27,079 --> 02:15:32,020
+a to c, c to b, because some of them gives, again, the interval a to b.
+
+1383
+02:15:33,480 --> 02:15:37,760
+With no intersection, of course, disjoint two intervals.
+
+1384
+02:15:37,760 --> 02:15:40,760
+But the union of them is given the same limit.
+
+1385
+02:15:40,760 --> 02:15:54,760
+Here, similarly, if r is the union of two non-overlapping regions, that is not a common point they have, r1 and r2, so the integrals and some of them gives on r fx ydi.
+
+1386
+02:15:54,760 --> 02:16:02,760
+That means two disjoint, not intersecting two regions, but the union of them gives r.
+
+1387
+02:16:02,760 --> 02:16:07,760
+In that case, you can separate the integral into two parts.
+
+1388
+02:16:19,923 --> 02:16:49,923
+Z'in solide bölümde, y'eğe bölümde, y'eğe bölümde, y'eğe bölümde, y'eğe bölümde, y'eğe bölümde, y'eğe bölümde, y'eğe bölümde, y'eğe bölümde, y'eğe bölümde, y'eğe bölümde, y'eğe bölümde, y'eğe bölümde, y'eğe bölümde, y'eğe bölümde, y'eğe bölümde, y'eğe bölümde, y'eğe bölümde, y'eğe bölümde, y'e bölümde, y'e bölümde, y'e bölümde, y'e bölümde, y'e bölümde, y'e bölümde, y'e bölümde, y'e
+
+1389
+02:16:49,923 --> 02:16:59,963
+boundary lines or curves. So the solid between them can be evaluated by the double integral of Z over the space region.
+
+1390
+02:17:00,683 --> 02:17:06,824
+Now please, firstly write the integral, sketch the region, write the limits, and then tell me.
+
+1391
+02:17:09,343 --> 02:17:10,703
+First let's sketch the region.
+
+1392
+02:19:31,443 --> 02:19:32,083
+[öğrenci]
+
+1393
+02:19:36,051 --> 02:19:39,731
+For dy, you mean dy dx or dx dy?
+
+1394
+02:19:42,291 --> 02:19:47,011
+I think you mean dy dx and the insider integral.
+
+1395
+02:19:50,291 --> 02:19:56,451
+Yes, there are the functions of x, 2 square root x and 4x minus 2. Yes, you can write.
+
+1396
+02:19:57,572 --> 02:20:02,211
+Of course, if it is smooth with respect to x, yes, you can write.
+
+1397
+02:20:16,308 --> 02:20:18,428
+Is your region smooth with respect to X?
+
+1398
+02:20:33,268 --> 02:20:33,587
+Ok.
+
+1399
+02:20:50,515 --> 02:20:52,056
+Evet, yürüyen bir şey.
+
+1400
+02:21:46,868 --> 02:21:49,427
+Bu an yorup et almayı ve keseydi, soluşum.
+
+1401
+02:22:01,716 --> 02:22:03,716
+Tamam, bakalım.
+
+1402
+02:22:09,716 --> 02:22:10,256
+Hmm.
+
+1403
+02:22:14,260 --> 02:22:16,920
+[öğrenci], it was not smooth with respect to x.
+
+1404
+02:22:21,020 --> 02:22:22,819
+Now, look together.
+
+1405
+02:22:23,159 --> 02:22:25,979
+This is parabola y2 squared x.
+
+1406
+02:22:26,680 --> 02:22:28,639
+Why is 2 squared x mean?
+
+1407
+02:22:30,300 --> 02:22:34,979
+Why only one branch of it is bounded here?
+
+1408
+02:22:35,540 --> 02:22:36,940
+Also, we have the other one.
+
+1409
+02:22:37,079 --> 02:22:40,139
+Why the second one is not included here?
+
+1410
+02:22:40,139 --> 02:22:42,540
+How will you understand only the positive part?
+
+1411
+02:22:48,115 --> 02:22:51,236
+Now look, for these kinds of questions, you have to be careful.
+
+1412
+02:22:52,296 --> 02:22:58,915
+This is normally x's y square over 4, the parabola, but it's given y is 2 square root x.
+
+1413
+02:22:59,355 --> 02:23:07,156
+Also the negative part of it is possible, but this notation shows that one branch of the parabola where y is positive.
+
+1414
+02:23:07,775 --> 02:23:11,236
+Because on the other part of the parabola, y negative.
+
+1415
+02:23:12,275 --> 02:23:16,736
+That's why this definition says that one branch of the parabola, which is the positive one.
+
+1416
+02:23:16,736 --> 02:23:18,355
+Okay, be careful.
+
+1417
+02:23:18,675 --> 02:23:20,495
+Positive one and positive x, of course.
+
+1418
+02:23:22,476 --> 02:23:23,075
+This part.
+
+1419
+02:23:24,915 --> 02:23:30,855
+So y is 4x minus 2 is the line, which is the boundary of this region, and x-axis.
+
+1420
+02:23:33,015 --> 02:23:37,036
+Now look, is it smooth with respect to x, firstly?
+
+1421
+02:23:38,495 --> 02:23:40,656
+Can you tell me why it is not smooth?
+
+1422
+02:23:53,907 --> 02:23:59,287
+I mean, you can, can you understand it? It's not so much with respect to X. Can you see it?
+
+1423
+02:24:08,308 --> 02:24:10,108
+Okay, let's see.
+
+1424
+02:24:11,448 --> 02:24:17,168
+For x, smoothness with respect to x, in order to understand, let's get the cross section with respect to x.
+
+1425
+02:24:17,968 --> 02:24:19,468
+That means vertical section, okay.
+
+1426
+02:24:20,328 --> 02:24:21,208
+And start here.
+
+1427
+02:24:22,028 --> 02:24:25,328
+Get this section and move it along the whole region.
+
+1428
+02:24:26,568 --> 02:24:28,908
+Start here and finish at this point.
+
+1429
+02:24:30,288 --> 02:24:33,748
+Start here and come up to this point.
+
+1430
+02:24:34,208 --> 02:24:35,668
+Up to this point,
+
+1431
+02:24:35,668 --> 02:24:38,068
+above, parabola,
+
+1432
+02:24:38,588 --> 02:24:39,668
+below x sexes.
+
+1433
+02:24:39,868 --> 02:24:41,008
+After this point,
+
+1434
+02:24:41,748 --> 02:24:42,428
+what's happening?
+
+1435
+02:24:43,788 --> 02:24:44,868
+The section is
+
+1436
+02:24:44,868 --> 02:24:48,788
+above, again, parabola,
+
+1437
+02:24:48,968 --> 02:24:49,728
+but below
+
+1438
+02:24:49,728 --> 02:24:53,268
+it continues with
+
+1439
+02:24:53,268 --> 02:24:55,348
+line, not x sexes.
+
+1440
+02:24:55,348 --> 02:24:57,348
+At 1 over 2,
+
+1441
+02:24:58,848 --> 02:24:59,168
+the
+
+1442
+02:24:59,168 --> 02:25:02,828
+boundary
+
+1443
+02:25:02,828 --> 02:25:04,188
+church
+
+1444
+02:25:04,188 --> 02:27:04,168
+the
+
+1445
+02:27:04,188 --> 02:27:34,168
+yes, so
+
+1446
+02:27:34,168 --> 02:28:04,148
+the
+
+1447
+02:27:40,852 --> 02:27:42,152
+Do you want to repeat it?
+
+1448
+02:27:51,123 --> 02:27:51,664
+Ok.
+
+1449
+02:28:01,075 --> 02:28:31,075
+Bu, araya ile ilgili araya ile ilgili araya ile ilgili araya ile ilgili araya ile ilgili araya ile ilgili araya ile ilgili araya ile ilgili araya ile ilgili araya ile ilgili araya ile ilgili araya ile ilgili araya ile ilgili araya ile ilgili araya ile ilgili araya ile ilgili araya ile ilgili araya ile ilgili araya ile ilgili araya ile ilgili araya ile ilgili araya ile ilgili araya ile ilgili araya ile ilgili araya ile ilgili araya ile ilgili araya ile ilgili araya ile ilgili araya ile ilgili araya ile ilgili araya ile ilgili araya ile ilgili araya ile ilgili araya ile ilgili araya ile ilgili araya ile ilgili araya ile ilgili araya ile ilgili araya ile ilgili araya ile ilgili araya ile ilgili araya ile ilgili araya ile ilgili araya ile ilgili araya ile ilgili araya ile ilgili araya ile ilgili araya ile ilgili araya ile ilgili araya ile ilgili araya ile ilgili araya ile ilgili araya ile ilgili araya ile ilgili araya ile ilgili ar
+
+1450
+02:28:31,075 --> 02:28:32,455
+araya ile ilgili araya ile ilgili araya ile ilgili araya ile ilgili araya ile ilgili araya ile ilgili araya ile ilgili araya ile ilgili araya ile ilgili araya ile ilgili araya ile ilgili araya ile ilgili araya ile ilgili araya ile ilgili araya ile ilgili araya ile ilgili araya ile ilgili araya ile ilgili araya ile ilgili araya ile ilgili araya ile ilgili araya ile ilgili araya ile ilgili araya ile ilgili araya ile ilgili araya ile ilgili araya ile ilgili araya ile ilgili araya ile ilgili araya ile ilgili araya ile ilgili araya ile ilgili araya ile ilgili araya ile ilgili araya ile ilgili araya ile ilgili araya ile ilgili araya ile ilgili araya ile ilgili araya ile ilgili araya ile ilgili araya ile ilgili araya ile ilgili araya ile ilgili araya ile ilgili araya ile ilgili araya ile ilgili araya ile ilgili araya ile ilgili araya ile ilgili araya ile ilgili araya ile ilgili araya ile araya ile ilgili araya ile araya ile
+
+1451
+02:28:36,435 --> 02:28:44,995
+For example, find the area of the region R bounded by y's x and y's x square in the first quadrant.
+
+1452
+02:28:48,115 --> 02:28:56,275
+Area of the region R with the double integral, you need to write this formula R dA, dx dy or dy dx, it's up to you.
+
+1453
+02:28:56,915 --> 02:29:03,956
+So first sketch this region is an easy region that you have do it, yes you have done it before today,
+
+1454
+02:29:03,956 --> 02:29:10,755
+y's x and y's x square in the first quadrant. Write the limits easily and then tell me the result,
+
+1455
+02:29:10,755 --> 02:29:13,476
+I'm waiting. It's easy.
+
+1456
+02:30:34,355 --> 02:30:34,855
+Okay.
+
+1457
+02:30:36,695 --> 02:30:39,075
+Amra, I don't remember, but we will look.
+
+1458
+02:30:39,315 --> 02:30:39,956
+Anyone else?
+
+1459
+02:30:40,296 --> 02:30:42,175
+Thank you for your answer.
+
+1460
+02:30:45,615 --> 02:30:47,735
+[öğrenci], have you done?
+
+1461
+02:30:49,495 --> 02:30:50,855
+Or anyone else?
+
+1462
+02:31:25,971 --> 02:31:30,971
+Evet, bu bölgeye.
+
+1463
+02:31:30,971 --> 02:31:32,971
+Bu bölgeye.
+
+1464
+02:31:32,971 --> 02:31:35,971
+Y is X² and Y is X.
+
+1465
+02:31:35,971 --> 02:31:37,971
+Ve X is smooth.
+
+1466
+02:31:37,971 --> 02:31:39,971
+X is a region.
+
+1467
+02:31:39,971 --> 02:31:42,971
+1 times dA.
+
+1468
+02:31:42,971 --> 02:31:43,971
+Dx or dx?
+
+1469
+02:31:43,971 --> 02:31:44,971
+Dx you cannot.
+
+1470
+02:31:44,971 --> 02:31:46,971
+It is also smooth with respect to y.
+
+1471
+02:31:46,971 --> 02:31:47,971
+No problem.
+
+1472
+02:31:47,971 --> 02:31:50,971
+And in order to write with respect to X,
+
+1473
+02:31:50,971 --> 02:31:55,971
+this limit coming from X axis of the boundary.
+
+1474
+02:31:55,971 --> 02:31:59,971
+Projection of this region on X axis 0 to 1.
+
+1475
+02:31:59,971 --> 02:32:00,971
+So 0 to 1.
+
+1476
+02:32:00,971 --> 02:32:01,971
+What about the section?
+
+1477
+02:32:01,971 --> 02:32:04,971
+The section is between parabola to line.
+
+1478
+02:32:04,971 --> 02:32:06,971
+Parabola to line.
+
+1479
+02:32:06,971 --> 02:32:08,971
+Parabola X².
+
+1480
+02:32:08,971 --> 02:32:10,971
+Line is X.
+
+1481
+02:32:10,971 --> 02:32:11,971
+So 0 to 1.
+
+1482
+02:32:11,971 --> 02:32:12,971
+X² to X.
+
+1483
+02:32:12,971 --> 02:32:14,971
+Dx must be written.
+
+1484
+02:32:14,971 --> 02:32:18,971
+So for first integral,
+
+1485
+02:32:18,971 --> 02:32:20,971
+1 times dy.
+
+1486
+02:32:20,971 --> 02:32:21,971
+So 1.
+
+1487
+02:32:21,971 --> 02:32:22,971
+X² to X.
+
+1488
+02:32:22,971 --> 02:32:24,971
+So X minus X² dx.
+
+1489
+02:32:24,971 --> 02:32:29,971
+X² over 2 minus X³ over 3.
+
+1490
+02:32:29,971 --> 02:32:30,971
+0 to 1.
+
+1491
+02:32:30,971 --> 02:32:32,971
+Results 1 over 6 clearly.
+
+1492
+02:32:43,700 --> 02:33:13,700
+Bu, bu
+
+1493
+02:33:13,700 --> 02:33:19,659
+and then tell me which libis of integration you need is it smooth?
+
+1494
+02:34:48,691 --> 02:34:49,591
+Evet, bir skeçlik.
+
+1495
+02:34:57,075 --> 02:35:10,515
+Y is x squared, y is x plus 2, what kind of origin it is, is it smooth? You will have only double integral r, d a, dx, dy, or dy, dx, which one you prefer? Is it smooth? Tell me.
+
+1496
+02:35:24,180 --> 02:35:24,979
+Let's see.
+
+1497
+02:35:29,940 --> 02:35:34,280
+Ah, ok [öğrenci], have you solved it with respect to x?
+
+1498
+02:35:36,579 --> 02:35:37,399
+Or why?
+
+1499
+02:35:52,020 --> 02:35:52,979
+Let's see, together.
+
+1500
+02:35:58,560 --> 02:36:01,280
+This is y's x2.
+
+1501
+02:36:03,560 --> 02:36:05,300
+And y's x plus 2.
+
+1502
+02:36:06,520 --> 02:36:08,440
+Such a region you must have.
+
+1503
+02:36:17,203 --> 02:37:04,394
+Bu, bu
+
+1504
+02:37:10,131 --> 02:37:11,271
+Let's see the solution.
+
+1505
+02:37:12,152 --> 02:37:13,971
+First with respect to x, let's see.
+
+1506
+02:37:16,992 --> 02:37:20,672
+With respect to x, we need to write dy dx.
+
+1507
+02:37:21,231 --> 02:37:27,771
+Okay, so this integral will come from x-axis of the projection of the region on x-axis.
+
+1508
+02:37:27,771 --> 02:37:29,912
+As you see, minus 1 to 2.
+
+1509
+02:37:30,412 --> 02:37:33,271
+It starts at minus 1 and finishes at 2.
+
+1510
+02:37:33,631 --> 02:37:34,951
+So minus 1 to 2.
+
+1511
+02:37:34,951 --> 02:37:40,652
+The other integral must include the limits of y, but with respect to x.
+
+1512
+02:37:41,291 --> 02:37:43,951
+Parabola to parabola 8.
+
+1513
+02:37:44,551 --> 02:37:47,252
+Parabola x square, line.
+
+1514
+02:37:48,252 --> 02:37:49,691
+Not parabola 8, I'm sorry.
+
+1515
+02:37:50,111 --> 02:37:51,551
+Parabola to line, I mean.
+
+1516
+02:37:52,131 --> 02:37:53,152
+Parabola to line.
+
+1517
+02:37:53,492 --> 02:37:55,992
+Parabola is x square, line is x plus 2.
+
+1518
+02:37:56,731 --> 02:37:57,752
+So this is easier.
+
+1519
+02:37:58,291 --> 02:37:59,291
+I think you need to prefer.
+
+1520
+02:38:00,152 --> 02:38:03,832
+And so minus 1 to 2, dy dx.
+
+1521
+02:38:03,832 --> 02:38:05,391
+So you have 1 on this, so y.
+
+1522
+02:38:05,771 --> 02:38:07,211
+x square to x plus 2.
+
+1523
+02:38:07,691 --> 02:38:09,771
+x plus 2 minus x square dx.
+
+1524
+02:38:10,031 --> 02:38:10,591
+Integrated.
+
+1525
+02:38:12,111 --> 02:38:13,371
+x square over 2.
+
+1526
+02:38:13,791 --> 02:38:16,511
+2x minus x cube over 3.
+
+1527
+02:38:16,871 --> 02:38:17,791
+Minus 1 to 2.
+
+1528
+02:38:18,051 --> 02:38:20,072
+And it results 9 over 2, clearly.
+
+1529
+02:38:20,611 --> 02:38:21,971
+What about with respect to y?
+
+1530
+02:38:22,572 --> 02:38:27,271
+Once you look to get the section vertical to y and horizontal to x,
+
+1531
+02:38:27,271 --> 02:38:30,011
+you will see that it is not a smooth region.
+
+1532
+02:38:31,211 --> 02:38:41,031
+Because at this point, at 1, up to 1, right-hand side is this positive part of the parabola.
+
+1533
+02:38:41,031 --> 02:38:43,992
+Left-hand side is this negative part of the parabola.
+
+1534
+02:38:44,672 --> 02:38:51,431
+After this point, right-hand side again parabola, but left-hand side starts to continue with the line.
+
+1535
+02:38:52,111 --> 02:38:58,791
+So on left-hand side, the boundary line or curve changes at the point where it's 1.
+
+1536
+02:38:58,791 --> 02:39:00,511
+So it is not smooth.
+
+1537
+02:39:00,731 --> 02:39:07,451
+We need to make it smooth in order to just make it smooth while cutting into two smooth parts.
+
+1538
+02:39:08,051 --> 02:39:15,412
+Of course, when you need to just cut into at the point where the boundary lines or curves is changed.
+
+1539
+02:39:16,011 --> 02:39:16,931
+At the y, 1.
+
+1540
+02:39:16,931 --> 02:39:18,791
+Of course, you need to just cut into two.
+
+1541
+02:39:19,271 --> 02:39:24,451
+Because at 1, at y is 1, up to y is 1, it's the region is smooth.
+
+1542
+02:39:25,131 --> 02:39:27,311
+After 1, it's again smooth.
+
+1543
+02:39:27,611 --> 02:39:30,771
+So 2, R1 and R2, we need to evaluate.
+
+1544
+02:39:31,051 --> 02:39:35,511
+That means at the same time, it's coming from additivity, the property of double integrals.
+
+1545
+02:39:35,591 --> 02:39:36,252
+We can do it.
+
+1546
+02:39:36,951 --> 02:39:39,832
+Because R1 and R2 are non-overlapping.
+
+1547
+02:39:40,231 --> 02:39:42,971
+Non-overlapping means there is no intersection point.
+
+1548
+02:39:42,971 --> 02:39:47,691
+Two distinct regions, but the union of them gives the whole R.
+
+1549
+02:39:48,332 --> 02:39:50,711
+That's why this is additivity rule.
+
+1550
+02:39:52,311 --> 02:39:55,111
+For R1, let's look.
+
+1551
+02:39:55,231 --> 02:39:56,091
+Now dx, dy.
+
+1552
+02:39:56,431 --> 02:39:58,431
+We are just solving with respect to y.
+
+1553
+02:39:59,211 --> 02:40:03,252
+This integral will come from limits, come from y-axis.
+
+1554
+02:40:03,971 --> 02:40:06,611
+R1, for R1, it's 0 to 1.
+
+1555
+02:40:07,311 --> 02:40:08,311
+Yes, 0 to 1.
+
+1556
+02:40:08,631 --> 02:40:09,691
+What about the section?
+
+1557
+02:40:10,252 --> 02:40:12,412
+Section starts here, finishes here.
+
+1558
+02:40:12,971 --> 02:40:16,572
+But this is again parabola, the same parabola.
+
+1559
+02:40:17,152 --> 02:40:26,771
+But if you be careful about x, writing x in terms of y, since y is x squared, x is minus plus squared y.
+
+1560
+02:40:27,152 --> 02:40:31,992
+So right branch of the parabola and left branch of the parabola having different equations.
+
+1561
+02:40:32,351 --> 02:40:34,431
+One of them is positive, the other one is negative.
+
+1562
+02:40:34,871 --> 02:40:36,832
+Once we write x as a function of y.
+
+1563
+02:40:36,832 --> 02:40:43,031
+That's why in the first one, only x squared, one parabola, because y is x squared.
+
+1564
+02:40:43,832 --> 02:40:46,172
+But x is having two different values.
+
+1565
+02:40:46,172 --> 02:40:55,271
+And so left-hand side is the lower limit, right-hand side upper limit.
+
+1566
+02:40:55,611 --> 02:40:56,511
+Negative to positive.
+
+1567
+02:40:56,731 --> 02:41:00,951
+So minus squared y to positive one plus R2.
+
+1568
+02:41:00,951 --> 02:41:16,951
+On R2, again dx dy.
+
+1569
+02:41:04,703 --> 02:41:19,744
+Y-axis, r2, 1, 2, 4, as you see, 1, 2, 4, and lower limit, upper limit. Lower limit is line, upper limit, again, the right branch of the parabola, but with respect to y.
+
+1570
+02:41:19,744 --> 02:41:29,283
+Y is x plus 2, so x is y minus 2, so y minus 2 is the lower limit for r2, upper limit, again, square root y, dx, dy.
+
+1571
+02:41:29,824 --> 02:41:35,963
+If we integrate this one, these two integrals, and evaluate, you will get, again, the sum of them will be 9 over 2.
+
+1572
+02:42:03,347 --> 02:42:04,567
+Ok, nice.
+
+1573
+02:42:08,371 --> 02:42:12,831
+And lastly, let's see the average value and the definition and then we will be okay for today.
+
+1574
+02:42:14,631 --> 02:42:26,191
+For an integrable function of two variables defined on a bounded region in the plane, the average value is the integral over the region divided by the area of the region.
+
+1575
+02:42:26,431 --> 02:42:33,912
+That means average value of a function of two variables defined with double integral of it.
+
+1576
+02:42:33,912 --> 02:42:41,431
+The not only double integral of the function, also you need to divide it with the area of the region of integration.
+
+1577
+02:42:42,231 --> 02:42:47,011
+So the average value of an integrable function f over the region r is defined as follows.
+
+1578
+02:42:47,711 --> 02:42:55,211
+The average of f is equal to 1 over area of r times the double integral of f over r dA.
+
+1579
+02:42:59,476 --> 02:43:00,476
+Efendim,
+
+1580
+02:43:00,476 --> 02:43:06,855
+find the average value of f x times cosine xy over the rectangle.
+
+1581
+02:43:08,855 --> 02:43:11,516
+x is 0 to pi, voice 0 to 1.
+
+1582
+02:43:13,736 --> 02:43:17,236
+This is because it's talking about the rectangle.
+
+1583
+02:43:19,176 --> 02:43:19,996
+Isn't it?
+
+1584
+02:43:22,695 --> 02:43:24,496
+Let's see. It's easy.
+
+1585
+02:43:26,156 --> 02:43:28,195
+Once you have a rectangular region,
+
+1586
+02:43:28,195 --> 02:43:29,376
+it's very easy.
+
+1587
+02:43:30,355 --> 02:43:31,816
+Fubinus theorem, first one.
+
+1588
+02:43:32,476 --> 02:43:34,036
+You can write dy dx or dx.
+
+1589
+02:43:34,156 --> 02:43:35,195
+They are both easy.
+
+1590
+02:43:36,216 --> 02:43:37,836
+Let's think, for example, dy dx.
+
+1591
+02:43:38,376 --> 02:43:40,615
+So the first, this integral, x.
+
+1592
+02:43:40,876 --> 02:43:42,916
+x is 0 to pi, log.
+
+1593
+02:43:43,836 --> 02:43:45,036
+And y is 0 to 1.
+
+1594
+02:43:45,316 --> 02:43:46,476
+So 0 to 1, dy.
+
+1595
+02:43:46,976 --> 02:43:48,756
+First, integrate with respect to y.
+
+1596
+02:43:49,456 --> 02:43:51,156
+x cosine xy dy.
+
+1597
+02:43:51,496 --> 02:43:52,676
+Now, x is constant.
+
+1598
+02:43:52,996 --> 02:43:53,496
+Don't forget.
+
+1599
+02:43:53,976 --> 02:43:55,976
+We need to integrate with respect to y only.
+
+1600
+02:43:55,976 --> 02:43:58,376
+So integration of, for example,
+
+1601
+02:43:58,636 --> 02:44:00,096
+integration of cosine 2y.
+
+1602
+02:44:01,016 --> 02:44:02,396
+Sine 2y over 2.
+
+1603
+02:44:03,115 --> 02:44:06,536
+Similarly, sine xy over x.
+
+1604
+02:44:07,195 --> 02:44:07,435
+Okay.
+
+1605
+02:44:07,935 --> 02:44:10,416
+Also multiply with x is the coefficient here.
+
+1606
+02:44:10,816 --> 02:44:12,355
+So the result is sine xy.
+
+1607
+02:44:12,596 --> 02:44:13,355
+0 to 1.
+
+1608
+02:44:14,756 --> 02:44:16,716
+You need to just evaluate this,
+
+1609
+02:44:16,916 --> 02:44:20,855
+substituting these numbers to only y.
+
+1610
+02:44:20,855 --> 02:44:21,416
+Don't worry.
+
+1611
+02:44:21,775 --> 02:44:22,316
+Don't forget.
+
+1612
+02:44:24,016 --> 02:44:26,556
+Sine x minus sine 0, 0.
+
+1613
+02:44:26,756 --> 02:44:29,676
+So sine x dx, which results minus cosine x.
+
+1614
+02:44:30,076 --> 02:44:31,115
+0 to pi.
+
+1615
+02:44:31,716 --> 02:44:32,896
+It results 2.
+
+1616
+02:44:34,156 --> 02:44:36,416
+This is the double integral of f over r.
+
+1617
+02:44:36,676 --> 02:44:39,056
+For the average value of f on this region,
+
+1618
+02:44:39,336 --> 02:44:41,956
+we need to also divide with the area of r.
+
+1619
+02:44:42,695 --> 02:44:44,636
+Area of r, since area,
+
+1620
+02:44:44,996 --> 02:44:46,275
+since the region is rectangle,
+
+1621
+02:44:46,636 --> 02:44:48,775
+the area of it is pi times 1.
+
+1622
+02:44:48,775 --> 02:44:51,216
+This length is pi.
+
+1623
+02:44:51,376 --> 02:44:52,216
+This length is 1.
+
+1624
+02:44:52,296 --> 02:44:53,136
+1 times pi.
+
+1625
+02:44:53,256 --> 02:44:53,896
+So it's pi.
+
+1626
+02:44:54,456 --> 02:44:58,195
+So 2 over pi is the average value of f on the region r.
+
+1627
+02:45:03,987 --> 02:45:14,108
+Any questions up to now? We have finished also the average value and it's okay I think for today if we have no question.
+
+1628
+02:45:19,283 --> 02:45:19,683
+Ok.
+
+1629
+02:45:25,396 --> 02:45:32,396
+[öğrenci], daha iyi bölümde,
+
+1630
+02:45:32,396 --> 02:45:35,396
+eğer birçok bölümde, birçok bölümde, birçok bölümde,
+
+1631
+02:45:35,396 --> 02:45:38,396
+birçok bölümde, birçok bölümde.
+
+1632
+02:45:38,396 --> 02:45:40,396
+Tamam.
+
+1633
+02:45:40,396 --> 02:45:45,396
+Teşekkürler.
+
+1634
+02:45:45,396 --> 02:45:49,396
+Ve sonraki videoda görüşmek üzere.
+
+1635
+02:45:58,995 --> 02:45:59,495
+See you!
+
+1636
+02:46:27,956 --> 02:46:28,456
+Bir dakika.

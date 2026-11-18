@@ -1,0 +1,3827 @@
+1
+00:02:44,563 --> 00:02:58,543
+Merhaba arkadaşlar. Bugün de uygulamalara devam edelim. Önümüzdeki haftayı kesin öğrendim. Dersler yapılmayacak. Tatil sayılıyor çünkü.
+
+2
+00:02:59,584 --> 00:03:09,483
+Fakat hepimizinle ortak program olduğu için isterseniz haftaya salı günü ve hata olursa çarşamba günü de neden olmasın bir bakarız duruma göre.
+
+3
+00:03:09,483 --> 00:03:15,024
+Ama en azından salı günkü dersi yapalım diye düşünüyorum eğer sizler için de uygunsa.
+
+4
+00:03:15,804 --> 00:03:19,804
+Yeni konuya devam etmiş oluruz. Konu eksiğini kapatmak adına.
+
+5
+00:03:23,204 --> 00:03:24,804
+Herkes evinde nasıl olsa.
+
+6
+00:03:32,243 --> 00:03:53,644
+Tamam, buradan yine herkesi duyurmuş olalım. Haftaya salı birdeki dersimizi tatil olmasına rağmen yapalım. Konularda da ilerlemiş olalım. Bu haftada uygulamayı kapatırız. Haftaya da yine olursa sorularınız, onlara da tabii cevaplayabilirim. Her zamanki saatinde salı günü, aynı saatinde birde.
+
+7
+00:03:57,556 --> 00:04:09,436
+Sistemde tanımlı olacağını düşünüyorum. Ama eğer tanımlı olmazsa ben tanımlarım. Ek dersi olarak yine o saatte 1.4 arası salı günü devam ederiz derse.
+
+8
+00:04:18,100 --> 00:04:35,340
+Tamam, saksak uygulamaya devam edelim. Şunu da söylemek istiyorum. Umarım başlamışsınızdır çalışmaya, vize haftasından çıktınız ama oldukça çok fazla konu var. Gördüğünüz gibi çok değişik sorular çıkabilir karşınıza test soruları olduğu için.
+
+9
+00:04:35,340 --> 00:04:44,879
+mümkün mertebe çok soru çözün, beraber çözdüğümüz, size verdiğimiz, derste çözdüğüm bütün soruları tekrar etmenizi tavsiye ederim.
+
+10
+00:04:46,120 --> 00:04:51,940
+Hiçbir konuyu atlamamamızı tavsiye ederim. Umarım güzel geçer.
+
+11
+00:04:59,060 --> 00:05:02,480
+Şu ana kadar da sorunuz yoksa buradan devam ediyorum.
+
+12
+00:05:06,139 --> 00:05:17,759
+Çarşamba günkü duruma bakalım. Haftaya bugün, tabi bayram öncesi olacak. Onu bilemiyorum şu anda ama salı gününü yapalım diye düşünüyorum.
+
+13
+00:05:18,759 --> 00:05:20,279
+Çarşambayı tekrar konuşuruz.
+
+14
+00:05:26,100 --> 00:05:26,820
+Rica ederim.
+
+15
+00:05:28,460 --> 00:05:29,600
+Başka sorunuz var mı?
+
+16
+00:05:31,180 --> 00:05:35,520
+Sorularla ilgili, sınavla ilgili, konularla ilgili.
+
+17
+00:05:47,156 --> 00:05:49,656
+Kaldığımız yerden o zaman devam ediyorum.
+
+18
+00:05:58,132 --> 00:06:06,831
+Here an integration you have, a proper integral 0 to x, a function of t dt integral with respect to t.
+
+19
+00:06:06,831 --> 00:06:15,492
+And here a power series representation or expansion is asked.
+
+20
+00:06:15,651 --> 00:06:20,912
+That's why you need to just take the power series expansion of these functions.
+
+21
+00:06:21,072 --> 00:06:23,711
+For example, e to t, you can just take e to x.
+
+22
+00:06:23,711 --> 00:06:34,391
+And in that case, you will just get the integration with the help of this power series form of this e to x.
+
+23
+00:06:34,992 --> 00:06:44,932
+And then term-by-term integration you can do because you have operations on power series, term-by-term derivative, term-by-term integration and multiplication.
+
+24
+00:06:45,692 --> 00:06:51,072
+We have already, that's why here we will use the power series expansion of e to x here.
+
+25
+00:06:51,072 --> 00:06:56,872
+And then integrate with respect to t and then write the limit 0 to x.
+
+26
+00:06:57,711 --> 00:06:59,112
+And then it will be okay.
+
+27
+00:06:59,812 --> 00:07:05,532
+And you will have again a power series, of course, term-by-term you will write and do the operations.
+
+28
+00:07:06,731 --> 00:07:08,231
+e to x you will need.
+
+29
+00:07:09,492 --> 00:07:13,711
+e to t, t to n over n factorial.
+
+30
+00:07:13,711 --> 00:07:15,932
+This is for any real number.
+
+31
+00:07:18,512 --> 00:07:19,651
+This power series.
+
+32
+00:07:22,172 --> 00:07:23,831
+So e to minus t square.
+
+33
+00:07:24,632 --> 00:07:25,112
+We need.
+
+34
+00:07:25,512 --> 00:07:28,072
+So replace t by minus t square.
+
+35
+00:07:30,151 --> 00:07:32,912
+That's why 1 minus t square.
+
+36
+00:07:33,792 --> 00:07:37,572
+Second power plus t to 4.
+
+37
+00:07:37,992 --> 00:07:39,632
+Third power will be negative.
+
+38
+00:07:40,591 --> 00:07:42,771
+t to 6 over 3 factorial and etc.
+
+39
+00:07:42,771 --> 00:07:46,151
+Try to get these expressions.
+
+40
+00:07:46,412 --> 00:07:48,151
+1 minus e to minus t square.
+
+41
+00:07:48,792 --> 00:07:50,572
+So the custom term will be deleted.
+
+42
+00:07:51,492 --> 00:07:53,132
+And then divide with t square.
+
+43
+00:07:53,331 --> 00:07:54,112
+All the terms.
+
+44
+00:07:55,632 --> 00:07:57,372
+So the series in the function.
+
+45
+00:07:58,091 --> 00:07:58,651
+In the integral.
+
+46
+00:07:58,992 --> 00:07:59,492
+Will be.
+
+47
+00:07:59,831 --> 00:08:01,172
+Again a power series form.
+
+48
+00:08:01,851 --> 00:08:06,271
+1 minus t square over 2 factorial plus t to 4 over 3 factorial and etc.
+
+49
+00:08:07,271 --> 00:08:09,471
+Term-by-term integration you can do here.
+
+50
+00:08:09,471 --> 00:08:12,231
+For 1t.
+
+51
+00:08:12,231 --> 00:08:13,532
+For t square.
+
+52
+00:08:13,951 --> 00:08:17,052
+Minus t cube over 3 times 2 factorial.
+
+53
+00:08:17,932 --> 00:08:19,272
+Plus t to 4.
+
+54
+00:08:19,752 --> 00:08:23,492
+T to 5 over 5 times 1 over 3 factorial and etc.
+
+55
+00:08:23,891 --> 00:08:24,812
+Zero to x.
+
+56
+00:08:25,351 --> 00:08:27,812
+We need to write this definite integral.
+
+57
+00:08:28,772 --> 00:08:31,351
+Substitute x on the upper limit.
+
+58
+00:08:31,351 --> 00:08:34,572
+We will just replace t with x.
+
+59
+00:08:34,851 --> 00:08:35,091
+And then.
+
+60
+00:08:36,132 --> 00:08:36,652
+Minus.
+
+61
+00:08:36,731 --> 00:08:37,692
+Lower limit is 0.
+
+62
+00:08:37,892 --> 00:08:39,132
+All of them will be 0.
+
+63
+00:08:40,011 --> 00:08:40,771
+So that.
+
+64
+00:08:41,132 --> 00:08:43,132
+We will have such an expression of the.
+
+65
+00:08:43,711 --> 00:08:44,312
+A solution.
+
+66
+00:08:44,771 --> 00:08:45,632
+Of the integration.
+
+67
+00:08:45,792 --> 00:08:47,451
+In terms of power series expansion.
+
+68
+00:08:47,451 --> 00:08:50,111
+So if you want.
+
+69
+00:08:50,192 --> 00:08:51,231
+You can generalize it.
+
+70
+00:08:51,871 --> 00:08:52,851
+If it has a rule.
+
+71
+00:08:53,052 --> 00:08:53,692
+Specific rule.
+
+72
+00:08:53,812 --> 00:08:54,692
+Yes it has here.
+
+73
+00:08:55,912 --> 00:08:57,751
+Only all the powers as you see.
+
+74
+00:08:59,412 --> 00:09:01,172
+And so x to 2n plus 1.
+
+75
+00:09:02,072 --> 00:09:03,731
+It's alternating as you see.
+
+76
+00:09:03,831 --> 00:09:04,771
+Minus 1 to n.
+
+77
+00:09:05,451 --> 00:09:06,751
+And 2n plus 1.
+
+78
+00:09:07,751 --> 00:09:08,632
+That number.
+
+79
+00:09:09,132 --> 00:09:10,892
+And the factorial part is the.
+
+80
+00:09:11,032 --> 00:09:12,032
+Related with the n.
+
+81
+00:09:12,091 --> 00:09:12,872
+N plus 1.
+
+82
+00:09:13,312 --> 00:09:13,711
+Factorial.
+
+83
+00:09:13,711 --> 00:09:16,351
+Is the solution of this integral.
+
+84
+00:09:18,451 --> 00:09:20,912
+But in terms of power series presentation.
+
+85
+00:09:30,196 --> 00:09:41,076
+Are you okay? We did this yesterday, but I need to repeat it. It was on the last minute. So, if you have any question, please write me.
+
+86
+00:09:44,467 --> 00:09:45,567
+Or we will continue.
+
+87
+00:09:49,812 --> 00:09:52,512
+Okay, the next one.
+
+88
+00:09:58,292 --> 00:10:05,172
+Find the limit of the sequence cos n plus 1 over n. n is 1 to infinity.
+
+89
+00:10:06,451 --> 00:10:10,851
+What do you think? How can we get the limit of it? Limit of the general term.
+
+90
+00:10:42,323 --> 00:10:48,723
+n is going to infinity, limit, kısmi n plus fon over n.
+
+91
+00:11:09,395 --> 00:11:13,596
+What you get? Okay, anyone else?
+
+92
+00:11:23,539 --> 00:11:35,539
+Evet, of course, I think you have used this rule once you see sine and cosine function and the limit form of it.
+
+93
+00:11:35,539 --> 00:11:41,539
+And if we have an indeterminate form like this.
+
+94
+00:11:41,539 --> 00:11:54,539
+But you can just think, for example, once you put infinity here, normally cosine function is defined for any real number.
+
+95
+00:11:54,539 --> 00:11:59,539
+But we cannot define it. We cannot. It is not a specific value.
+
+96
+00:11:59,539 --> 00:12:04,539
+That's why it's an indeterminate form again, like an indeterminate form.
+
+97
+00:12:04,539 --> 00:12:10,539
+It is a value, but we don't know in infinity. That's why we just say it's between minus one and one.
+
+98
+00:12:10,539 --> 00:12:14,539
+In that case, Sandwich theorem is so useful.
+
+99
+00:12:14,539 --> 00:12:22,539
+Here, cosine n plus one for any n, for any n, we have always between minus one and one.
+
+100
+00:12:22,539 --> 00:12:24,539
+It's not going to infinity.
+
+101
+00:12:24,539 --> 00:12:30,539
+But, and value, but we cannot know at infinity what happens. We don't know. It's oscillating.
+
+102
+00:12:30,539 --> 00:12:37,539
+That's why we just think that, okay, a value we have, but we don't know.
+
+103
+00:12:37,539 --> 00:12:42,539
+Divide with n. Here n is different from zero.
+
+104
+00:12:42,539 --> 00:12:49,539
+And then look. Why Sandwich theorem? If we have such an inequality and right hand side function and left hand side function,
+
+105
+00:12:49,539 --> 00:12:58,539
+if they have the same limit, of course the function between them will have the same limit value always by the Sandwich theorem.
+
+106
+00:12:58,539 --> 00:13:03,539
+1 over n is going to 0, when n is going to infinity.
+
+107
+00:13:03,539 --> 00:13:06,539
+Clearly minus 1 over n is also going to 0.
+
+108
+00:13:06,539 --> 00:13:15,539
+That's why the limit of cosine n plus 1 over n, of course, going to 0, when n is going to infinity.
+
+109
+00:13:15,539 --> 00:13:16,539
+And then look at the infinite.
+
+110
+00:13:16,539 --> 00:13:33,539
+So, that's why the limit of infinite.
+
+111
+00:13:25,203 --> 00:13:29,963
+I think it's easy and clear and I want to continue with the next one.
+
+112
+00:13:32,723 --> 00:13:33,603
+Taylor series.
+
+113
+00:13:36,163 --> 00:13:45,683
+Taylor series generated by f ln at x0 and find the interval of convergence.
+
+114
+00:13:50,004 --> 00:13:54,324
+We did a similar one, ln, 1 plus x over 1 minus x.
+
+115
+00:13:59,187 --> 00:14:03,788
+Don't forget to repeat and look up the examples about Taylor and Maclaurin series.
+
+116
+00:14:29,844 --> 00:14:30,644
+Let's stay together.
+
+117
+00:14:34,515 --> 00:14:40,175
+ln 1 plus x over 1 minus x is this. ln 1 plus x minus ln 1 minus x.
+
+118
+00:14:40,255 --> 00:14:43,216
+We did this before these functions and power series form.
+
+119
+00:14:44,155 --> 00:14:48,615
+Power series form at the same time Macleurin or Tyler at the point 0.
+
+120
+00:14:49,135 --> 00:14:49,775
+They are same.
+
+121
+00:14:50,655 --> 00:14:53,415
+So we can use this.
+
+122
+00:14:54,495 --> 00:14:58,055
+Always we start with, don't forget this formula, it's the geometric series.
+
+123
+00:14:59,155 --> 00:15:04,275
+0 to infinity x to k, when x is less than 1, it is convergent and converges.
+
+124
+00:15:04,275 --> 00:15:07,096
+1 over 1 minus x because a is 1, r is x.
+
+125
+00:15:08,096 --> 00:15:09,235
+Don't forget this.
+
+126
+00:15:09,475 --> 00:15:14,895
+Always remember with it, once you need a power series expansion of such a function,
+
+127
+00:15:16,055 --> 00:15:19,535
+by doing the operations, because always we start with this step
+
+128
+00:15:19,535 --> 00:15:25,076
+and then continue with some different operations on power series,
+
+129
+00:15:25,555 --> 00:15:33,915
+we can have different functions or different forms of power series expansions of the functions.
+
+130
+00:15:34,275 --> 00:15:37,935
+We can start with a function or power series form.
+
+131
+00:15:37,995 --> 00:15:38,735
+It doesn't matter.
+
+132
+00:15:39,115 --> 00:15:39,716
+They are same.
+
+133
+00:15:40,255 --> 00:15:42,015
+They are same at this interval.
+
+134
+00:15:42,775 --> 00:15:43,455
+Don't forget.
+
+135
+00:15:44,435 --> 00:15:47,015
+So just think which operations we need.
+
+136
+00:15:47,155 --> 00:15:47,915
+We did it before.
+
+137
+00:15:48,055 --> 00:15:49,875
+Again, I want to say integration.
+
+138
+00:15:49,875 --> 00:15:51,716
+ln 1 minus x.
+
+139
+00:15:52,195 --> 00:15:56,755
+And we can just change x by with minus x and then get 1 over 1 plus x.
+
+140
+00:15:56,915 --> 00:16:00,255
+Again, and with integration, ln 1 plus x can be obtained.
+
+141
+00:16:00,435 --> 00:16:01,795
+And we did this before.
+
+142
+00:16:01,935 --> 00:16:07,735
+Just get the subtraction of these functions, which is ln 1 plus x over 1 minus x
+
+143
+00:16:07,735 --> 00:16:09,935
+and get the power series form of it.
+
+144
+00:16:11,216 --> 00:16:12,576
+And it was equal to this.
+
+145
+00:16:12,955 --> 00:16:15,295
+Let me look two times this series.
+
+146
+00:16:15,535 --> 00:16:17,815
+We did this in an exercise.
+
+147
+00:16:18,275 --> 00:16:19,315
+I just remember it.
+
+148
+00:16:20,155 --> 00:16:27,055
+And so here, fx is that means the power series form of ln 1 plus x and 1 minus x
+
+149
+00:16:27,055 --> 00:16:28,135
+and the subtraction.
+
+150
+00:16:28,635 --> 00:16:29,975
+It's equal to this one.
+
+151
+00:16:30,535 --> 00:16:31,375
+Two times.
+
+152
+00:16:31,475 --> 00:16:34,475
+Zero to infinite x to 2k plus 1 over 2k plus 1.
+
+153
+00:16:34,475 --> 00:16:35,935
+Okay.
+
+154
+00:16:36,975 --> 00:16:43,135
+We got the power series form or Tyler series of f at the point zero.
+
+155
+00:16:43,455 --> 00:16:45,556
+When it is at the point zero, Tyler and McLaurin.
+
+156
+00:16:45,755 --> 00:16:46,435
+It doesn't matter what.
+
+157
+00:16:46,515 --> 00:16:50,096
+At the same time, Tyler and McLaurin are power series.
+
+158
+00:16:51,716 --> 00:16:51,995
+Okay.
+
+159
+00:16:52,235 --> 00:16:55,275
+And one of them choosing the center always zero.
+
+160
+00:16:55,695 --> 00:17:01,355
+The other one choosing the center sometimes zero, sometimes different from zero.
+
+161
+00:17:01,355 --> 00:17:01,915
+It doesn't matter.
+
+162
+00:17:02,015 --> 00:17:03,115
+It has a general name.
+
+163
+00:17:03,115 --> 00:17:04,375
+That's why.
+
+164
+00:17:04,556 --> 00:17:06,336
+But they are all power series again.
+
+165
+00:17:06,715 --> 00:17:11,536
+Because we have, again, Tyler and McLaurin are specific power series.
+
+166
+00:17:11,935 --> 00:17:17,316
+It has, their terms are according to the derivatives of the function generated by.
+
+167
+00:17:17,836 --> 00:17:20,975
+That's why they are so same structures.
+
+168
+00:17:20,975 --> 00:17:25,395
+I mean, basic structures, power series.
+
+169
+00:17:26,135 --> 00:17:28,596
+Tyler and McLaurin are specific power series.
+
+170
+00:17:29,255 --> 00:17:36,516
+Don't forget, they have some different types of terms related by the derivatives of the function f, if you remember.
+
+171
+00:17:36,796 --> 00:17:37,536
+Just look at them.
+
+172
+00:17:37,576 --> 00:17:38,155
+Don't forget.
+
+173
+00:17:38,155 --> 00:17:40,536
+But here it's at the point zero.
+
+174
+00:17:40,536 --> 00:17:51,735
+So we can just use Tyler series expansion by using the power series expansion of ln 1 plus x and 1 minus x with it.
+
+175
+00:17:51,875 --> 00:17:55,695
+With the help of these functions, we just write the power series form of them.
+
+176
+00:17:55,695 --> 00:17:59,996
+In fact, it's at the same time, Tyler at the point zero.
+
+177
+00:17:59,996 --> 00:18:03,096
+What about the interval of convergence?
+
+178
+00:18:03,096 --> 00:18:05,316
+It's the power series.
+
+179
+00:18:05,475 --> 00:18:08,836
+And we know what to do to get the interval of convergence.
+
+180
+00:18:09,836 --> 00:18:14,036
+Apply the ratio test absolutely and get the interval minus 1 to 1.
+
+181
+00:18:14,576 --> 00:18:16,556
+Clearly, having done these limits.
+
+182
+00:18:16,556 --> 00:18:22,536
+And again, you need to test for the endpoints for this power series.
+
+183
+00:18:23,395 --> 00:18:24,155
+For x is 1.
+
+184
+00:18:24,455 --> 00:18:25,935
+1 over 2k plus 1.
+
+185
+00:18:26,655 --> 00:18:30,516
+Once you see 1 over 2k plus 1, you have to just think directly.
+
+186
+00:18:30,675 --> 00:18:31,375
+It's divergent.
+
+187
+00:18:31,635 --> 00:18:33,115
+I hope you are.
+
+188
+00:18:33,683 --> 00:18:39,163
+Çünkü 1 over k or 1 over n,
+
+189
+00:18:39,163 --> 00:18:41,584
+which is a harmonik and divergent series,
+
+190
+00:18:41,584 --> 00:18:45,983
+and yet the same convergences or divergences.
+
+191
+00:18:45,983 --> 00:18:47,983
+Divergent.
+
+192
+00:18:50,084 --> 00:18:54,783
+For minus 1, we have minus 1 over 2k plus 1.
+
+193
+00:18:54,783 --> 00:18:56,663
+If we multiply it minus 1,
+
+194
+00:18:56,663 --> 00:18:58,783
+it doesn't matter if it is divergent.
+
+195
+00:18:58,783 --> 00:19:01,423
+It costs a multiple of a divergent or convergent.
+
+196
+00:19:01,423 --> 00:19:02,783
+It doesn't matter.
+
+197
+00:19:02,783 --> 00:19:06,084
+The characteristic feature of it will not change.
+
+198
+00:19:06,084 --> 00:19:08,683
+That's why if it is divergent, again divergent.
+
+199
+00:19:08,683 --> 00:19:11,183
+If you multiply with the non-zero term,
+
+200
+00:19:11,183 --> 00:19:13,483
+it doesn't matter, again, it's divergent.
+
+201
+00:19:13,483 --> 00:19:17,683
+So the interval of convergence is open interval of minus 1 and 1,
+
+202
+00:19:17,683 --> 00:19:20,884
+and this is the power series form of the function f.
+
+203
+00:19:20,884 --> 00:19:27,983
+At the same time, it is the Tyler series generated by f at the point x is 0,
+
+204
+00:19:27,983 --> 00:19:30,283
+and this is the interval of convergence.
+
+205
+00:19:30,283 --> 00:19:34,384
+As you see, the same interval of convergence we have like this,
+
+206
+00:19:34,384 --> 00:19:36,683
+the starting series we have.
+
+207
+00:19:36,683 --> 00:19:44,584
+If you have derivative or integration or subtraction,
+
+208
+00:19:44,584 --> 00:19:47,084
+you have again the same interval of convergence.
+
+209
+00:19:47,084 --> 00:19:49,084
+And once you have the operations on power series,
+
+210
+00:19:49,084 --> 00:19:51,584
+only the end points can be different.
+
+211
+00:19:51,584 --> 00:19:56,483
+That means if the starting series, if we have the equivalence,
+
+212
+00:19:56,483 --> 00:20:00,884
+maybe at the last step you will not have open interval always.
+
+213
+00:20:00,884 --> 00:20:04,584
+Just think, even though you have the closed one in the first step,
+
+214
+00:20:04,584 --> 00:20:05,384
+it doesn't matter.
+
+215
+00:20:05,384 --> 00:20:07,884
+But don't forget the same interval, but always.
+
+216
+00:20:07,884 --> 00:20:10,483
+Just think open form.
+
+217
+00:20:10,483 --> 00:20:15,783
+Because at the end points we cannot guess what happens once we have the operations on it.
+
+218
+00:20:15,783 --> 00:20:16,384
+Okay.
+
+219
+00:20:16,384 --> 00:20:19,983
+I hope you understand me and this question.
+
+220
+00:20:19,983 --> 00:20:20,884
+is the first step.
+
+221
+00:20:20,884 --> 00:20:33,084
+I hope you will be able to get the end points.
+
+222
+00:20:31,316 --> 00:20:34,996
+And if you have any problem about this topic, now you can ask me.
+
+223
+00:20:34,996 --> 00:20:39,796
+It's time to ask me and eliminate your problems about the topics.
+
+224
+00:20:39,796 --> 00:20:41,316
+It's a very nice time, I think.
+
+225
+00:20:46,996 --> 00:20:47,536
+Any question?
+
+226
+00:20:59,955 --> 00:21:02,175
+Tamam, devam edelim.
+
+227
+00:21:05,748 --> 00:21:09,307
+Bu sorunla, bu sorunla sadece,
+
+228
+00:21:09,307 --> 00:21:11,307
+bu sorunla,
+
+229
+00:21:11,307 --> 00:21:13,148
+ama bu sorunla,
+
+230
+00:21:13,148 --> 00:21:14,708
+ve bu sorunla,
+
+231
+00:21:14,708 --> 00:21:17,268
+bu sorunla,
+
+232
+00:21:17,268 --> 00:21:20,628
+ve bu sorunla,
+
+233
+00:21:20,628 --> 00:21:24,628
+bu sorunla,
+
+234
+00:21:24,628 --> 00:21:30,067
+ve bu sorunla,
+
+235
+00:21:30,067 --> 00:22:04,228
+bu sorunla,
+
+236
+00:23:06,036 --> 00:23:06,355
+Ok.
+
+237
+00:23:13,652 --> 00:23:15,652
+Let's see it together.
+
+238
+00:23:19,923 --> 00:23:20,423
+Vuk.
+
+239
+00:23:24,084 --> 00:23:26,764
+This is minus 2 cos theta r.
+
+240
+00:23:27,203 --> 00:23:27,964
+This is 1.
+
+241
+00:23:29,764 --> 00:23:31,324
+Outside of r is 1.
+
+242
+00:23:31,683 --> 00:23:33,844
+Inside of minus 2 cos theta.
+
+243
+00:23:34,004 --> 00:23:36,524
+And this region, I hope you have.
+
+244
+00:23:38,163 --> 00:23:41,604
+And now as you see,
+
+245
+00:23:42,084 --> 00:23:44,884
+this question is different.
+
+246
+00:23:44,884 --> 00:23:48,524
+This region is different from the questions that we did yesterday.
+
+247
+00:23:49,663 --> 00:23:51,764
+Yesterday we have the integrals.
+
+248
+00:23:51,764 --> 00:23:55,484
+But in that integrals, in order to evaluate the area,
+
+249
+00:23:55,484 --> 00:23:57,364
+we need two parts of the integrals.
+
+250
+00:23:57,364 --> 00:24:01,004
+Because when theta changing,
+
+251
+00:24:01,004 --> 00:24:06,403
+the distances from the origin was belonging to two different r.
+
+252
+00:24:06,804 --> 00:24:08,484
+That's why two integrals we need.
+
+253
+00:24:09,044 --> 00:24:11,044
+But here, this is a little bit different.
+
+254
+00:24:11,504 --> 00:24:12,663
+In fact, completely different.
+
+255
+00:24:13,364 --> 00:24:15,963
+That's why I just prepared this question for you
+
+256
+00:24:15,963 --> 00:24:17,844
+in order to see the difference between them.
+
+257
+00:24:17,844 --> 00:24:23,604
+Here, the different distances are between two different functions.
+
+258
+00:24:26,124 --> 00:24:27,443
+It's smooth again.
+
+259
+00:24:28,004 --> 00:24:31,784
+But the problem is here, or the difference is here.
+
+260
+00:24:32,524 --> 00:24:37,024
+Once we measure alpha to beta, it doesn't matter.
+
+261
+00:24:37,183 --> 00:24:39,884
+Once we trace the region with alpha to beta,
+
+262
+00:24:39,884 --> 00:24:43,804
+The distances from the origin is not starting from zero.
+
+263
+00:24:44,443 --> 00:24:46,463
+And it's between two different r.
+
+264
+00:24:47,344 --> 00:24:49,064
+First circle to second circle.
+
+265
+00:24:49,704 --> 00:24:54,204
+1 to minus 2 cos theta.
+
+266
+00:24:54,344 --> 00:24:54,504
+Okay.
+
+267
+00:24:55,403 --> 00:24:56,943
+Always sketch these rays.
+
+268
+00:24:57,943 --> 00:24:58,764
+These are rays.
+
+269
+00:24:59,683 --> 00:25:00,004
+Okay.
+
+270
+00:25:01,604 --> 00:25:02,804
+What about the angle?
+
+271
+00:25:02,804 --> 00:25:05,284
+It's starting here.
+
+272
+00:25:05,824 --> 00:25:06,584
+2 pi.
+
+273
+00:25:07,264 --> 00:25:07,963
+Which angle?
+
+274
+00:25:08,443 --> 00:25:11,084
+This is 2 pi over 3, which is intersection angle.
+
+275
+00:25:11,564 --> 00:25:13,963
+With minus 2 cos theta and r is 1.
+
+276
+00:25:14,423 --> 00:25:15,663
+So it's 2 pi over 3.
+
+277
+00:25:16,224 --> 00:25:18,183
+So 2 pi over 3, 2 pi.
+
+278
+00:25:19,183 --> 00:25:24,204
+If you want, you can evaluate one part and multiply with 2.
+
+279
+00:25:24,284 --> 00:25:25,604
+These are symmetric parts.
+
+280
+00:25:25,604 --> 00:25:26,604
+Okay.
+
+281
+00:25:27,504 --> 00:25:30,484
+And then, so I will delete this and then multiply with 2.
+
+282
+00:25:30,624 --> 00:25:32,344
+That's why 2 times 1 over 2.
+
+283
+00:25:33,124 --> 00:25:34,384
+It's a smooth region.
+
+284
+00:25:36,403 --> 00:25:40,403
+The examples that we did yesterday was non-smooth regions.
+
+285
+00:25:40,564 --> 00:25:43,224
+That's why we need to cut into two smooth parts.
+
+286
+00:25:43,644 --> 00:25:44,884
+But here they are smooth.
+
+287
+00:25:45,663 --> 00:25:52,403
+That means distances are with only the same regions.
+
+288
+00:25:52,403 --> 00:25:56,644
+R is 1 to minus 2 cos theta.
+
+289
+00:25:56,884 --> 00:26:00,403
+1 to minus 2 cos theta.
+
+290
+00:26:00,484 --> 00:26:01,484
+Because it starts here.
+
+291
+00:26:02,304 --> 00:26:03,484
+1 to this circle.
+
+292
+00:26:04,183 --> 00:26:04,443
+Okay.
+
+293
+00:26:04,824 --> 00:26:05,484
+That's why.
+
+294
+00:26:05,903 --> 00:26:06,963
+In these cases.
+
+295
+00:26:07,804 --> 00:26:12,163
+It's just like having the substitution of two different areas.
+
+296
+00:26:12,724 --> 00:26:15,644
+That's why we have the substitution of the second powers.
+
+297
+00:26:17,764 --> 00:26:19,084
+The biggest one.
+
+298
+00:26:19,784 --> 00:26:21,104
+Minus 2 cos theta.
+
+299
+00:26:21,104 --> 00:26:23,064
+Smaller 1, 1.
+
+300
+00:26:23,264 --> 00:26:26,104
+That's why minus 2 cos theta square.
+
+301
+00:26:26,504 --> 00:26:28,144
+Minus 1 square.
+
+302
+00:26:30,544 --> 00:26:31,484
+Are you okay?
+
+303
+00:26:31,564 --> 00:26:32,364
+Do you understand it?
+
+304
+00:26:33,184 --> 00:26:34,304
+Do you see the difference?
+
+305
+00:26:46,740 --> 00:26:50,319
+Ok, ok, well done.
+
+306
+00:26:52,980 --> 00:26:57,279
+So, immediately, ah, this was ok.
+
+307
+00:26:58,279 --> 00:27:03,859
+I want to continue with the next one, and the next polar area.
+
+308
+00:27:03,859 --> 00:27:07,539
+I want to continue. Wait for me for exercises 3.
+
+309
+00:27:24,468 --> 00:27:29,488
+Let me look for the other area. Wait.
+
+310
+00:27:32,008 --> 00:27:33,848
+It will be nice because
+
+311
+00:27:33,848 --> 00:27:38,807
+another different case.
+
+312
+00:27:40,327 --> 00:27:41,988
+It must be here.
+
+313
+00:27:46,771 --> 00:27:47,912
+For example, this one.
+
+314
+00:27:49,451 --> 00:28:00,912
+Here it says, find the area of the region that lies inside the circle, 3 cos θ, and kardiyo, r is 1 plus cos θ. Let's see.
+
+315
+00:28:04,660 --> 00:28:09,120
+1 plus cosine theta and 3 cosine theta.
+
+316
+00:28:11,540 --> 00:28:12,720
+Inside of them.
+
+317
+00:28:13,320 --> 00:28:15,680
+Inside of the circle and inside of the cardüe.
+
+318
+00:28:15,820 --> 00:28:16,519
+So this region.
+
+319
+00:28:17,259 --> 00:28:17,380
+Okay.
+
+320
+00:28:18,220 --> 00:28:18,820
+But here.
+
+321
+00:28:19,900 --> 00:28:20,460
+Let's see.
+
+322
+00:28:21,440 --> 00:28:23,080
+Again two symmetric parts.
+
+323
+00:28:23,200 --> 00:28:24,460
+Let's evaluate the first part.
+
+324
+00:28:24,980 --> 00:28:26,460
+This part fully.
+
+325
+00:28:27,300 --> 00:28:28,420
+Zero to pi over two.
+
+326
+00:28:29,019 --> 00:28:29,519
+This region.
+
+327
+00:28:30,620 --> 00:28:31,960
+Angles are alpha to beta.
+
+328
+00:28:32,140 --> 00:28:33,200
+Zero to pi over two.
+
+329
+00:28:33,500 --> 00:28:34,380
+But is it smooth?
+
+330
+00:28:34,660 --> 00:28:35,860
+Let's sketch the race.
+
+331
+00:28:36,980 --> 00:28:39,440
+When theta is changing from zero to pi over two.
+
+332
+00:28:39,900 --> 00:28:41,700
+How can I measure the distances?
+
+333
+00:28:41,920 --> 00:28:43,640
+The distances are related with.
+
+334
+00:28:44,300 --> 00:28:44,940
+Firstly.
+
+335
+00:28:45,340 --> 00:28:45,900
+Carduate.
+
+336
+00:28:46,440 --> 00:28:47,560
+After this angle.
+
+337
+00:28:48,200 --> 00:28:48,620
+Circle.
+
+338
+00:28:49,500 --> 00:28:52,740
+That's why this is the difference between that question and this.
+
+339
+00:28:53,620 --> 00:28:54,860
+It's not a smooth region.
+
+340
+00:28:55,759 --> 00:28:59,300
+Different functions of r we have according to theta.
+
+341
+00:28:59,759 --> 00:29:01,380
+That's why two integrals we need.
+
+342
+00:29:02,380 --> 00:29:03,820
+So in the first part.
+
+343
+00:29:03,820 --> 00:29:06,780
+Zero to this angle is the intersection angle.
+
+344
+00:29:07,460 --> 00:29:08,940
+It's pi over three.
+
+345
+00:29:09,580 --> 00:29:10,720
+Zero to pi over three.
+
+346
+00:29:11,360 --> 00:29:12,040
+Cardioid.
+
+347
+00:29:12,800 --> 00:29:14,360
+So zero to pi over three.
+
+348
+00:29:14,480 --> 00:29:15,100
+Cardioid.
+
+349
+00:29:16,100 --> 00:29:16,980
+R square.
+
+350
+00:29:18,140 --> 00:29:19,560
+Pi over three to pi over two.
+
+351
+00:29:20,080 --> 00:29:20,480
+Circle.
+
+352
+00:29:21,340 --> 00:29:22,680
+Which is three cosine theta.
+
+353
+00:29:22,680 --> 00:29:25,240
+Now do you understand it?
+
+354
+00:29:25,240 --> 00:29:46,320
+Do you understand it?
+
+355
+00:29:34,644 --> 00:29:38,644
+Bu yüzden de bu region için gerekli.
+
+356
+00:29:38,644 --> 00:29:42,644
+Bekleyin, bu region ve
+
+357
+00:29:42,644 --> 00:29:44,644
+ve ne yapabilirsiniz.
+
+358
+00:29:44,644 --> 00:29:46,644
+Öncelikle, bu şekilde,
+
+359
+00:29:46,644 --> 00:29:47,644
+ve bu şekilde,
+
+360
+00:29:47,644 --> 00:30:30,644
+bu şekilde,
+
+361
+00:30:30,644 --> 00:30:32,644
+let's continue a little bit,
+
+362
+00:30:32,644 --> 00:30:33,644
+for the,
+
+363
+00:30:33,644 --> 00:30:34,644
+uh,
+
+364
+00:30:34,644 --> 00:30:35,644
+limit,
+
+365
+00:30:35,644 --> 00:30:37,644
+continue to the next week,
+
+366
+00:30:37,644 --> 00:30:41,644
+next week today,
+
+367
+00:30:41,644 --> 00:30:42,644
+yes,
+
+368
+00:30:42,644 --> 00:30:43,644
+it was the last,
+
+369
+00:30:43,644 --> 00:30:44,644
+uh,
+
+370
+00:30:44,644 --> 00:30:46,644
+Thursday,
+
+371
+00:30:46,644 --> 00:30:48,644
+I'm sorry,
+
+372
+00:30:48,644 --> 00:30:49,644
+oh yes,
+
+373
+00:30:49,644 --> 00:30:50,644
+Thursday,
+
+374
+00:30:50,644 --> 00:30:51,644
+uh,
+
+375
+00:30:51,644 --> 00:30:52,644
+I did examples,
+
+376
+00:30:52,644 --> 00:30:53,644
+uh,
+
+377
+00:30:53,644 --> 00:30:54,644
+about,
+
+378
+00:30:54,644 --> 00:30:56,644
+it was at the end of the,
+
+379
+00:30:56,644 --> 00:30:58,644
+several variable function,
+
+380
+00:30:58,644 --> 00:30:59,644
+topic,
+
+381
+00:30:59,644 --> 00:31:00,644
+and,
+
+382
+00:31:00,644 --> 00:31:01,644
+I had a lot of,
+
+383
+00:31:01,644 --> 00:31:02,644
+uh,
+
+384
+00:31:02,644 --> 00:31:03,644
+continuity and limit problems,
+
+385
+00:31:03,644 --> 00:31:04,644
+okay,
+
+386
+00:31:04,644 --> 00:31:05,644
+you can just look up them,
+
+387
+00:31:05,644 --> 00:31:07,644
+I will just not repeat them,
+
+388
+00:31:07,644 --> 00:31:08,644
+they are on my page,
+
+389
+00:31:08,644 --> 00:31:09,644
+you can just study,
+
+390
+00:31:09,644 --> 00:31:10,644
+and so,
+
+391
+00:31:10,644 --> 00:31:13,644
+I want to continue the several variable functions,
+
+392
+00:31:13,644 --> 00:31:14,644
+uh,
+
+393
+00:31:14,644 --> 00:31:15,644
+some limits,
+
+394
+00:31:15,644 --> 00:31:16,644
+uh,
+
+395
+00:31:16,644 --> 00:31:17,644
+maybe a little bit,
+
+396
+00:31:17,644 --> 00:31:18,644
+continuity problems,
+
+397
+00:31:18,644 --> 00:31:19,644
+but,
+
+398
+00:31:19,644 --> 00:31:20,644
+uh,
+
+399
+00:31:20,644 --> 00:31:21,644
+also,
+
+400
+00:31:21,644 --> 00:31:22,644
+domains,
+
+401
+00:31:22,644 --> 00:31:23,644
+and then,
+
+402
+00:31:23,644 --> 00:31:24,644
+continue with the lines and planes and space,
+
+403
+00:31:24,644 --> 00:31:29,644
+and vector value functions and the tangent vectors or tangent lines.
+
+404
+00:31:29,644 --> 00:31:31,644
+Let's look up this question.
+
+405
+00:31:31,644 --> 00:31:38,644
+What should we do here to evaluate zero, zero?
+
+406
+00:31:38,644 --> 00:31:39,644
+zero,
+
+407
+00:31:39,644 --> 00:31:40,644
+zero.
+
+408
+00:31:40,644 --> 00:31:42,644
+What do you think?
+
+409
+00:31:54,259 --> 00:31:55,059
+Do it and tell me.
+
+410
+00:33:12,132 --> 00:33:13,132
+Bu bir soru.
+
+411
+00:33:13,132 --> 00:33:15,132
+Ne yapalım şimdi?
+
+412
+00:33:35,859 --> 00:33:40,979
+Evet, of course.
+
+413
+00:33:41,079 --> 00:33:43,139
+You will just multiply with the conjugate of it.
+
+414
+00:33:43,719 --> 00:33:47,099
+I couldn't see your chat part.
+
+415
+00:33:47,219 --> 00:33:47,639
+I'm sorry.
+
+416
+00:33:48,459 --> 00:33:49,919
+That's why I'm waiting for you.
+
+417
+00:33:50,679 --> 00:33:50,859
+Okay.
+
+418
+00:33:51,619 --> 00:33:52,419
+Yes, of course.
+
+419
+00:33:52,539 --> 00:33:53,259
+And minus 2.
+
+420
+00:33:53,359 --> 00:33:53,939
+Yes, you're right.
+
+421
+00:33:54,259 --> 00:33:55,979
+Multiply with the conjugate and divide.
+
+422
+00:33:56,599 --> 00:33:57,359
+And get this.
+
+423
+00:33:58,099 --> 00:34:04,279
+That means this way, once we have indeterminate form, if it is possible, we are using algebraic operations.
+
+424
+00:34:04,279 --> 00:34:08,859
+Factorizing, multiplying with conjugate and dividing like this.
+
+425
+00:34:14,867 --> 00:34:23,067
+Mada baktık continuu, continuu, f, this function at the point zero. At the point zero, it's zero.
+
+426
+00:34:28,052 --> 00:34:31,731
+ve yi is different from 0, it's x² sin 1 over y.
+
+427
+00:34:59,476 --> 00:35:01,115
+You have to evaluate the limit of it.
+
+428
+00:35:02,056 --> 00:35:04,276
+If the limit is equal to 0, it's okay.
+
+429
+00:35:05,456 --> 00:35:06,596
+The function is defined.
+
+430
+00:35:07,936 --> 00:35:09,576
+Secondly, the limit must exist.
+
+431
+00:35:10,215 --> 00:35:13,155
+Thirdly, that limit must be the value of the function at that point.
+
+432
+00:35:14,576 --> 00:35:22,416
+If f has a limit at 0, 0, it must be 0 to be continuous at this point.
+
+433
+00:35:24,135 --> 00:35:26,135
+x squared sine 1 over y.
+
+434
+00:35:27,635 --> 00:35:28,476
+Be careful.
+
+435
+00:35:29,476 --> 00:35:31,195
+Off sine.
+
+436
+00:36:24,916 --> 00:36:26,356
+What do you think? Let's continue.
+
+437
+00:36:48,980 --> 00:36:50,000
+Ok, let's see.
+
+438
+00:36:55,347 --> 00:36:58,268
+Evet, çünkü 0.
+
+439
+00:36:59,347 --> 00:37:02,407
+Bu bir sanderer theorem.
+
+440
+00:37:02,648 --> 00:37:11,688
+Sine 1 over y.
+
+441
+00:37:11,688 --> 00:37:14,507
+Y'e always between minus 1 and 1.
+
+442
+00:37:15,427 --> 00:37:18,867
+We need to get the limit of x squared times sine 1 over y.
+
+443
+00:37:18,867 --> 00:37:23,587
+Here we can use multiply with minus x squared to both sides.
+
+444
+00:37:25,347 --> 00:37:29,007
+Sorry, x squared only not minus x squared.
+
+445
+00:37:29,427 --> 00:37:30,827
+Multiply with x squared.
+
+446
+00:37:32,027 --> 00:37:32,967
+And then, look.
+
+447
+00:37:35,567 --> 00:37:39,728
+It's going to 0 when x y is going to 0, 0.
+
+448
+00:37:40,648 --> 00:37:45,168
+So, these functions are both going to 0 at this point, at the origin.
+
+449
+00:37:45,507 --> 00:37:52,407
+So does this function x squared sine 1 over y at the origin by Sanderer theorem is going to 0.
+
+450
+00:37:52,407 --> 00:37:56,027
+0 is the ruler of the function at the same time, f 0, 0.
+
+451
+00:37:56,608 --> 00:37:59,367
+That's why the function is continuous at this point.
+
+452
+00:37:59,367 --> 00:38:20,367
+So, let's get started.
+
+453
+00:38:14,324 --> 00:38:14,644
+Ok?
+
+454
+00:38:26,547 --> 00:38:27,867
+Do you understand it? Any question?
+
+455
+00:38:30,107 --> 00:38:30,547
+Okay.
+
+456
+00:38:37,043 --> 00:39:07,043
+Bu sorunla, bu sorunla, bu sorunla, bu sorunla, bu sorunla, bu sorunla, bu sorunla, bu sorunla, bu sorunla, bu sorunla, bu sorunla, bu sorunla, bu sorunla, bu sorunla, bu sorunla, bu sorunla, bu sorunla, bu sorunla, bu sorunla, bu sorunla, bu sorunla, bu sorunla, bu sorunla, bu sorunla, bu sorunla, bu sorunla, bu sorunla, bu sorunla, bu sorunla, bu sorunla, bu sorunla, bu sorunla, bu sorunla, bu sorunla, bu sorunla, bu sorunla, bu sorunla, bu sorunla, bu sorunla, bu sorunla, bu sorunla, bu sorunla, bu sorunla, bu sorunla, bu sorun
+
+457
+00:39:07,043 --> 00:39:16,043
+We just specify the equation of this curve with parametric form. It's a vector value function. Every component is the function of the parameter.
+
+458
+00:39:17,603 --> 00:39:28,844
+But it says parametric equations on the tangent line. Line equation is asked. And just think on three-dimensional space. What do we need to write the line equation?
+
+459
+00:39:53,876 --> 00:39:58,276
+No, i plus k is a vector, it's a custom vector.
+
+460
+00:39:59,536 --> 00:40:08,396
+Here, line equation, x is blah, blah, blah, y is blah, blah, blah in terms of t, just remember, x, y, z in terms of t.
+
+461
+00:40:09,056 --> 00:40:12,416
+Parametric equations of a line, line equation in space.
+
+462
+00:40:15,236 --> 00:40:16,756
+And not the vector.
+
+463
+00:40:16,756 --> 00:40:24,476
+If we have the derivative, derivative of this vector, it's a tangent vector.
+
+464
+00:40:25,536 --> 00:40:28,136
+And I think maybe you evaluated that t is zero.
+
+465
+00:40:52,659 --> 00:41:00,739
+[öğrenci], but also you need to write some functions of t to x, y, z. This is only a point.
+
+466
+00:41:34,164 --> 00:41:41,284
+Tamam, atabak, it is a tangent vector, on a tangent vector.
+
+467
+00:41:42,744 --> 00:41:47,384
+So, tell me, what do we need to write a line equation in space?
+
+468
+00:41:47,744 --> 00:41:49,304
+Line equation in space.
+
+469
+00:41:50,224 --> 00:41:51,444
+What do we need?
+
+470
+00:41:58,900 --> 00:42:01,420
+Noh is two-dimensional cartesan plane.
+
+471
+00:42:03,860 --> 00:42:05,559
+We are three-dimensional space.
+
+472
+00:42:15,315 --> 00:42:17,995
+Çünkü bu konuda bir konuda var.
+
+473
+00:42:18,415 --> 00:42:19,096
+Ve space var.
+
+474
+00:42:19,096 --> 00:42:20,096
+3D'ye deymiştir.
+
+475
+00:42:23,096 --> 00:42:26,515
+Bu konuda bir konuda var.
+
+476
+00:42:26,515 --> 00:42:28,775
+Bir konuda bir konuda var.
+
+477
+00:42:29,335 --> 00:42:36,055
+Bir konuda var.
+
+478
+00:42:36,955 --> 00:42:39,275
+Ve bir konuda var.
+
+479
+00:42:53,139 --> 00:42:56,259
+Derivative of it of course tangent vector.
+
+480
+00:42:56,799 --> 00:42:57,019
+Yes.
+
+481
+00:42:57,819 --> 00:43:06,199
+R' is sin t cos t t squared minus cos t becomes 2 to plus sin t plus e to t k.
+
+482
+00:43:06,659 --> 00:43:08,659
+This is the tangent vector of this curve.
+
+483
+00:43:08,759 --> 00:43:16,859
+At the point zero, like you said, i plus k is the tangent vector of this curve at the point zero.
+
+484
+00:43:16,859 --> 00:43:24,400
+Now, on this direction at the same time, if you are trying to write the line equation, this is vector only.
+
+485
+00:43:24,879 --> 00:43:30,440
+If you want to write the line equation, you need a parallel direction and a point.
+
+486
+00:43:30,960 --> 00:43:36,480
+Parallel direction is at the same time tangent vector because tangent vector and the line are parallel.
+
+487
+00:43:36,819 --> 00:43:38,519
+They are on the same direction.
+
+488
+00:43:39,299 --> 00:43:40,879
+Only the point you need.
+
+489
+00:43:40,879 --> 00:43:43,159
+Which point for t is zero?
+
+490
+00:43:43,420 --> 00:43:47,859
+Because this tangent line is at the point t is zero.
+
+491
+00:43:48,279 --> 00:43:51,699
+So let's see for the parameter t is zero, which point we have.
+
+492
+00:43:52,099 --> 00:44:00,259
+Just specify at the point y substituting t is zero to x y is that sin t t squared minus cos t e to t.
+
+493
+00:44:00,759 --> 00:44:03,079
+Substitute t is zero here and choose the point.
+
+494
+00:44:03,519 --> 00:44:04,659
+That means get the point.
+
+495
+00:44:05,359 --> 00:44:07,559
+x is zero, y is minus one, z is one.
+
+496
+00:44:07,559 --> 00:44:11,679
+At that point, we just sketched tangent vector and the tangent line.
+
+497
+00:44:12,460 --> 00:44:13,480
+This point is this.
+
+498
+00:44:13,880 --> 00:44:15,199
+This point is on this line.
+
+499
+00:44:15,880 --> 00:44:17,839
+And this is the parallel direction of the line.
+
+500
+00:44:18,000 --> 00:44:19,579
+So we can write x's.
+
+501
+00:44:19,719 --> 00:44:25,880
+Just remember, x zero plus at y zero plus bt z zero plus ct.
+
+502
+00:44:26,299 --> 00:44:29,579
+When a, b, c are the parallel direction of the line.
+
+503
+00:44:29,579 --> 00:44:32,539
+Here, i plus k.
+
+504
+00:44:33,119 --> 00:44:35,139
+So one, zero, one.
+
+505
+00:44:35,699 --> 00:44:36,799
+j is zero because.
+
+506
+00:44:37,500 --> 00:44:44,879
+So zero plus one times t minus one plus zero times t because j is zero.
+
+507
+00:44:46,079 --> 00:44:49,480
+That is one plus one times t.
+
+508
+00:44:50,039 --> 00:44:51,799
+So this is the parametric equation.
+
+509
+00:44:51,799 --> 00:45:00,619
+These are the parametric equations of the tangent line of the parametrically given or in vector form vector valid function.
+
+510
+00:45:07,507 --> 00:45:09,367
+Now are you okay? Do you understand it?
+
+511
+00:45:34,996 --> 00:45:37,436
+Any questions? Are you okay? Have you remembered it?
+
+512
+00:45:38,276 --> 00:45:45,076
+I wish you had looked up the topics before this course because we are having the exercises.
+
+513
+00:45:48,916 --> 00:45:49,276
+Okay.
+
+514
+00:45:51,056 --> 00:45:53,096
+So, next question.
+
+515
+00:45:54,996 --> 00:45:57,436
+Domain set of the function of two variables.
+
+516
+00:45:58,376 --> 00:45:59,036
+Let's do it.
+
+517
+00:47:23,411 --> 00:47:29,851
+Okay, under these conditions, what kind of a region, of course, a two-dimensional region you need?
+
+518
+00:47:33,972 --> 00:47:34,872
+Try to sketch it.
+
+519
+00:47:45,235 --> 00:47:47,475
+Be careful, ln x minus 2.
+
+520
+00:47:48,975 --> 00:47:51,695
+Only the problem is different from 0.
+
+521
+00:47:51,815 --> 00:47:52,855
+Non-0 it must be.
+
+522
+00:47:53,155 --> 00:47:54,016
+It can be negative.
+
+523
+00:47:54,715 --> 00:47:55,395
+No problem.
+
+524
+00:47:55,596 --> 00:48:00,315
+Only just say that ln x minus 2 must be different from 0.
+
+525
+00:48:00,955 --> 00:48:04,036
+So apply the condition that you need for this case.
+
+526
+00:48:05,795 --> 00:48:08,195
+And also its square root must be positive.
+
+527
+00:48:08,195 --> 00:48:12,655
+That means x minus y square is greater than and equal to 0.
+
+528
+00:48:12,655 --> 00:48:15,195
+So x is greater than or equal to y square.
+
+529
+00:48:15,635 --> 00:48:16,655
+So what is it?
+
+530
+00:48:25,588 --> 00:48:26,628
+Let's do it together.
+
+531
+00:48:29,588 --> 00:48:31,028
+Look, this one.
+
+532
+00:48:33,188 --> 00:48:34,988
+X minus y squared is positive.
+
+533
+00:48:35,168 --> 00:48:37,748
+That means, X is greater than equal to y squared.
+
+534
+00:48:37,868 --> 00:48:38,928
+What is x is y squared?
+
+535
+00:48:39,048 --> 00:48:39,768
+It's a parabola.
+
+536
+00:48:43,428 --> 00:48:44,428
+What do we need?
+
+537
+00:48:44,928 --> 00:48:46,108
+X minus 2.
+
+538
+00:48:46,948 --> 00:48:51,048
+For the well-defined Alain function,
+
+539
+00:48:51,428 --> 00:48:52,928
+X minus 2 is positive.
+
+540
+00:48:53,448 --> 00:48:54,908
+And also, it must be 9, 0.
+
+541
+00:48:55,768 --> 00:48:58,668
+To make it 9, 0, it must be different from 3.
+
+542
+00:48:58,827 --> 00:49:00,908
+Because at ln, 1, only it's 0.
+
+543
+00:49:02,307 --> 00:49:04,327
+So, X must be different from 3.
+
+544
+00:49:05,248 --> 00:49:07,428
+But, X must be greater than 2.
+
+545
+00:49:08,248 --> 00:49:10,688
+And the intersection of these three cases.
+
+546
+00:49:12,827 --> 00:49:14,488
+Normally, this parabola,
+
+547
+00:49:15,148 --> 00:49:17,288
+when X is greater than y squared, okay?
+
+548
+00:49:18,528 --> 00:49:21,608
+But, X is greater than 2.
+
+549
+00:49:22,068 --> 00:49:24,268
+When X is greater than 2, X cannot be 3.
+
+550
+00:49:24,268 --> 00:49:26,288
+That's why this line is out.
+
+551
+00:49:27,508 --> 00:49:29,208
+And X is outside.
+
+552
+00:49:29,448 --> 00:49:30,768
+Again, it's not included.
+
+553
+00:49:31,307 --> 00:49:32,307
+So, these regions.
+
+554
+00:49:32,307 --> 00:49:33,307
+And the other regions.
+
+555
+00:49:33,307 --> 00:49:49,008
+So, these regions.
+
+556
+00:49:50,324 --> 00:49:51,003
+Are you okay?
+
+557
+00:50:12,724 --> 00:50:14,344
+Any question? I think it's clear.
+
+558
+00:50:15,903 --> 00:50:16,443
+Easy.
+
+559
+00:50:16,984 --> 00:50:17,403
+Okay.
+
+560
+00:50:18,344 --> 00:50:20,164
+So, continue with the next one.
+
+561
+00:50:20,624 --> 00:50:21,624
+What about this limit?
+
+562
+00:50:22,664 --> 00:50:27,604
+X and y is 0 from right and 2 from left and this function.
+
+563
+00:50:28,264 --> 00:50:28,784
+What to do?
+
+564
+00:51:38,739 --> 00:51:43,739
+Evet, yine de
+
+565
+00:51:43,739 --> 00:51:45,739
+mertiple ve
+
+566
+00:51:45,739 --> 00:51:46,739
+o
+
+567
+00:51:46,739 --> 00:51:48,739
+sqrt
+
+568
+00:51:49,739 --> 00:51:50,739
+ile
+
+569
+00:51:50,739 --> 00:52:08,739
+yi
+
+570
+00:52:14,164 --> 00:52:28,164
+Yine devam edelim.
+
+571
+00:53:52,724 --> 00:53:55,264
+Remember our cosine function? Ellen is okay.
+
+572
+00:54:06,708 --> 00:54:07,708
+Evet, doğru.
+
+573
+00:54:28,179 --> 00:54:32,339
+Ok, let's see, I don't think so.
+
+574
+00:54:33,899 --> 00:54:36,799
+That is not only between minus 1 and 1, I mean.
+
+575
+00:54:38,819 --> 00:54:44,659
+Arcosine y over x squared is between minus 1 and 1 arcosine function
+
+576
+00:54:44,659 --> 00:54:46,599
+because it's defined for this interval.
+
+577
+00:54:47,440 --> 00:54:49,199
+Of course, x is different from 0.
+
+578
+00:54:50,460 --> 00:54:54,379
+And also for ln, 1 minus x squared, it must be positive.
+
+579
+00:54:54,379 --> 00:54:59,679
+1 minus x squared is greater than 0 because it's defined for positive functions and values.
+
+580
+00:54:59,679 --> 00:55:00,159
+I'm sorry.
+
+581
+00:55:01,659 --> 00:55:06,480
+So, for this interval, x is different from 0.
+
+582
+00:55:06,559 --> 00:55:08,759
+So, multiply with x squared, so get.
+
+583
+00:55:09,319 --> 00:55:11,819
+What is between x squared and minus x squared?
+
+584
+00:55:12,339 --> 00:55:14,799
+These two parabolas between them.
+
+585
+00:55:15,419 --> 00:55:19,159
+Less than x squared, greater than minus x squared.
+
+586
+00:55:19,539 --> 00:55:22,539
+But, you are between minus 1 and 1.
+
+587
+00:55:22,539 --> 00:55:25,399
+Because 1 minus x squared is positive.
+
+588
+00:55:25,940 --> 00:55:27,779
+So, x is between minus 1 and 1.
+
+589
+00:55:28,299 --> 00:55:31,500
+So, intersection of all of them, x is positive.
+
+590
+00:55:32,500 --> 00:55:34,099
+I'm sorry, x is different from 0.
+
+591
+00:55:35,179 --> 00:55:37,480
+Y is between x squared and minus x squared.
+
+592
+00:55:37,699 --> 00:55:39,379
+And x is between minus 1 and 1.
+
+593
+00:55:39,480 --> 00:55:41,019
+And such a region you must have.
+
+594
+00:55:42,000 --> 00:55:44,519
+How can you get only between minus 1 and 1?
+
+595
+00:55:44,519 --> 00:55:45,519
+And so, x is between minus 1 and 1 and 1.
+
+596
+00:55:45,519 --> 00:55:55,519
+So, x is between minus 1 and 1 and 1.
+
+597
+00:55:55,519 --> 00:55:58,519
+So, x is between minus 1 and 1 and 1 and 1.
+
+598
+00:55:58,519 --> 00:55:59,519
+So, x is between minus 1 and 1 and 1 and 1 and 1.
+
+599
+00:55:53,155 --> 00:55:56,596
+X'i between minus 1 and 1, y'i between minus 1 and 1.
+
+600
+00:55:57,215 --> 00:55:58,255
+I couldn't understand.
+
+601
+00:56:00,795 --> 00:56:02,335
+X'i and y'i together, no.
+
+602
+00:56:03,375 --> 00:56:05,855
+Y'i x'i between minus 1 and 1.
+
+603
+00:56:05,855 --> 00:56:06,795
+We need.
+
+604
+00:56:13,043 --> 00:56:14,063
+Are you okay now?
+
+605
+00:56:18,804 --> 00:56:23,204
+İntro ile x2 ile
+
+606
+00:56:26,643 --> 00:56:28,683
+No, we cannot find anything more.
+
+607
+00:56:29,083 --> 00:56:32,743
+Only this one, because y over x squared is a two-variable function,
+
+608
+00:56:32,903 --> 00:56:39,083
+and it's only an interval, which means you can just write only y with the functions of x.
+
+609
+00:56:39,783 --> 00:56:44,103
+Remember the previous exercises that we did in several variable functions.
+
+610
+00:56:44,103 --> 00:56:48,863
+We generally have like this, between two lines, for example.
+
+611
+00:56:49,563 --> 00:56:51,043
+No, you don't need this.
+
+612
+00:56:52,283 --> 00:56:55,443
+Why you are trying to get the interval of y?
+
+613
+00:56:55,443 --> 00:57:02,023
+Why is between, according to the values of x, functions of x, and x is between minus 1 and 1?
+
+614
+00:57:02,723 --> 00:57:05,163
+And according to this question, we have this case.
+
+615
+00:57:06,423 --> 00:57:08,823
+Look up the other exercises, we did lots of.
+
+616
+00:57:10,263 --> 00:57:14,503
+Between two lines, between two parabolas, between two circles we get,
+
+617
+00:57:14,843 --> 00:57:19,603
+because y and x together in an interval more generally, according to the type of the function.
+
+618
+00:57:19,603 --> 00:57:28,743
+Do not always try to find, I want to get y or x in terms of only constant numbers.
+
+619
+00:57:28,903 --> 00:57:30,583
+No, it's a two-variable function.
+
+620
+00:57:31,703 --> 00:57:36,043
+Y can be between two different functions of x only, for example.
+
+621
+00:57:37,543 --> 00:57:38,483
+Don't think that.
+
+622
+00:57:39,283 --> 00:57:40,343
+Don't think like this.
+
+623
+00:57:40,343 --> 00:57:43,143
+I hope you understand me.
+
+624
+00:58:01,523 --> 00:58:02,903
+[öğrenci], are you okay?
+
+625
+00:58:09,396 --> 00:58:11,176
+Okay, nice.
+
+626
+00:58:11,696 --> 00:58:13,816
+It's not like single variable functions.
+
+627
+00:58:13,916 --> 00:58:20,676
+For single variable functions, yes, possibly we find an interval or union of some intervals, etc.
+
+628
+00:58:20,916 --> 00:58:24,056
+But here, two variables and region, anyhow.
+
+629
+00:59:23,347 --> 00:59:26,307
+Tell me what you have in your mind, what to do here.
+
+630
+01:00:16,884 --> 01:00:24,884
+Evet, ne düşünüyorsun? Bence bu? Bence bu normal direction? Bence bu plana, iki lini var.
+
+631
+01:00:30,420 --> 01:00:34,400
+[öğrenci], you are trying to get the intersection point.
+
+632
+01:00:38,068 --> 01:00:40,508
+Why are you choosing the intersection point?
+
+633
+01:00:45,012 --> 01:00:49,472
+Maybe we can have, no problem, but I'm just trying to understand what you think.
+
+634
+01:00:51,711 --> 01:01:02,512
+Yes, cross product of what? I think so. Cross product generally is used to get the vertical direction or the normal direction to the vectors in the beginning.
+
+635
+01:01:03,792 --> 01:01:07,711
+Cross product of what? Which vectors?
+
+636
+01:01:11,603 --> 01:01:13,783
+Which x and y values? Are you sure?
+
+637
+01:01:39,092 --> 01:02:01,271
+Arkadaşlar, keşke biraz baksaydınız konulara. Uygulama yapıyoruz, haftaya başka bir şey yapacağım. Keşke biraz baksaydınız. Her şeyi sıfırdan anlatma ihtiyacı duyuyorum şu anda. Haftaya baktığınızda da yeni konuya geçmiş olacağım. Öyle de ilginç bir durum var. Ama bu hafta uygulama ayırmak zorundaydım.
+
+638
+01:02:03,311 --> 01:02:07,592
+Bu konunun üzerinden geçil çok olmadı ama tamamen unutmuşsunuz diye düşünüyorum.
+
+639
+01:02:11,699 --> 01:02:12,339
+Let's see.
+
+640
+01:02:15,739 --> 01:02:16,919
+V1 and V2.
+
+641
+01:02:17,639 --> 01:02:18,399
+Four lines.
+
+642
+01:02:18,879 --> 01:02:20,980
+Always we have a parallel direction on it.
+
+643
+01:02:21,639 --> 01:02:26,179
+And we can understand the directions of the lines from the coefficients of t.
+
+644
+01:02:26,619 --> 01:02:29,359
+The direction of the first line is 1.
+
+645
+01:02:29,919 --> 01:02:32,919
+1 and minus 1 is the direction of the line.
+
+646
+01:02:32,919 --> 01:02:35,500
+And the point on it minus 1.
+
+647
+01:02:35,779 --> 01:02:36,639
+2 and 1.
+
+648
+01:02:36,839 --> 01:02:36,919
+Okay.
+
+649
+01:02:37,739 --> 01:02:38,639
+Second line.
+
+650
+01:02:38,639 --> 01:02:41,960
+The direction of second line is minus 4.
+
+651
+01:02:42,359 --> 01:02:43,939
+2 and minus 2.
+
+652
+01:02:44,359 --> 01:02:45,559
+A point on it.
+
+653
+01:02:45,939 --> 01:02:47,559
+1, 1 and 2.
+
+654
+01:02:50,019 --> 01:02:53,279
+So these two lines are on the same plane.
+
+655
+01:02:53,619 --> 01:03:00,500
+So the normal direction to the plane where they are placed, of course, can be obtained by the cross product of their directions.
+
+656
+01:03:01,619 --> 01:03:06,659
+Because the cross product is orthogonal to both these vectors, V1 and V2.
+
+657
+01:03:06,659 --> 01:03:13,659
+That's why we need this normal direction by the cross product of their directions of these two lines.
+
+658
+01:03:13,659 --> 01:03:18,639
+And we get 6j plus 6k.
+
+659
+01:03:19,119 --> 01:03:20,179
+Normal of the plane.
+
+660
+01:03:20,739 --> 01:03:21,559
+What do we need?
+
+661
+01:03:22,019 --> 01:03:22,579
+A point.
+
+662
+01:03:23,519 --> 01:03:25,339
+Points we can easily find.
+
+663
+01:03:25,579 --> 01:03:28,960
+For example, minus 1, 2, 1 is the point on the L1.
+
+664
+01:03:29,239 --> 01:03:32,219
+Or 1, 1 and 2 is another point on L2.
+
+665
+01:03:32,299 --> 01:03:33,399
+They are on the same plane.
+
+666
+01:03:33,779 --> 01:03:34,980
+Any point you can choose.
+
+667
+01:03:34,980 --> 01:03:42,659
+Think that minus 1, 2 and 1 point on the first line is already on the same plane.
+
+668
+01:03:43,259 --> 01:03:48,179
+So plane equation is 0 times x plus 1.
+
+669
+01:03:48,839 --> 01:03:51,199
+6 times y minus 2.
+
+670
+01:03:51,799 --> 01:03:55,639
+6 times z minus 1 is equal to 0.
+
+671
+01:03:55,859 --> 01:03:58,480
+It's the plane equation on the space.
+
+672
+01:03:58,480 --> 01:04:02,039
+Now do you remember it?
+
+673
+01:04:02,259 --> 01:04:02,819
+Are you okay?
+
+674
+01:04:02,819 --> 01:04:23,299
+Okay.
+
+675
+01:04:30,612 --> 01:04:31,331
+Are you okay?
+
+676
+01:04:35,892 --> 01:04:38,672
+Today I couldn't see the notifications, I'm sorry.
+
+677
+01:04:40,372 --> 01:04:42,512
+I mean, ah yes.
+
+678
+01:04:43,632 --> 01:04:44,012
+Okay.
+
+679
+01:04:53,876 --> 01:04:56,856
+You are right [öğrenci], your solution.
+
+680
+01:05:00,016 --> 01:05:01,816
+And yes, okay, let's continue.
+
+681
+01:05:02,976 --> 01:05:03,656
+I think so.
+
+682
+01:05:05,916 --> 01:05:19,716
+Again, as related with tangent line equation again, for a curve RT, L and T, T minus 1 over T plus 2, and L and T for IJK at point T is 1.
+
+683
+01:05:20,096 --> 01:05:21,656
+Let's do it, I am waiting for you.
+
+684
+01:05:21,656 --> 01:05:25,096
+We did a similar exercise, and now you can do it.
+
+685
+01:05:25,296 --> 01:05:27,896
+For line equation, you need a direction and a point.
+
+686
+01:05:30,016 --> 01:05:35,796
+And it's the direction on tangent line, so tangent vector is the direction vector will be.
+
+687
+01:05:38,076 --> 01:05:43,996
+And the point is T is 1, you will just choose for T is 1 specified point for X, Y, Z.
+
+688
+01:05:44,676 --> 01:05:47,396
+And then write the line equation in parametric form.
+
+689
+01:05:48,056 --> 01:05:48,396
+I am waiting.
+
+690
+01:06:45,492 --> 01:06:45,832
+Hmm.
+
+691
+01:06:57,331 --> 01:07:00,551
+Ah, infinity? Really? Are you sure?
+
+692
+01:07:03,311 --> 01:07:05,192
+You will, it is one, not zero.
+
+693
+01:07:17,907 --> 01:07:20,907
+Ok, 284, 211.
+
+694
+01:07:49,619 --> 01:07:59,579
+Hmm, what is this? X is 1, y is 1 over 3, z is 1. Is it the point? 40 is 1, or what is it?
+
+695
+01:08:06,708 --> 01:08:11,268
+Ah, yes, okay. That means, u mean is the tangent vector.
+
+696
+01:08:14,327 --> 01:08:16,728
+Okay.
+
+697
+01:08:17,688 --> 01:08:20,648
+That means, it is the tangent vector.
+
+698
+01:08:21,108 --> 01:08:25,228
+If the tangent vector is asked, you will have all the derivative and apply the point, it's okay.
+
+699
+01:08:25,648 --> 01:08:28,108
+But this is tangent line equation, so parametric.
+
+700
+01:08:33,779 --> 01:08:34,340
+Let's see.
+
+701
+01:08:38,036 --> 01:08:46,935
+Evet, yukarı, 1, 1, 3, and 1. Rt is our function. This is the tangent vector, don't forget. Tangent vector.
+
+702
+01:08:49,815 --> 01:08:59,676
+1 over t, for ln t, 1 over t. For this function, t minus 2, minus t minus 1, t plus times 0, over t plus 2 on square.
+
+703
+01:08:59,676 --> 01:09:03,735
+And for ln t, 1 over t.
+
+704
+01:09:05,416 --> 01:09:12,615
+And once the substitute t is 1 here, r'1, tangent vector at the point t is 1.
+
+705
+01:09:13,315 --> 01:09:18,456
+This vector, 1, 1 over 3, and 1. Direction of the tangent line at the same time.
+
+706
+01:09:18,515 --> 01:09:23,275
+At the same time, this is the tangent vector, don't forget. Tangent vector at t is 0.
+
+707
+01:09:23,275 --> 01:09:53,256
+So, a point you need.
+
+708
+01:09:53,275 --> 01:09:55,475
+Are you okay?
+
+709
+01:10:09,524 --> 01:10:12,524
+Evet, evet.
+
+710
+01:10:12,524 --> 01:10:13,524
+Hadi bakalım.
+
+711
+01:10:13,524 --> 01:10:15,524
+And then continue.
+
+712
+01:10:15,524 --> 01:10:18,524
+If you like 10 minutes is okay.
+
+713
+01:10:18,524 --> 01:10:19,524
+Okay.
+
+714
+01:10:19,524 --> 01:10:20,524
+10 minutes.
+
+715
+01:24:46,163 --> 01:24:47,684
+Are you okay? Shall we continue?
+
+716
+01:24:54,707 --> 01:24:55,387
+I do here.
+
+717
+01:25:02,068 --> 01:25:04,628
+Ok, the next one is this question.
+
+718
+01:25:13,587 --> 01:25:26,087
+L1 is the line passing through the points x1 and x2, and L2 is for y1 and y2, and it says that they are intersecting at the point P.
+
+719
+01:25:26,947 --> 01:25:40,507
+So find the point P, xyz, and write such a line that that line passes through P, that intersection point, and orthogonal to both L1 and L2.
+
+720
+01:25:44,724 --> 01:25:46,564
+İlk olarak, find the intersection point.
+
+721
+01:25:54,387 --> 01:25:58,207
+Of course, you need to write first the line equations for L1 and L2.
+
+722
+01:25:58,827 --> 01:26:00,627
+Two points are on it, given.
+
+723
+01:26:01,228 --> 01:26:07,587
+You can easily write direction and the point and the line equation for L1 and L2.
+
+724
+01:26:07,587 --> 01:26:10,367
+And then choose the intersection point.
+
+725
+01:26:10,967 --> 01:26:19,688
+And then you will just write a new line equation, which is passing through that intersection point and orthogonal at both these lines.
+
+726
+01:27:57,203 --> 01:27:59,083
+How can you write the third line?
+
+727
+01:28:00,823 --> 01:28:04,804
+Through the intersection point and orthogonal to both these two lines.
+
+728
+01:28:10,612 --> 01:28:14,612
+Yine, birerleğe, birerleğe ve birerleğe ve birerleğe.
+
+729
+01:28:14,612 --> 01:28:17,612
+Birerleğe ve birerleğe ve birerleğe.
+
+730
+01:28:17,612 --> 01:28:26,612
+Birerleğe ve birerleğe.
+
+731
+01:28:29,427 --> 01:28:30,228
+What to do?
+
+732
+01:28:54,579 --> 01:29:14,159
+I know. You don't need to get the dot product of these two lines. You need to get the vector which is orthogonal to both these two lines. Not the dot product.
+
+733
+01:29:50,868 --> 01:29:53,868
+Bu, bu vektör?
+
+734
+01:29:53,868 --> 01:29:55,868
+Bu, ne?
+
+735
+01:30:08,275 --> 01:30:12,715
+Evet, çünkü kursa produk.
+
+736
+01:30:12,715 --> 01:30:14,755
+Kursa produk
+
+737
+01:30:14,755 --> 01:30:17,255
+vertikleri
+
+738
+01:30:17,255 --> 01:30:18,755
+ve 2 vektörs.
+
+739
+01:30:20,275 --> 01:30:21,555
+Ve vektörs?
+
+740
+01:30:23,395 --> 01:30:25,796
+Ve kursa produk
+
+741
+01:30:46,323 --> 01:30:52,443
+[öğrenci], bu bir plana ekonomi, sadece bir plana ekonomi, değil bir plana.
+
+742
+01:31:54,452 --> 01:32:02,092
+[öğrenci], bir ortogonel olarak iki farklı vektörler için, birçok birçok kullanmalıdır.
+
+743
+01:32:08,819 --> 01:32:13,939
+In order to get the vertical direction to two different vectors, you need to get the cross product.
+
+744
+01:32:15,219 --> 01:32:18,659
+And this cross product will be the parallel direction of the third line.
+
+745
+01:32:25,619 --> 01:32:27,460
+Okay, let's see the solution.
+
+746
+01:32:29,859 --> 01:32:33,779
+1-2 points are given for a line equation.
+
+747
+01:32:34,739 --> 01:32:37,059
+Just think, we did it before lots of times.
+
+748
+01:32:38,420 --> 01:32:40,500
+1-2 points are given.
+
+749
+01:32:41,220 --> 01:32:44,899
+We know that for line equation we need a parallel direction and a point.
+
+750
+01:32:44,899 --> 01:32:46,899
+How can we get a parallel direction?
+
+751
+01:32:46,899 --> 01:32:51,300
+Between two points we can just write a vector and this will be the parallel direction.
+
+752
+01:32:51,300 --> 01:32:58,899
+x1, x2, x2 minus x1. 0, 1 and 1. Okay, direction of it and the point is already on it.
+
+753
+01:32:59,779 --> 01:33:06,099
+So the first line, 1-4t is the first point x1.
+
+754
+01:33:06,659 --> 01:33:17,300
+So it is 1 plus 0t, 2 plus 1t, 4 plus t, 2 plus t again.
+
+755
+01:33:17,300 --> 01:33:18,659
+This is the first line.
+
+756
+01:33:18,659 --> 01:33:22,739
+Second line, do the same thing and write the line equation in different parameters, of course.
+
+757
+01:33:23,380 --> 01:33:27,619
+And if two lines are intersecting, of course they are intersecting around only one point.
+
+758
+01:33:28,180 --> 01:33:35,939
+So make the corresponding components x, y, z. Make them together to specify t and s.
+
+759
+01:33:36,899 --> 01:33:42,500
+Because there exists always a unique s and t when we have the intersection of two lines.
+
+760
+01:33:42,500 --> 01:33:48,739
+and you need to find the corresponding s and t. That means they correspond to only a unique number,
+
+761
+01:33:48,739 --> 01:33:53,380
+a unique point. And for t is minus one or s is minus two, it doesn't matter.
+
+762
+01:33:53,380 --> 01:33:56,500
+They correspond to the same point p. So it is 1, 3, 1.
+
+763
+01:33:56,500 --> 01:34:23,220
+So let's read it.
+
+764
+01:34:01,908 --> 01:35:55,238
+Bu, bu
+
+765
+01:35:58,612 --> 01:36:03,771
+Always we need a normal direction for plane and a parallel direction for line. That's all.
+
+766
+01:36:04,471 --> 01:36:07,452
+Just try to understand which one is orthogonal, which one is parallel.
+
+767
+01:36:09,452 --> 01:36:10,672
+Is it okay now?
+
+768
+01:36:18,387 --> 01:36:19,427
+Do you understand it?
+
+769
+01:36:34,771 --> 01:36:36,711
+Do you want to repeat it or continue?
+
+770
+01:36:42,515 --> 01:36:43,576
+Evet, of course.
+
+771
+01:36:44,215 --> 01:36:45,175
+Intersection part.
+
+772
+01:36:47,695 --> 01:36:50,295
+Writing two lines equations, I think, okay.
+
+773
+01:36:50,995 --> 01:36:53,995
+Direction, point, write the first line and the second line.
+
+774
+01:36:55,015 --> 01:37:00,935
+Intersection of two lines, we just make corresponding components, AQ.
+
+775
+01:37:01,335 --> 01:37:04,955
+Because we are just choosing an intersection point, that means a common point.
+
+776
+01:37:05,455 --> 01:37:07,835
+How can we get a common point when they are same?
+
+777
+01:37:08,536 --> 01:37:11,415
+Same value of X, Y, Z in order.
+
+778
+01:37:11,415 --> 01:37:20,235
+X must be 1, 3 plus S must be 1, 4 plus T must be 1 minus S, 2 plus T must be 5 plus 2S.
+
+779
+01:37:20,795 --> 01:37:28,955
+Just make them corresponding the same number and then find the values of T and S and then apply and get the point.
+
+780
+01:37:29,815 --> 01:37:32,315
+And the first one you will have, S is minus 2.
+
+781
+01:37:32,855 --> 01:37:35,675
+When S is minus 2, T is minus 1.
+
+782
+01:37:35,675 --> 01:37:42,175
+And once you type substitute T is minus 1 to L1 or substitute S is minus 2 to L2, it doesn't matter.
+
+783
+01:37:42,455 --> 01:37:45,835
+Because only a common point you have according to these parameters.
+
+784
+01:37:46,955 --> 01:37:47,755
+Are you okay?
+
+785
+01:37:52,243 --> 01:37:54,243
+Bir point var.
+
+786
+01:37:54,243 --> 01:37:55,243
+Ok.
+
+787
+01:37:55,243 --> 01:37:57,243
+İlk başta.
+
+788
+01:37:57,243 --> 01:37:58,243
+Bu bir şey.
+
+789
+01:37:58,243 --> 01:38:02,243
+İlk başta.
+
+790
+01:38:02,243 --> 01:38:04,243
+Bir arklent.
+
+791
+01:38:04,243 --> 01:38:10,243
+Arklent.
+
+792
+01:38:10,243 --> 01:38:12,243
+Vektor-valu-vektör.
+
+793
+01:38:12,243 --> 01:38:14,243
+Ve arklent.
+
+794
+01:38:14,243 --> 01:38:18,243
+Arklent.
+
+795
+01:38:18,243 --> 01:38:20,243
+İlk başta.
+
+796
+01:38:51,444 --> 01:38:53,444
+Let's see it together.
+
+797
+01:38:55,844 --> 01:38:59,444
+R' dt, modulüsü,
+
+798
+01:38:59,444 --> 01:39:02,444
+is the formalization of the arc length
+
+799
+01:39:02,444 --> 01:39:04,444
+of a vector-velded function.
+
+800
+01:39:04,444 --> 01:39:07,444
+Parameter interval 0 to ln 2.
+
+801
+01:39:07,444 --> 01:39:09,444
+R' t
+
+802
+01:39:11,444 --> 01:39:14,444
+is the length of a vector
+
+803
+01:39:14,444 --> 01:39:17,444
+in the square root, component, second powers,
+
+804
+01:39:17,444 --> 01:39:18,444
+and in sum.
+
+805
+01:39:18,444 --> 01:39:23,444
+x' o squared plus y' o squared plus z' o squared,
+
+806
+01:39:23,444 --> 01:39:25,444
+dt in the square root,
+
+807
+01:39:25,444 --> 01:39:27,444
+this function you need.
+
+808
+01:39:27,444 --> 01:39:30,444
+So, firstly, get this.
+
+809
+01:39:30,444 --> 01:39:34,444
+R' t is t i 1.
+
+810
+01:39:34,444 --> 01:39:37,444
+Square root e to 2t minus 1,
+
+811
+01:39:37,444 --> 01:39:40,444
+e to 2t over square root e to 2t minus 1.
+
+812
+01:39:40,444 --> 01:39:44,444
+And for x sin e to minus t, derivative of it,
+
+813
+01:39:44,444 --> 01:39:48,444
+minus e to minus t over the square root 1 minus,
+
+814
+01:39:48,444 --> 01:39:51,444
+second power of this function, e to minus 2t j,
+
+815
+01:39:51,444 --> 01:39:54,444
+plus k is constant here, so 0k.
+
+816
+01:39:55,444 --> 01:39:57,444
+So, we need to get the modulus of it.
+
+817
+01:39:57,444 --> 01:39:59,444
+But before getting the modulus of it,
+
+818
+01:39:59,444 --> 01:40:02,444
+length of it, we need to simplify it.
+
+819
+01:40:02,444 --> 01:40:03,444
+Look.
+
+820
+01:40:03,444 --> 01:40:08,444
+Here, you can just make something.
+
+821
+01:40:08,444 --> 01:40:13,444
+Writing, grouping of here e to minus 2t,
+
+822
+01:40:13,444 --> 01:40:14,444
+and having the same,
+
+823
+01:40:14,444 --> 01:40:17,444
+because I'm just trying to make the denominator same.
+
+824
+01:40:17,444 --> 01:40:20,444
+So, grouping of e to 2t,
+
+825
+01:40:20,444 --> 01:40:23,444
+we have this.
+
+826
+01:40:23,444 --> 01:40:28,444
+And get, lastly, simple form.
+
+827
+01:40:28,444 --> 01:40:33,444
+And then, get the modulus of it.
+
+828
+01:40:33,444 --> 01:40:37,444
+Look, it's only e to t, like this vector.
+
+829
+01:40:37,444 --> 01:40:39,444
+It's only e to t.
+
+830
+01:40:39,444 --> 01:40:42,444
+But if you don't do it, it will be so complicated.
+
+831
+01:40:42,444 --> 01:40:45,444
+e to t, write an integral.
+
+832
+01:40:45,444 --> 01:40:48,444
+Clearly e to t, 0 to ln 2,
+
+833
+01:40:48,444 --> 01:40:52,444
+so e to ln 2 minus e to 0 is 1.
+
+834
+01:40:52,444 --> 01:40:55,444
+The arc line of the curve,
+
+835
+01:40:55,444 --> 01:40:58,444
+which is given with the vector-valued function.
+
+836
+01:41:08,148 --> 01:41:09,087
+I think it's okay.
+
+837
+01:41:11,087 --> 01:41:16,748
+Now, I want to wonder, I want to wonder, what will we do in this question?
+
+838
+01:41:17,488 --> 01:41:19,188
+I hope you remember what to do here.
+
+839
+01:41:19,908 --> 01:41:28,887
+It's a convergence test, which has the general term n squared n over n minus 1 times in the third root n to 4 plus 1.
+
+840
+01:41:57,108 --> 01:41:57,927
+Please do it.
+
+841
+01:41:59,728 --> 01:42:01,307
+Otherwise, I will feel sorry.
+
+842
+01:42:12,532 --> 01:42:14,532
+Şimdi, sizin mesajınızı görüyorum.
+
+843
+01:42:20,916 --> 01:42:26,235
+Bu, parametrik ekonomik, if I'm not mistaken.
+
+844
+01:42:32,500 --> 01:42:45,699
+You can check it. What about this one, please? It's so easy. Why, [öğrenci]? Tell me. How did you get it? Which test do you use? Can you write me?
+
+845
+01:43:03,604 --> 01:43:04,404
+Anyone else?
+
+846
+01:43:06,404 --> 01:43:10,644
+I think you mean limit comparison test with 1 over n to 5 over 6?
+
+847
+01:43:12,963 --> 01:43:14,884
+[öğrenci], possibly.
+
+848
+01:43:17,164 --> 01:43:18,083
+Okay, well done.
+
+849
+01:43:20,764 --> 01:43:22,884
+Only [öğrenci], anyone else?
+
+850
+01:43:27,956 --> 01:43:30,956
+Bu çok kolay ve daha kolay bir form.
+
+851
+01:43:30,956 --> 01:43:35,956
+Bir de bu bölümde, bu bölümde,
+
+852
+01:43:35,956 --> 01:43:37,956
+ve bu bölümde,
+
+853
+01:43:37,956 --> 01:43:41,956
+bazı bölümde, bazı bölümde,
+
+854
+01:43:41,956 --> 01:43:43,956
+bazı bölümde,
+
+855
+01:43:43,956 --> 01:43:45,956
+ve bu bölümde,
+
+856
+01:43:45,956 --> 01:43:47,956
+n'eğitim.
+
+857
+01:43:47,956 --> 01:43:51,956
+Evet, bu aynı şey, aynı test.
+
+858
+01:44:04,948 --> 01:44:07,508
+Ok, thank you. And then continue, let's see.
+
+859
+01:44:08,628 --> 01:44:17,528
+Of course, here you need to just choose, you need to understand and evaluate which powers of n I need here to get an easy limit.
+
+860
+01:44:18,307 --> 01:44:23,648
+If they are having the same powers of n, this limit will be easier.
+
+861
+01:44:23,807 --> 01:44:28,628
+That's why just try to make them same powers of n in numerator and denominator.
+
+862
+01:44:28,628 --> 01:44:38,188
+So here, yes, like you said, n to 5 over 6 you need, so 1 over n to 5 over 6, you need to choose for limit comparison.
+
+863
+01:44:39,208 --> 01:44:43,668
+It's the p series and 5 over 6 is less than 1, so it's divergent.
+
+864
+01:44:44,228 --> 01:44:48,968
+And as a result of the limit is 1 different from 0 and infinity.
+
+865
+01:44:49,228 --> 01:44:52,427
+They are both converging or divergent, so it's divergent also.
+
+866
+01:44:54,028 --> 01:44:57,968
+Ok, what about the next one?
+
+867
+01:44:58,628 --> 01:45:07,788
+It says find the equation of the plane which passes through the point P and parallel to vectors U and V.
+
+868
+01:45:10,307 --> 01:45:13,008
+Equation of plane, be careful, plane equation.
+
+869
+01:45:13,408 --> 01:45:20,028
+So you need a normal line, I'm sorry, normal vector that means a vertical vector and a point.
+
+870
+01:45:20,307 --> 01:45:23,248
+Point is given P, it's passing through that P.
+
+871
+01:45:23,248 --> 01:45:29,048
+In order to find the normal vector always, there are clues in the question.
+
+872
+01:45:29,548 --> 01:45:33,588
+It says this plane is parallel to two vectors.
+
+873
+01:45:34,028 --> 01:45:34,948
+What does it mean?
+
+874
+01:45:35,128 --> 01:45:37,887
+How can we get the normal direction to the plane?
+
+875
+01:45:39,488 --> 01:45:55,148
+We know that the plane is parallel to two vectors.
+
+876
+01:45:56,148 --> 01:45:58,148
+Bunu yapabilirsiniz.
+
+877
+01:45:58,148 --> 01:46:00,148
+Ve sonra,
+
+878
+01:46:00,148 --> 01:46:02,148
+bir şekilde yapabilirsiniz.
+
+879
+01:46:02,148 --> 01:46:22,148
+Bir şekilde yapabilirsiniz.
+
+880
+01:46:22,148 --> 01:46:24,148
+Çünkü, bu şekilde yapabilirsiniz.
+
+881
+01:46:24,148 --> 01:46:26,148
+Bir şekilde yapabilirsiniz.
+
+882
+01:47:19,923 --> 01:47:21,463
+Have you decided what to do?
+
+883
+01:47:22,484 --> 01:47:22,644
+Huh?
+
+884
+01:47:24,264 --> 01:47:25,764
+[öğrenci], this question?
+
+885
+01:47:32,851 --> 01:47:33,452
+Okay.
+
+886
+01:47:35,192 --> 01:47:36,011
+I'm sorry.
+
+887
+01:47:37,372 --> 01:47:38,091
+This one?
+
+888
+01:47:58,484 --> 01:48:00,364
+Okay, question.
+
+889
+01:48:03,484 --> 01:48:04,664
+Arkland of the curve.
+
+890
+01:48:48,115 --> 01:48:58,515
+Hemen bakıyoruz o zaman [öğrenci]. Bence burada problem yok. Senin dediğin formül polar eğrilerdeki uzunluk diye hatırlıyorum. Bekler misin? Hemen açıyorum.
+
+891
+01:49:43,891 --> 01:49:44,731
+Evet, işte bak.
+
+892
+01:49:47,692 --> 01:49:49,811
+Arkland, a long space curve.
+
+893
+01:49:50,992 --> 01:49:55,211
+Vector-wilded function, and between the parameter a to b,
+
+894
+01:50:00,000 --> 01:50:11,840
+Okay? I think you remember the wrong formalization. It was, I think, for polar curse, if I'm not mistaken. Okay? So continue the exercises.
+
+895
+01:50:15,439 --> 01:50:16,479
+Wait for me.
+
+896
+01:50:35,315 --> 01:50:36,595
+Evet, biz burada.
+
+897
+01:50:37,235 --> 01:50:39,456
+I think you did, some of you.
+
+898
+01:50:43,444 --> 01:50:44,244
+Allah'a su.
+
+899
+01:50:46,244 --> 01:50:47,824
+Okey, let's see.
+
+900
+01:50:52,083 --> 01:51:00,724
+We need again cross product because just think plane is parallel to two vectors but plane is parallel to vector.
+
+901
+01:51:01,363 --> 01:51:06,243
+But the normal of the plane will be orthogonal to these two vectors.
+
+902
+01:51:06,483 --> 01:51:09,963
+That's why cross product of these two vectors we need.
+
+903
+01:51:09,963 --> 01:51:13,463
+Do you understand it? It's very important to understand the positions.
+
+904
+01:51:13,463 --> 01:51:22,184
+Plane is parallel to vectors but the normal direction of the plane will be vertical to these u and v.
+
+905
+01:51:22,184 --> 01:51:28,823
+That's why in order to get the normal direction of the plane we need to get the cross product of these two vectors.
+
+906
+01:51:28,823 --> 01:51:35,703
+These two vectors cross product will be the normal direction of the plane and so it will be n normal direction.
+
+907
+01:51:35,703 --> 01:51:44,104
+And the point is given so this will be the plane equation which is parallel to two vectors u and v.
+
+908
+01:51:44,983 --> 01:51:46,583
+Be careful about the positions.
+
+909
+01:51:48,104 --> 01:51:54,023
+When a plane is parallel to something that means their normal is orthogonal to that thing. Don't forget.
+
+910
+01:51:55,943 --> 01:52:00,104
+If you have any confusion about it just try to sketch it. You will understand. Okay.
+
+911
+01:52:01,463 --> 01:52:04,104
+Do you understand me? Are you okay?
+
+912
+01:52:05,703 --> 01:52:07,783
+This is very important for you to understand it.
+
+913
+01:52:08,823 --> 01:52:09,224
+Okay.
+
+914
+01:52:11,463 --> 01:52:12,344
+So the next one.
+
+915
+01:52:14,184 --> 01:52:15,063
+Tell me.
+
+916
+01:52:15,063 --> 01:52:16,983
+For which values of lambda?
+
+917
+01:52:16,983 --> 01:52:25,224
+The planes lambda x minus y plus 3 z is 1 and 2x plus 3y minus lambda z is 4 are orthogonal.
+
+918
+01:52:25,943 --> 01:52:27,463
+When? When?
+
+919
+01:52:27,463 --> 01:52:28,663
+In which condition?
+
+920
+01:52:28,663 --> 01:52:30,583
+Two planes are orthogonal. What do you think?
+
+921
+01:52:32,423 --> 01:52:34,823
+How can we understand two planes are orthogonal?
+
+922
+01:53:01,427 --> 01:53:13,287
+How can we understand? Once we have two planes, how can we understand? While you are working with planes, identical is, identical property of a plane is normal direction, don't forget.
+
+923
+01:53:14,028 --> 01:53:21,347
+When two planes are orthogonal, what about their normals? What do you think? What about their normals?
+
+924
+01:53:21,347 --> 01:53:32,228
+Do they, that means, are they orthogonal again, or are they parallel? Normals of the planes, budgeting.
+
+925
+01:53:50,579 --> 01:53:51,619
+Don't you have an idea?
+
+926
+01:53:55,572 --> 01:53:57,851
+Evet, of course, evet, clearly.
+
+927
+01:54:02,195 --> 01:54:05,076
+So tell me, what is the normal direction of the first plane?
+
+928
+01:54:06,996 --> 01:54:09,536
+What is the normal direction of the first plane?
+
+929
+01:54:13,011 --> 01:54:17,631
+Lambda, lambda, minus 1 and 3.
+
+930
+01:54:18,791 --> 01:54:27,112
+Orthogonal direction of the second plane, that means normal of second plane, 2, 3 and minus lambda.
+
+931
+01:54:27,791 --> 01:54:28,652
+They must be orthogonal.
+
+932
+01:54:29,491 --> 01:54:31,511
+In which condition two vectors are orthogonal?
+
+933
+01:54:43,667 --> 01:54:45,667
+Evet, bu birçok birçok.
+
+934
+01:54:45,667 --> 01:54:47,667
+Bu birçok.
+
+935
+01:54:47,667 --> 01:55:03,667
+Birçok birçok.
+
+936
+01:55:22,515 --> 01:55:23,375
+The next one.
+
+937
+01:55:35,155 --> 01:55:37,155
+Evet, bu.
+
+938
+01:55:37,155 --> 01:56:01,155
+Bu, bu.
+
+939
+01:55:52,787 --> 01:55:54,387
+[öğrenci] yolsu paralel or?
+
+940
+01:55:55,827 --> 01:55:56,327
+Ortogonal.
+
+941
+01:56:15,507 --> 01:56:16,507
+Evet.
+
+942
+01:56:16,507 --> 01:56:19,507
+Yeni bir şey, [öğrenci]'in bir şey.
+
+943
+01:56:19,507 --> 01:56:20,507
+Bir şey, [öğrenci]'in bir şey.
+
+944
+01:56:20,507 --> 01:56:31,507
+Bir şey, bir şey, bir şey.
+
+945
+01:56:31,507 --> 01:56:33,507
+Bir şey, bir şey.
+
+946
+01:56:33,507 --> 01:56:36,507
+Bir şey, bir şey, bir şey.
+
+947
+01:56:36,507 --> 01:56:39,507
+Bir şey, bir şey, bir şey, bir şey.
+
+948
+01:56:39,507 --> 01:56:41,507
+Bir şey, bir şey.
+
+949
+01:56:41,507 --> 01:56:48,507
+Ve bu, n1 ve n2.
+
+950
+01:56:48,507 --> 01:57:10,347
+n1 ve n2 ve n
+
+951
+01:57:16,819 --> 01:57:25,619
+Now, the time is over, but I have also other questions. We have not finished this exercises part. Lots of questions I have.
+
+952
+01:57:27,179 --> 01:57:37,819
+So, probably we will continue the next week. Please study. Study all of them. Next week, up to next week, please be prepared.
+
+953
+01:57:37,819 --> 01:57:46,899
+And we will continue with the exercises. If I have additional exercises, I will add to my page. So, look at them. Okay.
+
+954
+01:57:52,948 --> 01:58:00,648
+Okay, please study all these questions again and again, and if it is possible, try to find the other types of questions.
+
+955
+01:58:01,448 --> 01:58:05,068
+And next week we will finish it and then continue with the next topic.
+
+956
+01:58:06,068 --> 01:58:07,088
+Thank you so much.
+
+957
+01:58:16,884 --> 01:58:17,384
+See you next week.

@@ -1,0 +1,3263 @@
+1
+00:01:13,396 --> 00:01:14,355
+Merhaba arkadaşlar.
+
+2
+00:01:18,260 --> 00:01:19,820
+Merhaba hocam, nasılsınız?
+
+3
+00:01:20,300 --> 00:01:21,560
+İyiyim, sizler nasılsınız?
+
+4
+00:01:21,880 --> 00:01:22,820
+İyiyiz hocam, biz de.
+
+5
+00:01:29,587 --> 00:01:31,527
+Hocam, dün çok ilerlediniz mi ya?
+
+6
+00:01:32,347 --> 00:01:39,287
+Yok, yok. Hayır. Çok uzun yapmadık zaten. İlk ders olduğu için çok uzun tutmak istemedim.
+
+7
+00:01:39,768 --> 00:01:39,987
+Tamam.
+
+8
+00:01:40,487 --> 00:01:45,067
+Yeterice yaptık zaten bence ama şey yaptık, şimdi kısa bir tekrar yaparız.
+
+9
+00:01:45,507 --> 00:01:47,287
+Tamam. Teşekkür ederim.
+
+10
+00:01:47,567 --> 00:01:48,147
+Rica ederim.
+
+11
+00:01:52,563 --> 00:01:53,763
+Biraz bekleyelim mi?
+
+12
+00:02:17,683 --> 00:02:19,484
+Başlayalım mı arkadaşlar? Hazır mısınız?
+
+13
+00:02:21,383 --> 00:02:22,764
+Ben hazırım hocam.
+
+14
+00:02:24,663 --> 00:02:25,903
+Bugünkü dersimiz 2 saat.
+
+15
+00:02:33,268 --> 00:02:35,768
+O zaman şöyle kısa bir tekrarla başlayalım.
+
+16
+00:02:37,187 --> 00:02:41,348
+Yine sorusu olan yazsın veya direkt sorabilir.
+
+17
+00:02:51,795 --> 00:02:57,715
+Yesterday, we did the definition and the introduction part of sequences.
+
+18
+00:02:58,355 --> 00:03:00,435
+Infinite sequences, of course, we are working.
+
+19
+00:03:01,395 --> 00:03:08,435
+And I said that sequences are like a step before defining the series and understanding
+
+20
+00:03:08,435 --> 00:03:10,515
+the general structure of series.
+
+21
+00:03:10,515 --> 00:03:16,195
+So firstly, in order to understand the series, we need to understand sequences.
+
+22
+00:03:16,195 --> 00:03:20,435
+Sequences are the list of numbers in a given order.
+
+23
+00:03:22,195 --> 00:03:28,195
+And we said that we have two different ways of writing or defining the infinite series,
+
+24
+00:03:28,195 --> 00:03:36,195
+sequences, I'm sorry, while writing the general formula or the general term or by using induction.
+
+25
+00:03:37,156 --> 00:03:41,716
+And I said that this is a specific sequence called Fibonacci.
+
+26
+00:03:41,716 --> 00:03:50,836
+It's important that to define the sequence, we can always consider a sequence as a function
+
+27
+00:03:50,836 --> 00:03:53,235
+from the positive integers to real numbers.
+
+28
+00:03:54,836 --> 00:04:01,716
+These positive integers refers to the indexes in every term of the sequence,
+
+29
+00:04:01,716 --> 00:04:08,675
+and the output value, the result of the function, corresponds to the terms of the sequences.
+
+30
+00:04:08,675 --> 00:04:15,075
+For convergence and divergency, now, if you remember,
+
+31
+00:04:16,836 --> 00:04:23,076
+convergence of a sequence means that if we have an accumulation point, a unique accumulation point,
+
+32
+00:04:23,076 --> 00:04:29,956
+or a limit point, and that sequence is convergent. That means after a specific index,
+
+33
+00:04:31,395 --> 00:04:37,475
+the infinite, the many numbers of terms of the sequence are just getting very closer to a specific
+
+34
+00:04:37,475 --> 00:04:43,076
+value. This is the accumulating point. At the same time, mathematically, if it is unique,
+
+35
+00:04:43,076 --> 00:04:49,156
+it is the limit point. That means the converging point of the sequence. That means it is convergent.
+
+36
+00:04:52,675 --> 00:04:54,036
+And these are examples.
+
+37
+00:04:55,716 --> 00:05:01,316
+And we have talked about the formal definition of the limit of a sequence. What about the formal
+
+38
+00:05:01,316 --> 00:05:11,316
+definition of the divergence of a sequence? After a specific index, again, this axis shows the indexes.
+
+39
+00:05:11,316 --> 00:05:19,156
+These are the terms of the sequence. After a specific index, if the terms of the sequence is getting
+
+40
+00:05:19,156 --> 00:05:25,396
+bigger and bigger infinitely, that means the limit of it is infinite. That means this sequence is divergent,
+
+41
+00:05:25,395 --> 00:05:30,995
+because it is not accumulating or getting closer to a specific point. They are always getting greater.
+
+42
+00:05:31,555 --> 00:05:38,515
+Similarly, we may have such a case. They can be get less and less after a specific index.
+
+43
+00:05:38,515 --> 00:05:42,915
+Infinite, the many numbers of the terms of the sequence can be getting less and less.
+
+44
+00:05:42,915 --> 00:05:49,875
+Means not getting closer around the point. Always getting less means it's going to negative infinity.
+
+45
+00:05:49,875 --> 00:05:56,516
+And again, it is divergent. And these cases, we may have only the possible cases for a limit of a
+
+46
+00:05:56,516 --> 00:06:01,956
+general term of a sequence to talk about the convergent and divergent of the sequence as these conditions.
+
+47
+00:06:02,596 --> 00:06:08,755
+If the limit of the general term is a finite real number, in that case, only the sequence is convergent.
+
+48
+00:06:08,755 --> 00:06:17,076
+And it is convergent to or converges to the limit value. For other possibilities, if we have no limit or if
+
+49
+00:06:17,076 --> 00:06:29,395
+if the limit is infinite, that means this sequence is divergent.
+
+50
+00:06:29,300 --> 00:06:46,120
+And these are the basic rules about the limit rules, combining two different sequences, sum of difference, production, division, and custom multiple.
+
+51
+00:06:52,915 --> 00:06:56,396
+Ve bu, daha genel olarak,
+
+52
+00:06:56,396 --> 00:07:00,596
+birçok, birçok,
+
+53
+00:07:00,596 --> 00:07:02,195
+ve birçok,
+
+54
+00:07:02,195 --> 00:07:52,656
+birçok,
+
+55
+00:07:38,291 --> 00:07:40,291
+Sandvich Theorem.
+
+56
+00:07:40,291 --> 00:07:44,291
+Sandvich Theorem is used generally while we are having difficulty
+
+57
+00:07:44,291 --> 00:07:48,291
+about getting limits of a general term of a sequels.
+
+58
+00:07:48,291 --> 00:07:54,291
+We can write the general term between two different functions
+
+59
+00:07:54,291 --> 00:07:56,291
+again in the same parameter.
+
+60
+00:07:56,291 --> 00:08:01,291
+And if these functions are going to the same limiting value
+
+61
+00:08:01,291 --> 00:08:03,291
+when n is going to infinity,
+
+62
+00:08:03,291 --> 00:08:08,291
+which means this function means general term here of the sequels
+
+63
+00:08:08,291 --> 00:08:11,291
+again having the same limit value.
+
+64
+00:08:11,291 --> 00:08:16,291
+Like in this example, cosine n over n.
+
+65
+00:08:16,291 --> 00:08:18,291
+We don't know the limit of it.
+
+66
+00:08:18,291 --> 00:08:24,291
+We are sure that cosine n over n for n positive integers
+
+67
+00:08:24,291 --> 00:08:28,291
+is between always 1 over n to minus 1 over n.
+
+68
+00:08:28,291 --> 00:08:32,291
+And we know that this is going to 0, this is going to 0,
+
+69
+00:08:32,291 --> 00:08:36,291
+when n is going to infinity, which means, of course,
+
+70
+00:08:36,291 --> 00:08:41,291
+absolutely cosine n over n having the same limiting value, which is 0.
+
+71
+00:08:41,291 --> 00:08:44,291
+This is the main idea of the Sandvich Theorem.
+
+72
+00:08:44,291 --> 00:08:48,291
+And we did this example also for 1 over 2 to n.
+
+73
+00:08:48,291 --> 00:08:53,291
+We get 1 over 2 to n is always less than 1 over n
+
+74
+00:08:53,291 --> 00:08:56,291
+because of having n positive integers.
+
+75
+00:08:56,291 --> 00:09:02,291
+having this fact that it's always positive because of having the exponential function.
+
+76
+00:09:02,291 --> 00:09:06,291
+That's why we have this inequality.
+
+77
+00:09:06,291 --> 00:09:08,291
+0, always 0.
+
+78
+00:09:08,291 --> 00:09:14,291
+1 over n again is going to 0, which means 1 over 2 to n must go to 0,
+
+79
+00:09:14,291 --> 00:09:18,291
+like the other functions by using the Sandvich Theorem.
+
+80
+00:09:18,291 --> 00:09:22,291
+And lastly, we did the continuous function theorem for sequences.
+
+81
+00:09:22,291 --> 00:09:33,291
+Again, it's used to get the evaluating the limits of the general terms of a sequence easily
+
+82
+00:09:33,291 --> 00:09:38,291
+with the Sandvich Theorem or continuous function theorem.
+
+83
+00:09:38,291 --> 00:09:41,291
+and also we will see next L'Hopital rule.
+
+84
+00:09:41,291 --> 00:09:48,291
+These are used to evaluate the limits of the general terms of the sequence when n is going to infinity easily.
+
+85
+00:09:48,291 --> 00:09:50,291
+Why do we have this?
+
+86
+00:09:50,291 --> 00:09:54,291
+If we have a convergence sequence, a n going to l,
+
+87
+00:09:54,291 --> 00:09:57,291
+converging to l, that means the limit of a n is l.
+
+88
+00:09:57,291 --> 00:10:01,291
+If we can find the continuous function f,
+
+89
+00:10:01,291 --> 00:10:06,291
+continuous at l, f also must be defined on a n.
+
+90
+00:10:06,291 --> 00:10:13,291
+In that case, when n a n is going to l, we can say that f a n is going to f l.
+
+91
+00:10:13,291 --> 00:10:16,291
+This property is so useful.
+
+92
+00:10:16,291 --> 00:10:19,291
+For example, for evaluating this limit,
+
+93
+00:10:19,291 --> 00:10:24,291
+square root n plus 1 over n when n is going to infinity is going to 1.
+
+94
+00:10:24,291 --> 00:10:28,291
+This notation says, how can we prove it?
+
+95
+00:10:28,291 --> 00:10:33,291
+We are sure that n plus 1 over n when n is going to infinity is going to 1.
+
+96
+00:10:33,291 --> 00:10:34,291
+Sure, it's clear.
+
+97
+00:10:34,291 --> 00:10:35,291
+How can we get this?
+
+98
+00:10:35,291 --> 00:10:40,291
+We need to get a function f in order to show this property.
+
+99
+00:10:40,291 --> 00:10:44,291
+How can we find f square root x to get this expression?
+
+100
+00:10:44,291 --> 00:10:49,291
+We have to be sure that the square root function must be continuous at 1
+
+101
+00:10:49,291 --> 00:10:53,291
+and defined on n plus 1 over n for n positive integers.
+
+102
+00:10:53,291 --> 00:10:55,291
+Yes, it is.
+
+103
+00:10:55,291 --> 00:11:03,291
+Square root x is defined for every positive number and n plus 1 over n is a positive, full positive.
+
+104
+00:11:03,291 --> 00:11:06,291
+And this function is again a continuous function at 1.
+
+105
+00:11:06,291 --> 00:11:12,291
+So we can apply this continuous function square root x to both sides.
+
+106
+00:11:12,291 --> 00:11:13,291
+So just think like an equality.
+
+107
+00:11:13,291 --> 00:11:17,291
+It's not, but just think it's like an equality.
+
+108
+00:11:17,291 --> 00:11:20,291
+When n plus 1 over n is going to 1, limit form of it.
+
+109
+00:11:20,291 --> 00:11:22,291
+Just think when n is going to infinity.
+
+110
+00:11:22,291 --> 00:11:27,291
+So the same thing once we apply f to both sides.
+
+111
+00:11:27,291 --> 00:11:34,291
+Apply f to n plus 1 over n, get square root n plus 1 over n is going to f1.
+
+112
+00:11:34,291 --> 00:11:49,291
+So the same thing once we apply f to both sides.
+
+113
+00:11:35,028 --> 00:11:37,028
+F1'in bir parçası var.
+
+114
+00:11:37,028 --> 00:11:40,028
+Bu parçası, bu parçası var.
+
+115
+00:11:40,028 --> 00:11:54,028
+Bu parçası var.
+
+116
+00:11:54,028 --> 00:11:56,028
+Şimdi, bu parçası var.
+
+117
+00:11:56,028 --> 00:12:10,028
+Bu parçası var.
+
+118
+00:12:10,028 --> 00:12:12,028
+L'hôpital rule
+
+119
+00:12:12,028 --> 00:12:14,028
+that you remember, you have to remember
+
+120
+00:12:14,028 --> 00:12:16,028
+from the mathematics one
+
+121
+00:12:16,028 --> 00:12:20,028
+or I think from your high school information.
+
+122
+00:12:20,028 --> 00:12:24,028
+All of you, I think, remember the L'hôpital rule.
+
+123
+00:12:24,028 --> 00:12:28,028
+When do we need to use the L'hôpital rule?
+
+124
+00:12:28,028 --> 00:12:30,028
+Do you remember?
+
+125
+00:12:30,028 --> 00:12:32,028
+When?
+
+126
+00:12:34,548 --> 00:12:39,347
+I think it is a more famous rule.
+
+127
+00:12:40,668 --> 00:12:42,668
+I know, but I cannot explain.
+
+128
+00:12:43,967 --> 00:12:44,347
+Okay.
+
+129
+00:12:45,187 --> 00:12:45,788
+Yes.
+
+130
+00:12:47,248 --> 00:12:49,347
+For example, when we have 0, 0.
+
+131
+00:12:50,288 --> 00:12:55,628
+Yes, that means in order to evaluate the limit, we are using the L'Opital rule.
+
+132
+00:12:55,628 --> 00:13:01,847
+And the L'Opital rule says that once you have a limit and in that limit, if we have an indeterminate form,
+
+133
+00:13:01,847 --> 00:13:05,567
+which is 0 over 0 or infinity over infinity.
+
+134
+00:13:05,807 --> 00:13:12,347
+In that case, we can continue with getting the derivative of the numerator and denominator individually.
+
+135
+00:13:13,187 --> 00:13:19,788
+In that case, the function that we are evaluating the limit will be getting easier and easily evaluate the limit.
+
+136
+00:13:19,888 --> 00:13:23,607
+That's why the students, I think, like the L'Opital rule.
+
+137
+00:13:24,148 --> 00:13:31,427
+But sometimes you are not allowed to use it in order to use some algebraic properties to eliminate the indeterminate form.
+
+138
+00:13:31,427 --> 00:13:33,048
+But here we can use it.
+
+139
+00:13:33,467 --> 00:13:36,668
+While evaluating the limit, you can allow to use it.
+
+140
+00:13:38,488 --> 00:13:39,028
+Let's see.
+
+141
+00:13:40,347 --> 00:13:47,327
+It says it is a function defined for all x greater than and equal to n0.
+
+142
+00:13:47,327 --> 00:13:52,427
+Again, always we have in these kinds of definitions for sequences.
+
+143
+00:13:52,427 --> 00:14:03,628
+Think that something happens always after a specific index, which means mathematically not for every element or every terms of the seconds we have this case.
+
+144
+00:14:03,628 --> 00:14:15,327
+But after a specific index means, in fact, just corresponds to the infinitely many numbers of terms defecting from this case.
+
+145
+00:14:15,727 --> 00:14:19,728
+That's why we generally get this kind of definition.
+
+146
+00:14:20,488 --> 00:14:22,888
+After a specific index, we have what?
+
+147
+00:14:22,888 --> 00:14:28,628
+Fx is function defined for all x after n0.
+
+148
+00:14:29,488 --> 00:14:34,988
+And then, an is a secuence of real numbers such that an is fn.
+
+149
+00:14:35,128 --> 00:14:37,847
+It's like a function definition of a secuence.
+
+150
+00:14:38,327 --> 00:14:38,488
+Okay.
+
+151
+00:14:38,847 --> 00:14:41,707
+Again, for n is greater than n0 after n0.
+
+152
+00:14:41,827 --> 00:14:43,728
+Then, what it says?
+
+153
+00:14:43,728 --> 00:14:46,807
+Limit x is going to infinity.
+
+154
+00:14:47,367 --> 00:14:48,148
+Fx is l.
+
+155
+00:14:48,388 --> 00:14:54,187
+That means this is a limit of a function when x is going to infinity and it says it's equal to l.
+
+156
+00:14:55,587 --> 00:15:02,648
+Then, if we have this case, so we have limit when n is going to infinity, an is l.
+
+157
+00:15:02,867 --> 00:15:03,607
+What does it mean?
+
+158
+00:15:05,548 --> 00:15:10,148
+It means that you can think that, okay, they are same.
+
+159
+00:15:10,288 --> 00:15:11,807
+Fx is an normally.
+
+160
+00:15:11,807 --> 00:15:13,648
+And x is going to infinity.
+
+161
+00:15:13,748 --> 00:15:14,168
+Be careful.
+
+162
+00:15:14,347 --> 00:15:15,367
+Here we are using n.
+
+163
+00:15:15,467 --> 00:15:15,988
+Here x.
+
+164
+00:15:16,467 --> 00:15:17,827
+Because, first think that.
+
+165
+00:15:18,107 --> 00:15:20,067
+Why do we need to write these explanations?
+
+166
+00:15:20,567 --> 00:15:23,668
+Because we are using the L'Hôpital rules for functions.
+
+167
+00:15:25,028 --> 00:15:25,488
+Okay.
+
+168
+00:15:25,927 --> 00:15:28,127
+But now we need four secuences.
+
+169
+00:15:29,228 --> 00:15:32,388
+And secuences have a general term and we need to get the limit of it.
+
+170
+00:15:33,087 --> 00:15:34,607
+And maybe we need the L'Hôpital rule.
+
+171
+00:15:35,807 --> 00:15:39,127
+But L'Hôpital rules are used for functions.
+
+172
+00:15:39,128 --> 00:15:46,107
+But we know that every secuence can be considered as a function.
+
+173
+00:15:46,567 --> 00:15:49,048
+That's why we are just thinking that.
+
+174
+00:15:49,347 --> 00:15:54,827
+Not directly applying the L'Hôpital rule to a general term of a secuence having the limit of it.
+
+175
+00:15:55,168 --> 00:16:00,048
+We are just making the function form of it and then apply the L'Hôpital rule.
+
+176
+00:16:00,408 --> 00:16:02,128
+This explanation says.
+
+177
+00:16:02,128 --> 00:16:05,687
+Let's see the example.
+
+178
+00:16:07,748 --> 00:16:10,128
+I think you can understand easily with this one.
+
+179
+00:16:11,408 --> 00:16:14,408
+It says show that the limit when n is going to infinity.
+
+180
+00:16:14,567 --> 00:16:15,927
+L'Hôpital n over n is 0.
+
+181
+00:16:17,307 --> 00:16:17,788
+Okay.
+
+182
+00:16:17,888 --> 00:16:18,567
+First I think.
+
+183
+00:16:19,567 --> 00:16:54,548
+L'Hôpital n.
+
+184
+00:16:33,299 --> 00:17:03,299
+Şimdi bu bir f'lnx'ı alın x'ı alın x'ı alın x'ı alın x'ı alın x'ı alın x'ı alın x'ı alın x'ı alın x'ı alın x'ı alın x'ı alın x'ı alın x'ı alın x'ı alın x'ı alın x'ı alın x'ı alın x'ı alın x'ı alın x'ı alın x'ı alın x'ı alın x'ı alın x'ı alın x'ı alın x'ı alın x'ı alın x'ı alın x'ı alın x'ı alın x'ı alın x'ı alın x'ı alın x'ı alın x'ı alın x'ı alın x'ı alın x'ı alın x'ı alın x'ı alın x'ı alın x'ı alın x
+
+185
+00:17:03,299 --> 00:17:05,519
+positive integers, so starting from 1.
+
+186
+00:17:07,919 --> 00:17:13,920
+So we are just thinking the function form of it, but here in this function x is not a real number, be careful.
+
+187
+00:17:14,420 --> 00:17:20,339
+This is the difference between the general term of a secu and the function form of it.
+
+188
+00:17:20,339 --> 00:17:26,099
+Normally if I tell you f is alın x over x, you have to just think x is a real number probably,
+
+189
+00:17:26,579 --> 00:17:30,419
+but x must be positive, you know the domain set of logarithm function.
+
+190
+00:17:31,859 --> 00:17:40,579
+So this is the difference between any function and the general term of a secu and says are defined
+
+191
+00:17:40,579 --> 00:17:48,659
+and the indexes are coming from the positive integers starting from 1 to infinity, but any function can be defined for for any real number.
+
+192
+00:17:48,659 --> 00:17:52,619
+Okay, so be careful about this case.
+
+193
+00:17:53,359 --> 00:18:07,119
+So once you are making a general term of a secu as a function, just think that here the values are coming from positive integers starting from 1, not the real numbers.
+
+194
+00:18:08,339 --> 00:18:14,679
+Okay, we make the function form of it and we just talk about the domain set of this function and then think.
+
+195
+00:18:14,679 --> 00:18:24,099
+They are same, so the L'Opital rule says that if it is the function form of this general term, so the limits are same.
+
+196
+00:18:25,279 --> 00:18:26,359
+Okay, limits are same.
+
+197
+00:18:26,639 --> 00:18:30,859
+So use and work on the function form of the general term.
+
+198
+00:18:31,379 --> 00:18:34,379
+Limit x is, here it must be x, I'm sorry.
+
+199
+00:18:34,839 --> 00:18:38,980
+X is going to infinity, alın x over x, infinity over infinity.
+
+200
+00:18:38,980 --> 00:18:42,220
+So use the L'Opital rule, we are allowed to use it.
+
+201
+00:18:42,339 --> 00:18:43,679
+Okay, this case is proper.
+
+202
+00:18:44,559 --> 00:18:52,659
+So I just use this notation which shows that we are using the L'Opital rule and getting the limits one by one, numerator and denominator.
+
+203
+00:18:53,399 --> 00:18:55,519
+ln x, what is the derivative of it?
+
+204
+00:18:56,279 --> 00:18:57,279
+1 over x.
+
+205
+00:18:57,779 --> 00:18:59,679
+X derivative 1.
+
+206
+00:18:59,679 --> 00:19:00,639
+What do we have?
+
+207
+00:19:00,960 --> 00:19:03,920
+Limit x is going to infinity, 1 over x.
+
+208
+00:19:04,460 --> 00:19:04,839
+End up.
+
+209
+00:19:07,319 --> 00:19:15,299
+Once you apply the L'Opital rule, you have to check directly if I have still an indeterminate form or not.
+
+210
+00:19:16,420 --> 00:19:16,899
+Do we have?
+
+211
+00:19:18,339 --> 00:19:21,099
+When x is going to infinity, what happens to 1 over x?
+
+212
+00:19:21,480 --> 00:19:22,740
+It's going to 0.
+
+213
+00:19:23,700 --> 00:19:25,460
+That means it's okay, it's finished.
+
+214
+00:19:26,240 --> 00:19:29,460
+1 over x is the finite limit result.
+
+215
+00:19:29,679 --> 00:19:34,839
+Which means this is the limit of this function when x is going to infinity.
+
+216
+00:19:35,259 --> 00:19:42,539
+Which means this is at the same time the same limiting value of ln n over n when n is going to infinity.
+
+217
+00:19:42,879 --> 00:19:46,079
+That's why we have proved that it is also equal to 0.
+
+218
+00:20:25,011 --> 00:20:29,932
+What difference between L and L and L and X?
+
+219
+00:20:32,131 --> 00:20:33,831
+Here, there is no difference.
+
+220
+00:20:34,451 --> 00:20:40,172
+But before using the L'Hopital rule, we need to write the function form of the general term.
+
+221
+00:20:40,491 --> 00:20:40,591
+Okay.
+
+222
+00:20:41,091 --> 00:20:44,192
+Function means writing in terms of X, like fx.
+
+223
+00:20:44,331 --> 00:20:44,451
+Okay.
+
+224
+00:20:44,711 --> 00:20:45,692
+In fact, they are same.
+
+225
+00:20:46,152 --> 00:20:52,031
+But normally, if we are talking any function, normally the domain set is real number.
+
+226
+00:20:52,031 --> 00:20:55,551
+But here, only positive integers.
+
+227
+00:20:56,152 --> 00:20:56,371
+Okay.
+
+228
+00:20:56,491 --> 00:20:57,291
+This is the difference.
+
+229
+00:20:57,831 --> 00:20:58,271
+Okay.
+
+230
+00:21:03,059 --> 00:21:16,159
+So, continue. Ah, I thought that we had a second example, but we don't have. Maybe later we will have an example about it. So, I want to continue with the common occurring limits that you need to remember.
+
+231
+00:21:16,940 --> 00:21:30,019
+These are evaluated limits, which will be useful for you in order to evaluate the limits of the general terms, in order to understand the sequence is convergent or not, or any limit question, you can use them.
+
+232
+00:21:33,652 --> 00:21:43,491
+Just note them down later on, now it doesn't matter, and always remember them, okay, these are so useful limiting roots.
+
+233
+00:21:45,771 --> 00:21:47,812
+Lnn over n0, we did it.
+
+234
+00:21:50,192 --> 00:21:55,332
+In the nth root, I'm sorry, in the nth root n, when n is going to infinity, it's 1.
+
+235
+00:21:56,292 --> 00:22:02,812
+When n is going to infinity, of course, we are working always n is going to infinity because we are just trying to evaluate
+
+236
+00:22:02,812 --> 00:22:07,092
+what happens to a sequence, convergent or not.
+
+237
+00:22:07,352 --> 00:22:12,532
+That's why we need to get always limit when n is going to infinity, no other cases we may have.
+
+238
+00:22:12,751 --> 00:22:16,852
+Because n is starting from 1, 1, 2, 3, 4, 5, and going to infinity.
+
+239
+00:22:17,251 --> 00:22:22,771
+That's why, while you are evaluating the convergence or divergence about the sequence,
+
+240
+00:22:22,932 --> 00:22:28,932
+always you need to get the limit when n is going to infinity, of the general term of the sequence.
+
+241
+00:22:28,932 --> 00:22:32,292
+Don't worry, that's why we are always having n is going to infinity,
+
+242
+00:22:32,292 --> 00:22:33,292
+with no other number we may have.
+
+243
+00:22:33,292 --> 00:22:35,392
+No other number we may have.
+
+244
+00:22:39,635 --> 00:23:03,675
+x to 1 over n, 1 for positive x, for any number x. Be careful, our variable is n. x to n, 0, when nx is less than 1, absolutely. This is so useful, don't forget this. 1 plus x over n to n, when n is going to infinity, it's e to x, for any x.
+
+245
+00:23:03,675 --> 00:23:17,036
+x to n over n factorial, going to 0 again for any x. And 1 over n to alpha is 0 for every positive alpha.
+
+246
+00:23:30,259 --> 00:23:30,740
+Ok.
+
+247
+00:23:39,955 --> 00:23:48,115
+Later you can note them. For example, this limit. Hmm, this is for what? Let's talk about it.
+
+248
+00:23:48,836 --> 00:23:53,715
+It says evaluate the limit when n is going to infinity n times arctan, 1 over n.
+
+249
+00:23:56,915 --> 00:24:00,596
+What's the first step coming to your mind about evaluating a limit?
+
+250
+00:24:02,596 --> 00:24:05,475
+What should it be? Tell me.
+
+251
+00:24:11,124 --> 00:24:13,923
+Okay, how did you get infinity?
+
+252
+00:24:30,228 --> 00:24:32,228
+We need to just talk about it.
+
+253
+00:24:34,228 --> 00:24:34,948
+Anyone else?
+
+254
+00:24:36,548 --> 00:24:37,668
+I understand you.
+
+255
+00:24:39,268 --> 00:24:40,228
+But maybe not.
+
+256
+00:24:45,076 --> 00:24:47,135
+What's the first step evaluating a limit?
+
+257
+00:24:54,355 --> 00:25:08,756
+If I were you, I would say that. The first step, yes, yes, you're right, to consider the situation and what kind of a function you have, you're completely right, yes, I think so.
+
+258
+00:25:09,615 --> 00:25:22,816
+First, you have to just think, put n, infinity. This is the first step and the main idea about evaluating a limit. Just substitute n as infinity, infinity times arctangent 1 over infinity.
+
+259
+00:25:22,816 --> 00:25:25,195
+Hmm, we need to just think.
+
+260
+00:25:28,355 --> 00:25:33,655
+What is arctangent 1 over infinity? 1 over infinity is 0. What is arctangent 0?
+
+261
+00:25:37,155 --> 00:25:38,395
+0, okay.
+
+262
+00:25:40,496 --> 00:25:42,175
+Infinity times 0, what is it?
+
+263
+00:25:45,695 --> 00:25:50,016
+Infinity times 0. What do you have in your mind about this multiplication?
+
+264
+00:25:50,016 --> 00:25:53,355
+What does it mean? It is definition?
+
+265
+00:25:56,355 --> 00:25:59,556
+Okay, no problem. We are just thinking about it.
+
+266
+00:26:01,556 --> 00:26:03,736
+What is infinity times 0? Tell me.
+
+267
+00:26:09,364 --> 00:27:39,364
+Bu, bu
+
+268
+00:27:39,364 --> 00:27:43,084
+while we have the indeterminate form 0 times infinity.
+
+269
+00:27:45,463 --> 00:27:47,124
+Yes, solve it, I'm waiting for you.
+
+270
+00:27:53,940 --> 00:27:57,820
+Arktangin 1 over n over 1 over n, and get 0 over 0.
+
+271
+00:27:58,160 --> 00:28:02,580
+Think the function form of it, and then apply the L'Hopital rule, and then tell me the result.
+
+272
+00:28:41,140 --> 00:28:53,080
+I'm waiting for you. Write the function form of it. Write arcten 1 over x over 1 over x, when x is going to infinity, for x greater than and equal to y.
+
+273
+00:28:54,660 --> 00:28:58,840
+Apply the L'Hôpital rule and tell me the result.
+
+274
+00:29:52,819 --> 00:29:57,240
+Ah, yes. [öğrenci], you're right. It's one. Anyone else?
+
+275
+00:30:02,516 --> 00:30:02,956
+Hmm.
+
+276
+00:30:09,875 --> 00:30:12,316
+Anyone else? It's 1, not 0.
+
+277
+00:30:21,971 --> 00:30:23,831
+But no problem, thank you.
+
+278
+00:30:26,172 --> 00:30:29,771
+Anyone else who is trying on it, tell me.
+
+279
+00:30:51,443 --> 00:30:52,963
+Okay, thank you.
+
+280
+00:30:53,223 --> 00:30:53,803
+Anyone else?
+
+281
+00:31:11,667 --> 00:31:21,647
+Okay, no problem. I think you get a small mistake about results. It's positive one. Okay. Anyone else?
+
+282
+00:31:23,447 --> 00:31:34,507
+When I see you hear lots of different results, it doesn't matter correct or not, mistaken or not. I feel so happy because you are working on it. This is important for me and you.
+
+283
+00:31:35,727 --> 00:31:39,987
+Don't hesitate. Making a mistake is no problem. We are just learning together here.
+
+284
+00:31:41,667 --> 00:31:47,087
+And always you can just ask me or speak in Turkish. No problem for me.
+
+285
+00:31:48,007 --> 00:31:49,507
+Just feel relaxed. Okay.
+
+286
+00:31:53,447 --> 00:31:57,447
+Okay.
+
+287
+00:31:53,491 --> 00:31:57,591
+If we are all okay, I want to continue with the solution.
+
+288
+00:31:58,751 --> 00:31:59,491
+Okay, well done.
+
+289
+00:32:00,672 --> 00:32:01,392
+Thank you.
+
+290
+00:32:03,192 --> 00:32:05,491
+Let's continue with the solution.
+
+291
+00:32:07,051 --> 00:32:11,152
+As I said, function form of it, please don't forget,
+
+292
+00:32:11,372 --> 00:32:14,831
+while we are writing the function form of a sequence, the general term,
+
+293
+00:32:15,392 --> 00:32:19,991
+don't forget it is positive numbers, positive integers, not the real numbers.
+
+294
+00:32:19,991 --> 00:32:21,991
+1x is greater than equal to 1.
+
+295
+00:32:21,991 --> 00:32:26,872
+And using the theorem, this limit is equal to this form.
+
+296
+00:32:27,051 --> 00:32:33,291
+Okay, they are saying, we are just writing, replacing x with n, n with x, I'm sorry.
+
+297
+00:32:34,331 --> 00:32:39,531
+0 times infinity must be done, 0 over 0 or infinity over infinity,
+
+298
+00:32:39,652 --> 00:32:41,172
+according to the type of the function.
+
+299
+00:32:42,091 --> 00:32:46,751
+And we can write arctangent 1 over x over 1 over x easily in order to use the L'Apital rule.
+
+300
+00:32:47,311 --> 00:32:50,412
+Now we have 0 over 0 when x is going to infinity.
+
+301
+00:32:50,412 --> 00:32:54,331
+Use the L'Apital rule, one by one, apply the derivatives.
+
+302
+00:32:54,711 --> 00:33:01,711
+Arctangent 1 over x derivative over 1 plus second power of the function.
+
+303
+00:33:02,152 --> 00:33:04,432
+1 over x derivative minus 1 over x squared.
+
+304
+00:33:04,571 --> 00:33:08,932
+1 plus second power of 1 over x, 1 over x squared.
+
+305
+00:33:09,672 --> 00:33:12,971
+Over 1 over x has the derivative minus 1 over x squared.
+
+306
+00:33:13,551 --> 00:33:13,871
+Similarly.
+
+307
+00:33:13,871 --> 00:33:19,231
+So do the needed operations and get 1 over 1 plus 1 over x squared.
+
+308
+00:33:19,951 --> 00:33:29,051
+Once you apply the limit, sorry, L'Apital rule directly put the value again in order to check
+
+309
+00:33:29,051 --> 00:33:31,511
+if we have still indeterminate form or not.
+
+310
+00:33:31,731 --> 00:33:34,731
+Do we need the second time L'Apital rule or not?
+
+311
+00:33:34,731 --> 00:33:38,672
+Directly check and write index is going to infinity.
+
+312
+00:33:38,811 --> 00:33:39,471
+What happens?
+
+313
+00:33:40,251 --> 00:33:40,771
+Oh, okay.
+
+314
+00:33:41,051 --> 00:33:43,112
+We have the finite result.
+
+315
+00:33:43,652 --> 00:33:46,331
+Because once we have x in the denominator,
+
+316
+00:33:47,011 --> 00:33:50,031
+which means when x is going to infinity,
+
+317
+00:33:50,271 --> 00:33:53,632
+any number defined with infinity results 0,
+
+318
+00:33:53,932 --> 00:33:56,311
+which means no indeterminate form here.
+
+319
+00:33:56,311 --> 00:33:59,591
+1 over 1 plus 0 results 1,
+
+320
+00:33:59,971 --> 00:34:04,771
+which means this limit is 1 at the same time this limit is 1.
+
+321
+00:34:04,771 --> 00:34:05,652
+Okay.
+
+322
+00:34:32,500 --> 00:34:33,059
+Any question?
+
+323
+00:34:34,260 --> 00:34:35,559
+Miss, I have a question.
+
+324
+00:34:35,940 --> 00:34:37,280
+Okay, I'm listening to you.
+
+325
+00:34:37,280 --> 00:34:41,619
+We have a formula which is used in the limited formulas.
+
+326
+00:34:42,260 --> 00:34:44,659
+Sin x over x equals 1.
+
+327
+00:34:45,400 --> 00:34:50,780
+Is this valid for arc sin x over x?
+
+328
+00:34:51,199 --> 00:34:58,559
+No, it is not valid because arc sin x and sin x are different functions,
+
+329
+00:34:58,719 --> 00:34:59,800
+just the inverse functions.
+
+330
+00:34:59,800 --> 00:35:05,019
+Because maybe you can have a transformation about arc sin function
+
+331
+00:35:05,019 --> 00:35:06,699
+and make it sin and then apply.
+
+332
+00:35:07,139 --> 00:35:09,300
+But in that limit, x must be going to 0.
+
+333
+00:35:09,380 --> 00:35:09,840
+Don't forget.
+
+334
+00:35:10,320 --> 00:35:11,019
+Okay, okay.
+
+335
+00:35:11,099 --> 00:35:11,760
+Thank you so much.
+
+336
+00:35:12,460 --> 00:35:12,980
+Not at all.
+
+337
+00:35:15,539 --> 00:35:17,900
+Okay, so I'm happy.
+
+338
+00:35:18,579 --> 00:35:19,699
+You are okay, I think.
+
+339
+00:35:20,260 --> 00:35:22,380
+And what about these limits?
+
+340
+00:35:22,460 --> 00:35:23,380
+These are easy limits.
+
+341
+00:35:23,519 --> 00:35:26,460
+Please do it and tell me if two minutes I'm giving you,
+
+342
+00:35:27,320 --> 00:35:28,219
+you can easily get.
+
+343
+00:35:28,519 --> 00:35:29,679
+These are two different.
+
+344
+00:35:29,800 --> 00:35:30,940
+examples.
+
+345
+00:35:31,179 --> 00:35:31,280
+Okay.
+
+346
+00:35:31,880 --> 00:35:34,179
+First, I will eat this easily and then this.
+
+347
+00:35:34,300 --> 00:35:34,699
+I'm waiting.
+
+348
+00:35:35,260 --> 00:35:36,179
+And tell me the result.
+
+349
+00:35:36,320 --> 00:35:37,159
+Write me the results.
+
+350
+00:35:37,159 --> 00:35:42,780
+I'm waiting.
+
+351
+00:35:53,043 --> 00:35:53,643
+Okay.
+
+352
+00:35:55,183 --> 00:35:57,203
+Second one, you say zero.
+
+353
+00:35:57,403 --> 00:35:57,623
+Okay.
+
+354
+00:36:08,916 --> 00:36:09,796
+Anyone else?
+
+355
+00:36:21,364 --> 00:36:26,983
+Are you sure is that zero, the second one? How did you do it?
+
+356
+00:36:34,452 --> 00:36:40,132
+İlk bir şey, 2 over 5.
+
+357
+00:36:42,292 --> 00:36:43,592
+Evet, minus 1.
+
+358
+00:37:22,963 --> 00:37:28,163
+Anyone else? Okay, well done. Anyone who gets minus 1 in the second one?
+
+359
+00:38:01,652 --> 00:38:03,271
+You can write me in turks no problem.
+
+360
+00:38:17,043 --> 00:38:18,903
+1 over infinity minus 1.
+
+361
+00:38:23,251 --> 00:38:30,512
+Conjugate method, I think so. I prefer conjugate method because we have infinity minus infinity.
+
+362
+00:38:32,592 --> 00:38:42,692
+And it's going to infinity. So multiply and divide the conjugate of it. And then it becomes easier.
+
+363
+00:38:50,260 --> 00:38:51,100
+I think so.
+
+364
+00:38:52,480 --> 00:38:53,460
+Yes, you're right.
+
+365
+00:38:55,940 --> 00:39:00,820
+Shall we see the solution? Do you want any? Wait more?
+
+366
+00:39:02,860 --> 00:39:05,880
+Any of you working on it? Or shall we see the solution?
+
+367
+00:39:20,148 --> 00:39:22,148
+Evet, tamam.
+
+368
+00:39:22,148 --> 00:39:24,148
+Tamamen, all of you.
+
+369
+00:39:24,148 --> 00:39:26,148
+Şimdi, bir sorun.
+
+370
+00:39:26,148 --> 00:39:28,148
+Öncelikle, bir sorun.
+
+371
+00:39:28,148 --> 00:39:30,148
+Normalde, bir sorun yok.
+
+372
+00:39:30,148 --> 00:39:32,148
+Çünkü, bunu yapmak için,
+
+373
+00:39:32,148 --> 00:39:34,148
+bunu yapmak için,
+
+374
+00:39:34,148 --> 00:39:36,148
+bir şekilde, bir sıfır bir sıfır,
+
+375
+00:39:36,148 --> 00:39:38,148
+bir sıfır bir sıfır,
+
+376
+00:39:38,148 --> 00:39:40,148
+bir sıfır,
+
+377
+00:39:40,148 --> 00:39:44,148
+ve bu sıfır,
+
+378
+00:39:44,148 --> 00:39:46,148
+aynı sıfır,
+
+379
+00:39:46,148 --> 00:39:48,148
+bu sıfır,
+
+380
+00:39:48,148 --> 00:39:50,148
+bir sıfır,
+
+381
+00:39:50,148 --> 00:39:52,148
+ve bu sıfır,
+
+382
+00:39:52,148 --> 00:41:36,148
+bir sıfır,
+
+383
+00:41:38,132 --> 00:41:38,952
+Any questions?
+
+384
+00:41:57,172 --> 00:42:05,811
+Okay, well done all of you. Thank you so much. I think you are so capable students. Thank you. I'm so happy.
+
+385
+00:42:09,364 --> 00:42:11,844
+İlk başta, bu noktada önemli.
+
+386
+00:42:12,644 --> 00:42:16,403
+Öncelikle, domaniyorsan ve secuenci yöntemler farklı.
+
+387
+00:42:16,403 --> 00:42:20,324
+Öncelikle, bu noktada bir noktada,
+
+388
+00:42:20,324 --> 00:42:23,324
+Öncelikle, bu noktada, bu noktada,
+
+389
+00:42:23,324 --> 00:42:50,324
+Öncelikle, bu noktada,
+
+390
+00:42:50,324 --> 00:42:52,324
+Bu noktada, bu noktada,
+
+391
+00:42:52,324 --> 00:43:51,324
+Öncelikle, bu noktada,
+
+392
+00:43:51,324 --> 00:43:53,324
+bu noktada,
+
+393
+00:43:55,731 --> 00:44:03,572
+Here it has no limit when x is going to infinity. Do you know why it has no limit here?
+
+394
+00:44:15,155 --> 00:44:16,916
+Here x can be real numbers.
+
+395
+00:44:18,335 --> 00:44:18,635
+Yes.
+
+396
+00:44:19,476 --> 00:44:20,115
+But here
+
+397
+00:44:20,115 --> 00:44:22,936
+when x is going to infinity
+
+398
+00:44:22,936 --> 00:44:23,936
+sin infinity.
+
+399
+00:44:24,456 --> 00:44:26,115
+And x is greater than 1.
+
+400
+00:44:26,755 --> 00:44:28,675
+But here it can be real number.
+
+401
+00:44:28,795 --> 00:44:29,655
+But here it's not.
+
+402
+00:44:29,775 --> 00:44:30,936
+It's positive integer.
+
+403
+00:44:31,476 --> 00:44:31,635
+Okay.
+
+404
+00:44:33,476 --> 00:44:34,835
+And we are sure that
+
+405
+00:44:34,835 --> 00:44:35,795
+it has no limit
+
+406
+00:44:35,795 --> 00:44:37,255
+sin infinity.
+
+407
+00:44:38,615 --> 00:44:40,355
+Yes, yes [öğrenci] you're right.
+
+408
+00:44:40,355 --> 00:44:41,036
+It's changing.
+
+409
+00:44:41,815 --> 00:44:43,456
+It's between minus 1 and 1.
+
+410
+00:44:43,456 --> 00:44:45,215
+Okay.
+
+411
+00:44:45,295 --> 00:44:45,835
+It's the volume
+
+412
+00:44:45,835 --> 00:44:46,516
+but we don't know
+
+413
+00:44:46,516 --> 00:44:47,996
+it's between minus 1 and 1.
+
+414
+00:44:48,655 --> 00:44:49,355
+I think so.
+
+415
+00:44:49,976 --> 00:44:50,335
+And then
+
+416
+00:44:50,335 --> 00:44:52,516
+that means
+
+417
+00:44:52,516 --> 00:44:54,155
+oscillating.
+
+418
+00:44:54,596 --> 00:44:55,315
+Yes, well done.
+
+419
+00:44:55,375 --> 00:44:55,976
+You're perfect.
+
+420
+00:44:56,096 --> 00:44:56,875
+Thank you so much.
+
+421
+00:44:57,295 --> 00:44:58,695
+You're so perfect students.
+
+422
+00:44:58,815 --> 00:44:59,155
+I think.
+
+423
+00:44:59,895 --> 00:45:00,395
+Thank you.
+
+424
+00:45:01,215 --> 00:45:02,436
+And you know
+
+425
+00:45:02,436 --> 00:45:04,476
+here the function form of it
+
+426
+00:45:04,476 --> 00:45:04,795
+real
+
+427
+00:45:04,795 --> 00:45:06,235
+but the
+
+428
+00:45:06,235 --> 00:45:09,375
+secuse form of it
+
+429
+00:45:09,375 --> 00:45:10,476
+positive integer.
+
+430
+00:45:11,775 --> 00:45:12,355
+Look
+
+431
+00:45:12,355 --> 00:45:13,175
+here
+
+432
+00:45:13,175 --> 00:45:15,436
+you see that
+
+433
+00:45:15,436 --> 00:45:16,496
+it's oscillating
+
+434
+00:45:16,496 --> 00:45:17,956
+because sin infinity
+
+435
+00:45:17,956 --> 00:45:19,215
+has no limit.
+
+436
+00:45:19,295 --> 00:45:19,996
+We cannot say
+
+437
+00:45:19,996 --> 00:45:20,916
+it's the value
+
+438
+00:45:20,916 --> 00:45:22,815
+which means
+
+439
+00:45:22,815 --> 00:45:23,596
+this limit
+
+440
+00:45:23,596 --> 00:45:24,916
+does not exist
+
+441
+00:45:24,916 --> 00:45:26,115
+because we have no limit
+
+442
+00:45:26,115 --> 00:45:27,155
+for the function form
+
+443
+00:45:27,155 --> 00:45:27,775
+because it's
+
+444
+00:45:27,775 --> 00:45:28,875
+x is greater than 1
+
+445
+00:45:28,875 --> 00:45:29,576
+and equal to 1
+
+446
+00:45:29,576 --> 00:45:30,615
+but it's real.
+
+447
+00:45:31,275 --> 00:45:31,936
+But here
+
+448
+00:45:31,936 --> 00:45:32,516
+it is
+
+449
+00:45:32,516 --> 00:45:33,936
+positive integer
+
+450
+00:45:33,936 --> 00:45:35,016
+again starting from 1
+
+451
+00:45:35,016 --> 00:45:35,255
+but
+
+452
+00:45:35,255 --> 00:45:36,735
+these are integers.
+
+453
+00:45:37,335 --> 00:45:38,576
+These are real numbers.
+
+454
+00:45:38,576 --> 00:45:40,476
+so put the integers
+
+455
+00:45:40,476 --> 00:45:42,436
+sin n pi
+
+456
+00:45:42,436 --> 00:45:44,755
+when n is greater
+
+457
+00:45:44,755 --> 00:45:45,395
+than 1
+
+458
+00:45:45,395 --> 00:45:47,195
+we have always 0
+
+459
+00:45:47,195 --> 00:45:47,895
+isn't it?
+
+460
+00:45:49,895 --> 00:45:50,536
+Because
+
+461
+00:45:50,536 --> 00:45:52,936
+how can I say
+
+462
+00:45:52,936 --> 00:45:54,275
+integer multiples
+
+463
+00:45:54,275 --> 00:45:55,056
+of pi
+
+464
+00:45:55,056 --> 00:45:55,795
+at the same
+
+465
+00:45:55,795 --> 00:45:56,775
+sine function
+
+466
+00:45:56,775 --> 00:45:57,996
+is always going to 0
+
+467
+00:45:57,996 --> 00:45:58,695
+isn't it?
+
+468
+00:45:58,695 --> 00:46:01,235
+2 pi
+
+469
+00:46:01,235 --> 00:46:01,956
+3 pi
+
+470
+00:46:01,956 --> 00:46:02,655
+5 pi
+
+471
+00:46:02,655 --> 00:46:03,795
+minus 2 pi
+
+472
+00:46:03,795 --> 00:46:05,076
+isn't it?
+
+473
+00:46:05,076 --> 00:46:06,016
+For sine function
+
+474
+00:46:06,016 --> 00:46:07,016
+when it is integer
+
+475
+00:46:07,016 --> 00:46:08,375
+multiples of pi
+
+476
+00:46:08,375 --> 00:46:09,476
+sine function
+
+477
+00:46:09,476 --> 00:46:10,675
+is always going to 0
+
+478
+00:46:10,675 --> 00:46:12,436
+that's why
+
+479
+00:46:12,436 --> 00:46:13,675
+it is always 0
+
+480
+00:46:13,675 --> 00:46:15,795
+but for the function form
+
+481
+00:46:15,795 --> 00:46:17,476
+when x is a real number
+
+482
+00:46:17,476 --> 00:46:18,436
+greater than 1
+
+483
+00:46:18,436 --> 00:46:19,735
+and equal to 1
+
+484
+00:46:19,735 --> 00:46:22,155
+different real numbers
+
+485
+00:46:22,155 --> 00:46:23,695
+lots of different values
+
+486
+00:46:23,695 --> 00:46:24,235
+it has.
+
+487
+00:46:24,235 --> 00:46:25,496
+okay
+
+488
+00:46:25,496 --> 00:46:26,355
+that's why
+
+489
+00:46:26,355 --> 00:46:27,215
+it has no limit
+
+490
+00:46:27,215 --> 00:46:27,996
+but here
+
+491
+00:46:27,996 --> 00:46:29,615
+always the integer
+
+492
+00:46:29,615 --> 00:46:30,855
+multiples of pi
+
+493
+00:46:30,855 --> 00:46:32,215
+on the sine function
+
+494
+00:46:32,215 --> 00:46:32,876
+it results
+
+495
+00:46:32,876 --> 00:46:33,835
+always 0
+
+496
+00:46:33,835 --> 00:46:34,956
+that's why
+
+497
+00:46:34,956 --> 00:46:35,675
+which means
+
+498
+00:46:35,675 --> 00:46:37,115
+this is a convergent
+
+499
+00:46:37,115 --> 00:46:38,876
+because it's always 0
+
+500
+00:46:38,876 --> 00:46:40,416
+infinitely many numbers
+
+501
+00:46:40,416 --> 00:46:40,895
+of 0
+
+502
+00:46:40,895 --> 00:46:42,355
+but convergent to 0
+
+503
+00:46:42,355 --> 00:46:43,576
+so it is convergent
+
+504
+00:46:43,576 --> 00:46:44,735
+what does it mean?
+
+505
+00:46:45,115 --> 00:46:46,115
+This limit exists
+
+506
+00:46:46,115 --> 00:46:47,496
+this limit is going to 0
+
+507
+00:46:47,496 --> 00:46:48,916
+as you see
+
+508
+00:46:48,916 --> 00:46:50,096
+sine n pi
+
+509
+00:46:50,096 --> 00:46:51,036
+limit
+
+510
+00:46:51,036 --> 00:46:52,416
+when n is going to infinity
+
+511
+00:46:52,416 --> 00:46:54,215
+equals to 0
+
+512
+00:46:54,215 --> 00:46:55,855
+but the function form
+
+513
+00:46:55,855 --> 00:46:57,536
+because of having real numbers
+
+514
+00:46:57,536 --> 00:47:00,036
+it's no limit
+
+515
+00:47:00,036 --> 00:47:02,775
+do you understand it?
+
+516
+00:47:02,775 --> 00:47:03,916
+it's a very nice example
+
+517
+00:47:03,916 --> 00:47:04,456
+for you
+
+518
+00:47:04,456 --> 00:47:05,956
+in order to see
+
+519
+00:47:05,956 --> 00:47:06,855
+the difference
+
+520
+00:47:06,855 --> 00:47:07,815
+of functions
+
+521
+00:47:07,815 --> 00:47:08,916
+and the seconds form
+
+522
+00:47:17,748 --> 00:47:22,688
+Any questions? Are you okay? Do you understand or not? Do you want me to repeat it or? Okay.
+
+523
+00:47:35,860 --> 00:47:42,200
+Anyone? Oh, thank you. Like a diamond in the sky.
+
+524
+00:47:49,556 --> 00:47:49,916
+Okay.
+
+525
+00:47:54,452 --> 00:48:06,852
+Anyone? It's important for me to understand of you, of this note and the example. Any question? Are you all okay?
+
+526
+00:48:11,860 --> 00:48:15,180
+Ok, if you have any problem, you can write me. So, I need to continue.
+
+527
+00:48:19,027 --> 00:48:26,027
+Şimdi, last konceptı ile ilgili bir şekilde de
+
+528
+00:48:26,027 --> 00:48:33,027
+bir şekilde de
+
+529
+00:48:33,027 --> 00:51:43,027
+bir şekilde
+
+530
+00:51:34,516 --> 00:51:34,856
+Ok.
+
+531
+00:51:41,523 --> 00:51:46,403
+What about the next definition? It's about increasing and decreasing.
+
+532
+00:51:49,043 --> 00:51:52,963
+Two alternative definitions you see here. If you want you can use only this.
+
+533
+00:51:52,963 --> 00:51:59,123
+Asaq an is non-decreasing if an is less than an equal to an plus one for all n.
+
+534
+00:51:59,123 --> 00:52:07,603
+Or you can say that Asaq an is increasing if an is less than an plus one for all n.
+
+535
+00:52:07,603 --> 00:52:16,003
+Similarly Asaq an is non-decreasing if an is greater than an equal to an plus one for all n.
+
+536
+00:52:16,003 --> 00:52:23,763
+Or alternatively Asaq an is decreasing if an is greater than an plus one for all n.
+
+537
+00:52:23,763 --> 00:52:26,163
+Any of them you can use no problem.
+
+538
+00:52:27,203 --> 00:52:32,563
+Aqlity you may put or it doesn't mean that always we need to get the aqlity or not.
+
+539
+00:52:32,563 --> 00:52:34,884
+No, no problem. Any of them you can use.
+
+540
+00:52:34,884 --> 00:52:39,364
+Don't deal with the aqlity so much. No problem.
+
+541
+00:52:40,083 --> 00:52:42,563
+And this one we have a seqlis is monotonic.
+
+542
+00:52:43,123 --> 00:52:48,243
+The seqlis is monotonic if it is either non-decreasing or non-decreasing.
+
+543
+00:52:48,243 --> 00:52:53,683
+Which means if it is increasing or decreasing that seqlis is monotonic.
+
+544
+00:52:53,683 --> 00:52:58,963
+Increasing or decreasing. Not every seqlis must be increasing or decreasing.
+
+545
+00:52:58,963 --> 00:53:06,483
+Okay, some seqlis are having this property and dead seqlis are called monotonic seqlis.
+
+546
+00:53:08,483 --> 00:53:10,963
+And the next theorem monotonic seqlis theorem.
+
+547
+00:53:12,163 --> 00:53:19,364
+And it says if a seqlis an is both upper bounded and increasing or both lower bound and decreasing.
+
+548
+00:53:19,364 --> 00:53:24,563
+It is convergent. Why do we use this theorem? Let's think.
+
+549
+00:53:24,563 --> 00:53:28,963
+To talk about the convergence or divergence of a seqlis.
+
+550
+00:53:30,083 --> 00:53:35,683
+That means without having the limit of the general term you can't tell that.
+
+551
+00:53:35,683 --> 00:53:38,963
+And you can prove that a seqlis is convergent or not.
+
+552
+00:53:38,963 --> 00:53:47,283
+If it is upper bounded and increasing or if it is lower bounded and decreasing.
+
+553
+00:53:47,283 --> 00:53:50,643
+You can tell that okay it is convergent.
+
+554
+00:53:53,123 --> 00:53:55,603
+Do you understand it? Are you okay?
+
+555
+00:54:03,827 --> 00:54:04,648
+Any questions?
+
+556
+00:54:08,916 --> 00:54:14,676
+Tamam, şimdi, bu partı ve bu partı ve bu partı?
+
+557
+00:54:14,676 --> 00:54:21,876
+Bu partı bir şey değil.
+
+558
+00:54:21,876 --> 00:54:25,236
+Bu, çok kolay.
+
+559
+00:54:25,236 --> 00:54:29,236
+Bu, bu partı ve bu partı.
+
+560
+00:54:29,236 --> 00:54:34,516
+Bu, bu partı.
+
+561
+00:54:34,516 --> 00:55:04,516
+Bu, bu
+
+562
+00:55:04,516 --> 00:55:13,396
+If every term in the sequence having this property means this sequence is increasing, getting greater and greater, okay?
+
+563
+00:55:14,416 --> 00:55:28,816
+And also if it has an upper bound increasing, increasing, increasing, but if it has an upper bound that means it is convergent according to the monotonic sequence theorem.
+
+564
+00:55:28,816 --> 00:55:31,356
+Think the decreasing.
+
+565
+00:55:32,396 --> 00:55:38,115
+If a sequence is decreasing, if an is greater than an plus one, just think.
+
+566
+00:55:38,736 --> 00:55:43,936
+An is greater than the previous, I'm sorry, an is greater than the following term.
+
+567
+00:55:44,496 --> 00:55:49,996
+That means once we have a term, the following term is less than the previous one.
+
+568
+00:55:50,376 --> 00:55:54,296
+That means it's getting less, it's getting less, it's getting less and less.
+
+569
+00:55:54,296 --> 00:55:55,676
+That means it is decreasing.
+
+570
+00:55:55,676 --> 00:56:05,135
+In order to talk about the convergent of it, because once we have a sequence is getting less and less, maybe it's going to a negative infinity, we cannot know.
+
+571
+00:56:05,716 --> 00:56:14,936
+That's why if it has a lower bound and decreasing, it is a convergent series according to the monotonic sequence theorem.
+
+572
+00:56:15,615 --> 00:56:21,436
+And if a sequence is increasing or decreasing, it is monotonic.
+
+573
+00:56:21,436 --> 00:56:26,115
+I'm reading your question.
+
+574
+00:56:26,655 --> 00:56:30,155
+Why just don't we say that increasing instead of non-decreation?
+
+575
+00:56:30,256 --> 00:56:31,676
+Yes, we can say no problem.
+
+576
+00:56:32,036 --> 00:56:33,096
+Don't think so much.
+
+577
+00:56:34,056 --> 00:56:38,615
+These are all alternative ways and I always prefer these alternative ones.
+
+578
+00:56:39,135 --> 00:56:40,276
+Just use for increasing.
+
+579
+00:56:40,936 --> 00:56:44,216
+Think that if an is an plus one, okay, it's increasing.
+
+580
+00:56:44,216 --> 00:56:50,896
+For decreasing, if an is greater than an plus one for all n, of course, just stay decreasing and that's all.
+
+581
+00:56:51,436 --> 00:56:51,596
+Okay.
+
+582
+00:56:52,236 --> 00:56:53,056
+I think so.
+
+583
+00:56:53,115 --> 00:56:56,676
+But you are, I think, very normal.
+
+584
+00:56:56,856 --> 00:57:01,976
+It's very normal to have a confusion about two alternative ways of writing.
+
+585
+00:57:02,655 --> 00:57:03,155
+No problem.
+
+586
+00:57:03,155 --> 00:57:07,276
+And be careful about monotonic sequence theorem.
+
+587
+00:57:07,936 --> 00:57:12,076
+If a sequence is increasing, just think increasing, increasing, increasing, increasing.
+
+588
+00:57:12,635 --> 00:57:20,296
+And once you see a sequence is always getting increasing, you can just think maybe it's going to infinity and diverging.
+
+589
+00:57:20,296 --> 00:57:29,036
+But if it has a, specifically has an upper bound, increasing, increasing, but it has a bound, which means it is convergent.
+
+590
+00:57:29,536 --> 00:57:33,376
+Or similarly, it's always getting less and less and less.
+
+591
+00:57:33,556 --> 00:57:39,476
+Maybe you can think that, oh, it's getting always less, which means maybe going to negative infinity.
+
+592
+00:57:39,916 --> 00:57:40,896
+Maybe it's diverging.
+
+593
+00:57:40,896 --> 00:57:48,236
+But specifically, if it has a lower bound, which means it is a convergence sequence.
+
+594
+00:57:48,236 --> 00:57:50,696
+Are you okay now?
+
+595
+00:57:55,092 --> 00:57:56,172
+What about the others?
+
+596
+00:58:01,972 --> 00:58:09,392
+I advise you to write them down later after the course and solve the questions on your own.
+
+597
+00:58:09,612 --> 00:58:13,272
+Please solve the questions after the lesson on your own.
+
+598
+00:58:13,272 --> 00:58:15,852
+You will see that, okay, I understand.
+
+599
+00:58:16,152 --> 00:58:18,612
+Or, oh, I have a problem I couldn't understand.
+
+600
+00:58:18,812 --> 00:58:18,992
+Okay.
+
+601
+00:58:19,412 --> 00:58:23,852
+Always please repeat your solutions without looking at the solution.
+
+602
+00:58:24,352 --> 00:58:24,572
+Okay.
+
+603
+00:58:26,052 --> 00:58:28,512
+So thank you and continue.
+
+604
+00:58:28,512 --> 00:58:33,052
+These are the last definitions for this topic.
+
+605
+00:58:35,132 --> 00:58:40,992
+For every n, if a n is positive, that means this sequence is a positive sequence.
+
+606
+00:58:40,992 --> 00:58:46,312
+And similarly, when all the terms are negative, a n is a negative sequence.
+
+607
+00:58:47,132 --> 00:58:54,052
+And alternating sequence, if for every n, a n is different from 0, never be 0.
+
+608
+00:58:54,052 --> 00:59:05,472
+But the multiplications of two following terms, always negative, which means one of them is positive.
+
+609
+00:59:05,652 --> 00:59:06,731
+The other one is negative.
+
+610
+00:59:06,932 --> 00:59:08,692
+Positive, negative.
+
+611
+00:59:08,812 --> 00:59:11,652
+That's why one is different from 0.
+
+612
+00:59:11,652 --> 00:59:20,892
+And every two following terms, the multiplication is negative, which means positive, negative, positive, negative is an alternating sequence.
+
+613
+00:59:22,032 --> 00:59:22,272
+Okay.
+
+614
+00:59:22,872 --> 00:59:24,132
+These are easy definitions.
+
+615
+00:59:24,332 --> 00:59:25,132
+I think you are okay.
+
+616
+00:59:27,492 --> 00:59:29,432
+And we will continue with the exercises.
+
+617
+00:59:31,852 --> 00:59:33,792
+And if you get tired, you can tell me.
+
+618
+00:59:33,792 --> 01:00:03,772
+Thank you.
+
+619
+00:59:42,996 --> 00:59:47,416
+Are you okay? Shall we continue or do you need a break? Tell me.
+
+620
+00:59:51,443 --> 00:59:53,264
+We have only examples left.
+
+621
+00:59:58,195 --> 01:00:01,655
+Okay, just decide.
+
+622
+01:00:03,815 --> 01:00:07,016
+If you want, I can continue. If you want, I have a break.
+
+623
+01:00:08,556 --> 01:00:10,056
+Oh, thank you so much.
+
+624
+01:00:12,056 --> 01:00:15,375
+Okay, so, anyone else?
+
+625
+01:00:17,835 --> 01:00:19,576
+I will continue, so.
+
+626
+01:00:21,875 --> 01:00:25,596
+Okay, my clever students, thank you so much.
+
+627
+01:00:25,596 --> 01:00:32,915
+Because normally, if I advise you or tell that, shall we have a break?
+
+628
+01:00:33,215 --> 01:00:35,935
+Generally, the students, yes, yes, we need a break.
+
+629
+01:00:36,135 --> 01:00:38,835
+But most of you don't need.
+
+630
+01:00:40,115 --> 01:00:41,635
+But some of you need.
+
+631
+01:00:42,635 --> 01:00:46,895
+So let's have a break for five minutes and then refresh ourselves and then continue.
+
+632
+01:00:47,056 --> 01:00:48,715
+Okay, for five minutes only.
+
+633
+01:00:48,976 --> 01:00:49,815
+I'm waiting here.
+
+634
+01:00:50,115 --> 01:00:51,835
+If you have any question, you can write me.
+
+635
+01:00:51,835 --> 01:00:54,016
+I'm here waiting for five minutes.
+
+636
+01:08:56,180 --> 01:09:10,740
+Okay, let's continue. So, my dear students, continue with the exercises. In the first one, in the first exercise, we will do it together and later I will have some questions for you.
+
+637
+01:09:18,131 --> 01:09:25,131
+Bu ilk önce, konvergans, bounds ve
+
+638
+01:09:25,131 --> 01:09:27,131
+konuşma, ok?
+
+639
+01:09:27,131 --> 01:09:28,131
+İlk önce, sekunden, ok?
+
+640
+01:09:28,131 --> 01:09:30,131
+Yani, sekunden, ok?
+
+641
+01:09:30,131 --> 01:09:33,131
+Yani, n over n plus 1.
+
+642
+01:09:33,131 --> 01:09:34,131
+Ve bu, n over n plus 1.
+
+643
+01:09:34,131 --> 01:09:36,131
+Ve bu, n over n over n plus 1.
+
+644
+01:09:36,131 --> 01:10:06,131
+Evet, n over n
+
+645
+01:10:06,131 --> 01:10:36,231
+n over n
+
+646
+01:10:43,539 --> 01:10:45,579
+What about the lower bound?
+
+647
+01:10:46,859 --> 01:10:51,460
+For all positive integers, we have n plus 1 is less than or equal to 2n.
+
+648
+01:10:52,079 --> 01:10:53,840
+For n, 1, 2, 3.
+
+649
+01:10:54,359 --> 01:10:57,479
+So n plus 1 over n is less than or equal to 2.
+
+650
+01:10:57,479 --> 01:10:58,479
+So...
+
+651
+01:11:05,684 --> 01:11:08,284
+I forgot to write here.
+
+652
+01:11:09,144 --> 01:11:14,623
+N over N plus 1 is less than, greater than, equal to 1 over 2 according to this one.
+
+653
+01:11:15,423 --> 01:11:17,043
+I think I've forgotten to write here.
+
+654
+01:11:17,923 --> 01:11:21,184
+That's why it is a lower bound and upper bound.
+
+655
+01:11:21,324 --> 01:11:23,284
+That's why it is a bounded sequins.
+
+656
+01:11:23,984 --> 01:11:24,144
+Okay.
+
+657
+01:11:25,724 --> 01:11:27,904
+What about it is increasing or decreasing?
+
+658
+01:11:27,904 --> 01:11:38,024
+In order to understand, because it's not always clearly seen that AN is always less than
+
+659
+01:11:38,024 --> 01:11:41,423
+AN plus 1 or AN is always greater than AN plus 1.
+
+660
+01:11:41,724 --> 01:11:46,284
+In order to understand and prove it, you can just use two ways.
+
+661
+01:11:46,923 --> 01:11:50,144
+By dividing or having the subtraction.
+
+662
+01:11:50,704 --> 01:11:54,984
+By dividing, if it is less than 1 or equal to 1, you can make a comment.
+
+663
+01:11:54,984 --> 01:12:03,744
+But if you have the subtraction, that means AN minus AN plus 1 or AN plus 1 minus AN, you
+
+664
+01:12:03,744 --> 01:12:06,043
+have to just deal is it positive or negative.
+
+665
+01:12:06,724 --> 01:12:09,524
+And then you can make a comment about increasing or decreasing.
+
+666
+01:12:09,724 --> 01:12:09,864
+Okay.
+
+667
+01:12:10,144 --> 01:12:13,064
+Two ways you have for this one.
+
+668
+01:12:13,543 --> 01:12:20,524
+And here we prefer dividing AN and AN plus 1 because we can easily understand if it is
+
+669
+01:12:20,524 --> 01:12:22,224
+greater than 1 or less than 1.
+
+670
+01:12:22,224 --> 01:12:26,024
+Divide with AN over AN plus 1 and see.
+
+671
+01:12:26,804 --> 01:12:27,384
+It is AN.
+
+672
+01:12:28,043 --> 01:12:30,463
+AN plus 1, AN plus 1 over AN plus 2.
+
+673
+01:12:31,104 --> 01:12:35,564
+It results N square plus 2N over N square plus 2N plus 1.
+
+674
+01:12:35,564 --> 01:12:40,484
+And as you see, the denominator is always greater than numerator.
+
+675
+01:12:40,944 --> 01:12:42,163
+So it's less than 1.
+
+676
+01:12:42,663 --> 01:12:47,064
+Always for every positive integer N, it is less than 1.
+
+677
+01:12:47,064 --> 01:12:51,724
+So AN is less than AN plus 1.
+
+678
+01:12:51,844 --> 01:12:52,644
+What does it mean?
+
+679
+01:12:53,244 --> 01:13:07,503
+It's an increasing sequence.
+
+680
+01:13:07,503 --> 01:13:16,503
+It's increasing sequence.
+
+681
+01:13:00,500 --> 01:13:02,779
+Can we talk about the convergent? Yes.
+
+682
+01:13:06,420 --> 01:13:07,560
+Can you wait for me?
+
+683
+01:13:38,228 --> 01:13:42,448
+Monotonic Secunds Theorem, it is an increasing secunds.
+
+684
+01:13:42,448 --> 01:13:47,387
+And also it has a bound, increasing, but it has an upper bound, which is one.
+
+685
+01:13:48,608 --> 01:13:52,087
+That's why we can say that it is a convergent secunds.
+
+686
+01:13:54,167 --> 01:14:01,148
+We talk about, firstly, upper and lower bound, if it has, yes it has.
+
+687
+01:14:01,728 --> 01:14:06,188
+And then talking about increasing or decreasing, yes it is increasing.
+
+688
+01:14:06,188 --> 01:14:13,307
+It has an upper bound and increasing, which means it is convergent via the monotonic secunds.
+
+689
+01:14:13,307 --> 01:14:13,587
+Theorem.
+
+690
+01:14:18,771 --> 01:14:19,631
+You understand it?
+
+691
+01:14:21,631 --> 01:14:24,452
+You have to repeat these questions on your own, okay?
+
+692
+01:14:24,532 --> 01:14:26,931
+Don't forget, in order to understand clearly.
+
+693
+01:14:27,811 --> 01:14:30,391
+Because once you see them, okay, it's clear.
+
+694
+01:14:30,692 --> 01:14:37,832
+But if you are trying to solve the solution and this question without looking at the solution, you will understand you have a problem or not.
+
+695
+01:14:37,832 --> 01:14:44,171
+Okay, that's why I always advise my students to repeat the solutions on your own, okay?
+
+696
+01:14:44,652 --> 01:14:45,551
+Try to solve them.
+
+697
+01:14:45,551 --> 01:14:49,412
+These questions and then I think you will be okay.
+
+698
+01:14:50,131 --> 01:14:51,492
+Wait about the next question.
+
+699
+01:14:51,612 --> 01:14:52,011
+Tell me.
+
+700
+01:14:52,452 --> 01:14:53,612
+Let's talk about it.
+
+701
+01:14:54,751 --> 01:14:55,492
+What do you think?
+
+702
+01:14:55,891 --> 01:14:58,492
+This sequence is bounded.
+
+703
+01:15:02,515 --> 01:15:04,715
+Yes, tell me. I wonder your ideas.
+
+704
+01:15:20,404 --> 01:15:22,464
+Okay, alternating, yes, you're right.
+
+705
+01:15:23,844 --> 01:15:25,244
+I think it is bonded.
+
+706
+01:15:26,424 --> 01:15:27,224
+Look carefully.
+
+707
+01:15:30,931 --> 01:15:35,271
+SEQs can be both alternating, both bounded, no problem.
+
+708
+01:15:41,844 --> 01:15:44,104
+Okay, what about the boundedness?
+
+709
+01:15:45,304 --> 01:15:46,344
+What kind of a thing?
+
+710
+01:15:47,524 --> 01:15:48,743
+Can you understand?
+
+711
+01:15:50,623 --> 01:15:52,923
+Look at the terms, look at the terms carefully.
+
+712
+01:15:53,884 --> 01:15:54,904
+I think you can find.
+
+713
+01:15:55,944 --> 01:15:58,123
+For example, you can tell me the lower bound.
+
+714
+01:16:08,435 --> 01:16:10,435
+Evet.
+
+715
+01:16:10,435 --> 01:16:12,435
+1 over 2.
+
+716
+01:16:12,435 --> 01:16:14,435
+Lower bound or upper bound?
+
+717
+01:16:16,435 --> 01:16:19,435
+Evet.
+
+718
+01:16:19,435 --> 01:16:20,435
+Bu da upper bound?
+
+719
+01:16:20,435 --> 01:18:06,435
+Evet.
+
+720
+01:17:51,315 --> 01:17:52,076
+That's okay.
+
+721
+01:17:54,076 --> 01:17:54,895
+Is it clear?
+
+722
+01:18:07,667 --> 01:18:08,447
+Evet, belki.
+
+723
+01:18:10,768 --> 01:18:11,127
+Okay.
+
+724
+01:18:12,247 --> 01:18:12,627
+But,
+
+725
+01:18:12,867 --> 01:18:19,527
+We cannot say, I think it's convergent to zero, we are not sure.
+
+726
+01:18:22,268 --> 01:18:22,747
+Okay.
+
+727
+01:18:23,427 --> 01:18:24,127
+I thank you.
+
+728
+01:18:24,307 --> 01:18:25,087
+Thank you so much.
+
+729
+01:18:58,612 --> 01:19:02,231
+Does it have a bond? Lover or upper?
+
+730
+01:19:11,220 --> 01:19:19,320
+Okay, but if we have the negative infinity, that means it is boundedness. Okay, no bound it has.
+
+731
+01:19:20,159 --> 01:19:25,360
+But I am not to understand you, because you say that for negative numbers, it's going to negative infinity.
+
+732
+01:19:25,940 --> 01:19:33,760
+And no bound, I think so. For positive one, for positive terms, again, it's going to positive infinity.
+
+733
+01:19:33,760 --> 01:19:41,140
+That means two groups of terms here in the seconds we have, two different groups, positive group going to positive infinity.
+
+734
+01:19:41,220 --> 01:19:48,480
+Negative group going to negative infinity, infinitely growing and getting less. That's why it has no bound.
+
+735
+01:19:48,480 --> 01:19:52,820
+We can only say that this is an alternative sequence, that's all. Okay?
+
+736
+01:19:58,771 --> 01:20:01,391
+Like you said, yes, you're right, thank you.
+
+737
+01:20:13,140 --> 01:20:15,260
+Let's talk about the fourth one.
+
+738
+01:20:16,480 --> 01:20:18,320
+What do you think? Is it monotonic?
+
+739
+01:20:19,240 --> 01:20:22,200
+Can you prove it? I'm waiting. Is it monotonic?
+
+740
+01:20:54,963 --> 01:20:57,823
+İntarval, n is greater than an equal to one.
+
+741
+01:20:58,943 --> 01:21:01,443
+And positive integers, always.
+
+742
+01:21:02,703 --> 01:21:04,684
+You can prove the monotony tip,
+
+743
+01:21:05,384 --> 01:21:07,144
+again with two ways,
+
+744
+01:21:07,863 --> 01:21:09,604
+if you want.
+
+745
+01:21:19,507 --> 01:21:25,667
+Ama burada, farklı bir şekilde yapabilirsiniz.
+
+746
+01:21:27,667 --> 01:21:30,667
+Evet, bu doğru.
+
+747
+01:21:34,260 --> 01:21:40,480
+Let's look. Now I want to show you a different, an alternative method to talk about the monotony.
+
+748
+01:21:40,480 --> 01:21:40,960
+Look.
+
+749
+01:21:48,724 --> 01:21:50,724
+Bu konotundaki konusunda bu konotundaki konusunda
+
+750
+01:21:50,724 --> 01:21:55,724
+bu konusunda
+
+751
+01:21:55,724 --> 01:21:58,724
+derivataç olarak
+
+752
+01:21:58,724 --> 01:22:00,724
+ok?
+
+753
+01:22:00,724 --> 01:22:02,724
+Bu konusunda derivataç olarak
+
+754
+01:22:02,724 --> 01:22:04,724
+derivataç olarak
+
+755
+01:22:04,724 --> 01:22:06,724
+çünkü,
+
+756
+01:22:06,724 --> 01:22:08,724
+seneyde derivataç olarak
+
+757
+01:22:08,724 --> 01:23:26,724
+derivataç olarak
+
+758
+01:23:27,667 --> 01:23:29,507
+Are you okay? Do you understand it?
+
+759
+01:23:31,807 --> 01:23:40,627
+In order to show that, [öğrenci], in Mathematics 1, and also from your high school knowledges, I think you need to just remember,
+
+760
+01:23:41,487 --> 01:23:46,747
+if a single variable function fx having the positive first order derivative,
+
+761
+01:23:47,527 --> 01:23:52,587
+when the first order derivative of a function is positive, that means that function is increasing.
+
+762
+01:23:52,587 --> 01:24:00,527
+Once we have the first order derivative is negative on an interval, that means that function is decreasing on an interval.
+
+763
+01:24:01,347 --> 01:24:05,587
+That means a sign of the derivative shows the increasing or decreasing of a function.
+
+764
+01:24:06,207 --> 01:24:13,907
+But I know this is not a function, but we just write the function form of the sequence in order to prove the monotony easily.
+
+765
+01:24:14,407 --> 01:24:16,007
+This is the alternative method, okay?
+
+766
+01:24:17,007 --> 01:24:19,887
+This is the alternative method to show the monotony.
+
+767
+01:24:23,667 --> 01:24:24,167
+Ok.
+
+768
+01:24:30,452 --> 01:24:31,212
+Any question?
+
+769
+01:24:48,275 --> 01:24:56,996
+If you're okay, I will continue with the next one. Look, if n over en, e to n, is it monotonic?
+
+770
+01:24:59,555 --> 01:25:06,435
+You can apply the same way. Again, you can understand the monotonic from the first derivative.
+
+771
+01:25:06,435 --> 01:25:11,876
+Or if you want, you can just look if an is greater than an plus one or less than an plus one.
+
+772
+01:25:11,876 --> 01:25:18,996
+This is up to you. All of them are valid. And use, you can use, no problem.
+
+773
+01:25:56,307 --> 01:25:56,807
+Okay.
+
+774
+01:25:58,007 --> 01:25:59,127
+Anyone else?
+
+775
+01:27:10,100 --> 01:27:21,960
+Oh, thank you so much. I'm talking. Thank you so much. Let's repeat it. In this case, again, it's easier to use the first order derivative in order to understand increasing or decreasing.
+
+776
+01:27:22,240 --> 01:27:36,420
+And get the first order derivative f' of x is e to x minus x e to x over e to 2x, which gets 1 minus x over e to 2x less than and equal to 0.
+
+777
+01:27:36,420 --> 01:27:50,140
+Because e to x is always positive. For x is 1, this is 0. For x is greater than 1, it's negative. That's why function is decreasing. So, this sequence is decreasing. That's why monotonic.
+
+778
+01:28:00,051 --> 01:28:22,851
+Always, always I have with these crafts, yes, unfortunately I cannot do anything. He is so little because, I think so. Yes, always. I'm always at home and always he missed me.
+
+779
+01:28:32,500 --> 01:28:35,300
+Evet, tamam. Do you have any question?
+
+780
+01:28:38,300 --> 01:28:39,420
+I understand you.
+
+781
+01:28:40,539 --> 01:28:41,060
+At the back.
+
+782
+01:28:43,279 --> 01:28:45,140
+Which means it's so normal.
+
+783
+01:28:46,239 --> 01:28:47,899
+For boys, maybe.
+
+784
+01:28:48,899 --> 01:28:50,500
+Do you have any question?
+
+785
+01:28:51,319 --> 01:28:51,680
+Yes.
+
+786
+01:29:02,131 --> 01:29:06,071
+Any questions about all the things up to now?
+
+787
+01:29:06,551 --> 01:29:07,931
+We are okay today.
+
+788
+01:29:08,511 --> 01:29:10,451
+And we have finished the sequences.
+
+789
+01:29:11,152 --> 01:29:14,871
+And the next week we will continue with the infinite series.
+
+790
+01:29:15,631 --> 01:29:17,511
+And this will be a detailed topic.
+
+791
+01:29:19,271 --> 01:29:21,371
+And we will continue the next week.
+
+792
+01:29:22,071 --> 01:29:22,771
+Any questions?
+
+793
+01:29:23,471 --> 01:29:25,051
+I thank you for your participation.
+
+794
+01:29:25,192 --> 01:29:26,771
+All of you, I want to thank you.
+
+795
+01:29:27,571 --> 01:29:29,731
+Because you just work with me,
+
+796
+01:29:29,731 --> 01:29:32,451
+try to solve the questions and answer my questions.
+
+797
+01:29:32,571 --> 01:29:34,171
+Thank you so much, all of you.
+
+798
+01:29:34,171 --> 01:29:34,231
+Thank you.
+
+799
+01:29:45,747 --> 01:29:46,627
+I thank you.
+
+800
+01:29:52,020 --> 01:29:52,780
+Take care.
+
+801
+01:29:57,220 --> 01:29:58,060
+[öğrenci].
+
+802
+01:30:01,900 --> 01:30:06,480
+Bölüm dersinde mi çakışma oluyor acaba bu dersle beraber?
+
+803
+01:30:08,280 --> 01:30:08,560
+Tamam.
+
+804
+01:30:10,460 --> 01:30:13,440
+O zaman bu tabii tercih sana kalıyor.
+
+805
+01:30:14,280 --> 01:30:17,200
+Arada bunu da sonradan en azından takip edebilirsin.
+
+806
+01:30:17,200 --> 01:30:20,240
+Arada belki bu dersi dinleyip diğerini kayıttan.
+
+807
+01:30:20,360 --> 01:30:21,860
+O kararı sana bırakıyorum.
+
+808
+01:30:22,640 --> 01:30:25,740
+Bu belgeleyebileceğim bir durum için problem olmaması gerekiyor.
+
+809
+01:30:26,820 --> 01:30:33,440
+Bu durumu hep tamam o zaman problem yok ama bunu dönem sonuna tekrar konuşalım.
+
+810
+01:30:33,520 --> 01:30:34,740
+Bu durumu tekrar bana hatırlat.
+
+811
+01:30:34,820 --> 01:30:40,500
+Herhangi bir durum olursa bu durumu bildiğimi ve belgeleyebileceğimizi unutmayalım.
+
+812
+01:30:42,500 --> 01:30:46,700
+Dönem sonunda bunu tekrar böyle bir durum vardı deyip tekrar konuşalım olur mu?
+
+813
+01:30:46,700 --> 01:30:47,180
+Tamam.
+
+814
+01:30:47,180 --> 01:30:51,400
+Kendinize çok iyi bakın.
+
+815
+01:30:51,780 --> 01:30:53,620
+Katılımlarınız için teşekkür ediyorum.
+
+816
+01:30:54,780 --> 01:30:57,740
+Haftaya tekrar görüşmek üzere inşallah.
