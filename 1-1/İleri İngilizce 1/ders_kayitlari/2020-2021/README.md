@@ -31,3 +31,4 @@
 | 41 | Güz | Kılıç (adı bulunamadı) | [sube_41/](sube_41/) |
 | 43 | Güz | Bulunamadı | [sube_43/](sube_43/) |
 | 45 | Güz | Sibel Atmaca | [sube_45/](sube_45/) |
+| 46 | Güz | Bulunamadı | [sube_46/](sube_46/) |
