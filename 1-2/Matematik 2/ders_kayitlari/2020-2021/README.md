@@ -26,3 +26,4 @@
 | 53 | Bahar | Elif Demir | [sube_53/](sube_53/) |
 | 55 | Bahar | Yonca Sezer | [sube_55/](sube_55/) |
 | 56 | Bahar | Özlem Bakşi | [sube_56/](sube_56/) |
+| 57 | Bahar | Sebahat Ebru Daş | [sube_57/](sube_57/) |

@@ -1,0 +1,5807 @@
+1
+00:00:08,051 --> 00:00:19,231
+Good afternoon to everyone. Merhaba arkadaşlar. Biraz bekleyelim birkaç dakika arkadaşlarımız kendisini. Nasıl geçiyor bakalım Ramazan'ın ikinci günü.
+
+2
+00:00:35,603 --> 00:00:37,603
+Burada yolda imata.
+
+3
+00:00:51,444 --> 00:01:06,704
+Şimdi anlatacağım konum notlarını da yalayayım size. Bugün vektörler ve doğru düzlemlere yapacağız ama doğru düzlemler bugün bitmez büyük ihtimalle. Bu arada kaçıncı haftada olduğumuzu hatırlıyor musunuz? 6 miyiz, 7 miyiz acaba?
+
+4
+00:01:22,835 --> 00:01:48,695
+Onun olduğu hafta şey olacak, ders olmayacak, söylemiştim size, 8. hafta tatil, yani dersler olmayacak, sınavlar falan var herhalde. O yüzden 8. hafta dersimiz yok, yani haftaya da dersimiz var, ondan sonra yok. Mayıs'ın sonu doğru diye hatırlıyorum. O yüzden konularımız rahat rahat geçişiriz. Hatta konuları şu an neredeyiz, ona da bir bakayım.
+
+5
+00:02:03,219 --> 00:02:04,219
+İkini
+
+6
+00:02:14,580 --> 00:02:15,120
+6'yız.
+
+7
+00:02:17,080 --> 00:02:18,960
+Şu anda vektörlere
+
+8
+00:02:18,960 --> 00:02:20,940
+geçeceğiz. Zaten şu an
+
+9
+00:02:20,940 --> 00:02:22,660
+6. haftanın konusunu anlatacağım.
+
+10
+00:02:22,820 --> 00:02:23,980
+Dolayısıyla tam gidiyoruz.
+
+11
+00:02:25,439 --> 00:02:26,120
+Bu hafta
+
+12
+00:02:26,120 --> 00:02:28,939
+doğru parçası, doğru düzlemler.
+
+13
+00:02:30,680 --> 00:02:33,080
+Bu hafta ilk önce vektörleri vereceğiz.
+
+14
+00:02:33,320 --> 00:02:34,439
+Doğru düzlemler.
+
+15
+00:02:35,660 --> 00:02:36,840
+Uzayındaki vektör
+
+16
+00:02:36,840 --> 00:02:38,700
+değerli fonksiyonlar. Sonra haftaya
+
+17
+00:02:38,700 --> 00:02:40,400
+çok değişkenli fonksiyonlara geçeceğiz.
+
+18
+00:02:42,020 --> 00:02:42,800
+Çok değişkenli
+
+19
+00:02:42,800 --> 00:02:44,220
+fonksiyonlardan sonra
+
+20
+00:02:44,220 --> 00:02:46,820
+sınav arası varmış zaten. Tam gidiyoruz şu anda.
+
+21
+00:02:49,020 --> 00:02:50,100
+Okay. So
+
+22
+00:02:50,100 --> 00:02:52,500
+I want to start
+
+23
+00:02:52,500 --> 00:02:54,280
+with our lesson. We have
+
+24
+00:02:54,280 --> 00:02:56,160
+60 people. It is okay.
+
+25
+00:02:57,600 --> 00:02:58,340
+Okay. So
+
+26
+00:02:58,340 --> 00:03:00,500
+now today we will talk
+
+27
+00:03:00,500 --> 00:03:02,140
+about first. We will
+
+28
+00:03:02,140 --> 00:03:04,379
+make a review about
+
+29
+00:03:04,379 --> 00:03:06,320
+vectors. You see vectors actually
+
+30
+00:03:06,320 --> 00:03:08,379
+in physics
+
+31
+00:03:08,379 --> 00:03:10,300
+1. We will use some
+
+32
+00:03:10,300 --> 00:03:12,160
+main properties of vectors.
+
+33
+00:03:12,160 --> 00:03:13,319
+What is the meaning of vectors?
+
+34
+00:03:13,319 --> 00:03:15,000
+How can you add or sum?
+
+35
+00:03:15,560 --> 00:03:17,120
+What is the meaning of
+
+36
+00:03:17,120 --> 00:03:19,879
+dot product, cross product
+
+37
+00:03:19,879 --> 00:03:20,819
+or
+
+38
+00:03:20,819 --> 00:03:25,660
+karışık
+
+39
+00:03:25,660 --> 00:03:29,939
+okay? So
+
+40
+00:03:29,939 --> 00:03:32,020
+first we will talk about
+
+41
+00:03:32,020 --> 00:03:33,740
+three-dimensional coordinate system.
+
+42
+00:03:33,740 --> 00:03:34,740
+we will talk about
+
+43
+00:03:34,740 --> 00:03:37,220
+we will talk about vectors in three-dimensional
+
+44
+00:03:37,220 --> 00:03:42,340
+system. If you want to show a point in your three-dimensional system, you need three points.
+
+45
+00:03:42,340 --> 00:03:54,780
+The first one is the position according to x, according to y and according to z. So this is a point in three-dimensional Cartesian coordinate system.
+
+46
+00:03:54,780 --> 00:03:56,939
+So
+
+47
+00:03:56,939 --> 00:04:14,620
+we can write some equations in the three-dimensional system. For example, what is the meaning of it? If z is greater or equal to zero, then it means that you can think in our life. In our life, it is three-dimensional system.
+
+48
+00:04:14,620 --> 00:04:33,280
+You can think across a wall, for example. So if they said that z is greater or equal to zero, then you will have this x, y system. You will take up to z equals zero.
+
+49
+00:04:33,280 --> 00:04:41,440
+This is the half space consisting of the points where z is positive or zero.
+
+50
+00:04:42,560 --> 00:04:45,280
+What is the meaning of x equals minus three?
+
+51
+00:04:47,360 --> 00:04:53,440
+If you talk about two-dimensional system, if you have only x, y system, x equals,
+
+52
+00:04:53,840 --> 00:04:55,600
+evet, attım gelmedi mi?
+
+53
+00:05:09,300 --> 00:05:09,660
+Okay.
+
+54
+00:05:16,435 --> 00:05:21,795
+Okay, if you talk about x equals minus 3, if you talk about in two-dimensional system, it is a line.
+
+55
+00:05:23,715 --> 00:05:29,716
+But if you want to talk about three-dimensional system, it won't be a line, it will be a plane.
+
+56
+00:05:29,716 --> 00:05:34,755
+Because here you have a restriction x equals minus 3, but you don't have any information about y and z.
+
+57
+00:05:34,755 --> 00:05:41,555
+They can say anything, you can take any of y and z's z points.
+
+58
+00:05:41,555 --> 00:05:46,435
+So it will be a plane which passes from x equals minus 3.
+
+59
+00:05:47,716 --> 00:05:49,716
+Let me show you.
+
+60
+00:05:49,716 --> 00:05:50,036
+3 also.
+
+61
+00:05:50,036 --> 00:05:57,955
+For example, let me take its place.
+
+62
+00:05:57,955 --> 00:06:03,075
+Okay, so x equals 3 is this, but you don't have any restrictions.
+
+63
+00:06:03,075 --> 00:06:05,716
+So you will take this kind of plane.
+
+64
+00:06:06,515 --> 00:06:08,915
+Okay, it is minus 3.
+
+65
+00:06:08,915 --> 00:06:16,596
+It will be orthogonal to x axis.
+
+66
+00:06:16,596 --> 00:06:19,235
+So it will be a plane which is parallel to z.
+
+67
+00:06:20,036 --> 00:06:23,875
+x will be 3, but you don't have any restriction about y and z.
+
+68
+00:06:23,875 --> 00:06:25,716
+Okay, so it will be like this.
+
+69
+00:06:26,755 --> 00:06:31,315
+For example, here it will be this.
+
+70
+00:06:31,315 --> 00:06:37,635
+Okay, so they will cut here, but in three-dimensional system, it will be a plane.
+
+71
+00:06:37,635 --> 00:06:42,195
+In two-dimensional system, it will be a plane.
+
+72
+00:06:42,195 --> 00:06:46,596
+Yani bir tabaka, şey, tabaka diyoruz.
+
+73
+00:06:46,596 --> 00:06:49,235
+Evet, yani bir ne olacak?
+
+74
+00:06:49,235 --> 00:06:50,755
+Bir düzlem olacaktır.
+
+75
+00:06:50,755 --> 00:06:51,795
+Kes, kes, kes, kesecek.
+
+76
+00:06:51,795 --> 00:06:57,315
+x eşit de, 3 de ama y ve z de herhangi bir kısıtlam olmadığı için bir düzlem belirtecek bize.
+
+77
+00:06:57,315 --> 00:07:27,315
+Bir de, bir de
+
+78
+00:07:27,315 --> 00:07:51,315
+also. So you can think that it will be a circle but in three-dimensional system it will be a cylinder. You don't have any restriction about it. So you will sketch a circle in x, y plane when z is zero but you don't have any restriction so you can take any z so it will be a cylinder.
+
+79
+00:07:51,315 --> 00:08:21,315
+bir de, bir de
+
+80
+00:08:21,315 --> 00:08:44,635
+Z is 3. If you want to take this one, when you cut this, your cylinder, this part will be, for example, Z will be 3. So they are asking this one. So Z equals 3, it will be a, here, it will be a plane. This shows a cylinder, this shows a plane.
+
+81
+00:08:45,596 --> 00:08:45,995
+Okay?
+
+82
+00:08:52,532 --> 00:08:55,711
+Okay, so you don't need to remember this one.
+
+83
+00:08:56,892 --> 00:09:02,932
+There are some equations, I gave you some extra information.
+
+84
+00:09:03,372 --> 00:09:07,552
+How can you find the distance and two points?
+
+85
+00:09:07,932 --> 00:09:12,892
+So the distance formula will be, the distance from P1 and P2 will be.
+
+86
+00:09:13,432 --> 00:09:17,252
+You will subtract the positions in x, y, and z-axis.
+
+87
+00:09:17,492 --> 00:09:19,652
+You will take square plus, okay?
+
+88
+00:09:19,652 --> 00:09:24,032
+Yeah, bunu kullanmayacağız, sadece bu biraz extra information geliyor.
+
+89
+00:09:26,032 --> 00:09:33,092
+This is the standard equation of a sphere, of radius a and center is x0, y0, z0.
+
+90
+00:09:34,471 --> 00:09:35,032
+Okay?
+
+91
+00:09:36,092 --> 00:09:37,692
+But çok fazla kullanmıyoruz.
+
+92
+00:09:39,412 --> 00:09:39,971
+Okay?
+
+93
+00:09:40,372 --> 00:09:46,951
+So if you have x square plus y square equals 4, I said that it is a silencer.
+
+94
+00:09:46,951 --> 00:10:16,932
+But if you have x square plus y0, z-axis also.
+
+95
+00:09:55,347 --> 00:10:02,367
+Then in two-dimensional system, okay, it is a circle, but in three-dimensional system, you have some restrictions.
+
+96
+00:10:02,367 --> 00:10:06,548
+So in three-dimensional system, it will be a spher.
+
+97
+00:10:07,927 --> 00:10:14,168
+Okay, on the center of the pole and radius will be two.
+
+98
+00:10:15,147 --> 00:10:17,367
+This is the equation of a cylinder, okay?
+
+99
+00:10:17,788 --> 00:10:18,807
+Sorry, a spher.
+
+100
+00:10:19,447 --> 00:10:21,987
+Spher is this, this is a cylinder.
+
+101
+00:10:24,168 --> 00:10:24,427
+Okay.
+
+102
+00:10:25,347 --> 00:10:28,487
+You don't need to know this one.
+
+103
+00:10:28,487 --> 00:10:31,107
+Okay, this is extra information, these examples.
+
+104
+00:10:31,367 --> 00:10:34,627
+Biraz daha ayrıntılı notelarda çünkü ama bu kadar çok bilmeziyor.
+
+105
+00:10:35,107 --> 00:10:37,947
+Okay, now we can talk about vectors.
+
+106
+00:10:38,147 --> 00:10:46,887
+In vectors, we have to remember, especially what is the meaning of that product and cross product or vector product.
+
+107
+00:10:47,307 --> 00:10:51,347
+Okay, and we have some important properties of these two products.
+
+108
+00:10:52,247 --> 00:10:53,427
+Okay, what is vector?
+
+109
+00:10:53,427 --> 00:10:59,247
+The vector is represented by a directed line segment.
+
+110
+00:10:59,247 --> 00:11:01,667
+So you need an initial point.
+
+111
+00:11:02,387 --> 00:11:07,667
+You need an direction.
+
+112
+00:11:09,007 --> 00:11:09,387
+Okay.
+
+113
+00:11:09,387 --> 00:11:13,887
+So from a to b, it will be a vector.
+
+114
+00:11:13,887 --> 00:11:15,507
+So you have to write a, b.
+
+115
+00:11:15,668 --> 00:11:17,507
+This is the meaning of vector.
+
+116
+00:11:18,288 --> 00:11:23,767
+And the length of a vector will show that in the absolute value, but it is not absolute value.
+
+117
+00:11:23,767 --> 00:11:26,807
+It is the length of a vector.
+
+118
+00:11:26,807 --> 00:11:27,707
+Okay.
+
+119
+00:11:28,647 --> 00:11:29,867
+So let me remember.
+
+120
+00:11:30,727 --> 00:11:31,067
+Okay.
+
+121
+00:11:32,168 --> 00:11:45,548
+For example, they give that what is the vector facing from a is 1, 0, 2, b is 2, 1, 4.
+
+122
+00:11:45,548 --> 00:11:46,947
+Okay.
+
+123
+00:11:46,947 --> 00:11:50,007
+And I want to write what is the vector from a to b.
+
+124
+00:11:50,007 --> 00:12:11,607
+Okay.
+
+125
+00:11:53,940 --> 00:11:56,120
+You can show different phase.
+
+126
+00:11:56,900 --> 00:11:59,080
+You can see that we have three points.
+
+127
+00:11:59,240 --> 00:12:00,860
+X, Y, Z system.
+
+128
+00:12:01,200 --> 00:12:05,920
+So you will write E, G, Q.
+
+129
+00:12:06,200 --> 00:12:07,160
+What is this?
+
+130
+00:12:07,240 --> 00:12:09,200
+Into the three dimensional system.
+
+131
+00:12:09,440 --> 00:12:10,240
+This is X.
+
+132
+00:12:11,060 --> 00:12:11,960
+This is Y.
+
+133
+00:12:12,260 --> 00:12:13,020
+This is Z.
+
+134
+00:12:13,740 --> 00:12:17,760
+E is the unit vector in the direction of X axis.
+
+135
+00:12:17,760 --> 00:12:18,960
+E will be here.
+
+136
+00:12:19,680 --> 00:12:20,740
+G will be here.
+
+137
+00:12:21,800 --> 00:12:22,740
+Q will be here.
+
+138
+00:12:22,740 --> 00:12:24,900
+All of them are units.
+
+139
+00:12:25,020 --> 00:12:26,080
+What is unit vector?
+
+140
+00:12:27,980 --> 00:12:33,580
+Unit vector is whose length is 1.
+
+141
+00:12:34,880 --> 00:12:35,040
+Okay.
+
+142
+00:12:36,300 --> 00:12:38,420
+Whose length is 1.
+
+143
+00:12:38,560 --> 00:12:41,640
+Uzunluğu bir olan vektöre birim vektör diyoruz.
+
+144
+00:12:42,400 --> 00:12:43,080
+Okay.
+
+145
+00:12:43,340 --> 00:12:45,740
+So how can we find AD vector?
+
+146
+00:12:45,740 --> 00:12:49,580
+You will subtract the points from B minus A.
+
+147
+00:12:49,580 --> 00:12:54,360
+So 2 minus 1 will be 1.
+
+148
+00:12:55,040 --> 00:12:55,820
+Product E.
+
+149
+00:12:56,320 --> 00:12:58,660
+1 minus 0.
+
+150
+00:12:58,920 --> 00:12:59,900
+It will be 1.
+
+151
+00:13:00,700 --> 00:13:01,440
+Product G.
+
+152
+00:13:02,020 --> 00:13:05,080
+4 minus 2 will be 2.
+
+153
+00:13:05,860 --> 00:13:06,980
+Product G.
+
+154
+00:13:06,980 --> 00:13:11,500
+So it will be E plus G plus 2 key.
+
+155
+00:13:11,700 --> 00:13:16,100
+Or you can use a different way to show that.
+
+156
+00:13:17,140 --> 00:13:18,640
+Mostly we use this one.
+
+157
+00:13:18,720 --> 00:13:22,120
+You will write the components of X, Y and Z system.
+
+158
+00:13:22,220 --> 00:13:24,740
+It will be 1 comma 1 comma 2.
+
+159
+00:13:25,640 --> 00:13:28,460
+Mostly we will use this expression.
+
+160
+00:13:29,140 --> 00:13:29,360
+Okay.
+
+161
+00:13:29,360 --> 00:13:33,020
+This is the vector.
+
+162
+00:13:33,020 --> 00:13:34,160
+From A and B.
+
+163
+00:13:34,520 --> 00:13:35,960
+If you want to write BA.
+
+164
+00:13:37,720 --> 00:13:40,180
+You have to subtract A minus B.
+
+165
+00:13:40,640 --> 00:13:44,020
+So the sign will be minus 1 minus 1 minus 2.
+
+166
+00:13:45,300 --> 00:13:45,480
+Okay.
+
+167
+00:13:47,700 --> 00:13:49,700
+End point minus initial point.
+
+168
+00:13:50,020 --> 00:13:50,880
+This is the vector.
+
+169
+00:13:50,880 --> 00:13:54,120
+Okay.
+
+170
+00:13:54,259 --> 00:13:56,420
+So how can we find the length of a vector?
+
+171
+00:13:56,560 --> 00:13:57,640
+It is also important.
+
+172
+00:13:58,320 --> 00:14:01,060
+Mostly we will talk about three-dimensional system.
+
+173
+00:14:01,200 --> 00:14:03,940
+In two-dimensional system, you will have only X and Y.
+
+174
+00:14:04,200 --> 00:14:07,440
+Okay.
+
+175
+00:14:07,940 --> 00:14:09,080
+And here.
+
+176
+00:14:10,519 --> 00:14:15,500
+The length of a vector will be in the square root functions.
+
+177
+00:14:15,500 --> 00:14:19,560
+This is the components of X, Y and Z term.
+
+178
+00:14:20,100 --> 00:14:20,820
+Z axis.
+
+179
+00:14:21,120 --> 00:14:23,880
+You will take square in the square root function.
+
+180
+00:14:24,720 --> 00:14:25,000
+Okay.
+
+181
+00:14:25,200 --> 00:14:26,980
+So it is AB.
+
+182
+00:14:27,460 --> 00:14:29,960
+Let's find the length of AB.
+
+183
+00:14:30,440 --> 00:14:31,240
+What is this?
+
+184
+00:14:31,240 --> 00:14:37,040
+The length of AB will be in the square root function.
+
+185
+00:14:37,700 --> 00:14:42,020
+One square plus one square plus two square.
+
+186
+00:14:42,020 --> 00:14:46,040
+It is square root 6.
+
+187
+00:14:46,140 --> 00:14:47,580
+This is the length of AB.
+
+188
+00:14:48,120 --> 00:14:49,360
+What is the length of BA?
+
+189
+00:14:50,460 --> 00:14:51,360
+Is it different?
+
+190
+00:14:52,860 --> 00:14:53,340
+No.
+
+191
+00:14:53,440 --> 00:14:55,060
+Because the length will be the same.
+
+192
+00:14:55,160 --> 00:14:55,640
+The position.
+
+193
+00:14:55,840 --> 00:14:56,040
+Okay.
+
+194
+00:14:56,280 --> 00:14:57,980
+The direction will be opposite.
+
+195
+00:14:57,980 --> 00:15:06,680
+But it will be minus one square plus minus one square plus two square minus two square.
+
+196
+00:15:07,580 --> 00:15:09,380
+Will be square root 6.
+
+197
+00:15:09,380 --> 00:15:12,620
+The length are the same for both of them.
+
+198
+00:15:12,840 --> 00:15:15,400
+But the direction is different.
+
+199
+00:15:15,880 --> 00:15:16,120
+Okay.
+
+200
+00:15:17,200 --> 00:15:21,920
+So this is the main property of the vector.
+
+201
+00:15:23,040 --> 00:15:28,240
+After that, let's see some vector algebra.
+
+202
+00:15:29,120 --> 00:15:31,920
+How can we add these two vectors?
+
+203
+00:15:32,040 --> 00:15:35,740
+For example, you have different phase.
+
+204
+00:15:35,740 --> 00:15:42,740
+For example, here if you have U and V, you can write the first vector.
+
+205
+00:15:43,460 --> 00:15:46,720
+After that, at the end point, you can start the new vector.
+
+206
+00:15:46,720 --> 00:15:52,380
+From the beginning to end of V will be U plus V.
+
+207
+00:15:52,380 --> 00:16:16,380
+You can write the first vector.
+
+208
+00:15:53,875 --> 00:15:57,615
+Or, you can sketch
+
+209
+00:16:02,035 --> 00:16:04,415
+You can sketch u, okay?
+
+210
+00:16:05,415 --> 00:16:13,895
+After that, you can take the shadow of v, and from the beginning to this one will be u plus v, okay?
+
+211
+00:16:14,375 --> 00:16:15,715
+You can use any of them.
+
+212
+00:16:18,575 --> 00:16:23,775
+And you know the multiplication with any scalar.
+
+213
+00:16:24,315 --> 00:16:26,995
+What is this? The length will be different.
+
+214
+00:16:26,995 --> 00:16:30,175
+To you will be, you will add this to you.
+
+215
+00:16:30,935 --> 00:16:32,135
+It will be 2V.
+
+216
+00:16:33,075 --> 00:16:35,115
+If you product with the minus,
+
+217
+00:16:35,795 --> 00:16:40,255
+the position, the direction of the vector will change to opposite one.
+
+218
+00:16:41,255 --> 00:16:42,355
+Verarsam, examples.
+
+219
+00:16:42,775 --> 00:16:44,096
+Bunlar, yani çok basit şeyler.
+
+220
+00:16:44,235 --> 00:16:45,955
+Bunlar da zaten çok şeyimiz yok.
+
+221
+00:16:46,775 --> 00:16:48,435
+Zaten bunları fizikte görmüştünüz.
+
+222
+00:16:49,596 --> 00:16:50,695
+Bunları geçiyorum.
+
+223
+00:16:50,695 --> 00:16:52,515
+Burada belli özellikler var.
+
+224
+00:16:52,615 --> 00:16:54,615
+Çok da kullandığımız şeyler değil.
+
+225
+00:16:54,915 --> 00:16:56,215
+Yani bildiğimiz şeyler.
+
+226
+00:16:56,995 --> 00:17:26,975
+I said that unit vektör.
+
+227
+00:17:26,975 --> 00:17:29,475
+Unit, because it is different from one.
+
+228
+00:17:29,755 --> 00:17:32,675
+How can we find in this direction,
+
+229
+00:17:32,675 --> 00:17:32,695
+how can we find in this direction,
+
+230
+00:17:32,695 --> 00:17:35,435
+how can we find unit vector in this direction,
+
+231
+00:17:35,435 --> 00:17:38,655
+you have to divide your vector to,
+
+232
+00:17:38,655 --> 00:17:40,096
+it is length.
+
+233
+00:17:40,096 --> 00:17:40,115
+You have to divide your vector to, it is length.
+
+234
+00:17:44,243 --> 00:18:01,103
+It is 1 over square root 6, 1 over square root 6, 2 over square root x is the vector, whose, the land is, the land is 1, it will be a unit vector in this direction.
+
+235
+00:18:01,103 --> 00:18:08,443
+For example, in three-dimensional system, for example, a is 1, 1,
+
+236
+00:18:13,844 --> 00:18:41,004
+Here, normally AB vector is this, okay? AB vector is this. AB vector is this. What is the unit vector in this direction? You will take only this part. This is the unit vector in this direction, okay? This. This is the unit vector in this direction. You have to divide your vector to its length.
+
+237
+00:18:41,004 --> 00:18:46,963
+Okay? Okay.
+
+238
+00:18:52,852 --> 00:19:07,732
+You don't need to use one. Now, I want to talk about the products. What is the products? They are important. They will use. The first one is that product nokta çarpımı Türkçesi ya da skaler.
+
+239
+00:19:10,852 --> 00:19:13,092
+You can see also scalar product.
+
+240
+00:19:16,756 --> 00:19:20,076
+Okay, what is the scalar product?
+
+241
+00:19:20,896 --> 00:19:33,956
+When you take two vectors as a dot product, let me write, for example, 1, 0, minus 1, dot product, 2, 1, 3, for example.
+
+242
+00:19:35,296 --> 00:19:39,396
+This is vector.
+
+243
+00:19:41,396 --> 00:19:46,375
+Dot product of two vectors result is a number, real number.
+
+244
+00:19:46,756 --> 00:19:49,076
+Okay.
+
+245
+00:19:49,576 --> 00:19:51,115
+How can we find the product?
+
+246
+00:19:51,536 --> 00:20:05,156
+We will product the same components, one product, 2, plus zero product, 1, minus one product, 3.
+
+247
+00:20:08,692 --> 00:20:16,912
+So, I have 2, minus 3, it will be minus 1. So, the result of that product will be a real number.
+
+248
+00:20:18,271 --> 00:20:23,112
+He will product the same components and you will add the results.
+
+249
+00:20:24,771 --> 00:20:30,152
+Let's see. We have two different definitions for that product.
+
+250
+00:20:30,152 --> 00:20:35,072
+If you want to find the result directly, it is this.
+
+251
+00:20:35,551 --> 00:20:37,852
+You will product the same components.
+
+252
+00:20:38,092 --> 00:20:41,051
+U1, V1, U2, V2, U3, V3.
+
+253
+00:20:41,451 --> 00:20:43,132
+But there is another meaning.
+
+254
+00:20:43,771 --> 00:20:46,112
+What is the other meaning of the dot product?
+
+255
+00:20:46,352 --> 00:20:55,652
+The dot product of two factors will give the length of U, the length of V, and the angles cosine.
+
+256
+00:20:55,652 --> 00:21:25,632
+What is the dot product of cosine theta?
+
+257
+00:21:18,420 --> 00:21:18,740
+Ok?
+
+258
+00:21:21,460 --> 00:21:25,539
+So for example, they can ask what is the angle between these two vectors.
+
+259
+00:21:25,539 --> 00:21:28,580
+So from here you can determine your angle.
+
+260
+00:21:29,779 --> 00:21:32,420
+For example, let me ask a question.
+
+261
+00:21:34,980 --> 00:21:39,860
+U is for example 1 minus 1, 0.
+
+262
+00:21:39,860 --> 00:21:48,660
+V is 2, 2, 1.
+
+263
+00:21:49,380 --> 00:21:49,620
+Ok?
+
+264
+00:21:50,820 --> 00:21:55,300
+Now I am asking what is the dot product of two vectors?
+
+265
+00:21:57,940 --> 00:21:58,820
+What is this?
+
+266
+00:21:58,820 --> 00:22:06,500
+It is a one product 2 minus one product 2 plus zero product 1.
+
+267
+00:22:06,500 --> 00:22:09,380
+It is 2 minus 2.
+
+268
+00:22:10,180 --> 00:22:11,380
+It will be zero.
+
+269
+00:22:12,820 --> 00:22:14,340
+The dot product is zero.
+
+270
+00:22:15,300 --> 00:22:18,820
+I said that the dot product have a different meaning.
+
+271
+00:22:18,820 --> 00:22:19,539
+What is this?
+
+272
+00:22:20,580 --> 00:22:22,019
+Let me write the formula.
+
+273
+00:22:22,660 --> 00:22:29,060
+It is the length of u, the length of v and the angles cosine.
+
+274
+00:22:30,180 --> 00:22:35,300
+It is the between these two vectors and angles cosine theta.
+
+275
+00:22:35,300 --> 00:22:38,340
+Here I find that it is zero.
+
+276
+00:22:39,140 --> 00:22:40,340
+What is the meaning of zero?
+
+277
+00:22:41,539 --> 00:22:42,019
+Let's see.
+
+278
+00:22:42,980 --> 00:22:45,060
+Yes, I know that this is non-zero.
+
+279
+00:22:47,060 --> 00:22:48,740
+You don't need to determine.
+
+280
+00:22:48,740 --> 00:22:49,700
+It is non-zero.
+
+281
+00:22:50,420 --> 00:22:54,420
+So it means that cosine theta will be zero.
+
+282
+00:22:54,420 --> 00:23:00,980
+If cosine theta is zero, theta will be pi over 2 or 3 pi over 2.
+
+283
+00:23:00,980 --> 00:23:07,140
+It means that these two vectors are orthogonal to each other.
+
+284
+00:23:07,140 --> 00:23:12,740
+It can be, if you take u, v can be this or this.
+
+285
+00:23:13,860 --> 00:23:14,100
+Ok?
+
+286
+00:23:14,660 --> 00:23:18,740
+But I know that it will be orthogonal.
+
+287
+00:23:18,740 --> 00:23:32,140
+So I can say that if dot product is zero, then it means that u is perpendicular or orthogonal to vector v.
+
+288
+00:23:32,140 --> 00:23:35,620
+This is the main important properties about dot product.
+
+289
+00:23:36,100 --> 00:23:38,080
+Bakın bu özelliği çok kullanacağız.
+
+290
+00:23:38,080 --> 00:23:39,080
+Ok?
+
+291
+00:23:39,080 --> 00:23:41,080
+Ok.
+
+292
+00:23:41,080 --> 00:23:42,080
+I said that here.
+
+293
+00:23:42,080 --> 00:24:02,240
+If these two vectors are orthogonal or you can see in the English meaning perpendicular, you can see in the test.
+
+294
+00:24:02,240 --> 00:24:02,559
+Ok?
+
+295
+00:24:04,000 --> 00:24:07,840
+They will be orthogonal to each other if the dot product is zero.
+
+296
+00:24:08,559 --> 00:24:16,960
+So what, how many, what kind of properties do we have about dot product?
+
+297
+00:24:16,960 --> 00:24:22,640
+We can change the order because you can change the product of the components.
+
+298
+00:24:22,640 --> 00:24:25,279
+If you have a constant, you can write outside.
+
+299
+00:24:27,120 --> 00:24:31,680
+If you want to, if you have three vectors,
+
+300
+00:24:32,559 --> 00:24:35,279
+U product v plus U product v plus U product v.
+
+301
+00:24:35,279 --> 00:24:36,160
+And that's all.
+
+302
+00:24:42,548 --> 00:24:45,567
+Sine of the angle, you can't determine, you can't determine.
+
+303
+00:24:46,528 --> 00:24:48,228
+Okay, one second.
+
+304
+00:24:49,028 --> 00:24:52,268
+For example, let's determine, what do you know about this?
+
+305
+00:24:52,268 --> 00:24:54,268
+You can't determine.
+
+306
+00:24:56,847 --> 00:25:01,307
+You can't determine for here.
+
+307
+00:25:02,647 --> 00:25:09,548
+You can, I know that cosine theta is zero, but both of them can be.
+
+308
+00:25:10,188 --> 00:25:11,928
+But it's not important in your examples.
+
+309
+00:25:11,928 --> 00:25:13,008
+Okay, we don't use.
+
+310
+00:25:13,307 --> 00:25:15,988
+Only the important thing, it will be perpendicular to each other.
+
+311
+00:25:16,048 --> 00:25:19,008
+But if you sketch the points, vectors, you can't see.
+
+312
+00:25:19,567 --> 00:25:22,528
+Okay.
+
+313
+00:25:29,460 --> 00:25:42,819
+Okay, so let's look at c. If you want to take the length of the u and v vectors, it will be less or equal to the difference of u product and v product.
+
+314
+00:25:43,380 --> 00:25:57,100
+Okay, this is the length of u product v. This absolute value, okay, because here it is a, this is a real number, this is absolute value, okay.
+
+315
+00:25:57,100 --> 00:26:06,220
+absolute value of this product will be less or equal to the length of u and the length of v. Both of them will be numbers.
+
+316
+00:26:09,059 --> 00:26:15,140
+Okay, write the vectors in the sum of two vectors such that we use parallel to x.
+
+317
+00:26:15,140 --> 00:26:17,500
+Okay, let's make this example.
+
+318
+00:26:30,099 --> 00:26:45,139
+Let's look at this example. Write the vector 3 plus g as a sum of two vectors u and v, such that u is parallel to e plus g and u, v are orthogonal vectors.
+
+319
+00:26:48,692 --> 00:26:53,192
+How can you understand these two vectors are parallel to each other?
+
+320
+00:26:55,352 --> 00:26:57,612
+For example, v.
+
+321
+00:26:59,251 --> 00:27:04,991
+Let me take, they said that u is parallel to u plus e plus g.
+
+322
+00:27:05,072 --> 00:27:07,132
+For example, let us take 1,1.
+
+323
+00:27:08,951 --> 00:27:11,951
+Can you write any vector which is parallel to v?
+
+324
+00:27:12,592 --> 00:27:14,592
+What kind of component can I write?
+
+325
+00:27:16,072 --> 00:27:17,092
+Yes, yes.
+
+326
+00:27:17,092 --> 00:27:23,211
+Can you give an example as a u vector which is parallel to v?
+
+327
+00:27:24,872 --> 00:27:26,332
+Yes, yes.
+
+328
+00:27:26,432 --> 00:27:29,672
+It will be key product your v vector.
+
+329
+00:27:29,832 --> 00:27:33,731
+For example, 2,2 is parallel to v.
+
+330
+00:27:33,932 --> 00:27:37,531
+Or minus 2, minus 2.
+
+331
+00:27:37,652 --> 00:27:38,632
+It is parallel.
+
+332
+00:27:41,471 --> 00:27:43,791
+Okay, so here they ask that.
+
+333
+00:27:43,791 --> 00:27:44,271
+Hmm.
+
+334
+00:27:50,067 --> 00:27:55,968
+Write this vector as a sum of u and v. Let's see, what can I write?
+
+335
+00:28:02,324 --> 00:28:04,844
+This result will be trick, ama
+
+336
+00:28:11,539 --> 00:28:14,039
+And they said that u is parallel to e plus g.
+
+337
+00:28:14,099 --> 00:28:15,700
+You can take the same vector also.
+
+338
+00:28:15,700 --> 00:28:18,920
+If I take 1, 1, let's see what happens.
+
+339
+00:28:20,119 --> 00:28:24,200
+e plus g is parallel to itself also.
+
+340
+00:28:26,599 --> 00:28:27,659
+Orthogonal diktemek.
+
+341
+00:28:28,159 --> 00:28:29,240
+Orthogonal is this.
+
+342
+00:28:30,319 --> 00:28:31,480
+The angle is 90.
+
+343
+00:28:34,639 --> 00:28:35,980
+Perpentagal or orthogonal.
+
+344
+00:28:36,639 --> 00:28:41,119
+Okay, for example, if I take 1, 1, let's see what is the other vector.
+
+345
+00:28:41,119 --> 00:28:43,440
+It will be 2, 0.
+
+346
+00:28:44,220 --> 00:28:44,579
+Okay.
+
+347
+00:28:45,399 --> 00:28:46,700
+Can I take this one?
+
+348
+00:28:47,220 --> 00:28:47,839
+Let's see.
+
+349
+00:28:48,019 --> 00:28:53,960
+They said that also these two vectors have to be orthogonal to each other.
+
+350
+00:28:54,059 --> 00:28:56,500
+Is it orthogonal or not?
+
+351
+00:28:56,579 --> 00:28:57,379
+Let's see.
+
+352
+00:29:01,811 --> 00:29:14,471
+Bu, bu
+
+353
+00:29:21,203 --> 00:29:22,163
+Let me write
+
+354
+00:29:22,163 --> 00:29:29,803
+3 0
+
+355
+00:29:29,803 --> 00:29:34,844
+Şurayı ne alalım? 2 2.
+
+356
+00:29:35,183 --> 00:29:36,683
+Ok, let's take 2 2.
+
+357
+00:29:36,963 --> 00:29:39,923
+If I take 2 2, it will be 1 plus minus 1.
+
+358
+00:29:40,864 --> 00:29:44,803
+In that case, 2 minus 2 will be 0.
+
+359
+00:29:44,803 --> 00:29:47,443
+For example, you can take u and v.
+
+360
+00:29:47,624 --> 00:29:48,683
+This is an example.
+
+361
+00:29:48,683 --> 00:29:52,384
+For example, in the test,
+
+362
+00:29:54,384 --> 00:30:01,584
+they can ask that, ok, which of the following can be an example according to these conditions?
+
+363
+00:30:01,584 --> 00:30:06,203
+Mesela, bu koşulları sağlayan aşağıdaki fonksiyonlardan hangisi olabilir?
+
+364
+00:30:07,324 --> 00:30:08,163
+Ok.
+
+365
+00:30:09,923 --> 00:30:10,523
+Here,
+
+366
+00:30:11,844 --> 00:30:14,423
+you can see,
+
+367
+00:30:14,423 --> 00:30:18,124
+the projection is not included.
+
+368
+00:30:18,124 --> 00:30:22,903
+We cancelled this subject in the previous years.
+
+369
+00:30:25,124 --> 00:30:28,443
+Projection vardı eskiden ama artık onu konu müfredat dışı oldu.
+
+370
+00:30:28,503 --> 00:30:29,624
+O yüzden bu konuya girmiyoruz.
+
+371
+00:30:29,624 --> 00:30:29,903
+Ok?
+
+372
+00:30:30,344 --> 00:30:33,543
+You don't need to see the projection.
+
+373
+00:30:33,543 --> 00:30:37,243
+So, what is the projection.
+
+374
+00:30:37,243 --> 00:30:38,243
+So, what is important in vector subject?
+
+375
+00:30:38,243 --> 00:30:42,243
+In vector subject?
+
+376
+00:30:42,243 --> 00:30:45,243
+The first one is dot product.
+
+377
+00:30:45,243 --> 00:30:47,403
+It is important.
+
+378
+00:30:47,403 --> 00:30:50,283
+And especially if it is 0,
+
+379
+00:30:50,283 --> 00:30:53,903
+your product v will be orthogonal to each other.
+
+380
+00:30:54,243 --> 00:30:55,763
+In the dot product, this is important.
+
+381
+00:30:55,763 --> 00:30:56,763
+to be the vector subject.
+
+382
+00:30:56,763 --> 00:30:56,824
+Okay.
+
+383
+00:30:56,824 --> 00:30:58,403
+Let's see what is the next product.
+
+384
+00:30:58,403 --> 00:30:59,403
+It is cross product.
+
+385
+00:30:59,403 --> 00:31:01,243
+Or you can see that it is vector product.
+
+386
+00:31:02,663 --> 00:31:04,903
+Maybe you see vector product more.
+
+387
+00:31:05,963 --> 00:31:07,624
+What is the vector product?
+
+388
+00:31:07,624 --> 00:31:20,324
+If you have a vector vector?
+
+389
+00:31:20,324 --> 00:31:22,324
+If you have a vector vector.
+
+390
+00:31:22,324 --> 00:31:26,324
+If you have a vector vector vector in space.
+
+391
+00:31:26,324 --> 00:31:27,324
+What does it mean?
+
+392
+00:31:27,324 --> 00:31:28,283
+Let me write.
+
+393
+00:31:32,915 --> 00:31:34,915
+3D sistem
+
+394
+00:31:34,915 --> 00:31:36,915
+bu
+
+395
+00:31:36,915 --> 00:31:38,915
+xyz
+
+396
+00:31:38,915 --> 00:31:40,915
+ok
+
+397
+00:31:45,523 --> 00:31:53,483
+If you have two vectors, for example, let me sketch this one, for example, this one, this is u, this is v.
+
+398
+00:31:54,323 --> 00:32:04,183
+Then when you take the vector product, the vector product is a new vector which is perpendicular to u and v.
+
+399
+00:32:04,643 --> 00:32:10,163
+It will be this one and it will be 90.
+
+400
+00:32:10,463 --> 00:32:14,423
+This is u, vector product or cross product v.
+
+401
+00:32:14,423 --> 00:32:25,703
+For example, if you take u as x-axis, if you take v as y-axis, the cross product or vector product of x, y will be z.
+
+402
+00:32:27,163 --> 00:32:37,843
+So when you sketch these two vectors and if you want to take the vector product, it will be a new vector.
+
+403
+00:32:37,843 --> 00:32:44,383
+The result will be a new vector and this vector will be perpendicular u and v.
+
+404
+00:32:44,423 --> 00:32:51,063
+Bu iki vektöre dik, yeni bir vektör elde ediyorsunuz.
+
+405
+00:32:51,323 --> 00:32:51,443
+Okay?
+
+406
+00:32:51,443 --> 00:33:01,683
+This is the important properties, especially to determine a line and plane, intradimensional system.
+
+407
+00:33:01,683 --> 00:33:05,443
+Okay.
+
+408
+00:33:05,443 --> 00:33:07,783
+Let's see.
+
+409
+00:33:07,783 --> 00:33:11,563
+If you have u, v.
+
+410
+00:33:12,563 --> 00:33:13,463
+Okay.
+
+411
+00:33:15,503 --> 00:33:19,083
+Theta is the angle between these two vectors.
+
+412
+00:33:19,083 --> 00:33:19,743
+Okay.
+
+413
+00:33:19,743 --> 00:33:24,283
+Then when you take the u vector product v.
+
+414
+00:33:25,983 --> 00:33:30,203
+And I want to define a new vector is n.
+
+415
+00:33:30,363 --> 00:33:30,963
+Small n.
+
+416
+00:33:31,203 --> 00:33:36,723
+Small n is the unit vector with the same direction u product v.
+
+417
+00:33:36,723 --> 00:33:37,723
+v.
+
+418
+00:33:37,723 --> 00:34:30,723
+V.
+
+419
+00:34:30,723 --> 00:34:31,723
+V. V.
+
+420
+00:34:24,244 --> 00:34:27,744
+Is it a real number? Is it a vector? Is it another else?
+
+421
+00:34:28,324 --> 00:34:29,983
+It is a constant, yes.
+
+422
+00:34:29,983 --> 00:34:33,903
+It is a constant, but the result will be vector.
+
+423
+00:34:34,204 --> 00:34:37,764
+So you will product with the unit vector.
+
+424
+00:34:38,264 --> 00:34:42,624
+Actually, they are determining what is the length of the vector.
+
+425
+00:34:43,644 --> 00:34:45,304
+Okay, for example, 5.
+
+426
+00:34:46,584 --> 00:34:49,544
+They said that, okay, with the unit vector, take 5.
+
+427
+00:34:49,684 --> 00:34:52,864
+1, 2, 3, 4, 5.
+
+428
+00:34:52,864 --> 00:34:57,144
+This is the U cross product V.
+
+429
+00:34:58,164 --> 00:35:04,184
+Okay, this is the formal definition of U cross product V.
+
+430
+00:35:04,804 --> 00:35:09,403
+The length of U, the length of V, sine theta, and N vector.
+
+431
+00:35:10,004 --> 00:35:14,864
+But normally, it is difficult to determine this one.
+
+432
+00:35:15,884 --> 00:35:21,124
+We use this definition in some other areas, but we have another way.
+
+433
+00:35:21,124 --> 00:35:22,983
+The other way is this.
+
+434
+00:35:23,084 --> 00:35:30,344
+If you want to find the vector product of U and V, you will write your determinant.
+
+435
+00:35:31,524 --> 00:35:36,484
+In the determinant, the first row will be E, G, key.
+
+436
+00:35:36,483 --> 00:35:43,024
+In the second row, you will write the components of U.
+
+437
+00:35:43,164 --> 00:35:45,264
+Let's take U1, U2, U3.
+
+438
+00:35:46,764 --> 00:35:51,804
+And here, we will write the components of V, V1, V2, V3.
+
+439
+00:35:51,804 --> 00:35:58,584
+So, if you want to find the solution directly, we will use this determinant.
+
+440
+00:35:59,104 --> 00:36:03,844
+And the result of the determinant, you will find a vector.
+
+441
+00:36:04,484 --> 00:36:05,884
+Let me give an example.
+
+442
+00:36:06,344 --> 00:36:11,384
+Let's write, for example, V is 1, 0, 1.
+
+443
+00:36:11,384 --> 00:36:18,124
+Let us take V is minus 1, 2, 0, for example.
+
+444
+00:36:19,384 --> 00:36:22,384
+Let us find the vector product.
+
+445
+00:36:22,744 --> 00:36:25,104
+U cross or vector product.
+
+446
+00:36:26,104 --> 00:36:31,384
+We say that the first row, it will be the components of E, G, key.
+
+447
+00:36:31,384 --> 00:36:40,264
+In the second row, we will write the components of U, 1, 0, minus 1.
+
+448
+00:36:40,624 --> 00:36:43,403
+The other one is minus 1, 2, 0.
+
+449
+00:36:44,884 --> 00:36:48,484
+Okay.
+
+450
+00:36:49,084 --> 00:36:50,384
+You can...
+
+451
+00:36:50,384 --> 00:36:54,704
+This is the components of X, Y, Z plane.
+
+452
+00:36:56,624 --> 00:36:57,784
+This is vector.
+
+453
+00:36:58,684 --> 00:36:59,204
+You...
+
+454
+00:36:59,204 --> 00:37:00,443
+E is the vector.
+
+455
+00:37:00,963 --> 00:37:03,644
+You need vector in X plane, Y plane, G plane.
+
+456
+00:37:04,204 --> 00:37:06,524
+In the second row, the components of U.
+
+457
+00:37:07,584 --> 00:37:09,824
+In the last one, the components of V.
+
+458
+00:37:10,164 --> 00:37:10,704
+Okay.
+
+459
+00:37:10,884 --> 00:37:14,244
+So, you can calculate this determinant according to your choice.
+
+460
+00:37:14,423 --> 00:37:16,443
+I want to use Naples.
+
+461
+00:37:16,443 --> 00:37:21,224
+So, I will select the first one, E product.
+
+462
+00:37:21,624 --> 00:37:23,584
+I will cancel this one and this one.
+
+463
+00:37:24,204 --> 00:37:24,544
+Zero.
+
+464
+00:37:25,064 --> 00:37:26,224
+Product minus 2.
+
+465
+00:37:26,324 --> 00:37:27,804
+But it is in the second place.
+
+466
+00:37:27,884 --> 00:37:28,584
+It will be 2.
+
+467
+00:37:29,024 --> 00:37:29,423
+Plus.
+
+468
+00:37:30,364 --> 00:37:32,104
+After that...
+
+469
+00:37:37,972 --> 00:38:00,392
+I will sketch, I will select g, but the sign will be minus. Siz gibi hesaplayabilirsiniz. Sizin farklı hesaplama yöntemleriniz vardır. I will cancel this one and this one. Zero product, one. Minus product, minus one. But it is in the second one. It will be minus. Pardon.
+
+470
+00:38:04,980 --> 00:38:09,240
+Şurası, işiyle kaçı çarpacağız? Artı bir, eksi bir, artı olduk.
+
+471
+00:38:13,019 --> 00:38:13,619
+And
+
+472
+00:38:17,364 --> 00:38:18,483
+For key,
+
+473
+00:38:21,483 --> 00:38:27,384
+I will cancel this one and this one. It is two, this one, the result will be two.
+
+474
+00:38:28,023 --> 00:38:29,443
+So, if
+
+475
+00:38:29,443 --> 00:38:34,463
+cross product will be one,
+
+476
+00:38:35,264 --> 00:38:36,543
+two, two.
+
+477
+00:38:43,219 --> 00:38:45,379
+Tamam, tamam, o zaman koyalım şimdi. Tamam.
+
+478
+00:38:48,199 --> 00:38:48,919
+Okay, I put.
+
+479
+00:38:50,119 --> 00:38:54,519
+Okay, this is a vector or cross product. The result will be any vector.
+
+480
+00:38:54,519 --> 00:38:55,319
+Okay.
+
+481
+00:38:58,259 --> 00:39:02,619
+Okay, so what is the important properties of the cross product?
+
+482
+00:39:06,835 --> 00:39:31,096
+This is the land of, the land of your product, cross-view, cross-product, gives the area which the, kenarını, u ve v olan paralel kenarın alanını veriyor.
+
+483
+00:39:31,096 --> 00:39:37,455
+They give the area of this parallel kenar.
+
+484
+00:39:37,455 --> 00:39:38,035
+Okay?
+
+485
+00:39:38,695 --> 00:39:42,295
+This is the important properties about the, u cross-product, v.
+
+486
+00:39:43,315 --> 00:39:48,895
+In that product, the important one is this.
+
+487
+00:39:52,467 --> 00:40:02,467
+...in cross product, it is the length of U cross product V will be the area...
+
+488
+00:40:12,563 --> 00:40:27,063
+Okay, vektör, paralel vektörs, what is the paralel vektörs? Non-zero vektörs, u and v are paralel, if and only if, vektör product will be zero.
+
+489
+00:40:38,708 --> 00:40:47,708
+Eğer iki ve paralele olup olmadığını anlamak istiyorsanız da, o zaman ne olması gerekiyor? Vektör product'ın birbirine çarpımının sıfır olması gerekiyor.
+
+490
+00:40:49,708 --> 00:41:08,307
+Because the angle between these two vectors are zero, if you write sine zero is zero. If you look at the definition, if they are parallel to each other, the angle will be zero.
+
+491
+00:41:08,708 --> 00:41:22,867
+sine zero will be zero. So, this part has to be zero. What does it mean? Let's write, if the dot product is zero, then they are orthogonal to each other.
+
+492
+00:41:24,148 --> 00:41:32,728
+If the cross product is zero, then these two vectors parallel to each other. Okay?
+
+493
+00:41:49,780 --> 00:42:16,260
+Vektör product'ta yerlerini değiştirdiğinizde yönü de değişmek zorunda. Sonuçta bir vektör çıkacak.
+
+494
+00:42:16,260 --> 00:42:20,680
+Ama dot product'ta zaten sayı çıkacağı için değiştirmenizde bir sakınca yok.
+
+495
+00:42:46,036 --> 00:42:58,016
+find a vector, let's look at this example, find a vector perpendicular to the plane of PQR.
+
+496
+00:42:58,536 --> 00:43:00,596
+They said that we have a plane, okay.
+
+497
+00:43:02,956 --> 00:43:11,976
+We have a plane, and in our plane we have three points, PQR, okay.
+
+498
+00:43:11,976 --> 00:43:17,936
+And they are asking, find a vector which is perpendicular to your plane.
+
+499
+00:43:18,115 --> 00:43:22,796
+They are asking, can you find a vector which is perpendicular to your plane?
+
+500
+00:43:24,476 --> 00:43:25,695
+What can we do?
+
+501
+00:43:28,675 --> 00:43:38,396
+They give three points on your plane, and they are asking a vector which is orthogonal to your plane.
+
+502
+00:43:38,396 --> 00:43:43,775
+And you can use that product, or you can use cross product.
+
+503
+00:43:45,655 --> 00:43:46,816
+You can use any of them.
+
+504
+00:43:47,576 --> 00:43:48,476
+Do you have any idea?
+
+505
+00:43:49,115 --> 00:43:50,215
+What can we do here?
+
+506
+00:44:02,675 --> 00:44:13,275
+Ok, think about this. I want to take a 10 minutes break. Ok, after that, after the break, I will continue. Bu arada bir 10 dakika reverelim. Orada da bir düşünün bakalım. Bu önemli bir özellik çünkü. Biraz sonra yine göreceğiz bunu. Tamam mı?
+
+507
+00:56:48,788 --> 00:56:52,768
+Okay, so let's continue our question.
+
+508
+00:56:53,768 --> 00:56:55,128
+Did you think about the question?
+
+509
+00:56:56,847 --> 00:57:00,907
+They give three points on a plane and they are asking,
+
+510
+00:57:01,088 --> 00:57:04,688
+can you find any vector which is perpendicular to this plane?
+
+511
+00:57:05,987 --> 00:57:09,668
+We see two important properties of the vectors.
+
+512
+00:57:09,947 --> 00:57:12,548
+The first one was dot product.
+
+513
+00:57:12,688 --> 00:57:16,327
+The second one was cross product or vector product.
+
+514
+00:57:16,327 --> 00:57:22,367
+You know that in the vector product, if we can write two vectors
+
+515
+00:57:22,367 --> 00:57:26,427
+and if we take the cross product, we will find a new vector
+
+516
+00:57:26,427 --> 00:57:30,827
+and this new vector will be perpendicular to these two vectors.
+
+517
+00:57:31,108 --> 00:57:33,088
+For example, you can select any point.
+
+518
+00:57:33,248 --> 00:57:34,847
+Let me select SP.
+
+519
+00:57:35,507 --> 00:57:38,967
+If I write two vectors from P, Q and PR,
+
+520
+00:57:38,967 --> 00:57:46,327
+then when I take the cross product of these two vectors,
+
+521
+00:57:46,568 --> 00:57:51,967
+I will find a new vector and this new vector will be perpendicular to this plane
+
+522
+00:57:51,967 --> 00:57:56,507
+and this is your desired vector.
+
+523
+00:57:56,507 --> 00:58:00,467
+So firstly, I have to write what is P, Q?
+
+524
+00:58:02,387 --> 00:58:04,168
+What is PR?
+
+525
+00:58:06,288 --> 00:58:09,568
+Firstly, I have to determine these two vectors.
+
+526
+00:58:12,387 --> 00:58:16,688
+Okay, so P, Q will be Q minus P.
+
+527
+00:58:16,688 --> 00:58:23,568
+Minus one, minus one will be one, comma, one minus minus one.
+
+528
+00:58:23,728 --> 00:58:29,068
+It will be two minus one minus zero.
+
+529
+00:58:29,208 --> 00:58:31,987
+It will be minus one is P, Q.
+
+530
+00:58:33,407 --> 00:58:35,447
+And now let's find PR.
+
+531
+00:58:37,947 --> 00:58:39,068
+What is PR?
+
+532
+00:58:39,288 --> 00:58:44,347
+It will be R minus P minus one minus one.
+
+533
+00:58:44,347 --> 00:58:45,728
+It will be minus two.
+
+534
+00:58:47,588 --> 00:58:49,967
+One minus minus one.
+
+535
+00:58:50,128 --> 00:58:51,068
+It will be two.
+
+536
+00:58:51,927 --> 00:58:53,088
+Two minus zero.
+
+537
+00:58:53,228 --> 00:58:53,967
+It will be two.
+
+538
+00:58:55,467 --> 00:59:00,288
+This is the P, Q and PR vector.
+
+539
+00:59:00,867 --> 00:59:02,268
+Now in the last part,
+
+540
+00:59:02,367 --> 00:59:04,967
+I have to find the cross product of these two vectors.
+
+541
+00:59:05,387 --> 00:59:07,628
+For this, we have to write a determinant.
+
+542
+00:59:08,088 --> 00:59:10,588
+In our determinant, first row will be E, G, key.
+
+543
+00:59:10,588 --> 00:59:16,148
+In the second row, we will write the components of P, Q.
+
+544
+00:59:16,788 --> 00:59:19,847
+One, two, minus one.
+
+545
+00:59:20,168 --> 00:59:23,668
+And the last one will be minus two, two, two.
+
+546
+00:59:24,847 --> 00:59:27,827
+Now I have to find these determinants.
+
+547
+00:59:28,228 --> 00:59:30,427
+Firstly, I want to select E.
+
+548
+00:59:31,427 --> 00:59:33,588
+I have to cancel this one.
+
+549
+00:59:33,907 --> 00:59:36,947
+It is four plus two.
+
+550
+00:59:37,088 --> 00:59:38,007
+It will be six.
+
+551
+00:59:38,007 --> 00:59:41,708
+Okay.
+
+552
+00:59:42,467 --> 00:59:43,907
+So after that,
+
+553
+00:59:45,268 --> 00:59:46,907
+I can select G.
+
+554
+00:59:47,708 --> 00:59:49,128
+The sign will be negative.
+
+555
+00:59:50,288 --> 00:59:51,847
+If we cancel this one,
+
+556
+00:59:52,108 --> 00:59:53,288
+it will be two.
+
+557
+00:59:55,007 --> 00:59:56,648
+Minus two, it will be zero.
+
+558
+00:59:56,648 --> 01:00:00,487
+And for G.
+
+559
+01:00:02,307 --> 01:00:03,407
+Sorry, for key.
+
+560
+01:00:05,407 --> 01:00:08,347
+I will cancel these two here.
+
+561
+01:00:08,548 --> 01:00:09,407
+It will be two.
+
+562
+01:00:11,007 --> 01:00:12,108
+Plus four.
+
+563
+01:00:12,307 --> 01:00:13,228
+It will be six.
+
+564
+01:00:15,407 --> 01:00:20,268
+This vector will be perpendicular to this plane.
+
+565
+01:00:20,268 --> 01:00:20,967
+Okay?
+
+566
+01:00:20,967 --> 01:00:36,088
+Okay.
+
+567
+01:00:24,980 --> 01:00:25,980
+Doğru, bir soru?
+
+568
+01:00:31,827 --> 01:00:34,088
+Okay, and the last one.
+
+569
+01:00:34,228 --> 01:00:35,588
+Can I ask you something?
+
+570
+01:00:36,168 --> 01:00:36,447
+Yes?
+
+571
+01:00:36,688 --> 01:00:39,648
+Why we choose P and Q and P and R?
+
+572
+01:00:39,867 --> 01:00:41,467
+Why we choose R and Q?
+
+573
+01:00:41,648 --> 01:00:43,268
+There is no obligation.
+
+574
+01:00:43,427 --> 01:00:44,748
+You can select any of them.
+
+575
+01:00:44,827 --> 01:00:47,567
+You can select P as a starting point.
+
+576
+01:00:47,688 --> 01:00:51,467
+So you have to determine QP, QR.
+
+577
+01:00:52,427 --> 01:00:55,987
+Or you can select R, RP, RQ.
+
+578
+01:00:56,347 --> 01:00:57,228
+It is your choice.
+
+579
+01:00:57,768 --> 01:00:59,588
+They are asking any vector.
+
+580
+01:00:59,788 --> 01:01:01,608
+They don't ask a spatial vector.
+
+581
+01:01:01,608 --> 01:01:02,907
+They are asking a vector.
+
+582
+01:01:03,307 --> 01:01:03,447
+Okay?
+
+583
+01:01:04,527 --> 01:01:05,327
+Okay, thank you.
+
+584
+01:01:05,467 --> 01:01:06,768
+You can select any of them.
+
+585
+01:01:07,367 --> 01:01:08,108
+Okay, not at all.
+
+586
+01:01:08,847 --> 01:01:12,248
+Okay, so let me look at the papers.
+
+587
+01:01:12,427 --> 01:01:16,807
+Please note that which parts are not included.
+
+588
+01:01:17,067 --> 01:01:18,427
+I will show again.
+
+589
+01:01:19,327 --> 01:01:26,987
+In your paper, you don't need to know this one.
+
+590
+01:01:26,987 --> 01:01:27,427
+Okay?
+
+591
+01:01:27,427 --> 01:01:27,487
+Okay.
+
+592
+01:01:30,367 --> 01:01:33,307
+And projection is not included.
+
+593
+01:01:33,788 --> 01:01:36,668
+Bunlar vardı ama geçen senelerde iptal oldu.
+
+594
+01:01:36,788 --> 01:01:37,708
+Ama notlarımda hala var.
+
+595
+01:01:38,128 --> 01:01:39,688
+Ama konu olarak müfredatmışı artık.
+
+596
+01:01:40,208 --> 01:01:41,788
+You don't need to look at the projection.
+
+597
+01:01:42,168 --> 01:01:46,628
+And you don't need to look at triple scalar.
+
+598
+01:01:46,867 --> 01:01:47,728
+Or box product.
+
+599
+01:01:48,367 --> 01:01:50,027
+You don't responsible.
+
+600
+01:01:50,268 --> 01:01:50,487
+Okay?
+
+601
+01:01:50,487 --> 01:01:52,208
+You are not responsible.
+
+602
+01:01:52,347 --> 01:01:52,947
+These subjects.
+
+603
+01:01:53,668 --> 01:01:54,407
+In your paper.
+
+604
+01:01:54,788 --> 01:01:54,867
+Okay?
+
+605
+01:01:55,967 --> 01:01:56,487
+Bunlar yok.
+
+606
+01:01:56,927 --> 01:01:58,007
+Mifredatmış artık.
+
+607
+01:01:58,748 --> 01:02:04,067
+So, you need to know what is the meaning of that product and cross product.
+
+608
+01:02:04,067 --> 01:02:10,967
+But especially, this type of things are very important.
+
+609
+01:02:12,248 --> 01:02:15,467
+This vector is perpendicular to this plane.
+
+610
+01:02:16,027 --> 01:02:16,148
+Okay?
+
+611
+01:02:17,847 --> 01:02:18,527
+Okay.
+
+612
+01:02:18,688 --> 01:02:21,608
+Now, the vectors are this.
+
+613
+01:02:22,367 --> 01:02:24,867
+Now, we can talk about our next subject.
+
+614
+01:02:25,268 --> 01:02:27,387
+This subject is related to vector.
+
+615
+01:02:29,347 --> 01:02:31,228
+Vectors, dot and cross product.
+
+616
+01:02:31,347 --> 01:02:32,007
+Yes, [öğrenci].
+
+617
+01:02:32,007 --> 01:02:33,427
+Do you have any questions?
+
+618
+01:02:34,628 --> 01:02:34,967
+Yeah.
+
+619
+01:02:35,128 --> 01:02:37,768
+Teacher here in the previous question that we have solved.
+
+620
+01:02:38,547 --> 01:02:38,987
+Yes.
+
+621
+01:02:38,987 --> 01:02:42,987
+If he asked us for parallel vector.
+
+622
+01:02:43,628 --> 01:02:47,047
+Will we do the same, but we will take dot product?
+
+623
+01:02:48,547 --> 01:02:49,648
+If they...
+
+624
+01:02:49,648 --> 01:02:51,168
+Will the solution be by taking dot?
+
+625
+01:02:51,268 --> 01:02:51,867
+Okay.
+
+626
+01:02:51,907 --> 01:02:52,487
+One second.
+
+627
+01:02:52,487 --> 01:02:52,847
+Okay.
+
+628
+01:02:52,847 --> 01:02:54,608
+One second.
+
+629
+01:03:04,436 --> 01:03:05,796
+The question was this.
+
+630
+01:03:07,396 --> 01:03:07,736
+Okay.
+
+631
+01:03:09,576 --> 01:03:20,655
+So, you are asking, if they ask, are you asking this?
+
+632
+01:03:23,096 --> 01:03:25,036
+Dizelden, are you there?
+
+633
+01:03:25,036 --> 01:03:34,836
+You are asking, can you find a vector which is parallel to your plane?
+
+634
+01:03:34,836 --> 01:03:34,896
+Okay.
+
+635
+01:03:39,539 --> 01:03:41,139
+Şimdi geliyor mu sesim?
+
+636
+01:03:42,119 --> 01:03:42,960
+Is it okay now?
+
+637
+01:03:44,279 --> 01:03:44,880
+Yeah, it is.
+
+638
+01:03:45,779 --> 01:03:50,340
+So you say that if they ask a parallel vector
+
+639
+01:03:50,340 --> 01:03:52,860
+which is parallel to your plane.
+
+640
+01:03:53,619 --> 01:03:54,980
+You are asking this one?
+
+641
+01:03:55,599 --> 01:03:56,019
+Yes, yes.
+
+642
+01:03:56,380 --> 01:04:00,960
+Okay, you can write anything which is parallel to P, R, P, Q.
+
+643
+01:04:01,320 --> 01:04:03,539
+Any of them are parallel to your line.
+
+644
+01:04:04,360 --> 01:04:05,840
+For example, what is P, R?
+
+645
+01:04:05,940 --> 01:04:06,820
+P, R is this.
+
+646
+01:04:07,699 --> 01:04:07,860
+Okay.
+
+647
+01:04:07,860 --> 01:04:11,800
+For example, you can take minus one, one, one.
+
+648
+01:04:12,199 --> 01:04:17,539
+It is parallel to P, R and also parallel to your plane.
+
+649
+01:04:18,820 --> 01:04:20,239
+This is an easy example, okay?
+
+650
+01:04:20,840 --> 01:04:21,559
+Yeah, thank you.
+
+651
+01:04:22,279 --> 01:04:22,500
+Okay.
+
+652
+01:04:23,779 --> 01:04:29,000
+Okay, now let's talk about line and plane in your space.
+
+653
+01:04:30,279 --> 01:04:33,579
+Before that, I want to say something.
+
+654
+01:04:33,579 --> 01:04:43,880
+When they ask a line and plane in three-dimensional system,
+
+655
+01:04:44,139 --> 01:04:49,960
+normally how can you write a line in two-dimensional system?
+
+656
+01:04:50,360 --> 01:04:53,539
+In two-dimensional system, if you want to write this line,
+
+657
+01:04:53,639 --> 01:04:56,980
+what's for example, y equals 2x minus one.
+
+658
+01:04:56,980 --> 01:05:01,320
+Okay, this is a line equation in two-dimensional system.
+
+659
+01:05:01,320 --> 01:05:07,779
+But if you want to write a line, you can think a small rope, okay?
+
+660
+01:05:08,480 --> 01:05:12,039
+So if you want to write a line in three-dimensional system,
+
+661
+01:05:12,039 --> 01:05:15,119
+you have to write your equation as parametrically.
+
+662
+01:05:15,119 --> 01:05:16,539
+Let me give an example.
+
+663
+01:05:16,539 --> 01:05:26,860
+For example, 2 plus t, y is minus one minus t, z is zero plus 2t.
+
+664
+01:05:26,940 --> 01:05:34,440
+For example, this is an equation, a line equation in three-dimensional system.
+
+665
+01:05:34,440 --> 01:05:39,739
+Okay, so for example, this is a line, okay?
+
+666
+01:05:40,800 --> 01:05:45,679
+So if you want to write an equation of a line in three-dimensional system,
+
+667
+01:05:46,159 --> 01:05:50,380
+you have to write as parametrically, t is your parameter.
+
+668
+01:05:50,579 --> 01:05:53,139
+When t changes, your point will change, okay?
+
+669
+01:05:53,960 --> 01:06:00,639
+So if you want to write a plane, sorry, if you want to write a line equation,
+
+670
+01:06:00,639 --> 01:06:03,000
+you need two things.
+
+671
+01:06:03,320 --> 01:06:06,820
+The first one, you need a point in your line.
+
+672
+01:06:08,139 --> 01:06:17,460
+And you have to determine vector which is parallel to your line, okay?
+
+673
+01:06:17,679 --> 01:06:21,079
+If you have these two things, you can write a line equation.
+
+674
+01:06:21,699 --> 01:06:23,599
+So what do we need for the line equation?
+
+675
+01:06:23,599 --> 01:06:27,980
+You need one point on your line.
+
+676
+01:06:27,980 --> 01:06:30,139
+And in your questions, we will give.
+
+677
+01:06:30,320 --> 01:06:31,400
+We have to give also.
+
+678
+01:06:32,119 --> 01:06:37,259
+And the next one is, you have to determine a vector which is parallel to your line.
+
+679
+01:06:38,679 --> 01:06:41,739
+Especially you will try to find this vector, okay?
+
+680
+01:06:42,619 --> 01:06:43,420
+Ne demek istiyorum?
+
+681
+01:06:43,579 --> 01:06:44,800
+Şunu demek istiyorum.
+
+682
+01:06:45,300 --> 01:06:50,320
+İki boyutta bir doğru denkleme yazarken böyle basit şekilde yazıyordunuz.
+
+683
+01:06:50,320 --> 01:06:54,699
+Ama üç boyutta bir doğru denkleme yazmak istiyorsanız bunu ancak parametrik olarak yazabilirsiniz.
+
+684
+01:06:54,840 --> 01:06:55,559
+Yani böyle yazacağız.
+
+685
+01:06:55,559 --> 01:07:00,400
+Peki bir doğru yazmak için bu üç boyutlu uzayda neye ihtiyacımız var?
+
+686
+01:07:00,639 --> 01:07:01,639
+İki şeye ihtiyacımız var.
+
+687
+01:07:01,699 --> 01:07:03,199
+Bu iki şey elimizde varsa yazabiliyoruz.
+
+688
+01:07:03,480 --> 01:07:06,019
+Birincisi üzerinde bir nokta ki onu vermek zorundayız.
+
+689
+01:07:06,619 --> 01:07:10,900
+Ya da bazı soruları belirleyebiliyoruz.
+
+690
+01:07:13,480 --> 01:07:19,579
+İkincisi ve en önemlisi sizin bulmanız gereken bu doğruyla şey önemli değil.
+
+691
+01:07:19,579 --> 01:07:21,139
+Onunla paralel olması yetiyor.
+
+692
+01:07:21,139 --> 01:07:25,420
+Bu ikisini kullanarak bu denklemi yazabiliyorsunuz.
+
+693
+01:07:25,420 --> 01:07:39,259
+İkincisi ve en önemlisi için bir nokta.
+
+694
+01:07:38,164 --> 01:07:41,444
+If you want to write a plane equation, what do you need?
+
+695
+01:07:41,964 --> 01:07:43,464
+Only you need two things.
+
+696
+01:07:43,464 --> 01:07:49,684
+The first one is a point on your plane.
+
+697
+01:07:50,184 --> 01:07:58,004
+And the second one is a vector which is perpendicular to your plane.
+
+698
+01:07:58,384 --> 01:08:02,184
+If you have these two information, you can write your equation.
+
+699
+01:08:02,184 --> 01:08:07,824
+For example, it will be like this 2x minus y plus z equals 2.
+
+700
+01:08:07,944 --> 01:08:10,544
+For example, this is a plane equation.
+
+701
+01:08:10,724 --> 01:08:14,204
+Or you can have 2x minus y is 4.
+
+702
+01:08:14,444 --> 01:08:15,924
+It is a plane equation.
+
+703
+01:08:16,144 --> 01:08:18,484
+Or x plus z will be 0.
+
+704
+01:08:18,684 --> 01:08:20,824
+It is another plane equation.
+
+705
+01:08:21,423 --> 01:08:23,344
+So what do you need about plane?
+
+706
+01:08:23,804 --> 01:08:28,083
+You need one point on your plane.
+
+707
+01:08:28,083 --> 01:08:32,003
+You need a vector which is orthogonal to your plane.
+
+708
+01:08:32,184 --> 01:08:36,083
+If you have these two information, you can write equation.
+
+709
+01:08:36,704 --> 01:08:36,824
+Okay?
+
+710
+01:08:39,824 --> 01:08:43,704
+Düzlem yazmak için de iki şeye ihtiyacımız var.
+
+711
+01:08:43,784 --> 01:08:45,404
+Yine de bir nokta olmazsa olmazı.
+
+712
+01:08:46,384 --> 01:08:54,444
+İkincisi de onunla ona dik olan elinizdeki düzleme dik olan bir vektöre ihtiyacımız var.
+
+713
+01:08:54,583 --> 01:08:57,024
+Bu ikisi varsa yine düzlem vektörlerimizi yazabiliyoruz.
+
+714
+01:08:57,024 --> 01:08:59,064
+Yani her şey aslında vektörler üzerine kurulu.
+
+715
+01:09:00,284 --> 01:09:00,564
+Okay.
+
+716
+01:09:00,564 --> 01:09:02,884
+Now let's look at our subject.
+
+717
+01:09:03,284 --> 01:09:05,043
+Line and line segment in space.
+
+718
+01:09:06,083 --> 01:09:18,284
+In three-dimensional system, let us take R0 is a position vector of the point.
+
+719
+01:09:18,284 --> 01:09:21,384
+So P0 is X0, Y0, Z0.
+
+720
+01:09:21,984 --> 01:09:26,764
+And let us take any points on your plane.
+
+721
+01:09:27,963 --> 01:09:29,224
+Sorry, on your line.
+
+722
+01:09:29,384 --> 01:09:29,944
+It is P.
+
+723
+01:09:31,104 --> 01:09:31,423
+Sorry.
+
+724
+01:09:31,804 --> 01:09:33,144
+I take two points.
+
+725
+01:09:33,724 --> 01:09:38,224
+The point P0 components are X0, Y0, Z0.
+
+726
+01:09:38,224 --> 01:09:41,264
+And I take another point P.
+
+727
+01:09:41,904 --> 01:09:46,003
+And the components of the P let us take X, Y, Z.
+
+728
+01:09:46,003 --> 01:10:01,904
+Okay.
+
+729
+01:09:50,899 --> 01:10:05,839
+I take two points. Now, r0 is the position vector of p0. What is the position vector? The vector of p.
+
+730
+01:10:06,939 --> 01:10:15,500
+Okay. Then, if I write r minus r0, what is r minus r0? Is this.
+
+731
+01:10:15,500 --> 01:10:29,579
+r minus r0 vector is parallel to rv vector. I take as a v vector, which is parallel to r minus r0.
+
+732
+01:10:29,579 --> 01:10:39,739
+Okay. The components of v is v1, v2, v3, vn, non-zero vector. In this case, there exists only one line,
+
+733
+01:10:39,739 --> 01:10:42,939
+which goes through the point p0, which goes through the point p0, which goes through the point p0,
+
+734
+01:10:42,939 --> 01:10:56,059
+and parallel to the vector v. Okay. So, what can I write? I need to write r vector. The r vector will be...
+
+735
+01:11:00,564 --> 01:11:01,784
+Şu an sesim geliyor mu?
+
+736
+01:11:04,264 --> 01:11:07,984
+Güzel değil mi şimdi sesim? Biraz internetim gidip gidip geliyor da.
+
+737
+01:11:12,115 --> 01:11:34,576
+Şu an iyi değil mi? Okay. Okay, so let's see what is the relation. Let a vector equation for a line L, passing from P0 and parallel to V vector is R. What is R? R is R0 plus T product V.
+
+738
+01:11:34,576 --> 01:11:52,095
+R vector is R0 here plus T product V. How can we write this? I say that R minus R0 is parallel to V. Okay.
+
+739
+01:11:55,764 --> 01:12:02,623
+These two vectors are parallel to each other. It means that there is a relation, there is a constant between them.
+
+740
+01:12:03,243 --> 01:12:08,984
+So I can say that it is t product v. t is a number.
+
+741
+01:12:09,743 --> 01:12:16,064
+Okay, so from here we can write that r is r0 plus t product v.
+
+742
+01:12:16,064 --> 01:12:21,104
+This is the line equation formula.
+
+743
+01:12:21,963 --> 01:12:32,384
+So in the result you will see x is something, y is something, z is something, because x, y, z are the components of r.
+
+744
+01:12:33,163 --> 01:12:34,884
+Let me give some example.
+
+745
+01:12:37,884 --> 01:12:39,364
+Çok basit aslında.
+
+746
+01:12:41,583 --> 01:12:44,644
+Okay, let me write some examples.
+
+747
+01:12:50,771 --> 01:13:02,292
+Find the parametric equations for the line. You can write a line equation parametrically or vector written.
+
+748
+01:13:02,292 --> 01:13:10,612
+Okay. Find parametric equations of the line passing from this one and parallel to V.
+
+749
+01:13:10,931 --> 01:13:17,032
+They give, they need a line. They set that this is your P. This is your point.
+
+750
+01:13:17,032 --> 01:13:24,412
+And they give a vector is this. The components is 2, 4, minus 2.
+
+751
+01:13:24,952 --> 01:13:31,652
+What do you need to write a line equation? A point. Yes, I have a point.
+
+752
+01:13:32,211 --> 01:13:36,192
+A vector which is parallel to your line. Do you have? Yes.
+
+753
+01:13:36,431 --> 01:13:40,591
+So I can write the equation and they are asking the equation parametrically.
+
+754
+01:13:41,292 --> 01:13:46,271
+Is this X is, Y is, Z is.
+
+755
+01:13:47,032 --> 01:13:51,731
+What was the formula? Firstly, you have to write your points.
+
+756
+01:13:53,431 --> 01:14:00,251
+R0 is your position vector, which is in your line.
+
+757
+01:14:00,591 --> 01:14:04,952
+So here you have to write the components of your point. What is this?
+
+758
+01:14:05,952 --> 01:14:08,952
+Minus 2, 0, 4.
+
+759
+01:14:08,952 --> 01:14:13,452
+Plus, I have to product with the variable T.
+
+760
+01:14:13,751 --> 01:14:15,091
+Actually, T is a number.
+
+761
+01:14:15,832 --> 01:14:15,931
+Okay.
+
+762
+01:14:17,091 --> 01:14:23,372
+After that, I have to product the components of V because V is parallel to your line.
+
+763
+01:14:23,471 --> 01:14:26,311
+It is 2, 4, minus 2.
+
+764
+01:14:26,652 --> 01:14:29,192
+This is your line equation.
+
+765
+01:14:29,192 --> 01:14:35,891
+It is 3, 4, minus 2.
+
+766
+01:14:35,891 --> 01:14:37,891
+This is your line equation.
+
+767
+01:14:37,891 --> 01:14:39,891
+It is 3, 4, minus 2.
+
+768
+01:14:39,891 --> 01:14:40,891
+This is your line equation.
+
+769
+01:14:40,891 --> 01:14:41,891
+It is 3, 4, minus 2.
+
+770
+01:14:41,891 --> 01:14:42,891
+This is your line equation.
+
+771
+01:14:42,891 --> 01:14:43,891
+It is 3, 4, minus 2.
+
+772
+01:14:43,891 --> 01:14:44,891
+This is your line equation.
+
+773
+01:14:44,891 --> 01:14:45,891
+It is 3, 4, minus 2, minus 2.
+
+774
+01:14:45,891 --> 01:14:46,891
+This is your line equation.
+
+775
+01:14:37,652 --> 01:14:56,572
+If you want to write vector, it will be rt will be minus 2 plus 2t, 4t, 4 minus 2t. This is the vector form. This is the parametric form.
+
+776
+01:14:56,572 --> 01:15:04,192
+Okay. Firstly, you have to write the components of your point on the line. After that, you have to write your variable t.
+
+777
+01:15:04,192 --> 01:15:09,591
+and here will be the components of the vector which is parallel to your line.
+
+778
+01:15:10,912 --> 01:15:21,952
+This is written as parametrically. This is the written as vector. Bu parametrik yazılmış hali. Bu vektör olarak yazılmış hali.
+
+779
+01:15:24,452 --> 01:15:25,051
+Okay.
+
+780
+01:15:28,692 --> 01:15:30,511
+Let's see some other examples.
+
+781
+01:15:44,787 --> 01:15:46,387
+Let's look at this example.
+
+782
+01:15:49,147 --> 01:15:53,727
+Find the vector equation, they are asking in the vector form.
+
+783
+01:15:54,347 --> 01:16:01,067
+Find the vector equation for the line passing from x and y.
+
+784
+01:16:02,707 --> 01:16:07,427
+Here they give only two points on your line.
+
+785
+01:16:19,475 --> 01:16:20,675
+Şu an ses miyim arkadaşlar?
+
+786
+01:16:23,955 --> 01:16:24,515
+Okay.
+
+787
+01:16:26,355 --> 01:16:35,315
+So, in the question, in the question, only they give two points, and they are asking the line equation.
+
+788
+01:16:36,835 --> 01:16:38,155
+I have two things.
+
+789
+01:16:38,295 --> 01:16:42,635
+The first one, a point on your line, I have two points, no problem.
+
+790
+01:16:43,175 --> 01:16:47,076
+But I don't have any vector which is parallel to your line.
+
+791
+01:16:47,496 --> 01:16:49,036
+How can you write your line?
+
+792
+01:16:58,355 --> 01:17:09,715
+Yes, if you write xy vector, it is parallel to your line and it is also on your line, no problem.
+
+793
+01:17:09,876 --> 01:17:12,015
+But it will be parallel to your plane.
+
+794
+01:17:12,576 --> 01:17:16,335
+So you can take xy or you can take yx, no problem.
+
+795
+01:17:16,615 --> 01:17:18,036
+Both of them you can take.
+
+796
+01:17:19,335 --> 01:17:20,795
+So what is this?
+
+797
+01:17:20,876 --> 01:17:25,076
+The components will be y minus x, 2 minus 1 will be 1.
+
+798
+01:17:25,076 --> 01:17:29,916
+5 minus 3 will be 2.
+
+799
+01:17:31,595 --> 01:17:34,775
+3 minus 2 will be 1.
+
+800
+01:17:35,395 --> 01:17:38,795
+This is your desired vector.
+
+801
+01:17:38,956 --> 01:17:40,175
+You can take as v.
+
+802
+01:17:40,815 --> 01:17:44,135
+Okay, so let us write our line equation.
+
+803
+01:17:44,135 --> 01:17:48,515
+First, I want to write parametric equations.
+
+804
+01:17:48,515 --> 01:17:56,615
+x, y, z will be in the first part you will say write your point.
+
+805
+01:17:57,275 --> 01:17:58,996
+Which point you can write.
+
+806
+01:17:59,515 --> 01:18:02,795
+You can select your point as the initial point.
+
+807
+01:18:02,956 --> 01:18:06,255
+Okay, I started to with xy vector.
+
+808
+01:18:06,255 --> 01:18:08,275
+The beginning point is x.
+
+809
+01:18:08,395 --> 01:18:11,355
+So I want to take the components of x.
+
+810
+01:18:12,416 --> 01:18:12,855
+1,
+
+811
+01:18:12,855 --> 01:18:15,635
+3,
+
+812
+01:18:15,635 --> 01:18:16,496
+2.
+
+813
+01:18:18,795 --> 01:18:19,996
+After that,
+
+814
+01:18:20,175 --> 01:18:22,795
+I have to product with t variable.
+
+815
+01:18:22,795 --> 01:18:33,295
+And then I want to write the model.
+
+816
+01:18:27,315 --> 01:18:34,996
+And after that I have, what is this? It is 1, 2, 1.
+
+817
+01:18:35,795 --> 01:18:42,515
+This is line equation. Parametriquil, they are asking vectors. So what is this? Rt will be.
+
+818
+01:18:43,235 --> 01:18:54,755
+The x component is 1 plus t, 3 plus 2t, 2 plus t. Or you can write, if you remember it was R0 plus
+
+819
+01:18:54,755 --> 01:19:05,795
+tv. If you want, you can write in this way also. It is 1, 3, 2 plus t, 1, 2, 1.
+
+820
+01:19:12,083 --> 01:19:18,684
+The first one is written parametrically, this is written vector.
+
+821
+01:19:20,423 --> 01:19:20,663
+Okay?
+
+822
+01:19:23,743 --> 01:19:28,963
+If as we, y, x, you can write, both of them are true.
+
+823
+01:19:28,963 --> 01:19:35,863
+The direction is not important, because both of them are parallel to your line.
+
+824
+01:19:36,884 --> 01:19:37,163
+Okay?
+
+825
+01:19:38,063 --> 01:19:40,783
+Okay, let's see another example.
+
+826
+01:19:58,131 --> 01:20:01,411
+Parametrizize means they are asking parametric equations.
+
+827
+01:20:03,891 --> 01:20:05,291
+Let's make this example.
+
+828
+01:20:05,431 --> 01:20:06,431
+It is the same example.
+
+829
+01:20:07,071 --> 01:20:10,491
+Parametrizize means that write the line equation parametrically.
+
+830
+01:20:11,591 --> 01:20:13,251
+Parametrizize the line segment.
+
+831
+01:20:13,251 --> 01:20:17,011
+They are asking line equation, but parametrically.
+
+832
+01:20:17,631 --> 01:20:24,311
+Joining the points P and Q, they give two points on your line.
+
+833
+01:20:24,451 --> 01:20:25,891
+This is P, this is Q.
+
+834
+01:20:28,131 --> 01:20:35,692
+So I can write P, Q as your V vector, which is parallel to your line.
+
+835
+01:20:36,431 --> 01:20:37,271
+What is this?
+
+836
+01:20:37,591 --> 01:20:39,911
+Q minus P, it will be 4.
+
+837
+01:20:41,911 --> 01:20:44,811
+Minus 3, 7.
+
+838
+01:20:47,152 --> 01:20:51,871
+Okay, let's write our equation X, Y, Z.
+
+839
+01:20:54,291 --> 01:20:57,091
+First, I have to write the components of the points.
+
+840
+01:20:57,091 --> 01:21:00,111
+So I take P as the initial points.
+
+841
+01:21:00,211 --> 01:21:04,171
+I will write minus 3, 2, minus 3.
+
+842
+01:21:04,811 --> 01:21:08,371
+Plus T.
+
+843
+01:21:11,431 --> 01:21:14,211
+And I will write the components of V.
+
+844
+01:21:14,371 --> 01:21:19,231
+It will be 4, minus 3, and 7.
+
+845
+01:21:19,231 --> 01:21:25,511
+Okay, this is the line equation parametrically.
+
+846
+01:21:25,511 --> 01:21:25,571
+Okay.
+
+847
+01:21:25,571 --> 01:21:25,591
+This is the line equation parametrically.
+
+848
+01:21:29,268 --> 01:21:33,087
+Okay, let's see what we have in other words.
+
+849
+01:21:33,568 --> 01:21:34,828
+Yes, teacher.
+
+850
+01:21:37,707 --> 01:21:40,188
+Here, the 4, minus 3, and 7.
+
+851
+01:21:40,507 --> 01:21:42,328
+What do they represent?
+
+852
+01:21:44,307 --> 01:21:45,068
+They...
+
+853
+01:21:45,068 --> 01:21:47,368
+Do we multiply 4 by T?
+
+854
+01:21:47,648 --> 01:21:50,788
+It is Q minus P.
+
+855
+01:21:50,788 --> 01:21:53,268
+You will subtract the components of Q.
+
+856
+01:21:53,427 --> 01:21:55,467
+1, minus, minus 3.
+
+857
+01:21:55,587 --> 01:21:56,047
+Yeah, 3.
+
+858
+01:21:56,627 --> 01:21:57,247
+Yes.
+
+859
+01:21:57,247 --> 01:21:59,908
+But what do they represent?
+
+860
+01:22:00,688 --> 01:22:03,068
+So here, in this equation, what do they do?
+
+861
+01:22:04,347 --> 01:22:05,448
+This is PQ.
+
+862
+01:22:06,887 --> 01:22:08,568
+Okay, this is PQ vector.
+
+863
+01:22:08,768 --> 01:22:10,148
+This shows a vector.
+
+864
+01:22:12,307 --> 01:22:16,028
+Okay, this shows a vector, and I know that...
+
+865
+01:22:16,028 --> 01:22:16,627
+Let me write.
+
+866
+01:22:16,707 --> 01:22:17,467
+This is your line.
+
+867
+01:22:17,467 --> 01:22:19,247
+And I take P and Q.
+
+868
+01:22:19,667 --> 01:22:22,228
+PQ vector is on your line, but no problem.
+
+869
+01:22:22,807 --> 01:22:25,467
+This PQ vector is parallel to your line.
+
+870
+01:22:25,467 --> 01:22:27,188
+I can take SV.
+
+871
+01:22:27,408 --> 01:22:30,467
+You don't need to have outside the line.
+
+872
+01:22:30,707 --> 01:22:33,467
+You can take any vector on the line also.
+
+873
+01:22:33,587 --> 01:22:34,648
+This is PQ vector.
+
+874
+01:22:35,347 --> 01:22:37,807
+This PQ vector is parallel to your line.
+
+875
+01:22:38,707 --> 01:22:41,627
+So it is enough for me to take SV.
+
+876
+01:22:42,627 --> 01:22:43,528
+As PQ.
+
+877
+01:22:43,847 --> 01:22:44,068
+Okay?
+
+878
+01:22:44,068 --> 01:23:02,927
+Okay.
+
+879
+01:22:53,235 --> 01:22:53,595
+Ok.
+
+880
+01:22:58,292 --> 01:23:05,052
+Okay, so let me ask one question.
+
+881
+01:23:07,792 --> 01:23:15,152
+Now we will see parallel lines. How can you understand these two lines are parallel to each other? I have two lines, okay.
+
+882
+01:23:16,032 --> 01:23:24,052
+Let us take, it is n1, it is n2. Let's take, this is a point, p1, p2.
+
+883
+01:23:24,052 --> 01:23:30,192
+Let us take, this vector is v1, this is v2.
+
+884
+01:23:30,192 --> 01:23:31,472
+Okay.
+
+885
+01:23:40,819 --> 01:23:45,019
+So I am asking these two lines are parallel.
+
+886
+01:23:45,779 --> 01:23:52,639
+I have two lines and I want to know that these two lines are parallel to each other or not.
+
+887
+01:23:52,739 --> 01:23:53,840
+How can we determine?
+
+888
+01:23:54,920 --> 01:23:56,299
+What can we do for this?
+
+889
+01:23:57,639 --> 01:24:01,000
+Nasıl anlarız bu iki doğrunun birbirine paralel olup olmadığını?
+
+890
+01:24:01,539 --> 01:24:07,179
+Yes, actually you have to study with the vector.
+
+891
+01:24:07,179 --> 01:24:16,340
+If y1 and y2 are parallel to each other, it means that the line also will parallel to each other.
+
+892
+01:24:16,340 --> 01:24:34,099
+So I can say that if the vectors v1 parallel to v2, then I can say that the line l1 parallel to l2.
+
+893
+01:24:37,179 --> 01:24:38,759
+Yes, yes, yes.
+
+894
+01:24:39,599 --> 01:24:42,039
+Okay, so let's see here.
+
+895
+01:24:43,679 --> 01:24:49,699
+Let us take small l has an equation r is r0 plus t v1.
+
+896
+01:24:50,079 --> 01:24:54,439
+And big L has equation r is r0 plus t v1.
+
+897
+01:24:54,439 --> 01:25:01,299
+If the vectors v1 and v2 are parallel to each other, then these lines will be parallel to each other.
+
+898
+01:25:04,000 --> 01:25:06,859
+Okay, let's look at these examples.
+
+899
+01:25:06,859 --> 01:25:20,859
+Let us take small l is r0 plus t v1.
+
+900
+01:25:11,252 --> 01:25:15,132
+The line, they didn't give the line equation.
+
+901
+01:25:15,372 --> 01:25:21,632
+Okay, the line passing from the points x1 and x2 is parallel to line.
+
+902
+01:25:22,072 --> 01:25:24,912
+Is parallel or not, they are asking the question.
+
+903
+01:25:24,912 --> 01:25:29,192
+Okay, they give two lines.
+
+904
+01:25:31,032 --> 01:25:33,492
+They didn't give the equation.
+
+905
+01:25:33,872 --> 01:25:40,392
+They give, this is x1, this is x2, this is y1.
+
+906
+01:25:41,252 --> 01:25:48,452
+This is y2 and they are asking these two lines are parallel to each other or not.
+
+907
+01:25:49,072 --> 01:25:54,632
+Okay, so it is enough to determine y1 and y2.
+
+908
+01:25:54,632 --> 01:25:55,752
+What is y1?
+
+909
+01:25:56,672 --> 01:25:58,792
+I want to take the same direction.
+
+910
+01:25:59,052 --> 01:26:01,772
+I want to take this direction for both of them.
+
+911
+01:26:02,332 --> 01:26:05,832
+So I have to take x1, x2 vector.
+
+912
+01:26:06,452 --> 01:26:06,572
+Okay.
+
+913
+01:26:09,052 --> 01:26:10,152
+What is this?
+
+914
+01:26:10,152 --> 01:26:12,231
+It is 2 minus 1 will be 1.
+
+915
+01:26:12,812 --> 01:26:14,472
+4 minus 2 is 2.
+
+916
+01:26:14,932 --> 01:26:16,952
+2 minus minus 1, it is 3.
+
+917
+01:26:18,712 --> 01:26:19,852
+What is v2?
+
+918
+01:26:20,231 --> 01:26:24,772
+v2 is y1, y2 vector.
+
+919
+01:26:24,772 --> 01:26:24,932
+V2 is y1, y2 vector.
+
+920
+01:26:28,916 --> 01:26:42,235
+Okay, it is 3 minus 1 will be 2, 4 minus 0 is 4, 2 minus minus 4, it will be 6.
+
+921
+01:26:43,516 --> 01:26:51,895
+So, I have to compare y1 and y2. You can see that 2 product y1 is b2.
+
+922
+01:26:51,895 --> 01:27:01,155
+So, I can say that v1 and v2 are parallel to each other.
+
+923
+01:27:01,756 --> 01:27:05,016
+So, we can say the same thing for the lines.
+
+924
+01:27:05,756 --> 01:27:08,516
+L1 is parallel to L2.
+
+925
+01:27:10,796 --> 01:27:17,056
+So, you have to compare the vectors of the line.
+
+926
+01:27:17,056 --> 01:27:17,956
+Okay?
+
+927
+01:27:19,576 --> 01:27:20,376
+Okay.
+
+928
+01:27:27,891 --> 01:27:37,032
+Okay, it is easy. Let me ask something. Now, let's talk about if you have two lines.
+
+929
+01:27:39,891 --> 01:27:46,791
+If they are intersecting to each other, how can you understand? What is the definition?
+
+930
+01:27:46,791 --> 01:28:03,751
+For this line, it is, let us write, RT is R0 plus T V1.
+
+931
+01:28:04,591 --> 01:28:14,231
+For this line, let us write RS. I will change the variable because they are not parallel to each other.
+
+932
+01:28:14,231 --> 01:28:17,891
+I want to use another term.
+
+933
+01:28:19,032 --> 01:28:25,992
+It will be, let us say, R0 plus S V2.
+
+934
+01:28:30,868 --> 01:28:34,868
+No, the angle can change. Okay, I can say that if...
+
+935
+01:28:38,771 --> 01:28:40,572
+There exists
+
+936
+01:28:40,572 --> 01:28:44,171
+St
+
+937
+01:28:44,171 --> 01:28:46,731
+Such that
+
+938
+01:28:46,731 --> 01:28:49,572
+T number
+
+939
+01:28:49,572 --> 01:28:50,251
+Such that
+
+940
+01:28:50,251 --> 01:28:52,171
+R
+
+941
+01:28:52,171 --> 01:28:53,292
+T
+
+942
+01:28:53,292 --> 01:28:56,751
+Equus
+
+943
+01:28:56,751 --> 01:28:57,351
+R
+
+944
+01:28:57,351 --> 01:28:57,751
+S
+
+945
+01:28:57,751 --> 01:29:01,051
+Then
+
+946
+01:29:01,051 --> 01:29:03,811
+They are
+
+947
+01:29:03,811 --> 01:29:06,471
+Intersect
+
+948
+01:29:06,471 --> 01:29:36,271
+T
+
+949
+01:29:10,260 --> 01:29:13,260
+Çünkü bu noktada aynı noktada,
+
+950
+01:29:13,260 --> 01:29:16,260
+bu noktada aynı noktada.
+
+951
+01:29:16,260 --> 01:29:19,260
+Eks. S1, T2.
+
+952
+01:29:19,260 --> 01:29:24,260
+Bu noktada aynı noktada.
+
+953
+01:29:27,956 --> 01:29:32,756
+So in the intersecting lines, what can we talk about?
+
+954
+01:29:32,836 --> 01:29:35,275
+For example, we can talk about this angle.
+
+955
+01:29:36,576 --> 01:29:40,376
+Okay, this is the angle between these two lines.
+
+956
+01:29:42,476 --> 01:29:49,355
+And we learn, for example, in the example,
+
+957
+01:29:50,935 --> 01:29:53,615
+they can ask, what is the angle between these two lines?
+
+958
+01:29:53,796 --> 01:29:54,815
+How can we determine?
+
+959
+01:29:55,315 --> 01:29:56,735
+We use the vectors.
+
+960
+01:29:57,016 --> 01:29:57,615
+What is this?
+
+961
+01:29:57,615 --> 01:30:01,855
+I know that I can take this vector as V2
+
+962
+01:30:01,855 --> 01:30:04,676
+because in the same direction with the line,
+
+963
+01:30:05,395 --> 01:30:08,076
+this is the vector V1.
+
+964
+01:30:08,956 --> 01:30:12,195
+When they are asking the angle between these two lines,
+
+965
+01:30:13,176 --> 01:30:14,395
+actually, they are asking,
+
+966
+01:30:14,636 --> 01:30:17,395
+what is the angle between these two vectors?
+
+967
+01:30:18,956 --> 01:30:20,735
+So they are asking the angle.
+
+968
+01:30:20,735 --> 01:30:26,815
+So we learn two formula according to angle.
+
+969
+01:30:26,815 --> 01:30:27,576
+What was it?
+
+970
+01:30:27,676 --> 01:30:33,876
+I know that the dot product of these two vectors will be the length of U,
+
+971
+01:30:34,556 --> 01:30:35,996
+the length of V,
+
+972
+01:30:36,676 --> 01:30:37,735
+cosine theta.
+
+973
+01:30:37,735 --> 01:30:39,916
+I can use this formula.
+
+974
+01:30:39,916 --> 01:30:42,935
+Or we learn that U product,
+
+975
+01:30:42,935 --> 01:30:44,796
+U cross product,
+
+976
+01:30:44,796 --> 01:30:47,655
+V will be the length of U,
+
+977
+01:30:48,195 --> 01:30:50,056
+the length of V,
+
+978
+01:30:51,115 --> 01:30:51,876
+sine theta,
+
+979
+01:30:53,976 --> 01:30:54,796
+and N.
+
+980
+01:30:54,796 --> 01:30:59,855
+in these two equations.
+
+981
+01:30:59,855 --> 01:31:00,855
+In these two formulas,
+
+982
+01:31:00,855 --> 01:31:01,855
+in these two formulas,
+
+983
+01:31:01,855 --> 01:31:02,416
+we have theta.
+
+984
+01:31:02,416 --> 01:31:09,256
+But which of them is more suitable for us?
+
+985
+01:31:09,256 --> 01:31:11,315
+The first one or the second one?
+
+986
+01:31:12,935 --> 01:31:16,815
+If you want to determine your angle.
+
+987
+01:31:18,416 --> 01:31:20,355
+This one.
+
+988
+01:31:20,615 --> 01:31:20,895
+Why?
+
+989
+01:31:21,016 --> 01:31:22,516
+Because in the second one,
+
+990
+01:31:22,815 --> 01:31:25,956
+it is difficult to determine your unit vector.
+
+991
+01:31:25,956 --> 01:31:29,655
+But here you don't need to determine your unit vector or anything else.
+
+992
+01:31:29,655 --> 01:31:32,416
+Only you will determine the length of U and V.
+
+993
+01:31:32,516 --> 01:31:33,216
+I can determine.
+
+994
+01:31:33,395 --> 01:31:34,855
+I can determine the dot product.
+
+995
+01:31:34,855 --> 01:31:38,756
+So if they ask the angle,
+
+996
+01:31:38,756 --> 01:31:54,076
+it will be arc cosine U dot V over the length of U,
+
+997
+01:31:54,796 --> 01:31:56,836
+the length of V.
+
+998
+01:32:00,724 --> 01:32:07,824
+If they ask the angle between these two lines, you will take the vectors v1 and v2.
+
+999
+01:32:08,503 --> 01:32:09,884
+Okay, let's make some examples.
+
+1000
+01:32:19,507 --> 01:32:21,007
+Let's look at this example.
+
+1001
+01:32:22,268 --> 01:32:29,447
+Find the intersection point of the line passing from x1, x2, y2, y1, y2.
+
+1002
+01:32:29,627 --> 01:32:30,707
+We have two lines.
+
+1003
+01:32:32,887 --> 01:32:34,728
+Let's take this is L1.
+
+1004
+01:32:35,028 --> 01:32:39,667
+They give points x1, x2.
+
+1005
+01:32:44,148 --> 01:32:51,748
+Y1, Y2.
+
+1006
+01:32:53,908 --> 01:32:55,828
+Y2, y2.
+
+1007
+01:32:57,908 --> 01:33:02,307
+Bir şey, if I want to find the intersection point,
+
+1008
+01:33:03,028 --> 01:33:06,307
+what do you need? You have to write as parametrically.
+
+1009
+01:33:07,028 --> 01:33:10,948
+So I have to determine y1 and y2. What is y1?
+
+1010
+01:33:10,948 --> 01:33:16,068
+In the first line, they give the points x1 and x2.
+
+1011
+01:33:16,068 --> 01:33:21,347
+If I take the vector as x1, x2, it will be y1 for us.
+
+1012
+01:33:22,307 --> 01:33:26,708
+So what is this? It is 0, 1, 1.
+
+1013
+01:33:28,148 --> 01:33:32,228
+For the v2 in the second line, I can take as y1, y2.
+
+1014
+01:33:36,595 --> 01:33:41,135
+Okay, what is this? It is 1 minus 1, 2.
+
+1015
+01:33:43,235 --> 01:33:54,995
+Firstly, let me write the line equations. Let's write the first line. It will be x is, you can take your initial point as x1 for the first line.
+
+1016
+01:33:54,995 --> 01:34:07,155
+1, y is 4, z is 2, plus, in the first line equation, I want to use t.
+
+1017
+01:34:09,555 --> 01:34:16,955
+And what are the components of v1? It is 0, 1, 1.
+
+1018
+01:34:16,955 --> 01:34:24,235
+Now, I want to write the L2 equation. It is x, y, z.
+
+1019
+01:34:27,435 --> 01:34:31,115
+In the second line, I take the initial point as y1.
+
+1020
+01:34:31,435 --> 01:34:34,075
+I want to write y1. It is 3, 1, 5.
+
+1021
+01:34:38,612 --> 01:34:49,112
+3, 1, 5, but in the second line, I will change the parameter as s.
+
+1022
+01:34:50,252 --> 01:34:57,811
+Okay, after that, I want to write the components of v2, it is 1, minus 1, 2.
+
+1023
+01:34:58,231 --> 01:35:06,731
+Okay, now they are asking at which intersection, at which point they are intersecting, so you have to compare the same components,
+
+1024
+01:35:06,731 --> 01:35:14,952
+and you will determine s and t. What is x on the left side? It is 1. On the right side, it is 3 plus s.
+
+1025
+01:35:16,192 --> 01:35:28,811
+On the left side, y is 4 plus t. On the right side, I have 1 minus s. On the left side, I have 2 plus t. On the right side, I have 5 plus 2 s.
+
+1026
+01:35:28,811 --> 01:35:58,792
+from these three equations, from these three equations, we will determine s.
+
+1027
+01:35:55,220 --> 01:36:05,360
+minus 1. So, what does it mean? It means that you can write t in this equation, or you can write s in this equation.
+
+1028
+01:36:05,820 --> 01:36:16,199
+You will determine your point. Let's see what is your point. If t is minus 1, it will be 1, 3, 1.
+
+1029
+01:36:16,199 --> 01:36:22,760
+Okay? So, this is your intersection point.
+
+1030
+01:36:24,840 --> 01:36:31,460
+Okay, let me ask, what is the angle between these two lines? Let's find.
+
+1031
+01:36:31,880 --> 01:36:39,520
+What is the dot product of u and v, but here we will take the dot product of y1 and y2.
+
+1032
+01:36:43,891 --> 01:36:52,051
+I know that it is the length of 1, 1, v2, cosin teta. This is the dot product formula.
+
+1033
+01:36:53,412 --> 01:36:57,171
+Okay, let's find the dot product of v1 and v2.
+
+1034
+01:37:00,131 --> 01:37:03,231
+0, minus 1, 2, it will be 1.
+
+1035
+01:37:06,231 --> 01:37:07,831
+You can look at here.
+
+1036
+01:37:14,579 --> 01:37:16,579
+V1'e sq. 2
+
+1037
+01:37:20,115 --> 01:37:25,336
+The length of V2 is 4, 5, 6, square root 6.
+
+1038
+01:37:29,908 --> 01:37:37,028
+So, cosine, theta, will be 1 over square root 12.
+
+1039
+01:37:37,608 --> 01:37:38,868
+What is this angle?
+
+1040
+01:37:38,868 --> 01:37:51,208
+It is r cosine, 1 over square root 12 is your angle between these two lines.
+
+1041
+01:37:54,931 --> 01:37:55,271
+Ok?
+
+1042
+01:38:26,963 --> 01:38:33,963
+Bir saniye sormayacağım.
+
+1043
+01:38:40,467 --> 01:38:42,467
+Bir saniye, bir saniye.
+
+1044
+01:38:49,460 --> 01:38:51,880
+sorulmuş ne var diye bir saniye bakıyorum.
+
+1045
+01:39:16,851 --> 01:39:18,652
+Direkt sorulmuş bir şey yok.
+
+1046
+01:39:18,771 --> 01:39:20,431
+Şey ile birleştirip sorulmuş var.
+
+1047
+01:39:20,992 --> 01:39:21,671
+Düzlemle.
+
+1048
+01:39:22,971 --> 01:39:23,331
+Okay.
+
+1049
+01:39:26,271 --> 01:39:28,671
+We don't have any direct information
+
+1050
+01:39:28,671 --> 01:39:31,931
+about the line.
+
+1051
+01:39:32,152 --> 01:39:34,192
+They ask line and plane.
+
+1052
+01:39:35,192 --> 01:39:36,952
+Okay. This is the last part
+
+1053
+01:39:36,952 --> 01:39:37,612
+of the line.
+
+1054
+01:39:38,511 --> 01:39:40,171
+How can we find the distance
+
+1055
+01:39:40,171 --> 01:39:41,931
+a point to a line?
+
+1056
+01:39:42,492 --> 01:39:44,032
+So let us take that
+
+1057
+01:39:44,032 --> 01:39:46,351
+this is your line equation.
+
+1058
+01:39:46,851 --> 01:39:47,931
+Okay.
+
+1059
+01:39:48,731 --> 01:39:50,211
+Let us take this is your line.
+
+1060
+01:39:50,711 --> 01:39:52,692
+And here v is your
+
+1061
+01:39:52,692 --> 01:39:54,631
+vector which is parallel to your line.
+
+1062
+01:39:54,751 --> 01:39:56,091
+It can be on the line also.
+
+1063
+01:39:56,872 --> 01:39:58,311
+And I want to determine
+
+1064
+01:39:58,311 --> 01:40:00,511
+what is the distance of
+
+1065
+01:40:00,511 --> 01:40:02,452
+this s point to your line?
+
+1066
+01:40:04,072 --> 01:40:06,992
+So I take a point on the line.
+
+1067
+01:40:06,992 --> 01:40:09,091
+I have to know this point.
+
+1068
+01:40:10,971 --> 01:40:12,231
+This is p.
+
+1069
+01:40:13,511 --> 01:40:15,291
+This is your point.
+
+1070
+01:40:15,291 --> 01:40:16,971
+and I want to determine
+
+1071
+01:40:16,971 --> 01:40:18,112
+what is the distance
+
+1072
+01:40:18,112 --> 01:40:20,492
+s to your line.
+
+1073
+01:40:21,131 --> 01:40:21,891
+So what is that?
+
+1074
+01:40:21,971 --> 01:40:23,231
+If I take this line,
+
+1075
+01:40:23,372 --> 01:40:25,992
+this length is s p s.
+
+1076
+01:40:26,572 --> 01:40:28,331
+This is the length of p s vector.
+
+1077
+01:40:28,971 --> 01:40:30,152
+This part will be
+
+1078
+01:40:30,152 --> 01:40:31,692
+p s product sine theta.
+
+1079
+01:40:31,952 --> 01:40:32,751
+This part will be
+
+1080
+01:40:32,751 --> 01:40:34,051
+p s product cosine theta.
+
+1081
+01:40:34,051 --> 01:40:36,072
+So if I want to find
+
+1082
+01:40:36,072 --> 01:40:37,811
+the distance,
+
+1083
+01:40:37,931 --> 01:40:40,511
+it is p s product sine theta.
+
+1084
+01:40:41,331 --> 01:40:41,591
+Okay.
+
+1085
+01:40:42,771 --> 01:40:45,551
+But can we write differently
+
+1086
+01:40:45,551 --> 01:40:49,011
+as the distance?
+
+1087
+01:40:49,271 --> 01:40:50,391
+I know that it is
+
+1088
+01:40:50,391 --> 01:40:52,791
+one second.
+
+1089
+01:40:52,971 --> 01:40:53,912
+Should I show it in?
+
+1090
+01:40:53,912 --> 01:40:58,051
+I want to write
+
+1091
+01:40:58,051 --> 01:40:59,231
+a different way
+
+1092
+01:40:59,231 --> 01:41:01,652
+the cross product
+
+1093
+01:41:01,652 --> 01:41:02,431
+if you want
+
+1094
+01:41:02,431 --> 01:41:02,912
+because
+
+1095
+01:41:02,912 --> 01:41:04,731
+I have information
+
+1096
+01:41:04,731 --> 01:41:06,331
+about v.
+
+1097
+01:41:07,331 --> 01:41:07,952
+Okay.
+
+1098
+01:41:08,231 --> 01:41:09,291
+I have information
+
+1099
+01:41:09,291 --> 01:41:10,011
+about v.
+
+1100
+01:41:10,011 --> 01:41:11,331
+How can we write
+
+1101
+01:41:11,331 --> 01:41:12,011
+a different formalization?
+
+1102
+01:41:12,011 --> 01:41:12,731
+formalization.
+
+1103
+01:41:13,471 --> 01:41:13,811
+Evet,
+
+1104
+01:41:13,992 --> 01:41:14,771
+yolladım burada.
+
+1105
+01:41:15,271 --> 01:41:15,811
+Chatte var.
+
+1106
+01:41:18,572 --> 01:41:19,211
+Okay.
+
+1107
+01:41:19,331 --> 01:41:19,931
+I know that
+
+1108
+01:41:19,931 --> 01:41:20,872
+if you take
+
+1109
+01:41:20,872 --> 01:41:22,112
+the cross product
+
+1110
+01:41:22,112 --> 01:41:23,072
+of p s
+
+1111
+01:41:23,072 --> 01:41:25,652
+and v,
+
+1112
+01:41:27,532 --> 01:41:28,971
+I have that
+
+1113
+01:41:28,971 --> 01:41:30,412
+it is p s
+
+1114
+01:41:30,412 --> 01:41:33,311
+v vector
+
+1115
+01:41:33,311 --> 01:41:35,231
+sine theta
+
+1116
+01:41:35,231 --> 01:41:37,692
+and
+
+1117
+01:41:37,692 --> 01:41:40,291
+unit vector.
+
+1118
+01:41:40,711 --> 01:41:40,871
+Okay.
+
+1119
+01:41:41,952 --> 01:41:42,692
+This is the
+
+1120
+01:41:42,692 --> 01:41:44,452
+vector product
+
+1121
+01:41:44,452 --> 01:41:45,831
+formalization.
+
+1122
+01:41:46,192 --> 01:41:46,751
+If you take
+
+1123
+01:41:46,751 --> 01:41:47,192
+the length
+
+1124
+01:41:47,192 --> 01:41:48,371
+of this vector,
+
+1125
+01:41:49,992 --> 01:41:50,631
+this is
+
+1126
+01:41:50,631 --> 01:41:53,692
+constant,
+
+1127
+01:41:54,091 --> 01:41:54,471
+constant.
+
+1128
+01:41:55,311 --> 01:41:56,271
+Only I will
+
+1129
+01:41:56,271 --> 01:41:57,211
+take the vector,
+
+1130
+01:41:58,511 --> 01:41:59,072
+the length
+
+1131
+01:41:59,072 --> 01:41:59,751
+of the vector
+
+1132
+01:41:59,751 --> 01:42:00,532
+and it is
+
+1133
+01:42:00,532 --> 01:42:01,351
+the unit vector.
+
+1134
+01:42:01,511 --> 01:42:01,891
+What is this?
+
+1135
+01:42:01,971 --> 01:42:02,492
+It is one.
+
+1136
+01:42:03,231 --> 01:42:04,731
+So I can say
+
+1137
+01:42:04,731 --> 01:42:05,091
+that
+
+1138
+01:42:05,091 --> 01:42:07,931
+P s
+
+1139
+01:42:07,931 --> 01:42:10,372
+vector products
+
+1140
+01:42:10,372 --> 01:42:11,471
+land will be
+
+1141
+01:42:11,471 --> 01:42:14,152
+P s
+
+1142
+01:42:14,152 --> 01:42:14,211
+Vector products
+
+1143
+01:42:14,211 --> 01:42:15,211
+land will be
+
+1144
+01:42:15,211 --> 01:42:16,211
+P s
+
+1145
+01:42:16,211 --> 01:42:17,211
+Vector products
+
+1146
+01:42:17,211 --> 01:42:18,211
+land will be
+
+1147
+01:42:18,211 --> 01:42:19,211
+P s
+
+1148
+01:42:19,211 --> 01:42:21,211
+Vector products
+
+1149
+01:42:21,211 --> 01:42:22,211
+land will be
+
+1150
+01:42:22,211 --> 01:42:23,211
+P s
+
+1151
+01:42:23,211 --> 01:42:24,211
+Vector products
+
+1152
+01:42:24,211 --> 01:42:25,211
+land will be
+
+1153
+01:42:25,211 --> 01:42:26,211
+P s
+
+1154
+01:42:26,211 --> 01:42:27,211
+Vector products
+
+1155
+01:42:27,211 --> 01:42:28,211
+land will be
+
+1156
+01:42:28,211 --> 01:42:29,211
+P s
+
+1157
+01:42:29,211 --> 01:42:30,211
+Vector products
+
+1158
+01:42:30,211 --> 01:42:31,211
+land will be
+
+1159
+01:42:31,211 --> 01:42:32,211
+P s
+
+1160
+01:42:32,211 --> 01:42:33,211
+Vector products
+
+1161
+01:42:33,211 --> 01:42:34,211
+land will be
+
+1162
+01:42:34,211 --> 01:42:35,072
+P s
+
+1163
+01:42:17,587 --> 01:42:35,587
+sin teta ve v-vektör. Bu, this is the distance I want to find. This is the distance equation I want to find. P s, cross product v, the lens. After that, I have to divide with v-vektör.
+
+1164
+01:42:43,123 --> 01:42:56,603
+This is your formalization, the distance from s to your vector, s to your line. We will point the p as cross product v over the length of v.
+
+1165
+01:42:57,363 --> 01:43:01,903
+Şunu bilmeniz yeterli ama nasıl çıkartıldığını da dedim gibi bu şekilde yazdık.
+
+1166
+01:43:05,747 --> 01:43:16,807
+Why do we need? Because it is difficult to determine sine theta. You have to make mini calculation to determine sine theta.
+
+1167
+01:43:17,167 --> 01:43:25,347
+But if you use this formula, it will be very easy. So we can use this formula. Let's see in an example.
+
+1168
+01:43:53,716 --> 01:43:58,876
+This is the point S to your line.
+
+1169
+01:43:59,236 --> 01:44:03,676
+Okay, they give a line equation.
+
+1170
+01:44:04,115 --> 01:44:05,655
+We have S point.
+
+1171
+01:44:06,076 --> 01:44:09,396
+S point is 1, 1, 5.
+
+1172
+01:44:09,416 --> 01:44:10,236
+Your line equation.
+
+1173
+01:44:10,436 --> 01:44:12,556
+Can you read the line equation?
+
+1174
+01:44:12,836 --> 01:44:14,376
+I am asking what is P?
+
+1175
+01:44:15,296 --> 01:44:16,836
+What is V vector?
+
+1176
+01:44:19,476 --> 01:44:23,636
+By looking this line equation, can you say what is P?
+
+1177
+01:44:23,716 --> 01:44:25,655
+What is V vector?
+
+1178
+01:44:30,003 --> 01:44:41,104
+Yes, p will be 1, 3, 0. It will be constant in your x, y, z, 1, 3, 0.
+
+1179
+01:44:43,743 --> 01:44:53,184
+What is v-vector? It is the coefficient of t, 1, minus 1, and 2.
+
+1180
+01:44:53,184 --> 01:44:55,724
+Okay.
+
+1181
+01:44:56,863 --> 01:45:01,884
+Now, if I want to find the distance, d will be, what was it?
+
+1182
+01:45:02,323 --> 01:45:11,823
+It was the cross product of p, s, and v, the length, over the length of v.
+
+1183
+01:45:12,283 --> 01:45:15,024
+This is the distance formalization.
+
+1184
+01:45:16,224 --> 01:45:18,483
+Okay, first I have to write p, s vector.
+
+1185
+01:45:18,583 --> 01:45:19,623
+What is p, s vector?
+
+1186
+01:45:19,623 --> 01:45:26,304
+It will be, s vector, it will be, s minus p, 0, minus 2, and 5.
+
+1187
+01:45:28,363 --> 01:45:36,443
+Okay, so, first let us find the vector product of p, s, and v.
+
+1188
+01:45:40,212 --> 01:45:43,152
+E, G,
+
+1189
+01:45:46,899 --> 01:45:49,799
+İndi birinci bölümde, ikisi de komponenten var.
+
+1190
+01:45:49,799 --> 01:45:52,699
+P0, 2, 5.
+
+1191
+01:45:54,539 --> 01:45:58,759
+Ve bu bölümde, 1, 1, 2.
+
+1192
+01:46:00,399 --> 01:46:00,759
+OK.
+
+1193
+01:46:01,420 --> 01:46:03,479
+İndi bir soru var.
+
+1194
+01:46:04,279 --> 01:46:07,519
+Bir soru var.
+
+1195
+01:46:08,619 --> 01:46:10,599
+E, komponenten var.
+
+1196
+01:46:10,599 --> 01:46:12,039
+E, ikisi de bu bölümde.
+
+1197
+01:46:12,039 --> 01:46:12,679
+Bu bölümde, 1.
+
+1198
+01:46:12,679 --> 01:46:14,759
+İndi bir soru var.
+
+1199
+01:46:15,119 --> 01:46:16,759
+5, 1.
+
+1200
+01:46:18,879 --> 01:46:23,799
+İndi bir soru var.
+
+1201
+01:46:28,404 --> 01:46:38,424
+4g, sin will be minus, here it is 0, it will be minus 5, but it is in the second row, it will be plus 5.
+
+1202
+01:46:46,931 --> 01:46:47,931
+ve 4K.
+
+1203
+01:46:51,764 --> 01:46:53,304
+Zero plus two.
+
+1204
+01:46:57,524 --> 01:47:01,524
+Okay, so, D will be...
+
+1205
+01:47:05,876 --> 01:47:15,476
+The length of ps cross product, it will be discarded function, 1 plus 25 plus 4.
+
+1206
+01:47:16,676 --> 01:47:22,476
+Over, the length of v, it is 1 plus 1 plus 4.
+
+1207
+01:47:24,436 --> 01:47:28,275
+25, 29, 30, şöyle yazalım.
+
+1208
+01:47:29,796 --> 01:47:32,735
+30 over, 4, 5, 0.
+
+1209
+01:47:32,936 --> 01:47:35,195
+It is discarded 5.
+
+1210
+01:47:44,532 --> 01:47:44,811
+Ok.
+
+1211
+01:47:52,627 --> 01:47:57,247
+Şunu da yapıp bugün bırakayım olmazsa. Şuna geçmek istemiyorum.
+
+1212
+01:47:58,407 --> 01:48:00,067
+I want to talk about
+
+1213
+01:48:00,067 --> 01:48:04,527
+about playing.
+
+1214
+01:48:08,020 --> 01:48:09,060
+Bunu attım zaten.
+
+1215
+01:48:10,620 --> 01:48:11,380
+Bu da mı gitmedi?
+
+1216
+01:48:13,460 --> 01:48:17,220
+Bunu da attım da demek ki internetin biraz bugün kesik kesik.
+
+1217
+01:48:18,900 --> 01:48:21,280
+Gidip gidip geliyor bugün niye bilmiyorum.
+
+1218
+01:48:29,684 --> 01:48:38,604
+Okay, so I said that if you want to write a plane equation, what do you need?
+
+1219
+01:48:40,043 --> 01:48:44,884
+If you want to write a plane equation, I need two things.
+
+1220
+01:48:44,884 --> 01:49:07,344
+The first one is a point on your plane and you need a vector which is orthogonal to your plane.
+
+1221
+01:49:07,404 --> 01:49:11,284
+If you have these two equations, you can write your line equation.
+
+1222
+01:49:11,284 --> 01:49:20,224
+Okay, now I want to show how can we determine the plane equation.
+
+1223
+01:49:21,304 --> 01:49:25,904
+Let me write, I will take two points on your line.
+
+1224
+01:49:26,264 --> 01:49:36,684
+Okay, I want to take as P0 is your point in your plane.
+
+1225
+01:49:36,684 --> 01:49:43,864
+And I want the components of P0, let me take X0, Y0, Z0.
+
+1226
+01:49:44,104 --> 01:49:48,064
+Okay, and let us take any points on your plane.
+
+1227
+01:49:48,163 --> 01:49:49,484
+Let us take X, Y, Z.
+
+1228
+01:49:49,663 --> 01:49:59,864
+Okay, so what is the product of P0, P and an vector?
+
+1229
+01:49:59,864 --> 01:50:27,864
+Okay.
+
+1230
+01:50:03,636 --> 01:50:23,196
+If I take P0P, this is your line, okay? If you take the dot product of P0P and N, it will be zero, because they are orthogonal to each other. P0P is orthogonal to N.
+
+1231
+01:50:23,196 --> 01:50:44,396
+Okay, so let's see, what is P0P? X minus X0, Y minus Y0, Z minus Z0, okay? And let us take the components of N as ABC.
+
+1232
+01:50:44,396 --> 01:50:56,916
+and I will product with ABC. This product has to be zero. So, for the plane equation will be A,
+
+1233
+01:50:57,836 --> 01:51:13,916
+X minus X0, B, Y minus Y0, plus C, Z minus Z0 will be zero. This is your plane equation.
+
+1234
+01:51:14,396 --> 01:51:26,436
+in your plane equation. In your plane equation. This is the components of N. This is the components of P0 in your plane. Okay?
+
+1235
+01:51:29,115 --> 01:51:30,396
+Do you have any question?
+
+1236
+01:51:39,123 --> 01:51:44,184
+Okay, this is the vector equation form, this is the component form, okay?
+
+1237
+01:51:45,144 --> 01:51:47,743
+Let me give an example.
+
+1238
+01:51:53,171 --> 01:52:03,491
+Okay, look at this example. Okay, and I will please give me one minute, I will come back, okay? Siz buna bir bakın, bir dakika geliyorum.
+
+1239
+01:52:36,979 --> 01:52:37,819
+Okay, sorry.
+
+1240
+01:52:41,159 --> 01:52:41,519
+Okay.
+
+1241
+01:52:42,919 --> 01:52:45,079
+Find an equation of the plane
+
+1242
+01:52:45,079 --> 01:52:48,039
+passing from P0 and perpendicular to N.
+
+1243
+01:52:48,739 --> 01:52:50,399
+They give all the
+
+1244
+01:52:50,399 --> 01:52:52,559
+middle things actually.
+
+1245
+01:52:53,559 --> 01:52:54,859
+They give
+
+1246
+01:52:54,859 --> 01:52:56,819
+the point P0.
+
+1247
+01:52:58,159 --> 01:52:59,879
+They give the N
+
+1248
+01:52:59,879 --> 01:53:02,519
+which is perpendicular to your plane.
+
+1249
+01:53:04,339 --> 01:53:05,679
+It is 5
+
+1250
+01:53:05,679 --> 01:53:06,939
+2
+
+1251
+01:53:06,939 --> 01:53:08,979
+minus 1
+
+1252
+01:53:08,979 --> 01:53:11,279
+and P0 is
+
+1253
+01:53:11,279 --> 01:53:12,539
+minus 3
+
+1254
+01:53:12,539 --> 01:53:13,879
+0 7.
+
+1255
+01:53:14,339 --> 01:53:17,579
+From this theory information we can write our equation.
+
+1256
+01:53:18,179 --> 01:53:19,299
+The components of
+
+1257
+01:53:19,299 --> 01:53:20,559
+N is 5.
+
+1258
+01:53:26,515 --> 01:53:55,935
+x minus, minus 3, plus 2, y minus 0, minus z minus, will be 0. This is your line equation. If you open this equation, you can write that 5x plus 2y, minus that will be 15 var,
+
+1259
+01:53:56,515 --> 01:54:14,735
+artı yedi yirmi iki eksi, yirmi iki, this is your plane equation. Okay? If you have these two information, you can find your plane equation directly.
+
+1260
+01:54:25,619 --> 01:54:33,380
+They can ask equation with line and plane at the same time.
+
+1261
+01:54:33,380 --> 01:54:33,779
+Okay?
+
+1262
+01:54:36,099 --> 01:54:36,939
+Let's see.
+
+1263
+01:54:43,764 --> 01:55:11,123
+Find an equation for a plane. They are asking a plane equation. Okay, let's see what do you have. What kind of information do you have? They are asking a plane through x. They said dead passing from x. And orthogonal to your line. We have a line. And this line is parallel to your plane. Okay. And they give the equation of a line.
+
+1264
+01:55:11,123 --> 01:55:19,764
+So how can we determine our plane equation using this information? What can we do?
+
+1265
+01:55:27,091 --> 01:55:27,891
+Orthogonal.
+
+1266
+01:55:28,731 --> 01:55:35,451
+This line is orthogonal to your plane.
+
+1267
+01:55:37,371 --> 01:55:38,411
+They give the line vector.
+
+1268
+01:55:39,211 --> 01:55:43,531
+So when you look at the line vector, what can you see?
+
+1269
+01:55:43,671 --> 01:55:45,571
+I can determine the point P.
+
+1270
+01:55:46,291 --> 01:55:48,112
+And I can determine V.
+
+1271
+01:55:48,112 --> 01:55:52,171
+V is parallel to your line.
+
+1272
+01:55:52,831 --> 01:55:54,791
+If this is parallel to your line,
+
+1273
+01:55:54,791 --> 01:56:02,091
+then I can say that at the same time it is orthogonal to your plane.
+
+1274
+01:56:03,451 --> 01:56:10,771
+So I can take an S V vector.
+
+1275
+01:56:11,831 --> 01:56:15,731
+Because it is orthogonal to your plane.
+
+1276
+01:56:15,731 --> 01:56:17,491
+What is N or V?
+
+1277
+01:56:17,631 --> 01:56:21,471
+What is the components of V when you look at the equation of line?
+
+1278
+01:56:22,491 --> 01:56:23,931
+What is the components of V?
+
+1279
+01:56:24,791 --> 01:56:25,671
+Bakın bakalım.
+
+1280
+01:56:25,931 --> 01:56:26,692
+Line denkleminde.
+
+1281
+01:56:27,271 --> 01:56:29,571
+It is 1, 2, 0.
+
+1282
+01:56:29,791 --> 01:56:32,351
+They are the components, the coefficients of T.
+
+1283
+01:56:33,071 --> 01:56:33,351
+Okay.
+
+1284
+01:56:33,971 --> 01:56:35,771
+So I have X.
+
+1285
+01:56:36,351 --> 01:56:37,311
+I have V.
+
+1286
+01:56:37,731 --> 01:56:40,871
+From these two information, I can write the equation.
+
+1287
+01:56:40,871 --> 01:56:48,751
+The components here, X minus, Y minus.
+
+1288
+01:56:48,751 --> 01:56:49,751
+And then I can write the equation.
+
+1289
+01:56:49,751 --> 01:57:06,131
+So I have X minus.
+
+1290
+01:56:53,011 --> 01:56:55,871
+Z minus will be 0.
+
+1291
+01:56:56,931 --> 01:56:59,391
+Outside I have to write the components of n.
+
+1292
+01:56:59,851 --> 01:57:01,711
+1, 2, 0.
+
+1293
+01:57:04,072 --> 01:57:07,431
+And inside I have to write the point on your plane.
+
+1294
+01:57:08,072 --> 01:57:08,771
+It is this.
+
+1295
+01:57:09,331 --> 01:57:13,091
+2, 1, 4.
+
+1296
+01:57:13,471 --> 01:57:18,652
+So I have x plus 2y is 0.
+
+1297
+01:57:19,431 --> 01:57:21,051
+And I have minus 4.
+
+1298
+01:57:21,051 --> 01:57:22,971
+If you write on the right side it is 4.
+
+1299
+01:57:23,171 --> 01:57:25,331
+This is your plane equation.
+
+1300
+01:57:26,112 --> 01:57:26,311
+Okay?
+
+1301
+01:57:28,692 --> 01:57:31,152
+You have to read the information correctly.
+
+1302
+01:57:31,711 --> 01:57:33,451
+For example, when they give the line.
+
+1303
+01:57:33,811 --> 01:57:35,091
+What do you know about line?
+
+1304
+01:57:35,211 --> 01:57:37,291
+I have a point on your line.
+
+1305
+01:57:37,451 --> 01:57:39,971
+I have a vector which is parallel to your line.
+
+1306
+01:57:40,371 --> 01:57:42,051
+When they give a plane equation.
+
+1307
+01:57:42,551 --> 01:57:45,631
+I can see a point on your line.
+
+1308
+01:57:45,711 --> 01:57:46,811
+But it can be difficult.
+
+1309
+01:57:46,811 --> 01:57:53,391
+But I can read the vector which is orthogonal to your plane directly.
+
+1310
+01:57:53,951 --> 01:58:01,351
+Üzerindeki noktayı bulmakta zorlanabilirsiniz belki ama ona dik olan vektörü kat sayılarından dolayı direkt hesaplayabiliyorsunuz.
+
+1311
+01:58:01,411 --> 01:58:02,192
+Görebiliyorsunuz.
+
+1312
+01:58:02,192 --> 01:58:07,871
+There is no z because the product is 0.
+
+1313
+01:58:09,711 --> 01:58:09,931
+Okay?
+
+1314
+01:58:11,572 --> 01:58:12,692
+There is no z.
+
+1315
+01:58:12,692 --> 01:58:13,192
+Okay.
+
+1316
+01:58:13,192 --> 01:58:14,811
+There is no z.
+
+1317
+01:58:14,811 --> 01:58:16,291
+Okay.
+
+1318
+01:58:16,291 --> 01:58:26,791
+There is no z.
+
+1319
+01:58:25,555 --> 01:58:27,555
+Okay, this question is...
+
+1320
+01:58:31,731 --> 01:58:32,912
+I will finish.
+
+1321
+01:58:34,112 --> 01:58:35,931
+After five minutes I will finish
+
+1322
+01:58:35,931 --> 01:58:36,591
+for today.
+
+1323
+01:58:37,711 --> 01:58:39,631
+Şimdi oruçluyuz burada ikinci günü.
+
+1324
+01:58:39,692 --> 01:58:41,171
+Bu da biraz yoruyor tabii.
+
+1325
+01:58:41,792 --> 01:58:43,792
+Şey yapmayacağım. Bitireceğim şimdi.
+
+1326
+01:58:44,091 --> 01:58:45,051
+Yarın devam edeceğim.
+
+1327
+01:58:45,711 --> 01:58:47,872
+Son birkaç şey gösterip
+
+1328
+01:58:47,872 --> 01:58:48,671
+bırakacağım. Tamam.
+
+1329
+01:58:51,112 --> 01:58:51,771
+Konuşurken de
+
+1330
+01:58:51,771 --> 01:58:53,851
+ben de zorlanıyorum. Çünkü alışkın
+
+1331
+01:58:53,851 --> 01:58:55,471
+değiliz ya daha ikinci günü vücut alışmadı.
+
+1332
+01:58:58,391 --> 01:59:01,612
+Okey.
+
+1333
+01:59:01,731 --> 01:59:02,692
+Look at this example.
+
+1334
+01:59:03,891 --> 01:59:05,992
+Actually this example is a basic
+
+1335
+01:59:05,992 --> 01:59:08,252
+question in linear algebra.
+
+1336
+01:59:08,591 --> 01:59:09,011
+Actually.
+
+1337
+01:59:09,872 --> 01:59:12,332
+You can see this question in linear algebra.
+
+1338
+01:59:12,551 --> 01:59:12,971
+Vector
+
+1339
+01:59:12,971 --> 01:59:15,431
+subject. Bu bizim
+
+1340
+01:59:15,431 --> 01:59:17,652
+linear algebra'de çok sorulan bir sorudur aslında.
+
+1341
+01:59:20,692 --> 01:59:21,771
+Only they give
+
+1342
+01:59:21,771 --> 01:59:23,292
+three points on your plane.
+
+1343
+01:59:25,891 --> 01:59:27,492
+And they are asking the plane
+
+1344
+01:59:27,492 --> 01:59:29,072
+equation. They give A
+
+1345
+01:59:29,072 --> 01:59:31,011
+B
+
+1346
+01:59:31,011 --> 01:59:32,711
+and C.
+
+1347
+01:59:34,711 --> 01:59:36,532
+And they are asking a plane
+
+1348
+01:59:36,532 --> 01:59:37,131
+equation.
+
+1349
+01:59:37,851 --> 01:59:38,332
+So why
+
+1350
+01:59:38,332 --> 01:59:39,192
+what do you need?
+
+1351
+01:59:39,192 --> 01:59:39,752
+I need
+
+1352
+01:59:39,752 --> 01:59:41,551
+one point on your plane?
+
+1353
+01:59:41,652 --> 01:59:42,292
+I have three.
+
+1354
+01:59:42,511 --> 01:59:43,171
+I have many
+
+1355
+01:59:43,171 --> 01:59:44,011
+points.
+
+1356
+01:59:45,011 --> 01:59:46,152
+The second one is
+
+1357
+01:59:46,152 --> 01:59:47,532
+vector which is
+
+1358
+01:59:47,532 --> 01:59:48,992
+perpendicular to your
+
+1359
+01:59:48,992 --> 01:59:49,431
+plane.
+
+1360
+01:59:49,572 --> 01:59:50,271
+You have to
+
+1361
+01:59:50,271 --> 01:59:51,152
+determine
+
+1362
+01:59:51,152 --> 01:59:52,292
+this vector.
+
+1363
+01:59:53,452 --> 01:59:54,391
+For this you will use
+
+1364
+01:59:54,391 --> 01:59:55,551
+the properties of vector.
+
+1365
+01:59:55,912 --> 01:59:57,091
+What is this cross product
+
+1366
+01:59:57,091 --> 01:59:57,931
+or that product?
+
+1367
+01:59:59,252 --> 02:00:00,112
+In the previous
+
+1368
+02:00:00,112 --> 02:00:02,091
+before the break
+
+1369
+02:00:02,091 --> 02:00:03,032
+I solve
+
+1370
+02:00:03,032 --> 02:00:03,731
+these kind of
+
+1371
+02:00:03,731 --> 02:00:04,731
+questions actually.
+
+1372
+02:00:05,351 --> 02:00:06,152
+If you select
+
+1373
+02:00:06,152 --> 02:00:06,971
+any point
+
+1374
+02:00:06,971 --> 02:00:08,372
+for example
+
+1375
+02:00:08,372 --> 02:00:09,771
+let's select
+
+1376
+02:00:09,771 --> 02:00:10,252
+B.
+
+1377
+02:00:12,091 --> 02:00:13,572
+If I write
+
+1378
+02:00:13,572 --> 02:00:14,532
+B A
+
+1379
+02:00:14,532 --> 02:00:16,511
+and B
+
+1380
+02:00:16,511 --> 02:00:17,011
+or product
+
+1381
+02:00:17,011 --> 02:00:17,612
+of these
+
+1382
+02:00:17,612 --> 02:00:18,372
+two vectors
+
+1383
+02:00:18,372 --> 02:00:19,891
+I will find
+
+1384
+02:00:19,891 --> 02:00:20,731
+a new vector
+
+1385
+02:00:20,731 --> 02:00:22,671
+and our new vector
+
+1386
+02:00:22,671 --> 02:00:23,671
+will be
+
+1387
+02:00:23,671 --> 02:00:25,532
+orthogonal
+
+1388
+02:00:25,532 --> 02:00:26,252
+to your
+
+1389
+02:00:26,252 --> 02:00:27,872
+plane.
+
+1390
+02:00:28,131 --> 02:00:28,752
+It will be
+
+1391
+02:00:28,752 --> 02:00:28,952
+N.
+
+1392
+02:00:28,952 --> 02:00:30,572
+So I can
+
+1393
+02:00:30,572 --> 02:00:30,872
+take
+
+1394
+02:00:30,872 --> 02:00:31,271
+N
+
+1395
+02:00:31,271 --> 02:00:31,752
+S
+
+1396
+02:00:31,752 --> 02:00:32,171
+B
+
+1397
+02:00:32,171 --> 02:00:32,652
+A
+
+1398
+02:00:32,652 --> 02:00:36,731
+cross product
+
+1399
+02:00:36,731 --> 02:00:37,011
+B
+
+1400
+02:00:37,011 --> 02:00:37,271
+C.
+
+1401
+02:00:38,131 --> 02:00:38,452
+Okay.
+
+1402
+02:00:40,332 --> 02:00:41,492
+So let us
+
+1403
+02:00:41,492 --> 02:00:41,952
+determine
+
+1404
+02:00:41,952 --> 02:00:43,492
+and
+
+1405
+02:00:43,492 --> 02:00:44,271
+will be
+
+1406
+02:00:44,271 --> 02:00:44,431
+N
+
+1407
+02:00:44,431 --> 02:00:44,492
+will be
+
+1408
+02:00:44,492 --> 02:00:45,431
+N
+
+1409
+02:00:45,431 --> 02:00:46,431
+will be
+
+1410
+02:00:46,431 --> 02:00:47,431
+N
+
+1411
+02:00:47,431 --> 02:00:48,431
+will be
+
+1412
+02:00:48,431 --> 02:00:48,492
+N
+
+1413
+02:00:48,492 --> 02:00:49,431
+will be
+
+1414
+02:00:49,431 --> 02:00:50,492
+N
+
+1415
+02:00:50,492 --> 02:00:51,431
+will be
+
+1416
+02:00:51,431 --> 02:00:52,492
+N
+
+1417
+02:00:52,492 --> 02:00:53,431
+will be
+
+1418
+02:00:53,431 --> 02:00:54,492
+N
+
+1419
+02:00:54,492 --> 02:00:55,431
+will be
+
+1420
+02:00:55,431 --> 02:00:56,492
+N
+
+1421
+02:00:56,492 --> 02:00:57,431
+will be
+
+1422
+02:00:57,431 --> 02:00:57,492
+N
+
+1423
+02:00:57,492 --> 02:00:58,431
+will be
+
+1424
+02:00:58,431 --> 02:00:58,492
+N
+
+1425
+02:00:48,020 --> 02:01:12,840
+But first, before that, I want to write BA. What is BA? It will be A minus B. A eksi B eksi 2, 0, 1. What is BC? C minus B, minus 2, 3, 0.
+
+1426
+02:01:12,840 --> 02:01:18,680
+Okay, let's find the determinant E g key.
+
+1427
+02:01:21,480 --> 02:01:30,560
+Here, I have to write BA minus 2, 0, 1, minus 2, 3, 0.
+
+1428
+02:01:31,960 --> 02:01:39,440
+Okay, so firstly, I will cancel this one. It will be minus 3.
+
+1429
+02:01:44,020 --> 02:01:56,240
+After that, I will cancel g, but the sign will be negative. 0, it will be plus 2, but it will be minus 2.
+
+1430
+02:02:00,564 --> 02:02:02,744
+Lastyada, we can cancel key.
+
+1431
+02:02:04,484 --> 02:02:06,043
+It will be minus 6.
+
+1432
+02:02:09,363 --> 02:02:11,723
+So, let me write the equation.
+
+1433
+02:02:13,203 --> 02:02:16,243
+What about the points on your line, plane?
+
+1434
+02:02:16,663 --> 02:02:20,323
+The initial point I take as B, so I want to take B.
+
+1435
+02:02:21,463 --> 02:02:22,923
+So, what I will write?
+
+1436
+02:02:23,043 --> 02:02:31,803
+X minus, Y minus, Z minus will be 0.
+
+1437
+02:02:32,703 --> 02:02:35,743
+Outside, I have to write the components of N.
+
+1438
+02:02:35,743 --> 02:02:37,523
+It is minus 3.
+
+1439
+02:02:39,363 --> 02:02:43,323
+Minus 2, minus 6.
+
+1440
+02:02:45,323 --> 02:02:49,463
+Inside, I will write the points of B.
+
+1441
+02:02:49,683 --> 02:02:51,723
+2, 0, 0.
+
+1442
+02:02:52,223 --> 02:02:53,183
+What do you have?
+
+1443
+02:02:53,483 --> 02:03:02,563
+Minus 3X, minus 3, 2, 2, minus 2Y, minus 6.
+
+1444
+02:03:02,563 --> 02:03:17,023
+This is your plane equation.
+
+1445
+02:03:17,023 --> 02:03:18,023
+Okay.
+
+1446
+02:03:18,023 --> 02:03:20,603
+Do you have any question?
+
+1447
+02:03:20,603 --> 02:03:32,523
+No.
+
+1448
+02:03:28,692 --> 02:03:58,311
+Okay, you can look at this example also. I will finish for today. Tomorrow, I will talk about the line of intersection. Actually, it will be the intersection of a book. For example, you can think we have two planes. This is your plane, this is another plane. They are asking what is the intersection, line of intersection. Actually, they are asking this place. What is this place?
+
+1449
+02:03:58,311 --> 02:04:27,072
+It is a line. You can see that it is a line. We will see tomorrow. You will find the same equation. You can take your point as a, for example. You don't need to select b. For example, if you select a, let me write. Okay. This is a, b, c. If you take a, b, and a, c, you will find the same equation. Okay.
+
+1450
+02:04:28,311 --> 02:04:40,011
+You will find the same equation. You will find the same equation. Denklem olarak değişen bir şey olmayacak. Okay. Okay. Okay. This is enough for today. Tomorrow, I will continue with this part. Okay.
+
+1451
+02:04:41,072 --> 02:04:51,652
+Bugün biraz erken bırakayım. Hepimiz yorulduk. Tamam. Yerim devam edeceğim. Okay. Görüşürüz. Bye bye. İyi ifsarlar herkese. Görüşürüz.
+
+1452
+02:04:51,652 --> 02:04:52,652
+İyi ifsarlar herkese.

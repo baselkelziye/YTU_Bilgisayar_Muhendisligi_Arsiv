@@ -1,0 +1,3843 @@
+1
+00:00:49,780 --> 00:00:50,399
+Good morning.
+
+2
+00:00:56,787 --> 00:00:57,847
+Günaydın arkadaşlar.
+
+3
+00:01:18,483 --> 00:01:19,963
+Good morning, [öğrenci].
+
+4
+00:01:25,876 --> 00:01:43,716
+So, let's wait two more minutes. How are you today? Today we will finish our subject for this semester. I hope that. And next week we will study for the final exam.
+
+5
+00:01:46,556 --> 00:01:49,436
+And after that we will finish this semester.
+
+6
+00:01:49,436 --> 00:01:59,316
+All of you are also very tired. Being at home is difficult for everyone.
+
+7
+00:01:59,316 --> 00:02:14,663
+Okay.
+
+8
+00:02:20,852 --> 00:02:26,012
+Good morning, [öğrenci]. One second, I will open the light.
+
+9
+00:02:42,228 --> 00:02:44,308
+Did you take your tea or coffee?
+
+10
+00:02:47,508 --> 00:02:47,908
+Okay.
+
+11
+00:02:49,188 --> 00:02:51,268
+So let's start our lesson.
+
+12
+00:02:52,867 --> 00:02:56,548
+I said that we have two more subjects for the integral.
+
+13
+00:02:57,427 --> 00:03:00,068
+Yesterday we talked about polar coordinates.
+
+14
+00:03:00,068 --> 00:03:03,908
+Actually we have two main topic in polar coordinates.
+
+15
+00:03:03,908 --> 00:03:04,548
+What is that?
+
+16
+00:03:05,908 --> 00:03:09,748
+We can find the area.
+
+17
+00:03:12,228 --> 00:03:24,148
+of the functions given by polar coordinates using double integral.
+
+18
+00:03:25,028 --> 00:03:35,668
+For example, you have a cardioid and they are asking what is the area of this cardioid using double integral.
+
+19
+00:03:35,668 --> 00:03:38,388
+The first topic was this.
+
+20
+00:03:38,388 --> 00:03:41,508
+The other one, today we will see what is that.
+
+21
+00:03:41,508 --> 00:03:52,548
+For example, we have a complicated integral such as e to the power x squared plus y squared dx dy or dy dx.
+
+22
+00:03:53,908 --> 00:04:00,948
+In that case, the solution of this kind of integrals are difficult, especially if you have x squared y squared terms.
+
+23
+00:04:00,948 --> 00:04:09,747
+Then we can use a simple transformation and we can rewrite our integral as a polar integral.
+
+24
+00:04:09,747 --> 00:04:10,307
+Okay.
+
+25
+00:04:10,307 --> 00:04:21,268
+In this, if you have this case, it will be easy to use polar integrals.
+
+26
+00:04:21,268 --> 00:04:25,588
+We will change as x as r cosine theta.
+
+27
+00:04:25,588 --> 00:04:40,307
+Then, when you write this transformation, your integral will be very easy and you also have to add as Jacobian.
+
+28
+00:04:40,307 --> 00:04:41,987
+Jacobian is r.
+
+29
+00:04:41,987 --> 00:04:53,427
+Because if you use a transformation to x, y coordinate system to another one or polar coordinates to another one, for all of them, you have to add also Jacobian.
+
+30
+00:04:53,427 --> 00:04:54,468
+What is Jacobian?
+
+31
+00:04:54,468 --> 00:05:01,187
+Jacobian is if your function f r theta.
+
+32
+00:05:01,187 --> 00:05:13,508
+So, you have to take and firstly your function was x, y coordinate system and you change as r theta.
+
+33
+00:05:13,508 --> 00:05:27,108
+So, you have to take dx over dr dx over d theta dy over r dy over theta.
+
+34
+00:05:27,108 --> 00:05:30,548
+This is your Jacobian for polar coordinates. Okay.
+
+35
+00:05:32,307 --> 00:05:38,867
+And for the Jacobian for polar coordinates, it will be always r. Okay. So, let's see here.
+
+36
+00:05:40,707 --> 00:05:49,587
+In some cases, we say that we can change Cartesian integrals, x, y terms, integrals which contains x and y terms.
+
+37
+00:05:49,587 --> 00:05:53,987
+Then we can change this integral into polar integrals. What is polar integrals?
+
+38
+00:05:53,987 --> 00:06:04,067
+What is polar integrals? It means that contains x, y terms.
+
+39
+00:06:06,228 --> 00:06:16,148
+So, our new equation will be r comes from Jacobian. You will change f x, y function to f.
+
+40
+00:06:16,148 --> 00:06:23,908
+So, if we say that x is r cosine theta, y is r sine theta. And also, you have to change your region.
+
+41
+00:06:25,348 --> 00:06:34,388
+The first region was r, but the new region will be g. Okay. So, let's see some examples.
+
+42
+00:06:34,388 --> 00:06:57,587
+So, let's see some examples.
+
+43
+00:06:38,324 --> 00:06:53,223
+Maybe you can think where, in which case you will use, if you have x square, y square terms, then you can think polar integrals, because the other one, the other case, it will be difficult to solve.
+
+44
+00:06:54,304 --> 00:06:55,264
+Okay, let's see.
+
+45
+00:06:59,827 --> 00:07:15,947
+Evaluate, this integral on the region R, where R is a semicircular region bounded by x-axis and the curve y equals in the square root function 1 minus x-square.
+
+46
+00:07:16,507 --> 00:07:18,567
+So, let's see what is our region.
+
+47
+00:07:18,567 --> 00:07:22,367
+They said that it is a semicircle.
+
+48
+00:07:23,067 --> 00:07:24,827
+The half of the circle, where
+
+49
+00:07:24,827 --> 00:07:28,347
+it is on the center, if you open this one,
+
+50
+00:07:28,427 --> 00:07:31,727
+actually it is x-square plus y-square equals 1.
+
+51
+00:07:31,847 --> 00:07:34,627
+It is a circle at the center and the radius
+
+52
+00:07:34,627 --> 00:07:37,387
+is 1, but I will take where
+
+53
+00:07:37,387 --> 00:07:40,427
+y is positive, so it is this.
+
+54
+00:07:41,327 --> 00:07:43,007
+This is minus 1, this is 1.
+
+55
+00:07:46,644 --> 00:07:59,963
+Okay? Normally, if you don't use the transformation, let's write our region, bounce. Our function is e to the power x square plus y square.
+
+56
+00:08:01,644 --> 00:08:10,004
+If you look at your region, your region is smooth or not according to x or y or both of them. Is it smooth?
+
+57
+00:08:15,668 --> 00:08:19,908
+Evet, for all of them, it is smooth. We have only one function.
+
+58
+00:08:20,648 --> 00:08:24,447
+So, let's write according to dx or dy. Let's write dx.
+
+59
+00:08:25,108 --> 00:08:26,108
+dy dx.
+
+60
+00:08:28,927 --> 00:08:31,987
+x is changing between minus 1 to 1.
+
+61
+00:08:36,340 --> 00:08:42,139
+And when you sketch your lines, your starting function is x-axis, it means that y is 0.
+
+62
+00:08:44,800 --> 00:08:56,120
+And what about the finish function? It is in the square root function, 1 minus x square root.
+
+63
+00:08:57,379 --> 00:09:01,700
+And if you want to solve this integral, it is solvable, but it is very complicated.
+
+64
+00:09:01,700 --> 00:09:06,180
+So they said that you don't need to solve in this form.
+
+65
+00:09:06,639 --> 00:09:11,540
+You can rewrite your integral using polar coordinates.
+
+66
+00:09:11,660 --> 00:09:12,259
+What is this?
+
+67
+00:09:12,879 --> 00:09:18,980
+X is r cosine theta, y is r sine theta.
+
+68
+00:09:19,879 --> 00:09:20,040
+Okay.
+
+69
+00:09:21,500 --> 00:09:24,000
+So let's start with the function.
+
+70
+00:09:25,180 --> 00:09:29,940
+Instead of I will write a to the power, what is x square plus y square here?
+
+71
+00:09:31,700 --> 00:10:01,680
+It is r sine theta.
+
+72
+00:10:01,680 --> 00:10:05,379
+But if you write a to the power, but if you write a to the power, but if you write a to the power, but if you write dr outside, it is wrong.
+
+73
+00:10:05,580 --> 00:10:08,259
+In the solution, you will find a function.
+
+74
+00:10:08,800 --> 00:10:14,160
+The position of dr d theta will be always r dr d theta, okay?
+
+75
+00:10:14,700 --> 00:10:19,120
+You can't change r d theta dr, because the result will be a function.
+
+76
+00:10:20,740 --> 00:10:22,379
+Okay, what about the bonds?
+
+77
+00:10:23,720 --> 00:10:31,160
+So if you rewrite your, this is r, if you rewrite your function using the polar coordinates, what is this?
+
+78
+00:10:31,680 --> 00:11:01,660
+r sine theta?
+
+79
+00:11:03,988 --> 00:11:05,228
+It is a circle.
+
+80
+00:11:05,988 --> 00:11:07,348
+So, what about angle?
+
+81
+00:11:07,468 --> 00:11:11,028
+Angle is changing from 0 to 2 pi.
+
+82
+00:11:13,528 --> 00:11:15,508
+And what is r?
+
+83
+00:11:15,688 --> 00:11:19,608
+R is changing from 0 to always 1.
+
+84
+00:11:23,028 --> 00:11:23,388
+Ok?
+
+85
+00:11:27,539 --> 00:11:41,279
+Let me check, I'm not sure, yes, it will be 0 to pi, we have a construction here, it will be 0 to pi, because it is a semicircle, so it will be pi, okay.
+
+86
+00:11:41,279 --> 00:11:56,860
+Okay, now here we can solve this integral very easily. Inside the integral, I have to solve 0 to 1, r e to the power r square dr.
+
+87
+00:11:57,539 --> 00:12:16,879
+If we use a simple transformation, if you take r square st, you can easily see that 2r dr equals dt, then our new form of the integral will be e to the power t dt over 2.
+
+88
+00:12:20,916 --> 00:12:43,536
+Okay, what about the bounds? If r is 0, t will be 0. If r is 1, t will be 1. So 0 to 1. So the result will be 1 over 2 outside, e minus 1.
+
+89
+00:12:43,536 --> 00:12:54,896
+So, I will be integral, I can write e minus 1 over 2 outside, because it is a number.
+
+90
+00:12:55,936 --> 00:13:01,916
+So inside, I will have only from 0 to pi, d theta.
+
+91
+00:13:03,916 --> 00:13:12,596
+So it will be e minus 1 over 2 theta, from 0 to pi.
+
+92
+00:13:12,596 --> 00:13:17,696
+So it will be e minus 1 over 2.
+
+93
+00:13:21,696 --> 00:13:27,536
+This is the solution. But if you want to solve this integral, it is very, very complicated.
+
+94
+00:13:28,336 --> 00:13:39,496
+And actually, it is unsolvable. If you look at here, inside, you have to take integral with respect to y, but e to the power y square is an unsolvable integral.
+
+95
+00:13:39,496 --> 00:13:40,156
+Okay.
+
+96
+00:13:40,156 --> 00:13:40,496
+Do you have to take integral?
+
+97
+00:13:40,496 --> 00:13:44,256
+Okay. Do you have any question?
+
+98
+00:13:46,036 --> 00:13:47,496
+Solution will be e...
+
+99
+00:13:47,496 --> 00:13:50,496
+So the solution will be e...
+
+100
+00:13:50,496 --> 00:13:55,355
+So the solution will be yes, yes, yes, yes.
+
+101
+00:13:57,296 --> 00:14:05,956
+Yes, but in which cases you have to prefer polar coordinates, especially if you have x square, y square terms.
+
+102
+00:14:05,956 --> 00:14:06,656
+Okay.
+
+103
+00:14:06,656 --> 00:14:10,436
+No, no, no, no.
+
+104
+00:14:10,956 --> 00:14:12,136
+This is your solution.
+
+105
+00:14:13,136 --> 00:14:20,336
+In the test sample, probably they can ask, what is the new form of this integral in the polar coordinates, maybe?
+
+106
+00:14:21,256 --> 00:14:21,556
+Okay.
+
+107
+00:14:22,556 --> 00:14:24,196
+Not the whole solution.
+
+108
+00:14:25,856 --> 00:14:28,416
+Okay.
+
+109
+00:14:30,292 --> 00:14:31,132
+Another example.
+
+110
+00:14:36,211 --> 00:14:40,491
+For example, this question is a suitable question for test.
+
+111
+00:14:47,764 --> 00:14:51,504
+Write the integral in polar form.
+
+112
+00:14:51,864 --> 00:14:54,783
+So let's change our integral into polar form.
+
+113
+00:14:54,783 --> 00:14:57,524
+But before that we have to determine our origin.
+
+114
+00:14:58,984 --> 00:14:59,844
+What is this?
+
+115
+00:15:00,004 --> 00:15:02,084
+Outside we will have y.
+
+116
+00:15:02,644 --> 00:15:04,244
+y is 0.
+
+117
+00:15:04,964 --> 00:15:06,344
+y is 1.
+
+118
+00:15:07,624 --> 00:15:09,884
+For x, x is 0.
+
+119
+00:15:09,884 --> 00:15:19,543
+And here x is 2y minus y square.
+
+120
+00:15:20,844 --> 00:15:21,484
+Okay.
+
+121
+00:15:22,903 --> 00:15:24,744
+First I want to sketch R.
+
+122
+00:15:24,864 --> 00:15:25,803
+You don't need actually.
+
+123
+00:15:25,903 --> 00:15:27,163
+But I want to show that.
+
+124
+00:15:27,283 --> 00:15:28,084
+What is this?
+
+125
+00:15:28,384 --> 00:15:35,884
+Actually it is x square plus y square minus 2y is 0.
+
+126
+00:15:35,884 --> 00:15:44,283
+So if you write using the similarity with circles.
+
+127
+00:15:44,283 --> 00:15:45,504
+It is like this.
+
+128
+00:15:45,624 --> 00:15:51,264
+x square plus y minus 1 square equals 1.
+
+129
+00:15:51,364 --> 00:15:54,384
+It is a circle but it is not on the center.
+
+130
+00:15:55,303 --> 00:15:56,224
+x is 0.
+
+131
+00:15:56,324 --> 00:15:57,244
+Y will be 1.
+
+132
+00:15:57,344 --> 00:15:58,543
+And the radius is 1.
+
+133
+00:15:58,624 --> 00:16:00,124
+It is like this.
+
+134
+00:16:03,668 --> 00:16:08,927
+Tool. Ah yes. Kimiymiş o ben? Bir gibi gördüm.
+
+135
+00:16:12,755 --> 00:16:13,235
+Okay.
+
+136
+00:16:14,935 --> 00:16:23,696
+So, normally it is a circle, but they give in the form of x equals, you know that squared function will be positive.
+
+137
+00:16:24,175 --> 00:16:28,076
+So, you have to take the right side.
+
+138
+00:16:28,295 --> 00:16:30,375
+In that case, x will be positive.
+
+139
+00:16:30,596 --> 00:16:32,535
+So, our region normally is this.
+
+140
+00:16:34,235 --> 00:16:34,576
+Okay.
+
+141
+00:16:34,775 --> 00:16:39,975
+So, let's change our region into polar coordinates.
+
+142
+00:16:40,355 --> 00:16:42,336
+You have to change this one.
+
+143
+00:16:42,755 --> 00:16:45,395
+It is, we say that's
+
+144
+00:16:45,395 --> 00:16:47,855
+x square
+
+145
+00:16:47,855 --> 00:16:51,456
+plus y square
+
+146
+00:16:51,456 --> 00:16:54,096
+minus 2y equals zero.
+
+147
+00:16:54,216 --> 00:16:55,655
+Let's find this equation.
+
+148
+00:16:56,175 --> 00:16:58,255
+If you use the polar coordinates,
+
+149
+00:16:58,475 --> 00:17:00,795
+x is r cosine theta,
+
+150
+00:17:01,615 --> 00:17:03,515
+y is r sine theta.
+
+151
+00:17:04,715 --> 00:17:07,776
+I know that this part is r square
+
+152
+00:17:07,776 --> 00:17:10,195
+minus 2
+
+153
+00:17:10,195 --> 00:17:11,776
+r sine
+
+154
+00:17:11,776 --> 00:17:41,755
+theta will be zero.
+
+155
+00:17:20,596 --> 00:17:21,836
+R can't be 0.
+
+156
+00:17:21,935 --> 00:17:23,715
+If R is 0, it is centered.
+
+157
+00:17:24,056 --> 00:17:27,056
+So our equation will be R equals sine theta.
+
+158
+00:17:29,576 --> 00:17:31,996
+Okay, now let's write our integral.
+
+159
+00:17:34,276 --> 00:17:35,915
+What is our function?
+
+160
+00:17:36,415 --> 00:17:38,096
+X squared plus y squared.
+
+161
+00:17:38,236 --> 00:17:39,895
+I know that it is R squared.
+
+162
+00:17:41,236 --> 00:17:41,715
+Product.
+
+163
+00:17:42,855 --> 00:17:46,715
+For the transformation, it will be R dR d theta.
+
+164
+00:17:46,715 --> 00:17:49,096
+In the question, please be careful.
+
+165
+00:17:49,096 --> 00:17:55,296
+In the test sample, they give in the final exam, they give the all of them are the same.
+
+166
+00:17:55,455 --> 00:17:59,395
+Only they can cancel this one.
+
+167
+00:17:59,816 --> 00:18:04,096
+So many of people can confuse about this.
+
+168
+00:18:04,276 --> 00:18:05,296
+Okay, don't forget.
+
+169
+00:18:05,435 --> 00:18:08,776
+For the transformation, it will be always R dR d theta.
+
+170
+00:18:09,215 --> 00:18:12,215
+Bakın, sizi burada trik şeyine düşünebilirler.
+
+171
+00:18:12,796 --> 00:18:13,756
+Her şey doğrudur.
+
+172
+00:18:14,336 --> 00:18:16,476
+Birinde R vardır, birinde R yoktur.
+
+173
+00:18:16,476 --> 00:18:19,296
+Siz de biliyorsunuz şıklar birbirine çok benziyor.
+
+174
+00:18:21,395 --> 00:18:24,355
+O yüzden R'yi unutmayın.
+
+175
+00:18:24,556 --> 00:18:27,976
+Mutlaka dönüşümde R karşımıza gelecektir.
+
+176
+00:18:28,115 --> 00:18:32,215
+Çünkü koordinat sistemlerinde her zaman Jacobian ekleniyor.
+
+177
+00:18:33,875 --> 00:18:34,496
+Pardon.
+
+178
+00:18:34,496 --> 00:18:48,256
+O yüzden.
+
+179
+00:18:39,955 --> 00:18:53,735
+Okay? Okay, so what about the bonds? This is your region. Which angle do you see? From 0 to pi over 2.
+
+180
+00:18:55,455 --> 00:19:09,175
+What about r? R is changing according to your function from 0 to 2 sin theta. Okay? Do you have any question?
+
+181
+00:19:14,324 --> 00:19:14,683
+Ok.
+
+182
+00:19:31,316 --> 00:19:34,655
+You are talking about the bonuses, [öğrenci].
+
+183
+00:19:38,483 --> 00:19:52,723
+Okay, first you have to determine your angle. At which angle do you see your region? Zero, ic, ic, ic, lastly ic pi over 2. So the bounce will be from 0 to pi over 2.
+
+184
+00:19:52,723 --> 00:20:17,603
+But what about the length of the length here? When you sketch from the origin, this length depends on your function. What is your function? Your function is 2 sin theta. So it will be from 0 to your function. It is 2 sin theta. Let's see another example.
+
+185
+00:20:25,587 --> 00:20:26,468
+This room.
+
+186
+00:20:37,748 --> 00:20:43,628
+Write the integral in polar form where d is this.
+
+187
+00:20:44,107 --> 00:20:47,508
+First, let's find d. d is a circle.
+
+188
+00:20:47,968 --> 00:20:50,028
+But how can you rewrite this circle?
+
+189
+00:20:50,587 --> 00:20:58,448
+It is x minus 1 square plus y square equals 1.
+
+190
+00:21:00,388 --> 00:21:04,567
+So, it is on the center. x is 1, y is 0.
+
+191
+00:21:04,567 --> 00:21:05,408
+So, it is this.
+
+192
+00:21:06,448 --> 00:21:08,168
+This is 2, this is 1.
+
+193
+00:21:09,988 --> 00:21:16,448
+So, we will take the integral on the region d and they didn't give any restriction.
+
+194
+00:21:18,148 --> 00:21:19,567
+This is our function.
+
+195
+00:21:19,768 --> 00:21:27,028
+So, if we use the polar coordinates, x will be r cosine theta, y will be r sine theta.
+
+196
+00:21:29,628 --> 00:21:32,268
+Let's start inside of the integral.
+
+197
+00:21:36,084 --> 00:21:38,403
+This is R².
+
+198
+00:21:40,624 --> 00:21:45,264
+This is always R dr d theta.
+
+199
+00:21:46,683 --> 00:21:48,464
+Okay, what about the bonds?
+
+200
+00:21:48,824 --> 00:21:56,344
+First of all, I have to find what is the new form of this function in the polycoordinates.
+
+201
+00:21:56,344 --> 00:22:03,004
+It is R² will be 2R cos theta.
+
+202
+00:22:03,004 --> 00:22:07,104
+Okay, we can cancel one R.
+
+203
+00:22:07,564 --> 00:22:11,884
+So our equation will be 2 cos theta.
+
+204
+00:22:13,064 --> 00:22:17,443
+Okay, at which angle we see our region?
+
+205
+00:22:18,124 --> 00:22:21,964
+Here, here, here, here, here.
+
+206
+00:22:23,183 --> 00:22:28,384
+From minus pi over 2 to pi over 2.
+
+207
+00:22:29,724 --> 00:22:30,903
+What about R?
+
+208
+00:22:30,903 --> 00:22:33,403
+R is changing according to R function.
+
+209
+00:22:33,604 --> 00:22:35,764
+This is longer.
+
+210
+00:22:36,104 --> 00:22:37,524
+This is the longest.
+
+211
+00:22:38,163 --> 00:22:39,824
+Smaller, smaller, smaller.
+
+212
+00:22:40,004 --> 00:22:45,463
+So it will be from 0 to 2 cos theta.
+
+213
+00:22:46,244 --> 00:22:46,364
+Okay?
+
+214
+00:22:47,644 --> 00:22:49,963
+Or for this, you can use symmetry.
+
+215
+00:22:49,963 --> 00:22:53,423
+You can write 2 product from 0 to pi over 2.
+
+216
+00:22:53,584 --> 00:22:56,943
+Or 2 product minus pi over 2 to 0.
+
+217
+00:22:57,524 --> 00:22:57,784
+Okay?
+
+218
+00:22:58,584 --> 00:23:00,864
+Bu soru için simetrik kullanabilirsiniz.
+
+219
+00:23:01,004 --> 00:23:03,024
+Ya yukarıya hesaplayıp 2 ile çarparsınız.
+
+220
+00:23:03,104 --> 00:23:06,064
+Ya da aşağıya hesaplayıp 2 ile çarpabilirsiniz.
+
+221
+00:23:06,304 --> 00:23:06,544
+Okay?
+
+222
+00:23:07,584 --> 00:23:09,124
+Do you have any question here?
+
+223
+00:23:09,124 --> 00:23:13,724
+For this region, they didn't give any restriction.
+
+224
+00:23:14,044 --> 00:23:15,124
+So I will...
+
+225
+00:23:16,124 --> 00:23:16,884
+No clear.
+
+226
+00:23:18,984 --> 00:23:20,423
+R cube.
+
+227
+00:23:21,884 --> 00:23:22,903
+Yes, yes, yes.
+
+228
+00:23:22,984 --> 00:23:23,584
+It's R cube.
+
+229
+00:23:23,764 --> 00:23:24,964
+The product will be R cube.
+
+230
+00:23:25,544 --> 00:23:27,624
+But I write step by step.
+
+231
+00:23:27,624 --> 00:23:33,724
+So R angle, it will be from minus pi over 2 to pi over 2.
+
+232
+00:23:35,024 --> 00:23:37,663
+R is changing according to R function.
+
+233
+00:23:37,824 --> 00:23:39,124
+R function is this.
+
+234
+00:23:39,224 --> 00:23:42,344
+It will be from 0 to 2 cos theta.
+
+235
+00:23:42,964 --> 00:23:45,923
+If you want, you can use the symmetry.
+
+236
+00:23:45,923 --> 00:23:50,804
+You can write 2 product 0 to pi over 2.
+
+237
+00:23:52,364 --> 00:23:55,564
+0 to 2 cos theta.
+
+238
+00:23:56,564 --> 00:23:59,624
+R cube dr dt.
+
+239
+00:24:06,867 --> 00:24:08,687
+Cosine teta isn't r.
+
+240
+00:24:13,011 --> 00:24:17,511
+Ok, the region is the same, but the equations are different.
+
+241
+00:24:18,432 --> 00:24:29,692
+Ok, for example, for the shape for impolar coordinates and Cartesian coordinate system are the same, but the equations are different.
+
+242
+00:24:29,831 --> 00:24:32,912
+For example, what is r equals 1?
+
+243
+00:24:32,912 --> 00:24:34,511
+Actually, it is circle.
+
+244
+00:24:37,571 --> 00:24:44,811
+It is x square plus y square equals 1, or it is r equals 1.
+
+245
+00:24:44,892 --> 00:24:45,652
+They are the same.
+
+246
+00:24:46,132 --> 00:24:48,611
+The shape are the same, but the equations are different.
+
+247
+00:24:50,531 --> 00:24:52,432
+2 comes from symmetry.
+
+248
+00:24:53,471 --> 00:24:54,811
+I find this one.
+
+249
+00:24:56,632 --> 00:24:58,491
+After that, I product with 2.
+
+250
+00:24:58,591 --> 00:25:01,132
+If you want, you can write like this also.
+
+251
+00:25:01,132 --> 00:25:02,251
+I want to show.
+
+252
+00:25:02,811 --> 00:25:03,011
+Okay?
+
+253
+00:25:06,851 --> 00:25:11,451
+If you want, isterseniz simetriyi de kullanabilirsiniz aynısı olduğu için.
+
+254
+00:25:13,031 --> 00:25:14,091
+Okay.
+
+255
+00:25:21,044 --> 00:25:22,504
+Let's look at this example.
+
+256
+00:25:33,779 --> 00:25:36,180
+Evoloid is integral in polar form.
+
+257
+00:25:42,804 --> 00:25:43,844
+Uuuuh...
+
+258
+00:25:50,099 --> 00:25:50,459
+No.
+
+259
+00:25:55,571 --> 00:25:57,571
+We didn't, we haven't.
+
+260
+00:26:01,251 --> 00:26:03,371
+I'm not sure, I think we didn't.
+
+261
+00:26:03,711 --> 00:26:05,711
+It is similar, but it is not the same.
+
+262
+00:26:07,891 --> 00:26:08,691
+We didn't.
+
+263
+00:26:09,611 --> 00:26:10,331
+It is similar.
+
+264
+00:26:10,911 --> 00:26:12,371
+You are talking about this one.
+
+265
+00:26:13,091 --> 00:26:13,311
+Okay.
+
+266
+00:26:16,980 --> 00:26:28,920
+Okay, so let's look at this. Most of the questions are very similar to each other because it has to be contained x square, y square.
+
+267
+00:26:28,920 --> 00:26:47,500
+Okay, so let's determine our region. Outside we have x, x is 0, x is 1, y 0, y is 1 minus x square.
+
+268
+00:26:47,980 --> 00:26:55,339
+So let's sketch. Normally this is actually x square plus y square equals 1. It is a circle.
+
+269
+00:26:55,339 --> 00:27:06,700
+but here they give some restriction. x 0, x equals 0, y equals 0 is x and y axis. x equals 1 is this.
+
+270
+00:27:06,700 --> 00:27:20,960
+So I will cut here, here, circle. So it will be here. Why do you need x equals 1? Normally you can have this part also because or this part
+
+271
+00:27:20,960 --> 00:27:33,200
+because this is x axis y axis y axis circle, but which part we will take, it has to be x equals 1. So I have to cut here.
+
+272
+00:27:33,200 --> 00:27:35,259
+Okay?
+
+273
+00:27:39,188 --> 00:27:42,568
+Ok, so, let's write our integral.
+
+274
+00:27:48,084 --> 00:27:51,504
+Okay, I have a question. Can you take this part?
+
+275
+00:27:54,663 --> 00:27:59,544
+No, because you have to cut here, here.
+
+276
+00:28:00,104 --> 00:28:03,923
+Okay, bölmek zorundasınız. Burası oraya denk gelmiyor.
+
+277
+00:28:04,364 --> 00:28:06,544
+Okay, so let's write our function.
+
+278
+00:28:06,544 --> 00:28:10,064
+I know that x squared plus y squared is r squared.
+
+279
+00:28:11,324 --> 00:28:15,244
+And r d r d theta.
+
+280
+00:28:15,844 --> 00:28:17,524
+Now, can you see the bounds?
+
+281
+00:28:17,524 --> 00:28:18,984
+What you will write?
+
+282
+00:28:42,579 --> 00:28:47,279
+Ok, so the angle will be from 0 to pi over 2.
+
+283
+00:28:52,019 --> 00:28:57,480
+R'ı always, your radius is 1, so it will be from 0 to 1.
+
+284
+00:28:59,759 --> 00:29:02,619
+Do you have any question?
+
+285
+00:29:08,663 --> 00:29:09,263
+Ok.
+
+286
+00:29:14,579 --> 00:29:31,399
+Let's see this question. It is difficult. Okay. Let's look at this question. This question is a very difficult question. Böyle de bir zor soru olabilir belki.
+
+287
+00:29:35,731 --> 00:29:39,831
+Using the polar integration, find the area of the region.
+
+288
+00:29:40,051 --> 00:29:42,071
+This question is related to region.
+
+289
+00:29:43,231 --> 00:29:45,731
+R in the x-y coordinate system.
+
+290
+00:29:46,271 --> 00:29:50,531
+Enclosed by the circle, line and below.
+
+291
+00:29:54,231 --> 00:29:54,951
+Always.
+
+292
+00:29:56,251 --> 00:29:56,991
+Yes, yes.
+
+293
+00:29:57,731 --> 00:30:02,632
+Yes, if you use your transformation r cosited, r sited, it will always r square.
+
+294
+00:30:02,632 --> 00:30:05,291
+Okay, we have some region.
+
+295
+00:30:05,672 --> 00:30:08,672
+We have an area, but in polar coordinate system.
+
+296
+00:30:09,372 --> 00:30:10,511
+So let's sketch.
+
+297
+00:30:10,672 --> 00:30:11,471
+What is this?
+
+298
+00:30:12,912 --> 00:30:20,192
+It is circle x square plus y square equals 4 is a circle.
+
+299
+00:30:20,991 --> 00:30:22,912
+r square is 4.
+
+300
+00:30:23,132 --> 00:30:24,031
+r will be 2.
+
+301
+00:30:24,192 --> 00:30:28,071
+It is circle on the center and the radius is 2.
+
+302
+00:30:29,872 --> 00:30:31,551
+What about this one?
+
+303
+00:30:32,632 --> 00:30:42,451
+If y is 1, then r cosine theta will be 1.
+
+304
+00:30:42,811 --> 00:30:47,031
+Then r will be 1 over cosine theta.
+
+305
+00:30:47,932 --> 00:30:49,791
+And what about this line?
+
+306
+00:30:50,291 --> 00:30:53,892
+y equals square root 3x.
+
+307
+00:30:53,892 --> 00:31:12,932
+So r cosine, sorry, r sine theta will be square root 3 r cosine theta.
+
+308
+00:31:12,932 --> 00:31:15,231
+Okay.
+
+309
+00:31:16,011 --> 00:31:17,112
+Let's see.
+
+310
+00:31:19,152 --> 00:31:19,432
+Okay.
+
+311
+00:31:19,731 --> 00:31:21,511
+So what do we have?
+
+312
+00:31:24,392 --> 00:31:28,711
+Tension theta is square root 3.
+
+313
+00:31:28,912 --> 00:31:29,571
+What is theta?
+
+314
+00:31:29,571 --> 00:31:46,912
+Tension theta.
+
+315
+00:31:37,811 --> 00:31:40,651
+Pardon. Yes, yes, yes. It is signed.
+
+316
+00:31:41,771 --> 00:31:42,431
+Yes, signed.
+
+317
+00:31:49,011 --> 00:31:52,231
+Which angle is theta? Bunu yanlış yapmamıysam.
+
+318
+00:31:53,432 --> 00:31:54,831
+Pi over 3.
+
+319
+00:31:55,731 --> 00:31:58,831
+Okay, let's sketch. I want to show here.
+
+320
+00:32:03,092 --> 00:32:05,272
+So, let's look at our region.
+
+321
+00:32:07,552 --> 00:32:10,112
+The first one, we have a circle.
+
+322
+00:32:11,012 --> 00:32:11,912
+R equals 2.
+
+323
+00:32:12,112 --> 00:32:13,252
+This is our circle.
+
+324
+00:32:16,432 --> 00:32:18,892
+Then, what about the other one?
+
+325
+00:32:19,852 --> 00:32:23,592
+Normally, y equals 1 is a line.
+
+326
+00:32:23,792 --> 00:32:25,072
+You can sketch here.
+
+327
+00:32:27,711 --> 00:32:29,632
+Okay, r equals 1.
+
+328
+00:32:30,112 --> 00:32:32,652
+And this function, the shape is the same.
+
+329
+00:32:32,652 --> 00:32:35,572
+We have a y equals 2.
+
+330
+00:32:36,012 --> 00:32:38,392
+Or I can write, it is 1 over sine theta.
+
+331
+00:32:40,272 --> 00:32:40,592
+Okay.
+
+332
+00:32:41,152 --> 00:32:42,752
+What about the last one?
+
+333
+00:32:43,492 --> 00:32:47,132
+The last one will be theta equals pi over 3.
+
+334
+00:32:47,252 --> 00:32:49,592
+It means that it is a line.
+
+335
+00:32:49,752 --> 00:32:50,552
+What is this?
+
+336
+00:32:50,652 --> 00:32:53,052
+Theta is pi over 3.
+
+337
+00:32:53,252 --> 00:32:54,112
+It is this.
+
+338
+00:32:55,992 --> 00:32:56,632
+Okay.
+
+339
+00:32:57,772 --> 00:33:00,072
+So, I have circle.
+
+340
+00:33:00,072 --> 00:33:03,632
+I have y equals one line.
+
+341
+00:33:03,632 --> 00:33:07,692
+I have theta is pi over 3.
+
+342
+00:33:07,692 --> 00:33:09,812
+So, this is our region.
+
+343
+00:33:10,812 --> 00:33:11,332
+Okay.
+
+344
+00:33:11,451 --> 00:33:14,272
+We have to write the formula for this region.
+
+345
+00:33:14,992 --> 00:33:18,572
+But before that, we have to find our intersection points.
+
+346
+00:33:18,812 --> 00:33:19,772
+This is easy.
+
+347
+00:33:19,772 --> 00:33:22,772
+This is our equation.
+
+348
+00:33:22,772 --> 00:33:24,072
+Okay.
+
+349
+00:33:24,072 --> 00:33:26,872
+So, do you need.
+
+350
+00:33:26,872 --> 00:33:28,132
+Actually, you don't need.
+
+351
+00:33:28,792 --> 00:33:30,472
+I need to determine this one.
+
+352
+00:33:30,552 --> 00:33:32,092
+Ona çok fazla ihtiyacımız yok.
+
+353
+00:33:32,232 --> 00:33:34,572
+Zaten açı olarak baktığımıza gittiği açı belli.
+
+354
+00:33:34,572 --> 00:33:37,132
+Şuranın açısı bizim için önemli.
+
+355
+00:33:37,132 --> 00:33:39,552
+The angle at this point is important.
+
+356
+00:33:39,552 --> 00:33:40,632
+What is this?
+
+357
+00:33:41,392 --> 00:33:51,072
+This is the intersection of y equals 1 and x squared plus y squared equals 4.
+
+358
+00:33:51,072 --> 00:33:56,632
+If I write 1 here.
+
+359
+00:33:56,632 --> 00:33:58,632
+It will be x squared is 3.
+
+360
+00:33:58,632 --> 00:33:59,211
+x will be square to 3.
+
+361
+00:33:59,211 --> 00:34:03,912
+If x is square to 3.
+
+362
+00:34:03,912 --> 00:34:05,592
+y will be 1.
+
+363
+00:34:05,592 --> 00:34:08,632
+Okay.
+
+364
+00:34:08,632 --> 00:34:13,592
+And for this point, the angle will be pi over 6.
+
+365
+00:34:15,271 --> 00:34:15,592
+Okay.
+
+366
+00:34:16,072 --> 00:34:18,572
+Now, let's write our integral area.
+
+367
+00:34:20,711 --> 00:34:22,291
+Using the double integral.
+
+368
+00:34:26,420 --> 00:34:38,099
+this point if r cosine theta is square root 3 if r sine theta is 1 what is this
+
+369
+00:34:40,980 --> 00:34:43,059
+okay i know that
+
+370
+00:34:49,523 --> 00:34:50,003
+Tamam.
+
+371
+00:34:51,443 --> 00:35:00,763
+So, what about the function? What do you write here? How can you find the idea? Ne yazacağız içeriye?
+
+372
+00:35:01,963 --> 00:35:08,403
+Okay, think about this question and what can we write here?
+
+373
+00:35:28,340 --> 00:35:36,720
+R function normally will be 1, but it comes from R, D, R, D, Theta.
+
+374
+00:35:37,820 --> 00:35:45,400
+Okay, what about the bonds? The angle is changing from pi over 6 to pi over 3.
+
+375
+00:35:46,680 --> 00:35:52,160
+Okay, R is changing when you sketch these lines like this.
+
+376
+00:35:52,160 --> 00:35:57,160
+Okay, your starting function is this.
+
+377
+00:35:58,340 --> 00:36:00,280
+And your and function is circle.
+
+378
+00:36:00,700 --> 00:36:02,440
+Your starting function is line.
+
+379
+00:36:02,539 --> 00:36:03,900
+What is y equals 1?
+
+380
+00:36:03,980 --> 00:36:05,380
+It is 1 over sine theta.
+
+381
+00:36:08,884 --> 00:36:16,224
+When you look at it like this, your n function is circle. What is circle? Circle is, r is, 2.
+
+382
+00:36:20,659 --> 00:36:21,099
+Tamam.
+
+383
+00:36:30,420 --> 00:36:32,599
+You don't need to write the solution.
+
+384
+00:36:33,380 --> 00:36:33,579
+Okay.
+
+385
+00:36:34,500 --> 00:36:38,500
+So, firstly, you have to write your angle.
+
+386
+00:36:39,059 --> 00:36:46,700
+If you have a light, you can see that I see the area between pi over 6 to pi over 3.
+
+387
+00:36:47,700 --> 00:36:52,320
+When you look at this one, your starting function is line.
+
+388
+00:36:52,579 --> 00:36:53,820
+What is line equation?
+
+389
+00:36:53,980 --> 00:36:55,380
+It is 1 over sine theta.
+
+390
+00:36:56,320 --> 00:36:57,880
+What is your end function?
+
+391
+00:36:58,019 --> 00:36:59,440
+Your end function is circle.
+
+392
+00:36:59,440 --> 00:37:00,460
+What is circle?
+
+393
+00:37:00,659 --> 00:37:01,740
+Circle is 2.
+
+394
+00:37:03,180 --> 00:37:08,960
+Normally, in sight, you have to write your function as one for the area.
+
+395
+00:37:10,079 --> 00:37:12,559
+Rd, Rd theta comes from the transformation.
+
+396
+00:37:13,559 --> 00:37:15,320
+You don't need to look at the solution.
+
+397
+00:37:15,780 --> 00:37:15,940
+Okay.
+
+398
+00:37:16,000 --> 00:37:17,940
+In the test, they don't ask the solution.
+
+399
+00:37:19,840 --> 00:37:20,220
+Okay.
+
+400
+00:37:20,300 --> 00:37:20,880
+Let's see.
+
+401
+00:37:20,960 --> 00:37:22,500
+One more equation after this.
+
+402
+00:37:22,559 --> 00:37:23,559
+I will take a break.
+
+403
+00:37:23,639 --> 00:37:26,280
+After the break, we will see our last subject.
+
+404
+00:37:26,579 --> 00:37:26,860
+Okay.
+
+405
+00:37:27,280 --> 00:37:29,360
+Let's see this question also.
+
+406
+00:37:29,440 --> 00:37:29,960
+Okay.
+
+407
+00:37:29,960 --> 00:37:42,200
+Let's see.
+
+408
+00:37:36,436 --> 00:37:36,896
+Zada.
+
+409
+00:37:44,596 --> 00:37:46,056
+Tuye benuk ediyorsunuz, Allah.
+
+410
+00:37:59,891 --> 00:38:01,011
+Nerede yazdık?
+
+411
+00:38:08,980 --> 00:38:34,800
+Evet, normally, normally you have always 1 here. If they ask the area, I said that, you have to take your function as 1. Rdrd theta comes from the transformation, but if they ask the area, it will be 1. If they ask any functions integral, they will give another function, but for the area, you will take 1 as your function.
+
+412
+00:38:38,164 --> 00:38:45,204
+Ok, find the array of the region R index Y plane enclosed by the curves. What are they?
+
+413
+00:38:53,331 --> 00:38:56,251
+y² equals 4x.
+
+414
+00:38:56,451 --> 00:38:59,771
+It is like this.
+
+415
+00:39:01,471 --> 00:39:03,571
+And this is a line.
+
+416
+00:39:03,731 --> 00:39:06,692
+If x is 0, y will be minus 4.
+
+417
+00:39:08,652 --> 00:39:12,371
+If y is 0, x will be 1 over 2.
+
+418
+00:39:12,471 --> 00:39:13,632
+It is like this.
+
+419
+00:39:16,659 --> 00:39:17,059
+Okay?
+
+420
+00:39:24,884 --> 00:39:27,184
+Bu bir normal sorun.
+
+421
+00:39:28,644 --> 00:39:32,903
+Ok, so they are asking the area of here.
+
+422
+00:39:34,384 --> 00:39:37,244
+This question is not related to polar coordinates, ok?
+
+423
+00:39:38,364 --> 00:39:42,204
+Ok, so how can we write the area of this question?
+
+424
+00:39:42,364 --> 00:39:46,304
+We have to find our intersection point.
+
+425
+00:39:46,304 --> 00:39:51,324
+It is 4x will be on the right side.
+
+426
+00:39:51,463 --> 00:39:53,724
+I have to take square of this function.
+
+427
+00:39:54,884 --> 00:39:57,704
+4x squared.
+
+428
+00:39:58,063 --> 00:39:59,324
+Sanki bunu çözdük ya.
+
+429
+00:39:59,704 --> 00:40:00,704
+Bir tanıdık geldi bana.
+
+430
+00:40:01,384 --> 00:40:05,664
+16 minus 16x.
+
+431
+00:40:06,123 --> 00:40:07,963
+Yes, we solved this question yesterday.
+
+432
+00:40:09,623 --> 00:40:12,204
+Yes, I think we solved this question yesterday.
+
+433
+00:40:12,204 --> 00:40:16,603
+I remember the intersection point.
+
+434
+00:40:17,623 --> 00:40:18,384
+Ok, let's see.
+
+435
+00:40:19,664 --> 00:40:24,403
+So we will have 4x squared minus 20x.
+
+436
+00:40:24,884 --> 00:40:26,864
+Plus 16 will be 0.
+
+437
+00:40:27,864 --> 00:40:32,284
+If we cancel 4, we will have x squared minus 5x.
+
+438
+00:40:32,384 --> 00:40:33,423
+Benzio-Dinzli.
+
+439
+00:40:34,063 --> 00:40:35,463
+Plus 4 will be 0.
+
+440
+00:40:36,043 --> 00:40:38,824
+So the intersection points will be 4, 1.
+
+441
+00:40:38,824 --> 00:40:57,503
+This is 1.
+
+442
+00:40:48,244 --> 00:40:55,423
+Evet, bu sebeple önemli olan bir nokta.
+
+443
+00:40:55,724 --> 00:40:56,584
+Bu sebeple 4.
+
+444
+00:40:57,604 --> 00:40:59,684
+Bu sebeple 1, bu sebeple 4.
+
+445
+00:41:00,224 --> 00:41:02,943
+Şimdi, bu sebeple bir soru var.
+
+446
+00:41:02,943 --> 00:41:07,244
+Bu sebeple, bu sebeple, bu sebeple, bu sebeple, bu sebeple.
+
+447
+00:41:13,619 --> 00:41:25,059
+Okay, if you sketch lines between the branch of parabole, parabole, but after this intersection point, your starting function is line parabole.
+
+448
+00:41:25,159 --> 00:41:35,000
+Line parabole, it is not smooth with respect to x, but with respect to y, parabole line, parabole line, parabole line, it is smooth.
+
+449
+00:41:35,299 --> 00:41:42,219
+So, let's write our formula, the first one. Let's write with respect to y.
+
+450
+00:41:42,219 --> 00:41:53,579
+Y is changing between this point and this point. What is this point? If x is 1, y will be minus 2.
+
+451
+00:41:54,359 --> 00:42:01,739
+So, it will be between minus 2, 2. If x is 4, y will be 4.
+
+452
+00:42:02,599 --> 00:42:04,699
+4, getting 6, getting 6, getting 6, getting 6, getting 6.
+
+453
+00:42:04,699 --> 00:42:10,759
+Okay. And your starting function is parabole. What is parabole?
+
+454
+00:42:12,219 --> 00:42:42,199
+Y equals 4, 2.
+
+455
+00:42:44,788 --> 00:42:52,987
+And they ask the area it will be 1 dx dy.
+
+456
+00:42:56,128 --> 00:42:56,927
+Okay.
+
+457
+00:42:57,467 --> 00:42:59,847
+Lastly, I want to write with respect to x.
+
+458
+00:42:59,907 --> 00:43:00,987
+We will write two integrals.
+
+459
+00:43:02,108 --> 00:43:03,307
+But I want to write.
+
+460
+00:43:03,867 --> 00:43:05,068
+İkisini de öğrenelim.
+
+461
+00:43:05,068 --> 00:43:16,048
+It will be 1 dy dx plus 1 dy dx.
+
+462
+00:43:16,268 --> 00:43:16,527
+Okay.
+
+463
+00:43:17,228 --> 00:43:21,208
+What are the bounds for the first integral?
+
+464
+00:43:22,467 --> 00:43:23,907
+x is changing.
+
+465
+00:43:24,048 --> 00:43:25,887
+We have two parts here.
+
+466
+00:43:26,987 --> 00:43:29,987
+Now, what is the first bound for x?
+
+467
+00:43:30,748 --> 00:43:31,668
+0, 2.
+
+468
+00:43:31,668 --> 00:43:35,228
+This part will be 1.
+
+469
+00:43:35,668 --> 00:43:38,467
+This part will be 1, 2, 4.
+
+470
+00:43:39,407 --> 00:43:39,708
+Okay.
+
+471
+00:43:40,648 --> 00:43:47,588
+For the first part, when you sketch your line, your starting function is parabola.
+
+472
+00:43:47,688 --> 00:43:49,188
+Your end function is parabola.
+
+473
+00:43:49,347 --> 00:43:51,987
+But what is the equation of the parabola?
+
+474
+00:43:51,987 --> 00:43:55,048
+y squared is normally 4x.
+
+475
+00:43:55,307 --> 00:43:56,748
+But what is y?
+
+476
+00:43:56,748 --> 00:44:01,788
+y is plus or minus 2 square root x.
+
+477
+00:44:02,827 --> 00:44:08,887
+This branch, where y is positive, it will be 2 square root x.
+
+478
+00:44:09,648 --> 00:44:15,668
+This branch will be where y is negative minus 2 square root x.
+
+479
+00:44:15,668 --> 00:44:25,748
+So, it will be between minus 2 square root x to 2 square root x.
+
+480
+00:44:25,748 --> 00:44:32,788
+And for the last part, your starting function is line, parabola, line, parabola.
+
+481
+00:44:32,867 --> 00:44:34,228
+What is our line equation?
+
+482
+00:44:35,068 --> 00:44:37,228
+It is 2x minus 4.
+
+483
+00:44:38,128 --> 00:44:40,168
+Your end function is parabola.
+
+484
+00:44:40,307 --> 00:44:41,327
+And it is positive.
+
+485
+00:44:41,688 --> 00:44:46,407
+2 square root x is your integral.
+
+486
+00:44:46,407 --> 00:44:49,288
+If you want to write with respect to x.
+
+487
+00:44:49,288 --> 00:44:53,288
+Uh...
+
+488
+00:44:53,288 --> 00:45:15,288
+You can write with respect to x.
+
+489
+00:44:57,907 --> 00:45:04,647
+Which one? [öğrenci], which one are you talking about?
+
+490
+00:45:10,835 --> 00:45:26,075
+Okay, okay, let's take a break for 10 minutes. After that, we will start our last subject and we will finish this semester for the subjects. Okay, let's take a 10 minutes break. Let's drink a tea or coffee. Okay.
+
+491
+01:03:47,123 --> 01:03:48,123
+Okay.
+
+492
+01:03:49,443 --> 01:03:51,803
+Let's start our last part.
+
+493
+01:03:55,123 --> 01:04:00,723
+Okay, we say that our last part is substitution in multiple, in double integral.
+
+494
+01:04:01,743 --> 01:04:04,723
+Why do we need to use these kind of things?
+
+495
+01:04:05,223 --> 01:04:14,603
+If your function's region is very complicated and if you want to take the integral and the integrals are difficult according to your region,
+
+496
+01:04:14,884 --> 01:04:23,423
+you can use a simple transformation and you can change your region and after that you can easily solve this integral.
+
+497
+01:04:23,423 --> 01:04:30,463
+Let me give an example in a graph, for example, like this.
+
+498
+01:04:31,463 --> 01:04:38,483
+In here, if you want to write your region integral according to your region, it is not smooth.
+
+499
+01:04:38,843 --> 01:04:44,623
+For example, if you want to write with respect to y, you need 1, 2, 3.
+
+500
+01:04:45,463 --> 01:04:51,063
+If you want to write with respect to x, 1, 2, 3.
+
+501
+01:04:51,343 --> 01:04:53,243
+And it is very difficult.
+
+502
+01:04:53,423 --> 01:04:59,783
+But if you use a transformation, your new region will be a rectangle and it will be very easy.
+
+503
+01:05:00,063 --> 01:05:02,423
+But how can we make this transformation?
+
+504
+01:05:05,783 --> 01:05:08,343
+We will define new variables.
+
+505
+01:05:08,603 --> 01:05:10,763
+We will define as u and v.
+
+506
+01:05:10,763 --> 01:05:11,903
+Okay.
+
+507
+01:05:11,903 --> 01:05:19,683
+We will use two new variables and we will change x, y to u, v.
+
+508
+01:05:20,903 --> 01:05:21,523
+Okay.
+
+509
+01:05:21,583 --> 01:05:23,463
+How can we use this transformation?
+
+510
+01:05:25,863 --> 01:05:30,683
+Firstly, we have our integral is this on the region r.
+
+511
+01:05:30,783 --> 01:05:32,043
+Our function is this.
+
+512
+01:05:32,043 --> 01:05:36,703
+After the transformation, our new region will be g.
+
+513
+01:05:38,403 --> 01:05:44,563
+Inside, we will cancel y, x and y and we will write our new form is g and h.
+
+514
+01:05:44,563 --> 01:05:47,663
+After that, I have to add the Jacobian.
+
+515
+01:05:48,263 --> 01:05:50,723
+For polite coordinates, the Jacobian was r.
+
+516
+01:05:50,843 --> 01:05:55,443
+But here, according to your question, your Jacobian will change.
+
+517
+01:05:55,563 --> 01:05:57,743
+But you have to take the absolute value.
+
+518
+01:05:57,884 --> 01:05:59,743
+It has to be always positive.
+
+519
+01:06:00,823 --> 01:06:02,803
+D u, d v or d v, d u.
+
+520
+01:06:02,803 --> 01:06:04,183
+It depends on your question.
+
+521
+01:06:04,723 --> 01:06:04,884
+Okay.
+
+522
+01:06:05,783 --> 01:06:09,603
+Now, in the next part, how can we determine our Jacobian?
+
+523
+01:06:10,243 --> 01:06:11,803
+The Jacobian will be...
+
+524
+01:06:19,603 --> 01:06:23,923
+So, what is the previous variable ?
+
+525
+01:06:23,923 --> 01:06:26,803
+What is your new variable ?
+
+526
+01:06:26,803 --> 01:06:30,003
+So, the Jacobian will be
+
+527
+01:06:30,003 --> 01:06:34,403
+Derivation of x with respect to u
+
+528
+01:06:34,403 --> 01:06:40,403
+Derivation of x with respect to v
+
+529
+01:06:40,403 --> 01:06:48,403
+Derivation of y with respect to u
+
+530
+01:06:48,403 --> 01:06:52,403
+Derivation of y with respect to v
+
+531
+01:06:52,403 --> 01:06:54,403
+This is your Jacobian.
+
+532
+01:06:54,403 --> 01:07:02,403
+But in some cases, they don't give x equals u minus v, for example, y equals u plus v
+
+533
+01:07:02,403 --> 01:07:06,403
+In this transformation, you can easily find your Jacobian.
+
+534
+01:07:06,403 --> 01:07:14,403
+But in some cases, they can give u is x minus y, v is x squared plus y or something like that.
+
+535
+01:07:14,403 --> 01:07:18,403
+In that case, it is difficult to determine dx over du.
+
+536
+01:07:18,403 --> 01:07:36,403
+In that case, you will change the order of Jacobian and you can write as 1 over du over dx, dv over dx, du over dy, dv over dy.
+
+537
+01:07:36,403 --> 01:07:44,403
+This is the other return for the Jacobian.
+
+538
+01:07:44,403 --> 01:07:48,403
+Which one will you use? It depends on your transformation.
+
+539
+01:07:48,403 --> 01:07:54,403
+Ok ?
+
+540
+01:07:56,755 --> 01:08:02,855
+Normalde, you have your region R, and you will change to G.
+
+541
+01:08:02,855 --> 01:08:03,695
+Okay?
+
+542
+01:08:07,699 --> 01:08:10,019
+Let's see some examples.
+
+543
+01:08:12,359 --> 01:08:17,059
+For example, here, evalide this integral by applying the transformation.
+
+544
+01:08:17,059 --> 01:08:18,639
+They give the transformation.
+
+545
+01:08:23,859 --> 01:08:32,139
+But normally, in some questions, they don't need. You can determine according to your bounds and function easily.
+
+546
+01:08:47,123 --> 01:08:48,163
+This is our question.
+
+547
+01:08:48,804 --> 01:08:48,903
+Okay.
+
+548
+01:08:51,224 --> 01:08:52,703
+Bir saniye mi şarj yapın diyor.
+
+549
+01:09:09,332 --> 01:09:35,532
+Okay. So, how many steps do we have? Actually, firstly, let us determine our Jacobian. Our transformation is this. I said that actually we can use two of four. Which one we can use? They give you and we directly, so it will be useful to use the second one. So our Jacobian will be
+
+550
+01:09:43,475 --> 01:10:00,455
+1 over derivation of u with respect to x, derivation of v with respect to x. Derivation of u with respect to x, this part will be 1. Derivation of v with respect to x will be 0.
+
+551
+01:10:07,572 --> 01:10:18,431
+Evet, sorry. Now, we will write derivation of u with respect to y, derivation of v with respect to y.
+
+552
+01:10:19,132 --> 01:10:24,011
+It will be minus 1 over 2. This will be 1 over 2.
+
+553
+01:10:26,311 --> 01:10:30,332
+1 over, this is 1 over 2, it is 2.
+
+554
+01:10:30,332 --> 01:10:33,431
+Okay, we find our Jacobian.
+
+555
+01:10:33,971 --> 01:10:37,332
+Now, let's, what is our region?
+
+556
+01:10:37,731 --> 01:10:41,592
+Normally, our beginning, first region is our,
+
+557
+01:10:43,192 --> 01:10:47,132
+outside we have y, so it will be y equals 4,
+
+558
+01:10:47,851 --> 01:10:50,872
+y equals 0, y equals 4,
+
+559
+01:10:51,752 --> 01:10:53,412
+x equals y over 2,
+
+560
+01:10:54,792 --> 01:10:55,912
+x equals
+
+561
+01:10:55,912 --> 01:10:59,912
+y over 2 plus 1.
+
+562
+01:11:00,332 --> 01:11:00,672
+Okay.
+
+563
+01:11:00,672 --> 01:11:05,072
+Now, I want to show that what is our region?
+
+564
+01:11:05,072 --> 01:11:09,572
+x equals y over 2 is a
+
+565
+01:11:09,572 --> 01:11:12,092
+line y equals 2x,
+
+566
+01:11:12,092 --> 01:11:14,391
+x, passing from the origin.
+
+567
+01:11:14,391 --> 01:11:16,112
+Okay.
+
+568
+01:11:20,020 --> 01:11:21,080
+Aslında şu.
+
+569
+01:11:22,080 --> 01:11:26,000
+The other one is 2x minus 1.
+
+570
+01:11:26,820 --> 01:11:27,400
+One second.
+
+571
+01:11:27,640 --> 01:11:28,300
+[kişisel bilgi]
+
+572
+01:11:34,323 --> 01:11:38,583
+Sorry, [kişisel bilgi].
+
+573
+01:11:39,143 --> 01:11:42,323
+Okay, the other one is 2x minus 1, if...
+
+574
+01:11:48,243 --> 01:11:59,264
+2, yes. Slope are the same. If x is 0, y will be minus 2. It will be this. After that, y is 0 is x-axis.
+
+575
+01:12:00,183 --> 01:12:10,243
+Y equals 4 is this. Okay, normally our region is this, but we will use transformation and let's
+
+576
+01:12:10,243 --> 01:12:18,743
+determine the new form of the region. G will be, let's take our transformation here.
+
+577
+01:12:30,899 --> 01:12:34,859
+Okay, so let's look at what is if y is 0.
+
+578
+01:12:36,719 --> 01:12:45,179
+If y is 0, if you want, you can rewrite your equation also.
+
+579
+01:12:47,319 --> 01:12:49,079
+İsterseniz şöyle de yapabildesiniz.
+
+580
+01:12:51,259 --> 01:12:58,059
+U is x minus y over 2.
+
+581
+01:12:58,059 --> 01:13:08,479
+Okay, so x will be u plus v, y is 2v.
+
+582
+01:13:09,279 --> 01:13:10,460
+Şöyle de bakabilirsiniz.
+
+583
+01:13:10,699 --> 01:13:10,979
+Okay.
+
+584
+01:13:14,612 --> 01:13:20,431
+So, if y is 0, it means that from here, v will be 0.
+
+585
+01:13:22,731 --> 01:13:26,792
+If y is 4, v will be 2.
+
+586
+01:13:27,752 --> 01:13:32,372
+If x is y over 2, what does it mean?
+
+587
+01:13:32,891 --> 01:13:38,931
+If x is y over 2, from here also you can say that u is 0.
+
+588
+01:13:38,931 --> 01:13:45,032
+If x is y over 2 plus 1, what does it mean?
+
+589
+01:13:45,351 --> 01:13:49,652
+This part is u, so it will be u equals 1.
+
+590
+01:13:50,632 --> 01:13:52,591
+So, what is the new form?
+
+591
+01:13:53,132 --> 01:13:55,231
+Let's take this is u, this is v.
+
+592
+01:13:57,072 --> 01:13:59,132
+u is 0, u equals 1.
+
+593
+01:13:59,632 --> 01:14:01,672
+v is 0, v equals 2.
+
+594
+01:14:02,731 --> 01:14:05,072
+Our new region is a rectangle.
+
+595
+01:14:06,252 --> 01:14:08,452
+Did you understand how you write this one?
+
+596
+01:14:08,931 --> 01:14:10,931
+Normally, normally we have u, this is v is 0.
+
+597
+01:14:10,931 --> 01:14:17,192
+Normally we have u, this is v, if you want, you can write as also x and y.
+
+598
+01:14:17,192 --> 01:14:20,452
+Let's see, okay, let me write again.
+
+599
+01:14:26,260 --> 01:14:41,460
+Okay, from here I can write that y is 2v. Okay, from here I can write that u is x minus y over 2 is v.
+
+600
+01:14:41,460 --> 01:14:54,440
+So x will be u plus v. Okay, it will be useful for us. Now, if y is 0, what does it mean? V is 0.
+
+601
+01:14:54,440 --> 01:15:13,980
+Here. If y is 4, if you write 4 here, v will be 2. Let's look at here. If x is y over 2, okay, u plus v will be v.
+
+602
+01:15:13,980 --> 01:15:29,380
+So u will be 0 from here. For this part, what is x? x is u plus v. On the right side, y over 2 is v plus 1.
+
+603
+01:15:29,760 --> 01:15:37,800
+We can cancel this one and u will be 1. All of them are lines. If you take this part is u, this part is v.
+
+604
+01:15:37,800 --> 01:15:43,560
+0, 1, 0, 2. This is our new region. We will write our integral according to our region.
+
+605
+01:15:44,699 --> 01:15:48,440
+So, in the question is this.
+
+606
+01:15:48,440 --> 01:15:55,340
+1, 0, 2. This is our new region. We will write our integral.
+
+607
+01:15:55,340 --> 01:16:01,340
+1, 0, 3. This is our new region. We will write our integral.
+
+608
+01:16:01,340 --> 01:16:07,340
+2, 0, 3. This is our new region. We will write our integral.
+
+609
+01:16:07,340 --> 01:16:15,340
+3, 0, 3. This is our new region. We will write our integral.
+
+610
+01:16:06,804 --> 01:16:08,463
+Let's write the new form.
+
+611
+01:16:10,423 --> 01:16:12,144
+Our region is rectangle.
+
+612
+01:16:13,524 --> 01:16:17,184
+What you will write for this, they said that it is u.
+
+613
+01:16:18,543 --> 01:16:20,104
+What about Jacobian?
+
+614
+01:16:20,224 --> 01:16:21,923
+We find Jacobian is 2.
+
+615
+01:16:23,304 --> 01:16:26,324
+You can write du, dv, or dv, dy.
+
+616
+01:16:26,743 --> 01:16:33,884
+So if I write with respect to v, v is changing from 0 to, u is changing from 0 to 1.
+
+617
+01:16:33,884 --> 01:16:40,324
+Or if you want to write as u to dv, dy.
+
+618
+01:16:42,644 --> 01:16:48,583
+U is changing from 0 to 1, v is changing from 0 to 2.
+
+619
+01:16:48,884 --> 01:16:51,984
+This is the new form after the transformation.
+
+620
+01:16:52,804 --> 01:16:54,644
+Now, do you have any question?
+
+621
+01:16:55,224 --> 01:16:55,963
+Look at here.
+
+622
+01:16:57,684 --> 01:17:00,003
+Normally, you don't need to sketch this one.
+
+623
+01:17:00,404 --> 01:17:01,944
+Okay, but I want to show.
+
+624
+01:17:05,587 --> 01:17:13,747
+You have to determine your Jacobian, you have to determine your new form, and you can apply this transformation in the whole integral.
+
+625
+01:17:16,627 --> 01:17:17,228
+Okay.
+
+626
+01:17:20,167 --> 01:17:21,967
+What did you ask me the question?
+
+627
+01:17:22,228 --> 01:17:29,228
+What is the, evaluate this integral using this transformation, but you don't need to evaluate, okay?
+
+628
+01:17:29,728 --> 01:17:33,148
+In the test sample, only they can ask the new form only.
+
+629
+01:17:33,148 --> 01:17:37,467
+These integral solutions are long, okay?
+
+630
+01:17:38,667 --> 01:17:42,007
+Çözüm değişikliğine gelince biraz uzun oluyor ama testte öyle bir şey yok.
+
+631
+01:17:47,859 --> 01:17:48,859
+Bakalım.
+
+632
+01:17:53,203 --> 01:17:56,264
+In some questions, they don't need to give transformation.
+
+633
+01:17:56,663 --> 01:17:58,983
+You can determine according to your question.
+
+634
+01:18:00,523 --> 01:18:05,163
+Evoluate this integral over R.
+
+635
+01:18:05,264 --> 01:18:12,963
+R is this in the first quadrant using a proper, using a suitable transformation.
+
+636
+01:18:13,903 --> 01:18:19,764
+You have to look at your region and according to your region, you can determine a suitable transformation.
+
+637
+01:18:20,764 --> 01:18:21,823
+So what is our region?
+
+638
+01:18:23,203 --> 01:18:28,983
+It is y equals x or you can write y over x is 1.
+
+639
+01:18:30,403 --> 01:18:32,963
+Y over x is 4.
+
+640
+01:18:35,844 --> 01:18:38,623
+x, y equals 1.
+
+641
+01:18:38,804 --> 01:18:40,443
+x, y equals 9.
+
+642
+01:18:41,983 --> 01:18:42,323
+Okay.
+
+643
+01:18:42,783 --> 01:18:45,304
+What kind of transformation you can use?
+
+644
+01:18:45,304 --> 01:18:56,663
+For example, I have this term in two bounds and I have x product y in the last two bounds.
+
+645
+01:18:56,663 --> 01:19:01,503
+If you want, you can use y over x is u.
+
+646
+01:19:02,943 --> 01:19:04,983
+x product y is v.
+
+647
+01:19:06,183 --> 01:19:06,423
+Okay.
+
+648
+01:19:07,783 --> 01:19:11,344
+Because in the region, you have these two terms only.
+
+649
+01:19:12,804 --> 01:19:13,183
+Okay.
+
+650
+01:19:13,183 --> 01:19:16,123
+After that, let us determine our Jacobian.
+
+651
+01:19:16,463 --> 01:19:19,283
+In here, they give u and v directly.
+
+652
+01:19:19,683 --> 01:19:22,563
+So it will be useful to use one over.
+
+653
+01:19:22,563 --> 01:19:43,943
+What is, which transformation we will use?
+
+654
+01:19:31,315 --> 01:19:32,355
+This one.
+
+655
+01:19:36,692 --> 01:19:39,171
+Evet, let me write here.
+
+656
+01:19:41,332 --> 01:19:46,971
+Okay, what is this? Derivation of u with respect to x is minus y over x squared.
+
+657
+01:19:49,452 --> 01:19:52,072
+Derivation of v with respect to x will be y.
+
+658
+01:19:53,311 --> 01:19:56,992
+Derivation of u with respect to y will be 1 over x.
+
+659
+01:19:57,971 --> 01:20:00,952
+Derivation of v with respect to y will be x.
+
+660
+01:20:03,412 --> 01:20:05,011
+Okay, what do we have?
+
+661
+01:20:05,011 --> 01:20:13,912
+Minus y over x minus y over x minus 2y over x.
+
+662
+01:20:14,351 --> 01:20:16,391
+But we will change the order.
+
+663
+01:20:16,771 --> 01:20:21,051
+So we have minus x over 2y.
+
+664
+01:20:22,872 --> 01:20:29,332
+Okay, now in the next part we will find our new region g.
+
+665
+01:20:30,051 --> 01:20:31,212
+What is g?
+
+666
+01:20:31,212 --> 01:20:35,971
+y over x, we take that it is u.
+
+667
+01:20:36,171 --> 01:20:37,851
+So it will be u is 1.
+
+668
+01:20:39,131 --> 01:20:40,212
+u is 4.
+
+669
+01:20:42,032 --> 01:20:44,452
+We take x product y is v.
+
+670
+01:20:45,011 --> 01:20:46,551
+v will be 1.
+
+671
+01:20:46,832 --> 01:20:48,351
+v will be 9.
+
+672
+01:20:48,471 --> 01:20:50,712
+We will be our new region.
+
+673
+01:20:51,292 --> 01:20:52,912
+It is a rectangle region.
+
+674
+01:20:53,271 --> 01:20:54,171
+Let's sketch.
+
+675
+01:20:54,171 --> 01:20:56,332
+This is u.
+
+676
+01:20:56,631 --> 01:20:57,431
+This is v.
+
+677
+01:20:58,431 --> 01:20:59,671
+u is 1.
+
+678
+01:21:00,212 --> 01:21:01,152
+u is 4.
+
+679
+01:21:02,952 --> 01:21:04,112
+v is 1.
+
+680
+01:21:04,612 --> 01:21:05,551
+v is 9.
+
+681
+01:21:07,511 --> 01:21:08,532
+This is our region.
+
+682
+01:21:09,231 --> 01:21:12,032
+Now, my question is this.
+
+683
+01:21:12,591 --> 01:21:15,952
+What we will write inside and outside.
+
+684
+01:21:15,952 --> 01:21:18,811
+Look at here.
+
+685
+01:21:18,952 --> 01:21:20,231
+I will give you 2 minutes.
+
+686
+01:21:20,912 --> 01:21:24,391
+Everyone tries to write the bounds and inside of your function.
+
+687
+01:21:24,591 --> 01:21:25,792
+What can we write here?
+
+688
+01:21:26,731 --> 01:21:27,811
+Think about this.
+
+689
+01:21:28,752 --> 01:21:30,171
+Evet, 2 dakika düşünün bakalım.
+
+690
+01:21:30,311 --> 01:21:31,692
+Neler yazacağız bound'umuza?
+
+691
+01:21:31,692 --> 01:21:32,692
+1.
+
+692
+01:21:32,692 --> 01:21:33,692
+2.
+
+693
+01:21:33,692 --> 01:21:34,692
+3.
+
+694
+01:21:34,692 --> 01:21:35,692
+4.
+
+695
+01:21:35,692 --> 01:21:37,692
+5.
+
+696
+01:21:37,692 --> 01:21:39,692
+6.
+
+697
+01:21:39,692 --> 01:21:41,692
+7.
+
+698
+01:21:41,692 --> 01:21:43,692
+8.
+
+699
+01:21:43,692 --> 01:21:45,692
+9.
+
+700
+01:21:45,692 --> 01:21:48,692
+10.
+
+701
+01:21:48,692 --> 01:21:55,692
+11.
+
+702
+01:21:55,692 --> 01:22:00,692
+12.
+
+703
+01:22:11,220 --> 01:22:12,619
+So let's look at it.
+
+704
+01:22:14,820 --> 01:22:17,880
+Now in the function only we have dx dy.
+
+705
+01:22:18,539 --> 01:22:20,960
+Now it is a rectangle region.
+
+706
+01:22:21,100 --> 01:22:21,820
+It is easy.
+
+707
+01:22:22,360 --> 01:22:24,400
+In the function, the function is 1.
+
+708
+01:22:25,300 --> 01:22:27,600
+Now I have to add the Jacobian.
+
+709
+01:22:27,860 --> 01:22:31,460
+But I have to take the positive of the Jacobian.
+
+710
+01:22:31,619 --> 01:22:33,880
+We find Jacobian is x over 2y.
+
+711
+01:22:34,579 --> 01:22:34,900
+Okay.
+
+712
+01:22:35,300 --> 01:22:35,760
+One second.
+
+713
+01:22:35,900 --> 01:22:36,539
+I will change.
+
+714
+01:22:37,100 --> 01:22:38,280
+X over 2y.
+
+715
+01:22:38,280 --> 01:22:43,960
+And I have to change.
+
+716
+01:22:44,079 --> 01:22:45,440
+What is x over y?
+
+717
+01:22:46,539 --> 01:22:49,840
+In the new form, I can't have an x or y terms.
+
+718
+01:22:49,840 --> 01:22:52,340
+I know that y over x is u.
+
+719
+01:22:52,720 --> 01:22:57,699
+So this will be 1 over u product.
+
+720
+01:22:58,420 --> 01:23:01,100
+I can write du dv or dv du.
+
+721
+01:23:01,520 --> 01:23:06,420
+If you write du dv, d is changing from 1 to 9.
+
+722
+01:23:06,420 --> 01:23:09,880
+u is changing from 1 to 4.
+
+723
+01:23:11,060 --> 01:23:16,300
+Or I can write also one product.
+
+724
+01:23:16,440 --> 01:23:17,579
+One over u.
+
+725
+01:23:18,380 --> 01:23:20,640
+dv du.
+
+726
+01:23:22,800 --> 01:23:26,400
+The bounce for u is changing from 1 to 4.
+
+727
+01:23:26,980 --> 01:23:29,560
+v is changing from 1 to 9.
+
+728
+01:23:29,560 --> 01:23:32,520
+Yes.
+
+729
+01:23:34,520 --> 01:23:35,240
+This is true.
+
+730
+01:23:36,220 --> 01:23:36,480
+Okay.
+
+731
+01:23:37,360 --> 01:23:38,480
+So we keep the original.
+
+732
+01:23:38,780 --> 01:23:40,619
+Yes, we keep the original function.
+
+733
+01:23:40,780 --> 01:23:43,760
+But if you have some other terms, you have to write also.
+
+734
+01:23:44,199 --> 01:23:47,440
+For example, if inside you have y over x,
+
+735
+01:23:47,940 --> 01:23:50,060
+you will change and you will write as u.
+
+736
+01:23:50,060 --> 01:23:56,140
+Okay.
+
+737
+01:23:58,199 --> 01:24:01,420
+Normally, your region is this.
+
+738
+01:24:02,020 --> 01:24:05,240
+And on this region, the integral is very complex.
+
+739
+01:24:05,340 --> 01:24:06,159
+You can see that.
+
+740
+01:24:06,860 --> 01:24:11,500
+You will have three integrals with respect to x or with respect to y.
+
+741
+01:24:11,500 --> 01:24:17,680
+But if you change your coordinate system,
+
+742
+01:24:18,100 --> 01:24:20,380
+your new region will be very easy, a rectangle.
+
+743
+01:24:20,380 --> 01:24:41,440
+Thank you.
+
+744
+01:24:25,171 --> 01:24:28,192
+Ok, so let's look at this question.
+
+745
+01:24:50,355 --> 01:24:50,855
+Ok.
+
+746
+01:24:55,891 --> 01:25:07,171
+Evoluz, integral on the region R in the first quadrant. Okay, so which transformation you can use for this region? What is U, what is V?
+
+747
+01:25:11,283 --> 01:25:14,384
+vermemiş sizden yazmamızı istiyor ama çok bariz zaten.
+
+748
+01:25:15,263 --> 01:25:18,923
+X minus Y I can take as U or V.
+
+749
+01:25:19,063 --> 01:25:20,403
+It depends on your choice.
+
+750
+01:25:21,003 --> 01:25:23,403
+The other one is X, Y as V.
+
+751
+01:25:24,103 --> 01:25:24,283
+Okay.
+
+752
+01:25:26,003 --> 01:25:28,443
+Firstly let us find Jacobian
+
+753
+01:25:28,443 --> 01:25:31,003
+1 over
+
+754
+01:25:31,003 --> 01:25:35,703
+derivation of U with respect to X will be 1.
+
+755
+01:25:35,783 --> 01:25:38,523
+Derivation of V with respect to X is Y.
+
+756
+01:25:38,523 --> 01:25:41,763
+Derivation of U with respect to Y is minus 1.
+
+757
+01:25:42,304 --> 01:25:45,083
+Derivation of V with respect to Y is X.
+
+758
+01:25:46,503 --> 01:25:52,403
+It is 1 over X plus Y.
+
+759
+01:25:53,903 --> 01:25:54,183
+Okay.
+
+760
+01:25:54,884 --> 01:26:00,143
+Now what about the region R or region G?
+
+761
+01:26:01,344 --> 01:26:02,943
+This is U.
+
+762
+01:26:03,823 --> 01:26:07,703
+U, V, V.
+
+763
+01:26:08,523 --> 01:26:20,443
+So all the new region will be U is 1, U is 3, V is 1, V is 4.
+
+764
+01:26:20,583 --> 01:26:22,043
+It is a rectangle region.
+
+765
+01:26:23,483 --> 01:26:24,403
+This is U.
+
+766
+01:26:24,723 --> 01:26:25,503
+This is V.
+
+767
+01:26:26,263 --> 01:26:28,423
+U is 1, U is 3.
+
+768
+01:26:28,423 --> 01:26:32,844
+V is 1, V is 4.
+
+769
+01:26:35,384 --> 01:26:37,003
+This is R region.
+
+770
+01:26:40,003 --> 01:26:42,923
+Okay.
+
+771
+01:26:43,063 --> 01:26:44,663
+So let's write our integral.
+
+772
+01:26:46,523 --> 01:26:49,703
+First I didn't write, I won't write Jacobian.
+
+773
+01:26:50,243 --> 01:26:51,403
+I will show here.
+
+774
+01:26:51,863 --> 01:26:54,143
+In the function you have X minus Y.
+
+775
+01:26:54,223 --> 01:26:55,863
+What is X square minus Y square?
+
+776
+01:26:56,003 --> 01:26:58,943
+It is X minus Y, X plus Y.
+
+777
+01:27:00,823 --> 01:27:03,543
+After that I have to product with the Jacobian.
+
+778
+01:27:03,543 --> 01:27:05,443
+It is 1 over X plus Y.
+
+779
+01:27:06,963 --> 01:27:07,223
+Okay.
+
+780
+01:27:07,863 --> 01:27:11,663
+So I can cancel these two terms.
+
+781
+01:27:12,123 --> 01:27:15,663
+Only I have to change 1 over X minus Y.
+
+782
+01:27:15,884 --> 01:27:17,003
+X minus Y.
+
+783
+01:27:17,103 --> 01:27:17,804
+What is this?
+
+784
+01:27:17,923 --> 01:27:19,683
+It is U.
+
+785
+01:27:21,043 --> 01:27:21,563
+Product.
+
+786
+01:27:23,143 --> 01:27:25,543
+You can write DU, DV or DV, DU.
+
+787
+01:27:26,023 --> 01:27:26,304
+Okay.
+
+788
+01:27:26,304 --> 01:27:30,884
+If you write DU, DV, V is changing from 1 to 4.
+
+789
+01:27:31,823 --> 01:27:34,063
+U is changing from 1 to 3.
+
+790
+01:27:34,683 --> 01:27:34,923
+Or.
+
+791
+01:27:38,103 --> 01:27:40,344
+U product DV, DU.
+
+792
+01:27:41,623 --> 01:27:44,723
+In that case, Y is changing from 1 to 3.
+
+793
+01:27:45,243 --> 01:27:47,783
+V is changing from 1 to 4.
+
+794
+01:27:48,583 --> 01:27:48,884
+Okay.
+
+795
+01:27:50,203 --> 01:27:55,043
+Firstly, I didn't make any changes in Jacobian.
+
+796
+01:27:55,043 --> 01:27:58,203
+because in some cases I can cancel these two terms.
+
+797
+01:27:58,344 --> 01:28:01,963
+Only I have to write what is the meaning of X minus Y.
+
+798
+01:28:02,063 --> 01:28:02,643
+It is U.
+
+799
+01:28:03,763 --> 01:28:04,103
+Okay.
+
+800
+01:28:04,223 --> 01:28:05,304
+Do you have any question here?
+
+801
+01:28:07,503 --> 01:28:10,384
+They can give the transformation or they don't give.
+
+802
+01:28:10,463 --> 01:28:14,384
+If they don't give, the region will be very easily.
+
+803
+01:28:14,543 --> 01:28:18,003
+You can determine your transformation very, very easily.
+
+804
+01:28:18,723 --> 01:28:18,983
+Okay.
+
+805
+01:28:19,723 --> 01:28:22,423
+Zaten vermiyorsa çok aşikardır.
+
+806
+01:28:22,423 --> 01:28:25,723
+Yani ne kullanacağınız böyle bağırıyordur ben buradayım diye.
+
+807
+01:28:25,723 --> 01:28:38,723
+Zaten vermiyorsa çok aşikardır.
+
+808
+01:28:29,844 --> 01:28:34,524
+Ok, let's look at this example.
+
+809
+01:28:35,583 --> 01:28:44,844
+For example, here they have to give the transformation because it is difficult to determine according to your function and bounds.
+
+810
+01:28:48,724 --> 01:28:58,003
+Let's look at this one. Evoluate this integral and they give the transformation. In this transformation they give x and y.
+
+811
+01:29:00,543 --> 01:29:11,684
+Okay. Here in your transformation they give x squared and y. If you want let's write u and v from here very easily.
+
+812
+01:29:11,684 --> 01:29:18,864
+If you add these two terms, v will be x squared plus y over 2.
+
+813
+01:29:19,963 --> 01:29:27,583
+Türev almak burada 2x'de sıkıntı olacağı için size ben burada u ve v'yi çekmeyi tercih ediyorum.
+
+814
+01:29:27,784 --> 01:29:33,144
+Çünkü x bağımlı olacağı zaman 2x'de x bölü du falan gelecek. Hiç gerek yok onlara.
+
+815
+01:29:33,144 --> 01:29:45,644
+v dediğimiz bu. If you subtract or if you write minus you will be y minus x squared over 2.
+
+816
+01:29:46,923 --> 01:29:49,384
+Okay. Now let's find Ty Giacobian.
+
+817
+01:29:57,939 --> 01:30:04,579
+1 over derivation of u with respect to x is minus x.
+
+818
+01:30:05,699 --> 01:30:08,519
+Derivation of v with respect to x is x.
+
+819
+01:30:09,199 --> 01:30:12,559
+Derivation of u with respect to y is 1 over 2.
+
+820
+01:30:12,819 --> 01:30:16,139
+Derivation of v with respect to y will be 1 over 2.
+
+821
+01:30:19,019 --> 01:30:22,259
+x b x plus 2 x c x plus 2 x c.
+
+822
+01:30:24,279 --> 01:30:25,639
+Jakabian is this.
+
+823
+01:30:25,639 --> 01:30:29,960
+Okay, now let's change our region.
+
+824
+01:30:30,099 --> 01:30:32,419
+But first let us determine our region.
+
+825
+01:30:33,259 --> 01:30:34,699
+Outside we have x.
+
+826
+01:30:35,319 --> 01:30:36,739
+x is 1.
+
+827
+01:30:38,019 --> 01:30:40,039
+x is square root 2.
+
+828
+01:30:40,859 --> 01:30:42,619
+y is x square.
+
+829
+01:30:43,839 --> 01:30:46,960
+y is 4 minus x square.
+
+830
+01:30:47,879 --> 01:30:48,139
+Okay.
+
+831
+01:30:49,219 --> 01:30:51,679
+Now let's write in the new form of g.
+
+832
+01:30:54,159 --> 01:30:54,879
+Okay.
+
+833
+01:30:55,639 --> 01:31:00,159
+So if x is 1.
+
+834
+01:31:02,099 --> 01:31:03,859
+Look at this transformation.
+
+835
+01:31:04,159 --> 01:31:05,339
+If x is 1.
+
+836
+01:31:06,019 --> 01:31:08,639
+v minus u will be 1.
+
+837
+01:31:08,739 --> 01:31:09,379
+It is a line.
+
+838
+01:31:09,379 --> 01:31:12,759
+If x is square root 2.
+
+839
+01:31:12,759 --> 01:31:17,000
+2 will be v minus u.
+
+840
+01:31:17,159 --> 01:31:18,479
+It is another line.
+
+841
+01:31:19,339 --> 01:31:21,019
+For the second one.
+
+842
+01:31:21,679 --> 01:31:23,339
+y equals x square.
+
+843
+01:31:23,479 --> 01:31:24,079
+Let's write.
+
+844
+01:31:24,939 --> 01:31:26,159
+If y.
+
+845
+01:31:26,279 --> 01:31:26,939
+What is this?
+
+846
+01:31:27,000 --> 01:31:28,079
+u plus v.
+
+847
+01:31:29,119 --> 01:31:29,679
+Equals.
+
+848
+01:31:29,759 --> 01:31:30,659
+What is x square?
+
+849
+01:31:30,659 --> 01:31:32,319
+v minus u.
+
+850
+01:31:32,319 --> 01:31:34,179
+So in that case.
+
+851
+01:31:35,179 --> 01:31:37,359
+u will be 0.
+
+852
+01:31:37,659 --> 01:31:38,819
+This is another line.
+
+853
+01:31:38,819 --> 01:31:43,479
+y is v minus u.
+
+854
+01:31:44,039 --> 01:31:44,960
+v plus u.
+
+855
+01:31:45,019 --> 01:31:45,460
+Equals.
+
+856
+01:31:45,599 --> 01:31:46,239
+4 minus.
+
+857
+01:31:46,519 --> 01:31:47,579
+What is x square?
+
+858
+01:31:47,579 --> 01:31:50,799
+It is minus v plus u.
+
+859
+01:31:52,000 --> 01:31:54,199
+So I can cancel this one.
+
+860
+01:31:54,419 --> 01:31:56,299
+v will be 2.
+
+861
+01:31:56,500 --> 01:31:58,000
+It is another line.
+
+862
+01:31:58,119 --> 01:32:00,699
+This is the new form of this function.
+
+863
+01:32:01,239 --> 01:32:01,479
+Okay.
+
+864
+01:32:02,739 --> 01:32:04,960
+Did you understand what we made here?
+
+865
+01:32:04,960 --> 01:32:08,919
+Okay.
+
+866
+01:32:09,059 --> 01:32:09,799
+What is g?
+
+867
+01:32:11,579 --> 01:32:13,159
+We have four lines.
+
+868
+01:32:13,319 --> 01:32:14,119
+The first one.
+
+869
+01:32:14,899 --> 01:32:15,099
+u.
+
+870
+01:32:15,459 --> 01:32:17,879
+v minus u is 1.
+
+871
+01:32:18,019 --> 01:32:18,819
+It is a line.
+
+872
+01:32:18,939 --> 01:32:19,479
+This is u.
+
+873
+01:32:19,579 --> 01:32:20,099
+This is v.
+
+874
+01:32:21,619 --> 01:32:22,079
+If.
+
+875
+01:32:22,539 --> 01:32:24,099
+I am talking about here.
+
+876
+01:32:24,199 --> 01:32:25,519
+If u is 0.
+
+877
+01:32:25,639 --> 01:32:26,519
+v will be 1.
+
+878
+01:32:27,439 --> 01:32:28,919
+If v is 0.
+
+879
+01:32:29,139 --> 01:32:30,559
+u will be minus 1.
+
+880
+01:32:31,479 --> 01:32:32,819
+This is this line.
+
+881
+01:32:36,532 --> 01:32:46,612
+Now let's look at this one. If u is zero, we will be two. Şurası olsun.
+
+882
+01:32:58,579 --> 01:33:05,699
+çizdiğim şu olsun. Çizemedim ama biraz şekil çizmem çok dedi. Burası 1, burası 1.
+
+883
+01:33:05,699 --> 01:33:08,619
+If you is 0, we will be 2.
+
+884
+01:33:09,619 --> 01:33:14,659
+If we is 0, pardon, yok yok yanlış oldu.
+
+885
+01:33:32,115 --> 01:33:33,195
+Şuradan başlamaz.
+
+886
+01:33:33,876 --> 01:33:42,055
+If you is 0, we will be 2.
+
+887
+01:33:42,176 --> 01:33:45,195
+If we is 0, you will be minus 2.
+
+888
+01:33:53,971 --> 01:34:13,032
+And let's look at this one. If u is 0, v will be 1. If v is 0, u will be minus 1. The slopes are the same. Okay, this is minus 1. Okay, what about the other one? What is u is 0 means that v-axis.
+
+889
+01:34:13,032 --> 01:34:22,251
+Here. And v equals to. V equals to is this.
+
+890
+01:34:27,636 --> 01:34:30,656
+Okay. Which part?
+
+891
+01:34:33,736 --> 01:34:37,115
+İsterseniz şurada da göstereyim. Benim biraz şekil çizmem çok.
+
+892
+01:34:37,756 --> 01:34:40,816
+Tabletle şeyi çizmek çok zor oluyor.
+
+893
+01:34:41,496 --> 01:34:42,656
+Şöyle de bakarsanız.
+
+894
+01:34:43,416 --> 01:34:45,476
+Normally this is the original form.
+
+895
+01:34:47,176 --> 01:34:49,256
+Original, this is the new form.
+
+896
+01:34:49,476 --> 01:34:50,636
+It is a rectangle.
+
+897
+01:34:50,636 --> 01:34:52,056
+You can see that.
+
+898
+01:34:56,435 --> 01:35:03,435
+Ok, so let's write our bounce. What is our function? Is this? Let me take...
+
+899
+01:35:10,260 --> 01:35:14,400
+This integral, now we will write the new form of this integral.
+
+900
+01:35:18,131 --> 01:35:27,611
+What about inside? It is x over x squared plus y. What do we find for the Jacobian? The Jacobian is 1 over x.
+
+901
+01:35:28,371 --> 01:35:37,471
+So, x over x squared plus y, Jacobian will be x. Sorry, 1 over x.
+
+902
+01:35:42,931 --> 01:35:44,992
+So, I can cancel.
+
+903
+01:35:46,211 --> 01:35:50,171
+Now, what we will write instead of this one using Q and V?
+
+904
+01:35:50,291 --> 01:35:52,091
+What is x squared plus y?
+
+905
+01:35:53,751 --> 01:35:58,612
+What is x squared plus y is?
+
+906
+01:35:59,032 --> 01:35:59,671
+What is this?
+
+907
+01:35:59,751 --> 01:36:01,511
+It is 2V.
+
+908
+01:36:02,492 --> 01:36:04,911
+So, inside will be 2V.
+
+909
+01:36:05,671 --> 01:36:07,452
+Now, look at your region.
+
+910
+01:36:08,492 --> 01:36:09,532
+What is this?
+
+911
+01:36:09,532 --> 01:36:11,492
+Let's find this intersection point.
+
+912
+01:36:11,492 --> 01:36:15,492
+If V is 2V.
+
+913
+01:36:19,764 --> 01:36:20,764
+1.
+
+914
+01:36:20,764 --> 01:36:26,324
+If you write here if v is 2, v will be 1.
+
+915
+01:36:26,324 --> 01:36:27,324
+OK.
+
+916
+01:36:27,324 --> 01:36:31,543
+Now we have a region, we have a triangle region.
+
+917
+01:36:31,543 --> 01:36:34,444
+It is smooth with respect to x and with respect to y.
+
+918
+01:36:34,444 --> 01:36:36,444
+You can use which you want.
+
+919
+01:36:36,444 --> 01:36:39,524
+Firstly, let's write with respect to u.
+
+920
+01:36:39,524 --> 01:36:44,564
+u is changing from 0 to 1.
+
+921
+01:36:44,564 --> 01:36:50,463
+And when you sketch these lines, your starting function is this.
+
+922
+01:36:50,463 --> 01:36:51,463
+What is this?
+
+923
+01:36:51,463 --> 01:36:59,184
+It is v is u plus 1.
+
+924
+01:36:59,184 --> 01:37:05,324
+So it will be u plus 1, 2 line.
+
+925
+01:37:05,324 --> 01:37:08,324
+What is v is here is 2.
+
+926
+01:37:08,324 --> 01:37:10,804
+d v d.
+
+927
+01:37:10,804 --> 01:37:14,743
+Or let's write with respect to v.
+
+928
+01:37:14,743 --> 01:37:19,284
+In that case, inside we will have 2 v.
+
+929
+01:37:19,284 --> 01:37:21,923
+But we will write d u d v.
+
+930
+01:37:21,923 --> 01:37:30,444
+Now let's sketch a line like this.
+
+931
+01:37:30,444 --> 01:37:35,484
+Now v is changing from 1 to 2.
+
+932
+01:37:35,484 --> 01:37:38,043
+And your starting function is v axis.
+
+933
+01:37:38,043 --> 01:37:40,484
+It means that u is 0.
+
+934
+01:37:40,484 --> 01:37:41,984
+Your end function is this.
+
+935
+01:37:41,984 --> 01:37:44,364
+But what is u here?
+
+936
+01:37:44,364 --> 01:37:49,083
+u is v minus 1.
+
+937
+01:37:49,083 --> 01:37:52,083
+OK.
+
+938
+01:37:52,083 --> 01:37:53,904
+Do you have any question here?
+
+939
+01:37:53,904 --> 01:37:56,623
+We find the Jacobian.
+
+940
+01:37:56,623 --> 01:38:25,064
+We determine the new form of the region.
+
+941
+01:38:05,076 --> 01:38:07,636
+Evet, evet, evet.
+
+942
+01:38:17,395 --> 01:38:21,395
+Evet.
+
+943
+01:38:21,395 --> 01:38:23,395
+Bir sonraki bir soru var.
+
+944
+01:38:23,395 --> 01:39:15,395
+Bir sonraki soru var.
+
+945
+01:39:15,395 --> 01:39:17,395
+Bounce of the integrals.
+
+946
+01:39:17,395 --> 01:39:19,395
+It will be enough.
+
+947
+01:39:19,395 --> 01:39:20,395
+Okey?
+
+948
+01:39:20,395 --> 01:39:21,395
+Şimdi arkadaşlar.
+
+949
+01:39:21,395 --> 01:39:23,395
+Konularımız bitti.
+
+950
+01:39:23,395 --> 01:39:25,395
+Sınav konularımız bu kadar.
+
+951
+01:39:25,395 --> 01:39:29,395
+Haftaya, yani bu akşam ya da yarına hazırlarım inşallah.
+
+952
+01:39:29,395 --> 01:39:31,395
+Size test sample 2'yi vereceğim.
+
+953
+01:39:31,395 --> 01:39:34,395
+Onda geçen sene çıkmış olan sorular var.
+
+954
+01:39:34,395 --> 01:39:36,395
+Zaten sınavda da görmüşsünüz.
+
+955
+01:39:36,395 --> 01:39:38,395
+Aslında çok benzer şeyler çıkıyor birbirlerinin.
+
+956
+01:39:38,395 --> 01:39:44,395
+Ayrıyeten benim kendi uygulama sorularım var ama hep uygulama soruları klasik sınava göre değil.
+
+957
+01:39:44,395 --> 01:39:46,395
+Ama şeyde de uygun bunlar.
+
+958
+01:39:46,395 --> 01:39:48,395
+Sınav için de uygun.
+
+959
+01:39:48,395 --> 01:39:50,395
+Sadece sonuç kısımlarını çözmeyin.
+
+960
+01:39:50,395 --> 01:40:04,395
+Yani integral yazmak bizim asıl amacımız.
+
+961
+01:40:06,395 --> 01:40:34,395
+Tamam mı?
