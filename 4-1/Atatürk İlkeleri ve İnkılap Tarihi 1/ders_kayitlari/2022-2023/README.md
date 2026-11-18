@@ -6,3 +6,4 @@
 | :---: | :---: | :--- | :--- |
 | 1 | Güz | Şebnem Gelmedi | [sube_1/](sube_1/) |
 | 13 | Güz | Gülsema Lüyer | [sube_13/](sube_13/) |
+| 16 | Güz | Gülsema Lüyer | [sube_16/](sube_16/) |
