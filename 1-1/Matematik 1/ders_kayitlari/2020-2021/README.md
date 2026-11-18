@@ -28,6 +28,7 @@
 | 34 | Güz | Bulunamadı | [sube_34/](sube_34/) |
 | 36 | Güz | Bulunamadı | [sube_36/](sube_36/) |
 | 53 | Güz | Elif Demir | [sube_53/](sube_53/) |
+| 54 | Güz | Muttalip Özavşar | [sube_54/](sube_54/) |
 | 55 | Güz | Sebahat Ebru Daş | [sube_55/](sube_55/) |
 | 57 | Güz | Sebahat Ebru Daş | [sube_57/](sube_57/) |
 | 58 | Güz | Muttalip Özavşar | [sube_58/](sube_58/) |

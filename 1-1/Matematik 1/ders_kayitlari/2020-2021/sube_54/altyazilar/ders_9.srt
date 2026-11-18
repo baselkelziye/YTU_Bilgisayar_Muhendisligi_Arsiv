@@ -1,0 +1,3551 @@
+1
+00:00:01,395 --> 00:00:02,956
+Evet, merhaba arkadaşlar.
+
+2
+00:00:10,548 --> 00:00:11,048
+Haydo!
+
+3
+00:00:21,780 --> 00:00:34,579
+Evet, merhaba arkadaşlar. Kusura bakmayın. Gecikme için elektrik şartel attı. O yüzden aşağıya bodrum kattan gidip şarteli değiştirmek, düzeltmek gerekiyordu. O yüzden geciktim. Kusura bakmayın.
+
+4
+00:00:36,340 --> 00:00:36,600
+Evet.
+
+5
+00:00:42,932 --> 00:00:59,152
+Merhaba herkese. Sesim geliyor galiba. Hemen paylaşımımızı yapalım. Bugün biraz soru çözelim. Dünkü konumuz biraz hızlı oldu. Birkaç dakikanızı rica ediyorum. Uygulamalarımızı açalım.
+
+6
+00:01:11,987 --> 00:01:22,028
+uygulama 2'de Pınar Hoca'nın daha önceki geçmiş yıllardan derlediği çıkmış sorular olsun, başka sorular olsun. Onlara bakalım.
+
+7
+00:01:42,355 --> 00:01:44,555
+Evet, şimdi gelecek arkadaşlar. Bekliyorum.
+
+8
+00:01:44,915 --> 00:01:45,935
+Dosya açılsın.
+
+9
+00:01:46,275 --> 00:01:46,455
+Evet.
+
+10
+00:01:51,156 --> 00:01:51,836
+açıldı.
+
+11
+00:01:57,299 --> 00:01:59,019
+paylaşımımızı yapalım.
+
+12
+00:02:02,548 --> 00:02:04,427
+Evet, şu an görebiliyorsunuz değil mi gençler?
+
+13
+00:02:06,528 --> 00:02:07,427
+Görüyoruz hocam.
+
+14
+00:02:08,207 --> 00:02:11,048
+Evet, bunları çözmüştük.
+
+15
+00:02:12,048 --> 00:02:14,048
+Bunların büyük bir çoğunluğu, uygulama 2.
+
+16
+00:02:20,211 --> 00:02:21,572
+Microsoft Edge biraz
+
+17
+00:02:21,572 --> 00:02:27,371
+tanım kümeleri gelebilir dedik arkadaşlar.
+
+18
+00:02:29,811 --> 00:02:35,851
+Evet. Kapalı fonksiyonların türevleri. Bunlarla alakalı sorular çözebiliriz. Bakın bunlar güzel sorular.
+
+19
+00:02:36,391 --> 00:02:37,551
+Evet. Şuradan başlayalım.
+
+20
+00:02:39,051 --> 00:02:41,551
+Bakalım yukarıda daha farklı sorular var mı?
+
+21
+00:02:43,471 --> 00:02:47,371
+Evet. Varmış. Yukarıdan biraz daha yukarı çıkalım.
+
+22
+00:02:47,632 --> 00:02:48,931
+Çok aşağıya inleyelim. Evet.
+
+23
+00:02:50,211 --> 00:02:52,091
+Bu da yapalım. Evet.
+
+24
+00:02:52,671 --> 00:02:54,151
+Biraz daha yukarı çıkalım.
+
+25
+00:02:54,151 --> 00:02:54,371
+Evet.
+
+26
+00:03:01,843 --> 00:03:07,783
+Buradan başlayabiliriz gençler. Bu soruyu ele alalım. Okay, let's try to solve this problem.
+
+27
+00:03:09,403 --> 00:03:20,304
+So, given some curve by implicit form, cos of 3x plus y plus sin of x plus 3y is equal to minus 1.
+
+28
+00:03:21,563 --> 00:03:31,103
+Your goal is to obtain the equation of tangent and normal lines at the point 0 pi over 2.
+
+29
+00:03:31,103 --> 00:03:35,163
+Did we solve this before? Bunu daha önce çözmüş müdük gençler?
+
+30
+00:03:38,304 --> 00:03:39,324
+Hayır hocam.
+
+31
+00:03:39,644 --> 00:03:41,304
+Bunu çözmedik mi? Tamam, bunu çözün.
+
+32
+00:03:42,243 --> 00:03:42,563
+Okay.
+
+33
+00:03:43,603 --> 00:03:48,343
+So, this is the equation of classical type exam from past year.
+
+34
+00:03:49,563 --> 00:03:53,963
+As you see, there is some statement. Do not use this formula.
+
+35
+00:03:53,963 --> 00:04:00,304
+But in the test exam, but in the test exam, of course, you may use this method.
+
+36
+00:04:00,563 --> 00:04:01,963
+It depends on your choice.
+
+37
+00:04:01,963 --> 00:04:04,103
+But in the test exam, of course, you may use this method.
+
+38
+00:04:04,103 --> 00:04:06,103
+It depends on your choice.
+
+39
+00:04:06,103 --> 00:04:08,103
+So, this is the equation of the test exam.
+
+40
+00:04:08,103 --> 00:04:09,103
+Of course, you may use this method.
+
+41
+00:04:09,103 --> 00:04:10,103
+It depends on your choice.
+
+42
+00:04:10,103 --> 00:04:12,103
+So, this is the equation of the test exam.
+
+43
+00:04:12,103 --> 00:04:14,103
+It depends on your choice.
+
+44
+00:04:14,103 --> 00:04:17,103
+So, this is the equation of the test exam.
+
+45
+00:04:08,692 --> 00:04:14,092
+But this formula is not topic of this term. That is the topic of next term.
+
+46
+00:04:17,292 --> 00:04:22,091
+That's why we do not teach this formula in this term.
+
+47
+00:04:40,788 --> 00:04:50,268
+Let's try to find out equational tangent line and normal lines at the point A for this.
+
+48
+00:04:55,732 --> 00:04:56,732
+çöğür.
+
+49
+00:05:20,148 --> 00:05:24,548
+Ok, have you found the answer?
+
+50
+00:05:53,971 --> 00:05:55,971
+Ok, let's solve together.
+
+51
+00:05:57,471 --> 00:05:59,971
+Now, so we know that
+
+52
+00:06:01,471 --> 00:06:05,971
+the value of derivation function at the point
+
+53
+00:06:08,471 --> 00:06:10,971
+Sorry, I need to close this
+
+54
+00:06:12,471 --> 00:06:13,471
+Page, ok.
+
+55
+00:06:13,471 --> 00:06:16,471
+The value of derivation function at the point A
+
+56
+00:06:16,971 --> 00:06:19,971
+is the slope of tangent line.
+
+57
+00:06:19,971 --> 00:06:24,971
+Now, let's compute derivation of y with respect to x.
+
+58
+00:06:24,971 --> 00:06:29,971
+So, by using this implicit form, derivation of cos u
+
+59
+00:06:29,971 --> 00:06:34,971
+minus sin u, u is 3x plus y
+
+60
+00:06:34,971 --> 00:06:40,971
+times derivation of u, 3 plus y prime
+
+61
+00:06:42,971 --> 00:06:46,971
+plus derivation of sin u
+
+62
+00:06:46,971 --> 00:06:49,971
+where u is x plus 3y
+
+63
+00:06:49,971 --> 00:06:51,971
+derivation of sin u, cos u
+
+64
+00:06:51,971 --> 00:06:54,971
+x plus 3y
+
+65
+00:06:54,971 --> 00:06:59,971
+times derivation of u, derivation of x plus 3y
+
+66
+00:06:59,971 --> 00:07:03,971
+1 plus 3y
+
+67
+00:07:03,971 --> 00:07:06,971
+Is that true? 3y prime, sorry.
+
+68
+00:07:06,971 --> 00:07:07,971
+Sorry.
+
+69
+00:07:07,971 --> 00:07:11,971
+Now, let's derivate right hand side of this
+
+70
+00:07:11,971 --> 00:07:12,971
+equality.
+
+71
+00:07:12,971 --> 00:07:15,971
+Derivation of constant term 0.
+
+72
+00:07:15,971 --> 00:07:18,971
+Now we are ready to substitute
+
+73
+00:07:21,971 --> 00:07:23,971
+coordinates of a point.
+
+74
+00:07:23,971 --> 00:07:27,971
+x is 0, y is pi over 2.
+
+75
+00:07:27,971 --> 00:07:39,971
+When you substitute a point into derivation function, you are going to obtain the slope of tangent line.
+
+76
+00:07:39,971 --> 00:07:43,971
+Okay, x is 0 here, y is pi over 2. This is minus 1.
+
+77
+00:07:43,971 --> 00:07:45,971
+So here minus 1 here.
+
+78
+00:07:45,971 --> 00:08:07,971
+Now here, so there is this n, okay, minus 1, 3 plus n plus, so this is 0. Can you see that? So this is x is 0 and 3 pi over 2. This is 0. Okay, so equal to 0. This implies that n sub index t is equal to 0.
+
+79
+00:08:07,971 --> 00:08:20,971
+This implies that n sub index t is minus 3. So this is the slope of tangent line.
+
+80
+00:08:20,971 --> 00:08:26,971
+The slope of tangent line.
+
+81
+00:08:26,971 --> 00:08:35,971
+So we know the definition of, we know the equation of tangent line.
+
+82
+00:08:35,971 --> 00:09:00,971
+y minus y0 is equal to slope times x minus x0. So this is x0. This is y0. Okay, by substituting this coordination into this equation and by using this slope, we can obtain tangent lines equation. Similarly, we can obtain normal line equation.
+
+83
+00:09:06,100 --> 00:09:20,500
+So, where we know that mt times m sub n results in minus 1. We know that normal line is perpendicular to tangent line.
+
+84
+00:09:20,500 --> 00:09:30,259
+By using this fact, so we can obtain the slope of normal line as 1 over 3. Okay, 1 over 3. This is 1 over 3.
+
+85
+00:09:31,540 --> 00:09:34,100
+So, this is minus 3. Is there any mistake?
+
+86
+00:09:38,932 --> 00:09:47,932
+Ok, you are going to obtain these answers. An equation about this solution. If you don't have an equation, let's see next equation.
+
+87
+00:09:53,107 --> 00:09:59,987
+Okay, so we proved this before. So this is a simple one. We know how to obtain derivation of cos x.
+
+88
+00:10:06,227 --> 00:10:32,548
+Okay, let's try to solve this problem. Now, given some implicit form, then compute second-order derivation in terms of x and y. Given some implicit form, then compute the second-order derivation in terms of x and y.
+
+89
+00:10:32,548 --> 00:10:45,827
+You may see such question in the test exam. But the first step, the first stage is to compute first-order derivation of y with respect to x.
+
+90
+00:10:45,827 --> 00:10:55,907
+After completing first-order derivation of y with respect to x, then you can compute second-order derivation. Okay.
+
+91
+00:10:58,067 --> 00:10:59,827
+Let's try to solve this problem.
+
+92
+00:11:10,964 --> 00:11:32,804
+Evet, önünüzde kağıt kalem bulunsun gençler. Soruları çözmeye çalışın. Süre veriyorum ben size. Bunları tak tak en fazla 2 dakikada, 3 dakikada yapıyor olmanız lazım. Veyahut da ilk 1 dakikada sizi sonuca götürecek olan süreci inşa edebiliyor olmanız lazım.
+
+93
+00:11:32,804 --> 00:11:42,204
+Yani o ilk 1 dakika çok önemli. İlk 1 dakikada yürümek için girdiğiniz patika çok önemli.
+
+94
+00:11:48,083 --> 00:11:48,543
+Evet.
+
+95
+00:12:26,580 --> 00:12:29,259
+is there anybody who could find the answer?
+
+96
+00:12:43,283 --> 00:12:44,403
+let me do some
+
+97
+00:12:49,779 --> 00:12:52,399
+[öğrenci].
+
+98
+00:12:57,364 --> 00:12:58,824
+[öğrenci].
+
+99
+00:12:59,944 --> 00:13:01,124
+Not here.
+
+100
+00:13:02,204 --> 00:13:05,084
+[öğrenci]. Burada mısın [öğrenci]?
+
+101
+00:13:05,464 --> 00:13:06,163
+I am here.
+
+102
+00:13:06,984 --> 00:13:08,644
+[öğrenci]. Burada mısın?
+
+103
+00:13:09,783 --> 00:13:10,464
+Here.
+
+104
+00:13:12,444 --> 00:13:15,244
+[öğrenci]. Burada mı [öğrenci]?
+
+105
+00:13:21,779 --> 00:13:23,879
+[öğrenci] buradaymış, tamam.
+
+106
+00:13:25,079 --> 00:13:27,339
+[öğrenci], burada mı [öğrenci]?
+
+107
+00:13:30,179 --> 00:13:31,379
+[öğrenci].
+
+108
+00:13:33,659 --> 00:13:35,059
+[öğrenci] not here.
+
+109
+00:13:36,000 --> 00:13:38,120
+[öğrenci], burada mı [öğrenci]?
+
+110
+00:13:38,860 --> 00:13:39,600
+Buradayım hocam.
+
+111
+00:13:40,419 --> 00:13:40,699
+Tamam.
+
+112
+00:13:41,500 --> 00:13:43,959
+Chat'i de yazabilirsiniz buradayım diye arkadaşlar.
+
+113
+00:13:44,899 --> 00:13:45,899
+Öyle daha rahat oluyor.
+
+114
+00:13:46,600 --> 00:13:48,439
+Şimdi yazdım, ikisini birlikte açtım.
+
+115
+00:13:48,559 --> 00:13:50,199
+Chat kısmıyla şey, participants.
+
+116
+00:13:50,579 --> 00:13:50,699
+Evet.
+
+117
+00:13:50,699 --> 00:13:52,939
+[öğrenci], burada mı?
+
+118
+00:13:55,100 --> 00:13:56,199
+Buradayım hocam.
+
+119
+00:13:56,959 --> 00:13:58,120
+Cevap bile vermiş.
+
+120
+00:13:59,419 --> 00:14:02,279
+[öğrenci], burada mı [öğrenci]?
+
+121
+00:14:02,279 --> 00:14:02,319
+[öğrenci].
+
+122
+00:14:05,779 --> 00:14:08,679
+[öğrenci] burada mısın? Soruyu mu çözmeye çalışıyorsun yoksa?
+
+123
+00:14:11,179 --> 00:14:11,639
+Buradayım.
+
+124
+00:14:12,059 --> 00:14:14,379
+Burada, tamam. Çözebildin mi [öğrenci] soruyu?
+
+125
+00:14:15,179 --> 00:14:16,500
+Hayır, deniyorum.
+
+126
+00:14:17,159 --> 00:14:20,000
+Güzel. [öğrenci] burada mı?
+
+127
+00:14:23,199 --> 00:14:24,480
+[öğrenci].
+
+128
+00:14:24,579 --> 00:14:24,919
+Buradayım.
+
+129
+00:14:25,600 --> 00:14:25,879
+Tamam.
+
+130
+00:14:26,839 --> 00:14:31,179
+[öğrenci], are you here? [öğrenci]. Are you trying to solve problem?
+
+131
+00:14:32,699 --> 00:14:33,699
+Okay, good.
+
+132
+00:14:33,699 --> 00:14:35,299
+[öğrenci].
+
+133
+00:14:35,299 --> 00:14:36,480
+[öğrenci].
+
+134
+00:14:36,480 --> 00:14:38,079
+[öğrenci].
+
+135
+00:14:38,480 --> 00:14:39,500
+Buradayım hocam.
+
+136
+00:14:40,179 --> 00:14:40,659
+Buradayım.
+
+137
+00:14:41,659 --> 00:14:43,860
+[öğrenci].
+
+138
+00:14:44,139 --> 00:14:45,240
+Are you here? [öğrenci].
+
+139
+00:14:47,059 --> 00:14:47,779
+Buradayım hocam.
+
+140
+00:14:48,620 --> 00:14:49,379
+[öğrenci].
+
+141
+00:14:50,039 --> 00:14:50,839
+Are you here? [öğrenci].
+
+142
+00:14:51,199 --> 00:14:51,879
+Buradayım hocam.
+
+143
+00:14:53,379 --> 00:14:54,659
+[öğrenci].
+
+144
+00:14:55,600 --> 00:14:56,419
+Buradayım hocam.
+
+145
+00:14:56,919 --> 00:14:58,480
+Güzel. [öğrenci].
+
+146
+00:14:58,480 --> 00:15:00,480
+[öğrenci].
+
+147
+00:15:02,644 --> 00:15:31,244
+[öğrenci]. [öğrenci], not here. [öğrenci]. Are you here, [öğrenci]? Buradayım. [öğrenci]. Are you here, [öğrenci]? Buradayım hocam. [öğrenci]. Buradayım. [öğrenci]. Buradayım hocam. [öğrenci]. Buradayım.
+
+148
+00:15:34,932 --> 00:15:37,772
+[öğrenci], burada mı [öğrenci]?
+
+149
+00:15:41,012 --> 00:15:41,432
+Burada.
+
+150
+00:15:41,632 --> 00:15:43,012
+[öğrenci], burada.
+
+151
+00:15:43,231 --> 00:15:45,471
+[öğrenci].
+
+152
+00:15:45,872 --> 00:15:46,731
+Bu ismi okunmuyor.
+
+153
+00:15:47,512 --> 00:15:48,451
+Buradan hocam.
+
+154
+00:15:48,812 --> 00:15:50,851
+Tamam. Güzel. Çözdün herkes.
+
+155
+00:15:52,912 --> 00:15:53,192
+Evet.
+
+156
+00:15:53,591 --> 00:15:59,192
+Şimdi burada birinci mertebeden türevi bulmak için o sizin bildiğiniz,
+
+157
+00:15:59,192 --> 00:16:03,292
+ama bizim öğretmediğimiz, şimdilik öğretmediğimiz formülü kullanabilirsiniz.
+
+158
+00:16:03,292 --> 00:16:07,792
+Fakat ikinci mertebeden türevi gelince iş biraz sarfa sarabilir.
+
+159
+00:16:08,572 --> 00:16:11,012
+O bildiğiniz formülü kullanırken.
+
+160
+00:16:11,111 --> 00:16:14,272
+O yüzden size öğrettiğimiz genel yöntemi kullanmanız mantıklı.
+
+161
+00:16:14,892 --> 00:16:17,091
+Şimdi nasıl bulacağız bunu?
+
+162
+00:16:17,611 --> 00:16:19,451
+İki yol var bunun. Hatta üç yol var.
+
+163
+00:16:19,532 --> 00:16:21,331
+Ben bilinen iki yoldan bahsedeyim.
+
+164
+00:16:22,572 --> 00:16:24,312
+Şimdi bir köne buradaki yola bir bakalım.
+
+165
+00:16:24,491 --> 00:16:26,672
+Ondan sonra ben beyaz tahtada ötekini de göstereceğim.
+
+166
+00:16:26,872 --> 00:16:30,711
+Şimdi y küp eksi x'i peşi x'i yi birinci mertebeden türevi bulmak için
+
+167
+00:16:30,711 --> 00:16:33,611
+ilk önce eşitliğinin her iki tarafın x'e göre türevini alırız.
+
+168
+00:16:34,091 --> 00:16:36,812
+x'e göre türevini alınca biz bunu yakalarız.
+
+169
+00:16:37,312 --> 00:16:40,211
+Burada y üstünü yalnız bırakmakla uğraşılmış.
+
+170
+00:16:40,451 --> 00:16:41,392
+Ama buna gerek yok.
+
+171
+00:16:41,752 --> 00:16:45,292
+Bir daha şu denklemi bir daha x'e göre türev ettiğinizde
+
+172
+00:16:45,292 --> 00:16:47,532
+doğal olarak ikinci mertebeden türev gelecek.
+
+173
+00:16:48,192 --> 00:16:50,872
+Ama ilk önce burada ne yapmış Pınar hocamız?
+
+174
+00:16:51,052 --> 00:16:52,451
+Y üstünü bulmuş.
+
+175
+00:16:52,591 --> 00:16:53,692
+Yalnız bırakalım demiş.
+
+176
+00:16:53,692 --> 00:16:56,792
+Ondan sonra burada bölümün kuralını uygulamış.
+
+177
+00:16:57,331 --> 00:17:00,872
+Bölümün kuralını uygulayarak eşitliğinin her iki tarafın x'e göre türevini alıyor.
+
+178
+00:17:00,971 --> 00:17:03,831
+Burasının türevi ikinci mertebeden türevdir.
+
+179
+00:17:04,231 --> 00:17:07,872
+Buranın türevini alırken x'e göre y'nin x'e bağlı olduğunu düşünerek
+
+180
+00:17:07,872 --> 00:17:11,932
+ve bölümün kuralını türev için bölüm kuralını göz önünde bulundurarak
+
+181
+00:17:11,932 --> 00:17:13,592
+biz sonuca uğraşabiliriz.
+
+182
+00:17:13,832 --> 00:17:14,432
+Ulaşabiliriz.
+
+183
+00:17:14,531 --> 00:17:15,672
+Burada anlaşımdan bir yer var mı?
+
+184
+00:17:15,791 --> 00:17:16,991
+Mantığı anladınız galiba.
+
+185
+00:17:17,471 --> 00:17:19,332
+İşlemini siz zaten yapmanız gerekir.
+
+186
+00:17:19,892 --> 00:17:20,771
+Buradaki mantık bu.
+
+187
+00:17:21,152 --> 00:17:22,332
+Şimdi diğer mantık nedir?
+
+188
+00:17:22,332 --> 00:17:23,932
+Diğer mantık şurada.
+
+189
+00:17:24,892 --> 00:17:26,031
+Şurayı sileyim bir.
+
+190
+00:17:29,092 --> 00:17:30,392
+Parti bir kalem kullanayım.
+
+191
+00:17:30,552 --> 00:17:34,072
+Okay, so let me explain this method in English.
+
+192
+00:17:36,031 --> 00:17:41,372
+Okay, so in this method, first of all, we derivate both sides of this equality with respect to x.
+
+193
+00:17:41,471 --> 00:17:43,412
+So we got this equation.
+
+194
+00:17:43,751 --> 00:17:45,612
+So this is also some implicit form.
+
+195
+00:17:46,152 --> 00:17:51,052
+So now second step is to write y' prime in terms of x and y.
+
+196
+00:17:51,052 --> 00:17:54,491
+So after obtaining this y' prime in terms of x and y.
+
+197
+00:17:54,711 --> 00:17:57,392
+So we again derivate both sides of this equality.
+
+198
+00:17:57,771 --> 00:18:00,912
+So derivation of right and left hand side with respect to x.
+
+199
+00:18:01,152 --> 00:18:02,332
+Second order derivation.
+
+200
+00:18:02,672 --> 00:18:05,692
+Now derivate this term with respect to x.
+
+201
+00:18:05,692 --> 00:18:10,052
+Taking into account the fact that y depends on x.
+
+202
+00:18:10,291 --> 00:18:12,892
+And by using the quotient rule for derivation.
+
+203
+00:18:12,971 --> 00:18:17,031
+Derivation of first term times second term here.
+
+204
+00:18:17,352 --> 00:18:21,991
+Minus the first term times second term denominator here.
+
+205
+00:18:21,991 --> 00:18:23,872
+Okay, so derivation of sorry.
+
+206
+00:18:23,872 --> 00:18:25,552
+Derivation of denominator.
+
+207
+00:18:25,552 --> 00:18:28,511
+And over the square of denominator.
+
+208
+00:18:28,511 --> 00:18:29,132
+Okay.
+
+209
+00:18:29,132 --> 00:18:30,832
+Now this is the first method.
+
+210
+00:18:30,971 --> 00:18:31,652
+Second method.
+
+211
+00:18:32,731 --> 00:18:34,471
+Now you don't need to express.
+
+212
+00:18:34,592 --> 00:18:37,912
+You don't need to express this y' prime in terms of x and y.
+
+213
+00:18:37,912 --> 00:18:40,291
+So we directly derivate this equality.
+
+214
+00:18:41,092 --> 00:18:44,731
+This star, triple star with respect to x.
+
+215
+00:18:45,031 --> 00:18:48,052
+So now let's derivate this.
+
+216
+00:18:48,152 --> 00:18:51,192
+Derivation of this with respect to y.
+
+217
+00:18:51,632 --> 00:18:53,412
+Sorry, with respect to x.
+
+218
+00:18:53,652 --> 00:18:58,412
+2y times y' prime times y' prime by using product rule.
+
+219
+00:18:58,412 --> 00:19:05,052
+Plus, okay, now y squared times derivation of this with respect to x.
+
+220
+00:19:05,052 --> 00:19:07,872
+Okay, y double prime.
+
+221
+00:19:08,532 --> 00:19:08,672
+Okay.
+
+222
+00:19:09,552 --> 00:19:14,552
+Now, minus derivation of this term.
+
+223
+00:19:16,751 --> 00:19:20,812
+Minus derivation of this with respect to x.
+
+224
+00:19:20,912 --> 00:19:24,612
+Y' prime minus derivation of this with respect to x.
+
+225
+00:19:25,032 --> 00:19:25,692
+Minus.
+
+226
+00:19:25,692 --> 00:19:28,552
+So let me put here minus.
+
+227
+00:19:28,711 --> 00:19:30,872
+This minus is coefficient of this parenthesis.
+
+228
+00:19:31,352 --> 00:19:32,352
+Derivation of x.
+
+229
+00:19:32,692 --> 00:19:43,251
+1 times y prime plus x times derivation of first order derivation results in second order derivation.
+
+230
+00:19:43,951 --> 00:19:47,791
+Okay, now is equal to 0, derivation of 0 which is back to x0.
+
+231
+00:19:47,791 --> 00:19:57,832
+Now, so next goal, next step is to express y double prime in terms of x, y, y prime.
+
+232
+00:19:58,491 --> 00:20:00,832
+Finally, you need to use this y prime.
+
+233
+00:20:00,832 --> 00:20:02,612
+Okay, so I see.
+
+234
+00:20:03,251 --> 00:20:07,711
+So by substituting this into this, you can obtain the same answer.
+
+235
+00:20:07,711 --> 00:20:16,932
+But in the test exam generally, you don't need to obtain this y double prime in this form.
+
+236
+00:20:17,152 --> 00:20:19,352
+So you are given some point.
+
+237
+00:20:19,471 --> 00:20:26,892
+For example, x1, x1, x yerine 1 yazar arkadaşlar.
+
+238
+00:20:27,112 --> 00:20:28,852
+Y yerine uygun bir değer yazmam lazım.
+
+239
+00:20:28,852 --> 00:20:31,072
+Şimdi orada kafama göre değer veremiyorum.
+
+240
+00:20:31,632 --> 00:20:32,271
+Tamam mı arkadaşlar?
+
+241
+00:20:32,432 --> 00:20:33,432
+Eşitlik sağlanmayacak.
+
+242
+00:20:33,811 --> 00:20:35,311
+Oraya uygun bir değer verin.
+
+243
+00:20:35,372 --> 00:20:36,751
+Ondan sonra o değerleri bulun der.
+
+244
+00:20:36,832 --> 00:20:38,932
+Siz burada zaten onları hemen şak şak bulursunuz.
+
+245
+00:20:39,251 --> 00:20:43,412
+Bunu hiç elde etmeye ihtiyacı duymadan direkt ikinci mertebeden türevi bulursunuz.
+
+246
+00:20:43,572 --> 00:20:46,852
+Yani tekrar tekrar x ve y'lerle uğraşmak zorunda kalmazsınız.
+
+247
+00:20:47,031 --> 00:20:47,352
+Tamam mı?
+
+248
+00:20:48,951 --> 00:20:50,011
+Evet, var mı soru sorular?
+
+249
+00:20:50,112 --> 00:20:50,811
+İzerenip o için.
+
+250
+00:20:50,811 --> 00:20:57,491
+Hocam ikinci çözüm yöntemi tekrar anlatabilir misiniz lütfen?
+
+251
+00:20:58,031 --> 00:20:59,132
+Bir kişi konuşun.
+
+252
+00:21:02,112 --> 00:21:02,731
+Anlamadım.
+
+253
+00:21:02,832 --> 00:21:03,692
+Nereyi anlatayım?
+
+254
+00:21:03,832 --> 00:21:04,852
+Tekrar nereyi anlatayım?
+
+255
+00:21:04,932 --> 00:21:05,912
+Hadi baştan anlatayım.
+
+256
+00:21:07,031 --> 00:21:08,072
+Sileyim şurayı.
+
+257
+00:21:10,652 --> 00:21:11,731
+Burayı mı anlamadım?
+
+258
+00:21:11,811 --> 00:21:12,592
+Benim yazdığımım mı?
+
+259
+00:21:12,592 --> 00:21:13,971
+Evet, çok teşekkür ederim.
+
+260
+00:21:25,779 --> 00:21:30,039
+Şimdi, y üstü de x'e bağlı mıdır?
+
+261
+00:21:31,480 --> 00:21:34,160
+y üstü x'e bağlı, y de x'e bağlı.
+
+262
+00:21:35,259 --> 00:21:40,720
+Bu durumu göz önünde bulundurarak, buranın tekrar x'e göre türevini alıyorum.
+
+263
+00:21:41,899 --> 00:21:43,660
+Çarpımın kuralını uyguluyorum burada.
+
+264
+00:21:44,680 --> 00:21:48,980
+3 çarpı y karenin türevi, 2y çarpı y üstü.
+
+265
+00:21:48,980 --> 00:21:51,960
+Çünkü y kare y'ye bağlı, y x'e bağlı.
+
+266
+00:21:52,039 --> 00:21:55,359
+Birincinin türevi çarpı, ikinci y üstü.
+
+267
+00:21:55,779 --> 00:21:56,660
+tamam mı?
+
+268
+00:21:56,660 --> 00:21:56,779
+Tamam mı?
+
+269
+00:21:57,119 --> 00:22:01,460
+Birincinin türevi, 2y y üstü, ikinci terin y üstü.
+
+270
+00:22:02,359 --> 00:22:11,099
+Artı, birincinin kendisi y kare çarpı, birinci mertebeden türevi bir daha x'e göre türetirsen,
+
+271
+00:22:11,579 --> 00:22:17,359
+o çünkü d y bölü d x, d kare y bölü, d x kare gelir, o da iki tane çizgi gelir.
+
+272
+00:22:17,519 --> 00:22:18,779
+İkinci mertebeden türev demek.
+
+273
+00:22:19,240 --> 00:22:19,659
+Tamam mı?
+
+274
+00:22:20,220 --> 00:22:23,460
+Eksi, bunun x'e göre türevini alıyorum, 6x.
+
+275
+00:22:23,460 --> 00:22:27,480
+eksi, bunun türevini aldım, x'e göre y üstü.
+
+276
+00:22:28,079 --> 00:22:31,240
+Eksi, tekrardan bunun türevini alıyorum.
+
+277
+00:22:31,539 --> 00:22:40,599
+Bir çarpı y üstü artı, x çarpı, y üstünün bir daha x'e göre türevini alsam, ikinci mertebeden türevi verir bana.
+
+278
+00:22:41,139 --> 00:22:41,980
+Burada ne yapacaksın?
+
+279
+00:22:41,980 --> 00:22:49,619
+Y üstü, y üstü y üstü y üstü y üstü y üstü yalnız bırakırsan, aynı sonucu elde edeceksin.
+
+280
+00:22:49,799 --> 00:22:51,859
+Farklı bir şey yok yani, aslında aynı yöntem.
+
+281
+00:22:52,240 --> 00:22:52,680
+Tamam mı?
+
+282
+00:22:53,980 --> 00:22:54,920
+Var mı onlaşmayın bir yer?
+
+283
+00:22:59,731 --> 00:23:14,251
+Okay, let's solve this problem. So this problem is a simple one. I think it is better to apply the usual method. If you prefer to use L'Hospital's rule for this, I think you cannot solve this.
+
+284
+00:23:14,251 --> 00:23:17,091
+L'Hospital kurallı anlattık mı size? Anlatmadık değil mi?
+
+285
+00:23:18,912 --> 00:23:19,692
+Anlatmadık değil mi?
+
+286
+00:23:20,192 --> 00:23:24,591
+Anlatmadık. Tamam, güzel. Biraz soru çözelim. Ondan sonra L'Hospital ile vakitimiz kalırsa anlatırız.
+
+287
+00:23:25,311 --> 00:23:29,051
+Evet, x goes to infinite. So first of all,
+
+288
+00:23:29,731 --> 00:23:32,051
+we manipulate on this expression.
+
+289
+00:23:35,412 --> 00:23:41,412
+Şimdi bu partı, bu partı, bu partı.
+
+290
+00:23:41,412 --> 00:24:11,392
+So, first of all, we need to, in order to take common factor, okay, so we consider this manipulation, now if you take the common factor square root of x, so we have this 1 over some unbounded expression, 1 over unbounded expression, as x goes to infinite, this goes to 0, this goes to 0, and this simplifies,
+
+291
+00:24:11,412 --> 00:24:35,412
+this goes to 0, okay, goes to 0, goes to 0, goes to 0, now, so we have this 3, okay, and we have this 2, the answer is 2 over square root of 3, okay, dikkat edin, ortak çarpan parantezini alarak düzenleyebilirsiniz, oradan cevabı buluyorsunuz.
+
+292
+00:24:35,412 --> 00:25:02,912
+Okay, let's try to update.
+
+293
+00:24:44,596 --> 00:24:48,296
+domain of f.
+
+294
+00:24:49,756 --> 00:24:51,715
+what is the domain of f?
+
+295
+00:24:53,756 --> 00:24:55,796
+tanım kümesini bulun bakayım gençler.
+
+296
+00:24:59,859 --> 00:25:09,779
+basit bir soru herkes yapabilir. To make sense for argument, okay to make sense for this square root function,
+
+297
+00:25:20,339 --> 00:25:20,839
+ok, sorry.
+
+298
+00:25:24,723 --> 00:25:42,503
+You know that argument of square symbol must be bigger than 0 or equal to 0, but this argument cannot be 0 because this argument, this term, is the denominator of this rational expression.
+
+299
+00:25:43,283 --> 00:25:49,943
+That's why we cannot put equality condition. Okay, now, so this argument must be positive.
+
+300
+00:25:49,943 --> 00:25:59,083
+Now, so when you solve this, so we have only one case, so x may be negative.
+
+301
+00:25:59,903 --> 00:26:04,163
+Okay, if you put x positive value, you are going to obtain equality case.
+
+302
+00:26:04,644 --> 00:26:07,144
+That's why x must be negative.
+
+303
+00:26:07,743 --> 00:26:12,263
+Okay, so domain of f, the set of negative real numbers.
+
+304
+00:26:12,263 --> 00:26:16,783
+So what about the domain of f for this function?
+
+305
+00:26:21,107 --> 00:26:25,627
+Recall the definition of natural logaritmic function or any logaritmic function.
+
+306
+00:26:26,207 --> 00:26:35,028
+In order to make sense for logaritmic function with base, the argument of logaritmic function must be positive, cannot be zero.
+
+307
+00:26:35,147 --> 00:26:38,227
+Argument of logaritmic function cannot be zero. Attention here.
+
+308
+00:26:38,307 --> 00:26:42,427
+But output may be any real number. Output may be negative.
+
+309
+00:26:42,607 --> 00:26:48,567
+But argument of logaritmic function cannot be zero or negative. Attention here.
+
+310
+00:26:48,567 --> 00:26:59,427
+Dikkat edin, logaritmic functionların sonuçları, çıktıkları negatif olabilir ama girdileri, yani argümanları kesinlikle negatif veya sıfır olamaz.
+
+311
+00:26:59,587 --> 00:27:02,447
+Pozitif olmak zorunda yoksa logaritma tanımlı olmaz.
+
+312
+00:27:07,859 --> 00:27:08,379
+Evet.
+
+313
+00:27:10,599 --> 00:27:11,419
+Buldu mu herkes bunu?
+
+314
+00:27:21,011 --> 00:27:28,011
+[öğrenci] found 1, minus 4, [öğrenci], [öğrenci] found 0,5.
+
+315
+00:27:33,748 --> 00:28:03,748
+Bir de bir
+
+316
+00:28:03,748 --> 00:28:31,238
+bir bir
+
+317
+00:28:35,443 --> 00:28:45,443
+Bu, bu, bu, 5x-x²-4
+
+318
+00:28:45,443 --> 00:29:15,443
+Bu, bu
+
+319
+00:29:15,443 --> 00:29:45,443
+bu, bu
+
+320
+00:29:45,443 --> 00:30:02,624
+between four and five. Sıfırla bir arasındaki ve dörtle beş arasındakileri dahil edemezsiniz. Yoksa logaritmik fonksiyon tanımlı olmaz. Bakın birçoğunuz aynı hatayı yaptı. Cevap bir dört. Anlaşma bir yer var mı? Çok basit görünüyor ama hata yapmamak lazım.
+
+321
+00:30:03,263 --> 00:30:06,763
+[öğrenci], did you get your mistake?
+
+322
+00:30:08,223 --> 00:30:08,864
+Yes, sir.
+
+323
+00:30:08,864 --> 00:30:30,403
+Okay, now next question. Next question is about computing some proper a and b values for which this function is differentiable at the point zero. For what values of a and b is this f differentiable at the point zero?
+
+324
+00:30:31,183 --> 00:30:38,124
+For what values of a and b is this function differentiable at the point a at the point zero?
+
+325
+00:30:43,412 --> 00:30:43,771
+ok.
+
+326
+00:31:07,220 --> 00:31:08,600
+Evet, bu merkez.
+
+327
+00:31:18,099 --> 00:31:23,079
+Yani iki
+
+328
+00:31:23,079 --> 00:31:31,099
+A ve B
+
+329
+00:31:40,531 --> 00:31:45,891
+Öncelikle, f'ye deyerek f'ye deyerek f'ye deyerek f'ye deyerek,
+
+330
+00:31:45,891 --> 00:31:48,891
+otherwise, f'ye deyerek deyerek değil.
+
+331
+00:31:48,891 --> 00:31:52,692
+So, a necessary condition is continuative.
+
+332
+00:31:57,875 --> 00:33:27,875
+Bu, bu
+
+333
+00:33:27,875 --> 00:33:39,996
+Derivation of right hand side at the point three so derivation of this a so derivation of this two cosine x minus three sine x
+
+334
+00:33:39,996 --> 00:33:50,036
+The value of this at the point x zero the answer is a two a two b is three okay is there an equation about this solution
+
+335
+00:33:50,036 --> 00:33:51,955
+Orson one
+
+336
+00:33:56,372 --> 00:33:58,372
+soru solan yok galiba.
+
+337
+00:33:59,372 --> 00:34:15,372
+Okay, let's see next question. Oh, okay. So we do not, we didn't teach you this. So this is the topic of next week, not topic of this week. So we are going to solve such question after next week. Okay.
+
+338
+00:34:15,372 --> 00:34:30,372
+Now another simple question. So I think this question is very simple for test exam. I think you can solve this. Okay, this is homework for you. This is very simple question.
+
+339
+00:34:30,372 --> 00:34:31,372
+Wait, you.
+
+340
+00:34:34,483 --> 00:34:37,043
+Ok, bu çok güzel.
+
+341
+00:34:42,291 --> 00:34:46,291
+Now, try to find out an approximate value for this number.
+
+342
+00:34:49,172 --> 00:34:51,331
+By using linear approximation method.
+
+343
+00:34:52,851 --> 00:34:53,971
+Try to find out
+
+344
+00:34:56,211 --> 00:35:02,531
+the approximate approximate value for this number using linear approximation method.
+
+345
+00:36:21,972 --> 00:36:22,972
+Tamam.
+
+346
+00:36:22,972 --> 00:36:24,972
+Is there anybody?
+
+347
+00:36:24,972 --> 00:36:26,972
+Who found the answer?
+
+348
+00:36:31,603 --> 00:36:33,783
+Ulan var mı gençler? Yaklaşık değeri.
+
+349
+00:36:45,427 --> 00:36:47,867
+Evet, [öğrenci] 17 bölü 60.
+
+350
+00:36:48,147 --> 00:36:49,827
+İren Başkaya 17 bölü 60.
+
+351
+00:36:50,507 --> 00:36:54,507
+[öğrenci] 241 bölü 121'iniz hata yapıyor.
+
+352
+00:36:57,147 --> 00:36:58,447
+2 kişi bilmiyoruz.
+
+353
+00:36:58,527 --> 00:36:58,708
+Evet.
+
+354
+00:37:02,127 --> 00:37:04,467
+Okay, let's solve this problem.
+
+355
+00:37:04,788 --> 00:37:08,967
+So first of all, we need to prefer to use some proper function.
+
+356
+00:37:09,268 --> 00:37:13,867
+So I think it is better to use this function, which has nonlinear graph.
+
+357
+00:37:13,867 --> 00:37:21,667
+So we need its derivation, derivation function f prime of x, 1 over 3 times x to minus 2 over 3.
+
+358
+00:37:22,327 --> 00:37:28,708
+Now recall, recall the, recall the differential approximate relation delta f.
+
+359
+00:37:28,708 --> 00:37:31,147
+Delta f is f of x minus f of a.
+
+360
+00:37:31,728 --> 00:37:39,487
+Approximates f prime of a times delta x by using this approximate relation for differentials.
+
+361
+00:37:39,487 --> 00:37:46,987
+So we are going to obtain this linearization f of a plus f prime of a times x minus a.
+
+362
+00:37:47,327 --> 00:37:55,307
+So we prefer to use a because this a, 8 is sufficient to close this number.
+
+363
+00:37:55,647 --> 00:37:55,847
+Okay.
+
+364
+00:37:56,208 --> 00:37:58,987
+So the argument of this function look at here, x.
+
+365
+00:37:58,987 --> 00:38:06,667
+So that's why we substitute, when you substitute this a into this function, okay, you are going to obtain this approximately.
+
+366
+00:38:07,447 --> 00:38:12,527
+So that's why we prefer to use this a value as 8.
+
+367
+00:38:12,728 --> 00:38:13,007
+Okay.
+
+368
+00:38:13,347 --> 00:38:18,107
+Now, by substituting a into derivation function and function.
+
+369
+00:38:18,107 --> 00:38:20,847
+So we are going to obtain 2 and 1 over 12.
+
+370
+00:38:21,268 --> 00:38:26,188
+So when you substitute this into linearization of f at the point a here.
+
+371
+00:38:26,688 --> 00:38:28,047
+So we are going to obtain this.
+
+372
+00:38:28,367 --> 00:38:31,367
+So this is the linearization, linearization of f.
+
+373
+00:38:31,467 --> 00:38:37,467
+In the test exam, sometimes you are asked to compute linearization of this function, for example.
+
+374
+00:38:38,027 --> 00:38:39,987
+So what is the linearization of this function?
+
+375
+00:38:40,127 --> 00:38:44,867
+Which of the following equation is the linearization of this function?
+
+376
+00:38:44,967 --> 00:38:46,788
+You may see such equation in the test exam.
+
+377
+00:38:46,788 --> 00:38:53,327
+Okay, but in this case, you are asked to compute value of this approximate value of this number.
+
+378
+00:38:53,467 --> 00:38:56,347
+When you substitute x, 8.1.
+
+379
+00:38:56,867 --> 00:39:01,248
+So you are going to, by using this linearization, we are going to obtain this.
+
+380
+00:39:02,127 --> 00:39:02,367
+Okay.
+
+381
+00:39:05,208 --> 00:39:06,007
+Evet, bilmiyorum.
+
+382
+00:39:06,147 --> 00:39:06,987
+Ondalıklı olabilir.
+
+383
+00:39:07,847 --> 00:39:08,708
+Fational olabilir.
+
+384
+00:39:08,867 --> 00:39:09,567
+Nasıl geliyorsa.
+
+385
+00:39:10,288 --> 00:39:10,807
+Kolayınıza.
+
+386
+00:39:11,547 --> 00:39:12,387
+Var mı sorusu olan?
+
+387
+00:39:12,387 --> 00:39:16,967
+Yani şöyle de olabilir.
+
+388
+00:39:17,188 --> 00:39:18,947
+1 bölü 12 çarpı.
+
+389
+00:39:19,627 --> 00:39:20,748
+1 bölü 10.
+
+390
+00:39:21,947 --> 00:39:22,827
+Ne oldu arkadaşlar?
+
+391
+00:39:23,527 --> 00:39:26,107
+2 artı 1 bölü 120.
+
+392
+00:39:26,327 --> 00:39:26,987
+Ne oldu burası?
+
+393
+00:39:28,047 --> 00:39:29,447
+241 bölü.
+
+394
+00:39:30,007 --> 00:39:32,027
+241 bölü 120.
+
+395
+00:39:32,487 --> 00:39:34,347
+Cevap bu şekilde de olabilir.
+
+396
+00:39:35,147 --> 00:39:35,827
+Doğru mu gençler?
+
+397
+00:39:35,827 --> 00:39:37,027
+Evet.
+
+398
+00:39:39,127 --> 00:39:40,387
+Yanlış yapan arkadaşlar.
+
+399
+00:39:41,047 --> 00:39:42,307
+Nerede yanlış yapmışlar?
+
+400
+00:39:42,627 --> 00:39:43,288
+Baksınlar.
+
+401
+00:39:43,467 --> 00:39:44,627
+Hatalarını görsünler.
+
+402
+00:39:45,288 --> 00:39:45,827
+Any question?
+
+403
+00:39:46,987 --> 00:39:47,728
+Var mı sorusu olan?
+
+404
+00:39:47,728 --> 00:40:04,887
+Evet.
+
+405
+00:39:55,539 --> 00:39:56,039
+Okay.
+
+406
+00:39:58,880 --> 00:39:59,699
+Let's go on.
+
+407
+00:40:02,579 --> 00:40:12,900
+Investigate the differentiability of this function at the point zero.
+
+408
+00:40:14,500 --> 00:40:24,579
+Attention here, in such cases, you have to use the definition of derivation because look at here, so this function,
+
+409
+00:40:26,259 --> 00:40:31,380
+not differentiable everywhere, not differentiable at the point zero.
+
+410
+00:40:32,099 --> 00:40:37,380
+That's why it is mandatory to use the definition of derivation. Okay.
+
+411
+00:40:39,300 --> 00:40:43,380
+I think everyone knows, everyone knows the definition of derivation.
+
+412
+00:41:29,300 --> 00:41:34,980
+Okay. Is this differentiable or not? At the point x0.
+
+413
+00:41:52,467 --> 00:41:59,187
+So, I think you can see it is continuous at 0.0, which is necessary condition for differentiability, but not sufficient.
+
+414
+00:42:00,307 --> 00:42:03,427
+It's obvious that it's continuous at 0.0.
+
+415
+00:42:05,347 --> 00:42:06,228
+Second step,
+
+416
+00:42:09,027 --> 00:42:13,748
+you need to investigate, you need to use definition of derivation.
+
+417
+00:42:28,820 --> 00:42:29,720
+Evet, geceler.
+
+418
+00:42:33,235 --> 00:42:35,815
+Ulan var mı? Türev denebilir mi? Türev denemez mi?
+
+419
+00:43:00,371 --> 00:43:03,571
+Okay, okay, let's see solution.
+
+420
+00:43:05,231 --> 00:43:06,751
+Now we can investigate.
+
+421
+00:43:07,471 --> 00:43:10,971
+We need to make sure that f is continuous at the point x0.
+
+422
+00:43:12,331 --> 00:43:17,371
+As x goes to 0 from right-hand side, so f of x approaching 1 over 2.
+
+423
+00:43:17,371 --> 00:43:22,091
+As x goes to 0 from left-hand side, we need to use this first piece.
+
+424
+00:43:22,471 --> 00:43:24,891
+So by conjugate method, okay?
+
+425
+00:43:25,611 --> 00:43:29,271
+Or you can take common factor x.
+
+426
+00:43:30,371 --> 00:43:32,071
+Okay, so we are going to obtain this.
+
+427
+00:43:32,271 --> 00:43:34,551
+I think conjugate method is good, 1 over 2.
+
+428
+00:43:34,811 --> 00:43:37,411
+The value of f at the point 0, 1 over 2.
+
+429
+00:43:37,831 --> 00:43:40,331
+So I see conditions of continuity holds.
+
+430
+00:43:40,471 --> 00:43:45,851
+That's why f is continuous at the point x0, which is necessary condition for differentiability.
+
+431
+00:43:46,211 --> 00:43:50,291
+Now, what about differentiability of f at the point 0?
+
+432
+00:43:50,931 --> 00:43:54,931
+So for this, we need to use definition of derivation.
+
+433
+00:43:55,071 --> 00:43:59,531
+I think it's better to use this limit as x goes to 0.
+
+434
+00:43:59,531 --> 00:44:00,451
+Let me write this.
+
+435
+00:44:00,451 --> 00:44:08,731
+F prime of 0 is equal to f of x minus f of 0 over x minus 0.
+
+436
+00:44:08,731 --> 00:44:11,172
+From right and left, okay?
+
+437
+00:44:11,831 --> 00:44:18,251
+From right and left, you need to have, you need to obtain the same value.
+
+438
+00:44:18,251 --> 00:44:22,831
+Otherwise, f is not differentiable at the point 0.
+
+439
+00:44:23,331 --> 00:44:23,692
+Okay?
+
+440
+00:44:25,371 --> 00:44:28,871
+Now, for left-hand side approaching, we need to use this.
+
+441
+00:44:30,251 --> 00:44:32,931
+Right-hand side approaching, we need to use this piece.
+
+442
+00:44:33,391 --> 00:44:33,771
+Okay?
+
+443
+00:44:34,192 --> 00:44:38,451
+For right-hand side approaching, let's use other column form.
+
+444
+00:44:38,451 --> 00:44:43,271
+If you do this variable, x minus 0 is equal to h.
+
+445
+00:44:43,271 --> 00:44:45,652
+As x goes to 0, h goes to 0.
+
+446
+00:44:46,531 --> 00:44:51,091
+As you see, x is 0 plus h, f of 0 over h.
+
+447
+00:44:51,091 --> 00:44:52,511
+So the answer is 0.
+
+448
+00:44:54,431 --> 00:44:58,271
+Now, as x goes, as h goes to 0 from left-hand side.
+
+449
+00:44:59,531 --> 00:44:59,971
+Sorry.
+
+450
+00:44:59,971 --> 00:45:03,051
+Okay.
+
+451
+00:45:03,152 --> 00:45:04,351
+Corresponds to this.
+
+452
+00:45:06,132 --> 00:45:10,531
+Now, so you are going to obtain 1 over 8.
+
+453
+00:45:12,132 --> 00:45:12,731
+Sorry.
+
+454
+00:45:16,724 --> 00:45:20,564
+1 over 8.
+
+455
+00:45:21,044 --> 00:45:25,604
+As you see, this is different from left hand side tangent,
+
+456
+00:45:26,104 --> 00:45:27,744
+sorry, right hand side tangent,
+
+457
+00:45:27,943 --> 00:45:29,704
+right hand side tangent 0,
+
+458
+00:45:30,284 --> 00:45:32,224
+left hand side tangent 1 over 8.
+
+459
+00:45:32,344 --> 00:45:33,224
+They are different.
+
+460
+00:45:33,764 --> 00:45:35,324
+That's why not differentiable.
+
+461
+00:45:35,884 --> 00:45:36,164
+Okay?
+
+462
+00:45:36,784 --> 00:45:38,284
+Not differentiable.
+
+463
+00:45:38,284 --> 00:45:43,284
+This function is not differentiable at the point x0.
+
+464
+00:45:44,364 --> 00:45:44,704
+Okay?
+
+465
+00:45:44,844 --> 00:45:46,304
+An equation about the solution?
+
+466
+00:45:46,724 --> 00:45:47,224
+Okay.
+
+467
+00:45:57,204 --> 00:45:58,744
+Okay, let's see next question.
+
+468
+00:46:03,507 --> 00:46:13,268
+Compute the domain of f for this given function. f of x is square root of x over 4 minus x minus square root of sin x.
+
+469
+00:46:20,692 --> 00:46:22,692
+Ne?
+
+470
+00:46:27,315 --> 00:46:33,915
+As you know, domain means the set of all possible inputs, making sense for the rule of function.
+
+471
+00:47:18,260 --> 00:47:19,700
+Evet gençler, buldunuz mu?
+
+472
+00:47:32,467 --> 00:47:34,467
+Ok, let's see answer.
+
+473
+00:47:34,467 --> 00:47:41,467
+To make sense for this square symbol, argument of this square symbol must be non-negative.
+
+474
+00:47:41,467 --> 00:47:44,467
+So in order to solve this inequality, we have two cases.
+
+475
+00:47:44,467 --> 00:47:47,467
+Focus on x-factor and focus on 4 minus x.
+
+476
+00:47:47,467 --> 00:47:51,467
+So the root of this 0, root of this 4.
+
+477
+00:47:51,467 --> 00:47:53,467
+Now look at here.
+
+478
+00:47:53,467 --> 00:47:58,467
+So and plus the coefficient of x plus, coefficient of this minus.
+
+479
+00:47:58,467 --> 00:48:02,467
+So this is minus. So at right hand side of 4.
+
+480
+00:48:02,467 --> 00:48:07,467
+So x over 4 minus x takes negative sign.
+
+481
+00:48:07,467 --> 00:48:11,467
+So after this root, so you are going to obtain this plus.
+
+482
+00:48:11,467 --> 00:48:14,467
+After this root, you are going to obtain minus.
+
+483
+00:48:14,467 --> 00:48:21,467
+Ok, now so this is the first domain coming from the first part of this rule.
+
+484
+00:48:21,467 --> 00:48:23,467
+Now what about second part?
+
+485
+00:48:23,467 --> 00:48:28,467
+We know that sign x is defined everywhere.
+
+486
+00:48:28,467 --> 00:48:32,467
+So square root symbol, but so this sign x must be positive.
+
+487
+00:48:32,467 --> 00:48:39,467
+In order to obtain positive output for sign, we need to restrict ourselves into this interval.
+
+488
+00:48:39,467 --> 00:48:45,467
+And so you need to take interception of this interval and this interval.
+
+489
+00:48:45,467 --> 00:48:46,467
+You are going to obtain.
+
+490
+00:48:46,467 --> 00:48:47,467
+Ok.
+
+491
+00:48:47,467 --> 00:48:50,467
+Dikkat edin arkadaşlar.
+
+492
+00:48:50,467 --> 00:48:54,467
+Yani T-6'in pozitif olduğu bölgeleri almanız lazım.
+
+493
+00:48:54,467 --> 00:48:56,467
+Veya 0 oldu.
+
+494
+00:48:56,467 --> 00:48:59,467
+O da 0-1 ile ve şunu birlikte düşünüyorum.
+
+495
+00:48:59,467 --> 00:49:01,467
+Ara kesitini almak zorundayım.
+
+496
+00:49:01,467 --> 00:49:04,467
+O da bu kapalı aralık olarak karşımıza gelir.
+
+497
+00:49:04,467 --> 00:49:05,467
+Var mı sorusu olan?
+
+498
+00:49:05,467 --> 00:49:10,467
+Sorusu olan yok galiba.
+
+499
+00:49:10,467 --> 00:49:11,467
+Tamam.
+
+500
+00:49:11,467 --> 00:49:15,467
+Let's see this question.
+
+501
+00:49:15,467 --> 00:49:20,467
+You may see such question in the test exam.
+
+502
+00:49:20,467 --> 00:49:22,467
+This is very nice question.
+
+503
+00:49:22,467 --> 00:49:50,467
+We check.
+
+504
+00:49:44,563 --> 00:49:47,703
+Hocam, bazı arkadaşların soruları var da chatte yazıyor.
+
+505
+00:49:48,344 --> 00:49:49,364
+x soruyla alakalı.
+
+506
+00:49:57,076 --> 00:49:58,336
+Ama hareket sitini alıyoruz.
+
+507
+00:49:59,396 --> 00:50:01,295
+[öğrenci]. Yanlış mı yapmış?
+
+508
+00:50:01,436 --> 00:50:02,956
+Hareket sitini alırsan daha küçük.
+
+509
+00:50:03,155 --> 00:50:05,356
+Pi daha küçük. Burası pi.
+
+510
+00:50:07,795 --> 00:50:09,235
+Hareket sitini alıyoruz.
+
+511
+00:50:10,516 --> 00:50:11,516
+Sıfır burada.
+
+512
+00:50:12,615 --> 00:50:13,336
+Pi burada.
+
+513
+00:50:14,275 --> 00:50:15,036
+Dört burada.
+
+514
+00:50:15,735 --> 00:50:16,795
+Hareket sitini alırsan
+
+515
+00:50:16,795 --> 00:50:18,056
+sıfır pi ile
+
+516
+00:50:18,056 --> 00:50:21,195
+sıfır dördün hareket sitini
+
+517
+00:50:21,195 --> 00:50:23,016
+alırsan sıfır dördü
+
+518
+00:50:23,016 --> 00:50:25,115
+çıkartırsan cevap
+
+519
+00:50:25,115 --> 00:50:26,775
+sıfır bir.
+
+520
+00:50:30,356 --> 00:50:36,316
+Evet, yanlış mı? Cevap bu. This is domain of f. Hatanızı gördünüz mü?
+
+521
+00:50:40,052 --> 00:50:40,552
+Evet.
+
+522
+00:50:47,923 --> 00:51:01,224
+180 derece yok. Artık üniversitede biz dereceyi kullanmıyoruz. Biz genellikle radyan değer kullanıyoruz. 180 dereceye karşılık gelen pi. [öğrenci]. Tamam mı? Real değer. Radyan değer.
+
+523
+00:51:16,755 --> 00:51:16,935
+Evet.
+
+524
+00:51:22,804 --> 00:51:24,003
+Buldu mu herkes?
+
+525
+00:51:29,139 --> 00:51:31,139
+Ok, most of you found
+
+526
+00:51:34,452 --> 00:51:35,432
+Same answer.
+
+527
+00:51:38,412 --> 00:51:39,012
+Okay.
+
+528
+00:51:39,212 --> 00:51:41,052
+First of all, we need to derivate this
+
+529
+00:51:41,052 --> 00:51:42,892
+expression with respect to x.
+
+530
+00:51:42,992 --> 00:51:44,472
+So when you derivate this
+
+531
+00:51:44,472 --> 00:51:47,232
+g prime of x, derivation
+
+532
+00:51:47,232 --> 00:51:48,612
+of argument of f.
+
+533
+00:51:48,692 --> 00:51:51,152
+So derivation of f with respect to argument
+
+534
+00:51:51,152 --> 00:51:52,772
+times
+
+535
+00:51:52,772 --> 00:51:54,952
+derivation of argument.
+
+536
+00:51:55,572 --> 00:51:57,112
+Okay? So recall this rule.
+
+537
+00:51:57,112 --> 00:51:59,512
+Derivation of f of u
+
+538
+00:51:59,512 --> 00:52:02,592
+derivation of f
+
+539
+00:52:02,592 --> 00:52:04,032
+with respect to argument
+
+540
+00:52:04,032 --> 00:52:06,612
+times derivation of argument.
+
+541
+00:52:06,872 --> 00:52:07,972
+Okay? By chain rule.
+
+542
+00:52:08,552 --> 00:52:10,952
+Now, so derivation of
+
+543
+00:52:10,952 --> 00:52:12,792
+when you substitute x2
+
+544
+00:52:12,792 --> 00:52:14,972
+here, so 2 times
+
+545
+00:52:14,972 --> 00:52:16,772
+h of 2 times
+
+546
+00:52:16,772 --> 00:52:18,672
+derivation of this argument
+
+547
+00:52:18,672 --> 00:52:20,952
+2x plus h of x
+
+548
+00:52:20,952 --> 00:52:22,892
+by the product rule
+
+549
+00:52:22,892 --> 00:52:24,672
+we can obtain this answer.
+
+550
+00:52:24,672 --> 00:52:26,592
+Okay? Derivation of x1
+
+551
+00:52:26,592 --> 00:52:28,532
+times h of x plus x times
+
+552
+00:52:28,532 --> 00:52:30,512
+h prime of x. When you substitute
+
+553
+00:52:30,512 --> 00:52:32,832
+x2 into this obtained result
+
+554
+00:52:32,832 --> 00:52:35,172
+by using these informations
+
+555
+00:52:35,172 --> 00:52:36,592
+given in the equations.
+
+556
+00:52:36,592 --> 00:52:37,352
+Okay.
+
+557
+00:52:37,352 --> 00:52:39,092
+Now, we are going to update
+
+558
+00:52:39,092 --> 00:52:39,832
+this.
+
+559
+00:52:39,832 --> 00:52:40,772
+Any questions?
+
+560
+00:52:40,772 --> 00:52:42,852
+So this is a very nice question, I think.
+
+561
+00:52:48,755 --> 00:53:11,435
+Now, this is the equation of x kuz exam, x kuz exam. Okay, now, so given some implicit form, not explicit form, so your goal is to obtain the equation of tangent line at the point P for this curve given by implicit form.
+
+562
+00:53:11,435 --> 00:53:21,036
+Okay, let's try to update the equation of tangent line. So today there is no break. Okay, so we
+
+563
+00:53:29,811 --> 00:53:34,991
+Evet gençler, ara vermeyeceğim. Vlog yapıyorum. Biraz erken bitirelim.
+
+564
+00:55:02,420 --> 00:55:03,420
+ok.
+
+565
+00:55:06,835 --> 00:55:07,795
+is there anybody?
+
+566
+00:55:11,380 --> 00:55:12,579
+konu tasver.
+
+567
+00:55:15,860 --> 00:55:23,300
+Şimdi, bu sorunla kullanılan bir sorunla,
+
+568
+00:55:23,300 --> 00:55:24,740
+bu sorunla, bu sorunla,
+
+569
+00:55:24,740 --> 00:55:26,900
+bu sorunla,
+
+570
+00:55:26,900 --> 00:55:30,900
+y'e,
+
+571
+00:55:30,900 --> 00:55:35,700
+y'e, y'e, y'e,
+
+572
+00:55:36,579 --> 00:55:38,740
+ve bu sorunla,
+
+573
+00:55:38,740 --> 00:55:41,460
+y'e,
+
+574
+00:55:41,460 --> 00:55:56,660
+y'e, y'e,
+
+575
+00:55:56,660 --> 00:56:26,660
+y'e, y'e
+
+576
+00:56:26,660 --> 00:56:39,760
+6. Now the equation of tangent line y minus y zero equal to slope times x minus x zero. Any equation?
+
+577
+00:56:41,380 --> 00:56:47,820
+Hocam bir şey soracağım. Bu cost bir bölü y'de bir bölü içinin türevini almıyor muyuz?
+
+578
+00:56:48,240 --> 00:56:55,619
+Alıyorsun. Hemen alayım şurada sana. Dur. Kafanız orada karışacağınızı tahmin ediyordum.
+
+579
+00:56:56,660 --> 00:57:07,599
+y depends on x. Okay, let me clear. Cosine 1 over y depends on y. Y depends on x.
+
+580
+00:57:07,700 --> 00:57:14,559
+Take into account this tree by the chain rule. Derivation of cosine 1 over y with respect to x.
+
+581
+00:57:15,079 --> 00:57:20,619
+With respect to x. Derivation of this with respect to x. Derivation of cosine.
+
+582
+00:57:24,628 --> 00:57:29,608
+ile ilgili bu
+
+583
+00:57:33,139 --> 00:57:34,460
+This is minus 1.
+
+584
+00:57:35,039 --> 00:57:35,159
+Okay?
+
+585
+00:57:36,900 --> 00:57:50,000
+Now, so this is equal to minus sine 1 over y times, derivation of this, minus y minus 2 times, y depends on x, y prime.
+
+586
+00:57:50,159 --> 00:57:50,879
+Okay?
+
+587
+00:57:51,000 --> 00:58:01,339
+So we have this minus minus plus, okay, y prime over y square times sine 1 over y.
+
+588
+00:58:01,339 --> 00:58:02,460
+Okay?
+
+589
+00:58:02,579 --> 00:58:03,900
+So this is an equation.
+
+590
+00:58:05,960 --> 00:58:13,420
+We call y minus, y to minus, depends on y, y depends on x.
+
+591
+00:58:13,420 --> 00:58:21,719
+When you derivate this y to minus with respect to x, first of all, you need to derivate y to minus with respect to y here.
+
+592
+00:58:22,019 --> 00:58:30,500
+So we have this minus y to minus 2, and derivation of y with respect to x, y prime here.
+
+593
+00:58:30,500 --> 00:58:31,400
+KC'den?
+
+594
+00:58:32,480 --> 00:58:33,299
+Var mı alışmıyor diye?
+
+595
+00:58:35,519 --> 00:58:37,019
+Var mı sorusu olan başka?
+
+596
+00:58:39,119 --> 00:58:40,139
+Yok galiba.
+
+597
+00:58:40,139 --> 00:58:58,759
+Var mı alışmıyor diye?
+
+598
+00:58:44,947 --> 00:58:45,507
+Evet.
+
+599
+00:58:48,288 --> 00:58:51,228
+Burada bir şey hatalı oldu. Ben mi yanlış yaptım?
+
+600
+00:58:55,507 --> 00:59:18,887
+Sinüs'ün türevini, bir dakika. Ha ben kosinüs almışım. Burada sinüs varmış. Pardon. Ben kosinüs yazmışım orada. Burada sinüs olduğundan eksi gelecek. Ben orada kosinüs diye yazdım. Yanlış oldu. Yani yanlış yok. Bura doğru, eksi. Tamam. Var mı sorusu olan? Sorusu olan yok galiba.
+
+601
+00:59:30,003 --> 00:59:36,003
+Ok, so by using L'Hospital's rule, you can solve this. Ok, now so L'Hospital's
+
+602
+00:59:38,163 --> 00:59:46,003
+Daha sonra çözersiniz bunu arkadaşlar geçiyorum. By using L'Hospital's rule, you can immediately solve this problem.
+
+603
+00:59:54,003 --> 00:59:57,523
+Bunları çözersiniz arkadaşlar. Ben biraz daha farklı soru tipleri arıyorum.
+
+604
+00:59:58,403 --> 01:00:01,403
+Okey. Bunlar size ödev olsun.
+
+605
+01:00:03,003 --> 01:00:05,063
+Homework. Çözümleri var zaten.
+
+606
+01:00:06,223 --> 01:00:15,183
+Okey. Try to find out approximate value for this number by using differential approximation method or linear approximation method.
+
+607
+01:00:15,183 --> 01:00:17,443
+Those are equivalent to each other somehow.
+
+608
+01:00:22,483 --> 01:00:26,423
+Bulun bakayım arkadaşlar. Daha çok dünkü konularla alakalı çözelim.
+
+609
+01:00:29,423 --> 01:00:35,304
+Miner yaklaşım, logaritmik fonksiyon, üstel fonksiyon onlarla alakalı soru çözmek istiyorum.
+
+610
+01:00:46,579 --> 01:00:47,880
+Evet, buldunuz mu?
+
+611
+01:00:49,980 --> 01:00:52,059
+Fonksiyon olarak neyi belirleyeceksiniz?
+
+612
+01:00:53,639 --> 01:00:54,759
+Bunu belirleyebilirsiniz.
+
+613
+01:00:57,019 --> 01:00:59,319
+Acaba bunu belirlemek avantajlı mı?
+
+614
+01:01:01,219 --> 01:01:05,539
+Uygun değer olarak da 27'yi belirlersiniz.
+
+615
+01:01:05,880 --> 01:01:08,579
+O da yaklaşık olarak 28'e eşit.
+
+616
+01:01:08,579 --> 01:01:11,739
+O zaman A27 civarında
+
+617
+01:01:11,739 --> 01:01:16,779
+fx'in lineleştirilmesini göz önünde bulundurabilirsiniz.
+
+618
+01:01:18,079 --> 01:01:21,159
+28-27'ye yeterince yakın olduğundan
+
+619
+01:01:21,159 --> 01:01:23,900
+27-28'e yeterince yakın olduğundan
+
+620
+01:01:23,900 --> 01:01:24,400
+siz
+
+621
+01:01:24,400 --> 01:01:26,699
+küp köp x şeklindeki
+
+622
+01:01:26,699 --> 01:01:29,480
+doğrusal olmayan grafiği
+
+623
+01:01:29,480 --> 01:01:30,960
+bir düz doğruymuş gibi
+
+624
+01:01:30,960 --> 01:01:32,259
+doğruymuş gibi görürsünüz.
+
+625
+01:01:32,860 --> 01:01:34,420
+Yani lineleştirme var orada.
+
+626
+01:01:34,420 --> 01:01:35,860
+Bu yanlış
+
+627
+01:01:35,860 --> 01:01:37,199
+ne dedik arkadaşlar?
+
+628
+01:01:37,199 --> 01:01:39,199
+bu yaklaşık
+
+629
+01:01:39,199 --> 01:01:39,860
+bu yaklaşık ilişkiyi
+
+630
+01:01:39,860 --> 01:01:41,860
+kullanabilirsiniz.
+
+631
+01:01:48,436 --> 01:01:49,436
+Evet.
+
+632
+01:01:51,836 --> 01:01:54,936
+Herkes farklı bir cevap buluyor. Lütfen dikkat edin.
+
+633
+01:01:56,436 --> 01:02:00,936
+Hatalarınız var mı yok mu? Adım adım gidin. İşin mantığını düşünün.
+
+634
+01:02:21,076 --> 01:02:23,456
+Ok, let's see the solution.
+
+635
+01:02:25,036 --> 01:02:29,456
+Now this is our function for which we need to obtain linearization.
+
+636
+01:02:30,315 --> 01:02:37,936
+Now we need its derivation, derivation of this function, 1 over 3 times x to minus 2 over 3.
+
+637
+01:02:38,135 --> 01:02:49,795
+So we need to compute value of f and value of f prime at the point 27, f of 27, 3, f prime of 27, 1 over 27.
+
+638
+01:02:49,795 --> 01:03:00,396
+Now, so let's construct its linearization at around 27, 3 plus 1 over a, 27 times x minus a.
+
+639
+01:03:01,135 --> 01:03:09,336
+f of x approximates linearization, its linearization around 27.
+
+640
+01:03:09,336 --> 01:03:20,675
+Ok, now, as you see when you substitute 28 into this f of x, so this f of 27 approximates its linearization.
+
+641
+01:03:20,675 --> 01:03:25,336
+Ok, now when you substitute this, you are going to obtain this.
+
+642
+01:03:25,336 --> 01:03:54,336
+An equation?
+
+643
+01:03:35,507 --> 01:03:41,387
+I think there is no question. So let's go on. So what about this?
+
+644
+01:03:50,579 --> 01:04:04,659
+By using this, okay, compute some approximate value by using linearization method and by using differential methods, okay?
+
+645
+01:04:07,940 --> 01:04:10,480
+Let's try solve this at the beginning.
+
+646
+01:04:59,987 --> 01:05:02,748
+ok, good to find.
+
+647
+01:05:26,291 --> 01:05:27,751
+Okay, let's see the solution.
+
+648
+01:05:28,612 --> 01:05:30,871
+So look at this.
+
+649
+01:05:31,172 --> 01:05:33,311
+So we prefer to use this.
+
+650
+01:05:33,891 --> 01:05:37,851
+So x cubed minus 2 times square root of x plus 3.
+
+651
+01:05:37,851 --> 01:05:47,031
+So when you consider a1, so a1, 1 is sufficient to close 1.002.
+
+652
+01:05:47,592 --> 01:05:52,951
+So we can immediately compute f of 1 when you choose this a value as 1.
+
+653
+01:05:52,951 --> 01:06:00,851
+So let's construct linearization of this function, which has no straight line graph.
+
+654
+01:06:00,851 --> 01:06:05,311
+So f of 1 plus f prime of 1 times x minus 1.
+
+655
+01:06:05,851 --> 01:06:08,112
+Now we need f prime of 1.
+
+656
+01:06:08,751 --> 01:06:12,692
+So f prime of x here, f prime of 1, 2, f of 1, 2.
+
+657
+01:06:12,811 --> 01:06:19,411
+When you substitute these values into this linearization formula, you are going to obtain this linearization expression.
+
+658
+01:06:19,411 --> 01:06:23,371
+So we know that f of x looks like some straight line.
+
+659
+01:06:23,771 --> 01:06:27,132
+So as long as x is sufficient to close this 1.
+
+660
+01:06:27,592 --> 01:06:32,451
+Now f when you substitute 1.002 into this x.
+
+661
+01:06:32,851 --> 01:06:34,391
+So we got this.
+
+662
+01:06:34,751 --> 01:06:35,811
+So we have this.
+
+663
+01:06:36,291 --> 01:06:36,811
+End equation.
+
+664
+01:06:37,951 --> 01:06:39,532
+Now what about differential method?
+
+665
+01:06:40,231 --> 01:06:41,152
+Now differential.
+
+666
+01:06:41,152 --> 01:06:44,911
+So dx is somehow delta x.
+
+667
+01:06:45,192 --> 01:06:46,612
+So this is 0.002.
+
+668
+01:06:47,132 --> 01:06:52,172
+And we know that dy is equal to f prime of time, f prime of 1 times dx.
+
+669
+01:06:53,011 --> 01:06:54,751
+Now so we have this.
+
+670
+01:06:55,072 --> 01:06:56,531
+We know this derivation.
+
+671
+01:06:57,152 --> 01:06:59,791
+And this is 2 times this is.
+
+672
+01:07:00,031 --> 01:07:05,411
+Actually we got the same result because we have this approximation relation delta.
+
+673
+01:07:05,411 --> 01:07:10,532
+So we have so f prime of a time delta x.
+
+674
+01:07:10,672 --> 01:07:11,831
+So by using this.
+
+675
+01:07:12,011 --> 01:07:14,612
+So this is f of x minus f of a.
+
+676
+01:07:15,552 --> 01:07:19,991
+Approximates f prime of a times x minus a.
+
+677
+01:07:20,331 --> 01:07:27,831
+So as you see f of x looks like f of a plus f prime of a times x minus a.
+
+678
+01:07:28,032 --> 01:07:28,331
+Okay.
+
+679
+01:07:28,411 --> 01:07:31,112
+In fact those methods somehow equal to each other.
+
+680
+01:07:31,211 --> 01:07:31,471
+Okay.
+
+681
+01:07:32,231 --> 01:07:33,552
+We got the same result.
+
+682
+01:07:35,411 --> 01:07:36,672
+Okay.
+
+683
+01:07:37,351 --> 01:07:39,172
+Now what about this equation?
+
+684
+01:07:39,751 --> 01:07:44,032
+So your goal is to obtain the equation of tangent line.
+
+685
+01:07:44,692 --> 01:07:46,251
+At the point p.
+
+686
+01:07:46,632 --> 01:07:49,612
+For this curve given by this implicit form.
+
+687
+01:07:56,820 --> 01:08:04,539
+try to obtain the equation of line, which is tangent to graph, which is tangent to curve, given by this implicit form.
+
+688
+01:08:39,604 --> 01:08:44,844
+Okey. Buldun mu herkes? Bu kolay bir soruya benziyor. O kadar zor değil.
+
+689
+01:09:38,579 --> 01:09:41,279
+Okay, let's see solution.
+
+690
+01:09:43,500 --> 01:09:47,019
+Now we need to derivate both side-to-seqülti with respect to x.
+
+691
+01:09:47,119 --> 01:09:49,100
+We know that y depends on x.
+
+692
+01:09:49,439 --> 01:09:51,680
+If you derivate this term with respect to y,
+
+693
+01:09:51,760 --> 01:09:53,939
+by the product rule, derivation of first term,
+
+694
+01:09:54,119 --> 01:09:56,800
+2x times second term, y squared plus,
+
+695
+01:09:57,559 --> 01:10:01,039
+and derivation of second term,
+
+696
+01:10:01,199 --> 01:10:04,439
+2y y prime times first term,
+
+697
+01:10:04,439 --> 01:10:06,600
+x squared plus, derivation of this,
+
+698
+01:10:06,600 --> 01:10:09,800
+and derivation of tangent second squared,
+
+699
+01:10:09,939 --> 01:10:11,100
+x plus y times,
+
+700
+01:10:11,680 --> 01:10:13,460
+and derivation of this,
+
+701
+01:10:13,640 --> 01:10:15,479
+1 plus derivation of argument,
+
+702
+01:10:15,659 --> 01:10:17,859
+1 plus y prime is equal to 0,
+
+703
+01:10:18,019 --> 01:10:19,119
+derivation of 0, 0.
+
+704
+01:10:19,460 --> 01:10:22,260
+Okay, just substitute x pi over 4,
+
+705
+01:10:22,640 --> 01:10:26,420
+y 0, you are going to obtain slope of tangent line.
+
+706
+01:10:26,960 --> 01:10:30,319
+Here, this is transformed into slope of tangent line
+
+707
+01:10:30,319 --> 01:10:31,779
+when you substitute these values.
+
+708
+01:10:31,779 --> 01:10:35,199
+Okay, now the slope is minus 1.
+
+709
+01:10:36,600 --> 01:10:39,579
+Now, y minus y 0, y 0, 0.
+
+710
+01:10:40,019 --> 01:10:41,680
+Here, y 0, 0.
+
+711
+01:10:42,140 --> 01:10:43,260
+So this is x 0.
+
+712
+01:10:43,800 --> 01:10:48,059
+The answer is y minus y 0 is equal to minus 1 times x minus x 0.
+
+713
+01:10:48,760 --> 01:10:49,279
+Any question?
+
+714
+01:10:49,279 --> 01:10:52,500
+Sorusu olan var mı gençler?
+
+715
+01:10:54,199 --> 01:10:55,640
+Yok, bu basit bir soruydu.
+
+716
+01:10:59,939 --> 01:11:04,619
+Bunu da daha önce çözmüştük buna benzer ödev olsun bu, homework.
+
+717
+01:11:05,739 --> 01:11:08,699
+You may see such a question in the exam, test exam.
+
+718
+01:11:08,699 --> 01:11:13,800
+Süreksizlik çeşitleriyle alakalı.
+
+719
+01:11:13,800 --> 01:11:38,399
+Okay.
+
+720
+01:11:21,300 --> 01:11:25,100
+Bu da ispatlı bir soru ama gerek yok onu geçiyorum.
+
+721
+01:11:28,692 --> 01:11:30,872
+türev'in tanımından fayda olarak.
+
+722
+01:11:31,631 --> 01:11:32,011
+Okay.
+
+723
+01:11:33,011 --> 01:11:34,551
+Okay, this is a very nice question.
+
+724
+01:11:34,692 --> 01:11:37,032
+You may see such question in the test exam.
+
+725
+01:11:37,212 --> 01:11:38,572
+Focus on this question.
+
+726
+01:11:39,212 --> 01:11:45,671
+F is a differentiable function such that f of minus 1, 5, f' of minus 1, 2.
+
+727
+01:11:46,192 --> 01:11:54,891
+Then compute the value of f of minus 0.9 by using linearization method.
+
+728
+01:11:54,891 --> 01:12:00,532
+So, as you see, you are not given some particular function.
+
+729
+01:12:00,532 --> 01:12:04,212
+You are given any function satisfying some condition.
+
+730
+01:12:04,212 --> 01:12:11,471
+F is any function which is differentiable and f of minus 1, 5, f' of minus 1, 2.
+
+731
+01:12:12,252 --> 01:12:20,171
+Your goal is to obtain some approximate value for f of minus 0.9.
+
+732
+01:12:26,163 --> 01:12:27,163
+Evet.
+
+733
+01:12:32,275 --> 01:12:34,135
+Bunu biraz daha modifiye ederler.
+
+734
+01:12:34,235 --> 01:12:38,036
+Birazcık daha fonksiyonu biraz daha karmaşık hale getirebilirler.
+
+735
+01:12:38,296 --> 01:12:39,655
+Ekstra koşul koyarlar.
+
+736
+01:12:40,536 --> 01:12:43,155
+Aslında fonksiyonun, sorunun ruhu aynı.
+
+737
+01:12:43,155 --> 01:12:53,456
+Sadece oradaki sıfatları, yani fonksiyonla alakalı sıfatları değiştirerek, ruhunu değiştirmeden size soru sorabilirler arkadaşlar.
+
+738
+01:12:54,115 --> 01:12:54,655
+Dikkat edin.
+
+739
+01:13:28,020 --> 01:13:28,380
+ok.
+
+740
+01:13:31,380 --> 01:13:32,200
+Umunutmayın ister.
+
+741
+01:14:05,939 --> 01:14:12,359
+Evet, 5.2, 5.2. Güzel. Çok kişi bulmuş.
+
+742
+01:14:13,719 --> 01:14:28,219
+Okay, so we need to recall. So I think you don't need to recall linearization formula. I think you can obtain linearization formula. L of x is f of a plus f' prime of a times x minus a.
+
+743
+01:14:28,219 --> 01:14:44,119
+So a is minus 1 here. So x minus a, x plus 1. So this is linearization of our function around x minus 1. Now we know that minus 1 is sufficient to close minus 0.9.
+
+744
+01:14:44,119 --> 01:14:59,339
+So f of x is linearization. So f of x is linearization. So f of x approximately linearization around minus 1. So as you see, we have this approximation. So when you substitute minus 0.9 into linearization, we are going to obtain 5.2.
+
+745
+01:15:05,043 --> 01:15:06,564
+Ok, let's see this question.
+
+746
+01:15:07,844 --> 01:15:10,923
+So, this question consists of two parts.
+
+747
+01:15:11,043 --> 01:15:15,123
+The first part, you need to compute, you need to compute
+
+748
+01:15:15,123 --> 01:15:18,163
+interception points of this curve with x-axis.
+
+749
+01:15:19,083 --> 01:15:23,684
+Ok, now second part of this condition, this question,
+
+750
+01:15:23,684 --> 01:15:28,724
+you need to investigate whether tangent lines,
+
+751
+01:15:29,003 --> 01:15:33,463
+tangent lines of this curve at those points,
+
+752
+01:15:33,463 --> 01:15:39,144
+at those interception points, ok, are parallel to each other or not.
+
+753
+01:15:40,344 --> 01:15:50,583
+Ok, the first part is about computing interception point of this curve with x-axis.
+
+754
+01:15:50,583 --> 01:15:57,144
+Second part is to investigate whether tangent lines of this curve at those
+
+755
+01:15:57,144 --> 01:16:03,064
+of the point, at those interception points, are parallel to each other or not.
+
+756
+01:16:09,300 --> 01:16:17,300
+Bu ilk bölüm. Compute interception point of this curve with x-axis. Bu ilk bölüm. Compute interception point of this curve with x-axis. Bu ilk bölüm.
+
+757
+01:16:20,948 --> 01:16:24,948
+Bu ikinci bir parçası.
+
+758
+01:16:24,948 --> 01:16:26,948
+İntekli bir parçası.
+
+759
+01:16:26,948 --> 01:16:32,948
+Bir parçası.
+
+760
+01:16:32,948 --> 01:16:34,948
+Bu parçası.
+
+761
+01:16:34,948 --> 01:16:36,948
+Bir parçası.
+
+762
+01:17:53,555 --> 01:17:55,535
+Evet. Ne yaptınız gençler?
+
+763
+01:17:58,055 --> 01:17:59,015
+Tamam.
+
+764
+01:17:59,295 --> 01:18:00,795
+1 ve eksi 1 de kesiyor.
+
+765
+01:18:01,515 --> 01:18:03,135
+Peki o noktalardaki
+
+766
+01:18:03,135 --> 01:18:04,675
+t doğrular
+
+767
+01:18:04,675 --> 01:18:07,175
+birbirine paralel olur mu?
+
+768
+01:18:07,595 --> 01:18:07,995
+[öğrenci].
+
+769
+01:18:09,415 --> 01:18:11,095
+Elde ettiğiniz kesişim
+
+770
+01:18:11,095 --> 01:18:12,076
+noktalarında
+
+771
+01:18:12,076 --> 01:18:14,855
+söz konusu verilen eğriye
+
+772
+01:18:14,855 --> 01:18:16,455
+t olan doğrular
+
+773
+01:18:16,455 --> 01:18:18,975
+birbirlerine paralel
+
+774
+01:18:18,975 --> 01:18:20,915
+olurlar mı? Bunu da belirle.
+
+775
+01:18:20,975 --> 01:18:22,455
+Yani eğimlerinin birbirine
+
+776
+01:18:22,455 --> 01:18:23,995
+eşit olması lazım.
+
+777
+01:18:24,895 --> 01:18:25,115
+Evet.
+
+778
+01:18:30,292 --> 01:18:31,892
+güzel. Bravo.
+
+779
+01:18:38,612 --> 01:18:47,811
+Okay, now in order to compute the interception point of this curve with x-axis, we need to substitute y0 into algebraic equation of this curve.
+
+780
+01:18:48,192 --> 01:18:51,311
+And we substitute y0 into this star equation.
+
+781
+01:18:51,872 --> 01:18:54,992
+So you are going to obtain this, 1 minus x4, 0.
+
+782
+01:18:54,992 --> 01:18:59,511
+You have two possible cases, x minus 1, x plus 1.
+
+783
+01:18:59,632 --> 01:19:04,572
+So this means that this curve intercepts x-axis at the point minus 1 and plus 1.
+
+784
+01:19:04,572 --> 01:19:12,132
+So what about the tangent line equation at those points?
+
+785
+01:19:12,632 --> 01:19:18,971
+So in order to compute tangent line equation at that point, we need to derivate this equation with respect to x.
+
+786
+01:19:18,971 --> 01:19:37,011
+So derivation of argument, so y plus, by the product rule, derivation of x1 times second term y plus x times second term derivation y prime times cosine xy is equal to derivation of right hand side with respect to x.
+
+787
+01:19:37,431 --> 01:19:39,832
+So we have this by using product rule.
+
+788
+01:19:39,832 --> 01:19:43,332
+We have this when you substitute x1, y0.
+
+789
+01:19:43,971 --> 01:19:45,832
+So the slope is minus 1.
+
+790
+01:19:45,931 --> 01:19:48,692
+This is the slope of first tangent line.
+
+791
+01:19:49,112 --> 01:19:54,811
+When you substitute x minus 1, x minus 1, y0.
+
+792
+01:19:55,091 --> 01:19:56,771
+So this is also minus 2.
+
+793
+01:19:56,952 --> 01:20:00,032
+Okay, the slope of second tangent line is minus 2.
+
+794
+01:20:00,351 --> 01:20:03,952
+As you see, they have the same slope.
+
+795
+01:20:03,952 --> 01:20:07,152
+That's why they are parallel to each other.
+
+796
+01:20:07,351 --> 01:20:07,971
+Collinear.
+
+797
+01:20:08,612 --> 01:20:09,292
+Parallel.
+
+798
+01:20:11,811 --> 01:20:13,511
+Means collinear.
+
+799
+01:20:15,912 --> 01:20:16,172
+Okay.
+
+800
+01:20:16,731 --> 01:20:17,072
+Now.
+
+801
+01:20:19,632 --> 01:20:21,811
+Is there an equation about this solution?
+
+802
+01:20:24,771 --> 01:20:26,252
+Sorusu olan yok galiba.
+
+803
+01:20:32,884 --> 01:20:39,203
+Okay, so this is a very nice question. You may see such question in the test exam. Focus on this.
+
+804
+01:20:48,404 --> 01:20:51,344
+Evet, let me explain this in English.
+
+805
+01:20:51,804 --> 01:20:55,224
+So we have some function, which is a differentiable function, of course.
+
+806
+01:20:55,224 --> 01:21:01,644
+So from R to R, such that G of 1, G prime of 1 is equal to 4.
+
+807
+01:21:02,204 --> 01:21:09,884
+And we have another function from R to R, such that F of X is given by G of X squared over 1 plus X squared.
+
+808
+01:21:10,264 --> 01:21:17,364
+By using linear approximation method or differential calculus, so compute some approximate value for this.
+
+809
+01:21:17,364 --> 01:21:21,664
+F of 1.725, 1.25.
+
+810
+01:21:21,664 --> 01:21:24,984
+I think, is it clear to you?
+
+811
+01:21:27,624 --> 01:21:40,804
+So we have two functions, F and G, such that G of 1, G prime of 1, 4, and F of X is equal to G of X squared plus X squared over 1 plus X squared.
+
+812
+01:21:40,804 --> 01:21:48,004
+Your goal is to obtain some approximate value for F of 1.25.
+
+813
+01:21:48,004 --> 01:21:50,744
+Bye.
+
+814
+01:22:36,307 --> 01:22:36,807
+Evet.
+
+815
+01:23:16,148 --> 01:23:17,768
+Ok, let's see the solution.
+
+816
+01:23:18,828 --> 01:23:21,528
+So we again write linearization of f.
+
+817
+01:23:21,908 --> 01:23:26,627
+L of x is equal to f of a plus f prime of a times x minus a.
+
+818
+01:23:27,108 --> 01:23:30,347
+So we need to choose a value as a1 here.
+
+819
+01:23:30,688 --> 01:23:36,408
+So we need to compute f of 1 by using this rule f of 1, g of 1 over 1 plus 1.
+
+820
+01:23:36,547 --> 01:23:40,627
+So by using the information given in the equation, so we know g of 1, 4.
+
+821
+01:23:41,288 --> 01:23:42,948
+So this is 2, the answer is 2.
+
+822
+01:23:43,168 --> 01:23:44,068
+F of 1, 2.
+
+823
+01:23:44,068 --> 01:23:48,728
+So f prime of x by using the product rule and chain rule.
+
+824
+01:23:49,387 --> 01:23:55,208
+So derivation of nominator 2x times g prime of x squared times denominator minus.
+
+825
+01:23:55,988 --> 01:24:02,627
+And the nominator time derivation of denominator 2x over the square of denominator here.
+
+826
+01:24:03,188 --> 01:24:08,448
+Now when you substitute x1 into derivation function and by using these informations.
+
+827
+01:24:09,087 --> 01:24:11,728
+So we have f prime of 1 as 2.
+
+828
+01:24:11,728 --> 01:24:19,068
+Ok, now you substitute those obtained values into linearization formula.
+
+829
+01:24:19,828 --> 01:24:22,228
+So you are going to obtain 2.5.
+
+830
+01:24:22,688 --> 01:24:23,568
+Is that an equation?
+
+831
+01:24:23,568 --> 01:24:25,568
+So you are going to obtain 2.5.
+
+832
+01:24:25,568 --> 01:24:39,068
+So you are going to obtain 3.5.
+
+833
+01:24:27,923 --> 01:24:40,923
+Okay? Okay? Okay, so this is homework for you. Okay, let's try to solve this problem.
+
+834
+01:26:23,828 --> 01:26:40,928
+Okay, friends, you can download these lecture notes from my Eves' web page. Okay, you know my password. Also, you can download this. In fact, this is the lecture notes of Pınar Hoca. Okay, you can download this from the web page of Pınar Hoca.
+
+835
+01:26:52,083 --> 01:27:22,083
+Şimdi bu,
+
+836
+01:27:22,083 --> 01:28:22,083
+bu, bu
+
+837
+01:28:22,083 --> 01:28:33,884
+iteration as x goes, as h goes to 0 from left hand side f of 0 plus h minus f of 0 over h. So in that case because of this fact, so we need to use this rule.
+
+838
+01:28:34,344 --> 01:28:49,583
+Okay, tangent sine h minus 0 over h. Now as you see, so when you multiply and divide by sine h, so nothing changed, simplify, as you see, but we know that sine h goes, if you do this change of variable,
+
+839
+01:28:49,583 --> 01:29:03,684
+so we know that u goes to 0 as h goes to 0, we know that tangent u over u as u goes to 0 goes to 1, this goes to 1, this is also an answer, so an answer is 1.
+
+840
+01:29:04,023 --> 01:29:12,083
+So as you see, right hand side limit, right hand, sorry, right hand side slope, left hand side slope, same, 1.
+
+841
+01:29:12,463 --> 01:29:18,063
+So that's why f prime of 0 is 1. Okay, this is the answer. It is differentiable.
+
+842
+01:29:18,063 --> 01:29:29,743
+It is differentiable at the point 0. I think by conjugate method, you may solve this. Okay, this is homework for you.
+
+843
+01:29:32,923 --> 01:29:42,403
+Okay, this is also a simple one. Differentiable everywhere, differentiable everywhere, but first of all, you need to make sure that f is continuous.
+
+844
+01:29:42,403 --> 01:29:47,403
+For the continuity of f, you need to find out some proper a, b value.
+
+845
+01:29:48,023 --> 01:29:55,224
+And after obtaining this b value for continuity, you can directly derivate this piece, and you can directly derivate this piece.
+
+846
+01:29:55,503 --> 01:30:02,644
+Just substitute x0 to obtain derivation functions and obtain proper values.
+
+847
+01:30:02,644 --> 01:30:06,203
+Okay, I can, this is homework for you. You can do this, I think.
+
+848
+01:30:07,523 --> 01:30:08,523
+This is simple one.
+
+849
+01:30:08,523 --> 01:30:29,144
+Thank you.
+
+850
+01:30:15,091 --> 01:30:21,331
+Ok, we solved some similar problem to this. I think you can solve this.
+
+851
+01:30:28,307 --> 01:30:30,307
+Okay, so you may solve this.
+
+852
+01:30:34,804 --> 01:30:47,524
+I think this is a simple one. Compute linear, by using linear approximative method, linear approximative method, compute this value, okay, by using these informations.
+
+853
+01:30:57,652 --> 01:30:59,652
+also this.
+
+854
+01:31:02,212 --> 01:31:08,612
+so because of this fact not the French will everywhere so you need you have to use.
+
+855
+01:31:10,292 --> 01:31:14,771
+have to use the definition of derivation.
+
+856
+01:31:20,148 --> 01:31:21,648
+You need to investigate the
+
+857
+01:31:21,648 --> 01:31:23,587
+differentiability of this function at the
+
+858
+01:31:23,587 --> 01:31:25,028
+point x0. Okay?
+
+859
+01:31:26,347 --> 01:31:27,188
+Now, so not
+
+860
+01:31:27,188 --> 01:31:29,347
+differentiable. You may see this.
+
+861
+01:31:29,448 --> 01:31:30,528
+Bunları çözün arkadaşlar.
+
+862
+01:31:32,528 --> 01:31:33,627
+Evet, bu lopitalsiz
+
+863
+01:31:33,627 --> 01:31:34,768
+bunu dedik zaten.
+
+864
+01:31:35,568 --> 01:31:37,768
+Logaritmik fonksiyonlara gelmeye çalışıyorum
+
+865
+01:31:37,768 --> 01:31:39,948
+ama burada bitirelim arkadaşlar.
+
+866
+01:31:40,347 --> 01:31:41,528
+Tamam. Haftaya devam
+
+867
+01:31:41,528 --> 01:31:43,467
+edeceğiz. Kaldığımız yerden devam
+
+868
+01:31:43,467 --> 01:31:45,768
+edeceğiz. Birazcık daha soru çözerim.
+
+869
+01:31:46,788 --> 01:31:47,507
+Birkaç
+
+870
+01:31:47,507 --> 01:31:49,568
+konu var. Onu da bitiririm. Ondan sonra soru
+
+871
+01:31:49,568 --> 01:31:51,748
+çözerim. Soruları
+
+872
+01:31:51,748 --> 01:31:53,648
+bitirmiş oluruz. Konuları bitirmiş oluruz
+
+873
+01:31:53,648 --> 01:31:54,368
+sınavdan önce.
+
+874
+01:31:55,448 --> 01:31:57,568
+Lopital var. Üstel fonksiyonlar
+
+875
+01:31:57,568 --> 01:31:59,648
+var. Ekstremun kritik değerler var.
+
+876
+01:31:59,807 --> 01:32:01,807
+Onları bitirdikten sonra ondan sonra
+
+877
+01:32:01,807 --> 01:32:03,668
+sorulara yöneleceğiz.
+
+878
+01:32:03,828 --> 01:32:05,608
+Bol bol soru çözeceğiz gençler. Tamam?
+
+879
+01:32:05,988 --> 01:32:06,887
+Var mı itiraz olan?
+
+880
+01:32:10,108 --> 01:32:11,807
+Hocam ben anlamadım dediğiniz yer var mı?
+
+881
+01:32:14,807 --> 01:32:15,408
+Okay.
+
+882
+01:32:15,627 --> 01:32:17,587
+So don't worry Elavi.
+
+883
+01:32:17,587 --> 01:32:19,768
+We are going to talk about midterm
+
+884
+01:32:19,768 --> 01:32:20,868
+exam next week.
+
+885
+01:32:21,608 --> 01:32:21,927
+Okay?
+
+886
+01:32:23,248 --> 01:32:25,127
+I will introduce topics of
+
+887
+01:32:25,127 --> 01:32:27,288
+midterm exam next week.
+
+888
+01:32:38,036 --> 01:32:45,796
+Okay, if you don't have any questions, so let me finish our lecture today. See you next week.
