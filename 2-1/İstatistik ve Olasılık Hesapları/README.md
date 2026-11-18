@@ -37,6 +37,7 @@
 ## 📖 Faydalı Olabilecek Kaynaklar
 
 - 📄 **Çıkmış:** [Çıkmış sorular linki](https://drive.google.com/drive/folders/15OgFx9BIu8Gur6ra1izx2N7-6Z2BfAim?usp=drive_link) ✨
+- 📄 **Sınav:** [2026 Vize 1 soruları](./sınavlar/2026/vize_1.pdf) ✨
 - 📄 **Ders Kayıtları:** [İstatistik ve Olasılık Hesapları Ders Kayıtları Altyazıları](./ders_kayitlari/) ✨
 - 📄 **Not:** [Efe Girgin'in notları](./slaytlar_notlar/2021/efe_girgin) ✨
 - 📄 **Not:** [Esma Nur Çilekaya'nın elyazısı notu](./slaytlar_notlar/2023/esma_nur_cilekaya/not.pdf) ✨
