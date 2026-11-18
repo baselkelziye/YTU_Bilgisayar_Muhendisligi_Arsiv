@@ -1,0 +1,2283 @@
+1
+00:03:59,668 --> 00:04:00,348
+Hello everyone.
+
+2
+00:04:10,419 --> 00:04:15,739
+Today we continue our lecture with some special types of matrices.
+
+3
+00:04:18,740 --> 00:04:27,800
+Actually, we have already known one special type, which is zero matrix.
+
+4
+00:04:27,800 --> 00:04:45,719
+We say the matrix whose all entries are zero is called the spatial matrix zero matrix, and we denote this type of matrix as O.
+
+5
+00:04:45,719 --> 00:04:55,199
+Another very important and special type of matrix is that the diagonal matrix,
+
+6
+00:04:55,199 --> 00:04:57,199
+A.
+
+7
+00:04:57,199 --> 00:04:58,980
+The diagonal matrix A.
+
+8
+00:04:58,980 --> 00:04:59,099
+A.
+
+9
+00:05:03,764 --> 00:05:14,603
+is the metrics whose entries other than the main main diagonal are zero.
+
+10
+00:05:14,603 --> 00:05:30,564
+So if A is a metrics, since we are talking about the main diagonal,
+
+11
+00:05:35,540 --> 00:05:48,920
+It has to be the schematics, so we have a schematics, and we only have the entries on the main diagram.
+
+12
+00:05:50,920 --> 00:05:56,000
+So all the other entries are zero.
+
+13
+00:05:57,000 --> 00:06:02,840
+And this is called diagonal matrix.
+
+14
+00:06:10,259 --> 00:06:33,420
+A, I, J are all zero, for I is not equal to J. So if I is equal to J, then we have an entry. Of course, some of them can be zero, or all of them can be zero. So zero is also, zero matrix is also diagonal matrix.
+
+15
+00:06:40,692 --> 00:06:44,232
+0 is also a diagonal matris.
+
+16
+00:06:48,372 --> 00:07:00,872
+A secure matrix is a special case for a diagonal matrix, if in a diagonal matrix, say B.
+
+17
+00:07:07,156 --> 00:07:10,776
+If levinal elements are all equal,
+
+18
+00:07:24,564 --> 00:07:28,564
+Then this type of matrix is called scalar matrix.
+
+19
+00:07:55,827 --> 00:08:01,527
+Identif matrix, again, is a square matrix.
+
+20
+00:08:07,956 --> 00:08:10,036
+Lambda is equal to one.
+
+21
+00:08:11,036 --> 00:08:12,836
+So in identity matrix,
+
+22
+00:08:15,076 --> 00:08:16,196
+the terms
+
+23
+00:08:16,196 --> 00:08:18,756
+other than
+
+24
+00:08:22,579 --> 00:08:24,599
+Main diagonal alt 0.
+
+25
+00:08:29,235 --> 00:08:40,436
+And the entries on the main diagonal are all one. This is called identity matrix.
+
+26
+00:08:43,988 --> 00:08:52,488
+ve genelde denot the identity matrix of order n by i n.
+
+27
+00:08:56,755 --> 00:09:01,635
+if we are talking about n by n matrix.
+
+28
+00:09:04,635 --> 00:09:10,275
+We get to the example and determine which type of matrix we have.
+
+29
+00:09:12,275 --> 00:09:15,076
+A is 3 by 3 matrix.
+
+30
+00:09:17,555 --> 00:09:20,355
+B is again 3 by 3 matrix.
+
+31
+00:09:21,196 --> 00:09:24,716
+And I3 is also 3 by 3 matrix.
+
+32
+00:09:30,484 --> 00:09:37,984
+When we look at the entries of A, we only have the entries on the main diagonal.
+
+33
+00:09:40,004 --> 00:09:47,384
+And the entries are different from each other, so A is a diagonal matrix.
+
+34
+00:09:53,235 --> 00:10:01,155
+ve b, again, it's a square matrix ve altıları, main diagram only.
+
+35
+00:10:07,700 --> 00:10:11,700
+ve altı entrerler, eşel ve eşel olarak, 2.
+
+36
+00:10:11,700 --> 00:10:15,700
+O, matris B'ye bir sker matris.
+
+37
+00:10:20,244 --> 00:10:33,244
+And the last one is the identity matrix of order 3 since we only have the entries on the main diagonal and all these entries are 1.
+
+38
+00:10:45,043 --> 00:10:45,384
+Ok?
+
+39
+00:10:53,011 --> 00:10:57,291
+Yani, her zaman...
+
+40
+00:11:03,604 --> 00:11:04,844
+Identity Matrix
+
+41
+00:11:08,467 --> 00:11:09,187
+is
+
+42
+00:11:17,875 --> 00:11:19,275
+Zizikir ve numatiks.
+
+43
+00:11:36,436 --> 00:11:39,436
+And every scalar matrix is also...
+
+44
+00:11:43,059 --> 00:11:44,259
+Diagonal Matrix
+
+45
+00:11:52,148 --> 00:11:56,408
+Or maybe we can draw one diagram.
+
+46
+00:12:13,971 --> 00:12:14,531
+Kaylar?
+
+47
+00:12:24,532 --> 00:12:25,612
+Diagonal matrix.
+
+48
+00:12:27,951 --> 00:12:28,392
+Okay.
+
+49
+00:12:29,591 --> 00:12:30,451
+And also
+
+50
+00:12:30,451 --> 00:12:34,852
+it is easy
+
+51
+00:12:34,852 --> 00:12:36,432
+to see that
+
+52
+00:12:36,432 --> 00:12:38,932
+if A is
+
+53
+00:12:38,932 --> 00:12:40,612
+M by M matrix, then
+
+54
+00:12:40,612 --> 00:12:44,852
+A times identif matrix
+
+55
+00:12:44,852 --> 00:12:46,032
+of order M
+
+56
+00:12:46,032 --> 00:12:48,672
+because we need to
+
+57
+00:12:48,672 --> 00:12:49,252
+or
+
+58
+00:12:49,252 --> 00:12:52,792
+for multiplication of
+
+59
+00:12:52,792 --> 00:12:54,412
+matrices, we need
+
+60
+00:12:54,532 --> 00:12:56,091
+the number of
+
+61
+00:12:56,091 --> 00:13:00,652
+columns of the first
+
+62
+00:13:00,652 --> 00:13:02,211
+matrix, which is N
+
+63
+00:13:02,211 --> 00:13:04,032
+has to be same
+
+64
+00:13:04,032 --> 00:13:06,672
+the number of the
+
+65
+00:13:06,672 --> 00:13:08,192
+rows of the second one. So
+
+66
+00:13:08,192 --> 00:13:10,372
+A times the
+
+67
+00:13:10,372 --> 00:13:12,192
+identif matrix of order N
+
+68
+00:13:12,192 --> 00:13:13,292
+gives A.
+
+69
+00:13:15,352 --> 00:13:15,831
+And
+
+70
+00:13:15,831 --> 00:13:18,471
+the identif matrix of order
+
+71
+00:13:18,471 --> 00:13:19,992
+N times A
+
+72
+00:13:19,992 --> 00:13:22,292
+also gives matrix A
+
+73
+00:13:22,292 --> 00:13:24,471
+and for a schema.
+
+74
+00:13:24,471 --> 00:13:38,992
+Thank you.
+
+75
+00:13:28,307 --> 00:13:30,187
+If it is a scalar matris,
+
+76
+00:13:35,956 --> 00:13:43,776
+From here, you see that the entries on the main neuron are all the same.
+
+77
+00:13:43,776 --> 00:13:50,556
+So, the matrix can be written as the scalar times identimatrix.
+
+78
+00:13:56,244 --> 00:14:02,004
+We can also define the powers of a matrix if we have a positive integer p.
+
+79
+00:14:03,244 --> 00:14:10,864
+A to the power of p is equal to a times a times a by p times.
+
+80
+00:14:12,663 --> 00:14:19,504
+And especially a to the power of zero is defined by the identity matrix.
+
+81
+00:14:23,475 --> 00:14:39,015
+And for powers of a matrix, if we have non-negative integers P and Q, we have some laws of exponentials for the line numbers S.
+
+82
+00:14:39,015 --> 00:14:46,556
+A to the P times A to the Q is equal to A to the P plus Q.
+
+83
+00:14:48,176 --> 00:14:54,296
+And A to the P to the Q is equal to A to the P times Q.
+
+84
+00:14:59,155 --> 00:15:07,555
+A times B to the P does not hold for square matrices.
+
+85
+00:15:09,315 --> 00:15:13,395
+If we have A times B is equal to B times A, then
+
+86
+00:15:17,683 --> 00:15:27,583
+This property is satisfied, but in general, A times B to the P is not equal to A to the P times B to the P.
+
+87
+00:15:30,103 --> 00:15:33,124
+And we called a matrix is upper triangular.
+
+88
+00:15:35,124 --> 00:15:36,124
+If...
+
+89
+00:15:40,275 --> 00:15:52,955
+Aij is equal 0, for i is greater than j. So, it means that we have again a square matrix.
+
+90
+00:15:57,299 --> 00:15:58,099
+811
+
+91
+00:16:32,820 --> 00:16:34,660
+This is all for triangular matris.
+
+92
+00:16:42,580 --> 00:16:46,160
+Observe that, bir ehmet tren galır ki, yaş.
+
+93
+00:16:54,035 --> 00:17:01,035
+ve diğer birçok
+
+94
+00:17:03,796 --> 00:17:15,796
+So, in upper triangular matrix, we have the entries, the non-zero entries, above the main diagonal.
+
+95
+00:17:17,395 --> 00:17:27,796
+And if we have the entries below the main diagonal, then it is called lower triangular.
+
+96
+00:17:35,347 --> 00:17:50,627
+If i is smaller than j, all the entries aij are zero, then it's called lower triangulars. So the lower triangulomatix is like this.
+
+97
+00:18:18,963 --> 00:18:35,283
+This is a global trianglish. Since we have the entries, we go to main diagram. Okay, this is a global trianglish.
+
+98
+00:18:46,099 --> 00:19:02,980
+Actually, it is also important to note that a diagonal matrix, which only includes the entries, non-zero entries on the main diagonal, is both upper and lower triangles.
+
+99
+00:19:07,667 --> 00:19:25,267
+Matris A, this is a square matrix, and here it is the main diagonal of this matrix, and we see that the entries on the above the main diagonal are non-zeroes, so this is upper triangular.
+
+100
+00:19:32,723 --> 00:19:38,723
+Ve bu matrix B, bu matrix B'ye görebiliğinde bir kısım var.
+
+101
+00:19:38,723 --> 00:19:41,723
+Ve bu kısımda,
+
+102
+00:19:41,723 --> 00:19:48,723
+bu kısımda,
+
+103
+00:20:15,667 --> 00:20:19,667
+Okay, we have two important spatial matrices.
+
+104
+00:20:20,667 --> 00:20:23,267
+A matrix A with three entries.
+
+105
+00:20:23,267 --> 00:20:30,667
+Three entries means the matrix with all entries are in numbers or scalars.
+
+106
+00:20:30,667 --> 00:20:33,667
+It's called C-metric.
+
+107
+00:20:33,667 --> 00:20:38,667
+If the transpose of the matrix is equal to itself.
+
+108
+00:20:38,667 --> 00:20:46,667
+If the transpose of the matrix is equal to itself and it's called C-metric.
+
+109
+00:20:46,667 --> 00:20:58,667
+And it's called C-metric if the transpose of the matrix is equal to the negative of the matrix.
+
+110
+00:20:58,667 --> 00:21:05,667
+If a transpose is equal to negative A, then it is called C-metric.
+
+111
+00:21:05,667 --> 00:21:08,667
+Get to the examples.
+
+112
+00:21:08,667 --> 00:21:15,667
+A is a symmetric matrix because let us take the transpose of A.
+
+113
+00:21:15,667 --> 00:21:25,667
+Transpose means we interchange the rows of A with the columns.
+
+114
+00:21:25,667 --> 00:21:28,667
+For columns with the rows.
+
+115
+00:21:28,667 --> 00:21:39,667
+So first row will be the first column of the transpose matrix.
+
+116
+00:21:39,667 --> 00:21:42,667
+So one, two, three.
+
+117
+00:21:42,667 --> 00:21:45,667
+And this will be the second column.
+
+118
+00:21:48,667 --> 00:21:51,667
+So four, five.
+
+119
+00:21:51,667 --> 00:22:01,667
+And the last row will be the last column of A transpose, which is three, five, six.
+
+120
+00:22:01,667 --> 00:22:11,667
+And looking at these two matrices, we see that A transpose is equal to A.
+
+121
+00:22:11,667 --> 00:22:14,667
+So it is C-metric.
+
+122
+00:22:16,667 --> 00:22:21,667
+And for the matrix B, it's a skew C-metric.
+
+123
+00:22:21,667 --> 00:22:24,667
+Let us take the transpose of P.
+
+124
+00:22:24,667 --> 00:22:41,667
+P transpose is 0 to 3, negative 2, 0, negative 4, and negative 3, 4, 0.
+
+125
+00:22:41,667 --> 00:22:42,667
+So let's take the transpose.
+
+126
+00:22:42,667 --> 00:23:08,667
+Let us take the transpose.
+
+127
+00:22:47,124 --> 00:22:55,124
+When we look at the B and P transpose, actually it is the negative of P.
+
+128
+00:23:00,276 --> 00:23:03,436
+So, B is a secure symmetric matrix.
+
+129
+00:23:04,916 --> 00:23:10,816
+So, we have the following conclusion for symmetric and secure symmetric matrices.
+
+130
+00:23:11,496 --> 00:23:17,916
+If A is a symmetric or secure symmetric matrix, it is actually a secure matrix.
+
+131
+00:23:22,291 --> 00:23:31,211
+If A is a symmetric matrix, then the entries of A are symmetric with respect to the main diagonal.
+
+132
+00:23:32,831 --> 00:23:38,932
+Look at the symmetric matrix A and here it is main diagonal.
+
+133
+00:23:39,971 --> 00:23:47,511
+And it says if A is a symmetric matrix, their entries are symmetric with respect to the main diagonal.
+
+134
+00:23:47,511 --> 00:23:56,071
+So symmetric means if we have two here, which is A21, so A12 is also the same.
+
+135
+00:23:56,951 --> 00:23:58,391
+These are symmetric.
+
+136
+00:23:59,131 --> 00:24:03,111
+And this is A31, which is same as A13.
+
+137
+00:24:03,951 --> 00:24:10,172
+And this is A32, which is equal to A23.
+
+138
+00:24:12,932 --> 00:24:13,611
+Okay.
+
+139
+00:24:13,611 --> 00:24:26,591
+So it means that a matrix is a symmetric if and only if Aij is equal to Ajr.
+
+140
+00:24:27,871 --> 00:24:29,231
+As here.
+
+141
+00:24:29,231 --> 00:24:29,391
+Yes.
+
+142
+00:24:33,172 --> 00:24:33,692
+Ei!
+
+143
+00:24:39,188 --> 00:24:48,648
+12 is equal to a21, a31 is equal to a13, and so on.
+
+144
+00:24:55,571 --> 00:25:04,871
+And a matrix A is a secure C matrix if and only if Aij is equal to negative Ajr.
+
+145
+00:25:13,587 --> 00:25:23,187
+Moreover, if it is a CQC matrix, then the entries on the main diagonal are all zero. This is very important.
+
+146
+00:25:24,248 --> 00:25:32,748
+Because in CQC matrix, we define the transpose of the matrix is equal to negative of the matrix.
+
+147
+00:25:32,748 --> 00:25:51,268
+So, since when we take the transpose, the entries on the main diagonal does not change, it means that to have the negative entry, all of the entries on the main diagonal has to be zero.
+
+148
+00:25:55,412 --> 00:26:04,292
+ve, another important problem for symmetric and skip symmetric matrices, is that if we have a square matrix of order n,
+
+149
+00:26:04,932 --> 00:26:11,011
+then this matrix can be written as the sum of the symmetric and skip symmetric matrices.
+
+150
+00:26:22,003 --> 00:26:31,203
+A matrix A is called, again we are talking about the square matrices, we have an m by m matrix.
+
+151
+00:26:32,163 --> 00:26:43,283
+If A to the power of p plus one is equal to A, when p is a positive integer, then A is called periodic.
+
+152
+00:26:43,283 --> 00:26:55,283
+And if p is the least such integer, then the matrix is said to have a period p.
+
+153
+00:26:57,203 --> 00:27:09,443
+And if the period of the matrix is one, it means if A square is equal to itself, then the matrix is called idempotent matrix.
+
+154
+00:27:09,443 --> 00:27:19,923
+The idempotent matrix is that if the square of the matrix is equal to itself, then it is called the idempotent matrix.
+
+155
+00:27:21,043 --> 00:27:29,203
+If the p plus one power of the matrix is equal to itself, then the matrix is called periodic matrix.
+
+156
+00:27:29,203 --> 00:27:44,083
+And if p is an integer such that satisfying this property, then it is called the period of the matrix.
+
+157
+00:27:45,923 --> 00:27:48,243
+Again, we have square matrix.
+
+158
+00:27:48,243 --> 00:27:54,723
+If the cube power of the matrix A is equal to zero matrix,
+
+159
+00:27:54,723 --> 00:28:00,723
+then the matrix is equal to zero.
+
+160
+00:28:00,723 --> 00:28:06,723
+So, if the cube power of the matrix A is equal to zero matrix,
+
+161
+00:28:06,723 --> 00:28:08,723
+then the matrix is equal to zero.
+
+162
+00:28:08,723 --> 00:28:10,723
+So, if the cube power of the matrix A is equal to zero matrix,
+
+163
+00:28:10,723 --> 00:28:12,723
+then the matrix is equal to zero.
+
+164
+00:28:12,723 --> 00:28:14,723
+So, if the cube power of the matrix A is equal to zero matrix,
+
+165
+00:28:14,723 --> 00:28:16,723
+then the matrix is equal to zero.
+
+166
+00:28:05,811 --> 00:28:14,491
+If the quid power of the matrix is equal to zero matrix, then this matrix is called important matrix.
+
+167
+00:28:14,951 --> 00:28:22,631
+And the least such positive integer q is called the index of the non-potence of the matrix.
+
+168
+00:28:22,631 --> 00:28:36,671
+And for again, a square matrix, if a square is equal to identity matrix, then this matrix is called involuntary matrix.
+
+169
+00:28:37,671 --> 00:28:51,251
+And the last one, for a real matrix, if a times a transpose is equal to identity matrix,
+
+170
+00:28:51,251 --> 00:28:59,291
+then actually later we will see that after defining the inverse of matrix,
+
+171
+00:28:59,291 --> 00:29:08,291
+we will see that actually it means that a transpose is equal to...
+
+172
+00:29:12,180 --> 00:29:14,180
+Üniversites, automatics.
+
+173
+00:29:18,291 --> 00:29:29,371
+We will see it later. So, now, the orthogonal matrix is that A times transpose of the matrix A is equal to identif matrix.
+
+174
+00:29:29,371 --> 00:29:45,571
+For example, this matrix is an orthogonal matrix, because if you multiply the matrix A with its orthogonal, you will see that it's equal to identif matrix of order 2.
+
+175
+00:29:50,836 --> 00:29:57,836
+Actually, we don't talk about the passionate matrices.
+
+176
+00:30:34,836 --> 00:30:39,875
+Ve now, we define the complex conjugate of a matrix.
+
+177
+00:30:41,955 --> 00:30:43,115
+Before this,
+
+178
+00:30:46,900 --> 00:30:47,860
+We know that
+
+179
+00:30:51,124 --> 00:31:06,463
+z, z can be written as a plus i times b, where i square is a spatial number, which is equal to, its square is equal to negative one.
+
+180
+00:31:07,903 --> 00:31:20,624
+And here a is the real part, and b is imaginary part.
+
+181
+00:31:31,443 --> 00:31:48,483
+And the conjugate of the complex number Z is denoted by Z bar and defined as, we take the negative sign of imaginary parts.
+
+182
+00:31:48,483 --> 00:31:56,604
+So Z conjugate is equal to A minus IB.
+
+183
+00:31:56,604 --> 00:32:01,604
+The conjugate of...
+
+184
+00:32:07,028 --> 00:32:09,028
+Z.
+
+185
+00:32:09,028 --> 00:32:15,028
+So, if you are talking about complex matrices,
+
+186
+00:32:15,028 --> 00:32:21,028
+complex matrices means the entries are complex numbers.
+
+187
+00:32:21,028 --> 00:32:26,028
+So we can also talk about the complex conjugate of the matrix.
+
+188
+00:32:26,028 --> 00:32:33,028
+And the complex conjugate of the complex matrix A is denoted by A bar.
+
+189
+00:32:33,028 --> 00:32:42,028
+And we take the conjugate of each entry of the matrix A.
+
+190
+00:32:42,028 --> 00:32:50,028
+For example, A is 2 by 2 complex matrix because it includes complex numbers.
+
+191
+00:32:50,028 --> 00:33:04,028
+Then the complex conjugate of A is take the conjugate of 1 plus i, 2 minus i, 3 and 4 times i.
+
+192
+00:33:04,028 --> 00:33:08,028
+So the conjugate of 1 plus i is 1 minus i.
+
+193
+00:33:08,028 --> 00:33:11,028
+The conjugate of 2 minus i is 2 plus i.
+
+194
+00:33:11,028 --> 00:33:16,028
+Since 3 is a real number, so its conjugate is equal to itself.
+
+195
+00:33:16,028 --> 00:33:21,028
+And 4 times i, the conjugate of 4 times i is negative 4 times i.
+
+196
+00:33:21,028 --> 00:33:28,028
+And we have the following properties of conjugate matrices.
+
+197
+00:33:28,028 --> 00:33:34,028
+If we have two complex matrices A and B with the appropriate sizes.
+
+198
+00:33:34,028 --> 00:33:36,028
+And here k is a scalar.
+
+199
+00:33:36,028 --> 00:33:40,028
+Then the conjugate of the matrix is equal to itself.
+
+200
+00:33:40,028 --> 00:33:47,028
+And the scalar times, scalar means a real number, scalar times.
+
+201
+00:33:47,028 --> 00:33:55,028
+The conjugate of the scalar times the matrix is equal to k times its conjugate.
+
+202
+00:33:55,028 --> 00:34:04,028
+And A plus B conjugate is equal to A conjugate plus B conjugate.
+
+203
+00:34:04,028 --> 00:34:10,028
+A times B conjugate actually is equal to A conjugate times B conjugate.
+
+204
+00:34:10,028 --> 00:34:25,028
+So the conjugate of the matrix is equal to A conjugate.
+
+205
+00:34:34,516 --> 00:34:38,516
+A conjugate times B conjugate.
+
+206
+00:34:38,516 --> 00:34:44,516
+Ve a conjugate of the transpose of the matrix
+
+207
+00:34:44,516 --> 00:34:47,516
+is equal to the conjugate of each transpose.
+
+208
+00:34:47,516 --> 00:34:50,516
+So, these properties are very important.
+
+209
+00:35:20,820 --> 00:35:43,620
+We will give to spatial matrix related to context matrices. If we have m by m context matrix A, if the conjugate transpose of the matrix is equal to itself, then this matrix is called Hermitian.
+
+210
+00:35:47,188 --> 00:36:05,577
+İlk olarak, bu metriksin bir metriksin bir metriksin bir metriksin bir metriksin bir metriksin bir metriksin bir metriksin bir metriksin bir metriksin bir metriksin bir metriksin bir metriksin bir metriksin bir metriksin bir metriksin bir metriksin bir metriksin bir metriksin bir metriksin bir metriksin bir metriksin bir metriksin bir metriksin bir metriksin bir metriksin bir metriksin bir metriksin bir metriksin bir metriksin bir metriksin bir metriksin bir metriksin bir metriksin bir metriksin bir metriksin bir metriksin bir metriksin bir metriksin bir metriksin bir metriksin bir metriksin bir metriksin bir metriks
+
+211
+00:36:08,947 --> 00:36:14,167
+The conjugate of A, J, R is equal to A, I, J.
+
+212
+00:36:16,507 --> 00:36:18,687
+For all, I, N, J.
+
+213
+00:36:22,579 --> 00:36:35,279
+Actually, we can think that since every real symmetric matrix is hermitian, because the conjugate of all real numbers are the same.
+
+214
+00:36:36,719 --> 00:36:46,279
+So, we may consider hermitian matrices as the analogs of symmetric matrices in real matrices.
+
+215
+00:36:46,279 --> 00:36:58,279
+And entries on the main diagonal of hermitian matrices are all real numbers, because we are talking about the conjugate of the matrices.
+
+216
+00:37:03,380 --> 00:37:04,500
+Look at the example.
+
+217
+00:37:07,700 --> 00:37:20,180
+The matrix A is hematian because taking the conjugate of the matrix first, or it doesn't matter, we can also take first the transpose of the matrix.
+
+218
+00:37:21,140 --> 00:37:23,940
+Let us take first the conjugate of all entries.
+
+219
+00:37:27,572 --> 00:37:32,412
+Negative i, 1 minus i, 2 minus i.
+
+220
+00:37:38,900 --> 00:37:57,280
+Take the transpose of this matrix gives 1, negative i, 1 plus i, sorry, 1 minus i, i, negative 5, 2 minus i, 1 plus i, 2 plus i, and 3.
+
+221
+00:37:59,579 --> 00:38:01,300
+And we will see that
+
+222
+00:38:05,076 --> 00:38:12,876
+This matrix is equal to the matrix A. So, the given matrix is Hermitian.
+
+223
+00:38:17,460 --> 00:38:41,619
+Another definition of spatial matrix for complex matrix is that, Sikub hermitian, as in Sikub symmetric matrix, we have a complex matrix, m by m, complex matrix A, and it is called Sikub hermitian if a conjugate transpose is equal to negative A.
+
+224
+00:38:41,619 --> 00:39:05,940
+So, it is equivalent to say that A, J, I, K, B is equal to negative A, I, J, and we can compute from here that the entries on the main diagonal of a secure hermitian matrix are zero or complex number with only imaginary part.
+
+225
+00:39:11,411 --> 00:39:17,411
+We have a matrix A, take the conjugate of this matrix.
+
+226
+00:39:24,596 --> 00:39:26,996
+ve Transpose gives
+
+227
+00:39:32,019 --> 00:39:53,559
+Negatif i, 1 plus 3, 1 plus i, 2, negatif 1 plus i, negatif 3, i, negatif i, negatif 2, negatif i, 0.
+
+228
+00:40:00,148 --> 00:40:11,148
+ve vekizde, A-conjugate-transpose, is equal to negative A.
+
+229
+00:40:11,148 --> 00:40:17,148
+So, this matrix is a secure hermitic matrix.
+
+230
+00:40:22,708 --> 00:40:33,088
+So, from here, we have learned special types of matrices, and these are very important.
+
+231
+00:40:36,088 --> 00:40:39,088
+First, diagonal matris.
+
+232
+00:40:44,692 --> 00:40:46,692
+Triangler Matrices
+
+233
+00:40:53,300 --> 00:40:58,300
+Apro-lover, then we define...
+
+234
+00:41:01,940 --> 00:41:03,300
+Symmetric Matrix,
+
+235
+00:41:06,340 --> 00:41:08,579
+and also secure symmetric.
+
+236
+00:41:17,172 --> 00:41:20,172
+And then we define the periodic matrix.
+
+237
+00:41:25,364 --> 00:41:28,364
+After periodic pratik, we define the item potent.
+
+238
+00:41:34,356 --> 00:41:37,356
+vektör,
+
+239
+00:41:41,748 --> 00:41:42,668
+İmolim 3.
+
+240
+00:41:53,876 --> 00:42:00,376
+For complex matrices, we define hermitian and skew hermitian matrices.
+
+241
+00:42:09,331 --> 00:42:39,331
+Bu, bu
+
+242
+00:42:39,331 --> 00:42:50,251
+types of matrices, the definitions of these matrices. We have also the orthogonal matrix here, sorry for this. We have also orthogonal matrix.
+
+243
+00:43:10,483 --> 00:43:10,923
+No.
+
+244
+00:43:14,387 --> 00:43:21,547
+We will introduce very, very important matrix, which is called the inverse of the matrix.
+
+245
+00:43:22,668 --> 00:43:30,728
+Actually, let us first define a non-singular or invertible matrix.
+
+246
+00:43:32,027 --> 00:43:42,208
+And by M matrix, a square matrix A is called non-singular or invertible if you can find a matrix B,
+
+247
+00:43:42,208 --> 00:43:53,288
+such that A times B is equal to B times A, and this is equal to identity matrix.
+
+248
+00:43:55,567 --> 00:44:09,927
+In this case, A is called a non-singular matrix or invertible matrix, and B is called the inverse of
+
+249
+00:44:09,927 --> 00:44:15,788
+A, A, and A, and A.
+
+250
+00:44:19,476 --> 00:44:20,675
+Denot by,
+
+251
+00:44:23,675 --> 00:44:24,956
+b is equal to
+
+252
+00:44:24,956 --> 00:44:27,115
+a inverse.
+
+253
+00:44:35,891 --> 00:44:52,371
+Actually, here it is important to note that if A times B is equal to the identif matrix IN, then B times A is also equal to identif matrix IN.
+
+254
+00:44:52,371 --> 00:45:05,152
+So, if you want to verify that inverse of the matrix A is B, we need only verify A times B is equal to identif matrix or B times A is equal to identif matrix.
+
+255
+00:45:05,291 --> 00:45:10,591
+No need to verify both of them. Okay, we only verify one of them.
+
+256
+00:45:20,083 --> 00:45:21,123
+We get to the example.
+
+257
+00:45:25,108 --> 00:45:27,428
+We have matrix A and matrix B.
+
+258
+00:45:28,888 --> 00:45:30,888
+And let us multiply these two matrices.
+
+259
+00:45:31,268 --> 00:45:32,327
+A times B.
+
+260
+00:45:35,128 --> 00:45:37,468
+So, 3.
+
+261
+00:45:38,248 --> 00:45:43,068
+So, 2 times negative 1.
+
+262
+00:45:43,728 --> 00:45:44,968
+3 over 2.
+
+263
+00:45:47,208 --> 00:45:49,847
+1, negative 1.
+
+264
+00:45:51,068 --> 00:45:54,847
+So, let us remember how we multiply two matrices.
+
+265
+00:45:55,108 --> 00:46:05,428
+We take the inner product of each row with each column of the second one.
+
+266
+00:46:05,428 --> 00:46:12,968
+So, 2 times negative 1 plus 3 times 1, which is 1.
+
+267
+00:46:15,588 --> 00:46:23,288
+And this entry will be the inner product of the first row with the second column of the second matrix.
+
+268
+00:46:23,288 --> 00:46:25,948
+So, 2 times 3 over 2, which is 3.
+
+269
+00:46:27,248 --> 00:46:31,408
+Plus 3 times negative 1, which is negative 3.
+
+270
+00:46:31,648 --> 00:46:33,608
+So, it gives 0.
+
+271
+00:46:33,608 --> 00:46:42,088
+And for this entry, it is C2, 1.
+
+272
+00:46:43,148 --> 00:46:52,708
+So, we take the second row of A and the first column of the second matrix.
+
+273
+00:46:52,708 --> 00:46:59,788
+So, 2 times negative 1, negative 2 plus 2 times 1, 2.
+
+274
+00:46:59,928 --> 00:47:01,288
+So, it gives 0.
+
+275
+00:47:01,288 --> 00:47:21,228
+And you can find C2, 2.
+
+276
+00:47:15,891 --> 00:47:17,031
+Which we take
+
+277
+00:47:29,972 --> 00:47:38,532
+Segen proof of the first matrix and second column of the second matrix.
+
+278
+00:47:38,532 --> 00:47:48,372
+So, 2 times 3 over 2, 3 plus 2 times negative 1, negative 2, so it gives 1.
+
+279
+00:47:53,172 --> 00:47:57,172
+Bu, ordu 2'ye kadar,
+
+280
+00:47:57,172 --> 00:48:02,172
+ve bu, ordu 2'ye kadar,
+
+281
+00:48:02,172 --> 00:48:05,172
+bu, ordu 2'ye kadar,
+
+282
+00:48:05,172 --> 00:48:07,172
+bu, ordu 2'ye kadar.
+
+283
+00:48:10,900 --> 00:48:17,380
+The theorem says if a matrix has an inverse, then it is unique.
+
+284
+00:48:18,340 --> 00:48:25,059
+And here it's proof, but we need to prove this theorem.
+
+285
+00:48:25,780 --> 00:48:33,300
+It is important to note that if a matrix is invertible, then its inverse is unique.
+
+286
+00:48:33,300 --> 00:48:41,780
+And we denote the inverse of the matrix as the inverse.
+
+287
+00:48:45,331 --> 00:48:46,771
+Now look at the example.
+
+288
+00:48:49,491 --> 00:48:59,411
+Then we have a matrix A and we think that or we know that the matrix A is invertible.
+
+289
+00:48:59,411 --> 00:49:03,571
+It has an inverse. Then let us try to find its inverse.
+
+290
+00:49:09,588 --> 00:49:30,348
+Since A is 2x2 matrix, the inverse of this matrix has to be the same type. So it has to be 2x2x2. And say, the inverse of the matrix A, B, C, D. The entries are A, B, C, and D.
+
+291
+00:49:30,348 --> 00:49:47,807
+Now, we try to find A, B, C, and D. How can we find? We can find using this fact or this definition. A times A inverse has to give identifix of order 2.
+
+292
+00:49:52,467 --> 00:49:59,748
+So, 1, 2, 3, 4,
+
+293
+00:50:03,411 --> 00:50:33,411
+A times A times C times A
+
+294
+00:50:33,411 --> 00:51:10,791
+A times A
+
+295
+00:51:13,811 --> 00:51:29,891
+So, we have actually a plus 4c is equal to 1 and 3a plus 4c is equal to 0.
+
+296
+00:51:33,684 --> 00:51:39,484
+We can find a and c from these two equations because we have two unknowns and two equations.
+
+297
+00:51:40,324 --> 00:51:48,224
+And similar to this, we can also find b and t from these two equations. b plus 2d is equal to 0.
+
+298
+00:51:49,084 --> 00:51:55,844
+And 3b plus 4d is equal to 1.
+
+299
+00:51:56,844 --> 00:51:58,224
+Here, if you multiply...
+
+300
+00:52:02,996 --> 00:52:10,916
+The first equation by negative two, then we have A is equal to
+
+301
+00:52:18,931 --> 00:52:24,271
+So, we have A is equal to negative 2.
+
+302
+00:52:30,804 --> 00:52:40,284
+And c is equal to, if a is negative to, c is equal to 3 over 2.
+
+303
+00:52:44,052 --> 00:52:48,552
+Ve bu ve d'yeşitli bir şey.
+
+304
+00:52:48,552 --> 00:53:18,552
+Ve bu, a-2, c-3, b-1, d-1,
+
+305
+00:53:18,552 --> 00:53:25,552
+For example, this is very nice to see that A times A inverse gives the identity matrix.
+
+306
+00:53:26,251 --> 00:53:26,392
+Okay.
+
+307
+00:53:27,612 --> 00:53:32,291
+So in general, we don't use the definition to find the inverse of matrix.
+
+308
+00:53:32,832 --> 00:53:36,791
+We have another method for finding the inverse of matrix.
+
+309
+00:53:48,916 --> 00:53:55,236
+Let us take a 10 minutes break, then we will continue with some properties of universal matrices.
+
+310
+01:07:49,940 --> 01:07:50,940
+Hello again.
+
+311
+01:07:52,440 --> 01:07:56,940
+Now we will get some properties of the inverse of matrices.
+
+312
+01:07:57,940 --> 01:08:07,940
+These theorems are also important, so please try to understand the properties.
+
+313
+01:08:07,940 --> 01:08:15,940
+The first theorem says if we have both invertible or non-singular matrices A and B,
+
+314
+01:08:15,940 --> 01:08:22,940
+if A and B are both non-singular, then A times B is also non-singular.
+
+315
+01:08:23,940 --> 01:08:31,940
+And the inverse of A times B is equal to the inverse times A inverse.
+
+316
+01:08:31,940 --> 01:08:33,940
+This theorem is very important.
+
+317
+01:08:35,940 --> 01:08:36,940
+Okay.
+
+318
+01:08:36,940 --> 01:08:43,940
+If we have two non-singular matrices A and B, then the product of these two matrices is also non-singular.
+
+319
+01:08:43,940 --> 01:08:51,940
+And the inverse of the product matrix is equal to B inverse times A inverse.
+
+320
+01:08:52,940 --> 01:09:02,940
+And more generally, if we have our non-singular matrices, then the product is also a non-singular matrix.
+
+321
+01:09:02,940 --> 01:09:04,940
+And its inverse is...
+
+322
+01:09:04,940 --> 01:09:16,940
+...
+
+323
+01:09:09,876 --> 01:09:26,876
+Its inverse is equal to, begin with the last matrix in the product, AR inverse times AR minus 1 inverse times to the A1 inverse.
+
+324
+01:09:28,876 --> 01:09:33,876
+And the inverse of the inverse matrix is equal to itself.
+
+325
+01:09:37,363 --> 01:09:45,603
+İmrse of the transpose of the matrix is equal to the inverse of its transpose.
+
+326
+01:09:56,243 --> 01:10:02,243
+Maybe we can give some to other properties.
+
+327
+01:10:05,764 --> 01:10:06,083
+Here.
+
+328
+01:10:08,643 --> 01:10:09,043
+Okay.
+
+329
+01:10:19,252 --> 01:10:24,452
+Another problem or property about the inverse of the matrix is that for a scalar k,
+
+330
+01:10:34,515 --> 01:10:43,435
+The inverse of k times a is equal to 1 over k.
+
+331
+01:10:47,507 --> 01:11:00,947
+Think that this is the reciprocal of a real number. So the reciprocal of a real number is 1 over k times A inverse. This property is also important.
+
+332
+01:11:20,083 --> 01:11:22,963
+Let me define the multiplication over matrices.
+
+333
+01:11:24,844 --> 01:11:30,023
+We say that if we have A times B is equal to A times C,
+
+334
+01:11:30,243 --> 01:11:35,724
+then it does not need to, the matrices B and C are equal,
+
+335
+01:11:35,724 --> 01:11:43,063
+but in the case where A is non-singular or invertible,
+
+336
+01:11:43,844 --> 01:11:47,783
+then if A times B is equal to A times C,
+
+337
+01:11:47,783 --> 01:11:52,323
+then it implies that B is equal to C.
+
+338
+01:11:52,323 --> 01:11:57,323
+And also if A times B is equal to zero matrix,
+
+339
+01:11:57,743 --> 01:12:01,304
+then B has to be zero matrix.
+
+340
+01:12:02,724 --> 01:12:05,764
+These properties are very important.
+
+341
+01:12:05,764 --> 01:12:10,304
+For non-singular matrices, these two properties
+
+342
+01:12:11,604 --> 01:12:14,703
+satisfied as in the real numbers.
+
+343
+01:12:14,703 --> 01:12:17,764
+And also if A is a symmetric,
+
+344
+01:12:17,783 --> 01:12:22,323
+non-singular matrix, its inverse is also symmetric.
+
+345
+01:12:22,323 --> 01:12:45,863
+And then B is equal to zero matrix.
+
+346
+01:12:45,108 --> 01:13:03,967
+Echelon form of a matris is very important because it means that we can write a matris in a simpler form and we can talk about its structure with using this simple form.
+
+347
+01:13:03,967 --> 01:13:21,128
+So, first, we define what is the echelon form of a matris. We have two definitions. One of them is the reduced row echelon form. The other one is the row echelon form.
+
+348
+01:13:22,347 --> 01:13:25,288
+We have a matris A, which is n by n.
+
+349
+01:13:36,692 --> 01:13:47,692
+If the matrix A satisfy these four conditions, then it's called reduced row echelon form.
+
+350
+01:13:48,692 --> 01:14:03,692
+It is in reduced row echelon form. The first one, if the matrix A have zero rows, zero rows means rows with 0.
+
+351
+01:14:10,515 --> 01:14:29,295
+Maybe here we have zero row. If the matrix includes to zero row, then this row has to be at the bottom of the matrix. The first condition is that.
+
+352
+01:14:32,916 --> 01:14:48,676
+The first non-zero entry from the left of a non-zero row, if we have a non-zero row, maybe the first row is non-zero. Non-zero means at least one entry is non-zero.
+
+353
+01:14:48,676 --> 01:14:56,176
+Then the first non-zero entry from the left of a non-zero row is a one.
+
+354
+01:14:57,275 --> 01:15:06,115
+So if the first row is non-zero row, then the first entry on the left has to be one.
+
+355
+01:15:07,256 --> 01:15:11,036
+And this is called leading one.
+
+356
+01:15:16,916 --> 01:15:17,315
+Okay.
+
+357
+01:15:19,096 --> 01:15:24,096
+The first non-zero answer from the left of a non-zero row is one.
+
+358
+01:15:25,676 --> 01:15:36,815
+And for each non-zero row, the leading one appears to the right and below any leading ones in preceding rows.
+
+359
+01:15:37,216 --> 01:15:37,416
+So.
+
+360
+01:15:46,707 --> 01:16:03,467
+It follows from here that if we have a second row also is non-zero, but it says for each non-zero row, the leading one appears to the right and below any leading ones in preceding rows.
+
+361
+01:16:03,467 --> 01:16:31,187
+So on the second row, we need one here. It is on the right and below of the leading one. And this has to be zero because the first non-zero entry from the left of a non-zero row is a one. So this has to be zero. And if we have a zero row, this has to be at the bottom of the matrix.
+
+362
+01:16:33,467 --> 01:16:49,747
+Then the last one, if a column contains a leading one, for example, if the first column contains the leading one, then all other entries in that column are zero.
+
+363
+01:16:49,747 --> 01:17:03,768
+And for the second row, we have a leading one here at the second column. So this has to be zero. And also all other entries on this column are zero.
+
+364
+01:17:03,768 --> 01:17:19,507
+Okay. If a matrix satisfies these four conditions, then it's called in radius row echelon form.
+
+365
+01:17:19,507 --> 01:17:37,647
+So this is a staircase pattern because we say that in C for each non-zero row, the leading one appears to the right and below any leading ones in preceding rows.
+
+366
+01:17:37,647 --> 01:17:42,887
+If we have one on the first row and the first entry.
+
+367
+01:17:51,283 --> 01:17:57,804
+And these are staircase or eşelon. Eşelon means staircase.
+
+368
+01:18:05,427 --> 01:18:11,427
+If we have an M by M matrix that satisfies only the conditions A, B and C,
+
+369
+01:18:12,427 --> 01:18:17,427
+then this matrix is called in row echelon form.
+
+370
+01:18:18,427 --> 01:18:24,427
+Actually, we can define also the reduced column echelon form or column echelon form
+
+371
+01:18:24,427 --> 01:18:31,427
+using the same manner, but in our lecture we only talk about
+
+372
+01:18:31,427 --> 01:18:35,427
+reduced row echelon form or row echelon form.
+
+373
+01:18:36,427 --> 01:18:45,427
+The matrix satisfies only the conditions A, B and C, and it is called in row echelon form.
+
+374
+01:18:50,644 --> 01:19:05,164
+Look at the matrices A, B, C, D, E, F, and G, and say if these are reduced row echelon form, row echelon form, or none of them.
+
+375
+01:19:07,864 --> 01:19:17,784
+For example, for the matrix A, the first non-zero rule is this one.
+
+376
+01:19:26,931 --> 01:19:29,291
+The first line zero entry is one.
+
+377
+01:19:34,452 --> 01:19:37,851
+Then, we get to the second row.
+
+378
+01:19:39,112 --> 01:19:49,332
+The first non-zero entry on the left is one, and one is on the right and below of the first leading one.
+
+379
+01:19:49,332 --> 01:19:50,332
+This is leading one.
+
+380
+01:19:54,003 --> 01:20:04,243
+Yine, for the third row, the leading one appears at on the right and below of the preceding leading one.
+
+381
+01:20:08,500 --> 01:20:16,699
+On the last row, again, the leading one appears at the right hand below of the preceding leading one.
+
+382
+01:20:17,659 --> 01:20:27,420
+And moreover, we see that since the first column includes the leading one, all other entries are zero.
+
+383
+01:20:27,420 --> 01:20:41,500
+Same for the second column because it includes the leading one and all other entries are zero.
+
+384
+01:20:43,340 --> 01:20:49,579
+Same for the third column and fourth column.
+
+385
+01:20:49,579 --> 01:20:55,340
+So, the matrix A is in reduced row echelon form.
+
+386
+01:21:10,003 --> 01:21:13,003
+Bakın, B'ye görebiliyorsunuz.
+
+387
+01:21:13,003 --> 01:21:19,003
+Önceleriye görebiliyorsunuz.
+
+388
+01:21:19,003 --> 01:21:23,003
+Ve bu metriks B'ye görebiliyorsunuz.
+
+389
+01:21:23,003 --> 01:21:30,003
+Bir de bu metriks B'ye görebiliyorsunuz.
+
+390
+01:21:30,003 --> 01:22:49,003
+Ve bu metriks B'ye görebiliyorsunuz.
+
+391
+01:22:41,908 --> 01:22:51,708
+Again, we have a 0 row at the bottom of the matrix. We have a leading one on the first row, and we have a leading one on the second row.
+
+392
+01:22:52,608 --> 01:23:05,548
+And since the first column includes leading one, all other entries are 0. And for third column, we have leading one and all other entries are 0.
+
+393
+01:23:05,548 --> 01:23:12,108
+So, the matrices A, B, and C are in reduced row, ancient of form.
+
+394
+01:23:12,108 --> 01:23:42,088
+And we have a leading one on the first row.
+
+395
+01:23:15,636 --> 01:23:25,756
+Matrisis, d, e, f, and t are not in etional form, in reduced-trov etional form. Why? Why the matrix t is not reduced-trov etional form?
+
+396
+01:23:50,036 --> 01:24:11,336
+matris, yes, NS, gram, thank you. We have zero row, but zero row is at the second row of D, it has to be at the third row, so this is not in radius row echelon form.
+
+397
+01:24:11,336 --> 01:24:28,076
+What about E? Why it is not in radius row echelon form? There is no zero row, but why this is not in radius row echelon form?
+
+398
+01:24:32,083 --> 01:24:33,083
+vektör uzay.
+
+399
+01:24:37,171 --> 01:24:43,511
+It has no leading one in the second long row.
+
+400
+01:24:46,831 --> 01:24:49,331
+Look at the matrix.
+
+401
+01:24:49,571 --> 01:24:50,711
+There is no zero row.
+
+402
+01:24:51,131 --> 01:24:51,331
+Okay.
+
+403
+01:24:51,951 --> 01:24:54,631
+And on the first row, this is non-zero.
+
+404
+01:24:54,811 --> 01:24:57,251
+And the first non-zero entry is leading one.
+
+405
+01:24:57,451 --> 01:24:57,951
+It is one.
+
+406
+01:24:58,211 --> 01:24:58,451
+Okay.
+
+407
+01:24:59,091 --> 01:25:00,291
+Look at the second row.
+
+408
+01:25:01,131 --> 01:25:04,151
+The non-zero, first non-zero entry on the left is two.
+
+409
+01:25:04,151 --> 01:25:11,051
+So it has to be unique one.
+
+410
+01:25:11,192 --> 01:25:12,131
+It has to be one.
+
+411
+01:25:12,931 --> 01:25:18,431
+So for this, this is not in reduced row echelon form.
+
+412
+01:25:19,311 --> 01:25:25,692
+And for F, we have zero row on the bottom of the matrix.
+
+413
+01:25:25,692 --> 01:25:35,631
+And the first non-zero entry of the first non-zero row is one, leading one.
+
+414
+01:25:36,531 --> 01:25:36,951
+Okay.
+
+415
+01:25:37,291 --> 01:25:40,091
+For the second row, it is leading one.
+
+416
+01:25:40,751 --> 01:25:43,131
+For the third row, it is leading one.
+
+417
+01:25:43,951 --> 01:25:45,271
+But what is the problem here?
+
+418
+01:25:45,951 --> 01:25:48,771
+Why this matrix is not in reduced row echelon form?
+
+419
+01:25:48,771 --> 01:26:13,531
+So.
+
+420
+01:25:56,404 --> 01:25:58,504
+Or, it is reduced from a sheen form?
+
+421
+01:26:08,787 --> 01:26:13,387
+What do you think? It is not in register or eşelon form because
+
+422
+01:26:18,260 --> 01:26:38,840
+Since, okay, thank you. Since the column 2 includes leading 1, all other entries on this column has to be 0, but we have 1 here. So this is not in radius row echelon form.
+
+423
+01:26:38,840 --> 01:27:03,579
+And it is the same for the matrix G. We have a leading 1 here, but on the second column, all other entries has to be 0, but we have 2 here. So this is not in radius row echelon form.
+
+424
+01:27:12,659 --> 01:27:15,539
+The following matrices are in row-eşelon form.
+
+425
+01:27:18,659 --> 01:27:22,019
+We get to again the definition of row-eşelon form.
+
+426
+01:27:26,036 --> 01:27:47,435
+If the matrix satisfies the properties in A, B, and C, so we do not consider the statement in D, if a column contains a line of one, then all other entries in that column are zero.
+
+427
+01:27:54,963 --> 01:28:17,963
+Matriks H, we have zero columns on the bottom. Okay. The first non-zero entry on the first row is one, leaning one. Okay. And for the second row, it is leaning one. And for the third row, it is leaning one. So it is, it satisfies the conditions A.
+
+428
+01:28:23,028 --> 01:28:26,028
+B and C.
+
+429
+01:28:29,028 --> 01:28:31,028
+So it is in row echelon form.
+
+430
+01:28:33,028 --> 01:28:35,028
+Again, for the matrix I,
+
+431
+01:28:35,028 --> 01:28:39,028
+actually this matrix is also in radius row echelon form.
+
+432
+01:28:42,028 --> 01:28:44,028
+Identimatrix of order 4,
+
+433
+01:28:44,028 --> 01:28:48,028
+it is also in radius row echelon form.
+
+434
+01:28:48,028 --> 01:28:52,028
+We can write briefly as radius.
+
+435
+01:28:55,155 --> 01:28:56,836
+Röğe eşelon form, s.
+
+436
+01:29:07,507 --> 01:29:08,108
+Arkadaş.
+
+437
+01:29:12,372 --> 01:29:13,372
+ef
+
+438
+01:29:15,372 --> 01:29:17,372
+and roll eşelon form
+
+439
+01:29:24,307 --> 01:29:26,307
+SREF.
+
+440
+01:29:29,307 --> 01:29:34,307
+So it is in the form, row-ational form.
+
+441
+01:29:35,307 --> 01:29:39,307
+This is in the form,
+
+442
+01:29:39,307 --> 01:29:41,307
+the register-ational form.
+
+443
+01:29:41,307 --> 01:29:44,307
+Actually, if the matrix is in register-ational form,
+
+444
+01:29:44,307 --> 01:29:47,307
+it is also in row-ational form, right?
+
+445
+01:29:47,307 --> 01:29:54,307
+Again, we have a zero matrix, zero row on the bottom.
+
+446
+01:30:01,779 --> 01:30:11,679
+İlk nonserad entry on the first row is leading one, on the second row leading one, and on the third row leading one.
+
+447
+01:30:12,599 --> 01:30:18,599
+So this matrix is also in radius, sorry, row eşelon form.
+
+448
+01:30:27,636 --> 01:30:40,276
+Now, we will give some special operations that we use to put a matrix in a row echelon form or radius row echelon form.
+
+449
+01:30:55,828 --> 01:31:01,828
+These operations are called elemental row or column operations.
+
+450
+01:31:01,828 --> 01:31:06,828
+Actually, we only consider here the row operations,
+
+451
+01:31:06,828 --> 01:31:14,828
+but you can do the same thing, same operations by using columns.
+
+452
+01:31:16,828 --> 01:31:24,828
+We can put any matrix in row echelon form or radius row echelon form
+
+453
+01:31:24,828 --> 01:31:31,828
+by using elementary row or column operations.
+
+454
+01:31:31,828 --> 01:31:35,828
+We have three types of these operations.
+
+455
+01:31:35,828 --> 01:31:42,828
+The first one, we can interchange any two rows.
+
+456
+01:31:42,828 --> 01:31:50,828
+And we can show or write if we interchange any two rows,
+
+457
+01:31:50,828 --> 01:32:00,828
+say we interchange the row i and row j of the matrix a.
+
+458
+01:32:00,828 --> 01:32:07,828
+Then we write we interchange the row i by row j.
+
+459
+01:32:07,828 --> 01:32:18,828
+And we can also interchange any two columns and we denote this by.
+
+460
+01:32:18,828 --> 01:32:22,828
+Actually, this is C i.
+
+461
+01:32:22,828 --> 01:32:29,828
+Interchange by C j or row i interchange by row j.
+
+462
+01:32:29,828 --> 01:32:42,828
+And the second elementary row operations is that we can multiply a row or a column by a non-zero number.
+
+463
+01:32:42,828 --> 01:32:54,828
+So, we write this type of operation like this.
+
+464
+01:32:54,828 --> 01:33:03,828
+Multiply the row i by k and replace this row by this.
+
+465
+01:33:03,828 --> 01:33:18,828
+We multiply the row i by the row i by k times row i.
+
+466
+01:33:18,828 --> 01:33:19,828
+Okay.
+
+467
+01:33:19,828 --> 01:33:20,828
+And we can do that again.
+
+468
+01:33:20,828 --> 01:33:41,828
+So, we can do that again.
+
+469
+01:33:24,020 --> 01:33:32,360
+The last type of the elementary row operations is that add the multiple of one row or column to another.
+
+470
+01:33:32,360 --> 01:33:44,720
+So, multiply row i by a scalar k and add it to the column j.
+
+471
+01:33:51,796 --> 01:34:03,956
+So, we replace the column J, sorry, I'm sorry, we replace the row J with the K multiple of the row I.
+
+472
+01:34:07,923 --> 01:34:13,923
+Plus, the j-row of matrix A.
+
+473
+01:34:14,923 --> 01:34:19,923
+We can do the same things for columns of this matrix.
+
+474
+01:34:20,923 --> 01:34:24,923
+So we have three main types of elementar row operations.
+
+475
+01:34:25,923 --> 01:34:28,923
+We can interchange any two rows or columns.
+
+476
+01:34:29,923 --> 01:34:32,923
+We can multiply a row or a column by a non-zero scalar.
+
+477
+01:34:32,923 --> 01:34:39,923
+And we can add a multiple of one row or column to another.
+
+478
+01:34:40,923 --> 01:34:41,923
+For example,
+
+479
+01:34:48,819 --> 01:34:50,319
+We have matrix A,
+
+480
+01:34:51,939 --> 01:34:56,859
+interchanging the rows 1 and 3 of the matrix A.
+
+481
+01:34:58,439 --> 01:34:58,939
+So,
+
+482
+01:35:02,500 --> 01:35:07,939
+interchange row 1 with row 3.
+
+483
+01:35:07,939 --> 01:35:21,259
+It means write row 1 as the third row of A and third row of A as the first row of A.
+
+484
+01:35:21,259 --> 01:35:26,420
+So, it is 3, 3, 6, negative 9.
+
+485
+01:35:27,319 --> 01:35:29,079
+The second row does not change.
+
+486
+01:35:34,131 --> 01:35:41,131
+ve ilk rov of A is now the third rov of matris.
+
+487
+01:35:48,083 --> 01:35:57,804
+And using this notation, it is easy to keep track of the elementar row or column operations that we performed on the matrix.
+
+488
+01:35:57,804 --> 01:36:06,644
+So, it is important to use the matrix notations or elementar row operations notations.
+
+489
+01:36:09,823 --> 01:36:13,503
+Multiplying the third row of A by 1 over 3.
+
+490
+01:36:27,220 --> 01:36:34,340
+Multiply the third row by 1 over 3.
+
+491
+01:36:39,060 --> 01:36:42,160
+So, the first two rows does not change.
+
+492
+01:36:50,420 --> 01:37:11,880
+ve 3'e
+
+493
+01:37:23,060 --> 01:37:38,340
+Multiply Rho 2 by negative 2, negative 2 times Rho 2, and add it to the Rho 3, plus Rho 3.
+
+494
+01:37:43,828 --> 01:37:52,008
+So, the first row of A does not change, so it's the same 0, 0, 1, 2.
+
+495
+01:37:54,368 --> 01:37:57,848
+Again, the second row also does not change.
+
+496
+01:38:00,048 --> 01:38:03,688
+So, 3, 0, negative 2.
+
+497
+01:38:03,688 --> 01:38:12,908
+Now, multiply the second row by negative 2 and add it to the third row.
+
+498
+01:38:13,828 --> 01:38:18,468
+So, negative 4 plus 3, negative 1.
+
+499
+01:38:20,648 --> 01:38:24,088
+Negative 6 plus 3, negative 3.
+
+500
+01:38:26,288 --> 01:38:30,488
+0 plus 6, 6.
+
+501
+01:38:31,448 --> 01:38:38,268
+And negative 4, sorry, 4 plus negative 9, negative 5.
+
+502
+01:38:45,908 --> 01:38:46,228
+Ok?
+
+503
+01:38:50,484 --> 01:38:51,364
+Any questions?
+
+504
+01:38:54,724 --> 01:38:55,444
+Is it clear?
+
+505
+01:39:03,507 --> 01:39:07,268
+[öğrenci], yes, it is clear or no, it is not clear.
+
+506
+01:39:12,115 --> 01:39:14,336
+Okay. I think yes, it is clear.
+
+507
+01:39:26,195 --> 01:39:39,775
+So, if you obtain a matrix by using elemental role operations, then we say that the new matrix is equivalent to the first matrix.
+
+508
+01:39:55,859 --> 01:40:11,500
+If you obtain a matris B by using elemental row operations from the matris A, then these two matris are called row equivalent if you use the row operations.
+
+509
+01:40:12,500 --> 01:40:19,339
+And if you use the column operations, then we say that these matris are column equivalent.
+
+510
+01:40:19,339 --> 01:40:20,460
+equal, sorry.
+
+511
+01:40:22,799 --> 01:40:25,739
+For example, in the example above,
+
+512
+01:40:40,884 --> 01:40:56,184
+We see that the matrix D, say the matrix D, is obtained from the matrix A by adding negative 2 times rho 2 of A to rho 3 of A.
+
+513
+01:40:56,184 --> 01:41:06,203
+So here, the matrix D is equivalent and we denote or write by like this.
+
+514
+01:41:06,203 --> 01:41:18,684
+The matrix D is equivalent to matrix A because we obtain the matrix D by applying finite sequence of elementary loop operations.
+
+515
+01:41:31,923 --> 01:41:39,423
+We have a matrix A again. If we add two times the row three of A to its second row,
+
+516
+01:41:42,836 --> 01:41:44,836
+2x3
+
+517
+01:41:48,724 --> 01:41:50,724
+To, Rove To.
+
+518
+01:41:57,908 --> 01:42:01,648
+1, 2, 4, 3.
+
+519
+01:42:04,608 --> 01:42:13,228
+We add, sorry, we multiply the third row by 2, and add it to the second row.
+
+520
+01:42:13,228 --> 01:42:20,588
+So, 2 plus 2, 4, negative 4 plus 1, negative 3.
+
+521
+01:42:22,328 --> 01:42:24,368
+4 plus 3, 7.
+
+522
+01:42:25,508 --> 01:42:28,268
+And 6 plus 2, 8.
+
+523
+01:42:31,764 --> 01:42:36,804
+1, negative 2, 2, 3.
+
+524
+01:42:38,344 --> 01:42:45,224
+So, we have matrix B, which is equivalent to the matrix A.
+
+525
+01:42:51,604 --> 01:42:51,904
+Ok.
+
+526
+01:43:01,844 --> 01:43:31,844
+Bu, bu
+
+527
+01:43:31,844 --> 01:43:34,323
+Okay, this is very important.
+
+528
+01:43:35,944 --> 01:43:46,604
+We can put any matrix into a row echelon form by using elemental row operations or column operations.
+
+529
+01:43:48,484 --> 01:43:57,524
+And this definition is very important also because it gives the rank of a matrix.
+
+530
+01:43:57,524 --> 01:44:02,944
+Actually, we will also give the rank of the definition of the rank later.
+
+531
+01:44:04,604 --> 01:44:16,224
+But here, the number of non-zero rows or columns of a matrix which is in row or column echelon form
+
+532
+01:44:16,224 --> 01:44:20,864
+is called the rank of a.
+
+533
+01:44:27,539 --> 01:44:28,779
+Number of...
+
+534
+01:44:28,779 --> 01:44:29,119
+Oops.
+
+535
+01:44:33,235 --> 01:44:36,996
+NUMBER OF NONZERO ROWS, OR COLUMNS.
+
+536
+01:44:39,475 --> 01:44:49,395
+IF YOU PUT THE MATRIX ON THE ROW ECHILON FORM, THEN WE COUNT THE NONZERO ROWS, THEN IT GIVES THE RANK OF THE MATRIX,
+
+537
+01:44:49,395 --> 01:44:55,796
+AND WE DENOTE THE RANK OF THE MATRIX BY RANK A OR RA.
+
+538
+01:44:58,515 --> 01:44:58,836
+OKAY.
+
+539
+01:44:58,836 --> 01:45:03,395
+What is the RANK OF THE MATRIX A?
+
+540
+01:45:03,395 --> 01:45:04,395
+OKAY.
+
+541
+01:45:10,484 --> 01:45:26,944
+Since this matrix is in row echelon form, we have leading one, leading one, leading one, and the leading one appears on the right and below of the preceding leading ones, and there is no zero rows.
+
+542
+01:45:27,484 --> 01:45:40,004
+So this is in row echelon form, and the number of non-zero rows on the row echelon form of the matrix is the rank of the matrix.
+
+543
+01:45:40,004 --> 01:45:43,504
+So we have one, two, three non-zero rows.
+
+544
+01:45:43,504 --> 01:45:45,544
+So the rank of A is
+
+545
+01:45:52,051 --> 01:46:05,331
+3. What about the rank of b? Again, the matrix b is in row echelon form. Actually, it is in reduced row echelon form.
+
+546
+01:46:10,804 --> 01:46:27,753
+ve ilk iki bir
+
+547
+01:46:35,988 --> 01:46:44,148
+And there is two non-zero rows, so rank C is also 2.
+
+548
+01:46:53,011 --> 01:47:08,192
+Next week, we continue with putting any matrix into the radius of eşelon form or eşelon form by using elementable operations.
+
+549
+01:47:09,271 --> 01:47:12,791
+We have any questions, comments or other things?
+
+550
+01:47:23,028 --> 01:47:24,668
+Hocam bir şey sorabilir miyim?
+
+551
+01:47:25,228 --> 01:47:25,467
+Tabii.
+
+552
+01:47:26,588 --> 01:47:31,748
+Radius row echelon formla row echelon form arasındaki farkı bir daha söyleyebilir misiniz?
+
+553
+01:47:33,807 --> 01:47:36,007
+Şimdi bak hemen şurada örnek üzerinden bakalım.
+
+554
+01:47:36,908 --> 01:47:43,248
+Radius row echelon formda mesela şu row echelon formda diyoruz.
+
+555
+01:47:43,328 --> 01:47:49,307
+Şundan dolayı linik one olduğu tutumda diğer elemanların hepsi sıfır değil.
+
+556
+01:47:49,427 --> 01:47:50,328
+Mesela bu sıfır değil.
+
+557
+01:47:50,328 --> 01:47:54,168
+O yüzden bu dördüncü koşulu sağlamıyor.
+
+558
+01:47:55,128 --> 01:47:56,488
+Eşelon, row echelon formda.
+
+559
+01:47:57,188 --> 01:48:05,028
+Ama mesela burada linik one'ın olduğu bütün linik one'ın bulunduğu bütün tutumdaki elemanların diğerleri sıfır.
+
+560
+01:48:06,068 --> 01:48:07,007
+Mesela burada da öyle.
+
+561
+01:48:07,948 --> 01:48:11,448
+Linik one var bir ama üstündeki eleman sıfır değil.
+
+562
+01:48:11,548 --> 01:48:12,948
+O yüzden row echelon formda olur.
+
+563
+01:48:13,588 --> 01:48:17,788
+Eğer sıfır olsaydı burada o zaman radius row echelon formda olacak.
+
+564
+01:48:17,788 --> 01:48:25,988
+Burada da mesela bu sıfır olsaydı, şunlar sıfır olsaydı o zaman radius row echelon formda olacak.
+
+565
+01:48:27,648 --> 01:48:28,128
+Tamam.
+
+566
+01:48:28,248 --> 01:48:29,528
+Tamam hocam teşekkürler.
+
+567
+01:48:29,967 --> 01:48:30,387
+Rica ederim.
+
+568
+01:48:32,347 --> 01:48:33,387
+Var mı başka sorusu olan?
+
+569
+01:48:37,492 --> 01:48:40,311
+Yok mu? Çok güzel anladınız mı?
+
+570
+01:48:43,891 --> 01:48:48,671
+Bakma, everything is clear. Nothing is clear.
+
+571
+01:48:53,844 --> 01:48:57,823
+Peki, o zaman haftaya görüşürüz arkadaşlar. Dikkat edin kendinize.

@@ -1,0 +1,1999 @@
+1
+00:02:35,156 --> 00:02:37,456
+Hello? Can you hear me?
+
+2
+00:02:56,147 --> 00:02:56,508
+Ok.
+
+3
+00:03:00,276 --> 00:03:02,276
+My name is Smaen Aydoldu.
+
+4
+00:03:03,276 --> 00:03:08,276
+We will be together in the Winnal Algebra course in this semester.
+
+5
+00:03:11,276 --> 00:03:12,276
+Actually,
+
+6
+00:03:15,276 --> 00:03:21,276
+I'm a researcher at the Department of Mathematics, so my office is at E-Block.
+
+7
+00:03:25,427 --> 00:03:28,207
+veki ofistör konuları işlemlerden bir şey.
+
+8
+00:03:31,699 --> 00:03:35,099
+You can come to my office in my office house.
+
+9
+00:03:42,003 --> 00:03:47,003
+My office hours are on Tuesdays.
+
+10
+00:03:59,508 --> 00:04:01,828
+3, 2, 5.
+
+11
+00:04:09,683 --> 00:04:15,683
+Ve e-maili bana, e-maili bir soru.
+
+12
+00:04:15,683 --> 00:04:22,683
+Eğer bir soru var, e-maili bana.
+
+13
+00:04:27,220 --> 00:04:28,680
+This is my email address.
+
+14
+00:04:47,891 --> 00:05:03,531
+These notes are my lecture notes. I upload these notes after the lecture on your lesson wall. There is a lesson wall in your online education system.
+
+15
+00:05:09,331 --> 00:05:16,531
+You can find weekly lecture notes on your lesson wall, online education system.
+
+16
+00:05:22,259 --> 00:05:28,659
+vekutör konuları da Bologna'a
+
+17
+00:05:43,540 --> 00:05:47,500
+Mat 13-20
+
+18
+00:05:51,028 --> 00:05:54,307
+Bologna, on the Google,
+
+19
+00:05:58,867 --> 00:06:01,987
+You will see the below page of the course.
+
+20
+00:06:15,475 --> 00:06:20,596
+This is our course book, Anton Howard, Elemental Linear Algebra.
+
+21
+00:06:21,875 --> 00:06:30,836
+And also, I used Bernard Coleman and David Hill's book, which is Introduction to Linear Algebra.
+
+22
+00:06:31,875 --> 00:06:38,596
+And there is some researches in Turkish. If you know Turkish, you can also use these books.
+
+23
+00:06:40,516 --> 00:06:43,475
+And you can follow the weekly topics from here.
+
+24
+00:06:43,475 --> 00:06:53,875
+First of all, week one, we will study the matrix, the types of the matrix, the equals to the matrix and so on.
+
+25
+00:06:53,875 --> 00:06:57,716
+So, you can follow the weekly topics from the Bologna page.
+
+26
+00:06:58,755 --> 00:06:59,156
+Okay.
+
+27
+00:07:08,564 --> 00:07:15,564
+Do we have any questions or commands from the beginning?
+
+28
+00:07:19,923 --> 00:07:20,303
+No?
+
+29
+00:07:31,891 --> 00:07:36,891
+Okay. So, let us begin with matris.
+
+30
+00:07:53,427 --> 00:07:59,687
+You can ask your questions in English, also in Turkish, it doesn't matter.
+
+31
+00:08:00,867 --> 00:08:03,968
+So feel free to ask your questions.
+
+32
+00:08:11,156 --> 00:08:39,036
+Matriks, we begin with the definition of the matrix. Matriks are very important in linear algebra because we will see it later, solving linear equations is a very important problem in mathematics, also in every kind of, every type of engineering.
+
+33
+00:08:39,036 --> 00:08:52,036
+Matriks, so the matrices allow us to solve the linear equations, while using a computer program efficiently and also easy.
+
+34
+00:08:52,036 --> 00:09:14,036
+Matriks are very important and also, we use the matrices in physics and every branch of engineering, biology, chemistry and other applications of mathematics.
+
+35
+00:09:14,036 --> 00:09:29,036
+Matriks, so the matriks are very important. Actually, a matrix is a rectangular array. We have an array, it's a rectangular array with n by n numbers.
+
+36
+00:09:29,036 --> 00:09:35,036
+Matriks, we say, we say, the horizontal lines.
+
+37
+00:09:35,036 --> 00:09:39,036
+Matriks, these are horizontal lines.
+
+38
+00:09:39,036 --> 00:09:43,036
+Matriks, a11, a12, a1n.
+
+39
+00:09:43,036 --> 00:09:45,036
+Matriks, these are the rows of.
+
+40
+00:09:45,036 --> 00:09:48,036
+Matriks, this is the row one.
+
+41
+00:09:48,036 --> 00:10:16,036
+Matriks, row two.
+
+42
+00:09:55,668 --> 00:10:04,788
+The horizontal lines are the rows of a matrix and the vertical lines.
+
+43
+00:10:13,556 --> 00:10:14,756
+Arkadaşlar, bu konularını işleyeceğiz.
+
+44
+00:10:22,259 --> 00:10:23,399
+This is column one.
+
+45
+00:10:30,868 --> 00:10:55,908
+Kolumn 2, and so on. And for this, we say each element inside the matrix as an entry of the matrix. So, the Aij entry is the element on the i't row and the j'th column of the matrix.
+
+46
+00:10:55,908 --> 00:11:22,908
+Okay. So, the matrices are rectangular array, consists of, for example, if we talk about M by M matrix, it means that it includes M horizontal lines, which called row. It includes M rows and N columns.
+
+47
+00:11:22,908 --> 00:11:31,908
+And the elements of the M and the elements of the matrix are real or complex numbers.
+
+48
+00:11:31,908 --> 00:11:45,908
+But in general, in this course, we only talk about real matrices. Real matrices means all entries are real numbers. Okay.
+
+49
+00:11:45,908 --> 00:11:46,908
+Okay.
+
+50
+00:11:50,227 --> 00:12:02,807
+So, for the matrix A, you also denote a matrix by capital letters such that A, B, C and so on.
+
+51
+00:12:07,796 --> 00:12:10,016
+So, I draw of the matrix A.
+
+52
+00:12:16,148 --> 00:12:26,628
+Evet, bu ayı 1 ayı 2 ay
+
+53
+00:12:31,539 --> 00:12:34,019
+A, I, N.
+
+54
+00:12:35,259 --> 00:12:36,919
+This is the I draw.
+
+55
+00:12:38,120 --> 00:12:39,939
+And the J column
+
+56
+00:12:39,939 --> 00:12:42,980
+is
+
+57
+00:12:42,980 --> 00:12:47,279
+A1J, A2J, and AMJ.
+
+58
+00:12:47,659 --> 00:12:48,059
+Since
+
+59
+00:12:48,059 --> 00:12:51,539
+the matrix A have
+
+60
+00:12:51,539 --> 00:12:53,500
+N columns
+
+61
+00:12:53,500 --> 00:12:55,899
+and N rows.
+
+62
+00:12:56,679 --> 00:12:56,959
+Okay.
+
+63
+00:12:58,620 --> 00:13:00,139
+We will say that
+
+64
+00:13:00,139 --> 00:13:01,379
+A is N
+
+65
+00:13:01,379 --> 00:13:03,899
+M by M matrix
+
+66
+00:13:03,899 --> 00:13:05,099
+and written as
+
+67
+00:13:05,099 --> 00:13:06,159
+M times N.
+
+68
+00:13:06,159 --> 00:13:06,219
+M.
+
+69
+00:13:10,196 --> 00:13:22,396
+If in a matrix, the number of the rows is equal to the number of the columns, the matrix is called or the matrix is a square matrix.
+
+70
+00:13:24,495 --> 00:13:33,875
+If the number of the rows is equal to the number of the columns, then we have a square matrix.
+
+71
+00:13:33,875 --> 00:13:41,875
+Sometimes we will say a square matrix of order n.
+
+72
+00:13:41,875 --> 00:13:44,875
+Okay.
+
+73
+00:13:44,875 --> 00:13:57,875
+For a square matrix, since the number of the rows are the same as the number of the columns,
+
+74
+00:14:19,475 --> 00:14:26,916
+This is the schematics of order n. It has n rows and n columns.
+
+75
+00:14:30,131 --> 00:14:42,931
+The numbers A11, A22 to the ANN form the main diagonal of the schermatrix A.
+
+76
+00:14:44,331 --> 00:14:53,731
+This is, these entries or these elements are main diagonal.
+
+77
+00:15:06,964 --> 00:15:35,724
+Okay. And if we have an entry Aij, it means that this number or this element is the entry of matrix A on the itrow, the first one belongs to the row or indicates the row, the number of row, and j column.
+
+78
+00:15:36,964 --> 00:15:45,504
+And it is called ij element of A or ij entry of A.
+
+79
+00:15:47,024 --> 00:15:59,784
+We also denote or write a matrices like with the brackets A is equal to aij.
+
+80
+00:16:01,324 --> 00:16:02,224
+Okay.
+
+81
+00:16:17,331 --> 00:16:22,731
+Now, we have matrices A, B, C, D, E and F.
+
+82
+00:16:23,932 --> 00:16:44,932
+Now, let us determine the type of the matrices. The type of the matrices means, since this matrix have one, two rows, it is 2x
+
+83
+00:17:11,380 --> 00:17:21,780
+B, we have complex numbers inside the matrix, so it is a complex matrix.
+
+84
+00:17:30,163 --> 00:17:39,884
+It has one, two rows and two columns.
+
+85
+00:17:39,884 --> 00:17:44,384
+So it is also a square matrix.
+
+86
+00:17:50,483 --> 00:17:50,823
+Ve bu
+
+87
+00:17:50,823 --> 00:18:19,903
+Siyahatı
+
+88
+00:18:19,955 --> 00:18:26,455
+Complex numbers are the set of numbers denoted by C.
+
+89
+00:18:31,412 --> 00:18:34,771
+We should write each
+
+90
+00:18:36,451 --> 00:18:39,251
+Comutator numbers say z
+
+91
+00:18:41,731 --> 00:18:42,932
+a plus
+
+92
+00:18:50,996 --> 00:18:58,115
+IB, where a and p are integers.
+
+93
+00:19:10,900 --> 00:19:15,960
+i is a number such that i square is equal to negative 1.
+
+94
+00:19:17,700 --> 00:19:23,160
+And here, for a complex number, a is called the real part.
+
+95
+00:19:29,076 --> 00:19:36,076
+B is the imaginary part of the complex number and B is the imaginary part of the complex number.
+
+96
+00:19:47,059 --> 00:19:51,799
+What about automatic C? It has 1, 2, 3 roles.
+
+97
+00:19:59,059 --> 00:20:01,819
+A kalor, one kalor.
+
+98
+00:20:02,819 --> 00:20:17,059
+So, sometimes, or often, people call this type of matrices as a kalor matris, because it includes only one kalor.
+
+99
+00:20:26,932 --> 00:20:30,791
+Okay, what about the matrix D?
+
+100
+00:20:43,051 --> 00:20:45,051
+ve 3 kalums.
+
+101
+00:20:45,051 --> 00:20:47,051
+So, it's a sker matris.
+
+102
+00:20:50,932 --> 00:20:52,932
+of order 3
+
+103
+00:21:05,011 --> 00:21:13,011
+And one, zero, two, three column, the main diagonal of the square matrix.
+
+104
+00:21:15,011 --> 00:21:27,011
+If you want to write the entry of the matrix D on the third row and the second column.
+
+105
+00:21:27,011 --> 00:21:45,011
+If you want to write D3, two, so we look at row three and column two. So it is negative one.
+
+106
+00:21:45,011 --> 00:21:45,412
+If you want.
+
+107
+00:21:49,779 --> 00:22:07,460
+And to get to the matrix E, it only includes a real number 3, so we can consider all real numbers or all complex numbers as a one by one matrix.
+
+108
+00:22:07,460 --> 00:22:20,299
+Okay, and the last matrix F, includes one row and three columns.
+
+109
+00:22:21,299 --> 00:22:29,480
+So, we can say that this is a row matrix, because it includes only one row.
+
+110
+00:22:53,428 --> 00:23:03,428
+And also, we will see what's the vector later, but here, since we talk about the column matrix,
+
+111
+00:23:06,228 --> 00:23:13,428
+an n by 1 matrix with the column matrix is also called n-vektör.
+
+112
+00:23:14,628 --> 00:23:21,428
+And the vectors are denoted by lowercase bold-phase letters or
+
+113
+00:23:23,428 --> 00:23:31,428
+or a lowercase letter above an arrow.
+
+114
+00:23:31,428 --> 00:23:49,428
+And the row.
+
+115
+00:23:35,700 --> 00:23:52,700
+If v is a vector, then we can denote this vector by v above an arrow or lowercase boldface letters.
+
+116
+00:23:52,700 --> 00:23:54,700
+Okay.
+
+117
+00:23:54,700 --> 00:23:59,700
+We will talk about vectors later.
+
+118
+00:23:59,700 --> 00:24:06,700
+But a column matrix is also called an n-vector.
+
+119
+00:24:06,700 --> 00:24:19,700
+For example, u is a matrix of type 1, 2, 3, 4 by 1.
+
+120
+00:24:19,700 --> 00:24:20,700
+1.
+
+121
+00:24:20,700 --> 00:24:22,700
+It's a column matrix.
+
+122
+00:24:22,700 --> 00:24:32,700
+So, we can think that u is a 4 vector because it includes 1, 2, 3, 4 rows.
+
+123
+00:24:32,700 --> 00:24:36,700
+And also, v is a 3 vector.
+
+124
+00:24:36,700 --> 00:24:49,700
+And the n-vector of all of whose entries are 0 is denoted by O or 0.
+
+125
+00:24:58,003 --> 00:25:17,723
+Now, what is the equality of matrices? We have two M by M matrices. A and P are the same type. And we have the matrix A.
+
+126
+00:25:22,708 --> 00:25:35,788
+which is m by n and we have the matrix B which is again m by n.
+
+127
+00:25:36,788 --> 00:25:45,327
+These two matrices are equal to each other if they agree entry by entry.
+
+128
+00:25:45,327 --> 00:25:55,048
+It means that for all i and j, aij is equal to bij.
+
+129
+00:25:55,048 --> 00:26:06,807
+For all i is equal to 1 to m and j is equal to 1 to n.
+
+130
+00:26:06,807 --> 00:26:13,807
+For example,
+
+131
+00:26:13,811 --> 00:26:31,151
+If these two matrices are equal, first of all, the type of matrices has to be the same. This is 1, 2, 3, 3x3 matrix. And this is also 3x3 matrix.
+
+132
+00:26:31,151 --> 00:26:56,911
+Now, look at each entry. If A is equal to B, this is A11, this is A12, this is A13. A11 is equal to B11, yes. A12 is equal to B12, yes.
+
+133
+00:26:56,911 --> 00:27:02,251
+And A13 is equal to B13. So,
+
+134
+00:27:10,067 --> 00:27:15,587
+So, it follows from here that w is negative 1.
+
+135
+00:27:17,427 --> 00:27:25,768
+And for the second row, we have 2, yes 2, and negative 3.
+
+136
+00:27:26,087 --> 00:27:30,748
+So, x is negative 3.
+
+137
+00:27:30,748 --> 00:27:34,748
+False, false.
+
+138
+00:27:35,387 --> 00:27:38,208
+And the last row, we have 0.
+
+139
+00:27:39,708 --> 00:27:41,548
+This is a31.
+
+140
+00:27:43,067 --> 00:27:45,008
+And this is b31.
+
+141
+00:27:45,008 --> 00:28:17,307
+So, y is equal to 0.
+
+142
+00:27:55,667 --> 00:28:00,447
+4, 4, 4, 5.
+
+143
+00:28:17,811 --> 00:28:39,171
+If you have a schermatrix, means if the number of the columns are the same, the number of the walls, then the sum of all elements on the main diagonal are called the trees of the matrix.
+
+144
+00:28:50,355 --> 00:28:58,875
+For example, this is a square matrix, A is a square matrix, so what is the trace of A?
+
+145
+00:29:10,163 --> 00:29:18,763
+Sum of the entries on the main diagonal, form the trace of the matrix A.
+
+146
+00:29:18,763 --> 00:29:30,263
+So trace of A is equal to 1 plus negative 3 plus 5, which is 3.
+
+147
+00:29:33,463 --> 00:29:33,963
+Okay.
+
+148
+00:29:41,076 --> 00:29:59,596
+Now we talk about the matrix operations. Actually, operations like addition, subtraction, are very similar to the addition and subtraction of real numbers.
+
+149
+00:29:59,596 --> 00:30:09,615
+But the multiplication of matrices are very different from the multiplication of real numbers.
+
+150
+00:30:10,635 --> 00:30:16,516
+And we have no division between two matrices.
+
+151
+00:30:16,516 --> 00:30:34,336
+We have addition, a scalar multiplication of a matrix, a multiplication of matrices, and the subtraction of matrices, but no division of matrices.
+
+152
+00:30:34,976 --> 00:30:35,195
+Okay.
+
+153
+00:30:45,940 --> 00:30:47,940
+What is a matrix addition?
+
+154
+00:30:49,940 --> 00:30:58,940
+We have two matrices which of all type A and B are both m-by-n matrices.
+
+155
+00:30:59,940 --> 00:31:09,940
+Then the sum of A and B, which we denote by A plus B, is again the same type m-by-n matrix C.
+
+156
+00:31:09,940 --> 00:31:22,940
+And each entry of this summation matrix or the addition matrix can be fine by adding the corresponding entry.
+
+157
+00:31:22,940 --> 00:31:29,940
+So C ij is equal to A ij plus B ij.
+
+158
+00:31:29,940 --> 00:31:38,940
+For example, if you want to find the addition matrix,
+
+159
+00:31:39,940 --> 00:31:42,940
+you will have to find first the first entry.
+
+160
+00:31:42,940 --> 00:31:52,940
+So C11 is equal to A11 plus B11 and so on.
+
+161
+00:31:52,940 --> 00:32:00,940
+We will do the same thing for all entries of the matrix A and B.
+
+162
+00:32:00,940 --> 00:32:07,940
+We have two matrices A and B which are of type 2 by 3.
+
+163
+00:32:09,940 --> 00:32:12,940
+So A plus B means.
+
+164
+00:32:19,059 --> 00:32:24,059
+Sum or take the addition of each corresponding entry.
+
+165
+00:32:25,879 --> 00:32:37,839
+If A plus B is C, the matrix C, so C11 is equal to A11 plus B11, so 1 plus 0, which is 1.
+
+166
+00:32:38,839 --> 00:32:45,700
+And C12 is negative 2 plus 2, which is 0.
+
+167
+00:32:45,700 --> 00:32:52,480
+And the last entry on the first row is 3 plus 1, which is 4.
+
+168
+00:32:53,139 --> 00:33:05,220
+And for the second row of the addition matrix, we have 2 plus 1, 3, negative 1 plus 3, which is 2.
+
+169
+00:33:05,379 --> 00:33:11,720
+And the last entry of the addition matrix is 4 plus negative 4, which is 0.
+
+170
+00:33:11,720 --> 00:33:15,539
+Okay.
+
+171
+00:33:21,971 --> 00:33:32,971
+We can only add two matrices if they have the same number of rows and the same number of columns.
+
+172
+00:33:34,971 --> 00:33:41,971
+It means A and B are of the same size or same type.
+
+173
+00:33:54,483 --> 00:33:58,323
+We can also multiply a matrix by a scalar.
+
+174
+00:34:00,063 --> 00:34:02,703
+Scalar means a real number.
+
+175
+00:34:03,323 --> 00:34:03,463
+Okay.
+
+176
+00:34:04,183 --> 00:34:06,364
+Scalar is a real number.
+
+177
+00:34:07,203 --> 00:34:11,103
+We have a matrix A, which is of type M by N.
+
+178
+00:34:11,764 --> 00:34:15,284
+And we have a scalar R, which is a real number.
+
+179
+00:34:15,983 --> 00:34:20,663
+Then R times, the scalar times the matrix A
+
+180
+00:34:20,663 --> 00:34:25,764
+is again the matrix of type M by N.
+
+181
+00:34:26,703 --> 00:34:30,603
+And each entry of this scalar multiplication matrix
+
+182
+00:34:30,603 --> 00:34:38,043
+can be found by multiplying each entry of the matrix A
+
+183
+00:34:38,043 --> 00:34:39,824
+by the scalar R.
+
+184
+00:34:39,824 --> 00:34:46,223
+For example, we have the matrix A, this,
+
+185
+00:34:46,223 --> 00:34:51,463
+and our scalar R is negative 2.
+
+186
+00:34:52,163 --> 00:34:58,163
+So R times A means multiply the scalars
+
+187
+00:34:58,163 --> 00:35:03,043
+with each entry of the matrix.
+
+188
+00:35:03,483 --> 00:35:06,884
+So negative 2 times 4, negative 2 times negative 2,
+
+189
+00:35:06,884 --> 00:35:11,543
+negative 2 times negative 3, negative 2 times 7,
+
+190
+00:35:11,804 --> 00:35:15,264
+negative 2 times negative 3, and negative 2 times 2.
+
+191
+00:35:15,264 --> 00:35:19,804
+So we have a scalar multiplication matrix.
+
+192
+00:35:23,603 --> 00:35:23,963
+Ok.
+
+193
+00:35:28,083 --> 00:35:33,583
+So, it follows from here that since we can multiply a matrix by a scaler,
+
+194
+00:35:38,132 --> 00:35:44,811
+We think that we have two matrices of same type or same size.
+
+195
+00:35:47,412 --> 00:35:57,871
+We know that we can multiply a matrix by a scalar, so negative 1 times B means negative B.
+
+196
+00:35:57,871 --> 00:36:13,311
+So, A plus, because we learned how to add two matrices, negative 1 times B, follows that A minus B.
+
+197
+00:36:14,152 --> 00:36:24,371
+So, the subtraction or the difference between two matrices can be defined as A plus negative 1 times B or A minus B.
+
+198
+00:36:24,371 --> 00:36:39,831
+Okay, we can also add three matrices A plus B plus C is equal to A plus B plus C.
+
+199
+00:36:39,831 --> 00:36:40,831
+Now, we have two matrices A minus B.
+
+200
+00:36:40,831 --> 00:36:42,831
+Now, we have two matrices A and B.
+
+201
+00:36:42,831 --> 00:37:07,652
+A minus B is two minus two, three minus negative one, negative five minus three, four minus three, two minus five, and one minus negative two.
+
+202
+00:37:09,831 --> 00:37:10,331
+Okay.
+
+203
+00:37:16,788 --> 00:37:22,947
+We will talk about the summation notation here, because we will use it later and it is very useful.
+
+204
+00:37:25,188 --> 00:37:38,427
+Summation notation is denoted by, i begins with 1 and goes to the n, ai means add all of the numbers,
+
+205
+00:37:38,427 --> 00:37:47,307
+a1 to the an, so a1 plus a2 plus plus an.
+
+206
+00:37:49,148 --> 00:38:03,648
+Here i is called the index of the summation and it is a number variable. It means that you can write the summation by using different letters.
+
+207
+00:38:03,648 --> 00:38:08,447
+you can use j, you can use k, or you can use t, it doesn't matter.
+
+208
+00:38:10,048 --> 00:38:24,447
+So, the summation of u i from 1 to the n can be written as the summation of u j from j1 to the n or u k,
+
+209
+00:38:27,007 --> 00:38:28,128
+k1 to the n.
+
+210
+00:38:31,891 --> 00:38:43,851
+[öğrenci], I will upload these notes to your lesson wall. There's a lesson wall in your education, online education system. I will upload the notes after the lecture. Okay.
+
+211
+00:38:49,396 --> 00:38:54,796
+[öğrenci], sen geçen dönemde lineer cebir almadın mı benden ya? Başka bir ders mi aldın?
+
+212
+00:38:57,776 --> 00:39:03,676
+Lineer cebir aldın kaldın mı? Tamam, peki. O sensin değil mi? Geçtim değil mi maddeli?
+
+213
+00:39:08,340 --> 00:39:09,140
+Tamam, peki.
+
+214
+00:39:15,764 --> 00:39:28,184
+So, for example, the summation of the terms a i from 1 to 4 means a 1 plus a 2 plus a 3 plus a 4.
+
+215
+00:39:38,164 --> 00:39:44,244
+This is not important, linear combination of matrices. So I skip it.
+
+216
+00:39:46,884 --> 00:39:49,124
+What is the transpose of the matrix?
+
+217
+00:39:58,068 --> 00:40:08,908
+Transpose of the matrix means we have a matrix A which have M rows and columns.
+
+218
+00:40:10,368 --> 00:40:23,008
+Transpose of the matrix A is denoted by A transpose and it is M by M matrix.
+
+219
+00:40:23,008 --> 00:40:32,248
+So it means that we interchange rows of the matrix A with its colors.
+
+220
+00:40:34,148 --> 00:40:47,228
+So the transpose of the matrix A is an M by M matrix defined by the transpose of each entry.
+
+221
+00:40:47,228 --> 00:40:55,128
+The transpose of Aij is equal to Aji.
+
+222
+00:40:57,128 --> 00:41:09,328
+So the transpose of a matrix A is obtained from A by interchanging the rows and the columns.
+
+223
+00:41:10,128 --> 00:41:14,128
+For example, we have five matrices here.
+
+224
+00:41:14,128 --> 00:41:16,328
+What is the transpose of A?
+
+225
+00:41:17,228 --> 00:41:21,368
+A is two by three matrix.
+
+226
+00:41:24,820 --> 00:41:35,820
+So to find the transpose of A, we write the first row as the first column of A transpose.
+
+227
+00:41:40,851 --> 00:41:53,632
+This is the first row. So it will be the first column of the transpose matrix. So the first column is 4, negative 2, 3.
+
+228
+00:41:55,531 --> 00:42:05,172
+And the second row will be the second column of the transpose matrix. So it is 0, 5, negative 2.
+
+229
+00:42:05,172 --> 00:42:14,931
+Since A is 2 by 3 matrix, but the transpose of A is 3 by 2 matrix.
+
+230
+00:42:16,391 --> 00:42:26,811
+What about B? B is a square matrix of order 3. So it's transpose also will be a square matrix of order 3.
+
+231
+00:42:26,811 --> 00:42:41,132
+Again, we interchange the rows and the columns. The first row will be the first column of the transpose matrix.
+
+232
+00:42:45,588 --> 00:42:55,988
+3, negative 1, 2, 0, 4, 3.
+
+233
+00:42:57,988 --> 00:43:01,708
+Okay, what about C transpose?
+
+234
+00:43:06,708 --> 00:43:10,768
+Again, we only interchange the rows and the columns.
+
+235
+00:43:12,268 --> 00:43:14,907
+So, this is the first column.
+
+236
+00:43:15,427 --> 00:43:18,748
+So, it will be the first row of transpose matrix.
+
+237
+00:43:19,367 --> 00:43:22,528
+5, negative 3, 2.
+
+238
+00:43:23,168 --> 00:43:25,407
+And this is the second column.
+
+239
+00:43:25,528 --> 00:43:28,168
+So, it will be the second row of the transpose matrix.
+
+240
+00:43:28,168 --> 00:43:30,628
+So, it is 4, 2.
+
+241
+00:43:36,820 --> 00:43:37,820
+negatif 3.
+
+242
+00:43:39,900 --> 00:43:42,220
+Since C is 3 by 2,
+
+243
+00:43:43,660 --> 00:43:46,340
+the transpose of C is 2 by 3.
+
+244
+00:44:04,019 --> 00:44:15,559
+Bakın, matris D, D'inclisi only one row, ve say, we define such a matris as a row matris.
+
+245
+00:44:21,300 --> 00:44:39,800
+So, what is the transpose of this matrix? We interchange the row by a column. So, since this is the first row of D, it will be the first column of the transpose matrix.
+
+246
+00:44:46,612 --> 00:44:52,612
+So it means that the transpose of the row matrix is a column matrix.
+
+247
+00:44:58,931 --> 00:45:05,511
+And for the matrix E, which is a column matrix, because it includes only a one column,
+
+248
+00:45:13,108 --> 00:45:19,228
+Transpose of a column matrix will be a row matrix.
+
+249
+00:45:19,228 --> 00:45:26,228
+So this is the first column and it will be the first row of the transpose matrix.
+
+250
+00:45:35,315 --> 00:45:37,315
+Bu, romantik.
+
+251
+00:45:56,275 --> 00:46:04,556
+[öğrenci], you can add two matrices if they are the same type.
+
+252
+00:46:04,556 --> 00:46:14,655
+So, it means that if you want to add two matrices, A plus C transpose,
+
+253
+00:46:18,739 --> 00:46:31,039
+This must be m by n, and this must be m by n. So it means that C must be m by n. Okay?
+
+254
+00:46:32,339 --> 00:46:40,339
+We can only add matrices with the same type or the same size.
+
+255
+00:46:44,532 --> 00:46:54,032
+Now we talk about the matrix multiplication, but the matrix multiplication is some complicated.
+
+256
+00:46:55,132 --> 00:47:12,532
+Before beginning, first of all, we define an inner product or that product because we'll also see what is that product later and properties of that product or inner product later.
+
+257
+00:47:12,532 --> 00:47:17,532
+But in matrix multiplication, actually we use this product.
+
+258
+00:47:17,532 --> 00:47:23,532
+So first of all, let us define what is that product or inner product.
+
+259
+00:47:23,532 --> 00:47:31,532
+We have two n-vektörs. n-vektörs means column matrices.
+
+260
+00:47:40,436 --> 00:47:52,936
+So, the carbon matrix have n rows. So, A and B are carbon matrices or we say that these are vectors, n vectors.
+
+261
+00:47:54,036 --> 00:48:07,216
+The dot product or inner product of these two matrices or these two vectors is denoted by A dot B
+
+262
+00:48:07,216 --> 00:48:10,896
+or in some books
+
+263
+00:48:10,896 --> 00:48:15,296
+it is denoted by
+
+264
+00:48:15,296 --> 00:48:19,476
+A, B
+
+265
+00:48:19,476 --> 00:48:21,696
+and defined by
+
+266
+00:48:25,492 --> 00:48:27,392
+A1 times B1
+
+267
+00:48:31,188 --> 00:48:48,688
+A2 times plus A2 times B2, A n times Bn. Or we can write this summation by using summation notation.
+
+268
+00:48:48,688 --> 00:49:08,988
+I1 to the n, A i, B i. This is the dot product of two column matrices or the dot product of two n matris.
+
+269
+00:49:08,988 --> 00:49:18,988
+So the number of rows must be equal to use dot product or unit product.
+
+270
+00:49:22,708 --> 00:49:23,347
+For example,
+
+271
+00:49:32,532 --> 00:49:52,372
+The dot product of these two vectors, or these two column matrices are, is sorry, 1 times 2 plus negative 2 times 3 plus 3 times negative 2 plus 4 times 1.
+
+272
+00:49:52,372 --> 00:49:58,932
+So, which is a real number. It means that the result of the inner product is a real number.
+
+273
+00:49:58,932 --> 00:50:25,251
+And in example 17, we have a and b to column matrices. If you know the inner product of these two matrices, or these two vectors, is equal to negative 4, then we can find x because the inner product of these two vectors is x times 4 plus 2 times 1 plus 3 times 2.
+
+274
+00:50:25,251 --> 00:50:31,512
+So, we have this equation. And from here x is negative 3.
+
+275
+00:50:40,724 --> 00:50:47,844
+Ok, before matris multiplication, let us take a 10 minutes break, then we will continue at 2.
+
+276
+01:03:26,675 --> 01:03:45,195
+Hello again. Now let us learn how we multiply two matrices. First of all, we can only multiply two matrices under spatial conditions.
+
+277
+01:03:45,195 --> 01:03:56,076
+The condition to multiply two matrices is that the number of the columns of the first matrix
+
+278
+01:03:56,076 --> 01:04:09,436
+has to be the same as the number of the rows of the second one. So we have two matrices A and B.
+
+279
+01:04:17,523 --> 01:04:29,643
+A is of type M by P, and V is of type P by N.
+
+280
+01:04:32,463 --> 01:04:42,223
+So, the number of the columns of the first matris is the same as the number of the rows of the second one.
+
+281
+01:04:49,811 --> 01:04:58,572
+And C will be of type M by M.
+
+282
+01:05:24,244 --> 01:05:54,224
+Now, we have the matrix A, which is of type M by P, and P is a matrix of type P by N, and product of A and P, denoted by AB, is the matrix of type M by N, and is defined by, in each entry in C, Cij is equal to A i1 type P,
+
+283
+01:05:54,244 --> 01:06:02,284
+B1, J plus, maybe we can write these matrices, okay, here.
+
+284
+01:06:09,940 --> 01:06:12,920
+So, this equation says,
+
+285
+01:06:18,900 --> 01:06:31,400
+The product of the matrix is the dot product of the transpose of the icrope of A with the j column of B.
+
+286
+01:06:36,500 --> 01:06:38,400
+Now, this is the matrix A.
+
+287
+01:06:41,876 --> 01:06:46,876
+which is MIP
+
+288
+01:06:52,628 --> 01:07:19,468
+This is the matrix B, which is P by N. Now, if you want to find the multiplication of these two matrices, or the product of these two matrices, you have to find each entry in C, and the size of C will be M by N.
+
+289
+01:07:28,403 --> 01:07:48,403
+For example, if you want to find ij entry of the product matrix C, it means that Cij is equal to that product of i-troll.
+
+290
+01:07:53,907 --> 01:08:09,708
+A, since that product is only defined for the vectors, so we take the transpose of the i product, sorry, the transpose of the i-crow of A.
+
+291
+01:08:15,635 --> 01:08:20,555
+Zatproduk ve Zatproduk ve Zatproduk ve Zatproduk ve Zatproduk ve Zatproduk ve Zatproduk ve Zatproduk ve Zatproduk ve Zatproduk ve Zatproduk ve Zatproduk ve Zatproduk ve Zatproduk ve Zatproduk ve Zatproduk ve Zatproduk ve Zatproduk ve Zatproduk ve Zatproduk ve Zatproduk ve Zatproduk ve Zatproduk ve Zatproduk ve Zatproduk ve Zatproduk ve Zatproduk ve Zatproduk ve Zatproduk ve Zatproduk ve Zatproduk ve Zatproduk ve Zatproduk ve Zatproduk ve Zatproduk ve Zatproduk ve Zatproduk ve Zatproduk ve Zatproduk ve Zatproduk ve Zatproduk ve Zatproduk ve Zatproduk ve Zatproduk ve Zatprodu
+
+292
+01:08:24,467 --> 01:08:37,547
+J column of the second matrix, which is B. So Cij is equal to rho I, A.
+
+293
+01:08:43,380 --> 01:08:46,520
+transpose dot product
+
+294
+01:08:46,520 --> 01:08:50,560
+column j
+
+295
+01:08:50,560 --> 01:08:55,039
+ok
+
+296
+01:09:11,507 --> 01:09:24,587
+Observe that the product of A and B is defined when the number of rows of matrix B is equal to the number of columns of A.
+
+297
+01:09:24,587 --> 01:09:33,148
+Sorry. So the columns of the first matrix has to be same as the number of rows of the second matrix.
+
+298
+01:09:33,827 --> 01:09:40,007
+And the size of the product matrix will be M by N.
+
+299
+01:09:46,484 --> 01:09:50,944
+Look at the example, matris A is 2 by 3.
+
+300
+01:09:55,956 --> 01:09:58,916
+And matrix B is 3 by 2.
+
+301
+01:10:01,775 --> 01:10:10,876
+Since the number of the columns of the first matrix is the same as the rows of the second matrix,
+
+302
+01:10:11,435 --> 01:10:13,636
+so we can multiply these two matrices.
+
+303
+01:10:13,636 --> 01:10:27,636
+And say A times B is the matrix C and C will be 2 by...
+
+304
+01:10:35,731 --> 01:10:36,671
+2x2.
+
+305
+01:10:42,036 --> 01:10:46,935
+Actually, we can denote the matrix C, the product matrix C.
+
+306
+01:10:54,036 --> 01:11:01,416
+C11, C12, C21, C22.
+
+307
+01:11:01,416 --> 01:11:22,256
+So, from the definition, you will find C11, rho1, A transpose, dot product with column 1,
+
+308
+01:11:27,891 --> 01:11:49,371
+B. So, the first row of A is 1 to negative 1, take is transpose 1 to negative 1, in a product with the first column of B, which is negative 2.
+
+309
+01:11:57,043 --> 01:12:01,043
+Negative two, four, two.
+
+310
+01:12:03,043 --> 01:12:11,043
+So, the first, the entry on the first row at the first column of the product matrix is one times negative two.
+
+311
+01:12:16,500 --> 01:12:28,500
+plus 2 times 4 plus negative 1 times 2, which is negative 2, 6, 4.
+
+312
+01:12:31,956 --> 01:12:46,516
+Okay, and you can find C12, C21, and C22 as the same way or we can easily write or we can simply write this dot product.
+
+313
+01:12:48,516 --> 01:12:49,796
+Take the first row.
+
+314
+01:12:53,779 --> 01:13:23,779
+Bu, bu
+
+315
+01:13:23,779 --> 01:13:29,509
+bu, bu
+
+316
+01:13:33,971 --> 01:13:51,591
+C12 is equal to 1 times 5, 1 times 5 plus 2 times negative 3, so negative 1 plus negative 1 times 1, which is negative 2.
+
+317
+01:13:51,591 --> 01:13:59,992
+Okay, and what about C21? We can find C21
+
+318
+01:13:59,992 --> 01:14:03,671
+Again
+
+319
+01:14:08,435 --> 01:14:15,235
+For C21, we use rho2 of A.
+
+320
+01:14:20,787 --> 01:14:46,787
+İner product with first column of the second matrix. So 3 times negative 2, negative 6 plus 1 times 4, 4. So it gives negative 2 plus 4 times 2, 8. So it gives 6.
+
+321
+01:14:46,787 --> 01:15:14,707
+And the last entry, for the last entry, which is C22. So we take the second row of the first matrix and take the inner product of row 2 of A, the transpose of row 2 of A, V, the second column of the second matrix.
+
+322
+01:15:14,707 --> 01:15:25,507
+So 3 times 5 plus 1 times negative 3 plus 4 times 1, which gives 16. Does it make sense?
+
+323
+01:15:31,539 --> 01:15:40,359
+Multiplication of matris is very important, so please try to product the matris by yourself after the lecture.
+
+324
+01:15:55,188 --> 01:16:08,587
+We have two matrix A and B. And we are looking for the entry of the product matrix on the third row and the second column.
+
+325
+01:16:11,268 --> 01:16:14,988
+A is 1, 2, 3. 3 by 3 matrix.
+
+326
+01:16:17,627 --> 01:16:20,307
+And B is 3 by 2.
+
+327
+01:16:24,083 --> 01:16:37,083
+Since the number of the columns of the first matrix, which is 3, is the same as the number of the rows of the second matrix, we can multiply these two matrices.
+
+328
+01:16:41,652 --> 01:17:03,652
+Actually, if you want to find the entry on the third row and the second column, you can multiply these two matrices or from the definition of the product of two matrices, we know that Cij is equal to
+
+329
+01:17:03,652 --> 01:17:12,532
+Rho I A transpose in a product with
+
+330
+01:17:15,572 --> 01:17:22,532
+from J B. So we are looking for C32.
+
+331
+01:17:28,659 --> 01:17:31,579
+So, it is equal to row 3.
+
+332
+01:17:35,283 --> 01:17:43,063
+A transpose, inner product with column to B.
+
+333
+01:17:56,083 --> 01:18:05,724
+What is log 3 of A? 0, 1, negative 2, take the transpose, 0, 1, negative 2.
+
+334
+01:18:07,604 --> 01:18:17,083
+Inner product with column 2 of B, which is 4, negative 1, 2.
+
+335
+01:18:17,083 --> 01:18:28,764
+So, 0, times 4, plus 1, times negative 1, plus negative 2, times 2.
+
+336
+01:18:34,036 --> 01:18:36,315
+So, it is negative 5.
+
+337
+01:18:46,836 --> 01:18:47,136
+Ok?
+
+338
+01:18:50,804 --> 01:18:54,283
+En problem, en equation, en query.
+
+339
+01:18:58,484 --> 01:18:59,084
+Bizi't kreş?
+
+340
+01:19:04,051 --> 01:19:05,051
+Do you have any questions?
+
+341
+01:19:12,756 --> 01:19:17,536
+Thank you, [öğrenci]. I think most of you are sleeping. Are you sleeping?
+
+342
+01:19:27,699 --> 01:19:33,800
+Okay, okay, thank you. Now, look into the example 21.
+
+343
+01:19:39,923 --> 01:19:52,844
+We have two matrices and we know that product matrix is like this and we are looking for x and y. So let us multiply a and b.
+
+344
+01:20:05,043 --> 01:20:12,344
+A is 2 by 3, and B is 3 by 1.
+
+345
+01:20:15,043 --> 01:20:31,644
+Since the number of the columns of the first matrix is equal to the number of the rows of the second one, we can multiply these two matrices, and the resulting matrix will be the type of 2 by 1, as here.
+
+346
+01:20:44,180 --> 01:20:55,860
+So, what is the first entry of the product matrix? This is C11, C21.
+
+347
+01:20:59,572 --> 01:21:19,652
+So, take the first row of the first matrix and the first row of first column of the second one. 1 times 2, 2 plus x times 4, 4x and 3 times y.
+
+348
+01:21:19,652 --> 01:21:22,872
+Okay.
+
+349
+01:21:24,551 --> 01:21:26,311
+And for C21.
+
+350
+01:21:33,876 --> 01:21:53,516
+İlk olarak, ilk olarak, ilk olarak, ilk olarak, ilk olarak, ilk olarak, ilk olarak, ilk olarak, ilk olarak, ilk olarak, ilk olarak, ilk olarak, ilk olarak, ilk olarak, ilk olarak, ilk olarak, ilk olarak, ilk olarak, ilk olarak, ilk olarak, ilk olarak, ilk olarak, ilk olarak, ilk olarak, ilk olarak, ilk olarak, ilk olarak, ilk olarak, ilk olarak, ilk olarak, ilk olarak, ilk olarak, ilk olarak, ilk olarak, ilk olarak, ilk olarak, ilk olarak, ilk olarak, ilk olarak, ilk olarak, ilk olarak, ilk olarak, ilk olarak, ilk olarak, ilk olarak, ilk olarak, ilk olarak, ilk olarak, ilk olarak, ilk olarak, ilk olarak, ilk olarak, ilk olarak, ilk olarak, ilk olarak, ilk olarak, ilk olarak, ilk olarak, ilk olarak, ilk olarak, ilk olarak, ilk olarak, ilk olarak, ilk olarak, ilk olarak, ilk olarak, ilk olarak, ilk olarak, ilk olarak, ilk olarak, ilk olarak, ilk olarak, ilk olarak, ilk olarak,
+
+351
+01:21:57,268 --> 01:22:05,467
+ve know that this matris is equal to 12, 6.
+
+352
+01:22:06,747 --> 01:22:11,448
+From the equality of termaticis, it means that, it means that,
+
+353
+01:22:15,188 --> 01:22:21,068
+This is equal to 12, and y is equal to 6.
+
+354
+01:22:22,608 --> 01:22:34,448
+If y is equal to 6, then 2 plus 4x plus 18 is equal to 12.
+
+355
+01:22:35,268 --> 01:22:44,768
+Therefore, we have x is negative 8, negative 2.
+
+356
+01:22:49,460 --> 01:22:49,739
+Ok.
+
+357
+01:22:57,427 --> 01:23:01,427
+Now we have some remarks about the multiplication of two matrisis.
+
+358
+01:23:03,427 --> 01:23:14,427
+We say that we can only multiply two matrisis if the number of the columns of the first one is the same as the number of the rows of the second one.
+
+359
+01:23:24,435 --> 01:23:32,435
+We have two matrices, A and B.
+
+360
+01:23:32,435 --> 01:23:41,435
+If the number of the columns of the first matrix is the same as the number of the rows of the second one,
+
+361
+01:23:41,435 --> 01:23:45,435
+we can multiply these two matrices.
+
+362
+01:23:52,372 --> 01:23:54,552
+What about V times A?
+
+363
+01:23:58,452 --> 01:24:09,612
+If, for this case, if m is not equal to n, then v times a is not defined.
+
+364
+01:24:13,395 --> 01:24:20,355
+If b times a is defined, it means that m is equal to m because for
+
+365
+01:24:23,828 --> 01:24:38,688
+B' times A, or to find the product of B and A, B is of type P by N, and A is of type M by P.
+
+366
+01:24:40,368 --> 01:24:41,528
+We know that...
+
+367
+01:24:44,724 --> 01:24:46,963
+To define a multiplication of matrices
+
+368
+01:24:51,956 --> 01:24:56,636
+So, number of the columns of the first one must be equal to the number of rows of the second one.
+
+369
+01:24:56,716 --> 01:25:03,216
+So, it means that if B times A is defined, N is equal to M.
+
+370
+01:25:04,876 --> 01:25:05,376
+Okay.
+
+371
+01:25:10,195 --> 01:25:18,996
+If AB and BA are both of the same size, they may be equal.
+
+372
+01:25:20,355 --> 01:25:28,055
+In general, actually, A times B is not equal to B times A.
+
+373
+01:25:28,055 --> 01:25:38,195
+But for real numbers, we have always A times B is equal to B times A.
+
+374
+01:25:38,296 --> 01:25:44,055
+But in matrices, this is not valued in general.
+
+375
+01:25:44,635 --> 01:25:51,876
+But in some conditions, under some conditions, A times B is equal to B times A.
+
+376
+01:25:51,876 --> 01:25:58,135
+For example, we have two matrices of type 2 by 2.
+
+377
+01:25:58,956 --> 01:26:04,536
+So A times B and B times A are both defined.
+
+378
+01:26:05,456 --> 01:26:07,456
+Let us find A times B.
+
+379
+01:26:12,659 --> 01:26:18,180
+1 times 2, 2. 2 times 0, 0. So it is 2.
+
+380
+01:26:19,800 --> 01:26:25,500
+And 1 times 1, 1 plus 2 times 1, which is 3.
+
+381
+01:26:27,739 --> 01:26:30,039
+Negative 1 times 2, negative 2.
+
+382
+01:26:32,239 --> 01:26:37,779
+Negative 1 times 1, negative 1, 3 times 1, 3. So 2.
+
+383
+01:26:38,819 --> 01:26:42,319
+This is A times B. What about B times A?
+
+384
+01:26:42,659 --> 01:26:43,659
+1.
+
+385
+01:26:43,659 --> 01:26:44,659
+2.
+
+386
+01:26:44,659 --> 01:26:45,659
+3.
+
+387
+01:26:45,659 --> 01:26:46,659
+4.
+
+388
+01:26:46,659 --> 01:26:47,659
+5.
+
+389
+01:26:47,659 --> 01:26:48,659
+6.
+
+390
+01:26:48,659 --> 01:26:50,659
+7.
+
+391
+01:26:50,659 --> 01:26:52,659
+8.
+
+392
+01:26:52,659 --> 01:26:53,659
+9.
+
+393
+01:26:53,659 --> 01:26:55,659
+10.
+
+394
+01:26:55,659 --> 01:26:58,659
+11.
+
+395
+01:26:58,659 --> 01:27:01,659
+12.
+
+396
+01:27:01,659 --> 01:27:02,659
+13.
+
+397
+01:27:02,659 --> 01:27:04,659
+14.
+
+398
+01:27:04,659 --> 01:27:10,659
+15.
+
+399
+01:26:48,851 --> 01:26:51,171
+So, 1, 0, 1.
+
+400
+01:26:55,220 --> 01:26:59,100
+1, 2, negatif 1, 3.
+
+401
+01:27:14,676 --> 01:27:19,996
+2 times 1, 2 plus 1 times negative 1, negative 1, so it is 1.
+
+402
+01:27:22,956 --> 01:27:27,356
+For this entry, take the first row and second column,
+
+403
+01:27:28,836 --> 01:27:33,676
+taking the product of the first row of A and the second column of B.
+
+404
+01:27:35,056 --> 01:27:41,615
+So 2 times 2, 4 plus 1 times 3, which is 7.
+
+405
+01:27:46,323 --> 01:28:00,203
+And for this entry, take the second row and the first column, 0, negative 1, and 0, 3.
+
+406
+01:28:02,103 --> 01:28:14,583
+So, A times B is not equal to B times A, but the size of A times B and B times A are the same.
+
+407
+01:28:26,547 --> 01:28:32,197
+Şimdi, altyazı al
+
+408
+01:28:35,572 --> 01:28:39,572
+Öncelikle, let us look at the properties of matrix addition.
+
+409
+01:28:39,572 --> 01:28:50,572
+The properties of matrix addition is very similar to the properties of addition for real numbers.
+
+410
+01:28:50,572 --> 01:28:59,572
+A times A plus B is equal to B plus A, which is actually called the commutative law.
+
+411
+01:29:06,676 --> 01:29:21,916
+So, the addition of the matrices has the commutative law or the commutative property. A plus B plus C is equal to A plus B plus C. This is the associative law.
+
+412
+01:29:29,652 --> 01:29:34,971
+There's a unique matrix O, which is a zero matrix actually.
+
+413
+01:29:37,051 --> 01:29:40,292
+A plus O is equal to A.
+
+414
+01:29:40,992 --> 01:29:43,511
+Here O is the zero matrix.
+
+415
+01:29:45,992 --> 01:29:54,612
+And for each matrix A and by a matrix A, we can find a unique matrix.
+
+416
+01:29:55,252 --> 01:29:56,672
+Unique means only one.
+
+417
+01:30:06,771 --> 01:30:18,872
+We can find a unique matrix D such that A plus D is equal to the zero matrix. So here D is actually the negative of the matrix A.
+
+418
+01:30:26,836 --> 01:30:38,536
+Here are the proofs of these properties, but no need to prove these properties, but you can find the proof here.
+
+419
+01:30:39,496 --> 01:30:51,976
+For example, if we have the matrix A, 2x2 matrix, if we add this matrix with the 0 matrix, we will find the same matrix.
+
+420
+01:30:51,976 --> 01:30:59,275
+So A plus 0 matrix is equal to A.
+
+421
+01:31:00,115 --> 01:31:06,296
+So we can think that the 0 matrix is an identity.
+
+422
+01:31:09,356 --> 01:31:11,695
+Okay, I need to write identity.
+
+423
+01:31:23,764 --> 01:31:32,703
+The properties of matrix multiplication have associated law.
+
+424
+01:31:37,587 --> 01:31:39,148
+Oral associated property.
+
+425
+01:31:44,595 --> 01:31:54,395
+If we have the matris A, B, and C, which are the appropriate sizes, A times B times C is equal to A times B times C.
+
+426
+01:31:55,595 --> 01:32:02,895
+And the matris matrification has a distributable law over addition.
+
+427
+01:32:18,899 --> 01:32:21,439
+On the left and on the right.
+
+428
+01:32:22,079 --> 01:32:22,339
+Okay.
+
+429
+01:32:27,539 --> 01:32:42,939
+But we talk about that in general, the product or the malpeticion of matrisis has no commutative property.
+
+430
+01:32:55,828 --> 01:33:09,108
+But sometimes you can find matrisis a and b such that a times b is equal to b times a, but it does not mean that this equality is varied in general.
+
+431
+01:33:09,108 --> 01:33:14,468
+In general, a times b is not equal to b times a.
+
+432
+01:33:19,475 --> 01:33:32,576
+Bu matrisis A, B, ve C, you can see that A times B times C is equal to A times B times C.
+
+433
+01:33:37,268 --> 01:33:47,868
+And you will see that A plus B times C is equal to A times C plus B times C.
+
+434
+01:33:56,115 --> 01:34:03,956
+We have also some properties of scalar multiplication, or the multiplication of a matrix by a scalar.
+
+435
+01:34:03,956 --> 01:34:12,115
+We have two real numbers, scalars R and S, and we have these following four properties.
+
+436
+01:34:16,435 --> 01:34:33,195
+For example, for the matris a and b, 2 times 3 times a is equal to 6 times a, or 3 times 2 times a.
+
+437
+01:34:37,908 --> 01:34:44,608
+Ve de a' 2' b' is equal to 2' a' b.
+
+438
+01:34:51,539 --> 01:34:56,220
+Properiyelisinin a transposed hermetici, de çok önemli.
+
+439
+01:35:10,068 --> 01:35:17,068
+vektör uzayları,
+
+440
+01:35:18,579 --> 01:35:22,899
+A transpose, transpose A.
+
+441
+01:35:22,899 --> 01:35:29,939
+A plus B transpose A transpose plus B transpose.
+
+442
+01:35:29,939 --> 01:35:41,460
+A third commission is very important because A times B transpose is equal to B transpose times A transpose.
+
+443
+01:35:41,460 --> 01:35:46,579
+This commission is very important. This property is very important.
+
+444
+01:35:46,579 --> 01:35:58,579
+And for a scalar multiplication, R times A transpose is equal to R times since R is a scalar or D number R times A transpose.
+
+445
+01:36:19,923 --> 01:36:41,644
+Here we have examples of these properties. We have A and B, matrisis. A transpose, we interchange the rows with columns. So A transpose has the first column, 1, 2, 3. And this is the second column for A transpose. And this is B transpose.
+
+446
+01:36:41,644 --> 01:37:07,903
+If you find A plus B, 1 plus 3, 2 plus negative 1, 3 plus 5, sorry, 2. So A plus B is this matrix. And the transpose of A plus B is this one. If we add the transpose of A and B transpose, then we have the same matrix A plus B transpose.
+
+447
+01:37:28,467 --> 01:37:34,467
+Here actually, we need to load the properties of the trace.
+
+448
+01:38:01,908 --> 01:38:03,908
+The properties of trace
+
+449
+01:38:16,435 --> 01:38:24,435
+Actually, the trace of a matrix is the sum of the entries on the main diagonal of a square matrix.
+
+450
+01:38:24,435 --> 01:38:31,435
+So we can only talk about a trace of a matrix for square matrices.
+
+451
+01:38:32,435 --> 01:38:39,435
+Let A and B are square matrices of order n.
+
+452
+01:39:17,908 --> 01:39:19,108
+Order n.
+
+453
+01:39:20,108 --> 01:39:25,828
+Then we have the following properties.
+
+454
+01:39:27,828 --> 01:39:30,548
+And take a scalar.
+
+455
+01:39:34,707 --> 01:39:35,228
+Çeş.
+
+456
+01:39:39,155 --> 01:39:42,756
+Then, the first one.
+
+457
+01:39:47,028 --> 01:40:02,347
+Trace A plus B
+
+458
+01:40:10,100 --> 01:40:17,060
+Trace of a times b is equal to, trace of b times a.
+
+459
+01:40:26,484 --> 01:40:32,124
+Trace k times a is equal to k times trace a.
+
+460
+01:40:37,460 --> 01:40:42,460
+Ve bu last property, bu çok önemli.
+
+461
+01:40:42,460 --> 01:40:49,989
+A'ı
+
+462
+01:40:53,524 --> 01:41:01,524
+Or maybe we can trace of A transpose is equal to trace of the matrix A.
+
+463
+01:41:04,524 --> 01:41:08,524
+Okay, the properties of the trace is very important.
+
+464
+01:41:10,524 --> 01:41:16,524
+Now we have some remarks about the matrix multiplication.
+
+465
+01:41:16,524 --> 01:41:30,524
+Because we say that we mentioned about that the multiplication of the matrices are very different from the multiplication of the real numbers.
+
+466
+01:41:30,524 --> 01:41:45,724
+For example, for example, for two real numbers A and B, if A times B is equal to zero, then it means that A is equal to zero.
+
+467
+01:41:46,524 --> 01:41:49,524
+A or B is zero.
+
+468
+01:41:49,524 --> 01:41:53,524
+But this property is not true for matrices.
+
+469
+01:41:53,524 --> 01:41:58,524
+It means that, for example, we have two matrices A and B.
+
+470
+01:41:58,524 --> 01:42:02,524
+And if you multiply these two matrices, we have zero matrix.
+
+471
+01:42:02,524 --> 01:42:04,524
+A times B is a zero matrix.
+
+472
+01:42:04,524 --> 01:42:10,524
+But neither A nor B is a zero matrix.
+
+473
+01:42:10,524 --> 01:42:16,524
+So this property does not vary for matrices.
+
+474
+01:42:16,524 --> 01:42:27,524
+Again, for real numbers A, B and C, if A times B is equal to A times C, we have a cancellation law.
+
+475
+01:42:27,524 --> 01:42:30,524
+It means B is equal to C.
+
+476
+01:42:30,524 --> 01:42:36,524
+But for matrices, this property also does not vary.
+
+477
+01:42:36,524 --> 01:42:42,524
+The cancellation law does not work for matrices.
+
+478
+01:42:42,524 --> 01:42:51,524
+For example, A times B is equal to A times C here for matrices.
+
+479
+01:42:51,524 --> 01:43:02,524
+But B is not equal to C.
+
+480
+01:43:02,524 --> 01:43:03,524
+Okay.
+
+481
+01:43:03,524 --> 01:43:07,524
+These two remarks are very important.
+
+482
+01:43:07,524 --> 01:43:26,524
+The two remarks are very important.
+
+483
+01:43:11,891 --> 01:43:21,492
+And we can summarize all of these differences between the matrix multiplication and the multiplication of real numbers in remark.
+
+484
+01:43:25,460 --> 01:43:49,180
+For matrices ABC, which have the appropriate sizes, AB need not equal to BA. AB may be zero matrix with both A and P are non-zero. AB may be equal to AC with P is not equal to C.
+
+485
+01:43:51,180 --> 01:43:52,140
+Okay.
+
+486
+01:43:56,627 --> 01:44:02,527
+We will continue with the special types of matrices next week. Do you have any questions?
+
+487
+01:44:06,963 --> 01:44:17,524
+I will upload the notes in this lecture, 1-15, on your lesson wall, on your online education system.
+
+488
+01:44:19,844 --> 01:44:21,443
+So you can find the notes.
+
+489
+01:44:23,923 --> 01:44:24,564
+Any questions?
+
+490
+01:44:32,148 --> 01:44:44,528
+Peki arkadaşlar, görüşürüz. Hadi kendinize iyi bakın. Arkadaşınız bir şey demiş, ne demiş?
+
+491
+01:44:54,131 --> 01:45:03,652
+[öğrenci], dersten önce atarım ama üzerinde not düşüyorum ya. O zaman tekrar atmak zorunda kalacağım. Bu sefer de karışıyor işler. O yüzden dersten sonra atıyorum.
+
+492
+01:45:04,671 --> 01:45:05,351
+Mesela burada bak...
+
+493
+01:45:05,351 --> 01:45:09,131
+Önce atarsanız biz de sizinle birlikte not alabiliriz gibi düşünmüştüm.
+
+494
+01:45:09,652 --> 01:45:12,751
+Tamam, sen güzel düşündün ama mesela derse giremeyenden ne yapacaksın?
+
+495
+01:45:16,243 --> 01:45:17,903
+Unutları alamamış olacaklar, değil mi?
+
+496
+01:45:21,524 --> 01:45:33,384
+O zaman şöyle yapayım, tamam. Notların hepsini yükleyeyim, tamam mı? Sonra da işlediklerimizi yükledim. Tamam, sizin de işiniz görüntüsün, benim de. Olur mu?
+
+497
+01:45:34,064 --> 01:45:35,224
+Çok teşekkürler hocam.
+
+498
+01:45:36,484 --> 01:45:41,344
+Tamam, güzel değil. Evet arkadaşlar, görüşmek üzere o zaman. Kendinize iyi bakın.
+
+499
+01:45:44,524 --> 01:45:45,044
+Görüşürüz.
+
+500
+01:46:04,148 --> 01:46:08,168
+Evet arkadaşlar, hepinize iyi günler diliyorum ben de. Sisteme çıkamam.
