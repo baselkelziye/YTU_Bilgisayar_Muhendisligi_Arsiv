@@ -1,0 +1,3291 @@
+1
+00:00:12,500 --> 00:00:24,120
+Good morning to everyone. I hope you are all fine and healthy. I'll start the lesson in a couple of minutes later. Okay. Now I turn off my voice.
+
+2
+00:03:06,963 --> 00:03:07,963
+Good morning again.
+
+3
+00:03:10,324 --> 00:03:16,283
+Okay, today we have a new subject.
+
+4
+00:03:17,283 --> 00:03:21,804
+We will start the multivariable functions.
+
+5
+00:03:22,364 --> 00:03:26,403
+And the first question is,
+
+6
+00:03:26,683 --> 00:03:30,804
+what is the derivative of multivariable functions?
+
+7
+00:03:31,683 --> 00:03:36,003
+For example, let's make it bigger.
+
+8
+00:03:36,003 --> 00:03:44,644
+Yes, for example, if we consider the function y is f of x,
+
+9
+00:03:46,204 --> 00:03:54,204
+y is f of x, this is here, x is independent value and y is dependent value.
+
+10
+00:03:54,204 --> 00:04:04,884
+So, the ordinary derivative dy over dx f prime x with respect to x.
+
+11
+00:04:04,884 --> 00:04:11,103
+But in this section, we consider the multivariable function.
+
+12
+00:04:11,264 --> 00:04:19,723
+Actually, we consider two variable functions like as d is f, x, y.
+
+13
+00:04:19,723 --> 00:04:26,043
+So, if we think a derivative in a point,
+
+14
+00:04:26,864 --> 00:04:30,624
+so first we will start with derivative.
+
+15
+00:04:30,624 --> 00:04:39,443
+Okay, but we have two independent values and one independent value.
+
+16
+00:04:39,444 --> 00:04:45,144
+And if we think the derivative of the given function,
+
+17
+00:04:45,884 --> 00:05:00,603
+we need to say that the derivative of z with respect to x or derivative of z with respect to y,
+
+18
+00:05:00,603 --> 00:05:03,603
+because we have two independent values.
+
+19
+00:05:03,603 --> 00:05:12,244
+Of course, there are more than three or four variables.
+
+20
+00:05:12,244 --> 00:05:22,723
+So, the first goal in this section to describe this kind of functions.
+
+21
+00:05:22,723 --> 00:05:27,644
+What are the domains and what are the range of these functions?
+
+22
+00:05:28,443 --> 00:05:35,703
+And also, we will mention about the graph of this kind of functions.
+
+23
+00:05:36,463 --> 00:05:44,663
+Actually, we have certain graph or we can say certain surfaces like polar coordinates.
+
+24
+00:05:44,663 --> 00:05:45,264
+Okay.
+
+25
+00:05:45,264 --> 00:05:52,844
+And then later, we will learn the calculus of multivariable functions like limits.
+
+26
+00:05:53,783 --> 00:05:59,464
+How can we calculate the limit value and continuity of the given function
+
+27
+00:05:59,463 --> 00:06:09,624
+and the derivative of the given function and then the integral of the given function area and volume.
+
+28
+00:06:11,144 --> 00:06:23,943
+And we will finish actually this semester by a double integral with multivariable functions.
+
+29
+00:06:23,944 --> 00:06:24,484
+Okay.
+
+30
+00:06:26,484 --> 00:06:32,283
+So, let's start with a new title.
+
+31
+00:06:32,663 --> 00:06:34,644
+So, can you hear my voice clearly?
+
+32
+00:06:35,543 --> 00:06:37,423
+Can you write to me, please?
+
+33
+00:06:39,864 --> 00:06:40,464
+Okay.
+
+34
+00:06:40,764 --> 00:06:41,324
+Thank you.
+
+35
+00:06:45,684 --> 00:06:53,684
+So, our first title, partial derivatives.
+
+36
+00:06:53,684 --> 00:06:57,684
+Many functions depend on more than one variable.
+
+37
+00:06:57,684 --> 00:07:05,684
+For instance, the volume of right circular cylinder.
+
+38
+00:07:05,684 --> 00:07:08,684
+As you know very well.
+
+39
+00:07:08,684 --> 00:07:17,684
+Here, let's think the cylinder.
+
+40
+00:07:17,684 --> 00:07:22,684
+There is a radius R generally denoted by R.
+
+41
+00:07:22,684 --> 00:07:28,684
+And also, the H is height.
+
+42
+00:07:28,684 --> 00:07:34,684
+Or, this is two, there are two independence values here.
+
+43
+00:07:34,684 --> 00:07:46,684
+Or, we can take other kind of functions from physics and also from chemistry or from engineering.
+
+44
+00:07:46,684 --> 00:07:53,684
+I don't know. I only wrote one example for multi-variable functions.
+
+45
+00:07:53,684 --> 00:07:59,684
+So, cylinder is a function.
+
+46
+00:07:59,684 --> 00:08:05,684
+V is pi R square h of its radius and its height.
+
+47
+00:08:05,684 --> 00:08:12,684
+So, it is a function V, R, H of two variables R and H.
+
+48
+00:08:12,684 --> 00:08:24,684
+In this chapter, we extend the basic idea of single variable differential calculus to functions of several variables.
+
+49
+00:08:24,684 --> 00:08:27,684
+Functions of several variables.
+
+50
+00:08:27,684 --> 00:08:34,683
+Suppose D is a set of n tuples of real numbers, x1 to xn.
+
+51
+00:08:34,683 --> 00:08:48,683
+A real valued function F on D is a rule that assigns a unique real number, omega, f, x1, x2 and so on, xn, to each element in D.
+
+52
+00:08:48,683 --> 00:08:53,683
+The set D is the function's domain, as usual.
+
+53
+00:08:53,683 --> 00:08:59,683
+The set of omega values taken on by F is the function's range.
+
+54
+00:08:59,683 --> 00:09:10,683
+The symbol omega is dependent variable of F and F is said to be a function of n independent variable, x1 to xn.
+
+55
+00:09:10,683 --> 00:09:20,683
+We also call the xj the function's input variable and call omega the function's output variable.
+
+56
+00:09:20,683 --> 00:09:35,683
+If a function, if F is a function of two dependent variables, we usually call the independent variables x and y and the dependent variable is z.
+
+57
+00:09:35,683 --> 00:09:40,683
+We picture the domain as a region in x, y plane.
+
+58
+00:09:40,683 --> 00:09:45,683
+Yes, you can see here D.
+
+59
+00:09:45,683 --> 00:09:50,683
+D is a domain in x, y.
+
+60
+00:09:50,683 --> 00:09:57,683
+You can see from here this part of the x, y.
+
+61
+00:09:57,683 --> 00:10:04,683
+Okay, here D.
+
+62
+00:10:04,683 --> 00:10:05,683
+D.
+
+63
+00:10:05,683 --> 00:10:06,683
+Okay.
+
+64
+00:10:06,683 --> 00:10:11,683
+The function F assigns x, y to f, x, y.
+
+65
+00:10:11,683 --> 00:10:17,683
+In a real numbers.
+
+66
+00:10:17,683 --> 00:10:29,683
+Let me say if we choose from D assign a unique number in real axis.
+
+67
+00:10:29,683 --> 00:10:35,683
+If we choose the point A, B.
+
+68
+00:10:35,683 --> 00:10:38,683
+The function F assigns F, A, B.
+
+69
+00:10:38,683 --> 00:10:39,683
+Okay.
+
+70
+00:10:39,683 --> 00:10:44,683
+And arrow diagram for the function Z is F.
+
+71
+00:10:44,683 --> 00:11:05,683
+And arrow diagram for the function F.
+
+72
+00:10:45,844 --> 00:10:46,764
+xy.
+
+73
+00:10:48,004 --> 00:10:48,524
+Okay.
+
+74
+00:10:50,204 --> 00:10:51,504
+Domains and
+
+75
+00:10:51,504 --> 00:10:52,164
+ranges.
+
+76
+00:10:53,304 --> 00:10:55,504
+The domain of a function is
+
+77
+00:10:55,504 --> 00:10:57,844
+assumed to be the largest set
+
+78
+00:10:57,844 --> 00:10:59,464
+for which the
+
+79
+00:10:59,464 --> 00:11:01,204
+defining rule generates
+
+80
+00:11:01,204 --> 00:11:03,064
+real numbers.
+
+81
+00:11:03,344 --> 00:11:05,484
+The range consists of the set
+
+82
+00:11:05,484 --> 00:11:07,324
+of output values for
+
+83
+00:11:07,324 --> 00:11:08,844
+the dependent variable.
+
+84
+00:11:09,484 --> 00:11:11,104
+It's a classical definition
+
+85
+00:11:11,104 --> 00:11:13,344
+of domains and
+
+86
+00:11:13,344 --> 00:11:15,024
+the range of the functions.
+
+87
+00:11:15,384 --> 00:11:15,484
+Okay.
+
+88
+00:11:15,844 --> 00:11:18,024
+So here we have
+
+89
+00:11:18,024 --> 00:11:19,504
+some examples.
+
+90
+00:11:21,264 --> 00:11:22,744
+The first one.
+
+91
+00:11:23,264 --> 00:11:25,144
+Actually, we have
+
+92
+00:11:25,144 --> 00:11:27,444
+the certain kind of functions
+
+93
+00:11:27,444 --> 00:11:28,544
+in
+
+94
+00:11:28,544 --> 00:11:31,264
+we generally
+
+95
+00:11:31,264 --> 00:11:33,784
+say these are multivaluable
+
+96
+00:11:33,784 --> 00:11:34,884
+functions, but
+
+97
+00:11:34,884 --> 00:11:37,004
+generally we have two
+
+98
+00:11:37,004 --> 00:11:38,464
+variable functions.
+
+99
+00:11:38,744 --> 00:11:38,844
+Okay.
+
+100
+00:11:40,403 --> 00:11:41,864
+This is the first one.
+
+101
+00:11:42,284 --> 00:11:43,684
+And the second one,
+
+102
+00:11:43,804 --> 00:11:45,544
+it's not easy to
+
+103
+00:11:45,544 --> 00:11:47,403
+find the domain
+
+104
+00:11:47,403 --> 00:11:48,403
+and the range
+
+105
+00:11:48,403 --> 00:11:50,184
+of the given function.
+
+106
+00:11:50,664 --> 00:11:52,344
+So we will
+
+107
+00:11:52,344 --> 00:11:53,624
+have the certain
+
+108
+00:11:53,624 --> 00:11:54,644
+kind of
+
+109
+00:11:54,644 --> 00:11:57,044
+function like
+
+110
+00:11:57,044 --> 00:11:58,903
+like here
+
+111
+00:11:58,903 --> 00:12:01,024
+square root function,
+
+112
+00:12:02,024 --> 00:12:03,724
+rational function,
+
+113
+00:12:04,084 --> 00:12:05,604
+trigonometric function,
+
+114
+00:12:05,604 --> 00:12:06,844
+again,
+
+115
+00:12:06,844 --> 00:12:08,604
+rational function and
+
+116
+00:12:08,604 --> 00:12:10,124
+exponential function
+
+117
+00:12:10,124 --> 00:12:12,164
+or some
+
+118
+00:12:12,164 --> 00:12:13,903
+other trigonometric
+
+119
+00:12:13,903 --> 00:12:15,104
+and inverse
+
+120
+00:12:15,104 --> 00:12:15,724
+trigonometric
+
+121
+00:12:15,724 --> 00:12:16,804
+and also
+
+122
+00:12:16,804 --> 00:12:18,903
+logarithmic function.
+
+123
+00:12:18,903 --> 00:12:19,784
+We have
+
+124
+00:12:19,784 --> 00:12:21,164
+certain kind of
+
+125
+00:12:21,164 --> 00:12:21,984
+functions
+
+126
+00:12:21,984 --> 00:12:23,144
+which we
+
+127
+00:12:23,144 --> 00:12:24,444
+which we will
+
+128
+00:12:24,444 --> 00:12:25,064
+have
+
+129
+00:12:25,064 --> 00:12:27,164
+which we will
+
+130
+00:12:27,164 --> 00:12:28,484
+have the domain
+
+131
+00:12:28,484 --> 00:12:29,824
+and the range.
+
+132
+00:12:29,824 --> 00:12:31,324
+okay.
+
+133
+00:12:32,184 --> 00:12:33,884
+So the first
+
+134
+00:12:33,884 --> 00:12:35,284
+one is
+
+135
+00:12:35,284 --> 00:12:37,024
+the square root
+
+136
+00:12:37,024 --> 00:12:39,764
+y minus
+
+137
+00:12:39,764 --> 00:12:40,684
+x square.
+
+138
+00:12:41,164 --> 00:12:41,784
+We know
+
+139
+00:12:41,784 --> 00:12:42,764
+very well
+
+140
+00:12:42,764 --> 00:12:43,284
+that
+
+141
+00:12:43,284 --> 00:12:44,364
+y minus
+
+142
+00:12:44,364 --> 00:12:45,564
+x square
+
+143
+00:12:45,564 --> 00:12:47,944
+need to be
+
+144
+00:12:47,944 --> 00:12:48,964
+positive
+
+145
+00:12:48,964 --> 00:12:50,244
+or at least
+
+146
+00:12:50,244 --> 00:12:50,884
+zero.
+
+147
+00:12:51,544 --> 00:12:52,184
+So this
+
+148
+00:12:52,184 --> 00:12:52,764
+means
+
+149
+00:12:52,764 --> 00:12:54,424
+y is
+
+150
+00:12:54,424 --> 00:12:55,884
+greater or
+
+151
+00:12:55,884 --> 00:12:56,284
+equal
+
+152
+00:12:56,284 --> 00:12:56,824
+than
+
+153
+00:12:56,824 --> 00:12:57,844
+x squared.
+
+154
+00:12:58,204 --> 00:12:58,564
+Okay.
+
+155
+00:12:59,163 --> 00:13:00,464
+And also
+
+156
+00:13:00,464 --> 00:13:01,484
+the sign
+
+157
+00:13:01,484 --> 00:13:02,544
+is positive
+
+158
+00:13:02,544 --> 00:13:04,423
+and we know
+
+159
+00:13:04,423 --> 00:13:05,104
+that the
+
+160
+00:13:05,104 --> 00:13:06,144
+square root
+
+161
+00:13:06,144 --> 00:13:07,044
+value is
+
+162
+00:13:07,044 --> 00:13:07,604
+positive.
+
+163
+00:13:08,084 --> 00:13:08,923
+So the
+
+164
+00:13:08,923 --> 00:13:09,384
+range
+
+165
+00:13:09,384 --> 00:13:10,084
+is
+
+166
+00:13:10,084 --> 00:13:10,903
+zero
+
+167
+00:13:10,903 --> 00:13:11,804
+infinity.
+
+168
+00:13:12,224 --> 00:13:12,524
+Okay.
+
+169
+00:13:13,264 --> 00:13:14,244
+So the
+
+170
+00:13:14,244 --> 00:13:15,004
+second one
+
+171
+00:13:15,004 --> 00:13:15,504
+is a
+
+172
+00:13:15,504 --> 00:13:15,884
+rational
+
+173
+00:13:15,884 --> 00:13:16,764
+function.
+
+174
+00:13:17,944 --> 00:13:18,324
+So
+
+175
+00:13:18,324 --> 00:13:20,064
+z is
+
+176
+00:13:20,064 --> 00:13:20,844
+one over
+
+177
+00:13:20,844 --> 00:13:21,423
+x
+
+178
+00:13:21,423 --> 00:13:22,044
+y.
+
+179
+00:13:22,423 --> 00:13:23,244
+So we
+
+180
+00:13:23,244 --> 00:13:23,604
+know
+
+181
+00:13:23,604 --> 00:13:24,044
+that
+
+182
+00:13:24,044 --> 00:13:24,524
+x
+
+183
+00:13:24,524 --> 00:13:25,324
+y
+
+184
+00:13:25,324 --> 00:13:26,644
+shouldn't
+
+185
+00:13:26,644 --> 00:13:27,144
+be
+
+186
+00:13:27,144 --> 00:13:28,364
+zero.
+
+187
+00:13:29,364 --> 00:13:29,744
+So
+
+188
+00:13:29,744 --> 00:13:30,644
+this
+
+189
+00:13:30,644 --> 00:13:33,004
+means
+
+190
+00:13:33,004 --> 00:13:33,464
+x
+
+191
+00:13:33,464 --> 00:13:33,664
+is
+
+192
+00:13:33,664 --> 00:13:33,924
+not
+
+193
+00:13:33,924 --> 00:13:34,204
+equal
+
+194
+00:13:34,204 --> 00:13:34,464
+to
+
+195
+00:13:34,464 --> 00:13:34,824
+zero.
+
+196
+00:13:35,044 --> 00:13:35,364
+Y
+
+197
+00:13:35,364 --> 00:13:35,984
+is
+
+198
+00:13:35,984 --> 00:13:36,364
+not
+
+199
+00:13:36,364 --> 00:13:36,664
+equal
+
+200
+00:13:36,664 --> 00:13:36,924
+to
+
+201
+00:13:36,924 --> 00:13:37,224
+zero.
+
+202
+00:13:37,224 --> 00:13:37,524
+Or
+
+203
+00:13:37,524 --> 00:13:37,844
+x
+
+204
+00:13:37,844 --> 00:13:38,264
+y
+
+205
+00:13:38,264 --> 00:13:38,624
+is
+
+206
+00:13:38,624 --> 00:13:38,884
+not
+
+207
+00:13:38,884 --> 00:13:39,204
+equal
+
+208
+00:13:39,204 --> 00:13:39,444
+to
+
+209
+00:13:39,444 --> 00:13:39,764
+zero.
+
+210
+00:13:40,624 --> 00:13:41,264
+And
+
+211
+00:13:41,264 --> 00:13:41,704
+if we
+
+212
+00:13:41,704 --> 00:13:42,344
+check
+
+213
+00:13:42,344 --> 00:13:43,024
+the
+
+214
+00:13:43,024 --> 00:13:44,964
+range
+
+215
+00:13:44,964 --> 00:13:46,064
+so
+
+216
+00:13:46,064 --> 00:13:46,704
+we
+
+217
+00:13:46,704 --> 00:13:47,244
+don't
+
+218
+00:13:47,244 --> 00:13:47,604
+have
+
+219
+00:13:47,604 --> 00:13:48,244
+we
+
+220
+00:13:48,244 --> 00:13:48,484
+will
+
+221
+00:13:48,484 --> 00:13:48,824
+see
+
+222
+00:13:48,824 --> 00:13:49,144
+that
+
+223
+00:13:49,144 --> 00:13:49,444
+the
+
+224
+00:13:49,444 --> 00:13:50,184
+function
+
+225
+00:13:50,184 --> 00:13:50,664
+is
+
+226
+00:13:50,664 --> 00:13:51,284
+not
+
+227
+00:13:51,284 --> 00:13:52,324
+defined
+
+228
+00:13:52,324 --> 00:13:52,864
+for
+
+229
+00:13:52,864 --> 00:13:54,504
+I
+
+230
+00:13:54,504 --> 00:13:55,064
+said
+
+231
+00:13:55,064 --> 00:13:55,344
+x
+
+232
+00:13:55,344 --> 00:13:55,524
+is
+
+233
+00:13:55,524 --> 00:13:55,744
+not
+
+234
+00:13:55,744 --> 00:13:56,064
+zero
+
+235
+00:13:56,064 --> 00:13:56,384
+y
+
+236
+00:13:56,384 --> 00:13:56,604
+is
+
+237
+00:13:56,604 --> 00:13:56,824
+not
+
+238
+00:13:56,824 --> 00:13:57,064
+zero
+
+239
+00:13:57,064 --> 00:13:57,264
+and
+
+240
+00:13:57,264 --> 00:13:57,584
+also
+
+241
+00:13:57,584 --> 00:13:58,244
+origin
+
+242
+00:13:58,244 --> 00:13:59,724
+and
+
+243
+00:13:59,724 --> 00:14:00,264
+the
+
+244
+00:14:00,264 --> 00:14:00,784
+function
+
+245
+00:14:00,784 --> 00:14:01,524
+doesn't
+
+246
+00:14:01,524 --> 00:14:01,924
+have
+
+247
+00:14:01,924 --> 00:14:02,284
+a
+
+248
+00:14:02,284 --> 00:14:02,764
+value
+
+249
+00:14:02,764 --> 00:14:04,604
+for
+
+250
+00:14:04,604 --> 00:14:05,284
+the
+
+251
+00:14:05,284 --> 00:14:07,344
+zero.
+
+252
+00:14:07,784 --> 00:14:07,884
+So
+
+253
+00:14:07,884 --> 00:14:08,224
+this
+
+254
+00:14:08,224 --> 00:14:08,724
+means
+
+255
+00:14:08,724 --> 00:14:09,044
+you
+
+256
+00:14:09,044 --> 00:14:09,344
+can
+
+257
+00:14:09,344 --> 00:14:09,923
+write
+
+258
+00:14:09,923 --> 00:14:10,464
+minus
+
+259
+00:14:10,464 --> 00:14:10,964
+infinity
+
+260
+00:14:10,964 --> 00:14:11,564
+zero
+
+261
+00:14:11,564 --> 00:14:12,084
+union
+
+262
+00:14:12,084 --> 00:14:12,544
+zero
+
+263
+00:14:12,544 --> 00:14:13,104
+infinity
+
+264
+00:14:13,104 --> 00:14:13,504
+or
+
+265
+00:14:13,504 --> 00:14:13,684
+you
+
+266
+00:14:13,684 --> 00:14:13,923
+can
+
+267
+00:14:13,923 --> 00:14:14,504
+say
+
+268
+00:14:14,504 --> 00:14:15,784
+r
+
+269
+00:14:15,784 --> 00:14:16,504
+minus
+
+270
+00:14:16,504 --> 00:14:17,784
+zero.
+
+271
+00:14:18,284 --> 00:14:18,884
+Okay.
+
+272
+00:14:20,563 --> 00:14:44,624
+And the third one, the third one is sine function. Inside of the sine function, there is a polynomial with two variables and the polynomials are defined all over the x-y plane and sine also defined all over the x-y plane.
+
+273
+00:14:44,624 --> 00:15:02,243
+So, the domain is entire plane or you can write r-squared and we know very well that sine function takes the value between minus one and one. Okay.
+
+274
+00:15:02,243 --> 00:15:05,243
+So, the number four.
+
+275
+00:15:09,235 --> 00:15:10,235
+Evet.
+
+276
+00:15:12,035 --> 00:15:13,235
+Evet, burada.
+
+277
+00:15:14,035 --> 00:15:15,035
+Bir dakika.
+
+278
+00:15:15,035 --> 00:15:16,035
+Evet.
+
+279
+00:15:16,235 --> 00:15:18,836
+Number 4.
+
+280
+00:15:18,836 --> 00:15:20,635
+A rational function.
+
+281
+00:15:20,635 --> 00:15:23,836
+Let's focus on the denominator.
+
+282
+00:15:24,235 --> 00:15:26,836
+So x²-y²
+
+283
+00:15:26,836 --> 00:15:29,436
+shouldn't be equal to 0.
+
+284
+00:15:29,836 --> 00:15:35,836
+So this means x is not equal to plus minus y or y².
+
+285
+00:15:35,836 --> 00:15:39,235
+So y is not equal to plus minus x.
+
+286
+00:15:40,436 --> 00:15:41,235
+Okay.
+
+287
+00:15:41,836 --> 00:15:43,035
+So again,
+
+288
+00:15:43,836 --> 00:15:49,035
+this function doesn't take the value 0.
+
+289
+00:15:49,436 --> 00:15:51,035
+So this means
+
+290
+00:15:52,235 --> 00:15:58,436
+r minus, you can write in this form or you can write r minus 0 as above.
+
+291
+00:15:59,235 --> 00:16:00,235
+Okay.
+
+292
+00:16:00,936 --> 00:16:04,235
+Number 5 is an exponential function.
+
+293
+00:16:04,235 --> 00:16:14,436
+The exponent is x, y is a polynomial which is defined in entire plane.
+
+294
+00:16:14,836 --> 00:16:20,635
+So we can write entire plane or r².
+
+295
+00:16:20,635 --> 00:16:30,635
+So from the previous knowledge that we know, we know that the entire, the exponential function
+
+296
+00:16:31,235 --> 00:16:36,235
+takes the value in positive numbers.
+
+297
+00:16:36,436 --> 00:16:37,235
+Okay.
+
+298
+00:16:37,235 --> 00:16:42,235
+So this is 0, infinity.
+
+299
+00:16:42,235 --> 00:16:43,235
+Okay.
+
+300
+00:16:45,235 --> 00:16:46,235
+So any question?
+
+301
+00:16:49,235 --> 00:16:50,635
+Do we have any question?
+
+302
+00:16:53,035 --> 00:16:53,635
+Okay.
+
+303
+00:16:55,436 --> 00:16:58,235
+So let's continue.
+
+304
+00:16:58,235 --> 00:16:59,235
+Okay.
+
+305
+00:16:59,235 --> 00:17:00,235
+So let's go.
+
+306
+00:17:00,235 --> 00:17:02,235
+Okay.
+
+307
+00:17:02,235 --> 00:17:03,235
+So let's go.
+
+308
+00:17:03,235 --> 00:17:27,235
+Okay.
+
+309
+00:17:03,796 --> 00:17:18,895
+Let's continue. Another kind of function is ln xy. ln xy is a logaritmic function inside of the logarithm, inside of natural logarithm is xy.
+
+310
+00:17:18,895 --> 00:17:38,115
+So here xy should be positive. Okay. And also we know that for the range of ln function, ln function takes the values between negative infinity and infinity.
+
+311
+00:17:38,115 --> 00:17:51,375
+So this means the real numbers. Okay. So number seven. Number seven is square root 1 minus x square minus y square.
+
+312
+00:17:51,375 --> 00:18:02,016
+So this means the inside of the square root should be greater or equal than zero.
+
+313
+00:18:02,016 --> 00:18:12,336
+So x square plus y square is less than or equal to zero. Sorry, to one.
+
+314
+00:18:13,776 --> 00:18:22,855
+And the value is the sign is positive and square root takes the value between zero and infinity.
+
+315
+00:18:22,855 --> 00:18:34,476
+Okay. So number eight. One over square root 1 minus x square minus y square.
+
+316
+00:18:34,476 --> 00:18:54,936
+Okay. In this time, we need to be careful that this will be only 1 minus x square minus y square should be greater than zero because this squared function is in denominator.
+
+317
+00:18:54,936 --> 00:18:59,115
+So x square plus y square is less than 1. So x square plus y square is less than 1.
+
+318
+00:19:00,115 --> 00:19:07,196
+So the value is changing between zero and infinity. Okay.
+
+319
+00:19:07,196 --> 00:19:16,516
+So the last one z is 1 over square root 9 x square minus y square.
+
+320
+00:19:17,576 --> 00:19:24,796
+Okay. This function, let's focus the denominator, takes the value.
+
+321
+00:19:26,375 --> 00:19:32,855
+Yes, value is zero, infinity because of the square root and the sign is also positive.
+
+322
+00:19:32,855 --> 00:19:41,336
+The domain is 9 x square minus y square will be positive.
+
+323
+00:19:41,336 --> 00:19:42,395
+Okay.
+
+324
+00:19:48,660 --> 00:20:01,660
+Evet, seç, uh, it is a very usual to ask in exams, uh, sketch the domain of the function, okay?
+
+325
+00:20:01,779 --> 00:20:03,740
+It is very, very usual.
+
+326
+00:20:03,740 --> 00:20:18,259
+For the first one, for example, what was the first one? I think the first one is square root y minus x square.
+
+327
+00:20:18,259 --> 00:20:35,259
+So y minus x square is greater than zero. So this means, uh, you can easily sketch this graph y is x squared, okay?
+
+328
+00:20:35,259 --> 00:20:46,259
+And you need to check, uh, whether the inside of the parabola or outside of the parabola, okay?
+
+329
+00:20:46,259 --> 00:20:56,259
+Okay? It's a simple procedure. You can take a point, for example, let's take the zero one.
+
+330
+00:20:56,259 --> 00:21:04,259
+So if I write here one greater or equal than x square.
+
+331
+00:21:04,259 --> 00:21:20,259
+So y is one. This one is zero. Yes, this is correct. So we need to paint inside of the parabola, okay?
+
+332
+00:21:20,259 --> 00:21:25,259
+Okay? Inside of the parabola.
+
+333
+00:21:25,259 --> 00:21:32,259
+So let's check the second one.
+
+334
+00:21:32,259 --> 00:21:39,259
+A question is the same. We will sketch the graph of the given function.
+
+335
+00:21:39,259 --> 00:21:44,259
+z is one over x, y.
+
+336
+00:21:44,259 --> 00:21:48,259
+x, y is not equal to zero.
+
+337
+00:21:48,259 --> 00:21:52,259
+Actually, this means x, y is not equal to zero.
+
+338
+00:21:52,259 --> 00:21:56,259
+x is not equal to zero.
+
+339
+00:21:56,259 --> 00:22:00,260
+y is not equal to zero.
+
+340
+00:22:00,259 --> 00:22:07,259
+or x, y is not equal to zero.
+
+341
+00:22:07,259 --> 00:22:09,259
+At the same time.
+
+342
+00:22:09,259 --> 00:22:10,259
+Okay?
+
+343
+00:22:10,259 --> 00:22:15,259
+So you can write the f in the set form.
+
+344
+00:22:15,259 --> 00:22:32,259
+It's possible. Okay? So what is the domain? You can see here. So you don't take the coordinate axis. Okay? And here and here.
+
+345
+00:22:32,259 --> 00:22:49,259
+So you can write the f in the set form.
+
+346
+00:22:35,955 --> 00:22:36,315
+Okay.
+
+347
+00:22:37,895 --> 00:22:38,775
+So,
+
+348
+00:22:39,415 --> 00:22:42,175
+this is your domain.
+
+349
+00:22:42,695 --> 00:22:42,995
+Okay.
+
+350
+00:22:44,355 --> 00:22:45,135
+Question?
+
+351
+00:22:48,495 --> 00:22:49,455
+Okay.
+
+352
+00:22:52,515 --> 00:22:53,596
+Yes.
+
+353
+00:22:54,815 --> 00:22:56,695
+So, can you see
+
+354
+00:22:56,695 --> 00:22:58,415
+the domain of the given
+
+355
+00:22:58,415 --> 00:22:59,375
+function?
+
+356
+00:23:00,155 --> 00:23:01,895
+Maybe you need to paint
+
+357
+00:23:01,895 --> 00:23:03,755
+by yourself
+
+358
+00:23:03,755 --> 00:23:06,695
+because of my pen.
+
+359
+00:23:07,295 --> 00:23:09,435
+I can't see the domain
+
+360
+00:23:09,435 --> 00:23:09,955
+but
+
+361
+00:23:09,955 --> 00:23:12,975
+z is equal to sine
+
+362
+00:23:12,975 --> 00:23:15,515
+x, y, x, y is a polynomial.
+
+363
+00:23:16,355 --> 00:23:16,836
+So, the
+
+364
+00:23:16,836 --> 00:23:18,115
+entire
+
+365
+00:23:18,115 --> 00:23:23,336
+yes, the entire
+
+366
+00:23:23,336 --> 00:23:24,495
+r square
+
+367
+00:23:24,495 --> 00:23:26,655
+is the domain of
+
+368
+00:23:26,655 --> 00:23:27,915
+f.
+
+369
+00:23:32,660 --> 00:23:57,720
+Okay, let's clear it. So, number four, z is xy over x square minus y square. So, we found that x is not equal to plus minus y. So, it is very easy. This one, oops, sorry.
+
+370
+00:23:57,720 --> 00:24:22,040
+This one is y is x, y is minus x. So, we needn't take these lines. Okay. But except these lines, we can take the whole entire r square. Except these lines. Okay. So,
+
+371
+00:24:27,508 --> 00:24:52,268
+Number 5, z is exponential xy, so we set that, this is exponential function, exponent is polynomial, and which is defined on real, which is defined on r-squared, okay?
+
+372
+00:25:00,852 --> 00:25:14,971
+Z is, then xy, xy, this is the natural logarithm function, the inside of the natural logarithm should be greater than 0. xy
+
+373
+00:25:14,971 --> 00:25:43,711
+is greater than 0. Okay, so this means x is not equal to 0, y is not equal to 0. You need to take the coordinate x's, x and y, and also this multiplication should be greater than 0.
+
+374
+00:25:43,711 --> 00:25:51,951
+So, this means the first quadrant and the third quadrant. Okay?
+
+375
+00:25:55,700 --> 00:25:56,100
+Okay.
+
+376
+00:26:00,019 --> 00:26:09,920
+Number 7, z is square root 1 minus x square minus y square.
+
+377
+00:26:10,519 --> 00:26:16,240
+So, the domain is x square plus y square is less than or equal to 1.
+
+378
+00:26:16,240 --> 00:26:27,299
+So, this means the inside of the circle is our domain d, okay?
+
+379
+00:26:36,788 --> 00:26:42,188
+Z is 1 over square root 1 minus x square minus y square.
+
+380
+00:26:42,647 --> 00:26:44,788
+This is rational function.
+
+381
+00:26:45,387 --> 00:26:51,208
+And the inside of the square root should be greater than 0.
+
+382
+00:26:51,208 --> 00:26:54,208
+This is actually unit circle.
+
+383
+00:26:54,688 --> 00:26:56,407
+Don't take the boundaries.
+
+384
+00:26:56,887 --> 00:27:03,587
+And inside of this circle is our domain D.
+
+385
+00:27:03,587 --> 00:27:06,968
+Okay.
+
+386
+00:27:08,968 --> 00:27:10,508
+Number 9.
+
+387
+00:27:12,367 --> 00:27:15,387
+C is 1 over square root.
+
+388
+00:27:18,387 --> 00:27:22,607
+9 x squared minus y squared.
+
+389
+00:27:22,607 --> 00:27:35,067
+So you need to think that 9 x squared minus y squared is greater than 0.
+
+390
+00:27:35,067 --> 00:27:38,688
+You can think in two ways.
+
+391
+00:27:39,907 --> 00:27:45,647
+If we, if you think this expression is the subtraction of 2 squared,
+
+392
+00:27:46,147 --> 00:27:49,688
+we have 3 x minus y.
+
+393
+00:27:55,028 --> 00:28:17,587
+3x plus y is greaser than 0. So, the first line, actually, you can easily draw it. Y is 3x. The second one, y is minus 3x. Okay. This is the first one and the second one. Okay. So, our multiplication is positive.
+
+394
+00:28:17,587 --> 00:28:30,248
+So, this means 3x, let me say 1, 3x minus y is positive. I like to erase this part.
+
+395
+00:28:34,771 --> 00:28:39,991
+3x plus y is positive.
+
+396
+00:28:40,991 --> 00:28:45,851
+And the second one, 3x minus y is negative.
+
+397
+00:28:46,672 --> 00:28:49,751
+3x plus y is negative.
+
+398
+00:28:50,551 --> 00:28:50,851
+Okay?
+
+399
+00:28:50,851 --> 00:28:58,571
+So we have two inequalities and also this system.
+
+400
+00:28:59,271 --> 00:28:59,371
+Okay?
+
+401
+00:28:59,971 --> 00:29:02,711
+So let me solve the first one.
+
+402
+00:29:02,711 --> 00:29:09,511
+So we need to paint some regions in the plane.
+
+403
+00:29:10,291 --> 00:29:10,711
+Okay?
+
+404
+00:29:10,991 --> 00:29:19,692
+For the first one, let me choose a number like it shouldn't be on the lines.
+
+405
+00:29:19,692 --> 00:29:20,051
+Okay?
+
+406
+00:29:20,192 --> 00:29:21,912
+So we need to be careful.
+
+407
+00:29:23,071 --> 00:29:26,111
+The point is, let me say, 1, 0.
+
+408
+00:29:26,111 --> 00:29:35,611
+So if I substitute 1, 0 on equation, 3 minus 0 is greater than 0.
+
+409
+00:29:35,912 --> 00:29:36,551
+Yes.
+
+410
+00:29:37,631 --> 00:29:39,111
+For this one.
+
+411
+00:29:39,912 --> 00:29:41,611
+And our point is here.
+
+412
+00:29:41,951 --> 00:29:45,131
+So we need to paint this part.
+
+413
+00:29:45,131 --> 00:29:47,131
+Okay.
+
+414
+00:29:47,432 --> 00:29:49,131
+For the second one.
+
+415
+00:29:50,631 --> 00:29:52,571
+3 plus 0.
+
+416
+00:29:52,991 --> 00:29:57,311
+Is it a 3 is greater than 0?
+
+417
+00:29:57,371 --> 00:29:59,071
+Yes, it is.
+
+418
+00:29:59,211 --> 00:30:01,891
+But I like to change the color.
+
+419
+00:30:01,891 --> 00:30:03,891
+Okay.
+
+420
+00:30:03,891 --> 00:30:05,591
+I took the point here.
+
+421
+00:30:05,711 --> 00:30:07,551
+Y is minus 2x here.
+
+422
+00:30:07,731 --> 00:30:13,731
+So I need to paint this part.
+
+423
+00:30:14,491 --> 00:30:15,851
+So you can see.
+
+424
+00:30:16,131 --> 00:30:19,152
+You can see from here.
+
+425
+00:30:19,731 --> 00:30:22,412
+Your, let's, we use the eraser.
+
+426
+00:30:22,412 --> 00:30:23,071
+Okay.
+
+427
+00:30:23,811 --> 00:30:27,672
+So our part is, yes.
+
+428
+00:30:28,851 --> 00:30:29,991
+You can see.
+
+429
+00:30:32,412 --> 00:30:33,291
+Okay.
+
+430
+00:30:34,331 --> 00:30:44,491
+So actually, if you do the same procedure for the second one, for negative part, again, let's
+
+431
+00:30:44,491 --> 00:30:50,331
+take a point minus 1, 0.
+
+432
+00:30:52,411 --> 00:30:56,011
+So for the first one, minus 3, 0.
+
+433
+00:30:56,091 --> 00:30:58,571
+Is it less than 0?
+
+434
+00:30:58,652 --> 00:31:00,172
+Yes, it is.
+
+435
+00:31:00,652 --> 00:31:04,891
+So I need to paint this part.
+
+436
+00:31:06,811 --> 00:31:10,811
+So, oops, is this correct?
+
+437
+00:31:11,051 --> 00:31:12,731
+No, it's not.
+
+438
+00:31:14,491 --> 00:31:18,411
+For the first one, just a second, please.
+
+439
+00:31:18,531 --> 00:31:20,711
+I like to erase here.
+
+440
+00:31:23,791 --> 00:31:27,351
+So, let's keep it in our mind.
+
+441
+00:31:27,692 --> 00:31:28,051
+Okay.
+
+442
+00:31:28,731 --> 00:31:33,152
+I'll, again, I'll erase this part.
+
+443
+00:31:33,471 --> 00:31:33,831
+Okay.
+
+444
+00:31:34,211 --> 00:31:37,771
+So I choose as a point here.
+
+445
+00:31:38,731 --> 00:31:39,611
+Here.
+
+446
+00:31:40,132 --> 00:31:41,971
+Minus 1, 0.
+
+447
+00:31:42,531 --> 00:31:42,991
+Okay.
+
+448
+00:31:42,991 --> 00:31:47,551
+I'm working with the second inequalities.
+
+449
+00:31:48,652 --> 00:31:51,911
+Minus 3, minus x is less.
+
+450
+00:31:52,051 --> 00:31:53,251
+Is it less than 0?
+
+451
+00:31:53,432 --> 00:31:54,511
+Yes, it is.
+
+452
+00:31:54,672 --> 00:31:56,411
+Y is 3x.
+
+453
+00:31:57,371 --> 00:32:02,331
+So, yes, our line is y is 3x.
+
+454
+00:32:02,411 --> 00:32:03,071
+This one.
+
+455
+00:32:03,251 --> 00:32:05,192
+So I need to paint here.
+
+456
+00:32:05,192 --> 00:32:05,971
+Okay.
+
+457
+00:32:07,971 --> 00:32:09,432
+The blue one.
+
+458
+00:32:10,111 --> 00:32:12,571
+And the point is the same.
+
+459
+00:32:13,331 --> 00:32:15,051
+3 plus y.
+
+460
+00:32:15,571 --> 00:32:15,971
+Sorry.
+
+461
+00:32:16,071 --> 00:32:17,371
+3 plus 0.
+
+462
+00:32:17,831 --> 00:32:19,831
+Is it less than 0?
+
+463
+00:32:20,391 --> 00:32:22,311
+No, it's not.
+
+464
+00:32:22,711 --> 00:32:24,971
+So I need to paint.
+
+465
+00:32:24,971 --> 00:32:29,991
+Another part of y is minus 3x.
+
+466
+00:32:30,331 --> 00:32:40,511
+So our line is here.
+
+467
+00:32:34,516 --> 00:32:35,156
+Okay.
+
+468
+00:32:37,156 --> 00:32:42,596
+So, I choose a point, minus 1, 0.
+
+469
+00:32:43,496 --> 00:32:51,056
+If I substitute minus 1, 0 in this inequality, so this will be minus 3.
+
+470
+00:32:51,436 --> 00:32:54,236
+Minus 3 plus 0 is less than 0.
+
+471
+00:32:54,476 --> 00:32:56,096
+Yes, it is.
+
+472
+00:32:56,676 --> 00:32:58,696
+So, let's change the color.
+
+473
+00:32:58,696 --> 00:33:04,736
+Uh, here is, I need to paint this part.
+
+474
+00:33:07,436 --> 00:33:08,156
+Okay.
+
+475
+00:33:08,456 --> 00:33:11,156
+So, we can easily see that.
+
+476
+00:33:12,516 --> 00:33:15,216
+We can easily see that this part.
+
+477
+00:33:16,756 --> 00:33:19,936
+And also, this part.
+
+478
+00:33:20,296 --> 00:33:20,796
+Okay.
+
+479
+00:33:21,476 --> 00:33:26,836
+It looks like, uh, can we say, I don't know, looks like a butterfly.
+
+480
+00:33:27,296 --> 00:33:27,676
+Okay.
+
+481
+00:33:28,696 --> 00:33:32,456
+So, do you have any questions?
+
+482
+00:33:36,019 --> 00:33:38,259
+Ok, you don't have any question.
+
+483
+00:33:40,599 --> 00:33:52,619
+So, z is f x y ln x times ln y minus x, described domain of x y.
+
+484
+00:33:52,619 --> 00:34:00,859
+Yes, we have actually two functions, two natural logarithm functions.
+
+485
+00:34:00,859 --> 00:34:06,920
+The first one is the inside of the natural logarithm.
+
+486
+00:34:06,920 --> 00:34:16,539
+So, x ln y minus a should be greater than 0.
+
+487
+00:34:16,539 --> 00:34:21,980
+Okay, so, this is first one.
+
+488
+00:34:21,980 --> 00:34:24,300
+This is multiplication.
+
+489
+00:34:25,039 --> 00:34:30,579
+So, x should be 0 and ln y minus x.
+
+490
+00:34:34,483 --> 00:34:55,103
+0. And second one, x is less than 0. And ln 1 minus x is less than 0. Okay? So we will solve this system. Okay?
+
+491
+00:34:55,103 --> 00:35:19,304
+For the first one, x is positive. And ln 1 minus x is positive. This is a natural logarithm with base e. So y minus x is e to the power 0. So y minus x is greater than 1. Okay?
+
+492
+00:35:19,304 --> 00:35:36,123
+This is the first one. For the first one. And for the second one, x should be less than 0. And ln, we know the natural logarithm graph.
+
+493
+00:35:36,123 --> 00:36:05,483
+0, 1. Between 0 and 1, ln function takes the negative value. So here, y minus x is e to 0 is 1. But here, we need to be careful that there is another boundary for this function that y minus x should be greater than 0.
+
+494
+00:36:06,123 --> 00:36:16,744
+Okay? You need to think by yourself. If you don't write this 0 and this boundary, you will solve the question.
+
+495
+00:36:17,744 --> 00:36:20,603
+You have a wrong solution. Okay?
+
+496
+00:36:20,603 --> 00:36:31,083
+So let's check till now the answer.
+
+497
+00:36:34,284 --> 00:36:36,423
+Oops. Let's clear it.
+
+498
+00:36:38,203 --> 00:36:39,003
+Yes.
+
+499
+00:36:39,663 --> 00:36:40,784
+Yeah. Okay.
+
+500
+00:36:41,224 --> 00:36:44,683
+So the first one, x will be positive.
+
+501
+00:36:44,683 --> 00:36:45,844
+Okay.
+
+502
+00:36:47,963 --> 00:36:50,063
+And x will be positive.
+
+503
+00:36:50,603 --> 00:36:54,304
+Y minus x is greater than 1.
+
+504
+00:36:54,844 --> 00:36:58,943
+So again, x is positive.
+
+505
+00:37:00,703 --> 00:37:02,083
+Is here.
+
+506
+00:37:03,123 --> 00:37:05,143
+This is actually, let's
+
+507
+00:37:06,723 --> 00:37:09,123
+Draw it in this form.
+
+508
+00:37:11,243 --> 00:37:13,824
+Yes, x because x should be positive.
+
+509
+00:37:14,683 --> 00:37:17,023
+Okay.
+
+510
+00:37:18,103 --> 00:37:21,643
+And the second one, let's choose a number.
+
+511
+00:37:22,523 --> 00:37:25,603
+Right here, I will choose 1, 0.
+
+512
+00:37:26,384 --> 00:37:27,423
+Let's be right.
+
+513
+00:37:28,264 --> 00:37:29,983
+0 minus 1.
+
+514
+00:37:30,063 --> 00:37:31,943
+Is it greater than 1?
+
+515
+00:37:34,083 --> 00:37:38,623
+Let's first, I think first, we need to draw this line.
+
+516
+00:37:38,623 --> 00:37:43,324
+Y minus x is 1.
+
+517
+00:37:43,324 --> 00:37:46,923
+Or you can say 1, y is 1 plus x.
+
+518
+00:37:47,364 --> 00:37:47,663
+Okay?
+
+519
+00:37:48,744 --> 00:37:52,224
+If, if x is 0, y is 1.
+
+520
+00:37:52,543 --> 00:37:55,083
+Y is 0, x is minus 1.
+
+521
+00:37:55,083 --> 00:37:55,983
+Okay.
+
+522
+00:37:56,123 --> 00:37:57,663
+But it's here.
+
+523
+00:38:00,043 --> 00:38:00,784
+Y is 1.
+
+524
+00:38:02,884 --> 00:38:03,463
+Okay.
+
+525
+00:38:03,963 --> 00:38:08,683
+So let's, let's use the other color, like green.
+
+526
+00:38:11,663 --> 00:38:12,384
+Okay.
+
+527
+00:38:13,663 --> 00:38:15,463
+This is our line.
+
+528
+00:38:15,603 --> 00:38:17,483
+Y is x plus 1.
+
+529
+00:38:17,483 --> 00:38:18,743
+It's okay.
+
+530
+00:38:18,743 --> 00:38:20,943
+I choose here a point.
+
+531
+00:38:20,943 --> 00:38:34,304
+Okay.
+
+532
+00:38:21,876 --> 00:38:51,876
+Şimdi bu noktada, 0-1'e 1'
+
+533
+00:38:51,876 --> 00:39:20,876
+Equality's, the common region is, let's erase it here, here, yes, okay, and for the second one, I need to erase again, x is negative, okay, so again I like to change the color, x is negative here,
+
+534
+00:39:21,876 --> 00:39:51,876
+Okay, so other, other one is, the first one is, 0 is less than y minus x, so y minus x is a line, this one, y is x, okay, let's choose a point here, and 1'e
+
+535
+00:39:51,876 --> 00:41:04,876
+1'e 1'
+
+536
+00:41:11,092 --> 00:41:17,452
+Evet, bu üçe bölümde de var.
+
+537
+00:41:17,452 --> 00:41:24,452
+Evet, bu bölümde de var.
+
+538
+00:41:24,452 --> 00:41:34,452
+Bu bölümde de var.
+
+539
+00:41:34,452 --> 00:41:36,452
+Tamam.
+
+540
+00:41:36,452 --> 00:41:39,452
+So, do you have any question?
+
+541
+00:41:50,003 --> 00:42:02,324
+The other one z is equal to f x y sin minus y y minus 1 over x describe the domain of f.
+
+542
+00:42:03,423 --> 00:42:09,423
+So the inside of the given function is the rational function.
+
+543
+00:42:09,423 --> 00:42:19,284
+Okay, so the rational function is not defined for x is 0.
+
+544
+00:42:19,824 --> 00:42:22,163
+Okay, let's keep it in our mind.
+
+545
+00:42:24,304 --> 00:42:38,284
+And we can write if z is sin minus 1 y minus 1 over x, sin z is y minus 1 over x.
+
+546
+00:42:38,284 --> 00:42:48,403
+And we know that the sin function takes the value between minus 1 and 1.
+
+547
+00:42:49,623 --> 00:42:55,463
+And also we know that here x is not equal to 0.
+
+548
+00:42:56,003 --> 00:42:58,324
+So we have two options here.
+
+549
+00:42:58,503 --> 00:43:00,864
+First option is x is positive.
+
+550
+00:43:01,384 --> 00:43:03,903
+The second one is x is negative.
+
+551
+00:43:03,903 --> 00:43:11,364
+Okay, so if x is positive, we can multiply x by these inequalities.
+
+552
+00:43:12,203 --> 00:43:17,543
+So minus x less than y minus 1 less than x.
+
+553
+00:43:18,543 --> 00:43:20,443
+And we can write in this form.
+
+554
+00:43:22,443 --> 00:43:25,903
+It is the best form to see the inequalities.
+
+555
+00:43:25,903 --> 00:43:36,143
+And the second option is if x is negative, you can also multiply by x.
+
+556
+00:43:36,583 --> 00:43:40,284
+But you need to change the direction of inequality.
+
+557
+00:43:41,043 --> 00:43:43,523
+So you need to be very careful.
+
+558
+00:43:44,243 --> 00:43:53,284
+Minus x greater than or equal to y minus 1 greater than or equal to x.
+
+559
+00:43:53,284 --> 00:43:56,784
+Okay, so this is the second option.
+
+560
+00:43:57,523 --> 00:44:02,804
+Or if you write in this form, it is better to see in this form.
+
+561
+00:44:03,043 --> 00:44:06,403
+Okay, let's clear it.
+
+562
+00:44:06,403 --> 00:44:16,403
+So for the first one, y is 1 minus x.
+
+563
+00:44:16,563 --> 00:44:19,023
+If x is 0, y is 1.
+
+564
+00:44:19,143 --> 00:44:22,023
+Y is 0, x is 1.
+
+565
+00:44:22,663 --> 00:44:27,403
+So here it's...
+
+566
+00:44:27,403 --> 00:45:00,344
+Yes.
+
+567
+00:44:35,635 --> 00:44:42,476
+Okay, the second one is y is 1 plus x, okay.
+
+568
+00:44:44,795 --> 00:44:50,576
+If x is 0, y is 1, y is 0, x is negative 1.
+
+569
+00:44:50,576 --> 00:45:09,556
+Okay, so here, here, we need to be careful that in the point 0, 1, in the point 0, 1 here, there is empty.
+
+570
+00:45:09,556 --> 00:45:20,016
+Because if you write 0, 1 in the functions, so this will give the value 0 over 0.
+
+571
+00:45:20,476 --> 00:45:22,735
+This is in determinate form.
+
+572
+00:45:23,436 --> 00:45:30,416
+So here, the function is not defined for 0, 1.
+
+573
+00:45:30,715 --> 00:45:33,775
+Okay, so let's be careful.
+
+574
+00:45:33,775 --> 00:45:43,835
+And for the first one, x is positive, okay.
+
+575
+00:45:45,195 --> 00:45:49,115
+Here, x is positive.
+
+576
+00:45:50,496 --> 00:46:00,675
+And the second one, we need, the first one is y is x1 minus x.
+
+577
+00:46:00,675 --> 00:46:10,976
+Okay, let's, we choose a point, okay, because which place do we paint?
+
+578
+00:46:11,115 --> 00:46:12,516
+We like to know.
+
+579
+00:46:13,076 --> 00:46:19,355
+Let's a point, let's a point here, 2, 0.
+
+580
+00:46:19,355 --> 00:46:31,735
+Okay, so this means 1 minus 2 is less than or equal to 0.
+
+581
+00:46:31,875 --> 00:46:32,596
+Is this correct?
+
+582
+00:46:33,355 --> 00:46:34,695
+Yes, it's correct.
+
+583
+00:46:35,255 --> 00:46:39,496
+So let's, we write the name of the lines.
+
+584
+00:46:39,496 --> 00:46:46,496
+The first one is y is 1 minus x.
+
+585
+00:46:48,496 --> 00:46:51,835
+Y is 1 plus x.
+
+586
+00:46:54,056 --> 00:46:56,936
+Is it correct or vice versa?
+
+587
+00:46:57,476 --> 00:46:58,735
+This will be plus.
+
+588
+00:47:00,315 --> 00:47:02,476
+This will be minus.
+
+589
+00:47:02,476 --> 00:47:13,596
+Yes, so I choose a point to, oops, sorry.
+
+590
+00:47:13,596 --> 00:47:42,596
+You're right.
+
+591
+00:47:18,835 --> 00:47:42,075
+I choose a point, um, 2, this one, 2, 0, okay. For the first one, uh, 1 minus 2, is it less than 0? Yes, it is. So, I need to paint this part.
+
+592
+00:47:42,075 --> 00:48:07,635
+And for the third one, uh, 0 is less than 1 plus 2. Yes, it is. Yes, it's correct. Okay. But I like to change the color again. So, the function, yes, y is 1 plus x. Yes. I need to paint this part.
+
+593
+00:48:07,635 --> 00:48:20,355
+Okay. The couple, uh, the common area is, let's use the eraser.
+
+594
+00:48:29,172 --> 00:48:31,132
+Evet, you can see here.
+
+595
+00:48:32,072 --> 00:48:42,751
+And if you do the same operation to the second option, you will find this one and this one.
+
+596
+00:48:44,152 --> 00:48:44,532
+Okay.
+
+597
+00:48:46,012 --> 00:48:47,851
+So, do you have any questions?
+
+598
+00:48:50,371 --> 00:48:58,371
+Okay, let's have a break for 10 minutes, then I will continue my subject.
+
+599
+00:48:58,371 --> 00:49:01,672
+Now we will have 10 minutes break.
+
+600
+00:49:01,672 --> 00:49:01,731
+Okay.
+
+601
+01:03:07,539 --> 01:03:17,980
+Okay. Let's start a function with... Sorry. Just a second, please.
+
+602
+01:04:12,500 --> 01:04:16,500
+Tamam, 3...
+
+603
+01:04:16,500 --> 01:04:21,500
+Üzgünüm, çünkü...
+
+604
+01:04:21,500 --> 01:04:23,500
+İngilizce bilmemiştim.
+
+605
+01:04:23,500 --> 01:04:26,500
+Gençler beni bir hıçkırıktı aniden.
+
+606
+01:04:26,500 --> 01:04:29,500
+Nedenini de bilemiyorum. Çok özür diliyorum.
+
+607
+01:04:29,500 --> 01:04:30,500
+Ökünüzden.
+
+608
+01:04:30,500 --> 01:04:33,500
+Tamam.
+
+609
+01:04:33,500 --> 01:04:41,500
+Evet.
+
+610
+01:04:44,052 --> 01:05:14,052
+Şimdi, bu örneğin, örneğin, örneğin, örneğin, örneğin, örneğin, örneğin, örneğin, örneğin, örneğin, örneğin, örneğin, örneğin, örneğin, örneğin, örneğin, örneğin, örneğin, örneğin, örneğin, örneğin, örneğin, örneğin, örneğin, örneğin, örneğin, örneğin, örneğin, örneğin, örneğin, örneğin, örneğin, örneğin, örneğin, örneğin, örneğin, örneğin, örneğin, örneğin, örneğin, örneğin, örneğin, örneğin, örneğin, örneğin, örneğin, örneğin, örneğin, örneğin, örneğin, örneğin, örneğin, örneğin, örneğin, örneğin,
+
+611
+01:05:14,052 --> 01:05:39,132
+which is not defined on our cube, okay? So the range is zero infinity, zero infinity, and the second one is a rational function, one over x squared plus y squared plus c squared.
+
+612
+01:05:39,132 --> 01:05:58,852
+So, um, yes, this one, and this is a rational function, we need to focus the denominator, so the denominator shouldn't be zero, this means
+
+613
+01:05:58,852 --> 01:06:15,572
+x, y, z is not equal to zero, so the range is zero infinity because these squares, okay? The third one is x, y, l, and z.
+
+614
+01:06:15,572 --> 01:06:28,852
+So, x, y is a polynomial, so we need to focus inside of the natural logarithm. Here z must be positive, so this means
+
+615
+01:06:28,852 --> 01:06:43,652
+half half space, and we know that x and y and also ln z takes the values from negative infinity to positive infinity.
+
+616
+01:06:43,652 --> 01:07:08,572
+Do you have any question?
+
+617
+01:06:49,972 --> 01:06:55,372
+Ok, so functions of two variables.
+
+618
+01:06:56,092 --> 01:06:58,872
+This is the main subject of it.
+
+619
+01:06:59,372 --> 01:07:02,711
+This is the main subject for today.
+
+620
+01:07:04,152 --> 01:07:10,112
+So, graph-level curves of functions of two variables.
+
+621
+01:07:10,112 --> 01:07:15,992
+There are two standard ways to picture the values of a function fxy.
+
+622
+01:07:15,992 --> 01:07:24,572
+One is to draw and label curves in the domain on which f has a constant value.
+
+623
+01:07:24,572 --> 01:07:31,892
+The other is to sketch the surface c fxy in space.
+
+624
+01:07:33,012 --> 01:07:36,092
+So, what is the level curl?
+
+625
+01:07:36,352 --> 01:07:37,492
+Let me see that.
+
+626
+01:07:37,492 --> 01:07:45,552
+The set of points in the plane where a function fxy has a constant value.
+
+627
+01:07:46,412 --> 01:07:48,592
+fxy is equal to c.
+
+628
+01:07:49,032 --> 01:07:51,692
+It's called level curve.
+
+629
+01:07:51,692 --> 01:07:57,232
+So, if we are in a map,
+
+630
+01:07:57,232 --> 01:08:02,912
+in a map like Turkey map, Earth map,
+
+631
+01:08:03,292 --> 01:08:06,832
+I am so sorry.
+
+632
+01:08:08,312 --> 01:08:11,052
+So, it is cold.
+
+633
+01:08:16,467 --> 01:08:18,148
+Contour, okay.
+
+634
+01:08:18,807 --> 01:08:24,807
+So maybe you can remember from high school in your geography lesson,
+
+635
+01:08:24,807 --> 01:08:27,847
+you examined some maps.
+
+636
+01:08:28,427 --> 01:08:38,807
+There are, is it possible to sketch a graph?
+
+637
+01:08:39,167 --> 01:08:40,407
+I don't know.
+
+638
+01:08:41,127 --> 01:08:46,307
+Maybe there is some, let's draw some hills.
+
+639
+01:08:46,467 --> 01:08:47,207
+Okay.
+
+640
+01:08:47,207 --> 01:08:52,787
+So there is some lines on the maps.
+
+641
+01:08:53,167 --> 01:08:53,407
+Okay.
+
+642
+01:08:54,207 --> 01:09:01,367
+This shows, this shows how high this hills are.
+
+643
+01:09:01,988 --> 01:09:06,488
+You can draw with a similar way.
+
+644
+01:09:07,608 --> 01:09:11,407
+The sea, you can check the sea.
+
+645
+01:09:11,907 --> 01:09:14,927
+And also there is lines.
+
+646
+01:09:16,467 --> 01:09:23,167
+Inside of the sea maps and how deep is this sea.
+
+647
+01:09:23,327 --> 01:09:29,587
+You can see by, by using these lines.
+
+648
+01:09:29,587 --> 01:09:30,167
+Okay.
+
+649
+01:09:30,167 --> 01:09:38,108
+If you are, if you are an engineer or you are drawing kind of map,
+
+650
+01:09:38,327 --> 01:09:41,148
+you need to call these lines.
+
+651
+01:09:41,327 --> 01:09:46,028
+Actually, it's called level contour or you can say only contour.
+
+652
+01:09:46,447 --> 01:09:46,787
+Okay.
+
+653
+01:09:46,787 --> 01:09:51,648
+So let's erase it.
+
+654
+01:09:51,648 --> 01:09:52,768
+Yes.
+
+655
+01:09:52,768 --> 01:09:58,907
+It is called a level curve of F.
+
+656
+01:09:59,087 --> 01:10:03,867
+The set of all points, XY, FX, Y in space.
+
+657
+01:10:03,867 --> 01:10:11,667
+For XY in the domain of F is called the graph of F.
+
+658
+01:10:12,528 --> 01:10:13,127
+Okay.
+
+659
+01:10:13,127 --> 01:10:21,547
+The graph of F is also called the surface of the surface Z, F, XY.
+
+660
+01:10:21,547 --> 01:10:28,247
+So we are interested in certain kind of surfaces.
+
+661
+01:10:28,247 --> 01:10:29,247
+Okay.
+
+662
+01:10:29,247 --> 01:10:40,528
+So the first type will be, maybe we draw a sphere in our lesson.
+
+663
+01:10:40,528 --> 01:10:41,327
+Okay.
+
+664
+01:10:43,268 --> 01:10:43,568
+Yeah.
+
+665
+01:10:44,007 --> 01:10:44,747
+Here.
+
+666
+01:10:44,747 --> 01:10:49,707
+The first type is a sphere.
+
+667
+01:10:52,167 --> 01:10:52,807
+Okay.
+
+668
+01:10:53,568 --> 01:10:57,988
+It is the, it is the sphere with radius A.
+
+669
+01:11:00,707 --> 01:11:02,988
+XYZ.
+
+670
+01:11:03,188 --> 01:11:04,447
+This is the first type.
+
+671
+01:11:04,447 --> 01:11:13,028
+So we can say X squared plus Y squared plus C squared is A squared at the centered origin.
+
+672
+01:11:13,608 --> 01:11:14,047
+Okay.
+
+673
+01:11:16,528 --> 01:11:19,827
+And the second type is,
+
+674
+01:11:19,827 --> 01:11:26,648
+the second type is cylinder.
+
+675
+01:11:27,307 --> 01:11:27,947
+Okay.
+
+676
+01:11:28,387 --> 01:11:30,587
+And R cubed.
+
+677
+01:11:30,587 --> 01:11:37,427
+So we will show X, Y, Z.
+
+678
+01:11:37,427 --> 01:11:39,568
+In R cubed,
+
+679
+01:11:41,827 --> 01:11:47,627
+X squared plus Y squared is,
+
+680
+01:11:47,967 --> 01:11:49,787
+let me say A squared.
+
+681
+01:11:50,587 --> 01:11:52,188
+So this is,
+
+682
+01:11:56,051 --> 01:12:03,051
+İzlediğiniz için,
+
+683
+01:12:03,051 --> 01:12:05,051
+bu,
+
+684
+01:12:05,051 --> 01:12:08,051
+ve
+
+685
+01:12:08,051 --> 01:12:48,051
+bu,
+
+686
+01:12:48,051 --> 01:12:52,051
+parabolik,
+
+687
+01:12:52,051 --> 01:12:55,051
+ok,
+
+688
+01:12:55,051 --> 01:13:05,051
+if you cover y square x, z is x squared like parabol, ok,
+
+689
+01:13:05,051 --> 01:13:13,051
+and if you cover x square z is y square, ok,
+
+690
+01:13:13,051 --> 01:13:18,051
+actually here this one z is,
+
+691
+01:13:18,051 --> 01:13:22,051
+I like to erase this one,
+
+692
+01:13:22,051 --> 01:13:23,051
+this one,
+
+693
+01:13:23,051 --> 01:13:24,051
+yes,
+
+694
+01:13:24,051 --> 01:13:27,051
+this type is called,
+
+695
+01:13:27,051 --> 01:13:31,051
+is,
+
+696
+01:13:31,051 --> 01:13:34,051
+circular paraboloid,
+
+697
+01:13:34,051 --> 01:13:48,051
+because if we cut this paraboloid with just an example, z is 4, ok, if we cut this kind of clay, z is 4, this curve, that we use the red one, this curve is actually a
+
+698
+01:13:48,051 --> 01:14:05,051
+x square plus y square plus y square plus y square is 4, is a circular, that's why it's called circular paraboloid, but if we give a coefficient like 2x square, it's called ellipsoid
+
+699
+01:14:05,051 --> 01:14:34,051
+elliptic paraboloid, elliptic paraboloid, okay, so the branch of this paraboloid going up, but in this example, let's erase it, okay, so the branch of this paraboloid going up, but in this example, let's erase it, okay, so the branch of this paraboloid going up, but in this example,
+
+700
+01:14:34,051 --> 01:15:03,051
+let's erase it, in this example, the branch of paraboloid going down, like if we substitute x and y is 0, z is 100, okay, like here, like this one, okay, again, this is circular paraboloid, it's going, of course, down,
+
+701
+01:15:03,051 --> 01:15:20,051
+so the branch of this paraboloid going down, by I cut with the plane z is 0, okay, so this is 1, x, y, and z, okay, so,
+
+702
+01:15:20,051 --> 01:15:39,192
+so, we will find the level curves for f, x, y is 0, f, x, y, 51, f, x, y is 75, in the domain of f, okay, so if f, x, y
+
+703
+01:15:39,192 --> 01:15:55,612
+is 0, so this means 100 minus x square minus y square is 0, so this means x square plus y square is
+
+704
+01:15:56,435 --> 01:15:57,435
+100.
+
+705
+01:15:57,435 --> 01:15:58,435
+Ok?
+
+706
+01:15:58,435 --> 01:16:02,435
+This is the first level curve.
+
+707
+01:16:02,435 --> 01:16:09,435
+f , y is 51.
+
+708
+01:16:09,435 --> 01:16:16,435
+So this means 100 minus x squared minus y squared is 51.
+
+709
+01:16:16,435 --> 01:16:26,435
+This means x squared plus y squared is 49.
+
+710
+01:16:26,435 --> 01:16:31,435
+And it is 75.
+
+711
+01:16:31,435 --> 01:16:36,435
+100 minus x squared minus y squared is 25.
+
+712
+01:16:36,435 --> 01:16:54,435
+So the last one f , y is if we take 100.
+
+713
+01:16:54,435 --> 01:16:59,435
+So this means x squared plus y squared is 0.
+
+714
+01:16:59,435 --> 01:17:02,435
+It means this is the origin.
+
+715
+01:17:02,435 --> 01:17:03,435
+Ok?
+
+716
+01:17:03,435 --> 01:17:05,435
+We found all of them.
+
+717
+01:17:05,435 --> 01:17:10,435
+And we will also sketch the graph.
+
+718
+01:17:10,435 --> 01:17:12,435
+Let's check it.
+
+719
+01:17:12,435 --> 01:17:17,435
+Oh, we have, yes, I will mention about this.
+
+720
+01:17:17,435 --> 01:17:21,435
+Yes, let's first check the solution.
+
+721
+01:17:21,435 --> 01:17:24,435
+So this is polynomial.
+
+722
+01:17:24,435 --> 01:17:27,435
+And df is r squared.
+
+723
+01:17:27,435 --> 01:17:32,435
+The level curve is, the first one is 100.
+
+724
+01:17:32,435 --> 01:17:35,435
+x squared plus y squared is 100.
+
+725
+01:17:35,435 --> 01:17:41,435
+The second one, x squared plus y squared is 49.
+
+726
+01:17:41,435 --> 01:17:45,435
+x squared plus y squared is 25.
+
+727
+01:17:45,435 --> 01:17:50,435
+And the last one, x squared plus y squared is 0.
+
+728
+01:17:50,435 --> 01:17:51,435
+Okay?
+
+729
+01:17:51,435 --> 01:17:57,435
+So if we draw this picture, let's check it.
+
+730
+01:17:57,435 --> 01:18:06,435
+And this one is the inside of the paraboloid.
+
+731
+01:18:06,435 --> 01:18:09,435
+This first one is 100.
+
+732
+01:18:09,435 --> 01:18:19,435
+This one is 100.
+
+733
+01:18:19,435 --> 01:18:24,435
+x squared plus y squared is 10 squared.
+
+734
+01:18:24,435 --> 01:19:17,435
+This one is 100.
+
+735
+01:19:08,275 --> 01:19:16,956
+Evet, bu bir fotoğraf.
+
+736
+01:19:16,956 --> 01:19:28,275
+Bu bir fotoğraf.
+
+737
+01:19:28,275 --> 01:19:32,275
+Eğer bu üç dimensionerde,
+
+738
+01:19:32,275 --> 01:19:36,275
+bu bir fotoğraf.
+
+739
+01:19:36,275 --> 01:21:00,275
+Bu, bu bir fotoğraf.
+
+740
+01:21:00,275 --> 01:21:32,275
+Bu, bu fotoğraf.
+
+741
+01:21:32,275 --> 01:22:00,275
+Bu fotoğraf.
+
+742
+01:21:57,844 --> 01:21:58,844
+Okay.
+
+743
+01:22:01,844 --> 01:22:22,844
+Sometimes we need this graph, hyperbolic paraboloid, but I don't know. This part is parabola. Okay. And this part is hyperbola.
+
+744
+01:22:22,844 --> 01:22:32,543
+This part is parabola. So that's why it is called hyperbolic paraboloid. Okay.
+
+745
+01:22:39,060 --> 01:22:39,860
+Continuar.
+
+746
+01:22:45,395 --> 01:22:48,996
+Evet, funktions of 3 variables.
+
+747
+01:22:48,996 --> 01:22:54,315
+In the plane, the points where the function of 2 independent variables
+
+748
+01:22:54,315 --> 01:23:00,496
+has a constant value fxy is equal to c.
+
+749
+01:23:01,076 --> 01:23:03,975
+Make a curve in the function's domain.
+
+750
+01:23:04,295 --> 01:23:06,655
+Okay, so this is starting.
+
+751
+01:23:07,115 --> 01:23:13,335
+If you have 2 variable functions and if you give a constant value,
+
+752
+01:23:13,335 --> 01:23:17,576
+you have a curve in function's domain.
+
+753
+01:23:18,135 --> 01:23:22,655
+In space, the points where the function of 3 independent variables
+
+754
+01:23:22,655 --> 01:23:31,815
+has a constant value fx, like in 2-dimension space,
+
+755
+01:23:32,295 --> 01:23:34,335
+fxyz is c.
+
+756
+01:23:34,496 --> 01:23:37,855
+Make a surface in the function's domain.
+
+757
+01:23:38,115 --> 01:23:41,855
+Okay, so let's give the definition.
+
+758
+01:23:41,855 --> 01:23:49,315
+The set of points x, y, z in the space where a function of 3 independent variables
+
+759
+01:23:49,315 --> 01:23:58,675
+has a constant value fxy is c is called level surface.
+
+760
+01:23:58,675 --> 01:24:06,555
+is called, like level curves, level surface.
+
+761
+01:24:06,555 --> 01:24:19,555
+Okay, so describe the level surface of the function omega is square root x square, y square, z square.
+
+762
+01:24:19,555 --> 01:24:25,015
+Okay, so let's describe it.
+
+763
+01:24:25,015 --> 01:24:35,795
+So now we are in 4-dimension space, R4, 3 independent and 1-dependent values.
+
+764
+01:24:35,795 --> 01:24:42,255
+And we like to determine the level surfaces.
+
+765
+01:24:42,255 --> 01:24:49,675
+So we need to give the constant value fxyz is c.
+
+766
+01:24:49,675 --> 01:24:57,135
+So this means x square, y square plus c square is c.
+
+767
+01:24:57,135 --> 01:24:59,735
+C must be positive.
+
+768
+01:25:00,135 --> 01:25:03,475
+The least value is 0.
+
+769
+01:25:03,956 --> 01:25:07,996
+Okay, so just an example.
+
+770
+01:25:07,996 --> 01:25:14,956
+x square plus y square plus z square is, let me say, 1.
+
+771
+01:25:15,635 --> 01:25:21,536
+So this means x square plus y square plus z square is 1.
+
+772
+01:25:22,615 --> 01:25:27,975
+Okay, so do you know the name of this equation?
+
+773
+01:25:27,975 --> 01:25:31,395
+I am asking to all of you.
+
+774
+01:25:32,155 --> 01:25:36,675
+Do you know the name of this equation?
+
+775
+01:25:39,255 --> 01:25:45,996
+Do you have an idea about the equation's name?
+
+776
+01:25:48,376 --> 01:25:50,655
+So you don't have any idea.
+
+777
+01:25:51,435 --> 01:25:56,876
+So I wrote it, I wrote it maybe 10 minutes ago.
+
+778
+01:25:56,876 --> 01:26:03,036
+So this is a square equation.
+
+779
+01:26:04,195 --> 01:26:09,536
+Actually, this is unit square at the centered origin.
+
+780
+01:26:10,175 --> 01:26:12,036
+Okay, unit square.
+
+781
+01:26:12,555 --> 01:26:14,675
+Let me give another one.
+
+782
+01:26:14,795 --> 01:26:19,576
+x square, y square, z square is, let me say, 2.
+
+783
+01:26:19,576 --> 01:26:27,335
+So this means x square plus y square plus z square is equal to 2 square.
+
+784
+01:26:28,115 --> 01:26:30,055
+Okay, so another one.
+
+785
+01:26:30,595 --> 01:26:40,115
+If we take c is 0, x square, y square, z square is 0 means x, y, z.
+
+786
+01:26:40,115 --> 01:27:06,975
+Okay.
+
+787
+01:26:41,140 --> 01:26:44,820
+İzlediğiniz için, sadece oran testi, ok?
+
+788
+01:26:45,780 --> 01:26:49,180
+So, let's check the answer.
+
+789
+01:26:51,740 --> 01:26:56,600
+Yes, is a sphere of radius C centered at the origin?
+
+790
+01:26:57,360 --> 01:27:04,160
+The lever surface is zero, consists of the origin alone, ok?
+
+791
+01:27:04,160 --> 01:27:11,880
+So, we have this picture, I hope it looks like a sphere.
+
+792
+01:27:12,880 --> 01:27:18,060
+This is, for example, for the first one.
+
+793
+01:27:20,060 --> 01:27:22,060
+Okay, this one.
+
+794
+01:27:22,640 --> 01:27:26,420
+X squared plus y squared plus e squared is two.
+
+795
+01:27:27,840 --> 01:27:30,560
+And this is the second one.
+
+796
+01:27:30,560 --> 01:27:35,600
+X squared plus y squared plus z squared is two.
+
+797
+01:27:36,300 --> 01:27:39,600
+And also, this is the third one.
+
+798
+01:27:39,600 --> 01:27:42,980
+X squared plus, let me write,
+
+799
+01:27:44,900 --> 01:27:47,700
+x squared, y squared, z squared
+
+800
+01:27:47,700 --> 01:27:50,380
+is three.
+
+801
+01:27:51,039 --> 01:27:51,740
+And so on.
+
+802
+01:27:52,320 --> 01:27:52,660
+Okay.
+
+803
+01:27:53,380 --> 01:27:54,860
+And this is,
+
+804
+01:27:55,240 --> 01:27:57,900
+these are called
+
+805
+01:27:57,900 --> 01:28:25,520
+level surfaces.
+
+806
+01:28:25,520 --> 01:28:30,039
+Okay.
+
+807
+01:28:40,532 --> 01:28:42,011
+Evet.
+
+808
+01:28:42,372 --> 01:28:43,931
+So, do you have any questions?
+
+809
+01:28:46,431 --> 01:28:49,851
+So, it's enough for today.
+
+810
+01:28:50,231 --> 01:28:50,652
+Okay.
+
+811
+01:28:51,052 --> 01:28:52,952
+I'd like to finish my lesson.
+
+812
+01:28:53,292 --> 01:28:54,792
+If you don't have any questions.
+
+813
+01:28:55,552 --> 01:28:56,011
+Okay.
+
+814
+01:28:56,532 --> 01:28:58,332
+Thank you for your attention.
+
+815
+01:28:59,552 --> 01:29:02,311
+So, see you next week.
+
+816
+01:29:02,311 --> 01:29:06,731
+I hope the rest of the day you have a good day.
+
+817
+01:29:07,592 --> 01:29:08,112
+Okay.
+
+818
+01:29:09,332 --> 01:29:10,271
+Bye-bye.
+
+819
+01:29:10,532 --> 01:29:12,072
+You're welcome.
+
+820
+01:29:14,412 --> 01:29:15,132
+Okay.
+
+821
+01:29:15,492 --> 01:29:16,132
+See you then.
+
+822
+01:29:22,068 --> 01:29:22,847
+Yurvaka.
+
+823
+01:29:30,804 --> 01:29:31,344
+Teşekkürler.
