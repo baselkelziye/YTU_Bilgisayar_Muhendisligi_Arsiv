@@ -10,3 +10,4 @@
 | 21 | Bahar | Ebru Osborne | [sube_21/](sube_21/) |
 | 23 | Bahar | Bulunamadı | [sube_23/](sube_23/) |
 | 26 | Bahar | Kılıç (adı bulunamadı) | [sube_26/](sube_26/) |
+| 28 | Bahar | Bulunamadı | [sube_28/](sube_28/) |
