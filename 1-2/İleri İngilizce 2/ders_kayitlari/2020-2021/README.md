@@ -4,6 +4,7 @@
 
 | Şube | Dönem | Hoca | Klasör |
 | :---: | :---: | :--- | :--- |
+| 3 | Bahar | Fatma Gürsu | [sube_3/](sube_3/) |
 | 13 | Bahar | Bulunamadı | [sube_13/](sube_13/) |
 | 14 | Bahar | Seda (soyadı bulunamadı) | [sube_14/](sube_14/) |
 | 20 | Bahar | Özlem Sezan | [sube_20/](sube_20/) |
