@@ -1,0 +1,3131 @@
+1
+00:00:10,644 --> 00:00:18,463
+Merhaba arkadaşlar. Birkaç dakika daha bekleyelim. Arkadaşların seniz giriş yapıyor. Ondan sonra derse başlayalım.
+
+2
+00:04:46,259 --> 00:04:47,699
+Tekrar merhaba arkadaşlar.
+
+3
+00:04:49,579 --> 00:04:52,259
+Dersimize başlayalım hazırsanız.
+
+4
+00:04:53,180 --> 00:04:53,899
+Ben hazırım.
+
+5
+00:04:55,939 --> 00:04:58,459
+Bugün vektör uzaylarına gireceğiz.
+
+6
+00:05:00,439 --> 00:05:04,240
+Ve bundan sonra yapacağımız her şeyi vektör uzaylarında yapacağız.
+
+7
+00:05:07,099 --> 00:05:09,000
+Kolay bir konu değil.
+
+8
+00:05:10,920 --> 00:05:13,240
+Gittikçe de derinleşecek, zorlaşacak.
+
+9
+00:05:13,240 --> 00:05:16,959
+O yüzden baş kısmını iyi anlamanız çok önemli.
+
+10
+00:05:21,588 --> 00:05:22,408
+Öncelikle
+
+11
+00:05:34,644 --> 00:05:39,244
+R, real sayılar cismi V'de boş olmayan bir küme olsun.
+
+12
+00:05:39,244 --> 00:05:57,223
+V kümesi üzerinde tanımlı şu şekilde artı ve nokta işlemlerine göre, yani bu da çarpma aslında, aşağıdaki özellikler sağlanıyorsa V'ye bir real vektör uzayı diyeceğiz.
+
+13
+00:05:58,963 --> 00:06:04,103
+Vektör uzayları üzerinde tanımlandıkları cisme göre isim alırlar.
+
+14
+00:06:04,103 --> 00:06:16,244
+Real sayılar cismi üzerinde eğer tanımlıyorsak real vektör uzayı, kompleks sayılar cismi üzerinde tanımlıyorsa bu uzayı o zaman kompleks vektör uzayı oluyor.
+
+15
+00:06:17,024 --> 00:06:20,184
+Ama biz daha çok real vektör uzaylarıyla ilgili.
+
+16
+00:06:24,024 --> 00:06:26,584
+Sağlamması gereken özellikler de şunlar.
+
+17
+00:06:26,584 --> 00:06:28,723
+Öncelikle şunu söyleyeyim.
+
+18
+00:06:29,384 --> 00:06:35,043
+Bu V bir küme olsun dedik ya, boş olmayan bir küme.
+
+19
+00:06:35,783 --> 00:06:38,423
+V'nin elemanlarına vektör diyeceğiz.
+
+20
+00:06:38,423 --> 00:06:48,624
+Dolayısıyla bu vektörlerle tanımlanan işlemler, toplama işlemi ya da skalerle çarpma işlemi,
+
+21
+00:06:48,624 --> 00:06:56,963
+bu işlemler real sayılardaki o bildiğimiz toplama ve çarpma işlemlerinden farklı olarak tanımlanabilir.
+
+22
+00:06:56,963 --> 00:07:12,104
+O yüzden biz işlemleri yani artı ve çarpı olarak değil de bunları böyle yuvarlak içine aldık ki real sayılardaki bu toplama ve çarpma işlemlerinden ayırmak için.
+
+23
+00:07:12,104 --> 00:07:26,604
+Eğer yapacağımız işlemler real sayılardaki işlemlerle aynı şekilde çakışıyorsa o zaman bu yuvarlakları kaldırırız.
+
+24
+00:07:26,923 --> 00:07:28,423
+Şimdilik böyle alalım.
+
+25
+00:07:29,024 --> 00:07:34,524
+Şu artı ve çarpma işlemlerine göre bu V kümesi şu özellikleri sağlamalı.
+
+26
+00:07:34,604 --> 00:07:35,804
+Bu özelliklere bakıyoruz.
+
+27
+00:07:35,803 --> 00:07:42,444
+Öncelikle şu ilk beş özellik, beş mi altı mı ona bir bakayım.
+
+28
+00:07:45,463 --> 00:07:54,384
+Evet, bu beş özellik toplama işlemine göre V'nin sağlaması gereken özelliklerdir.
+
+29
+00:07:54,644 --> 00:07:55,303
+Tamam mı?
+
+30
+00:07:55,644 --> 00:07:59,144
+Şimdi toplama işlemine göre ne olması gerekiyor?
+
+31
+00:07:59,764 --> 00:08:05,104
+V'nin herhangi iki elemanının toplamı yine V'ye ait olmalı.
+
+32
+00:08:05,104 --> 00:08:07,464
+Buna kapalılık özelliği diyoruz.
+
+33
+00:08:08,464 --> 00:08:19,204
+V'nin yine herhangi iki elemanının toplamı toplamaya göre değişme özelliğine sahip olmalı.
+
+34
+00:08:19,903 --> 00:08:24,104
+Yani U artı V ile V artı U'nun toplamı birbirine eşit olmalı.
+
+35
+00:08:24,963 --> 00:08:26,484
+Bu ikinci özelliğimiz.
+
+36
+00:08:26,484 --> 00:08:41,683
+Üçüncü olarak da V'nin V'den herhangi üç tane vektör aldığımızda bu vektörlerin toplama işlemine göre birleşme özelliğine de sahip olmasını bekleyeceğiz.
+
+37
+00:08:41,803 --> 00:08:44,663
+Ben altını çizmeye çalışırken üstünü çiziyorum.
+
+38
+00:08:44,783 --> 00:08:45,644
+Yanlış anlamayın.
+
+39
+00:08:45,644 --> 00:08:52,703
+Yani toplama işleminin birleşme özelliği de mevcut olmalı.
+
+40
+00:08:53,423 --> 00:08:59,063
+Bir de V kümesi sıfır elemanını içermelidir.
+
+41
+00:09:00,203 --> 00:09:04,783
+Bu sıfır elemanı toplamaya göre etkisiz elemandır.
+
+42
+00:09:04,783 --> 00:09:15,384
+Yani herhangi bir U vektörüyle sıfırın toplamı yine U elemanı olacaktır.
+
+43
+00:09:17,443 --> 00:09:27,824
+Beşinci olarak da V'nin her U elemanı için bu elemanların toplamsal tersi dediğimiz,
+
+44
+00:09:28,104 --> 00:09:32,824
+yani her U elemanına karşılık eksi U elemanı da V'nin elemanı olmalıdır.
+
+45
+00:09:33,875 --> 00:09:40,175
+Eksi u elemanına u elemanının toplamaya göre tersi diyoruz.
+
+46
+00:09:41,415 --> 00:09:47,775
+Ve dolayısıyla u ile u'nun tersinin toplamı bize sıfır elemanını verir.
+
+47
+00:09:47,775 --> 00:09:48,435
+Tamam.
+
+48
+00:09:49,816 --> 00:09:54,775
+Şu beş özellik toplama işlemine göre sağlanması gereken özellikler.
+
+49
+00:09:55,515 --> 00:09:57,795
+Bunları tekrar özetleyecek olursak.
+
+50
+00:09:57,795 --> 00:10:05,696
+Kapalılık özelliği, değişme özelliği, birleşme özelliği olacak.
+
+51
+00:10:06,336 --> 00:10:07,475
+Etkisiz eleman olacak.
+
+52
+00:10:07,655 --> 00:10:11,096
+Yani ve kümesi sıfır elemanını içerecek.
+
+53
+00:10:11,096 --> 00:10:21,495
+Bir de her elemanın toplamaya göre tersi yine ve kümesine ait olacak.
+
+54
+00:10:21,755 --> 00:10:23,096
+Bunlar ilk beş özelliğimiz.
+
+55
+00:10:24,235 --> 00:10:27,495
+Peki şu bir de çarpma işlemi tanımlamıştık.
+
+56
+00:10:27,495 --> 00:10:28,655
+Şu nokta işlemi.
+
+57
+00:10:29,096 --> 00:10:33,015
+Ona göre de beş özellik de orada var.
+
+58
+00:10:33,316 --> 00:10:34,456
+Şimdi onlara bakalım.
+
+59
+00:10:34,456 --> 00:10:35,735
+Bunlar neymiş?
+
+60
+00:10:40,371 --> 00:10:54,231
+Burada da yine bu skalerle çarpma işleminde de her U eleman V ve her C eleman R için C çarpı U V'nin elemanı olmalı.
+
+61
+00:10:54,331 --> 00:11:00,651
+Yani skalerle çarpma işleminin kapalılık özelliği olmalı.
+
+62
+00:11:04,467 --> 00:11:19,727
+Yine v vektörünün herhangi iki elemanı için ve de bir c eleman r için c çarpı u artı v çarpımı şu şekilde de yazılabilir.
+
+63
+00:11:19,727 --> 00:11:25,467
+Bu da skalerle çarpmanın vektör toplamı üzerine dağılma özelliği oluyor.
+
+64
+00:11:25,647 --> 00:11:26,067
+Tamam mı?
+
+65
+00:11:26,587 --> 00:11:28,168
+Bu da sağlanmalı.
+
+66
+00:11:28,168 --> 00:11:37,107
+Yine u eleman v ve c d eleman r için c artı d çarpı u diyor.
+
+67
+00:11:37,867 --> 00:11:44,327
+Burada da yine skalerle çarpmanın bu sefer şu skaler toplanma.
+
+68
+00:11:44,327 --> 00:11:46,227
+Yani skaler toplanma demek lazım.
+
+69
+00:11:46,607 --> 00:11:51,307
+Bu real sayılardaki toplama işlemi, cisim üzerindeki toplama işlemi.
+
+70
+00:11:51,387 --> 00:11:57,207
+Yani v üzerinde tanımladığımız toplama işlemini şöyle yuvarlak içine alarak gösteriyorduk.
+
+71
+00:11:57,207 --> 00:11:59,007
+Bu re'deki işlem.
+
+72
+00:11:59,507 --> 00:12:02,087
+Çünkü c ve d re'nin elemanları.
+
+73
+00:12:04,427 --> 00:12:08,207
+Burada da yine dağılma özelliği sağlanmalı.
+
+74
+00:12:09,947 --> 00:12:12,087
+C çarpı d çarpı u.
+
+75
+00:12:12,087 --> 00:12:15,647
+c ve d skaler sayılar.
+
+76
+00:12:15,768 --> 00:12:17,387
+Yani rel sayılar bunlar.
+
+77
+00:12:19,327 --> 00:12:20,847
+U ve v'ye ait.
+
+78
+00:12:22,467 --> 00:12:26,647
+Şöyle bir skaler çarpımı siz şu şekilde de yazabilirsiniz.
+
+79
+00:12:26,827 --> 00:12:28,927
+Bu ikisi birbirine eşit.
+
+80
+00:12:28,927 --> 00:12:37,427
+Bir de her u eleman v için.
+
+81
+00:12:38,727 --> 00:12:42,227
+Bu v bir çarpı u eşit u'dur.
+
+82
+00:12:42,227 --> 00:12:49,067
+Buradaki bir rel sayıdır.
+
+83
+00:12:50,567 --> 00:12:52,607
+O da çarpma işleminin etkisi elemanı.
+
+84
+00:12:52,687 --> 00:12:53,947
+Onu biliyorsunuz zaten.
+
+85
+00:12:55,207 --> 00:12:58,107
+Bir de şu özellikler sağlanıyorsa eğer.
+
+86
+00:12:58,107 --> 00:13:00,867
+Yukarıdaki beş özelliği ek olarak.
+
+87
+00:13:01,627 --> 00:13:03,467
+Bunlar da sağlanıyorsa eğer.
+
+88
+00:13:04,028 --> 00:13:04,607
+V'ye.
+
+89
+00:13:05,447 --> 00:13:09,007
+R üzerinde bir vektör uzayı.
+
+90
+00:13:09,227 --> 00:13:13,548
+V'ye.
+
+91
+00:13:15,127 --> 00:13:17,747
+Rel vektör uzayı deriz.
+
+92
+00:13:18,007 --> 00:13:18,268
+Tamam.
+
+93
+00:13:19,268 --> 00:13:23,187
+V'nin elemanları doğal olarak vektörler oluyor bu durumda.
+
+94
+00:13:25,347 --> 00:13:27,867
+Skalerleri de R'den alıyoruz.
+
+95
+00:13:27,867 --> 00:13:32,087
+R bizim cisim dediğimiz yapı oluyor burada.
+
+96
+00:13:35,668 --> 00:13:50,048
+Yani cisim dediğimiz yapı da üzerinde bildiğimiz bu toplama, çıkarma, çarpma, bölme işlemlerini yapabildiğimiz bir yapı olması anlamına geliyor.
+
+97
+00:13:54,611 --> 00:13:59,231
+Cebirsel işlemleri yapabiliyoruz üzerinde. Tabii başka özellikleri de var.
+
+98
+00:14:00,011 --> 00:14:04,331
+Şimdi bu 10 tane özelliği siz çok iyi bileceksiniz.
+
+99
+00:14:06,851 --> 00:14:12,011
+Bir V kümesi hangi koşullarda vektör uzayı oluyor?
+
+100
+00:14:12,791 --> 00:14:21,091
+İşte onun koşulları, bu 10 tane koşul, bu 10 koşulu sağlıyorsa V'ye vektör uzayı diyeceğiz bundan sonra.
+
+101
+00:14:21,091 --> 00:14:23,991
+Buradaki
+
+102
+00:14:23,991 --> 00:14:24,231
+Thank you.
+
+103
+00:14:28,692 --> 00:14:35,412
+Bunları söyledik zaten. Şu artı ve yani aldığımız işlemler
+
+104
+00:14:39,316 --> 00:14:40,916
+Şu işlem ve şu işlem.
+
+105
+00:14:41,756 --> 00:14:48,136
+Bu artı işlemini vektörel toplam işlemi şu işlemede skaler çarpım diyoruz.
+
+106
+00:14:48,136 --> 00:14:52,396
+Yani skaler çarpım.
+
+107
+00:14:52,875 --> 00:14:57,216
+Çünkü R'deki sayılarla vektörleri çarpıyoruz.
+
+108
+00:14:57,716 --> 00:15:01,836
+Vektörlerle ilgili bildiğimiz iki tane çarpma yöntemi var.
+
+109
+00:15:01,836 --> 00:15:13,636
+Sınavdan önce size vektörleri verdiğimde iki tane vektörlerle yapabildiğimiz iki tane çarpma tanımlamıştık.
+
+110
+00:15:13,636 --> 00:15:14,696
+Çarpma yöntemi.
+
+111
+00:15:15,076 --> 00:15:19,975
+Birisi iç çarpım ya da skaler çarpım ya da nokta çarpımı dediğimiz çarpımdı.
+
+112
+00:15:20,495 --> 00:15:22,196
+Diğeri de vektörel çarpımdı.
+
+113
+00:15:22,256 --> 00:15:24,615
+Onu da şöyle kros çarpımla gösteriyorduk.
+
+114
+00:15:25,475 --> 00:15:28,696
+Şimdi buradaysa V'nin elemanları vektörler.
+
+115
+00:15:28,696 --> 00:15:36,375
+Ama aldığımız vektörlerle R'nin elemanlarını yani cismin elemanlarını çarpıyoruz.
+
+116
+00:15:36,556 --> 00:15:38,975
+O yüzden bu skaler çarpım işlemi oluyor.
+
+117
+00:15:39,875 --> 00:15:42,896
+Bu işlemleri birbirine karıştırmayın olur mu?
+
+118
+00:15:42,996 --> 00:15:43,756
+Dikkatli olun.
+
+119
+00:15:44,475 --> 00:15:45,975
+Hocam bir şey sorabilir miyim?
+
+120
+00:15:46,355 --> 00:15:46,975
+Tabii ki.
+
+121
+00:15:47,556 --> 00:15:51,136
+Yuvarlak içerisinde çarpı işareti varsa buradan vektörel çarpım mı diyeceğiz?
+
+122
+00:15:51,756 --> 00:15:53,276
+Vektörel çarpım değil canım.
+
+123
+00:15:55,456 --> 00:15:57,436
+Yok çarpı işareti olursa.
+
+124
+00:15:57,436 --> 00:15:59,556
+Ama şey için yuvarlak içerisinde.
+
+125
+00:15:59,576 --> 00:16:02,436
+O tensörel çarpım olarak geçiyor.
+
+126
+00:16:04,656 --> 00:16:07,475
+O özel bir, o da ayrı bir çarpım.
+
+127
+00:16:07,855 --> 00:16:10,676
+Vektörlerle yapılan çarpımlardan başka bir tanesi.
+
+128
+00:16:11,235 --> 00:16:12,396
+Ben şurayı hemen çizeyim.
+
+129
+00:16:12,756 --> 00:16:13,696
+Şunu diyorsun değil mi?
+
+130
+00:16:14,956 --> 00:16:15,596
+Evet hocam.
+
+131
+00:16:15,956 --> 00:16:18,576
+Buna da tensörel çarpım diyoruz.
+
+132
+00:16:20,296 --> 00:16:23,436
+Bazen tensor diye yazılıyor Türkçe kaynaklarda.
+
+133
+00:16:23,436 --> 00:16:26,875
+İngilizce'de de böyle yazıyor ama hep tensor olarak bunu.
+
+134
+00:16:27,436 --> 00:16:30,056
+Telaffuz ediyorlar.
+
+135
+00:16:30,316 --> 00:16:31,816
+Tensörel çarpım oluyor.
+
+136
+00:16:31,956 --> 00:16:32,596
+Farklı bir şey.
+
+137
+00:16:33,056 --> 00:16:39,636
+Ya bizim burada şu işlemleri yuvarlak içine almamızın sebebi dediğim gibi.
+
+138
+00:16:40,256 --> 00:16:44,956
+Real sayılardaki çarpma ve toplama işleminden farklı tanımlanabilir bunlar.
+
+139
+00:16:45,496 --> 00:16:46,436
+O yüzden böyle gösterdik.
+
+140
+00:16:46,436 --> 00:16:54,756
+Farklı olmadığı durumlarda zaten kaldıracağız o yuvarlakları.
+
+141
+00:16:55,355 --> 00:16:59,916
+Buradaki aldığımız çarpma işlemi de nokta yapıyoruz.
+
+142
+00:17:00,375 --> 00:17:02,556
+Skalerle çarpma işlemi çünkü bu.
+
+143
+00:17:02,556 --> 00:17:08,395
+İki vektörü çarpmayacağız vektör uzaylarında tamam mı?
+
+144
+00:17:11,416 --> 00:17:17,296
+Demin aldığımız o özelliklerin içindeki çarpım işlemi hep skalerle çarpımdı.
+
+145
+00:17:18,296 --> 00:17:19,175
+Bunlara dikkat edin.
+
+146
+00:17:19,175 --> 00:17:22,516
+Ayrıntılar ama çok önemli ayrıntılar.
+
+147
+00:17:27,923 --> 00:17:43,043
+Şunu da söyleyeyim. Genelde sınavlarda işte bir küme verilir, işlem tanımlanır ya da real sayılardaki işlemdir artık küme tanımlanır daha çok.
+
+148
+00:17:44,584 --> 00:17:49,124
+Vektör uzayı olup olmadığı ya da alt vektör uzayı olup olmadığı sorulur.
+
+149
+00:17:49,124 --> 00:17:54,923
+Alt vektör uzayını yine göstereceğiz dersin ilerleyen süresi içerisinde.
+
+150
+00:17:54,923 --> 00:17:59,763
+Vektör uzayı olduğunu göstermek için şu on koşulu sağlaması gerekecek.
+
+151
+00:18:00,423 --> 00:18:06,223
+Bunlardan şu ilk beşine öncelikle bakacaksınız.
+
+152
+00:18:06,743 --> 00:18:12,203
+Yani genellikle sağlanmayan koşullar varsa şu ilk beş de oluyor.
+
+153
+00:18:13,124 --> 00:18:16,743
+Bir kere her vektör uzayı sıfır elemanını içermelidir.
+
+154
+00:18:16,743 --> 00:18:19,023
+Buna dikkat edeceksiniz tamam mı?
+
+155
+00:18:24,788 --> 00:18:30,248
+Sonra, kapalılık özelliği mutlaka olacak.
+
+156
+00:18:32,107 --> 00:18:41,008
+Kapalılık özelliğini sağlıyorsa değişme özelliği var mı diye bakacaksınız. Ondan sonra da birleşecek var mı diye bakacaksınız.
+
+157
+00:18:41,008 --> 00:18:44,188
+Özellikle bu üç özellik
+
+158
+00:18:44,188 --> 00:18:55,288
+Zaten hani vektör uzayı değilse şunlardan biri muhtemelen sağlanmaz.
+
+159
+00:18:55,567 --> 00:19:00,008
+Bu üçü de sağlanıyorsa o zaman son olarak şey kontrol edersiniz.
+
+160
+00:19:00,928 --> 00:19:02,907
+Sıfır elemanını içeriyor mu?
+
+161
+00:19:03,387 --> 00:19:06,428
+Ve de her elemanın toplamaya göre tersi var mı?
+
+162
+00:19:06,508 --> 00:19:07,887
+Onları kontrol edersiniz.
+
+163
+00:19:07,887 --> 00:19:13,168
+Onlar da varsa diğerleri zaten daha kolay sağlanıyor.
+
+164
+00:19:13,168 --> 00:19:18,968
+Ama bu özellikle bu üç özellik, ilk üçü çok önemlidir.
+
+165
+00:19:21,067 --> 00:19:23,347
+Bir soru vardı galiba.
+
+166
+00:19:37,619 --> 00:19:48,239
+[öğrenci], [kişisel bilgi]
+
+167
+00:19:48,939 --> 00:19:52,799
+[kişisel bilgi]
+
+168
+00:19:54,139 --> 00:19:55,199
+Geçmiş olsun hocam.
+
+169
+00:19:55,419 --> 00:20:06,419
+Sağ olun. [kişisel bilgi]
+
+170
+00:20:06,419 --> 00:20:08,139
+Teşekkür ederim.
+
+171
+00:20:24,435 --> 00:20:48,955
+Şöyle bir teoremimiz var. V vektör uzayındaki elemanların toplamsal tersleri tektir diye. Bunun ispatı da basit. İspatlamak için tersini kabul edeceğiz. Tersini kabul ettiğimizde bunun aslında doğru olmadığını göreceğiz. Tersinin doğru olmadığını göreceğiz.
+
+172
+00:20:48,955 --> 00:21:07,056
+Şimdi V vektör uzayıymış. V vektör uzayı ise o zaman nedir? Sıfır V'nin elemanıdır. Her U eleman V için U'nun tersinin iki tane olduğunu kabul edelim.
+
+173
+00:21:18,420 --> 00:21:30,600
+Olacak şekilde diyelim, V, V, W eleman, V olsun. Bunu kabul ettik.
+
+174
+00:21:35,892 --> 00:21:47,692
+Şimdi buradan hareketle V ile şu W'nun birbirine eşit olduğunu gösterirsem eğer toplam terslerin tek olduğunu göstermiş olur.
+
+175
+00:21:51,124 --> 00:21:54,844
+V elemanını alalım, bunun W'ye eşit olduğunu gösterelim.
+
+176
+00:21:56,203 --> 00:22:01,824
+V elemanı, sıfır da V'nin elemanı, V'de V'nin elemanı.
+
+177
+00:22:03,544 --> 00:22:06,364
+V vektör uzayı olduğuna göre ne olacaktır?
+
+178
+00:22:06,364 --> 00:22:13,564
+V'yi ben, V vektörü artı sıfır olarak yazabileceğim.
+
+179
+00:22:13,683 --> 00:22:14,824
+Sıfır vektör yani.
+
+180
+00:22:16,264 --> 00:22:17,243
+Böyle yazabilirim.
+
+181
+00:22:24,243 --> 00:22:44,423
+Sıfırı da, bakın şurada iki tane sıfır yazdım. Şu toplamda sıfıra eşit, bu toplamda sıfıra eşit. Ama benim işime yarayacak olan nedir? Şu alttaki toplam, çünkü burada toplamda W var. O zaman sıfır yerine ben şurayı alayım, U artı W'yu alayım.
+
+182
+00:22:51,667 --> 00:23:00,407
+Vektör uzayı olduğu için toplamın, vektör toplamının dağılma özelliği vardı, şey pardon, birleşme özelliği vardı değil mi?
+
+183
+00:23:00,407 --> 00:23:07,027
+Şimdi birleşme özelliğini kullanırsak, V artı U
+
+184
+00:23:12,756 --> 00:23:17,196
+Artı W olacak. Birleşme özelliğini kullandım.
+
+185
+00:23:18,615 --> 00:23:25,875
+V artı U toplamı da nedir? U artı V ya da V artı U. Değişme özelliği de var. Hatta onu da kullanalım.
+
+186
+00:23:26,496 --> 00:23:30,855
+Bunu da U artı V olarak yazabilirim değişme özelliğinden.
+
+187
+00:23:34,156 --> 00:23:38,236
+Şurası neye eşit? Bakın burada yazmışız. Bu da sıfıra eşit.
+
+188
+00:23:38,236 --> 00:23:44,296
+O zaman burası ne oldu? Sıfır artı W vektörü oldu.
+
+189
+00:23:45,276 --> 00:23:50,876
+Sıfırla herhangi bir V elemanının toplamı yine onun kendisiydi.
+
+190
+00:23:50,956 --> 00:23:54,156
+O halde bu toplam yine neye eşit olacak? W'ye eşit olacak.
+
+191
+00:23:54,896 --> 00:23:58,916
+Bakarsanız V'nin W'ye eşit olduğu görülüyor.
+
+192
+00:23:58,916 --> 00:24:03,916
+Yani bu şekilde iki tane ters elemanın toplam.
+
+193
+00:24:03,916 --> 00:24:10,596
+Toplamaya göre tersler her elemanın toplamaya göre tersi bir tanedir deriz.
+
+194
+00:24:11,396 --> 00:24:13,276
+Şimdi şu örneklere bakalım.
+
+195
+00:24:23,155 --> 00:24:37,435
+V vektör uzayını, yani vektör uzayı demeyelim de V kümesini burada R'ye eşit alıyoruz. Şimdi hem cismimiz R olacak bu durumda, hem V kümemiz R. İkisi de R.
+
+196
+00:24:38,036 --> 00:24:44,695
+Toplama ve skalerle çarpım işlemi şu aşağıda gösterildiği gibi tanımlanmış.
+
+197
+00:24:44,695 --> 00:24:56,515
+X artı Y, 3X artı 3Y şeklinde tanımlanmış. K çarpı X de R sayılardaki çarpım gibi KX olarak tanımlanmış.
+
+198
+00:24:56,675 --> 00:25:02,576
+Şimdi bu çarpma işlemine göre V bir vektör uzayı mıdır ona bakmak istiyoruz.
+
+199
+00:25:03,515 --> 00:25:08,096
+Öncelikle V'nin vektör uzayı olması için ne gerekiyor?
+
+200
+00:25:08,855 --> 00:25:11,715
+Kapalılık özelliği gerekiyor. Bu bir.
+
+201
+00:25:11,715 --> 00:25:16,816
+Kapalılık özelliğini sağlayacaktır.
+
+202
+00:25:29,587 --> 00:25:50,307
+Neden? Çünkü şu 3x artı 3'ye skalerle çarpma işlemi bakın vektör bu v uzayında v kümesinde skalerle çarpma işlemi k çarpı x kx olarak tanımlandığına göre
+
+203
+00:25:50,307 --> 00:26:12,627
+3 real sayıdır değil mi? 3 eleman r'dir. x v'nin elemanıdır. Bu da aynı zamanda r'dir. y de v'nin elemanı. Dolayısıyla 3x ve 3y bu nedir? v'nin elemanıdır.
+
+204
+00:26:12,627 --> 00:26:28,667
+Çünkü real sayı v olarak tanımlanmış. Bir real sayı başka real sayı ile çarparsanız sonuç yine bir real sayı olacağında bu çarpımlar v'ye ait olacaktır.
+
+205
+00:26:28,667 --> 00:26:38,927
+İki tane real sayının toplamı da her zaman real sayı olacağı için şu toplam da r'ye yani v'ye ait olacaktır.
+
+206
+00:26:38,927 --> 00:26:43,508
+Dolayısıyla kapalılık özelliği sağlanır.
+
+207
+00:26:45,927 --> 00:26:57,467
+Değişme özelliği var mıdır? Ona bakalım. Değişme özelliği de vardır. Bir kapalılık özelliği vardır sağlanır.
+
+208
+00:26:57,627 --> 00:27:07,008
+İki, değişme özelliği de vardır. Çünkü x artı y 3x artı 3y olarak tanımlanmış.
+
+209
+00:27:07,008 --> 00:27:17,147
+Şunlar real sayı olduğu için real sayılarında değişme özelliği olduğundan bunu 3y artı 3x olarak da yazabilir miyim?
+
+210
+00:27:17,488 --> 00:27:18,528
+Yazarım bu toplamı.
+
+211
+00:27:19,488 --> 00:27:25,907
+3y artı 3x olarak yazarsam şu yuvarlak toplama işlemine göre bu neye eşit olur?
+
+212
+00:27:25,907 --> 00:27:36,107
+Y artı x demek olur. Yani x artı y'nin y artı x'e eşit olduğunu görebiliyoruz.
+
+213
+00:27:36,567 --> 00:27:38,327
+Değişme özelliğimiz de var.
+
+214
+00:27:39,208 --> 00:27:43,188
+Üçüncü özelliğimiz neydi? Birleşme özelliği. Şimdi ona bakalım.
+
+215
+00:27:43,187 --> 00:27:49,887
+X, Y ve Z bunlar V'nin elemanı olsun.
+
+216
+00:28:03,284 --> 00:28:07,724
+Şu toplam, bu toplama eşit midir ona bakacağız.
+
+217
+00:28:13,971 --> 00:28:18,231
+Şöyle bu eşitlerin oraya bir soru işareti koyayım ki ona baktığımızı anlayalım.
+
+218
+00:28:18,991 --> 00:28:20,951
+Buna bakıyoruz değil mi? Bu eşit midir?
+
+219
+00:28:21,692 --> 00:28:26,731
+Tek tek şu iki toplamı yapıp karşılaştıracağız eşit olup olmadıklarını görmek için.
+
+220
+00:28:27,531 --> 00:28:30,412
+Şimdi x artı y toplamına bakalım.
+
+221
+00:28:31,051 --> 00:28:34,771
+Şey x artı y artı z toplamına bakalım.
+
+222
+00:28:35,251 --> 00:28:38,051
+Bana biraz boşluk lazım ama şurayı kullanabilirim.
+
+223
+00:28:51,571 --> 00:28:53,011
+Önce şu kısmını alalım.
+
+224
+00:28:55,031 --> 00:29:02,751
+Şu parantez içindeki ifadeyi şöyle w vektörü gibi düşünürsem burası ne olur?
+
+225
+00:29:03,271 --> 00:29:07,791
+x artı w olur değil mi?
+
+226
+00:29:09,371 --> 00:29:12,251
+x artı w da neye eşittir?
+
+227
+00:29:12,251 --> 00:29:16,211
+3x artı 3w'dür.
+
+228
+00:29:17,411 --> 00:29:21,051
+Şimdi bakın bu işlemi buraya taşıyalım.
+
+229
+00:29:21,571 --> 00:29:32,692
+3x artı w dediğim şey y artı z'dir değil mi?
+
+230
+00:29:32,951 --> 00:29:33,251
+W.
+
+231
+00:29:35,991 --> 00:29:42,692
+Şimdi bakın burada şu parantez içinde bir toplama daha var.
+
+232
+00:29:43,351 --> 00:29:45,151
+Onu da yine aynı şekilde yazacağım.
+
+233
+00:29:45,811 --> 00:29:50,931
+3x artı 3 çarpı y artı z toplamı neye eşit?
+
+234
+00:29:50,931 --> 00:29:54,791
+3y artı 3z'ye eşit.
+
+235
+00:29:54,871 --> 00:29:56,751
+Toplama böyle tanımlanmış çünkü.
+
+236
+00:29:58,171 --> 00:30:04,451
+Dolayısıyla şurası burada 3'te çarpım durumunda olduğu için bunu da dağıtırsak.
+
+237
+00:30:04,451 --> 00:30:05,931
+burası neye eşit olacak?
+
+238
+00:30:05,931 --> 00:30:12,991
+3x artı 9y artı 9z'ye eşit olacak.
+
+239
+00:30:13,991 --> 00:30:15,311
+Bunu burada bırakalım.
+
+240
+00:30:15,311 --> 00:30:19,031
+Gelelim ikinci tarafa.
+
+241
+00:30:22,579 --> 00:30:24,019
+Rengi değiştireyim.
+
+242
+00:30:26,599 --> 00:30:28,240
+Şu işleme bakalım.
+
+243
+00:30:37,683 --> 00:30:39,324
+Bu buna eşit çıkacak mı?
+
+244
+00:30:39,844 --> 00:30:43,283
+Şurada önce isterseniz parantez içindeki toplamayı yazalım.
+
+245
+00:30:43,783 --> 00:30:47,183
+Bu nedir? 3x artı 3y.
+
+246
+00:30:57,332 --> 00:31:06,272
+Şu toplamı tek bir eleman gibi göz önüne alırsak, yani yine bunu W gibi ya da demin ona W dedik, buna başka bir isim verelim.
+
+247
+00:31:07,352 --> 00:31:13,612
+U elemanı gibi alırsak, U artı Z ne olacak? 3U artı 3Z olacak değil mi?
+
+248
+00:31:16,892 --> 00:31:23,792
+3, U yerine ne yazacağım? 3U değil de U'nun kendisini yani 3X artı 3Y'yi yazacağım.
+
+249
+00:31:28,915 --> 00:31:36,475
+Bu da nedir? Yine 9x, 9y, artı 3z.
+
+250
+00:31:37,576 --> 00:31:42,735
+Şimdi bakın, x artı y artı z şuna eşit.
+
+251
+00:31:43,475 --> 00:31:46,836
+x artı y artı z o da buna eşit.
+
+252
+00:31:47,415 --> 00:31:48,435
+Bu ikisi nedir?
+
+253
+00:31:49,735 --> 00:31:52,076
+Farklıdır, birbirine eşit değildir.
+
+254
+00:31:53,056 --> 00:31:56,915
+Bunlar birbirine eşit olmadığı için nedir?
+
+255
+00:31:56,995 --> 00:31:58,735
+Birleşme özelliği yoktur.
+
+256
+00:31:58,735 --> 00:32:01,115
+Üçüncü özellik sağlanmadığı için
+
+257
+00:32:01,115 --> 00:32:04,035
+V bir vektör uzayı değildir.
+
+258
+00:32:04,855 --> 00:32:05,395
+Anlaşıldı mı?
+
+259
+00:32:06,655 --> 00:32:06,975
+Sor.
+
+260
+00:32:08,215 --> 00:32:10,816
+Anlamadığın şey varsa sorun canım.
+
+261
+00:32:19,859 --> 00:32:22,240
+Yeşillerdekini mi soruyorsun?
+
+262
+00:32:23,959 --> 00:32:26,179
+Peki, orayı tekrar yapalım o zaman.
+
+263
+00:32:30,548 --> 00:32:32,307
+Şu sildiğim kısım değil mi?
+
+264
+00:32:37,011 --> 00:32:37,932
+Mericir.
+
+265
+00:32:43,059 --> 00:32:46,559
+Yine yeşil yazayım, karışmasın. Açık yeşil yazayım.
+
+266
+00:32:52,596 --> 00:32:56,135
+Şimdi bak burada istersen şöyle de bunu yapabiliriz.
+
+267
+00:33:00,723 --> 00:33:01,803
+Şurayı da sileyim.
+
+268
+00:33:03,803 --> 00:33:06,223
+Önce parantez içindekini yaz istersen.
+
+269
+00:33:13,428 --> 00:33:16,068
+Bu açık yeşilli güzel olmadı ama neyse idare edelim.
+
+270
+00:33:17,088 --> 00:33:19,048
+Şu parantez içindekini önce yaz. Tamam.
+
+271
+00:33:19,048 --> 00:33:21,288
+Bu parantez içindeki nedir?
+
+272
+00:33:21,908 --> 00:33:25,728
+Parantez içinde yazıyorum. 3y artı 3z olacak bu toplam.
+
+273
+00:33:40,307 --> 00:34:03,708
+Şimdi bakın x artı şöyle bir eleman var. Ben şu 3y artı 3z elemanını w ile göstereyim. Böyle yazarsam burası ne olur? x artı w şeklinde olur değil mi?
+
+274
+00:34:03,708 --> 00:34:16,867
+Bu toplamda neye eşittir? 3x artı 3w'ye eşittir. Toplama işlemi böyle tanımlı. Orada da sorun yok değil mi?
+
+275
+00:34:17,487 --> 00:34:19,827
+Şimdi getirip w'yu yerine yazacağım.
+
+276
+00:34:23,380 --> 00:34:25,300
+W nedir kendisi?
+
+277
+00:34:25,740 --> 00:34:26,840
+3Y artı 3Z.
+
+278
+00:34:30,079 --> 00:34:32,160
+3W yerine ne yazacağım?
+
+279
+00:34:32,420 --> 00:34:34,420
+3Y artı 3Z.
+
+280
+00:34:34,960 --> 00:34:36,840
+Şu 3, 3W olması.
+
+281
+00:34:37,000 --> 00:34:38,180
+Onu dışarıda bıraktım.
+
+282
+00:34:38,280 --> 00:34:41,260
+W'nun kendisi 3Y artı 3Z'ye eşit.
+
+283
+00:34:41,539 --> 00:34:42,640
+Böyle seçtik çünkü.
+
+284
+00:34:44,300 --> 00:34:46,760
+Bunu yerine yazdığımızda bak ne çıkıyor?
+
+285
+00:34:46,760 --> 00:34:53,640
+3X artı 9Y artı 9Z çıkıyor.
+
+286
+00:34:53,940 --> 00:34:54,400
+Tamam mı?
+
+287
+00:35:02,804 --> 00:35:04,244
+Sizin sorunuz var mı?
+
+288
+00:35:06,364 --> 00:35:07,523
+Yok hocam, benim.
+
+289
+00:35:09,604 --> 00:35:10,824
+Yok, tamam.
+
+290
+00:35:11,804 --> 00:35:17,764
+Hocam, şey sorabilir miyim? Bu sorudan fark var. Vizeleri okudunuz mu ya da onlarla gördünüz mü sonuçlarını?
+
+291
+00:35:19,124 --> 00:35:25,344
+Sonuçlar henüz bize gelmedi. Gönderecekler, bekliyoruz. Yani dün baktım mail olarak gelmedi.
+
+292
+00:35:27,144 --> 00:35:29,704
+Bugün muhtemelen gönderirler.
+
+293
+00:35:29,704 --> 00:35:32,744
+Sorular kolay mıydı peki?
+
+294
+00:35:34,423 --> 00:35:37,384
+Kolaydı ama hocam, sonuçları görelim. Belki yanlış da yok.
+
+295
+00:35:37,523 --> 00:35:38,423
+Bir şey olmuş olabilir yani.
+
+296
+00:35:38,744 --> 00:35:40,604
+Umarım bir şey olmamıştır.
+
+297
+00:35:41,003 --> 00:35:44,463
+Ben, yani biz soruları hiç görmedik çünkü bilmiyoruz.
+
+298
+00:35:45,184 --> 00:35:45,844
+Sınavdan sonra...
+
+299
+00:35:45,844 --> 00:35:50,164
+Hocam, bir tane soru çözdünüz bu arada derste. Bir tane soru dersteki sorunun aynısıydı.
+
+300
+00:35:50,284 --> 00:35:50,744
+Öyle mi?
+
+301
+00:35:51,043 --> 00:35:52,164
+Ha, o açıkta.
+
+302
+00:35:52,624 --> 00:35:53,164
+İyiydi yani.
+
+303
+00:35:54,124 --> 00:35:54,844
+Hangi soru?
+
+304
+00:35:56,284 --> 00:35:58,384
+Ya görmem lazım. Şimdi nasıl tanınır mı bilmiyorum.
+
+305
+00:35:58,384 --> 00:35:59,584
+Ya böyle bir şey olsun.
+
+306
+00:35:59,584 --> 00:36:00,184
+Olsun, güzel.
+
+307
+00:36:00,184 --> 00:36:00,264
+Güzel.
+
+308
+00:36:00,264 --> 00:36:00,704
+Tamam.
+
+309
+00:36:00,704 --> 00:36:01,744
+Tanımlamam iyiydi.
+
+310
+00:36:02,324 --> 00:36:02,923
+Tamam.
+
+311
+00:36:04,543 --> 00:36:06,144
+İyi olmuş o halde.
+
+312
+00:36:07,284 --> 00:36:08,864
+Umarım sonuçlar da güzel gelir.
+
+313
+00:36:08,864 --> 00:36:09,164
+Bir şey olsun.
+
+314
+00:36:19,635 --> 00:36:44,635
+Bir başka örneğimiz var burada da. Yine V'yi real sayılar kümesi olarak göz önüne alıyoruz. Toplama ve skalerle çarpma işlemi bu sefer de farklı. Skalerle çarpma aynı tanımlanmış ama toplama işlemi farklı tanımlanmış. Üstel fonksiyon olarak tanımlanmış. X artı Y, X üzeri Y olarak aldırmış.
+
+315
+00:36:44,635 --> 00:36:52,135
+Yine vektör uzayı değildir. Neden? Zaten şunu gördüğünüzde değişme özelliğinin olmayacağını hemen bilmeniz gerekecek.
+
+316
+00:36:52,635 --> 00:36:57,096
+X üzeri Y ile Y üzeri X nedir? Birbirine eşit değildir.
+
+317
+00:36:58,795 --> 00:37:09,016
+Dolayısıyla değişme özelliği olmayacağı için burada da yazmışız. X artı Y, X üzeri Y, Y artı X de Y üzeri X olacak.
+
+318
+00:37:09,016 --> 00:37:13,255
+Değişme özelliği bir vektör uzayı değişme özelliği olmadığından yine ne olmayacaktır?
+
+319
+00:37:13,615 --> 00:37:17,175
+V kümesi bir vektör uzayı olmayacaktır.
+
+320
+00:37:29,652 --> 00:37:31,032
+Ay şurayı temizleyeceğim.
+
+321
+00:37:33,072 --> 00:37:35,692
+Burada bir teoremimiz var.
+
+322
+00:37:37,311 --> 00:37:39,831
+V bir real vektör uzayı olsun.
+
+323
+00:37:40,672 --> 00:37:42,572
+Aşağıdaki ifadeler sağlanır.
+
+324
+00:37:44,311 --> 00:37:48,351
+V vektör uzayının her bir elemanı için
+
+325
+00:37:48,351 --> 00:37:53,231
+sıfır skaler çarpımı yani sıfır sayısıyla
+
+326
+00:37:53,231 --> 00:37:56,452
+V'nin elemanlarının çarpımı yine nedir?
+
+327
+00:37:57,652 --> 00:37:58,612
+Sıfır olacaktır.
+
+328
+00:37:58,731 --> 00:37:59,632
+Bu sıfır sayısı.
+
+329
+00:37:59,652 --> 00:38:06,112
+Buradaki u, şey u diyorum özür dilerim nedir?
+
+330
+00:38:06,192 --> 00:38:06,612
+Bu sıfır.
+
+331
+00:38:06,972 --> 00:38:09,771
+Buradaki sıfır real sayı demektir.
+
+332
+00:38:09,851 --> 00:38:10,751
+Real sayı elemanı.
+
+333
+00:38:10,811 --> 00:38:12,472
+Çünkü uyu v'den aldık.
+
+334
+00:38:13,612 --> 00:38:15,952
+Bu vektör, bu real sayı.
+
+335
+00:38:16,331 --> 00:38:20,351
+Sıfırla, sıfır sayısıyla vektörün çarpımı ne oluyor?
+
+336
+00:38:20,771 --> 00:38:21,331
+Sıfır oluyor.
+
+337
+00:38:22,552 --> 00:38:27,831
+Yine her eleman, her c eleman re için, her real sayı için
+
+338
+00:38:27,831 --> 00:38:33,512
+sıfır vektörle real sayının çarpımı bu da yine sıfır oluyor.
+
+339
+00:38:33,512 --> 00:38:38,092
+Ama bu, bu vektördür, bu skalerdir.
+
+340
+00:38:38,092 --> 00:38:43,751
+keşke üzerine şöyle buna vektör işareti koyarsak.
+
+341
+00:38:43,751 --> 00:38:49,751
+bu vektör, bu vektör sıfır, bu da skaler sayı sıfır.
+
+342
+00:38:49,751 --> 00:38:52,552
+bir saniye, aradaki fark ne?
+
+343
+00:38:52,552 --> 00:38:56,771
+ikisi de sıfır.
+
+344
+00:38:56,771 --> 00:38:57,092
+Yok.
+
+345
+00:38:58,092 --> 00:39:03,652
+Skalerle çarptığında, ikisi de sıfır vektörü oluyor.
+
+346
+00:39:04,972 --> 00:39:11,791
+Vektörü bir sayı ile çarparsak, vektör olacağı için ikisi de sıfır vektörü arkadaşlar.
+
+347
+00:39:12,271 --> 00:39:15,711
+Şuradaki sıfır skaler ama sonuç sıfır vektörü aslında.
+
+348
+00:39:15,711 --> 00:39:23,391
+eğer c çarpı u sıfıra eşit ise bu ne demektir?
+
+349
+00:39:23,391 --> 00:39:27,672
+Ya c sıfıra eşittir ya da u sıfıra eşittir.
+
+350
+00:39:27,751 --> 00:39:32,592
+Çarpımdaki ifadelerden birinin sıfır olmasını bekleriz.
+
+351
+00:39:34,231 --> 00:39:40,291
+Her u eleman v için eksi bir çarpı uyu da eksi u olarak yazarız.
+
+352
+00:39:40,291 --> 00:39:48,532
+Yani eksi bir sayısı ile herhangi bir vektörü çarptığımızda,
+
+353
+00:39:49,132 --> 00:39:51,572
+sonuç eksi vektör oluyor.
+
+354
+00:39:52,271 --> 00:39:53,472
+Şimdi bunu da, bu teorem,
+
+355
+00:39:54,291 --> 00:39:58,032
+belki bunlar bir yer değil, karşımıza çıkıyor uygulama içerisinde,
+
+356
+00:39:58,112 --> 00:40:00,731
+ama zaten normal olarak, otomatik olarak yapıyoruz.
+
+357
+00:40:01,152 --> 00:40:04,731
+Sıfır sayısı ile çarptığımızda sonucu hep sıfır yazıyoruz.
+
+358
+00:40:04,731 --> 00:40:10,132
+ya da çarpımlar sıfır ise ya vektör sıfırdır ya da skaler sayı sıfırdır diyoruz.
+
+359
+00:40:11,452 --> 00:40:13,552
+Şimdi burada alt uzaylar önemli.
+
+360
+00:40:14,152 --> 00:40:16,731
+Ancak alt uzaylara gelmeden önce biz...
+
+361
+00:40:16,731 --> 00:40:18,731
+Biz...
+
+362
+00:40:24,211 --> 00:40:26,211
+Şöyle bir ekranı temizleyeyim.
+
+363
+00:40:30,211 --> 00:40:32,211
+İki tane bir...
+
+364
+00:40:36,659 --> 00:40:40,759
+Soruyu göndermişsin. Tamam, ben birazdan bakarım buna. Teşekkür ederim.
+
+365
+00:40:42,799 --> 00:40:45,659
+Alt uzay dediğimiz kavram da...
+
+366
+00:40:49,012 --> 00:41:15,112
+Yine şöyle, V eğer bir vektör uzaysa, V'nin boş kümeden farklı olarak aldığımız bir W alt kümesi, eğer şu V'deki işlemlere göre, 10 tane özellik demiştik ya, V'deki işleme göre yine vektör uzayı koşullarını sağlıyorsa, yani o 10 tane özelliği sağlıyorsa, alt uzaydır diyoruz.
+
+367
+00:41:15,112 --> 00:41:26,592
+Ama tabii ki alt uzay olduğunu göstermek için o 10 tane koşulu göstermek çok zahmetli. Böyle bir teorem geliştirilmiş. Bu teoreme de aradan sonra bakalım olur mu?
+
+368
+00:41:29,711 --> 00:41:34,692
+Şimdi bir ara verelim, 12'de başlarız. Ben de şu soruya bakayım.
+
+369
+00:42:31,059 --> 00:42:34,920
+Bu doğru, bu doğru, şu doğru.
+
+370
+00:42:43,668 --> 00:42:45,588
+Bunun doğru olduğunu bilmiyoruz.
+
+371
+00:42:46,088 --> 00:42:50,907
+A'nın tersinin transpozesi ile transpozesinin tersi aynı mıdır?
+
+372
+00:43:42,291 --> 00:43:45,751
+Karşık C olması lazım bunun.
+
+373
+00:57:17,300 --> 00:57:19,220
+Merhaba arkadaşlar, saat 12 oldu.
+
+374
+00:57:20,360 --> 00:57:21,539
+Ne dersimize başlayalım.
+
+375
+00:57:31,284 --> 00:57:46,184
+Alt uzaylara geldik dedik ki W alt kümesinin V'nin alt vektör uzayı olması için yine vektör uzayı olma özelliklerini sağlaması gerekiyor.
+
+376
+00:57:46,264 --> 00:57:48,644
+Yani 10 tane özelliği sağlaması gerekiyordu.
+
+377
+00:57:49,044 --> 00:57:52,324
+Tabii ki bu 10 tane özelliğe bakmak sıkıntılı.
+
+378
+00:57:53,844 --> 00:57:56,224
+O yüzden şu teoremi alacağız.
+
+379
+00:57:56,224 --> 00:58:04,224
+Alt vektör uzayı olduğunu göstermek için bu teoremin koşullarının sağlanıp sağlanmadığına bakacağız bundan sonra.
+
+380
+00:58:04,224 --> 00:58:16,324
+Bu teorem diyor ki V bir vektör uzayı ve W'nin boş olmayan bir alt kümesi olsun.
+
+381
+00:58:16,324 --> 00:58:26,764
+W'nin bir alt uzayı olması için gerek ve yeter koşul aşağıdaki ifadelerin sağlanmasıdır.
+
+382
+00:58:26,764 --> 00:58:31,104
+Yani W, V'nin bir alt kümesi boş kümeden farklı.
+
+383
+00:58:35,324 --> 00:58:44,483
+W'nin bir alt uzayı olması için şu iki özelliği sağlaması gerekiyor.
+
+384
+00:58:44,784 --> 00:58:48,244
+Toplama işlemine göre W kümesi kapalı olacak.
+
+385
+00:58:48,584 --> 00:58:51,124
+Skalerle çarpma işlemine göre kapalı olacak.
+
+386
+00:58:51,124 --> 00:58:56,384
+Bu iki işleme göre eğer kapalıysa o zaman bu bir alt uzaydır diyoruz.
+
+387
+00:58:56,503 --> 00:58:56,903
+Tamam mı?
+
+388
+00:58:57,044 --> 00:59:02,164
+Yani toplama işlemini koruyacak.
+
+389
+00:59:02,483 --> 00:59:06,943
+W'dan aldığımız herhangi iki elemanın toplamı her eleman için geçerli bu.
+
+390
+00:59:07,483 --> 00:59:08,324
+Yine ne olmalı?
+
+391
+00:59:08,664 --> 00:59:10,324
+Toplam W'nin elemanı olmalı.
+
+392
+00:59:10,324 --> 00:59:21,584
+Bunun yine W kümesinin her elemanının bir real sayıyla çarpımı yine W kümesine ait olmalı.
+
+393
+00:59:21,844 --> 00:59:25,144
+Bu iki özellik varsa alt vektör uzayıdır diyoruz.
+
+394
+00:59:25,364 --> 00:59:31,983
+Ve sınavlarda alt vektör uzayı olması ile ilgili sorular mutlaka karşınıza gelecek.
+
+395
+00:59:31,983 --> 00:59:37,344
+Bakmanız gereken de bu iki özelliktir.
+
+396
+00:59:37,664 --> 00:59:41,684
+Çünkü vektör uzayı olduğunu sorunca daha çok özelliğe bakmak gerekiyor.
+
+397
+00:59:42,423 --> 00:59:47,043
+Alt vektör uzayı sadece bu iki özelliği kapsıyor.
+
+398
+00:59:48,463 --> 00:59:50,244
+Aşağıda örneğimiz var.
+
+399
+00:59:50,463 --> 00:59:51,624
+Hemen bu örneğe bakalım.
+
+400
+00:59:55,443 --> 01:00:00,884
+Ve derecesi 3 olan tüm polinomların kümesi olsun.
+
+401
+01:00:00,884 --> 01:00:03,963
+Ben burada bu sorudan önce şunu yazayım.
+
+402
+01:00:04,064 --> 01:00:04,704
+Bunu bilin.
+
+403
+01:00:06,564 --> 01:00:09,884
+Pn ile derecesi...
+
+404
+01:00:14,003 --> 01:00:17,324
+N olan veya N'den küçük
+
+405
+01:00:24,436 --> 01:00:28,016
+Tüm polinomların kümesini gösteriyoruz. Tamam mı?
+
+406
+01:00:38,099 --> 01:00:44,579
+Pn dediğimiz derecesi n veya n'den küçük olan tüm polinomların kümesi demektir.
+
+407
+01:00:44,579 --> 01:00:46,059
+Şimdi burada
+
+408
+01:00:49,844 --> 01:00:56,083
+V kümesi, derecesi 3 olan tüm polinomların kümesi olsun demiş.
+
+409
+01:01:00,820 --> 01:01:03,100
+Şöyle tanımlanmış V kümesi.
+
+410
+01:01:03,980 --> 01:01:06,860
+Üçüncü derece polinomlar olmuş.
+
+411
+01:01:23,827 --> 01:01:41,487
+A kesinlikle farklı sıfır. Çünkü A sıfır olursa bunun derecesi düşer. Üçüncü derece olması için B, C, D bunlar sıfır olabilirler. Ama A kesinlikle sıfırdan farklı ve bunlar real sayı.
+
+412
+01:01:46,963 --> 01:02:01,244
+V diyelim. Bu kümeyi V demiş, V kümesi olarak almış. V kümesi P'nin bir alt kümesidir diyor. P'nin bir P'ün mü?
+
+413
+01:02:17,684 --> 01:02:20,744
+Hocam, P3 herhalde, çünkü derecesi 3 diyorsunuz ya.
+
+414
+01:02:21,004 --> 01:02:26,024
+Evet, 3 demiş, P3 demek lazım. Burada soruyu yanlış yazmışım herhalde.
+
+415
+01:02:27,304 --> 01:02:29,684
+Şimdi onu düşünüyorum, Pn alırsam.
+
+416
+01:02:34,900 --> 01:02:41,800
+E'nin alt uzayı değildir. E3'ün alt uzayı. Bir saniye.
+
+417
+01:02:51,251 --> 01:02:53,572
+P3 olmalı bu ya, N10 olmalı.
+
+418
+01:02:53,931 --> 01:02:54,391
+P3.
+
+419
+01:02:59,731 --> 01:03:08,112
+P3 dediğimiz derecesi 3 veya 3'den daha küçük olan tüm polinomların kümesi.
+
+420
+01:03:08,512 --> 01:03:18,871
+Yani P3'de hem 3. derece polinomlar var, 2. derece polinomlar var, 1. derece polinomlar var, bir de sabit sayılar var.
+
+421
+01:03:19,911 --> 01:03:24,831
+Bunların hepsi olabilir. Bunlar P3 kümesini oluşturuyor.
+
+422
+01:03:24,831 --> 01:03:31,451
+Bunun bir alt kümesi olarak V'yi almışız. Sadece 3. derece polinomları içeriyor.
+
+423
+01:03:31,672 --> 01:03:35,431
+V alt uzay değildir. Neden değildir?
+
+424
+01:03:38,612 --> 01:03:42,871
+V'de herhangi 2 tane eleman alalım.
+
+425
+01:03:42,871 --> 01:03:50,371
+Yani alt uzay olması için toplama işlemine göre kapalı olması gerekiyor.
+
+426
+01:03:50,471 --> 01:03:54,492
+Ve de skalerle çarpma işlemine göre kapalı olması gerekiyor.
+
+427
+01:04:06,771 --> 01:04:14,011
+Herhangi üçüncü dereceden bir polinom alırsak, şöyle bunu da A'lı yazabilirim.
+
+428
+01:04:14,072 --> 01:04:20,971
+A x küp, b x kare, c x artı d olarak yazalım.
+
+429
+01:04:22,092 --> 01:04:24,112
+A farklı sıfır diyelim.
+
+430
+01:04:24,711 --> 01:04:28,351
+A b c de real sayı diyelim.
+
+431
+01:04:29,971 --> 01:04:33,491
+Bir tane de v alırsam,
+
+432
+01:04:33,491 --> 01:04:38,451
+v elemanı alırsak,
+
+433
+01:04:38,731 --> 01:04:41,592
+tüm üçüncü derece polinomları içerdiği için,
+
+434
+01:04:42,132 --> 01:04:46,271
+v'yi eksi A x küp olarak yazabilirim.
+
+435
+01:04:46,471 --> 01:04:46,692
+Değil mi?
+
+436
+01:04:47,192 --> 01:04:50,072
+Diğer kısım farklı da olsa olur.
+
+437
+01:04:51,132 --> 01:04:53,652
+a b c de e f g kullanalım.
+
+438
+01:05:05,331 --> 01:05:22,791
+Bu da üçüncü derece, bu da üçüncü derece polinom. Bu ikisi de nedir? V'nin elemanıdır. Ancak bunların toplamları U artı V ne olacaktır?
+
+439
+01:05:25,491 --> 01:05:30,632
+Şunlar gider toplarsak, ikinci derece bir polinom olarak kalacak.
+
+440
+01:05:43,476 --> 01:05:53,756
+Şuna baktığımızda, bu ikinci derece bir polinom, üçüncü derece polinomlardan oluşuyordu V. O yüzden bu nedir? Eleman değildir.
+
+441
+01:05:55,316 --> 01:06:07,276
+V. V'nin elemanı değildir. V'nin elemanı olmadığı için, yani toplama işlemine göre kapalılık özelliğini korumadığı için, P3'ün bir alt uzayı değildir.
+
+442
+01:06:14,804 --> 01:06:19,584
+Hocam, A'nın ikincisinde eksi A dedik ya, kat sayı olarak.
+
+443
+01:06:19,824 --> 01:06:20,423
+Hı, söyle.
+
+444
+01:06:20,844 --> 01:06:22,744
+Mesela altın farklı bir yer olamaz mıydı?
+
+445
+01:06:24,324 --> 01:06:25,104
+Yani yine altın sayı.
+
+446
+01:06:25,124 --> 01:06:25,704
+Olur.
+
+447
+01:06:26,304 --> 01:06:28,804
+Şimdi, her eleman için...
+
+448
+01:06:34,324 --> 01:06:35,664
+Her eleman için geçerlidir.
+
+449
+01:06:35,983 --> 01:06:36,423
+Anladım.
+
+450
+01:06:36,543 --> 01:06:38,864
+Her eleman için şu toplam.
+
+451
+01:06:41,503 --> 01:06:43,384
+V'ye ait olmalı.
+
+452
+01:06:44,244 --> 01:06:45,423
+Özel olarak ben.
+
+453
+01:06:45,724 --> 01:06:49,423
+Çünkü burada bir sürü tüm üçüncü dereceden polinomlar var.
+
+454
+01:06:49,584 --> 01:06:53,943
+Sonsuz tane polinom var.
+
+455
+01:06:54,204 --> 01:06:54,503
+Değil mi?
+
+456
+01:06:55,244 --> 01:06:56,483
+Onların içinden ben.
+
+457
+01:06:56,483 --> 01:07:00,124
+Bak burada da mesela 3x küp, eksi 3x küp seçmişiz.
+
+458
+01:07:00,204 --> 01:07:01,864
+Hatta şunu bile eksili almışız.
+
+459
+01:07:02,563 --> 01:07:03,724
+Mutlaka bu da vardır.
+
+460
+01:07:03,724 --> 01:07:07,724
+Yani böyle bir polinom varsa böyle bir polinom da vardır.
+
+461
+01:07:07,903 --> 01:07:10,584
+Çünkü tüm üçüncü derece polinomları içeriyor.
+
+462
+01:07:11,764 --> 01:07:21,543
+Mutlaka a x küp olan polinomlar varsa, eksi a x küp olan polinomlar da olacaktır bunların içinde.
+
+463
+01:07:21,543 --> 01:07:25,664
+Çünkü eksi a'lar da nedir?
+
+464
+01:07:25,884 --> 01:07:27,264
+Onlar da real sayıdır.
+
+465
+01:07:27,264 --> 01:07:30,144
+Ve da.
+
+466
+01:07:34,003 --> 01:07:57,243
+Sadece, yani şu devamı önemli değil. Sadece şu, x küplü ifadenin gitmesi bizim için yeterli. Böyle bir tane bile eleman varsa, ne olacaktır? Bu artık alt uzay değildir diyeceğiz. Çünkü bu özelliğin her eleman için sağlanması gerekiyor. Anladınız mı?
+
+467
+01:07:57,243 --> 01:08:05,423
+Bir de size şöyle bir tiyo vereyim. Mesela bir özelliğin sağlandığını göstermek için ispat gerekir.
+
+468
+01:08:10,260 --> 01:08:12,160
+her eleman için sağlamalıdır.
+
+469
+01:08:13,000 --> 01:08:15,120
+O yüzden keyfi bir eleman seçeriz.
+
+470
+01:08:15,540 --> 01:08:18,940
+Onun için o keyfi eleman için seçeriz derken
+
+471
+01:08:18,940 --> 01:08:21,380
+seçme işlemi bile şeydir.
+
+472
+01:08:21,480 --> 01:08:23,500
+Yani özel olarak seçilmez.
+
+473
+01:08:24,180 --> 01:08:25,760
+Keyfi bir eleman alınır.
+
+474
+01:08:25,880 --> 01:08:28,159
+Herhangi rastgele bir eleman alınır ama
+
+475
+01:08:28,159 --> 01:08:30,280
+bu özel bir eleman seçilmez.
+
+476
+01:08:31,500 --> 01:08:33,300
+Yani şuradaki gibi 3x küp,
+
+477
+01:08:33,300 --> 01:08:35,320
+eksi 3x küp gibi yazılmaz.
+
+478
+01:08:36,000 --> 01:08:37,480
+Genel olarak yazılır.
+
+479
+01:08:37,760 --> 01:08:39,960
+Herhangi bir u vektörü eşit.
+
+480
+01:08:39,960 --> 01:08:41,460
+İşte ax küp dedik.
+
+481
+01:08:41,760 --> 01:08:42,020
+Değil mi?
+
+482
+01:08:42,460 --> 01:08:44,619
+Bunu en genel haliyle yazdım.
+
+483
+01:08:46,180 --> 01:08:50,119
+V vektörü de bunun eksi ax küplü olanını yazdım.
+
+484
+01:08:50,260 --> 01:08:50,739
+Tamam mı?
+
+485
+01:08:54,340 --> 01:08:57,420
+İspat yapmak için her eleman için olduğunu
+
+486
+01:08:57,420 --> 01:08:59,860
+sağlandığını göstermek gerektiği için
+
+487
+01:08:59,860 --> 01:09:01,820
+keyfi bir eleman alınarak
+
+488
+01:09:01,820 --> 01:09:04,420
+o özelliğin sağlayıp sağlamadığına bakılır.
+
+489
+01:09:04,920 --> 01:09:07,619
+Ama söylenen özellik
+
+490
+01:09:07,619 --> 01:09:12,280
+bir örnek için ters bir tane örnek verebiliyorsanız
+
+491
+01:09:12,280 --> 01:09:15,079
+eğer o teoremi çürütürsünüz.
+
+492
+01:09:16,260 --> 01:09:19,880
+Yani bir tane aksi örnek gösterdiğinizde
+
+493
+01:09:19,880 --> 01:09:22,920
+o özellik sağlanmaz dersiniz.
+
+494
+01:09:22,920 --> 01:09:29,420
+İşte burada bir tane aksi örnek.
+
+495
+01:09:29,880 --> 01:09:32,340
+Normalde örnek vererek ispat yapılmaz.
+
+496
+01:09:32,640 --> 01:09:33,079
+Tamam mı?
+
+497
+01:09:33,360 --> 01:09:35,900
+İşte sonsuz tane örnek var çünkü burada.
+
+498
+01:09:36,060 --> 01:09:38,260
+Sonsuz tane örneği seçemeyeceğinize göre
+
+499
+01:09:38,260 --> 01:09:40,640
+örnek vererek ispat yapamazsınız.
+
+500
+01:09:40,800 --> 01:09:42,199
+Sağlanlığını gösteremezsiniz.
+
+501
+01:09:42,320 --> 01:09:45,199
+Ama sağlanmadığını görmek için
+
+502
+01:09:45,199 --> 01:09:47,159
+ters bir örnek vermek,
+
+503
+01:09:47,260 --> 01:09:49,940
+aksi bir örnek göstermek yeterli olacaktır.
+
+504
+01:09:49,940 --> 01:09:53,920
+Bunun alt uzay olmadığını göstermek için
+
+505
+01:09:53,920 --> 01:09:56,039
+işte şöyle bir örnek almanız
+
+506
+01:09:56,039 --> 01:09:59,360
+bunun alt uzay olmadığını göstermek için yeterli.
+
+507
+01:10:01,940 --> 01:10:05,100
+Çünkü bu koşulu sağlamayan
+
+508
+01:10:05,100 --> 01:10:08,100
+en az bir tane örnek bulmuşsunuz demektir.
+
+509
+01:10:08,600 --> 01:10:11,739
+Bu koşulu sağlamayan en az bir tane örneğiniz varsa
+
+510
+01:10:11,739 --> 01:10:14,539
+o zaman bu alt uzay değildir dersiniz.
+
+511
+01:10:14,760 --> 01:10:15,260
+Tamam mı?
+
+512
+01:10:27,604 --> 01:10:32,043
+Bunu yaptık zaten. Şöyle aşağı doğru bakalım neler var.
+
+513
+01:10:33,923 --> 01:10:38,543
+R2'nin şeklinde tanımlanan alt kümesinin alt uzay olup olmadığını gösteriniz.
+
+514
+01:10:38,543 --> 01:10:42,884
+VW'nun herhangi iki vekili, ha bu çözümü galiba.
+
+515
+01:10:47,252 --> 01:10:48,312
+Şu örneğe bakalım.
+
+516
+01:10:48,912 --> 01:10:52,352
+R2'nin şöyle bir alt kümesi tanımlanmış.
+
+517
+01:10:52,892 --> 01:10:55,832
+X artı X artı bir X'ler rel sayı.
+
+518
+01:10:55,832 --> 01:11:00,832
+Bu tanımlanan alt kümenin alt uzay olup olmadığını göstereceğiz.
+
+519
+01:11:01,772 --> 01:11:07,812
+Alt uzay olup olmadığını göstermek için iki tane özelliğin sağlandığını göstermemiz lazım.
+
+520
+01:11:07,812 --> 01:11:21,592
+Bunun için ilk işte U ve V diyelim eleman W iken bunların toplamları.
+
+521
+01:11:21,892 --> 01:11:24,472
+Şimdi artık şey yapabiliriz arkadaşlar.
+
+522
+01:11:24,712 --> 01:11:30,072
+Ben burada size söylemeyi unuttum ama hala burada yuvarlak içine alıyoruz.
+
+523
+01:11:30,812 --> 01:11:32,152
+Neyse tamam alalım.
+
+524
+01:11:32,152 --> 01:11:40,432
+U artı V'nin W'nun elemanı olduğunu göstermeliyiz.
+
+525
+01:11:40,432 --> 01:11:44,832
+İkincisi de skalerli çarpımın bunun elemanı olduğunu göstermemiz lazım.
+
+526
+01:11:46,472 --> 01:11:53,472
+Bunun için W hükümesinden keyfi iki tane eleman seçeceksiniz.
+
+527
+01:11:53,912 --> 01:11:58,432
+Seçeceksiniz diyorum ama bu seçimi şey olarak yazmayacaksınız.
+
+528
+01:11:58,992 --> 01:12:00,472
+Seçeceksiniz demeyeyim o zaman.
+
+529
+01:12:00,472 --> 01:12:03,652
+Keyfi iki tane eleman alacaksınız.
+
+530
+01:12:04,292 --> 01:12:07,731
+Seçeceksiniz deyince sanki siz özel seçiyormuşsunuz gibi olacak.
+
+531
+01:12:07,892 --> 01:12:09,292
+Özel seçmeyeceksiniz.
+
+532
+01:12:12,292 --> 01:12:14,652
+Genel iki tane elemanını alacaksınız.
+
+533
+01:12:14,812 --> 01:12:15,712
+Nasıl alacaksınız?
+
+534
+01:12:16,212 --> 01:12:22,472
+Şurada W hükümesi nasıl tanımlanmışsa aynı şekilde yazacak isimlerini değiştireceksiniz.
+
+535
+01:12:22,472 --> 01:12:28,472
+Buna u elemanı dediniz.
+
+536
+01:12:28,472 --> 01:12:29,792
+U elemanı
+
+537
+01:12:33,492 --> 01:12:34,112
+See you soon.
+
+538
+01:12:46,644 --> 01:12:58,824
+Bir tane de V kümesi alalım. Bunu da B, B artı 1 olarak yazalım. Yani bağlantım düzensizmiş. Sesim gidiyor galiba arada.
+
+539
+01:13:01,224 --> 01:13:07,083
+Şu aynı formatta yazacaksınız. Sadece harfleri değiştirerek yazacaksınız. Anladınız mı?
+
+540
+01:13:07,083 --> 01:13:12,123
+B'de nedir? R'nin elemanıdır. Bunların toplamına bakalım şimdi.
+
+541
+01:13:16,372 --> 01:13:41,412
+A artı B. Burası da ne olacak? A artı B artı 2 olacak. Şimdi elde ettiğiniz şu eleman bu formatı uyuyor mu? Uymuyor. Bu üstteki eleman neyse, alttaki bunun bir fazlası olacak. Oysa burada ne var? İki fazlası var. Yani A artı B artı 2 çıktı burada. Oysa bunun ne olması gerekiyordu?
+
+542
+01:13:41,412 --> 01:13:57,012
+A artı B artı 1 olması gerekiyor ki W'nun elemanı olsun. Bundan farklı olduğu için, daha birinci özellik zaten sağlanmadığı için, bu nedir? Bir alt vektör uzayı değildir.
+
+543
+01:14:24,275 --> 01:14:26,975
+Şarj takılalım, şarj bitecek.
+
+544
+01:14:49,876 --> 01:15:12,636
+Örnekte de diyor ki, 2x2 mertebesinden matrislerin vektör uzayı M2x2 olsun. Bu da genel bir gösterimdir. M, NxN demek, NxN boyutlu real matris demektir.
+
+545
+01:15:12,636 --> 01:15:20,936
+Tamam mı? Bunların uzayını M2x2 ile göstermişiz.
+
+546
+01:15:24,659 --> 01:15:27,739
+2'ye 2'lik tüm matrislerin kümesi bu.
+
+547
+01:15:28,300 --> 01:15:33,760
+İzli 0 olan tüm 2 çarpı 2 mertebeli matrislerin kümesi de W olsun.
+
+548
+01:15:35,880 --> 01:15:40,920
+İzli 0 demek iz ne demekti? Şu köşegen elemanlarının toplamı demek.
+
+549
+01:15:41,099 --> 01:15:46,319
+İzli 0 ise x artı t eşit 0 koşulunu sağlıyor demektir bu.
+
+550
+01:15:48,059 --> 01:15:52,159
+W'nun B2'nin alt uzayı olduğunu gösterelim.
+
+551
+01:15:52,159 --> 01:15:52,960
+Gösterelim.
+
+552
+01:15:54,659 --> 01:15:56,059
+Şurayı temizleyelim.
+
+553
+01:15:59,539 --> 01:16:01,739
+W'nun iki tane elemanını alalım.
+
+554
+01:16:03,720 --> 01:16:08,960
+U elemanı, burada W1, W2 demişiz, öyle de alabiliriz. Oradaki gibi alalım.
+
+555
+01:16:12,979 --> 01:16:21,879
+W1 elemanını nasıl alacağım? O zaman x1, y1 diyelim. Buraya da z1, t1 deriz.
+
+556
+01:16:27,188 --> 01:16:38,488
+Bunu W'dan aldığım için hangi özelliği sağlayacak? X1 artı T1 eşit 0 özelliği sağlanacak.
+
+557
+01:16:39,768 --> 01:16:49,908
+W2 kümesi de şu olsun. Buna da X2, Y2, Z2 ve T2 ile gösterelim bunu.
+
+558
+01:16:49,908 --> 01:16:56,627
+Bu da yine W'dan aldığım için bunun özelliğini sağlayacak.
+
+559
+01:16:56,768 --> 01:17:02,948
+Yani şu izi 0 olacak. X2 artı T2 eşit 0'dır.
+
+560
+01:17:03,368 --> 01:17:04,408
+Bunlar sağlanıyor.
+
+561
+01:17:05,188 --> 01:17:11,288
+Bakın iki tane eleman aldık W'dan. Bunların toplamlarına bakacağım.
+
+562
+01:17:17,460 --> 01:17:20,980
+Matris toplamı karşılıklı elemanların toplamını eşitti.
+
+563
+01:17:21,140 --> 01:17:22,520
+Dolayısıyla burası ne oldu?
+
+564
+01:17:22,619 --> 01:17:23,859
+X1 artı X2.
+
+565
+01:17:25,239 --> 01:17:26,939
+Y1 artı Y2.
+
+566
+01:17:28,399 --> 01:17:30,359
+Z1 artı Z2.
+
+567
+01:17:31,840 --> 01:17:34,520
+Burası da T1 artı T2 oldu.
+
+568
+01:17:35,520 --> 01:17:38,079
+Bu şimdi W'nun elemanı mıdır ona bakacağız.
+
+569
+01:17:38,239 --> 01:17:41,980
+W'nun elemanı olması için sağlaması gereken koşu nedir?
+
+570
+01:17:42,779 --> 01:17:44,220
+İzinin sıfır olmasıdır.
+
+571
+01:17:44,220 --> 01:17:53,859
+Yani X1 artı X2 T1 artı T2 elemanlarının toplamları sıfıra eşit midir ona bakacağız.
+
+572
+01:17:56,680 --> 01:18:03,060
+Bunlar real sayı olduğu için şu parantezleri kaldırıp bunları şöyle düzenleyebilirim.
+
+573
+01:18:04,300 --> 01:18:08,699
+X1 artı T1 çünkü bunlar hepsi real girişli.
+
+574
+01:18:08,699 --> 01:18:14,399
+artı X2 artı T2 olarak bunu böyle yeniden yazabilirim.
+
+575
+01:18:14,619 --> 01:18:15,899
+Yerlerini değiştirdim.
+
+576
+01:18:17,439 --> 01:18:19,119
+X1 artı T1
+
+577
+01:18:19,119 --> 01:18:21,480
+Nedir?
+
+578
+01:18:21,600 --> 01:18:22,659
+Toplamı sıfırdır.
+
+579
+01:18:23,800 --> 01:18:24,460
+Şurada var.
+
+580
+01:18:25,399 --> 01:18:26,659
+Bunun toplamı sıfır.
+
+581
+01:18:26,659 --> 01:18:29,579
+Şunun da toplamı sıfır.
+
+582
+01:18:29,739 --> 01:18:30,859
+Buradan dolayı.
+
+583
+01:18:32,819 --> 01:18:34,039
+İkisinin toplamı ne oldu?
+
+584
+01:18:34,159 --> 01:18:35,000
+Sıfıra eşit oldu.
+
+585
+01:18:35,119 --> 01:18:38,319
+O halde şu matrisin izi de neymiş?
+
+586
+01:18:38,520 --> 01:18:39,480
+Sıfıra eşitmiş.
+
+587
+01:18:39,600 --> 01:18:44,100
+Bu iz sıfıra eşit ise o halde şu toplam nedir deriz.
+
+588
+01:18:44,100 --> 01:18:51,960
+V1, W1 artı W2 toplamı W'nun elemanıdır.
+
+589
+01:18:52,380 --> 01:18:53,980
+Birinci özellik sağlanır.
+
+590
+01:18:56,020 --> 01:18:58,180
+İkinci özelliğe bakalım.
+
+591
+01:18:59,779 --> 01:19:01,739
+Ben şöyle sileyim.
+
+592
+01:19:01,840 --> 01:19:08,039
+İkinci özelliğin sağlandığını görmek için şu W elemanını bırakalım.
+
+593
+01:19:10,319 --> 01:19:13,899
+Yine şu W kümesinden bir eleman aldık.
+
+594
+01:19:14,100 --> 01:19:16,560
+W1 ile gösterdik bu elemanı.
+
+595
+01:19:17,199 --> 01:19:27,880
+Bununla herhangi bir skaler sayının, R'nin çarpımının yine şu W kümesine ait olduğunu göstermem gerekiyor.
+
+596
+01:19:29,260 --> 01:19:31,579
+Bunu alalım, aldık.
+
+597
+01:19:32,439 --> 01:19:34,380
+İkinci özellik yapıyoruz.
+
+598
+01:19:34,819 --> 01:19:38,520
+Herhangi bir A diyelim.
+
+599
+01:19:39,100 --> 01:19:41,659
+A eleman R için.
+
+600
+01:19:44,100 --> 01:19:47,760
+A çarpı W1.
+
+601
+01:19:48,560 --> 01:19:49,940
+Ne olacaktır?
+
+602
+01:19:50,020 --> 01:19:52,460
+Her bir elemanın A ile çarpımı olacak.
+
+603
+01:19:52,460 --> 01:19:56,920
+İkinci özellik yapıyoruz.
+
+604
+01:20:05,011 --> 01:20:23,112
+Peki, çarptık. Bu W kümesine ait midir? Buna bakmak için neye bakacağız? Şu koşul sağlanıyor mu? Ona bakacağız. Yani izi sıfır mı? Bu da nedir? AX1 artı AT1'dir. Bunun köşegen elemanları bunlar.
+
+605
+01:20:25,711 --> 01:20:30,192
+Şunlar rel sayı olduğu için bunu A parantezinde yazamaz mıyım? Yazarım.
+
+606
+01:20:33,684 --> 01:20:41,844
+x1 artı t1 de şu w1, w'nun elemanı olduğu için bu nedir? Bu toplam sıfıra eşittir.
+
+607
+01:20:43,844 --> 01:20:59,864
+O halde a çarpı sıfır eşit sıfır olacağı için, yani izi sıfır olduğu için a çarpı w1 nedir? Eleman w kümesinin elemanıdır.
+
+608
+01:20:59,864 --> 01:21:02,324
+1 ve 2 sağlandığı için
+
+609
+01:21:07,380 --> 01:21:13,720
+W neymiş? M2x2'nin alt uzayıymış.
+
+610
+01:21:18,260 --> 01:21:19,440
+Var mı solunuz?
+
+611
+01:21:38,323 --> 01:21:54,803
+Bundan sonra yapacağımız işlemlerde kolaylık olması bakımından vektörler arasındaki toplam ve skalerle çarpım işlemleri yerine sırasıyla rel sayılardaki artı ve çarpı işlemlerini yazacağız. Yani şu yuvarlakları kaldıracağız.
+
+612
+01:22:00,724 --> 01:22:03,364
+devam ediyoruz. Şunu kaydıralım.
+
+613
+01:22:08,948 --> 01:22:14,948
+Demin ki teoremde alt uzay olması için iki koşul sağlanıyor dedik ya.
+
+614
+01:22:15,468 --> 01:22:18,427
+Bu teoremde koşulu teke indiriyor.
+
+615
+01:22:19,228 --> 01:22:21,288
+Yani iki koşula aynı anda bakıyor.
+
+616
+01:22:22,228 --> 01:22:28,927
+Eğer V bir real vektör uzayı W, V'nin boş olmayan alt kümesi olsun.
+
+617
+01:22:28,927 --> 01:22:47,568
+V'nin bir alt uzay olması için gerek ve yeter koşul her U ve V eleman W ve her CD eleman R için C çarpı U artı D çarpı V'nin W'nun elemanı olmasıdır.
+
+618
+01:22:47,568 --> 01:22:55,468
+Şu U artı V eleman W oluyordu.
+
+619
+01:22:55,568 --> 01:23:01,108
+Bir de A çarpı U eleman W oluyordu ya.
+
+620
+01:23:02,008 --> 01:23:04,628
+Bu iki özelliği birleştiriyor.
+
+621
+01:23:04,748 --> 01:23:05,968
+Nasıl birleştiriyor?
+
+622
+01:23:07,688 --> 01:23:10,488
+AB değil de burada CD demişiz.
+
+623
+01:23:10,548 --> 01:23:11,528
+CD diyelim.
+
+624
+01:23:11,528 --> 01:23:18,887
+C çarpı U artı D çarpı V.
+
+625
+01:23:19,307 --> 01:23:27,868
+Bu eğer W yükmesine ait ise şu iki özellik yerine bunların ikisini bir kalemle yazıyor.
+
+626
+01:23:27,868 --> 01:23:32,868
+Bu özellik sağlanıyorsa alt uzaydır diyoruz.
+
+627
+01:23:43,091 --> 01:23:43,891
+A'ınize bakalım.
+
+628
+01:23:58,868 --> 01:24:03,908
+İkinci mertebeden tüm ters simetrik matrislerin kümesi W olsun.
+
+629
+01:24:05,908 --> 01:24:11,608
+İkinci mertebeden, yani ikiye ikilik, ters simetrik matrislerin kümesi.
+
+630
+01:24:12,048 --> 01:24:16,548
+Ters simetrik ise o zaman W kümesi nelerden oluşacak?
+
+631
+01:24:17,428 --> 01:24:22,148
+Ters simetrik matriste köşegen elemanları sıfırlar oluyordu.
+
+632
+01:24:27,859 --> 01:24:53,099
+transpozesi eksi a'ya eşit olacaktı. O zaman şu elemanlar birbirinin ters işaretçisi olacaktı. Yani şuna x elemanı derseniz burası eksi x olacak. Ya da burası x olursa burası eksi x olacak ki, w'nun transpozesi eksi w'ya eşit olsun. Bu ters simetri içindi.
+
+633
+01:25:02,452 --> 01:25:04,452
+Elemanları bu tip olacak yani.
+
+634
+01:25:06,532 --> 01:25:11,012
+Tüm tersimetrik matrislerin kümesi W olsun demişiz.
+
+635
+01:25:12,492 --> 01:25:19,652
+W'nun tüm 2x2 matrislerin vektör uzayı olan M22'nin alt uzayı olup olmadığını gösterir.
+
+636
+01:25:19,652 --> 01:25:21,731
+Yani şunu göstereceğiz.
+
+637
+01:25:23,452 --> 01:25:29,592
+C çarpı W1 artı C1 diyelim buna.
+
+638
+01:25:29,592 --> 01:25:37,891
+C2 çarpı W2 elemanı şu toplam yine W'ye ait olmalı.
+
+639
+01:25:38,132 --> 01:25:40,592
+Tabii şurada ben bunu böyle yazdım ama
+
+640
+01:25:40,592 --> 01:25:44,952
+bu küme olarak yazılmalı aslında.
+
+641
+01:25:46,851 --> 01:25:49,472
+X eleman R denmeli buraya da.
+
+642
+01:25:49,472 --> 01:25:55,891
+Tamam şu şekildeki tüm matrislerin kümesi W oluyormuş.
+
+643
+01:25:55,891 --> 01:26:02,872
+Bunun sağlamalısını göstermek için W'nin sağlamalısını göstermek için W1 ve W2 elemanlarını yazalım.
+
+644
+01:26:05,692 --> 01:26:08,672
+Ama şu formatta yazıyoruz buna dikkat edin.
+
+645
+01:26:10,931 --> 01:26:13,412
+0, şuna x1 diyelim.
+
+646
+01:26:13,891 --> 01:26:15,731
+Eksi x1, 0.
+
+647
+01:26:17,431 --> 01:26:20,512
+W2 de 0.
+
+648
+01:26:21,431 --> 01:26:23,931
+Buna da y diyelim isterseniz.
+
+649
+01:26:24,092 --> 01:26:25,372
+Aha, x2 diyelim pardon.
+
+650
+01:26:25,891 --> 01:26:55,872
+Eksi x2, 0 olacak.
+
+651
+01:26:33,043 --> 01:26:35,043
+Herhangi
+
+652
+01:26:41,043 --> 01:26:46,083
+C1 ve C2 eleman R için diyelim.
+
+653
+01:26:48,323 --> 01:26:54,623
+C1 çarpı bu, C2 çarpı ve omega 2.
+
+654
+01:26:55,823 --> 01:26:59,623
+Neye eşit olacak? Bunları C1 ve C2 ile çarpıp toplayalım.
+
+655
+01:27:04,372 --> 01:27:07,372
+Şunu c1 ile çarptığımda zaten 0 olacak.
+
+656
+01:27:09,112 --> 01:27:11,292
+Şunları isterseniz yazalım ondan sonra.
+
+657
+01:27:14,432 --> 01:27:19,112
+0 eksi c1 x1 olur.
+
+658
+01:27:20,811 --> 01:27:22,811
+c1 x1 0.
+
+659
+01:27:24,652 --> 01:27:26,752
+Artı ne gelecek yanına?
+
+660
+01:27:26,752 --> 01:27:35,731
+c2 0 eksi c2 x2 c2 x2 0.
+
+661
+01:27:36,771 --> 01:27:39,052
+Bunların toplamları da ne olur?
+
+662
+01:27:39,712 --> 01:27:47,212
+0 eksi c1 eksi c2 x1 artı x2 gibi olacak.
+
+663
+01:27:51,699 --> 01:28:00,559
+Ya da eksi paranda, ikisi de eksi olduğu için eksi C1X1 artı, yerim kalmadı, ben şurada göstereyim.
+
+664
+01:28:01,239 --> 01:28:09,220
+Bu toplam eksi C1X1 artı C2X2 olacak. Şurası C1X1 artı C2X2, burası yine sıfır olacak.
+
+665
+01:28:10,979 --> 01:28:11,659
+Baktığımızda,
+
+666
+01:28:14,659 --> 01:28:16,319
+şunlar real sayı,
+
+667
+01:28:17,720 --> 01:28:18,039
+değil mi?
+
+668
+01:28:19,819 --> 01:28:20,500
+Dolayısıyla,
+
+669
+01:28:21,699 --> 01:28:23,179
+eksi var,
+
+670
+01:28:23,279 --> 01:28:25,380
+burada da bunun artı işaretlisi var,
+
+671
+01:28:25,479 --> 01:28:26,899
+köşegen elemanları sıfır,
+
+672
+01:28:26,960 --> 01:28:28,779
+yani şu formatı uyuyor.
+
+673
+01:28:29,699 --> 01:28:30,720
+Buna uyduğu için,
+
+674
+01:28:30,859 --> 01:28:31,380
+bu nedir?
+
+675
+01:28:31,460 --> 01:28:33,479
+W'nun elemanıdır bu toplam.
+
+676
+01:28:33,679 --> 01:28:34,380
+Dolayısıyla,
+
+677
+01:28:34,960 --> 01:28:35,920
+W hükümesi,
+
+678
+01:28:36,579 --> 01:28:39,519
+M2X2'nin bir alt uzayıdır deriz.
+
+679
+01:28:40,000 --> 01:28:40,519
+Anladın mı?
+
+680
+01:28:41,559 --> 01:28:41,779
+Tamam.
+
+681
+01:28:42,859 --> 01:28:43,659
+Sorunuz var mı?
+
+682
+01:28:45,439 --> 01:28:46,380
+Yok hocam.
+
+683
+01:28:47,319 --> 01:28:48,800
+Tamam, temizledim.
+
+684
+01:29:02,931 --> 01:29:05,572
+Bu konuya bugün geçecek miyiz? Geçmeyeceğiz.
+
+685
+01:29:05,572 --> 01:29:06,452
+Bu konuya bana.
+
+686
+01:29:07,492 --> 01:29:10,072
+Paylaşımı ben bir dakika durduracağım.
+
+687
+01:29:14,211 --> 01:29:15,551
+Enerji bir.
+
+688
+01:29:17,391 --> 01:29:18,612
+Ders içerikleri.
+
+689
+01:29:21,471 --> 01:29:23,051
+10. haftadayız.
+
+690
+01:29:23,171 --> 01:29:25,091
+Alt vektör uzayı uygulamalar.
+
+691
+01:29:27,471 --> 01:29:31,891
+Germi, temel teoremler, lineer bağımsızlık, lineer bağımsızlık.
+
+692
+01:29:45,971 --> 01:29:47,511
+Ayan şey, bağlantı.
+
+693
+01:30:09,939 --> 01:30:14,119
+Ay, etten, aylıkçı düşündüm.
+
+694
+01:30:18,068 --> 01:30:39,967
+Ardından germe kavramı. Ha tamam, germe kavramı. Bu haftalık konu bu kadar. Şimdi bu önümüzdeki haftanın konusu şu tanım. Haftaya buradan başlarız. Ben şimdi size ekstra örnek çözeyim. Sınavda çıkmış sorulardan buldum çünkü. Onlardan çözelim.
+
+695
+01:30:39,967 --> 01:30:44,408
+Hocam sınav demişken aklıma geldi. Şimdi final sınavı yüz yüze olacak.
+
+696
+01:30:45,148 --> 01:30:50,168
+Evet. Peki bu yüz yüze sınav çoktan seçmeli mi olacak yoksa klasik bir sınav?
+
+697
+01:30:50,168 --> 01:30:52,648
+Yok yok, çoktan seçmeli olacak o da.
+
+698
+01:30:54,228 --> 01:30:54,927
+Tamamdır hocam.
+
+699
+01:31:04,787 --> 01:31:06,827
+Hangisi alt uzaydır diyor.
+
+700
+01:31:08,607 --> 01:31:10,127
+Bir tane daha soru vardı burada.
+
+701
+01:31:12,127 --> 01:31:13,447
+Bu nerede kaldı?
+
+702
+01:31:14,587 --> 01:31:16,027
+Bu nerede birleşim?
+
+703
+01:31:22,036 --> 01:31:24,355
+Boyut, şu.
+
+704
+01:31:26,216 --> 01:31:28,296
+Alt vektör uzaydır, bir tane daha olacak.
+
+705
+01:31:30,296 --> 01:31:33,576
+Ha orada taban var, taban olduğu için almadık.
+
+706
+01:31:34,775 --> 01:31:35,895
+Karakteristik var mı?
+
+707
+01:31:36,036 --> 01:31:40,015
+Bir tane soru varmış, edelim.
+
+708
+01:31:40,855 --> 01:31:42,796
+Tamam, o bir tane soruyu da çözelim.
+
+709
+01:31:43,395 --> 01:31:45,015
+Umarım altta boşluk vardır.
+
+710
+01:31:45,855 --> 01:31:47,496
+Ya da demin üstte boşluk vardı.
+
+711
+01:31:49,935 --> 01:31:51,256
+Şuraya yaparız.
+
+712
+01:31:52,036 --> 01:31:54,716
+Sınav sorusu bu.
+
+713
+01:31:58,176 --> 01:31:59,615
+Kırmızı da mı yapalım?
+
+714
+01:31:59,895 --> 01:32:01,155
+Kırmızı kalsın peki.
+
+715
+01:32:01,975 --> 01:32:04,195
+Şunu çekelim, yer açılsın.
+
+716
+01:32:05,036 --> 01:32:05,695
+Soru şu.
+
+717
+01:32:09,492 --> 01:32:15,632
+Aşağıdaki alt kümelerden hangileri verilen vektör uzayının bir alt uzayıdır?
+
+718
+01:32:19,220 --> 01:32:25,360
+Aşağıdakilerden hangileri diyelim alt uzaydır?
+
+719
+01:32:32,020 --> 01:32:33,400
+Y kümesi şu
+
+720
+01:32:37,971 --> 01:32:39,291
+x x kare
+
+721
+01:32:49,332 --> 01:32:50,872
+X eleman R.
+
+722
+01:32:53,432 --> 01:32:58,412
+Bu, R2'nin alt uzayınidir. Ona bakacağız.
+
+723
+01:33:00,731 --> 01:33:01,572
+T kümesi
+
+724
+01:33:05,268 --> 01:33:17,167
+Bu üçlü, x, x artı bir, sıfır, yine x eleman r olacak.
+
+725
+01:33:19,127 --> 01:33:20,948
+Bu da r üçün bir alt kümesi.
+
+726
+01:33:26,228 --> 01:33:27,408
+U kümesi de şu.
+
+727
+01:33:33,492 --> 01:33:36,052
+x, 0, 0
+
+728
+01:33:36,052 --> 01:33:40,832
+x eleman, re
+
+729
+01:33:40,832 --> 01:33:44,731
+yine re 3'ün altı kümesi
+
+730
+01:33:44,731 --> 01:33:50,052
+bunların hangileri alt uzay ona bakacağız.
+
+731
+01:33:51,351 --> 01:33:51,731
+bir kere
+
+732
+01:33:51,731 --> 01:34:01,512
+şöyle artı birli şeyler, artı bir, artı iki gibi şeyler varsa bunların alt uzay olmayacağını hemen söyleyin.
+
+733
+01:34:07,988 --> 01:34:16,068
+Neden? Çünkü bunun herhangi iki elemanını alıp toplarsanız toplam t'ye ait olmayacak.
+
+734
+01:34:16,068 --> 01:34:31,148
+Yani şöyle diyelim. Mesela t1 matrisi olarak x1, x1 artı 1'i alalım. Burası da 0. Aynı formatta yazıyorum. İsmini değiştirdim.
+
+735
+01:34:31,148 --> 01:34:45,728
+t2 olarak şunu yazarız. x2, x2 artı 1, 0. Tamam. Şunları toplarsanız bunlar eleman t olsun diyelim.
+
+736
+01:34:49,684 --> 01:34:56,604
+T1 artı T2 bunun elemanı olmayacaktır. Çünkü 1 artı 1 toplamı 2'yi verecek bize.
+
+737
+01:34:59,083 --> 01:35:01,064
+Hocam 1 bölü 2 olsan mesela?
+
+738
+01:35:02,564 --> 01:35:03,444
+Bir saniye canım.
+
+739
+01:35:11,604 --> 01:35:26,963
+Çarpma olunca olabilir. Artı bir varsa, artı iki, artı bir sayı oluyorsa orada söyleyebilirsiniz. Neden? Çünkü bakın, x artı bir, bu bir rel sayı.
+
+740
+01:35:26,963 --> 01:35:37,884
+X bir artı x iki, özür dilerim. Şurası x bir artı x iki. Bunun altındaki eleman bunun bir fazlası olmalıydı değil mi? Şu formata göre.
+
+741
+01:35:38,604 --> 01:35:42,844
+x bir artı x iki artı bir olmalıydı. Oysa burada ne var?
+
+742
+01:35:45,024 --> 01:35:47,963
+x bir artı x iki artı iki var.
+
+743
+01:35:51,539 --> 01:36:02,560
+Şuna eşit olmadığı için şu toplam eleman değildir, t'nin diyeceksiniz. Dolayısıyla bu alt uzay değil, t'yi çıkardım.
+
+744
+01:36:09,811 --> 01:36:11,671
+1 bölü 2 olursa
+
+745
+01:36:15,347 --> 01:36:19,347
+Toplamayı korur, birleşme özelliğini...
+
+746
+01:36:35,380 --> 01:36:49,260
+Ona bakarız sonra da. Çarpım olursa olabiliyor. Ya da bölüm. Onlara bakarız. Şimdi neye bakacaktık? Y'ye bakacaktık.
+
+747
+01:36:51,359 --> 01:36:59,440
+Y'nin elemanları bu formatta. X, X kare. Bir kere sıfır da bunların elemanı olabilir mi diye de mutlaka bakın.
+
+748
+01:36:59,440 --> 01:37:05,440
+X eleman R dediği için X'i sıfır alırsanız sıfır sıfır Y'nin elemanı olur.
+
+749
+01:37:06,920 --> 01:37:13,359
+Burada da, ha bak burada X sıfır elemanı da kümenin elemanı olmuyor. Görüyor musunuz?
+
+750
+01:37:16,300 --> 01:37:21,500
+X'i sıfır alırsanız şurası bir olacak, burası sıfır olacak.
+
+751
+01:37:22,180 --> 01:37:27,880
+E sıfır bir sıfır elemanı oldu. Bu sıfır sıfır olmadı.
+
+752
+01:37:29,440 --> 01:37:37,500
+Çünkü vektör vektör vektör vektör vektör vektör uzayı olması için bir kümenin sıfır elemanını içermesi gerekiyor.
+
+753
+01:37:37,600 --> 01:37:40,260
+Alt vektör uzayı olması için de aynı şey geçerli.
+
+754
+01:37:40,359 --> 01:37:43,900
+Çünkü alt vektör uzayı demek de vektör uzayı demek.
+
+755
+01:37:44,640 --> 01:37:47,579
+Sıfır elemanı da kümeye ait olmayacak. Söyle canım.
+
+756
+01:37:47,920 --> 01:37:51,920
+Reaiselerle toplamak işi bozuyor o zaman. Yani bu alt uzay meselesini bozuyor.
+
+757
+01:37:51,920 --> 01:37:54,920
+Yani bu şekilde tanımlanırsa bozuyor.
+
+758
+01:37:54,920 --> 01:38:00,359
+Yani bu şekilde tanımlanırsa bozuyor ama başka şekillerde tanımlanırsa bozmayabilir.
+
+759
+01:38:01,260 --> 01:38:08,000
+Yani real sayılarda bu elemanlar belirli olarak verilmişse o zaman bozmaz yani.
+
+760
+01:38:08,960 --> 01:38:10,279
+Belirli derken şöyle.
+
+761
+01:38:11,260 --> 01:38:13,980
+Mesela bak burada özel seçilmiş.
+
+762
+01:38:13,980 --> 01:38:43,960
+diyor ki bir şey.
+
+763
+01:38:43,960 --> 01:38:44,960
+doğru söylüyorsun.
+
+764
+01:38:44,960 --> 01:38:47,960
+Şurada sıfır eleman oluyor.
+
+765
+01:38:47,960 --> 01:38:48,960
+Burada sorun yok.
+
+766
+01:38:48,960 --> 01:38:50,960
+Ben şu yazdıklarımı sileyim.
+
+767
+01:38:50,960 --> 01:38:53,960
+Y için şimdi gösterelim.
+
+768
+01:38:53,960 --> 01:38:55,020
+Şimdi gösterelim.
+
+769
+01:39:00,467 --> 01:39:29,087
+Yalnız t'nin üstünü de çizelim. Bu kesinlikle değil. Buna bakacağım. Burada iki tane eleman alırsak bunun da olmayacağını söyleyebiliriz. Neden? Çünkü y1 olarak x1, x1 kare olarak seçersem, y2 elemanı olarak da x2 ile x2 kare olarak seçerim.
+
+770
+01:39:29,087 --> 01:39:42,707
+Bunların toplamını alırsanız, y1 artı y2. Burası x1 artı x2 olacak ama burası ne olacak? x1'in karesi artı x2'nin karesi.
+
+771
+01:39:43,467 --> 01:39:55,988
+x1'in karesi, oysa buranın ne olması gerekiyordu? x1 artı x2'nin karesinin eşit olması gerekiyor. Şu formata uysun diye. Tamam mı?
+
+772
+01:39:55,988 --> 01:39:57,988
+Buna uyması için böyle olması gerekiyor.
+
+773
+01:39:57,988 --> 01:40:02,127
+Buna uyması için böyle olması gerekiyor. Oysa bu nedir?
+
+774
+01:40:03,407 --> 01:40:10,587
+Şurası x1'in karesi artı x2'nin karesidir. Bundan farklı olduğu için bu da alt uzay değildir.
+
+775
+01:40:10,587 --> 01:40:13,587
+Sadece u.
+
+776
+01:40:17,043 --> 01:40:30,483
+Bu sağlar, sıfırı da içerir. Herhangi iki rel sayının toplamı yine ne olacaktır? Rel sayı olacağı için hiçbir sorun yok. Toplamayı korur.
+
+777
+01:40:43,347 --> 01:40:45,068
+Kalerle çarpmayı da korur.
+
+778
+01:40:54,131 --> 01:41:09,891
+Sadece x'in real sayı olması gerekiyor. Bunlar real sayı. Toplamları da real sayı olduğu için. Yani x1 artı x2 eleman r olduğu için nedir? Şu toplam u'nun bir elemanıdır.
+
+779
+01:41:09,891 --> 01:41:35,152
+Skalerle çarpım u1'i alalım mesela. C1 çarpı u1, c1 çarpı x1 olacak. Bunlar 0 olacak. Dolayısıyla c1 x1 yine real sayı olduğu için bu da nedir? U'nun elemanı olacağı için sadece u alt kümledir. Alt uzaydır. Özür dilerim.
+
+780
+01:41:35,152 --> 01:42:03,771
+Anlaşıldı galiba değil mi? Evet hocam. Alt uzay olmasıyla ilgili sorularda dediğim gibi sınavda geliyor. Yine inşallah zamanımız kalır sınavdan önce uygulama yaparız. O zaman bitirelim dersimizi. Haftaya devam ederiz. Yine vektör uzaylarına devam edeceğiz. Ama daha fazla kavram öğreneceğiz.
+
+781
+01:42:05,152 --> 01:42:07,851
+Hepiniz kendinize iyi bakın. Hoşçakalın.
+
+782
+01:42:07,851 --> 01:42:09,571
+Siz de hocam görüşürüz.
+
+783
+01:42:09,771 --> 01:42:10,351
+Görüşürüz.
