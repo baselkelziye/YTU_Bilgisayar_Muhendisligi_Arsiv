@@ -32,3 +32,4 @@
 | 43 | Güz | Bulunamadı | [sube_43/](sube_43/) |
 | 45 | Güz | Sibel Atmaca | [sube_45/](sube_45/) |
 | 46 | Güz | Bulunamadı | [sube_46/](sube_46/) |
+| 47 | Güz | Sanem Pekerdağlı | [sube_47/](sube_47/) |
