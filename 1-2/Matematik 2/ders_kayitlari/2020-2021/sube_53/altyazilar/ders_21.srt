@@ -1,0 +1,4055 @@
+1
+00:03:44,467 --> 00:03:45,407
+Arkadaşlar, merhaba.
+
+2
+00:03:49,524 --> 00:03:50,443
+Merhaba hocam.
+
+3
+00:03:50,843 --> 00:03:51,644
+Merhabalar.
+
+4
+00:03:53,324 --> 00:03:56,283
+Biraz katılımın artmasını bekliyorum açtıktan sonra.
+
+5
+00:03:57,683 --> 00:04:00,324
+Ama, evet, 4 dakika geçirdik.
+
+6
+00:04:00,544 --> 00:04:02,204
+Başlayalım diye düşünüyorum yavaştan.
+
+7
+00:04:03,663 --> 00:04:04,484
+Eğer tamamsak.
+
+8
+00:04:15,891 --> 00:04:23,252
+Yesterday, we did the last part of the chain rule,
+
+9
+00:04:24,531 --> 00:04:27,411
+implicit differentiation, and complete the exercises.
+
+10
+00:04:28,052 --> 00:04:31,891
+And then continue with the direction derivative and gradient vectors.
+
+11
+00:04:33,572 --> 00:04:39,651
+And after that topic, we have started linearization of a function of two variables and
+
+12
+00:04:39,651 --> 00:04:47,731
+differentials for approximate calculus of several variable function. A similar topic was in
+
+13
+00:04:47,731 --> 00:04:52,932
+mathematics one, again the linearization and the differentials, and again for approximate calculus,
+
+14
+00:04:53,891 --> 00:04:59,091
+but it was for single variable function and single variable version of it. So this is the
+
+15
+00:04:59,091 --> 00:05:04,932
+several variable case of it. And linearization formalizations are same, the main idea is the
+
+16
+00:05:04,932 --> 00:05:10,291
+same, all the parallel steps we have, only the difference is the functions are not single
+
+17
+00:05:10,291 --> 00:05:20,531
+variables. And so we are working on the R cube and we move from a point to another one on the
+
+18
+00:05:20,531 --> 00:05:28,211
+Cartesian plane and try to guess or estimate the values of the function at a specific point
+
+19
+00:05:28,211 --> 00:05:37,091
+for using the differentials or linearization. And lastly, we have talked about this linearization and
+
+20
+00:05:37,891 --> 00:05:43,651
+to make a good approximation, I said that you have to just choose the closer point as much as possible,
+
+21
+00:05:43,651 --> 00:05:51,891
+because normally for several variable functions, they show a surface on R cube and that's why
+
+22
+00:05:51,891 --> 00:06:00,211
+is the surface. It's a surface, but you are just trying to estimate the value of a function, the z value
+
+23
+00:06:00,211 --> 00:06:11,651
+probably. To do it, to approximate it, we are just taking the tangent plane of the surface at the specific
+
+24
+00:06:11,651 --> 00:06:20,372
+point that we choose. And in a small neighborhood of that specific point, we can make the good approximations.
+
+25
+00:06:20,372 --> 00:06:29,812
+And we have a surface, but we just make it as a tangent plane. Of course, a plane and the surface are
+
+26
+00:06:29,812 --> 00:06:37,331
+completely different. The geometrically think of a surface and the plane. Plane is a plane, but the surface
+
+27
+00:06:37,331 --> 00:06:46,851
+has some different geometrical concepts. But once you make, once you make the closure of the surface to a plane,
+
+28
+00:06:46,851 --> 00:06:54,932
+point by point, you can make the good approximations. That's why choosing the proper point is important for
+
+29
+00:06:54,932 --> 00:07:01,572
+making the approximation for several variable functions. Specifically, it lists the function of two variables.
+
+30
+00:07:01,572 --> 00:07:09,331
+We will do. On the last concept of this topic, you will see the three variables. Also, we can make the linearization
+
+31
+00:07:09,331 --> 00:07:15,412
+and the differential. We will just talk about the linearization for three variable functions, but they are
+
+32
+00:07:15,412 --> 00:07:31,412
+same, completely the same and no such a different problem here. You will see, you will remember in my opinion.
+
+33
+00:07:27,540 --> 00:07:32,540
+Ve bu formula, bu formula çok farklı bir şekilde,
+
+34
+00:07:32,540 --> 00:07:35,540
+ve yine de aynı variable form.
+
+35
+00:07:35,540 --> 00:07:39,540
+Ve y'e a function x'e a single variable form,
+
+36
+00:07:39,540 --> 00:07:44,540
+ve a point'e a differentiable function'a çalışıyor.
+
+37
+00:07:44,540 --> 00:07:47,540
+Ve bu non-linear function'a bir şekilde,
+
+38
+00:07:47,540 --> 00:07:50,540
+bu şekilde bir şekilde yaparak,
+
+39
+00:07:50,540 --> 00:07:52,540
+bu şekilde linearize.
+
+40
+00:07:52,540 --> 00:08:22,540
+Bu, bu
+
+41
+00:08:22,540 --> 00:08:37,580
+X is a for example. Fa f prime of a x minus a. This will be the linear form of a single variable function at the point X is a.
+
+42
+00:08:38,080 --> 00:08:47,100
+Now just think we are having several variable function and specifically two variables fx y and then this is of course not linear.
+
+43
+00:08:47,100 --> 00:08:53,820
+We choose a point. Now we are working on Cartesian plane. So two variables you have x zero y zero.
+
+44
+00:08:54,360 --> 00:09:03,139
+So l x y f x zero y zero and so the partial derivatives arise here. We need f x and f y at this point to
+
+45
+00:09:03,139 --> 00:09:09,779
+respectively multiply with x minus x zero y minus y zero and please look carefully to this equation.
+
+46
+00:09:09,980 --> 00:09:16,580
+This is the equation of the tangent plane of the surface that at the point x zero y zero is the same.
+
+47
+00:09:17,100 --> 00:09:29,420
+So just think geometrically we have a surface but we are just making it and transform it or return it into a plane in order to make an approximation or estimation.
+
+48
+00:09:29,420 --> 00:09:30,060
+Okay.
+
+49
+00:09:31,340 --> 00:09:43,139
+And so approximation l is approximately f is the standard linear approximation of f at the point x zero y zero.
+
+50
+00:09:43,139 --> 00:09:47,220
+Again I want to say differentiation and the differentials.
+
+51
+00:09:48,100 --> 00:09:52,320
+Again having the same standard linear approximation.
+
+52
+00:09:53,059 --> 00:10:01,139
+So parallel steps we have and specifically the same results and the same linear approximation we have.
+
+53
+00:10:01,139 --> 00:10:03,299
+For example.
+
+54
+00:10:03,299 --> 00:10:05,620
+I think we did this question.
+
+55
+00:10:05,620 --> 00:10:09,059
+Find the linearization of f at the point three two.
+
+56
+00:10:09,059 --> 00:10:11,379
+And point is given.
+
+57
+00:10:11,379 --> 00:10:15,299
+You need to just remember this formula and then get the partial derivatives.
+
+58
+00:10:15,299 --> 00:10:18,100
+Evolue the partial derivatives at the given point.
+
+59
+00:10:18,100 --> 00:10:23,139
+And substitute to the formula and get the linear form of this several variable function.
+
+60
+00:10:23,139 --> 00:10:27,539
+The function was this function x square x y y square and three.
+
+61
+00:10:28,100 --> 00:10:29,700
+And look at this function.
+
+62
+00:10:29,700 --> 00:10:30,580
+This is linear.
+
+63
+00:10:32,259 --> 00:10:38,340
+All the variables are of the first degree and no multiplication we have which means this is a linear function.
+
+64
+00:10:38,340 --> 00:10:41,620
+And then.
+
+65
+00:10:43,460 --> 00:10:45,460
+Of course we use the approximation for.
+
+66
+00:10:45,460 --> 00:11:07,460
+For example.
+
+67
+00:10:49,268 --> 00:10:52,628
+İstimating some values of a function at a point.
+
+68
+00:10:53,488 --> 00:10:55,208
+It says find the approximate value.
+
+69
+00:10:55,388 --> 00:10:56,508
+That means it doesn't mean that.
+
+70
+00:10:56,687 --> 00:10:57,248
+Evolate it.
+
+71
+00:10:57,848 --> 00:11:00,008
+Evolate this function at that point.
+
+72
+00:11:00,168 --> 00:11:00,307
+No.
+
+73
+00:11:00,788 --> 00:11:01,528
+Just estimate.
+
+74
+00:11:02,128 --> 00:11:03,368
+Just make an approximation.
+
+75
+00:11:03,988 --> 00:11:05,888
+We can make it with two ways.
+
+76
+00:11:06,048 --> 00:11:07,748
+Again, linearization and differential.
+
+77
+00:11:08,408 --> 00:11:10,488
+In the first topic, we are using linearization.
+
+78
+00:11:10,908 --> 00:11:17,427
+So the first step must be to specify the closer point to this original point.
+
+79
+00:11:18,368 --> 00:11:19,008
+What is this?
+
+80
+00:11:19,008 --> 00:11:20,288
+What can it be?
+
+81
+00:11:20,848 --> 00:11:23,608
+2.2 minus 0.2.
+
+82
+00:11:23,708 --> 00:11:27,148
+Of course, the closer point, the possible point, the proper one.
+
+83
+00:11:27,708 --> 00:11:28,708
+2 and 0.
+
+84
+00:11:30,168 --> 00:11:31,187
+Function is given.
+
+85
+00:11:32,008 --> 00:11:34,088
+We will just linearize it.
+
+86
+00:11:34,608 --> 00:11:39,687
+And then apply the value of this point to this linear form of the function.
+
+87
+00:11:40,128 --> 00:11:44,888
+And then in this way, we get an approximate value of this function at this point.
+
+88
+00:11:44,888 --> 00:11:49,307
+First, linearize it at the point to 0.
+
+89
+00:11:51,307 --> 00:11:56,008
+Evolate the needed values, partial derivative, and the value of the function at that point.
+
+90
+00:11:56,008 --> 00:11:58,728
+And then write the linearization formula LXY.
+
+91
+00:11:58,988 --> 00:12:01,168
+And get this linear function again.
+
+92
+00:12:02,288 --> 00:12:07,388
+And we will substitute the original point to the linear form of the function.
+
+93
+00:12:07,388 --> 00:12:13,567
+And so the value that you get will be the approximation of the function at that point.
+
+94
+00:12:13,567 --> 00:12:18,848
+And then we will use the function at that point.
+
+95
+00:12:20,275 --> 00:12:34,535
+Next one, find the approximate value of this number. As you see, only the number is given, no function, no point, nothing.
+
+96
+00:12:37,055 --> 00:12:42,015
+So first you tell me, what should we doing? Firstly, what is the first step?
+
+97
+00:12:49,524 --> 00:12:51,964
+Can we solve it, for example, I want to ask you.
+
+98
+00:12:53,604 --> 00:13:03,163
+For only this question, you have to decide what to do, which method to use, what kind of a function to choose, what kind of a point to specify.
+
+99
+00:13:07,412 --> 00:13:12,992
+2.98'i 3 seçerek, 4.03'de 4 seçerek ilerleyebiliriz hocam değil mi?
+
+100
+00:13:13,552 --> 00:13:15,252
+I think so. Who is talking?
+
+101
+00:13:16,132 --> 00:13:16,612
+[öğrenci].
+
+102
+00:13:16,951 --> 00:13:19,451
+[öğrenci], thank you so much. You're completely right.
+
+103
+00:13:21,112 --> 00:13:27,312
+And so you are just first thing to choose a closer point to this value.
+
+104
+00:13:28,412 --> 00:13:30,032
+3 and 4. Yes, you're right.
+
+105
+00:13:30,232 --> 00:13:33,831
+What about the function? Which function to use here?
+
+106
+00:13:33,831 --> 00:13:41,272
+Ah, Janan has written here, in the square root x squared plus y squared.
+
+107
+00:13:41,872 --> 00:13:47,772
+Yes, you're right. That means, like you said, first step must be to define a function and a point.
+
+108
+00:13:48,951 --> 00:13:50,352
+Yes, no function is given.
+
+109
+00:13:50,772 --> 00:13:56,331
+First, we need to define the two variable function because two different values we have.
+
+110
+00:13:56,331 --> 00:14:03,032
+That's why a two variable function, we need to first define square root x squared plus y squared
+
+111
+00:14:03,032 --> 00:14:07,951
+in order to get such an approximation of such an expression.
+
+112
+00:14:09,331 --> 00:14:12,852
+And then next little closer point, which is 3 and 4.
+
+113
+00:14:13,331 --> 00:14:13,971
+Yes, you're right.
+
+114
+00:14:14,471 --> 00:14:20,451
+So the next step can be just decide which one to use.
+
+115
+00:14:20,852 --> 00:14:22,792
+Linearization or differential, it doesn't matter.
+
+116
+00:14:23,432 --> 00:14:25,492
+Let's now firstly use the linearization.
+
+117
+00:14:25,492 --> 00:14:29,451
+Fx, y is this.
+
+118
+00:14:29,532 --> 00:14:30,591
+The point is okay.
+
+119
+00:14:31,211 --> 00:14:36,632
+And then we need fx and fy at this point and then write the linearization formula.
+
+120
+00:14:38,211 --> 00:14:41,532
+F34 plus fx34x minus 3.
+
+121
+00:14:42,492 --> 00:14:52,072
+Fy34y minus 4 is the, again, I want to say this is the tangent plane equation of the surface at the point 34.
+
+122
+00:14:52,072 --> 00:14:54,032
+Don't forget.
+
+123
+00:14:54,852 --> 00:14:59,072
+And at that point, we are just choosing a closer point and then make the approximation.
+
+124
+00:15:00,812 --> 00:15:04,012
+Because this point is closer to 3 and 4.
+
+125
+00:15:05,372 --> 00:15:09,292
+This point is a very small neighborhood of the point 34.
+
+126
+00:15:09,492 --> 00:15:12,471
+That's why we are making this linearization at the point 34.
+
+127
+00:15:12,471 --> 00:15:17,352
+And we have a surface, but we make it as a plane.
+
+128
+00:15:17,951 --> 00:15:21,792
+And on the plane, we can easily evaluate the values because.
+
+129
+00:15:22,612 --> 00:15:25,432
+But of course, not the exact value, but just so closer.
+
+130
+00:15:25,971 --> 00:15:27,572
+That's why we are using this method.
+
+131
+00:15:29,152 --> 00:15:36,211
+And once we make the linear form of it, L is this, the linear form of this function.
+
+132
+00:15:36,211 --> 00:15:42,072
+Normally, this value is asked by the approximation, so not the exact value, just estimating.
+
+133
+00:15:42,471 --> 00:15:45,132
+That's why we can use this function instead of f.
+
+134
+00:15:45,832 --> 00:15:47,592
+Because this is approximately f.
+
+135
+00:15:48,032 --> 00:15:48,211
+Okay.
+
+136
+00:15:48,732 --> 00:15:50,772
+This is the linear form of f.
+
+137
+00:15:50,772 --> 00:15:59,772
+And then just apply and substitute the point 2.98 and 4.03 to the linear form of the function f.
+
+138
+00:16:00,292 --> 00:16:02,752
+And then get 5.012.
+
+139
+00:16:03,012 --> 00:16:08,752
+Means this value is approximately this one.
+
+140
+00:16:11,872 --> 00:16:13,552
+It is so easy, I think.
+
+141
+00:16:14,392 --> 00:16:16,132
+I think nothing to think more.
+
+142
+00:16:16,992 --> 00:16:17,992
+I'm not complicated.
+
+143
+00:16:19,312 --> 00:16:19,872
+Point.
+
+144
+00:16:20,772 --> 00:16:21,532
+Easy.
+
+145
+00:16:45,875 --> 00:16:49,395
+Are you okay? Is it clear?
+
+146
+00:16:55,379 --> 00:16:56,740
+Ah, yes, thank you.
+
+147
+00:16:59,600 --> 00:17:03,559
+And then we will continue with the next one.
+
+148
+00:17:04,700 --> 00:17:05,460
+Wait.
+
+149
+00:17:09,940 --> 00:17:11,940
+Şimdi de diğerlerle ilgili.
+
+150
+00:17:11,940 --> 00:17:18,940
+Differential methodi de biraz daha çok ilginç.
+
+151
+00:17:18,940 --> 00:17:21,940
+Ama de aynı şekilde aynı.
+
+152
+00:17:21,940 --> 00:17:25,940
+Aynı şekilde linear ve aydınlardır.
+
+153
+00:17:25,940 --> 00:17:33,940
+Aynı şekilde standard ayarlamalar ve aynı şekilde aynı şekilde.
+
+154
+00:17:33,940 --> 00:17:39,940
+So, just try to understand why is the second way is the differentials.
+
+155
+00:17:39,940 --> 00:17:46,940
+Because, differential means, first thing, what is differential?
+
+156
+00:17:46,940 --> 00:17:50,940
+Differential of f means change of f.
+
+157
+00:17:50,940 --> 00:17:52,940
+You can just think.
+
+158
+00:17:52,940 --> 00:17:54,940
+Is it clear? Yes.
+
+159
+00:17:54,940 --> 00:17:56,940
+What is derivative?
+
+160
+00:17:56,940 --> 00:17:59,940
+Derivative is the rate of a change of a function.
+
+161
+00:17:59,940 --> 00:18:03,940
+Delta f or delta y over delta x is the derivative.
+
+162
+00:18:03,940 --> 00:18:07,940
+That means change of the function divided by the change of the increment.
+
+163
+00:18:07,940 --> 00:18:08,940
+I'm sorry.
+
+164
+00:18:08,940 --> 00:18:11,940
+Increment of the independent variable in the function.
+
+165
+00:18:11,940 --> 00:18:17,940
+But the differential is just directly to the change of the function f.
+
+166
+00:18:17,940 --> 00:18:20,940
+How can we measure the change of the function?
+
+167
+00:18:20,940 --> 00:18:22,940
+Of course, it's not so easy to.
+
+168
+00:18:22,940 --> 00:18:32,940
+And it doesn't mean that just to get the approximation or the subtraction of two values of a function.
+
+169
+00:18:32,940 --> 00:18:37,940
+Once we are on a point and evaluate the value of the function at that point.
+
+170
+00:18:37,940 --> 00:18:39,940
+And move to another point.
+
+171
+00:18:39,940 --> 00:18:42,940
+And then just try to measure.
+
+172
+00:18:42,940 --> 00:18:44,940
+So, what's happening to function?
+
+173
+00:18:44,940 --> 00:18:47,940
+How much the function change?
+
+174
+00:18:47,940 --> 00:18:49,940
+We need to just measure.
+
+175
+00:18:49,940 --> 00:18:57,940
+But it's not so easy to just like having such as having the subtraction of these two points and the value of the function.
+
+176
+00:18:57,940 --> 00:18:59,940
+Because we are not on a line.
+
+177
+00:18:59,940 --> 00:19:04,940
+If we are moving along the line, it's so easy to just make the difference between them.
+
+178
+00:19:04,940 --> 00:19:05,940
+But it is not.
+
+179
+00:19:05,940 --> 00:19:10,940
+We are working on several variable function and the curves and surfaces.
+
+180
+00:19:10,940 --> 00:19:14,940
+That's why we need to just make it with a differential.
+
+181
+00:19:14,940 --> 00:19:18,940
+And the partial derivatives must be included in this system.
+
+182
+00:19:18,940 --> 00:19:22,940
+That's why differential is so closer to the derivative.
+
+183
+00:19:22,940 --> 00:19:25,940
+And try to measure the change of a function.
+
+184
+00:19:25,940 --> 00:19:31,940
+If it is a several variable function like this, fx and fy you need.
+
+185
+00:19:31,940 --> 00:19:34,940
+But just think the differential of a single variable function.
+
+186
+00:19:34,940 --> 00:19:39,940
+Just think if y is a function of x, what is the differential of y?
+
+187
+00:19:39,940 --> 00:19:41,940
+Do you remember?
+
+188
+00:19:41,940 --> 00:19:43,940
+What kind of a formula it has?
+
+189
+00:19:43,940 --> 00:19:45,940
+Do you remember?
+
+190
+00:19:45,940 --> 00:19:48,940
+For a single variable function, what is df or dy?
+
+191
+00:19:48,940 --> 00:19:53,940
+When the function is changing,
+
+192
+00:19:53,940 --> 00:19:54,470
+And then you can use the same function as the function of the function of the function of the function of the function of the function of the function of the function of the function of the function of the function of the function of the function of the function of the function of the function of the function of the function of the function of the function of the function of the function of the function of the function of the function of the function of the function of the function of the function of the function of the function of the function of the function of the function of the function of the function of the function of the function of the function of the function of the function of the function of the function of the function of the function of the function of the function of the function of the function of the function of the function of the function of the function of the function of the function of the function of the function of the function of the function of the function of the function of the function of the function of the function of the function of the function of the function of the function of the function of the function of the function
+
+193
+00:19:58,036 --> 00:20:07,096
+If the independent variable is changing and then correspondingly the function changes, that's why we are trying to measure this.
+
+194
+00:20:07,476 --> 00:20:13,875
+That's why we give the increment to the variable and the function and then try to measure what happens to the function.
+
+195
+00:20:14,276 --> 00:20:21,655
+So the function changes, so it is delta f or delta y and divide with the increment means the derivative, roughly.
+
+196
+00:20:23,196 --> 00:20:25,375
+What about the several variable function?
+
+197
+00:20:32,403 --> 00:20:40,604
+Do you have any idea about the differentials and the derivative and the relation and the single and several variable function? Do you want to say anything?
+
+198
+00:20:52,500 --> 00:20:55,759
+Me too, thank you. Thank you, [öğrenci]. Me too.
+
+199
+00:20:57,000 --> 00:21:07,500
+More generally, the students maybe do not consider the differences between, do not even think of it, I think.
+
+200
+00:21:07,740 --> 00:21:10,480
+What is differential and what is the relation between the derivative?
+
+201
+00:21:11,619 --> 00:21:14,160
+They don't need because, I think, in my opinion.
+
+202
+00:21:14,160 --> 00:21:29,099
+In single variable function, the differential of the function is just directly related with the derivative of the function, ordinary derivative, of course, we have.
+
+203
+00:21:29,559 --> 00:21:32,539
+And the differential of independent variable in the function.
+
+204
+00:21:33,180 --> 00:21:39,000
+For example, if y is a function of x, dy is f prime of x dx.
+
+205
+00:21:39,880 --> 00:21:43,740
+Okay, this is so clear because it has only one independent variable.
+
+206
+00:21:44,160 --> 00:21:57,920
+When it is a single variable function, so the differential of the function of a single variable one directly related with the derivative times change of the independent variable, that means the increment of it.
+
+207
+00:21:58,079 --> 00:22:09,559
+But for several variable functions, since we have more than one independent variable, it is related one by one to change of them, each of them.
+
+208
+00:22:09,559 --> 00:22:15,839
+And also, these increments must be multiplied with the partial derivative at the same time.
+
+209
+00:22:16,240 --> 00:22:18,980
+Differential of x, derivative of x.
+
+210
+00:22:19,819 --> 00:22:22,220
+That means derivative with respect to x.
+
+211
+00:22:22,319 --> 00:22:22,720
+I'm sorry.
+
+212
+00:22:23,460 --> 00:22:24,119
+Partial derivative.
+
+213
+00:22:24,700 --> 00:22:25,779
+Differential of y.
+
+214
+00:22:26,019 --> 00:22:28,000
+Differential of y means the change of y.
+
+215
+00:22:28,859 --> 00:22:32,539
+Multiply with the partial derivative of f with respect to y.
+
+216
+00:22:32,539 --> 00:22:37,819
+So, at the same time, this formalization is called the total differential.
+
+217
+00:22:39,700 --> 00:22:43,220
+It doesn't matter how many variables it has.
+
+218
+00:22:44,680 --> 00:22:47,059
+Finite numbers of values it has.
+
+219
+00:22:47,220 --> 00:22:47,860
+No problem.
+
+220
+00:22:48,079 --> 00:22:49,119
+One by one.
+
+221
+00:22:49,599 --> 00:22:54,900
+For every, for each linear, for each independent variable in the function,
+
+222
+00:22:54,900 --> 00:22:59,460
+you need to just evaluate the differential and the partial derivative and multiply them
+
+223
+00:22:59,460 --> 00:23:03,140
+and then get some of them will be the total differential of f.
+
+224
+00:23:03,319 --> 00:23:05,360
+Because f is not belonging only x.
+
+225
+00:23:05,740 --> 00:23:07,360
+f is not belonging only y.
+
+226
+00:23:08,119 --> 00:23:08,759
+Both of them.
+
+227
+00:23:09,079 --> 00:23:12,259
+That's why we need to consider dx and fx.
+
+228
+00:23:12,619 --> 00:23:14,839
+And also f, a, and y, and dy.
+
+229
+00:23:15,400 --> 00:23:18,279
+That's why the f is belonging both of them.
+
+230
+00:23:18,380 --> 00:23:19,319
+So, some of them.
+
+231
+00:23:20,160 --> 00:23:23,640
+If it has two variables like x and y.
+
+232
+00:23:23,640 --> 00:23:29,079
+If we had z also, we would write here fz times dz.
+
+233
+00:23:29,740 --> 00:23:30,000
+Okay.
+
+234
+00:23:30,220 --> 00:23:32,160
+This is the total differential of f.
+
+235
+00:23:32,680 --> 00:23:35,920
+Since f is belonging to variables x and y,
+
+236
+00:23:35,920 --> 00:23:39,680
+so the differential of f is directly belonging to the differentials
+
+237
+00:23:39,680 --> 00:23:42,839
+of every linear independent variable in the function.
+
+238
+00:23:46,259 --> 00:23:47,920
+What about the...
+
+239
+00:23:47,920 --> 00:23:51,860
+Well, formalization is not written here.
+
+240
+00:23:51,860 --> 00:23:54,619
+It's not enough, I think.
+
+241
+00:23:54,660 --> 00:23:56,079
+It's only the total differential.
+
+242
+00:23:57,299 --> 00:23:58,440
+Maybe I missed it.
+
+243
+00:23:59,440 --> 00:24:01,119
+How can we use in the...
+
+244
+00:24:01,119 --> 00:24:03,360
+How can we use the differential in approximating?
+
+245
+00:24:03,360 --> 00:24:08,299
+We can think that.
+
+246
+00:24:08,980 --> 00:24:09,980
+Linearization is okay.
+
+247
+00:24:10,619 --> 00:24:14,579
+For approximate value, we make the function linear and then apply the value,
+
+248
+00:24:14,740 --> 00:24:15,799
+and then it's an approximation.
+
+249
+00:24:16,000 --> 00:24:16,480
+It's finished.
+
+250
+00:24:17,000 --> 00:24:18,019
+What about the differential?
+
+251
+00:24:18,220 --> 00:24:19,160
+Using differentials.
+
+252
+00:24:19,680 --> 00:24:21,819
+First, we need to evaluate the total differential.
+
+253
+00:24:21,819 --> 00:24:23,079
+Okay.
+
+254
+00:24:23,279 --> 00:24:26,139
+A function, of course, given or we can write the...
+
+255
+00:24:26,139 --> 00:24:29,440
+Choose a proper function to the case in the question.
+
+256
+00:24:30,359 --> 00:24:32,940
+And then evaluate the differential of it.
+
+257
+00:24:33,059 --> 00:24:35,599
+But again, we need to just choose a closer point
+
+258
+00:24:35,599 --> 00:24:37,880
+because we are just trying to understand.
+
+259
+00:24:38,579 --> 00:24:40,980
+We are moving a point to another point.
+
+260
+00:24:40,980 --> 00:24:44,700
+And so, we need to just measure.
+
+261
+00:24:44,700 --> 00:25:07,940
+Measure.
+
+262
+00:24:46,387 --> 00:24:50,987
+How much does the function change resulting in this move?
+
+263
+00:24:50,987 --> 00:24:52,187
+We need to find.
+
+264
+00:24:52,187 --> 00:24:54,587
+And so this will be the approximation.
+
+265
+00:24:54,587 --> 00:24:55,587
+Okay?
+
+266
+00:24:55,587 --> 00:24:59,387
+Because differential is not given the exact value.
+
+267
+00:24:59,387 --> 00:25:02,587
+If we add the first value of the function
+
+268
+00:25:02,587 --> 00:25:04,987
+and plus the change of the function
+
+269
+00:25:04,987 --> 00:25:09,788
+and try to guess what's happening at the final point.
+
+270
+00:25:09,788 --> 00:25:10,387
+Okay?
+
+271
+00:25:10,387 --> 00:25:13,987
+That's why this is the approximation using differentials.
+
+272
+00:25:13,987 --> 00:25:18,187
+I think you can understand while having this exercise.
+
+273
+00:25:18,187 --> 00:25:19,987
+Let's look.
+
+274
+00:25:19,987 --> 00:25:27,387
+It says find the approximate value of this expression, this value, using differentials.
+
+275
+00:25:27,387 --> 00:25:31,587
+If it was, just get the approximate value of this expression.
+
+276
+00:25:31,587 --> 00:25:37,387
+First, you will think maybe linearization by choosing a point in the function.
+
+277
+00:25:37,387 --> 00:25:43,387
+And probably you will choose the function for x squared plus 3y squared in the square root.
+
+278
+00:25:43,387 --> 00:25:47,587
+And to choose the closer point, you will just think 1.04.
+
+279
+00:25:47,587 --> 00:25:48,587
+So possibly 1.
+
+280
+00:25:48,587 --> 00:25:51,587
+And 2.24, possibly 2.
+
+281
+00:25:51,587 --> 00:25:55,387
+So you would linearize f at the point 1 and 2.
+
+282
+00:25:55,387 --> 00:25:57,587
+But now let's use the differential.
+
+283
+00:25:57,587 --> 00:25:59,587
+And so just think.
+
+284
+00:25:59,587 --> 00:26:04,587
+The point that you choose, the closer point that you choose, is the first point of view.
+
+285
+00:26:04,587 --> 00:26:09,788
+And you will move from a point to the original point, which is asked in the question.
+
+286
+00:26:09,788 --> 00:26:10,788
+Be careful.
+
+287
+00:26:10,788 --> 00:26:16,788
+1.04 and 2.24 is the destination point you can just think.
+
+288
+00:26:16,788 --> 00:26:24,987
+And then we will measure what happens to the function once we move from a point to the original point that we need to evaluate.
+
+289
+00:26:24,987 --> 00:26:31,987
+So first step, again define the function and the point.
+
+290
+00:26:31,987 --> 00:26:34,187
+And then think.
+
+291
+00:26:34,187 --> 00:26:38,187
+I need to evaluate the differential of this function at that point.
+
+292
+00:26:38,187 --> 00:26:44,187
+Again, the differential can be evaluated at a specific point like with it in the linearization.
+
+293
+00:26:44,187 --> 00:26:48,187
+That's why they are completely the same as the formula.
+
+294
+00:26:48,187 --> 00:26:49,187
+Just think.
+
+295
+00:26:49,187 --> 00:26:51,187
+Differential.
+
+296
+00:26:51,187 --> 00:26:54,187
+Total differential of f at the point 1 and 2.
+
+297
+00:26:54,187 --> 00:26:56,187
+Let's look what it is.
+
+298
+00:26:56,187 --> 00:26:57,187
+Df.
+
+299
+00:26:57,187 --> 00:26:59,187
+Total differential.
+
+300
+00:26:59,187 --> 00:27:01,187
+fx1 to dx.
+
+301
+00:27:01,187 --> 00:27:02,187
+fy1 to dy.
+
+302
+00:27:02,187 --> 00:27:03,187
+It's so easy.
+
+303
+00:27:03,187 --> 00:27:07,187
+Partial derivative with respect to x, multiply with the differential of x.
+
+304
+00:27:07,187 --> 00:27:12,187
+Partial derivative with respect to y, multiply with the differential of y.
+
+305
+00:27:12,187 --> 00:27:15,187
+fx and fy we need.
+
+306
+00:27:15,187 --> 00:27:16,187
+Okay.
+
+307
+00:27:16,187 --> 00:27:17,187
+Easy.
+
+308
+00:27:17,187 --> 00:27:19,187
+Get the partial derivative and apply the point 1 and 2.
+
+309
+00:27:19,187 --> 00:27:20,187
+Okay.
+
+310
+00:27:20,187 --> 00:27:22,187
+Evaluate 1 and 3 over 2.
+
+311
+00:27:22,187 --> 00:27:23,187
+It's okay.
+
+312
+00:27:23,187 --> 00:27:26,187
+What about dx and dy?
+
+313
+00:27:26,187 --> 00:27:31,187
+dx is the change of x, dy is the change of y.
+
+314
+00:27:31,187 --> 00:27:39,187
+Because while you have an independent variable, the differential of it is directly increment.
+
+315
+00:27:39,187 --> 00:27:40,187
+The change of x.
+
+316
+00:27:40,187 --> 00:27:43,187
+Because x is not belonging to any other variable.
+
+317
+00:27:43,187 --> 00:27:48,187
+So the change of x directly is equal to the differential of x.
+
+318
+00:27:48,187 --> 00:27:50,187
+So how can we evaluate dx and dy?
+
+319
+00:27:50,187 --> 00:27:51,187
+Let's look.
+
+320
+00:27:51,187 --> 00:27:55,187
+We were moving from the point to the original one.
+
+321
+00:27:55,187 --> 00:27:58,187
+So 1 to 1.04.
+
+322
+00:27:58,187 --> 00:27:59,187
+So what is delta x?
+
+323
+00:27:59,187 --> 00:28:01,187
+0.04.
+
+324
+00:28:01,187 --> 00:28:02,187
+Okay.
+
+325
+00:28:02,187 --> 00:28:05,187
+And then what about y?
+
+326
+00:28:05,187 --> 00:28:07,187
+It was 2, 2, 2, 2.24.
+
+327
+00:28:07,187 --> 00:28:13,187
+That means 0.24 is the change of y.
+
+328
+00:28:13,187 --> 00:28:15,187
+That means delta y.
+
+329
+00:28:15,187 --> 00:28:18,187
+This is 0.4.
+
+330
+00:28:18,187 --> 00:28:27,187
+This is total differential of f means once we move from this point to this point, the function
+
+331
+00:28:27,187 --> 00:28:28,187
+is changing amount.
+
+332
+00:28:28,187 --> 00:28:32,187
+That means the amount of the change of the function is 0.4.
+
+333
+00:28:32,187 --> 00:28:41,187
+So we need to add this value to the first point, the value of the function at that point.
+
+334
+00:28:41,187 --> 00:28:42,187
+was...
+
+335
+00:28:42,187 --> 00:28:43,187
+0.04.
+
+336
+00:28:43,187 --> 00:28:44,187
+So we need to add this value to the function at that point.
+
+337
+00:28:44,187 --> 00:28:45,187
+It was...
+
+338
+00:28:45,187 --> 00:28:46,187
+0.04.
+
+339
+00:28:46,187 --> 00:28:47,187
+So we need to add this value to the function at that point.
+
+340
+00:28:47,187 --> 00:28:48,187
+It was...
+
+341
+00:28:48,187 --> 00:28:49,187
+0.04.
+
+342
+00:28:49,187 --> 00:28:50,187
+So we need to add this value to the function at that point.
+
+343
+00:28:50,187 --> 00:28:51,187
+It was...
+
+344
+00:28:51,187 --> 00:28:52,187
+0.04.
+
+345
+00:28:52,187 --> 00:28:53,187
+So we need to add this value to the function at that point.
+
+346
+00:28:53,187 --> 00:28:54,187
+It was...
+
+347
+00:28:54,187 --> 00:28:55,187
+0.04.
+
+348
+00:28:55,187 --> 00:28:56,187
+So we need to add this value to the function at that point.
+
+349
+00:28:56,187 --> 00:28:57,187
+It was...
+
+350
+00:28:57,187 --> 00:28:58,187
+0.04.
+
+351
+00:28:58,187 --> 00:28:59,187
+So we need to add this value to the function at that point.
+
+352
+00:28:42,324 --> 00:29:32,663
+4.
+
+353
+00:29:32,663 --> 00:29:35,663
+5.
+
+354
+00:29:35,663 --> 00:29:36,663
+We did it!
+
+355
+00:29:36,663 --> 00:29:38,663
+We did this question for linearization.
+
+356
+00:29:38,663 --> 00:29:42,663
+Let's try to do it for me with the differential.
+
+357
+00:30:03,124 --> 00:30:11,203
+You need to again choose the function, point, emulate the total differential, and then tell me what you get.
+
+358
+00:30:15,443 --> 00:30:21,324
+Total Differential DF is fx times delta x plus fy times delta y.
+
+359
+00:30:22,644 --> 00:30:27,803
+And evaluate these partial derivatives at the point that you choose, the closer point to this point.
+
+360
+00:30:27,903 --> 00:30:31,084
+You see 2.98 and 4.03.
+
+361
+00:30:31,543 --> 00:30:33,803
+Again, you will choose 3 and 4.
+
+362
+00:32:24,307 --> 00:32:28,307
+Evet, evet.
+
+363
+00:32:28,307 --> 00:32:33,307
+Ve bu çebağın növerdeki çebağın növerdeki
+
+364
+00:32:33,307 --> 00:32:36,307
+değerliye sahip var.
+
+365
+00:32:45,364 --> 00:32:48,284
+Yani 0.12.
+
+366
+00:32:49,824 --> 00:32:55,564
+0.012.
+
+367
+00:32:57,683 --> 00:33:00,203
+Evet.
+
+368
+00:33:01,183 --> 00:33:04,364
+Bu 5.012.
+
+369
+00:33:06,084 --> 00:33:09,144
+I think the second value that you have written is correct.
+
+370
+00:33:12,084 --> 00:33:13,824
+And let's see.
+
+371
+00:33:15,364 --> 00:33:26,744
+Again, we need to choose, like we did in the linearization, choose the function, proper function, of course, here, x squared plus y squared.
+
+372
+00:33:26,983 --> 00:33:29,703
+And the point, the closer point, 3 and 4.
+
+373
+00:33:30,163 --> 00:33:30,524
+Okay.
+
+374
+00:33:31,044 --> 00:33:34,564
+We need to evaluate the total differential of the function at that point.
+
+375
+00:33:35,844 --> 00:33:41,124
+So we need fx at the point 3, 4 and fy at that point.
+
+376
+00:33:41,644 --> 00:33:42,723
+And let's look.
+
+377
+00:33:42,723 --> 00:33:52,884
+We move from 3, 4 to this point, this original point that we need to evaluate or estimate or approximate.
+
+378
+00:33:52,884 --> 00:34:05,584
+So, df is fx at that value, multiply with dx, fy at that value, multiply with dy.
+
+379
+00:34:06,044 --> 00:34:06,744
+And let's see.
+
+380
+00:34:07,163 --> 00:34:11,903
+fx is 3 over 5 and fy is 4 over 5.
+
+381
+00:34:12,304 --> 00:34:13,543
+What about dx and dy?
+
+382
+00:34:14,224 --> 00:34:15,224
+What is dx?
+
+383
+00:34:15,224 --> 00:34:19,603
+It was 3, but we move to 2.98.
+
+384
+00:34:19,724 --> 00:34:22,983
+That means minus 0.02.
+
+385
+00:34:23,923 --> 00:34:24,244
+Okay.
+
+386
+00:34:26,244 --> 00:34:27,304
+It can be negative.
+
+387
+00:34:27,523 --> 00:34:29,304
+I mean, it can be negative.
+
+388
+00:34:29,423 --> 00:34:29,963
+No problem.
+
+389
+00:34:30,603 --> 00:34:34,184
+Dy or delta y or the increment of y.
+
+390
+00:34:34,523 --> 00:34:37,344
+It was 4 and moved to 4.03.
+
+391
+00:34:37,344 --> 00:34:40,523
+So, it is 0.03.
+
+392
+00:34:41,764 --> 00:34:42,043
+Okay.
+
+393
+00:34:43,304 --> 00:34:46,244
+So, this value is 0.012.
+
+394
+00:34:46,563 --> 00:34:52,423
+So, the approximate value is just add to f3, 4 plus the differential of f.
+
+395
+00:34:52,423 --> 00:34:57,324
+As you see, always the same result you have with the linearization and the differential
+
+396
+00:34:57,324 --> 00:35:00,443
+because they have the same way of approximation.
+
+397
+00:35:01,324 --> 00:35:07,583
+This formula, look, fx dx fy dy is the same formula with the part of the linearization.
+
+398
+00:35:09,164 --> 00:35:10,083
+They are same.
+
+399
+00:35:10,943 --> 00:35:12,764
+That's why we have such a value.
+
+400
+00:35:13,483 --> 00:35:14,784
+And f3, 4 we add.
+
+401
+00:35:14,784 --> 00:35:17,124
+That's just the linearization formula.
+
+402
+00:35:17,244 --> 00:35:17,923
+It isn't it?
+
+403
+00:35:27,603 --> 00:35:30,003
+What if we have functions of more than one two variables?
+
+404
+00:35:31,243 --> 00:35:34,963
+The analogous results, that means the same and parallel results,
+
+405
+00:35:35,083 --> 00:35:37,803
+hold for differentiable functions of more than two variables.
+
+406
+00:35:39,043 --> 00:35:43,983
+Again, linearization and the differential having the same steps, nothing changing.
+
+407
+00:35:45,543 --> 00:35:52,623
+Linearization of f of three variables at a point x0, y0, z0 is fp0, again same.
+
+408
+00:35:52,623 --> 00:35:58,303
+A partial derivative of f with respect to xx minus x0,
+
+409
+00:35:58,463 --> 00:36:01,643
+that means this is delta x or dx, differential of x.
+
+410
+00:36:02,583 --> 00:36:09,743
+If y at p0, differential of y, as you see here, look, that's why they are same as you see.
+
+411
+00:36:10,683 --> 00:36:13,283
+Differential and linearization are same formalizations.
+
+412
+00:36:14,523 --> 00:36:15,963
+This is the linear form of it.
+
+413
+00:36:15,963 --> 00:36:21,403
+In differential, we add plus fp0 makes the same equations.
+
+414
+00:36:21,403 --> 00:36:22,943
+Are you okay with it?
+
+415
+00:36:23,263 --> 00:36:25,983
+That's why they are same, linearization and differential.
+
+416
+00:36:26,343 --> 00:36:28,183
+It doesn't matter which one to choose.
+
+417
+00:36:28,583 --> 00:36:34,103
+If you are not mistaken, you must get the same result and same approximation at the end,
+
+418
+00:36:34,303 --> 00:36:36,803
+because they have same formalizations.
+
+419
+00:36:37,803 --> 00:36:41,923
+Here in linearization, x minus x0, which corresponds to dx,
+
+420
+00:36:42,483 --> 00:36:44,683
+y minus y0 corresponds to dy.
+
+421
+00:36:44,683 --> 00:36:44,823
+Why?
+
+422
+00:36:45,823 --> 00:36:53,283
+Df is this part only, and we add to fp0 at the last step, like we did in the question,
+
+423
+00:36:53,843 --> 00:36:56,643
+makes the linearization the linear form of the function.
+
+424
+00:36:57,503 --> 00:36:57,583
+Okay?
+
+425
+00:36:57,963 --> 00:37:02,463
+fp0 plus delta f or df means they are same.
+
+426
+00:37:03,363 --> 00:37:05,843
+And once we have three variables, it doesn't matter.
+
+427
+00:37:06,063 --> 00:37:11,263
+Thirdly, we add the third variable, differential, partial derivative with respect to x, z,
+
+428
+00:37:11,263 --> 00:37:13,923
+and then it results the same way.
+
+429
+00:37:14,823 --> 00:37:26,743
+For example, the linearization of linearization L of fx0 minus xy plus 3 sine z at the point 210.
+
+430
+00:37:27,303 --> 00:37:28,763
+Let's see what it is.
+
+431
+00:37:30,223 --> 00:37:33,203
+First, evaluate the function at that point, get two.
+
+432
+00:37:33,203 --> 00:37:41,483
+And then, in order, evaluate the partial derivative with respect to each independent variable in the question x, y, z,
+
+433
+00:37:41,583 --> 00:37:44,583
+and then multiply them with the differential or the increments.
+
+434
+00:37:45,963 --> 00:37:49,783
+So, f2, 1, 0.
+
+435
+00:37:50,423 --> 00:37:51,683
+fx, 2, 1, 0.
+
+436
+00:37:51,963 --> 00:37:52,903
+x minus 2.
+
+437
+00:37:53,103 --> 00:37:55,403
+No point is given, so only x minus 2.
+
+438
+00:37:55,763 --> 00:37:59,243
+y minus 1, z minus 0, resulting this move.
+
+439
+00:37:59,243 --> 00:38:09,663
+So, the linear form of this function at that point is 3x minus 2y plus 3z minus 2.
+
+440
+00:38:21,364 --> 00:38:25,103
+Dilearizasyon, Differential, is okay.
+
+441
+00:38:27,684 --> 00:38:29,684
+And any question? I think it's so easy.
+
+442
+00:38:30,423 --> 00:38:32,503
+Not a complicated point it has.
+
+443
+00:38:33,983 --> 00:38:38,563
+If we have no question, I want to continue with the next topic,
+
+444
+00:38:39,103 --> 00:38:41,503
+which is the extremelis and saddle points.
+
+445
+00:38:47,572 --> 00:38:54,751
+Evet, bu şimdi.
+
+446
+00:38:54,751 --> 00:38:56,711
+Wait for me.
+
+447
+00:39:06,516 --> 00:39:07,516
+Next one
+
+448
+00:39:11,731 --> 00:39:37,532
+Ekstrem values. Ekstrem values, we did in the Mathematics 1 lecture, and for single variable cases, but don't worry, this is easier than the single variable case because some different possibilities, different cases arises in single variable cases and finding the ekstrem values.
+
+449
+00:39:37,532 --> 00:39:55,032
+But here, for several variable function, since it is so hard to specify the points, some methods you have and then you will just apply them and so easy. Don't worry, it's an easy topic again. Just be careful. Wait for me to share.
+
+450
+00:39:58,612 --> 00:40:02,112
+Bu yüzden bu birçok varıcılık var.
+
+451
+00:40:02,112 --> 00:40:05,612
+Bu birçok varıcılık var.
+
+452
+00:40:05,612 --> 00:40:10,612
+Bu, bu birçok varıcılık var.
+
+453
+00:40:10,612 --> 00:40:14,612
+Çünkü iki varıcılık varıcılık var.
+
+454
+00:40:14,612 --> 00:40:20,612
+Bu, bu birçok varıcılık var.
+
+455
+00:40:20,612 --> 00:40:25,612
+Ve bu birçok varıcılık var.
+
+456
+00:40:25,612 --> 00:40:52,041
+Bu, bu birçok varıcılık varıcılık varıcılık varıcılık varıcılık varıcılık varıcılık varıcılık varıcılık varıcılık varıcılık varıcılık varıcılık varıcılık varıcılık varıcılık varıcılık varıcılık varıcılık varıcılık varıcılık varıcılık varıcılık varıcılık varıcılık varıcılık varıcılık varıcılık varıcılık varıcılık varıcılık varıcılık varıcılık varıcılık varıcılık varıcılık varıcılık varıcılık varıcılık varıcılık varıcılık varıcılık varıcılık varı
+
+457
+00:41:05,012 --> 00:41:06,492
+Let's remember so together.
+
+458
+00:41:08,711 --> 00:41:14,052
+Do you remember critical points? I think you must remember critical points.
+
+459
+00:41:17,364 --> 00:41:21,704
+Evet, yes, you're right. Yes, you're right, [öğrenci] and [öğrenci]. You're right.
+
+460
+00:41:22,204 --> 00:41:26,124
+Critical points are the points where the derivative becomes zero.
+
+461
+00:41:26,463 --> 00:41:32,304
+Because when the derivative becomes zero, we will just think, what's happening to function, the derivative becomes zero?
+
+462
+00:41:34,884 --> 00:41:41,963
+Means, can you tell me geometrically what happens when the derivative is zero at a point for single variable case?
+
+463
+00:41:42,884 --> 00:41:46,144
+What happens at a point, just think the graph of a function?
+
+464
+00:41:47,364 --> 00:41:49,324
+And the derivative becomes zero.
+
+465
+00:41:50,443 --> 00:41:52,063
+Geometrically, what does it mean?
+
+466
+00:41:53,624 --> 00:41:55,083
+Which point of the parabola?
+
+467
+00:41:55,083 --> 00:41:55,103
+Hmm, which point of the parabola?
+
+468
+00:42:01,619 --> 00:42:19,759
+I think you're right. That mean, yes, Şehirvan, you're right. When the tangent, when the slope of the adjusting single variable function, for example, the parabola at the peak point, we have derivative is zero.
+
+469
+00:42:20,440 --> 00:42:31,539
+Like Alosu says, yes, you're right. And what's happening at that point? The function has the slope, the curve has the slope, which is zero at that point.
+
+470
+00:42:31,619 --> 00:42:34,319
+means the derivative becomes zero, means
+
+471
+00:42:38,963 --> 00:42:40,963
+Bir şey yapmak için bir şey yapmak.
+
+472
+00:42:40,963 --> 00:42:47,963
+Bu, bu nokta bir nokta.
+
+473
+00:42:47,963 --> 00:42:49,963
+Çünkü, bu nokta bir nokta,
+
+474
+00:42:49,963 --> 00:42:51,963
+derivatağın bir nokta,
+
+475
+00:42:51,963 --> 00:45:04,963
+bir nokta,
+
+476
+00:45:07,827 --> 00:45:13,547
+For a function f, we look for points where the surface z has a horizontal tangent plane.
+
+477
+00:45:14,987 --> 00:45:18,608
+What does it mean, horizontal tangent plane, for a surface?
+
+478
+00:45:23,092 --> 00:45:31,352
+Like having zero slopes of a function, single variable function.
+
+479
+00:45:32,392 --> 00:45:36,952
+Zero points, that means zero slope, that means zero derivative.
+
+480
+00:45:37,692 --> 00:45:39,852
+That is parallel to x-axis, for example.
+
+481
+00:45:40,311 --> 00:45:43,972
+Here, we will just look for the horizontal.
+
+482
+00:45:44,311 --> 00:45:46,632
+Tangent plane means horizontal to xy plane.
+
+483
+00:45:47,552 --> 00:45:51,711
+Parallel to xy plane, it means, okay, that's what horizontal tangent planes means,
+
+484
+00:45:51,711 --> 00:45:57,552
+where the function has zero partial derivatives, so that they are horizontal.
+
+485
+00:45:57,552 --> 00:46:05,392
+That means parallel to xy plane, means partial derivatives with respect to x and y are zero.
+
+486
+00:46:06,092 --> 00:46:08,372
+Can you imagine it? Is it okay?
+
+487
+00:46:09,251 --> 00:46:14,692
+That means these points will be the potentially extreme points,
+
+488
+00:46:14,972 --> 00:46:18,211
+for local maximum, minimum, and subtle points.
+
+489
+00:46:18,211 --> 00:46:22,492
+That means parallality, we are just searching again.
+
+490
+00:46:23,092 --> 00:46:26,692
+Parallality means generally making the partial derivative,
+
+491
+00:46:27,112 --> 00:46:30,271
+or for single variable case, ordinary derivative, zero.
+
+492
+00:46:30,271 --> 00:46:30,731
+So...
+
+493
+00:46:30,731 --> 00:46:34,012
+...
+
+494
+00:46:35,731 --> 00:46:38,731
+Ve de definiçiyon.
+
+495
+00:46:40,231 --> 00:46:43,731
+Let f be defined on a region R containing AB.
+
+496
+00:46:44,132 --> 00:46:48,032
+Çünkü ekran points, we are just searching for this topic.
+
+497
+00:46:48,152 --> 00:46:53,431
+That's why always we are on a neighborhood of the point AB, on an open region of AB.
+
+498
+00:46:53,992 --> 00:46:56,231
+Point by point we are just thinking, that's why.
+
+499
+00:46:57,012 --> 00:46:58,632
+Let's follow these steps.
+
+500
+00:46:58,632 --> 00:47:05,811
+One, f AB is the local maximum value of f if, if AB is greater than the other values.
+
+501
+00:47:06,451 --> 00:47:06,971
+But where?
+
+502
+00:47:07,871 --> 00:47:11,672
+For all domain points in an open disk centered at AB.
+
+503
+00:47:12,251 --> 00:47:14,851
+Just think of a circle, including AB.
+
+504
+00:47:15,532 --> 00:47:23,391
+If all the values are less than our value, that means our value is the local maximum because locally it is maximal.
+
+505
+00:47:23,391 --> 00:47:32,572
+Maybe outside of this disk or this circle, outside of this disk, maybe the other values will be greater than this value.
+
+506
+00:47:33,251 --> 00:47:34,271
+We cannot know.
+
+507
+00:47:34,351 --> 00:47:35,652
+We are just searching locally.
+
+508
+00:47:35,992 --> 00:47:37,231
+Locally we are just searching.
+
+509
+00:47:37,711 --> 00:47:41,251
+That's why it is local maximum value.
+
+510
+00:47:41,512 --> 00:47:44,072
+And we need to do it for several variable function.
+
+511
+00:47:45,172 --> 00:47:52,271
+For single variable case, we were just talking about the absolute maximum, absolute minimum.
+
+512
+00:47:52,271 --> 00:47:53,971
+But here we cannot.
+
+513
+00:47:57,231 --> 00:47:59,192
+Secondly, what about local minimum?
+
+514
+00:47:59,891 --> 00:48:03,572
+Again, we are on a region, an open disk.
+
+515
+00:48:03,692 --> 00:48:06,112
+Open disk means a circle, you can just think.
+
+516
+00:48:06,251 --> 00:48:08,092
+Okay, an open neighborhood, you can just think.
+
+517
+00:48:08,092 --> 00:48:10,831
+A circle, including or centered at AB.
+
+518
+00:48:11,431 --> 00:48:16,831
+Every point in this circle, in this disk, is greater than our value.
+
+519
+00:48:16,831 --> 00:48:19,831
+That means our value is the local minimum.
+
+520
+00:48:20,552 --> 00:48:24,532
+Because this is the minimum value in this disk, maybe.
+
+521
+00:48:25,152 --> 00:48:29,152
+And another point outside of this can be less than this value.
+
+522
+00:48:29,791 --> 00:48:35,012
+So this value is the locally minimum value of this disk.
+
+523
+00:48:35,012 --> 00:48:38,431
+So at AB, we need to just think this case.
+
+524
+00:48:39,572 --> 00:48:42,311
+Local extrema are called the relative extrema.
+
+525
+00:48:44,311 --> 00:48:47,512
+Maximum point, maxima, local minima.
+
+526
+00:48:47,652 --> 00:48:48,931
+You can just think extrema.
+
+527
+00:48:49,211 --> 00:48:51,112
+That means extrema means extrema points.
+
+528
+00:48:52,052 --> 00:48:55,831
+So relative extrema, because locally we are just looking.
+
+529
+00:48:56,012 --> 00:49:00,032
+Not any point in the full domain set we can just search.
+
+530
+00:49:00,612 --> 00:49:02,032
+That's why we cannot do it.
+
+531
+00:49:02,032 --> 00:49:04,831
+That's why we are just talking about the locally.
+
+532
+00:49:05,032 --> 00:49:07,072
+That means relative extrema.
+
+533
+00:49:07,371 --> 00:49:11,211
+According to some specific part of the full domain,
+
+534
+00:49:11,471 --> 00:49:13,012
+we are just classifying.
+
+535
+00:49:13,371 --> 00:49:16,072
+That's why it's a relatively extrema point.
+
+536
+00:49:17,052 --> 00:49:17,992
+Are you okay up to now?
+
+537
+00:49:18,092 --> 00:49:23,351
+Do you understand the main idea and why we are trying to test cases?
+
+538
+00:49:24,211 --> 00:49:27,431
+Because we are just searching the local extrema points
+
+539
+00:49:27,431 --> 00:49:28,952
+of a several variable function.
+
+540
+00:49:28,951 --> 00:49:33,552
+And looking for horizontal tangent planes,
+
+541
+00:49:33,851 --> 00:49:38,612
+which means making up the partial derivative zero or undefined.
+
+542
+00:49:39,612 --> 00:49:40,632
+Okay, nice.
+
+543
+00:49:40,632 --> 00:49:53,251
+Thank you.
+
+544
+00:49:47,027 --> 00:49:50,307
+So we have some tests.
+
+545
+00:49:51,627 --> 00:49:55,507
+First one, the first derivative test for local extranvilles
+
+546
+00:49:55,507 --> 00:49:58,187
+and also we will have the second derivative test.
+
+547
+00:49:58,587 --> 00:50:02,547
+The first derivative test is used to specify the critical points.
+
+548
+00:50:02,867 --> 00:50:05,507
+Second derivative test is used to classify them.
+
+549
+00:50:05,947 --> 00:50:08,827
+That means understand, are they really critical?
+
+550
+00:50:09,067 --> 00:50:10,987
+That means, I'm sorry, are they really extranvilles?
+
+551
+00:50:11,267 --> 00:50:15,467
+Because not every critical point needs to be an extranvilles point.
+
+552
+00:50:15,467 --> 00:50:17,307
+Just remember in the single variable case,
+
+553
+00:50:17,867 --> 00:50:20,667
+you will just specify lots of critical points
+
+554
+00:50:20,667 --> 00:50:24,827
+and sometimes some of them are, how can we say,
+
+555
+00:50:25,347 --> 00:50:28,387
+really an extranvilles point.
+
+556
+00:50:28,387 --> 00:50:31,387
+Here, again the same.
+
+557
+00:50:33,747 --> 00:50:38,147
+First we need to specify the critical points and then classify them.
+
+558
+00:50:38,867 --> 00:50:42,707
+Maybe some of them will be maximum, some of them will be minimum,
+
+559
+00:50:42,707 --> 00:50:44,987
+some of them will be subtle point.
+
+560
+00:50:45,627 --> 00:50:49,027
+Later we will see what is a subtle point means.
+
+561
+00:50:51,227 --> 00:50:54,227
+So the first derivative test says that
+
+562
+00:50:54,227 --> 00:50:58,627
+if f has a local maximum or minimum value at an interior point,
+
+563
+00:50:59,347 --> 00:51:00,827
+ab of its domain,
+
+564
+00:51:01,047 --> 00:51:03,687
+and if the first partial derivatives exist there,
+
+565
+00:51:04,047 --> 00:51:07,447
+then the partial derivatives at that point, of course, must be zero.
+
+566
+00:51:07,447 --> 00:51:10,627
+That means they are on the tangent plane,
+
+567
+00:51:11,247 --> 00:51:13,567
+horizontal tangent plane, these points.
+
+568
+00:51:13,687 --> 00:51:16,707
+If we have the locally extranvilles points,
+
+569
+00:51:17,067 --> 00:51:20,107
+they are on the horizontal tangent plane.
+
+570
+00:51:20,707 --> 00:51:24,127
+So fx and fy at that point, it must be zero.
+
+571
+00:51:24,387 --> 00:51:28,067
+That means both partial derivatives must be zero on a common point.
+
+572
+00:51:28,187 --> 00:51:28,907
+This is important.
+
+573
+00:51:29,987 --> 00:51:32,268
+So to specify the critical points,
+
+574
+00:51:32,268 --> 00:51:36,087
+you have to just consider a common solution you need.
+
+575
+00:51:36,087 --> 00:51:40,587
+that they must be at the same time zero for one point.
+
+576
+00:51:42,768 --> 00:51:45,187
+So let's see the definition of the critical point
+
+577
+00:51:45,187 --> 00:51:48,047
+and interior point of the domain.
+
+578
+00:51:48,147 --> 00:51:50,167
+Interior point, do you remember what is it?
+
+579
+00:51:53,027 --> 00:51:56,107
+That means not on the boundary, interior point,
+
+580
+00:51:56,107 --> 00:52:00,787
+just inside of the region, domain.
+
+581
+00:52:02,787 --> 00:52:03,747
+Each nokta.
+
+582
+00:52:03,747 --> 00:52:08,167
+Because on boundary points,
+
+583
+00:52:08,247 --> 00:52:12,467
+we cannot talk about the absolute cases.
+
+584
+00:52:13,747 --> 00:52:16,607
+At boundary points or end points,
+
+585
+00:52:17,127 --> 00:52:18,707
+we may have different cases.
+
+586
+00:52:19,087 --> 00:52:21,347
+So we will just talk the interior points.
+
+587
+00:52:22,427 --> 00:52:25,127
+An interior point of the domain of a function f,
+
+588
+00:52:25,227 --> 00:52:27,467
+where both fx and fy are zero.
+
+589
+00:52:27,467 --> 00:52:28,847
+Both of them are zero.
+
+590
+00:52:28,847 --> 00:52:33,707
+Or where one or both, fx and fy, do not exist.
+
+591
+00:52:34,887 --> 00:52:37,427
+So such a point is a critical point of f.
+
+592
+00:52:38,087 --> 00:52:41,547
+That means all the partial derivatives must be zero.
+
+593
+00:52:42,327 --> 00:52:46,547
+Or one of them or both of them fails to exist.
+
+594
+00:52:47,387 --> 00:52:49,127
+That means no derivative, for example.
+
+595
+00:52:49,687 --> 00:52:51,167
+Again, it's a critical point.
+
+596
+00:52:51,167 --> 00:52:54,907
+And you have to specify every critical point
+
+597
+00:52:54,907 --> 00:52:58,367
+before classifying them correctly.
+
+598
+00:53:02,387 --> 00:53:25,688
+The next definition about saddle point. A differentiable function f has a saddle point at a critical point ab, if in every open disk centered at ab, there are domain points where fx y is greater than f ab, and domain points where fx y is less than f ab. What does this mean?
+
+599
+00:53:30,996 --> 00:53:34,175
+İki videoda, we have a critical point, partial derivative zero.
+
+600
+00:53:34,695 --> 00:53:34,776
+Okay.
+
+601
+00:53:36,016 --> 00:53:40,536
+And definition, the first definition, just remember about maximum and minimum,
+
+602
+00:53:41,416 --> 00:53:44,635
+says that in a disk centered at AB,
+
+603
+00:53:46,536 --> 00:53:48,376
+an open disk centered at AB,
+
+604
+00:53:48,536 --> 00:53:51,996
+if all the values are greater than our value, this is local minimum.
+
+605
+00:53:53,016 --> 00:53:56,276
+And similarly, if all the values are less than our value,
+
+606
+00:53:56,436 --> 00:53:58,476
+that means this is the maximum, local maximum.
+
+607
+00:53:58,476 --> 00:54:00,816
+but here, this definition says that
+
+608
+00:54:00,816 --> 00:54:04,596
+we may have some points greater than our value,
+
+609
+00:54:04,776 --> 00:54:06,115
+some points less than our value.
+
+610
+00:54:06,215 --> 00:54:08,056
+That means we cannot say
+
+611
+00:54:08,056 --> 00:54:10,436
+all the values are less
+
+612
+00:54:10,436 --> 00:54:12,576
+or all the values are greater than our value.
+
+613
+00:54:12,936 --> 00:54:14,316
+We cannot differ them.
+
+614
+00:54:14,876 --> 00:54:17,036
+Some values are less, some values are greater.
+
+615
+00:54:17,556 --> 00:54:19,695
+Means not the critical,
+
+616
+00:54:19,916 --> 00:54:21,396
+I'm sorry, critical but
+
+617
+00:54:21,396 --> 00:54:22,916
+not the extreme point.
+
+618
+00:54:23,356 --> 00:54:24,936
+Not maximum or not minimum.
+
+619
+00:54:25,776 --> 00:54:26,316
+None of them.
+
+620
+00:54:26,796 --> 00:54:27,956
+That's why in this case,
+
+621
+00:54:28,476 --> 00:54:58,456
+this is the subtle point.
+
+622
+00:54:40,083 --> 00:54:44,503
+Anifleksiyon point is related with the second order derivative, [öğrenci].
+
+623
+00:54:44,983 --> 00:54:56,384
+In second order derivative, the sign of the, how can I say, the sign of the, I'm sorry, the concovity is changing.
+
+624
+00:54:56,503 --> 00:54:59,063
+It's the point where the concovity is changed.
+
+625
+00:54:59,623 --> 00:55:02,623
+So we just look for the sign of the second order derivative.
+
+626
+00:55:04,603 --> 00:55:08,543
+Yes, because concovity is changing for single variable functions.
+
+627
+00:55:10,083 --> 00:55:17,063
+At saddle, the derivative becomes zero, but we cannot classify that point.
+
+628
+00:55:17,884 --> 00:55:20,603
+Not the biggest point, not the least point.
+
+629
+00:55:21,183 --> 00:55:23,123
+Sometimes bigger, sometimes less.
+
+630
+00:55:23,583 --> 00:55:27,603
+Means, not a critical, but not an extreme point.
+
+631
+00:55:28,023 --> 00:55:28,503
+That's all.
+
+632
+00:55:32,563 --> 00:55:39,844
+And the corresponding point AB, FAB on the surface Z is called the saddle point of the surface.
+
+633
+00:55:42,844 --> 00:55:50,703
+For example, it says find the critical points of F, X squared plus Y squared.
+
+634
+00:55:52,783 --> 00:55:55,023
+How can we get the critical points?
+
+635
+00:55:55,023 --> 00:56:03,003
+First, we need to just think. We need to just specify the points which make both partial derivatives zero.
+
+636
+00:56:06,103 --> 00:56:10,963
+F X and F Y, there, 2 X and 2 Y make the equal to zero.
+
+637
+00:56:12,344 --> 00:56:16,263
+Don't forget a common solution you need.
+
+638
+00:56:16,723 --> 00:56:22,163
+That means you need a point which makes both partial derivatives zero at the same time.
+
+639
+00:56:22,163 --> 00:56:28,123
+So only zero zero origin. It makes both of them zero.
+
+640
+00:56:32,596 --> 00:56:36,496
+What about this one? Find the critical points of this function.
+
+641
+00:56:38,275 --> 00:56:43,096
+Shall you find them for me? Which points? I'm waiting.
+
+642
+00:57:24,148 --> 00:57:25,288
+Okay, anyone else?
+
+643
+00:57:39,923 --> 00:57:40,884
+Only one point.
+
+644
+00:57:59,603 --> 00:58:00,743
+0 0, ok.
+
+645
+00:58:02,364 --> 00:58:02,763
+Ok.
+
+646
+00:58:06,931 --> 00:58:08,111
+Now we will check.
+
+647
+00:58:10,631 --> 00:58:11,192
+Let's see.
+
+648
+00:58:12,831 --> 00:58:14,451
+First we get partial derivative.
+
+649
+00:58:15,911 --> 00:58:16,951
+fx and fy.
+
+650
+00:58:17,851 --> 00:58:21,631
+And the function is x plus y to 4.
+
+651
+00:58:30,612 --> 00:58:39,211
+And so f x is 2 times x plus y, f y is 2x plus y plus 4 times y cube.
+
+652
+00:58:41,211 --> 00:58:47,052
+We need to just find which point makes those functions both 0.
+
+653
+00:58:48,331 --> 00:58:50,731
+As you see, 0, 0 only.
+
+654
+00:58:51,831 --> 00:58:53,791
+How can we get the common solution?
+
+655
+00:58:53,992 --> 00:58:56,731
+Sometimes it gets a little bit difficult.
+
+656
+00:58:56,731 --> 00:59:05,472
+If I were you, for example, these two equations, make them equal to 0 and try to solve it.
+
+657
+00:59:05,972 --> 00:59:07,452
+And two variables what you have.
+
+658
+00:59:08,172 --> 00:59:16,172
+So, for example, choosing the easier one, shorter one, and substitute to the longer one.
+
+659
+00:59:16,731 --> 00:59:18,492
+And then specify value.
+
+660
+00:59:19,231 --> 00:59:21,711
+And then get the point, for example, here 0, 0.
+
+661
+00:59:22,472 --> 00:59:23,472
+Only 0, 0.
+
+662
+00:59:23,472 --> 00:59:53,452
+And then get the point, for example.
+
+663
+00:59:34,291 --> 00:59:35,851
+I'm sorry, classification.
+
+664
+00:59:43,155 --> 00:59:50,036
+I'm sorry, here I've forgotten to put the classification here.
+
+665
+00:59:51,315 --> 00:59:57,275
+So now let's have a break and then I will just complete the presentation now and then we will continue.
+
+666
+00:59:57,416 --> 01:00:03,695
+Okay, let's have a break for 10 minutes and then we will continue with the exercises.
+
+667
+01:16:09,268 --> 01:16:14,627
+Hi again, if you are okay let's continue with the second order derivative test.
+
+668
+01:16:17,828 --> 01:16:23,427
+In the first derivative test we have specified and we have learned what to do to specify the
+
+669
+01:16:23,427 --> 01:16:29,908
+critical points and then now with the second derivative test we will learn how can we classify
+
+670
+01:16:29,908 --> 01:16:39,108
+them. Let's see, after this theorem we will have exercises. Suppose that f and its first and second
+
+671
+01:16:39,108 --> 01:16:47,908
+partial derivatives are continuous throughout an open disk, standard at a b and that f is zero,
+
+672
+01:16:47,908 --> 01:16:55,587
+f is zero. That is not any point. The points which make the first order partial derivative zero.
+
+673
+01:16:56,148 --> 01:17:04,228
+Then consider the second derivatives, second order derivatives f , f , f , and f .
+
+674
+01:17:04,228 --> 01:17:13,268
+At that point a b, that means at critical points, these second order partial derivatives must be
+
+675
+01:17:13,268 --> 01:17:20,228
+evaluated. And then it says consider a specific expression b squared minus a c, that means b
+
+676
+01:17:20,948 --> 01:17:30,148
+is mixed derivative f , but the second power minus a times c, that means multiplication of pure second
+
+677
+01:17:30,148 --> 01:17:38,788
+order derivatives. Mixed minus multiplication of second order pure derivatives. And if this expression is
+
+678
+01:17:40,627 --> 01:17:47,347
+negative, if b squared minus a c is negative, then it means it's the maximum or minimum.
+
+679
+01:17:48,868 --> 01:17:56,627
+Okay, first look, if b squared minus a c is negative, okay your point is extremum, that means maximum or minimum.
+
+680
+01:17:56,627 --> 01:18:02,948
+Which one? If a is less than zero, f , it means it's the local maximum.
+
+681
+01:18:03,988 --> 01:18:13,028
+If a is greater than zero, f , at that point, it is local minimum. What if we have b squared minus a c is positive?
+
+682
+01:18:13,908 --> 01:18:20,547
+It means f is a saddle point. That means this point is critical but not extremum, so it's a saddle point.
+
+683
+01:18:20,547 --> 01:18:29,828
+What if we have zero? When it is zero, the test is inconclusive. That means you have a critical point
+
+684
+01:18:29,828 --> 01:18:34,948
+but you cannot test it with the second derivative test. We need to do something different and we will
+
+685
+01:18:34,948 --> 01:18:41,908
+have exercises about it. In the case that once we have the b squared minus a c is equal to zero and what to do?
+
+686
+01:18:41,908 --> 01:18:50,948
+So it says we must find some other way to determine the behavior of f at a b and a close neighborhood of a b.
+
+687
+01:18:53,108 --> 01:18:55,028
+Now we can continue with the exercises.
+
+688
+01:18:58,307 --> 01:18:58,788
+Firstly,
+
+689
+01:19:01,828 --> 01:19:06,307
+it says that the critical points are given in the question. Of course, not normal you will have.
+
+690
+01:19:06,307 --> 01:19:16,467
+It says, classify the critical points 0, 0 and 1 and 1 of the function f. 2x cubed minus 6xy plus 3y squared.
+
+691
+01:19:16,467 --> 01:19:24,148
+Now please write the second order derivatives and for every critical point, for each critical point,
+
+692
+01:19:24,148 --> 01:19:30,148
+apply the second derivative test.
+
+693
+01:19:30,131 --> 01:19:33,652
+For every critical point the test must be applied. Let's see.
+
+694
+01:19:35,271 --> 01:19:36,251
+This is our function.
+
+695
+01:19:38,271 --> 01:19:41,531
+Second order derivatives we need.
+
+696
+01:19:41,531 --> 01:19:44,211
+Fx, x, fxy, fy, y.
+
+697
+01:19:44,971 --> 01:19:48,531
+Fx is 6x²-6y.
+
+698
+01:19:49,071 --> 01:19:54,591
+So fx, x, 12x, fy, minus 6x plus 6y.
+
+699
+01:19:54,991 --> 01:19:55,991
+So the second order.
+
+700
+01:19:55,991 --> 01:19:58,111
+Fx, y, 6x mixed.
+
+701
+01:19:58,571 --> 01:20:00,652
+Fx, y or fy, x.
+
+702
+01:20:00,731 --> 01:20:01,331
+It doesn't matter.
+
+703
+01:20:02,771 --> 01:20:05,791
+As you see fx with respect to y minus 6.
+
+704
+01:20:06,891 --> 01:20:08,571
+So every point.
+
+705
+01:20:09,692 --> 01:20:11,171
+Specify a, b, c.
+
+706
+01:20:11,951 --> 01:20:13,152
+a is fx, x.
+
+707
+01:20:13,291 --> 01:20:14,531
+b is fx, y.
+
+708
+01:20:14,671 --> 01:20:15,831
+c is fy, y.
+
+709
+01:20:16,451 --> 01:20:17,931
+Evaluate all of them.
+
+710
+01:20:18,551 --> 01:20:21,971
+Evaluate a, b, c again and again for every critical point.
+
+711
+01:20:22,111 --> 01:20:22,251
+Okay.
+
+712
+01:20:22,511 --> 01:20:24,431
+They are distinct always.
+
+713
+01:20:24,431 --> 01:20:27,251
+For 0, 0, a is 0.
+
+714
+01:20:27,571 --> 01:20:29,751
+b is minus 6, c is 6.
+
+715
+01:20:30,231 --> 01:20:30,551
+Okay.
+
+716
+01:20:30,751 --> 01:20:32,471
+So what is b²-ac?
+
+717
+01:20:33,731 --> 01:20:34,291
+36.
+
+718
+01:20:35,091 --> 01:20:35,491
+Positive.
+
+719
+01:20:35,991 --> 01:20:38,071
+When it is positive it means saddle point.
+
+720
+01:20:38,071 --> 01:20:39,071
+That's what I'm saying.
+
+721
+01:20:39,071 --> 01:20:50,451
+I'm going to be able to do it.
+
+722
+01:20:43,444 --> 01:20:53,164
+For the what? Next critical point, one and one. For one and one, a is 12, b is minus 6, c is 6.
+
+723
+01:20:55,724 --> 01:21:03,024
+Second order derivatives at that point. b squared minus ac, negative. That means an extreme point.
+
+724
+01:21:03,024 --> 01:21:11,423
+So, directly look up the sine of a. a is positive. Yes, this is positive. So, it's the local minimum.
+
+725
+01:21:14,836 --> 01:21:20,076
+As you see, very easy and funny, I think. You are just tabulating second order derivatives.
+
+726
+01:23:42,644 --> 01:23:44,644
+Tukat, mın ın ın
+
+727
+01:23:48,340 --> 01:23:49,539
+On which point, [öğrenci]?
+
+728
+01:23:52,039 --> 01:23:54,420
+First the critical point, last tell me.
+
+729
+01:24:23,828 --> 01:24:24,368
+Hmm.
+
+730
+01:24:28,404 --> 01:24:31,864
+But here we are just searching firstly critical points.
+
+731
+01:24:33,504 --> 01:24:34,864
+Okay, I understand you.
+
+732
+01:24:36,884 --> 01:24:45,704
+But the first step must be the first order derivatives, making it zero and then classify.
+
+733
+01:24:46,864 --> 01:24:49,264
+Yes, you're right. Second order derivatives are okay.
+
+734
+01:24:49,464 --> 01:24:51,544
+But which point to consider?
+
+735
+01:24:53,284 --> 01:24:54,304
+ABC is okay.
+
+736
+01:24:54,584 --> 01:24:56,564
+So B squared minus AC is okay.
+
+737
+01:24:56,564 --> 01:24:58,264
+But which point we are working?
+
+738
+01:24:58,724 --> 01:25:01,224
+First, you need to specify the critical point.
+
+739
+01:25:01,984 --> 01:25:06,364
+First order partial derivative, make them equal to zero, common solution, do it.
+
+740
+01:25:06,804 --> 01:25:11,624
+And then specify a critical point and then look if it is extreme or not.
+
+741
+01:25:13,824 --> 01:25:14,144
+Okay.
+
+742
+01:25:15,464 --> 01:25:19,764
+So here, let's look at the first order derivatives, fx and f1.
+
+743
+01:25:20,744 --> 01:25:23,584
+fx is y minus 2x minus 2.
+
+744
+01:25:24,084 --> 01:25:26,124
+f1 is x minus 2, y minus 2.
+
+745
+01:25:26,124 --> 01:25:31,824
+They are both equal to zero for a common point for one or more common points.
+
+746
+01:25:33,924 --> 01:25:36,544
+And a common solution.
+
+747
+01:25:36,544 --> 01:25:40,944
+As a result, minus 2 and minus 2.
+
+748
+01:25:42,464 --> 01:25:45,024
+This point on the critical number point we have.
+
+749
+01:25:45,024 --> 01:25:46,024
+is equal to zero for a common point.
+
+750
+01:25:46,024 --> 01:25:47,844
+So here, let's look at the first order.
+
+751
+01:25:47,844 --> 01:25:58,844
+Let's look at the first order.
+
+752
+01:25:49,716 --> 01:25:55,776
+And then this critical point, so get second order partial derivatives.
+
+753
+01:25:57,356 --> 01:26:03,456
+And for any point, we will have, like you said, a is minus 2, b is 1 and c is minus 2.
+
+754
+01:26:03,876 --> 01:26:11,496
+And so b squared minus ac is minus 3, negative, that means it's an external point.
+
+755
+01:26:11,736 --> 01:26:16,256
+So direct lookup for the sine of a, which is negative, b is maximum.
+
+756
+01:26:16,256 --> 01:26:20,195
+This must be local external, but local maximum.
+
+757
+01:26:21,115 --> 01:26:25,136
+a is less than 0 because, okay, this point is a local maximum.
+
+758
+01:26:36,500 --> 01:26:38,420
+Are you okay about the solution?
+
+759
+01:26:40,380 --> 01:26:40,939
+Okay.
+
+760
+01:26:41,899 --> 01:26:43,399
+So let's continue with the next one.
+
+761
+01:26:44,140 --> 01:26:45,159
+Now you can do it.
+
+762
+01:26:45,439 --> 01:26:48,439
+Firstly, make the first order partial derivative equal to zero,
+
+763
+01:26:48,960 --> 01:26:53,220
+specify the critical points, and then continue with the second order derivatives.
+
+764
+01:26:55,159 --> 01:26:57,779
+And do the test for each critical point.
+
+765
+01:27:44,051 --> 01:27:45,112
+Have you find it?
+
+766
+01:27:50,292 --> 01:27:51,372
+10.00
+
+767
+01:28:04,595 --> 01:28:05,695
+2-2, ok.
+
+768
+01:28:21,076 --> 01:28:21,916
+Anyone else?
+
+769
+01:28:34,612 --> 01:28:36,172
+0, 0, and 2, 2.
+
+770
+01:28:37,511 --> 01:28:37,811
+Okay.
+
+771
+01:28:38,612 --> 01:28:39,452
+Let's see why.
+
+772
+01:28:44,500 --> 01:28:50,340
+[öğrenci], if you want I can repeat it. Okay, tell me. I can repeat what we are doing.
+
+773
+01:28:51,220 --> 01:28:58,500
+First step, first step, choosing critical points. Okay, critical points we need.
+
+774
+01:28:59,060 --> 01:29:03,779
+Critical points are the points which makes the first order partial derivative zero or undefined.
+
+775
+01:29:04,340 --> 01:29:10,020
+So firstly, the first step always having the first order partial derivatives fx and fy.
+
+776
+01:29:10,020 --> 01:29:24,260
+And look, but the common solution, that means you need to just get such points, critical points, that these points are making the both partial derivatives equal to zero.
+
+777
+01:29:24,579 --> 01:29:27,340
+That's why common solution I mean always again and again.
+
+778
+01:29:28,619 --> 01:29:31,579
+Minus 6x plus 6y must be equal to zero.
+
+779
+01:29:31,659 --> 01:29:37,720
+At the same time, 6y minus 6y squared plus 6x must be equal to zero for the same points.
+
+780
+01:29:37,720 --> 01:29:45,079
+So in order to get the common solution of the equation of two variables, you need to just substitute one of them to the other one.
+
+781
+01:29:45,079 --> 01:29:46,920
+I think, in my opinion, I would do.
+
+782
+01:29:47,640 --> 01:29:49,960
+For example, from this equation, x is equal to 1.
+
+783
+01:29:50,199 --> 01:29:54,039
+Substitute here and then get y is 0 and y is 2 means
+
+784
+01:29:55,479 --> 01:29:57,720
+when y is 0, x is equal to 1.
+
+785
+01:29:57,720 --> 01:29:59,560
+When y is 0, x is 0.
+
+786
+01:29:59,640 --> 01:30:01,079
+It doesn't mean that's 0 too.
+
+787
+01:30:01,079 --> 01:30:04,119
+Okay, please be careful about specifying the critical points.
+
+788
+01:30:04,119 --> 01:30:06,359
+This is the value of y.
+
+789
+01:30:07,239 --> 01:30:08,840
+When y is 0, x is 0.
+
+790
+01:30:08,840 --> 01:30:10,439
+When y is 2, x is 2.
+
+791
+01:30:10,600 --> 01:30:13,800
+So 0, 0, 2, 2 are the critical points.
+
+792
+01:30:14,520 --> 01:30:15,960
+This is the first part.
+
+793
+01:30:15,960 --> 01:30:21,079
+First, specify critical points and then apply second derivative test.
+
+794
+01:30:22,439 --> 01:30:28,279
+Because second derivative test says that you have some critical points, let's classify them.
+
+795
+01:30:28,279 --> 01:30:32,039
+Let's understand are they really extra point or saddle point.
+
+796
+01:30:32,680 --> 01:30:37,159
+In order to understand them, we need to get the second order partial derivatives.
+
+797
+01:30:37,159 --> 01:30:39,800
+f , x , y , and f , y.
+
+798
+01:30:40,359 --> 01:30:45,319
+And evaluate them each in each critical point.
+
+799
+01:30:45,800 --> 01:30:49,319
+And then a, b, c we need to just consider.
+
+800
+01:30:49,319 --> 01:30:54,600
+A is f , x , x , b is f , x , y , c is f , y .
+
+801
+01:30:55,079 --> 01:30:59,560
+Evaluate these values and specify a, b, c for each critical point.
+
+802
+01:30:59,560 --> 01:31:03,560
+For example, for 0, 0, a is minus 6.
+
+803
+01:31:03,560 --> 01:31:06,439
+b is 6, c is z , 6 again.
+
+804
+01:31:06,439 --> 01:31:09,159
+According to these partial derivatives.
+
+805
+01:31:09,159 --> 01:31:11,640
+So for 0, 0, let's see what's happening.
+
+806
+01:31:12,439 --> 01:31:15,159
+b squared minus a, c is positive.
+
+807
+01:31:15,159 --> 01:31:17,079
+means not an extra point.
+
+808
+01:31:17,079 --> 01:31:18,119
+It's a subtle point.
+
+809
+01:31:18,840 --> 01:31:19,800
+It must be negative.
+
+810
+01:31:20,520 --> 01:31:20,840
+Okay.
+
+811
+01:31:22,039 --> 01:31:22,920
+For 2 and 2.
+
+812
+01:31:23,880 --> 01:31:26,760
+Specify again a, b, c for now 2 and 2.
+
+813
+01:31:27,640 --> 01:31:30,199
+f , x , at the point 2, 2.
+
+814
+01:31:30,199 --> 01:31:32,039
+a is minus 6.
+
+815
+01:31:32,039 --> 01:31:32,840
+b is 6.
+
+816
+01:31:33,399 --> 01:31:35,159
+c is minus 18.
+
+817
+01:31:36,199 --> 01:31:39,000
+Now let's consider b squared ac for this point.
+
+818
+01:31:40,279 --> 01:31:41,560
+They are always distinct.
+
+819
+01:31:41,560 --> 01:31:45,319
+b squared minus ac is negative here.
+
+820
+01:31:45,319 --> 01:31:47,399
+Means it is an extra point.
+
+821
+01:31:47,399 --> 01:31:50,520
+When it is negative, directly look up for the sign of a.
+
+822
+01:31:50,520 --> 01:31:51,800
+a or c, it doesn't matter.
+
+823
+01:31:52,520 --> 01:31:53,800
+a is minus 6.
+
+824
+01:31:53,800 --> 01:31:55,239
+That means negative.
+
+825
+01:31:55,239 --> 01:31:57,239
+So a local maximum point.
+
+826
+01:31:57,880 --> 01:32:00,439
+Now are you okay?
+
+827
+01:32:03,091 --> 01:32:03,971
+It's so easy.
+
+828
+01:32:07,971 --> 01:32:08,731
+Okay.
+
+829
+01:32:10,612 --> 01:32:11,891
+Okay, nice.
+
+830
+01:32:12,411 --> 01:32:13,692
+Let's continue with the next
+
+831
+01:32:13,692 --> 01:32:16,291
+exercise.
+
+832
+01:32:17,011 --> 01:32:17,731
+Yes.
+
+833
+01:32:19,331 --> 01:32:20,791
+Now let's do it.
+
+834
+01:32:21,152 --> 01:32:21,491
+For me.
+
+835
+01:32:23,131 --> 01:32:23,671
+You can.
+
+836
+01:32:24,451 --> 01:32:25,311
+Please be careful.
+
+837
+01:32:25,731 --> 01:32:28,251
+You have to specify every critical point.
+
+838
+01:32:28,251 --> 01:32:29,791
+Do not miss any of them.
+
+839
+01:32:29,791 --> 01:32:36,591
+Specify every point which is making the bold first order partial derivative is equal to zero.
+
+840
+01:33:46,931 --> 01:33:58,511
+Ah, yes, I'm sorry, I'm here now. Minus 1 over 2, 1 over 2. Let's see. Minus 1 over 2, 3 over 2. X is okay, you are mistaken about y.
+
+841
+01:34:06,579 --> 01:34:13,739
+What about the classification? Is it maximum, minimum, or saddle? Tell me and then we will see the solution.
+
+842
+01:34:44,307 --> 01:34:53,148
+Let's see. What about the others? Do you think so? Is it [öğrenci], [öğrenci], or [öğrenci]?
+
+843
+01:35:03,028 --> 01:35:03,708
+I'm waiting.
+
+844
+01:35:23,956 --> 01:35:31,956
+Evet, bu.
+
+845
+01:35:31,956 --> 01:35:33,956
+Evet.
+
+846
+01:35:33,956 --> 01:35:37,956
+Bu.
+
+847
+01:35:41,235 --> 01:35:46,456
+[öğrenci], do you have the problem about specifying the critical point or the second derivative test part?
+
+848
+01:35:53,716 --> 01:35:57,236
+Maybe I can help you about this problem.
+
+849
+01:36:01,716 --> 01:36:05,216
+Orada, you can talk to me if you want.
+
+850
+01:36:11,764 --> 01:36:12,324
+Possible.
+
+851
+01:36:20,948 --> 01:36:28,268
+Bu, çok değişiklikler. Partial derivative, bu, çok önemli, çalışan ve çalışan, çünkü,
+
+852
+01:36:28,268 --> 01:36:34,268
+bir problemle karşı derivata, bir şey yapamazsın. Bu, çok önemli. Bu, çok önemli.
+
+853
+01:36:34,268 --> 01:36:41,548
+Ve, yapabilirsiniz, yöntemler, ve bu, çok kolay.
+
+854
+01:36:41,548 --> 01:36:48,748
+I think there is no problem of you about the methods of critical and external points.
+
+855
+01:36:48,868 --> 01:36:49,387
+Hmm.
+
+856
+01:36:54,612 --> 01:36:55,971
+The previous question.
+
+857
+01:36:59,292 --> 01:37:00,212
+Let me look.
+
+858
+01:37:02,532 --> 01:37:03,132
+Yes?
+
+859
+01:37:07,604 --> 01:37:11,604
+ve respect to x, minus 6x plus 6y.
+
+860
+01:37:14,543 --> 01:37:19,264
+Ve respect to y, 6y minus 6y squared plus 6x.
+
+861
+01:37:19,704 --> 01:37:21,304
+Ve respect to x and y.
+
+862
+01:37:29,939 --> 01:37:36,679
+And then? Ha, okay. So, no problem. I hope.
+
+863
+01:37:40,372 --> 01:37:41,532
+Okay, not at all.
+
+864
+01:37:42,452 --> 01:37:43,192
+Now let's look.
+
+865
+01:37:44,632 --> 01:37:53,231
+This is fx, f1, ln x plus y with respect to x, 1 over x plus y plus x squared 2x, y 0.
+
+866
+01:37:53,652 --> 01:37:57,532
+With respect to y, again, 1 over x plus y.
+
+867
+01:37:58,032 --> 01:37:59,652
+This is 0, this is minus 1.
+
+868
+01:37:59,652 --> 01:38:01,552
+Okay, make them equal to 0.
+
+869
+01:38:02,212 --> 01:38:04,072
+And any common solution you can do,
+
+870
+01:38:04,072 --> 01:38:10,752
+and substitute one of them in the other one, in my opinion, is the more easier one and the general one.
+
+871
+01:38:11,771 --> 01:38:14,952
+And get x is minus 1 over 2, y is 3 over 2.
+
+872
+01:38:15,392 --> 01:38:17,311
+And only the critical point is this.
+
+873
+01:38:17,811 --> 01:38:24,292
+So get the second order partial derivatives and simplify a, b, c for this critical point.
+
+874
+01:38:25,311 --> 01:38:28,872
+fx, x is a for this point is 1.
+
+875
+01:38:28,872 --> 01:38:34,432
+The derivative of it with respect to x again, minus 1 over x plus y squared plus 2.
+
+876
+01:38:35,972 --> 01:38:42,832
+fx, y, now with respect to y, minus 1 over x plus y squared, 0, plus 0.
+
+877
+01:38:43,412 --> 01:38:47,372
+fy, 1, minus 1 over x plus y squared, plus 0.
+
+878
+01:38:47,372 --> 01:38:50,672
+Okay, second order partial derivatives and a, b, c.
+
+879
+01:38:51,532 --> 01:38:54,992
+a is 1, b is minus 1, c is minus 1.
+
+880
+01:38:54,992 --> 01:39:01,432
+So be careful once you substitute these at the points to the second order derivatives.
+
+881
+01:39:01,432 --> 01:39:04,952
+And look for b squared minus ac is positive.
+
+882
+01:39:05,771 --> 01:39:07,952
+So, subtle point and it's finished.
+
+883
+01:39:20,819 --> 01:39:23,219
+Are you okay? Any question?
+
+884
+01:39:33,332 --> 01:39:37,492
+Okay, nice. Let's continue with the next one.
+
+885
+01:39:39,192 --> 01:39:45,731
+Find the local external values of x cubed minus 3x squared plus 3xy squared minus 3y squared.
+
+886
+01:39:45,852 --> 01:39:47,832
+Let's do it together. I'm waiting.
+
+887
+01:39:48,652 --> 01:39:51,332
+First, tell me the critical points and then classify.
+
+888
+01:40:12,564 --> 01:40:14,284
+Be careful while solving it.
+
+889
+01:40:31,572 --> 01:40:35,712
+I think every possibility of making the both partial derivatives equal to zero.
+
+890
+01:40:48,180 --> 01:40:49,940
+Losts of points you will have here.
+
+891
+01:41:14,804 --> 01:41:16,623
+4 points you need to get here.
+
+892
+01:41:17,463 --> 01:41:19,064
+Wait for me, I'm writing here.
+
+893
+01:41:31,380 --> 01:41:45,840
+Evet, [öğrenci]. 1, 1. 1, minus 1. 1, 0, no. Be careful. 0, 0 is okay, but only 1, 0 you have a problem. Be careful.
+
+894
+01:41:54,515 --> 01:42:19,415
+Neunat, please be careful. I know in which step you are making the problem. I know. I can guess it. In which step you have the problem to get the mistaken critical points. 2, 0, yes. 0, 0, 2, 0, 1, 1, and 1, minus 1. Be careful.
+
+895
+01:42:25,300 --> 01:42:26,100
+Let's look.
+
+896
+01:42:30,036 --> 01:42:34,636
+Sometimes it's very hard to solve correctly and get all critical points. Be careful.
+
+897
+01:42:36,176 --> 01:42:41,536
+Fx'e 3x²-6x³3y² avoids 6xy-6y.
+
+898
+01:42:41,536 --> 01:42:49,836
+Okay. Make them equal to 0 and the S-UC is not easy to solve and get the points which make these both equations equal to 0.
+
+899
+01:42:49,975 --> 01:42:54,076
+It's not easy. Be careful. Always start from the easier one.
+
+900
+01:42:54,076 --> 01:43:09,975
+Here. This is easier because we have a factorization. 6y times x minus 1 equal to 0 means we can specify for which values of this equation becomes 0.
+
+901
+01:43:10,515 --> 01:43:11,895
+Y is 0 or x is 1?
+
+902
+01:43:12,636 --> 01:43:20,935
+For y is 0, of course, this condition must be substituted to the first equation because it must be 0 at the same time for the same case.
+
+903
+01:43:20,935 --> 01:43:31,815
+Same case. So again, apply y is 0 to this first equation and then search for y is 0, which also the points of x makes these equations equal to 0.
+
+904
+01:43:32,815 --> 01:43:39,735
+So x is 0 and 2 you get. But firstly, I think this is the first step that you have mistaken.
+
+905
+01:43:40,435 --> 01:43:45,775
+Y is 0, x is 1. That's why you just say that 1 and 0 as the critical point.
+
+906
+01:43:45,775 --> 01:43:46,676
+Maybe.
+
+907
+01:43:48,775 --> 01:43:55,076
+These are two different cases and these are the points only makes the second equation equal to 0, not this one.
+
+908
+01:43:55,615 --> 01:43:58,416
+So the solution of it cannot be a critical point only.
+
+909
+01:44:00,015 --> 01:44:02,096
+Y is 0 must apply this.
+
+910
+01:44:02,256 --> 01:44:05,096
+X is 1 must apply this to get the common solution.
+
+911
+01:44:05,096 --> 01:44:11,536
+So for y is 0, apply here and get x is 0 and x is 2 means.
+
+912
+01:44:11,916 --> 01:44:16,235
+For y is 0, x is 0. For y is 0, x is 2. So 0, 0 and 2, 0.
+
+913
+01:44:17,096 --> 01:44:18,416
+First two critical points.
+
+914
+01:44:18,716 --> 01:44:20,296
+What about the other case? X is 1.
+
+915
+01:44:21,015 --> 01:44:22,935
+For x is 1, what happens? Let's see.
+
+916
+01:44:23,315 --> 01:44:24,756
+X is 1.
+
+917
+01:44:25,235 --> 01:44:28,056
+So y squared is 1.
+
+918
+01:44:28,056 --> 01:44:29,796
+So y is minus plus 1.
+
+919
+01:44:29,956 --> 01:44:31,996
+Y is minus plus 1 for x is 1.
+
+920
+01:44:32,176 --> 01:44:37,695
+So 1 and 1 and 1 and minus 1 are the correct match of the values of x and y.
+
+921
+01:44:38,036 --> 01:44:39,815
+So all the critical points are this.
+
+922
+01:44:40,336 --> 01:44:42,496
+Four critical points you need to get.
+
+923
+01:44:43,176 --> 01:44:43,935
+Are you okay now?
+
+924
+01:44:44,655 --> 01:44:47,536
+Do you understand where you are possibly mistaken?
+
+925
+01:44:52,692 --> 01:45:06,452
+Okay, so I think the most important step is classifying, I'm sorry, not classifying, finding the critical points, in my opinion, because you are working two different equations and they all include two independent variables.
+
+926
+01:45:06,652 --> 01:45:09,652
+That's why not easy to specify the critical points.
+
+927
+01:45:10,971 --> 01:45:11,492
+Be careful.
+
+928
+01:45:12,591 --> 01:45:15,731
+And the second step, I think, easier than the first one.
+
+929
+01:45:15,992 --> 01:45:17,692
+Classifying the critical points easy.
+
+930
+01:45:17,692 --> 01:45:25,452
+Just get the second order derivative and evaluate ABC for each critical point and then look for B squared minus AC.
+
+931
+01:45:25,891 --> 01:45:26,992
+I think it's easier.
+
+932
+01:45:29,952 --> 01:45:30,351
+Let's see.
+
+933
+01:45:30,631 --> 01:45:35,292
+For 0, 0, A minus 6, B is 0, C is minus 6.
+
+934
+01:45:35,452 --> 01:45:38,192
+And so B squared minus AC is negative.
+
+935
+01:45:39,072 --> 01:45:41,192
+Negative means extreme points.
+
+936
+01:45:41,351 --> 01:45:44,832
+So look for the sign of A, negative, local maximum.
+
+937
+01:45:44,832 --> 01:45:49,091
+For the next critical point, 2, 0.
+
+938
+01:45:49,872 --> 01:45:52,511
+A is 6, B is 0, C is 6.
+
+939
+01:45:53,032 --> 01:45:55,372
+So B squared minus AC, again negative.
+
+940
+01:45:56,051 --> 01:45:59,072
+And A is positive, so local minimum.
+
+941
+01:46:00,671 --> 01:46:01,792
+For 1 and 1.
+
+942
+01:46:04,072 --> 01:46:07,391
+A is 0, B is 6, C is 0.
+
+943
+01:46:07,391 --> 01:46:11,212
+You can repeat all these steps on your own after the classroom.
+
+944
+01:46:12,712 --> 01:46:17,051
+B squared minus AC, 36, positive.
+
+945
+01:46:17,532 --> 01:46:18,332
+Settle point.
+
+946
+01:46:18,671 --> 01:46:20,612
+1B squared minus AC is positive.
+
+947
+01:46:20,792 --> 01:46:21,832
+Okay, it's settled point.
+
+948
+01:46:22,971 --> 01:46:27,931
+And for 1 and minus 1, A is 0, B is minus 6, C is 0.
+
+949
+01:46:28,431 --> 01:46:30,391
+B squared minus AC, again positive.
+
+950
+01:46:30,851 --> 01:46:32,492
+So again, it's a settled point.
+
+951
+01:46:32,492 --> 01:46:36,511
+Two points are settled and two points are extreme.
+
+952
+01:46:36,652 --> 01:46:37,572
+One of them is maximum.
+
+953
+01:46:37,712 --> 01:46:39,752
+The other one is minimum locally.
+
+954
+01:46:39,752 --> 01:47:03,752
+One of them is minimum locally.
+
+955
+01:47:00,948 --> 01:47:01,688
+Okay, nice.
+
+956
+01:47:03,427 --> 01:47:08,068
+Now, I want to just continue with this.
+
+957
+01:47:08,368 --> 01:47:09,488
+Okay, thank you so much.
+
+958
+01:47:10,448 --> 01:47:13,768
+Quickly, and finish this, Taylor's formula for two variables.
+
+959
+01:47:16,908 --> 01:47:17,788
+Let's see.
+
+960
+01:47:19,228 --> 01:47:24,048
+FXY is FAB.
+
+961
+01:47:24,688 --> 01:47:28,488
+Do you remember Taylor-Maclaurin formulas for single variable case?
+
+962
+01:47:28,588 --> 01:47:30,448
+This is just two variable case of it.
+
+963
+01:47:30,448 --> 01:47:30,688
+Okay.
+
+964
+01:47:33,068 --> 01:47:34,868
+Taylor and Maclaurin formulas.
+
+965
+01:47:34,868 --> 01:47:35,228
+Okay.
+
+966
+01:47:43,988 --> 01:47:45,988
+Tirektatı, değil mi?
+
+967
+01:47:45,988 --> 01:47:47,988
+Bu ne, değil mi?
+
+968
+01:47:47,988 --> 01:47:57,988
+Bu ne?
+
+969
+01:47:57,988 --> 01:47:59,988
+Fx yi is F ab plus.
+
+970
+01:47:59,988 --> 01:48:17,988
+Normally, just remember for a single variable case, Fx, F a plus x times f prime at a plus x squared times or x minus a squared f second order derivative at the point a, blah, blah, blah, for the nth derivative.
+
+971
+01:48:17,988 --> 01:48:24,988
+Here x and y, we have partial derivatives, that's why it's a little bit detailed, not complicated.
+
+972
+01:48:24,988 --> 01:48:36,988
+F ab, x minus a times fx ab, like the, is similar to linearization problem, linearization theorem or formula, let's say.
+
+973
+01:48:36,988 --> 01:48:40,988
+And then y minus b, Fy ab plus.
+
+974
+01:48:40,988 --> 01:48:42,988
+This is first degree terms.
+
+975
+01:48:42,988 --> 01:48:45,988
+Now continue with the second degree.
+
+976
+01:48:45,988 --> 01:48:54,988
+And 1 over 2 factorial, x minus a squared, Fx, x, second degree, 2 factorial, second order.
+
+977
+01:48:54,988 --> 01:49:04,988
+2 times x minus a, y minus a, Fx, y, again second order derivative, plus y minus b, second degree, second order.
+
+978
+01:49:04,988 --> 01:49:09,988
+That means it's like having this all square of an expression.
+
+979
+01:49:09,988 --> 01:49:12,988
+X squared, 2xy plus y squared.
+
+980
+01:49:12,988 --> 01:49:14,988
+Getting the second degree.
+
+981
+01:49:14,988 --> 01:49:15,988
+Okay.
+
+982
+01:49:15,988 --> 01:49:16,988
+Similar.
+
+983
+01:49:16,988 --> 01:49:19,988
+For 1 over 3, 3 factorial.
+
+984
+01:49:19,988 --> 01:49:21,988
+Now it's third degree.
+
+985
+01:49:21,988 --> 01:49:23,988
+X minus, just having all cube.
+
+986
+01:49:23,988 --> 01:49:35,988
+Just think that x plus y all cube is x cubed, 3x squared y plus 3xy squared plus 3 plus y cubed.
+
+987
+01:49:35,988 --> 01:49:36,988
+Not 3, I'm sorry.
+
+988
+01:49:36,988 --> 01:49:37,988
+Plus y cubed.
+
+989
+01:49:37,988 --> 01:49:41,988
+It's so similar to getting the all cube of an expression x plus y.
+
+990
+01:49:41,988 --> 01:49:42,988
+They are so related.
+
+991
+01:49:42,988 --> 01:49:48,988
+x minus a all cube, third degree, a third order partial derivative.
+
+992
+01:49:48,988 --> 01:49:52,988
+3x minus a squared y minus b.
+
+993
+01:49:52,988 --> 01:49:59,988
+Again, total third degree, but second order with respect to x, once with respect to y.
+
+994
+01:49:59,988 --> 01:50:03,988
+Plus 3x minus a, y minus b all square.
+
+995
+01:50:03,988 --> 01:50:08,988
+So once with respect to x, twice with respect to y.
+
+996
+01:50:08,988 --> 01:50:09,988
+x, y, y.
+
+997
+01:50:09,988 --> 01:50:15,988
+Plus y minus b all cube, third degree, third order with respect to y.
+
+998
+01:50:15,988 --> 01:50:18,988
+Blah, blah, blah, blah.
+
+999
+01:50:18,988 --> 01:50:22,988
+So we can generalize it for the nth order, nth degree.
+
+1000
+01:50:22,988 --> 01:50:24,988
+1 over n factorial.
+
+1001
+01:50:24,988 --> 01:50:29,988
+x minus a, nth degree, partial derivative of f.
+
+1002
+01:50:29,988 --> 01:50:33,988
+And y minus b again, nth degree, nth order partial derivative.
+
+1003
+01:50:33,988 --> 01:50:38,988
+Also, this n is related with the order of the partial derivative.
+
+1004
+01:50:38,988 --> 01:50:43,988
+At the same time, like having the nth power of this expression.
+
+1005
+01:50:43,988 --> 01:50:48,988
+Power and the order of the derivative.
+
+1006
+01:50:48,988 --> 01:50:50,988
+And also 1 over n factorial.
+
+1007
+01:50:50,988 --> 01:50:55,988
+This is the general term, nth term of this Tyler formula.
+
+1008
+01:51:00,275 --> 01:51:04,076
+Taylor's formula at the origin, at 0, 0.
+
+1009
+01:51:05,315 --> 01:51:06,315
+It's easier.
+
+1010
+01:51:08,315 --> 01:51:21,796
+F0, 0, x times fx, y times fy, and 1 over 2, x squared, normally x minus 0 squared, x squared fx, x, 2xy fxy, y squared fyy, and blah, blah, blah.
+
+1011
+01:51:24,015 --> 01:51:27,836
+And rn is the remainder term.
+
+1012
+01:51:45,108 --> 01:51:53,108
+Ve bu tarzı tepkilerin, bir tarzı tepkilerin, bir tarzı tepkilerin.
+
+1013
+01:52:06,068 --> 01:52:19,488
+Okay, so thank you. Thank you so much for your participation. You didn't leave me alone. Thank you so much. And see you next week. Take care of yourselves. I thank you.
+
+1014
+01:52:23,731 --> 01:52:26,032
+ve hava bir günler, bir günler.

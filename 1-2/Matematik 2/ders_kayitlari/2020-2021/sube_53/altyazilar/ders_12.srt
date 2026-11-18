@@ -1,0 +1,3427 @@
+1
+00:02:10,644 --> 00:02:11,424
+Merhaba arkadaşlar.
+
+2
+00:02:28,723 --> 00:02:30,483
+En son burada kalmıştık.
+
+3
+00:02:38,036 --> 00:02:43,276
+Bugün umarım daha enerjik, daha tempolu bir şekilde dersimizi yaparız.
+
+4
+00:02:48,135 --> 00:02:51,436
+Dün yaptıklarımızla ilgili bir sorunuz var mı?
+
+5
+00:02:58,163 --> 00:03:01,223
+vektörler, uzay geometrisi,
+
+6
+00:03:05,075 --> 00:03:09,015
+Temel işlemler uzayda doğru ve düzden.
+
+7
+00:03:28,948 --> 00:03:35,008
+Şöyle yapalım. Ben şöyle bir başa dönüp tekrar ederek başlamak istiyorum. O zaman şöyle yapalım.
+
+8
+00:03:41,364 --> 00:04:11,364
+İlk olarak, birçok birçok olan birçok olan birçok olan birçok olan birçok olan birçok olan birçok olan birçok olan birçok olan birçok olan birçok olan birçok olan birçok olan birçok olan birçok olan birçok olan birçok olan birçok olan birçok olan birçok olan birçok olan birçok olan birçok olan birçok olan birçok olan birçok olan birçok olan birçok olan birçok olan birçok olan birçok olan birçok olan birçok olan birçok olan birçok olan birçok olan birçok olan birçok olan birçok olan birçok olan birçok olan birçok olan birçok olan birçok olan birçok olan birçok olan birçok olan birçok olan birçok olan birçok olan birçok olan birçok olan birçok olan birçok olan
+
+9
+00:04:11,364 --> 00:07:11,364
+birçok olan birçok olan birçok olan birçok olan birçok olan birçok olan birçok olan birçok olan birçok olan birçok olan birçok olan birçok olan birçok olan birçok olan birçok olan birçok olan birçok olan birçok olan birçok olan birçok olan birçok olan birçok olan birçok olan birçok olan birçok olan birçok olan birçok olan birçok olan birçok olan birçok olan birçok olan birçok olan birçok olan birçok olan birçok olan birçok olan birçok olan birçok olan birçok olan birçok olan birçok olan birçok olan birçok olan birçok olan birçok olan birçok olan birçok olan birçok olan birçok olan birçok olan birçok olan birçok olan birçok olan birçok olan birçok olan bir
+
+10
+00:07:11,364 --> 00:07:34,474
+V isimdeki V isimdeki V isimdeki V isimdeki V isimdeki V isimdeki V isimdeki V isimdeki V isimdeki V isimdeki V isimdeki V isimdeki V isimdeki V isimdeki V isimdeki V isimdeki V isimdeki V isimdeki V isimdeki V isimdeki V isimdeki V isimdeki V isimdeki V isimdeki V isimdeki V isimdeki V isimdeki V isimdeki V isimdeki V isimdeki V isimdeki V isimdeki V isimdeki V isimdeki V isimdeki V isimdeki V isimdeki V isimdeki V isimdeki V isimdeki V isimdeki V isimdeki V isimdeki V isimdeki V
+
+11
+00:07:34,899 --> 00:07:41,139
+İki parallel vektörsü can be written as a multiple of the other one, a custom multiple or a scalar multiple you can say.
+
+12
+00:07:43,139 --> 00:07:46,579
+Resulting from this parallel, we can write the line equation.
+
+13
+00:07:46,579 --> 00:07:50,659
+R minus R0 is equal to T times V gives the line equation.
+
+14
+00:07:51,539 --> 00:07:52,179
+That's why.
+
+15
+00:07:53,299 --> 00:07:58,019
+For parametrization, more generally we are using the parametrile equations of it, x, y, z.
+
+16
+00:07:58,019 --> 00:08:02,899
+So that x0, y0, z0 is any point that we need to write.
+
+17
+00:08:03,459 --> 00:08:09,699
+V1, v2, v3 are the components of the parallel direction of the line we need.
+
+18
+00:08:09,699 --> 00:08:14,500
+So x0 plus Tv1, y0 plus Tv2, z0 plus Tv3.
+
+19
+00:08:15,059 --> 00:08:22,500
+And for any real number T, this parameter is the line through the point P0 and parallel to vector V
+
+20
+00:08:23,539 --> 00:08:26,099
+can be written in this form, parametric form.
+
+21
+00:08:26,099 --> 00:08:27,459
+And this is the vector form.
+
+22
+00:08:28,099 --> 00:08:30,259
+This is x, y, z.
+
+23
+00:08:30,259 --> 00:08:33,699
+As you see, x, y, z, i, j, k in vector form.
+
+24
+00:08:33,699 --> 00:08:34,579
+We can write there.
+
+25
+00:08:35,059 --> 00:08:35,460
+Same.
+
+26
+00:08:37,059 --> 00:08:43,139
+Also, for example, a point is given, direction is given.
+
+27
+00:08:43,139 --> 00:08:44,100
+We can easily write.
+
+28
+00:08:44,100 --> 00:08:44,740
+Don't forget.
+
+29
+00:08:45,379 --> 00:08:46,819
+First write points.
+
+30
+00:08:46,819 --> 00:08:47,539
+Minus 2.
+
+31
+00:08:48,259 --> 00:08:50,019
+Minus 2 plus 2T.
+
+32
+00:08:50,579 --> 00:08:52,339
+0 plus 4T.
+
+33
+00:08:52,339 --> 00:08:56,899
+4 plus minus 2T will be the parametric equations.
+
+34
+00:08:56,899 --> 00:08:58,419
+Easily you can remember.
+
+35
+00:08:58,419 --> 00:08:58,740
+OK.
+
+36
+00:08:59,460 --> 00:09:04,339
+And also, once a line equation is given,
+
+37
+00:09:04,339 --> 00:09:04,899
+given.
+
+38
+00:09:04,899 --> 00:09:23,699
+So, let's give on.
+
+39
+00:09:08,500 --> 00:09:10,820
+I'm just trying to get an example about it.
+
+40
+00:09:11,779 --> 00:09:18,179
+For example, think of this parametric equation of the line.
+
+41
+00:09:19,440 --> 00:09:24,539
+Sometimes, for example, for writing a line equation or plane equation,
+
+42
+00:09:25,059 --> 00:09:30,299
+in some questions, an orthogonal line can be given to the plane.
+
+43
+00:09:31,120 --> 00:09:33,259
+That's why you need to understand.
+
+44
+00:09:33,679 --> 00:09:38,139
+Once you see a line equation in space, what can you understand?
+
+45
+00:09:38,500 --> 00:09:47,080
+For example, think that x is minus 2 plus 2t, y is 4t, z is 4 minus 2t.
+
+46
+00:09:47,539 --> 00:09:52,299
+When these parametric equations or vector form, it doesn't matter, i, j, k, is given.
+
+47
+00:09:53,080 --> 00:09:57,360
+In that case, what can you understand from this way of writing?
+
+48
+00:09:57,840 --> 00:09:58,820
+I want to ask you.
+
+49
+00:10:01,679 --> 00:10:04,620
+Can you understand, for example, any point on it?
+
+50
+00:10:04,620 --> 00:10:08,580
+Can you understand the parallel direction of this line?
+
+51
+00:10:08,840 --> 00:10:13,419
+Can you understand from looking at the parametric equations of a line in space?
+
+52
+00:10:13,419 --> 00:10:36,419
+Can you understand?
+
+53
+00:10:34,196 --> 00:10:50,516
+I said that, x, y, z are given in parametric form. And if these equations are given, if I ask you, can you tell me any point on it, or can you tell me the parallel direction of the line, can you tell me?
+
+54
+00:10:57,524 --> 00:11:05,744
+If the line equation is given, and if I ask you, what can be the parallel direction of this line, can you understand?
+
+55
+00:11:13,875 --> 00:11:23,696
+Ah, no, I don't mean that. I don't mean any number on it. That means to assign a number to t means choosing a point on the line.
+
+56
+00:11:27,124 --> 00:11:33,084
+Ah, yes, yes, you can do. Yes, you can do. I understand you, but I mean such a different thing.
+
+57
+00:11:35,504 --> 00:11:41,724
+Yes, for corresponding to any real number, we have lots of numbers on it. Yes, you're right.
+
+58
+00:11:42,484 --> 00:11:43,564
+What about the direction?
+
+59
+00:11:54,803 --> 00:12:24,803
+İlk olarak, bu yi
+
+60
+00:12:24,803 --> 00:12:54,803
+vektör. Bu yüzden de yi
+
+61
+00:12:54,803 --> 00:13:02,884
+to write the plane equation line equation you can easily tell a number on it minus two zero and four
+
+62
+00:13:02,884 --> 00:13:06,083
+can't we
+
+63
+00:13:06,083 --> 00:13:15,443
+isn't it a point on it we have used it because yes that's why for any line equation you can see any
+
+64
+00:13:15,443 --> 00:13:23,264
+point on it and a fixed point minus two zero four and also the components of the parallel vector
+
+65
+00:13:23,264 --> 00:13:27,024
+to the line don't forget easily because you will use it
+
+66
+00:13:27,024 --> 00:13:35,144
+if the equation is given and if you are asked to have or if you need to have the parallel direction
+
+67
+00:13:35,144 --> 00:13:39,683
+you can easily understand it from the components of t coefficients of t okay
+
+68
+00:13:39,683 --> 00:13:43,403
+this is important
+
+69
+00:13:43,403 --> 00:13:49,004
+also we have talked about the parallel lines
+
+70
+00:13:49,004 --> 00:13:58,504
+for parallel lines in space we need to just compare the or look for the parallelity of their
+
+71
+00:13:58,504 --> 00:14:08,183
+directions we will just compare their directions if l and capital l are given we will just search
+
+72
+00:14:08,183 --> 00:14:14,823
+for v1 and v2 which are the parallel directions of the first way the first line and the second line
+
+73
+00:14:14,823 --> 00:14:24,183
+and search for if they are parallel okay the lines are also parallel if they are not so thus lines
+
+74
+00:14:24,183 --> 00:14:26,183
+you
+
+75
+00:14:32,179 --> 00:15:09,179
+ve
+
+76
+00:15:10,035 --> 00:15:39,475
+And lastly, we did this question, and we were here. Plane equation in space, for a plane equation in space, again, we need a point, of course, but different from line equations, we need a orthogonal direction, or orthogonal vector, or normal vector. Normal means orthogonal, vertical, perpendicular, okay? They are same, all have same meanings.
+
+77
+00:15:40,035 --> 00:15:41,715
+And
+
+78
+00:15:45,524 --> 00:15:52,043
+Although we can write the line equation for using the parallality of two vectors,
+
+79
+00:15:52,764 --> 00:15:56,764
+for plane equations, we are using orthogonality.
+
+80
+00:15:59,063 --> 00:16:03,823
+Orthogonality of two vectors, because we know that orthogonal vectors,
+
+81
+00:16:04,663 --> 00:16:10,604
+if we have the scalar production of them or dash production of them results zero.
+
+82
+00:16:10,604 --> 00:16:18,903
+This property we are using and making two vertical or orthogonal vectors and making them equal to zero.
+
+83
+00:16:19,563 --> 00:16:25,403
+And then in that case, we just constitute the plane equation in space like this.
+
+84
+00:16:26,403 --> 00:16:27,144
+Which vector?
+
+85
+00:16:28,504 --> 00:16:30,443
+Orthogonal to plane.
+
+86
+00:16:31,124 --> 00:16:31,683
+Any plane.
+
+87
+00:16:31,803 --> 00:16:39,163
+For any plane, we are just searching any vertical vector to it and any vector on the plane,
+
+88
+00:16:39,163 --> 00:16:45,283
+because if n is normal to this plane, it is orthogonal any vector on the plane,
+
+89
+00:16:45,604 --> 00:16:47,124
+which is lying on the plane.
+
+90
+00:16:47,423 --> 00:16:47,484
+Okay.
+
+91
+00:16:47,903 --> 00:16:53,524
+That's why for this, this vector and any vector on this plane will be multiplied.
+
+92
+00:16:54,124 --> 00:16:56,963
+Scalar multiplication will be resulted zero.
+
+93
+00:16:56,963 --> 00:16:59,423
+In that case, we just write the plane equation.
+
+94
+00:16:59,423 --> 00:17:09,523
+And what's the easier way to write a normal plane equation?
+
+95
+00:17:10,683 --> 00:17:14,963
+Be careful about the point, x zero, y zero, z zero point on the plane.
+
+96
+00:17:15,344 --> 00:17:18,604
+And be careful about the components of the normal vector and write.
+
+97
+00:17:18,604 --> 00:17:27,124
+A times x minus x zero, b times y minus y zero, c times z minus z zero, make them equal to zero.
+
+98
+00:17:27,624 --> 00:17:32,644
+This will be the plane equation through the point p zero and normal to n.
+
+99
+00:17:33,023 --> 00:17:39,943
+Normal to n means this vector is also normal to plane and also at the same time plane is normal to this vector.
+
+100
+00:17:39,943 --> 00:17:41,324
+That means they are both orthogonal.
+
+101
+00:17:41,324 --> 00:17:42,163
+It doesn't matter.
+
+102
+00:17:44,183 --> 00:17:57,084
+And easily, again, this example says that once we have a plane equation through a point and perpendicular to n,
+
+103
+00:17:57,084 --> 00:18:10,604
+So, the plane equation is 5 times x plus 3, 2 times y minus 0, minus 1 times z minus 7 is equal to 0.
+
+104
+00:18:11,163 --> 00:18:12,304
+This is the plane equation.
+
+105
+00:18:14,044 --> 00:18:15,903
+And we were here.
+
+106
+00:18:17,824 --> 00:18:24,844
+This question says that find an equation for the plane through x and orthogonal to line.
+
+107
+00:18:24,844 --> 00:18:29,663
+Now line is given and not the normal vector is given.
+
+108
+00:18:30,003 --> 00:18:30,804
+Line is given.
+
+109
+00:18:31,284 --> 00:18:32,584
+In that case, what to do?
+
+110
+00:18:34,443 --> 00:18:36,763
+Have you thought about it yesterday?
+
+111
+00:18:39,443 --> 00:18:40,683
+Do you have an idea?
+
+112
+00:18:43,564 --> 00:18:44,084
+Yes.
+
+113
+00:18:45,223 --> 00:18:45,743
+Okay.
+
+114
+00:18:48,144 --> 00:18:49,443
+How did you do it?
+
+115
+00:19:03,155 --> 00:19:07,395
+So, okay. I want to ask you a question. Point is okay.
+
+116
+00:19:12,660 --> 00:19:14,660
+Evet, [öğrenci], doğru.
+
+117
+00:19:14,660 --> 00:19:16,660
+Evet, normal vector var.
+
+118
+00:19:16,660 --> 00:19:20,660
+Ve normal vector var.
+
+119
+00:19:20,660 --> 00:19:22,660
+Burada.
+
+120
+00:19:28,788 --> 00:19:31,567
+Evet, you're right.
+
+121
+00:19:32,288 --> 00:19:33,708
+Here, the problem is,
+
+122
+00:19:34,448 --> 00:19:35,468
+we have a point.
+
+123
+00:19:36,008 --> 00:19:37,907
+We just need to write a plane equation.
+
+124
+00:19:38,647 --> 00:19:40,587
+A point on the plane is given
+
+125
+00:19:40,587 --> 00:19:41,627
+2, 1, 4.
+
+126
+00:19:41,807 --> 00:19:43,127
+Why do we need more?
+
+127
+00:19:43,807 --> 00:19:44,788
+A normal direction.
+
+128
+00:19:45,367 --> 00:19:48,307
+The question says that plane is orthogonal to line.
+
+129
+00:19:49,087 --> 00:19:50,428
+Orthogonal to line means
+
+130
+00:19:50,428 --> 00:19:54,367
+parallel direction of the line
+
+131
+00:19:54,367 --> 00:19:56,607
+will be again orthogonal to plane.
+
+132
+00:19:56,607 --> 00:19:58,907
+So the direction of the line
+
+133
+00:19:58,907 --> 00:20:01,248
+will be normal vector to the plane.
+
+134
+00:20:01,827 --> 00:20:04,028
+And what is the parallel direction
+
+135
+00:20:04,028 --> 00:20:05,788
+or the direction of the line?
+
+136
+00:20:06,567 --> 00:20:08,528
+Just coefficients of t.
+
+137
+00:20:09,307 --> 00:20:11,807
+1, 2, and 0.
+
+138
+00:20:12,688 --> 00:20:13,647
+Like you said.
+
+139
+00:20:14,528 --> 00:20:16,127
+So point is okay.
+
+140
+00:20:16,387 --> 00:20:17,688
+Normal direction is okay.
+
+141
+00:20:17,807 --> 00:20:19,048
+So we can easily write.
+
+142
+00:20:24,564 --> 00:20:40,903
+n is normal vector, 1, 2, 0, 0, 0.214, so 1 times x minus 2, 2 times y minus 1, 0 times z minus 4, must be 0.
+
+143
+00:20:49,268 --> 00:21:05,607
+If you have 2x plus y plus 4, that is 17, that means you just do the opposite of it. That means you have probably written 2 times x minus 1, 1 times y minus 2, 4 times z minus 0.
+
+144
+00:21:05,607 --> 00:21:20,188
+But no, you have to just choosing the coefficients from n, 1 times, 2 times, 0 times, 0 times, 0 times, x minus 2, y minus 1, z minus 4.
+
+145
+00:21:20,728 --> 00:21:21,928
+Are you okay now?
+
+146
+00:21:26,483 --> 00:21:28,364
+Okay, well done. Thank you so much.
+
+147
+00:21:29,523 --> 00:21:30,343
+All of you.
+
+148
+00:21:31,543 --> 00:21:31,963
+Thanks.
+
+149
+00:21:33,183 --> 00:21:34,803
+I think now we are okay.
+
+150
+00:21:36,563 --> 00:21:40,983
+Roughly we know what to do for writing line equation and plane equation in space.
+
+151
+00:21:41,144 --> 00:21:42,183
+And what do we need? Okay.
+
+152
+00:21:42,943 --> 00:21:43,943
+Any question up to now?
+
+153
+00:21:55,380 --> 00:21:56,280
+Okay, well done.
+
+154
+00:21:57,320 --> 00:22:00,960
+So, I want to continue with the next exercise.
+
+155
+00:22:02,780 --> 00:22:07,000
+It says, find an equation for the plane through the points.
+
+156
+00:22:07,700 --> 00:22:11,760
+That means, we have a plane, A, B, C are on that plane.
+
+157
+00:22:13,620 --> 00:22:15,700
+How can we write that plane equation?
+
+158
+00:22:18,020 --> 00:22:20,060
+Points are okay. One point is enough.
+
+159
+00:22:20,960 --> 00:22:23,640
+But also, we need a normal direction to the plane.
+
+160
+00:22:23,640 --> 00:22:27,240
+How can we find a normal direction?
+
+161
+00:22:27,360 --> 00:22:29,700
+That means a vertical vector to the plane.
+
+162
+00:22:30,220 --> 00:22:31,360
+Please think a little bit.
+
+163
+00:22:31,780 --> 00:22:32,960
+You will find it.
+
+164
+00:22:34,800 --> 00:22:36,280
+You know what to do, I think.
+
+165
+00:22:52,147 --> 00:23:04,307
+Yesterday, we have learned some operations of vectors resulting an orthogonal vector after an operation to both vectors.
+
+166
+00:23:04,307 --> 00:23:07,747
+We did it. Please think a little bit.
+
+167
+00:23:17,779 --> 00:23:19,039
+Belden [öğrenci].
+
+168
+00:23:22,483 --> 00:23:23,483
+Thank you so much.
+
+169
+00:23:25,163 --> 00:23:26,203
+Yes, of course.
+
+170
+00:23:27,263 --> 00:23:28,463
+Yesterday I said that.
+
+171
+00:23:29,463 --> 00:23:31,243
+Please be careful about cross product
+
+172
+00:23:31,243 --> 00:23:33,903
+because you will need it in writing plane equations
+
+173
+00:23:33,903 --> 00:23:37,543
+because you will need a normal direction to a plane.
+
+174
+00:23:38,543 --> 00:23:40,503
+A normal direction to a plane means
+
+175
+00:23:40,503 --> 00:23:44,463
+if two vectors are on the same plane,
+
+176
+00:23:44,983 --> 00:23:47,543
+the cross product will be vertical to both of them.
+
+177
+00:23:48,003 --> 00:23:50,983
+That means it is vertical to the plane that they are located.
+
+178
+00:23:50,983 --> 00:23:52,723
+That's why it's important.
+
+179
+00:23:53,144 --> 00:23:56,144
+If you are sure that these two vectors are on the same plane,
+
+180
+00:23:56,583 --> 00:23:57,203
+no problem.
+
+181
+00:23:57,743 --> 00:24:00,663
+Already in this question, three points on the same plane.
+
+182
+00:24:01,003 --> 00:24:04,663
+So we can just construct two vectors between three points
+
+183
+00:24:04,663 --> 00:24:07,083
+and then make them cross production of
+
+184
+00:24:07,083 --> 00:24:11,884
+and then make up a vertical vector
+
+185
+00:24:11,884 --> 00:24:15,364
+to plane and also the vectors easily.
+
+186
+00:24:16,884 --> 00:24:20,523
+So do it and tell me I'm waiting.
+
+187
+00:24:20,983 --> 00:24:23,083
+Write a, b and a, c vectors
+
+188
+00:24:23,083 --> 00:24:25,603
+and then make the cross product.
+
+189
+00:24:26,283 --> 00:24:27,343
+Get the normal n
+
+190
+00:24:27,343 --> 00:24:29,903
+and then choosing any point here,
+
+191
+00:24:30,483 --> 00:24:31,783
+a, b, c, it doesn't matter.
+
+192
+00:24:32,203 --> 00:24:33,103
+Choosing any point,
+
+193
+00:24:33,823 --> 00:24:35,644
+write the plane equation
+
+194
+00:24:35,644 --> 00:24:37,263
+of this plane.
+
+195
+00:24:37,263 --> 00:24:52,263
+So do it and then make it look like this.
+
+196
+00:25:20,948 --> 00:25:21,288
+Ok.
+
+197
+00:25:25,140 --> 00:25:25,860
+Which one?
+
+198
+00:25:30,771 --> 00:25:31,672
+Let me look.
+
+199
+00:25:38,771 --> 00:25:40,131
+Also, anyone else?
+
+200
+00:25:41,771 --> 00:25:43,192
+Who's working on it?
+
+201
+00:25:56,692 --> 00:25:59,291
+No problem, you can write. Maybe you are right.
+
+202
+00:26:07,892 --> 00:26:18,892
+Evet, şimdi.
+
+203
+00:26:22,291 --> 00:26:44,271
+Let's see. ABC's, okay. Write two vectors, AB and AC, 2i minus k. AB vector means B minus A, 2 minus 0, 2i, 0 minus 0, 0j, 0 minus 1, minus k. AC, C minus A, okay.
+
+204
+00:26:44,271 --> 00:27:03,571
+So, 0 minus 0, 0i, 3 minus 0, 3j, 0 minus 1, minus k. So, AB and AC vectors are in this way. And cross product of them, first row, i, j, k, second row, vector, AB, components.
+
+205
+00:27:03,571 --> 00:27:07,351
+And the third row, again, the third row, again, the third row, again, the third row, again, the components of AC.
+
+206
+00:27:08,731 --> 00:27:20,071
+And the result is 3i, 2j, 6k. And this is the normal vector to the plane. Any point you can choose, it doesn't matter, ABC.
+
+207
+00:27:21,011 --> 00:27:31,932
+Choose A, 3 times x minus 0, 2 times y minus 0, 6 times z minus 1 is equal to 0.
+
+208
+00:27:31,932 --> 00:27:38,131
+So, 3x plus 2y, so 3x plus 2y plus 6z is equal to 6 is the plane equation.
+
+209
+00:27:59,188 --> 00:28:05,288
+Are you okay? Any question about it? Do you want to repeat that, what we are doing?
+
+210
+00:28:19,347 --> 00:28:20,508
+Are you all okay?
+
+211
+00:28:22,647 --> 00:28:24,008
+Is it clear?
+
+212
+00:28:29,715 --> 00:28:30,995
+Okay, thank you.
+
+213
+00:28:32,275 --> 00:28:35,375
+So, okay, thank you.
+
+214
+00:28:35,955 --> 00:28:36,955
+Thank you so much.
+
+215
+00:28:37,475 --> 00:28:38,475
+So, let's continue.
+
+216
+00:28:39,355 --> 00:28:43,995
+But if you have any questions, and if you don't ask me, please don't do it.
+
+217
+00:28:43,995 --> 00:28:44,975
+Ask me now.
+
+218
+00:28:45,415 --> 00:28:49,015
+Later we'll have a little bit detailed questions and then the next topic.
+
+219
+00:28:49,475 --> 00:28:52,655
+That's why it is important now for you to understand it.
+
+220
+00:28:54,675 --> 00:28:55,475
+Next one.
+
+221
+00:28:57,455 --> 00:28:59,435
+This is only an example.
+
+222
+00:28:59,715 --> 00:29:15,495
+It says the equation 2x minus 3y minus 4z represents the plane, which passes through the origin 0, 0, 0, and has the normal n 2y minus 3j minus 4k.
+
+223
+00:29:16,915 --> 00:29:18,995
+Again, we are just trying to understand.
+
+224
+00:29:19,875 --> 00:29:25,875
+Now the plane equation is given, and we are just trying to understand the components of the normal vector to this plane.
+
+225
+00:29:25,875 --> 00:29:29,535
+And possibly, if it is possible, not always.
+
+226
+00:29:29,655 --> 00:29:31,355
+If it is possible, the point.
+
+227
+00:29:32,015 --> 00:29:36,715
+If we have no custom number, it means it's through the origin.
+
+228
+00:29:36,715 --> 00:29:42,355
+x minus 0, y minus 0, z minus 0 because no more custom we have.
+
+229
+00:29:42,535 --> 00:29:44,935
+Only x, y, z we have in the equation.
+
+230
+00:29:45,575 --> 00:29:52,935
+For these kinds of equations I'm talking, not every plane equation is this.
+
+231
+00:29:52,935 --> 00:29:55,895
+More generally, we have a custom number here.
+
+232
+00:29:56,575 --> 00:30:00,315
+And so it's hard to guess the point on it.
+
+233
+00:30:00,715 --> 00:30:02,475
+Not always you can guess the point.
+
+234
+00:30:03,115 --> 00:30:08,795
+But you can easily understand the normal vector from the coefficient of x, y, z in order.
+
+235
+00:30:09,455 --> 00:30:15,275
+2, minus 3, minus 4 are the components of the normal vector of the plane.
+
+236
+00:30:15,275 --> 00:30:21,155
+If it is a no custom number here, that means it's through the origin.
+
+237
+00:30:21,935 --> 00:30:25,515
+But not always we can easily understand any point on it.
+
+238
+00:30:27,815 --> 00:30:29,795
+In line equation it's very easy.
+
+239
+00:30:32,495 --> 00:30:38,315
+For B, it says find the equation for the plane which passes through the point 2, 0, 1.
+
+240
+00:30:38,555 --> 00:30:43,475
+And that is perpendicular to the line, passes through A and B.
+
+241
+00:30:43,475 --> 00:30:47,135
+First, you need to understand the question, of course.
+
+242
+00:30:47,935 --> 00:30:49,655
+Read carefully always in exam.
+
+243
+00:30:51,275 --> 00:30:54,515
+And understand the question first and then you will solve it probably.
+
+244
+00:30:57,875 --> 00:31:00,355
+Now, a plane equation is asked.
+
+245
+00:31:01,155 --> 00:31:03,015
+It is a point 2, 0, 1.
+
+246
+00:31:03,695 --> 00:31:07,895
+And the plane is perpendicular, that means orthogonal to line.
+
+247
+00:31:08,235 --> 00:31:08,855
+Which line?
+
+248
+00:31:09,495 --> 00:31:12,215
+The line passes through the points A and B.
+
+249
+00:31:12,215 --> 00:31:14,415
+That means A and B are on that line.
+
+250
+00:31:15,195 --> 00:31:17,875
+And this line is vertical to our plane.
+
+251
+00:31:18,855 --> 00:31:19,815
+Point is okay.
+
+252
+00:31:19,955 --> 00:31:23,495
+So how can we find the normal of the vector?
+
+253
+00:31:23,975 --> 00:31:26,475
+A normal of the plane, I'm sorry.
+
+254
+00:31:26,675 --> 00:31:27,335
+Normal vector.
+
+255
+00:31:28,795 --> 00:31:29,955
+How can we understand?
+
+256
+00:31:32,015 --> 00:31:50,435
+A normal direction to it.
+
+257
+00:31:50,163 --> 00:31:51,743
+Yes, well done, [öğrenci].
+
+258
+00:31:54,124 --> 00:31:56,443
+Oh, you're so quick, [öğrenci]. Well done.
+
+259
+00:31:58,183 --> 00:31:59,364
+Thank you so much.
+
+260
+00:32:00,223 --> 00:32:02,104
+I'm also waiting for the others.
+
+261
+00:32:02,943 --> 00:32:04,344
+Please write the plane equation.
+
+262
+00:32:04,463 --> 00:32:04,884
+I'm waiting.
+
+263
+00:32:05,923 --> 00:32:07,804
+And like you said, you're right.
+
+264
+00:32:08,364 --> 00:32:10,604
+This line is vertical to our plane.
+
+265
+00:32:11,243 --> 00:32:15,783
+So the normal direction of the line is again a vertical direction to the plane.
+
+266
+00:32:15,783 --> 00:32:20,263
+So the direction of the line can be a normal vector to the plane.
+
+267
+00:32:20,663 --> 00:32:25,263
+That's why we can understand the direction of the line.
+
+268
+00:32:25,923 --> 00:32:27,903
+We have two points on it.
+
+269
+00:32:27,983 --> 00:32:32,923
+So the vector between a and b will be the direction of the line.
+
+270
+00:32:34,624 --> 00:32:35,084
+Okay.
+
+271
+00:32:35,564 --> 00:32:37,263
+[öğrenci] gets the same result.
+
+272
+00:32:37,403 --> 00:32:38,044
+Anyone else?
+
+273
+00:32:49,299 --> 00:32:50,240
+Possible true.
+
+274
+00:32:50,980 --> 00:32:52,119
+I haven't checked.
+
+275
+00:32:57,940 --> 00:33:00,920
+Okay, well done. Anyone else? Thank you so much.
+
+276
+00:33:30,099 --> 00:33:32,099
+Anyone else?
+
+277
+00:33:32,099 --> 00:33:36,099
+Ok, so well done.
+
+278
+00:33:36,099 --> 00:33:39,099
+Like you said, like you understand,
+
+279
+00:33:39,099 --> 00:33:42,099
+yes, the direction of the line will be normal to the plane
+
+280
+00:33:42,099 --> 00:33:46,099
+because line and plane are vertical, ok, orthogonal.
+
+281
+00:33:46,099 --> 00:33:52,099
+We can understand the parallel direction of a line from two points on it.
+
+282
+00:33:52,099 --> 00:33:53,099
+Enough!
+
+283
+00:33:53,099 --> 00:33:55,099
+If we have two points on the line,
+
+284
+00:33:55,099 --> 00:33:59,099
+we can easily write a direction and the parallel direction of the line
+
+285
+00:33:59,099 --> 00:34:02,099
+and write the vector between these two points.
+
+286
+00:34:02,099 --> 00:34:04,099
+We use AB, for example.
+
+287
+00:34:04,099 --> 00:34:07,099
+So, writing AB,
+
+288
+00:34:07,099 --> 00:34:09,099
+B minus A,
+
+289
+00:34:09,099 --> 00:34:12,099
+4 minus 1, 3i,
+
+290
+00:34:12,099 --> 00:34:15,099
+minus 1, minus 1, minus 2j,
+
+291
+00:34:15,099 --> 00:34:18,099
+minus 2, minus 0, minus 2k.
+
+292
+00:34:18,099 --> 00:34:21,099
+That means this direction of the line,
+
+293
+00:34:21,099 --> 00:34:25,099
+parallel direction of the line will be the normal direction of the plane.
+
+294
+00:34:25,099 --> 00:34:28,099
+So this is the normal of the plane, which is vertical to plane.
+
+295
+00:34:28,099 --> 00:34:32,099
+And the point on it, 2, 0, 1, we can write,
+
+296
+00:34:32,099 --> 00:34:35,099
+3 times x minus 2,
+
+297
+00:34:35,099 --> 00:34:39,099
+minus 2 times y minus 0,
+
+298
+00:34:39,099 --> 00:34:42,099
+and minus 2 times z minus 1,
+
+299
+00:34:42,099 --> 00:34:44,099
+gives the plane equation, like you said,
+
+300
+00:34:44,099 --> 00:34:47,099
+3x minus 2, y minus 2, z equal to 4.
+
+301
+00:34:47,099 --> 00:35:17,099
+Thank you so much.
+
+302
+00:35:04,500 --> 00:35:06,500
+ve devam etmenin.
+
+303
+00:35:13,396 --> 00:35:17,635
+The next important concept is in this topic, the lines of intersection.
+
+304
+00:35:19,476 --> 00:35:26,876
+If we have two planes are intersecting, it's along a line.
+
+305
+00:35:27,436 --> 00:35:29,396
+Intersection set will be a line.
+
+306
+00:35:30,196 --> 00:35:35,516
+So just as lines are parallel, if and only if they have the same direction,
+
+307
+00:35:36,016 --> 00:35:40,776
+two planes are parallel, if and only if their normals are parallel.
+
+308
+00:35:41,356 --> 00:35:42,936
+Yes, we can understand easily.
+
+309
+00:35:43,396 --> 00:35:52,016
+Parallelity of the lines, planes, I'm sorry, can be understood from the parallality of their normals.
+
+310
+00:35:53,115 --> 00:35:57,615
+Or we can write parallality, one of them is the multiple of the other one.
+
+311
+00:35:58,336 --> 00:35:59,956
+For any scalar k.
+
+312
+00:36:00,615 --> 00:36:04,356
+Two planes that are not parallel intersect in a line.
+
+313
+00:36:04,716 --> 00:36:07,356
+We have no more k's because it's a plane.
+
+314
+00:36:07,356 --> 00:36:17,176
+And the line of intersection of two planes is perpendicular to the both planes' normal vectors N1 and N2.
+
+315
+00:36:17,176 --> 00:36:21,056
+So therefore parallel to cross product of them.
+
+316
+00:36:21,976 --> 00:36:24,556
+Now this is a very important information for you.
+
+317
+00:36:24,556 --> 00:36:34,236
+If we have two planes are parallel, that means their normal directions are parallel.
+
+318
+00:36:34,236 --> 00:36:38,356
+If they are not parallel, that means they are intersecting.
+
+319
+00:36:38,996 --> 00:36:41,136
+And they are intersecting along a line.
+
+320
+00:36:41,856 --> 00:36:44,796
+Intersection set is a line.
+
+321
+00:36:44,796 --> 00:36:48,636
+For lines, intersecting set is a point.
+
+322
+00:36:49,016 --> 00:36:49,996
+But here a line.
+
+323
+00:36:50,216 --> 00:36:51,716
+Okay, don't forget intersection.
+
+324
+00:36:52,136 --> 00:36:53,256
+Line of intersection.
+
+325
+00:36:53,756 --> 00:36:54,615
+It is called.
+
+326
+00:36:55,576 --> 00:36:56,636
+How can we find it?
+
+327
+00:36:57,316 --> 00:36:58,236
+This is important.
+
+328
+00:36:58,416 --> 00:37:03,156
+The line of intersection of two planes is vertical to N1 and N2.
+
+329
+00:37:03,156 --> 00:37:05,316
+We have a plane.
+
+330
+00:37:05,996 --> 00:37:07,376
+Normal direction is N1.
+
+331
+00:37:07,776 --> 00:37:10,216
+Another plane, N2, they are intersecting.
+
+332
+00:37:10,936 --> 00:37:15,796
+An intersection line is orthogonal to both N1 and N2.
+
+333
+00:37:16,456 --> 00:37:20,276
+How can we write the orthogonal vector to both vectors?
+
+334
+00:37:20,856 --> 00:37:22,356
+By the cross product, of course.
+
+335
+00:37:22,356 --> 00:37:27,576
+So line of intersection is always parallel to their cross production
+
+336
+00:37:27,576 --> 00:37:33,136
+because line of intersection is always vertical to both normals.
+
+337
+00:37:34,516 --> 00:37:37,676
+So parallel to their cross product.
+
+338
+00:37:38,615 --> 00:37:41,576
+This is very important to find the line of intersection.
+
+339
+00:37:42,796 --> 00:37:45,115
+So for example, here it says,
+
+340
+00:37:45,115 --> 00:37:49,956
+ask you to get the line of intersection of these two planes.
+
+341
+00:37:53,588 --> 00:37:55,528
+But it says you find a paralel vektör.
+
+342
+00:38:06,164 --> 00:38:14,244
+Now, first tell me. Can you tell me the normals of these two plays?
+
+343
+00:38:21,204 --> 00:38:22,684
+Evet, please tell me.
+
+344
+00:38:24,364 --> 00:38:25,484
+For the first one.
+
+345
+00:38:27,443 --> 00:38:31,364
+Yes, thank you. 3, minus 6, and minus 2. And the second one.
+
+346
+00:38:33,784 --> 00:38:34,564
+And 2.
+
+347
+00:38:39,027 --> 00:38:40,027
+Evet, teşekkür ederim.
+
+348
+00:38:40,527 --> 00:38:42,207
+These are normals of the vectors.
+
+349
+00:38:42,947 --> 00:38:44,747
+I'm sorry, normals of the planes.
+
+350
+00:38:45,367 --> 00:38:45,987
+Respectively.
+
+351
+00:38:46,207 --> 00:38:46,947
+Thank you so much.
+
+352
+00:38:47,807 --> 00:38:54,327
+So, which vector can we write parallel to the line of intersection of them?
+
+353
+00:39:47,572 --> 00:39:48,512
+Okay, let's see.
+
+354
+00:39:49,992 --> 00:39:51,492
+Like you said, thank you.
+
+355
+00:39:52,751 --> 00:39:56,211
+N1, 3, minus 6, minus 2.
+
+356
+00:39:56,332 --> 00:39:57,852
+That means the normal of this plane.
+
+357
+00:40:00,112 --> 00:40:03,592
+Normal of this plane, 2, 1, minus 2.
+
+358
+00:40:03,832 --> 00:40:04,992
+2, 1, minus 2.
+
+359
+00:40:05,072 --> 00:40:07,512
+And this determinant results,
+
+360
+00:40:08,711 --> 00:40:11,412
+14i plus 2j plus 15k.
+
+361
+00:40:12,251 --> 00:40:15,952
+This is N1 cruiseproduct N2.
+
+362
+00:40:15,952 --> 00:40:18,251
+That means this is a vector,
+
+363
+00:40:19,332 --> 00:40:21,211
+both orthogonal to N1 and N2.
+
+364
+00:40:21,791 --> 00:40:23,572
+That means it is parallel to
+
+365
+00:40:23,572 --> 00:40:26,892
+the line of intersection of these planes.
+
+366
+00:40:27,751 --> 00:40:29,492
+That's why this is okay.
+
+367
+00:40:29,592 --> 00:40:30,332
+This is the answer.
+
+368
+00:40:45,907 --> 00:40:46,507
+En küsü.
+
+369
+00:41:01,108 --> 00:41:03,188
+I think it's okay. Let's continue.
+
+370
+00:41:05,868 --> 00:41:15,608
+With the next exercise, it says, is the plane x minus 2y plus 5z is 1 parallel to the line RT?
+
+371
+00:41:17,827 --> 00:41:23,827
+We have a plane and a line. It says, are they parallel? Who can we understand?
+
+372
+00:41:32,275 --> 00:41:33,315
+Why do you think so?
+
+373
+00:41:36,355 --> 00:41:39,895
+Or how can you understand?
+
+374
+00:41:49,780 --> 00:41:55,140
+Evet, v1,
+
+375
+00:41:55,140 --> 00:41:57,140
+v1
+
+376
+00:41:57,140 --> 00:41:59,460
+is the
+
+377
+00:41:59,460 --> 00:42:01,780
+parallel direction.
+
+378
+00:42:01,780 --> 00:42:04,180
+That means the direction of the line.
+
+379
+00:42:04,180 --> 00:42:05,620
+Thank you, you're right.
+
+380
+00:42:05,620 --> 00:42:06,740
+1 minus 2.
+
+381
+00:42:06,740 --> 00:42:08,740
+I'm sorry, for plane.
+
+382
+00:42:08,740 --> 00:42:11,700
+So you are writing n1 here.
+
+383
+00:42:11,700 --> 00:42:14,019
+This is plane equation
+
+384
+00:42:14,019 --> 00:42:16,340
+and the normal direction is n1
+
+385
+00:42:16,340 --> 00:42:18,100
+1 minus 2, 5.
+
+386
+00:42:18,100 --> 00:42:20,580
+Yes, okay, this is the direction.
+
+387
+00:42:20,580 --> 00:42:22,500
+I'm sorry, normal of the plane.
+
+388
+00:42:22,500 --> 00:42:24,180
+What about the direction of the line?
+
+389
+00:42:25,380 --> 00:42:27,380
+Yes, this is the direction of the line.
+
+390
+00:42:27,380 --> 00:42:29,380
+Minus 1, 2 and 1.
+
+391
+00:42:31,940 --> 00:42:33,940
+So in order to make them parallel,
+
+392
+00:42:35,540 --> 00:42:38,100
+plane and line.
+
+393
+00:42:41,556 --> 00:42:51,396
+Ne ne
+
+394
+00:42:55,795 --> 00:43:00,155
+Evet, evet.
+
+395
+00:43:01,015 --> 00:43:03,135
+[öğrenci], you said that.
+
+396
+00:43:05,635 --> 00:43:06,915
+Evet, evet.
+
+397
+00:43:13,396 --> 00:43:16,996
+If normal of the plane and the parallel vector of the line,
+
+398
+00:43:31,764 --> 00:44:31,764
+Bu, bu
+
+399
+00:44:31,764 --> 00:44:35,903
+because normal is the vertical vector of the plane.
+
+400
+00:44:36,324 --> 00:44:37,624
+Just think another line.
+
+401
+00:44:38,744 --> 00:44:43,003
+If the dot product of them is zero, that means they are orthogonal.
+
+402
+00:44:43,564 --> 00:44:47,064
+That means line and plane are parallel.
+
+403
+00:44:47,844 --> 00:44:49,184
+I hope you understand me.
+
+404
+00:44:50,963 --> 00:44:55,864
+And here, once you see normal is i minus 2j plus 5k
+
+405
+00:44:55,864 --> 00:45:01,624
+and v is the direction of the line minus 1, 2, and 1.
+
+406
+00:45:01,764 --> 00:45:06,503
+And cross product, I'm sorry, dot product, without zero.
+
+407
+00:45:07,463 --> 00:45:11,403
+Because in order to talk about the parallelity of a line and plane,
+
+408
+00:45:12,604 --> 00:45:13,923
+they must be orthogonal.
+
+409
+00:45:16,164 --> 00:45:19,524
+Normal and the direction of the line must be orthogonal.
+
+410
+00:45:20,503 --> 00:45:21,983
+Otherwise, they cannot be parallel.
+
+411
+00:45:22,584 --> 00:45:24,724
+Are you okay? Can you imagine it in your mind?
+
+412
+00:45:35,923 --> 00:45:36,563
+I hope.
+
+413
+00:45:47,987 --> 00:45:52,167
+Please ask me if you don't understand. Please, I can repeat it.
+
+414
+00:46:15,059 --> 00:46:17,059
+Bu ne?
+
+415
+00:46:17,059 --> 00:46:19,059
+Paralleliyeti de iki plana?
+
+416
+00:46:19,059 --> 00:46:21,059
+Bu ne?
+
+417
+00:46:21,059 --> 00:46:27,059
+Ne?
+
+418
+00:46:27,059 --> 00:46:31,059
+Paralleliyeti de iki plana?
+
+419
+00:46:31,059 --> 00:46:41,059
+Paralleliyeti de iki plana var.
+
+420
+00:46:44,500 --> 00:46:53,380
+Çünkü, for lines, we are just talking about the direction of a line, but for planes, we are just talking about the vertical direction of a plane.
+
+421
+00:46:53,780 --> 00:46:55,440
+That's why we have different cases.
+
+422
+00:46:56,840 --> 00:47:00,519
+That's why these conditions are different to parallality.
+
+423
+00:47:02,960 --> 00:47:04,579
+Okay, why?
+
+424
+00:47:24,820 --> 00:47:38,820
+Evet, you are right. Paralleliyeti of two planes, we need to first consider their normal directions. If their normal directions are also parallel, we can talk about the paralleliyeti of the planes.
+
+425
+00:47:41,820 --> 00:47:49,500
+And here n1. What is n1 here? The normal direction of the first one, first plane.
+
+426
+00:47:53,811 --> 00:48:13,672
+Evet, 3, minus 1, and 2. 3, minus 1, and 2 are the normal vector of this plane. Yes, thank you. And for the second plane, we have, yes, you're right, 1, minus 1, and plus 2.
+
+427
+00:48:16,251 --> 00:48:19,451
+How can we understand two vectors are parallel or not?
+
+428
+00:48:30,835 --> 00:48:32,835
+Why they are not parallel?
+
+429
+00:48:32,835 --> 00:48:36,835
+Ah yes, hmmm.
+
+430
+00:48:36,835 --> 00:48:38,835
+But that product?
+
+431
+00:48:38,835 --> 00:48:40,835
+No cross product works here,
+
+432
+00:48:40,835 --> 00:48:42,835
+but you don't need to do it.
+
+433
+00:48:42,835 --> 00:48:50,835
+If one of them is not a multiple of the other one,
+
+434
+00:48:50,835 --> 00:48:54,835
+if you can write one of them is the custom multiple of the other one,
+
+435
+00:48:54,835 --> 00:48:56,835
+you will just look for this one.
+
+436
+00:48:56,835 --> 00:48:58,835
+It's enough to talk about the parallality.
+
+437
+00:48:58,835 --> 00:49:02,835
+Also, you can apply the cross product,
+
+438
+00:49:02,835 --> 00:49:06,835
+but you don't need to get the cross product, I think.
+
+439
+00:49:06,835 --> 00:49:12,835
+So, we don't have a common ratio between their corresponding components.
+
+440
+00:49:12,835 --> 00:49:17,835
+Between, like Schei-Weilner says, 3 over 1 is not equal to 1,
+
+441
+00:49:17,835 --> 00:49:20,835
+minus 1 over minus 1, like, yes, you're right.
+
+442
+00:49:20,835 --> 00:49:24,835
+And for three components, we must have such a ratio.
+
+443
+00:49:24,835 --> 00:49:28,835
+And 3, 1, minus 1, minus 1, they are same, 2 and 2.
+
+444
+00:49:28,835 --> 00:49:32,835
+So, they are not, of course, parallel.
+
+445
+00:49:32,835 --> 00:49:36,835
+That's why the planes are not parallel also, as well.
+
+446
+00:49:36,835 --> 00:49:42,835
+Yes, also, we can have parallel.
+
+447
+00:49:42,835 --> 00:49:50,835
+Since they are not parallel, we can continue with the line of intersection.
+
+448
+00:49:50,835 --> 00:49:56,835
+Because if two planes are not parallel, that means they are intersecting always.
+
+449
+00:49:56,835 --> 00:49:58,835
+Two cases only we have.
+
+450
+00:49:58,835 --> 00:50:00,835
+Parallel or intersecting.
+
+451
+00:50:00,835 --> 00:50:04,835
+If they are not parallel, absolutely they are intersecting.
+
+452
+00:50:04,835 --> 00:50:08,835
+They are intersecting along a line.
+
+453
+00:50:08,835 --> 00:50:14,835
+And so, the line of intersection, you know, is both vertical to N1 and N2.
+
+454
+00:50:14,835 --> 00:50:17,835
+So, parallel to their cross product.
+
+455
+00:50:17,835 --> 00:50:24,835
+So, we can understand the direction of the parallel direction of their line of intersection.
+
+456
+00:50:24,835 --> 00:50:26,835
+Minus 4j, minus 2k.
+
+457
+00:50:26,835 --> 00:50:29,835
+We can conclude the question.
+
+458
+00:50:29,835 --> 00:50:30,695
+Minus 4j, minus 2, minus 2, minus 2, minus 2, minus 2, minus 2, minus 2, minus 2, minus 2, minus 2, minus 2, minus 2, minus 2, minus 2, minus 2, minus 2, minus 2, minus 2, minus 2, minus 2, minus 2, minus 2, minus 2, minus 2, minus 2, minus 2, minus 2, minus 2, minus 2, minus 2, minus 2, minus 2, minus 2, minus 2, minus 2, minus 2, minus 2, minus 2, minus 2, minus 2, minus 2, minus 2, minus 2, minus 2, minus 2, minus 2, minus 2, minus 2, minus 2, minus 2, minus 2, minus 2, minus 2, minus 2, minus 2, minus 2, minus 2, minus 2, minus 2, minus 2, minus 2, minus 2, minus 2, minus 2, minus 2, minus 2, minus 2, minus 2, minus 2, minus 2, minus 2, minus 2,
+
+459
+00:50:40,307 --> 00:50:41,047
+Are you okay?
+
+460
+00:50:59,603 --> 00:51:02,843
+Any question up to now? Okay, thank you so much.
+
+461
+00:51:05,843 --> 00:51:07,823
+Ah, yes. Here it says,
+
+462
+00:51:09,663 --> 00:51:12,423
+find the parametric equations for the line.
+
+463
+00:51:13,443 --> 00:51:14,884
+A line equation is asked.
+
+464
+00:51:15,803 --> 00:51:18,083
+In which the planes intersect?
+
+465
+00:51:23,603 --> 00:51:26,443
+That means the line of intersection is asked here, I think.
+
+466
+00:51:30,036 --> 00:51:31,235
+How can we write it?
+
+467
+00:51:39,219 --> 00:51:41,219
+İlk olarak, ne yapıyoruz?
+
+468
+00:51:41,219 --> 00:51:43,219
+Açık bir line ekonomik?
+
+469
+00:51:43,219 --> 00:51:45,219
+Direkt ve point.
+
+470
+00:51:45,219 --> 00:51:49,219
+Önceyebiliriz?
+
+471
+00:51:57,523 --> 00:52:05,683
+What can be the parallel direction? Yes, thank you. Well done, [öğrenci]. Their normals and the cross product of them.
+
+472
+00:52:07,523 --> 00:52:18,463
+Cross product of their normals will be orthogonal to both n1 and n2. At the same time, parallel to line of intersection.
+
+473
+00:52:19,023 --> 00:52:27,304
+That's why cross product of their normals will be the parallel direction of the, or directly the direction of the line of intersection.
+
+474
+00:52:27,523 --> 00:52:36,623
+Okay, let's do it and tell me the parallel direction and then how can we get the point on it?
+
+475
+00:53:14,996 --> 00:53:18,615
+Yeniden, n1 ve n2, tell me.
+
+476
+00:53:21,576 --> 00:53:26,655
+Yes, 14i, 2j, plus 15k. Yes, you're right. Well done, [öğrenci].
+
+477
+00:53:27,016 --> 00:53:32,456
+What about the point on it? Parallel direction is okay for the line, and also we need a point.
+
+478
+00:53:32,756 --> 00:53:37,115
+How can we write, or how can we find the point on the line of intersection?
+
+479
+00:53:37,756 --> 00:53:38,376
+What do you think?
+
+480
+00:53:43,860 --> 00:53:54,410
+Bu noktada bu noktada ilişkilerin ilişkilerin ilişkilerin ilişkilerin ilişkilerin ilişkilerin ilişkilerin ilişkilerin ilişkilerin ilişkilerin ilişkilerin ilişkilerin ilişkilerin ilişkilerin ilişkilerin ilişkilerin ilişkilerin ilişkilerin ilişkilerin ilişkilerin ilişkilerin ilişkilerin ilişkilerin ilişkilerin ilişkilerin ilişkilerin ilişkilerin ilişkilerin ilişkilerin ilişkilerin ilişkilerin ilişkilerin ilişkilerin ilişkilerin ilişkilerin ilişkilerin ilişkilerin ilişkilerin ilişkilerin ilişkilerin ilişkilerin ilişkilerin ilişkilerin
+
+481
+00:54:11,347 --> 00:54:12,108
+Do you have an idea?
+
+482
+00:54:45,268 --> 00:54:47,568
+How can we find a common point on two planes?
+
+483
+00:54:51,891 --> 00:54:53,351
+It seems to be hard, I think.
+
+484
+00:54:57,876 --> 00:55:05,716
+Çünkü, we need to just choose a point, find a point such that this equation and this equation holds.
+
+485
+00:55:25,235 --> 00:55:26,475
+We need a common point.
+
+486
+00:55:37,331 --> 00:55:38,431
+Let's see how can we do.
+
+487
+00:55:40,051 --> 00:55:40,431
+Look.
+
+488
+00:55:42,971 --> 00:55:44,251
+N1 and N2.
+
+489
+00:55:45,331 --> 00:55:49,132
+Cross product of them parallel to the line of intersection.
+
+490
+00:55:49,391 --> 00:55:54,051
+So this is the parallel direction of the line of intersection.
+
+491
+00:55:54,211 --> 00:55:55,291
+What about choosing a point?
+
+492
+00:55:55,851 --> 00:56:00,592
+To find a point on the line, we can take any point common to two planes.
+
+493
+00:56:00,771 --> 00:56:01,391
+Yes, we need.
+
+494
+00:56:01,751 --> 00:56:04,571
+But we cannot solve three variables with two equations.
+
+495
+00:56:04,571 --> 00:56:07,711
+So we need to substitute one of the variables must be zero.
+
+496
+00:56:07,931 --> 00:56:09,271
+Otherwise, we cannot solve it.
+
+497
+00:56:10,172 --> 00:56:12,211
+Arbitrarily, we just make it z is zero.
+
+498
+00:56:13,051 --> 00:56:13,531
+And look.
+
+499
+00:56:14,851 --> 00:56:17,491
+We need to just get the common solution, of course.
+
+500
+00:56:17,632 --> 00:56:19,391
+The same values of x and y.
+
+501
+00:56:19,571 --> 00:56:21,791
+We need to get that common only one point.
+
+502
+00:56:22,491 --> 00:56:27,132
+And once we substitute z is zero here, 3x minus 6, y is 15.
+
+503
+00:56:27,891 --> 00:56:29,551
+And 2x plus y is 5.
+
+504
+00:56:30,791 --> 00:56:31,771
+And solve that.
+
+505
+00:56:31,771 --> 00:56:34,791
+And get x is 3, y is minus 1.
+
+506
+00:56:35,211 --> 00:56:40,231
+So the point on the both planes and on the line of intersection.
+
+507
+00:56:40,692 --> 00:56:41,971
+3 minus 1, 0.
+
+508
+00:56:42,411 --> 00:56:47,132
+So the line equation is, the direction was 14i2j15k.
+
+509
+00:56:47,132 --> 00:56:58,311
+So 3 plus 14t minus 1 plus 2t, 0 plus 15t parametric equations of the line.
+
+510
+00:57:01,091 --> 00:57:02,251
+Do you understand it?
+
+511
+00:57:02,311 --> 00:57:02,791
+Are you okay?
+
+512
+00:57:02,791 --> 00:57:02,891
+Okay.
+
+513
+00:57:14,420 --> 00:57:15,599
+Evet, ik denk so.
+
+514
+00:57:35,987 --> 00:57:36,788
+Any question?
+
+515
+00:58:00,403 --> 00:58:01,403
+I think you're okay.
+
+516
+00:58:03,403 --> 00:58:13,443
+And if you don't have any question, let's have a short break and then continue.
+
+517
+01:10:24,275 --> 01:10:26,235
+Hi again, let's continue if you're okay.
+
+518
+01:10:31,412 --> 01:10:34,351
+Okay, let's see the next exercise.
+
+519
+01:10:37,432 --> 01:10:44,672
+Find the point where the line intersects the plane. 3x plus 2y plus 6z is 6.
+
+520
+01:10:47,012 --> 01:10:52,152
+Line and plane are intersecting, and of course it's about only a point.
+
+521
+01:10:54,132 --> 01:10:56,172
+It says that which point is it?
+
+522
+01:10:57,512 --> 01:11:00,052
+The point of intersection of the line and the plane.
+
+523
+01:11:01,412 --> 01:11:03,032
+Let's think, what can it be?
+
+524
+01:11:31,347 --> 01:11:49,268
+What do you think? How can we write? How can we find? The point of intersection of line and plane. Only a point it is. How can we get it? A common point. Both line has and the plane.
+
+525
+01:11:55,923 --> 01:12:01,344
+Let me look. Yes, well done. [öğrenci], how did you get it?
+
+526
+01:12:05,395 --> 01:12:06,655
+You're right, completely.
+
+527
+01:12:19,764 --> 01:12:23,963
+How did you get this point? So, tell me.
+
+528
+01:12:35,220 --> 01:12:35,780
+Okay.
+
+529
+01:12:38,060 --> 01:12:40,300
+So tell me, how do you find it?
+
+530
+01:12:44,320 --> 01:12:45,980
+Yes, it's equal to what?
+
+531
+01:12:48,400 --> 01:12:49,039
+Six.
+
+532
+01:12:50,920 --> 01:12:51,940
+Yes, [öğrenci].
+
+533
+01:12:52,520 --> 01:12:56,619
+That means you have substituted the line equation to the plane.
+
+534
+01:12:58,140 --> 01:13:03,460
+Because line equation, line is a set of points.
+
+535
+01:13:03,460 --> 01:13:10,560
+And of course, it has infinitely many points according to any real number of t.
+
+536
+01:13:11,240 --> 01:13:20,640
+So any point on the line must satisfy for a specific t of the plane equation at the same time.
+
+537
+01:13:20,699 --> 01:13:24,579
+That's why you substitute line equation to the plane equation.
+
+538
+01:13:25,039 --> 01:13:26,079
+Yes, it's very nice.
+
+539
+01:13:26,300 --> 01:13:26,699
+Thank you.
+
+540
+01:13:28,220 --> 01:13:28,840
+And [öğrenci].
+
+541
+01:13:28,840 --> 01:13:33,340
+And then you get a specific t.
+
+542
+01:13:33,720 --> 01:13:35,060
+And then find the point.
+
+543
+01:13:36,360 --> 01:13:38,140
+2 over 3.
+
+544
+01:13:38,260 --> 01:13:38,880
+2 and 0.
+
+545
+01:13:39,940 --> 01:13:41,619
+Anyone else who gets this?
+
+546
+01:13:42,340 --> 01:13:43,020
+Also [öğrenci].
+
+547
+01:13:43,880 --> 01:13:45,780
+Also, who can do it?
+
+548
+01:13:45,780 --> 01:13:47,780
+2 over 3.
+
+549
+01:13:47,780 --> 01:13:49,780
+3 over 4.
+
+550
+01:13:49,780 --> 01:13:51,280
+4 over 5.
+
+551
+01:13:51,280 --> 01:13:53,780
+5 over 5.
+
+552
+01:13:53,780 --> 01:13:56,780
+6 over 5.
+
+553
+01:13:56,780 --> 01:14:01,780
+7 over 5.
+
+554
+01:14:01,780 --> 01:14:04,780
+8 over 5.
+
+555
+01:14:04,780 --> 01:14:08,780
+9 over 5.
+
+556
+01:14:01,460 --> 01:14:02,460
+Tamam, bakalım.
+
+557
+01:14:08,212 --> 01:14:15,612
+Bu point, the point of intersection for any t, point is common, both for plane and line.
+
+558
+01:14:16,012 --> 01:14:23,152
+So think that for any specific t, the point 8 over 3 plus 2t minus 2t, 1 plus t, lies in the plane.
+
+559
+01:14:23,472 --> 01:14:27,212
+If its coordinate satisfy the equation of the plane, yes.
+
+560
+01:14:28,832 --> 01:14:31,712
+And substitute here and get t is minus 1.
+
+561
+01:14:32,292 --> 01:14:37,052
+So for t is minus 1, we have this point, the point of intersection of the line and the plane.
+
+562
+01:14:47,956 --> 01:14:50,096
+Are you okay? Do you understand it?
+
+563
+01:15:08,307 --> 01:15:09,287
+Is it clear for you?
+
+564
+01:15:14,676 --> 01:15:21,836
+Okay, so let's continue with the next example.
+
+565
+01:15:25,555 --> 01:15:32,435
+Find the parametric equations and the direction v of the line in which the planes intersect.
+
+566
+01:15:44,564 --> 01:15:49,844
+Which line is it? Parametric equations and direction is asked.
+
+567
+01:15:51,284 --> 01:15:56,724
+This line is the line of intersection of these two planes. Let's find it.
+
+568
+01:16:05,460 --> 01:16:15,720
+When two planes intersect, the line of intersection having the parallel direction,
+
+569
+01:16:19,220 --> 01:16:22,760
+to cross product of their normals.
+
+570
+01:16:23,900 --> 01:16:29,320
+Because line of intersection is vertical to both their normals.
+
+571
+01:16:31,240 --> 01:16:35,680
+That's why cross product is parallel direction of the line of intersection.
+
+572
+01:16:55,283 --> 01:16:56,483
+I'm waiting for you.
+
+573
+01:17:02,996 --> 01:17:04,716
+İlk yazı N1 ve N2.
+
+574
+01:17:19,956 --> 01:17:26,256
+Evet, you're right, Şehvarnir. 3i-2j plus k is the cross product of their normals.
+
+575
+01:17:29,136 --> 01:17:32,036
+That means the parallel direction of the line of intersection.
+
+576
+01:17:32,256 --> 01:17:35,796
+Okay, we got the direction of v, of the line.
+
+577
+01:17:37,176 --> 01:17:40,056
+But to write the parametric equations, what do we need more?
+
+578
+01:17:47,380 --> 01:17:49,000
+Evet, bir point on it.
+
+579
+01:17:50,180 --> 01:17:52,400
+Yani bir common point between two planes.
+
+580
+01:17:52,619 --> 01:17:53,319
+What to do here?
+
+581
+01:17:55,060 --> 01:17:59,640
+You can do a similar way that we did in two previous questions, I think.
+
+582
+01:18:00,680 --> 01:18:01,520
+Two or three.
+
+583
+01:18:32,595 --> 01:18:49,655
+You can assume that one of the coordinates is zero, for example, assume that z is zero arbitrarily, and then solve for x, y, z, x, y between two planes common solution, and you can get a point.
+
+584
+01:18:51,235 --> 01:18:53,615
+And this point will be on both planes.
+
+585
+01:19:06,260 --> 01:19:06,619
+Hmm.
+
+586
+01:19:10,868 --> 01:19:13,028
+Mhmm, yes.
+
+587
+01:19:22,260 --> 01:19:32,180
+That means you got the point 0, 2, 2. Okay, you have assumed x is 0 and solve it. Okay, correct.
+
+588
+01:19:34,239 --> 01:19:37,300
+Here y is 2 minus 2t, I think.
+
+589
+01:20:05,971 --> 01:20:14,171
+Y6 minus 2, z is 10.
+
+590
+01:20:14,171 --> 01:20:15,532
+Yes, it's also correct.
+
+591
+01:20:16,271 --> 01:20:16,971
+Yes, you're right.
+
+592
+01:20:17,251 --> 01:20:19,331
+For z is zero, you have such a solution.
+
+593
+01:20:20,271 --> 01:20:26,171
+For example, arbitrarily, [öğrenci] assumed that x is zero and get such a parametrization.
+
+594
+01:20:26,291 --> 01:20:27,152
+It's again correct.
+
+595
+01:20:27,451 --> 01:20:28,091
+No problem.
+
+596
+01:20:28,511 --> 01:20:29,051
+We may have.
+
+597
+01:20:30,951 --> 01:20:32,492
+Yes, it's also correct.
+
+598
+01:20:34,931 --> 01:20:35,612
+Let's see.
+
+599
+01:20:41,811 --> 01:20:55,131
+n1, n2, 0,12, n2, 0,12, ok? And we know that the direction of the line of intersection is parallel to the cruis-product of their normals.
+
+600
+01:20:55,891 --> 01:21:09,671
+Cruis-product is 3i-2j plus k, and we need a point, but the point must be included in both planes, but planes having three variables and two equations cannot be solved.
+
+601
+01:21:09,671 --> 01:21:16,851
+That's why we need to choose one of the x, y, z, any of them arbitrarily 0. You can choose it, no problem.
+
+602
+01:21:17,332 --> 01:21:30,311
+For z0, we have x is minus 6, y is 6, z is 0, any point on it. And I've forgotten to write the solution here. I am sorry, it's odd here.
+
+603
+01:21:30,311 --> 01:21:38,652
+And so the point on it. And so the point on it. And so the point on it. And so the point on the line is minus 6, 6, 0.
+
+604
+01:21:38,652 --> 01:21:49,251
+And so the parametric equations of this line are x is minus 6 plus 3t, y is 6 minus 2t, and z is d. Like you said, and thank you.
+
+605
+01:21:50,671 --> 01:21:51,771
+Well done, all of you.
+
+606
+01:22:09,332 --> 01:22:10,252
+I think it's okay.
+
+607
+01:22:12,692 --> 01:22:15,572
+And we have finished this topic.
+
+608
+01:22:16,311 --> 01:22:18,632
+More generally, lines and planes in space.
+
+609
+01:22:19,271 --> 01:22:21,972
+How to write the line equation, how to write the plane equation,
+
+610
+01:22:21,972 --> 01:22:25,012
+and the position of a line and plane, parallality.
+
+611
+01:22:25,492 --> 01:22:28,192
+Parallality of two lines, intersecting of two lines,
+
+612
+01:22:28,712 --> 01:22:31,592
+parallality of line and plane, intersection of line and plane,
+
+613
+01:22:31,912 --> 01:22:36,892
+and also parallality of two planes and intersection line of two planes.
+
+614
+01:22:36,892 --> 01:22:39,472
+We have talked about and get exercises.
+
+615
+01:22:40,292 --> 01:22:41,712
+I think this topic is okay.
+
+616
+01:22:42,512 --> 01:22:45,872
+And first, I want to ask you, do you have any question about it?
+
+617
+01:22:54,963 --> 01:22:58,083
+Any question of this topic? Are you all okay?
+
+618
+01:23:09,427 --> 01:23:12,787
+Ve sonra yeni bir soru var.
+
+619
+01:23:13,787 --> 01:23:15,068
+Bu soru var.
+
+620
+01:23:15,068 --> 01:23:18,188
+Vektor-valued functions and motion in space.
+
+621
+01:23:39,859 --> 01:24:09,859
+Bu konuda ve vektör ve vektör ve vektör ve vektör ve
+
+622
+01:24:09,859 --> 01:24:43,689
+ve ve
+
+623
+01:24:50,484 --> 01:24:52,324
+Kurs in space and their tangents.
+
+624
+01:24:53,164 --> 01:24:57,684
+When a particle moves through space during a time interval i,
+
+625
+01:24:58,364 --> 01:25:02,204
+we think of the particle's coordinates as functions defined on i.
+
+626
+01:25:03,044 --> 01:25:06,064
+That means parametrically given three functions we have.
+
+627
+01:25:06,864 --> 01:25:11,584
+And we are trying to understand the position of any particle,
+
+628
+01:25:11,584 --> 01:25:16,264
+a moving particle, on a time interval i in space
+
+629
+01:25:16,264 --> 01:25:19,484
+with the time parameter, as you see,
+
+630
+01:25:19,484 --> 01:25:23,084
+according to any t time, where is the point?
+
+631
+01:25:23,224 --> 01:25:26,444
+We are just trying to understand with this kind of a function.
+
+632
+01:25:27,344 --> 01:25:29,524
+We have a moving particle in space.
+
+633
+01:25:30,764 --> 01:25:33,644
+And so the points x, y, z, f, d, g, t, h, t
+
+634
+01:25:33,644 --> 01:25:38,124
+make up the curve in space that we call the particle's path.
+
+635
+01:25:38,444 --> 01:25:41,744
+That means the way of a particle is moving.
+
+636
+01:25:42,204 --> 01:25:45,644
+It's the path of it we can understand with the help of these functions
+
+637
+01:25:45,644 --> 01:25:49,244
+because at any time t, we are just trying to understand
+
+638
+01:25:49,244 --> 01:25:53,244
+and we are able to understand the position of the moving particle
+
+639
+01:25:53,244 --> 01:25:55,244
+with the help of these functions.
+
+640
+01:25:55,244 --> 01:25:56,684
+That's why it's the path of it.
+
+641
+01:25:56,684 --> 01:26:02,444
+And the curve in space can also be represented in vector form.
+
+642
+01:26:02,444 --> 01:26:03,564
+Yes, we can.
+
+643
+01:26:03,564 --> 01:26:10,124
+The vector r , f , t, i, g, t, j, and h , k.
+
+644
+01:26:10,124 --> 01:26:17,804
+So the functions f , g, h are component functions of the position vector.
+
+645
+01:26:18,844 --> 01:26:20,444
+Why it is a position vector?
+
+646
+01:26:20,444 --> 01:26:23,004
+Think that we have such a path.
+
+647
+01:26:23,484 --> 01:26:26,364
+This path is the way of a moving particle.
+
+648
+01:26:27,963 --> 01:26:29,404
+It moves along this curve.
+
+649
+01:26:29,404 --> 01:26:31,324
+Okay, we have a curve in space.
+
+650
+01:26:31,324 --> 01:26:39,484
+And r , t is a position vector because at any time t with these functions,
+
+651
+01:26:39,484 --> 01:26:42,604
+the component shows the location of the point.
+
+652
+01:26:42,604 --> 01:26:45,004
+So this vector makes it.
+
+653
+01:26:45,724 --> 01:26:49,963
+So this vector r will have the components f , g, h,
+
+654
+01:26:50,604 --> 01:26:52,844
+but it's the vector at the same time.
+
+655
+01:26:52,844 --> 01:26:59,164
+That's why it's the vector value function showing your position of a moving particle
+
+656
+01:26:59,164 --> 01:26:59,804
+in space.
+
+657
+01:27:02,204 --> 01:27:10,204
+This r defines r a vector function of the real variable t on the interval r.
+
+658
+01:27:10,204 --> 01:27:13,564
+Here is the time interval, but any parameter we may have.
+
+659
+01:27:13,564 --> 01:27:19,164
+More generally, if we have a moving particle and try to understand the place of it,
+
+660
+01:27:19,164 --> 01:27:21,484
+more generally we are using the time intervals.
+
+661
+01:27:21,484 --> 01:27:23,644
+That means parameter is t.
+
+662
+01:27:23,644 --> 01:27:26,524
+At any time t, where is the point we are trying to understand?
+
+663
+01:27:26,524 --> 01:27:30,124
+We are following the path of it with these position vectors.
+
+664
+01:27:31,484 --> 01:27:36,364
+Okay, so at the same time, x, y, z is the parameterization of the curve.
+
+665
+01:27:38,044 --> 01:27:39,884
+It's the path of the moving particle.
+
+666
+01:27:41,164 --> 01:27:44,604
+And so such a function is a vector valued function,
+
+667
+01:27:45,324 --> 01:27:48,284
+having the components as functions of t.
+
+668
+01:27:48,284 --> 01:27:51,644
+But the result is function.
+
+669
+01:27:51,644 --> 01:27:53,724
+I'm vector, I'm sorry.
+
+670
+01:27:54,524 --> 01:28:01,324
+A vector valued function on a domain set d is a rule that assigns a vector in space to each element in d.
+
+671
+01:28:02,923 --> 01:28:07,164
+So if we specify this path with this function,
+
+672
+01:28:07,164 --> 01:28:13,724
+function at any time t, r shows corresponding t, f, g, h, d.
+
+673
+01:28:13,724 --> 01:28:18,764
+With the help of these functions, we are just trying to understand which point is it.
+
+674
+01:28:20,364 --> 01:28:25,004
+That means at any time t or at any parameter t, we have another vector.
+
+675
+01:28:25,004 --> 01:28:32,204
+So for any real number t, the output of the function is a vector always.
+
+676
+01:28:32,204 --> 01:28:34,524
+That's why it's the vector valued function.
+
+677
+01:28:35,084 --> 01:28:39,644
+So it's the function which assigns a vector in space to each element in d.
+
+678
+01:28:41,963 --> 01:28:42,604
+For example,
+
+679
+01:28:42,604 --> 01:28:46,524
+It says,
+
+680
+01:28:46,524 --> 01:28:56,604
+Craft function vector function.
+
+681
+01:28:49,395 --> 01:28:51,235
+Cosine t, sine t, t.
+
+682
+01:28:53,755 --> 01:28:57,095
+In order to understand, for t is 0, for example.
+
+683
+01:28:58,615 --> 01:28:59,515
+Cosine 0, 1.
+
+684
+01:28:59,996 --> 01:29:01,155
+0, 0.
+
+685
+01:29:01,456 --> 01:29:02,395
+1, 0, 0.
+
+686
+01:29:02,996 --> 01:29:04,195
+For t is pi over 2.
+
+687
+01:29:04,795 --> 01:29:07,055
+0, 1, pi over 2.
+
+688
+01:29:07,576 --> 01:29:11,255
+For t is pi, minus 1, 0, pi.
+
+689
+01:29:11,775 --> 01:29:13,095
+Look, which point is it?
+
+690
+01:29:13,435 --> 01:29:14,755
+For t is 0, we are here.
+
+691
+01:29:15,615 --> 01:29:16,515
+1, 0, 0.
+
+692
+01:29:17,295 --> 01:29:18,935
+For t is pi over 2.
+
+693
+01:29:19,395 --> 01:29:21,395
+What we have?
+
+694
+01:29:21,715 --> 01:29:23,395
+0, 1, pi over 2.
+
+695
+01:29:25,835 --> 01:29:30,996
+And then for p, pi, minus 1, 0, pi.
+
+696
+01:29:31,775 --> 01:29:32,755
+And et cetera.
+
+697
+01:29:33,675 --> 01:29:35,135
+So it's a helix.
+
+698
+01:29:35,355 --> 01:29:36,155
+It's a spread.
+
+699
+01:29:37,036 --> 01:29:38,576
+This curve is called a helix.
+
+700
+01:29:38,916 --> 01:29:40,395
+Cosine t, sine t, and t.
+
+701
+01:29:41,235 --> 01:29:43,095
+And it's a vector-valued function.
+
+702
+01:29:43,675 --> 01:29:45,735
+And the graph of it is this, like this.
+
+703
+01:29:51,699 --> 01:29:55,699
+T0'a bir çirka olarak bir çirka olarak görüyoruz.
+
+704
+01:30:02,068 --> 01:30:04,668
+Do you understand a little bit the vector-valued functions?
+
+705
+01:30:05,467 --> 01:30:08,628
+So continue with the limit and continuity of them.
+
+706
+01:30:09,788 --> 01:30:11,148
+Any question up to now?
+
+707
+01:30:25,235 --> 01:30:32,355
+So, if you don't have any questions, let's continue with the limits and continuity of the vector-valued functions.
+
+708
+01:30:33,956 --> 01:30:38,836
+Only one parameter we have, that's why it's very similar to the single variable functions.
+
+709
+01:30:41,235 --> 01:30:48,595
+RT is FTI, GTR, J and HTK. Be a vector function with domain D. D is the domain of T.
+
+710
+01:30:48,595 --> 01:30:55,395
+And L will be a vector. We say that R has limit L as T approaches T0 and right.
+
+711
+01:30:56,036 --> 01:31:04,996
+When T is approaching T0, RT is going to vector L. Because the result of at any time T,
+
+712
+01:31:05,555 --> 01:31:11,315
+the result of the function is always a vector. So, the limit of it must be a vector at the same time.
+
+713
+01:31:11,315 --> 01:31:21,155
+So, when we have this limit is equal to this L vector, if for every positive epsilon,
+
+714
+01:31:22,996 --> 01:31:28,036
+there exists a corresponding delta positive, such that for all T in D,
+
+715
+01:31:29,155 --> 01:31:36,275
+RT minus L less than epsilon whenever this condition holds. That means,
+
+716
+01:31:36,275 --> 01:31:43,715
+when T is approaching T0, RT is approaching L shortly. That means,
+
+717
+01:31:46,115 --> 01:31:51,876
+because this is the limit of it. When T is approaching T0, RT must approach to L. Yes,
+
+718
+01:31:52,515 --> 01:32:02,195
+for any positive epsilon. When T is on the delta interval, delta neighborhood of T0, corresponding to
+
+719
+01:32:02,195 --> 01:32:11,315
+RTs. RT minus L less than a positive number means the length of them, or the distance between these
+
+720
+01:32:11,315 --> 01:32:17,876
+numbers, these vectors, modulus of it, going to 0, it means that means they are approaching so much.
+
+721
+01:32:18,675 --> 01:32:21,956
+That's why it's the limit of it. Okay.
+
+722
+01:32:24,115 --> 01:32:27,956
+And then, how can we evaluate the limit of a vector valid function? So,
+
+723
+01:32:27,956 --> 01:32:35,876
+function by function, component by component. First, we get the limit of L1, L2, L3, part by part,
+
+724
+01:32:35,876 --> 01:32:44,036
+evaluate the limits of the functions, component functions, when T is going to T0, L1, L2, L3,
+
+725
+01:32:44,036 --> 01:32:55,315
+if the limit is existed, of course. So, limit of R will be L1, Ti, L2, J, L3, K. That means, function by
+
+726
+01:32:55,315 --> 01:33:11,235
+function, we need to just get evaluate the limits and then substitute to the result. Okay, it's easy.
+
+727
+01:33:06,676 --> 01:33:07,396
+For example
+
+728
+01:33:17,043 --> 01:33:22,623
+If our function is rt cosin t i sin t j t k helix,
+
+729
+01:33:23,243 --> 01:33:26,463
+then what's the limit of this function at pi over 4?
+
+730
+01:33:28,023 --> 01:33:29,543
+Let's evaluate one by one.
+
+731
+01:33:30,743 --> 01:33:33,703
+What's the limit of cosin t at pi over 4?
+
+732
+01:33:34,043 --> 01:33:37,243
+What's the limit of sin t at pi over 4?
+
+733
+01:33:37,483 --> 01:33:40,344
+Not at pi over 4, when t is approaching pi over 4.
+
+734
+01:33:40,423 --> 01:33:42,363
+We are not at the point pi over 4, I'm sorry.
+
+735
+01:33:43,083 --> 01:33:44,003
+And what about t?
+
+736
+01:33:44,003 --> 01:33:50,123
+So, evaluate the limit, t is going to pi over 4, cosin t squared 2 over 2.
+
+737
+01:33:50,943 --> 01:33:55,423
+Sin t, when t is going to pi over 4, squared 2 over 2 again.
+
+738
+01:33:56,283 --> 01:33:59,804
+For t, when t is going to pi over 4, it's going to pi over 4.
+
+739
+01:34:00,243 --> 01:34:04,203
+Clearly, because they are continuous functions, these component functions are continuous
+
+740
+01:34:04,203 --> 01:34:07,224
+and having limit at pi over 4, so no problem.
+
+741
+01:34:07,224 --> 01:34:09,863
+This vector, as you see, it's the vector again.
+
+742
+01:34:10,564 --> 01:34:13,644
+This vector is the limit of this vector-valued function.
+
+743
+01:34:14,003 --> 01:34:16,083
+When t is approaching pi over 4.
+
+744
+01:34:31,956 --> 01:34:32,615
+Are you okay?
+
+745
+01:34:40,884 --> 01:34:46,644
+I think it's very easy. Vector-valued functions are so an easy topic, don't worry. Let's continue.
+
+746
+01:34:47,604 --> 01:35:00,644
+For example, let's write and evaluate. But what's the limit of this vector-valued function? Sin t over t minus t squared, sin t, and t minus 1. 1t is going to 0. Evoluate and tell me.
+
+747
+01:35:25,555 --> 01:35:30,535
+Yes, you're right. I minus K. Thank you. [öğrenci].
+
+748
+01:35:32,155 --> 01:35:33,115
+Anyone else?
+
+749
+01:35:39,891 --> 01:35:41,751
+Thank you. Yes, [öğrenci].
+
+750
+01:35:45,192 --> 01:35:45,711
+[öğrenci].
+
+751
+01:35:52,404 --> 01:35:56,404
+Evet, bu şekilde, bu şekilde, çünkü,
+
+752
+01:35:56,404 --> 01:36:00,404
+bu şekilde, sin t over t minus t squared, 0 over 0.
+
+753
+01:36:04,404 --> 01:36:06,404
+Lepitle, ok.
+
+754
+01:36:08,404 --> 01:36:09,404
+Bu, 1, ok.
+
+755
+01:36:09,404 --> 01:36:15,404
+Ve bu, sin t over t, 1 over 1 minus t,
+
+756
+01:36:15,404 --> 01:36:17,404
+or use Lepitle rule.
+
+757
+01:36:17,404 --> 01:36:19,404
+Evet, [öğrenci], I think so.
+
+758
+01:36:19,404 --> 01:36:22,404
+So, I think like you, sin t over t,
+
+759
+01:36:22,404 --> 01:36:26,404
+and 1 over 1 minus t, or Lepitle is ok again, no problem,
+
+760
+01:36:26,404 --> 01:36:28,404
+they are both correct.
+
+761
+01:36:28,404 --> 01:36:29,404
+Thank you.
+
+762
+01:36:29,404 --> 01:36:33,404
+And so, because t is going to 0, sin t over t is going to 1,
+
+763
+01:36:33,404 --> 01:36:36,404
+and 1 over 1 minus t, already 1.
+
+764
+01:36:36,404 --> 01:36:38,404
+So, no problem, it's 1.
+
+765
+01:36:38,404 --> 01:36:42,404
+Sin t going to 0, and t minus 1 going to minus 1.
+
+766
+01:36:42,404 --> 01:36:44,404
+So, the limit of this vector,
+
+767
+01:36:44,404 --> 01:36:47,404
+well, it function at the, when t is going to 0,
+
+768
+01:36:47,404 --> 01:36:50,404
+and then, i minus k, this vector.
+
+769
+01:36:50,404 --> 01:36:52,404
+What about this?
+
+770
+01:36:52,404 --> 01:36:56,404
+What's the limit of this vector,
+
+771
+01:36:56,404 --> 01:36:59,404
+will it function when t is going to 0?
+
+772
+01:36:59,404 --> 01:37:25,404
+So, let's go.
+
+773
+01:37:37,811 --> 01:37:39,692
+Um, is this key?
+
+774
+01:37:47,091 --> 01:37:52,152
+E times J, J, Yumi, are you sure?
+
+775
+01:38:05,811 --> 01:38:07,032
+Just think a little bit.
+
+776
+01:38:07,971 --> 01:38:08,511
+I'm waiting.
+
+777
+01:38:15,252 --> 01:38:17,292
+Evet, [öğrenci], you're right. It's J only.
+
+778
+01:38:18,812 --> 01:38:19,852
+Yes, well done.
+
+779
+01:38:32,404 --> 01:38:33,764
+Anyone who guessed J?
+
+780
+01:38:38,836 --> 01:38:39,936
+Okey, [öğrenci].
+
+781
+01:38:43,988 --> 01:38:44,588
+Mhmm.
+
+782
+01:38:56,979 --> 01:38:58,719
+Let's see, you're right, thank you.
+
+783
+01:39:01,659 --> 01:39:04,179
+1 minus cosine t over t, 0 over 0.
+
+784
+01:39:05,179 --> 01:39:11,119
+And once you use the Lepitul rule, if you want, sine t over 1, 0.
+
+785
+01:39:11,659 --> 01:39:18,539
+e to t minus 1 over t, again 0 over 0, Lepitul, e to t over 1, e to 0, 1.
+
+786
+01:39:19,859 --> 01:39:22,359
+This is directly 0, so only j.
+
+787
+01:39:39,859 --> 01:39:43,859
+ve bu bir limit var.
+
+788
+01:39:43,859 --> 01:39:45,859
+Component by component,
+
+789
+01:39:45,859 --> 01:39:47,859
+bu bir limit var.
+
+790
+01:39:47,859 --> 01:39:49,859
+Vektorvalued function is so easy.
+
+791
+01:39:49,859 --> 01:39:51,859
+What about continuity?
+
+792
+01:39:51,859 --> 01:39:54,859
+A vector function RT is continuous
+
+793
+01:39:54,859 --> 01:39:56,859
+at a point t0
+
+794
+01:39:56,859 --> 01:39:57,859
+in its domain
+
+795
+01:39:57,859 --> 01:39:59,859
+if the limit of the
+
+796
+01:39:59,859 --> 01:40:01,859
+vectorvalued function is equal
+
+797
+01:40:01,859 --> 01:40:05,859
+to the value of the function
+
+798
+01:40:05,859 --> 01:40:07,859
+at that point.
+
+799
+01:40:07,859 --> 01:40:09,859
+This is the vector of course.
+
+800
+01:40:09,859 --> 01:40:12,859
+So the function is continuous
+
+801
+01:40:12,859 --> 01:40:15,859
+if it is continuous at every point of course.
+
+802
+01:40:15,859 --> 01:40:19,859
+What about derivatives and motion?
+
+803
+01:40:19,859 --> 01:40:21,859
+This is important I think.
+
+804
+01:40:33,908 --> 01:40:35,908
+Bakın, bu figure.
+
+805
+01:40:35,908 --> 01:40:38,908
+İzlediğiniz gibi, bir kürtü var.
+
+806
+01:40:38,908 --> 01:40:46,908
+Ve bu kürtü var.
+
+807
+01:40:46,908 --> 01:40:51,908
+Bu kürtü var.
+
+808
+01:40:51,908 --> 01:41:02,908
+Ve bu kürtü var.
+
+809
+01:41:02,908 --> 01:41:06,908
+Fg, h ve bu kürtü var.
+
+810
+01:41:06,908 --> 01:44:46,908
+Ve bu kürtü var.
+
+811
+01:44:32,979 --> 01:44:39,539
+has a derivative or differentiable at t if f, g, h have derivatives at t, of course,
+
+812
+01:44:40,059 --> 01:44:43,299
+because if these functions are not defined or not continuous,
+
+813
+01:44:43,699 --> 01:44:46,779
+we cannot talk about the existence of this function dr dt,
+
+814
+01:44:47,000 --> 01:44:49,539
+that means the derivative of r with respect to t.
+
+815
+01:44:50,099 --> 01:44:52,879
+So derivative as the vector function is defined with this form.
+
+816
+01:44:53,339 --> 01:44:57,000
+Again, like having the limits one by one, having the derivative one by one.
+
+817
+01:44:57,559 --> 01:45:00,919
+First function gets derivative, second function gets derivative, third function,
+
+818
+01:45:00,919 --> 01:45:04,799
+again get derivative with respect to t and then write the new vector,
+
+819
+01:45:04,919 --> 01:45:08,359
+which will be the derivative of the vector valued function rt.
+
+820
+01:45:10,379 --> 01:45:15,519
+A vector function r is differentiable, if it is differentiable, of course, at every point of its domain.
+
+821
+01:45:16,439 --> 01:45:24,819
+And the curve traced by r is smooth if dr dt is continuous and never be zero.
+
+822
+01:45:25,039 --> 01:45:26,939
+It's the smoothness of the curve.
+
+823
+01:45:34,355 --> 01:45:37,675
+Ve bu, ne?
+
+824
+01:45:37,675 --> 01:45:41,416
+Bu, derivata ve vücudu R'ı,
+
+825
+01:45:41,416 --> 01:47:48,855
+ve vücudu R'ı,
+
+826
+01:47:50,644 --> 01:47:52,244
+Are you okay? Do you understand it?
+
+827
+01:48:04,724 --> 01:48:05,724
+Ok.
+
+828
+01:48:08,604 --> 01:48:11,604
+Let's deal with this exercise lastly.
+
+829
+01:48:11,604 --> 01:48:15,364
+It says find the velocity, speed and acceleration of a particle
+
+830
+01:48:15,364 --> 01:48:19,484
+whose motion in space is given by the position vector.
+
+831
+01:48:19,484 --> 01:48:23,484
+This position vector shows again the location of the point
+
+832
+01:48:23,484 --> 01:48:25,684
+of a moving particle in space.
+
+833
+01:48:25,684 --> 01:48:31,163
+That's why it's the curve at the same time.
+
+834
+01:48:31,163 --> 01:48:33,444
+A curve is given parametrically
+
+835
+01:48:33,444 --> 01:48:38,484
+and also this is showing at any time t or at any parameter t
+
+836
+01:48:38,484 --> 01:48:42,083
+it shows the position of the moving particle.
+
+837
+01:48:42,083 --> 01:48:46,963
+So what is velocity? First order derivative. Speed, modulus of it.
+
+838
+01:48:46,963 --> 01:48:51,923
+Acceleration, second order derivative of r or derivative of velocity.
+
+839
+01:48:51,923 --> 01:48:54,404
+Let's see.
+
+840
+01:48:55,043 --> 01:49:01,043
+Velocity r prime dr dt derivative.
+
+841
+01:49:01,043 --> 01:49:07,364
+At acceleration, second order derivative of the position or derivative of velocity.
+
+842
+01:49:08,003 --> 01:49:09,684
+Second order derivative.
+
+843
+01:49:09,684 --> 01:49:12,404
+The speed is the length of velocity.
+
+844
+01:49:12,404 --> 01:49:15,684
+The magnitude of velocity is defined like this.
+
+845
+01:49:16,244 --> 01:49:18,564
+It's very easy again. I think this topic is easy.
+
+846
+01:49:18,564 --> 01:49:31,043
+Now if you are ok, we will stop here and continue the next week with the last part of this topic.
+
+847
+01:49:31,043 --> 01:49:33,604
+And then also continue with the most important topic.
+
+848
+01:49:33,604 --> 01:49:39,043
+Maybe one of the most important topics in mathematics which will be the several variable functions.
+
+849
+01:49:39,043 --> 01:49:41,844
+Next week we will continue with it.
+
+850
+01:49:42,884 --> 01:49:45,043
+So I wish you have a nice weekend.
+
+851
+01:49:46,324 --> 01:49:47,844
+Be healthy and happy I hope.
+
+852
+01:49:48,484 --> 01:49:51,524
+And please repeat these topics and exercises also.
+
+853
+01:49:54,484 --> 01:49:56,003
+And thank you for your listening.
+
+854
+01:49:58,404 --> 01:50:00,484
+For all your attendance. Thank you so much.
+
+855
+01:50:00,484 --> 01:50:09,923
+Thank you.
+
+856
+01:50:08,020 --> 01:50:09,560
+ve sonraki videoda görüşmek üzere.
+
+857
+01:50:22,579 --> 01:50:23,079
+See you.

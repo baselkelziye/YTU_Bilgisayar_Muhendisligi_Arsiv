@@ -1,0 +1,7187 @@
+1
+00:01:19,475 --> 00:01:20,415
+Arkadaşlar, merhaba.
+
+2
+00:01:28,531 --> 00:01:30,751
+Nasılsınız görüşmeyeli? Herkes iyi mi?
+
+3
+00:01:49,587 --> 00:01:57,367
+Teşekkür ederim, ben de yiyeyim. Notlarınızı gördünüz. Ortalama hiç fena değil grup için.
+
+4
+00:02:01,459 --> 00:02:10,500
+Ben de memnun oldum. Hatta bir tane yüz yılan arkadaşımız var. [öğrenci]. Notlar genel olarak güzel, ortalama güzel.
+
+5
+00:02:27,283 --> 00:02:34,243
+Sınav notlarınızla ilgili de şunu söyleyebilirim. Benim görüntüyle bildiğim notunuz, doğru ve yalnız sayınız sadece.
+
+6
+00:02:35,283 --> 00:02:42,383
+Maalesef bir cevap anahtarı paylaşamıyorum. Ama çok aklınıza takılan bir soru varsa onun cevabıyla ilgili size yardımcı olabilirim.
+
+7
+00:02:42,743 --> 00:02:54,123
+Ve doğru yalnız sayılarınızı söyleyebilirim. Bunun dışında zaten ekstra bir daha incelenmeye gerek olacak bir durum yok.
+
+8
+00:02:54,123 --> 00:03:03,443
+sistem tarafının okunduğu için sıkıntılı bir durum yok. Bence. Sizler de memnunsunuzdurum anam notlarınızdan.
+
+9
+00:03:24,852 --> 00:03:46,472
+Ben şunu söyleyeceğim. Notlarınız değil ama derste neden bu kadar az katılıyorsunuz? O konuda benim şikayetim olacak sizlerden. Çok az kişi katılıyor. Çok az kişi ders aktif olarak katılıyor. Notlarınız aslında gayet iyi. Notu çok iyi olup da derste hiç katılmayan öğrencilerim var. Bu beni biraz şaşırttı. Katılın bekliyorum arkadaşlar.
+
+10
+00:03:46,472 --> 00:03:56,711
+Son haftalarımız. Önemli konulara geldik. Geleceğiz. Hızlanacağız. Katılımlarınızı bekliyorum.
+
+11
+00:04:02,580 --> 00:04:02,960
+Hmm.
+
+12
+00:04:06,836 --> 00:04:11,076
+Tamam. Tamam [öğrenci]. Kayıtları dinlersin.
+
+13
+00:04:15,955 --> 00:04:23,276
+Çünkü şöyle, kaybettiğimiz çok ders olduğu için şu anda çok gerideyiz. Bugün de hızlı bir şekilde devam edeceğim.
+
+14
+00:04:23,995 --> 00:04:31,435
+Zincir kuralını tamamlayıp hemen yönlü türev ve gradyan vektörlerle devam edip hatta sonrasında vaktimiz kalırsa büyük ihtimalle kalacaktır.
+
+15
+00:04:31,795 --> 00:04:41,235
+Linerizasyon ve diferansiyerler konusuyla devam edeceğiz. Sonrasında geriye iki katlı integraller kalıyor. İki katlı integraller aslında çok önemli bir konu.
+
+16
+00:04:45,956 --> 00:04:50,815
+Neden öyle oldu [öğrenci]? Dönem başından beri bu şekilde mi? Söylemiş miydin? Hatırlamıyorum.
+
+17
+00:04:52,716 --> 00:04:55,555
+Hocam ben dönem başında da söylemiştim size.
+
+18
+00:04:55,776 --> 00:04:58,935
+Çok pardon, unutuyorum ben. Çok özür dilerim. Efendim.
+
+19
+00:04:59,555 --> 00:05:05,395
+[kişisel bilgi]
+
+20
+00:05:06,395 --> 00:05:06,995
+Anladım.
+
+21
+00:05:07,795 --> 00:05:09,395
+Sizi dinlemeye geldim.
+
+22
+00:05:09,956 --> 00:05:10,695
+Teşekkür ederim.
+
+23
+00:05:11,615 --> 00:05:15,515
+[kişisel bilgi]
+
+24
+00:05:15,956 --> 00:05:19,175
+[kişisel bilgi]
+
+25
+00:05:19,836 --> 00:05:20,156
+Tamam.
+
+26
+00:05:20,375 --> 00:05:23,555
+[kişisel bilgi]
+
+27
+00:05:24,555 --> 00:05:26,015
+O biraz söylemek istiyorum.
+
+28
+00:05:26,315 --> 00:05:26,895
+Evet, evet.
+
+29
+00:05:27,656 --> 00:05:30,135
+Güzel. Yani en azından bunu belirtmeniz de çok güzel.
+
+30
+00:05:30,275 --> 00:05:33,175
+Dönem başındaki izin konuşmuşuzdur ama ben gerçekten unutuyorum her şeyi.
+
+31
+00:05:34,855 --> 00:05:37,555
+Hatta devansızlık hakkında da konuşmuştuk herhalde değil mi?
+
+32
+00:05:38,235 --> 00:05:38,915
+Evet, evet.
+
+33
+00:05:38,915 --> 00:05:39,956
+İyi falan atmıştım.
+
+34
+00:05:39,956 --> 00:05:40,956
+Tamam, tamam.
+
+35
+00:05:41,036 --> 00:05:42,195
+Hatırladım o zaman şimdi.
+
+36
+00:05:43,515 --> 00:05:45,775
+Devansızlık konusunda hiçbir sıkıntımız olmayacak.
+
+37
+00:05:45,855 --> 00:05:49,076
+Bu dönem bize de öyle bilgi verildiği için rahat olabilirsiniz ama benim isteğim,
+
+38
+00:05:49,555 --> 00:05:52,415
+böyle öğrencilerimle böyle konuşabilmek, paylaşabilmek,
+
+39
+00:05:52,555 --> 00:05:54,495
+işte sizlere soru sorduğunu cevap alabilmek,
+
+40
+00:05:55,076 --> 00:05:56,875
+bu güzel oluyor ve dersi daha güzel,
+
+41
+00:05:57,175 --> 00:06:00,415
+yüksek motivasyonunu tamamlamamızın neden olduğu için ben buna önem veriyorum.
+
+42
+00:06:00,415 --> 00:06:03,816
+ve sizlerle beraber olarak da çok önem veriyorum.
+
+43
+00:06:05,316 --> 00:06:06,375
+Sağlık olsun.
+
+44
+00:06:06,755 --> 00:06:09,956
+Mümkün mertebe dersleri takip edin ki eksiğimiz kalmasın.
+
+45
+00:06:10,456 --> 00:06:15,375
+Önümüzdeki konu, son konu yani bugün inşallah bunları bugün tamamlayabilirsek birkaç konu var.
+
+46
+00:06:15,456 --> 00:06:16,536
+Hızlıca ilerleyeceğim.
+
+47
+00:06:17,096 --> 00:06:25,656
+İlk katlı integraller ve oradaki polar ve normal koordinat dönüşümleri son ve en önemli konu olacak aslında sizler için.
+
+48
+00:06:25,655 --> 00:06:55,635
+orada mümkün mertebe yapabildiğiniz kadar da birkaç konu var.
+
+49
+00:06:55,635 --> 00:06:56,635
+birkaç konu var.
+
+50
+00:06:56,635 --> 00:07:15,635
+Bu konu var.
+
+51
+00:07:25,172 --> 00:07:27,372
+O zaman şöyle hızlıca bir toparlık devam ediyorum.
+
+52
+00:07:30,092 --> 00:07:34,972
+Problem olan buradan lütfen yazsın bana chat kısmında sorusu olan.
+
+53
+00:07:38,052 --> 00:07:42,532
+Chain rule related with the derivative of the composite functions.
+
+54
+00:07:43,212 --> 00:07:47,451
+According to the numbers of the independent variables, intermediate variables,
+
+55
+00:07:47,912 --> 00:07:50,152
+we have some different types of chain rule.
+
+56
+00:07:50,152 --> 00:07:54,012
+But in the previous week, in the last week, I said that generally.
+
+57
+00:07:55,172 --> 00:08:00,352
+There is no more specific rule or a general rule about writing the chain rule.
+
+58
+00:08:00,892 --> 00:08:05,132
+According to the numbers of the functions, independent variables and intermediate variables,
+
+59
+00:08:05,652 --> 00:08:10,092
+you may have different versions of chain rule.
+
+60
+00:08:10,512 --> 00:08:15,892
+That's why just try to understand the main idea according to each specific case.
+
+61
+00:08:15,892 --> 00:08:21,612
+Because in each question, in each case, we have different forms of chain rules.
+
+62
+00:08:21,612 --> 00:08:24,331
+We did lots of exercises in the last week.
+
+63
+00:08:24,692 --> 00:08:27,692
+And today we will continue with them and then finish the topic.
+
+64
+00:08:28,572 --> 00:08:30,772
+And just try to understand the main idea.
+
+65
+00:08:31,972 --> 00:08:33,772
+Firstly, once you have a function,
+
+66
+00:08:35,331 --> 00:08:38,792
+W, for example, is a case of two independent variables normally.
+
+67
+00:08:38,792 --> 00:08:45,932
+But if additionally it's set at x and y also the functions of single variable or more,
+
+68
+00:08:46,012 --> 00:08:46,672
+it doesn't matter.
+
+69
+00:08:47,112 --> 00:08:48,752
+In that case, we have a composition.
+
+70
+00:08:49,632 --> 00:08:55,192
+And if you want to differentiate it or get the partial derivative of this composite function,
+
+71
+00:08:55,572 --> 00:08:57,971
+of course, that's why the chain rule holds.
+
+72
+00:08:58,852 --> 00:09:00,372
+That's why we have a chain rule.
+
+73
+00:09:00,831 --> 00:09:02,372
+That's why we need chain rule.
+
+74
+00:09:02,471 --> 00:09:03,572
+That's why it's important.
+
+75
+00:09:03,572 --> 00:09:06,331
+Once we need to derivate the composite function.
+
+76
+00:09:07,231 --> 00:09:09,792
+Again, I want to say some different cases we may have.
+
+77
+00:09:10,172 --> 00:09:11,792
+Lots of different cases we may have.
+
+78
+00:09:11,872 --> 00:09:14,112
+That's why no general rule we have.
+
+79
+00:09:16,572 --> 00:09:21,552
+These branches and these diagrams are so useful, I want to say again.
+
+80
+00:09:22,112 --> 00:09:26,192
+The main function, intermediate variables and the independent variable.
+
+81
+00:09:26,192 --> 00:09:30,652
+Once you have a function and a composite function,
+
+82
+00:09:30,792 --> 00:09:33,552
+just try to sketch like these branches.
+
+83
+00:09:33,572 --> 00:09:38,052
+and like these diagrams in order to understand which variables are independent,
+
+84
+00:09:38,252 --> 00:09:39,731
+which variables are functions,
+
+85
+00:09:40,012 --> 00:09:44,092
+in order to make the derivative correctly,
+
+86
+00:09:44,312 --> 00:09:45,592
+in the first step correctly,
+
+87
+00:09:45,752 --> 00:09:51,032
+and then write the proper chain rule according to your question and the solution.
+
+88
+00:09:51,892 --> 00:09:53,432
+Main function is W.
+
+89
+00:09:55,132 --> 00:09:58,991
+X and Y are intermediate variables.
+
+90
+00:09:59,211 --> 00:10:00,792
+That means, again, functions there,
+
+91
+00:10:00,792 --> 00:10:01,991
+because in this case,
+
+92
+00:10:01,991 --> 00:10:03,812
+it's said that there are functions also,
+
+93
+00:10:03,812 --> 00:10:04,932
+not independent variables.
+
+94
+00:10:05,272 --> 00:10:06,432
+On the last step,
+
+95
+00:10:06,572 --> 00:10:09,592
+on the last branches of this diagram,
+
+96
+00:10:09,752 --> 00:10:13,831
+you will need or you have to see independent variables.
+
+97
+00:10:14,711 --> 00:10:15,491
+The last step,
+
+98
+00:10:15,572 --> 00:10:17,192
+always written independent variables
+
+99
+00:10:17,192 --> 00:10:19,991
+because they don't belong to any other variable.
+
+100
+00:10:19,991 --> 00:10:21,272
+that's why they are independent.
+
+101
+00:10:21,272 --> 00:10:28,312
+And the functions belonging or combining the main function to independent variables
+
+102
+00:10:28,312 --> 00:10:30,172
+are called intermediate variables.
+
+103
+00:10:30,372 --> 00:10:31,711
+That's why they are called intermediate.
+
+104
+00:10:32,112 --> 00:10:35,112
+They are between the function and the independent variables
+
+105
+00:10:35,112 --> 00:10:37,652
+and making up the composite function.
+
+106
+00:10:38,052 --> 00:10:40,012
+That's why they are called the intermediate variables.
+
+107
+00:10:40,012 --> 00:10:42,211
+in order to get the derivative of the,
+
+108
+00:10:42,532 --> 00:10:44,252
+I generally say the main function,
+
+109
+00:10:44,331 --> 00:10:44,991
+but it doesn't matter.
+
+110
+00:10:45,132 --> 00:10:45,991
+They are all functions.
+
+111
+00:10:46,352 --> 00:10:48,731
+But we need to derivate this function.
+
+112
+00:10:48,872 --> 00:10:50,652
+That's why I call it this main function.
+
+113
+00:10:51,392 --> 00:10:52,392
+And generally,
+
+114
+00:10:53,451 --> 00:10:54,932
+the derivative of the main function
+
+115
+00:10:54,932 --> 00:10:56,632
+with respect to the independent variable
+
+116
+00:10:56,632 --> 00:10:59,072
+in such a question is asked.
+
+117
+00:10:59,572 --> 00:11:00,692
+And in order to do it,
+
+118
+00:11:00,951 --> 00:11:03,012
+you have to just follow every step,
+
+119
+00:11:03,172 --> 00:11:03,912
+every function,
+
+120
+00:11:04,052 --> 00:11:05,132
+every intermediate variable
+
+121
+00:11:05,132 --> 00:11:06,912
+to get the derivative of omega
+
+122
+00:11:06,912 --> 00:11:08,971
+with respect to the independent variable
+
+123
+00:11:08,971 --> 00:11:09,731
+in the question.
+
+124
+00:11:10,471 --> 00:11:11,852
+So you need to follow
+
+125
+00:11:11,852 --> 00:11:13,971
+on the first way,
+
+126
+00:11:14,711 --> 00:11:16,272
+combining W to T.
+
+127
+00:11:24,703 --> 00:11:36,703
+Bir tane yüzeyiniz için teşekkür ederim.
+
+128
+00:11:38,703 --> 00:11:41,703
+Dvdx dx dt.
+
+129
+00:11:41,703 --> 00:11:45,703
+Dvdx dy dt.
+
+130
+00:11:45,703 --> 00:11:48,703
+So, w2 dt.
+
+131
+00:11:48,703 --> 00:11:55,703
+Again, iki farklı ways to get the derivative of the w with respect to t.
+
+132
+00:11:55,703 --> 00:11:57,703
+This is the main idea.
+
+133
+00:11:57,703 --> 00:12:01,703
+According to numbers of intermediate variables
+
+134
+00:12:01,703 --> 00:12:03,703
+and the independent variables in the question,
+
+135
+00:12:03,703 --> 00:12:06,703
+we may have different forms of chain rule.
+
+136
+00:12:06,703 --> 00:12:09,703
+That means according to these numbers,
+
+137
+00:12:09,703 --> 00:12:12,703
+we will have the numbers of expressions in the chain rule.
+
+138
+00:12:12,703 --> 00:12:16,703
+For example, if we have three intermediate variables,
+
+139
+00:12:16,703 --> 00:12:19,703
+that means if we have three different functions
+
+140
+00:12:19,703 --> 00:12:22,703
+combining the main function to the independent variable in the question.
+
+141
+00:12:22,703 --> 00:12:26,703
+Again, in this case, the independent variable is t.
+
+142
+00:12:26,703 --> 00:12:28,703
+W is belonging xyz,
+
+143
+00:12:28,703 --> 00:12:31,703
+but xyz are the functions of t.
+
+144
+00:12:31,703 --> 00:12:34,703
+That's why three different ways
+
+145
+00:12:34,703 --> 00:12:37,703
+combining w to the independent variable t
+
+146
+00:12:37,703 --> 00:12:39,703
+to get the partial derivative.
+
+147
+00:12:39,703 --> 00:12:41,703
+Here you see the ordinary derivative notation
+
+148
+00:12:41,703 --> 00:12:44,703
+because if we consider w as a function of t,
+
+149
+00:12:44,703 --> 00:12:46,703
+it becomes a single variable function.
+
+150
+00:12:46,703 --> 00:12:48,703
+That's why this notation is proper.
+
+151
+00:12:48,703 --> 00:12:54,703
+But if we get the derivative of w with respect to xyz,
+
+152
+00:12:54,703 --> 00:12:58,703
+it becomes a single variable function.
+
+153
+00:12:58,703 --> 00:13:02,703
+that's why partial derivative notation is used here.
+
+154
+00:13:02,703 --> 00:13:07,703
+W to t, I have three different ways to follow.
+
+155
+00:13:07,703 --> 00:13:15,703
+dv dx dx dt plus dv dy dy dt plus dv dz dz dt.
+
+156
+00:13:15,703 --> 00:13:17,703
+It's okay.
+
+157
+00:13:17,703 --> 00:13:19,703
+And we did the exercises.
+
+158
+00:13:19,703 --> 00:13:26,703
+And then lastly, I want to make a reminder about the functions defined on surfaces.
+
+159
+00:13:26,703 --> 00:13:31,703
+Means you will have more than one independent variable in these questions like this.
+
+160
+00:13:31,703 --> 00:13:37,703
+It's getting a little bit complicated step by step.
+
+161
+00:13:37,703 --> 00:13:40,703
+Again, we have a main function w here.
+
+162
+00:13:40,703 --> 00:13:43,703
+xyz intermediate again,
+
+163
+00:13:43,703 --> 00:13:48,703
+but xyz are not now single variable functions up to now.
+
+164
+00:13:48,703 --> 00:13:50,703
+They were single variable functions,
+
+165
+00:13:50,703 --> 00:13:53,703
+but now they are also several variable function.
+
+166
+00:13:53,703 --> 00:13:55,703
+But it doesn't matter in any case,
+
+167
+00:13:55,703 --> 00:14:00,703
+in any finite numbers of independent variables or intermediate variables,
+
+168
+00:14:00,703 --> 00:14:05,703
+you can write the corresponding and the related and the proper chain rule, I think.
+
+169
+00:14:05,703 --> 00:14:10,703
+Since we have two independent variables,
+
+170
+00:14:10,703 --> 00:14:13,703
+according to this diagram on the last step,
+
+171
+00:14:13,703 --> 00:14:17,703
+you will see two variables which are independent variables like this here, rns.
+
+172
+00:14:17,703 --> 00:14:26,703
+So combining w to rns, two different functions, two different partial derivatives we have,
+
+173
+00:14:26,703 --> 00:14:31,703
+possible two different partial derivatives because of having two intermediate, two independent variables,
+
+174
+00:14:31,703 --> 00:14:33,703
+and with respect to rns.
+
+175
+00:14:33,703 --> 00:14:37,703
+So for r and s, specifically they are same.
+
+176
+00:14:37,703 --> 00:14:40,703
+Again, according to the numbers of intermediate variables,
+
+177
+00:14:40,703 --> 00:14:46,703
+three different ways to follow to get the partial derivative of w with respect to r or s.
+
+178
+00:14:46,703 --> 00:14:52,703
+So w to x, x to r with respect to r.
+
+179
+00:14:52,703 --> 00:15:01,703
+W to y, y to r, w to z, z to r is the, again, including three different derivatives,
+
+180
+00:15:01,703 --> 00:15:07,703
+and the parts of the chain, and making up the derivative of w with respect to r.
+
+181
+00:15:07,703 --> 00:15:09,703
+And the same for s.
+
+182
+00:15:09,703 --> 00:15:10,703
+So, let's see.
+
+183
+00:15:10,703 --> 00:15:35,703
+Let's see.
+
+184
+00:15:15,155 --> 00:15:20,675
+You may have, again, one main function, but two intermediate variable and then two independent variable.
+
+185
+00:15:21,355 --> 00:15:23,255
+Yes, you may. No problem.
+
+186
+00:15:24,395 --> 00:15:26,475
+And yes, we were here, I think.
+
+187
+00:15:26,875 --> 00:15:28,295
+Anyone who makes it.
+
+188
+00:15:32,724 --> 00:15:35,144
+I've given you a clue about this question.
+
+189
+00:15:37,564 --> 00:15:38,544
+Have you done?
+
+190
+00:15:41,324 --> 00:15:42,444
+Did we do it?
+
+191
+00:15:49,268 --> 00:15:52,827
+Evet, bu işin çalışması için,
+
+192
+00:15:52,827 --> 00:15:57,148
+bu işin çalışması için,
+
+193
+00:15:57,148 --> 00:16:00,187
+u ve v, ve bu işin çalışması için,
+
+194
+00:16:00,187 --> 00:16:03,628
+ve yazıları derivata ile f ile x ve yi,
+
+195
+00:16:03,628 --> 00:16:05,588
+ve yi'nin bir şekilde,
+
+196
+00:16:05,588 --> 00:16:08,348
+ve f'in deklararın f'in.
+
+197
+00:16:08,348 --> 00:16:09,827
+Evet, bu işin çalışması için,
+
+198
+00:16:09,827 --> 00:16:12,827
+sadece, bu işin çalışması için,
+
+199
+00:16:15,388 --> 00:16:16,827
+bu soru.
+
+200
+00:16:16,827 --> 00:16:44,458
+F'in deklararın f'in deklararın f'in deklararın f'in deklararın f'in deklararın f'in deklararın f'in deklararın f'in deklararın f'in deklararın f'in deklararın f'in deklararın f'in deklararın f'in deklararın f'in deklararın f'in deklararın f'in deklararın f'in deklararın f'in deklararın f'in deklararın f'in deklararın f'in deklararın f'in deklararın f'in deklararın f'in deklararın f'in deklararın f'in deklararın f'in deklararın f'in deklarar
+
+201
+00:16:52,947 --> 00:16:54,528
+İndependent variables, what are they?
+
+202
+00:16:55,587 --> 00:16:56,028
+Be quick.
+
+203
+00:16:57,747 --> 00:16:58,507
+You see here,
+
+204
+00:17:01,028 --> 00:17:04,147
+if we want to make the branches and the diagram
+
+205
+00:17:04,147 --> 00:17:08,248
+in the top, which we will write here.
+
+206
+00:17:08,968 --> 00:17:10,927
+F. F is the function.
+
+207
+00:17:11,367 --> 00:17:14,887
+F is the function of x squared y and x plus 2.
+
+208
+00:17:15,427 --> 00:17:19,008
+So, they are functions of which variables?
+
+209
+00:17:19,008 --> 00:17:25,008
+F, x squared y and x plus 2y are the functions of?
+
+210
+00:17:27,647 --> 00:17:29,248
+Yes, of course, x and y.
+
+211
+00:17:29,367 --> 00:17:30,468
+So, in this question,
+
+212
+00:17:30,847 --> 00:17:34,387
+F, x squared y, x plus 2y are functions.
+
+213
+00:17:35,248 --> 00:17:37,307
+X and y are independent variables.
+
+214
+00:17:38,347 --> 00:17:40,807
+But, such a question,
+
+215
+00:17:41,048 --> 00:17:44,968
+such a having a definition of a composition,
+
+216
+00:17:45,387 --> 00:17:46,988
+you need to just transform it
+
+217
+00:17:46,988 --> 00:17:48,667
+to make the derivatives easily,
+
+218
+00:17:48,827 --> 00:17:50,427
+to apply the chain rule easily.
+
+219
+00:17:50,728 --> 00:17:52,607
+For example, let's say this is u and v.
+
+220
+00:17:52,947 --> 00:17:53,907
+Let's see the solution.
+
+221
+00:17:55,087 --> 00:17:56,567
+You will understand me easily, yes.
+
+222
+00:17:57,147 --> 00:17:59,087
+Let's say x squared y is u,
+
+223
+00:17:59,768 --> 00:18:03,807
+x plus 2y will be any function you can write here.
+
+224
+00:18:04,208 --> 00:18:09,248
+But, it makes you solve the question easily
+
+225
+00:18:09,248 --> 00:18:11,248
+because now you will see that
+
+226
+00:18:11,248 --> 00:18:14,288
+f is the function of u and v.
+
+227
+00:18:14,827 --> 00:18:17,028
+u and v are functions of x and y.
+
+228
+00:18:17,407 --> 00:18:18,548
+So, we have a composition.
+
+229
+00:18:18,947 --> 00:18:21,947
+Just try to get the derivatives of this function f
+
+230
+00:18:21,947 --> 00:18:23,607
+with respect to x and y.
+
+231
+00:18:24,988 --> 00:18:27,407
+So, f is a function of u and v.
+
+232
+00:18:27,788 --> 00:18:29,788
+u and v are functions of x and y,
+
+233
+00:18:29,887 --> 00:18:30,988
+which is the third case.
+
+234
+00:18:31,627 --> 00:18:33,468
+And, functions defined on surfaces
+
+235
+00:18:33,468 --> 00:18:35,627
+once we have more than one independent variable.
+
+236
+00:18:37,067 --> 00:18:40,187
+Get the derivatives with respect to x and y.
+
+237
+00:18:41,008 --> 00:18:41,528
+df, dx.
+
+238
+00:18:42,048 --> 00:18:43,468
+Just try to sketch.
+
+239
+00:18:44,048 --> 00:18:48,008
+If I worry, I would sketch a branch of the diagram.
+
+240
+00:18:48,528 --> 00:18:50,387
+f, u and v, u and v.
+
+241
+00:18:50,528 --> 00:18:51,327
+x and y.
+
+242
+00:18:51,607 --> 00:18:52,387
+So, two ways.
+
+243
+00:18:52,508 --> 00:18:53,968
+Because two intermediate variables.
+
+244
+00:18:54,508 --> 00:18:54,988
+u and v.
+
+245
+00:18:55,847 --> 00:18:57,827
+So, f to u, u to x.
+
+246
+00:18:57,988 --> 00:18:59,127
+f to v, v to x.
+
+247
+00:18:59,127 --> 00:19:00,807
+because f is belonging u and v.
+
+248
+00:19:01,107 --> 00:19:03,127
+And, they are belonging x and y.
+
+249
+00:19:03,567 --> 00:19:03,847
+Okay?
+
+250
+00:19:04,728 --> 00:19:06,748
+So, we need to just substitute.
+
+251
+00:19:07,067 --> 00:19:07,968
+What is df, du?
+
+252
+00:19:08,067 --> 00:19:08,688
+We don't know.
+
+253
+00:19:09,327 --> 00:19:11,528
+Because we don't know what kind of function is f.
+
+254
+00:19:11,807 --> 00:19:12,468
+It's not given.
+
+255
+00:19:12,947 --> 00:19:15,127
+Only u and v are given in this question.
+
+256
+00:19:15,347 --> 00:19:16,347
+Only they are given.
+
+257
+00:19:16,748 --> 00:19:19,028
+So, we can only substitute du, dx.
+
+258
+00:19:19,667 --> 00:19:20,407
+du, dx.
+
+259
+00:19:20,968 --> 00:19:22,107
+2, x, y.
+
+260
+00:19:22,827 --> 00:19:23,768
+dv, dx.
+
+261
+00:19:24,147 --> 00:19:25,228
+1, as you see.
+
+262
+00:19:25,947 --> 00:19:28,307
+df, du and df, dv is not given.
+
+263
+00:19:28,307 --> 00:19:30,208
+And, the question says that.
+
+264
+00:19:30,468 --> 00:19:33,807
+Write these partial derivatives in the terms of partial derivatives of f.
+
+265
+00:19:34,087 --> 00:19:43,407
+How can we specify, for example, the fdv you can just leave or without specifying the name of the intermediate variables.
+
+266
+00:19:43,528 --> 00:19:47,127
+For example, you can write f1 and f2 because f1 shows that.
+
+267
+00:19:47,528 --> 00:19:49,927
+Just remember the notations of partial derivative.
+
+268
+00:19:50,847 --> 00:19:54,887
+f1 means the partial derivative of f with respect to the first variable.
+
+269
+00:19:54,887 --> 00:20:00,927
+which means f1 at the same time without showing the name of the intermediate variable.
+
+270
+00:20:01,048 --> 00:20:03,748
+I think it's so useful in this notation.
+
+271
+00:20:04,347 --> 00:20:12,407
+So, f1 times 2xy plus this is f2 because the partial derivative of f with respect to second variable.
+
+272
+00:20:12,907 --> 00:20:14,307
+That's why it is f2.
+
+273
+00:20:14,307 --> 00:20:17,788
+Do the same step for df, dy.
+
+274
+00:20:18,788 --> 00:20:23,288
+Again, u and v are both functions of y at the same time.
+
+275
+00:20:23,367 --> 00:20:28,008
+That's why two expressions you need to write in the chain formula of df, dy.
+
+276
+00:20:29,008 --> 00:20:30,788
+f to u, u to y.
+
+277
+00:20:31,188 --> 00:20:32,968
+f to v, v to y.
+
+278
+00:20:33,927 --> 00:20:34,968
+You need to write.
+
+279
+00:20:34,968 --> 00:20:39,407
+Again, df, d, u and df, d, v are both f1 and f2.
+
+280
+00:20:40,127 --> 00:20:40,827
+d, u, d, y.
+
+281
+00:20:41,508 --> 00:20:45,147
+x squared, as you see, the partial derivative of it with respect to y.
+
+282
+00:20:45,228 --> 00:20:45,827
+x squared.
+
+283
+00:20:46,427 --> 00:20:48,367
+d, v, d, y is, as you see, 2.
+
+284
+00:20:49,147 --> 00:20:51,067
+It will be substituted here.
+
+285
+00:20:51,067 --> 00:20:51,468
+df, d, v, d,
+
+286
+00:20:51,539 --> 00:20:59,000
+As you see, df dx is 2xy fy plus f2, df dy is x squared f1 plus 2f2.
+
+287
+00:20:59,599 --> 00:21:05,920
+These partial derivatives are already written in terms of the partial derivative of f function.
+
+288
+00:21:10,675 --> 00:21:17,695
+Are you okay up to now? Have you remembered the chain rule? And are you okay about the solution? Tell me.
+
+289
+00:21:22,804 --> 00:21:23,864
+Okay, nice.
+
+290
+00:21:25,724 --> 00:21:27,624
+So, nice.
+
+291
+00:21:27,744 --> 00:21:28,403
+Let's continue.
+
+292
+00:21:30,964 --> 00:21:34,764
+Also, these questions were on the last solution.
+
+293
+00:21:35,144 --> 00:21:38,464
+I'm sorry, on the last slide of the PowerPoint.
+
+294
+00:21:39,544 --> 00:21:40,244
+Haven't you done?
+
+295
+00:21:42,024 --> 00:21:44,304
+They were your questions of homework.
+
+296
+00:21:49,811 --> 00:21:51,711
+Bu soru, çok kolay.
+
+297
+00:21:57,236 --> 00:21:57,596
+Okay.
+
+298
+00:22:00,196 --> 00:22:01,796
+Now you will check it.
+
+299
+00:22:03,355 --> 00:22:07,316
+T, capital T is the function of x, y, z, t, four variables you have.
+
+300
+00:22:07,956 --> 00:22:09,876
+And let's see, are they independent or?
+
+301
+00:22:10,656 --> 00:22:15,216
+Tell me, which are functions, which variables are independent?
+
+302
+00:22:16,136 --> 00:22:17,816
+First, do you need to specify?
+
+303
+00:22:23,763 --> 00:22:24,583
+anlatayım.
+
+304
+00:22:26,163 --> 00:22:26,863
+[öğrenci].
+
+305
+00:22:37,907 --> 00:22:39,227
+Yes, you are right, completely.
+
+306
+00:22:39,967 --> 00:22:42,807
+Yes, all of the independent variable is here, t.
+
+307
+00:22:43,127 --> 00:22:46,487
+Because x, y, z, t.
+
+308
+00:22:46,667 --> 00:22:47,367
+What is x?
+
+309
+00:22:48,147 --> 00:22:48,827
+It's given.
+
+310
+00:22:49,187 --> 00:22:49,967
+Yes, you are right.
+
+311
+00:22:50,048 --> 00:22:51,747
+The others are intermediate variables.
+
+312
+00:22:51,907 --> 00:22:52,487
+Yes, you are right.
+
+313
+00:22:52,967 --> 00:22:54,107
+X is a function of t.
+
+314
+00:22:54,207 --> 00:22:54,907
+X is function.
+
+315
+00:22:55,347 --> 00:22:56,788
+Capital T is the main function.
+
+316
+00:22:57,467 --> 00:22:58,307
+X is function.
+
+317
+00:22:59,307 --> 00:23:00,127
+Y is function.
+
+318
+00:23:00,827 --> 00:23:01,847
+Z is function.
+
+319
+00:23:02,487 --> 00:23:03,927
+All of t is independent variable.
+
+320
+00:23:03,927 --> 00:23:17,367
+Now, in some functions like this, such as functions, sometimes the main function is belonging to the independent variable directly and at the same time with a composition.
+
+321
+00:23:18,167 --> 00:23:25,167
+T is belonging t with the help of x, y, z also directly with respect to t.
+
+322
+00:23:26,347 --> 00:23:28,947
+It's a different case of a function, I think.
+
+323
+00:23:28,947 --> 00:23:39,087
+So, dt over dt, derivative of capital T with respect to t is, of course, you need to follow the chain rule.
+
+324
+00:23:39,747 --> 00:23:41,027
+First, with respect to x.
+
+325
+00:23:41,687 --> 00:23:43,747
+dt dx dx dt.
+
+326
+00:23:44,567 --> 00:23:54,267
+Yes, plus dt dy dy dt plus dt dz dz dt plus what?
+
+327
+00:23:55,788 --> 00:23:56,807
+What about t?
+
+328
+00:23:56,807 --> 00:23:58,207
+Here, it is independent.
+
+329
+00:23:58,407 --> 00:24:00,067
+How can we complete the chain?
+
+330
+00:24:01,827 --> 00:24:04,827
+What is the last expression of this chain formula?
+
+331
+00:24:09,811 --> 00:24:11,591
+Well done, [öğrenci].
+
+332
+00:24:12,011 --> 00:24:12,931
+Thank you so much.
+
+333
+00:24:13,231 --> 00:24:14,451
+Yes, you're completely right.
+
+334
+00:24:15,811 --> 00:24:17,931
+DT over DT, because in this case,
+
+335
+00:24:18,211 --> 00:24:21,011
+you can just get the partial derivative of the capital T
+
+336
+00:24:21,011 --> 00:24:22,491
+with respect to the independent variable
+
+337
+00:24:22,491 --> 00:24:24,631
+because it's directly belonging to that variable.
+
+338
+00:24:25,151 --> 00:24:27,471
+That's why you can write DT over DT.
+
+339
+00:24:27,631 --> 00:24:27,991
+It's okay.
+
+340
+00:24:28,151 --> 00:24:31,611
+And in order to complete the chain, DT over DT.
+
+341
+00:24:32,031 --> 00:24:32,692
+Yes, you're right.
+
+342
+00:24:32,831 --> 00:24:33,551
+It's so nice.
+
+343
+00:24:33,651 --> 00:24:34,031
+Thank you.
+
+344
+00:24:35,491 --> 00:24:35,831
+Look.
+
+345
+00:24:35,831 --> 00:24:43,451
+DT over DT, DT over DT, DT over DT, DT over DT, DT over DT,
+
+346
+00:24:43,631 --> 00:24:44,931
+DT over DT, DT over DT, DT over DT,
+
+347
+00:24:45,311 --> 00:24:49,831
+and once your main function is also at the same time
+
+348
+00:24:49,831 --> 00:24:51,771
+directly belonging to the independent variable,
+
+349
+00:24:52,731 --> 00:24:56,251
+such an expression you can write the partial derivative of T
+
+350
+00:24:56,251 --> 00:24:58,831
+with respect to T times DT over DT.
+
+351
+00:24:58,931 --> 00:25:01,411
+DT over DT is 1 because T is an independent variable.
+
+352
+00:25:01,411 --> 00:25:03,271
+It's not a function we may have.
+
+353
+00:25:03,731 --> 00:25:04,851
+Yes, thank you so much.
+
+354
+00:25:04,851 --> 00:25:06,951
+This is your answer, exactly what you said.
+
+355
+00:25:07,911 --> 00:25:09,471
+And just substitute here.
+
+356
+00:25:10,431 --> 00:25:11,171
+DT, DT, DT.
+
+357
+00:25:11,371 --> 00:25:11,971
+Let's look.
+
+358
+00:25:12,692 --> 00:25:13,251
+What was it?
+
+359
+00:25:13,351 --> 00:25:13,692
+Yes.
+
+360
+00:25:14,071 --> 00:25:16,251
+The partial derivatives here must be written.
+
+361
+00:25:16,791 --> 00:25:19,671
+The derivative of capital T with respect to X,
+
+362
+00:25:21,111 --> 00:25:24,071
+Y over 1 plus Z times 1 plus T.
+
+363
+00:25:24,071 --> 00:25:25,692
+Yes.
+
+364
+00:25:26,192 --> 00:25:28,051
+DX, DT, 1.
+
+365
+00:25:29,431 --> 00:25:30,471
+DT, D1,
+
+366
+00:25:31,531 --> 00:25:35,391
+X times 1 plus T over 1 plus Z.
+
+367
+00:25:35,971 --> 00:25:40,411
+D, Y, DT, 2 plus DT, DZ.
+
+368
+00:25:41,211 --> 00:25:42,172
+Now Z is here.
+
+369
+00:25:42,171 --> 00:25:55,791
+How will you get the partial derivative?
+
+370
+00:25:48,403 --> 00:25:54,983
+1, 2, 3, 4, 4, 4, 4, 5, 5, 6, 7, 8, 9, 9, 10, 10, 11, 11, 12, 13, 14, 14, 14, 15, 16, 16, 17, 18, 19, 20, 21, 21, 22
+
+371
+00:26:00,980 --> 00:26:07,380
+I hope you have no problem about to get the partial derivative of the multi-variable functions.
+
+372
+00:26:10,200 --> 00:26:11,880
+Here, it will be.
+
+373
+00:26:12,880 --> 00:26:16,720
+Yes, you're right.
+
+374
+00:26:17,259 --> 00:26:22,519
+But, yes, thank you so much.
+
+375
+00:26:22,579 --> 00:26:23,480
+You're completely right.
+
+376
+00:26:25,579 --> 00:26:30,480
+[öğrenci], of course we can do it, but normally,
+
+377
+00:26:30,980 --> 00:26:40,700
+not always it is possible to substitute all the intermediate variables to the function and write a single variable function and then differentiate.
+
+378
+00:26:41,259 --> 00:26:43,000
+Not always it's possible.
+
+379
+00:26:43,740 --> 00:26:46,360
+Also, here we don't need to do it.
+
+380
+00:26:46,620 --> 00:26:50,779
+The aim of these questions are make you to use chain rule.
+
+381
+00:26:51,079 --> 00:26:52,579
+That's why we don't need to do it.
+
+382
+00:26:52,579 --> 00:26:54,920
+You can do it to make only a confirmation.
+
+383
+00:26:56,779 --> 00:26:57,620
+Is it okay?
+
+384
+00:27:00,980 --> 00:27:01,980
+Okay, nice.
+
+385
+00:27:01,980 --> 00:27:02,740
+Let's continue.
+
+386
+00:27:02,740 --> 00:27:02,779
+Okay, nice.
+
+387
+00:27:02,779 --> 00:27:02,799
+Let's continue.
+
+388
+00:27:02,799 --> 00:27:02,980
+Okay, nice.
+
+389
+00:27:02,980 --> 00:27:03,000
+Let's continue.
+
+390
+00:27:03,000 --> 00:27:03,339
+Okay, nice.
+
+391
+00:27:03,339 --> 00:27:03,839
+Let's continue.
+
+392
+00:27:07,827 --> 00:27:14,827
+İmplicit differentiation.
+
+393
+00:27:14,827 --> 00:27:19,827
+Mathematik 1'in
+
+394
+00:27:19,827 --> 00:27:22,827
+İmplicit differentiation.
+
+395
+00:27:22,827 --> 00:27:24,827
+Mathematik 1'in
+
+396
+00:27:24,827 --> 00:27:26,827
+İmplicit differentiation.
+
+397
+00:27:26,827 --> 00:27:28,827
+Mathematik 1'in
+
+398
+00:27:28,827 --> 00:27:30,827
+İmplicit differentiation.
+
+399
+00:27:30,827 --> 00:27:32,827
+Mathematik 1'in
+
+400
+00:27:32,827 --> 00:27:42,827
+İmplicit function.
+
+401
+00:27:42,827 --> 00:27:48,827
+That's why it causes
+
+402
+00:27:48,827 --> 00:27:50,827
+implicit differentiation.
+
+403
+00:27:59,955 --> 00:28:05,915
+Oh, okay. But I think you remember the main idea, [öğrenci]. I'm sure you can remember it.
+
+404
+00:28:07,395 --> 00:28:11,836
+Not the formula, not, don't think the formalization, so just try to remember.
+
+405
+00:28:13,055 --> 00:28:17,375
+What was the implicit function? What's the name of it?
+
+406
+00:28:18,455 --> 00:28:25,795
+Maybe in Turkish or the words that you can understand to mean implicit functions.
+
+407
+00:28:36,180 --> 00:28:40,340
+İmplicit means, ah yes thank you [öğrenci], yes you are right.
+
+408
+00:28:41,500 --> 00:28:45,000
+I'm just taking it in order to make you understand in English.
+
+409
+00:28:45,560 --> 00:28:46,279
+Yes you are right.
+
+410
+00:28:47,080 --> 00:28:55,480
+That means when a function is defined not explicitly, just the opposite meaning is explicit functions.
+
+411
+00:28:55,480 --> 00:28:59,940
+That means once we have y is a function of x, y is fx.
+
+412
+00:29:00,060 --> 00:29:03,160
+This is the explicit form of defining a function.
+
+413
+00:29:03,160 --> 00:29:11,580
+But if we make the definition of the function fx, y is equal to 0 like this, this is the implicit definition of a function.
+
+414
+00:29:12,060 --> 00:29:21,620
+Here it is needed to make the definition that defines y as a differentiable function of x or defines x as a function of y.
+
+415
+00:29:21,620 --> 00:29:25,340
+It must be given in the question, otherwise you cannot understand which one is function.
+
+416
+00:29:25,960 --> 00:29:32,259
+And some rules we have to make the definition of such an implicit function.
+
+417
+00:29:33,160 --> 00:29:42,640
+Here the capital F, x, y is equal to 0 means, that means this is just put all the variables to one side of the equation and the right hand side is equal to 0.
+
+418
+00:29:43,140 --> 00:29:49,980
+That means, and if we have two variables, that means this is an implicit definition of a single variable function.
+
+419
+00:29:49,980 --> 00:29:52,300
+Because one of them is function, the other one is variable.
+
+420
+00:29:52,860 --> 00:29:53,000
+Okay.
+
+421
+00:29:53,480 --> 00:29:58,360
+Fx, y is equal to 0 means, this is an implicit definition of a function of single variable.
+
+422
+00:29:58,360 --> 00:30:02,320
+And possibly, more generally, y is the function.
+
+423
+00:30:02,480 --> 00:30:08,019
+We generally use y for x and for functions and x is the independent variable.
+
+424
+00:30:08,519 --> 00:30:08,759
+Okay.
+
+425
+00:30:09,519 --> 00:30:11,940
+Normally, y is the function of x.
+
+426
+00:30:12,019 --> 00:30:14,960
+It says, defines y as a differentiable function of x.
+
+427
+00:30:14,960 --> 00:30:28,120
+Sometimes, if we can just pick up the function in the equation and write L on y on one side and write the equivalent form in terms of x, we can write the explicit form of the function y.
+
+428
+00:30:28,779 --> 00:30:29,860
+Sometimes, we cannot.
+
+429
+00:30:30,620 --> 00:30:32,340
+The problem is not writing this.
+
+430
+00:30:33,480 --> 00:30:37,759
+The problem is differentiation of it in implicit form.
+
+431
+00:30:37,759 --> 00:30:41,420
+In that case, two different ways we have.
+
+432
+00:30:42,180 --> 00:30:49,080
+One of them is the part that I liked very much, term-by-term differentiation.
+
+433
+00:30:49,620 --> 00:30:51,220
+The second one is the formula.
+
+434
+00:30:51,700 --> 00:31:01,820
+Generally, I don't like to use the formalizations because, in my opinion, you need to just remember the main idea.
+
+435
+00:31:01,820 --> 00:31:09,300
+Main idea to make a solution or an operation in mathematics, in any branch of a mathematics, in my opinion.
+
+436
+00:31:09,820 --> 00:31:14,440
+Because sometimes, the formalizations are so hard to remember, hard to memorize.
+
+437
+00:31:14,880 --> 00:31:20,220
+That's why I want to just always attain the main idea.
+
+438
+00:31:21,960 --> 00:31:26,120
+So, term-by-term differentiation is so nice because you don't need to remember anything.
+
+439
+00:31:26,300 --> 00:31:31,440
+Just be careful which one is function, which one is independent variable, and then just differentiate every term.
+
+440
+00:31:31,820 --> 00:31:33,480
+And then get this formula again.
+
+441
+00:31:34,400 --> 00:31:38,259
+At the same time, this formula is coming from, of course, it's term-by-term differentiation.
+
+442
+00:31:39,320 --> 00:31:39,840
+Just think.
+
+443
+00:31:40,740 --> 00:31:53,860
+dy dx, when this implicit form is given, minus fx over fy means derivative of f with respect to x, divided the derivative of f with respect to y.
+
+444
+00:31:53,860 --> 00:32:00,519
+But, while having these derivatives, fx and fy, it's just like having the partial derivative.
+
+445
+00:32:01,019 --> 00:32:11,000
+That means, just thinking, f is only a function of x, and while we are having fx, y can be treated as a constant.
+
+446
+00:32:11,000 --> 00:32:21,140
+Similarly, once we are evaluating f1, x must be treated as a constant for y.
+
+447
+00:32:22,580 --> 00:32:25,180
+And minus fx over f1.
+
+448
+00:32:26,240 --> 00:32:33,680
+I think you have remembered this formula about single variable functions, which are given in the implicit form.
+
+449
+00:32:33,680 --> 00:32:33,990
+And then, if you want to see the formula, you can see the formula that you can see the formula that you can see the formula that you can see the formula that you can see the formula that you can see the formula that you can see the formula that you can see the formula that you can see the formula that you can see the formula that you can see the formula that you can see the formula that you can see the formula that you can see the formula that you can see the formula that you can see the formula that you can see the formula that you can see the formula that you can see the formula that you can see the formula that you can see the formula that you can see the formula that you can see the formula that you can see the formula that you can see the formula that you can see the formula that you can see the formula that you can see the formula that you can see the formula that you can see the formula that you can see the formula that you can see the formula that you can see the formula that you can see the formula that you can see the formula that
+
+450
+00:32:34,387 --> 00:32:38,507
+Şimdi, bu kursa,
+
+451
+00:32:38,507 --> 00:32:40,827
+ve çalışmaların,
+
+452
+00:32:40,827 --> 00:32:42,827
+yaratılmaların,
+
+453
+00:32:42,827 --> 00:32:43,867
+bu kursa var.
+
+454
+00:32:43,867 --> 00:32:47,867
+Bu kursa var.
+
+455
+00:32:47,867 --> 00:32:50,507
+At least 3 kursa var.
+
+456
+00:32:50,507 --> 00:32:57,467
+Bir kursa var.
+
+457
+00:32:57,467 --> 00:32:59,987
+Bu kursa var.
+
+458
+00:32:59,987 --> 00:33:02,427
+Bir kursa var.
+
+459
+00:33:02,427 --> 00:33:04,427
+Bu kursa var.
+
+460
+00:33:04,427 --> 00:33:05,747
+3 kursa var.
+
+461
+00:33:05,747 --> 00:33:30,747
+Bir kursa var.
+
+462
+00:33:30,747 --> 00:33:34,067
+D z dx.
+
+463
+00:33:34,067 --> 00:33:36,067
+D z dy.
+
+464
+00:33:36,067 --> 00:33:38,067
+Z is the function of x and y.
+
+465
+00:33:38,067 --> 00:33:44,747
+Z is the function which is given implicitly in the form of x and y.
+
+466
+00:33:44,747 --> 00:33:52,067
+So all the variables as you see put one part and the right hand side is equal to zero.
+
+467
+00:33:52,067 --> 00:33:59,387
+Of course once that is the function of x and y to possible first order partial derivatives you may write.
+
+468
+00:33:59,387 --> 00:34:00,387
+D z dx.
+
+469
+00:34:00,387 --> 00:34:01,387
+D z dy.
+
+470
+00:34:01,387 --> 00:34:05,387
+According to the similar structure.
+
+471
+00:34:05,387 --> 00:34:09,708
+minus fx over fz minus f y over fz.
+
+472
+00:34:09,708 --> 00:34:13,708
+In order to memorize this formula just look on the opposite.
+
+473
+00:34:13,708 --> 00:34:16,708
+How can I say.
+
+474
+00:34:16,708 --> 00:34:20,708
+On opposite expressions you will see the same variables.
+
+475
+00:34:20,708 --> 00:34:21,708
+d z fz.
+
+476
+00:34:21,708 --> 00:34:22,708
+f dx.
+
+477
+00:34:22,708 --> 00:34:23,708
+Okay.
+
+478
+00:34:23,708 --> 00:34:26,708
+You can easily memorize it.
+
+479
+00:34:26,708 --> 00:34:27,708
+z y.
+
+480
+00:34:27,708 --> 00:34:30,708
+Negativity you mustn't forget.
+
+481
+00:34:30,708 --> 00:34:37,027
+Of course here provided that fz is different from zero such a formalization can be used.
+
+482
+00:34:37,027 --> 00:34:38,027
+of course here.
+
+483
+00:34:38,027 --> 00:35:05,027
+You can easily memorize it.
+
+484
+00:34:41,139 --> 00:34:46,139
+Bu ekran, bu ekranı yazı,
+
+485
+00:34:46,139 --> 00:36:07,139
+bu ekranı yazı,
+
+486
+00:36:07,139 --> 00:36:08,139
+ekranı yazı,
+
+487
+00:36:08,139 --> 00:38:00,139
+yi,
+
+488
+00:37:52,083 --> 00:37:52,923
+Okay, nice.
+
+489
+00:37:54,583 --> 00:37:56,263
+I was a little bit fast.
+
+490
+00:37:56,503 --> 00:37:59,603
+If you need extra information about it, I can repeat it.
+
+491
+00:38:00,303 --> 00:38:01,364
+Are you all okay?
+
+492
+00:38:01,823 --> 00:38:02,364
+All of you.
+
+493
+00:38:27,956 --> 00:38:28,635
+Thank you.
+
+494
+00:38:29,316 --> 00:38:30,615
+What about the second way?
+
+495
+00:38:31,556 --> 00:38:34,115
+Second way, no formula.
+
+496
+00:38:35,195 --> 00:38:38,276
+You will just think, I want to get the derivative.
+
+497
+00:38:39,655 --> 00:38:41,556
+I'm sorry, this equation.
+
+498
+00:38:42,635 --> 00:38:45,276
+But this is implicit equation.
+
+499
+00:38:45,476 --> 00:38:47,856
+Implicit definition of a function is that.
+
+500
+00:38:47,856 --> 00:38:51,396
+No problem, I can get the derivatives of every term.
+
+501
+00:38:51,596 --> 00:38:55,276
+Term by term differentiation here means implicit differentiation.
+
+502
+00:38:57,956 --> 00:39:03,716
+In the second way, once you have the term by term differentiation of an implicit function,
+
+503
+00:39:04,056 --> 00:39:05,096
+you need to be careful.
+
+504
+00:39:05,816 --> 00:39:07,096
+Which variable is independent?
+
+505
+00:39:07,496 --> 00:39:08,596
+Which variable is function?
+
+506
+00:39:10,056 --> 00:39:12,496
+Here, z is the function.
+
+507
+00:39:13,056 --> 00:39:14,996
+X and y are independent variables.
+
+508
+00:39:15,596 --> 00:39:19,576
+According to these cases, you can get the term by term differentiation.
+
+509
+00:39:20,556 --> 00:39:26,016
+So it is so different when we compare with the formalization.
+
+510
+00:39:26,016 --> 00:39:30,115
+So first way and second way are completely different.
+
+511
+00:39:31,256 --> 00:39:34,256
+Let's think the derivative of this equation.
+
+512
+00:39:36,096 --> 00:39:41,155
+And considering that z is function, x, y are independent variables.
+
+513
+00:39:41,576 --> 00:39:42,316
+So just think.
+
+514
+00:39:42,695 --> 00:39:43,756
+With respect to x.
+
+515
+00:39:44,236 --> 00:39:46,776
+x cubed, 3x squared plus.
+
+516
+00:39:47,516 --> 00:39:48,036
+What about?
+
+517
+00:39:48,356 --> 00:39:49,996
+How can I get z squared?
+
+518
+00:39:50,456 --> 00:39:53,155
+The derivative of with respect to x.
+
+519
+00:39:53,155 --> 00:39:55,956
+I know that z has including x in it.
+
+520
+00:39:56,576 --> 00:39:57,756
+It's the function of x.
+
+521
+00:39:58,356 --> 00:40:01,916
+So how can I get the derivative of z squared with respect to x?
+
+522
+00:40:02,856 --> 00:40:04,076
+It's a composition here.
+
+523
+00:40:06,876 --> 00:40:09,596
+2z times dz dx.
+
+524
+00:40:10,736 --> 00:40:11,016
+Okay.
+
+525
+00:40:12,496 --> 00:40:13,316
+Like this.
+
+526
+00:40:13,316 --> 00:40:16,635
+And then.
+
+527
+00:40:18,056 --> 00:40:20,175
+That means it's like a basic chain formula.
+
+528
+00:40:20,496 --> 00:40:23,615
+Basic chain formula says that the derivative of the whole function
+
+529
+00:40:23,615 --> 00:40:25,936
+multiply with the insider function.
+
+530
+00:40:26,576 --> 00:40:28,695
+Derivative of the whole function, it is z squared.
+
+531
+00:40:28,816 --> 00:40:29,896
+But z is a composition.
+
+532
+00:40:30,516 --> 00:40:31,336
+So 2z.
+
+533
+00:40:31,576 --> 00:40:33,556
+2z times insider function z.
+
+534
+00:40:34,016 --> 00:40:35,695
+Derivative of z with respect to x?
+
+535
+00:40:35,896 --> 00:40:36,396
+Dz dx.
+
+536
+00:40:36,396 --> 00:40:38,576
+So 2z dx to x.
+
+537
+00:40:39,076 --> 00:40:39,436
+Plus.
+
+538
+00:40:40,256 --> 00:40:40,816
+Third one.
+
+539
+00:40:41,236 --> 00:40:41,436
+Here.
+
+540
+00:40:42,376 --> 00:40:44,556
+I'm just searching for x and z.
+
+541
+00:40:44,675 --> 00:40:46,376
+Because x is variable.
+
+542
+00:40:46,836 --> 00:40:48,536
+That I'm trying to get the partial derivative.
+
+543
+00:40:48,816 --> 00:40:50,556
+And z is the function including z.
+
+544
+00:40:50,736 --> 00:40:51,516
+Including x.
+
+545
+00:40:52,016 --> 00:40:52,596
+That's why.
+
+546
+00:40:53,236 --> 00:40:54,556
+Y is only constant here.
+
+547
+00:40:55,096 --> 00:40:55,816
+Y times.
+
+548
+00:40:56,695 --> 00:40:57,635
+E to xz.
+
+549
+00:40:58,336 --> 00:40:59,776
+How can I get the partial derivative?
+
+550
+00:41:00,976 --> 00:41:02,115
+It's a multiplication.
+
+551
+00:41:02,115 --> 00:41:02,996
+Multiplication.
+
+552
+00:41:04,416 --> 00:41:06,216
+Multiplication of the functions.
+
+553
+00:41:06,376 --> 00:41:07,635
+Including both x.
+
+554
+00:41:08,195 --> 00:41:08,396
+So.
+
+555
+00:41:09,175 --> 00:41:11,736
+It's just like in the derivative of a multiplication.
+
+556
+00:41:12,216 --> 00:41:12,796
+One by one.
+
+557
+00:41:12,876 --> 00:41:14,256
+You will just get the partial derivative.
+
+558
+00:41:14,836 --> 00:41:15,135
+First.
+
+559
+00:41:15,236 --> 00:41:16,256
+With respect to x.
+
+560
+00:41:16,376 --> 00:41:16,936
+Of x.
+
+561
+00:41:17,416 --> 00:41:18,155
+Y times.
+
+562
+00:41:18,356 --> 00:41:19,076
+Z times.
+
+563
+00:41:19,175 --> 00:41:19,976
+E to xz.
+
+564
+00:41:20,236 --> 00:41:20,556
+Plus.
+
+565
+00:41:21,655 --> 00:41:22,936
+Now with respect to.
+
+566
+00:41:23,296 --> 00:41:23,996
+X again.
+
+567
+00:41:24,115 --> 00:41:24,596
+But now.
+
+568
+00:41:24,716 --> 00:41:25,436
+It's turn off.
+
+569
+00:41:25,655 --> 00:41:25,976
+Z.
+
+570
+00:41:26,516 --> 00:41:26,916
+Plus.
+
+571
+00:41:27,436 --> 00:41:28,276
+Y times.
+
+572
+00:41:28,716 --> 00:41:29,516
+X times.
+
+573
+00:41:30,615 --> 00:41:31,856
+Dz dx times.
+
+574
+00:41:32,115 --> 00:41:33,096
+E to xz.
+
+575
+00:41:33,976 --> 00:41:34,615
+Like this.
+
+576
+00:41:38,963 --> 00:41:43,083
+Y'ın co-efficient, derivota ve xz, x.
+
+577
+00:41:43,483 --> 00:41:47,403
+Also, z'ı da füc, dz'dx, times, the function itself.
+
+578
+00:41:48,103 --> 00:41:51,744
+Plus, z'ı da füc, y.
+
+579
+00:41:51,744 --> 00:41:55,824
+Cosine y is a constant for x, so no x in it.
+
+580
+00:41:56,364 --> 00:41:57,063
+So, it's a constant.
+
+581
+00:41:57,244 --> 00:42:03,203
+So, only, derivota ve z'ı da füc, dz'dx, times, cosine y is equal to zero.
+
+582
+00:42:04,523 --> 00:42:06,203
+Now, Taylor, do you understand it?
+
+583
+00:42:14,996 --> 00:42:18,996
+Bu bir şey, bir şey daha çok zor.
+
+584
+00:42:18,996 --> 00:42:25,996
+Bir şey ilk başta, ama daha sonra daha sonra yapabilirsiniz.
+
+585
+00:42:32,467 --> 00:42:46,987
+ve, once we have written this step, it's okay, the last of it, the rest of it is only, uh, holding dzdx alone on one part, because we are just searching dzdx.
+
+586
+00:42:48,367 --> 00:43:00,007
+So, grouping of dzdx and putting the other variables on the right-hand side of the equation and dividing with the coefficient of dzdx, and you see, as you see, as you see, the negativity,
+
+587
+00:43:00,007 --> 00:43:02,947
+is the same result that we did in the formula.
+
+588
+00:43:05,947 --> 00:43:09,167
+That's why we have such a formula. I hope you understand me.
+
+589
+00:43:12,628 --> 00:43:13,268
+Ander.
+
+590
+00:43:14,548 --> 00:43:15,108
+Are you okay?
+
+591
+00:43:15,228 --> 00:43:15,988
+First tell me.
+
+592
+00:43:17,068 --> 00:43:18,448
+I want to continue with war.
+
+593
+00:43:18,448 --> 00:43:19,448
+Because...
+
+594
+00:43:36,628 --> 00:43:38,668
+Are you okay about term-by-term differentiation?
+
+595
+00:43:46,835 --> 00:43:48,275
+So let's see for y.
+
+596
+00:43:51,415 --> 00:43:54,635
+What about with respect to y of this equation?
+
+597
+00:43:55,715 --> 00:43:56,795
+Again, be careful.
+
+598
+00:43:57,395 --> 00:44:00,135
+X and y are independent variables.
+
+599
+00:44:00,615 --> 00:44:01,355
+Z is function.
+
+600
+00:44:01,935 --> 00:44:06,015
+But while we are having the derivative with respect to y, x will be constant.
+
+601
+00:44:06,015 --> 00:44:09,435
+Because x has no y in it.
+
+602
+00:44:10,135 --> 00:44:11,175
+X is free of y.
+
+603
+00:44:11,795 --> 00:44:13,596
+So it's like a constant.
+
+604
+00:44:13,596 --> 00:44:18,615
+So x cubed, 0 with respect to y plus z squared.
+
+605
+00:44:19,655 --> 00:44:27,096
+2z, dz dy plus y is the variable that we are searching.
+
+606
+00:44:27,535 --> 00:44:32,395
+And also here we have a function z which is including y in it.
+
+607
+00:44:32,395 --> 00:44:34,455
+That's one multiplication we have.
+
+608
+00:44:34,855 --> 00:44:42,935
+First is the derivative of y, e to xz plus y times derivative of e to xz with respect to y.
+
+609
+00:44:43,596 --> 00:44:50,435
+x times dz dy times e to xz plus z cosine y.
+
+610
+00:44:50,675 --> 00:44:53,755
+Again, two functions in the case of multiplication including y.
+
+611
+00:44:54,255 --> 00:44:57,095
+So firstly, derivative of that with respect to y.
+
+612
+00:44:57,095 --> 00:45:04,655
+dz dy times cosine y plus z times derivative of cosine y which is minus sine y.
+
+613
+00:45:04,655 --> 00:45:07,555
+equal to zero.
+
+614
+00:45:08,135 --> 00:45:14,415
+So again, grouping of dz dy and the other functions put on the right hand side.
+
+615
+00:45:14,935 --> 00:45:16,935
+And dy with the coefficient of dz dy.
+
+616
+00:45:16,935 --> 00:45:23,475
+And as you see, same derivative formula like we did with the implicit differentiation formula.
+
+617
+00:45:23,475 --> 00:45:25,875
+The same functions always you will have.
+
+618
+00:45:26,335 --> 00:45:27,115
+It's up to you.
+
+619
+00:45:27,315 --> 00:45:31,395
+You can use this term-by-term differentiation or directly the formula.
+
+620
+00:45:31,795 --> 00:45:32,475
+It's up to you.
+
+621
+00:45:35,275 --> 00:45:36,596
+Now, Tam, are you okay?
+
+622
+00:45:36,596 --> 00:45:38,855
+Do you understand it and which one you prefer?
+
+623
+00:45:42,771 --> 00:45:44,231
+Orada, do you want to repeat it?
+
+624
+00:45:52,052 --> 00:45:54,432
+I think so. The first one is easier to you.
+
+625
+00:46:01,748 --> 00:46:03,708
+Any question? I want to continue.
+
+626
+00:46:09,652 --> 00:46:12,311
+Okay, what about this?
+
+627
+00:46:15,172 --> 00:46:18,532
+As you see, it's an implicit form of a function.
+
+628
+00:46:18,972 --> 00:46:21,592
+How many variables we have? X, Y, Z.
+
+629
+00:46:21,891 --> 00:46:25,811
+As you see, they are all in one part of the equation.
+
+630
+00:46:26,251 --> 00:46:26,851
+They are together.
+
+631
+00:46:27,731 --> 00:46:32,432
+But as you see from this notation, Z is the function of X and Y.
+
+632
+00:46:32,432 --> 00:46:37,871
+Yes, this is an implicit definition of the function Z according to X and Y.
+
+633
+00:46:37,871 --> 00:46:42,871
+And ZDX and ZDY are asked at the point pi, pi and pi.
+
+634
+00:46:47,987 --> 00:46:52,567
+Can you do it for me? In one minute, I think you can.
+
+635
+00:47:30,907 --> 00:47:31,227
+Ok.
+
+636
+00:47:36,724 --> 00:47:37,564
+Let's look.
+
+637
+00:47:42,324 --> 00:47:43,344
+Yes, you're right.
+
+638
+00:47:45,864 --> 00:47:48,104
+I think you have done it with the formula.
+
+639
+00:47:49,124 --> 00:47:51,584
+DZDX minus FX over FZ.
+
+640
+00:47:51,684 --> 00:47:53,543
+DZDY minus FY over FZ.
+
+641
+00:47:53,684 --> 00:47:54,244
+Let's look.
+
+642
+00:47:54,804 --> 00:47:57,104
+What is FX, FY and FZ?
+
+643
+00:47:59,903 --> 00:48:03,844
+Again, I want to say you and remind you about
+
+644
+00:48:03,844 --> 00:48:06,664
+while you are applying the formula,
+
+645
+00:48:07,224 --> 00:48:09,384
+just think every variable in the question,
+
+646
+00:48:09,604 --> 00:48:11,443
+every variable in this implicit form,
+
+647
+00:48:11,443 --> 00:48:12,943
+all of them are independent.
+
+648
+00:48:13,983 --> 00:48:17,144
+And then you can write FX, FY and FZ.
+
+649
+00:48:19,324 --> 00:48:23,124
+Think that this is the capital F is sine X plus Y.
+
+650
+00:48:23,244 --> 00:48:25,403
+Sine Y plus that, sine X plus that.
+
+651
+00:48:25,503 --> 00:48:26,523
+They are equal to zero.
+
+652
+00:48:27,884 --> 00:48:30,084
+DZDX minus FX over FZ.
+
+653
+00:48:30,224 --> 00:48:30,624
+FX.
+
+654
+00:48:31,764 --> 00:48:33,184
+That is better with respect to X.
+
+655
+00:48:33,923 --> 00:48:36,244
+Y and Z are customs for X.
+
+656
+00:48:37,584 --> 00:48:40,224
+So, cosine X plus Y plus
+
+657
+00:48:40,224 --> 00:48:42,983
+plus this is zero for X.
+
+658
+00:48:43,624 --> 00:48:45,244
+And here cosine X plus that.
+
+659
+00:48:46,684 --> 00:48:47,063
+Yes.
+
+660
+00:48:48,384 --> 00:48:49,403
+This is FX.
+
+661
+00:48:49,624 --> 00:48:50,443
+What about FZ?
+
+662
+00:48:50,903 --> 00:48:52,744
+With respect to Z, here no Z.
+
+663
+00:48:52,824 --> 00:48:55,523
+Zero plus cosine Y plus that
+
+664
+00:48:55,523 --> 00:48:57,503
+plus cosine X plus that.
+
+665
+00:48:57,503 --> 00:48:59,903
+And for Y.
+
+666
+00:49:01,043 --> 00:49:04,764
+Cosine X plus Y plus cosine Y plus that.
+
+667
+00:49:04,884 --> 00:49:05,844
+And here no Y.
+
+668
+00:49:07,384 --> 00:49:09,864
+So, these forms you will have.
+
+669
+00:49:10,503 --> 00:49:12,144
+And the values of this partial derivative
+
+670
+00:49:12,144 --> 00:49:13,963
+where to point pi and pi pi
+
+671
+00:49:13,963 --> 00:49:16,003
+is equal to minus one.
+
+672
+00:49:16,503 --> 00:49:17,244
+Like you said.
+
+673
+00:49:17,244 --> 00:49:18,503
+And here no Z.
+
+674
+00:49:18,503 --> 00:49:19,023
+So, let's go.
+
+675
+00:49:19,023 --> 00:49:19,584
+And here no Z.
+
+676
+00:49:19,584 --> 00:49:20,124
+So, let's go.
+
+677
+00:49:20,124 --> 00:49:20,644
+And here no Z.
+
+678
+00:49:20,644 --> 00:49:21,463
+So, let's go.
+
+679
+00:49:21,463 --> 00:49:21,744
+And here no Z.
+
+680
+00:49:21,744 --> 00:49:22,304
+So, let's go.
+
+681
+00:49:22,304 --> 00:49:22,584
+And here no Z.
+
+682
+00:49:22,584 --> 00:49:22,903
+So, let's go.
+
+683
+00:49:22,903 --> 00:49:23,503
+And here no Z.
+
+684
+00:49:23,503 --> 00:49:24,003
+So, let's go.
+
+685
+00:49:24,003 --> 00:49:24,584
+And here no Z.
+
+686
+00:49:24,584 --> 00:49:24,864
+So, let's go.
+
+687
+00:49:24,864 --> 00:49:25,503
+And here no Z.
+
+688
+00:49:37,108 --> 00:49:37,807
+Are you okay?
+
+689
+00:49:39,928 --> 00:49:45,388
+This is enough for intercept differentiation and chain rule, I think, if you have no question.
+
+690
+00:50:00,724 --> 00:50:02,764
+Are you okay? We have finished here.
+
+691
+00:50:04,384 --> 00:50:05,144
+For change role.
+
+692
+00:50:05,804 --> 00:50:06,324
+Any question?
+
+693
+00:50:16,403 --> 00:50:18,764
+Are you okay about this topic?
+
+694
+00:50:26,996 --> 00:50:32,996
+İlk bir soru var.
+
+695
+00:50:32,996 --> 00:50:33,996
+Tamam.
+
+696
+00:50:33,996 --> 00:50:40,996
+Bir sonraki soru var.
+
+697
+00:50:40,996 --> 00:50:44,996
+Direktörler ve gradiyan ve aktörler.
+
+698
+00:50:44,996 --> 00:50:50,996
+Bu farklı bir derivata var.
+
+699
+00:50:50,996 --> 00:50:52,996
+Orada derivata ve derivata var.
+
+700
+00:50:52,996 --> 00:50:58,996
+Bu derivata var.
+
+701
+00:50:58,996 --> 00:51:22,996
+Derivata var.
+
+702
+00:51:22,996 --> 00:51:24,996
+İlk gradiyan vektör.
+
+703
+00:51:27,764 --> 00:51:29,443
+Definition of directional derivative.
+
+704
+00:51:30,324 --> 00:51:35,983
+The derivative of f at a point in the direction of the unit vector is the number.
+
+705
+00:51:36,604 --> 00:51:41,003
+As you see, it's again a limit like any derivative it has.
+
+706
+00:51:43,324 --> 00:51:49,024
+f is a several variable function of x and y.
+
+707
+00:51:49,624 --> 00:51:51,644
+At a point, it is evaluated.
+
+708
+00:51:52,224 --> 00:51:53,664
+And the direction you have.
+
+709
+00:51:53,664 --> 00:51:57,744
+In order to get a directional derivative, of course, you need a direction.
+
+710
+00:51:58,364 --> 00:51:59,584
+Point and a function.
+
+711
+00:52:00,463 --> 00:52:01,884
+This is the limit form of it.
+
+712
+00:52:02,003 --> 00:52:05,264
+Later, you will see a much more easier form, which is a dot product.
+
+713
+00:52:06,244 --> 00:52:07,463
+With the gradient vector.
+
+714
+00:52:08,304 --> 00:52:11,903
+Not always, you will just evaluate the directional derivative with a limit.
+
+715
+00:52:12,344 --> 00:52:15,604
+It's not useful, I think, and not the proper one.
+
+716
+00:52:16,483 --> 00:52:18,384
+But let's see the first in the limit form.
+
+717
+00:52:18,804 --> 00:52:19,923
+Make an example.
+
+718
+00:52:20,304 --> 00:52:22,664
+And then contribute the other easier form of it.
+
+719
+00:52:23,664 --> 00:52:32,364
+The fds, derivative of f, the directional derivative of f with respect to s in the direction of u at the point p0 is.
+
+720
+00:52:32,903 --> 00:52:34,664
+Limit when s is going to 0.
+
+721
+00:52:35,624 --> 00:52:41,864
+x0 plus su1, y0 plus su2 minus fx0, y0 over s.
+
+722
+00:52:42,124 --> 00:52:46,884
+That means, again, you have an increment in the variable.
+
+723
+00:52:46,884 --> 00:52:49,564
+But this increment is along a vector.
+
+724
+00:52:50,624 --> 00:52:54,024
+x0 plus su1, y0 plus su2.
+
+725
+00:52:54,744 --> 00:52:57,564
+And u1 and u2 are the components of the vector.
+
+726
+00:52:58,003 --> 00:53:01,544
+But don't forget, it must be a unit vector to substitute here.
+
+727
+00:53:02,204 --> 00:53:02,903
+Unit vector.
+
+728
+00:53:03,324 --> 00:53:06,064
+It must be that means the length of the vector is 1.
+
+729
+00:53:06,644 --> 00:53:07,384
+Unit vector.
+
+730
+00:53:07,384 --> 00:53:10,724
+And at a point it is evaluated.
+
+731
+00:53:11,304 --> 00:53:13,344
+This is the change of the function f.
+
+732
+00:53:13,684 --> 00:53:14,744
+Divide with the increment.
+
+733
+00:53:15,003 --> 00:53:16,403
+Let the increment is going to 0.
+
+734
+00:53:16,524 --> 00:53:19,284
+Again, it's the main idea of any derivative.
+
+735
+00:53:20,204 --> 00:53:22,384
+Of course, provided the limit exists.
+
+736
+00:53:22,384 --> 00:53:43,164
+Exists.
+
+737
+00:53:27,251 --> 00:53:27,811
+Enda.
+
+738
+00:53:34,708 --> 00:53:35,708
+Let's make an example.
+
+739
+00:53:36,988 --> 00:53:45,447
+Using the limit definition, find the derivative of fxy at a point in the direction of the unit vector u.
+
+740
+00:53:46,968 --> 00:53:51,248
+All the datas are given here, as I say.
+
+741
+00:53:51,827 --> 00:53:56,927
+Function x squared plus xy, point is given, unit vector is given.
+
+742
+00:53:57,228 --> 00:53:58,568
+You don't need to make it unit.
+
+743
+00:53:58,568 --> 00:54:02,887
+And so, let's apply the limit definition of it.
+
+744
+00:54:02,968 --> 00:54:07,768
+df, ds in the direction of u at the point p0 is limit.
+
+745
+00:54:07,867 --> 00:54:14,867
+When s is going to 0, fx0 plus su1, y0 plus su2 minus fx0, y0 over s.
+
+746
+00:54:15,867 --> 00:54:22,068
+x0 is 1, 1 plus s times u1, 1 over square root 2.
+
+747
+00:54:22,068 --> 00:54:34,028
+y0 is 2, 2 plus su2, u2 is 1 over square root 2 minus f12 over s.
+
+748
+00:54:35,168 --> 00:54:35,827
+Let's calculate.
+
+749
+00:54:36,008 --> 00:54:38,468
+This is x and this is y for fx1.
+
+750
+00:54:38,947 --> 00:54:45,608
+x squared, 1 plus s over square root 2, all square plus x times y.
+
+751
+00:54:46,208 --> 00:54:48,208
+Okay, this is the definition of f.
+
+752
+00:54:48,208 --> 00:54:53,708
+x squared plus x times y minus f12.
+
+753
+00:54:55,088 --> 00:55:00,528
+f12 is, x is 1, y is 2, so 1 plus 1 times 2 is 3.
+
+754
+00:55:02,608 --> 00:55:06,628
+f minus f12 over s.
+
+755
+00:55:07,327 --> 00:55:13,008
+And do the unit operations and you will have, when s is going to 0, it results 5 over square root 2.
+
+756
+00:55:13,008 --> 00:55:18,668
+This is the derivative of the function f in the direction of u at the point p0.
+
+757
+00:55:18,668 --> 00:55:18,988
+f12 is, x is 1, y
+
+758
+00:55:29,043 --> 00:55:31,043
+Bu, bu, limit definiçiyon.
+
+759
+00:55:31,043 --> 00:55:36,043
+Bu, diğer definiçiyon?
+
+760
+00:55:36,043 --> 00:55:39,043
+Bu, alternatif definiçiyon,
+
+761
+00:55:39,043 --> 00:55:41,043
+genelde de uluslararın,
+
+762
+00:55:41,043 --> 00:55:42,043
+direkçiyon derivataçı,
+
+763
+00:55:42,043 --> 00:55:45,043
+bu daçı,
+
+764
+00:55:45,043 --> 00:55:46,043
+daçı,
+
+765
+00:55:46,043 --> 00:55:48,043
+bu daçı,
+
+766
+00:55:48,043 --> 00:55:55,043
+birçı,
+
+767
+00:55:55,043 --> 00:56:02,043
+bu,
+
+768
+00:56:02,043 --> 00:56:54,043
+birçı,
+
+769
+00:56:54,043 --> 00:56:55,043
+veçer.
+
+770
+00:56:55,043 --> 00:56:56,043
+So,
+
+771
+00:56:56,043 --> 00:56:57,043
+Differential Vector Operation.
+
+772
+00:56:57,043 --> 00:57:03,043
+You apply this nabla to a function and make it a vector.
+
+773
+00:57:03,043 --> 00:57:09,043
+And this vector has the components including the partial derivatives of this function that you apply.
+
+774
+00:57:09,043 --> 00:57:10,043
+Okay?
+
+775
+00:57:10,043 --> 00:57:13,043
+The meaning of it is this.
+
+776
+00:57:13,043 --> 00:57:16,043
+So, such an expression you may see.
+
+777
+00:57:16,043 --> 00:57:17,043
+i d dx,
+
+778
+00:57:17,043 --> 00:57:18,043
+that means apply to f,
+
+779
+00:57:18,043 --> 00:57:21,043
+so get the derivative of df dx,
+
+780
+00:57:21,043 --> 00:57:22,043
+i.
+
+781
+00:57:22,043 --> 00:57:23,043
+Second part,
+
+782
+00:57:23,043 --> 00:57:24,043
+df dy j.
+
+783
+00:57:24,043 --> 00:57:27,043
+So, such a definition it has.
+
+784
+00:57:27,043 --> 00:57:29,043
+Very easy.
+
+785
+00:57:29,043 --> 00:57:30,043
+So,
+
+786
+00:57:30,043 --> 00:57:31,043
+for example,
+
+787
+00:57:31,043 --> 00:57:35,043
+once we have x squared plus y squared and need to evaluate the gradient f.
+
+788
+00:57:35,043 --> 00:57:37,043
+First component,
+
+789
+00:57:37,043 --> 00:57:39,043
+derivative with respect to x.
+
+790
+00:57:39,043 --> 00:57:40,043
+2x.
+
+791
+00:57:40,043 --> 00:57:41,043
+i plus.
+
+792
+00:57:41,043 --> 00:57:43,043
+Second component with respect to y,
+
+793
+00:57:43,043 --> 00:57:44,043
+2y j.
+
+794
+00:57:44,043 --> 00:57:45,043
+Don't forget,
+
+795
+00:57:45,043 --> 00:57:47,043
+gradient is always a vector.
+
+796
+00:57:47,043 --> 00:57:48,043
+Gradient vector.
+
+797
+00:57:48,043 --> 00:57:49,043
+So,
+
+798
+00:57:49,043 --> 00:57:50,043
+i and j.
+
+799
+00:57:50,043 --> 00:57:52,043
+If we had also z,
+
+800
+00:57:52,043 --> 00:57:57,043
+we would add here df dz k.
+
+801
+00:57:57,043 --> 00:58:03,043
+At a point you can evaluate or generally as a function of x and y you can evaluate the gradient f.
+
+802
+00:58:03,043 --> 00:58:06,043
+When it is at a point 1 and 2, for example,
+
+803
+00:58:06,043 --> 00:58:12,043
+you will just substitute the values of x and y here and get a custom vector.
+
+804
+00:58:12,043 --> 00:58:14,043
+This is the vector-related function.
+
+805
+00:58:14,043 --> 00:58:15,043
+Okay?
+
+806
+00:58:15,043 --> 00:58:16,043
+So,
+
+807
+00:58:16,043 --> 00:58:26,043
+Now we can have the second and the more useful and easier alternative definition of the directional derivative.
+
+808
+00:58:26,043 --> 00:58:35,043
+Directional derivative is a dot product of the gradient vector and the unit vector, which is r direction.
+
+809
+00:58:35,043 --> 00:58:39,043
+If f is differentiable in an open region containing p0,
+
+810
+00:58:39,043 --> 00:58:56,043
+then the directional derivative of f at the point p0 in the direction of u is equal to gradient of that function at the point p0 times unit vector in the same direction of r,
+
+811
+00:58:56,043 --> 00:59:01,043
+how can we say, of our direction u, but the unit form of it.
+
+812
+00:59:01,043 --> 00:59:27,043
+So,
+
+813
+00:59:04,596 --> 00:59:19,675
+Bu, once you need to evaluate this gradient, sorry, this direction derivative with a dot product, you need to make your direction first the unit, and then evaluate gradient f, and then get the dot product.
+
+814
+00:59:19,956 --> 00:59:24,936
+That means scalar production of these two vectors will be the direction derivative of the function f.
+
+815
+00:59:24,936 --> 00:59:34,335
+For example, find the derivative of f at the point p0 in the direction of v.
+
+816
+00:59:35,576 --> 00:59:35,896
+Yes.
+
+817
+00:59:37,096 --> 00:59:40,335
+What we need for the direction derivative of this function?
+
+818
+00:59:41,556 --> 00:59:46,675
+Gradient f and the unit vector in the same direction with our vector.
+
+819
+00:59:47,596 --> 00:59:48,936
+Is it unit v?
+
+820
+00:59:55,668 --> 00:59:58,948
+Is it a unit vector? 3i-4j.
+
+821
+01:00:20,628 --> 01:00:22,628
+Bu nedenle bu faktör?
+
+822
+01:00:22,628 --> 01:00:24,628
+V
+
+823
+01:00:33,139 --> 01:00:34,139
+Evet, teşekkür ederim.
+
+824
+01:00:34,139 --> 01:00:36,139
+Of course, 5.0.
+
+825
+01:00:36,139 --> 01:00:38,139
+It's not a kill 2.1.
+
+826
+01:00:38,139 --> 01:00:42,139
+So in order to make it a unit, what should we do?
+
+827
+01:00:46,963 --> 01:00:55,063
+In order to substitute in the direction of derivative formula as a dot product, you need to make the direction, first the unit, by
+
+828
+01:00:59,795 --> 01:01:03,475
+How can you make a non-unit vector into a unit vector?
+
+829
+01:01:07,155 --> 01:01:22,516
+Evet, we need to divide with the land of it. I think so. That means here, if it is 5, just divide with 5, the components of the vector, it will be in it. 3 over 5 minus 4 over 5. Okay, thank you.
+
+830
+01:01:22,516 --> 01:01:43,516
+And then. So, u in the formula will be 3 over 5i minus 4 over 5j. Secondly, what do we need? Gradient of this function at that point. Gradient is gradient vector, df dx i, df dy j.
+
+831
+01:01:43,516 --> 01:01:52,695
+So, we need to get the partial derivative of f with respect to x and y at the point p0. Let's first evaluate it and then write the gradient vector.
+
+832
+01:01:54,255 --> 01:02:12,315
+With respect to x. x times e to y plus cosine xy. Let's evaluate. With respect to y. x e to y plus. With respect to x minus cosine xy times y. Yes, minus y times sine xy.
+
+833
+01:02:12,315 --> 01:02:42,295
+At the point 20, it results to 0. So, what is the gradient vector?
+
+834
+01:02:36,980 --> 01:02:38,059
+Gradyan, vektör.
+
+835
+01:02:59,795 --> 01:03:01,795
+Bu bir kreta ve bu kreta ve bu kreta.
+
+836
+01:03:01,795 --> 01:03:03,795
+Bu kreta ve bu kreta.
+
+837
+01:03:03,795 --> 01:03:07,795
+Ve bu kreta ve bu kreta.
+
+838
+01:03:11,443 --> 01:03:24,463
+Gradient is, gradient vector, df dx i plus df dy j. So we have just evaluated, it's i plus 2j, gradient of f at the point 2, 0, okay? It's i plus 2j.
+
+839
+01:03:25,163 --> 01:03:39,304
+So for the direction derivative of this function at that point in this direction, we need to just multiply scalar production of the vectors, which is gradient f times unit vector in the same direction with v.
+
+840
+01:03:39,304 --> 01:03:51,103
+Let's see. Let's see. Gradient is i plus 2j. Unit vector in the same direction with our vectors v. 3 over 5 minus 4 over 5j.
+
+841
+01:03:51,824 --> 01:03:58,903
+And so the direction derivative is just the multiplication of these two vectors. That production or scalar production.
+
+842
+01:03:59,963 --> 01:04:07,923
+1 times 3 over 5 plus 2 times minus 4 over 5. So it results minus 1.
+
+843
+01:04:07,923 --> 01:04:15,744
+It's so easy. It's so easy. It's so easy. This topic is easy. After chain formalizations. It's so easy, I think.
+
+844
+01:04:25,780 --> 01:04:33,660
+Are you okay about the direction derivative formulae? Evaluating gradiant vectors is easy.
+
+845
+01:04:39,764 --> 01:04:56,644
+I don't know exactly where it has application, but for example, this is the different form of a derivative.
+
+846
+01:04:57,304 --> 01:05:07,264
+We have ordinary derivative. For several variable function partial derivative we have, and in partial derivative we have a different geometric meaning,
+
+847
+01:05:07,264 --> 01:05:18,584
+but also we have directional derivative because we need to derivate a function in a specific direction.
+
+848
+01:05:19,923 --> 01:05:26,064
+And later also we have, you will not see this topic, line integral for example.
+
+849
+01:05:28,104 --> 01:05:31,264
+Integral of a function along a line is similar to this.
+
+850
+01:05:31,264 --> 01:05:46,344
+But I don't know exactly the application of it. It has a different structure. That means a form of a different, an alternative form of a derivative, I can say.
+
+851
+01:05:56,483 --> 01:05:59,384
+And are the steps okay for you?
+
+852
+01:06:21,364 --> 01:06:24,864
+Şimdi, if you mind, shall we have a break now and then continue?
+
+853
+01:06:34,643 --> 01:06:37,003
+15min için bir şey yok
+
+854
+01:24:40,787 --> 01:24:43,287
+Are you okay, everyone? Should we continue?
+
+855
+01:24:52,724 --> 01:24:55,184
+Thank you, [öğrenci]. What about the others?
+
+856
+01:24:56,984 --> 01:24:57,804
+Where are you today?
+
+857
+01:25:01,844 --> 01:25:02,203
+Okay.
+
+858
+01:25:03,984 --> 01:25:12,743
+First tell me, are you okay about the evaluation of directional derivative with the dot product? Do you understand it? Gradient vector times unit vector.
+
+859
+01:25:13,864 --> 01:25:15,743
+I think it's easy for you.
+
+860
+01:25:20,212 --> 01:25:25,292
+Are you kept to know this formalization? Unit vector, gradient vector.
+
+861
+01:25:30,963 --> 01:25:35,083
+And if you have no question,
+
+862
+01:25:35,083 --> 01:25:37,203
+because we will just continue with the concept
+
+863
+01:25:37,203 --> 01:25:40,804
+of direction derivative and duplications.
+
+864
+01:25:42,123 --> 01:25:44,043
+A little bit, let's see.
+
+865
+01:25:46,184 --> 01:25:47,423
+The dot product,
+
+866
+01:25:49,163 --> 01:25:50,984
+the direction derivative is a dot product.
+
+867
+01:25:50,984 --> 01:25:54,764
+So resulting this property,
+
+868
+01:25:54,764 --> 01:25:58,684
+you know that dot product normally for two vectors also
+
+869
+01:25:58,684 --> 01:26:02,583
+can be able to with the norms of them.
+
+870
+01:26:02,583 --> 01:26:04,623
+That means the length of two vector
+
+871
+01:26:04,623 --> 01:26:08,543
+multiplied with the cosine theta.
+
+872
+01:26:08,543 --> 01:26:12,064
+Theta is the angle between gradient f and u.
+
+873
+01:26:13,804 --> 01:26:15,764
+And this is the alternative definition
+
+874
+01:26:15,764 --> 01:26:18,443
+of the dot product of any two vector.
+
+875
+01:26:19,484 --> 01:26:21,564
+Gradient f, norm of gradient f,
+
+876
+01:26:21,564 --> 01:26:24,184
+length of u times cosine theta.
+
+877
+01:26:25,144 --> 01:26:27,423
+U is the unit vector, so it's one.
+
+878
+01:26:27,423 --> 01:26:30,724
+Gradient f, the length of gradient f times cosine theta,
+
+879
+01:26:30,724 --> 01:26:31,984
+which is theta here,
+
+880
+01:26:31,984 --> 01:26:34,684
+angle between u and gradient f,
+
+881
+01:26:34,684 --> 01:26:37,064
+reveals the following properties.
+
+882
+01:26:39,344 --> 01:26:43,604
+That means it makes this conditions arise,
+
+883
+01:26:43,604 --> 01:26:45,323
+resulting this multiplication
+
+884
+01:26:45,323 --> 01:26:47,264
+and the meaning of gradient f
+
+885
+01:26:48,323 --> 01:26:50,423
+as a scalar vector,
+
+886
+01:26:50,423 --> 01:26:52,564
+as a scalar value, I'm sorry.
+
+887
+01:26:52,564 --> 01:26:57,564
+Three different meanings it has.
+
+888
+01:26:59,564 --> 01:27:00,403
+Firstly,
+
+889
+01:27:01,363 --> 01:27:05,064
+f increases more rapidly when cosine theta is one
+
+890
+01:27:05,064 --> 01:27:07,423
+or when theta is zero,
+
+891
+01:27:07,423 --> 01:27:09,903
+and u is in the direction of gradient f.
+
+892
+01:27:09,903 --> 01:27:12,144
+That means the biggest value,
+
+893
+01:27:12,144 --> 01:27:14,623
+the maximum value of the dot product
+
+894
+01:27:14,623 --> 01:27:16,963
+is when cosine theta is one,
+
+895
+01:27:16,963 --> 01:27:19,623
+because the maximum value of cosine theta is one.
+
+896
+01:27:20,604 --> 01:27:24,684
+So when cosine theta is equal to one,
+
+897
+01:27:24,684 --> 01:27:28,703
+that means when the angle between gradient f and u,
+
+898
+01:27:28,703 --> 01:27:30,024
+it has the maximum value.
+
+899
+01:27:30,963 --> 01:27:32,684
+When theta is zero, for example,
+
+900
+01:27:32,684 --> 01:27:35,224
+when theta is zero, cosine theta is one.
+
+901
+01:27:35,224 --> 01:27:36,543
+So the uf,
+
+902
+01:27:36,543 --> 01:27:40,184
+that means the directional derivative of the function f
+
+903
+01:27:40,184 --> 01:27:41,663
+in the direction of u,
+
+904
+01:27:41,663 --> 01:27:43,323
+becomes the maximum value.
+
+905
+01:27:45,123 --> 01:27:48,823
+What does it mean it has the maximum value of a derivative?
+
+906
+01:27:48,823 --> 01:27:51,283
+What has the derivative meaning?
+
+907
+01:27:53,184 --> 01:27:58,083
+Derivative roughly is the change of a function or the,
+
+908
+01:27:58,083 --> 01:28:01,203
+yes, we can just think it's a change of a function.
+
+909
+01:28:03,064 --> 01:28:05,844
+Positive or negative change it can be.
+
+910
+01:28:05,844 --> 01:28:08,524
+Here, when it results a positive value,
+
+911
+01:28:09,764 --> 01:28:11,064
+gradient f,
+
+912
+01:28:11,064 --> 01:28:14,243
+the length of gradient f times cosine theta is one.
+
+913
+01:28:14,243 --> 01:28:16,064
+So the length of gradient f.
+
+914
+01:28:16,064 --> 01:28:19,443
+So the maximum value of the directional derivative
+
+915
+01:28:19,443 --> 01:28:23,203
+of any function will be the length of the gradient f.
+
+916
+01:28:23,203 --> 01:28:26,703
+Because when gradient f and the unit vector
+
+917
+01:28:26,703 --> 01:28:29,203
+is in the same direction,
+
+918
+01:28:29,203 --> 01:28:31,163
+the angle between them will be zero.
+
+919
+01:28:31,163 --> 01:28:33,623
+So cosine theta will be one.
+
+920
+01:28:33,623 --> 01:28:36,344
+So it will be the maximum value
+
+921
+01:28:36,344 --> 01:28:38,783
+of directional derivative of f.
+
+922
+01:28:38,783 --> 01:28:41,963
+So what is the meaning of directional derivative
+
+923
+01:28:41,963 --> 01:28:43,783
+and having the maximum value?
+
+924
+01:28:43,783 --> 01:28:46,783
+It means that f increases most rapidly.
+
+925
+01:28:46,783 --> 01:28:51,783
+Increases, so positive increment or positive change
+
+926
+01:28:53,783 --> 01:28:54,963
+we are just talking about.
+
+927
+01:28:54,963 --> 01:28:57,963
+So f increases most rapidly when,
+
+928
+01:28:57,963 --> 01:29:01,963
+when the direction of gradient f and the unit vector
+
+929
+01:29:01,963 --> 01:29:03,963
+are in the same direction.
+
+930
+01:29:03,963 --> 01:29:08,144
+When gradient f and the direction of the vector
+
+931
+01:29:08,144 --> 01:29:09,963
+of the directional derivative is in the same direction.
+
+932
+01:29:09,963 --> 01:29:16,963
+So the directional derivative has the biggest value.
+
+933
+01:29:16,963 --> 01:29:18,963
+Which means f increases most rapidly in this direction.
+
+934
+01:29:18,963 --> 01:29:20,963
+So the derivative in this direction is equal to the land
+
+935
+01:29:20,963 --> 01:29:22,963
+of the gradient vector.
+
+936
+01:29:22,963 --> 01:29:29,963
+resulting cosine theta is one.
+
+937
+01:29:29,963 --> 01:29:31,963
+So the directional derivative is equal to the direction of the gradient
+
+938
+01:29:31,963 --> 01:29:32,963
+of the gradient vector.
+
+939
+01:29:32,963 --> 01:29:33,963
+So the directional derivative is equal to the direction of the gradient
+
+940
+01:29:33,963 --> 01:29:34,963
+of the gradient vector.
+
+941
+01:29:34,963 --> 01:29:50,963
+So the directional derivative is equal to the gradient vector.
+
+942
+01:29:31,891 --> 01:29:32,891
+Secondly,
+
+943
+01:29:35,051 --> 01:29:37,371
+bu neşte valliydi?
+
+944
+01:29:37,371 --> 01:29:39,371
+Yani bu neşte valliydi?
+
+945
+01:29:40,011 --> 01:30:29,851
+Bu neşte valliydi?
+
+946
+01:30:29,851 --> 01:30:31,851
+F neşte valliydi?
+
+947
+01:30:31,851 --> 01:31:21,851
+Bu neşte valliydi?
+
+948
+01:31:21,851 --> 01:31:23,851
+F'nin creyesi most rapidly.
+
+949
+01:31:23,851 --> 01:31:25,851
+Minimum value?
+
+950
+01:31:25,851 --> 01:31:27,851
+F'nin creyesi most rapidly.
+
+951
+01:31:27,851 --> 01:31:29,851
+Zero. No change.
+
+952
+01:31:29,851 --> 01:31:31,851
+Are you okay?
+
+953
+01:31:43,956 --> 01:31:58,815
+So, according to positions of the u, unit vector, and gradient, these three different specific cases happen.
+
+954
+01:32:02,547 --> 01:32:11,887
+For example, find the directions in which f increases most rapidly, decreases most rapidly.
+
+955
+01:32:12,247 --> 01:32:17,087
+What are the directions of zero change in f? At a point, of course, must be.
+
+956
+01:32:18,027 --> 01:32:23,947
+So, in fact, this question says that when f increases most rapidly.
+
+957
+01:32:24,427 --> 01:32:26,127
+When f increases most rapidly?
+
+958
+01:32:27,327 --> 01:32:31,947
+When gradient f and the unit vector are in the same direction.
+
+959
+01:32:32,547 --> 01:32:34,427
+Decreases most rapidly?
+
+960
+01:32:34,827 --> 01:32:36,847
+When they are on the opposite direction.
+
+961
+01:32:38,047 --> 01:32:40,867
+When we have zero change, when they are orthogonal.
+
+962
+01:32:41,907 --> 01:32:42,487
+Are you okay?
+
+963
+01:32:57,492 --> 01:33:21,221
+Bu sorunla, bu sorunla, bu sorunla, bu sorunla, bu sorunla, bu sorunla, bu sorunla, bu sorunla, bu sorunla, bu sorunla, bu sorunla, bu sorunla, bu sorunla, bu sorunla, bu sorunla, bu sorunla, bu sorunla, bu sorunla, bu sorunla, bu sorunla, bu sorunla, bu sorunla, bu sorunla, bu sorunla, bu sorunla, bu sorunla, bu sorunla, bu sorunla, bu sorunla, bu sorunla, bu sorunla, bu sorunla, bu sorunla, bu sorunla, bu sorunla, bu sorunla, bu sorunla, bu sorunla, bu sorunla, bu sorunla, bu sorunla, bu sorunla, bu sorunla, bu sorunla, bu sorun
+
+964
+01:33:58,771 --> 01:34:00,152
+Evet, bu gradyan ev.
+
+965
+01:34:10,899 --> 01:34:14,479
+Götenev, DFTXI, DFTYJ.
+
+966
+01:34:36,595 --> 01:34:37,455
+Any of you?
+
+967
+01:34:53,235 --> 01:34:56,836
+You will just get the partial little bit of f with respect to x and y.
+
+968
+01:34:57,155 --> 01:35:00,515
+And these will be the components of the gradient vector.
+
+969
+01:35:01,595 --> 01:35:01,855
+Okay.
+
+970
+01:35:04,076 --> 01:35:05,376
+So I want to continue.
+
+971
+01:35:07,015 --> 01:35:07,735
+Gradient f.
+
+972
+01:35:09,256 --> 01:35:10,935
+Df dx i, df dy j.
+
+973
+01:35:11,456 --> 01:35:13,515
+It's x squared over 2, y squared over 2.
+
+974
+01:35:13,635 --> 01:35:15,315
+So df dx is x.
+
+975
+01:35:15,675 --> 01:35:16,735
+Df dy is y.
+
+976
+01:35:18,055 --> 01:35:21,735
+So xi yj at the point 1 and 1 is i plus j.
+
+977
+01:35:21,735 --> 01:35:23,796
+I was asking you about this vector only.
+
+978
+01:35:25,036 --> 01:35:26,015
+And the direction.
+
+979
+01:35:27,836 --> 01:35:30,475
+Which direction we need increases most reported.
+
+980
+01:35:30,475 --> 01:35:32,916
+That means the same direction with this gradient vector.
+
+981
+01:35:33,796 --> 01:35:35,076
+Same direction with it.
+
+982
+01:35:35,135 --> 01:35:35,876
+It must be unit.
+
+983
+01:35:35,975 --> 01:35:38,855
+So just make it unit by dividing with the length.
+
+984
+01:35:39,435 --> 01:35:41,036
+2 squared 2.
+
+985
+01:35:41,775 --> 01:35:44,576
+So it's the unit vector in the direction of gradient f.
+
+986
+01:35:46,555 --> 01:35:51,055
+While we have the direction in the same direction with the gradient f,
+
+987
+01:35:51,055 --> 01:35:52,555
+f increases most rapidly.
+
+988
+01:35:52,735 --> 01:35:55,015
+That means the maximum value of the direction of the limit.
+
+989
+01:35:56,715 --> 01:36:00,695
+Secondly, f decreases most rapidly in the negative direction.
+
+990
+01:36:00,836 --> 01:36:02,775
+That means the opposite direction of gradient f.
+
+991
+01:36:02,895 --> 01:36:04,175
+So minus gradient f.
+
+992
+01:36:04,555 --> 01:36:26,175
+So just negative of it.
+
+993
+01:36:09,203 --> 01:36:13,923
+The direction of 0 change at the point 1 and 1 are the directions orthogonal to gradient f.
+
+994
+01:36:14,643 --> 01:36:20,804
+That means if we multiply gradient f with the n-vector, it must be resolved as 0.
+
+995
+01:36:21,683 --> 01:36:29,483
+So, minus 1 over square root 2, 1 over square root 2, or 1 over square root 2, minus 1 over square root 2, i and j.
+
+996
+01:36:30,844 --> 01:36:38,503
+The multiplication with them, with the gradient f i plus j, they result 0.
+
+997
+01:36:42,228 --> 01:36:45,868
+So, continue with the gradients and tangents to level curves.
+
+998
+01:36:47,148 --> 01:36:51,547
+If a differentiable function f has a custom value c along a smooth curve r,
+
+999
+01:36:52,608 --> 01:36:56,807
+making the curve a level curve of, that means it's a level curve,
+
+1000
+01:36:57,507 --> 01:37:00,948
+then f gt ht is equal to c.
+
+1001
+01:37:01,967 --> 01:37:03,467
+Just remember the level curves.
+
+1002
+01:37:05,967 --> 01:37:09,368
+Once we have a function z that is the function of x and y,
+
+1003
+01:37:09,368 --> 01:37:12,467
+and when it is a kulteğ custom number, it's a level curve.
+
+1004
+01:37:15,108 --> 01:37:18,688
+Differentiating both sides of this equation with respect to t,
+
+1005
+01:37:23,155 --> 01:37:33,435
+F to x, x is gt, g to t, F to y, y is h, h to t is equal to zero.
+
+1006
+01:37:34,176 --> 01:37:42,435
+This multiplication is the dot product of two vectors, df dx, df dy, dg dt, and dh dt, i n j.
+
+1007
+01:37:42,916 --> 01:37:45,775
+This multiplication results, this scalar production.
+
+1008
+01:37:45,775 --> 01:37:59,076
+So you know this is the gradient f, and this is, when r is defined with gt i ht j, this is the tangent, the tangent of it, just the derivative, dR dt.
+
+1009
+01:38:00,115 --> 01:38:05,536
+So the scalar production of these two vectors results, zero, that means they are orthogonal.
+
+1010
+01:38:05,975 --> 01:38:09,555
+That means gradient f is orthogonal to tangent vector.
+
+1011
+01:38:09,555 --> 01:38:39,536
+So it's normal to the curve.
+
+1012
+01:38:39,536 --> 01:39:09,515
+So it's normal to the level curve.
+
+1013
+01:39:13,171 --> 01:39:15,171
+Fakat bu soru var.
+
+1014
+01:39:15,171 --> 01:40:09,171
+Bu soru var.
+
+1015
+01:40:09,171 --> 01:40:11,171
+Normal.
+
+1016
+01:40:11,171 --> 01:40:13,171
+This ellipse is sketched on the R square.
+
+1017
+01:40:13,171 --> 01:40:15,171
+Two dimensional.
+
+1018
+01:40:15,171 --> 01:40:17,171
+But we can just think it.
+
+1019
+01:40:17,171 --> 01:40:21,171
+It's the level curve of a surface.
+
+1020
+01:40:21,171 --> 01:40:23,171
+X square over 4 plus y square.
+
+1021
+01:40:23,171 --> 01:40:25,171
+When it is equal to 2,
+
+1022
+01:40:25,171 --> 01:40:27,171
+this ellipse we have.
+
+1023
+01:40:27,171 --> 01:40:29,171
+That means this ellipse is the level curve of this function.
+
+1024
+01:40:29,171 --> 01:40:31,171
+Z.
+
+1025
+01:40:31,171 --> 01:40:33,171
+When it is equal to 2,
+
+1026
+01:40:33,171 --> 01:40:35,171
+it becomes a level curve.
+
+1027
+01:40:35,171 --> 01:40:37,171
+So,
+
+1028
+01:40:37,171 --> 01:40:39,171
+like we did now,
+
+1029
+01:40:39,171 --> 01:40:41,171
+these formalizations we will use
+
+1030
+01:40:41,171 --> 01:40:43,171
+as the tangent line.
+
+1031
+01:40:43,171 --> 01:40:45,171
+We know that gradient f is normal to,
+
+1032
+01:40:45,171 --> 01:40:47,171
+level curves,
+
+1033
+01:40:47,171 --> 01:40:49,171
+normal to tangent lines.
+
+1034
+01:40:49,171 --> 01:40:51,171
+So, gradient f,
+
+1035
+01:40:51,171 --> 01:40:53,171
+which is minus i plus 2j here,
+
+1036
+01:40:53,171 --> 01:40:55,171
+of this function,
+
+1037
+01:40:55,171 --> 01:40:57,171
+it is point.
+
+1038
+01:40:57,171 --> 01:40:59,171
+So, the tangent line has this equation.
+
+1039
+01:40:59,171 --> 01:41:03,171
+Minus 1 times x minus minus 2.
+
+1040
+01:41:03,171 --> 01:41:07,171
+2 times y minus 1 is equal to 0.
+
+1041
+01:41:07,171 --> 01:41:09,171
+is the tangent line equation.
+
+1042
+01:41:09,171 --> 01:41:11,171
+So,
+
+1043
+01:41:11,171 --> 01:41:13,171
+the tangent line is equal to 0.
+
+1044
+01:41:13,171 --> 01:41:15,171
+So,
+
+1045
+01:41:15,171 --> 01:41:17,171
+the tangent line is equal to 0.
+
+1046
+01:41:17,171 --> 01:41:19,171
+It is the tangent line equation.
+
+1047
+01:41:19,171 --> 01:41:21,171
+So,
+
+1048
+01:41:21,171 --> 01:41:23,171
+the tangent line is equal to 0.
+
+1049
+01:41:23,171 --> 01:41:25,171
+So,
+
+1050
+01:41:25,171 --> 01:41:27,171
+the tangent line is equal to 0.
+
+1051
+01:41:27,171 --> 01:41:29,171
+So,
+
+1052
+01:41:29,171 --> 01:41:31,171
+the tangent line is equal to 0.
+
+1053
+01:41:31,171 --> 01:41:33,171
+So,
+
+1054
+01:41:33,171 --> 01:41:35,171
+the tangent line is equal to 0.
+
+1055
+01:41:22,387 --> 01:41:23,068
+Are you okay?
+
+1056
+01:41:33,876 --> 01:41:35,216
+Any question? Are you okay?
+
+1057
+01:41:47,956 --> 01:41:49,416
+Ok, so I want to continue.
+
+1058
+01:41:52,695 --> 01:41:54,536
+Algebraik rules for gradients.
+
+1059
+01:41:57,096 --> 01:42:02,996
+Once we need to evaluate the gradient of two functions together, sum and subtraction,
+
+1060
+01:42:03,735 --> 01:42:06,855
+then scalar multiplication, multiplication and division.
+
+1061
+01:42:22,771 --> 01:42:23,771
+İlk başta,
+
+1062
+01:42:23,771 --> 01:42:31,771
+the gradient of the sum of two functions is equal to the sum of their gradients and also the substraction.
+
+1063
+01:42:31,771 --> 01:42:35,771
+If you have a custom multiple of a function, the gradient of it,
+
+1064
+01:42:35,771 --> 01:42:39,771
+that's multiple times the gradient of f.
+
+1065
+01:42:39,771 --> 01:42:44,771
+Gradient of multiplication of two functions is like having the derivative of the multiplication,
+
+1066
+01:42:44,771 --> 01:42:47,771
+f times gradient g, g times gradient f.
+
+1067
+01:42:47,771 --> 01:42:49,771
+Please hold on.
+
+1068
+01:43:12,851 --> 01:43:20,771
+4th one, gradin of a division of two functions, again, is a similar rule for having the derivative of a division.
+
+1069
+01:43:22,851 --> 01:43:27,412
+g times gradient f minus f times gradient g over g squared.
+
+1070
+01:43:28,851 --> 01:43:31,412
+These rules hold four gradients.
+
+1071
+01:43:36,051 --> 01:43:43,112
+Next, let's think the function of three variables. In that case, we have the again the gradient of f.
+
+1072
+01:43:44,011 --> 01:43:52,411
+And as I said in the beginning, in the definition of gradient, if we had the third variable, I said that we would have df dz k.
+
+1073
+01:43:56,020 --> 01:43:59,180
+dfdx, dfdyj, dfdzk.
+
+1074
+01:44:00,860 --> 01:44:13,420
+So, in that case, the directional derivative of f in the direction of u, again, gradiant f times the unit vector u, dfdx, u1, dfdy, u2, dfdz, u3.
+
+1075
+01:44:17,492 --> 01:44:27,132
+For example, it says, find the derivative of f x3-xy²-z at p0 in the direction v.
+
+1076
+01:44:29,252 --> 01:44:30,731
+First, the direction derivative.
+
+1077
+01:44:31,351 --> 01:44:39,592
+Second part, in what directions does f change more rapidly at p0, and what are the rates of change in these directions say?
+
+1078
+01:44:45,684 --> 01:44:54,083
+In the first one, f is a three variable function.
+
+1079
+01:44:56,484 --> 01:45:00,963
+So the direction is, again in our cube, as you see, three components we have.
+
+1080
+01:45:03,204 --> 01:45:12,564
+We need to evaluate the gradient of f, firstly at that point, and make this vector unit, and then get the scalar production of them.
+
+1081
+01:45:22,323 --> 01:45:25,063
+Is there anyone who wants to solve it?
+
+1082
+01:45:27,063 --> 01:45:28,323
+Or listening to me?
+
+1083
+01:45:52,212 --> 01:45:56,112
+Şu an takip eden var mı beni arkadaşlar? Ona göre devam ediyorum.
+
+1084
+01:46:04,148 --> 01:46:22,608
+Cevaplarsanız çok sevineceğim o zaman sorularıma. Yoksa ben hiç ara vermeden devam edeceğim. Çünkü kendi kendime iş gibi düşünüyorum. O zaman söyleyin, not alıyorsanız söyleyin, yavaş gideyim. Çözüyorsanız söyleyin, ona göre zaman vereyim.
+
+1085
+01:46:24,748 --> 01:46:29,087
+Hiç dinlemiyorsanız ben hızlı bir şekilde kaydı tamamlayayım en azından.
+
+1086
+01:46:43,380 --> 01:46:44,260
+Thank you, [öğrenci].
+
+1087
+01:46:46,039 --> 01:46:46,600
+Anyone?
+
+1088
+01:46:59,636 --> 01:47:02,436
+Let's see, is that 4 over 7? Yes, thank you.
+
+1089
+01:47:03,996 --> 01:47:07,596
+U is not a unit vector, as you see.
+
+1090
+01:47:08,356 --> 01:47:11,536
+Of course, 2i minus 3j plus 6k.
+
+1091
+01:47:12,676 --> 01:47:14,016
+And the length of it is 7.
+
+1092
+01:47:14,696 --> 01:47:17,216
+In order to make it unit, we need to divide with 7.
+
+1093
+01:47:19,456 --> 01:47:23,676
+And then, we need to evaluate unit vector and the gradient vector.
+
+1094
+01:47:23,676 --> 01:47:28,956
+Gradient of f is df dx i, df dy j, df dz k.
+
+1095
+01:47:29,636 --> 01:47:34,115
+That's why fx, fy, fz are needed.
+
+1096
+01:47:35,156 --> 01:47:38,336
+fx is this, fy is this, fz is minus 1.
+
+1097
+01:47:39,036 --> 01:47:40,756
+Evolate these values at a point,
+
+1098
+01:47:41,316 --> 01:47:43,856
+because direction of derivative always evolates at a point.
+
+1099
+01:47:44,976 --> 01:47:48,016
+2, minus 2, and minus 1 are the components.
+
+1100
+01:47:48,016 --> 01:47:52,856
+So, gradient f at the point p0 is 2i minus 2j minus k.
+
+1101
+01:47:53,896 --> 01:47:56,376
+And the unit vector is this.
+
+1102
+01:47:56,376 --> 01:47:59,976
+So, just multiply them in scalar production.
+
+1103
+01:48:01,296 --> 01:48:02,956
+And 4 over 7 you get.
+
+1104
+01:48:02,956 --> 01:48:28,756
+So, just multiply them in scalar production.
+
+1105
+01:48:23,475 --> 01:48:26,515
+ve, if you are okay, what about B?
+
+1106
+01:48:27,015 --> 01:48:31,996
+Tell me, in what directions does F change more rapidly at P0?
+
+1107
+01:48:32,695 --> 01:48:36,175
+And what are the rates of change in these directions?
+
+1108
+01:48:50,739 --> 01:49:08,099
+Şimdi, ilk önce bir soru
+
+1109
+01:49:13,300 --> 01:49:21,980
+Does it ask you about maximum value or minimum value? The directions are asked here. What do you think?
+
+1110
+01:49:30,387 --> 01:49:31,967
+Evet, maksimum of it.
+
+1111
+01:49:32,887 --> 01:49:35,167
+And also, I think the minimum of it is asked.
+
+1112
+01:49:35,747 --> 01:49:40,568
+Because change, change means positive or negative it can be.
+
+1113
+01:49:40,927 --> 01:49:44,247
+That means, this question has two parts.
+
+1114
+01:49:45,007 --> 01:49:52,507
+It's asking you about in what directions f increases most rapidly, and in what directions f decreases most rapidly.
+
+1115
+01:49:53,327 --> 01:49:54,528
+So, can you tell me,
+
+1116
+01:49:54,528 --> 01:50:00,807
+At the same time, what are the rates of change?
+
+1117
+01:50:01,948 --> 01:50:03,707
+Rates of change means what?
+
+1118
+01:50:04,327 --> 01:50:05,207
+Rates of change?
+
+1119
+01:50:09,787 --> 01:50:11,068
+Yes, [öğrenci], you're right.
+
+1120
+01:50:12,007 --> 01:50:17,728
+Parallel directions and the opposite directions we need for maximum value and minimal value, respectively.
+
+1121
+01:50:18,207 --> 01:50:18,807
+Yes, you're right.
+
+1122
+01:50:19,408 --> 01:50:21,908
+And also, what are the rates of change?
+
+1123
+01:50:22,547 --> 01:50:24,247
+Rates of change, which value is it?
+
+1124
+01:50:24,528 --> 01:50:54,507
+Direction, which one?
+
+1125
+01:50:42,515 --> 01:50:45,235
+Rate of change means derivative, the value of derivative.
+
+1126
+01:50:45,455 --> 01:50:48,855
+Okay, because derivative is the rate of a change of a function.
+
+1127
+01:50:49,275 --> 01:50:52,895
+Because we divide the change of the function with the increment.
+
+1128
+01:50:53,955 --> 01:50:55,515
+So it's a rate of change.
+
+1129
+01:50:56,235 --> 01:51:00,315
+So here it says rate of change means the value of the derivative.
+
+1130
+01:51:00,495 --> 01:51:01,095
+Don't forget.
+
+1131
+01:51:01,675 --> 01:51:03,715
+That's why because we have these commands.
+
+1132
+01:51:04,315 --> 01:51:06,915
+Because once we have a maximum value of a derivative,
+
+1133
+01:51:06,915 --> 01:51:10,675
+we said that so f increases most rapidly.
+
+1134
+01:51:10,675 --> 01:51:15,555
+f increases so much in positive form or negative form,
+
+1135
+01:51:15,775 --> 01:51:17,475
+according to the value of the derivative.
+
+1136
+01:51:18,036 --> 01:51:20,215
+That's why the derivative is the rate of a change.
+
+1137
+01:51:20,615 --> 01:51:22,255
+Okay, don't forget this.
+
+1138
+01:51:22,375 --> 01:51:23,215
+This is important.
+
+1139
+01:51:23,975 --> 01:51:27,635
+And so in a directional derivative,
+
+1140
+01:51:28,135 --> 01:51:31,775
+in which direction f increases most rapidly?
+
+1141
+01:51:33,235 --> 01:51:36,095
+In the same direction with the gradient f, isn't it?
+
+1142
+01:51:36,855 --> 01:51:37,135
+Yes.
+
+1143
+01:51:37,135 --> 01:51:40,735
+When the direction is in the same direction with the gradient f,
+
+1144
+01:51:40,975 --> 01:51:45,335
+the maximum value, that means the maximum rate of change happens.
+
+1145
+01:51:45,695 --> 01:51:49,015
+And also f changes positively most rapidly.
+
+1146
+01:51:49,895 --> 01:51:53,095
+And once we have the just opposite direction,
+
+1147
+01:51:54,235 --> 01:51:57,495
+f decreases most rapidly means f has the,
+
+1148
+01:51:58,076 --> 01:52:02,175
+again, the big change, but in negative direction.
+
+1149
+01:52:02,175 --> 01:52:03,315
+Okay.
+
+1150
+01:52:04,335 --> 01:52:07,036
+So let's see which directions they are.
+
+1151
+01:52:07,036 --> 01:52:07,355
+Okay.
+
+1152
+01:52:07,355 --> 01:52:09,135
+So let's see which directions they are.
+
+1153
+01:52:09,135 --> 01:52:11,135
+Okay.
+
+1154
+01:52:11,135 --> 01:52:15,135
+So let's see which directions they are.
+
+1155
+01:52:15,135 --> 01:52:16,135
+Okay.
+
+1156
+01:52:16,135 --> 01:52:20,135
+So let's see which directions they are.
+
+1157
+01:52:20,135 --> 01:52:21,135
+Okay.
+
+1158
+01:52:21,135 --> 01:52:23,135
+So let's see which directions they are.
+
+1159
+01:52:23,135 --> 01:52:24,135
+Okay.
+
+1160
+01:52:24,135 --> 01:52:32,135
+So let's see which directions they are.
+
+1161
+01:52:12,916 --> 01:52:42,916
+Bu, bu
+
+1162
+01:52:42,916 --> 01:52:44,936
+in this question. Don't forget.
+
+1163
+01:52:47,235 --> 01:52:49,176
+Now, are you okay? Do you understand it?
+
+1164
+01:52:57,908 --> 01:52:58,968
+Okay, thank you.
+
+1165
+01:53:08,564 --> 01:53:10,564
+Ve devam edelim.
+
+1166
+01:53:10,564 --> 01:53:16,564
+I think we are okay with the meaning of the direction derivative.
+
+1167
+01:53:16,564 --> 01:53:20,564
+And the value of it.
+
+1168
+01:53:20,564 --> 01:53:24,564
+Next, the important thing is
+
+1169
+01:53:24,564 --> 01:53:30,564
+the some steps about using gradient vector.
+
+1170
+01:53:30,564 --> 01:53:33,564
+That means when do we need the gradient vector?
+
+1171
+01:53:33,564 --> 01:53:37,564
+Gradient vector is firstly used for evaluating the direction derivative.
+
+1172
+01:53:37,564 --> 01:53:41,564
+Secondly, for writing tangent planes and normal lines.
+
+1173
+01:53:41,564 --> 01:53:46,564
+Because gradient is always normal to the curve, normal to tangent plane,
+
+1174
+01:53:46,564 --> 01:53:49,564
+and parallel to normal line.
+
+1175
+01:53:49,564 --> 01:53:53,564
+That's why gradient vector is very very useful and very important.
+
+1176
+01:53:53,564 --> 01:53:58,564
+For writing the direction derivative and also tangent planes and normal lines,
+
+1177
+01:53:58,564 --> 01:54:01,564
+don't forget this is very important.
+
+1178
+01:54:01,564 --> 01:54:03,564
+First, the RIT definition.
+
+1179
+01:54:03,564 --> 01:54:05,564
+The tangent plane.
+
+1180
+01:54:05,564 --> 01:54:09,564
+We are on three dimensional space.
+
+1181
+01:54:09,564 --> 01:54:11,564
+That's why we are talking about tangent planes.
+
+1182
+01:54:11,564 --> 01:54:18,564
+In the previous one, we were talking about tangent lines because on R square we are working.
+
+1183
+01:54:18,564 --> 01:54:24,564
+But now we have a function of three variables.
+
+1184
+01:54:24,564 --> 01:54:27,564
+And we are on R cube.
+
+1185
+01:54:27,564 --> 01:54:29,564
+Look.
+
+1186
+01:54:29,564 --> 01:54:34,564
+The tangent plane at the point P0 on the level surface.
+
+1187
+01:54:34,564 --> 01:54:37,564
+Level surface again, not the level curve.
+
+1188
+01:54:37,564 --> 01:54:39,564
+Be careful. Level surface.
+
+1189
+01:54:39,564 --> 01:54:50,564
+When fx y z is equal to c of a differentiable function f is the plane through P0 normal to gradient f.
+
+1190
+01:54:50,564 --> 01:54:52,564
+How can I make you understand?
+
+1191
+01:54:52,564 --> 01:54:53,564
+Like this one.
+
+1192
+01:54:53,564 --> 01:54:56,564
+This is a level surface.
+
+1193
+01:54:56,564 --> 01:55:03,564
+Level surface of fx y z equal to c.
+
+1194
+01:55:03,564 --> 01:55:06,564
+And this part is the tangent plane.
+
+1195
+01:55:06,564 --> 01:55:12,564
+And we know that gradient f is always normal to tangent plane.
+
+1196
+01:55:12,564 --> 01:55:14,564
+Normal to level surface.
+
+1197
+01:55:14,564 --> 01:55:17,564
+That's why this is gradient f.
+
+1198
+01:55:17,564 --> 01:55:19,564
+Normal to the plane.
+
+1199
+01:55:19,564 --> 01:55:25,564
+And just remember to write in the plane equation in space we need a normal direction.
+
+1200
+01:55:25,564 --> 01:55:27,564
+That's why gradient is very important.
+
+1201
+01:55:27,564 --> 01:55:33,564
+So tangent plane is this.
+
+1202
+01:55:33,564 --> 01:55:35,564
+This white plane.
+
+1203
+01:55:35,564 --> 01:55:36,564
+This one.
+
+1204
+01:55:36,564 --> 01:55:41,564
+This curved part is the level surface.
+
+1205
+01:55:41,564 --> 01:55:42,564
+fx y z equal to c.
+
+1206
+01:55:42,564 --> 01:55:45,564
+This white plane is tangent plane.
+
+1207
+01:55:45,564 --> 01:55:50,564
+Tangent plane is a plane such that which is tangent to a surface at a point.
+
+1208
+01:55:50,564 --> 01:55:58,564
+That's why at that point gradient is orthogonal or vertical or normal to that plane.
+
+1209
+01:55:58,564 --> 01:56:01,564
+And the normal line.
+
+1210
+01:56:01,564 --> 01:56:04,564
+Normal line is on the same direction with the gradient f.
+
+1211
+01:56:04,564 --> 01:56:12,564
+So the normal line of the surface p0 is the line through to p0 and parallel to gradient f.
+
+1212
+01:56:12,564 --> 01:56:14,564
+Having the same direction.
+
+1213
+01:56:14,564 --> 01:56:21,564
+That's why again just think writing to write a line equation in space we need a parallel direction.
+
+1214
+01:56:21,564 --> 01:56:29,564
+At the same time gradient f is a parallel direction with the normal line of a surface at a point.
+
+1215
+01:56:29,564 --> 01:56:33,564
+That's why in both of them for writing tangent planes and normal lines.
+
+1216
+01:56:33,564 --> 01:56:42,564
+We will use always the gradient vector at a specific point where we have the tangent plane and where we have the normal line.
+
+1217
+01:56:42,564 --> 01:56:46,564
+At one specific point we have these cases.
+
+1218
+01:56:46,564 --> 01:56:56,564
+The gradient f is orthogonal to velocity vector of every smooth curve in the surface through p0.
+
+1219
+01:56:56,564 --> 01:57:01,564
+So the gradient f is orthogonal to the surface through p0.
+
+1220
+01:56:58,676 --> 01:57:28,676
+Veyelisiyeti ve v1 ve v2'ye görebilecek ve v1 ve v2'ye görebilecek ve v1'ye görebilecek ve v1'ye görebilecek ve v1'ye görebilecek ve v1'ye görebilecek ve v1'ye görebilecek ve v1'ye görebilecek ve v1'ye görebilecek ve v1'ye görebilecek ve v1'ye görebilecek ve v1'ye görebilecek ve v1'ye görebilecek ve v1'ye görebilecek ve v1'ye görebilecek ve v1'ye görebilecek ve v1'ye görebilecek ve v1'ye görebilecek ve v1'ye görebilecek ve v1'ye görebilecek ve v1'ye görebilecek ve v1'ye görebilecek ve v1'ye görebilecek ve v1'
+
+1221
+01:57:28,676 --> 01:57:58,676
+ve v1'ye görebilecek ve v1'ye görebilecek ve v1'ye görebilecek ve v1'ye görebilecek ve v1'ye görebilecek ve v1'ye görebilecek ve v1'ye görebilecek ve v1'ye görebilecek ve v1'ye görebilecek ve v1'ye görebilecek ve v1'ye görebilecek ve v1'ye görebilecek ve v1'ye görebilecek ve v1'ye görebilecek ve v1'ye görebilecek ve v1'ye görebilecek ve v1'ye görebilecek ve v1'ye görebilecek ve v1'ye görebilecek ve v1'ye görebilecek ve v1'ye görebilecek ve v1'ye görebilecek ve v1'ye görebilecek ve v1'ye görebilecek ve v1'ye
+
+1222
+01:57:58,676 --> 01:58:09,916
+which is gradient vector because for this tangent plane for this plane we need a normal direction and this normal direction is always easily obtained by the gradient of f
+
+1223
+01:58:09,916 --> 01:58:24,436
+so once we have the gradient of f having the components fx fy fz that's why such a tangent plane equation we have at the point fx p0 x minus x0
+
+1224
+01:58:24,436 --> 01:58:53,856
+fx p0 y minus y0 fz p0 z minus z0 equal to 0 is the tangent plane equation what about normal line normal line at p0 having the same direction with the gradient f and remember parallel to be used for writing the line equation in space through a point that's why we have such a way of definition parametric definition of the normal line
+
+1225
+01:58:54,436 --> 01:59:11,076
+x0 through the point x0 through the point x0 y0 z0 parallel direction having the components fx p0 fx p0 fz p0 so xs x0 plus fx p0 t y is y0 plus fx p0 t
+
+1226
+01:59:11,076 --> 01:59:21,796
+that is z0 plus fz p0 times t is the normal line equation of the level surface at the specific point p0
+
+1227
+01:59:26,804 --> 01:59:27,804
+For example,
+
+1228
+01:59:32,115 --> 01:59:36,735
+It says, find the tangent plane and normal line of the surface.
+
+1229
+01:59:37,216 --> 01:59:43,555
+F, X0 plus, Y0 plus, that's minus 9 at the point P0, 1, 2, 4.
+
+1230
+01:59:44,996 --> 01:59:51,036
+First thing, this surface we have, of course, in three variables.
+
+1231
+01:59:53,395 --> 01:59:56,895
+Tangent plane, just think of the surface we have.
+
+1232
+01:59:57,515 --> 02:00:00,416
+And you have a point, at that point you have a tangent plane.
+
+1233
+02:00:02,115 --> 02:00:05,576
+You are on a three-dimensional space, on R-cube you are.
+
+1234
+02:00:08,136 --> 02:00:12,855
+Tangent plane equation, we need, and also normal line equation.
+
+1235
+02:00:13,355 --> 02:00:14,876
+For plane equation, what do you need?
+
+1236
+02:00:15,435 --> 02:00:17,456
+Normal direction and a point.
+
+1237
+02:00:17,975 --> 02:00:18,935
+Point is given.
+
+1238
+02:00:19,456 --> 02:00:21,355
+What will be the normal direction?
+
+1239
+02:00:22,136 --> 02:00:23,855
+Of course, gradient vector.
+
+1240
+02:00:24,475 --> 02:00:31,935
+Gradient vector, because gradient vector of a surface at any point is vertical.
+
+1241
+02:00:32,115 --> 02:00:38,235
+Normal or orthogonal to the surface and tangent plane.
+
+1242
+02:00:39,195 --> 02:00:43,775
+So, normal of the tangent plane will be gradient.
+
+1243
+02:00:44,315 --> 02:00:49,855
+So, please, evaluate gradient at that point and write the tangent plane equation.
+
+1244
+02:00:49,855 --> 02:00:50,855
+So, let's see.
+
+1245
+02:00:50,855 --> 02:01:07,235
+Let's see.
+
+1246
+02:02:44,467 --> 02:02:45,787
+Oh, thank you [öğrenci].
+
+1247
+02:02:48,347 --> 02:02:49,148
+Anyone else?
+
+1248
+02:02:50,028 --> 02:02:59,547
+We get first gradient, and then with the components of gradient, writing the normal and the tangent plane equation with the 0.124.
+
+1249
+02:03:11,412 --> 02:03:12,351
+Anyone else?
+
+1250
+02:03:13,612 --> 02:03:15,152
+Should I wait for you or continue?
+
+1251
+02:03:30,547 --> 02:03:32,768
+Okay, so let's look.
+
+1252
+02:03:35,207 --> 02:03:44,688
+I think that such a surface you have, okay, because that is 9 minus x square minus y square, a paraboloid, okay, in R cube.
+
+1253
+02:03:46,207 --> 02:03:51,047
+And think that at a point, you have a tangent plane.
+
+1254
+02:03:51,608 --> 02:03:56,127
+This plane is tangent to this paraboloid at P0 only.
+
+1255
+02:03:56,307 --> 02:03:59,347
+That means the intersection between them only at P0.
+
+1256
+02:03:59,347 --> 02:04:11,188
+At P0, you have a plane, tangent plane, and normal line is passing through that point P0 and also the intersection with the surface at P0, okay.
+
+1257
+02:04:12,327 --> 02:04:20,367
+And for tangent plane, the normal line also having the same direction with the gradient F.
+
+1258
+02:04:20,447 --> 02:04:22,307
+That's why gradient F we need.
+
+1259
+02:04:22,307 --> 02:04:24,587
+First, look up for the gradient F.
+
+1260
+02:04:26,268 --> 02:04:29,747
+X square, y square, z minus 9 is equal to 0.
+
+1261
+02:04:30,068 --> 02:04:35,367
+In such cases, please put all the variables on one side and then evaluate the gradient F, okay.
+
+1262
+02:04:35,367 --> 02:04:43,427
+2xi, 2y, j, 2x, 2y, and 1 for components of the gradient F.
+
+1263
+02:04:43,527 --> 02:04:48,387
+At 1, 2, 4, it results 2i plus 4j plus k.
+
+1264
+02:04:48,387 --> 02:04:49,387
+Okay, okay.
+
+1265
+02:04:49,747 --> 02:04:56,568
+So the tangent plane is, this is the normal of the plane, normal of the plane, and this is the point of the plane.
+
+1266
+02:04:57,507 --> 02:05:00,387
+So 2 times x minus 1.
+
+1267
+02:05:00,387 --> 02:05:04,188
+4 times y minus 2.
+
+1268
+02:05:05,188 --> 02:05:14,927
+And 1 times z minus 4 is equal to 0 is the tangent plane equation of the surface at the point 1 to 4.
+
+1269
+02:05:15,547 --> 02:05:17,228
+2x plus 4y plus.
+
+1270
+02:05:17,347 --> 02:05:18,487
+That is equal to 14.
+
+1271
+02:05:18,487 --> 02:05:48,467
+So 2x plus.
+
+1272
+02:05:29,587 --> 02:05:30,307
+Are you okay?
+
+1273
+02:05:32,387 --> 02:05:33,907
+This is clear, I think.
+
+1274
+02:05:34,427 --> 02:05:35,608
+What about the normal line?
+
+1275
+02:05:36,447 --> 02:05:41,268
+For normal line equation, parallel direction of the normal line is again gradient.
+
+1276
+02:05:41,768 --> 02:05:44,587
+Again, you will use, in both of them, you will use gradient f.
+
+1277
+02:05:45,407 --> 02:05:47,047
+Gradient f and that point.
+
+1278
+02:05:47,627 --> 02:05:50,167
+Let's think the normal line equation.
+
+1279
+02:05:51,547 --> 02:05:55,127
+X is x0 plus 2t.
+
+1280
+02:05:55,327 --> 02:05:56,507
+1 plus 2t.
+
+1281
+02:05:56,507 --> 02:05:59,827
+Y is y0 plus 2t.
+
+1282
+02:06:00,007 --> 02:06:01,927
+That means 4 plus 2t.
+
+1283
+02:06:02,148 --> 02:06:07,228
+That is 4 plus 1t.
+
+1284
+02:06:08,268 --> 02:06:09,827
+1 plus 2t.
+
+1285
+02:06:10,087 --> 02:06:11,268
+2 plus 4t.
+
+1286
+02:06:11,527 --> 02:06:12,827
+4 plus t.
+
+1287
+02:06:13,547 --> 02:06:19,407
+Are the parametric equations of the normal line of the surface at the point P0.
+
+1288
+02:06:20,407 --> 02:06:21,307
+Like this.
+
+1289
+02:06:27,444 --> 02:06:41,504
+Is it clear? It's so easy. You are just writing a plane equation and a line equation, and the normal and the parallel direction in them respectively are only great enough. Point is already given, so it's so easy, I think.
+
+1290
+02:06:44,384 --> 02:06:45,784
+Any question up to now?
+
+1291
+02:06:49,427 --> 02:06:54,768
+Orada, do you want me to wait for you? Orada, continue. Orada, repeat it.
+
+1292
+02:07:11,667 --> 02:07:11,987
+Ok.
+
+1293
+02:07:20,180 --> 02:07:28,800
+Şimdi, plana, tangen to a surface z, at x0, y0, fx, or x0, y0.
+
+1294
+02:07:30,260 --> 02:07:43,659
+Here, it means that, again, same formalization with the previous one, but only the problem is here, z is a function of x and y, not we have fx, y, z is equal to 0.
+
+1295
+02:07:44,240 --> 02:07:46,340
+This is the other form, but they are same, in fact.
+
+1296
+02:07:50,996 --> 02:08:20,996
+Yani, bu iki variable function, yani bu, bu
+
+1297
+02:08:20,996 --> 02:08:39,076
+Bu, bu
+
+1298
+02:08:42,100 --> 02:08:43,100
+Just write them.
+
+1299
+02:08:43,579 --> 02:08:47,900
+In that case, just think, fx, y minus z z equal to zero.
+
+1300
+02:08:48,560 --> 02:08:54,100
+So first component fx, second component f1, third one will be minus z.
+
+1301
+02:08:55,400 --> 02:09:00,160
+Because of having z on the other part, the fd z will be minus one.
+
+1302
+02:09:00,579 --> 02:09:03,680
+That's why such a formalization you will have there all same.
+
+1303
+02:09:05,579 --> 02:09:07,160
+I hope you understand me.
+
+1304
+02:09:21,971 --> 02:09:23,231
+For example, this question.
+
+1305
+02:09:29,140 --> 02:09:41,220
+Find a tangent plane, find a plane, tangential surface. Z is equal to x, cosin y, minus y, times e to x, at p, 0, 0, 0, 0.
+
+1306
+02:09:42,020 --> 02:09:47,220
+Now, you see three variables, I'm sorry, three components here, that means you are in r cube.
+
+1307
+02:09:48,160 --> 02:09:55,900
+What will you do? That means your function, including three variables and gradient, df, dx, df, dy, df, dz, you need to write.
+
+1308
+02:09:55,900 --> 02:10:01,160
+But here, z is a function of x and y, and you will have dz, dx, and dz, dy.
+
+1309
+02:10:01,880 --> 02:10:11,000
+In that case, you need to just put the z to the other form, other part, and write x, cosin y, minus y, e to x, minus z, z is equal to 0.
+
+1310
+02:10:11,460 --> 02:10:16,300
+And then include and get an equation including three variables. Okay, I mean this.
+
+1311
+02:10:17,180 --> 02:10:21,200
+And so get the derivatives and then apply this point and the gradient.
+
+1312
+02:10:22,539 --> 02:10:23,619
+Will you do it for me?
+
+1313
+02:10:40,916 --> 02:10:45,235
+İlk olarak, bu yi'nin bir parçası var ve bu parçası var ve bu parçası var ve bu parçası var.
+
+1314
+02:10:46,756 --> 02:10:50,756
+Ve bu parçası var ve bu parçası var.
+
+1315
+02:10:51,076 --> 02:10:54,355
+Bu parçası var ve bu parçası var.
+
+1316
+02:11:16,948 --> 02:11:17,948
+Evet, tamam.
+
+1317
+02:11:19,948 --> 02:11:21,468
+Tamam, [öğrenci], thank you.
+
+1318
+02:11:21,468 --> 02:11:22,307
+Anyone else?
+
+1319
+02:11:30,323 --> 02:11:32,323
+Evet, teşekkür ederim.
+
+1320
+02:11:32,323 --> 02:11:34,323
+Çok teşekkür ederim.
+
+1321
+02:11:34,323 --> 02:11:38,323
+Evet, tamamen doğru.
+
+1322
+02:11:38,323 --> 02:11:44,323
+Fx, bu soru, bu formalizasyonla ilgili.
+
+1323
+02:12:00,323 --> 02:12:12,323
+Üç değişkenli bir fonksiyonumuz var ama onun sabit bir sayıya eşit olduğu zamanki yüzeyler üzerinde konuşuyoruz.
+
+1324
+02:12:12,323 --> 02:12:21,323
+Yani biz aslında dört boyutlu bir uzayda bir tanımlı fonksiyon üzerinden onun seviye yüzeyleri üzerinde çalışıyoruz.
+
+1325
+02:12:21,323 --> 02:12:24,323
+Yani seviye yüzeylerimiz üç boyutlu uzayda.
+
+1326
+02:12:24,323 --> 02:12:31,323
+Onların tangent plane'leri ve normal doğrular üzerine bir şeyler yapmaya çalışıyoruz ve gradini kullanıyoruz.
+
+1327
+02:12:31,323 --> 02:12:45,323
+O yüzden burada fx, z, z eşittir c demek, mesela fx, z eşittir w gibi üç değişkenli bir fonksiyonun c'ye eşit olduğu zamanki yüzey eğrisinden bahsediyor aslında.
+
+1328
+02:12:45,323 --> 02:12:47,323
+Seviye yüzeyinden bahsediyor.
+
+1329
+02:12:47,323 --> 02:12:52,323
+Yani aslında dört boyutlu bir uzayda çizimi yapabiliriz üç değişkenli bir fonksiyonu.
+
+1330
+02:12:52,323 --> 02:12:54,323
+Dört boyutlu bir uzayda çizebiliriz.
+
+1331
+02:12:54,323 --> 02:12:56,323
+Öyle bir çizimimiz yok.
+
+1332
+02:12:57,323 --> 02:12:59,323
+Üç boyutlu bir uzaydayız.
+
+1333
+02:12:59,323 --> 02:13:08,323
+Çünkü üç boyutlu uzayda olduğumuz için bunu üç değişkenli bir fonksiyonun bir seviye yüzeyi olduğunu düşünüyoruz.
+
+1334
+02:13:08,323 --> 02:13:11,323
+Ama bu her zaman böyle olmak zorunda değil.
+
+1335
+02:13:11,323 --> 02:13:13,323
+Yani bizim şöyle bir şeyimiz de olabilir.
+
+1336
+02:13:13,323 --> 02:13:19,323
+İki boyutlu, iki değişkenli bir fonksiyonun görüntüsü yüzey olacaktır üç boyutlu uzayda.
+
+1337
+02:13:19,323 --> 02:13:23,323
+Yani bunun gibi mesela z eşittir dokuz eksi x kare eksi y kare.
+
+1338
+02:13:23,323 --> 02:13:26,323
+Bu fonksiyonun gösterdiği yüzey.
+
+1339
+02:13:26,323 --> 02:13:38,323
+Ama aslında bu z'i bir tarafa atıp bunu bir fonksiyon olarak düşündüğümüzde üç değişkenli bir fonksiyonun sıfıra eşit olduğu zamanki steviye yüzeyi olur.
+
+1340
+02:13:38,323 --> 02:13:49,323
+Sonuç olarak sizin üç boyutlu uzayda çalışırken yani tanjant düzlemler ve normal doğruları yazarken üç boyutlu uzaydasınız artık.
+
+1341
+02:13:49,323 --> 02:13:54,323
+O yüzden sizin gradiyeninizin üç birleşeni olacak, i, j, k olacak.
+
+1342
+02:13:54,323 --> 02:13:58,323
+Noktalarınız zaten üç noktayı içerecek.
+
+1343
+02:13:58,323 --> 02:14:00,323
+Üç tane komponent içerecektir.
+
+1344
+02:14:00,323 --> 02:14:02,323
+Üç birleşeni olacaktır.
+
+1345
+02:14:02,323 --> 02:14:05,323
+Bu yüzden buradan anlayacaksınız üç birleşeni var.
+
+1346
+02:14:05,323 --> 02:14:09,323
+Üç değişkenin olduğu bir denklem var veya iki bir denklem var.
+
+1347
+02:14:09,323 --> 02:14:13,323
+İki değişken bir tarafta, bir değişken bir tarafta ise hemen şunu düşüneceksiniz.
+
+1348
+02:14:13,323 --> 02:14:15,323
+Ben aslında üç boyutlu uzaydayım.
+
+1349
+02:14:15,323 --> 02:14:17,323
+Normal düzlemi yazacağım.
+
+1350
+02:14:17,323 --> 02:14:18,323
+Pardon.
+
+1351
+02:14:18,323 --> 02:14:22,323
+T düzleminin denklemini yazacağım ve normal doğrularının denklemini yazacağım.
+
+1352
+02:14:22,323 --> 02:14:24,323
+Yani ben aslında reküpteyim şu anda.
+
+1353
+02:14:24,323 --> 02:14:28,323
+O yüzden benim gradiyen vektörümün üç tane birleşeni olmak zorunda.
+
+1354
+02:14:28,323 --> 02:14:30,323
+E, j, k olmak zorunda.
+
+1355
+02:14:30,323 --> 02:14:32,323
+Ama size ne verilmiş?
+
+1356
+02:14:32,659 --> 02:14:35,739
+Bu böyle de verilmeyebilir, şöyle de verilebilir.
+
+1357
+02:14:36,220 --> 02:14:39,659
+İşte bu böyle verildiği zamanlar için bu açıklamalar var.
+
+1358
+02:14:39,659 --> 02:14:43,239
+Yani z eşittir fx y şeklinde verildiyse ne yaparız?
+
+1359
+02:14:43,619 --> 02:14:46,260
+Bütün bileşenleri bir tarafa atarız, bütün değişkenleri.
+
+1360
+02:14:46,800 --> 02:14:57,420
+Ve onu o zaman aslında 3 değişkenli ve 4 boyutlu uzayda bir yüzeyi olan bir eğrinin, bir fonksiyonun seviye yüzeyi olarak düşünürüz.
+
+1361
+02:14:57,519 --> 02:14:58,500
+O yüzden böyle oluyor.
+
+1362
+02:14:58,920 --> 02:14:59,920
+O zaman da ne olur?
+
+1363
+02:14:59,920 --> 02:15:05,319
+Z'i bir tarafa attığımızda ya Z'i ya bu tarafa atacaksınız ya F'i bu tarafa alacaksınız.
+
+1364
+02:15:05,319 --> 02:15:08,420
+O yüzden Z'i karşıya attığımızı düşünelim.
+
+1365
+02:15:08,619 --> 02:15:10,920
+fx y eksi z eşittir 0 olduğunu düşünelim.
+
+1366
+02:15:11,460 --> 02:15:12,599
+Fonksiyon bu hale gelecek.
+
+1367
+02:15:12,720 --> 02:15:15,960
+3 tane birleşken değişkenli ihtiyacımız var.
+
+1368
+02:15:16,239 --> 02:15:18,079
+Gradiyene 3 boyutlu yazabilmek için.
+
+1369
+02:15:18,539 --> 02:15:22,619
+O yüzden F'in X'e göre türevi, Y'ye göre türevi bir de Z'e göre türevi olması lazım.
+
+1370
+02:15:23,099 --> 02:15:23,960
+Büyük F düşünün.
+
+1371
+02:15:24,220 --> 02:15:25,199
+Hepsini bir tarafa attınız.
+
+1372
+02:15:25,760 --> 02:15:27,559
+X'e göre türevi, F'in X'e göre türevi.
+
+1373
+02:15:27,659 --> 02:15:28,619
+Y'ye göre, Y'ye göre.
+
+1374
+02:15:28,619 --> 02:15:29,619
+Z ne olacak?
+
+1375
+02:15:29,739 --> 02:15:30,199
+Eksi Z.
+
+1376
+02:15:30,300 --> 02:15:31,539
+Eksi Z'ten her zaman ne gelir?
+
+1377
+02:15:31,639 --> 02:15:32,119
+Eksi 1.
+
+1378
+02:15:32,680 --> 02:15:33,960
+O yüzden burası eksi 1.
+
+1379
+02:15:34,659 --> 02:15:35,599
+Bu denklem neden?
+
+1380
+02:15:35,739 --> 02:15:41,139
+X eksi x0, Y eksi x, Y 0, Z eksi z0 düzlem denklemi yazmaktan geliyor.
+
+1381
+02:15:41,659 --> 02:15:43,439
+Baştanın kat sayıları nereden geliyor?
+
+1382
+02:15:43,840 --> 02:15:45,019
+Normalin birleşenleri.
+
+1383
+02:15:45,319 --> 02:15:47,579
+Birinci birleşen, ikinci birleşen, üçüncü birleşen.
+
+1384
+02:15:47,579 --> 02:16:10,840
+Siz Z eşittir, F, X, Y şeklinde verilen bir yüzeyin bir noktadaki t düzenini yazarken de her zaman bu gradiyenin, daha doğrusu bu yüzeyin gradiyenin birleşenlerini kullanacağınız için yani bu denklemin X'e göre, Y'ye göre ve Z'e göre türevleri bu normalin birleşenlerini oluşturacağı için birincisi F, ikincisi F, Y ve Z'i karşıya attığımızı düşünerek eksi 1 olacaktır her zaman.
+
+1385
+02:16:10,840 --> 02:16:13,180
+Yani bu açıklama ekstra bir şey anlatmıyor.
+
+1386
+02:16:13,699 --> 02:16:22,880
+Sadece Z eşittir, X'e ve Y'ye bağlı verilirse hepsini bir tarafa attığınızda Z otomatikman eksi 1 geleceği için bu formalizasyon vardır.
+
+1387
+02:16:23,300 --> 02:16:27,460
+Bunu hiç bilmeseniz bile size bu şekilde verildiyse de ne yaparsınız?
+
+1388
+02:16:27,599 --> 02:16:29,119
+Hemen Z'i bu tarafa atacaksınız.
+
+1389
+02:16:29,619 --> 02:16:34,840
+O zaman birinci birleşenimiz F, ikinci birleşenimiz F'ye ama üçüncüsü her zaman eksi 1 gelecektir.
+
+1390
+02:16:35,739 --> 02:16:37,700
+Yani formülü hatırlamanıza gerekir.
+
+1391
+02:16:37,700 --> 02:16:41,280
+Sadece şunu bilin, normal için gradine ihtiyacım var.
+
+1392
+02:16:41,600 --> 02:16:43,299
+Normalim her zaman gradine F olacak.
+
+1393
+02:16:43,700 --> 02:16:44,559
+Noktam verilmiş.
+
+1394
+02:16:45,180 --> 02:16:47,200
+Bütün birleşenlere F, hepsini bir tarafa atayım.
+
+1395
+02:16:47,879 --> 02:16:49,159
+X, Y, Z bir arada olsun.
+
+1396
+02:16:49,539 --> 02:16:50,659
+Tek tek türevlerini alayım.
+
+1397
+02:16:51,119 --> 02:16:52,440
+Noktada türevlerini hesaplayayım.
+
+1398
+02:16:52,539 --> 02:16:55,539
+Yani bu benim gradiyan vektörümün birleşenleri aynı zamanda.
+
+1399
+02:16:55,899 --> 02:16:58,399
+Ve normal vektörüm.
+
+1400
+02:16:59,020 --> 02:17:00,399
+Gerisi de nokta var zaten.
+
+1401
+02:17:00,559 --> 02:17:01,340
+Normal biliniyor.
+
+1402
+02:17:01,440 --> 02:17:02,059
+Nokta biliniyor.
+
+1403
+02:17:02,200 --> 02:17:03,260
+Doğru denklemi yazmak.
+
+1404
+02:17:03,520 --> 02:17:03,739
+Pardon.
+
+1405
+02:17:04,239 --> 02:17:05,979
+Düzlem denklemi yazmak uzayda.
+
+1406
+02:17:07,700 --> 02:17:08,940
+Tamam mıyız?
+
+1407
+02:17:09,219 --> 02:17:13,159
+Eğer bu şekilde veriliyorsa hiç sıkıntı yok.
+
+1408
+02:17:15,059 --> 02:17:19,659
+Bu zaten üç değişkenli bir fonksiyon.
+
+1409
+02:17:20,119 --> 02:17:22,059
+Bunun yüzeyi dört boyutlu bir uzayda.
+
+1410
+02:17:22,280 --> 02:17:30,459
+Ama biz buna, bunun sıfıra eşit olduğu zamandaki yüzey, seviye yüzeyi üzerinde çalışıyoruz aslında.
+
+1411
+02:17:30,459 --> 02:17:34,000
+Umarım beni anladınız.
+
+1412
+02:17:35,000 --> 02:17:36,299
+O yüzden burada özel bir durum yok.
+
+1413
+02:17:36,440 --> 02:17:41,459
+Sadece demek istediğim, bütün değişkenleri bir tarafa topladığınızda, onu üç değişkenli yapmaya çalıştığınızda,
+
+1414
+02:17:42,200 --> 02:17:50,159
+Z'in kat sayısı da eksi Z olup da türevinden hep eksi bir geleceği için böyle bir formülüze edilmiş etmeseniz de aynı şey zaten.
+
+1415
+02:17:50,159 --> 02:17:53,879
+Siz bunu gördüğünüzde de Z'i bir tarafa atmanız lazım zaten.
+
+1416
+02:17:55,600 --> 02:17:56,200
+Tamam mıyız?
+
+1417
+02:17:56,619 --> 02:18:24,159
+Anlaştık mı?
+
+1418
+02:18:01,139 --> 02:18:02,479
+Özel bir durum yok yani.
+
+1419
+02:18:07,763 --> 02:18:09,923
+So, continue with the next exercise.
+
+1420
+02:18:12,083 --> 02:18:31,563
+It says, the surfaces, fx, y, z, this is a cylinder, x squared plus y squared is equal to 2 means, in space it's a cylinder, on cartesian plane it's a circle, and x plus z is equal to 4, it's a plane, yes.
+
+1421
+02:18:31,563 --> 02:18:39,003
+Meet in an ellipse, that means the intersection set of f and g is an ellipse.
+
+1422
+02:18:39,943 --> 02:18:46,783
+Find the parametric equations for the line tangent to ellipse at the point P0.
+
+1423
+02:18:51,572 --> 02:19:13,092
+İzlediğiniz için, bu yasın alın
+
+1424
+02:19:16,435 --> 02:19:17,435
+No need to write.
+
+1425
+02:19:17,895 --> 02:19:24,855
+Just think, which vector is orthogonal to or normal to ellipse surface?
+
+1426
+02:19:26,595 --> 02:19:27,935
+Ellipse equation.
+
+1427
+02:19:30,435 --> 02:19:35,835
+So how can we write the tangent plane equation of ellipse at P0?
+
+1428
+02:19:35,835 --> 02:19:37,235
+Do you have any idea?
+
+1429
+02:20:00,244 --> 02:20:01,504
+Let's see the solution.
+
+1430
+02:20:03,104 --> 02:20:03,444
+Look.
+
+1431
+02:20:04,444 --> 02:20:05,524
+This is the cylinder.
+
+1432
+02:20:07,304 --> 02:20:07,604
+Okay.
+
+1433
+02:20:07,744 --> 02:20:09,804
+X squared plus y squared is equal to t.
+
+1434
+02:20:10,244 --> 02:20:13,024
+This is the plane x plus z is equal to 4.
+
+1435
+02:20:13,024 --> 02:20:14,623
+And this is the intersection.
+
+1436
+02:20:15,844 --> 02:20:18,764
+Intersection of them along an ellipse.
+
+1437
+02:20:20,224 --> 02:20:23,484
+If we know the ellipse equation, we can get the gradient g.
+
+1438
+02:20:23,924 --> 02:20:24,344
+I'm sorry.
+
+1439
+02:20:24,684 --> 02:20:26,244
+Gradient of ellipse at a point.
+
+1440
+02:20:26,984 --> 02:20:28,724
+But no, it's not written.
+
+1441
+02:20:28,864 --> 02:20:29,404
+It's not given.
+
+1442
+02:20:29,404 --> 02:20:40,224
+So while using the gradient of f and g, gradient of ellipse, I'm sorry, gradient of plane and gradient of cylinder,
+
+1443
+02:20:40,224 --> 02:20:45,244
+we will just try to find the gradient of ellipse at that point.
+
+1444
+02:20:46,463 --> 02:20:51,764
+Of course, tangent line is orthogonal to both gradient f and gradient g.
+
+1445
+02:20:54,344 --> 02:20:56,484
+The tangent line of the ellipse.
+
+1446
+02:20:56,484 --> 02:21:03,644
+So, the gradient of ellipse will be orthogonal to both of them.
+
+1447
+02:21:04,264 --> 02:21:09,024
+So, we can evaluate it by the cross product of gradient f and gradient g.
+
+1448
+02:21:09,024 --> 02:21:18,844
+So, we can see.
+
+1449
+02:21:15,059 --> 02:21:16,840
+Do you understand this geometrically?
+
+1450
+02:21:30,195 --> 02:21:36,515
+ve tanjant line, tanjant line, tanjant line of the ellipse,
+
+1451
+02:21:38,275 --> 02:21:40,876
+both orthogonal, graden f and gradient g.
+
+1452
+02:21:41,115 --> 02:21:45,275
+So parallel to cross production of them.
+
+1453
+02:21:48,476 --> 02:21:50,716
+We need graden f and gradient g firstly,
+
+1454
+02:21:51,915 --> 02:21:53,595
+cylinder and plane.
+
+1455
+02:21:53,595 --> 02:21:58,355
+And then,
+
+1456
+02:21:58,755 --> 02:22:00,755
+we need to cross product
+
+1457
+02:22:00,755 --> 02:22:04,615
+of graden f and graden g.
+
+1458
+02:22:05,835 --> 02:22:08,915
+So tangent line is the same direction with it.
+
+1459
+02:22:10,456 --> 02:22:12,015
+Tangent line of the ellipse.
+
+1460
+02:22:13,556 --> 02:22:13,736
+So,
+
+1461
+02:22:14,556 --> 02:22:15,275
+point is given.
+
+1462
+02:22:15,915 --> 02:22:16,595
+Point was
+
+1463
+02:22:16,595 --> 02:22:18,236
+1, 1, and 3.
+
+1464
+02:22:19,736 --> 02:22:21,796
+And for line equations, you remember
+
+1465
+02:22:21,796 --> 02:22:23,796
+parallel direction and the point
+
+1466
+02:22:23,796 --> 02:22:23,816
+parallel direction and the point.
+
+1467
+02:22:23,816 --> 02:22:25,155
+Parallel direction is this.
+
+1468
+02:22:25,976 --> 02:22:26,615
+The point is
+
+1469
+02:22:26,615 --> 02:22:27,736
+1, 1, 3.
+
+1470
+02:22:28,255 --> 02:22:28,536
+So,
+
+1471
+02:22:28,796 --> 02:22:29,495
+this is the
+
+1472
+02:22:29,495 --> 02:22:31,175
+tangent line equation
+
+1473
+02:22:31,175 --> 02:22:33,716
+of the ellipse at the point P0.
+
+1474
+02:22:33,716 --> 02:22:33,876
+So,
+
+1475
+02:22:58,164 --> 02:23:06,084
+Do you understand this question, this solution? Do you want to repeat it for you? Are you okay up to now?
+
+1476
+02:23:13,075 --> 02:23:16,495
+Okay, so let's continue.
+
+1477
+02:23:17,855 --> 02:23:21,035
+This is the last part of the gradient.
+
+1478
+02:23:21,635 --> 02:23:23,195
+Again, we are working on gradient.
+
+1479
+02:23:23,395 --> 02:23:27,175
+As you see, gradient is used first for directional derivatives,
+
+1480
+02:23:27,175 --> 02:23:30,315
+secondly, for writing tangent plane and normal line equation,
+
+1481
+02:23:30,455 --> 02:23:36,295
+and thirdly, gradient is used for estimating change in f in a specific direction.
+
+1482
+02:23:38,215 --> 02:23:39,595
+That means the differential.
+
+1483
+02:23:45,683 --> 02:23:49,583
+To estimate the change in the value of a differentiable function f,
+
+1484
+02:23:50,483 --> 02:23:56,804
+would we move a small distance ds from a point p0 in a particular direction u,
+
+1485
+02:23:58,023 --> 02:24:01,943
+u is the formula df. df is the change of function.
+
+1486
+02:24:03,724 --> 02:24:11,063
+Gradient f, p0 times u times ds. Gradient f at p0 times u is the directional derivative.
+
+1487
+02:24:11,063 --> 02:24:18,143
+ds is the distance increment because we are moving in a specific direction.
+
+1488
+02:24:18,783 --> 02:24:25,623
+We were at the point p0 and moved to another point but along the vector in the direction of vector u.
+
+1489
+02:24:26,183 --> 02:24:31,483
+So this is the change of a function resulting in this move.
+
+1490
+02:24:39,827 --> 02:24:41,108
+Let's make an example.
+
+1491
+02:24:42,907 --> 02:24:55,787
+It says, estimate how much the value of f will change if the point p moves 0.1 unit from p0 to p1 straight toward.
+
+1492
+02:25:07,827 --> 02:25:10,268
+So, let's think, what do we need for ds?
+
+1493
+02:25:11,868 --> 02:25:12,887
+Answer, df.
+
+1494
+02:25:13,368 --> 02:25:16,768
+ds is given, ds, the increment, 0.1.
+
+1495
+02:25:18,127 --> 02:25:19,927
+So, direction derivative we need.
+
+1496
+02:25:20,948 --> 02:25:21,807
+What direction derivative?
+
+1497
+02:25:22,188 --> 02:25:24,787
+Gradient f times vector.
+
+1498
+02:25:25,368 --> 02:25:27,567
+But here, in this question, no vector is given.
+
+1499
+02:25:27,727 --> 02:25:28,268
+What do you think?
+
+1500
+02:25:30,147 --> 02:25:36,907
+The move must be along a specific direction, and it says from p0 to p1 straight toward.
+
+1501
+02:25:36,907 --> 02:25:38,387
+What does it mean?
+
+1502
+02:25:41,327 --> 02:25:46,028
+How can we get a vector of this direction, of this move?
+
+1503
+02:26:18,355 --> 02:26:19,716
+Don't you have an idea?
+
+1504
+02:26:22,995 --> 02:26:25,956
+We need a vector, but we don't have.
+
+1505
+02:26:26,536 --> 02:26:27,155
+What to do?
+
+1506
+02:26:28,575 --> 02:26:30,515
+P0 to P1 straight word.
+
+1507
+02:26:50,355 --> 02:26:50,976
+Testi.
+
+1508
+02:26:55,443 --> 02:26:56,984
+Evet, [öğrenci], I think so.
+
+1509
+02:26:58,323 --> 02:27:01,503
+Because it says P0 to P1, straight.
+
+1510
+02:27:02,403 --> 02:27:07,083
+So we need to write a vector P0 to P1, so P0 to P1 vector.
+
+1511
+02:27:08,384 --> 02:27:09,123
+Yes, thank you.
+
+1512
+02:27:11,083 --> 02:27:11,683
+Look.
+
+1513
+02:27:13,763 --> 02:27:20,644
+We first find the derivative of f at P0 in the direction of the vector P0 to P1.
+
+1514
+02:27:20,763 --> 02:27:23,224
+Yes, it's 2i plus j minus 2k.
+
+1515
+02:27:23,224 --> 02:27:26,503
+P1 minus P0.
+
+1516
+02:27:26,503 --> 02:27:26,564
+P0.
+
+1517
+02:27:32,275 --> 02:27:36,655
+2-0, 2-1, 2-0.
+
+1518
+02:27:37,275 --> 02:27:41,015
+So we have this 2, 1 and minus 2 components.
+
+1519
+02:27:42,136 --> 02:27:46,195
+This is the direction of the mu.
+
+1520
+02:27:46,595 --> 02:27:47,716
+But it must be unit.
+
+1521
+02:27:47,995 --> 02:27:52,015
+Before writing the formalization, don't forget to make it unit.
+
+1522
+02:27:52,195 --> 02:27:53,435
+It's not the unit vector.
+
+1523
+02:27:53,935 --> 02:27:55,216
+And it has the land 3.
+
+1524
+02:27:55,855 --> 02:27:56,935
+So divide with 3.
+
+1525
+02:27:57,595 --> 02:28:01,255
+2 over 3i minus 1 over 3j minus 2 over 3k.
+
+1526
+02:28:01,255 --> 02:28:04,316
+is the direction of the small.
+
+1527
+02:28:05,896 --> 02:28:07,615
+Secondly, we need gradient f.
+
+1528
+02:28:08,976 --> 02:28:10,636
+Evaluate the direction of the derivative.
+
+1529
+02:28:10,835 --> 02:28:13,896
+And then lastly, multiply with increment.
+
+1530
+02:28:15,775 --> 02:28:17,115
+What is gradient f?
+
+1531
+02:28:18,335 --> 02:28:22,115
+Grad gradient f is, f is given here, df dx.
+
+1532
+02:28:22,235 --> 02:28:23,376
+df dy, df dz.
+
+1533
+02:28:24,335 --> 02:28:27,235
+df dx, y times cosine x.
+
+1534
+02:28:28,255 --> 02:28:31,175
+df dy, sine x plus 2z.
+
+1535
+02:28:31,255 --> 02:28:33,675
+df dx, dz, 2y.
+
+1536
+02:28:34,255 --> 02:28:34,575
+Okay.
+
+1537
+02:28:35,255 --> 02:28:37,136
+At the point 0, 1, 0.
+
+1538
+02:28:39,095 --> 02:28:41,296
+Yes, it's i plus 2k.
+
+1539
+02:28:41,835 --> 02:28:43,175
+j results 0.
+
+1540
+02:28:44,556 --> 02:28:44,995
+And done.
+
+1541
+02:28:45,735 --> 02:28:47,115
+The formula says that.
+
+1542
+02:28:47,216 --> 02:28:49,255
+Gradient f times u times ds.
+
+1543
+02:28:49,355 --> 02:28:51,915
+So just make, firstly, this dot product.
+
+1544
+02:28:51,915 --> 02:28:55,876
+These vectors will be multiplied.
+
+1545
+02:28:56,296 --> 02:28:57,655
+This scalar multiplication.
+
+1546
+02:28:58,216 --> 02:29:18,015
+So it results minus 2 over 3.
+
+1547
+02:29:03,379 --> 02:29:08,659
+And then lastly, this is the directional derivative of this function.
+
+1548
+02:29:10,420 --> 02:29:16,819
+Multiply with the distance increment, you will have is the approximately the change of the function.
+
+1549
+02:29:17,459 --> 02:29:19,699
+That means differential of the function.
+
+1550
+02:29:34,195 --> 02:29:47,835
+I think it's okay. It's easy. And it's finished here. Wait for me. The next topic will be linearization.
+
+1551
+02:29:51,956 --> 02:29:58,956
+vekikli
+
+1552
+02:29:57,716 --> 02:29:59,015
+Any question after now?
+
+1553
+02:30:23,700 --> 02:30:35,520
+Are you okay up to now any question? We have finished the chain rule and continue with the direction derivative and gradient vectors and applications of gradient vectors.
+
+1554
+02:30:35,520 --> 02:30:41,480
+And now we come up to linearization and differentials to use the approximations for several variable function.
+
+1555
+02:30:43,040 --> 02:30:51,720
+Okay, so we will have the introduction part for this topic today and tomorrow probably continue with the exercises.
+
+1556
+02:30:51,720 --> 02:30:57,140
+And then maybe the other exercises or the new topic. I haven't decided yet.
+
+1557
+02:30:57,140 --> 02:30:58,140
+Okay.
+
+1558
+02:31:00,819 --> 02:31:01,520
+Let's walk.
+
+1559
+02:31:11,123 --> 02:31:14,724
+Do you remember the linearization of single variable functions?
+
+1560
+02:31:16,804 --> 02:31:19,843
+In Mathematik 1 we did it, linearization.
+
+1561
+02:31:22,884 --> 02:31:26,644
+And we were approximation, approximate calculus for,
+
+1562
+02:31:29,123 --> 02:31:34,164
+that means we use linearization and differentials for approximate calculus. Do you remember this?
+
+1563
+02:31:34,164 --> 02:31:35,683
+For single variable case of it.
+
+1564
+02:31:47,507 --> 02:31:47,987
+Okay.
+
+1565
+02:31:50,967 --> 02:31:52,108
+Let me make you remember.
+
+1566
+02:31:55,147 --> 02:31:58,647
+For example, a function is x squared plus 2x.
+
+1567
+02:31:59,188 --> 02:32:00,188
+Is it linear?
+
+1568
+02:32:06,100 --> 02:32:08,100
+Of course not.
+
+1569
+02:32:08,100 --> 02:32:10,100
+A function linear,
+
+1570
+02:32:10,100 --> 02:32:12,100
+variyables must be on the first degree.
+
+1571
+02:32:12,100 --> 02:32:15,100
+2x plus 4 is linear.
+
+1572
+02:32:15,100 --> 02:32:18,100
+It shows a line.
+
+1573
+02:32:18,100 --> 02:32:22,100
+And once you have a function,
+
+1574
+02:32:22,100 --> 02:32:24,100
+but it's not linear,
+
+1575
+02:32:24,100 --> 02:32:26,100
+you can make it linear.
+
+1576
+02:32:26,100 --> 02:32:28,100
+But while you are making a nonlinear function
+
+1577
+02:32:28,100 --> 02:32:30,100
+into a linear function,
+
+1578
+02:32:30,100 --> 02:32:32,100
+of course, it's a little bit changed.
+
+1579
+02:32:32,100 --> 02:32:34,100
+And the values will be different,
+
+1580
+02:32:34,100 --> 02:32:36,100
+but you are just making an approximation
+
+1581
+02:32:36,100 --> 02:32:38,100
+of the original function,
+
+1582
+02:32:38,100 --> 02:32:40,100
+which is nonlinear.
+
+1583
+02:32:40,100 --> 02:32:42,100
+Why do we need to make an approximation?
+
+1584
+02:32:42,100 --> 02:32:44,100
+Because maybe we have a point
+
+1585
+02:32:44,100 --> 02:32:46,100
+we need to evaluate, but we cannot.
+
+1586
+02:32:46,100 --> 02:32:48,100
+But making it linear
+
+1587
+02:32:48,100 --> 02:32:50,100
+at the specific and choosing
+
+1588
+02:32:50,100 --> 02:32:52,100
+the most closer point to it
+
+1589
+02:32:52,100 --> 02:32:54,100
+and linearize the function
+
+1590
+02:32:54,100 --> 02:32:56,100
+that closer point,
+
+1591
+02:32:56,100 --> 02:32:58,100
+and then just make
+
+1592
+02:32:58,100 --> 02:33:00,100
+an approximation and estimating
+
+1593
+02:33:00,100 --> 02:33:02,100
+the value of the specific
+
+1594
+02:33:02,100 --> 02:33:04,100
+value of the function.
+
+1595
+02:33:04,100 --> 02:33:06,100
+That's why we use it.
+
+1596
+02:33:06,100 --> 02:33:08,100
+And also the differentials having the same way
+
+1597
+02:33:08,100 --> 02:33:10,100
+of basic
+
+1598
+02:33:10,100 --> 02:33:12,100
+standard approximation.
+
+1599
+02:33:12,100 --> 02:33:14,100
+That's why
+
+1600
+02:33:14,100 --> 02:33:16,100
+linearization and the differentials
+
+1601
+02:33:16,100 --> 02:33:18,100
+are used to evaluate
+
+1602
+02:33:18,100 --> 02:33:20,100
+approximations of the functions
+
+1603
+02:33:20,100 --> 02:33:22,100
+at a specific point.
+
+1604
+02:33:22,100 --> 02:33:24,100
+Now we will do it on the
+
+1605
+02:33:24,100 --> 02:33:26,100
+doing it the same steps.
+
+1606
+02:33:26,100 --> 02:33:28,100
+You will see it,
+
+1607
+02:33:28,100 --> 02:33:30,100
+you will remember it in the same steps,
+
+1608
+02:33:30,100 --> 02:33:32,100
+but now you will have
+
+1609
+02:33:32,100 --> 02:33:34,100
+several variable functions
+
+1610
+02:33:34,100 --> 02:33:36,100
+once you compare with the
+
+1611
+02:33:36,100 --> 02:33:38,100
+topic in the mathematics one.
+
+1612
+02:33:38,100 --> 02:33:39,100
+Okay.
+
+1613
+02:33:39,100 --> 02:33:41,100
+Again, we are just making a linearization
+
+1614
+02:33:41,100 --> 02:33:43,100
+and differential to make the
+
+1615
+02:33:43,100 --> 02:33:45,100
+linear approximation.
+
+1616
+02:33:45,100 --> 02:33:49,100
+The linearization of a function of xy
+
+1617
+02:33:49,100 --> 02:33:51,100
+at a point x0, y0,
+
+1618
+02:33:51,100 --> 02:33:53,100
+where f is differentiable
+
+1619
+02:33:53,100 --> 02:33:55,100
+is the function l.
+
+1620
+02:33:55,100 --> 02:33:58,100
+I think you remember this formula.
+
+1621
+02:33:58,100 --> 02:34:00,100
+In single variable form of it, lx,
+
+1622
+02:34:00,100 --> 02:34:06,100
+f at a x minus x0,
+
+1623
+02:34:06,100 --> 02:34:07,100
+f y.
+
+1624
+02:34:07,100 --> 02:34:10,100
+No, we don't have f y, only this part
+
+1625
+02:34:10,100 --> 02:34:12,100
+for single variable function.
+
+1626
+02:34:14,100 --> 02:34:16,100
+And with the help of it,
+
+1627
+02:34:16,100 --> 02:34:18,100
+we are just getting the approximate
+
+1628
+02:34:18,100 --> 02:34:20,100
+values or estimated values of the
+
+1629
+02:34:20,100 --> 02:34:22,100
+functions at specific points.
+
+1630
+02:34:23,100 --> 02:34:25,100
+So the approximation is this.
+
+1631
+02:34:26,100 --> 02:34:28,100
+Normally you have f x y,
+
+1632
+02:34:28,100 --> 02:34:29,100
+but not linear.
+
+1633
+02:34:29,100 --> 02:34:31,100
+But l x y is the linear form of it.
+
+1634
+02:34:31,100 --> 02:34:35,100
+That's why l is approximately f.
+
+1635
+02:34:35,100 --> 02:34:37,100
+Not the exact value, but approximately.
+
+1636
+02:34:37,100 --> 02:34:39,100
+So the approximation is this time
+
+1637
+02:34:39,100 --> 02:34:43,100
+that linear approximation of f at x0, y0.
+
+1638
+02:34:43,100 --> 02:34:45,100
+Once you change the point,
+
+1639
+02:34:45,100 --> 02:34:50,100
+linearizations are made at a specific point.
+
+1640
+02:34:50,100 --> 02:34:54,100
+In order to get the most best approximation
+
+1641
+02:34:54,100 --> 02:34:57,100
+or a closer approximation,
+
+1642
+02:34:57,100 --> 02:35:00,100
+you need to just choose a closer point always
+
+1643
+02:35:00,100 --> 02:35:03,100
+to make a nice and good approximation.
+
+1644
+02:35:03,100 --> 02:35:04,100
+Okay.
+
+1645
+02:35:08,724 --> 02:35:14,523
+For example, find the linearization of f at the point 232.
+
+1646
+02:35:18,644 --> 02:35:21,123
+using this formula. Let's do it.
+
+1647
+02:37:51,987 --> 02:37:55,787
+Have you done? Linearization in one?
+
+1648
+02:38:00,211 --> 02:38:05,652
+You see, point must be given, and point is given, 3, 2.
+
+1649
+02:38:07,091 --> 02:38:15,851
+To worry about function, it's not linear as you see, x square and y square and the multiplication you have, which means non-linear.
+
+1650
+02:38:17,072 --> 02:38:21,451
+In order to make it linear, you need to follow the formalization.
+
+1651
+02:38:21,451 --> 02:38:36,951
+F32 plus fx at 32 times x minus 3 plus fy32 times y minus 2 must be written.
+
+1652
+02:38:38,332 --> 02:38:38,611
+This.
+
+1653
+02:38:40,611 --> 02:38:41,451
+And here.
+
+1654
+02:38:42,731 --> 02:38:43,931
+As you see,
+
+1655
+02:38:49,075 --> 02:38:51,995
+The value of the function at 3, 2 is 8.
+
+1656
+02:38:54,115 --> 02:38:57,215
+Fx and fy at that point must be evaluated.
+
+1657
+02:38:57,835 --> 02:39:00,855
+As you see, fx is 2x minus y.
+
+1658
+02:39:01,735 --> 02:39:04,535
+Fy is minus x plus y.
+
+1659
+02:39:05,475 --> 02:39:08,675
+At that point, 3, 2, 4 and minus 1 respectively.
+
+1660
+02:39:08,675 --> 02:39:18,735
+So, substitute here and get lxy is 8 plus 4 times x minus 3 minus 1 times y minus 2.
+
+1661
+02:39:19,075 --> 02:39:23,655
+Results for x minus y minus 2, now look, it's linear as you see.
+
+1662
+02:39:25,275 --> 02:39:28,935
+They are all first degree and no multiplication you have.
+
+1663
+02:39:29,675 --> 02:39:32,715
+So, this is the linear form of the function.
+
+1664
+02:39:33,515 --> 02:39:35,815
+And as you see, they are completely different.
+
+1665
+02:39:36,035 --> 02:39:41,315
+But, around the point 3, 2, some values are very closer to 3, 2.
+
+1666
+02:39:41,435 --> 02:39:48,015
+Some values are just near, just approximation, okay, between them.
+
+1667
+02:39:49,075 --> 02:39:56,915
+Using this function, you can get the approximation of this function at a point which is closer to 3, 2.
+
+1668
+02:39:57,255 --> 02:39:59,375
+Why it must be closer to 3, 2?
+
+1669
+02:40:00,795 --> 02:40:07,555
+To make a good approximation, of course, in order to just get the, at the point where you just linearize the function.
+
+1670
+02:40:07,555 --> 02:40:11,535
+In order to get the best approximation, you need to find the closer points.
+
+1671
+02:40:13,435 --> 02:40:16,495
+And then use this function without this one.
+
+1672
+02:40:17,775 --> 02:40:18,395
+Are you okay?
+
+1673
+02:40:18,575 --> 02:40:19,455
+Do you understand it?
+
+1674
+02:40:20,055 --> 02:40:21,315
+Linearization is this.
+
+1675
+02:40:21,855 --> 02:40:22,955
+Making it linear.
+
+1676
+02:40:24,655 --> 02:40:26,155
+Of course, changing it.
+
+1677
+02:40:26,155 --> 02:40:27,375
+Okay.
+
+1678
+02:40:28,275 --> 02:40:33,935
+For example, find the approximate value of f at this point.
+
+1679
+02:40:36,875 --> 02:40:38,595
+It's just I'm trying to say.
+
+1680
+02:40:40,595 --> 02:40:44,795
+I want to learn what is f at that point, but I can't.
+
+1681
+02:40:45,115 --> 02:40:47,155
+So, I need to just get the approximate value.
+
+1682
+02:40:47,275 --> 02:40:49,375
+So, that means I'm just trying to estimate it.
+
+1683
+02:40:50,015 --> 02:40:51,155
+Yes, what can it be?
+
+1684
+02:40:51,155 --> 02:40:56,315
+I will do it with the linear form of this function.
+
+1685
+02:40:56,435 --> 02:40:57,695
+It's nonlinear, as you see.
+
+1686
+02:40:58,335 --> 02:41:07,195
+If I make it linear, I can easily get a closer value of the exact value of the function by using a linear form of this function.
+
+1687
+02:41:08,655 --> 02:41:13,795
+In order to linearize, I need to choose a closer point to this point.
+
+1688
+02:41:14,755 --> 02:41:16,775
+Can you guess which point can this be?
+
+1689
+02:41:16,895 --> 02:41:18,995
+The closer point of it one.
+
+1690
+02:41:21,155 --> 02:41:27,275
+Which point will you use for the linearization of this function?
+
+1691
+02:41:28,175 --> 02:41:30,455
+2.2 minus 0.2.
+
+1692
+02:41:31,735 --> 02:41:36,355
+Which point will you prefer to make the linearization of f?
+
+1693
+02:41:41,043 --> 02:41:52,244
+I think so, yes. 2 and 0. I think so. Okay. And the function is given. Let's linearize it. Can you make the linear form of it?
+
+1694
+02:41:54,443 --> 02:42:04,203
+What do we need for linearization? Point and the partial derivative of f. With respect to x and y, please write the linear form of it and write me here.
+
+1695
+02:42:04,203 --> 02:42:07,463
+Write me the linear form of f.
+
+1696
+02:42:09,463 --> 02:42:22,884
+f2, 0 plus fx at 2, 0 times x minus 2 plus fy, 2, 0 times y minus 0 will be the linear form of f.
+
+1697
+02:42:36,500 --> 02:42:39,600
+Evet, iyi bir şey, [öğrenci]. Evet, iyi bir şey.
+
+1698
+02:42:43,379 --> 02:42:47,159
+Anyone else who makes the linear form of it?
+
+1699
+02:43:11,956 --> 02:43:41,956
+Fx y'e 2x²'e 2y'e 2
+
+1700
+02:43:41,956 --> 02:44:11,956
+And write in this formula fx is 2x over square root 2x square plus e to 2y'e 2y
+
+1701
+02:44:11,956 --> 02:44:24,036
+So the linear form of this function at the point 2 is equal to 3 plus 4 over 3 times x minus 2 plus 1 over 3 times y.
+
+1702
+02:44:25,576 --> 02:44:28,296
+Is it okay up to now? This is the linear form of f.
+
+1703
+02:44:29,595 --> 02:44:37,216
+In order to get the approximate value of this function at that point, instead of this function,
+
+1704
+02:44:37,216 --> 02:44:43,015
+We will use the linear form of it, which is much more easier to get an approximation.
+
+1705
+02:44:43,456 --> 02:44:45,855
+This was the approximation, not the exact value.
+
+1706
+02:44:46,736 --> 02:44:50,115
+And this is Lxy, the linear form of f.
+
+1707
+02:44:50,695 --> 02:44:54,275
+So substitute the point to the linear form of f.
+
+1708
+02:44:55,515 --> 02:44:59,796
+Just to guess the exact value, just guessing it, just the estimation.
+
+1709
+02:45:01,456 --> 02:45:04,835
+3 plus 4 over 3 times x, 2.2.
+
+1710
+02:45:04,835 --> 02:45:07,935
+We got here 0.2.
+
+1711
+02:45:08,456 --> 02:45:12,876
+And plus 1 over 3 times y was minus 0.2.
+
+1712
+02:45:13,956 --> 02:45:21,636
+So we get 3 over 2 means f 2.2 minus 0.2 is approximately 3.2.
+
+1713
+02:45:23,335 --> 02:45:28,996
+Not the exact value because we just substitute this value to the linear form of it, not the function itself.
+
+1714
+02:45:29,636 --> 02:45:30,796
+That's why it's an approximation.
+
+1715
+02:45:31,476 --> 02:45:34,595
+That's why we are choosing the closer point to linearize it.
+
+1716
+02:45:34,835 --> 02:45:48,835
+So we're choosing the closer point to linear form of f.
+
+1717
+02:45:40,435 --> 02:45:42,355
+Now are you okay? Do you understand it?
+
+1718
+02:45:49,427 --> 02:45:50,567
+Any question up to now?
+
+1719
+02:45:59,667 --> 02:46:02,667
+[öğrenci], şimdi soru soru.
+
+1720
+02:46:10,611 --> 02:46:12,171
+[öğrenci] şöyle cevaplayayım sorunu.
+
+1721
+02:46:12,731 --> 02:46:16,771
+Burada güzel bir yaklaşım için nasıl diyeyim?
+
+1722
+02:46:17,271 --> 02:46:18,691
+Şimdi normalde o zaman şöyle anlatayım.
+
+1723
+02:46:19,051 --> 02:46:22,331
+Normalde biz fx'ye bir yüzey gösteriyor.
+
+1724
+02:46:22,411 --> 02:46:23,951
+Üç boyutlu uzayda bir yüzey düşün.
+
+1725
+02:46:24,431 --> 02:46:27,471
+Onun üzerindeki bir noktadaki z değerini tahmin etmeye çalışıyoruz.
+
+1726
+02:46:27,631 --> 02:46:30,251
+Aslında oradaki gerçek bir değer var ve hesaplanılabilir.
+
+1727
+02:46:30,751 --> 02:46:32,451
+Ama biz sadece bir yaklaşım yapıyoruz.
+
+1728
+02:46:32,451 --> 02:46:34,831
+Neden bu yaklaşımı bu formülle yapıyoruz?
+
+1729
+02:46:34,831 --> 02:46:42,071
+Aslında bir yüzey var ama bu formül bir t-et, bu formülle aslında dikkatli bakarsınız.
+
+1730
+02:46:42,191 --> 02:46:45,931
+Bunun bu noktadaki t-et düzlemi olduğunu göreceksiniz bu arada.
+
+1731
+02:46:46,031 --> 02:46:47,291
+Bunu daha sonra fark edeceksiniz.
+
+1732
+02:46:47,731 --> 02:46:49,531
+Diferansiyel konusunda fark edeceksiniz.
+
+1733
+02:46:49,671 --> 02:46:55,611
+Aslında bir fonksiyon, iki değişkenli bir fonksiyonun lineer hali, lineerleştirilmiş hali
+
+1734
+02:46:55,611 --> 02:47:00,771
+hangi noktada lineerleştiriyorsak o noktadaki aslında t-et düzlemi formülü.
+
+1735
+02:47:00,771 --> 02:47:06,571
+Yani yüzeyi, aslında bir yüzey var ama biz onu düzleme dönüştürüyoruz.
+
+1736
+02:47:06,671 --> 02:47:08,631
+O yüzden bu gerçek değerden biraz tapıyor.
+
+1737
+02:47:09,211 --> 02:47:11,911
+Hangi noktada o sapmayı minimuma indirebiliriz?
+
+1738
+02:47:12,931 --> 02:47:16,931
+O t-et değdiği işte, o yüzeyin t-ete değdiği nokta.
+
+1739
+02:47:18,131 --> 02:47:21,751
+O noktaya ne kadar yakın, ne kadar yakın bir nokta seçersek
+
+1740
+02:47:21,751 --> 02:47:26,751
+o noktanın çok küçük bir civarında, çok küçük bir komşuluğundaki değerler birbirine çok yaklaşacaktır.
+
+1741
+02:47:26,751 --> 02:47:33,611
+Yani orada yüzey mi, doğru, pardon, yüzey mi yoksa düzlenme çok fark etmez.
+
+1742
+02:47:34,011 --> 02:47:41,391
+O yüzden bir nokta seçip onun etrafındaki çok yakın noktalarda değerlerin birbirine çok yaklaştırdığını düşünebiliriz.
+
+1743
+02:47:42,391 --> 02:47:44,751
+O yüzden bu noktadan ne kadar uzaklaşırsınız?
+
+1744
+02:47:44,871 --> 02:47:46,491
+Gerçek değerde noktada uzaklaşırsınız.
+
+1745
+02:47:46,491 --> 02:47:51,911
+Çünkü bir noktadan ne kadar uzaklaştığınızda artık yüzeyin farklı kavramlarında gezmek var.
+
+1746
+02:47:52,471 --> 02:47:55,831
+Onu bir düzleme dönüştürüp düzlem arasındaki farkı görmek var.
+
+1747
+02:47:55,911 --> 02:47:57,511
+Aradaki fark gitgide artacaktır.
+
+1748
+02:47:58,311 --> 02:47:59,271
+Bilmem, anlatabildim mi?
+
+1749
+02:48:00,711 --> 02:48:01,971
+Evet hocam, anladım.
+
+1750
+02:48:02,411 --> 02:48:03,491
+Ben şey demek istemiştim.
+
+1751
+02:48:03,591 --> 02:48:07,271
+Şimdi bir yüzey belirttiği için yüzeylere yaklaşmak zor oluyor.
+
+1752
+02:48:07,671 --> 02:48:07,911
+Evet.
+
+1753
+02:48:08,051 --> 02:48:08,871
+Bazı noktalarda.
+
+1754
+02:48:08,971 --> 02:48:10,491
+Şimdi lineer bir şekilde yaklaşıyoruz.
+
+1755
+02:48:10,751 --> 02:48:13,271
+Biz bunu kalkülüs 1'de de yapıyorduk ama.
+
+1756
+02:48:13,451 --> 02:48:13,711
+Evet.
+
+1757
+02:48:13,711 --> 02:48:16,491
+Kalkülüs 1'de bir formül hatırlıyorum.
+
+1758
+02:48:16,711 --> 02:48:17,311
+Hayal meyal.
+
+1759
+02:48:17,831 --> 02:48:22,671
+Hani bu yaklaşmanın hangi aralıkta bize ne kadar tolerans danıyacağını,
+
+1760
+02:48:22,811 --> 02:48:26,731
+işte ne kadar gerçek değerden sapacağını vesaire hesapladığımız bir formül vardı.
+
+1761
+02:48:27,271 --> 02:48:29,131
+Ona benzer bir aralık bulmayı...
+
+1762
+02:48:29,131 --> 02:48:29,931
+Hata payı.
+
+1763
+02:48:30,131 --> 02:48:31,871
+Evet, hata payı konusunda.
+
+1764
+02:48:33,251 --> 02:48:36,631
+%20'lik bir hata payı bekleniyor bizden bir mühendislik uygulamasında.
+
+1765
+02:48:37,071 --> 02:48:39,291
+Yine değerini bulduk.
+
+1766
+02:48:39,291 --> 02:48:43,331
+Hani bu %20'lik hata payından ne kadar sapabiliriz?
+
+1767
+02:48:43,331 --> 02:48:48,471
+İşte atıyorum burada 2.2, eksi 0.2 noktasından bahsediyor ya.
+
+1768
+02:48:48,831 --> 02:48:48,991
+Evet.
+
+1769
+02:48:49,091 --> 02:48:52,331
+Biz aynı lineer yaklaşımla yine 2'ye 0'da yaklaşıp,
+
+1770
+02:48:53,011 --> 02:48:55,451
+işte gidip 3.1 noktasını muhtemelen alamayız.
+
+1771
+02:48:55,511 --> 02:48:56,451
+Çok büyük bir sapma olur.
+
+1772
+02:48:56,631 --> 02:48:57,231
+Evet, evet.
+
+1773
+02:48:57,691 --> 02:49:03,331
+Bu aralığı saptayabilmek için herhangi bir metot var mı gibisinden bir soru sordum ama...
+
+1774
+02:49:03,331 --> 02:49:07,152
+Muhtemelen vardır.
+
+1775
+02:49:07,851 --> 02:49:12,351
+Yani bu konunun müfredatımızın içerisinde yok ama bunu araştırıp bulabiliriz bence.
+
+1776
+02:49:13,791 --> 02:49:19,971
+Kalkulus varsa elinde, 2. cilde bununla ilgili, oradan bakabilirsin.
+
+1777
+02:49:20,311 --> 02:49:20,971
+Ben de bakayım.
+
+1778
+02:49:21,611 --> 02:49:24,031
+Gerçi kalkulus yok elinde ama PDF var mı diye bir bakayım.
+
+1779
+02:49:24,031 --> 02:49:26,731
+olması lazım aslında.
+
+1780
+02:49:26,871 --> 02:49:35,431
+Aslında bu konu nümerik analizde çok detaylı işleniyor ama tabii o hani matematikçilerin konusu daha çok çok detaylı bir şekilde sapmalar hesaplanıyor.
+
+1781
+02:49:35,511 --> 02:49:37,831
+Çok daha hassas incelemeler yapılıyor ama...
+
+1782
+02:49:37,831 --> 02:49:40,111
+Senin işini görecek bir formül var mı?
+
+1783
+02:49:40,191 --> 02:49:41,451
+Biraz araştıralım istersen.
+
+1784
+02:49:42,031 --> 02:49:42,691
+Tamamdır hocam.
+
+1785
+02:49:42,751 --> 02:49:44,131
+Aztaya o zaman kaçacağız tekrar.
+
+1786
+02:49:44,131 --> 02:49:45,031
+Tamam.
+
+1787
+02:49:45,251 --> 02:49:45,791
+Tamam oldu.
+
+1788
+02:49:46,152 --> 02:49:46,771
+Teşekkür ederim.
+
+1789
+02:49:47,491 --> 02:49:48,431
+Ben teşekkür ederim.
+
+1790
+02:49:49,031 --> 02:49:52,051
+Evet arkadaşlar bu arada süremizin sonuna geldik.
+
+1791
+02:49:52,051 --> 02:49:54,311
+Yarın devam edelim.
+
+1792
+02:49:55,591 --> 02:49:57,291
+Yarın da lütfen katılın bekliyorum.
+
+1793
+02:49:57,391 --> 02:49:58,671
+Bugün gibi olmasın arkadaşlar.
+
+1794
+02:49:59,931 --> 02:50:01,531
+Yarın konularla devam edeceğim.
+
+1795
+02:50:02,831 --> 02:50:03,851
+Kendinize çok iyi bakın.
+
+1796
+02:50:03,951 --> 02:50:04,671
+Katılın arkadaşlar.
+
+1797
+02:50:04,811 --> 02:50:05,611
+Çok teşekkür ediyorum.
