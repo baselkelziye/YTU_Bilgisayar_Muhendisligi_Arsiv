@@ -1,0 +1,2359 @@
+1
+00:00:27,507 --> 00:00:28,027
+Good morning.
+
+2
+00:00:29,687 --> 00:00:30,707
+How are you?
+
+3
+00:00:48,276 --> 00:00:50,116
+Thank you. I am fine too.
+
+4
+00:01:02,420 --> 00:01:03,560
+Good morning, welcome.
+
+5
+00:01:18,292 --> 00:01:20,611
+Yes, [öğrenci], of course.
+
+6
+00:01:36,596 --> 00:01:39,356
+Do you have any question about yesterday's lecture?
+
+7
+00:01:46,292 --> 00:01:48,052
+Could you do your homework?
+
+8
+00:01:55,891 --> 00:02:04,951
+Yesterday, we started the power series. Today, we will continue this lecture, this subject.
+
+9
+00:02:10,292 --> 00:02:13,752
+ve bugün Tyler ve Maclaurin serisi görmek üzere.
+
+10
+00:02:22,675 --> 00:02:25,835
+If no question, we can start.
+
+11
+00:02:40,180 --> 00:02:41,540
+Ok, no question.
+
+12
+00:02:46,163 --> 00:02:47,583
+Are you ready to start?
+
+13
+00:02:55,156 --> 00:02:56,956
+Okay, let's start.
+
+14
+00:03:02,259 --> 00:03:03,840
+You are welcome [öğrenci].
+
+15
+00:03:05,659 --> 00:03:08,079
+Okay, let's share screen.
+
+16
+00:04:25,267 --> 00:04:25,767
+[öğrenci].
+
+17
+00:04:39,668 --> 00:04:43,747
+Let's consider 2 power 3's about the same point.
+
+18
+00:04:54,132 --> 00:04:58,132
+C and R are Coeficiens of Series.
+
+19
+00:05:00,132 --> 00:05:04,132
+Here A is the center of Convergence Interval.
+
+20
+00:05:10,067 --> 00:05:22,807
+Another series, B, BN, BN, A, N.
+
+21
+00:05:29,204 --> 00:05:46,984
+Let's consider 2 power series about same point A. On the intersection of their intervals of convergence, 2 power series can be added and subtracted.
+
+22
+00:06:05,427 --> 00:06:12,427
+ve
+
+23
+00:06:30,548 --> 00:06:32,367
+Sadece bir sürü numara.
+
+24
+00:06:37,651 --> 00:06:51,651
+ve
+
+25
+00:06:51,651 --> 00:07:13,651
+bir
+
+26
+00:07:08,660 --> 00:07:13,460
+Bir term.
+
+27
+00:07:14,460 --> 00:07:16,460
+BN plus Cn.
+
+28
+00:07:18,660 --> 00:07:20,460
+X minus A to the n.
+
+29
+00:07:22,660 --> 00:07:23,460
+4.
+
+30
+00:07:26,460 --> 00:07:27,460
+Subtracted.
+
+31
+00:07:38,355 --> 00:07:42,355
+You can move by, by, any custom, yet.
+
+32
+00:07:45,939 --> 00:07:53,420
+We multiply the each coefficient of the series by k.
+
+33
+00:09:01,076 --> 00:09:18,115
+This power series converges to fx, and another power series about the same point converges to another function, for example g of x.
+
+34
+00:09:26,484 --> 00:10:02,484
+Bu, R'ınç'ın
+
+35
+00:10:08,563 --> 00:10:14,524
+Then, we can multiply them.
+
+36
+00:10:14,524 --> 00:10:17,524
+That is...
+
+37
+00:10:27,059 --> 00:10:29,059
+We can do this operation.
+
+38
+00:10:32,579 --> 00:10:39,939
+We will get a new power series about zero.
+
+39
+00:10:44,884 --> 00:10:54,244
+Here, cn are the coefficients of this new power series to determine.
+
+40
+00:10:56,004 --> 00:10:59,204
+How can we determine these coefficients?
+
+41
+00:11:02,724 --> 00:11:08,244
+We write the first terms of the first series.
+
+42
+00:11:14,355 --> 00:11:19,696
+And then, we write the first terms of the second.
+
+43
+00:11:21,775 --> 00:11:22,576
+There it is.
+
+44
+00:11:26,515 --> 00:11:33,515
+ve
+
+45
+00:11:39,316 --> 00:11:48,436
+We multiply the first term of the first series to each terms of the second series.
+
+46
+00:11:51,156 --> 00:11:51,475
+So,
+
+47
+00:11:54,995 --> 00:12:07,636
+we find our new series. Can you say what is the first term of new series?
+
+48
+00:12:07,636 --> 00:12:12,836
+What is C0? Can you say?
+
+49
+00:12:24,596 --> 00:12:28,495
+[öğrenci], dağız, true, [öğrenci], be careful.
+
+50
+00:12:29,576 --> 00:12:36,275
+If we multiply a0 with b0, we find c0.
+
+51
+00:12:38,676 --> 00:12:40,155
+Let's try again.
+
+52
+00:12:40,855 --> 00:12:41,916
+What is c1?
+
+53
+00:12:42,196 --> 00:12:44,275
+What is the coefficient of c1?
+
+54
+00:12:55,635 --> 00:13:08,275
+Be careful, if we multiply this term and this term, we find a1, y, maybe 1, times x squared. Be careful.
+
+55
+00:13:11,395 --> 00:13:12,315
+Yes, [öğrenci].
+
+56
+00:13:18,100 --> 00:13:24,540
+a0 b1 plus a1 b0 is true.
+
+57
+00:13:26,540 --> 00:13:45,840
+If we multiply this term and this term, and this, and this, we get the coefficient of x.
+
+58
+00:13:45,840 --> 00:13:50,279
+and in a similar way.
+
+59
+00:14:03,283 --> 00:14:04,504
+Let's look at here.
+
+60
+00:14:05,783 --> 00:14:09,224
+First term converges f of x.
+
+61
+00:14:09,884 --> 00:14:14,963
+Second series converges to g of x.
+
+62
+00:14:14,963 --> 00:14:26,803
+So, the multiplication series converges to multiplication of fx and g of x.
+
+63
+00:14:27,803 --> 00:14:28,963
+And...
+
+64
+00:14:33,491 --> 00:14:45,291
+İntarlar, convergencesi değiştiremez.
+
+65
+00:14:54,932 --> 00:14:59,932
+We can write the formula of Cn like that.
+
+66
+00:15:17,331 --> 00:15:19,532
+Can you say the name of this series?
+
+67
+00:15:21,451 --> 00:15:24,572
+We saw yesterday, this is special series.
+
+68
+00:15:26,731 --> 00:15:27,292
+Do you remember?
+
+69
+00:15:32,436 --> 00:15:34,436
+This is special power series.
+
+70
+00:15:36,676 --> 00:15:40,436
+Yes, thank you [öğrenci]. This is geometric power series.
+
+71
+00:15:46,964 --> 00:15:48,504
+This series converge.
+
+72
+00:15:50,504 --> 00:15:51,204
+Converse.
+
+73
+00:15:53,224 --> 00:15:54,444
+Can you say it?
+
+74
+00:15:56,204 --> 00:15:57,064
+The FX?
+
+75
+00:15:57,284 --> 00:15:59,084
+What is the FX?
+
+76
+00:16:02,868 --> 00:16:12,768
+Thank you very much. Yes, that's true. And in terms of this geometric series, please say it.
+
+77
+00:16:14,348 --> 00:16:18,508
+What is the interval of conversions of the series?
+
+78
+00:16:26,932 --> 00:16:30,932
+Open or closed interval.
+
+79
+00:16:34,211 --> 00:16:40,932
+If we write minus 1 instead of x, we find
+
+80
+00:16:43,331 --> 00:16:50,132
+this series. If we write 1 instead of x, we find this series.
+
+81
+00:16:50,132 --> 00:16:58,451
+They are convergence or divergence. Yes, both of them are
+
+82
+00:17:00,132 --> 00:17:07,572
+divergent series. So, interval of convergence, this series,
+
+83
+00:17:08,932 --> 00:17:15,811
+open interval, minus 1 and 1. So, we can multiply
+
+84
+00:17:15,812 --> 00:17:22,132
+this series. It's size.
+
+85
+00:17:31,347 --> 00:17:43,268
+We can find a new series, and this new series converges to multiply.
+
+86
+00:17:49,332 --> 00:17:56,052
+Bu, 1 over minus 1 x squared.
+
+87
+00:17:57,972 --> 00:18:00,532
+Let's determine these coefficients.
+
+88
+00:18:02,692 --> 00:18:12,532
+To do this, we first write the first few terms of the first series and then second terms.
+
+89
+00:18:12,532 --> 00:18:18,532
+1 plus x plus x squared.
+
+90
+00:18:20,212 --> 00:18:22,612
+1 plus x x squared.
+
+91
+00:18:24,372 --> 00:18:38,532
+What is the c1, c0, sorry. What is the first term?
+
+92
+00:18:34,516 --> 00:18:35,076
+1.
+
+93
+00:18:35,976 --> 00:18:37,556
+What is the second term?
+
+94
+00:18:49,907 --> 00:18:51,587
+What is this, Turk terms?
+
+95
+00:18:59,539 --> 00:19:06,599
+So, what is the end term? You can guess.
+
+96
+00:19:12,211 --> 00:19:16,652
+Yes, yes, third term, and then yes, end term.
+
+97
+00:19:17,652 --> 00:19:20,412
+Please say yes.
+
+98
+00:19:25,395 --> 00:19:27,316
+Evet, doğru.
+
+99
+00:19:33,652 --> 00:19:39,491
+So, we can write this series by sigma symbol.
+
+100
+00:19:45,940 --> 00:19:51,600
+Say, n start from which number?
+
+101
+00:20:00,000 --> 00:20:01,380
+1, [öğrenci], yes.
+
+102
+00:20:02,700 --> 00:20:03,279
+Test room.
+
+103
+00:20:06,140 --> 00:20:06,839
+And,
+
+104
+00:20:07,779 --> 00:20:08,660
+here,
+
+105
+00:20:10,000 --> 00:20:11,619
+this series,
+
+106
+00:20:12,720 --> 00:20:13,579
+converges,
+
+107
+00:20:14,579 --> 00:20:15,920
+on this interval,
+
+108
+00:20:16,319 --> 00:20:18,079
+minus 1, 1.
+
+109
+00:20:21,420 --> 00:20:22,759
+Open interval.
+
+110
+00:20:40,115 --> 00:20:50,355
+The sum of a power series is a continuous function.
+
+111
+00:20:55,763 --> 00:21:02,763
+ve
+
+112
+00:21:19,731 --> 00:21:26,612
+Here, we say that the power series
+
+113
+00:21:31,188 --> 00:21:44,268
+is a presentation of f of x in this interval.
+
+114
+00:21:46,788 --> 00:21:47,228
+So,
+
+115
+00:21:50,348 --> 00:21:58,788
+geometric series is a presentation of 1 over 1 minus x.
+
+116
+00:22:02,036 --> 00:22:17,395
+Bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde.
+
+117
+00:22:27,220 --> 00:22:29,539
+You can do this multiplication.
+
+118
+00:22:32,500 --> 00:22:35,220
+First one is Geometric Series.
+
+119
+00:22:37,539 --> 00:22:41,220
+Another, Alternating.
+
+120
+00:22:44,403 --> 00:22:46,403
+Evet.
+
+121
+00:22:46,403 --> 00:22:51,403
+Let's save this multiplication.
+
+122
+00:22:51,403 --> 00:22:53,403
+OK.
+
+123
+00:22:53,403 --> 00:23:01,403
+We need here cn coefficients.
+
+124
+00:23:01,403 --> 00:23:02,403
+OK.
+
+125
+00:23:02,403 --> 00:23:04,403
+We can change.
+
+126
+00:23:18,324 --> 00:23:24,204
+Other operations on the power series, differentiation and integration.
+
+127
+00:23:26,504 --> 00:23:28,564
+Evet [öğrenci] tabii ki.
+
+128
+00:23:31,443 --> 00:23:39,264
+Dedik ki kuvvet serileri toplanabilir, çıkartılabilir, bir sabit sayı ile çarpılabilir.
+
+129
+00:23:39,264 --> 00:23:45,064
+Bu durumda, yukarıya bakıyorum.
+
+130
+00:23:45,064 --> 00:23:51,464
+Toplandığı zaman yakın saklık aralıklarının ara kesitini alacağız.
+
+131
+00:23:51,464 --> 00:23:55,564
+Çıkartıldıkları zaman yakın saklık aralıklarının ara kesitini alacağız.
+
+132
+00:23:56,403 --> 00:24:01,584
+Bir sabit sayı ile çarpıldıklarında yarı çap değişmeyecek.
+
+133
+00:24:03,844 --> 00:24:07,044
+Yine aynı yarı çapa sahip olacaklar.
+
+134
+00:24:07,044 --> 00:24:21,124
+İki tane seri verdiğinde, eğer yakınsadıkları fonksiyonları biliyorsak, çarpımları da bu fonksiyonların çarpımına yakın sar.
+
+135
+00:24:21,124 --> 00:24:29,244
+İki serinin çarpımı sonucunda elde edilen seri, yakınsadıkları fonksiyonların çarpımına yakın sar.
+
+136
+00:24:29,244 --> 00:24:35,024
+Ve yakınsadıkları yarı çapı yine redir, yine değişmez.
+
+137
+00:24:36,144 --> 00:24:37,324
+Bunu nasıl buluyoruz?
+
+138
+00:24:37,423 --> 00:24:40,824
+Her ikisinde ilk birkaç tane terimini yazıyoruz, sonra da parantezi açıyoruz.
+
+139
+00:24:41,284 --> 00:24:41,744
+Ne yapıyoruz?
+
+140
+00:24:41,864 --> 00:24:45,584
+Yani her bir terimi tek tek tek tek sırayla dağıtıyoruz parantezin içine.
+
+141
+00:24:45,584 --> 00:24:53,324
+Dedik ki geometrik seriyi göz önüne alalım ve bu geometrik seriyi kendisiyle çarpalım.
+
+142
+00:24:53,764 --> 00:24:57,724
+Bu durumda çarpım serisi, yeni seri ne olacak?
+
+143
+00:24:57,903 --> 00:24:58,964
+Bunu belirlememiz lazım.
+
+144
+00:24:59,144 --> 00:25:01,104
+Yani kat sayılarını belirlememiz lazım.
+
+145
+00:25:01,304 --> 00:25:03,364
+Yine burada nedir?
+
+146
+00:25:03,524 --> 00:25:04,704
+A sayısı sıfırdır.
+
+147
+00:25:05,204 --> 00:25:08,304
+Sıfır civarında bir kuvvet serisidir geometrik seri.
+
+148
+00:25:08,304 --> 00:25:12,124
+Yine sıfır civarında bir kuvvet serisi elde edeceğiz.
+
+149
+00:25:12,124 --> 00:25:15,744
+Ama henüz kat sayılarını bilmiyoruz.
+
+150
+00:25:16,124 --> 00:25:22,744
+Bunun için çarpıma giren her iki serinin ilk birkaç tane terimini yazıyorsunuz ve başlıyorsunuz dağıtmaya.
+
+151
+00:25:23,324 --> 00:25:25,204
+Öncelikle birinci terim nedir?
+
+152
+00:25:25,864 --> 00:25:26,644
+Sabit sayıdır.
+
+153
+00:25:26,744 --> 00:25:28,224
+Sabit sayı nasıl elde edilir?
+
+154
+00:25:28,884 --> 00:25:31,884
+İlk birinci terimlerini çarparsam sabit sayı elde edilir.
+
+155
+00:25:32,364 --> 00:25:34,784
+Peki, x'li terimi nasıl elde edeceğim?
+
+156
+00:25:35,124 --> 00:25:36,984
+Amacım şimdi ikinci terimi elde etmek.
+
+157
+00:25:37,163 --> 00:25:38,984
+Yani x'in kat sayısını belirlemek.
+
+158
+00:25:39,384 --> 00:25:40,584
+Bunun için ne yapmalıyım?
+
+159
+00:25:40,584 --> 00:25:44,224
+Bu terimle bunu çarparsam x elde ederim.
+
+160
+00:25:44,683 --> 00:25:48,903
+Bir de bu x'i bununla çarparsam x elde ederim.
+
+161
+00:25:49,584 --> 00:25:50,544
+Başka çarpım yok.
+
+162
+00:25:50,963 --> 00:25:56,403
+x'li terimi getiren başka herhangi iki terim gelmiyor [öğrenci].
+
+163
+00:25:56,764 --> 00:25:58,724
+Dolayısıyla bir x oradan geldi.
+
+164
+00:25:58,764 --> 00:25:59,683
+Bir x oradan geldi.
+
+165
+00:26:00,124 --> 00:26:00,864
+İki x oldu.
+
+166
+00:26:01,304 --> 00:26:04,284
+Şimdi sıra geldi x kareye.
+
+167
+00:26:04,683 --> 00:26:06,403
+x kareyi nasıl elde edeceğiz?
+
+168
+00:26:06,403 --> 00:26:11,784
+Bunun için şöyle bir bakıyorum.
+
+169
+00:26:12,844 --> 00:26:16,024
+Hangi terimleri çarparsam x kare gelir diye düşünüyorum.
+
+170
+00:26:16,024 --> 00:26:20,384
+Bu terimle bu terimi çarparsam x kare gelir.
+
+171
+00:26:21,384 --> 00:26:23,984
+Bu terimle x'i çarparsam x kare gelir.
+
+172
+00:26:24,403 --> 00:26:27,104
+Bu terimle de bu terimi çarparsam x kare gelir.
+
+173
+00:26:29,284 --> 00:26:31,724
+Bundan sonraki terimler x küplü terimler olduğu için
+
+174
+00:26:31,724 --> 00:26:34,884
+başka ihtimalim yok.
+
+175
+00:26:35,464 --> 00:26:36,784
+Dolayısıyla x kareyi de buldum.
+
+176
+00:26:36,784 --> 00:26:41,884
+İlk birkaç tane terimini bulduktan sonra artık kuralı tahmin ediyorum.
+
+177
+00:26:42,403 --> 00:26:45,844
+Eğer tahmin edemiyorsam bir tane daha terim bulmamı tavsiye ederim size.
+
+178
+00:26:46,584 --> 00:26:51,724
+Bir tane daha terim bulursam artık kural kendiliğinden ortaya çıkacak.
+
+179
+00:26:52,144 --> 00:26:56,144
+İlk üç terimden çıkmıyorsa birkaç tane daha terim yazmayı deneyebilirsiniz.
+
+180
+00:26:56,684 --> 00:27:01,204
+Böylece eninci terimini yazabilirsiniz.
+
+181
+00:27:01,324 --> 00:27:03,104
+Eninci teriminin formülünü yazarsınız.
+
+182
+00:27:03,104 --> 00:27:07,544
+Çünkü seriyi sigma sembolüyle yazabilmem için
+
+183
+00:27:07,544 --> 00:27:09,964
+onun eninci terimine ihtiyacım var.
+
+184
+00:27:10,084 --> 00:27:10,844
+Nasıl yazıyorduk?
+
+185
+00:27:11,244 --> 00:27:14,004
+Sigma sembolünün eninci teriminin formülünü yazarak
+
+186
+00:27:14,004 --> 00:27:17,384
+bir seriyi kısaca ifade edebiliyorduk.
+
+187
+00:27:20,019 --> 00:27:27,619
+İki seriyi çarptığım zaman yakınsaklık yarı çapı değişmez. Buradaki yarı çap neyse, buradaki yarı çapta aynı şekilde kalır.
+
+188
+00:27:28,039 --> 00:27:35,279
+Hep bakınız, özellikle dikkat ediyorum, söylerken yarı çap değişmez diyorum. Aralık değişmez demiyorum.
+
+189
+00:27:35,279 --> 00:27:42,559
+Çünkü aralık yarı çap değişmez ama yarı açık aralığa dönüşebilir, kapalı aralığa dönüşebilir.
+
+190
+00:27:42,940 --> 00:27:48,639
+Ama burada yaptığımız örneklerde herhangi bir dönüşüm yoktu. Onun için de söyleme gereği duymadık.
+
+191
+00:27:48,639 --> 00:27:50,960
+Ama yarı çap değişmez dedik.
+
+192
+00:27:51,460 --> 00:27:54,779
+Bu örnekte de [öğrenci], ilk birkaç terimini yazacaksın.
+
+193
+00:27:54,920 --> 00:27:56,440
+İlk birkaç tane terimini yazacaksın.
+
+194
+00:27:56,559 --> 00:27:58,160
+Önce sabit terimi yazacaksın.
+
+195
+00:27:58,319 --> 00:28:09,160
+Sonra x'li terimi, sonra x kareli terimi, sonra da en inci terimin kuralını yazdıktan sonra artık sigma sembolü altında da yazabileceğiz.
+
+196
+00:28:15,124 --> 00:28:15,784
+Rica ederim.
+
+197
+00:28:17,223 --> 00:28:17,963
+Peki, devam.
+
+198
+00:28:24,819 --> 00:28:25,460
+Evet.
+
+199
+00:28:29,107 --> 00:28:31,107
+Töpü, duran gidiyorum.
+
+200
+00:28:36,307 --> 00:28:38,307
+ve,
+
+201
+00:28:39,307 --> 00:28:40,307
+integration
+
+202
+00:28:44,243 --> 00:28:50,003
+ve serisi
+
+203
+00:29:04,276 --> 00:29:07,276
+Bu konvergantı olarak,
+
+204
+00:29:07,276 --> 00:29:31,276
+bu konvergantı olarak
+
+205
+00:29:28,660 --> 00:29:30,860
+This is the domain of
+
+206
+00:29:39,316 --> 00:29:45,996
+We can differentiate and integrate such functions.
+
+207
+00:29:56,435 --> 00:29:57,055
+Teşekkürler.
+
+208
+00:30:06,996 --> 00:30:12,855
+over 30, sorry, please correct this, see, ah.
+
+209
+00:30:19,508 --> 00:30:21,508
+The series has
+
+210
+00:30:23,827 --> 00:30:24,948
+Reduce of
+
+211
+00:30:26,548 --> 00:30:27,508
+Convergence
+
+212
+00:30:29,107 --> 00:30:29,508
+R
+
+213
+00:30:30,228 --> 00:30:31,508
+As positive numbers
+
+214
+00:30:32,708 --> 00:30:33,508
+Then
+
+215
+00:30:43,443 --> 00:30:44,683
+As a function
+
+216
+00:30:48,435 --> 00:30:56,515
+f of x, c1, c1, x minus a, c2, x minus a, c2, x minus a, square.
+
+217
+00:31:09,299 --> 00:31:11,379
+This function is
+
+218
+00:31:11,379 --> 00:31:14,500
+Differentiable
+
+219
+00:31:23,476 --> 00:31:25,056
+The interval of convergence.
+
+220
+00:31:36,915 --> 00:31:37,796
+Differenetiyed.
+
+221
+00:31:45,619 --> 00:32:08,329
+Bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu
+
+222
+00:32:12,115 --> 00:32:15,756
+The differential of the first term is 0.
+
+223
+00:32:16,895 --> 00:32:18,855
+The differentiator of the second term,
+
+224
+00:32:20,855 --> 00:32:25,975
+with respect to x, here x is an independent variable,
+
+225
+00:32:27,875 --> 00:32:28,135
+so,
+
+226
+00:32:28,735 --> 00:32:31,655
+second term
+
+227
+00:32:31,655 --> 00:32:34,076
+becomes
+
+228
+00:32:34,076 --> 00:32:35,056
+c1.
+
+229
+00:32:37,776 --> 00:32:38,895
+And then,
+
+230
+00:32:38,895 --> 00:32:42,715
+you find this term
+
+231
+00:32:42,715 --> 00:32:44,296
+and
+
+232
+00:32:44,296 --> 00:33:07,935
+you
+
+233
+00:32:49,715 --> 00:32:54,395
+Can rewrite my sigma symbol
+
+234
+00:33:02,900 --> 00:33:06,980
+You can differentiate the general term of the series.
+
+235
+00:33:07,420 --> 00:33:11,019
+Please say the differentiate of f of x.
+
+236
+00:33:17,428 --> 00:33:23,628
+Say the general tone of the new series.
+
+237
+00:33:32,884 --> 00:33:57,163
+You cannot set it, see, you can write one more term. Yes, n times cn times x minus a to the n minus one. That's true. Please say n start from which number?
+
+238
+00:34:02,900 --> 00:34:12,139
+[öğrenci], be careful, and start from 1, because the differential of the first term is 0.
+
+239
+00:34:12,139 --> 00:34:18,760
+So, we start from C1, so, and start from 1.
+
+240
+00:34:27,315 --> 00:34:34,315
+ve
+
+241
+00:34:51,188 --> 00:35:01,048
+Andi Kassar, the radius of convergence r, does not change by differentiating.
+
+242
+00:35:07,827 --> 00:35:13,027
+You can write second order differential of f of x.
+
+243
+00:35:23,284 --> 00:35:27,124
+Differenitiyatı genel term, with respect to x.
+
+244
+00:35:27,544 --> 00:35:34,684
+Here, n constant, c of n, any arbitrary constant, real numbers.
+
+245
+00:35:35,564 --> 00:35:40,564
+Here, x, independent variable, a, another constant.
+
+246
+00:35:46,260 --> 00:36:00,260
+We can differentiate this like that. Yes, say it. n, n-1, cn, x-a, to the n-2. And start from...
+
+247
+00:36:06,068 --> 00:36:13,068
+Bu, çünkü ilk term,
+
+248
+00:36:13,068 --> 00:36:19,068
+1c1
+
+249
+00:36:19,068 --> 00:37:20,068
+ve 2c2
+
+250
+00:37:02,324 --> 00:37:03,003
+Any question?
+
+251
+00:37:04,003 --> 00:37:05,364
+Is it clear?
+
+252
+00:37:14,739 --> 00:37:17,659
+If no question, we can integrate now.
+
+253
+00:37:20,000 --> 00:37:20,399
+Here,
+
+254
+00:37:23,000 --> 00:37:24,279
+the power series
+
+255
+00:37:28,596 --> 00:37:38,076
+convergis to fx, and f of x is differentiable on the interval of convergence, and
+
+256
+00:37:43,572 --> 00:37:59,952
+F is integrable function on this interval.
+
+257
+00:38:03,860 --> 00:38:13,220
+We can integrate this function by integrating each term of the series.
+
+258
+00:38:15,860 --> 00:38:23,120
+What is the integral of the first term with respect to x?
+
+259
+00:38:35,764 --> 00:38:38,264
+c1 times x.
+
+260
+00:38:39,644 --> 00:38:40,544
+Yes, that's true.
+
+261
+00:38:41,144 --> 00:38:43,943
+What is the integral of second term?
+
+262
+00:38:59,827 --> 00:39:02,148
+C1'i enkonstant.
+
+263
+00:39:15,731 --> 00:39:22,731
+Evet, evet, evet, bu ne?
+
+264
+00:39:22,731 --> 00:39:29,731
+Be careful, don't forget the constant a,
+
+265
+00:39:29,731 --> 00:39:31,731
+here x minus a,
+
+266
+00:39:31,731 --> 00:39:35,731
+and then c2 x minus a
+
+267
+00:39:35,731 --> 00:39:39,731
+to the power 3 over 3.
+
+268
+00:39:39,731 --> 00:39:49,731
+And we can rewrite this series by sigma,
+
+269
+00:39:49,731 --> 00:39:53,731
+which is the general term of this new series.
+
+270
+00:40:05,780 --> 00:40:18,780
+Here, we can rewrite the closed form of serisi, cn times x minus a to the n.
+
+271
+00:40:23,891 --> 00:40:26,731
+By integrating this function,
+
+272
+00:40:29,131 --> 00:40:33,371
+integrate the general term of this series,
+
+273
+00:40:33,371 --> 00:40:35,371
+cn,
+
+274
+00:40:41,396 --> 00:40:47,615
+x-a n plus 1 over n plus 1.
+
+275
+00:40:50,016 --> 00:40:55,936
+Evet, that's true.
+
+276
+00:40:57,096 --> 00:41:02,176
+And again, the reduce.
+
+277
+00:41:05,940 --> 00:41:16,460
+Merges of interval does not change.
+
+278
+00:41:20,275 --> 00:41:22,056
+The endpoints of
+
+279
+00:41:26,547 --> 00:41:35,907
+The endpoints of the interval of convergence, must be checked. Okay?
+
+280
+00:41:52,083 --> 00:41:55,003
+ve şarkı ile ilgili birçok yorumlarımız var.
+
+281
+00:42:02,387 --> 00:42:28,188
+Amerikan, yes of course Amerikan, I will share lesson bowl, okay, and your friend can share here, okay, let's do some exercises about integration and differentiation.
+
+282
+00:42:35,764 --> 00:42:36,844
+Evet, komik sideki.
+
+283
+00:42:52,916 --> 00:42:55,256
+İpidervatif, both sides.
+
+284
+00:43:03,284 --> 00:43:03,804
+İkhan.
+
+285
+00:43:19,123 --> 00:43:35,403
+Şimdi, bu bölümde böl
+
+286
+00:43:38,452 --> 00:44:05,732
+Bu bir f , bu bir f , bu bir f , bu bir f , bu bir f , bu bir f , bu bir f , bu bir f , bu bir f , bu bir f , bu bir f , bu bir f , bu bir f , bu bir f , bu bir f , bu bir f , bu bir f , bu bir f , bu bir f , bu bir f , bu bir f , bu bir f , bu bir f , bu bir f , bu bir f , bu bir f , bu bir f , bu bir f , bu bir f , bu bir f , bu bir f , bu bir f , bu bir f , bu bir f , bu bir f , bu bir f , bu bir f , bu bir f , bu , bu bir f , bu , bu bir f , bu
+
+287
+00:44:25,523 --> 00:44:28,523
+Bir anksak var mı?
+
+288
+00:44:39,987 --> 00:44:45,587
+Differlensiyade, normal, differlensiyade.
+
+289
+00:44:50,996 --> 00:44:53,776
+Evet, bir geometrik testleri.
+
+290
+00:44:59,059 --> 00:45:00,059
+We get...
+
+291
+00:45:06,387 --> 00:45:08,047
+Here, be careful.
+
+292
+00:45:09,268 --> 00:45:10,387
+Differentiate.
+
+293
+00:45:16,211 --> 00:45:33,891
+x, x, x-1, yes, you are right, first we write minus 2, and multiply minus y, because of, x-1.
+
+294
+00:45:40,179 --> 00:45:40,500
+Ok.
+
+295
+00:45:47,956 --> 00:45:49,276
+İntegrate.
+
+296
+00:45:53,235 --> 00:45:55,235
+Evet, teşekkür ederim.
+
+297
+00:46:14,036 --> 00:46:25,056
+We can integrate the series by integrating the each term, by integrating general term.
+
+298
+00:46:31,507 --> 00:46:48,467
+right side here minus n minus x we can multiply by a constant in the series so
+
+299
+00:46:51,268 --> 00:46:53,507
+we find minus
+
+300
+00:46:56,467 --> 00:47:00,307
+x n plus 1 n plus 1 equals
+
+301
+00:47:01,507 --> 00:47:03,507
+x n plus 1
+
+302
+00:47:21,427 --> 00:47:26,587
+We can rewrite this series by re-indexing.
+
+303
+00:47:26,587 --> 00:47:38,147
+If we start from one and rewrite like that.
+
+304
+00:47:38,147 --> 00:47:39,867
+They are same series.
+
+305
+00:48:00,788 --> 00:48:01,108
+Mika
+
+306
+00:48:05,331 --> 00:48:06,331
+Evet.
+
+307
+00:48:11,539 --> 00:48:12,480
+The same function.
+
+308
+00:48:16,083 --> 00:48:34,083
+write minus 1, and then subtract 1, and then differentiate the entire of parentheses, minus 1.
+
+309
+00:48:35,283 --> 00:48:40,083
+Don't forget the integrate function.
+
+310
+00:48:44,052 --> 00:48:47,271
+So, we find
+
+311
+00:48:58,228 --> 00:48:59,628
+[öğrenci], ok.
+
+312
+00:49:00,288 --> 00:49:01,447
+No, no problem.
+
+313
+00:49:03,688 --> 00:49:04,648
+Hmm, ok.
+
+314
+00:49:06,088 --> 00:49:08,088
+The interval of this,
+
+315
+00:49:09,887 --> 00:49:12,867
+The interval of convergence of this series,
+
+316
+00:49:12,867 --> 00:49:15,367
+This, oops.
+
+317
+00:49:22,164 --> 00:49:24,564
+ve, so, here,
+
+318
+00:49:27,004 --> 00:49:28,884
+radius of interval
+
+319
+00:49:30,484 --> 00:49:31,284
+is 1.
+
+320
+00:49:32,084 --> 00:49:33,924
+And, please,
+
+321
+00:49:35,844 --> 00:49:37,284
+check the end points.
+
+322
+00:49:45,972 --> 00:49:49,072
+Orada, her zaman serisi.
+
+323
+00:49:55,699 --> 00:50:10,539
+If we write 1 instead of x, we find 1 over n. So this is the verges harmonic series.
+
+324
+00:50:10,539 --> 00:50:15,460
+If we write minus 1 instead of x,
+
+325
+00:50:19,507 --> 00:50:23,467
+Let's say this series. What is the name of this series?
+
+326
+00:50:37,076 --> 00:50:39,135
+Evet, alternatif.
+
+327
+00:50:42,996 --> 00:50:44,596
+Harmonic Series
+
+328
+00:50:44,596 --> 00:50:48,556
+Converges
+
+329
+00:50:53,556 --> 00:50:54,876
+Kondisi
+
+330
+00:51:03,699 --> 00:51:10,699
+Ok, so, minus 1.
+
+331
+00:51:17,523 --> 00:51:17,963
+OK.
+
+332
+00:51:19,244 --> 00:51:21,403
+Please, write.
+
+333
+00:51:25,556 --> 00:51:26,556
+in particular.
+
+334
+00:51:33,907 --> 00:51:35,567
+1 over 2 instead of x.
+
+335
+00:51:39,059 --> 00:52:02,619
+So, we find ln1 over 2. We can use the properties of logarithm function. We can rewrite like that. And we can find minus ln2. Minus ln2 equals minus. Now,
+
+336
+00:52:06,804 --> 00:52:18,903
+We write here, 1 over 2 instead of x, and left side, so, and start from 1 to infinity.
+
+337
+00:52:23,956 --> 00:52:25,956
+2, 1, 2, 1
+
+338
+00:52:54,164 --> 00:52:59,164
+We see that this number ln2,
+
+339
+00:53:19,891 --> 00:53:20,611
+No question.
+
+340
+00:53:45,300 --> 00:53:46,140
+Another example.
+
+341
+00:53:50,228 --> 00:54:03,867
+We can find the power series for this function by using the power geometric series.
+
+342
+00:54:31,411 --> 00:54:31,971
+know that
+
+343
+00:54:39,155 --> 00:54:48,695
+İnteklerle of 1 over 1 plus x eqs, olan 1 plus x.
+
+344
+00:55:01,811 --> 00:55:05,811
+Bu şekilde bu şekilde bu şekilde,
+
+345
+00:55:08,411 --> 00:55:10,811
+bu şekilde,
+
+346
+00:55:11,211 --> 00:55:13,811
+ve bu şekilde,
+
+347
+00:55:14,411 --> 00:55:28,811
+bu şekilde,
+
+348
+00:55:31,123 --> 00:55:37,623
+We know the power series of this function.
+
+349
+00:55:44,307 --> 00:55:54,027
+We use this conclusion and we will find this function. But how can we do that?
+
+350
+00:56:20,436 --> 00:56:21,356
+We can use
+
+351
+00:56:27,315 --> 00:56:28,995
+Substitution
+
+352
+00:56:39,092 --> 00:56:43,251
+ve yeni bir serisi.
+
+353
+00:56:48,019 --> 00:56:56,519
+We write minus x instead of x in the geometric power series.
+
+354
+00:56:57,860 --> 00:57:03,119
+We find the power series of 1 over 1 plus x.
+
+355
+00:57:14,164 --> 00:57:26,403
+If we write minus x instead of x, minus x instead of x in the power series, we find minus x to the n.
+
+356
+00:57:28,044 --> 00:57:32,924
+And we find the desired function, 1 over 1 plus x.
+
+357
+00:57:34,204 --> 00:57:40,864
+We can rewrite this series like that.
+
+358
+00:57:55,155 --> 00:58:25,135
+İnteklendirme, iki tarafı da
+
+359
+00:58:04,340 --> 00:58:06,180
+ve find
+
+360
+00:58:09,844 --> 00:58:13,244
+Minus 1 to the n is constant.
+
+361
+00:58:14,523 --> 00:58:15,644
+We write directly.
+
+362
+00:58:17,923 --> 00:58:23,523
+And integral of this term is...
+
+363
+00:58:35,987 --> 00:58:38,487
+İntrovalı bu serisi.
+
+364
+00:58:44,179 --> 00:58:48,940
+If we use substitution, we must substitute
+
+365
+00:58:52,692 --> 00:58:53,472
+Diz turn.
+
+366
+00:58:59,860 --> 00:59:01,780
+İntarvalı konvergans.
+
+367
+00:59:06,164 --> 00:59:28,164
+ve aynı interval, ve aynı interval, but we must check the end points of this interval.
+
+368
+00:59:28,164 --> 00:59:52,164
+Can you say, if x equals 1, is this series convergent or divergent? Please say, if we write 1 instead of x, we will find a special series, which series?
+
+369
+01:00:02,420 --> 01:00:03,280
+Are you there?
+
+370
+01:00:05,139 --> 01:00:06,079
+Are you tired?
+
+371
+01:00:27,155 --> 01:00:28,335
+Benito kuş.
+
+372
+01:00:47,123 --> 01:00:49,303
+Gençler, anlaşılmayan bir şey var mı son soruda?
+
+373
+01:01:02,068 --> 01:01:03,508
+Say it. Thank you very much.
+
+374
+01:01:05,288 --> 01:01:06,068
+[öğrenci].
+
+375
+01:01:06,468 --> 01:01:08,307
+Hiç karışık değil aslında.
+
+376
+01:01:09,508 --> 01:01:11,128
+Yukarıdaki soruları anladıysam
+
+377
+01:01:11,128 --> 01:01:12,568
+bunu da
+
+378
+01:01:12,568 --> 01:01:14,488
+kolaylıkla anlayacağına inanıyorum.
+
+379
+01:01:15,268 --> 01:01:16,768
+Çünkü aynı şeyi yapıyorum.
+
+380
+01:01:17,348 --> 01:01:18,028
+Bu sefer
+
+381
+01:01:18,028 --> 01:01:19,728
+daha önce ne yapmıştım?
+
+382
+01:01:20,228 --> 01:01:22,288
+Seriyi verip seriden yola çıkarak
+
+383
+01:01:22,288 --> 01:01:24,748
+devam etmiştim ama bu sefer fonksiyonu verdim.
+
+384
+01:01:24,868 --> 01:01:26,448
+Diğer sorulardan farkı bu.
+
+385
+01:01:26,448 --> 01:01:28,988
+Biraz önce serilerden devam ediyordum.
+
+386
+01:01:29,128 --> 01:01:30,848
+Şimdi ilk kez fonksiyonu
+
+387
+01:01:30,848 --> 01:01:32,848
+verip bu karşılığında seri istiyorum.
+
+388
+01:01:34,348 --> 01:01:34,908
+Ama yine
+
+389
+01:01:34,908 --> 01:01:37,848
+yaptığım şey değişmiyor.
+
+390
+01:01:38,508 --> 01:01:40,348
+Yine geometrik seriden yararlanıyorum.
+
+391
+01:01:40,468 --> 01:01:42,548
+Geometrik serinin fonksiyon tarafına bakıyorum.
+
+392
+01:01:42,688 --> 01:01:44,208
+Çünkü şu anda onu biliyorum.
+
+393
+01:01:44,528 --> 01:01:46,828
+Bu fonksiyondan yararlanarak nasıl geçerim
+
+394
+01:01:46,828 --> 01:01:48,868
+benden istenen fonksiyonu diye düşünüyorum.
+
+395
+01:01:51,268 --> 01:01:52,368
+Bana verilen fonksiyon
+
+396
+01:01:52,368 --> 01:01:55,428
+L1 artı x. Diyorum ki 1 bölü 1 artı x'in
+
+397
+01:01:55,428 --> 01:01:57,408
+integralidir diyorum.
+
+398
+01:01:58,588 --> 01:02:00,307
+O zaman 1 bölü 1 artı x'in
+
+399
+01:02:00,307 --> 01:02:02,307
+seri açılımını bilirsem
+
+400
+01:02:02,307 --> 01:02:07,208
+o zaman bir integral işlemiyle
+
+401
+01:02:07,208 --> 01:02:08,408
+benden istenen
+
+402
+01:02:08,408 --> 01:02:11,807
+fonksiyonun kuvvet serisine
+
+403
+01:02:11,807 --> 01:02:12,688
+geçebilirim diyorum.
+
+404
+01:02:13,948 --> 01:02:14,307
+Peki
+
+405
+01:02:14,307 --> 01:02:16,408
+geometrik seriden yola çıkarak
+
+406
+01:02:16,408 --> 01:02:18,348
+1 bölü 1 artı x'e nasıl geçerim diyorum.
+
+407
+01:02:19,048 --> 01:02:19,708
+Orada da
+
+408
+01:02:19,708 --> 01:02:20,328
+bir
+
+409
+01:02:20,328 --> 01:02:22,428
+değişken dönüşümü yapabilirim.
+
+410
+01:02:26,228 --> 01:02:29,688
+Hatta şöyle yapayım mı? Bir kere daha yazayım.
+
+411
+01:02:39,699 --> 01:02:40,599
+Bunu örüyorum.
+
+412
+01:02:46,164 --> 01:02:54,704
+Bunu biliyorum. O halde 1 bölü 1 artı x'in seri temsiline ihtiyacım var. Öncelikle planımı yapıyorum.
+
+413
+01:02:59,699 --> 01:03:04,739
+1 bölü 1 artı x'in seri aşamını nasıl bulurum? Bunun için geometrik seriyi kullanıyorum.
+
+414
+01:03:06,819 --> 01:03:08,779
+We know that this series.
+
+415
+01:03:10,299 --> 01:03:11,460
+If we substitute
+
+416
+01:03:17,588 --> 01:03:18,788
+Enmium letter.
+
+417
+01:03:22,008 --> 01:03:23,168
+By substituting,
+
+418
+01:03:23,928 --> 01:03:27,028
+if we write minus t instead of x,
+
+419
+01:03:27,028 --> 01:03:28,168
+we find
+
+420
+01:03:28,168 --> 01:03:31,148
+1 over 1 plus t
+
+421
+01:03:31,148 --> 01:03:32,348
+and
+
+422
+01:03:32,348 --> 01:03:35,788
+this function
+
+423
+01:03:42,291 --> 01:03:46,291
+Minus 1
+
+424
+01:03:52,563 --> 01:03:56,423
+İnteklade, both sides.
+
+425
+01:04:31,891 --> 01:04:39,731
+Finally, we find the power series for the desired function.
+
+426
+01:04:41,251 --> 01:04:45,891
+Now, we must talk about the interval of convergence.
+
+427
+01:04:47,571 --> 01:04:59,652
+Here, we know that in this interval, if we use substitution, we must write this and this interval,
+
+428
+01:04:59,652 --> 01:05:01,291
+but...
+
+429
+01:05:18,547 --> 01:05:32,347
+Here, the radius of this integral 1, the radius doesn't change, but you must check the end points.
+
+430
+01:05:32,347 --> 01:05:44,347
+Skip your right, t equals 1, we find minus 1 to n over n plus 1.
+
+431
+01:05:44,347 --> 01:05:48,847
+This is also Alternative Harmonic Series.
+
+432
+01:05:52,724 --> 01:05:55,804
+This is another alternating harmonics series.
+
+433
+01:05:56,443 --> 01:05:58,124
+So, this is
+
+434
+01:05:58,124 --> 01:06:00,764
+Gorgeous.
+
+435
+01:06:10,708 --> 01:06:21,628
+If we write minus 1 instead of t, we find harmonic series, harmonic series, we know that it is divergent series.
+
+436
+01:06:30,516 --> 01:06:30,876
+Okay?
+
+437
+01:06:45,652 --> 01:07:09,652
+Konular Conversion, express 1 over 1 plus x square as the sum of a power series and find the interval of convergence.
+
+438
+01:07:21,396 --> 01:07:26,976
+After the break, we will find this series.
+
+439
+01:07:29,036 --> 01:07:29,896
+Any questions?
+
+440
+01:07:39,635 --> 01:07:42,155
+If no question, okay.
+
+441
+01:07:44,976 --> 01:07:46,855
+After 10 minutes, see you.
+
+442
+01:17:48,979 --> 01:17:51,559
+Okay, let's start this example.
+
+443
+01:18:15,764 --> 01:18:17,804
+Geometric
+
+444
+01:18:17,804 --> 01:18:20,444
+Power Series
+
+445
+01:18:29,043 --> 01:18:54,243
+By substituting, we can find 1 over 1 plus x2, so we can find the power series of this function. Please write the substitution to use.
+
+446
+01:19:06,836 --> 01:19:07,716
+Can you say?
+
+447
+01:19:10,096 --> 01:19:10,976
+Substitution?
+
+448
+01:19:21,427 --> 01:19:21,787
+Okay.
+
+449
+01:19:24,367 --> 01:19:25,367
+We write
+
+450
+01:19:29,140 --> 01:19:32,140
+Minus x² instead of x.
+
+451
+01:19:40,275 --> 01:19:47,215
+replace x by minus x square.
+
+452
+01:19:50,215 --> 01:19:54,095
+So, we find the desired function.
+
+453
+01:19:55,935 --> 01:19:56,536
+And,
+
+454
+01:19:59,036 --> 01:19:59,895
+series
+
+455
+01:20:05,011 --> 01:20:08,652
+Like that, minus x squared.
+
+456
+01:20:13,716 --> 01:20:32,516
+Bu n'a da n'
+
+457
+01:20:46,003 --> 01:21:05,243
+If we write minus x square into interval, we find this interval, and this interval doesn't change.
+
+458
+01:21:10,868 --> 01:21:40,847
+We must check the end points of this interval. If x equals minus one, we find this series. If we write one, instead of the same, we find same series, this series works. So, we find this,
+
+459
+01:21:40,868 --> 01:21:45,208
+Interval of Convergence
+
+460
+01:21:58,003 --> 01:22:06,304
+We can determine the radius of convergence by applying the ratio test.
+
+461
+01:22:11,699 --> 01:22:30,559
+But here isn't necessary because we can find the interval of convergence directly, a more simple method.
+
+462
+01:22:39,699 --> 01:22:40,739
+Bir daha example.
+
+463
+01:22:43,220 --> 01:22:44,819
+Find a power series
+
+464
+01:22:47,859 --> 01:22:49,139
+representation.
+
+465
+01:22:57,747 --> 01:22:58,347
+Tengen.
+
+466
+01:23:11,475 --> 01:23:19,515
+Observe that derivative of r-tanent function 1 over 1 plus x squared.
+
+467
+01:23:30,036 --> 01:23:33,395
+If we know the series of this function,
+
+468
+01:23:37,235 --> 01:23:44,796
+We will find the power series presentation for desired function by integrating.
+
+469
+01:23:50,804 --> 01:23:55,884
+In the previous example, we find these series like that.
+
+470
+01:24:14,899 --> 01:24:24,899
+1 plus x2 equals the sum of the series.
+
+471
+01:24:43,764 --> 01:24:44,764
+İngiltere
+
+472
+01:25:06,707 --> 01:25:21,507
+If we write 1 instead of x, if we find harmonic, in alternating harmonic power series, if we write minus 1,
+
+473
+01:25:25,140 --> 01:25:25,780
+Here.
+
+474
+01:25:37,108 --> 01:25:40,188
+ve find also alternating harmonic series.
+
+475
+01:25:41,708 --> 01:25:42,188
+So,
+
+476
+01:25:44,347 --> 01:25:45,708
+minus 1 and 1.
+
+477
+01:25:49,555 --> 01:25:52,555
+in the integral of convergence.
+
+478
+01:26:14,996 --> 01:26:17,996
+Alternating series test
+
+479
+01:26:17,996 --> 01:26:28,076
+Seri conversion conditionally
+
+480
+01:26:32,692 --> 01:26:39,731
+So, the interval of this series, closed interval, minus 1 and 1.
+
+481
+01:26:41,412 --> 01:26:42,292
+In particular,
+
+482
+01:26:45,572 --> 01:26:47,412
+if we write 1,
+
+483
+01:26:52,212 --> 01:27:00,492
+Here, we find arctangent 1. What is arctangent 1? 3 over 4.
+
+484
+01:27:05,619 --> 01:27:12,619
+Bu bir soru
+
+485
+01:27:44,180 --> 01:27:47,180
+Bu bir soru.
+
+486
+01:28:16,372 --> 01:28:46,372
+Arcten x'e'
+
+487
+01:28:46,372 --> 01:28:52,872
+by using this substitution.
+
+488
+01:28:57,235 --> 01:28:57,735
+And then,
+
+489
+01:29:01,235 --> 01:29:08,235
+İçinlikle
+
+490
+01:29:32,243 --> 01:29:33,003
+Another example.
+
+491
+01:29:50,195 --> 01:29:51,695
+Bu da son olarak, yorumlar, katlı bir şey.
+
+492
+01:29:57,235 --> 01:30:01,836
+Please find this function and find
+
+493
+01:30:05,363 --> 01:30:06,683
+İntaral of?
+
+494
+01:30:09,323 --> 01:30:10,043
+Convergence.
+
+495
+01:30:15,572 --> 01:30:20,572
+F'ye ilk defa, vekınsak, çift
+
+496
+01:30:24,372 --> 01:30:27,811
+This is special series.
+
+497
+01:30:31,828 --> 01:30:33,008
+This is...
+
+498
+01:30:36,756 --> 01:30:40,155
+Geometric power series.
+
+499
+01:30:41,956 --> 01:30:42,996
+Let's look together.
+
+500
+01:30:46,356 --> 01:30:48,115
+If we rewrite this series,
+
+501
+01:30:54,387 --> 01:31:03,247
+3 to the k, x to the k times x over 2 to the k times 2.
+
+502
+01:31:09,587 --> 01:31:27,108
+x over 2 times minus 3 over 2 x to the k. This series can be written like that.
+
+503
+01:31:38,931 --> 01:31:46,532
+So, this series is this one. A1 plus R plus R squared.
+
+504
+01:31:48,452 --> 01:31:57,572
+So, here A equals x over 2. R equals minus 3 over...
+
+505
+01:32:09,619 --> 01:32:26,460
+This is geometric series. This series emerges x over 2 over 1 plus 2 over x.
+
+506
+01:32:37,460 --> 01:32:39,460
+Bu nesil de nesil de nesil.
+
+507
+01:32:39,460 --> 01:32:42,460
+Bu nesil de nesil.
+
+508
+01:32:46,804 --> 01:32:54,043
+Number series converges to number, power series converges to f'x.
+
+509
+01:32:59,475 --> 01:33:06,475
+Bu konvergis bölgesinde bu konvergis bölgesinde
+
+510
+01:33:06,475 --> 01:33:15,525
+Bu konvergis bölgesinde bu konvergis bölgesinde bu konvergis bölgesinde bu konvergis bölgesinde bu konvergis bölgesinde bu konvergis bölgesinde bu konvergis bölgesinde bu konvergis bölgesinde bu konvergis bölgesinde bu konvergis bölgesinde bu konvergis bölgesinde bu konvergis bölgesinde bu konvergis bölgesinde bu konvergis bölgesinde bu konvergis bölgesinde bu konvergis bölgesinde bu konvergis bölgesinde bu konvergis bölgesinde bu konvergis bölgesinde bu konvergis bölgesinde bu konvergis bölgesinde bu konvergis bölgesinde bu konvergis bölgesinde bu konvergis bölgesinde bu konvergis bölgesinde bu konvergis bölgesinde bu konvergis bölgesinde bu konvergis bölges
+
+511
+01:33:24,372 --> 01:33:28,372
+We write R into interval.
+
+512
+01:33:32,372 --> 01:33:37,372
+We can rewrite this inequality to...
+
+513
+01:33:55,412 --> 01:33:56,672
+2 over 3.
+
+514
+01:34:11,347 --> 01:34:32,827
+x over 2 times minus 3 over 2x to the plane equals, we write this function x over 2 plus 3x.
+
+515
+01:34:34,927 --> 01:34:38,507
+This equality holds in this interval.
+
+516
+01:34:45,619 --> 01:35:01,989
+F'x'e
+
+517
+01:35:06,355 --> 01:35:10,475
+Bu bir diğer genişliğe
+
+518
+01:35:10,475 --> 01:35:14,795
+ve bu
+
+519
+01:35:14,795 --> 01:35:16,956
+bu
+
+520
+01:35:16,956 --> 01:35:19,076
+ve bu
+
+521
+01:35:19,076 --> 01:35:23,036
+bu
+
+522
+01:35:23,036 --> 01:35:25,036
+ve bu
+
+523
+01:35:25,036 --> 01:36:05,036
+bu
+
+524
+01:35:53,203 --> 01:35:54,463
+Bir tane daha bir eksempur.
+
+525
+01:36:26,931 --> 01:36:32,112
+Needs, serisi, for this function.
+
+526
+01:36:36,404 --> 01:36:38,404
+Ve bu
+
+527
+01:36:38,404 --> 01:36:42,204
+Geometrics
+
+528
+01:37:03,667 --> 01:37:05,307
+Look at the denominator.
+
+529
+01:37:06,507 --> 01:37:13,307
+In the denominator, the constant equals 1, but here, the constant equals 2.
+
+530
+01:37:24,148 --> 01:37:24,507
+So.
+
+531
+01:37:29,108 --> 01:37:32,628
+We must rewrite this fraction.
+
+532
+01:37:46,260 --> 01:37:53,800
+So, we factor 2 from denominator.
+
+533
+01:38:02,195 --> 01:38:23,036
+1 over 2. Therefore, we find this constant 1. We separate 1 over 2 and we change the constant to 1.
+
+534
+01:38:32,595 --> 01:38:33,115
+Here
+
+535
+01:38:36,627 --> 01:38:38,627
+Bu şekilde,
+
+536
+01:38:40,627 --> 01:38:44,627
+bu şekilde,
+
+537
+01:38:47,604 --> 01:38:49,604
+in the geometric story.
+
+538
+01:38:51,844 --> 01:38:52,844
+Replace
+
+539
+01:38:57,619 --> 01:38:59,619
+Minus x over 2
+
+540
+01:39:03,060 --> 01:39:03,880
+Bye, X.
+
+541
+01:39:12,692 --> 01:39:13,712
+Red Bull A's
+
+542
+01:39:20,212 --> 01:39:22,912
+x by minus
+
+543
+01:39:27,764 --> 01:39:30,043
+X over 2
+
+544
+01:39:34,868 --> 01:39:35,708
+Teşekkürler.
+
+545
+01:39:41,268 --> 01:39:44,408
+Minus x over 2 to the end.
+
+546
+01:39:50,387 --> 01:39:57,108
+We can rewrite minus one to the n, x to the n, over to the n.
+
+547
+01:40:06,771 --> 01:40:09,572
+Better mine, the interval.
+
+548
+01:40:17,524 --> 01:40:22,444
+İlk üsü substitution here, we write minus x over 2.
+
+549
+01:40:24,164 --> 01:40:32,084
+So, minus 2 over minus 2 less than x less than 2.
+
+550
+01:40:40,659 --> 01:40:43,739
+Standpoint, the series diverges.
+
+551
+01:40:44,880 --> 01:40:45,819
+We changed.
+
+552
+01:40:47,460 --> 01:40:49,340
+So, integral is open.
+
+553
+01:41:10,323 --> 01:41:12,003
+Example, if no question.
+
+554
+01:41:21,300 --> 01:41:47,520
+Bu yaptığım işlemeyi Türkçe'de geçeyim gençler. Yine verilen fonksiyonun seri temsilini arıyorum. Yine geometrik seriden yararlanmak istiyorum bunu yaparken. Ama geometrik seriye baktığımda ikisinin arasındaki fark buradaki sabit sayı olarak görüyorum. Buradaki sabit sayı 1 iken buradaki sabit sayı 2. Geometrik seriye benzemesi için bu 2'den kurtulmam lazım benim.
+
+555
+01:41:47,520 --> 01:42:14,900
+Bunu da basit bir işlem yaparak 2 ortak çarpan parantezini alıyorum. 2'yi kesin dışarıya çıkarttığım anda fonksiyon değişmiyor ama görüntüsü değişiyor. Görüntüsü geometrik seriye benzemiş oluyor. 2'yi dışarıya çıkarttığım zaman. Bu adımda artık değişken dönüşümü yardımıyla bu fonksiyonun seri temsilini yazabiliyorum.
+
+556
+01:42:14,900 --> 01:42:26,180
+Geometrik seride x gördüğüm yerine x gördüğüm yere x-x bölü 2 yazdığımda istediğim, aradığım fonksiyona ulaşmış oluyorum.
+
+557
+01:42:29,908 --> 01:42:38,188
+Peki bunları nasıl düşüneceğiz? Bol soru çözerek. Lütfen konu sonundaki soruları, kitabınızdaki konu sonundaki soruları lütfen yapınız.
+
+558
+01:42:40,307 --> 01:42:47,828
+Ödevler yetmez gençler. Mutlaka fazladan soru çözmeniz gerekiyor. Burada yaptığımız sorular yeterli olmayacaktır.
+
+559
+01:42:48,188 --> 01:42:59,887
+Sınav sorularını bulun. Geçmiş sınav sorularını. Uygulama soruları olarak tabii ki vereceğim, size yapacağım ama sizin de ekstra soru çözmeniz büyük önemlidir.
+
+560
+01:43:04,372 --> 01:43:13,412
+Eğer soru yoksa, devam. Son soru olsun. Bu zaman kalmadı. Saat 1'de dersiniz var mı?
+
+561
+01:43:31,444 --> 01:43:38,644
+O zaman dinlenmeyi de fırsat vereyim size. Bu ödev olsun. Yapamadığınız taktirde mutlaka sorun.
+
+562
+01:43:39,244 --> 01:43:41,444
+Find some of the power series.
+
+563
+01:43:44,244 --> 01:43:51,444
+Find a function of course. This is the power series. This power series converges a function of fx.
+
+564
+01:43:52,044 --> 01:43:57,444
+Please find this function first. And then use
+
+565
+01:43:57,444 --> 01:44:07,244
+this series. And by using this series, you can find the sum of
+
+566
+01:44:10,044 --> 01:44:12,444
+this number series.
+
+567
+01:44:17,011 --> 01:44:18,771
+k a constant.
+
+568
+01:44:20,831 --> 01:44:22,871
+What is this number?
+
+569
+01:44:23,532 --> 01:44:27,231
+This is power series, this is number series.
+
+570
+01:44:27,231 --> 01:44:28,731
+If we find
+
+571
+01:44:28,731 --> 01:44:33,072
+this function
+
+572
+01:44:38,068 --> 01:44:45,068
+Bu konuda
+
+573
+01:44:44,051 --> 01:44:47,131
+Ve bu numar.
+
+574
+01:44:58,036 --> 01:45:08,235
+Bu, bu
+
+575
+01:45:16,884 --> 01:45:17,703
+Do it times?
+
+576
+01:45:26,228 --> 01:45:35,587
+use multiplication by x.
+
+577
+01:45:44,083 --> 01:45:45,823
+Okay, that's all today.
+
+578
+01:45:52,532 --> 01:45:53,032
+Okay.
+
+579
+01:45:54,572 --> 01:45:55,311
+Can share.
+
+580
+01:45:57,032 --> 01:45:58,391
+Please wait.
+
+581
+01:47:37,171 --> 01:47:37,971
+Yılgün, Taylor.
+
+582
+01:47:45,971 --> 01:47:47,431
+Dün kaydettiğimi paylaştım.
+
+583
+01:47:47,631 --> 01:47:50,391
+Yeniden yukarıda var. Arkadaşım da söylemiş zaten.
+
+584
+01:47:51,351 --> 01:47:54,731
+Ama ders sorunuya da yüklememi istemiştir bir arkadaşımız.
+
+585
+01:47:54,731 --> 01:47:55,731
+Ders sorunu da.
+
+586
+01:47:56,511 --> 01:47:58,492
+Şimdi koyarım PDF'leri.
+
+587
+01:48:13,779 --> 01:48:17,539
+En uzdaki hafta tamamen devam edeceğiz.
+
+588
+01:48:18,759 --> 01:48:19,659
+Kendinize iyi bakın.
+
+589
+01:48:29,171 --> 01:48:31,011
+İyi haftalar, iyi günler gençler.
+
+590
+01:48:39,315 --> 01:48:40,215
+Teşekkürler.

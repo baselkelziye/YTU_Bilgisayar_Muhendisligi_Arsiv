@@ -1,0 +1,2019 @@
+1
+00:01:21,299 --> 00:01:27,060
+How are you? Welcome. Merhabalar. İyiyim sağ olun. Siz nasılsınız?
+
+2
+00:01:36,052 --> 00:01:38,532
+Sınav hakkında ne düşünüyorsunuz merak ediyorum.
+
+3
+00:01:54,707 --> 00:02:02,287
+Ortalama 61 olduğu söylendi fakat not ortalamalarınız söylendi ama notlarınız verilmedi.
+
+4
+00:02:05,207 --> 00:02:07,927
+Umarım sonuçlarınız iyi gelir sizin de.
+
+5
+00:02:09,307 --> 00:02:13,187
+I will share exam grades as soon as I receive them.
+
+6
+00:02:21,907 --> 00:02:26,587
+Boş, bırakmak istediğinizde ileri gitmekte zorluk mu çektiniz [öğrenci]?
+
+7
+00:02:35,987 --> 00:02:48,508
+Evet, bir 2'yi boş bıraktınız, bir 18'i boş bıraktınız. Aralarda geçişlerde tek tek tek basmak zorunda kaldınız. Anladım. Hani 2'ye basınca 2'ye gitmiyor sistem. Tamam.
+
+8
+00:02:48,508 --> 00:03:07,747
+Toplantıda onu iletirim. Bu sorunu çözsünler. Evet, konuşuruz tabii ki. Yani onun programlayan kişi için zor olmamalı bu kadar bir şey yapmak diye düşünüyorum. Söyleyelim gençler.
+
+9
+00:03:09,908 --> 00:03:15,747
+Sonra çünkü zamanınız kalmıyor. Kalan zamanda bir an önce sorulara geçiş cevabı yapmak istiyorsunuz.
+
+10
+00:03:20,147 --> 00:03:27,087
+Düşünememişlerdir. Yani belli bir kasıt yoktur elbette. Oradaki zorluğu onlara akıl edemedikleri için.
+
+11
+00:03:30,707 --> 00:03:32,967
+Yok, yok [öğrenci], öyle düşünmeyin.
+
+12
+00:03:33,487 --> 00:03:49,948
+Zaten programı yapan kişiyle sınav sorularını hazırlayan kişi, ikisi birbirinden apayrı, sınav programını düzenleyen, yıldızda, memur, yetkili, derslerle hiç ilişkisi olmayan kişiler. Dolayısıyla hiç öyle düşünmeyin.
+
+13
+00:03:52,147 --> 00:03:52,948
+Müsterih olun.
+
+14
+00:03:56,532 --> 00:04:05,272
+Diğer sınavlarda olmayıp bunda olması da apayrı bir enteresan durum. Onu mutlaka konuşacağım gençler.
+
+15
+00:04:32,755 --> 00:04:51,595
+Dersin sonunda bakalım mı? Vakit kaybetmek istemiyorum. Çünkü zaten dün de tatile gitti dersimiz. Geri kalmayalım. Dersin sonunda ya da bağımsız olarak beraber bakarız. Tabii ki bakarız. Elbette bakalım.
+
+16
+00:04:56,627 --> 00:05:05,788
+Dediğim gibi henüz sınav sonuçları açıklanmadı gençler. Açıklanıyor, açıklanmaz. Ben de size ileteceğim, ilan edeceğim. Bugün ne yapacağız?
+
+17
+00:05:07,207 --> 00:05:10,467
+Today, we will remember the chain rule.
+
+18
+00:05:14,324 --> 00:05:22,324
+[öğrenci] bilmiyorum, sınıfın ortalamasını bilmiyorum ama İngilizce grupların ortalaması 61'dendi. Sadece o kadarını söylediler.
+
+19
+00:05:22,984 --> 00:05:29,544
+Türkçe grupların ortalaması 60, İngilizcelerin ortalaması 61 şeklinde söylendi. O kadarını biliyorum şimdilik.
+
+20
+00:05:31,043 --> 00:05:32,283
+Başka da bir açıklama yok.
+
+21
+00:05:32,283 --> 00:05:37,304
+Ok, we will do some exercise about the chain rule.
+
+22
+00:05:38,223 --> 00:05:42,884
+And then we will remember the implicit differentiation from calculus 1.
+
+23
+00:05:44,324 --> 00:05:44,864
+You know.
+
+24
+00:05:45,504 --> 00:05:52,144
+And then we will give the definition of directional derivatives and gradient vectors.
+
+25
+00:05:52,804 --> 00:05:55,484
+Let's start if you are ready to.
+
+26
+00:06:57,267 --> 00:07:08,147
+z equals f r minus s comma 2 r plus 3 s.
+
+27
+00:07:09,147 --> 00:07:14,048
+Then find partial derivative of f.
+
+28
+00:07:19,028 --> 00:07:25,388
+R ve f ve s.
+
+29
+00:07:29,459 --> 00:07:32,459
+find these partial derivatives in terms of
+
+30
+00:07:39,891 --> 00:07:42,451
+Partial derivatives of f
+
+31
+00:07:46,228 --> 00:07:48,708
+Söyümdeck, these partial debits are continued.
+
+32
+00:07:49,927 --> 00:07:50,448
+Solution
+
+33
+00:07:56,692 --> 00:08:21,271
+Composite function, f is a function of two variables, one, two variables, denoyed by x and y.
+
+34
+00:08:21,271 --> 00:08:51,251
+f is a function of two variables, here, x is another function of two variables, this is given as r minus s, y is another function of two variables, this is given to r plus,
+
+35
+00:08:51,272 --> 00:08:52,331
+three s.
+
+36
+00:08:57,620 --> 00:09:03,379
+We don't know the formula of f in terms of x and y exactly.
+
+37
+00:09:04,519 --> 00:09:10,919
+We know just x and y explicitly.
+
+38
+00:09:12,820 --> 00:09:16,879
+We need the derivative of f with respect to r.
+
+39
+00:09:17,440 --> 00:09:23,560
+Because if we substitute x and y into the formula of f,
+
+40
+00:09:23,560 --> 00:09:30,980
+We will find a function of two variables, r and s.
+
+41
+00:09:31,759 --> 00:09:35,399
+f depends on x and y.
+
+42
+00:09:35,899 --> 00:09:38,680
+x depends on r and s.
+
+43
+00:09:39,100 --> 00:09:42,700
+y depends on r and s.
+
+44
+00:09:43,700 --> 00:09:47,320
+We need the f over dr.
+
+45
+00:09:53,683 --> 00:09:57,683
+Calculate these derivatives.
+
+46
+00:09:57,683 --> 00:10:01,683
+Use this diagram.
+
+47
+00:10:01,683 --> 00:10:06,683
+From F to R,
+
+48
+00:10:06,683 --> 00:10:10,683
+we have
+
+49
+00:10:10,683 --> 00:10:12,683
+two roots.
+
+50
+00:10:17,748 --> 00:10:27,628
+From first root, df over dx times dx over dr.
+
+51
+00:10:29,508 --> 00:10:42,628
+From second root, derivative of f with respect to y and dy over dr.
+
+52
+00:10:47,187 --> 00:11:00,927
+Bu, eklik, we just can find dx over dr, because we know this formula, dx over dr equals 1.
+
+53
+00:11:02,727 --> 00:11:12,567
+And we can calculate this derivative, because we know the formula of y versus 2.
+
+54
+00:11:12,567 --> 00:11:14,607
+Right.
+
+55
+00:11:16,388 --> 00:11:17,747
+Into this formula.
+
+56
+00:11:26,131 --> 00:11:49,411
+df over dr is this equality in terms of partial derivative of f with respect to x and y. We can rewrite this f subscript r f1 plus 2x2.
+
+57
+00:11:54,836 --> 00:12:02,235
+F1 means partial derivative of f with respect to first variable.
+
+58
+00:12:05,235 --> 00:12:06,676
+Similarly, f2.
+
+59
+00:12:09,355 --> 00:12:15,475
+Another partial derivative of f with respect to x.
+
+60
+00:12:22,323 --> 00:12:43,043
+From f to s, we have to root, and we write the formula df over dx times dx over ds, df over dy times dy over ds.
+
+61
+00:12:43,043 --> 00:13:03,943
+dx over ds equals minus 1, dy over ds equals 3. So we write minus 1, 3, minus df over dx plus 3, df over dy.
+
+62
+00:13:05,943 --> 00:13:11,343
+f equals minus f1 plus 3, f2.
+
+63
+00:13:13,043 --> 00:13:14,203
+Any question?
+
+64
+00:13:24,052 --> 00:13:25,052
+No question.
+
+65
+00:13:28,292 --> 00:13:31,611
+Another question.
+
+66
+00:13:37,427 --> 00:13:39,607
+Füncülünün, zet is given.
+
+67
+00:13:43,475 --> 00:13:44,275
+Like that.
+
+68
+00:13:51,604 --> 00:13:53,044
+Same question, fine.
+
+69
+00:13:53,984 --> 00:13:55,184
+The partial derivatives
+
+70
+00:13:59,347 --> 00:14:03,507
+of f in terms of
+
+71
+00:14:07,700 --> 00:14:10,700
+f' ve
+
+72
+00:14:12,500 --> 00:14:14,700
+partial derivatives
+
+73
+00:14:15,700 --> 00:14:16,700
+of g.
+
+74
+00:14:18,100 --> 00:14:19,700
+Ve bu formula
+
+75
+00:14:24,947 --> 00:14:31,947
+ve
+
+76
+00:14:54,964 --> 00:14:57,604
+is a function of a single variable.
+
+77
+00:15:01,364 --> 00:15:01,923
+Here
+
+78
+00:15:06,995 --> 00:15:09,436
+is a single variable function.
+
+79
+00:15:13,716 --> 00:15:19,135
+But x is a function of two variables.
+
+80
+00:15:23,059 --> 00:15:32,000
+F depends on x, x depends on s and t.
+
+81
+00:15:32,000 --> 00:15:35,000
+Here, x is...
+
+82
+00:15:38,740 --> 00:15:46,019
+x and g are same functions.
+
+83
+00:15:58,355 --> 00:16:08,076
+Şimdi, g ile f, finally, we find a function of two variables, s and t.
+
+84
+00:16:08,076 --> 00:16:16,796
+So, we have two partial derivatives, df over ds, df over dt.
+
+85
+00:16:21,235 --> 00:16:25,535
+S, we have just one root.
+
+86
+00:16:27,076 --> 00:16:34,855
+So, this formula, df over dg, this is ordinary derivative,
+
+87
+00:16:36,456 --> 00:16:46,836
+because f is a single-valued function, single-variable function, and dg over ds.
+
+88
+00:16:46,836 --> 00:16:58,775
+We rewrite this f' times cs.
+
+89
+00:16:58,775 --> 00:17:01,716
+This is...
+
+90
+00:17:07,827 --> 00:17:32,827
+From f to t, we have just one root. So, df over dg times dg over dt. So, f prime times gt.
+
+91
+00:17:41,203 --> 00:17:42,023
+Any problem?
+
+92
+00:17:49,428 --> 00:17:49,968
+One more.
+
+93
+00:17:55,731 --> 00:18:01,811
+f is a function of three variable, x, y, t.
+
+94
+00:18:02,851 --> 00:18:08,011
+x is a single variable function of t.
+
+95
+00:18:09,231 --> 00:18:16,471
+y is another single variable function of t.
+
+96
+00:18:21,844 --> 00:18:33,923
+If we substitute x and y into function f, finally we will get a function of single variable t.
+
+97
+00:18:36,644 --> 00:18:46,804
+So, we can write the formula of derivative of f with respect to t.
+
+98
+00:18:53,683 --> 00:18:57,683
+F'ye görelim.
+
+99
+00:18:57,683 --> 00:18:59,683
+X'ye görelim.
+
+100
+00:18:59,683 --> 00:19:01,683
+Y'ye görelim.
+
+101
+00:19:01,683 --> 00:19:03,683
+X'ye görelim.
+
+102
+00:19:03,683 --> 00:19:07,683
+Y'ye görelim.
+
+103
+00:19:07,683 --> 00:19:21,683
+F'ye görelim.
+
+104
+00:19:19,443 --> 00:19:44,644
+From the first root, df over dx times derivative of x with respect to 2, plus df over dy times y prime t, and add derivative of f with respect to t.
+
+105
+00:20:02,612 --> 00:20:03,432
+Any questions?
+
+106
+00:20:10,355 --> 00:20:27,076
+Z is a function of 4, here X is a function of S and T, Y is a function of S and T.
+
+107
+00:20:27,076 --> 00:20:35,796
+You can write the formula of dz over ds, dz over dt.
+
+108
+00:20:54,163 --> 00:20:55,163
+Evet, evet.
+
+109
+00:21:21,491 --> 00:21:28,491
+I'll share with you a PDF, Homework about Chain Rule.
+
+110
+00:22:00,084 --> 00:22:05,403
+Bu example, because every function is given explicitly.
+
+111
+00:22:15,347 --> 00:22:15,847
+Teşekkürler.
+
+112
+00:22:30,483 --> 00:22:39,803
+Can you say whether z is a function of two or single variable function?
+
+113
+00:22:39,803 --> 00:22:41,083
+Which one?
+
+114
+00:22:54,644 --> 00:22:55,223
+Zet.
+
+115
+00:22:59,188 --> 00:23:05,548
+is a function of two or single variable function. What do you think?
+
+116
+00:23:17,844 --> 00:23:19,644
+Say it is true.
+
+117
+00:23:21,943 --> 00:23:30,084
+If we substitute u and r into formula z,
+
+118
+00:23:32,584 --> 00:23:38,004
+you will get a function of just x.
+
+119
+00:23:40,004 --> 00:23:44,864
+First method, direct substitution.
+
+120
+00:23:44,864 --> 00:23:50,264
+z equals 2 u.
+
+121
+00:23:53,844 --> 00:23:55,844
+3r
+
+122
+00:23:55,844 --> 00:23:57,844
+ve
+
+123
+00:23:57,844 --> 00:23:59,844
+3r
+
+124
+00:24:03,220 --> 00:24:09,799
+3x, x2, plus 3x, x2.
+
+125
+00:24:10,940 --> 00:24:12,880
+Finally, we get...
+
+126
+00:24:16,948 --> 00:24:23,948
+ve
+
+127
+00:24:29,011 --> 00:24:33,491
+Second method is the chain rule.
+
+128
+00:24:39,412 --> 00:24:49,852
+Z depends on u and r, u depends on x and r, r depends on...
+
+129
+00:24:53,683 --> 00:25:09,703
+So, from z to x, we have three roots, dz over dx equals,
+
+130
+00:25:15,988 --> 00:25:41,628
+Dz over du times du over d plus Dz over du times du over dr dr over dx plus Dz over dr.
+
+131
+00:25:45,140 --> 00:25:48,040
+D'ark over D'x
+
+132
+00:25:52,692 --> 00:25:55,372
+What is dz over du?
+
+133
+00:25:58,372 --> 00:26:04,692
+We see in the formula of z, so this is just 2.
+
+134
+00:26:05,412 --> 00:26:08,892
+What is du over dx?
+
+135
+00:26:10,392 --> 00:26:12,291
+We look at the formula of u.
+
+136
+00:26:13,892 --> 00:26:16,372
+This is i.
+
+137
+00:26:28,435 --> 00:26:34,055
+Bu da x'e y'
+
+138
+00:26:38,067 --> 00:26:39,147
+Thank you, [öğrenci].
+
+139
+00:26:41,048 --> 00:26:43,288
+This must be X.
+
+140
+00:26:51,892 --> 00:27:19,251
+Okay, here, what is dz over du? Du over dr? x. What is dr over dx? 2x. What is dz over dr? 3. What is dr over dx? 2x.
+
+141
+00:27:22,867 --> 00:27:28,508
+We know that r equals x squared.
+
+142
+00:27:53,940 --> 00:28:05,259
+Of course first method is simpler than second method, because here we know the formula of Z, U, R, explicitly.
+
+143
+00:28:11,763 --> 00:28:23,543
+If we don't know the formula of one of them, we need second method. So please say.
+
+144
+00:28:29,044 --> 00:28:34,084
+Any problem, any question about seconds method?
+
+145
+00:28:57,811 --> 00:29:01,291
+İmpliçit
+
+146
+00:29:29,652 --> 00:29:30,532
+Calculus 1
+
+147
+00:29:56,211 --> 00:30:04,451
+an equation of the form f x y equals 0
+
+148
+00:30:09,652 --> 00:30:19,231
+Y defines y implicitly as a differentiable function of x.
+
+149
+00:30:22,740 --> 00:30:31,539
+That is, f, x, y is a function of x equals 0.
+
+150
+00:30:32,660 --> 00:30:38,519
+Here, x in the domain of f.
+
+151
+00:30:47,539 --> 00:30:51,279
+D y over d x.
+
+152
+00:30:54,996 --> 00:30:58,316
+You know the formula of this.
+
+153
+00:30:59,636 --> 00:31:03,896
+But, this formula is obtained from Chain Rule.
+
+154
+00:31:07,380 --> 00:31:08,380
+Bir,
+
+155
+00:31:10,660 --> 00:31:12,140
+differentiate
+
+156
+00:31:29,203 --> 00:31:30,523
+Implicit Function,
+
+157
+00:31:31,864 --> 00:31:32,963
+with respect to
+
+158
+00:31:39,443 --> 00:31:43,443
+F depends on x and y, y depends on x.
+
+159
+00:31:44,084 --> 00:31:50,604
+So, from f to x, we have two roots.
+
+160
+00:31:52,124 --> 00:32:02,563
+From first root, fx plus from second root, f y times dy over dx.
+
+161
+00:32:03,263 --> 00:32:08,803
+Derivative of a constant with respect to x equals 0.
+
+162
+00:32:09,443 --> 00:32:14,303
+We solve for dy over dx.
+
+163
+00:32:14,903 --> 00:32:16,443
+We will get...
+
+164
+00:32:26,708 --> 00:32:45,988
+For example, if y is a function of x, and this function is given, we need derivative of y with respect to x.
+
+165
+00:32:54,516 --> 00:32:55,355
+Be right.
+
+166
+00:32:59,188 --> 00:33:00,148
+İplicit Function
+
+167
+00:33:05,076 --> 00:33:05,615
+And then.
+
+168
+00:33:10,291 --> 00:33:13,751
+First Method, Formula.
+
+169
+00:33:20,852 --> 00:33:26,372
+Notice f , here x and y is independent variable.
+
+170
+00:33:28,451 --> 00:33:29,732
+To find f ,
+
+171
+00:33:54,228 --> 00:33:58,608
+Now, you can use second method, chain rule.
+
+172
+00:34:07,412 --> 00:34:12,612
+Fx3x2,
+
+173
+00:34:15,492 --> 00:34:16,612
+in the chain rule,
+
+174
+00:34:17,811 --> 00:34:20,932
+x is independent variable,
+
+175
+00:34:21,652 --> 00:34:25,811
+but y is dependent variable.
+
+176
+00:34:50,579 --> 00:34:55,059
+f y dy over dx
+
+177
+00:34:55,059 --> 00:34:56,980
+equals 0.
+
+178
+00:35:02,931 --> 00:35:04,931
+3, x2,
+
+179
+00:35:13,523 --> 00:35:42,523
+3x² plus 3y² dy over dx minus, we use the product rule of differentiation, x is independent, y is dependent variable of x, so minus 6y plus 6x dy over dx.
+
+180
+00:35:43,523 --> 00:35:49,523
+equals 0. If we solve dy over dx, equals 0. If we solve dy over dx, equals 0.
+
+181
+00:35:53,268 --> 00:36:02,367
+Minus 3 x square plus 6 y, 3 y square.
+
+182
+00:36:09,844 --> 00:36:12,923
+6x, muster, true.
+
+183
+00:36:27,668 --> 00:36:30,708
+Any problem? Any question?
+
+184
+00:36:43,315 --> 00:36:45,875
+Okay, no question.
+
+185
+00:36:47,675 --> 00:36:48,215
+No.
+
+186
+00:36:54,003 --> 00:37:13,884
+Z is a function of x and y and an equation.
+
+187
+00:37:17,844 --> 00:37:23,624
+İmplicit function is given.
+
+188
+00:37:27,699 --> 00:37:29,179
+Here, x
+
+189
+00:37:33,043 --> 00:37:34,804
+We can rewrite like that.
+
+190
+00:37:37,483 --> 00:37:40,063
+F, x, y,
+
+191
+00:37:41,743 --> 00:37:43,364
+f of x, y,
+
+192
+00:37:44,083 --> 00:37:45,083
+equals 0.
+
+193
+00:37:45,683 --> 00:37:47,743
+Here, x, y,
+
+194
+00:37:47,864 --> 00:37:49,503
+in the domain of f.
+
+195
+00:37:54,003 --> 00:37:54,503
+Teşekkürler.
+
+196
+00:37:58,900 --> 00:38:00,039
+F'r,
+
+197
+00:38:01,920 --> 00:38:03,720
+differentiable functions,
+
+198
+00:38:05,800 --> 00:38:06,220
+then,
+
+199
+00:38:09,160 --> 00:38:09,960
+we find
+
+200
+00:38:09,960 --> 00:38:13,380
+the partial derivatives of F
+
+201
+00:38:13,380 --> 00:38:15,220
+with respect to X
+
+202
+00:38:15,220 --> 00:38:18,059
+and
+
+203
+00:38:23,315 --> 00:38:28,576
+df over dy by chain rules.
+
+204
+00:38:36,083 --> 00:38:42,864
+X, Y, Z, Z, depends on X and Y.
+
+205
+00:38:43,823 --> 00:38:50,683
+So, from F to X, we have two roots.
+
+206
+00:38:52,844 --> 00:38:54,364
+We can write the formula.
+
+207
+00:38:56,083 --> 00:39:03,884
+Fx plus Fz times dz over dx.
+
+208
+00:39:03,884 --> 00:39:06,663
+X equals zero.
+
+209
+00:39:15,219 --> 00:39:22,099
+F over dx.
+
+210
+00:39:22,099 --> 00:39:36,980
+This means dz over dx.
+
+211
+00:39:33,619 --> 00:39:34,119
+Evet.
+
+212
+00:39:42,996 --> 00:39:44,096
+Differenatiyat.
+
+213
+00:39:48,628 --> 00:39:49,908
+Both sides
+
+214
+00:39:49,908 --> 00:39:52,668
+Of
+
+215
+00:39:52,668 --> 00:39:54,568
+F
+
+216
+00:39:54,568 --> 00:39:58,367
+X, Y, Z equals 0
+
+217
+00:39:58,367 --> 00:40:00,128
+And
+
+218
+00:40:00,128 --> 00:40:01,288
+Write
+
+219
+00:40:01,288 --> 00:40:02,648
+Fx plus
+
+220
+00:40:02,648 --> 00:40:04,648
+Fz times
+
+221
+00:40:04,648 --> 00:40:06,908
+Dz over Dx
+
+222
+00:40:06,908 --> 00:40:07,807
+Equus 0
+
+223
+00:40:07,807 --> 00:40:09,847
+And solve for
+
+224
+00:40:09,847 --> 00:40:12,248
+Dz over Dx
+
+225
+00:40:12,248 --> 00:40:13,388
+Equus minus
+
+226
+00:40:13,388 --> 00:40:15,708
+Fx over Fz
+
+227
+00:40:15,708 --> 00:40:44,708
+Fx
+
+228
+00:40:32,884 --> 00:40:39,003
+dy, or vz over dy.
+
+229
+00:40:40,744 --> 00:40:41,103
+We
+
+230
+00:40:41,103 --> 00:40:44,583
+differentiate
+
+231
+00:40:44,583 --> 00:40:49,003
+both sides
+
+232
+00:40:49,003 --> 00:40:50,503
+of
+
+233
+00:40:50,503 --> 00:40:53,583
+fxyz
+
+234
+00:40:53,583 --> 00:40:55,543
+equal zero with respect
+
+235
+00:40:55,543 --> 00:40:57,244
+to y.
+
+236
+00:40:59,804 --> 00:41:00,764
+Now,
+
+237
+00:41:00,764 --> 00:41:02,623
+from f
+
+238
+00:41:02,623 --> 00:41:03,884
+to y
+
+239
+00:41:03,884 --> 00:41:05,844
+we have also
+
+240
+00:41:05,844 --> 00:41:06,724
+two roots
+
+241
+00:41:06,724 --> 00:41:09,864
+f y
+
+242
+00:41:09,864 --> 00:41:11,164
+plus
+
+243
+00:41:11,164 --> 00:41:12,644
+f z
+
+244
+00:41:12,644 --> 00:41:13,583
+times
+
+245
+00:41:13,583 --> 00:41:15,724
+dz over dy
+
+246
+00:41:15,724 --> 00:41:18,804
+right side
+
+247
+00:41:18,804 --> 00:41:19,844
+is zero.
+
+248
+00:41:21,384 --> 00:41:22,244
+So, for
+
+249
+00:41:22,244 --> 00:41:24,483
+dz over dy
+
+250
+00:41:24,483 --> 00:41:26,364
+equals
+
+251
+00:41:26,364 --> 00:41:27,164
+minus
+
+252
+00:41:27,164 --> 00:41:28,164
+fy
+
+253
+00:41:28,164 --> 00:41:29,083
+over
+
+254
+00:41:29,083 --> 00:41:30,244
+f z.
+
+255
+00:41:30,244 --> 00:41:31,304
+This is
+
+256
+00:41:31,304 --> 00:41:33,684
+another
+
+257
+00:41:33,684 --> 00:41:34,523
+another formula.
+
+258
+00:41:34,523 --> 00:41:34,644
+Another formula.
+
+259
+00:41:44,340 --> 00:41:47,280
+Example, if.
+
+260
+00:41:59,668 --> 00:42:05,887
+In this equation, z is a function of x and y.
+
+261
+00:42:10,387 --> 00:42:16,768
+D z over d x, d z over d y.
+
+262
+00:42:43,347 --> 00:43:02,628
+Rewrite this implicit function denied by Fx³ y³ z³-1 equals 0.
+
+263
+00:43:06,148 --> 00:43:08,867
+If you use formula
+
+264
+00:43:17,204 --> 00:43:24,204
+You need f , f , z and then f .
+
+265
+00:43:24,204 --> 00:43:31,204
+Here x, y, z are independent variables.
+
+266
+00:43:31,204 --> 00:43:40,204
+f is 3x square plus 3y, z.
+
+267
+00:43:40,204 --> 00:43:42,204
+What is f ?
+
+268
+00:43:42,204 --> 00:43:46,204
+3z square plus 6xy.
+
+269
+00:43:46,204 --> 00:43:55,204
+For dz over dy, you use another formula.
+
+270
+00:43:55,204 --> 00:44:02,204
+We calculate the denominator, which is fy.
+
+271
+00:44:02,204 --> 00:44:14,204
+Fy is 3y square plus 6x, z.
+
+272
+00:44:14,204 --> 00:44:23,204
+The next one is the first one.
+
+273
+00:44:20,884 --> 00:44:22,244
+This is the first method.
+
+274
+00:44:34,996 --> 00:44:35,836
+Second method.
+
+275
+00:45:02,452 --> 00:45:16,852
+given formula, and here x, i, y, and y are independent variables, and z is dependent variable.
+
+276
+00:45:21,172 --> 00:45:21,632
+Here,
+
+277
+00:45:27,251 --> 00:45:31,891
+İlk olarak, dZ over dx'e
+
+278
+00:45:35,123 --> 00:45:55,803
+to find dz over dx. Differenitiat each term with respect to x and hold y as a constant.
+
+279
+00:46:05,588 --> 00:46:12,168
+Don't forget that that is dependent variable of x and y.
+
+280
+00:46:17,364 --> 00:46:47,284
+Derivative of first term with respect to x, 3x square. Derivative of another independent variable with respect to x equals 0. Derivative of z cube with respect to x is 3z square times dz.
+
+281
+00:46:47,364 --> 00:46:48,724
+over dx.
+
+282
+00:46:51,724 --> 00:46:54,083
+For fourth term.
+
+283
+00:46:57,523 --> 00:47:06,304
+We use the product rule of differentiation because this is the product of x times z.
+
+284
+00:47:10,963 --> 00:47:31,483
+6y is constant, derivative of x with respect to x times z plus x times derivative of z with respect to x equals 0.
+
+285
+00:47:31,483 --> 00:47:55,603
+If we solve dz over dx in this equality, we get yz over 3z square 6xy.
+
+286
+00:47:55,603 --> 00:47:59,804
+Any problem? Any question?
+
+287
+00:48:18,516 --> 00:48:35,876
+Now, we find dz over dy. We differentiate both sides, each terms with respect to y. Here, we keep x fixed.
+
+288
+00:48:39,235 --> 00:48:47,715
+Derivative of first term with respect to y is zero. Derivative of second term with respect to y
+
+289
+00:48:48,996 --> 00:48:56,996
+y is independent variable. So, this is 3y squared. Derivative of third term with respect to y.
+
+290
+00:48:58,596 --> 00:49:09,876
+Since z is dependent variable of z, x, x, and y. So, this derivative is dz over dy.
+
+291
+00:49:09,876 --> 00:49:10,356
+Okay?
+
+292
+00:49:44,659 --> 00:49:51,480
+If no question, you can do this question.
+
+293
+00:49:51,480 --> 00:50:02,879
+Find dz over dx and dz over dy at 0, 0, 0.
+
+294
+00:50:02,879 --> 00:50:18,079
+If x cubed plus z squared plus y e to the xz plus z cosine y equals 0.
+
+295
+00:50:20,219 --> 00:50:31,559
+From question, we know that is a function of x and y.
+
+296
+00:50:31,559 --> 00:50:36,719
+Here, x and y are independent variables.
+
+297
+00:50:37,299 --> 00:50:40,460
+Z is a dependent variable.
+
+298
+00:50:43,379 --> 00:50:47,619
+And denited by capital F.
+
+299
+00:50:48,219 --> 00:50:51,079
+F is a function of x, y, z.
+
+300
+00:50:51,319 --> 00:50:52,179
+It is 0.
+
+301
+00:50:53,119 --> 00:50:57,139
+You can use, of course, Fonla.
+
+302
+00:51:02,003 --> 00:51:03,764
+Bu bir tane 0.
+
+303
+00:51:13,556 --> 00:51:14,316
+Any questions?
+
+304
+00:51:19,315 --> 00:51:31,555
+Bir sonraki bir sonraki bir sonraki bir sonraki bir sonraki bir sonraki bir sonraki bir sonraki bir sonraki bir sonraki bir sonraki bir sonraki bir sonraki bir sonraki bir sonraki bir sonraki bir sonraki bir sonraki bir sonraki bir sonraki bir sonraki bir sonraki bir sonraki bir sonraki bir sonraki bir sonraki bir sonraki bir sonraki bir sonraki bir sonraki bir sonraki bir sonraki bir sonraki bir sonraki bir sonraki bir sonraki bir sonraki bir sonraki bir sonraki bir sonraki bir sonraki bir sonraki bir sonraki bir sonraki bir sonraki bir sonraki bir sonraki bir sonraki bir sonraki bir sonraki bir sonraki bir sonraki bir sonraki bir sonraki bir sonraki bir sonraki bir sonraki bir sonraki bir sonraki bir sonraki bir sonraki bir sonraki bir sonraki bir sonraki bir sonraki bir sonraki bir sonraki bir sonraki bir sonraki bir sonraki bir sonraki bir sonraki bir sonraki bir sonraki bir
+
+305
+00:51:38,411 --> 00:51:40,411
+10 minuten enough, I think.
+
+306
+01:08:51,699 --> 01:08:52,279
+Taylor again.
+
+307
+01:08:59,731 --> 01:09:04,252
+Please write directional derivatives and gradient vectors.
+
+308
+01:09:16,916 --> 01:09:21,256
+I want to show you a map.
+
+309
+01:10:03,412 --> 01:10:03,992
+Peace.
+
+310
+01:10:05,072 --> 01:10:06,891
+Let's see this weather map.
+
+311
+01:10:10,292 --> 01:10:16,852
+Regions painted in the same color are locations with the same temperature.
+
+312
+01:10:21,427 --> 01:10:23,927
+Consider the temperature function.
+
+313
+01:10:27,764 --> 01:10:30,444
+t of x and y
+
+314
+01:10:35,347 --> 01:10:42,347
+ve sivas'ın
+
+315
+01:10:48,724 --> 01:10:53,644
+Martial derivative of t with respect to x
+
+316
+01:10:59,380 --> 01:11:06,220
+The rate of change of temperature with respect to distance a bit trouble.
+
+317
+01:11:10,068 --> 01:11:25,988
+Tx is rate of change of...
+
+318
+01:11:29,460 --> 01:11:30,180
+Temperature.
+
+319
+01:11:35,572 --> 01:11:37,572
+Distançı.
+
+320
+01:11:48,404 --> 01:11:54,884
+We travel east.
+
+321
+01:11:59,028 --> 01:11:59,628
+Sebas.
+
+322
+01:12:06,452 --> 01:12:23,931
+is the rate of change of temperature with respect to distance if we travel north from Silas. This is Tx, this is Ty.
+
+323
+01:12:27,796 --> 01:12:34,115
+But, what if we travel salt east?
+
+324
+01:12:38,612 --> 01:12:40,311
+or some other direction.
+
+325
+01:12:42,032 --> 01:12:46,752
+Then, how the rate of change of temperature is calculated?
+
+326
+01:12:53,460 --> 01:12:59,520
+if we travel from Sivas to Adiyaman.
+
+327
+01:13:03,091 --> 01:13:07,991
+How the rate of change of temperature is calculated?
+
+328
+01:13:14,836 --> 01:13:30,416
+In this section, we introduce a type of derivative called directional derivative that enables us to find rate of change of a function of two or more variables in any direction.
+
+329
+01:13:34,644 --> 01:13:41,724
+to find the rate of change of a function.
+
+330
+01:13:45,332 --> 01:13:48,771
+of multivariable
+
+331
+01:13:52,372 --> 01:13:53,032
+Function.
+
+332
+01:14:02,707 --> 01:14:06,507
+in any direction
+
+333
+01:14:10,804 --> 01:14:16,923
+We define the directional.
+
+334
+01:14:21,108 --> 01:14:21,828
+Diyar veç.
+
+335
+01:14:32,467 --> 01:14:32,988
+Uday!
+
+336
+01:14:38,644 --> 01:14:57,484
+F'y'e de f'y'e de f'y'e de f'y'e de f'y'e de f'y'e de f'y'e de f'y'e de f'y'e de f'y'e de f'y'e de f'y'e de f'y'e de f'y'e de f'y'e de f'y'e de f'y'e de f'y'e de f'y'e de f'y'e de f'y'e de f'y'e de f'y'e de f'y'e de f'y'e de f'y'e de f'y'e de f'y'e de f'y'e de f'y'e de f'y'e de f'y'e de f'y'e de f'y'e de f'y'e de f'y'e de f'y'e de f
+
+337
+01:15:01,684 --> 01:15:12,064
+Defined as the rate of change of f, df over gh.
+
+338
+01:15:12,064 --> 01:15:14,064
+This means...
+
+339
+01:15:19,636 --> 01:15:21,476
+The change in F
+
+340
+01:15:27,252 --> 01:15:34,252
+fx plus h y zero minus fx zero y zero
+
+341
+01:15:34,252 --> 01:15:38,332
+over h.
+
+342
+01:15:39,132 --> 01:15:44,612
+For example, this distance h from Sivas
+
+343
+01:15:50,131 --> 01:15:51,131
+Tutunceli
+
+344
+01:15:55,764 --> 01:16:10,163
+So, the distance between Sivas-Tunceli is h, so the change in f from Sivas to h is this.
+
+345
+01:16:15,380 --> 01:16:22,180
+This is the directional derivative of f in the x-direction.
+
+346
+01:16:58,292 --> 01:17:09,231
+x-axis, means, in the direction, unit vector, i.
+
+347
+01:17:20,051 --> 01:17:28,551
+Similarly, the partial derivative of f with respect to y at x0, y0,
+
+348
+01:17:33,747 --> 01:17:35,107
+Defined as
+
+349
+01:17:41,300 --> 01:17:47,699
+x0, y0, plus h, fx0, y0, over h.
+
+350
+01:17:49,739 --> 01:18:02,619
+This is the rate of change of f in the direction y-axis.
+
+351
+01:18:06,771 --> 01:18:10,011
+We can say in the direction
+
+352
+01:18:14,131 --> 01:18:16,811
+Unit Vector J
+
+353
+01:18:48,148 --> 01:18:55,168
+Bu da?
+
+354
+01:18:58,579 --> 01:19:02,300
+The rate of change of f
+
+355
+01:19:08,756 --> 01:19:27,756
+at the point P in the direction of an arbitrary direction, arbitrary.
+
+356
+01:19:35,188 --> 01:19:35,948
+Vektör?
+
+357
+01:19:37,948 --> 01:19:38,268
+Evet.
+
+358
+01:19:42,963 --> 01:19:47,684
+Arbitrary unit vector u.
+
+359
+01:20:02,355 --> 01:20:09,755
+You want to travel the point from P from Q.
+
+360
+01:20:14,420 --> 01:20:29,779
+Distance between p and q h and the direction vector in the direction p q unit vector su.
+
+361
+01:20:33,235 --> 01:20:38,376
+U is an unit vector in the direction of PQ.
+
+362
+01:20:47,028 --> 01:20:53,688
+to find the rate of change of f in the direction of u.
+
+363
+01:20:57,300 --> 01:21:01,800
+We must calculate this limit.
+
+364
+01:21:03,880 --> 01:21:15,360
+Here, delta f is the change of f in f from p to q.
+
+365
+01:21:22,612 --> 01:21:28,971
+A ve B'ye
+
+366
+01:21:38,707 --> 01:21:46,207
+This vector is A, this vector is B.
+
+367
+01:21:51,539 --> 01:21:51,939
+So,
+
+368
+01:21:58,260 --> 01:22:00,579
+This distance, HA.
+
+369
+01:22:05,011 --> 01:22:07,791
+This equals h, b.
+
+370
+01:22:09,211 --> 01:22:19,532
+So, x equals x0 plus h, a, y equals y0 plus h, b.
+
+371
+01:22:19,532 --> 01:22:26,692
+We need delta f, f x, y minus x0, y0.
+
+372
+01:22:26,692 --> 01:22:43,311
+If we substitute x and y, x0 plus h, a, y0 plus h, b, minus x0, y0.
+
+373
+01:22:43,311 --> 01:23:04,311
+Finally, limit of, as h goes 0, f x plus h, a, y0, h, b, minus f x0, y0, over h.
+
+374
+01:23:05,311 --> 01:23:12,751
+This is the rate of change of f in the direction of u.
+
+375
+01:23:12,751 --> 01:23:27,751
+If this is the rate of change of x0, if this limit exists,
+
+376
+01:23:27,751 --> 01:23:39,751
+if this limit exists,
+
+377
+01:23:34,868 --> 01:23:44,628
+This limit is called
+
+378
+01:23:48,435 --> 01:24:09,515
+Directional Derivative of f at this point in the direction of this vector u.
+
+379
+01:24:18,612 --> 01:24:43,771
+This limit is denoted by d u f x0 y0, or df over dh u and the point p.
+
+380
+01:24:55,283 --> 01:24:55,683
+Here
+
+381
+01:25:01,876 --> 01:25:06,296
+Take u equals i.
+
+382
+01:25:11,220 --> 01:25:18,900
+Direction derivative of f in the direction, the unit vector i.
+
+383
+01:25:22,644 --> 01:25:52,644
+F'i'ye görebilecek bir derece f'i'ye görebilecek bir derece f'i'ye görebilecek bir derece f'i'ye görebilecek bir derece f'i'ye görebilecek bir derece f'i'ye görebilecek bir derece f'i'ye görebilecek bir derece f'i'ye görebilecek bir derece f'i'ye görebilecek bir derece f'i'ye görebilecek bir derece f'i'ye görebilecek bir derece f'i'ye görebilecek bir derece f'i'ye görebilecek bir derece f'i'ye görebilecek bir derece f'i'ye görebilecek bir derece f'i'ye görebilecek bir derece f'i'ye görebilecek bir derece f'i'ye görebilecek bir derece f'i'ye göreb
+
+384
+01:25:52,644 --> 01:25:56,484
+are just special cases of directional derivatives.
+
+385
+01:26:05,652 --> 01:26:08,532
+Any question about definition of direction derivatives?
+
+386
+01:26:22,068 --> 01:26:29,887
+If no question, we can give the interpretation of directional derivative.
+
+387
+01:27:05,300 --> 01:27:08,460
+A function of two variable represents
+
+388
+01:27:11,956 --> 01:27:16,596
+As surface, as, in space.
+
+389
+01:27:33,844 --> 01:27:42,304
+Let s, like that, in this space.
+
+390
+01:28:15,667 --> 01:28:17,207
+Domain of F
+
+391
+01:28:50,228 --> 01:28:51,127
+corresponding point.
+
+392
+01:28:59,636 --> 01:29:04,416
+P0, x0, y0, z0,
+
+393
+01:29:05,976 --> 01:29:08,216
+lies on the space S.
+
+394
+01:29:08,856 --> 01:29:10,896
+Here, z0
+
+395
+01:29:10,896 --> 01:29:13,096
+is the value of f
+
+396
+01:29:13,096 --> 01:29:14,696
+at the point
+
+397
+01:29:14,696 --> 01:29:15,816
+P.
+
+398
+01:29:21,716 --> 01:29:42,476
+Let us consider the vertical plane that passes through to point P0 in the direction of unit vector u.
+
+399
+01:29:47,923 --> 01:30:02,923
+We consider vertical plane in the direction of u, this is true to point p and p0. Let's draw.
+
+400
+01:30:14,707 --> 01:30:16,707
+Bu ortakonel plana.
+
+401
+01:31:23,956 --> 01:31:39,556
+The intersection of this vertical plane and the surface S is this curve C. C is...
+
+402
+01:31:45,555 --> 01:31:52,555
+bu
+
+403
+01:32:06,836 --> 01:32:10,836
+Açık bir ortakı ile ilerseksiyonu ile bir kürteki c.
+
+404
+01:32:24,595 --> 01:32:27,595
+Şimdi bu tanğın adı.
+
+405
+01:32:32,020 --> 01:32:39,340
+t to c at the point p0.
+
+406
+01:32:46,068 --> 01:32:53,068
+ve
+
+407
+01:32:54,963 --> 01:33:20,564
+is the rate of change of f in the direction of u. In other words, the slope of tangent line is the direction of derivative of f at x0, y0 in the direction of u.
+
+408
+01:34:12,851 --> 01:34:13,391
+Any question?
+
+409
+01:34:23,347 --> 01:34:25,667
+We can do examples.
+
+410
+01:34:30,100 --> 01:34:53,780
+Using the definition, find the derivative of f x squared plus xy at the point 1, 2 in the direction.
+
+411
+01:34:58,452 --> 01:34:59,731
+Do you need vector?
+
+412
+01:35:03,636 --> 01:35:09,536
+1 over square root 2i, 1 over square root 2j.
+
+413
+01:35:13,555 --> 01:35:33,395
+Definition. We need the definition of limit x0, what is x0? 1 plus h, what is the first component of unit vector? 1 over root 2, comma.
+
+414
+01:35:39,923 --> 01:35:50,524
+2 plus h over root 2 minus the value of f at this point over.
+
+415
+01:35:54,387 --> 01:36:04,188
+F is direction derivative of F at the given point in the direction u.
+
+416
+01:36:05,988 --> 01:36:08,988
+We need to calculate this limit.
+
+417
+01:36:11,387 --> 01:36:18,988
+We have the formula of F, so first we write first term.
+
+418
+01:36:23,699 --> 01:36:24,699
+X girl
+
+419
+01:36:30,612 --> 01:36:32,292
+Plus x
+
+420
+01:36:32,292 --> 01:36:34,591
+Times
+
+421
+01:36:39,859 --> 01:36:46,179
+Minus, what is f123?
+
+422
+01:36:49,460 --> 01:36:52,179
+Power h.
+
+423
+01:37:02,931 --> 01:37:23,612
+1 plus 2 over 2 h plus 1 over 2 h square plus 2 3 h over plus h square over 2 minus 3 over h.
+
+424
+01:37:23,612 --> 01:37:51,791
+h, we can simplify these terms for 5 h over root 2 plus h square over h. So if we simplify h, we can write directly this.
+
+425
+01:37:56,372 --> 01:38:02,372
+Ayrıca bir problem?
+
+426
+01:38:07,731 --> 01:38:09,252
+We use the definition.
+
+427
+01:38:32,756 --> 01:38:34,756
+Bir sonra sorun.
+
+428
+01:38:34,756 --> 01:38:44,756
+To compute the directional derivative of a function, we use...
+
+429
+01:38:49,011 --> 01:38:51,391
+Diz, teorem.
+
+430
+01:39:01,876 --> 01:39:24,876
+F is a differentiable function, differentiable function of x and y, then F has a directional derivative.
+
+431
+01:39:32,051 --> 01:39:41,751
+in the direction of any unit vector u,
+
+432
+01:39:44,751 --> 01:39:52,152
+and y duf
+
+433
+01:39:55,152 --> 01:40:00,311
+f x x y times
+
+434
+01:40:00,311 --> 01:40:02,311
+f y
+
+435
+01:40:02,311 --> 01:40:04,311
+first component of unit vector
+
+436
+01:40:04,311 --> 01:40:06,311
+plus
+
+437
+01:40:06,311 --> 01:40:08,311
+f y
+
+438
+01:40:08,311 --> 01:40:10,311
+times
+
+439
+01:40:10,311 --> 01:40:12,311
+second component of
+
+440
+01:40:12,311 --> 01:40:13,311
+u
+
+441
+01:40:13,311 --> 01:40:15,311
+tü
+
+442
+01:40:26,068 --> 01:40:30,507
+If we can prove this theorem, let's look at together.
+
+443
+01:40:35,699 --> 01:40:42,019
+Plane ile bu bölgenin
+
+444
+01:40:42,019 --> 01:40:43,880
+P'ye
+
+445
+01:40:43,880 --> 01:41:05,479
+K'ye
+
+446
+01:40:58,260 --> 01:41:05,760
+Direktional vector, of vector pq, is u.
+
+447
+01:41:08,619 --> 01:41:09,619
+We can...
+
+448
+01:41:13,427 --> 01:41:18,467
+So, this u is given as a b.
+
+449
+01:41:21,367 --> 01:41:21,787
+So,
+
+450
+01:41:25,811 --> 01:41:51,171
+Coordinates of P is x0, y0, the coordinate of Q, x and y is x equals x0 plus a h, y equals y0 plus b h.
+
+451
+01:42:08,659 --> 01:42:30,380
+fxy, fxr plus h a, y0 plus b h. Here h is parameter, when h equals 0, we will get the point p.
+
+452
+01:42:30,380 --> 01:42:42,119
+So, we can consider this function as a single variable function, g of h.
+
+453
+01:42:49,779 --> 01:42:50,179
+Bye.
+
+454
+01:42:50,599 --> 01:42:51,399
+Change rule.
+
+455
+01:42:58,292 --> 01:43:21,052
+Derivative of g with respect to h, means derivative of f with respect to h, equals df over dx, dx over dh, plus df over dy, dy over dh.
+
+456
+01:43:28,243 --> 01:43:41,003
+h equals zero, derivative of g at zero, fx, x0, y0 plus h.
+
+457
+01:43:41,804 --> 01:43:44,563
+Please look at this.
+
+458
+01:43:46,143 --> 01:43:50,264
+This is x, this is y.
+
+459
+01:43:50,264 --> 01:43:58,123
+So f y, x0, y0, divide over dh.
+
+460
+01:44:11,347 --> 01:44:37,948
+Finally, we get our formula. This means directional derivative. Let's look together. Derivative of g at 0 means limit of gh-g0 over h.
+
+461
+01:44:37,948 --> 01:44:50,427
+The function g is defined by f. We can rewrite this limit in terms of f.
+
+462
+01:44:56,884 --> 01:45:14,663
+Bu limit is defined by direction of derivative of f at this point. From 1 and 2, we find equality.
+
+463
+01:45:16,804 --> 01:45:18,904
+That is...
+
+464
+01:45:28,307 --> 01:45:34,408
+This formula is simpler than the definition of limit of directional derivative.
+
+465
+01:45:41,427 --> 01:45:45,287
+Any question about proof of theorem?
+
+466
+01:45:50,387 --> 01:46:04,787
+This is another method to calculate directional derivative. This is a very important formula. We will use this formula to calculate directional derivative.
+
+467
+01:46:13,268 --> 01:46:23,268
+The question, the directional vector is given, but sometimes...
+
+468
+01:46:26,420 --> 01:46:28,420
+Desunit Vector
+
+469
+01:46:38,579 --> 01:46:45,979
+Can be given as an angel with positive x-axis.
+
+470
+01:46:56,083 --> 01:46:58,523
+Şimdi, let's consider genital vector u.
+
+471
+01:47:00,844 --> 01:47:02,043
+It's been known.
+
+472
+01:47:14,387 --> 01:47:15,148
+Vinnun.
+
+473
+01:47:18,931 --> 01:47:23,331
+Magnitude of this vector equals 1.
+
+474
+01:47:24,231 --> 01:47:25,032
+So,
+
+475
+01:47:26,532 --> 01:47:29,831
+This distance equals cosine theta.
+
+476
+01:47:30,131 --> 01:47:34,131
+This equals sine theta.
+
+477
+01:47:34,631 --> 01:47:39,631
+So, if we know the angel theta.
+
+478
+01:47:45,171 --> 01:47:48,491
+with x-axis,
+
+479
+01:47:48,491 --> 01:47:55,091
+then we know
+
+480
+01:47:59,123 --> 01:48:08,163
+The unit vector u, cosin, teta, sin, teta.
+
+481
+01:48:15,539 --> 01:48:29,019
+So, the formula of directional vector becomes the first component of u, cosine theta,
+
+482
+01:48:32,724 --> 01:48:35,583
+Component sin zeta
+
+483
+01:49:06,836 --> 01:49:19,836
+So, this question, find the directional vector of, directional derivative of f.
+
+484
+01:49:27,123 --> 01:49:47,743
+This point, if f x y equals x cube 3 x y plus 4 y square and u is unit vector
+
+485
+01:49:47,743 --> 01:49:57,323
+given by angel theta pi over 6.
+
+486
+01:50:04,340 --> 01:50:16,140
+So, this unit vector, defined by cosine pi over 6, sine pi over 6.
+
+487
+01:50:18,140 --> 01:50:30,380
+If this unit vector makes theta pi over 6 with x-axis,
+
+488
+01:50:30,380 --> 01:50:39,779
+So, this distance, cosine pi over 6, sine pi over 6.
+
+489
+01:50:43,444 --> 01:51:02,124
+Çünkü u'ye kadar y'ye kadar y'ye kadar y'ye kadar y'ye kadar y'ye kadar y'ye kadar y'ye kadar y'ye kadar y'ye kadar y'ye kadar y'ye kadar y'ye kadar y'ye kadar y'ye kadar y'ye kadar y'ye kadar y'ye kadar y'ye kadar y'ye kadar y'ye kadar y'ye kadar y'ye kadar y'ye kadar y'ye kadar y'ye kadar y'ye kadar y'ye kadar y'ye kadar y'ye kadar y'ye kadar y'ye kadar y'ye kadar y'ye kadar y'ye kadar y'ye kadar y'ye kadar y'ye kadar y'ye kadar y'ye kadar y'ye kadar y'ye kadar y'ye kadar y'ye kadar y'ye kadar y'ye kadar y'ye kadar y'ye kadar y'ye kadar y'ye kadar y'ye kadar y'ye kadar y'ye kadar y'ye kadar y'ye kadar y'
+
+490
+01:51:17,876 --> 01:51:33,876
+Yönlü türev ile ilgili anlaşılmayan bir kısım var mı gençler? Yönlü türev sizin için yeni bir konu. Daha önce tek değişkenli fonksiyonlar için geçerli değildi. Böyle bir kavram.
+
+491
+01:51:34,775 --> 01:51:43,655
+Biz tek değişkenli fonksiyonlardan sonra ne yaptık? Kısmi türevleri gördük. Şimdi de daha da genelleştirdik. Yönlü türevi vermiş olduk.
+
+492
+01:51:43,655 --> 01:51:49,176
+Kısmi türevler yönlü türevlerin özel hali dedik dersimizin içerisinde.
+
+493
+01:51:50,676 --> 01:52:03,496
+İlk bir ana tanım, limit tanımını verdik. Daha sonra da bu tanımdan bir teorem verdik. Bu teoremden yararlanarak çözüyoruz dedik. Çok daha basit bir şekilde limit hesabı yapmaksızın.
+
+494
+01:52:07,091 --> 01:52:11,331
+Bir iki detay daha var. Önümüzdeki ders bununla ilgili vereceğim.
+
+495
+01:52:16,148 --> 01:52:22,507
+Gradient vektörü vermedim. Bunu da verdikten sonra bu konuyu da tamamlamış olacağız önümüzdeki hafta.
+
+496
+01:52:23,307 --> 01:52:26,448
+Gençler, sorunuz var mı? Her şey yolunda mı?
+
+497
+01:52:33,011 --> 01:52:33,991
+Orada mısınız?
+
+498
+01:52:46,707 --> 01:52:59,167
+O zaman, bugünlük bu kadar yeter gençler. Zaten saati bir yaptık. Size de fazla zaman kalmadı diğer derse geçmeden önce. Kusura bakmayın. Cümle bitireyim derken, sizin de aranızı almış oldum.
+
+499
+01:53:02,007 --> 01:53:04,487
+Haftaya görüşmek üzere o zaman. Kendinize çok iyi bakın.
+
+500
+01:53:04,487 --> 01:53:06,407
+Kendinize çok iyi bakın.
+
+501
+01:55:35,828 --> 01:55:37,188
+İçler indirebildiniz mi?
+
+502
+01:55:48,627 --> 01:56:04,987
+Sınav sorusu sormuştun. Onu bana mail ile göndermeyden. Ben sana çözümünü göndereyim. Yanlış hatırladım o zaman ismini.
+
+503
+01:56:06,387 --> 01:56:17,607
+Beşler sorularınız varsa mail yoluyla gönderirseniz daha detaylı bilgi olur. Tamam. [öğrenci] ayrılmış olabilir diğer ders için.
+
+504
+01:56:22,868 --> 01:56:25,068
+Görüşmek üzere gençler. İyi günler.
+
+505
+01:56:27,228 --> 01:56:28,008
+Have a nice day.

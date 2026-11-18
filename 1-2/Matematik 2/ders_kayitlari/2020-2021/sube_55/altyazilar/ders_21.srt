@@ -1,0 +1,3131 @@
+1
+00:00:45,555 --> 00:00:46,195
+Mario
+
+2
+00:01:05,524 --> 00:01:08,004
+Güneşen, güneşen.
+
+3
+00:01:15,635 --> 00:01:16,155
+Good morning.
+
+4
+00:01:31,956 --> 00:01:33,835
+Are you good working today?
+
+5
+00:01:53,203 --> 00:01:55,503
+Teşekkürler. Ben de iyiyim [öğrenci].
+
+6
+00:02:10,292 --> 00:02:16,292
+The last two weeks, we have last subject.
+
+7
+00:02:19,955 --> 00:02:25,915
+And we are going to start the last subject, double integrize.
+
+8
+00:02:30,259 --> 00:02:38,259
+Today, we will give the definition of double integrites over rectangles.
+
+9
+00:02:43,475 --> 00:02:51,756
+We define a double integral with Riemann sum.
+
+10
+00:03:02,644 --> 00:03:08,004
+You know a Riemann sum from calculus 1.
+
+11
+00:03:13,620 --> 00:03:18,360
+We extend this idea for double integrals.
+
+12
+00:03:30,228 --> 00:03:36,188
+Gençler, son konumuz iki katlı integralleri bugün giriyoruz.
+
+13
+00:03:38,408 --> 00:03:43,308
+Bu iki haftada iki katlı integralleri tamamlayacağız.
+
+14
+00:03:51,252 --> 00:04:03,012
+Son gün uygulamamız kalırsa son gün uygulama yaparız. Şayet ihtiyacımız olursa ek ders yaparız uygulama için, sınavınız için. Herhangi bir sorunuz var mı?
+
+15
+00:04:08,084 --> 00:04:10,243
+Do you have any question about anything?
+
+16
+00:04:17,939 --> 00:04:21,100
+If no question, we can start.
+
+17
+00:04:23,339 --> 00:04:28,259
+[öğrenci] henüz sınavla ilgili bir açıklama yok ama bir açıklama da şahsen beklemiyordum.
+
+18
+00:04:28,660 --> 00:04:29,980
+Senin merak ettiğin nedir?
+
+19
+00:04:30,199 --> 00:04:31,379
+Sınav tarihimiz belli.
+
+20
+00:04:33,300 --> 00:04:34,439
+Sınav şeklimiz belli.
+
+21
+00:04:36,079 --> 00:04:37,259
+Baştan sona kadar olacak.
+
+22
+00:04:40,915 --> 00:04:43,875
+Yok, o konuda detaylı bilgi vermezler zaten.
+
+23
+00:04:46,096 --> 00:04:51,956
+Birinci vizeden sonraki kısımlara ağırlıklı olarak çalışın ama tabii ki seri gelecek.
+
+24
+00:04:52,776 --> 00:04:55,315
+Tabii ki diziler ve seriler konusundan soru gelecek.
+
+25
+00:04:55,315 --> 00:04:59,815
+Size geçen yaz dönemindeki sınav sorularını göstereceğim.
+
+26
+00:05:00,255 --> 00:05:02,315
+Final ve bütünleme sorularını göstereceğim.
+
+27
+00:05:02,735 --> 00:05:06,435
+Oradan az çok tahmin edersiniz ağırlığın nerelerden olabileceğini.
+
+28
+00:05:07,096 --> 00:05:08,076
+Yaklaşık olarak tabii.
+
+29
+00:05:11,636 --> 00:05:20,676
+Onları paylaşacağım sizinle. Geçen seneki final bütünleme mazeret sorularını elimdekileri inceleyeceğiz beraber. Başlayalım.
+
+30
+00:06:09,779 --> 00:06:10,279
+Bu da bu.
+
+31
+00:06:16,276 --> 00:06:27,096
+İntegres, first we're in-give, little integers, or wish.
+
+32
+00:06:44,884 --> 00:06:47,663
+İntegre, o bir function of two variables.
+
+33
+00:07:04,244 --> 00:07:05,164
+İntegraiz.
+
+34
+00:07:21,300 --> 00:07:25,259
+Rieman, um,
+
+35
+00:07:27,740 --> 00:07:29,259
+right, the single.
+
+36
+00:07:33,588 --> 00:07:35,588
+VeriAbleIntegrize
+
+37
+00:07:38,588 --> 00:07:40,588
+Presented in
+
+38
+00:07:42,588 --> 00:07:44,588
+NetVax
+
+39
+00:07:52,723 --> 00:08:11,923
+First, we consider a function fxy defined on every regular region.
+
+40
+00:08:17,459 --> 00:08:28,219
+A rectangle on R square is defined by the set of O, X, Y,
+
+41
+00:08:34,803 --> 00:08:36,803
+A ve B
+
+42
+00:08:38,803 --> 00:08:40,803
+Y
+
+43
+00:08:41,803 --> 00:08:43,803
+A
+
+44
+00:09:00,788 --> 00:09:01,108
+Tamam.
+
+45
+00:09:05,844 --> 00:09:07,384
+X, Y, Plane.
+
+46
+00:09:09,464 --> 00:09:12,424
+We can draw this rectangle.
+
+47
+00:09:18,515 --> 00:09:19,096
+İlke.
+
+48
+00:09:37,844 --> 00:09:46,124
+suppose that f is the function
+
+49
+00:09:53,268 --> 00:09:54,807
+The graph of function
+
+50
+00:10:03,508 --> 00:10:04,108
+Evet.
+
+51
+00:10:08,340 --> 00:10:09,480
+This is a surface.
+
+52
+00:10:31,508 --> 00:10:40,948
+Let us be vertical lead.
+
+53
+00:10:51,635 --> 00:10:53,795
+Tabağın, region R,
+
+54
+00:10:57,475 --> 00:10:58,115
+and
+
+55
+00:11:01,331 --> 00:11:03,331
+F
+
+56
+00:11:27,668 --> 00:11:31,028
+Domain of f is rectangle.
+
+57
+00:11:43,059 --> 00:11:47,059
+x is av
+
+58
+00:11:52,820 --> 00:11:59,940
+İntarval of y, is the interval cd.
+
+59
+00:12:03,572 --> 00:12:07,892
+The graph of f is a surface in
+
+60
+00:13:07,796 --> 00:13:08,736
+Doğul et.
+
+61
+00:13:24,052 --> 00:13:24,611
+Eboğ?
+
+62
+00:13:28,596 --> 00:13:36,816
+Rectangle R, under, the graph of F.
+
+63
+00:14:06,451 --> 00:14:07,251
+Solit.
+
+64
+00:14:15,604 --> 00:14:18,084
+Bip!
+
+65
+00:14:21,620 --> 00:14:28,299
+Divide the rectangle R into sub...
+
+66
+00:14:32,820 --> 00:14:58,460
+Rectangles. Let us consider again this R region of fxy. We divide these rectangles N sub rectangles.
+
+67
+00:15:07,028 --> 00:15:10,067
+We do this, we divide.
+
+68
+00:15:13,556 --> 00:15:22,796
+The interval a, b into subintervals.
+
+69
+00:15:29,011 --> 00:15:37,891
+sub m, for example, intervals. And we divide the interval cd.
+
+70
+00:15:41,812 --> 00:15:45,812
+Let's rewrite here. Divide
+
+71
+00:15:48,451 --> 00:15:49,812
+the interval
+
+72
+00:15:51,892 --> 00:15:57,812
+a, b into m subintervals
+
+73
+00:16:01,172 --> 00:16:05,812
+x0 a, x1, x2
+
+74
+00:16:10,580 --> 00:16:35,060
+x, m, b. And then we divide the interval c, d into, for example, t subintervals, y, 0, y, 1, y, t, aqs, this is not, b, c, d.
+
+75
+00:16:42,740 --> 00:16:43,100
+So.
+
+76
+00:16:51,187 --> 00:16:51,987
+Evet.
+
+77
+00:16:58,995 --> 00:17:15,695
+t, let m times t equals n, finally we have n sub-rectangles in the region.
+
+78
+00:17:25,076 --> 00:17:26,076
+bu region
+
+79
+00:17:26,076 --> 00:17:29,076
+ve
+
+80
+00:17:34,548 --> 00:17:40,548
+İlk
+
+81
+00:17:40,548 --> 00:17:41,548
+ve
+
+82
+00:17:41,548 --> 00:17:42,548
+n
+
+83
+00:17:49,364 --> 00:17:57,443
+Consider, first, a small piece of rectangle.
+
+84
+00:17:57,443 --> 00:18:09,443
+So, for example, Kate, we consider small...
+
+85
+00:18:12,756 --> 00:18:19,456
+Rectangles in the rectangle R, in the region R.
+
+86
+00:18:24,019 --> 00:18:27,619
+Delta X
+
+87
+00:18:39,220 --> 00:18:58,839
+Delta y, this is the k'tsak, so we can write here, we consider a sub rectangle, small rectangle, of delta x k, delta y k.
+
+88
+00:19:01,839 --> 00:19:06,480
+So, we choose
+
+89
+00:19:10,036 --> 00:19:31,436
+a small rectangle. Finally, the area of this small rectangle denoted by delta ak is the multiplication of delta xk, delta yk.
+
+90
+00:19:35,188 --> 00:19:38,228
+No, we choose
+
+91
+00:19:42,740 --> 00:19:52,019
+at a certain point in this small rectangle.
+
+92
+00:19:58,099 --> 00:20:02,099
+Ve bu,
+
+93
+00:20:05,099 --> 00:20:26,099
+bu,
+
+94
+00:20:18,355 --> 00:20:26,635
+We want to calculate the volume of a thin rectangular box.
+
+95
+00:20:30,900 --> 00:20:32,660
+corresponding to this
+
+96
+00:20:37,715 --> 00:20:38,715
+small,
+
+97
+00:20:40,715 --> 00:20:41,715
+rectangle.
+
+98
+00:21:01,971 --> 00:21:19,892
+We choose a point in this rectangle, so the height of this rectangular box is value of,
+
+99
+00:21:24,435 --> 00:21:35,755
+bu f'i bu f'
+
+100
+00:21:45,203 --> 00:21:51,683
+18 Rectangular Box.
+
+101
+00:21:57,748 --> 00:21:58,587
+Teşekkürler.
+
+102
+00:22:02,836 --> 00:22:09,236
+Subvectirinal, subvectirinal, kutur region.
+
+103
+00:22:18,771 --> 00:22:21,071
+Ak, and
+
+104
+00:22:26,708 --> 00:22:28,307
+Y, K, Y, K.
+
+105
+00:22:33,364 --> 00:22:43,044
+K'ın kentifiyonu kentifiyonu kentifiyonu kentifiyonu kentifiyonu kentifiyonu kentifiyonu kentifiyonu kentifiyonu kentifiyonu kentifiyonu kentifiyonu kentifiyonu kentifiyonu kentifiyonu kentifiyonu kentifiyonu kentifiyonu kentifiyonu kentifiyonu kentifiyonu kentifiyonu kentifiyonu kentifiyonu kentifiyonu kentifiyonu kentifiyonu kentifiyonu kentifiyonu kentifiyonu kentifiyonu kentifiyonu kentifiyonu kentifiyonu kentifiyonu kentifiyonu kentifiy
+
+106
+00:22:54,963 --> 00:22:59,963
+Any question until here? Any problem?
+
+107
+00:23:05,652 --> 00:23:12,412
+Türkçe anlatmama gerek var mı buraya kadar gençler? Matibir'den hatırlıyor musunuz? Az buçuk Riman toplam tanımını.
+
+108
+00:23:17,811 --> 00:23:22,091
+Gençler, takip edebiliyor musunuz?
+
+109
+00:23:33,683 --> 00:23:35,803
+Haydi. Sizi bekliyorum.
+
+110
+00:23:37,483 --> 00:23:38,584
+Thank you, [öğrenci].
+
+111
+00:23:50,771 --> 00:24:08,912
+Anlamadığını düşünüyorum. Peki, teşekkür ederim [öğrenci] cevap verdiğim için sen de. Peki, devam ediyorum o zaman. Biz sadece şu anda, sadece küçük bir dikdörtgenler prizmasının hacmini hesapladık. Ama amacımız neydi bizim? S'nin hacmini hesaplamaktı değil mi?
+
+112
+00:24:08,912 --> 00:24:22,831
+Şimdi, our goal is to find the volume of solid. Now, we calculate the volume of just this thin rectangular box.
+
+113
+00:24:24,831 --> 00:24:26,192
+The sum of
+
+114
+00:24:30,675 --> 00:24:31,515
+Dostamur.
+
+115
+00:24:43,316 --> 00:24:44,796
+Rectangular box
+
+116
+00:24:49,971 --> 00:24:51,331
+Partition of
+
+117
+00:24:58,355 --> 00:25:09,395
+Region R is called Demon Sun.
+
+118
+00:25:18,548 --> 00:25:31,867
+3-month sum is denited by Sn. Sn is calculated by the sum of volume of each
+
+119
+00:25:31,867 --> 00:25:35,228
+rectangular
+
+120
+00:25:40,500 --> 00:25:42,099
+This is the Riemann son.
+
+121
+00:25:55,124 --> 00:26:04,804
+integral, is defined by the limit of Riemann's sum.
+
+122
+00:26:12,564 --> 00:26:20,244
+Riemann's sum is an approximation.
+
+123
+00:26:25,172 --> 00:26:48,652
+to the total volume of s. If we take limit s delta ak goes to zero or sorry this is not infinity this must be n.
+
+124
+00:26:52,276 --> 00:27:09,796
+In other words, as n goes to 0, or as n goes to infinity.
+
+125
+00:27:09,796 --> 00:27:25,395
+If it takes a limit of three months, sum.
+
+126
+00:27:51,443 --> 00:28:00,443
+This limit is called double integral of f over the region r.
+
+127
+00:28:03,955 --> 00:28:10,195
+ve, if the limits exist.
+
+128
+00:28:16,756 --> 00:28:21,756
+is called double integri
+
+129
+00:28:29,395 --> 00:28:32,796
+over the region R.
+
+130
+00:28:33,635 --> 00:28:35,796
+And divided by
+
+131
+00:28:38,195 --> 00:28:39,076
+the integri
+
+132
+00:28:43,955 --> 00:28:46,315
+x, y, d
+
+133
+00:28:53,140 --> 00:28:55,700
+xy dxdy
+
+134
+00:28:55,700 --> 00:29:01,180
+equals the limit of Riemann's sum.
+
+135
+00:29:11,284 --> 00:29:16,124
+We say that f is integrable.
+
+136
+00:29:21,395 --> 00:29:21,955
+function,
+
+137
+00:29:24,515 --> 00:29:25,955
+region i,
+
+138
+00:29:28,115 --> 00:29:29,715
+full continuous function,
+
+139
+00:29:34,548 --> 00:29:35,387
+İntegrabil,
+
+140
+00:29:35,387 --> 00:29:38,028
+in particular,
+
+141
+00:29:41,940 --> 00:30:05,700
+If f is bounded and f is discontinuous, only on a finite number of points,
+
+142
+00:30:10,836 --> 00:30:18,036
+on the region R, then F is integrable,
+
+143
+00:30:36,596 --> 00:30:50,236
+F is a positive function, then the volume of the solid is.
+
+144
+00:30:53,587 --> 00:30:54,587
+Deadlines,
+
+145
+00:30:56,207 --> 00:30:57,387
+above the domain.
+
+146
+00:31:06,516 --> 00:31:07,996
+below the surface.
+
+147
+00:31:19,188 --> 00:31:28,128
+Calculated by double integral of f over the domain.
+
+148
+00:31:33,107 --> 00:31:42,367
+If f is a positive function, double integral gives us the volume.
+
+149
+00:32:15,539 --> 00:32:24,859
+Now, we can view, double, integrize.
+
+150
+00:32:28,435 --> 00:32:29,495
+General Region.
+
+151
+00:32:42,612 --> 00:32:46,572
+No, don't see her.
+
+152
+00:32:51,892 --> 00:32:54,511
+F is defined on.
+
+153
+00:33:05,203 --> 00:33:09,223
+General, shape, deep.
+
+154
+00:33:23,251 --> 00:33:24,051
+This figure.
+
+155
+00:33:33,491 --> 00:33:37,331
+Define the double integral of f.
+
+156
+00:33:41,107 --> 00:33:43,748
+bu region D,
+
+157
+00:33:45,867 --> 00:33:46,788
+ve ilk
+
+158
+00:33:56,980 --> 00:34:01,480
+is enclosed in a
+
+159
+00:34:04,480 --> 00:34:05,480
+rectangular
+
+160
+00:34:07,680 --> 00:34:08,280
+region
+
+161
+00:34:21,972 --> 00:34:26,072
+This is our domain.
+
+162
+00:34:29,331 --> 00:34:31,331
+Now, this pose...
+
+163
+00:34:35,443 --> 00:34:37,443
+Rectangle
+
+164
+00:34:43,507 --> 00:34:44,127
+Düzgün.
+
+165
+00:34:48,307 --> 00:34:50,047
+And, then,
+
+166
+00:34:54,675 --> 00:35:15,536
+Define a new function denited by F with domain Rectangle R.
+
+167
+00:35:28,500 --> 00:35:53,460
+If xy is element of d equals our function f if xy is in r but not in d.
+
+168
+00:35:59,572 --> 00:36:03,832
+In this case, capital F equals zero.
+
+169
+00:36:15,572 --> 00:36:27,572
+F'ye deydeş veriyoruz.
+
+170
+00:36:31,731 --> 00:36:50,112
+So, if f is integrable function over the rectangle r, then we can define double integral.
+
+171
+00:37:00,115 --> 00:37:05,496
+fxy, dxy, on R.
+
+172
+00:37:07,056 --> 00:37:07,795
+Here,
+
+173
+00:37:11,476 --> 00:37:12,316
+İntegre,
+
+174
+00:37:17,684 --> 00:37:30,804
+equals double integral over general region d of our function f.
+
+175
+00:37:37,907 --> 00:37:38,407
+Because
+
+176
+00:37:42,132 --> 00:37:51,452
+The values of f, the values of f are 0, 1, x, y,
+
+177
+00:37:57,172 --> 00:38:09,172
+İlginç altyazı d.
+
+178
+00:38:09,172 --> 00:38:13,172
+F'ye 0.
+
+179
+00:38:13,172 --> 00:38:25,172
+İlginç altyazı d.
+
+180
+00:38:31,539 --> 00:38:37,860
+Riemann toplumundan yararlanarak dikdörtgendeki iki kat integrali tanımladık.
+
+181
+00:38:37,980 --> 00:38:44,960
+Sonra da herhangi bir bölge üzerinde iki katlı integrali tanımlamak için yine dikdörtgenden yararlandık.
+
+182
+00:38:46,340 --> 00:38:56,139
+Dikdörtgende tanımlı bir parçalı fonksiyon tanımladık ama sadece iç bölgede fonksiyonun değerleri var.
+
+183
+00:38:56,139 --> 00:39:03,699
+D'nin dışındaki noktalar için fonksiyonun tüm değerlerini sıfır kabul ettik.
+
+184
+00:39:04,179 --> 00:39:09,320
+Böylece aslında bir laf oyunu yaptık.
+
+185
+00:39:09,320 --> 00:39:18,539
+Yani D bölgesinde tanımlı, D bölgesinde sadece değer alıyor ama R bölgesinde tanımlı hale getirdik.
+
+186
+00:39:18,659 --> 00:39:22,579
+Neden? Parçalı fonksiyondan yararlanarak yaptık biz bunu.
+
+187
+00:39:22,579 --> 00:39:52,559
+Artık göz önüne aldığımız fonksiyonun.
+
+188
+00:39:54,420 --> 00:39:56,680
+Any question, any problem?
+
+189
+00:40:02,420 --> 00:40:03,659
+If no question,
+
+190
+00:40:09,940 --> 00:40:14,940
+İlkeçen bir şey.
+
+191
+00:40:40,692 --> 00:40:50,291
+Some properties of double integrals are similar to properties of one-dimensional integral.
+
+192
+00:40:57,715 --> 00:41:20,235
+Let f and d be integrable functions over d and l and m be constants.
+
+193
+00:41:24,179 --> 00:41:46,179
+First Proporation. If D, domain D, has zero area, then double integral,
+
+194
+00:41:50,356 --> 00:41:52,516
+...vecomes zero.
+
+195
+00:42:04,115 --> 00:42:13,195
+Bakın, our diagram, let's look at here, if this area 0,
+
+196
+00:42:18,164 --> 00:42:25,244
+Bu bölümde bu bu
+
+197
+00:42:25,244 --> 00:42:29,244
+bu bölümde bu bölümde
+
+198
+00:42:29,244 --> 00:42:30,164
+bu bölümde
+
+199
+00:42:30,164 --> 00:42:30,644
+0.
+
+200
+00:42:41,523 --> 00:42:49,763
+f x y equals 1.
+
+201
+00:43:01,268 --> 00:43:13,588
+f x y x 1 means that the surface of f is a horizontal plane.
+
+202
+00:43:17,427 --> 00:43:26,007
+So, if fxy equals 0, the height of solid equals 1.
+
+203
+00:43:31,539 --> 00:43:32,000
+So,
+
+204
+00:43:37,396 --> 00:43:42,936
+double integral, integrant equals 1.
+
+205
+00:43:46,579 --> 00:43:59,980
+Double integral means the volume of solid. Volume is the product of base area and height.
+
+206
+00:43:59,980 --> 00:44:12,259
+Here height of solid is 1. So can you say double integral gives us
+
+207
+00:44:22,739 --> 00:44:32,739
+Burada diyoruz, thank you, say it. This is the area of the...
+
+208
+00:44:32,739 --> 00:44:48,659
+Eğer yükseklik bir ise ve cismin hacmi taban alan çarpı yükseklik ile hesaplanıyorsa artık bu iki katlı integral bize sadece taban alanını verir demiş olduk.
+
+209
+00:44:53,748 --> 00:44:56,148
+another property.
+
+210
+00:45:02,739 --> 00:45:03,339
+Beep.
+
+211
+00:45:06,675 --> 00:45:28,355
+F is a positive function, then double integral is a positive number
+
+212
+00:45:28,355 --> 00:45:39,875
+and this is the volume of the solid.
+
+213
+00:45:47,956 --> 00:45:48,956
+Vertiklal
+
+214
+00:45:48,956 --> 00:45:51,956
+Yılmaz
+
+215
+00:45:56,596 --> 00:45:57,795
+Yolum surface.
+
+216
+00:46:08,596 --> 00:46:11,335
+Svi, negatif function.
+
+217
+00:46:15,027 --> 00:46:27,467
+If all values of f on the negative number, then double integral,
+
+218
+00:46:36,596 --> 00:46:38,255
+Number of volume.
+
+219
+00:46:40,056 --> 00:46:41,735
+This is the number of numbers.
+
+220
+00:46:45,268 --> 00:46:53,108
+Here, here is the volume of the solid.
+
+221
+00:46:56,563 --> 00:47:23,083
+absolute value of integral, double integral values, just we take v, positive number, this is lie vertically, in this case, below d, and
+
+222
+00:47:23,083 --> 00:47:28,083
+surface
+
+223
+00:47:53,460 --> 00:48:11,340
+Şimdi bu ile ilgili birçok yi ile ilgili birçok yi ile ilgili birçok yi ile ilgili birçok yi ile ilgili birçok yi ile ilgili birçok yi ile ilgili birçok yi ile ilgili birçok yi ile ilgili birçok yi ile ilgili birçok yi ile ilgili birçok yi ile ilgili birçok yi ile ilgili birçok yi ile ilgili birçok yi ile ilgili birçok yi ile ilgili birçok yi ile ilgili birçok yi ile ilgili birçok yi ile ilgili birçok yi ile ilgili birçok yi ile ilgili birçok yi ile ilgili birçok yi ile ilgili birçok yi ile ilgili birçok yi ile ilgili birçok yi ile ilgili birçok yi ile ilgili birçok yi ile ilgili birçok yi ile ilgili birçok yi ile ilgili birçok yi ile ilgili birçok yi ile ilgili birç
+
+224
+00:48:17,684 --> 00:48:24,684
+İnteklisinin
+
+225
+00:48:31,923 --> 00:48:35,523
+İntegri ile 2.
+
+226
+00:48:39,204 --> 00:48:42,963
+F and G are integrable functions.
+
+227
+00:48:44,724 --> 00:48:45,523
+One more.
+
+228
+00:48:47,523 --> 00:48:51,443
+If fx y is less than
+
+229
+00:48:53,603 --> 00:48:55,603
+everywhere on D.
+
+230
+00:48:55,603 --> 00:49:03,923
+Then this inequality is preserved.
+
+231
+00:49:28,052 --> 00:49:30,251
+Absolute value of double integral
+
+232
+00:49:36,724 --> 00:49:41,443
+S dan, double integral of absolute value of f.
+
+233
+00:49:49,172 --> 00:50:09,672
+And last property, if the union of d1 and d2 equals d, such that the intersection of d1 and d2 is, sorry,
+
+234
+00:50:14,099 --> 00:50:28,380
+m to set, and f is integrable function, over d.
+
+235
+00:50:34,132 --> 00:50:41,132
+ve
+
+236
+00:50:49,780 --> 00:50:50,780
+A1,
+
+237
+00:50:54,164 --> 00:50:55,104
+Tito.
+
+238
+00:51:05,556 --> 00:51:11,336
+D is union of D1 and D2.
+
+239
+00:51:18,036 --> 00:51:22,155
+D, double integral, is separated.
+
+240
+00:51:23,916 --> 00:51:24,275
+Two,
+
+241
+00:51:26,436 --> 00:51:29,155
+double integrals on D1 and D2.
+
+242
+00:51:34,291 --> 00:51:38,291
+By using these properties, we can...
+
+243
+00:51:44,884 --> 00:51:50,884
+Bu örneğin, if R
+
+244
+00:51:53,443 --> 00:52:07,603
+is the set of all xy such that x between 1 and 3 and y between 5.
+
+245
+00:52:07,603 --> 00:52:20,324
+Then find value of this double integral.
+
+246
+00:52:36,467 --> 00:52:37,268
+İntilgrant.
+
+247
+00:52:42,612 --> 00:52:45,632
+3, best truth say it, thank you.
+
+248
+00:52:46,632 --> 00:52:47,072
+So,
+
+249
+00:52:48,572 --> 00:52:49,492
+this is
+
+250
+00:52:52,884 --> 00:52:54,563
+ve horizontal
+
+251
+00:52:59,251 --> 00:53:07,811
+So, this solid is the rectangular box.
+
+252
+00:53:14,963 --> 00:53:21,963
+ZEQ3
+
+253
+00:53:21,963 --> 00:53:36,963
+Ve bu solide
+
+254
+00:53:36,963 --> 00:53:38,963
+face area
+
+255
+00:53:38,963 --> 00:53:40,963
+times height
+
+256
+00:53:48,532 --> 00:53:56,852
+3, 32, delta y equals 3.
+
+257
+00:53:58,532 --> 00:53:59,572
+Face area.
+
+258
+00:54:14,291 --> 00:54:25,491
+Here our domain is defined by this inequality integrand equals 4.
+
+259
+00:54:33,139 --> 00:54:33,699
+Now,
+
+260
+00:54:38,739 --> 00:54:42,739
+Evet, bu da.
+
+261
+00:54:42,739 --> 00:54:52,739
+Bu da.
+
+262
+00:54:57,523 --> 00:54:58,263
+Cilindir.
+
+263
+00:55:06,260 --> 00:55:24,280
+Base is this circular, and height is 4, because in this question, surface gives us S, as z equals 4.
+
+264
+00:55:24,280 --> 00:55:34,860
+So, volume of this base area times,
+
+265
+00:55:42,931 --> 00:55:43,811
+Last one.
+
+266
+00:55:57,396 --> 00:56:03,516
+Bayes region is given this inequality.
+
+267
+00:56:03,516 --> 00:56:10,236
+Integrant is 1 minus x squared minus y squared.
+
+268
+00:56:15,891 --> 00:56:19,071
+This is none, another, solid.
+
+269
+00:56:27,155 --> 00:56:29,516
+Let's change this.
+
+270
+00:56:33,619 --> 00:56:34,359
+As far.
+
+271
+00:56:48,371 --> 00:56:57,371
+What do you think about this equation? This is spatial equation. This represents...
+
+272
+00:57:16,211 --> 00:57:37,641
+Z x squared plus y squared is paraboloid. Be careful. This is like that. If you square both sides and then rewrite,
+
+273
+00:57:41,684 --> 00:57:53,684
+Evet, evet. Evet. Z is always positive, so not whole sphere, just subhemi sphere.
+
+274
+00:58:12,980 --> 00:58:15,440
+Radius equals 2,
+
+275
+00:58:15,440 --> 00:58:17,059
+and
+
+276
+00:58:22,708 --> 00:58:23,148
+Evet.
+
+277
+00:58:27,059 --> 00:58:29,460
+Like that. So,
+
+278
+00:58:32,500 --> 00:58:40,659
+The volume of a hemisphere of radius 1 is over 3,
+
+279
+00:58:43,699 --> 00:58:44,659
+1 over 2.
+
+280
+00:59:19,155 --> 00:59:20,155
+Questions?
+
+281
+00:59:24,884 --> 00:59:32,523
+To determine the value of double integral, we used the definition of double integral.
+
+282
+00:59:42,356 --> 00:59:42,756
+No.
+
+283
+00:59:45,756 --> 00:59:47,316
+Thanks to this...
+
+284
+00:59:50,516 --> 00:59:51,155
+Teorem
+
+285
+00:59:55,891 --> 00:59:57,891
+We can calculate
+
+286
+01:00:04,371 --> 01:00:05,891
+All of double integral.
+
+287
+01:00:11,603 --> 01:00:14,783
+This is the first form.
+
+288
+01:00:20,500 --> 01:00:28,340
+If fxy is continuous,
+
+289
+01:00:33,043 --> 01:00:40,243
+We know that f can be bounded function.
+
+290
+01:00:52,371 --> 01:00:56,931
+Altangal, region,
+
+291
+01:01:07,315 --> 01:01:11,015
+Rectangle is defined by, like that.
+
+292
+01:01:26,547 --> 01:01:28,667
+We can define a rectangular,
+
+293
+01:01:31,587 --> 01:01:32,027
+Z.
+
+294
+01:01:35,764 --> 01:01:38,003
+Partizyan Procet.
+
+295
+01:01:41,588 --> 01:01:49,288
+Then, double integral of f on r.
+
+296
+01:01:52,820 --> 01:01:54,820
+is calculated by
+
+297
+01:01:59,219 --> 01:02:01,679
+Definite Integray.
+
+298
+01:02:05,108 --> 01:02:35,088
+If we write minimum value of x in the outer integral and maximum value of x in the inner integral minimum value of yc maximum value of d are written as the limits of inner point.
+
+299
+01:02:35,108 --> 01:03:01,898
+products. Be careful here. The limits of inner integral are the maximum minimum values of y. So first write dy and then write d
+
+300
+01:03:10,420 --> 01:03:13,119
+We can change the order of integration.
+
+301
+01:03:28,596 --> 01:03:36,416
+Now, maximum minimum value as the limits of outer integral.
+
+302
+01:03:40,659 --> 01:03:47,659
+İntekler,
+
+303
+01:03:47,659 --> 01:03:50,659
+maksimum ve minimum value of x.
+
+304
+01:03:50,659 --> 01:03:52,659
+Now,
+
+305
+01:03:52,659 --> 01:03:54,659
+here, be careful,
+
+306
+01:03:54,659 --> 01:03:56,659
+you must write dx
+
+307
+01:03:56,659 --> 01:03:59,659
+and then write dy.
+
+308
+01:04:04,115 --> 01:04:11,715
+They are eqs to each other. How can we solve this double integral?
+
+309
+01:04:17,331 --> 01:04:21,831
+If we write like that.
+
+310
+01:04:26,036 --> 01:04:27,715
+You can use Bracket.
+
+311
+01:04:38,260 --> 01:04:39,900
+You must solve first.
+
+312
+01:04:42,580 --> 01:04:42,940
+Inner.
+
+313
+01:04:45,500 --> 01:04:46,260
+Integral.
+
+314
+01:04:52,755 --> 01:04:57,355
+İntekre,
+
+315
+01:05:03,380 --> 01:05:03,920
+integral.
+
+316
+01:05:07,891 --> 01:05:10,611
+bit respect to
+
+317
+01:05:14,516 --> 01:05:18,715
+Y, because, here,
+
+318
+01:05:30,420 --> 01:05:31,680
+D'yi,
+
+319
+01:05:34,460 --> 01:05:34,980
+from
+
+320
+01:05:36,539 --> 01:05:37,139
+C
+
+321
+01:05:38,019 --> 01:05:38,300
+to
+
+322
+01:05:38,300 --> 01:05:38,820
+D'
+
+323
+01:05:42,119 --> 01:05:43,260
+reintegrate
+
+324
+01:05:47,476 --> 01:05:57,316
+We integrate f x y, with respect to y, by holding,
+
+325
+01:06:03,443 --> 01:06:10,443
+Bu
+
+326
+01:06:16,916 --> 01:06:19,115
+Partitial integration.
+
+327
+01:06:24,724 --> 01:06:27,564
+Partition Derivative.
+
+328
+01:06:35,380 --> 01:06:50,960
+The solution of this inner integral is a function of x.
+
+329
+01:06:57,331 --> 01:07:04,331
+ve
+
+330
+01:07:05,492 --> 01:07:20,172
+We integrate author function of the resulting function ax with respect to x.
+
+331
+01:07:29,331 --> 01:07:40,451
+This is single variable function, so we know to calculate this function.
+
+332
+01:08:02,643 --> 01:08:03,643
+Bir kalçalık.
+
+333
+01:08:06,643 --> 01:08:07,243
+Bir.
+
+334
+01:08:12,596 --> 01:08:17,595
+Now, let's calculate second double integral.
+
+335
+01:08:17,595 --> 01:08:19,036
+Similarly,
+
+336
+01:08:29,844 --> 01:08:33,423
+x, y, no, d, x, d, y.
+
+337
+01:08:55,604 --> 01:09:07,604
+İntegre
+
+338
+01:09:12,756 --> 01:09:19,876
+We integrate f , y, here, be careful,
+
+339
+01:09:23,396 --> 01:09:42,436
+we write dx, we write the interval of f as the limits of inner integral, so we integrate this function with respect to x by holding y fixed,
+
+340
+01:09:42,756 --> 01:09:49,756
+ve
+
+341
+01:09:48,115 --> 01:10:10,195
+The solution of this integral is a function of y. So then, for example, we can write by and then we have a single variable function.
+
+342
+01:10:13,235 --> 01:10:15,555
+We can solve this.
+
+343
+01:10:20,243 --> 01:10:21,083
+İntegre.
+
+344
+01:10:29,011 --> 01:10:38,911
+This integral and the other one, of course, are called iterated integrals.
+
+345
+01:10:45,268 --> 01:10:55,948
+If we write the limits of inner and outer integrals, double integrals becomes iterated integrals.
+
+346
+01:11:05,363 --> 01:11:06,083
+Example,
+
+347
+01:11:17,619 --> 01:11:22,939
+0, 3, from 1 to 2,
+
+348
+01:11:32,659 --> 01:11:33,300
+integral.
+
+349
+01:11:54,131 --> 01:11:59,451
+You can use parenthesis.
+
+350
+01:12:03,188 --> 01:12:10,118
+İntegri ile ilgili yi ile ilgili yi ile ilgili yi ile ilgili yi ile ilgili yi ile ilgili yi ile ilgili yi ile ilgili yi ile ilgili yi ile ilgili yi ile ilgili yi ile ilgili yi ile ilgili yi ile ilgili yi ile ilgili yi ile ilgili yi ile ilgili yi ile ilgili yi ile ilgili yi ile ilgili yi ile ilgili yi ile ilgili yi ile ilgili yi ile ilgili yi ile ilgili yi ile ilgili yi ile ilgili yi ile ilgili yi ile ilgili yi ile ilgili yi ile ilgili yi ile ilgili yi ile ilgili yi ile ilgili yi ile ilgili yi ile ilgili yi ile ilgili yi ile ilgili yi ile ilgili yi ile ilgili yi ile ilgili yi ile ilgili yi ile ilgili yi ile ilgili yi ile ilgili yi ile ilgili yi ile ilgili yi ile ilgili yi ile ilgili yi ile ilgili yi ile ilgili yi ile ilgili yi ile ilgili yi ile ilgili yi ile ilgili y
+
+351
+01:12:29,876 --> 01:12:39,136
+integration of this function with respect to y, by holding x fixed.
+
+352
+01:12:45,587 --> 01:13:03,188
+This is definite integral. The interval y is 1, 2. You can write here y. This is the limits of y. And then we calculate this integral.
+
+353
+01:13:08,020 --> 01:13:30,120
+h2k here, constant, first write upper limit 4 over 2, 2, 2, minus 1 over 2,
+
+354
+01:13:37,747 --> 01:13:40,547
+3D over, 2D,
+
+355
+01:13:45,587 --> 01:13:56,307
+Ve bu funcionsu ile x'e ile
+
+356
+01:13:59,252 --> 01:14:03,731
+x³3, 0.
+
+357
+01:14:07,283 --> 01:14:09,283
+7 over 2
+
+358
+01:14:12,756 --> 01:14:13,876
+Second method,
+
+359
+01:14:16,216 --> 01:14:17,456
+you can change
+
+360
+01:14:17,456 --> 01:14:22,155
+the order of integration
+
+361
+01:14:35,123 --> 01:14:47,023
+Be careful, we change the order of integration, we change dx and dy.
+
+362
+01:14:58,036 --> 01:15:04,036
+İntekler,
+
+363
+01:15:08,595 --> 01:15:14,835
+respect to x by holding y fixed.
+
+364
+01:15:16,195 --> 01:15:23,155
+So, what is this? x cubed over 3 y.
+
+365
+01:15:23,715 --> 01:15:27,155
+Here, this limits...
+
+366
+01:15:47,699 --> 01:15:56,619
+This is, of course, 912 y dy.
+
+367
+01:16:16,787 --> 01:16:18,267
+Any problem?
+
+368
+01:16:27,028 --> 01:16:30,307
+If it is clear.
+
+369
+01:16:36,307 --> 01:16:39,568
+We can give one more example. Calculate the volume.
+
+370
+01:16:45,460 --> 01:16:52,460
+Z'eq's4-x-y
+
+371
+01:16:56,275 --> 01:16:56,876
+Over the
+
+372
+01:16:59,996 --> 01:17:01,595
+Bectangular region
+
+373
+01:17:04,496 --> 01:17:05,996
+0, 2,
+
+374
+01:17:08,715 --> 01:17:09,655
+0, 1.
+
+375
+01:17:40,435 --> 01:17:48,595
+Determine the function and the intervals of x and y.
+
+376
+01:17:50,815 --> 01:17:54,576
+We need the equation of z-accus fx, y.
+
+377
+01:17:55,255 --> 01:18:00,536
+So here fx, y is 4 minus x minus y.
+
+378
+01:18:09,395 --> 01:18:19,395
+So, here x between 0 to y is between 0 to 1.
+
+379
+01:18:22,195 --> 01:18:22,595
+So,
+
+380
+01:18:28,948 --> 01:18:33,628
+This is a positive function in this region.
+
+381
+01:18:35,148 --> 01:18:37,748
+Double integral gives
+
+382
+01:18:41,716 --> 01:18:45,736
+Volume, here, because fx5 positive.
+
+383
+01:18:50,707 --> 01:19:17,307
+Rectangle, here, rectangle, the region is rectangle, so we can write the limits of double integral as the interval of x and y directly.
+
+384
+01:19:17,307 --> 01:19:32,627
+Here, f minus x minus y. In this step, be careful, the limits of inner integral is written by the interval of y.
+
+385
+01:19:32,627 --> 01:19:41,907
+So, we must write first dy and then we must write dx.
+
+386
+01:19:48,500 --> 01:19:49,039
+Be careful.
+
+387
+01:19:55,283 --> 01:20:01,283
+İntegre ile y'e
+
+388
+01:20:06,739 --> 01:20:08,739
+And then write
+
+389
+01:20:21,779 --> 01:20:35,559
+We substitute upper and lower limit of y, 4x, 1 over 2, 0, 0, 0, dx.
+
+390
+01:20:39,828 --> 01:20:41,828
+Please look at here.
+
+391
+01:20:45,779 --> 01:20:52,659
+Solution of inner integral is
+
+392
+01:20:56,372 --> 01:21:00,311
+A function of x.
+
+393
+01:21:07,572 --> 01:21:08,572
+Evet, evet.
+
+394
+01:21:56,275 --> 01:22:00,115
+İntegre,
+
+395
+01:22:03,115 --> 01:22:04,595
+the function ax
+
+396
+01:22:04,595 --> 01:22:06,755
+is
+
+397
+01:22:10,163 --> 01:22:19,003
+Cross-Sectional Area.
+
+398
+01:22:22,836 --> 01:22:26,195
+ve solit, et.
+
+399
+01:22:31,283 --> 01:22:35,643
+Evet, şimdi, let's graph to solid.
+
+400
+01:22:43,060 --> 01:22:56,740
+x is between 0, 1, y is between 0, 2. This is a rectangular domain of f.
+
+401
+01:22:59,220 --> 01:23:08,020
+Z is R, 0, 2, 0, 1.
+
+402
+01:23:08,020 --> 01:23:15,860
+Z equals 4 minus x minus y. This is a plane in R³.
+
+403
+01:23:24,500 --> 01:23:30,100
+f, x, y, y, 0, z, 4.
+
+404
+01:23:51,572 --> 01:23:52,032
+weekend.
+
+405
+01:23:56,756 --> 01:24:10,996
+Sollid like that, and I want to show you cross sectional area ax.
+
+406
+01:24:17,684 --> 01:24:37,684
+x-axis, x is between 0 and 2, x is any point in this interval 0 and 2, cross sectional area at x ax
+
+407
+01:24:37,684 --> 01:24:49,684
+in the previous example ax equals 7 over
+
+408
+01:24:51,684 --> 01:25:03,684
+and 2 minus x.
+
+409
+01:24:59,988 --> 01:25:02,068
+Cross section area means.
+
+410
+01:25:03,528 --> 01:25:05,648
+Bir kesitinin alanını.
+
+411
+01:25:05,927 --> 01:25:07,387
+Böyle dilimliyorsunuz.
+
+412
+01:25:07,528 --> 01:25:10,408
+Bir kesitinin alanını sadece veriyor.
+
+413
+01:25:10,847 --> 01:25:18,088
+X'e göre bulduğunuz bu fonksiyon herhangi bir X noktasında bu cismin bir kesitinin alanını verir diyor.
+
+414
+01:25:18,948 --> 01:25:20,588
+Detay bilgi.
+
+415
+01:25:23,088 --> 01:25:24,088
+Gençler.
+
+416
+01:25:25,508 --> 01:25:27,628
+Ödev yazayım ondan sonra da mola yapalım.
+
+417
+01:25:29,988 --> 01:25:58,988
+Ödev yazayım.
+
+418
+01:25:54,644 --> 01:25:56,644
+You can calculate this.
+
+419
+01:26:00,644 --> 01:26:02,644
+Solution is 3 over 2.
+
+420
+01:26:04,644 --> 01:26:06,644
+D is defined by
+
+421
+01:26:10,163 --> 01:26:10,423
+Evet.
+
+422
+01:26:50,292 --> 01:26:50,912
+Doğruyorum.
+
+423
+01:26:59,507 --> 01:27:03,507
+Asa, it is bounded by...
+
+424
+01:27:07,123 --> 01:27:11,063
+İlkçik parabolu izi.
+
+425
+01:27:14,707 --> 01:27:17,707
+y², 2y² plus 3,
+
+426
+01:27:20,707 --> 01:27:42,707
+y² plus 3,
+
+427
+01:27:38,228 --> 01:27:38,847
+Teşekkürler.
+
+428
+01:27:51,923 --> 01:28:10,823
+you must determine the region on the x-y plane and you will determine function.
+
+429
+01:28:18,323 --> 01:28:23,963
+z x f x y, our desired function.
+
+430
+01:28:28,724 --> 01:28:42,104
+You can say, from this equality, you need z, in terms of x and y. So, you can solve for z, this equality.
+
+431
+01:29:07,315 --> 01:29:18,755
+is defined by like that, rectangular, x equals, the plane x equals 2, intersects the xy plane
+
+432
+01:29:20,675 --> 01:29:29,235
+with the line x equals 2. Similar to, we have the line y equals 2.
+
+433
+01:29:29,235 --> 01:29:41,555
+x equals 2, y equals 2. So, our rectangle is this.
+
+434
+01:30:02,836 --> 01:30:03,836
+Müzik
+
+435
+01:30:09,652 --> 01:30:11,971
+Solucion of this, or take.
+
+436
+01:30:14,412 --> 01:30:16,652
+Buraya kadar soru var mı gençler?
+
+437
+01:30:19,051 --> 01:30:25,712
+Eğer tanım bölgemiz dikdörtgensel bölge ise, hemen sınırlarını, dikdörtgenin sınırlarını yazıyoruz.
+
+438
+01:30:25,712 --> 01:30:35,792
+Ve nasıl kısmi türev yapıyorsak, burada da kısmi integral yaparak, sırasıyla içeriden başlayarak yapıyoruz.
+
+439
+01:30:35,952 --> 01:30:39,032
+İki tane yolumuz var, sırasını değiştirebiliyoruz.
+
+440
+01:30:39,652 --> 01:30:43,792
+Eğer soru yoksa, bir 10 dakika malı yapalım.
+
+441
+01:30:44,332 --> 01:30:51,971
+10 dakika sonra, daha genel bölgelerde nasıl integral hesabı yapıyoruz, onu göreceğiz.
+
+442
+01:30:53,612 --> 01:30:56,492
+İkinci Pubini teoremiyle devam edeceğiz.
+
+443
+01:30:59,412 --> 01:31:01,391
+10 dakika sonra görüşmek üzere o zaman.
+
+444
+01:31:07,123 --> 01:31:08,583
+See you after 10 minutes.
+
+445
+01:46:52,148 --> 01:47:00,148
+If you are ready, we can give the Fubini theorem, stronger form.
+
+446
+01:47:02,148 --> 01:47:05,148
+Second, Fubini.
+
+447
+01:47:44,819 --> 01:47:45,639
+Defined
+
+448
+01:47:58,739 --> 01:48:01,880
+General Region 1.
+
+449
+01:48:25,971 --> 01:48:26,871
+Değil mi?
+
+450
+01:48:33,011 --> 01:48:48,931
+x between a and b, y between the curve g1 and another curve g2.
+
+451
+01:48:53,811 --> 01:48:58,971
+Here, g1 and g2
+
+452
+01:49:18,644 --> 01:49:19,003
+Ben,
+
+453
+01:49:23,028 --> 01:49:26,828
+Double integral of f on d
+
+454
+01:49:26,828 --> 01:49:31,148
+is calculated by
+
+455
+01:49:53,140 --> 01:50:08,079
+Lower limit of x a, and upper limit of x b, and then write, lower limit of y,
+
+456
+01:50:11,507 --> 01:50:40,587
+İntegre ile ilgili bir yi'nin
+
+457
+01:50:33,108 --> 01:50:37,188
+Here, for example, d
+
+458
+01:50:48,372 --> 01:50:51,712
+X, Y, please.
+
+459
+01:50:56,083 --> 01:51:03,083
+İnerhalde x'ı
+
+460
+01:51:08,851 --> 01:51:10,351
+A, B
+
+461
+01:51:16,212 --> 01:51:21,212
+And Y is between...
+
+462
+01:51:30,068 --> 01:51:32,847
+Y equals G1, X
+
+463
+01:51:37,971 --> 01:51:44,971
+yapalım, bu
+
+464
+01:51:54,228 --> 01:51:56,467
+x, g, 2,
+
+465
+01:52:10,771 --> 01:52:19,112
+region is also defined by
+
+466
+01:52:22,868 --> 01:52:40,128
+Y between C and D, and X between the curves h1 and h2.
+
+467
+01:52:45,747 --> 01:52:58,747
+Here h1 and h2 continues functions on the interval cd.
+
+468
+01:53:04,532 --> 01:53:05,072
+Bu da en.
+
+469
+01:53:12,083 --> 01:53:15,804
+İnteklalara, f on d.
+
+470
+01:53:20,627 --> 01:53:22,667
+S, no.
+
+471
+01:53:28,275 --> 01:53:45,956
+First, we write the constants c and d, the limits of maximum minimum values of y, and then write the functions
+
+472
+01:53:48,435 --> 01:53:56,515
+as the limits of inner integri h1 and h2y.
+
+473
+01:54:01,460 --> 01:54:09,220
+We first integrate this function with respect to x and then y.
+
+474
+01:54:12,787 --> 01:54:21,787
+Evet, let's show this region in x-y-plane.
+
+475
+01:54:42,579 --> 01:54:45,180
+D.
+
+476
+01:54:47,300 --> 01:54:47,939
+Now,
+
+477
+01:54:50,420 --> 01:54:52,100
+C is given
+
+478
+01:54:53,739 --> 01:54:54,460
+by
+
+479
+01:54:56,340 --> 01:54:57,220
+the interval
+
+480
+01:54:57,220 --> 01:54:57,619
+D.
+
+481
+01:54:58,019 --> 01:54:58,500
+C.
+
+482
+01:55:04,243 --> 01:55:04,743
+Bye.
+
+483
+01:55:19,412 --> 01:55:20,212
+Bitwin.
+
+484
+01:55:30,836 --> 01:55:31,476
+Curve
+
+485
+01:55:38,579 --> 01:55:39,300
+This curve.
+
+486
+01:55:41,380 --> 01:55:45,180
+X increases from left to right.
+
+487
+01:55:46,979 --> 01:55:47,380
+This.
+
+488
+01:55:50,963 --> 01:55:56,283
+Execuse H2Y
+
+489
+01:56:00,979 --> 01:56:03,539
+equals h1y.
+
+490
+01:56:22,323 --> 01:56:34,163
+If d is defined by explicitly like that, we can write the limits of both integration directly.
+
+491
+01:56:34,963 --> 01:56:48,003
+But if d is not defined by like that, we first draw a diagram for region,
+
+492
+01:56:48,003 --> 01:56:54,763
+and then we can determine the limits of double integrals.
+
+493
+01:57:03,956 --> 01:57:04,716
+For example,
+
+494
+01:57:12,372 --> 01:57:13,052
+Calculate
+
+495
+01:57:20,756 --> 01:57:37,956
+This double integral with region D banded by x equals 0, x equals 2, y equals 0, y equals x-car.
+
+496
+01:57:46,163 --> 01:57:49,643
+To determine the limits of integrites,
+
+497
+01:57:57,652 --> 01:57:58,652
+Evet.
+
+498
+01:58:13,492 --> 01:58:18,212
+given region in xy-plane.
+
+499
+01:58:21,492 --> 01:58:28,292
+d is bounded by x equals zero. This is y-axis.
+
+500
+01:58:31,012 --> 01:58:32,212
+x equals two.
+
+501
+01:58:34,851 --> 01:58:39,172
+y equals zero means x-axis.
+
+502
+01:58:39,172 --> 01:58:52,052
+and then draw y equals x square. This is the parabola. Passing through origin
+
+503
+01:58:54,771 --> 01:58:59,971
+and intersects the line x equals two.
+
+504
+01:58:59,971 --> 01:59:03,971
+Add to
+
+505
+01:59:14,771 --> 01:59:20,931
+S is closed, region is D.
+
+506
+01:59:26,163 --> 01:59:48,563
+D is the set of all x, y, such that x between 0, 2, but y is between 0, x square.
+
+507
+02:00:16,148 --> 02:00:26,148
+To determine the limits of integration, it is useful to draw an arrow inside the region.
+
+508
+02:00:36,243 --> 02:00:46,483
+Rewrite maximum minimum value of x, minimum value of 0, maximum value of x is 2.
+
+509
+02:00:50,036 --> 02:01:17,456
+To determine the limits of y in this region, draw an arrow as y increases from bottom to top inside d.
+
+510
+02:01:20,036 --> 02:01:24,256
+You can draw one or more.
+
+511
+02:01:36,307 --> 02:01:43,307
+From bottom to top inside the region.
+
+512
+02:01:51,412 --> 02:02:06,612
+The curve or line, where the lower point of this arrow, this line segment, lines, is the lower limit.
+
+513
+02:02:12,979 --> 02:02:14,979
+İnteklal.
+
+514
+02:02:16,739 --> 02:02:39,979
+So, we can write these limits by i. Minimum value of x, maximum value of y, r, the upper and lower limits of outer integral, and then we must write inner integral.
+
+515
+02:02:43,731 --> 02:02:45,112
+Lower point
+
+516
+02:02:45,112 --> 02:02:49,752
+is on the lower limit of
+
+517
+02:02:49,752 --> 02:02:51,372
+inner integral.
+
+518
+02:02:52,051 --> 02:02:53,612
+This is x-axis.
+
+519
+02:02:54,192 --> 02:02:56,412
+This is y equals zero
+
+520
+02:02:56,412 --> 02:02:57,532
+line.
+
+521
+02:03:02,644 --> 02:03:19,764
+The upper point of this line segment is on the parabola. y equals x0 is upper limit of inner integral.
+
+522
+02:03:22,003 --> 02:03:29,444
+Don't forget to write integrant and determine the order of integration.
+
+523
+02:03:29,444 --> 02:03:37,684
+We must write dy and then integrate with respect to x.
+
+524
+02:03:40,003 --> 02:03:40,724
+Any question?
+
+525
+02:04:06,579 --> 02:04:22,979
+İlk başta, draw the given region D, and then write an arrow inside the region D.
+
+526
+02:04:22,979 --> 02:04:35,239
+First, write the limits of outer integral, and then write by using an arrow.
+
+527
+02:04:39,828 --> 02:04:41,828
+İnteklisi
+
+528
+02:05:19,412 --> 02:05:22,052
+Kutluk olmamış. Benim atammış.
+
+529
+02:05:39,283 --> 02:05:45,283
+We change the order of integration.
+
+530
+02:06:10,068 --> 02:06:12,868
+We want to calculate this integral.
+
+531
+02:06:14,387 --> 02:06:14,948
+First,
+
+532
+02:06:23,444 --> 02:06:30,824
+İnteklisi, ilk olarak x ve y olarak y olarak.
+
+533
+02:06:30,824 --> 02:06:37,744
+We want to change the order of integration.
+
+534
+02:06:37,744 --> 02:06:42,744
+So, we must write...
+
+535
+02:06:46,707 --> 02:06:49,247
+The upper and lower limits of y.
+
+536
+02:06:53,684 --> 02:07:10,984
+Limits of outer integration is the maximum minimum value of y. Minimum value of y is 0. Maximum value of y is 4.
+
+537
+02:07:10,984 --> 02:07:23,724
+So, to determine the limits of outer integration is very simple. Maximum minimum value of y.
+
+538
+02:07:26,463 --> 02:07:33,324
+To determine the limits of inner integration, we must
+
+539
+02:07:40,756 --> 02:07:43,076
+Draw an arrow
+
+540
+02:07:43,076 --> 02:07:47,076
+Inside D
+
+541
+02:07:47,076 --> 02:07:51,876
+At any point Y
+
+542
+02:07:51,876 --> 02:07:54,735
+As
+
+543
+02:07:58,100 --> 02:08:02,240
+increases, from left to right.
+
+544
+02:08:02,240 --> 02:08:05,039
+Because
+
+545
+02:08:09,300 --> 02:08:18,140
+We want to determine the upper and lower limits of x inside d.
+
+546
+02:08:26,484 --> 02:08:41,604
+Lower limit of this line segment, here, this is on the parabola, but be careful, we need x.
+
+547
+02:08:41,604 --> 02:08:48,524
+So, here x equals root y.
+
+548
+02:08:54,452 --> 02:08:57,012
+We need x in terms of y.
+
+549
+02:09:30,707 --> 02:09:34,307
+Very simple. İntegriye.
+
+550
+02:09:36,467 --> 02:09:39,507
+First, calculate this integral.
+
+551
+02:09:40,467 --> 02:09:50,867
+With respect to x, y is constant. So, 2 minus root y.
+
+552
+02:09:50,867 --> 02:10:01,107
+And then, we must calculate this integral.
+
+553
+02:10:01,107 --> 02:10:05,507
+2y, y² over 2, just y².
+
+554
+02:10:06,228 --> 02:10:09,747
+This becomes y to do 3 over 2.
+
+555
+02:10:11,827 --> 02:10:13,827
+3.
+
+556
+02:10:32,851 --> 02:10:33,652
+Is this true?
+
+557
+02:10:37,332 --> 02:10:39,052
+Please check this.
+
+558
+02:11:01,779 --> 02:11:03,380
+Sözü, bir şey.
+
+559
+02:11:07,220 --> 02:11:09,780
+We calculate this integral,
+
+560
+02:11:12,659 --> 02:11:25,060
+find the same solution, let's do together y squared over 2 from 0 to x squared dx.
+
+561
+02:11:33,684 --> 02:11:37,284
+4 over 2 dx
+
+562
+02:11:37,284 --> 02:11:39,663
+x to 5
+
+563
+02:11:48,307 --> 02:11:48,747
+Tamam.
+
+564
+02:11:56,404 --> 02:11:59,084
+Evet, evet, bu da.
+
+565
+02:12:02,868 --> 02:12:03,588
+Any question?
+
+566
+02:12:13,171 --> 02:12:26,351
+We want to know the change, the order of integration, because, no clear, say it, problem?
+
+567
+02:12:38,484 --> 02:12:40,164
+Okay, okay.
+
+568
+02:12:44,124 --> 02:12:45,084
+One more example.
+
+569
+02:12:52,724 --> 02:12:53,884
+Double integral
+
+570
+02:12:59,828 --> 02:13:09,268
+R'ın aylıkları yıplanesi.
+
+571
+02:13:13,908 --> 02:13:26,887
+Y'e x
+
+572
+02:13:41,555 --> 02:13:48,555
+ve
+
+573
+02:14:11,555 --> 02:14:18,555
+bu,
+
+574
+02:14:23,923 --> 02:14:33,384
+Şimdi yazık y'e y
+
+575
+02:14:43,380 --> 02:14:58,600
+We must write this intersection point, if here x equals 1, so this point, coordinate of this point, 1, 1, so this maximum value of y.
+
+576
+02:14:59,520 --> 02:15:05,480
+If we write the minimum value of y, 0 and 1,
+
+577
+02:15:05,480 --> 02:15:15,800
+So, we need limits of x to determine this, we
+
+578
+02:15:15,800 --> 02:15:26,239
+Draw an arrow from left to right inside region.
+
+579
+02:15:29,811 --> 02:15:33,631
+Lower point is on this line.
+
+580
+02:15:34,891 --> 02:15:43,051
+Now we need sublimit of x.
+
+581
+02:15:43,872 --> 02:15:52,291
+So x start from y to this line.
+
+582
+02:15:52,291 --> 02:15:58,112
+The equation of this line x x 1.
+
+583
+02:15:58,112 --> 02:16:06,612
+So x x 1 is the upper limit of outer integral.
+
+584
+02:16:06,971 --> 02:16:08,372
+Sorry, inner integral.
+
+585
+02:16:09,872 --> 02:16:13,372
+Integrant is given like that.
+
+586
+02:16:14,311 --> 02:16:16,032
+x dy.
+
+587
+02:16:25,492 --> 02:16:40,252
+If we choose first this double integral, we cannot solve this integral because
+
+588
+02:16:44,724 --> 02:16:55,844
+There is no simple antiderivative of this function. This is not elementary function.
+
+589
+02:17:11,860 --> 02:17:26,220
+Yes, yes, you are right to say it. We can use Taylor series, but it does not be expressed in terms of elementary function.
+
+590
+02:17:35,412 --> 02:17:47,412
+We can choose another method. We change the order of integration.
+
+591
+02:17:54,324 --> 02:18:03,444
+We first write the maximum minimum value of x and then we determine
+
+592
+02:18:06,708 --> 02:18:10,068
+upper end level limit of y, inside d.
+
+593
+02:18:13,347 --> 02:18:29,748
+To do this, I draw one more time, this region, here, t, 1, 1, 1. Maximum minimum value of x, 0, 1.
+
+594
+02:18:29,748 --> 02:18:47,507
+And to determine the upper end level limit of inner integral, we write, sorry, we draw an arrow from bottom to top,
+
+595
+02:18:49,908 --> 02:18:51,667
+inside region.
+
+596
+02:18:51,667 --> 02:19:03,748
+Level point is on the x-axis, so the equation of this line y equals 0.
+
+597
+02:19:06,628 --> 02:19:14,628
+Upper point is on this line, the equation of this line, we need y in terms of x.
+
+598
+02:19:22,195 --> 02:19:29,195
+İlk olarak, yi'ye görebilecek.
+
+599
+02:19:33,427 --> 02:19:40,427
+x'ın x'ı
+
+600
+02:19:40,427 --> 02:20:03,427
+y'ı
+
+601
+02:19:54,100 --> 02:19:57,100
+101, sin x'ı verirte.
+
+602
+02:20:02,260 --> 02:20:06,040
+Now, we can simplify these terms.
+
+603
+02:20:12,180 --> 02:20:19,180
+ve
+
+604
+02:20:54,611 --> 02:20:55,611
+Bir daha.
+
+605
+02:21:14,100 --> 02:21:16,739
+Z equals x square plus y square.
+
+606
+02:21:21,203 --> 02:21:28,203
+ve
+
+607
+02:21:38,932 --> 02:21:51,712
+Y'eqü 2x ve parabola y'eqü x-fukarı.
+
+608
+02:22:06,835 --> 02:22:09,155
+right to double integri.
+
+609
+02:22:13,363 --> 02:22:27,603
+Şimdi, we need to find volume. Volume is defined by double integral. Double integral of surface.
+
+610
+02:22:30,963 --> 02:22:34,123
+Defined on the region D.
+
+611
+02:22:38,739 --> 02:22:42,280
+Öncelikle, bu konuda bir fücüsü var.
+
+612
+02:22:44,819 --> 02:22:58,979
+Bu konuda bir fücüsü var.
+
+613
+02:22:58,979 --> 02:23:00,979
+İndir, y².
+
+614
+02:23:03,619 --> 02:23:08,659
+Şimdi, bu konuda bir fücüsü var.
+
+615
+02:23:10,979 --> 02:23:16,659
+Bu konuda bir fücüsü var.
+
+616
+02:23:18,100 --> 02:23:23,860
+D.
+
+617
+02:23:23,860 --> 02:23:53,860
+Y'eqü var.
+
+618
+02:23:44,788 --> 02:23:45,788
+X square.
+
+619
+02:23:47,788 --> 02:23:49,788
+We need intersection point.
+
+620
+02:23:53,811 --> 02:23:59,332
+Determine intersection points of them, ve ekleksiyonlar.
+
+621
+02:24:19,667 --> 02:24:22,788
+Koordinateliyse, bu point, 2, 4.
+
+622
+02:24:23,507 --> 02:24:24,587
+Here, 2.
+
+623
+02:24:53,172 --> 02:24:55,172
+İntegral.
+
+624
+02:24:56,532 --> 02:24:59,172
+Write the maximum minimum value of x.
+
+625
+02:25:01,572 --> 02:25:08,372
+Maximum value of x is zero. Sorry minimum. Maximum value is two.
+
+626
+02:25:11,891 --> 02:25:15,891
+X² plus Y²
+
+627
+02:25:20,371 --> 02:25:34,971
+So, we must write dy first and then dx. Now, to determine the limits of inner integral form y, so,
+
+628
+02:25:39,188 --> 02:25:51,147
+Draw inside, be careful, inside region from bottom to top.
+
+629
+02:25:54,484 --> 02:25:58,264
+Lover point is on the parabola.
+
+630
+02:26:01,716 --> 02:26:18,675
+Delikation of parabola y equals x squared. We need y in terms of x squared. We write x squared as lower limit of inner integral.
+
+631
+02:26:21,476 --> 02:26:28,435
+What is the upper limit of integral?
+
+632
+02:26:35,796 --> 02:26:37,036
+Say it, can you say?
+
+633
+02:26:41,971 --> 02:26:45,172
+Thank you very much, this is true.
+
+634
+02:26:48,291 --> 02:26:59,172
+We first calculate minor integral with respect to y by holding x constant.
+
+635
+02:27:03,123 --> 02:27:14,904
+Here, be careful, substitute 2x, and x square for y, because there are limits of y.
+
+636
+02:28:03,252 --> 02:28:06,012
+2 plus, 2 over 3.
+
+637
+02:28:08,652 --> 02:28:13,572
+15 over 3, x cubed, x to the 4 over 4.
+
+638
+02:28:14,532 --> 02:28:21,971
+Here, x to the 4, x to the 5 over 5, 7, 20 to 1.
+
+639
+02:28:22,912 --> 02:28:27,612
+Please write 2 instead of x.
+
+640
+02:28:35,507 --> 02:28:38,967
+I think second method can be homework.
+
+641
+02:28:38,967 --> 02:28:39,007
+I think the second method can be homework.
+
+642
+02:28:43,007 --> 02:28:46,887
+The order of integration.
+
+643
+02:28:51,219 --> 02:28:53,439
+Another word, kalpulat.
+
+644
+02:28:57,683 --> 02:29:27,663
+Y'lif'in
+
+645
+02:29:19,443 --> 02:29:20,203
+Another example.
+
+646
+02:29:23,891 --> 02:29:33,351
+Bir soru
+
+647
+02:29:39,891 --> 02:29:41,631
+0, 1,
+
+648
+02:29:41,631 --> 02:29:45,231
+x,
+
+649
+02:29:48,755 --> 02:29:53,555
+x2 x dy dx
+
+650
+02:29:55,475 --> 02:29:56,036
+and then
+
+651
+02:30:00,659 --> 02:30:05,739
+Right and equivalent.
+
+652
+02:30:09,203 --> 02:30:17,843
+İntegreye with the order of integration
+
+653
+02:30:36,147 --> 02:30:43,867
+To determine the region D, we look at the limits of double integris.
+
+654
+02:30:45,307 --> 02:30:55,147
+So outer integris is little to x in the integral y.
+
+655
+02:30:55,147 --> 02:31:00,227
+So the region is the set of all x, y.
+
+656
+02:31:01,427 --> 02:31:04,407
+x between 0 and 1.
+
+657
+02:31:05,307 --> 02:31:06,787
+y between
+
+658
+02:31:12,404 --> 02:31:14,783
+Lime and this curve.
+
+659
+02:31:19,028 --> 02:31:21,827
+You can rewrite this domain.
+
+660
+02:31:23,108 --> 02:31:26,388
+D is bounded by
+
+661
+02:31:26,388 --> 02:31:33,148
+Line x equals 0, the line x equals 1,
+
+662
+02:31:36,148 --> 02:31:40,868
+the line y equals 1 minus x,
+
+663
+02:31:40,868 --> 02:31:48,948
+and y equals root of 1 minus x.
+
+664
+02:31:49,028 --> 02:31:49,667
+x square.
+
+665
+02:31:51,827 --> 02:31:54,708
+Now we can sketch
+
+666
+02:31:57,907 --> 02:32:00,548
+the region d in the xy plane.
+
+667
+02:32:01,827 --> 02:32:03,987
+X equals 0, this is y axis.
+
+668
+02:32:03,987 --> 02:32:05,587
+We need x equals 1.
+
+669
+02:32:08,468 --> 02:32:10,548
+We need this.
+
+670
+02:32:17,268 --> 02:32:53,268
+Y'eqli bir tane.
+
+671
+02:33:08,884 --> 02:33:15,884
+bu bölümde bu bölümde
+
+672
+02:33:20,180 --> 02:33:40,680
+x'e ile 0'e 1'e
+
+673
+02:33:50,708 --> 02:33:54,708
+0 to 1
+
+674
+02:33:56,708 --> 02:34:20,708
+y
+
+675
+02:34:07,412 --> 02:34:09,791
+Do you determine our D?
+
+676
+02:34:19,347 --> 02:34:28,067
+To determine D, you can draw an arrow.
+
+677
+02:34:32,468 --> 02:34:35,468
+Bu integral olarak,
+
+678
+02:34:35,468 --> 02:34:49,468
+we use an arrow for y, because integral is written in terms of y,
+
+679
+02:34:49,468 --> 02:35:03,468
+an arrow for y is drawn from bottom to top inside d from
+
+680
+02:35:03,468 --> 02:35:05,468
+top.
+
+681
+02:35:06,739 --> 02:35:34,539
+Line 1-x, as x changes from x equals 0 to x equals 2, y varies from y equals 1-x to y.
+
+682
+02:35:38,100 --> 02:35:43,380
+So, if we draw an arrow in this region,
+
+683
+02:35:46,835 --> 02:35:53,295
+yi varisal
+
+684
+02:35:56,211 --> 02:35:56,891
+Any problem?
+
+685
+02:35:58,091 --> 02:35:59,091
+Is it clear?
+
+686
+02:36:07,283 --> 02:36:18,003
+If no question we can write the other double integral for this region.
+
+687
+02:36:19,043 --> 02:36:19,443
+Rest,
+
+688
+02:36:22,163 --> 02:36:25,763
+redraw. Now we first
+
+689
+02:36:29,203 --> 02:36:37,203
+write the limits of x for the outer integral. Sorry, let's look at together.
+
+690
+02:36:37,843 --> 02:36:46,404
+No, we first use x and y. We need
+
+691
+02:36:48,564 --> 02:37:02,644
+the maximum minimum value of y. y changes from 1, from 0 to 1. And to determine the limits of x,
+
+692
+02:37:02,644 --> 02:37:12,003
+we need to draw an arrow from left to right.
+
+693
+02:37:12,003 --> 02:37:24,484
+Here, y equals 1 minus x. So we need x in terms of y. So x equals 1 minus y.
+
+694
+02:37:24,484 --> 02:37:37,043
+To this curve. The equation of this curve x square plus y square equals 1. We need x in terms of y.
+
+695
+02:37:37,043 --> 02:37:37,603
+To this curve.
+
+696
+02:37:37,603 --> 02:38:03,603
+To this curve. The equation of y.
+
+697
+02:37:46,260 --> 02:37:48,260
+If we solve this...
+
+698
+02:37:57,268 --> 02:38:05,768
+Evet, if you use second method,
+
+699
+02:38:10,611 --> 02:38:14,771
+Bu bir şey, ve 1 over 6.
+
+700
+02:38:32,852 --> 02:38:33,532
+Example?
+
+701
+02:38:41,172 --> 02:38:57,212
+So, let's look at the volume of the solids that lies the surface that equals x, y and
+
+702
+02:39:03,379 --> 02:39:07,699
+above the region R,
+
+703
+02:39:10,279 --> 02:39:11,359
+bounded by
+
+704
+02:39:14,899 --> 02:39:24,440
+Y2, y2, y2, 4, minus x, and
+
+705
+02:39:30,195 --> 02:39:34,036
+Y axis
+
+706
+02:39:39,507 --> 02:39:49,347
+integral, integral is determined by this equation, and we need the region R.
+
+707
+02:39:50,548 --> 02:40:06,467
+So, let's draw the region R. We need to draw this parabola. This parabola is like that. We are in the first quadrant.
+
+708
+02:40:15,283 --> 02:40:17,763
+İmperst squadrons.
+
+709
+02:40:23,188 --> 02:41:10,698
+Bu, bu
+
+710
+02:41:28,788 --> 02:41:32,448
+add here, x-axis.
+
+711
+02:41:40,147 --> 02:41:53,487
+Y-axis, just x-axis, please write, let me change my notes, now it is true.
+
+712
+02:42:00,147 --> 02:42:05,307
+X-Axis, bu parabola ve bu parabola.
+
+713
+02:42:06,867 --> 02:42:07,927
+D is
+
+714
+02:42:07,927 --> 02:42:09,847
+enclosed
+
+715
+02:42:09,847 --> 02:42:12,467
+by them.
+
+716
+02:42:13,127 --> 02:42:14,507
+So D is here.
+
+717
+02:42:26,291 --> 02:42:26,771
+Ne?
+
+718
+02:42:49,268 --> 02:42:55,188
+Can solve this double integral by two method, but
+
+719
+02:43:01,108 --> 02:43:10,188
+Bir de isimple, bir de isimple. Bir de isimple. Bir de isimple. Bir de isimple. Bir de isimple. Bir de isimple. Bir de isimple. Bir de isimple. Bir de isimple. Bir de isimple. Bir de isimple. Bir de isimple. Bir de isimple. Bir de isimple. Bir de isimple. Bir de isimple. Bir de isimple. Bir de isimple. Bir de isimple. Bir de isimple. Bir de isimple. Bir de isimple. Bir de isimple. Bir de isimple. Bir de isimple. Bir de isimple. Bir de isimple. Bir de isimple. Bir de isimple. Bir de isimple. Bir de isimple. Bir de isimple. Bir de isimple. Bir de isimple. Bir de isimple. Bir de isimple. Bir
+
+720
+02:43:13,396 --> 02:43:15,396
+Bu bir şey, çok kolay.
+
+721
+02:43:19,028 --> 02:43:34,347
+If we write the maximum minimum value of y, we first determine the intersection point of curves.
+
+722
+02:43:34,347 --> 02:43:36,188
+What is this?
+
+723
+02:43:41,587 --> 02:43:55,927
+e equals m, x equals to, y equals root to, the coordinate of this intersection point, to root to.
+
+724
+02:43:56,927 --> 02:44:05,768
+So, minimum value of y, zero, maximum value of y is root to.
+
+725
+02:44:05,768 --> 02:44:18,768
+If you write minimum, maximum value of y, x, change from...
+
+726
+02:44:22,963 --> 02:44:25,423
+This curve to this curve.
+
+727
+02:44:28,852 --> 02:44:33,212
+X changes from root Y.
+
+728
+02:44:37,459 --> 02:44:54,239
+No, just we need for x y squared and then for minus y squared x y with respect to x first and then y.
+
+729
+02:44:59,316 --> 02:44:59,936
+Any question?
+
+730
+02:45:01,436 --> 02:45:03,496
+This is a simple solution.
+
+731
+02:45:30,515 --> 02:45:31,636
+Let's look at here.
+
+732
+02:45:33,095 --> 02:45:37,216
+X changes from 0 to 4.
+
+733
+02:45:41,299 --> 02:45:41,799
+But
+
+734
+02:45:45,683 --> 02:45:52,683
+İntegrali'nin
+
+735
+02:45:57,843 --> 02:45:58,683
+Vidro!
+
+736
+02:46:05,043 --> 02:46:12,043
+İzlediğiniz için,
+
+737
+02:46:18,004 --> 02:46:21,924
+I draw here an arrow.
+
+738
+02:46:24,324 --> 02:46:26,324
+Both arrows
+
+739
+02:46:29,843 --> 02:46:48,163
+X-Axis, but first arrow, finish this parabola, but at this point,
+
+740
+02:46:56,948 --> 02:47:04,907
+changes, because second arrow finish, another, kere.
+
+741
+02:47:09,492 --> 02:47:11,711
+So, bu da.
+
+742
+02:47:15,827 --> 02:47:18,507
+Region is union of
+
+743
+02:47:18,507 --> 02:47:23,307
+different two region.
+
+744
+02:47:24,747 --> 02:47:27,787
+First region is the set of
+
+745
+02:47:27,787 --> 02:47:30,287
+x, y
+
+746
+02:47:30,287 --> 02:47:33,427
+x between
+
+747
+02:47:33,427 --> 02:47:37,847
+0 and 2
+
+748
+02:47:37,847 --> 02:47:40,087
+y between
+
+749
+02:47:40,087 --> 02:47:42,507
+0
+
+750
+02:47:42,507 --> 02:47:47,007
+and root x
+
+751
+02:47:51,252 --> 02:47:52,852
+Another domain,
+
+752
+02:47:55,891 --> 02:47:57,332
+this is d1,
+
+753
+02:47:59,652 --> 02:48:01,172
+this is d2,
+
+754
+02:48:03,891 --> 02:48:05,332
+d2 is
+
+755
+02:48:07,971 --> 02:48:18,372
+xy such that x between 2 and 4, y between 0 and another
+
+756
+02:48:21,252 --> 02:48:23,891
+y2 4 minus x
+
+757
+02:48:23,891 --> 02:48:24,532
+so
+
+758
+02:48:24,532 --> 02:48:26,372
+root of
+
+759
+02:48:26,372 --> 02:48:28,131
+4 minus x
+
+760
+02:48:34,804 --> 02:48:45,324
+We write this double integral by two different double integral, the sum of two integral.
+
+761
+02:48:48,523 --> 02:48:49,164
+First,
+
+762
+02:48:53,043 --> 02:48:54,324
+D1
+
+763
+02:49:04,468 --> 02:49:13,188
+d1, x from 0 to 2, y from 0 to root x.
+
+764
+02:49:18,835 --> 02:49:31,355
+x start from 2 to 4, y start from 0 to 4 minus x, x, y, d, y, d, x.
+
+765
+02:49:36,275 --> 02:49:39,915
+Solution is this.
+
+766
+02:49:44,051 --> 02:49:46,092
+Any problem? Any question?
+
+767
+02:50:09,780 --> 02:50:20,760
+Gençler, ikinci metotta y'nin üst sınırı değiştiği için iki ayrı integral biçiminde yazmak zorunda kaldık.
+
+768
+02:50:20,760 --> 02:50:32,300
+Ama birinci metotta x'in alt sınırı hep aynı eğri, üst sınır hep aynı eğri. Hiçbir değişim yok. Hep aynı alt sınır, hep aynı üst sınır.
+
+769
+02:50:32,300 --> 02:50:47,960
+Dolayısıyla tek bir integralde işimiz bitiyordu. Ama bazı durumlarda, integrasyon sırasını değiştirdiğimizde, integrali iki farklı integralin, hatta üç farklı integralin toplamı şeklinde yazmak zorunda kalabiliriz.
+
+770
+02:50:48,079 --> 02:51:00,239
+Ne zaman oluyor bu? Üst sınır eğrisi değiştiğinde. Eğer verilen bölge, farklı eğrilerin sınırlandırdığı bölge ise o zaman mutlaka kontrol edeceğiz.
+
+771
+02:51:00,239 --> 02:51:06,239
+Bu yardımcı oklarımız, bu yardımcı oklarımızı çiziyoruz. Bu yardımcı doğrularımızı çiziyoruz.
+
+772
+02:51:06,239 --> 02:51:16,000
+Bu içine çizdiğimiz yardımcı doğruları mutlaka bir tane değil de bir iki tane bir farklı yerlere çizerseniz alt sınırı üst sınırı daha iyi bilirlersiniz.
+
+773
+02:51:24,051 --> 02:51:26,031
+Soru var mı gençler bununla dair?
+
+774
+02:51:26,031 --> 02:51:26,971
+Any questions?
+
+775
+02:51:35,252 --> 02:51:38,731
+If no question, we will continue tomorrow.
+
+776
+02:51:42,579 --> 02:51:44,280
+Take care of yourself.
+
+777
+02:51:47,219 --> 02:51:48,000
+Oh, okay.
+
+778
+02:53:09,907 --> 02:53:13,207
+Görüşündüğünüz zaman lütfen söyleyin, bekliyoruz.
+
+779
+02:53:24,404 --> 02:53:25,543
+İyi günler [öğrenci].
+
+780
+02:53:48,884 --> 02:53:52,884
+Gençler, herkes indirebildiyse, oturumu kapatıyorum.
+
+781
+02:53:54,224 --> 02:53:56,683
+Kendinize iyi bakın. Yarın görüşmek ümidiyle.
+
+782
+02:53:58,283 --> 02:53:59,084
+Hoşçakalın.
+
+783
+02:54:03,507 --> 02:54:04,048
+Bye bye.

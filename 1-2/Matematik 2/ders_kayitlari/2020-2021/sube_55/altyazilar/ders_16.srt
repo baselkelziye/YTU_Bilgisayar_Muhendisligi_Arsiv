@@ -1,0 +1,2767 @@
+1
+00:00:13,875 --> 00:00:14,475
+Günaydın.
+
+2
+00:00:27,859 --> 00:00:28,539
+Morning!
+
+3
+00:00:43,380 --> 00:00:44,420
+Marnik, bayraş.
+
+4
+00:00:51,155 --> 00:00:55,475
+Görüşmeyeli nasılsınız? Nasıl geçti sınavlarınız?
+
+5
+00:01:16,531 --> 00:01:19,852
+Sevindim. Kötü olmasın. Yeter ki.
+
+6
+00:01:24,275 --> 00:01:29,115
+Teşekkürler, ben de iyiyim. Çok şükür bir aksilik yok.
+
+7
+00:01:35,891 --> 00:01:40,391
+Önümüzdeki haftada bayram tatili nedeniyle ders olmayacak biliyorsunuz gençler.
+
+8
+00:01:42,231 --> 00:01:45,671
+Bugün ve yarın sınavdan önceki son derslerimiz olacak.
+
+9
+00:01:48,311 --> 00:01:53,531
+Bugün limit ve sürekli tamamlayıp kısmi türeve geçeceğiz. Sınavımız kısmi türeve kadar.
+
+10
+00:02:01,299 --> 00:02:06,200
+Sizin herhangi bir sorunuz var mı? Herhangi bir merak ettiğiniz bir konu?
+
+11
+00:02:18,644 --> 00:02:24,563
+Üç dönem üst üste uzaktan eğitim yaptık. Üçünde de 20'şer soru soruldu. Çoktan seçmeli olarak.
+
+12
+00:02:25,903 --> 00:02:31,563
+Yine öyle olacağını tahmin ediyoruz. Henüz kesin bir açıklama yok.
+
+13
+00:02:34,444 --> 00:02:43,683
+[öğrenci] zannetmiyorum. Sadece son konuların ağırlıklı olacağını, en baştaki konulardan da yoğun bir şekilde soru gelecektir.
+
+14
+00:02:43,683 --> 00:02:49,123
+Yarı yarıya olacaktır diye düşünüyorum. Tahmin ediyorum ama tamamen bu şahsi fikrim.
+
+15
+00:02:50,144 --> 00:02:55,804
+Diziler ve serilerden de yarı yarıya soru gelir diye tahmin ediyorum.
+
+16
+00:02:58,024 --> 00:03:00,683
+Sizlere gönderdim ben geçen senenin sınav sorularını.
+
+17
+00:03:03,624 --> 00:03:05,144
+Bunlara şöyle bir tekrar bakın.
+
+18
+00:03:05,384 --> 00:03:06,444
+Evet test olacak.
+
+19
+00:03:06,783 --> 00:03:10,144
+Dört yanlış bir doğru getirmek. Evet vardı. Doğru.
+
+20
+00:03:11,524 --> 00:03:13,544
+Dört yanlış bir doğruyu götürüyor.
+
+21
+00:03:13,683 --> 00:03:20,144
+O konuda kararlıydılar.
+
+22
+00:03:20,144 --> 00:03:22,084
+Herhangi bir geri adım atılmadı.
+
+23
+00:03:22,484 --> 00:03:24,343
+Öğrenciler o kuralı sevmiyor.
+
+24
+00:03:24,343 --> 00:03:25,144
+Haklı olarak.
+
+25
+00:03:26,584 --> 00:03:29,223
+Hocalar da haklı bir şekilde
+
+26
+00:03:29,223 --> 00:03:35,903
+kopyaya engel olmak ya da kafadan atmaya engel olmak için
+
+27
+00:03:35,903 --> 00:03:39,183
+bu kuralı
+
+28
+00:03:39,183 --> 00:03:41,343
+koymak istiyorlar.
+
+29
+00:03:46,259 --> 00:03:48,139
+I don't know, [öğrenci].
+
+30
+00:03:50,620 --> 00:03:52,459
+Actually, I don't know.
+
+31
+00:04:03,604 --> 00:04:06,144
+The example will be until partial derivative.
+
+32
+00:04:06,624 --> 00:04:07,664
+Say it.
+
+33
+00:04:08,984 --> 00:04:11,284
+Partial derivative'e kadar.
+
+34
+00:04:11,704 --> 00:04:12,744
+Kısmi türeve kadar.
+
+35
+00:04:16,915 --> 00:04:18,975
+Eğer hazırsanız başlayalım gençler.
+
+36
+00:04:20,295 --> 00:04:21,576
+Bu zaman kaybetmeyelim.
+
+37
+00:04:22,456 --> 00:04:28,615
+In this section we deal with limits and continuity for multiple variable functions.
+
+38
+00:05:46,355 --> 00:06:16,336
+Evet, tamam.
+
+39
+00:06:03,315 --> 00:06:17,995
+variables x and y from d to r and a point p in there.
+
+40
+00:06:26,516 --> 00:06:44,116
+So in space, d is the subset of r², the point p in this region.
+
+41
+00:06:48,596 --> 00:06:59,076
+Function f is defined from d to r. So, the values of f
+
+42
+00:08:03,411 --> 00:08:03,791
+P.
+
+43
+00:08:16,115 --> 00:08:18,015
+Şimdi de Türkçe geçelim gençler.
+
+44
+00:08:19,575 --> 00:08:40,196
+X, Y noktalarını P noktasına yeterince yakın alarak, F, X, Y değerlerini L sayısına istediğimiz kadar yakın olmasını sağlayabiliyorsak,
+
+45
+00:08:44,467 --> 00:09:05,487
+We say that the values f, x, y approach to number L as the point x, y approach to point P.
+
+46
+00:09:09,556 --> 00:09:28,956
+The point x, y approach to point p in the domain d along any path within this domain.
+
+47
+00:09:33,908 --> 00:09:59,587
+fx'y'ler L sayısına yaklaşırken, fx'y'ler de L'ye yaklaşır deriz ve x'y' noktaları P noktasına D bölgesinde herhangi eğriler ya da doğrularla, herhangi yollarla yaklaşır deriz.
+
+48
+00:10:06,836 --> 00:10:32,316
+We say that the limit of f, x, y as x, y approach the point p equals to l. And we denot by like that.
+
+49
+00:10:36,371 --> 00:10:42,411
+Definition is same as the limit definition of a function with single variable.
+
+50
+00:10:44,411 --> 00:10:46,091
+Please recall that
+
+51
+00:10:52,563 --> 00:11:09,123
+A function of a single variable, we define the limits of any function y equals f of x, we say that
+
+52
+00:11:09,123 --> 00:11:24,423
+the values of f x as close to l as we like by taking the point, for example, a in d, sufficiently close to the point.
+
+53
+00:11:30,035 --> 00:11:37,865
+A'ın A
+
+54
+00:11:41,812 --> 00:11:48,572
+Tek değişkenli fonksiyonlar için vermiş olduğumuz tanımla, çok değişkenli fonksiyonlar için verdiğimiz tanım birebir aynı.
+
+55
+00:11:49,432 --> 00:11:50,892
+Hatırlıyorsanız şayet.
+
+56
+00:11:56,148 --> 00:12:23,187
+In R², in the xy-plane, we have a point A in the real axis, as x approaches A in the real axis, f x approaches L.
+
+57
+00:12:26,836 --> 00:12:35,635
+So, we say that limit of f of x as x approaches a equals a.
+
+58
+00:12:40,467 --> 00:12:43,788
+If no question about definition,
+
+59
+00:12:48,403 --> 00:12:50,403
+We can give...
+
+60
+00:12:54,035 --> 00:12:54,875
+Orman
+
+61
+00:12:57,908 --> 00:13:00,148
+Definition of Limit.
+
+62
+00:13:00,687 --> 00:13:01,467
+This is
+
+63
+00:13:01,467 --> 00:13:05,467
+Informal Definition
+
+64
+00:13:12,179 --> 00:13:15,339
+Epsilon-Delta Definition
+
+65
+00:13:20,115 --> 00:13:20,535
+Ev.
+
+66
+00:13:24,851 --> 00:13:26,631
+Epsilon positive number.
+
+67
+00:13:29,552 --> 00:13:30,552
+There is a...
+
+68
+00:13:33,908 --> 00:13:41,148
+corresponding number, delta positive number.
+
+69
+00:13:52,532 --> 00:13:54,831
+Numbers in the domain of f
+
+70
+00:14:07,956 --> 00:14:14,196
+If xy minus l less than epsilon
+
+71
+00:14:24,947 --> 00:14:25,548
+Renvur.
+
+72
+00:14:32,436 --> 00:14:40,776
+A squared, minus B squared, less than delta.
+
+73
+00:14:40,776 --> 00:14:56,196
+Then, we say that limit of f of xy, as xy approach, the point AB, equals F.
+
+74
+00:15:04,788 --> 00:15:09,028
+Bir kere de Türkçe'yi hatırlayalım. Bu tanımlamada aşinasınız.
+
+75
+00:15:11,807 --> 00:15:13,827
+Her epsilon pozitif sesi için.
+
+76
+00:15:19,443 --> 00:15:24,644
+ve tanım kümesindeki tüm x'ler için
+
+77
+00:15:32,628 --> 00:15:34,488
+Bu eşitsizlik sağlanıyorken.
+
+78
+00:15:38,611 --> 00:15:56,052
+Aynı zamanda bu eşitlik sağlanacak şekilde bir delta pozitif sayısı varsa o zaman fonksiyon limiti vardır ve L'dir deriz.
+
+79
+00:16:01,043 --> 00:16:28,604
+This definition says, the distance between f of x, y, and l becomes arbitrarily small whenever the distance from x, y, to a, v is made sufficiently small.
+
+80
+00:16:35,379 --> 00:16:37,740
+Let's look at the graph.
+
+81
+00:16:51,731 --> 00:17:09,971
+This puts any point x, y in the domain of f. This is the distance from x, y and the point p.
+
+82
+00:17:12,851 --> 00:17:13,251
+Here,
+
+83
+00:17:17,395 --> 00:17:24,375
+ve kısmi türev ve katlı
+
+84
+00:17:31,667 --> 00:17:40,607
+When the distance from p and xy becomes arbitrarily small,
+
+85
+00:17:44,115 --> 00:17:49,395
+such that the distance from f of x, y and l.
+
+86
+00:18:02,516 --> 00:18:10,756
+We say that this function has limit at this point.
+
+87
+00:18:15,604 --> 00:18:26,604
+R karedeki iki nokta arasındaki uzaklığı bu eşitsizlik. R'deki iki nokta arasındaki uzaklığı da bu eşitsizlikle gösterdiğimizi hatırlarsınız.
+
+88
+00:18:28,784 --> 00:18:35,604
+Dolayısıyla uzaklıkla da limit tanımını verebiliyoruz.
+
+89
+00:18:42,291 --> 00:18:52,751
+Tek değişkenli ile çok değişkenli arasındaki tek fark, fonksiyon tanım kimisinin r karede olması. Dolayısıyla r karedeki uzaklık tanımı geçerli oluyor.
+
+90
+00:18:53,391 --> 00:19:00,151
+Ve xye noktaları p noktalarına herhangi evrilerle ve doğrularla yaklaşıyor.
+
+91
+00:19:02,891 --> 00:19:07,331
+Be careful, d is the subset of r square.
+
+92
+00:19:07,331 --> 00:19:18,591
+So, in the domain, the points x, y approach the point p along any path.
+
+93
+00:19:31,571 --> 00:19:56,571
+But in the real axis, x approach the point A from left or from right. We have just two paths. In our square, we have infinite number paths.
+
+94
+00:20:18,099 --> 00:20:34,259
+Limit of x, just x, as xy approaches a, equals just a, limit of just a. This is single variable function.
+
+95
+00:20:34,259 --> 00:20:52,399
+So, this means y approach b, limit of y, equals b, or limit of any constant function.
+
+96
+00:20:57,587 --> 00:21:02,528
+Eqs, just, k, any constant, k.
+
+97
+00:21:19,412 --> 00:21:19,951
+Teşekkürler, peace.
+
+98
+00:21:23,892 --> 00:21:31,751
+Limits of functions to the levels.
+
+99
+00:21:38,355 --> 00:21:45,036
+These properties are same as the limits of functions of a single variable.
+
+100
+00:21:55,251 --> 00:22:02,652
+F and G has limits.
+
+101
+00:22:06,036 --> 00:22:11,846
+ve m'e xy'e y'
+
+102
+00:22:20,468 --> 00:22:26,228
+And our constant numbers, real numbers.
+
+103
+00:22:28,388 --> 00:22:29,108
+First rule,
+
+104
+00:22:34,867 --> 00:22:38,727
+Limit of the sum of f and g
+
+105
+00:22:50,804 --> 00:22:52,704
+Sum of L and M.
+
+106
+00:22:55,964 --> 00:23:03,403
+Difference, the limit of difference F and G equals difference L and M.
+
+107
+00:23:10,291 --> 00:23:16,291
+K is any constant number.
+
+108
+00:23:19,291 --> 00:23:20,291
+K.
+
+109
+00:23:24,147 --> 00:23:28,627
+xy, yakın, k, l.
+
+110
+00:23:38,163 --> 00:23:40,983
+F times G
+
+111
+00:24:00,980 --> 00:24:05,980
+Evet.
+
+112
+00:24:32,723 --> 00:24:45,243
+1 over n, if n positive integer number, and if n even, l must be positive.
+
+113
+00:25:02,132 --> 00:25:11,072
+I think you remember the properties of a function of a single variable. They are same properties.
+
+114
+00:25:21,683 --> 00:25:27,303
+Test 4-man-existence
+
+115
+00:25:39,155 --> 00:25:49,596
+Again, please remember the function of a single variable if right limit
+
+116
+00:25:54,644 --> 00:26:03,003
+Differen from left limit, we say that limit doesn't have,
+
+117
+00:26:13,683 --> 00:26:20,223
+doesn't have limit, no, doesn't exist, does not exist.
+
+118
+00:26:23,384 --> 00:26:28,084
+But here in R squared, we have infinite number path.
+
+119
+00:26:29,003 --> 00:26:32,584
+So, we can say,
+
+120
+00:26:39,347 --> 00:27:00,728
+Function f approach number L1 as xy approach the point AB along a pet E1.
+
+121
+00:27:00,728 --> 00:27:20,467
+And if xy approach another number L2 as xy approach this point along different pet C2.
+
+122
+00:27:26,548 --> 00:27:36,067
+Then, we say that limit of f at this point doesn't exist.
+
+123
+00:27:37,268 --> 00:27:55,988
+Here, if these numbers are different from each other, then limit of f at the point a, b does
+
+124
+00:27:56,548 --> 00:27:59,667
+not exist.
+
+125
+00:28:21,556 --> 00:28:22,756
+Be careful here.
+
+126
+00:28:22,756 --> 00:28:34,436
+If L1 equals L2,
+
+127
+00:28:34,436 --> 00:28:36,956
+We cannot say,
+
+128
+00:28:41,299 --> 00:28:56,139
+That the function f has a limit. Be careful, you cannot say, because
+
+129
+00:29:00,788 --> 00:29:09,948
+We can approach this point along an infinite numbered path.
+
+130
+00:29:15,923 --> 00:29:16,644
+Example
+
+131
+00:29:34,036 --> 00:29:45,956
+x squared y, plus 5xy, minus y, küt.
+
+132
+00:29:52,084 --> 00:30:22,084
+Bu konuda 0,1'e bu konuda 0,1'e bu konuda 0,1'e bu konuda 0,1'e bu konuda 0,1'e bu konuda 0,1'e bu konuda 0,1'e bu konuda 0,1'e bu konuda 0,1'e bu konuda 0,1'e bu konuda 0,1'e bu konuda 0,1'e bu konuda 0,1'e bu konuda 0,1'e bu konuda 0,1'e bu konuda 0,1'e bu konuda 0,1'e bu konuda 0,1'e bu konuda 0,1'e bu konuda 0,1'e bu konuda 0,1'e bu konuda 0,1'e bu konuda 0,1'e bu konuda 0,1'e bu konuda 0,1'e bu konuda 0,1'e bu konuda 0,1'e bu konuda 0,1'
+
+133
+00:30:22,084 --> 00:30:23,163
+formula.
+
+134
+00:30:23,163 --> 00:30:26,324
+So we get
+
+135
+00:30:26,324 --> 00:30:31,644
+0,0'3
+
+136
+00:30:31,644 --> 00:30:33,284
+over
+
+137
+00:30:33,284 --> 00:30:52,064
+0,0'3
+
+138
+00:30:47,028 --> 00:31:03,908
+x² y², if xy approach 3-4, we get this limit by substituting 3-4.
+
+139
+00:31:13,715 --> 00:31:14,455
+example
+
+140
+00:31:18,771 --> 00:31:19,591
+What do you think?
+
+141
+00:31:27,347 --> 00:31:29,187
+Y approach 00.
+
+142
+00:31:36,915 --> 00:31:49,035
+So, if we substitute the values x and y into formula, we get in determinate form 0 over 0.
+
+143
+00:31:51,836 --> 00:31:58,495
+But we can reorganize this formula.
+
+144
+00:32:11,892 --> 00:32:12,832
+Doğru, ben Aya.
+
+145
+00:32:31,251 --> 00:32:32,451
+İzmir, be careful.
+
+146
+00:32:34,111 --> 00:32:36,271
+İzmir, in the multivariable functions,
+
+147
+00:32:37,271 --> 00:32:42,611
+by calculating the limit, we cannot use L'Opital rule.
+
+148
+00:32:42,912 --> 00:32:51,451
+L'Opital rule is used just for single variable function.
+
+149
+00:32:51,951 --> 00:32:52,511
+Be careful.
+
+150
+00:32:57,844 --> 00:33:05,703
+Yes, yes, we can do [öğrenci], that's true.
+
+151
+00:33:12,660 --> 00:33:16,500
+Bfaktör x in the numerator and
+
+152
+00:33:23,700 --> 00:33:27,259
+If we use the difference of two squares formulas,
+
+153
+00:33:41,107 --> 00:33:44,467
+We can simplify these terms.
+
+154
+00:33:46,627 --> 00:34:05,268
+Now, if this expression is defined at given point and we substitute into formula we get zero.
+
+155
+00:34:05,268 --> 00:34:10,228
+Yes, you are right.
+
+156
+00:34:10,228 --> 00:34:11,827
+Second method.
+
+157
+00:34:17,556 --> 00:34:29,255
+x x
+
+158
+00:34:37,556 --> 00:34:56,266
+Bir soru
+
+159
+00:35:09,652 --> 00:35:12,731
+Number sin 0 over 0.
+
+160
+00:35:26,356 --> 00:35:44,356
+Calculus 1. We know this limit. Yes, that's true. We can prove this limit by using the change of variables.
+
+161
+00:35:44,356 --> 00:36:10,696
+We can use here a change of variables. Let x square plus y square equals t. t is a new variable. If x approach 0 and y approach 0, then t approach 0.
+
+162
+00:36:10,696 --> 00:36:23,396
+We rewrite this limit with a single variable, sin t over t. So we know this limit equals 1.
+
+163
+00:36:37,043 --> 00:36:42,043
+Bir tane example now shows that
+
+164
+00:36:42,043 --> 00:37:04,203
+The function f equals 2x squared y over x to the 4 plus y to the 2 has no limit at 0,0
+
+165
+00:37:23,539 --> 00:37:30,860
+Aslında 0, 0 into the formula, we get an determina. In 8 form 0 over 0.
+
+166
+00:37:34,380 --> 00:37:36,940
+This point is the origin.
+
+167
+00:37:42,547 --> 00:37:55,367
+We consider two paths, we consider two paths, passing through the origin.
+
+168
+00:38:00,307 --> 00:38:06,688
+For example, the line y equals x.
+
+169
+00:38:10,132 --> 00:38:13,132
+Y'e x'e
+
+170
+00:38:19,092 --> 00:38:23,771
+This line is passing through the origin, be careful.
+
+171
+00:38:25,852 --> 00:38:30,791
+We can calculate this limit.
+
+172
+00:38:32,172 --> 00:38:35,831
+Here, y equals x.
+
+173
+00:38:41,076 --> 00:38:45,155
+X instead of Y in formula.
+
+174
+00:38:51,219 --> 00:38:52,339
+We find
+
+175
+00:38:52,339 --> 00:38:58,059
+S function, a single variable
+
+176
+00:39:06,771 --> 00:39:10,052
+1, so we get
+
+177
+00:39:10,052 --> 00:39:12,672
+the limit 0.
+
+178
+00:39:16,659 --> 00:39:29,500
+We need different path passing through origin. Now we can consider this curve.
+
+179
+00:39:39,539 --> 00:39:43,539
+F'i de bu kurdu.
+
+180
+00:39:48,115 --> 00:39:49,115
+Let's look at...
+
+181
+00:39:52,596 --> 00:40:06,516
+x to the 4, plus x to the 4. Now, as x approach 0, this limit equals 1.
+
+182
+00:40:18,452 --> 00:40:19,692
+2 ve tüftü testi.
+
+183
+00:40:23,731 --> 00:40:47,132
+ve get along different paths, limit of f are different. So this function doesn't have at this point origin.
+
+184
+00:40:47,132 --> 00:40:49,492
+there.
+
+185
+00:40:55,059 --> 00:41:02,059
+ve
+
+186
+00:41:09,300 --> 00:41:10,100
+Zer, zero.
+
+187
+00:41:19,092 --> 00:41:31,811
+F is different limits alone to different limits.
+
+188
+00:41:51,092 --> 00:41:52,092
+0, 0.
+
+189
+00:41:52,092 --> 00:41:58,092
+Limit of f , y
+
+190
+00:41:58,092 --> 00:42:00,092
+in this point,
+
+191
+00:42:00,092 --> 00:42:03,092
+does not
+
+192
+00:42:03,092 --> 00:42:06,092
+exist.
+
+193
+00:42:19,027 --> 00:42:31,007
+İlk method, you can consider another path, or you can consider this curves.
+
+194
+00:42:34,931 --> 00:42:44,231
+along the curves y x k, here in the constant,
+
+195
+00:42:46,871 --> 00:43:02,531
+limit 2 x squared y y x k x squared over x to 4 plus k squared x to 4.
+
+196
+00:43:02,531 --> 00:43:13,571
+limit equals 2 k over k squared plus 1.
+
+197
+00:43:13,571 --> 00:43:16,931
+if k
+
+198
+00:43:16,931 --> 00:43:19,331
+varies
+
+199
+00:43:19,331 --> 00:43:21,491
+limits
+
+200
+00:43:21,491 --> 00:43:23,331
+by
+
+201
+00:43:23,331 --> 00:43:23,692
+s
+
+202
+00:43:23,692 --> 00:43:44,692
+bir
+
+203
+00:43:38,195 --> 00:43:40,496
+Fasal-Tail limit at this point.
+
+204
+00:43:41,576 --> 00:43:42,275
+Any question?
+
+205
+00:44:06,739 --> 00:44:11,619
+Simple Question. Does the limit?
+
+206
+00:44:16,148 --> 00:44:19,408
+Y over X at origin
+
+207
+00:44:19,408 --> 00:44:22,568
+exists?
+
+208
+00:44:23,568 --> 00:44:24,788
+What do you think?
+
+209
+00:44:40,884 --> 00:44:42,664
+Sizin aynı döküter yapmadın değil mi?
+
+210
+00:45:00,596 --> 00:45:03,996
+Gençler, iki değişkenli fonksiyonlar için lopital yapmayın.
+
+211
+00:45:04,356 --> 00:45:08,175
+Güzel, süper, [öğrenci], güzel bir başlangıç.
+
+212
+00:45:09,255 --> 00:45:17,996
+Along y equals x, we calculate this limit equals 1.
+
+213
+00:45:26,900 --> 00:45:46,579
+Çünkü, we get this limit, this limit equals x. [öğrenci], this limit equals 1, but just along this path.
+
+214
+00:45:46,579 --> 00:46:04,119
+If we consider another path, for example, x-axis, x-axis means y equals 0, so we get
+
+215
+00:46:17,588 --> 00:46:18,428
+Zeriler, limit.
+
+216
+00:46:24,532 --> 00:46:38,711
+So, we get two limits, and they are different from each other. By two path test, limit of f does not exist.
+
+217
+00:47:01,331 --> 00:47:02,751
+variable function
+
+218
+00:47:13,907 --> 00:47:19,907
+If there exists a point, the limit must be same along every approach path.
+
+219
+00:47:42,068 --> 00:47:43,068
+Variable
+
+220
+00:47:52,692 --> 00:48:03,811
+Kult variable function, we must use definition.
+
+221
+00:48:09,748 --> 00:48:17,487
+For example, find the limit.
+
+222
+00:48:28,019 --> 00:48:29,059
+is function
+
+223
+00:48:29,059 --> 00:48:34,219
+at 0, 0
+
+224
+00:48:34,219 --> 00:48:36,420
+equals
+
+225
+00:48:36,420 --> 00:48:39,619
+0.
+
+226
+00:48:46,036 --> 00:48:47,876
+This Limit.
+
+227
+00:48:54,195 --> 00:48:59,195
+We must use definition, Delta Epsilon definition.
+
+228
+00:49:07,891 --> 00:49:25,172
+Epsilon positive number, we want to find that the positive number such that if
+
+229
+00:49:35,059 --> 00:49:40,340
+Distance, the points x, y, and 0, 0.
+
+230
+00:49:46,132 --> 00:49:47,532
+Vestan, dalça.
+
+231
+00:49:49,612 --> 00:49:50,291
+Zdan.
+
+232
+00:49:56,659 --> 00:50:03,659
+ve
+
+233
+00:50:06,996 --> 00:50:09,376
+Neyse, hepsi.
+
+234
+00:50:13,427 --> 00:50:13,927
+Tövbe!
+
+235
+00:50:19,572 --> 00:50:21,572
+y2 delta
+
+236
+00:50:23,572 --> 00:50:25,572
+ve 3 numara
+
+237
+00:50:25,572 --> 00:50:29,572
+x2 numara
+
+238
+00:50:29,572 --> 00:50:31,572
+y2 numara
+
+239
+00:50:31,572 --> 00:50:33,572
+y is
+
+240
+00:50:33,572 --> 00:50:35,572
+any real numara
+
+241
+00:50:35,572 --> 00:50:37,572
+so we can
+
+242
+00:50:37,572 --> 00:50:39,572
+rewrite
+
+243
+00:50:41,572 --> 00:50:43,572
+this inequality
+
+244
+00:50:43,572 --> 00:50:45,572
+like that
+
+245
+00:50:48,820 --> 00:50:52,059
+We want to find delta in terms of epsilon.
+
+246
+00:50:53,180 --> 00:50:55,840
+We have this inequality.
+
+247
+00:50:56,840 --> 00:51:02,960
+We convert this inequality in terms of delta.
+
+248
+00:51:06,739 --> 00:51:17,699
+Since x square less than x square plus y square, we know this inequality is true.
+
+249
+00:51:17,699 --> 00:51:19,699
+So,
+
+250
+00:51:37,427 --> 00:51:39,587
+We can rewrite.
+
+251
+00:51:59,251 --> 00:52:14,342
+İlk yi'ye çizgi bir yi'ye çizgi bir yi'ye çizgi bir yi'ye çizgi bir yi'ye çizgi bir yi'ye çizgi bir yi'ye çizgi bir yi'ye çizgi bir yi'ye çizgi bir yi'ye çizgi bir yi'ye çizgi bir yi'ye çizgi bir yi'ye çizgi bir yi'ye çizgi bir yi'ye çizgi bir yi'ye çizgi bir yi'ye çizgi bir yi'ye çizgi bir yi'ye çizgi bir yi'ye çizgi bir yi'ye çizgi bir yi'ye çizgi bir yi'ye çizgi bir yi'ye çizgi bir yi'ye çizgi bir yi'ye çizgi bir yi'ye çizgi bir yi'ye ç
+
+252
+00:52:17,715 --> 00:52:23,536
+Finally, we get this left side.
+
+253
+00:52:36,820 --> 00:52:38,140
+Absolutely value of why.
+
+254
+00:52:55,668 --> 00:52:58,768
+Çünkü diğerlerinin de pozitif numarlar.
+
+255
+00:53:25,811 --> 00:53:27,811
+Y2,
+
+256
+00:53:32,148 --> 00:53:37,268
+İnequilti, we can write, we know this,
+
+257
+00:53:41,460 --> 00:53:42,900
+Destan, Delta.
+
+258
+00:53:57,043 --> 00:54:03,384
+We choose, pi equals epsilon over 3.
+
+259
+00:54:13,204 --> 00:54:22,684
+3 x square y over x square plus y square less than 3 delta.
+
+260
+00:54:25,204 --> 00:54:28,724
+If we choose delta equals epsilon over 3.
+
+261
+00:54:32,467 --> 00:54:35,728
+This relation less than epsilon.
+
+262
+00:54:36,728 --> 00:54:39,187
+So, definition is satisfied.
+
+263
+00:54:57,492 --> 00:55:00,711
+yazdığımız eşitli siste bir kere de Türkçe geçelim.
+
+264
+00:55:05,331 --> 00:55:06,531
+Gençler burası.
+
+265
+00:55:07,731 --> 00:55:13,391
+Eğer burayı doğru bir şekilde yazdıysanız gerisi matematiksel işlem tamamen.
+
+266
+00:55:14,771 --> 00:55:15,911
+Ne yapmak istiyoruz?
+
+267
+00:55:16,311 --> 00:55:20,612
+Herhangi bir epsilon küçük bir sayısı pozitif bir sayı göz önüne alıyoruz.
+
+268
+00:55:20,612 --> 00:55:40,471
+X'ler ile sıfır arasındaki uzaklık deltadan küçük kalıyorken Fx'ye ile limit arasındaki uzaklığında Epsilon'dan küçük kalacak şekilde bu iki eşitsizlik aynı anda sağlanacak şekilde deltayı Epsilon cinsinden bulmak istiyoruz.
+
+269
+00:55:40,471 --> 00:55:47,951
+Epsilon değiştikçe deltası değişecek çünkü tanımda da karşılık gelen bir delta bulunması deniyor.
+
+270
+00:55:47,951 --> 00:55:52,851
+Seçtiğimiz Epsilon'a karşılık bir delta sayısı bulacağız.
+
+271
+00:55:53,071 --> 00:55:53,931
+Ne yapmak istiyoruz?
+
+272
+00:55:54,112 --> 00:55:57,592
+Bu iki eşitsizliğin aynı anda sağlanmasını istiyoruz.
+
+273
+00:55:57,751 --> 00:56:00,391
+Bu varken bu da sağlansın istiyoruz.
+
+274
+00:56:01,751 --> 00:56:02,112
+O zaman
+
+275
+00:56:06,931 --> 00:56:13,511
+Epsilon delta'yı epsilon cinsinden yazmak istiyoruz ya, ikinci eşitsizlikle yola çıktık.
+
+276
+00:56:14,051 --> 00:56:18,192
+Önce ne yaptık? Pozitif olanları dışarı aldık.
+
+277
+00:56:19,451 --> 00:56:28,991
+Ve x kare bölü x kare artı y karenin birden küçük olduğunu bildiğimiz için direkt bunu 3 mutlak değer y şeklinde yazabildik.
+
+278
+00:56:29,551 --> 00:56:34,891
+Buna benzetmeye çalıştığımız için mutlak değer y'yi y kare şeklinde yazdık.
+
+279
+00:56:34,891 --> 00:56:37,951
+Ve yine amaç bu, gözümüz burada.
+
+280
+00:56:38,351 --> 00:56:40,071
+Buna benzetmeye çalışıyoruz.
+
+281
+00:56:40,251 --> 00:56:41,491
+x kareyi ekledik.
+
+282
+00:56:42,471 --> 00:56:46,951
+Böylece 3 sabitif kendiliğinden, fonksiyondan geldi.
+
+283
+00:56:47,451 --> 00:56:51,171
+Bu ifade yerine daha büyük olan delta'yı sayısını yazdık.
+
+284
+00:56:51,831 --> 00:56:55,511
+Eğer biz burada ne yapmak istiyorduk?
+
+285
+00:56:55,771 --> 00:56:57,692
+Epsilon'dan küçük kalmasını istiyorduk.
+
+286
+00:56:58,011 --> 00:57:01,831
+Eşittir epsilon dedik, delta'yı çektik, çıkarttık.
+
+287
+00:57:01,831 --> 00:57:11,511
+Eğer delta'yı epsinol bölü 3 seçersek o zaman istediğimiz ifade epsilondan küçük kalır diyebiliyoruz.
+
+288
+00:57:17,460 --> 00:57:22,460
+soru var mı? Şu en sonraki karalamalarımı siliyorum.
+
+289
+00:57:58,036 --> 00:58:02,476
+Limitin olduğunu göstermek, yani tanım kullanarak ispat yapmak kolay değil, zor.
+
+290
+00:58:02,796 --> 00:58:06,396
+Geçmiş senelerde soru geldi mi? Nadirende olsa geldi.
+
+291
+00:58:06,916 --> 00:58:09,076
+Ama en çok nereden geliyor?
+
+292
+00:58:10,816 --> 00:58:13,635
+Limitin olmadığını gösterme sorularındır.
+
+293
+00:58:13,755 --> 00:58:15,376
+Limit var mıdır, yok mudur?
+
+294
+00:58:16,516 --> 00:58:17,916
+Soruları daha çok geliyor.
+
+295
+00:58:17,916 --> 00:58:19,916
+Dolayısıyla...
+
+296
+00:58:23,380 --> 00:58:26,619
+Çabıcak yazalım. Sonra da ara geçeriz.
+
+297
+00:58:34,452 --> 00:58:36,072
+Do following limits.
+
+298
+01:00:03,923 --> 01:00:09,003
+Here we use delta epsilon definition.
+
+299
+01:00:10,003 --> 01:00:14,844
+Here we use here true path.
+
+300
+01:00:24,788 --> 01:00:35,628
+Before continuing, first we take a break and then continue.
+
+301
+01:00:39,347 --> 01:00:42,487
+Gençler, iyi misiniz?
+
+302
+01:00:50,420 --> 01:00:51,400
+Her şey yolunda mı?
+
+303
+01:00:53,079 --> 01:00:55,360
+Tamam. 10 dakika sonra görüşelim mi?
+
+304
+01:00:56,119 --> 01:00:57,039
+Biraz dinlenelim.
+
+305
+01:00:59,700 --> 01:01:01,940
+Sonra da sürekli birlikte devam edelim.
+
+306
+01:01:02,840 --> 01:01:03,740
+Görüşürüz.
+
+307
+01:15:05,460 --> 01:15:08,579
+Okay, I can start if you are ready.
+
+308
+01:15:23,988 --> 01:15:33,708
+Definition of continuity for multivariable function is the same as the definition of a function of a single variable.
+
+309
+01:15:35,508 --> 01:15:36,628
+Let's remember.
+
+310
+01:15:40,180 --> 01:15:45,159
+F of x, y is
+
+311
+01:15:45,159 --> 01:15:47,320
+continuous
+
+312
+01:15:47,320 --> 01:15:50,640
+at the point
+
+313
+01:15:55,028 --> 01:15:58,548
+İ
+
+314
+01:16:02,068 --> 01:16:08,188
+If is defined at the given point,
+
+315
+01:16:11,667 --> 01:16:22,787
+F, the limit of F at this point exists.
+
+316
+01:16:24,787 --> 01:16:34,467
+And this limit equals the value of F at this point.
+
+317
+01:16:49,460 --> 01:16:53,880
+Function is continuous.
+
+318
+01:16:58,100 --> 01:16:59,600
+If it...
+
+319
+01:17:02,899 --> 01:17:12,179
+İzcontinuous, at every point of its domain.
+
+320
+01:17:23,283 --> 01:17:26,844
+Algebra, algebrik, combinations
+
+321
+01:17:30,836 --> 01:17:32,436
+Continuous Functions
+
+322
+01:17:44,372 --> 01:17:45,432
+Every point.
+
+323
+01:17:52,083 --> 01:17:53,083
+Functions
+
+324
+01:18:04,275 --> 01:18:04,775
+Artıklar.
+
+325
+01:18:07,775 --> 01:18:08,215
+Olumlu.
+
+326
+01:18:12,435 --> 01:18:17,496
+ve katlı
+
+327
+01:18:21,203 --> 01:18:28,203
+İrgiyi bu
+
+328
+01:18:36,692 --> 01:18:37,452
+For example,
+
+329
+01:18:41,779 --> 01:18:46,359
+x to the 4 plus 5 x y square.
+
+330
+01:18:52,180 --> 01:19:17,180
+This function is continuous at 1 over 2, because this function is defined at this point and limit of this function equals the value of f of at this point equals 2 and 2.
+
+331
+01:19:23,220 --> 01:19:34,980
+Let us consider a durational function of two variable 2 x y plus 1 over x squared plus y squared.
+
+332
+01:19:36,199 --> 01:19:45,340
+This durational function is defined everywhere and is defined at this point.
+
+333
+01:19:48,420 --> 01:19:51,360
+This limit equals the value of
+
+334
+01:19:53,220 --> 01:19:55,619
+Let us add 1 over 2
+
+335
+01:19:55,619 --> 01:20:00,900
+5 over 5 equals 1
+
+336
+01:20:12,627 --> 01:20:13,207
+Oh, that.
+
+337
+01:20:22,899 --> 01:20:31,899
+F of xy find file like that, 2 xy or x'y plus y'y2.
+
+338
+01:20:31,899 --> 01:20:44,899
+If xy different from 0, if xy equals 0, 0.
+
+339
+01:20:48,275 --> 01:20:59,275
+This function is not continuous at origin.
+
+340
+01:21:04,467 --> 01:21:12,188
+Conditions of continuity are like that.
+
+341
+01:21:12,188 --> 01:21:17,648
+First condition, f must be defined at the given point.
+
+342
+01:21:18,427 --> 01:21:29,268
+Yes, this given function is defined at origin, because the value of this function at this point is zero.
+
+343
+01:21:34,452 --> 01:21:42,952
+We must prove that the limit of f exists.
+
+344
+01:21:53,555 --> 01:22:05,875
+Limit xy, 0, 2 xy, x square plus y square.
+
+345
+01:22:28,659 --> 01:22:30,819
+Line x equals y
+
+346
+01:22:36,724 --> 01:22:39,163
+Limit ekos zero.
+
+347
+01:22:50,100 --> 01:22:52,460
+ve consider the path as
+
+348
+01:22:56,659 --> 01:23:07,460
+Y equals X, we get 2X squared over 2X squared equals 1.
+
+349
+01:23:09,059 --> 01:23:13,859
+So, they are different.
+
+350
+01:23:15,699 --> 01:23:25,739
+We can say that F does not have limit at this point.
+
+351
+01:23:26,659 --> 01:23:29,739
+Limit F of X, Y.
+
+352
+01:23:42,163 --> 01:23:42,523
+So,
+
+353
+01:24:12,659 --> 01:24:19,300
+If no question, I give one more example.
+
+354
+01:24:27,155 --> 01:24:27,996
+Show that
+
+355
+01:24:27,996 --> 01:24:33,135
+The function defined by
+
+356
+01:24:43,315 --> 01:24:44,195
+Like that.
+
+357
+01:24:47,195 --> 01:24:48,916
+Is not.
+
+358
+01:24:52,979 --> 01:25:05,579
+Continuous, add 1 over 2. This is simple, I think. What do you think? Why? This function is not continuous.
+
+359
+01:25:14,484 --> 01:25:15,604
+Do you have an idea?
+
+360
+01:25:35,891 --> 01:25:41,791
+To check the continuity, please check this axioms.
+
+361
+01:25:45,460 --> 01:25:51,460
+The given function f is defined at the point 1 over 2. That's true.
+
+362
+01:25:52,980 --> 01:26:01,359
+If x, y approach 1 over 2, yes, say it, that's true, you are right.
+
+363
+01:26:01,359 --> 01:26:16,480
+Third axiom is not hold, because the limit of f at this point exists, but the limit of f does not equal to the value of f of a.
+
+364
+01:26:17,480 --> 01:26:19,439
+Let's look at together.
+
+365
+01:26:21,060 --> 01:26:30,420
+Limit of f at 1 over 2 equals 5.
+
+366
+01:26:30,420 --> 01:26:38,980
+But the value of f but the value of 1 over 2 equals 0.
+
+367
+01:26:39,779 --> 01:26:48,899
+So this is third condition, third property of continuity.
+
+368
+01:26:50,180 --> 01:26:53,699
+So f is not continuous.
+
+369
+01:27:02,292 --> 01:27:11,672
+Ander property of continuity, continuity of composition.
+
+370
+01:27:16,275 --> 01:27:18,755
+5G fonksiyonların sürekliliği
+
+371
+01:27:29,747 --> 01:27:31,287
+Continuous, et
+
+372
+01:27:44,884 --> 01:27:49,203
+g is a single variable function.
+
+373
+01:27:54,131 --> 01:28:13,591
+If the value of f at a, b equals k constant number, if the given single variable function g is continuous at k,
+
+374
+01:28:19,347 --> 01:28:19,707
+Ben.
+
+375
+01:28:25,427 --> 01:28:26,967
+The composite function
+
+376
+01:28:26,967 --> 01:28:30,627
+defined by
+
+377
+01:28:30,627 --> 01:28:32,387
+G
+
+378
+01:28:32,387 --> 01:28:37,768
+of f x y
+
+379
+01:28:37,768 --> 01:28:40,407
+continues
+
+380
+01:28:40,407 --> 01:28:42,768
+at
+
+381
+01:28:42,768 --> 01:28:44,228
+ab
+
+382
+01:29:09,939 --> 01:29:39,919
+That is, if f is continuous at ab, and g is continuous at f of ab, then g f of xy is continuous at f of ab, then g f of xy is continuous at f of ab.
+
+383
+01:29:39,939 --> 01:29:41,559
+That's f of ab.
+
+384
+01:29:49,811 --> 01:29:50,532
+For example,
+
+385
+01:30:12,595 --> 01:30:15,715
+This function is a composite function.
+
+386
+01:30:16,915 --> 01:30:19,875
+This function is defined everywhere.
+
+387
+01:30:20,875 --> 01:30:24,995
+For example, 1 over 3.
+
+388
+01:30:32,948 --> 01:30:37,887
+So, we can calculate this limit.
+
+389
+01:31:11,572 --> 01:31:13,152
+Okay, one more example.
+
+390
+01:31:18,739 --> 01:31:39,429
+xy'e x2'
+
+391
+01:31:42,484 --> 01:31:46,864
+By substitution, cos 0 equals 1.
+
+392
+01:31:59,475 --> 01:32:29,455
+ve çift katlı
+
+393
+01:32:23,956 --> 01:32:29,775
+Definition of limit and continuity for functions of two variables
+
+394
+01:32:29,775 --> 01:32:37,096
+can be extended to functions of three or more variables.
+
+395
+01:32:40,916 --> 01:32:41,855
+For example,
+
+396
+01:32:47,731 --> 01:32:51,731
+1-1
+
+397
+01:32:51,731 --> 01:32:55,711
+e to the x plus z
+
+398
+01:32:55,711 --> 01:32:57,292
+over
+
+399
+01:32:57,292 --> 01:32:59,252
+z squared
+
+400
+01:32:59,252 --> 01:33:00,412
+plus
+
+401
+01:33:00,412 --> 01:33:01,931
+cosine
+
+402
+01:33:01,931 --> 01:33:03,912
+x to y
+
+403
+01:33:11,604 --> 01:33:21,604
+This function is a function of three variables. This function is defined...
+
+404
+01:33:25,076 --> 01:33:45,876
+at the given point. So, we can calculate this limit by substitution e to the 0 over 1 cos 0 1 over 2.
+
+405
+01:33:52,083 --> 01:34:07,083
+or limit y sin z over x minus 1 plus ln x plus y z.
+
+406
+01:34:07,083 --> 01:34:17,083
+If we get the point 2.
+
+407
+01:34:20,307 --> 01:34:24,307
+1, f.
+
+408
+01:34:26,068 --> 01:34:27,268
+So we get
+
+409
+01:34:29,828 --> 01:34:31,667
+first and second function
+
+410
+01:34:32,787 --> 01:34:36,148
+are defined at this point.
+
+411
+01:34:37,188 --> 01:34:41,507
+So we get zero plus ln,
+
+412
+01:34:43,108 --> 01:34:43,507
+three.
+
+413
+01:35:04,148 --> 01:35:08,148
+VALUE
+
+414
+01:35:16,627 --> 01:35:17,547
+Here's the function.
+
+415
+01:35:22,771 --> 01:35:31,372
+yi'ye göre yi'ye göre yi'ye göre yi'ye göre yi'ye göre yi'ye göre yi'ye göre yi'ye göre yi'ye göre yi'ye göre yi'ye göre yi'ye göre yi'ye göre yi'ye göre yi'ye göre yi'ye göre yi'ye göre yi'ye göre yi'ye göre yi'ye göre yi'ye göre yi'ye göre yi'ye göre yi'ye göre yi'ye göre yi'ye göre yi'ye göre yi'ye göre yi'ye göre yi'ye göre yi'ye göre yi'ye göre yi'ye göre yi'ye göre yi'ye göre yi'ye göre yi'ye göre yi'ye göre yi'ye göre yi'ye göre yi'ye göre yi'ye göre yi'ye göre yi'ye göre yi'
+
+416
+01:35:39,091 --> 01:35:45,331
+xy equal to 2, xy equal to 2.
+
+417
+01:35:45,331 --> 01:35:47,331
+This is x.
+
+418
+01:35:47,331 --> 01:35:52,331
+This is a function.
+
+419
+01:35:52,331 --> 01:35:56,331
+Continuous x.
+
+420
+01:36:08,340 --> 01:36:16,340
+if we substitute 2,2 into relation of f
+
+421
+01:36:20,979 --> 01:36:24,439
+We get an determinate form.
+
+422
+01:36:27,099 --> 01:36:30,759
+We can reorganize this formula.
+
+423
+01:37:23,283 --> 01:37:28,503
+This function must have limits at 2, 2.
+
+424
+01:37:33,332 --> 01:37:39,252
+Delimit of f must be value of f at this point.
+
+425
+01:37:41,112 --> 01:37:43,072
+And this is a.
+
+426
+01:38:03,667 --> 01:38:09,987
+In the numerator we use the formula of difference of two squares.
+
+427
+01:38:30,612 --> 01:38:31,971
+Deniminator,
+
+428
+01:38:34,971 --> 01:38:37,731
+this is a complete scratch.
+
+429
+01:38:43,988 --> 01:38:46,268
+X minus y square
+
+430
+01:38:50,612 --> 01:38:56,011
+Last two terms can be factor of 3.
+
+431
+01:39:05,971 --> 01:39:06,971
+And the numerator
+
+432
+01:39:06,971 --> 01:39:12,532
+Is minus y is common vector
+
+433
+01:39:19,923 --> 01:39:27,363
+Denimilator, x-1, is also a third.
+
+434
+01:40:04,435 --> 01:40:05,055
+Andi, Christian?
+
+435
+01:40:08,692 --> 01:40:09,412
+Any problem?
+
+436
+01:40:27,028 --> 01:40:28,028
+Bir soru.
+
+437
+01:41:12,212 --> 01:41:12,712
+together.
+
+438
+01:41:23,060 --> 01:41:30,940
+We use the change of variables.
+
+439
+01:41:35,315 --> 01:41:45,475
+x x r cos t y x r sin t
+
+440
+01:41:50,452 --> 01:41:55,832
+We get x square y square equal r square.
+
+441
+01:41:57,612 --> 01:42:02,492
+If x approach 0, y approach 0,
+
+442
+01:42:04,632 --> 01:42:08,032
+r approach 0.
+
+443
+01:42:11,828 --> 01:42:23,748
+Thanks to this change of variables, we transform the given limit,
+
+444
+01:42:30,323 --> 01:42:35,884
+ve limit width, single variable, r²,
+
+445
+01:42:40,532 --> 01:42:43,532
+Helen Ersker
+
+446
+01:42:47,283 --> 01:42:50,943
+Here are aprils from the right.
+
+447
+01:42:56,916 --> 01:43:04,756
+So, now, please remember the graph of nature logarithm function.
+
+448
+01:43:06,836 --> 01:43:14,275
+If r approach 0, ln r approach minus infinity.
+
+449
+01:43:15,876 --> 01:43:21,876
+This is another undetermined form.
+
+450
+01:43:21,876 --> 01:43:25,916
+Now,
+
+451
+01:43:29,332 --> 01:43:31,532
+You can rewrite like that.
+
+452
+01:43:38,547 --> 01:43:53,188
+Bu formı ile ilgili birçok olarak verici birçok olarak verici birçok olarak verici birçok olarak verici birçok olarak verici birçok olarak verici birçok olarak verici birçok olarak verici birçok olarak verici birçok olarak verici birçok olarak verici birçok olarak verici birçok olarak verici birçok olarak verici birçok olarak verici birçok olarak verici birçok olarak verici birçok olarak verici birçok olarak verici birçok olarak verici birçok olarak verici birçok olarak verici birçok olarak verici birçok olarak verici birçok olarak verici birçok olarak verici birçok olarak verici birçok olarak verici birçok olarak verici birçok olarak verici birçok olarak verici birçok olarak verici birçok olarak verici birçok olarak verici birçok olarak verici birçok olarak verici birç
+
+453
+01:44:01,939 --> 01:44:02,619
+Any questions?
+
+454
+01:44:04,619 --> 01:44:05,659
+Any problem?
+
+455
+01:44:14,612 --> 01:44:30,212
+Derivative of numerator, 2r, 1 over r square. Derivative of denominator, minus 2 over r cube.
+
+456
+01:44:32,612 --> 01:44:39,332
+So if r approaches to infinity, 0, we get
+
+457
+01:44:50,836 --> 01:44:51,476
+Zer.
+
+458
+01:44:52,796 --> 01:44:53,576
+Can you see?
+
+459
+01:45:10,868 --> 01:45:13,788
+Bu birçok var.
+
+460
+01:45:13,788 --> 01:45:35,788
+Birçok var.
+
+461
+01:45:55,380 --> 01:46:03,060
+We use same change of variables here.
+
+462
+01:46:09,427 --> 01:46:20,347
+approach 0 from right e to the minus r square minus 1 over r square.
+
+463
+01:46:23,547 --> 01:46:31,547
+We get undetermined form 0 over 0.
+
+464
+01:46:31,547 --> 01:46:34,667
+We can use Lobutel rule.
+
+465
+01:46:37,167 --> 01:46:45,988
+The derivative of numerator minus 2r e to the r square over 2r.
+
+466
+01:46:47,568 --> 01:46:55,887
+If we simplify this terms and we get e to the 0, 1.
+
+467
+01:47:00,948 --> 01:47:17,387
+Another example, 5 over 25 minus x squared minus y squared over 7 minus...
+
+468
+01:47:28,627 --> 01:47:29,907
+0-0.
+
+469
+01:47:35,188 --> 01:47:38,387
+We can use the same change of variables.
+
+470
+01:47:44,243 --> 01:47:44,764
+Fayd.
+
+471
+01:47:52,020 --> 01:48:03,220
+This limit, if you multiply by the conjugate of numerator, oops,
+
+472
+01:48:07,572 --> 01:48:10,931
+and conjugate of denominator.
+
+473
+01:48:28,532 --> 01:48:34,092
+25 minus 25 minus r square times
+
+474
+01:48:38,260 --> 01:48:39,800
+Konjugator denominator,
+
+475
+01:48:42,800 --> 01:48:50,520
+We are in denominator 49, 49 minus R square,
+
+476
+01:48:51,520 --> 01:48:53,400
+And, Konjugator denominator.
+
+477
+01:49:03,891 --> 01:49:06,891
+İzlediğiniz için,
+
+478
+01:49:10,692 --> 01:49:10,891
+ve
+
+479
+01:49:10,891 --> 01:49:13,891
+bu
+
+480
+01:49:13,891 --> 01:49:25,891
+sıra
+
+481
+01:49:35,188 --> 01:49:42,408
+I think this is clear, so it can be on work.
+
+482
+01:50:00,000 --> 01:50:07,619
+ve diğer soruları soruları soruları soruları soruları soruları soruları soruları soruları soruları soruları soruları soruları soruları soruları soruları soruları soruları soruları soruları soruları soruları soruları soruları soruları soruları soruları soruları soruları soruları soruları soruları soruları soruları soruları soruları soruları soruları soruları soruları soruları soruları soruları soruları soruları soruları soruları soruları soruları soruları soruları soruları soruları soruları soruları soruları soruları soruları soruları soruları soruları soruları soruları soruları soruları soruları soruları soruları soruları soruları soruları soruları soruları sorular
+
+483
+01:50:38,612 --> 01:50:39,271
+Evet, evet.
+
+484
+01:51:18,836 --> 01:51:19,836
+Tamam.
+
+485
+01:51:20,836 --> 01:51:23,836
+So, etsinan, what do you think about this limit?
+
+486
+01:51:44,148 --> 01:51:47,587
+First, substitute 0, 0 into x, y.
+
+487
+01:51:51,507 --> 01:51:56,507
+You will get sin 0 over 0.
+
+488
+01:51:59,007 --> 01:52:03,167
+E times sin 0 over 0.
+
+489
+01:52:06,644 --> 01:52:08,744
+What do you think about this?
+
+490
+01:52:18,292 --> 01:52:42,012
+[öğrenci], 1 is true, yes, because test limit equals 1. If you use the change of variables, tip for this quotient.
+
+491
+01:52:42,012 --> 01:52:46,771
+First, separate this.
+
+492
+01:52:50,899 --> 01:52:51,619
+to function
+
+493
+01:52:59,412 --> 01:53:29,412
+We can use this property of limit. This is single variable function. And so as y approach zero, this limit equals e. And here you use substitution. If you use this substitution,
+
+494
+01:53:29,412 --> 01:53:35,731
+this limit equals one. So this is just e.
+
+495
+01:53:40,851 --> 01:53:41,652
+Determine
+
+496
+01:53:46,676 --> 01:53:50,796
+This function is continuous.
+
+497
+01:53:54,931 --> 01:53:55,532
+Zeril.
+
+498
+01:54:15,923 --> 01:54:17,844
+This use
+
+499
+01:54:17,844 --> 01:54:20,684
+Toothpad
+
+500
+01:54:34,868 --> 01:54:41,868
+Prove that limit does not...
+
+501
+01:54:57,747 --> 01:54:58,268
+Exam.
+
+502
+01:56:48,595 --> 01:56:50,795
+5-10 minuten, enough, I think.
+
+503
+01:56:57,876 --> 01:57:00,195
+Okay, see you after the break.
+
+504
+02:06:23,444 --> 02:06:27,604
+İlk başta, partial derivatives.
+
+505
+02:06:29,684 --> 02:06:39,604
+In this section, we extend the concepts of single variable calculus to functions of two variables.
+
+506
+02:06:41,444 --> 02:06:51,124
+We will show how partial derivatives are defined and interpreted geometrically and how to calculate
+
+507
+02:06:51,124 --> 02:06:57,124
+them by applying the rules for differentiating functions of a single variable.
+
+508
+02:07:00,004 --> 02:07:02,804
+Let's give definition of
+
+509
+02:07:05,604 --> 02:07:06,644
+partial derivative.
+
+510
+02:07:08,244 --> 02:07:11,204
+Let f be
+
+511
+02:07:12,884 --> 02:07:15,764
+a function of two variables x and y.
+
+512
+02:07:22,515 --> 02:07:29,515
+F'ye görebilirsiniz.
+
+513
+02:07:33,011 --> 02:07:37,391
+Behold, Y, FIX.
+
+514
+02:07:42,771 --> 02:07:43,771
+suppose,
+
+515
+02:07:46,771 --> 02:07:54,771
+we will let only x vary while
+
+516
+02:07:57,731 --> 02:08:00,771
+treating y as a constant.
+
+517
+02:08:03,811 --> 02:08:05,771
+For example, y0.
+
+518
+02:08:12,884 --> 02:08:19,884
+Bu durumda, birçok birçok var,
+
+519
+02:08:19,884 --> 02:08:25,884
+eğer g,
+
+520
+02:08:25,884 --> 02:08:29,884
+if we hold y fixed,
+
+521
+02:08:29,884 --> 02:08:36,884
+we get a function of a single variable of x.
+
+522
+02:08:36,884 --> 02:08:38,884
+If...
+
+523
+02:08:41,939 --> 02:08:51,879
+There exists ordinary derivative of g at x0.
+
+524
+02:09:06,996 --> 02:09:08,916
+respect to x
+
+525
+02:09:08,916 --> 02:09:12,516
+x to point
+
+526
+02:09:12,516 --> 02:09:14,935
+x zero
+
+527
+02:09:14,935 --> 02:09:17,695
+we say that
+
+528
+02:09:27,891 --> 02:09:31,331
+is a partial derivative
+
+529
+02:09:36,724 --> 02:09:45,484
+F, with respect to X, denited by...
+
+530
+02:09:54,100 --> 02:09:58,320
+X, X0, Y0.
+
+531
+02:10:12,020 --> 02:10:24,180
+Similarly, if we calculate the derivative of f with respect to y, we hold x fixed.
+
+532
+02:10:26,660 --> 02:10:40,800
+If we hold x constant, we get a function of a single variable in terms of y.
+
+533
+02:10:52,340 --> 02:10:56,300
+İlal, only y vary.
+
+534
+02:11:02,292 --> 02:11:12,292
+İnt, while, x as constant.
+
+535
+02:11:14,292 --> 02:11:15,292
+X0.
+
+536
+02:11:15,292 --> 02:11:19,292
+Now we get...
+
+537
+02:11:23,347 --> 02:11:30,568
+A single, a function of a single variable, for example, z of y.
+
+538
+02:11:31,568 --> 02:11:34,568
+If there exists...
+
+539
+02:11:39,123 --> 02:11:44,903
+ordinary derivative of g at y0.
+
+540
+02:11:57,524 --> 02:12:05,744
+Excel, y, vek'e, y, y.
+
+541
+02:12:10,547 --> 02:12:12,547
+Beside that...
+
+542
+02:12:14,996 --> 02:12:30,036
+This derivative is a partial derivative of f with respect to y.
+
+543
+02:12:32,676 --> 02:12:34,036
+Ignite pi.
+
+544
+02:12:43,315 --> 02:12:46,956
+Y, X, 0, 5, 5.
+
+545
+02:13:01,332 --> 02:13:11,231
+F x y equals x zero, y x plus y squared.
+
+546
+02:13:12,672 --> 02:13:22,972
+If we want to calculate partial derivative of F with respect to x, we hold y fixed.
+
+547
+02:13:22,972 --> 02:13:34,512
+So, derivative of the first term to x, derivative of the second term with respect to x, y.
+
+548
+02:13:35,172 --> 02:13:40,311
+Derivative of a constant with respect to x equals zero.
+
+549
+02:13:42,231 --> 02:13:45,332
+We can change like that.
+
+550
+02:13:46,872 --> 02:13:51,592
+If we calculate partial derivative of F with respect to y,
+
+551
+02:13:51,592 --> 02:13:59,311
+now we keep x fixed.
+
+552
+02:14:00,952 --> 02:14:04,552
+Derivative of constant, zero.
+
+553
+02:14:06,231 --> 02:14:10,532
+Derivative of second term with respect to y, x.
+
+554
+02:14:11,052 --> 02:14:12,912
+Derivative of third term,
+
+555
+02:14:14,512 --> 02:14:16,612
+two for y.
+
+556
+02:14:23,347 --> 02:14:30,427
+We can define partial derivative in terms of the rates of change.
+
+557
+02:14:35,667 --> 02:14:43,228
+by the definition of ordinary derivative
+
+558
+02:14:50,292 --> 02:15:06,292
+G'x0 equals limit h approach 0, G'x plus h minus G'x0 over h.
+
+559
+02:15:07,492 --> 02:15:12,212
+Here, let's look at here.
+
+560
+02:15:12,212 --> 02:15:22,652
+G'x equals fx, y0.
+
+561
+02:15:36,083 --> 02:15:44,963
+t of x equals fx, x plus y, 0.
+
+562
+02:15:50,228 --> 02:16:50,227
+Evet.
+
+563
+02:16:41,268 --> 02:16:42,388
+Another definition,
+
+564
+02:16:43,548 --> 02:16:44,227
+Ander 4.
+
+565
+02:16:49,587 --> 02:16:51,567
+g' y0
+
+566
+02:16:59,156 --> 02:17:08,536
+SH approach 0, Y 0 plus H, Y 0 over H.
+
+567
+02:17:08,536 --> 02:17:11,976
+In this step, what is G?
+
+568
+02:17:15,603 --> 02:17:34,523
+G of y equals f x zero y. G of y equals f x zero y. We substitute f for g.
+
+569
+02:17:42,227 --> 02:17:47,127
+Y0 plus H, instead of Y.
+
+570
+02:17:47,127 --> 02:18:01,747
+Here, Fx0, Y plus H, minus Fx0, Y0, over H.
+
+571
+02:18:01,747 --> 02:18:12,427
+This means partial derivative of F with respect to Y at X0, Y0.
+
+572
+02:18:16,084 --> 02:18:28,463
+We can define the partial derivative of f with respect to x and y in terms of the rates of change.
+
+573
+02:19:05,843 --> 02:19:11,783
+Let the point x0, y0 vary.
+
+574
+02:19:16,915 --> 02:19:18,235
+In these equations,
+
+575
+02:19:22,324 --> 02:19:25,684
+X, Y,
+
+576
+02:19:28,564 --> 02:19:28,844
+become
+
+577
+02:19:28,844 --> 02:19:31,304
+functions
+
+578
+02:19:34,739 --> 02:19:35,739
+Tüm ve gitsin.
+
+579
+02:19:42,291 --> 02:19:50,191
+Rewrite, if x and y are independent variables,
+
+580
+02:19:55,763 --> 02:20:25,443
+Derivative of x equals f x plus h y f x y over h. Derivative of f with respect to y equals f x y plus h minus f x y over h.
+
+581
+02:20:25,763 --> 02:20:26,763
+h.
+
+582
+02:20:26,763 --> 02:20:30,283
+For example,
+
+583
+02:20:39,252 --> 02:20:39,672
+Evet.
+
+584
+02:20:43,924 --> 02:20:48,004
+x y equals x square plus 3 y.
+
+585
+02:20:50,564 --> 02:20:51,204
+Find.
+
+586
+02:20:56,180 --> 02:21:11,720
+Partial derivatives of f by using limit definition of partial derivative.
+
+587
+02:21:12,800 --> 02:21:17,520
+We want the partial derivative of f with respect to x.
+
+588
+02:21:18,840 --> 02:21:24,180
+We must use, we must calculate this limit.
+
+589
+02:21:31,540 --> 02:21:34,540
+İlk olarak bu limitin.
+
+590
+02:21:34,540 --> 02:21:37,540
+Örgüldü bu.
+
+591
+02:21:39,540 --> 02:21:44,540
+Örgüldü x plus h.
+
+592
+02:21:47,603 --> 02:22:17,603
+ve yazı
+
+593
+02:22:17,603 --> 02:22:24,933
+yazı yaz
+
+594
+02:22:36,371 --> 02:22:40,211
+We can calculate this unit as 2x.
+
+595
+02:22:43,987 --> 02:22:54,667
+If we calculate partial derivative of f, we must use the other limit.
+
+596
+02:23:09,652 --> 02:23:28,871
+Y plus H, instead of Y, in the formula X square plus 3, Y plus H, and then write the formula of F,
+
+597
+02:23:35,092 --> 02:23:42,092
+ve
+
+598
+02:23:49,843 --> 02:23:50,663
+Any question?
+
+599
+02:24:09,716 --> 02:24:12,636
+Alternative Notations for Partial Derivatives.
+
+600
+02:24:32,180 --> 02:24:43,620
+İngilizce, partial derivatives from ordinary derivatives, we use D-Sember, rather than D.
+
+601
+02:24:47,540 --> 02:24:52,960
+This means partial derivative of f.
+
+602
+02:25:05,396 --> 02:25:15,775
+z equals f of xy, we can write the partial derivative in terms of z, like that.
+
+603
+02:25:18,096 --> 02:25:31,775
+x is the first independent variable, so we write first independent variable, one xy.
+
+604
+02:25:31,775 --> 02:25:37,476
+y, we can use the derivative operator,
+
+605
+02:25:39,695 --> 02:25:41,556
+dxf,
+
+606
+02:25:45,363 --> 02:25:48,724
+Just the xf or d1 app.
+
+607
+02:25:53,747 --> 02:25:58,448
+partial derivative of f, respect to y.
+
+608
+02:26:07,156 --> 02:26:13,636
+is the second independent variable, we can write f subscript to.
+
+609
+02:26:16,356 --> 02:26:16,996
+dy
+
+610
+02:26:18,196 --> 02:26:18,836
+b2
+
+611
+02:26:20,115 --> 02:26:21,076
+d
+
+612
+02:26:46,355 --> 02:26:51,796
+Partial derivatives at x0, y0, we can write
+
+613
+02:26:59,156 --> 02:26:59,716
+Zero.
+
+614
+02:27:00,615 --> 02:27:01,416
+Four.
+
+615
+02:27:26,484 --> 02:27:30,984
+Example, if.
+
+616
+02:27:36,275 --> 02:27:57,036
+F'ı f
+
+617
+02:28:01,971 --> 02:28:05,971
+F'ye görebilecek
+
+618
+02:28:05,971 --> 02:28:09,971
+x'e görebilecek
+
+619
+02:28:09,971 --> 02:28:59,971
+y'e görebilecek
+
+620
+02:29:08,979 --> 02:29:09,739
+Teşekkürler.
+
+621
+02:29:14,995 --> 02:29:18,155
+Evet, ayo, thank you.
+
+622
+02:29:19,475 --> 02:29:20,795
+It must be too.
+
+623
+02:29:31,476 --> 02:29:37,336
+60, test truth, none, test it true.
+
+624
+02:29:39,775 --> 02:29:42,176
+Orada f, y.
+
+625
+02:29:45,747 --> 02:29:51,547
+Fy 3 x squared y squared minus 4 y.
+
+626
+02:29:52,747 --> 02:29:53,188
+So,
+
+627
+02:29:54,868 --> 02:30:02,427
+Fy 2 1 3 4 1 4.
+
+628
+02:30:04,627 --> 02:30:06,427
+This is 8.
+
+629
+02:30:15,924 --> 02:30:16,764
+Another example.
+
+630
+02:30:31,924 --> 02:30:43,824
+Equation is given, and here z is defined by a function of x and y.
+
+631
+02:30:45,824 --> 02:30:54,104
+Find z over dx and z over dy.
+
+632
+02:30:54,104 --> 02:31:02,524
+Here, z is defined implicitly as a function of x and y.
+
+633
+02:31:09,363 --> 02:31:14,083
+We cannot obtain explicit function of z.
+
+634
+02:31:16,003 --> 02:31:23,263
+So, we differentiate implicitly with respect to x.
+
+635
+02:31:31,379 --> 02:31:31,979
+Okay?
+
+636
+02:31:34,979 --> 02:31:51,039
+If, in the question, the implicit equation is given us, we differentiate with respect to x both sides.
+
+637
+02:31:51,039 --> 02:31:55,039
+Be careful.
+
+638
+02:31:55,599 --> 02:31:58,139
+Z is dependent variable.
+
+639
+02:31:58,979 --> 02:32:01,739
+We need partial derivative of z.
+
+640
+02:32:07,476 --> 02:32:18,496
+Derivative of first term, 3x square. Derivative of second term, 0. Derivative of third term, be careful, this is composite function.
+
+641
+02:32:19,156 --> 02:32:33,956
+We need derivative of z. So, derivative of third term with respect to x is 3z square dz over dx.
+
+642
+02:32:33,956 --> 02:32:43,656
+Derivative of fourth term, 6y. Derivative of right side equals 0.
+
+643
+02:32:43,656 --> 02:32:53,656
+So, we solve this equation for dz over dx. Dz over dx equals minus...
+
+644
+02:33:12,564 --> 02:33:13,384
+Any problem?
+
+645
+02:33:20,915 --> 02:34:20,155
+DZ over DY
+
+646
+02:33:59,763 --> 02:34:06,043
+Any problem? Sorry, I couldn't see your questions.
+
+647
+02:34:10,899 --> 02:34:11,899
+Görüyorlar mı?
+
+648
+02:34:11,899 --> 02:34:13,899
+Böyle öğreniyorum.
+
+649
+02:34:28,084 --> 02:34:31,764
+Şurada yazılış hatası yapmışım. Siz haklısınız.
+
+650
+02:34:32,424 --> 02:34:35,424
+Şu güzel yanlış olmuş.
+
+651
+02:34:42,451 --> 02:34:44,631
+Böyle oldu değil mi [öğrenci]?
+
+652
+02:34:46,631 --> 02:34:47,791
+Şimdi oldu.
+
+653
+02:35:00,884 --> 02:35:02,884
+Şimdi, neredeyiz?
+
+654
+02:35:05,564 --> 02:35:07,564
+Fonksiyonu görmek istiyorum.
+
+655
+02:35:13,907 --> 02:35:17,567
+Derivative of second term, derivative of third term. What do you think?
+
+656
+02:35:22,515 --> 02:35:39,796
+3rd term, with respect to y. This is a composite function. Derivative of z cubed, with respect to y, is 3 z squared.
+
+657
+02:37:55,123 --> 02:38:02,804
+Last example.
+
+658
+02:38:06,164 --> 02:38:09,943
+If
+
+659
+02:38:09,943 --> 02:38:12,664
+Is defined by
+
+660
+02:38:12,664 --> 02:38:13,543
+Like that
+
+661
+02:38:22,804 --> 02:38:35,424
+Df over dx, 0 pi, df over dy, 0 pi.
+
+662
+02:38:37,924 --> 02:38:39,644
+You can find, I think,
+
+663
+02:38:41,463 --> 02:38:42,603
+we have no time.
+
+664
+02:38:47,507 --> 02:38:54,887
+x plus y, so calculate f1, 0, pi.
+
+665
+02:38:57,887 --> 02:39:08,727
+Another example, if f equals 2y over y, kısmi türev ve katlı,
+
+666
+02:39:23,731 --> 02:39:27,512
+İplicit function is given.
+
+667
+02:39:29,512 --> 02:39:34,992
+Here z is a function of two variables, x and y.
+
+668
+02:39:35,652 --> 02:39:37,371
+So, calculate
+
+669
+02:39:37,371 --> 02:39:41,531
+dz over dx.
+
+670
+02:39:43,932 --> 02:39:48,051
+Solution is z over yz minus 1.
+
+671
+02:39:51,763 --> 02:39:55,763
+Bu örneğin örnekleri görmek için.
+
+672
+02:39:57,763 --> 02:40:02,763
+Şimdi.
+
+673
+02:40:04,763 --> 02:40:07,763
+Ve yarın devam edeceğiz.
+
+674
+02:40:08,763 --> 02:40:10,763
+Bir soru var mı?
+
+675
+02:40:11,763 --> 02:40:13,763
+Gençler soru var mı?
+
+676
+02:40:14,763 --> 02:40:18,763
+Ödevlilerle ilgili ya da bugün yaptığımız herhangi bir konuda.
+
+677
+02:40:23,028 --> 02:40:28,987
+Oldukça basit. Öyle değil mi kısmi türevde? Aynı adi türevde olduğu gibi kurallar uygulanıyor.
+
+678
+02:40:30,987 --> 02:40:38,667
+No, RIDA. Partial derivatives doesn't include it in the midterm exam.
+
+679
+02:40:43,283 --> 02:40:45,543
+Sınavımız kısmi türeve kadar.
+
+680
+02:40:48,003 --> 02:40:54,203
+The midterm exam will be held until the partial derivatives.
+
+681
+02:40:56,603 --> 02:41:00,763
+O zaman gençler yarın görüşmek üzere, yarın konuya devam ediyoruz.
+
+682
+02:41:02,243 --> 02:41:05,564
+Kısmi türevleri bitirmeye çalışacağız yarın.
+
+683
+02:41:07,003 --> 02:41:07,863
+Kendinize iyi bakın.
+
+684
+02:41:09,663 --> 02:41:10,984
+Oh, ok, siyahat.
+
+685
+02:42:50,164 --> 02:42:51,844
+Geliyor gençler.
+
+686
+02:42:52,664 --> 02:42:54,584
+Neyse, maksa yolunu bilmiyorum.
+
+687
+02:42:55,444 --> 02:42:58,204
+Önce kaydedip, sonra pdf'e çevirip, öyle yükleyebiliyorum.
+
+688
+02:42:58,324 --> 02:42:59,804
+Onun için biraz uzun sürüyor bu kısım.
+
+689
+02:44:36,948 --> 02:44:38,827
+You are welcome. See you tomorrow.
+
+690
+02:44:41,747 --> 02:44:43,507
+Herkes indirebildiyse.
+
+691
+02:44:46,108 --> 02:44:47,827
+Kapatıyorum gençler.
+
+692
+02:45:03,987 --> 02:45:04,847
+Have a nice day.
