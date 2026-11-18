@@ -1,0 +1,2927 @@
+1
+00:00:11,284 --> 00:00:26,963
+Good morning to everyone. I hope you are all fine and healthy. Now I will turn off my voice and my camera. In a couple of minutes later, we will start the lesson.
+
+2
+00:03:29,747 --> 00:03:48,147
+Ok, so yesterday we started the double integral and how to evaluate the double integral and we used the double integral by evaluating some different kind of solids.
+
+3
+00:03:48,147 --> 00:04:11,147
+Ok, so today we have a new subject. Actually we will use again the double integral and let me show you the meaning of the area.
+
+4
+00:04:11,147 --> 00:04:30,147
+So, yesterday we have just an example, evaluate a cylinder. Ok, and we found this volume. For example, we set here R.
+
+5
+00:04:30,147 --> 00:04:52,148
+The volume is double integral over the region R, F, X, Y, D, A or D, X, D, Y. Ok, and we have learned how to interchange,
+
+6
+00:04:52,148 --> 00:05:18,148
+Yes, how to interchange the limits reversing dx, dy and the properties of double integral and so on. So this formula evaluates the double integral and volume.
+
+7
+00:05:18,148 --> 00:05:36,148
+But, if I take this function as a constant number 1. Let me give me some simple examples.
+
+8
+00:05:36,148 --> 00:05:57,148
+Let's take this prism. Ok, this is rectangular prism. Ok, let me say 3, 5, 4. Ok, the volume is 3, 4, 5.
+
+9
+00:05:57,148 --> 00:06:06,148
+Actually it is 60 cubic units. Ok, so if I take, if I take the height.
+
+10
+00:06:06,148 --> 00:06:08,148
+So if I take the height.
+
+11
+00:06:13,172 --> 00:06:29,112
+If I take height is 1, volume is 15 cubic units,
+
+12
+00:06:29,112 --> 00:06:44,712
+but also the area of the region R is also 3, 5.
+
+13
+00:06:45,612 --> 00:06:47,232
+This is squared units.
+
+14
+00:06:48,451 --> 00:06:48,612
+Okay.
+
+15
+00:06:49,331 --> 00:06:54,152
+So as a number, these are exactly the same,
+
+16
+00:06:54,152 --> 00:06:58,572
+but one formula gives the area,
+
+17
+00:06:59,392 --> 00:07:05,132
+and the other one gives the volume.
+
+18
+00:07:06,492 --> 00:07:09,392
+So as a conclusion,
+
+19
+00:07:10,252 --> 00:07:16,772
+if I take the function f, we know that this is height.
+
+20
+00:07:16,772 --> 00:07:17,572
+Okay.
+
+21
+00:07:18,152 --> 00:07:21,872
+If I take this function as a constant function,
+
+22
+00:07:21,872 --> 00:07:24,451
+as a constant function,
+
+23
+00:07:25,372 --> 00:07:29,592
+we have in double integral,
+
+24
+00:07:31,052 --> 00:07:34,172
+the area of R.
+
+25
+00:07:34,672 --> 00:07:39,752
+The area of R is double integral over R,
+
+26
+00:07:40,112 --> 00:07:43,172
+f, x, y is 1, dA.
+
+27
+00:07:43,172 --> 00:07:51,492
+So we only have double integral, dA over R.
+
+28
+00:07:52,272 --> 00:07:56,512
+This formula gives the area of the region R.
+
+29
+00:07:56,892 --> 00:07:57,372
+Okay.
+
+30
+00:07:57,672 --> 00:08:03,292
+This is the main idea of today's subject.
+
+31
+00:08:03,292 --> 00:08:09,512
+So this is the, actually the bigger picture.
+
+32
+00:08:11,372 --> 00:08:12,451
+Let's continue.
+
+33
+00:08:12,912 --> 00:08:15,132
+Area by the double integration.
+
+34
+00:08:16,092 --> 00:08:19,912
+In this section, we show how to use double integrals
+
+35
+00:08:19,912 --> 00:08:24,652
+to calculate the areas of bounded regions in the plane
+
+36
+00:08:24,652 --> 00:08:29,292
+and to find average value of two,
+
+37
+00:08:30,012 --> 00:08:31,812
+a function of two variables.
+
+38
+00:08:32,172 --> 00:08:32,351
+Okay.
+
+39
+00:08:33,672 --> 00:08:36,991
+Actually, we know the average value of integral
+
+40
+00:08:36,991 --> 00:08:39,211
+from calculus one.
+
+41
+00:08:39,591 --> 00:08:44,552
+So we will see today average value
+
+42
+00:08:44,552 --> 00:08:47,831
+of a function of two variables.
+
+43
+00:08:47,831 --> 00:08:48,692
+Okay.
+
+44
+00:08:49,512 --> 00:08:53,152
+So areas of bounded region in the plane.
+
+45
+00:08:53,792 --> 00:08:59,132
+So the area is closed bounded plane in the region R.
+
+46
+00:08:59,572 --> 00:09:02,831
+So the formula is area,
+
+47
+00:09:03,491 --> 00:09:05,772
+or we can say area R,
+
+48
+00:09:05,892 --> 00:09:10,632
+it is the same double integral over R, dA.
+
+49
+00:09:11,012 --> 00:09:11,312
+Okay.
+
+50
+00:09:11,312 --> 00:09:17,211
+So as with other definition in this chapter,
+
+51
+00:09:17,332 --> 00:09:21,792
+the definition here applies to greater variety of regions
+
+52
+00:09:21,792 --> 00:09:27,252
+than does the earlier single variable definition of area.
+
+53
+00:09:27,692 --> 00:09:31,872
+But it agrees also the earlier definition on regions
+
+54
+00:09:31,872 --> 00:09:33,711
+to which they both apply.
+
+55
+00:09:34,352 --> 00:09:34,512
+Okay.
+
+56
+00:09:34,812 --> 00:09:36,292
+We have seen, of course,
+
+57
+00:09:36,451 --> 00:09:38,332
+we know that the definite integral
+
+58
+00:09:38,332 --> 00:09:40,652
+for single variable function
+
+59
+00:09:40,652 --> 00:09:46,552
+gives the area of the bounded closed region on XY plane.
+
+60
+00:09:47,672 --> 00:09:50,172
+So actually we have,
+
+61
+00:09:50,392 --> 00:09:54,732
+we can evaluate with the double integral also areas,
+
+62
+00:09:54,951 --> 00:09:58,572
+but also some different kind of areas
+
+63
+00:09:58,572 --> 00:10:01,612
+for multivariable functions.
+
+64
+00:10:01,992 --> 00:10:02,232
+Okay.
+
+65
+00:10:03,700 --> 00:10:11,700
+To evaluate the integral in the definition of area, we integrate the constant function here fxy.
+
+66
+00:10:11,700 --> 00:10:17,700
+We will take fxy is 1 over r.
+
+67
+00:10:17,700 --> 00:10:19,700
+Okay.
+
+68
+00:10:19,700 --> 00:10:24,700
+So let's solve a question.
+
+69
+00:10:24,700 --> 00:10:31,700
+Find the area of the region bounded by y is x.
+
+70
+00:10:31,700 --> 00:10:35,700
+Let's sketch the graph.
+
+71
+00:10:35,700 --> 00:10:41,700
+And y is x squared in the first quadrant.
+
+72
+00:10:41,700 --> 00:10:45,700
+So this is esx.
+
+73
+00:10:45,700 --> 00:10:51,700
+y is x squared.
+
+74
+00:10:51,700 --> 00:10:54,700
+x on y.
+
+75
+00:10:54,700 --> 00:10:58,700
+So this is our region r.
+
+76
+00:10:58,700 --> 00:11:08,700
+Of course, we can evaluate this area by using the area for single variable function.
+
+77
+00:11:08,700 --> 00:11:12,700
+But we will use the double integration.
+
+78
+00:11:12,700 --> 00:11:13,700
+Okay.
+
+79
+00:11:13,700 --> 00:11:19,700
+So this is x squared is x.
+
+80
+00:11:19,700 --> 00:11:23,700
+So this means x is 0.
+
+81
+00:11:23,700 --> 00:11:25,700
+x is 1.
+
+82
+00:11:25,700 --> 00:11:27,700
+The intersection point.
+
+83
+00:11:27,700 --> 00:11:29,700
+0 and 1.
+
+84
+00:11:29,700 --> 00:11:32,700
+So let's write the area.
+
+85
+00:11:32,700 --> 00:11:39,700
+Double integral over r d a.
+
+86
+00:11:39,700 --> 00:11:40,700
+Okay.
+
+87
+00:11:40,700 --> 00:11:52,700
+So actually this region is proper for the x axis and it's proper for the y axis.
+
+88
+00:11:52,700 --> 00:12:00,700
+So it depends on you for the inner integral for the or for the outside integral.
+
+89
+00:12:00,700 --> 00:12:01,700
+Okay.
+
+90
+00:12:01,700 --> 00:12:05,700
+So the smallest value for x is 0.
+
+91
+00:12:05,700 --> 00:12:07,700
+So the largest is 1.
+
+92
+00:12:07,700 --> 00:12:23,700
+And y the it enters from the curve y is x squared is the lower curve.
+
+93
+00:12:23,700 --> 00:12:28,700
+and leaves y is x.
+
+94
+00:12:28,700 --> 00:12:31,700
+Maybe I can change the color.
+
+95
+00:12:31,700 --> 00:12:35,700
+Enter spheres, leaves here.
+
+96
+00:12:35,700 --> 00:12:36,700
+Okay.
+
+97
+00:12:36,700 --> 00:12:38,700
+X.
+
+98
+00:12:38,700 --> 00:12:40,700
+Outside is dx.
+
+99
+00:12:40,700 --> 00:12:44,700
+Inside is dy.
+
+100
+00:12:44,700 --> 00:12:45,700
+y.
+
+101
+00:12:45,700 --> 00:12:48,700
+They are simple integral.
+
+102
+00:12:48,700 --> 00:12:54,700
+For the inside integral, the integral of dy is y.
+
+103
+00:12:54,700 --> 00:13:03,700
+So it's equal to y x squared x dx.
+
+104
+00:13:03,700 --> 00:13:12,700
+If I substitute x is y and x squared is y.
+
+105
+00:13:12,700 --> 00:13:17,700
+So I need to erase this part.
+
+106
+00:13:20,500 --> 00:13:25,500
+Evet.
+
+107
+00:13:25,500 --> 00:13:37,500
+Bu, 0 to 1x minus x² dx.
+
+108
+00:13:37,500 --> 00:13:40,500
+So, you can see from here,
+
+109
+00:13:40,500 --> 00:13:45,500
+this is the area for single variable functions.
+
+110
+00:13:45,500 --> 00:13:47,500
+Okay?
+
+111
+00:13:47,500 --> 00:13:50,500
+So, please don't forget it.
+
+112
+00:13:50,500 --> 00:13:54,500
+This is the area for single variable function.
+
+113
+00:13:54,500 --> 00:13:59,500
+So, again, this is simple integral.
+
+114
+00:14:05,460 --> 00:14:09,460
+1,5,1,3
+
+115
+00:14:09,460 --> 00:14:12,460
+is 1,6
+
+116
+00:14:12,460 --> 00:14:15,460
+squared units.
+
+117
+00:14:17,460 --> 00:14:18,460
+Ok.
+
+118
+00:14:18,460 --> 00:14:21,460
+Do you have any questions?
+
+119
+00:14:27,988 --> 00:14:29,988
+You don't have any questions.
+
+120
+00:14:32,988 --> 00:14:34,988
+Let's check the answer.
+
+121
+00:14:36,988 --> 00:14:42,988
+Yes, this is the shape of the area.
+
+122
+00:14:43,988 --> 00:14:47,988
+Bounded by y is x, y is x squared.
+
+123
+00:14:47,988 --> 00:14:56,988
+First, we sketch the region and the area is 1, 1 sixth.
+
+124
+00:14:57,988 --> 00:15:09,988
+Yes, so we can notice that the single variable integral from 0 to 1, x minus x squared x, obtained from evaluating the inside iterated integral.
+
+125
+00:15:09,988 --> 00:15:18,988
+Is the integral for the area between these two curves using the method of in calculus 1.
+
+126
+00:15:19,988 --> 00:15:20,988
+Okay.
+
+127
+00:15:22,988 --> 00:15:24,988
+So we have another examples.
+
+128
+00:15:25,988 --> 00:15:32,988
+Find the area of the region R enclosed by the parabola y is x squared.
+
+129
+00:15:32,988 --> 00:15:35,988
+Let's be sketch the graph.
+
+130
+00:15:39,988 --> 00:15:41,988
+y is x squared.
+
+131
+00:15:42,988 --> 00:15:47,988
+If x is 0, y is 2.
+
+132
+00:15:48,988 --> 00:15:55,988
+y and y is 0, x is minus 2.
+
+133
+00:15:56,988 --> 00:15:59,988
+This is going in this form.
+
+134
+00:16:00,988 --> 00:16:02,988
+Yeah, maybe I need to...
+
+135
+00:16:03,988 --> 00:16:05,988
+Just a second, please.
+
+136
+00:16:05,988 --> 00:16:06,988
+Yes.
+
+137
+00:16:06,988 --> 00:16:11,988
+I have to draw it one more time.
+
+138
+00:16:12,988 --> 00:16:15,988
+For x is 0, y is 2.
+
+139
+00:16:15,988 --> 00:16:18,988
+For y is 0, x is minus 2.
+
+140
+00:16:19,988 --> 00:16:20,988
+Yes.
+
+141
+00:16:21,988 --> 00:16:23,988
+The first one.
+
+142
+00:16:24,988 --> 00:16:28,988
+And the second one, y is x squared.
+
+143
+00:16:28,988 --> 00:16:29,988
+Okay.
+
+144
+00:16:29,988 --> 00:16:34,988
+And here another branch.
+
+145
+00:16:35,988 --> 00:16:36,988
+Yes.
+
+146
+00:16:36,988 --> 00:16:37,988
+Not the first quadrant.
+
+147
+00:16:37,988 --> 00:16:38,988
+Okay.
+
+148
+00:16:38,988 --> 00:16:43,988
+So we can clearly see that this is for...
+
+149
+00:16:43,988 --> 00:16:54,988
+It comes from the line and comes from the parabola.
+
+150
+00:16:54,988 --> 00:16:55,988
+Yes.
+
+151
+00:16:55,988 --> 00:17:00,988
+This is our region R.
+
+152
+00:17:01,988 --> 00:17:02,988
+Okay.
+
+153
+00:17:02,988 --> 00:17:05,988
+Let's find the intersection point.
+
+154
+00:17:05,988 --> 00:17:06,988
+Okay.
+
+155
+00:17:07,988 --> 00:17:13,988
+So x squared x plus 2 x squared.
+
+156
+00:17:13,988 --> 00:17:14,988
+And then we can see that this is for...
+
+157
+00:17:14,988 --> 00:17:15,988
+So x squared.
+
+158
+00:17:15,988 --> 00:17:16,988
+And then we can see that this is for...
+
+159
+00:17:16,988 --> 00:17:17,988
+So x squared.
+
+160
+00:17:17,988 --> 00:17:18,988
+And then we can see that this is for...
+
+161
+00:17:18,988 --> 00:17:19,988
+So x squared.
+
+162
+00:17:19,988 --> 00:17:20,988
+And then we can see that this is for...
+
+163
+00:17:20,988 --> 00:17:21,988
+So x squared.
+
+164
+00:17:21,988 --> 00:17:22,988
+And then we can see that this is for...
+
+165
+00:17:22,988 --> 00:17:23,988
+So x squared.
+
+166
+00:17:23,988 --> 00:17:24,988
+And then we can see that this is for...
+
+167
+00:17:24,988 --> 00:17:25,988
+So x squared.
+
+168
+00:17:25,988 --> 00:17:26,988
+And then we can see that this is for...
+
+169
+00:17:26,988 --> 00:17:27,988
+So x squared.
+
+170
+00:17:27,988 --> 00:17:28,988
+And then we can see that this is for...
+
+171
+00:17:28,988 --> 00:17:29,988
+So x squared.
+
+172
+00:17:29,988 --> 00:17:30,988
+And then we can see that this is for...
+
+173
+00:17:30,988 --> 00:17:31,988
+So x squared.
+
+174
+00:17:31,988 --> 00:17:32,988
+And then we can see that this is for...
+
+175
+00:17:32,988 --> 00:17:33,988
+So x squared.
+
+176
+00:17:33,988 --> 00:17:34,988
+And then we can see that this is for...
+
+177
+00:17:26,355 --> 00:17:52,715
+Evet, these are the intersection point, minus 1, 2. So, let's erase this part. Okay. So, I need to decide that which one is outside integral, which one inside integral, because if I use the, do you have any idea?
+
+178
+00:17:52,715 --> 00:18:11,296
+Because the region R is the proper, proper region, with respect to, I am asking to all of you, which axis, x-axis or y-axis?
+
+179
+00:18:11,296 --> 00:18:28,296
+The region R is the proper, area, with respect to, x-axis or y-axis. Do you have any idea?
+
+180
+00:18:32,564 --> 00:18:43,284
+You have seen the calculus one also. I am teaching you in this lesson and the previous lesson.
+
+181
+00:18:47,988 --> 00:18:57,988
+So you don't have any idea. Okay. So the area are...
+
+182
+00:19:01,332 --> 00:19:31,332
+İntegre, iklim olarak dışarıda, dışarıda, dışarıda, dışarıda, dışarıda, dışarıda, dışarıda, dışarıda, dışarıda, dışarıda, dışarıda, dışarıda, dışarıda, dışarıda, dışarıda, dışarıda, dışarıda, dışarıda, dışarıda, dışarıda, dışarıda, dışarıda, dışarıda, dışarıda, dışarıda, dışarıda, dışarıda, dışarıda, dışarıda, dışarıda, dışarıda, dışarıda, dışarıda, dışarıda, dışarıda, dışarıda, dışarıda, dışarıda, dışarıda, dışarıda, dışarıda, dışarıda, dışarıda, dışarıda, dışarıda, dışarıda, dışarıda, dışarıda, dışarıda, dışarıda, dışarıda, dışarıda, dışarıda, dışarıda
+
+183
+00:19:31,332 --> 00:19:59,172
+x plus 2. Okay, x from x square to x plus 2. You can see that. x plus 2, the inside integral divide. Okay. So, if, but, if I choose as an outside integral,
+
+184
+00:20:01,332 --> 00:20:28,211
+d y. Okay. I have to do, yes, I have to divide this r two pieces. What does this mean? Let's erase this part. Okay, yes. So, because, uh, the first
+
+185
+00:20:28,211 --> 00:20:38,132
+one is from parabola to parabola, from parabola to parabola, from parabola to parabola, from parabola to parabola,
+
+186
+00:20:38,692 --> 00:20:48,812
+this is r one, plus from line to parabola, from line to parabola, from line to parabola, from line to parabola.
+
+187
+00:20:48,812 --> 00:21:02,732
+So, this means two, let me say, are two. We need to divide by two pieces. Okay. So, uh, the first
+
+188
+00:21:02,732 --> 00:21:10,292
+one will be four axis, uh, minus one. Y is...
+
+189
+00:21:16,435 --> 00:21:16,975
+1.
+
+190
+00:21:18,076 --> 00:21:18,955
+Okay.
+
+191
+00:21:19,655 --> 00:21:20,195
+So,
+
+192
+00:21:20,755 --> 00:21:23,615
+y'in 0.
+
+193
+00:21:24,076 --> 00:21:25,895
+The largest one
+
+194
+00:21:25,895 --> 00:21:26,795
+is 1.
+
+195
+00:21:26,935 --> 00:21:29,096
+From 0 to 1.
+
+196
+00:21:29,715 --> 00:21:30,135
+Okay.
+
+197
+00:21:30,336 --> 00:21:31,675
+For this one,
+
+198
+00:21:31,795 --> 00:21:32,795
+it enters,
+
+199
+00:21:33,316 --> 00:21:34,855
+let me change the color.
+
+200
+00:21:36,535 --> 00:21:38,155
+It enters from,
+
+201
+00:21:39,375 --> 00:21:40,435
+so here,
+
+202
+00:21:40,816 --> 00:21:42,875
+y is x squared.
+
+203
+00:21:42,875 --> 00:21:44,535
+If I take the square root
+
+204
+00:21:44,535 --> 00:21:45,515
+of both sides,
+
+205
+00:21:45,515 --> 00:21:49,115
+x is plus minus square root y.
+
+206
+00:21:49,415 --> 00:21:49,556
+Okay.
+
+207
+00:21:50,975 --> 00:21:51,615
+So,
+
+208
+00:21:52,395 --> 00:21:55,995
+x is minus square root y
+
+209
+00:21:55,995 --> 00:21:56,655
+to
+
+210
+00:21:56,655 --> 00:22:00,515
+minus square root y
+
+211
+00:22:00,515 --> 00:22:01,215
+to
+
+212
+00:22:01,215 --> 00:22:04,275
+plus square root y.
+
+213
+00:22:04,435 --> 00:22:04,855
+Okay.
+
+214
+00:22:05,375 --> 00:22:10,556
+From parabola to parabola.
+
+215
+00:22:10,556 --> 00:22:13,355
+And the second piece.
+
+216
+00:22:13,355 --> 00:22:16,955
+is minus square root y.
+
+217
+00:22:16,955 --> 00:22:18,395
+The smallest y is 1.
+
+218
+00:22:20,395 --> 00:22:25,675
+The largest y for f2.
+
+219
+00:22:25,675 --> 00:22:30,435
+x plus 2 is 4.
+
+220
+00:22:30,435 --> 00:22:31,995
+Yes.
+
+221
+00:22:32,935 --> 00:22:33,995
+Here is 4.
+
+222
+00:22:34,355 --> 00:22:35,895
+From 1 to 4.
+
+223
+00:22:36,235 --> 00:22:37,115
+Yes.
+
+224
+00:22:37,815 --> 00:22:40,415
+From line to parabola.
+
+225
+00:22:40,915 --> 00:22:43,275
+Means the line is
+
+226
+00:22:43,275 --> 00:22:45,355
+x plus 2.
+
+227
+00:22:45,455 --> 00:22:46,535
+Means x is
+
+228
+00:22:46,535 --> 00:22:48,535
+y minus 2.
+
+229
+00:22:48,535 --> 00:22:50,395
+From y minus 2 to
+
+230
+00:22:50,395 --> 00:22:53,655
+square root y.
+
+231
+00:22:53,655 --> 00:22:54,615
+Okay.
+
+232
+00:22:54,615 --> 00:22:55,596
+So,
+
+233
+00:22:55,596 --> 00:22:57,435
+if I choose
+
+234
+00:22:57,435 --> 00:22:59,395
+as an outside integral
+
+235
+00:22:59,395 --> 00:23:01,195
+with respect to y,
+
+236
+00:23:01,435 --> 00:23:02,935
+I need to write
+
+237
+00:23:02,935 --> 00:23:04,855
+two double integrals.
+
+238
+00:23:05,096 --> 00:23:05,515
+So,
+
+239
+00:23:05,596 --> 00:23:07,336
+I prefer the first one.
+
+240
+00:23:07,875 --> 00:23:08,435
+Okay.
+
+241
+00:23:10,815 --> 00:23:11,635
+Question?
+
+242
+00:23:14,336 --> 00:23:15,215
+Okay.
+
+243
+00:23:15,215 --> 00:23:17,315
+I need to erase
+
+244
+00:23:17,315 --> 00:23:20,315
+this one.
+
+245
+00:23:20,315 --> 00:23:21,915
+Let's evaluate
+
+246
+00:23:21,915 --> 00:23:23,755
+the first one.
+
+247
+00:23:26,076 --> 00:23:26,415
+Okay.
+
+248
+00:23:26,615 --> 00:23:26,855
+So,
+
+249
+00:23:26,855 --> 00:23:27,395
+I will
+
+250
+00:23:27,395 --> 00:23:28,255
+evaluate.
+
+251
+00:23:28,795 --> 00:23:29,695
+I will erase.
+
+252
+00:23:31,495 --> 00:23:31,855
+Yes.
+
+253
+00:23:33,215 --> 00:23:34,255
+Here and
+
+254
+00:23:34,255 --> 00:23:35,056
+here.
+
+255
+00:23:37,275 --> 00:23:37,695
+Oops.
+
+256
+00:23:38,355 --> 00:23:38,975
+I
+
+257
+00:23:38,975 --> 00:23:40,355
+need to write
+
+258
+00:23:40,355 --> 00:23:41,875
+one more time.
+
+259
+00:23:41,875 --> 00:23:45,576
+ar.
+
+260
+00:23:46,576 --> 00:23:47,495
+The outside
+
+261
+00:23:47,495 --> 00:23:48,596
+from minus
+
+262
+00:23:48,596 --> 00:23:49,255
+one to
+
+263
+00:23:49,255 --> 00:23:49,975
+two
+
+264
+00:23:49,975 --> 00:23:50,695
+from
+
+265
+00:23:50,695 --> 00:23:51,535
+x squared
+
+266
+00:23:51,535 --> 00:23:51,995
+to
+
+267
+00:23:51,995 --> 00:23:52,535
+x.
+
+268
+00:23:52,755 --> 00:23:52,995
+Yes.
+
+269
+00:23:53,695 --> 00:23:54,695
+The inside
+
+270
+00:23:54,695 --> 00:23:55,336
+integral
+
+271
+00:23:55,336 --> 00:23:56,255
+is a
+
+272
+00:23:56,255 --> 00:23:57,255
+simple integral
+
+273
+00:23:57,255 --> 00:23:58,195
+y.
+
+274
+00:24:01,940 --> 00:24:20,580
+x2 dx. If I substitute x and x2, minus 1 to 2, x minus x2. Actually, it's again a simple integral.
+
+275
+00:24:32,084 --> 00:25:01,524
+This is the area, x squared over 2 x cubed over 3 minus 1, 2. If I substitute 2, um, 2 squared, 8, 3 minus 1 half plus 1 third,
+
+276
+00:25:02,084 --> 00:25:08,663
+So, this means this is 2, 2 minus 1 half.
+
+277
+00:25:15,604 --> 00:25:19,604
+9 over 3.
+
+278
+00:25:19,604 --> 00:25:24,604
+So this is 3.5.
+
+279
+00:25:24,604 --> 00:25:28,604
+Minus 3.
+
+280
+00:25:28,604 --> 00:25:32,604
+Is there any mistake here?
+
+281
+00:25:32,604 --> 00:25:39,604
+x squared over 2 minus x cubed.
+
+282
+00:25:39,604 --> 00:25:50,604
+If I substitute 2, 4 over 2 is 2 minus...
+
+283
+00:25:50,604 --> 00:25:57,604
+8 over 3 minus 1 half plus 1 third.
+
+284
+00:25:57,604 --> 00:26:00,604
+No.
+
+285
+00:26:00,604 --> 00:26:04,604
+Yes, it is correct.
+
+286
+00:26:04,604 --> 00:26:15,604
+So this means 2 minus 1 half minus 3.
+
+287
+00:26:15,604 --> 00:26:17,604
+It shouldn't be negative.
+
+288
+00:26:17,604 --> 00:26:23,604
+Let me check it.
+
+289
+00:26:23,604 --> 00:26:27,604
+Is there any...
+
+290
+00:26:27,604 --> 00:26:31,604
+Yes, we use the second one.
+
+291
+00:26:31,604 --> 00:26:33,604
+Yes.
+
+292
+00:26:33,604 --> 00:26:35,604
+From x...
+
+293
+00:26:35,604 --> 00:26:37,604
+Oh, oh, oh, oh.
+
+294
+00:26:37,604 --> 00:26:39,604
+From x squared to...
+
+295
+00:26:39,604 --> 00:26:40,604
+Not x.
+
+296
+00:26:40,604 --> 00:26:42,604
+x plus 2.
+
+297
+00:26:42,604 --> 00:26:48,604
+The line is x plus 2.
+
+298
+00:26:48,604 --> 00:26:54,604
+So this means...
+
+299
+00:26:54,604 --> 00:26:56,604
+Just a second please.
+
+300
+00:26:56,604 --> 00:27:01,604
+Yes, now we are here.
+
+301
+00:27:01,604 --> 00:27:03,604
+Um...
+
+302
+00:27:03,604 --> 00:27:09,604
+So this one is x plus 2 also.
+
+303
+00:27:09,604 --> 00:27:16,604
+This is x plus 2 also.
+
+304
+00:27:16,604 --> 00:27:22,604
+And 2 plus x here plus x.
+
+305
+00:27:22,604 --> 00:27:25,604
+So let's erase this one.
+
+306
+00:27:25,604 --> 00:27:28,604
+I will write it again.
+
+307
+00:27:28,604 --> 00:27:29,604
+Yes.
+
+308
+00:27:29,604 --> 00:27:32,604
+So...
+
+309
+00:27:32,604 --> 00:27:34,604
+The area is...
+
+310
+00:27:34,604 --> 00:27:46,604
+2 plus 2 squared over 2 minus 8 over 3.
+
+311
+00:27:46,604 --> 00:27:47,604
+Okay.
+
+312
+00:27:47,604 --> 00:27:49,604
+Minus...
+
+313
+00:27:49,604 --> 00:27:50,604
+Um...
+
+314
+00:27:50,604 --> 00:27:52,604
+Minus 1.
+
+315
+00:27:52,604 --> 00:27:53,604
+Okay.
+
+316
+00:27:53,604 --> 00:27:54,604
+Plus 1 half.
+
+317
+00:27:54,604 --> 00:27:55,604
+Plus 1 third.
+
+318
+00:27:55,604 --> 00:27:56,604
+Yes.
+
+319
+00:27:56,604 --> 00:27:57,604
+So...
+
+320
+00:27:57,604 --> 00:27:58,604
+It's...
+
+321
+00:27:58,604 --> 00:27:59,604
+So...
+
+322
+00:27:59,604 --> 00:28:16,604
+It's...
+
+323
+00:28:10,355 --> 00:28:15,355
+I have only the final one line.
+
+324
+00:28:18,355 --> 00:28:21,355
+Ok, so this equals 2.
+
+325
+00:28:24,355 --> 00:28:31,355
+2 plus 2 is 4 minus 8 over 3.
+
+326
+00:28:31,355 --> 00:28:44,355
+This is 1 because we have minus 1 minus 5 over 6.
+
+327
+00:28:44,355 --> 00:28:59,355
+Ok, this is plus 1 minus 5 over 6 plus minus.
+
+328
+00:28:59,355 --> 00:29:12,355
+Yes, this is 5, let me say 2 minus 21 over 6.
+
+329
+00:29:12,355 --> 00:29:24,355
+Ok, so this is equal to 9 over 6 means 3 over 2.
+
+330
+00:29:24,355 --> 00:29:32,355
+Ok, so this is the result.
+
+331
+00:29:32,355 --> 00:29:34,355
+Ok, let me check it.
+
+332
+00:29:35,355 --> 00:29:36,355
+Solution.
+
+333
+00:29:36,355 --> 00:29:47,355
+So, if we divide R into two regions like R1 and R2, we may calculate the area in two pieces.
+
+334
+00:29:47,355 --> 00:29:50,355
+But actually we don't prefer it.
+
+335
+00:29:50,355 --> 00:30:04,355
+So, from 0 to 1 and it enters here from, yes, from minus, yes, minus squared y to squared y dx dy plus, yes, plus.
+
+336
+00:30:04,355 --> 00:30:05,355
+Yes, from 1 to 4.
+
+337
+00:30:05,355 --> 00:30:06,355
+Yes, we did it before.
+
+338
+00:30:06,355 --> 00:30:07,355
+But we didn't prefer it.
+
+339
+00:30:07,355 --> 00:30:11,355
+On the other hand, reversing the order of integration, it's more simpler for us.
+
+340
+00:30:11,355 --> 00:30:18,355
+from, yes, from minus 1 to minus 1 to minus 1 to minus 1 to minus 1 to minus 1 to minus 1.
+
+341
+00:30:18,355 --> 00:30:25,355
+Yes, from minus 1 to minus 1 to minus 1 to minus 2.
+
+342
+00:30:25,355 --> 00:30:32,355
+Yes, from minus 1 to minus 2.
+
+343
+00:30:32,355 --> 00:30:33,355
+So, d y dx.
+
+344
+00:30:33,355 --> 00:30:34,355
+We prefer this one.
+
+345
+00:30:34,355 --> 00:30:35,355
+And the inside integral is x plus 2 minus x squared.
+
+346
+00:30:35,355 --> 00:30:36,355
+So, d y dx.
+
+347
+00:30:36,355 --> 00:30:37,355
+We prefer this one.
+
+348
+00:30:37,355 --> 00:30:38,355
+And the inside integral is x plus 2 minus x squared.
+
+349
+00:30:38,355 --> 00:30:39,355
+So, d y dx.
+
+350
+00:30:39,355 --> 00:30:40,355
+We prefer this one.
+
+351
+00:30:40,355 --> 00:30:43,355
+And the inside integral is x plus 2 minus x squared.
+
+352
+00:30:43,355 --> 00:30:44,355
+So, d y dx.
+
+353
+00:30:44,355 --> 00:30:45,355
+We prefer this one.
+
+354
+00:30:45,355 --> 00:30:49,355
+And the inside integral is x plus 2 minus x squared.
+
+355
+00:30:49,355 --> 00:30:50,355
+So, d y dx.
+
+356
+00:30:50,355 --> 00:30:51,355
+We prefer this one.
+
+357
+00:30:51,355 --> 00:30:53,355
+And the inside integral is x plus 2 minus x squared.
+
+358
+00:30:53,355 --> 00:30:54,355
+So, d y dx.
+
+359
+00:30:54,355 --> 00:30:55,355
+We prefer this one.
+
+360
+00:30:55,355 --> 00:30:58,355
+And the inside integral is x plus 2 minus x squared.
+
+361
+00:30:58,355 --> 00:30:59,355
+So, d y dx.
+
+362
+00:30:59,355 --> 00:31:04,355
+So, this is equal to 2x.
+
+363
+00:31:04,355 --> 00:31:09,355
+Yes, I forgot 2.
+
+364
+00:31:09,355 --> 00:31:14,355
+So, the result is 9 over 3.
+
+365
+00:31:14,355 --> 00:31:15,355
+Okay.
+
+366
+00:31:15,355 --> 00:31:17,355
+So, do you have any question?
+
+367
+00:31:17,355 --> 00:31:20,355
+We don't have any question.
+
+368
+00:31:20,355 --> 00:31:21,355
+Okay.
+
+369
+00:31:21,355 --> 00:31:24,355
+Let's solve another one.
+
+370
+00:31:24,355 --> 00:31:28,355
+Find the area of the plane file.
+
+371
+00:31:28,355 --> 00:31:31,355
+Maybe for children.
+
+372
+00:31:31,355 --> 00:31:33,355
+Describe by r.
+
+373
+00:31:33,355 --> 00:31:38,355
+Minus 2x.
+
+374
+00:31:38,355 --> 00:31:39,355
+2.
+
+375
+00:31:39,355 --> 00:31:40,355
+Minus 1.
+
+376
+00:31:40,355 --> 00:31:41,355
+Minus squared.
+
+377
+00:31:41,355 --> 00:31:42,355
+4.
+
+378
+00:31:42,355 --> 00:31:43,355
+Minus x squared.
+
+379
+00:31:43,355 --> 00:31:44,355
+Y.
+
+380
+00:31:44,355 --> 00:31:45,355
+1 plus.
+
+381
+00:31:45,355 --> 00:31:46,355
+Yes.
+
+382
+00:31:45,172 --> 00:31:49,451
+Fubini'nin Theorem'in or simple geometrii.
+
+383
+00:31:49,451 --> 00:31:54,251
+Ok, so first let's sketch the graph.
+
+384
+00:31:54,251 --> 00:31:56,531
+Let me see the region.
+
+385
+00:31:56,531 --> 00:32:04,932
+It is important to see the region because otherwise if you don't sketch the region,
+
+386
+00:32:04,932 --> 00:32:08,412
+you need only imagine.
+
+387
+00:32:08,412 --> 00:32:14,852
+But if you see the region, you can see the small details.
+
+388
+00:32:14,852 --> 00:32:19,991
+Ok, so if I sketch the graph.
+
+389
+00:32:19,991 --> 00:32:27,172
+So actually this the first, these are the lines, axis minus two and axis two.
+
+390
+00:32:27,172 --> 00:32:37,852
+Ok, the first one is y minus one minus squared, or minus x squared mean.
+
+391
+00:32:37,852 --> 00:32:44,291
+y plus one, 4 minus x squared.
+
+392
+00:32:44,291 --> 00:32:59,751
+If I take the square of both sides, y plus one, square 4 minus x squared means x squared plus
+
+393
+00:32:59,751 --> 00:33:04,352
+y plus one squared is 4.
+
+394
+00:33:04,352 --> 00:33:07,791
+Ok, this is the first one.
+
+395
+00:33:07,791 --> 00:33:12,791
+Actually, you can do the same for the second one.
+
+396
+00:33:12,791 --> 00:33:17,231
+Let's change the color for the green one.
+
+397
+00:33:17,231 --> 00:33:25,672
+So the green one will be x squared plus y minus one squared is 4.
+
+398
+00:33:25,672 --> 00:33:31,112
+Actually, these two thirds are the circles.
+
+399
+00:33:31,112 --> 00:33:40,112
+At the center, 0, 1 and the radius is 2.
+
+400
+00:33:40,112 --> 00:33:44,552
+And the second one is again a circle.
+
+401
+00:33:44,552 --> 00:33:54,552
+At the center, 0 minus 1 and the radius is 2.
+
+402
+00:33:54,552 --> 00:34:04,991
+So the first one is the lower circle because the sign is minus.
+
+403
+00:34:04,991 --> 00:34:05,991
+Okay.
+
+404
+00:34:05,991 --> 00:34:16,311
+And the second one, the green one is the upper circle, upper half circle actually because the
+
+405
+00:34:16,311 --> 00:34:18,992
+sign is positive here.
+
+406
+00:34:18,992 --> 00:34:43,431
+So the second one is the lower circle.
+
+407
+00:34:36,947 --> 00:35:06,947
+Bu bir yüzeyde, bu bir yüzeyde, bu bir yüzeyde, bu bir yüzeyde, bu bir yüzeyde, bu bir yüzeyde, bu bir yüzeyde, bu bir yüzeyde, bu bir yüzeyde, bu bir yüzeyde, bu bir yüzeyde, bu bir yüzeyde, bu bir yüzeyde, bu bir yüzeyde, bu bir yüzeyde, bu bir yüzeyde, bu bir yüzeyde, bu bir yüzeyde, bu bir yüzeyde, bu bir yüzeyde, bu bir yüzeyde, bu bir yüzeyde, bu bir yüzeyde, bu yüzeyde, bu yüzeyde, bu yüzeyde, bu yüzeyde, bu yüzeyde, bu yüze
+
+408
+00:35:06,947 --> 00:36:06,947
+yüzeyde, bu yüzeyde, bu yüzeyde, bu yüzeyde, bu yüzeyde, bu yüzeyde, bu yüzeyde, bu yüzeyde, bu yüzeyde, bu yüzeyde, bu yüzeyde, bu yüzeyde, bu yüzeyde, bu yüzeyde, bu yüzeyde, bu yüzeyde, bu yüzeyde, bu yüzeyde, bu yüzeyde, bu yüzeyde, bu yüzeyde, bu yüzeyde, bu yüzeyde, bu yüzeyde, bu yüzeyde, bu yüzeyde, bu yüzeyde, bu yüzeyde, bu yüzeyde, bu yüzeyde, bu yüzeyde, bu yüzey
+
+409
+00:36:06,947 --> 00:36:36,067
+So, let's rewrite the area, the outside integral is dx, the inside integral is dy, so the smallest x is minus 2, the largest x is 2, okay, let me change the color, and
+
+410
+00:36:36,947 --> 00:37:02,387
+here enters, y is enters from here, so this one is the y minus 1 minus 4 minus x squared, okay, enters here and lives here, lives here, so
+
+411
+00:37:06,612 --> 00:37:36,612
+Evet, bu yi'ye
+
+412
+00:37:36,612 --> 00:37:37,632
+A R
+
+413
+00:37:44,244 --> 00:37:47,564
+1-1-x²
+
+414
+00:37:47,564 --> 00:37:51,624
+1-4-x²
+
+415
+00:37:51,624 --> 00:37:54,684
+This is equal to
+
+416
+00:37:54,684 --> 00:37:58,463
+So I need to erase this part.
+
+417
+00:38:17,556 --> 00:38:46,496
+So, area r is 1 plus square root 4 minus x squared. This is, I don't want to write again, there is only minus sign, this is 1 plus square root 4 minus 1 squared.
+
+418
+00:38:47,556 --> 00:38:54,556
+Okay, so this equals to...
+
+419
+00:39:01,268 --> 00:39:09,907
+2, 2 plus 2, 4 minus x squared.
+
+420
+00:39:11,347 --> 00:39:24,907
+This is equals to, if I take the common parenthesis of 2, 1 plus 4 minus x squared dx.
+
+421
+00:39:24,907 --> 00:39:32,907
+Yes, so we have two integrals here.
+
+422
+00:39:32,907 --> 00:39:41,867
+The first one is a simple integral x. The first one is 2 times x from minus to 2.
+
+423
+00:39:42,987 --> 00:39:51,068
+Okay, actually this is 4, 4 times 2 is 8. And the second one is
+
+424
+00:39:51,068 --> 00:40:03,628
+actually you can use the x. You can use the transformation formula x is 2 sin t.
+
+425
+00:40:04,748 --> 00:40:11,867
+And you can evaluate the integral by the knowledge of your calculus.
+
+426
+00:40:11,867 --> 00:40:24,108
+Okay, but I don't use that formula. So we know that this is the circle at the centered origin.
+
+427
+00:40:24,108 --> 00:40:36,028
+And the area is the upper half circle. Minus 2, 2. I can evaluate the area.
+
+428
+00:40:37,947 --> 00:40:47,947
+Pi times 2 squared. And pi times radius squared. But only half. This is
+
+429
+00:40:47,947 --> 00:41:04,108
+Pi times 2 pi. Okay, so I evaluate by using simple formula 2 pi. So we have only two as a coefficient.
+
+430
+00:41:04,827 --> 00:41:13,228
+So this means 8 plus 4 pi square units. Okay.
+
+431
+00:41:13,228 --> 00:41:26,188
+Do you have any question?
+
+432
+00:41:24,179 --> 00:41:38,980
+So, if I use the simple geometry, this is simple arculit geometry, let's find again the shape one.
+
+433
+00:41:48,467 --> 00:41:50,248
+Bu, bu, minus 1.
+
+434
+00:41:50,768 --> 00:42:06,047
+Bu, iki yukarı ile de 2.
+
+435
+00:42:06,587 --> 00:42:09,847
+Bu, bu, bir yukarı ile de 2.
+
+436
+00:42:11,728 --> 00:42:16,228
+Bu, bir yukarı ile de 2.
+
+437
+00:42:16,228 --> 00:42:20,228
+Bu, bu, bir yukarı ile de 2.
+
+438
+00:42:20,228 --> 00:42:45,228
+Bu, iki yukarı ile de 2.
+
+439
+00:42:42,003 --> 00:42:55,443
+Ok, let's check the answer. Yes, this is the shape. Ok, this is the region. We evaluated.
+
+440
+00:42:57,943 --> 00:43:09,304
+Ok, 8 plus 4 pi. And from the simple geometry, we evaluated 8 plus 4 pi. Ok.
+
+441
+00:43:09,304 --> 00:43:11,864
+Do you have any questions?
+
+442
+00:43:13,983 --> 00:43:18,443
+Ok, now let's have a break for 10 minutes. Ok.
+
+443
+00:43:19,243 --> 00:43:26,943
+After 10 minutes break, I will continue with a new title, average value.
+
+444
+00:43:27,384 --> 00:43:32,463
+Now I turn off my camera and my voice. 10 minutes break.
+
+445
+00:58:34,068 --> 00:58:45,108
+Okay, the average value we have evaluated in Calculus 1 for single variable functions.
+
+446
+00:58:45,108 --> 00:59:08,148
+The average value of the given function is like let me say f average 1 minus b minus a integral from a to b f dx.
+
+447
+00:59:08,148 --> 00:59:20,148
+Yes, we use this formula. The function f is defined and continues on the interval f ab.
+
+448
+00:59:20,788 --> 00:59:29,188
+Okay, so we will use the this is the length of the interval ab.
+
+449
+00:59:29,908 --> 00:59:36,868
+So we will use the similar formula actually extended to double integrals.
+
+450
+00:59:36,868 --> 00:59:51,268
+So the average value will be this is the length of the interval and this one will be the area of the region r.
+
+451
+00:59:51,908 --> 01:00:00,868
+So the average value of f over r 1 over area of r double integral over r fda.
+
+452
+01:00:00,868 --> 01:00:19,688
+Okay, so the average value of integrable function of one variable on a closed interval is the integral of the function over the interval divided by the length of the interval.
+
+453
+01:00:19,688 --> 01:00:35,688
+For an integrable function of two variables defined on a bounded region in the plane, the average value is the integral over the region divided by the area of the region.
+
+454
+01:00:35,688 --> 01:00:45,688
+This can be visualized. It's an example where can we use this formula.
+
+455
+01:00:45,688 --> 01:01:03,688
+Okay, so in here this can be visualized by thinking of a function as the given high at one instant of some water sloshing around the tank whose vertical walls
+
+456
+01:01:03,688 --> 01:01:25,688
+vertical walls lies over on the boundary of the region like maybe it's this is the water it's uh the the tank is you can think the tank is shaking maybe on the uh track.
+
+457
+01:01:25,688 --> 01:01:31,688
+I don't know okay this is the water.
+
+458
+01:01:31,688 --> 01:01:45,688
+So uh the by thinking of a function as giving the height at one instant of some water sloshing around in the tank whose vertical here the vertical walls.
+
+459
+01:01:45,688 --> 01:01:59,688
+So uh the water sloshing around in the tank is the water sloshing around in the tank.
+
+460
+01:01:59,688 --> 01:02:01,688
+So uh the average high.
+
+461
+01:02:01,688 --> 01:02:03,688
+Average high.
+
+462
+01:02:03,688 --> 01:02:12,688
+Water in the tank can be found by letting the water settle down to a constant high means.
+
+463
+01:02:12,688 --> 01:02:15,688
+Like uh this one.
+
+464
+01:02:15,688 --> 01:02:19,688
+This is the water as you can think.
+
+465
+01:02:19,688 --> 01:02:21,688
+Uh the constant high.
+
+466
+01:02:21,688 --> 01:02:35,688
+The high is then equal to the volume of water in the tank divided by the area.
+
+467
+01:02:32,596 --> 01:02:56,476
+R, ok? So, like, here, this is the area of R and double integral, the high, the volume of water in the tank, divided by the area of the R.
+
+468
+01:02:56,476 --> 01:03:00,896
+This is the average high, okay?
+
+469
+01:03:03,835 --> 01:03:08,735
+So, let's have an example here.
+
+470
+01:03:12,659 --> 01:03:26,659
+Fx y cos x y over the rectangle x is between 0 pi y is between 0 1.
+
+471
+01:03:26,659 --> 01:03:52,659
+Okay, let's sketch the region 0 pi 0 1. This is our region R. So the average value, let me say F average, 1 over what is the area?
+
+472
+01:03:52,659 --> 01:04:19,659
+The area is very simple pi times 1 is pi double integral Fx y x cos x y. So you need to decide here which one will be outside integral, which one will be inside integral.
+
+473
+01:04:19,659 --> 01:04:31,659
+So I prefer as an inside integral d y because there is only y here.
+
+474
+01:04:31,659 --> 01:04:45,379
+If I choose as an inside integral, as an inner integral dx, I need to use the partial integration by part formula.
+
+475
+01:04:45,379 --> 01:04:51,259
+So I don't want to use it because I can choose the integral with respect to y.
+
+476
+01:04:52,299 --> 01:04:57,339
+Okay, let's write the limits.
+
+477
+01:04:57,339 --> 01:05:09,339
+x is from 0 to pi y is from 0 to 1. So x here 1 over pi.
+
+478
+01:05:09,339 --> 01:05:27,099
+Yes, here x is the constant value. Here x is the constant value. So the integral is 1 over x sin x y.
+
+479
+01:05:27,099 --> 01:05:34,099
+Because x is the constant value. So x is the constant value. So x is the constant value.
+
+480
+01:05:34,099 --> 01:05:48,099
+So x is the constant value. So x is the constant value. So x is the constant value. So x is the constant value.
+
+481
+01:05:48,099 --> 01:05:51,659
+So x is the constant value. So x is the constant value. So x is the constant value. So x is the constant value. So x is the constant value. So x is the constant value. So x is the constant value. So x is the constant value. So x is the constant value. So x is the constant value. So x is the constant value. So x is the constant value. So x is the constant value. So x is the constant value. So x is the constant value. So x is the constant value. So x is the constant value. So x is the constant value. So x is the constant value. So x is the constant value. So x is the constant value. So x is the constant value. So x is the constant value. So x is the constant value. So x is the constant value. So x is the constant value. So x is the constant value. So x is the constant value. So x is the constant value. So x is the constant value. So x is the constant value. So x is the
+
+482
+01:05:57,235 --> 01:06:18,835
+F average, 1 over pi, 0 to pi, sin x dx, this is, let's say minus, cosin,
+
+483
+01:06:22,835 --> 01:06:39,875
+minus 1 over pi. If I substitute, x is pi and 0, minus 1, minus 1, so this means 2 over pi. Yes, this is the average value.
+
+484
+01:06:40,995 --> 01:06:42,515
+So do you have any question?
+
+485
+01:06:48,244 --> 01:06:52,844
+Why we found
+
+486
+01:06:57,619 --> 01:07:27,619
+Evet, bu da integral olarak da, o da
+
+487
+01:07:27,619 --> 01:07:35,859
+to solve this kind of integrals. So we need something, maybe we need some transformations.
+
+488
+01:07:36,460 --> 01:07:46,219
+Okay, so our subject now double integrals in polar form. If it make the transformations
+
+489
+01:07:46,219 --> 01:07:53,739
+from Cartesian coordinate system to polar coordinate system,
+
+490
+01:07:53,739 --> 01:08:07,139
+So our double integrals to solve our double integrals will be much more easier than before.
+
+491
+01:08:07,659 --> 01:08:17,979
+But before then, let's see the double integrals in polar form. Okay, so double integrals are sometimes
+
+492
+01:08:17,979 --> 01:08:26,979
+easier to evaluate if we change to polar coordinates. This section shows how to accomplish the change
+
+493
+01:08:26,979 --> 01:08:35,380
+and how to evaluate double integrals over the regions whose boundaries are given by polar coordinates.
+
+494
+01:08:35,800 --> 01:08:47,680
+Okay, so let's be first integrals in polar coordinates. Okay, so a version of Fubini's theorem says
+
+495
+01:08:47,680 --> 01:08:58,880
+that the limit approach by these sums can be evaluated by repeated single integrals with respect to R and theta
+
+496
+01:08:58,880 --> 01:09:10,680
+is double integrals over R, F, R theta, dA is theta from alpha to beta,
+
+497
+01:09:10,680 --> 01:09:25,840
+and R from G1 to G2, F, R theta, R, dR, dT. Okay, so I would like to say you that
+
+498
+01:09:25,840 --> 01:09:39,039
+is the limit. So, it is, it was possible to interchange in Cartesian coordinate system, which was depend on us,
+
+499
+01:09:39,039 --> 01:09:53,840
+dx, dy, or I can choose the reverse limits, dy, dx. But if we are in Cartesian coordinate,
+
+500
+01:09:53,840 --> 01:10:09,519
+and if we are in Cartesian coordinate system, we have only the formula, okay, which we don't use the order of integration.
+
+501
+01:10:10,159 --> 01:10:22,159
+We can't, we can't do any, any reverse of integration. Okay, so you can't write here F, R theta,
+
+502
+01:10:22,159 --> 01:10:28,880
+R, dT, theta, dR. Okay, it is not possible. Okay.
+
+503
+01:10:31,840 --> 01:10:40,639
+So, why it's not possible? Why it's not possible? Because the inside of the integral are
+
+504
+01:10:40,640 --> 01:10:52,000
+and the inside of the integral are the functions. So, that's why it's not possible to write the
+
+505
+01:10:52,000 --> 01:10:52,319
+function.
+
+506
+01:10:52,319 --> 01:11:06,319
+So, that's why it's not possible to write the function.
+
+507
+01:10:54,003 --> 01:11:02,203
+İterated integral, the iterated integral, you can't reverse the order of integration.
+
+508
+01:11:03,104 --> 01:11:05,224
+Okay, you can't reverse it.
+
+509
+01:11:06,163 --> 01:11:14,423
+Because the inside integral limits are generally functions, mainly functions.
+
+510
+01:11:14,423 --> 01:11:20,804
+Okay, so finding the limits of integration.
+
+511
+01:11:20,804 --> 01:11:27,403
+Sketch is very important because you need to see the region.
+
+512
+01:11:28,043 --> 01:11:33,604
+Okay, so actually we have three kind of polar curves.
+
+513
+01:11:36,163 --> 01:11:37,804
+First, lines.
+
+514
+01:11:38,804 --> 01:11:40,403
+The second, circles.
+
+515
+01:11:41,024 --> 01:11:44,264
+Third, the type of cardioids.
+
+516
+01:11:44,483 --> 01:11:47,363
+Okay, we have only three type of curves.
+
+517
+01:11:47,923 --> 01:11:48,684
+Okay.
+
+518
+01:11:48,684 --> 01:11:54,503
+So sketch the region and label the bounding curves.
+
+519
+01:11:54,863 --> 01:11:54,943
+Okay.
+
+520
+01:11:55,503 --> 01:12:02,884
+The second, find the R limits of integration like in Cartesian coordinates.
+
+521
+01:12:02,884 --> 01:12:12,703
+Imagine a ray L from the origin cutting through R in the direction of increasing R.
+
+522
+01:12:12,703 --> 01:12:17,264
+So this means, for example, let me think.
+
+523
+01:12:17,264 --> 01:12:17,844
+Oops.
+
+524
+01:12:18,403 --> 01:12:18,823
+Sorry.
+
+525
+01:12:19,524 --> 01:12:21,583
+The polar coordinates.
+
+526
+01:12:22,123 --> 01:12:29,623
+For example, this is a curve in polar coordinates.
+
+527
+01:12:30,163 --> 01:12:35,503
+R is F theta, for example.
+
+528
+01:12:35,503 --> 01:12:48,564
+So the first one, theta one, for example, pi over 6, theta 2 is pi over 3.
+
+529
+01:12:49,264 --> 01:12:56,024
+R is going from 0, from 0 to, for example, 3.
+
+530
+01:12:56,163 --> 01:12:57,384
+From 0 to 3.
+
+531
+01:12:57,384 --> 01:12:59,064
+You can see that.
+
+532
+01:12:59,064 --> 01:13:06,923
+Or if we have double, double R in like here.
+
+533
+01:13:08,264 --> 01:13:09,903
+Like here.
+
+534
+01:13:09,903 --> 01:13:19,524
+And if we are looking for this shape, for example, this R is the small one.
+
+535
+01:13:19,863 --> 01:13:20,363
+Okay.
+
+536
+01:13:20,363 --> 01:13:22,203
+I will change the color.
+
+537
+01:13:23,064 --> 01:13:27,123
+This R is the upper one.
+
+538
+01:13:27,203 --> 01:13:29,663
+Which one is the upper one?
+
+539
+01:13:29,663 --> 01:13:31,923
+Which one is the lower one?
+
+540
+01:13:32,043 --> 01:13:34,003
+It is important to see that.
+
+541
+01:13:34,384 --> 01:13:34,663
+Okay.
+
+542
+01:13:35,663 --> 01:13:43,804
+So actually, I, you know that all the knowledge about the polar coordinates, just use them.
+
+543
+01:13:44,523 --> 01:13:44,783
+Okay.
+
+544
+01:13:44,884 --> 01:13:48,163
+Just use knowledge of the, about the polar coordinates.
+
+545
+01:13:49,104 --> 01:13:54,844
+So mark R values where L enters and leaves R.
+
+546
+01:13:54,844 --> 01:13:59,463
+These are R limits of integrations.
+
+547
+01:13:59,684 --> 01:13:59,884
+Okay.
+
+548
+01:14:00,363 --> 01:14:06,884
+They usually depend on angel theta that L makes with the positive x axis.
+
+549
+01:14:06,884 --> 01:14:15,224
+I told you because the R limits are generally the functions of theta.
+
+550
+01:14:15,844 --> 01:14:16,003
+Okay.
+
+551
+01:14:16,903 --> 01:14:21,123
+And then number three, find the theta limits of integration.
+
+552
+01:14:21,123 --> 01:14:25,844
+Find the smallest and largest theta values that bound R.
+
+553
+01:14:26,583 --> 01:14:28,923
+These are theta limits of integration.
+
+554
+01:14:29,764 --> 01:14:36,443
+So the polar iterated integral is double integral over R.
+
+555
+01:14:36,884 --> 01:14:39,003
+F R theta, D theta.
+
+556
+01:14:39,963 --> 01:14:45,604
+It is just an example from pi over 4 to pi over 3.
+
+557
+01:14:45,604 --> 01:14:51,384
+As you can see here from square root 2 cosic and theta.
+
+558
+01:14:51,384 --> 01:14:51,783
+Okay.
+
+559
+01:14:51,783 --> 01:15:08,783
+So the polar iterated integral is double integral.
+
+560
+01:14:52,564 --> 01:14:58,324
+R is 2 F R theta R D R theta.
+
+561
+01:14:58,324 --> 01:14:59,324
+Ok.
+
+562
+01:14:59,324 --> 01:15:05,124
+So this is the theoretical part of our lesson.
+
+563
+01:15:05,124 --> 01:15:07,963
+Thank you.
+
+564
+01:15:07,963 --> 01:15:12,444
+[kişisel bilgi]
+
+565
+01:15:12,444 --> 01:15:17,324
+[kişisel bilgi]
+
+566
+01:15:17,324 --> 01:15:26,224
+So, okay.
+
+567
+01:15:26,224 --> 01:15:33,824
+So we have a, yes, let me check the, just a second please.
+
+568
+01:15:33,824 --> 01:15:34,824
+Yes.
+
+569
+01:15:34,824 --> 01:15:37,884
+Let me check this shape.
+
+570
+01:15:37,884 --> 01:15:44,824
+We can see the R are in the Cartesian coordinate system.
+
+571
+01:15:44,824 --> 01:15:45,824
+Ok.
+
+572
+01:15:45,824 --> 01:15:51,724
+So we like to find the area of R. I'm just giving an example.
+
+573
+01:15:51,724 --> 01:15:52,724
+Ok.
+
+574
+01:15:52,724 --> 01:16:04,724
+So the area of R, it is proper if I take the outside integral as dx.
+
+575
+01:16:04,724 --> 01:16:05,724
+Ok.
+
+576
+01:16:05,724 --> 01:16:21,724
+So the smallest value from 0 to the square root 2 and from it enters y is square root 2 and
+
+577
+01:16:21,724 --> 01:16:35,724
+leaves y is square root 4 minus x square 4 minus x square dy dx.
+
+578
+01:16:35,724 --> 01:16:36,724
+Ok.
+
+579
+01:16:36,724 --> 01:16:39,724
+So it is a simple integral.
+
+580
+01:16:39,724 --> 01:16:44,003
+Let me know dy is y.
+
+581
+01:16:44,003 --> 01:16:49,184
+So it's equal to 0 to square root 2.
+
+582
+01:16:49,184 --> 01:16:54,724
+I am now, I am evaluating this integral in Cartesian coordinate system.
+
+583
+01:16:54,724 --> 01:16:55,724
+Ok.
+
+584
+01:16:55,724 --> 01:17:02,724
+So the integral is y square root 2 and square root 2.
+
+585
+01:17:02,724 --> 01:17:17,724
+So if I substitute square root 4 minus x square and square root 2, I have, just a second please.
+
+586
+01:17:17,724 --> 01:17:18,724
+Ok.
+
+587
+01:17:18,724 --> 01:17:23,724
+So let me know.
+
+588
+01:17:23,724 --> 01:17:24,724
+Let me know.
+
+589
+01:17:24,724 --> 01:17:25,724
+So let me know.
+
+590
+01:17:25,724 --> 01:17:44,724
+Let me know.
+
+591
+01:17:28,372 --> 01:17:45,372
+Um, I have from 0 to square root 2, square root 4 minus x squared minus square root 2 dx.
+
+592
+01:17:45,372 --> 01:17:56,372
+Yes, this is part is the second part, but the first part I need to use the transformation
+
+593
+01:17:56,372 --> 01:18:10,372
+formula like x is 2 sin t. So I need to take the integral. The integral has axis also the inverse
+
+594
+01:18:10,372 --> 01:18:24,372
+sine function. So, okay, so I don't want to use this, this kind of integral. Okay, now I will erase it all.
+
+595
+01:18:24,372 --> 01:18:46,372
+Yes, I like to use this formula in polar coordinate system. Okay, so I need to evaluate this, this angle.
+
+596
+01:18:46,372 --> 01:18:58,372
+This angle is x is square root 2, y is square root 2. So theta is pi over 4. So we have this formula.
+
+597
+01:18:58,372 --> 01:19:24,372
+So area r is integral. I will take r d r d theta. Okay, theta is the smallest one pi over 4. And the largest one is pi over 2. Okay, so let me find the r.
+
+598
+01:19:24,372 --> 01:19:32,372
+What is the limit of r? What is the limit of r? The first one, I will change the color. It enters here.
+
+599
+01:19:32,372 --> 01:19:50,372
+Here, the green one. Y is square root 2. And we know that y is r sin theta is square root 2. So this means r is square root over sin theta.
+
+600
+01:19:50,372 --> 01:20:12,372
+So r is square root over sin theta. So r is square root over sin theta. And the upper limit, let me change the color. Yes. And leaves this here. We know that this is a circle.
+
+601
+01:20:12,372 --> 01:20:38,372
+So the integral x squared plus y squared is 4 means r squared is 4 is 4 is r is 2. So the upper limit is 2. Okay. We easily find that. Okay. So let me let me evaluate the integral.
+
+602
+01:20:38,372 --> 01:20:42,372
+So let me evaluate the integral. Okay. So let me evaluate the integral. Okay. So let me evaluate the integral.
+
+603
+01:20:42,372 --> 01:20:52,372
+So let me evaluate the integral. Okay. So let me evaluate the integral.
+
+604
+01:20:52,372 --> 01:20:54,372
+So let me evaluate the integral. Okay. So let me evaluate the integral. Okay. So let me evaluate the integral.
+
+605
+01:20:46,676 --> 01:20:50,676
+İntegral, it's a simple integral.
+
+606
+01:20:54,739 --> 01:21:11,859
+rdr from pi over 4 to pi over 2 r squared over 2 squared cosecant theta to 2 d theta.
+
+607
+01:21:11,859 --> 01:21:25,859
+So if I substitute 2 and square 2 cosecant theta, I will take one half in front of the integral.
+
+608
+01:21:27,699 --> 01:21:37,380
+This is the first one is 4, the second one is 2 cosecant square theta.
+
+609
+01:21:37,380 --> 01:21:44,260
+Yes, this is equal to one half.
+
+610
+01:21:44,739 --> 01:21:48,579
+The first integral is 4 theta.
+
+611
+01:21:48,579 --> 01:21:56,420
+The second, which functions derivative is cosecant square?
+
+612
+01:21:56,659 --> 01:22:00,979
+Can you write to me, please, as far as you remember?
+
+613
+01:22:00,979 --> 01:22:12,979
+Which functions derivative is cosecant square?
+
+614
+01:22:25,524 --> 01:22:35,844
+So, I'm sure you remember that, which function's derivative is Kosek'in square.
+
+615
+01:22:44,020 --> 01:22:45,520
+Is it correct, [öğrenci]?
+
+616
+01:22:53,460 --> 01:23:01,920
+But thank you for giving the answer because I know that
+
+617
+01:23:05,524 --> 01:23:31,304
+Some of my students know the answer. It's no matter. Thank you for giving the answer. But my students doesn't want to write. So maybe you have, I'm sure you definitely heard that. The universities will open 22 of September.
+
+618
+01:23:41,043 --> 01:24:09,043
+2021. Okay. So we can meet in the classrooms with you. So actually you are very quiet in online lessons, but please don't be so quiet. So the, okay. Thank you, [öğrenci] for giving us answer again and again.
+
+619
+01:24:09,043 --> 01:24:37,043
+So I need to erase this part. So let me, let me write it. So we have, for example, cotangent function, cotangent, the derivative of cotangent function minus one plus cotangent squared or minus one plus cotangent squared.
+
+620
+01:24:37,043 --> 01:25:07,043
+or minus cosecant squared. Okay. So this means the derivative, the derivative of cotangent function is cotangent. We have one half.
+
+621
+01:25:07,043 --> 01:25:17,363
+It will be minus minus will be plus cotangent theta from zero to pi over two.
+
+622
+01:25:17,363 --> 01:25:24,804
+Okay. So let me erase this part again.
+
+623
+01:25:24,804 --> 01:25:50,804
+Okay. So let me erase this part.
+
+624
+01:25:42,739 --> 01:25:47,019
+So, area R is 1 half.
+
+625
+01:25:47,019 --> 01:26:00,819
+The first one is 4 theta plus the second one is 2 cotangent theta from 0 to pi over 2.
+
+626
+01:26:00,819 --> 01:26:12,139
+Yes, this is the 1 half 4 times pi over 2 to cotangent pi over 2.
+
+627
+01:26:12,739 --> 01:26:25,460
+The second one is theta is 0 cotangent 0 is cosine 0 over sine 0.
+
+628
+01:26:27,960 --> 01:26:32,920
+This goes to, let me check the answer.
+
+629
+01:26:33,699 --> 01:26:36,119
+Maybe there is a typo here.
+
+630
+01:26:36,119 --> 01:26:45,119
+S2 cosecan theta from SC.
+
+631
+01:26:45,119 --> 01:26:46,119
+So, let me check the answer.
+
+632
+01:26:46,119 --> 01:27:06,119
+Let me check the answer.
+
+633
+01:26:50,068 --> 01:26:59,248
+Evet, all are correct, from 0 to 1. Evet, this one. Evet, this is correct.
+
+634
+01:27:05,619 --> 01:27:07,840
+This is the cotangent function.
+
+635
+01:27:09,399 --> 01:27:12,119
+So, cosecant square.
+
+636
+01:27:13,199 --> 01:27:19,239
+The derivative of cotangent function is 1 plus cotangent square.
+
+637
+01:27:19,420 --> 01:27:24,939
+This is minus cosecant square cotangent function.
+
+638
+01:27:25,720 --> 01:27:29,420
+From, oh, this is not correct.
+
+639
+01:27:30,220 --> 01:27:33,140
+From, the limits are not correct.
+
+640
+01:27:33,140 --> 01:27:40,300
+What was our limit from pi over 4 to pi over 2?
+
+641
+01:27:40,720 --> 01:27:41,079
+Okay.
+
+642
+01:27:43,000 --> 01:27:45,140
+This, this is wrong.
+
+643
+01:27:45,439 --> 01:27:47,239
+This one is wrong.
+
+644
+01:27:49,420 --> 01:27:52,739
+Let me fix it.
+
+645
+01:27:53,599 --> 01:27:53,880
+Yes.
+
+646
+01:27:55,279 --> 01:28:01,279
+From pi over 4 to,
+
+647
+01:28:01,279 --> 01:28:03,619
+Yes.
+
+648
+01:28:05,359 --> 01:28:05,920
+Okay.
+
+649
+01:28:08,640 --> 01:28:09,199
+Yes.
+
+650
+01:28:09,699 --> 01:28:15,979
+4 times pi over 2 plus 2 cotangent pi over 2 minus.
+
+651
+01:28:18,119 --> 01:28:18,640
+Minus.
+
+652
+01:28:18,640 --> 01:28:21,199
+I need to erase this here.
+
+653
+01:28:21,199 --> 01:28:21,539
+Here.
+
+654
+01:28:34,163 --> 01:28:45,623
+4 times pi over 4 plus 2 cotangent pi over 4.
+
+655
+01:28:46,943 --> 01:28:47,884
+Yes.
+
+656
+01:28:49,103 --> 01:28:49,603
+Okay.
+
+657
+01:28:50,483 --> 01:28:55,023
+So you can evaluate this limit.
+
+658
+01:28:55,724 --> 01:28:59,703
+But maybe I made a mistake, but I couldn't find it.
+
+659
+01:28:59,703 --> 01:29:02,703
+Let me check the next week.
+
+660
+01:29:02,923 --> 01:29:03,184
+Okay.
+
+661
+01:29:04,163 --> 01:29:05,643
+Do you have any question?
+
+662
+01:29:09,524 --> 01:29:11,524
+I don't have any question.
+
+663
+01:29:14,524 --> 01:29:16,524
+Yes, this is the...
+
+664
+01:29:18,524 --> 01:29:25,524
+Find the limits of integration for integrating R theta over R
+
+665
+01:29:25,524 --> 01:29:28,524
+that lies inside of the cardioid.
+
+666
+01:29:29,524 --> 01:29:33,524
+R is 1 plus cosine theta and outside the circle.
+
+667
+01:29:33,524 --> 01:29:41,524
+We know this is cardioid and this is circle.
+
+668
+01:29:42,524 --> 01:29:45,524
+We can draw the graph very easy.
+
+669
+01:29:45,524 --> 01:29:46,524
+OK.
+
+670
+01:29:47,524 --> 01:29:57,524
+So R1 is 1 is the circle and R this one is the cardioid.
+
+671
+01:29:57,524 --> 01:30:03,524
+OK. So actually we can use the symmetry properties.
+
+672
+01:30:04,524 --> 01:30:06,524
+So we can write the area.
+
+673
+01:30:07,524 --> 01:30:09,524
+Area is...
+
+674
+01:30:10,524 --> 01:30:12,524
+Let me say area is 2 times.
+
+675
+01:30:12,524 --> 01:30:18,524
+Now we can take from here from 0 to pi over 2.
+
+676
+01:30:19,524 --> 01:30:21,524
+Pi over 2.
+
+677
+01:30:22,524 --> 01:30:23,524
+And...
+
+678
+01:30:24,524 --> 01:30:26,524
+Integral.
+
+679
+01:30:27,524 --> 01:30:32,524
+The small one is R is 1.
+
+680
+01:30:32,524 --> 01:30:33,524
+Yes.
+
+681
+01:30:33,524 --> 01:30:42,524
+The bigger one is R is 1 plus cosine theta.
+
+682
+01:30:43,524 --> 01:30:45,524
+The area is R d.
+
+683
+01:30:46,524 --> 01:30:47,524
+R d theta.
+
+684
+01:30:48,524 --> 01:30:49,524
+OK.
+
+685
+01:30:51,524 --> 01:30:52,524
+So...
+
+686
+01:30:53,524 --> 01:30:54,524
+We found it.
+
+687
+01:30:54,524 --> 01:30:55,524
+Yes, this one.
+
+688
+01:30:55,524 --> 01:30:56,524
+It is very simple.
+
+689
+01:30:56,524 --> 01:31:03,524
+We can evaluate this integral very easy.
+
+690
+01:31:04,524 --> 01:31:07,524
+Let me erase here.
+
+691
+01:31:08,524 --> 01:31:10,524
+The first...
+
+692
+01:31:11,524 --> 01:31:13,524
+The inside integral is...
+
+693
+01:31:14,524 --> 01:31:16,524
+R squared dr.
+
+694
+01:31:16,524 --> 01:31:17,524
+So...
+
+695
+01:31:17,524 --> 01:31:26,524
+Area is 2 times from 0 to pi over 2.
+
+696
+01:31:27,524 --> 01:31:29,524
+R squared over 2 from 1.
+
+697
+01:31:30,524 --> 01:31:33,524
+1 plus cosine theta d theta.
+
+698
+01:31:34,524 --> 01:31:35,524
+OK.
+
+699
+01:31:35,524 --> 01:31:36,524
+I can cancel it.
+
+700
+01:31:37,524 --> 01:31:38,524
+And...
+
+701
+01:31:38,524 --> 01:31:39,524
+So...
+
+702
+01:31:39,524 --> 01:31:50,524
+1 plus cosine theta squared minus 1 squared d theta.
+
+703
+01:31:51,524 --> 01:31:52,524
+Is equal to...
+
+704
+01:31:53,524 --> 01:31:56,524
+From 0 to pi over 2.
+
+705
+01:31:57,524 --> 01:32:04,524
+It's equal to 1 plus 2 cosine theta plus cosine squared means we know that we...
+
+706
+01:32:04,524 --> 01:32:11,524
+is 1 plus cosine 2 theta over 2 minus 1 d theta.
+
+707
+01:32:12,524 --> 01:32:13,524
+OK.
+
+708
+01:32:14,524 --> 01:32:15,524
+So...
+
+709
+01:32:16,524 --> 01:32:17,524
+We can cancel it.
+
+710
+01:32:18,524 --> 01:32:19,524
+So...
+
+711
+01:32:19,524 --> 01:32:20,524
+Let me erase this part.
+
+712
+01:32:22,524 --> 01:32:23,524
+So...
+
+713
+01:32:24,524 --> 01:32:25,524
+We have...
+
+714
+01:32:35,444 --> 01:32:36,004
+Evet.
+
+715
+01:32:37,764 --> 01:32:40,264
+We have the area.
+
+716
+01:32:42,084 --> 01:32:45,384
+Let's evaluate the integral.
+
+717
+01:32:46,384 --> 01:32:55,524
+2 sin theta plus 1 half theta plus 1 half.
+
+718
+01:32:55,524 --> 01:33:02,384
+The integral of cosine 2 theta, 1 half sin 2 theta.
+
+719
+01:33:02,384 --> 01:33:04,884
+Now, yes, that's all.
+
+720
+01:33:05,104 --> 01:33:06,444
+1, 2, 3 terms.
+
+721
+01:33:07,544 --> 01:33:12,664
+From 0 to pi over 2.
+
+722
+01:33:13,304 --> 01:33:17,284
+For 0, all the terms are 0.
+
+723
+01:33:17,624 --> 01:33:22,844
+We have only 4 pi over 2 terms.
+
+724
+01:33:26,836 --> 01:33:55,376
+Okay, so we have, yes, 2, sin pi over 2 is 1, 1 half, pi over 2, 1 fourth, sin 2 times pi over 2 means sin pi, sin pi is 0, so this means 2 plus pi over 4,
+
+725
+01:33:55,376 --> 01:34:08,695
+squared units. Yes, this is the area of the given region. Okay, so do you have any question?
+
+726
+01:34:11,195 --> 01:34:13,356
+Okay, you don't have any question.
+
+727
+01:34:13,356 --> 01:34:32,735
+Yes, so the formula we gave it also, the area of closed and bounded region R in the polar coordinate planes is A is double integral over R, R d, R d theta.
+
+728
+01:34:32,735 --> 01:34:54,735
+Yes, so I will stop it. So it's enough for today. Okay, so I hope you have a nice days for the rest of the weeks and also at the weekends.
+
+729
+01:34:54,735 --> 01:35:00,735
+So see you next week. Bye bye all of you. So do you have any questions?
+
+730
+01:35:00,735 --> 01:35:01,735
+So do you have any questions?
+
+731
+01:35:05,108 --> 01:35:07,368
+Okay, see you next week.
+
+732
+01:35:18,195 --> 01:35:19,876
+I am ending the meeting.

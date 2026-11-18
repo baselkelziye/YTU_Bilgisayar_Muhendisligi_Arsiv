@@ -1,0 +1,3763 @@
+1
+00:00:11,763 --> 00:00:25,003
+Her zaman, her zaman, her zaman, her zaman, her zaman, her zaman, her zaman, her zaman, her zaman, her zaman, her zaman, her zaman, her zaman, her zaman, her zaman, her zaman, her zaman, her zaman, her zaman, her zaman, her zaman, her zaman, her zaman, her zaman, her zaman, her zaman, her zaman, her zaman, her zaman, her zaman, her zaman, her zaman, her zaman, her zaman, her zaman, her zaman, her zaman, her zaman, her zaman, her zaman, her zaman, her zaman, her zaman, her zaman, her zaman, her zaman, her zaman, her zaman, her zaman, her zaman, her zaman, her zaman, her zaman, her zaman, her zaman, her zaman, her zaman, her zaman, her zaman, her zaman, her zaman, her zaman, her zaman, her zaman, her zaman, her zaman, her zaman, her zaman, her zaman, her zaman, her zaman, her zaman, her zaman, her zaman, her
+
+2
+00:02:11,891 --> 00:02:22,211
+Okay, um, I opened my voice but I couldn't start the video.
+
+3
+00:02:27,412 --> 00:02:29,012
+Just a second, please.
+
+4
+00:02:30,671 --> 00:02:40,852
+So, can you see the slide, tangent planes and differentials? Can you write to me, please?
+
+5
+00:02:42,111 --> 00:02:44,292
+Can you see the slide?
+
+6
+00:02:45,752 --> 00:02:49,212
+Okay. Thank you. Thank you for all.
+
+7
+00:02:49,212 --> 00:02:58,652
+As far as I remember, [öğrenci], you had a good point from exam.
+
+8
+00:03:04,627 --> 00:03:08,627
+Tamam, tamam.
+
+9
+00:03:08,627 --> 00:03:12,627
+I know you are studying, all of you.
+
+10
+00:03:12,627 --> 00:03:21,627
+But, please continue and study to this lesson, okay?
+
+11
+00:03:21,627 --> 00:03:24,627
+So, everyone will be successful.
+
+12
+00:03:28,051 --> 00:03:40,051
+Ama ben de, nasıl anlatayım?
+
+13
+00:03:42,051 --> 00:03:48,051
+Ben de, benim öğrenci'nin öğrenci'nin iyi bir kerelerine geliştirdiği için.
+
+14
+00:03:51,891 --> 00:04:10,132
+So, I am trying to turn on the video, but I don't know why. Do you have any idea why I don't start the video?
+
+15
+00:04:14,259 --> 00:04:20,620
+So, you don't see me. Do you? You don't see me.
+
+16
+00:04:24,884 --> 00:04:26,144
+Okay, thank you, [öğrenci].
+
+17
+00:04:39,379 --> 00:04:52,379
+I don't know why. I need to start it. It wasn't possible to open the camera. Sorry for that.
+
+18
+00:04:52,379 --> 00:05:14,379
+Okay, I am starting the new subject, the tangent planes. In semester one, in calculus one, you have learned the tangent lines to a smooth curl.
+
+19
+00:05:14,379 --> 00:05:25,339
+Actually, it's almost the same in multivariable. Actually, it's two variable function we will focus on.
+
+20
+00:05:25,339 --> 00:05:41,480
+In this section, we will see that analogously how the gradient defines the tangent plane to the level surface of a function omega at a point on the surface.
+
+21
+00:05:41,480 --> 00:05:56,120
+Okay, in the same as before, the tangent plane that provides for a linearization of f at the tangent tangent at the point and defines the total differential of a function.
+
+22
+00:05:56,120 --> 00:06:06,980
+Actually, today we have three subjects. They depend on each other.
+
+23
+00:06:06,980 --> 00:06:31,920
+Okay, the first one is the tangent planes and the normal lines. Yes, we did this subject before, but by using the gradient vector, again, we will give the same definition for tangent planes and also normal lines.
+
+24
+00:06:31,920 --> 00:06:46,159
+Okay, we have a figure here. So you can see the... I need to open my pen.
+
+25
+00:06:46,159 --> 00:07:06,300
+Yes, this is the surface. Like the surface is the blue one. Like you can think the surface of your hand. If I could open my camera.
+
+26
+00:07:06,300 --> 00:07:28,300
+Okay, like you can think the surface of your hand. And think a paper and like a four. And that is the tangent plane for a smooth curve.
+
+27
+00:07:28,300 --> 00:07:29,300
+So you can see the curve. So you can see the curve. So you can see the curve.
+
+28
+00:07:29,300 --> 00:07:30,300
+So you can see the curve. So you can see the curve. So you can see the curve. So you can see the curve.
+
+29
+00:07:30,300 --> 00:07:37,300
+Again, I will write here. For example, this is a curve. Maybe I need to change the color.
+
+30
+00:07:37,300 --> 00:07:53,300
+Let's choose the red one. This is a smooth curve on the surface. Okay. This is P0, a point on this surface and also on this curve.
+
+31
+00:07:53,300 --> 00:08:06,160
+And also another curve. And also another curve. And there are infinitely many curves on this surfaces. We know that.
+
+32
+00:08:06,159 --> 00:08:24,960
+And we also know that the vector V1 is actually the R over DT on the same direction of the moment. Okay.
+
+33
+00:08:24,960 --> 00:08:38,960
+Okay. And also we have the gradient, gradient vector is the normal 2 V1.
+
+34
+00:08:38,960 --> 00:08:52,960
+Okay. And also we have the gradient vector is the normal 2 V1.
+
+35
+00:08:38,355 --> 00:08:41,635
+Normal to v1.
+
+36
+00:08:41,995 --> 00:08:45,035
+Here is the gradient vector.
+
+37
+00:08:46,076 --> 00:08:46,495
+Okay.
+
+38
+00:08:46,735 --> 00:08:53,336
+There is only one normal vector to all these vectors.
+
+39
+00:08:53,515 --> 00:08:55,615
+For example, this one is v1.
+
+40
+00:08:55,716 --> 00:08:57,176
+This one is v2.
+
+41
+00:08:57,176 --> 00:09:00,615
+And also here v3, v4.
+
+42
+00:09:00,836 --> 00:09:04,475
+This is the green one.
+
+43
+00:09:04,475 --> 00:09:08,475
+This is the green one is the tangent plane.
+
+44
+00:09:09,196 --> 00:09:09,696
+Okay.
+
+45
+00:09:10,375 --> 00:09:16,035
+Which is normal to the gradient vector.
+
+46
+00:09:16,395 --> 00:09:16,635
+Okay.
+
+47
+00:09:17,816 --> 00:09:21,135
+Let's check figure again.
+
+48
+00:09:21,135 --> 00:09:32,975
+The gradient, gradient f, is orthogonal to the velocity vector v of every smooth curve in the surface through p0.
+
+49
+00:09:32,975 --> 00:09:43,755
+The velocity vectors at p0 therefore lie in a common plane, which we call the tangent plane at p0.
+
+50
+00:09:44,836 --> 00:09:45,676
+Okay.
+
+51
+00:09:45,855 --> 00:09:51,975
+The tangent plane at the point p0, x0, y0, z0 on the level surface.
+
+52
+00:09:51,975 --> 00:09:56,696
+We know we have learned the level surface.
+
+53
+00:09:57,696 --> 00:10:05,975
+If z is f, x, y, 0.
+
+54
+00:10:06,836 --> 00:10:07,275
+Sorry.
+
+55
+00:10:07,275 --> 00:10:12,895
+So, if z omega is f, x, y, z.
+
+56
+00:10:13,036 --> 00:10:22,096
+And if we write omega is c, f, x, y, z is c is the level surface.
+
+57
+00:10:22,655 --> 00:10:23,056
+Okay.
+
+58
+00:10:23,196 --> 00:10:24,755
+We have learned it before.
+
+59
+00:10:24,755 --> 00:10:41,235
+On the level surface, f, x, y, z, z is c of a differentiable function f is the plane through p0 normal to gradient f at the point p0.
+
+60
+00:10:41,235 --> 00:10:50,495
+The normal line of the surface at p0 is the line through p0 parallel to gradient f at p0.
+
+61
+00:10:50,495 --> 00:11:07,336
+So, the tangent plane to f, x, y, z is c at p0 is delta f over delta x at p0, x minus x0.
+
+62
+00:11:07,336 --> 00:11:09,336
+Yes.
+
+63
+00:11:09,336 --> 00:11:11,336
+This is the formula.
+
+64
+00:11:11,336 --> 00:11:12,336
+Yes.
+
+65
+00:11:12,336 --> 00:11:13,336
+This is the formula.
+
+66
+00:11:13,336 --> 00:11:14,336
+And yes.
+
+67
+00:11:14,336 --> 00:11:19,336
+f, y times y minus y, 0.
+
+68
+00:11:19,336 --> 00:11:23,336
+f, z times c minus c, 0.
+
+69
+00:11:23,336 --> 00:11:28,336
+And the normal line is, yes.
+
+70
+00:11:28,336 --> 00:11:29,336
+is, yes.
+
+71
+00:11:29,336 --> 00:11:37,336
+The normal line to f, x, f, x, y, z is c at p0.
+
+72
+00:11:37,336 --> 00:11:41,336
+Exactly the same formula we have.
+
+73
+00:11:41,336 --> 00:11:56,336
+We had x is x, 0 plus f, x times t, y is y, 0 plus f, y, f at p0 times t.
+
+74
+00:11:56,336 --> 00:12:11,336
+Or you can write in this standard form x minus x, 0 over f, x, y minus y, 0 over f, y, z minus
+
+75
+00:12:11,336 --> 00:12:13,336
+0 over f, z.
+
+76
+00:12:13,336 --> 00:12:14,336
+Okay.
+
+77
+00:12:14,336 --> 00:12:18,336
+Let's find it.
+
+78
+00:12:18,336 --> 00:12:25,336
+Find the tangent plane and the normal line of the level surface f, x, y, z is equal to
+
+79
+00:12:25,336 --> 00:12:34,336
+x squared plus y squared plus z minus 9 is 0 at the point.
+
+80
+00:12:34,336 --> 00:12:35,336
+So, let's find it.
+
+81
+00:12:35,336 --> 00:13:03,336
+Let's find it.
+
+82
+00:12:34,611 --> 00:12:37,831
+P0, 1, 2, 4.
+
+83
+00:12:38,151 --> 00:12:41,531
+Okay, let's solve it.
+
+84
+00:12:43,072 --> 00:12:47,072
+So, it's actually, it's a smooth curve.
+
+85
+00:12:47,072 --> 00:12:51,072
+It's a polynomial.
+
+86
+00:12:51,591 --> 00:12:59,231
+It's a polynomial which is defined on the whole space.
+
+87
+00:12:59,231 --> 00:13:13,371
+So, for all the curves on this surface, the F itself and also the partial derivatives will be smooth.
+
+88
+00:13:13,651 --> 00:13:18,031
+Okay, we know at start and we keep it in our mind.
+
+89
+00:13:18,031 --> 00:13:34,151
+So, F1, 2, 4 is 1 plus 4 plus 4 minus 9 is 0.
+
+90
+00:13:34,151 --> 00:13:40,831
+What is delta over 2x at P0 is 2.
+
+91
+00:13:41,411 --> 00:13:44,572
+F1, 2y.
+
+92
+00:13:44,911 --> 00:13:48,692
+P0 is actually 4.
+
+93
+00:13:49,271 --> 00:13:55,451
+Fz is 1 at P0 is 1.
+
+94
+00:13:55,451 --> 00:14:02,771
+So, we have the formula, the gradient F.
+
+95
+00:14:03,131 --> 00:14:05,672
+Let's erase here.
+
+96
+00:14:06,812 --> 00:14:08,591
+What was the formula?
+
+97
+00:14:10,271 --> 00:14:20,871
+At P0, Fx times E, Fx times C, Fc times K.
+
+98
+00:14:20,871 --> 00:14:35,291
+So, we have, we have the value 2i, 4j, and 1k.
+
+99
+00:14:35,291 --> 00:14:38,091
+Okay, we have the gradient vector.
+
+100
+00:14:38,432 --> 00:14:40,351
+And we also have a point.
+
+101
+00:14:40,851 --> 00:14:46,291
+Let's rewrite the tangent plane.
+
+102
+00:14:46,291 --> 00:14:50,751
+So, I need to erase this part.
+
+103
+00:14:54,740 --> 00:15:18,279
+So, the tangent plane is 2 times x minus 1, 4 times y minus 2, and 1 times z minus 4 is 0.
+
+104
+00:15:18,279 --> 00:15:33,139
+So, this means 2x, 4y plus z is minus 2, minus 8, minus 4 is 14.
+
+105
+00:15:33,639 --> 00:15:37,580
+Yes, this is the tangent plane, okay.
+
+106
+00:15:38,200 --> 00:15:39,860
+What is the normal line?
+
+107
+00:15:39,860 --> 00:15:47,560
+Normal line is, what is the normal line?
+
+108
+00:15:47,720 --> 00:15:50,200
+Let's rewrite the normal line.
+
+109
+00:15:52,680 --> 00:16:01,360
+x minus 1 over 2, y minus 2 over 4, z minus 4 over 1.
+
+110
+00:16:01,360 --> 00:16:08,840
+Let's say T, this is the normal line for the given surface, okay.
+
+111
+00:16:09,720 --> 00:16:11,039
+So, do you have any question?
+
+112
+00:16:14,100 --> 00:16:16,420
+Okay, you don't have any question.
+
+113
+00:16:17,799 --> 00:16:18,600
+Okay.
+
+114
+00:16:19,720 --> 00:16:25,680
+So, I tried, I tried to draw this shape.
+
+115
+00:16:25,680 --> 00:16:33,820
+Actually, this is the, yes, circular paraboloid.
+
+116
+00:16:34,639 --> 00:16:48,220
+And if you give the x is 0 and, just a second please, x is 0 and y is 0, z is 9.
+
+117
+00:16:48,220 --> 00:16:50,460
+Here is 9.
+
+118
+00:16:50,460 --> 00:16:57,220
+If you write, z is 0, x squared plus y squared is 9.
+
+119
+00:16:57,700 --> 00:17:02,500
+Here is 3 and this one is 3.
+
+120
+00:17:03,200 --> 00:17:05,900
+But our point, what was our point?
+
+121
+00:17:06,000 --> 00:17:08,680
+Was 1, 2, 4, I think.
+
+122
+00:17:09,220 --> 00:17:11,559
+Yeah, here is the point.
+
+123
+00:17:12,079 --> 00:17:15,779
+1, 2, and 4.
+
+124
+00:17:15,779 --> 00:17:18,200
+This is our point, P0.
+
+125
+00:17:19,059 --> 00:17:19,500
+Okay.
+
+126
+00:17:20,299 --> 00:17:24,200
+So, this is the tangent plane, the blue one.
+
+127
+00:17:25,539 --> 00:17:28,619
+But I painted the green one.
+
+128
+00:17:29,400 --> 00:17:34,980
+And the blue one is the tangent plane, which found the equation.
+
+129
+00:17:35,839 --> 00:17:39,460
+And also, we found the normal line.
+
+130
+00:17:40,360 --> 00:17:41,200
+This one.
+
+131
+00:17:42,319 --> 00:17:43,180
+The green one.
+
+132
+00:17:43,180 --> 00:17:45,360
+And I can see this part, okay.
+
+133
+00:17:45,779 --> 00:17:48,579
+Do you have any question?
+
+134
+00:17:52,140 --> 00:17:52,539
+Okay.
+
+135
+00:17:53,599 --> 00:17:55,000
+So, let's continue.
+
+136
+00:17:56,660 --> 00:18:02,279
+The tangent plane and the normal line to the level surface at P0.
+
+137
+00:18:02,279 --> 00:18:07,140
+Yes, this one.
+
+138
+00:18:08,940 --> 00:18:19,440
+So, plane tangent to a surface, z is fxy at x0, y0.
+
+139
+00:18:19,440 --> 00:18:23,440
+We can say z0 or fx0, y0.
+
+140
+00:18:24,440 --> 00:18:33,259
+The plane tangent to the surface, z is fxy of a differentiable function at the point P0.
+
+141
+00:18:33,259 --> 00:18:35,259
+So, x0, y0, y0, y0.
+
+142
+00:18:35,259 --> 00:18:43,259
+And fx0, y0 is this equation.
+
+143
+00:18:43,259 --> 00:18:51,140
+Because if we give the equation in this form.
+
+144
+00:18:51,140 --> 00:18:52,140
+And then, we can see.
+
+145
+00:18:52,140 --> 00:18:57,900
+So, let's go.
+
+146
+00:18:51,635 --> 00:19:02,276
+in this form because you know that our first formula was x f x y z was zero
+
+147
+00:19:02,276 --> 00:19:16,556
+in our first formula okay so if we think this one like let me say capital f capital f x y z here
+
+148
+00:19:16,556 --> 00:19:34,255
+f x y minus z okay so if we take the partial derivative capital f x is delta f over delta x
+
+149
+00:19:34,255 --> 00:19:44,695
+and capital f y is delta f over delta y and capital f z is minus one
+
+150
+00:19:44,695 --> 00:19:56,195
+so the first one the second one and the last one okay so they are exactly the same this is different
+
+151
+00:19:56,195 --> 00:20:01,975
+kind of statement of the tangent plane
+
+152
+00:20:01,975 --> 00:20:07,495
+so we have an example
+
+153
+00:20:07,495 --> 00:20:23,995
+find a plane tangent to the surface c is x cosine y minus y exponential x at the origin okay let's find
+
+154
+00:20:23,995 --> 00:20:35,495
+it again if we uh look at this function carefully uh this is polynomial uh trigonometric and exponential
+
+155
+00:20:35,495 --> 00:20:49,995
+functions are uh defined on the whole space that's why um uh the curves on these surfaces are smooth
+
+156
+00:20:49,995 --> 00:21:10,395
+uh curves okay so let's write the the x cosine y minus y exponential minus z is zero if you like um
+
+157
+00:21:10,395 --> 00:21:20,475
+um to write in this form um to write in this form it's okay for us so this means f x is cosine y
+
+158
+00:21:20,475 --> 00:21:34,556
+minus y exponential at the po at the origin this is one minus zero is one capital f y is minus x
+
+159
+00:21:34,556 --> 00:21:53,276
+uh sine y minus x uh sine y minus exponential at the origin is minus one and capital fc is minus one okay so
+
+160
+00:21:54,955 --> 00:22:01,675
+um i need to erase this part f y is minus one let's don't forget it
+
+161
+00:22:01,675 --> 00:22:18,715
+okay and we have okay and we have and if you have f x is one times x minus zero minus one times y minus zero
+
+162
+00:22:19,836 --> 00:22:25,355
+one is one times z minus zero
+
+163
+00:22:30,900 --> 00:22:48,380
+is 0. This means x minus y minus c is 0. This is the tangent plane. Okay. Yes, we found it. Do you have any question?
+
+164
+00:22:48,380 --> 00:23:03,940
+So, let me give me a minute that I would like to open the book that we follow. And I like to show you the
+
+165
+00:23:07,988 --> 00:23:11,988
+Tengit line şeklinde.
+
+166
+00:23:11,988 --> 00:23:17,988
+Bir sonra bir sonra.
+
+167
+00:23:22,291 --> 00:23:38,251
+So, can you see the book right now? Can you write to me please? Or I only see the book just myself? Or can you see that? You don't see the book, do you?
+
+168
+00:23:38,251 --> 00:23:56,692
+Okay, you don't see the book. Okay. I will share the book. Maybe I need to stop it and I will make a share screen.
+
+169
+00:24:01,971 --> 00:24:04,011
+Can you see right now the book?
+
+170
+00:24:11,316 --> 00:24:14,456
+Thank you, [öğrenci]. You are very kind of you.
+
+171
+00:24:20,019 --> 00:24:27,059
+Okay, I'd like you to see, oops, just a second please, to see.
+
+172
+00:24:56,276 --> 00:25:15,916
+Evet, tangenti, please. Evet, this page. And yes, the figure 1434 was our first shape, yes. And the second one.
+
+173
+00:25:21,907 --> 00:25:23,627
+Evet, we found it.
+
+174
+00:25:25,127 --> 00:25:31,487
+Actually, we don't have, yes, actually we don't have any surface for this example.
+
+175
+00:25:32,807 --> 00:25:33,207
+Okay.
+
+176
+00:25:34,367 --> 00:25:50,907
+And I will solve another question, but I need to stop it because I need to go back to my writing.
+
+177
+00:25:56,884 --> 00:26:01,663
+Yes, we solved this one.
+
+178
+00:26:02,743 --> 00:26:03,983
+Okay, yes.
+
+179
+00:26:05,163 --> 00:26:06,584
+Let's read it.
+
+180
+00:26:06,963 --> 00:26:12,203
+The surfaces of x, y, z, x2 plus y2 minus z.
+
+181
+00:26:12,644 --> 00:26:15,923
+This is a cylinder in our cube.
+
+182
+00:26:16,104 --> 00:26:16,983
+We know that.
+
+183
+00:26:17,884 --> 00:26:24,524
+And g, x, y, z is x plus z minus 4 is a plane.
+
+184
+00:26:24,524 --> 00:26:25,644
+We know that.
+
+185
+00:26:25,723 --> 00:26:26,584
+We have learned it.
+
+186
+00:26:26,884 --> 00:26:30,884
+Meet in an ellipse E.
+
+187
+00:26:31,683 --> 00:26:42,183
+Find parametric equations for the line tangent to E at the point P0111.
+
+188
+00:26:42,463 --> 00:26:42,884
+Okay.
+
+189
+00:26:43,743 --> 00:26:50,144
+So first, but first we need to check the shape of the surface.
+
+190
+00:26:50,463 --> 00:26:50,804
+Okay.
+
+191
+00:26:50,804 --> 00:26:53,923
+The first, yes.
+
+192
+00:26:54,483 --> 00:27:04,804
+The first one is the, I like you to see all the surface.
+
+193
+00:27:04,804 --> 00:27:14,604
+This is the cylinder x squared plus y squared is 2 in our cube.
+
+194
+00:27:14,884 --> 00:27:19,104
+So this means actually this is a circular cylinder.
+
+195
+00:27:19,804 --> 00:27:20,304
+Okay.
+
+196
+00:27:20,304 --> 00:27:26,304
+is going up and going down to positive and negative infinity.
+
+197
+00:27:27,104 --> 00:27:28,264
+There is no boundary.
+
+198
+00:27:29,304 --> 00:27:35,423
+And also we have this, the blue one is cylinder.
+
+199
+00:27:35,423 --> 00:27:41,703
+And also it was x plus z is a four.
+
+200
+00:27:42,104 --> 00:27:44,124
+I actually, I don't remember.
+
+201
+00:27:44,344 --> 00:27:45,223
+Was it four?
+
+202
+00:27:45,223 --> 00:28:13,723
+Okay.
+
+203
+00:27:48,884 --> 00:27:52,524
+Evet, x plus c is 4.
+
+204
+00:27:57,971 --> 00:27:58,491
+Yes.
+
+205
+00:27:59,692 --> 00:28:01,051
+And also...
+
+206
+00:28:01,051 --> 00:28:01,471
+Oops.
+
+207
+00:28:06,963 --> 00:28:18,323
+x plus z is this is a plain equation in r cubed also we know and if you write if you substitute x is
+
+208
+00:28:20,163 --> 00:28:34,644
+x is zero z is four here here z is four and if z is zero x is four here
+
+209
+00:28:34,644 --> 00:28:48,563
+this is the plane the red one is a plane of course it's going to uh uh to infinity from all the side of
+
+210
+00:28:48,563 --> 00:29:00,483
+the plane the from this side and this side this is just only one piece of the plane uh but uh there is
+
+211
+00:29:00,483 --> 00:29:14,323
+an ellipse the blue one you can see here okay the intersection curve is an ellipse okay so because
+
+212
+00:29:14,884 --> 00:29:25,763
+um it is not the uh horizontal there is no horizontal like plane this one okay
+
+213
+00:29:25,763 --> 00:29:38,403
+if there was a horizontal plane like this one like for example z is five or z is four like that it would be
+
+214
+00:29:41,203 --> 00:29:55,443
+this circle okay but it's not horizontal there's a slope here so the curl is ellipse the ellipse e okay
+
+215
+00:29:55,443 --> 00:30:09,683
+let's keep the information in our mind okay so i'll erase it all and also we have a cylinder here
+
+216
+00:30:10,644 --> 00:30:21,043
+and the point our point is uh actually i don't remember the point the point was one one one okay
+
+217
+00:30:28,915 --> 00:30:39,755
+Evet, bu point P0, P0 is 111.
+
+218
+00:30:39,755 --> 00:30:42,655
+And also in this point,
+
+219
+00:30:43,615 --> 00:30:45,195
+they are actually,
+
+220
+00:30:45,615 --> 00:30:48,596
+these are polynomial cylinder
+
+221
+00:30:48,596 --> 00:30:50,955
+and also plane.
+
+222
+00:30:51,515 --> 00:30:54,435
+They have, they are defined
+
+223
+00:30:54,435 --> 00:30:56,915
+in the whole space R cubed
+
+224
+00:30:56,915 --> 00:31:02,115
+and they also have the whole order of derivatives.
+
+225
+00:31:02,655 --> 00:31:02,816
+Okay.
+
+226
+00:31:03,635 --> 00:31:05,675
+So on this curve,
+
+227
+00:31:05,675 --> 00:31:13,316
+on the curve on these surfaces
+
+228
+00:31:13,316 --> 00:31:15,295
+are smooth curves.
+
+229
+00:31:15,596 --> 00:31:15,795
+Okay.
+
+230
+00:31:16,096 --> 00:31:19,295
+At first, we have learned all the information.
+
+231
+00:31:19,695 --> 00:31:21,895
+Just we need to solve the equation.
+
+232
+00:31:22,435 --> 00:31:22,836
+Okay.
+
+233
+00:31:23,395 --> 00:31:26,615
+So this is the background of our question.
+
+234
+00:31:26,915 --> 00:31:30,755
+So we have a cylinder here.
+
+235
+00:31:30,755 --> 00:31:34,675
+So this is the gradient vector,
+
+236
+00:31:34,895 --> 00:31:35,795
+gradient F.
+
+237
+00:31:36,336 --> 00:31:36,836
+Okay.
+
+238
+00:31:37,115 --> 00:31:41,375
+And also we have here a plane.
+
+239
+00:31:42,056 --> 00:31:45,915
+And also there is a gradient vector
+
+240
+00:31:45,915 --> 00:31:48,995
+for plane, gradient G.
+
+241
+00:31:48,995 --> 00:31:49,995
+Okay.
+
+242
+00:31:49,995 --> 00:31:56,715
+So we are looking for a line.
+
+243
+00:31:56,715 --> 00:31:58,415
+For a line,
+
+244
+00:31:58,755 --> 00:32:01,076
+we need a point.
+
+245
+00:32:01,795 --> 00:32:02,576
+Okay.
+
+246
+00:32:03,135 --> 00:32:05,556
+And a direction vector.
+
+247
+00:32:07,615 --> 00:32:08,895
+Direction vector.
+
+248
+00:32:08,895 --> 00:32:09,375
+Okay.
+
+249
+00:32:09,375 --> 00:32:12,056
+So actually we have a point.
+
+250
+00:32:12,056 --> 00:32:15,615
+Only we need to have the direction vector.
+
+251
+00:32:15,855 --> 00:32:19,375
+But how can I find the direction vector?
+
+252
+00:32:19,375 --> 00:32:26,576
+If this gradient F is orthogonal,
+
+253
+00:32:27,576 --> 00:32:29,995
+perpendicular to the cylinder.
+
+254
+00:32:29,995 --> 00:32:30,675
+Okay.
+
+255
+00:32:30,675 --> 00:32:40,316
+And also the gradient G is perpendicular to the plane.
+
+256
+00:32:40,875 --> 00:32:40,955
+Okay.
+
+257
+00:32:40,955 --> 00:32:47,615
+So if I find these two vector cross product,
+
+258
+00:32:49,255 --> 00:32:53,115
+F gradient F cross product,
+
+259
+00:32:54,295 --> 00:32:58,495
+gradient F cross gradient G.
+
+260
+00:32:58,495 --> 00:33:11,296
+So this means here is the red vector.
+
+261
+00:33:11,296 --> 00:33:19,036
+Gradient F cross gradient G will be our direction vector.
+
+262
+00:33:19,036 --> 00:33:19,655
+Okay.
+
+263
+00:33:19,655 --> 00:33:22,635
+So there is a simple operation here.
+
+264
+00:33:22,775 --> 00:33:25,536
+I will find gradient F gradient G
+
+265
+00:33:25,536 --> 00:33:27,855
+and I will make the cross product.
+
+266
+00:33:28,515 --> 00:33:33,615
+Then I will write the equation of the line.
+
+267
+00:33:33,955 --> 00:33:34,155
+Okay.
+
+268
+00:33:34,495 --> 00:33:36,135
+So do you have any question?
+
+269
+00:33:39,763 --> 00:33:49,083
+Okay, so the surface, yes, here. So let's find the gradient if
+
+270
+00:33:52,083 --> 00:34:02,163
+2xi to yj 0k at the
+
+271
+00:34:04,083 --> 00:34:07,363
+1 to 4
+
+272
+00:34:09,764 --> 00:34:15,043
+And this is the same for G and gradient
+
+273
+00:34:17,603 --> 00:34:22,723
+Yes, 1, 1, 3, sorry. 1, 1,
+
+274
+00:34:25,683 --> 00:34:26,003
+3.
+
+275
+00:34:28,083 --> 00:34:28,403
+Okay.
+
+276
+00:34:30,324 --> 00:34:36,483
+So here gradient F, gradient G, and the cross product,
+
+277
+00:34:36,483 --> 00:34:39,683
+And the equation of the line,
+
+278
+00:34:41,603 --> 00:34:42,963
+Yes, is
+
+279
+00:34:45,603 --> 00:35:00,324
+x is 1 plus 2t, y is 1 minus 2t, z is 3 minus 2t. Do you have any question?
+
+280
+00:35:00,755 --> 00:35:01,755
+Ok.
+
+281
+00:35:01,755 --> 00:35:13,455
+So, and we have a new subject here, how to linearize functions of two variables.
+
+282
+00:35:13,455 --> 00:35:24,056
+So we have learned from semester one, actually we sometimes have complicated functions like
+
+283
+00:35:24,056 --> 00:35:31,295
+exponential or square root functions or cube root functions or some logarithms or some
+
+284
+00:35:31,295 --> 00:35:33,655
+extra, etc.
+
+285
+00:35:33,655 --> 00:35:47,695
+So in this case, if we can, of course, if it's possible, if we find, if we make the linearization
+
+286
+00:35:47,695 --> 00:35:56,935
+of the given function, making linear the function is more simplify our problem.
+
+287
+00:35:56,935 --> 00:35:58,016
+Ok.
+
+288
+00:35:58,016 --> 00:36:06,235
+So we will do exactly the same procedures for a multi variable actually for two variable
+
+289
+00:36:06,235 --> 00:36:07,235
+functions.
+
+290
+00:36:07,235 --> 00:36:09,056
+Ok.
+
+291
+00:36:09,056 --> 00:36:17,275
+So functions of two variables can be complicated and we sometimes need to approximate them with
+
+292
+00:36:17,275 --> 00:36:25,315
+simpler ones that gives the accuracy required for specific applications without being so
+
+293
+00:36:25,315 --> 00:36:27,596
+difficult to work with.
+
+294
+00:36:27,596 --> 00:36:35,415
+We do this in a way that is similar to the way we found linear replacements for the functions
+
+295
+00:36:35,415 --> 00:36:37,036
+of single variable.
+
+296
+00:36:37,036 --> 00:36:48,975
+Actually, it's a similar procedures to single variable functions, but it's not our subject,
+
+297
+00:36:48,975 --> 00:36:52,036
+but I like to mention just a little bit.
+
+298
+00:36:52,036 --> 00:37:02,235
+We can sometimes, I told you, it is difficult to find the values of the functions.
+
+299
+00:37:02,235 --> 00:37:04,695
+So we make linearization.
+
+300
+00:37:04,695 --> 00:37:05,695
+It is just a way.
+
+301
+00:37:05,695 --> 00:37:08,315
+We have different kind.
+
+302
+00:37:08,315 --> 00:37:10,915
+It's not only one way.
+
+303
+00:37:10,915 --> 00:37:13,115
+I need to tell you.
+
+304
+00:37:13,115 --> 00:37:19,556
+We have different methods to find the approximate value of the functions.
+
+305
+00:37:19,556 --> 00:37:20,556
+Okay.
+
+306
+00:37:20,556 --> 00:37:33,016
+One of them is linearization, but also we have an error for the functions value.
+
+307
+00:37:33,016 --> 00:37:35,016
+Okay.
+
+308
+00:37:35,016 --> 00:37:49,076
+So we, so we need to make our error as possible as small.
+
+309
+00:37:49,076 --> 00:37:53,835
+For making an error as small as possible.
+
+310
+00:37:53,835 --> 00:37:55,315
+Okay.
+
+311
+00:37:55,315 --> 00:38:00,835
+So for example, let's make, this is a surface.
+
+312
+00:38:00,835 --> 00:38:02,875
+Okay.
+
+313
+00:38:02,875 --> 00:38:08,615
+This is the point for example, but there is a function here.
+
+314
+00:38:08,615 --> 00:38:14,475
+It is difficult to find the value of the given function.
+
+315
+00:38:14,475 --> 00:38:19,235
+So we will make a linearization.
+
+316
+00:38:19,235 --> 00:38:20,795
+Okay.
+
+317
+00:38:20,795 --> 00:38:23,915
+This is the tangent line.
+
+318
+00:38:23,915 --> 00:38:24,415
+Okay.
+
+319
+00:38:24,415 --> 00:38:32,915
+We will use the value of tangent line and we will make an error and I will change the color
+
+320
+00:38:32,915 --> 00:38:34,435
+again.
+
+321
+00:38:34,435 --> 00:38:41,935
+I need to take the value of nearby the center point.
+
+322
+00:38:41,935 --> 00:38:53,435
+It's very important to very close, very close value to very cool.
+
+323
+00:38:53,435 --> 00:39:00,435
+You need to take very close value.
+
+324
+00:38:56,735 --> 00:39:18,335
+At the center point, because if you far away, if you far away from the center point, from the center point, you will find, you will find a value which has very big error.
+
+325
+00:39:18,335 --> 00:39:39,635
+Okay. And also, maybe in your third class, maybe in your fourth class, you will take the numerical analysis. And there are lots of ways to find the estimate value of the given functions also.
+
+326
+00:39:39,635 --> 00:39:48,335
+Okay. This is only just a way to find the approximate value of the given function.
+
+327
+00:39:48,335 --> 00:40:16,056
+So, linearization of a function fxy at the point x0, y0, f is differentiable, is the function l, l comes from linearization, lxy is fx0, y0 plus
+
+328
+00:40:16,056 --> 00:40:40,955
+fx0, y0 plus fx, x0, y0, there is a typo here, x0, y0 times x minus x0 plus fy, x0, y0 times y minus y0.
+
+329
+00:40:40,955 --> 00:41:03,235
+Yes. You will use this formula for linearization of the function. The approximation fxy is lxy is the standard linear approximation at x0, y0.
+
+330
+00:41:03,235 --> 00:41:19,355
+Okay. From equations 3, we have equations 3, where is the equations 3? Actually, we have equations 3 here.
+
+331
+00:41:19,355 --> 00:41:33,115
+Yes. Equation 3 is this one for the tangent plane of the surfaces. Okay. Don't forget it, please.
+
+332
+00:41:35,255 --> 00:41:36,255
+So.
+
+333
+00:41:49,427 --> 00:41:50,067
+Evet.
+
+334
+00:41:51,387 --> 00:42:04,867
+From equation 3, we find that the plane z is Lxy is the tangent to the surface z fxy at the point x0, y0.
+
+335
+00:42:04,867 --> 00:42:13,827
+Thus, the linearization of a function of two variables is a tangent plane approximation in the same way.
+
+336
+00:42:13,827 --> 00:42:21,067
+That is the linearization of the function of a single variable is a tangent line approximation.
+
+337
+00:42:21,647 --> 00:42:21,827
+Okay.
+
+338
+00:42:22,347 --> 00:42:25,347
+This is exactly the same procedure.
+
+339
+00:42:25,847 --> 00:42:37,107
+Find a linearization of fxy x0 x squared, sorry, minus xy plus one half y squared plus 3.
+
+340
+00:42:37,667 --> 00:42:42,188
+Actually, this one is not complicated function.
+
+341
+00:42:42,188 --> 00:42:46,268
+But this is the first example.
+
+342
+00:42:47,268 --> 00:42:50,987
+So, let's solve it.
+
+343
+00:42:52,228 --> 00:43:00,688
+Because we will use the linearization more complicated functions value.
+
+344
+00:43:00,688 --> 00:43:01,167
+Okay.
+
+345
+00:43:02,067 --> 00:43:07,728
+So, let's find the linearization.
+
+346
+00:43:07,728 --> 00:43:26,067
+F32 plus fx32 x minus 3 plus fy32 y minus 2.
+
+347
+00:43:26,067 --> 00:43:27,228
+Okay.
+
+348
+00:43:27,228 --> 00:43:29,007
+This is our formula.
+
+349
+00:43:29,007 --> 00:43:32,507
+What is f32?
+
+350
+00:43:33,647 --> 00:43:43,987
+9 minus 6 plus 2 plus 3 is 8.
+
+351
+00:43:43,987 --> 00:43:46,987
+10 minus 6 plus 1.
+
+352
+00:43:46,987 --> 00:43:48,987
+11 minus 6.
+
+353
+00:43:48,987 --> 00:43:53,987
+12 minus 6.
+
+354
+00:43:53,987 --> 00:43:55,987
+12 minus 7.
+
+355
+00:43:55,987 --> 00:43:57,987
+13 minus 7.
+
+356
+00:43:57,987 --> 00:44:02,987
+14 minus 7.
+
+357
+00:44:02,987 --> 00:44:03,987
+15 minus 7.
+
+358
+00:44:03,987 --> 00:44:11,987
+15 minus 8.
+
+359
+00:43:47,731 --> 00:44:13,532
+fx is 2x minus y, 3, 2 is 6 minus 2 is 4, 4 times x minus 3, f y is minus x plus y,
+
+360
+00:44:13,532 --> 00:44:19,771
+3, 2 is minus 1,
+
+361
+00:44:19,771 --> 00:44:31,012
+times y minus 2, yes, 4x minus y,
+
+362
+00:44:31,012 --> 00:44:39,211
+plus 2, this is 10 minus 2, yes,
+
+363
+00:44:39,211 --> 00:44:45,331
+this is the linearization of the given function, okay?
+
+364
+00:44:45,331 --> 00:44:47,211
+question?
+
+365
+00:44:51,315 --> 00:44:51,675
+Ok.
+
+366
+00:44:56,436 --> 00:44:57,556
+Evet, bu bir.
+
+367
+00:44:57,556 --> 00:44:59,556
+Bu, bir.
+
+368
+00:44:59,556 --> 00:45:27,556
+Bir.
+
+369
+00:57:51,731 --> 00:57:52,052
+Ok?
+
+370
+00:57:55,795 --> 00:57:59,115
+Şimdi, bu kamerayı ödü.
+
+371
+00:57:59,115 --> 00:58:02,395
+So, can you hear my voice clearly?
+
+372
+00:58:02,395 --> 00:58:05,395
+I will start the lesson.
+
+373
+00:58:05,395 --> 00:58:09,875
+Can you write to me, please?
+
+374
+00:58:09,875 --> 00:58:15,035
+Okay, thank you all of you.
+
+375
+00:58:15,035 --> 00:58:28,875
+So, differential is the other way to find the approximate value of multivariable functions.
+
+376
+00:58:28,875 --> 00:58:39,035
+Actually, we have learned differentials, also linearization in calculus one for single variable
+
+377
+00:58:39,035 --> 00:58:40,035
+function.
+
+378
+00:58:40,035 --> 00:58:44,115
+This is the generalized form for two variable functions.
+
+379
+00:58:44,115 --> 00:58:45,115
+Okay.
+
+380
+00:58:45,115 --> 00:58:48,115
+Let me say differentials.
+
+381
+00:58:48,115 --> 00:58:59,795
+Recall from calculus one that for a function of a single variable y is f of x, we define
+
+382
+00:58:59,795 --> 00:59:10,115
+change in x as x change from a to a plus delta x by, we know this, the rule for changing delta
+
+383
+00:59:10,115 --> 00:59:16,115
+f of a plus delta x minus f of a.
+
+384
+00:59:16,115 --> 00:59:27,315
+I think you remember this one, df is f prime a times delta x.
+
+385
+00:59:27,315 --> 00:59:35,596
+So, I have learned that I need to open my pen.
+
+386
+00:59:35,596 --> 00:59:37,375
+This is a curve.
+
+387
+00:59:37,375 --> 00:59:40,415
+This is the point a.
+
+388
+00:59:40,415 --> 00:59:45,415
+This is if we change delta x.
+
+389
+00:59:45,415 --> 00:59:49,415
+Here is delta x.
+
+390
+00:59:49,415 --> 00:59:54,375
+It's the delta y.
+
+391
+00:59:54,375 --> 00:59:56,675
+This is a.
+
+392
+00:59:56,675 --> 01:00:00,755
+This is f a.
+
+393
+01:00:00,755 --> 01:00:06,715
+and this is the point a plus delta x.
+
+394
+01:00:06,715 --> 01:00:12,315
+This is the point f a plus delta x.
+
+395
+01:00:12,315 --> 01:00:18,515
+There is a changing between from a to a plus delta x.
+
+396
+01:00:18,515 --> 01:00:30,235
+If there is x change as delta x, functions change delta y, or you can say delta f.
+
+397
+01:00:30,235 --> 01:00:35,275
+You can see from here f a plus delta x minus f a.
+
+398
+01:00:35,275 --> 01:00:39,435
+We know this one from the calculus one.
+
+399
+01:00:39,435 --> 01:00:56,235
+And if i, if i, this equality is divided by delta x and multiplied by dx, the first one
+
+400
+01:00:56,235 --> 01:01:04,995
+is the derivative of the function f at the point a.
+
+401
+01:01:04,995 --> 01:01:11,835
+Okay, so the left hand side is df.
+
+402
+01:01:11,835 --> 01:01:18,556
+The right hand side is f prime x times dx.
+
+403
+01:01:18,556 --> 01:01:23,875
+And df is f prime a times dx.
+
+404
+01:01:23,875 --> 01:01:27,315
+Okay, for single variable functions.
+
+405
+01:01:27,315 --> 01:01:28,556
+We have learned it.
+
+406
+01:01:28,556 --> 01:01:29,556
+Okay.
+
+407
+01:01:29,555 --> 01:01:37,675
+Now, we consider the differential of a function of two variables.
+
+408
+01:01:37,675 --> 01:01:50,395
+Suppose a differentiable function f x, y and its partial derivative x is at the point x0, y0.
+
+409
+01:01:50,395 --> 01:02:07,235
+And then we consider the differential of a function f.
+
+410
+01:01:51,539 --> 01:02:15,079
+And if we move to the nearby point x0, y0, plus delta x, plus delta y, what is the change in f, delta f? Actually, it's similar, f x0 plus delta x, y0 plus delta y, minus f x0, y0.
+
+411
+01:02:15,079 --> 01:02:22,320
+As a simple calculation from the definition of LX, just a second, please.
+
+412
+01:02:22,320 --> 01:02:24,320
+Just a second.
+
+413
+01:02:36,788 --> 01:02:57,208
+Sorry. So, a straightforward calculation from the definition of Lxy, using the notation x minus x zero is delta x, and y minus y zero is delta y, shows that the corresponding change in L.
+
+414
+01:02:57,208 --> 01:03:20,248
+Okay. What is delta L? L x zero plus delta x, y zero plus delta y, minus L x zero y zero. So, this means f x, x zero y zero times delta x plus f y, x zero y zero times delta y.
+
+415
+01:03:20,248 --> 01:03:36,788
+It comes from the linearization formula. It comes from the linearization formula. The left hand, the right hand side of the equation. Okay. Because we know the linearization formula for,
+
+416
+01:03:36,788 --> 01:03:43,788
+this is the value for the function, this is the value for the function.
+
+417
+01:03:43,788 --> 01:04:01,788
+What was the linearization formula? L x, y, f x, y, f x, y, f x, at the point, which point, I don't know, x minus x zero plus f y. Again, let me say p zero.
+
+418
+01:04:01,788 --> 01:04:03,788
+Let me say p zero.
+
+419
+01:04:06,867 --> 01:04:17,987
+y minus y zero. Okay. So, this is the differential for linearization. Okay.
+
+420
+01:04:17,987 --> 01:04:47,788
+Okay. This is the changing for the function l. Okay. So, this is x minus, if we say x minus x zero is here, y minus y zero is delta y, x minus x zero is delta x, we can write here delta x, delta y.
+
+421
+01:04:47,987 --> 01:05:08,427
+Okay. And if f of x goes to left hand side, we have only delta f over delta x times delta x plus delta f over delta y times delta y. Okay.
+
+422
+01:05:11,307 --> 01:05:15,788
+So, we use the linearization formula for differentials.
+
+423
+01:05:17,987 --> 01:05:34,067
+The differentials dx and dy are independent variables. So, they can be assigned any values. Often this one is takes dx is often take delta x.
+
+424
+01:05:34,067 --> 01:05:49,128
+Delta x is equals to x minus x zero. Okay. And also dy, we can take delta y. Delta y is equals to y minus y zero.
+
+425
+01:05:49,128 --> 01:06:00,807
+We then have the following definition of differential or we can say total differential of f. Okay. Let's read it.
+
+426
+01:06:00,807 --> 01:06:21,867
+If we move from x zero, y zero to the point.
+
+427
+01:06:12,467 --> 01:06:35,027
+Yes. x0, y0 to the point x0 plus dx, y0 plus dy, nearby. The resulting change df is fx, x0, y0 dx plus fy, x0, y0 dy.
+
+428
+01:06:35,027 --> 01:06:59,347
+The linearization of f is called the total differential of f. Okay? This is the formula for total differential that we will use it. We will use it. Okay. We have an example here.
+
+429
+01:07:03,795 --> 01:07:33,795
+İçinlikle bir kereme için bir kereme için bir kereme ve 5 kereme için bir kereme için bir kereme için bir kereme için bir kereme için bir kereme için bir kereme için bir kereme için bir kereme için bir kereme için bir kereme için bir kereme için bir kereme için bir kereme için bir kereme için bir kereme için bir kereme için bir kereme için bir kereme için bir kereme için bir kereme için bir kereme için bir kereme için bir kereme için bir kereme için bir kereme için bir kereme için bir kereme için bir kereme için bir kereme için bir kereme için bir kereme için bir kereme için bir kereme için bir kereme için bir kereme için bir kereme için bir kereme için bir kereme için bir kereme için bir kere
+
+430
+01:07:33,795 --> 01:08:03,795
+ve kereme için bir kereme için bir kereme için bir kereme için bir kereme için bir kereme için bir kereme için bir kereme için bir kereme için bir kereme için bir kereme için bir kereme için bir kereme için bir kereme için bir kereme için bir kereme için bir kereme için bir kereme için bir kereme için bir kereme için bir kereme için bir kereme için bir kereme için bir kereme için bir kereme için bir kereme için bir kereme için bir kereme için bir kereme için bir kereme için bir kereme için bir kereme için bir kereme için bir kereme için bir kereme için bir kereme için bir kereme için bir kereme için bir kereme için bir kereme için bir kereme için bir kereme için bir kereme için bir kereme için bir
+
+431
+01:08:03,795 --> 01:08:37,385
+bir kereme için bir kereme için bir kereme için bir kereme için bir kereme için bir kereme için bir kereme için bir kereme için bir kereme için bir kereme için bir kereme için bir kereme için bir kereme için bir kereme için bir kereme için bir kereme için bir kereme için bir kereme için bir kereme için bir kereme için bir kereme için bir kereme için bir kereme için bir kereme için bir kereme için bir kereme için bir kereme için bir kereme için bir kereme için bir kereme için bir kereme için bir kereme için bir kereme için bir kereme için bir kereme için bir kereme için bir kereme için bir kereme için bir kereme için bir kereme için bir kereme için bir kereme için bir kereme için bir kereme için bir
+
+432
+01:08:40,787 --> 01:08:44,007
+Okay, so V is here.
+
+433
+01:08:48,948 --> 01:09:07,427
+πr²h, vr2, πrh, vh, vr², dv,
+
+434
+01:09:07,427 --> 01:09:25,668
+the changing in volume is equal to delta v is equal to vr times dr plus vh times dh.
+
+435
+01:09:25,668 --> 01:09:49,828
+Okay, so vr is 2πrh dr, vh is πr²dh. Okay, so dv, let's write here dv is 2π,
+
+436
+01:09:49,828 --> 01:10:03,188
+what is r? r is 1, 5, 1 times 5 times, what is dr? Actually, I don't remember dr.
+
+437
+01:10:06,307 --> 01:10:10,948
+Yes, dr is
+
+438
+01:10:14,707 --> 01:10:38,387
+0.03 plus pi 1² times dh plus minus 1.0. So the first one, this is 10, 3 pi.
+
+439
+01:10:44,083 --> 01:10:45,083
+10.
+
+440
+01:10:46,083 --> 01:10:53,083
+The second one is minus pi over 10.
+
+441
+01:10:55,083 --> 01:10:56,083
+So,
+
+442
+01:10:58,083 --> 01:11:00,083
+first this is pi.
+
+443
+01:11:01,083 --> 01:11:07,083
+So this means 2 pi over 10 means
+
+444
+01:11:10,083 --> 01:11:11,083
+pi over 5.
+
+445
+01:11:11,083 --> 01:11:12,083
+Okay.
+
+446
+01:11:14,083 --> 01:11:15,083
+Inch,
+
+447
+01:11:16,083 --> 01:11:17,083
+inch cubed
+
+448
+01:11:20,083 --> 01:11:23,083
+is decreased the volume.
+
+449
+01:11:24,083 --> 01:11:25,083
+Okay.
+
+450
+01:11:26,083 --> 01:11:28,083
+So we found that.
+
+451
+01:11:29,083 --> 01:11:32,083
+Let's erase it and check the answer.
+
+452
+01:11:35,083 --> 01:11:36,083
+Yes.
+
+453
+01:11:37,083 --> 01:11:39,083
+This one, yes.
+
+454
+01:11:39,083 --> 01:11:44,083
+0.63 inch cubed.
+
+455
+01:11:45,083 --> 01:11:51,083
+The volume decreased.
+
+456
+01:11:52,083 --> 01:11:53,083
+Okay.
+
+457
+01:11:53,083 --> 01:11:55,083
+So do you have any question?
+
+458
+01:11:58,083 --> 01:11:59,083
+Okay.
+
+459
+01:11:59,083 --> 01:12:00,083
+You don't have any question.
+
+460
+01:12:01,083 --> 01:12:02,083
+Okay.
+
+461
+01:12:02,083 --> 01:12:03,083
+Let's continue.
+
+462
+01:12:03,083 --> 01:12:08,083
+Your company manufactures stainless steel,
+
+463
+01:12:09,083 --> 01:12:11,083
+red circular cylinder,
+
+464
+01:12:12,083 --> 01:12:13,083
+molasses.
+
+465
+01:12:14,083 --> 01:12:15,083
+Molasses.
+
+466
+01:12:16,083 --> 01:12:20,083
+It's kind of sweet.
+
+467
+01:12:20,083 --> 01:12:21,083
+sweet.
+
+468
+01:12:21,083 --> 01:12:25,083
+Actually, I checked from the dictionary.
+
+469
+01:12:26,083 --> 01:12:30,083
+It is written.
+
+470
+01:12:31,083 --> 01:12:34,083
+She care comes.
+
+471
+01:12:36,083 --> 01:12:37,083
+In Turkish.
+
+472
+01:12:38,083 --> 01:12:39,083
+Or.
+
+473
+01:12:40,083 --> 01:12:43,083
+I don't know because we have foreign students.
+
+474
+01:12:43,083 --> 01:12:48,083
+It's actually it's peck mass in Turkish.
+
+475
+01:12:49,083 --> 01:12:50,083
+Um,
+
+476
+01:12:51,083 --> 01:12:53,083
+Molasses is a kind of sweet,
+
+477
+01:12:54,083 --> 01:12:55,083
+uh, juice.
+
+478
+01:12:56,083 --> 01:12:58,083
+Uh, it's comes from,
+
+479
+01:12:59,083 --> 01:13:00,083
+uh, bars.
+
+480
+01:13:00,083 --> 01:13:01,083
+I don't know.
+
+481
+01:13:01,083 --> 01:13:02,083
+How can I explain?
+
+482
+01:13:02,083 --> 01:13:04,083
+You can check from dictionary.
+
+483
+01:13:05,083 --> 01:13:06,083
+Okay.
+
+484
+01:13:06,083 --> 01:13:07,083
+So,
+
+485
+01:13:08,083 --> 01:13:09,083
+silent,
+
+486
+01:13:10,083 --> 01:13:11,083
+uh,
+
+487
+01:13:11,083 --> 01:13:15,083
+cylindrical molasses storage tanks that are 25.
+
+488
+01:13:16,083 --> 01:13:17,083
+feet high.
+
+489
+01:13:17,083 --> 01:13:19,083
+With radius 5 feet.
+
+490
+01:13:20,083 --> 01:13:27,083
+How sensitive are tanks volume to small variations in high and radius.
+
+491
+01:13:28,083 --> 01:13:29,083
+Okay.
+
+492
+01:13:30,083 --> 01:13:33,083
+So we have again a cylinder.
+
+493
+01:13:34,083 --> 01:13:35,083
+And,
+
+494
+01:13:36,083 --> 01:13:37,083
+uh,
+
+495
+01:13:37,083 --> 01:13:38,083
+25 feet.
+
+496
+01:13:38,083 --> 01:13:39,083
+Let's.
+
+497
+01:13:41,083 --> 01:13:43,083
+Here is the cylinder.
+
+498
+01:13:46,083 --> 01:13:48,083
+Height is 25.
+
+499
+01:13:49,083 --> 01:13:53,083
+Feet volume is 5.
+
+500
+01:13:54,083 --> 01:13:55,083
+Feet.
+
+501
+01:13:56,083 --> 01:13:57,083
+Okay.
+
+502
+01:13:57,083 --> 01:13:59,083
+It's a molasses inside.
+
+503
+01:13:59,083 --> 01:14:00,083
+Okay.
+
+504
+01:14:02,083 --> 01:14:03,083
+So.
+
+505
+01:14:04,083 --> 01:14:05,083
+It's red is 5 feet.
+
+506
+01:14:05,083 --> 01:14:10,083
+How sensitive are tanks volume to small variation in high and radius.
+
+507
+01:14:10,083 --> 01:14:11,083
+Okay.
+
+508
+01:14:11,083 --> 01:14:14,083
+So we know the formula from.
+
+509
+01:14:16,083 --> 01:14:17,083
+The volume P.
+
+510
+01:14:20,083 --> 01:14:23,083
+R square H and we have.
+
+511
+01:14:24,083 --> 01:14:29,083
+V R to pi R H and V H.
+
+512
+01:14:30,083 --> 01:14:31,083
+Pi R squared.
+
+513
+01:14:31,083 --> 01:14:32,083
+Okay.
+
+514
+01:14:32,083 --> 01:14:33,083
+So.
+
+515
+01:14:33,083 --> 01:14:34,083
+D V.
+
+516
+01:14:34,083 --> 01:14:35,083
+Is.
+
+517
+01:14:36,083 --> 01:14:37,083
+Approximate value.
+
+518
+01:14:37,083 --> 01:14:38,083
+Delta V is.
+
+519
+01:14:38,083 --> 01:14:58,083
+D V.
+
+520
+01:14:43,572 --> 01:15:07,492
+vrdr plus vh dh. Okay, so d delta v is equal to, here is r is 5 feet, h is, so if we substitute r is 5, h is 25, we have
+
+521
+01:15:07,492 --> 01:15:14,891
+2 pi, 5, 25,
+
+522
+01:15:20,180 --> 01:15:49,400
+dr plus vh, pi, 5 squared, dh, ok, so I like to see the, I need to erase this part, so delta f, sorry, delta v, sorry, this is v,
+
+523
+01:15:50,180 --> 01:16:17,180
+delta v is equal to, so this part is 250 pi dr plus the second one is 25 pi dr, ok, so
+
+524
+01:16:17,180 --> 01:16:31,740
+uh the question is how sensitive are tanks volume to small variation in um height and radius so if we take uh
+
+525
+01:16:32,940 --> 01:16:43,900
+the radius for the radius if I take one unit change in radius okay
+
+526
+01:16:47,475 --> 01:17:11,115
+I can, I can make an interpretation about the volume, okay? If I take the r, one unit, positive one unit, if I decrease one unit for the radius, okay?
+
+527
+01:17:11,115 --> 01:17:20,595
+So, delta v, increase, decrease, sorry, 25 pi.
+
+528
+01:17:25,939 --> 01:17:29,460
+oran testi, ok?
+
+529
+01:17:30,259 --> 01:17:32,219
+I am repeating again.
+
+530
+01:17:32,960 --> 01:17:38,539
+For this radius, r is 5 and high is 25.
+
+531
+01:17:40,479 --> 01:17:48,319
+If I rise one unit for dr, ok?
+
+532
+01:17:48,319 --> 01:17:56,159
+So, delta v change to 50 pi rises, ok?
+
+533
+01:17:57,279 --> 01:18:01,539
+So, I need to erase this part.
+
+534
+01:18:04,039 --> 01:18:05,839
+This part.
+
+535
+01:18:18,420 --> 01:18:42,380
+If I change one unit, one unit for dh, one positive unit for dh, delta v rises 25 pi.
+
+536
+01:18:47,507 --> 01:19:10,487
+feet cube, okay? I am repeating again. If I rise one unit, one unit for dh, the volume will change up 25 pi, okay?
+
+537
+01:19:10,487 --> 01:19:30,947
+So, you can clearly see that one unit changing between dr and dh, the volume change 10 times.
+
+538
+01:19:42,195 --> 01:19:52,015
+If I change 1 unit dr, delta v change to 25 pi feet cube.
+
+539
+01:19:52,015 --> 01:20:07,376
+Okay, so the 10 times more decreases in the scales, the volume is changing.
+
+540
+01:20:07,376 --> 01:20:13,595
+Okay, for this radius and for this high.
+
+541
+01:20:13,595 --> 01:20:21,975
+Okay, now I will erase it all and let's check the solution.
+
+542
+01:20:21,975 --> 01:20:32,095
+With v, p, r, square, h, the total differential gives the approximation for change in volume
+
+543
+01:20:32,095 --> 01:20:42,416
+s. Yes, we know this formula dv, v, r, dr, v, h, d, h and we all have and dv is
+
+544
+01:20:44,815 --> 01:20:48,815
+250 pi dr plus 25 pi dh.
+
+545
+01:20:48,815 --> 01:21:04,256
+So, a 1 unit change in r, 1 unit change in r, okay, in r, will change the volume v about
+
+546
+01:21:04,256 --> 01:21:05,536
+250 pi units.
+
+547
+01:21:05,536 --> 01:21:07,536
+Yes, we found the same.
+
+548
+01:21:07,536 --> 01:21:19,055
+A 1 unit change in h will change the volume v about 25 pi units.
+
+549
+01:21:19,055 --> 01:21:22,496
+Okay, you can clearly see this result.
+
+550
+01:21:23,695 --> 01:21:36,095
+So, the tank's volume is 10 times more sensitive to small change in r than it's a too small change
+
+551
+01:21:36,095 --> 01:21:38,256
+of equal size in h.
+
+552
+01:21:38,975 --> 01:21:49,855
+Okay, as a quality control engineer, that it will be you, okay, concerned with being sure
+
+553
+01:21:50,576 --> 01:21:58,095
+the tanks have the correct volume and you will pay attention to the ready.
+
+554
+01:21:58,095 --> 01:22:12,975
+Okay, so in this scale, so this means our ready is 5 and high is 25.
+
+555
+01:22:12,975 --> 01:22:23,376
+So, we will give the pay attention as a control engineer to the ready of the tanks.
+
+556
+01:22:23,376 --> 01:22:51,376
+So, let's continue.
+
+557
+01:22:31,475 --> 01:22:59,975
+In contrast, if the value of R and H reversed, because we had R was 5 and H was 25, if we take R is 25 like white radius 25 and the high is
+
+558
+01:23:01,475 --> 01:23:19,595
+small, 5 feet, okay. Then if I evaluate the total differential again, we have all the formulas here, V, R, D, R, V, H, D, H.
+
+559
+01:23:19,595 --> 01:23:27,215
+We have now 250 pi Dr plus 625 pi Dr, okay.
+
+560
+01:23:28,576 --> 01:23:33,095
+So, please focus to this formula.
+
+561
+01:23:33,935 --> 01:23:38,295
+So, here you can see that in this situation.
+
+562
+01:23:38,295 --> 01:23:50,775
+Now, the volume is more sensitive for changing in H, okay.
+
+563
+01:23:50,775 --> 01:23:54,315
+You can see that in this situation.
+
+564
+01:23:54,315 --> 01:24:05,536
+If we make the radius is wider, wider than before and the high is smaller than before.
+
+565
+01:24:05,536 --> 01:24:08,175
+This is different kind of a different kind of a different kind of tank.
+
+566
+01:24:08,175 --> 01:24:18,015
+So, now the volume is more sensitive to changing in H.
+
+567
+01:24:18,015 --> 01:24:24,015
+Because one unit change in H.
+
+568
+01:24:24,015 --> 01:24:28,015
+One unit change in H.
+
+569
+01:24:28,015 --> 01:24:57,996
+is more sensitive to change in H.
+
+570
+01:24:50,707 --> 01:25:03,487
+The volume will change almost 250 pi feet cubed. Ok, so as we read the answer.
+
+571
+01:25:04,987 --> 01:25:12,967
+Now the volume is more sensitive to changes in h than to changes in r.
+
+572
+01:25:12,967 --> 01:25:15,687
+So there's a remark here.
+
+573
+01:25:16,167 --> 01:25:28,287
+The general rule is that functions are most sensitive to small changes in the variables that generate the largest partial.
+
+574
+01:25:29,207 --> 01:25:32,607
+Let's show it.
+
+575
+01:25:32,847 --> 01:25:35,647
+The largest partial derivatives.
+
+576
+01:25:36,067 --> 01:25:39,427
+Ok, so please be careful here.
+
+577
+01:25:41,167 --> 01:25:42,127
+Ok, any question?
+
+578
+01:25:45,779 --> 01:25:46,779
+Okay.
+
+579
+01:25:49,460 --> 01:25:50,539
+Let's find it.
+
+580
+01:25:51,139 --> 01:25:52,979
+Let's solve it with another question.
+
+581
+01:25:53,619 --> 01:26:01,380
+Find the linearization Lxyz of fxyz,
+
+582
+01:26:01,859 --> 01:26:09,059
+x²-xy plus 3sinz at the point 210.
+
+583
+01:26:09,420 --> 01:26:15,019
+So as you can see here, the function is three variables.
+
+584
+01:26:15,019 --> 01:26:23,899
+But we can see that here, this is a polynomial and also an trigonometric function.
+
+585
+01:26:24,179 --> 01:26:27,939
+All the functions are defined in R4,
+
+586
+01:26:28,340 --> 01:26:38,699
+that we have the whole partial derivatives and also is defined all the points of R4.
+
+587
+01:26:38,699 --> 01:26:39,699
+Okay.
+
+588
+01:26:40,500 --> 01:26:41,340
+So,
+
+589
+01:26:42,819 --> 01:26:43,819
+we have
+
+590
+01:26:45,420 --> 01:26:47,579
+the value.
+
+591
+01:26:50,300 --> 01:26:52,380
+Yes, the calculation FCF.
+
+592
+01:26:52,579 --> 01:26:54,819
+Oh yes, it's a simple one.
+
+593
+01:26:54,819 --> 01:27:01,699
+Let's erase just a second, please.
+
+594
+01:27:03,699 --> 01:27:07,340
+Maybe it's enough to place.
+
+595
+01:27:10,340 --> 01:27:11,059
+Okay.
+
+596
+01:27:11,059 --> 01:27:15,699
+So, let's keep in our mind all the informations.
+
+597
+01:27:16,420 --> 01:27:17,859
+Let's solve the questions.
+
+598
+01:27:18,819 --> 01:27:22,859
+fx is 2x minus y.
+
+599
+01:27:23,539 --> 01:27:28,300
+210 is 4 minus 1.
+
+600
+01:27:28,300 --> 01:27:44,179
+fx is 3 cos z.
+
+601
+01:27:44,179 --> 01:27:47,179
+210 is 3.
+
+602
+01:27:47,179 --> 01:27:49,179
+So,
+
+603
+01:27:49,179 --> 01:28:40,059
+fx is 3 cos z.
+
+604
+01:28:47,796 --> 01:29:04,896
+3x-2y-3z-2-6-0-4.
+
+605
+01:29:04,896 --> 01:29:12,996
+Yes, this is the linearization at the point 210, the given function.
+
+606
+01:29:13,796 --> 01:29:14,436
+Question?
+
+607
+01:29:21,971 --> 01:29:25,971
+Evet, bu soru yok.
+
+608
+01:29:25,971 --> 01:29:33,971
+Şimdi, bir soru yok.
+
+609
+01:29:33,971 --> 01:29:45,971
+Bir soru yok.
+
+610
+01:29:45,971 --> 01:29:49,971
+Yer...
+
+611
+01:30:07,764 --> 01:30:09,764
+Evet.
+
+612
+01:30:09,764 --> 01:30:14,764
+So, extreme values and the saddle points.
+
+613
+01:30:14,764 --> 01:30:22,764
+And again, we will, we have learned from calculus 1,
+
+614
+01:30:22,764 --> 01:30:30,764
+if a function, we can say a curve, if there is a smooth curve,
+
+615
+01:30:30,764 --> 01:30:36,764
+and like, let's open the pen, like.
+
+616
+01:30:37,764 --> 01:30:48,764
+This one, for example, here, for one variable function, let's take a finite interval.
+
+617
+01:30:48,764 --> 01:30:54,764
+This kind, yes, it is enough for us.
+
+618
+01:30:54,764 --> 01:31:00,764
+This kind of function, there is no empty place.
+
+619
+01:31:00,764 --> 01:31:09,764
+So, this is actually continuous function and defined on the whole AB closed interval.
+
+620
+01:31:09,764 --> 01:31:10,764
+OK.
+
+621
+01:31:10,764 --> 01:31:13,764
+This is actually, this is a cusp.
+
+622
+01:31:13,764 --> 01:31:22,764
+There is no derivative here, but we know that we have, we don't have derivative at that point.
+
+623
+01:31:22,764 --> 01:31:23,764
+We know that.
+
+624
+01:31:23,764 --> 01:31:31,764
+But we have maximum point and also a local maximal point in there.
+
+625
+01:31:31,764 --> 01:31:40,764
+For example, the end point here is important, A and B.
+
+626
+01:31:40,764 --> 01:31:46,764
+And this one is minimum point, maximum, minimum.
+
+627
+01:31:46,764 --> 01:31:53,764
+And also here we have maximum and we finish with minimum point.
+
+628
+01:31:53,764 --> 01:31:54,764
+OK.
+
+629
+01:31:54,764 --> 01:32:01,764
+So, we have learned this kind of things in calculus 1.
+
+630
+01:32:01,764 --> 01:32:02,764
+OK.
+
+631
+01:32:02,764 --> 01:32:07,764
+Let's go back to our lesson.
+
+632
+01:32:07,764 --> 01:32:15,764
+Continuous functions of two variables assume extreme values on a closed, bounded domain.
+
+633
+01:32:15,764 --> 01:32:16,764
+OK.
+
+634
+01:32:16,764 --> 01:32:27,764
+We have, we will mention about closed and bounded domain, same as in calculus 1, closed and bounded
+
+635
+01:32:27,764 --> 01:32:28,764
+in terms.
+
+636
+01:32:28,764 --> 01:32:29,764
+OK.
+
+637
+01:32:29,764 --> 01:32:34,764
+The derivative tests for local extreme values.
+
+638
+01:32:34,764 --> 01:32:35,764
+OK.
+
+639
+01:32:35,764 --> 01:32:46,764
+To find the local extreme values of a function of a single variable, we look for the points
+
+640
+01:32:46,764 --> 01:32:50,764
+where the graph has horizontal tangent line.
+
+641
+01:32:50,764 --> 01:33:09,764
+At such points, we then look for local maxima, local minima and also saddle points.
+
+642
+01:33:09,764 --> 01:33:10,764
+OK.
+
+643
+01:33:10,764 --> 01:33:18,764
+We don't know right now what is the saddle points, but we will learn it.
+
+644
+01:33:18,764 --> 01:33:27,764
+Let f , be defined on a region R containing the point a, b.
+
+645
+01:33:27,764 --> 01:33:33,764
+Then f , is local maximum value of f.
+
+646
+01:33:33,764 --> 01:33:43,764
+If f , if f , is greater, greater than or equal to f , for all domain
+
+647
+01:33:43,764 --> 01:33:49,764
+point x, y in the open disk centered at a, b.
+
+648
+01:33:49,764 --> 01:33:50,764
+Number two.
+
+649
+01:33:50,764 --> 01:33:58,764
+f , is the local minimum value of f if a, b is.
+
+650
+01:33:58,764 --> 01:34:00,764
+f , is the local minimum value of f , b.
+
+651
+01:34:00,764 --> 01:34:21,764
+f , b.
+
+652
+01:33:59,283 --> 01:34:09,304
+less than or equal to fxy for all domain point xy in the open disk centered at ap.
+
+653
+01:34:09,304 --> 01:34:15,963
+Okay, actually it is very very similar to calculus 1.
+
+654
+01:34:15,963 --> 01:34:23,063
+Local maxima correspond mountain peaks on the surface.
+
+655
+01:34:23,543 --> 01:34:30,203
+Z is fxy and local minima corresponds to valley bottoms.
+
+656
+01:34:30,203 --> 01:34:41,743
+Okay, let me give me a second and I like to open to our book to see,
+
+657
+01:34:41,743 --> 01:34:48,323
+I like to open our book to see the peaks and valleys.
+
+658
+01:34:48,323 --> 01:34:53,003
+Just a second please.
+
+659
+01:35:14,420 --> 01:35:18,680
+Evet, you can see our book again.
+
+660
+01:35:21,619 --> 01:35:22,239
+So.
+
+661
+01:35:32,627 --> 01:35:37,127
+Evet, extreme values and subtle points.
+
+662
+01:35:37,127 --> 01:35:49,247
+For example, for example, we know here, I like to open my pen.
+
+663
+01:35:49,247 --> 01:35:55,247
+Yes, here is the function figure 1441.
+
+664
+01:35:56,007 --> 01:36:02,567
+The function z, cosine x, cosine y, exponential has here.
+
+665
+01:36:02,947 --> 01:36:04,768
+Here is the maximum point.
+
+666
+01:36:04,768 --> 01:36:07,087
+You can see this point.
+
+667
+01:36:07,787 --> 01:36:11,887
+Actually, there is no derivative here.
+
+668
+01:36:11,887 --> 01:36:17,127
+But the definition is satisfied.
+
+669
+01:36:17,728 --> 01:36:23,587
+That the point that the surface has maximum value here.
+
+670
+01:36:24,527 --> 01:36:34,148
+And yes, let me check the figure 1443.
+
+671
+01:36:34,148 --> 01:36:35,387
+Okay.
+
+672
+01:36:35,927 --> 01:36:39,768
+A local maximum occurs at the mountain peak.
+
+673
+01:36:39,768 --> 01:36:44,427
+You can see that the yellow points here.
+
+674
+01:36:44,547 --> 01:36:46,887
+One yellow point to second yellow point.
+
+675
+01:36:47,648 --> 01:36:47,927
+Okay.
+
+676
+01:36:48,387 --> 01:36:50,827
+These are the local maxima.
+
+677
+01:36:51,047 --> 01:36:53,648
+No greater value of F nearby.
+
+678
+01:36:54,367 --> 01:36:58,887
+Nearby is important for local maxima or local minima.
+
+679
+01:36:58,887 --> 01:37:00,007
+Okay.
+
+680
+01:37:00,007 --> 01:37:03,648
+And again, the yellow one here.
+
+681
+01:37:04,007 --> 01:37:07,667
+The yellow one is this one is the local minimum.
+
+682
+01:37:08,127 --> 01:37:12,387
+No smaller value of F also nearby.
+
+683
+01:37:12,947 --> 01:37:13,547
+Okay.
+
+684
+01:37:13,547 --> 01:37:22,567
+A local maximum occurs at the valley low point.
+
+685
+01:37:22,567 --> 01:37:23,207
+Okay.
+
+686
+01:37:24,648 --> 01:37:28,847
+Let me check the figure 1442.
+
+687
+01:37:29,728 --> 01:37:31,827
+It is called the roof surface.
+
+688
+01:37:31,827 --> 01:37:42,007
+Because you can imagine a house or home like which has this kind of roof.
+
+689
+01:37:42,007 --> 01:37:42,728
+Okay.
+
+690
+01:37:43,287 --> 01:37:47,067
+So you will be engineering engineer.
+
+691
+01:37:47,067 --> 01:37:50,067
+You all will be engineers.
+
+692
+01:37:50,067 --> 01:37:55,067
+And you can imagine this kind of interesting roof.
+
+693
+01:37:55,067 --> 01:38:04,167
+One of my instructors, one of my professors in the university.
+
+694
+01:38:04,167 --> 01:38:08,747
+She was studying the geometry.
+
+695
+01:38:09,647 --> 01:38:14,827
+And she was invented an interesting room.
+
+696
+01:38:15,827 --> 01:38:17,067
+And it's sorry.
+
+697
+01:38:17,447 --> 01:38:19,167
+Interesting roof.
+
+698
+01:38:19,507 --> 01:38:28,207
+And that was used in Antalya in the conference center.
+
+699
+01:38:28,207 --> 01:38:28,867
+Okay.
+
+700
+01:38:29,287 --> 01:38:33,947
+So you can imagine this kind of creative thing.
+
+701
+01:38:34,327 --> 01:38:36,887
+Maybe it's a way to think.
+
+702
+01:38:38,047 --> 01:38:46,427
+And maybe it is, it helps our lesson to think this kind of interesting roofs.
+
+703
+01:38:46,627 --> 01:38:47,007
+Okay.
+
+704
+01:38:49,007 --> 01:38:53,268
+So let's go back to the figure 1442.
+
+705
+01:38:54,188 --> 01:38:56,387
+Z is one half.
+
+706
+01:38:56,387 --> 01:39:00,827
+Absolute value X minus absolute value.
+
+707
+01:39:01,787 --> 01:39:06,947
+Absolute value minus absolute value X minus absolute value Y.
+
+708
+01:39:07,268 --> 01:39:07,768
+Okay.
+
+709
+01:39:09,927 --> 01:39:14,887
+This, this has a maximum value of zero.
+
+710
+01:39:15,887 --> 01:39:16,607
+Here.
+
+711
+01:39:17,228 --> 01:39:20,287
+You can see, maybe it's difficult to see.
+
+712
+01:39:20,447 --> 01:39:21,387
+I don't know.
+
+713
+01:39:21,587 --> 01:39:22,107
+Here.
+
+714
+01:39:23,467 --> 01:39:24,188
+Yes.
+
+715
+01:39:24,188 --> 01:39:53,688
+Here.
+
+716
+01:39:30,228 --> 01:39:40,047
+A square region, absolute value x is less than i, absolute value y is less than i.
+
+717
+01:39:40,047 --> 01:39:53,307
+Okay, so, let's go back to our notes. Maybe we can check from here.
+
+718
+01:39:59,315 --> 01:40:05,795
+Let's go back to, okay, let's go back to our lecture notes, okay.
+
+719
+01:40:11,220 --> 01:40:20,490
+Bu bir
+
+720
+01:40:39,507 --> 01:40:41,667
+Evet, ok, I found that.
+
+721
+01:40:43,487 --> 01:40:45,787
+So, what did we say?
+
+722
+01:40:45,947 --> 01:40:55,467
+We said that local maxima correspond mountain peaks on the surface z, and local minima correspond to valley bottoms.
+
+723
+01:40:55,467 --> 01:41:12,528
+As with functions of a single variable, the key to identifying the local extrama, which means local maxima or local minima, is the first derivative test, which will next state.
+
+724
+01:41:12,528 --> 01:41:22,327
+Okay, before reading this test, let's, we make a break for 10 minutes.
+
+725
+01:41:23,148 --> 01:41:26,987
+After 10 minutes break, I will go back.
+
+726
+01:41:27,167 --> 01:41:31,127
+Okay, now I turn off my voice and my video.
+
+727
+02:00:37,587 --> 02:00:42,307
+Okay, let's start it.
+
+728
+02:00:43,728 --> 02:00:50,987
+We are now, yes, first derivative test for local extreme values.
+
+729
+02:00:52,167 --> 02:00:56,027
+If, let's make it just a little bit bigger.
+
+730
+02:00:56,027 --> 02:01:08,487
+Yes, if f has a local maximum or local minimum value at an interior point of its domain,
+
+731
+02:01:08,487 --> 02:01:18,148
+and if the first partial exists there, then fx ab is 0, fy ab is 0.
+
+732
+02:01:18,148 --> 02:01:28,027
+If we substitute the values fx ab is 0 and fy ab is 0 into the equation,
+
+733
+02:01:29,108 --> 02:01:39,407
+then fx ab times x minus a, f a, fy ab y minus b minus c minus f ab is 0.
+
+734
+02:01:39,407 --> 02:01:44,907
+For the tangent plane to the surface, c is fxy at ab.
+
+735
+02:01:44,907 --> 02:01:55,007
+The equation reduced to, here, fx is 0 because of this one.
+
+736
+02:01:55,567 --> 02:01:57,967
+Let's open the pen.
+
+737
+02:01:59,427 --> 02:02:01,747
+Yes, I need spot line.
+
+738
+02:02:01,747 --> 02:02:06,747
+Because fx is 0 and fy is 0.
+
+739
+02:02:06,747 --> 02:02:16,127
+So, 0 times x minus a, 0 times y minus b is only z is f ab.
+
+740
+02:02:16,567 --> 02:02:16,747
+Okay.
+
+741
+02:02:16,747 --> 02:02:27,047
+So, theorem 10 says the surface does indeed have a horizontal tangent plane at a local
+
+742
+02:02:27,047 --> 02:02:34,148
+extreme, provided there, there is a tangent plane, which is this one.
+
+743
+02:02:34,547 --> 02:02:35,207
+Okay.
+
+744
+02:02:35,207 --> 02:02:38,207
+So, we have a definition.
+
+745
+02:02:38,207 --> 02:02:49,827
+An interior point of the domain of a function f where both fx and fy are 0 or where one or
+
+746
+02:02:49,827 --> 02:02:57,347
+both fx and fy don't exist is a critical point of f.
+
+747
+02:02:57,347 --> 02:02:58,347
+Okay.
+
+748
+02:02:58,347 --> 02:03:06,807
+So, if we have an interior point on the domain of a function, we need to check that whether
+
+749
+02:03:06,807 --> 02:03:17,108
+fx and fy exist and 0 or fx and fy doesn't exist.
+
+750
+02:03:17,108 --> 02:03:22,108
+This is the critical point of f.
+
+751
+02:03:22,108 --> 02:03:23,108
+Okay.
+
+752
+02:03:23,108 --> 02:03:26,108
+We are looking for the function fxy.
+
+753
+02:03:26,108 --> 02:03:29,108
+We are looking for the points critical.
+
+754
+02:03:29,108 --> 02:03:33,108
+We are looking for the critical points.
+
+755
+02:03:33,108 --> 02:03:34,108
+Okay.
+
+756
+02:03:34,108 --> 02:03:42,108
+Theorem 10 says that the only point where a function f can assume extreme values are critical
+
+757
+02:03:42,108 --> 02:03:45,108
+points and boundary points.
+
+758
+02:03:45,108 --> 02:03:53,108
+Same as in, same as defined in calculus one, once for one single variable functions.
+
+759
+02:03:53,108 --> 02:03:54,108
+Okay.
+
+760
+02:03:54,108 --> 02:04:01,108
+As with differentiable functions of a single variable, not every critical point gives rise
+
+761
+02:04:01,108 --> 02:04:04,108
+to a local extra one.
+
+762
+02:04:04,108 --> 02:04:09,108
+A differentiable function of a single variable might have a point of inflection.
+
+763
+02:04:09,108 --> 02:04:19,108
+for example, it is exactly the same in single variable function because we know that if f of
+
+764
+02:04:19,108 --> 02:04:30,108
+x has a zero at the first point, but this point might not be a.
+
+765
+02:04:30,100 --> 02:04:48,940
+Local maximum or local minimum. It is the same as the function of two variables. So a differentiable function of two variables might have saddle point with a graph of f crossing the tangent plane defined there. Okay.
+
+766
+02:04:48,940 --> 02:05:18,360
+So definition. A differentiable function of x, y has a saddle point at the critical point a, b, if in every open disk center at a, b, there are domain point x, y, where f, x, y, is greater than f, a, b, and f, x, y.
+
+767
+02:05:18,360 --> 02:05:27,980
+Where f, x, y, is less than a, b, less than a, b. The core expounding point a, b, f, a, b.
+
+768
+02:05:27,980 --> 02:05:31,380
+Just a second, please.
+
+769
+02:05:33,380 --> 02:05:33,700
+Alo?
+
+770
+02:05:38,644 --> 02:05:41,724
+Şu an müsait değilim ama dersteyim.
+
+771
+02:05:47,083 --> 02:05:49,083
+Just a second please.
+
+772
+02:05:49,904 --> 02:05:52,623
+There is only important form.
+
+773
+02:05:52,744 --> 02:05:54,064
+Just a second please.
+
+774
+02:07:15,412 --> 02:07:38,992
+Sorry for this phone call. This was called by the university, so I need to open it. So here, yes, we need to check that according to the definition of the local maximum or local minimum value.
+
+775
+02:07:38,992 --> 02:08:02,172
+For example, this value is local minimum and this value is local maximum. And I, if we were in the classroom, I will always show my hand as a surface, as a surface.
+
+776
+02:08:02,172 --> 02:08:18,132
+So this is the, for example, this point is a point on the surface, which is the local and also global maximum for my hand surface.
+
+777
+02:08:18,132 --> 02:08:35,252
+And if I reverse my hand and I need to say again, for example, this point is the local minimum and also a global minimum for this surface. Okay.
+
+778
+02:08:35,252 --> 02:08:56,851
+So
+
+779
+02:08:40,756 --> 02:08:58,036
+And also, there are some points, it's an interesting points, because if you can imagine that you are riding a horse,
+
+780
+02:08:58,036 --> 02:09:11,496
+and there is something that you sit down on that thing, I can say.
+
+781
+02:09:11,496 --> 02:09:23,676
+So, the shape is like, just a second, please, like this one.
+
+782
+02:09:23,676 --> 02:09:28,676
+So, yes.
+
+783
+02:09:28,676 --> 02:09:38,676
+For example, if I take the, this is the horse, for example, this is my funny horse.
+
+784
+02:09:38,676 --> 02:09:46,676
+Okay, this is the leg of horse, you are on the horse, for example.
+
+785
+02:09:46,676 --> 02:09:56,676
+Okay, let's think the center of the, let me say saddle, because we will say it's saddle.
+
+786
+02:09:56,676 --> 02:10:03,676
+Saddle means air in Turkish, air in Turkish.
+
+787
+02:10:03,676 --> 02:10:07,676
+I don't know in English, maybe it's the same saddle.
+
+788
+02:10:07,676 --> 02:10:16,676
+So, if we take this point as the origin of the R coordinate system in R cube, for example.
+
+789
+02:10:16,676 --> 02:10:23,676
+So, for near this point, there are some parabolas here.
+
+790
+02:10:23,676 --> 02:10:29,676
+For these parabolas, this point is the minimum point.
+
+791
+02:10:29,676 --> 02:10:30,676
+Okay.
+
+792
+02:10:30,676 --> 02:10:33,676
+So, I will change the color.
+
+793
+02:10:33,676 --> 02:10:47,676
+So, the red one, again, this is a parabola again, but the direction is the reverse.
+
+794
+02:10:47,676 --> 02:10:57,676
+So, the origin is the maximum point for this parabolas.
+
+795
+02:10:57,676 --> 02:10:58,676
+Okay.
+
+796
+02:10:58,676 --> 02:11:04,676
+So, because the branch going down and this branch going to up.
+
+797
+02:11:04,676 --> 02:11:08,676
+So, we have this kind of function.
+
+798
+02:11:08,676 --> 02:11:16,676
+Some points, for some points, FAB is smaller than Fxy.
+
+799
+02:11:16,676 --> 02:11:30,676
+So, this kind of point is called saddle point.
+
+800
+02:11:30,676 --> 02:11:31,676
+Okay.
+
+801
+02:11:31,676 --> 02:11:35,676
+So, we have three kind of points.
+
+802
+02:11:35,676 --> 02:11:43,676
+The local maxima, local minima and saddle points.
+
+803
+02:11:43,676 --> 02:11:44,676
+Okay.
+
+804
+02:11:44,676 --> 02:11:45,676
+So, do you have any question?
+
+805
+02:11:45,676 --> 02:11:46,676
+Okay.
+
+806
+02:11:46,676 --> 02:11:47,676
+So, do you have any question?
+
+807
+02:11:47,676 --> 02:11:48,676
+Okay.
+
+808
+02:11:48,676 --> 02:11:49,676
+So, do you have any question?
+
+809
+02:11:49,676 --> 02:11:50,676
+Okay.
+
+810
+02:11:50,676 --> 02:11:51,676
+So, do you have any question?
+
+811
+02:11:51,676 --> 02:11:52,676
+Okay.
+
+812
+02:11:52,676 --> 02:11:53,676
+So, do you have any question?
+
+813
+02:11:53,676 --> 02:11:54,676
+Okay.
+
+814
+02:11:54,676 --> 02:11:55,676
+So, do you have any question?
+
+815
+02:11:55,676 --> 02:11:56,676
+Okay.
+
+816
+02:11:56,676 --> 02:11:57,676
+So, do you have any question?
+
+817
+02:11:57,676 --> 02:11:58,676
+Okay.
+
+818
+02:11:58,676 --> 02:11:59,676
+So, do you have any question?
+
+819
+02:11:59,676 --> 02:12:00,676
+Okay.
+
+820
+02:12:00,676 --> 02:12:01,676
+So, do you have any question?
+
+821
+02:12:01,676 --> 02:12:02,676
+Okay.
+
+822
+02:12:02,676 --> 02:12:03,676
+So, do you have any question?
+
+823
+02:12:03,676 --> 02:12:04,676
+Okay.
+
+824
+02:12:04,676 --> 02:12:05,676
+So, do you have any question?
+
+825
+02:12:05,676 --> 02:12:06,676
+Okay.
+
+826
+02:12:06,676 --> 02:12:07,676
+So, do you have any question?
+
+827
+02:11:50,547 --> 02:11:50,847
+Ok.
+
+828
+02:11:57,939 --> 02:12:01,939
+Evet, bu sattı point.
+
+829
+02:12:01,939 --> 02:12:05,939
+Finde de local ekstrame
+
+830
+02:12:05,939 --> 02:12:12,939
+fxy x² plus y² minus 4y plus 9.
+
+831
+02:12:12,939 --> 02:12:15,939
+Ok, so actually we can see
+
+832
+02:12:15,939 --> 02:12:20,939
+that this is defined in whose place?
+
+833
+02:12:20,939 --> 02:12:22,939
+Actually, this is polynomial
+
+834
+02:12:22,939 --> 02:12:25,939
+which is defined for the whole point.
+
+835
+02:12:25,939 --> 02:12:28,939
+So we have all points
+
+836
+02:12:28,939 --> 02:12:32,939
+and also we have continues
+
+837
+02:12:32,939 --> 02:12:37,939
+and the function has derivative in every order.
+
+838
+02:12:37,939 --> 02:12:48,939
+Ok, so let's check the point fx 2x.
+
+839
+02:12:48,939 --> 02:13:00,939
+If we say 2x is 0, x is 0 and fy 2y minus 4.
+
+840
+02:13:00,939 --> 02:13:07,939
+If we say so y is 2.
+
+841
+02:13:07,939 --> 02:13:13,939
+So the point is 0, 2.
+
+842
+02:13:13,939 --> 02:13:19,939
+Ok, so we need to check this point f02.
+
+843
+02:13:19,939 --> 02:13:22,939
+What is the value?
+
+844
+02:13:22,939 --> 02:13:30,939
+0 plus 4 minus 8 plus 9 is 5.
+
+845
+02:13:30,939 --> 02:13:39,939
+Ok, so in this question we will use the definition.
+
+846
+02:13:39,939 --> 02:13:47,939
+Ok, but after this question, after several question, I will give the derivative test.
+
+847
+02:13:47,939 --> 02:13:50,939
+derivative test, so you will use the derivative test.
+
+848
+02:13:50,939 --> 02:13:56,939
+Ok, but for this question we will use the definition.
+
+849
+02:13:56,939 --> 02:13:58,939
+Ok, I will erase this part.
+
+850
+02:13:58,939 --> 02:14:02,939
+Ok, let's focus on the function.
+
+851
+02:14:02,939 --> 02:14:05,939
+on the function.
+
+852
+02:14:05,939 --> 02:14:15,939
+For, for the point a02,
+
+853
+02:14:15,939 --> 02:14:21,939
+every xy belongs to boundary.
+
+854
+02:14:21,939 --> 02:14:24,939
+Let me say delta.
+
+855
+02:14:24,939 --> 02:14:27,939
+This is not important actually.
+
+856
+02:14:27,939 --> 02:14:38,939
+This means the nearby of the disk at the centered 0, at the centered 0, 2.
+
+857
+02:14:38,939 --> 02:14:39,939
+It's not important.
+
+858
+02:14:39,939 --> 02:14:49,939
+You can write with your hands the points which are nearby to 0, 2.
+
+859
+02:14:49,939 --> 02:14:53,939
+Ok, so let's refocus the function.
+
+860
+02:14:53,939 --> 02:15:09,939
+We need to, we need to show that fxy is less than f to 0 or, because we are using the definition.
+
+861
+02:15:09,939 --> 02:15:12,939
+I don't know at first which one is correct.
+
+862
+02:15:12,939 --> 02:15:17,939
+Ok, I don't know at first which one is correct.
+
+863
+02:15:17,939 --> 02:15:20,939
+So, so.
+
+864
+02:15:20,939 --> 02:15:47,939
+So.
+
+865
+02:15:24,435 --> 02:15:35,835
+So, I need to erase this part because I need to focus the function, okay?
+
+866
+02:15:41,844 --> 02:16:06,783
+So, let's focus the function. Function is the sum of two squares. The first square is x square. The second square is y minus 2 square plus 5. Okay? And also we found that the function's value f2 0 is 5.
+
+867
+02:16:06,783 --> 02:16:28,104
+Okay. Which one is correct for this function? The second inequality and the first equality. Can you write to me, please, which one is correct for the first inequality and for the second equality?
+
+868
+02:16:28,104 --> 02:16:45,744
+I will write here. I will write here and sign. Which sign? Which one is correct for this function? I am waiting for your answer.
+
+869
+02:16:51,891 --> 02:16:53,592
+There is no answer here.
+
+870
+02:17:00,404 --> 02:17:20,424
+x² is always positive, y-2² is always positive, plus 5 is greater than 5, or x² plus y-2² plus 5 is less than 5.
+
+871
+02:17:20,424 --> 02:17:21,944
+Which one is correct?
+
+872
+02:17:26,772 --> 02:17:28,912
+Maybe you don't like to give the answer.
+
+873
+02:17:31,612 --> 02:17:34,731
+Yes, the second one is correct.
+
+874
+02:17:37,832 --> 02:17:40,532
+Because we have a 5 here.
+
+875
+02:17:41,472 --> 02:17:45,532
+X squared plus Y minus 2 squared.
+
+876
+02:17:45,752 --> 02:17:51,152
+Nearby the point A02 is greater than 5.
+
+877
+02:17:52,312 --> 02:17:55,772
+So can you write to me please?
+
+878
+02:17:55,772 --> 02:17:59,952
+What kind of point is this point?
+
+879
+02:18:00,692 --> 02:18:03,852
+Local maxima or local minima?
+
+880
+02:18:04,512 --> 02:18:06,612
+Can you write to me please?
+
+881
+02:18:07,752 --> 02:18:10,231
+What kind of point is that?
+
+882
+02:18:10,652 --> 02:18:13,392
+Local maxima or local minima?
+
+883
+02:18:25,108 --> 02:18:35,427
+Is there any student in this classroom? I suspect right now, maybe I am alone. For example, is [öğrenci] here?
+
+884
+02:18:37,587 --> 02:18:39,728
+Yes, [öğrenci], you are here.
+
+885
+02:18:41,667 --> 02:18:43,808
+But you are so quiet.
+
+886
+02:18:48,115 --> 02:18:49,956
+Is [öğrenci] here?
+
+887
+02:18:57,172 --> 02:18:58,652
+[öğrenci] is not here.
+
+888
+02:19:00,872 --> 02:19:03,092
+Is [öğrenci] here?
+
+889
+02:19:07,572 --> 02:19:09,092
+[öğrenci] is not here.
+
+890
+02:19:11,832 --> 02:19:14,012
+Is [öğrenci] here?
+
+891
+02:19:17,683 --> 02:19:18,923
+He is not here.
+
+892
+02:19:21,563 --> 02:19:27,703
+I like to say, oh my gosh, how many students connect to?
+
+893
+02:19:29,623 --> 02:19:33,224
+Yes, there are a few students right now.
+
+894
+02:19:34,043 --> 02:19:37,683
+So this is local minima, okay?
+
+895
+02:19:38,183 --> 02:19:39,983
+This is local minima.
+
+896
+02:19:40,043 --> 02:19:44,403
+I recommend you to study too much, okay?
+
+897
+02:19:44,403 --> 02:19:48,224
+Do you have any questions?
+
+898
+02:19:53,075 --> 02:20:03,275
+Let's find together. Find the local extreme values if any of f is y squared minus x squared.
+
+899
+02:20:04,475 --> 02:20:17,075
+So let's write it. This is actually a polynomial which is defined on r cubed end.
+
+900
+02:20:17,075 --> 02:20:26,135
+Every order of derivative exists. Okay. So we feel comfortable.
+
+901
+02:20:26,875 --> 02:20:32,275
+So fx is minus 2x. This means x is 0.
+
+902
+02:20:33,035 --> 02:20:38,735
+fy is 2y, which means y is 0.
+
+903
+02:20:39,235 --> 02:20:43,475
+So our critical point is 0, 0.
+
+904
+02:20:43,475 --> 02:20:47,835
+So let's focus this function.
+
+905
+02:20:48,995 --> 02:20:57,735
+This is interesting function because for the point, let me say h0.
+
+906
+02:20:57,735 --> 02:21:10,775
+For the point h0, fh0 is 0 minus h squared.
+
+907
+02:21:14,095 --> 02:21:18,535
+f0, 0 is 0. We know that.
+
+908
+02:21:18,535 --> 02:21:24,515
+0 is f0, 0. Okay.
+
+909
+02:21:26,335 --> 02:21:36,955
+For the point 0 key, let me say key, f0 key means key square minus 0.
+
+910
+02:21:37,315 --> 02:21:41,335
+Key square minus 0 is greater than 0.
+
+911
+02:21:41,335 --> 02:21:44,175
+This is f0, 0.
+
+912
+02:21:45,255 --> 02:21:55,815
+This means for the sum points of the functions, functions value is greater than the points value.
+
+913
+02:21:56,115 --> 02:22:06,655
+For the sum of points of the functions, functions value is greater than this value.
+
+914
+02:22:06,655 --> 02:22:13,515
+For the sum of points of the functions, functions value is less than 0.
+
+915
+02:22:14,095 --> 02:22:19,395
+So I am asking to you, what kind of point is that?
+
+916
+02:22:20,015 --> 02:22:21,515
+What kind of point is that?
+
+917
+02:22:23,515 --> 02:22:30,455
+Do you remember that I wrote you this lesson?
+
+918
+02:22:30,455 --> 02:22:57,455
+I wrote you this lesson.
+
+919
+02:22:34,548 --> 02:22:48,288
+This is the point which is called saddle point, okay? This is the saddle point. Do you have any question?
+
+920
+02:22:55,443 --> 02:23:01,343
+Okay, this is the saddle point at the origin and no local extreme values.
+
+921
+02:23:02,003 --> 02:23:10,923
+Okay, so we have now we don't use the definition of local extreme values.
+
+922
+02:23:10,923 --> 02:23:15,683
+So we have a test for local extreme values.
+
+923
+02:23:16,263 --> 02:23:19,443
+Second derivative test for local extreme values.
+
+924
+02:23:19,443 --> 02:23:34,743
+Suppose that fxy and its first and second partial derivatives are continuous throughout a disk center at ab and fx ab and fy ab is zero.
+
+925
+02:23:34,743 --> 02:23:52,123
+Then, one, f has local maximum at ab if fxx is less than zero and fxx times fy y minus fxy squared is greater than zero.
+
+926
+02:23:52,603 --> 02:23:53,783
+This is the first one.
+
+927
+02:23:53,783 --> 02:24:11,144
+And second one, f has a local minimum at ab if fxx is greater than zero and fxx fy y minus fxy xy squared is greater than zero at ab.
+
+928
+02:24:11,703 --> 02:24:22,783
+Three, f has a saddle point at ab if fxx fy y minus fy y squared is less than zero.
+
+929
+02:24:22,783 --> 02:24:36,783
+Number four, the test is inconclusive at ab if fx is fy y minus fxy squared is zero at ab.
+
+930
+02:24:37,663 --> 02:24:44,403
+So we, in this situation, we must check the sign of first partial derivatives.
+
+931
+02:24:45,003 --> 02:24:49,403
+Okay, so I will stop.
+
+932
+02:24:49,403 --> 02:24:53,443
+So it's enough for today.
+
+933
+02:24:53,443 --> 02:25:00,644
+Okay, so I will continue this subject tomorrow morning.
+
+934
+02:25:01,183 --> 02:25:06,823
+Okay, please study before coming to the lesson and try to understand.
+
+935
+02:25:07,823 --> 02:25:12,683
+I hope you have a fine day at the rest of the day.
+
+936
+02:25:13,064 --> 02:25:14,304
+Okay, see you tomorrow.
+
+937
+02:25:14,503 --> 02:25:14,903
+Bye-bye.
+
+938
+02:25:17,163 --> 02:25:18,263
+You're welcome.
+
+939
+02:25:19,403 --> 02:25:20,403
+See you tomorrow.
+
+940
+02:25:26,100 --> 02:25:29,100
+Teşekkürler.
+
+941
+02:25:36,180 --> 02:25:38,059
+Now I am ending the meeting.
