@@ -1,0 +1,4671 @@
+1
+00:00:08,051 --> 00:00:18,071
+Good morning to everyone. Let's wait two minutes for the other people. Okay. So how are you today?
+
+2
+00:00:24,692 --> 00:00:25,812
+Good morning, [öğrenci].
+
+3
+00:00:27,692 --> 00:00:36,871
+I'm okay. I'm at my office in the university. Today I will give the lesson on my office. So I'm happy.
+
+4
+00:00:50,740 --> 00:00:56,380
+Okay, now we have 64 people. Let's wait two minutes, okay?
+
+5
+00:00:58,679 --> 00:01:02,540
+Yesterday we started to see our first subject. It was sequence.
+
+6
+00:01:03,300 --> 00:01:08,820
+And yesterday we see how can we define a sequence.
+
+7
+00:01:09,680 --> 00:01:12,320
+We say that we can use two different ways.
+
+8
+00:01:13,320 --> 00:01:17,740
+The first one was using the general term.
+
+9
+00:01:17,740 --> 00:01:21,879
+We have a general term and using this general term we can write our terms.
+
+10
+00:01:22,400 --> 00:01:24,800
+The other one is by induction.
+
+11
+00:01:25,599 --> 00:01:29,200
+In the induction we have to give at least one term.
+
+12
+00:01:30,020 --> 00:01:32,939
+And we can give more than one term.
+
+13
+00:01:33,099 --> 00:01:40,680
+And after that we have to give also relation between the previous and the next terms.
+
+14
+00:01:41,099 --> 00:01:43,920
+So it is called definition by induction.
+
+15
+00:01:43,920 --> 00:01:51,060
+Also we gave an important example as Fibonacci sequence.
+
+16
+00:01:51,980 --> 00:01:55,979
+And after that we see what is the meaning of convergent and divergent.
+
+17
+00:01:56,879 --> 00:02:00,520
+When you take the general terms limit, if the limit is a number,
+
+18
+00:02:00,659 --> 00:02:04,979
+then we can say that this sequence is convergent.
+
+19
+00:02:04,979 --> 00:02:10,579
+If the limit is plus or minus infinity or if the limit doesn't exist,
+
+20
+00:02:10,719 --> 00:02:13,180
+then we will say that it is divergent.
+
+21
+00:02:14,879 --> 00:02:17,919
+Today we will see the other part of the sequence.
+
+22
+00:02:18,280 --> 00:02:22,340
+We will see what is the meaning of bounded, upper bound, lower bound,
+
+23
+00:02:22,560 --> 00:02:26,060
+increasing, decreasing, non-increasing, non-decreasing.
+
+24
+00:02:26,060 --> 00:02:31,200
+And we will finish our subject of sequence today.
+
+25
+00:02:32,020 --> 00:02:35,460
+But before that I want to solve one question.
+
+26
+00:02:36,140 --> 00:02:40,600
+This question was the previous semester's midterm exam question.
+
+27
+00:02:41,100 --> 00:02:46,600
+And it will be an example for you what kind of question you can see in the exam.
+
+28
+00:02:46,860 --> 00:02:47,060
+Okay.
+
+29
+00:02:47,800 --> 00:02:50,200
+Before that I want to show this question.
+
+30
+00:02:50,200 --> 00:02:57,939
+In this question, they said that what is the character of these sequences?
+
+31
+00:02:58,800 --> 00:03:01,320
+In A they said that it is divergence.
+
+32
+00:03:02,680 --> 00:03:05,120
+Here it is convergent to zero.
+
+33
+00:03:07,520 --> 00:03:09,060
+Convergent to two.
+
+34
+00:03:10,960 --> 00:03:12,300
+Convergent to three.
+
+35
+00:03:14,380 --> 00:03:15,500
+Convergent to four.
+
+36
+00:03:16,440 --> 00:03:16,660
+Okay.
+
+37
+00:03:16,660 --> 00:03:20,080
+This is a question for the test.
+
+38
+00:03:20,200 --> 00:03:22,040
+This is our sequence.
+
+39
+00:03:22,300 --> 00:03:26,400
+And they asked get what is the character of this sequence.
+
+40
+00:03:26,940 --> 00:03:28,480
+Let's solve together.
+
+41
+00:03:29,260 --> 00:03:33,120
+If you look at your sequence, you can see that we have a square root function.
+
+42
+00:03:33,680 --> 00:03:39,020
+Yesterday we saw one example about the sequence, about the square root function.
+
+43
+00:03:39,460 --> 00:03:43,720
+If you have a square root function, first of all, we have to product with the conjugate.
+
+44
+00:03:44,200 --> 00:03:45,300
+What is the conjugate?
+
+45
+00:03:45,300 --> 00:03:53,480
+If you have a minus b, the conjugate of this function will, this equation will be a plus b.
+
+46
+00:03:54,680 --> 00:03:57,920
+After that we can say that it is a square minus b square.
+
+47
+00:03:58,320 --> 00:04:01,939
+And using this relation we can cancel the square root function.
+
+48
+00:04:01,940 --> 00:04:06,580
+So let us take limit and goes to infinity.
+
+49
+00:04:06,720 --> 00:04:09,180
+It will be always infinity for the sequence.
+
+50
+00:04:10,180 --> 00:04:11,100
+2 over.
+
+51
+00:04:11,100 --> 00:04:22,060
+I have n squared plus n minus n is our function.
+
+52
+00:04:22,939 --> 00:04:24,980
+Now I will product with the conjugate.
+
+53
+00:04:25,340 --> 00:04:26,960
+Let's use this one.
+
+54
+00:04:27,960 --> 00:04:34,160
+n squared plus n plus n.
+
+55
+00:04:34,160 --> 00:04:36,060
+This is our conjugate.
+
+56
+00:04:36,920 --> 00:04:39,920
+I have to write the same term in our denominator.
+
+57
+00:04:41,500 --> 00:04:43,439
+n squared plus n.
+
+58
+00:04:45,900 --> 00:04:49,699
+This is our conjugate.
+
+59
+00:04:49,699 --> 00:05:04,139
+n squared plus n.
+
+60
+00:04:50,995 --> 00:05:04,755
+Here I have a minus b, here I write a plus b, so in the result we will find a square minus b square. So what do we have? We will have limits and goes to infinity.
+
+61
+00:05:08,660 --> 00:05:16,900
+2, n² plus n, plus n in our numerator.
+
+62
+00:05:17,760 --> 00:05:23,000
+And in our denominator, we will have n² plus n from the first part.
+
+63
+00:05:23,560 --> 00:05:25,960
+From the second part, we will have minus n².
+
+64
+00:05:26,360 --> 00:05:27,080
+It is b².
+
+65
+00:05:28,020 --> 00:05:32,780
+So we can cancel n² here.
+
+66
+00:05:32,780 --> 00:05:38,420
+So in your denominator, I have n.
+
+67
+00:05:38,620 --> 00:05:42,240
+In our numerator in here, I want to write 1 n outside.
+
+68
+00:05:42,660 --> 00:05:45,000
+Let's write limit time goes to infinity.
+
+69
+00:05:48,120 --> 00:05:51,760
+I have to, I will write n outside.
+
+70
+00:05:52,580 --> 00:05:57,000
+If I want to write n outside in the square root function, I have to write n².
+
+71
+00:05:57,180 --> 00:06:01,960
+If I write n² outside, I will have 1 plus 1 over n.
+
+72
+00:06:02,780 --> 00:06:32,760
+And I have n, and I have n.
+
+73
+00:06:32,780 --> 00:06:34,780
+the result will be 4.
+
+74
+00:06:34,780 --> 00:06:39,260
+So it is convergent, and it converges to 4.
+
+75
+00:06:39,260 --> 00:06:41,920
+So the solution will be e.
+
+76
+00:06:41,920 --> 00:06:44,660
+Do you have any question about this example?
+
+77
+00:06:56,211 --> 00:07:03,051
+Okay, I want to ask something. How many people didn't take calculus 1?
+
+78
+00:07:06,111 --> 00:07:09,072
+Matematik 1 almayan bana bir söyler mi? Kaç kişi var?
+
+79
+00:07:12,072 --> 00:07:15,491
+How many people didn't take calculus 1?
+
+80
+00:07:16,252 --> 00:07:21,072
+I can 1, 2, 3, 3 kişiymiş o.
+
+81
+00:07:28,339 --> 00:07:32,979
+Çünkü belli kısımlarda eksikleriniz olacak. O zaman onları bir tamamlamamız gerekecek.
+
+82
+00:07:33,599 --> 00:07:35,159
+Did you understand the limit here?
+
+83
+00:07:36,099 --> 00:07:37,299
+I can't all the entire...
+
+84
+00:07:37,299 --> 00:07:38,799
+Hocam, bir şey sorabilir miyim?
+
+85
+00:07:38,959 --> 00:07:39,139
+Tabii.
+
+86
+00:07:40,039 --> 00:07:42,339
+Paydayı direkt en parantezini alsak...
+
+87
+00:07:43,500 --> 00:07:43,879
+Payı mı?
+
+88
+00:07:44,299 --> 00:07:45,500
+Evet, payda paydayı.
+
+89
+00:07:46,059 --> 00:07:46,620
+Soru da.
+
+90
+00:07:48,319 --> 00:07:50,339
+Paydayı en parantezini alsan...
+
+91
+00:07:54,339 --> 00:07:56,439
+Olabilir mi?
+
+92
+00:07:56,439 --> 00:07:58,339
+Ama şey, nasıl götüreceksin?
+
+93
+00:07:59,799 --> 00:08:01,120
+Okey, bakalım.
+
+94
+00:08:19,668 --> 00:08:20,968
+In that case,
+
+95
+00:08:25,588 --> 00:08:25,908
+Tamam.
+
+96
+00:08:27,108 --> 00:08:29,328
+So, you will have zero.
+
+97
+00:08:31,528 --> 00:08:36,327
+You will have one over and product one over zero.
+
+98
+00:08:36,868 --> 00:08:40,087
+It will be zero, product, infinity.
+
+99
+00:08:40,187 --> 00:08:42,307
+You will have indetermined form.
+
+100
+00:08:42,827 --> 00:08:43,768
+It doesn't work.
+
+101
+00:08:43,927 --> 00:08:46,307
+Tamam hocam, teşekkür ederim.
+
+102
+00:08:46,327 --> 00:08:50,288
+Bunu bu şekilde olmuyor. Mutlaka konjugatli çarpmanız gerekiyor. Başka türlü çıkmaz.
+
+103
+00:08:50,388 --> 00:08:51,908
+Indetermined forma dönüyor çünkü.
+
+104
+00:08:51,908 --> 00:08:54,168
+Okay.
+
+105
+00:08:54,327 --> 00:08:57,048
+I will solve more questions in our application lesson.
+
+106
+00:08:57,228 --> 00:09:04,108
+I have different questions about test exam also, but I want to show an example about the test.
+
+107
+00:09:04,368 --> 00:09:05,988
+Okay.
+
+108
+00:09:06,067 --> 00:09:09,268
+Now, let's look at the other part of the sequence.
+
+109
+00:09:09,567 --> 00:09:10,827
+We have some definitions.
+
+110
+00:09:11,908 --> 00:09:13,148
+Let's look at our definitions.
+
+111
+00:09:13,348 --> 00:09:18,908
+Firstly, the first definition is about upper and lower bound.
+
+112
+00:09:18,908 --> 00:09:48,888
+A sequence an is bounded from above.
+
+113
+00:09:47,860 --> 00:09:54,279
+We solve this question yesterday.
+
+114
+00:09:54,580 --> 00:09:56,940
+If our general term is this, okay?
+
+115
+00:09:57,620 --> 00:09:59,800
+n minus 1 over n, what is this?
+
+116
+00:09:59,899 --> 00:10:01,639
+It is 1 minus 1 over n.
+
+117
+00:10:03,180 --> 00:10:09,000
+You can see that the term still be always less than 1.
+
+118
+00:10:09,000 --> 00:10:13,960
+So I can say that an is less than 1 in infinity.
+
+119
+00:10:14,200 --> 00:10:15,800
+I can have 1.
+
+120
+00:10:15,800 --> 00:10:19,340
+So here 1 will be an upper bound for us.
+
+121
+00:10:20,299 --> 00:10:20,399
+Okay?
+
+122
+00:10:20,840 --> 00:10:25,539
+But we can have many upper bound.
+
+123
+00:10:25,639 --> 00:10:29,639
+For example, I can say that, okay, n is also less than 2.
+
+124
+00:10:30,799 --> 00:10:33,000
+You don't need to have equality.
+
+125
+00:10:33,120 --> 00:10:35,080
+You can have, but you don't need, okay?
+
+126
+00:10:35,279 --> 00:10:37,259
+2 will be also an upper bound.
+
+127
+00:10:37,759 --> 00:10:39,700
+3 will be also an upper bound.
+
+128
+00:10:40,080 --> 00:10:43,940
+But in our question, I can say that 1 is an upper bound.
+
+129
+00:10:43,940 --> 00:10:50,879
+Because for all n, our general term is less than or equal to 1.
+
+130
+00:10:51,019 --> 00:10:51,320
+Okay?
+
+131
+00:10:51,680 --> 00:10:55,060
+So 1 will be upper bound for our seconds.
+
+132
+00:10:56,120 --> 00:10:57,039
+The second one.
+
+133
+00:10:57,039 --> 00:11:05,279
+If m is an upper bound for an, but no number less than m is an upper bound.
+
+134
+00:11:05,279 --> 00:11:07,580
+Okay, we will have many upper bound.
+
+135
+00:11:08,019 --> 00:11:17,800
+But if m is the smallest upper bound, then m is called least upper bound for our sequence.
+
+136
+00:11:17,799 --> 00:11:19,860
+For example, I am talking about this.
+
+137
+00:11:20,460 --> 00:11:22,580
+1, 2, 3.
+
+138
+00:11:23,340 --> 00:11:26,720
+All of them are upper bound for this sequence.
+
+139
+00:11:27,519 --> 00:11:27,680
+Okay?
+
+140
+00:11:27,680 --> 00:11:33,420
+But which is the smallest one?
+
+141
+00:11:33,420 --> 00:11:33,779
+1.
+
+142
+00:11:33,779 --> 00:11:43,800
+So 1 will be least upper bound for our sequence.
+
+143
+00:11:44,200 --> 00:11:44,240
+Okay?
+
+144
+00:11:44,800 --> 00:11:46,759
+En küçük üst sınır.
+
+145
+00:11:47,019 --> 00:11:48,539
+Bir sürü üst sınırımız var.
+
+146
+00:11:48,539 --> 00:11:54,240
+Sonuçta birden küçük olduğunu buluyorsak, 2'den de küçüktür, 3'den de küçüktür.
+
+147
+00:11:54,320 --> 00:11:56,299
+Bunların her birisi bizim için upper bound tur.
+
+148
+00:11:56,420 --> 00:12:05,180
+Ama en küçük dediğimizde bunlar arasında, bu upper bound'lar arasında en küçüğü neyse, o bizim en küçük upper bound'ımız oluyor.
+
+149
+00:12:05,320 --> 00:12:06,720
+Yani least upper bound.
+
+150
+00:12:06,720 --> 00:12:11,360
+Let's look at the other definition.
+
+151
+00:12:11,519 --> 00:12:13,620
+This is the first definition here.
+
+152
+00:12:13,960 --> 00:12:15,560
+This is the second definition.
+
+153
+00:12:16,680 --> 00:12:20,360
+A sequence a n is bounded from below.
+
+154
+00:12:20,600 --> 00:12:29,879
+If there exists a number small m such that all the terms of the sequence will be less or equal to m for all n,
+
+155
+00:12:30,400 --> 00:12:35,519
+then m will be a lower bound for our sequence.
+
+156
+00:12:35,519 --> 00:12:37,059
+At sınır.
+
+157
+00:12:38,379 --> 00:12:47,220
+And if m is a lower bound for a n, but no number greater than m is a lower bound,
+
+158
+00:12:47,559 --> 00:12:51,460
+then it will be greatest lower bound.
+
+159
+00:12:51,460 --> 00:12:53,940
+Let me give an example first.
+
+160
+00:13:02,868 --> 00:13:04,088
+Şimdi şöyle söyleyebiliriz.
+
+161
+00:13:07,572 --> 00:13:14,951
+For example, let us take our general term as n plus 1 over n.
+
+162
+00:13:14,951 --> 00:13:15,451
+Okay.
+
+163
+00:13:17,272 --> 00:13:18,412
+What is this?
+
+164
+00:13:18,532 --> 00:13:20,792
+It is 1 plus 1 over n.
+
+165
+00:13:22,211 --> 00:13:26,991
+You can see that all these terms will be greater than 1.
+
+166
+00:13:27,471 --> 00:13:27,892
+Okay.
+
+167
+00:13:28,331 --> 00:13:33,912
+So I can say that an is greater or in the infinity it will be equal to 1.
+
+168
+00:13:33,912 --> 00:13:39,351
+So here 1 is a lower bound.
+
+169
+00:13:40,152 --> 00:13:40,272
+Okay.
+
+170
+00:13:42,892 --> 00:13:52,511
+Or I can say that 0 also a lower bound because all these terms will be positive.
+
+171
+00:13:53,672 --> 00:13:55,912
+Is a lower bound.
+
+172
+00:13:58,292 --> 00:13:59,011
+Okay.
+
+173
+00:14:00,011 --> 00:14:03,892
+Or you can say that 1 over 2 is a lower bound.
+
+174
+00:14:03,912 --> 00:14:10,231
+Because all the terms of the sequence is less than 0 or less than 1 over 2.
+
+175
+00:14:10,231 --> 00:14:11,971
+But and also 1.
+
+176
+00:14:12,991 --> 00:14:14,552
+But which is the greatest?
+
+177
+00:14:14,792 --> 00:14:15,991
+Which is the biggest number?
+
+178
+00:14:16,172 --> 00:14:16,392
+1.
+
+179
+00:14:16,731 --> 00:14:18,792
+So 1 will be greatest.
+
+180
+00:14:18,792 --> 00:14:19,172
+1.
+
+181
+00:14:19,172 --> 00:14:39,072
+So 1.
+
+182
+00:14:24,244 --> 00:14:26,484
+Lover bound.
+
+183
+00:14:28,064 --> 00:14:29,844
+En büyük alt sınır.
+
+184
+00:14:30,543 --> 00:14:33,923
+Bunları zaten lisede gördüğünüz diye tahmin ediyorum genel olarak.
+
+185
+00:14:35,244 --> 00:14:35,604
+Okay.
+
+186
+00:14:35,864 --> 00:14:39,704
+Until here, did you understand what is the lower bound and upper bound?
+
+187
+00:14:40,384 --> 00:14:41,884
+All the general terms.
+
+188
+00:14:42,803 --> 00:14:45,663
+How to know the upper bound and lower bound.
+
+189
+00:14:46,364 --> 00:14:47,684
+You can...
+
+190
+00:14:47,684 --> 00:14:50,724
+It depends on your general term.
+
+191
+00:14:50,724 --> 00:14:55,344
+Now, I gave you two basic examples.
+
+192
+00:14:55,923 --> 00:14:57,744
+For example, what is your general term?
+
+193
+00:14:57,824 --> 00:15:00,464
+It is 1 minus a number.
+
+194
+00:15:00,844 --> 00:15:00,923
+Okay.
+
+195
+00:15:01,283 --> 00:15:02,624
+1 minus 1 over n.
+
+196
+00:15:03,004 --> 00:15:06,004
+So, I can say that all the terms will be less than 1.
+
+197
+00:15:06,564 --> 00:15:08,884
+Because here you are subtracting a number.
+
+198
+00:15:09,824 --> 00:15:13,824
+So, 1 will be always greater than your general term.
+
+199
+00:15:13,944 --> 00:15:15,944
+So, I can say that 1 is the upper bound.
+
+200
+00:15:17,244 --> 00:15:19,084
+What can you say about here?
+
+201
+00:15:19,084 --> 00:15:21,964
+In the second example, you can say that...
+
+202
+00:15:21,964 --> 00:15:24,124
+You can see that 1 plus a number.
+
+203
+00:15:25,004 --> 00:15:26,663
+You will add a number to 1.
+
+204
+00:15:27,163 --> 00:15:31,744
+So, your general term will be greater than 1.
+
+205
+00:15:33,024 --> 00:15:33,544
+Okay.
+
+206
+00:15:33,744 --> 00:15:35,644
+In the infinity, you can have 1.
+
+207
+00:15:35,724 --> 00:15:39,044
+But normally, I have 1 plus, for example, 1 over 2.
+
+208
+00:15:39,444 --> 00:15:40,984
+1 plus 1 over 3.
+
+209
+00:15:41,244 --> 00:15:44,064
+So, all the terms will be greater than 1.
+
+210
+00:15:44,244 --> 00:15:47,084
+So, 1 will be a lower bound for us.
+
+211
+00:15:47,084 --> 00:15:47,864
+Okay.
+
+212
+00:15:48,304 --> 00:15:50,144
+I will make some examples.
+
+213
+00:15:50,324 --> 00:15:52,004
+And in the examples, you will understand.
+
+214
+00:15:52,364 --> 00:15:52,504
+Okay.
+
+215
+00:15:53,464 --> 00:15:55,084
+This is the upper...
+
+216
+00:15:56,204 --> 00:15:58,224
+N can't be less than 0.
+
+217
+00:15:58,403 --> 00:15:58,683
+Yes.
+
+218
+00:15:58,844 --> 00:15:59,923
+N is an integer.
+
+219
+00:16:01,204 --> 00:16:01,764
+Okay.
+
+220
+00:16:02,224 --> 00:16:03,364
+N is an integer.
+
+221
+00:16:03,724 --> 00:16:06,884
+It can be 0 or greater than 0.
+
+222
+00:16:06,884 --> 00:16:09,524
+Because here, N is an index.
+
+223
+00:16:10,244 --> 00:16:13,304
+Okay.
+
+224
+00:16:13,644 --> 00:16:15,264
+And the last one is...
+
+225
+00:16:16,104 --> 00:16:17,624
+What is the meaning of bounded?
+
+226
+00:16:18,204 --> 00:16:19,504
+If you have...
+
+227
+00:16:19,504 --> 00:16:23,824
+If your general term is bounded from above and below,
+
+228
+00:16:24,624 --> 00:16:27,004
+then your seconds will be bounded.
+
+229
+00:16:27,004 --> 00:16:29,224
+If 6 and 3 are 1,
+
+230
+00:16:29,224 --> 00:16:29,824
+if 2 are 1,
+
+231
+00:16:29,824 --> 00:16:30,184
+if 1 are 1,
+
+232
+00:16:30,184 --> 00:16:31,244
+then your seconds will be.
+
+233
+00:16:31,244 --> 00:16:32,683
+This is the number of examples.
+
+234
+00:16:32,683 --> 00:16:34,943
+I hope.
+
+235
+00:16:36,340 --> 00:16:45,820
+I know that cosine function, cosine n, I know that it is bounded from minus 1 and 1.
+
+236
+00:16:45,820 --> 00:16:51,840
+Okay, so this will be greatest lower bound.
+
+237
+00:16:53,420 --> 00:16:59,460
+This will be least upper bound.
+
+238
+00:17:00,320 --> 00:17:00,420
+Okay.
+
+239
+00:17:00,420 --> 00:17:07,720
+For cosine function, also you can say the same thing for sine function, for example.
+
+240
+00:17:08,240 --> 00:17:08,380
+Okay.
+
+241
+00:17:14,380 --> 00:17:16,480
+I have one more definition.
+
+242
+00:17:16,900 --> 00:17:17,799
+Let me write.
+
+243
+00:17:19,160 --> 00:17:19,700
+Okay.
+
+244
+00:17:20,559 --> 00:17:22,799
+Now I will ask to you.
+
+245
+00:17:26,163 --> 00:17:49,384
+If an is less than an plus 1, an is less or equal to an plus 1, an is greater than an plus 1, an is greater or equal to an plus 1.
+
+246
+00:17:49,384 --> 00:17:54,503
+We have four definitions and we have two concepts written right here.
+
+247
+00:17:55,403 --> 00:17:57,243
+The first one is increasing.
+
+248
+00:18:10,228 --> 00:18:10,708
+None.
+
+249
+00:18:12,327 --> 00:18:13,128
+Increasing.
+
+250
+00:18:18,387 --> 00:18:19,567
+9 dekriz.
+
+251
+00:18:24,019 --> 00:18:25,720
+Which one is which one?
+
+252
+00:18:26,319 --> 00:18:26,539
+Okay.
+
+253
+00:18:26,920 --> 00:18:28,200
+We have two definitions.
+
+254
+00:18:28,759 --> 00:18:30,500
+Sorry, we have four definitions.
+
+255
+00:18:31,539 --> 00:18:33,059
+We have two terms.
+
+256
+00:18:33,480 --> 00:18:35,680
+One, two, three, four.
+
+257
+00:18:35,779 --> 00:18:37,000
+Which one is which one?
+
+258
+00:18:37,740 --> 00:18:39,740
+Increasing in Turkish artan.
+
+259
+00:18:41,319 --> 00:18:42,599
+Decreasing azalan.
+
+260
+00:18:44,740 --> 00:18:47,099
+Non-increasing artsmayan.
+
+261
+00:18:49,039 --> 00:18:51,599
+Non-decreasing azalmayan.
+
+262
+00:18:54,019 --> 00:18:56,680
+Okay, let's start with the first one.
+
+263
+00:18:56,740 --> 00:18:57,359
+What is this?
+
+264
+00:18:59,619 --> 00:19:04,920
+The first one, you can see that the next term is greater than the previous term.
+
+265
+00:19:05,099 --> 00:19:08,200
+So it is increasing.
+
+266
+00:19:08,660 --> 00:19:10,379
+There is no equality, okay?
+
+267
+00:19:11,160 --> 00:19:12,619
+It is increasing.
+
+268
+00:19:15,460 --> 00:19:19,920
+So in that case, this one will be the opposite one.
+
+269
+00:19:20,000 --> 00:19:20,839
+It is decreasing.
+
+270
+00:19:20,839 --> 00:19:25,420
+In increasing and decreasing, you don't have any equality.
+
+271
+00:19:25,420 --> 00:19:26,059
+Okay.
+
+272
+00:19:27,339 --> 00:19:34,379
+In here, it is increasing or the same.
+
+273
+00:19:35,480 --> 00:19:38,680
+It is increasing or the same.
+
+274
+00:19:38,839 --> 00:19:42,319
+So I will say that non-decreasing.
+
+275
+00:19:43,319 --> 00:19:44,139
+Azalmıyor hiç.
+
+276
+00:19:44,139 --> 00:19:46,139
+Okay.
+
+277
+00:19:47,500 --> 00:19:51,839
+And in here, it is decreasing or the same.
+
+278
+00:19:52,059 --> 00:19:54,139
+It will be non-increasing.
+
+279
+00:19:54,139 --> 00:19:54,660
+Increasing.
+
+280
+00:19:54,660 --> 00:19:55,660
+It will be non-increasing.
+
+281
+00:19:55,660 --> 00:20:13,420
+Okay.
+
+282
+00:20:00,000 --> 00:20:05,019
+Okay, but in our subjects, mostly we will use this one and this one.
+
+283
+00:20:05,339 --> 00:20:07,920
+You have to know what is increasing and decreasing.
+
+284
+00:20:08,380 --> 00:20:11,940
+If the next term is greater than the previous term, it will be increasing.
+
+285
+00:20:12,420 --> 00:20:16,319
+If the next term is less than the previous term, it will be decreasing.
+
+286
+00:20:16,980 --> 00:20:18,660
+Okay, do you have any question here?
+
+287
+00:20:20,180 --> 00:20:20,700
+Okay.
+
+288
+00:20:22,000 --> 00:20:24,400
+Okay, now let's look at our definition.
+
+289
+00:20:24,400 --> 00:20:30,359
+A sequence is non-increasing.
+
+290
+00:20:31,119 --> 00:20:34,819
+Okay, this is the definition.
+
+291
+00:20:35,680 --> 00:20:37,480
+This part is important.
+
+292
+00:20:37,720 --> 00:20:39,400
+A sequence is monotonic.
+
+293
+00:20:39,920 --> 00:20:41,880
+What is the meaning of monotonic?
+
+294
+00:20:42,359 --> 00:20:49,500
+If it is either non-decreasing or non-increasing, it will be monotonic.
+
+295
+00:20:49,500 --> 00:20:57,640
+Or I can say that if it is increasing or decreasing, then the sequence will be monotonic.
+
+296
+00:20:57,839 --> 00:20:58,880
+Okay, don't look at this.
+
+297
+00:21:00,400 --> 00:21:01,640
+It will be enough.
+
+298
+00:21:03,079 --> 00:21:07,559
+If it is increasing or decreasing, for example, like this.
+
+299
+00:21:07,640 --> 00:21:14,559
+If it is increasing or decreasing, then I can say that the sequence is monotonic.
+
+300
+00:21:14,779 --> 00:21:16,940
+It is the same for the functions also.
+
+301
+00:21:16,940 --> 00:21:22,420
+If your function is increasing or decreasing, then you can say that the function is monotonic.
+
+302
+00:21:22,779 --> 00:21:22,839
+Okay.
+
+303
+00:21:25,599 --> 00:21:28,039
+Okay, why is it important?
+
+304
+00:21:28,180 --> 00:21:31,940
+Because we have a theorem for monotonic sequence theorem.
+
+305
+00:21:33,200 --> 00:21:34,700
+Monotonic sequence theorem.
+
+306
+00:21:35,660 --> 00:21:42,099
+If a sequence, an, is both upper bounded and increasing.
+
+307
+00:21:42,519 --> 00:21:43,140
+What is this?
+
+308
+00:21:43,140 --> 00:21:48,279
+If your sequence is increasing and if you have an upper bound.
+
+309
+00:21:48,960 --> 00:21:54,880
+Or if your sequence is decreasing and if you have a lower bound.
+
+310
+00:21:55,380 --> 00:21:58,480
+If you have a stop here or here.
+
+311
+00:21:59,000 --> 00:22:02,960
+Then I can say that the sequence is convergent.
+
+312
+00:22:02,960 --> 00:22:03,700
+Okay.
+
+313
+00:22:04,099 --> 00:22:08,860
+If your sequence is increasing and if you have an upper bound.
+
+314
+00:22:09,200 --> 00:22:13,180
+Or if your sequence is decreasing and if you have a lower bound.
+
+315
+00:22:13,599 --> 00:22:17,420
+Then your sequence will be convergent.
+
+316
+00:22:17,599 --> 00:22:18,960
+This is an important theorem.
+
+317
+00:22:19,500 --> 00:22:22,880
+So for the proof of this theorem.
+
+318
+00:22:22,880 --> 00:22:31,119
+If you have a sequence, you have to show that it is monotonic and it is upper or lower bound.
+
+319
+00:22:32,119 --> 00:22:35,160
+I will give examples, but we have two more definitions.
+
+320
+00:22:36,359 --> 00:22:38,259
+If all the terms are positive.
+
+321
+00:22:39,200 --> 00:22:43,339
+If the general, if the, all the terms of the sequence is positive.
+
+322
+00:22:43,539 --> 00:22:44,920
+It is positive sequence.
+
+323
+00:22:45,299 --> 00:22:49,960
+If all of them are negative, it will be negative.
+
+324
+00:22:49,960 --> 00:22:50,759
+Okay.
+
+325
+00:22:52,759 --> 00:22:56,660
+And this is also important in the serious subject.
+
+326
+00:22:57,559 --> 00:23:04,940
+If the sequence sign is positive, negative, positive, negative, or negative, positive, negative, positive.
+
+327
+00:23:05,299 --> 00:23:08,279
+Then it will be alternating sequence.
+
+328
+00:23:08,779 --> 00:23:11,539
+In the series, it will be alternating series.
+
+329
+00:23:11,539 --> 00:23:16,619
+For example, minus 1 over 2, 1 over 4.
+
+330
+00:23:17,119 --> 00:23:19,980
+Minus 1 over 8, 1 over 16.
+
+331
+00:23:20,720 --> 00:23:21,000
+Okay.
+
+332
+00:23:21,079 --> 00:23:24,680
+It is an alternating sequence because the sign is changing.
+
+333
+00:23:24,839 --> 00:23:26,720
+Negative, positive, negative, positive.
+
+334
+00:23:27,160 --> 00:23:29,759
+Okay.
+
+335
+00:23:29,759 --> 00:23:31,660
+Now let's look at our examples.
+
+336
+00:23:31,660 --> 00:23:32,599
+Okay.
+
+337
+00:23:32,599 --> 00:23:33,799
+Now let's look at our examples.
+
+338
+00:24:05,971 --> 00:24:08,311
+Let's investigate this sequence. Okay.
+
+339
+00:24:10,172 --> 00:24:15,291
+So, firstly, I want to write the general, I want to write the terms of the sequence.
+
+340
+00:24:15,692 --> 00:24:17,811
+If n is 1, it will be 1 over 2.
+
+341
+00:24:19,872 --> 00:24:21,071
+2 over 3.
+
+342
+00:24:22,091 --> 00:24:23,372
+3 over 4.
+
+343
+00:24:23,852 --> 00:24:25,531
+Okay. Blah, blah, blah.
+
+344
+00:24:26,751 --> 00:24:28,771
+Okay, if you look at this sequence,
+
+345
+00:24:31,271 --> 00:24:34,231
+firstly, what can you say about the boundates?
+
+346
+00:24:34,231 --> 00:24:37,412
+Can you say any upper bound, lower bound?
+
+347
+00:25:12,195 --> 00:25:21,955
+Let us look at what is the ratio of an plus 1 over an.
+
+348
+00:25:23,355 --> 00:25:23,915
+Okay.
+
+349
+00:25:24,715 --> 00:25:27,195
+If it is greater than 1 or less than 1.
+
+350
+00:25:28,135 --> 00:25:28,695
+Okay.
+
+351
+00:25:29,455 --> 00:25:29,995
+What is this?
+
+352
+00:25:30,035 --> 00:25:33,215
+For example, here if is less than 1.
+
+353
+00:25:36,788 --> 00:25:41,528
+It means that it is decreasing or if this one it will be increasing.
+
+354
+00:25:41,968 --> 00:25:45,248
+So let us look at the ratio of an plus 1 over an.
+
+355
+00:25:45,708 --> 00:25:46,528
+What is this?
+
+356
+00:25:48,248 --> 00:25:50,428
+An is n over n plus 1.
+
+357
+00:25:52,288 --> 00:25:55,587
+So what is an plus 1 in our general term?
+
+358
+00:25:55,587 --> 00:25:58,708
+I will write n plus 1 instead of n.
+
+359
+00:25:59,988 --> 00:26:00,688
+It is this.
+
+360
+00:26:01,887 --> 00:26:02,028
+Okay.
+
+361
+00:26:02,028 --> 00:26:08,548
+So let us write here n plus 1 over n plus 2.
+
+362
+00:26:10,008 --> 00:26:21,887
+It is n squared plus 2n plus 1 over n squared 2n.
+
+363
+00:26:22,668 --> 00:26:23,028
+Okay.
+
+364
+00:26:24,228 --> 00:26:30,827
+So you can see that it is 1 plus 1 over n squared plus 2n.
+
+365
+00:26:32,028 --> 00:26:35,627
+And I can easily see that it is greater than 1.
+
+366
+00:26:37,087 --> 00:26:39,548
+So what do we find?
+
+367
+00:26:39,548 --> 00:26:44,867
+n plus 1 over an is greater than 1.
+
+368
+00:26:45,548 --> 00:26:50,548
+It means that an plus 1 is greater than an.
+
+369
+00:26:51,048 --> 00:26:52,867
+So it is increasing.
+
+370
+00:26:52,867 --> 00:26:58,127
+Okay.
+
+371
+00:26:58,387 --> 00:26:59,587
+It is increasing.
+
+372
+00:27:00,067 --> 00:27:03,107
+So our first term is 1 over 2.
+
+373
+00:27:03,448 --> 00:27:07,087
+And all the other terms will be greater than 1 over 2.
+
+374
+00:27:07,087 --> 00:27:11,548
+So I can say that 1 over 2 is your lower bound.
+
+375
+00:27:11,548 --> 00:27:21,067
+So let's see.
+
+376
+00:27:15,763 --> 00:27:17,283
+[öğrenci], do you have any questions?
+
+377
+00:27:20,723 --> 00:27:45,343
+Okay, so what can you say about the upper bound? For the upper bound, you can look at the limit. What is your limit? You don't need to have a lower bound or upper bound, but you can have. What is, let's look at the limit also. What is that? It is n over n plus 1. The limit is 1.
+
+378
+00:27:45,343 --> 00:27:58,124
+So, in the limits, it will be equals to 1. So, I have a lower bound. Actually, it is greatest lower bound. It is the least upper bound.
+
+379
+00:27:59,983 --> 00:28:11,263
+Okay. Okay, if you remember the theorem of monotonic, if it is increasing and upper bound,
+
+380
+00:28:11,263 --> 00:28:23,503
+or if it is decreasing and lower bound, then our sequence will be convergent.
+
+381
+00:28:24,323 --> 00:28:34,303
+In our example, it is related to this one because we find that our sequence is increasing and I have upper bound,
+
+382
+00:28:34,884 --> 00:28:38,864
+so the sequence will be convergent. Okay.
+
+383
+00:28:38,864 --> 00:28:51,344
+Did you understand here? Did you understand here? First we investigate the is every sequence? No, no, no, no, no.
+
+384
+00:28:51,344 --> 00:28:59,583
+No. For example, if you have alternating sequence, you don't, maybe you have, but for every sequence, no.
+
+385
+00:29:01,043 --> 00:29:04,323
+No. Let me show some other examples.
+
+386
+00:29:08,339 --> 00:29:10,359
+Hayır, bir şey diyemezdik.
+
+387
+00:29:10,980 --> 00:29:12,419
+You can't use the theorem.
+
+388
+00:29:13,039 --> 00:29:20,519
+Because the theorem says that if you have increasing plus upper bound, then it will be convergent.
+
+389
+00:29:20,519 --> 00:29:23,659
+But if one of them is absent, you can't say.
+
+390
+00:29:24,019 --> 00:29:25,759
+It means that you can't use the theorem.
+
+391
+00:29:26,679 --> 00:29:26,799
+Okay?
+
+392
+00:29:29,240 --> 00:29:31,199
+Okay, let me give an example.
+
+393
+00:29:32,619 --> 00:29:37,199
+For example, in the lecture notes, I compare an over an.
+
+394
+00:29:37,199 --> 00:29:38,319
+No problem.
+
+395
+00:29:38,659 --> 00:29:39,740
+Both of them are true.
+
+396
+00:29:40,220 --> 00:29:41,299
+Yani şuna bakacaksınız.
+
+397
+00:29:41,419 --> 00:29:43,720
+İkisinin oranı birden büyük mü, birden küçük mü değil.
+
+398
+00:29:44,799 --> 00:29:47,399
+For example, let's look at this example.
+
+399
+00:29:57,683 --> 00:30:04,043
+If you look at this example, you can see that it is an alternating sequence because the sign is changing.
+
+400
+00:30:04,043 --> 00:30:07,543
+If n is 1, the first 1 will be 1 over 2.
+
+401
+00:30:09,723 --> 00:30:20,463
+If n is 2, it will be 1 over 4, minus 1 over 8, 1 over 16, minus 1 over 32.
+
+402
+00:30:22,963 --> 00:30:26,303
+So firstly, it is an alternating series.
+
+403
+00:30:26,303 --> 00:30:29,983
+Sorry, it is alternating sequence.
+
+404
+00:30:30,263 --> 00:30:36,403
+And in alternating sequence, you can't talk about increasing and decreasing.
+
+405
+00:30:36,844 --> 00:30:39,743
+Why? Because the sign is negative, positive, negative, positive.
+
+406
+00:30:40,064 --> 00:30:44,483
+OK, so we won't investigate increasing or decreasing.
+
+407
+00:30:44,963 --> 00:30:50,923
+Only we can talk about do we have a lower bound and upper bound.
+
+408
+00:30:51,104 --> 00:30:52,743
+OK, I will give you two minutes.
+
+409
+00:30:52,743 --> 00:30:55,384
+Everyone think about this one.
+
+410
+00:30:55,384 --> 00:30:58,263
+Do we have upper bound and lower bound?
+
+411
+00:30:58,423 --> 00:30:59,604
+If yes, what are they?
+
+412
+00:30:59,604 --> 00:31:14,283
+Thank you.
+
+413
+00:31:14,675 --> 00:31:28,915
+Okay, think about this. I will give you two minutes. Okay. And please give me two minutes. I will come after two minutes. Please everyone try to find. Okay.
+
+414
+00:33:05,748 --> 00:33:13,107
+Okay, everyone, right, 1, 1 over 2, okay, I think most of people see, okay.
+
+415
+00:33:14,408 --> 00:33:27,688
+So, if you have an alternating series, you will look at, firstly, according to sign, let's look at the negative parts, minus 1 over 2, minus 1 over 8, minus 1 over 31.
+
+416
+00:33:27,688 --> 00:33:33,708
+So, where are they? Let's see, let's see, minus 1 over 2 is this.
+
+417
+00:33:34,408 --> 00:33:36,028
+Where is minus 1 over 8?
+
+418
+00:33:37,228 --> 00:33:37,587
+Is?
+
+419
+00:33:38,587 --> 00:33:39,648
+Here or here?
+
+420
+00:33:40,768 --> 00:33:42,208
+Left side or right side?
+
+421
+00:33:47,988 --> 00:33:48,488
+Evet.
+
+422
+00:33:55,700 --> 00:33:56,819
+Minus fon over
+
+423
+00:33:56,819 --> 00:34:00,880
+32 is
+
+424
+00:34:00,880 --> 00:34:01,799
+here
+
+425
+00:34:06,003 --> 00:34:28,703
+Okay, so you can say that for negative 1, this part is minus 1 over 2. Okay, let's look at the positive 1. 1 over 4, 1 over 16, 1 over 34. So the first here is 1 over 4, 1 over 16 will be here and blah, blah, blah.
+
+426
+00:34:28,703 --> 00:34:50,123
+So you can say that the lower bound is minus 1 over 4, the upper bound will be 1 over 4. So I can say that minus 1 over 2 is the least upper bound. Sorry, the greatest upper bound and 1 over 4 will be least upper bound. Okay.
+
+427
+00:34:54,931 --> 00:34:55,371
+Okay.
+
+428
+00:34:57,711 --> 00:35:04,711
+But you can't say anything about increasing and decreasing because it is alternating series.
+
+429
+00:35:05,791 --> 00:35:06,391
+Okay.
+
+430
+00:35:06,751 --> 00:35:08,291
+Let's look at this example.
+
+431
+00:35:09,171 --> 00:35:10,431
+Let's look at 3.
+
+432
+00:35:11,071 --> 00:35:21,091
+If we have minus 1 to the power n product n, you can say that it is an alternating series, but this alternating series is not bounded.
+
+433
+00:35:21,091 --> 00:35:27,411
+Minus 1, minus 3, minus 5, it goes to minus infinity.
+
+434
+00:35:28,171 --> 00:35:32,311
+4 positive 1, 2, 4, 6, it goes to infinity.
+
+435
+00:35:32,711 --> 00:35:34,051
+So it is not bounded.
+
+436
+00:35:34,791 --> 00:35:39,111
+We don't have any upper or lower bound for this question.
+
+437
+00:35:41,051 --> 00:35:41,692
+Okay.
+
+438
+00:35:41,991 --> 00:35:44,531
+Now I want to show another example.
+
+439
+00:35:46,051 --> 00:35:48,211
+This question is different.
+
+440
+00:35:48,211 --> 00:35:51,591
+they are asking is it monotonic or not?
+
+441
+00:35:51,591 --> 00:35:51,611
+They are asking is it monotonic or not?
+
+442
+00:35:58,612 --> 00:36:02,851
+Okay, it means that they are asking if it is increasing or decreasing.
+
+443
+00:36:03,572 --> 00:36:09,572
+If your function, if your general term is complicated, you can define as a function
+
+444
+00:36:09,572 --> 00:36:16,132
+and you can use the properties of the function. How can we understand if the function is increasing
+
+445
+00:36:16,132 --> 00:36:24,052
+or decreasing? We have to look at f prime x. If it is positive, it will be increasing. If it is
+
+446
+00:36:24,052 --> 00:36:32,851
+negative, it will be decreasing. Okay, so if you can't see the general terms increasing or decreasing
+
+447
+00:36:32,851 --> 00:36:44,612
+case, I will define as a function. x over x squared plus one. But the important part actually is this.
+
+448
+00:36:44,612 --> 00:36:49,331
+You have to write the condition. Here the condition is very important. What is our condition?
+
+449
+00:36:49,331 --> 00:36:57,652
+x has to be greater or equal to our starting index is one. This is important. Okay.
+
+450
+00:37:01,012 --> 00:37:15,331
+Why it is important, I will show in the next part. Okay, let's take the derivation of f.
+
+451
+00:37:10,547 --> 00:37:16,707
+We have a division, the first function's derivation is one product, the second one,
+
+452
+00:37:19,227 --> 00:37:23,607
+minus the first function product, the second function's derivation,
+
+453
+00:37:24,607 --> 00:37:28,667
+over the second function's derivation, say square.
+
+454
+00:37:29,867 --> 00:37:39,827
+So I have 1 minus x square, okay?
+
+455
+00:37:40,547 --> 00:37:44,267
+This is x square plus 1 square.
+
+456
+00:37:45,647 --> 00:37:51,827
+Or let me write like this, 1 minus x, 1 plus x, okay?
+
+457
+00:37:52,947 --> 00:37:58,347
+If you don't write this condition, you can't say anything, okay?
+
+458
+00:37:58,767 --> 00:38:04,207
+But I know this condition, it means that x has to be greater or equal to 1.
+
+459
+00:38:04,727 --> 00:38:07,327
+So this will be positive.
+
+460
+00:38:08,367 --> 00:38:09,887
+This will be positive.
+
+461
+00:38:10,547 --> 00:38:13,087
+This will be negative.
+
+462
+00:38:13,847 --> 00:38:15,767
+So it is negative.
+
+463
+00:38:15,767 --> 00:38:28,767
+So I can say that f is decreasing, okay?
+
+464
+00:38:28,767 --> 00:38:34,807
+So the same, they have the same condition.
+
+465
+00:38:35,067 --> 00:38:37,827
+An is decreasing.
+
+466
+00:38:38,627 --> 00:38:41,347
+So it is monotonic.
+
+467
+00:38:42,987 --> 00:38:43,227
+Okay?
+
+468
+00:38:43,227 --> 00:38:55,487
+Okay, some people can say that, okay, in the definition, I have 1 and it is equality here.
+
+469
+00:38:55,487 --> 00:39:01,827
+But in the derivation, we will take the open interval.
+
+470
+00:39:02,787 --> 00:39:06,347
+If your function is here, 1 is infinity.
+
+471
+00:39:07,067 --> 00:39:15,447
+But when you take derivation, if it is f, when you take the derivation, in the derivation, the interval has to be open interval.
+
+472
+00:39:15,447 --> 00:39:16,007
+Okay?
+
+473
+00:39:16,007 --> 00:39:18,747
+So I can look at this one.
+
+474
+00:39:18,747 --> 00:39:19,007
+Okay?
+
+475
+00:39:19,007 --> 00:39:20,787
+So I can look at this one.
+
+476
+00:39:20,787 --> 00:39:22,667
+Did you understand?
+
+477
+00:39:22,667 --> 00:39:38,347
+If I want to investigate increasing or decreasing, and if your general term is not basic, if it is more complicated, then you have to write your general term as a function with the condition.
+
+478
+00:39:38,347 --> 00:39:39,567
+This is important.
+
+479
+00:39:40,267 --> 00:39:43,387
+After that, you can investigate according to function.
+
+480
+00:39:44,027 --> 00:39:45,607
+You will take the first derivation.
+
+481
+00:39:46,467 --> 00:39:48,887
+If it is positive or negative, you can say.
+
+482
+00:39:54,579 --> 00:39:57,319
+Here, you are talking about here.
+
+483
+00:39:58,480 --> 00:40:00,059
+This is your starting index.
+
+484
+00:40:01,599 --> 00:40:03,239
+Okay, this is your starting index.
+
+485
+00:40:05,960 --> 00:40:10,039
+If they don't write anything, it means that it is 1 to infinity.
+
+486
+00:40:10,340 --> 00:40:12,579
+Here, you have to take the starting index.
+
+487
+00:40:13,319 --> 00:40:14,960
+Our starting index is 1.
+
+488
+00:40:15,559 --> 00:40:15,699
+Okay?
+
+489
+00:40:17,880 --> 00:40:19,279
+Do you have any other questions?
+
+490
+00:40:19,840 --> 00:40:20,699
+I have a question here.
+
+491
+00:40:20,880 --> 00:40:22,039
+Yes.
+
+492
+00:40:23,340 --> 00:40:24,619
+Is it changed here?
+
+493
+00:40:24,980 --> 00:40:26,900
+Who wrote the question?
+
+494
+00:40:27,099 --> 00:40:29,319
+It's 1 starting index.
+
+495
+00:40:30,759 --> 00:40:31,480
+Excuse me?
+
+496
+00:40:31,920 --> 00:40:32,400
+Here?
+
+497
+00:40:34,079 --> 00:40:36,400
+You are talking...
+
+498
+00:40:36,400 --> 00:40:37,900
+Okay, can you repeat again?
+
+499
+00:40:38,500 --> 00:40:38,779
+Yeah.
+
+500
+00:40:39,279 --> 00:40:42,299
+The x plus 1 that we write, it's important.
+
+501
+00:40:42,900 --> 00:40:43,860
+How did we know it?
+
+502
+00:40:45,139 --> 00:40:45,639
+Okay.
+
+503
+00:40:46,159 --> 00:40:49,860
+Here, if you define as your function,
+
+504
+00:40:49,860 --> 00:40:52,759
+you will take the properties of the sequence.
+
+505
+00:40:53,659 --> 00:40:58,619
+So, here I will take instead of x here, x.
+
+506
+00:40:59,420 --> 00:41:00,920
+But I have a condition.
+
+507
+00:41:01,039 --> 00:41:02,679
+What is the condition for n?
+
+508
+00:41:02,759 --> 00:41:06,900
+I know that n is the index and starting from 1 in our example.
+
+509
+00:41:06,900 --> 00:41:12,319
+So, if I write x here, this is your condition.
+
+510
+00:41:12,659 --> 00:41:17,519
+For example, if I define like this, n over n plus 2,
+
+511
+00:41:18,519 --> 00:41:21,360
+for example, 3 to infinity,
+
+512
+00:41:22,039 --> 00:41:24,440
+if you want to write as a function,
+
+513
+00:41:24,639 --> 00:41:29,299
+your function will be x over x plus 2,
+
+514
+00:41:29,299 --> 00:41:34,719
+and your condition will be x is greater or equal to 3.
+
+515
+00:41:35,659 --> 00:41:35,880
+Okay?
+
+516
+00:41:36,719 --> 00:41:39,000
+In our example, they didn't say anything.
+
+517
+00:41:39,199 --> 00:41:40,319
+If they don't say anything,
+
+518
+00:41:40,460 --> 00:41:42,119
+your starting index will be 1.
+
+519
+00:41:42,579 --> 00:41:42,799
+Okay?
+
+520
+00:41:44,199 --> 00:41:46,039
+Because it's really important
+
+521
+00:41:46,039 --> 00:41:49,019
+to determine the increasing or decreasing.
+
+522
+00:41:49,019 --> 00:41:50,699
+If they don't write anything,
+
+523
+00:41:50,840 --> 00:41:51,599
+you can't decide
+
+524
+00:41:51,599 --> 00:41:54,719
+because you don't have any information about x.
+
+525
+00:41:55,039 --> 00:41:56,179
+Especially here.
+
+526
+00:41:56,940 --> 00:41:57,179
+Okay?
+
+527
+00:41:58,980 --> 00:41:59,840
+What a monotony.
+
+528
+00:42:00,259 --> 00:42:02,599
+Monotony sequence means...
+
+529
+00:42:02,599 --> 00:42:02,940
+...
+
+530
+00:42:11,315 --> 00:42:21,096
+If an is increasing or decreasing.
+
+531
+00:42:25,268 --> 00:42:27,108
+Then it is monotonic.
+
+532
+00:42:27,927 --> 00:42:29,768
+It is monotonic.
+
+533
+00:42:31,588 --> 00:42:31,847
+Okay.
+
+534
+00:42:34,007 --> 00:42:38,347
+Diziniz yakılsak ya da üreksaksa buna monotonic diyoruz.
+
+535
+00:42:38,548 --> 00:42:41,608
+Okay.
+
+536
+00:42:42,447 --> 00:42:43,268
+I have a question.
+
+537
+00:42:43,608 --> 00:42:44,847
+Yes, I'm listening.
+
+538
+00:42:44,847 --> 00:42:51,907
+Okay, so with the previous two examples, we got like a series with fractions.
+
+539
+00:42:53,628 --> 00:42:54,427
+Yes.
+
+540
+00:42:54,427 --> 00:42:55,947
+Yes, this one.
+
+541
+00:42:56,188 --> 00:42:56,668
+This one.
+
+542
+00:42:57,248 --> 00:43:04,947
+Yeah, and next we got another series and we said that it has no, it's not bounded because it's going to infinity.
+
+543
+00:43:05,268 --> 00:43:10,228
+So why is it going into infinity in this series where the fraction is not?
+
+544
+00:43:11,007 --> 00:43:11,648
+Okay.
+
+545
+00:43:12,068 --> 00:43:14,528
+You are talking about this one.
+
+546
+00:43:14,967 --> 00:43:15,088
+Okay.
+
+547
+00:43:15,608 --> 00:43:16,768
+Let me show you.
+
+548
+00:43:18,427 --> 00:43:19,108
+Okay.
+
+549
+00:43:19,108 --> 00:43:28,588
+In here, when you look at the general terms, when you look at the terms, I have two parts, negative part, positive part.
+
+550
+00:43:28,927 --> 00:43:35,568
+In the negative part, in this example, I have minus 1 over 2, minus 1 over 8, minus 1 over 30.
+
+551
+00:43:35,568 --> 00:43:40,427
+So you can see that it is the smallest one on the left side.
+
+552
+00:43:40,467 --> 00:43:46,628
+For the positive one, I have minus 1 over 4, 1 over 16, 1 over 64.
+
+553
+00:43:46,628 --> 00:43:49,788
+So it will be here, here, here, here.
+
+554
+00:43:49,788 --> 00:43:51,728
+So it will be the biggest one.
+
+555
+00:43:51,867 --> 00:43:56,387
+So it is bounded from minus 1 over 2 to 1 over 4.
+
+556
+00:43:56,387 --> 00:43:57,887
+But in here, let's see.
+
+557
+00:43:59,887 --> 00:44:01,548
+Let's look at the negative one.
+
+558
+00:44:01,728 --> 00:44:06,788
+Minus 1, minus 3, minus 5.
+
+559
+00:44:06,987 --> 00:44:10,387
+So it goes to minus infinity in the negative part.
+
+560
+00:44:10,708 --> 00:44:15,387
+In the positive part, it is 2, 4, 6.
+
+561
+00:44:15,947 --> 00:44:17,507
+It goes to infinity.
+
+562
+00:44:17,907 --> 00:44:22,007
+So you don't have any upper or lower bound in this example.
+
+563
+00:44:22,307 --> 00:44:22,708
+Got it.
+
+564
+00:44:22,768 --> 00:44:23,188
+Thank you.
+
+565
+00:44:23,407 --> 00:44:23,708
+Okay.
+
+566
+00:44:23,708 --> 00:44:27,327
+And yeah, okay.
+
+567
+00:44:29,048 --> 00:44:31,168
+Okay, I will solve the last example.
+
+568
+00:44:31,288 --> 00:44:32,668
+After that, I will take a break.
+
+569
+00:44:32,748 --> 00:44:32,987
+Okay.
+
+570
+00:44:34,048 --> 00:44:35,807
+Let's look at this example.
+
+571
+00:44:36,208 --> 00:44:37,728
+It is the same example.
+
+572
+00:44:38,007 --> 00:44:40,568
+Let's investigate it is monotonic or not.
+
+573
+00:44:40,867 --> 00:44:43,688
+Okay.
+
+574
+00:44:43,887 --> 00:44:48,668
+So it is difficult to see directly if it is increasing or decreasing.
+
+575
+00:44:48,668 --> 00:44:55,887
+So I want to define as a function x over e to the power x.
+
+576
+00:44:55,887 --> 00:45:01,927
+And our condition is x is greater or equal to 1 because they didn't give any index.
+
+577
+00:45:02,487 --> 00:45:04,648
+So our starting index will be 1.
+
+578
+00:45:05,327 --> 00:45:08,507
+After that, let us take the derivation of f.
+
+579
+00:45:10,528 --> 00:45:12,407
+Derivation of x will be 1.
+
+580
+00:45:12,847 --> 00:45:14,447
+Product, the second function.
+
+581
+00:45:15,228 --> 00:45:17,427
+Minus the first function.
+
+582
+00:45:17,608 --> 00:45:19,028
+Product, the second function.
+
+583
+00:45:19,028 --> 00:45:20,748
+is the same.
+
+584
+00:45:21,427 --> 00:45:24,028
+And x squared.
+
+585
+00:45:25,568 --> 00:45:25,967
+Okay.
+
+586
+00:45:27,088 --> 00:45:32,327
+It is 1 minus x exponent function.
+
+587
+00:45:32,987 --> 00:45:34,907
+E to the power 2x.
+
+588
+00:45:36,487 --> 00:45:36,967
+Okay.
+
+589
+00:45:37,088 --> 00:45:40,228
+I know that exponent function is a positive function.
+
+590
+00:45:40,228 --> 00:45:43,108
+This is positive.
+
+591
+00:45:44,128 --> 00:45:44,528
+Okay.
+
+592
+00:45:49,367 --> 00:45:50,588
+Let me show here.
+
+593
+00:45:50,688 --> 00:45:52,108
+This is exponent function.
+
+594
+00:45:52,288 --> 00:45:54,447
+And you can see that it will be always positive.
+
+595
+00:45:55,007 --> 00:45:57,088
+So what can you say about this?
+
+596
+00:45:57,208 --> 00:45:59,347
+For this, I have to look at the condition.
+
+597
+00:46:00,128 --> 00:46:03,748
+The condition says that x is greater or equal to 1.
+
+598
+00:46:03,748 --> 00:46:05,728
+It means that it will be negative.
+
+599
+00:46:05,728 --> 00:46:13,228
+So it is y is x is bigger or equal to 1.
+
+600
+00:46:13,228 --> 00:46:14,447
+Can't be.
+
+601
+00:46:16,724 --> 00:46:32,284
+The condition comes from your index. Index here is 1 to infinity. When you define your sequence as a function, you have to take the same conditions. In the sequence, they said that n is greater or equal to 1.
+
+602
+00:46:32,824 --> 00:46:44,484
+If I want to define this sequence as a function, I have to say, I have to make the same thing. I will write x, x, x. So this is your condition.
+
+603
+00:46:44,484 --> 00:46:52,844
+Yes. If they don't give any spatial starting index, your starting index will be 1.
+
+604
+00:46:56,004 --> 00:47:05,963
+Okay, it can be. But if they don't say anything, your starting index will be 1. But in some questions, they especially start from 0.
+
+605
+00:47:06,564 --> 00:47:08,224
+Okay, let me write an example.
+
+606
+00:47:17,844 --> 00:47:33,403
+If I want to start from 0, I have to write in the question, okay? But if I don't write anything, okay? If I don't write anything, it means that it is 1 to infinity, okay?
+
+607
+00:47:36,980 --> 00:47:38,880
+Hocam bir şey sorabilir miyim? Efendim?
+
+608
+00:47:40,139 --> 00:47:49,980
+Şey, x bir olabilir ya, neden hepsini sıfırdan göçüp yazdık, neden eşit değil, yani eşit olabilir de.
+
+609
+00:47:50,860 --> 00:47:56,059
+Yani x yerinde bir yazsak, sıfır oluyor.
+
+610
+00:47:56,059 --> 00:48:00,300
+Olmuyor, işte demin şöyle anlattım. Şimdi, okey, let me explain again.
+
+611
+00:48:00,300 --> 00:48:03,780
+Your functions domain is one to infinity.
+
+612
+00:48:04,260 --> 00:48:05,740
+Okay? It is closed.
+
+613
+00:48:06,300 --> 00:48:09,119
+But when you take in the derivation,
+
+614
+00:48:09,920 --> 00:48:11,119
+in the derivation,
+
+615
+00:48:11,980 --> 00:48:16,199
+only you will take the open form of your domain.
+
+616
+00:48:16,440 --> 00:48:18,440
+Only you can take one to infinity.
+
+617
+00:48:19,400 --> 00:48:21,139
+Domaininiz ne olursa olsun,
+
+618
+00:48:21,320 --> 00:48:23,059
+fonksiyonun türevinde yazarken,
+
+619
+00:48:23,240 --> 00:48:25,380
+domaininizin açık halini alıyorsunuz.
+
+620
+00:48:25,780 --> 00:48:27,179
+Biri alamıyorsunuz.
+
+621
+00:48:28,039 --> 00:48:30,059
+Çünkü fonksiyonun türevi bu şekilde alınıyor.
+
+622
+00:48:30,059 --> 00:48:30,719
+For example,
+
+623
+00:48:30,719 --> 00:48:37,639
+if your function is defined in the closed interval 3 to 4 or 5.
+
+624
+00:48:38,260 --> 00:48:38,559
+Okay?
+
+625
+00:48:39,019 --> 00:48:41,679
+And if you want to write any term,
+
+626
+00:48:42,519 --> 00:48:45,940
+you have to take 3, 4.
+
+627
+00:48:46,400 --> 00:48:49,960
+You don't take the left and right endpoint.
+
+628
+00:48:50,219 --> 00:48:50,400
+Okay?
+
+629
+00:48:51,159 --> 00:48:53,320
+So, we can't take one.
+
+630
+00:48:53,559 --> 00:48:54,860
+So, it will be negative.
+
+631
+00:48:55,239 --> 00:48:56,519
+So, it is decreasing.
+
+632
+00:48:56,840 --> 00:48:58,099
+So, it is monotonic.
+
+633
+00:48:58,280 --> 00:48:58,519
+Okay?
+
+634
+00:48:58,519 --> 00:49:03,780
+[öğrenci], the interval could be 2 minus infinity.
+
+635
+00:49:04,720 --> 00:49:04,960
+No.
+
+636
+00:49:05,179 --> 00:49:05,780
+Okay.
+
+637
+00:49:05,780 --> 00:49:06,980
+It can be.
+
+638
+00:49:07,360 --> 00:49:08,900
+But in our questions,
+
+639
+00:49:09,019 --> 00:49:11,800
+we talk about positive sequences.
+
+640
+00:49:12,059 --> 00:49:12,320
+Okay?
+
+641
+00:49:12,380 --> 00:49:14,840
+If you want to take a negative,
+
+642
+00:49:15,039 --> 00:49:16,340
+yes, it will be this one.
+
+643
+00:49:16,340 --> 00:49:16,860
+Okay?
+
+644
+00:49:16,860 --> 00:49:27,480
+Okay.
+
+645
+00:49:20,307 --> 00:49:26,867
+Ama bizim örneklerimizin negatif kullanmıyoruz.
+
+646
+00:49:29,027 --> 00:49:30,108
+[öğrenci]?
+
+647
+00:49:31,007 --> 00:49:32,108
+Do you have any questions?
+
+648
+00:49:33,208 --> 00:49:33,688
+[öğrenci]?
+
+649
+00:49:33,688 --> 00:49:34,568
+Sorry.
+
+650
+00:49:34,987 --> 00:49:35,768
+My name is [öğrenci].
+
+651
+00:49:36,168 --> 00:49:39,407
+But it's something like that in the last question.
+
+652
+00:49:40,467 --> 00:49:41,027
+Is it him?
+
+653
+00:49:42,128 --> 00:49:43,788
+I couldn't understand.
+
+654
+00:49:44,047 --> 00:49:45,307
+Sesim biraz şey geliyor.
+
+655
+00:49:45,847 --> 00:49:47,188
+Is it good now?
+
+656
+00:49:47,188 --> 00:49:47,827
+How is it?
+
+657
+00:49:47,827 --> 00:49:48,007
+Yes.
+
+658
+00:49:48,327 --> 00:49:48,628
+Okay.
+
+659
+00:49:48,748 --> 00:49:49,728
+It is okay now.
+
+660
+00:49:49,728 --> 00:49:50,288
+Yeah.
+
+661
+00:49:50,847 --> 00:49:52,788
+I have a question here.
+
+662
+00:49:53,007 --> 00:49:53,248
+Yes.
+
+663
+00:49:53,987 --> 00:49:56,827
+In this example, which bounds do we have?
+
+664
+00:49:56,967 --> 00:49:58,588
+Do we have a lower or upper?
+
+665
+00:49:59,208 --> 00:50:00,288
+We have just one.
+
+666
+00:50:01,068 --> 00:50:02,387
+For this example.
+
+667
+00:50:02,947 --> 00:50:03,447
+No, no, no.
+
+668
+00:50:03,628 --> 00:50:04,288
+The previous one.
+
+669
+00:50:04,648 --> 00:50:05,148
+Exponent.
+
+670
+00:50:05,987 --> 00:50:06,188
+Yeah.
+
+671
+00:50:06,367 --> 00:50:06,588
+Yes.
+
+672
+00:50:06,648 --> 00:50:08,387
+You are talking about this one.
+
+673
+00:50:10,768 --> 00:50:12,628
+I haven't investigated.
+
+674
+00:50:12,628 --> 00:50:14,467
+Can we say that?
+
+675
+00:50:16,128 --> 00:50:17,768
+It is decreasing.
+
+676
+00:50:17,768 --> 00:50:22,907
+I haven't seen this yet.
+
+677
+00:50:24,447 --> 00:50:25,688
+I have to look at.
+
+678
+00:50:26,327 --> 00:50:26,648
+Okay.
+
+679
+00:50:26,708 --> 00:50:28,668
+After the break, I will look at.
+
+680
+00:50:28,788 --> 00:50:29,648
+Okay.
+
+681
+00:50:30,007 --> 00:50:30,887
+Let's take a break.
+
+682
+00:50:30,947 --> 00:50:32,208
+In the break, I will look at.
+
+683
+00:50:32,327 --> 00:51:02,168
+Okay.
+
+684
+00:50:52,340 --> 00:50:53,800
+arkadaşı şuraya bir şey yok.
+
+685
+00:50:54,800 --> 00:50:55,980
+Türevde almıyoruz.
+
+686
+00:50:57,240 --> 00:50:58,000
+Ben onu şey yapayım.
+
+687
+00:50:58,360 --> 00:51:01,300
+Türevde açık alıyoruz.
+
+688
+00:51:02,420 --> 00:51:03,420
+O da doğru aslında.
+
+689
+00:51:03,840 --> 00:51:06,260
+Bir de de şeylikle alakası var aslında.
+
+690
+00:51:06,360 --> 00:51:08,500
+Non-incredic, non-incredicle alakası var ama
+
+691
+00:51:08,500 --> 00:51:09,900
+siz şey yapmayın, onu almayın.
+
+692
+00:51:10,980 --> 00:51:12,400
+Eşitliği almıyoruz genellikle.
+
+693
+00:51:13,019 --> 00:51:14,200
+Bazı kitaplar da alıyor,
+
+694
+00:51:14,320 --> 00:51:16,300
+bazılarını da almıyor. Biraz o konuda şey
+
+695
+00:51:16,300 --> 00:51:17,960
+oluyor bazen de. Eşitliği almayın.
+
+696
+00:51:18,720 --> 00:51:20,340
+Okay, let's take a break for
+
+697
+00:51:20,340 --> 00:51:21,900
+10 minutes. Okay, after that.
+
+698
+00:51:22,340 --> 00:51:24,400
+Last thing, professor. Yes.
+
+699
+00:51:25,059 --> 00:51:26,620
+Could you go to the third
+
+700
+00:51:26,620 --> 00:51:27,680
+unnamed PDF?
+
+701
+00:51:28,420 --> 00:51:31,780
+This one?
+
+702
+00:51:32,840 --> 00:51:34,519
+Not this, the one that
+
+703
+00:51:34,519 --> 00:51:34,920
+is before.
+
+704
+00:51:36,140 --> 00:51:37,780
+This one? Yeah, this one.
+
+705
+00:51:38,140 --> 00:51:38,880
+This one, yes.
+
+706
+00:51:51,123 --> 00:51:52,123
+Tamam, teşekkür ederim.
+
+707
+01:00:46,420 --> 01:00:48,340
+Okay, I am back.
+
+708
+01:00:56,755 --> 01:01:05,556
+Okay, related to the previous example, I look at the bound, we find that it is decreasing.
+
+709
+01:01:08,596 --> 01:01:18,615
+And if you look at the terms of the sequence, we will see the first one is 1 over e, 2 over e squared, 3 over e cubed, and blah, blah, blah.
+
+710
+01:01:18,615 --> 01:01:30,475
+And we know that it is also decreasing, so only I can say that 1 over e is an upper bound, and it will be the least upper bound.
+
+711
+01:01:43,731 --> 01:01:48,731
+Tamam. Şimdi, sekveni hakkında bir soru var mı?
+
+712
+01:01:48,731 --> 01:01:50,731
+Olsa in de...
+
+713
+01:01:55,956 --> 01:02:02,956
+Let me think about this. If I take the limits and goes to infinity, it is...
+
+714
+01:02:09,715 --> 01:02:18,036
+x over e to the power x, it is zero product infinity.
+
+715
+01:02:20,435 --> 01:02:25,096
+Okay, first we have to look at the limit. If I write the limit,
+
+716
+01:02:30,164 --> 01:02:46,704
+It will be x product 1 over e to the power of x. If I take right here, infinity, 1 over infinity is 0. It is in the termine form.
+
+717
+01:02:54,420 --> 01:02:56,320
+If I write like this,
+
+718
+01:03:01,780 --> 01:03:04,940
+0 çarpı sonsuz. O zaman ne yapacağız?
+
+719
+01:03:12,019 --> 01:03:12,519
+Teşekkürler.
+
+720
+01:03:21,460 --> 01:03:22,679
+İlim içine bakmadım hiç.
+
+721
+01:03:33,907 --> 01:03:34,547
+Ah,
+
+722
+01:03:45,588 --> 01:03:50,208
+0, 0, 0, ya da sonsuzdur, sonsuzdur getirmemiz lazım. Niye ben getiremedim bunu?
+
+723
+01:03:51,728 --> 01:03:56,768
+Professor, isn't it infinity over infinity and we can use the hospital rule?
+
+724
+01:03:57,708 --> 01:03:58,728
+Yes, yes, yes.
+
+725
+01:04:00,628 --> 01:04:02,528
+Ah, tamam, zaten öyle, pardon.
+
+726
+01:04:02,528 --> 01:04:06,868
+Okay, sorry, sorry. It is infinity over infinity. Ben ayrı yazınca it's not.
+
+727
+01:04:08,068 --> 01:04:11,088
+Okay, sorry. It is infinity over infinity.
+
+728
+01:04:13,688 --> 01:04:15,208
+Ben ayrı yazınca göremedim.
+
+729
+01:04:15,588 --> 01:04:19,048
+It is infinity over infinity.
+
+730
+01:04:19,048 --> 01:04:21,528
+If I use the log server here.
+
+731
+01:04:22,908 --> 01:04:26,827
+It will be 1 over e to the power x.
+
+732
+01:04:27,008 --> 01:04:29,608
+It will be 1 over infinity is 0.
+
+733
+01:04:29,748 --> 01:04:31,028
+Yes, yes.
+
+734
+01:04:31,428 --> 01:04:33,268
+0 will be your lower bound.
+
+735
+01:04:34,728 --> 01:04:35,008
+Okay.
+
+736
+01:04:35,608 --> 01:04:37,248
+In the infinity, it will be 0.
+
+737
+01:04:37,368 --> 01:04:43,448
+It will be positive an less or equal to 1 over e.
+
+738
+01:04:43,448 --> 01:04:43,827
+Okay.
+
+739
+01:04:47,956 --> 01:04:52,175
+It is a convergent sequence.
+
+740
+01:04:52,916 --> 01:04:56,036
+Also, you can say it because the limit is 0.
+
+741
+01:04:56,155 --> 01:04:57,115
+0 is a number.
+
+742
+01:04:58,236 --> 01:05:03,536
+So, it will be a convergent sequence.
+
+743
+01:05:04,456 --> 01:05:04,596
+Okay.
+
+744
+01:05:05,396 --> 01:05:06,776
+Okay, let's repeat again.
+
+745
+01:05:07,396 --> 01:05:09,916
+Here I take the limit of the sequence.
+
+746
+01:05:10,296 --> 01:05:12,296
+Okay, I write as a function.
+
+747
+01:05:12,796 --> 01:05:14,896
+It is x over e to the power x.
+
+748
+01:05:14,896 --> 01:05:20,096
+When you write infinity, the limit will be infinity over infinity.
+
+749
+01:05:20,816 --> 01:05:23,776
+In that case, we can use the L'Hopital rule here.
+
+750
+01:05:24,256 --> 01:05:27,796
+In the L'Hopital rule, I will take derivation of x here is 1.
+
+751
+01:05:28,396 --> 01:05:31,096
+Derivation of this exponent function is the same.
+
+752
+01:05:32,175 --> 01:05:35,036
+If I write infinity here, the limit will be 0.
+
+753
+01:05:36,076 --> 01:05:36,336
+Okay.
+
+754
+01:05:37,236 --> 01:05:42,655
+So, in the infinity, it is starting from here.
+
+755
+01:05:42,655 --> 01:05:43,756
+It is 1 over e.
+
+756
+01:05:43,756 --> 01:05:45,635
+After that, it goes here.
+
+757
+01:05:45,976 --> 01:05:48,856
+And in the infinity, it finishes with 0.
+
+758
+01:05:49,216 --> 01:05:55,155
+So, our sequence is between these two numbers.
+
+759
+01:05:56,796 --> 01:05:57,076
+Okay.
+
+760
+01:05:57,376 --> 01:06:01,396
+And also, I can say that the limit is 2 and is a number.
+
+761
+01:06:01,816 --> 01:06:04,536
+It will be a convergent sequence.
+
+762
+01:06:05,175 --> 01:06:07,635
+Okay.
+
+763
+01:06:07,716 --> 01:06:11,276
+Now, I want to start our next subject.
+
+764
+01:06:11,615 --> 01:06:13,876
+Our next subject is the series.
+
+765
+01:06:14,436 --> 01:06:16,635
+The subject is actually long.
+
+766
+01:06:16,796 --> 01:06:18,956
+We will see this week and next week.
+
+767
+01:06:19,556 --> 01:06:21,376
+But I want to start the first one.
+
+768
+01:06:22,036 --> 01:06:26,276
+In the next week, we will start to see the series test.
+
+769
+01:06:26,276 --> 01:06:34,695
+In the series, the convergent and divergent are very important subject.
+
+770
+01:06:35,336 --> 01:06:38,135
+We have to determine the character of the series.
+
+771
+01:06:38,135 --> 01:06:41,576
+If it is convergent or divergent.
+
+772
+01:06:42,356 --> 01:06:45,976
+Now, let's talk about infinite series.
+
+773
+01:06:47,596 --> 01:06:57,376
+Given a sequence of a number a n, if we take the sum of our sequence, the new form will be series.
+
+774
+01:06:57,376 --> 01:06:57,976
+Okay.
+
+775
+01:06:58,376 --> 01:07:07,976
+If we add our sequence terms, a1 plus, a2 plus, a3 plus, blah, blah, blah, blah.
+
+776
+01:07:08,296 --> 01:07:10,516
+This shows a series.
+
+777
+01:07:11,416 --> 01:07:13,135
+This is called series.
+
+778
+01:07:13,836 --> 01:07:15,396
+You don't need to say infinite.
+
+779
+01:07:15,916 --> 01:07:17,256
+It goes to infinite.
+
+780
+01:07:17,396 --> 01:07:18,396
+Series goes to infinite.
+
+781
+01:07:19,476 --> 01:07:20,296
+This is series.
+
+782
+01:07:20,296 --> 01:07:29,336
+In the sequence, in the series, we have two important parts.
+
+783
+01:07:29,496 --> 01:07:35,195
+The first one, in some series, we can find the sum, but not all of them.
+
+784
+01:07:35,695 --> 01:07:38,536
+In some kind of series, we can find the sum.
+
+785
+01:07:38,675 --> 01:07:39,856
+This is our first part.
+
+786
+01:07:40,115 --> 01:07:41,376
+This is our first topic.
+
+787
+01:07:41,876 --> 01:07:48,516
+The next part is to determine the character of the series.
+
+788
+01:07:48,516 --> 01:07:52,655
+This is the second main subject for the series.
+
+789
+01:07:53,695 --> 01:07:54,056
+Okay.
+
+790
+01:07:54,316 --> 01:08:02,276
+How can we find the sum of the series and what kind of series sum can we find?
+
+791
+01:08:03,936 --> 01:08:04,216
+Okay.
+
+792
+01:08:04,836 --> 01:08:16,235
+The sequence, sorry, let us take the series defined by a n.
+
+793
+01:08:16,235 --> 01:08:16,676
+Okay.
+
+794
+01:08:21,876 --> 01:08:23,176
+Görüyor musunuz şu an?
+
+795
+01:08:26,636 --> 01:08:27,355
+Can you see?
+
+796
+01:08:31,252 --> 01:08:33,252
+Tamam, tamam.
+
+797
+01:08:33,252 --> 01:08:35,252
+Tamam, if I want to find the...
+
+798
+01:08:35,252 --> 01:08:37,252
+...sezme...
+
+799
+01:08:37,252 --> 01:08:39,252
+...şu an değil mi?
+
+800
+01:08:45,108 --> 01:08:56,028
+Okay. Okay, how can we find the sum of a series? One second. Give me one second. Okay, the telephone.
+
+801
+01:09:08,083 --> 01:09:11,724
+Sorry, I'm at my office, so I have to look at the phone.
+
+802
+01:09:12,304 --> 01:09:17,203
+Okay, so how can we find a sum of a series?
+
+803
+01:09:18,783 --> 01:09:22,184
+It goes to infinity, so I can't find all the infinity.
+
+804
+01:09:22,184 --> 01:09:27,804
+In that case, I will find the first key sum.
+
+805
+01:09:28,043 --> 01:09:28,644
+What is that?
+
+806
+01:09:29,104 --> 01:09:30,043
+The partial sum.
+
+807
+01:09:30,123 --> 01:09:31,363
+What is our partial sum?
+
+808
+01:09:31,823 --> 01:09:33,724
+S1 shows A1.
+
+809
+01:09:35,163 --> 01:09:37,923
+S2 shows A1 plus A2.
+
+810
+01:09:38,083 --> 01:09:42,423
+S3 shows A1 plus A2 plus A3.
+
+811
+01:09:42,724 --> 01:09:46,823
+Sn will be the first n term sum.
+
+812
+01:09:46,823 --> 01:09:50,523
+Okay, I will find firstly partial sum.
+
+813
+01:09:50,644 --> 01:09:54,663
+The partial sum is the first n term sum.
+
+814
+01:09:55,703 --> 01:10:02,543
+Okay, after that, if I take limit angles to infinity of Sn,
+
+815
+01:10:02,543 --> 01:10:09,163
+this will give the sum of our series.
+
+816
+01:10:10,384 --> 01:10:10,743
+Okay?
+
+817
+01:10:10,743 --> 01:10:21,423
+This shows the sum of the series, but only a few type of series I can find the sum.
+
+818
+01:10:21,423 --> 01:10:26,844
+What we made here, we find the first n terms sum.
+
+819
+01:10:27,264 --> 01:10:32,083
+After that, I will find like this, for example, 1 over n plus 2.
+
+820
+01:10:32,083 --> 01:10:37,724
+And after that, I will take the sum of this sum.
+
+821
+01:10:38,043 --> 01:10:43,163
+If it is a number, then it will be the sum of this series.
+
+822
+01:10:43,743 --> 01:10:44,003
+Okay?
+
+823
+01:10:44,003 --> 01:10:47,963
+Let me give some examples.
+
+824
+01:10:47,963 --> 01:11:10,344
+Okay.
+
+825
+01:11:07,923 --> 01:11:08,783
+Bir katı şey, bir katı şey.
+
+826
+01:11:13,108 --> 01:11:39,927
+Okay, first let me continue. I will show here. Okay, did you understand the concept of the sum? We will find the first and term sum. After that, we will take the limit of this term. But only we have three main known series. The first one is geometric series.
+
+827
+01:11:39,927 --> 01:11:57,927
+Okay. We have three different kinds of series and we know the character of the series, the sum of the series. The first one is geometric series. The other one is P series.
+
+828
+01:12:02,739 --> 01:12:08,119
+And also I will talk about harmonic series here. It is a special case of P series.
+
+829
+01:12:15,220 --> 01:12:17,740
+And the last one is telescopic.
+
+830
+01:12:28,372 --> 01:12:37,372
+If our series is geometric or telescopic series, we can find the sum.
+
+831
+01:12:37,832 --> 01:12:43,012
+But for all the other series, I can't find the sum.
+
+832
+01:12:43,372 --> 01:12:46,972
+Only I can investigate the character of the series.
+
+833
+01:12:46,972 --> 01:12:52,992
+But if we talk about the sum, I can find the sum of geometric and telescopic series.
+
+834
+01:12:53,512 --> 01:12:54,952
+What is geometric series?
+
+835
+01:12:55,372 --> 01:12:56,472
+Let me write here.
+
+836
+01:12:56,472 --> 01:13:11,912
+The geometric series is in the form of n from 1 to infinity, a product r to the power n minus 1.
+
+837
+01:13:11,912 --> 01:13:14,972
+This series is called geometric series.
+
+838
+01:13:15,112 --> 01:13:15,912
+What is this?
+
+839
+01:13:16,072 --> 01:13:25,172
+It is a plus a r plus a r square plus blah blah blah.
+
+840
+01:13:25,172 --> 01:13:29,311
+This is called geometric series.
+
+841
+01:13:30,512 --> 01:13:37,432
+In the geometric series, I know all the characteristic properties of the geometric series.
+
+842
+01:13:37,771 --> 01:13:38,372
+What are they?
+
+843
+01:13:38,872 --> 01:13:39,692
+The first one.
+
+844
+01:13:40,152 --> 01:13:44,692
+If the absolute value of r, here r is a number.
+
+845
+01:13:45,032 --> 01:13:45,112
+Okay.
+
+846
+01:13:45,811 --> 01:13:47,132
+R is a number.
+
+847
+01:13:47,252 --> 01:13:49,572
+And in some cases, it can be a variable.
+
+848
+01:13:49,572 --> 01:13:50,052
+Okay.
+
+849
+01:13:50,632 --> 01:13:55,572
+If the absolute value of r is less than 1, then...
+
+850
+01:13:55,572 --> 01:13:56,572
+Okay.
+
+851
+01:13:56,572 --> 01:14:16,572
+I'm going to write here.
+
+852
+01:15:44,500 --> 01:15:46,579
+Hocam mikrofonunuz kapalı duymuş.
+
+853
+01:15:46,739 --> 01:15:47,899
+Tamam. Şimdi oldu.
+
+854
+01:15:48,340 --> 01:15:51,340
+Bilmiyorum. İnternet gitti geldi şimdi okulda ama geldi şimdi.
+
+855
+01:15:52,180 --> 01:15:53,180
+Okay. Let's continue.
+
+856
+01:15:54,500 --> 01:16:01,420
+I said that this is a geometric series and in the geometric series we have some properties.
+
+857
+01:16:01,420 --> 01:16:12,399
+The first one, if the absolute value of R is less than 1, then R series will be convergent and the sum of the series will be A over 1 minus R.
+
+858
+01:16:12,399 --> 01:16:25,380
+If R is greater or equal to 1 and if A is positive, it will be divergent to infinity.
+
+859
+01:16:26,239 --> 01:16:39,779
+If absolute value of R is greater than 1 or equal to 1 and if A is negative, then it will be divergent and it goes to minus infinity.
+
+860
+01:16:39,779 --> 01:16:53,020
+If R is less than or equal to minus 1 and if A is non-negative, it will be divergent but not plus or minus infinity.
+
+861
+01:16:53,399 --> 01:16:53,539
+Okay.
+
+862
+01:16:54,000 --> 01:16:57,180
+This is the main properties of geometric series.
+
+863
+01:16:57,180 --> 01:17:05,500
+But in the geometric series, two important parts I want to talk about.
+
+864
+01:17:05,699 --> 01:17:13,760
+The first one, your starting index, if it is 1, this will be n minus 1.
+
+865
+01:17:13,760 --> 01:17:23,239
+Or if your starting index is 0, okay, in that case, this part has to be n.
+
+866
+01:17:24,020 --> 01:17:24,340
+Okay.
+
+867
+01:17:24,800 --> 01:17:27,239
+Actually, these two written are the same.
+
+868
+01:17:28,060 --> 01:17:32,579
+But this is important, especially it is important in the sum.
+
+869
+01:17:33,500 --> 01:17:37,380
+In the character, okay, no problem because the character is related to R.
+
+870
+01:17:37,380 --> 01:17:41,819
+But these two parts are important in the sum.
+
+871
+01:17:42,420 --> 01:17:42,600
+Okay.
+
+872
+01:17:44,140 --> 01:17:45,800
+Before this, I want to...
+
+873
+01:17:45,800 --> 01:17:48,140
+Did you see the series in the high school?
+
+874
+01:17:49,420 --> 01:17:51,560
+Do you know how to change the index?
+
+875
+01:17:54,659 --> 01:17:56,899
+Index'si nasıl değiştirmeyi hatırlıyor musunuz?
+
+876
+01:17:56,899 --> 01:17:59,020
+For example, let me give some examples.
+
+877
+01:18:00,020 --> 01:18:01,899
+For example, 2 to infinity.
+
+878
+01:18:01,899 --> 01:18:07,000
+If I have n plus 2, for example.
+
+879
+01:18:07,840 --> 01:18:10,800
+Now here, I want to change the index from 0.
+
+880
+01:18:10,880 --> 01:18:13,619
+I want to start from 0 to infinity.
+
+881
+01:18:14,739 --> 01:18:15,680
+If you...
+
+882
+01:18:21,076 --> 01:18:25,796
+Arkadaşlar birinizin mikrofonu açık ama kimin bilmiyorum nasıl kapatacağım.
+
+883
+01:18:25,796 --> 01:18:55,796
+İkincisi, bu şekilde yapmak için bir şey yapmak için bir şey yapmak için bir şey yapmak için bir şey yapmak için bir şey yapmak için bir şey yapmak için bir şey yapmak için bir şey yapmak için bir şey yapmak için bir şey yapmak için bir şey yapmak için bir şey yapmak için bir şey yapmak için bir şey yapmak için bir şey yapmak için bir şey yapmak için bir şey yapmak için bir şey yapmak için bir şey yapmak için bir şey yapmak için bir şey yapmak için bir şey yapmak için bir şey yapmak için bir şey yapmak için bir şey yapmak için bir şey yapmak için bir şey yapmak için bir şey yapmak için bir şey yapmak için bir şey yapmak için bir şey yapmak için bir şey yapmak için bir şey yapmak için bir şey yapmak için bir şey yapmak için bir şey yapmak için bir şey yapmak için bir şey yapmak için bir şey yapmak için bir şey yapmak için bir şey yapmak için bir şey yapmak için bir şey yap
+
+884
+01:18:55,796 --> 01:19:25,796
+bir şey yapmak için bir şey yapmak için bir şey yapmak için bir şey yapmak için bir şey yapmak için bir şey yapmak için bir şey yapmak için bir şey yapmak için bir şey yapmak için bir şey yapmak için bir şey yapmak için bir şey yapmak için bir şey yapmak için bir şey yapmak için bir şey yapmak için bir şey yapmak için bir şey yapmak için bir şey yapmak için bir şey yapmak için bir şey yapmak için bir şey yapmak için bir şey yapmak için bir şey yapmak için bir şey yapmak için bir şey yapmak için bir şey yapmak için bir şey yapmak için bir şey yapmak için bir şey yapmak için bir şey yapmak için bir şey yapmak için bir şey yapmak için bir şey yapmak için bir şey yapmak için bir şey yapmak için bir şey yapmak için bir şey yapmak için bir şey yapmak için bir şey yapmak için bir şey yapmak için bir şey yapmak için bir şey yapmak için bir şey yapmak için bir şey yapmak için bir
+
+885
+01:19:25,796 --> 01:19:55,796
+yapmak için bir şey yapmak için bir şey yapmak için bir şey yapmak için bir şey yapmak için bir şey yapmak için bir şey yapmak için bir şey yapmak için bir şey yapmak için bir şey yapmak için bir şey yapmak için bir şey yapmak için bir şey yapmak için bir şey yapmak için bir şey yapmak için bir şey yapmak için bir şey yapmak için bir şey yapmak için bir şey yapmak için bir şey yapmak için bir şey yapmak için bir şey yapmak için bir şey yapmak için bir şey yapmak için bir şey yapmak için bir şey yapmak için bir şey yapmak için bir şey yapmak için bir şey yapmak için bir şey yapmak için bir şey yapmak için bir şey yapmak için bir şey yapmak için bir şey yapmak için bir şey yapmak için bir şey yapmak için bir şey yapmak için bir şey yapmak için bir şey yapmak için bir şey yapmak için bir şey yapmak için bir şey yapmak için bir şey yapmak için bir şey yapmak için bir şey yap
+
+886
+01:19:55,796 --> 01:20:17,355
+bir şey yapmak için bir şey yapmak için bir şey yapmak için bir şey yapmak için bir şey yapmak için bir şey yapmak için bir şey yapmak için bir şey yapmak için bir şey yapmak için bir şey yapmak için bir şey yapmak için bir şey yapmak için bir şey yapmak için bir şey yapmak için bir şey yapmak için bir şey yapmak için bir şey yapmak için bir şey yapmak için bir şey yapmak için bir şey yapmak için bir şey yapmak için bir şey yapmak için bir şey yapmak için bir şey yapmak için bir şey yapmak için bir şey yapmak için bir şey yapmak için bir şey yapmak için bir şey yapmak için bir şey yapmak için bir şey yapmak için bir şey yapmak için bir şey yapmak için bir şey yapmak için bir şey yapmak için bir şey yapmak için bir şey yapmak için bir şey yapmak için bir şey yapmak için bir şey yapmak için bir şey yapmak için bir şey yapmak için bir şey yapmak için bir şey yapmak için bir
+
+887
+01:20:21,043 --> 01:20:23,163
+This is called harmonic series.
+
+888
+01:20:23,724 --> 01:20:27,543
+Actually it is P series but it has a special name.
+
+889
+01:20:28,743 --> 01:20:28,804
+Okay.
+
+890
+01:20:29,983 --> 01:20:35,003
+And you can easily see that harmonic series is a divergent series.
+
+891
+01:20:35,363 --> 01:20:37,283
+Because P here is 1.
+
+892
+01:20:39,323 --> 01:20:41,783
+Okay.
+
+893
+01:20:41,783 --> 01:20:48,104
+Before the telescopic series I want to make some examples about the geometric series.
+
+894
+01:20:48,503 --> 01:20:48,644
+Okay.
+
+895
+01:20:48,644 --> 01:20:51,163
+Let's see some examples.
+
+896
+01:20:52,123 --> 01:20:52,943
+The first one.
+
+897
+01:20:53,344 --> 01:20:54,983
+Find the sum of the series.
+
+898
+01:20:55,344 --> 01:20:57,243
+So we have only one harmonic.
+
+899
+01:20:59,163 --> 01:20:59,663
+Yes.
+
+900
+01:20:59,783 --> 01:21:02,623
+1 over n is called harmonic series.
+
+901
+01:21:02,863 --> 01:21:05,543
+Yes.
+
+902
+01:21:05,783 --> 01:21:07,203
+Harmonic series is 1 over n.
+
+903
+01:21:08,903 --> 01:21:10,184
+One second.
+
+904
+01:21:11,264 --> 01:21:13,463
+1 over n is harmonic series.
+
+905
+01:21:13,663 --> 01:21:15,003
+1 over n squared.
+
+906
+01:21:15,003 --> 01:21:20,283
+Or 1 over n to the power 3 over 2.
+
+907
+01:21:20,423 --> 01:21:21,583
+This is P series.
+
+908
+01:21:22,083 --> 01:21:23,363
+This is also P series.
+
+909
+01:21:23,503 --> 01:21:25,764
+But it has a special name.
+
+910
+01:21:25,844 --> 01:21:26,543
+Harmonic series.
+
+911
+01:21:27,344 --> 01:21:29,023
+This is divergent.
+
+912
+01:21:29,463 --> 01:21:31,403
+This is convergent.
+
+913
+01:21:31,483 --> 01:21:32,583
+Because P is 2.
+
+914
+01:21:32,703 --> 01:21:35,304
+This is also convergent.
+
+915
+01:21:35,304 --> 01:21:38,943
+But 1 over n to the power 1 over 2.
+
+916
+01:21:38,943 --> 01:21:39,844
+What is P?
+
+917
+01:21:40,163 --> 01:21:42,003
+P here is 1 over 2.
+
+918
+01:21:42,224 --> 01:21:43,684
+It is less than 1.
+
+919
+01:21:43,884 --> 01:21:45,323
+It is divergent.
+
+920
+01:21:46,123 --> 01:21:46,264
+Okay.
+
+921
+01:21:46,264 --> 01:21:50,644
+All of them are P series.
+
+922
+01:21:50,884 --> 01:21:53,943
+But 1 over n has a special name.
+
+923
+01:21:54,363 --> 01:21:55,423
+It is harmonic series.
+
+924
+01:21:56,503 --> 01:21:57,163
+The character.
+
+925
+01:21:57,163 --> 01:22:01,283
+Yes.
+
+926
+01:22:01,384 --> 01:22:01,963
+It can be.
+
+927
+01:22:02,123 --> 01:22:03,123
+It can be negative.
+
+928
+01:22:03,323 --> 01:22:03,523
+But.
+
+929
+01:22:04,483 --> 01:22:07,184
+1 over n to the power P.
+
+930
+01:22:07,283 --> 01:22:08,703
+You have to look at this P.
+
+931
+01:22:09,104 --> 01:22:11,644
+But P can be also negative.
+
+932
+01:22:12,123 --> 01:22:13,043
+If it is negative.
+
+933
+01:22:13,323 --> 01:22:14,344
+It will be n squared.
+
+934
+01:22:14,443 --> 01:22:14,963
+For example.
+
+935
+01:22:15,724 --> 01:22:16,344
+What is this?
+
+936
+01:22:16,663 --> 01:22:18,923
+1 over n to the power minus 2.
+
+937
+01:22:18,983 --> 01:22:19,764
+It is n squared.
+
+938
+01:22:20,104 --> 01:22:21,463
+And you can easily see that.
+
+939
+01:22:21,463 --> 01:22:22,963
+It is divergent.
+
+940
+01:22:25,043 --> 01:22:27,523
+Okay.
+
+941
+01:22:27,604 --> 01:22:27,844
+Now.
+
+942
+01:22:28,023 --> 01:22:29,663
+Let's look at the first example.
+
+943
+01:22:29,943 --> 01:22:31,304
+Find the sum of the series.
+
+944
+01:22:31,823 --> 01:22:32,623
+I said that.
+
+945
+01:22:33,023 --> 01:22:35,264
+We can find the sum.
+
+946
+01:22:35,503 --> 01:22:36,764
+For two kind of series.
+
+947
+01:22:36,943 --> 01:22:37,644
+The first one.
+
+948
+01:22:37,863 --> 01:22:39,203
+Is geometric series.
+
+949
+01:22:39,503 --> 01:22:40,543
+Or the second one.
+
+950
+01:22:40,663 --> 01:22:41,823
+Is telescopic series.
+
+951
+01:22:42,344 --> 01:22:44,543
+This is related to geometric series.
+
+952
+01:22:45,184 --> 01:22:45,884
+Before that.
+
+953
+01:22:46,184 --> 01:22:47,363
+We have to write.
+
+954
+01:22:47,503 --> 01:22:48,423
+The general term.
+
+955
+01:22:48,483 --> 01:22:49,323
+Of this series.
+
+956
+01:22:49,804 --> 01:22:50,043
+Okay.
+
+957
+01:22:52,523 --> 01:22:53,703
+Let us write.
+
+958
+01:22:53,844 --> 01:22:54,743
+The general term.
+
+959
+01:22:54,863 --> 01:22:55,564
+Let us write.
+
+960
+01:22:55,724 --> 01:22:56,724
+The clause form.
+
+961
+01:22:56,724 --> 01:22:57,644
+Of this series.
+
+962
+01:22:57,823 --> 01:22:58,083
+Okay.
+
+963
+01:23:00,083 --> 01:23:14,503
+What is that?
+
+964
+01:23:04,372 --> 01:23:05,012
+Ok.
+
+965
+01:23:15,028 --> 01:23:18,288
+You can see that it is 1 over 2 to the power.
+
+966
+01:23:21,347 --> 01:23:30,828
+I want to write n. Let's see. If I write n, you have to start with 0, but I want to write n-1.
+
+967
+01:23:31,448 --> 01:23:36,028
+If you start with n-1, n will start from...
+
+968
+01:23:43,028 --> 01:24:00,967
+Okay, let's see. If 1, I will have 1 to the power. So, it is 1. The first term is 1. Okay. If n is 2, 1 over 2, 1 over 4, 1 over 8. Okay. So, this is the closed form of this sum.
+
+969
+01:24:00,967 --> 01:24:14,068
+So, your starting index is 1. Yes. Your index is n minus, your power is n minus 1. Yes. So, it is the written of geometric series. Now.
+
+970
+01:24:18,452 --> 01:24:27,652
+What do we know about the geometric series? If I want to sum, firstly from here I have to determine what is A, what is R.
+
+971
+01:24:32,435 --> 01:24:56,456
+A? A is outside, here. There is nothing. It means that it is 1. What is R? R is inside of the power. It is 1 over 2. After that, for the convergent, because the sum can be infinity, first I have to determine that it is convergent or divergent.
+
+972
+01:24:56,456 --> 01:25:24,335
+What is absolute value of R? It is 1 over 2. It is less than 1. It is convergent. It means that I can find the sum. What is R sum? Sum is A over 1 minus R. What is this? A is 1. 1 minus R is 1 over 2. It will be 1 over 1 over 2. So the sum will be 2.
+
+973
+01:25:28,115 --> 01:25:44,435
+And here you have to be careful, in some questions R can be negative also. So you have to look at the absolute value here. And in here you have to be careful about this. In some cases R can be negative also. Okay? Do you have any question here?
+
+974
+01:25:50,676 --> 01:25:55,636
+I think you don't have any question. Let me look at the second example.
+
+975
+01:26:05,971 --> 01:26:06,331
+Ok.
+
+976
+01:26:10,323 --> 01:26:14,103
+If R is negative 2 and you should be negative.
+
+977
+01:26:15,363 --> 01:26:17,723
+The character is divergent.
+
+978
+01:26:17,943 --> 01:26:19,083
+So you don't have any sum.
+
+979
+01:26:19,763 --> 01:26:27,844
+If it is divergent, it will be plus minus infinity or anything else.
+
+980
+01:26:27,844 --> 01:26:35,243
+For example, if R is minus 2 in the absolute value of R will be positive greater than 1.
+
+981
+01:26:35,344 --> 01:26:36,683
+It will be divergent.
+
+982
+01:26:36,683 --> 01:26:40,323
+In our question, A is 1, A is positive.
+
+983
+01:26:40,683 --> 01:26:43,344
+So it will be divergent to infinity.
+
+984
+01:26:44,483 --> 01:26:44,703
+Okay.
+
+985
+01:26:48,595 --> 01:26:51,955
+Only if it is convergent, you can find the sum, okay?
+
+986
+01:26:54,815 --> 01:27:00,755
+Okay, the question is this, find the sum of this sequence, series, pardon.
+
+987
+01:27:01,455 --> 01:27:03,695
+Okay, so what is your sum?
+
+988
+01:27:04,835 --> 01:27:08,695
+I want to start from 1 to infinity, okay?
+
+989
+01:27:09,355 --> 01:27:12,435
+And I want to write n-1.
+
+990
+01:27:12,435 --> 01:27:18,895
+Okay, what I will write inside and what I will write outside.
+
+991
+01:27:19,755 --> 01:27:20,675
+Think about this.
+
+992
+01:27:25,747 --> 01:27:27,387
+Okay, I'm waiting two minutes.
+
+993
+01:27:27,587 --> 01:27:30,127
+Everyone tries to write the...
+
+994
+01:31:22,323 --> 01:31:28,103
+Evet arkadaşlar, geldi. Ya okulun internetinden mi sıkıntı var? Anlayamadım. İlk defa okuldan anlatıyorum.
+
+995
+01:31:30,623 --> 01:31:32,503
+Evet, şimdi hemen açıyorum.
+
+996
+01:31:37,876 --> 01:31:52,376
+Okay, so I want to give you a hint. Okay, if you write p outside, you will have this series, this sum. Okay, now what I will write inside?
+
+997
+01:31:54,376 --> 01:32:00,376
+You say that minus e over pi.
+
+998
+01:32:11,347 --> 01:32:13,368
+Outside, I have pi.
+
+999
+01:32:14,807 --> 01:32:15,927
+Okay, let's see.
+
+1000
+01:32:16,448 --> 01:32:19,688
+If n is 1, I will have only pi, yes.
+
+1001
+01:32:19,807 --> 01:32:23,148
+If n is 2, I will have minus e, yes.
+
+1002
+01:32:23,648 --> 01:32:26,807
+If n is 3, it will be e squared, okay.
+
+1003
+01:32:27,268 --> 01:32:30,547
+So, this is the closed form of our series.
+
+1004
+01:32:30,827 --> 01:32:32,148
+This is the geometric series.
+
+1005
+01:32:32,148 --> 01:32:42,007
+In our geometric series, a will be pi, r will be minus e over pi.
+
+1006
+01:32:43,707 --> 01:32:44,427
+Okay.
+
+1007
+01:32:45,087 --> 01:32:47,988
+So, firstly, I have to look at the character.
+
+1008
+01:32:49,287 --> 01:32:49,667
+Okay.
+
+1009
+01:32:50,167 --> 01:32:57,488
+In the absolute value of r will be e over pi, and it is less or greater than 1.
+
+1010
+01:32:58,387 --> 01:33:01,728
+a is 2.5, pi is 3.
+
+1011
+01:33:01,728 --> 01:33:31,707
+It will be less or greater than 1.
+
+1012
+01:33:31,728 --> 01:33:32,728
+minus e over pi.
+
+1013
+01:33:32,728 --> 01:33:34,728
+So, it will be minus e over pi.
+
+1014
+01:33:34,728 --> 01:33:35,728
+Okay.
+
+1015
+01:33:35,728 --> 01:33:44,368
+So, it will be pi squared over e plus pi.
+
+1016
+01:33:47,604 --> 01:33:50,104
+Okay, this is your sum.
+
+1017
+01:33:51,604 --> 01:33:58,984
+If r is negative, you have to be careful, especially in the sum, because you can make wrong, especially at this part.
+
+1018
+01:33:59,804 --> 01:34:03,684
+Okay, do you have any question here?
+
+1019
+01:34:09,235 --> 01:34:09,536
+Ok.
+
+1020
+01:34:18,579 --> 01:34:19,819
+Let's look at this one.
+
+1021
+01:34:20,500 --> 01:34:20,680
+Okay.
+
+1022
+01:34:22,079 --> 01:34:23,939
+I will solve one more question.
+
+1023
+01:34:24,199 --> 01:34:25,140
+I will solve this one.
+
+1024
+01:34:25,220 --> 01:34:26,239
+After that I will finish.
+
+1025
+01:34:26,359 --> 01:34:29,300
+But I want to solve a little bit about 3.
+
+1026
+01:34:30,199 --> 01:34:31,920
+This is a similar question.
+
+1027
+01:34:31,920 --> 01:34:40,300
+Here you can see that it is 2 to the power 0, 1 over 2, 2, 3 over 2.
+
+1028
+01:34:40,460 --> 01:34:45,359
+So the closed form of this geometric series is this.
+
+1029
+01:34:45,359 --> 01:34:48,640
+Here A is there is nothing.
+
+1030
+01:34:48,779 --> 01:34:49,359
+It is 1.
+
+1031
+01:34:49,939 --> 01:34:53,800
+R is 2 to the power 1 over 2.
+
+1032
+01:34:53,819 --> 01:34:54,840
+It is square root 2.
+
+1033
+01:34:55,880 --> 01:34:56,119
+Okay.
+
+1034
+01:34:56,619 --> 01:34:59,439
+And what is the absolute value of R?
+
+1035
+01:35:00,000 --> 01:35:03,699
+Square root 2 is greater than 1.
+
+1036
+01:35:04,439 --> 01:35:06,519
+It means that it is divergent.
+
+1037
+01:35:06,819 --> 01:35:08,619
+So we don't have some.
+
+1038
+01:35:08,619 --> 01:35:16,000
+Or I can say that it depends on your question in the test.
+
+1039
+01:35:16,140 --> 01:35:20,340
+I can say that it is divergent to.
+
+1040
+01:35:20,960 --> 01:35:22,100
+What is A?
+
+1041
+01:35:22,239 --> 01:35:23,300
+A is 1.
+
+1042
+01:35:23,819 --> 01:35:25,239
+Is greater than 1.
+
+1043
+01:35:25,420 --> 01:35:27,579
+It is divergent to infinity.
+
+1044
+01:35:28,260 --> 01:35:31,840
+Okay.
+
+1045
+01:35:31,920 --> 01:35:34,000
+Now I want to look at the last example.
+
+1046
+01:35:34,939 --> 01:35:36,920
+After this I just finished for today.
+
+1047
+01:35:36,920 --> 01:35:46,500
+Prove that this written can be
+
+1048
+01:35:46,500 --> 01:35:47,539
+this
+
+1049
+01:35:47,539 --> 01:35:54,239
+this number can be written as a ratio of two integers.
+
+1050
+01:35:54,760 --> 01:35:57,039
+I think you'll see in high school what is that?
+
+1051
+01:35:58,319 --> 01:36:03,760
+Hocam direkt n olarak verilirse veya n2 olarak olursa n-1'in içerisinde gerekir.
+
+1052
+01:36:03,760 --> 01:36:06,359
+Evet.
+
+1053
+01:36:07,319 --> 01:36:08,460
+Sam'ı soruyorsa evet.
+
+1054
+01:36:08,680 --> 01:36:10,340
+Ona göre düzenlemeniz gerekiyor.
+
+1055
+01:36:11,479 --> 01:36:15,119
+Fazlalık olursa onu ben size örnek olarak çözeceğim sonra.
+
+1056
+01:36:15,659 --> 01:36:18,960
+Ama sam'la ilgili evet n-1 olması gerekiyor.
+
+1057
+01:36:19,079 --> 01:36:20,699
+Ama indeksinde 1 olması gerekiyor.
+
+1058
+01:36:20,800 --> 01:36:23,800
+1 değil farklıysa ona göre çıkartma falan yapacağız.
+
+1059
+01:36:23,899 --> 01:36:25,239
+Ben onunla ilgili soru çözeceğim size.
+
+1060
+01:36:25,239 --> 01:36:29,880
+If you remember it is in the high school.
+
+1061
+01:36:30,039 --> 01:36:30,640
+What is this?
+
+1062
+01:36:30,739 --> 01:36:33,059
+It is 32 over 99.
+
+1063
+01:36:33,279 --> 01:36:38,699
+They said that proof that this number can be written.
+
+1064
+01:36:39,979 --> 01:36:41,899
+It will be equal to this one.
+
+1065
+01:36:42,519 --> 01:36:42,819
+Okay.
+
+1066
+01:36:43,239 --> 01:36:47,600
+Can you write this number as a series?
+
+1067
+01:36:47,600 --> 01:36:54,260
+This is 3, 32, 32, 32.
+
+1068
+01:36:56,260 --> 01:37:12,739
+Or I can write that 0, 32 plus 0, 00, 32 plus 0, 1, 2, 3, 4, 32.
+
+1069
+01:37:12,739 --> 01:37:16,920
+Okay.
+
+1070
+01:37:17,399 --> 01:37:19,779
+Let's see these terms separately.
+
+1071
+01:37:19,939 --> 01:37:20,640
+What is this?
+
+1072
+01:37:21,899 --> 01:37:24,340
+32 over 100.
+
+1073
+01:37:24,340 --> 01:37:43,340
+33.
+
+1074
+01:37:43,340 --> 01:37:47,340
+34.
+
+1075
+01:37:47,340 --> 01:37:54,340
+35.
+
+1076
+01:37:27,796 --> 01:37:33,016
+32, 100, square.
+
+1077
+01:37:34,676 --> 01:37:41,296
+This part is 32, 100, iki dört alt.
+
+1078
+01:37:43,876 --> 01:37:44,516
+Okay?
+
+1079
+01:37:46,376 --> 01:37:50,256
+So, what is the closed form? What can I write here?
+
+1080
+01:37:50,996 --> 01:37:53,396
+I want to start from 1 to infinity.
+
+1081
+01:37:53,396 --> 01:37:58,716
+And here, I want to write as n-1.
+
+1082
+01:37:59,036 --> 01:38:00,775
+What is a? What is r?
+
+1083
+01:38:00,836 --> 01:38:01,936
+Let's start with r.
+
+1084
+01:38:02,096 --> 01:38:02,775
+What is this?
+
+1085
+01:38:07,380 --> 01:38:11,039
+You can see that at each term 32 is the same.
+
+1086
+01:38:11,359 --> 01:38:13,359
+So I can write 32 outside.
+
+1087
+01:38:14,420 --> 01:38:17,119
+If I write 1 over 100.
+
+1088
+01:38:17,800 --> 01:38:18,000
+Okay.
+
+1089
+01:38:21,140 --> 01:38:22,500
+Okay let's see.
+
+1090
+01:38:22,500 --> 01:38:25,119
+If n is started to 1.
+
+1091
+01:38:25,760 --> 01:38:26,199
+I will.
+
+1092
+01:38:26,480 --> 01:38:28,440
+I have this part will be 1.
+
+1093
+01:38:28,560 --> 01:38:32,039
+But in the first term I have 32 over 100.
+
+1094
+01:38:32,359 --> 01:38:34,319
+So 100 is missing here.
+
+1095
+01:38:34,319 --> 01:38:38,140
+Now let's look at it is okay or not.
+
+1096
+01:38:38,659 --> 01:38:39,800
+If n is 1.
+
+1097
+01:38:39,900 --> 01:38:41,619
+I have 32 over 100.
+
+1098
+01:38:41,940 --> 01:38:42,239
+Yes.
+
+1099
+01:38:42,720 --> 01:38:43,739
+If n is 2.
+
+1100
+01:38:43,840 --> 01:38:46,900
+I have 32 over 100 square.
+
+1101
+01:38:47,060 --> 01:38:47,420
+Yes.
+
+1102
+01:38:47,420 --> 01:38:49,920
+So this is your geometric series.
+
+1103
+01:38:50,659 --> 01:38:52,140
+So in our geometric series.
+
+1104
+01:38:52,319 --> 01:38:55,400
+A is 32 over 100.
+
+1105
+01:38:57,640 --> 01:39:00,560
+R is 1 over 100.
+
+1106
+01:39:01,420 --> 01:39:01,520
+Okay.
+
+1107
+01:39:01,520 --> 01:39:07,319
+And r is 1 over 100.
+
+1108
+01:39:07,600 --> 01:39:09,000
+And it is less than 1.
+
+1109
+01:39:09,199 --> 01:39:10,239
+It is converged.
+
+1110
+01:39:11,539 --> 01:39:11,819
+Okay.
+
+1111
+01:39:12,579 --> 01:39:14,260
+So what is your sum?
+
+1112
+01:39:14,680 --> 01:39:18,739
+Sum will be a over 1 minus r.
+
+1113
+01:39:19,760 --> 01:39:20,760
+Let's write.
+
+1114
+01:39:21,260 --> 01:39:24,220
+A is 32 over 100.
+
+1115
+01:39:24,220 --> 01:39:30,400
+And r is 1 over 100.
+
+1116
+01:39:31,900 --> 01:39:37,000
+So the sum I can write as 32 over 99.
+
+1117
+01:39:37,819 --> 01:39:40,680
+Actually this expression comes from the series.
+
+1118
+01:39:41,380 --> 01:39:41,680
+Okay.
+
+1119
+01:39:42,859 --> 01:39:49,119
+This is the written of using a ratio of two integers.
+
+1120
+01:39:49,560 --> 01:39:49,779
+Okay.
+
+1121
+01:39:49,779 --> 01:39:52,319
+Do you have any question?
+
+1122
+01:39:54,020 --> 01:39:54,779
+Yes, professor.
+
+1123
+01:39:54,900 --> 01:39:55,300
+I have one.
+
+1124
+01:39:55,420 --> 01:39:55,960
+Yes.
+
+1125
+01:39:55,960 --> 01:39:56,500
+I am listening.
+
+1126
+01:39:57,319 --> 01:39:57,619
+Professor.
+
+1127
+01:39:57,800 --> 01:40:02,940
+Then it's a rule that the power should be n minus 1.
+
+1128
+01:40:03,380 --> 01:40:04,039
+It can't be n.
+
+1129
+01:40:04,180 --> 01:40:05,980
+And it should start from 1.
+
+1130
+01:40:06,400 --> 01:40:06,579
+Yes.
+
+1131
+01:40:06,579 --> 01:40:07,380
+It should start from 1.
+
+1132
+01:40:07,720 --> 01:40:07,880
+Yes.
+
+1133
+01:40:07,880 --> 01:40:08,140
+Okay.
+
+1134
+01:40:08,140 --> 01:40:08,600
+Thank you.
+
+1135
+01:40:08,779 --> 01:40:09,000
+Yes.
+
+1136
+01:40:09,680 --> 01:40:16,180
+If you want to find the sum and start from 1 and this part has to be n minus 1.
+
+1137
+01:40:16,340 --> 01:40:20,579
+In that case, this sum is a over 1 minus r.
+
+1138
+01:40:21,119 --> 01:40:21,440
+Okay.
+
+1139
+01:40:21,520 --> 01:40:23,460
+Let me give one thing.
+
+1140
+01:40:23,539 --> 01:40:24,360
+I will write one thing.
+
+1141
+01:40:24,480 --> 01:40:24,619
+Okay.
+
+1142
+01:40:24,619 --> 01:40:40,500
+For example, you find that your starting index 2 to infinity and you have 1 over 2 to the power n minus 1.
+
+1143
+01:40:40,960 --> 01:40:44,340
+Okay.
+
+1144
+01:40:44,420 --> 01:40:47,619
+Our index is n minus 1, but our starting index is...
+
+1145
+01:40:48,440 --> 01:40:48,659
+Sorry.
+
+1146
+01:40:48,800 --> 01:40:49,400
+Let me write.
+
+1147
+01:40:50,720 --> 01:40:52,779
+For example, let's start with 0.
+
+1148
+01:40:52,779 --> 01:40:53,500
+Okay.
+
+1149
+01:40:53,659 --> 01:40:58,000
+This index is n minus 1, but this part is 0.
+
+1150
+01:40:58,300 --> 01:41:00,239
+What can I do for here?
+
+1151
+01:41:01,079 --> 01:41:08,760
+I can write this sum as from 1 to infinity, 1 over 2.
+
+1152
+01:41:09,440 --> 01:41:09,940
+Okay.
+
+1153
+01:41:10,119 --> 01:41:11,119
+And minus 1.
+
+1154
+01:41:11,119 --> 01:41:15,420
+And I will write if n is 0, what do you have?
+
+1155
+01:41:16,159 --> 01:41:19,500
+If n is 0, it will be 2.
+
+1156
+01:41:19,500 --> 01:41:26,340
+So, I know that this sum is a over 1 minus r.
+
+1157
+01:41:27,220 --> 01:41:28,440
+What is this?
+
+1158
+01:41:28,600 --> 01:41:29,980
+A here is 1.
+
+1159
+01:41:30,460 --> 01:41:32,420
+R is 1 over 2.
+
+1160
+01:41:32,600 --> 01:41:34,159
+It is 2.
+
+1161
+01:41:35,100 --> 01:41:36,220
+Yes, 2.
+
+1162
+01:41:36,900 --> 01:41:39,140
+So, what is this sum?
+
+1163
+01:41:40,140 --> 01:41:41,860
+It will be 4.
+
+1164
+01:41:42,900 --> 01:42:05,079
+Okay.
+
+1165
+01:41:50,420 --> 01:42:10,840
+Okay, that's enough for today. Next week, I will continue from our lecture notes. I will give extra notes also. At home, you can look at the other part, but I will explain again. Next week, we will see telescopic series. We can find some of the telescopic series also.
+
+1166
+01:42:10,840 --> 01:42:33,880
+And I talk about, okay, and here. I have some examples. If you want, you can look at atom also, but I will solve also. Next week, we will start to, say, series test. In the next week, we will see how can we determine the character of the series. This is the important part.
+
+1167
+01:42:33,880 --> 01:43:03,859
+For this, we will see how can we determine the character of the series.
+
+1168
+01:43:03,880 --> 01:43:33,859
+And we will see how can we determine the character of the series.

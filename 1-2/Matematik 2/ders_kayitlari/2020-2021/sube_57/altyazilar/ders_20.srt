@@ -1,0 +1,3259 @@
+1
+00:00:02,548 --> 00:00:03,168
+Morning.
+
+2
+00:00:34,643 --> 00:00:35,363
+bekleyelim.
+
+3
+00:00:58,643 --> 00:01:03,423
+Today we will start to integral subject. This is our last subject.
+
+4
+00:01:04,724 --> 00:01:12,644
+Today I will a little bit talk about what is the meaning of volume in three-dimensional system.
+
+5
+00:01:12,783 --> 00:01:24,343
+How can we find if our base region is general or any rectangle, it depends. It will change.
+
+6
+00:01:24,343 --> 00:01:26,644
+Have some theorem for this.
+
+7
+00:01:42,323 --> 00:01:42,823
+Okay.
+
+8
+00:01:47,188 --> 00:01:52,668
+Today I won't give you a lecture note because I couldn't find.
+
+9
+00:01:52,808 --> 00:01:58,347
+So first I will teach, after that I will give you lecture notes later.
+
+10
+00:01:59,628 --> 00:02:05,948
+Notlarımı bugün bulamadım, o yüzden notesuz kendimi anlatacağım ama sonra size ayrıntılı not vereceğim.
+
+11
+00:02:14,292 --> 00:02:40,451
+Okay. So, yesterday we talked about extreme values in a three-dimensional system. We determined ABC, and if B square minus AC is negative, we can have local maximum or local minimum. If it is positive, then we will have a saddle point, and this is the subject for the extreme values. It is easy according to calculus 1.
+
+12
+00:02:40,451 --> 00:02:46,072
+Now, today we will talk about our last subject. Our last subject is integral.
+
+13
+00:02:55,443 --> 00:03:05,763
+integral, what we will see, we will see, let's see our subjects, firstly, we will see volume.
+
+14
+00:03:09,556 --> 00:03:12,076
+We will see, area.
+
+15
+00:03:13,376 --> 00:03:14,736
+Normally we can use
+
+16
+00:03:14,736 --> 00:03:17,836
+one integral,
+
+17
+00:03:18,056 --> 00:03:20,336
+but in three-dimensional system,
+
+18
+00:03:20,596 --> 00:03:24,076
+we can use double integral for the area also.
+
+19
+00:03:28,956 --> 00:03:30,196
+Changing of
+
+20
+00:03:34,900 --> 00:03:38,879
+Orders, or, or, changing the order of integration.
+
+21
+00:03:40,039 --> 00:03:46,219
+And we will see, başkene görecektik, we will see polar integral.
+
+22
+00:03:55,348 --> 00:03:59,408
+Başka şu an aklıma gelen başka var büyük ihtimalle de şu an aklıma gelenler bunlar.
+
+23
+00:04:00,308 --> 00:04:00,628
+Okay.
+
+24
+00:04:01,588 --> 00:04:06,348
+Firstly, let's remember in calculus 1, what is the meaning of integral?
+
+25
+00:04:08,088 --> 00:04:13,068
+If you have a function, this function will be continuous.
+
+26
+00:04:13,728 --> 00:04:15,308
+This is A, this is B.
+
+27
+00:04:16,728 --> 00:04:22,708
+And I want to find the area under the fx function from A to the B.
+
+28
+00:04:22,708 --> 00:04:30,028
+For this, we have to divide this area into small subinterval.
+
+29
+00:04:36,531 --> 00:04:48,572
+After that, according to your function, if your function is increasing or decreasing, you will sketch some rectangle from the left, according to left point or right point.
+
+30
+00:04:49,031 --> 00:04:57,871
+If your function is increasing, it will change. For example, here we will make some rectangles here.
+
+31
+00:05:04,276 --> 00:05:12,675
+Then, all the sum of these rectangles will be approximately the area of our integral.
+
+32
+00:05:12,675 --> 00:05:19,596
+So, I can say that from a to the b, fx dx, it will be area.
+
+33
+00:05:23,252 --> 00:05:37,612
+Firstly, I have to find the sum, so I can write that from 1, 2, and f, x, e, delta, x.
+
+34
+00:05:39,172 --> 00:05:47,172
+Because here I will take all the length of the subinterval, I will take as delta, x.
+
+35
+00:05:47,172 --> 00:05:55,852
+And f, x, e is the height of your function, so every part will give the area of this rectangle.
+
+36
+00:05:56,572 --> 00:06:03,172
+If I take the sum from 1 to n, I have n sub, n rectangulars.
+
+37
+00:06:03,172 --> 00:06:22,632
+If you take limits and goes to infinity, it means that if you have infinitely subintervals, if the length of the rectangle, if the length of these rectangles are very near to 0,
+
+38
+00:06:22,632 --> 00:06:32,831
+then it will be the area of the area of the area of the area of the area of the area of the area of the area of the area of the shadow, it will be from a to the b, f, x, d, x.
+
+39
+00:06:33,272 --> 00:06:37,312
+This is in calculus 1, the meaning of area.
+
+40
+00:06:38,752 --> 00:06:41,632
+Okay, now I want to talk about...
+
+41
+00:06:41,632 --> 00:07:02,632
+...
+
+42
+00:06:48,500 --> 00:06:49,139
+integral,
+
+43
+00:06:54,516 --> 00:06:55,516
+on rectangle
+
+44
+00:07:01,651 --> 00:07:12,711
+Okay, now we will talk about three-dimensional system. What is this? Look at here. One second.
+
+45
+00:07:23,411 --> 00:07:27,191
+What is integral interdimensional system? It will be this.
+
+46
+00:07:29,191 --> 00:07:29,671
+Okay.
+
+47
+00:07:34,132 --> 00:07:49,672
+İçin 3-dimensional system, we will have volume. İçin 2-dimensional system, you will find area, but in 3-dimensional system, you will have one new variable.
+
+48
+00:07:50,271 --> 00:07:55,531
+So, in the 3-dimensional system, we will have double integral, and it gives the volume.
+
+49
+00:07:55,531 --> 00:08:08,192
+What is the volume? Let's assume that z is our function, and we will take the volume between some region.
+
+50
+00:08:08,632 --> 00:08:14,732
+Region can be rectangle, or the region can be a general region.
+
+51
+00:08:14,932 --> 00:08:17,792
+Now, we will talk about rectangle region. What is this?
+
+52
+00:08:17,792 --> 00:08:28,492
+I want to find the volume, or the double integral only for this part.
+
+53
+00:08:28,651 --> 00:08:34,772
+I want to find only this part.
+
+54
+00:08:39,091 --> 00:08:46,511
+So, if you look at here, what kind of area you see in x-y plane?
+
+55
+00:08:48,391 --> 00:08:58,412
+When you look at from this part, when you look at from the above, what we will see in x-y coordinate system for this volume?
+
+56
+00:09:00,011 --> 00:09:05,652
+I will see a rectangle, so it will be like this.
+
+57
+00:09:05,652 --> 00:09:14,831
+When I look at from the above, for this volume, I will see a rectangle, what is this?
+
+58
+00:09:14,932 --> 00:09:19,591
+Let's say that it is A, B, C, D.
+
+59
+00:09:20,611 --> 00:09:25,851
+Yani yukarıdan baktığınızda, şimdi ben bu volume'u hesaplamak istiyorum ama ne yapacağım?
+
+60
+00:09:26,751 --> 00:09:28,812
+Önce aşağı kısmı hesaplayacağım.
+
+61
+00:09:28,951 --> 00:09:31,692
+How can you find a rectangle?
+
+62
+00:09:31,692 --> 00:10:01,672
+Here I want to find this volume.
+
+63
+00:09:41,331 --> 00:09:45,331
+İlk önce, başkaların yerine bulundur.
+
+64
+00:09:49,203 --> 00:10:02,803
+After that, I have to product with high. Okay? High is f function. The high is f, x key, y key.
+
+65
+00:10:04,543 --> 00:10:12,363
+But what about the base? The base is important. Now, we have two different region we can have.
+
+66
+00:10:12,363 --> 00:10:17,323
+The first one we will talk about rectangle region. If our base is rectangle, it is easy.
+
+67
+00:10:18,443 --> 00:10:24,203
+Let's assume that our function is continuous. This is our base of this volume.
+
+68
+00:10:25,163 --> 00:10:33,083
+So, if we want to write the volume, let me write our volume.
+
+69
+00:10:37,812 --> 00:10:50,412
+Normalde, in a two-dimensional system, when we talk about area, it was from a to the b fx dx.
+
+70
+00:10:50,611 --> 00:10:52,331
+Now, we will have two integral.
+
+71
+00:10:56,500 --> 00:11:14,240
+Then our volume will be fxy. I'm writing generally, this is your height. And you will write dA. What is dA? dA is the base, area of the base.
+
+72
+00:11:27,539 --> 00:11:29,639
+parça parça aldım çünkü size koyacağım.
+
+73
+00:11:31,240 --> 00:11:33,259
+Okay, so let's see.
+
+74
+00:11:33,659 --> 00:11:34,559
+What is this?
+
+75
+00:11:57,940 --> 00:12:09,940
+Bu bizimle bizimle
+
+76
+00:12:14,131 --> 00:12:19,251
+You can find any small rectangle.
+
+77
+00:12:19,751 --> 00:12:24,411
+So this length will be delta x, this length will be delta y.
+
+78
+00:12:24,411 --> 00:12:33,131
+And we can take any point in your delta x, y, x.
+
+79
+00:12:33,951 --> 00:12:39,951
+If you want to find a volume, okay, for a rectangle base, for example here.
+
+80
+00:12:39,951 --> 00:12:47,771
+If you look at the top of the here, top of the rectangle, the shape will be different.
+
+81
+00:12:47,971 --> 00:12:50,071
+Okay, you will have like this.
+
+82
+00:12:50,631 --> 00:12:53,891
+The base is rectangle, you don't have any problem.
+
+83
+00:12:54,671 --> 00:13:00,331
+But when you look at the top, the top is your function.
+
+84
+00:13:00,551 --> 00:13:02,851
+So it will be like this, for example, okay?
+
+85
+00:13:04,692 --> 00:13:07,371
+Or it can be like this.
+
+86
+00:13:07,371 --> 00:13:12,391
+The top will be different because the top, your bound is your function.
+
+87
+00:13:13,091 --> 00:13:19,051
+Okay, so if you want to find this volume, you will divide into small parts.
+
+88
+00:13:19,411 --> 00:13:22,531
+Because the functions height is different.
+
+89
+00:13:22,991 --> 00:13:25,251
+So you will take small parts.
+
+90
+00:13:25,851 --> 00:13:28,551
+Here, here, here, okay?
+
+91
+00:13:28,551 --> 00:13:37,251
+So in your base, you will have different rectangles.
+
+92
+00:13:37,891 --> 00:13:43,891
+You can take all the subintervals, length are the same, but we will talk generally.
+
+93
+00:13:44,531 --> 00:13:53,751
+So when you divide your volume into small parts, this one will be delta x key, this will be delta y key.
+
+94
+00:13:53,751 --> 00:14:02,991
+And in our rectangle, I have to select a point in this rectangle for the high.
+
+95
+00:14:03,811 --> 00:14:11,111
+So delta a key will be the product of delta x key, delta y key.
+
+96
+00:14:11,111 --> 00:14:20,111
+And when you take the high from this point, you will find f, x key, y key.
+
+97
+00:14:21,491 --> 00:14:28,291
+Product delta key, delta a key will be the volume of this part.
+
+98
+00:14:28,971 --> 00:14:32,391
+You will find the volume of this part.
+
+99
+00:14:32,831 --> 00:14:34,271
+Okay?
+
+100
+00:14:34,271 --> 00:14:39,211
+Şimdi bir daha söyleyeceğim.
+
+101
+00:14:39,771 --> 00:14:41,531
+Volümü iki şekilde inceleyeceğiz.
+
+102
+00:14:41,651 --> 00:14:46,011
+Birincisi, tabanımız bir rektangler bölge olabilir.
+
+103
+00:14:46,211 --> 00:14:56,912
+Der ki işte benim böyle bir fonksiyonun altında olan bir kısım var ama ben tabanı böyle bir dikdörtgen olan parçanın hacmini bulmak istiyorum diyor.
+
+104
+00:14:56,912 --> 00:15:02,451
+O zaman şimdi tabanımız dikdörtgen ise işimiz kolay.
+
+105
+00:15:02,451 --> 00:15:06,591
+Şimdi bunu tek parça halinde hesaplayamayız.
+
+106
+00:15:06,692 --> 00:15:12,291
+Çünkü yukarıda z fonksiyonuyla sınırlı olduğu için z fonksiyonlu şekli böyle olabilir, böyle olabilir.
+
+107
+00:15:12,771 --> 00:15:14,331
+Dolayısıyla yükseklik farkı var.
+
+108
+00:15:15,031 --> 00:15:22,071
+O yüzden diyor ki ben bunu küçük küçük dikdörtgenim olan bu bizim ana dikdörtgenimiz tabanı.
+
+109
+00:15:22,251 --> 00:15:24,751
+Tabanı küçük küçük yine dikdörtgenlere ayırıyoruz.
+
+110
+00:15:25,011 --> 00:15:29,871
+Ve bu dikdörtgenlerin uzunlukları, kenar uzunlukları farklı olsun.
+
+111
+00:15:29,871 --> 00:15:35,831
+Aynı da alabilirsiniz ama bu genel tanım olduğu için ikisini de farklı aldık.
+
+112
+00:15:35,932 --> 00:15:38,791
+Biri delta x2 oldu, biri delta y2 o alan için.
+
+113
+00:15:39,291 --> 00:15:43,091
+Şimdi bunun içinde bir nokta daha seçmem gerekiyor çünkü yükseklik lazım bana.
+
+114
+00:15:43,172 --> 00:15:46,031
+Yükseklik içinde herhangi bir nokta dedi ki xk, yk.
+
+115
+00:15:46,031 --> 00:15:51,991
+O zaman şu seçtiğim, şurası şöyle olacak.
+
+116
+00:15:53,131 --> 00:15:55,451
+Bu seçtiğimin hacmi nasıl hesaplarım?
+
+117
+00:15:55,571 --> 00:15:59,031
+Taban alanı çarpı yükseklik.
+
+118
+00:15:59,031 --> 00:16:02,211
+Bu şuranın.
+
+119
+00:16:02,644 --> 00:16:16,524
+hacmini verdi. Yani tabanı şu dikdörtgen olan fonksiyonun da bu dikdörtgen tabanı arasındaki hacmi verdi. Eğer biz bunu bütün hepsi için yapacak olursak, o zaman
+
+120
+00:16:22,067 --> 00:16:29,447
+If we make same thing for all of them, this will be our partial sum for this volume.
+
+121
+00:16:29,987 --> 00:16:35,567
+But we know that we have some missing and extra terms in the volume.
+
+122
+00:16:35,567 --> 00:16:36,487
+So,
+
+123
+00:16:41,331 --> 00:16:43,932
+Our region will be this one.
+
+124
+00:16:45,991 --> 00:16:51,091
+Our volume will be on according to our region R.
+
+125
+00:16:51,192 --> 00:16:52,251
+R is this.
+
+126
+00:16:53,631 --> 00:16:55,672
+We will take fxy.
+
+127
+00:16:56,192 --> 00:16:57,211
+This is our function.
+
+128
+00:16:57,211 --> 00:17:02,172
+D a shows the base, the area of the base.
+
+129
+00:17:02,331 --> 00:17:06,672
+It will be limit and goes to infinity.
+
+130
+00:17:07,831 --> 00:17:09,311
+It will be s n.
+
+131
+00:17:09,311 --> 00:17:14,372
+This is the volume formula for rectangle region.
+
+132
+00:17:17,612 --> 00:17:18,112
+Okay.
+
+133
+00:17:18,771 --> 00:17:23,152
+I want to show you something.
+
+134
+00:17:23,152 --> 00:17:27,531
+For example, look at here.
+
+135
+00:17:29,912 --> 00:17:33,271
+What happens if n changes?
+
+136
+00:17:34,211 --> 00:17:37,791
+What is the difference in when n changes?
+
+137
+00:17:37,791 --> 00:17:39,372
+Okay.
+
+138
+00:17:39,491 --> 00:17:50,751
+If you divide your volume into 16 subinterval, your volume will be like this according to f function.
+
+139
+00:17:50,751 --> 00:17:55,711
+If you divide 64, this will be your volume.
+
+140
+00:17:56,511 --> 00:18:02,271
+If you divide n is 256, you will take this volume.
+
+141
+00:18:03,311 --> 00:18:10,211
+Here, the missing points, for example, this part, this part, this part will be huge.
+
+142
+00:18:10,211 --> 00:18:15,991
+When you take n is 65, the missing part will be less.
+
+143
+00:18:15,991 --> 00:18:23,731
+If you take n is 256, you can see that it is very similar to our function.
+
+144
+00:18:23,731 --> 00:18:31,211
+So, when n goes to infinity, it means that your subinterval is very, very, very small.
+
+145
+00:18:31,692 --> 00:18:42,692
+Then, we can neglect the error and we can take that our volume is the sum of the s n when limit n goes to infinity.
+
+146
+00:18:42,692 --> 00:18:45,152
+Okay.
+
+147
+00:18:45,152 --> 00:18:47,692
+So, we will talk about the volume.
+
+148
+00:18:47,692 --> 00:18:50,592
+But before that, I want to talk about a theorem.
+
+149
+00:18:50,592 --> 00:18:53,652
+The theorem is Fubini theorem.
+
+150
+00:18:53,652 --> 00:18:57,352
+We have two different parts for Fubini theorem.
+
+151
+00:18:57,352 --> 00:18:58,432
+What is this?
+
+152
+00:19:01,311 --> 00:19:07,912
+If our function is a continuous function on the rectangular region, what is this?
+
+153
+00:19:08,352 --> 00:19:15,791
+Our x is bounded from a to the b and y is bounded from c to d.
+
+154
+00:19:15,791 --> 00:19:26,271
+Then, our volume will be from a to the b, c to the d, fx, dx, da.
+
+155
+00:19:26,471 --> 00:19:28,432
+Or, I can change the order.
+
+156
+00:19:29,632 --> 00:19:33,872
+I can write that a, b, c, d, f, x, y, d, y, dx.
+
+157
+00:19:34,592 --> 00:19:36,471
+What is the meaning of these bounds?
+
+158
+00:19:37,031 --> 00:19:37,592
+One second.
+
+159
+00:19:38,112 --> 00:19:39,511
+Let's see some examples.
+
+160
+00:19:45,107 --> 00:19:46,107
+Tamam, tamam.
+
+161
+00:20:00,948 --> 00:20:10,067
+You can see two different meaning in double integral. One of them is volume or they can ask some calculation of integrals also.
+
+162
+00:20:10,468 --> 00:20:13,328
+İlla bu iki katlı integral sadece hacim değil.
+
+163
+00:20:13,807 --> 00:20:20,807
+Hatırlarsanız integralde bir alan olarak integral vardı. Bir de normal belirsiz hesapladığımız integral vardı.
+
+164
+00:20:20,807 --> 00:20:29,868
+In this question, they are asking, calculate on the region R, fx dx fxy function.
+
+165
+00:20:30,368 --> 00:20:36,588
+Our function is 100 minus 6x square y and our region is this.
+
+166
+00:20:37,128 --> 00:20:39,408
+Firstly, let's see what is our base.
+
+167
+00:20:40,348 --> 00:20:42,588
+Our base is the region R.
+
+168
+00:20:43,028 --> 00:20:45,468
+They said that x is from 0 to,
+
+169
+00:20:45,468 --> 00:20:53,148
+y is minus 1 to 1.
+
+170
+00:20:53,148 --> 00:21:15,188
+Y is minus 1 to 1.
+
+171
+00:20:57,011 --> 00:20:59,011
+So, dizis, ıraksın.
+
+172
+00:21:02,355 --> 00:21:14,556
+Now, I will write on the region R, R function is 100 minus 6x²y.
+
+173
+00:21:16,635 --> 00:21:21,435
+Now, I can write in two different ways.
+
+174
+00:21:21,895 --> 00:21:25,855
+I can write dxdy or I can write dydx.
+
+175
+00:21:25,855 --> 00:21:36,536
+If you want to write dxdy, outside the bounds will be depends on y because we have dy.
+
+176
+00:21:37,935 --> 00:21:44,895
+So, y is changing from minus 1 to 1.
+
+177
+00:21:46,215 --> 00:21:51,955
+So, our bounds will be the lower bound is minus 1, the upper bound will be 1 for y turn.
+
+178
+00:21:51,955 --> 00:21:58,455
+Now, inside I have x. What about the x bounds?
+
+179
+00:21:58,935 --> 00:22:01,695
+x is changing from 0 to 2.
+
+180
+00:22:01,695 --> 00:22:06,256
+So, our lower bound will be 0 and our upper bound will be 2.
+
+181
+00:22:06,996 --> 00:22:09,296
+Okay, let's calculate this double integral.
+
+182
+00:22:09,596 --> 00:22:12,935
+First of all, you have to start from inside.
+
+183
+00:22:14,395 --> 00:22:17,115
+So, I will write minus 1 to 1.
+
+184
+00:22:17,115 --> 00:22:33,976
+If I take inside of the integral with respect to x, it will be 100x minus 2x³y.
+
+185
+00:22:35,615 --> 00:22:38,155
+Our bounds will be from 0 to 2.
+
+186
+00:22:39,155 --> 00:22:41,115
+We have outside dy.
+
+187
+00:22:41,115 --> 00:22:44,895
+I take the integral with respect to x.
+
+188
+00:22:45,615 --> 00:22:53,635
+Inside of the integral with respect to x will be 100x minus 2x³y from 0 to 2.
+
+189
+00:22:53,915 --> 00:22:55,115
+Outside, we have dy.
+
+190
+00:22:56,155 --> 00:22:57,796
+Okay, so what is this?
+
+191
+00:22:57,976 --> 00:23:00,615
+It is minus 1 to 1.
+
+192
+00:23:00,615 --> 00:23:08,615
+It will be 200x minus 2x³y.
+
+193
+00:23:08,615 --> 00:23:10,215
+It will be 200x³y.
+
+194
+00:23:11,336 --> 00:23:11,776
+dy.
+
+195
+00:23:13,455 --> 00:23:16,516
+Now, we have one more integral with respect to y.
+
+196
+00:23:16,915 --> 00:23:26,316
+It is 200y minus 8y² from minus 1 to 1.
+
+197
+00:23:26,316 --> 00:23:30,476
+Okay, what do we have?
+
+198
+00:23:30,476 --> 00:23:44,596
+If we write 1 here, it is 200 minus 8 plus 200 plus 8.
+
+199
+00:23:45,256 --> 00:23:47,135
+We will have 400.
+
+200
+00:23:49,056 --> 00:23:50,615
+This is the first way.
+
+201
+00:23:50,615 --> 00:23:53,096
+The second way.
+
+202
+00:23:53,836 --> 00:23:57,036
+I want to write our integral depends on dy dx.
+
+203
+00:23:57,355 --> 00:23:58,715
+And let's see what happens.
+
+204
+00:23:59,195 --> 00:24:02,596
+Now, I want to write the bounds in order.
+
+205
+00:24:03,536 --> 00:24:06,875
+Our function is 100 minus 6x²y.
+
+206
+00:24:09,955 --> 00:24:13,516
+Now, I want to change the order and I want to write dy dx.
+
+207
+00:24:13,516 --> 00:24:19,895
+So, if you look at your region, what are the bounds for x?
+
+208
+00:24:20,375 --> 00:24:24,675
+In this region, x is changing from 0 to 2.
+
+209
+00:24:26,036 --> 00:24:30,235
+And dy y is changing between minus 1 to 1.
+
+210
+00:24:30,776 --> 00:24:35,695
+Only I can write this type of written for the rectangle region.
+
+211
+00:24:35,695 --> 00:24:39,576
+Okay, so let's see.
+
+212
+00:24:39,915 --> 00:24:43,115
+First, you have to solve inside from 0 to 2.
+
+213
+00:24:44,256 --> 00:24:48,235
+I will take this integral with respect to y.
+
+214
+00:24:48,235 --> 00:24:56,056
+It will be 100y minus 3x²y².
+
+215
+00:24:58,735 --> 00:25:00,796
+Between minus 1 to 1.
+
+216
+00:25:02,548 --> 00:25:03,788
+Dx
+
+217
+00:25:08,084 --> 00:25:12,163
+So, what is this? Integral from 0 to 2.
+
+218
+00:25:13,484 --> 00:25:15,423
+If I write one here,
+
+219
+00:25:16,163 --> 00:25:17,064
+Buradan ne gelecek?
+
+220
+00:25:19,064 --> 00:25:21,784
+Şu kare olduğu için sıfırlayacak.
+
+221
+00:25:22,464 --> 00:25:24,004
+200, 200, 200 geç.
+
+222
+00:25:28,596 --> 00:25:32,076
+Professor, 100 minus 3x².
+
+223
+00:25:34,596 --> 00:25:36,195
+Yes, yes, yes, yes.
+
+224
+00:25:38,836 --> 00:25:42,796
+Abysani, no, no, one second.
+
+225
+00:25:47,571 --> 00:25:50,531
+Okay, if I write 1, it will be 100.
+
+226
+00:25:51,991 --> 00:25:53,691
+Ye yerine yazdık.
+
+227
+00:25:53,871 --> 00:25:56,371
+Eksi 3x kare.
+
+228
+00:25:58,131 --> 00:25:59,931
+Eksi 100, R200 oldu.
+
+229
+00:26:00,271 --> 00:26:02,751
+Sorry, Professor. True. Just like I said.
+
+230
+00:26:03,271 --> 00:26:09,491
+Yes. If I write minus 1 here, because it is even, and in that case it will be here.
+
+231
+00:26:09,491 --> 00:26:09,871
+Okay.
+
+232
+00:26:11,491 --> 00:26:14,991
+So we will have 200.
+
+233
+00:26:14,991 --> 00:26:23,171
+If we take the integral 200x from 0 to 2, it will be 400.
+
+234
+00:26:24,051 --> 00:26:32,251
+So if your region is a rectangle region, you can change the order of the integration directly.
+
+235
+00:26:32,251 --> 00:26:39,371
+The Fubini theorem says that only we can talk about rectangle region.
+
+236
+00:26:39,371 --> 00:26:45,311
+When you change the order, you don't change any other thing.
+
+237
+00:26:45,551 --> 00:26:47,051
+Only for rectangle region.
+
+238
+00:26:47,231 --> 00:26:51,551
+If the region is not rectangle, you can't make this.
+
+239
+00:26:51,791 --> 00:26:51,931
+Okay.
+
+240
+00:26:52,751 --> 00:26:57,871
+Eğer ki bölgeniz dikdörtgensel bölge ise bunların yönünü değiştirebilirsiniz.
+
+241
+00:26:58,111 --> 00:26:59,551
+Başka bir şey değiştirmenize gerek yok.
+
+242
+00:26:59,551 --> 00:27:01,051
+Sadece şunların yeri değişecek.
+
+243
+00:27:01,051 --> 00:27:05,371
+Ama bölgeniz rektangal değilse bunu yapamazsınız. Yanlış çünkü.
+
+244
+00:27:06,731 --> 00:27:06,991
+Okay.
+
+245
+00:27:09,611 --> 00:27:10,251
+Professor?
+
+246
+00:27:10,692 --> 00:27:11,391
+Yes, yes.
+
+247
+00:27:12,231 --> 00:27:21,331
+In the two-dimensional system, there was a probability to have a negative area if the curve is under the x-axis.
+
+248
+00:27:22,231 --> 00:27:22,631
+Yes.
+
+249
+00:27:22,631 --> 00:27:28,671
+Is there any probability in a three-dimensional system to have a negative volume?
+
+250
+00:27:31,192 --> 00:27:32,431
+For the integral?
+
+251
+00:27:33,431 --> 00:27:33,751
+Yes.
+
+252
+00:27:34,331 --> 00:27:36,011
+A negative integral, yes.
+
+253
+00:27:36,291 --> 00:27:36,591
+Okay.
+
+254
+00:27:37,591 --> 00:27:37,991
+Yes.
+
+255
+00:27:38,491 --> 00:27:41,531
+You can have negative integral.
+
+256
+00:27:42,231 --> 00:27:47,971
+If they are asking the integral only, okay, then you can have positive or negative.
+
+257
+00:27:47,971 --> 00:27:54,051
+But if they are asking the volume, the volume has to be positive.
+
+258
+00:27:54,211 --> 00:27:55,971
+So you have to take the absolute volume.
+
+259
+00:27:57,411 --> 00:28:03,451
+What I meant is like when we calculate the area in the two-dimensional system.
+
+260
+00:28:04,011 --> 00:28:04,471
+Yes.
+
+261
+00:28:04,571 --> 00:28:06,211
+We take the positive sign.
+
+262
+00:28:06,931 --> 00:28:11,611
+We take the normal integral for the curve above the x-axis.
+
+263
+00:28:11,911 --> 00:28:14,911
+And we take the minus sign of the area.
+
+264
+00:28:14,911 --> 00:28:15,192
+Yes.
+
+265
+00:28:15,192 --> 00:28:18,011
+You are talking about this.
+
+266
+00:28:18,591 --> 00:28:19,692
+Yes.
+
+267
+00:28:19,771 --> 00:28:23,871
+You have to take a1, a2, a3.
+
+268
+00:28:24,192 --> 00:28:26,911
+It is the same for the volume.
+
+269
+00:28:26,951 --> 00:28:31,731
+But how do we divide them in the three-dimensional system?
+
+270
+00:28:32,991 --> 00:28:33,491
+Okay.
+
+271
+00:28:33,491 --> 00:28:42,231
+Firstly, you can determine if your shape have negative values or positive values.
+
+272
+00:28:42,951 --> 00:28:45,831
+You have to determine.
+
+273
+00:28:45,831 --> 00:28:46,611
+I'm going to take the...
+
+274
+00:28:46,611 --> 00:28:50,371
+Z has some negative or positive shapes.
+
+275
+00:28:50,491 --> 00:28:56,591
+For example, mostly we will take some symmetric volumes.
+
+276
+00:28:56,711 --> 00:29:00,951
+For example, here you can take a sphere.
+
+277
+00:29:02,831 --> 00:29:03,091
+Okay.
+
+278
+00:29:03,971 --> 00:29:07,711
+Normally in sphere you will have some positive and negative parts.
+
+279
+00:29:07,711 --> 00:29:09,611
+For example, this part will be positive.
+
+280
+00:29:10,211 --> 00:29:11,511
+This part will be negative.
+
+281
+00:29:12,111 --> 00:29:14,891
+But in our questions, mostly we will use symmetry.
+
+282
+00:29:15,672 --> 00:29:18,651
+We will take some regular shapes.
+
+283
+00:29:19,192 --> 00:29:20,791
+So we will use symmetry.
+
+284
+00:29:20,791 --> 00:29:24,851
+But if you have some negative parts, you have to divide.
+
+285
+00:29:25,671 --> 00:29:29,351
+But in our lesson, we don't see this kind of things.
+
+286
+00:29:29,451 --> 00:29:32,291
+Only we will see some regular shapes.
+
+287
+00:29:32,391 --> 00:29:40,131
+For example, like a sphere or cone or cylinder.
+
+288
+00:29:40,491 --> 00:29:40,711
+Okay?
+
+289
+00:29:40,711 --> 00:29:42,091
+Okay.
+
+290
+00:29:42,091 --> 00:29:42,692
+Thanks, Professor.
+
+291
+00:29:42,692 --> 00:29:43,192
+Okay.
+
+292
+00:29:43,192 --> 00:29:53,471
+Thanks.
+
+293
+00:29:43,615 --> 00:29:48,096
+For example, for this volume, we will find this one, and we will product with two.
+
+294
+00:29:48,855 --> 00:29:52,336
+We will use symmetry, because this part and this part are the same.
+
+295
+00:29:52,435 --> 00:29:54,875
+So you don't need to determine the negative one.
+
+296
+00:29:54,875 --> 00:29:55,516
+Okay?
+
+297
+00:29:58,256 --> 00:29:58,935
+Okay.
+
+298
+00:30:00,516 --> 00:30:01,235
+Sorry.
+
+299
+00:30:02,836 --> 00:30:05,056
+Now let's solve some other questions.
+
+300
+00:30:05,415 --> 00:30:06,875
+One second, I want to...
+
+301
+00:30:06,875 --> 00:30:14,455
+Notlarımı bulamadığım için şey yapamadım.
+
+302
+00:30:15,016 --> 00:30:16,576
+Çıkmış sorulardan da çözeceğim da.
+
+303
+00:30:17,635 --> 00:30:19,855
+Bu konu basit olduğu için şey yapmak istiyorum.
+
+304
+00:30:21,855 --> 00:30:22,855
+Bizi de geçeceğim.
+
+305
+00:30:30,836 --> 00:30:31,836
+çift katlı çift katlı.
+
+306
+00:31:12,915 --> 00:31:17,796
+Ok, for example, let's calculate r function is
+
+307
+00:31:25,203 --> 00:31:31,243
+x² minus xy², ok?
+
+308
+00:31:32,303 --> 00:31:38,263
+And our region, they give that, it will be a rectangle region.
+
+309
+00:31:38,503 --> 00:31:49,203
+Let's take minus 1, sorry, x is 2, y will be...
+
+310
+00:31:55,604 --> 00:31:57,884
+Y1.
+
+311
+00:31:58,844 --> 00:31:59,144
+Okay.
+
+312
+00:31:59,884 --> 00:32:08,663
+And they are asking what is the integral on the region R, Fxyda.
+
+313
+00:32:10,804 --> 00:32:13,663
+When you see a rectangle region, it is easy.
+
+314
+00:32:15,064 --> 00:32:19,624
+So you can write the order according to your choice.
+
+315
+00:32:19,624 --> 00:32:22,284
+First let's determine our region.
+
+316
+00:32:22,284 --> 00:32:27,663
+X is between minus 1 to 2.
+
+317
+00:32:29,484 --> 00:32:31,624
+And Y is from 0 to 1.
+
+318
+00:32:32,703 --> 00:32:36,284
+So our region R is this.
+
+319
+00:32:37,423 --> 00:32:38,124
+Okay.
+
+320
+00:32:39,104 --> 00:32:41,004
+Now let's write our integral.
+
+321
+00:32:41,004 --> 00:32:44,663
+Our integral, firstly, we will write our function.
+
+322
+00:32:45,463 --> 00:32:50,524
+X square Y plus XY cube.
+
+323
+00:32:50,524 --> 00:32:57,544
+Actually, this is also volume under the function FX for this rectangle region.
+
+324
+00:32:57,963 --> 00:33:00,864
+Now let's write DX DY or DY DX.
+
+325
+00:33:01,024 --> 00:33:02,144
+You can change later.
+
+326
+00:33:02,943 --> 00:33:05,784
+Now outside we will write the bounds for Y terms.
+
+327
+00:33:06,384 --> 00:33:08,324
+Y is changing from 0 to 1.
+
+328
+00:33:08,324 --> 00:33:12,344
+X is changing from minus 1 to 2.
+
+329
+00:33:13,084 --> 00:33:15,144
+Or you can change the order.
+
+330
+00:33:16,483 --> 00:33:20,163
+You can write minus 1 to 0, 1.
+
+331
+00:33:20,163 --> 00:33:29,284
+X square Y plus XY cube DY DX.
+
+332
+00:33:29,923 --> 00:33:30,224
+Okay.
+
+333
+00:33:31,284 --> 00:33:36,983
+But only you can change this changing in rectangle region.
+
+334
+00:33:37,284 --> 00:33:37,544
+Okay.
+
+335
+00:33:37,624 --> 00:33:39,004
+Let's solve this integral.
+
+336
+00:33:39,683 --> 00:33:42,004
+Inside the integral depends on X.
+
+337
+00:33:42,004 --> 00:33:53,644
+If we take the integral, it will be X cube Y over 3 plus X square over 2 Y cube.
+
+338
+00:33:55,443 --> 00:33:58,724
+From minus 1 to 2.
+
+339
+00:34:00,324 --> 00:34:04,504
+And we have 0 to 1 DY.
+
+340
+00:34:04,504 --> 00:34:24,503
+So we have 0 to 1 DY.
+
+341
+00:34:08,179 --> 00:34:19,899
+So if you write 8, 2 yazarsak, 6, 4, 8, 1, plus y cube over 2.
+
+342
+00:34:19,899 --> 00:34:37,339
+If I write minus, it will be plus, and if I write minus 1, it will be plus negative y cube over,
+
+343
+00:34:38,179 --> 00:34:39,599
+2, 3, 1.
+
+344
+00:34:42,835 --> 00:34:43,155
+Ok.
+
+345
+00:34:44,795 --> 00:34:46,355
+So, we have
+
+346
+00:34:46,355 --> 00:34:50,115
+Sekiz dokuz üç ye oldu.
+
+347
+00:34:51,555 --> 00:34:54,655
+3 y square over 2
+
+348
+00:34:54,655 --> 00:34:57,775
+From 0 to 1, it will be
+
+349
+00:34:57,775 --> 00:34:59,555
+3 over 2.
+
+350
+00:35:01,735 --> 00:35:02,015
+Ok.
+
+351
+00:35:02,835 --> 00:35:04,935
+The rectangle region is easy.
+
+352
+00:35:05,575 --> 00:35:08,915
+For a general region, we will find a different way.
+
+353
+00:35:09,495 --> 00:35:11,855
+Firstly, we have two data amount hourbates.
+
+354
+00:35:11,855 --> 00:35:15,575
+And according to our base, we will determine our bounds.
+
+355
+00:35:17,815 --> 00:35:19,455
+But before that,
+
+356
+00:35:21,235 --> 00:35:25,255
+Biz son iki şeyimiz, ondan önce şeyi anlatacağız.
+
+357
+00:35:25,455 --> 00:35:26,935
+Rectangle dışında.
+
+358
+00:35:31,764 --> 00:35:33,764
+Sıramızı göre gideceğim, değil mi?
+
+359
+00:35:43,123 --> 00:35:48,443
+2, 2, 2, 4, 2, şu
+
+360
+00:35:57,427 --> 00:36:02,587
+x'ini yazarsak 8 bölü 3, 4 bölü 2'den 2'ye küp, tamam.
+
+361
+00:36:07,188 --> 00:36:16,268
+simetrik olmayacak. Eksi bir yazarsak, eksi bir bölücü artı bir bölünç oldu. Eksi bir, bir iki oldu. Tamam.
+
+362
+00:36:23,251 --> 00:36:25,931
+3 y,
+
+363
+00:36:28,491 --> 00:36:29,251
+1 2
+
+364
+00:36:37,619 --> 00:36:49,819
+3y² over 2 plus 3 over 2 y to the power 4 over 4. 0 to 1.
+
+365
+00:37:04,083 --> 00:37:11,763
+Ok, now we'll talk about, for general region.
+
+366
+00:37:18,420 --> 00:37:18,700
+Ok?
+
+367
+00:37:26,675 --> 00:37:28,895
+if your region
+
+368
+00:37:48,371 --> 00:38:02,991
+If you don't want to take a rectangle region, if you want to take the base directly, okay, for example, for example, think about a sphere.
+
+369
+00:38:06,051 --> 00:38:06,652
+Okay.
+
+370
+00:38:08,491 --> 00:38:10,411
+But I want to take the upper of.
+
+371
+00:38:16,788 --> 00:38:22,887
+İzmir'i bir tane küreyi alıyorum.
+
+372
+00:38:23,427 --> 00:38:26,987
+But firstly, I have to determine what is your base.
+
+373
+00:38:27,507 --> 00:38:38,367
+What is the meaning of base when you have a light and when you look at with this light from the top, what you will see in x-y coordinate system?
+
+374
+00:38:41,940 --> 00:38:45,500
+This is your shape.
+
+375
+00:38:46,019 --> 00:38:48,099
+This is your solid.
+
+376
+00:38:48,760 --> 00:38:51,760
+And you want to find the volume of this shape.
+
+377
+00:38:52,860 --> 00:38:56,340
+So firstly, this is your high.
+
+378
+00:38:57,420 --> 00:38:58,460
+This is your high.
+
+379
+00:38:59,740 --> 00:39:02,260
+High is changing according to this function.
+
+380
+00:39:02,420 --> 00:39:03,720
+Okay, I know this function.
+
+381
+00:39:03,720 --> 00:39:05,740
+But what about the base?
+
+382
+00:39:06,139 --> 00:39:07,519
+I have to find the base.
+
+383
+00:39:08,000 --> 00:39:09,960
+So for this, you have to determine
+
+384
+00:39:09,960 --> 00:39:15,400
+what do you see when you look at from the top with a light?
+
+385
+00:39:15,579 --> 00:39:19,619
+What is the shadow of this shape in XY coordinate system?
+
+386
+00:39:20,260 --> 00:39:21,980
+You have to determine this one.
+
+387
+00:39:23,099 --> 00:39:29,039
+So we will see a circle in XY coordinate system.
+
+388
+00:39:29,340 --> 00:39:34,000
+Gölgesini, her yeri düşürebilirsiniz ama biz genellikle X, Y'yi düşürüyoruz.
+
+389
+00:39:34,000 --> 00:39:37,280
+X, Y'yi düşürdüğünüzde ne görüyorsunuz?
+
+390
+00:39:37,360 --> 00:39:39,599
+Bu şeklin gölgesini belirlemeniz gerekiyor.
+
+391
+00:39:39,960 --> 00:39:41,119
+The shape will be circle.
+
+392
+00:39:41,639 --> 00:39:49,280
+So you will determine your bound, the integral bound.
+
+393
+00:39:50,340 --> 00:39:51,780
+This is your function.
+
+394
+00:39:52,519 --> 00:39:54,659
+DX, DY or DY, DX.
+
+395
+00:39:54,659 --> 00:40:02,139
+Now, the bounds will be depends on this circle.
+
+396
+00:40:02,559 --> 00:40:07,099
+If you take DY, DX, you will write the bounds for Y.
+
+397
+00:40:07,780 --> 00:40:09,960
+And this bounds will be X.
+
+398
+00:40:10,659 --> 00:40:14,679
+So let me give some examples.
+
+399
+00:40:14,679 --> 00:40:35,059
+So let me give you a little bit.
+
+400
+00:40:22,612 --> 00:40:24,291
+örnek yüzünden göstermek istiyorum.
+
+401
+00:40:44,179 --> 00:40:54,679
+Okay, for this general region, we will have theorem, the Fubini theorem, but it is different.
+
+402
+00:40:55,440 --> 00:41:09,239
+In the first one, we talk about a rectangle region, but if we write a general case, we will look at this one.
+
+403
+00:41:09,239 --> 00:41:17,539
+If our function is a continuous function on the region R, R is our general region.
+
+404
+00:41:17,799 --> 00:41:19,379
+You can take any of them.
+
+405
+00:41:20,960 --> 00:41:33,559
+Then, if your function, if your region is given X is from A to B, but for Y, if you have two different functions,
+
+406
+00:41:33,559 --> 00:41:45,419
+then our integral will be from A to B, but inside we will write R, the bounds of your function,
+
+407
+00:41:45,559 --> 00:41:47,019
+Fxy, Dy, Dx.
+
+408
+00:41:47,199 --> 00:41:50,899
+The position will be here, Dy, Dx.
+
+409
+00:41:50,899 --> 00:42:08,299
+If your region, if Y terms are some numbers, they are lines, but if the bounds of X are functions,
+
+410
+00:42:08,299 --> 00:42:13,960
+then our integral will be the x, dy.
+
+411
+00:42:17,652 --> 00:42:23,052
+And the bounds will be C to D, H1 to H2.
+
+412
+00:42:23,231 --> 00:42:30,291
+So, for general shape, you can't change the order directly because the bounds will be different.
+
+413
+00:42:30,952 --> 00:42:32,731
+Okay, let me give an example.
+
+414
+00:42:34,012 --> 00:42:45,072
+Şimdi genel olarak şeyimiz varsa, bölgemiz genelse, yani şeklimiz dikdörtgen değil, onun dışında bir shape'e sahipsek, order'ı değiştiremiyoruz.
+
+415
+00:42:45,072 --> 00:42:49,851
+Lütfen ona dikkat edin, sınavlarda onu çok yapıyorsunuz.
+
+416
+00:42:51,731 --> 00:42:55,811
+Okay. Let's look at this example.
+
+417
+00:42:58,652 --> 00:43:02,032
+Find the volume of the prism. Prism dediğimiz prisma.
+
+418
+00:43:16,244 --> 00:43:26,423
+Find the volume of prism whose base is a rectangle in the x-y plane bounded by the x-axis y equals x and x equals 1.
+
+419
+00:43:26,983 --> 00:43:32,684
+They said that we have a prism and the base, actually the base is important.
+
+420
+00:43:33,144 --> 00:43:38,463
+They said that the base in the x-y coordinate system, it will be a triangle.
+
+421
+00:43:38,463 --> 00:43:39,463
+What is the triangle?
+
+422
+00:43:41,124 --> 00:43:50,423
+The bounded by x-axis y equals x, y equals x is this, x equals 1.
+
+423
+00:43:52,164 --> 00:43:54,004
+So the base is this.
+
+424
+00:43:54,164 --> 00:43:57,504
+So we will have like this.
+
+425
+00:44:08,788 --> 00:44:09,188
+Okay.
+
+426
+00:44:10,068 --> 00:44:11,967
+We have this kind of shape.
+
+427
+00:44:12,168 --> 00:44:12,927
+We have a prism.
+
+428
+00:44:13,588 --> 00:44:14,947
+And the base is this.
+
+429
+00:44:15,347 --> 00:44:16,927
+This is 1.
+
+430
+00:44:17,708 --> 00:44:20,068
+So it will be 1.
+
+431
+00:44:20,068 --> 00:44:24,027
+This function is y equals x.
+
+432
+00:44:25,347 --> 00:44:30,548
+Now the top of with this plane.
+
+433
+00:44:31,048 --> 00:44:33,367
+So this one is a plane.
+
+434
+00:44:35,788 --> 00:44:36,887
+Bununla kesmişler.
+
+435
+00:44:36,887 --> 00:44:38,487
+Okay.
+
+436
+00:44:38,728 --> 00:44:40,307
+So they are asking the volume.
+
+437
+00:44:40,527 --> 00:44:41,668
+Let's write our volume.
+
+438
+00:44:42,708 --> 00:44:45,807
+Firstly we have to determine our bounds.
+
+439
+00:44:46,668 --> 00:44:49,307
+And inside we will write our function.
+
+440
+00:44:49,487 --> 00:44:53,927
+Because on the top we are bounded with this function.
+
+441
+00:44:54,088 --> 00:44:57,507
+It is 3 minus x minus y.
+
+442
+00:44:59,568 --> 00:45:03,608
+Now I can write dx dy or dy dx.
+
+443
+00:45:03,867 --> 00:45:04,907
+Let's write everything.
+
+444
+00:45:04,907 --> 00:45:07,248
+Let's start with dy dx.
+
+445
+00:45:07,987 --> 00:45:09,867
+Now look at this area.
+
+446
+00:45:10,807 --> 00:45:13,708
+In the area x is changing from 0 to 1.
+
+447
+00:45:16,268 --> 00:45:19,028
+Now if you sketch these lines.
+
+448
+00:45:20,068 --> 00:45:22,028
+What is your starting point?
+
+449
+00:45:22,168 --> 00:45:23,248
+What is your end point?
+
+450
+00:45:23,387 --> 00:45:25,188
+Your starting point is x-axis.
+
+451
+00:45:25,188 --> 00:45:27,128
+means y is 0.
+
+452
+00:45:27,867 --> 00:45:29,367
+What is our end point?
+
+453
+00:45:29,447 --> 00:45:32,367
+End point is the line y equals x.
+
+454
+00:45:32,827 --> 00:45:33,807
+So what is y?
+
+455
+00:45:34,028 --> 00:45:36,867
+Y is x here.
+
+456
+00:45:37,827 --> 00:45:42,347
+Actually you can think that this is x equals 0.
+
+457
+00:45:42,347 --> 00:45:43,927
+x equals 1.
+
+458
+00:45:44,568 --> 00:45:46,528
+This is y equals 0.
+
+459
+00:45:46,728 --> 00:45:47,867
+Y equals x.
+
+460
+00:45:48,528 --> 00:45:53,168
+So our volume will be 0, 1.
+
+461
+00:45:53,827 --> 00:45:56,807
+Integral 0x.
+
+462
+00:45:58,807 --> 00:46:02,528
+3 minus x minus y.
+
+463
+00:46:02,528 --> 00:46:04,088
+dy dx.
+
+464
+00:46:04,088 --> 00:46:07,867
+Now let's start the solve inside.
+
+465
+00:46:08,367 --> 00:46:11,168
+We will take inside with respect to y.
+
+466
+00:46:11,728 --> 00:46:14,248
+We will write 0 to 1.
+
+467
+00:46:14,248 --> 00:46:19,748
+The integral with respect to y will be 3y.
+
+468
+00:46:19,748 --> 00:46:27,927
+minus xy minus y squared over 2.
+
+469
+00:46:28,887 --> 00:46:32,208
+From 0 to x.
+
+470
+00:46:32,487 --> 00:46:34,447
+And outside we will have dx.
+
+471
+00:46:36,788 --> 00:46:37,927
+In the integral.
+
+472
+00:46:38,307 --> 00:46:40,867
+Outside the integral bounds will be numbers.
+
+473
+00:46:41,048 --> 00:46:41,987
+Not any term.
+
+474
+00:46:42,668 --> 00:46:44,367
+You can't write 0 to x.
+
+475
+00:46:44,487 --> 00:46:47,327
+Because at the result you can't find a number.
+
+476
+00:46:47,487 --> 00:46:48,788
+You will find a function.
+
+477
+00:46:48,788 --> 00:46:49,487
+Okay.
+
+478
+00:46:50,487 --> 00:46:54,648
+The outside integrals bound will have to be numbers.
+
+479
+00:46:55,208 --> 00:46:59,507
+Dışarıdaki integralin sınırları kesinlikle sayılardan oluşması gerekiyor.
+
+480
+00:46:59,788 --> 00:47:01,568
+Çünkü cevabın sayı çıkmaz o zaman.
+
+481
+00:47:02,568 --> 00:47:02,907
+Okay.
+
+482
+00:47:03,128 --> 00:47:04,807
+So let's write our volume.
+
+483
+00:47:06,748 --> 00:47:08,947
+Integral 0 to 1.
+
+484
+00:47:09,788 --> 00:47:11,927
+If I write x here.
+
+485
+00:47:11,927 --> 00:47:12,927
+Y yerine x yazarsak.
+
+486
+00:47:13,728 --> 00:47:16,927
+3x minus x squared.
+
+487
+00:47:16,927 --> 00:47:21,907
+Square minus x squared over 2 dx.
+
+488
+00:47:23,068 --> 00:47:25,427
+And if we find this integral.
+
+489
+00:47:25,668 --> 00:47:28,788
+It is 3x squared over 2.
+
+490
+00:47:29,628 --> 00:47:33,268
+Minus 3 over 2.
+
+491
+00:47:33,507 --> 00:47:36,688
+Product x cubed over 3.
+
+492
+00:47:36,688 --> 00:47:40,148
+0 to 1.
+
+493
+00:47:41,648 --> 00:47:44,367
+So we will have 3 over 2.
+
+494
+00:47:45,028 --> 00:47:46,268
+3 over 2.
+
+495
+00:47:46,927 --> 00:47:48,387
+Minus 1 over 2.
+
+496
+00:47:48,827 --> 00:47:49,807
+It is 1.
+
+497
+00:47:51,728 --> 00:47:53,248
+This is the first.
+
+498
+00:47:53,847 --> 00:47:54,128
+Okay.
+
+499
+00:47:56,608 --> 00:47:58,668
+Now let's see the second way.
+
+500
+00:47:58,668 --> 00:48:04,208
+Now I will write the integral according to dx dy.
+
+501
+00:48:04,208 --> 00:48:04,347
+Okay.
+
+502
+00:48:04,347 --> 00:48:08,248
+Now I will write the integral according to dx dy.
+
+503
+00:48:09,139 --> 00:48:12,440
+3, minus x, minus 1.
+
+504
+00:48:13,420 --> 00:48:15,219
+I want to write dxd.
+
+505
+00:48:17,519 --> 00:48:20,179
+Okay, now, y is changing.
+
+506
+00:48:20,480 --> 00:48:22,400
+Now I have to look at this case.
+
+507
+00:48:22,579 --> 00:48:24,400
+Y is changing from 0 to 1.
+
+508
+00:48:26,900 --> 00:48:30,440
+Now I will sketch lines like this.
+
+509
+00:48:32,139 --> 00:48:38,359
+When you sketch this line, and when you look at from this part, what is your function or point?
+
+510
+00:48:39,139 --> 00:48:41,219
+I am on the line.
+
+511
+00:48:41,940 --> 00:48:43,659
+I am on another line.
+
+512
+00:48:44,179 --> 00:48:51,699
+So the line will be y equals x, but I have to write x equals y, x equals 1.
+
+513
+00:48:52,639 --> 00:48:56,819
+This is our bounds if we write as dxdy.
+
+514
+00:48:57,739 --> 00:48:58,000
+Okay?
+
+515
+00:48:58,420 --> 00:49:00,879
+And the result will be the same, 1.
+
+516
+00:49:01,659 --> 00:49:05,379
+Let me solve very quickly from 0 to 1.
+
+517
+00:49:05,379 --> 00:49:35,359
+The integral with respect to x.
+
+518
+00:49:38,324 --> 00:49:55,923
+Okay, if I write 1 in x terms, we will have integral 0, 1. If you write 1, we will have 3 minus 1 over 2 minus x yeni bir yazarsak gir.
+
+519
+00:49:55,923 --> 00:50:09,204
+And for y, it is minus 3y plus y square over 2 plus y square, değil mi?
+
+520
+00:50:09,963 --> 00:50:10,423
+Okay.
+
+521
+00:50:10,423 --> 00:50:14,724
+Okay, what do we have?
+
+522
+00:50:16,884 --> 00:50:19,704
+Ben şey yapmadıysam, 3 gire 2, 6.
+
+523
+00:50:27,219 --> 00:50:45,299
+Bir dakika. 3 kere 2, 6, 5, bölü 2, y, minus 4, y square over 2, plus 3 over 2, y cube over 3. Yanlış yapmadıysam da 0 to 1.
+
+524
+00:50:45,299 --> 00:50:48,379
+Let's see.
+
+525
+00:50:50,599 --> 00:51:02,319
+5 over 2, minus 2, plus 1 over 2. Yes, it is 1. Okay.
+
+526
+00:51:03,519 --> 00:51:09,119
+If your region is not rectangle, you can't change the order of integration directly.
+
+527
+00:51:09,119 --> 00:51:11,459
+Okay.
+
+528
+00:51:12,739 --> 00:51:16,179
+And let's solve some other question.
+
+529
+00:51:16,439 --> 00:51:19,399
+I will, I won't take a break.
+
+530
+00:51:19,980 --> 00:51:20,279
+Okay.
+
+531
+00:51:21,000 --> 00:51:22,379
+I will solve some questions.
+
+532
+00:51:22,480 --> 00:51:23,619
+After this, I will finish.
+
+533
+00:51:28,371 --> 00:51:35,491
+Çünkü bir sonraki konuya geçmeyeceğim. Bir sonraki konu alan, onu haftaya geçeceğim artık. Hepsini beraber yapmak istiyorum.
+
+534
+00:51:44,851 --> 00:51:47,811
+Okay, let's look at this one.
+
+535
+00:51:48,731 --> 00:51:51,431
+Calculate this integral according to this region.
+
+536
+00:51:52,251 --> 00:51:57,192
+R is a rectangle in the x-y-plane, x-coordinate system y, and x equals 1.
+
+537
+00:52:08,659 --> 00:52:21,739
+Y equals X, X equals 1, and X axis R, shape is the same.
+
+538
+00:52:25,364 --> 00:52:26,603
+Okay, let's see.
+
+539
+00:52:28,523 --> 00:52:30,324
+Sin x over x.
+
+540
+00:52:33,103 --> 00:52:36,164
+Let's write the y dx.
+
+541
+00:52:36,744 --> 00:52:39,664
+Okay, so what is our bound for x?
+
+542
+00:52:40,023 --> 00:52:42,003
+It will change from 0 to 1.
+
+543
+00:52:42,804 --> 00:52:50,043
+And when you sketch lines like here, your beginning function is x-axis, it is 0.
+
+544
+00:52:50,043 --> 00:52:55,903
+Your end function is y equals x, it will be x.
+
+545
+00:52:58,784 --> 00:53:02,063
+Okay, so it will be 0 to 1.
+
+546
+00:53:02,063 --> 00:53:07,244
+Sin x over xy.
+
+547
+00:53:08,744 --> 00:53:13,184
+0 to x dx.
+
+548
+00:53:17,331 --> 00:53:22,271
+It will be 0 to 1 sin x dx.
+
+549
+00:53:25,192 --> 00:53:30,711
+It will be minus cosine x 0 to 1.
+
+550
+00:53:31,271 --> 00:53:35,612
+It will be minus cosine 1 plus 1.
+
+551
+00:53:37,071 --> 00:53:37,731
+Okay.
+
+552
+00:53:38,731 --> 00:53:43,411
+If you write for dx dy, what we will have,
+
+553
+00:53:43,411 --> 00:53:47,612
+and let's see if it is difficult or not.
+
+554
+00:53:49,132 --> 00:53:52,092
+If you write according to dx dy,
+
+555
+00:53:52,351 --> 00:53:54,291
+our bounce will be 4y.
+
+556
+00:53:54,391 --> 00:53:55,771
+It will be from 0 to 1.
+
+557
+00:53:56,431 --> 00:53:59,991
+It will be, when you sketch these lines,
+
+558
+00:54:00,152 --> 00:54:02,571
+your starting point is this.
+
+559
+00:54:02,711 --> 00:54:04,471
+It will be x equals y,
+
+560
+00:54:05,172 --> 00:54:06,592
+and it will be 1.
+
+561
+00:54:07,491 --> 00:54:10,451
+Now, this integral is difficult.
+
+562
+00:54:10,451 --> 00:54:12,692
+Okay.
+
+563
+00:54:12,931 --> 00:54:15,192
+This integral is difficult to solve.
+
+564
+00:54:15,871 --> 00:54:18,511
+So, firstly, when you see the question,
+
+565
+00:54:19,011 --> 00:54:21,291
+don't start to solve directly.
+
+566
+00:54:21,871 --> 00:54:23,692
+Look at the function,
+
+567
+00:54:24,072 --> 00:54:28,451
+and which is more suitable than start with that one.
+
+568
+00:54:28,891 --> 00:54:30,311
+For example, here,
+
+569
+00:54:30,311 --> 00:54:34,311
+if I use this dy dx order,
+
+570
+00:54:35,271 --> 00:54:35,891
+it is easy.
+
+571
+00:54:36,211 --> 00:54:38,451
+But if you want to use dx dy,
+
+572
+00:54:38,451 --> 00:54:40,851
+the integral is very difficult,
+
+573
+00:54:41,011 --> 00:54:42,211
+and in some cases,
+
+574
+00:54:42,771 --> 00:54:44,592
+the integral is unsolvable.
+
+575
+00:54:45,851 --> 00:54:46,891
+For that case,
+
+576
+00:54:47,011 --> 00:54:51,531
+you have to use changing order of integration.
+
+577
+00:54:52,291 --> 00:54:54,451
+You have to change the order.
+
+578
+00:54:55,152 --> 00:54:55,371
+Okay.
+
+579
+00:54:56,632 --> 00:54:56,951
+Bakın,
+
+580
+00:54:57,411 --> 00:54:58,951
+sorular da karşınıza çıkınca
+
+581
+00:54:58,951 --> 00:55:00,152
+hemen çözmeye çalışmayın.
+
+582
+00:55:00,271 --> 00:55:01,991
+Önce bölgenizi belirledikten sonra
+
+583
+00:55:01,991 --> 00:55:03,551
+şöyle bir fonksiyonun içine bakın.
+
+584
+00:55:04,411 --> 00:55:05,051
+Ve ona göre,
+
+585
+00:55:05,291 --> 00:55:06,572
+hangisi daha uygun?
+
+586
+00:55:06,572 --> 00:55:08,351
+Bazısında hepsini kullanabiliyorsunuz.
+
+587
+00:55:08,391 --> 00:55:09,271
+Ama mesela bu soruda
+
+588
+00:55:09,271 --> 00:55:11,132
+dx bölü,
+
+589
+00:55:11,231 --> 00:55:13,172
+dx dy'yi kullanmak isterseniz
+
+590
+00:55:13,172 --> 00:55:14,051
+bakın zor burada.
+
+591
+00:55:14,291 --> 00:55:15,132
+Bunu çözemezsiniz.
+
+592
+00:55:16,092 --> 00:55:18,152
+O yüzden hemen soruları atlamayın.
+
+593
+00:55:18,592 --> 00:55:19,592
+Önce bir bakın bakalım.
+
+594
+00:55:19,711 --> 00:55:20,431
+Bölgeniz nedir?
+
+595
+00:55:21,612 --> 00:55:22,211
+Especially,
+
+596
+00:55:22,572 --> 00:55:23,731
+do you have any problem
+
+597
+00:55:23,731 --> 00:55:25,771
+inside of the function?
+
+598
+00:55:25,891 --> 00:55:26,451
+For example,
+
+599
+00:55:26,672 --> 00:55:27,251
+if you have
+
+600
+00:55:27,251 --> 00:55:29,172
+e to the power x square,
+
+601
+00:55:29,951 --> 00:55:30,831
+this integral
+
+602
+00:55:30,831 --> 00:55:32,351
+is unsolvable integral.
+
+603
+00:55:32,572 --> 00:55:32,831
+Or,
+
+604
+00:55:32,991 --> 00:55:33,632
+if you have
+
+605
+00:55:33,632 --> 00:55:34,592
+sin x square,
+
+606
+00:55:35,271 --> 00:55:36,911
+this is unsolvable integral.
+
+607
+00:55:37,112 --> 00:55:37,731
+If you write
+
+608
+00:55:37,731 --> 00:55:38,531
+dx dy
+
+609
+00:55:38,531 --> 00:55:40,291
+in this form,
+
+610
+00:55:40,851 --> 00:55:41,871
+it will be difficult.
+
+611
+00:55:42,931 --> 00:55:43,871
+You can't solve.
+
+612
+00:55:43,951 --> 00:55:45,251
+It is unsolvable integral.
+
+613
+00:55:45,431 --> 00:55:45,551
+But,
+
+614
+00:55:45,791 --> 00:55:46,011
+if you,
+
+615
+00:55:46,471 --> 00:55:47,471
+firstly,
+
+616
+00:55:47,612 --> 00:55:48,911
+if you start with
+
+617
+00:55:48,911 --> 00:55:49,692
+dx dy,
+
+618
+00:55:50,231 --> 00:55:51,072
+it will be
+
+619
+00:55:51,072 --> 00:55:51,572
+solvable.
+
+620
+00:55:51,572 --> 00:55:52,371
+Okay?
+
+621
+00:55:57,268 --> 00:56:01,268
+Okay, now I don't want to start with...
+
+622
+00:56:12,436 --> 00:56:21,936
+I don't want to look at this one. I want to look at the exam questions.
+
+623
+00:56:23,256 --> 00:56:32,135
+Bunun haftaya devam edeceğim. Sadece şey yapmak istiyorum. Eczemde bakalım farklı neler sormuşlar. Bizim ihtiyacımız olan ona bir bakalım.
+
+624
+00:56:35,764 --> 00:56:39,584
+bitireceğim. Özellikle son konularla ilgili bir bakmak istiyorum.
+
+625
+00:56:50,452 --> 00:56:52,032
+Sırasına geçmelik daha.
+
+626
+00:57:25,523 --> 00:57:31,844
+In the final exam, they don't ask any calculation, but they are asking the formula especially.
+
+627
+00:57:33,243 --> 00:57:34,603
+Okay, let me write here.
+
+628
+00:57:35,223 --> 00:57:39,543
+They said that we have a volume on top.
+
+629
+00:57:43,123 --> 00:57:47,943
+We have this shape and on the bottom.
+
+630
+00:57:50,763 --> 00:58:02,183
+They cut with x-coordinate system and for the region they give x positive, y positive and x plus y is less or equal to zero.
+
+631
+00:58:02,823 --> 00:58:04,743
+Then they are asking what is the volume.
+
+632
+00:58:14,324 --> 00:58:19,644
+In the question, only the x-y coordinate system is especially important in test.
+
+633
+00:58:20,224 --> 00:58:20,923
+What is that?
+
+634
+00:58:22,023 --> 00:58:28,084
+X is positive, y is positive, x plus y is less or equal to 1.
+
+635
+00:58:28,483 --> 00:58:31,003
+If you take equals, it is a circle.
+
+636
+00:58:35,956 --> 00:58:39,416
+But they said that less or equal to, so they will take the bound.
+
+637
+00:58:39,416 --> 00:58:46,135
+So, outside you will have a function I'm writing, I'm sketching generally.
+
+638
+00:58:47,336 --> 00:58:52,716
+Sorry, and they are asking what is the volume, only these parts.
+
+639
+00:58:53,615 --> 00:58:53,816
+Okay.
+
+640
+00:59:00,436 --> 00:59:02,436
+Top shape is this.
+
+641
+00:59:02,436 --> 00:59:07,436
+So, here I will have this one.
+
+642
+00:59:07,436 --> 00:59:09,436
+Here, here.
+
+643
+00:59:14,068 --> 00:59:16,028
+And outside you will like this.
+
+644
+00:59:17,168 --> 00:59:18,388
+They are asking the shape.
+
+645
+00:59:19,128 --> 00:59:24,488
+Only for the bounds, the shape of the x-y coordinate system is important.
+
+646
+00:59:24,648 --> 00:59:26,388
+Because we will write our bounds here.
+
+647
+00:59:27,488 --> 00:59:29,588
+It is 1, this is 1.
+
+648
+00:59:30,108 --> 00:59:31,888
+Okay, what is this equation?
+
+649
+00:59:31,888 --> 00:59:36,268
+It is x squared plus y squared equals 1.
+
+650
+00:59:37,468 --> 00:59:39,788
+Okay, let's write our volume.
+
+651
+00:59:40,528 --> 00:59:41,408
+About one second.
+
+652
+00:59:44,068 --> 00:59:46,588
+Haa, pardon bir saniye.
+
+653
+00:59:47,028 --> 00:59:48,428
+x artı y o değil mi?
+
+654
+00:59:48,508 --> 00:59:49,628
+Ben x kare artı y kare...
+
+655
+00:59:49,628 --> 00:59:50,508
+Pardon, pardon.
+
+656
+00:59:51,388 --> 00:59:52,188
+Hiç uyarmıyorsunuz.
+
+657
+00:59:52,208 --> 00:59:54,488
+Ben x kare artı y kare diye yazıyorum onu ya.
+
+658
+00:59:54,568 --> 00:59:55,288
+Çok özür dilerim.
+
+659
+00:59:57,988 --> 00:59:58,807
+Ben uyaramadım.
+
+660
+01:00:02,228 --> 01:00:03,348
+Çok özür dilerim.
+
+661
+01:00:03,428 --> 01:00:04,888
+x artı y işte 1 doğrusu.
+
+662
+01:00:04,948 --> 01:00:07,748
+Ben onu kare diye görüyorum şu an.
+
+663
+01:00:10,348 --> 01:00:12,688
+Okay, so the shape will be different.
+
+664
+01:00:14,068 --> 01:00:16,588
+x plus...
+
+665
+01:00:18,028 --> 01:00:19,328
+y equals 1.
+
+666
+01:00:19,408 --> 01:00:20,588
+It is a line.
+
+667
+01:00:21,268 --> 01:00:23,368
+If x is 0, y will be 1.
+
+668
+01:00:23,888 --> 01:00:26,408
+If y is 0, x will be 1.
+
+669
+01:00:26,848 --> 01:00:27,128
+Okay.
+
+670
+01:00:29,628 --> 01:00:31,728
+So this is your base.
+
+671
+01:00:32,748 --> 01:00:35,628
+And outside, this is your function.
+
+672
+01:00:35,628 --> 01:00:37,148
+So volume will be...
+
+673
+01:00:37,148 --> 01:00:39,228
+Double integral.
+
+674
+01:00:40,588 --> 01:00:42,448
+1 minus x square.
+
+675
+01:00:43,728 --> 01:00:45,148
+Minus y square.
+
+676
+01:00:46,428 --> 01:00:49,128
+Now, let's determine the order.
+
+677
+01:00:49,568 --> 01:00:49,868
+Okay.
+
+678
+01:00:50,408 --> 01:00:52,148
+If you want to write as...
+
+679
+01:00:52,148 --> 01:00:54,828
+d y d x.
+
+680
+01:00:55,968 --> 01:00:57,188
+What is this?
+
+681
+01:00:57,748 --> 01:00:59,988
+x is changing from 0 to 1.
+
+682
+01:00:59,988 --> 01:01:04,728
+When you sketch your lines,
+
+683
+01:01:05,448 --> 01:01:07,448
+your beginning function is x-axis.
+
+684
+01:01:07,588 --> 01:01:08,108
+What is this?
+
+685
+01:01:08,168 --> 01:01:09,508
+x-axis is...
+
+686
+01:01:09,508 --> 01:01:10,668
+y is 0.
+
+687
+01:01:13,348 --> 01:01:15,408
+And your end function is this.
+
+688
+01:01:15,468 --> 01:01:16,408
+What is our function?
+
+689
+01:01:16,568 --> 01:01:18,408
+x plus y equals 1.
+
+690
+01:01:18,948 --> 01:01:20,307
+But what is y here?
+
+691
+01:01:20,828 --> 01:01:22,728
+y is 1 minus x.
+
+692
+01:01:22,728 --> 01:01:25,428
+So the bound will be 1 minus x.
+
+693
+01:01:25,928 --> 01:01:26,728
+Or...
+
+694
+01:01:26,728 --> 01:01:29,728
+If you want to write as...
+
+695
+01:01:29,728 --> 01:01:31,728
+1 minus x square...
+
+696
+01:01:32,568 --> 01:01:33,728
+minus y square...
+
+697
+01:01:34,728 --> 01:01:36,728
+If you want to write dx dy...
+
+698
+01:01:38,208 --> 01:01:38,728
+So...
+
+699
+01:01:39,288 --> 01:01:41,588
+You have to sketch your lines.
+
+700
+01:01:41,588 --> 01:01:42,588
+And...
+
+701
+01:01:42,588 --> 01:01:43,588
+You have to sketch your lines.
+
+702
+01:01:43,588 --> 01:01:44,588
+And...
+
+703
+01:01:44,588 --> 01:01:45,588
+You have to sketch your lines.
+
+704
+01:01:45,588 --> 01:01:46,588
+And...
+
+705
+01:01:46,588 --> 01:01:47,588
+You have to sketch your lines.
+
+706
+01:01:47,588 --> 01:01:48,588
+And...
+
+707
+01:01:48,588 --> 01:01:49,588
+You have to sketch your lines.
+
+708
+01:01:49,588 --> 01:01:50,588
+And...
+
+709
+01:01:50,588 --> 01:01:51,588
+You have to sketch your lines.
+
+710
+01:01:51,588 --> 01:01:52,588
+And...
+
+711
+01:01:52,588 --> 01:01:53,588
+You have to sketch your lines.
+
+712
+01:01:53,588 --> 01:01:54,588
+And...
+
+713
+01:01:54,588 --> 01:01:55,588
+You have to sketch your lines.
+
+714
+01:01:55,588 --> 01:01:56,588
+And...
+
+715
+01:01:56,588 --> 01:01:57,588
+You have to sketch your lines.
+
+716
+01:01:57,588 --> 01:01:58,588
+And...
+
+717
+01:01:58,588 --> 01:01:59,588
+You have to sketch your lines.
+
+718
+01:01:59,588 --> 01:02:00,588
+And...
+
+719
+01:02:00,588 --> 01:02:01,588
+You have to sketch your lines.
+
+720
+01:02:01,588 --> 01:02:02,588
+And...
+
+721
+01:02:02,588 --> 01:02:03,588
+You have to sketch your lines.
+
+722
+01:02:03,588 --> 01:02:04,588
+And...
+
+723
+01:02:04,588 --> 01:02:05,588
+You have to sketch your lines.
+
+724
+01:02:05,588 --> 01:02:06,588
+And...
+
+725
+01:02:06,588 --> 01:02:07,588
+You have to sketch your lines.
+
+726
+01:02:07,588 --> 01:02:08,588
+And...
+
+727
+01:02:08,588 --> 01:02:09,588
+You have to sketch your lines.
+
+728
+01:02:09,588 --> 01:02:10,588
+And...
+
+729
+01:01:46,739 --> 01:02:16,739
+bu yi
+
+730
+01:02:16,739 --> 01:02:24,139
+Now let's look at the question. In the question let's see if we write dy dx
+
+731
+01:02:34,612 --> 01:02:35,892
+Let's see which one.
+
+732
+01:02:38,152 --> 01:02:41,351
+In the first one, dy dx, okay.
+
+733
+01:02:42,231 --> 01:02:43,331
+0 to 1, yes.
+
+734
+01:02:43,412 --> 01:02:45,012
+0 to 1 minus x.
+
+735
+01:02:45,271 --> 01:02:47,311
+So the result is directly a.
+
+736
+01:02:48,831 --> 01:02:49,432
+Okay.
+
+737
+01:02:51,392 --> 01:02:58,372
+Maybe you can think, look at here, they are the same, but the bound is different.
+
+738
+01:02:59,992 --> 01:03:00,632
+Okay.
+
+739
+01:03:00,952 --> 01:03:03,172
+So in the example, please be careful.
+
+740
+01:03:03,172 --> 01:03:05,311
+Especially very small differences.
+
+741
+01:03:16,403 --> 01:03:27,403
+Neyse, onunla ilgili başka yok. Sadece bir tane de B vardı. Ona da bakalım. Sonra bitirelim dersimizi bugün.
+
+742
+01:04:06,164 --> 01:04:07,704
+Ok, let's see.
+
+743
+01:04:08,984 --> 01:04:10,064
+On the bottom.
+
+744
+01:04:15,956 --> 01:04:17,856
+We have x-y coordinate system.
+
+745
+01:04:17,976 --> 01:04:20,756
+It means that functions will be positive.
+
+746
+01:04:21,216 --> 01:04:22,655
+We will take the positive part.
+
+747
+01:04:25,655 --> 01:04:31,796
+And on top, this is our function.
+
+748
+01:04:32,615 --> 01:04:35,936
+And we have some restriction.
+
+749
+01:04:36,436 --> 01:04:36,976
+What is this?
+
+750
+01:04:37,096 --> 01:04:38,356
+X is less than 1.
+
+751
+01:04:38,796 --> 01:04:39,736
+Y will be positive.
+
+752
+01:04:40,016 --> 01:04:41,756
+Y less or equal to x.
+
+753
+01:04:42,615 --> 01:04:43,776
+Okay, let's see.
+
+754
+01:04:43,776 --> 01:04:46,276
+What do we have in your x-y coordinate system?
+
+755
+01:04:46,416 --> 01:04:47,916
+This is the only important part.
+
+756
+01:04:49,096 --> 01:04:50,976
+X is less or equal to 1.
+
+757
+01:04:51,076 --> 01:04:52,876
+So I have to sketch the line 1.
+
+758
+01:04:55,536 --> 01:04:56,836
+Y will be positive.
+
+759
+01:04:57,236 --> 01:04:58,476
+I will take this one.
+
+760
+01:04:59,756 --> 01:05:01,736
+Y less than x.
+
+761
+01:05:01,736 --> 01:05:04,115
+So I have to sketch y equals x.
+
+762
+01:05:05,996 --> 01:05:06,076
+Okay.
+
+763
+01:05:07,996 --> 01:05:12,195
+So, x is less than 1.
+
+764
+01:05:12,195 --> 01:05:12,936
+This part.
+
+765
+01:05:13,655 --> 01:05:14,736
+Y will be positive.
+
+766
+01:05:14,976 --> 01:05:15,556
+This part.
+
+767
+01:05:16,416 --> 01:05:18,276
+Y is less or equal to x.
+
+768
+01:05:18,356 --> 01:05:19,236
+What about this?
+
+769
+01:05:20,076 --> 01:05:21,956
+For this, you can take a point.
+
+770
+01:05:22,195 --> 01:05:26,716
+If y is 0, x will be 2.
+
+771
+01:05:26,816 --> 01:05:28,316
+For example, where is this?
+
+772
+01:05:28,556 --> 01:05:31,816
+X, sorry, x birden küçük olacak.
+
+773
+01:05:32,756 --> 01:05:33,635
+1 olsun.
+
+774
+01:05:33,635 --> 01:05:36,615
+Y'si de 0 olsun.
+
+775
+01:05:37,556 --> 01:05:39,016
+X, 1 iken y, 0.
+
+776
+01:05:39,216 --> 01:05:40,016
+Nerede is olacak?
+
+777
+01:05:40,216 --> 01:05:40,796
+Şurası olacak.
+
+778
+01:05:41,476 --> 01:05:42,276
+Örgimiz burası.
+
+779
+01:05:45,155 --> 01:05:45,756
+Okay.
+
+780
+01:05:45,756 --> 01:05:51,996
+So, our volume will be integral.
+
+781
+01:05:51,996 --> 01:05:52,195
+integral.
+
+782
+01:05:53,716 --> 01:05:59,576
+4 minus 4 x squared plus y squared.
+
+783
+01:06:00,716 --> 01:06:01,836
+D y dx.
+
+784
+01:06:01,836 --> 01:06:04,695
+What about the bounds?
+
+785
+01:06:04,856 --> 01:06:10,175
+X is changing from 0 to 1.
+
+786
+01:06:10,876 --> 01:06:13,695
+For these, we have two sketched lines here.
+
+787
+01:06:14,336 --> 01:06:16,256
+Your starting function is x-axis.
+
+788
+01:06:16,416 --> 01:06:17,076
+It is 0.
+
+789
+01:06:17,655 --> 01:06:19,115
+Your end function is this.
+
+790
+01:06:19,175 --> 01:06:21,316
+What is the formula for this?
+
+791
+01:06:21,396 --> 01:06:22,976
+It is y equals x.
+
+792
+01:06:23,476 --> 01:06:24,916
+But what we will write here?
+
+793
+01:06:24,916 --> 01:06:26,655
+y will be x.
+
+794
+01:06:28,276 --> 01:06:29,976
+If we change the order.
+
+795
+01:06:31,195 --> 01:06:36,115
+4 minus 4 x squared plus y squared.
+
+796
+01:06:37,336 --> 01:06:38,376
+D x dy.
+
+797
+01:06:39,115 --> 01:06:43,476
+Now, outside the bounds will be from 0 to 1.
+
+798
+01:06:46,056 --> 01:06:49,155
+Here, I will sketch lines is this.
+
+799
+01:06:49,695 --> 01:06:51,796
+Your starting function is your line.
+
+800
+01:06:52,316 --> 01:06:53,615
+But what we will write here?
+
+801
+01:06:53,615 --> 01:06:55,635
+Here, x will be y.
+
+802
+01:06:55,996 --> 01:06:57,576
+And what is your point?
+
+803
+01:06:57,736 --> 01:06:59,836
+Your point is x equals 1.
+
+804
+01:07:02,236 --> 01:07:04,276
+So, this is our volume.
+
+805
+01:07:04,516 --> 01:07:05,356
+Let's see.
+
+806
+01:07:14,228 --> 01:07:25,927
+Okay, from 0 to 1, yes, 0 to 1, 0 to x, this one. So it will be a. Okay?
+
+807
+01:07:27,288 --> 01:07:33,148
+Do you have any question? Until here, did you understand the general meaning of the volume?
+
+808
+01:07:33,148 --> 01:07:42,788
+Ne yapıyoruz? Taban adını hesaplayıp yükseklik olarak fonksiyonu alıyoruz. Daha sonra farklı şeyler de göreceğiz ama temel mantığı bu.
+
+809
+01:07:42,788 --> 01:07:55,327
+If your base is a rectangle, it is easy. If it is not rectangle, then you have to determine what kind of shadow of this solid when you look at from the top.
+
+810
+01:07:55,688 --> 01:08:00,008
+Okay? The shadow will give the bounce of this integral.
+
+811
+01:08:01,608 --> 01:08:11,488
+Okay, that's enough for today. And next week we will see the integral subjects I plan to finish next week, maybe.
+
+812
+01:08:11,488 --> 01:08:15,907
+And in the last week, maybe. And in the last week I plan to finish next week, maybe. And in the last week I plan to finish next week, okay?
+
+813
+01:08:15,907 --> 01:08:23,788
+Okay? And I will give you lecture notes I couldn't find today, but I will give you. Okay?
+
+814
+01:08:24,688 --> 01:08:26,768
+Okay, see you next week. Bye-bye.
+
+815
+01:08:26,768 --> 01:08:40,768
+Bye-bye.

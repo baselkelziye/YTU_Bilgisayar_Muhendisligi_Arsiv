@@ -1,0 +1,3467 @@
+1
+00:00:05,620 --> 00:00:06,599
+Okay, good morning.
+
+2
+00:00:40,723 --> 00:00:41,363
+Bir dakika.
+
+3
+00:00:55,060 --> 00:00:59,660
+Biraz erken, o yüzden bir iki dakika bekleyelim arkadaşlarınızı. Biraz daha kalabalık.
+
+4
+00:00:59,660 --> 00:01:00,740
+Beş oldu.
+
+5
+00:01:02,100 --> 00:01:02,980
+Ok, today
+
+6
+00:01:02,980 --> 00:01:07,120
+we will see parametric equations.
+
+7
+00:01:15,412 --> 00:01:22,052
+We will see parametrik equations and next week I will study to see polar coordinates.
+
+8
+00:01:39,284 --> 00:01:47,044
+Okay, let's start. Today and next you will see changing the coordinate system. The first one
+
+9
+00:01:47,044 --> 00:01:52,644
+we will talk about parametric equations. You can use any transformation to change the
+
+10
+00:01:54,404 --> 00:01:57,444
+xy coordinate system to another coordinate system.
+
+11
+00:01:58,484 --> 00:02:02,804
+Especially if you want to use the polar coordinates, what is the polar coordinates?
+
+12
+00:02:02,804 --> 00:02:12,804
+You will see it is x is r cosine theta and y is r sine theta. This is called polar coordinates.
+
+13
+00:02:12,804 --> 00:02:19,444
+We will change the xy coordinate system to r theta coordinate system. But if you
+
+14
+00:02:20,723 --> 00:02:25,044
+want to talk about generally it is parametric equations.
+
+15
+00:02:25,044 --> 00:02:36,484
+If x and y are given as functions of x equals ft and y equals gt, both of them depends on t and here
+
+16
+00:02:37,283 --> 00:02:45,364
+t mostly we will take as time. We will define these functions over an interval i.
+
+17
+00:02:45,364 --> 00:02:55,924
+t is in this interval. The set of points x and y or we can write ft gt defined by these equations is a
+
+18
+00:02:55,924 --> 00:03:03,524
+parametric curve. The equations are parametric equations of the curve. Here the parameter t
+
+19
+00:03:04,723 --> 00:03:12,723
+for the curve it will be in each domain and t will be in the closed interval. If your interval is closed
+
+20
+00:03:12,723 --> 00:03:22,723
+interval it is a to the b. And when we give the parametric equations and a parameter interval for a curve
+
+21
+00:03:22,723 --> 00:03:29,283
+we say that we have parameter parameterized the curve according to equation. For example
+
+22
+00:03:31,924 --> 00:03:35,124
+sketch let us sketch this one
+
+23
+00:03:44,243 --> 00:03:55,283
+Sketch the curve, defined by parametric equations, they are given as x equals t squared, y is t plus 1, and t is minus infinity to infinity.
+
+24
+00:03:55,924 --> 00:04:08,843
+Let me give some examples here. If t is 0, x will be 0, y will be 1. When t is 0, x is 0, y will be 1.
+
+25
+00:04:08,843 --> 00:04:20,564
+When t is 1, x will be 1, when t is 1, x will be 1, y will be 2.
+
+26
+00:04:21,944 --> 00:04:24,364
+x is 1, y is 2.
+
+27
+00:04:31,091 --> 00:04:50,831
+Actually, you can write this equation in the x-y coordinate system. For this, you have to cancel t. x is t squared, y is t plus 1. If I cancel t in the second equation, in the second equation t is y minus 1.
+
+28
+00:04:50,831 --> 00:05:14,812
+If I write t in the first equation, I can see that x is y minus 1 squared. This is written in the x-y coordinate system. And this written is the same. They give the same curve, but it is written parametrically. Here you can determine the time.
+
+29
+00:05:14,812 --> 00:05:24,271
+Okay, what is the shape of this equation normally? It is a curve. It is a parabole.
+
+30
+00:05:33,747 --> 00:05:35,507
+Normalde bu shape is this.
+
+31
+00:05:38,408 --> 00:05:42,387
+If x is 0, y will be 1.
+
+32
+00:05:45,147 --> 00:05:46,087
+Şekli nasıl olacak?
+
+33
+00:05:46,228 --> 00:05:49,147
+Normalde bu shape will be here or here.
+
+34
+00:05:49,647 --> 00:05:51,608
+The sign of y square is positive.
+
+35
+00:05:51,887 --> 00:05:53,747
+So, the shape will be this.
+
+36
+00:05:54,207 --> 00:05:55,528
+But what about the position?
+
+37
+00:05:58,147 --> 00:06:00,507
+If x equals y square.
+
+38
+00:06:00,507 --> 00:06:05,647
+Pardon, Şekli, show this right here.
+
+39
+00:06:06,367 --> 00:06:06,848
+One second.
+
+40
+00:06:07,767 --> 00:06:12,228
+For a parabola, you have four shapes.
+
+41
+00:06:12,387 --> 00:06:15,548
+This one, this one, this one, this one.
+
+42
+00:06:17,247 --> 00:06:24,087
+These two are related to y equals x square or y equals minus x square.
+
+43
+00:06:24,087 --> 00:06:31,367
+These shapes are x equals y square or x equals minus y square.
+
+44
+00:06:32,668 --> 00:06:32,827
+Okay.
+
+45
+00:06:33,487 --> 00:06:34,427
+This is this.
+
+46
+00:06:35,327 --> 00:06:36,788
+This shape is this.
+
+47
+00:06:37,507 --> 00:06:39,608
+X equals y square is this.
+
+48
+00:06:40,747 --> 00:06:42,947
+X equals minus y square is this.
+
+49
+00:06:42,947 --> 00:06:50,387
+But here, I have x equals y minus 1 square.
+
+50
+00:06:50,747 --> 00:06:52,187
+The shape will be this.
+
+51
+00:06:52,987 --> 00:06:55,728
+But the position is changed.
+
+52
+00:06:56,867 --> 00:06:57,967
+How can you sketch?
+
+53
+00:06:57,967 --> 00:07:26,307
+X equals y square.
+
+54
+00:07:03,603 --> 00:07:08,283
+So, I will put here, what is this point? How can you determine?
+
+55
+00:07:12,052 --> 00:07:13,852
+Şekli nasıl yerleştireceğiz buraya?
+
+56
+00:07:16,732 --> 00:07:19,532
+If x is 0, y will be 1.
+
+57
+00:07:21,092 --> 00:07:23,612
+If y is 0, x will be.
+
+58
+00:07:24,391 --> 00:07:27,172
+If x is 0, y will be 1.
+
+59
+00:07:27,872 --> 00:07:29,212
+Buradan geçecek.
+
+60
+00:07:29,872 --> 00:07:31,032
+İki sapırken yenisi 1.
+
+61
+00:07:32,132 --> 00:07:35,152
+If y is 0, x will be 1.
+
+62
+00:07:48,788 --> 00:07:50,468
+O zaman nasıl çizeceğiz?
+
+63
+00:07:53,348 --> 00:07:53,948
+Şöyle mi?
+
+64
+00:08:07,795 --> 00:08:20,295
+Is it true? If x is 0, if x is 0, y has to be 1, yes. If y is 0, x will be 1, this one, yes.
+
+65
+00:08:21,435 --> 00:08:30,175
+So, I can put some important points. So, these two shapes are the same. Only the equations are different.
+
+66
+00:08:30,175 --> 00:08:39,355
+This equation is given in x-y coordinate system. This is in x-y coordinate system, but it is written in parametrically.
+
+67
+00:08:39,495 --> 00:08:45,975
+Here we have the parameter t. For example, where is, when t is 0, where are you? I am here.
+
+68
+00:08:49,460 --> 00:08:52,879
+If t is 1, I will be here.
+
+69
+00:08:55,759 --> 00:08:58,080
+If t is 2, I will be here.
+
+70
+00:09:00,139 --> 00:09:00,460
+Okay.
+
+71
+00:09:06,163 --> 00:09:09,443
+Ok, let us look at some other examples.
+
+72
+00:09:12,443 --> 00:09:15,884
+Graph the parametric curves, let's see, what do you have?
+
+73
+00:09:30,740 --> 00:09:33,560
+Today's action notes, okay?
+
+74
+00:09:38,163 --> 00:09:41,443
+Ok, sketch the graph of parametric curves.
+
+75
+00:09:41,604 --> 00:09:45,463
+Firstly, I want to see what do you have in x-y coordinate system.
+
+76
+00:09:46,563 --> 00:09:51,323
+X is cosine t, y is sine t.
+
+77
+00:09:51,884 --> 00:09:56,524
+If you want to write in x-y coordinate system, you have to cancel t.
+
+78
+00:09:56,864 --> 00:09:58,063
+What can I do for you?
+
+79
+00:10:01,908 --> 00:10:05,868
+I want to write this equation in the x-y coordinate system.
+
+80
+00:10:06,067 --> 00:10:07,748
+For this I have to cancel t.
+
+81
+00:10:08,648 --> 00:10:11,728
+Yes, but you have an easy way.
+
+82
+00:10:11,728 --> 00:10:15,388
+If you take square of left side and right side for both of them,
+
+83
+00:10:15,888 --> 00:10:21,268
+I can say that x square plus y square equals 1.
+
+84
+00:10:22,628 --> 00:10:24,548
+Because you will sketch the graph.
+
+85
+00:10:26,768 --> 00:10:31,728
+Or you can say that tangent t is y over x.
+
+86
+00:10:32,788 --> 00:10:35,807
+You can find t, but I want to cancel t.
+
+87
+00:10:35,807 --> 00:10:42,268
+So it is a circle at the center and the radius is 1.
+
+88
+00:10:42,847 --> 00:10:43,968
+The shape is this.
+
+89
+00:10:48,668 --> 00:10:52,687
+The shape is a circle at the center.
+
+90
+00:10:53,748 --> 00:10:59,888
+And here I can say that if t is 0, what is x?
+
+91
+00:10:59,888 --> 00:11:03,868
+x will be 1, y will be 0.
+
+92
+00:11:03,868 --> 00:11:09,788
+So at the starting point when t is 0, I will have here.
+
+93
+00:11:10,768 --> 00:11:12,087
+t is 0.
+
+94
+00:11:13,488 --> 00:11:17,008
+If t is, because of the angle I can write.
+
+95
+00:11:17,008 --> 00:11:23,427
+If t is pi over 2, x will be 0, y will be 1.
+
+96
+00:11:23,668 --> 00:11:24,628
+You will be here.
+
+97
+00:11:25,388 --> 00:11:27,307
+t is pi over 2.
+
+98
+00:11:29,508 --> 00:11:31,248
+Here t is pi.
+
+99
+00:11:32,388 --> 00:11:34,468
+t is 3 pi over 2.
+
+100
+00:11:34,468 --> 00:11:39,768
+And in the last part, when you have 2 pi, you will be here.
+
+101
+00:11:39,768 --> 00:11:46,807
+So your direction for motion is this.
+
+102
+00:11:46,807 --> 00:11:52,368
+In b, you can make the same thing.
+
+103
+00:11:52,447 --> 00:11:53,708
+But here you have a.
+
+104
+00:11:53,827 --> 00:12:00,508
+If you make the same thing, you will find x square plus y square will be not 1.
+
+105
+00:12:00,628 --> 00:12:01,947
+It will be a square.
+
+106
+00:12:01,947 --> 00:12:06,468
+It is the same, the circle.
+
+107
+00:12:07,148 --> 00:12:08,708
+But radius is not 1.
+
+108
+00:12:09,168 --> 00:12:37,488
+The radius is a.
+
+109
+00:12:17,524 --> 00:12:25,144
+And also you can use different parametrization to show a circle, to show a curve.
+
+110
+00:12:25,144 --> 00:12:25,744
+Okay.
+
+111
+00:12:27,484 --> 00:12:29,423
+Here you can see.
+
+112
+00:12:55,860 --> 00:13:09,779
+Let's look at this. What do you have? X is square root t. Y is t. So if I write square root t in here, this is x. If I write here, y will be x square.
+
+113
+00:13:11,980 --> 00:13:14,899
+Okay, let's see. Y equals x square.
+
+114
+00:13:17,779 --> 00:13:18,379
+This.
+
+115
+00:13:21,940 --> 00:13:44,920
+Okay, but here they give a restriction. T has to be 0 or positive 0. If t is 0, where is your starting point? X and Y will be 0. After that, your direction will be here. So for the curve, this is your position.
+
+116
+00:13:44,920 --> 00:13:52,760
+Only you will take this one because here they give that t can't be negative. It will be 0 or greater than 0.
+
+117
+00:13:54,380 --> 00:14:07,220
+And let me write one thing. You can use different parametrization for a curve. For example, Y equals X squared. I want to write parametrization.
+
+118
+00:14:07,220 --> 00:14:19,020
+In the previous example, they said that let us take X is square root T, Y is T. This is the parametrization of this curve.
+
+119
+00:14:20,680 --> 00:14:29,460
+I can take, for example, X is 1, Y is...
+
+120
+00:14:29,460 --> 00:14:36,759
+...
+
+121
+00:14:39,028 --> 00:14:43,768
+y is t, and y is t square.
+
+122
+00:14:45,348 --> 00:14:49,148
+Okay, this is another parametrization for this.
+
+123
+00:14:49,927 --> 00:14:55,687
+The shape is the same, but you can use different parametrizations, but they are all the same.
+
+124
+00:14:56,968 --> 00:14:58,388
+Let us see this one.
+
+125
+00:15:09,203 --> 00:15:10,863
+Graph the parametric curve.
+
+126
+00:15:11,663 --> 00:15:18,383
+You can't write, maybe at the beginning you can't see the graph of this parametric curve.
+
+127
+00:15:18,923 --> 00:15:23,403
+Let me write this parametric curve in x-y coordinate system.
+
+128
+00:15:24,323 --> 00:15:26,323
+So for this I have to cancel t.
+
+129
+00:15:26,763 --> 00:15:31,823
+Here they give that x is t plus 1 over t and y is t minus 1 over t.
+
+130
+00:15:31,943 --> 00:15:32,883
+t here is positive.
+
+131
+00:15:33,983 --> 00:15:44,147
+How can you cancel t here?
+
+132
+00:15:48,179 --> 00:16:14,779
+If you add, you will find t. Okay, if you add x, let's see, x plus y will be 2t. T will be x plus y over 2. Okay, after that, what do you do? In here, I try, okay, yes, let's see, x minus y will be 2 bölü t.
+
+133
+00:16:14,779 --> 00:16:32,379
+Okay, so you can write x minus y will be 2 over x plus y over 2. So x square minus y square will be 4.
+
+134
+00:16:32,379 --> 00:16:49,519
+Okay, or you can take x minus y of the first and the second equation after that, you can take the difference. Both of them are the same. So this is your shape. What is this?
+
+135
+00:16:49,519 --> 00:16:50,519
+is this?
+
+136
+00:16:57,139 --> 00:17:02,779
+This is hyperbolic. It is this. It is this. Okay?
+
+137
+00:17:05,980 --> 00:17:12,539
+Okay, you can see that if y is 0, x will be plus minus 4. This is 2. This is minus 2.
+
+138
+00:17:16,435 --> 00:17:17,816
+Elipse değil.
+
+139
+00:17:19,235 --> 00:17:19,875
+Elipse böyle.
+
+140
+00:17:22,015 --> 00:17:24,735
+If it is plus, okay, it is ellipse, but it is not.
+
+141
+00:17:24,995 --> 00:17:26,495
+The minus will be hyperbolic.
+
+142
+00:17:27,155 --> 00:17:30,135
+But you have a restriction.
+
+143
+00:17:30,655 --> 00:17:32,495
+They said that T is positive.
+
+144
+00:17:32,635 --> 00:17:33,375
+What does it mean?
+
+145
+00:17:33,515 --> 00:17:38,596
+If T is positive, you can see that X has to be positive,
+
+146
+00:17:39,096 --> 00:17:42,115
+but you can't say anything about Y.
+
+147
+00:17:42,115 --> 00:17:44,535
+It can be positive or negative, okay?
+
+148
+00:17:44,535 --> 00:17:49,895
+For this condition, if T is positive,
+
+149
+00:17:50,895 --> 00:17:53,935
+X has to be positive because of the equation,
+
+150
+00:17:54,076 --> 00:17:56,556
+but I can't say anything about Y.
+
+151
+00:17:56,675 --> 00:17:58,175
+It can be negative or positive.
+
+152
+00:17:58,915 --> 00:18:00,455
+So when you look at the graph,
+
+153
+00:18:01,596 --> 00:18:04,375
+this part, the right side part,
+
+154
+00:18:04,675 --> 00:18:06,735
+the positive part is okay,
+
+155
+00:18:06,735 --> 00:18:09,495
+but this part you can't take
+
+156
+00:18:09,495 --> 00:18:15,495
+because in this part,
+
+157
+00:18:15,755 --> 00:18:16,635
+X will be negative.
+
+158
+00:18:16,816 --> 00:18:18,655
+So this is your shape, okay?
+
+159
+00:18:20,135 --> 00:18:20,755
+Where are you?
+
+160
+00:18:20,815 --> 00:18:23,275
+If T is zero, we can't say.
+
+161
+00:18:23,395 --> 00:18:25,076
+For example, if T is one,
+
+162
+00:18:25,135 --> 00:18:26,755
+where do you do?
+
+163
+00:18:27,395 --> 00:18:30,695
+If T is one,
+
+164
+00:18:30,695 --> 00:18:32,195
+T will be three,
+
+165
+00:18:32,255 --> 00:19:00,056
+three,
+
+166
+00:18:49,779 --> 00:19:03,779
+bakalım, t eşittir birken, x'i 3 bölü 2'de, y ise 1 eksi birden sıfır tutacağız.
+
+167
+00:19:14,548 --> 00:19:15,387
+yok, hayır.
+
+168
+00:19:17,208 --> 00:19:19,748
+Oradan bakalım.
+
+169
+00:19:20,708 --> 00:19:21,307
+Şöyle olacak.
+
+170
+00:19:30,163 --> 00:19:40,023
+Evet, evet, it will be, şunu ikiye yazdım, kaşığı da, yes, it will be two, sorry.
+
+171
+00:19:42,604 --> 00:19:46,483
+It will be here, so this is t equals one.
+
+172
+00:19:48,324 --> 00:19:51,443
+Okay.
+
+173
+00:19:53,183 --> 00:19:56,943
+So now you can see some parametrization.
+
+174
+00:19:56,943 --> 00:20:03,923
+In the parametrization, actually, this subject is very short subject.
+
+175
+00:20:04,584 --> 00:20:07,304
+Normally, we have some more subjects, but we cancel.
+
+176
+00:20:07,844 --> 00:20:10,163
+We cancel some subjects.
+
+177
+00:20:10,864 --> 00:20:12,683
+We won't see areas.
+
+178
+00:20:15,183 --> 00:20:17,403
+Konuların bir kısmı artık yok.
+
+179
+00:20:17,903 --> 00:20:22,064
+O yüzden eskiden anlatıyorduk ama artık vermiyoruz.
+
+180
+00:20:22,064 --> 00:20:25,243
+O yüzden bir saniye izi istiyorum.
+
+181
+00:20:48,051 --> 00:20:54,531
+Şimdi, parametrizizasyon
+
+182
+00:20:54,531 --> 00:20:57,651
+ve paramedicik kurdları
+
+183
+00:20:57,651 --> 00:21:01,651
+derivasyon ve paramedicik kurdları
+
+184
+00:21:01,651 --> 00:21:05,651
+ve paramedicik kurdları
+
+185
+00:21:05,651 --> 00:21:07,651
+ama bu kadar da bir paramedicik kurdları
+
+186
+00:21:07,651 --> 00:22:13,651
+ve paramedicik kurdları
+
+187
+00:22:13,651 --> 00:22:35,651
+ve paramedic kurdları
+
+188
+00:22:38,579 --> 00:23:08,579
+Normalde y'
+
+189
+00:23:08,579 --> 00:23:22,000
+I can write as dy over dt over I can write this term as your denominator it will be dx over dt.
+
+190
+00:23:23,000 --> 00:23:29,359
+This is the first derivation of your parametrizyte curve.
+
+191
+00:23:36,884 --> 00:23:37,243
+Ok?
+
+192
+00:23:43,635 --> 00:23:47,155
+This is your first derivation formula.
+
+193
+00:23:48,475 --> 00:23:51,915
+And for the second derivation, you can make the same thing.
+
+194
+00:23:51,915 --> 00:23:59,475
+If you want to take d square y over dx square, it is, what do you do here?
+
+195
+00:23:59,635 --> 00:24:06,296
+I take the derivation of this term with respect to t over dx over dt.
+
+196
+00:24:06,596 --> 00:24:09,316
+If you want to write the second derivation,
+
+197
+00:24:13,844 --> 00:24:43,824
+What is it? It is d over dx. It is dy over dx. Or you can write it is y''. So if you apply this formula, they said that take this function's derivation with respect to t over dx over dt is the second derivation of the parametre.
+
+198
+00:24:43,844 --> 00:24:48,163
+Let's see some examples.
+
+199
+00:24:53,299 --> 00:24:58,279
+For example, you can find the tangent line of this parametric curve.
+
+200
+00:25:00,119 --> 00:25:00,519
+Okay.
+
+201
+00:25:01,839 --> 00:25:07,159
+Find the tangent or tangent, we can write tangent line and normal line.
+
+202
+00:25:07,159 --> 00:25:11,460
+To the curve, our curve is given parametrically.
+
+203
+00:25:11,659 --> 00:25:14,839
+X is second, T, Y is tangent T in this interval.
+
+204
+00:25:16,299 --> 00:25:21,899
+And we will find the tangent at the point square root 2 comma 1.
+
+205
+00:25:21,899 --> 00:25:24,899
+So first, I have to find derivation.
+
+206
+00:25:25,059 --> 00:25:26,440
+What is dy over dx?
+
+207
+00:25:27,599 --> 00:25:34,940
+dy over dx will be dy over dt dx over dt.
+
+208
+00:25:37,519 --> 00:25:44,339
+So here, I will take derivation of y, because both of them are given with respect to T.
+
+209
+00:25:45,259 --> 00:25:48,599
+Derivation of tangent will be second square T.
+
+210
+00:25:48,599 --> 00:25:58,259
+dx over dt will be derivation of second function is second T product tangent T.
+
+211
+00:25:59,940 --> 00:26:03,599
+So I can cancel second here.
+
+212
+00:26:03,599 --> 00:26:04,980
+Here.
+
+213
+00:26:05,980 --> 00:26:09,079
+I have second is 1 over cosine T.
+
+214
+00:26:11,879 --> 00:26:15,159
+Tencent is sine T over cosine T.
+
+215
+00:26:17,039 --> 00:26:19,859
+It will be 1 over sine T.
+
+216
+00:26:19,859 --> 00:26:49,859
+So the tangent will be, you can write, you can write, you can write, you can write, you can write, you can write, you can write, you can write, you can write, you can write, you can write, you can write, you can write, you can write, you can write, you can write, you can write, you can write, you can write, you can write, you can write, you can write, you can write, you can write, you can write, you can write, you can write, you can write, you can write, you can write, you can write, you can write, you can write, you can write, you can write, you can write, you can write, you can write, you can write, you can write, you can write, you can write, you can write, you can write, you can write, you can write, you can write, you can write, you can write, you can write, you can write, you can write, you can write, you can write, you
+
+217
+00:26:49,859 --> 00:26:57,559
+So second t, this is tangent t, so what is t here?
+
+218
+00:27:00,220 --> 00:27:07,720
+They give also restriction about t, what can I take? Yes, it will be pi over 4.
+
+219
+00:27:08,920 --> 00:27:11,839
+So t will be pi over 4.
+
+220
+00:27:12,879 --> 00:27:19,720
+It is 1 over, 1 over square root 2, it will be square root 2.
+
+221
+00:27:19,859 --> 00:27:21,099
+This is your tangent.
+
+222
+00:27:22,240 --> 00:27:25,500
+Also, you can write tangent line if you want.
+
+223
+00:27:27,279 --> 00:27:29,519
+It will be y minus 1.
+
+224
+00:27:30,920 --> 00:27:35,000
+Will be slope here is square root 2.
+
+225
+00:27:36,420 --> 00:27:40,940
+x minus square root 2 is your tangent line.
+
+226
+00:27:41,500 --> 00:27:43,399
+And you can write normal line.
+
+227
+00:27:43,720 --> 00:27:45,159
+What is your normal line?
+
+228
+00:27:46,119 --> 00:27:47,879
+This part will be the same.
+
+229
+00:27:49,859 --> 00:28:02,139
+But the normal lines slope will be, this is your relation between normal line and tangent line slopes.
+
+230
+00:28:02,679 --> 00:28:04,200
+What is mn here?
+
+231
+00:28:05,019 --> 00:28:08,759
+It is minus 1 over square root 2.
+
+232
+00:28:08,759 --> 00:28:11,879
+Okay.
+
+233
+00:28:14,940 --> 00:28:25,839
+So we can use the first derivation and from the first derivation we can determine the slope and we can write tangent line, normal line, according to your question.
+
+234
+00:28:25,839 --> 00:28:29,839
+So we can use the first derivation and from the first derivation we can write tangent line.
+
+235
+00:28:29,839 --> 00:28:37,839
+So we can use the first derivation we can write tangent line.
+
+236
+00:28:29,811 --> 00:28:30,371
+Ok.
+
+237
+00:28:38,996 --> 00:28:41,936
+Let's find the second derivation, okay?
+
+238
+00:28:44,256 --> 00:28:45,036
+Let's see.
+
+239
+00:29:07,892 --> 00:29:10,251
+Okay, let us find the second derivation.
+
+240
+00:29:12,532 --> 00:29:15,092
+Firstly, you have to start with the first derivation.
+
+241
+00:29:15,192 --> 00:29:16,632
+What is dy over dx?
+
+242
+00:29:18,751 --> 00:29:26,731
+dy over dx is dy over dt dx over dt.
+
+243
+00:29:26,731 --> 00:29:35,192
+So, dy over dt will be 1 minus 3t square.
+
+244
+00:29:36,491 --> 00:29:39,792
+And dx over dt is 1 minus 2t.
+
+245
+00:29:41,392 --> 00:29:43,292
+This is y prime.
+
+246
+00:29:44,072 --> 00:29:44,292
+Okay?
+
+247
+00:29:44,292 --> 00:29:44,412
+Okay.
+
+248
+00:29:50,867 --> 00:29:59,827
+Yaren, in the previous example, they said that find the slope at the point, this one.
+
+249
+00:30:00,467 --> 00:30:03,887
+But in your equation, you need to determine what is t.
+
+250
+00:30:04,528 --> 00:30:07,987
+Here, this is x point, this is y point.
+
+251
+00:30:07,987 --> 00:30:11,847
+In the x point, the equation was second t.
+
+252
+00:30:12,967 --> 00:30:17,508
+We have to find for which value of t, second t will be square root 2.
+
+253
+00:30:17,508 --> 00:30:21,207
+And for tangent t will be 1.
+
+254
+00:30:22,788 --> 00:30:25,087
+I have to find this t, okay?
+
+255
+00:30:25,748 --> 00:30:26,048
+Second.
+
+256
+00:30:26,567 --> 00:30:28,048
+In the equation, it was second.
+
+257
+00:30:29,467 --> 00:30:31,987
+For which value of t this possess?
+
+258
+00:30:32,907 --> 00:30:35,028
+It will be pi over 4.
+
+259
+00:30:35,268 --> 00:30:38,627
+Bunu sağlayan t değeri, o verdiği aralıkta sadece bu.
+
+260
+00:30:38,707 --> 00:30:40,667
+Soru da sekandtı, kosekand değil.
+
+261
+00:30:43,768 --> 00:30:45,548
+In the equation, it was second.
+
+262
+00:30:45,548 --> 00:30:48,147
+Here, okay?
+
+263
+00:30:51,427 --> 00:30:53,127
+In the equation, it was second.
+
+264
+00:30:54,727 --> 00:30:55,028
+Okay?
+
+265
+00:30:56,927 --> 00:30:59,987
+Okay, so here I find y prime.
+
+266
+00:31:00,707 --> 00:31:03,467
+But they are asking the second derivation.
+
+267
+00:31:03,907 --> 00:31:06,867
+And I use the formula for the same.
+
+268
+00:31:06,867 --> 00:31:12,528
+Okay, you can write, you can write as kosekand.
+
+269
+00:31:12,587 --> 00:31:13,087
+No problem.
+
+270
+00:31:13,567 --> 00:31:15,187
+I write in sine function.
+
+271
+00:31:16,048 --> 00:31:17,847
+Or you can take as kosekand.
+
+272
+00:31:17,947 --> 00:31:18,147
+Okay?
+
+273
+00:31:18,307 --> 00:31:18,768
+No problem.
+
+274
+00:31:19,788 --> 00:31:24,667
+So what is this d square over d square y over dx square?
+
+275
+00:31:24,667 --> 00:31:34,067
+I will take derivation of y prime with respect to t over dx over dt.
+
+276
+00:31:34,067 --> 00:31:39,907
+So here, I have to take, this is y prime.
+
+277
+00:31:39,907 --> 00:31:42,288
+I have to take derivation of this function.
+
+278
+00:31:42,987 --> 00:31:46,227
+The first function's derivation is minus 6t.
+
+279
+00:31:47,508 --> 00:31:49,627
+Product 1 minus 2t.
+
+280
+00:31:51,207 --> 00:31:52,887
+Minus the first function.
+
+281
+00:31:55,727 --> 00:31:58,227
+Product the second function's derivation.
+
+282
+00:31:58,227 --> 00:32:03,587
+over 1 minus 2t square.
+
+283
+00:32:05,847 --> 00:32:08,907
+And here, I have to write dx over dt.
+
+284
+00:32:09,107 --> 00:32:10,728
+dx over dt is this.
+
+285
+00:32:11,987 --> 00:32:14,327
+This is the second derivation.
+
+286
+00:32:14,327 --> 00:32:33,187
+Okay?
+
+287
+00:32:19,443 --> 00:32:22,163
+It's a dayar very easy. Efendim?
+
+288
+00:32:35,955 --> 00:32:36,935
+çözümlerken
+
+289
+00:32:49,779 --> 00:32:51,480
+Hayır, öyle bir şey yok burada.
+
+290
+00:32:52,740 --> 00:32:53,859
+Ha, şey diyorsun.
+
+291
+00:33:00,115 --> 00:33:00,715
+Yok.
+
+292
+00:33:02,855 --> 00:33:05,875
+Yani ama burada 3 parametre var.
+
+293
+00:33:06,435 --> 00:33:08,235
+Sonuçta sen T'ye göre alacaksın.
+
+294
+00:33:08,235 --> 00:33:12,635
+Yani klasik de olsa yanlış.
+
+295
+00:33:13,496 --> 00:33:18,816
+Ama şimdi testte olduğu için çıkartabiliyorsan normalde olmaması gerekiyor sonuçta.
+
+296
+00:33:18,975 --> 00:33:22,155
+İki değişken varken sen onu bir şekilde şey çıkartıyorsun.
+
+297
+00:33:26,420 --> 00:33:49,759
+Normalde o şekilde yapılan şey yanlış. Ama sonuç aynı çıkar mı bilmiyorum, bakmadım. Ama dediğim gibi testi sizin nasıl yaptığınızı bilmiyoruz. Doğru çıkıyorsa tamam. Ama çözmedim açıkçası o şekilde. Ama o şekilde yazım yanlış yani, o şekilde olmaz. Matematiksel olarak yanlış.
+
+298
+00:33:53,556 --> 00:33:59,256
+Okay, so we don't have asteroid because we cancel area.
+
+299
+00:33:59,256 --> 00:34:02,576
+Okay, don't look at this.
+
+300
+00:34:04,655 --> 00:34:08,655
+Now we will see length of a parametric curve.
+
+301
+00:34:09,356 --> 00:34:18,096
+Let C be a curve given parametrically by the equations X is Ft and Y is Gt.
+
+302
+00:34:18,735 --> 00:34:22,175
+T is given in the closed interval AB.
+
+303
+00:34:22,175 --> 00:34:37,536
+Where F' and G' are continuously and not 0 on A and B and C is traversed exactly once.
+
+304
+00:34:39,135 --> 00:34:42,715
+As G increases from A to the B, what does it mean?
+
+305
+00:34:42,795 --> 00:34:45,076
+This part is important.
+
+306
+00:34:45,076 --> 00:34:52,775
+It means that you can't pass from the same point in this interval.
+
+307
+00:34:53,215 --> 00:34:55,715
+You can't have this kind of point, okay?
+
+308
+00:34:55,715 --> 00:34:59,695
+This point we don't have.
+
+309
+00:35:00,735 --> 00:35:02,755
+Our curve will be like this.
+
+310
+00:35:03,675 --> 00:35:08,036
+You will pass at the same point only once.
+
+311
+00:35:08,436 --> 00:35:11,195
+You won't have this kind of point.
+
+312
+00:35:11,316 --> 00:35:12,336
+They said that, okay?
+
+313
+00:35:13,436 --> 00:35:16,775
+They said that you can't have this kind of point.
+
+314
+00:35:16,775 --> 00:35:21,775
+You will have each point you will see only once.
+
+315
+00:35:23,235 --> 00:35:29,255
+Okay, then the length of the parametric curve will be from A to the B.
+
+316
+00:35:31,516 --> 00:35:34,635
+Integral A to the B in the square root function.
+
+317
+00:35:34,635 --> 00:35:40,996
+F prime F prime T square plus G prime T square DT.
+
+318
+00:35:42,496 --> 00:35:43,076
+Okay?
+
+319
+00:35:45,076 --> 00:35:47,635
+Actually, it comes from...
+
+320
+00:35:48,195 --> 00:35:52,295
+I don't give the proof, but I want to show a little bit.
+
+321
+00:35:52,476 --> 00:35:54,275
+For example, this is your curve.
+
+322
+00:35:54,996 --> 00:35:55,635
+You will sketch...
+
+323
+00:35:55,635 --> 00:36:00,456
+For example, you will divide small parts.
+
+324
+00:36:00,795 --> 00:36:00,876
+Okay?
+
+325
+00:36:01,336 --> 00:36:02,336
+Here, for example.
+
+326
+00:36:03,576 --> 00:36:06,615
+When you sketch the line, you will have a triangle.
+
+327
+00:36:08,215 --> 00:36:09,175
+What is this?
+
+328
+00:36:09,516 --> 00:36:11,796
+This is the difference delta X.
+
+329
+00:36:13,016 --> 00:36:15,195
+This is the difference delta Y.
+
+330
+00:36:15,195 --> 00:36:19,476
+So, this line...
+
+331
+00:36:19,476 --> 00:36:28,816
+This length will be in the square root function delta X square plus delta Y square.
+
+332
+00:36:29,936 --> 00:36:30,476
+Okay?
+
+333
+00:36:33,096 --> 00:36:38,576
+And you can see that this length of the curve and this line are very similar.
+
+334
+00:36:38,775 --> 00:36:41,775
+And when you take integral, what is that?
+
+335
+00:36:41,836 --> 00:36:44,376
+You will take the sum from 1 to n.
+
+336
+00:36:44,376 --> 00:36:49,596
+And when you take limit and go to infinity, it will be integral.
+
+337
+00:36:50,036 --> 00:36:53,795
+You see in calculus 1.
+
+338
+00:36:55,215 --> 00:36:58,556
+So, the formula comes from this relation actually.
+
+339
+00:36:59,175 --> 00:36:59,556
+Ne yapıyor?
+
+340
+00:36:59,876 --> 00:37:01,416
+Aslında formula şuradan çıkıyor.
+
+341
+00:37:01,896 --> 00:37:04,735
+İlk önce siz bu curve'i küçük parçalara ayırıyorsunuz.
+
+342
+00:37:05,315 --> 00:37:09,896
+Küçük parçalara ayırdığınızda şurası delta X farkı, şurası delta Y farkı.
+
+343
+00:37:09,896 --> 00:37:12,336
+Üçgen çizersiniz şu iki nokta arasında.
+
+344
+00:37:12,336 --> 00:37:17,956
+Şu üçgenin şurada kalan uzunluğu bunların kareleri toplamı kök içinde.
+
+345
+00:37:19,056 --> 00:37:19,496
+Ne oluyor?
+
+346
+00:37:19,635 --> 00:37:23,096
+Bu şu uzunlukla, bu çizdiğiniz uzunluk yakın birbirine.
+
+347
+00:37:23,195 --> 00:37:24,076
+Tabii ki hata var.
+
+348
+00:37:24,076 --> 00:37:29,976
+Ama diyor ki ben bunları yeterince küçük alırsam ve sonsuza götürürsem artık bu ikisi ne yapmış oluyor?
+
+349
+00:37:31,516 --> 00:37:35,195
+Birbirlerine artık belli bir hatayla eşit olmuş oluyor.
+
+350
+00:37:35,336 --> 00:37:36,976
+O yüzden formül de oradan çıkıyor.
+
+351
+00:37:37,096 --> 00:37:37,996
+Formül bu aslında.
+
+352
+00:37:37,996 --> 00:37:43,135
+Ok, let's see this example.
+
+353
+00:37:43,135 --> 00:38:12,135
+Evet.
+
+354
+00:38:03,635 --> 00:38:14,135
+Find the length of the curve which is given parametrically. X is r cosine theta, y is r sine theta, and t is from 0 to 2 pi.
+
+355
+00:38:14,596 --> 00:38:18,295
+So what is our formula? Let's take our formula here.
+
+356
+00:38:23,507 --> 00:38:24,987
+This is our land formula.
+
+357
+00:38:26,227 --> 00:38:33,187
+So let us write in our example, our land will be, they said that t is from 0 to 2 pi.
+
+358
+00:38:36,307 --> 00:38:42,227
+In the squared function, this is f, this is x.
+
+359
+00:38:42,527 --> 00:38:44,547
+Actually, this is x, this is y.
+
+360
+00:38:45,527 --> 00:38:51,187
+Derivation of x with respect to t will be minus r sin t.
+
+361
+00:38:51,187 --> 00:38:54,147
+I have to take square.
+
+362
+00:38:57,067 --> 00:39:05,367
+And derivation of y will be r cos t square dt.
+
+363
+00:39:06,387 --> 00:39:08,187
+Okay, what do you have inside?
+
+364
+00:39:09,007 --> 00:39:16,307
+It will be r square sin square t plus cos square t.
+
+365
+00:39:18,167 --> 00:39:20,087
+And you can see that it is 1.
+
+366
+00:39:20,087 --> 00:39:22,347
+So what is this?
+
+367
+00:39:22,967 --> 00:39:24,327
+0 to 2 pi.
+
+368
+00:39:26,527 --> 00:39:29,927
+Normally, I have to write in the absolute value of r.
+
+369
+00:39:30,527 --> 00:39:34,587
+But in this interval, 0 to 2 pi, it will be positive.
+
+370
+00:39:34,587 --> 00:39:37,707
+So I can write that r product dt.
+
+371
+00:39:37,707 --> 00:39:43,887
+So this integral will be r t from 0 to 2 pi.
+
+372
+00:39:45,587 --> 00:39:49,147
+It will be 2 pi r.
+
+373
+00:39:49,147 --> 00:40:00,707
+And also, you know that actually this is, this gives a circle which is the radius is r.
+
+374
+00:40:00,707 --> 00:40:04,707
+And what is the circles?
+
+375
+00:40:04,707 --> 00:40:11,707
+And what is this?
+
+376
+00:40:11,707 --> 00:40:15,307
+Yeah, it is 2 pi r.
+
+377
+00:40:15,307 --> 00:40:18,927
+Aslında çevre formülü de buradan geliyor.
+
+378
+00:40:18,927 --> 00:40:21,927
+Okay.
+
+379
+00:40:21,927 --> 00:40:23,927
+And...
+
+380
+00:40:27,923 --> 00:40:29,923
+Tamam, bunu yapalım.
+
+381
+00:40:36,916 --> 00:40:58,896
+This is asteroid. Asteroid shape I want to show here. This is asteroid. This. Okay. The shape of the asteroid is this. And here they are asking what is the length of this asteroid from 0 to 2 pi. Let's see.
+
+382
+00:40:58,896 --> 00:41:04,836
+Our length will be from 0 to 2 pi.
+
+383
+00:41:08,275 --> 00:41:26,115
+I have to take square, derivation, square, what is derivation of x with respect to t? 3a cosine square t, and derivation of cosine function is minus sine t.
+
+384
+00:41:33,396 --> 00:41:52,056
+And here I have to take square, derivation square of y. It is 3 a sine square t. Derivation of sine will be cosine t square dt.
+
+385
+00:41:55,380 --> 00:41:58,360
+Okay, let's see what do we have here.
+
+386
+00:41:58,360 --> 00:42:10,680
+Here, I will have 9 a² cos 40 sin² t.
+
+387
+00:42:11,599 --> 00:42:13,760
+Here, what do we have?
+
+388
+00:42:13,940 --> 00:42:24,280
+I have 9 a² sin 40 cos² t.
+
+389
+00:42:24,280 --> 00:42:25,900
+I have less.
+
+390
+00:42:26,340 --> 00:42:31,039
+Now, which terms I can write as a common term in here?
+
+391
+00:42:31,320 --> 00:42:32,579
+Which terms are common?
+
+392
+00:42:32,780 --> 00:42:36,019
+I can write 9 a².
+
+393
+00:42:36,660 --> 00:42:39,019
+In the first part, I have cos 4.
+
+394
+00:42:39,180 --> 00:42:41,920
+In the second part, I have cos².
+
+395
+00:42:42,180 --> 00:42:45,019
+So, I can write cos² t outside.
+
+396
+00:42:46,420 --> 00:42:49,039
+In the first part, I have sin².
+
+397
+00:42:49,240 --> 00:42:50,680
+In the second, sin 4.
+
+398
+00:42:50,880 --> 00:42:53,920
+So, sin² t, I can write outside.
+
+399
+00:42:54,280 --> 00:42:59,500
+So, from the first part, I have only cos² t.
+
+400
+00:43:01,360 --> 00:43:04,860
+In the second part, I have sin² t.
+
+401
+00:43:04,860 --> 00:43:08,059
+And you know that this is 1.
+
+402
+00:43:13,139 --> 00:43:38,559
+Okay, so what do you have? I will have 0 to 2 pi, 3 a, cosin t, sin t, dt. Okay, so what is this integral? You can write 3 a outside. What is this integral?
+
+403
+00:43:48,275 --> 00:43:48,735
+Ok.
+
+404
+00:43:50,115 --> 00:43:52,536
+Will you take in the absolute value or not?
+
+405
+00:43:53,015 --> 00:43:53,515
+Let's see.
+
+406
+00:43:54,615 --> 00:43:55,775
+Alacak mıyız bakalım?
+
+407
+00:43:58,295 --> 00:43:59,295
+Will you or not?
+
+408
+00:44:06,195 --> 00:44:08,195
+Okay, let's see the graph.
+
+409
+00:44:09,536 --> 00:44:10,795
+This is your graph.
+
+410
+00:44:11,795 --> 00:44:12,775
+Okay, I will explain.
+
+411
+00:44:12,996 --> 00:44:15,576
+Yes, this is a good question, but I will explain.
+
+412
+00:44:17,016 --> 00:44:18,795
+So, what is this?
+
+413
+00:44:18,915 --> 00:44:19,895
+The shape is this.
+
+414
+00:44:20,895 --> 00:44:23,835
+Let's assume that you don't take in the absolute value.
+
+415
+00:44:23,956 --> 00:44:25,155
+Let's see what happens.
+
+416
+00:44:25,155 --> 00:44:25,635
+Okay?
+
+417
+00:44:26,655 --> 00:44:27,715
+What is this integral?
+
+418
+00:44:27,875 --> 00:44:29,996
+How can you take cosine product sine t?
+
+419
+00:44:30,895 --> 00:44:34,755
+If you think, for example, sine t as u,
+
+420
+00:44:34,755 --> 00:44:38,155
+cosine t dt will be du.
+
+421
+00:44:38,755 --> 00:44:39,096
+Okay?
+
+422
+00:44:39,735 --> 00:44:41,996
+So, it will be u du.
+
+423
+00:44:42,996 --> 00:44:44,695
+It is u square over 2.
+
+424
+00:44:45,395 --> 00:44:51,036
+So, it will be sine square t over 2.
+
+425
+00:44:51,956 --> 00:44:52,596
+Okay?
+
+426
+00:44:54,036 --> 00:44:56,435
+From 0 to 2 pi.
+
+427
+00:44:57,056 --> 00:45:00,516
+What is this result?
+
+428
+00:45:00,996 --> 00:45:02,415
+Sine 2 pi is 0.
+
+429
+00:45:02,675 --> 00:45:03,775
+Sine 0 is 0.
+
+430
+00:45:03,775 --> 00:45:06,815
+It is 0.
+
+431
+00:45:09,135 --> 00:45:11,596
+Can a length be 0?
+
+432
+00:45:13,096 --> 00:45:14,275
+Uzunluk 0 olabilir mi?
+
+433
+00:45:15,855 --> 00:45:16,415
+No.
+
+434
+00:45:17,556 --> 00:45:19,175
+So, where is the mistake?
+
+435
+00:45:20,775 --> 00:45:23,375
+Or, where is the missing point?
+
+436
+00:45:26,175 --> 00:45:28,195
+We have a wrong part.
+
+437
+00:45:28,435 --> 00:45:30,036
+Actually, there is a missing.
+
+438
+00:45:30,195 --> 00:45:52,875
+You have to be careful about something.
+
+439
+00:45:36,340 --> 00:45:39,900
+Evet, aslında bu bölüde değil,
+
+440
+00:45:39,900 --> 00:46:38,220
+bu bölüde değil,
+
+441
+00:46:39,891 --> 00:46:47,311
+sin square t over 2
+
+442
+00:46:47,311 --> 00:46:50,991
+bir saniye sinüs
+
+443
+00:46:54,356 --> 00:47:01,836
+Yine olacak. Çünkü orada da benzerlik var. Birbirlerinin eşi olacak. Bunu dörde bölmemiz gerekecek.
+
+444
+00:47:12,500 --> 00:47:30,000
+Because I have symmetry again. Because both of them, if you look at c, 1, 2, 3, 4, both of them are the same. If I take from 0 to pi, you will have the same 0.
+
+445
+00:47:30,000 --> 00:47:34,099
+Okay. 12 oldu burası.
+
+446
+00:47:35,699 --> 00:47:36,260
+Şimdi.
+
+447
+00:47:39,559 --> 00:47:51,039
+If you divide two parts, the result will be the same 0. Because left side and right side are the same. But if you divide four parts, it is okay. It will be 6A.
+
+448
+00:47:52,400 --> 00:47:52,920
+Okay.
+
+449
+00:47:56,692 --> 00:48:12,791
+But here I, here I sold this integral according to sine function. So you have to look at for sine. But if you want to solve about, according to cosine, you will divide according to cosine.
+
+450
+00:48:21,972 --> 00:48:22,972
+Şöyleyeyim.
+
+451
+00:48:31,795 --> 00:48:33,795
+Ok, let me explain here.
+
+452
+00:48:34,915 --> 00:48:37,195
+This is the shape of the asteroid, ok?
+
+453
+00:48:47,987 --> 00:48:49,387
+This is the shape of a straight.
+
+454
+00:48:50,087 --> 00:48:56,367
+And until here you don't have any problem.
+
+455
+00:48:56,807 --> 00:48:56,887
+Okay.
+
+456
+00:48:57,187 --> 00:48:59,207
+Until here we don't have any problem.
+
+457
+00:48:59,867 --> 00:49:05,087
+But if you solve this integral your solution will be zero.
+
+458
+00:49:05,827 --> 00:49:10,167
+Because this is let us write this length.
+
+459
+00:49:10,327 --> 00:49:12,587
+This part length is for example let us key.
+
+460
+00:49:13,587 --> 00:49:21,347
+This will be key.
+
+461
+00:49:22,547 --> 00:49:22,727
+Okay.
+
+462
+00:49:23,227 --> 00:49:25,268
+But two of them will be positive.
+
+463
+00:49:25,627 --> 00:49:26,927
+Two of them will be negative.
+
+464
+00:49:28,307 --> 00:49:31,207
+So when you add all of them the result will be zero.
+
+465
+00:49:31,887 --> 00:49:32,987
+What can I do?
+
+466
+00:49:33,507 --> 00:49:35,367
+I can divide two parts maybe.
+
+467
+00:49:35,748 --> 00:49:36,007
+Okay.
+
+468
+00:49:37,207 --> 00:49:39,427
+You can divide two parts here.
+
+469
+00:49:39,867 --> 00:49:42,087
+Let's look at this one.
+
+470
+00:49:42,087 --> 00:49:45,248
+But here this will be positive.
+
+471
+00:49:45,248 --> 00:49:46,967
+This will be negative.
+
+472
+00:49:47,967 --> 00:49:48,127
+Okay.
+
+473
+00:49:49,707 --> 00:49:53,327
+So when you take two parts the result will be the same.
+
+474
+00:49:53,447 --> 00:49:54,227
+It will be zero.
+
+475
+00:49:54,427 --> 00:49:56,427
+Only I can take one part.
+
+476
+00:49:57,227 --> 00:49:59,367
+Because the length will be important.
+
+477
+00:49:59,647 --> 00:50:02,067
+And after that I can product with four.
+
+478
+00:50:02,147 --> 00:50:03,707
+Because you can use the symmetry.
+
+479
+00:50:04,207 --> 00:50:04,467
+Okay.
+
+480
+00:50:05,268 --> 00:50:05,727
+Şimdi bakın.
+
+481
+00:50:06,407 --> 00:50:07,607
+Buraya kadar sorunumuz yok.
+
+482
+00:50:07,707 --> 00:50:08,947
+Sorun bundan sonra başlıyor.
+
+483
+00:50:08,947 --> 00:50:16,567
+Burada simetri olduğundan dolayı siz artı eksiği ayırmadığınız için integral sıfır çıkar.
+
+484
+00:50:17,167 --> 00:50:18,788
+Normalde integral sıfır çıkabilir.
+
+485
+00:50:18,887 --> 00:50:19,707
+Bunda bir sorun yok.
+
+486
+00:50:19,927 --> 00:50:28,607
+Ama biz bu integrali uzunluk bulmak için kullandığımız için o zaman bunun sıfır çıkma olasılığı yani olmaması gerekiyor.
+
+487
+00:50:28,607 --> 00:50:30,187
+O zaman şuna dikkat ediyorsunuz.
+
+488
+00:50:30,248 --> 00:50:33,367
+Pozitifle negatif ayırıp mutlak halde düşünmeniz gerekiyor.
+
+489
+00:50:34,147 --> 00:50:38,107
+Diyelim ki ben şimdi ben burada sinise göre integre ettim ya.
+
+490
+00:50:38,627 --> 00:50:42,447
+Şimdi bu sinise göre integre ettiğimde şu kısım pozitif bu kısım negatif.
+
+491
+00:50:42,447 --> 00:50:45,127
+O zaman dedim ki sıfırdan piye kadar alayım.
+
+492
+00:50:45,907 --> 00:50:47,027
+Ama o da kurtarmıyor.
+
+493
+00:50:47,027 --> 00:50:51,687
+Çünkü bakın integral'i şuna bakarsanız bunu sıfırdan piye de alsanız yine sıfır çıkıyor.
+
+494
+00:50:52,707 --> 00:50:52,887
+Niye?
+
+495
+00:50:53,127 --> 00:50:54,427
+Çünkü burada da simetri var.
+
+496
+00:50:54,567 --> 00:50:55,527
+Bakın şurada da var.
+
+497
+00:50:56,087 --> 00:50:58,387
+Bu da bunun işi.
+
+498
+00:50:59,127 --> 00:51:07,927
+Ama işaret farkından dolayı bu sefer işaret farkından dolayı sıfıra dönüyor.
+
+499
+00:51:08,007 --> 00:51:09,207
+O yüzden ne yapacaksınız?
+
+500
+00:51:09,207 --> 00:51:16,207
+Mümkün oldukça simetriyi kullanıp dört tane simetrik parça olduğu için bir tanesini bulup dörtte çarpmanız yetecektir.
+
+501
+00:51:17,027 --> 00:51:19,967
+Zaten siz bunu çözmek isteseniz de çıkmayacaktır.
+
+502
+00:51:20,047 --> 00:51:20,987
+Sıfır çıkacaktır.
+
+503
+00:51:21,887 --> 00:51:25,387
+Only please don't forget the land can't be zero.
+
+504
+00:51:25,607 --> 00:51:35,587
+If you solve the question and if you found zero it means that you make a wrong place in your solution.
+
+505
+00:51:37,268 --> 00:51:39,567
+Bakın integral'in iki anlamı vardır.
+
+506
+00:51:39,847 --> 00:51:42,867
+Bir, herhangi bir integral çözerseniz sıfır olabilir.
+
+507
+00:51:42,987 --> 00:51:43,867
+Onda bir problem yok.
+
+508
+00:51:43,867 --> 00:51:51,107
+Ama bu geometrik olarak bir uzunluk, bir alan ifade ederek veriliyorsa o zaman sıfır olma ihtimali yok.
+
+509
+00:51:52,107 --> 00:51:52,427
+Güzel.
+
+510
+00:51:52,927 --> 00:51:53,728
+Duyelim en ukağa düşün.
+
+511
+00:51:53,728 --> 00:51:54,327
+[öğrenci]'den.
+
+512
+00:51:57,684 --> 00:51:58,684
+Evet, ikinizin.
+
+513
+00:51:59,144 --> 00:51:59,464
+Evet.
+
+514
+00:51:59,464 --> 00:52:03,104
+Profesor, in the previous question that we were solving,
+
+515
+00:52:03,104 --> 00:52:08,104
+could we take cosine by sine integral,
+
+516
+00:52:08,504 --> 00:52:09,644
+take the cosine and sine,
+
+517
+00:52:10,004 --> 00:52:11,423
+multiply them by together
+
+518
+00:52:11,423 --> 00:52:15,903
+to have half sine 2t?
+
+519
+00:52:17,384 --> 00:52:19,504
+You are talking about this question.
+
+520
+00:52:19,984 --> 00:52:22,484
+The question that we have solved right now.
+
+521
+00:52:23,423 --> 00:52:25,364
+You are talking about the last question,
+
+522
+00:52:25,464 --> 00:52:25,724
+this one.
+
+523
+00:52:25,724 --> 00:52:26,744
+Yeah, asteroids.
+
+524
+00:52:26,744 --> 00:52:27,744
+Yes.
+
+525
+00:52:28,644 --> 00:52:30,724
+Could we take the cosine and sine
+
+526
+00:52:30,724 --> 00:52:36,064
+and replace them by half sine 2t?
+
+527
+00:52:36,764 --> 00:52:37,284
+Yes.
+
+528
+00:52:37,284 --> 00:52:38,324
+Sine 2t?
+
+529
+00:52:38,844 --> 00:52:44,484
+Yes, I can write sine 2t over 2.
+
+530
+00:52:44,584 --> 00:52:45,704
+I will write here.
+
+531
+00:52:46,244 --> 00:52:46,423
+Yes.
+
+532
+00:52:47,604 --> 00:52:50,584
+From 0 to 2pi.
+
+533
+00:52:51,344 --> 00:52:52,604
+You can think here.
+
+534
+00:52:53,144 --> 00:52:53,304
+Okay.
+
+535
+00:52:54,084 --> 00:52:55,304
+Yes, you can write.
+
+536
+00:52:56,744 --> 00:53:01,144
+So, will we take that from 0 to 2pi
+
+537
+00:53:01,144 --> 00:53:05,423
+or to pi over 4 or pi over 2?
+
+538
+00:53:06,064 --> 00:53:07,384
+How will we deal with it?
+
+539
+00:53:07,384 --> 00:53:08,844
+Okay.
+
+540
+00:53:09,344 --> 00:53:12,724
+So, what is the shape of the sine function?
+
+541
+00:53:13,824 --> 00:53:15,164
+Sine function is,
+
+542
+00:53:15,544 --> 00:53:17,084
+sine 0 is 0,
+
+543
+00:53:17,423 --> 00:53:18,764
+so it will be this.
+
+544
+00:53:19,923 --> 00:53:20,184
+Okay?
+
+545
+00:53:21,044 --> 00:53:21,284
+Yeah.
+
+546
+00:53:22,284 --> 00:53:23,464
+But, one second,
+
+547
+00:53:23,864 --> 00:53:26,004
+this will be 0.
+
+548
+00:53:26,544 --> 00:53:27,784
+Burası kaç olur?
+
+549
+00:53:27,784 --> 00:53:31,664
+0 olması için pi bölü 2.
+
+550
+00:53:31,664 --> 00:53:36,184
+Burası da pi.
+
+551
+00:53:36,184 --> 00:53:36,564
+0 olması için pi bölü 2.
+
+552
+00:53:36,564 --> 00:53:56,244
+Burası da pi.
+
+553
+00:53:40,884 --> 00:53:42,744
+Sine function will be this.
+
+554
+00:53:43,204 --> 00:53:46,184
+But they are giving that from 0 to 2 pi.
+
+555
+00:53:46,344 --> 00:53:47,384
+I will have the same.
+
+556
+00:53:47,923 --> 00:53:48,083
+Okay.
+
+557
+00:53:49,224 --> 00:53:50,824
+Because here the.
+
+558
+00:53:51,824 --> 00:53:53,304
+This one is different.
+
+559
+00:53:53,784 --> 00:53:54,123
+Okay.
+
+560
+00:53:54,324 --> 00:53:56,483
+So you have to use symmetry.
+
+561
+00:53:56,923 --> 00:53:58,244
+For the sine function.
+
+562
+00:53:59,063 --> 00:53:59,943
+So for example.
+
+563
+00:53:59,943 --> 00:54:02,204
+If I divide from 0 to pi.
+
+564
+00:54:02,384 --> 00:54:02,923
+Let's see.
+
+565
+00:54:04,384 --> 00:54:06,043
+I know that I have symmetry.
+
+566
+00:54:06,583 --> 00:54:06,884
+Okay.
+
+567
+00:54:06,943 --> 00:54:08,023
+I have two pi's.
+
+568
+00:54:08,023 --> 00:54:11,824
+Sine 2t dt.
+
+569
+00:54:12,264 --> 00:54:12,543
+Okay.
+
+570
+00:54:13,644 --> 00:54:14,903
+So what do you have?
+
+571
+00:54:18,244 --> 00:54:19,824
+1 over 2.
+
+572
+00:54:19,983 --> 00:54:20,704
+Cosine.
+
+573
+00:54:21,983 --> 00:54:22,943
+2t.
+
+574
+00:54:23,144 --> 00:54:24,164
+From 0 to pi.
+
+575
+00:54:27,304 --> 00:54:28,884
+Cosine 2 pi is 0.
+
+576
+00:54:29,023 --> 00:54:30,164
+Cosine 0 is 0.
+
+577
+00:54:30,483 --> 00:54:31,543
+So it will be 0.
+
+578
+00:54:31,983 --> 00:54:34,364
+What do you have to do?
+
+579
+00:54:34,684 --> 00:54:36,463
+You have to use the symmetry again.
+
+580
+00:54:36,463 --> 00:54:38,443
+Because I have.
+
+581
+00:54:38,824 --> 00:54:40,103
+If you look at this part.
+
+582
+00:54:40,224 --> 00:54:42,664
+Actually in sine or cosine function.
+
+583
+00:54:42,824 --> 00:54:43,943
+If you look at the shape.
+
+584
+00:54:44,483 --> 00:54:45,884
+You can divide four parts.
+
+585
+00:54:46,264 --> 00:54:47,284
+Because the length.
+
+586
+00:54:47,603 --> 00:54:50,684
+This one.
+
+587
+00:54:50,824 --> 00:54:52,123
+And this one are the same.
+
+588
+00:54:52,244 --> 00:54:54,403
+So you have to divide four parts.
+
+589
+00:54:54,583 --> 00:54:55,563
+And you have to write.
+
+590
+00:54:55,923 --> 00:54:57,083
+Pi over 2.
+
+591
+00:54:57,583 --> 00:54:58,744
+But why?
+
+592
+00:54:58,844 --> 00:55:00,704
+Cosine 2t is 1.
+
+593
+00:55:00,704 --> 00:55:02,264
+Okay.
+
+594
+00:55:02,503 --> 00:55:05,523
+It is not related to cosine or sine t.
+
+595
+00:55:06,083 --> 00:55:06,724
+The length.
+
+596
+00:55:07,184 --> 00:55:09,364
+The shape is the same for cosine and sine.
+
+597
+00:55:09,884 --> 00:55:11,204
+When you look at this shape.
+
+598
+00:55:11,364 --> 00:55:11,623
+Okay.
+
+599
+00:55:12,103 --> 00:55:12,284
+Yeah.
+
+600
+00:55:12,284 --> 00:55:12,963
+This shape.
+
+601
+00:55:13,023 --> 00:55:13,943
+This shape is this.
+
+602
+00:55:15,403 --> 00:55:16,423
+And you have symmetry.
+
+603
+00:55:16,563 --> 00:55:16,923
+Because.
+
+604
+00:55:17,463 --> 00:55:17,744
+Here.
+
+605
+00:55:18,244 --> 00:55:18,923
+This one.
+
+606
+00:55:19,923 --> 00:55:20,403
+Positive.
+
+607
+00:55:21,684 --> 00:55:22,463
+This one.
+
+608
+00:55:22,583 --> 00:55:23,164
+Is negative.
+
+609
+00:55:23,164 --> 00:55:24,784
+But the length will be the same.
+
+610
+00:55:24,983 --> 00:55:25,684
+It will be 0.
+
+611
+00:55:25,864 --> 00:55:27,483
+This one.
+
+612
+00:55:27,483 --> 00:55:28,903
+Let me write.
+
+613
+00:55:29,003 --> 00:55:29,844
+This is positive.
+
+614
+00:55:30,344 --> 00:55:30,784
+Positive.
+
+615
+00:55:31,324 --> 00:55:32,483
+Negative.
+
+616
+00:55:32,963 --> 00:55:33,344
+The length.
+
+617
+00:55:33,463 --> 00:55:33,903
+For example.
+
+618
+00:55:34,023 --> 00:55:34,784
+It is 5.
+
+619
+00:55:35,603 --> 00:55:36,184
+5.
+
+620
+00:55:37,023 --> 00:55:39,724
+Minus 5.
+
+621
+00:55:40,043 --> 00:55:40,644
+In total.
+
+622
+00:55:40,804 --> 00:55:41,523
+It will be 0.
+
+623
+00:55:42,083 --> 00:55:43,184
+If you don't divide.
+
+624
+00:55:44,023 --> 00:55:44,364
+Okay.
+
+625
+00:55:45,403 --> 00:55:46,603
+So you have to divide.
+
+626
+00:55:47,244 --> 00:55:49,664
+So you have to divide four parts.
+
+627
+00:55:50,204 --> 00:55:50,463
+Okay.
+
+628
+00:55:50,463 --> 00:55:52,804
+Because you have four the same parts.
+
+629
+00:55:53,344 --> 00:55:53,744
+It is.
+
+630
+00:55:54,543 --> 00:55:56,144
+The same for the.
+
+631
+00:55:56,784 --> 00:55:57,423
+Asteroid.
+
+632
+00:55:57,483 --> 00:55:58,123
+Here.
+
+633
+00:55:59,523 --> 00:56:00,103
+For example.
+
+634
+00:56:00,224 --> 00:56:00,943
+It is 7.
+
+635
+00:56:01,923 --> 00:56:02,543
+This is.
+
+636
+00:56:03,103 --> 00:56:06,824
+7.
+
+637
+00:56:08,063 --> 00:56:08,543
+But.
+
+638
+00:56:08,704 --> 00:56:09,884
+The sign are different.
+
+639
+00:56:10,123 --> 00:56:11,103
+Minus.
+
+640
+00:56:11,184 --> 00:56:12,523
+So the total will be 0.
+
+641
+00:56:12,664 --> 00:56:13,764
+So you have to divide.
+
+642
+00:56:14,903 --> 00:56:17,003
+Böyle bildiğiniz kadar böleceksiniz.
+
+643
+00:56:17,103 --> 00:56:18,284
+Çünkü sıfırlayacaktır.
+
+644
+00:56:18,364 --> 00:56:19,704
+Zaten bulamayacaksınız.
+
+645
+00:56:19,963 --> 00:56:21,244
+İsteseniz de bulamazsınız.
+
+646
+00:56:22,144 --> 00:56:23,844
+When you divide two parts.
+
+647
+00:56:23,963 --> 00:56:24,943
+It won't be enough.
+
+648
+00:56:25,003 --> 00:56:27,003
+Because the result will be the same 0.
+
+649
+00:56:27,003 --> 00:56:29,184
+So you have to divide four parts.
+
+650
+00:56:29,184 --> 00:56:31,644
+Because for sine or cosine function.
+
+651
+00:56:32,043 --> 00:56:33,123
+The shape is this.
+
+652
+00:56:34,103 --> 00:56:34,224
+Okay.
+
+653
+00:56:35,244 --> 00:56:36,364
+The shape is this.
+
+654
+00:56:37,483 --> 00:56:38,603
+For this shape.
+
+655
+00:56:39,164 --> 00:56:40,043
+I have.
+
+656
+00:56:40,603 --> 00:56:41,123
+Normally.
+
+657
+00:56:41,123 --> 00:56:42,083
+I have two parts.
+
+658
+00:56:42,083 --> 00:56:42,784
+The same.
+
+659
+00:56:43,023 --> 00:56:43,264
+One.
+
+660
+00:56:43,443 --> 00:56:43,583
+Two.
+
+661
+00:56:43,724 --> 00:56:44,543
+But inside.
+
+662
+00:56:46,744 --> 00:56:48,364
+This part is the same.
+
+663
+00:56:48,543 --> 00:56:48,864
+Length.
+
+664
+00:56:49,284 --> 00:56:50,943
+Here.
+
+665
+00:56:51,483 --> 00:56:51,804
+Okay.
+
+666
+00:56:51,903 --> 00:56:53,184
+The position can change.
+
+667
+00:56:53,304 --> 00:56:54,884
+But the length will be the same.
+
+668
+00:56:55,384 --> 00:56:57,224
+So you have to divide four parts.
+
+669
+00:56:57,304 --> 00:56:58,324
+For this question.
+
+670
+00:56:58,943 --> 00:56:59,684
+After that.
+
+671
+00:56:59,724 --> 00:57:00,903
+You can find the result.
+
+672
+00:57:01,644 --> 00:57:02,603
+If you don't divide.
+
+673
+00:57:02,724 --> 00:57:03,403
+You can't find.
+
+674
+00:57:03,503 --> 00:57:04,264
+It will be 0.
+
+675
+00:57:04,264 --> 00:57:06,144
+But the length can't be 0.
+
+676
+00:57:06,644 --> 00:57:06,884
+Okay.
+
+677
+00:57:08,503 --> 00:57:09,983
+İsteseniz de zaten çıkmayacak.
+
+678
+00:57:09,983 --> 00:57:14,284
+Okay.
+
+679
+00:57:14,764 --> 00:57:19,304
+And this is the last object for this week.
+
+680
+00:57:20,204 --> 00:57:25,264
+I want to look at the questions in the exam.
+
+681
+00:57:25,903 --> 00:57:27,543
+Bir saniye bulabilirsem.
+
+682
+00:57:27,543 --> 00:57:33,023
+Sınavda çıkmış olan sorulardan bir bakacağım bir saniye.
+
+683
+00:57:36,244 --> 00:57:36,923
+Ah,
+
+684
+00:57:52,628 --> 00:57:54,768
+Bir saniye verin, bir iki dakika bulacağım.
+
+685
+00:57:59,443 --> 00:58:01,623
+Sınavda bakalım nasıl çıkmış sorular.
+
+686
+00:58:05,284 --> 00:58:21,264
+Ben de bilmiyorum. Çünkü en son yaz okulunda soruldu. Ondan sonra hiç şey olmadı. Daha da hiç test yapılmadı Matematik 2'de. İlk defa, yani yaz okulu dışında ilk defa bu zaman olacaktı.
+
+687
+00:58:42,324 --> 00:58:44,104
+ben olması bulur, size yollarım.
+
+688
+00:58:45,003 --> 00:58:46,124
+Şöyle yapayım.
+
+689
+00:58:48,644 --> 00:58:52,063
+Daha önceden çıkmış olan sorulardan da bakayım neler var.
+
+690
+00:59:04,563 --> 00:59:05,563
+Bu bir şey.
+
+691
+00:59:14,260 --> 00:59:25,840
+İkonomik ask, 2 years ago, 1st exam question, this is given parametrically, and they are asking, what is the length of this curve?
+
+692
+00:59:26,840 --> 00:59:43,060
+Okay, let's see, what is length? It is minus 1 to 1 in the square root function, derivation of x is 3t square, I will take square,
+
+693
+00:59:43,060 --> 01:00:01,540
+and derivation of this function, 3 over 2, 1 minus t square, 1 over 2, derivation inside is minus 2t square dt.
+
+694
+01:00:01,540 --> 01:00:09,420
+Okay, so what do we have? I have here, 94.
+
+695
+01:00:09,420 --> 01:00:22,240
+Here I have 9 over 4, 1 minus t square, 4t square.
+
+696
+01:00:26,675 --> 01:00:49,735
+So, let's see what I have. I have 9 over 4, 4 t squared minus 4 t squared. I will write the common term outside. What do you have? I have 9 t squared. I can write outside.
+
+697
+01:00:49,735 --> 01:00:54,715
+I have 1.
+
+698
+01:00:58,643 --> 01:01:13,583
+kolay bir soruydu, yanlış yapayım bir saniye. 3 de kare, bin karesini alacağız. Bununki 3 bölü 2, 1 x de kare, türev aldığımızda 1 bölü 2 gelecek. İçinin türevı, x 2 t, bunun da karesini alacağız. Tamam.
+
+699
+01:01:15,043 --> 01:01:20,363
+9 t üzeri 4, 9 bölü 4, 1 x de kare, bir de 4 t, tamam.
+
+700
+01:01:21,423 --> 01:01:26,143
+We can write 90 square outside. I will have, şurada yanlışım var.
+
+701
+01:01:28,643 --> 01:01:30,483
+I will have t square.
+
+702
+01:01:32,623 --> 01:01:34,023
+And I have,
+
+703
+01:01:37,023 --> 01:01:43,063
+Ne kaldık?
+
+704
+01:01:43,303 --> 01:01:46,103
+1 x t square.
+
+705
+01:01:46,963 --> 01:01:47,223
+Okay.
+
+706
+01:01:49,103 --> 01:01:52,383
+So it will be 9 t square.
+
+707
+01:01:59,476 --> 01:02:00,836
+What do you write here?
+
+708
+01:02:04,820 --> 01:02:06,460
+It is minus 1 to 1.
+
+709
+01:02:06,620 --> 01:02:11,260
+It will be 3 absolute value of t dt.
+
+710
+01:02:12,220 --> 01:02:12,500
+Okay?
+
+711
+01:02:14,860 --> 01:02:20,660
+Let us assume that you don't see the absolute value and you write t.
+
+712
+01:02:20,780 --> 01:02:21,940
+Let's see what happens.
+
+713
+01:02:24,120 --> 01:02:24,720
+Okay?
+
+714
+01:02:25,440 --> 01:02:27,380
+You forgot to write in the absolute value.
+
+715
+01:02:27,380 --> 01:02:28,580
+So what do you have?
+
+716
+01:02:28,580 --> 01:02:35,100
+It is 3t square over 2 minus 1 to 1.
+
+717
+01:02:35,660 --> 01:02:36,920
+The result will be 0.
+
+718
+01:02:37,400 --> 01:02:39,380
+But the length can't be 0.
+
+719
+01:02:39,940 --> 01:02:44,500
+The problem is you forgot to take in the absolute value.
+
+720
+01:02:44,760 --> 01:02:46,500
+You had to write in the absolute value.
+
+721
+01:02:47,140 --> 01:02:55,360
+If you remember, if you have a symmetric bounce for a function,
+
+722
+01:02:55,360 --> 01:03:00,019
+if f is even, what happens?
+
+723
+01:03:00,180 --> 01:03:03,580
+If f is odd, what happens?
+
+724
+01:03:04,600 --> 01:03:07,320
+If f is odd, the result will be 0.
+
+725
+01:03:07,460 --> 01:03:11,579
+If f is even, you have to write from 0 to a to f.
+
+726
+01:03:13,260 --> 01:03:14,360
+This is the same.
+
+727
+01:03:14,360 --> 01:03:16,220
+Our function is an odd function.
+
+728
+01:03:16,220 --> 01:03:20,240
+So you will have problem in the integral.
+
+729
+01:03:20,560 --> 01:03:24,340
+So you have to, you forgot to write in the absolute value.
+
+730
+01:03:25,280 --> 01:03:30,260
+In the absolute value, I have to write two parts.
+
+731
+01:03:30,660 --> 01:03:31,019
+Okay?
+
+732
+01:03:31,019 --> 01:03:31,120
+Okay.
+
+733
+01:03:34,835 --> 01:03:53,535
+So, from minus 1 to 0, I have to take minus 3t dt and 0 to 1, I have to take 3t dt.
+
+734
+01:03:54,935 --> 01:04:01,475
+Mutlak değerce almamız gerekiyor. Çünkü fonksiyonumuz buralarda farklı değerler alıyor.
+
+735
+01:04:04,835 --> 01:04:15,096
+So, what is this? It is 3t dt2 over 2 from 0 to 1.
+
+736
+01:04:16,015 --> 01:04:20,215
+It will be 3 over 2. This will be also 3 over 2.
+
+737
+01:04:20,855 --> 01:04:23,475
+It will be 9 over 4.
+
+738
+01:04:27,699 --> 01:04:28,079
+Okay?
+
+739
+01:04:38,195 --> 01:04:39,976
+This question.
+
+740
+01:04:44,371 --> 01:04:44,831
+tamam
+
+741
+01:04:44,831 --> 01:04:46,311
+evet
+
+742
+01:04:46,311 --> 01:04:49,891
+bir dakika 3-1-2 3-1-2 3 oluyor değil mi
+
+743
+01:04:49,891 --> 01:04:51,571
+ben ne yapıyorum
+
+744
+01:04:51,571 --> 01:04:52,611
+çarpıyorum ya
+
+745
+01:04:52,611 --> 01:04:54,711
+oynamadım
+
+746
+01:04:54,711 --> 01:04:56,411
+evet
+
+747
+01:04:56,411 --> 01:04:59,891
+okay this is our last example
+
+748
+01:04:59,891 --> 01:05:02,271
+after this I will finish the lesson
+
+749
+01:05:02,271 --> 01:05:02,611
+okay
+
+750
+01:05:02,611 --> 01:05:06,411
+this question actually is a difficult question
+
+751
+01:05:06,411 --> 01:05:08,391
+it was an eccentric question
+
+752
+01:05:08,391 --> 01:05:09,011
+I remember
+
+753
+01:05:09,011 --> 01:05:12,571
+because in this
+
+754
+01:05:12,571 --> 01:05:14,291
+question you have also
+
+755
+01:05:14,291 --> 01:05:16,491
+implicit differentiation let's see
+
+756
+01:05:16,491 --> 01:05:18,551
+xt
+
+757
+01:05:18,551 --> 01:05:20,491
+and yt are given parametrically
+
+758
+01:05:21,091 --> 01:05:21,911
+okay
+
+759
+01:05:21,911 --> 01:05:25,111
+and
+
+760
+01:05:25,111 --> 01:05:26,531
+x is given
+
+761
+01:05:26,531 --> 01:05:27,871
+in pligit form
+
+762
+01:05:27,871 --> 01:05:30,571
+x is given in an implicit form
+
+763
+01:05:30,571 --> 01:05:32,311
+y is given
+
+764
+01:05:32,311 --> 01:05:33,411
+in an open form
+
+765
+01:05:33,411 --> 01:05:36,111
+and they are asking
+
+766
+01:05:36,111 --> 01:05:40,331
+what is the
+
+767
+01:05:40,331 --> 01:05:41,911
+value of
+
+768
+01:05:41,911 --> 01:05:43,451
+mt
+
+769
+01:05:43,451 --> 01:05:44,571
+at the point
+
+770
+01:05:44,571 --> 01:05:45,071
+t
+
+771
+01:05:45,071 --> 01:05:45,971
+is 0
+
+772
+01:05:45,971 --> 01:05:47,672
+they are asking
+
+773
+01:05:47,672 --> 01:05:48,632
+what is the tangent
+
+774
+01:05:48,632 --> 01:05:49,591
+what is the slope
+
+775
+01:05:49,591 --> 01:05:50,291
+at the point
+
+776
+01:05:50,291 --> 01:05:50,571
+t
+
+777
+01:05:50,571 --> 01:05:51,091
+is 0
+
+778
+01:05:51,091 --> 01:05:52,632
+what is our formula
+
+779
+01:05:52,632 --> 01:05:54,411
+our formula was
+
+780
+01:05:54,411 --> 01:05:55,571
+dy over dx
+
+781
+01:05:55,571 --> 01:05:56,632
+will be
+
+782
+01:05:56,632 --> 01:06:00,391
+dy over dt
+
+783
+01:06:00,391 --> 01:06:02,751
+dx over dt
+
+784
+01:06:02,751 --> 01:06:06,491
+we don't have any problem
+
+785
+01:06:06,491 --> 01:06:07,431
+dy over dt
+
+786
+01:06:07,431 --> 01:06:07,931
+but
+
+787
+01:06:07,931 --> 01:06:09,391
+how can you find
+
+788
+01:06:09,391 --> 01:06:10,471
+dx over dt
+
+789
+01:06:10,471 --> 01:06:12,172
+x is given
+
+790
+01:06:12,172 --> 01:06:13,011
+implicitly
+
+791
+01:06:13,011 --> 01:06:14,251
+so I have to use
+
+792
+01:06:14,251 --> 01:06:14,711
+implicit
+
+793
+01:06:14,711 --> 01:06:15,531
+differentiation
+
+794
+01:06:15,531 --> 01:06:17,531
+what is that
+
+795
+01:06:17,531 --> 01:06:18,791
+firstly I have to write
+
+796
+01:06:18,791 --> 01:06:19,271
+f
+
+797
+01:06:19,271 --> 01:06:22,231
+f is the function
+
+798
+01:06:22,231 --> 01:06:22,851
+where
+
+799
+01:06:22,851 --> 01:06:24,091
+t squared
+
+800
+01:06:24,091 --> 01:06:24,551
+sine
+
+801
+01:06:24,551 --> 01:06:25,091
+x
+
+802
+01:06:25,091 --> 01:06:28,371
+plus x cube
+
+803
+01:06:28,371 --> 01:06:30,311
+minus
+
+804
+01:06:30,311 --> 01:06:31,152
+e to the power
+
+805
+01:06:31,152 --> 01:06:31,471
+t
+
+806
+01:06:31,471 --> 01:06:32,871
+I write all the terms
+
+807
+01:06:32,871 --> 01:06:33,692
+on the left side
+
+808
+01:06:33,692 --> 01:06:34,271
+this is f
+
+809
+01:06:34,271 --> 01:06:35,991
+what is the formula
+
+810
+01:06:35,991 --> 01:06:36,751
+for impediment
+
+811
+01:06:36,751 --> 01:06:37,511
+differentiation
+
+812
+01:06:37,511 --> 01:06:38,692
+do you remember
+
+813
+01:06:38,692 --> 01:06:40,132
+in the previous
+
+814
+01:06:40,132 --> 01:06:40,811
+semester
+
+815
+01:06:40,811 --> 01:06:42,511
+dy over
+
+816
+01:06:42,511 --> 01:06:44,291
+I try to find
+
+817
+01:06:44,291 --> 01:06:45,811
+dy over dt
+
+818
+01:06:45,811 --> 01:06:49,091
+so it will be
+
+819
+01:06:49,091 --> 01:06:49,692
+minus
+
+820
+01:06:49,692 --> 01:06:51,351
+derivation of
+
+821
+01:06:51,351 --> 01:06:51,751
+f
+
+822
+01:06:51,751 --> 01:06:52,751
+with respect
+
+823
+01:06:52,751 --> 01:06:53,331
+to t
+
+824
+01:06:53,331 --> 01:06:54,711
+derivation of
+
+825
+01:06:54,711 --> 01:06:55,051
+f
+
+826
+01:06:55,051 --> 01:06:55,751
+with respect
+
+827
+01:06:55,751 --> 01:06:56,152
+to
+
+828
+01:06:56,152 --> 01:06:57,211
+y
+
+829
+01:06:57,211 --> 01:06:59,311
+pardon
+
+830
+01:06:59,311 --> 01:07:00,831
+hangisiydi
+
+831
+01:07:00,831 --> 01:07:03,211
+x
+
+832
+01:07:03,211 --> 01:07:03,511
+gerek
+
+833
+01:07:03,511 --> 01:07:04,112
+bana
+
+834
+01:07:04,112 --> 01:07:04,311
+şu
+
+835
+01:07:04,311 --> 01:07:04,531
+gerek
+
+836
+01:07:08,244 --> 01:07:11,184
+I need to determine dx over dtx.
+
+837
+01:07:13,443 --> 01:07:14,124
+Okay.
+
+838
+01:07:14,664 --> 01:07:17,724
+Now I will take only derivation with respect to t.
+
+839
+01:07:17,864 --> 01:07:25,664
+It is 2t sin x minus e to the power t.
+
+840
+01:07:26,864 --> 01:07:29,784
+What is derivation of f with respect to x?
+
+841
+01:07:29,784 --> 01:07:38,764
+t square cosine x plus 3x square.
+
+842
+01:07:39,524 --> 01:07:39,644
+Okay.
+
+843
+01:07:42,284 --> 01:07:44,244
+So let me write.
+
+844
+01:07:46,004 --> 01:07:54,544
+So I have dy over dx will be dy over dt.
+
+845
+01:07:54,684 --> 01:07:57,604
+Derivation of y with respect to t will be.
+
+846
+01:08:06,420 --> 01:08:20,359
+sin t, plus t, cos t, minus 2, over, I find dx over dt is this.
+
+847
+01:08:34,420 --> 01:08:50,800
+After that, you don't need to make anything because they are asking the value. What is this? The value t is 0. If t is 0, what is y? What is x? Let's find. If t is 0, y will be 0.
+
+848
+01:08:50,800 --> 01:09:14,960
+Okay. So, if t and y is 0, what is x? Here. If t is 0, x cube will be 1. x can be 1 from here. So, I have to write these terms in the solution.
+
+849
+01:09:14,960 --> 01:09:22,800
+sine 0 is 0, sine 0 is 0, 0. I have minus 2 here. Minus.
+
+850
+01:09:24,420 --> 01:09:38,159
+t is 0, t is 0. I will have minus 1 here. t is 0, x is 1. This is 1. So, the result will be minus 2.
+
+851
+01:09:38,159 --> 01:09:42,960
+Professor, it must be 3, I think. 3? Which one is?
+
+852
+01:09:42,960 --> 01:09:52,619
+Professor, it must be 3. The lower dominator. The lower dominator. Here? Yes, I have 3.
+
+853
+01:09:59,572 --> 01:10:01,011
+So, did you understand?
+
+854
+01:10:02,752 --> 01:10:03,271
+In this,
+
+855
+01:10:05,092 --> 01:10:07,551
+Ah, valla, daha uyanamadım ya.
+
+856
+01:10:09,632 --> 01:10:11,072
+Eksi, eksi, altı olacak.
+
+857
+01:10:11,072 --> 01:10:12,051
+Eksi, altı.
+
+858
+01:10:16,083 --> 01:10:22,804
+The question's difficulty is this. You have to remember implegit differentiation in calculus 1, okay?
+
+859
+01:10:24,963 --> 01:10:31,363
+Because here x is given implegit form, so you have to use implegit differentiation.
+
+860
+01:10:33,764 --> 01:10:34,123
+Okay?
+
+861
+01:10:47,188 --> 01:10:48,268
+Geri derken
+
+862
+01:10:53,427 --> 01:10:59,028
+Aşağı mı? Ha. Ya şey yapacağım bir saniye. Yollayacağım şimdi sizi.
+
+863
+01:11:02,899 --> 01:11:03,500
+Kaydetti.
+
+864
+01:11:04,699 --> 01:11:05,019
+Okay.
+
+865
+01:11:08,019 --> 01:11:11,059
+Okay, do you have any questions about parametric equations?
+
+866
+01:11:15,283 --> 01:11:23,183
+Okay, if you don't have any questions, I will finish for today. And next week we'll start with the polite coordinates. Okay?
+
+867
+01:11:25,503 --> 01:11:28,384
+So have a good weekend for all of you. Okay, bye-bye.
