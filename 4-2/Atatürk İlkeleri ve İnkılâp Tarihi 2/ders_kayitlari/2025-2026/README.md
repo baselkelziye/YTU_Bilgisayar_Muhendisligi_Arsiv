@@ -9,3 +9,4 @@
 | 14 | Bahar | Gülsema Lüyer | [sube_14/](sube_14/) |
 | 19 | Bahar | Bulunamadı | [sube_19/](sube_19/) |
 | 20 | Bahar | Bulunamadı | [sube_20/](sube_20/) |
+| 24 | Bahar | Zafer Doğan | [sube_24/](sube_24/) |
