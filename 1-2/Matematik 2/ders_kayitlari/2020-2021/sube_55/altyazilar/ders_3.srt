@@ -1,0 +1,3811 @@
+1
+00:00:31,379 --> 00:00:33,079
+Hello everybody, how are you?
+
+2
+00:00:39,411 --> 00:00:41,211
+Good night and good morning.
+
+3
+00:00:43,211 --> 00:00:44,292
+How are you?
+
+4
+00:01:08,563 --> 00:01:09,623
+Thank you, [öğrenci].
+
+5
+00:01:11,263 --> 00:01:12,223
+I'm fine too.
+
+6
+00:01:12,523 --> 00:01:13,483
+Thank you very much.
+
+7
+00:01:20,915 --> 00:01:22,855
+If you are ready, you can start.
+
+8
+00:01:26,900 --> 00:01:34,219
+Last week, we saw the limits of sequences.
+
+9
+00:01:34,219 --> 00:01:43,340
+First, we gave the definition of sequences and convergence and divergence of sequences.
+
+10
+00:01:43,340 --> 00:01:47,660
+And we computed the limit of sequence.
+
+11
+00:01:55,347 --> 00:02:04,307
+You should solve the questions at the end of the lecture sequence, infinite sequence in your lecture book.
+
+12
+00:02:04,867 --> 00:02:14,608
+Our lecture book is Thomas Kalkulus. You can download this book on the internet. You can find.
+
+13
+00:02:18,804 --> 00:02:26,563
+Please solve the exercises about the limits of sequences, okay?
+
+14
+00:02:29,444 --> 00:02:33,003
+Today, what will we do?
+
+15
+00:02:34,123 --> 00:02:34,723
+Today,
+
+16
+00:02:38,419 --> 00:02:41,699
+We are going to see the sum of the series.
+
+17
+00:02:43,259 --> 00:02:47,339
+We will give the definition of the convergence of the series.
+
+18
+00:02:59,764 --> 00:03:04,364
+Do you have any question about anything before starting?
+
+19
+00:03:15,060 --> 00:03:16,180
+No question.
+
+20
+00:03:17,879 --> 00:03:18,640
+Let's start.
+
+21
+00:03:29,012 --> 00:03:30,491
+Şer secrenin.
+
+22
+00:04:58,932 --> 00:05:02,711
+A point A and a point B.
+
+23
+00:05:06,708 --> 00:05:09,288
+Mn, standing in position A,
+
+24
+00:05:10,908 --> 00:05:13,648
+wants to walk to position B.
+
+25
+00:05:21,812 --> 00:05:26,451
+But, he must use the following method to do so.
+
+26
+00:05:28,572 --> 00:05:33,932
+He must walk half the distance first,
+
+27
+00:05:36,072 --> 00:05:41,252
+and then half the remaining distance.
+
+28
+00:05:47,060 --> 00:05:51,420
+ve alt ve remaining distans
+
+29
+00:06:02,036 --> 00:06:04,256
+Ander.
+
+30
+00:06:17,396 --> 00:06:21,596
+ve know that the man can actually reach to the man, to b point.
+
+31
+00:06:23,656 --> 00:06:25,036
+Total distance.
+
+32
+00:06:32,084 --> 00:06:34,004
+can be expressed as the sum of
+
+33
+00:06:39,028 --> 00:06:41,028
+İnfinitli
+
+34
+00:06:43,603 --> 00:06:47,204
+Minim smaller distances.
+
+35
+00:06:48,923 --> 00:06:50,084
+İşte like that.
+
+36
+00:06:56,372 --> 00:07:12,612
+We know that this sum is the distance of a and b. This is a finite number. This is a finite number.
+
+37
+00:07:12,612 --> 00:07:29,891
+But we have infinite numbers. We have the sum of infinite numbers.
+
+38
+00:07:29,891 --> 00:07:45,092
+We say that this sum of series is convergent. It converges to this finite number.
+
+39
+00:08:00,596 --> 00:08:06,235
+We will give the definition of the sum of series.
+
+40
+00:08:10,579 --> 00:08:13,659
+to calculate this finite number.
+
+41
+00:08:19,060 --> 00:08:23,819
+We deneyd the sum of the first n terms of series.
+
+42
+00:08:26,519 --> 00:08:32,179
+First series, first term of the series, 1 over 2.
+
+43
+00:08:33,840 --> 00:08:42,299
+First, the sum of first two terms of the series, a1, a2.
+
+44
+00:08:48,628 --> 00:08:56,628
+This is 0,5. This is 0,75.
+
+45
+00:09:04,692 --> 00:09:25,132
+Calculate the sum of series, we define the sum of end term of the series.
+
+46
+00:09:34,196 --> 00:09:37,716
+1st and term of the series.
+
+47
+00:09:41,812 --> 00:09:46,611
+denited by Sn.
+
+48
+00:09:48,611 --> 00:09:50,611
+First term equals S1.
+
+49
+00:09:52,132 --> 00:09:57,331
+The sum of the first two term denited by S2.
+
+50
+00:10:00,292 --> 00:10:05,012
+That is the sum of the first three term of the series.
+
+51
+00:10:06,052 --> 00:10:09,331
+1 over 2 plus, 1 over 4, 1 over 8.
+
+52
+00:10:13,076 --> 00:10:16,076
+I can write this sum
+
+53
+00:10:29,076 --> 00:10:40,276
+Let's write the sum of the first tenth term. A1, A2, A10.
+
+54
+00:10:43,475 --> 00:10:46,916
+First, right here.
+
+55
+00:10:53,524 --> 00:10:58,683
+Can you say the formula of the 10th term?
+
+56
+00:11:11,443 --> 00:11:17,144
+1st term, 2nd, 3rd, we need 10th term.
+
+57
+00:11:18,343 --> 00:11:19,443
+Thank you.
+
+58
+00:11:23,443 --> 00:11:24,803
+I'll give this some.
+
+59
+00:11:33,875 --> 00:11:44,875
+We can write the formula of the sum of the first and term, a1, a2, a...
+
+60
+00:11:46,875 --> 00:11:50,155
+This is the formula of the partial sum.
+
+61
+00:11:56,179 --> 00:11:59,699
+Please look at these numbers.
+
+62
+00:12:05,043 --> 00:12:17,124
+As we add more and more terms, these partial sums become closer and closer to 1.
+
+63
+00:12:21,299 --> 00:12:24,500
+This, closer to line.
+
+64
+00:12:36,179 --> 00:12:41,019
+Sum of the first n
+
+65
+00:12:46,419 --> 00:12:47,360
+Serisi
+
+66
+00:13:01,620 --> 00:13:04,980
+Partial sums of the series.
+
+67
+00:13:09,524 --> 00:13:13,524
+If partial suns...
+
+68
+00:13:17,203 --> 00:13:20,043
+A sequence of partial sums.
+
+69
+00:13:27,860 --> 00:13:28,440
+is
+
+70
+00:13:28,440 --> 00:13:32,220
+convergent
+
+71
+00:13:35,923 --> 00:13:39,203
+L'number, real number, of course.
+
+72
+00:13:40,163 --> 00:13:40,563
+Then,
+
+73
+00:13:46,035 --> 00:13:54,995
+Serisi is called convergent to this number.
+
+74
+00:13:57,515 --> 00:14:03,995
+That is, the sum of this series is...
+
+75
+00:14:28,115 --> 00:14:35,515
+A1, A2, A3, and term is An.
+
+76
+00:14:40,563 --> 00:14:52,743
+Sum of infinite number is denoted by this symbol. This symbol's name is sigma.
+
+77
+00:14:56,403 --> 00:15:07,744
+n start from 1 to infinity and we write the formula of the nth star.
+
+78
+00:15:22,419 --> 00:15:30,779
+To determine whether or not this series has a finite sum, we consider
+
+79
+00:15:34,419 --> 00:15:49,959
+Partial sums, we consider the sum of AND term, we determine this formula, and we calculate the limit of this sequence.
+
+80
+00:16:00,052 --> 00:16:04,052
+This sequence is called sequence of partial sums of the series.
+
+81
+00:16:11,700 --> 00:16:22,180
+If the sequence converges to a limit L, we say that the series converges to this limit L.
+
+82
+00:16:24,020 --> 00:16:28,180
+And we write this sum is L.
+
+83
+00:16:44,052 --> 00:16:52,971
+If this sequence doesn't converge to limit,
+
+84
+00:16:56,596 --> 00:17:20,135
+Bu, bu
+
+85
+00:17:24,468 --> 00:17:26,608
+Verges, you say that.
+
+86
+00:17:30,324 --> 00:17:32,884
+ve serisi
+
+87
+00:17:35,364 --> 00:17:37,384
+çift katlı
+
+88
+00:17:55,539 --> 00:18:00,079
+1 over 2, 1 over 3, 1 over 4.
+
+89
+00:18:02,519 --> 00:18:06,579
+This sum is denoted by sigma symbol.
+
+90
+00:18:11,124 --> 00:18:21,064
+Please be careful here. What is the end term? What is the formula of end term? Be careful. First check the first term.
+
+91
+00:18:31,028 --> 00:18:32,307
+1 over n.
+
+92
+00:18:35,248 --> 00:18:35,788
+Yes.
+
+93
+00:18:44,019 --> 00:18:48,980
+1 over 2 square, 1 over 2 cube.
+
+94
+00:18:55,443 --> 00:18:57,443
+Bu da formuları anterim.
+
+95
+00:18:57,443 --> 00:18:59,443
+Bir de, yine de dikkat edin.
+
+96
+00:19:52,692 --> 00:19:55,372
+Evet.
+
+97
+00:20:07,316 --> 00:20:22,316
+0, because first term is 1. If we write 0 instead of n in the general term, we must find first term 1. Be careful.
+
+98
+00:20:38,420 --> 00:21:07,920
+Oh, sorry. You are right. You must write here, like that. I correct this. Thank you very much. We can rewrite this term. We can start from one, this series. But now, we must change the general term. Can you say?
+
+99
+00:21:12,756 --> 00:21:27,196
+If we start 1, yes, 1 over 2 to the power n minus 1, that's right.
+
+100
+00:21:31,443 --> 00:21:41,703
+As long as we preserve the order of its term, we can re-index any series without altering its convergence.
+
+101
+00:21:51,220 --> 00:21:51,940
+For example,
+
+102
+00:21:58,132 --> 00:22:08,132
+If and start from 2, now we must change the general term.
+
+103
+00:22:10,132 --> 00:22:11,751
+How can we do?
+
+104
+00:22:17,811 --> 00:22:18,231
+M-hmm.
+
+105
+00:22:25,460 --> 00:22:25,920
+In general.
+
+106
+00:22:48,276 --> 00:22:54,276
+ve adı, any number h to subindex,
+
+107
+00:22:56,796 --> 00:22:57,716
+we must
+
+108
+00:22:57,716 --> 00:23:04,196
+subtract from n h.
+
+109
+00:23:05,296 --> 00:23:07,556
+Here h is any,
+
+110
+00:23:08,596 --> 00:23:10,355
+of course, natural number
+
+111
+00:23:10,355 --> 00:23:12,156
+or
+
+112
+00:23:12,156 --> 00:23:15,996
+integer number,
+
+113
+00:23:15,996 --> 00:23:18,076
+positive or negative.
+
+114
+00:23:31,955 --> 00:23:48,035
+negative integer, if we subtract h from subindex, we must add h in the general term to n.
+
+115
+00:23:50,915 --> 00:23:55,075
+Here h is any integer number.
+
+116
+00:24:16,307 --> 00:24:18,587
+İndex is
+
+117
+00:24:30,579 --> 00:24:35,799
+Bu ilk term, so here n equals 1.
+
+118
+00:24:36,179 --> 00:24:41,460
+Bu ilk term, so here n equals 2.
+
+119
+00:24:45,011 --> 00:24:47,912
+So, n must be integer.
+
+120
+00:24:59,859 --> 00:25:02,599
+An important series is the geometric series.
+
+121
+00:25:03,599 --> 00:25:04,919
+Please, write.
+
+122
+00:25:16,756 --> 00:25:24,596
+Sertiç olarak, yöntem ve çok önemli bir şey.
+
+123
+00:25:28,372 --> 00:25:32,971
+Bu da bu form.
+
+124
+00:25:42,771 --> 00:25:44,771
+Evet, evet.
+
+125
+00:25:56,051 --> 00:26:01,911
+The series in this form is called Geometric Series.
+
+126
+00:26:06,644 --> 00:26:15,284
+We can rewrite by sigma, and start from 1 to infinity.
+
+127
+00:26:18,564 --> 00:26:24,324
+Can you say, what is the general term I wrote here?
+
+128
+00:26:26,243 --> 00:26:36,324
+A, r to the n minus 1. Here, a and r is any,
+
+129
+00:26:36,644 --> 00:26:37,163
+Thank you.
+
+130
+00:26:37,723 --> 00:26:38,044
+Peace.
+
+131
+00:26:38,324 --> 00:26:38,963
+I love this.
+
+132
+00:26:43,635 --> 00:26:50,675
+If it starts from zero, can you say the general term?
+
+133
+00:27:05,364 --> 00:27:07,364
+Just and...
+
+134
+00:27:13,203 --> 00:27:21,283
+Let A equals 1, part equals 1 over 2.
+
+135
+00:27:23,003 --> 00:27:30,283
+So, this series is a geometric series.
+
+136
+00:27:36,564 --> 00:27:52,344
+Let's a2r equals 1 over 3, 2 times 1 over 3.
+
+137
+00:27:56,468 --> 00:28:03,468
+ve
+
+138
+00:28:24,115 --> 00:28:28,875
+Let's investigate the convergence of this geometric series.
+
+139
+00:29:14,516 --> 00:29:19,635
+n minus 1 in substan 1 to infinity.
+
+140
+00:29:21,875 --> 00:29:26,516
+If r equals 1
+
+141
+00:29:29,844 --> 00:29:39,844
+This geometric series becomes the sum of infinitely many a.
+
+142
+00:29:46,324 --> 00:29:56,324
+If r equals 1, Geometric series is the sum of infinitely a.
+
+143
+00:30:00,819 --> 00:30:12,220
+To determine the convergence of the series, we need the sequence of and partial sum.
+
+144
+00:30:17,140 --> 00:30:32,520
+To determine the convergence of the series, first write the formula of the sum of and term and then find the list. Thank you.
+
+145
+00:30:36,564 --> 00:30:40,423
+n-term is n times a.
+
+146
+00:30:41,384 --> 00:30:47,604
+So, the limit of these partial sums of the series is
+
+147
+00:31:10,579 --> 00:31:18,539
+Evet, de
+
+148
+00:31:26,900 --> 00:31:31,240
+Is convergent or divergent?
+
+149
+00:31:31,240 --> 00:31:32,160
+What do you think?
+
+150
+00:31:41,844 --> 00:31:46,544
+Evet, de geometrik series diverges-
+
+151
+00:32:04,627 --> 00:32:09,407
+Another case, if r different from one.
+
+152
+00:32:24,115 --> 00:32:38,115
+We need the partial sum of geometric series. If r different from 1 as an eq, first...
+
+153
+00:32:42,259 --> 00:32:42,759
+No sakin.
+
+154
+00:32:50,867 --> 00:32:51,387
+Please.
+
+155
+00:32:54,900 --> 00:32:56,700
+Here, look together.
+
+156
+00:32:59,259 --> 00:33:06,620
+The convergent of the series depend on the convergent of partial sums.
+
+157
+00:33:12,468 --> 00:33:20,708
+To determine the convergent or divergent of the given series, we must calculate the limit of Sn.
+
+158
+00:33:25,811 --> 00:33:34,192
+If the sequence of the partial sums is convergent, the given series is convergent.
+
+159
+00:33:35,491 --> 00:33:43,131
+If the limit of Sn equals L, the sum of this series equals L.
+
+160
+00:33:46,996 --> 00:34:02,816
+We need the sum of series, we calculate the limit of SN. So, we need here, first, the formula of partial sum.
+
+161
+00:34:02,816 --> 00:34:17,896
+This means the sum of the first end term. A, A r, A r square, end term, A r to the n minus 1.
+
+162
+00:34:22,324 --> 00:34:23,324
+Evet.
+
+163
+00:34:34,867 --> 00:34:41,867
+To calculate the limit of this sum, we need the formula of this sum.
+
+164
+00:34:41,867 --> 00:34:49,867
+Now, we need the formula of this finite sum.
+
+165
+00:34:49,867 --> 00:34:59,867
+To do this, we multiply both of sides by r.
+
+166
+00:35:02,900 --> 00:35:05,900
+S n equals
+
+167
+00:35:05,900 --> 00:35:08,260
+ar
+
+168
+00:35:08,260 --> 00:35:10,340
+ar square
+
+169
+00:35:14,195 --> 00:35:16,115
+Ar to the n.
+
+170
+00:35:17,375 --> 00:35:19,315
+And then we...
+
+171
+00:35:22,612 --> 00:35:42,291
+So, to subtract these equations side by side, we get Sn minus R Sn equals, right side, we have A,
+
+172
+00:35:45,652 --> 00:35:49,572
+Minus ar to the n.
+
+173
+00:36:01,748 --> 00:36:04,387
+Faktor A
+
+174
+00:36:08,500 --> 00:36:11,139
+left side, faktör sn.
+
+175
+00:36:16,947 --> 00:36:32,208
+S n this equation, a, 1 minus r to the n over 1 minus r. Here we know that r different from 0 by substitution.
+
+176
+00:36:51,284 --> 00:37:05,284
+In the first step, we write the sum of the first and term. We need formula of Sn.
+
+177
+00:37:14,452 --> 00:37:18,312
+To calculate the limit of Sn, we need a formula.
+
+178
+00:37:25,811 --> 00:37:27,931
+Çünkü bu formülü,
+
+179
+00:37:32,436 --> 00:37:35,876
+R
+
+180
+00:37:39,380 --> 00:37:46,380
+Şimdi, bu
+
+181
+00:37:46,380 --> 00:38:33,380
+ve s-n'e
+
+182
+00:38:09,139 --> 00:38:11,139
+If no question...
+
+183
+00:38:19,284 --> 00:38:32,584
+Bu, ilk term, ilk term, ilk term, ilk term, ilk term, ilk term, ilk term, ilk term, ilk term, ilk term, ilk term, ilk term, ilk term, ilk term, ilk term, ilk term, ilk term, ilk term, ilk term, ilk term, ilk term, ilk term, ilk term, ilk term, ilk term, ilk term, ilk term, ilk term, ilk term, ilk term, ilk term, ilk term, ilk term, ilk term, ilk term, ilk term, ilk term, ilk term, ilk term, ilk term, ilk term, ilk term, ilk term, ilk term, ilk term, ilk term, ilk term, ilk term, ilk term, ilk term, ilk term, ilk term, ilk term, ilk term, ilk term, ilk term, ilk term, ilk term, ilk term, ilk term, ilk term, ilk term, ilk term, ilk term, ilk term, ilk term, ilk term, ilk term, ilk term, ilk term, ilk term, ilk term, ilk term, ilk term
+
+184
+00:38:36,179 --> 00:38:39,259
+2, 2, 1.
+
+185
+00:38:39,859 --> 00:38:41,000
+What is the second term?
+
+186
+00:38:41,559 --> 00:38:42,940
+Second term is
+
+187
+00:38:42,940 --> 00:38:45,159
+2 over 3.
+
+188
+00:38:46,159 --> 00:38:46,599
+[öğrenci].
+
+189
+00:38:52,275 --> 00:38:55,556
+Ok, let's look together, of course.
+
+190
+00:38:57,235 --> 00:38:58,695
+What is S1?
+
+191
+00:39:04,916 --> 00:39:08,396
+To do this, we must write 1 instead of n.
+
+192
+00:39:37,108 --> 00:39:39,288
+Bun, just A.
+
+193
+00:39:42,739 --> 00:39:46,979
+Here, write please, 1 instead of n.
+
+194
+00:39:49,500 --> 00:39:56,939
+1 minus r over 1 minus r equals y.
+
+195
+00:40:07,795 --> 00:40:08,355
+Okay.
+
+196
+00:40:19,443 --> 00:40:24,443
+Now, we need the limit of SN.
+
+197
+00:40:26,443 --> 00:40:30,563
+Now, we can do this.
+
+198
+00:41:05,108 --> 00:41:09,108
+We gave this definition in the last week.
+
+199
+00:41:09,108 --> 00:41:13,268
+If the number r equals
+
+200
+00:41:19,123 --> 00:41:22,243
+R between minus 1 and 1.
+
+201
+00:41:23,443 --> 00:41:26,483
+So, this limit, can you remember?
+
+202
+00:41:39,123 --> 00:41:40,603
+Evet, 0.
+
+203
+00:41:42,043 --> 00:41:42,483
+So,
+
+204
+00:41:45,363 --> 00:41:46,643
+PowerLimitSN,
+
+205
+00:41:47,283 --> 00:41:47,923
+Eqs,
+
+206
+00:41:54,579 --> 00:42:03,579
+ve, if the limit of this term is zero,
+
+207
+00:42:09,396 --> 00:42:34,756
+Limit of Sn, eqs, [öğrenci] be careful please, where is the denominator, denominator is 1 minus r, yes say it, that's true, be careful, if this term goes to 0,
+
+208
+00:42:34,756 --> 00:42:39,516
+we have a over 1 minus r.
+
+209
+00:42:46,963 --> 00:42:47,463
+So,
+
+210
+00:42:52,532 --> 00:43:11,332
+In this condition, our geometric series is convergent, and it converges to this number, and start from 1 to 1.
+
+211
+00:43:11,332 --> 00:43:22,271
+Here, A in real numbers, and R between minus 1 and 1.
+
+212
+00:43:27,155 --> 00:43:35,275
+if r 1, or less than minus 1.
+
+213
+00:43:47,092 --> 00:43:51,092
+Eqs.
+
+214
+00:43:51,092 --> 00:43:53,092
+2, 3, 4.
+
+215
+00:43:53,092 --> 00:43:55,092
+Any big number.
+
+216
+00:43:55,092 --> 00:43:58,092
+So, this limit is?
+
+217
+00:43:58,092 --> 00:44:01,092
+Can you say?
+
+218
+00:44:04,148 --> 00:44:04,827
+Infinite.
+
+219
+00:44:05,728 --> 00:44:06,288
+So.
+
+220
+00:44:12,340 --> 00:44:15,220
+İlginç, parçal suns.
+
+221
+00:44:24,275 --> 00:44:26,596
+İnfinity, so.
+
+222
+00:44:31,443 --> 00:44:37,443
+Geometrics series is divergent.
+
+223
+00:45:02,452 --> 00:45:03,092
+Summarize
+
+224
+00:45:08,371 --> 00:45:15,771
+Geometrics series
+
+225
+00:45:31,572 --> 00:45:32,132
+Mergent.
+
+226
+00:45:36,980 --> 00:45:38,980
+R between minus 1 and 1.
+
+227
+00:45:39,980 --> 00:45:40,340
+And
+
+228
+00:45:40,340 --> 00:45:42,059
+It's
+
+229
+00:45:42,059 --> 00:45:42,460
+Um
+
+230
+00:46:04,340 --> 00:46:09,980
+Absolute value of r equals 1 or bigger than 1.
+
+231
+00:46:10,640 --> 00:46:12,140
+Geometric series
+
+232
+00:46:12,140 --> 00:46:14,680
+is
+
+233
+00:46:14,680 --> 00:46:16,680
+diverged.
+
+234
+00:46:19,891 --> 00:46:20,611
+For example,
+
+235
+00:46:41,396 --> 00:46:45,396
+Divergent or convergent.
+
+236
+00:46:47,156 --> 00:46:51,396
+If it is convergent, what is the sum of this series?
+
+237
+00:46:53,876 --> 00:46:55,396
+Please calculate.
+
+238
+00:47:04,563 --> 00:47:11,043
+Evet, şimdi R'eq'e 1 over 2,
+
+239
+00:47:11,043 --> 00:47:14,963
+Evet, bu da
+
+240
+00:47:14,963 --> 00:47:16,963
+Evet,
+
+241
+00:47:16,963 --> 00:47:19,203
+bu da 1 ve 1.
+
+242
+00:47:19,203 --> 00:47:21,123
+Bu da
+
+243
+00:47:21,123 --> 00:47:23,763
+Omerjan'te.
+
+244
+00:47:23,763 --> 00:47:26,324
+Bu da sum bu da series?
+
+245
+00:47:26,324 --> 00:47:28,963
+Bu da formula
+
+246
+00:47:28,963 --> 00:47:32,803
+Bu da sum
+
+247
+00:47:32,803 --> 00:47:34,803
+Bu da
+
+248
+00:47:37,588 --> 00:47:53,568
+A equals 1, 1 over 1 minus 1 over 2, so this result is 2.
+
+249
+00:48:04,532 --> 00:48:10,711
+1 over 3, n equals 0.
+
+250
+00:48:16,148 --> 00:48:19,867
+This is also geometric series.
+
+251
+00:48:21,347 --> 00:48:25,387
+Here A equals 2, R equals 1 over 3.
+
+252
+00:48:26,028 --> 00:48:27,847
+Please check the first term.
+
+253
+00:48:28,568 --> 00:48:30,668
+First term is 2.
+
+254
+00:48:31,327 --> 00:48:36,448
+Second term is 2 times 1 over 3.
+
+255
+00:48:38,448 --> 00:48:44,847
+So we can use formula directly.
+
+256
+00:48:48,724 --> 00:48:54,264
+A equals 2, R equals 1 over 3.
+
+257
+00:48:58,963 --> 00:49:00,043
+Okay, complete.
+
+258
+00:49:08,659 --> 00:49:09,659
+Evet, bu.
+
+259
+00:49:37,204 --> 00:49:38,024
+Be careful.
+
+260
+00:50:00,947 --> 00:50:05,567
+Yes, [öğrenci], you are right.
+
+261
+00:50:07,927 --> 00:50:19,567
+To determine the constant A, please write the first few terms of this geometric series.
+
+262
+00:50:19,567 --> 00:50:23,827
+First term is 1 over 4.
+
+263
+00:50:25,087 --> 00:50:28,228
+Then 1 over R squared.
+
+264
+00:50:30,547 --> 00:50:34,467
+So here A equals 1 over 4.
+
+265
+00:50:35,387 --> 00:50:37,387
+R equals 1 over 4.
+
+266
+00:50:39,748 --> 00:50:44,268
+So since R equals 1 over 4,
+
+267
+00:50:45,367 --> 00:50:47,907
+this geometric series convergent.
+
+268
+00:50:47,907 --> 00:50:51,967
+And the sum of this series...
+
+269
+00:50:53,487 --> 00:50:54,768
+1 over 4.
+
+270
+00:50:54,768 --> 00:50:55,447
+1 over 1 over.
+
+271
+00:51:14,675 --> 00:51:20,596
+This is another geometric series. Here A equals 1, R equals minus 1.
+
+272
+00:51:42,228 --> 00:51:43,568
+Be careful, [öğrenci].
+
+273
+00:51:48,148 --> 00:51:49,588
+Be careful here.
+
+274
+00:51:50,548 --> 00:51:59,307
+If r equals 1 or minus 1, our geometric series is divergent.
+
+275
+00:52:01,307 --> 00:52:01,968
+Okay.
+
+276
+00:52:16,244 --> 00:52:19,423
+This is Devon Gentile.
+
+277
+00:52:23,572 --> 00:52:24,072
+Teşekkürler.
+
+278
+00:52:36,179 --> 00:52:43,579
+Bu, of course, we know divergent geometric series.
+
+279
+00:52:49,204 --> 00:52:53,804
+Any question about last two examples?
+
+280
+00:52:59,891 --> 00:53:03,091
+Okay, another example.
+
+281
+00:53:07,347 --> 00:53:09,188
+5 minus
+
+282
+00:53:09,188 --> 00:53:12,628
+plus
+
+283
+00:53:12,628 --> 00:53:14,788
+minus
+
+284
+00:53:21,396 --> 00:53:27,156
+Can you say the formula of end term? What is the end term?
+
+285
+00:53:34,963 --> 00:53:37,683
+Bu da genel olarak bu series.
+
+286
+00:53:40,980 --> 00:53:44,440
+The formula of n-term is general term of series.
+
+287
+00:53:59,251 --> 00:54:04,751
+Times, say it, alternating series.
+
+288
+00:54:10,804 --> 00:54:28,503
+Evet, [öğrenci], 5 times minus 2 over 3 to the n, and start from, hmm, if you write n instead of power,
+
+289
+00:54:32,692 --> 00:54:34,652
+ve start from 0.
+
+290
+00:54:35,132 --> 00:54:38,032
+If we write n-1, then start from 1.
+
+291
+00:54:38,032 --> 00:54:39,032
+Yes.
+
+292
+00:54:40,032 --> 00:54:40,592
+Okay.
+
+293
+00:54:46,164 --> 00:54:56,164
+So, the sum of this series, geometric series, and convergent series, we can find the sum of this series as a formula.
+
+294
+00:54:59,524 --> 00:55:08,884
+1, 1 minus r. r equals minus 2 over 3. Be careful.
+
+295
+00:55:13,012 --> 00:55:13,251
+Bye.
+
+296
+00:55:34,452 --> 00:55:45,652
+n equals 1, 2, 2n times 3, 1 minus n.
+
+297
+00:55:46,932 --> 00:55:49,692
+Please say a and r.
+
+298
+00:55:55,923 --> 00:55:58,824
+[öğrenci], let's just close.
+
+299
+00:56:05,907 --> 00:56:09,507
+Evet, ok. Here, please say A and R.
+
+300
+00:56:17,364 --> 00:56:21,144
+İlk önce, re-write bu general term.
+
+301
+00:56:24,692 --> 00:56:37,251
+Please write in this form and then say a equals 4 and r equals 2.
+
+302
+00:56:50,547 --> 00:56:53,867
+Evet, 4 over 3.
+
+303
+00:56:54,767 --> 00:57:03,027
+So, since r is bigger than 1,
+
+304
+00:57:04,147 --> 00:57:11,347
+so, this geometric series is divergent or convergent?
+
+305
+00:57:14,347 --> 00:57:15,867
+Divergent.
+
+306
+00:57:16,867 --> 00:57:17,827
+Yes.
+
+307
+00:57:20,547 --> 00:57:21,387
+Any question?
+
+308
+00:57:22,767 --> 00:57:23,567
+About homework?
+
+309
+00:57:33,876 --> 00:57:34,436
+Exactly.
+
+310
+00:57:46,612 --> 00:58:01,892
+İlk olarak, we re-organize 4 to the n, and 3 over 3 to the n, and we re-write 3 times 4 over 3 to the n.
+
+311
+00:58:03,492 --> 00:58:10,452
+Please check the first term.
+
+312
+00:58:10,452 --> 00:58:15,751
+First term must be A.
+
+313
+00:58:30,036 --> 00:58:32,036
+İlk term is...
+
+314
+00:58:33,396 --> 00:58:40,036
+...
+
+315
+00:58:47,507 --> 00:58:49,207
+Okay, here.
+
+316
+00:58:52,980 --> 00:59:02,980
+Please write this repeating decimal number as a ratio of integers.
+
+317
+00:59:05,980 --> 00:59:16,980
+Please rewrite this repeating decimal number as a ratio of integer numbers.
+
+318
+00:59:23,764 --> 00:59:25,224
+You can say directly.
+
+319
+00:59:33,076 --> 00:59:33,715
+[öğrenci].
+
+320
+00:59:36,235 --> 00:59:39,896
+Yakınsak ya da bıraksak olup olmadığına neye göre karar veriyoruz?
+
+321
+00:59:40,396 --> 00:59:41,695
+Şurada özet dedim ya.
+
+322
+00:59:42,096 --> 00:59:46,255
+Şu özet kısmını şöyle tablo gibi ayırın lütfen.
+
+323
+00:59:46,516 --> 00:59:48,556
+Tablo gibi onu bir kenarda tutun.
+
+324
+00:59:48,735 --> 00:59:50,596
+Ona göre bakacağız öncelikle.
+
+325
+00:59:51,235 --> 00:59:51,715
+Tamam mı?
+
+326
+00:59:52,336 --> 00:59:55,836
+Ancak bu tabloyu neye göre yaptık?
+
+327
+00:59:55,836 --> 01:00:00,836
+Tabii ki onun öncesinde de ispatlara bir kere daha göz gezdirmemiz gerekiyor.
+
+328
+01:00:03,076 --> 01:00:05,275
+Burada A ve R sabit sayılar.
+
+329
+01:00:05,356 --> 01:00:11,036
+A ve R sabit sayılarının durumuna göre geometrik sayının yakınsak ya da bıraksak olup olmadığına karar veriyoruz.
+
+330
+01:00:11,775 --> 01:00:13,195
+A burada sabit sayı.
+
+331
+01:00:13,356 --> 01:00:16,715
+Yakınsaklığına bıraksaklığına A sayısı karar vermiyor.
+
+332
+01:00:16,916 --> 01:00:18,615
+R sabit sayısı karar veriyor.
+
+333
+01:00:18,615 --> 01:00:32,436
+Eğer R sabit sayısı eksi 1 ile artı 1 arasındaysa o zaman kısmi toplamlar dizisinin limiti sonlu bir sayı çıktığından dolayı
+
+334
+01:00:32,436 --> 01:00:34,615
+geometrik seriye yakınsak diyebildik.
+
+335
+01:00:36,195 --> 01:00:38,536
+Yani şuna konsantre oluyorsun.
+
+336
+01:00:38,715 --> 01:00:43,416
+Eğer R eksi 1 ile artı 1 arasındaysa geometrik seriyi yakınsak.
+
+337
+01:00:43,416 --> 01:00:55,876
+R eksi 1 artı 1 sayısı ya da eksi 1'den küçük 1'den büyük bir sayı ise yani bu aralığın dışında herhangi bir sabit sayı ise o zaman geometrik seriyi bıraksakta diyoruz.
+
+338
+01:00:55,876 --> 01:00:56,235
+R eksi 1'i artı 1'i artı 1'i artı 1'i artı 1'i artı 1'i artı 1'i artı 1'i artı 1'i artı 1'i artı 1'i artı 1'i artı 1'i artı 1'i artı 1'i artı 1'i artı 1'i artı 1'i artı 1'i artı 1'i artı 1'i artı 1'i artı 1'i artı 1'i artı 1'i artı 1'i artı 1'i artı 1'i artı 1'i artı 1'i artı 1'i artı 1'i artı 1'i artı 1'i artı 1'i artı 1'i artı 1'i artı 1'i artı 1'i artı 1'i artı 1'i artı 1'i artı 1'i artı 1'i
+
+339
+01:01:03,699 --> 01:01:04,259
+[öğrenci].
+
+340
+01:01:05,500 --> 01:01:07,679
+Bu en son yaptığımız örneklerde
+
+341
+01:01:07,679 --> 01:01:10,119
+hep A ve R sabit
+
+342
+01:01:10,119 --> 01:01:11,359
+sayılarına odaklandık.
+
+343
+01:01:11,799 --> 01:01:13,919
+A sayısını bulmadan R sayısını
+
+344
+01:01:13,919 --> 01:01:15,699
+bulamıyorum. Onun için A sayısını önce
+
+345
+01:01:15,699 --> 01:01:17,839
+söylüyorum. Sonra da R sayısını söylüyorum.
+
+346
+01:01:18,299 --> 01:01:19,919
+Eksi bir artı bir arasında olup olmadığına
+
+347
+01:01:19,919 --> 01:01:21,679
+karar verip yakın saklına erak saklına
+
+348
+01:01:21,679 --> 01:01:21,939
+diyorum.
+
+349
+01:01:25,219 --> 01:01:27,419
+Eksi bir ile artı bir arasında ise
+
+350
+01:01:27,419 --> 01:01:29,639
+toplamı evet kısmi toplamlar
+
+351
+01:01:29,639 --> 01:01:31,759
+dizisinin bu sayı
+
+352
+01:01:31,759 --> 01:01:33,379
+oluyor. Ona kesin kanal
+
+353
+01:01:33,379 --> 01:01:35,659
+getirebiliyorum. Bu kesin kısmi toplamlar
+
+354
+01:01:35,659 --> 01:01:36,939
+dizisinin limitidir.
+
+355
+01:01:37,460 --> 01:01:39,939
+Toplamı da bu sayıdır. Dolayısıyla yakınsaktır.
+
+356
+01:01:40,139 --> 01:01:41,719
+Sonu toplamı
+
+357
+01:01:41,719 --> 01:01:43,439
+sonlu bir sayı olan
+
+358
+01:01:43,439 --> 01:01:45,179
+seriye yakınsak seri.
+
+359
+01:01:45,379 --> 01:01:47,359
+O sayıya yakınsıyor toplamı.
+
+360
+01:01:47,439 --> 01:01:49,480
+O sayıya yaklaşıyor anlamındadır.
+
+361
+01:01:49,980 --> 01:01:51,899
+Dizilerdeki mantık gibi düşün.
+
+362
+01:01:54,879 --> 01:01:55,759
+Bıraksak
+
+363
+01:01:55,759 --> 01:01:56,960
+demek toplamı
+
+364
+01:01:56,960 --> 01:01:59,619
+sonsuz. Burada pozitif
+
+365
+01:01:59,619 --> 01:02:02,019
+seriler için konuşuyoruz.
+
+366
+01:02:02,019 --> 01:02:04,179
+pozitif sayıların sonsuz sayının
+
+367
+01:02:04,179 --> 01:02:06,219
+toplamı sonsuz olacak şekilde
+
+368
+01:02:06,219 --> 01:02:08,359
+bıraksak seri diyoruz.
+
+369
+01:02:08,359 --> 01:02:12,079
+Evet.
+
+370
+01:02:12,639 --> 01:02:14,739
+Bir sayıya yaklaşıyor oradan
+
+371
+01:02:14,739 --> 01:02:15,779
+aklına gelsin.
+
+372
+01:02:16,139 --> 01:02:18,019
+Serinin toplamı sonlu olduğunda
+
+373
+01:02:18,019 --> 01:02:19,679
+yakınsak seri diyoruz.
+
+374
+01:02:20,339 --> 01:02:21,779
+Peki bu soruyu
+
+375
+01:02:21,779 --> 01:02:26,119
+siz farklı sayılar
+
+376
+01:02:26,119 --> 01:02:27,879
+söylediniz. Benim bulduğum
+
+377
+01:02:27,879 --> 01:02:29,500
+sonuç ben
+
+378
+01:02:29,500 --> 01:02:30,819
+işlem hatasını yaptım.
+
+379
+01:02:31,319 --> 01:02:33,079
+Bir kere beraber kontrol edelim.
+
+380
+01:02:33,939 --> 01:02:35,480
+Bu ondalık sayıyı beraber
+
+381
+01:02:35,480 --> 01:02:37,739
+yapalım. Şimdi siz direkt söylüyorsunuz
+
+382
+01:02:37,739 --> 01:02:39,480
+bu sonucu ama biz şimdi
+
+383
+01:02:39,480 --> 01:02:40,379
+ispatına akacağız.
+
+384
+01:02:40,379 --> 01:02:41,319
+Let's
+
+385
+01:02:41,319 --> 01:02:42,699
+prove.
+
+386
+01:02:42,699 --> 01:02:46,879
+you can rewrite this
+
+387
+01:02:46,879 --> 01:02:49,659
+number
+
+388
+01:02:53,811 --> 01:03:06,931
+3,3 plus 17 over 10 cubed. 17 over 10 to the power of 5.
+
+389
+01:03:13,556 --> 01:03:18,436
+Bu, bu, birçok birçok birçok birçok.
+
+390
+01:03:20,115 --> 01:03:22,436
+Burada A'ye,
+
+391
+01:03:23,476 --> 01:03:24,356
+can you say?
+
+392
+01:03:35,987 --> 01:03:43,167
+Eqs 17 over 10 cube r, eqs.
+
+393
+01:04:00,692 --> 01:04:03,612
+1 over 10 square.
+
+394
+01:04:04,152 --> 01:04:07,371
+So this now is less than 1.
+
+395
+01:04:08,231 --> 01:04:08,851
+So,
+
+396
+01:04:11,052 --> 01:04:12,851
+Geometric series
+
+397
+01:04:15,351 --> 01:04:17,552
+is convergent.
+
+398
+01:04:19,132 --> 01:04:21,231
+And the sum of this
+
+399
+01:04:22,952 --> 01:04:24,231
+Geometric series
+
+400
+01:04:25,592 --> 01:04:26,092
+A
+
+401
+01:04:31,251 --> 01:04:35,512
+1-1 over a square.
+
+402
+01:04:40,500 --> 01:04:43,760
+Yes, [öğrenci], because
+
+403
+01:04:48,692 --> 01:04:56,692
+Geometric series is in this form. A plus AR plus AR.
+
+404
+01:05:03,635 --> 01:05:05,556
+The definition of geometric series.
+
+405
+01:05:11,155 --> 01:05:12,115
+This result
+
+406
+01:05:22,036 --> 01:05:27,556
+I find 1147 over.
+
+407
+01:05:32,340 --> 01:05:33,340
+409.
+
+408
+01:05:35,340 --> 01:05:36,180
+5.
+
+409
+01:05:37,780 --> 01:05:39,000
+You find
+
+410
+01:05:50,195 --> 01:05:50,915
+Ok, bu sef.
+
+411
+01:06:01,811 --> 01:06:02,531
+Homework.
+
+412
+01:06:07,539 --> 01:06:11,239
+2 to the power n minus 1, n start from 1.
+
+413
+01:06:12,619 --> 01:06:21,920
+Let's calculate the sum of these series, n start from 1, 2 to the n power n plus 1, 3n.
+
+414
+01:06:28,467 --> 01:06:41,027
+P minus A plus A square P, A to P square.
+
+415
+01:06:44,916 --> 01:07:14,896
+1, 2, 3, 4, 5, 6, 7, 8, 9, 10.
+
+416
+01:07:18,996 --> 01:07:25,635
+Bu da bu örneğin, bu örneğin, bu örneğin, bu örneğin?
+
+417
+01:07:50,963 --> 01:07:53,123
+[öğrenci]? Hmm.
+
+418
+01:08:02,164 --> 01:08:04,964
+Okay, of course, Ayshe.
+
+419
+01:08:07,884 --> 01:08:10,304
+Let's take a break, coffee break.
+
+420
+01:08:11,444 --> 01:08:13,903
+And then we will continue.
+
+421
+01:08:13,903 --> 01:08:20,684
+And see as if I shared last week's lecture here.
+
+422
+01:08:37,460 --> 01:08:38,199
+İnanılmaz, I think.
+
+423
+01:08:40,800 --> 01:08:41,399
+Orka bir.
+
+424
+01:08:46,868 --> 01:08:48,868
+Tamam, tamam.
+
+425
+01:08:52,868 --> 01:08:53,868
+Tamam.
+
+426
+01:08:55,668 --> 01:08:56,868
+Tamam, selesiyonlar.
+
+427
+01:18:42,547 --> 01:18:48,247
+[öğrenci], you can change the site of PDF file.
+
+428
+01:19:12,851 --> 01:19:15,791
+[öğrenci], you can see PDF file.
+
+429
+01:19:27,956 --> 01:19:32,195
+[öğrenci], biliyorsun çoktan seçmeli sınav alıyoruz.
+
+430
+01:19:32,815 --> 01:19:35,395
+Sadece sonucu söyleyebilmen yasarlı.
+
+431
+01:19:35,395 --> 01:19:43,136
+Şimdilik online sınav yaptığımız için ispat değil maalesef sonuç odaklı gidiyoruz.
+
+432
+01:19:43,275 --> 01:19:45,876
+Maalesef bence sizin için avantaj aslında bu.
+
+433
+01:19:47,176 --> 01:19:48,956
+Yeter ki doğru yarım yapın.
+
+434
+01:19:51,076 --> 01:19:52,916
+Çoktan seçmeli sınav alacağız.
+
+435
+01:19:53,155 --> 01:19:54,956
+Sınavlarımızı online yapacağız.
+
+436
+01:19:54,956 --> 01:20:01,076
+Evet evet vizelerde finallerde final bütünleme hepsi test oluyor.
+
+437
+01:20:01,076 --> 01:20:03,716
+Uzaktan olduğunda 20 soru soruluyor.
+
+438
+01:20:06,076 --> 01:20:08,976
+20 sorunun da hepsi yapılması gerekiyor.
+
+439
+01:20:09,456 --> 01:20:13,855
+[öğrenci] galiba yok aramızda şu anda ya da beni duymuyor.
+
+440
+01:20:14,676 --> 01:20:17,815
+Siz yardımcı olursunuz arkadaşınıza ben derse başlayayım.
+
+441
+01:20:19,355 --> 01:20:20,176
+Biliyorsunuz değil mi?
+
+442
+01:20:20,235 --> 01:20:21,336
+Çoğunuz biliyordur zaten.
+
+443
+01:20:21,336 --> 01:20:25,315
+Şuradaki işaretten yönlerini değiştirebiliyorsunuz.
+
+444
+01:20:25,395 --> 01:20:26,096
+Hah [öğrenci].
+
+445
+01:20:27,256 --> 01:20:27,996
+Can you see?
+
+446
+01:20:29,195 --> 01:20:34,836
+Here, from here, you can change the site of your PDF.
+
+447
+01:20:41,460 --> 01:20:43,020
+Can you see pdf file?
+
+448
+01:20:48,564 --> 01:20:54,364
+No, okay, stop share, and then again.
+
+449
+01:20:56,064 --> 01:20:59,084
+Now you can see pdf, yes.
+
+450
+01:21:00,524 --> 01:21:02,884
+This from here.
+
+451
+01:21:06,868 --> 01:21:07,828
+You can change.
+
+452
+01:21:16,595 --> 01:21:17,115
+Okay.
+
+453
+01:21:33,363 --> 01:21:37,803
+Another special series is telescoping series.
+
+454
+01:21:40,803 --> 01:21:44,403
+We can find the sum of the telescoping series.
+
+455
+01:21:45,483 --> 01:21:47,283
+What is telescoping series?
+
+456
+01:22:05,076 --> 01:22:05,636
+For example,
+
+457
+01:22:13,300 --> 01:22:18,220
+1 over n plus n, n plus 1 times n.
+
+458
+01:22:40,020 --> 01:22:41,100
+Geometric Series.
+
+459
+01:22:58,283 --> 01:23:00,444
+1 over 2.
+
+460
+01:23:03,123 --> 01:23:07,884
+2nd term is 1 over 2 times 3.
+
+461
+01:23:09,203 --> 01:23:13,163
+3rd term is 1 over 3 times 4.
+
+462
+01:23:14,844 --> 01:23:15,764
+3rd term.
+
+463
+01:23:20,212 --> 01:23:49,672
+Bu, bu
+
+464
+01:24:06,228 --> 01:24:08,087
+Evet, bu doğru.
+
+465
+01:24:08,087 --> 01:24:15,228
+Here, let's write again, 1, 1 plus,
+
+466
+01:24:19,475 --> 01:24:22,935
+We need the formula of this sum.
+
+467
+01:24:24,215 --> 01:24:25,875
+What is the formula?
+
+468
+01:24:26,536 --> 01:24:29,875
+Yes, you find...
+
+469
+01:24:29,875 --> 01:24:36,175
+If we rewrite this fraction,
+
+470
+01:24:37,395 --> 01:24:41,175
+if we use partial fraction decomposition,
+
+471
+01:24:41,855 --> 01:24:45,576
+1 over n, 1 over n plus 1.
+
+472
+01:24:46,695 --> 01:24:47,595
+Yes, [öğrenci].
+
+473
+01:24:47,595 --> 01:24:52,415
+If we use this decomposition,
+
+474
+01:24:53,815 --> 01:24:57,755
+we can find the formula Sn.
+
+475
+01:25:00,335 --> 01:25:06,975
+So, first term is 1 minus 1 over 2.
+
+476
+01:25:07,475 --> 01:25:08,755
+This is first term.
+
+477
+01:25:09,675 --> 01:25:11,595
+Second term is...
+
+478
+01:25:11,595 --> 01:25:17,576
+is written 1 over 2 minus 1 over 3.
+
+479
+01:25:19,255 --> 01:25:23,595
+And term 1 over n over 1 over n plus 1.
+
+480
+01:25:23,595 --> 01:25:28,415
+So, now we can simplify...
+
+481
+01:25:28,415 --> 01:25:29,415
+So...
+
+482
+01:25:29,415 --> 01:25:45,235
+So, now we can...
+
+483
+01:25:39,731 --> 01:25:50,171
+And finally, we find the formula of Sn as 1 over 1 over n plus 1.
+
+484
+01:25:51,051 --> 01:25:55,372
+Now, we can find the limit of Sn.
+
+485
+01:26:01,203 --> 01:26:06,804
+This limit is, please say, 1.
+
+486
+01:26:20,467 --> 01:26:31,907
+Here, we find the formula of Sn, we find the limit of Sn, and we can say the convergence of the series.
+
+487
+01:26:31,907 --> 01:26:47,627
+Here, from the definition, the given series is convergent, and the sum of series, the limit of Sn, is 1.
+
+488
+01:27:03,859 --> 01:27:08,719
+Rerite the partial sums by using partial fraction decomposition.
+
+489
+01:27:10,799 --> 01:27:15,039
+This series is called telescoping series.
+
+490
+01:27:16,359 --> 01:27:17,679
+Very simple.
+
+491
+01:27:19,399 --> 01:27:20,719
+We use...
+
+492
+01:27:25,492 --> 01:27:28,192
+Decomposition of Fraction.
+
+493
+01:27:32,948 --> 01:27:33,368
+Taylor.
+
+494
+01:27:51,636 --> 01:27:52,096
+Bu neyse.
+
+495
+01:27:52,576 --> 01:27:53,216
+Converges.
+
+496
+01:27:56,787 --> 01:28:04,887
+Then, the general, the limit of general term is zero.
+
+497
+01:28:12,372 --> 01:28:18,372
+This theorem gives us the...
+
+498
+01:28:25,268 --> 01:28:26,547
+Term Test
+
+499
+01:28:31,220 --> 01:28:32,180
+Divergence
+
+500
+01:28:41,395 --> 01:28:41,855
+İz
+
+501
+01:29:05,684 --> 01:29:19,104
+Limit of general term different from zero. Limit of an is any real number different from zero.
+
+502
+01:29:19,104 --> 01:29:23,684
+Then, the series
+
+503
+01:29:29,108 --> 01:29:30,668
+An is
+
+504
+01:29:30,668 --> 01:29:34,547
+Divergent
+
+505
+01:29:38,228 --> 01:29:38,828
+Not.
+
+506
+01:29:49,043 --> 01:29:51,203
+Limit of an equals zero.
+
+507
+01:29:54,644 --> 01:29:59,024
+ve know
+
+508
+01:30:05,076 --> 01:30:21,855
+Nothing about the convergence or divergence of the series.
+
+509
+01:30:29,140 --> 01:30:40,780
+If the limit of general term equals zero, the series may converge or diverge.
+
+510
+01:30:42,060 --> 01:30:52,160
+But the general term, the limit of general term is different from zero.
+
+511
+01:30:52,160 --> 01:30:57,480
+We know that this series is divergent.
+
+512
+01:30:58,480 --> 01:30:59,619
+For example,
+
+513
+01:31:05,363 --> 01:31:26,843
+n2 over 5 n2 plus 4. Can you say the convergence or divergence of the series? Yes, [öğrenci]. The limit of a n equals 1 over 5. So this series is
+
+514
+01:31:35,188 --> 01:31:36,047
+Divergent.
+
+515
+01:31:49,235 --> 01:31:50,235
+Çok kolay.
+
+516
+01:31:55,988 --> 01:31:56,887
+Another example.
+
+517
+01:32:16,756 --> 01:32:29,036
+Yes, [öğrenci], this is divergent because this limit equals 1. This is divergent because this limit equals 1 over 2. One more.
+
+518
+01:33:15,956 --> 01:33:17,956
+Bu bir tane bir tane.
+
+519
+01:33:17,956 --> 01:33:19,956
+Evet, bir tane.
+
+520
+01:33:19,956 --> 01:33:23,956
+Bir tane.
+
+521
+01:33:23,956 --> 01:33:25,956
+Bu bir tane.
+
+522
+01:33:25,956 --> 01:33:27,956
+Bir tane.
+
+523
+01:33:31,283 --> 01:33:35,363
+Ve iliketler, yakın, yakın.
+
+524
+01:33:40,275 --> 01:33:54,916
+from this theorem, since the limit of a n here, 1 over 5, so our series is the version.
+
+525
+01:34:11,667 --> 01:34:21,907
+Another, the limit of an equals one, so from theorem, this series is divergence as well.
+
+526
+01:34:23,188 --> 01:34:31,427
+Third series, same. Fifth series, what do you think about? Fifth example, 44, sorry.
+
+527
+01:34:40,916 --> 01:34:42,056
+Divergent, why?
+
+528
+01:34:57,332 --> 01:34:58,552
+What is the limit of?
+
+529
+01:35:19,923 --> 01:35:49,384
+If an odd number, the limit becomes minus 1. If an even number, yes, [öğrenci], you are right, 1. So, if the limit exists, it must be a single number, it's just one single number.
+
+530
+01:35:49,384 --> 01:36:05,163
+So, this limit does not exist. This limit is different from zero, so this series is divergent.
+
+531
+01:36:08,979 --> 01:36:31,500
+Bu, bu
+
+532
+01:36:35,091 --> 01:36:46,471
+This limit, please say, yes. This is different from zero, so this series is the divergent.
+
+533
+01:36:48,612 --> 01:37:00,471
+Last example about this theorem, sin x. Divergent, because...
+
+534
+01:37:06,163 --> 01:37:11,443
+Can you say this limit from Matematik 1, from calculus 1?
+
+535
+01:37:14,323 --> 01:37:15,523
+Denon this limit?
+
+536
+01:37:38,515 --> 01:37:40,515
+Does not
+
+537
+01:37:49,108 --> 01:38:03,587
+Remember, this is the limits and another special series is harmoni...
+
+538
+01:38:13,332 --> 01:38:17,592
+1, infinity, 1 over n.
+
+539
+01:38:19,452 --> 01:38:21,172
+This series is called
+
+540
+01:38:21,172 --> 01:38:23,252
+harmonic series.
+
+541
+01:38:24,832 --> 01:38:27,652
+First term, second term,
+
+542
+01:38:28,212 --> 01:38:30,632
+third term, et cetera.
+
+543
+01:38:32,472 --> 01:38:32,872
+This
+
+544
+01:38:32,872 --> 01:38:35,072
+called
+
+545
+01:38:35,072 --> 01:38:37,472
+harmonic
+
+546
+01:38:37,472 --> 01:38:40,672
+series.
+
+547
+01:38:40,672 --> 01:38:43,972
+harmonic series.
+
+548
+01:38:43,972 --> 01:38:44,172
+Harmonik series.
+
+549
+01:38:54,163 --> 01:38:55,163
+Merhaba.
+
+550
+01:39:07,988 --> 01:39:08,488
+Yüzgün.
+
+551
+01:39:13,684 --> 01:39:14,644
+Investigate.
+
+552
+01:39:19,796 --> 01:39:25,756
+of the harmonic series.
+
+553
+01:39:29,779 --> 01:39:30,779
+Evet.
+
+554
+01:39:42,739 --> 01:40:05,319
+Bu, bu, Omer'a, bu, oma, bu, oma, bu, oma, bu, oma, bu, oma, bu, oma, bu, oma, bu, oma, bu, oma, bu, oma, bu, oma, bu, oma, bu, oma, bu, oma, bu, oma, bu, oma, bu, oma, bu, oma, bu, oma, bu, oma, bu, oma, bu, oma, bu, oma, bu, oma, bu, oma, bu, oma, bu, oma, bu, oma, bu, oma, bu, oma, bu, oma, bu, oma, bu, oma, bu, oma, bu, oma, bu, oma, bu, oma, bu, oma, bu, oma, bu, oma, bu, oma, bu, oma, bu, oma
+
+555
+01:40:08,787 --> 01:40:10,587
+Harmonik series of
+
+556
+01:40:15,475 --> 01:40:21,115
+Divergent optoharmonik, but you should investigate.
+
+557
+01:40:23,755 --> 01:40:26,755
+Another property of
+
+558
+01:40:26,755 --> 01:40:29,675
+series,
+
+559
+01:40:30,795 --> 01:40:31,275
+Theora.
+
+560
+01:40:38,996 --> 01:40:49,475
+Sum of a n series equals a, and the sum of series b n equals b.
+
+561
+01:41:06,484 --> 01:41:20,604
+If sum rule, if we add conversion 2 series, we will find another conversion series.
+
+562
+01:41:26,963 --> 01:41:31,943
+Bu bölümde bu bölümde bu bölümde
+
+563
+01:41:43,315 --> 01:41:46,595
+We can subtract the convergent series.
+
+564
+01:41:49,876 --> 01:42:00,675
+The sum of these subtract series equals the subtracts of A and B.
+
+565
+01:42:07,475 --> 01:42:08,235
+Another rule.
+
+566
+01:42:13,300 --> 01:42:33,220
+If we multiply by k, every term of the series, we find a new series. This new series is convergent as well, and the sum of this series k times a.
+
+567
+01:42:36,500 --> 01:42:40,340
+Here k is any constant.
+
+568
+01:42:44,851 --> 01:42:51,771
+For example, find the sum of...
+
+569
+01:42:56,819 --> 01:42:57,739
+There he is.
+
+570
+01:43:17,779 --> 01:43:21,800
+We have two convergent series.
+
+571
+01:43:21,800 --> 01:43:27,800
+First one is telescoping series, second one is geometric series.
+
+572
+01:43:31,155 --> 01:43:38,876
+Samaf telescobik series, we found as one.
+
+573
+01:43:40,716 --> 01:43:49,355
+Samaf telescobik series, we found as, let's look together.
+
+574
+01:44:10,420 --> 01:44:17,159
+And start from one, okay, here, A equals one over two.
+
+575
+01:44:36,787 --> 01:44:37,787
+Bir soru.
+
+576
+01:44:55,859 --> 01:45:04,859
+is the difference of conversion to geometrical series.
+
+577
+01:45:09,108 --> 01:45:20,108
+Please find the sum of each series and subtract to these sums.
+
+578
+01:45:43,667 --> 01:45:44,027
+Peace.
+
+579
+01:45:48,083 --> 01:45:49,083
+ve serisi,
+
+580
+01:45:50,783 --> 01:45:51,783
+is divergent.
+
+581
+01:45:54,623 --> 01:45:55,623
+ve ben
+
+582
+01:46:11,891 --> 01:46:16,032
+Bu serisi, do you have any idea?
+
+583
+01:46:23,412 --> 01:46:25,412
+Evet, divergent.
+
+584
+01:46:28,452 --> 01:46:44,851
+If this sum is infinity, and if we multiply by k, every term of the series, of course the sum of this series must be divergent. [öğrenci],
+
+585
+01:46:46,692 --> 01:46:48,692
+Yes, that's true.
+
+586
+01:46:55,988 --> 01:47:11,108
+Eğer bir serisi vergesin, bir serisi vergesin, bir serisi vergesin.
+
+587
+01:47:20,435 --> 01:47:22,715
+Do some of this series or...
+
+588
+01:47:27,956 --> 01:47:28,735
+Difference.
+
+589
+01:47:33,427 --> 01:47:35,807
+Divergent, or convergent.
+
+590
+01:47:39,764 --> 01:47:44,764
+Devur, just, sorry, toService, devur.
+
+591
+01:47:49,140 --> 01:48:18,440
+Here, be careful, if a n and b n both diverge, then a n plus b n might diverge or converge. Be careful here.
+
+592
+01:48:22,963 --> 01:48:23,623
+For example,
+
+593
+01:48:39,220 --> 01:48:41,220
+Geometrik series
+
+594
+01:48:43,220 --> 01:48:45,220
+Eqs minus 1
+
+595
+01:48:46,220 --> 01:48:49,220
+So they are both dwarfs
+
+596
+01:48:51,220 --> 01:48:52,220
+But
+
+597
+01:48:53,220 --> 01:48:56,220
+If you write a few terms
+
+598
+01:48:56,220 --> 01:48:59,220
+First term minus 1
+
+599
+01:48:59,220 --> 01:49:09,220
+Minus 1
+
+600
+01:49:21,460 --> 01:49:22,460
+Be careful here.
+
+601
+01:49:28,083 --> 01:49:28,884
+Menele, dönüş.
+
+602
+01:49:33,492 --> 01:49:35,032
+Proporty of series
+
+603
+01:49:38,899 --> 01:49:40,500
+I think, and...
+
+604
+01:49:45,140 --> 01:49:46,579
+Deleting Terms
+
+605
+01:50:03,604 --> 01:50:06,744
+Merges, end.
+
+606
+01:50:07,944 --> 01:50:09,144
+If we add
+
+607
+01:50:15,380 --> 01:50:16,619
+Finite Numbers
+
+608
+01:50:21,971 --> 01:50:23,211
+Bu da seris.
+
+609
+01:50:27,764 --> 01:50:28,083
+Ben.
+
+610
+01:50:32,372 --> 01:50:33,731
+Resulting series
+
+611
+01:50:37,076 --> 01:50:53,456
+What do you think? If the sum of this series is a finite number, if we add a finite and other numbers to the series, of course, resulting series, please say,
+
+612
+01:50:58,228 --> 01:51:03,707
+Evet, of course.
+
+613
+01:51:08,435 --> 01:51:08,875
+Or,
+
+614
+01:51:13,332 --> 01:51:16,332
+Bu konvergelerin bir konvergesi var.
+
+615
+01:51:16,332 --> 01:51:33,332
+Bu konvergesi var.
+
+616
+01:51:35,699 --> 01:51:37,099
+We can deny it. Bye.
+
+617
+01:51:37,800 --> 01:51:38,159
+This.
+
+618
+01:51:55,923 --> 01:52:01,384
+If and only if
+
+619
+01:52:05,140 --> 01:52:11,180
+k equals k, af, konverges.
+
+620
+01:52:11,180 --> 01:52:23,079
+Here, k is any positive integer number.
+
+621
+01:52:27,956 --> 01:52:28,636
+Example.
+
+622
+01:52:55,828 --> 01:53:02,348
+Bu da bu
+
+623
+01:53:15,764 --> 01:53:16,324
+Any questions?
+
+624
+01:53:49,587 --> 01:53:57,207
+If no question, we will pass to another topic, Convergence Tests for Positive Serisi.
+
+625
+01:53:58,268 --> 01:54:02,867
+Let's look together one more time today.
+
+626
+01:54:06,707 --> 01:54:19,228
+We will give the definition of the sum of series. The sum of series depends on the convergence of the partial sums.
+
+627
+01:54:20,907 --> 01:54:31,587
+If we calculate the sum of series, we need the sequence of partial sums.
+
+628
+01:54:35,444 --> 01:54:42,504
+We calculate the limit of s in order to find the sum of the series.
+
+629
+01:54:46,292 --> 01:54:48,292
+The sum of geometric series
+
+630
+01:54:51,764 --> 01:54:56,224
+Bu, çünkü, parçal sums,
+
+631
+01:54:58,304 --> 01:54:59,284
+is a formula,
+
+632
+01:55:00,083 --> 01:55:01,844
+and we can calculate
+
+633
+01:55:02,404 --> 01:55:04,123
+the limit of this formula,
+
+634
+01:55:05,043 --> 01:55:05,543
+and
+
+635
+01:55:08,384 --> 01:55:10,163
+we can give this
+
+636
+01:55:10,623 --> 01:55:13,224
+table about geometric series.
+
+637
+01:55:14,444 --> 01:55:16,604
+If the constants are
+
+638
+01:55:17,344 --> 01:55:19,364
+between minus one and one,
+
+639
+01:55:19,364 --> 01:55:21,604
+our geometric series
+
+640
+01:55:24,104 --> 01:55:25,743
+is convergent series,
+
+641
+01:55:25,743 --> 01:55:26,864
+and the sum of,
+
+642
+01:55:26,864 --> 01:55:29,384
+we can say the sum of the series
+
+643
+01:55:29,384 --> 01:55:31,684
+as this formula.
+
+644
+01:55:35,083 --> 01:55:37,224
+Another special series,
+
+645
+01:55:37,224 --> 01:55:38,824
+telescoping series,
+
+646
+01:55:47,731 --> 01:56:07,332
+If we find the formula of Sn by the composition of fraction, we can calculate the limit of partial sums, and we can say the sum of series.
+
+647
+01:56:07,332 --> 01:56:12,131
+This series is called telescoping series.
+
+648
+01:56:12,131 --> 01:56:17,572
+This is special first test.
+
+649
+01:56:27,444 --> 01:56:34,444
+Bu bölümde de
+
+650
+01:56:34,444 --> 01:56:40,444
+bölümde de
+
+651
+01:56:40,444 --> 01:57:25,444
+bölümde
+
+652
+01:57:19,091 --> 01:57:30,091
+For example, harmonic series, look at the harmonic series, please say the limit of general term.
+
+653
+01:57:30,091 --> 01:57:32,371
+What is limit a n?
+
+654
+01:57:36,340 --> 01:57:40,060
+Here, limit of an equals zero.
+
+655
+01:57:41,000 --> 01:57:45,819
+So, our harmonic series, we gave
+
+656
+01:57:45,819 --> 01:57:51,279
+Divergent series.
+
+657
+01:57:56,020 --> 01:58:08,020
+Bu bir diğer series, bu bir series. Bu bir series, bu bir series. Bu bir series, bu bir series. Bu bir series.
+
+658
+01:58:08,020 --> 01:58:22,020
+Bu bir series.
+
+659
+01:58:30,323 --> 01:58:42,443
+If no question, we can pass another subject convergence test.
+
+660
+01:58:47,923 --> 01:58:50,923
+Positif serisi
+
+661
+01:58:50,923 --> 01:58:54,243
+In general
+
+662
+01:58:59,539 --> 01:59:04,220
+Eğer bir seri değil, bir seri değil, bir seri değil.
+
+663
+01:59:12,435 --> 01:59:25,155
+Difficult to find the exact sum of a series.
+
+664
+01:59:35,764 --> 01:59:52,043
+Bu, bu
+
+665
+01:59:59,444 --> 02:00:00,444
+Çünkü...
+
+666
+02:00:08,180 --> 02:00:13,920
+İçin bir şey.
+
+667
+02:00:25,235 --> 02:00:33,235
+Can not find the formula of
+
+668
+02:00:45,332 --> 02:00:50,212
+Partial sum of
+
+669
+02:01:13,652 --> 02:01:20,891
+Çünkü, we cannot find a formula for the n-th partial sum, s-n, each of series.
+
+670
+02:01:25,811 --> 02:01:35,811
+If we cannot find the limit of Sn, we cannot say about the sum of...
+
+671
+02:01:38,515 --> 02:01:45,576
+vekiklikler, çift katlı
+
+672
+02:01:51,475 --> 02:01:52,415
+Ve develop.
+
+673
+02:01:56,243 --> 02:02:21,483
+several tests that enable us to determine if series is convergent or divergent without
+
+674
+02:02:39,667 --> 02:02:43,188
+Without calculating the limit of Sn,
+
+675
+02:02:47,188 --> 02:02:49,568
+Thanks to these tests,
+
+676
+02:02:53,460 --> 02:03:01,500
+We can determine whether the given series is divergent or convergent.
+
+677
+02:03:01,500 --> 02:03:02,939
+Any question?
+
+678
+02:03:10,771 --> 02:03:31,881
+Bu bölümde, bu bölümde böl
+
+679
+02:04:17,011 --> 02:04:21,371
+İntegral test.
+
+680
+02:04:31,764 --> 02:04:59,274
+suppose that an equals f of n, where f is continuous, positive, decreasing function from an interval,
+
+681
+02:05:03,315 --> 02:05:04,675
+n, infinite.
+
+682
+02:05:05,235 --> 02:05:09,076
+n, positive integer number.
+
+683
+02:05:10,435 --> 02:05:10,916
+n,
+
+684
+02:05:18,100 --> 02:05:38,579
+The series An converges if and only if this improper integral fx dx converges.
+
+685
+02:05:52,467 --> 02:06:05,787
+Namely, if and only f, means the series and improper integrals, either both converges or both diverges to infinity.
+
+686
+02:06:11,252 --> 02:06:11,912
+Nope, sorry.
+
+687
+02:06:20,372 --> 02:06:21,811
+Devolver, just
+
+688
+02:06:21,811 --> 02:06:23,792
+to infinity
+
+689
+02:06:40,500 --> 02:06:51,180
+If improper integral is convergent, then the series is convergent. If improper integral is divergent to infinity, then the series is divergent to infinity.
+
+690
+02:06:54,220 --> 02:06:54,939
+Example.
+
+691
+02:06:56,619 --> 02:07:01,420
+Yes, yes. If and only if means if.
+
+692
+02:07:03,819 --> 02:07:04,659
+Example.
+
+693
+02:07:12,467 --> 02:07:17,068
+1 over n sukash,
+
+694
+02:07:19,287 --> 02:07:19,627
+for
+
+695
+02:07:19,627 --> 02:07:22,148
+convergence
+
+696
+02:07:36,564 --> 02:07:39,124
+use the integral test.
+
+697
+02:07:42,124 --> 02:07:47,124
+Because if we consider an
+
+698
+02:07:49,764 --> 02:07:50,963
+as a function,
+
+699
+02:07:52,084 --> 02:07:54,324
+oops, as a function,
+
+700
+02:07:57,524 --> 02:08:00,084
+function is
+
+701
+02:08:02,324 --> 02:08:03,124
+continuous.
+
+702
+02:08:15,539 --> 02:08:19,380
+1, 2, 3.
+
+703
+02:08:22,739 --> 02:08:24,819
+So, this function
+
+704
+02:08:25,460 --> 02:08:26,659
+continues on
+
+705
+02:08:28,739 --> 02:08:29,619
+the interval
+
+706
+02:08:30,180 --> 02:08:31,300
+1, 0.
+
+707
+02:08:36,083 --> 02:08:37,743
+Bu condition is satisfied.
+
+708
+02:08:38,823 --> 02:08:39,863
+Is it positive?
+
+709
+02:08:40,264 --> 02:08:41,304
+Yes, of course.
+
+710
+02:08:41,783 --> 02:08:45,623
+This is a positive function.
+
+711
+02:08:51,507 --> 02:08:59,507
+Evet, bu yukarı.
+
+712
+02:08:59,507 --> 02:09:11,507
+Bu yukarı.
+
+713
+02:09:11,507 --> 02:09:13,507
+Yukarı.
+
+714
+02:09:13,507 --> 02:09:17,507
+Bu yukarı.
+
+715
+02:09:26,260 --> 02:09:33,640
+must find, we must calculate this in proper integral.
+
+716
+02:09:36,979 --> 02:09:38,619
+[öğrenci], be careful.
+
+717
+02:09:40,139 --> 02:09:46,239
+In the geometric series, A and R is any constant numbers.
+
+718
+02:09:46,239 --> 02:09:48,759
+Here, N is not constant number.
+
+719
+02:09:52,435 --> 02:10:00,395
+Geometric series is a, r to the n. a and r, constant number.
+
+720
+02:10:00,395 --> 02:10:09,195
+For example, 1 over 2 to the n is geometric series.
+
+721
+02:10:11,195 --> 02:10:15,315
+[öğrenci], can you say the difference of these series?
+
+722
+02:10:32,148 --> 02:10:33,788
+[öğrenci], can you see?
+
+723
+02:11:01,108 --> 02:11:01,467
+Ok.
+
+724
+02:11:09,811 --> 02:11:37,612
+Here, domain of this function is infinite interval. So, when the domain of function is infinite, this integral is called improper integral. To calculate improper integral, we need to limit, we rewrite the improper integral as defined.
+
+725
+02:11:43,220 --> 02:11:44,680
+This is x.
+
+726
+02:11:47,100 --> 02:11:50,619
+1 over x square dx.
+
+727
+02:11:54,003 --> 02:12:09,203
+In order to calculate an integral, a domain of function must be a finite interval.
+
+728
+02:12:09,923 --> 02:12:15,443
+So we must rewrite this improper integral as definite integral.
+
+729
+02:12:15,443 --> 02:12:22,564
+So we need limit, definition of limit.
+
+730
+02:12:23,764 --> 02:12:28,884
+As a goes to infinity,
+
+731
+02:12:31,524 --> 02:12:38,483
+limit of this integral equals the result of improper integral.
+
+732
+02:12:38,483 --> 02:12:49,604
+If this limit exists, we can say this improper integral is convergent, otherwise divergent.
+
+733
+02:12:53,876 --> 02:13:01,436
+İntegra'ya
+
+734
+02:13:01,436 --> 02:13:04,436
+Antiderivative
+
+735
+02:13:04,436 --> 02:13:07,436
+1 over x2r
+
+736
+02:13:07,436 --> 02:13:09,115
+minus 1 over x.
+
+737
+02:13:09,115 --> 02:13:10,556
+First,
+
+738
+02:13:15,347 --> 02:13:26,247
+A, and then write B instead of X, and then calculate limit.
+
+739
+02:13:30,644 --> 02:13:37,043
+This limit equals 1. So, improper integral
+
+740
+02:13:41,395 --> 02:13:43,395
+Converges
+
+741
+02:13:47,956 --> 02:13:51,216
+So, from the test,
+
+742
+02:14:02,579 --> 02:14:08,720
+Bir sürü var n² is convergent.
+
+743
+02:14:20,787 --> 02:14:22,147
+Do you have any question?
+
+744
+02:14:23,647 --> 02:14:24,307
+Any problem?
+
+745
+02:14:47,283 --> 02:14:57,283
+is not continuous function, is not positive function, or f is not decreasing function, we cannot use this test, [öğrenci].
+
+746
+02:14:59,083 --> 02:15:09,804
+If we write the general term as a function satisfying these conditions, we can use this integral test.
+
+747
+02:15:09,804 --> 02:15:13,563
+And,
+
+748
+02:15:13,563 --> 02:15:18,363
+Another challenge is,
+
+749
+02:15:18,363 --> 02:15:19,503
+This
+
+750
+02:15:19,503 --> 02:15:21,923
+Calculating integral.
+
+751
+02:15:23,043 --> 02:15:24,223
+Of course,
+
+752
+02:15:25,903 --> 02:15:26,603
+We
+
+753
+02:15:26,603 --> 02:15:35,363
+Can calculate this integral. If we cannot calculate this integral, so we cannot use this test.
+
+754
+02:15:44,307 --> 02:15:45,108
+Another example.
+
+755
+02:15:46,887 --> 02:15:47,347
+Now,
+
+756
+02:15:47,347 --> 02:15:50,627
+we can show that
+
+757
+02:15:56,819 --> 02:15:58,819
+The harmonic series
+
+758
+02:16:02,612 --> 02:16:09,212
+is, what was the harmonic series, is divergent,
+
+759
+02:16:09,212 --> 02:16:17,212
+by using the integral test.
+
+760
+02:16:24,659 --> 02:16:26,279
+n equals 1 over n.
+
+761
+02:16:27,359 --> 02:16:31,840
+If we consider this term as a function,
+
+762
+02:16:32,840 --> 02:16:35,619
+our function 1 over x,
+
+763
+02:16:36,579 --> 02:16:39,539
+domain of this function here,
+
+764
+02:16:39,780 --> 02:16:41,639
+n start from 1,
+
+765
+02:16:42,459 --> 02:16:47,319
+so domain of function 1, infinity.
+
+766
+02:16:49,780 --> 02:16:53,479
+This function on this interval,
+
+767
+02:16:53,479 --> 02:16:54,940
+positive.
+
+768
+02:17:00,340 --> 02:17:05,460
+Decreasing Continuous Function.
+
+769
+02:17:07,780 --> 02:17:10,180
+So, we can use
+
+770
+02:17:13,180 --> 02:17:14,180
+integral test.
+
+771
+02:17:18,484 --> 02:17:38,283
+Bu, bu
+
+772
+02:17:41,716 --> 02:17:49,716
+We can calculate this definite integral as ln x. Yes. What is this limit?
+
+773
+02:18:01,236 --> 02:18:15,536
+Please think the graph of, yes, [öğrenci], the graph of ln function, if x goes to infinity, ln x goes to infinity.
+
+774
+02:18:27,283 --> 02:18:28,503
+integral test.
+
+775
+02:18:32,115 --> 02:18:38,275
+The harmonic series is the row jump to infinite.
+
+776
+02:18:53,203 --> 02:18:55,203
+Determine the convergence of...
+
+777
+02:19:18,708 --> 02:19:24,288
+Şimdi, we consider the general term as a function.
+
+778
+02:19:30,420 --> 02:19:42,360
+This function on this interval is continuous, positive, and decreasing function.
+
+779
+02:19:47,700 --> 02:19:50,540
+We can calculate this in proper integral.
+
+780
+02:19:54,611 --> 02:20:01,551
+Can you say the limit of this function, sorry, integral of this function?
+
+781
+02:20:08,531 --> 02:20:21,311
+Test truth [öğrenci], this is art tangent x, tangent 1.
+
+782
+02:20:26,067 --> 02:20:41,627
+Since tan pi over 4 equals 1, tan pi over 2 equals 1.
+
+783
+02:20:46,324 --> 02:20:47,084
+Can you say?
+
+784
+02:20:51,347 --> 02:20:57,307
+infinity. So, arc tangent infinity equals.
+
+785
+02:21:04,371 --> 02:21:09,371
+2 5 4 4 5 4 4
+
+786
+02:21:13,108 --> 02:21:19,987
+Bu bir numarın bir numarını, bu bir numarın bir numarını,
+
+787
+02:21:19,987 --> 02:21:27,987
+bu bir numarın bir numarını,
+
+788
+02:21:51,028 --> 02:21:53,667
+Here, be careful.
+
+789
+02:21:55,487 --> 02:21:58,368
+Here, we cannot say the sum of the series
+
+790
+02:21:58,368 --> 02:22:02,548
+equals pi over 4.
+
+791
+02:22:06,484 --> 02:22:12,604
+We cannot say this sum equals pi over 4.
+
+792
+02:22:15,844 --> 02:22:21,203
+We can say just this sum is convergent series.
+
+793
+02:22:22,123 --> 02:22:24,164
+This sum is a finite number.
+
+794
+02:22:24,304 --> 02:22:25,804
+This series convergent.
+
+795
+02:22:27,084 --> 02:22:28,084
+But...
+
+796
+02:22:31,219 --> 02:22:35,260
+We don't know the value of the series.
+
+797
+02:22:36,119 --> 02:22:36,500
+Okay?
+
+798
+02:22:44,084 --> 02:22:51,444
+If no questions, we can solve this.
+
+799
+02:22:55,924 --> 02:23:01,604
+Here, your integral will become four over infinity.
+
+800
+02:23:13,971 --> 02:23:22,771
+You can use the integral test to determine the convergence of these series.
+
+801
+02:23:37,652 --> 02:23:43,311
+eqs, lnx over x.
+
+802
+02:23:47,476 --> 02:23:54,476
+ve
+
+803
+02:23:53,396 --> 02:24:02,436
+The graph of lnx is like that, new one. So this is a positive function.
+
+804
+02:24:05,236 --> 02:24:06,195
+This is clear.
+
+805
+02:24:08,436 --> 02:24:12,436
+This is a continuous function because it's different from zero.
+
+806
+02:24:14,036 --> 02:24:15,236
+Continuous function.
+
+807
+02:24:16,836 --> 02:24:19,716
+But is this decreasing?
+
+808
+02:24:23,396 --> 02:24:24,115
+This function.
+
+809
+02:24:25,316 --> 02:24:26,756
+Decreasing or not.
+
+810
+02:24:30,932 --> 02:24:49,752
+[öğrenci], you can use the derivative of f. If derivative of f positive function, so f is increasing less than 0 f decreasing function.
+
+811
+02:24:49,752 --> 02:24:52,852
+from calculus 1.
+
+812
+02:24:54,792 --> 02:24:57,512
+What is derivative of x?
+
+813
+02:24:59,032 --> 02:25:05,072
+Derivative of lnx times x minus lnx.
+
+814
+02:25:09,396 --> 02:25:13,576
+1 minus ln x over x squared.
+
+815
+02:25:16,416 --> 02:25:17,816
+Denominator is positive.
+
+816
+02:25:18,976 --> 02:25:21,656
+Denominator is positive or negative.
+
+817
+02:25:29,332 --> 02:25:29,891
+Evet.
+
+818
+02:25:38,451 --> 02:25:48,771
+If x equals a, if x bigger than a, ln x bigger than 1.
+
+819
+02:25:50,231 --> 02:25:54,711
+So, 1 minus ln x less than 0.
+
+820
+02:25:56,091 --> 02:26:07,351
+In this condition, this function negative, so f is decreasing.
+
+821
+02:26:20,595 --> 02:26:45,475
+is decreasing function on the interval 0, sorry, 3, infinity. If x, excuse, sorry, x bigger than e, constant number 2,71, so in this condition f is decreasing function.
+
+822
+02:26:51,572 --> 02:26:54,551
+Any problem? Any question about decreasing?
+
+823
+02:27:03,188 --> 02:27:03,688
+[öğrenci].
+
+824
+02:27:06,688 --> 02:27:08,188
+Elan A.
+
+825
+02:27:14,932 --> 02:27:29,772
+If 1 minus lnx less than 0, derivative of f less than 0, and f become decreasing.
+
+826
+02:27:31,452 --> 02:27:33,152
+We need this.
+
+827
+02:27:35,012 --> 02:27:38,532
+This means lnx bigger than 1.
+
+828
+02:27:38,532 --> 02:27:43,532
+When this inequality is satisfied,
+
+829
+02:27:44,412 --> 02:27:46,872
+if x
+
+830
+02:27:46,872 --> 02:27:49,652
+bigger than a,
+
+831
+02:27:51,532 --> 02:27:54,372
+then lnx bigger than 1.
+
+832
+02:27:56,052 --> 02:27:56,452
+If
+
+833
+02:27:56,452 --> 02:28:01,572
+this constant number, special number,
+
+834
+02:28:11,827 --> 02:28:12,167
+Okay.
+
+835
+02:28:27,924 --> 02:28:32,584
+I think you can calculate this.
+
+836
+02:28:35,584 --> 02:28:43,344
+Or, okay, 3 ln x over x dx.
+
+837
+02:28:56,659 --> 02:29:12,020
+Can you calculate this integral? Yes. If we write u instead of ln x, if we use substitution method, we can calculate.
+
+838
+02:29:31,636 --> 02:29:32,156
+2
+
+839
+02:29:41,075 --> 02:29:55,275
+So, this limit is, as a goes to infinity, limit of this function,
+
+840
+02:30:03,476 --> 02:30:04,236
+Any problem?
+
+841
+02:30:10,611 --> 02:30:11,611
+İnfiniit.
+
+842
+02:30:11,611 --> 02:30:15,611
+So, this series
+
+843
+02:30:15,611 --> 02:30:17,611
+is
+
+844
+02:30:17,611 --> 02:30:21,611
+or is
+
+845
+02:30:21,611 --> 02:30:22,611
+Divergent.
+
+846
+02:30:30,899 --> 02:30:32,899
+İklus 1, 20.
+
+847
+02:31:22,195 --> 02:31:26,036
+Any question about last homework?
+
+848
+02:31:27,396 --> 02:31:29,796
+This whole homework, please.
+
+849
+02:31:33,716 --> 02:31:36,396
+Bakın, tekrar.
+
+850
+02:31:40,979 --> 02:31:41,639
+No question.
+
+851
+02:31:47,092 --> 02:31:53,372
+Let's give a special another series, pseries.
+
+852
+02:31:57,843 --> 02:31:59,843
+Bu şekilde bir şekilde bir şekilde var.
+
+853
+02:31:59,843 --> 02:32:03,843
+1 over n to the p.
+
+854
+02:32:03,843 --> 02:32:05,843
+Be careful.
+
+855
+02:32:05,843 --> 02:32:07,843
+1
+
+856
+02:32:27,700 --> 02:32:34,180
+It converges if p 1.
+
+857
+02:32:37,652 --> 02:32:41,451
+Diverges
+
+858
+02:33:08,531 --> 02:33:15,051
+This is special series, p series. We will use this series.
+
+859
+02:33:24,628 --> 02:33:46,748
+Here. Here, p is any real number. If p equals 1, then we find harmonic series. We know that harmonic series diverges.
+
+860
+02:33:50,484 --> 02:33:51,004
+No
+
+861
+02:33:54,739 --> 02:34:04,940
+We can show that the harmonic series, the virgin series by using the integral test.
+
+862
+02:34:10,324 --> 02:34:12,524
+If, ki istin.
+
+863
+02:34:16,979 --> 02:34:20,219
+Eq 0, you find
+
+864
+02:34:23,667 --> 02:34:24,667
+ve serisi.
+
+865
+02:34:29,971 --> 02:34:35,572
+Can you say this series divergent series or convergent? What do you think?
+
+866
+02:34:37,652 --> 02:34:45,092
+Please think the partial sums and limit of partial sums
+
+867
+02:34:47,252 --> 02:34:52,211
+is infinitive and divergent series.
+
+868
+02:35:02,451 --> 02:35:03,231
+Day Street
+
+869
+02:35:06,611 --> 02:35:11,691
+if p is negative number.
+
+870
+02:35:16,020 --> 02:35:22,239
+If p is a negative number,
+
+871
+02:35:32,819 --> 02:35:56,100
+Natural number, positive integer number. P is negative number. So, we can say the limit of an. An here, general term of p-series. Can you say?
+
+872
+02:36:01,043 --> 02:36:07,763
+P negative number, and positive natural number.
+
+873
+02:36:12,948 --> 02:36:23,188
+So, n equals 2, p equals minus, sorry, p equals minus 2, for example.
+
+874
+02:36:24,188 --> 02:36:27,388
+So, 1 over n minus 2.
+
+875
+02:36:29,488 --> 02:36:29,788
+Yes.
+
+876
+02:36:31,007 --> 02:36:35,268
+So, this is infinity.
+
+877
+02:36:38,268 --> 02:36:41,288
+How can we use the test?
+
+878
+02:36:42,948 --> 02:36:45,228
+We install two tests.
+
+879
+02:36:48,724 --> 02:36:53,963
+Test test, first test is test for divergent.
+
+880
+02:36:56,484 --> 02:36:58,443
+Second test is integral test.
+
+881
+02:36:59,443 --> 02:37:01,484
+Don't forget the first test.
+
+882
+02:37:05,747 --> 02:37:11,807
+Buy the test for divergence.
+
+883
+02:37:16,468 --> 02:37:30,228
+The limit of general term is different from zero, so the series is divergent series.
+
+884
+02:37:32,948 --> 02:37:34,228
+Can you remember?
+
+885
+02:37:42,067 --> 02:37:49,447
+Last case, if p, positive number.
+
+886
+02:38:01,492 --> 02:38:02,072
+Negative.
+
+887
+02:38:06,195 --> 02:38:07,515
+Positif numar, ok.
+
+888
+02:38:09,236 --> 02:38:10,195
+If no question,
+
+889
+02:38:13,075 --> 02:38:14,036
+let's look together.
+
+890
+02:38:19,092 --> 02:38:19,452
+Here
+
+891
+02:38:27,156 --> 02:38:33,136
+which condition? [öğrenci], be careful which condition is convergent?
+
+892
+02:38:35,656 --> 02:38:39,316
+Here, we use the integral test.
+
+893
+02:38:46,484 --> 02:38:52,004
+Consider, the function fx equals 1 over x to the p.
+
+894
+02:38:55,123 --> 02:39:01,764
+x is in the interval 1, infinity.
+
+895
+02:39:04,164 --> 02:39:07,524
+f on this interval continues,
+
+896
+02:39:09,764 --> 02:39:13,283
+positive and decreasing function.
+
+897
+02:39:17,299 --> 02:39:17,739
+Bye.
+
+898
+02:39:22,100 --> 02:39:37,819
+Integral test, from 1 to infinity, 1 over x to the p dx. We need the result of this improper integral.
+
+899
+02:39:42,355 --> 02:39:43,675
+İlhamit
+
+900
+02:39:51,667 --> 02:40:06,567
+Ve kalculate this definite integral, x to the minus p plus 1 over x minus p plus 1.
+
+901
+02:40:34,036 --> 02:40:36,796
+Okay, don't change.
+
+902
+02:40:39,316 --> 02:40:48,556
+A minus p plus one, minus one, A minus p plus one.
+
+903
+02:41:02,932 --> 02:41:29,692
+Now, pre-write, the denominator is a constant, we can write out of limit 1 over 1 minus p, limit a goes to infinity, a minus p plus 1 and minus 1.
+
+904
+02:41:33,075 --> 02:41:35,215
+Okay, we need this method.
+
+905
+02:41:40,755 --> 02:41:42,956
+Here, a goes to infinity.
+
+906
+02:41:43,796 --> 02:41:45,475
+a is positive number.
+
+907
+02:41:51,156 --> 02:41:55,156
+Bu konuda bu konuda.
+
+908
+02:42:00,340 --> 02:42:14,920
+[öğrenci], if the power is negative number, then limit is zero.
+
+909
+02:42:21,780 --> 02:42:28,140
+Eğer kerelerden bir kerelerden bir kerelerden bir kerelerden bir kerelerden bir kerelerden bir kerelerden bir kerelerden bir kerelerden bir kerelerden bir kerelerden bir kerelerden bir kerelerden bir kerelerden bir kerelerden bir kerelerden bir kerelerden bir kerelerden bir kerelerden bir kerelerden bir kerelerden bir kerelerden bir kerelerden bir kerelerden bir kerelerden bir kerelerden bir kerelerden bir kerelerden bir kerelerden bir kerelerden bir kerelerden bir kerelerden bir kerelerden bir kerelerden bir kerelerden bir kerelerden bir kerelerden bir kerelerden bir kerelerden bir kerelerden bir kerelerden bir kerelerden bir kerelerden bir kerelerden bir kere
+
+910
+02:42:40,915 --> 02:42:41,355
+Here
+
+911
+02:42:41,355 --> 02:42:43,115
+If
+
+912
+02:42:49,556 --> 02:42:54,036
+between 0 and 1
+
+913
+02:42:57,940 --> 02:43:04,159
+Here, p 1, p 1.
+
+914
+02:43:05,600 --> 02:43:12,899
+If p between 0 and 1, this limit infinity.
+
+915
+02:43:14,720 --> 02:43:24,319
+If p 1, this limit is 1 over p minus 1.
+
+916
+02:43:28,564 --> 02:43:29,224
+Kıya, yunc.
+
+917
+02:43:40,115 --> 02:43:40,736
+Any question?
+
+918
+02:43:47,347 --> 02:43:47,727
+So.
+
+919
+02:43:53,780 --> 02:44:02,840
+Under this condition, improper integral is divergent, so our series is divergent.
+
+920
+02:44:06,140 --> 02:44:19,520
+If p 1, improper integral is a finite number, so our series becomes convergent series.
+
+921
+02:44:19,520 --> 02:44:27,520
+Therefore, let's write the result of this.
+
+922
+02:44:29,520 --> 02:44:30,520
+Therefore,
+
+923
+02:45:11,987 --> 02:45:12,927
+İntekal test.
+
+924
+02:45:17,747 --> 02:45:18,207
+Finally,
+
+925
+02:45:53,587 --> 02:45:54,507
+P-series.
+
+926
+02:45:58,611 --> 02:45:59,551
+M to the P.
+
+927
+02:46:11,156 --> 02:46:24,436
+if p between 0, 1, and equals 1, divergent.
+
+928
+02:46:24,436 --> 02:46:27,076
+This is spatial.
+
+929
+02:46:47,540 --> 02:46:48,120
+For example,
+
+930
+02:46:52,852 --> 02:47:10,372
+This is p-series, here p equals 2, so here p bigger than 1 is convergent series.
+
+931
+02:47:14,548 --> 02:47:15,528
+Another example.
+
+932
+02:47:20,979 --> 02:47:31,859
+This is another p-series, but here p equals 1 over 2, so the virgin series.
+
+933
+02:47:49,236 --> 02:47:52,916
+ve diğer dövürüm p-seri.
+
+934
+02:48:02,324 --> 02:48:03,244
+Evet, of course.
+
+935
+02:48:04,424 --> 02:48:05,224
+Finally,
+
+936
+02:49:37,396 --> 02:49:38,976
+Evet [öğrenci].
+
+937
+02:49:42,176 --> 02:49:45,136
+Çünkü 5 bölü 2 birden büyük olması durumunda...
+
+938
+02:49:45,136 --> 02:49:48,436
+Nasıl da emin kendimden söyledim.
+
+939
+02:49:48,636 --> 02:49:49,336
+Çok haklısın.
+
+940
+02:49:49,855 --> 02:49:50,556
+Teşekkür ederim.
+
+941
+02:49:51,936 --> 02:49:56,176
+5 bölü 2 birden büyük olduğu için konuları yazmamız gerekiyordu.
+
+942
+02:49:56,275 --> 02:49:58,476
+Yakınsak seri demeliydik.
+
+943
+02:49:58,916 --> 02:49:59,736
+Teşekkür ederim.
+
+944
+02:50:01,076 --> 02:50:03,355
+Ben kendimdeki notları düzelttim.
+
+945
+02:50:03,456 --> 02:50:05,076
+Siz de kendikilerinizi düzeltin.
+
+946
+02:50:05,076 --> 02:50:06,636
+Tekrar kaydet dedim.
+
+947
+02:50:07,396 --> 02:50:08,716
+Ben hallettim.
+
+948
+02:50:11,896 --> 02:50:14,396
+Ama size gönderdikten sonra değiştirdim.
+
+949
+02:50:14,456 --> 02:50:15,456
+Bunu düzeltin lütfen.
+
+950
+02:50:15,456 --> 02:50:18,576
+Bir sonra.
+
+951
+02:50:26,004 --> 02:50:27,144
+İndirebildiniz mi?
+
+952
+02:50:33,172 --> 02:50:38,032
+Kendinize iyi, çok iyi bakın. Yarın görüşmek imediyle. Hoşçakalın.
+
+953
+02:50:42,195 --> 02:50:43,075
+Have a nice day.

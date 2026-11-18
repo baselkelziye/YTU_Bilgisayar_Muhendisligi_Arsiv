@@ -1,0 +1,2147 @@
+1
+00:00:14,484 --> 00:00:15,304
+Hello everybody!
+
+2
+00:00:25,908 --> 00:00:28,268
+Welcome to my lesson. How are you today?
+
+3
+00:01:02,868 --> 00:01:05,768
+Are you okay today? How are you?
+
+4
+00:01:16,340 --> 00:01:18,120
+What do you think about this lecture?
+
+5
+00:01:21,439 --> 00:01:24,240
+Is it difficult or not? What do you think?
+
+6
+00:01:25,159 --> 00:01:28,719
+Thank you, [öğrenci]. I am fine too. Thank you very much.
+
+7
+00:01:35,668 --> 00:01:36,908
+Good morning, [öğrenci].
+
+8
+00:01:46,451 --> 00:01:47,031
+[öğrenci].
+
+9
+00:01:55,284 --> 00:02:22,944
+If you are ready, we can start. Yesterday, we started to function solve several variables. Until the end of semester, we will deal with this subject. We will see limits of these functions, continuity, derivatives, partial derivatives,
+
+10
+00:02:22,944 --> 00:02:39,324
+and then integrals of them. If no question, we can start. Yesterday, we will give the definition of multivariable functions.
+
+11
+00:02:44,659 --> 00:02:48,419
+Ok, I think no question.
+
+12
+00:02:50,979 --> 00:02:51,780
+Let's start.
+
+13
+00:04:01,716 --> 00:04:02,316
+S1
+
+14
+00:04:10,644 --> 00:04:25,064
+ordered pair of real numbers x, y, and the subset d of r² 2.
+
+15
+00:04:32,307 --> 00:04:42,548
+A unique real number z on the real axis.
+
+16
+00:04:50,420 --> 00:04:58,040
+This function is denoyed 5z equals x, y.
+
+17
+00:05:04,915 --> 00:05:06,636
+Evet, iyi bakın.
+
+18
+00:05:10,932 --> 00:05:12,932
+to each ordered
+
+19
+00:05:15,972 --> 00:05:16,692
+number
+
+20
+00:05:20,532 --> 00:05:21,092
+z
+
+21
+00:05:21,812 --> 00:05:25,012
+is denoted by f of x y
+
+22
+00:05:26,612 --> 00:05:27,732
+here d
+
+23
+00:05:29,252 --> 00:05:32,052
+is called the domain of
+
+24
+00:05:35,652 --> 00:05:39,172
+f the subset of r squared
+
+25
+00:05:45,331 --> 00:05:47,331
+ZValues
+
+26
+00:05:58,004 --> 00:06:21,264
+Range of this function, range of f, domain is denoted by d of f, range of f, range of f, range of f is the set of the values set, response,
+
+27
+00:06:26,100 --> 00:06:30,939
+The elements of domain of F.
+
+28
+00:06:34,548 --> 00:06:49,108
+similar to function with single variables. Here x and y are called independent variables.
+
+29
+00:06:49,108 --> 00:07:01,427
+independent variables. That is called dependent variable.
+
+30
+00:07:07,827 --> 00:07:17,267
+This is the definition of function of two variables.
+
+31
+00:07:31,060 --> 00:07:36,579
+Every variable is defined similar way.
+
+32
+00:07:40,579 --> 00:07:46,100
+In this case, the function f assigns
+
+33
+00:07:54,355 --> 00:07:56,076
+x, y, z.
+
+34
+00:07:56,915 --> 00:08:00,855
+Here, d is a subset of r cubed,
+
+35
+00:08:01,735 --> 00:08:02,255
+d,
+
+36
+00:08:02,255 --> 00:08:07,735
+a unique real number,
+
+37
+00:08:08,795 --> 00:08:09,855
+r,
+
+38
+00:08:10,776 --> 00:08:13,896
+omega is denoted by f,
+
+39
+00:08:13,896 --> 00:08:15,776
+x, y, z.
+
+40
+00:08:20,019 --> 00:08:30,419
+Function of tree variable is a rule from the subset D of r cube to the r here.
+
+41
+00:08:34,259 --> 00:08:35,279
+x, y, z
+
+42
+00:08:35,279 --> 00:08:38,840
+is
+
+43
+00:08:38,840 --> 00:08:39,840
+independent
+
+44
+00:08:39,840 --> 00:08:40,759
+variable
+
+45
+00:08:40,759 --> 00:08:41,799
+independent
+
+46
+00:08:41,799 --> 00:08:42,799
+variable
+
+47
+00:08:46,067 --> 00:08:57,467
+İndependent variables. Omega is called dependent variable.
+
+48
+00:09:12,340 --> 00:09:18,940
+fx is a function of single variable.
+
+49
+00:09:25,460 --> 00:09:42,360
+For this single variable, graph of f is defined by the set of the points x f of x. Here x is domain of f.
+
+50
+00:09:45,844 --> 00:10:01,844
+If we consider a function of two variables, the graph of f is defined by the set of
+
+51
+00:10:07,827 --> 00:10:12,607
+x, y, f of x, y.
+
+52
+00:10:13,327 --> 00:10:15,427
+Here, x, y.
+
+53
+00:10:19,251 --> 00:10:21,211
+In the domain of F.
+
+54
+00:10:22,411 --> 00:10:24,572
+Here, domain is
+
+55
+00:10:24,572 --> 00:10:26,471
+subset of R.
+
+56
+00:10:27,391 --> 00:10:29,031
+Here, domain of
+
+57
+00:10:29,031 --> 00:10:32,591
+subset of R
+
+58
+00:10:32,591 --> 00:10:33,151
+square.
+
+59
+00:10:40,692 --> 00:10:51,412
+If the function f is a function of a single variable, the graph is f...
+
+60
+00:11:02,227 --> 00:11:07,607
+The graph of a function of f of two variable is a
+
+61
+00:11:13,556 --> 00:11:24,096
+Ağır, surface, ağır, square, ağır, surface, in, r, cube.
+
+62
+00:11:37,460 --> 00:11:39,560
+function of three variables.
+
+63
+00:11:45,235 --> 00:11:45,855
+If
+
+64
+00:11:52,628 --> 00:12:06,328
+x, y, z, f of x, y, z, here, x, y, z, v, upper, q.
+
+65
+00:12:08,468 --> 00:12:14,708
+And so, the graph is called
+
+66
+00:12:14,708 --> 00:12:19,708
+per surface.
+
+67
+00:12:27,700 --> 00:12:33,980
+We cannot draw it geometrically.
+
+68
+00:12:37,844 --> 00:12:38,604
+Any question?
+
+69
+00:12:59,059 --> 00:12:59,719
+No questions.
+
+70
+00:13:08,628 --> 00:13:14,588
+It is important to determine the domain of f.
+
+71
+00:13:20,563 --> 00:13:31,123
+Hmm, sorry, you are right to say it. We must write another letter, for example, omega. Thank you very much.
+
+72
+00:13:45,971 --> 00:13:52,851
+The set of domain is important.
+
+73
+00:13:55,172 --> 00:13:59,812
+We first determine the domain of a given function.
+
+74
+00:14:17,076 --> 00:14:23,475
+Function is given by a formula.
+
+75
+00:14:27,379 --> 00:14:30,500
+ve no domain
+
+76
+00:14:30,500 --> 00:14:33,860
+is
+
+77
+00:14:33,860 --> 00:14:35,799
+specified
+
+78
+00:14:42,067 --> 00:14:43,687
+Domain of F
+
+79
+00:14:43,687 --> 00:14:46,268
+Is
+
+80
+00:14:50,004 --> 00:14:50,484
+Good.
+
+81
+00:14:51,683 --> 00:14:53,244
+This is set of all.
+
+82
+00:14:59,475 --> 00:15:01,475
+Pairs, x, y,
+
+83
+00:15:01,475 --> 00:15:05,035
+4, 3, 4,
+
+84
+00:15:09,107 --> 00:15:14,107
+...
+
+85
+00:15:56,916 --> 00:15:58,916
+2 variable
+
+86
+00:16:01,916 --> 00:16:02,916
+böyle bir şey.
+
+87
+00:16:02,916 --> 00:16:10,916
+Bu bir şey.
+
+88
+00:16:10,916 --> 00:16:12,916
+0y
+
+89
+00:16:12,916 --> 00:16:14,916
+çünkü
+
+90
+00:16:14,916 --> 00:16:16,916
+xy
+
+91
+00:16:16,916 --> 00:16:17,916
+x
+
+92
+00:16:17,916 --> 00:16:18,916
+0
+
+93
+00:16:23,764 --> 00:16:31,163
+0, y, is next in the domain of this function.
+
+94
+00:16:37,940 --> 00:16:38,660
+Examples
+
+95
+00:16:44,659 --> 00:16:50,639
+Another function, root of y minus x squared.
+
+96
+00:16:54,259 --> 00:17:01,460
+This expression makes sense if y minus x zikar
+
+97
+00:17:05,236 --> 00:17:06,556
+non-negative number.
+
+98
+00:17:08,656 --> 00:17:10,796
+We can rewrite this inequality
+
+99
+00:17:10,796 --> 00:17:13,936
+like that.
+
+100
+00:17:15,476 --> 00:17:17,076
+This inequality
+
+101
+00:17:17,076 --> 00:17:19,756
+describes
+
+102
+00:17:19,756 --> 00:17:23,855
+the points
+
+103
+00:17:23,855 --> 00:17:26,976
+that
+
+104
+00:17:26,976 --> 00:17:29,056
+parabola
+
+105
+00:17:29,056 --> 00:17:30,116
+or
+
+106
+00:17:30,116 --> 00:17:34,716
+about this car.
+
+107
+00:17:41,940 --> 00:17:44,400
+This is the function of the variable.
+
+108
+00:17:52,660 --> 00:18:00,820
+Domain of f is this set.
+
+109
+00:18:03,140 --> 00:18:07,220
+You can rewrite like that.
+
+110
+00:18:20,051 --> 00:18:23,531
+No question. One more example.
+
+111
+00:18:34,836 --> 00:18:47,155
+is a rational function and it contains root square root function. So this formula is well defined
+
+112
+00:18:47,875 --> 00:18:52,996
+if denominator different from zero
+
+113
+00:18:55,635 --> 00:18:57,955
+and
+
+114
+00:18:59,731 --> 00:19:06,231
+x plus y plus 1, non-negative number.
+
+115
+00:19:10,228 --> 00:19:22,908
+That is x different from 1, and x plus y, bigger than and equal to minus 1.
+
+116
+00:19:31,635 --> 00:19:47,255
+Domain of this function is the set of all x, y, such that x, different from 1, x plus y, bigger than minus 1.
+
+117
+00:20:00,788 --> 00:20:16,827
+We need to draw this line. This line is passing through 0, minus 1, and minus 1, 0.
+
+118
+00:20:23,412 --> 00:20:27,372
+ve ne ile line x equals 1.
+
+119
+00:20:32,948 --> 00:20:39,948
+Bir de
+
+120
+00:20:53,971 --> 00:20:55,091
+Okay, iso.
+
+121
+00:20:57,432 --> 00:20:59,132
+Yeah, thank you.
+
+122
+00:21:04,596 --> 00:21:08,536
+Be correct this. Be careful here.
+
+123
+00:21:13,811 --> 00:21:19,692
+Ok, we determine the range of t.
+
+124
+00:21:35,731 --> 00:21:47,491
+domain consists of the points on the line x plus y equals minus one and
+
+125
+00:22:24,980 --> 00:22:40,680
+Z equals 1 over xy, domain equals xy, such that x different from 0, y different from 0.
+
+126
+00:22:40,680 --> 00:22:47,680
+So, x equals 0 line is y-axis.
+
+127
+00:22:47,680 --> 00:22:55,620
+So, like that, and another x-axis.
+
+128
+00:23:25,811 --> 00:23:47,051
+Z equals sin x y, sin x y, sin function is defined on real axis, so domain of this function is entire plane, r squared.
+
+129
+00:23:54,483 --> 00:23:56,483
+Y² Z².
+
+130
+00:23:56,483 --> 00:23:59,483
+Bu function
+
+131
+00:23:59,483 --> 00:24:01,483
+İngiltere alınçı
+
+132
+00:24:01,483 --> 00:24:02,483
+Röntgen,
+
+133
+00:24:02,483 --> 00:24:54,463
+Bu
+
+134
+00:24:38,259 --> 00:24:45,259
+ve
+
+135
+00:24:42,612 --> 00:25:12,312
+This function is a function of three variables. So this domain of this function is subset of r cube. Be careful. So d is the set of all x, y, z such that z bigger than zero.
+
+136
+00:25:12,612 --> 00:25:22,872
+In space, z equals zero represented.
+
+137
+00:25:28,339 --> 00:25:31,179
+Svipe, plain.
+
+138
+00:25:35,635 --> 00:25:36,135
+So.
+
+139
+00:25:42,804 --> 00:25:46,024
+İz set is...
+
+140
+00:26:11,124 --> 00:26:11,703
+Any questions?
+
+141
+00:26:19,955 --> 00:26:20,955
+Bir daha önce bir örnek.
+
+142
+00:26:29,491 --> 00:26:42,372
+a function of two variable, this is a function of two variable, so d is the set of all x, y, such that
+
+143
+00:26:48,500 --> 00:26:54,500
+So, x squared, y squared,
+
+144
+00:26:57,380 --> 00:27:00,579
+smaller than and equal to 1.
+
+145
+00:27:05,940 --> 00:27:21,940
+X² Y² equals 1 represents a circle with centered origin and reduce r.
+
+146
+00:27:21,940 --> 00:27:31,940
+We can draw in space like that and...
+
+147
+00:27:34,644 --> 00:27:36,644
+İntro
+
+148
+00:27:45,044 --> 00:27:47,084
+Last example.
+
+149
+00:27:51,028 --> 00:27:55,347
+ln y²-x.
+
+150
+00:27:57,347 --> 00:28:00,307
+This is another function of two variables.
+
+151
+00:28:02,387 --> 00:28:06,387
+This contains natural logarithm function.
+
+152
+00:28:07,107 --> 00:28:13,508
+Natural logarithm function is defined by just positive numbers.
+
+153
+00:28:18,387 --> 00:28:21,507
+X and Y satisfy these inequalities.
+
+154
+00:28:26,132 --> 00:28:35,971
+We need y² equals x, the graph of this function, this parabola, we know this.
+
+155
+00:28:40,435 --> 00:28:44,435
+Bu da böyle.
+
+156
+00:28:44,435 --> 00:28:50,435
+Ve y²'e daha büyük bir daha.
+
+157
+00:28:50,435 --> 00:28:52,435
+X.
+
+158
+00:28:57,011 --> 00:29:00,451
+So, right side or left side? What do you think?
+
+159
+00:29:16,948 --> 00:29:20,168
+Evet, let's look together.
+
+160
+00:29:25,491 --> 00:29:29,211
+Say it, be careful about last question.
+
+161
+00:29:30,351 --> 00:29:34,132
+First, we can look previous example.
+
+162
+00:29:40,147 --> 00:29:43,747
+[öğrenci],
+
+163
+00:29:43,747 --> 00:29:47,507
+you ask last question or previous question?
+
+164
+00:29:47,987 --> 00:29:49,747
+Previous, yes, I saw.
+
+165
+00:29:50,647 --> 00:29:51,227
+This is,
+
+166
+00:29:52,427 --> 00:29:54,587
+this function is two variables.
+
+167
+00:29:55,687 --> 00:29:56,167
+Yes.
+
+168
+00:30:00,000 --> 00:30:04,019
+We can draw the set of domain of.
+
+169
+00:30:06,359 --> 00:30:09,539
+We want to determine domain of.
+
+170
+00:30:16,884 --> 00:30:33,384
+We want to draw, we want to determine domain of f. Domain of f is the subset of r², because of this function is this function of two variables.
+
+171
+00:30:46,932 --> 00:30:52,872
+İso, sorry, we must write in plain, sorry.
+
+172
+00:30:58,900 --> 00:31:01,340
+Evet, thank you.
+
+173
+00:31:02,540 --> 00:31:03,380
+And here,
+
+174
+00:31:05,220 --> 00:31:06,259
+for example,
+
+175
+00:31:09,420 --> 00:31:12,740
+say it, for example, we consider this point,
+
+176
+00:31:15,500 --> 00:31:20,120
+this point is satisfied this inequality or not?
+
+177
+00:31:20,500 --> 00:31:21,280
+What do you think?
+
+178
+00:31:31,604 --> 00:31:40,463
+No, so domain of this function is set.
+
+179
+00:31:54,836 --> 00:31:56,836
+Bir dakika.
+
+180
+00:32:05,460 --> 00:32:09,579
+I will give you more example about this subject.
+
+181
+00:33:17,107 --> 00:33:18,107
+Can you see?
+
+182
+00:33:19,907 --> 00:33:21,907
+I think they are little.
+
+183
+00:33:39,476 --> 00:33:43,156
+Gençler çok küçük görülüyor ama görebiliyor musunuz, göremiyor musunuz?
+
+184
+00:33:49,076 --> 00:33:54,135
+[öğrenci] çok küçük değil mi? Şu anda ama yapıştırır yapıştırmaz da düzeltemedim bir daha.
+
+185
+00:33:55,076 --> 00:33:56,615
+Bir şöyle bir geri alacağım, pardon.
+
+186
+00:34:13,652 --> 00:34:14,492
+Sıra dönüm.
+
+187
+00:34:27,764 --> 00:34:29,844
+Hazır pdf yok da onun için [öğrenci].
+
+188
+00:34:31,664 --> 00:34:35,864
+Sizin için hazırladıklarımın hepsini böyle üst üste koydum, karışık durumdalar.
+
+189
+00:34:56,019 --> 00:34:57,099
+Sanki böyle daha iyi oldu.
+
+190
+00:34:57,840 --> 00:34:58,320
+Tamam.
+
+191
+00:35:50,739 --> 00:35:53,059
+Bir dakika seferi PDF olarak hazırlayıp göndereceğim.
+
+192
+00:35:54,500 --> 00:35:55,899
+Gençler, haklısınız.
+
+193
+00:35:56,599 --> 00:35:58,019
+Zaman kaybettirdim bize.
+
+194
+00:36:41,492 --> 00:36:54,252
+Gençler, hepsi çok kolay sorular ama sonuçta sınavda gelebilen tarzda sorular olduğu için sizin de çeşitleri görmenizi istedim ama hepsini yapmak da maalesef mümkün değil derste.
+
+195
+00:36:55,032 --> 00:36:58,612
+Buraya bakıyorum bazılarını yaptığımız sorular.
+
+196
+00:37:00,192 --> 00:37:01,632
+Şöyle bir bakarsınız siz.
+
+197
+00:37:03,412 --> 00:37:07,292
+Zor değiller ama bakmanız gereken sorular.
+
+198
+00:37:07,292 --> 00:37:12,012
+Anlamadığınız takdirde sadece o sorulara tekrar bakarız.
+
+199
+00:37:14,412 --> 00:37:18,112
+Şimdi burada da varmış sinüs fonksiyon,
+
+200
+00:37:19,312 --> 00:37:20,152
+İçinci yorum,
+
+201
+00:37:21,352 --> 00:37:22,372
+Rasyonel fonksiyon,
+
+202
+00:37:22,492 --> 00:37:24,292
+Logaritim fonksiyon ve de
+
+203
+00:37:24,292 --> 00:37:26,512
+Karaköklü fonksiyon. Hepsi bir arada mesela.
+
+204
+00:37:26,632 --> 00:37:27,632
+14. soruda.
+
+205
+00:37:28,211 --> 00:37:29,432
+Bu bir sınav sorusu.
+
+206
+00:37:33,331 --> 00:37:38,051
+14th example is an exam question.
+
+207
+00:37:42,643 --> 00:37:44,883
+Ok, ikan continue.
+
+208
+00:37:49,492 --> 00:37:49,972
+No
+
+209
+00:37:54,068 --> 00:37:56,068
+We can give...
+
+210
+00:37:58,068 --> 00:38:00,068
+...
+
+211
+00:38:04,628 --> 00:38:05,628
+vekutum.
+
+212
+00:38:19,764 --> 00:38:22,764
+Açık bir fücüsü var.
+
+213
+00:38:22,764 --> 00:38:29,764
+Bu fücüsü var.
+
+214
+00:38:29,764 --> 00:38:31,764
+Eksiyonu var.
+
+215
+00:38:35,891 --> 00:38:39,911
+of x, y, and use this.
+
+216
+00:38:47,987 --> 00:38:59,507
+find for all xy in r². So, domain of this function
+
+217
+00:39:03,507 --> 00:39:23,268
+We want to draw the graph of this function. The graph of f is the set of x, y, z. Z equals f of x, y.
+
+218
+00:39:23,268 --> 00:39:42,347
+f of x, y. So, we can set z equals 6, 3x, 3y. So, this is a special equation.
+
+219
+00:39:49,556 --> 00:39:55,476
+This equation represents in space.
+
+220
+00:39:58,036 --> 00:40:02,115
+What do you think this special equation?
+
+221
+00:40:09,715 --> 00:40:27,255
+Evet, say it, this is true. 3x plus 2y plus z equals 6 represents a plane in space.
+
+222
+00:40:30,835 --> 00:40:32,355
+Andro this plane
+
+223
+00:40:32,355 --> 00:40:37,675
+by determining
+
+224
+00:40:37,675 --> 00:40:40,596
+the intersection points
+
+225
+00:40:40,596 --> 00:40:41,195
+with
+
+226
+00:40:41,195 --> 00:40:44,315
+coordinate planes.
+
+227
+00:40:53,300 --> 00:40:59,360
+x0 y0 z equals 6.
+
+228
+00:40:59,360 --> 00:41:05,019
+This plane intersects the point 0, 0, 6.
+
+229
+00:41:06,660 --> 00:41:12,160
+If x0 z0 y equals 3.
+
+230
+00:41:12,160 --> 00:41:26,160
+So this plane intersects the point 0, 3, 0, 5, x.
+
+231
+00:41:32,467 --> 00:41:41,067
+200, 030, 06,
+
+232
+00:42:34,643 --> 00:42:35,243
+Any question?
+
+233
+00:42:42,516 --> 00:42:47,596
+No question, I'll give you another special equation.
+
+234
+00:42:49,336 --> 00:42:51,456
+Sketch the graph of
+
+235
+00:42:59,284 --> 00:43:03,023
+Nein, minus x fukar, minus y fukar.
+
+236
+00:43:08,403 --> 00:43:22,523
+No, this is not triangle plane. Say it. We can draw this plane just in the first octant. Yes, of course.
+
+237
+00:43:26,643 --> 00:43:28,343
+bu plana is like that.
+
+238
+00:43:46,291 --> 00:43:47,771
+function is given.
+
+239
+00:43:52,500 --> 00:44:03,860
+Graph of this function is the set of all x, y, z, such that z eq is square root of
+
+240
+00:44:15,891 --> 00:44:23,331
+If we want to determine domain of f, domain of f is the set of x, y, such that,
+
+241
+00:44:25,951 --> 00:44:27,051
+bigger than zero.
+
+242
+00:44:28,051 --> 00:44:28,251
+So,
+
+243
+00:44:30,091 --> 00:44:30,731
+this is,
+
+244
+00:44:35,476 --> 00:44:58,756
+Kull-K
+
+245
+00:45:04,275 --> 00:45:06,655
+What does this equation represent?
+
+246
+00:45:20,659 --> 00:45:26,159
+What do you think about this equation? [öğrenci], what do you think?
+
+247
+00:45:30,900 --> 00:45:43,400
+Evet, bu, çünkü, y², z², y², z², 9.
+
+248
+00:45:46,139 --> 00:45:52,160
+So, this represents a square.
+
+249
+00:45:52,160 --> 00:46:02,559
+But, be careful, z must be a positive number.
+
+250
+00:46:11,891 --> 00:46:22,211
+So, and z must be positive number, so this represents yes.
+
+251
+00:46:26,643 --> 00:46:27,623
+Of, süper.
+
+252
+00:46:33,748 --> 00:46:37,588
+Now we can do like that. This is domain.
+
+253
+00:46:59,476 --> 00:47:02,256
+Entry, reduce, 3.
+
+254
+00:47:11,059 --> 00:47:11,539
+Evet.
+
+255
+00:48:17,780 --> 00:48:23,300
+Right Level Carviss.
+
+256
+00:48:34,452 --> 00:48:35,032
+Mürveti.
+
+257
+00:48:44,052 --> 00:48:52,152
+A graph of a function of two waves.
+
+258
+00:49:01,715 --> 00:49:16,675
+if the given function is not special function, so be used to level curves. What is the level curves?
+
+259
+00:49:32,403 --> 00:49:38,903
+Fxy equals C.
+
+260
+00:49:51,956 --> 00:49:52,796
+Constants.
+
+261
+00:50:00,628 --> 00:50:07,628
+ve
+
+262
+00:50:24,596 --> 00:50:33,715
+because there vertical projection
+
+263
+00:50:38,387 --> 00:50:41,387
+So, the xy-plane
+
+264
+00:50:41,387 --> 00:50:45,347
+of the curves
+
+265
+00:54:38,963 --> 00:54:43,503
+Gençler, sadece ben mi koptu mu yoksa sizin sorunun çıktı mı?
+
+266
+00:54:56,244 --> 00:54:58,504
+Sadece benden mi kaynaklandığı sorun gençler?
+
+267
+00:54:58,704 --> 00:55:00,224
+Benim internetim mi gitti geldi?
+
+268
+00:55:00,504 --> 00:55:01,244
+Onu anlayamadım.
+
+269
+00:55:01,364 --> 00:55:03,144
+Yoksa sistemle ilgili bir sorun mu vardı?
+
+270
+00:55:06,064 --> 00:55:08,423
+Çünkü baktım ki benim internetim kopmuş.
+
+271
+00:55:09,024 --> 00:55:10,864
+Benden kaynaklandığını düşünüyorum çünkü.
+
+272
+00:55:13,744 --> 00:55:14,423
+Tamam.
+
+273
+00:55:14,864 --> 00:55:17,184
+Beni sanırım duyabiliyorsunuz.
+
+274
+00:55:17,304 --> 00:55:18,804
+Şu anda sorun yok gibi görünüyor.
+
+275
+00:55:19,604 --> 00:55:19,824
+Tamam.
+
+276
+00:55:20,064 --> 00:55:21,504
+Ben de öyle düşünmüştüm [öğrenci].
+
+277
+00:55:21,504 --> 00:55:26,963
+Şimdi bize bir z-trafiksiye gibi bir fonksiyon verildi.
+
+278
+00:55:32,563 --> 00:55:42,563
+Ve bunun grafiğini belirlemenin yeni bir yolunu göreceğiz. Eğer verilen fonksiyon özel bir fonksiyon değilse onun grafiğini çizemeyebiliriz.
+
+279
+00:55:42,943 --> 00:55:48,183
+İşte bu durumda seviye eğrileri adını verdiğimiz bu eğrileri çizeriz.
+
+280
+00:55:48,743 --> 00:55:58,183
+Seviye eğrileri dediğimiz eğriler bize verilen fonksiyonun formülünü sabite eşitleyerek yazdığımız eğrileri diyoruz.
+
+281
+00:55:58,183 --> 00:56:01,503
+C'ler herhangi sabit sayılar, herhangi.
+
+282
+00:56:01,903 --> 00:56:03,023
+Fx'ye eşittir C.
+
+283
+00:56:03,364 --> 00:56:07,483
+Tabii eşitliğin sol tarafı x kare artı yakare ise tabii ki pozitif C sabitleri olacak.
+
+284
+00:56:07,963 --> 00:56:12,783
+Vereceğiniz C sabitleri anlamda olacak, mantıklı olacak tabii ki.
+
+285
+00:56:13,223 --> 00:56:16,583
+Fx'ye eşittir C biçimindeki tüm eğrileri seviye eğrisi diyoruz.
+
+286
+00:56:16,803 --> 00:56:18,243
+Peki niye bunu diyoruz?
+
+287
+00:56:18,663 --> 00:56:20,844
+Bunun adı niye seviye eğrisi oluyor?
+
+288
+00:56:20,844 --> 00:56:25,283
+Çünkü bize bir yüzey veriliyor.
+
+289
+00:56:25,283 --> 00:56:43,723
+O yüzeyin Z eşittir C düzlemleriyle ara kesitlerini oluşturduğu eğrilerin x'ye düzlemi üzerine dikey iz düş cümleridir bunlar.
+
+290
+00:56:45,003 --> 00:56:46,023
+Evet, söyle.
+
+291
+00:56:46,023 --> 00:56:48,723
+Evet, tabii ki.
+
+292
+00:56:48,723 --> 00:56:51,703
+Öncelikle Türkçe ve İngilizce.
+
+293
+00:56:57,396 --> 00:57:01,396
+Önce Türkçe bir kere daha tekrar etmek istiyorum.
+
+294
+00:57:01,396 --> 00:57:12,396
+Bize verilmiş olan şekil üzerinde yapalım. Biraz önce bize bir tane ne verildi? Bildiğimiz bir şey üzerinden devam edelim. Z eşittir.
+
+295
+00:57:21,396 --> 00:57:27,516
+Bu denklem verildi ve bu denklem şeklini biraz önce görmüştük zaten.
+
+296
+00:57:28,036 --> 00:57:30,876
+Kendimiz çizebilmiştik.
+
+297
+00:57:31,476 --> 00:57:32,416
+Üst yarım küreydi.
+
+298
+00:57:33,416 --> 00:57:41,115
+Eğer biz bunu z eşittir 2 ile 2 düzlemi ile kesersek,
+
+299
+00:57:48,500 --> 00:57:57,860
+Z eşittir 2 düzlemiyle kesersek, o zaman bu şekilde bir çember elde ederiz. Bu çemberi iz düşürürsek,
+
+300
+00:58:00,360 --> 00:58:09,880
+X'ye düzleminde böyle bir çember erisi olur. Burada başka bir düzlemle keselim. Z eşittir 2,5 düzlemle keselim.
+
+301
+00:58:09,880 --> 00:58:18,179
+Onu iz düşürdüğümüz zaman bu şekilde olur. Bunların seviye eğriliğinin X'ye düzlemindeki görüntüleri iç içe geçmiş.
+
+302
+00:58:18,500 --> 00:58:20,780
+Yembelir olacaktır.
+
+303
+00:58:27,539 --> 00:58:28,139
+Say it.
+
+304
+00:58:29,739 --> 00:58:31,440
+This level
+
+305
+00:58:32,539 --> 00:58:33,139
+curves
+
+306
+00:58:34,639 --> 00:58:35,539
+level curves
+
+307
+00:58:35,739 --> 00:58:37,340
+are vertical
+
+308
+00:58:37,840 --> 00:58:38,940
+projections
+
+309
+00:58:39,840 --> 00:58:41,239
+onto xy plane
+
+310
+00:58:47,635 --> 00:58:48,355
+Körbüs.
+
+311
+00:58:52,371 --> 00:59:05,692
+These curves are intersects the graph of f function and z equals g c planes.
+
+312
+00:59:13,427 --> 00:59:40,147
+For example, we want to graph of this function. We first determine level curves. Level curves is defined by right c instead of z in the equation.
+
+313
+00:59:40,147 --> 00:59:57,188
+And then determine these curves. If we squared both sides, we find x square plus y square equals 9 minus c square.
+
+314
+00:59:57,188 --> 01:00:14,188
+Here c is arbitrary real number. Here c is between 0 and 3.
+
+315
+01:00:17,811 --> 01:00:25,911
+If c equals 0, we find x2 plus y2 equals 9.
+
+316
+01:00:31,188 --> 01:00:32,188
+Bu bir çizgi.
+
+317
+01:00:34,807 --> 01:00:36,288
+Bir çizgi.
+
+318
+01:00:44,211 --> 01:00:48,132
+vertical projection
+
+319
+01:00:52,371 --> 01:00:56,371
+xy-plane
+
+320
+01:01:15,668 --> 01:01:24,168
+This is the intersection curves.
+
+321
+01:01:27,443 --> 01:01:33,603
+Z equals f of xy, and Z equals c.
+
+322
+01:01:40,436 --> 01:01:41,976
+What is that, Akkuz?
+
+323
+01:01:46,931 --> 01:01:53,091
+Here, c equals 0. c equals 0, xy-plane.
+
+324
+01:01:53,091 --> 01:01:54,571
+So,
+
+325
+01:01:58,068 --> 01:02:05,668
+Z plus y squared equals 9.
+
+326
+01:02:05,668 --> 01:02:07,988
+Here C equals 0.
+
+327
+01:02:08,788 --> 01:02:13,268
+If we consider C equals 1,
+
+328
+01:02:14,148 --> 01:02:18,548
+we find x plus y squared equals 8.
+
+329
+01:02:19,588 --> 01:02:21,108
+This is another circle
+
+330
+01:02:23,028 --> 01:02:25,828
+with radius to root 2.
+
+331
+01:02:29,780 --> 01:02:43,820
+If we consider c equals, yes, first two, we can determine, five.
+
+332
+01:02:49,876 --> 01:02:51,876
+Here, c equals
+
+333
+01:03:03,059 --> 01:03:10,739
+if we consider c equals 3, p.Origin.
+
+334
+01:03:37,204 --> 01:03:47,164
+Eğer denetemine level kurvus, we can sketch the graph of the given function.
+
+335
+01:03:49,264 --> 01:03:52,164
+So, we think if we...
+
+336
+01:03:55,891 --> 01:04:23,891
+...
+
+337
+01:04:10,516 --> 01:04:13,296
+If we consider z equals one plane,
+
+338
+01:04:20,211 --> 01:04:21,891
+Bir unit
+
+339
+01:04:21,891 --> 01:04:27,211
+ve
+
+340
+01:04:27,211 --> 01:04:31,132
+bu
+
+341
+01:04:31,132 --> 01:04:49,211
+bir
+
+342
+01:04:37,652 --> 01:04:47,652
+Z equals 2 plane, we lift up 2 units and we get this.
+
+343
+01:04:54,164 --> 01:05:11,564
+If we consider z equals 3, we have origin, that means this point, and we join these curves.
+
+344
+01:05:15,795 --> 01:05:19,755
+Finally, we get half square.
+
+345
+01:05:21,255 --> 01:05:22,875
+Gençler, sorun var mı?
+
+346
+01:05:24,395 --> 01:05:25,395
+Burası zordur.
+
+347
+01:05:36,947 --> 01:05:37,547
+more example.
+
+348
+01:05:39,947 --> 01:05:41,927
+Soru gelmediğine göre anlaşıldı.
+
+349
+01:05:52,851 --> 01:05:53,291
+Level
+
+350
+01:05:58,164 --> 01:06:05,024
+F of x, y equals x squared plus y squared.
+
+351
+01:06:06,024 --> 01:06:09,624
+And then, sketch.
+
+352
+01:06:22,516 --> 01:06:29,516
+To determine level curves, we write c instead of z in the equation.
+
+353
+01:06:37,523 --> 01:06:49,623
+They describe a family of circles, which receive positive numbers. If c equals zero, we get origin.
+
+354
+01:06:56,275 --> 01:06:57,275
+Teşekkürler.
+
+355
+01:07:01,076 --> 01:07:04,596
+E equals 1, you get this circle.
+
+356
+01:07:11,347 --> 01:07:12,708
+first origin.
+
+357
+01:07:14,307 --> 01:07:16,867
+We must sketch this level curves.
+
+358
+01:07:17,827 --> 01:07:23,587
+They are in the plane R square.
+
+359
+01:07:28,052 --> 01:07:28,992
+Like that.
+
+360
+01:07:29,892 --> 01:07:32,852
+This is z equals 1.
+
+361
+01:07:34,271 --> 01:07:40,572
+This corresponds to c equals 2, c equals 3, c equals 4.
+
+362
+01:07:40,572 --> 01:07:41,852
+Like that.
+
+363
+01:07:51,155 --> 01:07:54,155
+İlk olarak,
+
+364
+01:07:54,155 --> 01:07:58,155
+o projektion on the xy-plane
+
+365
+01:08:06,164 --> 01:08:29,744
+This is intersection of the graph of f and xy plane. This is xy plane. This is z equals this curve. This curve corresponds to z equals one plane.
+
+366
+01:08:29,744 --> 01:08:57,744
+First, we are in the origin. And then, we lift up just one unit and we draw a circle with radius one unit. And then, we get this another circle. This circle is
+
+367
+01:08:57,744 --> 01:09:18,744
+between the intersection of the graph of f and z equals two plane. So, we lift up the graph of two units and we draw a circle with radius two. And then,
+
+368
+01:09:22,228 --> 01:09:29,228
+3 unit, 4 unit, ve
+
+369
+01:09:35,796 --> 01:09:37,516
+Join this
+
+370
+01:09:41,395 --> 01:09:45,475
+We obtain a paraboloid.
+
+371
+01:09:51,923 --> 01:09:54,083
+The graph of given function is
+
+372
+01:10:07,507 --> 01:10:08,507
+Bir soru?
+
+373
+01:10:30,163 --> 01:10:36,163
+Gençler yoldunuz mu? Bir kısa bir ara verip sonra devam edebiliriz ya da bir 30 dakika daha devam edebiliriz.
+
+374
+01:10:36,663 --> 01:10:37,543
+Do you need a break?
+
+375
+01:10:39,224 --> 01:10:40,503
+Or we can continue.
+
+376
+01:10:51,507 --> 01:10:55,947
+Peki, bir 10 dakikada verelim. Ondan sonra bir yarım saat daha ders yaparız.
+
+377
+01:10:57,768 --> 01:10:58,028
+Tamam.
+
+378
+01:10:59,167 --> 01:11:00,127
+See you later.
+
+379
+01:20:00,000 --> 01:20:04,319
+We get the definition of level curves.
+
+380
+01:20:09,652 --> 01:20:21,652
+Level curves are vertical projections of intersections of z and z equals c.
+
+381
+01:20:23,492 --> 01:20:29,652
+Now we will give level surfaces.
+
+382
+01:20:34,899 --> 01:20:41,899
+Fakat bu şekilde bu şekilde
+
+383
+01:20:41,899 --> 01:20:48,420
+bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu
+
+384
+01:20:52,180 --> 01:21:16,020
+In the space, the surface f , y, z equals c, or various values for c constant, are called,
+
+385
+01:21:20,884 --> 01:21:21,904
+Level surface.
+
+386
+01:21:26,579 --> 01:21:27,439
+function
+
+387
+01:21:35,347 --> 01:21:37,347
+3.5.
+
+388
+01:21:39,347 --> 01:21:41,347
+Eksiyon,
+
+389
+01:21:42,347 --> 01:21:44,347
+bu şekilde
+
+390
+01:21:44,347 --> 01:21:46,347
+level surfaces
+
+391
+01:21:50,579 --> 01:21:51,579
+Yeni bir şey.
+
+392
+01:21:55,220 --> 01:22:01,800
+f of x, y, z, eq, x, y, z, z, y, z, z, z.
+
+393
+01:22:05,332 --> 01:22:16,572
+Define level surfaces, write C instead of omega in the equation.
+
+394
+01:22:29,619 --> 01:22:30,159
+Bir get.
+
+395
+01:22:35,636 --> 01:22:41,136
+Sfere, of radius c, centered at origin.
+
+396
+01:22:50,676 --> 01:23:02,396
+Every z constant level surface is a sphere in space.
+
+397
+01:23:04,396 --> 01:23:05,276
+That's all.
+
+398
+01:23:11,412 --> 01:23:11,992
+Any question?
+
+399
+01:23:20,435 --> 01:23:32,435
+Şimdi, birçok cilindersi var.
+
+400
+01:23:32,435 --> 01:23:48,435
+Ve çöğretmenin birçok cilindersi var.
+
+401
+01:23:57,939 --> 01:23:58,899
+Silinders
+
+402
+01:24:08,404 --> 01:24:12,304
+Silindir the surface.
+
+403
+01:24:20,115 --> 01:24:20,615
+Teşekkürler.
+
+404
+01:24:23,859 --> 01:24:25,119
+Güzel, cidbiz.
+
+405
+01:24:31,188 --> 01:24:32,608
+Moving a straight line.
+
+406
+01:24:36,020 --> 01:24:36,500
+Hello.
+
+407
+01:24:38,760 --> 01:24:40,100
+Ey, ki vun.
+
+408
+01:24:54,644 --> 01:24:55,784
+Holding line
+
+409
+01:25:02,355 --> 01:25:06,355
+vekizli
+
+410
+01:25:11,604 --> 01:25:13,204
+This girl is called
+
+411
+01:25:16,884 --> 01:25:19,923
+Generating curve for cylinder.
+
+412
+01:25:21,043 --> 01:25:22,604
+This is called
+
+413
+01:25:30,612 --> 01:25:33,771
+Generated, Generatinger.
+
+414
+01:25:46,836 --> 01:25:51,996
+Y equals X square, represents,
+
+415
+01:25:54,315 --> 01:25:54,476
+M
+
+416
+01:25:54,476 --> 01:25:57,396
+Cylinder
+
+417
+01:26:04,275 --> 01:26:06,275
+...
+
+418
+01:26:17,300 --> 01:26:39,720
+Y equals x square, this cylinder lies y equals x square parabola, this cylinder is parallel to z axis, because z is absent, and so this represents a cylinder.
+
+419
+01:26:39,720 --> 01:26:49,199
+Another example, this surface, z equals x square.
+
+420
+01:26:51,279 --> 01:27:08,199
+Z equals x square, is another parabolic cylinder, because this surface is generated by a parabola, z equals x parabola, this is z equals x parabola.
+
+421
+01:27:08,199 --> 01:27:18,640
+In this equation, y is absent, so this cylinder is parallel to y axis.
+
+422
+01:27:26,868 --> 01:27:50,868
+Another example, circular cylinder, for example x² y² equals 1, or another number 4. This is another cylinder in space.
+
+423
+01:27:56,307 --> 01:28:26,307
+Bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu
+
+424
+01:28:49,492 --> 01:28:54,092
+Bir daha.
+
+425
+01:29:04,532 --> 01:29:06,452
+İkruş, por exemplo,
+
+426
+01:29:17,395 --> 01:29:19,395
+bu
+
+427
+01:29:23,859 --> 01:29:30,899
+Here, generating curve is x square plus z square circle.
+
+428
+01:29:34,868 --> 01:29:41,868
+ve
+
+429
+01:29:58,931 --> 01:29:59,931
+No question.
+
+430
+01:30:02,211 --> 01:30:04,931
+Ander surface is quadratic surface.
+
+431
+01:30:10,228 --> 01:30:12,228
+We have this table.
+
+432
+01:30:13,427 --> 01:30:19,427
+This is ellipsoid, elliptical paraboloid, elliptical cony, hyperboloid,
+
+433
+01:30:22,627 --> 01:30:25,667
+hyperbolic, parabolid,
+
+434
+01:30:28,228 --> 01:30:29,028
+like that.
+
+435
+01:30:30,307 --> 01:30:31,988
+Let's give an example.
+
+436
+01:30:34,068 --> 01:30:35,828
+For example, this is
+
+437
+01:30:39,859 --> 01:30:42,679
+Z-car-eqo-sak, represent
+
+438
+01:30:48,724 --> 01:30:49,564
+Elipsoit.
+
+439
+01:30:54,100 --> 01:30:58,820
+Çünkü, we can rewrite this equal like that.
+
+440
+01:31:00,900 --> 01:31:11,300
+If we divide by 36, we get 9, we get 4, we get...
+
+441
+01:31:19,988 --> 01:31:24,668
+x equals 0, we get elips.
+
+442
+01:31:27,764 --> 01:31:31,703
+X equals zero means y z plane.
+
+443
+01:31:33,444 --> 01:31:38,804
+If y equals zero, we get another ellipse.
+
+444
+01:31:42,579 --> 01:31:44,800
+If we write zero instead of z,
+
+445
+01:31:49,140 --> 01:31:51,140
+xy-plane
+
+446
+01:31:51,140 --> 01:31:53,140
+we get another
+
+447
+01:31:53,140 --> 01:31:55,140
+elipse
+
+448
+01:31:55,140 --> 01:31:57,140
+so
+
+449
+01:31:57,140 --> 01:32:01,140
+if x
+
+450
+01:32:01,140 --> 01:32:03,140
+equals 0, y equals 0, z
+
+451
+01:32:03,140 --> 01:32:05,140
+equals
+
+452
+01:32:08,243 --> 01:32:11,943
+0, 0, no, sorry.
+
+453
+01:32:20,979 --> 01:32:22,979
+İki bu point.
+
+454
+01:32:37,268 --> 01:32:42,028
+Bu bir elbis, bir elbis, bir elbis.
+
+455
+01:32:48,372 --> 01:33:18,351
+vekikten sonra,
+
+456
+01:33:22,387 --> 01:33:26,948
+ellipse, and coordinate,
+
+457
+01:33:29,587 --> 01:33:30,228
+lanes.
+
+458
+01:33:33,492 --> 01:33:35,851
+Any question about ellipsoid?
+
+459
+01:33:42,771 --> 01:33:43,391
+Merhaba, [öğrenci].
+
+460
+01:33:49,268 --> 01:33:54,268
+A2, Y2, B2.
+
+461
+01:33:57,268 --> 01:33:58,268
+Z over C.
+
+462
+01:34:01,747 --> 01:34:14,147
+Can write general form of x, ellipsoid, x square, a square, y square, b square, z square, c square, plus 1.
+
+463
+01:34:14,527 --> 01:34:21,747
+This is the general form, ellipsoid, this is the parabola 8, because...
+
+464
+01:34:28,307 --> 01:34:33,608
+For example, 4x square plus y square equals z.
+
+465
+01:34:41,492 --> 01:34:42,872
+Y equals 0,
+
+466
+01:34:46,252 --> 01:34:48,971
+we can this parabola.
+
+467
+01:34:49,891 --> 01:34:51,252
+If equals 0,
+
+468
+01:34:53,492 --> 01:34:57,052
+we can find another parabola.
+
+469
+01:34:59,692 --> 01:35:01,731
+Y equals 0 means
+
+470
+01:35:03,652 --> 01:35:04,851
+exact plane.
+
+471
+01:35:09,043 --> 01:35:12,503
+X-Z plane, we get this parabola.
+
+472
+01:35:13,043 --> 01:35:16,724
+In the Y-Z plane, we get this parabola.
+
+473
+01:35:17,003 --> 01:35:19,564
+So, this is called paraboloid.
+
+474
+01:35:23,667 --> 01:35:31,667
+Z equals zero, Z equals zero means x, y plane, we get...
+
+475
+01:35:35,539 --> 01:35:36,060
+Origen.
+
+476
+01:35:40,180 --> 01:35:41,360
+We get origin.
+
+477
+01:35:42,100 --> 01:35:43,520
+If zeta equals 1,
+
+478
+01:35:44,520 --> 01:35:46,220
+we get
+
+479
+01:36:01,268 --> 01:36:05,927
+parabola is z equals 4 x square.
+
+480
+01:36:11,572 --> 01:36:15,132
+Z equals y square parabola.
+
+481
+01:36:16,731 --> 01:36:17,252
+And
+
+482
+01:36:17,252 --> 01:36:20,332
+This is
+
+483
+01:36:20,332 --> 01:36:22,492
+Anips
+
+484
+01:36:22,492 --> 01:36:26,271
+For x square y square equals 1.
+
+485
+01:36:38,323 --> 01:36:42,403
+This special parabolite.
+
+486
+01:36:47,444 --> 01:36:53,444
+Bu graph ile deklerim ile deklerim.
+
+487
+01:36:57,779 --> 01:37:06,259
+Z equals minus 4x square minus y square, z is always negative number.
+
+488
+01:37:07,219 --> 01:37:12,599
+So this is parabolik, but like that.
+
+489
+01:37:17,779 --> 01:37:27,599
+You can give the parabola in terms of x, y, and z.
+
+490
+01:37:27,599 --> 01:37:29,840
+So,
+
+491
+01:37:52,564 --> 01:37:58,784
+Y equals X square Z square.
+
+492
+01:38:02,547 --> 01:38:03,547
+Teşekkürler.
+
+493
+01:38:15,699 --> 01:38:18,059
+Last one, Kony.
+
+494
+01:38:20,859 --> 01:38:29,420
+Standard form of Kony is given by this formula.
+
+495
+01:38:56,435 --> 01:39:21,815
+Z squared equals X squared plus Y squared. If X equals zero, Z equals lines. We find lines Z equals positive, negative Y. If Y equals zero, Z equals positive, negative X lines.
+
+496
+01:39:21,815 --> 01:39:33,435
+If Z equals zero, first we get origin. If Z equals one, we get circle.
+
+497
+01:39:38,260 --> 01:40:06,260
+y equals x, y, z equals x, z equals minus x. And they are circles. If z equals minus one, we get circle. If we do...
+
+498
+01:40:13,747 --> 01:40:19,747
+This equation, this is another cony, this cony.
+
+499
+01:40:23,252 --> 01:40:24,231
+Bir drone.
+
+500
+01:40:33,587 --> 01:40:34,268
+Like that.
+
+501
+01:40:47,220 --> 01:40:54,220
+Çünkü, z'eq 0'e bu, y'eq 0'e bu.
+
+502
+01:40:54,220 --> 01:41:00,220
+Yani y'eq 0'e bu.
+
+503
+01:41:00,220 --> 01:41:04,220
+Y'eq 2'e bu.
+
+504
+01:41:04,220 --> 01:41:07,220
+Z'e bu.
+
+505
+01:41:07,220 --> 01:41:12,220
+Y'e bu.
+
+506
+01:41:12,220 --> 01:41:14,220
+Ory, Johnny.
+
+507
+01:41:16,756 --> 01:41:23,756
+ve
+
+508
+01:41:25,276 --> 01:41:26,916
+bu ellipse
+
+509
+01:41:31,956 --> 01:41:34,056
+Gençler, soru var mı bu?
+
+510
+01:41:35,676 --> 01:41:37,756
+Kuadritik yüzeylerle ilgili.
+
+511
+01:41:40,136 --> 01:41:42,056
+Tabloyu incelersiniz.
+
+512
+01:41:43,155 --> 01:41:46,796
+Tabloda çok daha detaylı bilgiler var.
+
+513
+01:41:46,976 --> 01:41:52,536
+Ben en çok kullanılanları karşımıza çıkacak olanlarını inceledik.
+
+514
+01:41:52,735 --> 01:41:54,655
+Beraber baktık örneklerini.
+
+515
+01:41:56,275 --> 01:41:58,676
+Çok fazla vakit harcamaya gerek yok bunlarda.
+
+516
+01:41:58,676 --> 01:42:05,676
+Önemli olanlar silindirler, paraboloidler, koniler, elipsoidler.
+
+517
+01:42:06,636 --> 01:42:07,456
+Dört tanesi.
+
+518
+01:42:07,855 --> 01:42:09,695
+Bunların içerisinde önemli olanları.
+
+519
+01:42:10,056 --> 01:42:11,676
+Karşımıza çıkabilecek olanları.
+
+520
+01:42:12,136 --> 01:42:14,435
+Ve ben burada daha da detay verdim aslında.
+
+521
+01:42:15,096 --> 01:42:16,756
+Bunların içerisinde en önemlilerisi.
+
+522
+01:42:16,855 --> 01:42:20,076
+This is special important coni.
+
+523
+01:42:21,275 --> 01:42:24,036
+This is special paraboloid.
+
+524
+01:42:29,971 --> 01:42:31,971
+Bir şey bu parabolik.
+
+525
+01:42:50,868 --> 01:42:53,788
+This is another ellipsoid.
+
+526
+01:42:56,668 --> 01:43:00,028
+If no question, today is enough.
+
+527
+01:43:10,931 --> 01:43:15,032
+There will be no lesson next week because of exam week, you know.
+
+528
+01:43:19,923 --> 01:43:24,243
+Here continue this lecture with limits and continuity.
+
+529
+01:43:29,876 --> 01:43:31,936
+No question. See you.
+
+530
+01:43:35,315 --> 01:43:36,855
+Gençler, sorunuz var mı?
+
+531
+01:43:39,255 --> 01:43:40,515
+Sorunuz yoksa,
+
+532
+01:43:41,515 --> 01:43:43,115
+iki hafta sonra görüşeceğiz.
+
+533
+01:43:54,931 --> 01:43:57,831
+Bir saniye, [öğrenci] şuanımdan ilgileniyorum.
+
+534
+01:45:28,884 --> 01:45:31,123
+İndirdiğinizde haber vereyim. Sizi bekliyorum.
+
+535
+01:46:01,716 --> 01:46:02,576
+See you, bye bye.
+
+536
+01:46:09,652 --> 01:46:11,612
+Gençler, çıkış yapıyorum, indirebildiyseniz.
+
+537
+01:46:18,387 --> 01:46:19,087
+İyi günler.

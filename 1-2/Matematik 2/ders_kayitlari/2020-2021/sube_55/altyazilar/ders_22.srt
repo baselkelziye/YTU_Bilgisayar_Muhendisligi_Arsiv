@@ -1,0 +1,1927 @@
+1
+00:00:47,539 --> 00:00:48,679
+Hello, how are you?
+
+2
+00:01:04,243 --> 00:01:05,243
+İyi günler.
+
+3
+00:01:22,483 --> 00:01:24,603
+Hello everybody, are you okay?
+
+4
+00:01:29,075 --> 00:01:30,275
+I am sorry too late.
+
+5
+00:01:37,524 --> 00:01:38,004
+Morim.
+
+6
+00:01:47,956 --> 00:01:53,756
+Evet, today we started with double integral.
+
+7
+00:01:55,856 --> 00:01:59,536
+We talk about how to calculate double integrals.
+
+8
+00:01:59,876 --> 00:02:01,236
+We get Pübini theorem.
+
+9
+00:02:02,055 --> 00:02:10,056
+First Pübini theorem gives us how to calculate double integral defined on rectangle.
+
+10
+00:02:10,056 --> 00:02:19,016
+Second Pübini theorem tell us how to calculate double integral defined on any region.
+
+11
+00:02:20,195 --> 00:02:27,276
+We are going to continue with double integral in polar coordinates.
+
+12
+00:02:30,276 --> 00:02:34,195
+Yesterday we gave the properties of double integrals.
+
+13
+00:02:34,195 --> 00:02:41,516
+They are similar to single integral.
+
+14
+00:02:45,683 --> 00:02:48,243
+single variable functions.
+
+15
+00:02:50,584 --> 00:02:52,123
+If you are ready,
+
+16
+00:02:53,463 --> 00:02:55,463
+I can start.
+
+17
+00:03:00,756 --> 00:03:05,836
+If no question, let's continue.
+
+18
+00:04:00,915 --> 00:04:01,855
+Remember that?
+
+19
+00:04:19,315 --> 00:04:43,195
+O region is calculated by double integration. We gave this property yesterday. Let's remember. If we take the integrand as one,
+
+20
+00:04:50,196 --> 00:04:51,316
+double integral
+
+21
+00:04:55,252 --> 00:05:02,252
+D' bu bölümde
+
+22
+00:05:02,252 --> 00:05:09,252
+B' bu bölümde
+
+23
+00:05:09,252 --> 00:05:11,252
+D'
+
+24
+00:05:18,963 --> 00:05:20,163
+Let's do an example.
+
+25
+00:05:22,663 --> 00:05:37,764
+Find the area of the region enclosed by the parabola.
+
+26
+00:05:42,067 --> 00:05:53,087
+y equals x square, and line y equals x plus two.
+
+27
+00:05:59,060 --> 00:06:00,060
+İlk başta, yazı.
+
+28
+00:06:06,516 --> 00:06:07,636
+double integral
+
+29
+00:06:17,012 --> 00:06:19,391
+Then, draw.
+
+30
+00:06:23,411 --> 00:06:28,691
+D'in x-y-plane.
+
+31
+00:06:32,339 --> 00:06:34,659
+Y equals X square.
+
+32
+00:06:39,636 --> 00:06:41,116
+Bu da bir parabenin laksı.
+
+33
+00:06:45,076 --> 00:06:47,516
+Y equals x plus 2.
+
+34
+00:06:48,056 --> 00:06:51,536
+This line intersects the x
+
+35
+00:06:52,536 --> 00:06:55,855
+axis minus 2.
+
+36
+00:07:00,819 --> 00:07:07,819
+ve
+
+37
+00:07:36,211 --> 00:07:36,791
+Region.
+
+38
+00:07:42,196 --> 00:07:46,236
+B. Determine the limits of integration.
+
+39
+00:07:49,779 --> 00:08:06,259
+To do this, we need to know intersection points of them to get them to create given equations.
+
+40
+00:08:13,012 --> 00:08:13,572
+So,
+
+41
+00:08:15,992 --> 00:08:16,672
+this
+
+42
+00:08:32,596 --> 00:08:35,635
+The coordinates of this point.
+
+43
+00:08:40,467 --> 00:08:42,727
+Minus 1, old enough.
+
+44
+00:08:48,467 --> 00:08:54,987
+1, ve bu 4.
+
+45
+00:09:14,995 --> 00:09:33,596
+Minimum value of x minus 1, maximum value of x is 2. So if we write in the outer integral, minimum maximum value of x,
+
+46
+00:09:37,331 --> 00:09:39,731
+İntegre,
+
+47
+00:09:41,891 --> 00:09:43,331
+we want to determine
+
+48
+00:09:46,371 --> 00:09:48,932
+the limits of y.
+
+49
+00:09:51,412 --> 00:09:52,052
+And then
+
+50
+00:09:54,131 --> 00:09:58,932
+we integrate with respect to y and then x.
+
+51
+00:10:02,995 --> 00:10:05,995
+To do this, we draw...
+
+52
+00:10:10,548 --> 00:10:40,548
+ve aryağın arya
+
+53
+00:10:47,059 --> 00:10:50,000
+Upper boundary, upper boundary.
+
+54
+00:10:53,875 --> 00:10:56,855
+Determine x plus 2.
+
+55
+00:10:59,435 --> 00:11:06,375
+Y equals x plus 2 is the upper limit of inner integral.
+
+56
+00:11:13,908 --> 00:11:19,168
+You can check one more arrows.
+
+57
+00:11:22,836 --> 00:11:29,656
+All arrow starts at parabola and as line.
+
+58
+00:11:31,656 --> 00:11:33,235
+Let's calculate.
+
+59
+00:11:38,163 --> 00:11:45,163
+Şimdi ilk önce x plus 2 minus x'ı kısım ve
+
+60
+00:11:45,163 --> 00:11:49,163
+ve tekrar tekrar x'ı kısım.
+
+61
+00:12:09,716 --> 00:12:10,916
+Change the...
+
+62
+00:12:15,827 --> 00:12:17,028
+Oradrof integration.
+
+63
+00:12:31,635 --> 00:12:50,675
+Altör integral, we need minimum and maximum value of y. Minimum value of y is 0, maximum value of y is 4. So, we write 0 and 4.
+
+64
+00:12:51,795 --> 00:12:59,235
+Now, we need to find the limits of inner integral.
+
+65
+00:13:03,091 --> 00:13:03,751
+Good night.
+
+66
+00:13:08,500 --> 00:13:12,500
+Look at this region.
+
+67
+00:13:14,500 --> 00:13:26,500
+To determine x, we draw an arrow inside region from left to right.
+
+68
+00:13:32,307 --> 00:13:40,548
+To check, draw, one more, more than one arrow.
+
+69
+00:13:45,812 --> 00:13:56,932
+Please look at this arrow. This arrow starts at this parabola and at this parabola.
+
+70
+00:13:57,892 --> 00:14:06,692
+But the other arrow starts at line and ends at same parabola.
+
+71
+00:14:06,692 --> 00:14:18,532
+So we must rewrite this double integral as the sum of two double integral.
+
+72
+00:14:28,851 --> 00:14:47,011
+Where it is, it change here. We divide the region D into two regions, first and second.
+
+73
+00:14:52,884 --> 00:15:04,884
+bu point'in
+
+74
+00:15:04,884 --> 00:15:06,884
+1
+
+75
+00:15:06,884 --> 00:15:08,884
+bu point'in
+
+76
+00:15:08,884 --> 00:15:12,884
+s
+
+77
+00:15:12,884 --> 00:15:44,884
+y
+
+78
+00:15:29,076 --> 00:15:35,526
+Y'e y
+
+79
+00:15:44,692 --> 00:15:47,692
+1 to 4
+
+80
+00:15:49,692 --> 00:15:51,692
+x
+
+81
+00:15:51,692 --> 00:16:14,692
+y
+
+82
+00:16:08,307 --> 00:16:08,888
+Any question?
+
+83
+00:16:27,508 --> 00:16:29,307
+Is it clear or no?
+
+84
+00:16:30,368 --> 00:16:31,248
+What do you think?
+
+85
+00:16:50,899 --> 00:16:51,939
+Do you understand?
+
+86
+00:16:53,120 --> 00:16:54,079
+What do you think?
+
+87
+00:17:32,243 --> 00:17:32,603
+Ok.
+
+88
+00:17:48,852 --> 00:17:54,852
+Bu, bu parabola ve diğer parabola var.
+
+89
+00:17:54,852 --> 00:18:00,852
+Bu, bu parabola var.
+
+90
+00:18:03,988 --> 00:18:09,327
+Please write in the first quadrant.
+
+91
+00:18:13,332 --> 00:18:16,412
+Anfendi, syndrome, elder.
+
+92
+00:18:22,099 --> 00:18:41,480
+Bu, bu, y² olarak y² olarak y² olarak y² olarak y² olarak y² olarak y² olarak y² olarak y² olarak y² olarak y² olarak y² olarak y² olarak y² olarak y² olarak y² olarak y² olarak y² olarak y² olarak y² olarak y² olarak y² olarak y² olarak y² olarak y² olarak y² olarak y² olarak y² olarak y² olarak y² olarak y² olarak y² olarak y² olarak y² olarak y² olarak y² olarak y² olarak y² olarak y² olarak y² olarak y² olarak y² olarak y² olarak y² olarak y² olarak y² olarak y² olarak y² olarak y² olarak y² olarak y² olarak y² olarak y² olarak y² olarak y² olarak y² olarak y² olarak y² olarak y² olarak y² olarak y² olarak y² olarak y² olarak y² olarak y² olarak y² olarak y² olarak y² olarak y² olarak y² olarak y² olarak y² olarak y² olarak
+
+93
+00:18:50,804 --> 00:19:03,764
+If we choose to calculate first with respect to dy, ay, and x.
+
+94
+00:19:11,059 --> 00:19:13,059
+Bu birçok birçok.
+
+95
+00:19:13,059 --> 00:19:15,059
+Birçok ve y'un.
+
+96
+00:19:19,508 --> 00:19:20,508
+Evet.
+
+97
+00:19:21,508 --> 00:19:23,508
+Bu bir şey.
+
+98
+00:19:23,508 --> 00:19:27,508
+Çünkü y'e 0'a 0'a
+
+99
+00:19:27,508 --> 00:19:34,728
+Y'e 0'a 0
+
+100
+00:19:39,700 --> 00:19:57,400
+This equality, 2 y2 equals y2 equals 4, so it comes 2. Yes, minimum value 0, maximum value of y is 2.
+
+101
+00:19:57,400 --> 00:20:12,059
+To determine the limits in our integral, for x, we draw an arrow from left to right. As x increases
+
+102
+00:20:12,059 --> 00:20:19,279
+from left to right, this arrow starts at lower boundary,
+
+103
+00:20:19,279 --> 00:20:33,519
+x equals y2 over 4, and ends at upper boundary.
+
+104
+00:20:38,355 --> 00:20:41,516
+8 minus y2 over 4.
+
+105
+00:20:44,155 --> 00:20:45,475
+That's all.
+
+106
+00:20:46,375 --> 00:20:49,955
+If we change the order of integration,
+
+107
+00:20:49,955 --> 00:20:51,316
+you must
+
+108
+00:20:55,763 --> 00:21:01,763
+write to integral.
+
+109
+00:21:01,763 --> 00:21:05,763
+Second method is homework.
+
+110
+00:21:05,763 --> 00:21:11,763
+This solution is 83.
+
+111
+00:21:26,867 --> 00:21:27,307
+Remember,
+
+112
+00:21:31,092 --> 00:21:33,932
+Average value.
+
+113
+00:21:38,324 --> 00:21:47,604
+We call that in one dimensional calculus, average value of
+
+114
+00:21:55,124 --> 00:21:59,844
+value of one variable function.
+
+115
+00:22:10,867 --> 00:22:17,447
+A closed interval, as the integral of the function f,
+
+116
+00:22:22,612 --> 00:22:31,231
+AB, divided by the length of the interval B minus A.
+
+117
+00:22:36,915 --> 00:22:40,076
+For an integrable function of two variables,
+
+118
+00:22:58,963 --> 00:23:06,083
+Abundant region, in the plane,
+
+119
+00:23:09,223 --> 00:23:11,263
+the average
+
+120
+00:23:20,788 --> 00:23:22,067
+Value of
+
+121
+00:23:22,067 --> 00:23:25,147
+fx y
+
+122
+00:23:25,147 --> 00:23:27,107
+over
+
+123
+00:23:27,107 --> 00:23:30,248
+the region
+
+124
+00:23:30,248 --> 00:23:31,688
+r
+
+125
+00:23:31,688 --> 00:23:33,327
+is calculated
+
+126
+00:23:33,327 --> 00:23:35,407
+by
+
+127
+00:23:39,155 --> 00:23:46,475
+double integral of f over r divided by
+
+128
+00:23:46,475 --> 00:23:53,395
+area of region r.
+
+129
+00:23:58,003 --> 00:23:58,644
+For example,
+
+130
+00:24:05,907 --> 00:24:06,407
+Karateç
+
+131
+00:24:09,587 --> 00:24:12,307
+Value of f
+
+132
+00:24:12,307 --> 00:24:16,788
+x times cosine xy
+
+133
+00:24:20,596 --> 00:24:21,615
+Orada rectangle.
+
+134
+00:24:29,491 --> 00:24:34,152
+y between 0 pi, y between 0, 1.
+
+135
+00:24:36,551 --> 00:24:43,571
+First, we need double integral of given function.
+
+136
+00:24:47,284 --> 00:24:47,964
+given
+
+137
+00:24:47,964 --> 00:24:50,964
+rectangle
+
+138
+00:24:55,316 --> 00:25:08,006
+İntegrali ile ilgili y'e ile ilgili y'e ile ilgili y'e ile ilgili y'e ile ilgili y'e ile ilgili y'e ile ilgili y'e ile ilgili y'e ile ilgili y'e ile ilgili y'e ile ilgili y'e ile ilgili y'e ile ilgili y'e ile ilgili y'e ile ilgili y'e ile ilgili y'e ile ilgili y'e ile ilgili y'e ile ilgili y'e ile ilgili y'e ile ilgili y'e ile ilgili y'e ile ilgili y'e ile ilgili y'e ile ilgili y'e ile ilgili y'e ile ilgili y'e ile ilgili y'e ile ilgili y'e ile ilgili y'e ile ilgili y'e ile ilgili y'e ile ilgili y'e ile ilgili y'e ile ilgili y'e ile ilgili y'e ile ilgili y'e ile ilgili y'e ile ilgili y'e ile ilgili y'e ile ilgili y'e ile ilgili y'e ile ilgili y'e ile ilgili y
+
+139
+00:25:15,316 --> 00:25:18,115
+If we calculate with respect to y,
+
+140
+00:25:26,291 --> 00:25:34,211
+Y is constant sin xy over x.
+
+141
+00:25:37,715 --> 00:25:41,035
+0 to 1.
+
+142
+00:25:42,575 --> 00:25:44,915
+We should write these terms.
+
+143
+00:25:45,915 --> 00:25:48,915
+We get just sine x dx.
+
+144
+00:25:51,415 --> 00:25:54,596
+Integral of this function cosine x
+
+145
+00:25:54,596 --> 00:25:56,675
+from 0 to pi
+
+146
+00:25:56,675 --> 00:25:59,255
+minus cosine pi
+
+147
+00:25:59,255 --> 00:26:00,795
+minus 1
+
+148
+00:26:00,795 --> 00:26:01,715
+1
+
+149
+00:26:01,715 --> 00:26:04,135
+minus 1
+
+150
+00:26:04,135 --> 00:26:05,035
+equals 2.
+
+151
+00:26:10,003 --> 00:26:41,483
+Bu, bu
+
+152
+00:26:44,819 --> 00:26:45,819
+Çok güzel.
+
+153
+00:26:48,539 --> 00:26:49,740
+Bir daha bir örnek.
+
+154
+00:26:51,939 --> 00:26:52,939
+Bir de var.
+
+155
+00:26:55,939 --> 00:26:58,099
+VALUE OF F
+
+156
+00:27:06,644 --> 00:27:11,463
+D is defined
+
+157
+00:27:30,420 --> 00:27:35,140
+Solit S, S silindir.
+
+158
+00:27:40,435 --> 00:28:00,675
+base, x2, y2, 4, double integral of, with a high, 6.
+
+159
+00:28:02,675 --> 00:28:08,555
+This double integral gives a volume of this cylinder.
+
+160
+00:28:12,468 --> 00:28:19,468
+Ve bu
+
+161
+00:28:19,468 --> 00:28:22,468
+4.5.6
+
+162
+00:28:22,468 --> 00:28:43,468
+Finally, the average value is our phase area becomes just 6.
+
+163
+00:28:51,059 --> 00:29:13,319
+F is given with this function, and the region is set of all x, y, such that x in this interval y in this zero pi.
+
+164
+00:29:19,476 --> 00:29:24,536
+vekansızı, çift katlı
+
+165
+00:29:28,435 --> 00:29:28,816
+No.
+
+166
+00:29:33,683 --> 00:29:40,503
+We can give the definition of double integrize.
+
+167
+00:29:59,443 --> 00:30:04,423
+Bu da
+
+168
+00:30:22,932 --> 00:30:48,971
+The domain of integration, or integrant function, or both of them, can be more easily expressed in terms of polar coordinates, than in terms of Cartesian coordinates.
+
+169
+00:30:48,971 --> 00:30:54,491
+Recall that, the polar coordinates
+
+170
+00:30:58,036 --> 00:31:03,155
+of a point, are related to Cartesian coordinates.
+
+171
+00:31:07,796 --> 00:31:17,036
+We can get these equations from right triangle.
+
+172
+00:31:31,827 --> 00:31:51,947
+x equals r cosine theta, y equals r cosine theta, and r square, x square plus y square, or, and write, this another equality.
+
+173
+00:31:53,947 --> 00:31:55,107
+For example,
+
+174
+00:32:01,044 --> 00:32:10,163
+A circle, centered at origin, which reduce, for example, 1.
+
+175
+00:32:14,099 --> 00:32:21,859
+This circle is easily described by polar coordinates.
+
+176
+00:32:21,859 --> 00:32:42,859
+Here r, this region is set to all r tubes, theta, such that here r is between 0 and 1, theta between 0 to pi.
+
+177
+00:32:47,539 --> 00:32:48,139
+Bir adol.
+
+178
+00:32:54,228 --> 00:33:17,347
+region, region, region, can be easily described in terms of polar coordinates, if this circle x square plus y square equals 4, and if this, let it be 9.
+
+179
+00:33:18,948 --> 00:33:21,468
+Here, r,
+
+180
+00:33:24,228 --> 00:33:35,668
+between 2 and 3, theta between 0 and 5.
+
+181
+00:33:42,355 --> 00:33:45,635
+To determine the interval of r and theta,
+
+182
+00:33:53,203 --> 00:34:07,443
+We throw an arrow, passing through origin and our region, this area,
+
+183
+00:34:12,947 --> 00:34:46,947
+Bu araya başlıyor.
+
+184
+00:34:39,635 --> 00:34:39,956
+Evet.
+
+185
+00:34:45,043 --> 00:35:15,043
+Bu ayın ilk ayı ile x-ayıs ile 0 ile yi
+
+186
+00:35:23,860 --> 00:35:35,099
+Now, recall that the definition of Riemann's thumb.
+
+187
+00:35:40,947 --> 00:35:49,187
+suppose that a function f r theta is defined
+
+188
+00:35:52,980 --> 00:36:01,380
+or a region R that is bounded by
+
+189
+00:36:09,972 --> 00:36:18,612
+Lines, teta equals alpha, teta equals beta, and
+
+190
+00:36:22,132 --> 00:36:34,851
+Continuous Curse R x G1 θ, R x G2 θ.
+
+191
+00:36:36,932 --> 00:36:46,851
+Let's draw θ equals iPhone, θ equals beta, G1 and G2.
+
+192
+00:37:01,876 --> 00:37:11,376
+We want to calculate double integri over this region of a given function.
+
+193
+00:37:28,148 --> 00:37:33,847
+To define this double integral in terms of polar coordinates,
+
+194
+00:37:40,052 --> 00:37:45,251
+Consider a partition of this region. To do this, we divide
+
+195
+00:37:48,372 --> 00:37:55,972
+the interval alpha beta into m subinterval.
+
+196
+00:37:59,987 --> 00:38:06,987
+ve
+
+197
+00:38:11,731 --> 00:38:15,731
+İntro,
+
+198
+00:38:18,172 --> 00:38:22,052
+let mt equals n,
+
+199
+00:38:22,052 --> 00:38:23,931
+so we obtain,
+
+200
+00:38:43,507 --> 00:39:13,507
+Bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu bölüm
+
+201
+00:39:18,324 --> 00:39:29,543
+The areas of these rectangles, polar rectangles,
+
+202
+00:39:34,835 --> 00:39:44,155
+denoted by delta a1, delta a2, delta an.
+
+203
+00:40:08,179 --> 00:40:11,179
+Bir tane de bir tane.
+
+204
+00:40:17,076 --> 00:40:20,235
+correspond to the theta.
+
+205
+00:40:22,356 --> 00:40:25,596
+And with reduce the r.
+
+206
+00:40:34,132 --> 00:41:00,052
+Let a point Rk, theta k inside polar rectangle. So we form the sum from 1 to n f x k, y k, times delta ak.
+
+207
+00:41:00,052 --> 00:41:22,932
+is defined by the Riemann sum. If we take limit as delta ak goes to infinity, we take limit of Riemann sum.
+
+208
+00:41:25,892 --> 00:41:27,652
+If this limit exists,
+
+209
+00:41:35,891 --> 00:41:42,211
+This limit is defined by double integri.
+
+210
+00:41:48,755 --> 00:41:56,355
+F over polar region R.
+
+211
+00:41:58,995 --> 00:42:05,715
+But it is not finished because we define the A
+
+212
+00:42:07,556 --> 00:42:08,596
+area element.
+
+213
+00:42:12,851 --> 00:42:15,331
+in terms of the r and dt.
+
+214
+00:42:20,500 --> 00:42:25,280
+We define dA in terms of dR and dT.
+
+215
+00:42:27,360 --> 00:42:31,360
+To do this, please remember,
+
+216
+00:42:35,923 --> 00:42:43,483
+Circumference corresponding to 2 pi is 2 pi r.
+
+217
+00:42:48,916 --> 00:42:53,076
+Arkland, arkland.
+
+218
+00:43:01,427 --> 00:43:17,147
+2, this angel dtheta, is r dtheta, this arc lens is r dtheta.
+
+219
+00:43:24,052 --> 00:43:33,432
+In Cartesian coordinates, the area element dA is product of dx and dy.
+
+220
+00:43:35,832 --> 00:43:38,432
+Here, dA...
+
+221
+00:43:43,027 --> 00:44:08,027
+is the very small polar rectangles. So this area element dA is approximately area of rectangles with dimensions dr and rdt.
+
+222
+00:44:13,460 --> 00:44:16,579
+Ba is approximately
+
+223
+00:44:16,579 --> 00:44:20,760
+The area of
+
+224
+00:44:25,396 --> 00:44:27,396
+Rectangle bit,
+
+225
+00:44:28,516 --> 00:44:29,396
+Dimensions
+
+226
+00:44:33,940 --> 00:44:38,200
+vr and rdt.
+
+227
+00:44:58,547 --> 00:44:59,547
+Finally,
+
+228
+00:45:03,764 --> 00:45:06,164
+R double integral over R,
+
+229
+00:45:08,923 --> 00:45:13,784
+we substitute d8 inside integral dr dt.
+
+230
+00:45:17,523 --> 00:45:19,683
+Bu, polar integral.
+
+231
+00:45:22,563 --> 00:45:38,804
+Here, r is between alpha and beta, theta is, sorry, sorry, let's look at together, theta is between alpha beta, r is between these curves.
+
+232
+00:45:40,643 --> 00:45:44,643
+This is the interval of theta, this is the interval of r.
+
+233
+00:45:50,356 --> 00:45:52,896
+dR dd.
+
+234
+00:45:53,316 --> 00:45:55,896
+This double integral is calculated by
+
+235
+00:45:55,896 --> 00:45:58,776
+this formula.
+
+236
+00:46:00,816 --> 00:46:02,196
+Let's summarize.
+
+237
+00:46:13,139 --> 00:46:13,739
+I'm late.
+
+238
+00:46:18,771 --> 00:46:25,641
+Bu, bu
+
+239
+00:46:30,867 --> 00:46:31,867
+Substitute
+
+240
+00:46:31,867 --> 00:46:38,168
+For dA, r, dr, dθ.
+
+241
+00:46:39,847 --> 00:46:40,827
+First write
+
+242
+00:46:40,827 --> 00:46:44,087
+r, dr, dθ.
+
+243
+00:46:44,087 --> 00:46:46,128
+And then
+
+244
+00:46:50,164 --> 00:47:01,484
+Etç, graph of region R, and the plane.
+
+245
+00:47:09,523 --> 00:47:09,844
+Ben.
+
+246
+00:47:16,307 --> 00:47:19,568
+Determine the limits of integration.
+
+247
+00:47:25,460 --> 00:47:41,619
+The engine's line, make with x-axis, r, alpha, beta. So, outer integral limits are alpha, beta.
+
+248
+00:47:44,420 --> 00:47:47,699
+To determine the inner limits of integration,
+
+249
+00:47:47,699 --> 00:47:57,699
+Draw array inside, passing through inside region.
+
+250
+00:48:00,820 --> 00:48:04,900
+First point is lower limit.
+
+251
+00:48:09,235 --> 00:48:13,315
+integral, last point is,
+
+252
+00:48:16,255 --> 00:48:17,215
+upper limit,
+
+253
+00:48:18,215 --> 00:48:21,975
+r theta, r, b, r, d, theta.
+
+254
+00:48:23,056 --> 00:48:23,655
+That's all.
+
+255
+00:48:35,380 --> 00:48:36,099
+For example,
+
+256
+00:48:41,300 --> 00:48:45,420
+If r is defined...
+
+257
+00:49:02,516 --> 00:49:21,516
+So, this region is described by the set of points Rθ, such that R is between 1 and 2, θ between 0, 0, 0, 0.
+
+258
+00:49:25,300 --> 00:49:28,580
+0, and pi over 2.
+
+259
+00:49:32,628 --> 00:49:53,628
+So, you can write double integral, r, sorry, first write theta, 0, pi over 2, r, start from 1, 2, up, f r theta, r, dr, d theta.
+
+260
+00:49:53,628 --> 00:49:55,628
+Another example.
+
+261
+00:50:00,052 --> 00:50:00,852
+For example.
+
+262
+00:50:09,811 --> 00:50:39,811
+Yeni Y
+
+263
+00:50:39,811 --> 00:50:43,572
+Can you say the interval of theta?
+
+264
+00:50:50,387 --> 00:50:52,027
+What is the interval of theta?
+
+265
+00:50:53,107 --> 00:50:55,268
+Per se, theta.
+
+266
+00:51:03,188 --> 00:51:04,268
+In this region,
+
+267
+00:51:08,019 --> 00:51:10,539
+R is between
+
+268
+00:51:21,108 --> 00:51:22,807
+Yes, that's true, say it.
+
+269
+00:51:24,968 --> 00:51:30,448
+Theta between pi over 2 and pi over 2.
+
+270
+00:51:31,228 --> 00:51:40,488
+And r is between with this circle and with this cardioid formula.
+
+271
+00:51:40,488 --> 00:51:43,488
+The formula of circle is 1.
+
+272
+00:51:44,048 --> 00:51:49,508
+The formula of cardioid is given 1 plus cosine theta.
+
+273
+00:51:49,508 --> 00:51:54,508
+So, the limits of outer integral...
+
+274
+00:51:59,572 --> 00:52:09,972
+Minimum-maximum value of theta, the limits of inner integral, 1 and 1 plus cosine theta.
+
+275
+00:52:15,699 --> 00:52:16,299
+Bir daha.
+
+276
+00:52:34,996 --> 00:52:47,715
+This is circle, and this is cardioid, and we shaded this region.
+
+277
+00:52:50,996 --> 00:53:00,596
+If we want to calculate double integral of main function f on this region,
+
+278
+00:53:00,596 --> 00:53:08,356
+we need the limits of integrals for r and theta.
+
+279
+00:53:08,916 --> 00:53:10,115
+First say theta.
+
+280
+00:53:11,556 --> 00:53:13,235
+What is the interval of theta?
+
+281
+00:53:29,748 --> 00:53:40,748
+Evet, pi over 2, and 3 pi over 2, and then r. r is given this card delete, and...
+
+282
+00:53:50,324 --> 00:54:02,324
+Bu durumda, ray olarak bu şekilde
+
+283
+00:54:02,324 --> 00:54:04,324
+bu şekilde
+
+284
+00:54:06,547 --> 00:54:10,547
+Bu point at cardioid.
+
+285
+00:54:10,547 --> 00:54:12,547
+Cardioid
+
+286
+00:54:14,547 --> 00:54:18,547
+is given with this formula.
+
+287
+00:54:18,547 --> 00:54:20,547
+So
+
+288
+00:54:20,547 --> 00:54:24,547
+the lower limit of inner integral
+
+289
+00:54:24,547 --> 00:54:28,547
+is determined by cardioid formula
+
+290
+00:54:30,547 --> 00:54:34,547
+and end point
+
+291
+00:54:34,547 --> 00:54:38,547
+is at the circle.
+
+292
+00:54:38,547 --> 00:54:42,547
+This circle formula
+
+293
+00:54:42,547 --> 00:54:48,547
+is the upper limit of inner integral.
+
+294
+00:55:10,228 --> 00:55:36,188
+Here, R is semicircle region bounded by x-axis and the curve y equals square root of 1 minus x square.
+
+295
+00:55:43,635 --> 00:55:45,755
+Draw the region
+
+296
+00:56:00,532 --> 00:56:10,211
+This circle is given by Cartesian coordinates. We need polar equation of this circle.
+
+297
+00:56:12,372 --> 00:56:25,251
+If we transform from Cartesian coordinate to polar coordinate, to do this we use the relation between polar and Cartesian coordinates.
+
+298
+00:56:31,764 --> 00:56:34,684
+So, we get our equals 1.
+
+299
+00:56:39,155 --> 00:56:41,155
+First write integrant.
+
+300
+00:56:47,315 --> 00:56:53,115
+and dxdy in terms of r.
+
+301
+00:56:59,027 --> 00:57:00,467
+Erd teta.
+
+302
+00:57:02,627 --> 00:57:05,667
+And then write the limits of integration.
+
+303
+00:57:06,867 --> 00:57:17,187
+Theta is between 0 pi, r between 0 and 1.
+
+304
+00:57:27,572 --> 00:57:31,572
+Bu kalculation çok kolay.
+
+305
+00:57:31,572 --> 00:57:35,572
+İlk olarak bu kalculation.
+
+306
+00:57:39,188 --> 00:57:40,188
+Yencel,
+
+307
+00:58:04,947 --> 00:58:10,107
+1, d theta, pi over 2, e minus 1.
+
+308
+00:58:38,387 --> 00:58:41,268
+Evaluate this double integral,
+
+309
+00:58:42,708 --> 00:58:44,387
+with polar co-ordinates.
+
+310
+00:58:50,804 --> 00:59:28,804
+İntegri'ye ilk olarak,
+
+311
+00:59:09,012 --> 00:59:15,251
+X and Y
+
+312
+00:59:25,748 --> 00:59:51,347
+This region is enclosed by this lines and this curves. This curve is a circle. We draw this circle. Please be careful. X starts from 0 to 1.
+
+313
+00:59:55,380 --> 01:00:18,960
+Y, it starts from 0 to circle. X, it starts from 0 to 1. Y, it starts from 0 to circle. So, our region is this shaded region.
+
+314
+01:00:22,643 --> 01:00:32,423
+So, we can re-describe this region in terms of r and theta.
+
+315
+01:00:32,423 --> 01:00:43,743
+Here, r is between 0 and 1, theta is between 0 and pi over 2.
+
+316
+01:00:45,743 --> 01:00:48,423
+So, theta...
+
+317
+01:00:52,692 --> 01:00:56,851
+F x² plus y²
+
+318
+01:01:03,699 --> 01:01:28,739
+Bu, bu
+
+319
+01:01:39,123 --> 01:01:42,023
+I think I retired.
+
+320
+01:01:44,243 --> 01:01:44,943
+Do you need
+
+321
+01:02:09,940 --> 01:02:10,380
+Evet.
+
+322
+01:02:18,771 --> 01:02:28,491
+The limits of theta are constants, write the limits of theta in the outside integral.
+
+323
+01:02:35,172 --> 01:03:02,032
+Evet, siz de değişiklikle
+
+324
+01:02:43,092 --> 01:02:52,771
+Here, we can change the order because all of them are constants.
+
+325
+01:02:57,291 --> 01:03:06,972
+Here, for example, there are constants but upper limit is a function of theta.
+
+326
+01:03:06,972 --> 01:03:14,372
+This is not constant because we must write this inside integral.
+
+327
+01:03:16,052 --> 01:03:24,012
+Okay, here, all of them are constants so we can change the order.
+
+328
+01:03:24,771 --> 01:03:26,092
+Let's try homework.
+
+329
+01:03:32,884 --> 01:03:36,164
+Here, R is defined by the region
+
+330
+01:03:49,012 --> 01:03:51,012
+halve plain
+
+331
+01:03:51,012 --> 01:03:53,012
+pandık buy
+
+332
+01:03:57,427 --> 01:04:05,607
+X2, Y2, equals 1, and X2, Y2, plus 4.
+
+333
+01:04:06,867 --> 01:04:10,728
+We talk about this region.
+
+334
+01:04:14,260 --> 01:04:22,060
+Bu, bu
+
+335
+01:04:36,755 --> 01:04:47,536
+10 minutes, 10 minutes is enough, I think, we will continue with the calculation of integration.
+
+336
+01:04:49,655 --> 01:04:50,395
+See you.
+
+337
+01:16:31,091 --> 01:16:34,091
+No, benim sol.
+
+338
+01:16:38,996 --> 01:16:41,435
+Examples, volume between.
+
+339
+01:17:02,771 --> 01:17:04,872
+Evet, solit.
+
+340
+01:17:06,851 --> 01:17:07,492
+Pandut.
+
+341
+01:17:11,923 --> 01:17:18,823
+Able by, z equals f2, and
+
+342
+01:17:22,484 --> 01:17:26,264
+Z equals F1
+
+343
+01:17:49,268 --> 01:17:50,268
+Domain
+
+344
+01:17:50,268 --> 01:17:53,268
+of the
+
+345
+01:17:53,268 --> 01:17:55,268
+projections
+
+346
+01:17:55,268 --> 01:17:57,268
+of
+
+347
+01:17:57,268 --> 01:17:58,268
+surfaces
+
+348
+01:18:24,979 --> 01:18:30,500
+İntegral ve İntegral'in
+
+349
+01:18:30,500 --> 01:18:34,659
+İntegral'in
+
+350
+01:18:44,372 --> 01:18:51,372
+İlk olarak, eğer,
+
+351
+01:18:59,028 --> 01:19:06,028
+ve
+
+352
+01:19:03,636 --> 01:19:06,115
+Another Surface, Z1.
+
+353
+01:19:10,260 --> 01:19:22,579
+We need to calculate the volume of this solid. We first determine the intersection domain.
+
+354
+01:19:28,692 --> 01:19:30,131
+On the x-y-plane.
+
+355
+01:19:42,963 --> 01:19:47,943
+Ve bu
+
+356
+01:19:47,943 --> 01:20:12,943
+İntegrini
+
+357
+01:20:03,572 --> 01:20:13,952
+Z equals 0, and Z equals 1, minus x square, minus y square.
+
+358
+01:20:20,243 --> 01:20:34,723
+We can draw this solid in space, because we know this paragluid, and z equals zero means x y plane.
+
+359
+01:20:44,659 --> 01:20:46,359
+ve volumlu bu solide
+
+360
+01:20:49,559 --> 01:20:50,359
+is bandit.
+
+361
+01:20:58,323 --> 01:21:02,923
+Bu bölümde de parabolik.
+
+362
+01:21:07,699 --> 01:21:09,880
+[öğrenci], buy, x-y-play.
+
+363
+01:21:15,252 --> 01:21:23,332
+Bu, bu
+
+364
+01:21:26,931 --> 01:21:34,051
+Projection of all points inside this solid.
+
+365
+01:21:40,243 --> 01:22:10,243
+Bu çizgizde bu çizgizde bu çizgizde bu çizgizde bu çizgizde bu çizgizde bu çizgizde bu çizgizde bu çizgizde bu çizgizde bu çizgizde bu çizgizde bu çizgizde bu çizgizde bu çizgizde bu çizgizde bu çizgizde bu çizgizde bu çizgizde bu çizgizde bu çizgizde bu çizgizde bu çizgizde bu çizgizde bu çizgizde bu çizgizde bu çizgizde bu çizgizde bu çizgizde bu çizgizde bu çizgizde bu çizgizde bu çizgizde bu çizgizde bu çizgizde bu çizgizde bu çizgizde bu
+
+366
+01:22:10,243 --> 01:22:15,884
+çizgizde bu çizgizde bu çizgizde bu çizgizde bu çizgizde bu çizgizde bu çizgizde bu çizgizde bu çizgizde bu çizgizde bu çizgizde bu çizgizde bu çizgizde bu çizgizde bu çizgizde bu çizgizde bu çizgizde bu çizgizde bu çizgizde bu çizgizde bu çizgizde bu çizgizde bu çizgizde bu çizgizde bu çizgizde bu çizgizde bu çizgizde bu çizgizde bu çizgizde bu çizgizde bu çizgizde bu çizgizde bu çizgizde bu çizgizde bu çizgizde bu çizgizde bu çizgizde
+
+367
+01:22:21,043 --> 01:22:37,043
+Açıklı integral is calculated more easily by polar coordinates because the region is a circle with centered origin.
+
+368
+01:22:43,188 --> 01:23:03,788
+So, if we transform into polar coordinates, in this region, theta is between 0 to pi, r between 0 and 1,
+
+369
+01:23:03,788 --> 01:23:18,587
+integral, in terms of polar coordinates, dA, be careful, xr, dr, d, theta.
+
+370
+01:23:20,028 --> 01:23:25,167
+You can solve this double integral more easily.
+
+371
+01:23:34,868 --> 01:23:35,588
+Bayavetim.
+
+372
+01:23:41,268 --> 01:23:42,007
+Another example.
+
+373
+01:23:51,988 --> 01:23:55,108
+Volum of solids.
+
+374
+01:23:57,927 --> 01:23:58,648
+Atlaize.
+
+375
+01:24:02,612 --> 01:24:03,931
+Under the parabolites.
+
+376
+01:24:07,923 --> 01:24:16,644
+Z equals x square plus y square, above the xy plane.
+
+377
+01:24:19,043 --> 01:24:30,804
+And, inside, cylinder x square y square equals 2x.
+
+378
+01:24:53,363 --> 01:24:55,363
+Paraboloid is like that.
+
+379
+01:24:57,923 --> 01:25:03,363
+xy-plane is z-axis general plane.
+
+380
+01:25:05,283 --> 01:25:07,283
+This cylinder,
+
+381
+01:25:09,043 --> 01:25:10,163
+this cylinder,
+
+382
+01:25:11,363 --> 01:25:13,363
+interseks the xy-plane.
+
+383
+01:25:18,484 --> 01:25:23,024
+Circle, which circle? Let's look at together.
+
+384
+01:25:26,612 --> 01:25:47,811
+If we complete square, we get this, and we must write here one. So this is a circle centered at zero, sorry, one and zero with radius one.
+
+385
+01:25:51,604 --> 01:25:54,124
+Taylor, one,
+
+386
+01:26:12,115 --> 01:26:26,115
+Under the paraboloid surface, above the xy-plane, and inside the cylinder. So we need
+
+387
+01:26:29,652 --> 01:26:31,091
+Find this sort.
+
+388
+01:26:37,524 --> 01:26:45,764
+What is the projections of the points inside this solid?
+
+389
+01:26:49,747 --> 01:26:58,327
+D, D is this circle.
+
+390
+01:27:06,484 --> 01:27:10,484
+This solid lies above the disk D.
+
+391
+01:27:15,891 --> 01:27:38,891
+Visk's boundary circle has equation x square plus y square equals 2x. Or we can rewrite like that. D is defined with this equation.
+
+392
+01:27:38,891 --> 01:27:47,891
+Finally, volume is calculated by what is...
+
+393
+01:27:51,731 --> 01:28:03,332
+integral, integral, upper band of this surface is determined by paraboloid.
+
+394
+01:28:14,355 --> 01:28:23,475
+Aslında, ddisk, yıplane,
+
+395
+01:28:28,692 --> 01:28:47,811
+Please be careful here. This circle is not centered at origin. Another point. So be careful about the limits of integration. Theta is simple.
+
+396
+01:28:52,756 --> 01:29:16,716
+The points inside this region for theta. Theta between minus pi over 2 and pi over 2. But if we draw arrow
+
+397
+01:29:20,627 --> 01:29:26,167
+İntro, bu region, at origin.
+
+398
+01:29:26,827 --> 01:29:31,947
+So, lower limit of r is 0.
+
+399
+01:29:37,140 --> 01:30:07,140
+Bu nizeliydi, bu nizeliydi, bu nizeliydi, bu nizeliydi, bu nizeliydi, bu nizeliydi, bu nizeliydi, bu nizeliydi, bu nizeliydi, bu nizeliydi, bu nizeliydi, bu nizeliydi, bu nizeliydi, bu nizeliydi, bu nizeliydi, bu nizeliydi, bu nizeliydi, bu nizeliydi, bu nizeliydi, bu nizeliydi, bu nizeliydi, bu nizeliydi, bu nizeliydi, bu nizeliydi, bu nizeliydi, bu nizeliydi, bu nizeliydi, bu nizeliydi, bu nizeliydi, bu nizeliydi, bu nizeliydi, bu nizeliydi
+
+400
+01:30:07,140 --> 01:30:37,140
+Bu nizeliydi, bu nizeliydi, bu nizeliydi, bu nizeliydi, bu nizeliydi, bu nizeliydi, bu nizeliydi, bu nizeliydi, bu nizeliydi, bu nizeliydi, bu nizeliydi, bu nizeliydi, bu nizeliydi, bu nizeliydi, bu nizeliydi, bu nizeliydi, bu nizeliydi, bu nizeliydi, bu nizeliydi, bu nizeliydi, bu nizeliydi, bu nizeliydi, bu nizeliydi, bu nizeliydi, bu nizeliydi, bu nizeliydi, bu nizeliydi, bu nizeliydi, bu nizeliydi, bu nizeliydi, bu nizeliydi, bu nizel
+
+401
+01:30:37,140 --> 01:30:50,539
+R square equals 2R cosine theta, now R equals 2 cosine theta.
+
+402
+01:30:55,091 --> 01:31:01,011
+Finally, we can write directly the links of integrations.
+
+403
+01:31:03,652 --> 01:31:10,211
+Cosine theta, r square, r dr d theta.
+
+404
+01:31:18,452 --> 01:31:20,771
+Find this number.
+
+405
+01:31:23,952 --> 01:31:24,632
+Any question?
+
+406
+01:31:27,132 --> 01:31:28,092
+Any problem?
+
+407
+01:31:35,412 --> 01:31:35,891
+Bonn'ma!
+
+408
+01:31:40,115 --> 01:31:50,115
+Solit is bounded by z equals x square y square, x square y square equals 4.
+
+409
+01:31:50,916 --> 01:32:00,595
+First one is paraboloid, second one is cylinder in space.
+
+410
+01:32:02,036 --> 01:32:04,676
+So, what is the volume of s?
+
+411
+01:32:10,899 --> 01:32:12,599
+This is a simple question.
+
+412
+01:32:16,307 --> 01:32:19,467
+As solid
+
+413
+01:32:19,467 --> 01:32:24,387
+As bounded
+
+414
+01:32:33,747 --> 01:32:36,807
+Able yi, surface of paraboloid.
+
+415
+01:32:40,595 --> 01:32:47,235
+Blow by this disk.
+
+416
+01:32:51,699 --> 01:33:02,479
+So, projections of all points inside this solid, in the xy plane, we get this disk.
+
+417
+01:33:03,960 --> 01:33:09,639
+This xy sinştet x to car plus y to car equals 4.
+
+418
+01:33:10,539 --> 01:33:16,019
+So, we need this disk.
+
+419
+01:33:16,019 --> 01:33:24,779
+Here, we use polar coordinates for simplicity.
+
+420
+01:33:26,059 --> 01:33:31,260
+2, 2, P, R is between 0, 2.
+
+421
+01:33:35,155 --> 01:33:46,635
+Upper surface of this solid is given by the paraboloid x squared y squared e,
+
+422
+01:33:50,635 --> 01:33:58,055
+I wrote in terms of polar coordinates, directly, r vr d theta.
+
+423
+01:34:22,739 --> 01:34:38,260
+Homelik, find the volume of the solid under z equals 1, above z equals x square, y square.
+
+424
+01:34:39,539 --> 01:34:49,380
+In this case, our solid is like that. This is z equals 1 plane, so and
+
+425
+01:34:49,380 --> 01:34:57,619
+this solid is the set of all point inside paraboloid.
+
+426
+01:35:01,108 --> 01:35:06,728
+We need D, intersection point size.
+
+427
+01:35:07,728 --> 01:35:10,887
+So, to determine D,
+
+428
+01:35:12,328 --> 01:35:14,688
+you can equate
+
+429
+01:35:14,688 --> 01:35:17,328
+both equations.
+
+430
+01:35:18,328 --> 01:35:19,268
+You will find
+
+431
+01:35:19,268 --> 01:35:21,768
+this disk.
+
+432
+01:35:24,248 --> 01:35:26,528
+So, we add
+
+433
+01:35:26,528 --> 01:35:29,028
+this over D
+
+434
+01:35:29,028 --> 01:35:32,068
+upper
+
+435
+01:35:32,068 --> 01:35:33,387
+surface
+
+436
+01:35:33,387 --> 01:35:34,847
+x square y square
+
+437
+01:35:34,847 --> 01:35:36,347
+sorry, sorry
+
+438
+01:35:36,347 --> 01:35:38,307
+under z equals 1
+
+439
+01:35:38,307 --> 01:35:40,427
+upper surface
+
+440
+01:35:40,427 --> 01:35:42,448
+z equals 1
+
+441
+01:35:42,448 --> 01:35:43,087
+plane
+
+442
+01:35:46,963 --> 01:35:54,283
+Lower surface, purple weight surface, V i.
+
+443
+01:35:57,939 --> 01:36:09,039
+You can solve this integral, bipolar co-ordinates, more easily. You will get pi over 2.
+
+444
+01:36:18,644 --> 01:36:29,244
+Völümde solide 1.5 z equals x2, y2, z equals y.
+
+445
+01:36:36,243 --> 01:36:37,443
+Bu bir volume of.
+
+446
+01:36:46,836 --> 01:36:48,556
+You cannot draw.
+
+447
+01:37:01,363 --> 01:37:12,643
+So, you write just constant as 1 and r square r dr d theta.
+
+448
+01:37:23,347 --> 01:37:24,007
+Say it.
+
+449
+01:37:28,020 --> 01:37:45,740
+If you cannot draw the solid, you don't have to draw, you need the projections of the solid into xy plane, you need just d.
+
+450
+01:37:45,740 --> 01:37:59,040
+You can determine intersection domains, intersection domain of these surfaces.
+
+451
+01:38:03,315 --> 01:38:03,795
+Say
+
+452
+01:38:07,988 --> 01:38:15,988
+İkait 4y x² y² or d.
+
+453
+01:38:18,148 --> 01:38:24,068
+Bu bir başka bir kere.
+
+454
+01:38:24,068 --> 01:38:40,068
+Bu bir kere.
+
+455
+01:38:47,604 --> 01:38:52,583
+y minus x square y plus y square
+
+456
+01:38:52,583 --> 01:38:57,364
+e x d y
+
+457
+01:38:57,364 --> 01:39:01,404
+In terms of polar coordinates
+
+458
+01:39:08,692 --> 01:39:15,692
+Evet, bu olayın
+
+459
+01:39:19,283 --> 01:39:34,983
+R sin theta, y, r² over 4, r, dr, d theta.
+
+460
+01:39:34,983 --> 01:39:48,103
+Here, theta between 0, pi, and be careful for r, because rho and arrow,
+
+461
+01:39:49,283 --> 01:40:10,463
+Arrow starts from origin, and at this circle, we need coordinate equation of this circle, r²-4r sin theta equals 0, r equals 4 sin theta.
+
+462
+01:40:10,463 --> 01:40:18,123
+If theta changes, ends point changes, so upper limit is a function of theta.
+
+463
+01:40:19,283 --> 01:40:24,283
+This is the equation of the circle, for sine theta.
+
+464
+01:40:24,283 --> 01:40:29,283
+This becomes 2 pi.
+
+465
+01:40:53,716 --> 01:41:01,876
+Bu, bu solide üzerinde, bu solide üzerinde, bu solide üzerinde, bu solide üzerinde,
+
+466
+01:41:01,876 --> 01:41:12,106
+bu solide üzerinde, bu solide üzerinde, bu solide üzerinde, bu solide üzerinde, bu solide üzerinde, bu solide üzerinde, bu solide üzerinde, bu solide üzerinde, bu solide üzerinde, bu solide üzerinde, bu solide üzerinde, bu solide üzerinde, bu solide üzerinde, bu solide üzerinde, bu solide üzerinde, bu solide üzerinde, bu solide üzerinde, bu solide üzerinde, bu solide üzerinde, bu solide üzerinde, bu solide üzerinde, bu solide üzerinde, bu solide üzerinde, bu solide üzerinde, bu solide üzerinde, bu solide üzerinde, bu solide üzerinde, bu solide üzerinde, bu solide üzerinde, bu solide üzerinde, bu solide üzerinde, bu solide üzerinde, bu solide üzerinde, bu solide üzerinde, bu solide üzerinde, bu solide üzerinde, bu solide üzerinde, bu
+
+467
+01:41:30,612 --> 01:41:31,792
+Evet, we have no time.
+
+468
+01:41:47,028 --> 01:42:00,467
+S is bounded by x square y square equals 4. This is a cylinder. y plus z equals 4. This is a plane. z equals 0. Another plane.
+
+469
+01:42:02,268 --> 01:42:14,268
+Find the volume of this solid. We will find this number. Another homework. S is bounded by
+
+470
+01:42:17,028 --> 01:42:29,268
+This sphere and this cone. This cone. Find the volume of S.
+
+471
+01:42:34,868 --> 01:42:58,108
+Be careful to determine the domain, intersection domains of this surface. Be careful for D. Equate both equation. You will get a circle.
+
+472
+01:42:58,108 --> 01:43:08,188
+Here, first on work, D is also a circle.
+
+473
+01:43:24,851 --> 01:43:26,851
+Bu da bu soluzi?
+
+474
+01:43:39,828 --> 01:43:43,048
+Okay, if no question, today is enough.
+
+475
+01:44:58,707 --> 01:44:59,127
+PDR.
+
+476
+01:45:16,659 --> 01:45:19,000
+Gençler, varsın.
+
+477
+01:45:21,659 --> 01:45:23,139
+Beraber bakalım.
+
+478
+01:45:28,083 --> 01:45:51,104
+Önümüzdeki hafta, çarşamba günü dersi tamamlayacağım, perşembe günü de uygulama yapacağım. Ek ders yapmaya gerek kalmadı çünkü zaten konularımız bitiriyor. Belki çarşamba bile uygulamaya vakti hiç kalır. Fazla bir notumuz yok çünkü ders notumuz. Önümüzdeki hafta uygulama yapacağız, sınava yönelik çalışacağız gençler. Geçen dönemin sınav sorularına beraber bakarız.
+
+479
+01:45:51,104 --> 01:46:05,083
+Ama siz yine de konuları şöyle bir tekrar edin, son güne bırakmayın. Çünkü sınav hemen ertesi hafta. Şimdiden daha çalışmaya başlamış olmamız gerekiyor.
+
+480
+01:46:09,844 --> 01:46:10,904
+Yükleyebildiniz mi?
+
+481
+01:46:22,260 --> 01:46:26,039
+Peki o zaman kendinize iyi bakın. İyi günler diliyorum.
+
+482
+01:46:29,779 --> 01:46:31,219
+Düşünün günü.

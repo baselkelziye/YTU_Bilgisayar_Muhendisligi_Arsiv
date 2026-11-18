@@ -1,0 +1,2171 @@
+1
+00:00:05,620 --> 00:00:06,259
+Sayın'o!
+
+2
+00:00:10,580 --> 00:00:11,160
+Good morning.
+
+3
+00:00:33,140 --> 00:00:33,700
+Welcome.
+
+4
+00:00:42,067 --> 00:00:43,827
+Good morning, [öğrenci].
+
+5
+00:00:44,908 --> 00:00:46,227
+Hello to Anjburkan.
+
+6
+00:00:48,427 --> 00:00:49,628
+How are you today?
+
+7
+00:01:07,123 --> 00:01:11,683
+I hope that you are well. Yes, [öğrenci], I am fine, thank you.
+
+8
+00:01:20,340 --> 00:01:23,799
+Yesterday, we finished the infant series.
+
+9
+00:01:29,236 --> 00:01:31,636
+You should solve a lot of questions.
+
+10
+00:01:34,915 --> 00:01:36,716
+You should work hard.
+
+11
+00:01:37,276 --> 00:01:37,656
+Okay?
+
+12
+00:01:43,284 --> 00:01:47,484
+Today, we are going to start a new subject.
+
+13
+00:01:52,147 --> 00:01:55,987
+parametrik ekviyatiyonlar, ve polar koordinatiyonlar.
+
+14
+00:02:05,876 --> 00:02:07,956
+If you are ready, let's start.
+
+15
+00:02:13,876 --> 00:02:24,316
+In this chapter, we discuss two new methods for describing curves.
+
+16
+00:02:30,324 --> 00:02:31,444
+I'm ready to start.
+
+17
+00:02:38,963 --> 00:02:40,683
+Okay, let's
+
+18
+00:02:40,683 --> 00:02:43,843
+Share
+
+19
+00:02:49,843 --> 00:02:50,223
+Okay.
+
+20
+00:02:51,223 --> 00:02:56,644
+Our new subject is parametric equations and polar coordinates.
+
+21
+00:03:27,955 --> 00:03:28,595
+So far.
+
+22
+00:03:32,563 --> 00:03:33,683
+We have described.
+
+23
+00:03:39,860 --> 00:03:41,860
+Görüşmek üzere.
+
+24
+00:03:46,996 --> 00:03:49,396
+y as a function
+
+25
+00:03:52,979 --> 00:04:01,979
+or x as a function of y
+
+26
+00:04:06,036 --> 00:04:07,515
+A relation between
+
+27
+00:04:14,292 --> 00:04:14,931
+And why?
+
+28
+00:04:18,644 --> 00:04:33,483
+Y'ın f'ı y
+
+29
+00:04:41,204 --> 00:04:42,283
+In this chapter...
+
+30
+00:04:47,060 --> 00:04:59,060
+We describe curves by parametric equations, such as cycloids.
+
+31
+00:05:04,180 --> 00:05:04,860
+Helix.
+
+32
+00:05:10,771 --> 00:05:13,471
+Circles, surprise.
+
+33
+00:05:18,324 --> 00:05:26,324
+etc. They can be expressed by parametric equations.
+
+34
+00:05:29,779 --> 00:05:48,259
+For example, Arş-Median price, x and y, both of them are a function of a new variable t. t is called parameter.
+
+35
+00:05:52,692 --> 00:05:53,932
+Tü'ye sormak!
+
+36
+00:06:00,052 --> 00:06:27,472
+Time or Arc. Yunus Emre parametrik denklemler. Türkçesi de parametrik denklem diye geçiyor. Polar koordinatı da yine Türkçesinde de kutupsal koordinatlar diyoruz. Polar'ın Türkçesini kutupsal diye çeviriyoruz. Parametrik de parametrik olarak kullanıyoruz Yunus Emre.
+
+37
+00:06:32,019 --> 00:06:38,879
+Evet, evet. Daha önce karşılaşmadığınız bir konumat bir de görmemiştiniz bunu. Doğru. Bu sizin için yeni.
+
+38
+00:06:40,419 --> 00:06:43,359
+Bir kere daha isterseniz Türkçe geçelim.
+
+39
+00:06:44,139 --> 00:06:53,079
+Diyoruz ki, eğrileri farklı bir şekilde ifade etmenin şekli parametrik denklemlerle ya da kutupsal koordinatlarla olur.
+
+40
+00:06:55,000 --> 00:07:01,859
+Çünkü bu yöntemle çok daha farklı eğrileri ifade edebiliyoruz.
+
+41
+00:07:02,019 --> 00:07:16,279
+Kartezyen koordinatlarda ifade edemediğimiz eğrileri polar koordinatlarla ya da parametrik denklemlerle ifade edebiliyoruz.
+
+42
+00:07:17,419 --> 00:07:19,620
+Burada da söylüyor.
+
+43
+00:07:19,620 --> 00:07:26,419
+Parametric equations and polar coordinates enable us to describe a great variety of new curves.
+
+44
+00:07:37,971 --> 00:07:44,971
+ve katlı
+
+45
+00:07:47,572 --> 00:07:48,552
+Limoncan.
+
+46
+00:07:52,660 --> 00:07:53,820
+Rose Curves
+
+47
+00:07:59,507 --> 00:08:00,387
+Circles
+
+48
+00:08:04,115 --> 00:08:14,795
+Bu, bir yeni bir koordinat sistem, bir yeni bir koordinat sistem. Bu, bir yeni bir koordinat sistem.
+
+49
+00:08:20,148 --> 00:08:30,148
+Polar coördüne system represents the coordinates of r and theta.
+
+50
+00:08:31,427 --> 00:08:39,508
+Here r is the distance from a point to origin.
+
+51
+00:08:40,947 --> 00:08:42,148
+Theta is r.
+
+52
+00:08:42,148 --> 00:08:56,148
+Okay, first let's start the parametric equations.
+
+53
+00:08:55,764 --> 00:09:02,403
+Please write subtitle, Curves, Defined by,
+
+54
+00:09:13,779 --> 00:09:15,059
+Parametrik equations.
+
+55
+00:09:19,059 --> 00:09:26,099
+We use the parametric equations to determine a particular position or direction of movement.
+
+56
+00:09:30,259 --> 00:09:37,340
+We can trace the moon and object along a path according to time.
+
+57
+00:09:43,572 --> 00:10:11,231
+Let's consider a curve as a path of moving a particular whose position is changing over time.
+
+58
+00:10:23,347 --> 00:10:31,347
+We are in x, y, plane, kartesian koordinat.
+
+59
+00:10:34,227 --> 00:10:36,347
+We have a particle.
+
+60
+00:10:39,764 --> 00:10:49,124
+Particle, start from this point for example, and move.
+
+61
+00:11:07,539 --> 00:11:11,039
+İntiyel point, this point is terminal 1.
+
+62
+00:11:50,131 --> 00:11:51,631
+y equals f of x.
+
+63
+00:11:56,631 --> 00:12:02,951
+We cannot describe this curve with Cartesian equation.
+
+64
+00:12:07,347 --> 00:12:07,747
+Bye.
+
+65
+00:12:20,019 --> 00:12:20,559
+Because
+
+66
+00:12:27,028 --> 00:12:38,067
+This curve fails the vertical line test. This curve doesn't satisfy the vertical line test.
+
+67
+00:12:43,635 --> 00:12:44,355
+Because
+
+68
+00:12:48,532 --> 00:13:01,211
+The intersection, vertical line, and curl are three different points.
+
+69
+00:13:01,211 --> 00:13:02,852
+So,
+
+70
+00:13:07,508 --> 00:13:08,368
+Dizkoy.
+
+71
+00:13:25,683 --> 00:13:26,083
+However,
+
+72
+00:13:31,923 --> 00:13:33,103
+We can describe
+
+73
+00:13:36,467 --> 00:13:48,307
+This path by a pair of equations.
+
+74
+00:13:51,367 --> 00:13:58,007
+X equals F of T, Y equals G of T.
+
+75
+00:14:00,087 --> 00:14:01,447
+This equations
+
+76
+00:14:09,107 --> 00:14:16,107
+Bu
+
+77
+00:14:31,379 --> 00:14:34,500
+and gr,
+
+78
+00:14:37,139 --> 00:14:38,019
+continuous
+
+79
+00:14:40,019 --> 00:14:42,019
+functions.
+
+80
+00:14:53,971 --> 00:14:54,371
+Rani?
+
+81
+00:15:03,988 --> 00:15:05,088
+E o gelatine notes.
+
+82
+00:15:15,764 --> 00:15:16,443
+Parameter.
+
+83
+00:15:41,139 --> 00:15:48,139
+H of the x and y coordinates
+
+84
+00:16:02,868 --> 00:16:03,988
+a function
+
+85
+00:16:03,988 --> 00:16:06,268
+of
+
+86
+00:16:06,268 --> 00:16:08,288
+variable
+
+87
+00:16:15,604 --> 00:16:16,244
+For example,
+
+88
+00:16:24,851 --> 00:16:25,611
+This point.
+
+89
+00:16:30,707 --> 00:16:38,788
+This point is a position of particle at time t.
+
+90
+00:16:46,259 --> 00:16:49,379
+This is a position of particular,
+
+91
+00:16:50,980 --> 00:16:51,340
+at,
+
+92
+00:16:56,148 --> 00:17:00,148
+f , g .
+
+93
+00:17:02,148 --> 00:17:06,148
+S t varius.
+
+94
+00:17:08,148 --> 00:17:12,148
+The point xy
+
+95
+00:17:35,763 --> 00:17:36,763
+Bir soru var.
+
+96
+00:17:53,491 --> 00:17:57,331
+If no questions, we can continue.
+
+97
+00:18:00,251 --> 00:18:00,611
+Here.
+
+98
+00:18:05,587 --> 00:18:09,468
+A set of points.
+
+99
+00:18:14,132 --> 00:18:15,412
+X, Y
+
+100
+00:18:20,980 --> 00:18:33,700
+Here, there is an interval. The set of these points are called
+
+101
+00:18:42,483 --> 00:18:44,483
+called a parametric
+
+102
+00:18:56,084 --> 00:19:00,084
+parametrik eşit.
+
+103
+00:19:00,084 --> 00:19:10,084
+Bu kürlük kürlük kürlük kürlük.
+
+104
+00:19:24,756 --> 00:19:26,996
+are called parametric equations.
+
+105
+00:19:35,028 --> 00:19:55,337
+ve bu setiyle bu parçası par
+
+106
+00:20:04,596 --> 00:20:05,895
+Let's write again.
+
+107
+00:20:08,596 --> 00:20:09,556
+Variable
+
+108
+00:20:11,635 --> 00:20:12,996
+t is
+
+109
+00:20:15,476 --> 00:20:16,435
+a parameter
+
+110
+00:20:18,435 --> 00:20:18,836
+for
+
+111
+00:20:19,875 --> 00:20:20,836
+the curve
+
+112
+00:20:25,299 --> 00:20:29,299
+İçin
+
+113
+00:20:48,948 --> 00:20:50,168
+Parameter Interval
+
+114
+00:20:56,307 --> 00:20:58,347
+If this integral
+
+115
+00:21:09,395 --> 00:21:13,076
+is finite
+
+116
+00:21:15,076 --> 00:21:15,715
+interval
+
+117
+00:21:18,515 --> 00:21:21,076
+for example AB
+
+118
+00:21:33,619 --> 00:21:34,619
+Initial point.
+
+119
+00:21:44,435 --> 00:21:51,435
+Açık bir parçaların
+
+120
+00:21:51,435 --> 00:21:56,435
+F , G .
+
+121
+00:22:02,324 --> 00:22:03,744
+Yes, of course, [öğrenci].
+
+122
+00:22:08,115 --> 00:22:08,615
+Doğru
+
+123
+00:22:12,500 --> 00:22:20,500
+Terminal point becomes f of b, g of b.
+
+124
+00:22:32,756 --> 00:22:35,596
+Any question? [öğrenci]?
+
+125
+00:23:03,284 --> 00:23:17,784
+Give parametric equations and a parameter interlude.
+
+126
+00:23:21,203 --> 00:23:35,323
+For a curve, that is x equals f of t, y equals g of t, and t, and the interval i.
+
+127
+00:23:40,339 --> 00:23:41,379
+We say that.
+
+128
+00:23:45,460 --> 00:23:46,019
+Evet.
+
+129
+00:23:57,523 --> 00:23:58,063
+Teşekkürler.
+
+130
+00:24:09,140 --> 00:24:18,259
+Equations and interval together constitute a parametrization of the curve.
+
+131
+00:24:23,155 --> 00:24:45,915
+The equations and intervals together constitute a parametrization of the curve.
+
+132
+00:24:59,571 --> 00:25:05,291
+Let's consider parametrization of a curve.
+
+133
+00:25:17,268 --> 00:25:22,087
+This is the parametrization of a curve.
+
+134
+00:25:33,299 --> 00:25:46,579
+say the initial point of a particular, this particular. What is the initial point of this curve?
+
+135
+00:25:51,476 --> 00:25:54,016
+What is the coordinates of this point?
+
+136
+00:26:04,180 --> 00:26:09,299
+vektör terminal point.
+
+137
+00:26:10,740 --> 00:26:11,620
+Thank you.
+
+138
+00:26:13,140 --> 00:26:14,820
+This is initial point.
+
+139
+00:26:15,620 --> 00:26:16,340
+And...
+
+140
+00:26:40,627 --> 00:26:50,707
+careful, abscess is wrong, yes, birşey test true, this is 3, 4.
+
+141
+00:26:53,347 --> 00:27:04,707
+Okay, let's sketch and identify this curve.
+
+142
+00:27:14,228 --> 00:27:14,807
+A table.
+
+143
+00:27:32,180 --> 00:28:02,160
+vekutlay
+
+144
+00:27:36,596 --> 00:27:40,796
+corresponding to points on the path.
+
+145
+00:27:47,988 --> 00:28:05,347
+Let's evaluate when t equals minus 2, this is initial point coordinates 8 and minus 1
+
+146
+00:28:06,868 --> 00:28:16,148
+this is initial point and we then we gave minus 1 and then 0, 1, 2, 3
+
+147
+00:28:18,388 --> 00:28:23,827
+this is closed interval please correct this
+
+148
+00:28:26,148 --> 00:28:31,587
+minus 2 and 3 in most the interval
+
+149
+00:28:34,948 --> 00:28:37,268
+okay for minus 1
+
+150
+00:28:37,268 --> 00:28:46,468
+or the value of t equals minus 1, x equals
+
+151
+00:28:46,468 --> 00:28:53,668
+3, y equals 0
+
+152
+00:28:56,067 --> 00:28:58,868
+corresponding point is 0
+
+153
+00:28:58,867 --> 00:29:04,867
+0, 1, minus 1, 2
+
+154
+00:29:08,067 --> 00:29:13,268
+0, 3, you calculate this
+
+155
+00:29:13,268 --> 00:29:21,668
+0, 1, minus 1, 2, 3
+
+156
+00:29:25,188 --> 00:29:27,748
+now let's
+
+157
+00:29:27,748 --> 00:29:41,748
+let's plot these points
+
+158
+00:29:37,172 --> 00:29:38,372
+in a coordinate plane.
+
+159
+00:29:41,971 --> 00:29:45,811
+First point is 8 minus 1.
+
+160
+00:29:52,339 --> 00:30:14,919
+Eksanlum 8, 1, 1, 2, 3, 0, 1, 1, 2, 3, 3, 2, 3, 3, 2, 3, 3, 2, 3,
+
+161
+00:30:50,355 --> 00:30:57,435
+01, minus 12, 0, 3, 3, 4.
+
+162
+00:31:00,375 --> 00:31:07,435
+Now, we join them, we join these points.
+
+163
+00:31:26,644 --> 00:31:28,324
+particular, muz,
+
+164
+00:31:43,220 --> 00:31:44,220
+Direction
+
+165
+00:31:49,299 --> 00:31:57,720
+Arrows, from this point to this point.
+
+166
+00:32:03,155 --> 00:32:11,655
+By using the parametric equation, we can determine a particular position and direction of movement.
+
+167
+00:32:26,451 --> 00:32:45,092
+We can sketch this graph, and we can identify the position of a particular in this curve.
+
+168
+00:32:56,147 --> 00:33:00,147
+Bu parametrizasyon
+
+169
+00:33:27,667 --> 00:33:45,587
+We can use these parametric equations and we can obtain Cartesian equation, algebraic equation of this curve. How can we do?
+
+170
+00:33:49,619 --> 00:33:54,819
+ve sol 4T, the second equation,
+
+171
+00:34:01,268 --> 00:34:01,788
+End
+
+172
+00:34:05,460 --> 00:34:11,220
+We substitute t into the first equation.
+
+173
+00:34:30,996 --> 00:34:32,996
+This is 2.
+
+174
+00:34:35,316 --> 00:34:37,876
+We can rewrite this by quality.
+
+175
+00:34:40,516 --> 00:34:53,876
+Y square minus 2y, minus 2y power y, plus 1, plus 2, plus 3.
+
+176
+00:34:58,228 --> 00:35:05,228
+Finally, we can write the curve as a function by
+
+177
+00:35:08,755 --> 00:35:12,435
+x in terms of y.
+
+178
+00:35:14,995 --> 00:35:16,915
+We know this equation.
+
+179
+00:35:18,675 --> 00:35:22,395
+This equation represents parabola.
+
+180
+00:35:24,295 --> 00:35:29,335
+This is a parabola.
+
+181
+00:35:42,771 --> 00:36:03,652
+If we can eliminate t between parametric equations, we can obtain algebraic equation, and then we can draw this curve path.
+
+182
+00:36:04,871 --> 00:36:12,192
+It is sometimes quite difficult to eliminate this parameter from parametric equations.
+
+183
+00:36:12,771 --> 00:36:18,371
+Sometimes possible, sometimes impossible.
+
+184
+00:36:21,251 --> 00:36:33,891
+If we can eliminate t parameter, so we can draw the given curve.
+
+185
+00:36:35,891 --> 00:36:39,271
+Let's do more examples.
+
+186
+00:36:39,271 --> 00:36:58,331
+If we can eliminate t
+
+187
+00:37:26,547 --> 00:37:33,747
+One is x equals cosin t, y equals sin t.
+
+188
+00:38:02,996 --> 00:38:16,836
+Y'eqli t-1, y'eqli t-t-t-t-t-1.
+
+189
+00:38:16,836 --> 00:38:28,836
+And last one, x'eqli t-2, y'eqli t-2, t-t-1.
+
+190
+00:38:55,411 --> 00:38:57,251
+Can you say these curves?
+
+191
+00:38:59,831 --> 00:39:02,531
+They are special curves.
+
+192
+00:39:07,539 --> 00:39:15,940
+We can eliminate t-parameter by using the known relation between trigonometric functions.
+
+193
+00:40:21,172 --> 00:40:25,432
+We can write this algebraic equation.
+
+194
+00:40:28,311 --> 00:40:28,672
+So,
+
+195
+00:40:31,972 --> 00:40:34,572
+This algebraic equation represents
+
+196
+00:40:34,572 --> 00:40:37,331
+A unit
+
+197
+00:40:37,331 --> 00:40:40,492
+Circle.
+
+198
+00:40:54,068 --> 00:40:56,228
+Let's draw a unit circle.
+
+199
+00:41:01,268 --> 00:41:22,947
+By using the parameter interval, we can determine the direction of movement. Can you say the initial point?
+
+200
+00:41:34,291 --> 00:41:34,851
+Evet.
+
+201
+00:41:43,603 --> 00:41:45,884
+Artıklar, başlayalım.
+
+202
+00:41:54,195 --> 00:42:16,295
+if t equals 0, x equals 1, y equals 0. So this is initial point. If t equals y over 2, x equals 0, y equals 1.
+
+203
+00:42:16,295 --> 00:42:23,795
+Particular, start from 1, 0, and...
+
+204
+00:42:32,755 --> 00:42:33,815
+Nice, hello.
+
+205
+00:42:37,715 --> 00:42:41,295
+Unit circle in the direction.
+
+206
+00:42:50,739 --> 00:42:53,659
+A to B, B zero one.
+
+207
+00:42:54,219 --> 00:42:54,439
+Yes.
+
+208
+00:42:56,059 --> 00:42:58,719
+What is the terminal point?
+
+209
+00:42:59,559 --> 00:43:01,219
+Or terminal point?
+
+210
+00:43:05,012 --> 00:43:17,452
+We give the value of t 2 pi, and we have again 1 0.
+
+211
+00:43:27,539 --> 00:43:34,860
+Therefore, parametrik, kur, lies along the unit circle.
+
+212
+00:43:38,739 --> 00:43:41,239
+As tü, increses.
+
+213
+00:43:44,947 --> 00:43:48,947
+ve bu çiftçilerin her yerine çarışı
+
+214
+00:43:55,764 --> 00:43:58,764
+Direction is called counterclockwise.
+
+215
+00:44:00,764 --> 00:44:05,764
+Counterclockwise.
+
+216
+00:44:09,076 --> 00:44:13,016
+Direction of movement is counterclockwise.
+
+217
+00:44:20,371 --> 00:44:22,371
+Bir tane bir tane var.
+
+218
+00:44:22,371 --> 00:44:48,371
+Bir tane var.
+
+219
+00:44:59,891 --> 00:45:09,831
+Doğru, saat yönünün tersi, [öğrenci], haklısın, saat yönünün tersi diyoruz, ok yönünde.
+
+220
+00:45:32,563 --> 00:45:35,683
+No question. Let's look at B.
+
+221
+00:45:38,483 --> 00:45:39,443
+Let's write in
+
+222
+00:45:41,364 --> 00:45:45,043
+x equals sine t, y equals
+
+223
+00:45:45,523 --> 00:45:46,563
+cosine t.
+
+224
+00:46:15,827 --> 00:46:17,367
+Parameter interval is different.
+
+225
+00:46:20,567 --> 00:46:20,867
+So,
+
+226
+00:46:22,608 --> 00:46:23,987
+we can also use
+
+227
+00:46:29,172 --> 00:46:55,972
+aynı relation between sine and cosine functions. So, we have a circle, sorry, sorry, okay, we have a circle, but the initial point and terminal point are different. What is the initial point?
+
+228
+00:47:12,436 --> 00:47:13,016
+Kısmi.
+
+229
+00:47:16,692 --> 00:47:17,931
+Minus 1, 0.
+
+230
+00:47:30,804 --> 00:47:34,903
+No, this is wrong, it's mine.
+
+231
+00:47:52,724 --> 00:48:03,334
+Yeni Y
+
+232
+00:48:08,596 --> 00:48:08,996
+So,
+
+233
+00:48:12,820 --> 00:48:17,180
+Particle is on the circle.
+
+234
+00:48:22,483 --> 00:48:26,083
+İntial point is minus 1, 0.
+
+235
+00:48:29,043 --> 00:48:30,324
+Minus 1, 0.
+
+236
+00:48:37,940 --> 00:48:40,940
+vektör final point is 10.
+
+237
+00:48:42,940 --> 00:48:45,940
+What is the direction of movement?
+
+238
+00:48:57,844 --> 00:49:00,224
+Semi-circle.
+
+239
+00:49:03,795 --> 00:49:08,275
+Direction of movement counterclockwise or clockwise.
+
+240
+00:49:11,315 --> 00:49:27,315
+How can we determine this? If we give value 0, or t equals 0, x equals sin 0,
+
+241
+00:49:33,364 --> 00:49:38,403
+Cosine 0. We have 0, 1.
+
+242
+00:49:43,987 --> 00:49:56,867
+So, from initial point to zero one, from zero one to one zero.
+
+243
+00:49:56,867 --> 00:50:00,867
+So, we have...
+
+244
+00:50:06,452 --> 00:50:07,232
+Just
+
+245
+00:50:15,411 --> 00:50:24,422
+Bu, bu
+
+246
+00:50:38,867 --> 00:50:44,367
+If no question, let's look at third question.
+
+247
+00:51:01,907 --> 00:51:04,367
+And then, integral 0, 1.
+
+248
+00:51:18,739 --> 00:51:19,639
+Jest [öğrenci]?
+
+249
+00:51:47,987 --> 00:51:58,768
+Çünkü t in the integral minus pi over 2, pi over 2.
+
+250
+00:52:02,420 --> 00:52:10,860
+As t yüksek, xy'e
+
+251
+00:52:21,076 --> 00:52:34,275
+in the interval a, b. So, x, a, y, b is initial point [öğrenci].
+
+252
+00:52:43,891 --> 00:52:44,731
+I'm sorry.
+
+253
+00:52:46,091 --> 00:52:49,771
+So, this point is terminal point.
+
+254
+00:53:01,492 --> 00:53:31,492
+Y'eşitli algebrisiyonla altyazı y'eşitli altyazı y'eşitli altyazı y'eşitli altyazı y'eşitli altyazı y'eşitli altyazı y'eşitli altyazı y'eşitli altyazı y'eşitli altyazı y'eşitli altyazı y'eşitli altyazı y'eşitli altyazı y'eşitli altyazı y'eşitli altyazı y'eşitli altyazı y'eşitli altyazı y'eşitli altyazı y'eşitli altyazı y'eşitli altyazı y'eşitli altyazı y'eşitli altyazı y'eşitli
+
+255
+00:53:31,492 --> 00:53:56,652
+Y'eşitli altyazı y'eşitli altyazı y'eşitli altyazı y'eşitli altyazı y'eşitli altyazı y'eşitli altyazı y'eşitli altyazı y'eşitli altyazı y'eşitli altyazı y'eşitli altyazı y'eşitli altyazı y'eşitli altyazı y'eşitli altyazı y'eşitli altyazı y'eşitli altyazı y'eşitli altyazı y'eşitli altyazı y'eşitli altyazı y'eşitli altyazı y'eşitli altyazı y'eşitli altyazı y'eşitli altyazı y
+
+256
+00:54:02,516 --> 00:54:04,916
+We can draw unit circle.
+
+257
+00:54:06,316 --> 00:54:15,016
+And then we can determine the moment of this particular particle.
+
+258
+00:54:16,356 --> 00:54:18,356
+What is the initial point [öğrenci]?
+
+259
+00:54:22,132 --> 00:54:24,412
+To determine the initial point,
+
+260
+00:54:25,851 --> 00:54:36,412
+we write 0 instead of t in x and in y.
+
+261
+00:54:40,083 --> 00:54:44,003
+İntial point is here.
+
+262
+00:54:47,476 --> 00:55:05,896
+What is the terminal point? For terminal point, we write 1 in x and in y. Yes, this is the terminal point.
+
+263
+00:55:34,675 --> 00:55:35,155
+Ok.
+
+264
+00:55:37,415 --> 00:55:40,076
+Fourth question,
+
+265
+00:55:41,355 --> 00:55:42,235
+Canby homework.
+
+266
+00:55:43,496 --> 00:55:46,056
+This is also a unit circle.
+
+267
+00:55:46,835 --> 00:55:50,996
+First, determine the direction of this particle.
+
+268
+00:56:17,780 --> 00:56:20,340
+İntiyel points in the fourth question.
+
+269
+00:56:33,492 --> 00:56:35,692
+01, from 01,
+
+270
+00:56:35,692 --> 00:56:37,072
+02
+
+271
+00:56:46,675 --> 00:56:49,155
+0, 1, again. Okay.
+
+272
+00:56:51,635 --> 00:56:55,076
+So, what is the difference from A and D?
+
+273
+00:56:58,195 --> 00:57:03,315
+Here, we start from 0, 1 and 0, 1.
+
+274
+00:57:07,155 --> 00:57:11,996
+They are same or different, can you say?
+
+275
+00:57:22,900 --> 00:57:29,380
+For example, if t equals pi, we have the point
+
+276
+00:57:41,427 --> 00:57:45,788
+Evet, [öğrenci], you are right. Rotate 2 times.
+
+277
+00:57:46,947 --> 00:57:50,427
+Particular move along the entire circle twice.
+
+278
+00:58:02,516 --> 00:58:06,356
+Can you say direction clockwise or counterclockwise?
+
+279
+00:58:20,788 --> 00:58:22,628
+You can choose one point.
+
+280
+00:58:30,164 --> 00:58:30,644
+Okay.
+
+281
+00:58:43,635 --> 00:58:44,835
+Another example.
+
+282
+00:58:58,099 --> 00:59:03,779
+Tamamlande, hep primates, evlasyon.
+
+283
+00:59:10,036 --> 00:59:17,036
+ve
+
+284
+00:59:26,547 --> 00:59:41,907
+f of x equals x squared, x equals y to the 4 minus 3 y squared.
+
+285
+00:59:48,371 --> 00:59:48,791
+Evet, tamam.
+
+286
+01:00:00,179 --> 01:00:06,179
+Now, we have algebraic equation, Cartesian equation.
+
+287
+01:00:09,179 --> 01:00:14,179
+We need parametrization of this curve.
+
+288
+01:00:14,179 --> 01:00:23,179
+That is, we must write the parametric equations of x and y.
+
+289
+01:00:29,331 --> 01:00:32,711
+And next, the parameter B
+
+290
+01:00:45,715 --> 01:00:54,115
+Then, we have the parametric equations x equals t, y equals t squared.
+
+291
+01:00:59,123 --> 01:01:06,123
+X'in
+
+292
+01:01:29,940 --> 01:01:34,720
+Finally, we have parametrized the curve.
+
+293
+01:01:41,427 --> 01:01:44,268
+Now, this equation.
+
+294
+01:01:48,467 --> 01:01:51,607
+This is Parabola.
+
+295
+01:01:59,059 --> 01:02:16,139
+t equals minus infinity, if t approach minus infinity, x approach minus infinity, y approach infinity.
+
+296
+01:02:16,139 --> 01:02:25,659
+So, from second quadrant to first quadrant.
+
+297
+01:02:42,164 --> 01:02:48,324
+Bu, bu
+
+298
+01:02:58,036 --> 01:03:07,046
+Bir soru
+
+299
+01:03:19,635 --> 01:03:23,275
+Bu, ayakulstil.
+
+300
+01:03:27,059 --> 01:03:41,980
+Then we have x equals t to 4 minus 3, sorry, t squared y equals t.
+
+301
+01:03:49,811 --> 01:03:51,811
+Y
+
+302
+01:03:57,139 --> 01:04:01,779
+interval minus infinity plus infinity
+
+303
+01:04:07,219 --> 01:04:14,079
+Finally, we have the parametrization of this curve.
+
+304
+01:04:28,083 --> 01:04:28,403
+Okay?
+
+305
+01:04:48,019 --> 01:04:48,599
+Any question?
+
+306
+01:05:07,092 --> 01:05:17,852
+If no question, before the break, last question, find a parametrization,
+
+307
+01:05:22,195 --> 01:05:23,155
+Or the line
+
+308
+01:05:28,019 --> 01:05:29,380
+true to point
+
+309
+01:05:29,380 --> 01:05:32,780
+a, b
+
+310
+01:05:32,780 --> 01:05:34,500
+having
+
+311
+01:05:34,500 --> 01:05:36,420
+slope
+
+312
+01:05:44,115 --> 01:05:53,956
+That is, we have this Cartesian equation.
+
+313
+01:05:56,436 --> 01:05:57,235
+We need
+
+314
+01:06:02,228 --> 01:06:04,228
+parametrik eşyalı
+
+315
+01:06:05,668 --> 01:06:06,548
+bu şekilde
+
+316
+01:06:14,099 --> 01:06:20,099
+Let x equals t.
+
+317
+01:06:23,339 --> 01:06:31,900
+We have x equals t, y equals m, t minus a plus b.
+
+318
+01:06:33,179 --> 01:06:39,380
+Here, x can be whole real numbers.
+
+319
+01:06:39,380 --> 01:06:44,719
+So, parametrik integral is this.
+
+320
+01:06:52,148 --> 01:06:56,148
+Finally, we find the parametrization of this line.
+
+321
+01:06:57,748 --> 01:06:58,188
+Or,
+
+322
+01:07:02,228 --> 01:07:18,508
+We will let x-a t, we can say, then we have another parametrization of this line, like that.
+
+323
+01:07:29,940 --> 01:07:33,940
+Bu bir parçalara.
+
+324
+01:07:45,619 --> 01:08:15,619
+There is no unique way of representing a given curve parametrically.
+
+325
+01:08:15,619 --> 01:08:19,220
+can be infinitely many different parametrization.
+
+326
+01:08:20,420 --> 01:08:20,779
+Okay.
+
+327
+01:08:25,684 --> 01:08:26,884
+A given curl
+
+328
+01:08:45,235 --> 01:08:52,796
+Bir daha önce bir örneğe, ama sonra bir örneğe bir örneğe, ok?
+
+329
+01:09:00,988 --> 01:09:01,728
+Any questions?
+
+330
+01:09:18,707 --> 01:09:19,867
+No questions, see you.
+
+331
+01:22:11,699 --> 01:22:12,139
+Okay.
+
+332
+01:22:15,139 --> 01:22:15,960
+Let's continue.
+
+333
+01:22:27,283 --> 01:22:29,283
+İdentifiyonlar,
+
+334
+01:22:38,899 --> 01:22:39,899
+3.5.
+
+335
+01:22:47,764 --> 01:23:04,583
+If x equals t plus 1 over t, y equals t minus 1 over t, and t bigger than that.
+
+336
+01:23:20,948 --> 01:23:33,948
+We want to eliminate the parameter from these parametric equations. But this is not simple. Let's look together.
+
+337
+01:23:39,699 --> 01:23:45,460
+Add two parametrik equations,
+
+338
+01:23:58,228 --> 01:24:01,908
+İpi, Subtract.
+
+339
+01:24:08,307 --> 01:24:12,167
+X from Y or Y from X
+
+340
+01:24:25,844 --> 01:24:27,364
+2 over 3.
+
+341
+01:24:31,891 --> 01:24:34,131
+We have still t parameter.
+
+342
+01:24:36,532 --> 01:24:37,011
+Now,
+
+343
+01:24:42,195 --> 01:24:47,515
+We multiply these resulting equations.
+
+344
+01:24:52,435 --> 01:24:57,475
+Finally, we have algebraic equation between x and y.
+
+345
+01:25:04,212 --> 01:25:15,532
+tüc
+
+346
+01:25:15,532 --> 01:25:17,112
+Do you know this equality?
+
+347
+01:25:24,532 --> 01:25:27,532
+This is known equation.
+
+348
+01:25:35,636 --> 01:25:37,796
+This is not ellipse.
+
+349
+01:25:40,136 --> 01:25:43,456
+This is hyperbola.
+
+350
+01:26:03,123 --> 01:26:06,163
+We find the equation of hyperbola.
+
+351
+01:26:08,384 --> 01:26:08,943
+No.
+
+352
+01:26:14,163 --> 01:26:18,243
+We want to determine the movement of particle.
+
+353
+01:26:22,068 --> 01:26:46,828
+given by these parametric equations. Here, since is always positive number, so x becomes positive number. Since t positive, x becomes positive.
+
+354
+01:26:51,091 --> 01:27:00,411
+If t approach 0 from the right, x approach 0.
+
+355
+01:27:03,667 --> 01:27:09,067
+to infinity, yi, ebroş,
+
+356
+01:27:14,547 --> 01:27:16,387
+Minus Infinity.
+
+357
+01:27:20,340 --> 01:27:41,619
+t in the interval 0 to infinity. So, if t approach positive infinity, x approach positive infinity, and then y approach positive infinity.
+
+358
+01:27:41,619 --> 01:27:52,579
+Finally, the pet lies in the fourth quadrant.
+
+359
+01:28:22,452 --> 01:28:25,192
+Any question about this example?
+
+360
+01:28:40,724 --> 01:28:42,444
+Do you like parametric equations?
+
+361
+01:28:55,475 --> 01:28:59,775
+No, and very much.
+
+362
+01:29:02,295 --> 01:29:02,895
+Okay.
+
+363
+01:29:16,307 --> 01:29:17,488
+Parametric Curs.
+
+364
+01:29:26,292 --> 01:29:31,652
+Now, we apply the methods of calculus to these parametric curves.
+
+365
+01:29:34,852 --> 01:29:40,612
+In particular, we solve problems involving tangents and artland.
+
+366
+01:29:53,108 --> 01:30:06,028
+[öğrenci], ilk verildiği hafta seviyorsun ama daha sonraki haftalarda sevmiyor musun? Serilerde öyle mi oldu? İlk hafta sevdin ama sonraki ilerleyen aşamalarda serilerden soğudun mu?
+
+367
+01:30:07,488 --> 01:30:20,547
+Parametrik denklemler öyle değil. Bu hafta zaten bitiyor. Hepsi bu. Seriler gibi olmayacak bu. Zaten hap gibi küçücük bir konu. Veriyoruz, bitiyor.
+
+368
+01:30:20,547 --> 01:30:27,408
+Dolayısıyla sevmeden daha bittiği için bu konuyu seveceksin diye umut ediyorum.
+
+369
+01:30:32,372 --> 01:30:33,392
+Hadi bitirelim.
+
+370
+01:30:38,579 --> 01:30:40,140
+Subtitle Tangent
+
+371
+01:30:40,140 --> 01:30:43,039
+Evetler
+
+372
+01:30:50,292 --> 01:30:51,672
+Parametric formula
+
+373
+01:30:57,908 --> 01:30:58,368
+Evet.
+
+374
+01:31:11,444 --> 01:31:17,444
+We define the curves with parametric equations.
+
+375
+01:31:31,444 --> 01:31:38,564
+If we eliminate the parameter c, we can express this curve.
+
+376
+01:31:42,515 --> 01:31:44,515
+bu şekilde.
+
+377
+01:31:58,515 --> 01:32:05,315
+Y, y equals f of x.
+
+378
+01:32:11,444 --> 01:32:24,564
+to obtain a parametric formula for derivative. In order to do this, we substitute
+
+379
+01:32:36,340 --> 01:32:37,819
+parametrik ekrations
+
+380
+01:32:37,819 --> 01:32:40,980
+into ekrations
+
+381
+01:32:40,980 --> 01:32:43,060
+y equals
+
+382
+01:32:43,060 --> 01:32:43,980
+f of x
+
+383
+01:32:47,155 --> 01:32:58,735
+We get g of t equals f of little f of t.
+
+384
+01:33:00,876 --> 01:33:14,256
+Here, if little g capital f and small f are
+
+385
+01:33:14,256 --> 01:33:17,876
+Depreciable
+
+386
+01:33:17,876 --> 01:33:20,555
+Functions
+
+387
+01:33:24,180 --> 01:33:26,980
+We can use chain rule.
+
+388
+01:33:34,644 --> 01:33:43,524
+By the chain rule, we obtain the derivative of G with respect to T.
+
+389
+01:33:55,988 --> 01:34:03,108
+We can take the derivative of both sides, this equality with respect to t.
+
+390
+01:34:06,676 --> 01:34:08,996
+Ve use, change rules.
+
+391
+01:34:12,243 --> 01:34:14,503
+Derivative of capital F
+
+392
+01:34:14,503 --> 01:34:21,183
+Derivative of
+
+393
+01:34:21,183 --> 01:34:23,463
+f
+
+394
+01:34:35,060 --> 01:34:40,460
+Finally, we obtain a parametric formula for derivative.
+
+395
+01:34:41,560 --> 01:34:49,760
+We can rewrite this equality in terms of x, y.
+
+396
+01:34:50,660 --> 01:35:03,360
+Because x equals f of t, y equals g of t, and y equals F of x.
+
+397
+01:35:05,060 --> 01:35:09,260
+Let's substitute them into this equality.
+
+398
+01:35:10,860 --> 01:35:22,460
+Derivative of g with respect to t means derivative of y with respect to t.
+
+399
+01:35:23,860 --> 01:35:24,960
+They are the same.
+
+400
+01:35:24,960 --> 01:35:39,520
+Derivative of f means derivative of y with respect to x.
+
+401
+01:35:40,160 --> 01:35:42,560
+Because of this equality.
+
+402
+01:35:42,560 --> 01:36:09,360
+T.
+
+403
+01:35:48,212 --> 01:36:00,892
+This is x. Derivative of capital F with respect to x means derivative of y with respect to x. They are same.
+
+404
+01:36:05,108 --> 01:36:12,668
+This means derivative of x with respect to t.
+
+405
+01:36:17,747 --> 01:36:18,667
+This is...
+
+406
+01:36:22,931 --> 01:36:25,891
+parametrik formula for derivat.
+
+407
+01:36:31,604 --> 01:36:32,003
+Here.
+
+408
+01:36:34,484 --> 01:36:35,043
+If.
+
+409
+01:36:40,083 --> 01:36:41,523
+x over dt,
+
+410
+01:36:43,764 --> 01:36:47,043
+that is f' t,
+
+411
+01:36:48,483 --> 01:36:50,083
+is different from zero,
+
+412
+01:36:51,684 --> 01:36:59,043
+we can solve this equality for dy over dx.
+
+413
+01:37:03,380 --> 01:37:07,480
+So, we can rewrite this equality like that.
+
+414
+01:37:08,060 --> 01:37:23,579
+dy over dx equals dy over dx equals dy over dt dx over dt.
+
+415
+01:37:40,500 --> 01:37:44,100
+Matrik, formula.
+
+416
+01:38:04,659 --> 01:38:12,819
+Parametric, if a curve given by parametric equations
+
+417
+01:38:17,043 --> 01:38:21,344
+We can calculate by using this formula.
+
+418
+01:38:25,268 --> 01:38:36,247
+Directly, derivative of y with respect to x, without calculating algebraic equation.
+
+419
+01:39:12,115 --> 01:39:12,836
+Diyan, dağd.
+
+420
+01:39:16,051 --> 01:39:17,091
+The Slop.
+
+421
+01:39:21,524 --> 01:39:22,744
+Opt tangent
+
+422
+01:39:26,579 --> 01:39:27,539
+Bu da kar.
+
+423
+01:39:33,076 --> 01:39:46,555
+At a point x, y is dy over dx.
+
+424
+01:39:52,435 --> 01:39:53,576
+İnanın, bu.
+
+425
+01:39:58,771 --> 01:39:59,171
+So.
+
+426
+01:40:08,148 --> 01:40:09,648
+parametrik formula
+
+427
+01:40:13,427 --> 01:40:15,427
+Order bakıyor.
+
+428
+01:40:22,771 --> 01:40:23,992
+You can find
+
+429
+01:40:23,992 --> 01:40:27,572
+Tangent
+
+430
+01:40:31,699 --> 01:40:36,380
+Line, parametrik,
+
+431
+01:40:40,148 --> 01:40:52,148
+...
+
+432
+01:40:53,524 --> 01:40:54,704
+Parameter.
+
+433
+01:41:04,275 --> 01:41:04,796
+Particular.
+
+434
+01:41:08,787 --> 01:41:25,667
+If dy over dt equals zero, please look at the formula, we get the slope equals zero.
+
+435
+01:41:27,027 --> 01:41:28,067
+That means,
+
+436
+01:41:32,275 --> 01:41:39,456
+The curve has a horizontal tangent.
+
+437
+01:41:49,524 --> 01:41:51,584
+This means the attack, the head.
+
+438
+01:41:55,283 --> 01:42:19,763
+If denominator 0, dx over dt equals 0, so slope becomes infinity. This means the curve has a vertical tangent.
+
+439
+01:42:19,763 --> 01:42:27,043
+This means decay dead.
+
+440
+01:42:31,636 --> 01:42:35,416
+We can calculate second order derivative.
+
+441
+01:42:43,988 --> 01:43:04,467
+So, to evaluate second order derivative of y with respect to x, we replace y by y over dx in the formula.
+
+442
+01:43:16,659 --> 01:43:30,819
+This formula dy over dx equals dy over dt dx over dt. We need a second derivative.
+
+443
+01:43:32,899 --> 01:43:36,019
+So this means derivative of derivative.
+
+444
+01:43:42,355 --> 01:44:01,295
+So, we substitute dy over dx into this formula, d over dt, dy over dt, dx over dt, okay?
+
+445
+01:44:21,555 --> 01:44:22,795
+Look at the examples.
+
+446
+01:44:24,235 --> 01:44:24,995
+For example,
+
+447
+01:44:32,307 --> 01:44:33,167
+ve tangent
+
+448
+01:44:36,627 --> 01:44:39,688
+Tutun, parametrik.
+
+449
+01:44:44,180 --> 01:45:02,820
+x equals secant t, y equals tangent t, x and the interval minus pi over 2, pi over 2.
+
+450
+01:45:06,020 --> 01:45:11,060
+We just use the formula for slope.
+
+451
+01:45:14,180 --> 01:45:21,940
+We want to write the formula of this tangent line.
+
+452
+01:45:23,940 --> 01:45:25,619
+We need the coordinates.
+
+453
+01:45:29,363 --> 01:45:35,363
+Bu ne?
+
+454
+01:45:40,404 --> 01:45:42,404
+root 2, 1
+
+455
+01:45:42,404 --> 01:45:46,404
+we must give the point of course
+
+456
+01:45:48,404 --> 01:45:52,404
+b, 1
+
+457
+01:45:52,404 --> 01:45:54,404
+equals slope
+
+458
+01:45:54,404 --> 01:45:58,404
+times x minus
+
+459
+01:45:58,404 --> 01:46:00,404
+root 2
+
+460
+01:46:00,404 --> 01:46:02,404
+we need slope
+
+461
+01:46:02,404 --> 01:46:04,404
+we calculate
+
+462
+01:46:04,404 --> 01:46:06,404
+derivates
+
+463
+01:46:06,404 --> 01:46:08,404
+we have
+
+464
+01:46:08,404 --> 01:46:10,404
+parametric equation
+
+465
+01:46:10,404 --> 01:46:12,404
+we need
+
+466
+01:46:12,404 --> 01:46:14,404
+the formula
+
+467
+01:46:14,404 --> 01:46:16,404
+parametric formula
+
+468
+01:46:16,404 --> 01:46:18,404
+or derivative
+
+469
+01:46:18,404 --> 01:46:20,404
+dy over dt
+
+470
+01:46:20,404 --> 01:46:22,404
+dx over dt
+
+471
+01:46:22,404 --> 01:46:24,404
+what is derivative of y
+
+472
+01:46:24,404 --> 01:46:26,404
+with respect to t
+
+473
+01:46:26,404 --> 01:46:28,404
+1 plus
+
+474
+01:46:28,404 --> 01:46:30,404
+tangent square t
+
+475
+01:46:30,404 --> 01:46:32,404
+what is derivative of y
+
+476
+01:46:32,404 --> 01:46:34,404
+with respect to t
+
+477
+01:46:34,404 --> 01:46:36,404
+1 plus tangent square t
+
+478
+01:46:36,404 --> 01:46:38,404
+what is
+
+479
+01:46:38,404 --> 01:46:40,404
+the derivative of
+
+480
+01:46:40,404 --> 01:46:42,404
+secant t
+
+481
+01:46:42,404 --> 01:46:44,404
+what is the derivative of
+
+482
+01:46:44,404 --> 01:46:46,404
+secant t
+
+483
+01:46:46,404 --> 01:47:04,404
+what is the derivative of secant t
+
+484
+01:46:46,963 --> 01:46:47,724
+Remember?
+
+485
+01:47:02,003 --> 01:47:10,323
+Ecclesi, sekundsak, t, so we can eliminate this.
+
+486
+01:47:15,060 --> 01:47:27,060
+Ok, the point is given in the question. This point corresponds...
+
+487
+01:47:30,804 --> 01:47:31,564
+Bir şey diye.
+
+488
+01:47:36,372 --> 01:47:41,192
+y equals, second t equals, root 2.
+
+489
+01:47:42,832 --> 01:47:47,692
+Or, y equals, tangent t equals 1.
+
+490
+01:47:52,467 --> 01:48:02,707
+Satisfying this equalities, t equals, can you calculate?
+
+491
+01:48:15,796 --> 01:48:26,115
+Thank you, thank you. Okay. So, we calculate the slope at t eq pi over 4.
+
+492
+01:48:29,155 --> 01:48:35,396
+Secant pi over 4, over tangent pi over 4.
+
+493
+01:48:37,235 --> 01:48:38,436
+This eq...
+
+494
+01:48:42,323 --> 01:48:44,323
+Bu bir şey.
+
+495
+01:48:49,235 --> 01:48:54,715
+Burası, rütun, rütun.
+
+496
+01:48:58,676 --> 01:49:00,676
+Finally, we have
+
+497
+01:49:00,676 --> 01:49:03,356
+tangent
+
+498
+01:49:21,876 --> 01:49:23,336
+Is it clear or not?
+
+499
+01:49:39,988 --> 01:50:04,038
+Of course, let's calculate, for example, this. Okay, [öğrenci], first look at this equation, question. Here, we use formula. Okay. This means,
+
+500
+01:50:08,404 --> 01:50:12,304
+1 over cosine p over 4.
+
+501
+01:50:15,699 --> 01:50:19,059
+Tan 45 equals 1.
+
+502
+01:50:22,644 --> 01:50:27,804
+1 over square root of root 2, 5.
+
+503
+01:50:29,963 --> 01:50:30,923
+This means,
+
+504
+01:50:32,724 --> 01:50:35,123
+if we multiply by root 2,
+
+505
+01:50:36,644 --> 01:50:38,164
+equals root 2.
+
+506
+01:50:46,899 --> 01:50:48,039
+Okay, smile.
+
+507
+01:50:53,011 --> 01:50:54,011
+[öğrenci],
+
+508
+01:50:56,011 --> 01:50:57,011
+you get this
+
+509
+01:50:57,011 --> 01:50:59,011
+question.
+
+510
+01:51:02,011 --> 01:51:03,011
+A curve
+
+511
+01:51:03,011 --> 01:51:04,011
+is
+
+512
+01:51:04,011 --> 01:51:08,011
+defined by
+
+513
+01:51:08,011 --> 01:51:10,011
+.
+
+514
+01:51:12,020 --> 01:51:24,760
+Parimetric equations x equals t squared, y equals t cubed minus 3t.
+
+515
+01:51:39,539 --> 01:51:40,460
+Two tangents.
+
+516
+01:51:46,676 --> 01:51:47,236
+Point.
+
+517
+01:51:51,828 --> 01:51:52,788
+3, 0
+
+518
+01:52:12,948 --> 01:52:17,948
+Tanje, horizontal.
+
+519
+01:52:19,948 --> 01:52:23,948
+Tanje, vertical.
+
+520
+01:52:28,467 --> 01:52:41,047
+Do this second derivative of dy over dx squared. Let's calculate together. We need first derivative.
+
+521
+01:52:41,047 --> 01:52:51,127
+We use the formula dy over dt dx over dt.
+
+522
+01:52:53,927 --> 01:53:02,247
+3t squared minus 3 dx over dt d2t.
+
+523
+01:53:13,524 --> 01:53:17,304
+Now, we can calculate second derivative.
+
+524
+01:53:21,076 --> 01:53:26,076
+For example, we can say this is new function dz.
+
+525
+01:53:30,931 --> 01:53:32,131
+Ok, hurry up.
+
+526
+01:53:33,171 --> 01:53:41,211
+We'll use also formula dz over dt dx over dt.
+
+527
+01:53:43,011 --> 01:53:45,211
+[öğrenci], are you there?
+
+528
+01:53:46,711 --> 01:53:50,631
+Dx over dt we calculated as 2t.
+
+529
+01:53:51,131 --> 01:53:54,411
+We need derivative of z with respect to t.
+
+530
+01:53:59,123 --> 01:54:02,923
+60 times 2t minus
+
+531
+01:54:02,923 --> 01:54:07,403
+times 2
+
+532
+01:54:07,403 --> 01:54:08,403
+over
+
+533
+01:54:08,403 --> 01:54:11,123
+4t square.
+
+534
+01:54:11,943 --> 01:54:12,863
+That's all.
+
+535
+01:54:25,332 --> 01:54:42,572
+İyi dersler gençler. Hemen paylaşacağım arkadaşlarını sizinle paylaşırlar. Kusura bakmayın ders uzadığı için. Size iyi dersler. Ben de bitirdim burada zaten. Sayet anlaşıldı mı? Problem var mı? Türevinin türevi. Aynı kalkulus 1'deki gibi yapıyoruz. Bir fark yok.
+
+536
+01:54:47,828 --> 01:54:51,788
+Eğer yine kafanızda soru kalırsa, yine sorarsınız.
+
+537
+01:54:52,348 --> 01:54:53,488
+Hemen paylaşıyorum.
+
+538
+01:54:54,408 --> 01:54:57,368
+Dersi olmayan arkadaşlarım gruplarında paylaşsınlar.
+
+539
+01:55:01,332 --> 01:55:03,512
+Umarım hepinizin dersi yoktur.
+
+540
+01:55:16,564 --> 01:55:18,463
+Düşüyorum gençler, pdf'e dönüştürme.
+
+541
+01:55:20,524 --> 01:55:22,344
+Evet, geliyor şimdi.
+
+542
+01:56:06,484 --> 01:56:11,224
+İndirebildiğinizde lütfen söyleyin. Bekliyorum indirmenizi.
+
+543
+01:56:28,340 --> 01:56:34,579
+Ben de çok teşekkür ederim. İyi dersler gençler. Kusura bakmayın uzadı biraz ders bugün.

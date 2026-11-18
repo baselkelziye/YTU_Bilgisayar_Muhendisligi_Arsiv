@@ -1,0 +1,2759 @@
+1
+00:00:21,524 --> 00:00:23,743
+Hello, good morning.
+
+2
+00:00:35,444 --> 00:00:36,904
+Günaydın [öğrenci].
+
+3
+00:01:09,939 --> 00:01:11,379
+Welcome, how are you?
+
+4
+00:01:42,260 --> 00:01:44,900
+Thank you [öğrenci], I am fine too.
+
+5
+00:01:58,483 --> 00:02:13,483
+So, today, what will we do? Today, first, we remember to compute the area in polar coordinates.
+
+6
+00:02:13,483 --> 00:02:19,204
+Then, we will calculate the length of polar curves.
+
+7
+00:02:19,204 --> 00:02:29,883
+And then, we will see vectors, lines, and planes in the three-dimensional space.
+
+8
+00:02:39,283 --> 00:02:42,243
+We have too much lecture today.
+
+9
+00:02:44,503 --> 00:02:45,864
+If you are ready.
+
+10
+00:02:50,867 --> 00:02:51,967
+I can start.
+
+11
+00:02:58,003 --> 00:02:58,693
+Atlı,
+
+12
+00:04:08,627 --> 00:04:11,127
+Let's do this example.
+
+13
+00:04:12,927 --> 00:04:19,127
+Find the area of the region.
+
+14
+00:04:25,812 --> 00:04:35,492
+2 times 1 plus 1 cosin theta outside.
+
+15
+00:04:42,612 --> 00:04:44,632
+Eccles 6
+
+16
+00:04:48,947 --> 00:04:49,927
+Çok sağ olun, teta.
+
+17
+00:04:54,324 --> 00:04:57,264
+Do you remember the name of this curve?
+
+18
+00:05:15,283 --> 00:05:16,623
+Can you say please?
+
+19
+00:05:22,740 --> 00:05:26,540
+What is the name of the curve of this function?
+
+20
+00:05:30,067 --> 00:05:31,347
+Kardiyot, yes.
+
+21
+00:05:34,932 --> 00:05:43,092
+Can you say the another curve? This is another special curve, circle. Yes, that's true.
+
+22
+00:05:44,831 --> 00:05:52,632
+To calculate this desired area, first we must draw the curves.
+
+23
+00:06:01,747 --> 00:06:06,387
+Both of them involve the cosine function.
+
+24
+00:06:06,387 --> 00:06:12,447
+Since cosine function is symmetric about x-axis,
+
+25
+00:06:13,108 --> 00:06:19,447
+so this region will be symmetric about x-axis.
+
+26
+00:06:20,247 --> 00:06:23,947
+First, draw the cardioid.
+
+27
+00:06:23,947 --> 00:06:38,947
+For the value of theta equals 0, r equals 4.
+
+28
+00:06:38,947 --> 00:06:47,947
+So this curve passing through the origin, n.
+
+29
+00:06:51,699 --> 00:07:00,819
+...the point for zero, so we can draw the card like that.
+
+30
+00:07:02,579 --> 00:07:05,620
+...the coordinates of this point to...
+
+31
+00:07:07,060 --> 00:07:08,139
+...fi over two.
+
+32
+00:07:09,459 --> 00:07:13,419
+And then we draw the circle.
+
+33
+00:07:13,419 --> 00:07:22,060
+...for value theta equals zero, we calculate r equals six.
+
+34
+00:07:28,403 --> 00:07:35,403
+ile ilgili bir şekilde, r-eq3 ile ilgili bir şekilde,
+
+35
+00:07:58,355 --> 00:08:01,615
+This is circle.
+
+36
+00:08:06,420 --> 00:08:07,580
+This is...
+
+37
+00:08:22,579 --> 00:08:28,139
+This area inside, cardioid outside circle.
+
+38
+00:08:34,292 --> 00:08:38,951
+Inside, cardioid, outside, circle.
+
+39
+00:08:40,951 --> 00:08:44,951
+Can you determine this area?
+
+40
+00:08:56,340 --> 00:09:03,700
+Bu, bu, shaded area is decided to calculate.
+
+41
+00:09:08,596 --> 00:09:20,596
+First, draw the curves and determine the side region and then compute the intersection points of the curves.
+
+42
+00:09:22,735 --> 00:09:28,015
+To do this, equate the given functions.
+
+43
+00:09:33,716 --> 00:09:48,395
+Compute intersection points, equate given functions.
+
+44
+00:09:48,395 --> 00:10:00,515
+The solution of this equality, sine theta equals 1 over 2.
+
+45
+00:10:02,115 --> 00:10:10,716
+So, theta must be pi over 3 or minus pi over 3.
+
+46
+00:10:26,259 --> 00:10:53,460
+This means the line theta equals pi over 3 passing through this point and another line theta equals pi over 3 passing through the another intersection point, this point.
+
+47
+00:11:10,451 --> 00:11:13,511
+We can calculate the area.
+
+48
+00:11:15,772 --> 00:11:18,251
+How can we do this?
+
+49
+00:11:19,951 --> 00:11:27,511
+The site area is calculated by subtracting area inside the circle.
+
+50
+00:11:32,340 --> 00:11:35,320
+The area inside the cardioid.
+
+51
+00:11:53,716 --> 00:11:59,156
+We calculate this area.
+
+52
+00:12:04,083 --> 00:12:08,043
+ve kalbiyatı,
+
+53
+00:12:21,940 --> 00:12:26,440
+Decide area, equals, subtract.
+
+54
+00:12:30,419 --> 00:12:34,719
+Minus A1 from A2.
+
+55
+00:12:53,235 --> 00:12:53,855
+Sımetri.
+
+56
+00:12:58,035 --> 00:13:04,815
+So, first, we can calculate semi-area.
+
+57
+00:13:08,980 --> 00:13:12,360
+From formula, don't forget this constant.
+
+58
+00:13:14,879 --> 00:13:19,500
+And then calculate A2.
+
+59
+00:13:25,491 --> 00:13:30,072
+Can you say the bonds of this integral?
+
+60
+00:13:34,707 --> 00:13:46,648
+Formula, we can write the integrant as the formula of cardioids square d theta.
+
+61
+00:13:51,475 --> 00:13:58,796
+Can you say the bands of this integral?
+
+62
+00:14:08,115 --> 00:14:38,115
+Bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu bölüm
+
+63
+00:14:38,115 --> 00:14:56,355
+bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu böl
+
+64
+00:14:59,668 --> 00:15:00,327
+integral.
+
+65
+00:15:11,187 --> 00:15:16,008
+5 over 3, 5 over 2, that's true, that's all.
+
+66
+00:15:31,668 --> 00:15:34,087
+You can do this calculation.
+
+67
+00:15:38,580 --> 00:15:41,660
+I just solution.
+
+68
+00:15:43,400 --> 00:15:43,780
+Okay.
+
+69
+00:15:51,764 --> 00:15:54,204
+Any question about this example?
+
+70
+00:15:56,283 --> 00:15:57,484
+Any problem?
+
+71
+00:16:30,803 --> 00:16:50,323
+Determine, this line, this intersection point, and first we draw this line. And we want to calculate this area.
+
+72
+00:16:50,323 --> 00:17:10,163
+To determine the interval of theta, first draw arbitrary line in this region.
+
+73
+00:17:29,268 --> 00:17:38,538
+x'e x
+
+74
+00:17:41,652 --> 00:17:54,751
+Antepoints, here, this line, makes the angel width x-axis, y-over, 2.
+
+75
+00:18:00,980 --> 00:18:23,620
+Bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu bölüm
+
+76
+00:18:28,211 --> 00:18:29,331
+Bye, mradian.
+
+77
+00:18:38,099 --> 00:18:38,699
+İzmir.
+
+78
+00:18:44,084 --> 00:18:44,644
+Any problem?
+
+79
+00:19:31,539 --> 00:19:50,339
+So, the length of a polar curve r equals f of theta from theta equals alpha to theta equals beta.
+
+80
+00:20:10,228 --> 00:20:40,228
+Bu, bu
+
+81
+00:20:40,228 --> 00:20:42,347
+Cartesian coordinate.
+
+82
+00:20:44,128 --> 00:20:52,188
+Here R is given in terms of theta as F of theta.
+
+83
+00:20:53,108 --> 00:21:00,748
+We substitute F of theta instead of R sine theta.
+
+84
+00:21:00,748 --> 00:21:08,708
+The interval of theta is given as alpha beta.
+
+85
+00:21:10,228 --> 00:21:11,768
+Finally, we
+
+86
+00:21:15,124 --> 00:21:17,683
+Parametrize, bu.
+
+87
+00:21:21,044 --> 00:21:21,644
+Tamam.
+
+88
+00:21:25,332 --> 00:21:26,112
+Like that.
+
+89
+00:21:50,291 --> 00:21:51,451
+Perimetrik curve,
+
+90
+00:21:52,911 --> 00:21:53,751
+The formula
+
+91
+00:21:53,751 --> 00:21:57,871
+Of
+
+92
+00:21:57,871 --> 00:22:00,631
+The length
+
+93
+00:22:04,660 --> 00:22:06,279
+parametrik, kürler.
+
+94
+00:22:13,460 --> 00:22:23,660
+[öğrenci], the interval of parametri, parametri, alpha, beta, square root of,
+
+95
+00:22:26,340 --> 00:22:28,160
+derivative of x,
+
+96
+00:22:30,039 --> 00:22:32,140
+with respect to parameter,
+
+97
+00:22:33,140 --> 00:22:36,220
+square, and derivative of y,
+
+98
+00:22:37,900 --> 00:22:39,100
+with respect to theta,
+
+99
+00:22:39,980 --> 00:22:41,860
+squared, din theta.
+
+100
+00:22:43,460 --> 00:22:49,140
+Now, we need the derivative of x and y.
+
+101
+00:22:54,963 --> 00:22:57,403
+What is dx over dt?
+
+102
+00:22:59,963 --> 00:23:04,844
+We must use the product rule of differentiation with respect to theta.
+
+103
+00:23:12,051 --> 00:23:32,991
+x over dt, eqs, f prime theta, cosine theta, plus f of theta, minus sine theta, which is dy over dt, f prime sine theta, plus f cosine theta.
+
+104
+00:23:40,852 --> 00:23:42,812
+x over dt2.
+
+105
+00:24:10,355 --> 00:24:10,836
+End.
+
+106
+00:24:32,084 --> 00:24:36,584
+We find f' data squared.
+
+107
+00:24:41,460 --> 00:24:43,579
+Please look at the second terms.
+
+108
+00:24:45,019 --> 00:24:47,059
+Second term squared.
+
+109
+00:24:48,420 --> 00:24:51,000
+And at them,
+
+110
+00:24:51,779 --> 00:24:52,700
+we find
+
+111
+00:24:52,700 --> 00:24:55,700
+f theta squared.
+
+112
+00:24:57,440 --> 00:24:59,500
+We know this
+
+113
+00:24:59,500 --> 00:25:01,900
+relation about
+
+114
+00:25:01,900 --> 00:25:04,579
+sine and cosine functions.
+
+115
+00:25:07,220 --> 00:25:09,620
+We have more term,
+
+116
+00:25:09,799 --> 00:25:10,279
+I know.
+
+117
+00:25:11,460 --> 00:25:13,779
+This term will be
+
+118
+00:25:13,779 --> 00:25:17,279
+minus
+
+119
+00:25:17,279 --> 00:25:18,920
+2
+
+120
+00:25:18,920 --> 00:25:20,380
+f times
+
+121
+00:25:20,380 --> 00:25:21,340
+f prime
+
+122
+00:25:21,340 --> 00:25:22,100
+cosine
+
+123
+00:25:22,100 --> 00:25:24,160
+and sine
+
+124
+00:25:24,160 --> 00:25:27,319
+and
+
+125
+00:25:31,347 --> 00:25:46,067
+We will get the second equality to f f prime sine theta cosine theta. So we can simplify these terms.
+
+126
+00:25:46,067 --> 00:26:01,067
+Finally, our formula becomes f prime theta squared plus f of theta squared d theta.
+
+127
+00:26:01,347 --> 00:26:02,788
+That's all.
+
+128
+00:26:06,259 --> 00:26:32,980
+We can rewrite this formula, r x f of theta, we can write r prime r d r d t squared plus r squared d t, they are same.
+
+129
+00:26:44,756 --> 00:26:46,256
+Any question about formula?
+
+130
+00:26:58,259 --> 00:27:01,500
+We can do
+
+131
+00:27:01,500 --> 00:27:03,879
+example
+
+132
+00:27:03,879 --> 00:27:05,680
+find
+
+133
+00:27:14,612 --> 00:27:19,612
+r equals 1 minus cosine theta.
+
+134
+00:27:26,132 --> 00:27:28,362
+Skaç... Skaç
+
+135
+00:27:31,508 --> 00:27:34,988
+You can use symmetry.
+
+136
+00:27:41,940 --> 00:27:44,100
+And then write formula.
+
+137
+00:27:47,731 --> 00:28:07,372
+function is this. We need derivative of this function. We will find sin theta square root of sin squared plus r squared.
+
+138
+00:28:15,604 --> 00:28:18,203
+Can you say the bond of integral?
+
+139
+00:28:37,460 --> 00:28:41,299
+0, 2 pi.
+
+140
+00:28:42,380 --> 00:28:43,059
+Yes.
+
+141
+00:28:45,740 --> 00:28:48,420
+First remove this parenthesis.
+
+142
+00:28:48,420 --> 00:28:53,500
+1 minus 2 cosine theta plus cosine squared theta.
+
+143
+00:28:54,940 --> 00:29:07,140
+So we get 2 times 1 minus cosine theta b theta.
+
+144
+00:29:07,460 --> 00:29:18,860
+Here you must use semi-angel relation.
+
+145
+00:29:22,387 --> 00:29:24,067
+In terms of sine theta,
+
+146
+00:29:27,859 --> 00:29:31,459
+Minus 2, sin square.
+
+147
+00:29:35,443 --> 00:29:42,923
+sin, sükar teta, x, ben, 1, minus, kosin, 2, a.
+
+148
+00:30:34,675 --> 00:30:36,675
+I must write here too.
+
+149
+00:30:43,635 --> 00:30:44,276
+4
+
+150
+00:30:50,451 --> 00:30:56,352
+sin squared theta over 2 d theta.
+
+151
+00:31:08,115 --> 00:31:12,435
+2 sin theta over 2
+
+152
+00:31:14,355 --> 00:31:15,155
+e theta
+
+153
+00:31:15,796 --> 00:31:19,715
+equals minus 4 cos theta over 2
+
+154
+00:31:21,955 --> 00:31:23,715
+and we get
+
+155
+00:31:25,955 --> 00:31:26,516
+4
+
+156
+00:31:54,099 --> 00:31:54,740
+Any questions?
+
+157
+00:32:17,715 --> 00:32:18,075
+Problem.
+
+158
+00:32:21,075 --> 00:32:23,675
+You can do this yourself.
+
+159
+00:32:25,715 --> 00:32:27,715
+Time to learn
+
+160
+00:32:29,515 --> 00:32:31,915
+of the following curves.
+
+161
+00:32:33,475 --> 00:32:34,715
+Following curves.
+
+162
+00:32:44,243 --> 00:32:44,723
+Do it.
+
+163
+00:32:57,748 --> 00:33:05,827
+Here you will find 8, here you will find this number.
+
+164
+00:33:19,508 --> 00:33:22,968
+Another homework, this is exam question.
+
+165
+00:33:30,963 --> 00:33:31,844
+Araya.
+
+166
+00:33:36,147 --> 00:33:37,147
+Evet, evet.
+
+167
+00:33:41,971 --> 00:33:54,511
+Enclosed by, r equals 2, r equals 4, sine theta, r sine theta equals 3.
+
+168
+00:33:55,511 --> 00:33:59,852
+You know this and this curve.
+
+169
+00:34:01,991 --> 00:34:05,091
+We remember this graph.
+
+170
+00:34:08,724 --> 00:34:14,943
+Please convert this polar coordinate to Cartesian coordinate.
+
+171
+00:34:30,483 --> 00:34:37,003
+This polar implicit function represents
+
+172
+00:34:59,795 --> 00:35:19,915
+Don't forget the polar coordinates and Cartesian coordinates. Don't forget the relations between polar coordinates and Cartesian coordinates. X equals R cos theta, Y equals R sin theta.
+
+173
+00:35:19,915 --> 00:35:48,255
+Here R sin theta equals Y. So this graph represents a horizontal line. You know this a circle. You know this another circle. First row,
+
+174
+00:35:49,915 --> 00:36:07,915
+this curves, this graphs and determine the side area. And then by using the formula you can write, you can calculate.
+
+175
+00:36:11,188 --> 00:36:11,748
+Araya.
+
+176
+00:36:16,563 --> 00:36:18,423
+Another exam question.
+
+177
+00:36:27,635 --> 00:36:35,556
+Calculate the region
+
+178
+00:36:38,115 --> 00:36:50,436
+inside r equals 2 sin theta and outside r equals 2 cos theta.
+
+179
+00:36:50,436 --> 00:36:59,235
+This and this, both of them.
+
+180
+00:37:01,364 --> 00:37:04,624
+Which one? Mark 2. This is Mark 2.
+
+181
+00:37:15,923 --> 00:37:17,923
+Evet, bu.
+
+182
+00:37:21,684 --> 00:37:27,684
+This is answer this question exactly.
+
+183
+00:37:28,884 --> 00:37:29,844
+You can write.
+
+184
+00:37:33,204 --> 00:37:35,684
+You cannot understand this.
+
+185
+00:37:45,204 --> 00:37:48,284
+This is just solution.
+
+186
+00:37:51,987 --> 00:38:18,567
+This and this represent circles. You can draw these circles and determine shaded area. And then write, no we have no symmetry here.
+
+187
+00:38:23,476 --> 00:38:30,016
+This is R2, R1, R2 squared minus R1 squared d theta.
+
+188
+00:38:31,155 --> 00:38:32,056
+You can write.
+
+189
+00:38:36,056 --> 00:38:37,376
+Dancers, yes.
+
+190
+00:39:10,099 --> 00:39:12,099
+There is mistake, of course.
+
+191
+00:39:13,339 --> 00:39:15,980
+It will be, too. Say it, thank you.
+
+192
+00:39:28,500 --> 00:39:38,260
+Today, I will give you some questions to study your exam.
+
+193
+00:39:52,115 --> 00:39:57,315
+As, another subject, vektörs, and
+
+194
+00:40:02,132 --> 00:40:03,512
+Geometry of
+
+195
+00:40:19,507 --> 00:40:21,507
+Vektörs
+
+196
+00:40:21,507 --> 00:40:23,507
+I used to
+
+197
+00:40:28,980 --> 00:40:29,320
+Hadi.
+
+198
+00:40:35,027 --> 00:40:38,587
+Geometry of Space.
+
+199
+00:40:41,487 --> 00:40:42,647
+Vargaday.
+
+200
+00:40:46,675 --> 00:40:47,275
+Gül.
+
+201
+00:42:10,356 --> 00:42:17,356
+ve
+
+202
+00:42:18,003 --> 00:42:20,284
+3 direct lines,
+
+203
+00:42:22,284 --> 00:42:24,003
+pressing through the origin.
+
+204
+00:42:29,460 --> 00:42:34,960
+that are perpendicular to each other.
+
+205
+00:42:42,547 --> 00:42:45,127
+X, Y, Z.
+
+206
+00:42:45,367 --> 00:42:50,627
+Each of the lines is called X-axis, Y-axis, Z-axis.
+
+207
+00:43:09,492 --> 00:43:16,711
+3 co-ordinate axes, daha önce 3 co-ordinate planes.
+
+208
+00:43:27,092 --> 00:43:28,692
+X, Y
+
+209
+00:43:32,275 --> 00:43:39,275
+Planes, x, y, y, z, planes.
+
+210
+00:43:45,076 --> 00:43:45,476
+Thanks.
+
+211
+00:43:50,708 --> 00:43:51,847
+Zatı, plain.
+
+212
+00:43:58,036 --> 00:44:08,436
+xy-plane yz-plane xz-plane
+
+213
+00:44:09,556 --> 00:44:21,155
+Please look at this figure. xy-plane contains the x-axis and y-axis. yz-plane contains
+
+214
+00:44:21,155 --> 00:44:35,155
+y-axis z-axis. xz-plane contains the x-axis z-axis.
+
+215
+00:44:38,324 --> 00:44:46,884
+Coordinate Planes, x, y, plan.
+
+216
+00:44:58,452 --> 00:45:06,492
+3 co-ordinate plana, devoluz, space, 8 octanes.
+
+217
+00:45:17,811 --> 00:45:21,271
+1 over 8
+
+218
+00:45:21,271 --> 00:45:22,511
+is
+
+219
+00:45:22,511 --> 00:45:26,291
+determined by
+
+220
+00:45:29,907 --> 00:45:36,907
+X, y, z, y.
+
+221
+00:45:43,891 --> 00:45:46,531
+Please remember the x-y-plane.
+
+222
+00:45:48,591 --> 00:45:55,051
+There x- and y-axis divide the x-y-plane into four quadrants.
+
+223
+00:45:55,051 --> 00:46:06,411
+Here, the coordinate planes divide the space into eight octans.
+
+224
+00:46:20,500 --> 00:46:22,500
+Evet.
+
+225
+00:46:35,923 --> 00:46:43,923
+Y, Z, because any point in the space P.
+
+226
+00:46:45,923 --> 00:46:50,923
+Consider any point P and space,
+
+227
+00:46:50,923 --> 00:46:56,923
+first change these coordinates as ABC.
+
+228
+00:46:56,923 --> 00:46:58,923
+Here.
+
+229
+00:47:07,764 --> 00:47:09,443
+A Rectangular Box
+
+230
+00:47:12,820 --> 00:47:15,980
+To define, koordinat.
+
+231
+00:47:46,195 --> 00:47:47,715
+Airektangular box.
+
+232
+00:47:53,811 --> 00:48:00,811
+ve
+
+233
+00:48:01,684 --> 00:48:29,354
+A'ın yz'ı
+
+234
+00:48:36,340 --> 00:48:43,120
+What is the means of B? B is the distance from X, Z plane.
+
+235
+00:48:47,827 --> 00:48:51,827
+to P, B.
+
+236
+00:48:54,387 --> 00:49:03,507
+What is the means of third coordinate of this point C? C is the distance from yz-plane
+
+237
+00:49:06,628 --> 00:49:07,507
+to P.
+
+238
+00:49:27,027 --> 00:49:29,027
+Bu yüzeyj yüzey.
+
+239
+00:49:29,027 --> 00:49:35,027
+Bu yüzey.
+
+240
+00:49:51,539 --> 00:50:05,860
+Y'e
+
+241
+00:50:11,315 --> 00:50:18,315
+Bu çözüm, Q'ya
+
+242
+00:50:18,315 --> 00:50:21,315
+proj.
+
+243
+00:50:21,315 --> 00:50:25,315
+P'ye xy.
+
+244
+00:50:25,315 --> 00:50:31,315
+Can you say the coordinates of Q?
+
+245
+00:50:52,036 --> 00:50:55,856
+Q'ya
+
+246
+00:50:55,856 --> 00:50:56,856
+projeciterin
+
+247
+00:50:56,856 --> 00:50:57,816
+P'ye
+
+248
+00:50:57,816 --> 00:50:59,976
+on xy
+
+249
+00:51:07,891 --> 00:51:14,911
+A, B, [öğrenci], don't forget the third coordinate, we are in space.
+
+250
+00:51:16,471 --> 00:51:19,131
+What is the coordinate of S?
+
+251
+00:51:31,891 --> 00:51:33,891
+0, c
+
+252
+00:51:35,891 --> 00:51:41,891
+Bu point A
+
+253
+00:51:50,996 --> 00:51:52,695
+A, 0, 0.
+
+254
+00:51:54,376 --> 00:51:55,076
+Here,
+
+255
+00:51:56,816 --> 00:51:58,376
+let's denite B.
+
+256
+00:51:59,816 --> 00:52:00,615
+B,
+
+257
+00:52:09,427 --> 00:52:34,027
+0, v 0, we have here c, 0, 0, c, and we need last point r, r is the projection p on y z, the coordinates of r.
+
+258
+00:52:47,987 --> 00:52:50,627
+0, b, c.
+
+259
+00:52:51,887 --> 00:52:52,527
+Ok.
+
+260
+00:53:04,916 --> 00:53:14,996
+Partizian Product R, R, R, R, R, R, R, Q, is the set of,
+
+261
+00:53:18,996 --> 00:53:34,036
+All order triples x with x, y, z real numbers is denoted by r3.
+
+262
+00:53:34,036 --> 00:53:39,516
+It is called a three-dimensional rectangular coordinate system.
+
+263
+00:53:40,715 --> 00:53:46,715
+This is m3 dimensional.
+
+264
+00:53:50,931 --> 00:53:57,551
+Entangular Coordinate System
+
+265
+00:54:04,115 --> 00:54:16,315
+An equation or inequality involving the three variable x, y, z defines a subset of points in space.
+
+266
+00:54:31,251 --> 00:54:37,951
+because coordinates satisfy this equality or inequality.
+
+267
+00:54:45,331 --> 00:54:52,331
+İkincisi, ve
+
+268
+00:55:02,356 --> 00:55:05,036
+x equals 0
+
+269
+00:55:10,931 --> 00:55:40,791
+does not contain the variables y and z. So, this equation represents all points with coordinates x, sorry, 0, x equals 0, y, z.
+
+270
+00:55:40,931 --> 00:55:48,931
+Here y and z are any real numbers. That is,
+
+271
+00:55:52,692 --> 00:55:57,012
+D, Y, Z, Play.
+
+272
+00:56:05,940 --> 00:56:22,599
+In a similar way, the standard equation of xy plane is, can you say, this equation?
+
+273
+00:56:26,996 --> 00:56:38,115
+Y, Z, X, Y, and X, Z, plane, is, can I say, this and this equation?
+
+274
+00:56:49,268 --> 00:57:13,447
+xy, y,
+
+275
+00:57:20,211 --> 00:57:33,612
+This equation represents all points with x, y, 2.
+
+276
+00:57:37,364 --> 00:57:43,523
+Bu bir tane daha. Bu bir tane daha.
+
+277
+00:57:45,324 --> 00:57:55,244
+Bu bir tane daha.
+
+278
+00:58:11,635 --> 00:58:13,635
+002
+
+279
+00:58:17,364 --> 00:58:41,384
+Bu ekranı için y'e y'
+
+280
+00:58:44,628 --> 00:58:45,128
+İkhan.
+
+281
+00:59:11,956 --> 00:59:18,276
+Dön, bu, z-acustör.
+
+282
+00:59:29,204 --> 00:59:43,494
+Bu, bu, y'eq 3'e
+
+283
+00:59:48,244 --> 00:59:57,884
+Vertical plane parallel to, can you say?
+
+284
+01:00:05,108 --> 01:00:11,008
+X, Z, blank, or Y equals zero.
+
+285
+01:00:11,008 --> 01:00:12,048
+Thank you.
+
+286
+01:00:25,876 --> 01:00:29,036
+ve bu nokta, 0, 3, 0.
+
+287
+01:00:34,771 --> 01:00:45,511
+Similarly, you can interpret the equation x plus, for example, minus 4.
+
+288
+01:01:03,956 --> 01:01:05,956
+Subtitle Distanç
+
+289
+01:01:25,715 --> 01:01:26,955
+Distance between
+
+290
+01:01:37,811 --> 01:01:38,311
+Evet.
+
+291
+01:01:50,003 --> 01:02:02,953
+Bu point P1'e bu point X1'e bu point X1'e bu point X1'e bu point X1'e bu point X2'e bu point X2'e bu point X2'e bu point X2'e bu point X2'e bu point X2'e bu point X2'e bu point X2'e bu point X2'e bu point X2'e bu point X2'e bu point X2'e bu point X2'e bu point X2'e bu point X2'e bu point X2'e bu point X2'e bu point X2'e bu point X2'e bu point X2'e bu point X2'e bu point X2'e bu point X2'e bu point X2'e bu point X2'e bu point X2'e bu point X2'e bu point X2'e bu point X2'e bu point X2'e bu point X2'e bu point X2'e bu
+
+292
+01:02:09,780 --> 01:02:23,940
+To calculate the distance between p1 and p2, first we draw a rectangular box in space.
+
+293
+01:02:53,844 --> 01:02:54,844
+Evet.
+
+294
+01:03:07,507 --> 01:03:09,587
+Gidiyoruz.
+
+295
+01:03:43,347 --> 01:03:50,847
+If you want to calculate this line segment,
+
+296
+01:04:07,155 --> 01:04:10,476
+B and A.
+
+297
+01:04:10,476 --> 01:04:33,996
+Please look at this triangle. This is right triangle because this angel is 90 degree. And please look at the P1, B and P2 triangle. This is another right triangle because this angel is 90 degree.
+
+298
+01:04:33,996 --> 01:04:38,496
+B1, A, B.
+
+299
+01:04:38,496 --> 01:04:52,056
+This is right angle, triangle and another P1, B and P2 triangle.
+
+300
+01:04:52,056 --> 01:05:01,056
+We can apply two phytograms theorem.
+
+301
+01:05:06,931 --> 01:05:12,931
+We apply two Pythagore Theorem to this triangle.
+
+302
+01:05:21,876 --> 01:05:36,636
+P1P2 squared equals P1B squared plus BP2 squared.
+
+303
+01:05:36,636 --> 01:05:52,096
+P1A squared plus AB squared.
+
+304
+01:06:03,092 --> 01:06:12,711
+B'nin bu coordenası, bu kadar bu kadar B'nin bu kadar B'nin bu kadar B'nin bu kadar B'nin bu kadar B'nin bu kadar B'nin bu kadar B'nin bu kadar B'nin bu kadar B'nin bu kadar B'nin bu kadar B'nin bu kadar B'nin bu kadar B'nin bu kadar B'nin bu kadar B'nin bu kadar B'nin bu kadar B'nin bu kadar B'nin bu kadar B'nin bu kadar B'nin bu kadar B'nin bu kadar B'nin bu kadar B'nin bu kadar B'nin bu kadar B'nin bu kadar B'nin bu kadar B'nin bu kadar B'nin bu kadar B'nin bu kadar B'nin bu kadar B'nin bu kadar B'nin bu kadar B'nin bu kadar B'nin bu kadar B'nin bu kadar B'nin bu kadar B'nin bu kadar B'nin bu kadar B'nin bu kadar B'nin bu kadar B'nin bu kadar B'nin bu kadar B
+
+305
+01:06:19,347 --> 01:06:24,347
+P1A, what is the distance P1A?
+
+306
+01:06:28,244 --> 01:06:30,344
+Please look at these coordinates.
+
+307
+01:06:35,219 --> 01:06:38,739
+B1A is parallel to x-axis.
+
+308
+01:06:42,612 --> 01:06:45,112
+Can you say P1A?
+
+309
+01:07:00,724 --> 01:07:05,644
+Thank you. X minus X2 minus X1.
+
+310
+01:07:08,224 --> 01:07:13,184
+AB, where is AB? AB is parallel to Y axis.
+
+311
+01:07:14,084 --> 01:07:21,184
+So, this distance is the difference between Y2 and Y1.
+
+312
+01:07:24,755 --> 01:07:28,855
+Finally, we can calculate the distance P1B.
+
+313
+01:07:28,855 --> 01:07:30,855
+We need...
+
+314
+01:07:34,420 --> 01:07:45,720
+Bbp2, Bbp2, here. This line segment is parallel to z-axis.
+
+315
+01:07:50,675 --> 01:07:58,415
+Z2 ve Z1.
+
+316
+01:08:00,155 --> 01:08:01,275
+Finally,
+
+317
+01:08:02,275 --> 01:08:04,395
+we can calculate
+
+318
+01:08:04,395 --> 01:08:06,235
+the distance
+
+319
+01:08:06,235 --> 01:08:08,415
+between Q1
+
+320
+01:08:08,415 --> 01:08:10,415
+and B2
+
+321
+01:08:10,415 --> 01:08:14,275
+like that.
+
+322
+01:08:35,539 --> 01:08:55,579
+If we know the coordinates of the given points, we can calculate the distance between these points from this formula.
+
+323
+01:08:55,579 --> 01:09:09,039
+By using this formula, we can give an equation of a sphere.
+
+324
+01:09:18,163 --> 01:09:26,903
+Çünkü, sifreye, is the set of all points, x, y, z.
+
+325
+01:09:33,876 --> 01:09:40,876
+Şimdi bu
+
+326
+01:09:45,395 --> 01:09:49,155
+For example, P0, X0, Y0, Z0.
+
+327
+01:09:55,155 --> 01:10:05,155
+This is another point, P, P0, Sphere.
+
+328
+01:10:10,292 --> 01:10:16,652
+P0b, x0, y0, z0.
+
+329
+01:10:34,547 --> 01:10:35,027
+Taylor.
+
+330
+01:10:38,612 --> 01:10:43,771
+P is arbitrary on the sphere.
+
+331
+01:10:46,271 --> 01:10:48,551
+Finally, you can
+
+332
+01:10:48,551 --> 01:10:52,672
+use the distance formula
+
+333
+01:10:56,787 --> 01:11:03,787
+ve
+
+334
+01:11:01,300 --> 01:11:04,100
+You can write the sphere formula.
+
+335
+01:11:10,323 --> 01:11:17,323
+S'feyer'in
+
+336
+01:11:20,564 --> 01:11:21,444
+Reduce
+
+337
+01:11:29,300 --> 01:11:38,779
+vekutlar, if the center is origin,
+
+338
+01:11:51,412 --> 01:12:03,092
+An equation of sprayer at centered origin x square plus y square z square equals r square.
+
+339
+01:12:13,043 --> 01:12:13,623
+Examples?
+
+340
+01:12:38,003 --> 01:12:45,483
+Bu çizgilerin var, y-variable ve z-variable var.
+
+341
+01:12:47,604 --> 01:13:00,764
+Bu çizgilerin bir solide var.
+
+342
+01:13:09,684 --> 01:13:13,304
+So, this is...
+
+343
+01:13:19,347 --> 01:13:27,648
+Interior of Spheres Width
+
+344
+01:13:32,532 --> 01:13:43,252
+Center, origin, radius, r, year, tift.
+
+345
+01:13:53,076 --> 01:13:54,076
+birçok birçok.
+
+346
+01:13:57,756 --> 01:13:58,756
+Birçok birçok.
+
+347
+01:14:12,020 --> 01:14:22,020
+We have one equation and one inequality. Both of them represent...
+
+348
+01:14:32,692 --> 01:14:37,731
+Bela xy-plane, this is xy-plane,
+
+349
+01:14:40,051 --> 01:14:42,292
+Bela xy-plane, of course,
+
+350
+01:14:43,652 --> 01:14:45,811
+Bela xy-plane,
+
+351
+01:14:47,492 --> 01:14:51,891
+We know this represents a sphere,
+
+352
+01:14:53,652 --> 01:15:00,212
+With center origin and radius are equals 2's, so both of them
+
+353
+01:15:00,212 --> 01:15:07,252
+represent lower hemispair.
+
+354
+01:15:43,091 --> 01:15:45,351
+We are in our cube, be careful.
+
+355
+01:15:50,931 --> 01:16:04,931
+If we are in R squared, this represents a circle, but in R cubed, this represents...
+
+356
+01:16:11,347 --> 01:16:12,327
+What do you think?
+
+357
+01:16:17,395 --> 01:16:18,635
+Z is absent.
+
+358
+01:16:20,956 --> 01:16:25,195
+So, this equality represents all points.
+
+359
+01:16:46,996 --> 01:16:49,155
+Z real number.
+
+360
+01:16:51,796 --> 01:16:52,315
+So,
+
+361
+01:16:53,516 --> 01:16:54,195
+this,
+
+362
+01:16:56,876 --> 01:16:58,395
+no, say it,
+
+363
+01:16:59,395 --> 01:17:00,916
+we are in,
+
+364
+01:17:01,956 --> 01:17:03,796
+not xy plane.
+
+365
+01:17:04,355 --> 01:17:06,395
+Yes, in xy plane,
+
+366
+01:17:06,395 --> 01:17:07,636
+this circle,
+
+367
+01:17:08,516 --> 01:17:09,155
+but,
+
+368
+01:17:09,876 --> 01:17:11,676
+in i cube,
+
+369
+01:17:16,372 --> 01:17:41,112
+This is the set of all x, y, z. No, no, no, no. Here, this equation satisfy for all z, for all z real number. So, this region is parallel to z-axis.
+
+370
+01:17:45,043 --> 01:17:46,264
+This region
+
+371
+01:17:46,264 --> 01:17:49,884
+is
+
+372
+01:17:49,884 --> 01:17:52,764
+parallel
+
+373
+01:17:52,764 --> 01:17:54,363
+to z
+
+374
+01:17:54,363 --> 01:17:55,144
+axis
+
+375
+01:18:02,996 --> 01:18:12,036
+Sof, this is a seriler, cilindir.
+
+376
+01:18:19,283 --> 01:18:36,643
+This is passing through to this x square, y square equals 4 and this cylinder passing through.
+
+377
+01:18:55,796 --> 01:18:56,775
+Any problem say it?
+
+378
+01:19:07,475 --> 01:19:11,055
+Can you say this?
+
+379
+01:19:27,091 --> 01:19:32,091
+Bu şimdi horizontal.
+
+380
+01:19:33,091 --> 01:19:37,091
+Bu şimdi vertical.
+
+381
+01:19:43,091 --> 01:19:46,091
+Bu horizontal, circular,
+
+382
+01:19:46,091 --> 01:20:15,091
+bu,
+
+383
+01:19:57,876 --> 01:20:01,876
+Y-axis, y-variable, y-axis.
+
+384
+01:20:01,876 --> 01:20:05,876
+Y-axis, y-axis.
+
+385
+01:20:09,619 --> 01:20:10,460
+Thank you, science.
+
+386
+01:20:22,452 --> 01:20:25,731
+xy z2 equals
+
+387
+01:20:33,524 --> 01:20:33,884
+Okay.
+
+388
+01:20:45,587 --> 01:20:47,367
+This will be one more.
+
+389
+01:20:49,108 --> 01:20:50,228
+This identify.
+
+390
+01:21:01,939 --> 01:21:02,299
+Evet.
+
+391
+01:21:29,108 --> 01:21:36,108
+ve
+
+392
+01:21:48,787 --> 01:21:52,467
+Another example, x equals y.
+
+393
+01:21:56,851 --> 01:21:58,291
+Identify
+
+394
+01:22:04,404 --> 01:23:24,404
+...
+
+395
+01:23:40,051 --> 01:23:42,371
+This plane also contains z-axis.
+
+396
+01:23:45,851 --> 01:23:46,771
+This is
+
+397
+01:23:47,331 --> 01:23:48,612
+var.tiklal
+
+398
+01:23:51,411 --> 01:23:51,971
+line
+
+399
+01:23:53,572 --> 01:23:54,371
+containing
+
+400
+01:23:56,531 --> 01:23:57,331
+line
+
+401
+01:23:58,291 --> 01:23:59,731
+x equals y
+
+402
+01:24:04,595 --> 01:24:06,195
+X, Y, play.
+
+403
+01:24:09,779 --> 01:24:11,019
+ve start axis.
+
+404
+01:24:21,011 --> 01:24:23,112
+Another example, z equals zero.
+
+405
+01:24:24,351 --> 01:24:31,391
+Z equals zero, we know that it is x, y, plane.
+
+406
+01:24:34,836 --> 01:24:37,976
+Y, negatif, y, pozitif.
+
+407
+01:24:45,876 --> 01:24:52,876
+Bu noktaların bu noktaların bu noktalarını
+
+408
+01:26:02,579 --> 01:26:32,559
+İzlediğiniz için, iki tane tane beraber beraber
+
+409
+01:26:19,188 --> 01:26:24,708
+Just, only x equals 1 is a plane.
+
+410
+01:26:27,587 --> 01:26:29,028
+In R cube.
+
+411
+01:26:29,828 --> 01:26:32,228
+This is another plane.
+
+412
+01:26:34,547 --> 01:26:35,868
+In R cube.
+
+413
+01:26:36,108 --> 01:26:36,948
+Both of them.
+
+414
+01:26:39,748 --> 01:26:40,788
+Represent.
+
+415
+01:26:45,140 --> 01:26:45,700
+Come on.
+
+416
+01:27:06,228 --> 01:27:10,108
+We can draw, x equals one.
+
+417
+01:27:11,248 --> 01:27:12,887
+Yes, this is a line.
+
+418
+01:27:21,300 --> 01:27:38,699
+Açıkları bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir
+
+419
+01:28:35,604 --> 01:28:37,624
+We have slide.
+
+420
+01:28:42,452 --> 01:28:46,412
+İntro
+
+421
+01:28:47,132 --> 01:28:49,972
+İlk bir süreç
+
+422
+01:28:51,092 --> 01:28:53,891
+ve sonra
+
+423
+01:28:54,372 --> 01:28:55,452
+ve
+
+424
+01:28:55,452 --> 01:28:56,172
+bir soru
+
+425
+01:28:56,172 --> 01:28:58,172
+ok?
+
+426
+01:28:58,172 --> 01:28:58,891
+Bir soru
+
+427
+01:28:58,891 --> 01:29:02,452
+ne?
+
+428
+01:29:02,452 --> 01:29:04,452
+İntro
+
+429
+01:29:08,851 --> 01:29:10,851
+If no question...
+
+430
+01:29:13,844 --> 01:29:15,444
+See you after the 10 minutes.
+
+431
+01:50:27,220 --> 01:50:27,800
+Hello again.
+
+432
+01:50:33,779 --> 01:50:41,779
+If you are ready, we are going to continue with vectors.
+
+433
+01:51:21,235 --> 01:51:24,135
+İzir, termikler is used.
+
+434
+01:51:27,988 --> 01:51:29,988
+İntro
+
+435
+01:51:38,484 --> 01:51:39,504
+It has
+
+436
+01:51:44,692 --> 01:52:12,692
+...
+
+437
+01:52:12,243 --> 01:52:13,023
+Metricolim.
+
+438
+01:52:26,228 --> 01:52:26,807
+Errol.
+
+439
+01:52:34,804 --> 01:52:36,444
+Directed Line Segment.
+
+440
+01:52:51,347 --> 01:53:07,268
+Initial point of this arrow denoted by the capital letter A, terminal point is denoted by B.
+
+441
+01:53:10,931 --> 01:53:32,931
+ve
+
+442
+01:53:34,355 --> 01:53:35,876
+We can deney it by
+
+443
+01:53:35,876 --> 01:53:39,475
+Single letter
+
+444
+01:53:47,347 --> 01:53:58,587
+Sometimes we write just a without arrow.
+
+445
+01:54:05,779 --> 01:54:31,779
+...
+
+446
+01:54:21,492 --> 01:54:28,492
+Bu şekilde
+
+447
+01:54:36,884 --> 01:54:38,024
+Denet edip by
+
+448
+01:54:38,024 --> 01:54:42,104
+This
+
+449
+01:54:54,292 --> 01:55:08,102
+Ve ve
+
+450
+01:55:11,252 --> 01:55:17,852
+They don't have position.
+
+451
+01:55:38,644 --> 01:55:40,644
+Açıklık
+
+452
+01:55:44,275 --> 01:55:45,815
+If and only if
+
+453
+01:55:45,815 --> 01:55:50,615
+They have the same
+
+454
+01:55:56,180 --> 01:55:56,820
+Evet.
+
+455
+01:56:05,268 --> 01:56:06,268
+Teşekkürler.
+
+456
+01:56:14,100 --> 01:56:19,980
+Let's consider three vector in the plane.
+
+457
+01:56:25,619 --> 01:56:25,979
+Sikon vektör, vek
+
+458
+01:56:25,979 --> 01:56:26,859
+Sikon vektör,
+
+459
+01:56:26,859 --> 01:56:28,460
+vek
+
+460
+01:56:39,380 --> 01:56:44,340
+They are parallel to each other.
+
+461
+01:56:46,500 --> 01:56:50,380
+They have same length.
+
+462
+01:56:55,796 --> 01:56:56,396
+same
+
+463
+01:56:56,396 --> 01:56:58,836
+direction.
+
+464
+01:57:05,011 --> 01:57:11,491
+So, they equals to each other.
+
+465
+01:57:26,644 --> 01:57:27,404
+zero vektör.
+
+466
+01:57:33,555 --> 01:57:38,076
+0 vektör, denited by 0.
+
+467
+01:57:44,787 --> 01:57:47,787
+Length 0.
+
+468
+01:57:47,787 --> 01:57:54,787
+It is the only vector with no specific direction.
+
+469
+01:57:54,787 --> 01:57:59,787
+Has no direction.
+
+470
+01:58:06,292 --> 01:58:07,052
+Unit Vector.
+
+471
+01:58:10,012 --> 01:58:16,352
+Unit Vector has length 1 unit.
+
+472
+01:58:16,352 --> 01:58:18,352
+If...
+
+473
+01:58:23,507 --> 01:58:32,867
+Magnitude of a vector u equals 1, then u is a unit vector.
+
+474
+01:58:44,083 --> 01:58:44,863
+Edişen
+
+475
+01:58:53,108 --> 01:58:54,108
+Geometrically,
+
+476
+01:58:54,108 --> 01:58:58,948
+two vectors
+
+477
+01:58:58,948 --> 01:59:04,068
+u and v
+
+478
+01:59:06,387 --> 01:59:09,188
+we use two methods
+
+479
+01:59:15,667 --> 01:59:22,027
+The first method is the triangle globe.
+
+480
+01:59:30,003 --> 01:59:30,583
+Mijel
+
+481
+01:59:34,163 --> 01:59:34,643
+2
+
+482
+01:59:42,452 --> 01:59:47,132
+W is like that, V is like that.
+
+483
+01:59:55,412 --> 02:00:13,412
+İlk olarak, ilk olarak, ilk olarak, ilk olarak, ilk olarak, ilk olarak, ilk olarak, ilk olarak, ilk olarak, ilk olarak, ilk olarak, ilk olarak, ilk olarak, ilk olarak, ilk olarak, ilk olarak, ilk olarak, ilk olarak, ilk olarak, ilk olarak, ilk olarak, ilk olarak, ilk olarak, ilk olarak, ilk olarak, ilk olarak, ilk olarak, ilk olarak, ilk olarak, ilk olarak, ilk olarak, ilk olarak, ilk olarak, ilk olarak, ilk olarak, ilk olarak, ilk olarak, ilk olarak, ilk olarak, ilk olarak, ilk olarak, ilk olarak, ilk olarak, ilk olarak, ilk olarak, ilk olarak, ilk olarak, ilk olarak, ilk olarak, ilk olarak, ilk olarak, ilk olarak, ilk olarak, ilk olarak, ilk olarak, ilk olarak, ilk olarak, ilk olarak, ilk olarak, ilk olarak, ilk olarak, ilk olarak, ilk olarak, ilk olarak, ilk olarak, ilk olarak, ilk olarak, ilk olarak, ilk olarak, ilk olarak, ilk olarak, ilk olarak, ilk olarak, ilk olarak,
+
+484
+02:00:19,475 --> 02:00:24,295
+Ve tamamen, tamamen, tamamen, tamamen, tamamen, tamamen, tamamen, tamamen, tamamen, tamamen, tamamen, tamamen, tamamen, tamamen, tamamen, tamamen, tamamen, tamamen, tamamen, tamamen, tamamen, tamamen, tamamen, tamamen, tamamen, tamamen, tamamen, tamamen, tamamen, tamamen, tamamen, tamamen, tamamen, tamamen, tamamen, tamamen, tamamen, tamamen, tamamen, tamamen, tamamen, tamamen, tamamen, tamamen, tamamen, tamamen, tamamen, tamamen, tamamen, tamamen, tamamen, tamamen, tamamen, tamamen, tamamen, tamamen, tamamen, tamamen, tamamen, tamamen, tamamen, tamamen, tamamen, tamamen, tamamen, tamamen, tamamen, tamamen, tamamen, tamamen, tamamen, tamamen, tamamen, tamamen,
+
+485
+02:00:28,404 --> 02:00:35,404
+ve
+
+486
+02:00:39,220 --> 02:00:41,500
+İlk önce, birçok.
+
+487
+02:00:46,452 --> 02:00:50,431
+vektör as v,
+
+488
+02:00:55,475 --> 02:01:09,675
+İlk olarak u'ye kadar u'ye kadar u'ye kadar u'ye kadar u'ye kadar u'ye kadar u'ye kadar u'ye kadar u'ye kadar u'ye kadar u'ye kadar u'ye kadar u'ye kadar u'ye kadar u'ye kadar u'ye kadar u'ye kadar u'ye kadar u'ye kadar u'ye kadar u'ye kadar u'ye kadar u'ye kadar u'ye kadar u'ye kadar u'ye kadar u'ye kadar u'ye kadar u'ye kadar u'ye kadar u'ye kadar u'ye kadar u'ye kadar u'ye kadar u'ye kadar u'ye kadar u'ye kadar u'ye kadar u'ye kadar u'ye kadar u'ye kadar u'ye kadar u'ye kadar u'ye kadar u'ye kadar u'ye kadar u'ye kadar u'ye kadar u'ye kadar u'ye kadar u'ye kadar u'ye kadar u'ye kadar u'ye kadar u'ye kadar
+
+489
+02:01:14,644 --> 02:01:21,644
+ve bu noktada
+
+490
+02:01:21,644 --> 02:01:38,644
+bu noktada
+
+491
+02:01:38,644 --> 02:01:39,644
+çünkü
+
+492
+02:01:39,644 --> 02:02:09,644
+bu noktada
+
+493
+02:02:03,283 --> 02:02:12,043
+Another method, second method is,
+
+494
+02:02:15,923 --> 02:02:16,884
+Parallelogram.
+
+495
+02:02:17,884 --> 02:02:18,444
+Oops.
+
+496
+02:02:45,235 --> 02:02:48,235
+vekta u ve v
+
+497
+02:02:52,787 --> 02:03:00,707
+such that the initial points of both of them are at the same point.
+
+498
+02:03:00,707 --> 02:03:05,627
+you
+
+499
+02:03:09,939 --> 02:03:11,179
+place, v.
+
+500
+02:03:15,539 --> 02:03:17,619
+And then, complete.
+
+501
+02:03:23,220 --> 02:03:23,940
+Parallelogram.
+
+502
+02:03:25,680 --> 02:03:30,640
+Finally, we get the sum of these.
+
+503
+02:03:34,484 --> 02:03:35,204
+İpankşim.
+
+504
+02:04:03,123 --> 02:04:11,764
+It's a scalar number and v is a vector.
+
+505
+02:04:11,764 --> 02:04:26,443
+Then scalar multiple k times v is a new vector.
+
+506
+02:04:39,667 --> 02:04:47,447
+k times the length of the given vector.
+
+507
+02:04:51,347 --> 02:04:52,228
+whose direction?
+
+508
+02:04:58,036 --> 02:05:10,596
+same as v. If k positive number is the...
+
+509
+02:05:15,155 --> 02:05:15,716
+O pozit.
+
+510
+02:05:19,252 --> 02:05:23,692
+V if k negative number.
+
+511
+02:05:24,692 --> 02:05:30,412
+For example, V is like that.
+
+512
+02:05:31,772 --> 02:05:33,972
+And if k
+
+513
+02:05:33,972 --> 02:05:36,532
+equals to
+
+514
+02:05:40,180 --> 02:05:46,240
+We get 2v, like that.
+
+515
+02:05:47,420 --> 02:05:57,079
+If k-1, we get minus 1v, like that.
+
+516
+02:06:14,323 --> 02:06:38,373
+If we have two non-zero vectors, and they are scalar multiples of one another, which is u,
+
+517
+02:06:43,188 --> 02:06:43,728
+Dari.
+
+518
+02:06:58,484 --> 02:06:59,004
+Evet.
+
+519
+02:07:35,572 --> 02:07:36,992
+Değer, parada.
+
+520
+02:07:47,956 --> 02:07:54,336
+So, one is called negative.
+
+521
+02:07:58,739 --> 02:08:00,859
+Evet.
+
+522
+02:08:15,699 --> 02:08:33,899
+The addition of a and multiplication by minus one, the vector v. This is the difference of u and v.
+
+523
+02:08:39,155 --> 02:08:47,836
+We can calculate unit vector in direction...
+
+524
+02:08:54,515 --> 02:08:56,715
+Eni vektör, u
+
+525
+02:09:03,028 --> 02:09:14,228
+by multiplication with 1 over magnitude of u, this vector.
+
+526
+02:09:25,043 --> 02:09:39,764
+For example, we have this vector and the length of this vector b2.
+
+527
+02:09:48,595 --> 02:09:51,595
+We can calculate unit vector.
+
+528
+02:10:08,275 --> 02:10:31,315
+V, V equals 1 over 2 times u, because the length of u, 1 over 2 times level, length of u equals,
+
+529
+02:10:48,243 --> 02:10:48,823
+Any question?
+
+530
+02:11:05,652 --> 02:11:15,652
+We define vectors geometrically, but...
+
+531
+02:11:19,412 --> 02:11:28,492
+We can define the vectors algebrically, so that we can be more prized about the direction of a vector.
+
+532
+02:11:37,587 --> 02:12:05,898
+Vector AB is set to be in a position if it is placed such that the initial point
+
+533
+02:12:08,916 --> 02:12:09,456
+Origin.
+
+534
+02:12:16,916 --> 02:12:21,235
+For example, AB is like that.
+
+535
+02:12:23,636 --> 02:12:24,596
+If it...
+
+536
+02:12:35,315 --> 02:12:41,416
+AB in xy-plane.
+
+537
+02:12:41,416 --> 02:12:47,916
+So, we place this vector AB.
+
+538
+02:12:53,076 --> 02:12:56,996
+ve initial point, as origin.
+
+539
+02:12:59,315 --> 02:13:06,676
+So, we say that this vector is in the standard position.
+
+540
+02:13:08,435 --> 02:13:11,155
+Let a be in space.
+
+541
+02:13:14,115 --> 02:13:15,796
+So, we...
+
+542
+02:13:19,475 --> 02:13:26,595
+Place this vector such that the initial point is origin.
+
+543
+02:13:31,028 --> 02:13:35,988
+So, we say that this vector is in the standard position.
+
+544
+02:13:45,587 --> 02:13:47,307
+Vika, spesifle.
+
+545
+02:13:51,252 --> 02:14:05,172
+A vector AB, or single letter A, by writing the coordinates of its terminal point.
+
+546
+02:14:23,731 --> 02:14:36,231
+Let's consider that we are in space and we have an arbitrary vector a in the standard position.
+
+547
+02:14:38,072 --> 02:14:47,332
+And let the terminal point of this vector be p.
+
+548
+02:14:47,332 --> 02:14:54,431
+The coordinates of this point, x, y, z.
+
+549
+02:15:05,076 --> 02:15:17,536
+We can write this vector in terms of coordinates of terminal point x, y, z.
+
+550
+02:15:24,532 --> 02:15:32,471
+If a is a three-dimensional vector,
+
+551
+02:16:37,940 --> 02:16:39,940
+Bir şey
+
+552
+02:16:55,252 --> 02:17:01,072
+V equals, sorry, A equals X, Y, Z.
+
+553
+02:17:06,355 --> 02:17:11,595
+3-dimensional vector is an ordered triple.
+
+554
+02:17:13,896 --> 02:17:15,095
+Like the point.
+
+555
+02:17:17,015 --> 02:17:22,275
+The number x, y, z are called...
+
+556
+02:17:28,275 --> 02:17:33,075
+Componence of Victor.
+
+557
+02:18:10,036 --> 02:18:10,615
+Any questions?
+
+558
+02:18:31,379 --> 02:18:32,179
+AB
+
+559
+02:18:35,860 --> 02:18:39,340
+A
+
+560
+02:18:45,971 --> 02:18:51,131
+İntial point A
+
+561
+02:18:55,796 --> 02:18:56,755
+Terminal point.
+
+562
+02:19:02,451 --> 02:19:06,291
+B1, B2, B3.
+
+563
+02:19:08,611 --> 02:19:10,691
+Vektör A
+
+564
+02:19:15,507 --> 02:19:16,987
+Aqs AB
+
+565
+02:19:16,987 --> 02:19:20,247
+is
+
+566
+02:19:20,247 --> 02:19:21,827
+represented
+
+567
+02:19:21,827 --> 02:19:23,448
+by
+
+568
+02:19:23,448 --> 02:19:27,967
+b1 minus A1
+
+569
+02:19:27,967 --> 02:19:30,427
+b2 minus A2
+
+570
+02:19:30,427 --> 02:19:33,747
+b3 minus A3
+
+571
+02:19:40,691 --> 02:19:42,691
+Let's illustrate.
+
+572
+02:19:45,731 --> 02:19:46,291
+We have
+
+573
+02:19:48,611 --> 02:19:50,611
+this vector and
+
+574
+02:19:52,611 --> 02:19:53,171
+we have
+
+575
+02:19:54,451 --> 02:19:55,491
+another vector
+
+576
+02:19:56,291 --> 02:19:57,171
+a, b
+
+577
+02:19:59,011 --> 02:19:59,971
+in the space
+
+578
+02:20:00,771 --> 02:20:06,691
+a1, a2, a3, b1, b2, b3
+
+579
+02:20:06,691 --> 02:20:10,291
+the point
+
+580
+02:20:11,811 --> 02:20:12,691
+coordinates
+
+581
+02:20:13,491 --> 02:20:20,691
+x1, x2, x, sorry, x, y, z we said, x, y, z
+
+582
+02:20:31,763 --> 02:20:44,884
+b1 x a1 plus x, b2 x a2 plus y, b3 x a3 plus z.
+
+583
+02:20:45,884 --> 02:20:58,143
+So, we get a x y z equals b1 minus a1 b2.
+
+584
+02:21:07,796 --> 02:21:12,556
+For example, find vector
+
+585
+02:21:16,404 --> 02:21:17,644
+Represented by
+
+586
+02:21:21,172 --> 02:21:25,172
+Directed line segment
+
+587
+02:21:25,172 --> 02:21:28,432
+with
+
+588
+02:21:28,432 --> 02:21:31,012
+initial point
+
+589
+02:21:39,540 --> 02:21:47,540
+2, minus 3, 4, please say terminal point.
+
+590
+02:22:13,492 --> 02:22:19,551
+We subtract the coordinates of b from the coordinates of a.
+
+591
+02:22:20,551 --> 02:22:35,211
+Finally, minus 1, minus 3, 1, minus 4, we get minus 4, 4, thank you [öğrenci].
+
+592
+02:23:01,075 --> 02:23:03,495
+We give a vector in space.
+
+593
+02:23:10,708 --> 02:23:11,868
+Komponent form.
+
+594
+02:23:19,059 --> 02:23:22,819
+Şimdi bu ve vaktör olarak,
+
+595
+02:23:22,819 --> 02:23:30,500
+ve vaktör olarak,
+
+596
+02:23:30,500 --> 02:23:48,500
+vaktör olarak,
+
+597
+02:23:35,827 --> 02:23:36,327
+Standard.
+
+598
+02:23:51,796 --> 02:24:03,636
+We define three standard basis vectors, denoted by E, I, J, K.
+
+599
+02:24:12,755 --> 02:24:15,975
+or, 1 min.
+
+600
+02:24:20,500 --> 02:24:21,180
+Bayar?
+
+601
+02:24:24,659 --> 02:24:34,659
+...
+
+602
+02:24:36,755 --> 02:24:47,575
+0.1001001001, respect to that.
+
+603
+02:24:52,180 --> 02:24:52,720
+Adın.
+
+604
+02:24:58,899 --> 02:24:59,619
+Evet, çok değişiklik.
+
+605
+02:25:06,579 --> 02:25:07,059
+Okay.
+
+606
+02:25:15,667 --> 02:25:26,347
+Vektör i, is in the direction x-axis, j is in the direction y, k.
+
+607
+02:25:30,388 --> 02:25:31,508
+On diziler ve akses.
+
+608
+02:25:46,899 --> 02:25:51,719
+We want to define a given vector.
+
+609
+02:25:56,979 --> 02:25:58,100
+O, P.
+
+610
+02:25:59,799 --> 02:26:00,859
+In terms of
+
+611
+02:26:00,859 --> 02:26:03,420
+Standard Basis Vectors,
+
+612
+02:26:04,159 --> 02:26:04,939
+I, J, K.
+
+613
+02:26:10,164 --> 02:26:17,584
+Let us consider any point P whose coordinates x, y, z.
+
+614
+02:26:25,492 --> 02:26:28,092
+Op is in the standard form.
+
+615
+02:26:30,432 --> 02:26:34,211
+Position vector is op.
+
+616
+02:26:44,340 --> 02:26:53,380
+This components form x, y, z in terms of coordinates of the terminal points.
+
+617
+02:27:00,724 --> 02:27:04,043
+We need rectangular box.
+
+618
+02:27:06,043 --> 02:27:06,683
+Here.
+
+619
+02:27:39,731 --> 02:27:40,731
+Teşekkürler.
+
+620
+02:28:16,628 --> 02:29:16,608
+bu yi ve z'initve
+
+621
+02:28:51,924 --> 02:28:53,924
+ve kvektörs
+
+622
+02:28:53,924 --> 02:28:57,924
+ve yi
+
+623
+02:28:57,924 --> 02:28:59,924
+ve
+
+624
+02:28:59,924 --> 02:29:01,924
+c
+
+625
+02:29:01,924 --> 02:29:03,924
+ve kvektör
+
+626
+02:29:03,924 --> 02:29:05,924
+ve z
+
+627
+02:29:05,924 --> 02:29:11,924
+z
+
+628
+02:29:11,924 --> 02:29:13,924
+kvektör
+
+629
+02:29:13,924 --> 02:29:45,924
+ve
+
+630
+02:29:39,763 --> 02:29:48,563
+We add this vector and O, C vector. O, C vector equals
+
+631
+02:29:54,004 --> 02:29:57,084
+deneydi ve k, qp-vektör.
+
+632
+02:30:00,468 --> 02:30:15,648
+Oc equals to p. So we add these vectors. We find all p vectors.
+
+633
+02:30:19,572 --> 02:30:44,852
+Finally, we find OP vectors in terms of standard basis vectors. OP is written as a linear combination of these vectors.
+
+634
+02:30:44,852 --> 02:31:00,332
+Here, x, y, z is the coordinates of terminal points of this vector.
+
+635
+02:31:10,515 --> 02:31:14,515
+Bu faktörde bu faktörde
+
+636
+02:31:14,515 --> 02:31:26,515
+bu faktörde
+
+637
+02:31:30,100 --> 02:31:31,300
+We apply
+
+638
+02:31:35,252 --> 02:31:45,932
+Pisagor theorem to this right angle and another right angle OQP.
+
+639
+02:31:45,932 --> 02:31:48,332
+OQP.
+
+640
+02:31:50,852 --> 02:32:03,172
+If we apply two times this theorem, we can find this.
+
+641
+02:32:07,507 --> 02:32:11,448
+Any question about these formulas?
+
+642
+02:32:27,796 --> 02:32:28,515
+No question.
+
+643
+02:32:45,652 --> 02:32:46,652
+Evet.
+
+644
+02:33:01,236 --> 02:33:01,776
+Evet, sir.
+
+645
+02:33:02,556 --> 02:33:02,936
+Evet.
+
+646
+02:33:15,252 --> 02:33:26,292
+Form, we know, b1 minus e1, b2 minus a2, b3 minus a3.
+
+647
+02:33:30,548 --> 02:33:59,028
+So, it is represented in terms of ejk, standard basis vectors, by b1 minus a1 times i plus b2 a2j, b3 a3k, equals ab.
+
+648
+02:34:00,548 --> 02:34:14,228
+is written in terms of basis vectors.
+
+649
+02:34:34,644 --> 02:35:03,744
+A1, 2, 3, B, minus 1, 0, 4. So, we can write A, B vector, minus 2, minus 2, and 1. Or, we can write this vector like that, minus 2i, minus 2j, and k.
+
+650
+02:35:14,291 --> 02:35:22,291
+Vektör edişim, algebrikli, now, alge...
+
+651
+02:35:31,924 --> 02:35:58,604
+If we know the components of a given two vectors, for example a1, a2, a3, another vector b1, b2, b3,
+
+652
+02:35:58,604 --> 02:36:05,484
+we can add these vectors.
+
+653
+02:36:08,284 --> 02:36:12,764
+A1 plus b1 are real numbers.
+
+654
+02:36:12,764 --> 02:36:15,664
+I, here, unit vector.
+
+655
+02:36:17,544 --> 02:36:24,124
+I, j, k, r, constant unit vectors.
+
+656
+02:36:24,124 --> 02:36:30,684
+I2, b2, j, i3, e3.
+
+657
+02:36:30,684 --> 02:36:31,184
+Okay.
+
+658
+02:36:31,184 --> 02:36:33,804
+So, let's write this.
+
+659
+02:36:40,564 --> 02:36:47,764
+We can multiply a given vector by a scalar multiplication.
+
+660
+02:36:58,644 --> 02:37:01,484
+is any arbitrary scalar.
+
+661
+02:37:38,420 --> 02:37:45,420
+SA2J, SA3J.
+
+662
+02:37:54,131 --> 02:38:00,611
+Example, find a unit vector
+
+663
+02:38:03,091 --> 02:38:04,291
+in the direction
+
+664
+02:38:06,771 --> 02:38:07,332
+of
+
+665
+02:38:10,708 --> 02:38:23,628
+Vektor, from 101, 22, 32, 0.
+
+666
+02:38:28,948 --> 02:38:30,188
+Can you calculate yourself?
+
+667
+02:38:40,659 --> 02:38:45,360
+You must write first pq vector.
+
+668
+02:38:50,195 --> 02:39:05,896
+Ve bu ve
+
+669
+02:39:10,355 --> 02:39:12,355
+vektör PQ.
+
+670
+02:39:14,556 --> 02:39:15,155
+This is
+
+671
+02:39:16,476 --> 02:39:18,155
+decide unit vector.
+
+672
+02:39:19,835 --> 02:39:21,515
+Yes, this vector
+
+673
+02:39:21,515 --> 02:39:24,796
+2, 2, minus 1 [öğrenci].
+
+674
+02:39:24,796 --> 02:39:25,515
+Yes.
+
+675
+02:39:27,435 --> 02:39:30,235
+2, 2, minus 1.
+
+676
+02:39:34,899 --> 02:39:37,539
+Lanço?
+
+677
+02:39:53,747 --> 02:39:58,788
+The length of a vector is calculated by
+
+678
+02:40:02,227 --> 02:40:04,868
+this formula, start
+
+679
+02:40:07,667 --> 02:40:08,868
+first component
+
+680
+02:40:15,028 --> 02:40:16,927
+Bir [öğrenci], be careful.
+
+681
+02:40:22,227 --> 02:40:31,867
+So, we can multiply by 1 over 3 to each component.
+
+682
+02:40:33,867 --> 02:40:41,707
+We can rewrite this vector in terms of jk, like that.
+
+683
+02:40:43,847 --> 02:40:45,447
+Okay, thank you.
+
+684
+02:41:07,219 --> 02:41:10,319
+We have no time to give that product.
+
+685
+02:41:23,572 --> 02:41:29,692
+Adept, dot product, and cross product.
+
+686
+02:41:30,871 --> 02:41:33,252
+We are going to give tomorrow.
+
+687
+02:41:34,332 --> 02:41:37,471
+Any question about today's lecture?
+
+688
+02:41:51,763 --> 02:41:55,083
+Evet, bir dakika, bir dakika, bir dakika.
+
+689
+02:44:13,587 --> 02:44:19,227
+You're welcome. Have a nice day. See you tomorrow.
+
+690
+02:44:37,556 --> 02:44:38,015
+See you!

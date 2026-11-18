@@ -1,0 +1,1931 @@
+1
+00:00:11,028 --> 00:00:13,048
+Hello, good morning.
+
+2
+00:00:31,987 --> 00:00:34,927
+Good morning [öğrenci], how are you today?
+
+3
+00:00:46,067 --> 00:00:47,067
+Bir de malin, [öğrenci].
+
+4
+00:00:55,892 --> 00:00:57,592
+Thank you. I am fine too.
+
+5
+00:01:29,555 --> 00:01:45,555
+Yesterday, we started vectors. Today we will finish the subject. And then we will examine the lines and planes in space.
+
+6
+00:01:48,435 --> 00:01:51,956
+And today we may start vector valued functions.
+
+7
+00:01:56,212 --> 00:01:58,371
+Do you have any questions about anything?
+
+8
+00:02:03,635 --> 00:02:05,816
+If you are ready, we can start.
+
+9
+00:02:18,644 --> 00:02:20,944
+[öğrenci], ne sormak istiyorsun sınavla ilgili?
+
+10
+00:02:23,884 --> 00:02:25,563
+Sınav tarihimiz belirlendi.
+
+11
+00:02:26,724 --> 00:02:30,683
+Konularla ilgili evet, detaylı bilgi gelmedi henüz komisyonda.
+
+12
+00:02:30,683 --> 00:02:33,604
+Nereye kadar olacağını ben de bilmiyorum sınavın.
+
+13
+00:02:34,783 --> 00:02:35,304
+Doğru.
+
+14
+00:02:35,984 --> 00:02:39,704
+17 Mayıs pazartesi günüymüş bizimiz.
+
+15
+00:02:41,764 --> 00:02:43,843
+Ama konular hakkında benim bir bilgim yok.
+
+16
+00:02:46,044 --> 00:02:46,683
+Rica ederim.
+
+17
+00:02:46,683 --> 00:02:49,304
+Bilgi gelir gelmez sizinle paylaşacağım.
+
+18
+00:02:50,704 --> 00:02:52,584
+Başlayalım o zaman isterseniz.
+
+19
+00:02:52,843 --> 00:02:55,123
+Bugün dersin sonunda hatırlatın.
+
+20
+00:02:55,644 --> 00:02:57,004
+Dün de verecektim, unuttuk.
+
+21
+00:02:58,084 --> 00:02:59,623
+Uygulama soruları indireceğiz.
+
+22
+00:03:00,644 --> 00:03:01,903
+Bilgisayara indireceğim.
+
+23
+00:03:02,084 --> 00:03:03,663
+Siz de kaydedersiniz.
+
+24
+00:03:03,903 --> 00:03:05,444
+Çalışma soruları olur size.
+
+25
+00:03:06,484 --> 00:03:07,984
+Geçmiş senelerin sınav soruları.
+
+26
+00:03:08,044 --> 00:03:10,024
+Son birkaç senenin sınav soruları var.
+
+27
+00:03:10,644 --> 00:03:11,444
+Onları veririm.
+
+28
+00:03:13,504 --> 00:03:15,364
+Hem de bu online sınavlar var.
+
+29
+00:03:15,524 --> 00:03:16,243
+Örnek sorular.
+
+30
+00:03:16,243 --> 00:03:18,283
+O sizin için iyi olacağını düşünüyorum.
+
+31
+00:03:18,283 --> 00:03:19,304
+O sizin için.
+
+32
+00:03:19,304 --> 00:03:21,024
+Zamanımız kalırsa şayet.
+
+33
+00:03:21,104 --> 00:03:22,343
+Konular bir belli olsun.
+
+34
+00:03:23,024 --> 00:03:25,544
+Çünkü bir tık gerideyiz konular açısından.
+
+35
+00:03:26,204 --> 00:03:27,184
+Çok detaylı veriyorum.
+
+36
+00:03:27,304 --> 00:03:30,343
+Yazarak da anlatınca bir parça geri düştük.
+
+37
+00:03:31,124 --> 00:03:33,384
+Onun için zamanımız kalırsa şayet.
+
+38
+00:03:33,384 --> 00:03:34,384
+uygulama yapacağım.
+
+39
+00:03:34,384 --> 00:03:37,304
+Bir konularımız bir belirlensin.
+
+40
+00:03:37,483 --> 00:03:38,824
+Yetiştirdiğimizden emin olalım.
+
+41
+00:03:39,444 --> 00:03:41,524
+Vaktimiz kalırsa beraber de soru yapacağız.
+
+42
+00:03:42,444 --> 00:03:43,483
+Başlayalım gençler.
+
+43
+00:03:43,683 --> 00:03:45,264
+Madem biraz geriyiz.
+
+44
+00:03:45,324 --> 00:03:47,183
+Bir an önce başlamakta fayda var.
+
+45
+00:04:39,795 --> 00:04:42,075
+ve iki tane vektörler,
+
+46
+00:04:45,875 --> 00:05:15,875
+ve bir
+
+47
+00:05:15,875 --> 00:05:17,835
+bir bir
+
+48
+00:05:22,451 --> 00:05:28,992
+Let the angel, let them, between.
+
+49
+00:05:41,747 --> 00:05:42,687
+Begiven!
+
+50
+00:05:46,387 --> 00:05:48,387
+Ve dekine,
+
+51
+00:05:55,987 --> 00:06:00,987
+Bu da
+
+52
+00:06:00,987 --> 00:06:01,987
+U
+
+53
+00:06:01,987 --> 00:06:02,987
+and
+
+54
+00:06:02,987 --> 00:06:04,987
+V
+
+55
+00:06:04,987 --> 00:06:06,987
+to
+
+56
+00:06:06,987 --> 00:06:07,987
+V
+
+57
+00:06:07,987 --> 00:06:08,987
+U
+
+58
+00:06:08,987 --> 00:06:10,987
+that
+
+59
+00:06:10,987 --> 00:06:12,987
+V
+
+60
+00:06:12,987 --> 00:06:14,987
+Ecos
+
+61
+00:06:18,836 --> 00:06:20,276
+Magnitude of U
+
+62
+00:06:29,427 --> 00:06:35,468
+Cignitude of V and cosine of theta.
+
+63
+00:06:35,468 --> 00:06:43,468
+Here, theta between 0 and 5.
+
+64
+00:06:50,228 --> 00:07:12,468
+u, b, different, and now zero, vectors, and theta is an angel between u and v, and we define the product of u and v like that.
+
+65
+00:07:23,860 --> 00:07:32,860
+U and V are given in terms of standard basis vectors.
+
+66
+00:07:32,860 --> 00:07:54,860
+The components of U, B, U1, U2, U3, here in I, J, K, R makes these unit vectors.
+
+67
+00:07:54,860 --> 00:08:04,860
+The components of U, B, U1, U2, U3, here in I.
+
+68
+00:08:09,651 --> 00:08:19,891
+The dead product of basis vectors, from definition,
+
+69
+00:08:26,228 --> 00:08:39,408
+0, because of cosine 90 degrees equals 0. And similar, dot of jk or i.
+
+70
+00:08:45,748 --> 00:08:59,748
+If we product i and i or jj, ok, equals 1 because cosine 0 equals...
+
+71
+00:09:09,235 --> 00:09:23,155
+If we don't know the theta, the angle between u and v, we can product u and v.
+
+72
+00:09:24,155 --> 00:09:28,436
+If we know the components of these vectors.
+
+73
+00:09:46,323 --> 00:10:03,503
+So, to start these terms one by one, we get u1 v1, u2 v2, and u3 v3.
+
+74
+00:10:15,892 --> 00:10:26,732
+We can define the dot product of u and v in terms of the components of these vectors without theta.
+
+75
+00:10:34,227 --> 00:10:35,107
+Example
+
+76
+00:10:39,124 --> 00:10:49,303
+The angel theta and the triangle ABC
+
+77
+00:10:49,303 --> 00:10:57,944
+Determined by the vertices
+
+78
+00:10:57,944 --> 00:11:08,864
+A00B52C
+
+79
+00:11:09,124 --> 00:11:10,124
+3
+
+80
+00:11:10,124 --> 00:11:11,124
+5
+
+81
+00:11:21,940 --> 00:11:27,940
+So, we are on the plane.
+
+82
+00:11:37,076 --> 00:11:42,076
+İlk olarak bu çizgi bir çizgi.
+
+83
+00:11:48,788 --> 00:11:50,868
+Ander is this.
+
+84
+00:11:52,868 --> 00:11:56,187
+In order to determine theta,
+
+85
+00:11:57,067 --> 00:12:01,368
+we must use the definitions of
+
+86
+00:12:01,368 --> 00:12:04,368
+the dot product.
+
+87
+00:12:06,447 --> 00:12:09,388
+To do this, we need
+
+88
+00:12:09,388 --> 00:12:12,768
+ba
+
+89
+00:12:12,768 --> 00:12:15,528
+and bc
+
+90
+00:12:15,528 --> 00:12:17,048
+vectors.
+
+91
+00:12:25,812 --> 00:12:27,692
+A vektör equals,
+
+92
+00:12:29,932 --> 00:12:31,731
+position vektör of A
+
+93
+00:12:31,731 --> 00:12:34,652
+minus, position vektör of B
+
+94
+00:12:40,211 --> 00:13:01,331
+First, determine BA, BA equals 5i to j. What is BC minus 2, 3, j?
+
+95
+00:13:08,403 --> 00:13:12,244
+Bir nef, teta, bir sallı.
+
+96
+00:13:17,844 --> 00:13:20,004
+E, C, thank you.
+
+97
+00:13:22,064 --> 00:13:23,824
+E, C.
+
+98
+00:13:27,700 --> 00:13:32,820
+cosin theta, ba times bc,
+
+99
+00:13:39,412 --> 00:13:40,772
+ve kalculated.
+
+100
+00:13:47,316 --> 00:13:48,796
+Is there a mistake, [öğrenci]?
+
+101
+00:13:56,916 --> 00:13:58,036
+Evet, ok, iso.
+
+102
+00:14:00,556 --> 00:14:00,996
+Yes.
+
+103
+00:14:02,475 --> 00:14:04,636
+A minus B equals.
+
+104
+00:14:07,396 --> 00:14:08,076
+Like that.
+
+105
+00:14:09,876 --> 00:14:10,836
+Thank you.
+
+106
+00:14:11,676 --> 00:14:12,156
+This is.
+
+107
+00:14:17,748 --> 00:14:19,748
+Evet, evet.
+
+108
+00:14:19,748 --> 00:14:21,748
+Evet.
+
+109
+00:14:21,748 --> 00:14:23,748
+5-2j
+
+110
+00:14:23,748 --> 00:14:25,748
+times bc
+
+111
+00:14:29,556 --> 00:14:31,556
+İkincisi ve A'ı
+
+112
+00:14:34,556 --> 00:14:36,556
+ve B'c'ı
+
+113
+00:14:39,556 --> 00:14:41,556
+ve cosin teta.
+
+114
+00:14:52,052 --> 00:14:52,552
+Müşen.
+
+115
+00:14:57,683 --> 00:15:13,004
+Finally, we can just write like that, theta, cos, or, or.
+
+116
+00:15:43,283 --> 00:15:43,843
+Musop.
+
+117
+00:15:45,524 --> 00:15:47,264
+Eksi 5 iyi yazdım zaten.
+
+118
+00:15:47,903 --> 00:15:50,803
+O güzel okunmuyordu onun için düzelttim.
+
+119
+00:15:52,604 --> 00:15:54,764
+Hala sorun var mı? Yanlışlık.
+
+120
+00:16:01,971 --> 00:16:05,331
+Doğru, haklısın. Düzelttim. Öyle görünüyordu gerçekten de.
+
+121
+00:16:11,379 --> 00:16:13,019
+Now, we can define
+
+122
+00:16:16,851 --> 00:16:20,491
+ortogonal vektörs.
+
+123
+00:16:22,371 --> 00:16:27,572
+We can define ortogonal vektörs by using the definition of that product.
+
+124
+00:16:27,572 --> 00:16:29,091
+If
+
+125
+00:16:32,467 --> 00:16:47,267
+Vektörs u and v ortogonal, then the dot product of them equals zero. If the dot product equals zero, these vectors are ortogonal.
+
+126
+00:16:53,460 --> 00:16:56,860
+Bu da product.
+
+127
+00:17:03,892 --> 00:17:25,632
+Let's consider Manzero, the vectors u, v, omega, are any vectors, and s is etscalar.
+
+128
+00:17:25,632 --> 00:17:26,872
+Evet.
+
+129
+00:17:30,420 --> 00:17:34,380
+V, excuse me, that you,
+
+130
+00:18:07,155 --> 00:18:26,275
+U' ve U
+
+131
+00:18:37,107 --> 00:18:42,748
+We can prove these properties by using the definition of that product.
+
+132
+00:18:47,867 --> 00:18:48,867
+One more example.
+
+133
+00:19:37,428 --> 00:19:55,428
+show that 2i2j-k is karbendikler 2i2k.
+
+134
+00:20:00,788 --> 00:20:14,428
+Bu, u'nun ortogonel olarak bu.
+
+135
+00:20:23,571 --> 00:20:29,371
+Let's give the definition of the cross product.
+
+136
+00:20:37,395 --> 00:20:54,836
+ve a1, a2, a3 ve b1, b2, b3
+
+137
+00:20:58,324 --> 00:21:01,923
+ve teta
+
+138
+00:21:04,084 --> 00:21:06,004
+angenel
+
+139
+00:21:20,564 --> 00:21:27,764
+Product of a and b is denoted by like that and is defined by
+
+140
+00:21:29,764 --> 00:21:43,444
+magnitude of i magnitude of b times sine of beta times the unit vector u in direction of
+
+141
+00:21:43,444 --> 00:21:57,443
+a cross product b here.
+
+142
+00:22:08,372 --> 00:22:09,852
+Direction of
+
+143
+00:22:15,955 --> 00:22:16,475
+Dari.
+
+144
+00:22:21,460 --> 00:22:26,840
+Product of A and B.
+
+145
+00:22:27,640 --> 00:22:28,220
+Burish.
+
+146
+00:22:33,203 --> 00:22:35,203
+Evet, bu.
+
+147
+00:22:57,748 --> 00:22:58,067
+Okay.
+
+148
+00:23:10,067 --> 00:23:10,687
+Nears.
+
+149
+00:23:17,268 --> 00:23:27,748
+Let's look at the definition of that product. That product is a constant. This is a constant.
+
+150
+00:23:31,908 --> 00:23:42,627
+But cross product is a vector. Be careful.
+
+151
+00:23:42,627 --> 00:23:57,107
+This is also called vector product.
+
+152
+00:24:01,395 --> 00:24:12,435
+From the definition, we can define the parallel vectors if two vectors are parallel to each other,
+
+153
+00:24:15,316 --> 00:24:17,235
+the cross product of them
+
+154
+00:24:19,235 --> 00:24:30,675
+equals here theta equals zero degree and sine zero equals
+
+155
+00:24:30,675 --> 00:24:44,596
+zero, so we have zero. If cross product equals zero, we can say these vectors are parallel.
+
+156
+00:25:20,211 --> 00:25:28,692
+Let A, B, C, B, dan zero vektörs.
+
+157
+00:25:33,332 --> 00:25:34,332
+Evet.
+
+158
+00:25:37,844 --> 00:25:39,524
+Constant Scalash
+
+159
+00:25:39,524 --> 00:25:41,024
+Sen
+
+160
+00:25:50,740 --> 00:25:56,720
+mi, yakınsak, minus mi, ay.
+
+161
+00:26:01,652 --> 00:26:09,812
+If we multiply a cross product b by s,
+
+162
+00:26:09,812 --> 00:26:13,812
+we choose s a b
+
+163
+00:26:13,812 --> 00:26:19,092
+k s b.
+
+164
+00:26:24,531 --> 00:26:28,192
+plus c, av plus
+
+165
+00:26:37,299 --> 00:26:47,299
+If we cross, if we multiply, the unit basis vectors.
+
+166
+00:26:51,571 --> 00:27:10,131
+Theta between i and j equals 19 degrees, so we can find k unit vector in direction of e times j.
+
+167
+00:27:11,991 --> 00:27:15,671
+And similarly, j times k equals i.
+
+168
+00:27:19,220 --> 00:27:22,500
+k times i equals j.
+
+169
+00:27:25,339 --> 00:27:26,019
+But
+
+170
+00:27:29,844 --> 00:27:31,844
+aj
+
+171
+00:27:31,844 --> 00:27:33,844
+lk
+
+172
+00:27:33,844 --> 00:27:35,844
+x 0
+
+173
+00:27:35,844 --> 00:27:37,844
+because sin 0
+
+174
+00:27:37,844 --> 00:27:39,844
+x
+
+175
+00:27:44,692 --> 00:27:56,132
+Be careful here, if we multiply j and i, b kat minus k.
+
+176
+00:28:07,092 --> 00:28:09,972
+A vektör vektör
+
+177
+00:28:14,195 --> 00:28:16,875
+We have zero vector.
+
+178
+00:28:19,275 --> 00:28:20,275
+If we know
+
+179
+00:28:20,275 --> 00:28:23,875
+the components
+
+180
+00:28:43,571 --> 00:28:54,051
+We can calculate the cross product of these vectors by using the determinant.
+
+181
+00:29:00,884 --> 00:29:06,884
+This determinant is written in terms of components of these vectors.
+
+182
+00:29:09,764 --> 00:29:10,884
+First write
+
+183
+00:29:14,836 --> 00:29:18,375
+Basis Vectors, i, j, k.
+
+184
+00:29:24,115 --> 00:29:39,145
+İlk olarak, ilk olarak, ilk olarak, ilk olarak, ilk olarak, ilk olarak, A1, A2, A3 ve
+
+185
+00:29:42,804 --> 00:30:07,014
+ve 3'e
+
+186
+00:30:15,923 --> 00:30:19,604
+Do you remember the calculation of the terminate?
+
+187
+00:30:38,067 --> 00:30:50,827
+Bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örne
+
+188
+00:30:57,907 --> 00:31:02,907
+Of course, you are right like that in terms of...
+
+189
+00:31:07,476 --> 00:31:08,596
+IJK
+
+190
+00:31:28,019 --> 00:31:33,019
+Bu birçok birçok birçok.
+
+191
+00:31:33,019 --> 00:31:38,019
+Bu birçok.
+
+192
+00:31:42,579 --> 00:32:12,579
+İlk olarak bu yi k'e yi k'
+
+193
+00:32:16,180 --> 00:32:22,660
+k plus 2j, and subtract.
+
+194
+00:32:28,372 --> 00:32:29,032
+Meynus.
+
+195
+00:32:34,900 --> 00:32:35,500
+Okay.
+
+196
+00:32:37,820 --> 00:32:39,980
+Minus 2i and 2i.
+
+197
+00:32:45,580 --> 00:32:48,420
+Finally, we get 6.
+
+198
+00:32:55,028 --> 00:32:56,867
+Is absent, okay.
+
+199
+00:33:24,660 --> 00:33:27,220
+We have one more property, seven.
+
+200
+00:33:41,236 --> 00:33:58,196
+Cross product of a and b equals magnitude of a, b, sin theta. Magnitude of unit vector equals 1.
+
+201
+00:34:01,619 --> 00:34:02,259
+Müzik
+
+202
+00:34:05,875 --> 00:34:06,855
+Are you? Oh.
+
+203
+00:34:19,347 --> 00:34:19,987
+Yılabıramı.
+
+204
+00:34:30,164 --> 00:34:30,724
+Bye.
+
+205
+00:34:32,724 --> 00:34:36,924
+A and B vektörs.
+
+206
+00:34:44,500 --> 00:34:53,800
+İlustraday A ve B,
+
+207
+00:35:05,715 --> 00:35:06,395
+Complete.
+
+208
+00:35:11,155 --> 00:35:12,155
+Parallelogram.
+
+209
+00:35:12,155 --> 00:35:18,355
+To calculate the area of this parallelogram, we need
+
+210
+00:35:18,355 --> 00:35:40,755
+Lens A, area equals base times base, here base equals vector A,
+
+211
+00:35:40,755 --> 00:35:43,556
+B, and those H.
+
+212
+00:35:48,019 --> 00:36:05,449
+bu yi
+
+213
+00:36:08,755 --> 00:36:15,755
+Bu
+
+214
+00:36:34,324 --> 00:36:39,884
+So, this cross product,
+
+215
+00:36:42,164 --> 00:36:43,923
+equals the area of
+
+216
+00:36:45,003 --> 00:36:49,563
+the parallelogram determined by A and B.
+
+217
+00:36:54,963 --> 00:37:01,203
+If no question, let me give you an example about this.
+
+218
+00:37:03,364 --> 00:37:08,324
+Point to area, triangle.
+
+219
+00:37:24,148 --> 00:37:35,148
+1, minus 1, 0, q, 2, 1, minus 1, r, minus 1, 1, 2.
+
+220
+00:37:37,827 --> 00:37:40,948
+First, draw this triangle.
+
+221
+00:37:45,139 --> 00:37:48,699
+P, Q, R
+
+222
+00:37:48,699 --> 00:37:51,199
+and then complete
+
+223
+00:37:55,251 --> 00:37:57,251
+Parallelogram.
+
+224
+00:38:02,867 --> 00:38:10,547
+These vectors, QP and QR,
+
+225
+00:38:22,260 --> 00:38:22,820
+Lai
+
+226
+00:38:27,731 --> 00:38:30,112
+We need cross product of these vectors.
+
+227
+00:38:48,788 --> 00:39:01,288
+Bu aralık
+
+228
+00:39:36,340 --> 00:39:43,660
+Qr, Qr-2, 2,
+
+229
+00:39:50,931 --> 00:39:59,611
+Denotation of determinant, QP, QR, and then calculate.
+
+230
+00:40:05,780 --> 00:40:11,180
+Minus 2, minus 2,
+
+231
+00:40:16,403 --> 00:40:21,103
+2K, minus 4K.
+
+232
+00:40:25,331 --> 00:40:26,931
+2-4
+
+233
+00:40:33,012 --> 00:40:33,972
+Please check this.
+
+234
+00:40:50,452 --> 00:40:53,992
+Minus 4, minus 6, yes.
+
+235
+00:40:55,612 --> 00:40:56,832
+Minus 2.
+
+236
+00:41:03,092 --> 00:41:05,372
+Minus 2, minus 4.
+
+237
+00:41:11,476 --> 00:41:12,476
+2K
+
+238
+00:41:16,947 --> 00:41:17,788
+Yes, that's true.
+
+239
+00:41:24,980 --> 00:41:26,980
+Bir şey yapalım.
+
+240
+00:41:52,947 --> 00:41:54,607
+Any question? Is it clear?
+
+241
+00:42:10,036 --> 00:42:11,175
+İzmir, okay.
+
+242
+00:42:12,836 --> 00:42:14,615
+P, Q, Q.
+
+243
+00:42:19,956 --> 00:42:22,615
+QP, QR, QP.
+
+244
+00:42:29,172 --> 00:42:31,132
+Like that.
+
+245
+00:42:49,684 --> 00:42:54,423
+Minus 1, [öğrenci]. Burayı mı söylüyorsun senden?
+
+246
+00:42:58,612 --> 00:43:00,612
+Ben de gördüm ama...
+
+247
+00:43:08,820 --> 00:43:10,180
+This is minus 1.
+
+248
+00:43:15,219 --> 00:43:22,980
+Bunlar da hata yapmışız. Bayağı da yanlış yapmışız. Nasıl bulduk biz bunu bu kadar?
+
+249
+00:43:22,980 --> 00:43:26,339
+Q, R.
+
+250
+00:43:35,443 --> 00:43:38,063
+Gençler, bunu ben artık size ödev vermek istiyorum.
+
+251
+00:43:44,788 --> 00:43:45,788
+Arkadaşlar,
+
+252
+00:43:52,884 --> 00:43:56,164
+3, 0, and 3.
+
+253
+00:43:58,724 --> 00:44:00,583
+Gençler ödev olsun mu?
+
+254
+00:44:02,403 --> 00:44:03,603
+Bu zaman kaybetmeyelim.
+
+255
+00:44:04,023 --> 00:44:05,724
+Anladığınızı umut ediyorum.
+
+256
+00:44:20,500 --> 00:44:22,500
+Okay, I can do
+
+257
+00:44:22,500 --> 00:44:26,679
+Minus 6i
+
+258
+00:44:30,739 --> 00:44:42,179
+Minus 3, plus 3, 0, minus 3, okay.
+
+259
+00:44:44,179 --> 00:44:44,619
+So,
+
+260
+00:44:49,268 --> 00:44:56,268
+6 ve 2, 6 ve 2, ok.
+
+261
+00:45:13,972 --> 00:45:20,452
+For example, find a unit vector.
+
+262
+00:45:26,771 --> 00:45:33,771
+ve
+
+263
+00:45:58,579 --> 00:45:59,299
+Vector.
+
+264
+00:46:00,500 --> 00:46:01,179
+Perpendicular.
+
+265
+00:46:03,279 --> 00:46:04,739
+To this.
+
+266
+00:46:08,244 --> 00:46:08,764
+Kılağın.
+
+267
+00:46:17,907 --> 00:46:30,027
+The cross products of QP and QR is a vector
+
+268
+00:46:34,643 --> 00:46:37,803
+Hello.
+
+269
+00:46:41,364 --> 00:46:43,124
+to determine
+
+270
+00:46:54,228 --> 00:46:57,148
+P and Q bar.
+
+271
+00:47:02,612 --> 00:47:16,432
+We calculate this vector 2p, qr, minus 6i, 6k.
+
+272
+00:47:27,956 --> 00:47:35,556
+We need unit vector in the direction qp times qr.
+
+273
+00:47:43,155 --> 00:47:43,996
+Vector.
+
+274
+00:47:46,956 --> 00:47:48,436
+Direction.
+
+275
+00:48:06,579 --> 00:48:07,719
+Mekme tutup.
+
+276
+00:48:13,684 --> 00:48:19,844
+İ over root 2 minus k over root 2.
+
+277
+00:48:43,731 --> 00:48:53,211
+Same question, find area of triangle with vertex size A, point B.
+
+278
+00:50:08,724 --> 00:50:11,344
+See you, 10 minutes later.
+
+279
+01:04:02,675 --> 01:04:07,556
+Okay, if you are ready, you can continue.
+
+280
+01:04:42,387 --> 01:04:47,268
+Now, the direction of this line.
+
+281
+01:05:10,483 --> 01:05:14,143
+Bir, seks, betes, der.
+
+282
+01:05:23,572 --> 01:05:25,132
+exactly one
+
+283
+01:05:25,132 --> 01:05:28,412
+line
+
+284
+01:05:28,412 --> 01:05:31,612
+facing
+
+285
+01:05:31,612 --> 01:05:32,332
+true
+
+286
+01:05:32,332 --> 01:05:35,811
+the point
+
+287
+01:05:35,811 --> 01:05:36,811
+P0
+
+288
+01:05:36,811 --> 01:05:38,332
+and
+
+289
+01:05:44,115 --> 01:05:46,516
+to the vector v.
+
+290
+01:05:49,076 --> 01:05:51,876
+Here, the vector v
+
+291
+01:05:53,795 --> 01:05:56,115
+is the direction
+
+292
+01:06:29,268 --> 01:06:34,268
+B0, X0, Y0, Z0
+
+293
+01:06:34,268 --> 01:06:59,268
+B0
+
+294
+01:07:00,148 --> 01:07:07,068
+0, b, the position vector of the point p, 0.
+
+295
+01:07:13,268 --> 01:07:34,507
+Rp'ye deyde
+
+296
+01:07:44,436 --> 01:07:50,816
+P0 plus P0P equals R.
+
+297
+01:07:50,816 --> 01:07:58,816
+So, R minus R0 equals P0P.
+
+298
+01:08:07,411 --> 01:08:21,251
+Vector P0P is parallel to direction of L. Let's draw Vector P.
+
+299
+01:08:25,363 --> 01:08:36,903
+V is parallel to the line L, so P0P is parallel to the vector V.
+
+300
+01:08:42,003 --> 01:08:59,724
+So, there is a scalar t, such that p0p equals t times v vector, with t is an scalar.
+
+301
+01:09:09,235 --> 01:09:09,735
+Teşekkürler.
+
+302
+01:09:13,043 --> 01:09:26,384
+Right, another presentation of this vector, r minus r zero, position vectors of P's or and P equals t v.
+
+303
+01:09:40,372 --> 01:09:41,372
+Can we start?
+
+304
+01:09:44,092 --> 01:09:44,771
+Equation.
+
+305
+01:09:48,787 --> 01:09:50,167
+Puls-to-line
+
+306
+01:10:12,148 --> 01:10:20,368
+Value of the parameter t, parameter t
+
+307
+01:10:29,716 --> 01:10:30,776
+Zifin mektar.
+
+308
+01:11:00,467 --> 01:11:07,707
+V0 is constant known point.
+
+309
+01:11:08,827 --> 01:11:10,947
+The vector V is known.
+
+310
+01:11:13,068 --> 01:11:15,947
+It is the direction of L.
+
+311
+01:11:21,332 --> 01:11:32,892
+Let us consider E0,
+
+312
+01:11:34,212 --> 01:11:35,292
+components
+
+313
+01:11:35,292 --> 01:11:40,692
+and the direction vector
+
+314
+01:11:40,692 --> 01:11:44,092
+components avc.
+
+315
+01:11:54,579 --> 01:11:58,699
+position vector of any arbitrary point of B.
+
+316
+01:11:59,420 --> 01:12:05,619
+So, the components of this vector equals x, y, z.
+
+317
+01:12:07,439 --> 01:12:10,340
+Independent variables x, y, z.
+
+318
+01:12:14,163 --> 01:12:23,283
+If we substitute these components into vector equation, let's write
+
+319
+01:12:23,283 --> 01:12:44,043
+r, x, y, z, minus r0. r0 is a position vector of p0, so the components of this vector equals
+
+320
+01:12:44,043 --> 01:12:54,923
+x0, y0, z0, equals t is a scalar, and write the components of v, a, b, z.
+
+321
+01:13:04,948 --> 01:13:27,328
+So, this equation for x, y, z vector, and add these two vectors, x0 plus tA, y0 plus tB, z0 plus tC.
+
+322
+01:13:31,091 --> 01:13:36,251
+We have two great vectors.
+
+323
+01:13:38,331 --> 01:13:45,351
+The vectors are equal if and only if corresponding components are equal.
+
+324
+01:13:49,300 --> 01:13:54,079
+Therefore, we have three scalar equation.
+
+325
+01:14:12,724 --> 01:14:13,163
+Evet.
+
+326
+01:14:17,971 --> 01:14:36,731
+Parametric equations are called parametric equations of the line L.
+
+327
+01:14:58,739 --> 01:15:11,439
+We find the parametrization, parametrization of the line.
+
+328
+01:15:24,500 --> 01:15:29,500
+t
+
+329
+01:15:37,140 --> 01:15:37,820
+Teşekkürler.
+
+330
+01:15:46,131 --> 01:15:48,571
+Komponans of
+
+331
+01:15:54,420 --> 01:15:57,300
+point E
+
+332
+01:15:57,300 --> 01:16:02,720
+on the line
+
+333
+01:16:09,171 --> 01:16:13,251
+Don't forget that parametrizations are not unique.
+
+334
+01:16:14,991 --> 01:16:15,311
+Okay?
+
+335
+01:16:51,859 --> 01:17:01,339
+Vector Vect equation equals R0 plus TV.
+
+336
+01:17:01,339 --> 01:17:03,839
+Look at this equation.
+
+337
+01:17:04,500 --> 01:17:07,619
+I solve for R this equation.
+
+338
+01:17:08,839 --> 01:17:11,739
+R equals R0 plus TV.
+
+339
+01:17:11,739 --> 01:17:34,239
+If we write the components of R0, R0, X0, and we can write in terms of basis vectors X0, I, Y0, J, Z0, K.
+
+340
+01:17:34,239 --> 01:17:44,079
+T is in scalar, the components of V, A, V, C.
+
+341
+01:17:45,079 --> 01:18:04,219
+If we rewrite the right side of this equation, X0 plus T, A, I, Y0 plus T, B, J, Z0 plus J, T, C.
+
+342
+01:18:04,239 --> 01:18:05,939
+C, K.
+
+343
+01:18:09,811 --> 01:18:27,171
+Now, we can write the position vector of any arbitrary point on the line in terms of t parameter for
+
+344
+01:18:33,876 --> 01:18:47,476
+t per meter, we find, for example t zero, we find any point on the line.
+
+345
+01:18:54,195 --> 01:18:55,195
+This bilbe
+
+346
+01:18:55,195 --> 01:18:59,195
+becomes
+
+347
+01:19:03,572 --> 01:19:08,011
+Position Vector
+
+348
+01:19:09,891 --> 01:19:10,372
+Of
+
+349
+01:19:11,572 --> 01:19:12,092
+Any
+
+350
+01:19:13,212 --> 01:19:14,011
+Point
+
+351
+01:19:15,011 --> 01:19:15,412
+P
+
+352
+01:19:17,092 --> 01:19:18,572
+Of the
+
+353
+01:19:18,572 --> 01:19:19,051
+Line
+
+354
+01:19:26,452 --> 01:19:34,931
+Next chapter, we will say that this is a vector valued function.
+
+355
+01:19:40,435 --> 01:19:42,095
+Ok, for example
+
+356
+01:19:48,627 --> 01:19:49,967
+Geometrik Equations
+
+357
+01:19:58,163 --> 01:19:59,163
+gibi.
+
+358
+01:19:59,163 --> 01:20:14,163
+X equals 2 plus t, y equals 3, z equals minus 4t.
+
+359
+01:20:20,435 --> 01:20:25,015
+Can you say the direction vector of the line?
+
+360
+01:20:55,828 --> 01:20:57,748
+Of course, thank you.
+
+361
+01:21:01,108 --> 01:21:03,748
+And this line...
+
+362
+01:21:07,923 --> 01:21:23,043
+is passing through the point P0. Can you say say it? The components of this point?
+
+363
+01:21:29,619 --> 01:21:31,859
+2, 3, 0.
+
+364
+01:21:35,956 --> 01:21:37,176
+Another example.
+
+365
+01:21:56,819 --> 01:21:59,500
+minus 2, 0, 4,
+
+366
+01:22:01,859 --> 01:22:02,539
+paralleli
+
+367
+01:22:02,539 --> 01:22:03,819
+2,
+
+368
+01:22:03,819 --> 01:22:04,739
+v
+
+369
+01:22:04,739 --> 01:22:07,099
+2, 4,
+
+370
+01:22:07,279 --> 01:22:08,299
+minus 2.
+
+371
+01:22:13,876 --> 01:22:20,456
+What is the parametric equation of this line?
+
+372
+01:22:33,011 --> 01:22:48,911
+Açık bir line var ve bu p'ye alınan ve bu bir line var ve bu bir line var.
+
+373
+01:22:48,911 --> 01:23:18,891
+İçin bir line var.
+
+374
+01:23:18,911 --> 01:23:48,911
+Ve bu v'ye alınan ve bu p'ye alınan ve bu p'ye alınan ve bu p'ye alınan ve bu p'ye alınan ve bu p'ye alınan ve bu p'ye alınan ve bu p'ye alınan ve bu p'ye alınan ve bu p'ye alınan ve bu p'ye alınan ve bu p'ye alınan ve bu p'ye alınan ve bu p'ye alınan ve bu p'ye alınan ve bu p'ye alınan ve bu p'ye alınan ve bu p'ye alınan ve bu p'ye alınan ve bu p'ye alınan ve bu p'ye alınan ve bu p'ye alınan ve bu'ye alınan ve bu'ye alınan ve bu'ye alınan ve bu'ye alınan ve bu'ye alınan ve bu'ye alınan ve bu'ye al
+
+375
+01:23:48,911 --> 01:24:08,911
+by by t we have 2t 4t minus 2t. These vextors are equal to each other so corresponding components must be equal.
+
+376
+01:24:16,692 --> 01:24:30,851
+So, we get x equals minus 2 plus 2t, y equals 4t, z equals 4 minus 2t.
+
+377
+01:24:42,484 --> 01:25:06,864
+If no question, another example, find parametric equations for the line through point P and the point Q.
+
+378
+01:25:17,076 --> 01:25:27,076
+In this example, the direction vector of line are not given, but...
+
+379
+01:25:32,275 --> 01:25:35,355
+Every vector on this line.
+
+380
+01:25:39,507 --> 01:25:42,547
+is the direction
+
+381
+01:25:42,547 --> 01:25:47,047
+of this life.
+
+382
+01:25:54,676 --> 01:26:03,076
+We calculate direction vector, and then we use definition.
+
+383
+01:26:08,532 --> 01:26:15,492
+of the parametric equations of the equations of a line in space. What is pq?
+
+384
+01:26:17,492 --> 01:26:18,372
+pq
+
+385
+01:26:23,731 --> 01:26:30,692
+Minus 3, please check this, 7.
+
+386
+01:26:35,444 --> 01:26:40,264
+3 equals 4 minus 3, 7.
+
+387
+01:26:44,180 --> 01:26:50,700
+Vektor don't have a position in this space.
+
+388
+01:26:50,700 --> 01:26:58,200
+So you can draw like that, this direction vector.
+
+389
+01:26:59,940 --> 01:27:04,900
+You can use the point P.
+
+390
+01:27:06,020 --> 01:27:11,380
+And we need any arbitrary points on this line.
+
+391
+01:27:15,315 --> 01:27:23,315
+PQ is parallel to the vector v, PQ equals T, v.
+
+392
+01:27:24,996 --> 01:27:29,635
+So, what is PQ? Sorry, sorry.
+
+393
+01:27:31,395 --> 01:27:37,235
+Now, the arbitrary point is R, not Q.
+
+394
+01:27:40,435 --> 01:27:41,555
+What is PR?
+
+395
+01:27:47,155 --> 01:28:07,676
+x plus 3 equals t v, y minus 2 equals t v, z minus 3 equals t v.
+
+396
+01:28:09,796 --> 01:28:14,876
+There are parametric equations of the given line.
+
+397
+01:28:18,355 --> 01:28:19,175
+Any questions?
+
+398
+01:28:34,260 --> 01:28:38,420
+If it is clear, we can continue.
+
+399
+01:29:09,524 --> 01:29:18,844
+Bu, end points, are given of this line segment.
+
+400
+01:29:20,044 --> 01:29:38,684
+We first write the parametric equations of the line passing through P and Q, and then we must find the interval of T parameter.
+
+401
+01:29:52,212 --> 01:30:01,532
+We write the parametric equations, this line, v equals p, q.
+
+402
+01:30:13,395 --> 01:30:32,036
+P and Q are same points, previous example, so we find PQ, PR, and we can write directly the parametric equations like that.
+
+403
+01:30:40,884 --> 01:30:45,344
+Now, we need the interval of t-parimeter.
+
+404
+01:30:52,115 --> 01:31:12,435
+Since each value of p gives a point on l, so how can we obtain the point p?
+
+405
+01:31:16,595 --> 01:31:17,975
+For which value t?
+
+406
+01:31:35,988 --> 01:31:44,887
+Or which value t gives this point?
+
+407
+01:32:00,532 --> 01:32:03,612
+Efendim, [öğrenci], [öğrenci], çok teşekkür ederim.
+
+408
+01:32:06,652 --> 01:32:16,971
+If we write instead of zero, zero instead of t, we get the point p.
+
+409
+01:32:18,652 --> 01:32:20,572
+We need another point q.
+
+410
+01:32:22,372 --> 01:32:24,172
+What is the components of q?
+
+411
+01:32:24,172 --> 01:32:29,011
+1, minus 1, 4.
+
+412
+01:32:30,532 --> 01:32:36,931
+The value of t, which value of t gives a point q?
+
+413
+01:33:04,659 --> 01:33:10,180
+The interval of t to these parametric equations
+
+414
+01:33:17,011 --> 01:33:19,451
+0, 1.
+
+415
+01:33:20,171 --> 01:33:22,931
+This is the parametrization.
+
+416
+01:33:35,444 --> 01:33:40,404
+Finally, permitrise the given line segment.
+
+417
+01:33:42,244 --> 01:33:47,044
+If no questions, we can solve this homework.
+
+418
+01:33:48,324 --> 01:33:51,844
+Permitrise the line segment.
+
+419
+01:34:35,380 --> 01:34:37,079
+Oranjusuna cevap vereyim.
+
+420
+01:34:41,203 --> 01:34:46,503
+Mesela bu Q noktasına bize başka bir nokta verseydim.
+
+421
+01:34:47,344 --> 01:34:49,983
+Ama şöyle hesaplayabileceğim ben onu.
+
+422
+01:34:50,764 --> 01:34:52,224
+Siz bunu görmeyin şimdi.
+
+423
+01:34:52,483 --> 01:34:53,703
+3 versem.
+
+424
+01:34:54,063 --> 01:34:57,063
+3 kere 4 12 9 olur.
+
+425
+01:34:58,583 --> 01:35:00,703
+3 kere 3 9 7 olur.
+
+426
+01:35:02,083 --> 01:35:06,003
+3 kere 7 21 18 olur.
+
+427
+01:35:06,003 --> 01:35:08,683
+Eğer bize şöyle deseydi.
+
+428
+01:35:08,683 --> 01:35:13,363
+9 eksi 7 18 verseydi.
+
+429
+01:35:13,724 --> 01:35:14,683
+Ve deseydi ki.
+
+430
+01:35:15,503 --> 01:35:22,963
+P R doğru parçasını parametrize edin deseydi.
+
+431
+01:35:23,403 --> 01:35:26,183
+O zaman T'nin aralığını ne diyecekmişiz.
+
+432
+01:35:30,036 --> 01:35:40,775
+3 arasında diyecekmişiz. Çünkü bu sefer R noktasına karşılık gelen T'yi 3 bulacaktık. P'ye karşılık gelen noktayı da 0 bulacaktık.
+
+433
+01:35:40,775 --> 01:35:47,275
+Eğer bize P'ye demeseydi de Q'ye deseydi [öğrenci], o zaman ne diyecektik?
+
+434
+01:35:50,739 --> 01:35:53,639
+Küye karşılık geleni ne bulmuştuk biz?
+
+435
+01:35:57,652 --> 01:35:58,351
+1-3
+
+436
+01:35:58,351 --> 01:36:06,731
+Soruda verdiği son noktaları veriyor ya bize.
+
+437
+01:36:08,351 --> 01:36:12,032
+Başlangıç ve bitim noktalarını veriyor.
+
+438
+01:36:12,152 --> 01:36:15,712
+İşte bu başlangıç ve bitim noktalarına göre t'nin aralığını belirliyoruz.
+
+439
+01:36:16,131 --> 01:36:19,572
+t0'dan 3'e değiştikçe burada sonsuz tane nokta belirleyeceğiz.
+
+440
+01:36:19,712 --> 01:36:23,152
+Başlangıç noktası ve bitim noktası t'nin de sınır noktalarını veriyor.
+
+441
+01:36:25,551 --> 01:36:27,412
+[öğrenci] problem var mı şu anda?
+
+442
+01:36:27,652 --> 01:36:30,591
+Rica ederim.
+
+443
+01:36:38,163 --> 01:36:44,923
+Say, our line passing through P and Q.
+
+444
+01:36:46,283 --> 01:36:51,243
+This line is passing through the points P and Q.
+
+445
+01:36:51,724 --> 01:36:59,443
+This is the parametric equations of line.
+
+446
+01:37:01,184 --> 01:37:04,103
+But we need line segment.
+
+447
+01:37:04,103 --> 01:37:12,603
+Just this gives not line.
+
+448
+01:37:13,043 --> 01:37:16,344
+This gives just line segment.
+
+449
+01:37:27,699 --> 01:37:44,939
+They asked, first they want us parametric equations of the line passing through p and q and they want the interval of t.
+
+450
+01:37:51,956 --> 01:37:52,676
+Say it.
+
+451
+01:37:58,996 --> 01:37:59,596
+Any questions?
+
+452
+01:38:14,547 --> 01:38:33,807
+So, let's quickly find the intersection points of line x equals y equals z equals width.
+
+453
+01:38:37,460 --> 01:38:38,779
+Koordinates
+
+454
+01:38:42,260 --> 01:38:43,039
+Lengs.
+
+455
+01:38:54,355 --> 01:39:01,576
+Ordinat planes are the planes x0, y0, z0.
+
+456
+01:39:02,815 --> 01:39:10,456
+If z equals 0, then t must be 0.
+
+457
+01:39:12,595 --> 01:39:24,335
+If t equals 0, then t must be 0.
+
+458
+01:39:22,771 --> 01:39:28,692
+X equals 2, Y equals 3.
+
+459
+01:39:34,452 --> 01:39:44,572
+Finally, the line intersects the xy-plane.
+
+460
+01:39:48,307 --> 01:39:49,427
+At the point.
+
+461
+01:39:54,387 --> 01:39:56,948
+2, 3, 0.
+
+462
+01:40:12,404 --> 01:40:16,604
+Bu şekilde ilişkilerin diğer point,
+
+463
+01:40:16,604 --> 01:40:41,604
+ilişkilerin diğer point,
+
+464
+01:40:48,275 --> 01:40:50,275
+I think we can do...
+
+465
+01:40:55,699 --> 01:40:56,439
+Any questions?
+
+466
+01:41:02,804 --> 01:41:03,163
+Ok.
+
+467
+01:41:15,060 --> 01:41:19,400
+Any time to give planes in space?
+
+468
+01:41:26,260 --> 01:41:27,119
+I think no.
+
+469
+01:41:50,323 --> 01:41:52,483
+That's all today, done.
+
+470
+01:43:13,716 --> 01:43:16,856
+Geçler, birkaç tane çalışma dosyası da indireyim sizin için.
+
+471
+01:43:18,136 --> 01:43:25,916
+Şimdi, konularda biraz geri izledik ya, o zaman sizinle bir telafi ders yapabiliriz sınavdan önceki bir hafta.
+
+472
+01:43:26,615 --> 01:43:30,936
+Uygulama için telafi dersi yapar, öyle.
+
+473
+01:43:32,256 --> 01:43:35,296
+Sınava hazırlanmanızda yardımcı olabiliriz.
+
+474
+01:43:36,296 --> 01:43:38,856
+İlla ki ders saatinde yapmamıza gerek yok.
+
+475
+01:43:40,155 --> 01:43:41,716
+Uygulama sorularını da...
+
+476
+01:43:47,028 --> 01:43:48,028
+İngilizce
+
+477
+01:45:18,003 --> 01:45:21,043
+Şimdilik bu kadar yeter sanırım gençler. Önce bir bunlara bakın.
+
+478
+01:45:23,543 --> 01:45:26,184
+Gönlümüzdeki derslerde yine daha fazlasını veririm.
+
+479
+01:45:27,264 --> 01:45:28,163
+Yükleyebildiniz mi?
+
+480
+01:45:29,503 --> 01:45:29,983
+Hepsini.
+
+481
+01:45:47,859 --> 01:45:50,819
+Yıkamadınız, anlamadınız olursa da soruyorsunuz her zaman.
+
+482
+01:46:03,731 --> 01:46:05,792
+Very nice day, you're welcome.
+
+483
+01:46:19,891 --> 01:46:21,492
+See you next week. Bye-bye.

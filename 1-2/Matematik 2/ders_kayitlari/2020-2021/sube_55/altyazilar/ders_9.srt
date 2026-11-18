@@ -1,0 +1,3287 @@
+1
+00:00:16,596 --> 00:00:17,236
+Good morning.
+
+2
+00:00:22,771 --> 00:00:24,411
+Merakam, ama Aliyeva.
+
+3
+00:00:30,547 --> 00:00:31,327
+Hay, balış.
+
+4
+00:00:38,292 --> 00:00:40,352
+Thank you, I am fine too.
+
+5
+00:00:52,659 --> 00:00:53,199
+Good morning.
+
+6
+00:00:57,555 --> 00:00:57,995
+Bakın.
+
+7
+00:01:24,084 --> 00:01:25,864
+Okay, let's start.
+
+8
+00:01:29,524 --> 00:01:57,123
+Last week, we saw a new method for describing a curve. We define a curve by parametric equations. Today, we will give a formula for the length of a parametric curve and then we will see an alternative coordinate system for points for describing a curve.
+
+9
+00:01:57,123 --> 00:01:58,403
+Okay?
+
+10
+00:02:05,459 --> 00:02:10,379
+If you are ready, let's start.
+
+11
+00:02:17,108 --> 00:02:18,688
+Are you ready to start?
+
+12
+00:02:22,771 --> 00:02:24,771
+Evet, evet.
+
+13
+00:02:24,771 --> 00:02:26,771
+Evet.
+
+14
+00:02:32,852 --> 00:02:33,611
+Şares.
+
+15
+00:03:59,699 --> 00:04:29,699
+find the length of a curve in the Cartesian form. If a curve is given in the form like that, Cartesian form, here x in the interval alfa beta, and here if
+
+16
+00:04:29,699 --> 00:04:38,579
+derivative of f is a continuous function, then
+
+17
+00:04:50,995 --> 00:04:51,716
+Karoğ?
+
+18
+00:04:56,755 --> 00:05:00,835
+Do you remember this formula?
+
+19
+00:05:07,923 --> 00:05:24,403
+integral of from alpha to beta root of one plus derivative of the given function squared d.
+
+20
+00:05:35,507 --> 00:05:42,507
+We want to obtain a formula of parametric curve.
+
+21
+00:05:52,915 --> 00:06:03,156
+suppose that the curve can also be described
+
+22
+00:06:08,915 --> 00:06:10,755
+Parometrik equations
+
+23
+00:06:19,156 --> 00:06:21,156
+İçin bir şey.
+
+24
+00:06:28,531 --> 00:06:39,572
+G of t, and t belongs to closed interval a, b.
+
+25
+00:06:49,908 --> 00:06:58,768
+Last week, we obtained a parametric formula for derivative. Do you remember?
+
+26
+00:07:02,963 --> 00:07:06,124
+Epiparametric Formula
+
+27
+00:07:12,339 --> 00:07:24,519
+Derivative is dy over dx equals dy over dt dx over dt.
+
+28
+00:07:30,196 --> 00:07:37,716
+Denote the first formula by one, last formula by two.
+
+29
+00:07:46,291 --> 00:07:46,871
+At least.
+
+30
+00:07:50,899 --> 00:07:56,620
+Formular 2, 4, 1.
+
+31
+00:08:03,827 --> 00:08:09,767
+We put the formula 2 into 1.
+
+32
+00:08:13,812 --> 00:08:18,812
+If we do this, we obtain...
+
+33
+00:08:22,708 --> 00:08:35,788
+The formula for the love of parametric curve. Let's do this. L equals.
+
+34
+00:08:45,172 --> 00:08:59,331
+belongs to this interval integral from a to b, square root of 1 plus dy over dx.
+
+35
+00:08:59,331 --> 00:09:08,372
+Here write this instead of dy over dx.
+
+36
+00:09:09,971 --> 00:09:14,692
+dy over dt, dx over dt.
+
+37
+00:09:16,772 --> 00:09:18,851
+We take square d.
+
+38
+00:09:23,988 --> 00:09:30,588
+We must write x, because here we have the x.
+
+39
+00:09:34,644 --> 00:09:36,323
+Let's reorganize this formula.
+
+40
+00:09:39,683 --> 00:09:41,244
+First, echo it to denominator.
+
+41
+00:09:46,163 --> 00:09:52,744
+dx over dt squared, y over dt squared.
+
+42
+00:10:02,163 --> 00:10:07,563
+X over 20 square, re-organize.
+
+43
+00:10:13,844 --> 00:10:14,403
+y
+
+44
+00:10:24,244 --> 00:10:27,803
+dx over dt times dx.
+
+45
+00:10:29,803 --> 00:10:33,984
+Please write last time.
+
+46
+00:11:02,676 --> 00:11:14,676
+Finally, we find parametric formula for the length of the curve.
+
+47
+00:11:15,676 --> 00:11:16,676
+Okay?
+
+48
+00:11:17,676 --> 00:11:21,676
+Any problem in the calculation?
+
+49
+00:11:31,668 --> 00:11:34,827
+Let's summarize the definition.
+
+50
+00:11:41,683 --> 00:11:52,843
+If a curve is defined by parametriksiyonlar,
+
+51
+00:11:58,163 --> 00:12:07,644
+F of t, y equals t of t, t, turvled a, b,
+
+52
+00:12:12,052 --> 00:12:20,851
+ve derivataç f ve derivataç g
+
+53
+00:12:26,131 --> 00:12:26,851
+Continuous.
+
+54
+00:12:41,364 --> 00:12:52,844
+The curve is this definite integral.
+
+55
+00:13:31,443 --> 00:13:32,443
+İçinlikle
+
+56
+00:13:39,988 --> 00:13:40,608
+Example.
+
+57
+00:13:44,692 --> 00:13:54,692
+Using this definition, find the length of the circle.
+
+58
+00:14:00,500 --> 00:14:03,340
+Radius R
+
+59
+00:14:09,812 --> 00:14:17,652
+Defined by these parametrical equations.
+
+60
+00:14:30,196 --> 00:14:33,475
+0 to pi.
+
+61
+00:14:34,995 --> 00:14:35,716
+Çok kolay.
+
+62
+00:14:37,235 --> 00:14:39,716
+Çünkü bu formula ile ilgili.
+
+63
+00:14:41,316 --> 00:14:43,816
+Bu, t'in
+
+64
+00:14:44,676 --> 00:14:46,916
+0 to pi.
+
+65
+00:14:50,036 --> 00:14:53,396
+Bu, x'in
+
+66
+00:14:54,836 --> 00:14:55,796
+respect to t'in
+
+67
+00:14:55,796 --> 00:14:57,796
+t'in
+
+68
+00:14:57,796 --> 00:15:01,076
+per meter, independent variable.
+
+69
+00:15:02,836 --> 00:15:06,036
+We take derivative with respect to t.
+
+70
+00:15:07,316 --> 00:15:11,716
+Here r is radius, constant number.
+
+71
+00:15:13,475 --> 00:15:17,556
+This is minus r sin t.
+
+72
+00:15:18,676 --> 00:15:21,875
+Similarly, d y over dt
+
+73
+00:15:21,875 --> 00:15:28,115
+equals r constant.
+
+74
+00:15:33,683 --> 00:15:43,683
+V square, R square, sine square, R square, sine square, T.
+
+75
+00:15:48,947 --> 00:16:16,788
+We factor at r², r is a positive number, so we can write like that, and here the sum of sine squared and cosine squared equals 1, so we get this.
+
+76
+00:16:20,532 --> 00:16:28,211
+If we integrate this function, we find 2 pi 5.
+
+77
+00:16:38,067 --> 00:16:40,067
+Bir soru soru.
+
+78
+00:17:05,076 --> 00:17:17,476
+x equals cosine qt, y equals sine qt, t is between
+
+79
+00:17:24,884 --> 00:17:42,824
+[öğrenci], your problem solution, I think, here r is constant, because this is reduced in a constant, so you must integrate this with respect to t.
+
+80
+00:18:06,548 --> 00:18:10,768
+R-squirt is common factor. Be careful.
+
+81
+00:18:20,692 --> 00:18:24,692
+Tamam, t
+
+82
+00:18:27,172 --> 00:18:31,652
+Tamam, bir daha sonra
+
+83
+00:18:31,652 --> 00:18:32,692
+İlk olarak
+
+84
+00:18:32,692 --> 00:18:36,692
+t
+
+85
+00:18:37,892 --> 00:18:40,692
+0
+
+86
+00:18:40,692 --> 00:18:42,692
+pi
+
+87
+00:18:42,692 --> 00:18:44,692
+2
+
+88
+00:18:44,692 --> 00:19:43,692
+İlk olarak
+
+89
+00:19:34,291 --> 00:19:43,411
+We have common factor 9, square root of 9, 3.
+
+90
+00:19:44,611 --> 00:19:45,051
+Okay.
+
+91
+00:19:49,044 --> 00:19:54,824
+Cosine, square, and sine.
+
+92
+00:19:59,667 --> 00:20:02,987
+Evet, birçok, evet.
+
+93
+00:20:02,987 --> 00:20:04,987
+Birçok, birçok, birçok, birçok.
+
+94
+00:20:10,387 --> 00:20:11,528
+Bir rai dalt.
+
+95
+00:20:15,827 --> 00:20:39,947
+This multiplication and we get inside of square root sine, no no, first cosine, square root and then sine square, dj. Can you see this?
+
+96
+00:20:48,723 --> 00:20:51,583
+Any problem in this calculation?
+
+97
+00:20:55,731 --> 00:21:00,591
+Finally, we get this integral.
+
+98
+00:21:03,672 --> 00:21:13,351
+We are in the first quadrant, so these functions are positive, so we don't need absolute value.
+
+99
+00:21:15,491 --> 00:21:16,051
+Okay.
+
+100
+00:21:26,099 --> 00:21:36,059
+Now we can use this semi-angle equation 2 sin t, cos t.
+
+101
+00:21:39,700 --> 00:21:47,580
+sin 2t over 2t e over 2.
+
+102
+00:21:48,200 --> 00:21:51,580
+What is the integral of sin function?
+
+103
+00:21:52,000 --> 00:21:54,880
+Cosine 2t over 2.
+
+104
+00:21:55,059 --> 00:22:04,360
+But this is minus p, careful, and from 0 to pi over 2.
+
+105
+00:22:14,996 --> 00:22:15,756
+Kısın.
+
+106
+00:22:20,692 --> 00:22:25,771
+Minus, plus, cosine, zero.
+
+107
+00:22:28,291 --> 00:22:30,112
+This is minus one.
+
+108
+00:22:35,859 --> 00:22:37,859
+We get...
+
+109
+00:22:39,619 --> 00:22:40,000
+Three.
+
+110
+00:22:49,140 --> 00:22:50,140
+Please check this.
+
+111
+00:22:56,819 --> 00:22:57,819
+Is there a problem?
+
+112
+00:23:25,011 --> 00:23:25,892
+Last step.
+
+113
+00:23:26,692 --> 00:23:27,652
+Okay, thank you.
+
+114
+00:23:31,251 --> 00:23:32,251
+Teşekkür ederim.
+
+115
+00:23:43,508 --> 00:23:43,948
+Tamam, tamam.
+
+116
+00:23:57,140 --> 00:23:57,680
+Bir soru.
+
+117
+00:24:13,652 --> 00:24:15,271
+En uçan bir problem yok sanırım.
+
+118
+00:24:45,748 --> 00:25:01,668
+Bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu
+
+119
+00:25:07,380 --> 00:25:07,880
+Therefore,
+
+120
+00:25:12,243 --> 00:25:21,144
+We use the parametric formula for the length of the scar. We can parametrize this scar.
+
+121
+00:25:27,571 --> 00:25:30,151
+Let y equals t.
+
+122
+00:25:34,708 --> 00:25:43,428
+Now x equals 3 over 2 t to the power 2 over 3.
+
+123
+00:25:46,067 --> 00:25:49,988
+We write t instead of y.
+
+124
+00:25:50,868 --> 00:25:53,268
+So the parameter t
+
+125
+00:25:55,668 --> 00:26:01,428
+belongs to this closed interval 0,1.
+
+126
+00:26:05,619 --> 00:26:14,539
+Finally, we can parametrize the given curve, like that.
+
+127
+00:26:16,619 --> 00:26:27,599
+Now, we can use the formula of parametrile curve.
+
+128
+00:26:31,827 --> 00:26:37,347
+t, n01, sqrt, o.
+
+129
+00:26:38,708 --> 00:26:42,307
+What is the derivative of x with respect to t?
+
+130
+00:26:44,867 --> 00:26:45,827
+Let's write
+
+131
+00:26:48,548 --> 00:26:52,228
+here, dx over dt equals
+
+132
+00:27:00,180 --> 00:27:05,660
+t to the power minus 1 over 3.
+
+133
+00:27:07,000 --> 00:27:09,700
+Territical t y over d t equals 1.
+
+134
+00:27:12,320 --> 00:27:20,019
+Discard this t to the minus 2 over 3 plus 1.
+
+135
+00:27:21,400 --> 00:27:22,120
+E t.
+
+136
+00:27:25,160 --> 00:27:26,880
+We can integrate this function.
+
+137
+00:27:32,564 --> 00:27:34,564
+Bu da çok zor.
+
+138
+00:27:47,508 --> 00:28:03,347
+first term is a fraction and then equate denominators 1 plus t to the power 2 over 3 over
+
+139
+00:28:05,748 --> 00:28:07,347
+denominator
+
+140
+00:28:13,491 --> 00:28:18,132
+O, denminator, t to do 1 over 3.
+
+141
+00:28:19,912 --> 00:28:20,491
+Write,
+
+142
+00:28:22,491 --> 00:28:23,491
+denominator,
+
+143
+00:28:30,867 --> 00:28:36,167
+Degrade this function, we use substitution.
+
+144
+00:28:43,539 --> 00:28:53,359
+Let 1 plus t to do power 2 over 3 equals u.
+
+145
+00:29:00,180 --> 00:29:14,860
+İkta derivatif of both sides, 2 over 3, t t t t, minus 1 over 3 dt, equals du.
+
+146
+00:29:16,299 --> 00:29:26,460
+Finally, this multiplication, are same with this.
+
+147
+00:29:26,460 --> 00:29:28,299
+So,
+
+148
+00:29:32,339 --> 00:29:35,419
+We can rewrite our integral.
+
+149
+00:29:40,147 --> 00:29:46,587
+In terms of u, square root of u times du.
+
+150
+00:29:48,587 --> 00:29:49,587
+If...
+
+151
+00:29:53,715 --> 00:30:11,935
+t equals 0, u equals 1, t equals 1, u equals 2, from 0 to 2.
+
+152
+00:30:19,316 --> 00:30:26,915
+Be careful here, we have this constant g over,
+
+153
+00:30:45,076 --> 00:30:53,716
+0 to 2 to 3 over 2.
+
+154
+00:31:02,195 --> 00:31:05,975
+problem in these calculations.
+
+155
+00:31:28,211 --> 00:31:31,291
+Evet, let's check one more time, [öğrenci].
+
+156
+00:31:32,652 --> 00:31:38,372
+Here, t is between 0, 1.
+
+157
+00:31:40,251 --> 00:31:42,491
+We use this substitution.
+
+158
+00:31:43,892 --> 00:31:48,092
+If you write 0 instead of t,
+
+159
+00:31:50,092 --> 00:31:51,092
+you get
+
+160
+00:31:51,092 --> 00:31:54,451
+q equals 1.
+
+161
+00:32:02,963 --> 00:32:08,463
+u equals 2, I have a mistake here, [öğrenci], you are right.
+
+162
+00:32:13,428 --> 00:32:14,428
+Evet, yorum yapalım.
+
+163
+00:32:28,788 --> 00:32:30,788
+Bu, teşekkür ederim.
+
+164
+00:33:15,124 --> 00:33:25,384
+[öğrenci]'in neresini sorduğunu anlayamadım. Onun için de 2 bölü 3 neresini söylüyorsun? Bir sürü 3 bölü 2 var burada. Hangi birini sordun?
+
+165
+00:33:31,508 --> 00:33:43,908
+Şimdi, şuradakini kastediyorsan şayet, bu karşı tarafa geçecek ya, yeşiller yerine yazmamız gerekiyor. U cinsinden ifadesi 3 bölü 2DU oluyor.
+
+166
+00:33:45,067 --> 00:33:46,488
+Orayı sorursan şayet.
+
+167
+00:33:48,008 --> 00:33:49,587
+Bir kontrol edeyim.
+
+168
+00:33:49,788 --> 00:33:53,688
+Tamam, anladıysa, herkes anladıysa, problem yok.
+
+169
+00:34:01,332 --> 00:34:02,332
+Evet.
+
+170
+00:34:06,099 --> 00:34:10,900
+1 over 2, yes you are right here.
+
+171
+00:34:14,019 --> 00:34:26,900
+This step we integrate this function 1 over 2 plus 1 over power.
+
+172
+00:34:34,739 --> 00:34:35,279
+Amerikan.
+
+173
+00:34:40,884 --> 00:34:42,284
+Okay, no problem.
+
+174
+00:34:45,844 --> 00:34:48,804
+This question can be homework.
+
+175
+00:34:50,304 --> 00:34:51,204
+Same question.
+
+176
+00:34:53,684 --> 00:34:58,963
+Find the length of...
+
+177
+00:35:07,315 --> 00:35:08,235
+Selam da hiç.
+
+178
+00:35:14,708 --> 00:35:33,048
+y equals r, t minus sin t, y equals r, 1 minus cos t, here, t between 0 to par.
+
+179
+00:35:35,208 --> 00:35:39,947
+You get, lamp equals 8,
+
+180
+00:35:44,755 --> 00:35:47,755
+Oh, if no question.
+
+181
+00:36:01,492 --> 00:36:02,012
+Coordinate.
+
+182
+00:36:29,108 --> 00:36:30,108
+Coördinates
+
+183
+00:36:32,108 --> 00:36:38,108
+are an alternative to the Cartesian coordinates.
+
+184
+00:36:48,244 --> 00:36:54,024
+We want to know point P.
+
+185
+00:37:06,387 --> 00:37:09,567
+Far From Origin
+
+186
+00:37:15,603 --> 00:37:16,983
+We want to know
+
+187
+00:37:20,755 --> 00:37:22,355
+In what direction?
+
+188
+00:37:23,795 --> 00:37:25,076
+This point?
+
+189
+00:37:42,804 --> 00:37:46,884
+Polar Coordinate System, there is an origin.
+
+190
+00:37:50,324 --> 00:37:51,764
+It is called pole.
+
+191
+00:37:52,644 --> 00:37:54,644
+Origin or
+
+192
+00:37:56,403 --> 00:37:58,324
+This is called pole.
+
+193
+00:38:05,012 --> 00:38:05,532
+Axis
+
+194
+00:38:09,043 --> 00:38:10,243
+Polar X's
+
+195
+00:38:14,547 --> 00:38:18,387
+In other words, initial ray.
+
+196
+00:38:21,267 --> 00:38:25,747
+This is a ray extending from origin to the right.
+
+197
+00:38:27,267 --> 00:38:32,867
+This is the positive axis, x-axis.
+
+198
+00:38:44,467 --> 00:38:59,187
+The position of any point P in the plane is determined by its polar coordinate pair R, theta.
+
+199
+00:39:02,467 --> 00:39:10,307
+Here, R is the distance from 0 to P.
+
+200
+00:39:10,307 --> 00:39:28,947
+Theta is angel, that ray of P makes with polar axis counterclockwise.
+
+201
+00:39:42,579 --> 00:40:06,150
+Let's write one more time, r equals the distance from origin to point P, theta is angel,
+
+202
+00:40:22,900 --> 00:40:23,440
+Evet.
+
+203
+00:40:28,692 --> 00:40:31,771
+axis in the direction counterclockwise.
+
+204
+00:40:36,436 --> 00:40:38,816
+We consider positive direction.
+
+205
+00:40:41,175 --> 00:40:43,476
+We talked about this before.
+
+206
+00:40:53,235 --> 00:40:55,695
+Bu da polar axis.
+
+207
+00:40:59,731 --> 00:41:01,731
+X-axis
+
+208
+00:41:38,420 --> 00:41:48,260
+Sokutu, sayang point P is theta mined by
+
+209
+00:41:54,036 --> 00:41:59,436
+Polar koordinat r and theta
+
+210
+00:42:08,628 --> 00:42:10,008
+Do examples
+
+211
+00:42:43,476 --> 00:42:58,916
+Bu bölgeye bu bölgeye bu bölgeye bu bölgeye bu bölgeye bu bölgeye bu bölgeye bu bölgeye bu bölgeye bu bölgeye bu bölgeye bu bölgeye bu bölgeye bu bölgeye bu bölgeye bu bölgeye bu bölgeye bu bölgeye bu bölgeye bu bölgeye bu bölgeye bu bölgeye bu bölgeye bu bölgeye bu bölgeye bu bölgeye bu bölgeye bu bölgeye bu bölgeye bu bölgeye bu bölgeye bu bölgeye bu bölgeye bu bölgeye bu bölgeye bu bölgeye bu bölgeye bu bölgeye bu bölgeye bu bölgeye bu bölgeye bu bölgeye bu bölgeye bu bölgeye bu bölgeye bu bölgeye bu bölgeye bu bölgeye bu bölgeye bu bölgeye bu bölgeye bu bölgeye bu bölgeye bu bölgeye bu bölgeye bu bölge
+
+212
+00:43:04,307 --> 00:43:05,228
+Another point.
+
+213
+00:43:40,500 --> 00:43:48,579
+Plot the pole origin and draw positive x-axis.
+
+214
+00:43:53,556 --> 00:43:56,476
+İlk başta, ilk başta, A.
+
+215
+00:44:03,539 --> 00:44:09,000
+Determine theta. Here theta equals pi over 2.
+
+216
+00:44:10,000 --> 00:44:10,279
+So,
+
+217
+00:44:17,684 --> 00:44:25,164
+We draw the ray from origin that makes an angel pi over 2.
+
+218
+00:44:28,164 --> 00:44:29,844
+We draw a ray
+
+219
+00:44:32,644 --> 00:44:33,604
+that makes
+
+220
+00:44:38,547 --> 00:44:41,107
+n pi over 2,
+
+221
+00:44:43,327 --> 00:44:45,407
+with initial ray,
+
+222
+00:44:45,547 --> 00:44:48,087
+with positive x-axis.
+
+223
+00:44:49,767 --> 00:44:52,967
+This is 90 degrees.
+
+224
+00:44:56,947 --> 00:45:00,847
+Our point is on this ray.
+
+225
+00:45:06,420 --> 00:45:28,420
+Bu noktada bir noktada bir noktada.
+
+226
+00:45:32,596 --> 00:45:33,576
+If no question.
+
+227
+00:45:40,115 --> 00:45:55,846
+Bir sonraki yi
+
+228
+00:46:01,012 --> 00:46:03,012
+B
+
+229
+00:46:11,507 --> 00:46:25,507
+x-axis and the distance of b to origin is 2 unit because r equals 2.
+
+230
+00:46:30,164 --> 00:46:30,864
+Oh, sorry.
+
+231
+00:46:42,483 --> 00:47:00,824
+At point C, theta x pi over 4, we need to draw the ray that makes an angel pi over 4.
+
+232
+00:47:06,804 --> 00:47:10,664
+Bu 45 gradi
+
+233
+00:47:12,244 --> 00:47:14,403
+ve bu nokta
+
+234
+00:47:18,068 --> 00:47:27,048
+The distance of this point to origin, 1, 2, 3 unit.
+
+235
+00:47:35,764 --> 00:47:42,344
+D, where is the point D, please save.
+
+236
+00:47:52,659 --> 00:47:56,980
+negative x testi,
+
+237
+00:47:59,460 --> 00:48:00,179
+the distance
+
+238
+00:48:04,019 --> 00:48:10,659
+pole, one, two, three, four unit testi.
+
+239
+00:48:19,155 --> 00:48:21,675
+Yes, the point E, where is it?
+
+240
+00:48:33,076 --> 00:48:34,255
+[öğrenci], be careful.
+
+241
+00:48:35,096 --> 00:48:35,536
+This is...
+
+242
+00:48:39,731 --> 00:48:40,172
+Yes.
+
+243
+00:48:45,715 --> 00:49:00,516
+Okay [öğrenci], so here we plot the point e and f. What is minus 2 pi over 3?
+
+244
+00:49:24,820 --> 00:49:35,820
+Bu da 3rd quadrant.
+
+245
+00:49:57,619 --> 00:49:58,420
+Minus
+
+246
+00:50:01,972 --> 00:50:05,972
+2 pi over 3 radian
+
+247
+00:50:05,972 --> 00:50:07,972
+and this point
+
+248
+00:50:07,972 --> 00:50:09,972
+1
+
+249
+00:50:09,972 --> 00:50:11,972
+2
+
+250
+00:50:11,972 --> 00:50:13,972
+3
+
+251
+00:50:13,972 --> 00:50:15,972
+4
+
+252
+00:50:19,507 --> 00:50:20,067
+Any problem?
+
+253
+00:50:34,516 --> 00:50:34,996
+Not.
+
+254
+00:50:35,536 --> 00:50:36,496
+Not question.
+
+255
+00:50:43,956 --> 00:50:50,076
+Pozartesian co-ordinates, polar co-ordinates,
+
+256
+00:50:54,643 --> 00:50:55,563
+A good point.
+
+257
+00:51:01,619 --> 00:51:02,179
+Evet.
+
+258
+00:51:12,052 --> 00:51:17,492
+That is, a point has infinitely many pairs of polar coordinates.
+
+259
+00:51:19,812 --> 00:51:31,892
+Because the polar coordinates are theta can be written like that.
+
+260
+00:51:35,635 --> 00:51:36,195
+Ağabey.
+
+261
+00:51:58,324 --> 00:52:00,644
+General, we can write
+
+262
+00:52:05,268 --> 00:52:10,648
+k pi, here, k is any integer number.
+
+263
+00:52:18,228 --> 00:52:35,807
+For example, 1, 0, x 1, 2, pi, 1, 4, pi, 1, minus 2, pi, et cetera.
+
+264
+00:52:35,807 --> 00:52:48,907
+Or, the point 3, pi over 2 equals 3, pi, pi over 2.
+
+265
+00:52:48,907 --> 00:52:55,028
+Or, minus 3, pi over 2.
+
+266
+00:53:00,596 --> 00:53:07,096
+İ add 2 pi, and I subtract 2 pi.
+
+267
+00:53:15,123 --> 00:53:16,143
+One more note.
+
+268
+00:53:25,460 --> 00:53:25,840
+Origin
+
+269
+00:53:34,068 --> 00:53:37,068
+ve o
+
+270
+00:53:37,068 --> 00:53:39,068
+o
+
+271
+00:53:46,739 --> 00:54:14,459
+The coordinate of origin, first coordinate must be zero, but theta can be written any arbitrary angle for any value of
+
+272
+00:54:16,739 --> 00:54:19,099
+Angel, theta.
+
+273
+00:54:25,268 --> 00:54:31,867
+If we have zero distance from zero, it doesn't matter in what direction we go.
+
+274
+00:54:33,028 --> 00:54:37,268
+The origin zero has polar coordinate zero theta.
+
+275
+00:54:37,268 --> 00:54:44,827
+For example, 0, 5, pi over 2.
+
+276
+00:54:46,148 --> 00:54:47,507
+Or zero.
+
+277
+00:54:53,204 --> 00:55:20,084
+teta, 7 pi, or 0 minus 2 pi, that denotes origin, because the distance from pole equals 0.
+
+278
+00:55:40,563 --> 00:55:41,563
+Bir daha, bir daha, bir daha.
+
+279
+00:55:50,452 --> 00:55:50,892
+Sometimes.
+
+280
+00:55:59,731 --> 00:56:01,291
+Fret polar
+
+281
+00:56:01,291 --> 00:56:04,331
+coordinate
+
+282
+00:56:11,764 --> 00:56:14,804
+R is negative.
+
+283
+00:56:17,024 --> 00:56:18,304
+For calculation,
+
+284
+00:56:20,304 --> 00:56:22,524
+we need that
+
+285
+00:56:22,524 --> 00:56:24,963
+R is negative.
+
+286
+00:56:34,739 --> 00:56:35,739
+Bye.
+
+287
+00:56:42,099 --> 00:56:42,659
+İlkeler.
+
+288
+00:56:48,532 --> 00:56:58,432
+If you see r is negative, you write directly this definition.
+
+289
+00:57:09,300 --> 00:57:10,280
+Let's...
+
+290
+00:57:16,659 --> 00:57:19,739
+For example, P
+
+291
+00:57:24,436 --> 00:57:26,876
+minus r theta here.
+
+292
+00:57:29,635 --> 00:57:34,396
+This equals p r theta plus p.
+
+293
+00:57:47,795 --> 00:57:52,135
+Çeta, q, r, çeta.
+
+294
+00:57:55,603 --> 00:58:07,603
+P and Q are metric about...
+
+295
+00:58:13,523 --> 00:58:14,083
+For example,
+
+296
+00:58:21,076 --> 00:58:28,036
+30 derey, min, r,
+
+297
+00:58:28,036 --> 00:58:36,675
+180 derey,
+
+298
+00:58:46,068 --> 00:58:53,848
+Minus R, 45 degr, equals R, 225 degr, or
+
+299
+00:59:21,204 --> 00:59:21,844
+Anksın.
+
+300
+00:59:39,027 --> 00:59:39,827
+We cannot.
+
+301
+00:59:43,443 --> 00:59:48,043
+We cannot all curve.
+
+302
+01:00:07,731 --> 01:00:16,532
+normal form, kartesan form, kartesan koordinat, I think.
+
+303
+01:00:20,371 --> 01:00:30,531
+We cannot describe all curve by Cartesian coordinate. Sometimes we need parametric equations.
+
+304
+01:00:33,251 --> 01:00:38,531
+Sometimes we need polar coordinate.
+
+305
+01:00:45,396 --> 01:00:47,356
+According to curve,
+
+306
+01:01:10,260 --> 01:01:14,760
+Bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örne
+
+307
+01:01:18,643 --> 01:01:30,643
+300 degray means r, 408 degray, this means we know 100 degray.
+
+308
+01:01:40,211 --> 01:01:47,092
+3, 2 pi over 4 plus pi.
+
+309
+01:01:50,052 --> 01:01:53,891
+That is 7 pi over 4.
+
+310
+01:02:00,403 --> 01:02:04,304
+Minus pi over 4, karat.
+
+311
+01:02:14,228 --> 01:02:18,407
+Any question about this note? Yes, [öğrenci].
+
+312
+01:02:21,288 --> 01:02:28,088
+I need break too. Let's take break. 10 minutes enough, I think. What do you think?
+
+313
+01:19:10,195 --> 01:19:11,036
+Let's continue.
+
+314
+01:19:27,155 --> 01:19:28,155
+Evet, evet.
+
+315
+01:19:49,747 --> 01:19:50,268
+Evet.
+
+316
+01:20:03,507 --> 01:20:04,347
+Oh
+
+317
+01:20:14,068 --> 01:20:15,307
+First equation
+
+318
+01:20:19,123 --> 01:20:23,684
+Or, ekkos f of t, or, more.
+
+319
+01:20:29,779 --> 01:20:39,500
+Generally, f of r theta equals 0.
+
+320
+01:20:43,572 --> 01:20:47,891
+All points
+
+321
+01:20:51,380 --> 01:20:51,859
+P
+
+322
+01:20:59,252 --> 01:21:03,772
+Coordinates of this bunch now are theta.
+
+323
+01:21:10,644 --> 01:21:11,644
+coordinates
+
+324
+01:21:11,644 --> 01:21:15,564
+satisfy
+
+325
+01:21:15,564 --> 01:21:19,123
+the given
+
+326
+01:21:19,123 --> 01:21:20,244
+equation
+
+327
+01:21:20,244 --> 01:21:25,164
+r equals f of t or
+
+328
+01:21:25,164 --> 01:21:27,804
+implicit
+
+329
+01:21:27,804 --> 01:21:29,083
+function
+
+330
+01:21:29,083 --> 01:21:31,604
+F equals zero.
+
+331
+01:21:42,707 --> 01:21:49,707
+Bu çiftçokalın kertesine eşitliği gibi yıq f .
+
+332
+01:21:49,707 --> 01:21:52,707
+Eksiyonu
+
+333
+01:22:01,268 --> 01:22:30,268
+Kürbissel
+
+334
+01:22:31,636 --> 01:22:38,636
+Bu
+
+335
+01:23:00,275 --> 01:23:25,815
+That is, the curve consists of all points r theta with r equals 2. Theta here is arbitrary angle.
+
+336
+01:23:36,627 --> 01:23:39,707
+Okay, what do you think about this graph?
+
+337
+01:23:45,619 --> 01:24:00,979
+Thank you very much [öğrenci], that's true. The curve r equals 2 represents a circle with
+
+338
+01:24:03,779 --> 01:24:11,619
+circle of radius r equals 2.
+
+339
+01:24:21,844 --> 01:24:22,423
+ORIGIN.
+
+340
+01:24:48,051 --> 01:25:18,031
+ve genel olarak,
+
+341
+01:25:01,619 --> 01:25:24,340
+R equals, for example, A, A is any constant, represents a circle with center origin and radius.
+
+342
+01:25:32,851 --> 01:25:33,572
+Reduce
+
+343
+01:25:33,572 --> 01:25:36,471
+A
+
+344
+01:25:45,747 --> 01:25:52,367
+We write our echoes tree, in sketch.
+
+345
+01:26:05,171 --> 01:26:06,011
+Very simple.
+
+346
+01:26:08,711 --> 01:26:15,611
+We obtain this by using definition, the graph of the polar polar equation.
+
+347
+01:26:19,731 --> 01:26:20,591
+Bir diğer eksempel.
+
+348
+01:26:31,572 --> 01:26:36,952
+Curl, theta equals pi over 6.
+
+349
+01:26:42,452 --> 01:26:43,572
+Let's write definition.
+
+350
+01:26:46,032 --> 01:26:46,692
+The curve
+
+351
+01:26:46,692 --> 01:26:51,032
+consists of
+
+352
+01:26:51,032 --> 01:26:53,572
+all points
+
+353
+01:26:53,572 --> 01:27:22,152
+is
+
+354
+01:26:58,452 --> 01:26:58,952
+teta.
+
+355
+01:27:19,636 --> 01:27:23,096
+Angel, theta equals pi over 2.
+
+356
+01:27:28,948 --> 01:27:35,788
+is arbitrary constant.
+
+357
+01:27:46,899 --> 01:27:52,059
+Distance from origin is arbitrary real number.
+
+358
+01:27:54,759 --> 01:27:59,099
+Distance from origin.
+
+359
+01:28:02,996 --> 01:28:03,996
+Can you read?
+
+360
+01:28:06,275 --> 01:28:06,916
+Origin.
+
+361
+01:28:10,996 --> 01:28:17,956
+Arbitrary real number.
+
+362
+01:28:20,796 --> 01:28:22,975
+What do you think about this graph?
+
+363
+01:28:32,627 --> 01:28:35,547
+Yes, say it, thank you. This is mine.
+
+364
+01:28:43,859 --> 01:28:47,759
+Since theta equals pi over 6,
+
+365
+01:28:52,148 --> 01:28:57,788
+Withdraw Array, that makes...
+
+366
+01:29:02,963 --> 01:29:07,144
+6 radian, x-axis.
+
+367
+01:29:17,908 --> 01:29:18,268
+Bye.
+
+368
+01:29:21,268 --> 01:29:25,208
+Joining the point.
+
+369
+01:29:30,899 --> 01:29:36,619
+4.6, we get a line.
+
+370
+01:29:44,212 --> 01:29:44,732
+In general,
+
+371
+01:29:53,652 --> 01:30:13,971
+Equation, theta equals alpha, represents a line, that, this is true, true, origin,
+
+372
+01:30:19,028 --> 01:30:47,028
+...
+
+373
+01:30:47,699 --> 01:30:50,300
+For example, the point R2,
+
+374
+01:30:52,619 --> 01:30:54,579
+symmetric point
+
+375
+01:30:54,579 --> 01:30:57,220
+minus R
+
+376
+01:31:08,659 --> 01:31:36,500
+Example, t t t eta x pi over 6, t eta x 7 pi over 6, or t eta x minus 5 pi over 6, are equation for the same line.
+
+377
+01:32:09,076 --> 01:32:09,935
+Another example.
+
+378
+01:32:18,420 --> 01:32:20,640
+Evet, çok iyi.
+
+379
+01:32:28,564 --> 01:32:29,764
+Koordinates
+
+380
+01:32:32,884 --> 01:32:33,963
+Satisfy,
+
+381
+01:32:33,963 --> 01:32:37,363
+the following,
+
+382
+01:32:48,564 --> 01:33:04,524
+R set equals, consists of R t. R between 1 and 2, theta is between 0 and pi over 2.
+
+383
+01:33:17,587 --> 01:33:19,287
+Let's look at the engine.
+
+384
+01:33:21,367 --> 01:33:35,188
+Theta start from the ray theta equals 0 to the ray theta equals pi over 2.
+
+385
+01:33:46,899 --> 01:33:52,899
+We solve this is a line x-axis.
+
+386
+01:33:55,659 --> 01:34:01,500
+This is a line y-axis in the Cartesian coordinates.
+
+387
+01:34:04,099 --> 01:34:07,899
+And that are
+
+388
+01:34:12,435 --> 01:34:15,095
+is between 1 and 2.
+
+389
+01:34:15,895 --> 01:34:17,355
+That is, the distance
+
+390
+01:34:17,355 --> 01:34:20,695
+from origin
+
+391
+01:34:20,695 --> 01:34:24,375
+is between 1 and 2.
+
+392
+01:34:35,731 --> 01:34:37,311
+represent a region.
+
+393
+01:34:42,323 --> 01:34:46,723
+This region, which quadrant?
+
+394
+01:34:53,587 --> 01:35:01,087
+Evet, çünkü 0 pi over 2.
+
+395
+01:35:01,087 --> 01:35:09,087
+This represents a circle.
+
+396
+01:35:12,500 --> 01:35:23,899
+ve diğer bir kere, ve bu kere, ve bu kere, ve bu kere.
+
+397
+01:35:34,452 --> 01:35:35,452
+No question.
+
+398
+01:35:38,172 --> 01:35:40,452
+We can do one more example.
+
+399
+01:35:43,572 --> 01:35:44,412
+Let's write,
+
+400
+01:35:45,891 --> 01:35:52,612
+the set B consists of all the points R2 such that R
+
+401
+01:35:55,612 --> 01:36:01,212
+in minus three to theta equals pi over four.
+
+402
+01:36:16,372 --> 01:36:17,032
+Biz de sen.
+
+403
+01:36:20,884 --> 01:36:26,884
+ve bu bir saniyemiz.
+
+404
+01:36:32,819 --> 01:36:47,460
+Theta is always pi over 4. R here, negative. Minus 3 pi over 4.
+
+405
+01:36:49,539 --> 01:36:53,699
+Please use the definition of minus R.
+
+406
+01:36:58,131 --> 01:37:05,971
+Can you say this point? 3, what is the theta here?
+
+407
+01:37:18,707 --> 01:37:37,387
+[öğrenci], sorry, [öğrenci], this is wrong, because our definition was like that, is at pi to theta, [öğrenci].
+
+408
+01:37:37,387 --> 01:37:42,327
+So, this must be 5 pi over 4.
+
+409
+01:37:45,939 --> 01:37:51,500
+ve bu bölümde bu bölümde.
+
+410
+01:37:51,500 --> 01:37:58,619
+Bu bölümde bu bölümde.
+
+411
+01:38:11,923 --> 01:38:13,463
+pi over 4.
+
+412
+01:38:14,984 --> 01:38:16,264
+And we plot
+
+413
+01:38:19,583 --> 01:38:23,163
+3, 5, pi over 4.
+
+414
+01:38:26,387 --> 01:38:27,988
+ve bu point.
+
+415
+01:38:27,988 --> 01:38:29,988
+Another point is
+
+416
+01:38:31,307 --> 01:38:33,108
+2
+
+417
+01:38:35,507 --> 01:38:36,787
+pi over 4.
+
+418
+01:38:45,076 --> 01:38:45,695
+Bir yet.
+
+419
+01:39:03,828 --> 01:39:04,188
+Question?
+
+420
+01:39:31,412 --> 01:39:32,412
+Bir daha önceki örnekler.
+
+421
+01:39:39,859 --> 01:39:41,399
+Tüter
+
+422
+01:39:47,604 --> 01:39:49,484
+Belongs to this
+
+423
+01:39:49,484 --> 01:39:52,604
+...
+
+424
+01:40:28,275 --> 01:40:32,876
+And this region C,
+
+425
+01:40:37,043 --> 01:40:41,703
+Satisfy for all our real numbers.
+
+426
+01:40:50,676 --> 01:41:14,876
+We have no any condition for r. This means r is arbitrary real number. So, this is a line. This is another line. Please.
+
+427
+01:41:18,515 --> 01:41:25,515
+ve
+
+428
+01:41:24,340 --> 01:41:25,659
+2, 1,
+
+429
+01:41:28,159 --> 01:41:29,159
+this means
+
+430
+01:41:29,159 --> 01:41:32,039
+100
+
+431
+01:41:32,039 --> 01:41:34,460
+180
+
+432
+01:42:02,195 --> 01:42:06,135
+Orijin A between these lines.
+
+433
+01:42:16,819 --> 01:42:18,659
+Evet, no.
+
+434
+01:42:20,460 --> 01:42:21,539
+Here's attraction.
+
+435
+01:42:36,819 --> 01:42:46,299
+If no question, please write polar and artesian.
+
+436
+01:42:50,163 --> 01:42:50,844
+Yenişim.
+
+437
+01:43:30,484 --> 01:43:40,164
+Here, the positive x-axis is the polar axis.
+
+438
+01:43:42,524 --> 01:43:50,364
+We want to determine the relationships between Cartesian and polar coordinates of this point P.
+
+439
+01:43:55,796 --> 01:44:01,676
+From the definition of Cartesian coordinates of P,
+
+440
+01:44:05,587 --> 01:44:15,587
+X is this distance, Y is this distance.
+
+441
+01:44:19,667 --> 01:44:39,147
+If we write this point in terms of polar coordinates, r means that the distance from origin to p equals r.
+
+442
+01:44:44,756 --> 01:44:57,536
+Theta, the angel, that makes the ray of P, Theta with x-axis.
+
+443
+01:45:05,619 --> 01:45:16,420
+To determine relationships between Cartesian and polar coordinates, we use this right triangle.
+
+444
+01:45:20,979 --> 01:45:41,979
+So, from this figure, we have cosine theta equals x over 4, sine theta equals y over 4. So, to find x and...
+
+445
+01:45:46,707 --> 01:45:49,728
+Y. Use
+
+446
+01:45:49,728 --> 01:45:53,427
+Equations
+
+447
+01:45:53,427 --> 01:45:54,387
+X equals
+
+448
+01:45:54,387 --> 01:45:55,367
+R cosine
+
+449
+01:45:55,367 --> 01:45:57,487
+Y equals
+
+450
+01:45:57,487 --> 01:45:58,667
+R sine
+
+451
+01:45:58,667 --> 01:45:59,207
+Theta.
+
+452
+01:46:03,444 --> 01:46:23,184
+If we want to find r and theta, we use r squared x squared plus y squared tangent theta equals y over x.
+
+453
+01:46:46,644 --> 01:46:51,344
+If it clear, we can do examples.
+
+454
+01:46:58,003 --> 01:47:18,403
+So, this point is denoted by polar co-ordinates.
+
+455
+01:47:24,948 --> 01:47:31,427
+We want to write Cartesian coordinates.
+
+456
+01:47:33,188 --> 01:47:43,427
+Here r equals 2, theta equals pi over 3. Can you say the Cartesian coordinates of this point?
+
+457
+01:48:08,564 --> 01:48:11,124
+Yes, that's true. Thank you.
+
+458
+01:48:17,876 --> 01:48:18,676
+Another example.
+
+459
+01:48:26,612 --> 01:48:29,492
+The point with Cartesian coordinates
+
+460
+01:48:31,172 --> 01:48:33,011
+1 minus 1
+
+461
+01:48:34,532 --> 01:48:35,252
+in terms of
+
+462
+01:48:36,771 --> 01:48:38,051
+polar coordinates.
+
+463
+01:49:08,212 --> 01:49:09,332
+Say, say.
+
+464
+01:49:39,155 --> 01:49:41,155
+Evet, coronav 2.
+
+465
+01:49:42,595 --> 01:49:45,716
+Ve careful.
+
+466
+01:49:48,036 --> 01:49:49,716
+Where is this point?
+
+467
+01:49:50,595 --> 01:49:53,716
+Yes, this point is in the...
+
+468
+01:50:19,667 --> 01:50:36,547
+1, the Cartesian coordinate of this, yes, [öğrenci], so this is in the fourth quadrant, minus pi over 4, that's true.
+
+469
+01:50:36,547 --> 01:50:44,467
+Another example, find a polar equation corresponding to
+
+470
+01:50:48,020 --> 01:50:48,480
+Bir gün!
+
+471
+01:50:54,836 --> 01:50:58,315
+İklar, tersian, yakınsak,
+
+472
+01:51:11,444 --> 01:51:12,244
+Aki o sütur.
+
+473
+01:51:41,140 --> 01:51:46,420
+What you think? What was the x in terms of r and theta?
+
+474
+01:51:49,780 --> 01:52:00,100
+From this equation, we write r cosine theta instead of x.
+
+475
+01:52:03,060 --> 01:52:08,900
+A polar equation corresponding to this Cartesian equation is this.
+
+476
+01:52:08,900 --> 01:52:13,300
+For example,
+
+477
+01:52:15,380 --> 01:52:22,340
+x, y, yakuse 2.
+
+478
+01:52:23,780 --> 01:52:25,220
+This curve
+
+479
+01:52:26,980 --> 01:52:27,860
+can be given
+
+480
+01:52:28,820 --> 01:52:30,820
+in the polar equation.
+
+481
+01:52:32,100 --> 01:52:34,980
+We write r cosine theta
+
+482
+01:52:34,980 --> 01:52:36,980
+instead of x
+
+483
+01:52:36,980 --> 01:52:39,300
+and r sine theta
+
+484
+01:52:39,300 --> 01:52:40,900
+instead of y
+
+485
+01:52:42,579 --> 01:52:43,780
+we can rewrite
+
+486
+01:52:46,020 --> 01:52:46,579
+like that.
+
+487
+01:52:46,579 --> 01:52:47,460
+So
+
+488
+01:52:47,460 --> 01:52:48,020
+we can rewrite
+
+489
+01:52:48,020 --> 01:52:52,020
+like that.
+
+490
+01:52:51,988 --> 01:53:05,268
+Another example, x² plus y-3² equals 9.
+
+491
+01:53:12,115 --> 01:53:33,115
+We write r cosine theta instead of x, we replace r sine theta for y, and if we rewrite this equation,
+
+492
+01:53:37,011 --> 01:53:52,011
+remove parenthesis, we find r squared minus 6r sin theta equals zero. Yes, equals zero.
+
+493
+01:53:53,391 --> 01:53:58,711
+Here r is common factor, so we find r.
+
+494
+01:54:06,963 --> 01:54:12,243
+Evet, eqs, 6, sin, teta.
+
+495
+01:54:18,996 --> 01:54:25,596
+Business Circle, Business Circle Width Reduce 3.
+
+496
+01:54:29,076 --> 01:54:45,096
+At centered, 0, 3, this circle, this circle, can be written in the polar equation like that.
+
+497
+01:54:55,636 --> 01:54:57,636
+A Cartesian equation
+
+498
+01:55:00,836 --> 01:55:02,836
+corresponding to
+
+499
+01:55:09,652 --> 01:55:10,452
+İkırış.
+
+500
+01:55:11,252 --> 01:55:12,672
+Kıvanın polar İkırış.
+
+501
+01:55:19,347 --> 01:55:20,087
+Biz say.
+
+502
+01:55:23,604 --> 01:55:31,284
+What is the Cartesian equation of this polar equation?
+
+503
+01:56:10,100 --> 01:56:29,220
+Please don't forget this relations between paracartesine and polar coordinates. Thank you, Amerikan. Thank you. This is a horizontal line passing through y equals minus 4 on the y-axis.
+
+504
+01:56:29,220 --> 01:56:44,140
+This is y equals minus 4 or r sine t equals minus 4. This is a line, horizontal line. This is its axis.
+
+505
+01:56:44,140 --> 01:56:58,900
+B. R cosine of r equals 4 cosine t. We need a Cartesian equation.
+
+506
+01:56:58,900 --> 01:57:18,420
+We know that r cosine theta equals x. To obtain this multiplication, first we multiply by 4 this equation.
+
+507
+01:57:22,003 --> 01:57:29,003
+ve
+
+508
+01:57:51,347 --> 01:57:57,188
+special car can you say this girl
+
+509
+01:58:53,587 --> 02:00:15,587
+...
+
+510
+01:59:58,931 --> 02:00:09,851
+I forgot four here. Yes, [öğrenci], thank you. If we rewrite like that.
+
+511
+02:00:28,148 --> 02:00:35,908
+Sorry, multiply by r.
+
+512
+02:00:37,908 --> 02:00:39,028
+In this step.
+
+513
+02:00:42,771 --> 02:00:48,591
+[öğrenci], verilen denklemin her iki tarafını R ile çarpıyoruz.
+
+514
+02:00:51,211 --> 02:00:55,751
+Şu işareti yapıyorum ya, eşitliğin her iki tarafını 2 ile çarp der gibi.
+
+515
+02:01:06,163 --> 02:01:06,523
+Ok.
+
+516
+02:01:12,180 --> 02:01:26,340
+This completes the first two terms to skirt. x minus 2 skirt plus...
+
+517
+02:01:30,003 --> 02:01:32,443
+y², yakın 4.
+
+518
+02:01:39,475 --> 02:01:55,395
+This is a circle with reduce to centered at 0 to 0.
+
+519
+02:01:57,635 --> 02:02:01,395
+Any question about these calculations?
+
+520
+02:02:31,347 --> 02:02:39,268
+We want to get Cartesian equation corresponding to this given polar equation.
+
+521
+02:03:21,492 --> 02:03:40,992
+product, use cross, thank you very much [öğrenci], that's true, by cross multiplication, we get 2x minus y equals 4, this is another life, thank you.
+
+522
+02:03:42,391 --> 02:03:45,032
+So, we can give,
+
+523
+02:03:50,068 --> 02:03:58,307
+graphing in polar coordinates.
+
+524
+02:04:19,188 --> 02:04:30,547
+Sometimes, we can transform a given polar equation to Cartesian equation easily.
+
+525
+02:04:31,988 --> 02:04:46,988
+[öğrenci], please use cross multiplication to r cosine 2 minus r sine theta equals 4.
+
+526
+02:04:46,988 --> 02:04:58,748
+And replace x for r cosine theta, y for r sine theta.
+
+527
+02:05:07,380 --> 02:05:19,319
+Now, we want to graph a given polar equation.
+
+528
+02:05:21,000 --> 02:05:29,640
+First, we try to transform the given polar coordinate to Cartesian coordinate.
+
+529
+02:05:29,640 --> 02:05:43,020
+If we get Cartesian coordinate easily, we can graph the old curve in the Cartesian form.
+
+530
+02:05:44,859 --> 02:05:49,619
+But, sometimes we can't do this.
+
+531
+02:05:54,963 --> 02:06:01,003
+Sometimes the Cartesian equation may be too complicated to be recognizable.
+
+532
+02:06:05,652 --> 02:06:10,832
+If we cannot transform the polar equation to Cartesian form,
+
+533
+02:06:14,836 --> 02:06:19,516
+We can graph in the polar coordinates.
+
+534
+02:06:27,796 --> 02:06:34,836
+The Graph of Polarm
+
+535
+02:06:38,612 --> 02:06:39,731
+Ok, polar
+
+536
+02:06:39,731 --> 02:06:43,412
+Equations
+
+537
+02:06:47,604 --> 02:07:05,043
+In the first step, we construct a table of values of r and theta.
+
+538
+02:07:12,083 --> 02:07:22,283
+And then we plot these determined points on the plane.
+
+539
+02:07:25,163 --> 02:07:28,043
+And then we join.
+
+540
+02:07:31,539 --> 02:07:38,729
+Bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu
+
+541
+02:07:56,115 --> 02:07:59,275
+Symmetry is helpful to graph.
+
+542
+02:08:00,716 --> 02:08:01,595
+Let's remember,
+
+543
+02:08:02,996 --> 02:08:07,876
+Symmetry
+
+544
+02:08:09,996 --> 02:08:10,636
+About
+
+545
+02:08:26,515 --> 02:08:36,755
+Let's consider any point P whose coordinate r, theta. What is this symmetry point?
+
+546
+02:08:41,684 --> 02:08:45,944
+Q, about x-axis.
+
+547
+02:08:53,747 --> 02:09:00,747
+Bu
+
+548
+02:09:07,315 --> 02:09:37,155
+Thank you very much, r minus theta. That's true. If point r theta lies on the graph, then r minus theta or minus r pi minus theta lies
+
+549
+02:09:37,315 --> 02:09:39,635
+Nice.
+
+550
+02:09:43,923 --> 02:09:44,844
+On the ground.
+
+551
+02:09:52,948 --> 02:09:57,708
+We can rewrite this one.
+
+552
+02:10:00,508 --> 02:10:15,668
+If, on the graph, then this curve is symmetric about x.
+
+553
+02:10:20,884 --> 02:10:27,003
+For example, R equals cosine theta.
+
+554
+02:10:34,612 --> 02:10:37,532
+R'ekli 6 cosin theta, for example.
+
+555
+02:10:41,684 --> 02:10:55,003
+Skirm, this is true, both r data and r minus data.
+
+556
+02:11:00,148 --> 02:11:00,828
+This function
+
+557
+02:11:07,572 --> 02:11:13,311
+Aven function, thanks to cosine function, satisfying?
+
+558
+02:11:17,300 --> 02:11:21,300
+F teta, ekios F minus teta.
+
+559
+02:11:27,572 --> 02:11:44,832
+So, the curve r equals 6 cos theta is symmetric about x axis.
+
+560
+02:11:51,444 --> 02:11:52,444
+Evet, çok iyi.
+
+561
+02:12:14,355 --> 02:12:22,036
+Polar co-ordinates y-axis means the line theta eq pi over 2.
+
+562
+02:12:23,715 --> 02:12:24,195
+Okay?
+
+563
+02:12:27,555 --> 02:12:41,475
+We have pole, we have polar axis x-axis, we have theta eq pi over 2 line.
+
+564
+02:12:41,475 --> 02:12:47,635
+We consider any point which coordinates r theta.
+
+565
+02:12:53,427 --> 02:12:54,608
+This is my true point.
+
+566
+02:12:58,676 --> 02:13:09,876
+with respect to this line, kill. Can you say the coordinates of this point?
+
+567
+02:13:18,036 --> 02:13:19,956
+R'theta,
+
+568
+02:13:22,435 --> 02:13:24,836
+in terms of polar co-ordinates.
+
+569
+02:14:01,908 --> 02:14:29,268
+minus r theta, thank you, minus r theta, or we can say this coordinates r, pi minus theta. [öğrenci], they are same. So, definition, when
+
+570
+02:14:33,108 --> 02:14:34,728
+The point R theta.
+
+571
+02:14:42,228 --> 02:15:03,667
+Lies on the graph, r equals f of theta, if minus r theta or r pi minus theta, lies on this graph.
+
+572
+02:15:07,347 --> 02:15:08,347
+Beside
+
+573
+02:15:12,692 --> 02:15:16,971
+This curve is symmetric.
+
+574
+02:15:23,412 --> 02:15:24,012
+But
+
+575
+02:15:27,636 --> 02:15:29,636
+y-axis
+
+576
+02:15:29,636 --> 02:15:31,636
+truly
+
+577
+02:15:31,636 --> 02:15:33,636
+the line
+
+578
+02:15:33,636 --> 02:15:35,636
+equals pi over 2
+
+579
+02:15:35,636 --> 02:15:37,636
+example
+
+580
+02:15:42,644 --> 02:16:04,083
+sin teta. Sin teta, this is true, points both r theta and minus r theta.
+
+581
+02:16:07,604 --> 02:16:12,164
+Bu, bu
+
+582
+02:16:17,332 --> 02:16:24,712
+F of Theta equals minus F minus Theta.
+
+583
+02:16:27,712 --> 02:16:28,492
+This function
+
+584
+02:16:33,203 --> 02:16:38,244
+is an odd function.
+
+585
+02:16:40,884 --> 02:16:46,003
+So it is symmetric
+
+586
+02:16:48,163 --> 02:16:51,123
+with respect to yx.
+
+587
+02:17:11,956 --> 02:17:13,496
+Polar Curve
+
+588
+02:17:17,620 --> 02:17:20,600
+R equals 2, cosine, theta.
+
+589
+02:17:41,652 --> 02:17:48,891
+[öğrenci], if we write minus r minus theta,
+
+590
+02:18:12,852 --> 02:18:15,012
+minus r minus theta.
+
+591
+02:18:18,372 --> 02:18:20,692
+Yes, here theta,
+
+592
+02:18:22,452 --> 02:18:28,212
+p minus theta, r equals p minus theta.
+
+593
+02:18:29,572 --> 02:18:34,372
+If we add p to the right side,
+
+594
+02:18:39,188 --> 02:18:42,628
+2 pi minus theta.
+
+595
+02:18:56,084 --> 02:18:59,364
+Minus R, minus D'den.
+
+596
+02:19:33,075 --> 02:19:37,155
+Yes, yes, yes, yes.
+
+597
+02:19:47,572 --> 02:19:50,252
+Evet, P-data
+
+598
+02:19:52,371 --> 02:19:57,572
+Evet, bu
+
+599
+02:19:58,572 --> 02:19:59,572
+Bu
+
+600
+02:20:00,371 --> 02:20:06,572
+Evet, bu
+
+601
+02:20:08,572 --> 02:20:16,572
+Bu
+
+602
+02:20:17,572 --> 02:20:18,572
+Evet, [öğrenci]
+
+603
+02:20:20,572 --> 02:20:46,572
+Bu
+
+604
+02:20:46,260 --> 02:20:47,860
+R, here,
+
+605
+02:20:51,219 --> 02:20:54,340
+the condition is F theta equals F
+
+606
+02:20:54,340 --> 02:20:56,380
+P minus theta.
+
+607
+02:20:57,000 --> 02:20:58,180
+This is not
+
+608
+02:20:58,180 --> 02:21:00,680
+same. They are not same
+
+609
+02:21:00,680 --> 02:21:01,800
+conditions.
+
+610
+02:21:03,020 --> 02:21:04,120
+Yes, say it.
+
+611
+02:21:06,620 --> 02:21:08,899
+Before this example,
+
+612
+02:21:12,435 --> 02:21:25,716
+Let's give another symmetric about origin.
+
+613
+02:21:31,156 --> 02:21:34,636
+Let's take a point P,
+
+614
+02:21:37,156 --> 02:21:41,156
+symmetric point about origin,
+
+615
+02:21:49,971 --> 02:21:52,431
+Akılsak, R, Null.
+
+616
+02:21:53,551 --> 02:21:56,731
+Please say, Angel, here.
+
+617
+02:22:28,724 --> 02:22:32,304
+Theta plus v.
+
+618
+02:22:32,984 --> 02:22:36,064
+Let's say in terms of minus r,
+
+619
+02:23:00,564 --> 02:23:21,004
+If we add p, we get the sum of theta and 2p. This means just theta. So if the curve passes through both
+
+620
+02:23:28,244 --> 02:23:36,884
+r theta and minus r theta.
+
+621
+02:23:41,268 --> 02:23:53,268
+Then the curve is symmetric about origin.
+
+622
+02:23:53,268 --> 02:23:56,268
+Now let's draw.
+
+623
+02:24:20,531 --> 02:24:23,771
+Okay, example.
+
+624
+02:24:38,995 --> 02:24:40,115
+Polar
+
+625
+02:24:44,147 --> 02:24:47,827
+var ve r equals 2, cosin, theta.
+
+626
+02:24:56,147 --> 02:25:01,107
+without transforming the Cartesian equation.
+
+627
+02:25:02,707 --> 02:25:02,967
+Okay?
+
+628
+02:25:04,487 --> 02:25:05,467
+First step.
+
+629
+02:25:08,788 --> 02:25:11,427
+Ve, make a table.
+
+630
+02:25:17,811 --> 02:25:23,912
+This equation involves cosine function.
+
+631
+02:25:23,912 --> 02:25:27,211
+So, this is a
+
+632
+02:25:27,211 --> 02:25:30,211
+matrix
+
+633
+02:25:30,211 --> 02:25:33,051
+about
+
+634
+02:25:42,739 --> 02:25:43,420
+Zaksız.
+
+635
+02:25:55,092 --> 02:25:58,012
+The curve is symmetric about x-axis.
+
+636
+02:26:03,572 --> 02:26:30,572
+Let's take the interval 4, the interval 0, pi, or theta. We find the values of r for theta between 0 and pi.
+
+637
+02:26:34,131 --> 02:26:49,572
+If we can sketch the graph of the polar curve in this interval by using symmetry,
+
+638
+02:26:54,195 --> 02:27:02,796
+We can draw this above semi-curve.
+
+639
+02:27:02,796 --> 02:27:05,896
+Okay?
+
+640
+02:27:11,379 --> 02:27:12,719
+Let me take
+
+641
+02:27:17,299 --> 02:27:29,459
+Or, withdraw, graph, for theta in zero.
+
+642
+02:28:09,172 --> 02:28:14,811
+teta equals zero, r equals two.
+
+643
+02:28:17,692 --> 02:28:23,932
+We get first point to zero.
+
+644
+02:28:26,212 --> 02:28:38,932
+Another point. For theta equals pi over six, r equals, this is 30 degree, so this is root
+
+645
+02:28:39,172 --> 02:28:39,891
+three.
+
+646
+02:28:41,332 --> 02:28:43,652
+We have one more point.
+
+647
+02:28:45,352 --> 02:28:48,891
+Root three, pi over six.
+
+648
+02:28:50,212 --> 02:28:58,012
+Another point root two, another point one, another r zero, r.
+
+649
+02:29:00,292 --> 02:29:01,612
+This means...
+
+650
+02:29:08,211 --> 02:29:18,211
+Minus 1, please check, minus root 2, minus root 3, and minus 2.
+
+651
+02:29:21,492 --> 02:29:33,211
+We denow it by C, E, F and G, H, and K.
+
+652
+02:29:37,811 --> 02:29:49,291
+Coordinates of the point f minus 1, 2, pi over 3. This means minus 1.
+
+653
+02:29:53,587 --> 02:29:57,587
+Minus pi over 3.
+
+654
+02:30:01,940 --> 02:30:08,300
+G, G minus root 2, 3, 4.
+
+655
+02:30:10,300 --> 02:30:10,620
+So,
+
+656
+02:30:12,460 --> 02:30:14,380
+from definition, we get
+
+657
+02:30:14,380 --> 02:30:17,899
+minus 5 over 4.
+
+658
+02:30:23,956 --> 02:30:24,675
+H.
+
+659
+02:30:34,675 --> 02:30:38,995
+5 over 6, and last, k.
+
+660
+02:30:40,255 --> 02:30:40,796
+K,
+
+661
+02:30:40,796 --> 02:30:45,315
+2, 2p.
+
+662
+02:30:47,435 --> 02:30:48,036
+Okay.
+
+663
+02:30:51,507 --> 02:30:54,007
+We plot these points on the plane.
+
+664
+02:31:03,028 --> 02:31:10,208
+A, A here, 1 unit, 2 unit, A here.
+
+665
+02:31:12,007 --> 02:31:12,907
+Where is B?
+
+666
+02:31:13,907 --> 02:31:14,368
+B,
+
+667
+02:31:17,188 --> 02:31:18,808
+square root 3,
+
+668
+02:31:19,728 --> 02:31:21,068
+less than 2,
+
+669
+02:31:23,827 --> 02:31:26,948
+theta equals pi over 6.
+
+670
+02:31:28,228 --> 02:31:29,667
+So we get,
+
+671
+02:31:29,667 --> 02:31:33,827
+for example, here.
+
+672
+02:31:38,260 --> 02:31:41,579
+This is b. C.
+
+673
+02:31:44,460 --> 02:31:49,380
+The distance from origin equals square root 2.
+
+674
+02:31:51,340 --> 02:31:57,300
+Theta equals pi over 4. 45 degree.
+
+675
+02:31:58,180 --> 02:31:59,620
+We come from here.
+
+676
+02:32:01,940 --> 02:32:02,340
+Let's see.
+
+677
+02:32:03,380 --> 02:32:03,739
+D.
+
+678
+02:32:03,739 --> 02:32:11,059
+We have 60 degree and distance from origin 1 unit.
+
+679
+02:32:12,260 --> 02:32:12,579
+D.
+
+680
+02:32:18,036 --> 02:32:19,175
+As the origin.
+
+681
+02:32:29,363 --> 02:32:29,884
+İkendin.
+
+682
+02:32:33,396 --> 02:32:33,976
+Çoğun!
+
+683
+02:32:37,556 --> 02:32:39,756
+This part.
+
+684
+02:32:47,347 --> 02:32:57,347
+This graph is metric, about x-axis, so we can complete this graph.
+
+685
+02:33:03,412 --> 02:33:29,811
+If we plot f, g, h, k, f here, f is symmetric point to the d, f inverse g, g here, h is symmetric point of v.
+
+686
+02:33:49,971 --> 02:33:57,992
+I think you can sketch the polar curve.
+
+687
+02:34:01,716 --> 02:34:02,556
+İkos.
+
+688
+02:34:07,059 --> 02:34:09,059
+Or, sin theta.
+
+689
+02:34:10,340 --> 02:34:13,299
+We know this is a circle.
+
+690
+02:34:14,819 --> 02:34:22,500
+If you transform the Cartesian coordinate, this polar coordinate,
+
+691
+02:34:25,939 --> 02:34:30,979
+you will obtain an equation of a circle.
+
+692
+02:34:35,412 --> 02:34:46,291
+But without transforming to the Cartesian coordinates, you can sketch this polar curve.
+
+693
+02:34:51,860 --> 02:34:55,180
+You can use my tree, you know.
+
+694
+02:34:58,708 --> 02:35:08,268
+So, first give two values for theta and calculate r.
+
+695
+02:35:41,236 --> 02:35:42,996
+write this note
+
+696
+02:35:42,996 --> 02:35:46,396
+general
+
+697
+02:35:53,236 --> 02:36:01,976
+Equations are equals 2A, cosine, theta minus theta zero.
+
+698
+02:36:01,976 --> 02:36:06,876
+Here, A and theta zero are constants.
+
+699
+02:36:09,556 --> 02:36:10,636
+Represents.
+
+700
+02:36:14,548 --> 02:36:18,788
+Circle with Center
+
+701
+02:36:18,788 --> 02:36:24,748
+A Theta 0
+
+702
+02:36:24,748 --> 02:36:27,108
+And Reduce
+
+703
+02:36:33,811 --> 02:36:37,172
+Yer A
+
+704
+02:36:45,971 --> 02:36:59,271
+Since 2A sin theta theta 0 can be written in terms of cosine function.
+
+705
+02:37:03,188 --> 02:37:04,948
+cosin, teta,
+
+706
+02:37:07,587 --> 02:37:09,548
+minus, teta zero,
+
+707
+02:37:10,468 --> 02:37:10,987
+plus,
+
+708
+02:37:11,667 --> 02:37:12,708
+i over two,
+
+709
+02:37:14,147 --> 02:37:14,468
+is,
+
+710
+02:37:15,587 --> 02:37:16,228
+also,
+
+711
+02:37:18,987 --> 02:37:19,507
+a circle.
+
+712
+02:37:31,572 --> 02:37:36,451
+equals 2a cosin theta is a circle.
+
+713
+02:37:40,500 --> 02:37:47,739
+with r x a centered at
+
+714
+02:37:53,172 --> 02:37:53,692
+Zer.
+
+715
+02:38:07,379 --> 02:38:18,089
+Bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu bölüm
+
+716
+02:38:21,172 --> 02:38:25,551
+Another example, r equals 2a sin theta.
+
+717
+02:38:26,551 --> 02:38:38,832
+We can rewrite this equation in terms of cosine function, 2a cosine theta minus pi over 2.
+
+718
+02:38:40,112 --> 02:38:49,952
+So, this is a circle with r equals a centered at
+
+719
+02:38:51,172 --> 02:38:54,372
+a pi over 2.
+
+720
+02:39:01,811 --> 02:39:18,891
+Bu, bu
+
+721
+02:39:25,683 --> 02:39:27,063
+Ehi, ay orta.
+
+722
+02:39:59,156 --> 02:40:16,956
+A negative number, r x a cosine theta, is like that, if a negative sine theta becomes like that.
+
+723
+02:40:18,956 --> 02:40:27,576
+You can graph this curve by using this method.
+
+724
+02:40:27,576 --> 02:40:41,076
+First, we make a table, and we determine the points on the curve, and we join these points in the plane.
+
+725
+02:40:45,971 --> 02:40:55,891
+So, here you will get this circle.
+
+726
+02:40:59,283 --> 02:41:06,363
+A equals 4, so, centered.
+
+727
+02:41:12,371 --> 02:41:16,811
+2, 4, common, pi over 2.
+
+728
+02:41:17,811 --> 02:41:18,931
+R equals
+
+729
+02:41:18,931 --> 02:41:22,811
+sorry
+
+730
+02:41:22,811 --> 02:41:24,771
+A
+
+731
+02:41:24,771 --> 02:41:28,531
+equals
+
+732
+02:41:28,531 --> 02:41:30,531
+2
+
+733
+02:41:53,811 --> 02:41:59,131
+Bu bölümde kargiyatları var.
+
+734
+02:41:59,131 --> 02:42:04,811
+Kargiyatları var.
+
+735
+02:42:04,811 --> 02:42:10,811
+Bu bölümde kargiyatları var.
+
+736
+02:42:13,556 --> 02:42:19,996
+We will calculate the area of the region between two polar curves tomorrow.
+
+737
+02:42:28,948 --> 02:42:34,688
+We will give the formula for polar equations tomorrow.
+
+738
+02:42:37,847 --> 02:42:39,488
+Yes, [öğrenci]?
+
+739
+02:42:43,603 --> 02:42:45,603
+[öğrenci]'ya.
+
+740
+02:42:50,324 --> 02:42:52,684
+2N, 2N, 2N,
+
+741
+02:43:53,811 --> 02:43:59,172
+Evet, sorunu da verebilirim. Ama, abi siz kontrol ettiniz mi?
+
+742
+02:44:06,868 --> 02:44:24,308
+For example, [öğrenci] bir saniye, [öğrenci]'ya bakalım. For example, 3 cosine theta. So, here a is this number. [öğrenci], no problem.
+
+743
+02:44:28,147 --> 02:44:30,647
+Disconstant Maybe Outnumber.
+
+744
+02:44:34,647 --> 02:44:35,527
+[öğrenci].
+
+745
+02:44:36,427 --> 02:44:38,027
+Avesiste de çok fazla
+
+746
+02:44:38,027 --> 02:44:40,107
+uygulamanın olduğunu düşünüyorum.
+
+747
+02:44:40,227 --> 02:44:42,127
+Kontrol ederim ben tekrar Avesisi.
+
+748
+02:44:43,167 --> 02:44:44,307
+Geçen dönem
+
+749
+02:44:44,307 --> 02:44:46,147
+yaz okulunda
+
+750
+02:44:46,147 --> 02:44:47,967
+bol bol oraya soru eklemiştim.
+
+751
+02:44:49,047 --> 02:44:49,887
+Ama
+
+752
+02:44:49,887 --> 02:44:52,147
+Türkçe olması lazım. İngilizcelerine
+
+753
+02:44:52,147 --> 02:44:54,087
+de bir bakarım. Var mı yok mu diye.
+
+754
+02:44:54,727 --> 02:44:56,147
+Ama kitap
+
+755
+02:44:56,147 --> 02:44:57,507
+indirebildiniz mi?
+
+756
+02:44:58,147 --> 02:45:00,227
+Thomas'ı, Kalkulus'ı,
+
+757
+02:45:00,387 --> 02:45:02,427
+Adams'ı bunların hepsi
+
+758
+02:45:02,427 --> 02:45:04,768
+internette var. İlk ders bahsetmiştim.
+
+759
+02:45:04,847 --> 02:45:06,467
+Bunları mutlaka internetten
+
+760
+02:45:06,467 --> 02:45:08,887
+indirin ve konu sonundaki
+
+761
+02:45:08,887 --> 02:45:10,787
+alıştırmaları da yapmaya çalışın.
+
+762
+02:45:11,247 --> 02:45:12,507
+Yapamadığınız takdirde tabii ki
+
+763
+02:45:12,507 --> 02:45:14,047
+bana sorabilirsiniz ama yine
+
+764
+02:45:14,047 --> 02:45:16,087
+internette çözümleri var.
+
+765
+02:45:16,407 --> 02:45:18,607
+[öğrenci] paylaşabilir misin linkini buradan?
+
+766
+02:45:19,447 --> 02:45:20,527
+Thomas Kalkulus'ı
+
+767
+02:45:20,527 --> 02:45:22,127
+ya da pdf olarak paylaşabilir misin?
+
+768
+02:45:22,247 --> 02:45:23,667
+Arkadaşlarını yormayalım.
+
+769
+02:45:26,307 --> 02:45:27,147
+Bulamayabilirlerdi
+
+770
+02:45:27,147 --> 02:45:28,927
+çünkü. Çok kolay değil onu
+
+771
+02:45:28,927 --> 02:45:30,607
+internetten bulmakta.
+
+772
+02:45:31,427 --> 02:45:32,387
+Tamam.
+
+773
+02:45:33,787 --> 02:45:34,967
+Bir bakın arkadaşlar.
+
+774
+02:45:35,768 --> 02:45:37,007
+Thomas Kalkulus'ı,
+
+775
+02:45:37,207 --> 02:45:38,188
+12.si,
+
+776
+02:45:38,387 --> 02:45:39,787
+13. edişini
+
+777
+02:45:39,787 --> 02:45:41,507
+hep bunlar var internette.
+
+778
+02:45:41,927 --> 02:45:43,487
+Konu sonu, örneklerini
+
+779
+02:45:43,487 --> 02:45:44,688
+çözmeye çalışın.
+
+780
+02:45:44,887 --> 02:45:45,567
+Zor değiller.
+
+781
+02:45:45,567 --> 02:45:48,727
+Çözümleri de var.
+
+782
+02:45:48,727 --> 02:45:49,307
+Üstelikte.
+
+783
+02:45:49,707 --> 02:45:51,567
+İnternete girerseniz çözümlerini
+
+784
+02:45:51,567 --> 02:45:53,087
+anlamadıklarınızı da lütfen
+
+785
+02:45:53,087 --> 02:45:55,227
+her zaman sorun.
+
+786
+02:45:56,487 --> 02:45:56,727
+Bir de
+
+787
+02:45:56,727 --> 02:45:58,067
+AVSİC kontrol ediyorsunuz.
+
+788
+02:45:58,107 --> 02:46:00,027
+AVSİC'in şifresini hatırlayan var mı?
+
+789
+02:46:00,027 --> 02:46:04,547
+benim bakmam lazım.
+
+790
+02:46:06,547 --> 02:46:07,647
+AVSİC'in konu da
+
+791
+02:46:07,647 --> 02:46:08,807
+MAP2 grup 1'miş.
+
+792
+02:46:14,164 --> 02:46:18,684
+İkhim
+
+793
+02:46:29,940 --> 02:46:31,940
+...
+
+794
+02:46:40,020 --> 02:46:50,440
+Şu simetrik kısmında biraz önce bir kafamız kırıştı. Bir kere daha onu kontrol etmek istiyorum ben. Koordinatları, herhangi bir hata var mı gençler? R, teta.
+
+795
+02:46:59,572 --> 02:47:01,891
+Doğru
+
+796
+02:47:13,075 --> 02:47:13,955
+Şimdi buraya bakalım.
+
+797
+02:47:14,095 --> 02:47:14,955
+Tazan teta.
+
+798
+02:47:15,235 --> 02:47:16,375
+Şimdi hiçbir sorun yok.
+
+799
+02:47:18,535 --> 02:47:19,315
+Geçiyorum.
+
+800
+02:47:20,035 --> 02:47:22,235
+Ama burada kafamız karışmıştı zaten bizim.
+
+801
+02:47:22,915 --> 02:47:23,755
+R teta tamam.
+
+802
+02:47:25,735 --> 02:47:26,835
+Şurası da tamam.
+
+803
+02:47:27,175 --> 02:47:28,435
+Bunda bir yanlışlık var mı yok?
+
+804
+02:47:30,435 --> 02:47:31,475
+P eksi teta.
+
+805
+02:47:32,255 --> 02:47:34,755
+Eğer P eklersen...
+
+806
+02:47:42,291 --> 02:47:43,731
+bir eksiklete olmaz mı?
+
+807
+02:48:03,059 --> 02:48:05,059
+Evet, bir şey daha, bir şey.
+
+808
+02:48:43,827 --> 02:48:51,337
+Bu, bu
+
+809
+02:48:54,932 --> 02:48:58,792
+Condition 4, y-axis.
+
+810
+02:49:24,500 --> 02:49:26,500
+Bu şekilde
+
+811
+02:50:00,435 --> 02:50:02,995
+Yara, bu condition.
+
+812
+02:50:07,059 --> 02:50:11,699
+This graph is symmetric about y-axis.
+
+813
+02:50:12,699 --> 02:50:24,219
+Gençler, bu ikinin koşulu ilk yazdığımızda doğru yazmıştık ama şuradaki açılarda bir karışıklık oldu o sırada.
+
+814
+02:50:25,079 --> 02:50:28,879
+Şimdi, orucun yapmıştık ama şimdi düzelttim.
+
+815
+02:50:29,939 --> 02:50:36,699
+Lütfen, siz de bir kere daha bakın ben kaydederken, eğer varsa kafa karışıklığı gene düzeltelim.
+
+816
+02:51:11,476 --> 02:51:14,516
+Arkadaşlar, pdf'i dönüştürüyorum bir saniye.
+
+817
+02:51:48,691 --> 02:51:49,491
+Koordinat.
+
+818
+02:52:00,948 --> 02:52:03,568
+Dede gençler, vektör değerli fonksiyonlar geçeceğiz.
+
+819
+02:52:04,247 --> 02:52:13,007
+Bu hafta, polar koordinatları da bitirdikten sonra, baktörde konu kalmadı yerine, tamamlayacağız.
+
+820
+02:52:13,128 --> 02:52:15,468
+Lütfen bunlarla ilgili bol örnek yapmaya çalışın.
+
+821
+02:52:19,924 --> 02:52:22,284
+konusunu örneklerle tamamlamaya çalışıyoruz.
+
+822
+02:54:16,051 --> 02:54:29,711
+Bir kere daha teyit edeyim ben. İki dize olması gerekiyor ama son açıklama nedir? Bir sorunmam lazımsın. Bir kere daha teyit edelim bu bilgiyi. Rica ederim. Kendinize iyi bakın. Bir yarın görüşmek üzere. See you tomorrow.

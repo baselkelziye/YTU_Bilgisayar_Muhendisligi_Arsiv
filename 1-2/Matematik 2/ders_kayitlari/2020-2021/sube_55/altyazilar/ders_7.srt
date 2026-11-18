@@ -1,0 +1,2983 @@
+1
+00:00:15,124 --> 00:00:15,664
+Good morning.
+
+2
+00:00:24,564 --> 00:00:26,044
+Welcome, how are you?
+
+3
+00:00:31,507 --> 00:00:32,507
+Müzik
+
+4
+00:00:35,892 --> 00:00:37,012
+Hello, [öğrenci].
+
+5
+00:01:03,667 --> 00:01:04,487
+I hope you are well.
+
+6
+00:01:05,388 --> 00:01:06,207
+How are you?
+
+7
+00:01:29,748 --> 00:01:31,748
+[öğrenci], thank you.
+
+8
+00:01:32,828 --> 00:01:34,048
+I am fine too.
+
+9
+00:01:36,868 --> 00:01:38,508
+Thank you very much, [öğrenci].
+
+10
+00:01:39,508 --> 00:01:40,987
+I am very well.
+
+11
+00:01:49,364 --> 00:01:52,264
+If you are ready, let's start.
+
+12
+00:01:55,264 --> 00:01:56,504
+I am ready.
+
+13
+00:02:05,331 --> 00:02:14,891
+Last week, we found the power series representations for a few functions having special form.
+
+14
+00:02:15,931 --> 00:02:19,731
+This week, we expand this idea.
+
+15
+00:02:21,572 --> 00:02:27,132
+That is, we will show how functions generate power series representations.
+
+16
+00:02:29,931 --> 00:02:34,491
+Which functions have power series representations?
+
+17
+00:02:43,475 --> 00:02:43,836
+Ok?
+
+18
+00:02:49,651 --> 00:02:54,991
+Today, we will see Taylor serisi, Maclaurin serisi.
+
+19
+00:02:57,512 --> 00:03:01,371
+If you are ready, let's start.
+
+20
+00:03:07,699 --> 00:03:10,419
+Are you ready? Are you okay?
+
+21
+00:03:13,619 --> 00:03:15,539
+Okay, I am starting.
+
+22
+00:04:04,147 --> 00:04:04,587
+Taylor.
+
+23
+00:04:23,252 --> 00:04:23,752
+Bu da?
+
+24
+00:04:27,764 --> 00:04:31,663
+Kav is a new function.
+
+25
+00:04:36,180 --> 00:04:39,980
+It can be represented.
+
+26
+00:04:45,747 --> 00:04:51,507
+PowerSeries, f of x equals,
+
+27
+00:04:56,339 --> 00:05:07,859
+and start from 0 to infinity. Cn, here cn are arbitrary constants called coefficients of series.
+
+28
+00:05:14,420 --> 00:05:27,920
+A is another constant. A is called centered of convergence interval. X, X is real numbers.
+
+29
+00:05:30,620 --> 00:05:33,580
+This is the interval of convergence.
+
+30
+00:05:39,411 --> 00:05:42,911
+Rewrite this power series.
+
+31
+00:05:44,411 --> 00:05:47,311
+We need the first few terms.
+
+32
+00:05:49,012 --> 00:06:00,311
+First one is c0, c1 x minus a, and another x minus a squared.
+
+33
+00:06:05,524 --> 00:06:06,283
+Last one.
+
+34
+00:06:20,180 --> 00:06:26,959
+To determine what the coefficients can must be in terms of f of x.
+
+35
+00:06:28,959 --> 00:06:30,959
+We want to find...
+
+36
+00:06:35,572 --> 00:06:38,732
+These coefficients cn
+
+37
+00:06:45,267 --> 00:06:47,647
+F of x
+
+38
+00:06:51,764 --> 00:07:07,663
+To do this, we first write, instead of x in this equality, we find just c0, because
+
+39
+00:07:11,283 --> 00:07:13,343
+After the first terms,
+
+40
+00:07:18,228 --> 00:07:20,528
+R, zero, all of them.
+
+41
+00:07:29,684 --> 00:07:42,264
+We know that the sum of our series f of x is a continuous function with derivatives of all orders.
+
+42
+00:07:42,264 --> 00:07:47,104
+We can differentiate this equality.
+
+43
+00:07:49,104 --> 00:07:53,264
+So, let's...
+
+44
+00:07:56,276 --> 00:08:18,276
+Derivative this equality. Derivative of first term is zero. Derivative of second term is just c1. Derivative of third term 2 c2 x minus a.
+
+45
+00:08:18,276 --> 00:08:21,196
+Then three.
+
+46
+00:08:24,196 --> 00:08:25,115
+And then.
+
+47
+00:08:38,067 --> 00:08:41,347
+Substitute A into this equality.
+
+48
+00:08:45,076 --> 00:08:48,355
+B find C1.
+
+49
+00:08:49,975 --> 00:08:56,816
+Because after the first term, all terms becomes zero.
+
+50
+00:08:58,956 --> 00:08:59,676
+And continue.
+
+51
+00:09:06,740 --> 00:09:11,799
+Derivative, this equality.
+
+52
+00:09:16,820 --> 00:09:29,980
+2c2 plus 3 times 2 times c3 times x minus a.
+
+53
+00:09:46,419 --> 00:09:51,419
+İçeride Equality, we find to see...
+
+54
+00:10:01,139 --> 00:10:24,919
+İlk derivitif, we find 3, 2, c3, 4, 3, 2, c4, x-a, and so on.
+
+55
+00:10:24,919 --> 00:10:33,259
+Finally, we find a, 3, 2, c3.
+
+56
+00:10:33,259 --> 00:10:35,980
+Please say.
+
+57
+00:10:41,139 --> 00:10:50,960
+If we continue to differentiate and substitute x equals a, what will we find?
+
+58
+00:11:09,011 --> 00:11:38,771
+Yes, n factorial times cn. That's true. Finally, we find cn in terms of the function f. If we solve this equality for cn, we find f to the n, a,
+
+59
+00:11:39,011 --> 00:11:40,851
+over n-factor.
+
+60
+00:11:51,091 --> 00:12:19,971
+x equals, power series, cn times x minus a to the n, and we find cn, in terms of our function f, if we substitute this coefficient cn, into power series,
+
+61
+00:12:26,163 --> 00:12:33,043
+F to the n a over n factorial times x minus a to the n.
+
+62
+00:12:58,964 --> 00:13:00,604
+Power Series
+
+63
+00:13:00,604 --> 00:13:04,764
+Representation
+
+64
+00:13:09,908 --> 00:13:15,927
+At point A, of course musak.
+
+65
+00:13:22,131 --> 00:13:23,131
+That is...
+
+66
+00:13:27,220 --> 00:13:34,840
+F of x equals 0, infinity, cn x minus a to the n.
+
+67
+00:13:52,340 --> 00:13:52,920
+Efeşim.
+
+68
+00:13:56,947 --> 00:13:57,908
+given by
+
+69
+00:13:57,908 --> 00:14:01,668
+formula
+
+70
+00:14:01,668 --> 00:14:09,747
+cn equals f of n a over n-factor
+
+71
+00:14:16,307 --> 00:14:21,567
+Ve prudu, Taylor, her.
+
+72
+00:14:49,235 --> 00:14:49,716
+What's up?
+
+73
+00:14:53,139 --> 00:15:03,039
+We consider a function f represented by a power series.
+
+74
+00:15:04,860 --> 00:15:12,059
+We consider a function represented by a power series.
+
+75
+00:15:12,059 --> 00:15:29,939
+Here, we want to determine, okay, we want to determine the coefficients can be given in terms of f of x.
+
+76
+00:15:29,939 --> 00:15:39,519
+To do this, we first write f of x equals series.
+
+77
+00:15:40,480 --> 00:15:45,799
+First, we substitute a instead of x.
+
+78
+00:15:46,559 --> 00:15:48,539
+This equals c0.
+
+79
+00:15:49,159 --> 00:15:52,519
+And then, we take derivative and then substitute.
+
+80
+00:15:52,519 --> 00:15:56,399
+We find just c1, okay.
+
+81
+00:15:56,399 --> 00:16:02,639
+And then, we take differentiation.
+
+82
+00:16:02,639 --> 00:16:12,639
+And we find second derivative of f at a equals 2c2.
+
+83
+00:16:14,639 --> 00:16:16,159
+One more time.
+
+84
+00:16:18,159 --> 00:16:23,419
+This equals 3 times 2c3.
+
+85
+00:16:23,419 --> 00:16:53,399
+And then, we find the derivative of f at a.
+
+86
+00:16:41,908 --> 00:16:45,908
+Evet, evet, bu doğru.
+
+87
+00:16:45,908 --> 00:16:47,908
+Bu da
+
+88
+00:16:57,908 --> 00:16:59,908
+[öğrenci],
+
+89
+00:16:59,908 --> 00:17:01,908
+Bu da
+
+90
+00:17:03,956 --> 00:17:13,076
+What is derivative of? Fourth order derivative of f x, and then substitute a.
+
+91
+00:17:15,556 --> 00:17:30,036
+This is constant, so derivative of constant becomes zero. And here x is first order, so this is c4.
+
+92
+00:17:36,084 --> 00:17:40,844
+Term of 4 derivative of f
+
+93
+00:17:47,284 --> 00:17:49,384
+Ok.
+
+94
+00:18:04,660 --> 00:18:08,230
+Bir soru
+
+95
+00:18:14,228 --> 00:18:27,108
+Tamam, şimdi devam edelim.
+
+96
+00:18:30,132 --> 00:18:33,971
+Ve find this result.
+
+97
+00:18:52,564 --> 00:18:53,564
+Evet, bu da.
+
+98
+00:19:05,971 --> 00:19:19,192
+aqs, n0, infinity, f of n, a, over m! x-a to the i.
+
+99
+00:19:22,483 --> 00:19:34,483
+İlk olarak, ilk olarak, f'a,
+
+100
+00:19:34,483 --> 00:19:39,483
+f'a,
+
+101
+00:19:39,483 --> 00:19:47,483
+third term, f'a,
+
+102
+00:19:47,483 --> 00:19:51,483
+2'x-a,
+
+103
+00:20:00,756 --> 00:20:17,316
+This series is called the Taylor series of the function.
+
+104
+00:20:23,604 --> 00:20:24,604
+Evet.
+
+105
+00:20:34,195 --> 00:20:35,275
+A special case.
+
+106
+00:20:39,796 --> 00:20:40,676
+0.
+
+107
+00:20:45,364 --> 00:20:46,544
+Taylor serisi,
+
+108
+00:20:46,544 --> 00:20:51,264
+is called
+
+109
+00:20:51,264 --> 00:20:54,744
+Maclaurin,
+
+110
+00:20:59,827 --> 00:21:01,907
+f of x equals
+
+111
+00:21:07,316 --> 00:21:09,316
+m!
+
+112
+00:21:17,940 --> 00:21:40,320
+The first term of Maclaurin series becomes f of 0, f' 0 times x, 2nd derivative of f, 3 factorial x squared, this is Maclaurin series.
+
+113
+00:21:48,852 --> 00:21:49,852
+Bir daha.
+
+114
+00:22:04,019 --> 00:22:04,960
+ve function f.
+
+115
+00:22:09,268 --> 00:22:36,988
+As a Taylor serisi at the point A, and that serisi converges to this function f of x in an open interval.
+
+116
+00:22:49,172 --> 00:22:49,872
+This function
+
+117
+00:22:53,395 --> 00:22:55,556
+is called
+
+118
+00:22:55,556 --> 00:22:59,915
+an analytic function.
+
+119
+00:23:56,915 --> 00:23:58,096
+Taylor serisi,
+
+120
+00:24:00,695 --> 00:24:01,735
+denited by,
+
+121
+00:24:04,035 --> 00:24:05,035
+x equals,
+
+122
+00:24:05,576 --> 00:24:06,715
+1 over x,
+
+123
+00:24:07,475 --> 00:24:07,796
+at,
+
+124
+00:24:08,455 --> 00:24:09,755
+a equals,
+
+125
+00:24:32,819 --> 00:24:35,259
+We write the definition of Taylor series.
+
+126
+00:24:37,339 --> 00:24:40,740
+And then we apply
+
+127
+00:24:43,619 --> 00:24:48,299
+the radius of f into Taylor series.
+
+128
+00:25:16,692 --> 00:25:24,692
+Function has infinitely differentiated.
+
+129
+00:25:27,572 --> 00:25:34,692
+So, this function has power series representations.
+
+130
+00:25:45,428 --> 00:25:48,248
+Definition of Taylor series
+
+131
+00:25:48,248 --> 00:25:50,628
+Adres
+
+132
+00:25:59,380 --> 00:26:29,380
+F'ı f
+
+133
+00:26:29,380 --> 00:26:37,780
+Then we substitute into this series. Finally we find Taylor series.
+
+134
+00:26:44,723 --> 00:26:49,403
+İlk olarak ilk üç bölümde bu bölümde.
+
+135
+00:26:49,403 --> 00:26:56,763
+İlk olarak,
+
+136
+00:27:03,731 --> 00:28:03,731
+F'2
+
+137
+00:28:03,731 --> 00:28:07,432
+2'2
+
+138
+00:28:12,948 --> 00:28:27,748
+So, we can write into series, 1 over 2 minus 1 over 2 squared x minus 2 plus,
+
+139
+00:28:35,508 --> 00:28:43,408
+over 2 cubed 2 factorial x minus 2 square.
+
+140
+00:28:51,763 --> 00:28:55,023
+You can rewrite like that.
+
+141
+00:29:01,523 --> 00:29:10,643
+If you cannot expand these terms, if you cannot find the general term of the series, first...
+
+142
+00:29:15,923 --> 00:29:39,043
+F, what is third order derivative of F, minus 2, 3, over x to the 4, that is minus 2, 3, over,
+
+143
+00:29:51,380 --> 00:30:02,380
+3 over to do 4. Be careful, don't forget. 3 factory.
+
+144
+00:30:11,443 --> 00:30:13,644
+x-2
+
+145
+00:30:20,915 --> 00:30:25,475
+Here, if we simplify these terms,
+
+146
+00:30:30,132 --> 00:30:37,951
+Now we can find general terms.
+
+147
+00:30:42,483 --> 00:31:00,323
+Bu bir alternatif, bu bir n'in
+
+148
+00:31:04,852 --> 00:31:12,392
+Let's check, if we write 0 instead of n, we will find first term.
+
+149
+00:31:14,392 --> 00:31:29,552
+If we write 1 into n, we will find 1 over 2 squared.
+
+150
+00:31:35,028 --> 00:31:36,208
+Any problem here?
+
+151
+00:32:01,268 --> 00:32:06,268
+Okay, if no problem, finally we find Taylor Seris.
+
+152
+00:32:06,268 --> 00:32:11,268
+This is Taylor Seris and we...
+
+153
+00:32:15,316 --> 00:32:19,216
+Rewrite this time your series by sigma.
+
+154
+00:32:23,508 --> 00:32:24,107
+[öğrenci].
+
+155
+00:32:29,683 --> 00:32:34,844
+Sorunu tamamlayamadım. Değerini nasıl kullandık derken neyi soruyorsun?
+
+156
+00:32:37,483 --> 00:32:48,844
+Soruda kendisi verdi. A'yı 2 olarak. 2 noktasındaki Taylor serisini bulunuz dedi. Biz de Taylor serisinde A gördüğümüz yere 2 yazdık.
+
+157
+00:32:52,468 --> 00:32:55,408
+İki noktasındaki sürelerini hesapladık.
+
+158
+00:32:56,888 --> 00:32:57,928
+Soru da veriyordu yani.
+
+159
+00:32:59,548 --> 00:32:59,928
+Tamam.
+
+160
+00:33:25,140 --> 00:33:27,880
+Convergence 1 over x.
+
+161
+00:33:30,400 --> 00:33:36,100
+Let's find the interval of convergence of the power series.
+
+162
+00:33:43,476 --> 00:33:48,476
+İlk metod, ilk metod is...
+
+163
+00:33:53,523 --> 00:33:56,883
+Ve şu test, last week.
+
+164
+00:33:59,763 --> 00:34:02,403
+Ve bu test limit
+
+165
+00:34:11,860 --> 00:34:25,940
+We compare this limit with the number 1. If this limit less than 1, the Taylor series converges in this interval.
+
+166
+00:34:34,900 --> 00:34:37,900
+Bu bir diğer metod.
+
+167
+00:34:39,900 --> 00:34:40,900
+Çünkü
+
+168
+00:34:43,900 --> 00:34:46,900
+Resulting series
+
+169
+00:34:46,900 --> 00:34:47,900
+is
+
+170
+00:34:48,900 --> 00:34:49,900
+special
+
+171
+00:34:49,900 --> 00:34:51,900
+series.
+
+172
+00:34:56,500 --> 00:35:03,500
+Bu bir şey.
+
+173
+00:35:30,516 --> 00:35:32,516
+Geometrik serisi.
+
+174
+00:35:34,996 --> 00:35:37,996
+Let's reorganize this series.
+
+175
+00:35:50,643 --> 00:35:52,723
+Taylor 2 is constant.
+
+176
+00:35:57,715 --> 00:36:19,976
+Minus 1, x minus 2, over 2, to the power n. We can rewrite this series like that. Here, this is constant, a, this is r.
+
+177
+00:36:24,596 --> 00:36:30,916
+Bu şekilde bu şekilde bu şekilde.
+
+178
+00:36:34,324 --> 00:36:56,324
+This series is called geometric series. Here if r between minus 1 and 1, this geometric series convergent series and it converges to a over 1 minus r.
+
+179
+00:37:03,188 --> 00:37:06,968
+We can rewrite the geometric series by a power series.
+
+180
+00:37:11,827 --> 00:37:16,108
+Like that. Here x arbitrary real numbers.
+
+181
+00:37:17,728 --> 00:37:35,567
+If x between minus 1 and 1, this power series is a special geometric series and it converges a over 1 minus x.
+
+182
+00:37:35,567 --> 00:37:41,907
+This is number series. This is power series.
+
+183
+00:37:45,652 --> 00:37:46,492
+Do you remember?
+
+184
+00:37:48,692 --> 00:37:52,592
+So, this is also geometric series.
+
+185
+00:37:53,512 --> 00:38:01,632
+Here, a equals 1 over 2, r equals minus x minus 2 over 2.
+
+186
+00:38:03,152 --> 00:38:09,412
+So, this is in the form geometric series.
+
+187
+00:38:10,692 --> 00:38:12,412
+And this geometric series,
+
+188
+00:38:12,412 --> 00:38:17,452
+x a equals 1 over 2,
+
+189
+00:38:17,952 --> 00:38:19,612
+1 minus,
+
+190
+00:38:21,351 --> 00:38:22,811
+what is the r?
+
+191
+00:38:23,311 --> 00:38:27,012
+Plus x minus 2 over 2.
+
+192
+00:38:30,867 --> 00:38:42,148
+If we rewrite the denominator, and we can simplify the denominators, and then we find 1 over x.
+
+193
+00:38:45,148 --> 00:38:56,748
+Our condition, minus 1, less than, what was the r? Minus x minus 2 over 2, less than 1.
+
+194
+00:38:56,748 --> 00:39:02,587
+We must solve this inequality for x.
+
+195
+00:39:41,172 --> 00:39:53,952
+TylerSeries converges to 1 over x if x between 0 and 4.
+
+196
+00:40:03,219 --> 00:40:05,579
+Any question? Any problem?
+
+197
+00:40:30,708 --> 00:40:33,208
+Let's write last sentence.
+
+198
+00:41:00,596 --> 00:41:07,916
+The title of size generated by f of x at the given point converges to 1 over x per
+
+199
+00:41:45,715 --> 00:41:46,855
+Taylor serisi,
+
+200
+00:41:49,715 --> 00:41:50,915
+dene edip by,
+
+201
+00:41:55,380 --> 00:41:58,700
+Evet.
+
+202
+00:42:03,251 --> 00:42:12,951
+Actually, we find Maclaurin series, because the given point equals zero.
+
+203
+00:42:52,052 --> 00:42:54,912
+Dört tane, dört tane.
+
+204
+00:42:58,804 --> 00:42:59,324
+Ağız.
+
+205
+00:43:08,596 --> 00:43:10,255
+If you want, work time.
+
+206
+00:43:15,603 --> 00:43:17,384
+E to the x.
+
+207
+00:43:18,963 --> 00:43:21,643
+We need derivatives.
+
+208
+00:43:29,076 --> 00:43:32,115
+The value of derivatives at 0.
+
+209
+00:43:38,356 --> 00:43:41,676
+F of 0, sorry, 1.
+
+210
+00:43:43,796 --> 00:43:46,236
+Derivative of F is 0,
+
+211
+00:43:48,316 --> 00:43:49,636
+and all of them
+
+212
+00:43:51,196 --> 00:43:52,476
+become 1.
+
+213
+00:43:53,996 --> 00:43:54,396
+So,
+
+214
+00:43:56,436 --> 00:43:58,996
+we substitute in two series.
+
+215
+00:44:06,931 --> 00:44:08,931
+You can write general term.
+
+216
+00:44:31,123 --> 00:44:34,323
+Bu, bu, end term, bu, end term.
+
+217
+00:44:36,723 --> 00:44:38,003
+Bu, if you cannot find,
+
+218
+00:44:40,483 --> 00:44:41,123
+you should,
+
+219
+00:44:41,683 --> 00:44:42,083
+one more
+
+220
+00:44:44,803 --> 00:44:46,483
+term, yes.
+
+221
+00:44:57,108 --> 00:45:01,847
+Thank you, [öğrenci]. X to the n over n factorial.
+
+222
+00:45:11,251 --> 00:45:12,572
+[öğrenci], da istiyor.
+
+223
+00:45:17,588 --> 00:45:30,048
+If we can write general term of the Mac-Durhan series, now we can find the interval of convergent.
+
+224
+00:45:31,528 --> 00:45:34,588
+This is not geometric series.
+
+225
+00:45:36,708 --> 00:45:41,968
+So, we must use the first method ratio.
+
+226
+00:45:46,739 --> 00:45:53,739
+Bu, bu
+
+227
+00:45:59,827 --> 00:46:01,827
+n plus 1,
+
+228
+00:46:03,427 --> 00:46:04,547
+instead of n,
+
+229
+00:46:07,748 --> 00:46:08,748
+in general term,
+
+230
+00:46:10,188 --> 00:46:11,188
+and then write
+
+231
+00:46:12,387 --> 00:46:13,668
+n denominator,
+
+232
+00:46:14,228 --> 00:46:15,108
+general term.
+
+233
+00:46:18,067 --> 00:46:18,788
+And then,
+
+234
+00:46:21,427 --> 00:46:22,148
+simplify,
+
+235
+00:46:28,115 --> 00:46:33,076
+The total value of x can be written out of limit.
+
+236
+00:46:40,755 --> 00:46:45,315
+With this limit we will find zero.
+
+237
+00:46:49,684 --> 00:47:07,334
+This limit equals zero for every x real numbers. This means, Taylor serisi, or Maclaurin serisi,
+
+238
+00:47:13,076 --> 00:47:30,836
+Y-duratio test, this limit less than 1, always converges, e to the x, or every x in R.
+
+239
+00:47:51,795 --> 00:47:54,495
+If we have a simple definition.
+
+240
+00:48:12,340 --> 00:48:20,280
+The first n terms of Taylor serisi is called Taylor poinom of n order.
+
+241
+00:48:28,596 --> 00:48:43,275
+The sum of the first and terms of Taylor seris is called
+
+242
+00:48:54,547 --> 00:48:55,047
+Teşekkürler.
+
+243
+00:49:00,275 --> 00:49:07,275
+Bu n'a
+
+244
+00:49:07,275 --> 00:49:57,275
+n'a
+
+245
+00:49:45,619 --> 00:49:48,839
+İzgocin, bir sampo.
+
+246
+00:49:55,411 --> 00:49:56,351
+Taylor serisi,
+
+247
+00:50:00,000 --> 00:50:07,000
+ve
+
+248
+00:50:13,940 --> 00:50:16,380
+Cosine x, right?
+
+249
+00:50:17,780 --> 00:50:18,159
+There.
+
+250
+00:50:20,460 --> 00:50:23,019
+And then, find
+
+251
+00:50:26,019 --> 00:50:26,820
+Interval
+
+252
+00:50:26,820 --> 00:50:28,780
+Conver
+
+253
+00:50:51,251 --> 00:50:56,331
+The question, the function is given as cosine x.
+
+254
+00:50:58,491 --> 00:51:00,652
+We will find Maclaurin series.
+
+255
+00:51:07,411 --> 00:51:18,051
+We will find the value of f at zero. This equals one. What is the derivative of f minus sine x?
+
+256
+00:51:20,211 --> 00:51:22,051
+Value of...
+
+257
+00:51:26,260 --> 00:51:27,460
+Derivide 0.
+
+258
+00:51:44,851 --> 00:51:53,831
+Art-Ordör, sin x, its value becomes zero.
+
+259
+00:51:57,715 --> 00:51:58,655
+Orta deriveti.
+
+260
+00:52:03,155 --> 00:52:04,315
+Cosine x
+
+261
+00:52:04,315 --> 00:52:07,516
+And 1
+
+262
+00:52:19,635 --> 00:52:24,496
+We can write Maclaurin series.
+
+263
+00:52:26,036 --> 00:52:27,456
+First write definition.
+
+264
+00:52:34,771 --> 00:52:36,771
+Bir tane tane bir tane.
+
+265
+00:52:56,659 --> 00:53:03,659
+ve
+
+266
+00:53:03,188 --> 00:53:05,068
+This is just one.
+
+267
+00:53:12,628 --> 00:53:18,628
+0, 0, 0.
+
+268
+00:53:26,900 --> 00:53:27,260
+Bu da.
+
+269
+00:53:31,284 --> 00:53:33,184
+Orada 2, Faktöre.
+
+270
+00:53:38,996 --> 00:53:43,215
+Mains, thank you.
+
+271
+00:53:43,215 --> 00:53:51,715
+Mains, please say tartar.
+
+272
+00:54:11,027 --> 00:54:26,687
+Be careful, [öğrenci], this is zero, plus x to the fourth over, be careful, which is the denominator, four factorial.
+
+273
+00:54:26,687 --> 00:54:29,267
+And then,
+
+274
+00:54:32,628 --> 00:54:35,228
+Please guess, one more term.
+
+275
+00:54:49,235 --> 00:54:51,536
+Minus, yes, that's true.
+
+276
+00:54:52,536 --> 00:54:58,875
+Now, we can write the general term of this series.
+
+277
+00:55:01,655 --> 00:55:12,496
+This alternating series, first term is positive, so we can write minus 1 to the n over,
+
+278
+00:55:15,496 --> 00:55:18,755
+denominator is always even number, factorial.
+
+279
+00:55:19,235 --> 00:55:24,215
+So, we can write in the general form.
+
+280
+00:55:31,284 --> 00:55:45,983
+nf!i, and x to the components are always even number, so we write
+
+281
+00:55:49,492 --> 00:56:01,672
+x to 2 to n. That's true. Yes. We find the Taylor series generated by cosine function.
+
+282
+00:56:07,731 --> 00:56:08,231
+Teşekkürler.
+
+283
+00:56:21,907 --> 00:56:27,027
+And the last step, we will find the interval of convergent.
+
+284
+00:56:31,347 --> 00:56:38,347
+Bu birçok genel olarak, bu birçok genel olarak kullanıyoruz.
+
+285
+00:56:46,195 --> 00:56:47,275
+n plus 2
+
+286
+00:57:00,019 --> 00:57:03,960
+[öğrenci], let's look at together.
+
+287
+00:57:06,300 --> 00:57:08,219
+Minus 1 to do 0.
+
+288
+00:57:09,539 --> 00:57:11,639
+This becomes 1.
+
+289
+00:57:15,251 --> 00:58:10,251
+Yükselin
+
+290
+00:57:51,764 --> 00:58:03,544
+We have x squared, in the denominator we have 2n plus 2, 2n plus 1.
+
+291
+00:58:04,923 --> 00:58:14,284
+We can rewrite this limit, 2n plus 2, 2n plus 1.
+
+292
+00:58:14,284 --> 00:58:22,864
+This limit becomes 0, so this limit always 0.
+
+293
+00:58:27,347 --> 00:58:40,067
+always less than 1. This means for every x in real numbers, the Taylor serisi converges to cosine function.
+
+294
+00:58:49,427 --> 00:58:55,907
+x1 2n 2n 2n x 2n equals
+
+295
+00:58:55,907 --> 00:58:58,268
+cosine x
+
+296
+00:58:58,268 --> 00:59:00,387
+over every
+
+297
+00:59:43,411 --> 00:59:46,431
+Burayı mı kastediyorsun [öğrenci]? [öğrenci], pardon.
+
+298
+00:59:50,483 --> 00:59:51,483
+Müzik
+
+299
+00:59:56,371 --> 01:00:01,491
+Burada sıfırı nasıl elde edeceğiz derken, neyi kastettiğini anlayamıyorum.
+
+300
+01:00:06,708 --> 01:00:21,108
+Şöyle mi soruyorsun? Şunu sorayım mı soruyorsun? Ben burada tek tek terimlerini buldum, ondan sonra genelleştirdim. Hayır, biz burada tek tek bulup genelleştirmeyelim. Önce yukarıda genelleştirelim mi demek istiyorsun?
+
+301
+01:00:30,452 --> 01:00:36,232
+Mesela burada 0, 1, 2, 3 diye gidiyor.
+
+302
+01:00:36,892 --> 01:00:39,252
+Ben burada genelleştireyim.
+
+303
+01:00:40,392 --> 01:00:43,292
+Tek tek bulurken, evet burada sıfırları buluyoruz.
+
+304
+01:00:43,892 --> 01:00:44,732
+Doğru söylüyorsun.
+
+305
+01:00:45,872 --> 01:00:47,912
+Tek tek bulurken sıfır değeri buluyoruz.
+
+306
+01:00:48,312 --> 01:00:50,412
+Sonra biz burada tek tek yine yazıyoruz.
+
+307
+01:00:50,572 --> 01:00:52,132
+Bak hepsini tek tek yazdım.
+
+308
+01:00:52,852 --> 01:00:55,332
+Bazıları sıfırlandı, bazıları sıfırlanmadı.
+
+309
+01:00:56,092 --> 01:00:58,212
+Sıfırlananları burada artı.
+
+310
+01:00:58,212 --> 01:00:59,952
+Bir sonraki satıra yazmıyorum.
+
+311
+01:01:00,712 --> 01:01:03,832
+Sadece çiftlerin karşıma geldiğini görüyorum.
+
+312
+01:01:04,292 --> 01:01:06,892
+Ve o çiftlere göre de genelleştiriyorum.
+
+313
+01:01:08,832 --> 01:01:10,292
+Artık sıfırlarla işim bitiyor.
+
+314
+01:01:11,052 --> 01:01:12,512
+Hiç onları kafaya takmıyorum.
+
+315
+01:01:13,812 --> 01:01:17,192
+[öğrenci], sen niye takıldın?
+
+316
+01:01:17,652 --> 01:01:18,512
+Nereye takıldın?
+
+317
+01:01:20,412 --> 01:01:21,812
+Problem var mı?
+
+318
+01:01:23,092 --> 01:01:25,812
+Burada genelleştirebilirsin.
+
+319
+01:01:25,812 --> 01:01:27,332
+Eğer takıldığın şey buysa.
+
+320
+01:01:27,752 --> 01:01:28,792
+Ama seni o zora sokar.
+
+321
+01:01:28,792 --> 01:01:34,272
+Boşu boşuna orada kafanı karıştırmak istemediğim için burada genelleştirmedim.
+
+322
+01:01:34,432 --> 01:01:36,172
+Sonraki adımlarda genelleştirdim.
+
+323
+01:01:36,572 --> 01:01:39,412
+Geçen senelerde ben de o noktada genelleştirdim.
+
+324
+01:01:39,492 --> 01:01:41,332
+Ama baktım ki gerek yok.
+
+325
+01:01:41,492 --> 01:01:44,052
+Boşu boşuna sizi yormak istemiyorum.
+
+326
+01:01:44,172 --> 01:01:48,572
+Ama burayı sıfırlar işimizi kolaylaştırıyorlar.
+
+327
+01:01:49,172 --> 01:01:52,352
+Zorlaştırmak yerine tam tersine kolaylaştırıyorlar.
+
+328
+01:01:52,352 --> 01:01:54,632
+Bu şekilde.
+
+329
+01:01:54,632 --> 01:01:55,672
+Teiler Polynom.
+
+330
+01:01:55,672 --> 01:02:28,972
+Bu şekilde.
+
+331
+01:02:25,204 --> 01:02:44,684
+We need nth term. nth term is also general term of the series x to the 2n over 2n-batteri. This is the polynomial, Taylor, polynomial.
+
+332
+01:02:50,324 --> 01:02:50,684
+Evet.
+
+333
+01:02:57,139 --> 01:02:58,679
+Let's find sine function.
+
+334
+01:02:59,960 --> 01:03:00,819
+Another example.
+
+335
+01:03:11,443 --> 01:03:13,443
+...
+
+336
+01:03:29,172 --> 01:03:33,172
+Produce of, komular...
+
+337
+01:03:39,827 --> 01:03:41,708
+İşte bu definiçin.
+
+338
+01:03:43,688 --> 01:03:46,367
+A equals 0
+
+339
+01:03:46,367 --> 01:03:47,907
+because we want to find
+
+340
+01:03:47,907 --> 01:03:49,347
+McLaurin series.
+
+341
+01:03:55,956 --> 01:03:59,956
+ve bir sürü bir sürü.
+
+342
+01:04:05,748 --> 01:04:12,748
+ve f'in derivativesi'nin 0'ı
+
+343
+01:04:12,748 --> 01:04:32,748
+ve f'in 0'ı
+
+344
+01:04:31,572 --> 01:04:44,751
+F of 0, 0, 1, 0, and minus 1.
+
+345
+01:04:44,751 --> 01:04:58,472
+Substitute them into the series. First term becomes 0, second term minus x, third term 0.
+
+346
+01:04:58,472 --> 01:05:03,271
+What is the another?
+
+347
+01:05:07,092 --> 01:05:07,632
+Thumb.
+
+348
+01:05:11,476 --> 01:05:20,635
+I have mistake here, it must be positive, because it is just one.
+
+349
+01:05:26,516 --> 01:05:29,456
+Zer'o, tert, zer'o.
+
+350
+01:05:34,036 --> 01:05:37,135
+What is the another term?
+
+351
+01:05:53,043 --> 01:05:53,663
+Can you say?
+
+352
+01:06:04,788 --> 01:06:09,788
+x3 over 3!
+
+353
+01:06:09,788 --> 01:06:23,788
+And then please guess one more term plus x to the 5 over 5!
+
+354
+01:06:23,788 --> 01:06:33,788
+Now you can say end term of this Tyler series.
+
+355
+01:06:33,788 --> 01:06:36,788
+This is alternating series.
+
+356
+01:06:39,443 --> 01:06:42,543
+First term is just x.
+
+357
+01:07:26,963 --> 01:07:40,583
+Ok, x minus 1 to the n, ok, x to the 2n minus 1 over 2n minus 1.
+
+358
+01:07:48,340 --> 01:08:01,340
+From which number can you say? Say it. Be careful. Yes. Hmm. If we write...
+
+359
+01:08:05,331 --> 01:08:11,911
+0 instead of n, in the denominator, we find minus 1 factorial.
+
+360
+01:08:14,172 --> 01:08:18,431
+So, you must change this number.
+
+361
+01:08:25,171 --> 01:08:37,971
+Okay. [öğrenci] and [öğrenci], if we write one, yes, that's true. First number x and then x cube over.
+
+362
+01:08:42,163 --> 01:09:09,543
+3!i, but in this case, first term become, yes, minus, say it, you can write minus 1, okay, but you can write also n plus 1.
+
+363
+01:09:13,555 --> 01:09:25,835
+In this condition, you can change exponent of minus one. Or you can write like that.
+
+364
+01:09:32,051 --> 01:09:37,051
+Bu, daha önce daha önce, birçok bir şey.
+
+365
+01:09:43,123 --> 01:09:49,363
+Finally, we find Matematik 3D, generated by sine function.
+
+366
+01:09:50,363 --> 01:09:58,023
+Now, we want to find the radius of convergence, the interval of convergence.
+
+367
+01:09:58,023 --> 01:10:00,023
+We must use...
+
+368
+01:10:03,859 --> 01:10:04,979
+Ratio test.
+
+369
+01:10:10,579 --> 01:10:12,579
+İlk olarak bu.
+
+370
+01:10:38,899 --> 01:10:40,019
+This becomes zero.
+
+371
+01:10:43,299 --> 01:10:45,379
+This is always less than one.
+
+372
+01:10:46,259 --> 01:10:48,739
+So, Taylor serisi
+
+373
+01:10:50,099 --> 01:10:51,059
+converges
+
+374
+01:10:55,315 --> 01:10:57,315
+Mclaren series
+
+375
+01:11:00,315 --> 01:11:02,315
+Converges to sine function
+
+376
+01:11:03,315 --> 01:11:04,315
+for
+
+377
+01:11:05,315 --> 01:11:06,315
+every x
+
+378
+01:11:12,979 --> 01:11:13,979
+Evet.
+
+379
+01:12:24,659 --> 01:12:27,739
+If no question, see you after the break.
+
+380
+01:16:22,899 --> 01:16:28,359
+[öğrenci], yes, take a break, 10 minutes later, see you.
+
+381
+01:38:26,707 --> 01:38:37,707
+Evet, of course, we can do that. Let's do the end of this lecture. Okay?
+
+382
+01:38:48,115 --> 01:38:58,996
+Let's continue our lecture. And then at the end of this lecture, we will solve the homework.
+
+383
+01:39:20,948 --> 01:39:27,948
+Your homework. Please try to solve this homework.
+
+384
+01:39:53,395 --> 01:39:54,395
+Evet, evet.
+
+385
+01:40:03,731 --> 01:40:04,372
+Hey [öğrenci]!
+
+386
+01:40:08,659 --> 01:40:11,059
+Taylor serisi, is a power serisi.
+
+387
+01:40:15,956 --> 01:40:43,956
+...
+
+388
+01:40:38,739 --> 01:40:59,559
+Taylor seris, are all valued in the inner section of their intervals of conversion.
+
+389
+01:41:17,395 --> 01:41:18,015
+For example,
+
+390
+01:41:45,779 --> 01:41:57,059
+To find the series of cosine function, we can find the first fifth terms of the Taylor series for this given function.
+
+391
+01:42:00,564 --> 01:42:03,564
+We use Power Series Operations.
+
+392
+01:42:08,115 --> 01:42:15,395
+Write 2x times xn, and write the Taylor series generated by cosine function.
+
+393
+01:42:16,155 --> 01:42:20,996
+Please remember this function.
+
+394
+01:42:22,376 --> 01:42:24,636
+First term, 1.
+
+395
+01:42:25,395 --> 01:42:29,235
+Second term, x squared, 2 factorial.
+
+396
+01:42:29,996 --> 01:42:35,836
+x to the 4, 4 factorial, minus positive.
+
+397
+01:42:42,612 --> 01:42:50,771
+We write Maclaurin series of cosine function.
+
+398
+01:42:56,340 --> 01:43:00,140
+And then this term x.
+
+399
+01:43:02,360 --> 01:43:03,420
+End to parentheses.
+
+400
+01:43:27,155 --> 01:43:44,515
+and then remove two parenthesis x minus 1 over 2 times 2 factorial x cubed plus 1 over 3 times 4 factorial x cubed plus 1 over 3 times 4 factorial x cubed plus 1 over 3 times 4 factorial x cubed plus 1 over 3 times 4 factorial x cubed plus 1 over 3 times 4 factorial x cubed plus 1 over 3 times 4 factorial x cubed plus 1 over 3 times 4 factorial x cubed plus 1 over 3 times 4 factorial x cubed plus 1 over 3 times 4 factorial x cubed plus 1 over 3 times 4 factorial x cubed plus 1 over 3 times 4 factorial x cubed plus 1 over 3 times 4 factorial x cubed plus 1 over 3 times 4 factorial x cubed plus 1 over 3 times 4 factorial x cubed plus 1 over 3 times 4 factorial x cubed plus 1 over 3 times 4 factorial x cubed plus 1 over 3 times 4 factorial x cubed plus 1 over 3 times 4 factorial x cubed plus 1 over 3 times 4 factorial x cubed plus 1 over 3 times 4 factorial x cubed plus 1 over 3 times 4 factorial x cubed plus 1 over 3 times 4 factorial x cubed plus 1 over 3 times 4 factorial x cubed
+
+401
+01:43:49,332 --> 01:43:59,412
+Finally, we find the first three terms of the Taylor series for the given function.
+
+402
+01:44:00,771 --> 01:44:06,692
+We use the power series operations.
+
+403
+01:44:15,444 --> 01:44:16,444
+Bir daha bir örnek.
+
+404
+01:44:23,988 --> 01:44:27,807
+Maclaurin, serisi.
+
+405
+01:44:54,868 --> 01:44:55,388
+İnanın.
+
+406
+01:44:58,899 --> 01:45:02,299
+Maclaurin serisi generated by e to the x.
+
+407
+01:45:04,299 --> 01:45:08,979
+This is 1 plus x plus x squared.
+
+408
+01:45:17,971 --> 01:45:22,671
+Also, Maclaurin's answer is, genetide türev, kısmi x.
+
+409
+01:45:32,115 --> 01:45:39,115
+ve
+
+410
+01:45:39,115 --> 01:45:46,115
+1.
+
+411
+01:45:46,115 --> 01:45:51,115
+What is the next term?
+
+412
+01:45:51,115 --> 01:45:53,115
+Can you say?
+
+413
+01:46:10,868 --> 01:46:12,868
+Evet, çift katlı, çift katlı.
+
+414
+01:46:14,868 --> 01:46:16,868
+Bu bir diğer term?
+
+415
+01:46:36,627 --> 01:46:40,067
+If we multiply this term with,
+
+416
+01:46:46,420 --> 01:46:48,420
+Şimdi x3'e bu.
+
+417
+01:46:48,420 --> 01:46:50,420
+Şimdi bu.
+
+418
+01:46:50,420 --> 01:46:54,420
+Bu.
+
+419
+01:46:59,507 --> 01:47:01,507
+Tamam, tamam.
+
+420
+01:47:09,971 --> 01:47:14,971
+Evet, bu da 0. Evet, bu da.
+
+421
+01:47:16,971 --> 01:47:26,971
+Ve bu termini bu termini bu termini bu.
+
+422
+01:47:35,060 --> 01:47:36,600
+No, no, no, sorry.
+
+423
+01:47:38,220 --> 01:47:40,500
+First, we have this done.
+
+424
+01:48:05,363 --> 01:48:06,523
+1 over 2.
+
+425
+01:48:18,100 --> 01:48:23,980
+So, find the first three.
+
+426
+01:48:29,043 --> 01:48:31,483
+Lorentz'in series of this function.
+
+427
+01:48:32,923 --> 01:48:43,903
+So, first on 1, x, and minus 1 over 3, yes, x3.
+
+428
+01:48:54,707 --> 01:48:55,247
+Any questions?
+
+429
+01:49:00,692 --> 01:49:02,072
+Everybody can see.
+
+430
+01:49:08,435 --> 01:49:09,076
+No question.
+
+431
+01:49:26,131 --> 01:49:33,251
+This is not that. We can use the Taylor series.
+
+432
+01:49:44,756 --> 01:49:45,716
+İpulv, X.
+
+433
+01:50:18,804 --> 01:50:20,804
+The Taylor serisi
+
+434
+01:50:30,676 --> 01:50:38,516
+For example, we want to find Taylor series generated by cosin 2x.
+
+435
+01:50:43,828 --> 01:50:47,828
+Find the Taylor series.
+
+436
+01:50:54,676 --> 01:51:24,655
+X'in
+
+437
+01:51:01,684 --> 01:51:05,324
+Let me know the Taylor series for cosine x.
+
+438
+01:51:06,463 --> 01:51:11,344
+First, write the Taylor series for cosine x.
+
+439
+01:51:24,467 --> 01:51:36,467
+First write the known Taylor series for cosine x, and then write 2x instead of x.
+
+440
+01:51:38,148 --> 01:51:42,627
+Substitute 2x into cosine function.
+
+441
+01:51:45,028 --> 01:51:52,228
+Finally, we will find the Taylor series generated by the given function.
+
+442
+01:51:54,467 --> 01:51:56,228
+2x
+
+443
+01:52:02,612 --> 01:52:04,731
+X to the form
+
+444
+01:52:19,123 --> 01:52:19,743
+Any question?
+
+445
+01:52:43,923 --> 01:52:51,963
+e to the power minus x square power cube.
+
+446
+01:52:53,524 --> 01:52:56,323
+Find Taylor's Maclaurin series
+
+447
+01:52:59,923 --> 01:53:01,564
+generated by this function.
+
+448
+01:53:03,363 --> 01:53:05,884
+What is the Maclaurin series for this function?
+
+449
+01:53:12,148 --> 01:53:21,768
+We don't have to use definition of Taylor series, because we know the Taylor series for exponential function.
+
+450
+01:53:22,427 --> 01:53:39,108
+First, we write Taylor series for this function, a to the x, and then we substitute minus x squared over 3 for x into this series.
+
+451
+01:53:42,148 --> 01:53:47,387
+First, remember to Taylor series for exponential function.
+
+452
+01:53:48,387 --> 01:53:57,828
+1 plus x, x squared over 2 factorial, x cubed over 3 factorial.
+
+453
+01:54:07,956 --> 01:54:12,376
+Minus 3, 1.
+
+454
+01:54:16,307 --> 01:54:19,828
+Minus x türev over 3 plus
+
+455
+01:54:23,412 --> 01:54:26,292
+Minus x squared over 3,
+
+456
+01:55:01,747 --> 01:55:03,647
+Is it clear? What do you think?
+
+457
+01:55:13,363 --> 01:55:14,363
+Her şey değil mi?
+
+458
+01:55:25,939 --> 01:55:26,519
+Question.
+
+459
+01:55:34,804 --> 01:55:38,644
+That is the Taylor-Maclaurin series for this function.
+
+460
+01:55:42,355 --> 01:55:53,115
+We use the relation between trigonometric functions
+
+461
+01:56:01,939 --> 01:56:02,539
+Teşekkürler.
+
+462
+01:56:07,859 --> 01:56:09,719
+If you remember this relation,
+
+463
+01:56:14,260 --> 01:56:22,659
+And if you can write the Taylor serisi for cosine 2x.
+
+464
+01:56:28,051 --> 01:56:32,652
+Finally, we will find the Taylor series for the given function.
+
+465
+01:56:34,051 --> 01:56:35,931
+What was the cosine 2x?
+
+466
+01:56:35,931 --> 01:56:39,931
+We found the first or...
+
+467
+01:56:43,315 --> 01:56:50,916
+Burada maklum answer is 4cos2x
+
+468
+01:56:50,916 --> 01:56:58,916
+If we substitute it into this equality
+
+469
+01:56:58,916 --> 01:57:13,635
+1 minus 2 factorial 2x square plus 1 over 4 factorial 2x square plus
+
+470
+01:57:17,427 --> 01:57:18,627
+We can rewrite.
+
+471
+01:57:25,555 --> 01:57:29,275
+multiply these terms minus 1 over 2.
+
+472
+01:57:30,115 --> 01:57:41,555
+We can simplify these terms and we find 1 over 2 times 2 factorial 2 x squared minus
+
+473
+01:57:45,779 --> 01:57:52,500
+1 over 2 times 4! 2x to 4!
+
+474
+01:58:49,220 --> 01:58:50,579
+Minus.
+
+475
+01:58:51,240 --> 01:58:51,900
+Cosine.
+
+476
+01:58:52,400 --> 01:58:53,280
+2x.
+
+477
+01:58:55,579 --> 01:58:56,440
+Okay.
+
+478
+01:59:02,804 --> 01:59:14,804
+Another example, parabolic functions, is defined by e to the x minus e to the minus x over 2.
+
+479
+01:59:18,292 --> 02:01:16,292
+...
+
+480
+02:01:13,971 --> 02:01:22,771
+You can find yourself for cosine hyperbolic function, if no question.
+
+481
+02:01:51,315 --> 02:02:12,876
+Maclaurin'in sayesine için
+
+482
+02:02:18,260 --> 02:02:20,340
+Maclaurin, serisi, for sine function.
+
+483
+02:02:30,036 --> 02:02:32,155
+Maclaurin, sayes 4, cosine function.
+
+484
+02:02:39,188 --> 02:02:40,887
+İkken, say bye.
+
+485
+02:02:45,076 --> 02:02:58,076
+If we multiply by x, we find x, x3, x to the 5, 4, 5 to the line, we subtract,
+
+486
+02:03:02,228 --> 02:03:27,467
+We find minus 1 over 6 plus 1 over 2. So if we equate the denominator, 1 over 2 x cubed. Then we multiply by 1 x cubed over 3.
+
+487
+02:03:31,380 --> 02:03:37,380
+İlk olarak, 2 termes x and x³.
+
+488
+02:03:37,380 --> 02:03:45,380
+Ve you can find 1 term daha.
+
+489
+02:03:45,380 --> 02:03:51,380
+İlk olarak, 2 termes x³.
+
+490
+02:03:59,828 --> 02:04:06,188
+Bu birçok örneğin, Maclaurin'in
+
+491
+02:04:06,188 --> 02:04:10,807
+Bu birçok örneğin birçok örneğin
+
+492
+02:04:10,807 --> 02:04:14,748
+Bu birçok örneğin
+
+493
+02:04:20,467 --> 02:04:24,327
+Çünkü, we cannot write directly.
+
+494
+02:04:28,340 --> 02:04:33,319
+We need to find the Maclaurin series of this given function.
+
+495
+02:04:34,319 --> 02:04:40,440
+We know the Maclaurin series for cosine function,
+
+496
+02:04:41,640 --> 02:04:55,239
+but we know the Maclaurin series for natural logarithm function of 1 plus x.
+
+497
+02:04:55,239 --> 02:05:02,000
+We know this Maclaurin series.
+
+498
+02:05:04,480 --> 02:05:08,960
+We did this Maclaurin series today.
+
+499
+02:05:09,680 --> 02:05:14,420
+We did this Maclaurin series last week.
+
+500
+02:05:15,819 --> 02:05:22,579
+Please remember, we use geometric series to find this.
+
+501
+02:05:25,239 --> 02:05:33,020
+If we write minus x instead of x, we find 1 over 1 plus x.
+
+502
+02:05:34,940 --> 02:05:38,560
+And we can integrate both sides.
+
+503
+02:05:39,680 --> 02:05:43,940
+We will find 1, ln 1 plus x,
+
+504
+02:05:45,060 --> 02:05:49,619
+minus 1 to the n, x to the n plus 1 over n plus 1.
+
+505
+02:05:49,619 --> 02:05:57,860
+This is the Maclaurin series for this logarithm function.
+
+506
+02:05:59,940 --> 02:06:02,500
+Okay, rewrite please.
+
+507
+02:06:03,779 --> 02:06:08,000
+1 minus x squared 2 factorial.
+
+508
+02:06:08,000 --> 02:06:26,619
+This is...
+
+509
+02:06:21,011 --> 02:06:22,572
+First term is
+
+510
+02:06:55,252 --> 02:07:06,592
+We can substitute Maclaurin's series for cosine function into logarithm function.
+
+511
+02:07:07,272 --> 02:07:11,592
+1 minus x squared 2 factorial.
+
+512
+02:07:18,355 --> 02:07:21,456
+ln cosine function equals
+
+513
+02:07:29,779 --> 02:07:30,800
+Be careful here.
+
+514
+02:07:48,979 --> 02:07:49,419
+Sof.
+
+515
+02:07:56,500 --> 02:08:18,699
+x'e'ye
+
+516
+02:08:24,083 --> 02:08:24,604
+Teşekkürler.
+
+517
+02:08:29,811 --> 02:08:31,652
+We use this substitution.
+
+518
+02:08:47,188 --> 02:08:51,228
+1 plus t, iklu,
+
+519
+02:08:57,332 --> 02:09:04,092
+t minus x square, 2 factorial, 4 factorial.
+
+520
+02:09:08,724 --> 02:09:15,564
+What is another term? 1 over 2. What is t squared?
+
+521
+02:09:19,604 --> 02:09:26,484
+write t, and, tape, scratch, et cetera.
+
+522
+02:09:29,284 --> 02:09:33,524
+This is a little bit difficult, I know.
+
+523
+02:09:37,235 --> 02:09:51,635
+If you have any question, please ask. This is t. This is t. We use this substitution.
+
+524
+02:09:55,475 --> 02:09:56,255
+Any questions?
+
+525
+02:10:23,347 --> 02:10:24,648
+Bir soru
+
+526
+02:10:44,020 --> 02:10:57,020
+Finally, Taylor or Maclaurin serisi, can also be multiplied, divided, added, like polynomials.
+
+527
+02:11:01,908 --> 02:11:04,548
+We find the first few terms.
+
+528
+02:11:09,076 --> 02:11:16,695
+Çünkü, initial terms, are the most terms.
+
+529
+02:11:43,604 --> 02:11:45,604
+We can give...
+
+530
+02:11:48,627 --> 02:11:51,107
+Another application of Taylor serisi.
+
+531
+02:11:52,667 --> 02:11:53,307
+Evolating.
+
+532
+02:11:59,507 --> 02:12:03,347
+Elementarı, integral.
+
+533
+02:12:15,347 --> 02:12:18,228
+ve serisi önemli, çünkü,
+
+534
+02:12:19,188 --> 02:12:20,268
+deyelde,
+
+535
+02:12:20,268 --> 02:12:24,747
+ışık,
+
+536
+02:12:30,355 --> 02:12:40,255
+If we cannot calculate the integral, we can use Taylor series for this given function.
+
+537
+02:12:42,376 --> 02:12:43,855
+For example,
+
+538
+02:12:48,884 --> 02:12:52,264
+function, cannot be integrated.
+
+539
+02:12:58,163 --> 02:13:00,623
+by techniques before we get.
+
+540
+02:13:05,171 --> 02:13:05,851
+Because
+
+541
+02:13:10,387 --> 02:13:13,507
+Antiderivative is not an elementary function.
+
+542
+02:13:15,747 --> 02:13:18,627
+This is R.
+
+543
+02:13:27,028 --> 02:13:27,828
+İnteklidir.
+
+544
+02:14:04,979 --> 02:14:11,979
+ve
+
+545
+02:14:20,724 --> 02:14:24,604
+İlte.
+
+546
+02:14:29,332 --> 02:14:34,892
+bu integral, bu maklaurin,
+
+547
+02:14:37,292 --> 02:14:37,932
+serisi.
+
+548
+02:14:42,228 --> 02:14:43,047
+Diz vans.
+
+549
+02:14:49,619 --> 02:14:56,000
+We know the Maclaur answer is for this function. We calculate just now.
+
+550
+02:15:02,323 --> 02:15:16,844
+Let's remember, 1 x, x square, x cube, e to the minus x square, 1 minus x square, plus,
+
+551
+02:15:25,300 --> 02:15:43,500
+1 minus x squared plus x to the 4 2 factorial minus x to the 6 3 factorial and now we can
+
+552
+02:15:47,380 --> 02:16:00,020
+Calculate this integral. The integral of first term is just x. Another term x cubed over 3. Another x5.
+
+553
+02:16:02,020 --> 02:16:04,260
+5. x to the 7.
+
+554
+02:16:09,427 --> 02:16:15,427
+Of course, we add the integrated constant.
+
+555
+02:16:31,764 --> 02:16:59,283
+Here, we can find the end term of this series. We can rewrite by sigma symbol. This is alternating series, first term is positive. The exponent of x is always at number. So we can use this.
+
+556
+02:16:59,283 --> 02:17:01,804
+Okay.
+
+557
+02:17:12,211 --> 02:17:39,402
+Bu bir şey, bir şey, bir şey, bir şey, bir şey, bir şey, bir şey, bir şey, bir şey, bir şey, bir şey, bir şey, bir şey, bir şey, bir şey, bir şey, bir şey, bir şey, bir şey, bir şey, bir şey, bir şey, bir şey, bir şey, bir şey, bir şey, bir şey, bir şey, bir şey, bir şey, bir şey, bir şey, bir şey, bir şey, bir şey, bir şey, bir şey, bir şey, bir şey, bir şey, bir şey, bir şey, bir şey, bir şey, bir şey, bir şey, bir şey, bir şey, bir şey, bir şey, bir şey, bir şey, bir şey, bir şey, bir şey, bir şey, bir şey, bir şey, bir şey, bir şey, bir şey, bir şey, bir şey, bir şey, bir şey, bir şey, bir şey, bir şey, bir şey, bir şey, bir şey, bir şey, bir şey, bir şey,
+
+558
+02:17:46,355 --> 02:17:47,396
+Bir soru
+
+559
+02:17:51,476 --> 02:17:52,716
+You can do yourself
+
+560
+02:17:52,716 --> 02:17:55,096
+This
+
+561
+02:17:55,096 --> 02:17:57,016
+Integral
+
+562
+02:18:07,123 --> 02:18:15,603
+We cannot integrate this given integral by elementary method.
+
+563
+02:18:18,083 --> 02:18:24,564
+So we must use Maclaurin series for this given function.
+
+564
+02:18:25,443 --> 02:18:35,443
+First write Maclaurin series for sine function and then find sine x squared by substituting
+
+565
+02:18:37,123 --> 02:18:47,763
+You can find this and then integrate turn by turn.
+
+566
+02:19:00,180 --> 02:19:00,720
+Any problem?
+
+567
+02:19:08,979 --> 02:19:12,020
+Application of Taylor serisi
+
+568
+02:19:12,020 --> 02:19:14,180
+As evaliyting
+
+569
+02:19:18,868 --> 02:19:19,948
+Determinate
+
+570
+02:19:38,420 --> 02:19:47,100
+Evlite the limits involving indeterminate forms by using the Taylor series.
+
+571
+02:19:52,915 --> 02:19:53,595
+For example,
+
+572
+02:20:06,515 --> 02:20:32,095
+If we write 0 instead of x, we find 0 over 0 in determinate forms. Of course, we can use L'Hopital rules, but we know now use Maclaurin series for e to the x.
+
+573
+02:20:32,095 --> 02:21:00,415
+If we write Maclaurin series for e to the x, 1 minus, sorry, x, x square, x cube. This is Maclaurin series for e to the x, and then subtract 1, subtract x.
+
+574
+02:21:00,415 --> 02:21:07,415
+divided by x, divided by x, first 3 right numerator.
+
+575
+02:21:07,415 --> 02:21:14,415
+We can simplify these terms.
+
+576
+02:21:14,415 --> 02:21:19,415
+Oops, sorry.
+
+577
+02:21:19,415 --> 02:21:20,415
+So, let's see.
+
+578
+02:21:22,963 --> 02:21:23,904
+is terms.
+
+579
+02:21:37,620 --> 02:21:38,140
+Beken
+
+580
+02:21:49,716 --> 02:21:50,716
+Finally,
+
+581
+02:21:52,716 --> 02:21:53,716
+we find
+
+582
+02:21:54,716 --> 02:21:56,716
+1 over 2
+
+583
+02:21:56,716 --> 02:21:57,716
+plus
+
+584
+02:21:57,716 --> 02:21:58,716
+x
+
+585
+02:21:58,716 --> 02:22:00,716
+over 3!
+
+586
+02:22:05,043 --> 02:22:10,304
+Now, we can calculate this limit as 1 over 2.
+
+587
+02:22:19,059 --> 02:22:26,979
+Example, x minus sin x over x3.
+
+588
+02:22:30,611 --> 02:22:37,091
+This is another limit involving in determinate form 0 over 0.
+
+589
+02:22:39,891 --> 02:22:46,291
+Now, we can use Maclaurin series 4 sine function.
+
+590
+02:22:48,691 --> 02:22:57,491
+If we write into this limit Maclaurin series 4 sine function
+
+591
+02:23:01,427 --> 02:23:02,587
+X group
+
+592
+02:23:02,587 --> 02:23:05,548
+X to the five
+
+593
+02:23:12,180 --> 02:23:30,500
+remove parenthesis, and then simplify these terms, and then rewrite resulting terms.
+
+594
+02:23:30,500 --> 02:23:39,960
+first term is 1 over 3 factorial, second term is x square over 5 factorial,
+
+595
+02:23:46,355 --> 02:23:51,435
+X approach zero, define one over X.
+
+596
+02:23:52,815 --> 02:23:53,415
+Six.
+
+597
+02:24:23,252 --> 02:24:25,332
+Any question? Any problem?
+
+598
+02:24:36,915 --> 02:24:49,155
+Şimdi, we simplify x and x, and then we simplify x cube and x cube in the numerator and denominator.
+
+599
+02:24:55,603 --> 02:25:04,283
+Önce parantezi açtık. Sonra pay ve paydadakileri sadeleştirdik. İkisini aynı anda yaptığım için çok haklısın. Hepsi aynı satırda sadeleştik.
+
+600
+02:25:06,283 --> 02:25:13,843
+Anladım bu sefer. Ben fazla uzatmamak için hepsini aynı anda yaptığım için öyle karıştı.
+
+601
+02:25:15,843 --> 02:25:20,163
+We have one more example. This is the last one.
+
+602
+02:25:27,283 --> 02:25:28,603
+A bit difficult.
+
+603
+02:25:36,819 --> 02:25:50,659
+We want to calculate this limit by using the Taylor series, but we need the Taylor series generated by ln x.
+
+604
+02:25:54,804 --> 02:25:56,004
+X equals 1.
+
+605
+02:26:00,051 --> 02:26:22,891
+We need a TaylorSeries for LN function at about a equals 1. That is, we want to write
+
+606
+02:26:27,987 --> 02:26:32,087
+En x-1 to the n, or
+
+607
+02:26:35,540 --> 02:26:41,620
+F to the n, 1 over n! n, x minus 1 to the n.
+
+608
+02:26:45,332 --> 02:26:55,512
+If we write this power series, then we can simplify x minus 1 and we can calculate this limit.
+
+609
+02:27:04,051 --> 02:27:19,592
+previous two example denominator is the power of x. Here we need x minus 1. So we need the Taylor series at 1.
+
+610
+02:27:24,115 --> 02:27:54,115
+Bu sayesinde bu sayesinde bu sayesinde bu sayesinde bu sayesinde bu sayesinde bu sayesinde bu sayesinde bu sayesinde bu sayesinde bu sayesinde bu sayesinde bu sayesinde bu sayesinde bu sayesinde bu sayesinde bu sayesinde bu sayesinde bu sayesinde bu sayesinde bu sayesinde bu sayesinde bu sayesinde bu sayesinde bu sayesinde bu sayesinde bu sayesinde bu sayesinde bu sayesinde bu sayesinde bu sayesinde bu sayesinde bu sayesinde bu sayesinde bu sayesinde bu sayesinde bu sayesinde bu sayesinde bu sayesinde bu sayesinde bu sayesinde bu sayesinde bu sayesinde bu sayesinde bu sayesinde bu sayesinde bu sayesinde bu sayesinde bu sayesinde bu sayesinde bu sayesinde bu sayesinde bu sayesinde bu sayesinde bu sayesinde bu sayes
+
+611
+02:27:54,115 --> 02:28:24,115
+bu sayesinde bu sayesinde bu sayesinde bu sayesinde bu sayesinde bu sayesinde bu sayesinde bu sayesinde bu sayesinde bu sayesinde bu sayesinde bu sayesinde bu sayesinde bu sayesinde bu sayesinde bu sayesinde bu sayesinde bu sayesinde bu sayesinde bu sayesinde bu sayesinde bu sayesinde bu sayesinde bu sayesinde bu sayesinde bu sayesinde bu sayesinde bu sayesinde bu sayesinde bu sayesinde bu sayesinde bu sayesinde bu sayesinde bu sayesinde bu sayesinde bu sayesinde bu sayesinde bu sayesinde bu sayesinde bu sayesinde bu sayesinde bu sayesinde bu sayesinde bu sayesinde bu sayesinde bu sayesinde bu sayesinde bu sayesinde bu sayesinde bu sayesinde bu sayesinde bu sayesinde bu sayesinde bu sayesinde bu sayesinde bu
+
+612
+02:28:24,115 --> 02:28:25,095
+yes here
+
+613
+02:28:29,876 --> 02:28:41,755
+By using geometric series, we can write Maclaurin series for this logarithm function.
+
+614
+02:28:43,755 --> 02:28:51,515
+First we use substituting and we use the calculation of integral.
+
+615
+02:28:54,515 --> 02:28:58,595
+Let's rewrite this series.
+
+616
+02:29:12,691 --> 02:29:13,691
+Evet, bu ne?
+
+617
+02:29:18,131 --> 02:29:21,211
+Minus 1 to the n, x plus, okay.
+
+618
+02:29:24,351 --> 02:29:26,391
+This is Maclaurin series.
+
+619
+02:29:26,791 --> 02:29:29,051
+We need Tyler series.
+
+620
+02:29:29,611 --> 02:29:34,371
+This is Maclaurin.
+
+621
+02:29:34,672 --> 02:29:35,931
+We need Tyler.
+
+622
+02:29:36,832 --> 02:29:40,031
+To find Tyler series, here,
+
+623
+02:29:41,252 --> 02:29:42,871
+we write
+
+624
+02:29:42,871 --> 02:29:46,051
+x minus 1.
+
+625
+02:29:48,131 --> 02:29:49,912
+instead of x.
+
+626
+02:29:50,912 --> 02:29:52,431
+If we write
+
+627
+02:29:52,431 --> 02:29:55,191
+x minus 1 instead of x,
+
+628
+02:29:55,711 --> 02:29:56,431
+we find
+
+629
+02:29:56,431 --> 02:29:57,672
+lnx
+
+630
+02:29:57,672 --> 02:30:00,912
+and
+
+631
+02:30:00,912 --> 02:30:03,711
+Tyler series.
+
+632
+02:30:11,059 --> 02:30:13,340
+Just by using substitution,
+
+633
+02:30:15,180 --> 02:30:19,819
+we find Taylor series from Maclaurin series.
+
+634
+02:30:27,412 --> 02:30:38,291
+To calculate limit, let's rewrite our limit ln x over x minus 1.
+
+635
+02:30:40,871 --> 02:30:46,852
+And then write the first two or three terms.
+
+636
+02:30:50,051 --> 02:30:55,731
+First term is x minus 1.
+
+637
+02:30:57,412 --> 02:31:07,391
+Second term is minus x minus 1 to do 2 over 2.
+
+638
+02:31:08,391 --> 02:31:09,832
+One more term.
+
+639
+02:31:10,871 --> 02:31:12,551
+x minus 1.
+
+640
+02:31:18,100 --> 02:31:25,260
+Kübe over, no, we can't.
+
+641
+02:31:29,299 --> 02:31:36,299
+Şimdi x-1'e
+
+642
+02:31:36,299 --> 02:31:48,959
+we get x0, first term is 1, second term x-1 over 2, another
+
+643
+02:31:52,564 --> 02:32:01,203
+Bu, bu, 1'e bir kere, çünkü ilk term,
+
+644
+02:32:02,164 --> 02:32:04,404
+all terms become 0.
+
+645
+02:32:06,084 --> 02:32:07,844
+Bir kere, 1'e bir kere.
+
+646
+02:32:10,084 --> 02:32:11,043
+Bir kere?
+
+647
+02:32:16,915 --> 02:32:25,075
+If no questions, if you have homework, please be proof.
+
+648
+02:32:29,492 --> 02:32:37,352
+Ok, correct, please [öğrenci] [öğrenci], you are right, please, correct, x approach 1.
+
+649
+02:32:43,316 --> 02:32:50,876
+If x approaches 1, then we will find indeterminate forms.
+
+650
+02:32:51,296 --> 02:32:53,656
+Please, thank you very much.
+
+651
+02:33:08,371 --> 02:33:09,371
+This limit
+
+652
+02:33:09,371 --> 02:33:12,091
+And one more
+
+653
+02:33:29,332 --> 02:33:31,551
+No, is it okay?
+
+654
+02:33:35,072 --> 02:33:39,372
+If x approach 1, this term becomes zero.
+
+655
+02:33:49,716 --> 02:33:55,996
+Finally, we've finished Taylor serisi, Maclaurin serisi, ve all serisi.
+
+656
+02:33:57,836 --> 02:34:03,836
+Finally, the subject of serisi is finished.
+
+657
+02:34:07,219 --> 02:34:13,399
+Tomorrow, we will give parametric equations and polar coordinates.
+
+658
+02:34:17,396 --> 02:34:17,876
+No.
+
+659
+02:34:21,811 --> 02:34:24,271
+We will solve the homework.
+
+660
+02:34:38,899 --> 02:34:42,180
+We gave last lecture.
+
+661
+02:34:46,388 --> 02:34:46,748
+Tamam.
+
+662
+02:34:54,004 --> 02:34:55,784
+N squared over to the N.
+
+663
+02:35:00,852 --> 02:35:09,852
+Bu şekilde
+
+664
+02:35:24,979 --> 02:35:54,979
+Bu sayesinde nelerde
+
+665
+02:35:54,979 --> 02:36:25,159
+nelerde neler
+
+666
+02:36:30,100 --> 02:36:32,920
+Desired Number Series
+
+667
+02:36:41,268 --> 02:36:48,268
+Bu
+
+668
+02:36:48,659 --> 02:36:49,039
+Okay.
+
+669
+02:36:50,039 --> 02:36:53,920
+How can we find this power series?
+
+670
+02:36:58,835 --> 02:37:01,275
+We use non-series.
+
+671
+02:37:03,075 --> 02:37:05,956
+Spatial non-series is
+
+672
+02:37:08,435 --> 02:37:09,435
+Geometry series.
+
+673
+02:37:11,755 --> 02:37:12,555
+We know that.
+
+674
+02:37:19,636 --> 02:37:32,296
+Our geometric series, x to the n, and start from zero to infinity, converges to one over one minus x function.
+
+675
+02:37:34,136 --> 02:37:38,676
+f x between minus one and one.
+
+676
+02:37:47,924 --> 02:37:53,084
+We have x to the n, we need n square x to the n.
+
+677
+02:37:58,355 --> 02:38:03,956
+We can take derivative both sides.
+
+678
+02:38:07,763 --> 02:38:11,923
+We can integrate the power series.
+
+679
+02:38:29,907 --> 02:38:36,907
+ve
+
+680
+02:38:49,747 --> 02:38:51,028
+1 minus x squared,
+
+681
+02:38:52,827 --> 02:38:53,427
+equals
+
+682
+02:38:53,427 --> 02:38:58,087
+n times x to the n minus 1.
+
+683
+02:39:01,028 --> 02:39:02,087
+We get
+
+684
+02:39:02,087 --> 02:39:03,807
+here n.
+
+685
+02:39:10,451 --> 02:39:13,451
+X'e değiştirebilirsiniz.
+
+686
+02:39:15,652 --> 02:39:19,652
+Burada x'e n-1'e değiştirebilirsiniz.
+
+687
+02:39:19,951 --> 02:39:21,451
+Ama bunu
+
+688
+02:39:24,451 --> 02:39:26,451
+bu n'e değiştirebilirsiniz.
+
+689
+02:39:27,451 --> 02:39:28,451
+Bu,
+
+690
+02:39:29,652 --> 02:40:09,451
+bu,
+
+691
+02:39:46,995 --> 02:39:54,655
+We get our series in the form n times x to the n.
+
+692
+02:40:09,652 --> 02:40:34,951
+And now, we take derivative one more time, and we multiply by x one more time, we find the desired power series n squared x to the n. Say it. Is it okay? Until here.
+
+693
+02:40:42,067 --> 02:40:45,327
+Bir sonraki, türev ve katlı.
+
+694
+02:40:48,188 --> 02:40:48,827
+You're welcome.
+
+695
+02:40:54,515 --> 02:41:28,515
+Bu
+
+696
+02:41:33,716 --> 02:41:40,716
+x'e bu
+
+697
+02:41:40,716 --> 02:42:04,716
+y'e bu
+
+698
+02:42:08,564 --> 02:42:22,203
+2x, over 1 minus x to the cube. Now, we find this function.
+
+699
+02:42:25,203 --> 02:42:31,904
+We write x times 1 plus x over 1 minus x, cube.
+
+700
+02:42:31,904 --> 02:42:38,644
+n square x to the n, and start from 1 to 0.
+
+701
+02:42:39,644 --> 02:42:47,783
+We find this power series, and this power series converges to this function, where?
+
+702
+02:42:48,904 --> 02:42:51,304
+Where is it? It's true.
+
+703
+02:42:52,783 --> 02:42:54,463
+Geometric series,
+
+704
+02:42:57,463 --> 02:43:01,363
+interval of convergence, this opening interval,
+
+705
+02:43:04,819 --> 02:43:12,579
+If we take derivative, interval of convergence doesn't change.
+
+706
+02:43:35,283 --> 02:43:59,913
+Bu, bu
+
+707
+02:44:13,843 --> 02:44:18,503
+3, 2, 6.
+
+708
+02:44:46,739 --> 02:44:58,100
+So, we can see the function of x equals 3 or x minus 2 by using geometric series.
+
+709
+02:45:04,595 --> 02:45:08,075
+with a similar question before.
+
+710
+02:45:09,195 --> 02:45:09,735
+Okay.
+
+711
+02:45:13,811 --> 02:45:16,951
+Final question. Today is enough, I think.
+
+712
+02:45:20,404 --> 02:45:22,844
+Finally, we finished series.
+
+713
+02:45:26,244 --> 02:45:27,444
+Please do.
+
+714
+02:45:29,244 --> 02:45:31,283
+Yes, and share, of course.
+
+715
+02:45:32,884 --> 02:45:33,524
+Save.
+
+716
+02:45:34,604 --> 02:45:35,404
+First.
+
+717
+02:45:36,444 --> 02:45:37,203
+And then.
+
+718
+02:48:17,268 --> 02:48:21,167
+[öğrenci], neyi sana göndermişim? Dosyayı mı?
+
+719
+02:48:25,523 --> 02:48:30,203
+Pardon. O zaman nasıl olacak?
+
+720
+02:48:36,435 --> 02:48:37,435
+İntro
+
+721
+02:48:57,940 --> 02:49:01,960
+Zaten öyle değil mi? Bir saniye, tekrar file yapıyorum.
+
+722
+02:49:04,739 --> 02:49:06,579
+Tekrar işaretliyorum.
+
+723
+02:49:07,899 --> 02:49:09,180
+Ve yine seride gidiyor.
+
+724
+02:49:11,260 --> 02:49:12,620
+Seride neden sana geliyor?
+
+725
+02:49:27,379 --> 02:49:28,639
+Tamam, şimdi düzelttim.
+
+726
+02:49:33,492 --> 02:49:35,432
+Şimdi geliyor. Çok pardon gençler.
+
+727
+02:49:37,311 --> 02:49:40,832
+Çünkü en az sırada nasıl olduysa [öğrenci] varmış.
+
+728
+02:49:41,272 --> 02:49:44,371
+Onu üstüne tıklayınca düzeliyormuş.
+
+729
+02:49:46,352 --> 02:49:48,832
+Evet [öğrenci], ben onu görmemişim. Pardon.
+
+730
+02:50:00,115 --> 02:50:10,736
+Şimdi geliyor. Biraz da büyük bir dosya olduğu için bekletiyordu üstelik. Dersiniz var mı saat 12'de?
+
+731
+02:50:14,131 --> 02:50:14,891
+Bekliyorum.
+
+732
+02:50:16,631 --> 02:50:17,791
+Dosya biraz büyük.
+
+733
+02:50:19,291 --> 02:50:19,951
+Bekliyorum.
+
+734
+02:51:34,388 --> 02:51:38,388
+Yes, [öğrenci], you can download here.
+
+735
+02:52:11,987 --> 02:52:14,028
+Rica ederim. İyi günler.
+
+736
+02:52:15,547 --> 02:52:18,108
+[öğrenci], can you see the file?
+
+737
+02:52:22,004 --> 02:52:26,424
+Oh, why not? I don't know.
+
+738
+02:52:37,172 --> 02:52:49,432
+Gençler, [öğrenci] neden göremiyor olabilir dosyayı? Sanırım siz görebiliyorsunuz ama [öğrenci] göremedi. Neden kaynaklanıyor olabilir? O zaman [öğrenci] özelden mi göndereyim?
+
+739
+02:53:03,476 --> 02:53:04,876
+Okey, [öğrenci].
+
+740
+02:53:05,736 --> 02:53:06,516
+You sold this.
+
+741
+02:53:07,596 --> 02:53:09,536
+Teşekkür ederim, [öğrenci]. İyi olur.
+
+742
+02:53:09,896 --> 02:53:12,115
+Herhalde dosya büyük olduğu için büyük problem oldu.
+
+743
+02:53:13,076 --> 02:53:14,976
+O zaman yarın görüşmek dileğiyle.
+
+744
+02:53:15,316 --> 02:53:16,136
+Kendinize iyi bakın.
+
+745
+02:53:17,136 --> 02:53:17,896
+Hoşçakalın.
+
+746
+02:53:26,388 --> 02:53:28,968
+See you tomorrow. Have a nice day.
