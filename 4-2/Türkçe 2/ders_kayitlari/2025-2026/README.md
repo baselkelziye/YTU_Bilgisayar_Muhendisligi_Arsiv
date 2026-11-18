@@ -18,3 +18,4 @@
 | 18 | Bahar | Hilal Tufan | [sube_18/](sube_18/) |
 | 19 | Bahar | Bulunamadı | [sube_19/](sube_19/) |
 | 21 | Bahar | Hilal Tufan | [sube_21/](sube_21/) |
+| 27 | Bahar | Sema Noyan | [sube_27/](sube_27/) |
