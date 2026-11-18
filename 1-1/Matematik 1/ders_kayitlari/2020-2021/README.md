@@ -24,6 +24,7 @@
 | 29 | Güz | Ayşen (soyadı bulunamadı) | [sube_29/](sube_29/) |
 | 30 | Güz | Gürsel Yeşilot | [sube_30/](sube_30/) |
 | 31 | Güz | Bulunamadı | [sube_31/](sube_31/) |
+| 32 | Güz | Servet Es | [sube_32/](sube_32/) |
 | 36 | Güz | Bulunamadı | [sube_36/](sube_36/) |
 | 53 | Güz | Elif Demir | [sube_53/](sube_53/) |
 | 55 | Güz | Sebahat Ebru Daş | [sube_55/](sube_55/) |
