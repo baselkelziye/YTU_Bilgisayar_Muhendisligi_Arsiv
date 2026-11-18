@@ -1,0 +1,8103 @@
+1
+00:00:58,612 --> 00:01:00,652
+Günaydın arkadaşlar. Nasılsınız?
+
+2
+00:01:02,212 --> 00:01:02,712
+İyi misiniz?
+
+3
+00:01:04,572 --> 00:01:05,752
+Ses geliyor mu arkadaşlar?
+
+4
+00:01:06,871 --> 00:01:07,552
+Geliyor hocam.
+
+5
+00:01:08,852 --> 00:01:09,692
+İyisiniz inşallah.
+
+6
+00:01:12,152 --> 00:01:12,512
+Evet.
+
+7
+00:01:13,231 --> 00:01:14,611
+Bugünkü konu başlığımız
+
+8
+00:01:14,611 --> 00:01:16,811
+hiperbolik fonksiyonlar
+
+9
+00:01:16,811 --> 00:01:17,331
+arkadaşlar.
+
+10
+00:01:18,532 --> 00:01:20,671
+Hiperbolik fonksiyonlar, trigonometrik fonksiyonlara
+
+11
+00:01:20,671 --> 00:01:22,871
+biraz benziyor. Biraz farklılıkları
+
+12
+00:01:22,871 --> 00:01:24,512
+var. Onlardan bahsedeceğiz.
+
+13
+00:01:25,752 --> 00:01:26,671
+Hiperbolik fonksiyonlar
+
+14
+00:01:26,671 --> 00:01:28,912
+iki üstel fonksiyon
+
+15
+00:01:28,912 --> 00:01:30,592
+yani e üzeri x ve e üzeri
+
+16
+00:01:30,592 --> 00:01:32,992
+eksi x'in birleşiminden oluştururlar.
+
+17
+00:01:33,492 --> 00:01:34,512
+Hiperbolik fonksiyonlar
+
+18
+00:01:34,512 --> 00:01:37,111
+birçok matematiksel ifadeyle basitleştirmek
+
+19
+00:01:37,111 --> 00:01:39,072
+için bazen işimize yarar.
+
+20
+00:01:39,552 --> 00:01:40,692
+Önce sinüs
+
+21
+00:01:40,692 --> 00:01:42,731
+hiperbolik fonksiyonu diyelim.
+
+22
+00:01:43,352 --> 00:01:44,171
+Bunu sinüs
+
+23
+00:01:44,171 --> 00:01:46,891
+hx ile gösteriyoruz.
+
+24
+00:01:47,391 --> 00:01:48,432
+Veya bazı kitaplar
+
+25
+00:01:48,432 --> 00:01:50,272
+shx ile yazar. Biz
+
+26
+00:01:50,272 --> 00:01:52,692
+ile h demek zorundayız ki hiperbolik
+
+27
+00:01:52,692 --> 00:01:54,432
+olduğunu anlayalım. Yani sinüs
+
+28
+00:01:54,432 --> 00:01:56,551
+hiperbolik x dediğimizde
+
+29
+00:01:56,551 --> 00:01:58,792
+bunun üstel ifadesi
+
+30
+00:01:58,792 --> 00:02:01,472
+e üzeri x eksi e üzeri eksi x bölü
+
+31
+00:02:01,472 --> 00:02:02,472
+2'dir arkadaşlar.
+
+32
+00:02:03,192 --> 00:02:05,572
+Kosin hiperbolik x fonksiyonu ise
+
+33
+00:02:05,572 --> 00:02:07,352
+bunun da üstel ifadesi
+
+34
+00:02:07,352 --> 00:02:09,792
+e üzeri x artı e üzeri eksi x bölü
+
+35
+00:02:09,792 --> 00:02:10,551
+2'dir.
+
+36
+00:02:10,951 --> 00:02:12,472
+Bu temel çiften hareketle
+
+37
+00:02:12,472 --> 00:02:12,792
+diğer
+
+38
+00:02:12,792 --> 00:02:16,431
+kotanjan, tanj, tanjan, sekant ve kosekant
+
+39
+00:02:16,431 --> 00:02:18,431
+hiperbolik fonksiyonlarını da
+
+40
+00:02:18,431 --> 00:02:19,572
+yazabiliriz.
+
+41
+00:02:19,871 --> 00:02:21,051
+İşte diyelim ki
+
+42
+00:02:21,051 --> 00:02:23,051
+tanjan hiperbolik x
+
+43
+00:02:23,051 --> 00:02:25,012
+tanjan taş x diye yazdı.
+
+44
+00:02:25,012 --> 00:02:26,012
+bakın. Bu nedir?
+
+45
+00:02:26,092 --> 00:02:27,451
+Sinüs hiperbolik x bölü
+
+46
+00:02:27,451 --> 00:02:29,312
+kosin hiperbolik x demektir.
+
+47
+00:02:29,731 --> 00:02:31,632
+Üstel ifadelerini şurada biliyorum.
+
+48
+00:02:32,252 --> 00:02:34,032
+İşte sinüsü kosin hiperbolik
+
+49
+00:02:34,032 --> 00:02:36,032
+ve öldüğümüzde, düzenlediğimizde
+
+50
+00:02:36,032 --> 00:02:37,092
+ifademiz bu olacak.
+
+51
+00:02:37,292 --> 00:02:39,792
+Yani e üzeri x eksi e üzeri eksi x bölü
+
+52
+00:02:40,252 --> 00:02:42,391
+e üzeri x artı e üzeri eksi x'dir.
+
+53
+00:02:42,391 --> 00:02:45,652
+Kotanjan hiperbolik x ile benzer şekilde
+
+54
+00:02:45,652 --> 00:02:47,032
+yani trigonometreye benziyor.
+
+55
+00:02:47,432 --> 00:02:49,972
+Kosin hiperbolik bölü sinüs hiperboliktir.
+
+56
+00:02:50,312 --> 00:02:51,711
+Onun da üstel ifadesi
+
+57
+00:02:51,711 --> 00:02:52,951
+bu şekilde arkadaşlar.
+
+58
+00:02:53,111 --> 00:02:55,171
+e üzeri x artı e üzeri eksi x bölü
+
+59
+00:02:55,171 --> 00:02:56,932
+e üzeri x eksi
+
+60
+00:02:56,932 --> 00:02:59,372
+e üzeri eksi x şeklinde.
+
+61
+00:02:59,831 --> 00:03:01,271
+Sekant hiperbolik x de
+
+62
+00:03:01,271 --> 00:03:03,211
+bir bölü kosin hiperbolik x'dir.
+
+63
+00:03:03,692 --> 00:03:04,912
+Onun da ifadesi
+
+64
+00:03:04,912 --> 00:03:06,852
+zaten kosin hiperbolik biliyoruz.
+
+65
+00:03:07,051 --> 00:03:09,371
+Yazarsak 2 bölü e üzeri x
+
+66
+00:03:09,371 --> 00:03:11,091
+artı e üzeri eksi x'dir.
+
+67
+00:03:11,091 --> 00:03:13,071
+kosekan hiperbolik x de
+
+68
+00:03:13,071 --> 00:03:15,331
+bir bölü sinüs hiperbolik x demektir.
+
+69
+00:03:15,451 --> 00:03:16,771
+Onun da üstel ifadesi
+
+70
+00:03:16,771 --> 00:03:20,251
+iki bölü e üzeri x eksi e üzeri eksi x'dir.
+
+71
+00:03:20,711 --> 00:03:20,951
+Diyoruz.
+
+72
+00:03:21,491 --> 00:03:22,831
+Yani hiperbolik fonksiyonlar
+
+73
+00:03:22,831 --> 00:03:23,951
+demin de dediğim gibi
+
+74
+00:03:23,951 --> 00:03:26,131
+isimlerini aldıkları
+
+75
+00:03:26,131 --> 00:03:27,351
+trigonometrik fonksiyonlarla
+
+76
+00:03:27,351 --> 00:03:29,011
+birçok benzerlik gösterirler.
+
+77
+00:03:29,731 --> 00:03:31,151
+Burada koordinatları
+
+78
+00:03:31,151 --> 00:03:33,211
+kosinus hiperbolik u
+
+79
+00:03:33,211 --> 00:03:36,251
+sinüs hiperbolik u olan nokta
+
+80
+00:03:36,251 --> 00:03:38,571
+x kare eksi y kare eşittir
+
+81
+00:03:38,571 --> 00:03:39,811
+bir hiperbolinin
+
+82
+00:03:39,812 --> 00:03:41,312
+sağ tarafında yer alınırlar.
+
+83
+00:03:41,392 --> 00:03:43,092
+Yani hiperbolik neden denmiş?
+
+84
+00:03:43,472 --> 00:03:44,912
+Hiperbolik eğri şöyledir.
+
+85
+00:03:44,992 --> 00:03:46,552
+Şuraya kapaca böyle bir çizdim.
+
+86
+00:03:47,092 --> 00:03:48,972
+Hiperbolik denklem şudur.
+
+87
+00:03:49,731 --> 00:03:51,512
+Bu hiperbolik eğrinin
+
+88
+00:03:51,512 --> 00:03:52,512
+sağ yarı dalında
+
+89
+00:03:52,512 --> 00:03:53,952
+yani şu eğri üzerinde
+
+90
+00:03:53,952 --> 00:03:55,152
+yer aldıkları için
+
+91
+00:03:55,152 --> 00:03:57,012
+isimlerini de oradan alıyorlar arkadaşlar.
+
+92
+00:03:57,552 --> 00:03:57,912
+O yüzden
+
+93
+00:03:57,912 --> 00:04:00,272
+hiperbolik fonksiyon denmiştir.
+
+94
+00:04:00,932 --> 00:04:01,152
+Tamam.
+
+95
+00:04:01,512 --> 00:04:02,512
+Örneğin şurada bakın.
+
+96
+00:04:02,512 --> 00:04:05,711
+x yerine kosinus hiperbolik u yazarsam
+
+97
+00:04:05,711 --> 00:04:07,572
+kosinus hiperbolik kare
+
+98
+00:04:07,572 --> 00:04:10,412
+eksi y yerine sinüs yazarsam
+
+99
+00:04:10,412 --> 00:04:12,152
+eksi sinüs hiperbolik kare
+
+100
+00:04:12,152 --> 00:04:13,431
+eşittir biridir.
+
+101
+00:04:13,512 --> 00:04:13,752
+Değil mi?
+
+102
+00:04:13,831 --> 00:04:14,111
+Bakın
+
+103
+00:04:14,111 --> 00:04:15,711
+kosinus kare
+
+104
+00:04:15,711 --> 00:04:18,372
+sinüs hiperbolik karenin
+
+105
+00:04:18,372 --> 00:04:19,831
+farkları bir eşittir.
+
+106
+00:04:20,012 --> 00:04:21,872
+Bizim trigonometredeki fark neydi?
+
+107
+00:04:21,951 --> 00:04:23,172
+Orada toplam bir eşittir.
+
+108
+00:04:23,252 --> 00:04:24,271
+Burada fark bir eşittir.
+
+109
+00:04:24,372 --> 00:04:26,451
+Ufak tefek farklılıklar vardır
+
+110
+00:04:26,451 --> 00:04:27,092
+diyeceğiz.
+
+111
+00:04:27,092 --> 00:04:28,532
+Şimdi diyelim ki
+
+112
+00:04:28,532 --> 00:04:29,292
+kosinus
+
+113
+00:04:29,292 --> 00:04:30,852
+pardon
+
+114
+00:04:30,852 --> 00:04:31,912
+hiperbolik sıfırı
+
+115
+00:04:31,912 --> 00:04:32,772
+bulmak istiyorum.
+
+116
+00:04:33,272 --> 00:04:34,932
+E şurada üstelif adesini biliyorum.
+
+117
+00:04:35,052 --> 00:04:36,512
+x yerine sıfırı yazarsam
+
+118
+00:04:36,512 --> 00:04:36,872
+ne olur?
+
+119
+00:04:36,972 --> 00:04:37,252
+Bakın
+
+120
+00:04:37,252 --> 00:04:38,472
+e üzeri sıfır birdir.
+
+121
+00:04:38,992 --> 00:04:40,932
+e üzeri eksi sıfır da gene nedir?
+
+122
+00:04:41,012 --> 00:04:41,412
+Birdir.
+
+123
+00:04:41,812 --> 00:04:42,432
+İki bölü
+
+124
+00:04:42,432 --> 00:04:44,032
+ikiden birdir.
+
+125
+00:04:44,172 --> 00:04:44,552
+Demek ki
+
+126
+00:04:44,552 --> 00:04:45,592
+kosinus hiperbolik
+
+127
+00:04:45,592 --> 00:04:46,312
+sıfır
+
+128
+00:04:46,312 --> 00:04:47,032
+bire eşittir.
+
+129
+00:04:47,152 --> 00:04:48,272
+Sinüs hiperbolik sıfır
+
+130
+00:04:48,272 --> 00:04:48,892
+neye eşittir?
+
+131
+00:04:48,992 --> 00:04:49,292
+Bakın
+
+132
+00:04:49,292 --> 00:04:50,992
+o da nedir?
+
+133
+00:04:51,152 --> 00:04:52,172
+Sıfıra eşittir
+
+134
+00:04:52,172 --> 00:04:53,172
+yerine yazarsanız.
+
+135
+00:04:54,432 --> 00:04:55,332
+Şurada yazdım.
+
+136
+00:04:56,211 --> 00:04:58,711
+Şimdi bazı özdeşliklere ihtiyacımız var.
+
+137
+00:04:58,991 --> 00:05:03,231
+Bakın arkadaşlar hiperbolik fonksiyonların üstelif adelerini biliyorum.
+
+138
+00:05:03,791 --> 00:05:05,391
+Oradan hepsini yazmış oldum.
+
+139
+00:05:06,572 --> 00:05:08,471
+Şimdi bazı özdeşlikler var.
+
+140
+00:05:08,551 --> 00:05:10,211
+Trigonotikten birazcık farklı.
+
+141
+00:05:10,312 --> 00:05:11,872
+Onları da yazacağız şuraya işte.
+
+142
+00:05:11,872 --> 00:05:20,231
+Örneğin şurada dedik ki bu isimlerini hiperbolik eğrisinin sağ yarı dalı üzerinde yer aldıkları için isimlerini oradan alıyorlar.
+
+143
+00:05:20,231 --> 00:05:29,752
+Buradan dolayı da işte bakın şu karelerinin yani kosünsiperbolik kare eksi sinsiperbolik kare eksi farkının biri olduğunu unutmuyoruz.
+
+144
+00:05:29,891 --> 00:05:31,591
+Trigonotikte toplam birdi.
+
+145
+00:05:32,132 --> 00:05:34,331
+O da buradan geliyor yazdım parantez içine.
+
+146
+00:05:34,851 --> 00:05:36,171
+Şunları bilmemiz gerekir.
+
+147
+00:05:37,351 --> 00:05:47,692
+Sinsiperbolik x artı y'nin açılımı sinsiperbolik x kosünsiperbolik y artı kosünsiperbolik x sinsiperbolik y'dir.
+
+148
+00:05:47,692 --> 00:06:00,531
+Kosünüs x artı y'nin açılımı ise kosünsiperbolik x kosünsiperbolik y burada dikkat edin artı trigonotikten farklı sinsiperbolik x sinsiperbolik y'dir arkadaşlar.
+
+149
+00:06:01,271 --> 00:06:08,331
+Örneğin burada şurada y'yi de x almış olsam sinsiperbolik 2x'in açılımı ne olacaktır yerine yazarsak.
+
+150
+00:06:08,331 --> 00:06:10,192
+Buradan x gelecek buradan da x.
+
+151
+00:06:10,351 --> 00:06:15,471
+İki tane sinsiperbolik x kosünsiperbolik x.
+
+152
+00:06:15,471 --> 00:06:18,052
+Bu tanımdan hareketli de doğrudan bulabiliriz.
+
+153
+00:06:18,091 --> 00:06:19,491
+Bir tanesini göstermiş olalım.
+
+154
+00:06:19,731 --> 00:06:22,192
+Yani şunu tanımdan ispatlamaya çalışalım.
+
+155
+00:06:22,572 --> 00:06:26,192
+Yani şu sağ tarafın sola eşit olduğunu bulmaya çalışalım.
+
+156
+00:06:26,771 --> 00:06:27,591
+Ne yapıyorum bakın.
+
+157
+00:06:28,111 --> 00:06:31,651
+İki diyorum sinsiperbolik x'in üstel ifadesi neydi?
+
+158
+00:06:31,831 --> 00:06:34,771
+E üzeri x eksi e üzeri eksi x bölü 2 idi.
+
+159
+00:06:35,391 --> 00:06:40,572
+Kosünsiperbolik x'in üstel ifadesi ise e üzeri x artı e üzeri eksi x bölü 2 idi.
+
+160
+00:06:40,572 --> 00:06:43,812
+Bunları çarparsak bakın ikinin bir tanesi gider.
+
+161
+00:06:44,312 --> 00:06:45,371
+Faydaya 2 gelir.
+
+162
+00:06:46,012 --> 00:06:47,891
+E üzeri 2x derim.
+
+163
+00:06:48,572 --> 00:06:51,411
+Bununla bunu tekrar çarparsam artı 1 gelir.
+
+164
+00:06:52,211 --> 00:06:53,991
+Şunu çarparsam eksi 1.
+
+165
+00:06:54,432 --> 00:06:55,052
+Bu da ne olur?
+
+166
+00:06:55,351 --> 00:06:56,411
+E üzeri eksi 2x.
+
+167
+00:06:56,471 --> 00:06:57,411
+Birlerde gitti.
+
+168
+00:06:57,971 --> 00:06:59,672
+Bakın şöyle bir ifade kaldı.
+
+169
+00:06:59,831 --> 00:07:02,991
+Bu da benim bildiğim sinsiperbolik 2x'tir.
+
+170
+00:07:03,291 --> 00:07:08,791
+Yani şu e'nin üzerinde 5 varsa şuralarda sinsiperbolik 5x diye yorumlarım.
+
+171
+00:07:08,792 --> 00:07:09,412
+Tamam mı?
+
+172
+00:07:09,792 --> 00:07:13,072
+İşte gerçekten bu ifade buna eşitmiş.
+
+173
+00:07:14,792 --> 00:07:16,012
+Evet devam edelim.
+
+174
+00:07:16,111 --> 00:07:17,711
+Var mı arkadaşlar takıldığımız bir yer?
+
+175
+00:07:19,831 --> 00:07:20,132
+Yok.
+
+176
+00:07:20,572 --> 00:07:20,872
+Evet.
+
+177
+00:07:21,412 --> 00:07:21,812
+Gelelim.
+
+178
+00:07:22,331 --> 00:07:24,231
+Diyelim ki kosünüs hiperbolik 2x.
+
+179
+00:07:24,231 --> 00:07:28,651
+Yani şuradaki kosünüs de y'yi de x olarak alırsam neye eşit olur?
+
+180
+00:07:28,771 --> 00:07:29,032
+Bakın.
+
+181
+00:07:29,491 --> 00:07:31,651
+Kosünüs hiperbolik kare değil mi?
+
+182
+00:07:32,391 --> 00:07:36,672
+Artı sinüs hiperbolik kare x'e eşit olur.
+
+183
+00:07:36,672 --> 00:07:42,572
+Burada nasıl trigonometrik de kullanıyorsak burada da bazı özdeşlikleri kullanalım.
+
+184
+00:07:42,692 --> 00:07:46,271
+Örneğin şunu yukarıda biliyorduk değil mi?
+
+185
+00:07:46,771 --> 00:07:48,172
+Karelerinin farkı bakın.
+
+186
+00:07:48,391 --> 00:07:48,531
+Şu.
+
+187
+00:07:49,031 --> 00:07:50,371
+Bunun bir olduğunu biliyorum.
+
+188
+00:07:50,471 --> 00:07:56,072
+Buradan diyelim ki ben sinüs hiperbolik x'in karesini çekmek istersem ne olur?
+
+189
+00:07:56,512 --> 00:08:02,752
+Kosünüs hiperbolik kare x eksi 1 diye getirip şurada yerine yazdığımı düşünürsem.
+
+190
+00:08:02,751 --> 00:08:06,771
+Pardon ters yazdım.
+
+191
+00:08:07,331 --> 00:08:09,971
+Şunu çekiyorum.
+
+192
+00:08:10,971 --> 00:08:11,791
+Bir saniye.
+
+193
+00:08:12,192 --> 00:08:13,271
+Şunu yazdık.
+
+194
+00:08:13,651 --> 00:08:14,432
+Tamam mı arkadaşlar?
+
+195
+00:08:15,151 --> 00:08:18,991
+Burada kosünüs kare yerine ne yazıyorum?
+
+196
+00:08:19,411 --> 00:08:20,432
+Şunu çekiyorum.
+
+197
+00:08:20,552 --> 00:08:21,211
+1 artı.
+
+198
+00:08:21,871 --> 00:08:23,391
+İşaret mi hatalı diye baktım.
+
+199
+00:08:23,471 --> 00:08:23,671
+Değil.
+
+200
+00:08:23,991 --> 00:08:26,491
+1 artı sinüs hiperbolik kare x'i yazarsam.
+
+201
+00:08:26,591 --> 00:08:27,151
+Bu da ne olur?
+
+202
+00:08:27,151 --> 00:08:28,111
+1 artı.
+
+203
+00:08:28,131 --> 00:08:31,031
+2 tane sinüs hiperbolik kare x.
+
+204
+00:08:31,432 --> 00:08:34,271
+Benzer şekilde sinüsü yerine yazarsam şuradan.
+
+205
+00:08:34,271 --> 00:08:35,271
+1 artı.
+
+206
+00:08:35,271 --> 00:08:37,271
+2 tane sinüs.
+
+207
+00:08:37,271 --> 00:08:41,271
+3 tane sinüs.
+
+208
+00:08:41,271 --> 00:08:46,271
+4 tane sinüs.
+
+209
+00:08:46,271 --> 00:08:57,271
+5 tane sinüs.
+
+210
+00:08:57,271 --> 00:09:02,271
+6 tane sinüs.
+
+211
+00:08:34,964 --> 00:08:39,684
+Şimdi çekersem işte şimdi olur kosünü siperbolik kare x eksi 1 diye yazarım.
+
+212
+00:08:39,984 --> 00:08:40,724
+Tamam mı?
+
+213
+00:08:40,804 --> 00:08:42,364
+İşte bu da buna eşittir.
+
+214
+00:08:42,744 --> 00:08:46,744
+Yani istediğin şekilde yerine göre düzenleyebiliriz arkadaşlar.
+
+215
+00:08:47,264 --> 00:08:53,764
+Buradan örneğin diyelim ki kosünü siperbolik kare x'i yalnız bırakmak istersem o işime geliyorsa
+
+216
+00:08:53,764 --> 00:08:56,504
+o zaman biri buraya atarım bölü 2 diye yazarım.
+
+217
+00:08:56,504 --> 00:09:05,364
+Benzer şekilde sinü siperbolik kare x'i çekersem bu da yine kosünü siperbolik 2x eksi 1 bölü 2'dir diyeceğiz.
+
+218
+00:09:05,664 --> 00:09:07,384
+Trigonmetikten biraz farklı dedim.
+
+219
+00:09:07,884 --> 00:09:08,704
+Orada ne yapardık?
+
+220
+00:09:08,764 --> 00:09:11,044
+1 eksi kosünüs 2x bölü 2 diye yazardık.
+
+221
+00:09:11,104 --> 00:09:12,744
+Onun için biraz dikkat edelim.
+
+222
+00:09:12,884 --> 00:09:13,984
+Farklarımız var.
+
+223
+00:09:14,544 --> 00:09:22,084
+Burada da yine sekant hiperbolik kare x'in 1 eksi tancant hiperbolik kare x'e eşit olduğunu biliyoruz.
+
+224
+00:09:22,084 --> 00:09:24,184
+Ve yine kendimiz de görebiliriz şurada.
+
+225
+00:09:24,284 --> 00:09:25,364
+Şunun ifadesi neydi?
+
+226
+00:09:25,364 --> 00:09:33,704
+sinü siperbolik kare bölü kosünüs siperbolik kare paydaşı dersem kosünüs siperbolik kare x'i sinüs kare o biri eşitti.
+
+227
+00:09:34,124 --> 00:09:35,484
+Bir bölü ne gelir?
+
+228
+00:09:35,884 --> 00:09:37,604
+Kosünüs siperbolik kare x olur.
+
+229
+00:09:37,724 --> 00:09:39,144
+O da sekanta eşittir.
+
+230
+00:09:39,244 --> 00:09:40,724
+Kareye eşittir deriz.
+
+231
+00:09:41,324 --> 00:09:49,584
+Benzer şekilde kosekan hiperbolik kare x de eksi 1 artı kotancant hiperbolik kare x'i eşitmiş.
+
+232
+00:09:49,584 --> 00:09:51,044
+Bunu da görebilirsiniz.
+
+233
+00:09:51,044 --> 00:09:59,484
+Kosünüs siperbolik kare x bölü sinüs siperbolik kare de payda eşitlersem eksi sinüs siperbolik kare artı kosünüs siperbolik kare.
+
+234
+00:09:59,484 --> 00:10:01,144
+Yine ne eşittir?
+
+235
+00:10:01,384 --> 00:10:06,163
+Bire bölü payda da ne kaldı sinüs siperbolik o da kosekanttır diyeceğiz.
+
+236
+00:10:06,424 --> 00:10:06,624
+Tamam.
+
+237
+00:10:07,903 --> 00:10:08,224
+Evet.
+
+238
+00:10:08,403 --> 00:10:10,844
+Bu şekilde bunları da vermiş olduk.
+
+239
+00:10:11,484 --> 00:10:13,724
+Şimdi tek midir çift midir onları da görelim.
+
+240
+00:10:14,304 --> 00:10:16,704
+Bir fonksiyon tek çift olduğunu nasıl anlardık?
+
+241
+00:10:17,104 --> 00:10:22,244
+Fonksiyonu da x yerine eksi x yazdığımızda fonksiyonu işaret değiştiriyorsa tek diyorduk.
+
+242
+00:10:22,244 --> 00:10:25,704
+Değiştirmiyorsa da kendisine eşit çıkarsa çift diyoruz.
+
+243
+00:10:25,744 --> 00:10:27,284
+Örneğin kosünüsü kontrol ediyoruz.
+
+244
+00:10:27,384 --> 00:10:28,724
+Kosünüs siperbolik x'i.
+
+245
+00:10:29,144 --> 00:10:30,604
+X yerine eksi x yazıyorum.
+
+246
+00:10:31,084 --> 00:10:32,204
+Bunun ifadesi şuydu.
+
+247
+00:10:32,284 --> 00:10:34,344
+Bakın şuradan kosünüs siperbolik şuydu.
+
+248
+00:10:34,824 --> 00:10:36,084
+X yerine eksi x yazıyorum.
+
+249
+00:10:36,424 --> 00:10:40,364
+Eksi x artı e üzeri artı x olur değil mi?
+
+250
+00:10:41,364 --> 00:10:42,044
+Değişir mi?
+
+251
+00:10:42,104 --> 00:10:42,784
+Bu gene aynı.
+
+252
+00:10:43,304 --> 00:10:45,744
+Kosünüs siperbolik x'e eşit çıktı.
+
+253
+00:10:45,744 --> 00:10:46,764
+O halde ne diyorum?
+
+254
+00:10:46,924 --> 00:10:48,504
+Çift fonksiyondur diyorum.
+
+255
+00:10:48,804 --> 00:10:51,744
+Yani kosünüs siperbolik x çift fonksiyonu.
+
+256
+00:10:51,744 --> 00:10:52,344
+Gelelim.
+
+257
+00:10:53,304 --> 00:10:54,764
+Sinis siperboliğe gelelim.
+
+258
+00:10:55,264 --> 00:10:57,604
+Bunda da gene x yerine eksi x yazarsam.
+
+259
+00:10:58,104 --> 00:11:00,104
+Sinüsümü de şuradan kodaya çekeyim bakın.
+
+260
+00:11:00,644 --> 00:11:01,304
+Yazıyorum.
+
+261
+00:11:01,444 --> 00:11:02,724
+E üzeri eksi x değil mi?
+
+262
+00:11:03,004 --> 00:11:03,444
+Eksi.
+
+263
+00:11:04,004 --> 00:11:07,044
+E üzeri artı x olur bölü 2.
+
+264
+00:11:07,903 --> 00:11:08,384
+Tamam mı?
+
+265
+00:11:08,424 --> 00:11:09,424
+Bakın yazdık şurada.
+
+266
+00:11:10,524 --> 00:11:12,624
+Bunu da şu an olmadı.
+
+267
+00:11:12,624 --> 00:11:14,144
+Benim hangisi sinüs müdür?
+
+268
+00:11:14,744 --> 00:11:15,844
+Yani kendisine eşit midir?
+
+269
+00:11:15,924 --> 00:11:16,304
+Değil midir?
+
+270
+00:11:16,364 --> 00:11:16,764
+Göremiyorum.
+
+271
+00:11:16,844 --> 00:11:17,224
+Ne yaparım?
+
+272
+00:11:17,304 --> 00:11:18,744
+Eksi parantezini alırsam.
+
+273
+00:11:18,744 --> 00:11:22,544
+O zaman şu ifadenin sinüs siperbolik x olduğunu zaten biliyorum.
+
+274
+00:11:22,844 --> 00:11:23,604
+O zaman ne oldu?
+
+275
+00:11:24,004 --> 00:11:26,084
+Eksi sinüs siperbolik x'e eşit olduğu için.
+
+276
+00:11:26,163 --> 00:11:27,804
+Yani ters şart eşit olduğu için.
+
+277
+00:11:27,884 --> 00:11:28,364
+Bu da nedir?
+
+278
+00:11:28,784 --> 00:11:30,764
+Tek fonksiyondur deriz.
+
+279
+00:11:31,244 --> 00:11:31,784
+Gelelim.
+
+280
+00:11:32,304 --> 00:11:33,764
+Tanjant hiperboleye.
+
+281
+00:11:34,204 --> 00:11:36,064
+O da x yerine eksi x yazarsam.
+
+282
+00:11:36,224 --> 00:11:37,204
+Üstleri kullanmıyorum.
+
+283
+00:11:37,344 --> 00:11:38,224
+Artık bunu kullanıyorum.
+
+284
+00:11:38,364 --> 00:11:38,604
+Bakın.
+
+285
+00:11:39,184 --> 00:11:40,424
+Sinüs tek fonksiyondu.
+
+286
+00:11:40,484 --> 00:11:41,484
+Kosünüs çiftti.
+
+287
+00:11:41,824 --> 00:11:42,504
+O zaman ne olur?
+
+288
+00:11:42,604 --> 00:11:43,444
+Sonuç tek olur.
+
+289
+00:11:43,744 --> 00:11:44,824
+Tek fonksiyon derim.
+
+290
+00:11:44,824 --> 00:11:49,924
+Benzer şekilde kotanjan hiperbolik de tektir.
+
+291
+00:11:50,004 --> 00:11:51,044
+Şunları ters düşünürsen.
+
+292
+00:11:51,124 --> 00:11:52,064
+Yine tek olur değil mi?
+
+293
+00:11:52,624 --> 00:11:56,784
+Sekant bir bölü kosünüs siperbolik x olduğu için çifttir.
+
+294
+00:11:57,184 --> 00:12:01,744
+Kosekant da bir bölü sinüs siperbolik olduğu için o da tektir diyoruz.
+
+295
+00:12:01,964 --> 00:12:03,284
+Onları artık yazmadım.
+
+296
+00:12:03,684 --> 00:12:04,224
+Gözüküyorum.
+
+297
+00:12:04,864 --> 00:12:05,624
+Tamam mı arkadaşlar?
+
+298
+00:12:05,904 --> 00:12:07,064
+Var mı takıldığımız bir yer?
+
+299
+00:12:07,064 --> 00:12:33,484
+Tamam mı?
+
+300
+00:12:13,395 --> 00:12:37,115
+Evet var mı arkadaşlar? Sanırım yok. Evet ses gelmediğine göre. Şimdi gelelim yine bunların da bizim için önemli olan şu an üstel ifadeleri nedir? İşte özdeşlikleri verdik onları bilmemiz gerekiyor. Bir de tanım kümelerini, görüntü kümelerini söyleyeceğiz burada. Grafiklerinde yine dediğim gibi ezbere çizmiş oluyoruz burada.
+
+301
+00:12:37,115 --> 00:12:55,315
+Şimdi ben verirken şimdi bir siperbolik fonksiyonların tersinden bahsetmiş olacağız. Onlara ters siperbolik fonksiyonlar diyeceğiz. Nasıl ters trigonotik fonksiyonlardan tersinden bahsedebilmek için fonksiyonun birebir olduğunu bilmemiz gerekir.
+
+302
+00:12:55,315 --> 00:13:06,915
+Onun için de ben burada bazılarına işte birebirdir diyeceğim. Bazılarına değildir. İşte kısıtlanmış tanım kümelerinde birebirdir demek için hepsini bu tablo üzerinde göstermiş olacağım.
+
+303
+00:13:07,315 --> 00:13:15,555
+Sonra da işte terslerinden bahsedebileceğiz diyeceğiz arkadaşlar. Şekilden de daha iyi anlarız burada görümcülü birebir olup olmadığını. Ölmeyin.
+
+304
+00:13:16,495 --> 00:13:20,655
+Bak anlattığımızın şimdiye kadar hepsinin özeti şu işte yazacağım şuraya. Şekli bu.
+
+305
+00:13:21,655 --> 00:13:26,295
+Sinus siperbolik x fonksiyonu diyoruz. Üstel ifadesini yazdık bakın şuraya tekrar.
+
+306
+00:13:26,836 --> 00:13:34,855
+Bunun tanım kümesi nedir? Real sayılardır. Görüntü kümesi de real sayılardır. Şekilden de zaten anlaşılıyor değil mi arkadaşlar?
+
+307
+00:13:34,855 --> 00:13:46,716
+Peki bu birebir midir değil midir? Yazmışım gerçi. Bu birebirdir. Geometrik olarak da görebilirsin. Şöyle bir yatay doğru çizmiş olsam sadece bir noktada kestiği için bu birebir fonksiyondur.
+
+308
+00:13:46,716 --> 00:13:55,815
+O zaman buna yapacağımız hiçbir şey yok artık. Sonuçta bunun tersinden bahsedeceğim. İşte ona da ters siperbolik fonksiyon diyeceğim biraz ilerledikten sonra. Tamam mı?
+
+309
+00:13:55,815 --> 00:13:59,515
+Bunu unutmuyoruz. Bu birebirdir. Bunun tersini hemen yazabileceğiz.
+
+310
+00:13:59,515 --> 00:14:12,535
+Geliyoruz. Kosini siperbolik x fonksiyonumuza. Bunun da şekli şudur. Şurada e'leri yazdığımızda ne demek istemişiz? Yani bunların birleşiminden oluştuğu için bu şekilde göstermişiz arkadaşlar.
+
+311
+00:14:13,255 --> 00:14:22,295
+Yani şu iki ifadenin oluşumundan sinus siperbolik x olduğu için o kırmızılara dikkat etmeyin. Sadece şu e'limiz şu siyah parabol gibi olan tamam mı?
+
+312
+00:14:22,295 --> 00:14:31,755
+Bu. Bunu da üstel ifadesini vermiştik zaten. Bunun tanım kümesinde gördüğünüz gibi beyaz sayılar görüntü kümesi zaten.
+
+313
+00:14:32,076 --> 00:14:36,475
+Hiç şunu böyle vermesem şuradan şekliden görüyorsunuz birden büyük değerler değil mi?
+
+314
+00:14:36,775 --> 00:14:41,415
+Ya da aralık olarak bir kapalı sonsuz açıktır.
+
+315
+00:14:41,955 --> 00:14:45,235
+Bunu da gördüğünüz gibi şekilden de birebir değildir.
+
+316
+00:14:45,235 --> 00:14:53,455
+İşte ben şöyle şuraya not olarak yazdım. Kısıtlanmış tanım kümesinde yani bunu birebir yapabilmek için ne yapıyorum?
+
+317
+00:14:53,635 --> 00:14:58,675
+Sıfır sonsuz aralığında kabul ediyorum. O zaman bu o zaman birebir olur.
+
+318
+00:14:59,155 --> 00:15:03,235
+Yani kosini siperbolik x fonksiyonu birebir değildir ama tanım kümesinde...
+
+319
+00:15:03,235 --> 00:15:05,235
+...
+
+320
+00:15:08,307 --> 00:15:09,927
+bileceğiz. Tamam mı arkadaşlar?
+
+321
+00:15:10,548 --> 00:15:10,987
+Gelelim
+
+322
+00:15:10,987 --> 00:15:14,367
+panjan, siperbolik
+
+323
+00:15:14,367 --> 00:15:16,367
+x fonksiyonumuza gelelim.
+
+324
+00:15:17,927 --> 00:15:18,528
+Bunun da üstel
+
+325
+00:15:18,528 --> 00:15:19,927
+ifadesi budur.
+
+326
+00:15:21,388 --> 00:15:22,148
+Peki bunun
+
+327
+00:15:22,148 --> 00:15:24,227
+tanım kümesi nedir sizce arkadaşlar?
+
+328
+00:15:24,987 --> 00:15:26,567
+Görmüyorsunuz, söyleyebilir misiniz?
+
+329
+00:15:26,707 --> 00:15:27,427
+Birebir midir?
+
+330
+00:15:28,427 --> 00:15:30,268
+En azından yorum yapın şekil üzerinden.
+
+331
+00:15:32,288 --> 00:15:34,048
+Tanım kümesi nedir arkadaşlar?
+
+332
+00:15:35,307 --> 00:15:36,567
+Doğru sayılı tanım kümesi.
+
+333
+00:15:36,687 --> 00:15:38,207
+Evet, doğru. Birebir midir
+
+334
+00:15:38,207 --> 00:15:38,648
+sizce?
+
+335
+00:15:40,148 --> 00:15:42,587
+Aynen. Dediğiniz gibi doğru bakın.
+
+336
+00:15:43,008 --> 00:15:43,888
+Real sayılar,
+
+337
+00:15:44,008 --> 00:15:45,447
+görüntü söylemedim, neyse,
+
+338
+00:15:45,587 --> 00:15:46,827
+görüntü rüküyordu zaten.
+
+339
+00:15:48,087 --> 00:15:49,427
+Tanım kümesi real sayılar,
+
+340
+00:15:49,607 --> 00:15:51,128
+görüntü kümesi de
+
+341
+00:15:51,128 --> 00:15:53,648
+eksi bir ile artı bir ya da mutlak değer
+
+342
+00:15:53,648 --> 00:15:55,148
+yayı küçük bir diye yazarız.
+
+343
+00:15:55,268 --> 00:15:57,148
+Şekilden de gördüğünüz gibi bu birebir de.
+
+344
+00:15:57,207 --> 00:15:58,668
+Buna da yapacak hiçbir şeyimiz yok.
+
+345
+00:15:58,668 --> 00:16:00,587
+Bunun tersinden de bahsedebileceğiz.
+
+346
+00:16:00,947 --> 00:16:02,347
+Gelelim kotanjan
+
+347
+00:16:02,347 --> 00:16:04,587
+tiperbolik fonksiyonuna gelelim.
+
+348
+00:16:04,768 --> 00:16:05,888
+O da söyledik.
+
+349
+00:16:05,888 --> 00:16:07,768
+Kosinusferbolik x bölüsünün
+
+350
+00:16:07,768 --> 00:16:08,847
+siperbolik x'dir.
+
+351
+00:16:09,008 --> 00:16:10,768
+Üstelifadesi de budur diyoruz.
+
+352
+00:16:11,268 --> 00:16:11,687
+Bunun da
+
+353
+00:16:11,687 --> 00:16:13,268
+tanım kümesi
+
+354
+00:16:13,268 --> 00:16:14,727
+real sayıların
+
+355
+00:16:14,727 --> 00:16:17,408
+yani sıfırdan farklı real sayılardır diye
+
+356
+00:16:17,408 --> 00:16:18,347
+gösteririz.
+
+357
+00:16:18,408 --> 00:16:20,528
+Onu da şu ifadeyle gösteririz.
+
+358
+00:16:21,107 --> 00:16:22,207
+Görüntü kümesi de
+
+359
+00:16:22,207 --> 00:16:23,748
+mutlak değer y
+
+360
+00:16:23,748 --> 00:16:25,187
+büyük bir.
+
+361
+00:16:25,187 --> 00:16:27,207
+Bunu şöyle de ifade ederdik.
+
+362
+00:16:27,408 --> 00:16:28,107
+Eğer y
+
+363
+00:16:28,107 --> 00:16:29,427
+pozitif sıfır
+
+364
+00:16:29,427 --> 00:16:30,248
+mutlak değerinin
+
+365
+00:16:30,248 --> 00:16:32,008
+için y'nin birden büyük olması
+
+366
+00:16:32,008 --> 00:16:32,648
+veya
+
+367
+00:16:32,648 --> 00:16:33,908
+y'nin küçük
+
+368
+00:16:33,908 --> 00:16:34,908
+eksi bir olması
+
+369
+00:16:34,908 --> 00:16:35,748
+durumunda.
+
+370
+00:16:35,867 --> 00:16:36,788
+Zaten şekilden de
+
+371
+00:16:36,788 --> 00:16:37,248
+görüyoruz.
+
+372
+00:16:37,327 --> 00:16:38,207
+Bakın birden büyük
+
+373
+00:16:38,207 --> 00:16:39,587
+eksi birden küçük olan
+
+374
+00:16:39,587 --> 00:16:40,548
+yerler.
+
+375
+00:16:40,888 --> 00:16:42,207
+Bu da gene gördüğünüz gibi
+
+376
+00:16:42,207 --> 00:16:43,207
+nedir?
+
+377
+00:16:43,567 --> 00:16:44,028
+Birebir
+
+378
+00:16:44,028 --> 00:16:44,847
+fonksiyondur.
+
+379
+00:16:44,908 --> 00:16:46,268
+Buna da yapacak bir şeyimiz
+
+380
+00:16:46,268 --> 00:16:46,567
+yok.
+
+381
+00:16:46,827 --> 00:16:47,788
+Demek ki şu ana kadar
+
+382
+00:16:47,788 --> 00:16:48,487
+sadece
+
+383
+00:16:48,487 --> 00:16:50,447
+kosinusferbolik fonksiyonumuz
+
+384
+00:16:50,447 --> 00:16:51,067
+birebir değil.
+
+385
+00:16:51,187 --> 00:16:52,168
+Bunun tanım kümesini
+
+386
+00:16:52,168 --> 00:16:53,107
+sıfır sonsuz olarak
+
+387
+00:16:53,107 --> 00:16:55,067
+kısıtlarsak birebir olduğunu
+
+388
+00:16:55,067 --> 00:16:56,648
+söyleyebileceğiz.
+
+389
+00:16:58,187 --> 00:16:59,388
+Evet gelelim.
+
+390
+00:16:59,888 --> 00:17:00,687
+Bakın sekant
+
+391
+00:17:00,687 --> 00:17:01,427
+hiperbolik
+
+392
+00:17:01,427 --> 00:17:01,927
+x'e.
+
+393
+00:17:02,048 --> 00:17:02,927
+Yani bu da nedir?
+
+394
+00:17:03,227 --> 00:17:03,768
+Bir bölü
+
+395
+00:17:03,768 --> 00:17:04,887
+kosinus hiperbolik
+
+396
+00:17:04,887 --> 00:17:05,407
+x'tir.
+
+397
+00:17:06,028 --> 00:17:06,807
+Peki bu birebir
+
+398
+00:17:06,807 --> 00:17:07,587
+midir arkadaşlar?
+
+399
+00:17:10,107 --> 00:17:10,407
+Hayır.
+
+400
+00:17:10,948 --> 00:17:11,407
+Değil değil mi?
+
+401
+00:17:11,468 --> 00:17:11,788
+Bakın.
+
+402
+00:17:12,327 --> 00:17:13,347
+Yatay bir doğru
+
+403
+00:17:13,347 --> 00:17:13,768
+çiz.
+
+404
+00:17:14,347 --> 00:17:14,988
+Bir doğru iki
+
+405
+00:17:14,988 --> 00:17:15,867
+noktada kestiği
+
+406
+00:17:15,867 --> 00:17:16,587
+için bu birebir
+
+407
+00:17:16,587 --> 00:17:17,127
+değildir.
+
+408
+00:17:17,127 --> 00:17:18,307
+Bunun tanım kümesi
+
+409
+00:17:18,307 --> 00:17:18,807
+nedir?
+
+410
+00:17:23,284 --> 00:17:24,903
+Real sayılar değil mi tanım kümesi?
+
+411
+00:17:25,184 --> 00:17:25,464
+Evet.
+
+412
+00:17:27,104 --> 00:17:27,744
+Tamam.
+
+413
+00:17:28,704 --> 00:17:29,864
+Şöyle diyoruz.
+
+414
+00:17:30,304 --> 00:17:31,884
+Sekant hiperbolik x'dir.
+
+415
+00:17:32,444 --> 00:17:33,844
+Tanım kümesi real sayılar.
+
+416
+00:17:34,244 --> 00:17:35,604
+Görüntü kümesi de nedir?
+
+417
+00:17:36,024 --> 00:17:38,004
+Sıfır açık. Şuradaki noktalar da
+
+418
+00:17:38,004 --> 00:17:40,324
+gün de söylemiştim. Bunlara sonra asintot denir.
+
+419
+00:17:40,724 --> 00:17:42,124
+Şu anda bilmediğimiz için sadece
+
+420
+00:17:42,124 --> 00:17:43,464
+şekilde böyle kalıyor.
+
+421
+00:17:43,884 --> 00:17:45,544
+Yani sıfır bir aralığındadır.
+
+422
+00:17:45,544 --> 00:17:47,164
+Bu birebir değildir.
+
+423
+00:17:47,884 --> 00:17:49,164
+Tanım kümesini biz
+
+424
+00:17:49,164 --> 00:17:51,644
+sıfır sonsuz olarak kısıtlarsak
+
+425
+00:17:51,644 --> 00:17:54,024
+yani kısıtlanmış tanım kümesi sıfır sonsuz
+
+426
+00:17:54,024 --> 00:17:55,844
+olursa bunun tersinden
+
+427
+00:17:55,844 --> 00:17:57,204
+bahsedebileceğiz.
+
+428
+00:17:57,584 --> 00:17:59,944
+O halde ne oldu? Bir kosin siperbolik
+
+429
+00:17:59,944 --> 00:18:02,124
+ve sekant hiperbolik
+
+430
+00:18:02,124 --> 00:18:04,264
+tek pardon birebir olmadığı için
+
+431
+00:18:04,264 --> 00:18:06,044
+onların tanım kümelerini sıfır sonsuz
+
+432
+00:18:06,044 --> 00:18:07,524
+olarak kısıtlamış olduk.
+
+433
+00:18:07,804 --> 00:18:09,724
+Zaten iki tane var. Aklımızda da kalır
+
+434
+00:18:09,724 --> 00:18:11,424
+bunlar arkadaşlar. Evet.
+
+435
+00:18:11,544 --> 00:18:13,624
+Gelelim son kosin
+
+436
+00:18:13,624 --> 00:18:15,464
+hiperbolik x fonksiyonu. Bu da
+
+437
+00:18:15,464 --> 00:18:17,304
+bir bölüsün siperbolik x'dir.
+
+438
+00:18:17,484 --> 00:18:19,544
+Üstel ifadesini yazdık zirken.
+
+439
+00:18:20,144 --> 00:18:21,504
+Bu da tanım kümesi
+
+440
+00:18:21,504 --> 00:18:23,403
+sıfırdan farklı
+
+441
+00:18:23,403 --> 00:18:25,684
+real sayılardır. Görüntü kümesi de
+
+442
+00:18:25,684 --> 00:18:27,724
+sıfırdan farklı real sayılar.
+
+443
+00:18:27,824 --> 00:18:29,304
+Şekilden de görüldüğü gibi bu
+
+444
+00:18:29,304 --> 00:18:31,524
+birebir bir fonksiyondur. Tersinden
+
+445
+00:18:31,524 --> 00:18:33,304
+bahsedebileceğiz. O halde
+
+446
+00:18:33,304 --> 00:18:35,864
+tekrar söylüyorum. Kosin siperbolik
+
+447
+00:18:35,864 --> 00:18:37,364
+ve sekant hiperbolik
+
+448
+00:18:37,364 --> 00:18:39,604
+dışında diğer fonksiyonlarımız
+
+449
+00:18:39,604 --> 00:18:41,484
+birebirdir. Tersleri
+
+450
+00:18:41,484 --> 00:18:43,164
+hemen yazılabilecek ama diğer
+
+451
+00:18:43,164 --> 00:18:45,504
+iki sene de ne yapıyoruz? Sıfır sonsuza kısıtladığımızda
+
+452
+00:18:46,104 --> 00:18:47,924
+tersinden bahsedeceğiz
+
+453
+00:18:47,924 --> 00:18:49,724
+diyeceğiz arkadaşlar. Tamam mı?
+
+454
+00:18:49,724 --> 00:18:50,684
+Devam edelim.
+
+455
+00:18:52,104 --> 00:18:53,664
+Şimdi gelelim. Bir de bunların
+
+456
+00:18:53,664 --> 00:18:55,204
+türevine ihtiyacımız var.
+
+457
+00:18:56,264 --> 00:18:57,624
+Evet. Türevini de almak
+
+458
+00:18:57,624 --> 00:18:59,664
+yine yani işlemler uzun ama
+
+459
+00:18:59,664 --> 00:19:01,864
+kolay. İşte ben sinisperbolik
+
+460
+00:19:01,864 --> 00:19:03,984
+x'in türevini bilemiyorum
+
+461
+00:19:03,984 --> 00:19:05,804
+ama üstel ifadesini bildiğim için
+
+462
+00:19:05,804 --> 00:19:07,944
+bunun türevini almasını biliyorum. Üstel fonksiyon
+
+463
+00:19:07,944 --> 00:19:09,364
+türevlerini biliyorum. Oradan
+
+464
+00:19:09,364 --> 00:19:11,184
+bunun hemen türevini alalım. Bakın.
+
+465
+00:19:11,584 --> 00:19:13,824
+Gözümüzü alalım. Yazdım ama
+
+466
+00:19:13,824 --> 00:19:15,964
+şu ifadenin türevini nasıl alalım?
+
+467
+00:19:15,964 --> 00:19:19,004
+e üzeri x'in türevi e üzeri x'tir değil mi?
+
+468
+00:19:19,864 --> 00:19:22,204
+Eksi. E üzeri eksi x'in türevi de nedir?
+
+469
+00:19:22,504 --> 00:19:23,944
+Eksi e üzeri x'tir. Yani
+
+470
+00:19:23,944 --> 00:19:25,984
+artı olur. E üzeri x
+
+471
+00:19:25,984 --> 00:19:28,184
+artı e üzeri eksi x bölü 2 oldu.
+
+472
+00:19:28,264 --> 00:19:30,444
+O da nedir? Kosünüstür değil mi?
+
+473
+00:19:30,744 --> 00:19:31,044
+Bakın.
+
+474
+00:19:32,204 --> 00:19:34,004
+İşte ne yaptık? Yazdık ifadeyi
+
+475
+00:19:34,004 --> 00:19:36,344
+türev işareti. Yani şunun türevini
+
+476
+00:19:36,344 --> 00:19:38,324
+alacağım. Bunu da aldık.
+
+477
+00:19:38,484 --> 00:19:40,284
+Bu da benim bilgim. Kosünüs
+
+478
+00:19:40,284 --> 00:19:41,744
+siperbolik x'tir. Yani
+
+479
+00:19:41,744 --> 00:19:44,044
+sinüs siperbolik x'in türevi
+
+480
+00:19:44,044 --> 00:19:46,124
+kosünüs siperbolik x'tir
+
+481
+00:19:46,124 --> 00:19:47,944
+diyeceğiz. Tamam mı?
+
+482
+00:19:48,864 --> 00:19:49,584
+Gene bunun
+
+483
+00:19:49,584 --> 00:19:51,764
+genel ifadesi bana gerekli.
+
+484
+00:19:52,044 --> 00:19:54,264
+En genel şekliyle. Diyelim ki
+
+485
+00:19:54,264 --> 00:19:56,364
+u bir fonksiyon olmak üzere
+
+486
+00:19:56,364 --> 00:19:58,644
+y eşittir. Sinüs siperbolik
+
+487
+00:19:58,644 --> 00:20:00,004
+u'nun türevi de ne olur?
+
+488
+00:20:00,464 --> 00:20:01,804
+u'nun türevi çarpı
+
+489
+00:20:01,804 --> 00:20:04,204
+kosünüs siperbolik u diye düşünmem
+
+490
+00:20:04,204 --> 00:20:06,164
+gerekir. Hadi kosünüs
+
+491
+00:20:06,164 --> 00:20:08,004
+siperbolik x'in türevi
+
+492
+00:20:08,004 --> 00:20:10,204
+ne çıkar? Bir görün bakalım.
+
+493
+00:20:14,324 --> 00:20:15,683
+Türevini alın hemen.
+
+494
+00:20:16,764 --> 00:20:17,464
+Ne bulursunuz?
+
+495
+00:20:19,344 --> 00:20:19,624
+Evet.
+
+496
+00:20:19,784 --> 00:20:21,744
+Sinüs süperbolik x olur değil mi arkadaşlar?
+
+497
+00:20:21,923 --> 00:20:24,204
+Bakın farkı trigonometride ne olurdu?
+
+498
+00:20:24,244 --> 00:20:25,903
+Bu eksi sinüs derdik.
+
+499
+00:20:25,984 --> 00:20:27,624
+Ama bakın burada artı sinüs.
+
+500
+00:20:28,163 --> 00:20:29,364
+İşte alıyorum türevini.
+
+501
+00:20:29,423 --> 00:20:31,264
+E üzeri x'in türevi e üzeri x'ti.
+
+502
+00:20:31,324 --> 00:20:35,224
+E üzeri eksi x'in türevi de eksi e üzeri eksi x bölü 2.
+
+503
+00:20:35,704 --> 00:20:39,544
+Bu da benim bildiğim sinüs süperbolik x fonksiyon olur.
+
+504
+00:20:39,544 --> 00:20:41,663
+Yani işarete dikkat ediyoruz.
+
+505
+00:20:41,804 --> 00:20:42,284
+Artı.
+
+506
+00:20:42,403 --> 00:20:44,304
+Bunu öğrenci biraz karıştırıyor arkadaşlar.
+
+507
+00:20:44,324 --> 00:20:45,764
+Eksi değil.
+
+508
+00:20:46,344 --> 00:20:47,024
+Tamam mı?
+
+509
+00:20:47,204 --> 00:20:47,423
+Evet.
+
+510
+00:20:47,504 --> 00:20:48,844
+Bunu da gene genelleyelim.
+
+511
+00:20:49,964 --> 00:20:51,624
+U bir fonksiyon olmak üzere.
+
+512
+00:20:52,443 --> 00:20:54,584
+Y'eşitir kosünüs süperbolik u dersem.
+
+513
+00:20:55,163 --> 00:20:55,923
+Bu da ne olacak?
+
+514
+00:20:56,443 --> 00:21:00,324
+U'nun türevi çarpı sinüs süperbolik u diye yorumlayacağız.
+
+515
+00:21:00,784 --> 00:21:06,524
+E şimdi artık y'eşitir tarjan süperbolik x de üstelik ifadesi biraz zahmetli olur değil mi?
+
+516
+00:21:06,524 --> 00:21:09,604
+Onun için ne yaparım gene bunu trigonometrikte yaptığım gibi.
+
+517
+00:21:10,044 --> 00:21:11,163
+Bunun ifadesi nedir?
+
+518
+00:21:11,163 --> 00:21:13,104
+Sinüs süperbolik x bölü.
+
+519
+00:21:13,104 --> 00:21:15,044
+Kosünüs süperbolik x derim.
+
+520
+00:21:15,364 --> 00:21:16,804
+Buradan bölümün türevinden bakın.
+
+521
+00:21:16,943 --> 00:21:19,224
+Hem de hatırlamış olacağız türevimizi.
+
+522
+00:21:19,604 --> 00:21:21,524
+Yani süperbolik fonksiyonların türevlerini.
+
+523
+00:21:21,903 --> 00:21:22,443
+Ne yapıyorum?
+
+524
+00:21:23,224 --> 00:21:23,744
+Bölüm var.
+
+525
+00:21:23,824 --> 00:21:24,524
+Bölümün türevi.
+
+526
+00:21:24,524 --> 00:21:25,324
+Payın türevi.
+
+527
+00:21:25,464 --> 00:21:27,324
+Sinüs süperbolik x'in türevi neydi?
+
+528
+00:21:27,464 --> 00:21:29,024
+Kosünüs süperbolik x'di.
+
+529
+00:21:29,564 --> 00:21:31,544
+Çarpı payda yazdık.
+
+530
+00:21:32,124 --> 00:21:37,183
+Eksi pay çarpı sinüs süperbolik x çarpı paydanın türevi.
+
+531
+00:21:37,464 --> 00:21:40,844
+Kosünüs süperbolik x'in türevinde sinüs bulmuştuk.
+
+532
+00:21:41,244 --> 00:21:45,064
+Sinüs süperbolik x bölü paydanın karesi diyoruz.
+
+533
+00:21:45,264 --> 00:21:46,064
+Buradan ne gelecek?
+
+534
+00:21:46,204 --> 00:21:46,464
+Bakın.
+
+535
+00:21:46,464 --> 00:21:48,484
+Kosünüs süperbolik kare.
+
+536
+00:21:48,984 --> 00:21:50,903
+Eksi sinüs süperbolik kare.
+
+537
+00:21:50,903 --> 00:21:53,824
+Bu da benim bildiğim bir değil miydi?
+
+538
+00:21:53,903 --> 00:21:55,364
+Yukarıda özleşikten verdik.
+
+539
+00:21:55,443 --> 00:21:59,943
+Yani bir bölü kosünüs süperbolik kare x diyeceğim.
+
+540
+00:22:00,704 --> 00:22:02,443
+Ya da şunları ayırırsam bakın.
+
+541
+00:22:02,584 --> 00:22:05,384
+Bir eksi tanjant kare olur.
+
+542
+00:22:05,943 --> 00:22:09,704
+Ya da sekant süperbolik kare x diye üçünü de yazarım.
+
+543
+00:22:10,144 --> 00:22:10,903
+Tamam mı arkadaşlar?
+
+544
+00:22:11,423 --> 00:22:11,824
+Kolay.
+
+545
+00:22:12,124 --> 00:22:14,163
+Hemen bölümün türevinden bulduk.
+
+546
+00:22:14,163 --> 00:22:16,284
+Yine bunu genellemek istersek.
+
+547
+00:22:16,364 --> 00:22:18,443
+U bir fonksiyon olmak üzere diyelim.
+
+548
+00:22:18,443 --> 00:22:21,824
+Y eşittir tanjant süperbolik U'nun türevi.
+
+549
+00:22:22,384 --> 00:22:25,443
+U'nun türevi çarpı sekant süperbolik U.
+
+550
+00:22:25,564 --> 00:22:26,644
+Bunu yazmışım sadece.
+
+551
+00:22:26,923 --> 00:22:28,124
+Şunu yazmak istersem.
+
+552
+00:22:28,564 --> 00:22:31,443
+U üstü bölü kosünüs süperbolik kare U derim.
+
+553
+00:22:32,004 --> 00:22:33,784
+Veya bunu kullanmış olsaydım.
+
+554
+00:22:33,923 --> 00:22:40,604
+U'nun türevi çarpı aç parantez bir eksi tanjant süperbolik kare U şeklinde yazardık.
+
+555
+00:22:40,604 --> 00:22:45,184
+İşte tanjant süperbolik fonksiyonunun türevi de budur diyoruz.
+
+556
+00:22:45,184 --> 00:22:51,903
+Yine benzer şekilde y eşittir kotajant süperbolik x ise bunun türevini bana soruyor.
+
+557
+00:22:52,423 --> 00:22:59,144
+Kotajant süperbolik x'in de kosünüs süperbolik x bölü sinüs süperbolik x olduğunu biliyorum.
+
+558
+00:22:59,403 --> 00:23:01,004
+Bölümün türevinde ne diyorum?
+
+559
+00:23:01,004 --> 00:23:17,824
+Payın türevi kosünüs süperbolik x'in türevi sinüs süperbolik x çarpı payda eksi pay çarpı kosünüs süperbolik x çarpı payda'nın türevi de kosünüs süperbolik x bölü sinüs süperbolik x'in karesi.
+
+560
+00:23:17,903 --> 00:23:19,184
+Yani payda'nın karesi.
+
+561
+00:23:19,284 --> 00:23:20,384
+Buradan ne gelir bakın?
+
+562
+00:23:20,384 --> 00:23:27,384
+Sinüs süperbolik kare eksi kosünüs süperbolik kare bölü paydasının karesi.
+
+563
+00:23:27,384 --> 00:23:30,644
+Şimdi şuradan biz neyi biliyorduk arkadaşlar?
+
+564
+00:23:31,204 --> 00:23:32,403
+Şunun biri olduğunu biliyorum.
+
+565
+00:23:32,504 --> 00:23:33,084
+Ne yaparım?
+
+566
+00:23:33,644 --> 00:23:35,903
+Tersi olduğu için eksi parantezini alırım.
+
+567
+00:23:36,084 --> 00:23:41,044
+Yani buradan eksi bir bölü sinüs süperbolik kare eksi eşitti.
+
+568
+00:23:41,324 --> 00:23:43,364
+Kotajant süperbolik x'in türevi.
+
+569
+00:23:43,364 --> 00:23:57,384
+Veya yine şunları bölerek alırsam bir eksi kotajantüperbolik kare x veya bu da kosekanta eşit olduğu için eksi kosekantüperbolik kare x diye yazarım.
+
+570
+00:23:57,884 --> 00:23:58,384
+Tamam mı?
+
+571
+00:23:59,384 --> 00:23:59,804
+Gelelim.
+
+572
+00:24:01,004 --> 00:24:02,943
+Yine bunu genel olarak yazalım.
+
+573
+00:24:03,463 --> 00:24:05,463
+Bu bir fonksiyon olmak üzere diyelim.
+
+574
+00:24:05,464 --> 00:24:35,463
+Evet.
+
+575
+00:24:05,935 --> 00:24:14,995
+O zaman kotanjan hiperbolik U'nun türevi ise eksi U'nun türevi çarpı kosekan hiperbolik kare U diye yazdım.
+
+576
+00:24:15,415 --> 00:24:16,596
+Bir tanesini yazmışım.
+
+577
+00:24:16,675 --> 00:24:19,596
+Şunu yazmış olsaydım yanına ne diyeceksin?
+
+578
+00:24:19,995 --> 00:24:20,576
+Ne diyecektim?
+
+579
+00:24:20,635 --> 00:24:25,675
+U'nun türevi aç parantez bir eksi kotanjan hiperbolik kare U diyecektim.
+
+580
+00:24:25,675 --> 00:24:32,675
+Şunu kullansaydım eksi U'nun türevi bölü sinüs hiperbolik kare U şeklinde yazardık.
+
+581
+00:24:33,816 --> 00:24:34,995
+Tamam değil mi arkadaşlar?
+
+582
+00:24:36,895 --> 00:24:40,836
+Evet gelelim sekant hiperbolik X'in türevini almaya.
+
+583
+00:24:41,375 --> 00:24:44,596
+Bunun da bir bölü kosinus hiperbolik X olduğunu biliyorum.
+
+584
+00:24:44,855 --> 00:24:49,415
+Buradan hareketle yani bölüm türevinden giderek bunun türevini bulabilirim.
+
+585
+00:24:49,415 --> 00:24:50,596
+O zaman ne diyorum?
+
+586
+00:24:50,715 --> 00:24:59,875
+Payın türevi sıfır çarpı payda eksi bir çarpı kosinus hiperbolik X'in türevinin de sinüs olduğunu unutmuyorum.
+
+587
+00:25:00,195 --> 00:25:03,535
+Sinus hiperbolik X bölü paydanın karesi.
+
+588
+00:25:03,675 --> 00:25:04,795
+Bu zaten sıfır oldu.
+
+589
+00:25:04,795 --> 00:25:11,655
+Yani buradan eksi sinüs hiperbolik X bölü kosinus hiperbolik X'in karesi geldi.
+
+590
+00:25:11,655 --> 00:25:13,375
+Ya da bunu ne yaparım?
+
+591
+00:25:13,535 --> 00:25:19,675
+Bildiğim şekilde ayırırsam paydasını bir tanjant gelir bir de sekant olur değil mi?
+
+592
+00:25:19,915 --> 00:25:26,275
+Yani eksi sekant hiperbolik X çarpı tanjant hiperbolik X diye buluruz.
+
+593
+00:25:26,275 --> 00:25:31,195
+İşte sekant hiperbolik X'in türevi de buna eşittir diyeceğiz.
+
+594
+00:25:31,735 --> 00:25:37,035
+Yine bunu genellemek istersek bu bir fonksiyon olmak üzere diyoruz.
+
+595
+00:25:37,415 --> 00:25:41,336
+Y eşittir sekant hiperbolik U'nun türevini alıyoruz.
+
+596
+00:25:42,255 --> 00:25:42,875
+Ne diyeceğim?
+
+597
+00:25:44,056 --> 00:25:51,615
+Eksi var işaretimiz U'nun türevi sekant hiperbolik U tanjant hiperbolik U diye yazırız.
+
+598
+00:25:51,615 --> 00:25:54,175
+Şuna yazmış olsaydım ne olacaktı?
+
+599
+00:25:54,235 --> 00:26:00,735
+Eksi U'nun türevi sinüs hiperbolik U kosinus hiperbolik U'nun karesi şeklinde söylenir.
+
+600
+00:26:00,735 --> 00:26:04,655
+Evet denelim sonuncu ifademize.
+
+601
+00:26:05,175 --> 00:26:09,755
+Y eşittir sekant hiperbolik X ise dedik.
+
+602
+00:26:10,076 --> 00:26:11,615
+Y'nin türevi nedir?
+
+603
+00:26:12,275 --> 00:26:13,455
+Bu da gene neye eşitti?
+
+604
+00:26:13,975 --> 00:26:16,315
+1 bölü sinüs hiperbolik X'i eşitti.
+
+605
+00:26:17,215 --> 00:26:22,195
+Buradan da bölümün türevinden payın türevi 0 çarpı payda.
+
+606
+00:26:22,715 --> 00:26:27,336
+Eksi 1 çarpı paydanın türevi de kosinus hiperbolik X'ti.
+
+607
+00:26:27,815 --> 00:26:29,495
+Bölü paydanın karesi.
+
+608
+00:26:29,495 --> 00:26:30,655
+Buradan da ne gelecek?
+
+609
+00:26:30,855 --> 00:26:36,336
+Eksi kosinus hiperbolik X bölü sinüs hiperbolik X'in karesidir.
+
+610
+00:26:36,875 --> 00:26:41,735
+Veya gene bunu ayırarak yazmak istersem bir kotanjant hiperbolik X gelir.
+
+611
+00:26:41,735 --> 00:26:48,596
+Bir de bir bölüsün üstüden kosekan hiperbolik X çarpı kotanjant hiperbolik X diye yazılır.
+
+612
+00:26:48,596 --> 00:26:54,556
+Genellemek istersek u bir fonksiyon olmak üzere bir eşittir.
+
+613
+00:26:54,975 --> 00:26:57,336
+Kosekan hiperbolik U ise diyeceğim.
+
+614
+00:26:57,975 --> 00:27:06,975
+Türevi eksi U'nun türevi çarpı kosekan hiperbolik U çarpı tan hiperbolik U diye yazılır arkadaşlar.
+
+615
+00:27:06,975 --> 00:27:09,056
+Diğerini de yazmış olsaydım.
+
+616
+00:27:09,715 --> 00:27:17,096
+Eksi U'nun türevi çarpı kosekan hiperbolik U bölü sinisi hiperbolik U'nun karesi şeklinde söyleyecek.
+
+617
+00:27:17,096 --> 00:27:18,336
+Tamam mı?
+
+618
+00:27:19,115 --> 00:27:19,875
+Bakın buraya kadar.
+
+619
+00:27:27,059 --> 00:27:31,059
+Arkadaş ne yazmış? Hocam bunlar türevin mesela diyor.
+
+620
+00:27:33,059 --> 00:27:36,059
+Kosinüs, kare, eksi 1 diyerek.
+
+621
+00:27:39,700 --> 00:27:47,799
+Alırsın. Türev kurallarını uyguladıktan sonra alırsın istediğin şekilde. Tabii ki alırsın. Bunu herhalde kare diye anlıyorum.
+
+622
+00:27:49,680 --> 00:27:57,920
+Evet. Neyse dönelim. Var mı buraya kadar takıldığımız bir yer? Yani türevi doğru al da nasıl alırsan al. Tamam mı arkadaşlar?
+
+623
+00:27:57,920 --> 00:28:08,400
+Evet. Yani buraya kadar dediğim gibi üstelik ifadesini biliyoruz. Hiperbolik fonksiyonların tanım kümelerini, görüntü kümelerini ve türevlerini. Tamam mı?
+
+624
+00:28:08,400 --> 00:28:23,100
+Evet. Gelelim birkaç örnek şöyle aldım. Diyelim ki kosünsiperbolik 2x'in buna eşit olduğunu gösteriniz. Tamam mı? Böyle bir şey soksu. Ya bunun ya da x'ine de şey. Problem yok.
+
+625
+00:28:23,100 --> 00:28:35,579
+Şimdi ne yapıyoruz? Bakın. Kosünsiperbolik x'in üstelik ifadesinden hareket ediyoruz. Onun üstelik ifadesi neydi? E üzeri x artı e üzeri eksi x bölü 2 idi. Şunu göstermek istiyoruz.
+
+626
+00:28:35,580 --> 00:28:44,240
+Diyelim. Tamam mı? Yani bundan harekette bunu görmeye çalışacağım. O zaman ne yapıyorum? Bunun karesine ihtiyacım var.
+
+627
+00:28:44,740 --> 00:28:54,360
+Bunun karesini alırsam birincinin karesi, birincinin ikincinin çarpımının iki katı, iki gelir. İkincinin karesi diyorum. Bölü 4. Değil mi? Şu.
+
+628
+00:28:54,360 --> 00:29:01,960
+Bir de neye ihtiyacım var? Bunu iki ile çarpmalıyım. Bir de eksi bir eklemeliyim. Şöyle bakın şu.
+
+629
+00:29:03,019 --> 00:29:08,400
+İki ile çarptım. Eksi bir ekledim. Şuradan iki gitti. Buradan da iki kalır.
+
+630
+00:29:08,500 --> 00:29:16,960
+Payda eşitlediğimde eksi iki olamaz mı? Şuraya gelir. İkiler de gider. Yani sonuçta e üzeri 2x artı e üzeri eksi 2x bölü 2.
+
+631
+00:29:16,960 --> 00:29:25,740
+Bu da benim bildiğin kosünüs 2, hiperbolik 2x'in üstelifadesidir arkadaşlar. İşte gerçekten bu ifade doğrudur.
+
+632
+00:29:26,180 --> 00:29:30,700
+Bunu da alıp gene bunu eşit olduğunda görebilirim. Bu sefer nereden hareket edeceğim?
+
+633
+00:29:31,180 --> 00:29:36,059
+Sinüs hiperbolik x'in üstelifadesini kullanacağım. Bakın yazdım şuraya.
+
+634
+00:29:36,059 --> 00:29:43,860
+O da neydi? E üzeri x eksi e üzeri eksi x bölü 2 idi. Bunun gene kareye ihtiyacım var diyorum. Karesini aldım bakın.
+
+635
+00:29:44,240 --> 00:29:50,660
+Birincinin karesi. Birinci ile ikincinin çarpımının iki katı eksi 2 gelir. İkincinin karesi bölü 4.
+
+636
+00:29:51,480 --> 00:29:56,420
+Bir de neye ihtiyacım var? Bunu iki ile çarpıp bir de bir ile toplamalıyım bakın.
+
+637
+00:29:57,779 --> 00:30:01,340
+Şurada yazdım. İkiler gitti. İki kaldı şuradan.
+
+638
+00:30:01,340 --> 00:30:10,340
+fayda da eşitlersem iki ile eksik ile birbirini götürdü. Yani sonuçta gene aynı kosünüs hiperbolik 2x eşit olduğunu görebiliyoruz.
+
+639
+00:30:11,660 --> 00:30:12,440
+Tamam mı arkadaşlar?
+
+640
+00:30:14,279 --> 00:30:14,920
+Anlaşıldı mı?
+
+641
+00:30:16,400 --> 00:30:16,779
+Evet.
+
+642
+00:30:18,300 --> 00:30:19,259
+Ses yok.
+
+643
+00:30:19,279 --> 00:30:20,059
+Anlaşıldı hocam.
+
+644
+00:30:20,620 --> 00:30:21,019
+Evet.
+
+645
+00:30:22,140 --> 00:30:23,519
+Şimdi geliyoruz şuraya.
+
+646
+00:30:24,620 --> 00:30:29,340
+Soru şu. İki tane kosünüs hiperbolik lnx neye eşittir?
+
+647
+00:30:31,340 --> 00:30:38,860
+Evet. Gene buradan da kosünüs hiperbolik x'in üstel ifadesini biliyorum değil mi arkadaşlar?
+
+648
+00:30:39,700 --> 00:30:42,259
+Orada x gördüğün yere lnx'i yazarım.
+
+649
+00:30:42,820 --> 00:30:44,000
+Duruma göre düzenlerim.
+
+650
+00:30:44,220 --> 00:30:46,380
+Hadi bekliyorum. Siz yazmaya çalışın.
+
+651
+00:30:46,420 --> 00:30:50,279
+Bakın kosünüs hiperbolik x'in üstel ifadesi neydi?
+
+652
+00:30:50,380 --> 00:30:52,559
+e üzeri x artı e üzeri eksi x buyur.
+
+653
+00:30:52,600 --> 00:30:53,080
+2 idi.
+
+654
+00:30:53,840 --> 00:30:57,080
+Oradan x gördüğün yere lnx'i yaz.
+
+655
+00:30:58,080 --> 00:30:59,440
+Düzenle bakayım ne çıkacak.
+
+656
+00:31:20,884 --> 00:31:21,324
+Evet.
+
+657
+00:31:22,624 --> 00:31:23,524
+Dediğim gibi
+
+658
+00:31:23,524 --> 00:31:26,903
+kosin siper bölük x'in ifadesi şu arkadaşlar.
+
+659
+00:31:27,963 --> 00:31:28,344
+Bir de
+
+660
+00:31:28,344 --> 00:31:30,104
+neyle çarpmalıyım bunu 2 ile.
+
+661
+00:31:30,304 --> 00:31:31,943
+x gördüğüm yeri de ln x'i yazacağım.
+
+662
+00:31:32,024 --> 00:31:34,163
+Bakın ifadem bu. İkiler gitti.
+
+663
+00:31:34,784 --> 00:31:36,264
+Ben bunu üstel ifadelerde
+
+664
+00:31:36,264 --> 00:31:38,344
+biliyorum değil mi? E tabanında ln x
+
+665
+00:31:38,344 --> 00:31:40,144
+neye eşitti? x'i eşitti. Bakın
+
+666
+00:31:40,144 --> 00:31:41,683
+şuraya yazdım sağ tarafa.
+
+667
+00:31:42,264 --> 00:31:44,524
+E üzeri x ln x'de
+
+668
+00:31:44,524 --> 00:31:46,064
+şöyle düzenlersin.
+
+669
+00:31:46,124 --> 00:31:48,304
+Eksi biri şuraya alırsın ya da 1 bölük
+
+670
+00:31:48,304 --> 00:31:50,223
+x diye yazarsın. Yani sonuçta
+
+671
+00:31:50,223 --> 00:31:52,284
+uzatmadan bile bu ne olur?
+
+672
+00:31:52,364 --> 00:31:54,084
+x üzeri eksi biri eşittir dersin.
+
+673
+00:31:54,144 --> 00:31:56,243
+Ya da 1 bölü x'e eşittir deriz.
+
+674
+00:31:56,304 --> 00:31:58,284
+Bu özellikleri biliyoruz. O halde
+
+675
+00:31:58,284 --> 00:32:00,124
+bunları da yazarsam yani şu
+
+676
+00:32:00,124 --> 00:32:02,203
+e üzeri ln x'i eşit oldu.
+
+677
+00:32:03,044 --> 00:32:04,384
+Artı e üzeri
+
+678
+00:32:04,384 --> 00:32:06,784
+x ln x'i bir bölü x'i eşittir.
+
+679
+00:32:06,943 --> 00:32:08,304
+İşte sonuçta ifadesi
+
+680
+00:32:08,304 --> 00:32:10,144
+budur diyor. Tamam mı?
+
+681
+00:32:11,524 --> 00:32:12,163
+Evet.
+
+682
+00:32:12,723 --> 00:32:13,483
+Şimdi gelelim.
+
+683
+00:32:14,183 --> 00:32:15,943
+y eşittir. ln sinis
+
+684
+00:32:15,943 --> 00:32:18,223
+ser bölük x'in krevi
+
+685
+00:32:18,223 --> 00:32:19,844
+ne? Hadi bunun krevin alalım.
+
+686
+00:32:19,844 --> 00:32:21,423
+ln'in krevin'i biliyoruz değil mi?
+
+687
+00:32:21,703 --> 00:32:23,264
+İçine u dersem yani sinis
+
+688
+00:32:23,264 --> 00:32:24,804
+süperbolik x'i u dersem
+
+689
+00:32:24,804 --> 00:32:26,003
+u'nun krevi
+
+690
+00:32:26,003 --> 00:32:26,864
+bölü
+
+691
+00:32:26,864 --> 00:32:28,304
+u çeştinde
+
+692
+00:32:28,304 --> 00:32:29,024
+alırız.
+
+693
+00:32:29,903 --> 00:32:31,683
+Şimdi süperbolik x'in krevi neydi?
+
+694
+00:32:33,463 --> 00:32:33,903
+Kosünüs
+
+695
+00:32:33,903 --> 00:32:35,604
+süperbolik x'ti değil mi? Evet.
+
+696
+00:32:36,644 --> 00:32:37,864
+O zaman ne yazacağım?
+
+697
+00:32:38,084 --> 00:32:38,923
+Ne çıkacağız diye?
+
+698
+00:32:38,923 --> 00:32:41,324
+Evet.
+
+699
+00:32:41,503 --> 00:32:42,423
+Yazdığı arkadaşı
+
+700
+00:32:42,423 --> 00:32:43,463
+istihbar et arkadaş.
+
+701
+00:32:43,624 --> 00:32:44,163
+Kotanjan
+
+702
+00:32:44,163 --> 00:32:45,384
+süperbolik x diye
+
+703
+00:32:45,384 --> 00:32:46,084
+bulur.
+
+704
+00:32:46,264 --> 00:32:46,503
+Tamam.
+
+705
+00:32:46,703 --> 00:32:47,064
+Doğru.
+
+706
+00:32:47,844 --> 00:32:48,683
+Devam edelim.
+
+707
+00:32:50,223 --> 00:32:50,844
+y eşittir.
+
+708
+00:32:50,844 --> 00:32:51,124
+Sinis
+
+709
+00:32:51,124 --> 00:32:51,844
+süperbolik
+
+710
+00:32:51,844 --> 00:32:52,903
+parantezin içi
+
+711
+00:32:52,903 --> 00:32:53,503
+e üzeri
+
+712
+00:32:53,503 --> 00:32:53,824
+kosün
+
+713
+00:32:53,824 --> 00:32:54,983
+süperbolik x'in
+
+714
+00:32:54,983 --> 00:32:55,384
+krevi.
+
+715
+00:32:55,384 --> 00:32:55,784
+Bakın
+
+716
+00:32:55,784 --> 00:32:57,124
+bildiğimiz bütün
+
+717
+00:32:57,124 --> 00:32:58,324
+ifadeleri
+
+718
+00:32:58,324 --> 00:32:59,483
+yerine geldikçe de
+
+719
+00:32:59,483 --> 00:32:59,723
+bakın
+
+720
+00:32:59,723 --> 00:33:00,864
+hem üstel ifadenin
+
+721
+00:33:00,864 --> 00:33:01,304
+krevinin krevinin
+
+722
+00:33:01,304 --> 00:33:01,604
+krevinin
+
+723
+00:33:01,604 --> 00:33:02,024
+hem üstü
+
+724
+00:33:02,024 --> 00:33:02,624
+süperbolik
+
+725
+00:33:02,624 --> 00:33:03,483
+krevinin
+
+726
+00:33:03,483 --> 00:33:03,864
+biliyorum
+
+727
+00:33:03,864 --> 00:33:04,284
+öğrenci
+
+728
+00:33:04,284 --> 00:33:04,824
+bu şekilde
+
+729
+00:33:04,824 --> 00:33:06,483
+test etmiş oluyor
+
+730
+00:33:06,483 --> 00:33:06,844
+bize.
+
+731
+00:33:07,364 --> 00:33:08,304
+Gene ne diyoruz?
+
+732
+00:33:08,584 --> 00:33:08,824
+Sinis
+
+733
+00:33:08,824 --> 00:33:09,584
+süperbolik
+
+734
+00:33:09,584 --> 00:33:10,784
+x'in
+
+735
+00:33:10,784 --> 00:33:11,203
+u'nun
+
+736
+00:33:11,203 --> 00:33:11,864
+daha doğrusu
+
+737
+00:33:11,864 --> 00:33:12,183
+diyelim.
+
+738
+00:33:12,304 --> 00:33:12,683
+Türevini
+
+739
+00:33:12,683 --> 00:33:13,264
+biliyoruz.
+
+740
+00:33:13,364 --> 00:33:13,903
+O kosünüs
+
+741
+00:33:13,903 --> 00:33:14,524
+süperbolik
+
+742
+00:33:14,524 --> 00:33:14,884
+u'nun
+
+743
+00:33:14,884 --> 00:33:15,324
+çarpı
+
+744
+00:33:15,324 --> 00:33:15,564
+u'nun
+
+745
+00:33:15,564 --> 00:33:15,923
+türevi
+
+746
+00:33:15,923 --> 00:33:16,304
+diyeceğim.
+
+747
+00:33:16,604 --> 00:33:16,903
+O zaman
+
+748
+00:33:16,903 --> 00:33:17,503
+u dediğim
+
+749
+00:33:17,503 --> 00:33:17,943
+ifade
+
+750
+00:33:17,943 --> 00:33:18,463
+şu var
+
+751
+00:33:18,463 --> 00:33:18,784
+değil mi?
+
+752
+00:33:19,163 --> 00:33:19,584
+Bunun da
+
+753
+00:33:19,584 --> 00:33:20,443
+türevini alırken
+
+754
+00:33:20,443 --> 00:33:21,104
+yine üstel
+
+755
+00:33:21,104 --> 00:33:21,743
+bir ifade
+
+756
+00:33:21,743 --> 00:33:22,024
+var.
+
+757
+00:33:22,403 --> 00:33:22,983
+Hadi bekliyorum
+
+758
+00:33:22,983 --> 00:33:23,624
+türevini alın
+
+759
+00:33:23,624 --> 00:33:23,864
+bakın
+
+760
+00:33:23,864 --> 00:33:24,503
+bunun adıları
+
+761
+00:33:24,503 --> 00:33:25,064
+biraz daha
+
+762
+00:33:25,064 --> 00:33:25,584
+farklı.
+
+763
+00:33:27,243 --> 00:33:27,884
+Kosünüs'ün
+
+764
+00:33:27,884 --> 00:33:28,203
+türevi
+
+765
+00:33:28,203 --> 00:33:28,463
+neydi?
+
+766
+00:33:34,420 --> 00:33:38,360
+sinüs, süperbolik x'ti değil mi? İşaretçilmeye dikkat etmiyoruz.
+
+767
+00:33:43,476 --> 00:33:44,036
+Evet.
+
+768
+00:33:45,216 --> 00:33:47,836
+Dediğimiz gibi bunu U ile gösterirsek.
+
+769
+00:33:47,976 --> 00:33:49,456
+Sinüsüperbolik U'nun türevi.
+
+770
+00:33:49,596 --> 00:33:52,956
+U'nun türevi çarpı kosünüsüperbolik U diyeceğiz.
+
+771
+00:33:53,076 --> 00:33:54,776
+Bakın şu U'nun türevi olmuş.
+
+772
+00:33:55,236 --> 00:33:57,436
+Kosünüsüperbolik için aynen yazdık.
+
+773
+00:33:57,516 --> 00:33:59,336
+Şimdi U'nun türevini alırken ne yapıyorum?
+
+774
+00:33:59,736 --> 00:34:01,876
+Üstel bir ifadenin türevini alırken ne yapıyorum?
+
+775
+00:34:01,876 --> 00:34:02,936
+Üstün türevi.
+
+776
+00:34:03,336 --> 00:34:05,396
+Yani kosünüsüperbolik X'in türevisi.
+
+777
+00:34:05,576 --> 00:34:08,396
+Üstünüsüperbolik X çarpı kendisi.
+
+778
+00:34:08,936 --> 00:34:11,076
+Bu da zaten sinüsün türeviydi.
+
+779
+00:34:11,175 --> 00:34:13,115
+Kosünüsüperbolik diye yazdık.
+
+780
+00:34:13,115 --> 00:34:16,336
+Şuraya yazmışım zaten.
+
+781
+00:34:16,996 --> 00:34:17,796
+Peki.
+
+782
+00:34:18,596 --> 00:34:21,976
+Sekantiterbolik parantez ve enen kosünüsü.
+
+783
+00:34:22,155 --> 00:34:23,115
+Bu X normal X.
+
+784
+00:34:23,276 --> 00:34:24,876
+Kosünüsüperbolik yani arkadaşlar.
+
+785
+00:34:25,135 --> 00:34:27,476
+Kosünüsüperbolik'in türevini alın bakalım.
+
+786
+00:34:33,108 --> 00:34:39,268
+sekantum türevini şuradan hemen hatırlatalım size. Bakın, bakın neydi? Şuydu ifadesi.
+
+787
+00:34:39,347 --> 00:34:43,708
+x monum türevi sekant, tanjant diye hatırlamış olun.
+
+788
+00:34:50,483 --> 00:35:04,264
+sekant, yani L'Hospital, x'i uyla gösterirsem, x'i u'nun türevi, sekantik verbalik u, tanjantik verbalik u diye bulacaksınız.
+
+789
+00:35:05,663 --> 00:35:08,824
+En azından bir karalama yazın diyerek, buradan kontrol edelim.
+
+790
+00:35:20,788 --> 00:35:45,007
+40'ın ırtı diye düşünüyorum. Evet. Şimdi şuna u demiş olduk arkadaşlar. U'nun türevi neydi? Eksisi formülden gelen eksi. U'nun türevi de neydi? Bakın, ln cos x'in türevi nasıl alacağım? İçinin türevi yani cos'in türevi eksi sinüs x gelecek. Tamam mı? Bölü cos x. Bu bizim cos'den gelen eksiyiz. Olaylamışım. Şu içinin türevi.
+
+791
+00:35:45,007 --> 00:36:14,987
+çarpı neydi? Çarpı ne diyeceğim? Eksi formülden gelen u üstü demiştik ya. Eksi u üstü artı olur sonra. Sekant hiperbolik u, tanjant hiperbolik u. Yani şunları aynen yazdım bakın. Buradan da işaretim artı olur. Bu da tanjanttır. Şu şekilde. Zaten şuraya yazdım işte. Sekant hiperbolik u'nun türevi. Bu tamam mıyız arkadaşlar burada? Anlaşılıyor değil mi? Evet.
+
+792
+00:36:15,007 --> 00:36:24,668
+Evet. Devam edelim. Evet. Devam edelim. Evet. Devam edelim. Tanjant hiperbolik. Kök içine bir artı x'in karesi. Bunun türevi. Alın bakalım.
+
+793
+00:36:40,052 --> 00:36:52,731
+Yine, tancantik verbalik u diyeceksin değil mi? Kök ifaden, senin kök üstüne 1 artı 2x kareye u dersin, oradan türevini yazarsın. Evet, bekliyorum herkes, bulmaya çalışsın.
+
+794
+00:37:20,916 --> 00:37:22,155
+Evet sanırım aldınız.
+
+795
+00:37:22,516 --> 00:37:24,916
+Tanjantikler bölük U'nun türevini
+
+796
+00:37:24,916 --> 00:37:26,316
+yine şuraya yazdık.
+
+797
+00:37:26,456 --> 00:37:28,176
+U'nun türevi sekantikler bölük.
+
+798
+00:37:28,256 --> 00:37:29,196
+Bunu yazmışız.
+
+799
+00:37:29,936 --> 00:37:31,236
+Diğer ifadeleri de vardı.
+
+800
+00:37:31,376 --> 00:37:33,396
+1-tanjantikler bölük şeklinde.
+
+801
+00:37:34,076 --> 00:37:34,856
+Şöyle diyelim.
+
+802
+00:37:35,376 --> 00:37:37,996
+U dediğim ifade kök içinde 1 artı x karenin
+
+803
+00:37:37,996 --> 00:37:40,096
+türevi demek istiyorduk değil mi arkadaşlar?
+
+804
+00:37:40,096 --> 00:37:42,135
+Kök ifadenin türevini nasıl alırdık?
+
+805
+00:37:42,655 --> 00:37:43,836
+Kökün içinin türevinden
+
+806
+00:37:43,836 --> 00:37:45,836
+2x bölü 2 kök derdik.
+
+807
+00:37:45,916 --> 00:37:49,216
+İkiler gitti. x bölü kök içinde 1 artı x kare kaldı.
+
+808
+00:37:49,615 --> 00:37:50,676
+Yani U'nun türevi.
+
+809
+00:37:50,916 --> 00:37:53,556
+çarpı sekantikler bölük kare U.
+
+810
+00:37:53,816 --> 00:37:55,536
+Bu şekilde yazarız.
+
+811
+00:37:57,416 --> 00:37:58,256
+Evet.
+
+812
+00:37:59,756 --> 00:38:03,696
+İşte hiperbolik fonksiyonları arkadaşlar.
+
+813
+00:38:04,655 --> 00:38:07,476
+Bu şekilde bilmemiz gereken türevleri,
+
+814
+00:38:07,476 --> 00:38:09,676
+tanım kimeleri, görüntü kimeleri
+
+815
+00:38:09,676 --> 00:38:11,796
+işte daha da özdeşlikleri verdik.
+
+816
+00:38:12,196 --> 00:38:13,416
+Ben bir problem arkadaşlar.
+
+817
+00:38:14,115 --> 00:38:15,316
+Şimdi biraz da bunların
+
+818
+00:38:15,316 --> 00:38:17,736
+ters fonksiyonlarından bahsedelim.
+
+819
+00:38:17,896 --> 00:38:19,936
+Yani ters hiperbolik fonksiyonlar.
+
+820
+00:38:19,936 --> 00:38:22,196
+Şimdi baştan hatırlayalım.
+
+821
+00:38:22,356 --> 00:38:23,016
+Ne demiştik?
+
+822
+00:38:23,716 --> 00:38:24,696
+Sinü siperbolik,
+
+823
+00:38:25,155 --> 00:38:26,216
+daha doğrusu
+
+824
+00:38:26,216 --> 00:38:27,996
+kosün siperbolikle
+
+825
+00:38:27,996 --> 00:38:30,115
+sekantiklerbolik fonksiyonları
+
+826
+00:38:30,115 --> 00:38:30,816
+birebir değil.
+
+827
+00:38:30,976 --> 00:38:31,216
+Değil mi?
+
+828
+00:38:31,256 --> 00:38:32,396
+Onların tanım kimelerini
+
+829
+00:38:32,396 --> 00:38:34,076
+sıfır fonksiyonlar kısıtladığımızda
+
+830
+00:38:34,076 --> 00:38:35,196
+birebir olur demiştik.
+
+831
+00:38:35,276 --> 00:38:37,336
+Ama diğerleri birebir fonksiyonlu.
+
+832
+00:38:37,396 --> 00:38:38,216
+Buraya da yazdık.
+
+833
+00:38:38,316 --> 00:38:38,556
+Bakın.
+
+834
+00:38:38,556 --> 00:38:41,135
+İstediğiniz ters hiperbolik fonksiyonların
+
+835
+00:38:41,135 --> 00:38:43,236
+ters hiperbolik fonksiyonları
+
+836
+00:38:43,236 --> 00:38:43,615
+diyelim.
+
+837
+00:38:43,615 --> 00:38:45,056
+Şimdi hiperbolik,
+
+838
+00:38:45,236 --> 00:38:46,896
+x-tanjant hiperbolik,
+
+839
+00:38:47,316 --> 00:38:48,516
+potanjant hiperbolik,
+
+840
+00:38:48,596 --> 00:38:50,476
+yukosek hiperbolik fonksiyonları
+
+841
+00:38:50,476 --> 00:38:53,615
+tanım aralarında birebir fonksiyonlardır.
+
+842
+00:38:54,016 --> 00:38:55,615
+Dolayısıyla tersleri vardır.
+
+843
+00:38:56,056 --> 00:38:57,276
+Bunları da biz sırasıyla
+
+844
+00:38:57,276 --> 00:38:59,276
+dün de konuştuk arkadaşlar.
+
+845
+00:38:59,516 --> 00:39:01,696
+Trigonotif fonksiyonların tersini
+
+846
+00:39:01,696 --> 00:39:03,676
+artılarla gösterdim.
+
+847
+00:39:03,756 --> 00:39:04,716
+Karıştırılmak için.
+
+848
+00:39:04,936 --> 00:39:05,676
+Yani onu da
+
+849
+00:39:05,676 --> 00:39:07,756
+üzeri x-1 ile gösteririz.
+
+850
+00:39:08,056 --> 00:39:09,276
+Bunların üzerini x-1 ile
+
+851
+00:39:09,276 --> 00:39:11,836
+göstereceğim ki karışmasın diye.
+
+852
+00:39:11,836 --> 00:39:14,296
+Yani işte sinif hiperbolik x'in
+
+853
+00:39:14,296 --> 00:39:15,416
+ters fonksiyonuna
+
+854
+00:39:15,416 --> 00:39:17,276
+şöyle yazıyoruz.
+
+855
+00:39:17,416 --> 00:39:19,016
+Sinif hiperbolik üzeri x-1
+
+856
+00:39:19,016 --> 00:39:20,236
+yani ters hiperbolik
+
+857
+00:39:20,236 --> 00:39:21,436
+sinif fonksiyonu diye
+
+858
+00:39:21,436 --> 00:39:22,356
+yorumlayacağız.
+
+859
+00:39:22,556 --> 00:39:23,976
+İşte bu şekilde
+
+860
+00:39:23,976 --> 00:39:26,016
+gösterilir diyeceğiz.
+
+861
+00:39:26,476 --> 00:39:26,956
+Tersleri.
+
+862
+00:39:27,536 --> 00:39:28,316
+Yani şöyle
+
+863
+00:39:28,316 --> 00:39:29,836
+y eşittir tersi
+
+864
+00:39:29,836 --> 00:39:30,276
+x-1
+
+865
+00:39:30,276 --> 00:39:31,176
+x-2
+
+866
+00:39:31,176 --> 00:39:32,756
+yine aynı şekilde
+
+867
+00:39:32,756 --> 00:39:33,716
+buradan x'i
+
+868
+00:39:33,716 --> 00:39:34,836
+yalnız bırakırsak
+
+869
+00:39:34,836 --> 00:39:35,655
+x eşittir
+
+870
+00:39:35,655 --> 00:39:36,655
+sinif hiperbolik
+
+871
+00:39:36,655 --> 00:39:37,276
+y'dir.
+
+872
+00:39:37,696 --> 00:39:38,196
+y'de
+
+873
+00:39:38,196 --> 00:39:39,816
+tüm real değerler
+
+874
+00:39:39,816 --> 00:39:40,096
+için
+
+875
+00:39:40,096 --> 00:39:40,716
+gidiyoruz.
+
+876
+00:39:41,036 --> 00:39:41,336
+Yine
+
+877
+00:39:41,336 --> 00:39:43,576
+ters tanjant hiperbolik
+
+878
+00:39:43,576 --> 00:39:44,196
+x'dir.
+
+879
+00:39:44,676 --> 00:39:46,236
+x'de tanjant hiperbolik
+
+880
+00:39:46,236 --> 00:39:46,635
+y'de
+
+881
+00:39:46,635 --> 00:39:47,356
+yani çekilin
+
+882
+00:39:47,356 --> 00:39:47,596
+içi
+
+883
+00:39:47,596 --> 00:39:48,655
+buradan buraya
+
+884
+00:39:48,655 --> 00:39:49,276
+geçiş
+
+885
+00:39:49,276 --> 00:39:50,155
+mümkün.
+
+886
+00:39:50,956 --> 00:39:51,536
+Ters
+
+887
+00:39:51,536 --> 00:39:53,056
+cotanjant hiperbolik
+
+888
+00:39:53,056 --> 00:39:53,836
+x diyoruz.
+
+889
+00:39:53,916 --> 00:39:54,776
+O koken bunu da
+
+890
+00:39:54,776 --> 00:39:55,096
+dene.
+
+891
+00:39:55,516 --> 00:39:56,135
+Ne yapıyoruz?
+
+892
+00:39:56,296 --> 00:39:56,576
+Yine
+
+893
+00:39:56,576 --> 00:39:57,396
+x eşittir
+
+894
+00:39:57,396 --> 00:39:58,796
+cotanjant hiperbolik
+
+895
+00:39:58,796 --> 00:39:59,316
+y'dir.
+
+896
+00:39:59,736 --> 00:40:00,155
+Bu da
+
+897
+00:40:00,155 --> 00:40:01,376
+sıfırdan
+
+898
+00:40:01,376 --> 00:40:01,876
+farklı.
+
+899
+00:40:02,376 --> 00:40:02,936
+Her real
+
+900
+00:40:02,936 --> 00:40:03,936
+değer için
+
+901
+00:40:03,936 --> 00:40:04,596
+dedik.
+
+902
+00:40:04,596 --> 00:40:05,596
+cotanjant hiperbolik
+
+903
+00:40:05,596 --> 00:40:06,596
+hiperbolik
+
+904
+00:40:06,596 --> 00:40:06,976
+duyduk.
+
+905
+00:40:08,356 --> 00:40:08,796
+Zaten
+
+906
+00:40:08,796 --> 00:40:09,516
+fonksiyonun
+
+907
+00:40:09,516 --> 00:40:10,556
+tanım hiperbesi
+
+908
+00:40:10,556 --> 00:40:11,416
+tersinin
+
+909
+00:40:11,416 --> 00:40:12,376
+ne oluyordu?
+
+910
+00:40:12,476 --> 00:40:13,236
+Değer hiperbesi
+
+911
+00:40:13,236 --> 00:40:13,696
+oluyordu.
+
+912
+00:40:14,016 --> 00:40:14,356
+Onu da
+
+913
+00:40:14,356 --> 00:40:14,956
+biliyoruz.
+
+914
+00:40:15,456 --> 00:40:16,176
+İşte ters
+
+915
+00:40:16,176 --> 00:40:17,596
+kosanjant hiperbolik
+
+916
+00:40:17,596 --> 00:40:18,756
+x'de
+
+917
+00:40:18,756 --> 00:40:19,036
+yine
+
+918
+00:40:19,036 --> 00:40:19,516
+x'i
+
+919
+00:40:19,516 --> 00:41:12,516
+ters
+
+920
+00:41:07,311 --> 00:41:13,811
+İşte ters kibarik fonksiyonları da bu şekilde gösteriyoruz.
+
+921
+00:41:14,011 --> 00:41:18,051
+Diğerini de artılarla karıştırılmak için ben bunların üzerine ekli bir diye aldım.
+
+922
+00:41:18,431 --> 00:41:24,092
+Ama tekrar söylüyorum bunların başka gösterilmiş sembolü argüman diye yazarlar arkadaşlar.
+
+923
+00:41:24,271 --> 00:41:30,692
+Kitaplarda görürseniz argüman potistarbolik bitkiyi de yazabilirler.
+
+924
+00:41:31,132 --> 00:41:34,311
+Ama bu yazılış daha iyi anlaşılır diye bunu kullandık.
+
+925
+00:41:34,311 --> 00:41:36,311
+Ters kibarik fonksiyonları da bu şekilde gösteriyoruz.
+
+926
+00:41:36,311 --> 00:41:41,572
+Evet şimdi bazı özdeşlikleri görelim arkadaşlar.
+
+927
+00:41:42,551 --> 00:41:53,431
+Şöyle ters tek antiperbolik x'in ters kotiniz hiperbolik 1 bölü x'e eşit olduğunu bakın şöyle görebiliriz.
+
+928
+00:41:53,731 --> 00:41:57,731
+Parantez üstüne yazıyorum hani kimse size bunu ispatlayın demez.
+
+929
+00:41:57,851 --> 00:42:02,331
+Hani bunu buraya nasıl yazdık diye belki merak edenler olursa şöyle dediler.
+
+930
+00:42:02,331 --> 00:42:10,311
+Şimdi ters tek antiperbolik x'i ile gösterirsem buradan x tek antiperbolik y olmaz mı?
+
+931
+00:42:11,592 --> 00:42:16,931
+Buradan tek antiperbolik y'nin de bir bölü kotiniz hiperbolik y olduğunu biliyorum.
+
+932
+00:42:17,031 --> 00:42:21,632
+Buradan kotiniz hiperbolik y'i çekersem bu da bir bölü 2 eşit değil midir?
+
+933
+00:42:21,632 --> 00:42:27,451
+Her tarafın pardon buradan da y'yi nasıl bulurum?
+
+934
+00:42:27,991 --> 00:42:32,072
+Ters kotiniz hiperbolik ifadesini alırsam y eşittir.
+
+935
+00:42:32,791 --> 00:42:37,572
+İşte ters kotiniz hiperbolik 1 bölü 2 diye yorumlarım.
+
+936
+00:42:37,572 --> 00:42:46,291
+Yani sonuçta ters tek antiperbolik x'in ters kotiniz hiperbolik 1 bölü 2 eşit olduğu bir şekilde görünmüş olur.
+
+937
+00:42:47,092 --> 00:42:58,511
+Yine bakın benzer şekilde ters kotiniz hiperbolik x'in de ters kotiniz hiperbolik 1 bölü 2 eşit olduğunu görelim şöyle.
+
+938
+00:42:58,511 --> 00:43:03,791
+Bakın buradan y dersem buna x ne olur?
+
+939
+00:43:04,572 --> 00:43:06,851
+Kosekan antiperbolik y'ye yazarım.
+
+940
+00:43:07,031 --> 00:43:10,771
+Bunun da bir bölü sinüs hiperbolik y'ye eşit olduğunu biliyorum.
+
+941
+00:43:11,132 --> 00:43:15,192
+Buradan sinüs hiperbolik y'yi çekersem bir bölü x olur.
+
+942
+00:43:15,592 --> 00:43:16,771
+Buradan y'de ne olur?
+
+943
+00:43:17,112 --> 00:43:21,851
+Ters sinüs hiperbolik 1 bölü x eşit olduğunu yazabilirim.
+
+944
+00:43:21,851 --> 00:43:24,692
+Evet.
+
+945
+00:43:26,451 --> 00:43:27,051
+Gelelim.
+
+946
+00:43:29,311 --> 00:43:37,531
+Ters kotanjan antiperbolik x'in ters tanjan antiperbolik 1 bölü x'e eşit olduğunu görelim.
+
+947
+00:43:39,311 --> 00:43:41,211
+Onu da gene benzer şekilde bakın.
+
+948
+00:43:41,331 --> 00:43:42,471
+Şöyle göstereyim.
+
+949
+00:43:42,711 --> 00:43:44,771
+Ters kotanjan antiperbolik x'i.
+
+950
+00:43:45,371 --> 00:43:46,371
+Buradan x ne olur?
+
+951
+00:43:46,771 --> 00:43:48,491
+Kotanjan antiperbolik y'ye olur.
+
+952
+00:43:48,491 --> 00:43:53,612
+Kotanjan antiperbolik y'nin de bir bölü tanjan antiperbolik y'nin eşit olduğunu biliyorum.
+
+953
+00:43:54,172 --> 00:43:57,572
+Buradan tanjan antiperbolik y'yi çekersem ne olur?
+
+954
+00:43:57,692 --> 00:43:59,551
+Bakın bir bölü x'e yazarım.
+
+955
+00:43:59,931 --> 00:44:01,072
+Buradan da y ne olur?
+
+956
+00:44:01,612 --> 00:44:04,011
+Ters tanjan antiperbolik 1 bölü x olur.
+
+957
+00:44:04,271 --> 00:44:08,551
+Yine de getirip yerine yazdığım eşitlik bu şekildedir.
+
+958
+00:44:08,951 --> 00:44:09,391
+Diyeceğim.
+
+959
+00:44:11,132 --> 00:44:11,811
+Evet.
+
+960
+00:44:11,811 --> 00:44:19,072
+Ters sekant x'in sekantının x olduğunu biliriz.
+
+961
+00:44:19,291 --> 00:44:21,891
+İkin ifadeleri için onu da yazabiliriz.
+
+962
+00:44:21,971 --> 00:44:22,971
+Ters superbolik.
+
+963
+00:44:24,811 --> 00:44:26,951
+Şurada haşır unutmuşum arkadaşlar.
+
+964
+00:44:27,311 --> 00:44:30,011
+Ters sekant superbolik.
+
+965
+00:44:30,011 --> 00:44:31,652
+Sekantı nedir?
+
+966
+00:44:32,031 --> 00:44:32,652
+X'dir.
+
+967
+00:44:39,315 --> 00:44:48,515
+Gelelim sonra ters kosekan hiperbolik bir bölü x'in sekantı neye eşittir?
+
+968
+00:44:49,195 --> 00:44:51,815
+Bakın onu da şöyle görmeye çalışalım.
+
+969
+00:44:52,915 --> 00:44:59,735
+Şu ifadeyi bir u gibi düşünürsen sekant hiperbolik u'nun bir bölü kosünüs hiperbolik u diye yazmaz mısın?
+
+970
+00:44:59,735 --> 00:45:08,015
+Yani onu da yerine yazdığımda ters kosekan hiperbolik kosünüsünün de bir bölü x olduğunu şuradan görebilirim.
+
+971
+00:45:08,015 --> 00:45:09,695
+Tamam mı?
+
+972
+00:45:10,735 --> 00:45:12,875
+Bunları bilgi olarak şöyle veriyorum.
+
+973
+00:45:14,235 --> 00:45:15,735
+Buraya kadar var mı?
+
+974
+00:45:15,855 --> 00:45:18,995
+Biraz tabii değişiklikler belki lisede hiç görmediniz.
+
+975
+00:45:19,915 --> 00:45:24,415
+Ama dediğim gibi tanım kümelerini bilelim, görüntü kümelerini bilelim.
+
+976
+00:45:24,415 --> 00:45:28,295
+Ve bazı özdeşlikleri de zaten şu da parantez içlerinde yazdım.
+
+977
+00:45:28,655 --> 00:45:30,335
+Çok da zor değil arkadaşlar.
+
+978
+00:45:31,935 --> 00:45:32,155
+Evet.
+
+979
+00:45:33,135 --> 00:45:36,715
+Şimdi bir de bunların logotimik gösterişleri var.
+
+980
+00:45:36,715 --> 00:45:39,755
+ters hiperbolik fonksiyonların logotimik ifadeleri var.
+
+981
+00:45:40,235 --> 00:45:41,895
+Onların da bir tanesini göstereceğim.
+
+982
+00:45:42,015 --> 00:45:43,175
+Diğerlerini de oradan yazacağım.
+
+983
+00:45:43,275 --> 00:45:44,115
+Çünkü çok uzun.
+
+984
+00:45:44,315 --> 00:45:47,135
+Bize gerekli olan kısımları veriyorum arkadaşlar.
+
+985
+00:45:47,675 --> 00:45:50,715
+Onun için hani hoca oradan oraya atıyor gibi gelebilir.
+
+986
+00:45:51,715 --> 00:45:54,395
+Ama çok da içine girersem iyice bıkarsınız.
+
+987
+00:45:54,515 --> 00:45:56,096
+Yani size hiç de çok gerekli değil.
+
+988
+00:45:56,755 --> 00:45:58,415
+Gerekli olacak kısımları ben veriyorum.
+
+989
+00:45:58,415 --> 00:46:05,655
+İşte diyelim ki ters hiperbolik x'in logotimik ifadesi lm parantez gibi x artı,
+
+990
+00:46:05,975 --> 00:46:08,096
+çeşit gibi x kare artı 1.
+
+991
+00:46:08,495 --> 00:46:11,935
+Şimdi bunun gerçekten buna eşit olduğunu bir tanesi için görmeye çalışalım.
+
+992
+00:46:12,495 --> 00:46:13,535
+Ne diyorum bakın.
+
+993
+00:46:13,975 --> 00:46:14,795
+Y eşittir.
+
+994
+00:46:15,295 --> 00:46:18,395
+Ters hiperbolik x ise buradan x ne olur?
+
+995
+00:46:18,515 --> 00:46:20,755
+Simit hiperbolik y diye yazmaz mıyız?
+
+996
+00:46:21,195 --> 00:46:23,855
+Simit hiperbolik y'nin de ifadesi nedir?
+
+997
+00:46:23,855 --> 00:46:28,175
+E üzeri y eksi, e üzeri eksi y bölü 2'dir.
+
+998
+00:46:29,576 --> 00:46:31,815
+Amacımız şunu ispatlamak.
+
+999
+00:46:31,955 --> 00:46:32,135
+Tamam mı?
+
+1000
+00:46:32,155 --> 00:46:33,735
+Bunun bu eşit olduğunu ispatlamak.
+
+1001
+00:46:34,175 --> 00:46:36,695
+O zaman bakın şuradan şu geçiş anlaşıldı sanırım.
+
+1002
+00:46:37,275 --> 00:46:38,935
+Buradan x'in hiperbolik y'dir.
+
+1003
+00:46:39,015 --> 00:46:40,335
+Bunun da hiperbolik y'dir.
+
+1004
+00:46:40,835 --> 00:46:41,895
+Budur diyeceğiz.
+
+1005
+00:46:42,295 --> 00:46:44,255
+Buradan işler dışlar çarpımından,
+
+1006
+00:46:44,795 --> 00:46:46,875
+yani şuradan 2 eşittir.
+
+1007
+00:46:47,355 --> 00:46:49,855
+E üzeri y eksi, e üzeri eksi y'dir.
+
+1008
+00:46:50,135 --> 00:46:53,695
+Bu her tarafını e üzeri y ile çarparsam,
+
+1009
+00:46:53,855 --> 00:46:57,935
+bakın 2x e üzeri y eşittir.
+
+1010
+00:46:57,995 --> 00:47:00,995
+E üzeri 2'ye eksi 1 olur değil mi?
+
+1011
+00:47:01,515 --> 00:47:03,015
+Buradan şöyle yazarım.
+
+1012
+00:47:03,135 --> 00:47:06,435
+E üzeri 2'ye eksi 2'ye eksi 1.
+
+1013
+00:47:06,695 --> 00:47:08,755
+Bu aslında ikinci dereceden bir koninomdur.
+
+1014
+00:47:08,835 --> 00:47:10,235
+Ya da göremiyorsak ne deriz?
+
+1015
+00:47:10,655 --> 00:47:13,255
+E üzeri yerine t yazmayalım bakın.
+
+1016
+00:47:13,975 --> 00:47:18,395
+t kare eksi 2x ise eksi 1 eşittir sıfır.
+
+1017
+00:47:18,395 --> 00:47:20,655
+Bu nedir? İkinci dereceden bir koninomdur.
+
+1018
+00:47:20,755 --> 00:47:22,596
+Bunun kökünü ben nasıl bulundum?
+
+1019
+00:47:22,596 --> 00:47:27,355
+eksi ve artı eksi 4 içinde delta bölü 2 diye yazardım.
+
+1020
+00:47:27,815 --> 00:47:30,875
+Eksi ve dediğim ifade şu a, burası 1, 1,
+
+1021
+00:47:31,675 --> 00:47:34,235
+b ise eksi 2, c ise eksi 1'dir.
+
+1022
+00:47:34,435 --> 00:47:36,415
+O zaman eksi ve ise 2'ye eksi 4,
+
+1023
+00:47:36,415 --> 00:47:39,875
+artı eksi 4 içinde b kare, 4 x kare,
+
+1024
+00:47:40,775 --> 00:47:43,375
+eksi 4 ac, artı 4.
+
+1025
+00:47:43,675 --> 00:47:44,175
+Tamam mı?
+
+1026
+00:47:44,235 --> 00:47:44,735
+Bölü 2.
+
+1027
+00:47:44,735 --> 00:47:47,515
+2 a dediğimiz ifade bu.
+
+1028
+00:47:47,855 --> 00:47:51,795
+Şimdi buradan kökün için 4 parantezini alırsan 2 diye dışarı çıkar.
+
+1029
+00:47:51,895 --> 00:47:52,955
+İkiler sadeleşir.
+
+1030
+00:47:53,076 --> 00:47:54,155
+İfademiz şu kalır.
+
+1031
+00:47:55,635 --> 00:47:56,576
+Tamam mı arkadaşlar?
+
+1032
+00:47:56,576 --> 00:47:59,335
+Burada da kökün içinin,
+
+1033
+00:48:00,855 --> 00:48:01,895
+yani bu ifadenin,
+
+1034
+00:48:01,895 --> 00:48:03,755
+eksi ifade pozitif olduğu için,
+
+1035
+00:48:03,855 --> 00:48:06,315
+pozitif olabilmesi için ne diyorum ben?
+
+1036
+00:48:06,655 --> 00:48:09,315
+Burada x kare artı 1 de x'den değil.
+
+1037
+00:48:09,895 --> 00:48:11,735
+Burada o halde ne diyeceğim?
+
+1038
+00:48:11,975 --> 00:48:13,975
+Artılı kökün ihtiyacım var.
+
+1039
+00:48:14,076 --> 00:48:15,715
+Yani negatif olmaması gerekir.
+
+1040
+00:48:15,715 --> 00:48:19,315
+Çünkü evleniyenin pozitif olmasını istiyorum.
+
+1041
+00:48:19,735 --> 00:48:21,155
+O halde burada ne yapıyorum?
+
+1042
+00:48:21,684 --> 00:48:26,403
+Sadece x artı, tek şimdi x'e artı bir benim işimi görecek diyorum.
+
+1043
+00:48:26,544 --> 00:48:27,104
+Onu alıyorum.
+
+1044
+00:48:27,344 --> 00:48:29,084
+Yani t'ye de ne demiştim?
+
+1045
+00:48:29,164 --> 00:48:29,724
+E üzeri y.
+
+1046
+00:48:29,964 --> 00:48:32,844
+Yani sonuçta şu ifadeyi düzenledim.
+
+1047
+00:48:33,224 --> 00:48:35,824
+Tekin bir tanesi benim işime yaradığı için onu alıyorum.
+
+1048
+00:48:35,964 --> 00:48:40,144
+Yani e üzeri y eşittir x artı, tek şimdi x artı bir.
+
+1049
+00:48:40,264 --> 00:48:41,724
+Buradan y'yi çekebilirim değil mi?
+
+1050
+00:48:41,784 --> 00:48:44,684
+Her tarafın ellerini alırsam y eşittir elen.
+
+1051
+00:48:45,144 --> 00:48:47,644
+x artı tek şimdi x artı bir.
+
+1052
+00:48:47,764 --> 00:48:49,084
+İşte y'de ne gidiydim?
+
+1053
+00:48:49,084 --> 00:48:50,864
+Tersi bir süperbolik x'ti.
+
+1054
+00:48:50,864 --> 00:48:54,664
+İşte gerçekten bunu bu şekilde göstermiş olduk.
+
+1055
+00:48:54,764 --> 00:48:57,944
+Yani logaritmik ifadeleri de buradan geliyor arkadaşlar.
+
+1056
+00:48:59,504 --> 00:48:59,944
+Oldu mu?
+
+1057
+00:49:01,244 --> 00:49:02,564
+Sanırım anlaşılmıştır.
+
+1058
+00:49:03,124 --> 00:49:03,364
+Evet.
+
+1059
+00:49:03,844 --> 00:49:05,844
+Şimdi diğerlerini de oradan yazacağım artık.
+
+1060
+00:49:07,944 --> 00:49:09,844
+Yani günümüzü yazdık.
+
+1061
+00:49:10,423 --> 00:49:13,504
+Bunun tanım aralığı x artı diyoruz.
+
+1062
+00:49:14,304 --> 00:49:17,884
+Tersi bir süperbolik x'in logaritmik ifadesi de.
+
+1063
+00:49:17,884 --> 00:49:22,064
+Elen x artı kökücünde x kare ekstirirdir arkadaşlar.
+
+1064
+00:49:22,344 --> 00:49:24,464
+x diye birleşik bir olmak koşuluyla.
+
+1065
+00:49:25,144 --> 00:49:29,184
+Tersi tanci antiterbolik x'in logaritmik ifadesi.
+
+1066
+00:49:29,544 --> 00:49:30,764
+Bir bölü 2 elen.
+
+1067
+00:49:31,204 --> 00:49:32,784
+Bir artı x bölü bir eksi.
+
+1068
+00:49:33,184 --> 00:49:33,584
+İçidir.
+
+1069
+00:49:33,684 --> 00:49:37,304
+Mıslah değer x küçük bir olmak koşuluyla diyoruz.
+
+1070
+00:49:37,304 --> 00:49:45,024
+Dördüncüsü tersi kotancantiterbolik x'in logaritmik ifadesi bir bölü 2 elen.
+
+1071
+00:49:45,524 --> 00:49:47,704
+x artı bir bölü x kesilir.
+
+1072
+00:49:48,164 --> 00:50:37,304
+İçidir.
+
+1073
+01:01:08,275 --> 01:01:12,835
+Evet arkadaşlar, kaldığımız yerden devam edelim.
+
+1074
+01:01:25,619 --> 01:01:26,739
+Geldik mi arkadaşlar?
+
+1075
+01:01:29,000 --> 01:01:34,199
+Bir arkadaşımız 30 dakika bile yetmez bence. Ara için mi istiyor 30 dakikayı? Ne yapacaksın o kadar?
+
+1076
+01:01:36,420 --> 01:01:37,519
+Çok mu sıkıcı geldi?
+
+1077
+01:01:38,799 --> 01:01:39,980
+[öğrenci] arkadaşım.
+
+1078
+01:01:44,884 --> 01:01:47,364
+Evet, devam edelim.
+
+1079
+01:01:47,804 --> 01:01:50,543
+Ters hiperbolik fonksiyonların türevi diyoruz arkadaşlar.
+
+1080
+01:01:51,603 --> 01:01:55,963
+Bunu biz istersek logaritmik ifadelerini gösterdik.
+
+1081
+01:01:56,043 --> 01:01:57,463
+Oradan da türevi alabiliriz.
+
+1082
+01:01:57,543 --> 01:02:00,784
+Ya da ters fonksiyon türevini almasını biliyoruz.
+
+1083
+01:02:01,103 --> 01:02:03,543
+O şekilde de alabiliriz arkadaşlar.
+
+1084
+01:02:06,704 --> 01:02:08,784
+Evet, şimdi gelelim.
+
+1085
+01:02:09,344 --> 01:02:13,144
+Birinci yol olarak logaritmik ifadesinden türevi alalım.
+
+1086
+01:02:13,144 --> 01:02:15,083
+Çünkü bana neyi soruyor?
+
+1087
+01:02:15,164 --> 01:02:16,903
+Ters hiperbolik x'in türevi.
+
+1088
+01:02:17,384 --> 01:02:18,204
+Bu neye eşittir?
+
+1089
+01:02:18,304 --> 01:02:20,784
+Elen x artı kök içinde x kare artı 1'e eşitti.
+
+1090
+01:02:21,144 --> 01:02:22,684
+Bunun elenin türevini biliyorum.
+
+1091
+01:02:22,824 --> 01:02:26,103
+İçini u ile gösterirsem u'nun türevi bölü u şeklinde yazacağım.
+
+1092
+01:02:26,443 --> 01:02:29,463
+Yani şu parantezin içinin türevini alıyorum bakın.
+
+1093
+01:02:29,824 --> 01:02:30,264
+Ne diyorum?
+
+1094
+01:02:30,983 --> 01:02:32,204
+1 x'in türevi.
+
+1095
+01:02:32,364 --> 01:02:34,423
+Kök içindeki ifadenin türevi ne olur?
+
+1096
+01:02:34,563 --> 01:02:35,403
+2 x bölü.
+
+1097
+01:02:35,463 --> 01:02:35,963
+2 kök.
+
+1098
+01:02:36,023 --> 01:02:36,704
+2'ler gider.
+
+1099
+01:02:36,943 --> 01:02:39,884
+x bölü kök içinde x kare artı 1 bölü.
+
+1100
+01:02:40,384 --> 01:02:42,304
+x artı kök içinde x kare artı 1.
+
+1101
+01:02:42,304 --> 01:02:44,483
+Bunun faydasını eşitlersek arkadaşlar.
+
+1102
+01:02:45,184 --> 01:02:46,943
+Şöyle sadeleşir.
+
+1103
+01:02:47,284 --> 01:02:50,003
+Sonuçta 1 bölü kök içinde x kare artı 1 kalır.
+
+1104
+01:02:50,123 --> 01:02:53,344
+Yani ters hiperbolik x'in türevi buna eşittir.
+
+1105
+01:02:53,724 --> 01:02:57,724
+İkinci yol ise ters fonksiyon türevini kullanarak.
+
+1106
+01:02:57,963 --> 01:03:00,884
+Yani ters türetme kapalı.
+
+1107
+01:03:00,963 --> 01:03:01,704
+Onları biliyoruz.
+
+1108
+01:03:01,724 --> 01:03:03,224
+Dünden de çok bahsetmiştik.
+
+1109
+01:03:03,364 --> 01:03:04,344
+Yani y eşittir.
+
+1110
+01:03:04,764 --> 01:03:06,384
+Ters hiperbolik x ise.
+
+1111
+01:03:06,764 --> 01:03:07,603
+x burada nedir?
+
+1112
+01:03:07,704 --> 01:03:09,523
+Hiperbolik y eşittir.
+
+1113
+01:03:09,523 --> 01:03:11,603
+Buradan türevini alırsam bakın.
+
+1114
+01:03:12,224 --> 01:03:12,804
+Bu nedir?
+
+1115
+01:03:13,003 --> 01:03:13,324
+1.
+
+1116
+01:03:13,684 --> 01:03:14,664
+Değil mi x'in türevi?
+
+1117
+01:03:15,304 --> 01:03:16,684
+Sinüsün türevi de neydi?
+
+1118
+01:03:16,784 --> 01:03:18,103
+Sinüs siperbolik y idi.
+
+1119
+01:03:18,664 --> 01:03:21,563
+Y'de fonksiyon ise y'nin x'e göre türevidir diyeceğim.
+
+1120
+01:03:21,704 --> 01:03:24,244
+Y'nin x'e göre türevini çekersem bu ne olur?
+
+1121
+01:03:24,704 --> 01:03:26,903
+1 bölü kosin siperbolik y olur.
+
+1122
+01:03:27,623 --> 01:03:30,284
+Şimdi kosin siperbolik y yerine de ne yazarım?
+
+1123
+01:03:30,923 --> 01:03:33,443
+Karelerinin farkının 1 olduğunu biliyorum arkadaşlar.
+
+1124
+01:03:34,403 --> 01:03:34,744
+Değil mi?
+
+1125
+01:03:34,744 --> 01:03:39,824
+Buradan kosin siperbolik y'yi çekersem 1 artı sinüs siperbolik kare y'dir.
+
+1126
+01:03:40,304 --> 01:03:40,864
+Bu da nedir?
+
+1127
+01:03:40,943 --> 01:03:45,503
+Kök içinde 1 artı sinüs siperbolik kare y'yi yazarım.
+
+1128
+01:03:45,884 --> 01:03:49,083
+O halde kosin siperbolik y yerine getirip bunu yazarsam.
+
+1129
+01:03:49,983 --> 01:03:51,903
+Buradan şimdi y'ye gördüğüm yere ne yapacağım?
+
+1130
+01:03:52,043 --> 01:03:53,943
+Fonksiyonun tersini yazacağım.
+
+1131
+01:03:54,063 --> 01:03:56,744
+Yani fonksiyonun tersinin türevini biz nasıl buluyorduk?
+
+1132
+01:03:57,644 --> 01:04:00,324
+1 bölü fonksiyonun türevinde tersini yerine yazmak.
+
+1133
+01:04:00,324 --> 01:04:02,023
+O mantıkla ne yapıyorum?
+
+1134
+01:04:02,123 --> 01:04:03,403
+Bunu yerine yazıyorum.
+
+1135
+01:04:03,483 --> 01:04:06,204
+Y'ye gördüğüm yere tersin siperbolik x'i yazıyorum.
+
+1136
+01:04:06,384 --> 01:04:06,844
+Tamam mı?
+
+1137
+01:04:07,284 --> 01:04:08,503
+Yazdım bakın şurada.
+
+1138
+01:04:09,764 --> 01:04:11,164
+Şu özdeşliği de biliyoruz.
+
+1139
+01:04:11,224 --> 01:04:15,003
+Tersin siperbolik x'in siperbolik x'i eşittir.
+
+1140
+01:04:15,264 --> 01:04:16,204
+O halde ne yapacağım?
+
+1141
+01:04:16,384 --> 01:04:18,983
+Bunun yerine de x'in karesi gelecek.
+
+1142
+01:04:19,744 --> 01:04:22,724
+O halde sonuçta yine aynı türevi bulmuş olduk.
+
+1143
+01:04:22,824 --> 01:04:25,403
+1 bölü kök içinde 1 artı x'in karesidir.
+
+1144
+01:04:25,403 --> 01:04:27,324
+Evet.
+
+1145
+01:04:29,324 --> 01:04:30,644
+Şimdi gelelim.
+
+1146
+01:04:36,916 --> 01:04:40,615
+Birinci yolum arkadaşlar logaritmadan giderek mi?
+
+1147
+01:04:41,516 --> 01:04:47,836
+Bakın dedik ki ters ünlü siperbolik x'in logaritmik ifadesini yukarıda demin hatta ispatladık.
+
+1148
+01:04:48,016 --> 01:04:49,416
+Buna eşit olduğunu biliyorum.
+
+1149
+01:04:49,696 --> 01:04:54,376
+O zaman bunun türevini alarak ters ünlü siperbolik türevini bulmuş olacağım.
+
+1150
+01:04:54,536 --> 01:04:55,796
+L'nin türevini biliyorum.
+
+1151
+01:04:56,176 --> 01:04:59,496
+Şu içini uyuyla gösterirsem içinin türevini nasıl alacağım?
+
+1152
+01:04:59,916 --> 01:05:00,596
+1 değil mi?
+
+1153
+01:05:01,516 --> 01:05:03,816
+Artı kökün türevi nedir?
+
+1154
+01:05:03,816 --> 01:05:07,816
+2x bölü 2 tane kök içinde x kare artı 1 2'ler gitti.
+
+1155
+01:05:07,936 --> 01:05:09,416
+Şu ifadem bölü u.
+
+1156
+01:05:09,736 --> 01:05:10,556
+Aynen yazdım.
+
+1157
+01:05:10,635 --> 01:05:11,796
+E payda eşit de şurada.
+
+1158
+01:05:12,456 --> 01:05:18,316
+Kök içinde x kare artı 1 artı x bölü kök x kare artı 1 şu ifadem gelir.
+
+1159
+01:05:18,396 --> 01:05:24,296
+E bunlar da birbirini götürürse bir bölü kök içinde x kare artı 1 diye bulurum.
+
+1160
+01:05:24,716 --> 01:05:28,076
+Benzer şekilde dedik ki ters türevden giderek bulalım.
+
+1161
+01:05:28,076 --> 01:05:28,856
+Tamam mı?
+
+1162
+01:05:28,856 --> 01:05:37,196
+Yani sonuçta ters ünlü siperbolik x'in türevinin bir bölü kök içinde 1 artı x kare olduğunu görmüş olduk.
+
+1163
+01:05:37,436 --> 01:05:47,256
+Bunu genellemek istersek u bir fonksiyon olmak üzere ters ünlü siperbolik u'nun türevi de u üstü bölü kök içinde 1 artı u'nun karesidir diyeceğiz.
+
+1164
+01:05:47,576 --> 01:05:51,655
+Şimdi gelelim ters kosünlü siperbolik x'in türevine arkadaşlar.
+
+1165
+01:05:51,655 --> 01:05:56,115
+Gene bunu da bakın buradan gitmek istedim.
+
+1166
+01:05:56,696 --> 01:05:57,956
+Ters türevden gideceğim.
+
+1167
+01:05:58,456 --> 01:06:00,396
+fx kosünlü siperbolik x olsun.
+
+1168
+01:06:00,896 --> 01:06:03,576
+Tersi de ters kosünlü siperbolik x'tir.
+
+1169
+01:06:04,115 --> 01:06:07,376
+Bunun türevi de fonksiyonun türevi de sinü siperbolik x'tir.
+
+1170
+01:06:07,615 --> 01:06:08,516
+Ne yapıyorum bakın?
+
+1171
+01:06:09,196 --> 01:06:13,796
+Tersinin türevi 1 bölü fonksiyonun türevinde tersini yerine yazacağız.
+
+1172
+01:06:14,336 --> 01:06:16,416
+Fonksiyonun türevi şu değil miydi arkadaşlar?
+
+1173
+01:06:16,996 --> 01:06:18,956
+1 bölü sinü siperbolik x'ti.
+
+1174
+01:06:18,956 --> 01:06:22,236
+Yani şu x de fonksiyonun tersini getir yerine yaz.
+
+1175
+01:06:22,376 --> 01:06:26,155
+İşte ters kosünlü siperbolik x'tir diyeceğim.
+
+1176
+01:06:26,396 --> 01:06:26,916
+Tamam mı?
+
+1177
+01:06:27,316 --> 01:06:29,036
+Şimdi şunu bulmak istiyorum.
+
+1178
+01:06:30,076 --> 01:06:31,076
+Bu neye eşittir?
+
+1179
+01:06:31,756 --> 01:06:34,996
+Onun için de şuradan yararlanacağım yine.
+
+1180
+01:06:35,096 --> 01:06:36,416
+Yukarıdaki ifadenin aynısı.
+
+1181
+01:06:36,556 --> 01:06:39,236
+Bir tek yazılış şekli biraz farklı görüyoruz.
+
+1182
+01:06:39,356 --> 01:06:40,096
+Gördüğünüz gibi.
+
+1183
+01:06:40,696 --> 01:06:43,796
+O zaman gene karelerinin farkının bir olduğunu biliyorum.
+
+1184
+01:06:43,796 --> 01:06:50,615
+Buradan sinü siperbolik u'yu çekersem kök içinde kosünlü siperbolik kare u eksi 1 diye yazarım.
+
+1185
+01:06:50,856 --> 01:06:51,356
+Tamam mı?
+
+1186
+01:06:51,655 --> 01:06:52,816
+Şuna da dikkat edeceğim.
+
+1187
+01:06:53,376 --> 01:06:58,115
+Ters kosünlü siperbolik x'in kosünlü siperbolinin x olduğunu bileceğim.
+
+1188
+01:06:58,635 --> 01:07:01,135
+O halde getirip yerine yazacağız.
+
+1189
+01:07:01,216 --> 01:07:01,876
+Bakın şurada.
+
+1190
+01:07:01,876 --> 01:07:07,016
+Arkadaşlar arada bir böyle bir kırmızı yazılar neden geliyor?
+
+1191
+01:07:07,135 --> 01:07:08,416
+Sizden mi kaynaklanıyor?
+
+1192
+01:07:08,615 --> 01:07:09,236
+Benden mi?
+
+1193
+01:07:09,436 --> 01:07:09,956
+Bilemedim.
+
+1194
+01:07:10,976 --> 01:07:11,655
+Bilen var mı?
+
+1195
+01:07:12,216 --> 01:07:13,736
+Şunu görüyor musunuz?
+
+1196
+01:07:13,776 --> 01:07:14,256
+Ne yazıyor?
+
+1197
+01:07:15,416 --> 01:07:16,416
+Nereden geliyor bu?
+
+1198
+01:07:16,456 --> 01:07:17,036
+Bilen var mı?
+
+1199
+01:07:18,296 --> 01:07:18,756
+Bilemiyorum.
+
+1200
+01:07:18,856 --> 01:07:20,216
+Ben de bir şey yapmadım yani.
+
+1201
+01:07:20,216 --> 01:07:49,216
+Bilemiyorum.
+
+1202
+01:07:26,356 --> 01:07:26,996
+Neyse.
+
+1203
+01:07:28,496 --> 01:07:28,916
+Evet.
+
+1204
+01:07:29,396 --> 01:07:30,376
+Ne yapıyoruz şimdi?
+
+1205
+01:07:31,136 --> 01:07:33,036
+Sinisperbolik U yerine
+
+1206
+01:07:33,036 --> 01:07:34,956
+onu getirip yazdım arkadaşlar.
+
+1207
+01:07:35,696 --> 01:07:36,496
+Şuradan bakın.
+
+1208
+01:07:36,576 --> 01:07:37,316
+Kök içinde
+
+1209
+01:07:37,316 --> 01:07:40,676
+kosinisperbolik U'nun karesi
+
+1210
+01:07:40,676 --> 01:07:42,356
+eksi bir. İşte burada
+
+1211
+01:07:42,356 --> 01:07:44,716
+X yerine de ne yazacaktım?
+
+1212
+01:07:44,816 --> 01:07:47,036
+Tersini yazdım bakın. O da ne oldu?
+
+1213
+01:07:47,796 --> 01:07:48,596
+Karesi geldi.
+
+1214
+01:07:48,916 --> 01:07:50,736
+X'in karesi. Tersinin
+
+1215
+01:07:50,736 --> 01:07:52,296
+kosinisperboli X'dir.
+
+1216
+01:07:52,556 --> 01:07:54,696
+Karesi var. X kare. Yani bir bölü
+
+1217
+01:07:54,696 --> 01:07:56,416
+kök içinde X kare eksi birdir
+
+1218
+01:07:56,416 --> 01:07:59,056
+diyeceğiz. Bunu da genellemek istersek
+
+1219
+01:07:59,056 --> 01:08:00,716
+U bir fonksiyonu olmak üzere.
+
+1220
+01:08:01,176 --> 01:08:02,876
+Ters kosinisperbolik U ise
+
+1221
+01:08:02,876 --> 01:08:04,936
+bunun da türevi U'nun türevi
+
+1222
+01:08:04,936 --> 01:08:06,636
+diyeceğim. Bölü kök içinde
+
+1223
+01:08:06,636 --> 01:08:08,576
+U kare eksi birdir
+
+1224
+01:08:08,576 --> 01:08:10,096
+diyeceğiz. Tamam mı?
+
+1225
+01:08:10,936 --> 01:08:12,776
+İşte ne
+
+1226
+01:08:12,776 --> 01:08:13,816
+dedik? Yukarıda
+
+1227
+01:08:13,816 --> 01:08:16,216
+bakın. Tersini
+
+1228
+01:08:16,216 --> 01:08:18,176
+siperbolik U'nun türevi
+
+1229
+01:08:18,176 --> 01:08:20,016
+ters kosinis
+
+1230
+01:08:20,016 --> 01:08:22,496
+siperbolik U'nun türevi
+
+1231
+01:08:22,496 --> 01:08:23,416
+de şudur.
+
+1232
+01:08:23,416 --> 01:08:24,815
+gelelim
+
+1233
+01:08:24,815 --> 01:08:26,815
+ters tanjant hiperbolik
+
+1234
+01:08:26,815 --> 01:08:28,716
+X'in türevini almaya.
+
+1235
+01:08:29,536 --> 01:08:30,336
+Gene bunu da
+
+1236
+01:08:30,336 --> 01:08:31,296
+dedik ki
+
+1237
+01:08:31,296 --> 01:08:32,756
+daha kolay işime
+
+1238
+01:08:32,756 --> 01:08:33,716
+yaracağı için bunu
+
+1239
+01:08:33,716 --> 01:08:34,376
+kullandım.
+
+1240
+01:08:34,976 --> 01:08:35,516
+Bunu Y ile
+
+1241
+01:08:35,516 --> 01:08:37,996
+gösterdim. X eşitli tanjant hiperbolik
+
+1242
+01:08:37,996 --> 01:08:38,836
+Y olur. Buradan
+
+1243
+01:08:38,836 --> 01:08:40,556
+kapalı türetmeyle ne yapacağım?
+
+1244
+01:08:41,096 --> 01:08:41,796
+X'in türevi
+
+1245
+01:08:41,796 --> 01:08:42,376
+1'dir.
+
+1246
+01:08:43,256 --> 01:08:44,256
+Tanjant hiperbolik
+
+1247
+01:08:44,256 --> 01:08:45,275
+Y'nin türevi de
+
+1248
+01:08:45,275 --> 01:08:46,155
+1 eksi
+
+1249
+01:08:46,155 --> 01:08:47,716
+tanjant hiperbolik
+
+1250
+01:08:47,716 --> 01:08:48,456
+kare Y'ye
+
+1251
+01:08:48,456 --> 01:08:49,436
+çarpı
+
+1252
+01:08:49,436 --> 01:08:50,756
+Y'nin X'e göre türevi.
+
+1253
+01:08:50,756 --> 01:08:52,596
+Buradan Y'nin X'e göre türevini
+
+1254
+01:08:52,596 --> 01:08:53,735
+çekersem arkadaşlar
+
+1255
+01:08:53,735 --> 01:08:54,735
+1 bölü
+
+1256
+01:08:54,735 --> 01:08:55,195
+1 eksi
+
+1257
+01:08:55,195 --> 01:08:56,456
+tanjant hiperbolik
+
+1258
+01:08:56,456 --> 01:08:57,516
+kare Y'ye
+
+1259
+01:08:57,516 --> 01:08:58,235
+gelecektir.
+
+1260
+01:08:58,775 --> 01:08:59,536
+Buradan Y'ye
+
+1261
+01:08:59,536 --> 01:09:00,115
+gördüğüm yere
+
+1262
+01:09:00,115 --> 01:09:01,516
+ters tanjant hiperbolik
+
+1263
+01:09:01,516 --> 01:09:02,596
+X'i yazarsam
+
+1264
+01:09:02,596 --> 01:09:03,756
+bakın şurada
+
+1265
+01:09:03,756 --> 01:09:04,496
+Y yerine
+
+1266
+01:09:04,496 --> 01:09:07,496
+ne olacaktır?
+
+1267
+01:09:08,275 --> 01:09:08,655
+Bu da
+
+1268
+01:09:08,655 --> 01:09:10,036
+tersinin
+
+1269
+01:09:10,036 --> 01:09:12,576
+tanjant hiperbolik
+
+1270
+01:09:12,576 --> 01:09:13,176
+X'dir.
+
+1271
+01:09:13,676 --> 01:09:14,076
+O zaman
+
+1272
+01:09:14,076 --> 01:09:14,936
+X kare gelecek.
+
+1273
+01:09:14,936 --> 01:09:15,815
+Yani sonuçta
+
+1274
+01:09:15,815 --> 01:09:16,636
+art tanjant
+
+1275
+01:09:16,636 --> 01:09:18,396
+ters tanjant hiperbolik
+
+1276
+01:09:18,396 --> 01:09:19,396
+X'in türevi
+
+1277
+01:09:19,396 --> 01:09:20,256
+1 bölü
+
+1278
+01:09:20,256 --> 01:09:20,695
+1 eksi
+
+1279
+01:09:20,695 --> 01:09:21,216
+X'in
+
+1280
+01:09:21,216 --> 01:09:21,956
+karesidir.
+
+1281
+01:09:22,256 --> 01:09:22,976
+X'de mutlat
+
+1282
+01:09:22,976 --> 01:09:23,655
+değer küçük
+
+1283
+01:09:23,655 --> 01:09:24,596
+1 olmak
+
+1284
+01:09:24,596 --> 01:09:25,296
+koşuluyla.
+
+1285
+01:09:25,676 --> 01:09:26,176
+Tamam mı?
+
+1286
+01:09:28,456 --> 01:09:28,855
+Yani
+
+1287
+01:09:28,855 --> 01:09:30,136
+genellemek istersek
+
+1288
+01:09:30,136 --> 01:09:31,096
+U bir fonksiyon
+
+1289
+01:09:31,096 --> 01:09:31,976
+olmak üzere
+
+1290
+01:09:31,976 --> 01:09:35,256
+ters tanjant hiperbolik
+
+1291
+01:09:35,256 --> 01:09:36,355
+U'nun türevi ise
+
+1292
+01:09:36,355 --> 01:09:37,695
+U üstü
+
+1293
+01:09:37,695 --> 01:09:38,076
+bölü
+
+1294
+01:09:38,076 --> 01:09:38,896
+1 eksi
+
+1295
+01:09:38,896 --> 01:09:39,436
+U'nun
+
+1296
+01:09:39,436 --> 01:09:40,876
+karesidir
+
+1297
+01:09:40,876 --> 01:09:41,676
+diyeceğiz.
+
+1298
+01:09:42,636 --> 01:09:43,155
+Gelelim
+
+1299
+01:09:43,155 --> 01:09:45,336
+ters kotanjant hiperbolik
+
+1300
+01:09:45,336 --> 01:09:46,216
+X'in türevini
+
+1301
+01:09:46,216 --> 01:09:46,716
+arkadaşlar.
+
+1302
+01:09:48,115 --> 01:09:48,476
+Buradan
+
+1303
+01:09:48,476 --> 01:09:48,815
+gene
+
+1304
+01:09:48,815 --> 01:09:49,756
+eğer
+
+1305
+01:09:49,756 --> 01:09:51,676
+ters kotanjant hiperbolik
+
+1306
+01:09:51,676 --> 01:09:52,235
+X'e Y
+
+1307
+01:09:52,235 --> 01:09:52,916
+dersen
+
+1308
+01:09:52,916 --> 01:09:53,756
+X ne olur?
+
+1309
+01:09:53,855 --> 01:09:55,036
+Kotanjant hiperbolik
+
+1310
+01:09:55,036 --> 01:09:55,556
+Y olur.
+
+1311
+01:09:56,216 --> 01:09:56,716
+Buradan da
+
+1312
+01:09:56,716 --> 01:09:57,336
+gene kapalı
+
+1313
+01:09:57,336 --> 01:09:57,936
+türetmeyi
+
+1314
+01:09:57,936 --> 01:09:58,596
+kullanarak
+
+1315
+01:09:58,596 --> 01:09:59,615
+X'in fonksiyonu
+
+1316
+01:09:59,615 --> 01:10:00,056
+Y'nin de
+
+1317
+01:10:00,056 --> 01:10:00,836
+pardon
+
+1318
+01:10:00,836 --> 01:10:02,735
+X'in de fonksiyonu
+
+1319
+01:10:02,735 --> 01:10:03,676
+olduğunu unutmayarak
+
+1320
+01:10:03,676 --> 01:10:04,615
+X'e göre
+
+1321
+01:10:04,615 --> 01:10:05,216
+türevi alıyorum.
+
+1322
+01:10:05,336 --> 01:10:05,576
+1
+
+1323
+01:10:05,576 --> 01:10:07,296
+kotanjant hiperbolik
+
+1324
+01:10:07,296 --> 01:10:08,176
+Y'nin türevi de
+
+1325
+01:10:08,176 --> 01:10:08,676
+1 eksi
+
+1326
+01:10:08,676 --> 01:10:10,036
+kotanjant hiperbolik
+
+1327
+01:10:10,036 --> 01:10:10,536
+kare Y
+
+1328
+01:10:10,536 --> 01:10:11,496
+çarpı
+
+1329
+01:10:11,496 --> 01:10:12,376
+Y'nin X'e göre
+
+1330
+01:10:12,376 --> 01:10:12,855
+türevi
+
+1331
+01:10:12,855 --> 01:10:13,916
+Y'nin X'e göre
+
+1332
+01:10:13,916 --> 01:10:14,876
+türevini çekmem
+
+1333
+01:10:14,876 --> 01:10:15,456
+gerekecek.
+
+1334
+01:10:15,576 --> 01:10:16,436
+Onu çekersem
+
+1335
+01:10:16,436 --> 01:10:17,056
+1 bölü
+
+1336
+01:10:17,056 --> 01:10:17,436
+1 eksi
+
+1337
+01:10:17,436 --> 01:10:18,275
+kotanjant
+
+1338
+01:10:18,275 --> 01:10:19,536
+hiperbolik
+
+1339
+01:10:19,536 --> 01:10:20,536
+kare Y'dir.
+
+1340
+01:10:21,016 --> 01:10:21,916
+Şimdi ne yapıyorum?
+
+1341
+01:10:22,016 --> 01:10:22,815
+Y'ye gördüğüm yere
+
+1342
+01:10:22,815 --> 01:10:23,836
+fonksiyonun tersini
+
+1343
+01:10:23,836 --> 01:10:24,275
+yazacağım.
+
+1344
+01:10:24,436 --> 01:10:24,716
+Yani
+
+1345
+01:10:24,716 --> 01:10:26,235
+ters kotanjant
+
+1346
+01:10:26,235 --> 01:10:26,876
+hiperbolik
+
+1347
+01:10:26,876 --> 01:10:28,036
+X'i yazarsam
+
+1348
+01:10:28,036 --> 01:10:28,536
+şurada
+
+1349
+01:10:28,536 --> 01:10:29,576
+artık uzatmadan
+
+1350
+01:10:29,576 --> 01:10:30,315
+yazmışım.
+
+1351
+01:10:30,836 --> 01:10:31,275
+Onun da
+
+1352
+01:10:31,275 --> 01:10:32,235
+tersinin
+
+1353
+01:10:32,235 --> 01:10:33,536
+kotanjant hiperbolik
+
+1354
+01:10:33,536 --> 01:10:34,496
+X'i vereceği için
+
+1355
+01:10:34,496 --> 01:10:35,376
+bir de karesi var.
+
+1356
+01:10:35,516 --> 01:10:35,956
+X kare
+
+1357
+01:10:35,956 --> 01:10:36,396
+diyeceğim.
+
+1358
+01:10:36,536 --> 01:10:37,556
+Yani sonuçta
+
+1359
+01:10:37,556 --> 01:10:38,396
+1 bölü
+
+1360
+01:10:38,396 --> 01:10:38,836
+1 eksi
+
+1361
+01:10:38,836 --> 01:10:39,336
+X'in
+
+1362
+01:10:39,336 --> 01:10:40,216
+karesi
+
+1363
+01:10:40,216 --> 01:10:40,576
+olarak
+
+1364
+01:10:40,576 --> 01:10:41,576
+bulmuş olacağım.
+
+1365
+01:10:41,576 --> 01:10:42,876
+gene bunu da genellemek
+
+1366
+01:10:42,876 --> 01:10:43,396
+istersek
+
+1367
+01:10:43,396 --> 01:10:44,336
+U bir fonksiyon
+
+1368
+01:10:44,336 --> 01:10:45,115
+olmak üzere.
+
+1369
+01:10:45,536 --> 01:10:46,396
+Y eşittir.
+
+1370
+01:10:46,836 --> 01:10:48,436
+Ters kotanjant hiperbolik
+
+1371
+01:10:48,436 --> 01:10:49,516
+U'nun türevi de
+
+1372
+01:10:49,516 --> 01:10:50,716
+U üstü bölü
+
+1373
+01:10:50,716 --> 01:10:51,796
+1 eksi
+
+1374
+01:10:51,796 --> 01:10:52,596
+U'nun
+
+1375
+01:10:52,596 --> 01:10:53,476
+karesi.
+
+1376
+01:10:53,636 --> 01:10:54,076
+U'da
+
+1377
+01:10:54,076 --> 01:10:54,956
+mutlak değer
+
+1378
+01:10:54,956 --> 01:10:55,695
+büyük bir olmak
+
+1379
+01:10:55,695 --> 01:10:56,855
+koşuluyla arkadaşlar.
+
+1380
+01:10:57,536 --> 01:10:57,996
+Gelelim
+
+1381
+01:10:57,996 --> 01:11:00,096
+ters sekant hiperbolik
+
+1382
+01:11:00,096 --> 01:11:01,576
+X'in türevine
+
+1383
+01:11:01,576 --> 01:11:02,876
+diyelim.
+
+1384
+01:11:03,815 --> 01:11:04,315
+Bakın bunu da
+
+1385
+01:11:04,315 --> 01:11:05,155
+arada da
+
+1386
+01:11:05,155 --> 01:11:05,856
+farklı farklı
+
+1387
+01:11:05,856 --> 01:11:06,416
+yazıyorum.
+
+1388
+01:11:06,615 --> 01:11:06,976
+Siz de
+
+1389
+01:11:06,976 --> 01:11:07,815
+alışın diye
+
+1390
+01:11:07,815 --> 01:11:10,016
+aynı şeyleri
+
+1391
+01:11:10,016 --> 01:11:10,396
+yapıyorum
+
+1392
+01:11:10,396 --> 01:11:10,876
+aslında.
+
+1393
+01:11:11,855 --> 01:11:12,436
+Fx'i
+
+1394
+01:11:12,436 --> 01:11:13,456
+sekant hiperbolik
+
+1395
+01:11:13,456 --> 01:11:13,756
+X'i
+
+1396
+01:11:13,756 --> 01:11:14,815
+Fx dersek
+
+1397
+01:11:14,815 --> 01:11:16,396
+tersi de ne olur?
+
+1398
+01:11:16,516 --> 01:11:17,735
+Ters sekant hiperbolik
+
+1399
+01:11:17,735 --> 01:11:18,315
+X olur
+
+1400
+01:11:18,315 --> 01:11:18,876
+arkadaşlar.
+
+1401
+01:11:18,876 --> 01:11:36,735
+X'i
+
+1402
+01:11:19,667 --> 01:11:28,688
+Bunun da türevi bakın burada gene yazmışım hatırlatmak açısından yani tersinin türevi bir bölü fonksiyon türevinde tersini yerine yazmaktı.
+
+1403
+01:11:29,527 --> 01:11:32,047
+Fonksiyonun da türevine de ihtiyacım var burada.
+
+1404
+01:11:32,188 --> 01:11:33,228
+Bunun da türevi neydi?
+
+1405
+01:11:33,627 --> 01:11:35,007
+Önceleri vermiştik zaten.
+
+1406
+01:11:35,707 --> 01:11:41,667
+Eksi sekant hiperbolik x, tanjant hiperbolik x diye yazmıştık.
+
+1407
+01:11:41,887 --> 01:11:43,127
+E şimdi burada nedir?
+
+1408
+01:11:43,447 --> 01:11:45,127
+Getirip bir bölüm şunu yazacağım.
+
+1409
+01:11:45,127 --> 01:11:49,847
+Yani eksi bir bölü sekant hiperbolik x, tanjant hiperbolik x diyeceğim.
+
+1410
+01:11:50,228 --> 01:11:50,747
+Tamam mı?
+
+1411
+01:11:51,188 --> 01:11:56,467
+Sonra x gördüğüm yere fonksiyonun tersini yazarak düzenlemeye çalışacağım.
+
+1412
+01:11:56,707 --> 01:11:57,407
+Bakın şurada.
+
+1413
+01:11:58,027 --> 01:12:03,728
+Eksi bir bölü sekant hiperbolik x ile tersini yazdım.
+
+1414
+01:12:03,887 --> 01:12:06,247
+Tanjant hiperbolik tersini yazdım.
+
+1415
+01:12:06,347 --> 01:12:09,567
+Şunun biliyoruz artık x olduğunu.
+
+1416
+01:12:10,367 --> 01:12:12,047
+Şuna ihtiyacım var değil mi arkadaşlar?
+
+1417
+01:12:12,667 --> 01:12:14,327
+Şunun ne olduğunu görmek istiyorum.
+
+1418
+01:12:14,327 --> 01:12:17,147
+Ama şunu da biliyorum özdeşliklerden.
+
+1419
+01:12:17,507 --> 01:12:23,207
+Sekant hiperbolik kare u eşitliği bir eksi tanjant hiperbolik kare u'ya eşit olduğunu biliyorum.
+
+1420
+01:12:23,607 --> 01:12:28,268
+Buradan tanjant hiperbolik kare u'yu çekersem bu da ne olur?
+
+1421
+01:12:28,907 --> 01:12:32,667
+Bir eksi kök içinde sekant hiperbolik kare olur.
+
+1422
+01:12:32,807 --> 01:12:35,087
+Yani tanjant hiperbolik u'ya ihtiyacım var.
+
+1423
+01:12:35,387 --> 01:12:36,107
+Bunu çektim.
+
+1424
+01:12:36,507 --> 01:12:38,427
+Getirip burada ne yazıyorum?
+
+1425
+01:12:38,567 --> 01:12:39,447
+Şurada yerine yazacağım.
+
+1426
+01:12:39,567 --> 01:12:39,867
+Bakın.
+
+1427
+01:12:40,127 --> 01:12:43,607
+Kök içinde bir eksi sekant hiperbolik kare u.
+
+1428
+01:12:43,607 --> 01:12:45,447
+u gördüğüm yere de ne yazmalıyım?
+
+1429
+01:12:45,527 --> 01:12:47,268
+Fonksiyonun tersini yazmış olacağım.
+
+1430
+01:12:47,567 --> 01:12:53,228
+Bakın uzun yövüyle birazcık şöyle yazdık diyelim.
+
+1431
+01:12:53,367 --> 01:12:53,947
+Bakın şu.
+
+1432
+01:12:54,347 --> 01:12:56,688
+Kök içinde şunu yazdım.
+
+1433
+01:12:57,027 --> 01:12:58,327
+Ve gene bu benim bildiğim.
+
+1434
+01:12:58,327 --> 01:13:00,467
+x'e eşit olacak bir de karesi var.
+
+1435
+01:13:00,567 --> 01:13:01,067
+x kare.
+
+1436
+01:13:01,307 --> 01:13:02,228
+Şurada x'tir.
+
+1437
+01:13:02,567 --> 01:13:07,807
+Yani sonuçta eksi bir bölü x çarpı kök içinde bir eksi x'in karesi olacak.
+
+1438
+01:13:07,987 --> 01:13:10,707
+x'de sıfırla bir aralığında olmak koşuluyla.
+
+1439
+01:13:11,167 --> 01:13:11,647
+Tamam mı?
+
+1440
+01:13:12,067 --> 01:13:12,627
+Şimdi gelelim.
+
+1441
+01:13:13,047 --> 01:13:14,527
+Bunu da gene bir genellersek.
+
+1442
+01:13:14,527 --> 01:13:16,247
+u bir fonksiyon olmak üzere.
+
+1443
+01:13:16,647 --> 01:13:17,387
+y eşittir.
+
+1444
+01:13:17,487 --> 01:13:19,987
+Ters sekant hiperbolik u'nun türevinde ne olur?
+
+1445
+01:13:20,527 --> 01:13:26,067
+Eksi u üstü bölü u çarpı kök içinde bir eksi u'nun karesidir diyeceğiz.
+
+1446
+01:13:26,507 --> 01:13:29,228
+Son hiperbolik fonksiyonumuzda.
+
+1447
+01:13:29,228 --> 01:13:32,847
+ters sekant hiperbolik x hissediyoruz.
+
+1448
+01:13:32,987 --> 01:13:34,087
+Yerinin türevi nedir?
+
+1449
+01:13:34,607 --> 01:13:38,247
+Gene fx'i sekant hiperbolik x almış olalım.
+
+1450
+01:13:39,087 --> 01:13:42,587
+Fonksiyonun tersi zaten ters sekant hiperbolik x diyeceğim.
+
+1451
+01:13:43,007 --> 01:13:44,207
+Bunun türevi de neydi?
+
+1452
+01:13:44,607 --> 01:13:48,268
+Eksi sekant hiperbolik x kotan hiperbolik x'tir.
+
+1453
+01:13:48,787 --> 01:13:49,367
+Ne yapıyorum?
+
+1454
+01:13:49,967 --> 01:13:51,527
+Bunun türevini alacağım.
+
+1455
+01:13:51,688 --> 01:13:53,007
+Tersinin türevi neydi?
+
+1456
+01:13:53,007 --> 01:13:56,467
+Bir bölü fonksiyonun türevinde tersini yerine yaz diyoruz.
+
+1457
+01:13:56,807 --> 01:13:58,547
+Fonksiyonun türevi şu değil miydi?
+
+1458
+01:13:58,547 --> 01:13:59,867
+Eksi bir bölü.
+
+1459
+01:14:00,247 --> 01:14:03,507
+Bakın kosekant hiperbolik tersini yazıyorum.
+
+1460
+01:14:04,427 --> 01:14:06,007
+Ters kosin hiperbolik x.
+
+1461
+01:14:06,607 --> 01:14:09,807
+Sonra çarpı kotanjant hiperbolik tersini yazdım.
+
+1462
+01:14:09,907 --> 01:14:11,407
+Ters kosekant hiperbolik x.
+
+1463
+01:14:11,747 --> 01:14:12,188
+Bu tamam.
+
+1464
+01:14:12,307 --> 01:14:13,207
+Bu bana neyi verecek?
+
+1465
+01:14:13,347 --> 01:14:14,067
+X'i verecek.
+
+1466
+01:14:14,547 --> 01:14:16,567
+Ama şu kotanjant yerine ne yazalım?
+
+1467
+01:14:16,827 --> 01:14:18,147
+Bakın şu karantez içinde.
+
+1468
+01:14:19,147 --> 01:14:22,067
+Dedik kosekant hiperbolik kare u.
+
+1469
+01:14:22,287 --> 01:14:23,007
+Eşittir.
+
+1470
+01:14:23,127 --> 01:14:25,587
+Eksi bir kotanjant hiperbolik kare u'ya.
+
+1471
+01:14:25,867 --> 01:14:27,067
+Kontrol edebilirsiniz.
+
+1472
+01:14:27,268 --> 01:14:27,547
+Doğru.
+
+1473
+01:14:27,647 --> 01:14:28,047
+Çünkü.
+
+1474
+01:14:28,547 --> 01:14:30,188
+Buradan da ne olacaktır?
+
+1475
+01:14:31,007 --> 01:14:37,527
+Buradan kotanjant hiperbolik u'yu çekersek kök içine bir artı kosekant hiperbolik kare u'dur diyeceğim.
+
+1476
+01:14:37,867 --> 01:14:40,507
+O halde bunun yerine şunu yazacağız arkadaşlar.
+
+1477
+01:14:40,747 --> 01:14:44,747
+Yani şu u yerine de ters kosekant hiperbolik x'i yazmış olacağız.
+
+1478
+01:14:44,747 --> 01:14:48,047
+Yani bir artı x'in karesi gelecek.
+
+1479
+01:14:48,047 --> 01:14:50,307
+İşte şurada da düzenlenirse.
+
+1480
+01:14:50,307 --> 01:14:55,268
+Eksi bir bölüm mutlak değer x kök içinde bir artı x'in karesidir.
+
+1481
+01:14:55,268 --> 01:14:57,567
+x'in karesinden farklı olmak koşulları ile.
+
+1482
+01:14:57,567 --> 01:14:58,807
+Yine bunu da.
+
+1483
+01:14:58,807 --> 01:15:00,447
+bir artı x'in karesi.
+
+1484
+01:15:00,447 --> 01:15:19,507
+Evet.
+
+1485
+01:15:00,467 --> 01:15:02,427
+genellersek u bir fonksiyon
+
+1486
+01:15:02,427 --> 01:15:04,627
+olmak üzere y eşittir. Ters kosekan
+
+1487
+01:15:04,627 --> 01:15:06,447
+türebili türebisi
+
+1488
+01:15:06,447 --> 01:15:08,247
+eksi u üstü bölü. Mutlak ve
+
+1489
+01:15:08,247 --> 01:15:10,108
+u kök içinde bir artı u'nun
+
+1490
+01:15:10,108 --> 01:15:12,528
+karesidir diyeceğiz arkadaşlar.
+
+1491
+01:15:13,068 --> 01:15:14,327
+İşte hani biraz
+
+1492
+01:15:14,327 --> 01:15:16,188
+karışık gibi gözüküyor ama türebleri
+
+1493
+01:15:16,188 --> 01:15:18,268
+bilmeniz yeterli. Hani kimse size onun nasıl
+
+1494
+01:15:18,268 --> 01:15:20,028
+çıktığını sormaz.
+
+1495
+01:15:20,847 --> 01:15:22,167
+İlk örnek üzerinde görmeye
+
+1496
+01:15:22,167 --> 01:15:23,028
+çalışalım bakalım.
+
+1497
+01:15:24,127 --> 01:15:25,528
+Birinci örneğin şu olsun.
+
+1498
+01:15:26,148 --> 01:15:27,068
+y eşittir.
+
+1499
+01:15:28,247 --> 01:15:30,347
+Ters kosekan türebili
+
+1500
+01:15:30,347 --> 01:15:31,427
+iki kök x.
+
+1501
+01:15:31,867 --> 01:15:34,447
+Kök içinde x artı birin türevi
+
+1502
+01:15:34,447 --> 01:15:35,688
+nedir arkadaşlar?
+
+1503
+01:15:37,307 --> 01:15:37,627
+Evet.
+
+1504
+01:15:38,047 --> 01:15:40,108
+Tabii ki neyi bilmek gerekiyor?
+
+1505
+01:15:40,867 --> 01:15:42,327
+Ters kosekan türebili
+
+1506
+01:15:42,327 --> 01:15:44,228
+u'nun türevini bilmek gerekir.
+
+1507
+01:15:44,307 --> 01:15:45,847
+Değil mi? Burada u dediğim ifade
+
+1508
+01:15:45,847 --> 01:15:47,587
+iki kök içinde x artı
+
+1509
+01:15:47,587 --> 01:15:49,427
+birdir diyeceğiz.
+
+1510
+01:15:49,587 --> 01:15:51,447
+Onun türevini alacağız.
+
+1511
+01:15:52,407 --> 01:15:54,068
+Evet. İlk örneği görelim.
+
+1512
+01:15:54,188 --> 01:15:56,407
+Bakın. Ters kosekan türebili
+
+1513
+01:15:56,407 --> 01:15:57,627
+u'nun türevini yazdım.
+
+1514
+01:15:57,747 --> 01:15:59,207
+Şuraya hatırlayamayız.
+
+1515
+01:15:59,207 --> 01:16:01,047
+Tabii şimdi ilk örneğimiz olduğu için
+
+1516
+01:16:01,047 --> 01:16:03,547
+birkaç kez tabii siz de
+
+1517
+01:16:03,547 --> 01:16:05,387
+yine kitaplardan bu türevlerle ilgili
+
+1518
+01:16:05,387 --> 01:16:06,167
+sorular çözün.
+
+1519
+01:16:06,247 --> 01:16:07,507
+Aklınızda kalsın arkadaşlar.
+
+1520
+01:16:08,087 --> 01:16:08,387
+Neymiş?
+
+1521
+01:16:08,467 --> 01:16:09,507
+U üstü bölü kök içinde
+
+1522
+01:16:09,507 --> 01:16:11,028
+u kare eksi birdir diyoruz.
+
+1523
+01:16:11,287 --> 01:16:12,287
+E u dediğim ifade
+
+1524
+01:16:12,287 --> 01:16:14,927
+iki kök içinde x artı bir.
+
+1525
+01:16:15,127 --> 01:16:16,427
+E bunun türevinden ne gelir?
+
+1526
+01:16:16,547 --> 01:16:17,728
+İki sabit zaten.
+
+1527
+01:16:18,228 --> 01:16:19,587
+Kökün türevi bir bölü iki.
+
+1528
+01:16:19,728 --> 01:16:21,608
+Kök içinde x artı bir değil midir?
+
+1529
+01:16:21,847 --> 01:16:23,127
+Onlar da gider ikiler.
+
+1530
+01:16:23,127 --> 01:16:24,967
+O zaman bir bölü
+
+1531
+01:16:24,967 --> 01:16:27,347
+kök içinde x artı bir bölü
+
+1532
+01:16:27,347 --> 01:16:28,507
+kök içinde
+
+1533
+01:16:28,507 --> 01:16:31,488
+dört x artı bir eksi bir diye
+
+1534
+01:16:31,488 --> 01:16:32,528
+bulmalıyım.
+
+1535
+01:16:32,608 --> 01:16:32,907
+Bakın.
+
+1536
+01:16:33,247 --> 01:16:35,287
+Şu u dediğim ifadenin türevi
+
+1537
+01:16:35,287 --> 01:16:37,947
+kökün içinde u kare eksi bir.
+
+1538
+01:16:38,507 --> 01:16:39,108
+Şu halde
+
+1539
+01:16:39,108 --> 01:16:40,707
+düzenlenmiş olur.
+
+1540
+01:16:41,188 --> 01:16:42,887
+Ya da en sade için şu.
+
+1541
+01:16:43,608 --> 01:16:43,887
+Evet.
+
+1542
+01:16:44,467 --> 01:16:46,887
+O zaman şu ikinci soruyu siz çözmeye çalışın.
+
+1543
+01:16:46,947 --> 01:16:47,247
+Bakalım.
+
+1544
+01:16:47,568 --> 01:16:48,068
+Bu da nedir?
+
+1545
+01:16:48,167 --> 01:16:49,127
+Ters sinüs hiperbolik
+
+1546
+01:16:49,127 --> 01:16:50,887
+hiperbolik argümanı
+
+1547
+01:16:50,887 --> 01:16:51,827
+tanjant x.
+
+1548
+01:16:51,988 --> 01:16:52,367
+Bakın.
+
+1549
+01:16:53,447 --> 01:16:55,927
+Tanjant x'in türevini bulunuz.
+
+1550
+01:16:55,927 --> 01:17:12,268
+Evet.
+
+1551
+01:17:00,307 --> 01:17:07,568
+Tabi burada neyi bilmek gerekir? Tersini, siperbolik, U'nun türevini bilmek gerekir. Bekliyorum, evet.
+
+1552
+01:17:47,091 --> 01:17:48,331
+yazdınız sanırım.
+
+1553
+01:17:50,571 --> 01:17:53,071
+Tersin siper bölüki u'nun türevi nedir?
+
+1554
+01:17:53,311 --> 01:17:56,271
+u'nun türevi bölü kök içine 1 artı u kare idi.
+
+1555
+01:17:56,451 --> 01:17:57,511
+u dediğim ifade nedir?
+
+1556
+01:17:57,612 --> 01:17:58,491
+tanjant değil midir?
+
+1557
+01:17:58,591 --> 01:18:02,731
+tanjantın türevi ya 1 bölü kosinüs kare dersin, ya sekant kare.
+
+1558
+01:18:02,851 --> 01:18:04,031
+sekant kullanmışız.
+
+1559
+01:18:04,131 --> 01:18:08,811
+sekant kare x bölü 1 artı tanjantın karesi değil mi?
+
+1560
+01:18:08,811 --> 01:18:12,771
+1 artı tanjant kare de sekant kareye eşit olduğunu biliyoruz.
+
+1561
+01:18:13,152 --> 01:18:16,751
+oradan da sekant diye dışarı çıkarsa bir tanesi gitti.
+
+1562
+01:18:16,751 --> 01:18:19,251
+sekant x diye buluruz arkadaşlar.
+
+1563
+01:18:20,251 --> 01:18:21,791
+peki şuna bakın bakalım.
+
+1564
+01:18:21,791 --> 01:18:22,791
+y eşittir.
+
+1565
+01:18:22,931 --> 01:18:26,011
+ln x artı kök içinde 1-x kare.
+
+1566
+01:18:26,971 --> 01:18:31,391
+ters sekant hiperbolik x'in türevini yazalım diyeyim.
+
+1567
+01:18:32,391 --> 01:18:34,211
+hadi bunu çözmeye çalışalım.
+
+1568
+01:18:59,412 --> 01:19:14,552
+Dikkat ederseniz toplam çarpım var değil mi buralarda? Önce ne yapıyorum? Sırayla türev alıyorum. L'nx'in türevi nedir arkadaşlar? 1 bölü x'dir yazdık. Burada ne var? Çarpımın türevi. Birincinin türevi yani kök içinde 1-x karenin türevi ne olur?
+
+1569
+01:19:14,552 --> 01:19:27,492
+Eksi 2x içinin türevi bölü 2 kök bir ifade. Çarpı ikinci tersi sekant hiperbolik x. Artı birinci çarpı yazdık. Tersi sekant hiperbolik x'in türevini de bulmuştuk.
+
+1570
+01:19:27,632 --> 01:19:43,292
+Yukarıda eksi 1 bölü x çarpı kök içinde 1-x'in karesi de diyoruz. O da düzenlenirse şöyle bir ifade kalır diyeceğiz. Şuradan zaten açtığımızda eksi 1 bölü x'ler birbirini götürecek. Şu şekilde sonucu bulmuş oluruz.
+
+1571
+01:19:43,292 --> 01:20:01,032
+Evet devam edelim. Evet devam edelim. Y eşittir. 1-x kare tersi sekant hiperbolik x'in türevini bana soruyor. Yine bir çarpımın türevi var değil mi? Ama tersi sekant hiperbolik x'in türevini bilmek gerekir.
+
+1572
+01:20:02,492 --> 01:20:04,692
+Evet bekliyorum bir dakika. Bulmaya çalışın.
+
+1573
+01:20:29,300 --> 01:20:52,880
+Evet, yapmışımızdır. Ters kotancant, hiperbolik x'in türevi neydi? 1 bölü 1 eksi x kareydi. O halde burada ne var? Bir çarpımın türevi var diyorum. Birincinin türevi eksi 2x çarpı 2. Artı 1 eksi x kare çarpı ters kotancant, hiperbolik x'in türevi de 1 bölü 1 eksi x kare diye yazıp düzenlenirse şu hale gelir diyeceğiz.
+
+1574
+01:20:52,880 --> 01:21:22,140
+Evet arkadaşlar, tersi x kareler. Evet arkadaşlar, tersi x kareler. Bu kadar. Var mı takıldığımız bir yer? Şimdi sevdiğiniz bir konuya geçeceğiz. Üstel belirsizlikler, daha doğrusu belirsiz şekiller diyelim. Hopital kuralı. En sevdiğiniz konu. Ona geçelim. Var mı burada sorumuz? Biraz tabii değişik gelebilir, karışık da gelebilir. Biraz bakmak gerekir. Birkaç örnek daha kendiniz çözerseniz formüller aklınızda kalabilir.
+
+1575
+01:21:22,140 --> 01:21:52,119
+Şimdi ben onu yüksek.
+
+1576
+01:21:37,747 --> 01:21:40,687
+Ben hala anlayamıyorum bu yazı neden burada kalıyor.
+
+1577
+01:22:12,051 --> 01:22:15,511
+Evet arkadaşlar o yazının gitmesi için tekrar kapatıp açtım.
+
+1578
+01:22:15,612 --> 01:22:17,251
+Zoom ile ilgili evet sanırım.
+
+1579
+01:22:17,851 --> 01:22:19,291
+Neyse şimdi gitti bakalım.
+
+1580
+01:22:20,331 --> 01:22:23,612
+Evet belirsizlik ve belirsizlikler ve hopital kuralı diyelim.
+
+1581
+01:22:23,612 --> 01:22:35,971
+Belirsiz şekiller bildiğimiz gibi sıfır bölü sıfır sonsuz bölü sonsuz sıfır çarpı sonsuz sonsuz eksi sonsuz sıfır üzeri sıfır bir üzeri sonsuz şeklindeki ifadelere belirsizlikler deriz.
+
+1582
+01:22:36,271 --> 01:22:38,431
+Bunun matematiksel olarak bir anlamı yok arkadaşlar.
+
+1583
+01:22:38,431 --> 01:22:44,431
+İşte biz bu durumda işimizi kolaylaştırabilmek için hopital kuralı dediğimiz kuralı uyguluyoruz.
+
+1584
+01:22:45,231 --> 01:22:47,171
+Onu da teorem olarak şöyle vermiş olalım.
+
+1585
+01:22:47,171 --> 01:22:56,511
+F ve G fonksiyonları A'yı içeren I açık aralığında türevlenebilir ve G'nin türevi de sıfırdan farklı olsun.
+
+1586
+01:22:57,171 --> 01:23:04,591
+Yani şöyle bana diyelim ki limit X A'ya giderken F X bölü G X'in limitini sormuş olsa arkadaşlar.
+
+1587
+01:23:04,591 --> 01:23:12,692
+Yani burada X A'ya giderken F X'in ve X A'ya giderken G'nin limitleri eşit ve sıfır.
+
+1588
+01:23:13,371 --> 01:23:15,612
+Bu durumda ne yapıyoruz?
+
+1589
+01:23:16,112 --> 01:23:20,951
+Limit X A'ya giderken payın türevi bölü paydanın türevi limitini kontrol ettik.
+
+1590
+01:23:21,072 --> 01:23:22,551
+Sonlu bir değer L diyelim.
+
+1591
+01:23:22,711 --> 01:23:25,652
+Sonlu veya artı sonsuz olduğunu kabul edelim.
+
+1592
+01:23:25,652 --> 01:23:32,131
+O zaman diyoruz limit X A'ya gittiğinde F X bölü G X'in limiti de L'dir diyoruz.
+
+1593
+01:23:32,391 --> 01:23:40,112
+Yani bizim limitimizde işte sıfır bölü sıfır ve sonsuz bölü sonsuz belirsizliği çıktığında hemen hopital kuralını uyguluyoruz.
+
+1594
+01:23:40,171 --> 01:23:42,652
+İşte bu kurala biz hopital kuralı diyoruz.
+
+1595
+01:23:42,891 --> 01:23:45,371
+Burada X A'ya gidiyor.
+
+1596
+01:23:45,831 --> 01:23:46,991
+Sonsuza da gidebilir.
+
+1597
+01:23:47,091 --> 01:23:49,091
+X sonsuza da gidebilir.
+
+1598
+01:23:49,091 --> 01:23:50,572
+Ama şuna dikkat ediyoruz.
+
+1599
+01:23:50,851 --> 01:23:55,991
+Hopital kuralı sadece sıfır bölü sıfır ve sonsuz bölü sonsuz olduğunda uygulanacak.
+
+1600
+01:23:56,331 --> 01:23:58,851
+Diğer durumlarda ben bunları ne yapacağım?
+
+1601
+01:23:59,291 --> 01:24:04,091
+Sıfır bölü sıfır ya da sonsuz bölü sonsuz haline getirip hopitale uygulayabileceğim.
+
+1602
+01:24:04,831 --> 01:24:05,251
+Tamam mı?
+
+1603
+01:24:05,391 --> 01:24:07,771
+Şimdi örnekler üzerinde görmeye çalışalım bakın.
+
+1604
+01:24:08,391 --> 01:24:09,551
+İlk örneğimiz şu olsun.
+
+1605
+01:24:09,991 --> 01:24:16,751
+Limit X sıfıra yaklaşırken 3X eksi sinüs X bölü X'in limiti nedir?
+
+1606
+01:24:16,751 --> 01:24:18,891
+Şimdi önce bir kontrol edelim bakın.
+
+1607
+01:24:18,991 --> 01:24:20,231
+Metik belirsizlik var.
+
+1608
+01:24:20,652 --> 01:24:23,771
+X sıfıra giderken sinüs sıfır olduğu için pay sıfıra gitti.
+
+1609
+01:24:23,891 --> 01:24:24,891
+Pay da sıfıra gitti.
+
+1610
+01:24:25,091 --> 01:24:26,271
+O zaman ne diyorum bakın.
+
+1611
+01:24:26,731 --> 01:24:28,551
+Sıfır bölü sıfır belirsizliği var.
+
+1612
+01:24:29,011 --> 01:24:30,871
+Buraya L nokta H yazmalıyım.
+
+1613
+01:24:31,031 --> 01:24:32,351
+Ne yapıyorum değil mi bundan sonra?
+
+1614
+01:24:32,811 --> 01:24:35,211
+Şunu dedikten sonra diyorum ki hopitale uyguluyorum.
+
+1615
+01:24:35,331 --> 01:24:39,371
+Şimdi sıfır bölü sıfır belirsizliğim varsa hiç düşünmeden hopitale uyguluyorum.
+
+1616
+01:24:39,771 --> 01:24:41,751
+Payın türevi bölü paydanın türevi.
+
+1617
+01:24:42,331 --> 01:24:43,371
+Limiti yazıyorum.
+
+1618
+01:24:43,371 --> 01:24:44,791
+Bölü çizgisini çektim.
+
+1619
+01:24:44,971 --> 01:24:45,692
+Payın türevi.
+
+1620
+01:24:45,692 --> 01:24:47,591
+Bilgin türevi alıyorum.
+
+1621
+01:24:47,791 --> 01:24:49,271
+İşte 3X'in türevi 3.
+
+1622
+01:24:49,891 --> 01:24:51,031
+Sinüs'ün türevi de nedir?
+
+1623
+01:24:51,152 --> 01:24:52,371
+Eksi kosünüs diyorum.
+
+1624
+01:24:52,471 --> 01:24:54,971
+Eksisi olduğu için tabii sinüs'ün türevi kosünüstür.
+
+1625
+01:24:55,451 --> 01:24:57,091
+Bölü faydanın türevi de 1'dir.
+
+1626
+01:24:57,411 --> 01:24:58,692
+Her adımda kontrol ediyorum.
+
+1627
+01:24:58,831 --> 01:25:01,851
+Belirsizlik giderlerimiz de tamam değilse tekrar ediyorum.
+
+1628
+01:25:02,311 --> 01:25:03,851
+X sıfıra giderken ne diyorum?
+
+1629
+01:25:04,131 --> 01:25:05,351
+Kosünüs 0'ı 1'dir.
+
+1630
+01:25:05,731 --> 01:25:07,311
+3 eksi 1'den 2.
+
+1631
+01:25:07,851 --> 01:25:09,192
+Bölü 1'den sonuç nedir?
+
+1632
+01:25:09,192 --> 01:25:10,171
+2'dir diyeceğiz.
+
+1633
+01:25:10,171 --> 01:25:16,551
+İşte kolayca bu kuralda yani hopitale kuralında iyi bilmek gerekir.
+
+1634
+01:25:16,811 --> 01:25:20,031
+Bir de işlem hatası yapmamak başka bir zorluğu yok arkadaşlar.
+
+1635
+01:25:20,192 --> 01:25:21,411
+Dikkatlice türevi almak.
+
+1636
+01:25:21,771 --> 01:25:26,771
+Ama her zaman hopitale uyguladığında üzerine L.H diye yazmalıyız.
+
+1637
+01:25:26,911 --> 01:25:28,631
+Karşı tarafta ne yaptığımızı bilsin.
+
+1638
+01:25:28,751 --> 01:25:31,371
+Hani buradan buraya nasıl geçmiş dememesi gerekir.
+
+1639
+01:25:31,531 --> 01:25:31,931
+Tamam mı?
+
+1640
+01:25:32,331 --> 01:25:33,531
+Yazımlara dikkat ediyoruz.
+
+1641
+01:25:33,531 --> 01:25:37,351
+Evet şimdi gelelim şöyle bir örneğimize bakalım.
+
+1642
+01:25:38,211 --> 01:25:49,231
+X sıfıra giderken 2 sinüs x eksi sinüs 2 x bölü 2 çarpı e üzeri x eksi 2 eksi 2 eksi 2 eksi x karenin limitini hesaplayınız diye.
+
+1643
+01:25:49,652 --> 01:25:50,811
+Şimdi kontrol edelim.
+
+1644
+01:25:50,911 --> 01:25:52,192
+Ne tip belirsizlik var?
+
+1645
+01:25:52,831 --> 01:25:54,031
+Pay nereye gider bakın?
+
+1646
+01:25:54,471 --> 01:25:55,231
+Sıfıra gider.
+
+1647
+01:25:56,072 --> 01:25:58,451
+Payda 2 eksi 2 gitti.
+
+1648
+01:25:59,231 --> 01:26:00,112
+Sıfır değil mi?
+
+1649
+01:26:00,251 --> 01:26:00,572
+Sonuç.
+
+1650
+01:26:00,572 --> 01:26:02,971
+Yani sıfır böyle sıfır belirsizlik var.
+
+1651
+01:26:03,051 --> 01:26:06,771
+O zaman hiç düşünmeden hopital kuralını uygulayacağım diyorum.
+
+1652
+01:26:07,692 --> 01:26:08,951
+Evet hadi uygulayın bakalım.
+
+1653
+01:26:09,091 --> 01:26:09,871
+Sonuç ne çıkacak?
+
+1654
+01:26:09,991 --> 01:26:10,612
+Limite nedir?
+
+1655
+01:26:10,751 --> 01:26:11,251
+Bekliyorum.
+
+1656
+01:26:12,083 --> 01:26:17,844
+Bunda artık yaparsınız, zorluk yok. Dediğim gibi, Hospital'ı uygulayabilmek için iyi türev bilirsiniz.
+
+1657
+01:26:42,644 --> 01:26:44,024
+bulduk mu? Kaç?
+
+1658
+01:26:49,268 --> 01:26:51,228
+Evet arkadaşlar, limit ne çıkıyor?
+
+1659
+01:26:55,091 --> 01:26:55,531
+Bakın.
+
+1660
+01:26:59,631 --> 01:27:04,811
+Evet. Şimdi baktık sıfır bölü sıfır belirsizliği var arkadaşlar.
+
+1661
+01:27:05,351 --> 01:27:07,152
+İyiniz gibi payın türevi.
+
+1662
+01:27:08,371 --> 01:27:09,671
+Paydanın türevi.
+
+1663
+01:27:10,011 --> 01:27:13,731
+Şimdi ne yapıyorum? Bakın 2 sinüs x'in türevi ne gelir? 2 pos sinüs x.
+
+1664
+01:27:14,411 --> 01:27:18,131
+2 sinüs x'in türevini nasıl alıyorum? Argümanının türevinden 2 gelecek.
+
+1665
+01:27:18,991 --> 01:27:20,291
+x'i ikisi var da.
+
+1666
+01:27:20,291 --> 01:27:42,131
+Şimdi tekrar kontrol ediyorum bakın.
+
+1667
+01:27:42,131 --> 01:27:43,411
+Bakın. Kosinüs 0, 1'dir.
+
+1668
+01:27:43,731 --> 01:27:45,131
+2'ye gider şurası.
+
+1669
+01:27:45,131 --> 01:27:46,131
+2'ye gider, 2'ye gider.
+
+1670
+01:27:46,131 --> 01:27:47,131
+2'ye gider, 3'ye gider.
+
+1671
+01:27:47,131 --> 01:27:49,131
+3'ye gider.
+
+1672
+01:27:49,131 --> 01:27:50,131
+Hayda da ne oldu?
+
+1673
+01:27:50,131 --> 01:27:51,131
+0'a gitti.
+
+1674
+01:27:51,131 --> 01:27:52,131
+Hala bakın 0'a gitti.
+
+1675
+01:27:52,131 --> 01:27:56,131
+O zaman tekrar hopital'i uygulayalım.
+
+1676
+01:27:56,131 --> 01:27:57,131
+Tamam mı?
+
+1677
+01:27:57,131 --> 01:27:58,131
+Aferin yine.
+
+1678
+01:27:58,131 --> 01:27:59,131
+Bölü çizdi.
+
+1679
+01:27:59,131 --> 01:28:04,131
+3'ye gider.
+
+1680
+01:28:04,131 --> 01:28:05,131
+4'ye gider.
+
+1681
+01:28:05,131 --> 01:28:06,131
+3'ye gider.
+
+1682
+01:28:03,572 --> 01:28:06,692
+Evet arkadaşlar mikrofonunuzu kapatır mısınız?
+
+1683
+01:28:06,832 --> 01:28:07,771
+Ses yankı yapıyor.
+
+1684
+01:28:08,412 --> 01:28:09,612
+Evet ne yapıyoruz?
+
+1685
+01:28:10,212 --> 01:28:10,771
+Tekrar
+
+1686
+01:28:10,771 --> 01:28:13,292
+hopital kuralını uyguluyoruz arkadaşlar.
+
+1687
+01:28:13,971 --> 01:28:15,612
+Ne diyorum? Gene bölü çizgisi
+
+1688
+01:28:15,612 --> 01:28:17,532
+bakın limit x0'a giderken
+
+1689
+01:28:17,532 --> 01:28:18,851
+payın türevi
+
+1690
+01:28:18,851 --> 01:28:21,431
+bölü paydanın türevi. Payın türevini
+
+1691
+01:28:21,431 --> 01:28:22,632
+alıyorum bakın. Eksi 2
+
+1692
+01:28:22,632 --> 01:28:24,372
+türevinin olur.
+
+1693
+01:28:24,372 --> 01:28:26,492
+Bütün türevinin olur.
+
+1694
+01:28:27,372 --> 01:28:28,471
+2 tane
+
+1695
+01:28:28,471 --> 01:28:30,431
+eksisi de var. 4 tane sinüs
+
+1696
+01:28:30,431 --> 01:28:31,832
+2x bölü
+
+1697
+01:28:31,832 --> 01:28:33,311
+2 tane
+
+1698
+01:28:33,311 --> 01:28:37,891
+arkadaşlar
+
+1699
+01:28:37,891 --> 01:28:39,992
+kapatır mısınız?
+
+1700
+01:28:42,692 --> 01:28:43,011
+Evet.
+
+1701
+01:28:43,592 --> 01:28:46,112
+Paydanın türevini aldık. Tekrar kontrol ediyoruz
+
+1702
+01:28:46,112 --> 01:28:46,851
+arkadaşlar.
+
+1703
+01:28:49,231 --> 01:28:49,592
+Bakın
+
+1704
+01:28:49,592 --> 01:28:52,112
+0'a giderken eksikliğe gitti.
+
+1705
+01:28:53,551 --> 01:28:55,452
+Pardon özür. 0'a gitti.
+
+1706
+01:28:55,632 --> 01:28:56,851
+Benim de kafamı karıştırdım.
+
+1707
+01:28:59,332 --> 01:29:00,992
+Evet. Ne yapıyoruz?
+
+1708
+01:29:00,992 --> 01:29:02,172
+Sitesi
+
+1709
+01:29:02,172 --> 01:29:02,792
+0'a gitti.
+
+1710
+01:29:03,311 --> 01:29:03,832
+Sitesi
+
+1711
+01:29:03,832 --> 01:29:04,532
+0'a gitti.
+
+1712
+01:29:04,532 --> 01:29:09,051
+Ne yapıyoruz?
+
+1713
+01:29:09,051 --> 01:29:10,051
+Allah'a yardım et.
+
+1714
+01:29:10,051 --> 01:29:22,051
+Ne yapıyoruz?
+
+1715
+01:29:22,051 --> 01:29:24,672
+Kanka çok yoğun değil ya.
+
+1716
+01:29:26,511 --> 01:29:27,912
+Mardım bir kalabalık kanka.
+
+1717
+01:29:28,311 --> 01:29:29,532
+Yardım edin mi?
+
+1718
+01:29:29,971 --> 01:29:31,792
+Hocam güneyden geliyor.
+
+1719
+01:29:31,792 --> 01:29:56,252
+Evet arkadaşlar kapatır mısınız mikrofonumuzu?
+
+1720
+01:29:41,363 --> 01:29:44,163
+Ben kapatamıyorum, göremiyorum çünkü arkadaşlar.
+
+1721
+01:29:45,623 --> 01:29:46,323
+Şöyle abi.
+
+1722
+01:29:48,743 --> 01:29:53,003
+Hocam duymuyor galiba ya, siz susturamıyor musunuz biz ismini söylesek?
+
+1723
+01:29:54,123 --> 01:29:57,803
+Ama göremiyorum ekranı da o yüzden onun ismini görsem kapatacağım.
+
+1724
+01:29:58,743 --> 01:30:00,543
+Ya o videoyu filmimizi görüp ne yapacağız?
+
+1725
+01:30:03,203 --> 01:30:05,063
+Ay ne derdi, hadi görüşürüz.
+
+1726
+01:30:05,063 --> 01:30:05,743
+Sağ olun.
+
+1727
+01:30:10,899 --> 01:30:36,920
+Gençlik işte, bir an kaynadılar, evet. Evet, bırakıp gidiyor ya da. Şimdi ne yapıyoruz? Kaldık şurada. Payın türevi dedik, faydanın türevini yazdık. Ne yapıyoruz? Kontrol ediyoruz. Pay bakın, sinüs 0, 0'dır. 0'a gitti, fayda da 0'a gitti. O zaman tekrar Hoptal kuralını uyguluyorum. Ne diyorum? Payın türevi.
+
+1728
+01:30:36,920 --> 01:31:05,920
+eksi 2 çarpı, eksi 2 çarpı, kosinüs x değil mi? Sinüs 2x'in türevine gelir. 2 tane kosinüs, bir de buradan 4'ümüz var. 8, kosinüs 2x. Bölü, faydanın türevine gelir. 2 tane e üzeri 2x. Tamam mı? Şimdi kontrol edersek, bakın, kosinüs 0, 1'dir. Buradan eksi 2'ye gider. Buradan da artı 8, bölü 2. Yani sonuçta 6 bölü 2'den 3 olarak buluruz. Bakın, 2 kez her kuralını uyguluyorum arkadaşlar.
+
+1729
+01:31:11,347 --> 01:31:12,488
+Evet arkadaşlar.
+
+1730
+01:31:13,988 --> 01:31:15,488
+Üçüncü bir soru.
+
+1731
+01:31:15,488 --> 01:31:17,807
+Ben de bana da yardımcı olsun ya. Ben yetişemiyorum.
+
+1732
+01:31:20,948 --> 01:31:23,148
+Bir taktik ara verelim mi?
+
+1733
+01:31:24,368 --> 01:31:25,127
+Bir beş taktik ara.
+
+1734
+01:31:55,636 --> 01:31:59,036
+Telefonu varsa size arayın bence telefonu sürdü diye. Haberi yok bence mi?
+
+1735
+01:31:59,256 --> 01:32:00,496
+Daptayı verin, çeke buz abi.
+
+1736
+01:32:04,020 --> 01:32:04,620
+onları çekersin.
+
+1737
+01:32:12,115 --> 01:32:13,235
+Valla pembe diyecektim biliyor musun?
+
+1738
+01:32:13,235 --> 01:32:14,115
+Pembe ne oğlum?
+
+1739
+01:32:14,115 --> 01:32:15,115
+Pembe abi.
+
+1740
+01:32:16,115 --> 01:32:17,115
+Atlatma lazım burayı.
+
+1741
+01:32:29,908 --> 01:32:31,908
+Ben seni yapacağım, bir tanesi kalmayacağım.
+
+1742
+01:32:33,508 --> 01:32:35,508
+Bir tanesi mi koyacağım, doğal.
+
+1743
+01:32:35,508 --> 01:32:36,908
+Vallahi yaptın böyle.
+
+1744
+01:32:36,908 --> 01:32:37,908
+Alkın var.
+
+1745
+01:32:37,908 --> 01:32:38,908
+Börek...
+
+1746
+01:32:39,908 --> 01:32:41,908
+Aklıda börek keserken falan bir tane çekerken.
+
+1747
+01:32:41,908 --> 01:32:43,908
+Bir sır zamanı...
+
+1748
+01:32:43,908 --> 01:32:44,908
+Ne kere?
+
+1749
+01:32:44,908 --> 01:32:46,908
+CZN [öğrenci] diye koyarım.
+
+1750
+01:32:46,908 --> 01:32:47,908
+CZN koyayım.
+
+1751
+01:32:47,908 --> 01:32:48,908
+Gilerken evet.
+
+1752
+01:32:48,908 --> 01:32:49,908
+Gilerken börek doğran.
+
+1753
+01:33:17,427 --> 01:33:25,287
+[kişisel bilgi]
+
+1754
+01:33:36,724 --> 01:33:40,384
+Bu arada kalıyor öğretmiştir. Onları öğretmiyor.
+
+1755
+01:34:24,979 --> 01:34:31,979
+bu konuları
+
+1756
+01:34:41,140 --> 01:34:42,140
+[kişisel bilgi]
+
+1757
+01:34:42,140 --> 01:34:43,140
+Sen bulamaca özellikler.
+
+1758
+01:34:43,140 --> 01:34:44,140
+[kişisel bilgi]
+
+1759
+01:34:44,140 --> 01:34:46,140
+[kişisel bilgi]
+
+1760
+01:34:46,140 --> 01:34:47,140
+Bir de...
+
+1761
+01:34:47,140 --> 01:34:48,140
+[kişisel bilgi]
+
+1762
+01:34:48,140 --> 01:34:50,140
+[kişisel bilgi]
+
+1763
+01:34:50,140 --> 01:34:52,140
+[kişisel bilgi]
+
+1764
+01:34:52,140 --> 01:34:53,140
+Niye bırakıyorsun?
+
+1765
+01:34:53,140 --> 01:34:54,140
+Ve kendi çöpüme tak.
+
+1766
+01:34:54,140 --> 01:34:56,140
+Bana ver, bana atarım.
+
+1767
+01:34:56,140 --> 01:34:57,140
+Ha.
+
+1768
+01:34:57,140 --> 01:34:58,140
+Çalış köpek.
+
+1769
+01:35:00,140 --> 01:35:02,140
+[kişisel bilgi]
+
+1770
+01:35:02,140 --> 01:35:03,140
+[kişisel bilgi]
+
+1771
+01:35:03,140 --> 01:35:06,140
+Yarın ne?
+
+1772
+01:35:06,140 --> 01:35:07,140
+[kişisel bilgi]
+
+1773
+01:35:07,140 --> 01:35:08,140
+Bu, yarın.
+
+1774
+01:35:08,140 --> 01:35:09,140
+[kişisel bilgi]
+
+1775
+01:35:09,140 --> 01:35:11,140
+[kişisel bilgi]
+
+1776
+01:35:11,140 --> 01:35:12,140
+[kişisel bilgi]
+
+1777
+01:35:12,140 --> 01:35:13,140
+[kişisel bilgi]
+
+1778
+01:35:13,140 --> 01:35:15,140
+[kişisel bilgi]
+
+1779
+01:35:15,140 --> 01:35:16,140
+Ben kazaklası başlayacak.
+
+1780
+01:35:16,140 --> 01:35:18,140
+[kişisel bilgi]
+
+1781
+01:35:18,140 --> 01:35:19,140
+Tamam.
+
+1782
+01:35:21,140 --> 01:35:25,140
+Başlar, mikrofonu açık gibi demedim ama paylaştık.
+
+1783
+01:35:25,140 --> 01:35:26,140
+Hatılamış şu anda.
+
+1784
+01:35:26,140 --> 01:35:28,140
+Biliyor musunuz kimin açık?
+
+1785
+01:35:31,891 --> 01:35:33,891
+Hocam, biz görebiliyoruz ama...
+
+1786
+01:35:33,891 --> 01:35:37,891
+Hayır, bu için sessiz, sessiz yani, sessiz.
+
+1787
+01:35:39,271 --> 01:35:40,711
+İsmi biliyor musunuz?
+
+1788
+01:35:41,152 --> 01:35:43,131
+Evet, biliyoruz hocam, görebiliyoruz biz.
+
+1789
+01:35:43,612 --> 01:35:44,771
+Söyle ismine bakayım.
+
+1790
+01:35:46,471 --> 01:35:48,051
+[öğrenci].
+
+1791
+01:35:48,671 --> 01:35:49,711
+Söyle yazıyorsun buraya.
+
+1792
+01:36:05,203 --> 01:36:24,764
+çeş
+
+1793
+01:36:15,475 --> 01:38:33,475
+...
+
+1794
+01:38:24,756 --> 01:38:26,336
+Bir daha ver.
+
+1795
+01:38:27,655 --> 01:38:28,276
+Bana buyur.
+
+1796
+01:38:31,476 --> 01:38:33,115
+Ama boyu yaptık ya.
+
+1797
+01:38:33,456 --> 01:38:34,476
+O tarafa da.
+
+1798
+01:38:35,256 --> 01:38:36,856
+Çaba kullanıyor sanırım.
+
+1799
+01:38:36,996 --> 01:38:38,316
+Dışarıda sesler geliyor.
+
+1800
+01:38:39,155 --> 01:38:40,496
+Şöyle bir sıkıntı var.
+
+1801
+01:38:50,195 --> 01:38:51,076
+bu zaman doyar.
+
+1802
+01:39:01,684 --> 01:39:02,684
+[öğrenci]!
+
+1803
+01:39:33,652 --> 01:39:36,091
+Ben şimdi geri çektim bana gece ayarlarla neden devam et?
+
+1804
+01:39:36,152 --> 01:39:38,471
+Kapatıp açayım mı? Deneyelim. Olmazsa.
+
+1805
+01:39:38,572 --> 01:39:39,412
+Ben de taklaya soruyorum.
+
+1806
+01:39:39,412 --> 01:39:41,712
+Aklaya devam edelim. Çok az kısmı kaldı.
+
+1807
+01:39:43,712 --> 01:39:46,471
+Hocam kapatıp devam etmeyelim. Ben de izlemeyeceğim.
+
+1808
+01:39:47,252 --> 01:39:47,771
+Kendim.
+
+1809
+01:39:49,292 --> 01:39:49,771
+Kri bakıyor.
+
+1810
+01:39:51,832 --> 01:39:54,152
+Hocam böyle ne yapsanız saygı şıklayacak.
+
+1811
+01:39:54,391 --> 01:39:56,032
+Oğlum krivet seni buraya mı veriyorsun?
+
+1812
+01:39:57,112 --> 01:40:00,172
+Açabilir miyim? Tekrar bir demek istiyorum. Olacak mı diye.
+
+1813
+01:40:00,172 --> 01:40:05,811
+Hocam fayda olmayacak bu zaman bu ders. Biz de sonradan izleyemeyeceğiz.
+
+1814
+01:40:07,212 --> 01:40:07,591
+Öyle mi?
+
+1815
+01:40:07,591 --> 01:40:12,752
+Hocam çerçeğe gitmiyorlar diyor. Sanırsam şey kapatıp açınca kaçırız.
+
+1816
+01:40:14,051 --> 01:40:15,192
+Yeni sanırsam.
+
+1817
+01:40:15,192 --> 01:40:16,572
+Ne yapayım siz söyleyin.
+
+1818
+01:40:17,792 --> 01:40:19,612
+Hocam o sorunu düzelttiler.
+
+1819
+01:40:19,952 --> 01:40:22,692
+Hocam siz yok sayın yani umurunuzda olmasın bence.
+
+1820
+01:40:24,692 --> 01:40:26,172
+Rahatsızlık mıydı?
+
+1821
+01:40:26,172 --> 01:40:30,712
+Hocam bile yapmayacak bir şey yok. En azından şu an görelim.
+
+1822
+01:40:30,851 --> 01:40:34,112
+Sonra kayıptan bakacağımızda yine bu çocuğun sesi duyulacak her türlü.
+
+1823
+01:40:34,112 --> 01:40:37,832
+Tamam o zaman devam ediyorum. Çok sinir bozucu.
+
+1824
+01:40:38,792 --> 01:40:43,452
+Sizin dikkatinizi etkiliyorsa siz kendi haparlığınızı kısın hocam.
+
+1825
+01:40:43,652 --> 01:40:46,292
+Kafanız karışmasın yani anlatırken sizi etkilemesin en azından.
+
+1826
+01:40:46,431 --> 01:40:47,112
+Kendi haparlığınızı kısarsanız.
+
+1827
+01:40:48,332 --> 01:40:49,131
+Nasıl duyacaksınız?
+
+1828
+01:40:49,131 --> 01:40:49,492
+Hocam.
+
+1829
+01:40:51,492 --> 01:40:54,551
+Sadece konuşmaya çalıştık onu saymıyorum.
+
+1830
+01:40:54,712 --> 01:40:57,712
+Evet çok komik bir şey. İlk yazılık yazısında böyle bir şeye rastladı.
+
+1831
+01:40:57,712 --> 01:41:05,311
+Evet x bir bölü 2'ye giderken dedik. Sekant x bölü bir artı tanjant x'in imicinin ona soruyor arkadaşlar.
+
+1832
+01:41:06,051 --> 01:41:09,891
+X bir bölü 2'ye giderken sekant x bölü 2'ye sonsuzdur.
+
+1833
+01:41:09,891 --> 01:41:11,252
+Payda da sonsuzdur.
+
+1834
+01:41:11,252 --> 01:41:14,032
+Yani sonsuz bölü sonsuz belir size.
+
+1835
+01:41:14,292 --> 01:41:15,832
+O bir kalıysa değil mi?
+
+1836
+01:41:16,091 --> 01:41:16,872
+Ayın türevi.
+
+1837
+01:41:17,931 --> 01:41:19,891
+Bölü paydanın türevi.
+
+1838
+01:41:20,131 --> 01:41:22,051
+Sekant'ın türevi nedir arkadaşlar?
+
+1839
+01:41:22,292 --> 01:41:25,011
+Sekant, paydanın türevini alıyoruz.
+
+1840
+01:41:25,011 --> 01:41:28,811
+Tanjant'ın türevi nedir? Sekant karedir.
+
+1841
+01:41:29,292 --> 01:41:30,952
+Yazdığımıza bakın şu.
+
+1842
+01:41:31,311 --> 01:41:32,872
+Tanjant x bölü sekant x.
+
+1843
+01:41:32,971 --> 01:41:35,931
+Bu da düzenlenirse sinisk x olur.
+
+1844
+01:41:35,931 --> 01:41:40,492
+Neye eşittir? Birye eşittir.
+
+1845
+01:41:41,172 --> 01:41:42,311
+Tamam mı?
+
+1846
+01:41:43,332 --> 01:41:45,431
+Gelelim dördüncüye.
+
+1847
+01:41:46,172 --> 01:41:48,212
+İlk başına giderken elenik.
+
+1848
+01:41:48,212 --> 01:41:55,231
+Hocam gilen birini bence host yapın.
+
+1849
+01:41:55,332 --> 01:41:56,971
+O atsın gruptan ya da sesli alsın.
+
+1850
+01:42:02,323 --> 01:42:07,663
+Ya hocam bence, yani çok sıkıntı olmayacaksak kapatalım çünkü bir şey anlaşılmıyor.
+
+1851
+01:42:07,663 --> 01:42:08,384
+Ya da dondu.
+
+1852
+01:42:08,384 --> 01:42:09,003
+Hocam geldi.
+
+1853
+01:42:09,003 --> 01:42:10,483
+Hocam gördü, hiç gitti.
+
+1854
+01:42:11,203 --> 01:42:12,823
+Yani biz de oraya geldik 3 kişi.
+
+1855
+01:42:13,384 --> 01:42:21,283
+Hocam aradık da hiç şey yok. Yani telefon da yok. Mesaj yazdık falan da, bir Instagram'da. Ama şey yok efendim yani. Ulaşamıyoruz.
+
+1856
+01:42:21,463 --> 01:42:24,783
+[öğrenci] kardeşim, eğer bu kaydız dersen çok geçmiş olsun.
+
+1857
+01:42:40,148 --> 01:42:49,488
+Hoca düştü. Hoca düştü galiba ya. Dur [öğrenci], [öğrenci]. Kim olsa olduysa sesini kapatsın ya. [öğrenci], [öğrenci], ne olur buradayım da.
+
+1858
+01:42:53,011 --> 01:42:56,131
+Ya, of, [öğrenci] daha fena.
+
+1859
+01:42:58,271 --> 01:42:59,351
+İki kişi mi var?
+
+1860
+01:42:59,351 --> 01:43:00,692
+[öğrenci], ben burada değil.
+
+1861
+01:43:00,971 --> 01:43:02,051
+Bırakın, dinleyelim ya.
+
+1862
+01:43:02,851 --> 01:43:05,631
+Abi, diyorum ya, kapatıp açsa yarıya düşecek sayı var ya.
+
+1863
+01:43:05,631 --> 01:43:06,851
+Podcast, bilmeyi ki ya.
+
+1864
+01:43:08,271 --> 01:43:10,211
+İki kişi mi var şimdi, bir tane değil miydi?
+
+1865
+01:43:11,211 --> 01:43:11,831
+Yok, bir kişi.
+
+1866
+01:43:12,911 --> 01:43:20,631
+İşte, [öğrenci] kardeşimiz host oldu ama o da yok galiba.
+
+1867
+01:43:20,631 --> 01:43:22,471
+Akka, hoca nasıl düştü?
+
+1868
+01:43:23,351 --> 01:43:25,511
+Hoca düştü bu arada, hoca çıkmadı.
+
+1869
+01:43:26,051 --> 01:43:28,011
+Hoca, nüterçübaha mı gitti büyük bir şey?
+
+1870
+01:43:28,152 --> 01:43:29,331
+Görünüşü yok.
+
+1871
+01:43:29,591 --> 01:43:32,371
+Hoca ayarlamaya çalışırken galiba düştü ya.
+
+1872
+01:43:32,911 --> 01:43:34,791
+Kanka, hostluğu nasıl alabiliyoruz?
+
+1873
+01:43:35,791 --> 01:43:37,652
+Hayır, [öğrenci]'in bize vermesi lazım.
+
+1874
+01:43:37,991 --> 01:43:39,612
+Beni hostluğunuz yapın lan.
+
+1875
+01:43:40,471 --> 01:43:42,431
+Durun, durun, durun, durun.
+
+1876
+01:43:42,471 --> 01:43:43,152
+Bir saniye şimdi.
+
+1877
+01:43:43,811 --> 01:43:44,851
+[öğrenci]'in burada olması.
+
+1878
+01:43:44,951 --> 01:43:46,032
+[öğrenci]'i tanıyan var mı?
+
+1879
+01:43:46,112 --> 01:43:47,091
+Ya da çıbazı sanıyorum.
+
+1880
+01:43:47,371 --> 01:43:48,112
+[öğrenci]'i arayalım.
+
+1881
+01:43:48,112 --> 01:43:49,152
+[öğrenci], geçen gün uyuyor ya.
+
+1882
+01:43:50,631 --> 01:44:20,612
+[öğrenci] uyuyor ya.
+
+1883
+01:44:10,739 --> 01:44:13,019
+Oğlum [öğrenci] çıkınca hostluk [öğrenci]'ye geçmesin.
+
+1884
+01:44:20,279 --> 01:44:23,359
+Bu arada burada konuşuyoruz da bunlar da kayın altında olmuyor.
+
+1885
+01:44:23,500 --> 01:44:24,619
+O yüzden dikkatli olmuş.
+
+1886
+01:44:25,099 --> 01:44:26,500
+Yo hoca kaydediyor.
+
+1887
+01:44:27,159 --> 01:44:28,479
+Oğlum arkadaşlar [öğrenci]'e gidiyor.
+
+1888
+01:44:29,760 --> 01:44:31,359
+Çünkü hani recording diyor.
+
+1889
+01:44:31,579 --> 01:44:32,659
+[öğrenci]'e mi gidiyor bunlar?
+
+1890
+01:44:34,099 --> 01:44:35,659
+[öğrenci] kardeşim çok güzel bir.
+
+1891
+01:44:35,659 --> 01:44:37,279
+[öğrenci] mi kaydediyor?
+
+1892
+01:44:37,279 --> 01:44:41,819
+Hoca düştüğü için yayını da koyamayacak.
+
+1893
+01:44:42,019 --> 01:44:43,019
+Dersi dinleyemeyeceğiz bir daha.
+
+1894
+01:44:43,359 --> 01:44:44,340
+Hayır abi bu adet.
+
+1895
+01:44:44,599 --> 01:44:45,760
+Çok güzel abi.
+
+1896
+01:44:46,059 --> 01:44:47,800
+Bu dikkatli anı koyun için abi.
+
+1897
+01:44:48,519 --> 01:44:48,979
+Ay çok.
+
+1898
+01:44:50,559 --> 01:44:52,000
+Beni bilecan mısın ya?
+
+1899
+01:44:52,139 --> 01:44:54,380
+Ben [öğrenci]'i arıyorum.
+
+1900
+01:44:55,239 --> 01:44:55,779
+Ara ara.
+
+1901
+01:44:56,099 --> 01:44:56,359
+Ara.
+
+1902
+01:44:56,840 --> 01:44:58,099
+Beyler müzik falan var mı?
+
+1903
+01:44:58,099 --> 01:44:58,880
+Biraz müzik dinleyelim.
+
+1904
+01:44:59,719 --> 01:45:00,420
+Dur bekle.
+
+1905
+01:45:01,059 --> 01:45:02,319
+Ben nasıl vereceğim ki o?
+
+1906
+01:45:03,159 --> 01:45:04,819
+Headsetle katılıyorum dersen.
+
+1907
+01:45:05,119 --> 01:45:06,639
+[öğrenci] abi sen mi dertiyorsun?
+
+1908
+01:45:07,279 --> 01:45:08,559
+Ne?
+
+1909
+01:45:08,920 --> 01:45:10,559
+Abi [öğrenci] telefonunun sesi.
+
+1910
+01:45:10,559 --> 01:45:11,800
+Ben ikinci kere alıyorum.
+
+1911
+01:45:11,939 --> 01:45:13,300
+Rahatsız etme modunu almış.
+
+1912
+01:45:16,300 --> 01:45:17,800
+Oh.
+
+1913
+01:45:17,800 --> 01:45:18,139
+Ne oluyor?
+
+1914
+01:45:18,760 --> 01:45:19,460
+Görüntü var mı?
+
+1915
+01:45:20,380 --> 01:45:21,279
+Görüntü var var.
+
+1916
+01:45:21,739 --> 01:45:22,960
+Beyler film açsın o da film izleyin.
+
+1917
+01:45:23,039 --> 01:45:24,539
+Ya abi saçmalamayın.
+
+1918
+01:45:24,539 --> 01:45:25,679
+Açalım abi açalım.
+
+1919
+01:45:27,059 --> 01:45:28,300
+Beyler kaydedilmiyor değil mi?
+
+1920
+01:45:29,099 --> 01:45:32,979
+Kaydediliyorlar.
+
+1921
+01:45:33,979 --> 01:45:36,380
+Ben kısabı şey açayım böyle 20 dakikalık falan.
+
+1922
+01:45:36,380 --> 01:45:37,159
+Ben de.
+
+1923
+01:45:38,000 --> 01:45:38,399
+Seyir mi?
+
+1924
+01:45:38,399 --> 01:45:39,899
+20 dakika şey aç.
+
+1925
+01:45:41,019 --> 01:45:41,319
+Aaa.
+
+1926
+01:45:41,760 --> 01:45:42,659
+From good night night.
+
+1927
+01:45:42,859 --> 01:45:43,219
+Aç bak.
+
+1928
+01:45:43,399 --> 01:46:00,059
+Ben de.
+
+1929
+01:46:11,796 --> 01:46:13,036
+[öğrenci] uyanmıştır ya.
+
+1930
+01:46:13,756 --> 01:46:14,956
+[öğrenci] ne olur uyan.
+
+1931
+01:46:15,856 --> 01:46:16,775
+Uyanmış [öğrenci].
+
+1932
+01:46:19,775 --> 01:46:21,576
+Belki hoca bir daha içer dersin.
+
+1933
+01:46:22,615 --> 01:46:23,576
+Bakan var mı?
+
+1934
+01:46:24,896 --> 01:46:26,016
+Bakıyorum ben şimdi.
+
+1935
+01:46:26,356 --> 01:46:27,896
+Bakmayın iyi burası. Devam devam.
+
+1936
+01:46:28,396 --> 01:46:29,936
+Oğlum devam devam. Çıkma çıkma.
+
+1937
+01:46:29,936 --> 01:46:30,655
+Aa çıkma.
+
+1938
+01:46:32,476 --> 01:46:32,916
+Aga.
+
+1939
+01:46:35,136 --> 01:46:37,936
+Ol böyle 80 kişiyi bir yere getiremezsin.
+
+1940
+01:46:38,096 --> 01:46:39,115
+Çoğu uyuyor da.
+
+1941
+01:46:39,115 --> 01:46:41,376
+Aynen öyle diyorum ya.
+
+1942
+01:46:41,775 --> 01:46:43,676
+Yayın açsa kafasa yarıya düşecek sayı.
+
+1943
+01:46:45,496 --> 01:46:46,476
+Herkes uyuyor.
+
+1944
+01:46:46,856 --> 01:46:48,615
+Avatar paylaşayım mı? Avatar izleyecek mi?
+
+1945
+01:46:48,695 --> 01:46:50,056
+Kaç gündür Avatar izliyorum.
+
+1946
+01:46:50,096 --> 01:46:50,976
+Avatar çok güzel süre.
+
+1947
+01:46:51,896 --> 01:46:53,936
+Yok lan film değil şey.
+
+1948
+01:46:54,115 --> 01:46:54,856
+İzgi film mi?
+
+1949
+01:46:54,856 --> 01:46:55,796
+İzgi film mi lan?
+
+1950
+01:46:56,155 --> 01:46:58,856
+İzliliyorum ben gönder gelsin.
+
+1951
+01:46:59,615 --> 01:47:00,356
+İzlenin devam.
+
+1952
+01:47:00,956 --> 01:47:03,136
+Ama aa dur. Dublaj değil yalnız.
+
+1953
+01:47:03,655 --> 01:47:05,356
+Oğlum dip türkis falan açın bari ya.
+
+1954
+01:47:05,936 --> 01:47:07,296
+Hayır hayır hayır sakın.
+
+1955
+01:47:07,576 --> 01:47:08,256
+Yapmayın iyi bir şey.
+
+1956
+01:47:08,256 --> 01:47:09,695
+Şimdi siteye giderse kayıt.
+
+1957
+01:47:10,596 --> 01:47:11,476
+İnşallah gitmez.
+
+1958
+01:47:12,216 --> 01:47:12,896
+Giderse.
+
+1959
+01:47:13,275 --> 01:47:16,136
+Giderse bir tek bir şey oluyor.
+
+1960
+01:47:16,536 --> 01:47:17,756
+Bence sinirlenmedi direkt.
+
+1961
+01:47:17,756 --> 01:47:18,655
+Hoca sinirlenmedi.
+
+1962
+01:47:18,775 --> 01:47:19,916
+Hocanın görüntüsü de oldu.
+
+1963
+01:47:20,396 --> 01:47:21,816
+Hocanın görüntüsü de oldu en başta.
+
+1964
+01:47:21,876 --> 01:47:22,516
+Ondan sonra gitti.
+
+1965
+01:47:23,235 --> 01:47:23,876
+Öyle mi oldu?
+
+1966
+01:47:24,356 --> 01:47:25,636
+Ben gördüm hoca bir kala.
+
+1967
+01:47:25,636 --> 01:47:29,256
+Ben şey sanırım ya.
+
+1968
+01:47:29,296 --> 01:47:31,316
+Kapatmaya çalıştı da kendi çıktı sadece.
+
+1969
+01:47:32,076 --> 01:47:32,676
+Dur bakalım.
+
+1970
+01:47:34,176 --> 01:47:35,516
+Avatar açı olsun.
+
+1971
+01:47:35,516 --> 01:47:36,416
+Ben yapıyordum ya.
+
+1972
+01:47:36,476 --> 01:47:38,695
+Hoca dedi bak da olmuyor kapatıp gitti yani.
+
+1973
+01:47:38,775 --> 01:47:40,016
+Hiç irdelemedi bence yani.
+
+1974
+01:47:40,076 --> 01:47:41,716
+Anlatıp falan diye uğraşmadı yani.
+
+1975
+01:47:41,816 --> 01:47:43,836
+Dedi tamam olmuyorsa olmuyor dedi bıraktı yani.
+
+1976
+01:47:44,235 --> 01:47:44,735
+Olur bir şey.
+
+1977
+01:47:44,796 --> 01:47:45,235
+Bir dakika lan.
+
+1978
+01:47:45,976 --> 01:47:46,876
+Oğlum çocuk çıktı mı?
+
+1979
+01:47:49,576 --> 01:47:50,216
+Çocuk çıktı mı?
+
+1980
+01:47:50,216 --> 01:47:50,396
+Evet.
+
+1981
+01:47:50,615 --> 01:47:52,655
+Şarkı dinlemek için başta Spotify'da açalım.
+
+1982
+01:47:52,655 --> 01:47:53,556
+Kapatmış mikrofonu.
+
+1983
+01:47:53,556 --> 01:47:54,416
+Aa [öğrenci] gitti.
+
+1984
+01:47:56,036 --> 01:47:57,615
+Yok [öğrenci] açmış o.
+
+1985
+01:47:57,676 --> 01:47:58,775
+Kapatmış yani mikrofonu.
+
+1986
+01:47:58,996 --> 01:47:59,695
+[öğrenci] kapatmış.
+
+1987
+01:47:59,695 --> 01:48:00,516
+Burada mı peki hala?
+
+1988
+01:48:01,056 --> 01:48:01,876
+Burada burada.
+
+1989
+01:48:02,136 --> 01:48:02,936
+Oğlum hala dersli ama.
+
+1990
+01:48:03,096 --> 01:48:03,596
+Değil lan.
+
+1991
+01:48:04,996 --> 01:48:06,416
+Altta var [öğrenci].
+
+1992
+01:48:06,756 --> 01:48:07,376
+Aa buldum.
+
+1993
+01:48:08,296 --> 01:48:09,456
+Sonunda kapatmış.
+
+1994
+01:48:09,456 --> 01:48:10,596
+Oğlum hala devam ediyor ama.
+
+1995
+01:48:13,716 --> 01:48:15,775
+Ben açayım mı?
+
+1996
+01:48:15,836 --> 01:48:16,796
+Havasar istiyor musun?
+
+1997
+01:48:17,036 --> 01:48:19,176
+Aga adamı o kadar Instagram'dan yazdık.
+
+1998
+01:48:19,256 --> 01:48:20,356
+İlla görmüştür yani.
+
+1999
+01:48:20,356 --> 01:48:21,896
+Umarım be.
+
+2000
+01:48:23,096 --> 01:48:24,336
+Kapatıp git falan olacak.
+
+2001
+01:48:30,515 --> 01:50:56,515
+Bıraklar
+
+2002
+01:50:56,515 --> 01:50:58,515
+Grup 35
+
+2003
+01:50:58,515 --> 01:51:00,515
+Grup 35 miyiz? 34 miyiz? 34
+
+2004
+01:51:00,515 --> 01:51:02,515
+Ne bileyim
+
+2005
+01:51:02,515 --> 01:51:04,515
+Hadi kendinize iyi bakın görüşürüz
+
+2006
+01:51:04,515 --> 01:51:06,515
+Olaya bak
+
+2007
+01:51:06,515 --> 01:51:08,515
+İlk defa dersinlemeye gelin
+
+2008
+01:51:08,515 --> 01:51:10,515
+Hadi görüşürüz
+
+2009
+01:51:10,515 --> 01:51:14,515
+Discord'u WhatsApp'a atacağım
+
+2010
+01:51:14,515 --> 01:51:16,515
+WhatsApp grubunun linkini bile atabilir mi ya
+
+2011
+01:51:16,515 --> 01:51:18,515
+WhatsApp grubu linkini buraya atın da
+
+2012
+01:51:18,515 --> 01:51:20,515
+Bende yok
+
+2013
+01:51:20,515 --> 01:51:22,515
+Admin değilim
+
+2014
+01:51:22,515 --> 01:51:24,515
+[öğrenci] sende var [öğrenci] versene
+
+2015
+01:51:24,515 --> 01:51:26,515
+[öğrenci] WhatsApp'a baksana kanki gibi
+
+2016
+01:51:26,515 --> 01:51:28,515
+Bakıyorum
+
+2017
+01:51:28,515 --> 01:51:54,495
+Bıraklar
+
+2018
+01:51:35,699 --> 01:51:36,699
+en benim kanki.
+
+2019
+01:51:38,699 --> 01:51:41,699
+Kanka ben telefonu değiştirdim, gitmiştim oradan. Tekrar kaydeticem.
+
+2020
+01:51:41,699 --> 01:51:43,699
+Evet tamam, sıkıntı yok.
+
+2021
+01:51:43,699 --> 01:51:44,699
+Eyvallah.
+
+2022
+01:51:46,699 --> 01:51:49,699
+Tamam çıktım ben, discord'u, whatsaba atayım.
+
+2023
+01:51:51,699 --> 01:51:53,699
+Hadi görüşürüz gençler.
+
+2024
+01:51:54,699 --> 01:51:55,699
+Görüşürüz.
+
+2025
+01:51:56,699 --> 01:51:57,699
+Hadi görüşürüz.
+
+2026
+01:52:06,676 --> 01:52:07,676
+çeşimdi.

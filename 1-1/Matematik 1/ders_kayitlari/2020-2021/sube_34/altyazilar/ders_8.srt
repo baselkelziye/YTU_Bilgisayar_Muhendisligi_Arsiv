@@ -1,0 +1,5455 @@
+1
+00:01:19,219 --> 00:01:24,859
+Merhaba arkadaşlar. Nasılsınız? İyisinizdir inşallah. Ses geliyor mu?
+
+2
+00:01:25,120 --> 00:01:28,599
+Merhaba hocam. Ses geliyor. İyiyiz. Teşekkür ederiz. Sizler nasılsınız?
+
+3
+00:01:28,799 --> 00:01:30,060
+Ben de iyiyim. Çok sağ olun.
+
+4
+00:01:31,000 --> 00:01:37,239
+Evet. Geçen hafta en son üstel fonksiyon, logaritma fonksiyonlar. Onlardan bahsetmiştik.
+
+5
+00:01:37,620 --> 00:01:40,640
+Şimdiki konu başlığımızda ters trigonometrik fonksiyonlar.
+
+6
+00:01:41,099 --> 00:01:45,019
+Ters trigonometrik fonksiyonlar da trigonometrik fonksiyonları biliyoruz.
+
+7
+00:01:45,019 --> 00:01:51,479
+Sinüs, kosünüs, tanjant, kotanjant, sekant ve kosekant. Bunların tersine de ters trigonometrik fonksiyonlar diyeceğiz.
+
+8
+00:01:51,920 --> 00:01:55,700
+Tabii bir fonksiyonun tersinden bahsedebilmek için geçen hafta da konuşmuştuk.
+
+9
+00:01:55,799 --> 00:01:58,740
+O fonksiyonun birebir olması gerekir demiştik.
+
+10
+00:01:59,019 --> 00:02:06,239
+Onun için de buradaki parantez içinde yazdığım fonksiyonlar an itibariyle yani tanım aralıklarını biliyoruz.
+
+11
+00:02:06,299 --> 00:02:12,740
+Birebir değiller ama biz bunların tanım aralıklarını kısıtlayarak birebir olacak şekilde kısıtlayıp
+
+12
+00:02:12,740 --> 00:02:15,240
+o zaman tersinden bahsedebiliriz diyeceğiz.
+
+13
+00:02:15,599 --> 00:02:19,259
+Buraya da yazdığımız ayetlerin altı temel trigonometrik fonksiyon birebir değildir.
+
+14
+00:02:19,620 --> 00:02:23,620
+Fakat tanım kümelerinin birebir oldukları aralıklara kısıtlayabiliriz.
+
+15
+00:02:23,879 --> 00:02:27,439
+Şimdi bunların ben şekil olarak hepsini şöyle aynı anda aldım.
+
+16
+00:02:27,540 --> 00:02:28,680
+Aklımızda kalsın diye.
+
+17
+00:02:29,219 --> 00:02:35,240
+Trigonometrik fonksiyonları birebir yapan tanım kümesi kısıtlamaları diye başlığı da attım arkadaşlar.
+
+18
+00:02:35,240 --> 00:02:40,099
+Bakın şöyle hepsi örneğin ilk bir tane fonksiyonumuz tünüs x fonksiyonu.
+
+19
+00:02:40,159 --> 00:02:42,240
+Bunun biliyorsunuz tanım aralığı tüm real sayılardı.
+
+20
+00:02:43,259 --> 00:02:49,639
+Onun için ben bunun çünkü o tüm real sayılar olduğunu hatırlarsanız şöyle şekil her iki iki pi periyodluydu.
+
+21
+00:02:49,740 --> 00:02:52,699
+Her iki eksene dalgalar yaparak çizilirdi.
+
+22
+00:02:53,159 --> 00:02:57,539
+Zaten biz geometrik olarak da tek fonksiyonu nasıl da bakardık?
+
+23
+00:02:57,659 --> 00:02:59,159
+Hani iki üç yolla bakılırdı.
+
+24
+00:02:59,159 --> 00:03:01,259
+Şöyle yatay bir doğru çizerdik.
+
+25
+00:03:01,740 --> 00:03:05,319
+Sadece grafiği tek bir noktada kesiyorsa birebirdir deriz.
+
+26
+00:03:05,399 --> 00:03:14,360
+Onun için bunu şöyle hayal gücümüzü kullanarak düşünürsek sinüs fonksiyonunu yatay bir doğru ile birçok noktada kestiği için birebir olmayacaktır.
+
+27
+00:03:14,420 --> 00:03:15,400
+Onun için ben ne yapıyorum?
+
+28
+00:03:15,500 --> 00:03:24,479
+Bunun tanım kümesini eksi pi bölü iki artı pi bölü iki arasına kısıtlayarak şu an gördüğüm sinüs fonksiyonu birebirdir diyorum.
+
+29
+00:03:24,480 --> 00:03:28,319
+Bakın yatay doğru ile kestiğimizde tek birer noktada kesiyor.
+
+30
+00:03:28,400 --> 00:03:29,319
+Onun için bu birebirdir.
+
+31
+00:03:29,379 --> 00:03:32,800
+Onun için ben bunun tersinden bahsedebileceğim biraz sonra.
+
+32
+00:03:33,039 --> 00:03:33,479
+Tamam mı?
+
+33
+00:03:33,759 --> 00:03:38,020
+Bu görüntü kümesi de zaten gördüğümüz gibi eksi bir ile artı bir aralığında.
+
+34
+00:03:38,360 --> 00:03:40,479
+Benzer şekilde kosünüs x fonksiyonu.
+
+35
+00:03:41,479 --> 00:03:46,520
+Bunun da tanım kümesini sıfır pi aralığına kısıtladığımda birebirdir diyeceğim.
+
+36
+00:03:46,640 --> 00:03:50,420
+Görüntü kümesi gene değişimede eksi bir artı birdir diyoruz.
+
+37
+00:03:50,860 --> 00:03:53,479
+Yine gelelim tanjant fonksiyonumuza.
+
+38
+00:03:53,479 --> 00:03:57,840
+Tanjant x'in de tanım aralığını açık tabii buralar.
+
+39
+00:03:58,039 --> 00:04:03,159
+Eksi pi bölü iki artı pi bölü iki açık aralığına kısıtlanırsa birebilir olur.
+
+40
+00:04:03,459 --> 00:04:06,340
+Burada yazılmış k yazılması gerekir.
+
+41
+00:04:06,679 --> 00:04:09,900
+Bunun da görüntü kümesi eksi sonsuz artı sonsuzdur.
+
+42
+00:04:09,979 --> 00:04:14,599
+Bakın görüldüğü gibi bu tek artık tek fonksiyondur diyoruz.
+
+43
+00:04:14,679 --> 00:04:16,480
+Tersinden pardon birebir fonksiyondur.
+
+44
+00:04:17,319 --> 00:04:19,480
+Tersinden bahsedebiliriz diyoruz.
+
+45
+00:04:19,480 --> 00:04:22,120
+Şu anda tek çift bizi ilgilendirmiyor.
+
+46
+00:04:22,279 --> 00:04:23,120
+Yanlış konuştum.
+
+47
+00:04:23,199 --> 00:04:24,340
+Birebir demek istedim.
+
+48
+00:04:24,779 --> 00:04:26,539
+Gelelim kotanjant arkadaşlar.
+
+49
+00:04:27,100 --> 00:04:33,379
+Onun da tanım kümesini sıfır pi'ye kısıtlarsak bu da gene birebir olacaktır.
+
+50
+00:04:33,480 --> 00:04:36,899
+Görüntü kümesi de eksi sonsuz artı sonsuz aralığındadır.
+
+51
+00:04:36,899 --> 00:04:39,120
+Bu şekilde şu şekilde diyoruz.
+
+52
+00:04:39,411 --> 00:04:42,391
+Benzer şekilde sekant fonksiyonu diyelim.
+
+53
+00:04:42,911 --> 00:04:52,751
+Bunun da tanım kümesini sıfır kapalı pi bölü iki açık birleşim pi bölü iki pi kapalı aralığına kısıtlanırsa birebir olur.
+
+54
+00:04:53,291 --> 00:05:01,771
+Görüntü kümesi de eksi sonsuz eksi bir kapalı birleşim bir sonsuz aralığında ya da bunu kısaca şöyle de gösterilir.
+
+55
+00:05:01,771 --> 00:05:05,611
+Bazen böyle de görebiliriz mutlak değer y büyük eşit birdir.
+
+56
+00:05:05,611 --> 00:05:10,751
+Çünkü bunu da açtığımızda bu şekilde de tanım bir aralıktır ya da bu şekilde gösteririz.
+
+57
+00:05:11,331 --> 00:05:23,851
+Yine gelelim kosekant x'imizin de tanım kümesini biz eksi pi bölü iki sıfır açık birleşim sıfır pi bölü iki kapalı aralığına kısıtlarsak birebir olur diyeceğiz.
+
+58
+00:05:23,851 --> 00:05:31,591
+Görüntü kümesi de eksi sonsuz eksi bir kapalı aralığı bir sonsuz aralığındadır diyeceğiz arkadaşlar.
+
+59
+00:05:31,591 --> 00:05:38,911
+Tamam mı? Yani bu durumda biz bu fonksiyonun altı tane trigonotik fonksiyonların tersinden bahsedebileceğiz.
+
+60
+00:05:39,031 --> 00:05:46,072
+Yani tersini söylüyorsam ben sinüsün ters sinüs fonksiyonu dediğimde tanım kümesini böyle düşünüyorum.
+
+61
+00:05:46,271 --> 00:05:50,631
+Pardon yani sinüsü böyle düşünüyorum ki onun tersinden bahsetmiş oluyorum.
+
+62
+00:05:50,631 --> 00:05:56,312
+Çünkü ters fonksiyonun tanım kümesi de fonksiyonun görüntü kümesini eşit olacaktır değil mi?
+
+63
+00:05:56,751 --> 00:06:00,631
+Şimdi burada var mı bir problem? Bunları zaten görmüştük fonksiyonlarda tanıtmıştık.
+
+64
+00:06:01,631 --> 00:06:03,791
+Burada birebir olacak şekilde kısıtladık.
+
+65
+00:06:04,072 --> 00:06:06,312
+Şimdi bunların tersini de söyleyelim.
+
+66
+00:06:06,812 --> 00:06:07,991
+Val mi problem arkadaşlar?
+
+67
+00:06:09,871 --> 00:06:10,551
+Yok sanırım.
+
+68
+00:06:11,572 --> 00:06:14,351
+O zaman şöyle yazdım da zaten.
+
+69
+00:06:14,451 --> 00:06:18,331
+Bu kısıtlanmış fonksiyonlar artık birebir olduklarından tersleri vardır.
+
+70
+00:06:18,331 --> 00:06:20,751
+Ve aşağıdaki şekilde gösterirler arkadaşlar.
+
+71
+00:06:21,011 --> 00:06:21,551
+Şöyle diyoruz.
+
+72
+00:06:21,611 --> 00:06:24,312
+Hani fonksiyonun tersini f üzeri eksi bir ile gösteriyoruz ya.
+
+73
+00:06:24,312 --> 00:06:26,312
+Burada da y eşittir sinüs.
+
+74
+00:06:26,711 --> 00:06:28,471
+Örneğin sinüsün ters fonksiyonunu.
+
+75
+00:06:28,831 --> 00:06:31,192
+Sinüs üzeri eksi bir x diye gösteriyoruz.
+
+76
+00:06:31,611 --> 00:06:34,831
+Veya y eşittir arksinüs x diye kullanacağız.
+
+77
+00:06:35,111 --> 00:06:38,312
+Ben burada arka kullanacağım trigonometriklerin terslerini.
+
+78
+00:06:38,471 --> 00:06:42,991
+Çünkü hiperboliklerde de ters hiperboliklerde de üzeri eksi biri kullanacağım.
+
+79
+00:06:43,471 --> 00:06:44,351
+Karıştırmayalım diye.
+
+80
+00:06:44,671 --> 00:06:46,531
+Yani bunları veriyorum şurada görün diye.
+
+81
+00:06:46,651 --> 00:06:48,151
+Yani tersi böyle de gösterilir.
+
+82
+00:06:48,271 --> 00:06:49,312
+Ama arkları kullanacağım.
+
+83
+00:06:49,312 --> 00:06:53,312
+Onun için trigonometriklerin tersi dediğimizde arksinüs diye hatırlarız.
+
+84
+00:06:54,192 --> 00:06:58,331
+İşte hiperbolik dediğimizde de üzeri eksi bir olursa da karıştırmayız diye düşünüyorum.
+
+85
+00:06:58,451 --> 00:07:00,151
+Onun için ben tekrar söylüyorum.
+
+86
+00:07:00,572 --> 00:07:02,751
+Arkları kullanacağım ters fonksiyonlarda.
+
+87
+00:07:03,072 --> 00:07:03,711
+Tamam mı?
+
+88
+00:07:03,871 --> 00:07:04,711
+Onun için ne diyoruz?
+
+89
+00:07:04,812 --> 00:07:10,271
+İşte sinüsün ters fonksiyonuna sinüs üzeri eksi bir x veya arksinüs x diyeceğiz.
+
+90
+00:07:10,851 --> 00:07:13,291
+Kosinüse de arksinüs x diyeceğim.
+
+91
+00:07:13,471 --> 00:07:16,052
+Tanjantın tersine de arktanjant x.
+
+92
+00:07:16,052 --> 00:07:20,651
+Veya işte tanjant üzeri eksi bir x diye de yazılabilir dediğimiz gibi.
+
+93
+00:07:21,292 --> 00:07:24,491
+Kotanjantın ters fonksiyonuna da arktanjant x diyorum.
+
+94
+00:07:24,831 --> 00:07:27,012
+Sekantın tersi de arksekant x.
+
+95
+00:07:27,512 --> 00:07:32,052
+Kosekantın ters fonksiyonuna da arktanjant x diye isimlendirmiş olacağız.
+
+96
+00:07:32,792 --> 00:07:33,552
+Tamam mı arkadaşlar?
+
+97
+00:07:34,151 --> 00:07:40,391
+Burada da şöyle gene ters fonksiyonumuz arksinüs x y ise
+
+98
+00:07:40,391 --> 00:07:45,331
+Burada x'i çekersek yani ne olur tersini x eşittir sinüs y olur.
+
+99
+00:07:45,531 --> 00:07:46,692
+Bu çift gerektirmelidir.
+
+100
+00:07:46,871 --> 00:07:47,891
+Buradan buraya geçiş.
+
+101
+00:07:47,971 --> 00:07:49,891
+Buradan da bu tarafa geçiş olacaktır.
+
+102
+00:07:50,391 --> 00:07:51,891
+Bu da y ne olacak?
+
+103
+00:07:52,072 --> 00:07:53,051
+Tabii ki tanım aralığımız.
+
+104
+00:07:53,192 --> 00:07:55,451
+Eksi pi bölü iki artı pi bölü iki için diyorum.
+
+105
+00:07:55,572 --> 00:07:56,851
+Şurada sinüs için konuşuyorum.
+
+106
+00:07:57,491 --> 00:08:06,072
+Tabii ki bunun artık arksinüs x'in ters fonksiyonu ya da arksinüs'ün tanım kümesi ne olmuş olacak arkadaşlar?
+
+107
+00:08:06,072 --> 00:08:09,251
+Sinüs fonksiyonunun görüntü kümesi olacak.
+
+108
+00:08:09,432 --> 00:08:13,111
+Yani eksi bir tanım kümesi artı bir aralığındadır diyeceğiz.
+
+109
+00:08:13,312 --> 00:08:17,051
+Görüntü kümesi de eksi pi bölü iki artı pi bölü iki aralığında düşüneceğiz.
+
+110
+00:08:17,431 --> 00:08:19,551
+Bunu yorumlarken de şöyle yorumluyoruz.
+
+111
+00:08:19,631 --> 00:08:22,831
+Yani y sinüsü x olan y'ye eşittir.
+
+112
+00:08:23,379 --> 00:08:29,620
+Ya da işte y eşittir aksinüs x bu aralıkta sinüs y eşittir x olan bir sayıdır.
+
+113
+00:08:29,959 --> 00:08:33,799
+Örneğin şurada diyelim ki y eşittir aksinüs 0 nedir?
+
+114
+00:08:33,899 --> 00:08:35,200
+Şöyle düşüneceğim arkadaşlar.
+
+115
+00:08:35,720 --> 00:08:37,539
+Sinüsü 0 olan açıyı arıyorum.
+
+116
+00:08:37,899 --> 00:08:39,559
+Y eşittir aksinüs 0 dedim.
+
+117
+00:08:40,100 --> 00:08:43,059
+Sinüsü 0 olan açı nedir sinüsü 0 olan açı?
+
+118
+00:08:44,759 --> 00:08:45,600
+0'dır değil mi?
+
+119
+00:08:45,639 --> 00:08:46,759
+Yani y 0'dır.
+
+120
+00:08:46,919 --> 00:08:49,519
+0'da zaten bu aralığın içindedir diyeceğim.
+
+121
+00:08:49,600 --> 00:08:51,480
+Bu şekilde arıyoruz örneğin diyoruz.
+
+122
+00:08:51,480 --> 00:08:53,820
+Evet devam edelim.
+
+123
+00:08:54,840 --> 00:08:58,419
+Gelelim kosinüsün ters fonksiyonuna da ne diyeceğiz?
+
+124
+00:08:58,659 --> 00:09:00,019
+Ark kosinüs x diyeceğiz.
+
+125
+00:09:00,440 --> 00:09:02,179
+Bu da gene çift gerektirmelidir.
+
+126
+00:09:02,319 --> 00:09:05,379
+x'i de çekmek istersem kosinüs y diye yazarım.
+
+127
+00:09:06,440 --> 00:09:11,759
+İşte gene burada y eşittir ark kosinüs x yorumlarken ne diyoruz?
+
+128
+00:09:11,799 --> 00:09:15,559
+0 pi aralığında kosinüs y eşittir x olan sayıdır.
+
+129
+00:09:15,919 --> 00:09:19,259
+Yani kosinüs x olan açıyı arıyorum gibi düşüneceğiz.
+
+130
+00:09:19,259 --> 00:09:21,700
+Bakın burada demin arksinüs 0 dedim.
+
+131
+00:09:22,419 --> 00:09:23,860
+Sinüsü 0 olan açıyı arıyorum.
+
+132
+00:09:23,980 --> 00:09:25,240
+Burada da arksinüs 1.
+
+133
+00:09:25,620 --> 00:09:29,840
+Sinüsü 1 olan açı ya da nedir sinüsü 1 olan açı sizce?
+
+134
+00:09:32,379 --> 00:09:33,539
+Sinüsü 1 olan açı.
+
+135
+00:09:33,539 --> 00:09:38,779
+Aksinüs 1 neye eşittir?
+
+136
+00:09:38,840 --> 00:09:40,259
+Pi bölü 2 eşittir diyeceğim.
+
+137
+00:09:40,480 --> 00:09:40,860
+Tamam mı?
+
+138
+00:09:40,899 --> 00:09:46,159
+Bakın 1 diyorum hani böyle düşünürsünüz uzun uzun ama hani ilk olduğu için uzun uzun yazdım.
+
+139
+00:09:46,240 --> 00:09:47,519
+Mesela 1 eşittir sinüs y.
+
+140
+00:09:47,879 --> 00:09:50,759
+Yani burada y ne olmalı ki 1 olsun diye arıyorum.
+
+141
+00:09:51,019 --> 00:09:53,519
+O zaman aralığımı da biliyorum zaten değil mi?
+
+142
+00:09:53,940 --> 00:09:54,919
+Pi bölü 2'dir diyorum.
+
+143
+00:09:55,019 --> 00:09:56,500
+O da bu aralığın içindedir diyorum.
+
+144
+00:09:56,500 --> 00:10:00,460
+Peki arksinüs kök 3 bölü 2 ne olur?
+
+145
+00:10:02,460 --> 00:10:06,779
+Sinüsü kök 3 bölü 2 olan açıyı arıyorum.
+
+146
+00:10:07,059 --> 00:10:07,680
+Pi bölü 3.
+
+147
+00:10:08,759 --> 00:10:11,759
+Aynen dediğiniz gibi işte düzenlersem ne yapıyorum?
+
+148
+00:10:12,159 --> 00:10:14,620
+Kök 3 bölü 2 eşittir sinüs y diyorum.
+
+149
+00:10:15,139 --> 00:10:16,419
+Y'yi bulmaya çalışıyorum.
+
+150
+00:10:16,580 --> 00:10:18,759
+O da diyorum ki 60 derece.
+
+151
+00:10:19,000 --> 00:10:21,700
+O da gerçekten bu aralığın içine girmiş oluyor.
+
+152
+00:10:22,279 --> 00:10:23,000
+Devam edelim.
+
+153
+00:10:23,000 --> 00:10:26,240
+Peki arksinüs eksi 1 bölü 2 ne eşit olur?
+
+154
+00:10:28,899 --> 00:10:29,519
+Sinüs 30.
+
+155
+00:10:30,559 --> 00:10:31,460
+30 derece.
+
+156
+00:10:31,860 --> 00:10:32,680
+150 değil mi?
+
+157
+00:10:33,180 --> 00:10:33,879
+150 ya.
+
+158
+00:10:34,180 --> 00:10:35,159
+5 pi bölü alsın.
+
+159
+00:10:35,419 --> 00:10:35,759
+Aynen.
+
+160
+00:10:36,360 --> 00:10:41,740
+Yani 60 derece 120 değil mi?
+
+161
+00:10:42,340 --> 00:10:44,480
+Kosinüs 60 1 bölü 2 değil mi?
+
+162
+00:10:44,480 --> 00:10:45,240
+4-4 aynen.
+
+163
+00:10:45,460 --> 00:10:46,960
+Sinüs olsa 50 olurdu.
+
+164
+00:10:47,059 --> 00:10:48,259
+Tamam karıştırdık.
+
+165
+00:10:48,379 --> 00:10:48,559
+Tamam.
+
+166
+00:10:49,039 --> 00:10:51,600
+Yani şöyle düşünemiyorsam ne yapıyorum?
+
+167
+00:10:51,600 --> 00:10:53,240
+Uzun uzun yapıyorum işlemlerimi.
+
+168
+00:10:53,340 --> 00:10:55,259
+Eksi 1 bölü 2 kosinüs y diyorum.
+
+169
+00:10:55,639 --> 00:10:57,019
+Bu y'yi bulmak için de işte.
+
+170
+00:10:57,720 --> 00:11:00,299
+Diyoruz ki pardon 120 derece.
+
+171
+00:11:00,440 --> 00:11:02,379
+O da 0 pi aralığında olacaktı.
+
+172
+00:11:02,879 --> 00:11:04,100
+Doğru bulmuş oluyoruz.
+
+173
+00:11:04,639 --> 00:11:07,799
+Peki arktanjant kök 3 nedir?
+
+174
+00:11:07,960 --> 00:11:10,139
+Tanjantı kök 3 olan açıyı arıyorum değil mi?
+
+175
+00:11:10,139 --> 00:11:12,639
+Evet.
+
+176
+00:11:13,079 --> 00:11:14,379
+Sinüs bölü kosinüsten.
+
+177
+00:11:17,519 --> 00:11:18,980
+Pi bölü 3 60.
+
+178
+00:11:19,519 --> 00:11:19,860
+Aynen.
+
+179
+00:11:20,200 --> 00:11:20,460
+Doğru.
+
+180
+00:11:20,519 --> 00:11:21,319
+60 derece.
+
+181
+00:11:21,759 --> 00:11:24,059
+Pi bölü 3 o da tanjantta neydi?
+
+182
+00:11:25,139 --> 00:11:28,100
+Eksi pi bölü 2 ile artı pi bölü 2 açık aralığındaydı.
+
+183
+00:11:28,240 --> 00:11:29,519
+İşte bu şekilde buluyoruz değil mi?
+
+184
+00:11:29,579 --> 00:11:30,419
+Anlaşıldı arkadaşlar.
+
+185
+00:11:31,700 --> 00:11:34,100
+Ters fonksiyonları da böyle bulmuş oluyoruz.
+
+186
+00:11:34,100 --> 00:11:34,819
+Evet.
+
+187
+00:11:35,579 --> 00:11:37,000
+Grafiklerini de şöyle hemen.
+
+188
+00:11:37,519 --> 00:11:39,039
+Çünkü grafik çizmeyi bilmiyoruz.
+
+189
+00:11:39,120 --> 00:11:41,200
+Ezbere ben buraya tekrar çizdim.
+
+190
+00:11:41,299 --> 00:11:46,579
+Bakın işte kısaca özet olarak sinüsün ters fonksiyonunu aksinüs x dedik.
+
+191
+00:11:46,799 --> 00:11:50,100
+Tanım kümesi işte sinüsün görüntü kümesi demektir.
+
+192
+00:11:50,919 --> 00:11:52,100
+Eksi 1 ile artı 1 aralığındadır.
+
+193
+00:11:52,759 --> 00:11:53,440
+Kapalı aralığında.
+
+194
+00:11:53,559 --> 00:11:54,680
+Ya da şöyle de gösteririz.
+
+195
+00:11:54,759 --> 00:11:57,100
+Mutfaat değer x küçük eşit 1 diye de gösteririz.
+
+196
+00:11:58,100 --> 00:12:00,259
+Görüntü kümesi de pi bölü 2 ile.
+
+197
+00:12:01,460 --> 00:12:03,620
+Pardon şurada eksiyi unutmuşuz arkadaşlar.
+
+198
+00:12:03,980 --> 00:12:04,299
+Tamam mı?
+
+199
+00:12:04,340 --> 00:12:05,379
+Eksi burası tabii ki.
+
+200
+00:12:05,720 --> 00:12:06,620
+Artı pi bölü 2.
+
+201
+00:12:07,340 --> 00:12:08,399
+Silik çıkmamış orada.
+
+202
+00:12:08,779 --> 00:12:09,059
+Evet.
+
+203
+00:12:09,899 --> 00:12:10,840
+Keşke düzeltseydim.
+
+204
+00:12:10,940 --> 00:12:12,079
+Geçen de notu almıştım.
+
+205
+00:12:12,180 --> 00:12:13,340
+Unutmuşum bunu düzeltmeyi.
+
+206
+00:12:13,340 --> 00:12:32,000
+Evet.
+
+207
+00:12:13,984 --> 00:12:19,283
+Evet gelelim burada ark kosünüs de kosünüsün ters fonksiyonuydu.
+
+208
+00:12:19,744 --> 00:12:21,564
+Bunun da gene dedik tanım kümesi nedir?
+
+209
+00:12:21,663 --> 00:12:25,464
+Eksi 1 ile artı 1 aralığı ya da kısaca şunun gibi yazmış olduk.
+
+210
+00:12:25,924 --> 00:12:28,064
+Mutlak değer x küçük eşit 1'dir.
+
+211
+00:12:28,384 --> 00:12:30,704
+Görüntü kümesi de 0 pi aralığındadır.
+
+212
+00:12:31,224 --> 00:12:33,903
+Ark tanjantında grafiği bu şekildedir.
+
+213
+00:12:34,324 --> 00:12:36,764
+Tanım kümesi eksi sonsuz artı sonsuz.
+
+214
+00:12:36,903 --> 00:12:42,304
+Görüntü kümesi de eksi pi bölü 2 ile artı pi bölü 2 aralığındadır demiştik biraz önce de.
+
+215
+00:12:42,304 --> 00:12:46,204
+Gelelim kotanjantın ters fonksiyonu arkotanjanttır.
+
+216
+00:12:46,684 --> 00:12:52,364
+Zaten şunları vermesen bile arkadaşlar biliyoruz ki biz grafikten de bunların tanım kümelerini söyleyebiliriz.
+
+217
+00:12:52,484 --> 00:12:55,324
+Ama gene de altına yazmış oluyoruz aklımızda kalsın diye.
+
+218
+00:12:55,844 --> 00:12:57,484
+Eksi sonsuz artı sonsuzdur.
+
+219
+00:12:57,564 --> 00:13:00,064
+Görüntü kümesi de 0 pi'dir diyoruz.
+
+220
+00:13:00,324 --> 00:13:06,423
+Buradaki noktaların anlamları asimtotlardır ama onları şu an vermediğimiz için sadece şekli böyle kalmış olsun.
+
+221
+00:13:06,423 --> 00:13:08,724
+Yani bunun demek ki pi'de bir asimtotu var.
+
+222
+00:13:09,084 --> 00:13:10,244
+Sıfırda asimtotu var.
+
+223
+00:13:10,324 --> 00:13:12,604
+Onun için nokta nokta yani kesmezleşim.
+
+224
+00:13:13,163 --> 00:13:17,624
+Evet gelelim sekantın ters fonksiyonuna da ark sekant x dedik.
+
+225
+00:13:17,984 --> 00:13:23,524
+Bunun da tanım kümesi mutlak değer x büyük eşit 1 diyoruz.
+
+226
+00:13:23,804 --> 00:13:26,324
+Veya bunu düzenleyebilirdik de nasıl düzenleriz?
+
+227
+00:13:26,444 --> 00:13:29,704
+Eğer pozitif olursa x büyük eşit 1 olur.
+
+228
+00:13:29,704 --> 00:13:34,204
+Veya x küçük eşit eksi 1 aralık olarak da yazabilirsiniz onu.
+
+229
+00:13:34,403 --> 00:13:35,964
+Yazmışız da zaten şuraya.
+
+230
+00:13:36,524 --> 00:13:39,903
+Yani x'in eksi 1'den eksi sonsuz eksi 1.
+
+231
+00:13:40,224 --> 00:13:44,663
+Bir de 1 sonsuz aralığının birleşimi şeklinde de ifade edebilirdiniz bunu arkadaşlar.
+
+232
+00:13:45,184 --> 00:13:49,944
+Görüntü kümesi de 0 küçük eşit 2 küçük eşit pi.
+
+233
+00:13:50,504 --> 00:13:53,283
+G'nin de pi bölü 2'den farklı olması gerekiyor.
+
+234
+00:13:53,364 --> 00:13:54,884
+Bakın orada da noktalar var.
+
+235
+00:13:55,624 --> 00:13:56,824
+Bu şekilde bilelim biz.
+
+236
+00:13:56,824 --> 00:14:02,964
+Sonra ark yani kosekantın ters fonksiyonu da ark kosekant x diyoruz.
+
+237
+00:14:03,044 --> 00:14:07,064
+Bunun da tanım kümesi mutlak değer x büyük eşit 1.
+
+238
+00:14:07,423 --> 00:14:10,444
+Görüntü kümesi de eksi pi bölü 2 ile artı pi bölü 2.
+
+239
+00:14:10,564 --> 00:14:14,784
+Y'nin de 0'dan farklı olması koşuluyla diyoruz arkadaşlar.
+
+240
+00:14:15,764 --> 00:14:17,724
+Yani grafikleri bilmemiz gerekiyor mu?
+
+241
+00:14:18,324 --> 00:14:21,344
+Şu an grafik sana kimse sınavda soramaz.
+
+242
+00:14:21,444 --> 00:14:23,224
+Çünkü eğri çizimini daha vermedik.
+
+243
+00:14:23,224 --> 00:14:28,923
+Bir hafta ya da öbür haftaya eğri çizimine geçersek o zaman hani hatırlamıyorsan alacaksın.
+
+244
+00:14:29,364 --> 00:14:32,844
+Ark kotanjantın eğrisini nasıl çiziyorsak orada size söyleyeceğim.
+
+245
+00:14:32,903 --> 00:14:33,824
+O şekilde çizersin.
+
+246
+00:14:33,923 --> 00:14:36,364
+Şu an sadece fotoğraf gibi izleyeceksiniz.
+
+247
+00:14:36,644 --> 00:14:37,944
+Ama neleri bileceğiz?
+
+248
+00:14:38,304 --> 00:14:40,984
+Tanım kümesini, görüntü kümelerini bilmemiz gerekir.
+
+249
+00:14:41,084 --> 00:14:44,444
+Yani ben şimdi ters trigonometrik fonksiyonların ne olduğunu söyledik.
+
+250
+00:14:44,524 --> 00:14:46,923
+Tanım kümelerini, görüntü kümelerini söylemiş olduk.
+
+251
+00:14:47,163 --> 00:14:47,903
+Bir de ne yapacağız?
+
+252
+00:14:48,024 --> 00:14:48,824
+Türevini bileceğiz.
+
+253
+00:14:48,824 --> 00:14:50,923
+Şu anki bilgilerimiz bunlar olacak.
+
+254
+00:14:51,084 --> 00:14:51,744
+Tamam mı arkadaşlar?
+
+255
+00:14:52,163 --> 00:14:53,624
+Var mı buraya kadar takıldınız diye?
+
+256
+00:14:56,124 --> 00:14:57,124
+Yok sanırım.
+
+257
+00:14:57,244 --> 00:14:57,964
+Devam edelim.
+
+258
+00:15:00,344 --> 00:15:03,004
+Şimdi bir de şunu söyleyeceğim.
+
+259
+00:15:03,844 --> 00:15:06,524
+Arksinüs fonksiyonu tek fonksiyondur.
+
+260
+00:15:07,163 --> 00:15:09,584
+Bir de arktanjant tektir.
+
+261
+00:15:09,683 --> 00:15:11,624
+Diğerler için böyle bir kısıtlama yok.
+
+262
+00:15:11,624 --> 00:15:17,304
+İşte arksekantın arkosinüs bir bölü x'e eşit olduğunu görüyoruz.
+
+263
+00:15:17,564 --> 00:15:20,764
+Bunların ispatları bir iki tanesini arada vereceğim ben.
+
+264
+00:15:20,884 --> 00:15:22,704
+Yani nasıl olduğunu söyleyeceğim.
+
+265
+00:15:23,064 --> 00:15:24,884
+Bazıları da çok uzun olduğu için girmeyeceğim.
+
+266
+00:15:25,044 --> 00:15:27,804
+Yani sadece buraya bilgi olarak yazmış oldum.
+
+267
+00:15:28,124 --> 00:15:28,884
+Tamam mı arkadaşlar?
+
+268
+00:15:29,624 --> 00:15:32,444
+Sadece arksinüsle arktanjant tek.
+
+269
+00:15:32,584 --> 00:15:35,384
+Diğerler için böyle bir kısıtlama yok diyoruz.
+
+270
+00:15:36,004 --> 00:15:36,564
+Gelelim.
+
+271
+00:15:36,564 --> 00:15:41,084
+Şimdi amacımız ters trigonometrik fonksiyonların türevini nasıl bulacağız?
+
+272
+00:15:41,084 --> 00:15:44,744
+Biz zaten ters fonksiyonun türevini almasını biliyoruz.
+
+273
+00:15:45,044 --> 00:15:47,624
+Oradan hareketle kapalı türevini de biliyoruz.
+
+274
+00:15:47,683 --> 00:15:50,044
+Oradan bularak gitmeye çalışalım.
+
+275
+00:15:50,163 --> 00:15:57,084
+Bakın birinci olarak diyelim ki y'e eşitir arksinüs x böyleyse x sinüs y diye yazmaz mıyım şuradan?
+
+276
+00:15:57,204 --> 00:15:57,923
+Yazabilirim.
+
+277
+00:15:58,283 --> 00:16:05,163
+Şimdi burada x'in bağımsız değişken y'nin de fonksiyonu olduğunu düşünerek kapalı türevini uygulayacağım.
+
+278
+00:16:05,163 --> 00:16:06,044
+Tamam mı arkadaşlar?
+
+279
+00:16:06,292 --> 00:16:08,552
+Y'de zaten baralıkta olduğunu biliyoruz.
+
+280
+00:16:08,812 --> 00:16:09,272
+Şimdi ne yapıyorum?
+
+281
+00:16:09,351 --> 00:16:10,091
+Buradan türevi alıyorum.
+
+282
+00:16:10,192 --> 00:16:10,992
+Siz de dikkat edin.
+
+283
+00:16:11,432 --> 00:16:13,492
+X'e göre türevi alıyorum ama Y fonksiyon.
+
+284
+00:16:13,752 --> 00:16:15,012
+X'in türevi 1'dir.
+
+285
+00:16:15,331 --> 00:16:16,532
+Sinüsün türevi de nedir?
+
+286
+00:16:16,652 --> 00:16:17,632
+Kosinüs Y'dir.
+
+287
+00:16:18,091 --> 00:16:21,112
+Y'de fonksiyonsa Y'nin X'e göre türevi.
+
+288
+00:16:21,412 --> 00:16:23,951
+Buradan Y'nin X'e göre türevine ihtiyacım var.
+
+289
+00:16:24,471 --> 00:16:25,292
+Onu çekiyorum.
+
+290
+00:16:25,711 --> 00:16:26,252
+Da ne olur?
+
+291
+00:16:26,451 --> 00:16:27,792
+1 bölü kosinüs Y olur.
+
+292
+00:16:28,732 --> 00:16:31,992
+Şimdi burada kosinüs Y yerine ne yazabilirim?
+
+293
+00:16:32,211 --> 00:16:34,272
+Ben trigonometriden şunları biliyorum değil mi?
+
+294
+00:16:34,272 --> 00:16:37,831
+Yani sinüs kare, kosinüs karenin toplamının 1 olduğunu biliyorum.
+
+295
+00:16:37,951 --> 00:16:42,292
+Şuradan çekersem kosinüs kareyi 1-sinüs kare diye yazar mıyım?
+
+296
+00:16:42,451 --> 00:16:43,831
+Buradan kosinüs Y'e ne olur?
+
+297
+00:16:43,971 --> 00:16:46,872
+Artı eksi kök içinde 1-sinüs kare eşit olur.
+
+298
+00:16:47,372 --> 00:16:52,632
+Bu kosinüs Y'de eksi pi bölük artı pi bölük aralığında pozitif olduğu için bana neyi gerekli?
+
+299
+00:16:52,711 --> 00:16:54,492
+Bunun pozitif kökü gereklidir.
+
+300
+00:16:54,492 --> 00:16:57,612
+Yani kosinüs Y yerine şunu yazmış oldum.
+
+301
+00:16:58,672 --> 00:17:00,792
+Ses mi? Gelmiyor mu ses arkadaşlar?
+
+302
+00:17:00,792 --> 00:17:04,692
+Geliyor hocam.
+
+303
+00:17:06,471 --> 00:17:08,451
+Arkadaşlarım herhalde problem yazıyorlar.
+
+304
+00:17:08,572 --> 00:17:09,172
+Orayı gördüm.
+
+305
+00:17:09,552 --> 00:17:10,892
+Evet şimdi buraya kadar tamam mı?
+
+306
+00:17:11,152 --> 00:17:11,672
+Ne yaptık?
+
+307
+00:17:11,751 --> 00:17:12,552
+Türevini aldım.
+
+308
+00:17:12,632 --> 00:17:14,312
+Kapalı türetmeyi nasılsa biliyorum.
+
+309
+00:17:14,692 --> 00:17:17,552
+Buradan kosinüs Y yerine sinüs cinsinden nasıl yazarım dedim.
+
+310
+00:17:17,951 --> 00:17:18,932
+Şunları da biliyorum.
+
+311
+00:17:19,251 --> 00:17:21,291
+O halde kosinüs Y'e ne yazmış oldum?
+
+312
+00:17:21,291 --> 00:17:26,152
+Kök içinde 1-sinüs kare Y diye yazmış olduk arkadaşlar.
+
+313
+00:17:26,291 --> 00:17:27,672
+Buradaki amaç ne biliyor musunuz?
+
+314
+00:17:27,991 --> 00:17:30,731
+Biz ters fonksiyonun türevini nasıl alırdık?
+
+315
+00:17:31,072 --> 00:17:32,892
+Ters fonksiyonun türevi eşittir.
+
+316
+00:17:32,971 --> 00:17:35,991
+Bir bölü fonksiyonun türevinde tersini yerine yazmaktır.
+
+317
+00:17:36,072 --> 00:17:37,231
+Bu da o mantık aslında.
+
+318
+00:17:37,392 --> 00:17:37,771
+Tamam mı?
+
+319
+00:17:37,852 --> 00:17:38,471
+Şimdi ne yapacağım?
+
+320
+00:17:38,572 --> 00:17:40,791
+Burada Y'e gördüğüm yere ne yazıyorum?
+
+321
+00:17:41,032 --> 00:17:42,852
+Arksinüs X'i yazacağım arkadaşlar.
+
+322
+00:17:43,892 --> 00:17:44,471
+Anlaşıldı mı?
+
+323
+00:17:44,731 --> 00:17:45,572
+Bakın yazalım.
+
+324
+00:17:46,271 --> 00:17:47,052
+Bir bölü.
+
+325
+00:17:47,372 --> 00:17:49,052
+Yani yenilikse göre türevi dediğim.
+
+326
+00:17:49,052 --> 00:17:50,731
+Yani arksinüs'ün türevini alıyoruz.
+
+327
+00:17:50,872 --> 00:17:51,892
+Eşitte bir bölü.
+
+328
+00:17:51,971 --> 00:17:53,271
+Kök içinde bir eksi.
+
+329
+00:17:53,872 --> 00:17:57,751
+Sinüs kare Y yerine arksinüs X'in karesini yazıyorum.
+
+330
+00:17:57,951 --> 00:17:59,572
+Yani bunu şöyle de düşünebilirsiniz.
+
+331
+00:18:00,211 --> 00:18:00,971
+Hepsinin karesi.
+
+332
+00:18:01,052 --> 00:18:03,172
+Yani sinüs arksinüs X'in karesi.
+
+333
+00:18:03,672 --> 00:18:05,092
+Bir fonksiyonun tersinin.
+
+334
+00:18:05,832 --> 00:18:09,471
+Biz F'in tersinin F dediğimizde X'i bulmaz mıydık?
+
+335
+00:18:09,552 --> 00:18:10,731
+Burada da aynı mantıkla.
+
+336
+00:18:10,791 --> 00:18:11,872
+Bakın şuraya yazdım.
+
+337
+00:18:12,332 --> 00:18:13,532
+Bunları başta yazmadım.
+
+338
+00:18:13,832 --> 00:18:14,971
+Gerektiği yerde yazacağım.
+
+339
+00:18:15,092 --> 00:18:16,592
+Bizim de dikkatimizi çeksin diye.
+
+340
+00:18:16,592 --> 00:18:18,791
+Yani şimdi burada amacım benim.
+
+341
+00:18:19,052 --> 00:18:21,971
+Arksinüs X'in sinüsü neye eşittir?
+
+342
+00:18:22,311 --> 00:18:23,072
+Onu da biliyorum.
+
+343
+00:18:23,372 --> 00:18:23,971
+Tersinin.
+
+344
+00:18:24,451 --> 00:18:25,432
+Bakın yazdım şuraya.
+
+345
+00:18:25,531 --> 00:18:28,572
+Arksinüs X'in sinüsü X'tir.
+
+346
+00:18:28,912 --> 00:18:31,892
+Aynı şekilde sinüs X'in arksinüsü de X'e eşittir.
+
+347
+00:18:32,291 --> 00:18:34,271
+Tabii ki şu aralıklara da dikkat ediyoruz.
+
+348
+00:18:35,552 --> 00:18:39,412
+Evet ses gidenler var ama benden kaynaklanmıyor sanırım arkadaşlar.
+
+349
+00:18:40,332 --> 00:18:40,612
+Evet.
+
+350
+00:18:41,152 --> 00:18:41,771
+Tamam mı?
+
+351
+00:18:42,092 --> 00:18:42,791
+Ne yaptık?
+
+352
+00:18:42,791 --> 00:18:44,511
+O halde dönüyorum soruma.
+
+353
+00:18:44,511 --> 00:18:46,251
+Diyorum ki türevi eşittir.
+
+354
+00:18:46,372 --> 00:18:48,471
+Bir bölü kök içinde bir eksi.
+
+355
+00:18:48,971 --> 00:18:51,652
+Arksinüs'ün sinüsü X ise o da ne olur?
+
+356
+00:18:51,751 --> 00:18:52,372
+X kare olur.
+
+357
+00:18:52,572 --> 00:18:55,692
+İşte sonuçta arksinüs X'in türevi neye eşittir?
+
+358
+00:18:55,812 --> 00:18:58,932
+Bir bölü kök içinde bir eksi X kareye eşittir.
+
+359
+00:18:59,192 --> 00:19:00,392
+Anladık mı bunu arkadaşlar?
+
+360
+00:19:00,392 --> 00:19:03,951
+Var mı problem?
+
+361
+00:19:06,112 --> 00:19:08,352
+Ben sadece şu son kısmı anlayayım.
+
+362
+00:19:08,471 --> 00:19:10,731
+Şimdi şuraya kadar tamam mıyız?
+
+363
+00:19:10,811 --> 00:19:11,672
+Bir bölü kök içinde.
+
+364
+00:19:11,672 --> 00:19:12,072
+Tamam.
+
+365
+00:19:12,572 --> 00:19:16,072
+Buradan diyorum ki kosünüs Y'yi sinüs cinsinden nasıl yazarım?
+
+366
+00:19:16,211 --> 00:19:18,511
+Ben karelerin toplamının bir olduğunu biliyorum.
+
+367
+00:19:18,692 --> 00:19:20,271
+Buradan kosünüs kareyi çektim.
+
+368
+00:19:20,392 --> 00:19:23,172
+Kosünüs Y'de artı eksi kök içinde bu ifade olmaz mı?
+
+369
+00:19:23,231 --> 00:19:24,491
+Bir eksi sinüs kareye olur.
+
+370
+00:19:25,032 --> 00:19:29,991
+E kosünüs Y'de şu eksi P bölü 2 artı P bölü 2 arasında pozitif olduğu için
+
+371
+00:19:29,991 --> 00:19:31,412
+bana artı kökü gerekli.
+
+372
+00:19:31,532 --> 00:19:32,512
+O zaman ne yaptım?
+
+373
+00:19:32,572 --> 00:19:35,711
+Bunun yerine kök içinde bir eksi sinüs kareye.
+
+374
+00:19:35,932 --> 00:19:36,352
+Tamam mı?
+
+375
+00:19:36,352 --> 00:19:36,471
+Bu.
+
+376
+00:19:36,771 --> 00:19:43,032
+Şimdi benim amacım diyorum ki burada hani fonksiyonun tersinin türevi bir bölü fonksiyonun
+
+377
+00:19:43,032 --> 00:19:44,771
+türevinde tersini yerine yazmak.
+
+378
+00:19:44,852 --> 00:19:47,491
+Onun için de ben de burada Y gördüğüm yeri ne yapacağım?
+
+379
+00:19:47,792 --> 00:19:49,072
+Arksinüs X'i yazacağım.
+
+380
+00:19:49,592 --> 00:19:51,152
+Onu da yazarsam yazdım.
+
+381
+00:19:51,412 --> 00:19:52,432
+Şimdi şunu arıyorum.
+
+382
+00:19:52,971 --> 00:19:55,332
+Arksinüs'ün kareye düşüme en dışında düşün.
+
+383
+00:19:55,731 --> 00:19:57,512
+Arksinüs X'in sinüsünü arıyorum.
+
+384
+00:19:57,511 --> 00:20:00,092
+Onu da özellik olarak biz terslerimizde.
+
+385
+00:20:00,000 --> 00:20:24,579
+Burada da bakın yazmış o yıldızları. Bilmem gerekir. Yani aksinüsün sinüsü x'e eşittir. Aralığım şöyle olacak. Benzer şekilde sinüsün aksinüsü de x'e eşittir. O halde ne yapıyorum? Dönüyorum soruma. Ne yapıyorum? Aksinüs x'in sinüsü nedir? x'tir. O zaman karesi de varsa x kare diyeceğim. Yani sonuçta bir bölü kök içinde bir eksi x'in karesidir diyorum. Oldu mu?
+
+386
+00:20:28,307 --> 00:20:30,827
+Hocam direkt sinüsüye zaten eşittir x diyor ya.
+
+387
+00:20:30,927 --> 00:20:32,907
+Oradan yazsak yerine direkt x kare oluyor.
+
+388
+00:20:33,028 --> 00:20:33,708
+1 eksi x kare.
+
+389
+00:20:35,208 --> 00:20:35,768
+Nasıl?
+
+390
+00:20:36,807 --> 00:20:39,208
+Üstte dedik ya sinüsüye eşittir x diye.
+
+391
+00:20:39,307 --> 00:20:40,587
+Direkt orada 1 eksi...
+
+392
+00:20:40,587 --> 00:20:43,127
+Tamam ben ters fonksiyonun türevini...
+
+393
+00:20:43,127 --> 00:20:45,008
+Tamam.
+
+394
+00:20:45,807 --> 00:20:46,248
+Oldu mu?
+
+395
+00:20:46,508 --> 00:20:48,008
+Zaten oraya da geliyorsun.
+
+396
+00:20:48,528 --> 00:20:51,208
+Oradan da hani neyi buluyorum onu bulmaya çalışıyorum.
+
+397
+00:20:51,347 --> 00:20:51,508
+Tamam.
+
+398
+00:20:52,448 --> 00:20:57,387
+Sen zaten dediğim gibi kimse hani sana ispatını çok nadir sormazlar.
+
+399
+00:20:57,387 --> 00:20:58,567
+Sen türevini bil yeter.
+
+400
+00:20:58,887 --> 00:20:59,407
+Şimdi ne yapalım?
+
+401
+00:20:59,468 --> 00:21:00,367
+Bunu genelleyelim değil mi?
+
+402
+00:21:00,407 --> 00:21:01,847
+Her zaman aksinüs x demez.
+
+403
+00:21:01,927 --> 00:21:04,107
+Aksinüs x kare der, başka bir şey der.
+
+404
+00:21:04,228 --> 00:21:05,127
+Onun için de ne yapıyorduk?
+
+405
+00:21:05,188 --> 00:21:06,968
+Hep genelleriz biz formüllerimizi.
+
+406
+00:21:07,367 --> 00:21:08,107
+Şöyle diyoruz.
+
+407
+00:21:08,407 --> 00:21:10,228
+U bir fonksiyon olmak üzere.
+
+408
+00:21:10,768 --> 00:21:14,688
+Diyelim ki aksinüs u'nun türevini bulunuz.
+
+409
+00:21:14,927 --> 00:21:15,788
+Tamam mı arkadaşlar?
+
+410
+00:21:16,288 --> 00:21:17,288
+Burada ne yapıyoruz?
+
+411
+00:21:17,667 --> 00:21:19,347
+Diyoruz ki y'nin x'e göre türevi.
+
+412
+00:21:19,427 --> 00:21:21,268
+Yani aksinüs'ün türevini arıyorum.
+
+413
+00:21:21,667 --> 00:21:22,587
+O da ne olacaktır?
+
+414
+00:21:22,667 --> 00:21:23,647
+U'nun türevi bölü.
+
+415
+00:21:23,647 --> 00:21:26,968
+Kök içinde 1 eksi u'nun karesidir diyeceğiz.
+
+416
+00:21:27,387 --> 00:21:33,688
+Bakın hala bilmiyorum bu sınıftan mı, başka bir sınıftan mı bir öğrencim bana mesaj atmış.
+
+417
+00:21:33,927 --> 00:21:37,387
+İşte kapalı türetmede x puansız değiştiren y fonksiyon.
+
+418
+00:21:37,867 --> 00:21:39,548
+İşte sorunun bir kısmı aklında şu anda.
+
+419
+00:21:39,728 --> 00:21:41,748
+Sinüs parantezin içinde x, y.
+
+420
+00:21:42,167 --> 00:21:46,688
+Orada diyor ki x, y türevini alıyorum ya kapalı türetme.
+
+421
+00:21:47,167 --> 00:21:47,788
+Ne diyeceğim?
+
+422
+00:21:48,107 --> 00:21:50,647
+Y artı x çarpı y'nin x'e göre türevi.
+
+423
+00:21:50,768 --> 00:21:52,528
+Diyor ki içinde neden türev gelmiş?
+
+424
+00:21:52,528 --> 00:22:01,327
+Kapalı türetmede argümanında yani şu sinüs'ün şurasında parantez içinde x, y varsa x puansız değişken y de fonksiyon ise ne yapmalıyım?
+
+425
+00:22:01,427 --> 00:22:04,248
+Tabii ki orada türevi alırken y'nin fonksiyon olduğunu unutmayacağım.
+
+426
+00:22:04,387 --> 00:22:08,347
+Yani onun için biz her zaman sinüs x'in türevi kosünüs demiyoruz değil mi?
+
+427
+00:22:08,748 --> 00:22:09,968
+İçinin türevi diyoruz.
+
+428
+00:22:10,028 --> 00:22:12,827
+Böyle işte çarpı kosünüs x şeklinde konuşuyoruz.
+
+429
+00:22:13,528 --> 00:22:14,768
+Ya da kosünüs u şeklinde.
+
+430
+00:22:14,827 --> 00:22:16,827
+Onun için dikkat edelim türevlere birazcık.
+
+431
+00:22:17,188 --> 00:22:18,988
+Öyle eksiklerimiz oluyor bazen.
+
+432
+00:22:18,988 --> 00:22:19,427
+Evet.
+
+433
+00:22:19,768 --> 00:22:21,748
+Şimdi burada anlaştık mı arkadaşlar türevde?
+
+434
+00:22:22,347 --> 00:22:22,567
+Evet.
+
+435
+00:22:23,107 --> 00:22:24,968
+Bakın bir tane örneği uygulayalım işte.
+
+436
+00:22:25,948 --> 00:22:26,907
+Bana neye sormuş?
+
+437
+00:22:27,268 --> 00:22:30,508
+Aksinüs bir bölü kök x'in türevini soruyor.
+
+438
+00:22:30,907 --> 00:22:32,927
+E burada buna ne derim?
+
+439
+00:22:32,988 --> 00:22:35,028
+Bir bölü kök x'i u ile gösterirsem.
+
+440
+00:22:35,147 --> 00:22:38,248
+Aksinüs u'nun türevinde yukarıda bana formülü vermiş diyorum.
+
+441
+00:22:38,728 --> 00:22:41,228
+U'nun türevi bölü kök içinde bir eksi u kare.
+
+442
+00:22:41,347 --> 00:22:42,427
+U'nun türevi ne olur?
+
+443
+00:22:43,948 --> 00:22:45,587
+Bir bölü kök x'in türevini alacağım.
+
+444
+00:22:45,587 --> 00:22:51,347
+Ya bunu x üzeri eksi 1 bölü 2 diye yazıp kolayca türev alırsın ya da bölümün türevinden gidersin.
+
+445
+00:22:51,448 --> 00:22:52,647
+Bakın şurada yazdım.
+
+446
+00:22:52,988 --> 00:22:53,867
+U bu olsun.
+
+447
+00:22:54,607 --> 00:22:55,827
+U'nun türevi de ne olur?
+
+448
+00:22:56,647 --> 00:22:57,447
+Al yukarıya.
+
+449
+00:22:57,587 --> 00:22:59,347
+X üzeri eksi 1 bölü 2 olur değil mi?
+
+450
+00:22:59,447 --> 00:23:00,307
+Üst başa gelir.
+
+451
+00:23:00,768 --> 00:23:02,748
+Üstü biraz alırsa eksi 3 bölü 2.
+
+452
+00:23:02,867 --> 00:23:04,488
+Paydayı atarsan 3 bölü 2 olur.
+
+453
+00:23:04,627 --> 00:23:05,607
+İşte eksi 1 bölü 2.
+
+454
+00:23:06,307 --> 00:23:07,688
+X üzeri 3 bölü 2 olur.
+
+455
+00:23:07,688 --> 00:23:09,827
+Buradan ne yapıyoruz?
+
+456
+00:23:09,947 --> 00:23:10,968
+Türevimize döndük.
+
+457
+00:23:11,248 --> 00:23:12,647
+Y'nin x'e göre türevi.
+
+458
+00:23:12,847 --> 00:23:13,548
+U'nun türevi.
+
+459
+00:23:13,708 --> 00:23:14,587
+Bunu yazdık.
+
+460
+00:23:15,028 --> 00:23:17,947
+Bölü kök içinde 1 eksi u'nun karesi.
+
+461
+00:23:18,107 --> 00:23:19,028
+1 bölü x buyur.
+
+462
+00:23:19,188 --> 00:23:22,208
+Bu da düzenlenirse şöyle bir ifade olarak buluruz.
+
+463
+00:23:22,407 --> 00:23:23,147
+Tamam mı arkadaşlar?
+
+464
+00:23:24,748 --> 00:23:25,407
+Var mı problem?
+
+465
+00:23:25,407 --> 00:23:44,667
+Evet.
+
+466
+00:23:29,779 --> 00:23:31,980
+Ses gelmediğine göre yok diyorum o zaman.
+
+467
+00:23:32,359 --> 00:23:33,799
+Yok hocam problem yok tamam.
+
+468
+00:23:34,359 --> 00:23:35,099
+Devam edelim.
+
+469
+00:23:35,460 --> 00:23:38,579
+Zaten hepsinin o mantıkla gideceğim için daha iyi anlaşacak.
+
+470
+00:23:38,680 --> 00:23:40,460
+Şimdi bir tane olduğu için belki şaşırdınız.
+
+471
+00:23:41,019 --> 00:23:41,759
+Evet gelelim.
+
+472
+00:23:42,139 --> 00:23:43,700
+Arkosinüsün türevini bulunmaya.
+
+473
+00:23:43,799 --> 00:23:45,920
+Gene bakın yukarıdaki mantıkla x ne olur?
+
+474
+00:23:46,019 --> 00:23:46,960
+Kosinüs y olur.
+
+475
+00:23:47,359 --> 00:23:50,779
+Kapalı türetme ile türev alırsam y'nin fonksiyonu olduğunu unutmuyorum.
+
+476
+00:23:51,200 --> 00:23:52,599
+x'e göre türev 1'dir.
+
+477
+00:23:52,940 --> 00:23:55,299
+Kosinüs y'nin türevi de eksi sinüs y'dir.
+
+478
+00:23:55,399 --> 00:23:56,879
+y'nin x'e göre türevi diyorum.
+
+479
+00:23:56,879 --> 00:23:59,299
+Buradan y'nin x'e göre türevini çekerse
+
+480
+00:23:59,299 --> 00:24:01,420
+eksi bir bölü sinüs y olur.
+
+481
+00:24:01,740 --> 00:24:04,200
+Şimdi yukarıdaki mantıkla sinüs y yerine
+
+482
+00:24:04,200 --> 00:24:06,079
+kosinüs cinsinden ne yazarım?
+
+483
+00:24:06,960 --> 00:24:07,220
+Değil mi?
+
+484
+00:24:07,740 --> 00:24:09,839
+Şuradan kopya çekelim bak.
+
+485
+00:24:10,740 --> 00:24:12,639
+Sinüs kareyi çekersem ne olur?
+
+486
+00:24:12,720 --> 00:24:14,500
+1- kosinüs kare y olmaz mı?
+
+487
+00:24:14,579 --> 00:24:17,379
+Kök içinde gene o aralıkta pozitif olduğu için
+
+488
+00:24:17,379 --> 00:24:20,779
+kök içinde bakın 1- kosinüs kare y diye yazdım.
+
+489
+00:24:20,900 --> 00:24:22,119
+Yani sinüs y yerine.
+
+490
+00:24:22,420 --> 00:24:22,859
+Tamam mı?
+
+491
+00:24:23,500 --> 00:24:23,639
+Bu.
+
+492
+00:24:24,079 --> 00:24:25,019
+Şimdi ne yapıyorum?
+
+493
+00:24:25,019 --> 00:24:28,279
+y'ye gördüğüm yere ar kosinüs x'i yazıyorum.
+
+494
+00:24:28,279 --> 00:24:29,700
+yazdım bakın.
+
+495
+00:24:30,180 --> 00:24:34,180
+Eksi bir bölü kök içinde 1- kosinüs kare ar kosinüs x.
+
+496
+00:24:34,559 --> 00:24:35,879
+Şimdi neyi bilmem gerekir?
+
+497
+00:24:36,220 --> 00:24:39,000
+Ar kosinüs x'in kosinüsünü bileceğim.
+
+498
+00:24:39,159 --> 00:24:40,180
+Sonra karesini alacağım.
+
+499
+00:24:40,500 --> 00:24:42,039
+Şuraya gene not olarak yazdım.
+
+500
+00:24:42,139 --> 00:24:45,639
+Bakın ters fonksiyonun kosinüsü x'e eşittir.
+
+501
+00:24:45,720 --> 00:24:49,759
+Benzer şekilde kosinüs x'in ar kosinüsü de x'e eşittir diyeceğim.
+
+502
+00:24:49,759 --> 00:24:50,819
+O zaman ne yapıyorum?
+
+503
+00:24:50,900 --> 00:24:52,460
+Bunun yerine x yazmalıyım.
+
+504
+00:24:52,839 --> 00:24:53,359
+O da ne olur?
+
+505
+00:24:53,400 --> 00:24:54,299
+x'in karesi olur.
+
+506
+00:24:54,460 --> 00:25:00,779
+Yani sonuçta ar kosinüs x'in türevi eksi bir bölü kök içinde 1- x karedir diyeceğim.
+
+507
+00:25:01,359 --> 00:25:01,680
+Tamam mı?
+
+508
+00:25:02,740 --> 00:25:05,220
+Gene bunu da genellersek şöyle düşünüyoruz.
+
+509
+00:25:05,220 --> 00:25:07,339
+u bir fonksiyon olmak üzere.
+
+510
+00:25:08,379 --> 00:25:12,220
+y eşittir ar kosinüs u'nun türevi ise ne diyeceğim?
+
+511
+00:25:12,400 --> 00:25:17,460
+Eksi u'nun türevi bölü kök içinde 1- u'nun karesidir diyoruz.
+
+512
+00:25:17,460 --> 00:25:21,279
+Evet işte benzer bir örnek diyelim şöyle.
+
+513
+00:25:21,720 --> 00:25:24,400
+Ar kosinüs x karenin türevini bulun.
+
+514
+00:25:25,400 --> 00:25:30,139
+Burada x kareye u gibi düşünürsem formülüm de hazır burada ne diyeceğim?
+
+515
+00:25:30,940 --> 00:25:37,579
+Eksi 2x bölü kök içinde 1- x karenin karesi x üzeri 4'tür diyeceğiz.
+
+516
+00:25:37,700 --> 00:25:37,839
+Değil mi?
+
+517
+00:25:37,900 --> 00:25:38,000
+Şu.
+
+518
+00:25:39,960 --> 00:25:42,279
+Yani bilmem gereken türev formülleri.
+
+519
+00:25:42,279 --> 00:25:46,819
+Tabii ki bunları da birkaç üzerinde örnek çözerek aklımızda kalabilir.
+
+520
+00:25:47,460 --> 00:25:48,279
+Devam edelim.
+
+521
+00:25:50,359 --> 00:25:51,400
+Evet geldik.
+
+522
+00:25:52,319 --> 00:25:55,379
+y eşittir ar tanjant x'in türevini bulmaya.
+
+523
+00:25:55,779 --> 00:25:57,200
+Gene yukarıdaki mantıkla.
+
+524
+00:25:57,599 --> 00:25:59,079
+Bunu daha kolay görüyorsunuz.
+
+525
+00:25:59,400 --> 00:26:01,099
+Burada bir şey yapmıyoruz fazla çünkü.
+
+526
+00:26:01,639 --> 00:26:04,059
+x eşittir tanjant y diye yazdık mı burada?
+
+527
+00:26:04,240 --> 00:26:06,500
+Gene kapalı türevme ile türev alıyorum.
+
+528
+00:26:06,900 --> 00:26:07,960
+x'in türevi ne olur?
+
+529
+00:26:08,119 --> 00:26:08,559
+1 olur.
+
+530
+00:26:08,920 --> 00:26:10,240
+Tanjantın türevi neydi?
+
+531
+00:26:10,240 --> 00:26:17,480
+Ya bir bölü kosinus kareye ya da sekant kareye ya da bir artı tanjant kareye.
+
+532
+00:26:17,480 --> 00:26:19,200
+Bu işime yaradığı için bunu yazdım.
+
+533
+00:26:19,420 --> 00:26:22,819
+Yani bir artı tanjant kareye y'nin x'e göre türevi.
+
+534
+00:26:22,900 --> 00:26:25,319
+Buradan y'nin x'e göre türevine ihtiyacım var.
+
+535
+00:26:25,420 --> 00:26:26,519
+Onu yalnız bıraktım.
+
+536
+00:26:26,900 --> 00:26:29,480
+Bir bölü bir artı tanjant kareye y'dir.
+
+537
+00:26:29,480 --> 00:26:35,700
+İşte gene burada y gördüğüm yere fonksiyonun tersini yazarsam yani art tanjant x'i yazarsam.
+
+538
+00:26:36,180 --> 00:26:37,579
+Bakın şöyle.
+
+539
+00:26:38,119 --> 00:26:39,180
+Böyle de yazdık.
+
+540
+00:26:39,759 --> 00:26:42,420
+Gene yukarıdaki mantıkla bakın şuraya yazdım.
+
+541
+00:26:43,000 --> 00:26:45,279
+Tanjantın art tanjantı x'e eşittir.
+
+542
+00:26:45,400 --> 00:26:48,059
+Art tanjantın tanjantı da x'e eşittir.
+
+543
+00:26:48,279 --> 00:26:49,579
+Diyoruz o mantıkla.
+
+544
+00:26:50,099 --> 00:26:51,299
+Buradan da ne bulmuş oluyorum?
+
+545
+00:26:51,400 --> 00:26:53,500
+Bir bölü bir artı x'in karesi.
+
+546
+00:26:53,880 --> 00:26:54,380
+Tamam mı?
+
+547
+00:26:54,380 --> 00:26:57,500
+Yani art tanjant x'in türevi her yerde karşımıza çıkar.
+
+548
+00:26:57,639 --> 00:26:59,220
+Çok da kullanılır yani.
+
+549
+00:26:59,480 --> 00:27:00,680
+Onun için unutmuyoruz.
+
+550
+00:27:00,720 --> 00:27:03,960
+Bir bölü bir artı x'in karesidir diyoruz.
+
+551
+00:27:04,160 --> 00:27:04,599
+Tamam mı?
+
+552
+00:27:04,839 --> 00:27:08,480
+Gene bunu da o zaman genellemek istersek.
+
+553
+00:27:09,579 --> 00:27:11,940
+Diyeceğiz ki u bir fonksiyonu olmak üzere.
+
+554
+00:27:12,460 --> 00:27:18,940
+Y eşittir art tanjantı u'nun türevi de u üstü bölü bir artı u'nun karesidir diyeceğiz.
+
+555
+00:27:19,859 --> 00:27:22,240
+Hadi bunu siz alın bakalım türevine arkadaşlar.
+
+556
+00:27:22,240 --> 00:27:27,380
+Y eşittir art tanjantı 2x artı bir bölü 3'ün türevi nedir?
+
+557
+00:27:27,639 --> 00:27:29,160
+Formülümüz de hazır zaten.
+
+558
+00:27:29,811 --> 00:27:31,311
+ne bulacaktım bakalım.
+
+559
+00:27:31,311 --> 00:27:34,611
+Düzenlemenize de gerek yok. Sadece türevi alın.
+
+560
+00:27:39,604 --> 00:27:41,824
+2x artı 1 bölü 3'ün karesi.
+
+561
+00:27:44,524 --> 00:27:46,703
+U dedim değil mi parantezin içine?
+
+562
+00:27:47,244 --> 00:27:47,824
+Evet evet.
+
+563
+00:27:47,943 --> 00:27:48,624
+Ne geliyor?
+
+564
+00:27:49,804 --> 00:27:50,764
+Efendim türevi mi?
+
+565
+00:27:51,144 --> 00:27:51,463
+Türevi.
+
+566
+00:27:52,504 --> 00:27:53,104
+2.
+
+567
+00:27:55,504 --> 00:27:57,144
+2 bölü 3 kere pardon.
+
+568
+00:27:57,403 --> 00:28:00,784
+2 bölü 3 o kadar sonra işte 1 artı bunun karesi diyeceksin.
+
+569
+00:28:00,864 --> 00:28:02,364
+Önemli değil sonuç neyse bakın.
+
+570
+00:28:02,943 --> 00:28:04,943
+Buna U dedim kolay olsun diye.
+
+571
+00:28:04,943 --> 00:28:06,344
+U'nun türevi 2 bölü 3'tür.
+
+572
+00:28:06,683 --> 00:28:09,403
+Formülden de 1 artı U'nun karesi.
+
+573
+00:28:09,403 --> 00:28:11,264
+Yazdım düzenlenirse böyle çıkar.
+
+574
+00:28:11,403 --> 00:28:13,044
+Onu düzenlersin zaten problem yok.
+
+575
+00:28:13,183 --> 00:28:15,844
+Amaç türevi hatırlayabilmekte ama arkadaşlar.
+
+576
+00:28:16,663 --> 00:28:20,864
+Şimdi gelelim benzer şekilde art kotanjant x'in türevini bulalım.
+
+577
+00:28:21,064 --> 00:28:22,264
+Bunu da gene ne yapıyoruz?
+
+578
+00:28:22,443 --> 00:28:26,244
+Aynı mantıkla x eşittir kotanjant y diyelim.
+
+579
+00:28:26,423 --> 00:28:28,764
+Buradan kapalı türe etme ile bakın türevini alalım.
+
+580
+00:28:29,384 --> 00:28:30,784
+x'in türevi 1'dir.
+
+581
+00:28:31,224 --> 00:28:34,364
+Kotanjant'ın türevi de gene bu işime yaradığı için bunu yazacağım.
+
+582
+00:28:34,364 --> 00:28:39,324
+Yani eksi parantezinde 1 artı kotanjant kareyi ya da ne yazmıştık?
+
+583
+00:28:39,403 --> 00:28:42,403
+Eksi 1 bölü sinüs kareyi yazmıştık.
+
+584
+00:28:42,484 --> 00:28:43,784
+Ya da eksi kosekant kare.
+
+585
+00:28:43,903 --> 00:28:46,104
+Hangisi işimize yarıyorsa o türevi kullanıyoruz.
+
+586
+00:28:46,183 --> 00:28:48,264
+Burada bunu kullanacağım için bunu almış oldum.
+
+587
+00:28:48,663 --> 00:28:50,963
+Çarpı y'nin x'e göre türevi diyorum.
+
+588
+00:28:51,364 --> 00:28:53,364
+y'nin x'e göre türevini çekersem.
+
+589
+00:28:53,504 --> 00:28:55,943
+Eksi 1 bölü kotanjant kareyi.
+
+590
+00:28:55,943 --> 00:28:56,943
+Şimdi ne yapacağım?
+
+591
+00:28:57,064 --> 00:28:59,284
+y'ye gördüğüm yere fonksiyonun tersini yazıyorum.
+
+592
+00:28:59,403 --> 00:29:06,423
+Yani art kotanjant x'i yazarsam bakın işte burada da gene yazdım not olarak bakın.
+
+593
+00:29:06,903 --> 00:29:09,943
+Art kotanjant x'in kotanjant x'i eşittir.
+
+594
+00:29:10,044 --> 00:29:14,144
+Benzer şekilde kotanjant x'in art kotanjant'ı da x'tir diyoruz.
+
+595
+00:29:14,364 --> 00:29:15,824
+O halde bu ne oldu benim için?
+
+596
+00:29:15,963 --> 00:29:16,983
+x'in karesi oldu.
+
+597
+00:29:16,983 --> 00:29:24,903
+Yani sonuçta art kotanjant x'in türevi eksi 1 bölü 1 artı x'in karesine eşittir diyeceğiz.
+
+598
+00:29:25,264 --> 00:29:28,824
+Gene bunu da genellersek u bir fonksiyon olmak üzere.
+
+599
+00:29:29,203 --> 00:29:33,604
+Y'ye işte art kotanjant u'nun türevi eksi u üstü bölü 1 artı u kare.
+
+600
+00:29:33,903 --> 00:29:37,144
+Bakın art tanjant da artı bunu da eksi unutmuyoruz.
+
+601
+00:29:37,884 --> 00:29:39,564
+Gelelim ne kaldı?
+
+602
+00:29:40,364 --> 00:29:41,884
+Bir de şunu da vermiş oldum.
+
+603
+00:29:41,884 --> 00:29:45,504
+Parantez içi de bilgi olarak böyle de yapılabilirdi demek istiyorum.
+
+604
+00:29:45,703 --> 00:29:46,483
+Tamam mı arkadaşlar?
+
+605
+00:29:46,984 --> 00:29:55,264
+Art kotanjant x'in art tanjant 1 bölü x'e eşit olduğunu bilip buradan da türevi alabilirdik.
+
+606
+00:29:55,403 --> 00:29:57,064
+O ona nasıl eşittir?
+
+607
+00:29:57,124 --> 00:29:58,604
+Onu da bakın şurada gösterdim.
+
+608
+00:29:59,183 --> 00:30:01,683
+Yani şunun şunun eşit olduğunu şöyle görebilirsiniz.
+
+609
+00:30:02,324 --> 00:30:04,044
+Art tanjant x nedir?
+
+610
+00:30:04,124 --> 00:30:04,564
+Y'dir.
+
+611
+00:30:04,844 --> 00:30:06,064
+Buradan y...
+
+612
+00:30:06,064 --> 00:30:06,483
+Pardon.
+
+613
+00:30:07,004 --> 00:30:07,704
+X ne olur?
+
+614
+00:30:07,963 --> 00:30:09,244
+Kotanjant y olmaz mı?
+
+615
+00:30:09,384 --> 00:30:09,784
+Bakın şu.
+
+616
+00:30:10,024 --> 00:30:10,864
+Buna y dedim.
+
+617
+00:30:10,864 --> 00:30:13,403
+X'i çekersem kotanjant y olur.
+
+618
+00:30:13,504 --> 00:30:16,264
+Kotanjant y'nin de 1 bölü tanjant y olduğunu biliyorum.
+
+619
+00:30:16,264 --> 00:30:17,144
+trigonometriden.
+
+620
+00:30:17,524 --> 00:30:20,884
+Buradan tanjant y'yi yalnız bırakırsam tanjant y ne olur?
+
+621
+00:30:21,244 --> 00:30:22,703
+1 bölü x olur.
+
+622
+00:30:23,163 --> 00:30:23,963
+Tamam mı arkadaşlar?
+
+623
+00:30:24,943 --> 00:30:31,024
+Buradan da y'yi yalnız bırakırsam art tanjant 1 bölü x diye yazmaz mıyım?
+
+624
+00:30:31,104 --> 00:30:32,524
+Bakın şuradan şuraya geçtim.
+
+625
+00:30:32,903 --> 00:30:33,544
+Y eşittir.
+
+626
+00:30:33,604 --> 00:30:35,564
+Art tanjant 1 bölü x'tir.
+
+627
+00:30:35,683 --> 00:30:37,663
+Y dediğim ifade art kotanjant değil mi?
+
+628
+00:30:37,663 --> 00:30:44,144
+Yani sonuçta arko tanjant x'in art tanjant 1 bölü x'e eşit olduğunu bilirsen,
+
+629
+00:30:44,504 --> 00:30:47,124
+hani bir daha arko tanjantı ispatlamamış olurum.
+
+630
+00:30:47,384 --> 00:30:49,024
+Tanjantı biliyorum neydi türevi.
+
+631
+00:30:49,124 --> 00:30:50,163
+U'nun türevi bölü.
+
+632
+00:30:50,264 --> 00:30:51,264
+1 artı u kareden.
+
+633
+00:30:51,584 --> 00:30:52,764
+Bakın yazmışım oraya.
+
+634
+00:30:52,943 --> 00:30:53,943
+U'nun türevi ne olur?
+
+635
+00:30:54,044 --> 00:30:55,244
+U dediğim 1 bölü x'tir.
+
+636
+00:30:55,304 --> 00:30:55,923
+U'nun türevi.
+
+637
+00:30:56,324 --> 00:30:57,544
+Eksi 1 bölü x kare.
+
+638
+00:30:57,544 --> 00:31:03,163
+bölü 1 artı 1 bölü x'in karesi düzenlediğimizde gene aynı sonucu buluruz.
+
+639
+00:31:03,384 --> 00:31:05,384
+Bu parantez içi bilgi olarak yaptım.
+
+640
+00:31:05,584 --> 00:31:07,203
+Hani merak eden bakar.
+
+641
+00:31:07,384 --> 00:31:08,104
+Tamam mı arkadaşlar?
+
+642
+00:31:08,423 --> 00:31:09,423
+Anlaşıldı mı şu geçiş?
+
+643
+00:31:13,395 --> 00:31:15,655
+Cevap yok. Anlamadık mı?
+
+644
+00:31:17,135 --> 00:31:17,915
+Anladık hocam.
+
+645
+00:31:18,276 --> 00:31:18,515
+Anladım.
+
+646
+00:31:19,015 --> 00:31:23,955
+O tanjant x'in art tanjant bir bölükse eşit olduğunu şuradan kendimde buldum yani.
+
+647
+00:31:24,195 --> 00:31:25,175
+Tamam. Evet.
+
+648
+00:31:25,635 --> 00:31:27,596
+Geliyoruz sekanta.
+
+649
+00:31:28,975 --> 00:31:31,816
+Art sekant x'in türevini bulmak istiyoruz.
+
+650
+00:31:31,816 --> 00:31:38,076
+Bunda da deminki gibi de x'i çekip sekanta oradan türev alarak da gidebilirdik.
+
+651
+00:31:38,375 --> 00:31:42,015
+Ama ben buradan şu mantıkla gitmeye çalıştım.
+
+652
+00:31:42,015 --> 00:31:45,735
+Bakın şuradan x eşittir sekant y değil midir?
+
+653
+00:31:45,855 --> 00:31:47,016
+Sekant y de nedir?
+
+654
+00:31:47,195 --> 00:31:49,235
+Bir bölü kosinus y'yi eşittir.
+
+655
+00:31:49,316 --> 00:31:52,195
+Buradan kosinus y'yi çekersen bir bölü x der miyim?
+
+656
+00:31:52,635 --> 00:31:53,735
+Buradan y ne olur?
+
+657
+00:31:54,336 --> 00:31:58,576
+Ark kosinus bir bölü x olmaz mı?
+
+658
+00:31:58,576 --> 00:32:01,615
+Yani şuradan bakın her tarafın ark kosinusunu alsam.
+
+659
+00:32:02,175 --> 00:32:03,435
+Burası bana y'yi verecek.
+
+660
+00:32:03,556 --> 00:32:05,516
+Y eşittir ark kosinus bir bölü x.
+
+661
+00:32:05,516 --> 00:32:14,375
+Yani sonuçta ark sekant x'in ark kosinus bir bölü x'e eşit olduğunu biliyorum.
+
+662
+00:32:14,695 --> 00:32:17,935
+Buradan da türevi almam daha kolay olur diye düşünüyorum.
+
+663
+00:32:18,036 --> 00:32:18,455
+Tamam mı?
+
+664
+00:32:18,495 --> 00:32:19,276
+Çünkü onu biliyorum.
+
+665
+00:32:19,275 --> 00:32:23,655
+Evet yüklüyorum notlarımı arkadaşlar.
+
+666
+00:32:23,875 --> 00:32:28,435
+Cuma günü ya da cumartesi sabahı hepsini yüklemiş oluyorum anlattığım notları.
+
+667
+00:32:29,175 --> 00:32:30,915
+Tamam mı arkadaşlar şunu anladık mı?
+
+668
+00:32:30,915 --> 00:32:37,135
+Yani ark şurayı ark sekant x'in ark kosinus bir bölü x'e eşit olduğunu biliyorum.
+
+669
+00:32:37,255 --> 00:32:38,715
+Buradan türevi almaya çalışacağım.
+
+670
+00:32:38,855 --> 00:32:44,015
+Tabi mutlak değer x de büyük eşit bir ifadesini kullanarak türevi alalım demişim.
+
+671
+00:32:44,275 --> 00:32:44,755
+Tamam mı?
+
+672
+00:32:44,775 --> 00:32:47,675
+Onu da nasıl bulup şuradan söyledim zaten.
+
+673
+00:32:48,415 --> 00:32:49,655
+Evet buradan türevi alalım.
+
+674
+00:32:49,935 --> 00:32:52,576
+Dediğim gibi şöyle de düşünebilirim.
+
+675
+00:32:52,615 --> 00:32:54,076
+x eşittir sekant y derdim.
+
+676
+00:32:54,135 --> 00:32:55,755
+Buradan kapalı türetme yapardım.
+
+677
+00:32:56,115 --> 00:32:58,715
+Birçok trigonotik fonksiyonlar kullanmak gerekirdi diye.
+
+678
+00:32:58,715 --> 00:32:59,775
+Bu daha kısa geldi.
+
+679
+00:32:59,855 --> 00:33:00,775
+Bunu yazmış oldum.
+
+680
+00:33:00,915 --> 00:33:02,415
+Evet şimdi alalım türevin.
+
+681
+00:33:02,515 --> 00:33:04,695
+Arkosinus'un türevinde ne demiştik yukarıda?
+
+682
+00:33:05,096 --> 00:33:06,015
+Yazmışım da şuraya.
+
+683
+00:33:06,115 --> 00:33:07,875
+Eksi u'nun türevi değil mi?
+
+684
+00:33:07,915 --> 00:33:12,975
+U dediğimizde kök içinde bir eksi u'nun karesi şeklinde idi demişim şurada yazmışım.
+
+685
+00:33:13,255 --> 00:33:14,715
+O zaman geliyoruz sorumuza.
+
+686
+00:33:15,036 --> 00:33:16,175
+Her tarafın türevini alıyorum.
+
+687
+00:33:16,316 --> 00:33:17,395
+Şartan bunu arıyorum.
+
+688
+00:33:18,016 --> 00:33:19,655
+Arkosinus'un türevinde biliyorum.
+
+689
+00:33:20,096 --> 00:33:24,155
+İçinin türevi yani bir bölü x'e u dersem bunun türevine gelecektir.
+
+690
+00:33:24,576 --> 00:33:27,596
+Eksi bir bölü x kare ama bir de formülümüzden eksi var.
+
+691
+00:33:27,596 --> 00:33:29,235
+Artı bir bölü x kare olur.
+
+692
+00:33:29,235 --> 00:33:34,336
+Kök içinde bir eksi u'nun karesinden de bir bölü x'in karesi diyeceğiz.
+
+693
+00:33:34,755 --> 00:33:37,796
+Bunu da düzenlersek şu hale gelir.
+
+694
+00:33:37,975 --> 00:33:41,775
+Kök içinde x kare bölü x kare kök içinde x kare eksi bir.
+
+695
+00:33:42,036 --> 00:33:48,255
+Yani sonuçta bir bölü mutfak değer x kök içinde x kare eksi birdir diyeceğiz.
+
+696
+00:33:49,016 --> 00:33:54,036
+Ark sekant x'in türevi her x büyük birden değerleri için diyeceğiz.
+
+697
+00:33:54,036 --> 00:33:57,056
+x'in neden büyük olan değerleri için demek istiyorum.
+
+698
+00:33:57,816 --> 00:33:59,536
+Şimdi gelelim bunu genellersek.
+
+699
+00:33:59,695 --> 00:34:01,355
+U bir fonksiyon olmak üzere.
+
+700
+00:34:01,755 --> 00:34:03,996
+Yeştir ark sekant u'nun türevi de.
+
+701
+00:34:04,556 --> 00:34:06,175
+Gene şöyle diyeceğim.
+
+702
+00:34:06,296 --> 00:34:11,795
+U'nun türevi bölü mutfak değer u çarpı kök içinde u kare eksi birdir diyeceğiz.
+
+703
+00:34:11,795 --> 00:34:16,655
+Şimdi gelelim ark sekant'ın türevine.
+
+704
+00:34:17,175 --> 00:34:19,635
+Bunu da sinüsü kullanarak yazacağım.
+
+705
+00:34:19,775 --> 00:34:28,036
+Yani ark sekant x'in ark sinüs bir bölü x'e eşit olduğunu bakın şurada parantez içinde yani şu kenarda göstermişim.
+
+706
+00:34:28,496 --> 00:34:29,496
+Alıyorum bakın şurayı.
+
+707
+00:34:30,976 --> 00:34:35,135
+Ark sekant x y ise buradan x ne olur?
+
+708
+00:34:35,675 --> 00:34:36,996
+Sekant y olmaz mı?
+
+709
+00:34:36,996 --> 00:34:38,335
+Kosekant da nedir?
+
+710
+00:34:38,655 --> 00:34:39,855
+Bir bölü sinüstü.
+
+711
+00:34:39,956 --> 00:34:42,115
+Yani bunu da bir bölü sinüs y diye yazarım.
+
+712
+00:34:42,615 --> 00:34:45,056
+Sinüs y'yi çekersen sinüs y ne olur?
+
+713
+00:34:45,476 --> 00:34:46,956
+Bir bölü x olur.
+
+714
+00:34:47,195 --> 00:34:50,076
+Buradan da her tarafın ark sinüsünü alırsam y ne olur?
+
+715
+00:34:50,496 --> 00:34:52,755
+Ark sinüs bir bölü x olur.
+
+716
+00:34:52,936 --> 00:34:54,235
+Y de ark sekant değil.
+
+717
+00:34:54,436 --> 00:34:56,395
+Yani sonuçta dönüyorum sol tarafa.
+
+718
+00:34:56,395 --> 00:35:01,996
+Ark sekant x'in ark sinüs bir bölü x'e eşit olduğunu biliyorum.
+
+719
+00:35:02,195 --> 00:35:04,795
+Buradan türevimi alabilirim diyorum.
+
+720
+00:35:05,175 --> 00:35:05,375
+Tamam.
+
+721
+00:35:06,996 --> 00:35:07,715
+Gördük mü?
+
+722
+00:35:07,715 --> 00:35:08,715
+Buradan oldu mu?
+
+723
+00:35:11,036 --> 00:35:11,835
+Evet.
+
+724
+00:35:12,096 --> 00:35:12,536
+O zaman.
+
+725
+00:35:13,235 --> 00:35:15,155
+Arksinüsün türevi de neydi?
+
+726
+00:35:15,235 --> 00:35:17,375
+Hatırlayalım. Arksinüsününün türevi
+
+727
+00:35:17,375 --> 00:35:19,255
+ne demiştik? U üstü bölü
+
+728
+00:35:19,255 --> 00:35:21,115
+kök içinde 1-U'nun
+
+729
+00:35:21,115 --> 00:35:23,096
+karesi. Yani şu kosinüsten tek farkı
+
+730
+00:35:23,096 --> 00:35:25,195
+şurasının artı olmasıydı. Öyle baktığımızda
+
+731
+00:35:25,195 --> 00:35:27,255
+kalsın. O zaman ne yapıyorum?
+
+732
+00:35:27,715 --> 00:35:29,135
+Arksinüs 1 bölü x'in
+
+733
+00:35:29,135 --> 00:35:30,996
+türevini almak için U dediğim ifade
+
+734
+00:35:30,996 --> 00:35:33,076
+nedir? 1 bölü x'dir
+
+735
+00:35:33,076 --> 00:35:33,516
+diyorum.
+
+736
+00:35:35,175 --> 00:35:36,435
+Eksi ne gelir?
+
+737
+00:35:36,955 --> 00:35:39,455
+1 bölü x kare gelir. Kök içinde 1-U'nun
+
+738
+00:35:39,455 --> 00:35:41,556
+karesi de şu. Bu da düzenlenirse
+
+739
+00:35:41,556 --> 00:35:43,335
+hemen doğrudan yazmışım
+
+740
+00:35:43,335 --> 00:35:45,475
+zaten. Eksi 1 bölü mutlak değer x
+
+741
+00:35:45,475 --> 00:35:46,895
+çarpı kök içinde
+
+742
+00:35:46,895 --> 00:35:49,536
+x kare eksi 1'dir diyeceğiz.
+
+743
+00:35:49,715 --> 00:35:50,455
+Tamam mı arkadaşlar?
+
+744
+00:35:51,775 --> 00:35:53,475
+U da gene genellemek
+
+745
+00:35:53,475 --> 00:35:55,215
+istersek bir fonksiyon
+
+746
+00:35:55,215 --> 00:35:56,655
+olmak üzere diyeceğiz.
+
+747
+00:35:57,355 --> 00:35:58,735
+Arks kosekant U'nun
+
+748
+00:35:58,735 --> 00:36:01,315
+türevini yazalım. Ne diyeceğim?
+
+749
+00:36:01,496 --> 00:36:03,155
+Eksi U'nun türevi bölü
+
+750
+00:36:03,155 --> 00:36:05,255
+mutlak değer U çarpı
+
+751
+00:36:05,255 --> 00:36:07,115
+kök içinde U kare eksi 1 diye
+
+752
+00:36:07,115 --> 00:36:09,355
+bilmem gerek. Dediğim gibi
+
+753
+00:36:09,355 --> 00:36:11,255
+arkadaşlar sizin türevleri
+
+754
+00:36:11,255 --> 00:36:13,036
+bilmeniz gerekir. Hatta en genel
+
+755
+00:36:13,036 --> 00:36:15,255
+şey bilirseniz işimiz
+
+756
+00:36:15,255 --> 00:36:17,036
+daha kolay olacaktır.
+
+757
+00:36:17,355 --> 00:36:19,056
+Yukarıda da yazmıştım şunları.
+
+758
+00:36:19,115 --> 00:36:20,496
+Burada da tekrar yazmışım.
+
+759
+00:36:20,795 --> 00:36:21,155
+Tamam mı?
+
+760
+00:36:21,715 --> 00:36:23,835
+Hocam bunları ezberleyecek miyiz?
+
+761
+00:36:23,835 --> 00:36:25,635
+Yoksa formülle ispatlayacak mıyız?
+
+762
+00:36:26,315 --> 00:36:27,855
+Yoksa kimse onun ispatını
+
+763
+00:36:27,855 --> 00:36:29,295
+sorarsa ispatlarsın.
+
+764
+00:36:29,395 --> 00:36:30,835
+Yani birçok hoca da belki de şöyle
+
+765
+00:36:30,835 --> 00:36:31,975
+doğrudan verecektir.
+
+766
+00:36:32,175 --> 00:36:34,395
+İşte ark kosekant'ın türevi
+
+767
+00:36:34,395 --> 00:36:35,455
+şudur diye verebilir.
+
+768
+00:36:35,576 --> 00:36:36,996
+Ama ben hani biraz
+
+769
+00:36:36,996 --> 00:36:38,815
+öğrenci de bu nereden geldi?
+
+770
+00:36:38,815 --> 00:36:41,215
+mantığı nedir? Hani bazen unuturum der,
+
+771
+00:36:41,295 --> 00:36:42,576
+şuradan çıkarırım diye
+
+772
+00:36:42,576 --> 00:36:44,596
+böyle vermek istiyorum.
+
+773
+00:36:44,815 --> 00:36:46,275
+Yani daha iyi akılda kalsın diye.
+
+774
+00:36:46,335 --> 00:36:48,715
+Ama sana kimse onun nasıl çıkartıldığını
+
+775
+00:36:48,715 --> 00:36:49,315
+sormaz.
+
+776
+00:36:49,655 --> 00:36:50,815
+Ama türevini bilmek zorundasın.
+
+777
+00:36:51,715 --> 00:36:52,915
+Hocam aslında bu şekilde
+
+778
+00:36:52,915 --> 00:36:54,576
+vermeniz çok iyi, çok güzel oluyor.
+
+779
+00:36:54,815 --> 00:36:56,596
+Bilmiyorum. Ben böyle veriyorum.
+
+780
+00:36:56,815 --> 00:36:58,835
+Hani öğrenci istiyorsa zaten formülü
+
+781
+00:36:58,835 --> 00:37:00,815
+bilmek zorunda. Zaten sınav test olursa
+
+782
+00:37:01,395 --> 00:37:03,235
+açarsın kitaptan formülün hazır.
+
+783
+00:37:03,536 --> 00:37:04,955
+Ama hani mantık da nereden
+
+784
+00:37:04,955 --> 00:37:06,536
+geliyor diye birazcık da hani
+
+785
+00:37:06,536 --> 00:37:08,915
+kuru kuru yazılmış olmasın diye
+
+786
+00:37:08,915 --> 00:37:10,355
+mantığı da birçok örnek.
+
+787
+00:37:10,496 --> 00:37:12,175
+Bunların ispatları çok detaylı ama
+
+788
+00:37:12,175 --> 00:37:13,395
+onlara girmiyorum. Gerek yok.
+
+789
+00:37:13,576 --> 00:37:15,175
+Yani şurada ters trigonotif
+
+790
+00:37:15,175 --> 00:37:16,475
+fonksiyonlarda neyi bilmeliyim
+
+791
+00:37:16,475 --> 00:37:17,155
+diyorum bence.
+
+792
+00:37:17,695 --> 00:37:19,395
+Tanım kümesi, görüntü kümesi.
+
+793
+00:37:19,975 --> 00:37:21,096
+Bir de türevini bilmeliyim.
+
+794
+00:37:21,175 --> 00:37:22,255
+İşte birkaç tane de verdik.
+
+795
+00:37:22,415 --> 00:37:24,755
+İşte tersinin, işte aksinüsün,
+
+796
+00:37:25,255 --> 00:37:26,395
+işte simüsün x olduğu.
+
+797
+00:37:26,496 --> 00:37:28,375
+Bu tip özdeşlikleri de verdik orada.
+
+798
+00:37:28,455 --> 00:37:29,155
+Onları bileceğim.
+
+799
+00:37:29,596 --> 00:37:31,115
+Şu anki bilgilerin bu başka bir şey
+
+800
+00:37:31,115 --> 00:37:32,355
+bilmeme gerek yok.
+
+801
+00:37:32,556 --> 00:37:33,355
+Tamam mı arkadaşım?
+
+802
+00:37:33,355 --> 00:37:34,615
+Çok teşekkür ederim.
+
+803
+00:37:34,855 --> 00:37:35,155
+Sağ olun.
+
+804
+00:37:35,735 --> 00:37:38,335
+Şimdi problemimiz yoksa birkaç tane
+
+805
+00:37:38,335 --> 00:37:40,175
+soruyla pekiştirmeye çalışalım.
+
+806
+00:37:40,415 --> 00:37:40,576
+Tamam mı?
+
+807
+00:37:42,175 --> 00:37:42,536
+Evet.
+
+808
+00:37:42,996 --> 00:37:43,755
+Şimdi gelelim.
+
+809
+00:37:44,375 --> 00:37:45,996
+Tabii hiç lisede görmediyseniz
+
+810
+00:37:45,996 --> 00:37:47,315
+biraz kafa karışabilir.
+
+811
+00:37:47,455 --> 00:37:49,375
+Ben bile bazen pat diye bana bir türevini
+
+812
+00:37:49,375 --> 00:37:51,076
+sor aklıma gelmeyebiliyorum.
+
+813
+00:37:51,295 --> 00:37:53,115
+Yani onun için normaldir ilk gördüğünüz için.
+
+814
+00:37:53,255 --> 00:37:55,415
+Tabii birazcık bakıp biraz soru
+
+815
+00:37:55,415 --> 00:37:56,715
+çözerseniz oturur yani.
+
+816
+00:37:56,715 --> 00:37:58,036
+artık alışıyorsun.
+
+817
+00:37:58,175 --> 00:37:59,435
+İşte sürekli sorulan
+
+818
+00:37:59,435 --> 00:38:01,915
+işte art tanjantın türevi.
+
+819
+00:38:02,375 --> 00:38:03,875
+Her zaman ikinci sınıfta bir
+
+820
+00:38:03,875 --> 00:38:06,096
+diferansiyel denklem dersi alacaksın.
+
+821
+00:38:06,255 --> 00:38:07,835
+Orada hep karşına çıkacaktır.
+
+822
+00:38:07,955 --> 00:38:08,975
+Yani onun için de unutmuyorsun.
+
+823
+00:38:09,516 --> 00:38:09,675
+Evet.
+
+824
+00:38:10,096 --> 00:38:10,475
+Gelelim.
+
+825
+00:38:10,935 --> 00:38:11,835
+Sorumu şu olsun.
+
+826
+00:38:12,215 --> 00:38:13,755
+Limit x sonsuza giderken
+
+827
+00:38:13,755 --> 00:38:17,096
+arc cosecant x'in limitinin sıfır.
+
+828
+00:38:17,175 --> 00:38:18,475
+Yani ne yapıyorum?
+
+829
+00:38:19,996 --> 00:38:22,036
+Cosecant sonsuz olan açıyı arıyorum.
+
+830
+00:38:22,096 --> 00:38:23,155
+Değil mi arkadaşlar aslında?
+
+831
+00:38:23,275 --> 00:38:23,895
+O da nedir?
+
+832
+00:38:25,096 --> 00:38:25,615
+Sıfırdır.
+
+833
+00:38:25,615 --> 00:38:28,335
+Gördük değil mi bunu?
+
+834
+00:38:28,975 --> 00:38:30,655
+Yani arc cosecant sonsuz
+
+835
+00:38:30,655 --> 00:38:31,915
+nedir diye bakalım
+
+836
+00:38:31,915 --> 00:38:33,516
+limit sonsuza giderken.
+
+837
+00:38:33,955 --> 00:38:36,036
+Cosecantı sonsuz olan
+
+838
+00:38:36,036 --> 00:38:36,815
+açıyı arıyorum.
+
+839
+00:38:36,915 --> 00:38:38,615
+Cosecant da bir bölü
+
+840
+00:38:38,615 --> 00:38:40,735
+sinüs değil miydi?
+
+841
+00:38:43,435 --> 00:38:43,895
+Evet.
+
+842
+00:38:45,355 --> 00:38:46,195
+Sıfırdır.
+
+843
+00:38:46,596 --> 00:38:46,815
+Evet.
+
+844
+00:38:47,275 --> 00:38:48,016
+Şimdi gelelim.
+
+845
+00:38:48,435 --> 00:38:50,195
+Y eşittir arc tanjant
+
+846
+00:38:50,195 --> 00:38:51,435
+ln x'in
+
+847
+00:38:51,435 --> 00:38:52,935
+türevini soruyor bana.
+
+848
+00:38:52,935 --> 00:38:54,016
+Hadi ben bekliyorum.
+
+849
+00:38:54,115 --> 00:38:55,556
+Bunu siz karalama bir kağıda.
+
+850
+00:38:55,615 --> 00:38:56,935
+çözmeye çalışın.
+
+851
+00:38:57,295 --> 00:38:59,516
+Arc tanjantın türevini yukarıda verdik.
+
+852
+00:38:59,815 --> 00:39:01,335
+Genel olarak arc tanjantı
+
+853
+00:39:01,335 --> 00:39:02,155
+onun türevi neydi?
+
+854
+00:39:02,295 --> 00:39:04,235
+U üstü bölü bir artı onun karesi.
+
+855
+00:39:04,475 --> 00:39:05,475
+Burada u dediğim nedir?
+
+856
+00:39:05,576 --> 00:39:06,235
+ln x'tir.
+
+857
+00:39:06,335 --> 00:39:07,895
+Tabii ln'in de türevini biliyoruz.
+
+858
+00:39:07,996 --> 00:39:09,056
+Onu da bilmek gerekir.
+
+859
+00:39:09,115 --> 00:39:10,516
+Yani türevleri gördük.
+
+860
+00:39:10,516 --> 00:39:11,516
+çepsinin yerinde.
+
+861
+00:39:11,516 --> 00:39:22,415
+Çepsinin yerinde.
+
+862
+00:39:11,936 --> 00:39:14,256
+geldiğinde de kullanmamız gerekecek.
+
+863
+00:39:24,083 --> 00:39:24,703
+sanırım.
+
+864
+00:39:31,059 --> 00:39:32,500
+Evet, bulan var mı?
+
+865
+00:39:35,639 --> 00:39:37,079
+Evet, ne dedik?
+
+866
+00:39:37,299 --> 00:39:42,340
+Art tanjant, L'nx'i u ile göstermiş olsam, u'nun türevi diyeceğim.
+
+867
+00:39:42,519 --> 00:39:44,539
+L'nx'in türevi 1 bölü x'tir.
+
+868
+00:39:44,820 --> 00:39:46,279
+1 artı u'nun karesi şu.
+
+869
+00:39:46,940 --> 00:39:52,460
+Bu da düzenlenirse, 1 bölü x çarpı, parantez içinde 1 artı L'n kare x diye yazarım.
+
+870
+00:39:52,599 --> 00:39:53,320
+Tamam mı arkadaşlar?
+
+871
+00:39:53,320 --> 00:39:54,880
+Evet, şimdi gelelim.
+
+872
+00:39:55,279 --> 00:39:57,059
+Y'eşit'tir, art kosümüz.
+
+873
+00:39:57,559 --> 00:40:00,119
+Bakın argümanın içinde L'n sinüs x'in.
+
+874
+00:40:00,119 --> 00:40:01,659
+türevini soruyor bana.
+
+875
+00:40:01,659 --> 00:40:02,820
+Hadi bekliyorum bunu da.
+
+876
+00:40:02,820 --> 00:40:04,659
+Ark kosümüz'ün türevini hatırlayalım.
+
+877
+00:40:04,759 --> 00:40:05,659
+Yukarıda ne demiştik?
+
+878
+00:40:05,779 --> 00:40:10,480
+Eksi u, argümanın üstü bölü, kök içinde 1 eksi u kare.
+
+879
+00:40:10,779 --> 00:40:11,559
+Onu biliyoruz.
+
+880
+00:40:11,739 --> 00:40:12,719
+Yazmışım da şuraya.
+
+881
+00:40:13,139 --> 00:40:15,299
+Hadi ben bekliyorum, türevi bulmaya çalışın.
+
+882
+00:40:16,139 --> 00:40:17,840
+Yani burada u dediğim ifade nedir?
+
+883
+00:40:17,980 --> 00:40:19,639
+Elen sinüs x'dir arkadaşlar.
+
+884
+00:40:21,820 --> 00:40:24,619
+Lütfen kalemle karalama almaya çalışın.
+
+885
+00:40:29,876 --> 00:40:35,776
+Zaten hani şu ana kadar diyelim ki ters trigonometikte sınavda ne çıkar karşıma?
+
+886
+00:40:35,876 --> 00:40:43,256
+Bir türev sorulabilir veya işte bir tane ters trigonometrik fonksiyonu alır, başka bir fonksiyon koyar, tanım kümesi sorar.
+
+887
+00:40:43,376 --> 00:40:48,576
+Onun için de ne diyorum? Türevi bilmeliyim, tanım kümelerini, görüntü kümelerini bilmeliyim.
+
+888
+00:40:48,736 --> 00:40:53,576
+Oradan hani soru içinde sorularda karşılık pakliye çıktığında onu orada kullanacaksın.
+
+889
+00:40:53,576 --> 00:40:58,876
+İşte burada da bakın, kosmüsün türevini öğrenciye soruyor. Türevi biliyor mu formülünü?
+
+890
+00:40:58,876 --> 00:41:02,296
+İşte içinde bakın elen sinüs var, elenin türevini biliyor mu?
+
+891
+00:41:02,376 --> 00:41:06,776
+Trigonometrik fonksiyonun türevini biliyor mu? Yani birçok bilgiyi burada test etmeye çalışıyor.
+
+892
+00:41:07,096 --> 00:41:08,236
+Sanırım yaptınız değil mi?
+
+893
+00:41:09,436 --> 00:41:12,636
+Evet, yazmış bir arkadaş da. Evet, bakalım.
+
+894
+00:41:13,176 --> 00:41:15,756
+Şimdi ne dedik? İlk örnek oldu. Şimdi şöyle dedim.
+
+895
+00:41:16,316 --> 00:41:20,656
+A kosmüsün türevi, eksi u üstü bölük yok. İçinde bir eksi u'nun karesi diyoruz.
+
+896
+00:41:20,656 --> 00:41:25,056
+U dediğim ifade neydi? Elen sinüsü. Elen sinüsün türevini de biliyorum.
+
+897
+00:41:25,056 --> 00:41:29,256
+Elen t gibi desem sinüse. T'nin türevi bölü t idi.
+
+898
+00:41:29,396 --> 00:41:33,576
+Yani şöyle de düşünüyorduk hep. İçinin türevi yani sinüsün türevi bölü sinüs.
+
+899
+00:41:33,696 --> 00:41:36,956
+İşte u'nun türevi bu. Kosmüs x bölü sinüsü bu.
+
+900
+00:41:37,496 --> 00:41:42,276
+Dönüyoruz. Şurada yerine yazıyorum. Bakın y'nin türevi yani şunun türevini istiyor benden.
+
+901
+00:41:42,796 --> 00:41:48,016
+Eksi kosmüs x bölü sinüs. Kök içinde bir eksi u'nun karesidir.
+
+902
+00:41:48,016 --> 00:41:53,676
+Bu da düzenlenirse işte. Eksi kotanjant bu şekilde yazarız. Tamam mı?
+
+903
+00:41:54,136 --> 00:41:57,236
+Düzenlemeye birine gerek yok. Şu anda bizim için türevi önemli.
+
+904
+00:41:57,776 --> 00:41:59,376
+Evet, bir tane daha bakalım.
+
+905
+00:42:00,156 --> 00:42:03,396
+Geçtir elen artanjant x'in türevini alın bakalım.
+
+906
+00:42:03,916 --> 00:42:04,656
+Hadi bekliyorum.
+
+907
+00:42:07,516 --> 00:42:11,276
+Bu sefer ne oldu? Bakın elen parantez için artanjant.
+
+908
+00:42:11,356 --> 00:42:15,176
+Yani artanjant x'e u dersem elen u'nun türevini de biliyordum.
+
+909
+00:42:15,176 --> 00:42:17,476
+U üstü bölü u diye düşüneceğim.
+
+910
+00:42:18,336 --> 00:42:23,016
+U üstü dediğim, pardon u dediğim artanjant x'in türevini de yukarıda verdik zaten.
+
+911
+00:42:38,068 --> 00:42:40,068
+Artı yazan arkadaşlar var.
+
+912
+00:42:40,807 --> 00:42:45,108
+Evet, ne dedik?
+
+913
+00:42:45,208 --> 00:42:46,868
+Artı tanjantın türevini biliyorum.
+
+914
+00:42:46,948 --> 00:42:48,628
+1 artı 1 bölü x karedir.
+
+915
+00:42:48,868 --> 00:42:52,148
+Bölü u'su artı tanjant x bu şekilde yazıyor.
+
+916
+00:42:52,228 --> 00:42:55,028
+Evet, çoğunuz yaptığınız yazanlar da doğru yazdı.
+
+917
+00:42:55,668 --> 00:42:58,088
+Evet, gelelim diğer bir sorumuza.
+
+918
+00:42:58,408 --> 00:42:59,428
+Şimdi geldik buraya.
+
+919
+00:42:59,948 --> 00:43:04,788
+Limit x0'a giderken artı sinüs x bölü x'in limiti nedir?
+
+920
+00:43:04,788 --> 00:43:07,368
+Burada da ters fonksiyonu limit de kullan diyor bana.
+
+921
+00:43:07,368 --> 00:43:10,708
+Peki, ne tip belirsizlik var burada arkadaşlar?
+
+922
+00:43:11,168 --> 00:43:12,488
+Aksinüs 0 nedir?
+
+923
+00:43:12,968 --> 00:43:14,068
+x'in limiti 0 yazdım.
+
+924
+00:43:14,128 --> 00:43:15,628
+Aksinüs 0 nedir?
+
+925
+00:43:16,188 --> 00:43:18,148
+Sinüs'ü 0 olan açıyı arıyorum değil mi?
+
+926
+00:43:18,368 --> 00:43:18,728
+Nedir?
+
+927
+00:43:20,828 --> 00:43:21,168
+0.
+
+928
+00:43:21,688 --> 00:43:22,588
+Payda da nedir?
+
+929
+00:43:22,688 --> 00:43:22,908
+0.
+
+930
+00:43:23,048 --> 00:43:25,568
+Yani burada 0 bölü 0 belirsizliği var.
+
+931
+00:43:25,828 --> 00:43:27,648
+Bu belirsizliği gidermeye çalışacağım.
+
+932
+00:43:27,648 --> 00:43:30,648
+Hadi 1-2 dakika bekliyorum ben, siz bulmaya çalışın.
+
+933
+00:44:06,900 --> 00:44:07,260
+dutma.
+
+934
+00:44:15,188 --> 00:44:22,807
+x'e 1y'e dönüşümü yapabilirsiniz buradan arkadaşlar. Oradan da görebilirsiniz. Çok kolay. Sonucu bulursunuz hemen.
+
+935
+00:44:24,088 --> 00:44:24,968
+Fonsuz mu arayın?
+
+936
+00:44:25,528 --> 00:44:31,528
+Yok değil. Tanımdım. Sanırım 1 çıkacaktır. Yanlış hatırlamıyor. Evet 1 çıkıyor. Bakın.
+
+937
+00:44:32,867 --> 00:44:41,807
+Dedik ki bu 0 bölü 0 belirsiz yazmışım şuraya. Şimdi ne yapıyorum? Şu andaki bilgilerimle bu cebirsel işlemleri kullanarak bu belirsizi gidermek için ne yaptım?
+
+938
+00:44:41,807 --> 00:44:49,327
+Aksinus x'e 1y dönüşüm uygulamış olalım. Tamam mı? Aksinus x, y ise buradan x ne olur? Bakın şuraya yazdım. Sinüs y olur.
+
+939
+00:44:49,568 --> 00:44:55,508
+O zaman ben şu limiti y cinsinden ifade etmek istiyorum. O zaman x sıfıra giderken y de sıfıra gitmez mi?
+
+940
+00:44:56,168 --> 00:45:01,708
+Aksinus 0, sıfırdı. Y de sıfıra gidecek. O zaman yeniden yazıyorum. Bakın limit y sıfıra giderken.
+
+941
+00:45:02,088 --> 00:45:05,927
+Aksinus x'e y demiştim. x de neymiş? Sinüs y.
+
+942
+00:45:05,927 --> 00:45:09,988
+Bunu da biliyoruz değil mi? 1 olduğunu zaten. Bu kadar.
+
+943
+00:45:11,807 --> 00:45:14,807
+Niye yapamadık.
+
+944
+00:45:14,807 --> 00:45:19,807
+Ne diyorsunuz? Sinüs x'e çarp, sinüse bölsek. Ama bu arksinüs.
+
+945
+00:45:19,807 --> 00:45:32,807
+Bu arksinüs.
+
+946
+00:45:29,460 --> 00:45:31,400
+x'i y'ye çevirmedik hocam.
+
+947
+00:45:31,539 --> 00:45:32,619
+Orada hata yaptım.
+
+948
+00:45:32,679 --> 00:45:34,099
+Tabii çünkü bu arksinüz.
+
+949
+00:45:34,360 --> 00:45:34,579
+Tamam.
+
+950
+00:45:35,220 --> 00:45:37,500
+Evet şimdi gelelim şunu soruyorum.
+
+951
+00:45:38,639 --> 00:45:41,059
+x sıfıra sağdan yaklaştığında
+
+952
+00:45:41,059 --> 00:45:43,559
+arktanjant kök x'in karesi bölü
+
+953
+00:45:43,559 --> 00:45:44,940
+x çarpı kök içinde
+
+954
+00:45:44,940 --> 00:45:47,500
+x artı birin limiti nedir?
+
+955
+00:45:47,720 --> 00:45:49,820
+Peki şimdi önce bana ne tip belirsizlik var?
+
+956
+00:45:49,880 --> 00:45:50,840
+Onu görmeye çalışın.
+
+957
+00:45:50,920 --> 00:45:52,059
+Gerçi şurada görüyoruz ama
+
+958
+00:45:52,059 --> 00:45:53,599
+şöyle bakıyoruz tabii ki.
+
+959
+00:45:53,599 --> 00:45:56,240
+x sıfıra giderken arktanjant sıfır alıyorum.
+
+960
+00:45:56,619 --> 00:45:58,460
+Tanjantı sıfır olan açı nedir?
+
+961
+00:45:58,699 --> 00:45:59,300
+Sıfırdır.
+
+962
+00:45:59,460 --> 00:46:01,159
+payda zaten sıfıra gidiyor.
+
+963
+00:46:01,220 --> 00:46:02,280
+Aşikar gözüküyor.
+
+964
+00:46:02,920 --> 00:46:05,280
+Burada amaç bizim ters trigonometrik fonksiyonları
+
+965
+00:46:05,280 --> 00:46:06,280
+anlayabilmek değil mi?
+
+966
+00:46:06,519 --> 00:46:07,380
+Nasıl buluyorduk?
+
+967
+00:46:07,579 --> 00:46:07,720
+Evet.
+
+968
+00:46:08,179 --> 00:46:10,159
+Yani sıfır bölü sıfır belirsizliği var.
+
+969
+00:46:10,599 --> 00:46:13,480
+Yine yukarıdaki mantıkla dönüşüm yaparak bulabilirsiniz.
+
+970
+00:46:14,340 --> 00:46:15,679
+Hadi bekliyorum bir iki dakika.
+
+971
+00:46:51,092 --> 00:46:51,592
+dükklo.
+
+972
+00:46:58,708 --> 00:47:03,367
+Tark tanjant kök x'e bir y desem ne olur?
+
+973
+00:47:03,807 --> 00:47:04,347
+Değil mi buradan?
+
+974
+00:47:04,788 --> 00:47:05,668
+Kök x ne olur?
+
+975
+00:47:05,788 --> 00:47:06,788
+Tanjant y olur.
+
+976
+00:47:07,347 --> 00:47:07,988
+x de ne olur?
+
+977
+00:47:08,128 --> 00:47:09,427
+Tanjant kare y olur.
+
+978
+00:47:10,268 --> 00:47:13,288
+Onu da yerine yazarsam oradan görebilirsin.
+
+979
+00:47:13,927 --> 00:47:14,887
+Bakın şu.
+
+980
+00:47:16,367 --> 00:47:17,427
+Dönüşümü yaptık.
+
+981
+00:47:18,028 --> 00:47:19,548
+Tanjant y de kök x olur.
+
+982
+00:47:19,548 --> 00:47:21,307
+Şimdi zaten ne yapıyorum?
+
+983
+00:47:21,447 --> 00:47:24,407
+Yeniden bunu y cinsinden ifade etmeye çalışıyorum.
+
+984
+00:47:24,988 --> 00:47:28,008
+O halde x sıfıra giderken y de sıfıra gider demiştik.
+
+985
+00:47:28,008 --> 00:47:29,807
+Yani bu sonuçta en baştan başladık.
+
+986
+00:47:29,887 --> 00:47:31,947
+Bakın dedik ki tipi nedir belirsizliği?
+
+987
+00:47:32,048 --> 00:47:33,788
+Sıfır bölü sıfır belirsizliği var.
+
+988
+00:47:34,208 --> 00:47:36,568
+Buradan y sıfıra giderken yeniden yazıyorum.
+
+989
+00:47:36,688 --> 00:47:38,468
+Art tanjant kök x'e y demiştim.
+
+990
+00:47:38,528 --> 00:47:39,228
+Y kare oldu.
+
+991
+00:47:39,628 --> 00:47:42,008
+Şimdi gelelim x'i yazmaya çalışıyorum.
+
+992
+00:47:42,108 --> 00:47:43,148
+X yerine ne yazarım?
+
+993
+00:47:43,367 --> 00:47:44,788
+Tanjant kare y yazarım.
+
+994
+00:47:45,148 --> 00:47:46,048
+Kökün içi de ne olur?
+
+995
+00:47:46,447 --> 00:47:49,088
+Tanjant kare y artı bir olur.
+
+996
+00:47:49,088 --> 00:47:51,608
+Şimdi kökün içini nasıl düzenlerim?
+
+997
+00:47:52,427 --> 00:47:55,508
+1 artı tanjant kare y neye eşit dediğim onu bilmem gerek.
+
+998
+00:47:55,728 --> 00:47:57,008
+Açık yazın şunu şuradan.
+
+999
+00:47:57,008 --> 00:47:59,008
+Sinüs kare bölü kosünüs kare dersen
+
+1000
+00:47:59,008 --> 00:48:01,068
+1 bölük payda da eşit dersen
+
+1001
+00:48:01,068 --> 00:48:02,788
+1 bölük kosünüs kare olur.
+
+1002
+00:48:03,128 --> 00:48:04,407
+Ya da sekant kareye eşit.
+
+1003
+00:48:04,508 --> 00:48:05,568
+Bakın şuraya yazdım.
+
+1004
+00:48:06,528 --> 00:48:09,347
+Bir artı tanjant kare y sekant kareye eşittir.
+
+1005
+00:48:09,708 --> 00:48:10,807
+Yani bu da sonuçta
+
+1006
+00:48:10,807 --> 00:48:13,168
+sekant y olarak kökün dışına çıktı.
+
+1007
+00:48:13,768 --> 00:48:14,608
+Bunu da ne yaparım?
+
+1008
+00:48:14,608 --> 00:48:18,327
+y bölü tanjant y'nin parantez karesi şeklinde getiririm.
+
+1009
+00:48:18,427 --> 00:48:26,988
+Çünkü biliyorum ki hatırlarsanız limit x sıfıra giderken x bölü tanjant x veya tanjant x bölü x'in 1 olduğunu biliyorum.
+
+1010
+00:48:27,168 --> 00:48:28,628
+Onu kullanacağım burada bakın.
+
+1011
+00:48:29,407 --> 00:48:30,628
+1'in karesi 1'dir.
+
+1012
+00:48:31,008 --> 00:48:34,427
+Bu da y sıfıra giderken sekant sıfırda nedir?
+
+1013
+00:48:34,788 --> 00:48:35,347
+1'dir.
+
+1014
+00:48:35,548 --> 00:48:35,728
+Değil mi?
+
+1015
+00:48:35,768 --> 00:48:36,608
+1 bölü kosünüsden.
+
+1016
+00:48:37,387 --> 00:48:38,148
+O da 1'e gitti.
+
+1017
+00:48:38,148 --> 00:48:41,028
+Yani sonuçta limit 1'dir diyeceğiz.
+
+1018
+00:48:42,407 --> 00:48:43,327
+Anladık mı arkadaşlar?
+
+1019
+00:48:43,708 --> 00:48:45,168
+Bunlar da güzel sorular yani.
+
+1020
+00:48:45,347 --> 00:48:46,327
+Sınav sorusu olabilir.
+
+1021
+00:48:46,467 --> 00:48:47,588
+Bunlar öyle almışımdır.
+
+1022
+00:48:49,188 --> 00:48:49,648
+Oldu mu?
+
+1023
+00:48:49,887 --> 00:48:50,407
+Anladık mı?
+
+1024
+00:48:52,208 --> 00:48:53,508
+Evet hocam sağ olun.
+
+1025
+00:48:53,708 --> 00:48:54,248
+Teşekkür ederim.
+
+1026
+00:48:56,248 --> 00:48:59,168
+Evet şimdi aksinüsün türevinin
+
+1027
+00:48:59,168 --> 00:49:00,208
+1 bölü
+
+1028
+00:49:00,208 --> 00:49:02,548
+kök içinde 1 x x kare olduğunu
+
+1029
+00:49:02,548 --> 00:49:04,128
+gösteriniz arkadaşlar.
+
+1030
+00:49:04,367 --> 00:49:06,068
+Bunu zaten yukarıda ispatladık ama
+
+1031
+00:49:06,068 --> 00:49:07,588
+burada da amaç burada
+
+1032
+00:49:07,588 --> 00:49:09,648
+ters türevi biliyorum öğrenci
+
+1033
+00:49:09,648 --> 00:49:10,508
+onu kontrol etmek.
+
+1034
+00:49:10,748 --> 00:49:11,867
+Bunu çıkardık zaten.
+
+1035
+00:49:12,008 --> 00:49:12,588
+Şöyle bakın.
+
+1036
+00:49:13,768 --> 00:49:14,387
+Söyleyelim.
+
+1037
+00:49:14,548 --> 00:49:16,108
+Hatta f'leri de kullandım.
+
+1038
+00:49:16,467 --> 00:49:17,188
+Yani fx
+
+1039
+00:49:17,188 --> 00:49:19,827
+yani şunu f ile göstersem
+
+1040
+00:49:19,827 --> 00:49:20,967
+tamam mı?
+
+1041
+00:49:20,967 --> 00:49:22,448
+Y'ye demiştik biz yukarıda.
+
+1042
+00:49:22,508 --> 00:49:23,427
+Burada f demiş olalım.
+
+1043
+00:49:23,728 --> 00:49:24,387
+F ne olur?
+
+1044
+00:49:24,748 --> 00:49:26,088
+Sinüs x olur arkadaşlar.
+
+1045
+00:49:26,508 --> 00:49:27,248
+Olsun dedik.
+
+1046
+00:49:27,688 --> 00:49:29,528
+Bunun tersi de aksinüs değil midir?
+
+1047
+00:49:30,708 --> 00:49:32,327
+Türevi de kosinüs'tür.
+
+1048
+00:49:32,327 --> 00:49:33,847
+Çünkü nereden gideceğim?
+
+1049
+00:49:34,108 --> 00:49:35,148
+Baştan beri hep söylüyorum.
+
+1050
+00:49:35,148 --> 00:49:37,788
+Ters fonksiyonun türevini ben nasıl biliyordum?
+
+1051
+00:49:37,988 --> 00:49:40,948
+Bir bölü fonksiyonun türevini de tersini yerine yazardık.
+
+1052
+00:49:41,008 --> 00:49:41,608
+Hep böyleydi.
+
+1053
+00:49:41,668 --> 00:49:43,508
+Nokta varsa da noktayı kullanırdık.
+
+1054
+00:49:43,668 --> 00:49:43,768
+Bu.
+
+1055
+00:49:44,347 --> 00:49:46,008
+İşte bunu kullanmak istiyorum burada.
+
+1056
+00:49:46,387 --> 00:49:48,008
+Onun için de benim fonksiyonum ne oldu?
+
+1057
+00:49:48,347 --> 00:49:49,608
+Sinüs x olsun dedim.
+
+1058
+00:49:50,088 --> 00:49:52,668
+Bunun tersinde art sinüs olduğunu zaten biliyorum.
+
+1059
+00:49:53,128 --> 00:49:54,768
+E fonksiyonun türevine ihtiyacım var.
+
+1060
+00:49:54,867 --> 00:49:55,307
+Bu kosinüs.
+
+1061
+00:49:55,307 --> 00:49:57,148
+O zaman ne oldu sonuçta?
+
+1062
+00:49:57,608 --> 00:49:58,268
+Getireceğim.
+
+1063
+00:49:59,307 --> 00:50:00,668
+Burada türevi yazdım.
+
+1064
+00:50:00,748 --> 00:50:00,947
+Bakın.
+
+1065
+00:50:01,028 --> 00:50:02,648
+Bir bölü kosinüs.
+
+1066
+00:50:03,088 --> 00:50:04,088
+Burada ne yapıyorum?
+
+1067
+00:50:04,307 --> 00:50:06,768
+X yerine fonksiyonun tersini yazıyorum işte.
+
+1068
+00:50:07,128 --> 00:50:07,788
+Aksinüs.
+
+1069
+00:50:08,088 --> 00:50:09,568
+Yani şimdi burada ne yapıyorum?
+
+1070
+00:50:09,907 --> 00:50:14,008
+Bir bölü arksinüsün kosinüsünü bilmen gerekir.
+
+1071
+00:50:14,688 --> 00:50:15,847
+Onu da şöyle yaptım.
+
+1072
+00:50:15,967 --> 00:50:17,847
+Bunu da görmeniz için bir soruyu aldım zaten.
+
+1073
+00:50:18,008 --> 00:50:19,048
+Yani üçgen kullandım.
+
+1074
+00:50:19,148 --> 00:50:21,807
+Yani arksinüs x'i a ile göstermiş olalım.
+
+1075
+00:50:21,948 --> 00:50:24,248
+Bakın şuradan parantez içine gösterdim.
+
+1076
+00:50:24,248 --> 00:50:26,608
+Arksinüs x'i a dersen.
+
+1077
+00:50:27,048 --> 00:50:29,427
+Yani şu kosinüs a yerine ne yazacağım onu düşünüyorum.
+
+1078
+00:50:29,867 --> 00:50:31,327
+Arksinüs x'i a dersen.
+
+1079
+00:50:31,568 --> 00:50:33,367
+Burada x sinüs a olmaz mı?
+
+1080
+00:50:34,208 --> 00:50:36,148
+Bunu dik üçgende şöyle göstermez miyim?
+
+1081
+00:50:36,208 --> 00:50:37,648
+Şurası a açımız olsun.
+
+1082
+00:50:38,708 --> 00:50:39,208
+Neydi?
+
+1083
+00:50:39,347 --> 00:50:40,508
+Karşının hipotenüs oranı.
+
+1084
+00:50:40,568 --> 00:50:43,188
+Şurası eksi gibi duruyor ama bir arkadaşlar silmemiş.
+
+1085
+00:50:43,387 --> 00:50:45,028
+Yanlış çizgi kalmış.
+
+1086
+00:50:45,467 --> 00:50:47,807
+Yani sonuçta sinüs a nedir?
+
+1087
+00:50:48,188 --> 00:50:50,827
+Karşının hipotenüs oranı budur.
+
+1088
+00:50:51,228 --> 00:50:52,548
+Burayı da bulursun değil mi?
+
+1089
+00:50:52,768 --> 00:50:53,427
+Bu da nedir?
+
+1090
+00:50:53,427 --> 00:50:56,108
+1 eksi x karenin karek ötesidir.
+
+1091
+00:50:56,755 --> 00:51:05,635
+Bana ne lazımdı bakın kosinus A. E kosinus A da nedir? Komşunun hipotenüs oranı değil mi? O da nedir? Bir bölü kök içinde bir eksi x'in karesidir.
+
+1092
+00:51:06,076 --> 00:51:13,096
+O halde döndüm soruma bakın. Ne dedik? Fonksiyonun tersinin türevini soruyor. Yani aksinus'un türevini soruyor.
+
+1093
+00:51:13,195 --> 00:51:18,495
+Ben de diyorum ki bunun türevi nasıl alınırdı? Bir bölü fonksiyonun türevinde tersinin yerini yaz.
+
+1094
+00:51:18,495 --> 00:51:26,755
+Türevini aldım bir bölü kosinus. Tersini yazdım aksinus x. Şimdi aksinus x'i de bu şekilde bulmuş oldum.
+
+1095
+00:51:26,835 --> 00:51:31,195
+Getrik yerine yazdım. Bir bölü kök içinde bir eksi x'in karesidir diyeceğim.
+
+1096
+00:51:31,195 --> 00:51:42,795
+Ya da yukarıda bizim yaptığımız mantıkla da kosinus y çıkmıştı. Kökün içine de ne yapmıştık?
+
+1097
+00:51:42,795 --> 00:51:49,016
+Bir eksi x'inus kareler yazmıştık. Oradan da gidebiliriz ama ilk böyle bir şey verelim de aklımıza bu gelir.
+
+1098
+00:51:49,155 --> 00:51:52,875
+Yani onu düşünmeyiz de deriz ki ben ters fonksiyonun türevini almasını biliyorum.
+
+1099
+00:51:53,175 --> 00:51:57,835
+Onu kullanarak böyle de yapabilirim. Bilginiz olsun diye bunu da kullandım.
+
+1100
+00:51:58,056 --> 00:51:59,235
+Tamam mı? Anlaşıldı mı arkadaşlar?
+
+1101
+00:51:59,235 --> 00:52:00,235
+Evet.
+
+1102
+00:52:04,340 --> 00:52:05,780
+Evet, anladık mı?
+
+1103
+00:52:06,680 --> 00:52:07,460
+Anladık hocam.
+
+1104
+00:52:07,539 --> 00:52:10,079
+Tamam, devam edelim o zaman. Bir sorun daha var.
+
+1105
+00:52:12,500 --> 00:52:16,740
+Son kısım değil ama. Son kısım. Anlamadık mı son kısım?
+
+1106
+00:52:16,860 --> 00:52:24,820
+Son kısım dediğin ne yaptık? Ters fonksiyonun türevini biliyorum. Ben neydi? Bir bölü fonksiyonun türevinde tersini yerine yaz diyorum.
+
+1107
+00:52:25,200 --> 00:52:32,559
+Fonksiyonun türevi şu değil mi arkadaşlar? Yazdım bir bölü kosinüs x diyorum. Tersini yazmayacaktım. Tersi de fonksiyonu şu aksinüs değil mi?
+
+1108
+00:52:32,559 --> 00:52:36,860
+Yani şimdi benim bilmem gereken. Yani şimdi benim bilmem gereken.
+
+1109
+00:52:36,860 --> 00:52:48,059
+Yani şimdi benim bilmem gereken arksinüs x'in kosinüsünü bilmiyorum. Ama ben ne yaptım? Dedim ki arksinüs x'i a demiş oluyor. Onu aldım şöyle yazdım şuraya bakın. Buradan x de sinüs a oldu mu? Şöyle bir dik üçgen çizdim.
+
+1110
+00:52:48,700 --> 00:52:57,100
+A açısı şu olsun. Sinüs neydi? Karşımda kotelisi olanı. Yani x burası da bir. Burayı da nasıl bulurum? Dik üçgenden. Kök içinde bir eksi x'in karesi.
+
+1111
+00:53:02,559 --> 00:53:09,840
+Soranın yani. Yani onu da getirdiklerdir. Onu da getirdiklerine yazdım. Zaten aksinüs'in krevi de buydu diyorum. Tamam.
+
+1112
+00:53:11,039 --> 00:53:15,059
+Evet. Şimdi gelelim. Şöyle bir örneğimiz var.
+
+1113
+00:53:15,760 --> 00:53:21,420
+Aksinüs 3 bölü 5 artı aksinüs 4 bölü 5'in toplamını hesaplayınız.
+
+1114
+00:53:21,420 --> 00:53:23,960
+Nasıl düşünelim.
+
+1115
+00:53:30,420 --> 00:53:31,980
+Evet, fitre olan ne yapabilirim?
+
+1116
+00:53:38,675 --> 00:53:40,695
+x, y, demedi. A, b, d.
+
+1117
+00:53:40,755 --> 00:53:42,655
+x'ler, y'ler fonksiyonlarla karıştırma.
+
+1118
+00:53:42,735 --> 00:53:44,635
+Tamam. Doğru düşünüyor. Birine x, y,
+
+1119
+00:53:44,715 --> 00:53:46,956
+y, y desen olur. Hiçbir sakıncası yok.
+
+1120
+00:53:47,375 --> 00:53:48,655
+Onun için ben kendi
+
+1121
+00:53:48,655 --> 00:53:50,315
+dediğimi kullanayım burada. Tamam mı?
+
+1122
+00:53:50,735 --> 00:53:52,355
+Evet. Doğru sonucu da söylüyor.
+
+1123
+00:53:53,036 --> 00:53:54,755
+Şimdi gelelim. Şöyle düşündüm
+
+1124
+00:53:54,755 --> 00:53:56,556
+arkadaşlar. Birine a dedim.
+
+1125
+00:53:56,635 --> 00:53:58,335
+Birine d. Arkadaş x, y demiş.
+
+1126
+00:53:58,436 --> 00:54:00,536
+Hiçbir sakıncası yok. Aksinus 3
+
+1127
+00:54:00,536 --> 00:54:02,755
+bölü 5'e a diyelim. Aksinus
+
+1128
+00:54:02,755 --> 00:54:04,615
+4 bölü 5'e de b demiş olalım.
+
+1129
+00:54:04,936 --> 00:54:06,436
+Bizden a artı b'nin
+
+1130
+00:54:06,436 --> 00:54:08,195
+toplamını soruyor. O zaman
+
+1131
+00:54:08,195 --> 00:54:10,695
+şuradan a artı b'nin sinüsünü
+
+1132
+00:54:10,695 --> 00:54:12,576
+alırsam. Tamam mı?
+
+1133
+00:54:12,576 --> 00:54:14,815
+Çünkü aksinuslar var. Diyorum ki a artı b'nin
+
+1134
+00:54:14,815 --> 00:54:16,615
+sinüsünü nasıl yazalım trigonometrik olarak?
+
+1135
+00:54:17,175 --> 00:54:18,835
+Sinüs a kosinus b
+
+1136
+00:54:18,835 --> 00:54:20,875
+artı sinüs b
+
+1137
+00:54:20,875 --> 00:54:22,976
+kosinus a diye. Biliyorum trigonometriden.
+
+1138
+00:54:23,335 --> 00:54:24,936
+Şimdi şuradan
+
+1139
+00:54:24,936 --> 00:54:26,775
+deminki gibi dik üçgen kullanacağım.
+
+1140
+00:54:26,875 --> 00:54:28,496
+Bakın. Şuraya aldım.
+
+1141
+00:54:29,715 --> 00:54:30,996
+Ark sinüs 3 bölü
+
+1142
+00:54:30,996 --> 00:54:32,175
+5'e a dediysem
+
+1143
+00:54:32,175 --> 00:54:34,655
+3 bölü 5 sinüs a olmaz mı arkadaşlar?
+
+1144
+00:54:35,915 --> 00:54:36,755
+Bu halde şöyle bir
+
+1145
+00:54:36,755 --> 00:54:38,155
+dik üçgen çiziyorum. Bakın.
+
+1146
+00:54:38,195 --> 00:54:38,956
+şu.
+
+1147
+00:54:39,655 --> 00:54:40,436
+a açısı
+
+1148
+00:54:40,436 --> 00:54:41,476
+ne dedik?
+
+1149
+00:54:41,596 --> 00:54:43,076
+Karşının hipotenüs oranı
+
+1150
+00:54:43,076 --> 00:54:44,395
+3-5 dedim.
+
+1151
+00:54:44,476 --> 00:54:45,315
+Burası da 4'dür.
+
+1152
+00:54:46,235 --> 00:54:47,615
+Benzer şekilde bakın.
+
+1153
+00:54:48,036 --> 00:54:49,635
+Aksinus 4 bölü 5'e de b
+
+1154
+00:54:49,635 --> 00:54:50,315
+dediysem
+
+1155
+00:54:50,315 --> 00:54:51,815
+4 bölü 5'te ne olur?
+
+1156
+00:54:52,235 --> 00:54:53,135
+Sinüs b olur.
+
+1157
+00:54:53,576 --> 00:54:54,315
+O zaman buradan
+
+1158
+00:54:54,315 --> 00:54:55,835
+yine bir dik üçgen çizdim.
+
+1159
+00:54:55,895 --> 00:54:56,615
+B açısı dedim.
+
+1160
+00:54:56,775 --> 00:54:58,076
+Karşının hipotenüs oranı
+
+1161
+00:54:58,076 --> 00:54:58,936
+burası da 3 oldu.
+
+1162
+00:54:59,395 --> 00:55:00,115
+E şimdi bakıyorum.
+
+1163
+00:55:00,195 --> 00:55:00,936
+Burada bana neler
+
+1164
+00:55:00,936 --> 00:55:02,195
+razımsa yerine yazıyorum.
+
+1165
+00:55:02,536 --> 00:55:03,195
+Sinüs a
+
+1166
+00:55:03,195 --> 00:55:04,895
+diyeceğim ki 3 bölü 5.
+
+1167
+00:55:05,315 --> 00:55:06,416
+Kosinüs b diyorum.
+
+1168
+00:55:06,415 --> 00:55:07,516
+buradan kosinüsü nasıl
+
+1169
+00:55:07,516 --> 00:55:07,976
+bulurum?
+
+1170
+00:55:07,976 --> 00:55:09,735
+İşte komşunun hipotenüs oranı
+
+1171
+00:55:09,735 --> 00:55:10,536
+3 bölü 5.
+
+1172
+00:55:12,135 --> 00:55:12,735
+Yazdık.
+
+1173
+00:55:13,096 --> 00:55:14,375
+9 bölü 25 oldu.
+
+1174
+00:55:14,456 --> 00:55:15,115
+Tut aklında.
+
+1175
+00:55:15,755 --> 00:55:16,795
+Sonra sinüs b'ye
+
+1176
+00:55:16,795 --> 00:55:18,155
+ihtiyacım var değil mi?
+
+1177
+00:55:19,056 --> 00:55:20,096
+Onu zaten biliyorum.
+
+1178
+00:55:20,195 --> 00:55:21,135
+4 bölü 5.
+
+1179
+00:55:21,556 --> 00:55:22,695
+Çarpı kosinüs a.
+
+1180
+00:55:22,755 --> 00:55:23,476
+Kosinüs a'yı da
+
+1181
+00:55:23,476 --> 00:55:24,755
+zaten şuradan buldum.
+
+1182
+00:55:24,755 --> 00:55:26,315
+4 bölü 5'ten.
+
+1183
+00:55:26,436 --> 00:55:28,635
+16 bölü 25 oldu.
+
+1184
+00:55:28,775 --> 00:55:29,675
+9 daha.
+
+1185
+00:55:30,375 --> 00:55:32,036
+O zaman 25 bölü 25'ten
+
+1186
+00:55:32,036 --> 00:55:32,855
+1 bulmuş oldu.
+
+1187
+00:55:33,016 --> 00:55:33,996
+Bakın şurada yazdım.
+
+1188
+00:55:34,155 --> 00:55:34,695
+İşte.
+
+1189
+00:55:35,395 --> 00:55:35,596
+Tamam.
+
+1190
+00:55:36,516 --> 00:55:37,056
+Bu da ne oldu?
+
+1191
+00:55:37,115 --> 00:55:37,435
+1 oldu.
+
+1192
+00:55:37,655 --> 00:55:38,795
+Nasıl geldim buraya?
+
+1193
+00:55:39,215 --> 00:55:40,815
+Sinüs a artı b'nin toplamını
+
+1194
+00:55:40,815 --> 00:55:41,755
+ne buldum arkadaşlar?
+
+1195
+00:55:42,056 --> 00:55:42,635
+1 buldum.
+
+1196
+00:55:42,735 --> 00:55:43,855
+A artı b'nin toplamını
+
+1197
+00:55:43,855 --> 00:55:44,596
+bana soruyordu.
+
+1198
+00:55:44,675 --> 00:55:46,155
+O zaman a artı b ne olur?
+
+1199
+00:55:46,516 --> 00:55:47,615
+Aksinüs 1 olur.
+
+1200
+00:55:47,996 --> 00:55:49,476
+Bu aksinüs 1 de ne demektir?
+
+1201
+00:55:49,596 --> 00:55:52,315
+Sinüsü 1 olan açı demektir.
+
+1202
+00:55:52,315 --> 00:55:53,815
+O da pi bölü 2'dir.
+
+1203
+00:55:54,076 --> 00:55:55,476
+İşte verilen ifadenin
+
+1204
+00:55:55,476 --> 00:55:56,775
+toplamı pi bölü 2'ye
+
+1205
+00:55:56,775 --> 00:55:58,476
+eşittir diyoruz.
+
+1206
+00:55:58,916 --> 00:55:59,496
+Anladık mı?
+
+1207
+00:56:00,375 --> 00:56:01,775
+Çok güzel öğrenmiş hocam.
+
+1208
+00:56:02,576 --> 00:56:02,855
+Tamam.
+
+1209
+00:56:03,335 --> 00:56:03,735
+Oldu.
+
+1210
+00:56:03,835 --> 00:56:04,735
+Böyle bir sorun.
+
+1211
+00:56:04,976 --> 00:56:06,076
+Değişik bir tarz.
+
+1212
+00:56:06,215 --> 00:56:07,335
+Görmeniz için aldım.
+
+1213
+00:56:07,855 --> 00:56:08,675
+Devam edelim.
+
+1214
+00:56:09,675 --> 00:56:10,036
+Şimdi.
+
+1215
+00:56:10,615 --> 00:56:11,335
+Sorum şu.
+
+1216
+00:56:11,875 --> 00:56:13,416
+X büyük eksi 1 için
+
+1217
+00:56:13,416 --> 00:56:15,536
+art tanjan parantez gibi
+
+1218
+00:56:15,536 --> 00:56:16,675
+X eksi 1 bölü
+
+1219
+00:56:16,675 --> 00:56:17,655
+X artı 1'in
+
+1220
+00:56:17,655 --> 00:56:19,395
+art tanjan X eksi
+
+1221
+00:56:19,395 --> 00:56:20,355
+pi bölü 4
+
+1222
+00:56:20,355 --> 00:56:21,096
+olduğunu
+
+1223
+00:56:21,096 --> 00:56:22,416
+gösteriniz diyor.
+
+1224
+00:56:22,996 --> 00:56:24,335
+Artık söylemiyorum.
+
+1225
+00:56:24,596 --> 00:56:25,476
+Cevap gözükmesin.
+
+1226
+00:56:25,536 --> 00:56:26,395
+Biraz düşünün diye.
+
+1227
+00:56:26,576 --> 00:56:26,755
+Evet.
+
+1228
+00:56:27,436 --> 00:56:27,875
+Tamam mı?
+
+1229
+00:56:30,476 --> 00:56:31,335
+Art tanjan
+
+1230
+00:56:31,335 --> 00:56:33,615
+pardon parantez gibi
+
+1231
+00:56:33,615 --> 00:56:34,516
+X eksi 1 bölü
+
+1232
+00:56:34,516 --> 00:56:35,496
+X artı 1'in
+
+1233
+00:56:35,496 --> 00:56:37,175
+art tanjan X eksi
+
+1234
+00:56:37,175 --> 00:56:37,936
+pi bölü 4
+
+1235
+00:56:37,936 --> 00:56:38,556
+olduğunu
+
+1236
+00:56:38,556 --> 00:56:40,175
+gösteriniz diyor.
+
+1237
+00:56:41,096 --> 00:56:41,976
+Nasıl düşünelim?
+
+1238
+00:56:41,976 --> 00:56:44,476
+X eksi 1'in
+
+1239
+00:56:44,476 --> 00:57:04,476
+artı 1'in
+
+1240
+00:56:49,972 --> 00:56:51,232
+Peki size şunu sorsam.
+
+1241
+00:56:51,392 --> 00:56:53,492
+Bir fonksiyonun türevi sıfırsa
+
+1242
+00:56:53,492 --> 00:56:55,072
+o fonksiyonun için ne dersiniz?
+
+1243
+00:56:57,872 --> 00:56:59,512
+Tabii biraz zor bir soru
+
+1244
+00:56:59,512 --> 00:57:01,912
+düşünmek. Sabittir fonksiyon.
+
+1245
+00:57:02,272 --> 00:57:03,652
+Sabit fonksiyondur
+
+1246
+00:57:03,652 --> 00:57:05,552
+dediğimiz gibi. Onun için burada
+
+1247
+00:57:05,552 --> 00:57:07,792
+en azından bir fonksiyon
+
+1248
+00:57:07,792 --> 00:57:09,852
+seçip onun türevine bakabilirsin.
+
+1249
+00:57:09,992 --> 00:57:11,152
+Zor bir soru. Çok kolay değil.
+
+1250
+00:57:11,192 --> 00:57:14,012
+Hocam 1-2 bölünsün
+
+1251
+00:57:14,012 --> 00:57:15,612
+x artı 1 yapsak sonra da
+
+1252
+00:57:15,612 --> 00:57:17,892
+a artı tanjantı a artı b gibi açacak.
+
+1253
+00:57:18,012 --> 00:57:18,392
+Nasıl olur?
+
+1254
+00:57:18,392 --> 00:57:21,792
+Onu deneyebilirsin. Bilmiyorum şu anda. Doğru yanlış
+
+1255
+00:57:21,792 --> 00:57:24,152
+diyemem. Ben şöyle düşündüm.
+
+1256
+00:57:24,452 --> 00:57:25,711
+Yani şu verilen ifadeyi
+
+1257
+00:57:25,711 --> 00:57:27,792
+artı tanjantı buraya attım. Onu bir
+
+1258
+00:57:27,792 --> 00:57:29,372
+fonksiyon olarak gözlerine aldım.
+
+1259
+00:57:29,852 --> 00:57:31,552
+Ama dediğine de bir bak. Olabilir.
+
+1260
+00:57:31,872 --> 00:57:33,812
+Çünkü bilemiyorum. Türevi hemen yanlış
+
+1261
+00:57:33,812 --> 00:57:35,972
+diyemem. Çünkü ispatlanan bir şey
+
+1262
+00:57:35,972 --> 00:57:37,432
+var. Öyle de yapılabilir belki.
+
+1263
+00:57:37,872 --> 00:57:40,192
+FX'e ne dedik? Bakın artı tanjant
+
+1264
+00:57:40,192 --> 00:57:41,532
+eksi artı tanjant
+
+1265
+00:57:41,532 --> 00:57:43,852
+FX'im bu olsun. Diyorum ki bunun bir
+
+1266
+00:57:43,852 --> 00:57:45,512
+türevine bakın. Türevi ne çıkacak?
+
+1267
+00:57:46,852 --> 00:57:47,192
+Burada
+
+1268
+00:57:47,192 --> 00:57:49,972
+artı tanjantın türevini biliyorduk.
+
+1269
+00:57:49,972 --> 00:57:50,232
+Değil mi?
+
+1270
+00:57:50,592 --> 00:57:52,772
+U üstü bir artı tanjant onun türevi.
+
+1271
+00:57:52,852 --> 00:57:54,692
+U üstü bölü bir artı onun karesi.
+
+1272
+00:57:55,412 --> 00:57:57,072
+Şimdi bunun türevini
+
+1273
+00:57:57,072 --> 00:57:59,012
+hadi bekliyorum. Bunun türevi ne
+
+1274
+00:57:59,012 --> 00:58:00,052
+çıkacak arkadaşlar?
+
+1275
+00:58:01,412 --> 00:58:03,092
+Artı tanjantın türevi belli zaten.
+
+1276
+00:58:03,231 --> 00:58:04,772
+Bir bölü bir artı x kare. Bir tek
+
+1277
+00:58:04,772 --> 00:58:07,192
+şurada bölümün türevini alacağız. Bu da neydi?
+
+1278
+00:58:07,532 --> 00:58:08,492
+İçinin türevi yani.
+
+1279
+00:58:08,632 --> 00:58:10,512
+Payın türevi bir çarpı x artı bir.
+
+1280
+00:58:10,652 --> 00:58:12,392
+Eksi pay çarpı bir.
+
+1281
+00:58:12,652 --> 00:58:14,332
+Böyle faydanın karesi. Bakın şurada
+
+1282
+00:58:14,332 --> 00:58:16,692
+almışım zaten. Türevini alıyorum.
+
+1283
+00:58:17,052 --> 00:58:18,412
+Fonksiyonu böyle seçtim.
+
+1284
+00:58:18,532 --> 00:58:20,252
+U olsun dedim. Türevine bakıyorum.
+
+1285
+00:58:21,432 --> 00:58:22,732
+Şuradan buna u dersem
+
+1286
+00:58:22,732 --> 00:58:23,472
+u'nun türevi.
+
+1287
+00:58:23,572 --> 00:58:26,012
+Artı tanjant onun türevi. U üstü bölü bir artı kare
+
+1288
+00:58:26,012 --> 00:58:26,452
+dedik.
+
+1289
+00:58:27,052 --> 00:58:29,112
+Pay çarpı payın türevi çarpı
+
+1290
+00:58:29,112 --> 00:58:31,172
+1 x artı bir. Eksi
+
+1291
+00:58:31,172 --> 00:58:33,032
+pay çarpı
+
+1292
+00:58:33,032 --> 00:58:34,412
+faydanın türevi de bir şu.
+
+1293
+00:58:35,512 --> 00:58:36,852
+Bölü paydanın karesi.
+
+1294
+00:58:37,152 --> 00:58:37,952
+Tamam mı arkadaşlar?
+
+1295
+00:58:38,492 --> 00:58:40,152
+Dedim mi? Yani bu benim u üstüm.
+
+1296
+00:58:40,612 --> 00:58:43,172
+Bölü bir artı bunun karesi. Şöyle yazmışım.
+
+1297
+00:58:44,312 --> 00:58:44,832
+Eksi
+
+1298
+00:58:44,832 --> 00:58:46,632
+artı tanjantın türevi de belli.
+
+1299
+00:58:46,752 --> 00:58:48,612
+Bir bölü bir artı x'in karesi.
+
+1300
+00:58:48,892 --> 00:58:50,492
+Bunu düzenlersek arkadaşlar
+
+1301
+00:58:50,492 --> 00:58:52,272
+şuradan zaten x kare gitti.
+
+1302
+00:58:52,392 --> 00:58:53,352
+2 kaldı.
+
+1303
+00:58:53,712 --> 00:58:56,512
+Buradan da faydasını eşitleyip düzenlerseniz
+
+1304
+00:58:56,512 --> 00:58:58,632
+sonuçta 0 çıkıyor arkadaşlar.
+
+1305
+00:58:59,012 --> 00:59:00,532
+Bakın düzenlemişim.
+
+1306
+00:59:00,672 --> 00:59:01,232
+2 var.
+
+1307
+00:59:01,692 --> 00:59:02,632
+Burası karesi.
+
+1308
+00:59:02,912 --> 00:59:05,392
+Şurada yukarı atarsan x artı birin karesi olur.
+
+1309
+00:59:05,912 --> 00:59:09,192
+Şurada açarsan x kare eksi 2 x artı birilerden de
+
+1310
+00:59:09,192 --> 00:59:11,572
+iki parantezini alırsam şöyle de gelir.
+
+1311
+00:59:11,972 --> 00:59:12,752
+Tamam mı? Şu.
+
+1312
+00:59:14,132 --> 00:59:15,772
+Payda da işlemiş oluyorum tabii.
+
+1313
+00:59:16,132 --> 00:59:18,372
+Şu şekilde. Yani sonuçta 0 bulduk.
+
+1314
+00:59:18,372 --> 00:59:21,172
+O halde fonksiyonun türevi 0 ise
+
+1315
+00:59:21,172 --> 00:59:22,852
+diyeceğim ki bu bir sabittir.
+
+1316
+00:59:23,112 --> 00:59:24,752
+Yani c gibi bir sabittir.
+
+1317
+00:59:24,952 --> 00:59:25,952
+Onu da yazdık bakın.
+
+1318
+00:59:25,952 --> 00:59:28,032
+sabit olduğunu gösterin.
+
+1319
+00:59:28,172 --> 00:59:30,072
+Şimdi bu sabiti bulmam gerekecek.
+
+1320
+00:59:30,372 --> 00:59:32,072
+Bunu da deneme yanılma yoluyla
+
+1321
+00:59:32,072 --> 00:59:35,332
+yukarıda da zaten bu sabiti ne bulmam gerekir?
+
+1322
+00:59:35,532 --> 00:59:36,152
+2 bölü 4.
+
+1323
+00:59:36,211 --> 00:59:38,112
+Eksi 2 bölü 4 bulmam gerekir ki
+
+1324
+00:59:38,112 --> 00:59:39,672
+eşittir onu söyleyebilirim.
+
+1325
+00:59:39,892 --> 00:59:41,012
+Deneme yanılma yoluyla
+
+1326
+00:59:41,012 --> 00:59:42,652
+acaba dedim 0 olur mu?
+
+1327
+00:59:42,731 --> 00:59:43,572
+İşime yarar mı?
+
+1328
+00:59:43,992 --> 00:59:44,512
+Ne yapıyorum?
+
+1329
+00:59:44,972 --> 00:59:46,972
+Fonksiyonunda x yerine 0 yazıyorum.
+
+1330
+00:59:46,972 --> 00:59:48,172
+F0 eşit c.
+
+1331
+00:59:48,332 --> 00:59:49,231
+C'ye bulmak istiyorum.
+
+1332
+00:59:49,492 --> 00:59:50,972
+Fonksiyonu şu değil miydi arkadaşlar?
+
+1333
+00:59:51,672 --> 00:59:53,352
+X yerine 0 yazarsam
+
+1334
+00:59:53,352 --> 00:59:55,192
+arkan jant eksi 1.
+
+1335
+00:59:55,572 --> 00:59:58,392
+Tanjantı eksi 1 olan açı nedir?
+
+1336
+00:59:58,392 --> 01:00:20,652
+Evet.
+
+1337
+01:00:02,835 --> 01:00:10,015
+eksik bir ödü bu benim katı ama eksi bir ödü dördü ya dediğiniz olur ama bunu kullandım daha
+
+1338
+01:00:10,015 --> 01:00:15,855
+kolay işime yarıyor tamam mı yani tanjantı eksi bir olan açı eksik bir ödü dört dedi 45'in katı
+
+1339
+01:00:15,855 --> 01:00:22,255
+ya sonra burada artan can sıfır neydi tanjantı sıfır olan açısı kırdı onu yazdım sonuçta ne
+
+1340
+01:00:22,255 --> 01:00:28,695
+oldu eksi bir ödü dört yani c sabitini bulmuş oldum c ne buldum eksi bir ödü dört ne yapıyorum
+
+1341
+01:00:28,695 --> 01:00:35,755
+şu da yerine yazdım etik istediğim ifadem şuydu eşittir eksi bir ödü dört bakın şu
+
+1342
+01:00:35,755 --> 01:00:43,015
+yani bunu da düzenlersek yukarıdaki verildiği şekilde göre yani artan can sıfır şuraya atıyor
+
+1343
+01:00:43,015 --> 01:00:49,575
+attım işte yukarıdaki ifadeyi bu şekilde ispatlamış oluyor tamam mı değişik bir soru
+
+1344
+01:00:49,575 --> 01:00:55,455
+tabi ama böyle de düşünelim yani en azından bir koksörü seçip acaba onun türevi bu bir sınavda
+
+1345
+01:00:55,455 --> 01:01:04,935
+bir soru o şekilde düşünülebilir var mı sorunuz başka örneğin yok bunlar anlaşıldı mı arkadaşlar
+
+1346
+01:01:04,935 --> 01:01:13,576
+hocam ben efe şiddir fx eşittir c sabit olduğunu gösteriden sonrasını anlamadım şimdi fx dedi ki
+
+1347
+01:01:13,576 --> 01:01:19,015
+türevi sıfır buldum değil o zaman bu ne demektir sabit demektir yani fonksiyonu sabit ki türevi sıfır
+
+1348
+01:01:19,015 --> 01:01:26,335
+o zaman diyorum ki etik seçittir c gibi bir fonksiyon var elinde bu c bulabilmek için dedim ki deneme yanılma
+
+1349
+01:01:26,335 --> 01:01:32,576
+yoluyla yani ikse değerler vererek c sabitini bulmaya çalışacağım buradan acaba sıfır olur mu diye baktım
+
+1350
+01:01:32,575 --> 01:01:46,455
+o halde getirdim fonksiyon da ne yapıyorum ilk gördüğüm yere sıfır yazıyorum fonksiyonu değil mi dedik ki alttanjan teksi bir oldu
+
+1351
+01:01:46,455 --> 01:01:54,575
+tanjan teksi bir olan açıda eksi 2 bölü 4 dedik alttanjan sıfırda sıfırdır yazdım buraya yani sonuçta eksi 2 bölü 4'ü buldum
+
+1352
+01:01:54,576 --> 01:02:02,015
+c sabitin eksi 2 bölü 4 ne yapıyorum efek seçil c dememiş miydim şurada fonksiyonu bu çünkü burada
+
+1353
+01:02:02,015 --> 01:02:10,115
+yerine yazarsam eksi 2 bölü 4 oldu efeksi de biliyorum zaten şuydu getir onu da yaz şuraya bakın değil mi
+
+1354
+01:02:10,115 --> 01:02:16,295
+bu ve bunu da buraya attım Çünkü öyle sormuştu bana şunu soruyordu işte ispatlamış oldu sonradım hocam
+
+1355
+01:02:16,295 --> 01:02:26,615
+var mı sorumuz yeni konu hiperbolik fonksiyonlar o da genişçe bir konu bugün geçmeyeceğim ona yarın
+
+1356
+01:02:26,615 --> 01:02:30,875
+devam edeceğim yani hiperbolik fonksiyonları konuşacağız ters hiperbolik fonksiyonları
+
+1357
+01:02:30,875 --> 01:02:39,155
+konuşacağım sonra da üstten belirsizlikleri yarın 3 saat dersimiz zaten var mı sorunuz anlaşıldı mı
+
+1358
+01:02:39,155 --> 01:02:48,395
+arkadaşlar bugünkü dersi olmadı Aves'e yüklerim yarın gün de yarın yüklerim bakarsınız tamam mı
+
+1359
+01:02:48,395 --> 01:02:53,735
+arkadaşlar biraz da tabi eğer hani çok anlayamıyorsak da biraz kitaplardan sorular çözelim
+
+1360
+01:02:53,735 --> 01:03:01,055
+türevler otursun tanım kümesi türevi görüntü kümesi onları bileceğiz tamam mı tamam hocam
+
+1361
+01:03:01,055 --> 01:03:06,515
+görüşmek üzere kendinize iyi bakın iyi günler sağ olun hocam görüşürüz sağ olun
+
+1362
+01:03:06,515 --> 01:03:14,135
+bu görüşürüz hocam hocam diyor genel tekrar ne zaman yaparız sınava yakın yaparız
+
+1363
+01:03:14,135 --> 01:03:19,715
+arkadaşlar sınav belli olsun zamanı o zaman genel tekrar yani sorular çözeriz konuları
+
+1364
+01:03:19,715 --> 01:03:25,355
+ilgilendiren baştan geldiğimiz yere kadar Evet iyi günler arkadaşlar iyi günler hocam

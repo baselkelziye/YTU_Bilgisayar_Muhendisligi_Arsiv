@@ -1,0 +1,7635 @@
+1
+00:00:15,539 --> 00:00:16,539
+çeşitli?
+
+2
+00:02:02,099 --> 00:02:04,879
+Günaydın arkadaşlar. Nasılsınız?
+
+3
+00:02:07,359 --> 00:02:08,859
+Ses geliyor mu?
+
+4
+00:02:11,199 --> 00:02:12,159
+Geliyor hocam.
+
+5
+00:02:13,680 --> 00:02:16,519
+Evet, cevap verdiğinize göre yazan arkadaşlar.
+
+6
+00:02:17,759 --> 00:02:20,319
+Evet, dün uygulamaya devam ediyorduk arkadaşlar.
+
+7
+00:02:21,199 --> 00:02:22,280
+Kaldığımız yerden.
+
+8
+00:02:27,539 --> 00:02:31,500
+Evet şimdi dün yaklaşık değer hesaplamıştık.
+
+9
+00:02:31,959 --> 00:02:34,840
+14. sorumuzda kaldık diye hatırlıyorum değil mi arkadaşlar?
+
+10
+00:02:35,659 --> 00:02:37,519
+Evet sorumu şöyle olsun.
+
+11
+00:02:37,899 --> 00:02:40,159
+H2'nin değeri 2'ymiş.
+
+12
+00:02:40,280 --> 00:02:41,639
+Türevinin 2'deki değeri 1.
+
+13
+00:02:41,780 --> 00:02:47,719
+Türevinin 8'deki değeri eksi 1 olmak üzere G fonksiyonu bu şekilde tanımlanmış.
+
+14
+00:02:47,719 --> 00:02:53,919
+Bizden istenen G fonksiyonu için G'nin türevinin 2'deki değerini bulunuz diyor arkadaşlar.
+
+15
+00:02:53,919 --> 00:02:57,519
+Burada G dediği fonksiyon aslında F fonksiyonu.
+
+16
+00:02:57,579 --> 00:03:01,000
+Dikkat ederseniz parantezin içinde fonksiyon var.
+
+17
+00:03:01,139 --> 00:03:01,919
+Tekrar fonksiyon.
+
+18
+00:03:02,000 --> 00:03:04,939
+Buradaki amaç fonksiyonun türevini öğrenci alabiliyor mu?
+
+19
+00:03:04,979 --> 00:03:05,979
+Onu değerlendirmek.
+
+20
+00:03:06,219 --> 00:03:07,659
+O zaman ne yapmamız gerekiyor?
+
+21
+00:03:08,000 --> 00:03:09,120
+G'nin türevini alıyoruz.
+
+22
+00:03:09,439 --> 00:03:11,219
+Biz fonksiyonun türevini nasıl alırdık?
+
+23
+00:03:11,379 --> 00:03:14,339
+Fonksiyonun türevi çarpı içine türevi zincir kuralından.
+
+24
+00:03:14,339 --> 00:03:15,699
+O halde ne yapacağız?
+
+25
+00:03:15,839 --> 00:03:17,680
+Buradan G'nin türevini alırken ne diyoruz?
+
+26
+00:03:17,740 --> 00:03:19,439
+Bakın fonksiyonun türevi.
+
+27
+00:03:19,819 --> 00:03:22,139
+Parantezin içinin türevini alırken ne var burada?
+
+28
+00:03:22,219 --> 00:03:23,560
+Bir toplam ifadesi var.
+
+29
+00:03:23,560 --> 00:03:24,659
+Önce ne yapıyorum?
+
+30
+00:03:25,180 --> 00:03:26,840
+Bakın fonksiyonun türevini dedim.
+
+31
+00:03:27,039 --> 00:03:27,780
+Bitti şurası.
+
+32
+00:03:27,979 --> 00:03:28,879
+Parantez açıyorum.
+
+33
+00:03:29,120 --> 00:03:29,859
+İçinin türevi.
+
+34
+00:03:29,959 --> 00:03:30,620
+İçinde ne var?
+
+35
+00:03:30,699 --> 00:03:31,340
+X kare var.
+
+36
+00:03:31,439 --> 00:03:32,579
+Onun türevi 2X.
+
+37
+00:03:33,079 --> 00:03:35,500
+Artı şurada X çarpı HX var.
+
+38
+00:03:35,620 --> 00:03:37,099
+Bakın H da bir fonksiyon.
+
+39
+00:03:37,519 --> 00:03:38,579
+Bir de çarpım var.
+
+40
+00:03:38,680 --> 00:03:39,719
+Çarpımın türevini alıyorum.
+
+41
+00:03:39,840 --> 00:03:40,939
+X'e göre türevi aldım.
+
+42
+00:03:40,939 --> 00:03:42,500
+1 çarpı HX.
+
+43
+00:03:42,939 --> 00:03:46,680
+Artı birinci çarpı X çarpı H'ın türevi.
+
+44
+00:03:46,800 --> 00:03:48,899
+H üstü için türevi 1 olduğu için yazmıyoruz.
+
+45
+00:03:48,899 --> 00:03:53,359
+İşte verilen G fonksiyonunun türevini bu şekilde almışız.
+
+46
+00:03:53,919 --> 00:03:58,159
+Bakın fonksiyonun türevini de tekrar buraya hatırlamak açısından yazdım.
+
+47
+00:03:58,240 --> 00:04:00,300
+Fonksiyonun türevi çarpı içinin türevi.
+
+48
+00:04:00,699 --> 00:04:02,399
+Buradan bizden ne isteniyor arkadaşlar?
+
+49
+00:04:02,680 --> 00:04:04,620
+İkideki türevin ikideki değerini.
+
+50
+00:04:04,620 --> 00:04:06,240
+O zaman X gördüğüm yere ne yapıyorum?
+
+51
+00:04:06,659 --> 00:04:07,459
+2'yi yazıyorum.
+
+52
+00:04:07,959 --> 00:04:10,939
+İşte yazarsak 2'nin karesi gelecek.
+
+53
+00:04:11,099 --> 00:04:12,219
+2 çarpı H2.
+
+54
+00:04:13,439 --> 00:04:15,419
+Parantezin içinde 2 çarpı 2.
+
+55
+00:04:15,919 --> 00:04:19,680
+H2 artı 2 çarpı türevinin ikideki değeri.
+
+56
+00:04:20,079 --> 00:04:23,039
+Zaten bilgilerim hepsini bize vermiş yukarıda.
+
+57
+00:04:23,100 --> 00:04:24,799
+Bakın H'ın ikideki değeri 2.
+
+58
+00:04:24,879 --> 00:04:26,399
+Türevinin ikideki değeri 1.
+
+59
+00:04:27,480 --> 00:04:30,659
+Fonksiyonun F'in türevinin 8'deki değeri de eksi 1'dir.
+
+60
+00:04:30,939 --> 00:04:33,539
+O zaman bunları yazarsak tekrar bakın.
+
+61
+00:04:33,539 --> 00:04:34,300
+Burası ne olur?
+
+62
+00:04:34,399 --> 00:04:34,639
+4.
+
+63
+00:04:34,759 --> 00:04:35,720
+4'te buradan 8.
+
+64
+00:04:35,959 --> 00:04:37,899
+F'in türevinin 8'deki değeri gelecek.
+
+65
+00:04:38,419 --> 00:04:40,379
+Köşeli parantezin içinde de bakın.
+
+66
+00:04:40,819 --> 00:04:41,959
+4 şurası.
+
+67
+00:04:42,079 --> 00:04:43,459
+2'de buradan 6 gelir.
+
+68
+00:04:43,879 --> 00:04:44,519
+8 olur.
+
+69
+00:04:44,879 --> 00:04:47,679
+İşte 8 çarpı F'in türevinin 8'deki değeri.
+
+70
+00:04:48,019 --> 00:04:50,759
+Onu da yukarıda bize eksi 1 olarak vermiştik türevini.
+
+71
+00:04:51,120 --> 00:04:52,179
+O zaman sonuç nedir?
+
+72
+00:04:52,279 --> 00:04:54,240
+Eksi 8 diye yazacağız.
+
+73
+00:04:54,639 --> 00:04:55,100
+Tamam mı?
+
+74
+00:04:56,060 --> 00:05:00,799
+İşte dediğim gibi burada öğrenci böyle bir fonksiyon türevini alması biliyor mu?
+
+75
+00:05:00,799 --> 00:05:01,639
+Onu test ediliyor.
+
+76
+00:05:01,740 --> 00:05:02,419
+O test ediliyor.
+
+77
+00:05:02,419 --> 00:05:04,799
+Başka da bir özelliği yok soruna.
+
+78
+00:05:05,339 --> 00:05:05,579
+Evet.
+
+79
+00:05:05,919 --> 00:05:09,299
+Şimdi şurada yanına yıldız işareti koyduklarım arkadaşlar.
+
+80
+00:05:09,539 --> 00:05:12,679
+Yaz okulunda test sınav olarak hazırlanmış sınavlar.
+
+81
+00:05:12,779 --> 00:05:15,519
+Hani bunları da göresiniz diye birkaç tane aldım ben.
+
+82
+00:05:16,159 --> 00:05:17,879
+Şöyle bir tane sorumuz.
+
+83
+00:05:18,399 --> 00:05:19,579
+Yani test olarak sormuş.
+
+84
+00:05:19,699 --> 00:05:22,299
+Ben cevaplarını hani A, B, C, D, E diye gitmedim.
+
+85
+00:05:22,439 --> 00:05:23,480
+Sadece sorusunu aldım.
+
+86
+00:05:23,480 --> 00:05:33,299
+G fonksiyonu G'nin birdeki değeri 1, türevinin birdeki değeri 2 olacak şekilde x eşittir bir noktasına türevlenebilir bir fonksiyon olsun.
+
+87
+00:05:33,299 --> 00:05:44,139
+Eğer fx, x çarpı arktanjan parantezin içinde gx'in karesi ise f'in birdeki değerini bulunuz.
+
+88
+00:05:44,139 --> 00:05:46,639
+Yukarıdaki sorundan bakın hiçbir farkı yok.
+
+89
+00:05:47,219 --> 00:05:48,519
+İşte yani sorulabilir bu.
+
+90
+00:05:48,759 --> 00:05:49,519
+Test sorusuymuş.
+
+91
+00:05:49,620 --> 00:05:50,659
+Yaz okulunda sorulmuş.
+
+92
+00:05:50,659 --> 00:05:53,779
+Gene benim yapmam gereken ne olacak burada arkadaşlar?
+
+93
+00:05:54,480 --> 00:05:56,500
+Fonksiyonun türevini almam gerekecek.
+
+94
+00:05:57,139 --> 00:06:01,579
+Burada tabii ki notlarınız hep hazır olacağı için yanınızda.
+
+95
+00:06:01,860 --> 00:06:04,800
+Yani arktanjantın türevini bilmeme diye bir şey olamayacak.
+
+96
+00:06:05,259 --> 00:06:09,879
+Ama okulda bir sınav olsaydı orada bilmezsen yapamayacaktın.
+
+97
+00:06:10,199 --> 00:06:12,639
+Evet arktanjantın türevini de biliyoruz değil mi?
+
+98
+00:06:12,699 --> 00:06:12,979
+Neydi?
+
+99
+00:06:13,459 --> 00:06:18,579
+Arktanjant U'nun türevi, U'nun türevi bölü 1 artıukara şeklinde yapacaktık.
+
+100
+00:06:18,779 --> 00:06:19,519
+O zaman alalım.
+
+101
+00:06:19,620 --> 00:06:20,860
+Bakın burada bir çarpım var.
+
+102
+00:06:20,979 --> 00:06:23,500
+Birincinin türevi, X'in türevi 1 gelecek.
+
+103
+00:06:23,500 --> 00:06:25,560
+Arktanjant hepsini yazıyoruz.
+
+104
+00:06:25,560 --> 00:06:27,379
+Şuradan devam edelim bakın.
+
+105
+00:06:27,839 --> 00:06:30,399
+Arktanjantın türevini de şurayı hatırlamak için yazdık.
+
+106
+00:06:30,860 --> 00:06:37,759
+O zaman arktanjantın türevini alırken bakın şu parantezin içinde GX'in karesi var.
+
+107
+00:06:38,159 --> 00:06:40,459
+Bunu U gibi düşünürsem ne diyeceğim?
+
+108
+00:06:40,879 --> 00:06:41,579
+Bunun türevi.
+
+109
+00:06:41,939 --> 00:06:43,120
+Bunun türevini nasıl alacağım?
+
+110
+00:06:43,240 --> 00:06:45,560
+Bu bir fonksiyon bakın GX'in fonksiyonu.
+
+111
+00:06:45,919 --> 00:06:46,719
+Ne olacaktır?
+
+112
+00:06:47,120 --> 00:06:48,060
+Üst başa gelir.
+
+113
+00:06:48,500 --> 00:06:50,019
+Yani iki tane GX olur.
+
+114
+00:06:50,019 --> 00:06:52,379
+Bir de G'nin türevi gelecektir.
+
+115
+00:06:52,379 --> 00:06:56,240
+Yani sorunun esprisi sadece şunun türevini alabilmek.
+
+116
+00:06:56,740 --> 00:06:57,279
+Ne yapıyoruz?
+
+117
+00:06:57,480 --> 00:06:58,360
+Üst başa gelecek.
+
+118
+00:06:59,019 --> 00:07:00,199
+Üstü biraz aldı.
+
+119
+00:07:01,139 --> 00:07:02,180
+İçinin türevi şu.
+
+120
+00:07:02,560 --> 00:07:03,719
+U üstü dediğim ifade.
+
+121
+00:07:04,459 --> 00:07:08,000
+Bölü 1 artı GX'in karesi ne olur?
+
+122
+00:07:08,079 --> 00:07:09,139
+Dördüncü kuvvet olur.
+
+123
+00:07:09,399 --> 00:07:11,839
+Birincinin türevi çarpı ikinci dedik tamam mı?
+
+124
+00:07:12,159 --> 00:07:13,519
+Artı X çarpı.
+
+125
+00:07:13,579 --> 00:07:15,180
+Arktanjantın türevi de neydi?
+
+126
+00:07:15,839 --> 00:07:17,319
+Parantezin içinin türevi.
+
+127
+00:07:17,659 --> 00:07:20,039
+Bölü 1 artı parantezin karesi demiş olduk.
+
+128
+00:07:20,039 --> 00:07:20,500
+Tamam mı?
+
+129
+00:07:20,720 --> 00:07:24,839
+Parantezin içinin türevini de alırken bu bir fonksiyon içinde dikkat ederseniz.
+
+130
+00:07:24,980 --> 00:07:28,720
+GX'in parantez karesini yani U kare gibi düşünün.
+
+131
+00:07:29,100 --> 00:07:30,019
+Üst başa geldi.
+
+132
+00:07:30,220 --> 00:07:32,680
+2U çarpı U'nun da türevi diyorsun.
+
+133
+00:07:32,860 --> 00:07:34,519
+İşte bu şekilde yazacağız.
+
+134
+00:07:34,740 --> 00:07:35,199
+Tamam mı?
+
+135
+00:07:35,519 --> 00:07:37,959
+Şimdi bizden istenen bunun 1'deki değeri.
+
+136
+00:07:38,060 --> 00:07:40,139
+X gördüğüm yere 1'i yazıyorum arkadaşlar.
+
+137
+00:07:40,860 --> 00:07:41,899
+Yazarsam şurada.
+
+138
+00:07:42,259 --> 00:07:44,419
+G'nin 1'deki değeri yukarıda verilmiş 1.
+
+139
+00:07:44,939 --> 00:07:45,659
+Buradan ne gelecek?
+
+140
+00:07:45,860 --> 00:07:46,779
+Arktanjant 1.
+
+141
+00:07:46,899 --> 00:07:48,060
+Arktanjant 1 nedir?
+
+142
+00:07:48,060 --> 00:07:49,740
+Arktanjant 1 olan açıda neydi?
+
+143
+00:07:49,860 --> 00:07:50,799
+Pi bölü 4'tü.
+
+144
+00:07:51,360 --> 00:07:52,860
+Burada yerine yazarsak bakın.
+
+145
+00:07:53,740 --> 00:07:56,100
+Gene türevinin 1'deki değeri 2'ymiş.
+
+146
+00:07:56,860 --> 00:07:58,240
+2 çarpı 2'den 4.
+
+147
+00:07:58,560 --> 00:07:59,279
+Payda da ne olur?
+
+148
+00:07:59,360 --> 00:07:59,879
+1 olur.
+
+149
+00:08:00,240 --> 00:08:00,860
+2 olur.
+
+150
+00:08:01,719 --> 00:08:04,399
+Yani sonuçta şurası da bize 2'yi verecek.
+
+151
+00:08:04,680 --> 00:08:05,539
+Yani bakın.
+
+152
+00:08:06,339 --> 00:08:07,240
+Arktanjant 1.
+
+153
+00:08:07,360 --> 00:08:08,399
+Pi bölü 4'tür.
+
+154
+00:08:08,720 --> 00:08:09,919
+4 bölü 2'den de 2.
+
+155
+00:08:10,299 --> 00:08:13,120
+Yani sonuç bu şekilde karşımıza çıkar.
+
+156
+00:08:13,259 --> 00:08:15,939
+Testlerden işte bir tanesi bu ise bunu işaretleyeceğiz.
+
+157
+00:08:16,060 --> 00:08:16,339
+Bu kadar.
+
+158
+00:08:16,340 --> 00:08:17,700
+Tamam mı arkadaşlar?
+
+159
+00:08:17,860 --> 00:08:18,539
+Anlaşılıyor mu?
+
+160
+00:08:19,939 --> 00:08:20,759
+Var mı bir problem?
+
+161
+00:08:20,759 --> 00:08:25,172
+Evet.
+
+162
+00:08:28,232 --> 00:08:29,672
+Tamam, devam edelim.
+
+163
+00:08:29,932 --> 00:08:31,672
+Bu da gene bir test sorusu bakın.
+
+164
+00:08:31,971 --> 00:08:34,211
+Yani yaz okulunda sorulmuş.
+
+165
+00:08:34,751 --> 00:08:37,812
+Diyor ki, verilen fonksiyonun limiti nedir?
+
+166
+00:08:38,032 --> 00:08:42,331
+Mutlak değer x-1 artı x bölü, mutlak değer için x-4.
+
+167
+00:08:43,052 --> 00:08:43,951
+Limitine bakacağız.
+
+168
+00:08:44,351 --> 00:08:49,211
+E şimdi burada bir fonksiyonun limitinin olabilmesi için değil mi?
+
+169
+00:08:49,632 --> 00:08:51,692
+Sağdan limit, soldan limite eşit olmalı.
+
+170
+00:08:51,692 --> 00:08:56,412
+Burada mutlak değer olduğuna göre bire sağdan ve soldan yaklaşmam gerekecek.
+
+171
+00:08:56,751 --> 00:08:57,772
+Ona dikkat edeceğiz.
+
+172
+00:08:58,152 --> 00:08:59,331
+Şimdi o zaman bir bakalım.
+
+173
+00:09:00,272 --> 00:09:03,152
+Önce diyelim ki bire soldan yaklaştığımızı düşünüyoruz.
+
+174
+00:09:03,632 --> 00:09:06,851
+Bire soldan yaklaşırsak mutlak değerin için ne olur arkadaşlar?
+
+175
+00:09:07,731 --> 00:09:08,351
+Eksi olur.
+
+176
+00:09:08,491 --> 00:09:10,572
+O zaman işaret değiştirerek dışarı çıkacak.
+
+177
+00:09:10,711 --> 00:09:13,512
+Yani eksi x-1 buna dokunmuyorum.
+
+178
+00:09:13,672 --> 00:09:16,432
+Artı paydaya gelirsek ne olur?
+
+179
+00:09:17,512 --> 00:09:20,731
+Bire soldan yaklaştığımızda içi gene ne olacaktır?
+
+180
+00:09:20,731 --> 00:09:21,471
+Eksi olur.
+
+181
+00:09:21,471 --> 00:09:23,812
+Yine işaret değiştirerek dışarıya çıkacaktır.
+
+182
+00:09:24,272 --> 00:09:27,711
+O zaman mutlak değerleri bu şekilde yazmış olduk.
+
+183
+00:09:28,152 --> 00:09:31,292
+Bunu düzenlersek eksi x, x'ler gider.
+
+184
+00:09:31,611 --> 00:09:35,012
+1 bölü x-4 kalacak arkadaşlar.
+
+185
+00:09:35,331 --> 00:09:35,731
+Tamam mı?
+
+186
+00:09:35,731 --> 00:09:35,831
+Bu.
+
+187
+00:09:36,251 --> 00:09:38,951
+Şimdi o zaman kontrol ediyorum tekrar limitimi.
+
+188
+00:09:39,912 --> 00:09:41,851
+Bire giderken bu nereye gidecektir?
+
+189
+00:09:42,272 --> 00:09:43,272
+1 bölü 3'e gider.
+
+190
+00:09:43,451 --> 00:09:45,032
+Yani şuradan eksi 3 kalır.
+
+191
+00:09:45,132 --> 00:09:46,451
+Bir de bu eksimiz 1 bölü 3.
+
+192
+00:09:46,451 --> 00:09:49,091
+Sağdan yaklaşırsak dikkat edersek.
+
+193
+00:09:49,091 --> 00:09:51,532
+O zaman şu payındaki mutlak değerim ne olur?
+
+194
+00:09:51,652 --> 00:09:52,751
+Bakın içi pozitif olur.
+
+195
+00:09:52,851 --> 00:09:56,591
+Yani birden bir tık biraz daha büyük değerlerle yaklaştığımızı düşünürsek.
+
+196
+00:09:56,731 --> 00:09:57,591
+İçi pozitif olacak.
+
+197
+00:09:57,731 --> 00:09:58,432
+Aynen çıkacak.
+
+198
+00:09:58,812 --> 00:09:59,951
+Payda gene negatif olacak.
+
+199
+00:10:00,072 --> 00:10:01,772
+Çünkü eksi 4 daha büyük olduğu için.
+
+200
+00:10:01,772 --> 00:10:04,451
+O zaman bakın yazdık.
+
+201
+00:10:04,632 --> 00:10:05,652
+Aynen dışarı çıktı.
+
+202
+00:10:05,772 --> 00:10:08,432
+x-1 artı x bölü payda da gene eksi oldu.
+
+203
+00:10:08,812 --> 00:10:09,392
+Bu da ne olur?
+
+204
+00:10:09,491 --> 00:10:12,152
+2x-1 bölü eksi x artı 4 olur.
+
+205
+00:10:12,471 --> 00:10:14,672
+Şimdi limiti kontrol ediyorum bire giderken.
+
+206
+00:10:15,091 --> 00:10:16,152
+Bu da ne olacaktır gene?
+
+207
+00:10:16,591 --> 00:10:17,392
+1 bölü 3 olur.
+
+208
+00:10:17,511 --> 00:10:19,111
+O halde nasıl yorumlayacağım?
+
+209
+00:10:19,731 --> 00:10:26,192
+Sağdan limit soldan limite eşit olduğu için bunun limiti mevcuttur ve değeri de 1 bölü 3'tür diyeceğiz.
+
+210
+00:10:26,412 --> 00:10:27,172
+Tamam mı arkadaşlar?
+
+211
+00:10:29,572 --> 00:10:30,032
+Evet.
+
+212
+00:10:30,591 --> 00:10:31,331
+Devam edelim.
+
+213
+00:10:31,331 --> 00:10:33,772
+Gene bu da test sorusu.
+
+214
+00:10:34,711 --> 00:10:40,372
+Diyor ki fx eşittir x çarpı e üzeri x ise böyle yazmış.
+
+215
+00:10:40,672 --> 00:10:43,912
+Yani 8. mertebe türevini bulunuz diyor.
+
+216
+00:10:44,591 --> 00:10:46,412
+Ben parantez içine bu ne demektir?
+
+217
+00:10:46,912 --> 00:10:49,672
+F'in üzeri 8 dediğimizde türev olarak anlayacağız.
+
+218
+00:10:49,812 --> 00:10:52,211
+Bunu daha açık olarak bu şekilde yazmış.
+
+219
+00:10:52,632 --> 00:10:56,251
+Tabii ki biz yüksek mertebeden türevleri gördük.
+
+220
+00:10:56,251 --> 00:10:59,792
+İşte atıyorum burada 8 demiş 100 de dese.
+
+221
+00:10:59,792 --> 00:11:07,231
+Böyle bir fonksiyon verildiğine göre bunun belli bir mertebe türevini aldıktan sonra düzgün bir şekilde yani tahmin edebiliriz.
+
+222
+00:11:07,231 --> 00:11:10,532
+Yani tahmin edebiliriz 8. mertebesini veya 100. mertebesini.
+
+223
+00:11:10,532 --> 00:11:19,672
+O yüzden biz burada yapmamız gereken birkaç mertebe türevi alıp sonra bakarız bu acaba tahmin ederiz 8. mertebe türevi ne olacaktır?
+
+224
+00:11:19,672 --> 00:11:22,611
+İşte birinci mertebe türevi alırken ne yapıyorum?
+
+225
+00:11:22,711 --> 00:11:24,251
+Burada bir çarpım var arkadaşlar.
+
+226
+00:11:24,711 --> 00:11:26,532
+Birincinin türevi 1 olur.
+
+227
+00:11:26,632 --> 00:11:31,211
+E üzeri x artı x çarpı e üzeri x'in türevi de e üzeri x olduğunu biliyoruz.
+
+228
+00:11:31,572 --> 00:11:35,532
+Bunu düzenlersen 1 artı x e üzeri x diye karşıma çıkar.
+
+229
+00:11:35,692 --> 00:11:36,951
+Birinci mertebe türevi bu.
+
+230
+00:11:37,312 --> 00:11:38,771
+Tekrar türevi alırsak bakın.
+
+231
+00:11:39,192 --> 00:11:40,611
+Gene bir çarpım var burada.
+
+232
+00:11:40,612 --> 00:11:42,672
+Bunun x'e göre türevi 1 gelir.
+
+233
+00:11:42,812 --> 00:11:48,652
+Çarpı e üzeri x artı birinci 1 artı x çarpı e üzeri x'in türevi kendisi.
+
+234
+00:11:49,192 --> 00:11:51,372
+Bunu düzenlersek ne olur?
+
+235
+00:11:51,751 --> 00:11:51,852
+Şu.
+
+236
+00:11:52,451 --> 00:11:54,192
+Üçüncü mertebe türevi aldım bakın.
+
+237
+00:11:55,032 --> 00:11:57,552
+Gene bunun türevinden e üzeri x gelecek.
+
+238
+00:11:58,251 --> 00:12:01,812
+Bu çarpı 2 artı x çarpı e üzeri x'in türevi kendisi.
+
+239
+00:12:01,912 --> 00:12:02,792
+Bu da şu oldu.
+
+240
+00:12:03,172 --> 00:12:04,792
+Artık türevi almama gerek yok aslında.
+
+241
+00:12:04,932 --> 00:12:06,112
+Tahmin edebiliriz değil mi?
+
+242
+00:12:06,451 --> 00:12:08,672
+Bakın e üzeri x'lerimiz sabit geldi.
+
+243
+00:12:08,672 --> 00:12:10,632
+x'ler de hep geliyor.
+
+244
+00:12:11,032 --> 00:12:12,591
+Bakın birinci mertebede 1 oldu.
+
+245
+00:12:12,711 --> 00:12:13,292
+İki de 2.
+
+246
+00:12:13,812 --> 00:12:16,451
+Nasıl tahmin edeceğim sekizinci mertebe türevi de?
+
+247
+00:12:16,711 --> 00:12:20,091
+O zaman diyeceğim ki evet nasıl demem gerekir?
+
+248
+00:12:21,748 --> 00:12:22,728
+Yok mu cevap?
+
+249
+00:12:23,168 --> 00:12:24,728
+8 artı x
+
+250
+00:12:24,728 --> 00:12:26,628
+çarpı e üzeri x
+
+251
+00:12:26,628 --> 00:12:29,748
+8 artı x çarpı e üzeri x
+
+252
+00:12:29,748 --> 00:12:31,448
+Şöyle gelmez mi?
+
+253
+00:12:31,728 --> 00:12:33,988
+Bakın üçüncüde de 3 artı x gelmiş.
+
+254
+00:12:34,128 --> 00:12:36,108
+O zaman sekizincide de 8 artı x
+
+255
+00:12:36,108 --> 00:12:38,788
+e üzeri x diye tahmin etmeliyim işte.
+
+256
+00:12:40,288 --> 00:12:41,288
+Kalkıp da 8 kez
+
+257
+00:12:41,288 --> 00:12:42,268
+trav almaya gerek yok.
+
+258
+00:12:42,348 --> 00:12:45,148
+Alsan da çok büyük bir zaman harcamazsın ama
+
+259
+00:12:45,148 --> 00:12:47,148
+işte yüksek mertebeden
+
+260
+00:12:47,148 --> 00:12:48,768
+eğer zaten soruyorsa
+
+261
+00:12:48,768 --> 00:12:51,508
+demek ki tahmin edilebilecek bir sorudur.
+
+262
+00:12:51,508 --> 00:12:52,728
+Tamam anlaşıldı mı?
+
+263
+00:12:54,168 --> 00:12:54,548
+Evet.
+
+264
+00:12:55,068 --> 00:12:56,408
+Hiç sesiniz çıkmıyor arkadaşlar.
+
+265
+00:12:56,528 --> 00:12:57,088
+Uyuyor muyuz?
+
+266
+00:12:57,348 --> 00:12:58,128
+Anlaşıldı uyuyor.
+
+267
+00:12:58,628 --> 00:12:58,948
+Evet.
+
+268
+00:12:59,568 --> 00:13:01,728
+Gene bu da bir test sorusu dikkat ederseniz.
+
+269
+00:13:02,668 --> 00:13:04,068
+Yıldız yapmışım şuraya.
+
+270
+00:13:04,568 --> 00:13:06,807
+Bunun limiti nedir diye soruyor bana.
+
+271
+00:13:07,268 --> 00:13:08,888
+Şimdi burada x sıfıra giderken
+
+272
+00:13:08,888 --> 00:13:10,948
+dikkat ederseniz bu sıfır bölü sıfır
+
+273
+00:13:10,948 --> 00:13:11,788
+belirsizlik var.
+
+274
+00:13:12,108 --> 00:13:14,268
+Bunu hopitalle yapamazsınız arkadaşlar.
+
+275
+00:13:14,508 --> 00:13:16,228
+Birçok türev almanız gerekecek.
+
+276
+00:13:16,228 --> 00:13:18,307
+Bunu cebirsel işlemler uygulayarak
+
+277
+00:13:18,307 --> 00:13:19,828
+daha kolay türev alabiliriz.
+
+278
+00:13:19,928 --> 00:13:20,628
+Nasıl alırız?
+
+279
+00:13:20,628 --> 00:13:22,768
+Burada x sıfıra giderken
+
+280
+00:13:22,768 --> 00:13:26,328
+işte şunun üzeri olmasaydı
+
+281
+00:13:26,328 --> 00:13:28,508
+diyelim ki x bölü sinüs x'in limitinin
+
+282
+00:13:28,508 --> 00:13:30,288
+bir olduğunu, tersinin de limitinin
+
+283
+00:13:30,288 --> 00:13:31,268
+bir olduğunu biliyorum.
+
+284
+00:13:31,628 --> 00:13:32,968
+Ondan yararlanabiliriz.
+
+285
+00:13:33,048 --> 00:13:34,288
+Bakın burada ne yapabilirim?
+
+286
+00:13:35,188 --> 00:13:37,068
+Sinüs x üzeri 2021 ya
+
+287
+00:13:37,068 --> 00:13:38,228
+bu da 2020 ise
+
+288
+00:13:38,228 --> 00:13:41,648
+x bölü sinüs x üzeri 2020 yazarım.
+
+289
+00:13:42,208 --> 00:13:42,848
+Geriye ne kalır?
+
+290
+00:13:42,848 --> 00:13:44,828
+Sinüs 4 x bölü sinüs x diye
+
+291
+00:13:44,828 --> 00:13:45,968
+ayırmış olurum.
+
+292
+00:13:46,028 --> 00:13:46,608
+Bakın şöyle.
+
+293
+00:13:46,608 --> 00:13:48,488
+şurada.
+
+294
+00:13:50,307 --> 00:13:50,988
+Böyle yazarım.
+
+295
+00:13:51,067 --> 00:13:52,128
+Şunu düşünme önce.
+
+296
+00:13:52,708 --> 00:13:53,888
+Verilen soru bu şekilde.
+
+297
+00:13:54,328 --> 00:13:57,328
+Yani bunun limiti çarpı, bunun limitini biliyorum.
+
+298
+00:13:57,788 --> 00:13:58,008
+Değil mi?
+
+299
+00:13:58,067 --> 00:13:58,648
+Bire gider.
+
+300
+00:13:59,567 --> 00:14:00,408
+Geldik şuraya.
+
+301
+00:14:00,748 --> 00:14:03,748
+Burada da gene cebirsel işlemler uygulamaya çalışacağım.
+
+302
+00:14:04,648 --> 00:14:05,188
+Ne olacak?
+
+303
+00:14:05,188 --> 00:14:08,848
+Şurada sinüs 4 x varsa paydasında da bir tane 4 x olsaydı
+
+304
+00:14:08,848 --> 00:14:10,188
+bu da gene bire gidecekti.
+
+305
+00:14:10,567 --> 00:14:11,848
+Şurada bir sinüs x'in var.
+
+306
+00:14:11,948 --> 00:14:14,748
+Payında da 1 x olsaydı gene bire gidecektir.
+
+307
+00:14:14,828 --> 00:14:15,648
+O halde ne yapıyorum?
+
+308
+00:14:15,768 --> 00:14:20,067
+Diyorum ki bu kesri 4 x bölü 4 x ile çarptık.
+
+309
+00:14:20,148 --> 00:14:21,628
+Böldük denge bozulmasın diye.
+
+310
+00:14:21,948 --> 00:14:23,328
+Bir kez daha yazdım bakın.
+
+311
+00:14:23,508 --> 00:14:24,928
+Şöyle yazmış olacağım bunu.
+
+312
+00:14:25,648 --> 00:14:28,168
+Sinüs 4 x bölü 4 x diye yazdım.
+
+313
+00:14:28,828 --> 00:14:31,248
+Artı çarpı limit x sıfıra giderken
+
+314
+00:14:31,248 --> 00:14:33,468
+4 x x bölü sinüs x.
+
+315
+00:14:33,668 --> 00:14:35,748
+İşte şunu şu şekilde yazmış.
+
+316
+00:14:35,788 --> 00:14:36,708
+Yazmaya da gerek yok.
+
+317
+00:14:36,807 --> 00:14:39,067
+Zaten buradan artık bunun 4 olduğunu görürsünüz.
+
+318
+00:14:39,448 --> 00:14:41,228
+Ama göremiyorsak ayrı ayrı yazdık.
+
+319
+00:14:41,328 --> 00:14:42,588
+Bakın bu bire gitti.
+
+320
+00:14:43,368 --> 00:14:45,348
+Şu 4 sabit en başa atarsın.
+
+321
+00:14:45,408 --> 00:14:46,067
+Bu da bire gider.
+
+322
+00:14:46,228 --> 00:14:48,968
+Yani sonuçta 4'tür diye bileceğiz.
+
+323
+00:14:49,208 --> 00:14:50,328
+Bu pital ile yapmayın.
+
+324
+00:14:50,428 --> 00:14:51,708
+Çıkamazsınız işin içinden.
+
+325
+00:14:51,888 --> 00:14:52,668
+Tamam mı arkadaşlar?
+
+326
+00:14:54,448 --> 00:14:55,168
+Anlıyor muyuz?
+
+327
+00:14:56,988 --> 00:14:57,888
+Anlıyoruz hocam.
+
+328
+00:14:57,888 --> 00:14:58,548
+Biz sıkıntı yok.
+
+329
+00:14:58,548 --> 00:15:02,328
+Evet ses geliyor mu arkadaşlar?
+
+330
+00:15:02,548 --> 00:15:03,388
+Hiç katılmıyoruz.
+
+331
+00:15:04,888 --> 00:15:06,008
+Evet devam edelim.
+
+332
+00:15:06,728 --> 00:15:08,428
+Bakın bu da gene bir test sorusu.
+
+333
+00:15:11,188 --> 00:15:16,568
+Fonksiyonu a noktasındaki türevi şöyle verilmiş.
+
+334
+00:15:17,268 --> 00:15:22,508
+Bizden istenen f fonksiyonu ve a sayısını belirleyiniz.
+
+335
+00:15:22,508 --> 00:15:28,408
+Arkadaşlar şimdi şunu tabii ki şu an bir şey diyemeyeceğim.
+
+336
+00:15:28,567 --> 00:15:33,528
+Ama bir fonksiyonun a noktasındaki türevini biz limitle nasıl ifade etmiştik?
+
+337
+00:15:33,608 --> 00:15:34,208
+Şöyle demiştik.
+
+338
+00:15:34,288 --> 00:15:39,188
+Limit has sıfıra giderken f a artı h eksi f a bölü h.
+
+339
+00:15:39,288 --> 00:15:41,668
+Böyle bir limit varsa biz buna ne diyorduk?
+
+340
+00:15:42,028 --> 00:15:43,428
+Fonksiyonun limitidir diyorduk.
+
+341
+00:15:43,508 --> 00:15:45,168
+Hatta birkaç tane cevap yazdım.
+
+342
+00:15:45,168 --> 00:15:49,088
+Buna tabii gerekli cevaptan giderek bulmak gerekir bu tip soruyu.
+
+343
+00:15:49,088 --> 00:15:57,748
+Onun için bakın türevin a noktasındaki ifadesini limit olarak bu şekilde biliyoruz.
+
+344
+00:15:57,848 --> 00:15:58,208
+Tamam mı?
+
+345
+00:15:58,488 --> 00:16:02,028
+Şimdi burada seçtim cevaplardan.
+
+346
+00:16:02,208 --> 00:16:07,048
+Diyelim ki fonksiyon 2 üzeri x ise tamam mı?
+
+347
+00:16:07,307 --> 00:16:08,368
+Bu ne olacaktır?
+
+348
+00:16:08,828 --> 00:16:13,067
+Limit has sıfıra giderken şimdi ben fonksiyonum bu olsun diyorum.
+
+349
+00:16:13,248 --> 00:16:15,128
+Tanım uygulamaya çalışıyorum.
+
+350
+00:16:15,948 --> 00:16:16,428
+Tamam mı?
+
+351
+00:16:17,235 --> 00:16:20,015
+Sonra ne yapıyorum? Bu ne demektir?
+
+352
+00:16:20,176 --> 00:16:23,076
+Fonksiyonda x gördüğün yere a artı h yaz.
+
+353
+00:16:23,216 --> 00:16:27,395
+Yazıyorum. 2 üzeri a artı h eksi f a.
+
+354
+00:16:27,795 --> 00:16:30,056
+2 üzeri a bölü h diye yazdım.
+
+355
+00:16:30,135 --> 00:16:33,515
+Bunu nasıl düzenlerim? 2 üzeri a parantezine alırım bakın.
+
+356
+00:16:34,076 --> 00:16:37,155
+2 üzeri h eksi 1 bölü h diye yazdım.
+
+357
+00:16:37,895 --> 00:16:39,576
+Şimdi burada a ne olabilir?
+
+358
+00:16:40,056 --> 00:16:41,716
+Döndüm soruya bakıyorum bakın.
+
+359
+00:16:41,716 --> 00:16:44,975
+Şu içi tamamen aynı. Bir tek ne kaldı şu geldi.
+
+360
+00:16:44,975 --> 00:16:47,796
+2 üzeri ne olursa ki 32 olur.
+
+361
+00:16:47,956 --> 00:16:50,056
+O da işte 5 olarak bulmuş oldu.
+
+362
+00:16:50,336 --> 00:16:50,995
+Tamam mı arkadaş?
+
+363
+00:16:51,375 --> 00:16:55,556
+Yani verilen ifadede diyeceğim ki 5 yıkkı.
+
+364
+00:16:55,716 --> 00:17:00,456
+2 üzeri x ve a da 5 olursa işte budur diyeceğiz.
+
+365
+00:17:01,275 --> 00:17:01,875
+Anlaşıldı mı?
+
+366
+00:17:02,296 --> 00:17:05,796
+Sadece burada biraz dikkat gerekiyor.
+
+367
+00:17:07,796 --> 00:17:08,635
+Evet.
+
+368
+00:17:09,975 --> 00:17:12,655
+Şimdi gelelim. Böyle bir soru verilmiş.
+
+369
+00:17:12,655 --> 00:17:15,496
+Hocam 2 üzeri x biz kendimiz mi bulduk?
+
+370
+00:17:16,195 --> 00:17:18,316
+Yok. Cevaplarda hepsini vermiş.
+
+371
+00:17:18,475 --> 00:17:20,435
+Ben hatta değerli sıkıldım yazmadım.
+
+372
+00:17:20,836 --> 00:17:22,675
+Cevaplarından hareket ederek diyorum.
+
+373
+00:17:23,235 --> 00:17:26,855
+Hepsine zaten dikkat edersek bütün cevaplarda 2 üzeri x var.
+
+374
+00:17:27,316 --> 00:17:29,516
+Bir tek a'lar işte 2 olmuş 5 olmuş.
+
+375
+00:17:29,976 --> 00:17:31,675
+Burada denedim işte ne yaptım?
+
+376
+00:17:32,135 --> 00:17:34,355
+Bunu zaten biliyorum türevin tanımından.
+
+377
+00:17:34,895 --> 00:17:37,135
+İşte dedim ki 2 üzeri x olsun fonksiyonu.
+
+378
+00:17:37,195 --> 00:17:38,596
+A'yı şimdi göz önüne almadım.
+
+379
+00:17:38,695 --> 00:17:39,735
+Yazdım şuraya bakın.
+
+380
+00:17:39,735 --> 00:17:41,395
+Şu hale getirdim. Tamam mı?
+
+381
+00:17:41,615 --> 00:17:43,276
+E şimdi bakarsanız sorunun şuradaki.
+
+382
+00:17:43,475 --> 00:17:44,455
+Bir tek ne kaldı?
+
+383
+00:17:44,516 --> 00:17:46,235
+Şurada a ne olur diye düşünüyorum.
+
+384
+00:17:46,635 --> 00:17:47,256
+E bu da ne olur?
+
+385
+00:17:47,316 --> 00:17:48,756
+2 üzeri ne yazayım ki?
+
+386
+00:17:48,855 --> 00:17:49,816
+32 olsun değil mi?
+
+387
+00:17:49,836 --> 00:17:52,556
+Onu artık zaten görürsünüz bunu düşündükten sonra.
+
+388
+00:17:53,036 --> 00:17:56,235
+Yeter ki şurada türevi limitten nasıl yazıyoruz?
+
+389
+00:17:56,316 --> 00:17:56,915
+Onu hatırlamak.
+
+390
+00:17:56,996 --> 00:17:57,816
+Başka da bir şey yok.
+
+391
+00:17:57,955 --> 00:17:58,235
+Tamam mı?
+
+392
+00:17:58,276 --> 00:17:59,395
+Güzel bir soruymuş aslında.
+
+393
+00:18:00,556 --> 00:18:01,556
+Bunu değiştirebilir.
+
+394
+00:18:01,735 --> 00:18:01,915
+Tamam.
+
+395
+00:18:01,915 --> 00:18:05,935
+Evet şimdi gene bir benzer değişik bir soru da şöyle verilmiş.
+
+396
+00:18:06,816 --> 00:18:14,935
+Kapalı olarak verilmiş bir fonksiyonun bizden istenen 0 bir noktasındaki t doğrusu y eşittir.
+
+397
+00:18:15,756 --> 00:18:18,915
+Cx-1 ise c'yi bulunuz diyor.
+
+398
+00:18:20,036 --> 00:18:24,496
+Burada önce ben aslında şöyle de kontrol ederim.
+
+399
+00:18:24,496 --> 00:18:27,836
+Verilen nokta acaba eğriyi sağlıyor mu?
+
+400
+00:18:27,836 --> 00:18:29,395
+Yani verilen denklemi sağlıyor mu?
+
+401
+00:18:29,476 --> 00:18:31,695
+Sağlıyorsa t doğrusunu bulabilirim diyorum.
+
+402
+00:18:31,895 --> 00:18:33,076
+Onu nasıl test ederiz?
+
+403
+00:18:33,435 --> 00:18:36,875
+Verilen ifadede x yerine 0, y yerine 1 yazarım değil mi?
+
+404
+00:18:36,976 --> 00:18:38,175
+Bakın şuradan kontrol edelim.
+
+405
+00:18:38,316 --> 00:18:40,955
+0, cos 0, 1'dir.
+
+406
+00:18:41,036 --> 00:18:42,276
+Eksi 1'im var şurada.
+
+407
+00:18:42,875 --> 00:18:43,895
+Burada y 1.
+
+408
+00:18:44,375 --> 00:18:45,915
+Tanjant 0'da nedir?
+
+409
+00:18:47,276 --> 00:18:48,256
+0'dır değil mi?
+
+410
+00:18:49,675 --> 00:18:51,655
+O zaman sağlıyor mu?
+
+411
+00:18:51,895 --> 00:18:52,496
+Sağlamıyor mu?
+
+412
+00:18:54,496 --> 00:18:56,475
+dakika, cos 0, 1 değil mi?
+
+413
+00:18:56,536 --> 00:18:57,375
+Şurada ne kaldı?
+
+414
+00:18:57,875 --> 00:18:58,975
+Eksi 1'im kaldı.
+
+415
+00:18:59,715 --> 00:19:01,276
+1'e eşit çıkması gerekir.
+
+416
+00:19:01,816 --> 00:19:02,635
+Sağlamıyor mu?
+
+417
+00:19:05,536 --> 00:19:07,735
+Zoradan çözmüşüm mü ben bunu?
+
+418
+00:19:08,336 --> 00:19:13,375
+Evet, sağlıyor diye düşünerek çözmüşüm arkadaşlar bunu.
+
+419
+00:19:14,056 --> 00:19:15,296
+Sağlıyor mu nokta sizce?
+
+420
+00:19:15,395 --> 00:19:15,855
+Bir bakın.
+
+421
+00:19:16,556 --> 00:19:17,655
+x'e 0 verdim.
+
+422
+00:19:19,576 --> 00:19:20,536
+Tamam mı?
+
+423
+00:19:21,755 --> 00:19:24,076
+Şurası cos 0, 1 değil midir?
+
+424
+00:19:24,496 --> 00:19:25,175
+Ne oldu?
+
+425
+00:19:25,255 --> 00:19:25,955
+Eksi 1 oldu.
+
+426
+00:19:26,576 --> 00:19:29,215
+y yerine 1 yazıyorum değil mi?
+
+427
+00:19:29,415 --> 00:19:29,715
+1.
+
+428
+00:19:31,996 --> 00:19:35,135
+Buradan tanjant 0 nedir?
+
+429
+00:19:35,375 --> 00:19:36,596
+Sünüs bölü cos 0'den.
+
+430
+00:19:36,655 --> 00:19:37,415
+Bu da 0'dır.
+
+431
+00:19:37,556 --> 00:19:39,316
+Yani eksi 1 eşit 1 olmaz ki.
+
+432
+00:19:39,615 --> 00:19:41,776
+Ya da şurası artı olması gerekir arkadaşlar.
+
+433
+00:19:41,996 --> 00:19:42,175
+Değil mi?
+
+434
+00:19:42,235 --> 00:19:44,355
+Şurası artı olması gerekir.
+
+435
+00:19:44,715 --> 00:19:47,915
+Neyse biz onu noktayı bu sınavda sormuş.
+
+436
+00:19:47,915 --> 00:19:50,576
+Ya da ben yazarken de yanlış yazmış olabilirim.
+
+437
+00:19:50,635 --> 00:19:52,155
+Şu artıdır diye düşünüyorum.
+
+438
+00:19:52,155 --> 00:19:52,776
+Tamam mı?
+
+439
+00:19:54,816 --> 00:19:56,895
+Oldu mu arkadaşlar dediğim anlaşıldı mı?
+
+440
+00:19:57,816 --> 00:19:58,135
+Evet.
+
+441
+00:19:58,796 --> 00:19:59,056
+Tamam.
+
+442
+00:19:59,276 --> 00:20:00,155
+Yani bunu art...
+
+443
+00:20:00,000 --> 00:20:02,259
+olarak kabul edelim onun üzerinde
+
+444
+00:20:02,259 --> 00:20:04,079
+olduğunu. Çünkü bu artı olursa sağlıyor.
+
+445
+00:20:04,279 --> 00:20:05,680
+Bir eşittir bir olsun diye.
+
+446
+00:20:06,079 --> 00:20:07,880
+Şimdi kontrol edemeyeceğim. Not
+
+447
+00:20:07,880 --> 00:20:09,619
+nerede bilemiyorum. Evet.
+
+448
+00:20:10,079 --> 00:20:12,000
+Şimdi o zaman ne yapıyorum? Amacım
+
+449
+00:20:12,000 --> 00:20:13,640
+burada eğimi bulmak değil mi?
+
+450
+00:20:14,559 --> 00:20:15,960
+T-Dors'un denklemini nasıl
+
+451
+00:20:15,960 --> 00:20:17,680
+yazdığımızı da biliyoruz. Verilen şu
+
+452
+00:20:17,680 --> 00:20:20,279
+0-1 noktasında y eşittir bir artı
+
+453
+00:20:20,279 --> 00:20:21,980
+f'in türevinin sıfırdaki
+
+454
+00:20:21,980 --> 00:20:23,700
+değeri değil mi? Noktayı kullanıyorum.
+
+455
+00:20:23,779 --> 00:20:25,880
+x-0 bu. O zaman tek
+
+456
+00:20:25,880 --> 00:20:28,059
+yapmam gereken kapalı fonksiyon türevini
+
+457
+00:20:28,059 --> 00:20:29,940
+almak. Kapalı fonksiyon türevini alırken
+
+458
+00:20:29,940 --> 00:20:32,039
+de verilmiş bana. x bağımsız değişken
+
+459
+00:20:32,039 --> 00:20:33,839
+y fonksiyon. O zaman buradan
+
+460
+00:20:33,839 --> 00:20:35,920
+türev alıyorum bakın. 3x kare.
+
+461
+00:20:36,380 --> 00:20:38,259
+Geliyorum kosünüsün türevini alırken
+
+462
+00:20:38,259 --> 00:20:40,240
+içinde bakın x çarpı y var.
+
+463
+00:20:40,400 --> 00:20:41,900
+Önce ne yapıyorum? Parantezin içinin
+
+464
+00:20:41,900 --> 00:20:44,000
+türevini alıyorum. x'e göre türev
+
+465
+00:20:44,000 --> 00:20:45,819
+aldım. y'ye geldi. Artı
+
+466
+00:20:45,819 --> 00:20:47,900
+x çarpı y'nin türevi.
+
+467
+00:20:48,160 --> 00:20:49,259
+Kapat parantezi.
+
+468
+00:20:49,880 --> 00:20:51,200
+Sinüs x'ye.
+
+469
+00:20:52,119 --> 00:20:53,799
+Kosünüsün türevi de eksisi
+
+470
+00:20:53,799 --> 00:20:56,059
+olduğu için artı oldu burası. Tamam mı?
+
+471
+00:20:56,420 --> 00:20:58,180
+Eşittir. y'nin türevi.
+
+472
+00:20:58,180 --> 00:21:00,200
+y'sü. Tanjantın
+
+473
+00:21:00,200 --> 00:21:02,259
+türevi de 2 çarpı
+
+474
+00:21:02,259 --> 00:21:04,400
+1 artı tanjant kare
+
+475
+00:21:04,400 --> 00:21:06,440
+2x diyoruz değil mi? İçinin türevinden
+
+476
+00:21:06,440 --> 00:21:08,299
+2 geldi. Şu. Burada da
+
+477
+00:21:08,299 --> 00:21:10,099
+ne yapıyorum? İstersen bu test
+
+478
+00:21:10,099 --> 00:21:12,240
+sorusu olduğu için şurada da x'i
+
+479
+00:21:12,240 --> 00:21:14,059
+y'ye yerine yazarak y'sünü bulurum.
+
+480
+00:21:14,140 --> 00:21:16,339
+Ama ben burada çekmeye çalıştım
+
+481
+00:21:16,339 --> 00:21:18,359
+arkadaşlar. y'sü parantezini
+
+482
+00:21:18,359 --> 00:21:20,519
+aldım. 1 burayı atarsam
+
+483
+00:21:20,519 --> 00:21:22,500
+eksi x çarpı
+
+484
+00:21:22,500 --> 00:21:23,559
+sinüs x'ye olur.
+
+485
+00:21:24,279 --> 00:21:26,180
+32 buradaydı. Bunu buraya alırsam
+
+486
+00:21:26,180 --> 00:21:28,200
+eksi
+
+487
+00:21:28,200 --> 00:21:30,360
+eksi değil mi? Bir de şuradan
+
+488
+00:21:30,360 --> 00:21:31,019
+gelecek.
+
+489
+00:21:33,019 --> 00:21:34,819
+Kimi nereye attım?
+
+490
+00:21:35,279 --> 00:21:36,480
+Bir de hem buradayım. Tamam.
+
+491
+00:21:36,619 --> 00:21:38,480
+Şu doğru işaretlere de bakıyorum. Şu da
+
+492
+00:21:38,480 --> 00:21:40,400
+tamam. Tamam mı? Bu şekilde oldu.
+
+493
+00:21:40,940 --> 00:21:42,480
+y'süyü yalnız bırakırsak
+
+494
+00:21:42,480 --> 00:21:44,200
+şunu bulmuş olduk. Şimdi
+
+495
+00:21:44,200 --> 00:21:46,180
+bunun 0 1'deki de değerinde
+
+496
+00:21:46,180 --> 00:21:48,279
+yerine yazarsak x yerine 0 şu
+
+497
+00:21:48,279 --> 00:21:50,420
+gitti. Sinüs 0 zaten
+
+498
+00:21:50,420 --> 00:21:52,119
+0 gider. Bu
+
+499
+00:21:52,119 --> 00:21:54,400
+0'dır. Buradan eksi 2 kalır payında.
+
+500
+00:21:54,400 --> 00:21:56,519
+tamam mı? Paydada da gene bu sinüsten
+
+501
+00:21:56,519 --> 00:21:58,359
+dolayı 0 olacağı için. Yani
+
+502
+00:21:58,359 --> 00:22:00,559
+sonuç eksi 2 oldu arkadaşlar.
+
+503
+00:22:01,119 --> 00:22:02,579
+O halde getirip eğimini
+
+504
+00:22:02,579 --> 00:22:04,319
+bulduk. Verilen noktadaki
+
+505
+00:22:04,319 --> 00:22:06,460
+t doğrusunun denklemi nedir?
+
+506
+00:22:06,579 --> 00:22:08,460
+Bakın y eşittir 1 artı
+
+507
+00:22:08,460 --> 00:22:09,700
+değil mi? Ne diyeceğim?
+
+508
+00:22:10,119 --> 00:22:10,579
+Eksi
+
+509
+00:22:10,579 --> 00:22:12,259
+2x
+
+510
+00:22:12,259 --> 00:22:14,259
+y eşittir 1 artı eksi
+
+511
+00:22:14,259 --> 00:22:15,279
+2x diyeceğiz.
+
+512
+00:22:16,519 --> 00:22:18,460
+Şuradaki ifadedeki c'yi
+
+513
+00:22:18,460 --> 00:22:20,140
+soruyor bana. c ne olacak o zaman
+
+514
+00:22:20,140 --> 00:22:20,720
+arkadaşlar?
+
+515
+00:22:22,720 --> 00:22:23,240
+Sizce?
+
+516
+00:22:26,279 --> 00:22:27,599
+2 olmayacak mı o zaman?
+
+517
+00:22:27,779 --> 00:22:30,019
+Evet doğru değil mi? 2 olacak. Çünkü şey
+
+518
+00:22:30,019 --> 00:22:32,039
+burada eksi c dediğine göre
+
+519
+00:22:32,039 --> 00:22:34,059
+biz onu ne bulduk? Şurada
+
+520
+00:22:34,059 --> 00:22:35,059
+eksi bulduğumuz için
+
+521
+00:22:35,059 --> 00:22:38,360
+şu c eşittir 2 olmalı. Yani d eşittir
+
+522
+00:22:38,360 --> 00:22:40,360
+yani soruyu anladık. Bir tek
+
+523
+00:22:40,360 --> 00:22:42,200
+onu ben belki de yanlış yazmışımdur.
+
+524
+00:22:42,259 --> 00:22:43,599
+Şurada yukarıda artı diye
+
+525
+00:22:43,599 --> 00:22:46,180
+olursa tabii burada eksi olur. Biraz ona göre
+
+526
+00:22:46,180 --> 00:22:50,619
+yok değişmediği için sanırım şurada. Evet. Neyse. Önemli değil.
+
+527
+00:22:51,279 --> 00:22:54,019
+Şimdi geldik. Böyle bir soru verilmiş.
+
+528
+00:22:55,900 --> 00:22:58,559
+Fonksiyonu için eksi 2 artı 2 aralığında
+
+529
+00:22:58,559 --> 00:23:01,920
+f c eşittir 3 denklemini sağlayan
+
+530
+00:23:01,920 --> 00:23:04,000
+bir c sayısının mevcutiyetini
+
+531
+00:23:04,000 --> 00:23:05,000
+araştırınız.
+
+532
+00:23:06,640 --> 00:23:10,619
+Bu sadece yani sınav konularımızda
+
+533
+00:23:10,619 --> 00:23:14,160
+hani dedik ya ya sandeviç teoremi
+
+534
+00:23:14,160 --> 00:23:15,779
+kullandırtılır veya
+
+535
+00:23:15,779 --> 00:23:18,299
+ara değer başka da bir bilgimiz yok yani.
+
+536
+00:23:18,639 --> 00:23:20,039
+Burada da bu soruyu
+
+537
+00:23:20,039 --> 00:23:21,819
+çözebilmek için ara değer
+
+538
+00:23:21,819 --> 00:23:24,000
+teoremine ihtiyacımız var arkadaşlar.
+
+539
+00:23:24,000 --> 00:23:24,920
+Ne diyor?
+
+540
+00:23:29,172 --> 00:23:37,692
+Ne diyor arkadaş soruda noktayı sağlamadığı zaman hiçbiri seçeneği de mevcutsa belki doğrudur sorudaki işaret hocam.
+
+541
+00:23:38,471 --> 00:23:45,152
+Olabilir. Problem değil. Hani ben şimdi o zaman dediğiniz gibi doğru seçenekte öyle bir şey de varsa haklı.
+
+542
+00:23:45,211 --> 00:23:50,892
+Arkadaşımız diyor ki şimdi ben buraya birkaç tane şıkkı yazdım ya diğerlerinde de hiçbiri diyordur.
+
+543
+00:23:50,892 --> 00:23:56,352
+Belki de o şıktı. Yok bunun cevabı vardı. Ben ya soruyu yanlış aldım oradan arkadaşlar.
+
+544
+00:23:56,352 --> 00:24:00,951
+Neyse problem değil. Anladık soruyu ne demek istediğimizde.
+
+545
+00:24:01,211 --> 00:24:07,132
+Şimdi gelelim bu soruya. Bu soruyu da biz ara değer teoremi vermiştik hatırlarsanız.
+
+546
+00:24:07,271 --> 00:24:16,892
+Fonksiyon diyordu ki kapalı aralık sonlu kapalı bir aralıkta fonksiyon sürekli ise işte buradaki 3 diyelim.
+
+547
+00:24:17,132 --> 00:24:20,491
+Biz orada fc eşittir k demiştik hatırlarsanız.
+
+548
+00:24:20,491 --> 00:24:33,632
+k değeri de f eksi 2 ile f artı 2 arasında bir değer ise ara değer teoremine göre öyle bir c sayısı vardır ki yani eksi 2 artı 2 açık aralığında mevcuttur diyeceğiz.
+
+549
+00:24:33,991 --> 00:24:39,412
+Onun için de şimdi dikkat edersek verilen fonksiyon şu aralıkta süreklidir değil mi?
+
+550
+00:24:39,511 --> 00:24:41,711
+Kapalı aralıkta sürekli bir problemimiz yok.
+
+551
+00:24:41,711 --> 00:24:45,412
+İşte diyorum ki fonksiyon kapalı aralıkta süreklidir.
+
+552
+00:24:45,812 --> 00:24:48,032
+Fonksiyonun eksi 2'deki değeri nedir?
+
+553
+00:24:48,271 --> 00:24:51,912
+Yerine yazarsak şuradan eksi 4 olur değil mi?
+
+554
+00:24:52,832 --> 00:24:57,092
+Şuradan pi bölü 2 pardon 0 gelir.
+
+555
+00:24:57,672 --> 00:24:58,991
+4 tamam 0 doğru.
+
+556
+00:24:59,552 --> 00:25:01,372
+2'deki değerimizde ne olacaktır?
+
+557
+00:25:01,572 --> 00:25:02,552
+8 olacaktır.
+
+558
+00:25:02,552 --> 00:25:05,672
+O zaman diyoruz ki fonksiyon kapalı aralıkta sürekli.
+
+559
+00:25:06,231 --> 00:25:17,192
+İşte uçtaki değerleri de böyle ise diyoruz ki ara değer teoremine göre 0 ile 8 arasında öyle bir k değeri vardır ki yani 3'e eşittir diyeceğiz.
+
+560
+00:25:17,312 --> 00:25:17,812
+Tamam mı?
+
+561
+00:25:17,872 --> 00:25:17,991
+Bu.
+
+562
+00:25:18,392 --> 00:25:18,832
+Bu kadar.
+
+563
+00:25:19,011 --> 00:25:20,152
+Başka da bir şey yapmıyoruz.
+
+564
+00:25:20,971 --> 00:25:25,092
+Yani böyle bir c sayısı vardır eksi 2 ile artı 2 aralığında.
+
+565
+00:25:25,991 --> 00:25:31,172
+Zaten bu 3 sayısı da 0 ile 8 arasında olduğu aşikar değil mi?
+
+566
+00:25:31,172 --> 00:25:33,751
+O zaman ara değer teoremini sağlıyor diyoruz.
+
+567
+00:25:33,812 --> 00:25:39,052
+Ara değer teoremine göre açık aralıkta bir c sayısı vardır diyoruz.
+
+568
+00:25:39,932 --> 00:25:40,971
+Anlaşıldı mı arkadaşlar?
+
+569
+00:25:41,192 --> 00:25:42,491
+Bu da ara değer teoremi.
+
+570
+00:25:43,731 --> 00:25:45,731
+Kapalı aralıkta fonksiyon sürekli olacak.
+
+571
+00:25:46,632 --> 00:25:48,511
+Uç noktalarını yazacaksınız.
+
+572
+00:25:48,791 --> 00:25:54,572
+İşte verilen orada 3 değil de biz hadi teoremi söylerken şuna da k demiştik diyelim.
+
+573
+00:25:54,572 --> 00:26:02,552
+k'da 0 ile 8 arasında ise ara değer teoremine göre öyle bir c sayısı vardır diyoruz açık aralıkta.
+
+574
+00:26:02,951 --> 00:26:03,092
+Tamam.
+
+575
+00:26:03,451 --> 00:26:03,572
+Bu.
+
+576
+00:26:04,172 --> 00:26:05,011
+Şimdi gelelim.
+
+577
+00:26:07,192 --> 00:26:08,392
+Şöyle bir soru.
+
+578
+00:26:08,852 --> 00:26:15,812
+G ve h fonksiyonları bu şartları sağlayan pozitif değerli ve türevlenebilen bir fonksiyon olmak üzere.
+
+579
+00:26:15,812 --> 00:26:18,552
+F fonksiyonu da böyle verilmiş.
+
+580
+00:26:18,672 --> 00:26:21,731
+Gx karenin üstünde hx ile tanımlı olsun.
+
+581
+00:26:22,231 --> 00:26:23,132
+Buna göre diyor.
+
+582
+00:26:24,271 --> 00:26:26,751
+F'in birdeki değerini bulunuz.
+
+583
+00:26:26,951 --> 00:26:29,711
+Yani bunlar hepsi test soruları olacak şekilde arkadaşlar.
+
+584
+00:26:29,872 --> 00:26:35,511
+Ben hani klasik yazdım ama hepsi işte F'in birdeki değeri aşağıdakilerden hangisidir demeliyiz.
+
+585
+00:26:35,971 --> 00:26:38,892
+O halde benim yapmam gereken bakın şu ifadem.
+
+586
+00:26:39,372 --> 00:26:40,912
+F'in türevini önce almalıyım.
+
+587
+00:26:41,011 --> 00:26:43,112
+Sonra bunları kontrol ederiz yerine yazarız.
+
+588
+00:26:43,112 --> 00:26:48,511
+Burada dikkat ederseniz bakın tabanı değişken üstü değişken yani üstel bir ifade değil mi?
+
+589
+00:26:48,791 --> 00:26:50,771
+Bunun türevini alırken ne kullanıyorduk biz?
+
+590
+00:26:51,352 --> 00:26:52,112
+Logaritmayı kullanıyorduk.
+
+591
+00:26:52,832 --> 00:26:54,432
+Ya da e tabanında yazarsın.
+
+592
+00:26:54,751 --> 00:26:57,932
+Onun için ben eleni kullanarak yazdım bunu.
+
+593
+00:26:58,052 --> 00:27:00,932
+Yani her tarafın eleni alırsan nasıl alırsın?
+
+594
+00:27:01,471 --> 00:27:02,892
+Elen fx diyeceksin değil mi?
+
+595
+00:27:03,011 --> 00:27:04,291
+Elen şu ifade.
+
+596
+00:27:04,612 --> 00:27:07,532
+Üstte başa çarpan olarak gelir logaritmik özellikten.
+
+597
+00:27:07,892 --> 00:27:08,852
+Hx bakın.
+
+598
+00:27:08,852 --> 00:27:13,692
+Hx yani şöyle yazdım her tarafın istel ifade olduğu için.
+
+599
+00:27:14,172 --> 00:27:17,152
+Bunun türevini alabilmek için logaritmayı kullanıyoruz.
+
+600
+00:27:17,271 --> 00:27:18,892
+Ya da e tabanında yazardık.
+
+601
+00:27:19,271 --> 00:27:20,152
+Bunu da ne yapıyoruz?
+
+602
+00:27:20,332 --> 00:27:20,632
+Bakın.
+
+603
+00:27:20,632 --> 00:27:24,312
+Hx başa gelir çarpan olarak şu.
+
+604
+00:27:24,312 --> 00:27:25,132
+İşte.
+
+605
+00:27:25,132 --> 00:27:50,311
+Hx
+
+606
+00:27:25,663 --> 00:27:27,023
+Bunun türevini alamıyoruz.
+
+607
+00:27:27,163 --> 00:27:28,963
+Tabanı da değişken olduğu için ne yapıyoruz?
+
+608
+00:27:29,064 --> 00:27:30,183
+Logaritmayı kullanıyoruz.
+
+609
+00:27:30,263 --> 00:27:31,183
+Buna dikkat ediyoruz.
+
+610
+00:27:31,523 --> 00:27:31,943
+Bu şekilde.
+
+611
+00:27:32,344 --> 00:27:34,104
+Şimdi artık türevini alabiliriz değil mi?
+
+612
+00:27:34,463 --> 00:27:35,723
+Elenin türevini biliyorum.
+
+613
+00:27:36,104 --> 00:27:37,783
+F'in türevi bölü fx diyeceğim.
+
+614
+00:27:37,963 --> 00:27:38,203
+Değil mi?
+
+615
+00:27:38,263 --> 00:27:38,384
+Şu.
+
+616
+00:27:39,523 --> 00:27:40,064
+Eşittir.
+
+617
+00:27:40,144 --> 00:27:40,663
+Burada ne var?
+
+618
+00:27:40,763 --> 00:27:41,483
+Çarpım var.
+
+619
+00:27:41,783 --> 00:27:42,783
+Birincinin türevi.
+
+620
+00:27:43,243 --> 00:27:44,923
+H üstü x çarpı ikinci.
+
+621
+00:27:45,564 --> 00:27:49,523
+Artı h çarpı elen gx karenin türevi.
+
+622
+00:27:49,523 --> 00:27:51,584
+Elen u'nun türevini de biliyorduk.
+
+623
+00:27:51,663 --> 00:27:53,344
+U üstü bölü u diye yazardık.
+
+624
+00:27:53,604 --> 00:27:54,403
+O zaman ne diyorum?
+
+625
+00:27:54,403 --> 00:27:56,884
+Parantezin içinin türevi.
+
+626
+00:27:56,983 --> 00:27:58,243
+Parantezin içinde ne var?
+
+627
+00:27:58,344 --> 00:28:00,223
+Dikkat ederseniz gx kare.
+
+628
+00:28:00,864 --> 00:28:02,284
+Fonksiyonunun türevi var değil mi?
+
+629
+00:28:02,584 --> 00:28:03,804
+G'nin türevi diyeceğim.
+
+630
+00:28:04,003 --> 00:28:05,104
+Çarpı içinin türevi.
+
+631
+00:28:05,183 --> 00:28:07,604
+Yani 2x çarpı g üstü x kare.
+
+632
+00:28:08,183 --> 00:28:10,963
+Bölü u dediğim ifadeyi aynen yazdım değil mi?
+
+633
+00:28:11,084 --> 00:28:12,003
+Yani gx kare.
+
+634
+00:28:12,243 --> 00:28:13,703
+Bu türevi anlaşıldı mı arkadaşlar?
+
+635
+00:28:14,084 --> 00:28:15,163
+Bir daha söylüyorum bakın.
+
+636
+00:28:16,163 --> 00:28:17,144
+Birincinin türevi.
+
+637
+00:28:17,144 --> 00:28:18,703
+H'ın türevi çarpı ikinci.
+
+638
+00:28:18,923 --> 00:28:21,903
+Artı birinci çarpı elenin türevini.
+
+639
+00:28:21,983 --> 00:28:24,124
+Köşeli parantezin içinin türevini alacağım değil mi?
+
+640
+00:28:24,124 --> 00:28:25,003
+L'nin türevinden.
+
+641
+00:28:25,443 --> 00:28:26,443
+Alırken de ne yapıyorum?
+
+642
+00:28:26,584 --> 00:28:26,884
+Bakın.
+
+643
+00:28:27,183 --> 00:28:29,644
+G'nin türevi çarpı içinin türevi.
+
+644
+00:28:29,723 --> 00:28:33,983
+2x çarpı g üstü bölü gx kare.
+
+645
+00:28:34,284 --> 00:28:34,384
+Bu.
+
+646
+00:28:35,644 --> 00:28:37,644
+Buradan ne yapıyorum?
+
+647
+00:28:37,644 --> 00:28:39,663
+F'in türevini yalnız bırakırsak.
+
+648
+00:28:39,963 --> 00:28:41,364
+Fx buraya çarpan gelir.
+
+649
+00:28:41,483 --> 00:28:42,824
+Yazdık onu da.
+
+650
+00:28:43,763 --> 00:28:45,523
+Sonra ne yapmam gerekiyor?
+
+651
+00:28:45,604 --> 00:28:46,604
+Bana neyi sormuştu?
+
+652
+00:28:47,104 --> 00:28:48,324
+Türevin birdeki değerini.
+
+653
+00:28:48,423 --> 00:28:49,824
+X gördüğüm yere ne yapmalıyım?
+
+654
+00:28:49,903 --> 00:28:50,723
+1 yazmalıyım.
+
+655
+00:28:51,384 --> 00:28:52,003
+Yazın işte.
+
+656
+00:28:52,084 --> 00:28:53,344
+1'leri yazdık diyelim.
+
+657
+00:28:53,544 --> 00:28:54,604
+Şurada yazdım bakın.
+
+658
+00:28:55,364 --> 00:28:59,084
+Burada fx dediğim ifadeyi getirip bir daha oraya yerine yazmıyorum.
+
+659
+00:28:59,243 --> 00:29:00,644
+Çünkü değer bulacağım için.
+
+660
+00:29:00,644 --> 00:29:02,844
+F'in birdeki değeri şu değil midir?
+
+661
+00:29:03,403 --> 00:29:04,644
+G'nin birdeki değeri.
+
+662
+00:29:04,763 --> 00:29:05,844
+H'in birdeki değeri.
+
+663
+00:29:05,963 --> 00:29:06,683
+Yazdım şuraya.
+
+664
+00:29:06,864 --> 00:29:07,483
+Bu da ne olur?
+
+665
+00:29:07,784 --> 00:29:10,124
+Yukarıdaki bilgileri kullanarak değeri 1'miş.
+
+666
+00:29:10,624 --> 00:29:12,304
+O zaman yazdık bakın.
+
+667
+00:29:12,624 --> 00:29:14,104
+F'in birdeki değeri diyorum.
+
+668
+00:29:14,344 --> 00:29:16,304
+Şurada içlerine 1'leri yazdık.
+
+669
+00:29:17,144 --> 00:29:18,423
+O halde ne gelecek?
+
+670
+00:29:19,223 --> 00:29:19,644
+Şurada.
+
+671
+00:29:19,923 --> 00:29:21,243
+F'in birdeki değeri 1.
+
+672
+00:29:21,463 --> 00:29:22,403
+Aç parantez.
+
+673
+00:29:22,403 --> 00:29:23,324
+Açın.
+
+674
+00:29:23,423 --> 00:29:26,003
+Türevinin birdeki değerini ne vermiş yukarıda?
+
+675
+00:29:26,183 --> 00:29:26,683
+Bir bakalım.
+
+676
+00:29:27,183 --> 00:29:27,983
+1 vermiş.
+
+677
+00:29:28,983 --> 00:29:46,884
+Bir bakalım.
+
+678
+00:29:31,763 --> 00:29:33,563
+Şurada bakın 1.
+
+679
+00:29:34,423 --> 00:29:37,443
+Bunları yukarıdan yazmışım bakın kontrol etmek açısından.
+
+680
+00:29:37,983 --> 00:29:39,343
+Burada ne olacak arkadaşlar?
+
+681
+00:29:39,743 --> 00:29:40,683
+Elen 1 ne olur?
+
+682
+00:29:40,783 --> 00:29:41,383
+0 olur.
+
+683
+00:29:41,923 --> 00:29:43,543
+O zaman bu terim 0 geldi.
+
+684
+00:29:44,123 --> 00:29:47,243
+Artı türevin 1'deki değeri 2'ymiş.
+
+685
+00:29:47,243 --> 00:29:50,183
+2 çarpı 2 bölü 1.
+
+686
+00:29:50,523 --> 00:29:51,823
+1 yazmaya gerek yok.
+
+687
+00:29:51,943 --> 00:29:53,723
+Bir de h1'deki değer de 2'ymiş.
+
+688
+00:29:53,903 --> 00:29:54,843
+İşte buradan ne olur?
+
+689
+00:29:54,943 --> 00:29:56,303
+8 gelir değil mi?
+
+690
+00:29:57,003 --> 00:29:59,223
+F'in türevinin 1'deki değeri 8'miş.
+
+691
+00:29:59,223 --> 00:30:02,823
+Sade dikkat ama türevi almak önemli.
+
+692
+00:30:02,943 --> 00:30:06,223
+Üstel ifadelerde ne yapıyorduk?
+
+693
+00:30:06,384 --> 00:30:07,783
+Logaritmayı kullanıyorduk.
+
+694
+00:30:07,884 --> 00:30:09,663
+Ya da bunu nasıl yazardın?
+
+695
+00:30:09,963 --> 00:30:13,403
+E tabanında hx elenge x diye de yazardınız.
+
+696
+00:30:13,583 --> 00:30:15,103
+Öyle de alabilirdiniz arkadaşlar.
+
+697
+00:30:16,103 --> 00:30:17,423
+Var mı problem?
+
+698
+00:30:19,043 --> 00:30:20,843
+Evet devam edelim.
+
+699
+00:30:22,343 --> 00:30:24,103
+Şimdi şöyle bir soru.
+
+700
+00:30:24,103 --> 00:30:39,663
+F real sayılardan pozitif real sayılara fx eşittir e üzeri arttanjant x fonksiyonunun tersinin mevcut olduğunu gösterip tersinin türevinin e üzeri pi bölüşteki değerini bulunuz.
+
+701
+00:30:39,663 --> 00:30:44,863
+Şimdi önce değerini bulmadan bir fonksiyonun tersinin olabilmesi için ne olması gerekiyordu?
+
+702
+00:30:44,983 --> 00:30:46,923
+Fonksiyonun birebir olması gerekirdi.
+
+703
+00:30:47,283 --> 00:30:49,783
+Fonksiyonun birebir olduğunu da biz nasıl gösterirdik?
+
+704
+00:30:50,563 --> 00:30:53,063
+Buradaki bilgilerimizde türevine bakardık.
+
+705
+00:30:53,303 --> 00:30:59,543
+Türevi işte tanım kümesinde artan veya azalansa o fonksiyon birebirdir ve tersi vardır diyoruz.
+
+706
+00:30:59,543 --> 00:31:04,143
+O zaman şimdi ilk önce yapmam gereken fonksiyonun türevini almalıyım değil mi?
+
+707
+00:31:04,603 --> 00:31:07,183
+E üzeri arttanjantın da türevi nasıl alınırdı?
+
+708
+00:31:07,723 --> 00:31:08,803
+E üzeri u'nun türevini.
+
+709
+00:31:08,843 --> 00:31:11,523
+U'nun türevi çarpı kendisi diye yazardık.
+
+710
+00:31:11,583 --> 00:31:13,663
+Yani arttanjantın türevini de biliyoruz.
+
+711
+00:31:13,963 --> 00:31:15,923
+1 bölü 1 artı x karedir.
+
+712
+00:31:16,023 --> 00:31:17,063
+Bakın türevini alıyorum.
+
+713
+00:31:17,983 --> 00:31:21,203
+Üstün türevi 1 bölü 1 artı x kare çarpı kendisi.
+
+714
+00:31:21,543 --> 00:31:25,303
+Bu da dikkat ederseniz tanım kümesinde nedir?
+
+715
+00:31:25,443 --> 00:31:26,103
+Pozitiftir.
+
+716
+00:31:26,103 --> 00:31:29,723
+Pozitif olduğundan yani artandır diyoruz.
+
+717
+00:31:29,823 --> 00:31:31,063
+Dolayısıyla birebirdir.
+
+718
+00:31:31,483 --> 00:31:32,644
+Tersi vardır.
+
+719
+00:31:33,323 --> 00:31:35,023
+O halde biz ne demiştik?
+
+720
+00:31:35,123 --> 00:31:36,423
+Formüller çıkarmıştık.
+
+721
+00:31:36,823 --> 00:31:41,263
+Tersinin türevinin herhangi bir noktadaki değeri diyelim.
+
+722
+00:31:41,743 --> 00:31:46,063
+1 bölü fonksiyonun türevinin işte tersini burada yerine yazacağız.
+
+723
+00:31:46,243 --> 00:31:46,843
+A diyelim.
+
+724
+00:31:46,963 --> 00:31:48,023
+A'daki değeridir.
+
+725
+00:31:48,263 --> 00:31:49,003
+Tamam mı arkadaşlar?
+
+726
+00:31:49,263 --> 00:31:51,283
+3 tane formül vermiştik hatırlarsanız.
+
+727
+00:31:51,283 --> 00:31:53,643
+Nokta varsa dedik bu formülü kullanın.
+
+728
+00:31:53,643 --> 00:31:59,523
+Herhangi işte y sıfırdaki değeri 1 bölü f x sıfırdaki değeri şeklinde idi.
+
+729
+00:31:59,823 --> 00:32:02,863
+Burada tek yapmam gereken a'yı nasıl bulacağım değil mi?
+
+730
+00:32:03,283 --> 00:32:12,163
+Şuradan türevi düşünmezsem f üzeri eksi 1 e üzeri pi bölü 3'e a dersem e üzeri pi bölü 3 ne olur?
+
+731
+00:32:12,343 --> 00:32:13,103
+A olmaz mı?
+
+732
+00:32:13,843 --> 00:32:14,663
+Şu bakın.
+
+733
+00:32:15,923 --> 00:32:17,823
+Buradan a'yı bulmaya çalışıyorum.
+
+734
+00:32:17,983 --> 00:32:18,723
+Şunu yazdım.
+
+735
+00:32:18,723 --> 00:32:19,783
+E bu da nedir zaten?
+
+736
+00:32:20,143 --> 00:32:22,723
+Fonksiyonlu x yerine a yaz demek.
+
+737
+00:32:22,983 --> 00:32:24,384
+Yani yukarıda fonksiyonum şu.
+
+738
+00:32:24,983 --> 00:32:27,283
+E üzeri arktanjant a olur.
+
+739
+00:32:28,043 --> 00:32:28,884
+E burada ne olur?
+
+740
+00:32:29,384 --> 00:32:31,323
+Tabanlar eşitse üstler eşit olmalı.
+
+741
+00:32:32,443 --> 00:32:34,543
+Arktanjant a pi bölü 3 olur.
+
+742
+00:32:35,223 --> 00:32:37,103
+E bunu da nasıl yazarsın?
+
+743
+00:32:38,683 --> 00:32:40,843
+Pi bölü 3 olan açı nedir diye bakıyorsun.
+
+744
+00:32:40,963 --> 00:32:41,483
+O da nedir?
+
+745
+00:32:41,603 --> 00:32:42,563
+Köküç değil midir?
+
+746
+00:32:42,563 --> 00:32:45,023
+Ya da bir daha uzatırsın böyle yazarsın.
+
+747
+00:32:45,083 --> 00:32:46,903
+Her tarafın tanjantını alırsın değil mi?
+
+748
+00:32:47,644 --> 00:32:48,163
+Tersinin.
+
+749
+00:32:48,660 --> 00:32:50,320
+Tanjantı a'yı verir.
+
+750
+00:32:50,460 --> 00:32:52,160
+Tanjantı bölüş diye bulursun.
+
+751
+00:32:52,160 --> 00:32:56,759
+Yani sonuçta bir şekilde a'ı köküç olarak bulmuş olduk.
+
+752
+00:32:56,920 --> 00:32:58,180
+Burada tamam mıyız arkadaşlar?
+
+753
+00:32:58,759 --> 00:32:59,460
+Bakın ne yaptık?
+
+754
+00:32:59,500 --> 00:33:01,279
+Önce birebir olduğunu gösterdik.
+
+755
+00:33:01,840 --> 00:33:03,200
+Formülümüzde biliyoruz.
+
+756
+00:33:03,560 --> 00:33:09,880
+Fonksiyonun tersinin türevinin e üzeri p bölüşteki değeri bir bölü fonksiyonun a'daki değeri.
+
+757
+00:33:10,000 --> 00:33:13,580
+Yani tersinin noktasını bulmuş oluyoruz bu şekilde.
+
+758
+00:33:14,000 --> 00:33:15,120
+Ona da a demiş olduk.
+
+759
+00:33:15,240 --> 00:33:16,759
+A'yı bulabilmek için de ne yapıyorum?
+
+760
+00:33:16,759 --> 00:33:20,340
+Tersinin e üzeri p bölüşteki değerini a dersem
+
+761
+00:33:20,340 --> 00:33:23,400
+buradan her tarafını f ile çarptığımı düşüneyim.
+
+762
+00:33:23,460 --> 00:33:23,680
+Değil mi?
+
+763
+00:33:23,740 --> 00:33:25,460
+F'ini alırsam daha doğrusu.
+
+764
+00:33:25,820 --> 00:33:26,140
+Ne olur?
+
+765
+00:33:26,280 --> 00:33:27,720
+E üzeri p bölü 3 eşittir.
+
+766
+00:33:27,780 --> 00:33:28,640
+F'e olmaz mı?
+
+767
+00:33:28,980 --> 00:33:29,840
+Bunu da yazdık.
+
+768
+00:33:30,000 --> 00:33:32,140
+A'yı bu şekilde köküç olarak bulduk.
+
+769
+00:33:32,220 --> 00:33:32,960
+O zaman ne yapacağım?
+
+770
+00:33:33,060 --> 00:33:39,360
+Getireceğim burada bir bölü fonksiyonun türevinde x gördüğüm yere köküç yazacağım işte.
+
+771
+00:33:39,880 --> 00:33:40,500
+Bakın şu.
+
+772
+00:33:40,500 --> 00:33:45,460
+Onu da yazarsanız bir bölü 3 gelir şuraya.
+
+773
+00:33:45,460 --> 00:33:48,440
+e üzeri art tanjant köküç diyeceğim.
+
+774
+00:33:48,940 --> 00:33:52,160
+Tanjantı köküç olan açıda pi bölü 3'tü zaten.
+
+775
+00:33:52,840 --> 00:33:53,880
+Yerine de yazdık.
+
+776
+00:33:54,180 --> 00:33:54,980
+Sonuçta ne olur?
+
+777
+00:33:55,100 --> 00:33:58,980
+4 çarpı e üzeri eksi pi bölü 3 elde edilir diyeceğiz.
+
+778
+00:34:00,320 --> 00:34:11,260
+Tamam mı arkadaşlar?
+
+779
+00:34:05,011 --> 00:34:06,051
+Anlaşılıyor mu?
+
+780
+00:34:08,391 --> 00:34:10,152
+Evet devam edelim.
+
+781
+00:34:12,092 --> 00:34:13,951
+Bir tane daha ters.
+
+782
+00:34:14,791 --> 00:34:18,572
+Ben arkadaşlar ters fonksiyon türevinden soru bekliyorum.
+
+783
+00:34:18,811 --> 00:34:19,231
+Tamam mı?
+
+784
+00:34:19,951 --> 00:34:21,471
+Onun için lütfen dikkat edelim.
+
+785
+00:34:21,831 --> 00:34:25,431
+Benim seçtiğim sorularda biraz daha fonksiyonları elenlidir.
+
+786
+00:34:25,431 --> 00:34:27,511
+Ters trigonometrik onları seçmek istedim.
+
+787
+00:34:27,592 --> 00:34:29,011
+Normal polinom da verebilirler.
+
+788
+00:34:29,152 --> 00:34:31,991
+Onlarla ilgili zaten noktamızda soruda çözdük.
+
+789
+00:34:31,991 --> 00:34:36,291
+Ben biraz zor bulunabilen noktaları seçmek istedim.
+
+790
+00:34:36,351 --> 00:34:37,991
+O açıdan böyle soruları seçtim.
+
+791
+00:34:38,471 --> 00:34:43,771
+Şimdi verilen fonksiyon sıfır sonsuz tanım kümesinden real sayılara diyor.
+
+792
+00:34:44,672 --> 00:34:45,971
+FX böyle verilmiş.
+
+793
+00:34:46,331 --> 00:34:51,192
+Tersinin mevcut olduğunu gösterip tersinin türevinin birdeki değerini bulunuz.
+
+794
+00:34:51,192 --> 00:34:53,331
+Yukarıdaki sorun şeklinde düşüneceğim.
+
+795
+00:34:53,411 --> 00:34:54,791
+Önce bir türevine bakacağım.
+
+796
+00:34:55,431 --> 00:34:57,132
+Aralıkta artan mıdır azalan mıdır?
+
+797
+00:34:58,871 --> 00:34:59,991
+Evet gelelim.
+
+798
+00:34:59,991 --> 00:35:02,612
+Soruları paylaşmadım.
+
+799
+00:35:02,731 --> 00:35:04,112
+Dersten sonra hemen paylaşacağım.
+
+800
+00:35:04,192 --> 00:35:05,552
+Avesize yükleyeceğim arkadaşlar.
+
+801
+00:35:06,532 --> 00:35:06,811
+Evet.
+
+802
+00:35:07,331 --> 00:35:08,231
+Türevine geliyorum.
+
+803
+00:35:08,351 --> 00:35:09,511
+Bakın bunun türevi ne olur?
+
+804
+00:35:09,612 --> 00:35:10,231
+Bir değil mi?
+
+805
+00:35:10,311 --> 00:35:10,891
+Bu sıfır.
+
+806
+00:35:11,011 --> 00:35:11,291
+Bir.
+
+807
+00:35:11,911 --> 00:35:13,291
+Elenin türevinden de ne gelecek?
+
+808
+00:35:13,451 --> 00:35:15,431
+2x bölü 1 artı x kare diyeceğim.
+
+809
+00:35:15,552 --> 00:35:15,692
+Şu.
+
+810
+00:35:16,451 --> 00:35:19,231
+Bu da dikkat ederseniz tanım kümesinde nedir?
+
+811
+00:35:19,731 --> 00:35:20,331
+Pozitiftir.
+
+812
+00:35:20,331 --> 00:35:21,851
+O halde ne diyorum?
+
+813
+00:35:22,172 --> 00:35:22,652
+Artandır.
+
+814
+00:35:23,072 --> 00:35:23,731
+Birebirdir.
+
+815
+00:35:24,112 --> 00:35:24,851
+Tersi vardır.
+
+816
+00:35:25,371 --> 00:35:25,931
+E ne diyeceğim?
+
+817
+00:35:26,032 --> 00:35:27,851
+Yukarıdaki formülden dikkat edersek.
+
+818
+00:35:27,851 --> 00:35:32,132
+Dedik ki bunun tersinin türevinin birdeki değeri ne eşittir?
+
+819
+00:35:32,211 --> 00:35:36,112
+Bir bölü fonksiyonun türevinin a'daki değeri diyelim.
+
+820
+00:35:36,251 --> 00:35:37,471
+Bakın şu idi.
+
+821
+00:35:38,271 --> 00:35:39,592
+Buradan a'yı bulmak istiyorum.
+
+822
+00:35:40,132 --> 00:35:41,152
+A'yı nasıl bulacağım?
+
+823
+00:35:42,011 --> 00:35:46,011
+İşte tersinin birdeki değeri a ise bir ne olur?
+
+824
+00:35:46,112 --> 00:35:46,831
+f a olur.
+
+825
+00:35:46,831 --> 00:35:49,512
+f a'yı da getir şurada yerine yaz.
+
+826
+00:35:49,632 --> 00:35:50,851
+Bir artı a.
+
+827
+00:35:51,331 --> 00:35:52,532
+Elen bir artı a kare.
+
+828
+00:35:52,791 --> 00:35:54,351
+Buradan a'yı bulmaya çalışıyorum.
+
+829
+00:35:54,451 --> 00:35:54,891
+Tamam mı?
+
+830
+00:35:55,211 --> 00:35:57,351
+Deneme yanılma yoluyla da yapabilirsin.
+
+831
+00:35:58,451 --> 00:36:00,271
+Biriler gitti şu ifade kaldı.
+
+832
+00:36:00,391 --> 00:36:01,552
+Burada a ne olabilir?
+
+833
+00:36:01,891 --> 00:36:04,711
+Sıfır olursa ancak eşitlik sağlanır değil mi?
+
+834
+00:36:05,351 --> 00:36:06,891
+Ya da bulursun bunu arkadaşlar.
+
+835
+00:36:08,291 --> 00:36:08,991
+Yani ne yaptık?
+
+836
+00:36:09,032 --> 00:36:09,711
+A'yı bulduk.
+
+837
+00:36:09,711 --> 00:36:13,011
+Türevinde sıfırı yerine yazdığımda da ne olacaktır?
+
+838
+00:36:13,052 --> 00:36:13,492
+Bir olur.
+
+839
+00:36:13,771 --> 00:36:14,052
+Değil mi?
+
+840
+00:36:14,052 --> 00:36:19,192
+Ben parantez içinde bilgi olsun diye size şunu inceledim arkadaşlar.
+
+841
+00:36:19,891 --> 00:36:25,351
+Yani şu denklemin a sıfırdan farklı için real sayılarda bir çözümü yoktur.
+
+842
+00:36:25,471 --> 00:36:27,391
+Yani şuradan bulmaya çalışalım bakın.
+
+843
+00:36:28,072 --> 00:36:29,491
+Elen bir artı a kare ne olur?
+
+844
+00:36:29,612 --> 00:36:30,552
+Eksi a olur.
+
+845
+00:36:31,231 --> 00:36:32,871
+Burada bir artı a kare nedir?
+
+846
+00:36:33,011 --> 00:36:35,532
+E üzeri eksi a diye yazılır.
+
+847
+00:36:35,532 --> 00:36:38,552
+A kareyi yalnız bırakırsak şu ifade.
+
+848
+00:36:39,011 --> 00:36:41,011
+Bu ifade de şöyle yazılmaz mı?
+
+849
+00:36:41,271 --> 00:36:43,532
+Bu da kesinlikle sıfırdan küçüktür.
+
+850
+00:36:43,532 --> 00:36:46,572
+Bir kareli ifade sıfırdan küçükse çözüm bulabilir miyiz?
+
+851
+00:36:46,711 --> 00:36:47,672
+İmkansızdır yani.
+
+852
+00:36:48,052 --> 00:36:51,911
+O yüzden bunu görmeniz için şöyle parantez içinde bilgi olarak yazdım.
+
+853
+00:36:52,251 --> 00:36:55,451
+Ama dediğim gibi şurada sen noktayı bulduysan problem yok.
+
+854
+00:36:55,612 --> 00:36:56,951
+Sağlıyor da belgeni zaten.
+
+855
+00:36:57,371 --> 00:36:58,072
+Tamam mı arkadaşlar?
+
+856
+00:36:59,951 --> 00:37:00,351
+Anlıyor.
+
+857
+00:37:00,351 --> 00:37:03,231
+Bu sorulardaki tersini bulmayı bir daha anlatır mısınız?
+
+858
+00:37:03,391 --> 00:37:05,811
+Mesela bir böyle f ha var, f türeva var ya.
+
+859
+00:37:05,991 --> 00:37:07,032
+Bunu ufak bir anlatır mısın?
+
+860
+00:37:07,511 --> 00:37:08,731
+Bu ne demek işte?
+
+861
+00:37:08,911 --> 00:37:11,411
+Ben ders anlatırken de bu formülleri verdik size.
+
+862
+00:37:11,791 --> 00:37:13,351
+Şu noktayı düşünme.
+
+863
+00:37:13,451 --> 00:37:16,431
+Diyelim ki tersinin x'deki değeri eşittir.
+
+864
+00:37:16,532 --> 00:37:19,692
+Bir bölü fonksiyonun türevinde tersini yerine yazmak.
+
+865
+00:37:19,771 --> 00:37:20,172
+Tamam mı?
+
+866
+00:37:20,632 --> 00:37:21,411
+Tersini bulup.
+
+867
+00:37:21,411 --> 00:37:25,971
+Herhangi bir fonksiyonun tersini sorsaydı buraya da bunun tersini bulup yerine yazacaktım.
+
+868
+00:37:26,072 --> 00:37:31,451
+Ama eğer nokta vermişse diyoruz ki herhangi bir işte birdeki değeri ne eşittir?
+
+869
+00:37:31,592 --> 00:37:35,652
+Fonksiyonun türevinin tersindeki işte değerini bulmuş olacaksın.
+
+870
+00:37:35,791 --> 00:37:37,011
+Onu da zaten şurada buluyoruz.
+
+871
+00:37:37,072 --> 00:37:38,492
+Ya da şöyle aklında tut artık.
+
+872
+00:37:38,971 --> 00:37:40,931
+Türevinin a'daki değerini bulacağım.
+
+873
+00:37:41,431 --> 00:37:42,391
+Bunu da nasıl buluyorum?
+
+874
+00:37:42,851 --> 00:37:45,791
+Fonksiyonun tersinin birdeki değerini bakın.
+
+875
+00:37:46,431 --> 00:37:48,271
+Soru şu ya türevi düşünme.
+
+876
+00:37:48,791 --> 00:37:49,471
+A dedim bu.
+
+877
+00:37:49,572 --> 00:37:50,672
+Bu a olsun dedim.
+
+878
+00:37:50,672 --> 00:37:52,991
+Buradan bir f a'ya eşit olmaz mı?
+
+879
+00:37:54,072 --> 00:37:57,411
+Her tarafın f'ini alırsan tersinin f'i neye eşittir?
+
+880
+00:37:57,572 --> 00:37:58,351
+Biri eşittir.
+
+881
+00:37:58,811 --> 00:37:59,711
+Buradan f a olur.
+
+882
+00:37:59,971 --> 00:38:00,532
+E ne yapıyorum?
+
+883
+00:38:00,911 --> 00:38:02,111
+Efa ne demektir?
+
+884
+00:38:02,291 --> 00:38:03,371
+Fonksiyonum da şu değil mi?
+
+885
+00:38:03,692 --> 00:38:05,011
+X gördüğün yeri A yaz.
+
+886
+00:38:05,411 --> 00:38:06,771
+X de yazsa ne fark eder?
+
+887
+00:38:06,971 --> 00:38:08,051
+Bulmak istiyoruz amaç.
+
+888
+00:38:08,431 --> 00:38:11,192
+1 diyorum 1 artı A, ellen 1 artı A kare.
+
+889
+00:38:11,551 --> 00:38:12,611
+Bunu da düzenledim şu.
+
+890
+00:38:12,711 --> 00:38:13,831
+Burada A ne olabilir?
+
+891
+00:38:14,311 --> 00:38:15,371
+Dedim ki A sıfır olur.
+
+892
+00:38:15,451 --> 00:38:17,451
+Bakın sıfırı yazarsam ellen 1 sıfırdır.
+
+893
+00:38:17,911 --> 00:38:19,711
+İşte bu da sıfırdı sağladı.
+
+894
+00:38:19,891 --> 00:38:21,931
+Demek ki A sıfır olmalı diyorum.
+
+895
+00:38:22,511 --> 00:38:25,071
+Eğer bulamıyorsam bu şekilde inceleyeceksin yani.
+
+896
+00:38:25,192 --> 00:38:25,571
+Tamam mı?
+
+897
+00:38:25,631 --> 00:38:27,511
+Sadece sıfır bunu sağlıyor diyoruz.
+
+898
+00:38:27,831 --> 00:38:28,131
+Buldum.
+
+899
+00:38:28,131 --> 00:38:28,971
+O zaman ne diyorum?
+
+900
+00:38:28,971 --> 00:38:32,951
+Bunun bir türevinin birdeki değeri 1 bölü F üstü 0 diyeceğim.
+
+901
+00:38:33,311 --> 00:38:34,692
+Türevi de hazır yukarıda var.
+
+902
+00:38:34,771 --> 00:38:37,891
+X gördüğüm yere sıfırı yazdığımda değerini bulmuş olacağım işte.
+
+903
+00:38:38,351 --> 00:38:38,971
+Tamam mı?
+
+904
+00:38:39,011 --> 00:38:40,111
+Bu şekilde bulacaksınız.
+
+905
+00:38:40,371 --> 00:38:42,351
+Noktaları kesinlikle böyle kullanın.
+
+906
+00:38:42,791 --> 00:38:44,411
+Başka türlü yapamazsınız.
+
+907
+00:38:44,511 --> 00:38:44,911
+Zor olur.
+
+908
+00:38:45,071 --> 00:38:45,471
+Tamam mı?
+
+909
+00:38:46,491 --> 00:38:46,831
+Evet.
+
+910
+00:38:47,411 --> 00:38:47,871
+Gelelim.
+
+911
+00:38:49,571 --> 00:38:51,451
+Şöyle bir soru verilmiş bize arkadaşlar.
+
+912
+00:38:52,131 --> 00:38:52,931
+FX diyor.
+
+913
+00:38:53,192 --> 00:38:55,172
+X üzeri 5 artı 2X.
+
+914
+00:38:56,211 --> 00:38:58,731
+Fonksiyonun tersini de G ile göstermiş.
+
+915
+00:38:58,971 --> 00:39:02,451
+Türevinin G'nin türevinin 3'teki değerini hesaptayınız.
+
+916
+00:39:02,692 --> 00:39:04,311
+Yukarıdaki sorudan bir farkı var mı?
+
+917
+00:39:04,371 --> 00:39:05,211
+Yok aslında değil mi?
+
+918
+00:39:05,611 --> 00:39:07,111
+G üstü eşittir.
+
+919
+00:39:07,631 --> 00:39:09,971
+Türevinin buna eşitse değil mi?
+
+920
+00:39:10,931 --> 00:39:14,791
+Tersinin türevinin 3'teki değerini soruyor aslında bana fonksiyonun.
+
+921
+00:39:15,011 --> 00:39:17,371
+Yine yukarıdaki sorunun aynısı arkadaşlar.
+
+922
+00:39:17,611 --> 00:39:20,011
+Bu birebir olduğunu göstereceğim.
+
+923
+00:39:20,011 --> 00:39:20,652
+Bakın.
+
+924
+00:39:21,291 --> 00:39:22,391
+Önce bir türevini alalım.
+
+925
+00:39:22,491 --> 00:39:23,351
+Adım adım gidelim.
+
+926
+00:39:23,811 --> 00:39:25,771
+5X üzeri 4 artı 2.
+
+927
+00:39:26,051 --> 00:39:26,451
+Bu nedir?
+
+928
+00:39:26,652 --> 00:39:27,251
+Pozitiftir.
+
+929
+00:39:27,951 --> 00:39:28,511
+Artandır.
+
+930
+00:39:28,631 --> 00:39:29,192
+Birebirdir.
+
+931
+00:39:29,291 --> 00:39:29,951
+Tersi vardır.
+
+932
+00:39:30,551 --> 00:39:31,911
+Yukarıdaki soruyu yorumluyoruz.
+
+933
+00:39:31,991 --> 00:39:32,251
+Bakın.
+
+934
+00:39:32,371 --> 00:39:32,871
+Şu nedir?
+
+935
+00:39:32,951 --> 00:39:35,331
+G'nin türevinin 3'teki değeri.
+
+936
+00:39:35,331 --> 00:39:38,131
+F'in tersini 3'teki değerine eşitmiş.
+
+937
+00:39:38,211 --> 00:39:39,931
+Türevinin 3'teki değerine eşittir diyor.
+
+938
+00:39:40,351 --> 00:39:42,131
+Bunu da yukarıdaki formülden diyorum ki.
+
+939
+00:39:42,172 --> 00:39:42,931
+Bu da neye eşitti?
+
+940
+00:39:44,152 --> 00:39:48,091
+Fonksiyonun bir bölü fonksiyonun türevinin a'daki değerine.
+
+941
+00:39:48,251 --> 00:39:50,371
+E şimdi a'yı bulmak istiyoruz değil mi arkadaşlar?
+
+942
+00:39:51,031 --> 00:39:52,271
+Ne olur a sizce?
+
+943
+00:39:53,491 --> 00:39:54,131
+Ne diyeceğim?
+
+944
+00:39:54,751 --> 00:40:00,192
+Şurada fonksiyonun tersinin 3'teki değeri a ise 3 eşittir.
+
+945
+00:40:00,231 --> 00:40:00,971
+F a diyeceğim.
+
+946
+00:40:00,971 --> 00:40:05,231
+Yani şurada a üzeri 5 artı 2 a da a ne olur ki?
+
+947
+00:40:05,331 --> 00:40:06,192
+3 olsun değil mi?
+
+948
+00:40:06,871 --> 00:40:09,051
+İşte yukarıdaki gibi yazdık.
+
+949
+00:40:09,311 --> 00:40:09,991
+A ne olmalı?
+
+950
+00:40:10,031 --> 00:40:10,652
+1 olmalı.
+
+951
+00:40:11,011 --> 00:40:12,011
+Ya da bunu ne yapacaksın?
+
+952
+00:40:12,152 --> 00:40:13,231
+Uzun uzun çözeceksin.
+
+953
+00:40:13,391 --> 00:40:16,751
+Yani a üzeri 5 artı 2 a eksi 3 eşit 0 dersin.
+
+954
+00:40:17,051 --> 00:40:18,791
+İşte 5. dereceden bir polinom.
+
+955
+00:40:18,871 --> 00:40:20,431
+Buradan kökleri bulmaya çalışsın.
+
+956
+00:40:20,591 --> 00:40:21,152
+Gerek yok.
+
+957
+00:40:21,271 --> 00:40:22,771
+Yani zaten 1 bunu sağladı.
+
+958
+00:40:22,971 --> 00:40:23,431
+Tamam mı?
+
+959
+00:40:23,951 --> 00:40:24,831
+O halde ne diyorum?
+
+960
+00:40:25,491 --> 00:40:27,371
+Getirip tekrar yerine yazarsak.
+
+961
+00:40:27,951 --> 00:40:30,611
+G'nin türevinin 3'teki değeri eşittir dedik.
+
+962
+00:40:30,611 --> 00:40:33,511
+1 bölü fonksiyonun türevinin 1'deki değeri.
+
+963
+00:40:33,871 --> 00:40:34,671
+Türevi de şuydu.
+
+964
+00:40:34,671 --> 00:40:36,671
+X yerine 1 yazarsam 7 olur.
+
+965
+00:40:36,851 --> 00:40:39,931
+İşte 1 bölü 7 olarak elde edilir diyoruz.
+
+966
+00:40:40,211 --> 00:40:43,931
+Bunlar bu yazdıklarımın hepsi aslında bir test sorusu olacak sorular arkadaşlar.
+
+967
+00:40:44,192 --> 00:40:44,631
+Tamam mı?
+
+968
+00:40:46,351 --> 00:40:46,731
+Evet.
+
+969
+00:40:47,031 --> 00:40:49,251
+Zaten bulanlar hemen yazıyorlardı.
+
+970
+00:40:49,351 --> 00:40:50,131
+Görüyorum oradan.
+
+971
+00:40:52,131 --> 00:40:52,391
+Evet.
+
+972
+00:40:52,391 --> 00:40:54,071
+Şimdi bir tane de böyle bir soruya bakalım.
+
+973
+00:40:54,071 --> 00:40:57,551
+X sıfırdan küçük eşit değerleri için.
+
+974
+00:40:57,751 --> 00:40:59,591
+Fx kök içinde 1 eksi x artı.
+
+975
+00:40:59,591 --> 00:41:04,692
+x bölü 2 eksi 1 fonksiyonunun artan azalan olduğunu araştırınız.
+
+976
+00:41:04,692 --> 00:41:07,571
+Biz artan azalanlığa nasıl bakıyorduk arkadaşlar?
+
+977
+00:41:08,192 --> 00:41:13,311
+Türevinin pozitif olduğu yerde artan, negatif olduğu yerde azalan diyorduk.
+
+978
+00:41:13,631 --> 00:41:16,391
+O zaman önce bunun türevine bakmalıyım ben.
+
+979
+00:41:17,831 --> 00:41:18,291
+Bakalım.
+
+980
+00:41:18,951 --> 00:41:19,831
+Bunun türevi ne olur?
+
+981
+00:41:19,831 --> 00:41:21,291
+Kökün türevi içinin türevi.
+
+982
+00:41:21,371 --> 00:41:22,751
+Eksi 1 bölü 2 kök.
+
+983
+00:41:23,271 --> 00:41:23,511
+Değil mi?
+
+984
+00:41:23,611 --> 00:41:24,351
+1 eksi x.
+
+985
+00:41:24,871 --> 00:41:26,491
+Artı bunun türevi de 1 bölü 2.
+
+986
+00:41:26,911 --> 00:41:29,751
+Buradan payda eşitleyip düzenlersek bunun ne olur?
+
+987
+00:41:29,991 --> 00:41:31,271
+Kök içinde 1 eksi x.
+
+988
+00:41:31,611 --> 00:41:33,011
+Eksi 1 bölü 2 tane.
+
+989
+00:41:33,611 --> 00:41:36,692
+Kök içinde 1 eksi x olur.
+
+990
+00:41:36,692 --> 00:41:42,351
+Şimdi yukarıdaki ifadeyi de kullanırsak yani aralığımız ne verilmiş aslında?
+
+991
+00:41:43,211 --> 00:41:45,071
+Eksi sonsuza 0 aralığı.
+
+992
+00:41:45,251 --> 00:41:50,231
+Yani x sıfırdan küçük olduğunda şu köklü ifadenin içi ne olur?
+
+993
+00:41:50,231 --> 00:41:55,171
+Şu pay pozitif mi olur, negatif mi olur diye onu yorumlamamız gerekir.
+
+994
+00:41:55,991 --> 00:41:56,251
+Evet.
+
+995
+00:41:56,491 --> 00:41:57,251
+Ne olur sizce?
+
+996
+00:41:57,780 --> 00:42:03,260
+x sıfırdan küçük olduğunda şu pay pozitif midir, negatif midir?
+
+997
+00:42:06,963 --> 00:42:08,203
+Pozitiftir hocam.
+
+998
+00:42:08,603 --> 00:42:08,844
+Evet.
+
+999
+00:42:09,143 --> 00:42:09,744
+Tamam.
+
+1000
+00:42:10,423 --> 00:42:10,724
+Evet.
+
+1001
+00:42:10,923 --> 00:42:11,784
+Pozitif olur değil mi?
+
+1002
+00:42:12,244 --> 00:42:13,083
+Mantıklı çünkü.
+
+1003
+00:42:13,523 --> 00:42:14,103
+Şu ne olur?
+
+1004
+00:42:14,443 --> 00:42:15,983
+Birden büyük olur şu ifade.
+
+1005
+00:42:16,384 --> 00:42:19,983
+Bu ifade de pozitif olduğunda o zaman ne diyeceğim?
+
+1006
+00:42:20,523 --> 00:42:21,744
+Zaten payda pozitif.
+
+1007
+00:42:22,304 --> 00:42:27,003
+Verilen ifadenin türevi aralıkta pozitiftir.
+
+1008
+00:42:27,163 --> 00:42:28,983
+Yani artandır diyeceğiz.
+
+1009
+00:42:29,804 --> 00:42:30,804
+Bu kadar soru.
+
+1010
+00:42:31,244 --> 00:42:32,503
+Artan bir fonksiyondur.
+
+1011
+00:42:32,844 --> 00:42:33,563
+Tamam mı arkadaşlar?
+
+1012
+00:42:34,284 --> 00:42:36,284
+Artan azalanlığa nasıl bakıyoruz?
+
+1013
+00:42:36,284 --> 00:42:37,063
+Türeve bakıyoruz.
+
+1014
+00:42:37,163 --> 00:42:42,423
+Pozitif olduğu yerlerde artan, negatif olduğu yerlerde azalandır diyoruz.
+
+1015
+00:42:42,623 --> 00:42:44,483
+İstediği şekilde soruları sorsunlar.
+
+1016
+00:42:44,563 --> 00:42:45,943
+Biz kuralı biliyoruz.
+
+1017
+00:42:46,284 --> 00:42:49,463
+Şimdi bu da bir tane de böyle bir soru.
+
+1018
+00:42:49,623 --> 00:42:50,903
+İşaretim öylesine.
+
+1019
+00:42:51,103 --> 00:42:53,083
+Diğer sırta kaldığım yerde işaretlemişim.
+
+1020
+00:42:53,224 --> 00:42:53,824
+Problem yok.
+
+1021
+00:42:54,384 --> 00:42:54,623
+Evet.
+
+1022
+00:42:55,023 --> 00:42:56,983
+Şimdi gelelim bu sorunun şöyle.
+
+1023
+00:42:57,963 --> 00:43:00,083
+R'den R'ye bir fonksiyon verilmiş.
+
+1024
+00:43:00,583 --> 00:43:03,663
+G'nin birdeki değeri türevinin birdeki değerini eşitmiş.
+
+1025
+00:43:03,663 --> 00:43:07,503
+Dört şartlarını sağlayan türevlenebilen bir fonksiyon olsun.
+
+1026
+00:43:07,503 --> 00:43:13,683
+Ve F fonksiyonu da gene real sayılardan real sayılara bu şekilde tanımlı olsun.
+
+1027
+00:43:14,224 --> 00:43:23,183
+Linear yaklaşım veya diferansiyel hesap kullanarak F'in 1.25'lik değerinin yaklaşık değerini bulunuz diyor.
+
+1028
+00:43:23,183 --> 00:43:25,183
+Evet.
+
+1029
+00:43:26,003 --> 00:43:27,943
+Bunlar da böyle güzel sorular aslında.
+
+1030
+00:43:28,943 --> 00:43:30,244
+Şimdi ne yapmam gerekir?
+
+1031
+00:43:31,423 --> 00:43:33,324
+Bunu ister linear yaklaşımı kullan.
+
+1032
+00:43:33,423 --> 00:43:34,284
+Çünkü veya diyor.
+
+1033
+00:43:34,284 --> 00:43:37,324
+Ben diyelim ki bunu linear yaklaşımla gitmek istiyorum.
+
+1034
+00:43:37,804 --> 00:43:39,403
+Önce linearizasyon nedir?
+
+1035
+00:43:39,824 --> 00:43:43,663
+Bir fonksiyonun bir fonksiyona ihtiyacın var değil mi?
+
+1036
+00:43:43,744 --> 00:43:44,443
+Bir de noktaya.
+
+1037
+00:43:44,864 --> 00:43:45,824
+Benden ne istiyor?
+
+1038
+00:43:45,923 --> 00:43:48,523
+F'in 1.25'teki değerini hesapla diyor.
+
+1039
+00:43:48,523 --> 00:43:51,244
+O zaman ben verilen fonksiyonum hazır zaten.
+
+1040
+00:43:51,403 --> 00:43:52,623
+Şurada verilmiş fonksiyon.
+
+1041
+00:43:52,884 --> 00:43:57,344
+Bu fonksiyonun hangi noktadaki linearleştirmesini yazmalıyım sizce arkadaşlar?
+
+1042
+00:44:01,423 --> 00:44:02,463
+Bir değil mi?
+
+1043
+00:44:02,543 --> 00:44:02,683
+Evet.
+
+1044
+00:44:03,483 --> 00:44:03,784
+Pardon.
+
+1045
+00:44:04,344 --> 00:44:05,284
+O zaman ne yapıyorum?
+
+1046
+00:44:05,423 --> 00:44:09,963
+İlk önce verilen şu fonksiyonu bir noktasında linearizasyonunu yazacağım.
+
+1047
+00:44:10,123 --> 00:44:11,423
+Sonra düşünürüm ne yapacağım?
+
+1048
+00:44:11,603 --> 00:44:12,983
+Bakın linear yaklaşım dedim.
+
+1049
+00:44:13,483 --> 00:44:14,523
+Lx diyorum linearizasyonu.
+
+1050
+00:44:15,083 --> 00:44:15,523
+Dün de konuşmuştuk.
+
+1051
+00:44:15,523 --> 00:44:17,063
+Ne diyeceğim?
+
+1052
+00:44:17,503 --> 00:44:17,903
+F'in 1.
+
+1053
+00:44:18,043 --> 00:44:19,943
+T doğrusu'nun denklemiydi zaten.
+
+1054
+00:44:20,103 --> 00:44:21,224
+F'in 1'deki değeri.
+
+1055
+00:44:21,603 --> 00:44:22,824
+Türevinin 1'deki değeri.
+
+1056
+00:44:22,923 --> 00:44:24,324
+Çarpı x-1 diyorum.
+
+1057
+00:44:24,643 --> 00:44:24,844
+Tamam.
+
+1058
+00:44:25,123 --> 00:44:28,583
+O zaman yapmam gereken fonksiyonun 1'deki değeri nedir?
+
+1059
+00:44:28,903 --> 00:44:30,003
+Fonksiyonum şu değil midir?
+
+1060
+00:44:30,083 --> 00:44:31,443
+Bunun 1'deki değeri ne olur?
+
+1061
+00:44:31,923 --> 00:44:34,264
+G'nin 1'deki değeri 4 verilmiş.
+
+1062
+00:44:34,403 --> 00:44:35,744
+Payda da 1 dersem.
+
+1063
+00:44:36,804 --> 00:44:37,983
+2 olur değil mi?
+
+1064
+00:44:38,543 --> 00:44:39,463
+İşte yazdım.
+
+1065
+00:44:40,183 --> 00:44:41,344
+Bir de neye ihtiyacım var?
+
+1066
+00:44:41,824 --> 00:44:42,864
+Burada türevi.
+
+1067
+00:44:42,864 --> 00:44:47,523
+İşte buradaki türevi dikkat ederseniz yine bir kesir verilmiş bir de fonksiyon verilmiş.
+
+1068
+00:44:47,983 --> 00:44:49,824
+Ona dikkat ediyoruz türevi alırken.
+
+1069
+00:44:50,324 --> 00:44:51,463
+Bu karışıklık şurada.
+
+1070
+00:44:51,963 --> 00:44:52,083
+Evet.
+
+1071
+00:44:52,683 --> 00:44:53,203
+Pardon.
+
+1072
+00:44:53,203 --> 00:44:58,023
+Ne yapıyorum şimdi?
+
+1073
+00:44:58,163 --> 00:44:59,384
+Payın türevi diyorum bakın.
+
+1074
+00:44:59,744 --> 00:45:00,943
+Payda bir fonksiyon var.
+
+1075
+00:45:01,043 --> 00:45:01,844
+Buna dikkat ediyorum.
+
+1076
+00:45:02,023 --> 00:45:04,183
+Fonksiyonun türevi çarpı içinin türevi bakın.
+
+1077
+00:45:04,623 --> 00:45:06,923
+2x çarpı g üstü dedik.
+
+1078
+00:45:07,123 --> 00:45:07,603
+Yazdık.
+
+1079
+00:45:07,983 --> 00:45:08,923
+Çarpı payda.
+
+1080
+00:45:09,244 --> 00:45:12,443
+Eksi pay çarpı paydanın türevi ne gelir?
+
+1081
+00:45:12,543 --> 00:45:13,284
+2x gelir.
+
+1082
+00:45:13,583 --> 00:45:14,744
+Bölü paydanın karesi.
+
+1083
+00:45:14,864 --> 00:45:15,063
+İşte.
+
+1084
+00:45:15,503 --> 00:45:15,784
+Bitti.
+
+1085
+00:45:16,103 --> 00:45:18,183
+Hiç bunu düzenlemeye bile gerek yok artık.
+
+1086
+00:45:18,183 --> 00:45:19,804
+Çünkü klasik sınav değil.
+
+1087
+00:45:20,163 --> 00:45:20,663
+Ne yapacağım?
+
+1088
+00:45:22,003 --> 00:45:22,643
+Pardon.
+
+1089
+00:45:22,784 --> 00:45:23,384
+Neyi soruyorum?
+
+1090
+00:45:23,503 --> 00:45:24,724
+Hani türevin birdeki değeri.
+
+1091
+00:45:24,804 --> 00:45:26,203
+X gördüğüm yere 1 yazıyorum.
+
+1092
+00:45:26,384 --> 00:45:26,703
+Bu kadar.
+
+1093
+00:45:27,583 --> 00:45:28,483
+Bakın yazdık.
+
+1094
+00:45:28,884 --> 00:45:29,563
+2 olur.
+
+1095
+00:45:30,083 --> 00:45:31,824
+Şurada türevin birdeki değeri de.
+
+1096
+00:45:32,203 --> 00:45:33,003
+Yazayım önce.
+
+1097
+00:45:33,163 --> 00:45:33,423
+Pardon.
+
+1098
+00:45:33,603 --> 00:45:33,943
+Yazdım.
+
+1099
+00:45:33,983 --> 00:45:34,744
+Bu da 2 oldu.
+
+1100
+00:45:34,903 --> 00:45:38,443
+Eksi 2 çarpı g bir bölü paydanın karesi şu.
+
+1101
+00:45:38,864 --> 00:45:41,063
+O zaman bakın türevi 4 verilmişti.
+
+1102
+00:45:41,143 --> 00:45:41,864
+Şurada yazdık.
+
+1103
+00:45:41,923 --> 00:45:42,563
+2, 4.
+
+1104
+00:45:43,463 --> 00:45:44,224
+Buradan ne gelir?
+
+1105
+00:45:45,523 --> 00:45:46,983
+16 gelir değil mi?
+
+1106
+00:45:46,983 --> 00:45:48,804
+8 bölü 4.
+
+1107
+00:45:48,983 --> 00:45:52,123
+Yani sonuçta türevin birdeki değerin 2 olarak bulduk.
+
+1108
+00:45:52,784 --> 00:45:54,563
+O halde getirip şurada yerine yazıyoruz.
+
+1109
+00:45:54,703 --> 00:45:54,983
+Bakın.
+
+1110
+00:45:55,987 --> 00:45:58,768
+2 artı 2 çarpı x eksi 1 bu neydi?
+
+1111
+00:45:59,087 --> 00:46:01,107
+Verilen noktadaki linereleştirmeydi.
+
+1112
+00:46:01,187 --> 00:46:03,527
+Bu da yaklaşık olarak fx'e eşit diyorduk.
+
+1113
+00:46:03,927 --> 00:46:05,167
+Bizden ne istiyor arkadaşlar?
+
+1114
+00:46:05,387 --> 00:46:07,087
+1.25'in değerini istiyor.
+
+1115
+00:46:07,147 --> 00:46:07,847
+O zaman ne diyorum?
+
+1116
+00:46:07,987 --> 00:46:10,327
+x gördüğüm yere 1.25 yazmalıyım.
+
+1117
+00:46:10,547 --> 00:46:12,907
+Bu da yaklaşık olarak linereleştirme eşittir.
+
+1118
+00:46:12,907 --> 00:46:16,907
+x yerine 1.25'i yazarsam şurada ne kalacak?
+
+1119
+00:46:17,027 --> 00:46:24,567
+0.25 bununla da çarpıp düzenlediğimde 2.5 diye yazarız.
+
+1120
+00:46:24,567 --> 00:46:26,507
+2.5 yani tamam mı arkadaşlar?
+
+1121
+00:46:26,947 --> 00:46:28,407
+Yani şu satırı yazarsınız.
+
+1122
+00:46:28,607 --> 00:46:32,407
+Amaç burada verildiğinde ilk önce nasıl düşünmemiz gerektiğini.
+
+1123
+00:46:32,507 --> 00:46:32,847
+Bu kadar.
+
+1124
+00:46:33,667 --> 00:46:36,487
+Bunu diferansiyelle de siz kendiniz ödev olarak yapın.
+
+1125
+00:46:37,248 --> 00:46:40,748
+Diferansiyelle de yapsan gene senin fonksiyonun bu olacak arkadaşlar.
+
+1126
+00:46:40,748 --> 00:46:43,027
+x dediğin noktanda 1 olur.
+
+1127
+00:46:43,327 --> 00:46:45,547
+Delta x'inde gene ne olacaktır bu durumda?
+
+1128
+00:46:45,707 --> 00:46:47,847
+0.25 olur delta x dediğinde.
+
+1129
+00:46:48,227 --> 00:46:50,527
+İşte fonksiyonun gerçek değerini yazarsın.
+
+1130
+00:46:51,227 --> 00:46:53,748
+Fonksiyondaki gerçek değişikliği yazarsın.
+
+1131
+00:46:53,748 --> 00:46:56,447
+Sonra o da yaklaşık olarak diferansiyelle eşitlersin.
+
+1132
+00:46:56,507 --> 00:46:59,527
+Diferansiyelini hesaplayıp aynı sonucu bulursunuz arkadaşlar.
+
+1133
+00:47:00,007 --> 00:47:00,927
+O size ödev olsun.
+
+1134
+00:47:01,707 --> 00:47:02,887
+Evet devam edelim.
+
+1135
+00:47:05,627 --> 00:47:10,547
+Şimdi sinüs hiperbolik x fonksiyonu 3 bölü 4 ise diyor.
+
+1136
+00:47:10,687 --> 00:47:11,707
+x'in değeri nedir?
+
+1137
+00:47:11,788 --> 00:47:14,167
+Bu da hiperbolik fonksiyonlara dikkat ederseniz.
+
+1138
+00:47:14,387 --> 00:47:15,147
+Nasıl vermiştik?
+
+1139
+00:47:15,667 --> 00:47:17,807
+Üstel fonksiyonlarla ifade etmiştik.
+
+1140
+00:47:18,187 --> 00:47:20,927
+Sinüs hiperbolik x'in üstel ifadesi neydi?
+
+1141
+00:47:20,927 --> 00:47:22,768
+Hatırlayalım bakın şurada.
+
+1142
+00:47:23,327 --> 00:47:25,967
+E üzeri x, eksi e üzeri eksi x bölü 2 idi.
+
+1143
+00:47:26,067 --> 00:47:27,707
+Kosinüs de de artıydı.
+
+1144
+00:47:28,147 --> 00:47:32,307
+Ve tanjant, kotanjant hiperbolikleri de sinüs kosinüsleri kullanarak yazmıştık.
+
+1145
+00:47:32,407 --> 00:47:34,367
+Zaten notlarınız elinizde hazır olacak.
+
+1146
+00:47:34,768 --> 00:47:37,067
+Şimdi burada amacımız eksi bulmak.
+
+1147
+00:47:37,627 --> 00:47:38,487
+İfadem şu.
+
+1148
+00:47:38,627 --> 00:47:40,187
+Şuradan bulamadığım için ne yaptım?
+
+1149
+00:47:40,247 --> 00:47:42,007
+Bunu üstel olarak ifade ettim.
+
+1150
+00:47:42,007 --> 00:47:43,127
+Buradan ne yapıyorum?
+
+1151
+00:47:43,227 --> 00:47:50,307
+İşler dışlar çarpımından 4 çarpı e üzeri x, eksi 4 çarpı e üzeri x, eşittir 6 dedik.
+
+1152
+00:47:50,427 --> 00:47:50,847
+Tamam mı?
+
+1153
+00:47:51,447 --> 00:47:53,027
+İkilerle de sadeleşsin.
+
+1154
+00:47:53,167 --> 00:47:54,107
+Şu hale getirdim.
+
+1155
+00:47:54,987 --> 00:47:57,947
+Şimdi burada bunu çözebilmek için ne dedim?
+
+1156
+00:47:58,127 --> 00:47:59,887
+Her tarafı e üzeri x ile çarpalım.
+
+1157
+00:48:00,187 --> 00:48:01,167
+Çarparsam ne olur?
+
+1158
+00:48:01,527 --> 00:48:03,347
+2 çarpı e üzeri 2x olur.
+
+1159
+00:48:04,027 --> 00:48:06,607
+Eksi 2, eksi 3 çarpı e üzeri x.
+
+1160
+00:48:06,827 --> 00:48:06,987
+Şu.
+
+1161
+00:48:07,987 --> 00:48:09,967
+Bunu bir kez daha şöyle düzgün yazdım.
+
+1162
+00:48:09,967 --> 00:48:12,927
+Bunu aslında görebiliyoruz ama göremezsek dedim.
+
+1163
+00:48:13,367 --> 00:48:15,567
+E üzeri x'e bir t'ye dönüşümü yapmış olalım.
+
+1164
+00:48:15,907 --> 00:48:17,127
+Yani ne yaptım?
+
+1165
+00:48:17,187 --> 00:48:19,107
+2 t kare olur şuraya yazarsam.
+
+1166
+00:48:19,327 --> 00:48:21,387
+Eksi 3 t, eksi 2 eşittir 0.
+
+1167
+00:48:21,567 --> 00:48:22,727
+İşte bu nedir?
+
+1168
+00:48:22,807 --> 00:48:23,967
+İkinci dereceden bir polinomdur.
+
+1169
+00:48:24,707 --> 00:48:27,268
+Burada da zaten ikinci dereceden bir polinom olduğu gözüküyor.
+
+1170
+00:48:27,347 --> 00:48:28,827
+Ama göremiyorsak buna alışkınız.
+
+1171
+00:48:28,947 --> 00:48:29,967
+Böyle yazmış olalım.
+
+1172
+00:48:30,347 --> 00:48:33,027
+Bunun şimdi köklerini doğrudan yazamazsak dedim.
+
+1173
+00:48:33,127 --> 00:48:34,227
+Ben uzun uzun yazdım.
+
+1174
+00:48:34,347 --> 00:48:36,147
+Yani t1 ikinci kök diyorum.
+
+1175
+00:48:36,627 --> 00:48:37,167
+Ne diyorduk?
+
+1176
+00:48:37,167 --> 00:48:41,987
+İşte a kare artı bx artı c şeklinde bir polinom verildiğinde ne diyoruz?
+
+1177
+00:48:42,067 --> 00:48:42,967
+Eksi b değil mi?
+
+1178
+00:48:43,387 --> 00:48:45,127
+O zaman 3 olur şurası.
+
+1179
+00:48:45,347 --> 00:48:48,367
+Artı eksi kök içinde b kare 9.
+
+1180
+00:48:48,867 --> 00:48:50,907
+Eksi 4 ac değil mi?
+
+1181
+00:48:50,967 --> 00:48:51,367
+Ne olur?
+
+1182
+00:48:51,887 --> 00:48:53,627
+Artı 16 olur.
+
+1183
+00:48:54,007 --> 00:48:55,268
+Bölü 2a.
+
+1184
+00:48:55,627 --> 00:48:55,748
+Şu.
+
+1185
+00:48:56,387 --> 00:48:56,987
+Delta'dan.
+
+1186
+00:48:57,647 --> 00:48:57,887
+Değil mi?
+
+1187
+00:48:58,207 --> 00:49:00,167
+İkinci dereceden polinomun köklerini böyle bulurduk.
+
+1188
+00:49:00,167 --> 00:49:02,987
+Bunu da düzenlersek bu 25 olur.
+
+1189
+00:49:03,067 --> 00:49:05,107
+5 olarak dışarıya çıktı kökün dışına.
+
+1190
+00:49:05,647 --> 00:49:07,288
+3 artı eksi 5 bölü 4.
+
+1191
+00:49:07,607 --> 00:49:08,987
+Buradan iki tane kök bulacağım.
+
+1192
+00:49:09,407 --> 00:49:10,507
+Bir toplam alırsam.
+
+1193
+00:49:11,367 --> 00:49:13,228
+8 bölü 4'ten 2 olacak.
+
+1194
+00:49:14,067 --> 00:49:15,167
+Eksiyi kullanırsam.
+
+1195
+00:49:15,427 --> 00:49:16,248
+Eksi 1 bölü 2.
+
+1196
+00:49:16,487 --> 00:49:17,907
+İşte bir tane kökü 2.
+
+1197
+00:49:18,047 --> 00:49:20,667
+Diğer kökü de eksi 1 bölü 2 diyeceğiz.
+
+1198
+00:49:20,667 --> 00:49:24,587
+O zaman getirip çarpan olarak yazarsak şöyle yazardık değil mi?
+
+1199
+00:49:24,647 --> 00:49:25,387
+T eksi 2.
+
+1200
+00:49:25,748 --> 00:49:28,107
+T artı 1 bölü 2 diye yazarız.
+
+1201
+00:49:28,567 --> 00:49:29,447
+T'lerde neydi?
+
+1202
+00:49:29,527 --> 00:49:30,527
+E üzeri x değil miydi?
+
+1203
+00:49:31,127 --> 00:49:32,487
+Onları yerine yazdık.
+
+1204
+00:49:33,167 --> 00:49:35,427
+İşte buradan ne yapıyorum?
+
+1205
+00:49:35,587 --> 00:49:36,867
+Bir tane köküm nedir?
+
+1206
+00:49:36,947 --> 00:49:37,647
+E üzeri x.
+
+1207
+00:49:38,187 --> 00:49:38,487
+Pardon.
+
+1208
+00:49:38,607 --> 00:49:39,347
+E üzeri x neydi?
+
+1209
+00:49:39,427 --> 00:49:39,887
+2 oldu.
+
+1210
+00:49:39,987 --> 00:49:40,867
+X buradan ne olur?
+
+1211
+00:49:41,007 --> 00:49:41,768
+Elen 2 olur.
+
+1212
+00:49:42,447 --> 00:49:43,207
+Diğeri de nedir?
+
+1213
+00:49:43,288 --> 00:49:44,467
+Şuradan düzenlersen.
+
+1214
+00:49:44,687 --> 00:49:46,207
+E üzeri x de eksi 1 bölü 2.
+
+1215
+00:49:46,288 --> 00:49:49,107
+Negatif olamayacağına göre bu benim işimi görmez.
+
+1216
+00:49:49,107 --> 00:49:50,967
+Burada x sadece ne diyorum?
+
+1217
+00:49:51,387 --> 00:49:52,987
+Elen 2'dir diyorum.
+
+1218
+00:49:53,487 --> 00:49:54,228
+Tamam mı arkadaşlar?
+
+1219
+00:49:54,931 --> 00:50:02,811
+Bu şekilde böyle bir ifade verildiğinde x'i üstel olarak yazdık. Daha kolay bulmuş olduk arkadaşlar.
+
+1220
+00:50:04,051 --> 00:50:06,331
+Evet, şimdi bir tane de şöyle alalım.
+
+1221
+00:50:08,091 --> 00:50:21,271
+Şöyle diyor soruda, sıkıştırma ya da sandviç teoremini kullanarak limit x sonsuza giderken 1-kosinüs px bölü 1 artı x kare eşittir 0 olduğunu gösteriniz.
+
+1222
+00:50:21,271 --> 00:50:22,271
+Tamam mı?
+
+1223
+00:50:23,491 --> 00:50:28,411
+Şimdi sandviç teoremini hatırlarsak, 3 tane eşitsizlik yazmıştık.
+
+1224
+00:50:28,631 --> 00:50:32,431
+İşte fx, küçük eşit gx, küçük eşit hx diyelim.
+
+1225
+00:50:32,771 --> 00:50:37,711
+Burada da öyle bir eşitsizlik yazmalıyım ki sandviç teoremini uygulayabilelim.
+
+1226
+00:50:37,951 --> 00:50:43,391
+Burada da yapmam gereken kosinüs fonksiyonunun değişim aralığından giderek hareket etmeliyiz değil mi?
+
+1227
+00:50:43,771 --> 00:50:45,831
+Kosinüs fonksiyonunun neydi değişim aralığı?
+
+1228
+00:50:46,231 --> 00:50:47,971
+Eksi 1'e artı 1'di değil mi?
+
+1229
+00:50:47,971 --> 00:50:50,731
+Oradan giderek yazmaya çalışalım bakın.
+
+1230
+00:50:51,271 --> 00:50:54,491
+Her x real değer için kosinüs fonksiyonunun değişik aralığı?
+
+1231
+00:50:54,491 --> 00:50:55,631
+Her x real değer için kosinüs x eksi 1 ile artı 1 aralığında değişir demiştik.
+
+1232
+00:50:55,692 --> 00:50:56,451
+Onu biliyoruz.
+
+1233
+00:50:56,771 --> 00:50:59,451
+Benzer şekilde gene kosinüs px de aynı şekilde.
+
+1234
+00:50:59,731 --> 00:51:00,171
+Tamam mı?
+
+1235
+00:51:00,192 --> 00:51:00,311
+Şu.
+
+1236
+00:51:02,211 --> 00:51:03,571
+Bu böylesi, bu da böyleydi.
+
+1237
+00:51:04,031 --> 00:51:05,211
+Şimdi ne yapmalıyım?
+
+1238
+00:51:05,291 --> 00:51:08,711
+Şimdi soruya bakarak adım adım yazmaya çalışacağım eşitsizliğimi.
+
+1239
+00:51:09,231 --> 00:51:11,531
+O zaman bir tane de eksiye ihtiyacım var.
+
+1240
+00:51:11,531 --> 00:51:12,531
+her tarafın eksiye ihtiyacım var.
+
+1241
+00:51:12,531 --> 00:51:13,991
+Her tarafın eksiyle çarparsam bu ne olur?
+
+1242
+00:51:15,411 --> 00:51:16,271
+Eksi 1.
+
+1243
+00:51:16,611 --> 00:51:18,971
+Ama burada yazmış halini getirdim arkadaşlar.
+
+1244
+00:51:24,788 --> 00:51:28,867
+Şimdi eksiyle çarptığımda bir küçük eksi kosünüs pi x değil mi?
+
+1245
+00:51:29,307 --> 00:51:31,307
+Ama eşitsizliklerimiz yön değiştirecek.
+
+1246
+00:51:31,407 --> 00:51:31,768
+Eksi.
+
+1247
+00:51:32,108 --> 00:51:33,228
+Onun için de bunu ne yaparım?
+
+1248
+00:51:34,048 --> 00:51:35,347
+Şu şekilde düzgün yazdım.
+
+1249
+00:51:35,608 --> 00:51:36,987
+Yani yer değiştirdim.
+
+1250
+00:51:37,548 --> 00:51:39,748
+Eksi bir küçüktür değil mi?
+
+1251
+00:51:41,188 --> 00:51:44,088
+Eksi kosünüs pi x o da küçük eşit bir.
+
+1252
+00:51:44,507 --> 00:51:44,788
+Tamam.
+
+1253
+00:51:45,188 --> 00:51:46,648
+Şimdi neye ihtiyacım var?
+
+1254
+00:51:46,648 --> 00:51:49,007
+Bir eksi kosünüs pi x'i.
+
+1255
+00:51:49,088 --> 00:51:52,527
+O zaman bu eşitsizin her tarafına biri eklersem ne olur?
+
+1256
+00:51:53,068 --> 00:51:54,307
+Sıfır olur değil mi?
+
+1257
+00:51:54,307 --> 00:51:57,748
+Küçük eşit bir eksi kosünüs pi x küçük eşit iki olur.
+
+1258
+00:51:58,347 --> 00:51:58,907
+Bu da tamam.
+
+1259
+00:51:59,568 --> 00:52:00,548
+Sonra ne yapmalıyım?
+
+1260
+00:52:01,128 --> 00:52:05,967
+Eşitsizliğin her tarafını bir artı x kareye bölersem yine eşitsizliğim değişmez.
+
+1261
+00:52:06,088 --> 00:52:07,288
+Çünkü pozitif olduğu için.
+
+1262
+00:52:07,788 --> 00:52:08,907
+Onu da yazdım bakın.
+
+1263
+00:52:09,148 --> 00:52:09,327
+Şu.
+
+1264
+00:52:11,088 --> 00:52:11,427
+Bitti.
+
+1265
+00:52:11,427 --> 00:52:17,608
+İşte benim sandviç teorimini uygulayabilmek için f, g, h dediğim üç tane eşitsizliğim var.
+
+1266
+00:52:17,728 --> 00:52:18,427
+Şimdi ne yapmalıyım?
+
+1267
+00:52:18,748 --> 00:52:21,927
+Her tarafın x sonsuza giderken limitini almalıyım.
+
+1268
+00:52:21,927 --> 00:52:25,748
+Limit x sonsuza giderken dedim sıfır küçük eşit limit.
+
+1269
+00:52:25,867 --> 00:52:27,148
+Bunu zaten bana soruyor.
+
+1270
+00:52:27,588 --> 00:52:31,748
+Küçük eşit limit x sonsuza giderken iki bölü bir artı x'in karesidir.
+
+1271
+00:52:32,108 --> 00:52:33,728
+Bu sol taraf zaten sıfır.
+
+1272
+00:52:33,867 --> 00:52:35,168
+Ortadakini soruyordu bana.
+
+1273
+00:52:35,588 --> 00:52:37,467
+Sağ tarafa dikkat edersek o da ne olur?
+
+1274
+00:52:37,807 --> 00:52:38,648
+Sıfır olur değil mi?
+
+1275
+00:52:38,648 --> 00:52:39,788
+O zaman ne diyorum?
+
+1276
+00:52:40,288 --> 00:52:43,688
+Sandviç teoremine göre verilen ifadenin limiti nedir?
+
+1277
+00:52:44,108 --> 00:52:45,347
+Sıfırdır diyeceğim.
+
+1278
+00:52:46,027 --> 00:52:47,007
+Anlaşıldı mı arkadaşlar?
+
+1279
+00:52:48,648 --> 00:52:48,967
+Evet.
+
+1280
+00:52:49,768 --> 00:52:52,068
+Şimdi burada biraz ara verelim arkadaşlar.
+
+1281
+00:52:52,487 --> 00:52:53,068
+Devam edelim.
+
+1282
+00:52:53,307 --> 00:52:54,307
+Kaç dakika ara verelim?
+
+1283
+00:52:54,847 --> 00:52:55,967
+10 dakika yeterli midir?
+
+1284
+00:52:58,188 --> 00:52:58,768
+Evet.
+
+1285
+00:52:58,847 --> 00:53:00,367
+Bir 10 dakika ara verelim arkadaşlar.
+
+1286
+00:53:00,588 --> 00:53:00,987
+Tamam mı?
+
+1287
+00:53:01,927 --> 00:53:02,927
+Hocam bir şey soru.
+
+1288
+00:53:03,027 --> 00:53:03,987
+Buyurun.
+
+1289
+00:53:04,708 --> 00:53:09,768
+Bir fakşonun tersinin olması için mesela birebir ve artan olması mı gerekiyor?
+
+1290
+00:53:10,387 --> 00:53:10,688
+Evet.
+
+1291
+00:53:10,827 --> 00:53:11,788
+Birebir olması gerekiyor.
+
+1292
+00:53:11,887 --> 00:53:13,548
+Artan değil azalan da olabilir.
+
+1293
+00:53:13,907 --> 00:53:15,208
+Birebir olması gerekir.
+
+1294
+00:53:15,387 --> 00:53:16,847
+Tamam.
+
+1295
+00:53:16,927 --> 00:53:17,588
+Teşekkürler hocam.
+
+1296
+00:53:17,827 --> 00:53:18,387
+Rica ederim.
+
+1297
+00:53:19,108 --> 00:53:19,387
+Buyurun.
+
+1298
+00:53:19,387 --> 00:53:25,947
+Size mailden bu konular haricinde bir konu hakkında soru atsam yardımcı olma şansınız var mı acaba?
+
+1299
+00:53:26,827 --> 00:53:28,027
+Mailimi atabilirsin.
+
+1300
+00:53:28,648 --> 00:53:34,867
+Tamam.
+
+1301
+01:03:11,251 --> 01:03:13,552
+Evet arkadaşlar, geldik mi?
+
+1302
+01:03:24,052 --> 01:03:26,092
+Geldik mi arkadaşlar? Evet, tamam.
+
+1303
+01:03:26,632 --> 01:03:27,992
+Şimdi sorumuz şöyle.
+
+1304
+01:03:28,192 --> 01:03:36,992
+y eşittir ln mutlak değer x eğrisi üzerinde t'leri y eşittir 2x artı 5 doğrusunda paralel olan noktaları bulunuz.
+
+1305
+01:03:37,731 --> 01:03:42,211
+Eğri üzerindeki t'lerin doğruya paralel olan noktaları bulunuz.
+
+1306
+01:03:42,211 --> 01:03:44,052
+Nasıl düşünmeliyim peki?
+
+1307
+01:03:48,179 --> 01:03:50,779
+Paralelslerin olması gerekir eğimleri arkadaşlar.
+
+1308
+01:03:54,420 --> 01:04:01,700
+Eşit olmalı değil mi? Evet. O halde bu verilen doğrunun eğimi hazır değil mi? Biliyorum nedir? İkidir.
+
+1309
+01:04:02,280 --> 01:04:06,119
+O halde T'ye etin eğimi ne diyeceğim? Doğrunun eğimini eşit olmalı.
+
+1310
+01:04:06,200 --> 01:04:11,599
+Yani T'ye etin eğimi M ile gösterirsem doğrunun eğimi de iki. Yani M eşittir iki olması gerek.
+
+1311
+01:04:11,740 --> 01:04:14,680
+Şimdi bu M'yi nasıl bulacağım? T'ye etin eğimini nasıl bulacağım?
+
+1312
+01:04:15,099 --> 01:04:17,480
+Verilen eğrinin türevini almalıyım değil mi?
+
+1313
+01:04:17,480 --> 01:04:25,480
+Ona da y üstü dersem türevine gelecek çarpım gelir şuradan. Ln mutlak değer x artı x çarpı 1 bölü x.
+
+1314
+01:04:25,780 --> 01:04:29,619
+Bu da ne olur? Ln mutlak değer x artı 1 olur.
+
+1315
+01:04:30,480 --> 01:04:35,360
+Eğimi bulmuş olduk M'yi. M eşittir iki olması gerekir eğer paralelse diyoruz.
+
+1316
+01:04:35,700 --> 01:04:40,860
+Buradan Ln x ne olur? 1 olur. Mutlak değer x e üzeri e olur.
+
+1317
+01:04:40,960 --> 01:04:44,000
+Logaritmik özelliği kullanırsak e tabanında bir e'dir.
+
+1318
+01:04:44,000 --> 01:04:48,360
+Buradan mutlak değer pozitifse x ye eşit olacak.
+
+1319
+01:04:48,720 --> 01:04:54,340
+İçi negatifse işaret değiştirir eksi yani iki tane noktayı bu şekilde bulmuş olduk.
+
+1320
+01:04:54,599 --> 01:04:55,300
+Tamam mı arkadaşlar?
+
+1321
+01:04:56,440 --> 01:04:59,220
+Evet devam edelim. Anlaşıldı sanırım.
+
+1322
+01:04:59,960 --> 01:05:02,740
+Eğimler eşitledik sonra zaten olay bitmiş olacak.
+
+1323
+01:05:03,220 --> 01:05:05,300
+Şimdi bir tane daha tanım kümesi aldım buraya.
+
+1324
+01:05:06,340 --> 01:05:09,039
+Bu da dikkat ederseniz iç içe Ln x'ler var.
+
+1325
+01:05:09,039 --> 01:05:18,079
+Yani Ln x'in Ln'i tekrar Ln'i bir de artı kök içinde 9 eksi x karenin tanım kümesi nedir diye sormuşlar bize.
+
+1326
+01:05:18,760 --> 01:05:19,039
+Evet.
+
+1327
+01:05:20,059 --> 01:05:21,039
+Nasıl düşünmeliyim?
+
+1328
+01:05:21,320 --> 01:05:22,820
+Bir kere köklü ifadeyi biliyorum.
+
+1329
+01:05:22,920 --> 01:05:25,180
+İçinin sıfırdan büyük eşit olması gerekir.
+
+1330
+01:05:25,539 --> 01:05:27,700
+Ln x'in de tanım kümesini biliyorum.
+
+1331
+01:05:27,860 --> 01:05:31,559
+X'in sıfırdan büyük olduğu yerler değil mi?
+
+1332
+01:05:31,860 --> 01:05:33,280
+O şekilde düşünmeliyim.
+
+1333
+01:05:33,280 --> 01:05:35,659
+O zaman bakın tek tek yazdım şuraya.
+
+1334
+01:05:36,519 --> 01:05:38,059
+Önce Ln x'i düşünüyorum.
+
+1335
+01:05:38,260 --> 01:05:39,760
+X'i sıfırdan büyük olmalı.
+
+1336
+01:05:40,300 --> 01:05:45,820
+Sonra Ln Ln x'i şu parantezi düşünürsem Ln x'in sıfırdan büyük olması gerekir.
+
+1337
+01:05:46,300 --> 01:05:51,480
+Sonra şu parantezi düşünürsem Ln Ln x'in sıfırdan büyük olması gerekir.
+
+1338
+01:05:51,860 --> 01:05:53,680
+Bir de zaten köklü ifadem şu.
+
+1339
+01:05:54,340 --> 01:05:56,059
+Bunun dördünü analiz edelim.
+
+1340
+01:05:56,159 --> 01:05:57,139
+Burada yapacağım bir şey yok.
+
+1341
+01:05:57,220 --> 01:05:58,880
+X'in sıfırdan büyük olması gerekir.
+
+1342
+01:05:59,000 --> 01:06:01,880
+Ln x'in de sıfırdan büyük olabilmesi için ne olması gerekir?
+
+1343
+01:06:01,880 --> 01:06:04,139
+X'in birden büyük olması gerekir.
+
+1344
+01:06:04,220 --> 01:06:05,740
+Çünkü 1 olursa sıfır olur değil mi?
+
+1345
+01:06:05,800 --> 01:06:08,420
+Birden büyük olması gerekir pozitif olabilmesi için.
+
+1346
+01:06:08,940 --> 01:06:10,619
+O halde geldik şuraya.
+
+1347
+01:06:11,220 --> 01:06:13,200
+Gene burada da ne olması gerekir?
+
+1348
+01:06:13,920 --> 01:06:16,559
+Ln x'in birden büyük olması gerekir.
+
+1349
+01:06:16,639 --> 01:06:18,700
+Buradan x'i çekersek ne olur?
+
+1350
+01:06:18,780 --> 01:06:20,059
+E üzeri birden E olur.
+
+1351
+01:06:20,139 --> 01:06:21,780
+Yani x'e'den büyük olmalı.
+
+1352
+01:06:22,440 --> 01:06:23,860
+Sonra geldik şuraya.
+
+1353
+01:06:24,340 --> 01:06:26,440
+Bunun dün de de böyle bir soru bakmıştık.
+
+1354
+01:06:26,860 --> 01:06:27,860
+Bunu da incelersin.
+
+1355
+01:06:27,940 --> 01:06:30,519
+Kötüleri eksi üçle artı üç arasında olur değil mi?
+
+1356
+01:06:30,519 --> 01:06:32,659
+Yani dokuz büyük eşit x kare olur.
+
+1357
+01:06:33,079 --> 01:06:34,579
+Her tarafın kare kökünü alırsan.
+
+1358
+01:06:35,099 --> 01:06:37,440
+Üç büyük eşit mutlak değer x olur.
+
+1359
+01:06:37,820 --> 01:06:40,079
+O da eksi üçle artı üç arasındadır.
+
+1360
+01:06:40,180 --> 01:06:44,240
+Şimdi dördünün ortak kesişim kümesine bakacaksınız.
+
+1361
+01:06:44,400 --> 01:06:46,500
+Kafanız karışıyorsa dün de söylemiştim.
+
+1362
+01:06:46,820 --> 01:06:48,780
+Şöyle bir sayı doğrusu çizersin.
+
+1363
+01:06:48,780 --> 01:06:52,200
+İşte x'in sayıları koyarsın.
+
+1364
+01:06:52,280 --> 01:06:53,460
+Bir var, e var.
+
+1365
+01:06:53,559 --> 01:06:55,159
+Bir eksi üçümüz var değil mi?
+
+1366
+01:06:56,300 --> 01:06:57,659
+Birden de büyük e.
+
+1367
+01:06:57,820 --> 01:07:00,039
+Bir var, e var ve üç var.
+
+1368
+01:07:00,119 --> 01:07:05,340
+Bunları taradığınızda arkadaşlar aralığımız e ile üç olarak görürsünüz.
+
+1369
+01:07:05,340 --> 01:07:06,099
+Tamam mı?
+
+1370
+01:07:07,019 --> 01:07:10,220
+Sıfırdan büyük, birden büyük olacak.
+
+1371
+01:07:10,940 --> 01:07:11,760
+E'den büyük.
+
+1372
+01:07:12,380 --> 01:07:13,619
+Üç ve eksi üç arasında.
+
+1373
+01:07:13,860 --> 01:07:17,360
+Sonuçta e açık eşitlik olmadığı için üç kapalı.
+
+1374
+01:07:17,820 --> 01:07:18,800
+Tanım kümesi budur.
+
+1375
+01:07:19,019 --> 01:07:20,039
+Anlaşıldı mı arkadaşlar?
+
+1376
+01:07:22,640 --> 01:07:26,340
+Evet, dediğim gibi tanım kümesinde fonksiyonun özelliklerini bilmek gerekiyor.
+
+1377
+01:07:26,460 --> 01:07:27,480
+Başka da bir şey yok.
+
+1378
+01:07:27,480 --> 01:07:30,460
+Evet, bu da gene bir test sorusuymuş.
+
+1379
+01:07:30,559 --> 01:07:31,800
+Yaz okulunda sorulmuş.
+
+1380
+01:07:33,039 --> 01:07:34,099
+Bunu da aldım buraya.
+
+1381
+01:07:35,019 --> 01:07:37,480
+Evet, verilen ifadeler.
+
+1382
+01:07:37,659 --> 01:07:40,599
+G'nin sıfırdaki değeri, türevinin sıfırdaki değeri sıfırmış.
+
+1383
+01:07:40,840 --> 01:07:44,099
+İkinci mertebe türevinin sıfırdaki değeri sekiz olmak üzere.
+
+1384
+01:07:44,539 --> 01:07:45,659
+F fonksiyonu veriliyor.
+
+1385
+01:07:45,659 --> 01:07:50,880
+Buna göre diyor, fonksiyonun türevinin sıfırdaki değeri nedir?
+
+1386
+01:07:51,200 --> 01:07:51,680
+Tamam mı?
+
+1387
+01:07:51,987 --> 01:07:56,547
+Şimdi bir kere bu fonksiyon parçalı olduğu için dikkat etmek gerekir.
+
+1388
+01:07:57,288 --> 01:08:01,667
+Bu fonksiyon sıfırda sürekli midir?
+
+1389
+01:08:01,927 --> 01:08:03,147
+Şöyle gözümüzle bakalım.
+
+1390
+01:08:03,627 --> 01:08:06,007
+Sürekli değilse bir daha türeviyle uğraşmam.
+
+1391
+01:08:06,327 --> 01:08:08,367
+Ama sürekliyse türevine bakmak zorundayım.
+
+1392
+01:08:08,727 --> 01:08:12,947
+Sürekliyse türevi olmak zorunda değil ama fonksiyon türevliyse sürekli olmak zorunda.
+
+1393
+01:08:13,027 --> 01:08:13,907
+Bunu unutmuyoruz.
+
+1394
+01:08:14,387 --> 01:08:17,907
+Fonksiyon sıfırda sürekli midir diye nasıl bakmalıyım arkadaşlar?
+
+1395
+01:08:18,148 --> 01:08:19,547
+Fonksiyon sıfırda tanımlı mıdır?
+
+1396
+01:08:19,547 --> 01:08:20,367
+Bakın tanımlı.
+
+1397
+01:08:20,487 --> 01:08:21,148
+Değeri sıfır.
+
+1398
+01:08:21,148 --> 01:08:25,467
+Sonra limit x sıfıra giderken tek bir fonksiyonu var sıfırdan farklı.
+
+1399
+01:08:25,547 --> 01:08:26,188
+Bunu alacağım değil mi?
+
+1400
+01:08:26,228 --> 01:08:29,768
+x sıfıra giderken gx bölü x'in limitine bakacağım.
+
+1401
+01:08:30,207 --> 01:08:30,967
+Limiti de ne olur?
+
+1402
+01:08:31,068 --> 01:08:33,307
+G'nin sıfırdaki değeri bölü sıfır.
+
+1403
+01:08:33,387 --> 01:08:34,967
+G'nin sıfırdaki değeri sıfır.
+
+1404
+01:08:35,247 --> 01:08:37,747
+Yani sıfır bölü sıfır belirsizliği var arkadaşlar.
+
+1405
+01:08:38,487 --> 01:08:42,268
+Tekrar türevini alırsam g'nin türevi bölü bir olur.
+
+1406
+01:08:42,487 --> 01:08:42,967
+O da nedir?
+
+1407
+01:08:43,047 --> 01:08:43,427
+Sıfırdır.
+
+1408
+01:08:43,528 --> 01:08:45,447
+Yani fonksiyonun limiti de mevcut.
+
+1409
+01:08:45,947 --> 01:08:46,927
+Değeri de sıfırdır.
+
+1410
+01:08:46,927 --> 01:08:49,807
+Tanımlı olduğu değere eşit olduğu için fonksiyon süreklidir.
+
+1411
+01:08:49,807 --> 01:08:52,728
+O zaman tek yapmam gereken türevini bulmak.
+
+1412
+01:08:53,007 --> 01:08:54,907
+Türevinde tanımdan gitmem gerekecek.
+
+1413
+01:08:55,068 --> 01:08:57,707
+Yani fonksiyonun türevini sıfırdaki değeri diyeceğim.
+
+1414
+01:08:58,087 --> 01:09:01,188
+Tek bir fonksiyonu kullanacağım için limit has sıfıra giderken.
+
+1415
+01:09:01,188 --> 01:09:03,007
+Bakın şuradan.
+
+1416
+01:09:03,007 --> 01:09:05,768
+Pardon.
+
+1417
+01:09:09,844 --> 01:09:10,904
+Şöyle gideyim.
+
+1418
+01:09:12,243 --> 01:09:16,764
+H0'a giderken fonksiyonun sıfırdaki noktayı kullanıyorum.
+
+1419
+01:09:16,963 --> 01:09:19,224
+F0 artı h, eksi F0 bölü h.
+
+1420
+01:09:19,224 --> 01:09:23,984
+Böyle bir limit mevcutsa bu limite fonksiyon bu noktadaki türevidir diyeceğiz.
+
+1421
+01:09:24,104 --> 01:09:24,743
+Tamam mı?
+
+1422
+01:09:25,144 --> 01:09:26,243
+Yazıyorum şimdi.
+
+1423
+01:09:26,644 --> 01:09:27,884
+Fonksiyonum şu zaten.
+
+1424
+01:09:28,384 --> 01:09:29,783
+X gördüğüm yere h yazıyorum.
+
+1425
+01:09:29,923 --> 01:09:31,163
+GH bölü h.
+
+1426
+01:09:31,764 --> 01:09:34,984
+Eksi fonksiyonun sıfırdaki değeri zaten burada sıfır verilmiş.
+
+1427
+01:09:35,144 --> 01:09:35,944
+Bölü h diyorum.
+
+1428
+01:09:36,304 --> 01:09:36,864
+Bu da ne olur?
+
+1429
+01:09:36,963 --> 01:09:38,384
+GH bölü h kare olur.
+
+1430
+01:09:38,524 --> 01:09:39,224
+Bakın şurada.
+
+1431
+01:09:39,224 --> 01:09:41,043
+Şimdi kontrol ediyorum limitimi.
+
+1432
+01:09:41,724 --> 01:09:43,003
+Sıfırdaki değer sıfırdı.
+
+1433
+01:09:43,123 --> 01:09:43,864
+Payda da sıfır.
+
+1434
+01:09:43,963 --> 01:09:45,963
+Yani sıfır bölü sıfır belirsizliği var.
+
+1435
+01:09:46,323 --> 01:09:47,083
+O zaman ne yapıyorum?
+
+1436
+01:09:47,163 --> 01:09:48,083
+Hopitale uyguluyorum.
+
+1437
+01:09:48,463 --> 01:09:48,844
+Ne diyorum?
+
+1438
+01:09:48,984 --> 01:09:51,644
+Payın türevi, G'nin türevi bölü 2H.
+
+1439
+01:09:52,184 --> 01:09:56,884
+Tekrar limiti kontrol edersem sıfır bölü sıfır belirsizliğine gidiyor arkadaşlar.
+
+1440
+01:09:57,384 --> 01:09:57,844
+Ne yapıyorum?
+
+1441
+01:09:57,944 --> 01:09:59,503
+Diyorum ki tekrar hopitale uyguluyorum.
+
+1442
+01:09:59,923 --> 01:10:01,064
+Buradan da ne gelecektir?
+
+1443
+01:10:01,184 --> 01:10:03,583
+G'nin ikinci mertebe türevi bölü 2.
+
+1444
+01:10:04,003 --> 01:10:06,224
+İşte şimdi belirsizlikten kurtulmuş olduk.
+
+1445
+01:10:06,224 --> 01:10:13,524
+G'nin türevinin ikinci mertebe türevinin sıfırdaki değeri de 8 olduğuna göre 8 bölü 2'den 4'tür diyeceğiz.
+
+1446
+01:10:13,524 --> 01:10:15,783
+Yani fonksiyonun türevi de varmış.
+
+1447
+01:10:15,884 --> 01:10:17,524
+Değeri de 4'e eşittir diyoruz.
+
+1448
+01:10:17,524 --> 01:10:24,724
+Zaten şurada aslında hani biraz uyanık olup demek ki hopitale uygulanacak türevi alırken ikinci mertebe türevi de vermiş bize.
+
+1449
+01:10:25,323 --> 01:10:25,583
+Evet.
+
+1450
+01:10:26,844 --> 01:10:27,543
+Devam edelim.
+
+1451
+01:10:28,243 --> 01:10:30,243
+Bu da gene bir test sorusu.
+
+1452
+01:10:31,743 --> 01:10:33,264
+Soru şöyle demiş bize.
+
+1453
+01:10:33,623 --> 01:10:41,024
+FX fonksiyonu X eşittir 3'te türevi mevcut olan bir fonksiyon olup türevinin 3'teki değeri 4 olarak veriliyor.
+
+1454
+01:10:41,024 --> 01:10:51,904
+Buna göre limit H1'e giderken FH artı 2 eksi F 4 eksi H bölü H eksi 1 limit değerini bulunuz diyor arkadaşlar.
+
+1455
+01:10:52,304 --> 01:10:52,764
+Tamam mı?
+
+1456
+01:10:53,024 --> 01:10:53,144
+Bu.
+
+1457
+01:10:53,783 --> 01:11:00,323
+Şimdi burada fonksiyonun türevinin 3'teki değerini ben hani türev tanımını biliyorum.
+
+1458
+01:11:00,444 --> 01:11:02,764
+Oradan nasıl yazacağımı bilirim.
+
+1459
+01:11:02,764 --> 01:11:04,823
+Yani şuradan bakın görmeye çalışayım.
+
+1460
+01:11:04,923 --> 01:11:07,344
+Diyelim ki şu sıfır yerine 3 yazmam gerekir değil mi?
+
+1461
+01:11:07,463 --> 01:11:13,384
+Fonksiyonun türevinin 3'teki değeri F 3 artı H eksi F 3 bölü H.
+
+1462
+01:11:13,503 --> 01:11:15,203
+Böyle bir limit varsa buna ne diyeceğim?
+
+1463
+01:11:15,283 --> 01:11:16,783
+Fonksiyonun türevinin 3'teki değeri.
+
+1464
+01:11:17,083 --> 01:11:19,323
+Ama burada hiç öyle bir şeyler göremiyorum şu an.
+
+1465
+01:11:19,583 --> 01:11:20,703
+O halde ne yapmalıyım?
+
+1466
+01:11:21,224 --> 01:11:22,724
+Bir dönüşüm yapmalıyım.
+
+1467
+01:11:22,823 --> 01:11:25,203
+H eksi 1'e bir T dönüşümü yapmalıyım bakın.
+
+1468
+01:11:25,923 --> 01:11:26,163
+Neden?
+
+1469
+01:11:26,543 --> 01:11:28,604
+H1'e giderken T'de sıfıra gider.
+
+1470
+01:11:29,144 --> 01:11:31,243
+Bunu T şeklinde yazmalıyım.
+
+1471
+01:11:31,243 --> 01:11:34,503
+T'de sıfıra gitmeliyiz ki türev tanımını uygulayabileyim.
+
+1472
+01:11:34,884 --> 01:11:36,844
+O halde ilk önce aklıma gelen ne dedim?
+
+1473
+01:11:37,264 --> 01:11:40,024
+H eksi 1'e bir T dönüşümü yapalım sonra düşünürüz.
+
+1474
+01:11:40,384 --> 01:11:42,283
+H1'e giderken T'de sıfıra gider.
+
+1475
+01:11:42,564 --> 01:11:44,384
+H yerine de 1 artı T'ye yazmalıyım.
+
+1476
+01:11:44,463 --> 01:11:46,764
+Geliyorum bakın sırayla yazıyorum.
+
+1477
+01:11:47,344 --> 01:11:48,524
+H yerine ne gelecek?
+
+1478
+01:11:48,684 --> 01:11:52,364
+T sıfıra giderken verilen şu ifadeyi T cinsinden ifade ediyorum.
+
+1479
+01:11:52,824 --> 01:11:53,984
+F aç parantez.
+
+1480
+01:11:54,043 --> 01:11:55,163
+H yerine ne yazıyorum?
+
+1481
+01:11:55,764 --> 01:11:58,804
+1 artı T artı 2 kapat.
+
+1482
+01:11:58,804 --> 01:12:03,824
+F 4 eksi 1 artı H yazıyorum.
+
+1483
+01:12:03,944 --> 01:12:06,404
+Eksi 1 eksi T bölü T.
+
+1484
+01:12:06,743 --> 01:12:07,844
+Buradan ne geldi bakın?
+
+1485
+01:12:08,224 --> 01:12:09,524
+3 artı T geldi.
+
+1486
+01:12:09,963 --> 01:12:10,824
+Şuradan ne gelecek?
+
+1487
+01:12:11,904 --> 01:12:14,304
+Buradan da 3 eksi T bölü T.
+
+1488
+01:12:14,304 --> 01:12:18,364
+Şimdi şunu düşünme bunu ben sonradan yazmış oldum.
+
+1489
+01:12:18,444 --> 01:12:19,623
+İfadem şu arkadaşlar.
+
+1490
+01:12:20,283 --> 01:12:22,503
+Diyorum ki türev tanımını da biliyorum.
+
+1491
+01:12:22,904 --> 01:12:28,783
+Benim şunun yanında bir eksi F3'üm olsaydı diyecektim ki bu F'in türevinin 3'teki değeriydi.
+
+1492
+01:12:28,923 --> 01:12:30,043
+O zaman buna ne yapıyorum?
+
+1493
+01:12:30,144 --> 01:12:32,844
+Bir tane eksi F3 ekliyorum.
+
+1494
+01:12:33,083 --> 01:12:35,144
+E denge bozulmasın bir tane de eklemem lazım.
+
+1495
+01:12:35,243 --> 01:12:39,243
+Yani bir tane F3'ü ekledim bir tane de çıkardım denge bozulmasın diye.
+
+1496
+01:12:39,243 --> 01:12:41,144
+Gerisini sonra düzenleyeceğim.
+
+1497
+01:12:41,524 --> 01:12:42,203
+Şuraya anlaşıldı mı?
+
+1498
+01:12:42,463 --> 01:12:45,324
+Bakın benim dönüşüm yaptığımdaki ifadem şu kısım.
+
+1499
+01:12:46,384 --> 01:12:48,864
+Şuradan şu benim işime yarayacağı için diyorum.
+
+1500
+01:12:48,963 --> 01:12:53,404
+Şunun yanında bir tane eksi F3 olsaydı hemen bunu ne diyecektim?
+
+1501
+01:12:53,463 --> 01:12:54,163
+Türev diyecektim.
+
+1502
+01:12:54,224 --> 01:12:56,703
+O zaman onu eklemiş oldum eksi F3'ü.
+
+1503
+01:12:56,764 --> 01:12:58,764
+Denge bozulmasın bir tane de toplam ekledim.
+
+1504
+01:12:58,764 --> 01:13:01,144
+Yani bir çıkardım bir ekledim özet olarak.
+
+1505
+01:13:01,503 --> 01:13:02,083
+Tamam mı?
+
+1506
+01:13:02,184 --> 01:13:04,184
+Şimdi bunu bir daha yazmaya çalışıyorum bakın.
+
+1507
+01:13:04,819 --> 01:13:09,880
+Limit t sıfıra giderken f 3 artı t eksi f 3 bölü t.
+
+1508
+01:13:10,139 --> 01:13:10,500
+Tamam mı?
+
+1509
+01:13:10,519 --> 01:13:11,239
+Şunu aldım.
+
+1510
+01:13:11,439 --> 01:13:12,099
+Şunu bu.
+
+1511
+01:13:12,500 --> 01:13:16,840
+Eksi diyorum limit t sıfıra giderken geri kalan ne kaldı?
+
+1512
+01:13:16,979 --> 01:13:18,179
+F 3 eksi t.
+
+1513
+01:13:19,139 --> 01:13:22,279
+Bu da artı eksi de şurada olduğu için böyle yazdım.
+
+1514
+01:13:22,439 --> 01:13:22,840
+Bu tamam.
+
+1515
+01:13:23,159 --> 01:13:24,399
+Artık bunun yerine ne diyeceğim?
+
+1516
+01:13:24,639 --> 01:13:26,479
+Bakın f üstü 3 diyeceğim.
+
+1517
+01:13:27,000 --> 01:13:27,779
+Şuraya geldim.
+
+1518
+01:13:28,619 --> 01:13:30,019
+Şu da güzel işime yarıyor.
+
+1519
+01:13:30,159 --> 01:13:31,500
+Ama şurada bir problemim var.
+
+1520
+01:13:31,500 --> 01:13:35,380
+Şu da artı olsaydı bu da diyeceğim f'in türevinin 3'tekileri.
+
+1521
+01:13:35,500 --> 01:13:36,639
+Onun için de burada ne yapıyorum?
+
+1522
+01:13:37,420 --> 01:13:39,239
+T yerine eksi t dönüşümü yap.
+
+1523
+01:13:39,420 --> 01:13:39,819
+U yap.
+
+1524
+01:13:39,920 --> 01:13:40,619
+Fark etmez.
+
+1525
+01:13:41,039 --> 01:13:43,279
+Dedim ki t yerine eksi t yazalım.
+
+1526
+01:13:43,500 --> 01:13:45,479
+T yerine eksi t yazarsam şurası ne olur?
+
+1527
+01:13:45,599 --> 01:13:46,739
+3 artı t olur.
+
+1528
+01:13:47,159 --> 01:13:48,679
+Paydada da eksi t olmaz mı?
+
+1529
+01:13:48,979 --> 01:13:51,420
+Bu da bununla şarpıldığında artı t gelir.
+
+1530
+01:13:51,939 --> 01:13:53,519
+Bakın yazdım şuraya.
+
+1531
+01:13:54,199 --> 01:13:54,639
+Bu tamam.
+
+1532
+01:13:54,899 --> 01:13:55,659
+Bunu anlaştık.
+
+1533
+01:13:55,759 --> 01:13:57,579
+F'in türevin 3'teki değeridir.
+
+1534
+01:13:58,159 --> 01:14:00,599
+Burada da eksi t yazdığımdan bu da artı oldu.
+
+1535
+01:14:00,599 --> 01:14:05,619
+Limit t sıfıra giderken f 3 artı t eksi f 3 bölü t.
+
+1536
+01:14:06,039 --> 01:14:09,460
+İşte bu da benim bildiğim gene fonksiyonun türevinin 3'teki değeri.
+
+1537
+01:14:09,559 --> 01:14:10,380
+Bakın yazdık.
+
+1538
+01:14:10,479 --> 01:14:10,759
+Ne oldu?
+
+1539
+01:14:10,859 --> 01:14:14,779
+İki tane f'in türevinin 3'teki değeri oldu.
+
+1540
+01:14:15,159 --> 01:14:17,299
+Bunu da değerini vermiş yukarıda bize 4'tü.
+
+1541
+01:14:17,439 --> 01:14:18,439
+İşte sonuç nedir?
+
+1542
+01:14:19,139 --> 01:14:20,500
+8'dir diyeceğiz.
+
+1543
+01:14:20,840 --> 01:14:21,279
+Tamam mı?
+
+1544
+01:14:22,819 --> 01:14:23,359
+Anladık mı?
+
+1545
+01:14:30,484 --> 01:14:34,544
+Çok soru var. Beş geliyor buraya başka şeyler.
+
+1546
+01:14:34,864 --> 01:14:35,264
+Buyurun.
+
+1547
+01:14:36,744 --> 01:14:38,364
+Hocam teşhittir işte yazdık ya.
+
+1548
+01:14:39,204 --> 01:14:40,864
+Diğer sonuçları etkilemiyor mu?
+
+1549
+01:14:41,144 --> 01:14:42,104
+Sol taraf için mesela.
+
+1550
+01:14:42,184 --> 01:14:43,923
+Hayır bununla işim bitti attım.
+
+1551
+01:14:44,044 --> 01:14:45,864
+Bunun limiti bunun limiti değil mi?
+
+1552
+01:14:46,204 --> 01:14:47,344
+Mantıklı. Bununla işim bitti.
+
+1553
+01:14:47,404 --> 01:14:48,584
+Bunun limitini hallettim.
+
+1554
+01:14:48,704 --> 01:14:49,764
+Belirsiz iyi giderdim.
+
+1555
+01:14:49,884 --> 01:14:51,204
+Şimdi şuradaki problemim var.
+
+1556
+01:14:51,963 --> 01:14:55,584
+Sen bunu kafan karışıyorsa t yerine eksi u de hiç fark etmez.
+
+1557
+01:14:55,584 --> 01:14:58,504
+Ben hani anladığımız için diyorum ki artık bu da ne olsun?
+
+1558
+01:14:58,624 --> 01:14:59,904
+Aynı değişken olmuş olsun.
+
+1559
+01:14:59,904 --> 01:15:01,524
+Nex, T dönüşümü yapmış olduk.
+
+1560
+01:15:01,664 --> 01:15:02,004
+Tamam mı?
+
+1561
+01:15:03,524 --> 01:15:03,923
+Oldu mu?
+
+1562
+01:15:04,044 --> 01:15:05,744
+Tamam hocam. Teşekkürler. Oldu.
+
+1563
+01:15:06,864 --> 01:15:07,504
+Evet.
+
+1564
+01:15:07,984 --> 01:15:09,944
+Şimdi bu da gene bir test sorusu.
+
+1565
+01:15:10,344 --> 01:15:16,804
+Türevlenebilir ve terslenebilir bir FX fonksiyonu için aşağıdaki bilgiler bir tablo olarak verilmiştir diyor.
+
+1566
+01:15:16,944 --> 01:15:17,864
+Tablo da şuymuş.
+
+1567
+01:15:18,124 --> 01:15:19,923
+Bakın X değerleri verilmiş.
+
+1568
+01:15:20,304 --> 01:15:22,184
+Fonksiyon değerleri, türev değerleri.
+
+1569
+01:15:22,184 --> 01:15:26,904
+Bu tabloya göre fonksiyon tersini türevinin beşteki değerini bulunuz.
+
+1570
+01:15:26,904 --> 01:15:30,844
+İşte yukarıda tersini nasıl bulduğumuzu, türevini söylemiştik.
+
+1571
+01:15:30,923 --> 01:15:32,524
+Burada da bilgiler orada.
+
+1572
+01:15:32,624 --> 01:15:34,423
+Bizi sadece kullanmak düşüyor.
+
+1573
+01:15:34,684 --> 01:15:36,644
+Şimdi bunu nasıl bulmuştuk biz hatırlarsanız.
+
+1574
+01:15:36,784 --> 01:15:39,604
+Fonksiyon tersini türevinin beşteki değerini eşitti.
+
+1575
+01:15:40,224 --> 01:15:44,524
+Bir bölü fonksiyonun türevinin herhangi bir ağdaki değerini eşitti değil mi?
+
+1576
+01:15:44,524 --> 01:15:47,824
+Benim tek yapmam gereken o ağ değerini bulmak.
+
+1577
+01:15:48,824 --> 01:15:50,104
+Bakın yazdım şuraya şu.
+
+1578
+01:15:51,284 --> 01:15:53,524
+Buradan da ağ'yı nasıl yazıyorduk?
+
+1579
+01:15:53,864 --> 01:15:56,144
+F üzeri eksi beş değil mi?
+
+1580
+01:15:56,244 --> 01:15:57,904
+A ise beş ne olur?
+
+1581
+01:15:58,004 --> 01:15:58,684
+F ağ olur.
+
+1582
+01:15:59,804 --> 01:16:00,923
+Beş eşittir F ağ.
+
+1583
+01:16:01,384 --> 01:16:03,364
+Onu da gelip fonksiyonda bulmam gerekir.
+
+1584
+01:16:03,804 --> 01:16:04,884
+Beş eşittir F ağ.
+
+1585
+01:16:05,884 --> 01:16:08,784
+F'in ağdaki değeri beş olan değer nedir?
+
+1586
+01:16:08,784 --> 01:16:12,804
+Nedir arkadaşlar?
+
+1587
+01:16:15,024 --> 01:16:15,864
+İkidir değil mi?
+
+1588
+01:16:15,944 --> 01:16:16,923
+Yazan arkadaşlar var.
+
+1589
+01:16:17,044 --> 01:16:17,244
+Tamam.
+
+1590
+01:16:17,584 --> 01:16:18,923
+Devam edeyim o zaman görelim.
+
+1591
+01:16:19,844 --> 01:16:20,384
+Bak şimdi.
+
+1592
+01:16:20,804 --> 01:16:22,124
+Bunu biliyorum formülü zaten.
+
+1593
+01:16:22,244 --> 01:16:23,224
+Bunu unutmuyorum artık.
+
+1594
+01:16:25,064 --> 01:16:26,144
+Buradan da ne diyorum?
+
+1595
+01:16:26,423 --> 01:16:29,664
+F'in tersinin beşteki değeri A ise beş ne olur?
+
+1596
+01:16:29,744 --> 01:16:30,404
+F ağ olur.
+
+1597
+01:16:30,824 --> 01:16:33,664
+Burada da fonksiyon olmadığına göre tabloya dönüyorum.
+
+1598
+01:16:33,784 --> 01:16:36,463
+Diyorum ki F ağ beş olan değer buluyorum.
+
+1599
+01:16:36,704 --> 01:16:38,604
+Fonksiyonun değeri beş olan şu değil midir?
+
+1600
+01:16:38,784 --> 01:16:39,684
+Yukarı çıkıyorum.
+
+1601
+01:16:39,804 --> 01:16:40,784
+X ikiymiş o zaman.
+
+1602
+01:16:41,104 --> 01:16:41,404
+Bitti.
+
+1603
+01:16:41,904 --> 01:16:42,704
+A'nın değeri ikidir.
+
+1604
+01:16:42,944 --> 01:16:43,824
+O zaman ne diyeceğim?
+
+1605
+01:16:43,944 --> 01:16:47,744
+Bir bölü fonksiyonun türevinin ikideki değeri.
+
+1606
+01:16:47,923 --> 01:16:50,044
+Türevin ikideki değerinde çık tabloya.
+
+1607
+01:16:50,504 --> 01:16:50,923
+Neymiş?
+
+1608
+01:16:52,044 --> 01:16:52,804
+Eksi iki değil mi?
+
+1609
+01:16:53,923 --> 01:16:54,384
+O olacak.
+
+1610
+01:16:54,824 --> 01:16:55,844
+İşte eksi bir bölü iki.
+
+1611
+01:16:56,584 --> 01:16:58,484
+Basit ve güzel soru aslında değil mi?
+
+1612
+01:16:59,044 --> 01:16:59,884
+Bilgi de içeriyor.
+
+1613
+01:17:01,364 --> 01:17:02,084
+Oldu mu?
+
+1614
+01:17:02,604 --> 01:17:03,504
+Anlaşıldı mı arkadaşlar?
+
+1615
+01:17:04,824 --> 01:17:05,144
+Evet.
+
+1616
+01:17:07,144 --> 01:17:08,484
+Devam edelim.
+
+1617
+01:17:08,784 --> 01:17:10,804
+Gene bu da test sorusu aldım.
+
+1618
+01:17:10,804 --> 01:17:13,844
+Bunu aldım ama sonra fark ettim arkadaşlar.
+
+1619
+01:17:14,164 --> 01:17:16,444
+Sınava dahil değil ama şimdi burada anlatayım.
+
+1620
+01:17:16,784 --> 01:17:20,624
+Ortalama değer teoremin içerdiği için sınava dahil değil.
+
+1621
+01:17:20,744 --> 01:17:22,004
+Sadece dinleyeceksiniz.
+
+1622
+01:17:22,344 --> 01:17:23,244
+Sonra fark ettim.
+
+1623
+01:17:23,244 --> 01:17:26,364
+Demek ki yaz okulunda o konuyu işlemişler.
+
+1624
+01:17:27,024 --> 01:17:28,384
+Yani sınava dahil etmişler.
+
+1625
+01:17:28,463 --> 01:17:29,264
+Biz de işledik de.
+
+1626
+01:17:29,264 --> 01:17:30,664
+Şimdi şöyle sorumuz.
+
+1627
+01:17:31,124 --> 01:17:40,463
+FX fonksiyonu 0-6 aralığında sürekli açık aralığında türevlenebilir bir fonksiyon ve fonksiyonun sıfırdaki değeri iki olsun diyor.
+
+1628
+01:17:40,463 --> 01:17:50,904
+Eğer 0-6 açık aralığında iki küçük eşit f üstü x küçük eşit 6 ise f 6'nın alabileceği en küçük ve en büyük değerini bulunuz.
+
+1629
+01:17:50,904 --> 01:18:01,824
+Şimdi soruya dikkat edersek fonksiyon diyoruz ki kapalı aralıkta sürekli açık aralıkta türevlenebilirse buraya kadar tek bildiğim teorem ortalama değer teoremi ne demiştik?
+
+1630
+01:18:01,923 --> 01:18:03,284
+Kapalı aralıkta sürekli olacak.
+
+1631
+01:18:03,423 --> 01:18:12,764
+Açık aralıkta türevli ise fonksiyonun 0-6 yani açık aralıkta öyle bir c sayısı vardır ki f c eşit f üstü c eşittir.
+
+1632
+01:18:12,764 --> 01:18:17,104
+f b eksi f a bölü b eksi a eşitliğini sağlar demiştik değil mi?
+
+1633
+01:18:17,184 --> 01:18:18,164
+Bakın şurada yazdım.
+
+1634
+01:18:18,804 --> 01:18:20,423
+Kapalar olarak da sürekli olacak.
+
+1635
+01:18:20,864 --> 01:18:23,043
+Açık aralıkta türevli hepsi zaten sağlanıyormuş.
+
+1636
+01:18:23,163 --> 01:18:25,904
+Kendi vermiş olmasaydı ben kendimi göstermiş olacaktım.
+
+1637
+01:18:26,003 --> 01:18:31,444
+Diyorum ki bu iki şart varsa ortalama değer teoremine göre f üstü c eşittir.
+
+1638
+01:18:31,444 --> 01:18:42,824
+Fb dediğim 6, fa dediğim 0, f6-f0 bölü 6-0 olacak şekilde açık aralıkta bir c noktası vardır diyoruz.
+
+1639
+01:18:42,864 --> 01:18:44,963
+Şimdi biz bu c'yi bulmaya çalışalım.
+
+1640
+01:18:45,064 --> 01:18:47,224
+Verilenleri söylüyor bize.
+
+1641
+01:18:47,484 --> 01:18:48,663
+Bunları düzenleyelim bakın.
+
+1642
+01:18:48,663 --> 01:18:50,484
+F'in sıfırdaki değerini vermiş 2.
+
+1643
+01:18:50,644 --> 01:18:52,264
+F6'yı zaten soruyor bana.
+
+1644
+01:18:52,724 --> 01:18:53,444
+Bunları yazdım.
+
+1645
+01:18:53,524 --> 01:18:55,524
+Buradan f6'yı şöyle çekemez miyim?
+
+1646
+01:18:55,724 --> 01:18:55,944
+Değil mi?
+
+1647
+01:18:56,184 --> 01:18:59,024
+6 çarpı f üstü bir de artı 2 gelir şu.
+
+1648
+01:19:00,324 --> 01:19:00,884
+Buradayım.
+
+1649
+01:19:01,524 --> 01:19:04,123
+Şimdi bana şu eşitsizlikleri de vermiş.
+
+1650
+01:19:04,264 --> 01:19:07,764
+Buradan f6'nın en büyük en küçük değerini bulunuz.
+
+1651
+01:19:08,163 --> 01:19:10,524
+Bu ikinci vize de kesin gelecek tip soru arkadaşlar.
+
+1652
+01:19:10,703 --> 01:19:12,783
+Orada tekrar çözeriz benzer soru gene.
+
+1653
+01:19:13,364 --> 01:19:16,003
+Şimdi diyorum ki şurada bana ne vermiş bakın.
+
+1654
+01:19:16,003 --> 01:19:17,644
+2 küçük eşit f üstü.
+
+1655
+01:19:17,703 --> 01:19:20,224
+Yani f'in türevi 2'den büyük değil mi?
+
+1656
+01:19:20,703 --> 01:19:21,743
+Böylelen soru da öyle değil.
+
+1657
+01:19:21,944 --> 01:19:25,324
+Bu böyleyse x yerine c de yazsam aynı olur değil mi?
+
+1658
+01:19:25,384 --> 01:19:29,944
+F üstü c de 2'den büyük olup getirip şurada şunu yazmaya çalışıyorum.
+
+1659
+01:19:30,043 --> 01:19:33,144
+Bakın f'in altıdaki değeri o zaman büyüktür diyeceğim.
+
+1660
+01:19:33,144 --> 01:19:36,604
+2 artı f üstü c 2 idi.
+
+1661
+01:19:37,144 --> 01:19:37,604
+Ne olur?
+
+1662
+01:19:37,944 --> 01:19:38,644
+14 olur.
+
+1663
+01:19:38,804 --> 01:19:41,604
+İşte f6 14'den büyük olacak.
+
+1664
+01:19:42,503 --> 01:19:44,583
+Yine diğer eşitsizliğe bakarsak şuraya.
+
+1665
+01:19:45,524 --> 01:19:50,564
+F üstü x küçük 6 ise f üstü c de 6 olacak.
+
+1666
+01:19:50,564 --> 01:19:58,884
+O zaman f6 küçük yazıyorum 2 artı 6 çarpı 6 o da 38 olur değil mi?
+
+1667
+01:19:59,264 --> 01:20:01,564
+İşte bundan da küçük olacaktır.
+
+1668
+01:20:01,644 --> 01:20:06,463
+O halde derim ki f6'nın değeri 14 ve 38 arasındadır.
+
+1669
+01:20:06,783 --> 01:20:07,283
+Tamam mı?
+
+1670
+01:20:07,283 --> 01:20:10,963
+İşte bu ortalama değerinin teoremini bu şekilde uygulamış oluyoruz.
+
+1671
+01:20:11,243 --> 01:20:13,024
+Dediğim gibi şimdi vizeye dahil değil.
+
+1672
+01:20:13,524 --> 01:20:14,663
+Üzerinde fazla durmuyorum.
+
+1673
+01:20:14,743 --> 01:20:15,163
+Geçiyorum.
+
+1674
+01:20:15,743 --> 01:20:15,984
+Evet.
+
+1675
+01:20:18,564 --> 01:20:20,064
+Gene de var mı takıldığımız bir yer?
+
+1676
+01:20:20,064 --> 01:20:23,083
+Yok diyorsunuz hocam.
+
+1677
+01:20:23,163 --> 01:20:24,024
+Sınava dahildeyiz.
+
+1678
+01:20:24,064 --> 01:20:24,684
+Hiç bakmayalım.
+
+1679
+01:20:24,824 --> 01:20:24,984
+Tamam.
+
+1680
+01:20:26,043 --> 01:20:26,364
+Evet.
+
+1681
+01:20:26,884 --> 01:20:28,904
+Şimdi böyle bir fonksiyon var.
+
+1682
+01:20:29,604 --> 01:20:37,684
+Mutlak değer içinde x kare eksi 9 bölü x kare eksi 4 x artı 3 ile tanımlı f fonksiyonunun süreksiz olduğu tüm noktaları bulunuz.
+
+1683
+01:20:37,684 --> 01:20:41,163
+Bu süreksizlik noktalarını sınıflandırınız.
+
+1684
+01:20:41,644 --> 01:20:44,564
+Benzer soru dün de yaptık ama tekrar almak istedim.
+
+1685
+01:20:44,663 --> 01:20:47,184
+Çünkü süreksizlik tiplerini de sormayı severler.
+
+1686
+01:20:47,184 --> 01:20:53,444
+O yüzden verilen fonksiyonun dikkat ederseniz rasyonel kesirli bir fonksiyon değil mi?
+
+1687
+01:20:53,864 --> 01:20:54,783
+Ne yapmam gerekir?
+
+1688
+01:20:54,864 --> 01:20:58,003
+Paydayı sıfır yapan değerler fonksiyonunu süreksiz yapacaktır.
+
+1689
+01:20:58,043 --> 01:20:59,144
+Onlara bakmam gerekir.
+
+1690
+01:20:59,203 --> 01:21:01,083
+Paydayı sıfır yapan değer nedir burada?
+
+1691
+01:21:01,083 --> 01:21:04,344
+Evet.
+
+1692
+01:21:05,184 --> 01:21:06,163
+3 ile 1 değil mi?
+
+1693
+01:21:07,543 --> 01:21:07,884
+Evet.
+
+1694
+01:21:09,904 --> 01:21:10,743
+Biliyorsunuz zaten.
+
+1695
+01:21:10,904 --> 01:21:13,743
+Hani bazen yazamıyorsunuz, söylemek istemiyorsunuz.
+
+1696
+01:21:13,764 --> 01:21:14,944
+Yoksa bilmediğinizden değil.
+
+1697
+01:21:15,423 --> 01:21:16,104
+Biliyorum çünkü.
+
+1698
+01:21:16,324 --> 01:21:16,564
+Evet.
+
+1699
+01:21:16,923 --> 01:21:17,583
+Şimdi ne dedik?
+
+1700
+01:21:17,684 --> 01:21:18,003
+Baktık.
+
+1701
+01:21:18,064 --> 01:21:20,123
+Paydayı sıfır yapan değerler 3 ile 1.
+
+1702
+01:21:20,444 --> 01:21:22,423
+Bu değerler için fonksiyon süreksizdir.
+
+1703
+01:21:22,423 --> 01:21:25,283
+O zaman ne yapmalıyım?
+
+1704
+01:21:25,583 --> 01:21:32,043
+Burada bir de mutlak değer ifadem olduğu için 3'e ve 1'e yaklaşırken fonksiyon ne olacak?
+
+1705
+01:21:32,163 --> 01:21:33,364
+Onları incelemem gerekir.
+
+1706
+01:21:33,444 --> 01:21:35,104
+Önce 1 için bakalım.
+
+1707
+01:21:35,804 --> 01:21:38,663
+O zaman 1'e sağdan ve soldan yaklaşırsak arkadaşlar.
+
+1708
+01:21:39,644 --> 01:21:40,663
+1 için bakıyorum.
+
+1709
+01:21:40,864 --> 01:21:43,304
+Limit x 1'e soldan yaklaşırken diyorum.
+
+1710
+01:21:43,743 --> 01:21:46,224
+Mutlak değerin için arkadaşlar şöyle düşünelim.
+
+1711
+01:21:46,364 --> 01:21:48,844
+x eksi 3 x artı 3 çarpanı tamam mı?
+
+1712
+01:21:48,844 --> 01:21:54,104
+Şu x 1'e soldan yaklaştığında şu ifadem ne olur?
+
+1713
+01:21:54,484 --> 01:21:57,783
+Eksi olacağı için fonksiyon işaret değiştirerek dışarı çıkacak.
+
+1714
+01:21:57,923 --> 01:22:00,144
+Yani eksi x eksi 3 x artı 3.
+
+1715
+01:22:00,224 --> 01:22:02,583
+Paydayı zaten çarpanlarına ayırmıştık bu şekilde.
+
+1716
+01:22:03,043 --> 01:22:04,623
+Bundan x eksi 3'ler gitti.
+
+1717
+01:22:05,123 --> 01:22:05,543
+Ne kalır?
+
+1718
+01:22:05,663 --> 01:22:08,364
+Eksi x artı 3 bölü x eksi 1.
+
+1719
+01:22:08,644 --> 01:22:09,243
+Şu ifadem.
+
+1720
+01:22:09,644 --> 01:22:10,944
+Bu da nereye gidecektir?
+
+1721
+01:22:11,311 --> 01:22:14,652
+x sonsuza gittiğinde eksi sonsuz olacak.
+
+1722
+01:22:14,791 --> 01:22:15,551
+Bir dönümde eksi var.
+
+1723
+01:22:15,652 --> 01:22:16,791
+Artı sonsuza gider.
+
+1724
+01:22:17,091 --> 01:22:17,572
+Tamam mı?
+
+1725
+01:22:17,971 --> 01:22:19,652
+İşte burada ne oldu?
+
+1726
+01:22:19,771 --> 01:22:20,832
+Soldan limiti yok.
+
+1727
+01:22:21,271 --> 01:22:22,551
+Sağdan limitine bakalım.
+
+1728
+01:22:23,952 --> 01:22:30,291
+Sağdan da yaklaştığımızda gene mutlak değerin içi negatif olacağı için değil mi?
+
+1729
+01:22:31,271 --> 01:22:32,692
+Eksi diye dışarıya çıktı.
+
+1730
+01:22:33,471 --> 01:22:35,332
+Sonuçta şu şekle geldi arkadaşlar.
+
+1731
+01:22:35,332 --> 01:22:36,731
+X eksi parantele.
+
+1732
+01:22:36,751 --> 01:22:38,251
+X artı 3 bölü x eksi 1.
+
+1733
+01:22:38,631 --> 01:22:40,011
+Bu da nereye gidecektir?
+
+1734
+01:22:40,011 --> 01:22:43,791
+Artı sonsuza gider ama önünde de eksi olduğu için eksi sonsuza gitti.
+
+1735
+01:22:44,192 --> 01:22:45,211
+O zaman ne diyeceğiz?
+
+1736
+01:22:45,631 --> 01:22:47,091
+Limiti yok diyoruz değil mi?
+
+1737
+01:22:47,471 --> 01:22:52,192
+X eşit bir de ne diyeceğim tipini de söylerseniz sonsuz süreksizlik noktasıdır.
+
+1738
+01:22:52,551 --> 01:22:54,332
+Ya da esas süreksizlik diyoruz.
+
+1739
+01:22:54,372 --> 01:22:57,072
+Sonsuz çıktığı için sonsuz süreksizdir diyoruz.
+
+1740
+01:22:57,351 --> 01:22:58,992
+Şimdi gelelim 3 için bakıyoruz.
+
+1741
+01:22:59,412 --> 01:23:01,211
+3'e sağdan ve soldan yaklaşalım.
+
+1742
+01:23:01,211 --> 01:23:04,051
+Sağdan yaklaştığımızda ne olacaktır?
+
+1743
+01:23:04,112 --> 01:23:06,511
+Mutlak değerin içi pozitif olacak.
+
+1744
+01:23:06,692 --> 01:23:07,351
+Aynen çıkar.
+
+1745
+01:23:07,471 --> 01:23:08,971
+Paydaya zaten dokunmadık.
+
+1746
+01:23:08,971 --> 01:23:10,211
+Yerine yazdık.
+
+1747
+01:23:10,311 --> 01:23:10,891
+Sadeleşti.
+
+1748
+01:23:10,952 --> 01:23:12,952
+Bakın x artı 3 bölü x eksi 1 oldu.
+
+1749
+01:23:13,311 --> 01:23:15,572
+Bu da 3'e giderken sonuç ne olur?
+
+1750
+01:23:16,912 --> 01:23:18,211
+Şuradan 3 olur değil mi?
+
+1751
+01:23:18,671 --> 01:23:20,471
+6 bölü 2'den 3 olur.
+
+1752
+01:23:21,211 --> 01:23:24,872
+Soldan yaklaşırsak soldan ne olacak bu sefer?
+
+1753
+01:23:25,112 --> 01:23:26,492
+İşaret değiştirecek değil mi?
+
+1754
+01:23:26,751 --> 01:23:28,192
+İçi şuydu ya mutlak değerin.
+
+1755
+01:23:29,192 --> 01:23:29,912
+Eksi olur.
+
+1756
+01:23:30,471 --> 01:23:31,751
+Eksi parantezinde yazarım.
+
+1757
+01:23:31,872 --> 01:23:33,311
+Gene x eksi 3'ler gider.
+
+1758
+01:23:33,851 --> 01:23:37,311
+Eksi parantezinde x artı 3 bölü x eksi 1.
+
+1759
+01:23:37,311 --> 01:23:38,771
+Bu da nereye gidecektir?
+
+1760
+01:23:38,771 --> 01:23:39,952
+Eksi 3'e gider.
+
+1761
+01:23:40,291 --> 01:23:46,131
+O zaman bakın sağdan soldan limitler mevcut ama birbirinden farklı olduğu için limiti yok diyeceğim.
+
+1762
+01:23:46,271 --> 01:23:47,952
+Bu tip süreksizlik neydi?
+
+1763
+01:23:48,332 --> 01:23:49,791
+Sıçramalı süreksizlikti.
+
+1764
+01:23:50,391 --> 01:23:54,211
+Bakın limitler mevcut ve birbirinden farklı olduğunda sıçramalı diyoruz.
+
+1765
+01:23:54,291 --> 01:23:55,511
+Sonsuzsa sonsuz diyoruz.
+
+1766
+01:23:55,572 --> 01:23:56,351
+Bunu unutmuyoruz.
+
+1767
+01:23:56,412 --> 01:23:57,112
+Tamam mı arkadaşlar?
+
+1768
+01:23:57,811 --> 01:23:58,751
+Anlaşıldı sanırım.
+
+1769
+01:24:00,032 --> 01:24:00,671
+Var mı bir problem?
+
+1770
+01:24:01,271 --> 01:24:01,591
+Yok.
+
+1771
+01:24:01,591 --> 01:24:02,711
+Evet.
+
+1772
+01:24:03,251 --> 01:24:05,211
+Şimdi bir tane de şöyle alalım.
+
+1773
+01:24:06,211 --> 01:24:07,112
+Y eşittir.
+
+1774
+01:24:08,011 --> 01:24:10,171
+Ters kosekant hiperbolik.
+
+1775
+01:24:10,612 --> 01:24:11,711
+Tanjant hiperbolik.
+
+1776
+01:24:11,811 --> 01:24:13,791
+X'in türevini soruyor bana.
+
+1777
+01:24:14,671 --> 01:24:18,971
+Tabii şimdi burada diyeceksiniz ki yani açarım notumu.
+
+1778
+01:24:19,131 --> 01:24:20,271
+Türev formülünü biliyorum.
+
+1779
+01:24:20,372 --> 01:24:21,192
+Oradan bakardım.
+
+1780
+01:24:21,291 --> 01:24:25,091
+Ama okulda olsaydık bunu ezbere türevini bilmen gerekir.
+
+1781
+01:24:25,091 --> 01:24:26,931
+Onun için de size tekrar söylüyorum.
+
+1782
+01:24:27,671 --> 01:24:33,372
+Notlarınızı gerekli notlarınızı düzgünce masanızın üzerine koyup oradan güzelce bakıp yazın.
+
+1783
+01:24:33,492 --> 01:24:38,851
+Diyelim böyle bir soru sorduysa benim bilmem gereken ters kosekant hiperbolik U demiştik.
+
+1784
+01:24:38,912 --> 01:24:41,992
+Bu da bir fonksiyonsa bunun türevini de şöyle yazmıştık.
+
+1785
+01:24:42,072 --> 01:24:43,731
+Onları bakın parantez içinde yazıyorum.
+
+1786
+01:24:44,171 --> 01:24:44,532
+Neydi?
+
+1787
+01:24:45,091 --> 01:24:49,311
+Eksi U'nun türevi bölü mutlak değer U çarpı kök içinde bir artı U kare.
+
+1788
+01:24:49,912 --> 01:24:50,311
+Tamam mı?
+
+1789
+01:24:50,311 --> 01:24:50,372
+Bu.
+
+1790
+01:24:50,751 --> 01:24:52,872
+Burada benim U dediğim ifade nedir aslında?
+
+1791
+01:24:52,872 --> 01:24:55,332
+Tanjant hiperbolik X'dir.
+
+1792
+01:24:55,692 --> 01:24:56,551
+U dediğim ifade.
+
+1793
+01:24:56,872 --> 01:25:00,251
+Bu sefer tanjant hiperbolik X'in türevini de bilmem gerekir.
+
+1794
+01:25:00,612 --> 01:25:01,931
+Onu da şuraya yazdım.
+
+1795
+01:25:03,231 --> 01:25:04,851
+U ise U'nun türevi de ne olur?
+
+1796
+01:25:05,391 --> 01:25:07,032
+Sekant hiperbolik kare X.
+
+1797
+01:25:07,332 --> 01:25:10,131
+Bunları zaten dediğim gibi notlarınızda hazır var.
+
+1798
+01:25:10,211 --> 01:25:11,211
+Oradan yazacaksınız.
+
+1799
+01:25:11,551 --> 01:25:12,511
+O zaman geldik.
+
+1800
+01:25:12,751 --> 01:25:13,931
+Bakın ne olacak sorum.
+
+1801
+01:25:14,612 --> 01:25:15,431
+Bunun türevi.
+
+1802
+01:25:15,431 --> 01:25:18,471
+Eksi sekant hiperbolik kare X bölü.
+
+1803
+01:25:18,652 --> 01:25:19,551
+Bakın yazdım.
+
+1804
+01:25:20,231 --> 01:25:22,431
+Mutlak değer içinde tanjant hiperbolik X.
+
+1805
+01:25:22,872 --> 01:25:28,112
+Kök içinde bir artı tanjant hiperbolik X'in karesidir diyeceğim.
+
+1806
+01:25:28,692 --> 01:25:32,771
+Burada da X'i sıfırdan büyük verdiği için mutlak değer de pozitif olacaktır.
+
+1807
+01:25:32,931 --> 01:25:35,011
+Yani aynen bu şekilde yazıldı.
+
+1808
+01:25:35,211 --> 01:25:36,971
+İşte türevi budur diyeceğiz.
+
+1809
+01:25:37,771 --> 01:25:38,192
+Tamam mı?
+
+1810
+01:25:38,192 --> 01:25:40,572
+Evet.
+
+1811
+01:25:42,011 --> 01:25:42,671
+Var mı problem?
+
+1812
+01:25:43,832 --> 01:25:45,112
+Hocam sorabilir miyim?
+
+1813
+01:25:46,412 --> 01:25:48,671
+Şu yukarıda oraya tanıdım şimdi de.
+
+1814
+01:25:49,152 --> 01:25:51,372
+Bu hani sıçramalı süreksizlik dedik ya yukarıda.
+
+1815
+01:25:52,372 --> 01:25:55,971
+Orada sıçramalı dememiz için limitlerin eşit olması gerekmiyor muydu?
+
+1816
+01:25:56,051 --> 01:25:56,631
+Ben mi yanlış hatırlıyorum?
+
+1817
+01:25:56,631 --> 01:25:58,692
+Hayır limiti varsa zaten limit var.
+
+1818
+01:25:58,791 --> 01:25:59,731
+Niye süreksiz olsun?
+
+1819
+01:26:00,431 --> 01:26:01,751
+Limitler mevcut olacak.
+
+1820
+01:26:01,952 --> 01:26:04,412
+Yani sayı olması 3-5 farklı olacak.
+
+1821
+01:26:04,948 --> 01:26:08,468
+Ama sonsuz olmayacak sıçramalı olabilmesi için.
+
+1822
+01:26:08,988 --> 01:26:13,828
+Anladım. Ben şey limitlerin eşit olup fonksiyonun o noktadaki değerine...
+
+1823
+01:26:13,828 --> 01:26:17,908
+O süreklilikle karıştırıyorsun. Noktadaki süreklilikle karıştırma.
+
+1824
+01:26:18,347 --> 01:26:22,868
+Tamam mı? Noktada sürekli ise limit olacak, tanımlı olduğu değere de eşit olacak.
+
+1825
+01:26:23,048 --> 01:26:23,568
+Karıştırma.
+
+1826
+01:26:24,008 --> 01:26:24,688
+Tamam hocam, sağ olun.
+
+1827
+01:26:24,828 --> 01:26:27,768
+Sıçramalı da sayılar olacak, birbirinden farklı olacak.
+
+1828
+01:26:27,908 --> 01:26:30,368
+Sonsuz da da sonsuz olacak. Tamam, karıştırmayın.
+
+1829
+01:26:30,368 --> 01:26:34,068
+Evet, şimdi gelelim. Şöyle bir örnek verilmiş.
+
+1830
+01:26:34,068 --> 01:26:39,708
+Burada da ters sekant hiperbolik lnx'in türevini soruyor bana.
+
+1831
+01:26:40,268 --> 01:26:44,728
+Burada da gene bilmem gereken ters sekant hiperbolik u'nun türevi.
+
+1832
+01:26:44,828 --> 01:26:47,148
+Onu da gene parantez içine yazdım arkadaşlar.
+
+1833
+01:26:48,128 --> 01:26:49,208
+Tamam mı? Bu.
+
+1834
+01:26:49,887 --> 01:26:50,748
+O da nedir?
+
+1835
+01:26:51,028 --> 01:26:55,887
+Eksi u'nun türevi. Bölü u çarpı kök içinde bir eksi u'nun karesiydi.
+
+1836
+01:26:56,788 --> 01:26:59,048
+O halde u dediğim ifade nedir burada bizim?
+
+1837
+01:26:59,347 --> 01:27:00,347
+lnx'dir değil mi?
+
+1838
+01:27:00,948 --> 01:27:03,387
+lnx'in türevini bilmeliyim. Onu zaten biliyorum.
+
+1839
+01:27:03,387 --> 01:27:04,328
+Ne diyeceğim?
+
+1840
+01:27:04,968 --> 01:27:12,088
+Eksi bir bölü x bölü lnx çarpı kök içinde bir eksi lnx'in karesi diye yazmalıyım işte.
+
+1841
+01:27:12,908 --> 01:27:13,028
+Bu.
+
+1842
+01:27:14,608 --> 01:27:20,488
+Evet, benim sınavla ilgili çözebileceklerim sorular bu kadar arkadaşlar.
+
+1843
+01:27:21,828 --> 01:27:23,128
+Yeterli diye düşünüyorum.
+
+1844
+01:27:23,128 --> 01:27:28,368
+Siz gene arada biz örnekler de gene çözdük dersi anlatırken onlara da bakabilirsiniz.
+
+1845
+01:27:28,528 --> 01:27:29,927
+Kendiniz de tekrar.
+
+1846
+01:27:30,048 --> 01:27:31,868
+Gerçi zaten şimdiye kadar hazırlandınız.
+
+1847
+01:27:31,988 --> 01:27:32,868
+Sınavımız yarın.
+
+1848
+01:27:33,188 --> 01:27:34,708
+Üçte değil mi sizin sınavınız?
+
+1849
+01:27:35,088 --> 01:27:35,968
+Tekrar söylüyorum.
+
+1850
+01:27:36,068 --> 01:27:37,128
+Çoktan seçmeli sınav.
+
+1851
+01:27:37,908 --> 01:27:39,908
+Yani dört yanlış bir doğruyu götürecek.
+
+1852
+01:27:40,387 --> 01:27:42,387
+Sorulara geri dönüş oluyor arkadaşlar.
+
+1853
+01:27:42,387 --> 01:27:48,508
+Bir de eğer sınavınızı bitti diye işaretlerseniz bir daha geriye dönemiyorsunuz.
+
+1854
+01:27:48,648 --> 01:27:50,828
+Ama diyelim ki sistemde bir aksaklık oldu.
+
+1855
+01:27:50,927 --> 01:27:51,408
+Koptunuz.
+
+1856
+01:27:51,568 --> 01:27:54,948
+O andan bağlanırsanız tekrar devam edebiliyorsunuz sınavınıza.
+
+1857
+01:27:55,228 --> 01:27:56,128
+Bunlara dikkat edin.
+
+1858
+01:27:56,248 --> 01:27:59,387
+Yani bitti diye işaretlerseniz bir daha geriye dönemiyorsunuz.
+
+1859
+01:27:59,387 --> 01:28:05,988
+Gerçi onlara bir sınavın baş kısmına, açıklama kısmına yazılır diye düşünüyorum onları tekrar.
+
+1860
+01:28:06,708 --> 01:28:10,927
+Evet başka sorumuz yoksa ben bugünlük bu kadar yapmak istiyorum.
+
+1861
+01:28:11,068 --> 01:28:12,528
+Yeni konuya geçmek istemiyorum.
+
+1862
+01:28:13,108 --> 01:28:15,628
+Sınavla ilgili bazı çalışmalarımız da var bu arada.
+
+1863
+01:28:16,608 --> 01:28:18,548
+Çünkü sizin sınıflarınızı girmemiz gerekiyor.
+
+1864
+01:28:18,648 --> 01:28:19,768
+Onlarla uğraşacağız.
+
+1865
+01:28:20,008 --> 01:28:21,128
+Var mı sorumuz arkadaşlar?
+
+1866
+01:28:21,968 --> 01:28:24,048
+Dediğim gibi biraz dikkatli davranın.
+
+1867
+01:28:24,048 --> 01:28:31,148
+Hocam sorayım da daha çok bir fikir, bir görüş bildirmek istiyorum.
+
+1868
+01:28:31,288 --> 01:28:35,548
+Aslında klasik sınavda da bu formüller önümüzde açık olsa.
+
+1869
+01:28:38,248 --> 01:28:41,508
+Ezberimizde tutmanın da çok bir manası var.
+
+1870
+01:28:41,668 --> 01:28:42,168
+Önemli olan...
+
+1871
+01:28:42,168 --> 01:28:43,708
+Zaten bak şimdi.
+
+1872
+01:28:44,468 --> 01:28:52,228
+Zaten okulda yapılan klasik sınavda da çok böyle ucra kalkıp da işte ters bilmem mi sekant.
+
+1873
+01:28:52,228 --> 01:28:54,128
+Şunun türevini sana sormuyor.
+
+1874
+01:28:54,807 --> 01:28:56,728
+O bilgi yani çocuğun aklında kalacak.
+
+1875
+01:28:56,868 --> 01:28:58,748
+Sizin mühendisi olduğunuzu da biliyoruz.
+
+1876
+01:28:58,988 --> 01:29:00,228
+O şekilde sorular soruluyor.
+
+1877
+01:29:01,108 --> 01:29:02,148
+Hani ben burada konuşuyorum.
+
+1878
+01:29:02,248 --> 01:29:03,948
+Diyorum ki nasılsa notu elinde.
+
+1879
+01:29:04,108 --> 01:29:09,307
+Yani notunuz elinizde olduğu için amaç sizi onlara uygulatabilecek sorular soracaklardır.
+
+1880
+01:29:09,568 --> 01:29:12,908
+Biliyoruz yani notlar elinizde olduğunu herkes biliyor.
+
+1881
+01:29:13,668 --> 01:29:14,968
+Bir sürü de bilgileriniz var.
+
+1882
+01:29:15,088 --> 01:29:16,128
+Genç öğrencilersiniz.
+
+1883
+01:29:16,307 --> 01:29:18,228
+Her yerden bir şeyler bulabiliyorsunuz.
+
+1884
+01:29:18,228 --> 01:29:21,968
+Öyle sorular soracak ki işte çocuk dersi dinlemiş.
+
+1885
+01:29:21,968 --> 01:29:23,148
+Aç konulara hakim.
+
+1886
+01:29:23,548 --> 01:29:24,927
+Onları uygulayabilsin.
+
+1887
+01:29:25,188 --> 01:29:25,608
+Amaç bu.
+
+1888
+01:29:25,688 --> 01:29:26,708
+Yanlış mı bu düşünüyorum?
+
+1889
+01:29:27,307 --> 01:29:28,448
+Başka bir şey yok yani.
+
+1890
+01:29:29,028 --> 01:29:30,708
+Yani bir şey kalkıp ezberlemeyeceksin.
+
+1891
+01:29:30,908 --> 01:29:33,368
+Sadece bilgileri kullanılmak önemli olan.
+
+1892
+01:29:33,887 --> 01:29:34,668
+Başka bir şey yok.
+
+1893
+01:29:35,208 --> 01:29:35,688
+Teşekkür ederim.
+
+1894
+01:29:35,688 --> 01:29:37,008
+Onun için dikkat edin.
+
+1895
+01:29:37,468 --> 01:29:39,208
+Yani çok zor olacağını sanmıyorum.
+
+1896
+01:29:39,347 --> 01:29:42,148
+Siz mühendis öğrenciler, iyi öğrenciler yapabilirsiniz.
+
+1897
+01:29:42,228 --> 01:29:43,508
+Çünkü notlarınız elinizde hazır.
+
+1898
+01:29:43,508 --> 01:29:47,408
+Sadece işte şu arkadaştan soru bekleyeyim, buradan bekleyeyim.
+
+1899
+01:29:47,488 --> 01:29:49,368
+Çünkü sorular farklı sırayla gelebilir.
+
+1900
+01:29:49,488 --> 01:29:50,548
+Yerleri değişik olabilir.
+
+1901
+01:29:50,908 --> 01:29:52,068
+Hiç kafanızı karıştırmayın.
+
+1902
+01:29:52,148 --> 01:29:53,387
+Çünkü belli bir süre verecekler.
+
+1903
+01:29:53,448 --> 01:29:57,008
+Atıyorum bir saat veya bir buçuk saat bir süre vereceklerdir.
+
+1904
+01:29:57,008 --> 01:29:58,548
+O süre zarfında yapacaksınız.
+
+1905
+01:29:58,548 --> 01:30:00,008
+Zaten açıklama kısmında.
+
+1906
+01:30:00,000 --> 01:30:25,979
+neler yapmanız gerektiği açıklanır. Dikkatlice çözerseniz yapılmayacak diye bir şey yok. Çok zor zamanlardan geçiyoruz. Haklısınız. Hepinizin problemi vardır. Ama yapacak bir şeyimiz yok. Sizin için inanın üniversite o kadar çok çalışıyorlar ki öğrencinin lehine olacak şekilde şöyle olsun, böyle olsun. Yani düşünüyoruz. Tabii siz onu fark etmiyorsunuzdur ama yapacak bir şey yok. İmkanlar ölçüsünde bir şeyler yapmaya çalışacağız. Tamam mı?
+
+1907
+01:30:25,979 --> 01:30:27,420
+Teşekkürler hocam. Çok sağ olun.
+
+1908
+01:30:27,420 --> 01:30:47,420
+Başarılar diliyorum. Başarılar diliyorum. Başarılar diliyorum. Başarılar diliyorum. Başarılar diliyorum arkadaşlar. Görüşmek üzere. İyi günler.
+
+1909
+01:30:47,420 --> 01:30:49,500
+Teşekkürler. İyi günler. İyi günler. İyi günler.
