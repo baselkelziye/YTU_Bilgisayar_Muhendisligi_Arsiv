@@ -18,3 +18,4 @@
 | 27 | Güz | Nurullah Arvas | [sube_27/](sube_27/) |
 | 30 | Güz | Zeliha Çelen Boztilki | [sube_30/](sube_30/) |
 | 31 | Güz | Cemile İnan | [sube_31/](sube_31/) |
+| 37 | Güz | Arzuhan Kocabaş | [sube_37/](sube_37/) |
