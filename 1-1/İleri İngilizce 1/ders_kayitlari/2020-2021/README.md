@@ -29,3 +29,4 @@
 | 39 | Güz | Sibel Atmaca | [sube_39/](sube_39/) |
 | 40 | Güz | Ebru Osborne | [sube_40/](sube_40/) |
 | 41 | Güz | Kılıç (adı bulunamadı) | [sube_41/](sube_41/) |
+| 43 | Güz | Bulunamadı | [sube_43/](sube_43/) |
