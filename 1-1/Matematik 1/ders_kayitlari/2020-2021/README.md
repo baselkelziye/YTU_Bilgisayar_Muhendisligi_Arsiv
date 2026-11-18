@@ -8,6 +8,7 @@
 | 2 | Güz | Bulunamadı | [sube_2/](sube_2/) |
 | 3 | Güz | Serpil Karayel | [sube_3/](sube_3/) |
 | 5 | Güz | Bulunamadı | [sube_5/](sube_5/) |
+| 6 | Güz | Bulunamadı | [sube_6/](sube_6/) |
 | 7 | Güz | Servet Es | [sube_7/](sube_7/) |
 | 9 | Güz | Yasemin Alagöz | [sube_9/](sube_9/) |
 | 11 | Güz | Bayram Ali Ersoy | [sube_11/](sube_11/) |

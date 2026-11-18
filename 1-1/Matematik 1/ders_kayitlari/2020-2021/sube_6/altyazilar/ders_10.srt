@@ -1,0 +1,3431 @@
+1
+00:19:31,508 --> 00:19:33,208
+Merhaba arkadaşlar, sesim geliyor mu?
+
+2
+00:19:40,660 --> 00:19:41,120
+En son
+
+3
+00:19:41,120 --> 00:19:43,960
+rol teoremini işlemiştik.
+
+4
+00:19:45,880 --> 00:19:48,019
+Ve sabit fonksiyonun bir fonksiyonun türevi
+
+5
+00:19:48,019 --> 00:19:50,800
+sıfırsı sabit fonksiyonu eşittir.
+
+6
+00:19:51,220 --> 00:19:52,259
+Onu göstermiştik.
+
+7
+00:19:52,800 --> 00:19:53,480
+Bu haftada
+
+8
+00:19:53,480 --> 00:19:56,340
+konkanlık ve büküm noktalarından devam edeceğiz.
+
+9
+00:19:59,279 --> 00:19:59,920
+Eğer
+
+10
+00:19:59,920 --> 00:20:03,880
+bir fonksiyonun
+
+11
+00:20:03,880 --> 00:20:05,460
+birinci türevi varsa
+
+12
+00:20:05,460 --> 00:20:07,880
+biz bu fonksiyonun
+
+13
+00:20:07,880 --> 00:20:10,640
+artan ya da azalan olduğunu
+
+14
+00:20:10,640 --> 00:20:12,940
+türevinin işaretine bakarak belirleyebiliyorduk.
+
+15
+00:20:13,700 --> 00:20:14,920
+Fonksiyon türevinin işareti
+
+16
+00:20:14,920 --> 00:20:16,539
+negatifse fonksiyon azalan.
+
+17
+00:20:17,279 --> 00:20:18,720
+Fonksiyon türevinin işareti
+
+18
+00:20:18,720 --> 00:20:21,480
+pozitifse fonksiyon artan bir fonksiyondu.
+
+19
+00:20:22,960 --> 00:20:23,740
+Ancak bir de
+
+20
+00:20:23,740 --> 00:20:26,700
+fonksiyonun
+
+21
+00:20:26,700 --> 00:20:30,620
+kolları aşağı doğru mu bakıyor?
+
+22
+00:20:30,620 --> 00:20:31,600
+Yukarı doğru mu bakıyor?
+
+23
+00:20:31,720 --> 00:20:33,340
+Artanlık ve azalanlık durumunda.
+
+24
+00:20:33,940 --> 00:20:35,820
+Artanlık ve azalanlığın derecesindedir.
+
+25
+00:20:35,900 --> 00:20:37,480
+Bunları belirlemek için de
+
+26
+00:20:37,480 --> 00:20:39,500
+konkarlık ve büküm noktaları
+
+27
+00:20:39,500 --> 00:20:41,740
+kavramlarına bakmamız gerekiyor.
+
+28
+00:20:42,740 --> 00:20:43,100
+Yani
+
+29
+00:20:43,100 --> 00:20:44,600
+bir fonksiyon artan ama
+
+30
+00:20:44,600 --> 00:21:11,620
+bir fonksiyonun
+
+31
+00:20:51,220 --> 00:20:54,640
+şu şekilde mi artıyor, yoksa bu şekilde mi artıyor?
+
+32
+00:20:55,460 --> 00:20:58,799
+Yani kollar yukarı doğru mu bakıyor, aşağı doğru mu bakıyor?
+
+33
+00:21:00,000 --> 00:21:02,299
+Bunları belirlemek için aynı zamanda
+
+34
+00:21:02,299 --> 00:21:07,940
+kollar aşağı doğru bakıyor, yukarı doğru bakıyor.
+
+35
+00:21:08,420 --> 00:21:10,640
+Bu arada bir büküm noktası oluşuyor.
+
+36
+00:21:11,400 --> 00:21:12,839
+Bu noktayı nasıl belirleyebiliriz?
+
+37
+00:21:12,839 --> 00:21:15,180
+Bu kavramları belirlemek için
+
+38
+00:21:15,180 --> 00:21:17,720
+biz fonksiyonun
+
+39
+00:21:17,720 --> 00:21:20,880
+bir de ikinci türevine bakacağız.
+
+40
+00:21:21,220 --> 00:21:51,200
+Bu kavramları belirlemek için
+
+41
+00:21:25,779 --> 00:21:32,339
+Eğer bir f fonksiyonu açık bir i aralığına türelenebilir ve fonksiyonu türevi artan bir fonksiyon ise
+
+42
+00:21:36,243 --> 00:21:55,843
+Yani bakın, f türev fonksiyonu artan bir fonksiyon ise, f'in ikinci türevi ne demektir? Büyüklüğü sıfır demektir. O zaman, f'in ikinci türevi sıfırdan büyükse, f fonksiyonu i üzerinde yukarı konkaldır. Yukarı konkaldır ne demek? Bakın şöyle.
+
+43
+00:22:00,884 --> 00:22:06,124
+Kollar, fonksiyonun kolları yukarı doğru bakıyor.
+
+44
+00:22:12,019 --> 00:22:21,279
+yukarı konkal. Bu durumdaysa fonksiyonun kolları aşağı doğru bakıyor. Aşağı konkal diyoruz.
+
+45
+00:22:22,779 --> 00:22:31,400
+Ve f fonksiyon türevi azalan ise f türevi azalan ise f ikinci türevi küçüktür sıfır demek bu.
+
+46
+00:22:32,200 --> 00:22:37,240
+f ikinci türevi küçüktür sıfırsa fonksiyonun kolları aşağı bakıyor. Aşağı konkal döküyoruz.
+
+47
+00:22:37,240 --> 00:22:46,299
+Konkal'lık fonksiyonun grafiğini çizerken grafiğin yapısıyla ilgili artanlık ve azalanma yönüyle ilgili bir durum.
+
+48
+00:22:51,155 --> 00:22:55,435
+Peki yukarı konkavlık ve aşağı konkavlığı nasıl anlarız?
+
+49
+00:22:55,615 --> 00:22:56,536
+Nasıl gösteririz?
+
+50
+00:22:56,935 --> 00:22:59,816
+Bunların tanımları nedir?
+
+51
+00:22:59,915 --> 00:23:00,596
+Onlara bir bakalım.
+
+52
+00:23:02,155 --> 00:23:08,096
+Eğer bir açık aralıkta f yukarı konkav ise bu aralıkta f'in grafiği t'ten üstünde kalır.
+
+53
+00:23:08,715 --> 00:23:14,995
+Bakın şimdi burada herhangi bir t't çizdim fonksiyona.
+
+54
+00:23:15,475 --> 00:23:17,215
+Herhangi bir t't çizdim.
+
+55
+00:23:18,336 --> 00:23:19,175
+T't çizdim.
+
+56
+00:23:19,175 --> 00:23:23,316
+Bakın fonksiyonun grafiği her zaman t'tlerin üstünde.
+
+57
+00:23:24,056 --> 00:23:25,635
+Bu yukarı konkav demek.
+
+58
+00:23:28,296 --> 00:23:33,415
+Yani eğrin üzerindeki iki noktayı birleştiren doğru parçası
+
+59
+00:23:33,415 --> 00:23:36,635
+Mesela şurada bir nokta belirledim.
+
+60
+00:23:37,195 --> 00:23:38,415
+Burada bir nokta belirledim.
+
+61
+00:23:39,255 --> 00:23:41,596
+Bu iki noktayı birleştiren doğru parçası
+
+62
+00:23:41,596 --> 00:23:45,796
+grafiğin üzerinde kalıyor.
+
+63
+00:23:45,796 --> 00:23:49,435
+Bunu biz yukarı konkav diyoruz.
+
+64
+00:23:49,975 --> 00:23:50,935
+Tanımı da bu şekilde.
+
+65
+00:23:53,395 --> 00:23:54,515
+Aşağı konkavda ise
+
+66
+00:23:54,515 --> 00:23:58,115
+fonksiyonun grafiği t't çizdim bakın.
+
+67
+00:23:58,435 --> 00:24:00,455
+t't çizdim.
+
+68
+00:24:00,995 --> 00:24:02,195
+t'tlerin altında kalıyor.
+
+69
+00:24:02,655 --> 00:24:04,215
+Ve iki noktayı birleştiren doğru
+
+70
+00:24:04,215 --> 00:24:05,895
+herhangi iki nokta belirliyorum.
+
+71
+00:24:06,076 --> 00:24:07,536
+Bu iki noktayı birleştiren doğru
+
+72
+00:24:07,536 --> 00:24:10,355
+fonksiyonun grafiğinin altında kalıyor.
+
+73
+00:24:11,855 --> 00:24:13,195
+Yani yukarı konkav şöyle
+
+74
+00:24:13,195 --> 00:24:14,855
+aşağı konkav böyle.
+
+75
+00:24:19,028 --> 00:24:31,668
+Burada anlaşılmayan bir şey var mı? Bunu da ikinci türev ile belirliyoruz. İkinci türev büyüktür sıfırsa yukarı konkav. İkinci türev küçüktür sıfırsa aşağı konkav oluyor arkadaşlar.
+
+76
+00:24:40,500 --> 00:24:41,980
+Hocam bir şey sorabilir miyim?
+
+77
+00:24:43,640 --> 00:24:43,960
+A
+
+78
+00:24:49,683 --> 00:24:50,324
+Bir dakika.
+
+79
+00:24:51,384 --> 00:24:52,144
+Biri bir şey mi dedi?
+
+80
+00:24:52,663 --> 00:24:53,543
+Ses kısıtmış.
+
+81
+00:24:53,644 --> 00:24:55,303
+Ben dedim hocam [öğrenci].
+
+82
+00:24:56,043 --> 00:24:58,324
+Ya [öğrenci] daha önce soru sormuş muydun ya?
+
+83
+00:24:58,403 --> 00:24:59,243
+Ses kısıtmış da.
+
+84
+00:24:59,543 --> 00:25:01,564
+Yok hocam ben sormadım.
+
+85
+00:25:02,403 --> 00:25:03,483
+Üzüldüm şimdi ya.
+
+86
+00:25:03,564 --> 00:25:04,963
+Dedim ya ses çıkmıyor derste.
+
+87
+00:25:05,104 --> 00:25:05,523
+Niye böyle?
+
+88
+00:25:07,743 --> 00:25:08,983
+Yok hocam şey.
+
+89
+00:25:09,543 --> 00:25:10,203
+İyisin değil mi?
+
+90
+00:25:11,003 --> 00:25:11,483
+İyiyim hocam.
+
+91
+00:25:11,564 --> 00:25:12,423
+Teşekkürler sizler.
+
+92
+00:25:13,384 --> 00:25:14,104
+İyiyim sağ ol.
+
+93
+00:25:14,543 --> 00:25:15,903
+Hocam bir sorun olacaktı da.
+
+94
+00:25:17,403 --> 00:25:17,844
+Tabii.
+
+95
+00:25:17,844 --> 00:25:21,303
+Hocam şu biraz yukarı çıkabilir misiniz?
+
+96
+00:25:23,683 --> 00:25:24,283
+Çıkalım.
+
+97
+00:25:25,104 --> 00:25:26,023
+O şekil gitti.
+
+98
+00:25:26,243 --> 00:25:27,763
+Neyse tamam bu şekil üzerinden.
+
+99
+00:25:28,203 --> 00:25:28,683
+Bu şekil.
+
+100
+00:25:29,263 --> 00:25:30,324
+Başka şekil yok zaten.
+
+101
+00:25:30,463 --> 00:25:31,023
+Bu şekil var.
+
+102
+00:25:31,983 --> 00:25:34,543
+Yok bir tane şekil çizmiştiniz ya onu demiştim.
+
+103
+00:25:35,243 --> 00:25:36,683
+Neyse hocam şuradaki şekil.
+
+104
+00:25:36,683 --> 00:25:37,824
+Dur dur.
+
+105
+00:25:38,043 --> 00:25:38,763
+Geri geliyoruz.
+
+106
+00:25:39,523 --> 00:25:40,124
+Tamam.
+
+107
+00:25:40,503 --> 00:25:40,884
+Bunlar mı?
+
+108
+00:25:41,844 --> 00:25:42,403
+Evet hocam.
+
+109
+00:25:42,403 --> 00:25:47,543
+Şimdi orada soldaki o şey parabol.
+
+110
+00:25:47,844 --> 00:25:48,804
+Şey mi oluyordu?
+
+111
+00:25:48,943 --> 00:25:49,963
+Aşağı konveks miydi?
+
+112
+00:25:50,023 --> 00:25:51,644
+Orayı ben şey tamamlayamadım da.
+
+113
+00:25:51,963 --> 00:25:52,523
+Konveks değil.
+
+114
+00:25:52,604 --> 00:25:53,203
+Konkav ya.
+
+115
+00:25:53,844 --> 00:25:54,463
+Aşağı ödüleceğim.
+
+116
+00:25:54,543 --> 00:25:54,963
+Konkav.
+
+117
+00:25:56,543 --> 00:25:57,824
+Hangisinden bahsediyoruz?
+
+118
+00:25:58,003 --> 00:25:58,804
+Bu yukarı konkav.
+
+119
+00:25:59,104 --> 00:25:59,584
+Evet o.
+
+120
+00:26:00,183 --> 00:26:01,804
+Bu yukarı konkav oluyor.
+
+121
+00:26:02,364 --> 00:26:03,423
+Bu aşağı konkav oluyor.
+
+122
+00:26:07,683 --> 00:26:09,563
+Senin sormak istediğin şey neydi?
+
+123
+00:26:09,563 --> 00:26:12,763
+Hocam orayı anlamamıştım da.
+
+124
+00:26:12,763 --> 00:26:13,963
+Onun için sormuştum.
+
+125
+00:26:13,983 --> 00:26:15,124
+Bu yukarı konkav.
+
+126
+00:26:15,463 --> 00:26:16,443
+Bu aşağı konkav oluyor.
+
+127
+00:26:16,503 --> 00:26:17,624
+Yani kollar yukarı doğru.
+
+128
+00:26:17,844 --> 00:26:18,604
+Yukarı konkav.
+
+129
+00:26:19,104 --> 00:26:20,063
+Kollar aşağı doğru.
+
+130
+00:26:20,364 --> 00:26:21,084
+Aşağı konkav.
+
+131
+00:26:21,344 --> 00:26:23,844
+Yani şöyle kendi kollarınızı da düşünebilirsiniz.
+
+132
+00:26:24,023 --> 00:26:28,624
+Kollarınızı yukarı kaldırın.
+
+133
+00:26:28,743 --> 00:26:29,403
+Yukarı konkav.
+
+134
+00:26:29,644 --> 00:26:30,763
+Kollarınızı aşağı indirin.
+
+135
+00:26:31,144 --> 00:26:31,923
+Aşağı konkav.
+
+136
+00:26:31,923 --> 00:26:35,443
+Yani vücudunuzu hareket ettirerek de ezberleyebilirsiniz.
+
+137
+00:26:35,943 --> 00:26:36,943
+Aklını azda tutabilirsiniz.
+
+138
+00:26:38,584 --> 00:26:38,983
+Anladım.
+
+139
+00:26:39,104 --> 00:26:41,423
+O eller konkavlığa göre yapılıyor.
+
+140
+00:26:41,824 --> 00:26:43,564
+Konkavlık ellere göre yapılıyor.
+
+141
+00:26:44,043 --> 00:26:47,163
+O ben tepe noktasına göre baktım ve o yüzden yandım herhalde.
+
+142
+00:26:51,859 --> 00:26:52,319
+yok.
+
+143
+00:27:10,612 --> 00:27:17,711
+Şimdi fonksiyon bir noktada t-t sahip ve f'in bu noktanın iki tarafındaki konkavlukları zıt ise
+
+144
+00:27:17,711 --> 00:27:30,372
+Şimdi şöyle bakın, fonksiyon yukarı konkav, sonra aşağı konkav. Bir noktada da t-t var fonksiyonun.
+
+145
+00:27:30,372 --> 00:27:37,832
+İşte buraya biz büküm noktası diyoruz. Ya da fonksiyon aşağı konkav, sonra yukarı konkav. Ve bu noktada bir t-t var.
+
+146
+00:27:37,832 --> 00:27:42,231
+İşte bu noktaya biz büküm noktası diyoruz. Bükülüyor burada fonksiyon.
+
+147
+00:27:43,612 --> 00:27:47,172
+Yani fonksiyon ikinci türevi bir tarafta pozitif, bir tarafta negatifse
+
+148
+00:27:47,172 --> 00:27:50,252
+ya da ikinci türevi bir tarafta negatif, bir tarafta pozitifse
+
+149
+00:27:50,252 --> 00:27:56,211
+bu durumda arada bir büküm noktası oluşuyor arkadaşlar.
+
+150
+00:28:07,700 --> 00:28:09,600
+Şimdi büküm noktasına girelim.
+
+151
+00:28:14,195 --> 00:28:41,935
+Bir y'eştir fx fonksiyonu için tanım bölgesinde bir nokta alalım. x0 noktası alalım. Bu x0 noktası için y'eştir fx'in grafiği x0'da türev sahip. Yani ya fx'in fın türev mevcut ya da x0'da dikey türev sahipse, x0'ın her iki yanındaki konkavlığı zıt ise y'eştir fx eğirse x0'da büküm noktasına sahiptir.
+
+152
+00:28:41,935 --> 00:28:53,435
+Yani birincisi fonksiyonun türev olması lazım. İkincisi konkallıklar zıt olmalı. Bu durumda büküm noktası vardır diyoruz.
+
+153
+00:28:54,435 --> 00:28:55,555
+Şimdi örneklere bakalım.
+
+154
+00:28:59,443 --> 00:29:01,063
+Yani grafik üzerinde bir görelim.
+
+155
+00:29:03,263 --> 00:29:06,584
+Şimdi fx eşitli x küp fonksiyonunun grafiğine bakalım.
+
+156
+00:29:07,543 --> 00:29:10,483
+Bu şekilde bir grafik var.
+
+157
+00:29:10,563 --> 00:29:13,203
+Bakın aşağı konkav, yukarı konkav.
+
+158
+00:29:13,203 --> 00:29:15,644
+Bu arada bir büküm noktası var.
+
+159
+00:29:15,963 --> 00:29:16,844
+x eşitli sıfır.
+
+160
+00:29:18,344 --> 00:29:20,483
+x küp fonksiyonu için bir büküm noktası.
+
+161
+00:29:23,203 --> 00:29:24,783
+Gerçekten ikinci türevini alın.
+
+162
+00:29:26,084 --> 00:29:26,783
+3x kare.
+
+163
+00:29:27,703 --> 00:29:28,523
+Bir daha türevini alın.
+
+164
+00:29:28,523 --> 00:29:32,403
+6x bu tarafta negatif, bu tarafta pozitif ikinci türev.
+
+165
+00:29:34,023 --> 00:29:38,003
+Dolayısıyla bir tarafta aşağı konkav, bir tarafta yukarı konkav grafik.
+
+166
+00:29:44,372 --> 00:29:52,211
+Mesela böyle bir fonksiyon için burada aşağı konkav, burada yukarı konkav ancak hüküm noktası değil.
+
+167
+00:29:54,772 --> 00:29:58,752
+İki yanında konkavlık zıt ancak burada t-et yok bakın.
+
+168
+00:29:59,012 --> 00:30:01,332
+Bu taraftan çizdiğim farklı, bu taraftan çizdiğim farklı.
+
+169
+00:30:01,412 --> 00:30:03,372
+O noktada bir fonksiyon t-et olması lazım.
+
+170
+00:30:04,532 --> 00:30:08,592
+Dolayısıyla bu noktada hüküm noktası değil.
+
+171
+00:30:08,592 --> 00:30:14,312
+Yani o noktada türev mevcut değilse türevi tanımlayamıyorsak mesela sıfır noktası varsa
+
+172
+00:30:14,312 --> 00:30:21,052
+işte paydayı sıfır yapan bir nokta varsa o noktaysa o zaman büküm noktası olmuyor arkadaşlar.
+
+173
+00:30:22,072 --> 00:30:27,532
+Yine x'e 1 bölüş fonksiyonu içinde burası yukarı konkav bakın.
+
+174
+00:30:30,192 --> 00:30:33,932
+Burası aşağı konkav x eşit sıfır büküm noktası oluyor arkadaşlar.
+
+175
+00:30:39,155 --> 00:30:40,796
+2. türev ile ilişkisine bakalım.
+
+176
+00:30:43,475 --> 00:30:44,816
+Bilmemiz gereken bilgiler.
+
+177
+00:30:44,935 --> 00:30:48,955
+f'nin 2. türevi büyüktür sıfır ise f fonksiyonu yukarı konkav.
+
+178
+00:30:49,395 --> 00:30:50,955
+Bir i aralığında düşünelim.
+
+179
+00:30:51,115 --> 00:30:56,215
+Mesela ab aralığı ya da real sayılar üzerinde polinom fonksiyonu düşünelim.
+
+180
+00:30:56,895 --> 00:31:01,755
+f'nin 2. türevi küçüktür sıfır ise i üzerinde fonksiyon aşağı konkavdır.
+
+181
+00:31:04,536 --> 00:31:05,915
+Yukarı konkav bu.
+
+182
+00:31:06,155 --> 00:31:07,975
+Aşağı konkav ise bu arkadaşlar.
+
+183
+00:31:09,155 --> 00:31:11,155
+Eğer x kare artı 2. türevi büyüktür.
+
+184
+00:31:11,155 --> 00:31:20,796
+Eğer x0 f'nin dükküm noktası ve f'nin 2. türevi mevcut ise o zaman f fonksiyonu x0 içeriden bir açık aralığı türev ne biletir?
+
+185
+00:31:22,155 --> 00:31:33,375
+f x0'ın bir tarafında artan, bir tarafında azalan olduğu da o zaman f türev x0'da bir yerel minimum veya yerel maksimumu sahip olmalıdır.
+
+186
+00:31:33,715 --> 00:31:37,955
+Bu ise f'nin 2. türevinin 0 olduğunu gösterir.
+
+187
+00:31:55,251 --> 00:31:56,551
+Yani büküm noktası için
+
+188
+00:32:14,387 --> 00:32:25,387
+açık aralık aldık, yakın bir açık aralık. Fonksiyon türevlenebilirdir. Bir tarafta artan, bir tarafta azalan olursa,
+
+189
+00:32:31,508 --> 00:32:46,327
+Şurada mesela bakın, burada bir tarafta artan, bir tarafta azalan ise fonksiyon, f türev, x0'da bir yerel maksimum ya da yerel minimum sahip olmalıdır.
+
+190
+00:32:46,528 --> 00:32:51,127
+f türev x0'da, ikinci türev de o zaman 0 olur bu sefer de.
+
+191
+00:33:06,675 --> 00:33:09,955
+Hocam ben F'in ikinci türevinde 0 olmasını anlayamadım.
+
+192
+00:33:13,748 --> 00:33:24,188
+Yani şöyle, f'in türevi x0'da bir yerel minimum veya yerel maksimuma sahip ise, f'in ikinci türevi 0 oluyor.
+
+193
+00:33:25,087 --> 00:33:32,888
+Yani f'in ikinci türevi 0'a sahip olursa, f'in türevi de yerel minimum veya yerel maksimuma sahip oluyor.
+
+194
+00:33:33,648 --> 00:33:38,788
+Bu durumda da f fonksiyonu için bir büküm noktası oluşuyor. Onu açıklıyor.
+
+195
+00:33:38,788 --> 00:33:39,788
+Tamamdır.
+
+196
+00:33:39,788 --> 00:33:44,488
+Yani büküm noktası oluşmasının arka planını açıklıyor.
+
+197
+00:33:44,768 --> 00:33:45,968
+Büküm noktası oluşuyor.
+
+198
+00:33:46,888 --> 00:33:49,228
+Bu fonksiyonun grafiği.
+
+199
+00:33:50,548 --> 00:33:52,048
+f'in türevi fonksiyonu ise,
+
+200
+00:33:53,728 --> 00:33:55,968
+bir tarafta artan, bir tarafta azalan oluyor.
+
+201
+00:33:56,867 --> 00:33:58,327
+Ama f'in ikinci türevi
+
+202
+00:33:58,327 --> 00:34:01,988
+0 oluyor.
+
+203
+00:34:02,488 --> 00:34:05,228
+Yani burada bir şey oluşuyor.
+
+204
+00:34:05,648 --> 00:34:07,807
+Ama aslında fonksiyonun grafiği bu şekilde.
+
+205
+00:34:07,807 --> 00:34:13,427
+bir tarafta konkağlık var, bir tarafta aşağı konkağlık var, yukarı konkağlık var.
+
+206
+00:34:14,168 --> 00:34:15,148
+Bunun açıklaması bu.
+
+207
+00:34:17,148 --> 00:34:20,648
+Şimdi örneklere geçelim.
+
+208
+00:34:26,579 --> 00:34:30,659
+Konkablık analıklarını ve büküm noktalarını bulalım fonksiyonu, verilen fonksiyonu.
+
+209
+00:34:34,164 --> 00:34:35,824
+Bu bir polinom fonksiyonu.
+
+210
+00:34:36,164 --> 00:34:37,784
+Zaten tanım kümesini biliyoruz.
+
+211
+00:34:38,244 --> 00:34:40,604
+Real sayılarda tanımlı bir fonksiyon.
+
+212
+00:34:41,644 --> 00:34:43,484
+Yani bize sorun oluşturan bir nokta.
+
+213
+00:34:45,064 --> 00:34:49,584
+Yok her yerde sürekli ve her yerde türevlenebilir bir fonksiyona sahibiz.
+
+214
+00:34:51,064 --> 00:34:52,004
+Türevini alalım direkt.
+
+215
+00:34:52,104 --> 00:34:53,044
+Birinci türevini alalım.
+
+216
+00:34:54,824 --> 00:34:55,844
+6x üzeri 5.
+
+217
+00:34:55,964 --> 00:34:57,004
+Eksi 40x küp.
+
+218
+00:34:57,504 --> 00:34:59,284
+X üzeri 4'ün türevi 4x küp.
+
+219
+00:34:59,944 --> 00:35:01,903
+X üzeri 6'nın türevi 6x üzeri 5.
+
+220
+00:35:02,584 --> 00:35:03,604
+İkinci türevini alalım.
+
+221
+00:35:03,604 --> 00:35:05,704
+30x üzeri 4 eksi 120x kare.
+
+222
+00:35:05,944 --> 00:35:07,544
+Ve ikinci türevini 0 eşitleyeceğiz.
+
+223
+00:35:10,244 --> 00:35:11,724
+30x kare çarpı.
+
+224
+00:35:12,204 --> 00:35:13,224
+X kare eksi 4.
+
+225
+00:35:13,324 --> 00:35:16,724
+X kare eksi 4'ten x eşitir 2 ve x eşitir eksi 2 kökleri geldi.
+
+226
+00:35:17,964 --> 00:35:20,724
+X kareden de çift katlı kök geldi.
+
+227
+00:35:20,944 --> 00:35:21,724
+X eşitir 0.
+
+228
+00:35:22,324 --> 00:35:24,504
+Bu da çift katlı köktür.
+
+229
+00:35:24,564 --> 00:35:25,264
+X eşitir 0.
+
+230
+00:35:27,104 --> 00:35:28,504
+Çünkü bakın karesi var.
+
+231
+00:35:28,604 --> 00:35:29,664
+Çift katlı kök oluşuyor.
+
+232
+00:35:30,524 --> 00:35:31,424
+Yukarı konkav.
+
+233
+00:35:31,424 --> 00:35:35,664
+Aşağı konkav ve büküm noktası mı ona bakacağız.
+
+234
+00:35:37,364 --> 00:35:41,423
+Şimdi fonksiyonun ikinci türevine göre işaretini belirleyelim.
+
+235
+00:35:41,424 --> 00:35:44,824
+X'i 2, 0 ve 2 noktalarını belirledim.
+
+236
+00:35:45,384 --> 00:35:47,704
+0'ı çift katlı kök olarak belirledim.
+
+237
+00:35:48,364 --> 00:35:49,884
+2 tane yuvarlak istiyorum.
+
+238
+00:35:49,884 --> 00:35:53,084
+Ve fonksiyonun işaretine bakacağım.
+
+239
+00:35:53,584 --> 00:35:54,584
+İkinci türevinin işareti.
+
+240
+00:35:54,644 --> 00:35:58,124
+X'i 2'den küçükken burası bir kere pozitif olur değil mi?
+
+241
+00:35:58,524 --> 00:36:03,903
+X'i 2'den küçük noktalarda, X'i 3, X'i 4 gibi noktalarda burası zaten pozitif olur.
+
+242
+00:36:03,984 --> 00:36:05,984
+X'i 4 etkilemez.
+
+243
+00:36:06,844 --> 00:36:07,964
+Burası zaten pozitif.
+
+244
+00:36:08,044 --> 00:36:09,524
+Dolayısıyla pozitif oluyor.
+
+245
+00:36:09,524 --> 00:36:13,744
+Ama X'i 2, 0 aralığında bu pozitif, burası negatif çıkıyor.
+
+246
+00:36:14,384 --> 00:36:16,684
+Çünkü X kare 4'ten küçük olacak.
+
+247
+00:36:16,903 --> 00:36:17,924
+X'i 2, 0 aralığında.
+
+248
+00:36:18,924 --> 00:36:20,004
+Dolayısıyla burası negatif.
+
+249
+00:36:20,284 --> 00:36:22,384
+0, 2 aralığında yine çift katlı kök zaten.
+
+250
+00:36:22,524 --> 00:36:23,184
+Değişmiyor işaret.
+
+251
+00:36:23,324 --> 00:36:23,744
+Negatif.
+
+252
+00:36:24,944 --> 00:36:26,304
+Zaten buradan da görebiliyorsunuz.
+
+253
+00:36:26,344 --> 00:36:27,204
+X kare, X'i 4.
+
+254
+00:36:28,644 --> 00:36:30,604
+Negatif bir işaretli bir ifadedir.
+
+255
+00:36:31,104 --> 00:36:33,324
+2'den büyük olduğunda zaten pozitif.
+
+256
+00:36:33,924 --> 00:36:34,944
+Burası 4'ten büyük.
+
+257
+00:36:34,944 --> 00:36:39,344
+Bu zaten hep pozitif.
+
+258
+00:36:40,004 --> 00:36:41,164
+Dolayısıyla işaretini belirledik.
+
+259
+00:36:44,364 --> 00:36:45,224
+Yukarı konkal.
+
+260
+00:36:45,544 --> 00:36:47,464
+X'i 2, X'i 2 aralığında.
+
+261
+00:36:47,544 --> 00:36:48,224
+Yukarı konkal.
+
+262
+00:36:48,724 --> 00:36:49,864
+X'i 2, 0 aralığında.
+
+263
+00:36:50,004 --> 00:36:50,704
+Aşağı konkal.
+
+264
+00:36:51,524 --> 00:36:52,404
+0, 2 aralığında.
+
+265
+00:36:52,564 --> 00:36:53,244
+Aşağı konkal.
+
+266
+00:36:53,944 --> 00:36:54,984
+2, sonuç aralığında.
+
+267
+00:36:55,444 --> 00:36:56,524
+Yukarı konkal.
+
+268
+00:36:58,144 --> 00:36:58,864
+Bakın.
+
+269
+00:37:00,324 --> 00:37:01,544
+Ne olmuş oldu?
+
+270
+00:37:11,315 --> 00:37:15,415
+Burada yukarı konkav, aşağı konkav büküm noktası oluştu.
+
+271
+00:37:16,895 --> 00:37:22,435
+Yani noktanın bir tarafında yukarı konkav, bir tarafında aşağı konkav ise büküm noktası diyordu.
+
+272
+00:37:22,715 --> 00:37:26,415
+Bu noktada da fonksiyon türevi mevcut. Her noktada zaten türevi mevcuttu.
+
+273
+00:37:26,715 --> 00:37:28,135
+Polinom fonksiyonumuz.
+
+274
+00:37:29,155 --> 00:37:30,615
+Burası bir büküm noktası oldu.
+
+275
+00:37:32,115 --> 00:37:34,055
+Burada yine yukarı konkav, aşağı konkav.
+
+276
+00:37:34,175 --> 00:37:38,475
+İki noktasının sol tarafında aşağı konkav, sağ tarafında yukarı konkav.
+
+277
+00:37:38,475 --> 00:37:41,215
+Burası da büküm noktası, burası da büküm noktası oldu.
+
+278
+00:37:44,215 --> 00:37:45,635
+Dolayısıyla bakın nedir?
+
+279
+00:37:47,076 --> 00:37:49,055
+Eksi sonsuz, eksi iki aralığında
+
+280
+00:37:52,596 --> 00:37:54,835
+ve 2 sonsuz aralığında yukarı konkal.
+
+281
+00:37:55,635 --> 00:37:58,856
+eksi 2, 2 aralığında aşağı konkal.
+
+282
+00:38:00,155 --> 00:38:06,596
+büküm noktaları da x eşitleri 2 ve x eşitleri eksi 2 noktaları da büküm noktaları oldu.
+
+283
+00:38:07,396 --> 00:38:09,635
+Evet, sorusu olan var mı bu soruyla ilgili?
+
+284
+00:38:12,376 --> 00:38:14,835
+ya da büküm noktaları konkallıkla ilgili?
+
+285
+00:38:20,467 --> 00:38:21,407
+Sınavla ilgili
+
+286
+00:38:21,407 --> 00:38:23,447
+duyuruyu attım size.
+
+287
+00:38:23,987 --> 00:38:25,927
+Sizin sınavınız ne zaman biliyorsunuz değil mi?
+
+288
+00:38:29,268 --> 00:38:30,288
+Hocam saat
+
+289
+00:38:30,288 --> 00:38:31,867
+kaçta bizim gireceğimiz belli mi?
+
+290
+00:38:33,527 --> 00:38:34,207
+Ya ben size
+
+291
+00:38:34,207 --> 00:38:35,467
+attım ya şey bir tane
+
+292
+00:38:35,467 --> 00:38:38,947
+Aynen yazıyor orada.
+
+293
+00:38:38,947 --> 00:38:39,707
+Orada yazıyor.
+
+294
+00:38:40,347 --> 00:38:41,887
+Kaç yazıyor sizin gruplar?
+
+295
+00:38:42,487 --> 00:38:43,887
+Şimdi şöyle bir şey olmuş galiba.
+
+296
+00:38:49,027 --> 00:38:50,147
+Mat bir grup
+
+297
+00:38:50,147 --> 00:38:52,748
+1 ve 25 arası gruplar herhalde.
+
+298
+00:38:54,467 --> 00:38:56,627
+1 ile 3 arası olacak sınav.
+
+299
+00:38:59,367 --> 00:39:00,627
+Mat 1071'sin
+
+300
+00:39:00,627 --> 00:39:01,887
+kodunuz değil mi?
+
+301
+00:39:03,907 --> 00:39:04,967
+Mat 1071
+
+302
+00:39:04,967 --> 00:39:06,627
+matematik 1, grup 1, 25
+
+303
+00:39:06,627 --> 00:39:08,327
+1986 öğrenci diyor.
+
+304
+00:39:08,327 --> 00:39:09,248
+1'de olacak diyor.
+
+305
+00:39:10,647 --> 00:39:11,707
+Grup 25
+
+306
+00:39:11,707 --> 00:39:13,288
+59 arası da
+
+307
+00:39:13,288 --> 00:39:15,467
+işte onlar da 3'te olacakmış.
+
+308
+00:39:15,748 --> 00:39:17,268
+Yani sizinki 1'de oluyor o zaman değil mi?
+
+309
+00:39:17,327 --> 00:39:18,407
+Grup 6 olduğuna göre
+
+310
+00:39:18,407 --> 00:39:20,587
+sizin sınavınız 1'de.
+
+311
+00:39:20,587 --> 00:39:38,307
+Evet.
+
+312
+00:39:26,099 --> 00:39:27,480
+Grup 5 değil mi hocam?
+
+313
+00:39:28,920 --> 00:39:31,380
+Grup 6'sınız siz ya. Grup 6 değil misiniz ya?
+
+314
+00:39:32,279 --> 00:39:33,219
+Ben şey...
+
+315
+00:39:33,219 --> 00:39:34,219
+6'yız hocam, 6'yız.
+
+316
+00:39:34,779 --> 00:39:36,819
+Zaten WhatsApp grubunda da öyle yazıyor ya.
+
+317
+00:39:37,500 --> 00:39:38,460
+Siz grup 6'sınız.
+
+318
+00:39:39,460 --> 00:39:40,980
+Yok, 5 deyince yanlış mı geldim?
+
+319
+00:39:42,079 --> 00:39:42,839
+Yok, yok.
+
+320
+00:39:43,519 --> 00:39:44,440
+Siz grup 6'sınız.
+
+321
+00:39:50,516 --> 00:39:55,135
+Yani 21 Kasım, Cumartesi, birde sizin sınavınız.
+
+322
+00:40:00,211 --> 00:40:05,451
+Herhalde iki gruba farklı sorular sorulacak. İki tane grup belirlemişler o yüzden.
+
+323
+00:40:16,115 --> 00:40:23,556
+Bu konu yokmuş sınavda, Pınar Hoca'nın havesinde. Evet, bu konu yok. Yani şeye kadar konular. Nereye kadar?
+
+324
+00:40:25,715 --> 00:40:31,795
+Pınar Hoca'nın havesinde var. Transandant fonksiyonlar, L'Hospital kuralı falan var. Oraya kadar galiba.
+
+325
+00:40:39,315 --> 00:40:41,096
+Ama bunları da bilmeniz gerekiyor.
+
+326
+00:40:43,995 --> 00:40:45,895
+Bizden sonrakiler yaşlı yaşamış.
+
+327
+00:40:46,815 --> 00:40:50,435
+Yok ya, sorular ayrılacak. Aynı soruları soracaklar.
+
+328
+00:40:55,603 --> 00:40:57,384
+Aynı soruları soracak değiller ya.
+
+329
+00:41:03,827 --> 00:41:05,188
+İkizde aynı şansa sahip.
+
+330
+00:41:30,835 --> 00:41:32,295
+Hocam bir şey sorabilir miyim?
+
+331
+00:41:33,875 --> 00:41:34,596
+Tabii ki.
+
+332
+00:41:35,215 --> 00:41:38,975
+Hocam haftaya, son haftaya sınavdan önce.
+
+333
+00:41:39,775 --> 00:41:40,615
+Evet.
+
+334
+00:41:41,395 --> 00:41:44,495
+Orada genel bir uygulama yapacak mıyız yoksa?
+
+335
+00:41:46,655 --> 00:41:48,275
+Tabii tabii ki uygulama yaparız.
+
+336
+00:41:49,215 --> 00:41:53,815
+Belirsizlikler ve L'Hospital kuralına kadar şeyler, sorumlu olduğumuz yerler.
+
+337
+00:41:53,815 --> 00:41:54,775
+Onlar da da.
+
+338
+00:41:54,775 --> 00:42:03,795
+Yani fonksiyonlar, limit süreklilik, süreklilik, türev, türev kuraları, lineerleştirme, diferansiyel kavramları, bunlarla hesaplamalar, fonksiyonların yaklaşık değerini,
+
+339
+00:42:04,455 --> 00:42:13,855
+artan-azılan fonksiyonlar, transandant fonksiyonlar, ters fonksiyonlar, hiperbolik fonksiyonlar, belirsizlikler ve l'Hospital.
+
+340
+00:42:16,755 --> 00:42:19,195
+Bu şekilde fonksiyonların konuları.
+
+341
+00:42:19,195 --> 00:42:25,495
+Yani belirsizlikler ve l'Hospital kuralına kadar sorumlusunuz arkadaşlar.
+
+342
+00:42:25,495 --> 00:42:26,055
+Tabii.
+
+343
+00:42:41,619 --> 00:42:43,839
+Evet, bu soruda soru yoksa geçiyorum.
+
+344
+00:42:44,859 --> 00:42:47,079
+Yine bir polinom fonksiyonu vermiş arkadaşlar.
+
+345
+00:42:49,460 --> 00:42:51,739
+Başka grafik var mı? 2. türev testi.
+
+346
+00:43:44,947 --> 00:43:49,228
+Şimdi yine polinom fonksiyonunun her yerde sürekli olduğunu biliyoruz.
+
+347
+00:43:52,851 --> 00:43:53,951
+Evet zil sesi kötü.
+
+348
+00:43:55,511 --> 00:43:59,731
+Real sayılarda tanımlı fonksiyon.
+
+349
+00:44:00,192 --> 00:44:01,071
+Her yerde tanımlı.
+
+350
+00:44:01,172 --> 00:44:03,011
+Dolayısıyla bize problem çıkaran nokta yok.
+
+351
+00:44:03,811 --> 00:44:06,211
+Hemen ilk olarak türevini alacağız.
+
+352
+00:44:07,132 --> 00:44:08,891
+Fonksiyon türevini aldık.
+
+353
+00:44:11,011 --> 00:44:12,211
+Birinci türev.
+
+354
+00:44:13,491 --> 00:44:14,771
+Sıfır noktalarını belirleyelim.
+
+355
+00:44:15,612 --> 00:44:17,612
+Çünkü bu soruda bize ekstremumları
+
+356
+00:44:17,612 --> 00:44:21,951
+artanlık ve azalanlık bölgelerini sormuş.
+
+357
+00:44:23,731 --> 00:44:24,652
+Birinci türevi aldık.
+
+358
+00:44:25,051 --> 00:44:26,951
+X eşitle sıfır çift katlı kök oldu.
+
+359
+00:44:27,291 --> 00:44:28,431
+Bakın x kare var burada.
+
+360
+00:44:28,652 --> 00:44:30,551
+2x eksi 3'ten de 3 bölü 2 geldi.
+
+361
+00:44:31,612 --> 00:44:32,591
+Kritik noktalarım.
+
+362
+00:44:33,851 --> 00:44:34,891
+Sıfır ve 3 bölü 2.
+
+363
+00:44:37,931 --> 00:44:39,152
+İkinci türevi aldım.
+
+364
+00:44:40,271 --> 00:44:41,692
+12x kare x 12x.
+
+365
+00:44:41,791 --> 00:44:43,291
+12x parantizinde x eksi 1.
+
+366
+00:44:43,291 --> 00:44:47,091
+X eşitle sıfır ve x eşittir 1 oldu.
+
+367
+00:44:47,091 --> 00:44:50,132
+x eşitle sıfır.
+
+368
+00:44:50,291 --> 00:44:52,911
+Aynı zamanda f'in ikinci türevi içinde bir kökmüş.
+
+369
+00:44:55,451 --> 00:44:58,771
+Şimdi noktaları belirleyelim.
+
+370
+00:44:58,771 --> 00:45:02,411
+0, 1, 3 bölü 2 noktalarını belirledik.
+
+371
+00:45:02,571 --> 00:45:04,571
+Buna göre bir işaret tablosu oluşturacağız.
+
+372
+00:45:05,731 --> 00:45:11,771
+Bu işaret tablosunda fonksiyonun türevi, fonksiyonun ikinci türevi ve fonksiyonun yapısını belirleyeceğiz.
+
+373
+00:45:11,771 --> 00:45:17,211
+F'in türevi eksi sonsuz sıfır aralığında negatif.
+
+374
+00:45:18,991 --> 00:45:20,192
+Bunun işareti negatif.
+
+375
+00:45:21,371 --> 00:45:22,551
+0, 1 aralığında negatif.
+
+376
+00:45:23,011 --> 00:45:25,271
+3 bölü 2'ye kadar negatif işareti.
+
+377
+00:45:26,031 --> 00:45:29,711
+3 bölü 2'den sonra, yani şurası 3 bölü 2'den küçük olduğunda zaten.
+
+378
+00:45:30,591 --> 00:45:31,871
+Dolayısıyla burası negatif oluyor.
+
+379
+00:45:32,172 --> 00:45:33,672
+Fonksiyonun işareti negatif oluyor.
+
+380
+00:45:33,771 --> 00:45:34,831
+Türevi işareti negatif oluyor.
+
+381
+00:45:35,811 --> 00:45:39,251
+3 bölü 2'den büyük olursa burası, buranın işareti pozitif oluyor.
+
+382
+00:45:39,391 --> 00:45:41,211
+Dolayısıyla fonksiyonun işareti de pozitif oluyor.
+
+383
+00:45:41,771 --> 00:45:46,971
+Ve böylelikle artan ve azan olduğu ayakları belirledik.
+
+384
+00:45:49,851 --> 00:45:52,951
+Azalan, azalan, azalan.
+
+385
+00:45:56,307 --> 00:45:57,887
+Şimdi konkavlıklarına bakalım.
+
+386
+00:45:58,307 --> 00:45:59,907
+F'in ikinci türevinin işaretine bakalım.
+
+387
+00:46:00,088 --> 00:46:01,807
+Eksi sonsuz sıfır aralığında burası
+
+388
+00:46:01,807 --> 00:46:03,688
+negatif
+
+389
+00:46:03,688 --> 00:46:06,108
+negatif, negatif çarpı negatif
+
+390
+00:46:06,108 --> 00:46:07,208
+işaret pozitif oldu.
+
+391
+00:46:08,387 --> 00:46:09,867
+Sıfır bir aralığında negatif.
+
+392
+00:46:11,387 --> 00:46:11,967
+Çünkü burası
+
+393
+00:46:11,967 --> 00:46:13,788
+pozitif, burası negatif oluyor. Dolayısıyla
+
+394
+00:46:13,788 --> 00:46:14,668
+işaret negatif.
+
+395
+00:46:15,668 --> 00:46:17,967
+Bir üç bölü iki aralığında pozitif zaten.
+
+396
+00:46:18,367 --> 00:46:19,748
+Birden büyük olunca burası artık
+
+397
+00:46:19,748 --> 00:46:21,148
+pozitif oluyor zaten.
+
+398
+00:46:22,047 --> 00:46:23,887
+Üç bölü iki den büyük iken de
+
+399
+00:46:23,887 --> 00:46:24,827
+hep pozitif zaten.
+
+400
+00:46:24,827 --> 00:46:27,228
+x de pozitif, x eksi 1 de
+
+401
+00:46:27,228 --> 00:46:28,588
+pozitif oluyor.
+
+402
+00:46:32,659 --> 00:46:42,639
+Dolayısıyla azalan iken, ikinci süre pozitifmiş, yukarı konka olarak azalan.
+
+403
+00:46:43,759 --> 00:46:51,719
+Aşağı konka olarak azalan, aşağı konka olarak, pardon yukarı konka olarak azalan olacak fonksiyon.
+
+404
+00:46:54,219 --> 00:46:55,719
+Şimdi burada...
+
+405
+00:46:58,835 --> 00:47:03,075
+Bir tarafta yukarı konkav, bir tarafta aşağı konkav. Burası bir büküm noktası.
+
+406
+00:47:08,659 --> 00:47:13,879
+Bir tarafta aşağı konka, bir tarafta yukarı konka. Burası bir büküm noktası yine.
+
+407
+00:47:17,396 --> 00:47:25,476
+Aynı zamanda azalanlıktan artanlar nerede geçiyor? 3 bölü 2 noktasında geçiyor. Burada da bir fonksiyonun bir minimumu var arkadaşlar.
+
+408
+00:47:30,612 --> 00:47:34,472
+yukarı konkavlıkta azalan olursa böyle, artan ise böyle.
+
+409
+00:47:34,972 --> 00:47:38,432
+aşağı konkavlıkta artan böyle, azalan böyle oluyor.
+
+410
+00:47:39,872 --> 00:47:42,692
+her grafin şekilleri bu şekilde değişiyor arkadaşlar.
+
+411
+00:47:45,112 --> 00:47:48,912
+şimdi dolayısıyla bunları bu verilere göre fonksiyonun grafinç dersek
+
+412
+00:47:56,052 --> 00:48:02,052
+x sonsuz sıfır aralığında fonksiyon azalanmış.
+
+413
+00:48:04,112 --> 00:48:09,312
+x sonsuzudan sıfıra kadar yukarı konkur olarak azalıyor. Bakın bu şekilde azalacak.
+
+414
+00:48:10,592 --> 00:48:11,711
+Sıfır noktasına kadar.
+
+415
+00:48:14,052 --> 00:48:17,572
+x eşittir sıfır noktasında fonksiyon bir değerini alıyor.
+
+416
+00:48:18,952 --> 00:48:21,211
+x eşittir sıfırda f sıfır eşittir bir.
+
+417
+00:48:21,211 --> 00:48:26,012
+x eşittir bir de de f bir eşittir sıfır.
+
+418
+00:48:26,012 --> 00:48:29,512
+x eşittir bir de f üç bölü iki de de x on bir bölü sefiz ikiz.
+
+419
+00:48:29,632 --> 00:48:30,852
+Bunları hesaplamanız gerekiyor.
+
+420
+00:48:31,872 --> 00:48:33,352
+Bir noktasından geçti.
+
+421
+00:48:34,771 --> 00:48:37,172
+Aşağı konkur olarak azalan yine.
+
+422
+00:48:38,892 --> 00:48:40,771
+Burada yukarı konkur olarak azalan.
+
+423
+00:48:40,952 --> 00:48:42,092
+3 bölü iki noktasına kadar.
+
+424
+00:48:42,372 --> 00:48:44,412
+3 bölü iki noktasından sonra artanlık var.
+
+425
+00:48:45,352 --> 00:48:47,231
+Yukarı konkur olarak artıyor fonksiyon.
+
+426
+00:48:47,532 --> 00:48:49,672
+Bakın yukarı konkur olarak artıyor.
+
+427
+00:48:52,172 --> 00:48:55,132
+Trafikte yaklaşık olarak bu şekilde belirleniyor arkadaşlar.
+
+428
+00:49:00,532 --> 00:49:02,812
+Evet burada anlaşılmayan bir şey var mı arkadaşlar?
+
+429
+00:49:05,672 --> 00:49:06,872
+Birinci türevini aldık.
+
+430
+00:49:08,412 --> 00:49:10,132
+Kritik noktalarını belirledik.
+
+431
+00:49:10,231 --> 00:49:11,251
+İkinci türevini aldık.
+
+432
+00:49:11,492 --> 00:49:12,751
+Kritik noktalarını belirledik.
+
+433
+00:49:14,032 --> 00:49:15,132
+Eksi bir mi?
+
+434
+00:49:15,992 --> 00:49:17,052
+Nereyi anlamadım [öğrenci]?
+
+435
+00:49:18,192 --> 00:49:19,731
+İkinci türevini aldık.
+
+436
+00:49:19,812 --> 00:49:21,412
+Sıfır yapan noktaları belirledik.
+
+437
+00:49:22,612 --> 00:49:22,932
+Ve
+
+438
+00:49:22,932 --> 00:49:25,711
+bunlara göre işaret tablosu oluşturduk.
+
+439
+00:49:26,211 --> 00:49:27,771
+F'in türevi negatifse azalan
+
+440
+00:49:27,771 --> 00:49:29,972
+F'in türevi pozitifse artan oldu fonksiyon.
+
+441
+00:49:30,532 --> 00:49:33,052
+F'in ikinci türevi pozitifse yukarı konkav.
+
+442
+00:49:33,132 --> 00:49:35,472
+F'in ikinci türevi negatifse aşağı konkav oldu.
+
+443
+00:49:36,132 --> 00:49:37,172
+Bunlara bakarak da
+
+444
+00:49:37,172 --> 00:49:39,352
+aynı zamanda fonksiyonun eksenleri
+
+445
+00:49:39,352 --> 00:49:40,652
+kestiği noktaları da belirledik.
+
+446
+00:49:40,751 --> 00:49:41,711
+X eşitli sıfır
+
+447
+00:49:41,711 --> 00:49:45,211
+noktasını nereden kesiyor?
+
+448
+00:49:45,312 --> 00:49:47,292
+Y eşitli sıfır noktasını nereden kesiyor?
+
+449
+00:49:48,052 --> 00:49:49,152
+O noktaları belirledik.
+
+450
+00:49:49,332 --> 00:49:51,032
+Ve sıfır ve bir noktasında
+
+451
+00:49:51,032 --> 00:49:53,032
+kritik noktalarda
+
+452
+00:49:53,032 --> 00:49:53,872
+o noktalarda
+
+453
+00:49:53,872 --> 00:49:58,492
+fonksiyonun değerini belirleyip
+
+454
+00:49:58,492 --> 00:50:00,072
+işte y ekseni nereden kesti?
+
+455
+00:50:00,532 --> 00:50:03,332
+kestiği noktada değerleri nelerdir?
+
+456
+00:50:03,452 --> 00:50:04,852
+Maksimum ve minimum noktasında
+
+457
+00:50:04,852 --> 00:50:05,852
+değerleri nedir?
+
+458
+00:50:05,912 --> 00:50:06,751
+Onları belirledik.
+
+459
+00:50:07,192 --> 00:50:08,692
+Ve grafiğini çizdik.
+
+460
+00:50:16,179 --> 00:50:23,980
+Size grafiği verip burayı A noktası diyebilir, B noktası diyebilir. Buralarda boşluklar bırakıp ışıklar da A ve B'ye sorabilir yani.
+
+461
+00:50:27,795 --> 00:50:28,755
+Şuna A der.
+
+462
+00:50:29,975 --> 00:50:31,195
+Şuna B der.
+
+463
+00:50:31,675 --> 00:50:33,475
+Bu kadar kolay sorarım bilmiyorum da.
+
+464
+00:50:34,915 --> 00:50:37,755
+Ya da şu grafiğin kısmını boş bırakabilir.
+
+465
+00:50:38,056 --> 00:50:39,015
+Sarkı sorular olabilir.
+
+466
+00:50:43,251 --> 00:50:45,951
+Evet, anlaşılmayan bir yer var mı arkadaşlar bu soruda?
+
+467
+00:50:49,032 --> 00:50:52,172
+Yoksa bir ara verelim. Daha sonra devam edelim.
+
+468
+01:09:41,171 --> 01:09:46,991
+Sesim geliyor mu arkadaşlar? Yerel ekstremler için 2. türev testine geçiyoruz şimdi.
+
+469
+01:09:48,551 --> 01:09:53,911
+2. türeve bakarak maksimum ve minimum mu? Belirleyebiliriz.
+
+470
+01:10:08,020 --> 01:10:24,620
+Şimdi fonksiyonun kritik noktasına sahipsek eğer, fonksiyonun türevini sıfır yapan bir nokta varsa elimizde ve o noktada ikinci türev sıfırdan küçükse bu durumda x sıfırda bir yerel maksimumuz var.
+
+471
+01:10:26,000 --> 01:10:34,940
+Yine fonksiyonu sıfır yapan bir kritik noktaya sahibiz. İkinci türev büyüktür sıfır ise yine benzer şekilde yerel minimuma sahip oluyor.
+
+472
+01:10:34,940 --> 01:10:43,200
+Burada bir ters durum var. Bakın ikinci türev küçüktür sıfırsa maksimum, küçüktür sıfırsa minimuma sahip fonksiyon.
+
+473
+01:10:51,444 --> 01:10:56,804
+Yine f'in türevi sıfır ve ikinci türevi de sıfırsa herhangi bir çıkarımda bulunamıyoruz.
+
+474
+01:10:57,604 --> 01:11:05,384
+Yani bu noktada bir yerel maksimum olabilir, yerel minimum olabilir veya fonksiyon bir büküm noktasına sahip olabilir.
+
+475
+01:11:13,043 --> 01:11:15,623
+Asimptot kavramına geçelim.
+
+476
+01:11:17,783 --> 01:11:18,863
+Asimptot şudur.
+
+477
+01:11:21,923 --> 01:11:25,243
+Mesela x, y eksenlerinde bir doğru çizdik.
+
+478
+01:11:25,344 --> 01:11:26,884
+Fonksiyon bu doğruya yaklaşıyor.
+
+479
+01:11:27,663 --> 01:11:29,224
+Ama sonsuza kadar yaklaşıyor.
+
+480
+01:11:29,804 --> 01:11:31,823
+Bu durumda bu noktada bir asimptot vardır diyoruz.
+
+481
+01:11:31,943 --> 01:11:32,804
+Bunu nasıl belirliyoruz?
+
+482
+01:11:33,743 --> 01:11:37,943
+Fonksiyonda x sonsuza giderken y bir noktaya yaklaşıyorsa
+
+483
+01:11:37,943 --> 01:11:39,943
+ya da y sonsuza giderken
+
+484
+01:11:39,943 --> 01:11:45,104
+x ekseninde fonksiyon bir noktaya yaklaşıyorsa
+
+485
+01:11:45,104 --> 01:11:48,064
+işte bu noktada bir asimptot diyoruz.
+
+486
+01:11:48,163 --> 01:11:48,543
+Bir de
+
+487
+01:11:48,543 --> 01:11:53,344
+bir dikey doğruya sahibiz
+
+488
+01:11:53,344 --> 01:11:56,983
+ve bu doğruya yaklaşıyor fonksiyon.
+
+489
+01:11:57,644 --> 01:11:59,644
+Ancak hiçbir zaman bu doğru olmuyor.
+
+490
+01:12:00,203 --> 01:12:01,543
+Bu doğruya yaklaşıyor.
+
+491
+01:12:01,863 --> 01:12:03,163
+Sonsuza kadar da yaklaşıyor.
+
+492
+01:12:03,564 --> 01:12:05,344
+Yani fonksiyonu sonsuza götürdüğümüzde
+
+493
+01:12:05,344 --> 01:12:07,264
+bu doğruya yakın değerler oluyor.
+
+494
+01:12:07,943 --> 01:12:10,463
+Bu durumda da ilk asimptot kavramımız var.
+
+495
+01:12:10,963 --> 01:12:12,403
+Buna da ilk asimptot diyoruz.
+
+496
+01:12:13,043 --> 01:12:14,684
+Şimdi tek tek bu kavramları açıklayalım.
+
+497
+01:12:17,283 --> 01:12:19,104
+Asimptot sonsuza giden bir eğrinin
+
+498
+01:12:19,104 --> 01:12:22,344
+çeşitli noktalarının gittikçe yaklaştığı bir eğri veya doğrudur.
+
+499
+01:12:23,703 --> 01:12:26,623
+Doğru dediğim ilk asimptot kavramı
+
+500
+01:12:30,707 --> 01:12:34,007
+ya da nokta yaklaşıyorlar. O noktada çizdiğimiz doğruya yaklaşıyorlar.
+
+501
+01:12:35,367 --> 01:12:36,707
+Diki asimptot...
+
+502
+01:12:40,020 --> 01:12:47,440
+Şöyle bir şey, x eksenine bir noktaya yaklaştığımızda fonksiyon sonsuza gidiyor.
+
+503
+01:12:48,400 --> 01:12:53,760
+Bakın, x ekseninde a noktamız var.
+
+504
+01:12:53,760 --> 01:13:00,180
+A noktasına yaklaşıyoruz, fonksiyon sonsuza gidiyor.
+
+505
+01:13:02,740 --> 01:13:06,480
+Sesim net geliyor mu arkadaşlar, internet bağlantısında bir problem var diyor.
+
+506
+01:13:10,195 --> 01:13:11,716
+Sesim size net ulaşıyor mu?
+
+507
+01:13:14,216 --> 01:13:15,195
+Kesiksiz. Tamam.
+
+508
+01:13:18,815 --> 01:13:19,536
+Teşekkürler.
+
+509
+01:13:20,916 --> 01:13:23,576
+X giderken A'ya negatif yönden
+
+510
+01:13:23,576 --> 01:13:26,695
+yani mesela A'ya bu taraftan yaklaşıyoruz.
+
+511
+01:13:26,996 --> 01:13:29,395
+Negatif yönden. A'dan küçük değerler yaklaşıyoruz.
+
+512
+01:13:29,395 --> 01:13:33,195
+Bu durumda A'nın o noktasına yaklaşırken
+
+513
+01:13:33,195 --> 01:13:36,135
+y ekseninde bakın fonksiyonun aldığı değerler sonsuza
+
+514
+01:13:36,135 --> 01:13:40,235
+fonksiyonun y ekseninde aldığı değerler sonsuza gidiyor.
+
+515
+01:13:40,336 --> 01:13:41,635
+Sonsuza kadar değer alıyor y ekseninde.
+
+516
+01:13:42,095 --> 01:13:43,576
+Ama X'ler A'ya yaklaşıyor bakın.
+
+517
+01:13:44,475 --> 01:13:46,216
+Ya da A'ya pozitif yönden yaklaşıyoruz.
+
+518
+01:13:46,395 --> 01:13:48,155
+X giderken A'ya pozitif yönden
+
+519
+01:13:48,155 --> 01:13:51,015
+bakın A'dan büyük değerlerle A'ya yaklaşıyoruz.
+
+520
+01:13:51,135 --> 01:13:52,836
+Ama A'ya yaklaşırken
+
+521
+01:13:52,836 --> 01:13:54,916
+X değerleri A'ya yaklaşırken
+
+522
+01:13:54,916 --> 01:13:56,315
+fonksiyon ne oluyor? Sonsuza.
+
+523
+01:13:57,435 --> 01:13:59,775
+Yani mesela 1 bölü X fonksiyonu nerede?
+
+524
+01:14:00,595 --> 01:14:03,275
+Dike Asim tuta sahiptir. 1 bölü X fonksiyonu.
+
+525
+01:14:06,135 --> 01:14:08,515
+1 bölü X'ler dedi ki Asim tuta sahiptir.
+
+526
+01:14:09,756 --> 01:14:10,275
+Cevapla.
+
+527
+01:14:10,296 --> 01:14:10,855
+Sıfır hocam.
+
+528
+01:14:13,355 --> 01:14:15,115
+Sıfır. Evet. Teşekkürler.
+
+529
+01:14:15,235 --> 01:14:15,576
+Follow-up.
+
+530
+01:14:16,055 --> 01:14:16,796
+Gel derim hocam.
+
+531
+01:14:17,815 --> 01:14:18,735
+Sıfır noktasında
+
+532
+01:14:18,735 --> 01:14:21,315
+sıfır noktasında
+
+533
+01:14:21,315 --> 01:14:24,615
+sıfır yaklaştığımız
+
+534
+01:14:24,615 --> 01:14:26,235
+takdirde
+
+535
+01:14:26,235 --> 01:14:27,195
+Hocam ses gidiyor.
+
+536
+01:14:27,435 --> 01:14:28,076
+Şimdi oldu.
+
+537
+01:14:30,416 --> 01:14:31,916
+Sizin ses kesiliyor hocam arada.
+
+538
+01:14:32,315 --> 01:14:33,036
+Şimdi geldi o.
+
+539
+01:14:33,115 --> 01:14:34,095
+Sıfır yaklaştığımız
+
+540
+01:14:34,095 --> 01:14:35,416
+aradaki
+
+541
+01:14:35,416 --> 01:14:37,475
+internet connection
+
+542
+01:14:37,475 --> 01:14:38,355
+unstayılıyor.
+
+543
+01:14:39,775 --> 01:14:40,895
+X sıfıra yaklaşırken
+
+544
+01:14:40,895 --> 01:14:41,576
+1 bölü X
+
+545
+01:14:41,576 --> 01:14:42,635
+sonsuza gidiyor.
+
+546
+01:14:43,355 --> 01:14:45,275
+Yani X sıfıra yaklaştırdığımızda
+
+547
+01:14:45,275 --> 01:14:46,336
+fonksiyon değerleri
+
+548
+01:14:46,336 --> 01:14:47,395
+sonsuza yaklaşıyor.
+
+549
+01:14:47,975 --> 01:14:48,235
+Bu durumda
+
+550
+01:14:48,235 --> 01:14:52,355
+eğer X A'ya
+
+551
+01:14:52,355 --> 01:14:53,235
+negatif yönden yaklaşırken
+
+552
+01:14:53,956 --> 01:14:55,515
+bakın negatif yönden yaklaşırken
+
+553
+01:14:55,515 --> 01:14:56,015
+V A'ya
+
+554
+01:14:56,015 --> 01:14:57,135
+aradaki V A'ya
+
+555
+01:14:57,135 --> 01:14:57,716
+dikkat edin.
+
+556
+01:14:58,536 --> 01:14:59,655
+X A'ya pozitif yönden
+
+557
+01:14:59,655 --> 01:15:00,395
+yaklaşırken
+
+558
+01:15:00,395 --> 01:15:02,216
+artı V A
+
+559
+01:15:02,216 --> 01:15:03,695
+eksi sonsuza fonksiyon.
+
+560
+01:15:04,055 --> 01:15:04,935
+Şöyle de olabilir.
+
+561
+01:15:05,216 --> 01:15:06,496
+Yani Y ekseninde
+
+562
+01:15:06,496 --> 01:15:07,815
+X A'ya yaklaşırken
+
+563
+01:15:07,815 --> 01:15:09,296
+eksi sonsuza doğru
+
+564
+01:15:09,296 --> 01:15:10,175
+gidebilir fonksiyonun
+
+565
+01:15:10,175 --> 01:15:10,975
+grafiği aşağı doğru.
+
+566
+01:15:11,456 --> 01:15:12,055
+Buna da asim
+
+567
+01:15:12,055 --> 01:15:12,655
+topluyoruz.
+
+568
+01:15:13,796 --> 01:15:14,296
+Bu V A
+
+569
+01:15:14,296 --> 01:15:14,876
+bu varsa
+
+570
+01:15:14,876 --> 01:15:16,015
+V A her iki durumda
+
+571
+01:15:16,015 --> 01:15:16,595
+mevcut ise
+
+572
+01:15:16,595 --> 01:15:18,315
+Y işte F X'in grafiği
+
+573
+01:15:18,315 --> 01:15:20,036
+X işte A'da
+
+574
+01:15:20,036 --> 01:15:20,956
+dikiye asimtota
+
+575
+01:15:20,956 --> 01:15:22,275
+sahiptir arkadaşlar.
+
+576
+01:15:22,796 --> 01:15:23,916
+Hocam bir şey sorabilir miyim?
+
+577
+01:15:26,275 --> 01:15:26,555
+Tabii.
+
+578
+01:15:27,475 --> 01:15:27,956
+Hocam bu
+
+579
+01:15:27,956 --> 01:15:29,076
+dikiye asimtot
+
+580
+01:15:29,076 --> 01:15:29,996
+sonsuz
+
+581
+01:15:29,996 --> 01:15:31,015
+süreksizliği
+
+582
+01:15:31,015 --> 01:15:31,456
+belirtiyor.
+
+583
+01:15:31,515 --> 01:15:31,975
+Değil mi hocam?
+
+584
+01:15:39,252 --> 01:15:42,272
+Tabii tabii, sürekli, o noktada fonksiyon süreksiz oluyor.
+
+585
+01:15:43,312 --> 01:15:44,292
+Yo hocam, hangi çeşit oluyor?
+
+586
+01:15:44,292 --> 01:15:46,852
+Süreklilik olmadığı noktada. Evet, sonsuz süreksiz.
+
+587
+01:15:48,252 --> 01:15:50,092
+Peki hocam, esas yerine.
+
+588
+01:15:50,112 --> 01:15:51,132
+Onu ineceksiniz işte.
+
+589
+01:15:52,712 --> 01:15:54,792
+Esas süreksizlik demiştik.
+
+590
+01:15:55,632 --> 01:15:58,052
+Bölümlere ayırmıştık o süreksizliği. Onlara bakın.
+
+591
+01:15:58,412 --> 01:16:00,452
+Hocam hiç esas süreksizlik noktası oluyor.
+
+592
+01:16:00,452 --> 01:16:01,292
+Son olduğunda.
+
+593
+01:16:07,444 --> 01:16:09,404
+Ama onları sınavda soracak
+
+594
+01:16:09,404 --> 01:16:10,423
+açıklardı.
+
+595
+01:16:12,984 --> 01:16:15,284
+Yani esas biraz çok şey geldi.
+
+596
+01:16:15,724 --> 01:16:16,404
+Sanki
+
+597
+01:16:16,404 --> 01:16:18,584
+sonsuz süreksizliğin bir
+
+598
+01:16:18,584 --> 01:16:20,564
+özel hali gibi geldi bana.
+
+599
+01:16:21,704 --> 01:16:23,344
+Yani onu incelemeniz gerekir.
+
+600
+01:16:24,204 --> 01:16:25,104
+Tamamdır hocam.
+
+601
+01:16:25,423 --> 01:16:27,164
+Teşekkürler. Evet evet.
+
+602
+01:16:28,164 --> 01:16:28,964
+Sürekli
+
+603
+01:16:28,964 --> 01:16:30,404
+soruda
+
+604
+01:16:30,404 --> 01:16:33,324
+o noktada değil.
+
+605
+01:16:34,324 --> 01:16:35,704
+Ondan hepsinin ayrılması
+
+606
+01:16:35,704 --> 01:16:37,904
+o noktada
+
+607
+01:16:37,904 --> 01:16:39,464
+tanınma değil mi?
+
+608
+01:16:39,824 --> 01:16:40,944
+Sürekli mi değil mi?
+
+609
+01:16:42,024 --> 01:16:43,923
+Hani yadan süreklilik soldan sürekliliğe
+
+610
+01:16:43,923 --> 01:16:45,624
+eşit mi? Hani onların farklı
+
+611
+01:16:45,624 --> 01:16:47,484
+olduğunda farklı süreksizlik türleri diyordu.
+
+612
+01:16:51,028 --> 01:16:52,268
+tamam, droge.
+
+613
+01:17:29,587 --> 01:17:33,447
+Hocam, neticede 4 tane var değil mi hocam, temel süreklilik?
+
+614
+01:18:27,539 --> 01:18:33,000
+Şu an nasıl arkadaşlar? Ses bağlantısı iyi geliyor mu?
+
+615
+01:18:34,779 --> 01:18:36,260
+Şu an iyi hocam.
+
+616
+01:18:39,060 --> 01:18:45,979
+Bir dakika, bir nevi hattı değiştireceğim. Bir kesiklik olacak, sonra daha iyi olacağını düşünüyorum.
+
+617
+01:18:58,355 --> 01:19:00,315
+Evet şu an bağlandı.
+
+618
+01:19:01,395 --> 01:19:04,355
+Şu an ses net bir şekilde gelmesi gerekiyor.
+
+619
+01:19:04,456 --> 01:19:05,315
+Kesiksiz bir şekilde.
+
+620
+01:19:05,695 --> 01:19:07,115
+Aynen hocam şu an kesiksiz.
+
+621
+01:19:08,496 --> 01:19:10,496
+Öncekine göre daha iyi gelmesi gerekiyor.
+
+622
+01:19:10,496 --> 01:19:11,355
+Aynen hocam.
+
+623
+01:19:12,435 --> 01:19:13,975
+Hocam bir şey sorabilir miyim?
+
+624
+01:19:15,076 --> 01:19:15,335
+Tabii.
+
+625
+01:19:16,195 --> 01:19:22,175
+Hocam şimdi neticede o zaman esas süreksizlikle birlikte dört tane mi var süreksizliğin?
+
+626
+01:19:25,355 --> 01:19:27,115
+Orada verdiğim türler var.
+
+627
+01:19:27,115 --> 01:19:28,235
+Esas süreksizlik.
+
+628
+01:19:28,555 --> 01:19:31,115
+Hatta onları ben şeyde...
+
+629
+01:19:31,695 --> 01:19:35,855
+Süreksizlik türleriyle ilgili bir not daha vardı.
+
+630
+01:19:35,956 --> 01:19:37,456
+Onu da size Whatsapp'tan atarım olur mu?
+
+631
+01:19:38,155 --> 01:19:38,835
+Tamamdır hocam.
+
+632
+01:19:42,195 --> 01:19:44,435
+Telefonda onları ben de size atayım.
+
+633
+01:19:44,496 --> 01:19:45,155
+Hatırlatın bana.
+
+634
+01:19:45,675 --> 01:19:47,815
+Süreksizlik türleriyle ilgili birkaç not daha vardı.
+
+635
+01:19:47,895 --> 01:19:48,416
+Onları da atayım.
+
+636
+01:19:48,515 --> 01:19:49,355
+Oradan da bakarsınız.
+
+637
+01:19:49,715 --> 01:19:51,996
+Çünkü hocam savunum süreksizliği falan da var.
+
+638
+01:19:52,255 --> 01:19:54,036
+Yani o da ne çeşit oluyor onu da anlamadım.
+
+639
+01:19:54,036 --> 01:19:57,576
+Yani o bizim işlediklerimiz haricinde sormayız da.
+
+640
+01:19:57,835 --> 01:20:00,576
+Yani senus x için özel bir durum.
+
+641
+01:20:00,956 --> 01:20:02,855
+Onu da o şekilde bilin yani.
+
+642
+01:20:03,355 --> 01:20:04,735
+Thomas'ın kalkülüsünde var ya.
+
+643
+01:20:06,536 --> 01:20:07,195
+Şimdi
+
+644
+01:20:07,195 --> 01:20:10,576
+şu dikey asimtotu
+
+645
+01:20:10,576 --> 01:20:13,635
+bir kez daha üzerinden geçeceğim arkadaşlar.
+
+646
+01:20:15,655 --> 01:20:17,155
+Bakın dikey asimtot şu.
+
+647
+01:20:17,155 --> 01:20:19,275
+x ekseni
+
+648
+01:20:19,275 --> 01:20:20,376
+y ekseni
+
+649
+01:20:20,376 --> 01:20:50,355
+bir kez daha
+
+650
+01:20:24,115 --> 01:20:26,395
+Bir x eşittir a noktası var elimde.
+
+651
+01:20:27,055 --> 01:20:29,595
+Bu a noktasına sağdan veya soldan yaklaştım.
+
+652
+01:20:30,695 --> 01:20:34,095
+x değerleri a noktasına sağdan veya soldan yaklaşıyor.
+
+653
+01:20:34,315 --> 01:20:36,576
+Fonksiyonun değerleri ne yapıyor?
+
+654
+01:20:37,235 --> 01:20:37,855
+Sonsuza gidiyor.
+
+655
+01:20:37,956 --> 01:20:40,315
+Bakın y ekseninde aldığı değerler fonksiyonun.
+
+656
+01:20:40,515 --> 01:20:44,176
+1, 3, 5, 1 milyon, 1 trilyon sonsuza gidiyor.
+
+657
+01:20:45,176 --> 01:20:48,315
+O zaman diyoruz ki a noktasında, x eşittir a noktasında
+
+658
+01:20:48,315 --> 01:20:51,315
+bu fonksiyonun bir dikey asim totu vardır.
+
+659
+01:20:54,115 --> 01:20:56,076
+Bu sağdan veya soldan olabilir.
+
+660
+01:20:56,315 --> 01:20:57,775
+Soldan yaklaştık mesela burada.
+
+661
+01:20:57,895 --> 01:20:59,655
+Burada sağdan yaklaşmış olabiliriz.
+
+662
+01:20:59,775 --> 01:21:01,256
+Ya da şöyle olabilir.
+
+663
+01:21:01,655 --> 01:21:04,195
+Soldan yaklaştık, eksi sonsuza gidebilir fonksiyon.
+
+664
+01:21:05,015 --> 01:21:07,256
+Ya da sağdan yaklaştık, eksi sonsuza gidebilir.
+
+665
+01:21:07,376 --> 01:21:10,555
+Bu durumlarda da, yani fonksiyonun grafiği bu noktada
+
+666
+01:21:10,555 --> 01:21:13,055
+sonsuza doğru gidiyor y ekseninde aldığı değerler.
+
+667
+01:21:13,195 --> 01:21:15,235
+Ama x eksenin de a noktasına yaklaşıyor.
+
+668
+01:21:15,235 --> 01:21:19,416
+Bu durumda bu noktaya, a noktasına, x eşittir a noktasına
+
+669
+01:21:19,416 --> 01:21:21,756
+dikey asim tot diyoruz.
+
+670
+01:21:22,475 --> 01:21:23,815
+Şimdi anlaşıldı mı?
+
+671
+01:21:24,115 --> 01:21:52,115
+Evet.
+
+672
+01:21:36,916 --> 01:21:37,956
+Ege anladın mı?
+
+673
+01:21:47,444 --> 01:21:47,844
+Tamam.
+
+674
+01:21:48,744 --> 01:21:50,204
+Şimdi yatay asimtota geçelim.
+
+675
+01:21:51,244 --> 01:21:58,204
+Yatay asimtot kavramı bunun y eksenindeki karşılığı aslında.
+
+676
+01:21:58,864 --> 01:22:02,644
+Yani yatay asimtotta da ne yapıyoruz?
+
+677
+01:22:04,584 --> 01:22:06,824
+x ekseni, y ekseni.
+
+678
+01:22:09,564 --> 01:22:11,644
+x, y eksenden çizdim.
+
+679
+01:22:11,644 --> 01:22:19,524
+Şimdi y ekseninde bir l değerim var benim.
+
+680
+01:22:20,104 --> 01:22:20,704
+L noktası.
+
+681
+01:22:21,204 --> 01:22:23,004
+x'leri sonsuza götürüyorum.
+
+682
+01:22:23,464 --> 01:22:26,744
+x'i artı sonsuza götürdüğümde x sonsuza gidiyor.
+
+683
+01:22:27,364 --> 01:22:29,904
+Ama y eksenindeki değerlerim artmıyor.
+
+684
+01:22:30,604 --> 01:22:32,224
+Bir l noktasında sabit kalıyor.
+
+685
+01:22:32,344 --> 01:22:33,384
+Ama x sonsuza gidiyor.
+
+686
+01:22:34,644 --> 01:22:38,984
+Yani x sonsuza giderken fonksiyon bir l noktasına yaklaşıyor.
+
+687
+01:22:40,004 --> 01:22:41,584
+Fonksiyon limiti l oluyor.
+
+688
+01:22:42,284 --> 01:22:44,884
+Limit x sonsuza giderken f x eşitli l oluyor.
+
+689
+01:22:46,304 --> 01:22:48,304
+Bu l noktasında ben yatay asimtot diyorum.
+
+690
+01:22:48,604 --> 01:22:49,564
+Neden yatay asimtot?
+
+691
+01:22:49,804 --> 01:22:51,944
+Çünkü x eksenine yatay bir çizgi çiziyoruz.
+
+692
+01:22:52,904 --> 01:22:55,164
+x eksenine dikeyi çiziyorduk dikeyi asimtotta.
+
+693
+01:22:55,404 --> 01:22:56,304
+Bunu da yatay çiziyoruz.
+
+694
+01:22:56,484 --> 01:22:59,024
+Ya da eksi sonsuza giderken x.
+
+695
+01:22:59,604 --> 01:23:02,344
+Yani mesela fonksiyon böyle geldi.
+
+696
+01:23:02,664 --> 01:23:04,004
+Eksi sonsuza giderken
+
+697
+01:23:04,004 --> 01:23:07,364
+bakın x ekseninde aldığı değerler eksi sonsuza gidiyor.
+
+698
+01:23:07,364 --> 01:23:11,164
+Eksi 1, eksi 2, eksi 500, eksi 1 milyon, eksi 1 trilyon.
+
+699
+01:23:11,164 --> 01:23:14,124
+Ama y ekseninde bir l noktasına yaklaşıyor.
+
+700
+01:23:15,204 --> 01:23:16,364
+Negatif de olabilir.
+
+701
+01:23:16,923 --> 01:23:17,824
+Bir l noktasına yaklaşıyor.
+
+702
+01:23:19,724 --> 01:23:20,304
+Ya da şöyle.
+
+703
+01:23:21,304 --> 01:23:22,584
+Buradan geldi fonksiyon.
+
+704
+01:23:23,464 --> 01:23:26,004
+Eksi sonsuza giderken bir l noktasına yaklaşıyor.
+
+705
+01:23:26,004 --> 01:23:27,704
+Bu durumda l noktasına
+
+706
+01:23:27,704 --> 01:23:30,604
+l noktasına çizdiğim doğruya
+
+707
+01:23:30,604 --> 01:23:31,704
+y eşitir l'ye
+
+708
+01:23:31,704 --> 01:23:35,184
+fonksiyonun yatay asimtotu diyorum arkadaşlar.
+
+709
+01:23:35,684 --> 01:23:37,084
+Bu da yatay asimtot.
+
+710
+01:23:38,544 --> 01:23:40,544
+Yani x a'ya giderken
+
+711
+01:23:40,544 --> 01:23:42,824
+limit sonsuza gidiyorsa
+
+712
+01:23:42,824 --> 01:23:44,144
+ikiye asimtot.
+
+713
+01:23:44,804 --> 01:23:47,524
+x sonsuza giderken fx 1 l değerine eşitse
+
+714
+01:23:47,524 --> 01:23:50,784
+bu da yatay asimtot oluyor arkadaşlar.
+
+715
+01:23:57,779 --> 01:24:00,920
+tiki asimptot ve yata asimptot anlaşıldı mı arkadaşlar?
+
+716
+01:24:18,036 --> 01:24:22,155
+Güzel. O zaman e-yik asimptot kavramına geçelim.
+
+717
+01:24:24,676 --> 01:24:31,636
+Bir rasyonel fonksiyonda payın derecesi paydan derecesinden bir büyükse.
+
+718
+01:24:31,636 --> 01:24:32,636
+Yani...
+
+719
+01:24:36,115 --> 01:25:00,655
+x küp artı x kare artı 3x artı 5 gibi bir fonksiyon var yukarıda. Aşağıda da x kare artı 2x artı 1 falan var mesela. Yani payın derecesi paydan bir derece büyük. Bu durumda e-kasimptot var diyoruz. Bunu unutmayın bakın. Payın derecesi paydadan bir büyük olacak. Payın derecesi paydadan bir büyük.
+
+720
+01:25:00,655 --> 01:25:12,395
+ise fonksiyon e-kasimptot sahiptir. Zaten bunu polinom bölmesi yaptığımız zaman a x artı b şeklinde bir bölüm bulacağız.
+
+721
+01:25:13,975 --> 01:25:19,456
+e-kasimptot nasıl bulunur? Pay paydaya bölünerek bulunur polinom bölmesiyle ya da
+
+722
+01:25:19,456 --> 01:25:25,576
+alfa x artı beta şeklindedir e-kasimptot.
+
+723
+01:25:25,975 --> 01:25:28,155
+y eşittir alfa x artı beta şeklindedir.
+
+724
+01:25:28,155 --> 01:25:58,136
+alfa x artı b şeklinde bir bölüm.
+
+725
+01:25:53,427 --> 01:25:55,007
+e-kasimptot kavramı da bu.
+
+726
+01:25:57,627 --> 01:25:59,667
+Şimdi mesela e-kasimptot nasıl bulunur?
+
+727
+01:26:02,307 --> 01:26:03,627
+Şu ikinci örnekten bakalım.
+
+728
+01:26:05,387 --> 01:26:08,228
+Gerçi bir yatay asimptot, e-kasimptotu bulalım.
+
+729
+01:26:09,608 --> 01:26:10,667
+Ondan sonra bakalım.
+
+730
+01:26:11,927 --> 01:26:13,608
+Şöyle bir fonksiyon vermiş.
+
+731
+01:26:14,867 --> 01:26:16,268
+x kare eksi x bir bölü.
+
+732
+01:26:16,887 --> 01:26:17,988
+Asimptotlarını bulun demiş.
+
+733
+01:26:17,988 --> 01:26:23,667
+Öncelikle x kare eksi x'i sıfır yapan noktalar
+
+734
+01:26:23,667 --> 01:26:25,948
+nedir?
+
+735
+01:26:26,387 --> 01:26:27,448
+İki asimptotlardır.
+
+736
+01:26:27,547 --> 01:26:29,347
+Çünkü o noktada fonksiyonlu oluyor.
+
+737
+01:26:32,507 --> 01:26:33,608
+Sonsuza gidiyor değil mi?
+
+738
+01:26:33,867 --> 01:26:34,827
+Yani limit fx
+
+739
+01:26:43,796 --> 01:27:07,576
+eşittir, sonsuz oluyor noktalarda. Hangi noktalarda? Paydayı sıfır yapan noktalarda. Onlar da x1, x eşittir 1 ve x eşittir sıfır noktaları. Yani x1'e giderken ve sıfıra giderken sonsuz oluyor. 1 ve sıfır noktalar o zaman benim dikey asimptotlarım. Çünkü x eksenindeki 1 doğrusuna yaklaşırken fonksiyon sonsuza gidiyor.
+
+740
+01:27:07,576 --> 01:27:13,396
+x eksenindeki 1 ve sıfır noktaların sonrası gidiyor. Bunları ben dikey asimptot diyorum.
+
+741
+01:27:18,228 --> 01:27:47,127
+Bir de limit x sonsuza giderken fonksiyonun limiti nedir? x sonsuza giderken limit sıfırdır. O zaman y eşittir sıfır doğrusu da yatay asimptot. Çünkü fonksiyon şöyleymiş. x eşittir sıfır doğrusu da x ekseni zaten. x sonsuza giderken fonksiyon geliyor geliyor x'e yaklaşıyormuş. Yani limiti sıfırmış. y eşittir sıfır doğrusuna yaklaşıyormuş. y eşittir sıfır x doğrusu.
+
+742
+01:27:48,228 --> 01:28:01,988
+y eşittir sıfır doğrusu da yaklaşıyormuş. Bu bir yatay asimptot o zaman. x sonsuza giderken y sıfırmış. Yani sonsuza kadar fonksiyon böyle geliyor geliyor yaklaşıyor buna. Ama hiçbir zaman sıfır olmuyor.
+
+743
+01:28:04,748 --> 01:28:16,648
+İlk asimptot zaten yok. Neden yok? Çünkü payın derecesi paydan bir büyük değil. Tam tersine iki küçük. Payın derecesi sıfır. 1 çarpı x üzeri sıfır değil mi?
+
+744
+01:28:22,899 --> 01:28:25,699
+Dolayısıyla, a'yı kasimptot yoktur.
+
+745
+01:28:28,139 --> 01:28:30,759
+Bu soruda anlaşılmayan bir kısım var mı arkadaşlar?
+
+746
+01:29:10,003 --> 01:29:39,943
+x kare artı 2x, f'
+
+747
+01:29:16,243 --> 01:29:17,243
+Şimdi bu soruda
+
+748
+01:29:17,243 --> 01:29:23,043
+x kare artı 1x fonksiyonun asimptotlarını sormuş.
+
+749
+01:29:24,043 --> 01:29:25,663
+İki asimptot nedir?
+
+750
+01:29:45,524 --> 01:29:47,804
+x eşitir sıfırda dikey asimptotu vardır.
+
+751
+01:29:49,804 --> 01:29:53,724
+x sonsuza giderken limit
+
+752
+01:29:58,068 --> 01:30:14,568
+x giderken sonsuza, bu fonksiyonda ne olur? Sonsuza gider değil mi? x kare artı 1 bölü x fonksiyonunda sonsuza gider zaten. Çünkü payın derisi paydan büyük zaten. Değil mi? Dolayısıyla yata yasımptot yoktur. Ancak limit,
+
+753
+01:30:21,395 --> 01:30:22,675
+x sıfıra giderken
+
+754
+01:30:28,851 --> 01:30:58,771
+x artı 1 bölü x'tir bu, değil mi? Böldüğümüz zaman. x sıfıra giderken, burası sıfır, 1 bölü x sonsa gider. Dolayısıyla limit x sıfıra giderken, fonksiyonun diki asimptotu vardır, x eşit sıfır noktasında. Şimdi, diki asimptot ve yatay asimptot anlaşıldı umarım. O zaman, eik asimptota bakalım.
+
+755
+01:30:58,851 --> 01:31:05,851
+fonksiyonun, fonksiyonun x artı 1 bölü x şeklindedir, değil mi? Yani, x kare artı 1'e
+
+756
+01:31:11,923 --> 01:31:13,363
+x'e bölersem
+
+757
+01:31:17,043 --> 01:31:21,844
+x gelir değil mi buraya? x kare gelir. Kalan da 1'dir zaten.
+
+758
+01:31:27,347 --> 01:31:33,747
+Yani x artı 1 bölü x olur fonksiyonum. Dolayısıyla y eşitir x benim e'yi kasım tutumdur.
+
+759
+01:31:35,327 --> 01:31:42,188
+mx artı n artı 1 bölü x oluyor. y eşitir x e'yi kasım tutur. Ya da alfa ve betayı bulurum.
+
+760
+01:31:42,768 --> 01:31:50,747
+Daha zor bir fonksiyon olsaydı onu da uygulayabilirdik. Limit y bölü x'ten alfayı bulurum.
+
+761
+01:31:50,747 --> 01:31:57,488
+x giderken sonuçta y bölü x. Bu ifadeyi x'e böleceğiz.
+
+762
+01:31:57,488 --> 01:32:27,268
+x
+
+763
+01:32:02,003 --> 01:32:04,003
+alfa zaten ne çıkıyor?
+
+764
+01:32:05,604 --> 01:32:06,804
+1 çıkıyor.
+
+765
+01:32:09,604 --> 01:32:11,003
+beta ne çıkıyor?
+
+766
+01:32:16,532 --> 01:32:37,752
+Yatay asimptot olmadığını nasıl anlamadım? Evet, ona bakalım bir daha. Güzel. Limit x sonsuza giderken, yatay asimptotunu nasıl buluyorduk? x sonsuza giderken y ekseninde bir noktaya yaklaşıyor mu fonksiyon? Yani burada bir doğruya yaklaşıyor mu x sonsuza giderken? Bunu sorguluyorduk aslında yatay asimptotta.
+
+767
+01:32:37,752 --> 01:33:06,152
+Şimdi x sonsuza giderken x kare artı 1 bölü x ne oluyor? x artı 1 bölü x zaten bu fonksiyon. Öldüğüm zaman. x artı 1 bölü x fonksiyonu x sonsuza giderken nereye gidiyor? 1 bölü x sıfıra gidiyor. x sonsuza gidiyor. Yani bu limitin sonucu sonsuz. Yani yatay asimptot sonsuz oluyor. Dolayısıyla yatay asimptot olmuyor. Anlaşıldı mı şimdi?
+
+768
+01:33:17,108 --> 01:33:19,108
+kök eksi 1 ne alaka ya?
+
+769
+01:33:24,724 --> 01:33:26,724
+[öğrenci] ne demek istiyorsun anlayamadım.
+
+770
+01:33:37,140 --> 01:33:40,100
+kök eksi 1 de zaten sıfır oluyor ki fonksiyon.
+
+771
+01:33:42,560 --> 01:33:45,140
+Yani herhangi bir sonsuzluğa gidiş yok ya da...
+
+772
+01:33:52,020 --> 01:33:53,080
+Tamam payı sıfırlasın.
+
+773
+01:33:53,600 --> 01:33:54,500
+Yine olmuyor ki zaten.
+
+774
+01:33:55,880 --> 01:33:57,020
+Hayır zaten olmuyor da.
+
+775
+01:33:57,920 --> 01:33:58,780
+Kompleks sayı çünkü.
+
+776
+01:33:59,140 --> 01:34:00,860
+Biz real eksende sayı çalışıyoruz.
+
+777
+01:34:00,960 --> 01:34:02,180
+Real sayılarda çalışıyoruz.
+
+778
+01:34:02,960 --> 01:34:04,660
+Fonksiyon tanım kümesi real sayılar.
+
+779
+01:34:05,740 --> 01:34:07,520
+Biz de real sayılar kümesinde çalışıyoruz.
+
+780
+01:34:07,660 --> 01:34:11,100
+Kök eksi bir zaten real sayılar kümesine dahil bir sayı değil.
+
+781
+01:34:11,380 --> 01:34:12,900
+Kompleks sayılar kümesine dahil.
+
+782
+01:34:12,900 --> 01:34:16,600
+Yani real sayılarda tanımlayabildiğimiz bir sayı değil.
+
+783
+01:34:17,660 --> 01:34:19,780
+Kompleks sayılar kümesine dahil.
+
+784
+01:34:19,880 --> 01:34:21,500
+Kompleks sayılarda konumuz dışında.
+
+785
+01:34:22,020 --> 01:34:27,440
+Yani kompleks sayılar daha ileri ve zor integrallerin çözümlerinde.
+
+786
+01:34:28,780 --> 01:34:33,180
+Elektronik devrelerinde ortaya çıkan bazı integrallerin.
+
+787
+01:34:33,780 --> 01:34:36,700
+Bazı özel integrallerin çözümlerinde kullanılan bir.
+
+788
+01:34:37,200 --> 01:34:40,580
+Kompleks integral falan tanımlanıp kullanılan bir kavram.
+
+789
+01:34:40,580 --> 01:34:42,500
+O da bizim konumuz dışında.
+
+790
+01:34:43,500 --> 01:34:44,320
+Sen nasıl düşünmüştün?
+
+791
+01:34:44,740 --> 01:34:47,040
+Yani zaten olsa bile olmuyor.
+
+792
+01:34:47,380 --> 01:34:48,280
+Sıfır yapıyor zaten.
+
+793
+01:34:48,440 --> 01:34:49,100
+Sonsuz yapmıyor.
+
+794
+01:35:53,684 --> 01:36:15,744
+Real sayılar kümesinde YH0 eşitliğini sağlayamadığı için YH0 olabilir gibi. Yok, öyle düşünmüyoruz ya. Öyle düşünmeyin, tamam mı? Evet, yani doğru bir düşünce değil o. Yani dolayısıyla hani öyle düşünüp kafanızı karıştırmayın yani. Kafanızı karıştıran bir düşünce olur o.
+
+795
+01:36:15,744 --> 01:36:20,543
+kök eksi 1 falan gibi bir şey sormayacağız sınavda. Öyle bir şey çıkmayacak.
+
+796
+01:36:21,524 --> 01:36:28,463
+Sadece real eksende hani sonsuza gittiğinde hangi noktaya yaklaşır? Bir noktaya yaklaştığında sonsuza gider mi, gitmez mi? Onları bilmeniz yeterli.
+
+797
+01:36:28,543 --> 01:36:29,304
+E-khasimptot
+
+798
+01:36:29,304 --> 01:36:31,284
+şöyle
+
+799
+01:36:31,284 --> 01:36:33,724
+E-khasimptot'u bulurken
+
+800
+01:36:33,724 --> 01:36:35,404
+Y eşittir
+
+801
+01:36:35,404 --> 01:36:37,923
+alfa x artı
+
+802
+01:36:37,923 --> 01:36:38,704
+beta
+
+803
+01:36:38,704 --> 01:36:39,724
+onu
+
+804
+01:36:39,724 --> 01:36:41,704
+e-khasimptot'u bulurken
+
+805
+01:36:41,704 --> 01:36:46,704
+e-khasimpt'u bulurken
+
+806
+01:36:44,212 --> 01:36:46,332
+Bu şekilde de bulabiliriz. Bir yöntem daha.
+
+807
+01:36:47,332 --> 01:36:48,412
+Alfa neydi arkadaşlar?
+
+808
+01:36:49,152 --> 01:36:50,632
+Alfa, limit,
+
+809
+01:36:55,764 --> 01:37:08,444
+Limit. Bakın, yukarıda bunu verdim. Şurada bakın. Y bölü x, x sonsuza giderken. x'i sonsuza götüreceğim.
+
+810
+01:37:18,420 --> 01:37:28,539
+x kare artı 1 bölü x kare oluyor değil mi? Yani x kare artı 1 bölü x y oluyor. Bunu x'e bölüyorum. Bunu x'e bölünce de bölü x kare oluyor.
+
+811
+01:37:33,747 --> 01:37:38,867
+Bu da 1 artı 1 bölü x kare oluyor, değil mi? x kare bölü x kare artı 1 bölü x kare.
+
+812
+01:37:42,323 --> 01:37:45,003
+Buradan alfa 1 çıkıyor.
+
+813
+01:37:46,884 --> 01:37:47,823
+Tamam mı?
+
+814
+01:37:48,703 --> 01:37:51,643
+Alfa 1 çıkıyor. Yani y eşittir 1x artı beta.
+
+815
+01:37:52,163 --> 01:37:57,384
+Betayı bulmam gerekiyor. Beta da limit x olsa giderken
+
+816
+01:38:02,676 --> 01:38:04,036
+x onusunda giderken
+
+817
+01:38:04,036 --> 01:38:09,155
+y eksi alfa x, yani x artı 1 bölü
+
+818
+01:38:09,155 --> 01:38:14,436
+x, eksi x oluyor değil mi?
+
+819
+01:38:20,020 --> 01:38:34,220
+Bu x'ler birbirini götürüyor arkadaşlar. 1 bölü x'den beta 0 çıkıyor. Yani y eşittir 1x artı 0. Yani y eşittir x olarak e kasim tutu buluyorum.
+
+820
+01:38:39,412 --> 01:38:41,152
+Bakın burada bu yöntemi kullandım.
+
+821
+01:38:42,771 --> 01:38:43,752
+Alfa x artı beta.
+
+822
+01:38:45,172 --> 01:38:46,072
+Bundan bulabilirsiniz.
+
+823
+01:38:46,672 --> 01:38:52,672
+Ya da e'yi kasim tutu bu ifadeye zaten payın deriz paydan bir büyük ya.
+
+824
+01:38:53,752 --> 01:38:55,092
+Payın deriz paydan bir büyük.
+
+825
+01:38:55,752 --> 01:38:57,792
+Bunu polinom bölmesi yapabilirsiniz.
+
+826
+01:38:58,112 --> 01:38:58,632
+Ne yaptım ben?
+
+827
+01:38:58,692 --> 01:39:00,391
+x kare artı biri x'e böldüm.
+
+828
+01:39:02,092 --> 01:39:04,072
+Burayı x'e bölüyorum.
+
+829
+01:39:04,891 --> 01:39:05,292
+Ne oldu?
+
+830
+01:39:06,292 --> 01:39:07,592
+x kare artı bir bölü x.
+
+831
+01:39:07,592 --> 01:39:10,552
+x kare de x, x defa var.
+
+832
+01:39:10,632 --> 01:39:11,672
+x çarpı x, x kare.
+
+833
+01:39:11,752 --> 01:39:12,632
+Bunu çıkardım bir oldu.
+
+834
+01:39:12,972 --> 01:39:14,811
+Yani x artı bir bölü x oldu fonksiyon.
+
+835
+01:39:15,192 --> 01:39:18,231
+Buradaki x de benim e'yi kasim tutum oldu arkadaşlar.
+
+836
+01:39:19,271 --> 01:39:20,152
+Şimdi anlatıldı mı?
+
+837
+01:39:23,212 --> 01:39:24,132
+[öğrenci].
+
+838
+01:39:34,163 --> 01:39:42,243
+Burada sorsa olan var mı arkadaşlar? Yata yasımptot, dike yasımptot ve e-kasımptot ile ilgili.
+
+839
+01:42:21,524 --> 01:42:24,104
+Şimdi bir rasyonel fonksiyonun asimptotlarına bakalım.
+
+840
+01:42:28,692 --> 01:42:46,771
+fx eşittir px bölü qx olsun. Hani biz sonsuz limitlerde bazı özellikler vermiştik rasyonel fonksiyonlarla ilgili. Burada da rasyonel fonksiyonlarının asimptotlarını bulmada bazı metotlara bakacağız.
+
+841
+01:42:46,771 --> 01:42:58,091
+px m. dereceden, qx de n. dereceden iki polinom olsunlar. O zaman qx eşittir 0 olan her noktada nedir?
+
+842
+01:42:58,591 --> 01:43:06,032
+qx eşittir 0 olan her noktada fonksiyonun dikey asimptotu vardır. Çünkü qx eşittir 0 olan her noktada fonksiyon zaten sonsuza gider.
+
+843
+01:43:06,032 --> 01:43:10,731
+Onu sonsuza götüren her noktada dikey asimptot vardır.
+
+844
+01:43:10,731 --> 01:43:40,712
+m. dereceden, qx eşittir 0 olan her noktada n.
+
+845
+01:43:29,652 --> 01:43:34,532
+m eşittir m ise fonksiyonun bir l şeklinde yata yasimptotu vardır.
+
+846
+01:43:34,792 --> 01:43:35,811
+y eşittir l şeklinde.
+
+847
+01:43:36,572 --> 01:43:40,551
+l nedir? px ve qx'in en büyük dereceli terimlerinin katsaylanı olanıdır.
+
+848
+01:43:46,292 --> 01:43:53,332
+Çünkü sonsuza götürdüğümüzde x'i ne oluyordu? En yüksek dereceli terimlerin oranlarına eşit oluyordu limit. Yani L oluyordu.
+
+849
+01:43:54,792 --> 01:43:58,712
+Hatırlayın, sonsuz limitlerde x'i sonsuza götürdüğümüzde
+
+850
+01:43:58,712 --> 01:44:11,592
+x'i sonsuza götürdüğümüzde en yüksek dereceli terimlerin katsayıları orana o fonksiyonun limitine eşit oluyordu.
+
+851
+01:44:11,592 --> 01:44:12,492
+Dolayısıyla
+
+852
+01:44:12,492 --> 01:44:18,932
+YH'tir L'de yata yasım tutu vardır diyoruz.
+
+853
+01:46:24,627 --> 01:46:35,447
+Arkadaşlar, buradan haftaya devam edelim. Bugünlük bu kadar. Bir rasyonel fonksiyonlar simptotlarından devam edelim. Bitmeyecek çünkü. Yarın eğri çizimleriyle devam edeceğiz.
+
+854
+01:46:35,907 --> 01:46:37,768
+Hocam, fleksizlik çeşitleri ne yapacaktır?
+
+855
+01:46:38,287 --> 01:46:39,228
+Tamam, atarım onları.
+
+856
+01:46:42,931 --> 01:46:43,751
+Kendinize iyi bakın.
+
+857
+01:46:44,411 --> 01:46:45,532
+Tamamdır hocam. İyi günler.
+
+858
+01:46:45,751 --> 01:46:46,311
+İyi günler.

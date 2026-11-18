@@ -1,0 +1,3059 @@
+1
+00:01:36,275 --> 00:01:37,275
+Yes, yes, yes.
+
+2
+00:16:04,916 --> 00:16:06,776
+Günaydın arkadaşlar, sesim geliyor mu?
+
+3
+00:16:14,131 --> 00:16:15,891
+Sesimi alabiliyor musunuz arkadaşlar?
+
+4
+00:16:16,151 --> 00:16:16,731
+Evet hocam.
+
+5
+00:16:17,691 --> 00:16:18,451
+Teşekkürler.
+
+6
+00:16:20,771 --> 00:16:22,011
+Sınavınız nasıldı?
+
+7
+00:16:26,419 --> 00:16:28,799
+Sınav sonuçlarından memnun musunuz genel olarak?
+
+8
+00:16:34,259 --> 00:16:44,159
+Zor geldi. Genel olarak 70-80 arasıydı notlar. Ortalamada 80 civar bir şeydi hatırladığım kadarıyla.
+
+9
+00:16:46,679 --> 00:16:48,259
+Hocam ful çeken oldu mu?
+
+10
+00:16:49,259 --> 00:16:52,779
+Vardı vardı. Yüzler de vardı. 5-6 tane de yüz vardı.
+
+11
+00:17:03,827 --> 00:17:06,187
+Umarım beklediğiniz notları almışsınızdır.
+
+12
+00:17:08,607 --> 00:17:13,127
+Artık bu hafta integral konusuna geçeceğiz.
+
+13
+00:17:14,288 --> 00:17:16,768
+Biz ilk olarak limit kavramını işledik.
+
+14
+00:17:18,228 --> 00:17:19,488
+Limit kavramının ne olduğunu.
+
+15
+00:17:20,807 --> 00:17:24,288
+Bir dizinin limitini işledik, bir fonksiyonun limitini işledik.
+
+16
+00:17:24,947 --> 00:17:27,087
+Daha sonra da süreklilik kavramını işledik.
+
+17
+00:17:27,187 --> 00:17:28,228
+Süreklilik kavramı neydi?
+
+18
+00:17:28,228 --> 00:17:29,548
+Bir noktada bir fonksiyon.
+
+19
+00:17:29,548 --> 00:17:41,687
+Eğer o noktaya yaklaşırkenki limitinin değeri fonksiyonun o noktadaki değerine eşitse o fonksiyon süreklidir dedik.
+
+20
+00:17:41,807 --> 00:17:43,488
+Daha sonra türev kavramını işledik.
+
+21
+00:17:43,867 --> 00:17:50,288
+Bir fonksiyonun bir noktadaki t'nin eğimini veren fonksiyona türev dedik.
+
+22
+00:17:51,208 --> 00:17:53,788
+Şimdi ters türev kavramını tamamlayacağız.
+
+23
+00:17:53,788 --> 00:17:56,748
+Aslında bu ters türev dediğimiz şey de integral.
+
+24
+00:17:57,167 --> 00:17:59,067
+İntegral konusuna geçeceğiz artık.
+
+25
+00:17:59,548 --> 00:18:02,607
+İki vize olacak.
+
+26
+00:18:03,667 --> 00:18:05,907
+Ters türev şu demek.
+
+27
+00:18:07,387 --> 00:18:11,427
+Bir i aralığındaki her x için büyük fx'in türevi eşittir.
+
+28
+00:18:12,968 --> 00:18:20,647
+fx ise büyük fx fonksiyonuna küçük f'in ters türevi denir.
+
+29
+00:18:22,008 --> 00:18:23,307
+Yani bu ne demek?
+
+30
+00:18:25,307 --> 00:18:28,728
+Bunun türevini aldığımızda bu fonksiyonu verecek.
+
+31
+00:18:32,435 --> 00:18:39,055
+Eğer f, i aralığında f fonksiyonunun bir ters türevi ise f'in i üzerindeki en genel ters türevi fx artı c'dir.
+
+32
+00:18:39,155 --> 00:18:45,695
+Bunun türevini fx artı c'nin türevini aldığımızda fx'in türevi artı c'nin türevidir.
+
+33
+00:18:45,755 --> 00:18:49,435
+c'nin türevi sıfır olduğu için küçük fx'i verecektir bize.
+
+34
+00:18:51,975 --> 00:18:53,515
+Şimdi ters türevin ne olduğuna bakalım.
+
+35
+00:18:53,875 --> 00:18:58,295
+x'e n fonksiyonunun ters türevi x'e n artı bir bir n artı bir artı c.
+
+36
+00:18:58,295 --> 00:19:02,135
+Çünkü bakın bunun türevini aldığımızda nedir türevi bu ifadenin?
+
+37
+00:19:02,915 --> 00:19:07,155
+n artı bir çarpı x üzeri n artı bir eksi birdir.
+
+38
+00:19:11,476 --> 00:19:27,776
+c'nin türevi de sıfırdır. Ne oldu? Bu birler birbirini götürdü. n artı 1 ile n artı 1 birbirini götürdü. Bize neyi verdi? Bakın x'e n fonksiyonunu verdi. Demek ki ters türevi hangi fonksiyonun türevini alırsak o fonksiyonu verecek sorusunun cevabı.
+
+39
+00:19:31,763 --> 00:19:41,443
+Benzer şekilde, sinüs kx'in ters türevi, eksi kosinüs kx bölü, k artı c. Bunun türevini alın.
+
+40
+00:19:42,783 --> 00:19:52,183
+k çarpı, kosinüs'ün türevi eksi sinüstü, k çarpı eksi sin'dir, k'lar birbirini götürür, eksiler birbirini götürür, artı olur.
+
+41
+00:19:52,183 --> 00:20:01,323
+sinüs kx olur. Kosinüs kx'in ters türevi, sinüs kx bölü k artı c. Sinüs'ün türevi, kosinüstü, bir de k geldi.
+
+42
+00:20:02,043 --> 00:20:08,023
+k kos kx'den, k'lar gitti, c'nin türevi 0, kos kx'i verir, bakın bu ifadenin türevi.
+
+43
+00:20:08,903 --> 00:20:14,384
+Yine sekant kare kx'in ters türevi, tanjant kx bölü k artı c'dir. Çünkü tanjant türevi neydi?
+
+44
+00:20:16,783 --> 00:20:17,923
+Sekant kare idi.
+
+45
+00:20:17,923 --> 00:20:22,023
+İkinci vize olacak arkadaşlar.
+
+46
+00:20:33,940 --> 00:20:39,799
+f'in tüm ters türevlerinin kümesine f'in x'e göre belirsiz integral denir.
+
+47
+00:20:41,640 --> 00:20:44,059
+İntegral f'x'dx ile gösterilir.
+
+48
+00:20:45,920 --> 00:20:52,740
+Yani demek ki f'x fonksiyonunun ters türevlerine integral f'x'dx olarak ifade edeceğiz.
+
+49
+00:20:54,200 --> 00:20:55,600
+Demek ki neymiş?
+
+50
+00:20:56,220 --> 00:21:00,559
+İntegral dediğimiz şey aslında x üzeri n'in integrali mesela.
+
+51
+00:21:00,559 --> 00:21:05,299
+hangi fonksiyonunun türevini alırsam bunu verir sorusunun cevabıymış.
+
+52
+00:21:06,000 --> 00:21:09,660
+Yani x üzeri n'in integrali x üzeri n artı 1 bölü n artı 1 artı c'dir.
+
+53
+00:21:13,076 --> 00:21:27,056
+kdx'in integrali kx artı c'dir. Bunun türevini aldığımda kdx olur. Kosinüs kx'in integrali sinüs kx bölü k artı c'dir. Bunun türevini aldığımda burayı verir.
+
+54
+00:21:27,056 --> 00:21:36,355
+sinüs kx'in integrali ise eksi kosinüs kx bölü k artı c'dir. Bunun türevini alırsam burayı verir.
+
+55
+00:21:37,556 --> 00:21:46,516
+Sekant kare ya da bir artı tanjant kare ya da bir bölü kos kare şeklindeki ifadenin birbirini eşit ifadeler bu üçü de.
+
+56
+00:21:50,548 --> 00:21:54,667
+İntegrali ise tanjant k x bölü k artı c'dir.
+
+57
+00:21:57,867 --> 00:22:06,048
+Kosekant kare, 1 artı kotanjant kare, 1 bölü sin kare integrali de eksi kotanjant k x bölü k artı c'dir.
+
+58
+00:22:06,167 --> 00:22:09,028
+Çünkü bunun türevi bu ifadelerden herhangi birini verir.
+
+59
+00:22:22,804 --> 00:22:25,584
+tanjant nedir? Sinüs bölü kosinüs.
+
+60
+00:22:30,771 --> 00:22:33,311
+Neyin türevi sinüs bölü kosinüsü verir?
+
+61
+00:22:35,631 --> 00:22:37,311
+Elenli bir ifade olacak değil mi?
+
+62
+00:22:37,412 --> 00:22:38,672
+Elen kosinüsün türevi.
+
+63
+00:22:39,391 --> 00:22:43,011
+Aslında kosinüsün türevi bölü kosinüs x'i verir.
+
+64
+00:22:44,451 --> 00:22:45,351
+Kosinüsün türevi ne?
+
+65
+00:22:46,611 --> 00:22:48,091
+Eksi sinüs.
+
+66
+00:22:48,571 --> 00:22:49,912
+Bir de kosinüs x'i yazdık.
+
+67
+00:22:50,571 --> 00:22:53,031
+Demek ki eksi elen kosinüs x'tir bu.
+
+68
+00:22:55,611 --> 00:22:59,051
+Çünkü bunun türevi kosinüsün türevi bölü kosinüs'tür.
+
+69
+00:23:00,771 --> 00:23:04,271
+Yani sinüs bölü kosinüs'tür.
+
+70
+00:23:04,371 --> 00:23:05,211
+O da tanjanttır.
+
+71
+00:23:05,932 --> 00:23:07,172
+Kotanjant ne olacak o zaman?
+
+72
+00:23:07,631 --> 00:23:09,932
+Kotanjant da elen sinüs x.
+
+73
+00:23:10,071 --> 00:23:14,711
+Çünkü sinüs x'in türevi kosinüs x bölü sinüs x'tir elen sinüs x'in türevi.
+
+74
+00:23:17,491 --> 00:23:22,571
+Sekant x'in integrali elen sekant x artı tanjant x olacak.
+
+75
+00:23:24,652 --> 00:23:26,111
+Bunu nasıl yapıyorduk?
+
+76
+00:23:26,211 --> 00:23:27,111
+Hatırlayan var mı?
+
+77
+00:23:27,591 --> 00:23:30,571
+Burayı sekant x artı tanjant x'e çarpıp bölersek
+
+78
+00:23:30,571 --> 00:23:31,871
+Bunun türevi
+
+79
+00:23:31,871 --> 00:23:33,851
+Burayı verecektir.
+
+80
+00:23:34,291 --> 00:23:39,311
+Yani sekant x çarpı sekant x artı tanjant x bölü sekant x artı tanjant x'i verecektir.
+
+81
+00:23:39,932 --> 00:23:41,652
+Yine bunda da benzer şeyi yapıyorduk.
+
+82
+00:23:42,491 --> 00:23:46,751
+Kosekant x çarpı kosekant x artı kotanjant x ile çarpıp bölersek
+
+83
+00:23:46,751 --> 00:23:53,111
+Kosekant x çarpı kosekant x artı kotanjant x
+
+84
+00:23:53,111 --> 00:23:54,711
+Bunun türevidir.
+
+85
+00:23:54,711 --> 00:23:58,271
+Aşağıya da kosekant x artı kotanjant x geliyor zaten.
+
+86
+00:24:01,791 --> 00:24:03,391
+Dx bölü x'in integrali nedir?
+
+87
+00:24:03,751 --> 00:24:05,591
+Elen x artı c.
+
+88
+00:24:06,551 --> 00:24:10,172
+Çünkü elenin türevi x'in türevi 1 bölü x.
+
+89
+00:24:10,172 --> 00:24:12,071
+E üzeri k x'in integrali
+
+90
+00:24:12,071 --> 00:24:15,912
+E üzeri k x bölü k artı c olacaktır.
+
+91
+00:24:16,611 --> 00:24:17,711
+A üzeri x'in integrali
+
+92
+00:24:17,711 --> 00:24:19,211
+A üzeri x bölü elena artı c.
+
+93
+00:24:19,351 --> 00:24:20,311
+Çünkü bunun türevi neydi?
+
+94
+00:24:20,471 --> 00:24:21,251
+C'nin türevi 0
+
+95
+00:24:21,251 --> 00:24:23,071
+A üzeri x'in türevi A üzeri x elena
+
+96
+00:24:23,071 --> 00:24:24,391
+Elen alayını götürdü.
+
+97
+00:24:25,192 --> 00:24:27,331
+A üzeri x'i verir bize.
+
+98
+00:24:27,331 --> 00:24:50,331
+A üzeri x'in integrali
+
+99
+00:25:25,140 --> 00:25:28,880
+Sinüs hiperbolik x ve kosünüs hiperbolik x'in türevi neydi?
+
+100
+00:25:29,740 --> 00:25:32,500
+Sinüs'ün hiperbolik x'in türevi kosünüs hiperbolik x.
+
+101
+00:25:32,640 --> 00:25:35,940
+Kosünüs hiperbolik x'in türevi sinüs hiperbolik x'ti.
+
+102
+00:25:37,520 --> 00:25:42,160
+Dolayısıyla sinüs hiperbolik x'in integralı kosünüs hiperbolik x artıcı.
+
+103
+00:25:45,120 --> 00:25:48,400
+Çünkü kosünüs hiperbolik x'in türevi sinüs hiperbolik x olacak.
+
+104
+00:25:49,400 --> 00:25:51,980
+Kosünüs hiperbolik x'in integralı de sinüs hiperbolik x.
+
+105
+00:25:51,980 --> 00:25:56,320
+Çünkü sinüs hiperbolik x'in türevi kosünüs hiperbolik x olacak.
+
+106
+00:25:57,540 --> 00:26:00,460
+Sekant çarpı tanjantın integralı sekant x artıcı.
+
+107
+00:26:00,600 --> 00:26:02,280
+Çünkü bunun türevi bunu veriyor.
+
+108
+00:26:03,280 --> 00:26:06,120
+Yine eksi kosekantın türevi bunu verdiği için.
+
+109
+00:26:06,820 --> 00:26:11,380
+Kosekant x çarpı tanjant x'in integralı eksi kosekant x artıcı.
+
+110
+00:26:13,340 --> 00:26:14,940
+Arktanjantın türevi neydi?
+
+111
+00:26:15,580 --> 00:26:18,480
+Bir bölü bir artı x kareydi.
+
+112
+00:26:18,480 --> 00:26:20,420
+Arktanjant x bölü a'nın integralı de.
+
+113
+00:26:20,420 --> 00:26:23,100
+dx bölü a kare artı x kare.
+
+114
+00:26:30,675 --> 00:26:33,755
+Bunun türevini aldığımızda 1 bölü A birbirini götürüyor zaten.
+
+115
+00:26:37,015 --> 00:26:38,955
+Arksinüs x bölü A'nın türevi nedir?
+
+116
+00:26:39,556 --> 00:26:48,215
+dx bölü A kare artı x kare olduğundan integral dx bölü A kare x x kare de arksinüs x bölü A'dır arkadaşlar.
+
+117
+00:27:13,748 --> 00:27:16,908
+Bunun türevi 1 bölü a gelir.
+
+118
+00:27:18,567 --> 00:27:20,268
+Payda da 1 bölü a kare olur.
+
+119
+00:27:22,367 --> 00:27:23,948
+Bir de ne olacak? 1 artı.
+
+120
+00:27:26,448 --> 00:27:28,148
+x bölü a'nın karesi.
+
+121
+00:27:34,740 --> 00:27:46,640
+1 bölü 1 artı x bölü a'nın karesi. Burada da 1 bölü a kare var bir de başında değil mi? Çünkü bunun içerisinin türevinden 1 bölü a gelecek. Burada 1 bölü a kare var.
+
+122
+00:27:48,140 --> 00:28:00,680
+Buradaki a kareyi dağıttığımız zaman burası a kare. Bu a kare de paya geçti. A kare olarak. Bu a kareler birbirini götürdüğünde ne oldu?
+
+123
+00:28:00,680 --> 00:28:04,700
+1 bölü a kare artı x kare geldi. Bakın. Burası anlaşıldı mı?
+
+124
+00:28:15,155 --> 00:28:25,076
+Geçiyorum. Şimdi belirli integral'e geçelim. Belirli integral'de önemli bir kavramımız var. Riemann toplamı kavramı.
+
+125
+00:28:34,067 --> 00:28:35,488
+Riman toplamı nedir?
+
+126
+00:28:35,887 --> 00:28:39,228
+Y eşittir fx sürekli ve negatif olmayan bir fonksiyon olsun.
+
+127
+00:28:40,367 --> 00:28:48,107
+F'in grafiği altında, x eksenin üstünde, x eşittir a ve x eşittir b doğrularının arasında kalan r bölgesinin alanını bulalım.
+
+128
+00:28:48,887 --> 00:28:51,748
+Buradaki r bölgesinin alanını bulmaya çalışalım.
+
+129
+00:28:52,347 --> 00:28:57,728
+Şimdi burayı ab aralığını, burada bakın a ile b sayıları var.
+
+130
+00:28:58,048 --> 00:29:00,508
+Mesela 2 ile 3 aralığı gibi.
+
+131
+00:29:00,508 --> 00:29:10,228
+ab aralığını keyfi olarak a eşittir x sıfır diyerek, b'ye de x'en diyerek n tane parçaya bölelim.
+
+132
+00:29:11,087 --> 00:29:14,567
+x sıfır, x bir, x iki, x'en şeklinde n tane parçaya bölelim.
+
+133
+00:29:15,288 --> 00:29:20,468
+Ve bu parçalardan oluşan kümeye x sıfır, x bir, x'en kümesine ab'nin bir bölüntüsü diyelim.
+
+134
+00:29:23,268 --> 00:29:29,847
+x, i eksi bir, x'i aralıklarına da, i'ler bir ile n arasında, p bölümünün alt aralıkları diyelim.
+
+135
+00:29:30,508 --> 00:29:31,687
+Bakın ne yapıyoruz?
+
+136
+00:29:31,947 --> 00:29:38,788
+Mesela 100 parçaya bölüyoruz, 10 parçaya bölüyoruz, 4 parçaya bölüyoruz, 1000 parçaya bölüyoruz ya da 1 milyon parçaya bölüyoruz.
+
+137
+00:29:38,907 --> 00:29:41,167
+n tane parçaya bölüyoruz, n herhangi bir sayı.
+
+138
+00:29:42,587 --> 00:29:47,447
+Her x'i eksi bir, x'i alt aralığının uzunluğunu da delta x'i ile gösterelim.
+
+139
+00:29:47,447 --> 00:29:52,167
+Ve bu delta x ile ne olur o zaman?
+
+140
+00:29:52,768 --> 00:29:56,127
+Diyelim 4 parçaya böldük, x'en eksi x sıfır bölü 4 olur.
+
+141
+00:29:56,508 --> 00:29:58,687
+Yani b eksi a bölü n olur.
+
+142
+00:29:59,947 --> 00:30:03,127
+Her bir parçanın uzunluğu b eksi a bölü n olur.
+
+143
+00:30:12,756 --> 00:30:16,056
+Bu alt aralıklara P bölümünün alt aralıkları dedik.
+
+144
+00:30:16,336 --> 00:30:21,276
+P'yi bir bölüntüye, bölüntüler kümesine böldük.
+
+145
+00:30:23,796 --> 00:30:26,936
+P, A, B aralığının bölüntüler kümesi.
+
+146
+00:30:27,615 --> 00:30:31,355
+Her x'i eksi bir x'i alt aralığının uzunluğunda delta x'i ile gösterdik.
+
+147
+00:30:31,456 --> 00:30:32,875
+Bu delta x'i nedir?
+
+148
+00:30:33,336 --> 00:30:35,296
+x'i eksi, x'i eksi birdir.
+
+149
+00:30:36,036 --> 00:30:37,216
+Yani aradaki farktır.
+
+150
+00:30:37,216 --> 00:30:39,436
+Ya da B eksi A bölü N'dir.
+
+151
+00:30:39,436 --> 00:30:44,476
+Bu alt aralıkların içinden birer keyfi C, I noktası seçelim.
+
+152
+00:30:45,176 --> 00:30:48,676
+Yani buradan bir C noktası seçelim arkadaşlar.
+
+153
+00:30:50,036 --> 00:30:53,836
+Mesela A x bir aralığından, buraları küçük küçük parçalara bölüyorum.
+
+154
+00:30:53,936 --> 00:30:56,635
+C bir noktası seçeyim, içinden bir nokta.
+
+155
+00:30:57,296 --> 00:30:59,516
+x bir x iki aralığından C, X seçeyim.
+
+156
+00:31:00,376 --> 00:31:02,836
+Böyle noktalar seçiyorum her aralığın içinden.
+
+157
+00:31:02,836 --> 00:31:11,976
+Şimdi, C bir noktasına karşılık, fonksiyonun grafiğinde aldığım noktanın y ekserinde karşı geldiğin yer nedir?
+
+158
+00:31:12,375 --> 00:31:14,375
+F, C bir'dir değil mi?
+
+159
+00:31:15,416 --> 00:31:16,696
+F, C bir'dir.
+
+160
+00:31:19,576 --> 00:31:22,536
+C iki noktasına karşılık gelen yer nedir?
+
+161
+00:31:23,536 --> 00:31:24,876
+F, C ikidir.
+
+162
+00:31:25,256 --> 00:31:26,476
+O da mesela şurası olsun.
+
+163
+00:31:26,476 --> 00:31:54,776
+F, C ikidir.
+
+164
+00:31:35,443 --> 00:31:40,543
+Şimdi bakın burayı en tane dikdörtgene böldüm ben.
+
+165
+00:31:40,864 --> 00:31:42,243
+Mesela dört parçaya böldüm.
+
+166
+00:31:42,543 --> 00:31:43,824
+Dört tane dikdörtgene böldüm.
+
+167
+00:31:43,903 --> 00:31:45,884
+Ya da bir milyon tane dikdörtgene böldüm.
+
+168
+00:31:47,503 --> 00:31:48,183
+Fark etmez.
+
+169
+00:31:48,703 --> 00:31:52,763
+Bu dikdörtgenlerden bir tanesini alalım.
+
+170
+00:31:52,864 --> 00:31:54,423
+Mesela AX1 dikdörtgeninin.
+
+171
+00:31:54,844 --> 00:31:55,463
+E'li nedir?
+
+172
+00:31:56,523 --> 00:31:57,864
+Delta X1'dir.
+
+173
+00:31:59,283 --> 00:32:02,763
+Ve bu dikdörtgenin boyu da FC1 olsun.
+
+174
+00:32:02,763 --> 00:32:09,364
+Yani ortadan içinden aldığım herhangi bir noktaya karşılık gelen bu uzunluk olsun.
+
+175
+00:32:09,663 --> 00:32:12,543
+FC1 de bu dikdörtgenin boyudur.
+
+176
+00:32:13,903 --> 00:32:15,563
+Bu dikdörtgenin alanı nedir o zaman?
+
+177
+00:32:15,803 --> 00:32:18,803
+FC1 çarpı delta X1'dir.
+
+178
+00:32:20,584 --> 00:32:21,503
+Peki.
+
+179
+00:32:22,644 --> 00:32:24,283
+İkinci dikdörtgenin alanı nedir?
+
+180
+00:32:25,443 --> 00:32:28,403
+FC2 çarpı delta X2'dir.
+
+181
+00:32:29,463 --> 00:32:30,963
+Eninci dikdörtgenin alanı nedir?
+
+182
+00:32:30,963 --> 00:32:35,104
+FCN çarpı delta X1'dir arkadaşlar.
+
+183
+00:32:36,283 --> 00:32:37,803
+Küçük dikdörtgenin uzun kenarı.
+
+184
+00:32:39,084 --> 00:32:41,743
+Dikdörtgenin kısa kenarı.
+
+185
+00:32:43,344 --> 00:32:44,604
+Bu durumda
+
+186
+00:32:44,604 --> 00:32:48,104
+her bir dikdörtgenin alanı ne olur?
+
+187
+00:32:49,344 --> 00:32:51,803
+FCİ çarpı delta X1 olur.
+
+188
+00:32:52,803 --> 00:33:12,803
+Bir sonraki videoda
+
+189
+00:32:59,731 --> 00:33:02,311
+fc'ye çarpı delta x'i olur.
+
+190
+00:33:03,591 --> 00:33:14,231
+esen toplamı, yani bu dikdörtgenlerin toplamı, alanları toplamı, fc'ye çarpı delta x'i'lerin, i eştir, bir derene kadar toplamudur.
+
+191
+00:33:14,311 --> 00:33:24,951
+Mesela 4 tane dikdörtgen oluştu. fc1 çarpı delta x1, fc2 çarpı delta x2, fc3 çarpı delta x3 ve fc4 çarpı delta x4'ü toplarız değil mi?
+
+192
+00:33:24,951 --> 00:33:28,172
+4 tane parçayı toplarız.
+
+193
+00:33:29,172 --> 00:33:33,471
+Buna f fonksiyonu ve p bölüntüsü için genel Riemann toplamı dedir.
+
+194
+00:33:34,112 --> 00:33:36,251
+Şimdi ben bunu sonlu sayıda parçaya böldüm.
+
+195
+00:33:36,751 --> 00:33:40,172
+Sonlu sayıda dikdörtgene böldüm ve toplamını aldım.
+
+196
+00:33:43,923 --> 00:33:58,983
+Şimdi arkadaşlar, alt aralıkların en büyüğü sıfıra gidecek şekilde alt aralıkların sayısını sınırsız artırsak, yani bu n parçayı sonsuz tane parçaya bölersek, delta x ne olur?
+
+197
+00:33:59,624 --> 00:34:05,543
+Delta x ne demiştim ben? B eksi a bölü. Mesela dört parçaya böldük, b eksi a bölü dört olur.
+
+198
+00:34:06,223 --> 00:34:10,143
+N parçaya böldük, bir milyon parçaya böldük, b eksi a bölü bir milyon olur.
+
+199
+00:34:10,143 --> 00:34:17,943
+Yani her delta x de alt aralığın uzunluğu da b eksi a bölü en olur değil mi arkadaşlar?
+
+200
+00:34:19,003 --> 00:34:26,304
+Dolayısıyla n'i sonsuza götürdüğümüzde delta x nereye gider? B eksi a bölü en sıfıra gider.
+
+201
+00:34:27,483 --> 00:34:31,543
+Yani o alt aralıkların uzunlukları da oldukça küçülür.
+
+202
+00:34:31,684 --> 00:34:38,704
+Yani daha keskin bir hesaplama yapmış olurum. Daha net bir hesaplama, daha doğru bir hesaplama yapmış olurum.
+
+203
+00:34:38,704 --> 00:34:44,304
+Bakın o altta kalan r bölgesinin alanı en sonsuza giderken s n'dir.
+
+204
+00:34:44,724 --> 00:34:52,903
+Yani en sonsuza giderken bu toplamdaki n'i sonsuza götürsem bu f, c, i'ler tam fonksiyona karşılık gelmiş olur.
+
+205
+00:34:53,023 --> 00:34:55,364
+Bu delta x'ler de sıfıra çok yakın olmuş olur.
+
+206
+00:34:56,023 --> 00:35:00,724
+Dolayısıyla tam anlamıyla bana oradaki alanı vermiş olur.
+
+207
+00:35:00,724 --> 00:35:02,724
+Arkadaşlar.
+
+208
+00:35:05,744 --> 00:35:10,724
+R'nin alanı a, b'nin nasıl bölündüğü ve c, i'lerin nasıl seçildiğinden bağımsızdır.
+
+209
+00:35:12,224 --> 00:35:19,184
+Dolayısıyla çeşitli p bölüntüleri ve c, i seçimine bağlı birçok riman toplamı yazılabilir.
+
+210
+00:35:19,184 --> 00:35:27,184
+Yani ben c, i'yi sağ uç noktadan alırsam ya da sol uç noktadan alırsam...
+
+211
+00:35:30,900 --> 00:35:36,360
+Sağ uç noktadan alırsam ya da sol uç noktadan alırsam farklı olabilir.
+
+212
+00:35:37,240 --> 00:35:41,619
+Mesela sağ uç noktaları alırsam x1'i almış olurum.
+
+213
+00:35:42,019 --> 00:35:44,760
+Bu da a artı 1 çarpı b eksi a bölü n olur.
+
+214
+00:35:46,960 --> 00:35:52,360
+Yani a artı i çarpı b eksi a bölü n olmuş olur f ci.
+
+215
+00:35:53,360 --> 00:35:56,460
+Ve delta eksi zaten b eksi a bölü n'de arkadaşlar.
+
+216
+00:35:56,460 --> 00:36:05,180
+Sol uç noktasını alırsam a artı i eksi 1 çarpı b eksi a bölü n çarpı b eksi a bölü n olarak elde edilir.
+
+217
+00:36:05,340 --> 00:36:07,579
+Bu riman toplamlarını elde ediliriz.
+
+218
+00:36:08,380 --> 00:36:11,000
+Bir de alt ve üst riman toplamları var.
+
+219
+00:36:11,000 --> 00:36:27,000
+Yani aralığın alt maksimum aralığın maksimumunu alırsam üst riman toplama minimumunu alırsam alt riman toplama oluşur arkadaşlar.
+
+220
+00:36:27,000 --> 00:36:32,460
+Bununla ilgili bir de
+
+221
+00:36:32,460 --> 00:36:34,460
+bir de alt ve üst riman toplamları var.
+
+222
+00:36:34,460 --> 00:36:58,460
+Bir de alt ve üst riman toplamları var.
+
+223
+00:36:38,900 --> 00:36:42,760
+Benim YouTube'da çektiğim bir video var. Ona bakalım.
+
+224
+00:36:47,860 --> 00:37:11,120
+Bu ikinci dönem aslında çok değişkenli fonksiyonları işleyeceğiz, işleyeceksiniz. İkinci dönem çok değişkenli fonksiyonlarda y'eşitir fx fonksiyonu değil de z eşittir fx'ye şeklinde fonksiyonlar var. Yani iki değişkene bağlı bir fonksiyondan bahsedeceğiz. Onun için de Riemann toplamları tanımlanacak, onların integralleri tanımlanırken.
+
+225
+00:37:11,120 --> 00:37:25,559
+orada bir hatırlatma olarak çektiğim bir video vardı. Şimdi onu göstereceğim size. Ve onun üzerinden biraz daha tahtada çizildiği için.
+
+226
+00:37:40,788 --> 00:37:41,748
+Merhaba arkadaşlar.
+
+227
+00:37:46,675 --> 00:37:48,155
+ekran paylaşımını açayım.
+
+228
+00:37:51,076 --> 00:37:58,076
+Riemann integrali, integralin anlamını açıklamak için kullandığımız bir kavram.
+
+229
+00:37:58,956 --> 00:38:03,115
+Bildiğimiz gibi, bir fonksiyon için y eşittir.
+
+230
+00:38:04,436 --> 00:38:06,596
+f şeklinde tanımadığımız bir fonksiyon için
+
+231
+00:38:06,596 --> 00:38:11,155
+o fonksiyonu
+
+232
+00:38:11,155 --> 00:38:14,576
+bir noktada çizdiğimiz t'in eğimi demekti.
+
+233
+00:38:14,576 --> 00:38:19,255
+limit noktası kavrama, limit kavrama
+
+234
+00:38:19,255 --> 00:38:20,915
+o noktaya
+
+235
+00:38:20,915 --> 00:38:23,016
+yaklaştığımızda
+
+236
+00:38:23,016 --> 00:38:24,536
+fonksiyon o noktadaki
+
+237
+00:38:24,536 --> 00:38:28,135
+Merhaba arkadaşlar.
+
+238
+00:38:29,996 --> 00:38:31,596
+Ses iyi geliyor değil mi arkadaşlar?
+
+239
+00:38:33,436 --> 00:38:34,855
+Sesle ilgili bir problemimiz yok.
+
+240
+00:38:37,735 --> 00:38:39,295
+Ses nasıl arkadaşlar?
+
+241
+00:38:41,375 --> 00:38:42,016
+Tamam, güzel.
+
+242
+00:38:56,884 --> 00:39:01,043
+Bildiğimiz gibi bir fonksiyon için y eşittir.
+
+243
+00:39:02,344 --> 00:39:04,483
+Fx şeklinde tanımladığımız bir fonksiyon için.
+
+244
+00:39:05,784 --> 00:39:12,144
+Türevin anlamı o fonksiyona bir noktada çizdiğimiz t etin eğimi demekti.
+
+245
+00:39:13,664 --> 00:39:23,304
+Limit noktası kavramı o noktaya yaklaştığımızda fonksiyonun o noktadaki değer demekti.
+
+246
+00:39:23,304 --> 00:39:32,923
+Süreklilik kavramı fonksiyonun o noktada devamlılığın olup olmadığını test etmek için kullandığımız bir kavramdır.
+
+247
+00:39:33,384 --> 00:39:35,804
+Peki ama integral kavramı ne anlama geliyor?
+
+248
+00:39:36,324 --> 00:39:42,023
+Integral ise bu eğrinin altındaki alanı hesaplamak için kullandığımız bir kavram.
+
+249
+00:39:42,503 --> 00:39:46,603
+Bunu aşılamak için de Riemann integrali kavramını kullanıyoruz.
+
+250
+00:39:47,184 --> 00:39:51,923
+Şimdi basitçe Riemann integralinin ne anlama geldiğini anlatacağım.
+
+251
+00:39:51,923 --> 00:39:59,304
+y eşittir.fx şeklinde tek değişkenli bir fonksiyon için Riemann integralini açıklayalım.
+
+252
+00:40:00,864 --> 00:40:04,623
+Diyelim ki y eşittir.fx fonksiyonunu a b aralığında
+
+253
+00:40:04,623 --> 00:40:05,623
+bir şey yapma.
+
+254
+00:40:05,623 --> 00:40:06,623
+Diyelim ki y eşittir.fx fonksiyonunu a b aralığında
+
+255
+00:40:06,623 --> 00:40:07,623
+bir şey yapma.
+
+256
+00:40:07,623 --> 00:40:09,623
+Diyelim ki y eşittir.fx fonksiyonunu a b aralığında
+
+257
+00:40:09,623 --> 00:40:11,623
+bir şey yapma.
+
+258
+00:40:09,268 --> 00:40:29,887
+x kare artı 2x koordinat düzeninde tanımlayalım. x kare artı 2x koordinat düzeninde bir AB aralığı alalım. Bu aralıkta şöyle bir eğri çizdiğini varsayalım. Y'e işte fx fonksiyonunun çizdiği eğri.
+
+259
+00:40:34,963 --> 00:40:37,804
+fonksiyonun sürekli olduğunu
+
+260
+00:40:41,684 --> 00:40:47,044
+Söyleyelim. Fonksiyon bu arada sürekli, tanımlı bir fonksiyon.
+
+261
+00:40:48,124 --> 00:40:57,324
+AB aralığında, buradaki alanı hesaplamak için, birkaç farklı yöntem kullanabiliriz.
+
+262
+00:40:57,744 --> 00:41:02,764
+Burası bir üçgen bölgesi olsa, üçgenin alanı formülüyle hesaplayabiliriz.
+
+263
+00:41:02,764 --> 00:41:07,403
+Bir dikdörtgen olsa, dikdörtgenin alanı formülüyle hesaplayabiliriz.
+
+264
+00:41:07,504 --> 00:41:10,184
+Bir çember olsa, çemberin alanı formülüyle hesaplayabiliriz.
+
+265
+00:41:10,184 --> 00:41:13,384
+Ancak bu bir fonksiyonun çizdiği eğri.
+
+266
+00:41:14,084 --> 00:41:16,923
+Bu takdirde bu alanı hesaplamak için ne yapabiliriz?
+
+267
+00:41:17,644 --> 00:41:20,644
+İşte burada, integral kavramını kullanabiliriz.
+
+268
+00:41:22,704 --> 00:41:24,724
+Integral kavramını nasıl kullanacağız?
+
+269
+00:41:32,916 --> 00:41:33,635
+parçaya bölün.
+
+270
+00:41:37,907 --> 00:41:38,907
+çeşimdi.
+
+271
+00:41:56,596 --> 00:41:57,056
+bir tanesi
+
+272
+00:42:02,228 --> 00:42:02,947
+x'ın uzunu
+
+273
+00:42:23,347 --> 00:42:24,347
+izin mi?
+
+274
+00:42:34,835 --> 00:42:35,515
+tüm bölümünün.
+
+275
+00:42:44,019 --> 00:42:45,780
+Sesimi alıyorsunuz değil mi arkadaşlar?
+
+276
+00:42:49,780 --> 00:42:53,019
+5 parçaya böldüğümü düşünün.
+
+277
+00:42:54,800 --> 00:42:55,860
+2 ile 4 aralığını.
+
+278
+00:42:55,860 --> 00:42:57,259
+Evet hocam.
+
+279
+00:43:03,956 --> 00:43:07,316
+Bakın burada üst alt riman toplamından bahsetmiyorum.
+
+280
+00:43:07,476 --> 00:43:09,816
+Ben sadece en tane parçaya bölüyorum.
+
+281
+00:43:10,456 --> 00:43:11,736
+Yani bu en parça nedir?
+
+282
+00:43:12,256 --> 00:43:13,276
+10 parçaya bölüyorum.
+
+283
+00:43:13,396 --> 00:43:17,155
+4 parçaya, 3 parçaya, 5 parçaya, 1 milyon parçaya.
+
+284
+00:43:17,655 --> 00:43:18,756
+En tane parçaya bölüyorum.
+
+285
+00:43:18,816 --> 00:43:19,776
+En herhangi bir sayı.
+
+286
+00:43:20,716 --> 00:43:22,256
+Bu şekilde parçalara böleceğiz.
+
+287
+00:43:22,256 --> 00:43:27,756
+Bu parçalarda küçük küçük minik minik minnak dikdörtgenler oluşturacağız.
+
+288
+00:43:28,396 --> 00:43:32,056
+Bu minnak dikdörtgenleri iyice minnak yaptığımız zaman
+
+289
+00:43:32,056 --> 00:43:34,296
+yani eni sonsuza götürdüğümüz zaman
+
+290
+00:43:34,296 --> 00:43:38,076
+bu dikdörtgenlerin delta x'leri de b eksi a bölü n'ler
+
+291
+00:43:38,076 --> 00:43:44,195
+limit alıyoruz işte [öğrenci].
+
+292
+00:43:44,536 --> 00:43:45,876
+Sonsuz olmuyor tabii ki.
+
+293
+00:43:46,476 --> 00:43:47,096
+Limit alıyoruz.
+
+294
+00:43:47,216 --> 00:43:48,856
+Eni sonsuza giderken diyoruz.
+
+295
+00:43:48,856 --> 00:43:50,796
+Yani enin sonsuza gittiğini varsayıyoruz.
+
+296
+00:43:50,936 --> 00:43:51,296
+Tamam mı?
+
+297
+00:43:54,276 --> 00:43:58,876
+En sayı değil, eni sonsuza götürüyoruz.
+
+298
+00:43:58,936 --> 00:44:00,916
+Yani en sonsuza gitsin diyoruz.
+
+299
+00:44:00,916 --> 00:44:02,856
+Diyelim ki en sonsuza giderse ne olur?
+
+300
+00:44:03,416 --> 00:44:07,956
+En sonsuza giderse b eksi a bölü n'de neye gider?
+
+301
+00:44:08,076 --> 00:44:13,516
+En çok çok büyük bir sayı olursa b eksi a bölü n'de sıfıra yakın bir sayı olur.
+
+302
+00:44:14,336 --> 00:44:18,115
+Yani en sonsuza yakın bir sayı olursa, çok çok büyük bir sayı olursa
+
+303
+00:44:18,115 --> 00:44:21,436
+b eksi a bölü n'de sıfıra yakın bir sayı olur.
+
+304
+00:44:21,436 --> 00:44:27,316
+Yani o dikdörtgenlerin enleri oldukça sıfıra yakın sayılar olur.
+
+305
+00:44:28,796 --> 00:44:29,396
+Aynen aynen.
+
+306
+00:44:29,876 --> 00:44:34,836
+O şekilde h eşittir bir bölü sonsuz gibi [öğrenci].
+
+307
+00:44:35,076 --> 00:44:35,336
+Doğru.
+
+308
+00:44:35,336 --> 00:44:40,256
+O minnak dikdörtgenlerin enleri sıfıra yaklaşır.
+
+309
+00:44:41,376 --> 00:44:45,856
+Ve o minnak dikdörtgenlerin sayısı da sonsuza yaklaşır.
+
+310
+00:44:45,936 --> 00:44:51,936
+Böyle bir hesaplama yaptığım zaman, limiti bu şekilde gördüğüm zaman, limiti bu şekilde incelediğim zaman ne yapmış olurum ben?
+
+311
+00:44:51,936 --> 00:44:55,436
+Ben oldukça keskin bir hesaplama yapmış olurum.
+
+312
+00:44:55,536 --> 00:45:06,175
+Yani o grafikteki fx fonksiyonunun değerine, alanının değerine oldukça yaklaşmış olurum değil mi arkadaşlar?
+
+313
+00:45:07,096 --> 00:45:13,655
+Yani oldukça küçüklük dörtgenler oluşturduğum zaman, sonsuz küçüklük dörtgenler oluşturduğum zaman
+
+314
+00:45:13,655 --> 00:45:20,476
+ve fx fonksiyonuna oldukça yaklaştığım zaman ne olmuş olur?
+
+315
+00:45:20,476 --> 00:45:29,175
+fx fonksiyonunu, grafinin altında kalan alanı tam bir isabetle, tam bir kesinlikle hesaplamış olurum ben.
+
+316
+00:45:30,796 --> 00:45:32,796
+Anlatmaya çalıştığım şey aslında bu.
+
+317
+00:45:33,256 --> 00:45:34,476
+Parçaya böldüğümü düşünün.
+
+318
+00:45:35,836 --> 00:45:39,976
+Dört eksi iki bölü beş lira bir parçanın uzunluğu.
+
+319
+00:45:40,376 --> 00:45:42,175
+Burada da b eksi a bölü.
+
+320
+00:45:47,411 --> 00:46:02,811
+Peki ama, bu parçaları, en tane parçaya böldüm. Hesabını nasıl yaparım? Yani bu her bir parçanın, bu fonksiyonun grafiğiyle ve alanla ilişkisi nedir?
+
+321
+00:46:05,692 --> 00:46:11,111
+Şimdi, onu açıklamak için, bu parçalara,
+
+322
+00:46:16,211 --> 00:46:17,871
+bir değişkenle ifade edeyim.
+
+323
+00:46:18,291 --> 00:46:19,931
+X şeklinde bir değişkenle
+
+324
+00:46:19,931 --> 00:46:22,351
+ifade edeyim. Ve bu parçaları
+
+325
+00:46:22,351 --> 00:46:26,492
+X, E
+
+326
+00:46:37,268 --> 00:46:37,987
+yöntüreyim.
+
+327
+00:46:39,188 --> 00:46:41,228
+Ve bu parçaları şöyle tanımlayayım.
+
+328
+00:46:43,947 --> 00:46:44,887
+AB aralığının
+
+329
+00:47:09,204 --> 00:47:10,024
+uzunluğu da
+
+330
+00:47:14,003 --> 00:47:18,003
+o bölüntüyü x sıfır eşittir.
+
+331
+00:47:18,003 --> 00:47:20,163
+a ve
+
+332
+00:47:23,668 --> 00:47:33,428
+x'e eşittir b diyeyim ve x i x i artı 1 şeklinde böyle değişkenler şeklinde ifade edeyim.
+
+333
+00:47:35,847 --> 00:47:41,028
+Bu değişkenlerden bir tanesi diyelim ki bu x i
+
+334
+00:47:44,083 --> 00:47:57,543
+x i'ler, i eşittir 1'den n'e kadar olacaktır. x sıfır, x bir, x iki, x üç, bu şekilde tamamlanacaktır bu x i'ler.
+
+335
+00:48:00,103 --> 00:48:07,423
+Dolayısıyla, bu x i ve x i eksi bir arası şöyle bir dikdörtgen oluşturacaktır.
+
+336
+00:48:09,344 --> 00:48:12,683
+Burası üst nokta, burası alt nokta olarak tamamlanır.
+
+337
+00:48:12,683 --> 00:48:18,463
+Üsttekilerin toplamına üst iman toplamı, alttakilerin toplamına alt iman toplamı denir.
+
+338
+00:48:19,703 --> 00:48:22,283
+Şimdi ben sadece bir tanesini alacağım.
+
+339
+00:48:28,052 --> 00:48:57,672
+bir x i noktası için bu nokta y'ye karşılığı f x i olan noktadır. Dolayısıyla bu mesafe f x i olur. Peki x i ve x i eksi bir farkı nedir? Buradaki x i ile x i eksi birin farkı b eksi a bölü n olacaktır.
+
+340
+00:49:02,132 --> 00:49:09,132
+Her bir parçaya böldüm. Her bir parçanın arasındaki mesafe b eksi a bölü n olmuş oldu.
+
+341
+00:49:09,132 --> 00:49:32,132
+Ve bunları her bir parçadan uzaklaştıkça yani x0'a a dedim x1 a artı b eksi a bölü n çarpı 1. Bakın neden 1 dedim x2 a artı b eksi a bölü n çarpı 2 olacak.
+
+342
+00:49:32,132 --> 00:49:51,052
+Yani aslında böyle gidersem de x i dediğim değişkende i'inci değişkende i'inci değişkende a artı b eksi a bölü n çarpı i olarak tamamen olur.
+
+343
+00:49:52,432 --> 00:49:53,291
+Dolayısıyla
+
+344
+00:50:02,579 --> 00:50:08,819
+x i'ye karşılık gelen fonksiyonu f x i olarak tanımladım.
+
+345
+00:50:10,880 --> 00:50:14,639
+Peki, bu dikdörtgenin alanı nedir?
+
+346
+00:50:18,387 --> 00:50:22,467
+uzunluğu çarpı buranın uzunluğudur. Buranın uzunluğu fx iyi oldu.
+
+347
+00:50:23,527 --> 00:50:24,907
+Alttaki kısmın uzunluğu
+
+348
+00:50:35,155 --> 00:50:56,635
+toplamını alayım. i eşittir birden n'e kadar n parçaya bölmüştüm. Burada n tane dikdörtgen bulunmaktadır. Bu n tane dikdörtgenin sonlu bir toplamını alayım. Yani n parçaya, sonlu n tane parçaya ayırayım bu bölgeyi ve bu sonlu n tane parçanın sonlu bir toplamını alayım.
+
+349
+00:50:56,635 --> 00:51:09,275
+ve ben bu sonlu n tane bölüntünün limitini alırsam ve n'i sonsuza götürürsem bu eğrinin altındaki alana yasaklarım.
+
+350
+00:51:10,355 --> 00:51:18,476
+Ve bu alan da aslında bize a'dan d'ye fx dx integralini verir.
+
+351
+00:51:18,476 --> 00:51:28,476
+Tabii benim burada aldığım üstü iman toplamı sadece alt ve üst üan toplamlarının arasındaki bir mesafedir yaklaşık olarak integral.
+
+352
+00:51:28,476 --> 00:51:31,476
+Daha ayrıntılı aşamasına girmek istemiyorum.
+
+353
+00:51:31,476 --> 00:51:33,476
+Mesela
+
+354
+00:51:33,476 --> 00:51:36,476
+bir bölüntü olarak
+
+355
+00:51:36,476 --> 00:51:40,476
+örnek olarak bir bölüntü alalım.
+
+356
+00:51:47,347 --> 00:52:11,047
+yapısı bu şekilde. Yani bizim tamamladığımız f fonksiyonu ab'den real sayılara giden bir fonksiyon olsun. ab aralığından real sayılara. Bir p bölüksü, p kümesi alıyorum. Bu p kümesi x0, x1
+
+357
+00:52:21,043 --> 00:52:27,043
+x'in eksi bir x'in şeklinde aralıklardan oluşuyor
+
+358
+00:52:28,324 --> 00:52:29,123
+bu P
+
+359
+00:52:41,907 --> 00:52:48,668
+hüküme x0, x0, 1, x1, x2, x'en, x1, x'en şeklinde bölüntülere bölünmüş.
+
+360
+00:52:49,887 --> 00:52:50,768
+a x0
+
+361
+00:52:54,452 --> 00:52:58,632
+n parçaya bölünmüş ab aralığını ifade ediyor.
+
+362
+00:53:03,347 --> 00:53:04,847
+a-express'ı?
+
+363
+00:53:07,987 --> 00:53:25,248
+x 2 bu şekilde gider. x'en de b'ye sürdürür. Bu şekilde en tane parçaya bölün. Dolayısıyla delta x i'im benim, x i eksi, x i eksi 1'dir. Ve
+
+364
+00:54:00,211 --> 00:54:18,211
+Bu şekilde tanımlanır. Ve f, x, i starları hesaplarsam bu sonsuz toplam bana integrasyonu verir. Üst ve alt iman arasındaki bir rakamdır bu da. Dolayısıyla bu da aslında integrasyonun bir açıklamasıdır.
+
+365
+00:54:56,947 --> 00:55:06,268
+fokere integraller de benzer bir şey yapmıştık. Sonlu bölgede integral alıp sonsuza götürdüğümüzde ifadeyi buluyorduk.
+
+366
+00:55:06,268 --> 00:55:19,788
+Benzer şekilde burada sonlu toplama limitini alıp sonsuza götürdüğümüzde aslında o eğri bölgedeki eğrinin altındaki alanı hesaplıyoruz.
+
+367
+00:55:21,367 --> 00:55:21,748
+Şimdi
+
+368
+00:55:29,972 --> 00:55:32,472
+fonksiyon alalım. Mesela
+
+369
+00:55:32,472 --> 00:55:35,592
+sıfırdan
+
+370
+00:55:40,052 --> 00:55:46,432
+Bu integral x küp bölü 3 x eşittir 0'dan 3'e kadar.
+
+371
+00:55:48,552 --> 00:55:52,572
+Bu integral bildiğimiz bir integral x karenin integrali x küp bölü 3'tür.
+
+372
+00:55:52,832 --> 00:55:56,592
+x'e n'lerin integrali x'e n artı 1 bölü n artı 1 şeklinde ifade edilir.
+
+373
+00:55:58,271 --> 00:56:06,152
+Dolayısıyla burada 3'ün küpü bölü 3 eksi 0'ün küpü bölü 3 şeklinde bu belirli integralde hesapladığımızda
+
+374
+00:56:06,152 --> 00:56:11,452
+bu integralin sonucu 27 bölü 3 9 olarak ortaya çıkar.
+
+375
+00:56:11,452 --> 00:56:26,452
+Bu aslında bana x'e karteziyel koordinat üzerinde x karenin x eşittir 0'dan x eşittir 3'e kadar olan bölgesinin
+
+376
+00:56:26,452 --> 00:56:29,271
+burası 3 noktası
+
+377
+00:56:29,271 --> 00:56:37,271
+bu fonksiyonun y eşittir x kare şeklinde tanımlanmış fx eşittir.
+
+378
+00:56:38,112 --> 00:56:44,271
+x kare fonksiyonunun altındaki kısmın alanını veren integraldir.
+
+379
+00:56:45,271 --> 00:56:47,412
+Peki bunu Riemann integrali ile nasıl yapıyorum?
+
+380
+00:56:47,412 --> 00:56:55,972
+şimdi Riemann integrali ile bölgeyi n tane parçaya bölerek gösterelim.
+
+381
+00:56:58,711 --> 00:57:00,692
+Bu bir hatırlatma olduğu için
+
+382
+00:57:00,692 --> 00:57:04,832
+Riemann integrali'ni hatırlatmak için bir
+
+383
+00:57:04,832 --> 00:57:08,112
+kayıt olduğu için
+
+384
+00:57:08,112 --> 00:57:09,172
+sadece
+
+385
+00:57:09,172 --> 00:57:10,872
+basitçe
+
+386
+00:57:10,872 --> 00:57:13,032
+tek taraflı bir Riemann hesabı yapacağım.
+
+387
+00:57:18,195 --> 00:57:25,355
+x, y eksenleri 0, 3 aradığında y eşittir x kare fonksiyonunu alıyorum.
+
+388
+00:57:25,615 --> 00:57:28,496
+fx eşittir x kare fonksiyonunu alıyorum.
+
+389
+00:57:29,155 --> 00:57:33,155
+Burayı ben n tane parçaya bölüyorum. n tane dikdörtgene bölüyorum.
+
+390
+00:57:33,675 --> 00:57:39,735
+Her bir dikdörtgenin buradaki uzunluğu 3-0 bölü n'dir.
+
+391
+00:57:39,735 --> 00:57:45,375
+Yani delta x'leri 3 bölü n olarak tanımlanır.
+
+392
+00:57:45,375 --> 00:57:47,775
+ve
+
+393
+00:57:52,083 --> 00:57:53,003
+x i'leri ise
+
+394
+00:57:53,003 --> 00:57:57,083
+3 bölü L
+
+395
+00:57:57,083 --> 00:57:58,483
+i olarak
+
+396
+00:57:58,483 --> 00:57:59,364
+tanımlanır.
+
+397
+00:57:59,903 --> 00:58:00,643
+Aslında x i
+
+398
+00:58:03,891 --> 00:58:06,011
+başlayacak. x0 işte 0'dan
+
+399
+00:58:06,011 --> 00:58:08,111
+başlayacak. 0 artı
+
+400
+00:58:08,111 --> 00:58:09,551
+3 bölü en
+
+401
+00:58:09,551 --> 00:58:12,131
+i olarak devam eder. 0 saymadığım zaman
+
+402
+00:58:12,131 --> 00:58:13,951
+3 bölü en i olarak elde
+
+403
+00:58:13,951 --> 00:58:15,911
+ederim. Burası 1'den
+
+404
+00:58:15,911 --> 00:58:17,471
+başlasaydı 1 artı
+
+405
+00:58:17,471 --> 00:58:19,831
+3 bölü en i olacaktı.
+
+406
+00:58:21,672 --> 00:58:23,951
+Mesela burada arkadaşlar x1
+
+407
+00:58:23,951 --> 00:58:26,031
+3 bölü en olacak. x2
+
+408
+00:58:26,031 --> 00:58:27,771
+ne olacak?
+
+409
+00:58:27,911 --> 00:58:28,692
+0 artı
+
+410
+00:58:28,692 --> 00:58:31,831
+2 çarpı 3 bölü en olacak. Aslında
+
+411
+00:58:31,831 --> 00:58:33,851
+0 yok zaten. 3 bölü en i olacak.
+
+412
+00:58:33,891 --> 00:58:35,631
+ikincisi ne olacak?
+
+413
+00:58:36,131 --> 00:58:38,011
+x2 3 bölü en
+
+414
+00:58:38,011 --> 00:58:40,091
+çarpı 2. 0 artı 3 bölü en
+
+415
+00:58:40,091 --> 00:58:41,851
+çarpı 2 aslında. Bakın burada
+
+416
+00:58:41,851 --> 00:58:42,811
+bunu gösterdik.
+
+417
+00:58:43,831 --> 00:58:44,711
+0 çarpı
+
+418
+00:58:44,711 --> 00:58:47,951
+0 artı 3 bölü en
+
+419
+00:58:47,951 --> 00:58:49,851
+çarpı 2 olacak x2
+
+420
+00:58:49,851 --> 00:58:52,291
+0'ı zaten saymadığımız
+
+421
+00:58:52,291 --> 00:58:54,172
+için 3 bölü en çarpı i olarak
+
+422
+00:58:54,172 --> 00:58:56,371
+x'i yazabiliriz
+
+423
+00:58:56,371 --> 00:58:56,811
+arkadaşlar.
+
+424
+00:59:30,579 --> 00:59:42,679
+parçanın integralini almadan önce sonu toplam şeklinde Riemann toplamını ifade edeceğim.
+
+425
+00:59:42,679 --> 00:59:44,019
+Riemann toplamı
+
+426
+01:00:00,436 --> 01:00:01,536
+x e,
+
+427
+01:00:05,556 --> 01:00:06,556
+üç bölüde
+
+428
+01:00:09,652 --> 01:00:16,251
+x kare artı 3 bölü n. Burada arkadaşlar, f 3 bölü n i nedir?
+
+429
+01:00:18,652 --> 01:00:20,552
+f 3 bölü n i nedir?
+
+430
+01:00:30,579 --> 01:00:33,019
+Evet arkadaşlar, f3 bölü ni nedir?
+
+431
+01:00:34,659 --> 01:00:36,139
+fx fonksiyonu neydi?
+
+432
+01:00:37,139 --> 01:00:38,299
+fx eşittir.
+
+433
+01:00:38,900 --> 01:00:40,219
+x kare idi değil mi?
+
+434
+01:00:40,900 --> 01:00:42,819
+O zaman f3 bölü ni nedir?
+
+435
+01:00:46,675 --> 01:00:47,715
+Nedir arkadaşlar?
+
+436
+01:01:34,003 --> 01:01:52,523
+Arkadaşlar, fx eşittir, x kare idi. f3 bölü ni nedir? Bakın burada x'im ne benim? 3 bölü ni değil mi? O zaman f3 bölü ni nedir? fx eşittir de x kare idi.
+
+437
+01:02:15,411 --> 01:02:16,051
+Nedir?
+
+438
+01:02:20,179 --> 01:02:22,219
+3 bölü L
+
+439
+01:02:25,684 --> 01:02:26,403
+i'nin
+
+440
+01:02:30,068 --> 01:02:34,248
+karesidir değil mi arkadaşlar? Yani 9 bölü n kare
+
+441
+01:02:38,291 --> 01:02:40,331
+x i karedir.
+
+442
+01:03:02,579 --> 01:03:11,460
+x i-1 arasındaki fark 3 bölü L, 3-0 bölü L, b-a bölü L olarak ifade edelim. Ve burada
+
+443
+01:03:26,003 --> 01:03:29,304
+fonksiyonu, tanımlı fonksiyonu, fx eşittir x kare.
+
+444
+01:03:30,264 --> 01:03:37,364
+f, 3 bölü ni, 3 bölü ni'nin karesi olarak n'leridir.
+
+445
+01:03:37,864 --> 01:03:39,703
+Çarpı 3 bölü n.
+
+446
+01:03:40,403 --> 01:03:40,884
+Buradan,
+
+447
+01:03:47,123 --> 01:03:56,483
+3 bölü n'in karesi, 3 bölü n'in karesi, 3'ün karesi 9, i kare bölü n kare çarpı 3 bölü n olarak bunu elde ederim.
+
+448
+01:03:57,183 --> 01:04:03,523
+Bakın burada değişkenim, toplam sembolündeki değişkenim, i eşitir birden n'e kadar.
+
+449
+01:04:03,523 --> 01:04:05,663
+Buradaki değişkenim i'ye bağlı.
+
+450
+01:04:06,263 --> 01:04:15,523
+i değişken ama n sonlu bir sayı, n tane bölüntüye bölmüştüm bölgeyi.
+
+451
+01:04:21,235 --> 01:04:23,576
+Bakın buradaki n kafanızı karıştırmasın.
+
+452
+01:04:24,395 --> 01:04:26,496
+Toplam sembolü i'ye bağlı.
+
+453
+01:04:26,695 --> 01:04:28,215
+Yani i eşitir birden n'e kadar.
+
+454
+01:04:28,935 --> 01:04:31,295
+i değişkenine bağlı aslında toplam sembolü.
+
+455
+01:04:32,355 --> 01:04:32,915
+n neydi?
+
+456
+01:04:32,996 --> 01:04:33,835
+N sabit bir sayı.
+
+457
+01:04:33,915 --> 01:04:35,036
+Mesela 10 parçaya böldük.
+
+458
+01:04:35,096 --> 01:04:36,435
+10, 100 parçaya böldük.
+
+459
+01:04:37,235 --> 01:04:38,375
+100, 4 parçaya böldük.
+
+460
+01:04:38,455 --> 01:04:39,615
+4, 1 milyon parçaya böldük.
+
+461
+01:04:39,675 --> 01:04:40,056
+1 milyon.
+
+462
+01:04:40,675 --> 01:04:43,556
+Dolayısıyla buradaki 9 bölü n kare.
+
+463
+01:04:46,096 --> 01:04:47,516
+Sonra 3 bölü n.
+
+464
+01:04:48,516 --> 01:04:49,635
+Sabit sayılardır.
+
+465
+01:04:49,635 --> 01:04:52,815
+Ve sabit sayılar toplam sembolün dışına çıkabilir.
+
+466
+01:04:52,935 --> 01:04:56,855
+O zaman burası toplam sembolü i eşitir birden n'e.
+
+467
+01:05:03,731 --> 01:05:13,072
+i kare ve dışarıda da 9 bölü n kare çarpı 3 bölü n kalır.
+
+468
+01:05:19,891 --> 01:05:24,591
+Peki, size soru. i eşitir 1'den n'e kadar. i karelerin toplamı nedir?
+
+469
+01:05:27,211 --> 01:05:36,331
+Yani bu ne demek? Aslında 1'den n'e kadar sayıların karelerinin toplamı nedir? Bunu soruyorum.
+
+470
+01:05:38,111 --> 01:05:40,251
+1'den n'e kadar sayıların toplamı neydi?
+
+471
+01:05:41,451 --> 01:05:45,192
+n çarpı n artı 1 bölü.
+
+472
+01:05:48,403 --> 01:05:49,483
+2 idi değil mi?
+
+473
+01:05:52,684 --> 01:06:02,443
+Peki, 1'den n'e kadar sayıların kareleri toplamı nedir? Yani i eşitleri 1'den n'e kadar i karelerin toplamı nedir arkadaşlar?
+
+474
+01:06:06,356 --> 01:06:07,716
+Hocam söyleyebilir miyim?
+
+475
+01:06:11,731 --> 01:06:17,731
+yorumlara yazın. Söylediğiniz zaman ya anlaşılmıyor ya da...
+
+476
+01:06:49,427 --> 01:06:52,627
+1'den n'e kadar sayıların, karelerin toplamı nedir arkadaşlar?
+
+477
+01:06:58,003 --> 01:07:00,963
+Güzel. Teşekkürler.
+
+478
+01:07:02,824 --> 01:07:05,643
+n çarpı, n artı 1 çarpı, 2n artı 1 bölü 6'dır.
+
+479
+01:07:06,223 --> 01:07:08,743
+Bunu da sanırım şeyde görmüş olmanız lazım.
+
+480
+01:07:09,884 --> 01:07:16,123
+Yani bir sayıların toplamı, toplam sembolü gibi konular gördüyseniz eğer ancak da görmüş olmanız lazım.
+
+481
+01:07:16,663 --> 01:07:18,923
+Şimdi devam edelim. Burası anlaşıldı umarım.
+
+482
+01:07:22,931 --> 01:07:26,391
+Yani i eşitir birden n'e kadar toplam sembolü i kare ne demek?
+
+483
+01:07:27,311 --> 01:07:32,151
+1'in karesi artı 2'nin karesi artı 3'ün karesi artı nokta nokta artı n kare.
+
+484
+01:07:32,711 --> 01:07:35,451
+n'e kadar sayıların kareleri toplam arkadaşlar.
+
+485
+01:07:43,123 --> 01:07:45,363
+Bölüntüye böldüm. Bu yüz parça olabilir.
+
+486
+01:07:45,503 --> 01:07:47,243
+Bin parça olabilir. Ben burada
+
+487
+01:07:47,243 --> 01:07:49,063
+n parçaya böldüm. Bu n
+
+488
+01:07:49,063 --> 01:07:51,384
+dolayısıyla sabit bir sayı.
+
+489
+01:07:53,203 --> 01:07:55,003
+Aden aralığını n parçaya
+
+490
+01:07:55,003 --> 01:07:57,384
+böldüm. n parçaya böldüğüm için
+
+491
+01:07:57,384 --> 01:07:59,043
+n kare
+
+492
+01:07:59,043 --> 01:08:01,683
+ve n sabit sayılardır.
+
+493
+01:08:02,243 --> 01:08:03,183
+Diyelim ki bin parçaya
+
+494
+01:08:03,183 --> 01:08:04,983
+böldük. Bin bir sabit sayıdır.
+
+495
+01:08:05,063 --> 01:08:07,223
+Burada da n'i o sabit sayı
+
+496
+01:08:07,223 --> 01:08:08,523
+gibi düşünüyorum. Ve
+
+497
+01:08:08,523 --> 01:08:11,103
+n'leri toplam sembolün
+
+498
+01:08:11,103 --> 01:08:13,023
+dışına çıkartabilirdim. Ancak
+
+499
+01:08:13,023 --> 01:08:14,143
+i değişken.
+
+500
+01:08:15,083 --> 01:08:17,063
+Dolayısıyla 3 kere 9 27 bölü
+
+501
+01:08:17,063 --> 01:08:19,023
+n küp
+
+502
+01:08:19,023 --> 01:08:19,783
+çarpı
+
+503
+01:08:19,783 --> 01:08:23,203
+toplam sembolü i eşittir. 1'den n'e
+
+504
+01:08:23,203 --> 01:08:25,083
+kadar i kare
+
+505
+01:08:25,083 --> 01:08:26,724
+şeklinde
+
+506
+01:08:26,724 --> 01:08:28,103
+bulurum.
+
+507
+01:08:29,623 --> 01:08:30,663
+1'den n'e kadar
+
+508
+01:08:30,663 --> 01:08:32,903
+i karelerin toplamı
+
+509
+01:08:32,903 --> 01:08:37,203
+27 bölü n küp çarpı
+
+510
+01:08:39,283 --> 01:08:41,083
+1'den n'e kadar i karelerin
+
+511
+01:08:41,083 --> 01:08:41,844
+toplamı ise
+
+512
+01:08:41,844 --> 01:09:08,844
+n şarpı
+
+513
+01:08:48,275 --> 01:08:59,576
+kare artı 1 bölü 6 formülüyle hesaplandığını biliyoruz. Bu formülü kullanırsak ve bu ifadeyi dağıtırsak 27 bölü m küp.
+
+514
+01:09:14,996 --> 01:09:16,556
+27 bölü n küp
+
+515
+01:09:38,260 --> 01:09:42,199
+m şeklinde burayı bulurum, bölü 6. Bunu da düzenlersem.
+
+516
+01:09:46,260 --> 01:10:07,340
+6 ile 27'yi sadeleştirsem, burası 2, burası 9, 9 bölü 2 n küp çarpı 2 n küp artı 3 n kare artı n, n küp ile n küp sadeleşir.
+
+517
+01:10:07,340 --> 01:10:23,739
+2 ile 2 gider, 9 artı, bakın burası 9 artı, 3 kere 9, 27 n kare bölü n küp, 27 bölü n olarak hesaplanır.
+
+518
+01:10:23,739 --> 01:10:39,119
+ve n bölü n küp, n bölü 2 n küp, şuradaki 2 bitmişti, artı 9 bölü 2 n kare olur.
+
+519
+01:10:42,707 --> 01:10:47,627
+Şimdi arkadaşlar, n'i sonsuza götürürsek,
+
+520
+01:10:48,768 --> 01:10:49,567
+Ve limit alayım.
+
+521
+01:10:50,907 --> 01:10:57,607
+n'i sonsuza götürürsek, 9 artı 27 bölü 2n, artı 9 bölü 2n karenin limiti ne olur arkadaşlar?
+
+522
+01:11:51,123 --> 01:11:53,123
+Evet, 9. Peki...
+
+523
+01:11:56,627 --> 01:11:58,127
+Bizim integralimiz neydi?
+
+524
+01:11:59,648 --> 01:12:00,587
+İntegral
+
+525
+01:12:09,108 --> 01:12:20,488
+x kare dx değil mi? x kare fonksiyonun integrali nereden nereye? 0'dan 3'e. Nedir bu integral? x küp bölü 3.
+
+526
+01:12:23,923 --> 01:12:25,684
+Sıfırdan 3'e.
+
+527
+01:12:27,264 --> 01:12:29,663
+Ve bu integrali hesapladığımız zaman bakın ne oluyor?
+
+528
+01:12:32,123 --> 01:12:34,423
+3'ün kübü 27 bölü 3.
+
+529
+01:12:35,444 --> 01:12:40,703
+Eksi 0'ın kübü bölü 3 oluyor.
+
+530
+01:12:40,703 --> 01:12:45,923
+Burası zaten 0 27 bölü 3'ten de 9 geliyor arkadaşlar.
+
+531
+01:12:47,743 --> 01:12:52,224
+Bakın integrasyon kurallarıyla integralin hesabını yaptım.
+
+532
+01:12:52,224 --> 01:12:53,944
+Bana ne verdi?
+
+533
+01:12:54,884 --> 01:12:55,583
+9'u verdi.
+
+534
+01:12:57,384 --> 01:12:58,564
+Ama bu nereden geliyor?
+
+535
+01:12:59,003 --> 01:13:00,623
+Yani bu integrasyon kurallarıyla.
+
+536
+01:13:00,963 --> 01:13:01,564
+Hani neydi?
+
+537
+01:13:01,804 --> 01:13:05,644
+Türev'de t-t neyme tanjant alfadan geliyordu.
+
+538
+01:13:05,923 --> 01:13:11,243
+Fonksiyonun o noktadaki t-t neyme tanjant alfadan geliyordu.
+
+539
+01:13:11,323 --> 01:13:12,323
+Bunu göstermiştik.
+
+540
+01:13:13,224 --> 01:13:15,884
+Yani karşı kenar böyle komşu kenarın oranlarını almıştık.
+
+541
+01:13:16,304 --> 01:13:17,304
+Limitini almıştık.
+
+542
+01:13:17,984 --> 01:13:19,703
+Limit tanımıyla yapmıştık.
+
+543
+01:13:20,064 --> 01:13:21,884
+İşte sonsuz küçültmüştük.
+
+544
+01:13:21,884 --> 01:13:24,604
+O aralıktaki t-t'in eğimini tam olarak vermişti.
+
+545
+01:13:25,444 --> 01:13:26,604
+Burada da benzer şekilde.
+
+546
+01:13:27,403 --> 01:13:28,604
+Bu hesaplamaların tamamı.
+
+547
+01:13:29,283 --> 01:13:32,703
+Yani x kare dx'in integralinin x kübü bölü 3 olması.
+
+548
+01:13:32,844 --> 01:13:34,863
+Ve bunun 27 bölü 3 olması.
+
+549
+01:13:35,104 --> 01:13:36,543
+Ve sonuç olarak 9 çıkması.
+
+550
+01:13:36,543 --> 01:13:41,064
+Aslında bunların hepsi Riemann'ın yaptığı tanımdan ileri geliyor.
+
+551
+01:13:41,764 --> 01:13:59,703
+İlk olarak ilk başta aslında bunları yaparken bazı hesaplamaları geliştirmek için elementer olarak toplam sembolüyle bazı sayıları toplayarak sonu sayıda sayıları toplayarak
+
+552
+01:13:59,703 --> 01:14:05,423
+belli bir noktadan belli bir noktaya gidişi hesaplarken hızı hesaplarken
+
+553
+01:14:05,423 --> 01:14:16,024
+işte Newton mesela F net eşittir M'a'yı hesaplarken ve yer çekimi kat sayısını hesaplarken
+
+554
+01:14:16,024 --> 01:14:23,043
+yüzlerce binlerce taşı alıp atıyor.
+
+555
+01:14:23,543 --> 01:14:24,804
+Bir binanın üstüne çıkıyor.
+
+556
+01:14:24,903 --> 01:14:26,203
+Bir metre yükseklikten atıyor.
+
+557
+01:14:26,283 --> 01:14:27,484
+İki metre yükseklikten atıyor.
+
+558
+01:14:27,564 --> 01:14:28,724
+Üç metre yükseklikten atıyor.
+
+559
+01:14:28,844 --> 01:14:30,163
+Beş metre yükseklikten atıyor.
+
+560
+01:14:30,304 --> 01:14:31,783
+Bin metre yükseklikten atıyor.
+
+561
+01:14:32,463 --> 01:14:33,564
+Yüz metreden atıyor.
+
+562
+01:14:34,363 --> 01:14:35,583
+Otuz metreden atıyor.
+
+563
+01:14:36,144 --> 01:14:37,024
+Hepsini hesaplıyor.
+
+564
+01:14:37,163 --> 01:14:38,323
+Saniyesini hesaplıyor.
+
+565
+01:14:38,323 --> 01:14:41,363
+Ondan sonra taşın ağırlığını hesaplıyor.
+
+566
+01:14:41,484 --> 01:14:43,043
+Yere varma süresini hesaplıyor.
+
+567
+01:14:43,844 --> 01:14:45,703
+Bunların hepsini notlarına yazıyor.
+
+568
+01:14:47,283 --> 01:14:51,123
+Onun notlarını gördüğünüz zaman zaten onu araştırdığınız zaman görüyorsunuz.
+
+569
+01:14:51,184 --> 01:14:52,524
+Tek tek hesaplamanı yapmışlar.
+
+570
+01:14:53,144 --> 01:14:57,363
+Yine Einstein genel relativiteyi hesaplarken bir sürü hesaplamalar yapıyor.
+
+571
+01:14:57,363 --> 01:14:59,104
+Kağıtlara yazıyor, yazıyor, yazıyor.
+
+572
+01:14:59,564 --> 01:15:01,644
+Ve en sonunda bu formüller çıkıyor.
+
+573
+01:15:01,904 --> 01:15:05,363
+Yani bu formüllerin çıkışı, bu formüllerin oluşturuluşu,
+
+574
+01:15:05,363 --> 01:15:08,604
+yani x kareyi yazıp da yapmıyorlar.
+
+575
+01:15:10,163 --> 01:15:12,144
+Sonlu sayıda hesaplamalar yapıyorlar.
+
+576
+01:15:12,323 --> 01:15:14,423
+Elle kağıtlara yazarak hesaplamalar yapıyorlar.
+
+577
+01:15:15,024 --> 01:15:18,844
+Ve bu hesaplamaların sonucunda bu formüller çıkıyor.
+
+578
+01:15:19,663 --> 01:15:22,524
+Dolayısıyla bir şey geliştirirken, bir şey yaparken de
+
+579
+01:15:22,524 --> 01:15:26,484
+aslında elementer olarak elinize kalem alıp, kağıt alıp
+
+580
+01:15:26,484 --> 01:15:29,984
+ya da bilgisayar programına yazıp, Word'e, Excel'e yazıp
+
+581
+01:15:29,984 --> 01:15:33,884
+yine elementer biçimde hesaplamalar yapmanız gerekiyor.
+
+582
+01:15:33,884 --> 01:15:36,963
+Ve bu hesaplamaların sonuçları büyük ihtimalle
+
+583
+01:15:36,963 --> 01:15:41,743
+insanlığın bugüne kadar ulaştığı limit, türev, integral kavramlarıyla
+
+584
+01:15:41,743 --> 01:15:47,304
+ya da daha yüksek türevler, kısmi türev, kısmi integrasyon kavramlarıyla
+
+585
+01:15:47,304 --> 01:15:50,884
+vektörlerle veya fizikteki öğrendiğiniz kavramlarla
+
+586
+01:15:51,884 --> 01:15:53,184
+bir yerlerde çakışacak.
+
+587
+01:15:53,623 --> 01:15:56,623
+İşte oralarda bu öğrendiğiniz kavramları kullanacaksınız.
+
+588
+01:15:57,684 --> 01:16:02,963
+Riemann integralide aslında integrasyonun nereden geldiğini bize gösteriyor.
+
+589
+01:16:02,963 --> 01:16:04,564
+Türev tanımında da bunu yapmıştık.
+
+590
+01:16:04,644 --> 01:16:08,304
+Türev tanımı da aslında bir fonksiyonun türevini alıyoruz.
+
+591
+01:16:08,463 --> 01:16:09,663
+Belli kurallar belirledik.
+
+592
+01:16:09,743 --> 01:16:10,984
+Bunları ezberliyoruz.
+
+593
+01:16:11,724 --> 01:16:14,604
+Ama bunların nereden çıktığını gösteriyor bize.
+
+594
+01:16:14,724 --> 01:16:15,623
+Limit tanımı da öyle.
+
+595
+01:16:16,403 --> 01:16:18,264
+Yani bunların bir çıkış noktası var.
+
+596
+01:16:18,583 --> 01:16:22,503
+Elimizle kağıtta hesaplarken, kağıtlara yazarak hesaplıyoruz.
+
+597
+01:16:23,188 --> 01:16:40,908
+Sonlu tane hesaplama yapıyoruz. Bunları işte sonsuza götürürsek ne olur varsayımında bulunuyoruz. Ne olur'u düşünüyoruz. Sonsuza götürürsem nereye ulaşırımı düşünüyorum. Ve bunun sonucunda da belli denklemler, belli formüller geliştiriyorum.
+
+598
+01:16:46,036 --> 01:17:05,256
+Hasılı kelim bu. Yani Riemann integrali de bizim belirli integrali nasıl tanımladığımızı, belirli integralin neden o fonksiyonun grafinin altında kalan alanı verdiğini ifade ediyor bize. Umarım bu derste bunu anlatabilmişimdir.
+
+599
+01:17:09,939 --> 01:17:12,719
+Yani şu ana kadar anlatmaya çalıştığım şey buydu.
+
+600
+01:17:20,243 --> 01:17:26,083
+Şimdi bakın bu soruda da integralisyon kurallarına x üzeri n'in integral neydi?
+
+601
+01:17:26,123 --> 01:17:27,863
+x üzeri n artı 1 bölü n artı 1'di.
+
+602
+01:17:28,323 --> 01:17:30,363
+Buna göre aldım 9 buldum.
+
+603
+01:17:30,363 --> 01:17:38,103
+Ama alt alta sonsuz tane bölüntüye böldüğümü düşünerek bu varsayımı kullanarak yaptığım zaman da
+
+604
+01:17:38,103 --> 01:17:43,143
+yani Riemann'ın yaptığı tanımı kullanarak yaptığımda da 9 elde ediyorum.
+
+605
+01:17:44,003 --> 01:17:45,123
+Bakın 9'u buluyorum.
+
+606
+01:17:45,423 --> 01:17:47,963
+N'i sonsuza götürdüğümde 9 geliyor, 9 kalıyor.
+
+607
+01:17:47,963 --> 01:17:52,423
+İşte biz bu integrale Riemann integrali diyeceğiz.
+
+608
+01:17:52,683 --> 01:17:53,583
+Riemann integrali bu.
+
+609
+01:17:54,183 --> 01:17:57,523
+Aynı zamanda bu sürekli bir fonksiyon için tanımlı.
+
+610
+01:17:58,123 --> 01:18:00,183
+Bu fonksiyon sürekli bir fonksiyon.
+
+611
+01:18:00,264 --> 01:18:03,023
+Sürekli fonksiyonlar için böyle bir integral var.
+
+612
+01:18:03,823 --> 01:18:10,223
+Süreksiz fonksiyonlar ve farklı tipte fonksiyonlar içinde, kompleks fonksiyonlar içinde farklı integraller tanımlı.
+
+613
+01:18:10,304 --> 01:18:17,403
+Ama bu dersin kapsama dışında eğer ileride daha üst hesaplamalar, daha zor hesaplamalar yaparsanız
+
+614
+01:18:17,403 --> 01:18:19,603
+onları da öğrenmek durumunda kalacaksınız.
+
+615
+01:18:25,140 --> 01:18:27,579
+Buraya kadar anlaşılmayan bir kısım var mı arkadaşlar?
+
+616
+01:18:31,347 --> 01:18:34,188
+Umarım Riemann integralinin mantığı anlaşılmıştır.
+
+617
+01:19:02,644 --> 01:19:07,704
+Bu n parçayı, bu sonlu bölüntüyü sonsuza götürdüğümde
+
+618
+01:19:07,704 --> 01:19:09,804
+İntegrasyonu elde ediyorum.
+
+619
+01:19:10,144 --> 01:19:12,444
+Riemann toplamını elde ediyorum aslında.
+
+620
+01:19:13,664 --> 01:19:14,524
+Riemann toplamı
+
+621
+01:19:14,524 --> 01:19:17,404
+Buraya yazdığım yazılar gözüküyor mu arkadaşlar?
+
+622
+01:19:20,804 --> 01:19:23,184
+Buraya integrali falan aldım. Bu yazı gözüküyor mu?
+
+623
+01:19:23,423 --> 01:19:24,784
+Tamam. Teşekkürler.
+
+624
+01:19:25,884 --> 01:19:26,404
+Çıktı.
+
+625
+01:19:27,264 --> 01:19:28,463
+Bunun limitini alırsam
+
+626
+01:19:28,463 --> 01:19:30,484
+Limit n sonsuza giderken
+
+627
+01:19:30,484 --> 01:19:32,884
+9 artı
+
+628
+01:19:32,884 --> 01:19:34,764
+27 bölü 2n
+
+629
+01:19:34,764 --> 01:19:37,204
+Artı
+
+630
+01:19:37,204 --> 01:19:39,304
+9 bölü 2n kare. Bakın bu
+
+631
+01:19:39,304 --> 01:19:41,784
+Basit bir limittir.
+
+632
+01:19:42,844 --> 01:19:43,324
+9'un
+
+633
+01:19:43,324 --> 01:19:45,904
+Limiti 9 olarak ortaya çıkar.
+
+634
+01:19:46,164 --> 01:19:46,744
+Dışarı çıkar.
+
+635
+01:19:47,444 --> 01:19:49,864
+27 bölü 2n'in limiti
+
+636
+01:19:49,864 --> 01:19:50,923
+En sonsuza giderken
+
+637
+01:19:50,923 --> 01:19:54,104
+Sıfıra gider. 9 bölü 2n karenin limiti
+
+638
+01:19:54,104 --> 01:19:55,444
+En sonsuza giderken
+
+639
+01:19:55,444 --> 01:19:57,543
+Sıfıra gider. Ve bu limiti aldığımda
+
+640
+01:19:57,543 --> 01:19:59,543
+Cevap 9 olarak ortaya çıkar.
+
+641
+01:19:59,543 --> 01:20:01,564
+Biz zaten şunu biliyoruz.
+
+642
+01:20:03,744 --> 01:20:05,423
+Fx eşittir x karenin
+
+643
+01:20:05,423 --> 01:20:09,524
+Fx eşittir x kare fonksiyonunu
+
+644
+01:20:09,524 --> 01:20:11,324
+Sıfırdan 3'e kadar
+
+645
+01:20:11,324 --> 01:20:13,264
+İntegralini aldığımda
+
+646
+01:20:13,264 --> 01:20:16,764
+x küp bölü 3 olarak elde ediyorum.
+
+647
+01:20:16,764 --> 01:20:20,344
+Ve 0 3 aralığında belirli integral olarak hesapladığımda
+
+648
+01:20:20,344 --> 01:20:22,484
+0 3 aralığında
+
+649
+01:20:22,484 --> 01:20:24,184
+Bu fonksiyonun
+
+650
+01:20:24,184 --> 01:20:25,944
+Eğrisinin altında kalan alan
+
+651
+01:20:25,944 --> 01:20:27,864
+Zaten 9 olarak
+
+652
+01:20:27,864 --> 01:20:29,264
+Ortaya çıkıyor.
+
+653
+01:20:29,864 --> 01:20:30,644
+Limit n integralinde
+
+654
+01:20:30,644 --> 01:20:32,184
+Bunun nasıl
+
+655
+01:20:32,184 --> 01:20:33,484
+Ortaya çıktığını
+
+656
+01:20:33,484 --> 01:20:35,484
+Nasıl meydana geldiğini
+
+657
+01:20:35,484 --> 01:20:36,484
+Aslında
+
+658
+01:20:36,484 --> 01:20:38,524
+İntegrasyonun ne anlama geldiğini
+
+659
+01:20:38,524 --> 01:20:39,623
+Açıklamak için
+
+660
+01:20:39,623 --> 01:20:41,144
+Kullandığımız bir kavram
+
+661
+01:20:41,144 --> 01:20:43,404
+Limit n integralinde
+
+662
+01:20:43,404 --> 01:20:46,024
+A-B aralığını
+
+663
+01:20:46,024 --> 01:20:47,984
+Sonlu sayıda
+
+664
+01:20:47,984 --> 01:20:49,524
+Parçaya bölüyoruz.
+
+665
+01:20:50,524 --> 01:20:51,364
+Bu parçalardan
+
+666
+01:20:51,364 --> 01:20:52,224
+Her birine
+
+667
+01:20:52,224 --> 01:20:54,484
+Delta x diyoruz.
+
+668
+01:20:55,324 --> 01:20:56,923
+Bir delta x'in uzunluğu
+
+669
+01:20:56,923 --> 01:20:58,963
+A-B aralığını
+
+670
+01:20:58,963 --> 01:21:00,344
+N parçaya böldüğümüz için
+
+671
+01:21:00,344 --> 01:21:02,344
+B-A bölü N oluyor.
+
+672
+01:21:02,744 --> 01:21:03,664
+Her bir parçanın
+
+673
+01:21:03,664 --> 01:21:05,704
+Her bir delta x'in uzunluğu
+
+674
+01:21:05,704 --> 01:21:06,904
+B-A bölü N
+
+675
+01:21:06,904 --> 01:21:09,344
+Ve bu parçaların
+
+676
+01:21:09,344 --> 01:21:11,423
+Üst kısımlarını
+
+677
+01:21:11,423 --> 01:21:12,564
+Diyelim ki
+
+678
+01:21:12,564 --> 01:21:14,123
+Grafik bu kadarı doğruysa
+
+679
+01:21:14,123 --> 01:21:15,944
+Yani bu şekilde ise
+
+680
+01:21:15,944 --> 01:21:16,864
+Üst kısımlarını
+
+681
+01:21:16,864 --> 01:21:18,244
+Elde ettiğimiz
+
+682
+01:21:18,244 --> 01:21:19,064
+X-İ'lerin
+
+683
+01:21:19,064 --> 01:21:20,804
+Sonsuz toplamına
+
+684
+01:21:20,804 --> 01:21:22,623
+Sonlu bölüntüye
+
+685
+01:21:22,623 --> 01:21:25,043
+Sonlu bölüntüye bölüp
+
+686
+01:21:25,043 --> 01:21:26,083
+Böldüğümüzde
+
+687
+01:21:26,083 --> 01:21:27,043
+Bu toplama
+
+688
+01:21:27,043 --> 01:21:28,304
+Üst riman integralı
+
+689
+01:21:28,304 --> 01:21:30,344
+Üst riman toplamı diyoruz.
+
+690
+01:21:31,003 --> 01:21:31,564
+Altlarda
+
+691
+01:21:31,564 --> 01:21:32,444
+Hesaplarsak
+
+692
+01:21:32,444 --> 01:21:33,963
+Alt riman toplamı diyoruz.
+
+693
+01:21:34,304 --> 01:21:34,704
+Ve bu
+
+694
+01:21:34,704 --> 01:21:35,664
+Toplama
+
+695
+01:21:35,664 --> 01:21:38,024
+Sonlu toplamın
+
+696
+01:21:38,024 --> 01:21:38,844
+N'ini
+
+697
+01:21:38,844 --> 01:21:41,284
+Bu sonlu toplamın
+
+698
+01:21:41,284 --> 01:21:42,304
+N sayısını
+
+699
+01:21:42,304 --> 01:21:43,724
+Sonsuza götürdüğümüzde
+
+700
+01:21:43,724 --> 01:21:45,724
+İntek
+
+701
+01:21:45,724 --> 01:21:46,684
+Rasyonu
+
+702
+01:21:46,684 --> 01:21:47,543
+Elde ediyoruz.
+
+703
+01:21:48,484 --> 01:21:49,204
+Elde ettiğimiz
+
+704
+01:21:49,204 --> 01:21:50,664
+İfade
+
+705
+01:21:50,664 --> 01:21:51,864
+Üst riman toplamı
+
+706
+01:21:51,864 --> 01:21:52,904
+Alt riman toplamı
+
+707
+01:21:52,904 --> 01:21:53,364
+Arasında
+
+708
+01:21:53,364 --> 01:21:54,704
+Bir ifadedir.
+
+709
+01:21:55,463 --> 01:21:56,484
+İşte riman toplamı
+
+710
+01:21:56,484 --> 01:21:58,043
+İntegre
+
+711
+01:21:58,043 --> 01:21:59,904
+Riman integralini
+
+712
+01:21:59,904 --> 01:22:00,583
+Açıklamak için
+
+713
+01:22:00,583 --> 01:22:01,664
+Kullandığımız bir kavram.
+
+714
+01:22:02,444 --> 01:22:03,923
+Dolayısıyla
+
+715
+01:22:03,923 --> 01:22:06,123
+Riman
+
+716
+01:22:06,123 --> 01:22:07,583
+Toplamları
+
+717
+01:22:07,583 --> 01:22:08,244
+Kullarak
+
+718
+01:22:08,244 --> 01:22:10,404
+Biz aynı zamanda
+
+719
+01:22:10,404 --> 01:22:12,644
+Çok değişkenli
+
+720
+01:22:12,644 --> 01:22:13,463
+Fonksiyonlarda
+
+721
+01:22:13,463 --> 01:22:14,904
+Riman toplamının
+
+722
+01:22:14,904 --> 01:22:15,344
+Nasıl
+
+723
+01:22:15,344 --> 01:22:16,784
+Yapılacağını da
+
+724
+01:22:16,784 --> 01:22:17,543
+Açıklayacağız.
+
+725
+01:22:18,704 --> 01:22:20,144
+Çok değişkenli
+
+726
+01:22:20,144 --> 01:22:20,963
+Fonksiyonlarda
+
+727
+01:22:20,963 --> 01:22:23,724
+Üç boyutlu uzayda
+
+728
+01:22:23,724 --> 01:22:25,003
+Öncelikle
+
+729
+01:22:25,003 --> 01:22:26,484
+İksiye düzleminde
+
+730
+01:22:26,484 --> 01:22:28,444
+Bir bölge alıp
+
+731
+01:22:28,444 --> 01:22:29,463
+Daha sonra
+
+732
+01:22:29,463 --> 01:22:31,344
+Üçüncü tarafta
+
+733
+01:22:31,344 --> 01:22:32,644
+Bir
+
+734
+01:22:32,644 --> 01:22:34,463
+Fonksiyonun
+
+735
+01:22:34,463 --> 01:22:35,244
+İfade ettiği
+
+736
+01:22:35,244 --> 01:22:35,764
+Yüzeyi
+
+737
+01:22:35,764 --> 01:22:36,804
+Göstermemiz
+
+738
+01:22:36,804 --> 01:22:37,444
+Gerekecek.
+
+739
+01:22:38,164 --> 01:22:38,704
+Dolayısıyla
+
+740
+01:22:38,704 --> 01:22:39,264
+Bunları
+
+741
+01:22:39,264 --> 01:22:40,404
+Anlayabilmek için
+
+742
+01:22:40,404 --> 01:22:41,543
+Temel
+
+743
+01:22:41,543 --> 01:22:42,724
+Riman toplumunun
+
+744
+01:22:42,724 --> 01:22:43,083
+Ne anlam
+
+745
+01:22:43,083 --> 01:22:43,984
+İfade ettiğini
+
+746
+01:22:43,984 --> 01:22:44,944
+Gezda
+
+747
+01:22:44,944 --> 01:22:45,524
+Üzerinden
+
+748
+01:22:45,524 --> 01:22:46,644
+Geçmemiz gerekiyor.
+
+749
+01:23:08,051 --> 01:23:10,351
+Umarım anlaşılmıştır arkadaşlar Riemann integral'i.
+
+750
+01:23:22,228 --> 01:23:24,948
+Riemann integral ile ilgili anlaşılmayan bir nokta var mı arkadaşlar?
+
+751
+01:23:26,507 --> 01:23:30,047
+YouTube kanalında da ders paylaşımları yapıyorum. Takip edebilirsiniz.
+
+752
+01:23:58,420 --> 01:24:07,380
+Alt ve üst iman toplamlarına bakalım arkadaşlar. Alt iman toplamı L işaretiyle gösteriliyor. Lower kelimesinden geliyor.
+
+753
+01:24:08,739 --> 01:24:15,279
+Üst iman toplamında U ile gösteriliyor. Upper kelimesinden geliyor. Upper FB ile gösteriliyor.
+
+754
+01:24:16,579 --> 01:24:24,260
+Yarın bu alt ve üst iman toplamlarıyla devam edelim arkadaşlar. Anlaşılmayan bir yer var mı? Anlamadığınız bir yer.
+
+755
+01:24:49,140 --> 01:24:54,000
+Yine bu videoyu tekrar izleyebilirsiniz. Anlamadığınız bir yer varsa YouTube'dan da izleyebilirsiniz.
+
+756
+01:24:58,163 --> 01:25:00,543
+O zaman dersi sonlandırıyorum arkadaşlar.
+
+757
+01:25:01,983 --> 01:25:03,423
+Umarım verimli bir ders olmuştur.
+
+758
+01:25:04,623 --> 01:25:06,603
+Umarım Riemann integralini anlamıştınızdır.
+
+759
+01:25:10,003 --> 01:25:11,443
+YouTube videosunu beğenebilirsiniz.
+
+760
+01:25:15,104 --> 01:25:17,163
+Ders bitmiştir arkadaşlar.
+
+761
+01:25:17,524 --> 01:25:18,264
+Kendinize iyi bakın.
+
+762
+01:25:20,743 --> 01:25:22,243
+Sorusu olan varsa tabii.
+
+763
+01:25:24,443 --> 01:25:25,083
+Görüşmek üzere.
+
+764
+01:25:25,203 --> 01:25:25,863
+Kendinize iyi bakın.
+
+765
+01:25:27,083 --> 01:25:27,543
+İyi günler.
