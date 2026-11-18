@@ -1,0 +1,6647 @@
+1
+00:00:13,619 --> 00:00:15,719
+Evet, merhaba arkadaşlar. Sesim geliyor mu?
+
+2
+00:00:33,908 --> 00:00:37,968
+Sesimde bir sıkıntı var mı gençler? Sesim kesikli mi geliyor, sürekli mi geliyor?
+
+3
+00:01:04,436 --> 00:01:07,936
+Evet, birkaç dakika bekleyelim. Herkes dersimize katılabilsin.
+
+4
+00:01:37,939 --> 00:01:48,500
+Ok, let's start our lecture. So, unfortunately, my pen was broken. That's why I will try to write
+
+5
+00:01:48,500 --> 00:01:59,819
+by using mouse. Okay. And I will use the lecture. Can you hear me?
+
+6
+00:02:07,987 --> 00:02:08,467
+Okey.
+
+7
+00:02:10,008 --> 00:02:11,927
+Kalemim bozuldu. O yüzden
+
+8
+00:02:11,927 --> 00:02:16,307
+başkalarının
+
+9
+00:02:16,307 --> 00:02:18,087
+ders notu üzerinden anlatacağım.
+
+10
+00:02:18,427 --> 00:02:19,307
+Yazamıyorum.
+
+11
+00:02:20,527 --> 00:02:21,888
+Mouse ile yazmaya çalışacağım.
+
+12
+00:02:22,407 --> 00:02:24,048
+Haftaya kalemim gelir. O zaman
+
+13
+00:02:24,048 --> 00:02:26,048
+devam ederiz. Bu hafta böyle
+
+14
+00:02:26,048 --> 00:02:28,168
+yapacağız.
+
+15
+00:02:28,307 --> 00:02:30,048
+Okey. So today
+
+16
+00:02:30,048 --> 00:02:32,147
+we are going to learn
+
+17
+00:02:32,147 --> 00:02:33,788
+reduction formulas. Okey.
+
+18
+00:02:34,268 --> 00:02:35,867
+So look at this
+
+19
+00:02:35,867 --> 00:02:37,967
+function. So look at
+
+20
+00:02:37,967 --> 00:02:39,908
+this integral function. X to
+
+21
+00:02:39,908 --> 00:02:41,987
+n times exponential
+
+22
+00:02:41,987 --> 00:02:43,908
+x. Okay. So
+
+23
+00:02:43,908 --> 00:02:46,008
+this n is positive
+
+24
+00:02:46,008 --> 00:02:47,768
+integer. So how
+
+25
+00:02:47,768 --> 00:02:50,168
+could integrate
+
+26
+00:02:50,168 --> 00:02:51,527
+this
+
+27
+00:02:51,527 --> 00:02:53,888
+integral problem?
+
+28
+00:02:54,087 --> 00:02:55,608
+So look at this integral function.
+
+29
+00:02:55,828 --> 00:02:57,707
+How can we integrate
+
+30
+00:02:57,707 --> 00:02:58,348
+this
+
+31
+00:02:58,348 --> 00:03:01,507
+functions?
+
+32
+00:03:01,507 --> 00:03:03,828
+Look at this. Mn
+
+33
+00:03:03,828 --> 00:03:06,048
+are integers. A is
+
+34
+00:03:06,048 --> 00:03:07,848
+some constant
+
+35
+00:03:07,848 --> 00:03:09,467
+real number. Okay. So we
+
+36
+00:03:09,467 --> 00:03:11,788
+are going to learn
+
+37
+00:03:11,788 --> 00:03:13,127
+this.
+
+38
+00:03:15,647 --> 00:03:15,947
+Okay.
+
+39
+00:03:16,527 --> 00:03:17,587
+Now look at here. So
+
+40
+00:03:17,587 --> 00:03:19,527
+your integral function depends on
+
+41
+00:03:19,527 --> 00:03:21,728
+x and n discrete variable,
+
+42
+00:03:21,867 --> 00:03:23,007
+integer variable. Okay.
+
+43
+00:03:24,307 --> 00:03:25,867
+Now so this is
+
+44
+00:03:25,867 --> 00:03:27,828
+equal to g of x. And so
+
+45
+00:03:27,828 --> 00:03:28,867
+we have some
+
+46
+00:03:28,867 --> 00:03:30,527
+formula.
+
+47
+00:03:30,528 --> 00:03:35,468
+some integral problem.
+
+48
+00:03:35,468 --> 00:03:38,548
+So if you have
+
+49
+00:03:38,548 --> 00:03:40,207
+size structure. So size
+
+50
+00:03:40,207 --> 00:03:41,228
+structure is called
+
+51
+00:03:41,228 --> 00:03:42,388
+reduction formula.
+
+52
+00:03:42,948 --> 00:03:44,028
+Okay. Let me introduce
+
+53
+00:03:44,028 --> 00:03:44,608
+some
+
+54
+00:03:44,608 --> 00:03:47,228
+example. Let's consider
+
+55
+00:03:47,228 --> 00:03:48,168
+this example.
+
+56
+00:03:48,747 --> 00:03:50,207
+Let's compute this
+
+57
+00:03:50,207 --> 00:03:51,187
+integral problem.
+
+58
+00:03:51,187 --> 00:03:52,187
+x to n.
+
+59
+00:03:52,567 --> 00:03:54,127
+Exponation x dx.
+
+60
+00:03:54,127 --> 00:03:55,108
+As you see,
+
+61
+00:03:55,487 --> 00:03:57,067
+the integral function
+
+62
+00:03:57,067 --> 00:03:58,728
+depends on x and
+
+63
+00:03:58,728 --> 00:03:59,348
+also
+
+64
+00:03:59,348 --> 00:04:04,048
+discrete variable.
+
+65
+00:04:04,867 --> 00:04:04,987
+And
+
+66
+00:04:04,987 --> 00:04:06,067
+now
+
+67
+00:04:06,067 --> 00:04:06,888
+let's say
+
+68
+00:04:06,888 --> 00:04:07,307
+this
+
+69
+00:04:07,307 --> 00:04:09,668
+i sub n.
+
+70
+00:04:10,328 --> 00:04:11,268
+Attention here.
+
+71
+00:04:11,728 --> 00:04:11,867
+So
+
+72
+00:04:11,867 --> 00:04:13,207
+by the
+
+73
+00:04:13,207 --> 00:04:15,228
+integration by parts.
+
+74
+00:04:15,228 --> 00:04:17,548
+Okay. Now let's say
+
+75
+00:04:17,548 --> 00:04:17,908
+x
+
+76
+00:04:17,908 --> 00:04:24,388
+n is u
+
+77
+00:04:24,388 --> 00:04:26,028
+and
+
+78
+00:04:26,028 --> 00:04:26,987
+expression b
+
+79
+00:04:26,987 --> 00:04:27,567
+0.
+
+80
+00:04:28,088 --> 00:04:29,427
+So you are going to
+
+81
+00:04:29,427 --> 00:04:30,987
+obtain u times v
+
+82
+00:04:30,987 --> 00:04:31,668
+here.
+
+83
+00:04:32,008 --> 00:04:33,327
+u times v
+
+84
+00:04:33,327 --> 00:04:34,668
+minus v du
+
+85
+00:04:34,668 --> 00:04:36,728
+minus v du.
+
+86
+00:04:36,987 --> 00:04:37,228
+du
+
+87
+00:04:37,228 --> 00:04:38,927
+contains n times
+
+88
+00:04:38,927 --> 00:04:40,628
+n times
+
+89
+00:04:40,628 --> 00:04:43,228
+x to n minus 1
+
+90
+00:04:43,228 --> 00:04:44,508
+and b is
+
+91
+00:04:44,508 --> 00:04:45,927
+exponential x dx.
+
+92
+00:04:46,148 --> 00:04:46,867
+Look at here.
+
+93
+00:04:47,468 --> 00:04:48,028
+So this
+
+94
+00:04:48,028 --> 00:04:49,327
+expression is
+
+95
+00:04:49,327 --> 00:04:50,668
+nothing else than
+
+96
+00:04:50,668 --> 00:04:52,987
+i sub n minus 1.
+
+97
+00:04:53,327 --> 00:04:53,648
+Okay.
+
+98
+00:04:59,699 --> 00:05:03,699
+Şimdi?
+
+99
+00:05:10,899 --> 00:05:11,399
+Okey.
+
+100
+00:05:12,819 --> 00:05:13,879
+Dikkat edin arkadaşlar.
+
+101
+00:05:14,679 --> 00:05:16,779
+X üzeri n e üzeri x'in integralini alacağız.
+
+102
+00:05:16,919 --> 00:05:19,479
+X üzeri n e üzeri x'in belirsiz integralini
+
+103
+00:05:19,479 --> 00:05:20,539
+ı n dedik.
+
+104
+00:05:21,299 --> 00:05:23,439
+Daha sonra kısmi integrasyon ile
+
+105
+00:05:23,439 --> 00:05:25,279
+x üzeri n e u diyerek
+
+106
+00:05:25,279 --> 00:05:27,120
+e üzeri x d e x e d v
+
+107
+00:05:27,120 --> 00:05:29,019
+diyerek ne yaptık?
+
+108
+00:05:29,019 --> 00:05:31,000
+Kısmi integrasyon yöntemini
+
+109
+00:05:31,000 --> 00:05:32,359
+çalıştırır isek
+
+110
+00:05:32,359 --> 00:05:34,979
+ı n integrali
+
+111
+00:05:34,979 --> 00:05:36,799
+u çarpı v
+
+112
+00:05:36,799 --> 00:05:39,019
+eksi v du'dan
+
+113
+00:05:39,019 --> 00:05:39,979
+böyle gelir.
+
+114
+00:05:39,979 --> 00:05:42,519
+Kısmi integrasyonu uygulayınca
+
+115
+00:05:42,519 --> 00:05:44,579
+ilk seferde gördüğünüz gibi
+
+116
+00:05:44,579 --> 00:05:46,740
+şurada ı n e eksi 1
+
+117
+00:05:46,740 --> 00:05:49,000
+şuradaki ı n
+
+118
+00:05:49,000 --> 00:05:51,519
+tanımını göz önünde bulundurur isek
+
+119
+00:05:51,519 --> 00:05:52,719
+buradaki
+
+120
+00:05:52,719 --> 00:05:55,279
+dikkat edin şurası ı n olacak yanlış olmuş
+
+121
+00:05:55,279 --> 00:05:57,379
+ı n eşittir
+
+122
+00:05:57,379 --> 00:05:58,399
+nedir?
+
+123
+00:05:58,539 --> 00:06:00,959
+X üzeri n e üzeri x eksi
+
+124
+00:06:00,959 --> 00:06:02,339
+n
+
+125
+00:06:02,339 --> 00:06:04,399
+ı n eksi 1.
+
+126
+00:06:04,679 --> 00:06:04,819
+Okey.
+
+127
+00:06:05,219 --> 00:06:07,859
+As you see we have some recursive relation.
+
+128
+00:06:08,819 --> 00:06:09,620
+So this is called
+
+129
+00:06:09,620 --> 00:06:11,039
+reduction formula.
+
+130
+00:06:11,319 --> 00:06:11,620
+Okay.
+
+131
+00:06:12,019 --> 00:06:14,539
+Now by using this reduction formula
+
+132
+00:06:14,539 --> 00:06:16,179
+we can compute
+
+133
+00:06:16,179 --> 00:06:17,839
+the i sub 4.
+
+134
+00:06:17,959 --> 00:06:19,299
+Look at this definition.
+
+135
+00:06:20,299 --> 00:06:22,159
+This definition is very important.
+
+136
+00:06:22,159 --> 00:06:23,979
+i sub n integral
+
+137
+00:06:23,979 --> 00:06:25,860
+is integral of
+
+138
+00:06:25,860 --> 00:06:26,620
+x to n
+
+139
+00:06:26,620 --> 00:06:27,659
+exponential x.
+
+140
+00:06:27,659 --> 00:06:32,579
+now so by substituting
+
+141
+00:06:32,579 --> 00:06:34,419
+n 4
+
+142
+00:06:34,419 --> 00:06:36,299
+we got
+
+143
+00:06:36,299 --> 00:06:37,919
+i sub 4
+
+144
+00:06:37,919 --> 00:06:39,039
+so up 3 equals
+
+145
+00:06:39,039 --> 00:06:41,000
+times exponential x
+
+146
+00:06:41,000 --> 00:06:42,719
+minus 4 times
+
+147
+00:06:42,719 --> 00:06:43,659
+i sub 3
+
+148
+00:06:43,659 --> 00:06:45,439
+by the reduction formula
+
+149
+00:06:45,439 --> 00:06:47,939
+given in the equation 1.
+
+150
+00:06:47,939 --> 00:06:51,360
+now again we apply reduction formula
+
+151
+00:06:51,360 --> 00:06:54,159
+one for i sub 3
+
+152
+00:06:54,159 --> 00:06:57,899
+is equal to this term
+
+153
+00:06:57,899 --> 00:06:59,539
+by the reduction formula
+
+154
+00:06:59,539 --> 00:07:02,000
+so in this case we have
+
+155
+00:07:02,000 --> 00:07:04,240
+i sub 2
+
+156
+00:07:04,240 --> 00:07:05,240
+so
+
+157
+00:07:05,240 --> 00:07:08,240
+i sub 2
+
+158
+00:07:08,240 --> 00:07:09,240
+so
+
+159
+00:07:09,240 --> 00:07:10,240
+i sub 2
+
+160
+00:07:10,240 --> 00:07:11,240
+is equal to
+
+161
+00:07:11,240 --> 00:07:12,240
+x square
+
+162
+00:07:12,240 --> 00:07:13,240
+exponential x minus 2
+
+163
+00:07:13,240 --> 00:07:14,240
+minus 2
+
+164
+00:07:14,240 --> 00:07:15,240
+in 1
+
+165
+00:07:15,240 --> 00:07:16,240
+so as see if you distribute
+
+166
+00:07:16,240 --> 00:07:17,240
+this minus 4 factor
+
+167
+00:07:17,240 --> 00:07:18,240
+into i sub 2
+
+168
+00:07:18,240 --> 00:07:19,240
+and we have this.
+
+169
+00:07:19,240 --> 00:07:20,240
+okay.
+
+170
+00:07:20,240 --> 00:07:21,240
+Now
+
+171
+00:07:21,240 --> 00:07:22,240
+so finally we got this.
+
+172
+00:07:22,240 --> 00:07:23,240
+so i sub 1
+
+173
+00:07:23,240 --> 00:07:25,240
+so if you substitute
+
+174
+00:07:25,240 --> 00:07:26,240
+n 1 here
+
+175
+00:07:26,240 --> 00:07:28,240
+so if you substitute
+
+176
+00:07:28,240 --> 00:07:30,240
+n 1 into reduction formula
+
+177
+00:07:30,240 --> 00:07:32,240
+you are going to obtain
+
+178
+00:07:32,240 --> 00:07:35,240
+i sub 0
+
+179
+00:07:35,240 --> 00:07:36,240
+okay.
+
+180
+00:07:36,240 --> 00:07:38,240
+by the definition of i sub n
+
+181
+00:07:38,240 --> 00:07:41,240
+given in this
+
+182
+00:07:41,240 --> 00:07:42,240
+definition.
+
+183
+00:07:42,240 --> 00:07:43,240
+okay.
+
+184
+00:07:43,240 --> 00:07:44,240
+i sub 0
+
+185
+00:07:44,240 --> 00:07:45,240
+x to 0
+
+186
+00:07:45,240 --> 00:07:46,240
+exponential x
+
+187
+00:07:46,240 --> 00:07:47,240
+exponential x c
+
+188
+00:07:47,240 --> 00:07:48,240
+as you see
+
+189
+00:07:48,240 --> 00:07:50,240
+recursively we can obtain
+
+190
+00:07:50,240 --> 00:07:51,240
+i sub 4
+
+191
+00:07:51,240 --> 00:07:52,240
+in this form.
+
+192
+00:07:52,240 --> 00:07:53,240
+okay.
+
+193
+00:07:53,240 --> 00:07:54,240
+is there an equation
+
+194
+00:07:54,240 --> 00:07:56,240
+about this solution?
+
+195
+00:07:56,240 --> 00:07:59,240
+i think everyone got the approach
+
+196
+00:07:59,240 --> 00:08:01,240
+used in this solution.
+
+197
+00:08:01,240 --> 00:08:02,240
+okay.
+
+198
+00:08:04,240 --> 00:08:06,240
+sorusu olan yoksa devam ediyorum arkadaşlar.
+
+199
+00:08:06,240 --> 00:08:34,240
+or
+
+200
+00:08:10,579 --> 00:08:13,759
+Başka soru çözelim. Dikkat edin arkadaşlar.
+
+201
+00:08:14,000 --> 00:08:15,479
+Okay, next question.
+
+202
+00:08:15,719 --> 00:08:20,099
+Let's try to obtain reduction formula for this integral problem.
+
+203
+00:08:20,839 --> 00:08:22,379
+N is an integer.
+
+204
+00:08:22,379 --> 00:08:30,680
+Okay, so let's say this is I sub n is equal to definite integral of sine to n power.
+
+205
+00:08:31,000 --> 00:08:31,879
+Okay, x dx.
+
+206
+00:08:32,720 --> 00:08:40,159
+Now, in order to apply partial integration method, first of all, we factorize sine to n.
+
+207
+00:08:40,159 --> 00:08:45,139
+Okay, sine to n x in this way.
+
+208
+00:08:45,879 --> 00:08:50,019
+Now, so again, we apply partial integration method.
+
+209
+00:08:50,019 --> 00:08:52,159
+Let's say this is u.
+
+210
+00:08:52,819 --> 00:08:56,539
+Let's say this is b.
+
+211
+00:08:57,259 --> 00:09:02,100
+Okay, now, so by the application of partial integration method,
+
+212
+00:09:02,860 --> 00:09:08,079
+I sub n by the definition is equal to u times v.
+
+213
+00:09:08,079 --> 00:09:14,519
+Okay, u times v minus v du.
+
+214
+00:09:16,319 --> 00:09:17,259
+Okay, v du.
+
+215
+00:09:17,460 --> 00:09:17,879
+We have this.
+
+216
+00:09:18,159 --> 00:09:19,379
+Now, I'm going to play on the expression.
+
+217
+00:09:19,519 --> 00:09:20,899
+We got cosine square x.
+
+218
+00:09:21,319 --> 00:09:27,200
+And we know that cosine square x is identical to 1 minus sine square x.
+
+219
+00:09:27,200 --> 00:09:34,319
+So, if you distribute this factor into parentheses, we are going to obtain this.
+
+220
+00:09:34,480 --> 00:09:38,079
+Okay, if you distribute this limit, so if you distribute this integral problem,
+
+221
+00:09:38,240 --> 00:09:40,039
+we have this and this.
+
+222
+00:09:40,220 --> 00:09:47,360
+As you see, this is nothing else than, this integral is nothing else than I sub n minus 2
+
+223
+00:09:47,360 --> 00:09:49,960
+by the definition of I sub n.
+
+224
+00:09:50,039 --> 00:09:51,000
+Attention here.
+
+225
+00:09:51,500 --> 00:09:54,919
+Now, so this is nothing else than I sub n.
+
+226
+00:09:55,279 --> 00:09:57,240
+So, in the parentheses, attention here.
+
+227
+00:09:57,620 --> 00:10:00,659
+So, if you distribute this n minus 1 into parentheses,
+
+228
+00:10:00,659 --> 00:10:04,960
+and we've got I sub n at the left-hand side.
+
+229
+00:10:04,960 --> 00:10:11,460
+And if you simplify this expression, so as you see, finally, I sub n can be written
+
+230
+00:10:11,460 --> 00:10:19,279
+in terms of some trigonometric functions and some integral depending on n.
+
+231
+00:10:19,740 --> 00:10:20,360
+Okay, here.
+
+232
+00:10:20,460 --> 00:10:24,139
+So, we got this reduction formula.
+
+233
+00:10:24,139 --> 00:10:25,960
+Okay, so attention here.
+
+234
+00:10:26,079 --> 00:10:31,679
+This reduction formula is valid for these n integers.
+
+235
+00:10:32,019 --> 00:10:34,419
+Okay, bigger than or equal to 2.
+
+236
+00:10:34,620 --> 00:10:41,799
+But if you substitute n 1 here, so you are going to obtain I sub minus 1 not defined.
+
+237
+00:10:42,079 --> 00:10:44,259
+Okay, that's why we need to here.
+
+238
+00:10:45,019 --> 00:10:48,620
+Is there any question about this proof?
+
+239
+00:10:48,620 --> 00:10:55,639
+Evet, indirgeme formülüyle alakalı sorular gelebilir.
+
+240
+00:10:55,779 --> 00:10:57,379
+Bir veya iki tane arkadaşlar.
+
+241
+00:10:57,939 --> 00:10:59,360
+Ya bize de ya finalde.
+
+242
+00:11:00,480 --> 00:11:01,500
+Ona göre çalışalım.
+
+243
+00:11:02,299 --> 00:11:03,599
+Öğrenmeye çalışalım.
+
+244
+00:11:03,759 --> 00:11:04,059
+Okay.
+
+245
+00:11:06,559 --> 00:11:16,460
+Now, we can apply this formula to obtaining some definite integration values.
+
+246
+00:11:16,460 --> 00:11:26,120
+Okay, so let's compute this definite integration value by using reduction formula.
+
+247
+00:11:26,839 --> 00:11:29,360
+We have the same formula for the definition I.
+
+248
+00:11:29,819 --> 00:11:33,120
+So, this is reduction formula.
+
+249
+00:11:33,740 --> 00:11:33,899
+Okay.
+
+250
+00:11:34,460 --> 00:11:40,939
+Now, so by the formula for this definite indefinite integral,
+
+251
+00:11:41,179 --> 00:11:44,539
+so when you substitute upper bound and lower bound, look at here.
+
+252
+00:11:44,539 --> 00:11:46,779
+in the reduction formula, this term.
+
+253
+00:11:47,899 --> 00:11:48,579
+Okay.
+
+254
+00:11:49,299 --> 00:12:14,759
+is zero when you apply fundamental theorem part two when you substitute upper bound and lower bound here f of b minus f of a now so let's just substitute lower bound and upper bound into i sub n i sub n minus 2 so n is here when you substitute n 5 here okay now we got this
+
+255
+00:12:14,759 --> 00:12:26,859
+okay now so this is i sub 3 so by using this expression i sub 3 is this okay now i sub 3
+
+256
+00:12:26,859 --> 00:12:28,859
+is
+
+257
+00:12:28,859 --> 00:12:41,500
+that on the block and here in the 3 yazdık a biter di on the other one is this so we can easily compute this integration
+
+258
+00:12:41,500 --> 00:12:49,819
+different integration the answer is eight over 50 is there any question about this question
+
+259
+00:12:49,819 --> 00:12:59,339
+sesim geliyor değil mi gençler oradasınız umarım dersi bilgisayar açıp başka bir yere gitmemişsinizdir
+
+260
+00:13:00,539 --> 00:13:00,779
+evet
+
+261
+00:13:00,779 --> 00:13:03,039
+ok
+
+262
+00:13:03,039 --> 00:13:05,759
+let's try to obtain
+
+263
+00:13:05,759 --> 00:13:07,019
+ok
+
+264
+00:13:07,019 --> 00:13:11,599
+ok please try to obtain reduction formula
+
+265
+00:13:11,599 --> 00:13:17,559
+reduction formula for this indefinite integral problem
+
+266
+00:13:17,559 --> 00:13:20,559
+please take your some notes and pen
+
+267
+00:13:20,559 --> 00:13:27,079
+try to obtain some reduction formula for this definite indefinite integral problem
+
+268
+00:13:27,079 --> 00:13:30,519
+by using partial integration method
+
+269
+00:13:30,519 --> 00:13:32,319
+integration by parts
+
+270
+00:13:32,319 --> 00:13:32,699
+namely
+
+271
+00:13:32,699 --> 00:13:33,519
+evet
+
+272
+00:13:33,519 --> 00:13:35,240
+herkesin önünde kağıt kalem olsun
+
+273
+00:13:35,240 --> 00:13:36,339
+cosünüz
+
+274
+00:13:36,339 --> 00:13:40,000
+üzeri n x d x integral için
+
+275
+00:13:40,000 --> 00:13:41,480
+pedersizli integral için
+
+276
+00:13:41,480 --> 00:13:43,120
+bir tane arkadaşlar
+
+277
+00:13:43,120 --> 00:13:46,179
+indirgeme formülü elde etmeye çalışalım
+
+278
+00:13:46,179 --> 00:13:48,179
+neyi kullanarak
+
+279
+00:13:48,179 --> 00:13:50,179
+kısmi integrasyon yöntemini kullanarak
+
+280
+00:13:50,179 --> 00:13:51,179
+evet
+
+281
+00:13:51,179 --> 00:13:53,179
+bakın burada zaten yöntemi göstermiş
+
+282
+00:13:53,179 --> 00:13:54,179
+göstermiyorum cevabı
+
+283
+00:13:54,179 --> 00:13:56,179
+siz bulmaya çalışın
+
+284
+00:13:56,179 --> 00:14:01,179
+şimdi
+
+285
+00:14:01,427 --> 00:14:03,947
+Evet, cevabınızı.
+
+286
+00:14:21,011 --> 00:14:27,451
+En fazla o 25-30 saniyede buluyor olmanız lazım cevabı.
+
+287
+00:14:47,988 --> 00:14:49,008
+buldunuz mu gençler?
+
+288
+00:15:05,427 --> 00:15:07,607
+Evet, bekliyorum cevabınızı.
+
+289
+00:15:12,148 --> 00:15:13,707
+Mantığını öğrenin arkadaşlar.
+
+290
+00:15:14,468 --> 00:15:18,248
+İşin mantığını öğrenirseniz, sınavda genellikle yorum soruları geliyor.
+
+291
+00:15:29,011 --> 00:15:33,411
+Formüllerin nasıl çıkartıldığını biliyorsanız işin mantığını öğren işiniz demektir.
+
+292
+00:15:35,811 --> 00:15:37,491
+Böylece rahat olabilirsiniz.
+
+293
+00:15:37,671 --> 00:15:39,351
+Evet, rahat edebilirsiniz sınavda.
+
+294
+00:15:39,951 --> 00:15:40,191
+Evet.
+
+295
+00:15:40,991 --> 00:15:41,351
+Okay.
+
+296
+00:15:41,831 --> 00:15:44,131
+Let's see together.
+
+297
+00:15:45,731 --> 00:15:49,891
+So I sub n is this integral.
+
+298
+00:15:51,711 --> 00:15:52,031
+Okay.
+
+299
+00:15:52,031 --> 00:16:04,791
+Now, so in order to apply integration by parts, we factorize our function whole sine to n power in this way.
+
+300
+00:16:05,391 --> 00:16:07,191
+So n must be bigger than 1.
+
+301
+00:16:07,591 --> 00:16:07,971
+Okay.
+
+302
+00:16:07,971 --> 00:16:14,291
+Now, so by the partial integration method, uv minus vdu.
+
+303
+00:16:14,651 --> 00:16:19,351
+uv minus minus vdu.
+
+304
+00:16:19,351 --> 00:16:20,991
+buna u dedi arkadaşlar.
+
+305
+00:16:21,111 --> 00:16:21,591
+This is u.
+
+306
+00:16:21,811 --> 00:16:22,692
+This is dv.
+
+307
+00:16:23,851 --> 00:16:24,151
+Okay.
+
+308
+00:16:24,531 --> 00:16:26,671
+So that's why this is u.
+
+309
+00:16:28,011 --> 00:16:31,971
+So this is v minus vdu.
+
+310
+00:16:32,491 --> 00:16:35,951
+So this n minus 1 is coming from the du.
+
+311
+00:16:36,211 --> 00:16:36,471
+Okay.
+
+312
+00:16:38,331 --> 00:16:42,251
+So if you distribute this into this parenthesis.
+
+313
+00:16:42,591 --> 00:16:42,951
+Okay.
+
+314
+00:16:43,011 --> 00:16:44,071
+So we got this.
+
+315
+00:16:44,071 --> 00:16:48,351
+At the left hand side, we have i sub n.
+
+316
+00:16:48,351 --> 00:16:48,991
+Okay.
+
+317
+00:16:49,171 --> 00:16:54,291
+Finally, I've got this reduction formula.
+
+318
+00:16:56,111 --> 00:16:56,411
+Okay.
+
+319
+00:16:59,071 --> 00:17:00,711
+Now attention here.
+
+320
+00:17:00,991 --> 00:17:04,971
+And in this case, n must be bigger than or equal to 2.
+
+321
+00:17:05,111 --> 00:17:09,991
+Otherwise, we cannot talk about i sub minus 1.
+
+322
+00:17:09,991 --> 00:17:12,271
+For example, if substitute n1.
+
+323
+00:17:12,412 --> 00:17:14,951
+So you are going to obtain i sub minus 1.
+
+324
+00:17:15,291 --> 00:17:16,071
+Does not make sense.
+
+325
+00:17:16,251 --> 00:17:16,412
+Okay.
+
+326
+00:17:17,111 --> 00:17:20,511
+That's why n must be bigger than or equal to 2.
+
+327
+00:17:21,271 --> 00:17:23,132
+So using zilla.
+
+328
+00:17:23,132 --> 00:17:23,771
+Okay.
+
+329
+00:17:23,831 --> 00:17:25,491
+So we know how to obtain.
+
+330
+00:17:25,491 --> 00:17:26,432
+So this.
+
+331
+00:17:26,632 --> 00:17:26,751
+Okay.
+
+332
+00:17:26,851 --> 00:17:27,811
+So let's obtain this.
+
+333
+00:17:27,932 --> 00:17:29,291
+So from 0 to pi over 2.
+
+334
+00:17:29,412 --> 00:17:31,771
+Let's see this.
+
+335
+00:17:31,912 --> 00:17:32,831
+For example, this.
+
+336
+00:17:33,071 --> 00:17:34,051
+So this is important.
+
+337
+00:17:34,231 --> 00:17:34,831
+Can you see that?
+
+338
+00:17:34,951 --> 00:17:37,192
+From 0 to this.
+
+339
+00:17:37,192 --> 00:17:38,991
+By using this.
+
+340
+00:17:39,951 --> 00:17:40,791
+Expression.
+
+341
+00:17:41,192 --> 00:17:42,311
+Look at here.
+
+342
+00:17:43,531 --> 00:17:46,692
+We can obtain some compact form.
+
+343
+00:17:46,791 --> 00:17:47,432
+Look at here.
+
+344
+00:17:47,551 --> 00:17:48,132
+From this.
+
+345
+00:17:48,611 --> 00:17:49,751
+So we have this.
+
+346
+00:17:49,871 --> 00:17:52,551
+Whenever n is odd number.
+
+347
+00:17:52,831 --> 00:17:54,632
+And bigger than or equal to 3.
+
+348
+00:17:55,251 --> 00:17:57,211
+So we have this compact form.
+
+349
+00:17:57,291 --> 00:17:58,612
+Depending on only.
+
+350
+00:17:59,031 --> 00:17:59,391
+Okay.
+
+351
+00:17:59,391 --> 00:17:59,932
+And.
+
+352
+00:17:59,932 --> 00:18:03,172
+And this basic integral.
+
+353
+00:18:03,711 --> 00:18:03,951
+That.
+
+354
+00:18:04,231 --> 00:18:05,392
+Whenever n is odd number.
+
+355
+00:18:05,392 --> 00:18:06,192
+Or equal to 2.
+
+356
+00:18:06,291 --> 00:18:08,071
+We have this compact form.
+
+357
+00:18:08,211 --> 00:18:09,271
+Depending on n.
+
+358
+00:18:09,652 --> 00:18:11,051
+And this basic integral.
+
+359
+00:18:11,311 --> 00:18:11,531
+Okay.
+
+360
+00:18:11,971 --> 00:18:13,531
+Now finally we have this.
+
+361
+00:18:16,511 --> 00:18:18,291
+If you integrate this.
+
+362
+00:18:18,871 --> 00:18:20,432
+You are going to obtain this.
+
+363
+00:18:20,932 --> 00:18:21,971
+Expression.
+
+364
+00:18:23,971 --> 00:18:24,711
+Because in.
+
+365
+00:18:24,892 --> 00:18:25,211
+20.
+
+366
+00:18:25,351 --> 00:18:25,711
+Gedi arkadaşlar.
+
+367
+00:18:25,851 --> 00:18:26,192
+2000.
+
+368
+00:18:26,192 --> 00:18:29,912
+Gedi.
+
+369
+00:18:29,932 --> 00:18:31,612
+Oradan birinden biri geliyor.
+
+370
+00:18:31,612 --> 00:18:33,132
+Buradan da piberliki geliyor.
+
+371
+00:18:33,132 --> 00:18:34,412
+If you integrate this.
+
+372
+00:18:34,932 --> 00:18:36,172
+You are going to obtain.
+
+373
+00:18:36,971 --> 00:18:37,791
+So this answer.
+
+374
+00:18:38,091 --> 00:18:38,351
+Okay.
+
+375
+00:18:40,511 --> 00:18:42,251
+So we have one here.
+
+376
+00:18:42,871 --> 00:18:45,351
+So one is the integral of this.
+
+377
+00:18:47,091 --> 00:18:47,491
+Okay.
+
+378
+00:18:50,211 --> 00:18:52,632
+Now as you see finally we have this.
+
+379
+00:18:52,831 --> 00:18:58,912
+If you if you if you reverse order of factors we have this basic formula.
+
+380
+00:18:58,912 --> 00:18:59,751
+Can you see that?
+
+381
+00:18:59,932 --> 00:19:10,692
+So two over three times four over five times and minus three over and minus two times and minus one over and never this condition.
+
+382
+00:19:10,692 --> 00:19:12,251
+Never conditionals.
+
+383
+00:19:12,251 --> 00:19:13,851
+We have this formula.
+
+384
+00:19:14,412 --> 00:19:14,711
+Okay.
+
+385
+00:19:14,892 --> 00:19:22,632
+Similarly so we can obtain some basic formula compact formula with definite integrations in this way.
+
+386
+00:19:22,632 --> 00:19:40,291
+Okay.
+
+387
+00:19:27,251 --> 00:19:34,451
+bu şekilde evet ispatlarını yapmıyorum siz yaparsınız zaten kalemimi yazamıyorum
+
+388
+00:19:35,571 --> 00:19:44,371
+ispatlar aşikar zaten okay let's try to obtain reduction formula for this integral and for this
+
+389
+00:19:44,371 --> 00:19:53,811
+integral okay now so in order to obtain reduction formula for this an integral function we need to put
+
+390
+00:19:53,811 --> 00:20:03,892
+this case this condition so let's say this is i sub n so in order to apply partial integration
+
+391
+00:20:03,892 --> 00:20:11,412
+method we factor right our integral function in this way now let's say so let's write times square
+
+392
+00:20:11,412 --> 00:20:18,451
+x in terms of sequence square x minus one okay we know that sequence square x is one over cosine
+
+393
+00:20:18,451 --> 00:20:25,172
+square x and if you if you simplify this you are going to obtain times square x attention here
+
+394
+00:20:25,172 --> 00:20:33,731
+now if you distribute tangent to n minus two power x into parentheses we we have this okay here this is
+
+395
+00:20:33,731 --> 00:20:42,851
+nothing else than i sub n minus two okay so we know how to integrate this by the substitution method
+
+396
+00:20:42,851 --> 00:20:52,612
+if say tangent x is equal to u second square x dx du so by the substitution method so we have this by
+
+397
+00:20:52,612 --> 00:20:57,331
+substitution method we have this okay now so we have this
+
+398
+00:20:59,892 --> 00:21:03,011
+so this is this is the i sub
+
+399
+00:21:04,771 --> 00:21:12,132
+so this is the i sub n minus two okay we have this reduction formula
+
+400
+00:21:20,788 --> 00:21:25,288
+Evet, sesim maalesef arkadaşlar internette bir sıkıntı var galiba.
+
+401
+00:21:27,288 --> 00:21:28,867
+Çok yükleniliyor.
+
+402
+00:21:34,996 --> 00:21:36,716
+Arkadaşlar hep kısmı
+
+403
+00:21:36,716 --> 00:21:37,876
+integrasyon uyguluyoruz.
+
+404
+00:21:38,576 --> 00:21:40,676
+Reduction indirgeme formüllerini elde etmek için.
+
+405
+00:21:41,496 --> 00:21:42,556
+Burada neyinin ikiden büyük
+
+406
+00:21:42,556 --> 00:21:44,176
+olması gerektiğine dikkat edin.
+
+407
+00:21:44,996 --> 00:21:45,316
+Tamam.
+
+408
+00:21:47,136 --> 00:21:48,376
+Neyinin ikiden
+
+409
+00:21:48,376 --> 00:21:50,376
+büyük olması gerektiğine dikkat edelim.
+
+410
+00:21:50,796 --> 00:21:51,816
+Benzer şekilde
+
+411
+00:21:51,816 --> 00:21:54,556
+secant üzeri nx
+
+412
+00:21:54,556 --> 00:21:56,196
+nx integral için
+
+413
+00:21:56,196 --> 00:21:58,536
+biz yine bir indirgeme formülü
+
+414
+00:21:58,536 --> 00:21:59,656
+elde edebiliriz.
+
+415
+00:21:59,756 --> 00:22:01,876
+In order to obtain reduction formula
+
+416
+00:22:01,876 --> 00:22:02,876
+we first
+
+417
+00:22:02,876 --> 00:22:05,816
+factorize our
+
+418
+00:22:05,816 --> 00:22:07,996
+integral function in this way.
+
+419
+00:22:09,016 --> 00:22:09,216
+Now
+
+420
+00:22:09,216 --> 00:22:11,456
+integration by parts.
+
+421
+00:22:11,836 --> 00:22:14,076
+We are going to obtain this expression.
+
+422
+00:22:14,296 --> 00:22:15,656
+Let's say this is u.
+
+423
+00:22:16,136 --> 00:22:17,855
+Let's say this is dv.
+
+424
+00:22:18,676 --> 00:22:19,936
+So u dv
+
+425
+00:22:19,936 --> 00:22:21,615
+is equal to
+
+426
+00:22:21,615 --> 00:22:24,016
+u times
+
+427
+00:22:24,016 --> 00:22:25,796
+v minus
+
+428
+00:22:25,796 --> 00:22:26,916
+v du
+
+429
+00:22:26,916 --> 00:22:28,936
+results in this expression.
+
+430
+00:22:29,816 --> 00:22:31,556
+Now by distributing
+
+431
+00:22:31,556 --> 00:22:32,855
+this expression
+
+432
+00:22:32,855 --> 00:22:34,236
+into parentheses
+
+433
+00:22:34,236 --> 00:22:35,676
+we got this.
+
+434
+00:22:36,176 --> 00:22:36,336
+Okay.
+
+435
+00:22:37,256 --> 00:22:38,936
+And by using this definition
+
+436
+00:22:38,936 --> 00:22:39,996
+attention here.
+
+437
+00:22:40,156 --> 00:22:41,776
+So we got this expression.
+
+438
+00:22:41,916 --> 00:22:42,436
+As you see
+
+439
+00:22:42,436 --> 00:22:43,596
+at the left hand side
+
+440
+00:22:43,596 --> 00:22:45,256
+we have i sub n
+
+441
+00:22:45,256 --> 00:22:46,196
+and
+
+442
+00:22:46,196 --> 00:22:48,236
+at the right hand side
+
+443
+00:22:48,236 --> 00:22:49,476
+we have this.
+
+444
+00:22:49,656 --> 00:22:49,855
+Okay.
+
+445
+00:22:49,996 --> 00:22:51,596
+If we simplify this
+
+446
+00:22:51,596 --> 00:22:52,836
+so we got this.
+
+447
+00:22:54,456 --> 00:22:55,136
+Is there an equation?
+
+448
+00:22:55,136 --> 00:22:57,896
+herkes anladı galiba
+
+449
+00:22:57,896 --> 00:22:59,716
+nasıl elde edileceğini.
+
+450
+00:22:59,716 --> 00:23:01,256
+I think everyone
+
+451
+00:23:01,256 --> 00:23:02,476
+could
+
+452
+00:23:02,476 --> 00:23:04,256
+understand
+
+453
+00:23:04,256 --> 00:23:05,396
+how we get
+
+454
+00:23:05,396 --> 00:23:06,036
+this formula.
+
+455
+00:23:06,596 --> 00:23:06,916
+Okay.
+
+456
+00:23:08,355 --> 00:23:09,536
+Now let's
+
+457
+00:23:09,536 --> 00:23:10,176
+apply
+
+458
+00:23:10,176 --> 00:23:10,816
+reduction
+
+459
+00:23:10,816 --> 00:23:12,296
+formula
+
+460
+00:23:12,296 --> 00:23:13,256
+to obtain
+
+461
+00:23:13,256 --> 00:23:13,656
+this
+
+462
+00:23:13,656 --> 00:23:14,576
+integral
+
+463
+00:23:14,576 --> 00:23:15,256
+problem.
+
+464
+00:23:15,916 --> 00:23:16,736
+So from
+
+465
+00:23:16,736 --> 00:23:17,676
+0 to pi
+
+466
+00:23:17,676 --> 00:23:18,316
+over 4
+
+467
+00:23:18,316 --> 00:23:18,796
+compute
+
+468
+00:23:18,796 --> 00:23:18,996
+this
+
+469
+00:23:18,996 --> 00:23:19,336
+definite
+
+470
+00:23:19,336 --> 00:23:19,876
+integral.
+
+471
+00:23:19,876 --> 00:23:21,376
+so by using
+
+472
+00:23:21,376 --> 00:23:23,176
+reduction
+
+473
+00:23:23,176 --> 00:23:23,976
+formula
+
+474
+00:23:23,976 --> 00:23:24,596
+for
+
+475
+00:23:24,596 --> 00:23:25,156
+tangent
+
+476
+00:23:25,156 --> 00:23:25,676
+and
+
+477
+00:23:25,676 --> 00:23:26,176
+power
+
+478
+00:23:26,176 --> 00:23:27,396
+so we
+
+479
+00:23:27,396 --> 00:23:27,916
+substitute
+
+480
+00:23:27,916 --> 00:23:28,676
+0
+
+481
+00:23:28,676 --> 00:23:29,016
+and
+
+482
+00:23:29,016 --> 00:23:30,456
+pi
+
+483
+00:23:30,456 --> 00:23:31,136
+over 4
+
+484
+00:23:31,136 --> 00:23:31,756
+which are
+
+485
+00:23:31,756 --> 00:23:33,016
+lower bound
+
+486
+00:23:33,016 --> 00:23:34,176
+and upper bound
+
+487
+00:23:34,176 --> 00:23:35,256
+integral
+
+488
+00:23:35,256 --> 00:23:36,876
+we substitute
+
+489
+00:23:36,876 --> 00:23:37,756
+upper bound
+
+490
+00:23:37,756 --> 00:23:38,516
+into this
+
+491
+00:23:38,516 --> 00:23:39,115
+expression
+
+492
+00:23:39,115 --> 00:23:39,836
+the fundamental
+
+493
+00:23:39,836 --> 00:23:41,115
+theorem part 2
+
+494
+00:23:41,115 --> 00:23:41,876
+we are going to
+
+495
+00:23:41,876 --> 00:23:42,696
+obtain this
+
+496
+00:23:42,696 --> 00:23:43,656
+and if you
+
+497
+00:23:43,656 --> 00:23:44,436
+substitute 0
+
+498
+00:23:44,436 --> 00:23:44,956
+we are going to
+
+499
+00:23:44,956 --> 00:23:45,276
+obtain
+
+500
+00:23:45,276 --> 00:23:45,676
+okay
+
+501
+00:23:45,676 --> 00:23:47,056
+so this is
+
+502
+00:23:47,056 --> 00:23:47,676
+1 over 4
+
+503
+00:23:47,676 --> 00:23:48,716
+so we are going to
+
+504
+00:23:48,716 --> 00:23:49,355
+obtain this
+
+505
+00:23:49,356 --> 00:23:50,636
+and so
+
+506
+00:23:50,636 --> 00:23:51,496
+if you
+
+507
+00:23:51,496 --> 00:23:51,736
+apply
+
+508
+00:23:51,736 --> 00:23:53,115
+so we are going to
+
+509
+00:23:53,115 --> 00:23:53,676
+obtain this
+
+510
+00:23:53,676 --> 00:23:54,676
+if you apply
+
+511
+00:23:54,676 --> 00:23:55,776
+reduction
+
+512
+00:23:55,776 --> 00:23:56,476
+formula
+
+513
+00:23:56,476 --> 00:23:57,615
+for this
+
+514
+00:23:57,615 --> 00:23:58,916
+you are going to
+
+515
+00:23:58,916 --> 00:24:00,156
+obtain this
+
+516
+00:24:00,156 --> 00:24:00,436
+sorry
+
+517
+00:24:00,436 --> 00:24:01,776
+you are going to
+
+518
+00:24:01,776 --> 00:24:02,496
+obtain this
+
+519
+00:24:02,496 --> 00:24:04,336
+okay
+
+520
+00:24:04,336 --> 00:24:05,396
+now
+
+521
+00:24:05,396 --> 00:24:06,356
+when you substitute
+
+522
+00:24:06,356 --> 00:24:07,036
+over bound
+
+523
+00:24:07,036 --> 00:24:07,576
+and upper bound
+
+524
+00:24:07,576 --> 00:24:08,156
+you are going to
+
+525
+00:24:08,156 --> 00:24:08,916
+obtain this
+
+526
+00:24:08,916 --> 00:24:10,196
+and if you apply
+
+527
+00:24:10,196 --> 00:24:11,236
+so you don't need
+
+528
+00:24:11,236 --> 00:24:12,136
+to apply reduction
+
+529
+00:24:12,136 --> 00:24:13,076
+formula anymore
+
+530
+00:24:13,076 --> 00:24:14,256
+because we know
+
+531
+00:24:14,256 --> 00:24:15,096
+how to integrate
+
+532
+00:24:15,096 --> 00:24:15,656
+this
+
+533
+00:24:15,656 --> 00:24:16,476
+okay
+
+534
+00:24:16,476 --> 00:24:17,496
+so the integration
+
+535
+00:24:17,496 --> 00:24:17,976
+of this
+
+536
+00:24:17,976 --> 00:24:18,356
+this
+
+537
+00:24:18,356 --> 00:24:19,216
+when you substitute
+
+538
+00:24:19,216 --> 00:24:20,996
+lower bound
+
+539
+00:24:20,996 --> 00:24:22,236
+and upper bound
+
+540
+00:24:22,236 --> 00:24:23,736
+and applying
+
+541
+00:24:23,736 --> 00:24:25,796
+fundamental part 2
+
+542
+00:24:25,796 --> 00:24:26,436
+we are going to
+
+543
+00:24:26,436 --> 00:24:27,016
+obtain this
+
+544
+00:24:27,016 --> 00:24:27,496
+expression
+
+545
+00:24:27,496 --> 00:24:27,996
+okay
+
+546
+00:24:27,996 --> 00:24:29,156
+can you see that
+
+547
+00:24:29,156 --> 00:24:30,696
+we can obtain
+
+548
+00:24:30,696 --> 00:24:31,736
+recursively
+
+549
+00:24:31,736 --> 00:24:33,396
+our answer
+
+550
+00:24:33,396 --> 00:24:34,936
+by using
+
+551
+00:24:34,936 --> 00:24:35,976
+reduction formula
+
+552
+00:24:35,976 --> 00:24:36,476
+here
+
+553
+00:24:36,476 --> 00:24:36,696
+and
+
+554
+00:24:36,696 --> 00:24:37,976
+here we go
+
+555
+00:24:37,976 --> 00:24:39,156
+and
+
+556
+00:24:39,156 --> 00:24:39,756
+here we go
+
+557
+00:24:39,756 --> 00:24:40,476
+and
+
+558
+00:24:40,476 --> 00:24:40,756
+we go
+
+559
+00:24:40,756 --> 00:24:41,316
+and
+
+560
+00:24:41,316 --> 00:24:41,756
+here we go
+
+561
+00:24:41,756 --> 00:24:42,256
+and
+
+562
+00:24:42,256 --> 00:24:42,756
+we go
+
+563
+00:24:42,756 --> 00:24:42,816
+and
+
+564
+00:24:42,816 --> 00:24:43,256
+we go
+
+565
+00:24:43,256 --> 00:24:43,756
+and
+
+566
+00:24:43,756 --> 00:24:44,256
+we go
+
+567
+00:24:44,256 --> 00:24:44,756
+and
+
+568
+00:24:44,756 --> 00:24:45,756
+we go
+
+569
+00:24:45,756 --> 00:24:46,256
+and
+
+570
+00:24:46,256 --> 00:24:46,756
+we go
+
+571
+00:24:46,756 --> 00:24:47,256
+and
+
+572
+00:24:47,256 --> 00:24:47,756
+we go
+
+573
+00:24:47,756 --> 00:24:48,756
+and
+
+574
+00:24:48,756 --> 00:24:49,756
+we go
+
+575
+00:24:41,299 --> 00:25:04,180
+So don't worry, I'm gonna share this lecture note with you. Okay? Just try to understand what I say. Okay? I will share this lecture note with you. Don't try to take lecture notes. Just listen to me. Beni dinleyin arkadaşlar sadece. Bunu paylaşacağım, merak etmeyin. Tamam?
+
+576
+00:25:09,011 --> 00:25:23,871
+Sadece anlamaya çalışın. Zaten ben size gönderdiğimde elinize kağıt kalem alırsınız. Sadece bunları buradaki formülleri çıkartmak için çalışırsanız konuyu öğrenmiş olacaksınız zaten. Tamam mı? Merak etmeyin.
+
+577
+00:25:23,871 --> 00:25:39,131
+Ben sadece işin mantığını anlatmaya çalışıyorum. Benzer şekilde sekant, indirgele, 6x, x, integralini hesaplayın. Şuradaki indirgeme formülünü dikkat edin. Kullanacağız sekant için.
+
+578
+00:25:44,211 --> 00:25:51,392
+En yerine 6 yazdığınızda sekant üzeri 4x tanıcant x bölü 4'e.
+
+579
+00:25:51,751 --> 00:25:52,831
+Daha sonra bu gelir.
+
+580
+00:25:53,011 --> 00:25:54,751
+x2 tanımını da kullanın.
+
+581
+00:25:55,571 --> 00:25:56,071
+Bu gelir.
+
+582
+00:25:57,092 --> 00:26:06,731
+Burada 0p bölü 4'e temel teoremik uygularsanız fb-f'den bu gelir.
+
+583
+00:26:06,731 --> 00:26:36,711
+Daha sonra arkadaşlar 4 bölü 5 çarpanında bunun için arkadaşlar n4 için indirgeme formülünü uygularsanız ve alt sınırı üst sınırı üst sınırı yerleştirince cevap 28 bölü 15 olarak gelir.
+
+584
+00:26:36,731 --> 00:26:39,231
+Arkadaşlar.
+
+585
+00:26:41,331 --> 00:26:50,511
+Şimdi sınavda doğrudan bu belirli integralleri sormazlar.
+
+586
+00:26:50,932 --> 00:26:51,892
+Şöyle sorabilirler.
+
+587
+00:26:52,152 --> 00:26:53,731
+I6 integralleri sorulardır.
+
+588
+00:26:54,372 --> 00:26:56,731
+Belki direkt size bunun cevabı nedir diye sormayabilirler.
+
+589
+00:26:57,672 --> 00:27:01,731
+Çünkü bazı yazılım araçlarıyla siz belirli integralleri hesaplayabiliyorsunuz.
+
+590
+00:27:02,571 --> 00:27:02,731
+Tamam mı?
+
+591
+00:27:54,324 --> 00:27:56,324
+Evet, bu konuda bir şey var.
+
+592
+00:27:56,324 --> 00:28:00,324
+Bu konuda bir şey var.
+
+593
+00:28:00,324 --> 00:28:02,324
+Evet, bu konuda bir şey var.
+
+594
+00:28:02,324 --> 00:28:08,324
+Bu konuda bir şey var.
+
+595
+00:28:08,324 --> 00:28:10,324
+M ve M.
+
+596
+00:28:10,324 --> 00:28:18,324
+Evet, bu konuda bir şey var.
+
+597
+00:28:18,324 --> 00:28:20,324
+Bu konuda bir şey var.
+
+598
+00:28:20,324 --> 00:28:22,324
+M ve M ve M.
+
+599
+00:28:22,324 --> 00:28:24,324
+Bu konuda bir şey var.
+
+600
+00:28:24,324 --> 00:28:26,324
+Şimdi bu konuda bir şey var.
+
+601
+00:28:26,324 --> 00:29:16,324
+Bu konuda bir şey var.
+
+602
+00:28:59,667 --> 00:29:01,667
+a
+
+603
+00:29:05,267 --> 00:29:11,667
+by substitution so that's by integration methods by partial integration method
+
+604
+00:29:13,267 --> 00:29:14,627
+so we can
+
+605
+00:29:17,347 --> 00:29:27,747
+u times v because now we start ne yapıyorum şuna let's say this is you let's say this is you
+
+606
+00:29:29,667 --> 00:29:36,627
+i call it right by my mouse so let's say this is dv if you say this is dv
+
+607
+00:29:37,987 --> 00:29:49,347
+so by applying partial integration method we have this u time b minus v u
+
+608
+00:29:51,267 --> 00:29:55,427
+okay minus v u here using this definition
+
+609
+00:29:55,427 --> 00:30:05,107
+so we we can obtain this reduction formula okay after distributing this factor into parenthesis okay
+
+610
+00:30:08,547 --> 00:30:19,427
+now finally we have this reduction formula
+
+611
+00:30:24,276 --> 00:30:33,696
+Evet arkadaşlar, yani yapabileceğim bir şey yok maalesef. Keşke düzeltebilsem. Şu an internete yakın yerdeyim. Ama bir sıkıntı var nedense internette.
+
+612
+00:30:36,696 --> 00:30:37,336
+Evet.
+
+613
+00:30:39,336 --> 00:30:40,436
+Devam edelim.
+
+614
+00:30:42,976 --> 00:30:51,096
+Önemli olan buradaki formülü uygulayabilmek arkadaşlar. Nasıl çıkartıldığını anladığınız kısmı integrasyon yöntemiyle çıkartıyorsunuz.
+
+615
+00:30:51,096 --> 00:30:54,895
+uygun bir şekilde integral fonksiyonunuzu parçaladıktan sonra, çınar ayırdıktan sonra
+
+616
+00:30:54,895 --> 00:30:57,276
+kısmı integrasyon uyguluyorsunuz. Tamam mı arkadaşlar?
+
+617
+00:30:58,276 --> 00:30:58,516
+Şimdi
+
+618
+00:30:58,516 --> 00:31:02,596
+bakın mesela bunu hesaplayın diyebilirler.
+
+619
+00:31:03,336 --> 00:31:03,516
+Ok.
+
+620
+00:31:03,576 --> 00:31:05,036
+By using reduction formula
+
+621
+00:31:05,036 --> 00:31:06,836
+obtained above, let's compute
+
+622
+00:31:06,836 --> 00:31:09,056
+this definite integral problem.
+
+623
+00:31:09,996 --> 00:31:10,236
+So
+
+624
+00:31:10,236 --> 00:31:13,416
+in this case, m is 4
+
+625
+00:31:13,416 --> 00:31:14,596
+n is 6.
+
+626
+00:31:15,076 --> 00:31:16,736
+So by the reduction formula
+
+627
+00:31:16,736 --> 00:31:17,976
+and applying
+
+628
+00:31:17,976 --> 00:31:19,855
+okay, okay
+
+629
+00:31:19,855 --> 00:31:20,976
+fundamental theorem part 2
+
+630
+00:31:20,976 --> 00:31:21,676
+part 2
+
+631
+00:31:21,676 --> 00:31:22,936
+okay, so
+
+632
+00:31:22,936 --> 00:31:23,896
+we got this
+
+633
+00:31:23,896 --> 00:31:25,676
+so
+
+634
+00:31:25,676 --> 00:31:27,676
+by the final theorem part 2
+
+635
+00:31:27,676 --> 00:31:27,976
+so
+
+636
+00:31:27,976 --> 00:31:29,276
+look at here
+
+637
+00:31:29,276 --> 00:31:30,896
+so we are going to obtain 0
+
+638
+00:31:30,896 --> 00:31:33,476
+because of this cosin pi over to 0
+
+639
+00:31:33,476 --> 00:31:34,276
+okay
+
+640
+00:31:34,276 --> 00:31:35,615
+look at here
+
+641
+00:31:35,615 --> 00:31:37,976
+so
+
+642
+00:31:37,976 --> 00:31:39,355
+we have only this term
+
+643
+00:31:39,355 --> 00:31:40,076
+can you see that
+
+644
+00:31:40,076 --> 00:31:41,396
+we have only this term
+
+645
+00:31:41,396 --> 00:31:42,196
+so
+
+646
+00:31:42,196 --> 00:31:44,396
+when you apply reduction formula
+
+647
+00:31:44,396 --> 00:31:44,916
+okay
+
+648
+00:31:44,916 --> 00:31:45,916
+so
+
+649
+00:31:45,916 --> 00:31:47,516
+we have this
+
+650
+00:31:47,516 --> 00:32:17,496
+we have a
+
+651
+00:32:02,963 --> 00:32:04,963
+ve...
+
+652
+00:32:09,811 --> 00:32:11,251
+yıkar soru gelmez.
+
+653
+00:32:16,596 --> 00:32:18,175
+Çünkü su yüzden geleceğiniz...
+
+654
+00:32:23,827 --> 00:32:53,748
+x kare artı 2x, f'
+
+655
+00:32:31,092 --> 00:32:32,292
+but integral.
+
+656
+00:32:33,552 --> 00:32:34,092
+me
+
+657
+00:32:37,932 --> 00:32:39,372
+in this pose blift.
+
+658
+00:32:44,819 --> 00:32:46,319
+Yümün, in terms of...
+
+659
+00:32:51,443 --> 00:33:03,183
+x kare artı 4 integralini, işte i4 iki cinsinden ifade edin. Tamam mı? Böyle sorular gelebilir.
+
+660
+00:33:10,579 --> 00:33:33,619
+x6, f' 4 integralini der ki, işte x k l cinsinden ifade edin. Orada k ve l'ler 6 ve 4'ten küçük olay. Direkt sonuç bulma tarzında değil de, verilen integralliği daha küçük, mev ve indisleri cinsinden ifade edin tarzında sorular gelebilir.
+
+661
+00:33:33,619 --> 00:33:37,339
+tabi onu indirgeme ile
+
+662
+00:33:37,339 --> 00:33:41,619
+isteyen değere kadar indiyerek ne yapacaksınız? Siz cevabı bulacaksınız.
+
+663
+00:33:43,159 --> 00:33:46,039
+Evet. Tamam mı? Bunları siz indirgersiniz arkadaşlar.
+
+664
+00:33:46,240 --> 00:33:47,199
+İndirgeyerek bulunuz.
+
+665
+00:33:47,319 --> 00:33:50,579
+Ok. By using reduction formula, let's compute this integration.
+
+666
+00:33:55,700 --> 00:34:23,599
+Evet. Okay, next. Okay, next. Reduction formula. So, where a is real number, not integer, n is integer. Attention here. A is real number, constant real number. Okay, n is integer. So, by applying partial integration method, okay, so we can obtain this answer. Okay.
+
+667
+00:34:27,219 --> 00:34:28,279
+dikkat edin arkadaşlar.
+
+668
+00:34:32,916 --> 00:34:35,536
+kısmı integrasyon yöntemiyle
+
+669
+00:34:35,536 --> 00:34:37,635
+bunları elde edebilirsiniz. Son olarak bu.
+
+670
+00:34:38,115 --> 00:34:39,655
+Tabii sınavda dediğimiz gibi arkadaşlar
+
+671
+00:34:39,655 --> 00:34:41,776
+bunun tarzında soru
+
+672
+00:34:41,776 --> 00:34:43,916
+gelmez. Çok kolay değil.
+
+673
+00:34:44,816 --> 00:34:45,736
+Ama bunu verir.
+
+674
+00:34:45,796 --> 00:34:47,696
+Belli bir tanım verir arkadaşlar. Ondan sonra
+
+675
+00:34:47,696 --> 00:34:49,896
+sonra. So reduction formula.
+
+676
+00:34:50,076 --> 00:34:51,756
+So this is very hard in my opinion.
+
+677
+00:34:52,135 --> 00:34:52,836
+Not so easy.
+
+678
+00:34:53,655 --> 00:34:55,655
+Dikkat edin arkadaşlar. Böyle bir
+
+679
+00:34:55,655 --> 00:34:57,396
+soru tipi geleceğini zannetmiyorum.
+
+680
+00:34:57,876 --> 00:34:59,576
+O yüzden geçiyorum. Çok merak ediyorsanız
+
+681
+00:34:59,576 --> 00:35:00,896
+kısmı integrasyonla
+
+682
+00:35:00,896 --> 00:35:03,236
+bunun elde edilişine bakarsınız.
+
+683
+00:35:03,896 --> 00:35:05,516
+Tamam mı gençler? Buraya kadar
+
+684
+00:35:05,516 --> 00:35:06,836
+arkadaşlar anlatacaklarım.
+
+685
+00:35:07,576 --> 00:35:09,276
+Buradan sonrasını siz incelersiniz.
+
+686
+00:35:11,856 --> 00:35:13,816
+Yani bu kadar şey olacaklarımı
+
+687
+00:35:13,816 --> 00:35:14,516
+zannetmiyorum.
+
+688
+00:35:15,956 --> 00:35:17,635
+Bunları siz incelersiniz. Ben şimdi
+
+689
+00:35:17,635 --> 00:35:18,876
+soru çözümüne geçeceğim.
+
+690
+00:35:19,536 --> 00:35:21,356
+So let me summarize
+
+691
+00:35:21,356 --> 00:35:22,976
+this reduction formula.
+
+692
+00:35:22,976 --> 00:35:25,135
+So we have this reduction formula.
+
+693
+00:35:25,635 --> 00:35:27,036
+Look at here. So we have
+
+694
+00:35:27,036 --> 00:35:28,316
+this reduction formula.
+
+695
+00:35:28,876 --> 00:35:30,376
+Let's say this is ISAPN.
+
+696
+00:35:30,896 --> 00:35:33,216
+I sub N minus 2.
+
+697
+00:35:33,276 --> 00:35:34,796
+Let's say I sub N.
+
+698
+00:35:35,276 --> 00:35:37,856
+So this is I sub N minus 2.
+
+699
+00:35:38,096 --> 00:35:38,276
+Okay.
+
+700
+00:35:38,816 --> 00:35:40,736
+So I sub N is equal
+
+701
+00:35:40,736 --> 00:35:42,456
+to this term plus
+
+702
+00:35:42,456 --> 00:35:44,856
+times this factor
+
+703
+00:35:44,856 --> 00:35:47,416
+times I sub N minus 2.
+
+704
+00:35:47,956 --> 00:35:48,236
+Okay.
+
+705
+00:35:48,356 --> 00:35:50,596
+So by using the reduction formula
+
+706
+00:35:50,596 --> 00:35:52,796
+given above, so we can obtain
+
+707
+00:35:52,796 --> 00:35:54,276
+some compact formula
+
+708
+00:35:54,276 --> 00:35:56,016
+for this definite integral.
+
+709
+00:35:56,356 --> 00:35:56,676
+Okay.
+
+710
+00:35:56,676 --> 00:35:58,655
+So in this case.
+
+711
+00:36:00,056 --> 00:36:00,336
+Okay.
+
+712
+00:36:00,456 --> 00:36:02,056
+So this is the reduction formula
+
+713
+00:36:02,056 --> 00:36:02,756
+with two
+
+714
+00:36:02,756 --> 00:36:03,635
+discrete variables
+
+715
+00:36:03,635 --> 00:36:04,796
+and N.
+
+716
+00:36:04,896 --> 00:36:05,135
+Okay.
+
+717
+00:36:05,836 --> 00:36:06,516
+So as you see
+
+718
+00:36:06,516 --> 00:36:07,836
+dikkat edin.
+
+719
+00:36:07,916 --> 00:36:09,476
+Önemli olan bunları kullanarak
+
+720
+00:36:09,476 --> 00:36:10,936
+işte bazı soruları
+
+721
+00:36:10,936 --> 00:36:11,936
+çözebiliyor olmanız.
+
+722
+00:36:12,056 --> 00:36:12,576
+Dediğimiz gibi
+
+723
+00:36:12,576 --> 00:36:14,896
+M'yi 6, M'yi 10, N'yi 6
+
+724
+00:36:14,896 --> 00:36:15,316
+verir.
+
+725
+00:36:16,056 --> 00:36:17,056
+I 10, 6
+
+726
+00:36:17,056 --> 00:36:17,976
+integralini
+
+727
+00:36:17,976 --> 00:36:19,096
+I 6, 4
+
+728
+00:36:19,096 --> 00:36:20,396
+cinsinden ifade edin
+
+729
+00:36:20,396 --> 00:36:21,056
+gibi sorular
+
+730
+00:36:21,056 --> 00:36:21,655
+gelebilir.
+
+731
+00:36:21,916 --> 00:36:22,336
+Tamam mı?
+
+732
+00:36:22,336 --> 00:36:23,856
+Evet.
+
+733
+00:36:23,996 --> 00:36:24,816
+Geçiyorum arkadaşlar.
+
+734
+00:36:25,756 --> 00:36:26,796
+Bunu paylaşacağım bugün.
+
+735
+00:36:26,896 --> 00:36:27,615
+Merak etmeyin.
+
+736
+00:36:28,556 --> 00:36:29,816
+Bunları görebileceksiniz.
+
+737
+00:36:30,615 --> 00:36:31,496
+Hatta bir dakika.
+
+738
+00:36:33,655 --> 00:36:34,696
+Şimdi paylaşayım.
+
+739
+00:36:35,976 --> 00:36:37,155
+Yarına kadar çalışın.
+
+740
+00:36:37,596 --> 00:36:38,096
+Okay.
+
+741
+00:36:38,216 --> 00:36:40,596
+I will upload this lecture note
+
+742
+00:36:40,596 --> 00:36:42,776
+into chatboard.
+
+743
+00:36:43,056 --> 00:36:43,316
+Okay.
+
+744
+00:36:45,316 --> 00:36:46,696
+Şimdi paylaşıyorum arkadaşlar.
+
+745
+00:36:46,696 --> 00:36:48,676
+Bu ders notunu
+
+746
+00:36:48,676 --> 00:36:49,696
+şimdi paylaşıyorum.
+
+747
+00:36:56,884 --> 00:36:58,364
+Bir dakika, henüz rica edeceğim.
+
+748
+00:37:11,123 --> 00:37:12,123
+çeşimdi.
+
+749
+00:37:43,795 --> 00:37:50,935
+yukarıda gördün mü herkes?
+
+750
+00:37:59,923 --> 00:38:00,844
+Gördünüz değil mi?
+
+751
+00:38:14,420 --> 00:38:17,059
+Evet, chatboard'a attım. Buraya attım. Şu an burada.
+
+752
+00:38:42,547 --> 00:38:45,047
+Yukarıya doğru bakın, yukarıda indirildi.
+
+753
+00:38:45,767 --> 00:38:47,047
+1.39'da.
+
+754
+00:38:53,268 --> 00:38:56,148
+bende görünüyor, başarılı bir şekilde yüklendi yazıyor.
+
+755
+00:39:04,179 --> 00:39:10,119
+Evet, bende görünüyor. Şu an yüklendi. Yukarıya doğru açarsanız görürsünüz.
+
+756
+00:39:19,155 --> 00:39:20,715
+Nasıl görünüyor ya?
+
+757
+00:39:25,556 --> 00:39:27,096
+Bir şey yazmayın, bir dakika.
+
+758
+00:39:30,056 --> 00:39:32,135
+Telefondan giriyorsanız evet, gözükmez.
+
+759
+00:39:36,980 --> 00:39:48,900
+Bilgisayardan girmeniz lazım. Normal bilgisayardan. Bir dakika, bir şey yazmayın. Bir şey yazmayın. Paylaştım normalde. Görülmesi lazım. Hiçbir şey yazmayın chat burada.
+
+760
+00:40:21,460 --> 00:40:22,460
+çöğün.
+
+761
+00:40:34,900 --> 00:40:37,940
+Arkadaşlar, bundan en fazla 2 tane soru.
+
+762
+00:40:44,148 --> 00:40:47,648
+Önümüzdeki sınavda.
+
+763
+00:40:49,088 --> 00:40:50,367
+Evet, şu an yükledi.
+
+764
+00:40:51,168 --> 00:40:53,628
+Dosyanız başarılı bir şekilde gönderildi diyor.
+
+765
+00:40:55,248 --> 00:40:57,347
+Evet, gören varsa yazsın.
+
+766
+00:41:11,251 --> 00:41:12,632
+Şu an yüklemiş oldum.
+
+767
+00:41:34,228 --> 00:41:43,008
+Aaaa. Everyone. Aaaa. Tamam. Tamam. Şimdi oldu ya. Eylülüpek mi yazmışım? Evet. Tamam. Şimdi oldu.
+
+768
+00:41:47,507 --> 00:41:48,887
+[öğrenci]'e gitmiş.
+
+769
+00:41:55,956 --> 00:42:01,956
+Aşk
+
+770
+00:41:59,860 --> 00:42:02,500
+Herkesi ilk defa gönderiyorum buradan.
+
+771
+00:42:06,228 --> 00:42:12,088
+x kare artı 2x, f'
+
+772
+00:42:34,387 --> 00:42:36,967
+Evet, başka paylaşımda bulunuyorum arkadaşlar.
+
+773
+00:42:38,248 --> 00:42:44,507
+Şimdi Pınar Hoca'nın geçmiş yıllardan hazırlamış olduğu sorular var, çıkmış sorular.
+
+774
+00:42:57,619 --> 00:42:58,920
+Herkese geldi değil mi?
+
+775
+00:42:59,619 --> 00:42:59,900
+Şu an.
+
+776
+00:43:12,115 --> 00:43:15,235
+Okey. Birkaç dakikanızı rica edeceğim arkadaşlar.
+
+777
+00:43:28,500 --> 00:43:29,000
+ok.
+
+778
+00:43:34,291 --> 00:43:39,971
+Okay, let me share the legend of Pınar Hoca.
+
+779
+00:43:41,072 --> 00:43:43,751
+So, those are questions of pass your exam.
+
+780
+00:43:52,052 --> 00:43:54,012
+Evet, let me explain this question.
+
+781
+00:43:54,172 --> 00:43:55,832
+So those are Turkish, of course.
+
+782
+00:43:55,832 --> 00:43:58,952
+Now, so we have some function f,
+
+783
+00:43:59,372 --> 00:44:02,271
+which is continuous over this interval
+
+784
+00:44:02,271 --> 00:44:07,271
+and differentiable over this opening interval
+
+785
+00:44:07,271 --> 00:44:10,392
+such that f of 0, 2.
+
+786
+00:44:11,932 --> 00:44:16,731
+Then, okay, if derivation functions
+
+787
+00:44:16,731 --> 00:44:21,052
+is between 1 and 3 over this interval,
+
+788
+00:44:22,052 --> 00:44:27,052
+then find out the minimum, the least and maximum,
+
+789
+00:44:27,332 --> 00:44:32,132
+the minimum and maximum values f of 5 may take.
+
+790
+00:44:33,012 --> 00:44:37,372
+We are looking for the minimum and maximum value
+
+791
+00:44:37,372 --> 00:44:39,672
+f of 5 may take.
+
+792
+00:44:40,211 --> 00:44:43,812
+We are looking for possible minimum and maximum values
+
+793
+00:44:43,812 --> 00:44:45,832
+f of 5 may take.
+
+794
+00:44:45,912 --> 00:44:48,412
+Under this condition, we have this information.
+
+795
+00:44:48,412 --> 00:44:53,412
+So we have this continuity condition
+
+796
+00:44:53,412 --> 00:44:56,352
+and differentiability condition over open interval.
+
+797
+00:44:57,332 --> 00:45:01,632
+So then find out possible minimum and maximum values
+
+798
+00:45:01,632 --> 00:45:03,412
+f of 5 may take
+
+799
+00:45:03,412 --> 00:45:08,532
+by using mean value theorem for derivations.
+
+800
+00:45:08,532 --> 00:45:10,751
+Is that clear?
+
+801
+00:45:12,112 --> 00:45:13,432
+Soru anadınız mı gençler?
+
+802
+00:45:14,432 --> 00:45:17,592
+You may see such question in the next midterm exam.
+
+803
+00:45:17,751 --> 00:45:20,152
+This is just application of mean value theorem
+
+804
+00:45:20,152 --> 00:45:21,251
+for derivation.
+
+805
+00:45:21,251 --> 00:45:26,251
+So, let's see.
+
+806
+00:45:40,500 --> 00:45:41,079
+Evet.
+
+807
+00:46:03,923 --> 00:46:05,123
+Okay, let's go on.
+
+808
+00:46:07,844 --> 00:46:08,583
+Çocan var mı?
+
+809
+00:46:33,364 --> 00:46:34,903
+bulun bakalım. It's your test.
+
+810
+00:46:35,983 --> 00:46:40,824
+Try to find out the minimum and maximum values f of 5 may take.
+
+811
+00:46:51,188 --> 00:46:55,768
+you may see such questions in the next midterm exam.
+
+812
+00:46:58,768 --> 00:46:59,608
+Okay.
+
+813
+00:47:01,347 --> 00:47:02,768
+Evet, bekliyorum cevabınız.
+
+814
+00:47:35,347 --> 00:47:37,967
+Evet. Bulan var mı gençler?
+
+815
+00:47:39,547 --> 00:47:41,168
+Şimdiye bulmuş olmanız lazımdı.
+
+816
+00:47:42,208 --> 00:47:43,067
+Oradasınız değil mi?
+
+817
+00:47:54,804 --> 00:47:56,503
+7x17, güzel.
+
+818
+00:48:00,500 --> 00:48:02,500
+Evet, şimdi bu solucu.
+
+819
+00:48:02,500 --> 00:48:04,500
+Yani, bu solucu.
+
+820
+00:48:04,500 --> 00:48:30,500
+Evet, şimdi bu solucu.
+
+821
+00:48:30,500 --> 00:48:32,500
+A prime of x
+
+822
+00:48:32,500 --> 00:48:34,500
+is bigger than 1 and smaller than 3.
+
+823
+00:48:34,500 --> 00:48:36,500
+So we substitute
+
+824
+00:48:36,500 --> 00:48:38,500
+this equality into
+
+825
+00:48:38,500 --> 00:48:40,500
+this inequality.
+
+826
+00:48:40,500 --> 00:48:42,500
+So by substituting
+
+827
+00:48:42,500 --> 00:48:44,500
+the value f of 0
+
+828
+00:48:44,500 --> 00:48:46,500
+into this inequality
+
+829
+00:48:46,500 --> 00:48:48,500
+we are going to obtain this
+
+830
+00:48:48,500 --> 00:48:50,500
+inequality and by solving
+
+831
+00:48:50,500 --> 00:48:52,500
+this inequality we have this
+
+832
+00:48:52,500 --> 00:48:54,500
+inequality. The minimum value
+
+833
+00:48:54,500 --> 00:48:56,500
+f of 5
+
+834
+00:48:56,500 --> 00:48:58,500
+may take is 7. The maximum value
+
+835
+00:48:58,500 --> 00:49:00,500
+f of 5 may take is
+
+836
+00:49:00,500 --> 00:49:02,500
+17.
+
+837
+00:49:02,500 --> 00:49:04,500
+OK.
+
+838
+00:49:04,500 --> 00:49:06,500
+Is there any question about the solution?
+
+839
+00:49:06,500 --> 00:49:10,500
+But this is just application of mean value theorem for
+
+840
+00:49:10,500 --> 00:49:12,500
+derivation.
+
+841
+00:49:12,500 --> 00:49:16,500
+Now, so this is just proof by using
+
+842
+00:49:16,500 --> 00:49:18,500
+mean value theorem for derivation.
+
+843
+00:49:18,500 --> 00:49:23,500
+I think so you can see such question in next
+
+844
+00:49:23,500 --> 00:49:25,500
+but let's see its proof.
+
+845
+00:49:25,500 --> 00:49:27,500
+So by using mean value theorem.
+
+846
+00:49:27,500 --> 00:49:32,500
+OK, let's choose some arbitrary but constant reals.
+
+847
+00:49:32,500 --> 00:49:34,500
+Numbers a and b.
+
+848
+00:49:34,500 --> 00:49:35,500
+Let's OK.
+
+849
+00:49:35,500 --> 00:49:36,500
+So we have this function.
+
+850
+00:49:36,500 --> 00:49:40,500
+sin x which is continuous over this interval
+
+851
+00:49:40,500 --> 00:49:44,500
+and differential over the corresponding open interval.
+
+852
+00:49:44,500 --> 00:49:46,500
+That's why, that's why.
+
+853
+00:49:46,500 --> 00:49:49,500
+So there exists some c
+
+854
+00:49:49,500 --> 00:49:56,500
+contained by open interval a, b such that f prime of c is equal to average
+
+855
+00:49:56,500 --> 00:50:00,500
+average rate of change of f over the given interval a, b. OK.
+
+856
+00:50:00,500 --> 00:50:09,500
+Now, so let's apply f prime of c. Let's substitute f prime of c, which is cos 2c.
+
+857
+00:50:09,500 --> 00:50:14,500
+So f of b minus f of a over b minus a is this.
+
+858
+00:50:14,500 --> 00:50:15,500
+OK.
+
+859
+00:50:15,500 --> 00:50:18,500
+Now we know that cos is a bounded function.
+
+860
+00:50:18,500 --> 00:50:22,500
+When you apply absolute function to both sides of this equality, we are going to obtain this.
+
+861
+00:50:22,500 --> 00:50:27,500
+And so absolute of cos is smaller than or equal to one.
+
+862
+00:50:27,500 --> 00:50:30,500
+We know that cos is bounded function.
+
+863
+00:50:30,500 --> 00:50:33,500
+By solving this inequality, we are going to obtain this.
+
+864
+00:50:33,500 --> 00:50:38,500
+So this inequality holds for all a, b constants.
+
+865
+00:50:38,500 --> 00:50:41,500
+OK, real constant because of this fact.
+
+866
+00:50:41,500 --> 00:50:42,500
+So I see.
+
+867
+00:50:42,500 --> 00:50:48,500
+So you can show, you can prove some inequalities by using mean value theorem.
+
+868
+00:50:48,500 --> 00:50:50,500
+Min value theorem.
+
+869
+00:50:50,500 --> 00:50:51,300
+So you can show, you can show, you can show, you can show, you can show, you can show, you can show, you can show, you can show, you can show, you can show, you can show, you can show, you can show, you can show, you can show, you can show, you can show, you can show, you can show, you can show, you can show, you can show, you can show, you can show, you can show, you can show, you can show, you can show, you can show, you can show, you can show, you can show, you can show, you can show, you can show, you can show, you can show, you can show, you can show, you can show, you can show, you can show, you can show, you can show, you can show, you can show, you can show, you can show, you can show, you can show, you can show, you can show, you can show, you can show,
+
+870
+00:50:59,284 --> 00:51:01,744
+ok is there any question about this proof
+
+871
+00:51:01,744 --> 00:51:05,903
+sorusu olan var mı?
+
+872
+00:51:07,384 --> 00:51:07,923
+yok
+
+873
+00:51:07,923 --> 00:51:09,344
+evet
+
+874
+00:51:09,344 --> 00:51:12,164
+şöyle yapalım bunu da çözdükten sonra
+
+875
+00:51:12,164 --> 00:51:12,903
+bir ara verelim
+
+876
+00:51:12,903 --> 00:51:15,324
+given this function
+
+877
+00:51:15,324 --> 00:51:17,584
+f by f of x
+
+878
+00:51:17,584 --> 00:51:19,983
+6 x square minus x to 4
+
+879
+00:51:19,983 --> 00:51:20,903
+minus 4
+
+880
+00:51:20,903 --> 00:51:22,124
+so your
+
+881
+00:51:22,124 --> 00:51:24,903
+task is to
+
+882
+00:51:24,903 --> 00:51:26,903
+compute
+
+883
+00:51:26,903 --> 00:51:29,724
+all local
+
+884
+00:51:29,724 --> 00:51:30,244
+x
+
+885
+00:51:30,244 --> 00:51:31,744
+and relation points
+
+886
+00:51:31,744 --> 00:51:32,344
+ok
+
+887
+00:51:32,344 --> 00:51:34,624
+in order to compute local x-term values
+
+888
+00:51:34,624 --> 00:51:36,164
+we need derivation function
+
+889
+00:51:36,164 --> 00:51:37,684
+first order derivation function
+
+890
+00:51:37,684 --> 00:51:38,364
+root
+
+891
+00:51:38,364 --> 00:51:40,864
+so the first order derivation of this function is this
+
+892
+00:51:40,864 --> 00:51:43,864
+and let's compute the root of first order derivation
+
+893
+00:51:43,864 --> 00:51:45,724
+so by factorizing
+
+894
+00:51:45,724 --> 00:51:47,403
+derivation function
+
+895
+00:51:47,403 --> 00:51:49,844
+we got these roots
+
+896
+00:51:49,844 --> 00:51:50,423
+ok
+
+897
+00:51:50,423 --> 00:51:53,304
+so those are contained by domain of f
+
+898
+00:51:53,304 --> 00:51:56,284
+that's why those are critical points
+
+899
+00:51:56,284 --> 00:52:01,624
+we investigate existence of local x-term values at critical points
+
+900
+00:52:01,624 --> 00:52:02,744
+now
+
+901
+00:52:02,744 --> 00:52:06,304
+so let's compute second order derivation
+
+902
+00:52:06,304 --> 00:52:08,604
+in order to compute inflection points
+
+903
+00:52:08,604 --> 00:52:09,044
+so
+
+904
+00:52:09,044 --> 00:52:13,003
+first of all we compute root of second order derivation
+
+905
+00:52:13,003 --> 00:52:17,684
+so we investigate existence of inflection point
+
+906
+00:52:17,684 --> 00:52:18,244
+at
+
+907
+00:52:18,244 --> 00:52:19,423
+roots of
+
+908
+00:52:19,423 --> 00:52:21,364
+second order derivation function
+
+909
+00:52:21,364 --> 00:52:22,423
+let's illustrate
+
+910
+00:52:22,423 --> 00:52:23,644
+those obtained
+
+911
+00:52:23,644 --> 00:52:25,364
+values on table
+
+912
+00:52:25,364 --> 00:52:25,884
+ok
+
+913
+00:52:25,884 --> 00:52:27,324
+so we have those values
+
+914
+00:52:27,324 --> 00:52:28,284
+attention here
+
+915
+00:52:28,284 --> 00:52:31,064
+so f prime derivation functions
+
+916
+00:52:31,064 --> 00:52:32,884
+takes plus
+
+917
+00:52:32,884 --> 00:52:33,784
+sign
+
+918
+00:52:33,784 --> 00:52:35,304
+on this interval
+
+919
+00:52:35,304 --> 00:52:36,403
+and minus
+
+920
+00:52:36,403 --> 00:52:37,003
+minus
+
+921
+00:52:37,003 --> 00:52:38,364
+plus
+
+922
+00:52:38,364 --> 00:52:39,184
+minus
+
+923
+00:52:39,184 --> 00:52:41,204
+by using
+
+924
+00:52:41,204 --> 00:52:42,064
+this
+
+925
+00:52:42,064 --> 00:52:42,764
+ok
+
+926
+00:52:42,764 --> 00:52:43,423
+expression
+
+927
+00:52:43,423 --> 00:52:44,164
+look at here
+
+928
+00:52:44,164 --> 00:52:45,564
+now
+
+929
+00:52:45,564 --> 00:52:47,244
+second order derivation
+
+930
+00:52:47,244 --> 00:52:48,844
+takes
+
+931
+00:52:48,844 --> 00:52:50,084
+those signs
+
+932
+00:52:50,084 --> 00:52:50,584
+okay
+
+933
+00:52:50,584 --> 00:52:52,264
+so in this case
+
+934
+00:52:52,264 --> 00:52:53,184
+so f
+
+935
+00:52:53,184 --> 00:52:53,983
+graph
+
+936
+00:52:53,983 --> 00:52:55,483
+is
+
+937
+00:52:55,483 --> 00:52:56,824
+look at here
+
+938
+00:52:56,824 --> 00:52:57,084
+okay
+
+939
+00:52:57,084 --> 00:52:57,543
+so
+
+940
+00:52:57,543 --> 00:52:58,543
+okay
+
+941
+00:52:58,543 --> 00:52:59,543
+so
+
+942
+00:52:59,543 --> 00:53:00,543
+okay
+
+943
+00:53:00,543 --> 00:53:01,543
+so
+
+944
+00:53:01,543 --> 00:53:02,543
+okay
+
+945
+00:53:02,543 --> 00:53:03,543
+so
+
+946
+00:53:03,543 --> 00:53:04,543
+okay
+
+947
+00:53:04,543 --> 00:53:05,543
+so
+
+948
+00:53:05,543 --> 00:53:06,543
+okay
+
+949
+00:53:06,543 --> 00:53:07,543
+so
+
+950
+00:53:07,543 --> 00:53:08,543
+okay
+
+951
+00:53:08,543 --> 00:53:09,543
+so
+
+952
+00:53:09,543 --> 00:53:20,043
+okay
+
+953
+00:53:20,043 --> 00:53:20,064
+okay okay
+
+954
+00:53:00,884 --> 00:53:16,583
+Yani, f is decreasing as concave down because of this fact, second order derivation is negative.
+
+955
+00:53:16,583 --> 00:53:19,523
+That's why we have concave down graph.
+
+956
+00:53:20,083 --> 00:53:28,423
+So here, so our graph is decreasing as concave up, decreasing as concave up because of this fact.
+
+957
+00:53:28,423 --> 00:53:40,364
+So our graph is concave up you cut a concap, the other one came up Okay, so on the interval from zero to one, so our F is.
+
+958
+00:53:41,384 --> 00:53:55,884
+Increasing as concave up Okay, so from one square root of three the graph is increasing as concave down because of this fact Okay, so from the square root of three.
+
+959
+00:53:55,884 --> 00:53:59,103
+Of infinite so the graph is.
+
+960
+00:54:00,284 --> 00:54:09,804
+In the craft is decreasing as concave down can see that so look at this graph so from minus infinite to.
+
+961
+00:54:09,804 --> 00:54:35,983
+Minus square root of three.
+
+962
+00:54:35,983 --> 00:54:36,983
+Minus one.
+
+963
+00:54:36,983 --> 00:54:40,983
+Minus square root of three.
+
+964
+00:54:40,983 --> 00:54:43,983
+Minus one is the inflection point.
+
+965
+00:54:43,983 --> 00:54:45,983
+Because at that point.
+
+966
+00:54:45,983 --> 00:54:47,983
+Second order derivation change.
+
+967
+00:54:47,983 --> 00:54:48,983
+Is sign.
+
+968
+00:54:48,983 --> 00:54:49,983
+Okay.
+
+969
+00:54:49,983 --> 00:54:50,983
+Zero is not inflection point.
+
+970
+00:54:50,983 --> 00:54:53,983
+One is an inflection point.
+
+971
+00:54:53,983 --> 00:54:55,983
+Because at that point.
+
+972
+00:54:55,983 --> 00:54:58,983
+Second order derivation.
+
+973
+00:54:58,983 --> 00:55:02,983
+So we have two inflection point.
+
+974
+00:55:02,983 --> 00:55:05,983
+So similarly you can compute local minimum values.
+
+975
+00:55:05,983 --> 00:55:06,983
+Okay.
+
+976
+00:55:06,983 --> 00:55:07,983
+Inflection points.
+
+977
+00:55:07,983 --> 00:55:08,983
+Someone here.
+
+978
+00:55:08,983 --> 00:55:11,983
+Local maximum points.
+
+979
+00:55:11,983 --> 00:55:12,983
+Okay.
+
+980
+00:55:12,983 --> 00:55:15,983
+Is there an equation about this solution?
+
+981
+00:55:15,983 --> 00:55:18,983
+So local maximum point here.
+
+982
+00:55:18,983 --> 00:55:20,983
+Local minimum point here.
+
+983
+00:55:20,983 --> 00:55:21,983
+Can you see that?
+
+984
+00:55:21,983 --> 00:55:23,983
+So local maximum point here.
+
+985
+00:55:23,983 --> 00:55:25,983
+According to graph.
+
+986
+00:55:25,983 --> 00:55:27,983
+So minus one.
+
+987
+00:55:27,983 --> 00:55:29,983
+Infliction point.
+
+988
+00:55:29,983 --> 00:55:30,983
+Here.
+
+989
+00:55:30,983 --> 00:55:32,983
+So we have minus one.
+
+990
+00:55:32,983 --> 00:55:35,983
+F of minus one is the inflection point.
+
+991
+00:55:35,983 --> 00:55:36,983
+So f of one.
+
+992
+00:55:36,983 --> 00:55:38,983
+F of one.
+
+993
+00:55:38,983 --> 00:55:39,983
+Inflection point.
+
+994
+00:55:39,983 --> 00:55:40,983
+So where?
+
+995
+00:55:40,983 --> 00:55:41,983
+Concave up.
+
+996
+00:55:41,983 --> 00:55:42,983
+Here.
+
+997
+00:55:42,983 --> 00:55:44,983
+So the graph is concave down.
+
+998
+00:55:44,983 --> 00:55:45,983
+Okay.
+
+999
+00:55:45,983 --> 00:55:46,983
+We have two inflection point.
+
+1000
+00:55:46,983 --> 00:55:47,983
+And two.
+
+1001
+00:55:47,983 --> 00:55:48,983
+Or three.
+
+1002
+00:55:48,983 --> 00:55:50,983
+Local maximum values.
+
+1003
+00:55:50,983 --> 00:55:51,983
+And two.
+
+1004
+00:55:51,983 --> 00:55:52,983
+Or three.
+
+1005
+00:55:52,983 --> 00:55:53,983
+Local maximum values.
+
+1006
+00:55:53,983 --> 00:55:54,983
+Evet.
+
+1007
+00:55:54,983 --> 00:55:55,983
+Var mı sorusu olan?
+
+1008
+00:55:55,983 --> 00:55:56,983
+Sorusu olan yoksa.
+
+1009
+00:55:56,983 --> 00:55:57,983
+Bir ara verelim.
+
+1010
+00:55:57,983 --> 00:55:58,983
+Have a break.
+
+1011
+00:55:58,983 --> 00:55:59,983
+15 minutes.
+
+1012
+00:55:59,983 --> 00:56:00,983
+15 dakika ara arkadaşlar.
+
+1013
+00:56:00,983 --> 00:56:01,983
+Break.
+
+1014
+00:56:01,983 --> 00:56:02,983
+15 minutes.
+
+1015
+00:56:02,983 --> 00:56:03,983
+Bir ara verelim.
+
+1016
+00:56:03,983 --> 00:56:04,983
+Have a break.
+
+1017
+00:56:04,983 --> 00:56:05,983
+15 minutes.
+
+1018
+00:56:05,983 --> 00:56:06,983
+15 dakika ara arkadaşlar.
+
+1019
+00:56:06,983 --> 00:56:07,983
+Break.
+
+1020
+00:56:07,983 --> 00:56:08,983
+15 minutes.
+
+1021
+00:56:08,983 --> 00:56:09,983
+15 dakika ara arkadaşlar.
+
+1022
+00:56:09,983 --> 00:56:10,983
+Break.
+
+1023
+00:56:10,983 --> 00:56:31,983
+15 minutes.
+
+1024
+01:23:39,091 --> 01:23:54,152
+Evet, merhaba arkadaşlar. Geciktim, sistemden düştüm, bir türlü bağlanamadım uzun süre. Neden öyle oldu anlayamadım. İnternetten mi kaynaklandı? Evet, şimdi sesim iyi geliyor mu arkadaşlar?
+
+1025
+01:24:05,619 --> 01:24:07,319
+paylaşımı görüyor musunuz?
+
+1026
+01:24:11,091 --> 01:24:14,491
+Evet, paylaşımı görüyorsanız devam edelim gençler.
+
+1027
+01:24:16,991 --> 01:24:20,351
+Okay, let's try to solve this question.
+
+1028
+01:24:25,268 --> 01:24:29,608
+So, you are given some function by
+
+1029
+01:24:33,203 --> 01:24:38,764
+Bu, f'ı x'ı kullanarak,
+
+1030
+01:24:41,923 --> 01:24:43,283
+f'ı x'ı kullanarak,
+
+1031
+01:24:43,283 --> 01:24:44,683
+bu definite integration,
+
+1032
+01:24:44,683 --> 01:25:14,683
+f'ı x'ı'
+
+1033
+01:25:14,683 --> 01:25:18,563
+Let me use different color here.
+
+1034
+01:25:19,523 --> 01:25:31,344
+Okay, now so in order to compute localize point, we need to compute derivation function for this function by using fundamental theorem part one.
+
+1035
+01:25:31,344 --> 01:25:40,103
+So we substitute x upper bound into the function of t as t here.
+
+1036
+01:25:40,103 --> 01:25:45,963
+So f prime of x is x minus x squared over 1 plus x to 4.
+
+1037
+01:25:46,183 --> 01:25:48,804
+So let's compute roots of derivation function.
+
+1038
+01:25:49,523 --> 01:25:53,203
+So we have two roots, x0 and x1.
+
+1039
+01:25:53,363 --> 01:25:59,703
+So by investigating sine table of derivation function, look at here.
+
+1040
+01:26:00,123 --> 01:26:02,884
+So when you factorize, so denominator here.
+
+1041
+01:26:03,443 --> 01:26:05,503
+So denominator is always positive.
+
+1042
+01:26:05,503 --> 01:26:11,163
+So only x minus x squared determines the sine of derivation of f.
+
+1043
+01:26:11,623 --> 01:26:17,243
+So at left hand side of 0, f prime takes negative between 0 and 1.
+
+1044
+01:26:17,243 --> 01:26:19,683
+So f prime takes positive.
+
+1045
+01:26:20,403 --> 01:26:21,804
+And so this is negative.
+
+1046
+01:26:22,403 --> 01:26:24,083
+Okay, from 1 to infinite.
+
+1047
+01:26:25,643 --> 01:26:32,583
+So this means that f is decreasing at left hand side of 0 and f is increasing between 0 and 1.
+
+1048
+01:26:32,583 --> 01:26:37,023
+So that's why we have local minimum value at the point 0.
+
+1049
+01:26:37,384 --> 01:26:41,003
+And at the point 1, we have local maximum value.
+
+1050
+01:26:41,703 --> 01:26:50,663
+Okay, so you can easily obtain local minimum value because of the fact that from 0 to 0, f of 0 is the local minimum value.
+
+1051
+01:26:51,483 --> 01:26:54,963
+Capital f of 0 is the local minimum value.
+
+1052
+01:26:55,143 --> 01:26:55,863
+Attention here.
+
+1053
+01:26:55,863 --> 01:27:05,103
+So when you substitute x0 here as upper bound from 0 to 0, definite integration is 0.
+
+1054
+01:27:05,643 --> 01:27:09,224
+Recall the property of definite integration.
+
+1055
+01:27:09,523 --> 01:27:09,663
+Okay.
+
+1056
+01:27:10,823 --> 01:27:15,563
+But it is not so easy to compute maximum value, local maximum value.
+
+1057
+01:27:15,943 --> 01:27:24,863
+So in that case, you need to substitute x1, a capital F of 1 from 0 to 1, t minus t squared over 1 plus 4.
+
+1058
+01:27:24,863 --> 01:27:29,583
+So this kind of integration is the topic of final exam.
+
+1059
+01:27:29,703 --> 01:27:29,844
+Okay.
+
+1060
+01:27:31,623 --> 01:27:53,323
+Is there any question about this solution?
+
+1061
+01:27:40,212 --> 01:27:42,212
+soru sorulan yoksa
+
+1062
+01:27:42,212 --> 01:27:44,212
+ne
+
+1063
+01:27:44,212 --> 01:27:48,212
+ok
+
+1064
+01:27:48,212 --> 01:27:50,212
+next question
+
+1065
+01:27:50,212 --> 01:27:54,212
+compute
+
+1066
+01:27:54,212 --> 01:27:56,212
+value
+
+1067
+01:27:56,212 --> 01:27:58,212
+of this function f
+
+1068
+01:27:58,212 --> 01:28:00,212
+of x cosin x
+
+1069
+01:28:00,212 --> 01:28:02,212
+over this interval
+
+1070
+01:28:02,212 --> 01:28:04,212
+then
+
+1071
+01:28:04,212 --> 01:28:06,212
+apply
+
+1072
+01:28:06,212 --> 01:28:08,212
+then apply mean value
+
+1073
+01:28:08,212 --> 01:28:10,212
+mean value theorem for integrals
+
+1074
+01:28:10,212 --> 01:28:36,212
+applying of mean value theorem for integral means that we find out some proper c some proper c satisfying this condition so this is the application of mean value theorem for integral calculus so we need to find out some proper c satisfying this condition
+
+1075
+01:28:36,212 --> 01:28:51,212
+condition f of c is equal to so this is the average value of f attention right hand side is the average value of f over zero pi integral okay now so by applying mean value theorem so we got this so f of c is equal to zero when sold is equality
+
+1076
+01:28:51,212 --> 01:29:55,212
+so
+
+1077
+01:29:43,539 --> 01:29:44,019
+Evet.
+
+1078
+01:29:45,600 --> 01:29:47,720
+Sorusu olan yoksa devam ediyoruz.
+
+1079
+01:29:51,347 --> 01:30:00,927
+Now, so given some function by this rule, as you see, we need to use definite integration here.
+
+1080
+01:30:01,268 --> 01:30:06,967
+So your goal is to compute derivation value of capital F at the point 1.
+
+1081
+01:30:07,568 --> 01:30:13,148
+So this question solution is associated with application of fundamental theorem part 1.
+
+1082
+01:30:14,188 --> 01:30:16,988
+Okay, let's solve this problem. It is your task.
+
+1083
+01:30:16,988 --> 01:30:23,868
+I think everyone knows the fundamental theorem part 1.
+
+1084
+01:30:25,868 --> 01:30:27,948
+Bekliyorum arkadaşlar. Herkes bu suma kalın.
+
+1085
+01:30:30,287 --> 01:30:31,188
+Refüssü 1'i.
+
+1086
+01:30:46,707 --> 01:30:48,627
+Evet. Ulan var mı?
+
+1087
+01:31:15,956 --> 01:31:22,216
+Ulan var mı gençler? Bir buldun [öğrenci]. Bir bulmuş. Başka var mı bir bula?
+
+1088
+01:31:28,115 --> 01:31:45,975
+u'dan v'ye ft dt integralinin türevini alacaksınız. u ve v x'e bağırsa neydi? fv çarpı v üstü eksi f u çarpı u üstü. Temel teoremin genelleştirilmiş halini hatırlayın. Nasıl elde edildiğini anlatmıştık derste.
+
+1089
+01:31:53,747 --> 01:32:04,087
+Evet. Bir yoklama yapayım bakayım. Kimler var, kimler yok. [öğrenci], burada mısın? Sadece arkadaşlar şeye yazın. Chat kısmına.
+
+1090
+01:32:08,275 --> 01:32:32,135
+[öğrenci]. Burada mısın [öğrenci]? [öğrenci], burada. Buldun mu [öğrenci] cevabı? [öğrenci]. [öğrenci]. Are you here, [öğrenci]?
+
+1091
+01:32:36,948 --> 01:32:40,248
+[öğrenci], burada mısın [öğrenci]?
+
+1092
+01:32:41,708 --> 01:32:44,807
+[öğrenci], burada.
+
+1093
+01:32:45,768 --> 01:32:47,908
+[öğrenci], burada mısın [öğrenci]?
+
+1094
+01:32:52,020 --> 01:32:56,480
+[öğrenci]
+
+1095
+01:33:00,404 --> 01:33:01,744
+[öğrenci],
+
+1096
+01:33:03,944 --> 01:33:05,484
+[öğrenci],
+
+1097
+01:33:05,564 --> 01:33:06,404
+burada değil, burada.
+
+1098
+01:33:06,824 --> 01:33:07,824
+[öğrenci],
+
+1099
+01:33:08,084 --> 01:33:09,884
+[öğrenci], burada mısın?
+
+1100
+01:33:13,716 --> 01:33:18,996
+Güzel. Farid, Azizan, Ruhi. Burada mısın Farid?
+
+1101
+01:33:21,996 --> 01:33:22,816
+Are you here, Farid?
+
+1102
+01:33:25,655 --> 01:33:28,096
+Okey. [öğrenci], [öğrenci].
+
+1103
+01:33:31,636 --> 01:33:35,816
+[öğrenci]. Buldun mu [öğrenci] cevabı? Cevap ne [öğrenci]?
+
+1104
+01:33:38,756 --> 01:33:40,216
+[öğrenci].
+
+1105
+01:33:43,796 --> 01:33:45,016
+[öğrenci]
+
+1106
+01:33:48,787 --> 01:33:50,287
+Buldun mu [öğrenci] cevabı?
+
+1107
+01:33:52,667 --> 01:33:54,807
+[öğrenci].
+
+1108
+01:33:55,387 --> 01:33:56,727
+[öğrenci], burada mısın [öğrenci]?
+
+1109
+01:33:59,247 --> 01:34:00,487
+[öğrenci].
+
+1110
+01:34:02,867 --> 01:34:03,647
+Burada mısın [öğrenci]?
+
+1111
+01:34:06,227 --> 01:34:06,907
+Burada.
+
+1112
+01:34:07,507 --> 01:34:08,507
+[öğrenci].
+
+1113
+01:34:12,659 --> 01:34:15,279
+[öğrenci], burada mısın [öğrenci]?
+
+1114
+01:34:17,680 --> 01:34:18,180
+Bir daha.
+
+1115
+01:34:19,079 --> 01:34:22,460
+[öğrenci], pardon.
+
+1116
+01:34:24,279 --> 01:34:24,559
+Burada.
+
+1117
+01:34:24,779 --> 01:34:25,960
+[öğrenci].
+
+1118
+01:34:28,960 --> 01:34:29,720
+Burada.
+
+1119
+01:34:30,399 --> 01:34:31,579
+[öğrenci].
+
+1120
+01:34:34,899 --> 01:34:36,399
+[öğrenci].
+
+1121
+01:34:36,739 --> 01:34:38,220
+[öğrenci], Arhi [öğrenci].
+
+1122
+01:34:38,220 --> 01:34:41,939
+[öğrenci].
+
+1123
+01:34:42,260 --> 01:34:43,800
+Not here, [öğrenci].
+
+1124
+01:34:45,139 --> 01:34:46,260
+[öğrenci].
+
+1125
+01:34:48,899 --> 01:34:50,220
+Okey, [öğrenci], you are here.
+
+1126
+01:34:51,199 --> 01:34:53,420
+[öğrenci].
+
+1127
+01:34:55,779 --> 01:34:56,760
+[öğrenci].
+
+1128
+01:35:01,363 --> 01:35:03,363
+[öğrenci].
+
+1129
+01:35:03,363 --> 01:35:05,363
+Evet.
+
+1130
+01:35:05,363 --> 01:35:09,363
+Okay, let's see its solution.
+
+1131
+01:35:12,884 --> 01:35:28,724
+Okay, so f' x' derivation of x' here and derivation of this expression made by definite integration, we first substitute upper bound into integrant functions.
+
+1132
+01:35:28,724 --> 01:35:42,644
+So here, can you see that? Times derivation of upper bound. You don't need to substitute lower bound because this is constant.
+
+1133
+01:35:42,644 --> 01:35:54,444
+by the derivation of constant, we got zero term. Okay, so this is the derivation of f. So when you substitute 1 into this derivation function, we got 2.
+
+1134
+01:35:54,444 --> 01:36:04,684
+So what about this? Let's compute local and local minimum points and local minimum points for this function. Okay.
+
+1135
+01:36:06,384 --> 01:36:10,203
+Herkes bulsun bakalım. Yerel maksimum noktalarını bulsunlar.
+
+1136
+01:36:12,644 --> 01:36:24,644
+Değerlerle de bu. Okay, let's compute local. Okay, let's compute local, local maximum and minimum values. We can easily compute.
+
+1137
+01:36:24,644 --> 01:36:30,644
+Compute local and local max and mean values.
+
+1138
+01:36:35,539 --> 01:36:39,619
+Evet. Bekliyorum cevabınızı. Herkes bulsun. Basit bir soru.
+
+1139
+01:37:01,908 --> 01:37:02,908
+Evet.
+
+1140
+01:37:04,588 --> 01:37:07,708
+Ok, let's see the solution.
+
+1141
+01:37:07,708 --> 01:37:12,408
+By Generalizational Fundamental Theorem Part 1,
+
+1142
+01:37:12,408 --> 01:37:17,248
+we substitute our upper bounds into integrant function.
+
+1143
+01:37:17,248 --> 01:37:23,028
+We got this times derivation of upper bounds here.
+
+1144
+01:37:23,028 --> 01:37:27,468
+You don't need to substitute lower bounds into integrant function.
+
+1145
+01:37:27,468 --> 01:37:33,468
+So we got this derivation function.
+
+1146
+01:37:33,468 --> 01:37:36,468
+When you solve the root of derivation function,
+
+1147
+01:37:36,468 --> 01:37:39,468
+so we got x1.
+
+1148
+01:37:39,468 --> 01:37:42,468
+So we have only one critical point.
+
+1149
+01:37:42,468 --> 01:37:45,468
+It means that we have only one local extreme value.
+
+1150
+01:37:45,468 --> 01:37:50,468
+So if you investigate the time table of derivation function,
+
+1151
+01:37:50,468 --> 01:37:55,468
+so at the left hand side, so derivation function is negative.
+
+1152
+01:37:55,468 --> 01:37:58,468
+At the right hand side, derivation function positive.
+
+1153
+01:37:58,468 --> 01:38:01,468
+So at the left hand side, f is decreasing.
+
+1154
+01:38:01,468 --> 01:38:04,468
+At the right hand side of 1, f is increasing.
+
+1155
+01:38:04,468 --> 01:38:07,468
+That's why 1 is a local minimum point.
+
+1156
+01:38:07,468 --> 01:38:10,468
+So we can compute the value of this.
+
+1157
+01:38:10,468 --> 01:38:13,468
+So f of 1, when you substitute here f of 1,
+
+1158
+01:38:13,468 --> 01:38:20,468
+So from 0 to minus 1, f times t.
+
+1159
+01:38:20,468 --> 01:38:24,468
+So f tangent minus 1 minus f tangent 0.
+
+1160
+01:38:24,468 --> 01:38:30,468
+As you see, we can compute f of 0 as minus pi over 4.
+
+1161
+01:38:30,468 --> 01:38:38,468
+Okay, f of 1 is minus pi over 4, which is the local minimum value.
+
+1162
+01:38:42,260 --> 01:38:42,760
+ok.
+
+1163
+01:38:46,355 --> 01:38:48,355
+Bu da yokumun maksimum noktası.
+
+1164
+01:38:52,916 --> 01:39:00,916
+Asiq, again, next question is also about fundamental theorem part one.
+
+1165
+01:39:01,655 --> 01:39:15,996
+So given some function f of x by this rule, one plus lnx, 2x power, g of x is given by definite integration of cosine square x from x to f of x.
+
+1166
+01:39:15,996 --> 01:39:25,596
+And your task is to compute derivation value of f at the point one and derivation value of g at the point one.
+
+1167
+01:39:26,076 --> 01:39:28,115
+But do not forget this condition.
+
+1168
+01:39:28,376 --> 01:39:32,836
+So under this condition, you need to compute these derivation values.
+
+1169
+01:39:33,016 --> 01:39:35,296
+Okay, please try to solve this problem.
+
+1170
+01:39:43,764 --> 01:39:46,384
+Evet. Çözün bakalım işte. Bekliyorum.
+
+1171
+01:40:17,555 --> 01:40:19,595
+Evet, acele etme [öğrenci].
+
+1172
+01:40:23,091 --> 01:40:28,871
+Acele cevap verirsen, Maitin [öğrenci]'u yavaş yavaş yapacaksın, adım adım.
+
+1173
+01:40:48,340 --> 01:40:51,600
+Evet. f üstü 1, 1 olabilir.
+
+1174
+01:40:54,579 --> 01:40:57,159
+Ama g üstü 1, biraz dikkat edin.
+
+1175
+01:41:39,155 --> 01:41:42,695
+Evet, ok, let's see its solution together.
+
+1176
+01:41:45,195 --> 01:41:49,756
+Ok, in order to compute value of f derivation at the point 1,
+
+1177
+01:41:49,956 --> 01:41:53,695
+we need to simplify this expression because this is not a usual function.
+
+1178
+01:41:53,855 --> 01:41:59,296
+First of all, we apply natural logarithmic function to both sides of this equality.
+
+1179
+01:42:00,036 --> 01:42:08,275
+ln of f of x is equal to x times ln of 1 plus ln x by the property of logarithmic function.
+
+1180
+01:42:08,275 --> 01:42:11,095
+Now we can derivate both sides of this equality.
+
+1181
+01:42:11,735 --> 01:42:20,115
+So by the chain rule, we have this f prime of x over f of x for the derivation of ln of f of x.
+
+1182
+01:42:20,595 --> 01:42:22,216
+Let's derivate right hand side.
+
+1183
+01:42:22,416 --> 01:42:25,996
+By the product rule for derivation, we've got right hand side.
+
+1184
+01:42:26,635 --> 01:42:32,496
+When you substitute x1 here, f prime of f prime of 1 over f of 1,
+
+1185
+01:42:32,496 --> 01:42:37,695
+f of 1 by using this rule, so we can see that f of 1 is 1.
+
+1186
+01:42:37,695 --> 01:42:43,536
+So when you substitute 1 here, so we got f prime of 1 as 1.
+
+1187
+01:42:43,916 --> 01:42:45,735
+Okay, f prime of 1 is 1.
+
+1188
+01:42:46,216 --> 01:42:48,595
+So let's compute g prime of 1.
+
+1189
+01:42:48,895 --> 01:42:52,376
+To manage this, we need to derivate this function.
+
+1190
+01:42:52,916 --> 01:42:57,695
+So by the generation of fundamental theorem, derivation of right hand side,
+
+1191
+01:42:57,695 --> 01:43:03,735
+So we will substitute upper bound into integral function here.
+
+1192
+01:43:04,256 --> 01:43:16,076
+Cosine square f of x times derivation of upper bound minus substitute lower bound into integral function cosine square x times derivation of x1.
+
+1193
+01:43:16,076 --> 01:43:20,435
+So we are ready to substitute x1.
+
+1194
+01:43:20,815 --> 01:43:26,376
+When you substitute x1 here, f prime of 1, which is obtained as 1 above.
+
+1195
+01:43:26,855 --> 01:43:32,456
+So cosine square of 1 minus cosine square of 1, the answer for is 0.
+
+1196
+01:43:32,975 --> 01:43:36,435
+Is there an equation for this solution?
+
+1197
+01:43:36,435 --> 01:43:36,496
+Okay.
+
+1198
+01:43:36,496 --> 01:43:36,555
+So let's do it.
+
+1199
+01:43:36,555 --> 01:43:36,615
+Okay.
+
+1200
+01:43:36,615 --> 01:43:36,676
+So let's do it.
+
+1201
+01:43:36,676 --> 01:43:36,876
+Okay.
+
+1202
+01:43:36,876 --> 01:43:36,935
+So let's do it.
+
+1203
+01:43:36,935 --> 01:43:36,996
+Okay.
+
+1204
+01:43:36,996 --> 01:43:37,275
+So let's do it.
+
+1205
+01:43:37,275 --> 01:43:37,435
+Okay.
+
+1206
+01:43:37,435 --> 01:43:37,536
+So let's do it.
+
+1207
+01:43:37,536 --> 01:43:37,775
+Okay.
+
+1208
+01:43:37,775 --> 01:43:37,836
+So let's do it.
+
+1209
+01:43:37,836 --> 01:43:37,935
+Okay.
+
+1210
+01:43:37,935 --> 01:43:38,435
+So let's do it.
+
+1211
+01:43:38,435 --> 01:43:38,775
+Okay.
+
+1212
+01:43:38,775 --> 01:43:38,935
+So let's do it.
+
+1213
+01:43:38,935 --> 01:43:39,435
+Okay.
+
+1214
+01:43:39,435 --> 01:43:39,935
+So let's do it.
+
+1215
+01:43:39,935 --> 01:43:39,996
+Okay.
+
+1216
+01:43:39,996 --> 01:43:40,876
+So let's do it.
+
+1217
+01:43:40,876 --> 01:43:40,935
+Okay.
+
+1218
+01:43:40,935 --> 01:43:40,996
+So let's do it.
+
+1219
+01:43:40,996 --> 01:43:41,376
+Okay.
+
+1220
+01:43:41,376 --> 01:43:41,935
+So let's do it.
+
+1221
+01:43:41,935 --> 01:43:41,996
+Okay.
+
+1222
+01:43:41,996 --> 01:43:42,935
+So let's do it.
+
+1223
+01:43:42,935 --> 01:43:42,996
+Okay.
+
+1224
+01:43:42,996 --> 01:43:43,935
+So let's do it.
+
+1225
+01:43:43,935 --> 01:43:44,935
+Okay.
+
+1226
+01:43:44,935 --> 01:43:45,036
+So let's do it.
+
+1227
+01:43:45,036 --> 01:43:45,935
+Okay.
+
+1228
+01:43:45,935 --> 01:43:46,935
+So let's do it.
+
+1229
+01:43:46,935 --> 01:43:46,996
+Okay.
+
+1230
+01:43:46,996 --> 01:43:47,935
+So let's do it.
+
+1231
+01:43:47,935 --> 01:43:48,935
+Okay.
+
+1232
+01:43:48,935 --> 01:43:48,996
+So let's do it.
+
+1233
+01:43:48,996 --> 01:43:49,996
+Okay.
+
+1234
+01:43:41,300 --> 01:43:50,720
+Of course, so generally it must be from x, but in fact, so this is some notation mistake, but somehow you can obtain an answer. You are right.
+
+1235
+01:43:53,119 --> 01:44:01,600
+The variable of integral function must be different from x, from the logical, from the notation point of v.
+
+1236
+01:44:02,420 --> 01:44:07,079
+Got it. Integral function değişken x'den bağımsız olsa daha iyi olur.
+
+1237
+01:44:10,899 --> 01:44:15,699
+Bu soru değişimimizi halletti ama başka sorularda karar ve karar.
+
+1238
+01:44:16,420 --> 01:44:19,519
+O yüzden tekrardan soru değişmenin farkı okumuyoruz.
+
+1239
+01:44:19,639 --> 01:44:19,779
+Evet.
+
+1240
+01:44:20,659 --> 01:44:21,159
+Devam.
+
+1241
+01:44:28,884 --> 01:44:33,863
+Ok, so I think you cannot see such question in the next bit term.
+
+1242
+01:44:33,863 --> 01:44:34,224
+Exactly.
+
+1243
+01:44:34,863 --> 01:44:36,524
+Ok, this type question.
+
+1244
+01:44:37,604 --> 01:44:40,543
+Fission method, you can easily compute that.
+
+1245
+01:44:41,104 --> 01:44:42,083
+This will have this.
+
+1246
+01:44:42,604 --> 01:44:46,224
+So from 0 to pi, cosine is positive.
+
+1247
+01:44:46,703 --> 01:44:49,963
+That's also from 0 to pi over 2, cosine is positive.
+
+1248
+01:44:51,024 --> 01:44:51,724
+Ok, here.
+
+1249
+01:44:52,923 --> 01:44:53,904
+We have this.
+
+1250
+01:44:53,904 --> 01:44:58,863
+This from pi over 2 to 2.
+
+1251
+01:44:58,884 --> 01:45:01,524
+To pi, cosine is negative.
+
+1252
+01:45:02,243 --> 01:45:04,463
+That's why we got minus cosine.
+
+1253
+01:45:05,384 --> 01:45:09,564
+Ok, I think everyone could manage to solve this problem.
+
+1254
+01:45:10,844 --> 01:45:13,724
+Ok, so let's solve this problem.
+
+1255
+01:45:13,923 --> 01:45:15,064
+Can you see this?
+
+1256
+01:45:16,484 --> 01:45:19,524
+You may see such question in the next midterm exam.
+
+1257
+01:45:19,524 --> 01:45:28,463
+So this is the combination of fundamental theorem with the limit problem.
+
+1258
+01:45:28,463 --> 01:45:31,904
+Ok, you may see such question in the next midterm exam.
+
+1259
+01:45:33,743 --> 01:45:52,024
+Ok, let's try to solve this problem.
+
+1260
+01:45:39,283 --> 01:45:43,463
+Herkes bunu çözmek için uğraşsın arkadaşlar. Bekliyorum cevabınızı.
+
+1261
+01:46:24,756 --> 01:46:25,956
+ulan var mı?
+
+1262
+01:46:33,492 --> 01:46:52,811
+Okay, most of you found the answer as 0. Okay, let's see the solution. Also, very simple question. So, as it goes to 0, nominator is going to 0 because of the fact that from A to A, definite integration is 0.
+
+1263
+01:46:52,811 --> 01:47:15,231
+So, as x goes to 0, upper bound is approaching 0 and lower bound is also 0. That's why nominator is approaching 0 and denominator is also approaching 0. That's why we have 0 over 0 in the terminal form, meaning that we can apply L'Hopital's rule.
+
+1264
+01:47:15,231 --> 01:47:38,072
+So, derivation of nominator is this by the fundamental theorem part 1 and derivation of denominator is second square x. So, when you simplify this expression, so we got this as x goes to 0, sine square x is also approaching 0. Okay, the answer is 0. That's true.
+
+1265
+01:47:38,072 --> 01:48:04,471
+Okay, let's solve next question. So, from 0 to cosine x for theta integration is equal to arctangent x. Then, evaluate the value of f at the point 1 over square root 2 where x is contained by this open interval.
+
+1266
+01:48:04,471 --> 01:48:07,832
+Okay, let's solve this problem.
+
+1267
+01:48:38,547 --> 01:48:39,547
+Evet.
+
+1268
+01:48:40,907 --> 01:48:41,907
+Bunlar var mı?
+
+1269
+01:48:43,907 --> 01:48:46,547
+Is there anybody who found the esper?
+
+1270
+01:49:24,307 --> 01:49:24,868
+Evet.
+
+1271
+01:49:26,868 --> 01:49:28,427
+Bekliyorum cevabınızı.
+
+1272
+01:49:53,876 --> 01:50:02,036
+Okay, is there anybody? Found the same answer, minus 2 times square root of 2 over 3.
+
+1273
+01:50:45,619 --> 01:50:48,140
+Evet. Ağaçta bulan var mı gençler?
+
+1274
+01:51:18,387 --> 01:51:21,188
+Okay, let's see the solution.
+
+1275
+01:51:28,243 --> 01:51:33,443
+Ok, by the derivation of left-hand side and right-hand side,
+
+1276
+01:51:33,543 --> 01:51:34,844
+so we can obtain answers.
+
+1277
+01:51:34,844 --> 01:51:39,804
+So by fundamental theorem part one,
+
+1278
+01:51:40,003 --> 01:51:41,123
+generalization of fundamental theorem
+
+1279
+01:51:41,123 --> 01:51:43,463
+to upper bound into integral function,
+
+1280
+01:51:44,384 --> 01:51:47,304
+we have this f of cosine x times,
+
+1281
+01:51:47,443 --> 01:51:50,643
+do not forget to put derivation of upper bound here,
+
+1282
+01:51:50,783 --> 01:51:51,863
+minus sine x.
+
+1283
+01:51:51,863 --> 01:52:01,103
+And if you lower bound into integral function and multiply by its derivation,
+
+1284
+01:52:01,103 --> 01:52:02,683
+this is zero, we got zero term.
+
+1285
+01:52:03,363 --> 01:52:07,203
+So derivation of right-hand side, one over one plus x squared.
+
+1286
+01:52:08,663 --> 01:52:09,884
+Ok, look at here.
+
+1287
+01:52:10,363 --> 01:52:13,384
+So x is contained by this interval.
+
+1288
+01:52:13,723 --> 01:52:19,043
+We are looking for some argument for f.
+
+1289
+01:52:19,043 --> 01:52:20,823
+Ok, one over square root of two.
+
+1290
+01:52:20,823 --> 01:52:26,523
+We can obtain by substituting x is equal to pi over four here.
+
+1291
+01:52:26,703 --> 01:52:29,463
+While this is one over square root of two.
+
+1292
+01:52:29,783 --> 01:52:33,264
+Ok, that's why we need to substitute x is equal to one over four.
+
+1293
+01:52:33,423 --> 01:52:34,583
+So pi over four, sorry.
+
+1294
+01:52:35,344 --> 01:52:39,163
+When substitute x is equal to pi over four into integral function,
+
+1295
+01:52:39,344 --> 01:52:41,304
+we are going to obtain this answer.
+
+1296
+01:52:42,923 --> 01:52:45,344
+Ok, the equation.
+
+1297
+01:52:51,060 --> 01:53:16,320
+[öğrenci], f sıfır sıfır değil. Sıfırın türevi sıfır olduğundan dolayı u'dan v'ye f t d t'nin türevi neydi? f v çarpı v üstü eksi f u çarpı u üstü. u orada alt sınır. Alt sınırın türevi sıfır olduğundan orada sıfır geldi. Tamam mı Buket?
+
+1298
+01:53:16,320 --> 01:53:27,120
+Bak, ders konularının notlarını iyi çıkartın. Formül çıkartmaları öğrenirseniz bu formülleri unutmazsınız. Kafanız karışmaz. Mantık hatası yapmak ihtimali düşer.
+
+1299
+01:53:27,800 --> 01:53:34,500
+Ben hep diyorum formüllerin çıkartılışını öğrenmek konuyu bilinç anlamına geçecek.
+
+1300
+01:53:38,484 --> 01:53:46,984
+Okay, so give function f' x from 1 to x, 2t to t power dt.
+
+1301
+01:53:47,764 --> 01:53:52,504
+So, compute second order derivation value of f at 0.1.
+
+1302
+01:53:52,584 --> 01:53:55,264
+Attention here, so we need to put this condition.
+
+1303
+01:53:57,124 --> 01:54:03,923
+Okay, so let's compute second order derivation value of f at 0.1.
+
+1304
+01:54:22,996 --> 01:54:23,516
+Evet.
+
+1305
+01:54:25,516 --> 01:54:27,235
+Ara vermeyeceğiz arkadaşlar.
+
+1306
+01:54:32,275 --> 01:54:33,815
+Yeterince ara vermiş olduk zaten.
+
+1307
+01:54:36,735 --> 01:54:38,435
+Yavaş yavaş çözüyoruz.
+
+1308
+01:54:41,971 --> 01:54:45,751
+Daha doğrusu siz çözüyorsunuz. Ben izliyorum sizi.
+
+1309
+01:54:45,751 --> 01:54:48,811
+Evet.
+
+1310
+01:55:07,188 --> 01:55:12,188
+Evet. [öğrenci] 2 elen 2 bulmuş. Başka var mı 2 elen 2 bulan?
+
+1311
+01:55:38,292 --> 01:55:41,752
+güzel, siz bu işi kapatınız derler arkadaşlar.
+
+1312
+01:55:43,752 --> 01:55:52,932
+Okay, so let's do the first of all, we need to compute first order derivation of f.
+
+1313
+01:55:52,932 --> 01:56:05,312
+So, by using fundamental theorem part 1, first order derivation of f, so that's why you don't need to put a zero term.
+
+1314
+01:56:05,312 --> 01:56:10,271
+Also, in order to compute second order derivation function, we first simplify the R'
+
+1315
+01:56:10,271 --> 01:56:35,271
+x'
+
+1316
+01:56:21,652 --> 01:56:47,811
+... because this is not a usual function. By applying mutual logarithm function both sides of the left hand side, we got this derivation using the chain rule. So at right hand side, we have this expression by using the product rule for derivation. Okay? Is there an equation? Derivation of x, 1, times second term ln 2x, plus x times derivation of ln 2x, 2 over 2x. Okay?
+
+1317
+01:56:47,811 --> 01:57:04,551
+So when you substitute x, 1 into both sides of this equality, so we got this answer. So attention, do not make mistake. We have this. Okay? Now, so let's compute this problem.
+
+1318
+01:57:06,292 --> 01:57:16,511
+f of x is equal to sin x minus definite integration of 1 over t cube plus 8 from 0 to sin x.
+
+1319
+01:57:16,511 --> 01:57:23,712
+Your goal is equal to sin x. Your goal is to compute f prime of pi and f of pi.
+
+1320
+01:57:23,712 --> 01:57:23,731
+Your goal is to compute f prime of pi and f of pi.
+
+1321
+01:57:31,028 --> 01:57:35,068
+Okay, can you see this question?
+
+1322
+01:58:05,908 --> 01:58:06,548
+ok.
+
+1323
+01:58:10,996 --> 01:58:12,716
+1 over 8
+
+1324
+01:58:12,716 --> 01:58:13,775
+Good
+
+1325
+01:58:13,775 --> 01:58:15,475
+Let's wait
+
+1326
+01:58:15,475 --> 01:58:19,016
+For a minute
+
+1327
+01:58:26,644 --> 01:58:28,083
+Buldu mu herkes arkadaşlar?
+
+1328
+01:58:30,284 --> 01:58:35,463
+Birinci maddeyi 1 bölü 8a, b'yi de 1 olarak, eksi 1 olarak bulmuşlar.
+
+1329
+01:58:36,384 --> 01:58:39,184
+Evet, herkes buldu mu? 1 bölü 8'e eksi 1'i.
+
+1330
+01:58:40,963 --> 01:58:42,904
+Belki doğru değildir onlar, bilmiyoruz. Evet.
+
+1331
+01:59:14,931 --> 01:59:19,011
+Okay, let's see solution.
+
+1332
+01:59:20,771 --> 01:59:27,431
+So f of pi, so we directly substitute pi x pi into rule of f of x,
+
+1333
+01:59:28,231 --> 01:59:30,051
+cosine pi minus 1.
+
+1334
+01:59:30,051 --> 01:59:36,051
+So when you substitute pi into upper bound of integral,
+
+1335
+01:59:36,931 --> 01:59:41,952
+sine pi is 0 and lower bound is also 0.
+
+1336
+01:59:41,952 --> 01:59:48,032
+By the property of definite integration from a to a definite integration 0.
+
+1337
+01:59:48,532 --> 01:59:53,331
+Okay, as for the value of f at the point pi is minus 1,
+
+1338
+01:59:53,771 --> 01:59:56,692
+let's compute f prime of pi.
+
+1339
+01:59:56,692 --> 02:00:00,591
+So for this, we need to compute first order derivation function,
+
+1340
+02:00:01,152 --> 02:00:05,871
+derivation of cosine x minus sine x,
+
+1341
+02:00:06,331 --> 02:00:09,911
+and derivation of this term obtained by definite integration
+
+1342
+02:00:09,911 --> 02:00:11,652
+can be obtained by using
+
+1343
+02:00:11,652 --> 02:00:14,891
+generational fundamental theorem part 1,
+
+1344
+02:00:15,051 --> 02:00:18,291
+derivation of upper bound cosine x here,
+
+1345
+02:00:18,992 --> 02:00:24,072
+and we just substitute sine x into derivation function.
+
+1346
+02:00:24,331 --> 02:00:25,311
+We have this.
+
+1347
+02:00:26,171 --> 02:00:31,911
+Okay, now when we substitute x pi into this derivation function,
+
+1348
+02:00:31,911 --> 02:00:34,992
+we got 1 over 8.
+
+1349
+02:00:36,731 --> 02:00:39,731
+Is there any question about this solution?
+
+1350
+02:00:42,371 --> 02:00:45,511
+So if you don't have an equation, let's see next question.
+
+1351
+02:00:46,371 --> 02:00:48,652
+Okay, so did we solve this problem before?
+
+1352
+02:00:48,971 --> 02:00:50,572
+So this question is very similar to me.
+
+1353
+02:00:50,572 --> 02:00:52,311
+Okay, so very...
+
+1354
+02:00:52,311 --> 02:00:52,572
+Thank you.
+
+1355
+02:00:57,876 --> 02:01:04,876
+Evet, bu, x'e değerlerden, ve x'e değerlerden, ve x'e değerlerden,
+
+1356
+02:01:04,876 --> 02:01:09,876
+bu, yöntemde, bu, yöntemde, bu, yöntemde, bu, yöntemde, bu, yöntemde,
+
+1357
+02:01:09,876 --> 02:01:14,876
+bu, yöntemde, bu, yöntemde, bu, yöntemde, bu, yöntemde, bu, yöntemde, bu, yöntemde,
+
+1358
+02:01:14,876 --> 02:01:26,796
+Evet, bu, yöntemde, bu, yöntemde, bu, yöntemde, bu, yöntemde, bu, yöntemde, bu, yöntemde, bu, yöntemde, bu, yöntemde, bu, yöntemde, bu, yöntemde, bu, yöntemde, bu, yöntemde, bu, yöntemde, bu, yöntemde, bu, yöntemde, bu, yöntemde, bu, yöntemde, bu, yöntemde, bu, yöntemde, bu, yöntemde, bu, yöntemde, bu, yöntemde, bu, yöntemde, bu, yöntemde, bu, yöntemde, bu, yöntemde, bu, yöntemde, bu, yönt
+
+1359
+02:01:40,340 --> 02:01:40,840
+Evet.
+
+1360
+02:01:46,195 --> 02:01:47,175
+Kutluyorum cevabınızı.
+
+1361
+02:01:58,323 --> 02:02:15,283
+Yok, gönderme şimdi [öğrenci]. Herkes bir busun bakayım. Herkes gerçekten çözebiliyor mu? Bu temel teoremi anlamış mı? Benim tahminim en az 3 tane, 2-3 tane soru gelecek bu temel teoremle alakalı. En az 2-3 tane soru bekliyorum.
+
+1362
+02:02:18,868 --> 02:02:25,208
+Herkesin öğrenmiş olması lazım. Bu temel teoremin. Temel teoremin 1'i.
+
+1363
+02:02:48,467 --> 02:02:48,967
+Evet.
+
+1364
+02:02:55,060 --> 02:02:56,780
+Buldu mu herkes?
+
+1365
+02:03:42,804 --> 02:03:46,923
+Okay, let's see the solution.
+
+1366
+02:03:47,923 --> 02:03:56,104
+Now, first of all, we need to compute first order derivation of f by the fundamental theorem part one.
+
+1367
+02:03:56,104 --> 02:04:03,923
+So we obtain first order derivation as this expression, which is not usual function.
+
+1368
+02:04:04,623 --> 02:04:11,583
+That's why we need to simplify this expression in order to compute second order derivation for this reason.
+
+1369
+02:04:11,583 --> 02:04:16,644
+So we need to apply natural logarithmic function to both sides of this equality.
+
+1370
+02:04:17,003 --> 02:04:18,243
+We have this expression.
+
+1371
+02:04:18,364 --> 02:04:27,024
+So by the chain rule, so we have derivation of left hand side as this expression.
+
+1372
+02:04:27,423 --> 02:04:34,463
+And by the product rule for derivation, so we have derivation of right hand side as this expression.
+
+1373
+02:04:34,923 --> 02:04:41,564
+Okay, the derivation of sine x cosine x times second term plus the first term.
+
+1374
+02:04:41,583 --> 02:04:49,644
+sine x times derivation of ln x squared plus 9 is given by the expression.
+
+1375
+02:04:49,864 --> 02:05:01,444
+Okay, now, so when you substitute, okay, x0, you don't need to, you don't need to express double prime, f double prime x in terms of x.
+
+1376
+02:05:01,444 --> 02:05:07,904
+So you can directly substitute x0 into both sides of this expression.
+
+1377
+02:05:07,904 --> 02:05:12,503
+So by the substitution of x0 directly into this expression.
+
+1378
+02:05:12,884 --> 02:05:18,423
+So you are going to obtain f double prime 0 as ln 9.
+
+1379
+02:05:18,423 --> 02:05:20,243
+Okay, is there an equation?
+
+1380
+02:05:20,243 --> 02:05:47,304
+So if there is an equation, if there is an equation, if there is an equation, if there is an equation, if there is an equation, if there is an equation, if there is an equation, if there is an equation, if there is an equation, if there is an equation, if there is an equation, if there is an equation, if there is an equation, if there is an equation, if there is an equation, if there is an equation, if there is an equation, if there is an equation, if there is an equation, if there is an equation, if there is an equation, if there is an equation, if there is an equation, if there is an equation, if there is an equation, if there is an equation, if there is an equation, if there is an equation, if there is an equation, if there is an equation, if there is an equation, if there is an equation, if there is an equation, if there is an equation, if there is an equation, if there is an equation, if there is an
+
+1381
+02:05:53,652 --> 02:06:10,212
+So in this question, so in fact this is the question of classical type exam, but in the test exam, okay, they can ask you this.
+
+1382
+02:06:10,212 --> 02:06:26,511
+So find out, for example, find out, so let me write the upper Riemann sum of f of x is equal to x cubed over the interval 0, 1, okay.
+
+1383
+02:06:27,271 --> 02:06:38,192
+Find out the upper Riemann sum of x cubed over the x0, x1, okay, interval.
+
+1384
+02:06:40,212 --> 02:06:52,391
+Now, so in order to compute upper Riemann sum, so if you sketch this graph, I couldn't sketch rectangular regions here because I don't have pan, I have mouse here.
+
+1385
+02:06:52,391 --> 02:07:06,891
+So in order to compute Riemann sum, we need to divide our intervals on which we study into subintervals where each subinterval has the same length.
+
+1386
+02:07:06,891 --> 02:07:15,131
+So b minus a over n, so a is 0, b is 1, so recall those popular formula, okay.
+
+1387
+02:07:15,591 --> 02:07:19,731
+Now, each subinterval has this length, 1 over n.
+
+1388
+02:07:20,532 --> 02:07:32,152
+So now, so we choose, we take n plus 1 point from this interval, so each point xk, let's say this is ci or xk, doesn't matter, okay.
+
+1389
+02:07:32,152 --> 02:07:40,692
+So we have this ci given by this, okay, in terms of a and b and delta x.
+
+1390
+02:07:41,152 --> 02:07:45,692
+Now, so recall the finite sum, finite sum.
+
+1391
+02:07:45,851 --> 02:07:57,792
+So Riemann sum is nothing else than finite sum obtained by addition of areas of rectangular region f of xi and delta xi.
+
+1392
+02:07:57,792 --> 02:08:02,492
+So f of xi, so f of xi, so f of x is x cubed.
+
+1393
+02:08:03,492 --> 02:08:07,492
+And delta xi is 1 over n here, okay.
+
+1394
+02:08:07,931 --> 02:08:12,872
+Now, by using the rule of f, f of xi here, and so 1 over n.
+
+1395
+02:08:12,952 --> 02:08:24,912
+Attention here, so sigma variable, summation variable is i, meaning that n is a constant with respect to i.
+
+1396
+02:08:24,912 --> 02:08:33,032
+That's why we can take out 1 over n cubed factor, okay, here, outside of the sigma notation.
+
+1397
+02:08:33,731 --> 02:08:38,971
+Now, look at the sigma notation into this addition.
+
+1398
+02:08:39,231 --> 02:08:45,572
+If you expand this cubed formula by using binomial formula, so we have this.
+
+1399
+02:08:45,572 --> 02:08:52,231
+Now, we know the formula for cube, okay, formula here, given by this.
+
+1400
+02:08:52,771 --> 02:08:57,292
+And so 3 is constant, 3 times, and we have
+
+1401
+02:08:57,292 --> 02:09:06,832
+the formula for this addition of squares of integers from 1 to n here.
+
+1402
+02:09:06,832 --> 02:09:15,971
+And also we have this addition of minus 1 n times given by minus n, okay.
+
+1403
+02:09:15,971 --> 02:09:22,652
+So this is the upper Riemann sum, as you see, depending on only n.
+
+1404
+02:09:22,652 --> 02:09:27,551
+So you don't have any constant value.
+
+1405
+02:09:28,192 --> 02:09:35,692
+But in order to compute precise result, so we need to increase the number of rectangles,
+
+1406
+02:09:35,792 --> 02:09:37,252
+the number of partitions.
+
+1407
+02:09:37,431 --> 02:09:43,412
+This means that you need to compute limit of Riemann sum as n goes to infinite.
+
+1408
+02:09:43,731 --> 02:09:47,891
+In fact, this is the definite integration of f of x.
+
+1409
+02:09:47,891 --> 02:09:51,891
+So this is 1 over 4, but in the test examples of the...
+
+1410
+02:09:53,492 --> 02:10:23,412
+x kare artı 2x, f'
+
+1411
+02:10:23,492 --> 02:10:25,792
+kullanarak çözülen farklı soru tipleri var.
+
+1412
+02:10:26,292 --> 02:10:27,652
+Onları haftaya anlatacağım.
+
+1413
+02:10:28,792 --> 02:10:30,212
+Sınavımızı söyledim mi?
+
+1414
+02:10:30,271 --> 02:10:30,891
+Ben tarihini.
+
+1415
+02:10:30,971 --> 02:10:31,872
+Herkes biliyor değil mi?
+
+1416
+02:10:32,072 --> 02:10:34,992
+Do you know the exact date of our exam?
+
+1417
+02:10:35,731 --> 02:10:36,311
+Cuma diye.
+
+1418
+02:10:36,311 --> 02:10:36,992
+Yes.
+
+1419
+02:10:38,872 --> 02:10:40,351
+25 December.
+
+1420
+02:10:41,271 --> 02:10:42,231
+Next Friday.
+
+1421
+02:10:42,731 --> 02:10:43,012
+Okay.
+
+1422
+02:10:43,132 --> 02:10:43,231
+No.
+
+1423
+02:10:43,271 --> 02:10:44,052
+Next Friday.
+
+1424
+02:10:45,231 --> 02:10:45,492
+Okay.
+
+1425
+02:10:45,572 --> 02:10:46,851
+The Friday of next week.
+
+1426
+02:10:46,992 --> 02:10:47,632
+Not this week.
+
+1427
+02:10:48,052 --> 02:10:48,271
+Okay.
+
+1428
+02:10:49,032 --> 02:10:53,351
+25 December at 16 o'clock.
+
+1429
+02:10:53,492 --> 02:10:55,692
+Afternoon at 4 o'clock.
+
+1430
+02:10:55,811 --> 02:10:56,012
+Okay.
+
+1431
+02:10:56,851 --> 02:10:58,532
+Saat 4'te diyebilir hatırlıyorum.
+
+1432
+02:10:59,152 --> 02:11:00,292
+Saat 4'te başlayacak.
+
+1433
+02:11:00,412 --> 02:11:02,271
+25 Aralık.
+
+1434
+02:11:02,412 --> 02:11:03,112
+Haftaya cuma.
+
+1435
+02:11:03,271 --> 02:11:03,872
+Bu hafta değil.
+
+1436
+02:11:04,672 --> 02:11:05,052
+Tamam mı?
+
+1437
+02:11:05,052 --> 02:11:06,391
+Haftaya yine ders işleyeceğiz.
+
+1438
+02:11:06,572 --> 02:11:07,731
+Şuanluğu yine soru çözerim.
+
+1439
+02:11:08,032 --> 02:11:10,832
+Bir saat kadar finale yönelik konu işlerim.
+
+1440
+02:11:11,612 --> 02:11:12,072
+Tamam mı?
+
+1441
+02:11:12,072 --> 02:11:25,351
+Evet.
+
+1442
+02:11:16,948 --> 02:11:46,948
+Tamam, bu konuda bir haklı bir haklı bir haklı bir haklı bir haklı bir haklı bir haklı bir haklı bir haklı bir haklı bir haklı bir haklı bir haklı bir haklı bir haklı bir haklı bir haklı bir haklı bir haklı bir haklı bir haklı bir haklı bir haklı bir haklı bir haklı bir haklı bir haklı bir haklı bir haklı bir haklı bir haklı bir haklı bir haklı bir haklı bir haklı bir haklı bir haklı bir haklı bir haklı bir haklı bir haklı bir haklı bir haklı bir haklı bir haklı bir haklı bir haklı bir haklı bir haklı bir haklı bir haklı bir haklı bir haklı bir haklı bir ha
+
+1443
+02:11:46,948 --> 02:12:16,948
+bu haklı bir haklı bir haklı bir haklı bir haklı bir haklı bir haklı bir haklı bir haklı bir haklı bir haklı bir haklı bir haklı bir haklı bir haklı bir haklı bir haklı bir haklı bir haklı bir haklı bir haklı bir haklı bir haklı bir haklı bir haklı bir haklı bir haklı bir haklı bir haklı bir haklı bir haklı bir haklı bir haklı bir haklı bir haklı bir haklı bir haklı bir haklı bir haklı bir haklı bir haklı bir haklı bir haklı bir haklı bir haklı bir haklı bir haklı bir haklı bir haklı bir haklı bir haklı bir haklı bir haklı bir haklı bir haklı bir
+
+1444
+02:12:16,948 --> 02:12:42,128
+Bunu da paylaşayım bir dakika bekleyin arkadaşlar bunu da paylaşayım belki bu yoktur Pınar hocanın ya benim avetsiz sayfanda ben hemen paylaşıyorum size bunu bir dakika paylaşalım bunu evet ok let me upload this file application file exercise file
+
+1445
+02:12:47,636 --> 02:12:48,136
+mod.
+
+1446
+02:12:53,076 --> 02:12:55,975
+do not forget to know if I'm fine.
+
+1447
+02:13:05,460 --> 02:13:08,939
+Speed of unloading is 40 kb.
+
+1448
+02:13:15,572 --> 02:13:15,931
+Evet.
+
+1449
+02:13:25,652 --> 02:13:26,332
+İmkiler.
+
+1450
+02:13:28,332 --> 02:13:29,011
+YouTube.
+
+1451
+02:13:49,876 --> 02:13:50,376
+tamam.
+
+1452
+02:13:57,203 --> 02:13:59,203
+var.
+
+1453
+02:14:18,292 --> 02:14:20,312
+Her halı sistemden düştüm arkadaşlar.
+
+1454
+02:14:23,923 --> 02:14:26,304
+dosyayı görebildiniz mi?
+
+1455
+02:14:36,500 --> 02:14:38,380
+dosya yüklenemedi galiba.
+
+1456
+02:14:39,420 --> 02:14:40,500
+Tekrardan yüklüyorum.
+
+1457
+02:14:46,068 --> 02:14:49,068
+çok güzel.
+
+1458
+02:14:58,515 --> 02:15:25,515
+Bu
+
+1459
+02:15:29,140 --> 02:15:31,140
+Dün bir farklı notion
+
+1460
+02:15:38,644 --> 02:15:44,664
+Ortalama
+
+1461
+02:15:44,664 --> 02:15:45,583
+D-F
+
+1462
+02:15:49,587 --> 02:16:00,087
+a, b, a, b, a. Bak kavramlar çok ben yok. Sakın onları birbiriyle karıştırmayın.
+
+1463
+02:16:00,967 --> 02:16:10,087
+Burada bu fonksiyonun ortalama değeri, integraller için ortalama değer uygulayın deselerdi,
+
+1464
+02:17:05,427 --> 02:17:07,788
+sürekli sistemden düşüyoruz ya.
+
+1465
+02:17:10,727 --> 02:17:13,247
+Yine sistemden düştü galiba arkadaşlar.
+
+1466
+02:17:19,252 --> 02:17:20,872
+mirakta,
+
+1467
+02:17:24,371 --> 02:17:26,391
+Niye böyle yapıyor anlamış değilim.
+
+1468
+02:17:29,971 --> 02:17:32,211
+Bir dakika arkadaşlar, tekrardan ikiyeyi.
+
+1469
+02:18:23,283 --> 02:18:25,283
+yüttpidost ya.
+
+1470
+02:19:03,156 --> 02:19:04,776
+Şu an görevli yok.
+
+1471
+02:19:05,456 --> 02:19:09,296
+Bende şu an yükleniyor gözüküyor ama tamam olmadı yüklenmesi.
+
+1472
+02:19:28,564 --> 02:19:30,363
+Merak etme, herkese yaptım.
+
+1473
+02:19:31,244 --> 02:19:32,244
+Herkese...
+
+1474
+02:19:36,531 --> 02:19:37,531
+çözüm bir şey.
+
+1475
+02:19:41,363 --> 02:19:42,043
+bekliyorum.
+
+1476
+02:19:44,384 --> 02:19:45,923
+Birka bekleyelim.
+
+1477
+02:19:47,763 --> 02:19:49,043
+Yüklemek üzere.
+
+1478
+02:21:01,907 --> 02:21:02,407
+Evet.
+
+1479
+02:21:05,407 --> 02:21:06,108
+Yüzden.
+
+1480
+02:21:19,667 --> 02:21:20,028
+negatif.
+
+1481
+02:21:26,963 --> 02:21:29,963
+Evet.
+
+1482
+02:21:29,963 --> 02:21:30,963
+Pitti.
+
+1483
+02:21:44,051 --> 02:21:47,131
+Evet. Başarılı bir şekilde gönderildi diyor.
+
+1484
+02:21:48,992 --> 02:21:50,031
+Evet. Devam edelim.
+
+1485
+02:22:02,100 --> 02:22:20,460
+Okay. So, limit values from this integral. And f of x given by this definite integration. So, your goal is to compute derivation function of f. Evet, herkesin saplasını.
+
+1486
+02:22:41,811 --> 02:22:42,691
+bekliyorum.
+
+1487
+02:22:47,572 --> 02:22:48,811
+This offline in here.
+
+1488
+02:23:11,412 --> 02:23:11,912
+Evet.
+
+1489
+02:23:13,532 --> 02:23:15,051
+Buldum herkes.
+
+1490
+02:24:35,987 --> 02:24:36,487
+ok.
+
+1491
+02:24:40,595 --> 02:24:43,636
+Let's solve together.
+
+1492
+02:24:44,575 --> 02:24:48,235
+So by using the generalization of fundamental torrent part one,
+
+1493
+02:24:48,636 --> 02:24:50,636
+so we compute this derivation.
+
+1494
+02:24:50,636 --> 02:24:54,315
+So we substitute upper bound into integral function.
+
+1495
+02:24:54,655 --> 02:25:02,376
+Here we have this expression times derivation of upper bound here minus.
+
+1496
+02:25:03,315 --> 02:25:07,636
+So we substitute lower bound into integral function.
+
+1497
+02:25:07,636 --> 02:25:15,636
+And we have this expression times derivation of lower bound here.
+
+1498
+02:25:15,636 --> 02:25:21,315
+So by simplifying this expression, so we got one.
+
+1499
+02:25:21,515 --> 02:25:25,075
+So as you see, derivation of f is one.
+
+1500
+02:25:26,555 --> 02:25:28,275
+Now, so what about this?
+
+1501
+02:25:28,835 --> 02:25:33,055
+So given f of x by this expression,
+
+1502
+02:25:33,055 --> 02:25:41,876
+one over x times from one to x, definite integration of 2t minus f prime of t dt.
+
+1503
+02:25:43,055 --> 02:25:51,415
+So compute value of derivation of f at the point one by using the Leibniz formula.
+
+1504
+02:25:51,555 --> 02:25:54,456
+Some people call generalization of,
+
+1505
+02:25:54,456 --> 02:26:00,775
+some people call fundamental theorem part one as Leibniz formula.
+
+1506
+02:26:01,415 --> 02:26:05,735
+Okay, so but generally I prefer to use fundamental theorem part one.
+
+1507
+02:26:07,456 --> 02:26:14,075
+Leibniz kuralı formülü yerine ben arkadaşlar temel teorem bir diye kullanıyorum.
+
+1508
+02:26:14,456 --> 02:26:18,456
+Leibniz yerine temel teorem bir kullanıyorum.
+
+1509
+02:26:18,456 --> 02:26:19,235
+Evet.
+
+1510
+02:26:20,935 --> 02:26:23,115
+Bulun bakalım f üstü birin değeri nedir?
+
+1511
+02:26:23,115 --> 02:26:53,115
+Evet.
+
+1512
+02:26:40,308 --> 02:26:45,308
+Bu tarz tarz tarzları görme ihtimaliniz yüksek arkadaşlar sınavda. Güzel bir soruya...
+
+1513
+02:27:05,843 --> 02:27:07,843
+Okay, let's see its solution.
+
+1514
+02:27:07,843 --> 02:27:10,843
+So in order to compute its derivation,
+
+1515
+02:27:10,843 --> 02:27:12,843
+we need to use product rule for derivation.
+
+1516
+02:27:12,843 --> 02:27:15,843
+Derivation of 1 over x here.
+
+1517
+02:27:15,843 --> 02:27:21,843
+Now, term expression obtained by definite integration here
+
+1518
+02:27:21,843 --> 02:27:25,843
+plus the first term 1 over x here
+
+1519
+02:27:25,843 --> 02:27:29,843
+times derivation of this expression obtained by definite.
+
+1520
+02:27:29,843 --> 02:27:34,843
+That's why we need to write 1
+
+1521
+02:27:34,843 --> 02:27:39,843
+So we just substitute x into integral function
+
+1522
+02:27:39,843 --> 02:27:43,843
+and we have this expression
+
+1523
+02:27:43,843 --> 02:27:46,843
+minus f prime derivation of 1 is 0.
+
+1524
+02:27:46,843 --> 02:27:48,843
+That's why we have 0 term here.
+
+1525
+02:27:48,843 --> 02:27:49,843
+We don't need to write here.
+
+1526
+02:27:49,843 --> 02:27:57,843
+Now, if you substitute 1 into derivation function,
+
+1527
+02:27:57,843 --> 02:28:00,843
+so we have this from 1 to 1,
+
+1528
+02:28:00,843 --> 02:28:03,843
+integration is 0 because of the definite integration.
+
+1529
+02:28:03,843 --> 02:28:05,843
+And so we have this.
+
+1530
+02:28:05,843 --> 02:28:08,843
+If you simplify this, if you show this quality,
+
+1531
+02:28:08,843 --> 02:28:10,843
+we have a prime of 1 as 1.
+
+1532
+02:28:10,843 --> 02:28:12,843
+Okay.
+
+1533
+02:28:12,843 --> 02:28:13,843
+Buldun mu herkes?
+
+1534
+02:28:13,843 --> 02:28:15,843
+F üstü 1'i 1 olarak.
+
+1535
+02:28:15,843 --> 02:28:41,843
+We have this.
+
+1536
+02:28:21,780 --> 02:28:24,260
+yok galiba, gayet güzel sorular.
+
+1537
+02:28:26,180 --> 02:28:26,620
+Okey.
+
+1538
+02:28:30,611 --> 02:28:49,091
+Let's solve this problem. Let me make it bigger. Can you see this equation? Now, for x is equal, for x is bigger than or equal to 1, f of x given by definite integration of t minus 1 to t from 2 to x plus 1.
+
+1539
+02:28:49,091 --> 02:28:52,431
+So, compute the value of second order derivation at the point 1.
+
+1540
+02:29:00,404 --> 02:29:10,684
+Evet, bekliyorum arkadaşlar. Bu tarz soruları da görme ihtimaliniz yüksek. Bu tarz sorular da zaten birkaç tane çözmüştük buna benzer soru.
+
+1541
+02:29:11,644 --> 02:29:16,344
+Gördüğünüz gibi bunlar arkadaşlar test sınavında çıkabilecek soru tazlarıdır diye düşünüyorum.
+
+1542
+02:29:21,108 --> 02:29:21,688
+Evet.
+
+1543
+02:30:04,659 --> 02:30:05,819
+Buldunuz mu gençler?
+
+1544
+02:30:09,523 --> 02:30:11,623
+Okay, let's see its solution.
+
+1545
+02:30:12,543 --> 02:30:15,163
+So derivation, first order derivation of f.
+
+1546
+02:30:15,603 --> 02:30:22,983
+So by the fundamental part one, we substitute x plus one integral function.
+
+1547
+02:30:23,983 --> 02:30:25,463
+X plus one is one.
+
+1548
+02:30:25,763 --> 02:30:30,663
+We have this as derivation of f.
+
+1549
+02:30:31,203 --> 02:30:36,283
+Now by a planation over a function to both sides of this equality.
+
+1550
+02:30:39,523 --> 02:30:45,863
+We have this expression, this equality.
+
+1551
+02:30:47,863 --> 02:30:52,884
+By the chain rule, so we have derivation by product group for derivation.
+
+1552
+02:30:52,884 --> 02:31:02,783
+Okay, now the derivation of x plus one, one times second term x plus x plus one times derivation of ln x, one over x.
+
+1553
+02:31:02,783 --> 02:31:15,224
+When you solve x plus one into both sides of this equality, we are going to obtain this.
+
+1554
+02:31:15,224 --> 02:31:21,183
+f prime of one here, f prime of one is two.
+
+1555
+02:31:21,183 --> 02:31:22,923
+Okay.
+
+1556
+02:31:24,663 --> 02:31:25,983
+I think we did.
+
+1557
+02:31:26,463 --> 02:31:28,003
+Okay, so let's solve this problem.
+
+1558
+02:31:29,363 --> 02:31:33,763
+So this is the example equation, final example equation of this year.
+
+1559
+02:31:33,763 --> 02:31:43,384
+Okay, so given some constant value, positive constant value, and we have this equality.
+
+1560
+02:31:44,384 --> 02:31:58,123
+Plus from a to x, definite integration of f over t squared dt is equal to two times square root of x.
+
+1561
+02:31:58,123 --> 02:32:00,583
+Okay.
+
+1562
+02:32:00,583 --> 02:32:10,283
+Now, find out the rule of f.
+
+1563
+02:32:10,283 --> 02:32:10,583
+Okay.
+
+1564
+02:32:10,583 --> 02:32:12,123
+Now, find out the rule of f.
+
+1565
+02:32:12,123 --> 02:32:13,123
+Okay.
+
+1566
+02:32:13,123 --> 02:32:18,123
+Now, find out the rule of f.
+
+1567
+02:32:18,123 --> 02:32:19,123
+Okay.
+
+1568
+02:32:19,123 --> 02:32:23,123
+Now, find out the rule of f.
+
+1569
+02:32:23,123 --> 02:32:24,123
+Okay.
+
+1570
+02:32:24,123 --> 02:32:25,123
+Now, find out the rule of f.
+
+1571
+02:32:25,123 --> 02:32:26,123
+Okay.
+
+1572
+02:32:26,123 --> 02:32:27,123
+Now, find out the rule of f.
+
+1573
+02:32:17,459 --> 02:32:21,159
+function f of x and the value of x.
+
+1574
+02:32:21,159 --> 02:32:22,359
+These are questions.
+
+1575
+02:32:23,359 --> 02:32:26,359
+You may see such question in the upcoming exam.
+
+1576
+02:32:33,139 --> 02:32:42,399
+f'nin kuralını, fx'i ve a'nın değerini bulacaksınız. fx nedir, a'nın değeri nedir tarzında soru. Güzel bir soru.
+
+1577
+02:32:49,203 --> 02:32:50,083
+bekliyorum.
+
+1578
+02:32:58,004 --> 02:32:59,124
+çözümünüzü
+
+1579
+02:32:59,124 --> 02:33:01,724
+çözmenizi
+
+1580
+02:33:39,796 --> 02:33:40,376
+Evet.
+
+1581
+02:33:41,056 --> 02:33:41,476
+Var mı?
+
+1582
+02:33:41,476 --> 02:33:41,636
+Evet.
+
+1583
+02:34:08,404 --> 02:34:10,404
+Okay, last thing solution.
+
+1584
+02:34:13,123 --> 02:34:20,804
+So, you know, the compute f of x, so we need to derivate both sides of this equality.
+
+1585
+02:34:20,804 --> 02:34:26,404
+Derivation, first of all, will be right equality again. So if you derivate both sides of this equality,
+
+1586
+02:34:31,123 --> 02:34:44,043
+Equality derivation of 6 is 0. Derivation of this term obtained by different integration can be obtained by applying to part 1.
+
+1587
+02:34:44,443 --> 02:34:49,804
+So derivation of left hand side f of x over x squared and derivation of right of x.
+
+1588
+02:34:49,804 --> 02:35:01,404
+Okay. Now, in order to compute the value of a, so we substitute x a into both sides of this equality.
+
+1589
+02:35:03,943 --> 02:35:14,804
+From a, a integration is 0. So this term is 0. We have 6 term here, 6. And at right hand side, we have 2 times squared root of a.
+
+1590
+02:35:14,804 --> 02:35:19,484
+when we install this equality. So we have this. So a must be 9. Attention.
+
+1591
+02:35:21,003 --> 02:35:25,283
+Near and must be positive. Is there any question about this solution?
+
+1592
+02:35:27,644 --> 02:35:29,564
+Soru-solan var mı değerli arkadaşlar?
+
+1593
+02:35:36,884 --> 02:35:40,763
+Sorunuz yoksa çekinmeyin. Sorunuz varsa söyleyin. Anlatalım.
+
+1594
+02:35:41,623 --> 02:35:42,603
+Kafanızda bir şey.
+
+1595
+02:35:43,463 --> 02:35:44,424
+Bunu çözmüş müydük?
+
+1596
+02:35:44,543 --> 02:35:46,203
+Did we solve this problem before?
+
+1597
+02:35:47,404 --> 02:35:50,263
+I think we solved this problem before.
+
+1598
+02:35:53,263 --> 02:35:55,523
+Hatırlayan var mı gençler? Bunu çözdük diye hatırlıyorum.
+
+1599
+02:35:57,523 --> 02:35:58,683
+Evet, bunu çözmüştük.
+
+1600
+02:35:59,804 --> 02:36:01,703
+I think we solved this problem before.
+
+1601
+02:36:01,703 --> 02:36:03,703
+Evet, bu sorunuz var.
+
+1602
+02:36:03,703 --> 02:38:28,703
+Bu sorunuz var.
+
+1603
+02:39:19,603 --> 02:39:35,644
+Now, so we have minus, so I look at here, so 0 is an inflection point, 0 is contained by domain of f and second order derivation change its sign, okay, at the point 0, that's why 0 is an inflection point.
+
+1604
+02:39:35,644 --> 02:40:00,724
+Now, recall the definition of inflection point, okay, so look at here, so y is, according to this sign table, y is decreasing as concave down from minus infinite to minus 1 here, so from minus infinite to minus 1, y is decreasing as concave down, look at here.
+
+1605
+02:40:00,724 --> 02:40:22,884
+So, let me comment on this graph, since minus 1, x minus 1 is a vertical asymptote from left-hand side, at the left-hand side of minus 1, somewhere here, so the graph must be concave down, otherwise, x minus 1 cannot be vertical line.
+
+1606
+02:40:22,884 --> 02:40:33,903
+Dikkat edin arkadaşlar, Türkçe açıklıyor, x eşit direksi 1'in hemen sol tarafında fonksiyonun grafiği aşağı konkav, aşağı bükümlü olmak zorunda.
+
+1607
+02:40:34,443 --> 02:40:36,863
+Kabul edelim ki yukarı bükümlü olsun.
+
+1608
+02:40:37,323 --> 02:40:45,343
+Bu durumda bir bükümlü olursa, şöyle bir yukarı bükümlü grafik çizerseniz, fonksiyonun grafiği x eşit direksi 1'i kesecektir.
+
+1609
+02:40:45,343 --> 02:40:49,103
+Bu da x eşit direksi 1'in ne olmasıyla çelişir?
+
+1610
+02:40:49,523 --> 02:40:51,463
+Dike asimtot olmasıyla çelişir.
+
+1611
+02:40:51,463 --> 02:40:52,863
+Bakın dikkat edebiliyor musunuz?
+
+1612
+02:40:53,563 --> 02:41:02,943
+Ben buradan asimtot olma durumunu bulundurarak fonksiyonun x eşit direksi 1'in hemen civarında aşağı konkav olması gerektiğini görebiliyorum.
+
+1613
+02:41:03,083 --> 02:41:14,783
+Ben her şekilde x eşit direksi 1'e sağdan yaklaşırken fx değeri artı sonsuza gittiğinden x eşit direksi 1'in hemen sağında fonksiyonun grafiğinin yukarı konkav olması gerektiğini görüyorum.
+
+1614
+02:41:14,783 --> 02:41:16,443
+Tamam mı? Dikkat edin.
+
+1615
+02:41:16,763 --> 02:41:20,183
+0 burada bir büküm noktasıdır.
+
+1616
+02:41:20,283 --> 02:41:20,483
+Neden?
+
+1617
+02:41:20,923 --> 02:41:25,644
+Çünkü 0'ın hemen sağında ikinci türev negatif.
+
+1618
+02:41:25,804 --> 02:41:28,224
+Hemen solunda ikinci türev pozitif.
+
+1619
+02:41:28,923 --> 02:41:31,783
+Dolayısıyla 0 bir büküm noktasıdır.
+
+1620
+02:41:32,263 --> 02:41:37,103
+1'in hemen solunda, şöyle çizelim grafiği.
+
+1621
+02:41:37,103 --> 02:41:40,144
+Grafik aşağı bükümlü olmak zorunda.
+
+1622
+02:41:40,323 --> 02:41:44,423
+Çünkü 1, x eşit direksi 1 doğrusu neydi arkadaşlar?
+
+1623
+02:41:45,103 --> 02:41:48,483
+Sol taraftan dikkat edin.
+
+1624
+02:41:48,724 --> 02:41:49,103
+Dikkat edin.
+
+1625
+02:41:49,103 --> 02:41:55,703
+Eğer ben x eşit direksi 1'in solunda fonksiyonun grafiğini yukarı bükümünü kabul etsem,
+
+1626
+02:41:56,083 --> 02:41:59,263
+grafik x eşit direksi 1 dikey asimtotu keser.
+
+1627
+02:41:59,363 --> 02:42:02,263
+Bu da x eşit direksi 1'in dikey asimtotu olmasıyla çelişir.
+
+1628
+02:42:02,543 --> 02:42:03,023
+Gördünüz mü?
+
+1629
+02:42:03,543 --> 02:42:08,304
+x eşittir 1'in hemen sağında grafik yukarı bükümlü olmak zorunda.
+
+1630
+02:42:08,763 --> 02:42:12,384
+Aksi durumda grafik x eşittir 1'i keser.
+
+1631
+02:42:12,483 --> 02:42:13,743
+Böylelikle x eşittir 1.
+
+1632
+02:42:14,144 --> 02:42:14,483
+Ne olur?
+
+1633
+02:42:14,483 --> 02:42:15,644
+Ne olur arkadaşlar?
+
+1634
+02:42:15,923 --> 02:42:17,023
+Dikasimtot olamaz.
+
+1635
+02:42:17,523 --> 02:42:18,063
+Dikkat edin.
+
+1636
+02:42:18,903 --> 02:42:23,783
+Yani asimtotluk durumunu göz önünde bulundurarak ben konu yiyebiliyorum.
+
+1637
+02:42:24,163 --> 02:42:24,804
+Tamam mı?
+
+1638
+02:42:24,903 --> 02:42:26,083
+Var mı sorusu olan burada?
+
+1639
+02:42:27,043 --> 02:42:28,463
+Anlaşmanın bir yer var mı gençler?
+
+1640
+02:42:28,463 --> 02:42:32,923
+Grafik yorumlamayı öğrendiniz galiba.
+
+1641
+02:42:33,423 --> 02:42:36,203
+Yarın çıkmış soruları çözeceğiz.
+
+1642
+02:42:36,884 --> 02:42:40,343
+Orada daha güzel sorularla karşılaşacaksınız arkadaşlar.
+
+1643
+02:42:40,963 --> 02:42:42,144
+Bugünlük bu kadar yeter.
+
+1644
+02:42:42,283 --> 02:42:42,863
+Yorulduk.
+
+1645
+02:42:44,003 --> 02:42:44,943
+Yarın görüşmek üzere.
+
+1646
+02:42:45,023 --> 02:42:47,783
+Eğer sorunuz yoksa dersi oturumu kapatıyorum.
+
+1647
+02:42:47,783 --> 02:42:51,563
+Hocam benim sınavlar hakkında bir sorum vardı da.
+
+1648
+02:42:53,703 --> 02:42:54,203
+Söyle.
+
+1649
+02:42:57,203 --> 02:42:59,283
+Sınavlarda sorulara geri dönebiliyor muyuz?
+
+1650
+02:43:02,323 --> 02:43:05,023
+O işte son anda değişebilir.
+
+1651
+02:43:06,304 --> 02:43:07,224
+Dönebilir misin?
+
+1652
+02:43:07,323 --> 02:43:08,043
+Dönemez misin?
+
+1653
+02:43:08,043 --> 02:43:35,043
+Dönebilir misin?
+
+1654
+02:43:09,268 --> 02:43:26,747
+Sen boşver, sen dersi öğren, çalış. Hangi tip soru gelirse gelsin, ne tarda gelirse gelsin, sınav nasıl olursa olsun yaparsınız diye düşünüyorum. Tamam mı? Evet. Başka sorunuz yoksa kapatıyorum genel. 20 soru olacak muhtemelen.
+
+1655
+02:43:26,747 --> 02:43:32,028
+So, example, possibly contain will contain 20 equations. Okay?
+
+1656
+02:43:35,603 --> 02:43:36,603
+Evet.
+
+1657
+02:43:36,603 --> 02:43:37,603
+Okay.
+
+1658
+02:43:37,603 --> 02:43:38,603
+See you tomorrow.
+
+1659
+02:43:38,603 --> 02:43:43,603
+If you don't have any question, so I finish this meeting.
+
+1660
+02:43:48,275 --> 02:43:53,316
+ve last topic is the reduction formula for int...
+
+1661
+02:44:00,819 --> 02:44:06,219
+So in order to learn the exam, just check out Bologna.
+
+1662
+02:44:11,123 --> 02:44:12,123
+ok, see you tomorrow.

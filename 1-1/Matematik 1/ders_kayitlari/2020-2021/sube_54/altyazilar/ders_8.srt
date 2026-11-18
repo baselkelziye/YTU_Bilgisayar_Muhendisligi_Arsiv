@@ -1,0 +1,7183 @@
+1
+00:00:02,931 --> 00:00:04,932
+Evet, merhaba kreştar.
+
+2
+00:00:13,300 --> 00:00:14,720
+Sesim geliyor mu gençler?
+
+3
+00:00:16,719 --> 00:00:17,679
+Geliyor hocam.
+
+4
+00:00:21,140 --> 00:00:45,299
+Evet. Bugün biraz hızlı işleyelim dersimizi. Geçen hafta dersimiz olmadı. 5 saatimiz gitti. Bu hafta biraz asılacağız diğer grubu yakalamak için. Bir an önce bitirelim konularımızı. Ondan sonra soru çözmek istiyorum. Sınav öncesi. Genel sorular.
+
+5
+00:00:45,299 --> 00:00:51,320
+Evet. Birkaç dakika bekleyelim. Şu an katılım az 46 kişi gözüküyor.
+
+6
+00:01:25,203 --> 00:01:27,303
+Şu an paylaşımı görüyorsunuz değil mi arkadaşlar?
+
+7
+00:01:33,971 --> 00:01:36,652
+ben size lineerleştirmeden filan bahsetmiş miydim?
+
+8
+00:01:37,751 --> 00:01:39,571
+lineerleştirmeden bahsetmiş miydim?
+
+9
+00:01:39,891 --> 00:01:41,731
+diferansiyeller, lineerleştirme.
+
+10
+00:01:46,388 --> 00:01:47,688
+Yaklaşık değer bulma.
+
+11
+00:01:48,928 --> 00:01:50,908
+Hayır hocam, bahsetmediniz.
+
+12
+00:01:51,168 --> 00:01:53,548
+Bahsetmedik mi o? Biz baya geri kalmışız ya.
+
+13
+00:01:56,568 --> 00:02:00,948
+Hocam, biz en son ki dersimizde kapalı fonksiyonların türevini işlemiştik galiba.
+
+14
+00:02:01,487 --> 00:02:06,528
+Tamam. Biz baya geri kalmışız. O zaman biraz gaza basmamız lazım.
+
+15
+00:02:13,651 --> 00:02:14,131
+Evet.
+
+16
+00:02:17,411 --> 00:02:19,071
+Zincir kuralını anlatmıştık.
+
+17
+00:02:19,151 --> 00:02:20,951
+Kapalı fonksiyon türevini anlatmıştık.
+
+18
+00:02:21,031 --> 00:02:21,271
+Değil mi?
+
+19
+00:02:22,491 --> 00:02:25,012
+Evet. Tamam. Kapalı fonksiyon türevini anlattıysak
+
+20
+00:02:25,012 --> 00:02:27,411
+sıkıntı yok. Şimdi linearleştirmeden
+
+21
+00:02:27,411 --> 00:02:28,871
+kaldığımız yerden devam edelim.
+
+22
+00:02:30,191 --> 00:02:31,291
+Okay. What does it mean?
+
+23
+00:02:31,371 --> 00:02:32,031
+Linearization.
+
+24
+00:02:33,072 --> 00:02:35,131
+So as you know, once upon a time
+
+25
+00:02:35,131 --> 00:02:36,791
+most of people used
+
+26
+00:02:36,791 --> 00:02:38,551
+to think that
+
+27
+00:02:38,551 --> 00:02:40,051
+our
+
+28
+00:02:40,051 --> 00:02:43,271
+Earth's surface is plain
+
+29
+00:02:43,271 --> 00:02:45,351
+in fact there is some
+
+30
+00:02:45,351 --> 00:02:47,211
+mathematical reason behind this
+
+31
+00:02:47,211 --> 00:02:48,271
+misconception.
+
+32
+00:02:49,931 --> 00:02:51,671
+So this mathematical reason
+
+33
+00:02:51,671 --> 00:02:53,711
+is called linearization.
+
+34
+00:02:54,171 --> 00:02:55,491
+Okay. Now the
+
+35
+00:02:55,491 --> 00:02:57,132
+idea is simple.
+
+36
+00:02:57,931 --> 00:02:59,711
+So if you close
+
+37
+00:02:59,711 --> 00:03:01,251
+if you close
+
+38
+00:03:01,251 --> 00:03:03,491
+sufficiently to some
+
+39
+00:03:03,491 --> 00:03:05,572
+nonlinear surface or
+
+40
+00:03:05,572 --> 00:03:07,711
+nonlinear graph, okay, that
+
+41
+00:03:07,711 --> 00:03:09,891
+surface looks like some
+
+42
+00:03:09,891 --> 00:03:11,831
+straight line or some plane.
+
+43
+00:03:11,831 --> 00:03:13,631
+Okay. So this is the
+
+44
+00:03:13,631 --> 00:03:15,811
+reason behind
+
+45
+00:03:15,811 --> 00:03:16,911
+this misconception.
+
+46
+00:03:17,591 --> 00:03:18,651
+So let me talk about
+
+47
+00:03:18,651 --> 00:03:19,391
+this misconception.
+
+48
+00:03:19,851 --> 00:03:20,731
+Stop this share.
+
+49
+00:03:20,891 --> 00:03:21,851
+Okay. Let me share
+
+50
+00:03:21,851 --> 00:03:24,311
+some white
+
+51
+00:03:24,311 --> 00:03:25,891
+board.
+
+52
+00:03:26,991 --> 00:03:28,031
+So let's
+
+53
+00:03:28,031 --> 00:03:28,911
+recall
+
+54
+00:03:28,911 --> 00:03:33,991
+definition of derivation.
+
+55
+00:03:33,991 --> 00:03:36,351
+So this is the
+
+56
+00:03:36,351 --> 00:03:38,671
+slope of tangent line.
+
+57
+00:03:38,671 --> 00:03:42,632
+So this is the slope of tangent line.
+
+58
+00:03:42,632 --> 00:03:43,371
+This is the slope of tangent line
+
+59
+00:03:43,371 --> 00:03:45,871
+of graph
+
+60
+00:03:45,871 --> 00:03:47,771
+at the point
+
+61
+00:03:47,771 --> 00:03:50,572
+A.
+
+62
+00:03:50,572 --> 00:03:54,252
+Okay.
+
+63
+00:03:54,252 --> 00:03:54,851
+Let me sketch
+
+64
+00:03:54,851 --> 00:03:56,512
+some graph here.
+
+65
+00:03:58,291 --> 00:03:59,271
+Let's suppose that
+
+66
+00:03:59,271 --> 00:04:00,051
+this is the graph
+
+67
+00:04:00,051 --> 00:04:01,111
+of our function.
+
+68
+00:04:02,331 --> 00:04:02,871
+Let's say
+
+69
+00:04:02,871 --> 00:04:03,632
+this is y
+
+70
+00:04:03,632 --> 00:04:04,431
+f of x.
+
+71
+00:04:04,551 --> 00:04:05,171
+As you see,
+
+72
+00:04:05,311 --> 00:04:05,931
+this graph
+
+73
+00:04:05,931 --> 00:04:06,751
+is not
+
+74
+00:04:06,751 --> 00:04:07,851
+straight line.
+
+75
+00:04:08,611 --> 00:04:08,751
+Okay.
+
+76
+00:04:08,851 --> 00:04:09,132
+But
+
+77
+00:04:09,132 --> 00:04:11,891
+so let me use
+
+78
+00:04:11,891 --> 00:04:13,231
+different color.
+
+79
+00:04:13,231 --> 00:04:13,331
+color.
+
+80
+00:04:20,052 --> 00:04:22,052
+Atençin, bu isimdiktenin.
+
+81
+00:04:22,052 --> 00:04:24,052
+So, this is the point.
+
+82
+00:04:27,052 --> 00:04:28,052
+X a.
+
+83
+00:04:28,052 --> 00:04:35,052
+Now, so, this limit, this symbol means this X is continuously approach a.
+
+84
+00:04:35,052 --> 00:04:41,052
+But, so, we ignore, we may ignore this limit process.
+
+85
+00:04:43,052 --> 00:04:50,052
+A prime of a, but in that case we remove this equality symbol, we replace this equality symbol.
+
+86
+00:04:50,052 --> 00:04:53,052
+With this approximation symbol.
+
+87
+00:04:53,052 --> 00:05:02,052
+So, f of X minus f of a over X minus a.
+
+88
+00:05:02,052 --> 00:05:17,052
+So, we can write this approximation relation whenever X values are sufficiently close a.
+
+89
+00:05:17,052 --> 00:05:23,052
+Okay, in fact, this is the mathematical reason behind that misconception.
+
+90
+00:05:23,052 --> 00:05:29,052
+So, if you manipulate on this, if you manipulate on this approximation relation.
+
+91
+00:05:29,052 --> 00:05:39,052
+So, we can write this f of X approximates, not equality, this approximates.
+
+92
+00:05:39,052 --> 00:05:42,052
+This symbol means approximate.
+
+93
+00:05:42,052 --> 00:05:43,052
+Approximates.
+
+94
+00:05:43,052 --> 00:05:45,052
+f of a.
+
+95
+00:05:45,052 --> 00:05:50,052
+Plus, f prime of a.
+
+96
+00:05:50,052 --> 00:05:51,052
+Times.
+
+97
+00:05:51,052 --> 00:05:53,052
+X minus a.
+
+98
+00:05:53,052 --> 00:05:58,052
+Okay, we can, we can talk about this approximation relation.
+
+99
+00:05:58,052 --> 00:06:02,052
+Whenever X values are chosen.
+
+100
+00:06:02,052 --> 00:06:05,052
+As sufficiently close values.
+
+101
+00:06:05,052 --> 00:06:06,052
+Okay, to a.
+
+102
+00:06:06,052 --> 00:06:07,052
+Now.
+
+103
+00:06:07,052 --> 00:06:11,052
+So, look at left hand side.
+
+104
+00:06:11,052 --> 00:06:12,052
+Left hand side.
+
+105
+00:06:12,052 --> 00:06:14,052
+This is non-linear.
+
+106
+00:06:14,052 --> 00:06:17,052
+This f of X has non-linear graph.
+
+107
+00:06:17,052 --> 00:06:19,052
+Look at right hand side.
+
+108
+00:06:19,052 --> 00:06:21,052
+So, in fact, right hand side.
+
+109
+00:06:21,052 --> 00:06:25,052
+Y is equal to Mx plus M.
+
+110
+00:06:25,052 --> 00:06:27,052
+M is f prime of a.
+
+111
+00:06:27,052 --> 00:06:29,052
+So, in fact, right hand side.
+
+112
+00:06:29,052 --> 00:06:30,052
+And side.
+
+113
+00:06:30,052 --> 00:06:49,052
+So, in fact, right hand side.
+
+114
+00:06:34,932 --> 00:06:35,412
+Okay.
+
+115
+00:06:36,951 --> 00:06:38,472
+It's called linearization
+
+116
+00:06:38,472 --> 00:06:40,612
+of f of x at the point
+
+117
+00:06:40,612 --> 00:06:42,711
+A which is nothing else than
+
+118
+00:06:42,711 --> 00:06:44,312
+the mx plus n
+
+119
+00:06:44,312 --> 00:06:46,012
+for tangent line.
+
+120
+00:06:46,331 --> 00:06:47,292
+Dikkat edin arkadaşlar.
+
+121
+00:06:47,951 --> 00:06:50,711
+x a'ya yeterince yaklaşırsanız
+
+122
+00:06:50,711 --> 00:06:52,672
+a veya a fa noktasına
+
+123
+00:06:52,672 --> 00:06:54,152
+yeterince yaklaşırsanız
+
+124
+00:06:54,152 --> 00:06:56,072
+grafik düzlemde
+
+125
+00:06:56,072 --> 00:06:58,512
+o zaman düz olmayan
+
+126
+00:06:58,512 --> 00:07:00,451
+grafik y eşittirme
+
+127
+00:07:00,451 --> 00:07:02,492
+x artı ne gibi yani t doğru
+
+128
+00:07:02,492 --> 00:07:04,312
+gibi davranacaktır. İşte o t
+
+129
+00:07:04,312 --> 00:07:06,132
+et doğrudaki mx artı neye
+
+130
+00:07:06,132 --> 00:07:08,032
+lx derseniz yani
+
+131
+00:07:08,032 --> 00:07:10,831
+t et doğrudaki y gördüğümüz yere lx yazarsak
+
+132
+00:07:10,831 --> 00:07:12,172
+ne olur o zaman arkadaşlar
+
+133
+00:07:12,172 --> 00:07:14,272
+fx'ler t
+
+134
+00:07:14,272 --> 00:07:16,012
+doğruymuş gibi davranacak.
+
+135
+00:07:16,572 --> 00:07:18,692
+x'ler a'ya yeterince yakın olduğundan dolayı.
+
+136
+00:07:18,792 --> 00:07:20,292
+Dolayısıyla İslâmlar eskiden
+
+137
+00:07:20,292 --> 00:07:22,012
+dünyayı neden düz zannetmişler?
+
+138
+00:07:22,432 --> 00:07:24,532
+İşte bu şekildeki bir matematiksel
+
+139
+00:07:24,532 --> 00:07:26,412
+gerçek yakın sama bağıntısından
+
+140
+00:07:26,412 --> 00:07:28,812
+dolayı öyle yanlış anlaşılmalara
+
+141
+00:07:28,812 --> 00:07:30,391
+sebebiyet vermiş arkadaşlar.
+
+142
+00:07:30,532 --> 00:07:32,891
+Tamam. Evet ama biz bunu kullanabiliriz.
+
+143
+00:07:32,891 --> 00:07:35,812
+bu gayet avantajlı bir yöntem
+
+144
+00:07:35,812 --> 00:07:37,672
+yaklaşık değer hesaplamada
+
+145
+00:07:37,672 --> 00:07:39,072
+dikkat edin arkadaşlar.
+
+146
+00:07:39,352 --> 00:07:41,632
+Hesap makinelerin zaten çalışma prensibi
+
+147
+00:07:41,632 --> 00:07:42,912
+çoğunun bu şekildedir.
+
+148
+00:07:43,432 --> 00:07:44,392
+Doğrusal yöntem
+
+149
+00:07:44,392 --> 00:07:46,352
+linear yaklaşım yöntemi kullanılır.
+
+150
+00:07:46,772 --> 00:07:47,372
+Buna işte biz
+
+151
+00:07:47,372 --> 00:07:50,711
+linearization
+
+152
+00:07:50,711 --> 00:07:53,272
+of f
+
+153
+00:07:53,272 --> 00:07:54,591
+around
+
+154
+00:07:54,591 --> 00:07:56,072
+or at
+
+155
+00:07:56,072 --> 00:07:58,912
+x'e
+
+156
+00:07:58,912 --> 00:07:59,792
+a civarında
+
+157
+00:07:59,792 --> 00:08:00,232
+f'nin
+
+158
+00:08:00,232 --> 00:08:01,372
+linearleştirilmesi
+
+159
+00:08:01,372 --> 00:08:01,992
+diye
+
+160
+00:08:01,992 --> 00:08:03,951
+isimlendirebilirsiniz.
+
+161
+00:08:04,652 --> 00:08:05,152
+Dikkat edin.
+
+162
+00:08:05,232 --> 00:08:06,652
+Peki ben bunu nasıl kullanacağım?
+
+163
+00:08:07,992 --> 00:08:09,432
+Burada şundan da bahsedeyim.
+
+164
+00:08:09,992 --> 00:10:23,872
+Dikkat edin arkadaşlar.
+
+165
+00:10:24,500 --> 00:10:33,919
+Okay, now, so that's why we need to obtain linearization of f of x around a9.
+
+166
+00:10:33,919 --> 00:10:39,120
+Okay, now we know this fact, delta f approximates,
+
+167
+00:10:40,159 --> 00:10:45,379
+by using limit definition of derivation we can obtain this,
+
+168
+00:10:46,039 --> 00:10:50,960
+delta x, delta f, f of x,
+
+169
+00:10:50,960 --> 00:10:56,659
+we can write this approximation relation whenever x is sufficiently close a,
+
+170
+00:10:57,120 --> 00:11:00,919
+f of x minus f of a,
+
+171
+00:11:01,159 --> 00:11:04,460
+this approximates with f of a,
+
+172
+00:11:04,860 --> 00:11:09,639
+this implies that f of a plus f prime of a,
+
+173
+00:11:10,019 --> 00:11:12,340
+time delta x, x minus a.
+
+174
+00:11:12,659 --> 00:11:16,320
+When you expand this differential approximation relations,
+
+175
+00:11:16,740 --> 00:11:19,220
+we are going to obtain this approximations.
+
+176
+00:11:19,220 --> 00:11:21,480
+Okay, so we have this.
+
+177
+00:11:22,220 --> 00:11:25,019
+So as you see, so we need f of a,
+
+178
+00:11:25,179 --> 00:11:27,139
+f of 9, 3,
+
+179
+00:11:27,980 --> 00:11:30,340
+f of x square root of x,
+
+180
+00:11:30,639 --> 00:11:32,860
+looks like, looks like,
+
+181
+00:11:33,559 --> 00:11:35,019
+f of a, 3,
+
+182
+00:11:35,680 --> 00:11:38,840
+plus, we need f prime of a,
+
+183
+00:11:38,840 --> 00:11:42,000
+so let's derivate this function.
+
+184
+00:11:44,799 --> 00:11:47,440
+So when you compute f prime of a,
+
+185
+00:11:47,600 --> 00:11:48,519
+a is 9,
+
+186
+00:11:48,899 --> 00:11:49,879
+attention here,
+
+187
+00:11:50,419 --> 00:11:51,399
+1 over 6,
+
+188
+00:11:52,180 --> 00:11:54,360
+now 1 over 6 times,
+
+189
+00:11:54,879 --> 00:11:57,680
+x minus a is 9.
+
+190
+00:11:57,680 --> 00:11:59,379
+So as you see,
+
+191
+00:11:59,899 --> 00:12:05,299
+so this nonlinear graph looks like some linear graph.
+
+192
+00:12:06,340 --> 00:12:10,139
+Whenever x is sufficient to close 9.
+
+193
+00:12:10,639 --> 00:12:15,379
+So when you substitute x here,
+
+194
+00:12:15,379 --> 00:12:21,299
+radical of 8.9,
+
+195
+00:12:21,299 --> 00:12:28,539
+approximates 3 plus 1 over 6 times,
+
+196
+00:12:28,539 --> 00:12:33,240
+8.9 minus 9.
+
+197
+00:12:33,240 --> 00:12:37,159
+So let's write here.
+
+198
+00:12:39,620 --> 00:12:40,720
+So 3.
+
+199
+00:12:41,299 --> 00:12:42,200
+So we have,
+
+200
+00:12:42,399 --> 00:12:43,000
+as you see,
+
+201
+00:12:43,779 --> 00:12:46,580
+minus 1 over 60.
+
+202
+00:12:47,240 --> 00:12:48,100
+The answer is
+
+203
+00:12:48,100 --> 00:12:53,600
+179 over 6.
+
+204
+00:12:53,600 --> 00:12:54,200
+Okay,
+
+205
+00:12:54,220 --> 00:12:55,000
+this is the answer.
+
+206
+00:12:56,600 --> 00:12:59,019
+So in terms of some rational numbers,
+
+207
+00:12:59,340 --> 00:13:01,799
+so we can express these irrational numbers,
+
+208
+00:13:02,000 --> 00:13:03,440
+this is the irrational number.
+
+209
+00:13:04,419 --> 00:13:05,059
+Okay,
+
+210
+00:13:05,720 --> 00:13:06,919
+this is irrational,
+
+211
+00:13:07,419 --> 00:13:08,720
+not rational number.
+
+212
+00:13:09,139 --> 00:13:11,480
+I think you know definition of irrational number,
+
+213
+00:13:11,960 --> 00:13:13,120
+but this is the rational number.
+
+214
+00:13:13,340 --> 00:13:15,100
+So this irrational number,
+
+215
+00:13:16,039 --> 00:13:18,399
+approximates these rational numbers.
+
+216
+00:13:19,139 --> 00:13:19,299
+Okay.
+
+217
+00:13:22,220 --> 00:13:23,139
+Yaklaşık olarak,
+
+218
+00:13:23,600 --> 00:13:26,180
+biz irrasyonel sayıyı yaklaşık olarak,
+
+219
+00:13:26,680 --> 00:13:27,860
+nasıl bulabiliyoruz arkadaşlar?
+
+220
+00:13:28,399 --> 00:13:32,139
+179 bölü 60 şeklinde belirleyebiliriz.
+
+221
+00:13:32,299 --> 00:13:33,100
+Var mı sorusu olan?
+
+222
+00:13:37,875 --> 00:13:42,576
+sorusu olan yok galiba. Olay anlaşıldı galiba. Geçiyorum.
+
+223
+00:13:54,035 --> 00:13:57,675
+Okay, this is the topic of high school, heba.
+
+224
+00:13:58,515 --> 00:13:59,975
+Irrational, rational number.
+
+225
+00:14:01,375 --> 00:14:02,375
+Rational number.
+
+226
+00:14:12,148 --> 00:14:13,648
+let's say Q.
+
+227
+00:14:26,803 --> 00:14:28,803
+integer
+
+228
+00:14:29,644 --> 00:14:32,644
+A, B, integers
+
+229
+00:14:33,264 --> 00:14:39,683
+Okay, rational number A over B. Okay, this is rational number
+
+230
+00:14:41,043 --> 00:14:43,043
+and
+
+231
+00:14:43,163 --> 00:14:45,163
+the set of real numbers
+
+232
+00:14:47,504 --> 00:14:49,504
+Q union
+
+233
+00:14:50,764 --> 00:14:52,764
+Q negation
+
+234
+00:14:53,183 --> 00:14:55,183
+the set of
+
+235
+00:14:56,803 --> 00:14:58,803
+rational numbers
+
+236
+00:14:58,803 --> 00:15:00,803
+set of
+
+237
+00:15:00,803 --> 00:15:02,803
+rational numbers
+
+238
+00:15:02,803 --> 00:15:04,803
+set of
+
+239
+00:15:04,803 --> 00:15:06,803
+rational numbers
+
+240
+00:15:06,803 --> 00:15:08,803
+set of
+
+241
+00:15:08,803 --> 00:15:10,803
+rational numbers
+
+242
+00:15:10,803 --> 00:15:26,803
+set of rational numbers
+
+243
+00:15:04,211 --> 00:15:20,211
+There is no, okay, so we know that there is no common elements, empty set, okay? This is the irrational number, the set of irrational numbers.
+
+244
+00:15:24,179 --> 00:15:26,859
+Bu, eğer örneğin, bu yöntemler, ilerisal numarası.
+
+245
+00:15:33,940 --> 00:15:37,380
+Okay? This is irrational numbers.
+
+246
+00:15:39,620 --> 00:15:40,820
+Irrational numbers.
+
+247
+00:15:43,940 --> 00:15:44,820
+Okay.
+
+248
+00:15:49,491 --> 00:15:50,451
+let's go on
+
+249
+00:15:58,580 --> 00:16:17,100
+Okay, you can solve some other problems here, existing here. We talked about differentials here. Okay, now, we talked about differentials. You can solve this problem. Bunları siz öyle, evde kendis çödersiniz arkadaşlar. Okay, you may solve these problems.
+
+250
+00:16:17,100 --> 00:16:44,000
+Let me talk about increasing and decreasing functions. Now, so let me talk about definition of increasing function. As you see, as long as you walk on the x-axis from left to right, the graph of f is rising up. Can you see that? So, roughly speaking, this is the definition of increasing function.
+
+251
+00:16:44,000 --> 00:16:58,400
+So, what about algebraic definition? So, what about algebraic definition of increasing function? So, if for all x1, x2, holding this condition,
+
+252
+00:17:05,779 --> 00:17:15,379
+Okay, if you can see that this is true for all x1, x2, then you can say that f is increasing.
+
+253
+00:17:16,119 --> 00:17:20,099
+f is increasing on some domain i.
+
+254
+00:17:20,759 --> 00:17:28,379
+Okay, as you see, whenever x1 smaller than x2, f of x1 smaller than f of x2.
+
+255
+00:17:29,099 --> 00:17:31,839
+Okay, this is the definition of increasing function.
+
+256
+00:17:32,480 --> 00:17:34,660
+Now, let me talk about decreasing function.
+
+257
+00:17:34,660 --> 00:17:43,559
+Whenever x1 smaller than x2, f of x1, look at f of x1, bigger than f of x2.
+
+258
+00:17:44,200 --> 00:17:53,079
+Okay, so as you see, as long as you walk on the x-axis from left, right, so the graph of f of x is going down.
+
+259
+00:17:53,599 --> 00:17:57,659
+Okay, so in that case, we have obtained decreasing function.
+
+260
+00:17:57,660 --> 00:18:07,379
+So let me talk about the relation between the sign of derivation function and increasedness, decreasedness.
+
+261
+00:18:07,740 --> 00:18:08,779
+Look at here.
+
+262
+00:18:08,779 --> 00:18:16,460
+So in the increasedness case, the slope of this tangent line is positive.
+
+263
+00:18:17,119 --> 00:18:20,759
+As you see, the slope of this tangent line is always positive.
+
+264
+00:18:21,579 --> 00:18:25,059
+The slope positive means that derivation function is positive.
+
+265
+00:18:25,059 --> 00:18:28,579
+So as you see, we can obtain this logical implication.
+
+266
+00:18:29,440 --> 00:18:38,079
+So some function is increasing if and only if derivation function is positive on some given domain.
+
+267
+00:18:38,079 --> 00:18:46,619
+Yani verilen bir bölgede fonksiyonu türevi pozitif ise fonksiyon artan, negatif ise azalandır diyebilirsiniz değerli arkadaşlar.
+
+268
+00:18:46,859 --> 00:18:46,980
+Tamam.
+
+269
+00:18:46,980 --> 00:18:55,599
+Look at the relation between sine of derivation function and increasing decreases.
+
+270
+00:18:55,599 --> 00:18:56,259
+Okay.
+
+271
+00:18:57,879 --> 00:19:03,099
+Now here, so we talked about this before.
+
+272
+00:19:04,720 --> 00:19:07,460
+Okay, roughly sketching f function.
+
+273
+00:19:07,900 --> 00:19:10,319
+Now how can we sketch this graph?
+
+274
+00:19:10,579 --> 00:19:11,099
+Look at here.
+
+275
+00:19:11,139 --> 00:19:12,680
+Let's comment on this graph.
+
+276
+00:19:13,259 --> 00:19:13,900
+Sorry.
+
+277
+00:19:13,900 --> 00:19:16,980
+So look at this graph.
+
+278
+00:19:19,960 --> 00:19:22,559
+So from minus infinity to zero.
+
+279
+00:19:23,019 --> 00:19:27,279
+So as you see, from left to right, this graph is going up.
+
+280
+00:19:27,460 --> 00:19:28,799
+This graph is rising up.
+
+281
+00:19:29,200 --> 00:19:31,339
+So that's why this is increasing function.
+
+282
+00:19:31,480 --> 00:19:35,839
+Implying that derivation here, f prime of x is positive.
+
+283
+00:19:36,500 --> 00:19:39,180
+But from zero to four.
+
+284
+00:19:39,180 --> 00:19:41,079
+Okay.
+
+285
+00:19:41,159 --> 00:19:45,200
+From left to right, the graph is going down.
+
+286
+00:19:45,500 --> 00:19:46,960
+This means that this is decreasing.
+
+287
+00:19:47,480 --> 00:19:47,639
+Okay.
+
+288
+00:19:48,720 --> 00:19:55,039
+This is equivalent to saying that derivation of this function is negative.
+
+289
+00:19:56,119 --> 00:19:58,539
+From four to, okay.
+
+290
+00:19:58,539 --> 00:20:00,319
+Not six.
+
+291
+00:20:00,319 --> 00:20:04,619
+From four to infinite, the graph is always rising up.
+
+292
+00:20:05,159 --> 00:20:05,839
+Can you see that?
+
+293
+00:20:07,019 --> 00:20:12,019
+This is equivalent to saying that derivation function is always positive.
+
+294
+00:20:12,240 --> 00:20:13,420
+From four to infinite.
+
+295
+00:20:13,700 --> 00:20:13,839
+Okay.
+
+296
+00:20:14,539 --> 00:20:14,740
+Yeah.
+
+297
+00:20:15,420 --> 00:20:17,839
+Any question about these concentrations?
+
+298
+00:20:17,839 --> 00:20:21,720
+Var mı sorusu olan bu tanımlarla alakalı?
+
+299
+00:20:21,980 --> 00:20:24,220
+Kafanıza takılan bir yer yoksa devam ediyorum.
+
+300
+00:20:24,220 --> 00:20:35,079
+Bakın.
+
+301
+00:20:35,079 --> 00:20:36,079
+.
+
+302
+00:20:36,079 --> 00:20:37,079
+Bakın.
+
+303
+00:20:29,236 --> 00:20:59,056
+Okay, so let me talk about inverse function. Okay, this part's not so good. So let me share some new whiteboard. Okay, so we know from high school, we know from high school, this function is one-to-one and onto. Onto means, so I will define one-to-one and onto.
+
+304
+00:20:59,236 --> 00:21:06,996
+Okay, first of all, let me define one-to-one and onto function. Sorry. So what is one-to-one?
+
+305
+00:21:09,876 --> 00:21:14,036
+One-to-one. One-to-one means different pairs.
+
+306
+00:21:18,067 --> 00:21:47,468
+assign it to different outputs. Different inputs are assigned to different outputs. Okay? So this f is called one to one. Now, over some domain, over some a. So let me write here, f is a function from a to b. So if, if,
+
+307
+00:21:48,067 --> 00:22:06,067
+f of a is equal to b, then, f is called one to b. Okay? Now, so let me introduce this theorem.
+
+308
+00:22:11,284 --> 00:22:16,444
+Okay, let me, okay, sorry. Let me introduce definition of invertibility.
+
+309
+00:22:18,004 --> 00:22:25,844
+So, this function is called invertible.
+
+310
+00:22:27,684 --> 00:22:29,084
+Invertible.
+
+311
+00:22:30,304 --> 00:22:40,524
+If and only if, if and only if there exists, there exists some g, some g function.
+
+312
+00:22:41,284 --> 00:22:46,244
+From b to a, holding this condition.
+
+313
+00:22:47,924 --> 00:22:50,044
+Holding this condition.
+
+314
+00:22:50,204 --> 00:22:54,164
+F composite g is identity function.
+
+315
+00:22:55,024 --> 00:22:57,244
+G composite f.
+
+316
+00:22:57,244 --> 00:23:06,244
+So, where identity, where this id is identity function from any set to any set.
+
+317
+00:23:06,244 --> 00:23:11,584
+Taking this x to identity x is x.
+
+318
+00:23:12,344 --> 00:23:17,824
+Okay, now in that case, so we denote this g is f inverse.
+
+319
+00:23:18,384 --> 00:23:19,924
+Okay, g is f inverse.
+
+320
+00:23:19,924 --> 00:23:25,504
+Or, so we can write this f is g inverse.
+
+321
+00:23:25,504 --> 00:23:29,903
+So, f is inverse of g, g is inverse of a.
+
+322
+00:23:30,403 --> 00:23:32,284
+Okay, g inverse of f, sorry.
+
+323
+00:23:32,764 --> 00:23:37,844
+Now, so, in fact, this is some operations.
+
+324
+00:23:38,104 --> 00:23:41,744
+Okay, if you have some input here, x.
+
+325
+00:23:43,444 --> 00:23:45,864
+You got some y value.
+
+326
+00:23:45,984 --> 00:23:46,724
+This is output.
+
+327
+00:23:46,724 --> 00:23:49,764
+Okay, so this is output.
+
+328
+00:23:51,284 --> 00:23:52,924
+So, this is input.
+
+329
+00:23:55,324 --> 00:23:57,044
+So, this is f operations.
+
+330
+00:23:57,824 --> 00:24:08,724
+If you can, if you can obtain, if you are given, if you are given some output and if you can obtain uniquely some input, this means that this operation is reversible operation.
+
+331
+00:24:08,724 --> 00:24:15,724
+Okay, now, so if you are given some output, y, you know this output.
+
+332
+00:24:16,584 --> 00:24:22,684
+Okay, now, so your goal is to obtain this x uniquely.
+
+333
+00:24:22,684 --> 00:24:28,964
+Okay, so x, f inverse y.
+
+334
+00:24:28,964 --> 00:24:37,824
+So, y, we know that y is, according to this notation, f of x.
+
+335
+00:24:37,924 --> 00:24:38,684
+Can you see that?
+
+336
+00:24:39,324 --> 00:24:41,384
+So, so this is the reverse.
+
+337
+00:24:41,864 --> 00:24:50,584
+So, this means that f operation is a reversible operation.
+
+338
+00:24:50,864 --> 00:24:53,124
+Reversible operation.
+
+339
+00:24:53,124 --> 00:25:00,644
+Okay, you are going to take some lectures.
+
+340
+00:25:01,244 --> 00:25:04,724
+Okay, so logical gates for computer scientists.
+
+341
+00:25:04,964 --> 00:25:06,984
+Okay, so you know logical gates.
+
+342
+00:25:07,264 --> 00:25:10,604
+There are some gates, logical gates in the computer science.
+
+343
+00:25:11,104 --> 00:25:14,224
+Okay, reversible gate, reversible operations.
+
+344
+00:25:14,224 --> 00:25:19,804
+Dikkat edin arkadaşlar, mantık dersi alacaksınız ya da devre şeyleri alacaksınız.
+
+345
+00:25:19,864 --> 00:25:22,564
+Mantık kapıları dersi var arkadaşlar, devre kapıları.
+
+346
+00:25:23,124 --> 00:25:23,944
+Devre dersinde.
+
+347
+00:25:24,304 --> 00:25:25,903
+Orada terslenebilir kapılar var.
+
+348
+00:25:26,004 --> 00:25:27,924
+Kapı demek aslında işlem demek arkadaşlar.
+
+349
+00:25:28,584 --> 00:25:31,144
+Sizin belirlerinizi işliyor, tersine döndürebiliyor.
+
+350
+00:25:31,304 --> 00:25:33,304
+Aslında onların her biri bir fonksiyon.
+
+351
+00:25:33,424 --> 00:25:36,964
+Bazıları terslenebilir fonksiyonlar, bazıları terslenemez fonksiyonlar.
+
+352
+00:25:37,924 --> 00:25:39,204
+Orada bunları kullanıyorsunuz.
+
+353
+00:25:39,244 --> 00:25:39,804
+Tamam mı gençler?
+
+354
+00:25:39,864 --> 00:25:40,544
+Bunu bilin yeter.
+
+355
+00:25:41,044 --> 00:25:42,964
+Şimdi geçiyorum şu bilgiye.
+
+356
+00:25:42,964 --> 00:25:45,584
+Okay, teorem.
+
+357
+00:25:46,144 --> 00:25:48,064
+So this is very important teorem.
+
+358
+00:25:52,819 --> 00:26:00,139
+So if you have some one-to-one and on-to function, so f is invertible.
+
+359
+00:26:01,759 --> 00:26:02,319
+Invertible.
+
+360
+00:26:03,059 --> 00:26:04,720
+So this is very important.
+
+361
+00:26:06,720 --> 00:26:11,279
+Yani f'nin terslenebilir olabilmesi için birebir ve örtan olması lazım.
+
+362
+00:26:11,519 --> 00:26:12,439
+Gerek ve yeter koşul.
+
+363
+00:26:12,500 --> 00:26:13,139
+Yani denktir.
+
+364
+00:26:13,139 --> 00:26:16,339
+F'nin birebir örten olması f'nin terslenebilir olduğunu söyler.
+
+365
+00:26:16,639 --> 00:26:18,939
+F terslenebilirse f'ye birebir ve örtendir.
+
+366
+00:26:18,939 --> 00:26:23,879
+If you have some one-to-one on-to function, you can say that f is invertible.
+
+367
+00:26:24,299 --> 00:26:28,399
+If f is invertible, you can directly say that f is one-to-one and on-to.
+
+368
+00:26:28,720 --> 00:26:28,940
+Okay?
+
+369
+00:26:29,139 --> 00:26:31,940
+We have two directions.
+
+370
+00:26:32,200 --> 00:26:32,659
+Direction.
+
+371
+00:26:32,799 --> 00:26:32,980
+Okay?
+
+372
+00:26:33,440 --> 00:26:36,259
+Now, so other corollary.
+
+373
+00:26:37,279 --> 00:26:39,639
+So this is some result.
+
+374
+00:26:40,539 --> 00:26:47,740
+So if from a to f of a, because of this fact, so as you see, we have
+
+375
+00:26:47,740 --> 00:26:49,919
+some one-to function.
+
+376
+00:26:50,460 --> 00:26:53,399
+Is one-to-one.
+
+377
+00:26:53,659 --> 00:26:57,419
+You can directly say that f is invertible.
+
+378
+00:26:58,779 --> 00:26:59,799
+F is invertible.
+
+379
+00:26:59,859 --> 00:27:00,399
+Dikkat edin.
+
+380
+00:27:00,480 --> 00:27:07,299
+Dolayısıyla a'dan, a'nın, dikkat edin, f altındaki görüntüsüne fonksiyonun kısıtlanışını
+
+381
+00:27:07,299 --> 00:27:12,659
+alırsanız, fonksiyon da birebir olursa fonksiyon doğrudan terslenebilir olur.
+
+382
+00:27:12,659 --> 00:27:13,940
+Mesela bir örnek vereyim.
+
+383
+00:27:14,059 --> 00:27:15,779
+Gelmek istediğim nokta burasıydı.
+
+384
+00:27:16,259 --> 00:27:16,960
+Burası çok önemli.
+
+385
+00:27:16,960 --> 00:27:18,480
+Şimdi geliyorum hemen.
+
+386
+00:27:18,740 --> 00:27:20,359
+Burayı çok iyi kullanacağız arkadaşlar.
+
+387
+00:27:20,639 --> 00:27:22,779
+This corollary is very important.
+
+388
+00:27:22,919 --> 00:27:24,359
+This result is very important.
+
+389
+00:27:25,579 --> 00:27:25,759
+Okay?
+
+390
+00:27:26,220 --> 00:27:30,960
+Now, so let me clear all drivings.
+
+391
+00:27:31,059 --> 00:27:31,279
+Okay?
+
+392
+00:27:31,619 --> 00:27:33,059
+Now consider this function.
+
+393
+00:27:33,559 --> 00:27:33,879
+Sign.
+
+394
+00:27:35,339 --> 00:27:41,960
+From the set of all real numbers to r.
+
+395
+00:27:41,960 --> 00:27:42,460
+R.
+
+396
+00:27:42,460 --> 00:27:45,619
+So this is not one-to-one and onto.
+
+397
+00:27:45,619 --> 00:27:52,019
+Not one-to-one and not onto.
+
+398
+00:27:52,019 --> 00:27:55,759
+Okay?
+
+399
+00:27:55,759 --> 00:28:00,099
+That's why we cannot talk about inverse of this function sine.
+
+400
+00:28:00,619 --> 00:28:00,859
+Okay?
+
+401
+00:28:01,199 --> 00:28:02,139
+What about this?
+
+402
+00:28:02,319 --> 00:28:04,980
+But when you consider this restriction.
+
+403
+00:28:04,980 --> 00:28:09,899
+So let me sketch some graph.
+
+404
+00:28:11,500 --> 00:28:14,039
+Let's sketch the graph of this function.
+
+405
+00:28:14,039 --> 00:28:19,659
+Okay.
+
+406
+00:28:32,051 --> 00:28:33,751
+This is the graph of sine.
+
+407
+00:28:37,523 --> 00:29:07,523
+İlk olarak, bu kısımda bir kısımda bir kısımda bir kısımda bir kısımda bir kısımda bir kısımda bir kısımda bir kısımda bir kısımda bir kısımda bir kısımda bir kısımda bir kısımda bir kısımda bir kısımda bir kısımda bir kısımda bir kısımda bir kısımda bir kısımda bir kısımda bir kısımda bir kısımda bir kısımda bir kısımda bir kısımda bir kısımda bir kısımda bir kısımda bir kısımda bir kısımda bir kısımda bir kısımda bir kısımda bir kısımda bir kısımda bir kısımda bir kısımda bir kısımda bir kısımda bir kısımda bir kısımda bir kısım
+
+408
+00:29:07,523 --> 00:29:13,523
+let me let me write this part
+
+409
+00:29:19,155 --> 00:29:42,495
+Okay, let's see this part. From minus pi over 2 to pi over 2. And sine, apply this from minus pi over 2 to pi over 2. Image of this, if you take the orthogonal projection of this,
+
+410
+00:29:46,451 --> 00:29:52,211
+ortogonal projection of this graph, you are going to obtain minus 1 plus 1.
+
+411
+00:29:52,392 --> 00:29:55,531
+Can you see that? This is a, this is f of a.
+
+412
+00:29:56,511 --> 00:29:58,731
+Now, so this is 1 to 1.
+
+413
+00:29:59,932 --> 00:30:02,092
+Now how can we understand this is 1 to 1?
+
+414
+00:30:03,771 --> 00:30:05,251
+This is 1 to 1.
+
+415
+00:30:06,832 --> 00:30:09,771
+So we can understand that this is 1 to 1.
+
+416
+00:30:09,771 --> 00:30:18,471
+As you see, different x1, x2 pairs living on this domain are assigned to different pairs.
+
+417
+00:30:18,951 --> 00:30:19,192
+Okay?
+
+418
+00:30:19,751 --> 00:30:25,491
+According to vertical line test.
+
+419
+00:30:25,751 --> 00:30:26,771
+Dikkat edin arkadaşlar.
+
+420
+00:30:27,471 --> 00:30:30,092
+Dikey doğru testine göre ne yapıyorsunuz?
+
+421
+00:30:31,572 --> 00:30:34,511
+Yatay doğru testiyle fonksiyonun neyini anlıyorsunuz arkadaşlar?
+
+422
+00:30:35,451 --> 00:30:37,632
+Fonksiyon olup olmadığını anlıyorsunuz grafiği.
+
+423
+00:30:37,632 --> 00:30:40,892
+Dikey doğru testleriyle fonksiyonun birebir olup olmadığını anlıyorsunuz.
+
+424
+00:30:41,311 --> 00:30:43,491
+Gördüğünüz gibi burada bunun birebir olduğunu görebiliyoruz.
+
+425
+00:30:43,571 --> 00:30:46,471
+This is 1 to 1.
+
+426
+00:30:46,912 --> 00:30:47,152
+Okay?
+
+427
+00:30:47,791 --> 00:30:49,031
+Now this is very important.
+
+428
+00:30:50,051 --> 00:30:50,311
+Now.
+
+429
+00:30:53,711 --> 00:30:55,672
+Herhalde anlaşıldı buradaki husus.
+
+430
+00:30:55,852 --> 00:30:56,692
+Var mı anlaşmıyor mu diye?
+
+431
+00:30:58,912 --> 00:31:01,572
+That's why we can talk about its inverse.
+
+432
+00:31:01,951 --> 00:31:02,231
+Okay?
+
+433
+00:31:02,932 --> 00:31:05,251
+We can talk about its inverse.
+
+434
+00:31:05,951 --> 00:31:07,551
+It's called arc sign.
+
+435
+00:31:07,632 --> 00:31:10,291
+arc sign.
+
+436
+00:31:10,291 --> 00:31:13,551
+Arc sign.
+
+437
+00:31:14,051 --> 00:31:14,372
+From.
+
+438
+00:31:15,392 --> 00:31:16,432
+Minus 1.
+
+439
+00:31:17,011 --> 00:31:18,332
+Plus 1.
+
+440
+00:31:18,771 --> 00:31:19,531
+2.
+
+441
+00:31:21,771 --> 00:31:23,932
+Minus pi over 2.
+
+442
+00:31:24,211 --> 00:31:25,051
+Pi over 2.
+
+443
+00:31:27,132 --> 00:31:28,412
+Okay?
+
+444
+00:31:28,412 --> 00:31:28,471
+Okay.
+
+445
+00:31:33,556 --> 00:31:38,236
+So, look at that. According to inverse theory,
+
+446
+00:31:39,915 --> 00:31:45,756
+so you have this from sine from minus pi over 2 to pi over 2,
+
+447
+00:31:47,236 --> 00:31:51,196
+minus 1 plus 1. This is 1 to 1 and on top.
+
+448
+00:31:51,196 --> 00:31:53,875
+Now we can talk about arc sine.
+
+449
+00:31:54,675 --> 00:31:56,675
+Its inverse arc sine.
+
+450
+00:31:57,196 --> 00:32:02,236
+Its inverse is called arc sine, attention here, from minus 1 to plus 1,
+
+451
+00:32:02,236 --> 00:32:05,956
+minus pi over 2, pi over 2.
+
+452
+00:32:05,956 --> 00:32:09,395
+So, according to the definition of inverse function,
+
+453
+00:32:10,236 --> 00:32:17,456
+so we can write this, sine, composite, arc sine, x,
+
+454
+00:32:18,135 --> 00:32:20,196
+f composite, f inverse.
+
+455
+00:32:20,796 --> 00:32:27,516
+Results in identity function, x, f inverse, which is arc sine,
+
+456
+00:32:27,936 --> 00:32:32,016
+f inverse composite, f, x.
+
+457
+00:32:32,236 --> 00:32:34,675
+Okay, this is very, very important.
+
+458
+00:32:35,956 --> 00:32:39,956
+Very important relation, very important identical relation,
+
+459
+00:32:39,956 --> 00:32:42,556
+coming from the definition of invertibility.
+
+460
+00:32:42,796 --> 00:32:44,316
+Okay, now,
+
+461
+00:32:44,836 --> 00:32:47,236
+we can obtain this.
+
+462
+00:32:47,456 --> 00:32:51,395
+If you have this, y is equal to sine x.
+
+463
+00:32:51,395 --> 00:32:57,895
+Now, when you apply, when you apply inverse of sine,
+
+464
+00:32:58,036 --> 00:32:59,635
+the both sides of this equality,
+
+465
+00:33:00,516 --> 00:33:08,655
+arc sine y is equal to arc sine composite sine x.
+
+466
+00:33:09,655 --> 00:33:11,115
+So, this is x.
+
+467
+00:33:11,895 --> 00:33:13,395
+Okay, so what does it mean?
+
+468
+00:33:13,395 --> 00:33:21,936
+So, let me explain this algebraic relation on the graph.
+
+469
+00:33:21,936 --> 00:33:22,936
+Okay.
+
+470
+00:33:22,936 --> 00:33:24,375
+So, let me explain this algebraic relation.
+
+471
+00:33:24,375 --> 00:33:24,936
+Okay.
+
+472
+00:33:24,936 --> 00:33:26,375
+So, let me explain this algebraic relation.
+
+473
+00:33:26,375 --> 00:33:26,936
+Okay.
+
+474
+00:33:26,936 --> 00:33:27,655
+So, let me explain this algebraic relation.
+
+475
+00:33:27,655 --> 00:33:27,936
+Okay.
+
+476
+00:33:27,936 --> 00:33:28,655
+So, let me explain this algebraic relation.
+
+477
+00:33:28,655 --> 00:33:28,936
+Okay.
+
+478
+00:33:28,936 --> 00:33:29,655
+So, let me explain this algebraic relation.
+
+479
+00:33:29,655 --> 00:33:30,655
+Okay.
+
+480
+00:33:30,655 --> 00:33:31,655
+So, let me explain this algebraic relation.
+
+481
+00:33:31,655 --> 00:33:32,655
+Okay.
+
+482
+00:33:32,655 --> 00:33:33,655
+So, let me explain this algebraic relation.
+
+483
+00:33:33,655 --> 00:33:34,655
+Okay.
+
+484
+00:33:34,655 --> 00:33:35,655
+So, let me explain this algebraic relation.
+
+485
+00:33:35,655 --> 00:33:36,655
+Okay.
+
+486
+00:33:36,655 --> 00:33:37,655
+So, let me explain this algebraic relation.
+
+487
+00:33:37,655 --> 00:33:38,655
+Okay.
+
+488
+00:33:38,655 --> 00:33:39,655
+So, let me explain this algebraic relation.
+
+489
+00:33:39,655 --> 00:33:40,655
+Okay.
+
+490
+00:33:40,655 --> 00:33:41,655
+So, let me explain this algebraic relation.
+
+491
+00:33:41,655 --> 00:33:42,655
+Okay.
+
+492
+00:33:42,655 --> 00:33:43,655
+So, let me explain this algebraic relation.
+
+493
+00:33:43,655 --> 00:33:44,655
+Okay.
+
+494
+00:33:44,655 --> 00:33:45,655
+So, let me explain this algebraic relation.
+
+495
+00:33:33,076 --> 00:33:38,076
+Bu, arksine x'ın arksine x'ı bilgisayar.
+
+496
+00:33:48,884 --> 00:33:50,884
+Minus pi over 2 to pi over 2.
+
+497
+00:33:52,003 --> 00:33:53,324
+So this is the graph of.
+
+498
+00:33:54,324 --> 00:33:55,963
+Let me use different color.
+
+499
+00:33:56,804 --> 00:33:58,144
+So this is the graph of.
+
+500
+00:33:59,264 --> 00:34:01,304
+Y arc sine X.
+
+501
+00:34:01,683 --> 00:34:04,324
+Sometimes we use this notation.
+
+502
+00:34:04,564 --> 00:34:06,284
+Y is equal to arc sine X.
+
+503
+00:34:06,804 --> 00:34:11,503
+Sometimes we prefer to use this notation.
+
+504
+00:34:12,804 --> 00:34:17,664
+So we apply sine function to both sides of this equality.
+
+505
+00:34:18,884 --> 00:34:21,543
+Left hand side is transformed into sine Y.
+
+506
+00:34:22,184 --> 00:34:24,983
+Is equal to right hand side is transformed into.
+
+507
+00:34:25,503 --> 00:34:27,384
+Sine composite arc sine.
+
+508
+00:34:27,824 --> 00:34:29,704
+F composite F inverse.
+
+509
+00:34:30,103 --> 00:34:32,043
+Results in identifunction X.
+
+510
+00:34:32,724 --> 00:34:33,023
+Okay.
+
+511
+00:34:33,623 --> 00:34:35,304
+So we have two equivalent.
+
+512
+00:34:37,583 --> 00:34:40,083
+Notations for this graph.
+
+513
+00:34:41,403 --> 00:34:41,963
+Dikkat edin.
+
+514
+00:34:41,963 --> 00:34:44,083
+Bu grafik için ya X eşittir sinis Y.
+
+515
+00:34:45,503 --> 00:34:47,704
+Kullanırım ya da Y eşittir aksinus X.
+
+516
+00:34:47,704 --> 00:34:49,423
+Ama burada dikkat edin.
+
+517
+00:34:49,864 --> 00:34:51,523
+X'ler nereden nereye değişiyor?
+
+518
+00:34:51,784 --> 00:34:52,804
+X ve Y'ler.
+
+519
+00:34:54,144 --> 00:35:00,844
+X'ler where X change from minus pi over 2 to pi over 2.
+
+520
+00:35:01,324 --> 00:35:02,704
+Y change from.
+
+521
+00:35:02,704 --> 00:35:26,204
+X'ler.
+
+522
+00:35:08,148 --> 00:35:11,028
+y-1-1-1.
+
+523
+00:35:11,528 --> 00:35:18,307
+Under these restrictions, we can use these two equivalent notations for this graph.
+
+524
+00:35:18,548 --> 00:35:18,708
+Okay?
+
+525
+00:35:19,268 --> 00:35:19,867
+An equation.
+
+526
+00:35:20,528 --> 00:35:21,428
+Sorusu olan var mı?
+
+527
+00:35:23,188 --> 00:35:25,028
+Anlaşım en bir yeri yok değil mi gençler?
+
+528
+00:35:26,668 --> 00:35:28,168
+Gayet güzel, anlaşılır.
+
+529
+00:35:28,208 --> 00:35:30,008
+Bu mantığı çok sıklıkla kullanacağız.
+
+530
+00:35:30,108 --> 00:35:33,488
+Çok basit ama bizim çok işimize yarayacak bu mantık ileride.
+
+531
+00:35:33,488 --> 00:35:34,168
+Evet.
+
+532
+00:35:36,208 --> 00:35:37,008
+Okay.
+
+533
+00:35:37,008 --> 00:35:38,788
+Now let's go on.
+
+534
+00:35:40,088 --> 00:35:42,788
+Let me talk about derivation of arcsinex.
+
+535
+00:35:43,548 --> 00:35:45,448
+Biraz hızlandırıyorum arkadaşlar.
+
+536
+00:35:45,588 --> 00:35:46,668
+Dikkatinizi çekersem.
+
+537
+00:35:47,448 --> 00:35:49,268
+İşin mantığını anlatıp geçeceğim.
+
+538
+00:35:49,468 --> 00:35:50,988
+Daha sonra bol bol soru çözeceğiz.
+
+539
+00:35:51,248 --> 00:35:52,347
+Konuları bitirmek istiyorum.
+
+540
+00:35:53,108 --> 00:35:53,268
+Okay.
+
+541
+00:35:53,268 --> 00:35:55,268
+Let me talk about derivation of...
+
+542
+00:35:59,284 --> 00:36:06,483
+arc sin x. So how can we compute derivation of this?
+
+543
+00:36:10,195 --> 00:36:12,195
+Şimdi iki metodimiz var.
+
+544
+00:36:12,695 --> 00:36:14,695
+Bu derivasyon için bir metodimiz var.
+
+545
+00:36:14,695 --> 00:36:16,695
+İlk metodimiz...
+
+546
+00:36:22,420 --> 00:36:25,380
+So let me separate this blank, this whiteboard.
+
+547
+00:36:26,099 --> 00:36:35,780
+So in order to apply dy over dx, so first of all, we use invertibility condition.
+
+548
+00:36:37,619 --> 00:36:44,340
+So when you apply inverse of arcsin to both sides of this equality, sin y
+
+549
+00:36:45,380 --> 00:36:51,059
+is equal to sin composite arcsin results in x. Okay, so we have this.
+
+550
+00:36:52,740 --> 00:36:55,780
+Now, so we are looking for this
+
+551
+00:36:58,820 --> 00:37:03,780
+dy over dx. We know that according to this algebraic representation,
+
+552
+00:37:04,659 --> 00:37:10,340
+algebraic notation, x is dependent variable, x is independent variable, y is
+
+553
+00:37:11,300 --> 00:37:16,579
+dependent variable. Taking into account this fact, we derivate both sides of this equality
+
+554
+00:37:16,579 --> 00:37:21,059
+with respect to x. Okay, so let me follow from here.
+
+555
+00:37:22,500 --> 00:37:24,579
+So when you derivate this this
+
+556
+00:37:26,659 --> 00:37:34,900
+with respect to x, cosine y times, we know that y depends on x, dy over dx
+
+557
+00:37:34,900 --> 00:37:44,740
+is equal to derivation of x with respect to x, one. So our goal is to obtain dy over dx in terms of x,
+
+558
+00:37:46,180 --> 00:37:56,980
+one over cosine y. So we know that by the Pythochorium theorem, cosine square y plus sine square y,
+
+559
+00:37:56,980 --> 00:38:09,300
+is equal to one minus one. Okay, now we know that sine sine y is x. So this means that one over cosine square y is equal to one minus
+
+560
+00:38:09,300 --> 00:38:21,619
+We take some positive one. Okay, so one minus x square. Okay, so second method, let me talk about second method.
+
+561
+00:38:26,068 --> 00:38:28,068
+dy over dx
+
+562
+00:38:30,068 --> 00:38:34,068
+We know that dy is sufficient small difference along y-axis.
+
+563
+00:38:35,068 --> 00:38:40,068
+dx implies sufficient small difference along x-axis.
+
+564
+00:38:40,068 --> 00:38:42,068
+So we can write this.
+
+565
+00:38:42,068 --> 00:38:46,068
+But since f is invertible function,
+
+566
+00:38:47,068 --> 00:38:49,068
+dx over dy
+
+567
+00:38:50,068 --> 00:38:52,068
+have to be non-zero.
+
+568
+00:38:52,068 --> 00:39:02,068
+Okay, because of the fact that sine arcsine means study on some local parts of sine that okay sine is invertible.
+
+569
+00:39:02,068 --> 00:39:09,068
+Okay, we consider some proper restriction of sine that derivation of sine and arcsine is non-zero.
+
+570
+00:39:09,068 --> 00:39:13,068
+That's why we can talk about inverse of function.
+
+571
+00:39:13,068 --> 00:39:16,068
+Okay, take and take out this fact.
+
+572
+00:39:16,068 --> 00:39:19,068
+So take and take out by using this fact.
+
+573
+00:39:19,068 --> 00:39:23,068
+So in this case x is dependent variable y is independent variable.
+
+574
+00:39:23,068 --> 00:39:25,068
+Let me write here.
+
+575
+00:39:25,068 --> 00:39:29,068
+When you derivate take and take out this dependence and independence case,
+
+576
+00:39:29,068 --> 00:39:32,068
+derivation of x with respect to y.
+
+577
+00:39:32,068 --> 00:39:34,068
+So only we have cosine y.
+
+578
+00:39:34,068 --> 00:39:37,068
+Okay, so let me talk about this.
+
+579
+00:39:37,068 --> 00:39:44,068
+So by particular theorem you can write this by particular theorem.
+
+580
+00:39:44,068 --> 00:39:49,068
+You can write this.
+
+581
+00:39:49,068 --> 00:39:51,068
+1 minus x equal.
+
+582
+00:39:51,068 --> 00:39:55,068
+Okay, so let me talk about this case.
+
+583
+00:39:55,068 --> 00:40:00,068
+So we have some angle y according to this algebraic equations.
+
+584
+00:40:00,068 --> 00:40:03,068
+So we have some y sine is.
+
+585
+00:40:03,068 --> 00:40:04,068
+X.
+
+586
+00:40:04,068 --> 00:40:08,068
+Okay, cosine y.
+
+587
+00:40:08,068 --> 00:40:10,068
+Cosine y.
+
+588
+00:40:10,068 --> 00:40:11,068
+Is.
+
+589
+00:40:11,068 --> 00:40:15,068
+1 minus x square.
+
+590
+00:40:15,068 --> 00:40:17,068
+Can you see that?
+
+591
+00:40:17,068 --> 00:40:18,068
+Cosine y.
+
+592
+00:40:18,068 --> 00:40:19,068
+Yeah.
+
+593
+00:40:19,068 --> 00:40:25,068
+So as you see derivation of arcsine x is 1 over square root of 1 minus x square.
+
+594
+00:40:25,068 --> 00:40:27,068
+Let me generalize this idea.
+
+595
+00:40:27,068 --> 00:40:30,068
+So if you are given some function.
+
+596
+00:40:30,068 --> 00:40:31,068
+Arc.
+
+597
+00:40:31,068 --> 00:40:32,068
+Sine.
+
+598
+00:40:32,068 --> 00:40:34,068
+Composite u of x.
+
+599
+00:40:34,068 --> 00:40:35,068
+Derivation of this.
+
+600
+00:40:35,068 --> 00:40:36,068
+dy over dx.
+
+601
+00:40:36,068 --> 00:40:37,068
+is.
+
+602
+00:40:37,068 --> 00:40:38,068
+u prime of x.
+
+603
+00:40:38,068 --> 00:40:41,068
+over square root of 1 minus u square x.
+
+604
+00:40:41,068 --> 00:40:42,068
+Okay.
+
+605
+00:40:42,068 --> 00:40:45,068
+Now let me introduce some examples.
+
+606
+00:40:45,068 --> 00:40:50,068
+So let me generalize this idea.
+
+607
+00:40:50,068 --> 00:40:52,068
+So if you are given some function.
+
+608
+00:40:52,068 --> 00:40:53,068
+Arc.
+
+609
+00:40:53,068 --> 00:40:54,068
+sin.
+
+610
+00:40:54,068 --> 00:40:55,068
+Composite u of x.
+
+611
+00:40:55,068 --> 00:40:56,068
+examples.
+
+612
+00:40:56,068 --> 00:41:00,068
+So let me give you some examples.
+
+613
+00:41:00,947 --> 00:41:02,947
+So, example.
+
+614
+00:41:07,956 --> 00:41:09,956
+let me write this oxide.
+
+615
+00:41:21,907 --> 00:41:22,407
+Okay.
+
+616
+00:41:23,947 --> 00:41:26,168
+X kare eksi x diyelim.
+
+617
+00:41:27,168 --> 00:41:28,527
+Ya da böyle diyelim. Bir dakika.
+
+618
+00:41:28,688 --> 00:41:29,728
+X kare eksi bir diyelim.
+
+619
+00:41:30,168 --> 00:41:31,087
+Okay, let's write this.
+
+620
+00:41:31,587 --> 00:41:34,027
+X kare eksi 1. Item A,
+
+621
+00:41:35,268 --> 00:41:36,607
+domain of F,
+
+622
+00:41:38,487 --> 00:41:39,367
+item B,
+
+623
+00:41:42,668 --> 00:41:44,507
+derivation function of F.
+
+624
+00:41:46,027 --> 00:41:46,587
+Now,
+
+625
+00:41:47,407 --> 00:41:49,627
+so recall the definition of arcsine
+
+626
+00:41:49,627 --> 00:41:52,947
+in order to talk about invertibility of sine,
+
+627
+00:41:53,087 --> 00:41:54,387
+we need to consider some
+
+628
+00:41:54,387 --> 00:41:57,087
+spatial restriction of sine
+
+629
+00:41:57,087 --> 00:42:00,027
+2, minus 1 and plus 1.
+
+630
+00:42:00,587 --> 00:42:02,587
+Okay, we know that arcsine
+
+631
+00:42:02,587 --> 00:42:06,547
+acts on this interval.
+
+632
+00:42:07,728 --> 00:42:09,487
+Arguments of arcsine
+
+633
+00:42:09,487 --> 00:42:12,427
+must be between minus 1 and plus 1.
+
+634
+00:42:12,668 --> 00:42:14,607
+Otherwise, we cannot talk about
+
+635
+00:42:14,607 --> 00:42:15,947
+inverse of sine.
+
+636
+00:42:16,387 --> 00:42:18,047
+Okay, so in order to make sense
+
+637
+00:42:18,047 --> 00:42:19,807
+for this inverse of function,
+
+638
+00:42:20,248 --> 00:42:20,748
+arcsine.
+
+639
+00:42:21,268 --> 00:42:21,587
+Now,
+
+640
+00:42:21,827 --> 00:42:23,327
+argument of
+
+641
+00:42:23,327 --> 00:42:24,907
+arcsine
+
+642
+00:42:24,907 --> 00:42:26,708
+must be
+
+643
+00:42:26,708 --> 00:42:29,407
+bigger than or equal to minus 1,
+
+644
+00:42:30,367 --> 00:42:31,947
+smaller than or equal to
+
+645
+00:42:31,947 --> 00:42:32,927
+plus 1.
+
+646
+00:42:33,288 --> 00:42:34,768
+When you solve this inequality,
+
+647
+00:42:35,427 --> 00:42:36,168
+x square
+
+648
+00:42:36,168 --> 00:42:38,587
+bigger than or equal to 0,
+
+649
+00:42:39,047 --> 00:42:40,487
+and this is 2.
+
+650
+00:42:40,487 --> 00:42:41,047
+So,
+
+651
+00:42:41,047 --> 00:42:41,788
+answer for this,
+
+652
+00:42:42,407 --> 00:42:42,768
+x
+
+653
+00:42:42,768 --> 00:42:45,647
+this,
+
+654
+00:42:46,027 --> 00:42:46,527
+this.
+
+655
+00:42:46,647 --> 00:42:46,927
+So,
+
+656
+00:42:47,027 --> 00:42:48,367
+this is the domain of F.
+
+657
+00:42:48,487 --> 00:42:49,627
+Domain of F
+
+658
+00:42:49,627 --> 00:42:52,387
+is closed interval.
+
+659
+00:42:55,387 --> 00:42:56,047
+Now,
+
+660
+00:42:56,167 --> 00:42:59,927
+derivation function,
+
+661
+00:43:00,067 --> 00:43:02,708
+derivation of argument of arcsine
+
+662
+00:43:02,708 --> 00:43:06,007
+according to chain rule
+
+663
+00:43:06,007 --> 00:43:09,748
+over square root of
+
+664
+00:43:09,748 --> 00:43:13,887
+1 minus u square.
+
+665
+00:43:14,407 --> 00:43:16,288
+1 minus argument of square.
+
+666
+00:43:17,248 --> 00:43:18,567
+Argument of, sorry,
+
+667
+00:43:18,668 --> 00:43:19,987
+argument of arcsine.
+
+668
+00:43:21,347 --> 00:43:23,907
+Square of argument of arcsine.
+
+669
+00:43:24,587 --> 00:43:24,907
+Okay,
+
+670
+00:43:25,047 --> 00:43:25,967
+so this is the answer.
+
+671
+00:43:25,967 --> 00:43:26,467
+So,
+
+672
+00:43:26,467 --> 00:43:28,087
+this is the answer.
+
+673
+00:43:34,516 --> 00:43:43,516
+Any question about this derivation? Var mı anlaşımın bir yer? Yok galiba. Geçiyorum.
+
+674
+00:43:43,516 --> 00:43:50,715
+Okay, let me talk about other. Stop this share.
+
+675
+00:43:57,523 --> 00:44:14,503
+Let me share this part. Buraları geçiyorum arkadaşlar. Hızlı bir şekilde geçtim buraları. Çok detaylı üzerinde durmak istemiyorum. Anlattım buraları. Üstel fonksiyonları anlatacağım. Geleceğim. Önce şeyleri anlatayım dedim. Ters trigonometrik fonksiyonları.
+
+676
+00:44:14,503 --> 00:44:23,284
+Evet. Şuradan geleyim. Bir dakika.
+
+677
+00:44:27,476 --> 00:44:27,976
+ok.
+
+678
+00:44:33,780 --> 00:44:43,940
+Okay, so those are derivation of arcsine, derivation of arcsine. We talked about this before. Let me use different color.
+
+679
+00:44:45,860 --> 00:44:50,660
+So we talk about this. We can obtain derivation of
+
+680
+00:44:53,780 --> 00:44:56,660
+arccosine by using similar approach.
+
+681
+00:45:00,755 --> 00:45:03,556
+So I need to express here somewhere here.
+
+682
+00:45:06,115 --> 00:45:11,955
+Okay, now we have this table.
+
+683
+00:45:15,076 --> 00:45:20,275
+So we have this table. This table is very important, but we can obtain this table directly.
+
+684
+00:45:20,915 --> 00:45:27,795
+So this is arcsin. Attention here. This notation not so good. So I prefer to use arcsin.
+
+685
+00:45:27,795 --> 00:45:34,995
+So arc tangent. Arc tangent x arcsecant.
+
+686
+00:45:37,635 --> 00:45:46,516
+Okay, now so by using similar ideas you can compute this. Okay, look at that. Only difference between
+
+687
+00:45:46,516 --> 00:45:53,155
+derivation of arcsin and arccosine is minus. Can you see that? So there is no minus here.
+
+688
+00:45:53,155 --> 00:45:59,155
+Arc tangent. So let me talk about derivation of arc tangent. Stop this share.
+
+689
+00:46:02,115 --> 00:46:04,275
+So clear all drivings.
+
+690
+00:46:06,435 --> 00:46:17,155
+So look at the graph of tangent.
+
+691
+00:46:17,139 --> 00:46:25,559
+So, tangent function, for the tangent function, there are infinitely many vertical asymptotes.
+
+692
+00:46:27,059 --> 00:46:37,920
+So, at the point minus pi over 2, at the point pi over 2, at the point 3 pi over 2.
+
+693
+00:46:37,920 --> 00:46:38,879
+Okay.
+
+694
+00:46:43,380 --> 00:47:11,380
+As you see, in this case, this is not 1 to 1. In this case, according to this graph, there are infinitely many pieces, something like that. Not 1 to 1. And on top. This graph. But in order to talk about inverse of tangent, we need to consider some spatial resection of tangent. Okay? So, let me write this part. Okay, so...
+
+695
+00:47:11,380 --> 00:47:14,480
+So, we consider only this part.
+
+696
+00:47:31,476 --> 00:47:33,476
+y is equal to tangent x.
+
+697
+00:47:34,135 --> 00:47:35,175
+Okay, now
+
+698
+00:47:35,175 --> 00:47:39,836
+so this is one to one
+
+699
+00:47:39,836 --> 00:47:43,856
+from minus pi over
+
+700
+00:47:43,856 --> 00:47:45,776
+two to pi over two.
+
+701
+00:47:45,776 --> 00:47:47,836
+So we cannot include this
+
+702
+00:47:47,836 --> 00:47:51,976
+end point because of the fact that
+
+703
+00:47:51,976 --> 00:47:53,615
+at that point
+
+704
+00:47:53,615 --> 00:47:56,096
+at those points our function
+
+705
+00:47:56,096 --> 00:47:57,695
+has vertical asymptotes.
+
+706
+00:47:58,516 --> 00:47:59,516
+Okay, now
+
+707
+00:47:59,516 --> 00:48:02,056
+orthogonal projection of
+
+708
+00:48:02,056 --> 00:48:05,115
+this graph
+
+709
+00:48:05,115 --> 00:48:07,856
+results in
+
+710
+00:48:07,856 --> 00:48:09,916
+the set of all real numbers
+
+711
+00:48:09,916 --> 00:48:12,896
+okay, covers
+
+712
+00:48:12,896 --> 00:48:15,076
+the orthogonal projection of this graph
+
+713
+00:48:15,076 --> 00:48:16,436
+covers the y-axis.
+
+714
+00:48:17,076 --> 00:48:17,715
+Okay, so this
+
+715
+00:48:17,715 --> 00:48:19,876
+so that's why we can talk about
+
+716
+00:48:19,876 --> 00:48:21,976
+its inverse.
+
+717
+00:48:22,296 --> 00:48:23,576
+So this is one to one
+
+718
+00:48:23,576 --> 00:48:25,436
+and on top
+
+719
+00:48:25,436 --> 00:48:28,635
+that's why we can talk about
+
+720
+00:48:28,635 --> 00:48:29,416
+its inverse
+
+721
+00:48:29,416 --> 00:48:29,916
+and
+
+722
+00:48:29,916 --> 00:48:31,016
+the
+
+723
+00:48:31,016 --> 00:48:31,416
+and
+
+724
+00:48:31,416 --> 00:48:31,956
+the
+
+725
+00:48:31,956 --> 00:48:32,416
+and
+
+726
+00:48:32,416 --> 00:48:33,016
+the
+
+727
+00:48:33,016 --> 00:48:33,456
+and
+
+728
+00:48:33,456 --> 00:48:34,016
+the
+
+729
+00:48:34,016 --> 00:48:34,896
+and
+
+730
+00:48:34,896 --> 00:48:35,016
+the
+
+731
+00:48:35,016 --> 00:48:35,516
+and
+
+732
+00:48:35,516 --> 00:48:35,796
+the
+
+733
+00:48:38,996 --> 00:48:48,276
+Arktangent, arktangent, may be anything, may be any real number, there is no special constraint.
+
+734
+00:48:48,276 --> 00:48:58,155
+Okay, unlike the case of sine, cosine, arksine, cosine, we have this case.
+
+735
+00:48:58,816 --> 00:49:01,715
+Arktangent may act on any real number.
+
+736
+00:49:02,135 --> 00:49:07,596
+Okay, now we have this, we have this relation.
+
+737
+00:49:07,596 --> 00:49:12,195
+So y is equal to arktangent x.
+
+738
+00:49:13,076 --> 00:49:21,776
+When you apply tangent function to both sides of this equality, tangent y is equal to x.
+
+739
+00:49:22,316 --> 00:49:25,896
+Okay, now similarly, you can obtain other k.
+
+740
+00:49:26,296 --> 00:49:29,936
+Okay, so let's obtain derivation of arktangent.
+
+741
+00:49:30,396 --> 00:49:33,796
+So how can we obtain derivation of arktangent?
+
+742
+00:49:33,796 --> 00:49:38,175
+So we can write this, 1 over dx over dy.
+
+743
+00:49:38,956 --> 00:49:43,996
+Because of the fact that f has inverse, we can write this.
+
+744
+00:49:44,516 --> 00:49:57,816
+Now, so 1 over derivation of x with respect to y, derivation of x with respect to y, 1 plus tangent square y, 1 over 1 plus x square.
+
+745
+00:49:57,816 --> 00:50:00,816
+Okay, so this is the derivation of arktangent u.
+
+746
+00:50:00,816 --> 00:50:00,836
+Okay, so this is the derivation of arktangent.
+
+747
+00:50:00,836 --> 00:50:03,796
+Now, you can generalize this.
+
+748
+00:50:04,476 --> 00:50:06,976
+Derivation of arktangent u.
+
+749
+00:50:08,396 --> 00:50:12,215
+By using chain rule.
+
+750
+00:50:12,976 --> 00:50:21,936
+Derivation of argument of arktangent over 1 plus square of argument of arktangent.
+
+751
+00:50:21,936 --> 00:50:26,096
+Okay, now this is the derivation of arktangent u.
+
+752
+00:50:26,776 --> 00:50:30,675
+Okay, now similarly, you can obtain derivation of arktangent.
+
+753
+00:50:31,016 --> 00:50:36,836
+Okay, let me turn back to our basic screen.
+
+754
+00:50:36,836 --> 00:50:44,276
+Okay, the LGC derivation of arktangent, 1 over 1 plus x square.
+
+755
+00:50:44,615 --> 00:50:51,135
+Derivation of arktangent, 1 over absolute of x times square root of x square minus 1.
+
+756
+00:50:51,756 --> 00:50:52,695
+Look at here.
+
+757
+00:50:52,916 --> 00:51:00,336
+It is sufficient to know this column to figure out right hand side.
+
+758
+00:51:00,336 --> 00:51:02,256
+We put only this minus.
+
+759
+00:51:02,695 --> 00:51:03,356
+Can you see that?
+
+760
+00:51:04,256 --> 00:51:05,476
+Only difference is minus.
+
+761
+00:51:05,596 --> 00:51:09,256
+So we know that sine is conjugate of cosine.
+
+762
+00:51:09,756 --> 00:51:12,376
+Tangent is conjugate of cotangent.
+
+763
+00:51:13,155 --> 00:51:15,436
+Second is conjugate of cosecant.
+
+764
+00:51:15,996 --> 00:51:17,896
+Okay, so we have only this minus.
+
+765
+00:51:18,695 --> 00:51:23,436
+Has difference between derivation of arktangent, arktangent.
+
+766
+00:51:23,556 --> 00:51:25,496
+Okay, look at here.
+
+767
+00:51:25,496 --> 00:51:27,036
+Var mı anlaşma en bir yer?
+
+768
+00:51:27,036 --> 00:51:31,276
+Bakın sadece 2-3 tanesini çıkartmak.
+
+769
+00:51:31,376 --> 00:51:34,316
+Onları da bilirseniz 10-15 saniyede çıkartabilirsiniz.
+
+770
+00:51:35,056 --> 00:51:39,796
+Dolayısıyla 6 farklı formülü ne yapabiliyorsunuz arkadaşlar?
+
+771
+00:51:40,536 --> 00:51:43,175
+Çok kısa sürede zihninizden çıkartabilirsiniz.
+
+772
+00:51:43,715 --> 00:51:45,336
+Evet, var mı sorusu olan?
+
+773
+00:51:46,675 --> 00:51:48,936
+By the way, let me talk about this fact.
+
+774
+00:51:51,235 --> 00:51:53,215
+Let me talk about this fact.
+
+775
+00:51:59,507 --> 00:52:13,007
+if you have some graph yf , suppose that this is invertible function, must be invertible, okay.
+
+776
+00:52:13,007 --> 00:52:23,007
+Now in that case, the graph of its inverse is symmetry of this graph with respect to yx.
+
+777
+00:52:23,007 --> 00:52:25,007
+Now in that case,
+
+778
+00:52:28,148 --> 00:52:33,488
+ne yapıyorsunuz? Şöyle biraz simetrik yapın arkadaşlar. Simetrik bir şekilde.
+
+779
+00:52:41,619 --> 00:52:45,559
+Şöyle, kare simetri olmadı ama siz simetrik yapın arkadaşlar.
+
+780
+00:52:46,400 --> 00:52:51,619
+Y f inverse x. Ne olmuşlar? Buna dikkat edin.
+
+781
+00:52:52,480 --> 00:52:54,259
+Okay, this is very important.
+
+782
+00:52:55,420 --> 00:53:01,880
+The graph of f inverse is the symmetry of y f of x with respect to y x line.
+
+783
+00:53:01,880 --> 00:53:02,719
+Okay.
+
+784
+00:53:06,324 --> 00:53:16,923
+Evet. Var mı sorusu olan? Bir ara verelim 15 dakika. 15 dakika aradan sonra konuları bitirip hemen hızlı bir şekilde yari soru çözelim.
+
+785
+00:53:20,500 --> 00:53:22,199
+Sorusu olan yoksa ara verelim.
+
+786
+00:53:24,000 --> 00:53:25,780
+Okay, have a break. 15 minutes.
+
+787
+01:10:46,963 --> 01:10:50,823
+Evet, merhaba arkadaşlar. Kaldığımız yerden devam edelim.
+
+788
+01:11:00,884 --> 01:11:03,743
+Evet, üstel fonksiyonlardan bahsedelim.
+
+789
+01:11:32,564 --> 01:11:35,944
+Evet, sesim geliyor değil mi gençler? Paylaştığımı görüyorsunuz.
+
+790
+01:11:38,804 --> 01:11:39,524
+Evet.
+
+791
+01:11:40,744 --> 01:11:43,543
+Okay. Let me talk about
+
+792
+01:11:43,543 --> 01:11:46,684
+exponential function with base b.
+
+793
+01:11:47,384 --> 01:11:50,324
+So b to x, so this b must be
+
+794
+01:11:50,324 --> 01:11:53,724
+must be positive number
+
+795
+01:11:53,724 --> 01:11:54,724
+but
+
+796
+01:11:54,724 --> 01:11:58,124
+must be different from 1. Okay.
+
+797
+01:11:58,844 --> 01:12:02,244
+Otherwise, you cannot talk about exponential function.
+
+798
+01:12:02,244 --> 01:12:03,444
+you are going to obtain
+
+799
+01:12:03,444 --> 01:12:04,884
+some constant function.
+
+800
+01:12:06,564 --> 01:12:09,524
+Okay. So as you see, b to x is always positive.
+
+801
+01:12:11,124 --> 01:12:13,844
+Now, so we need to suppose
+
+802
+01:12:14,884 --> 01:12:15,124
+this
+
+803
+01:12:17,684 --> 01:12:21,284
+inequality and equality must hold. Okay. f of 0, 1.
+
+804
+01:12:22,324 --> 01:12:29,124
+Now attention here. So 3 to x somewhere here. 5 to x as long as this base
+
+805
+01:12:29,124 --> 01:12:31,124
+value is increasing.
+
+806
+01:12:31,124 --> 01:12:33,444
+value is increasing. As you see, this graph
+
+807
+01:12:33,444 --> 01:12:33,524
+is increasing. As you see, this graph
+
+808
+01:12:34,644 --> 01:12:36,484
+rising up. Can you see that?
+
+809
+01:12:38,003 --> 01:12:39,124
+Now we consider
+
+810
+01:12:39,684 --> 01:12:42,804
+other case. So consider this case. So let me
+
+811
+01:12:42,804 --> 01:12:45,284
+stop this share. I cannot
+
+812
+01:12:46,484 --> 01:12:48,003
+follow this. Okay.
+
+813
+01:12:48,003 --> 01:12:50,003
+Okay.
+
+814
+01:12:53,524 --> 01:12:55,524
+ve skerciş kraft.
+
+815
+01:13:01,971 --> 01:13:29,331
+So, let's say this is the graph of explanation function b to x sub. b must be different from 1. b is positive. Okay. Now, so consider this spatial case. Whenever b is bigger than 0, smaller than 1, for example, consider this one. 1 over 2 to x.
+
+816
+01:13:29,331 --> 01:13:38,411
+Now, we have 2 to minus x. Can you see that? So, it's graph. Let's suppose that this is 2x.
+
+817
+01:13:41,411 --> 01:13:44,971
+So, here, so we are going to obtain the graph of
+
+818
+01:13:49,140 --> 01:14:11,700
+y, 2 to minus x. Okay, can you see that? So, as long as, let me sketch this graph. So, as long as limit, as long as x goes to infinite, 2 to x goes to 2 to infinite, goes to infinite. So, there is no horizontal asymptote for this explanation function.
+
+819
+01:14:11,700 --> 01:14:36,180
+no horizontal asymptote. Okay, so what about this? Limit as x goes to infinite, 1 over 2 to x. So, in fact, limit as x goes to infinite, 2 to minus x. Now, so,
+
+820
+01:14:40,212 --> 01:14:47,052
+Ve bu,
+
+821
+01:14:51,507 --> 01:15:00,188
+As long as x goes to infinite, 2 to x, go up infinitely.
+
+822
+01:15:03,731 --> 01:15:29,652
+at the point x0, y takes one value. Okay, as long as x goes to minus infinite, let me write this, as long as x goes to minus infinite, 2 to x, 2 to minus infinite, goes to 0. Can you see that? Now, as long as x goes to minus infinite, 2 to x, okay, approach 0.
+
+823
+01:15:29,652 --> 01:15:45,032
+So y0 is horizontal asymptote at minus infinite, at infinite, okay. Now look at this case, 2 to minus x.
+
+824
+01:15:52,083 --> 01:15:57,323
+This is the graph of y is equal to 2 to minus x.
+
+825
+01:15:57,943 --> 01:16:03,903
+Okay, so we take the symmetry of y 2 to x with respect to y.
+
+826
+01:16:04,903 --> 01:16:11,563
+Okay, now as long as x goes to minus infinite, 2 to minus x go up infinitely.
+
+827
+01:16:11,563 --> 01:16:18,604
+As long as x goes to infinite, 2 to minus x approach 0.
+
+828
+01:16:18,943 --> 01:16:20,844
+Dikkat edin arkadaşlar, orada.
+
+829
+01:16:20,844 --> 01:16:22,043
+Tamam mı?
+
+830
+01:16:22,043 --> 01:16:24,543
+Bir tane böyle basit bir örnek ile izah etmiş oldum.
+
+831
+01:16:24,644 --> 01:16:25,443
+250 x'i.
+
+832
+01:16:26,344 --> 01:16:27,523
+Peki, soru şu.
+
+833
+01:16:28,123 --> 01:16:33,304
+Okay, so what can we say about the derivation, about the inverse of this?
+
+834
+01:16:39,604 --> 01:16:40,444
+but sorry.
+
+835
+01:16:42,484 --> 01:16:43,844
+ney-ebsim, simile, okay.
+
+836
+01:16:44,404 --> 01:16:45,604
+so what can we say?
+
+837
+01:16:59,828 --> 01:17:06,548
+oh sorry sorry sorry sorry let me talk about first of all spatial exponential function.
+
+838
+01:17:08,708 --> 01:17:14,468
+so this is natural this is called natural exponential function.
+
+839
+01:17:21,460 --> 01:17:27,779
+So, where, where, e is some spatial number, approximately.
+
+840
+01:17:32,180 --> 01:17:45,380
+Okay, something like that. Now, this is very popular. This is very popular. Exponation function, natural exponential function. Attention here. Some people use this notation.
+
+841
+01:17:49,076 --> 01:17:51,076
+ok, ekoller, bu.
+
+842
+01:17:55,539 --> 01:18:04,180
+Now, so we can talk about its, we can talk about its approximates.
+
+843
+01:18:06,180 --> 01:18:15,939
+1 plus x plus x squared over 2 factorial, x cubed over 3 factorial.
+
+844
+01:18:16,600 --> 01:18:23,859
+This exponential x approximates, approximates, this polynomial, infinite degree.
+
+845
+01:18:23,859 --> 01:18:27,699
+You are gonna, you are gonna learn this next term.
+
+846
+01:18:37,939 --> 01:18:44,479
+Dikkat edin arkadaşlar. e üzeri x, 1 artı x artı x kare bölü 2 faktörü yer. x üzeri 3 bölü 3 faktörü yer.
+
+847
+01:18:44,639 --> 01:18:51,219
+Nokta nokta diye x üzeri m bölü m faktörü yer. Buradaki tek terimlerin toplamı şeklinde yazılabiliyor.
+
+848
+01:18:51,319 --> 01:18:56,319
+Yani sonsuz dereceleri bir polinoma yakınsıyor. Yakınsıyor. Dikkat edin.
+
+849
+01:18:56,319 --> 01:19:01,319
+Bunları gelecek dönem öğreneceksiniz mantığını. Şimdi bu dönem bu şekilde görelim.
+
+850
+01:19:01,819 --> 01:19:06,599
+Şimdi türevini alalım. Let's derivate this function. Derivation of exponential x.
+
+851
+01:19:11,828 --> 01:19:13,828
+Now derivation of 1, 0.
+
+852
+01:19:15,488 --> 01:19:17,648
+Derivation of x, 1.
+
+853
+01:19:18,928 --> 01:19:21,408
+Derivation of x² over 2!
+
+854
+01:19:21,408 --> 01:19:22,568
+With respect to x.
+
+855
+01:19:24,708 --> 01:19:25,348
+X.
+
+856
+01:19:26,128 --> 01:19:29,288
+And derivation of x³ over 3!
+
+857
+01:19:29,288 --> 01:19:30,548
+With respect to x.
+
+858
+01:19:31,168 --> 01:19:33,668
+X² over 2!
+
+859
+01:19:34,588 --> 01:19:36,428
+And derivation of this,
+
+860
+01:19:36,948 --> 01:19:39,088
+x³ over 3!
+
+861
+01:19:39,088 --> 01:19:42,768
+And dot dot dot, derivation of this,
+
+862
+01:19:42,768 --> 01:19:48,228
+x² over n-1!
+
+863
+01:19:48,228 --> 01:19:51,528
+And derivation of the next term here,
+
+864
+01:19:51,888 --> 01:19:53,728
+x² over n!
+
+865
+01:19:54,307 --> 01:19:56,428
+So as you see, nothing changed.
+
+866
+01:19:56,768 --> 01:19:58,608
+Because of these infinite terms,
+
+867
+01:19:59,128 --> 01:20:00,008
+nothing changed.
+
+868
+01:20:00,188 --> 01:20:03,668
+Derivation of natural explanation function
+
+869
+01:20:03,668 --> 01:20:05,868
+is nothing else than
+
+870
+01:20:05,868 --> 01:20:08,928
+natural explanation function.
+
+871
+01:20:09,088 --> 01:20:10,088
+Okay!
+
+872
+01:20:10,088 --> 01:20:12,768
+Now taking take on this computation,
+
+873
+01:20:12,768 --> 01:20:14,768
+so we can introduce
+
+874
+01:20:14,768 --> 01:20:17,248
+some general definition for
+
+875
+01:20:17,248 --> 01:20:18,688
+explanation function,
+
+876
+01:20:18,688 --> 01:20:20,048
+natural explanation function.
+
+877
+01:20:20,048 --> 01:20:23,248
+So, some function from,
+
+878
+01:20:23,248 --> 01:20:25,968
+so let me sketch this graph,
+
+879
+01:20:25,968 --> 01:20:27,248
+look at here.
+
+880
+01:20:29,248 --> 01:20:30,868
+This is the graph of
+
+881
+01:20:30,868 --> 01:20:32,768
+natural explanation function.
+
+882
+01:20:32,768 --> 01:20:33,768
+So, let me see.
+
+883
+01:20:33,768 --> 01:20:37,768
+Let me see.
+
+884
+01:20:36,467 --> 01:20:58,537
+x, let me use this e to x. Okay. Now as you see, domain of this explanation function, domain of this explanation function, the set of Orlin numbers, and if you take the orthogonal projection of this graph,
+
+885
+01:21:03,475 --> 01:21:33,475
+y-axis. So co-domain, this. So, attention here, this is one to one and onto. We can talk about its inverse of this function. Look at here, exponential function holds this condition. a plus, sorry, a plus b,
+
+886
+01:21:33,475 --> 01:21:34,475
+a,
+
+887
+01:21:37,716 --> 01:21:40,716
+x'e'b'
+
+888
+01:21:40,716 --> 01:21:42,716
+ilk condition
+
+889
+01:21:42,716 --> 01:21:44,716
+2nd condition
+
+890
+01:21:50,420 --> 01:21:51,699
+derivation of,
+
+891
+01:21:54,619 --> 01:21:55,980
+explanation function,
+
+892
+01:21:57,460 --> 01:21:58,460
+exponential x.
+
+893
+01:21:59,020 --> 01:21:59,319
+Okay.
+
+894
+01:22:00,440 --> 01:22:02,079
+Now, this is a very important rule.
+
+895
+01:22:03,940 --> 01:22:04,739
+Now, what about,
+
+896
+01:22:05,739 --> 01:22:07,020
+derivation of other,
+
+897
+01:22:07,659 --> 01:22:09,699
+functions, other exponential functions?
+
+898
+01:22:09,980 --> 01:22:10,899
+Let's consider,
+
+899
+01:22:13,140 --> 01:22:14,699
+any exponential function.
+
+900
+01:22:15,380 --> 01:22:15,899
+Okay, sorry.
+
+901
+01:22:16,060 --> 01:22:18,140
+First of all, let me talk about its inverse.
+
+902
+01:22:25,524 --> 01:22:31,844
+İngvrse, since this is 1 to 1 and onto, we can talk about its inverse.
+
+903
+01:22:32,804 --> 01:22:39,684
+So, which is called natural logarithmic function. Natural logarithmic function ln
+
+904
+01:22:41,604 --> 01:22:46,324
+is the inverse of natural logarithmic function.
+
+905
+01:22:46,324 --> 01:22:55,524
+Sorry, natural exponential function. Now we use this notation ln, natural logarithmic function,
+
+906
+01:22:55,524 --> 01:23:04,484
+which is the inverse of natural exponential function from 0, infinite to the set of ordinary numbers.
+
+907
+01:23:04,484 --> 01:23:14,564
+This means that arguments of ln must be non- okay, must be positive. Okay, cannot be 0.
+
+908
+01:23:14,564 --> 01:23:20,804
+And output maybe any real number. Okay, now what does it mean?
+
+909
+01:23:22,404 --> 01:23:37,364
+So, exponential composite ln results in identity function ln composite explanation.
+
+910
+01:23:38,084 --> 01:23:41,764
+So, we have this inverse property.
+
+911
+01:23:44,564 --> 01:23:51,524
+So, what does it mean? This means that exponential ln x
+
+912
+01:23:54,884 --> 01:24:06,003
+equals to x. So, ln exponential x. Okay, so what does this is? In fact this. So, we generally prefer to use this notation.
+
+913
+01:24:06,003 --> 01:24:09,204
+e to ln x e to ln x. E to ln x.
+
+914
+01:24:11,604 --> 01:24:16,324
+So, this is ln e to x. Okay.
+
+915
+01:24:16,324 --> 01:24:40,644
+So, we have this.
+
+916
+01:24:19,988 --> 01:24:22,448
+Now, so we can write this.
+
+917
+01:24:23,168 --> 01:24:28,168
+So if you have this, y is equal to exponential x.
+
+918
+01:24:29,008 --> 01:24:34,387
+This is equivalent to saying that when you apply natural logarithmic function,
+
+919
+01:24:35,028 --> 01:24:39,368
+which is the inverse of exponential function, natural exponential function.
+
+920
+01:24:39,948 --> 01:24:41,648
+So l and y.
+
+921
+01:24:42,648 --> 01:24:44,887
+So we apply both sides of this equality.
+
+922
+01:24:45,188 --> 01:24:49,188
+We apply natural logarithmic function to both sides of this equality.
+
+923
+01:24:49,188 --> 01:24:53,548
+L and y is equal to l and exponential x.
+
+924
+01:24:54,268 --> 01:24:55,908
+L and composite exponential.
+
+925
+01:24:56,548 --> 01:24:57,387
+We have this.
+
+926
+01:24:57,768 --> 01:24:57,927
+Okay.
+
+927
+01:24:58,307 --> 01:25:02,508
+So this is very important logical equivalence.
+
+928
+01:25:03,108 --> 01:25:04,668
+Mantıksal dekliktir arkadaşlar.
+
+929
+01:25:04,988 --> 01:25:06,008
+Tanımlardan geliyor.
+
+930
+01:25:06,368 --> 01:25:08,208
+Birbirinin tersi olmasından dolayı.
+
+931
+01:25:08,488 --> 01:25:08,988
+Tamam arkadaşlar.
+
+932
+01:25:09,688 --> 01:25:13,967
+Şimdi bu özelliklerden faydalanarak bakışının neleri sunabiliyoruz?
+
+933
+01:25:14,008 --> 01:25:15,967
+Logarithmic function özellikleri sunabiliriz.
+
+934
+01:25:15,967 --> 01:25:22,807
+By using this inverse property, we can talk about properties of logarithmic function, natural logarithmic function.
+
+935
+01:25:23,608 --> 01:25:26,588
+And then a times b.
+
+936
+01:25:28,648 --> 01:25:32,188
+And then you can prove this by using inverse property.
+
+937
+01:25:33,248 --> 01:25:33,868
+L and b.
+
+938
+01:25:33,868 --> 01:25:40,628
+Now similarly, where a must be positive, b must be positive.
+
+939
+01:25:40,748 --> 01:25:43,508
+Otherwise, we cannot talk about natural logarithmic function.
+
+940
+01:25:43,988 --> 01:25:44,128
+Okay.
+
+941
+01:25:44,588 --> 01:25:47,368
+Now, l and.
+
+942
+01:25:47,988 --> 01:25:50,828
+In fact, this is the special case of the item.
+
+943
+01:25:50,828 --> 01:25:53,188
+Start.
+
+944
+01:25:54,568 --> 01:25:59,608
+So this is l and a minus l and b.
+
+945
+01:25:59,908 --> 01:26:01,828
+So again, a and b are positive.
+
+946
+01:26:02,548 --> 01:26:02,948
+Now,
+
+947
+01:26:02,948 --> 01:26:08,948
+we can prove this by using inverse property.
+
+948
+01:26:11,588 --> 01:26:13,128
+So c is a real number.
+
+949
+01:26:13,288 --> 01:26:14,068
+A is positive.
+
+950
+01:26:15,068 --> 01:26:16,387
+You can prove this
+
+951
+01:26:16,387 --> 01:26:20,628
+by using inverse property.
+
+952
+01:26:21,467 --> 01:26:23,868
+Ters olma özelliğinden faydalanarak arkadaşlar,
+
+953
+01:26:23,868 --> 01:26:24,368
+Yani,
+
+954
+01:26:24,368 --> 01:26:26,387
+by using this fact,
+
+955
+01:26:27,288 --> 01:26:30,368
+a is equal to natural logarithmic b.
+
+956
+01:26:30,988 --> 01:26:33,248
+This is equivalent to saying that
+
+957
+01:26:33,248 --> 01:26:35,588
+explanation e,
+
+958
+01:26:36,068 --> 01:26:38,168
+explanation a is equal to b.
+
+959
+01:26:38,307 --> 01:26:40,648
+By using this inverse property,
+
+960
+01:26:41,088 --> 01:26:42,728
+you can prove
+
+961
+01:26:42,728 --> 01:26:44,008
+this
+
+962
+01:26:44,008 --> 01:26:45,307
+proportion.
+
+963
+01:26:45,868 --> 01:26:47,728
+Some students make this mistake,
+
+964
+01:26:47,828 --> 01:26:48,528
+unfortunately.
+
+965
+01:26:48,528 --> 01:26:50,288
+they write this.
+
+966
+01:26:50,948 --> 01:26:51,908
+This is not true.
+
+967
+01:26:54,868 --> 01:26:56,628
+Some students make this mistake,
+
+968
+01:26:56,708 --> 01:26:57,248
+unfortunately.
+
+969
+01:26:57,248 --> 01:26:58,088
+In
+
+970
+01:26:58,088 --> 01:27:02,288
+the past years.
+
+971
+01:27:04,208 --> 01:27:05,048
+This is not true.
+
+972
+01:27:08,208 --> 01:27:08,507
+Okay.
+
+973
+01:27:09,108 --> 01:27:09,728
+Not equal.
+
+974
+01:27:11,387 --> 01:27:12,148
+Dikkat edin.
+
+975
+01:27:12,188 --> 01:27:13,268
+Bu hataları yapmayın.
+
+976
+01:27:13,387 --> 01:27:14,768
+Bazıları şöyle yapıyor hatta.
+
+977
+01:27:15,128 --> 01:27:15,688
+Kafasından
+
+978
+01:27:15,688 --> 01:27:18,108
+uyduruyor formülleri.
+
+979
+01:27:18,528 --> 01:27:20,028
+özellikleri.
+
+980
+01:27:23,088 --> 01:27:24,948
+Sakın bu hatalara düşmeyin.
+
+981
+01:27:25,408 --> 01:27:26,328
+Bunu kullanarak
+
+982
+01:27:26,328 --> 01:27:29,788
+bunları gösterebilirsiniz.
+
+983
+01:27:30,988 --> 01:27:31,488
+Tamam mı arkadaşlar?
+
+984
+01:27:32,007 --> 01:27:32,568
+Bu nedir?
+
+985
+01:27:33,988 --> 01:27:34,208
+Bu
+
+986
+01:27:34,208 --> 01:27:35,748
+bir fonksiyon,
+
+987
+01:27:35,828 --> 01:27:37,048
+diğer fonksiyonun tersi ise
+
+988
+01:27:37,048 --> 01:27:38,128
+f bileşke f'nin
+
+989
+01:27:38,128 --> 01:27:39,427
+tersi
+
+990
+01:27:39,427 --> 01:27:41,048
+özdeşlik fonksiyonunu verir.
+
+991
+01:27:41,108 --> 01:27:41,708
+Oradan geliyor.
+
+992
+01:27:42,248 --> 01:27:42,967
+Tamam mı gençler?
+
+993
+01:27:43,728 --> 01:27:43,948
+Evet.
+
+994
+01:27:45,408 --> 01:27:47,668
+Yani aslında şurada bir gizli e tabanı var.
+
+995
+01:27:48,528 --> 01:27:50,927
+So we have some base here.
+
+996
+01:27:52,108 --> 01:27:53,268
+So base here.
+
+997
+01:27:53,528 --> 01:27:54,427
+E to A
+
+998
+01:27:54,427 --> 01:27:56,448
+equals to B.
+
+999
+01:27:56,927 --> 01:27:57,248
+Okay.
+
+1000
+01:27:58,948 --> 01:27:59,628
+Now,
+
+1001
+01:27:59,908 --> 01:28:01,307
+let me talk about
+
+1002
+01:28:01,307 --> 01:28:02,328
+derivation of
+
+1003
+01:28:02,328 --> 01:28:03,748
+lnx.
+
+1004
+01:28:05,748 --> 01:28:07,248
+So clear or not.
+
+1005
+01:28:07,248 --> 01:28:07,967
+We know that
+
+1006
+01:28:07,967 --> 01:28:08,887
+derivation of
+
+1007
+01:28:08,887 --> 01:28:10,568
+exponential x
+
+1008
+01:28:10,568 --> 01:28:11,387
+we know that
+
+1009
+01:28:11,387 --> 01:28:12,088
+derivation of
+
+1010
+01:28:12,088 --> 01:28:14,887
+exponential x
+
+1011
+01:28:14,887 --> 01:28:15,887
+x
+
+1012
+01:28:15,887 --> 01:28:42,847
+y
+
+1013
+01:28:17,811 --> 01:28:22,692
+So what about derivation of ln x? How can we show this?
+
+1014
+01:28:24,931 --> 01:28:26,851
+So let's consider its general case.
+
+1015
+01:28:28,372 --> 01:28:29,572
+Derivation of this,
+
+1016
+01:28:30,372 --> 01:28:33,731
+exponential u times u prime.
+
+1017
+01:28:34,692 --> 01:28:40,131
+So what about this? How can we prove this? Let me say y is equal to ln x.
+
+1018
+01:28:41,332 --> 01:28:42,291
+Then we apply
+
+1019
+01:28:42,291 --> 01:28:48,532
+exponential function to both sides of this equality.
+
+1020
+01:28:50,291 --> 01:28:54,532
+So, exponential y is equal to x.
+
+1021
+01:28:55,572 --> 01:28:58,771
+So let's derivate both sides of this equality with respect to
+
+1022
+01:28:59,652 --> 01:29:04,692
+x. Take into account that x is independent variable, y is dependent variable.
+
+1023
+01:29:05,572 --> 01:29:07,332
+So y depends on x.
+
+1024
+01:29:07,332 --> 01:29:15,332
+e to y times y prime. In order to derivate this, we need to use this implicit, we need to use this
+
+1025
+01:29:15,891 --> 01:29:16,532
+chain rule.
+
+1026
+01:29:17,412 --> 01:29:23,332
+Is equal to derivation of x with respect to x, 1. We are looking for dy over dx.
+
+1027
+01:29:24,211 --> 01:29:25,971
+y prime dy over dx.
+
+1028
+01:29:26,771 --> 01:29:28,532
+Exponation minus y.
+
+1029
+01:29:29,492 --> 01:29:32,612
+Exponation y. So in fact, this is where you can write this.
+
+1030
+01:29:32,612 --> 01:29:40,612
+Now, so this is nothing else than 1 over x.
+
+1031
+01:29:41,332 --> 01:29:46,291
+Because e to y, e to y or exponential y is equal to x.
+
+1032
+01:29:47,011 --> 01:29:47,811
+1 over x.
+
+1033
+01:29:48,851 --> 01:29:52,532
+Now derivation of ln x is 1 over x.
+
+1034
+01:29:53,091 --> 01:29:54,931
+So let me generalize this case.
+
+1035
+01:29:54,931 --> 01:30:01,572
+derivation of argument of ln over u.
+
+1036
+01:30:02,131 --> 01:30:05,652
+Okay, so let me introduce some example.
+
+1037
+01:30:09,091 --> 01:30:18,931
+If you are given this.
+
+1038
+01:30:26,195 --> 01:30:26,956
+Oh, sorry.
+
+1039
+01:30:39,060 --> 01:30:54,340
+Item a, what is the domain of f? Item b, what is the derivation function of this f of x?
+
+1040
+01:30:58,836 --> 01:31:04,195
+Evet, herkes bu basit soruya bir baksın bakayım. Basit örnek. Ama bize çok şey anlatıyor.
+
+1041
+01:31:06,356 --> 01:31:08,956
+Evet, herkes kontrol etsin bakayım. Yapsın bunu.
+
+1042
+01:31:12,787 --> 01:31:14,227
+Oradasınız değil mi gençler?
+
+1043
+01:31:17,247 --> 01:31:18,927
+Lisesiniz, soluğunuz çıkmıyor ya.
+
+1044
+01:31:19,027 --> 01:31:20,527
+Derse hiç aktif katılmıyorsunuz.
+
+1045
+01:31:20,607 --> 01:31:21,907
+Bir hafta tatil verdiniz.
+
+1046
+01:31:25,347 --> 01:31:26,027
+Gevşemişsiniz.
+
+1047
+01:31:42,260 --> 01:31:44,239
+[öğrenci], are you here?
+
+1048
+01:31:46,520 --> 01:31:47,420
+Yes, I'm here.
+
+1049
+01:31:47,880 --> 01:31:48,079
+Yes.
+
+1050
+01:31:48,560 --> 01:31:49,860
+[öğrenci], you are here?
+
+1051
+01:31:51,380 --> 01:31:51,980
+I'm here.
+
+1052
+01:31:53,340 --> 01:31:54,460
+[öğrenci].
+
+1053
+01:31:56,180 --> 01:31:56,780
+Here.
+
+1054
+01:31:57,619 --> 01:31:59,560
+[öğrenci], burada.
+
+1055
+01:32:00,840 --> 01:32:01,600
+[öğrenci].
+
+1056
+01:32:02,760 --> 01:32:04,739
+[öğrenci], not here.
+
+1057
+01:32:05,960 --> 01:32:07,020
+[öğrenci].
+
+1058
+01:32:08,300 --> 01:32:09,199
+Buradayım hocam.
+
+1059
+01:32:09,199 --> 01:32:10,579
+[öğrenci].
+
+1060
+01:32:10,579 --> 01:32:13,860
+Buradayım hocam.
+
+1061
+01:32:14,260 --> 01:32:15,180
+İzgir [öğrenci].
+
+1062
+01:32:17,659 --> 01:32:18,560
+Buradayım hocam.
+
+1063
+01:32:18,860 --> 01:32:19,960
+[öğrenci].
+
+1064
+01:32:20,340 --> 01:32:21,940
+Askele yoklama yapıyorum arkadaşlar.
+
+1065
+01:32:22,220 --> 01:32:23,140
+Buradayım hocam.
+
+1066
+01:32:23,579 --> 01:32:24,380
+[öğrenci].
+
+1067
+01:32:29,268 --> 01:32:31,887
+[öğrenci], hamla kapatma seçimleri.
+
+1068
+01:32:31,887 --> 01:32:32,768
+Buradayım hocam.
+
+1069
+01:32:33,807 --> 01:32:34,967
+[öğrenci].
+
+1070
+01:32:35,587 --> 01:32:36,288
+Buradayım hocam.
+
+1071
+01:32:37,728 --> 01:32:38,908
+[öğrenci].
+
+1072
+01:32:41,028 --> 01:32:42,127
+Ben de buradayım hocam.
+
+1073
+01:32:43,768 --> 01:32:44,648
+[öğrenci].
+
+1074
+01:32:47,648 --> 01:32:49,368
+[öğrenci], are you here?
+
+1075
+01:32:51,747 --> 01:32:52,807
+Not here.
+
+1076
+01:32:53,488 --> 01:32:55,967
+[öğrenci].
+
+1077
+01:33:00,787 --> 01:33:12,647
+x kare artı 1x, f'
+
+1078
+01:33:12,647 --> 01:33:30,767
+x kare artı 2x, f'
+
+1079
+01:33:06,739 --> 01:33:07,300
+Here.
+
+1080
+01:33:12,467 --> 01:33:15,007
+[öğrenci]. Burada mı [öğrenci]?
+
+1081
+01:33:20,979 --> 01:33:22,239
+Burada değil galiba. Evet.
+
+1082
+01:33:23,779 --> 01:33:24,959
+Evet gençler yaptınız mı?
+
+1083
+01:33:26,299 --> 01:33:27,419
+Buradaymış [öğrenci].
+
+1084
+01:33:27,919 --> 01:33:28,559
+Güzel.
+
+1085
+01:33:30,000 --> 01:33:32,079
+Evet. Bakalım birinci soruya.
+
+1086
+01:33:32,439 --> 01:33:33,199
+Basit sorumuz.
+
+1087
+01:33:33,819 --> 01:33:36,339
+As you see we have f of x
+
+1088
+01:33:36,339 --> 01:33:38,519
+as composition of arc sine
+
+1089
+01:33:38,519 --> 01:33:39,359
+and L'e.
+
+1090
+01:33:40,299 --> 01:33:42,419
+So you need to check out two case.
+
+1091
+01:33:43,119 --> 01:33:44,319
+Now first of all let's
+
+1092
+01:33:44,319 --> 01:33:45,599
+consider this case.
+
+1093
+01:33:47,319 --> 01:33:48,479
+So we know that
+
+1094
+01:33:48,479 --> 01:33:50,199
+in order to make sense for
+
+1095
+01:33:50,199 --> 01:33:51,919
+logarithmic function argument
+
+1096
+01:33:51,919 --> 01:33:54,239
+of logarithmic function
+
+1097
+01:33:54,239 --> 01:33:56,439
+must be bigger than
+
+1098
+01:33:56,439 --> 01:33:59,619
+0.
+
+1099
+01:34:00,039 --> 01:34:01,359
+You cannot put equal to case.
+
+1100
+01:34:01,439 --> 01:34:04,799
+This implies that x is bigger than 1.
+
+1101
+01:34:05,539 --> 01:34:07,439
+Otherwise you cannot talk about
+
+1102
+01:34:07,439 --> 01:34:09,019
+natural logarithmic function.
+
+1103
+01:34:09,659 --> 01:34:09,859
+Okay.
+
+1104
+01:34:10,500 --> 01:34:13,079
+Now so what about arc sine?
+
+1105
+01:34:13,239 --> 01:34:15,519
+In order to make sense for arc sine
+
+1106
+01:34:15,519 --> 01:34:17,579
+argument of arc sine
+
+1107
+01:34:17,579 --> 01:34:19,139
+must be
+
+1108
+01:34:19,139 --> 01:34:20,219
+between
+
+1109
+01:34:20,219 --> 01:34:24,599
+argument of arc sine
+
+1110
+01:34:24,599 --> 01:34:26,119
+L'n of x minus 1
+
+1111
+01:34:26,119 --> 01:34:28,399
+must be between minus 1
+
+1112
+01:34:28,399 --> 01:34:30,000
+and plus 1.
+
+1113
+01:34:30,379 --> 01:34:30,679
+Okay.
+
+1114
+01:34:31,019 --> 01:34:32,459
+Now in order to
+
+1115
+01:34:32,459 --> 01:34:34,699
+cancel this L'n
+
+1116
+01:34:34,699 --> 01:34:35,519
+we apply
+
+1117
+01:34:35,519 --> 01:34:37,319
+exponential function
+
+1118
+01:34:37,319 --> 01:34:38,379
+to everywhere
+
+1119
+01:34:38,379 --> 01:34:40,419
+every position
+
+1120
+01:34:40,419 --> 01:34:42,500
+every part of this inequality
+
+1121
+01:34:42,500 --> 01:34:45,039
+exponential minus 1
+
+1122
+01:34:45,039 --> 01:34:47,899
+smaller than or equal to
+
+1123
+01:34:47,899 --> 01:34:50,619
+exponential composite L'n
+
+1124
+01:34:50,619 --> 01:34:51,699
+results in
+
+1125
+01:34:51,699 --> 01:34:53,839
+x minus 1
+
+1126
+01:34:53,839 --> 01:34:57,299
+and
+
+1127
+01:34:57,299 --> 01:34:59,179
+exponential 1
+
+1128
+01:34:59,179 --> 01:35:00,299
+e to 1.
+
+1129
+01:35:00,299 --> 01:35:01,619
+Okay.
+
+1130
+01:35:01,619 --> 01:35:03,719
+Now so this implies
+
+1131
+01:35:03,719 --> 01:35:04,379
+x
+
+1132
+01:35:04,379 --> 01:35:06,159
+bigger than or equal to
+
+1133
+01:35:06,159 --> 01:35:07,500
+1
+
+1134
+01:35:07,500 --> 01:35:10,079
+plus
+
+1135
+01:35:10,079 --> 01:35:13,379
+1 plus
+
+1136
+01:35:13,379 --> 01:35:16,559
+1 plus 1 over e
+
+1137
+01:35:16,559 --> 01:35:19,619
+and this is
+
+1138
+01:35:19,619 --> 01:35:21,639
+e plus 1.
+
+1139
+01:35:21,639 --> 01:35:23,479
+So look at this case.
+
+1140
+01:35:23,479 --> 01:35:25,439
+So this condition
+
+1141
+01:35:25,439 --> 01:35:26,519
+already holds.
+
+1142
+01:35:29,059 --> 01:35:29,859
+Okay.
+
+1143
+01:35:30,219 --> 01:35:31,079
+Now that's good.
+
+1144
+01:35:32,079 --> 01:35:33,059
+So this implies
+
+1145
+01:35:33,059 --> 01:35:34,779
+that domain of f
+
+1146
+01:35:34,779 --> 01:35:39,099
+1 plus 1
+
+1147
+01:35:39,099 --> 01:35:39,819
+over e
+
+1148
+01:35:39,819 --> 01:35:42,379
+e plus 1.
+
+1149
+01:35:43,019 --> 01:35:43,819
+Is there any question?
+
+1150
+01:35:45,119 --> 01:35:46,199
+In order to make sense
+
+1151
+01:35:46,199 --> 01:35:47,199
+the rule of f
+
+1152
+01:35:47,199 --> 01:35:48,879
+x values
+
+1153
+01:35:48,879 --> 01:35:49,939
+must be taken
+
+1154
+01:35:49,939 --> 01:35:50,659
+from
+
+1155
+01:35:50,659 --> 01:35:52,059
+this closed
+
+1156
+01:35:52,059 --> 01:35:52,619
+interval
+
+1157
+01:35:52,619 --> 01:35:54,199
+otherwise
+
+1158
+01:35:54,199 --> 01:35:55,359
+it does not make sense.
+
+1159
+01:35:56,159 --> 01:35:56,399
+Okay.
+
+1160
+01:35:57,359 --> 01:35:57,859
+Now
+
+1161
+01:35:57,859 --> 01:35:59,919
+you
+
+1162
+01:36:02,612 --> 01:36:04,612
+let me write this part.
+
+1163
+01:36:20,243 --> 01:36:29,723
+Okay, domain of f, 1 plus 1 over e, e plus 1. Now, what about derivation of this function?
+
+1164
+01:36:32,723 --> 01:36:37,063
+So, recall this rule, recall this rule.
+
+1165
+01:36:44,212 --> 01:37:01,952
+derivation of arcsine u, u' over square root of 1 minus u squared. If you forget this formula, I think you can directly obtain this by using inverse property and derivation of sine.
+
+1166
+01:37:01,952 --> 01:37:19,692
+Okay, now derivation of argument of arcsine L'Hospital, x-1, derivation of this, over square root of 1 minus square of argument of arcsine.
+
+1167
+01:37:19,692 --> 01:37:21,772
+Okay, is that correct?
+
+1168
+01:37:22,492 --> 01:37:35,212
+This is 1 over x minus 1 over square root of 1 minus ln square x minus 1. Okay, you can simplify this.
+
+1169
+01:37:35,912 --> 01:37:43,232
+Any question about this basic example? Var mı? Çok basit ama bize çok şey anlatıyor. Geçelim bunu.
+
+1170
+01:37:43,232 --> 01:37:55,232
+Evet, herhalde.
+
+1171
+01:37:55,232 --> 01:37:59,232
+Evet, herhalde üstel fonksiyon, doğal üstel fonksiyon, doğal logaritmik fonksiyon anlaşıldı.
+
+1172
+01:37:59,232 --> 01:38:07,232
+Okay, stop this share. Let me share this, sorry.
+
+1173
+01:37:59,539 --> 01:38:01,899
+So let's consider this.
+
+1174
+01:38:03,140 --> 01:38:05,699
+If you are given any function,
+
+1175
+01:38:07,060 --> 01:38:08,939
+any explanation function,
+
+1176
+01:38:09,119 --> 01:38:11,640
+not natural explanation function,
+
+1177
+01:38:12,079 --> 01:38:13,699
+so how can we compute
+
+1178
+01:38:17,203 --> 01:38:20,764
+derivation of this any exponential function.
+
+1179
+01:38:23,563 --> 01:38:28,283
+So, in order to obtain derivation function of this, we first apply
+
+1180
+01:38:28,283 --> 01:38:32,764
+natural logarithmic function to both sides of this equality.
+
+1181
+01:38:43,891 --> 01:38:48,051
+So we have this. By using the property of natural logarithmic function,
+
+1182
+01:38:49,011 --> 01:38:57,091
+so we can take this x here as coefficient x times ln a. So we have this.
+
+1183
+01:38:59,811 --> 01:39:04,211
+Now we are ready to derivate both sides of this equality with respect to x.
+
+1184
+01:39:04,211 --> 01:39:13,011
+Attention here. So x here independent variable, y is dependent variable.
+
+1185
+01:39:13,011 --> 01:39:21,011
+Take into account this fact, derivation of ln u. We proved this before. u prime over u.
+
+1186
+01:39:22,371 --> 01:39:32,931
+Okay, now this is y prime over y equals to derivation of x. We know that ln a constant, derivation of x.
+
+1187
+01:39:32,931 --> 01:39:41,572
+So this is ln a. Now this implies that y prime d y over dx, y times
+
+1188
+01:39:41,572 --> 01:39:53,331
+ln a. y prime is equal to y is exponential x times ln a. So attention here.
+
+1189
+01:39:55,492 --> 01:39:58,211
+Spatial case, let me talk about spatial case.
+
+1190
+01:40:00,051 --> 01:40:01,331
+Spatial case.
+
+1191
+01:40:01,331 --> 01:40:15,251
+A is equal to e approximately 2.71. Okay. Now if you consider this spatial case, derivation of
+
+1192
+01:40:15,891 --> 01:40:23,412
+exponential x, you are going to obtain this, exponential x times ln e. Okay, we can verify this.
+
+1193
+01:40:23,412 --> 01:40:27,091
+We know that ln e. So taking into account this fact.
+
+1194
+01:40:29,251 --> 01:40:31,011
+This is equivalent to this.
+
+1195
+01:40:32,051 --> 01:40:34,532
+a is equal to exponential e to b.
+
+1196
+01:40:35,171 --> 01:40:40,692
+Taking into account this inverse, invertibility property. ln e is 1.
+
+1197
+01:40:40,692 --> 01:40:45,731
+We know that ln e is 1. Because the base is here.
+
+1198
+01:40:46,771 --> 01:40:54,532
+Base here e. e to 1 is equal to e. Okay. Now, so this is e to x.
+
+1199
+01:40:54,532 --> 01:40:56,532
+Any question about this derivation?
+
+1200
+01:40:56,532 --> 01:40:57,891
+Soru soruan var mı?
+
+1201
+01:40:59,251 --> 01:41:02,532
+Yok, bunları biliyorsunuz zaten ama ben sadece hatırlatıyorum.
+
+1202
+01:41:02,532 --> 01:41:11,891
+Okay. So what about any logarithmic? Okay, let me talk about this.
+
+1203
+01:41:14,211 --> 01:41:18,452
+Okay, so logarithmic function. So explanation function, sorry.
+
+1204
+01:41:19,731 --> 01:41:24,851
+Suppose that a is bigger than one. In that case, we have such graph.
+
+1205
+01:41:28,435 --> 01:41:33,635
+Okay, suppose that a is bigger than 1, in that case we have such graph.
+
+1206
+01:41:36,195 --> 01:41:48,435
+So a is bigger than 1. Now, look at this graph. So this function, this function from R to
+
+1207
+01:41:50,595 --> 01:41:54,435
+0, infinite. So this is onto, let me,
+
+1208
+01:41:54,435 --> 01:42:02,515
+If you take the orthogonal projection of this graph onto y-axis,
+
+1209
+01:42:04,355 --> 01:42:18,435
+so this is the image. Okay, so this is the image of R under this exponential function.
+
+1210
+01:42:15,475 --> 01:42:17,975
+Ok, this is 1 to 1 and onto.
+
+1211
+01:42:19,115 --> 01:42:23,935
+This is 1 to 1 and onto.
+
+1212
+01:42:25,235 --> 01:42:27,795
+Implying that it has inverse.
+
+1213
+01:42:28,475 --> 01:42:30,435
+It has inverse.
+
+1214
+01:42:30,755 --> 01:42:39,395
+Inverse of any exponential function is called logaritmic function with base a.
+
+1215
+01:42:40,375 --> 01:42:41,655
+With base a, sorry.
+
+1216
+01:42:42,496 --> 01:42:43,536
+So it's inverse.
+
+1217
+01:42:45,475 --> 01:42:49,155
+So we replace domain and co-domain.
+
+1218
+01:42:49,155 --> 01:42:54,576
+Domain and range from 0 to infinite to r.
+
+1219
+01:42:56,576 --> 01:42:59,076
+So we take this x.
+
+1220
+01:43:01,515 --> 01:43:03,795
+F inverse x.
+
+1221
+01:43:04,935 --> 01:43:11,295
+So we use this notation log logaritmic with base a.
+
+1222
+01:43:11,295 --> 01:43:13,295
+Thanks.
+
+1223
+01:43:13,855 --> 01:43:16,576
+Ok, now we prefer to use this notation.
+
+1224
+01:43:16,576 --> 01:43:22,875
+For the inverse of any, any exponential function.
+
+1225
+01:43:23,955 --> 01:43:26,076
+Ok, so we know this fact.
+
+1226
+01:43:26,076 --> 01:43:29,755
+We know this way.
+
+1227
+01:43:29,755 --> 01:43:32,255
+F composite, F inverse.
+
+1228
+01:43:33,255 --> 01:43:34,715
+Identity function.
+
+1229
+01:43:35,455 --> 01:43:36,515
+F inverse.
+
+1230
+01:43:36,875 --> 01:43:38,076
+Composite F.
+
+1231
+01:43:38,795 --> 01:43:39,615
+Meaning that.
+
+1232
+01:43:39,615 --> 01:43:47,435
+So this is a to logaritmic with base a x.
+
+1233
+01:43:48,435 --> 01:43:50,295
+Equals to identity x.
+
+1234
+01:43:51,295 --> 01:43:57,955
+So this means logaritmic a argument of this f of x.
+
+1235
+01:43:57,955 --> 01:43:58,955
+means, sorry.
+
+1236
+01:43:58,955 --> 01:44:01,195
+F of x means, sorry.
+
+1237
+01:44:04,635 --> 01:44:05,175
+Sorry.
+
+1238
+01:44:06,215 --> 01:44:10,555
+F of x is a to x.
+
+1239
+01:44:11,055 --> 01:44:18,315
+So we have this invertibility property.
+
+1240
+01:44:18,315 --> 01:44:19,675
+So what does mean?
+
+1241
+01:44:19,955 --> 01:44:21,375
+So this implies that.
+
+1242
+01:44:22,215 --> 01:44:23,915
+If you are given this.
+
+1243
+01:44:25,335 --> 01:44:25,855
+Equality.
+
+1244
+01:44:26,355 --> 01:44:26,975
+Log.
+
+1245
+01:44:27,635 --> 01:44:28,675
+With base b.
+
+1246
+01:44:29,275 --> 01:44:30,615
+Let's say c.
+
+1247
+01:44:31,235 --> 01:44:32,655
+So we can write this.
+
+1248
+01:44:33,655 --> 01:44:35,195
+So b to a.
+
+1249
+01:44:35,315 --> 01:44:36,315
+By applying.
+
+1250
+01:44:37,175 --> 01:44:38,375
+Inverse of log.
+
+1251
+01:44:39,475 --> 01:44:40,775
+B to a.
+
+1252
+01:44:40,915 --> 01:44:42,735
+Inverse of log b.
+
+1253
+01:44:42,935 --> 01:44:44,695
+Is b to b to x.
+
+1254
+01:44:44,695 --> 01:44:45,015
+Okay.
+
+1255
+01:44:45,515 --> 01:44:46,655
+Now b to a.
+
+1256
+01:44:46,815 --> 01:44:47,915
+Is equal to c.
+
+1257
+01:44:53,043 --> 01:45:08,144
+Now we can extend rules of natural logaritmic function to this logaritmic function with base b. Any base. Herhangi tabanlı logaritmic fonksiyona uygulayabilirsiniz. Özel durum arkadaşlar, particular case.
+
+1258
+01:45:08,144 --> 01:45:16,703
+if you take
+
+1259
+01:45:16,703 --> 01:45:17,403
+so here
+
+1260
+01:45:17,403 --> 01:45:20,163
+log
+
+1261
+01:45:20,163 --> 01:45:22,724
+with base e x
+
+1262
+01:45:22,724 --> 01:45:25,323
+so instead of using this log
+
+1263
+01:45:25,323 --> 01:45:26,264
+with base e
+
+1264
+01:45:26,264 --> 01:45:28,083
+we prefer to use
+
+1265
+01:45:28,083 --> 01:45:30,104
+ln x
+
+1266
+01:45:30,104 --> 01:45:33,724
+yani e tabanlı logaritmic fonksiyonu
+
+1267
+01:45:33,724 --> 01:45:34,543
+biz kısaca
+
+1268
+01:45:34,543 --> 01:45:36,463
+ln x olarak
+
+1269
+01:45:36,463 --> 01:45:37,463
+gösteriyoruz
+
+1270
+01:45:37,463 --> 01:45:38,463
+gösteriyoruz. Tamam mı
+
+1271
+01:45:38,463 --> 01:45:39,463
+tamam mı arkadaşlar?
+
+1272
+01:45:39,463 --> 01:45:40,463
+tamam mı arkadaşlar? Var mı anlaşmayayım bir yer?
+
+1273
+01:45:40,463 --> 01:45:43,463
+e tabanlı logaritmik fonksiyonu
+
+1274
+01:45:43,463 --> 01:45:47,463
+ln x olarak gösteriyoruz. Tamam mı gençler? Dikkat edin buna.
+
+1275
+01:45:47,463 --> 01:45:52,463
+Evet. Şimdi türevinden bahsedelim.
+
+1276
+01:45:52,463 --> 01:45:54,463
+So how can we obtain derivation of
+
+1277
+01:45:54,463 --> 01:45:56,463
+in
+
+1278
+01:46:09,524 --> 01:46:11,963
+Tamam, diğer metod için çalışacağım.
+
+1279
+01:46:12,524 --> 01:46:15,284
+Tamam, iki metod için bir metod var.
+
+1280
+01:46:15,284 --> 01:46:16,404
+İlk metod...
+
+1281
+01:46:22,131 --> 01:46:30,011
+So we can write dy over dx in terms of 1 over dx over dy in this form.
+
+1282
+01:46:30,011 --> 01:46:34,531
+So this is equivalent to saying that when we apply
+
+1283
+01:46:38,068 --> 01:46:58,528
+inverse of log function with base, the a. So we have this a to a is equal to x. Now, so derivation of, derivation of x with respect to a, according to this, in this case x is dependent variable, y is independent variable. So we have this.
+
+1284
+01:47:00,568 --> 01:47:06,728
+So we know this 1 over a to a is equal to x.
+
+1285
+01:47:08,068 --> 01:47:11,128
+Lm a. Can you see that?
+
+1286
+01:47:11,908 --> 01:47:19,967
+Derivation of log function with base a is 1 over x times lm a. A special case,
+
+1287
+01:47:23,572 --> 01:47:39,412
+a is equal to e, approximately 2.71. So in that case, so we have, we got this, Lnx, derivation of Lnx, 1 over x times Lnx.
+
+1288
+01:47:39,412 --> 01:47:46,132
+So this is, we know that Lnx, 1 over x. Okay, an equation, sorus olan var mı?
+
+1289
+01:47:46,132 --> 01:47:53,011
+And second method, so we derivate both sides of this equality with respect to x,
+
+1290
+01:47:53,011 --> 01:47:58,851
+taking into account that x is dependent, independent variable, y is dependent variable.
+
+1291
+01:48:03,923 --> 01:48:08,923
+Ah, sorry. Sorry. So we need to put here.
+
+1292
+01:48:14,100 --> 01:48:16,100
+LNA
+
+1293
+01:48:16,100 --> 01:48:22,100
+so 1 y' is equal to 1 over x LNA
+
+1294
+01:48:22,100 --> 01:48:24,100
+okay
+
+1295
+01:48:24,100 --> 01:48:34,100
+okay now let me talk about general case derivation of logarithmic function with base a u of x
+
+1296
+01:48:36,564 --> 01:48:39,744
+argument, derivation of argument of log A.
+
+1297
+01:48:45,171 --> 01:48:45,611
+Okay.
+
+1298
+01:48:46,451 --> 01:48:47,871
+You don't need to memorize this.
+
+1299
+01:48:48,231 --> 01:48:50,271
+Yani bunu ezberlemek zorunda değilsiniz arkadaşlar.
+
+1300
+01:48:51,571 --> 01:48:52,371
+Hepsini doğal
+
+1301
+01:48:52,371 --> 01:48:54,511
+logaritmik fonksiyonundan bulabiliyorsunuz zaten.
+
+1302
+01:48:54,771 --> 01:48:56,451
+Tamam mı? Mesela bir örnek
+
+1303
+01:48:56,451 --> 01:48:58,111
+vereyim. Neden ezberlemek zorunda değiliz?
+
+1304
+01:48:58,171 --> 01:48:59,051
+Hemen göstereyim size.
+
+1305
+01:49:00,551 --> 01:49:02,591
+You don't need to memorize this formula.
+
+1306
+01:49:03,071 --> 01:49:04,351
+For example, if you are
+
+1307
+01:49:04,351 --> 01:49:05,591
+given such function
+
+1308
+01:49:05,591 --> 01:49:08,131
+log with base 3
+
+1309
+01:49:08,131 --> 01:49:10,511
+x square plus
+
+1310
+01:49:10,511 --> 01:49:12,291
+x. Farz edin ki formula unuttum.
+
+1311
+01:49:12,371 --> 01:49:14,331
+Suppose that I forget our
+
+1312
+01:49:14,331 --> 01:49:15,651
+formula. What can we do?
+
+1313
+01:49:16,011 --> 01:49:16,991
+We can do this.
+
+1314
+01:49:18,171 --> 01:49:19,311
+By using this
+
+1315
+01:49:19,311 --> 01:49:21,071
+logical equivalence.
+
+1316
+01:49:21,751 --> 01:49:22,991
+3 to y
+
+1317
+01:49:22,991 --> 01:49:26,111
+is equal to x square plus
+
+1318
+01:49:26,111 --> 01:49:27,511
+x. Now
+
+1319
+01:49:27,511 --> 01:49:30,111
+if you derivate both sides of this equality
+
+1320
+01:49:30,111 --> 01:49:32,271
+so 3 to y
+
+1321
+01:49:32,271 --> 01:49:33,991
+times y prime times
+
+1322
+01:49:33,991 --> 01:49:35,971
+ln 3 is equal to
+
+1323
+01:49:35,971 --> 01:49:38,071
+2x plus 1
+
+1324
+01:49:38,071 --> 01:49:39,811
+now y prime
+
+1325
+01:49:39,811 --> 01:49:41,531
+is equal to
+
+1326
+01:49:41,531 --> 01:49:43,951
+2x plus 1 over
+
+1327
+01:49:43,951 --> 01:49:46,411
+3 to y
+
+1328
+01:49:46,411 --> 01:49:47,351
+is equal to
+
+1329
+01:49:47,351 --> 01:49:48,791
+x square plus
+
+1330
+01:49:48,791 --> 01:49:49,511
+x
+
+1331
+01:49:49,511 --> 01:49:50,511
+times
+
+1332
+01:49:50,511 --> 01:49:51,891
+ok here
+
+1333
+01:49:51,891 --> 01:49:52,692
+3 to y
+
+1334
+01:49:52,692 --> 01:49:54,171
+and ln 3
+
+1335
+01:49:54,171 --> 01:49:56,171
+I see you don't need to memorize.
+
+1336
+01:49:57,871 --> 01:49:58,671
+Gördünüz mü arkadaşlar?
+
+1337
+01:49:59,331 --> 01:49:59,611
+Sadece
+
+1338
+01:49:59,611 --> 01:50:00,551
+a üzeri x'in
+
+1339
+01:50:00,551 --> 01:50:01,511
+hadi bunu
+
+1340
+01:50:01,511 --> 01:50:03,671
+hocam bunu ezberlemek zorunda kalacağız
+
+1341
+01:50:03,671 --> 01:50:04,231
+diyeceksiniz.
+
+1342
+01:50:04,371 --> 01:50:05,431
+Bunun türevi nedir?
+
+1343
+01:50:05,771 --> 01:50:06,731
+diye sorarlarsa
+
+1344
+01:50:06,731 --> 01:50:07,551
+bunu da
+
+1345
+01:50:07,551 --> 01:50:09,031
+benzer mantıkla yapacaksın.
+
+1346
+01:50:09,891 --> 01:50:10,731
+Nereden yapacaksın?
+
+1347
+01:50:10,731 --> 01:50:13,031
+bunu türevi anlatmıştım
+
+1348
+01:50:13,031 --> 01:50:13,611
+değil mi arkadaşlar?
+
+1349
+01:50:13,951 --> 01:50:15,331
+Yine logaritmik fonksiyondan
+
+1350
+01:50:15,331 --> 01:50:16,091
+faydalanacaksın.
+
+1351
+01:50:16,631 --> 01:50:17,331
+So what is this?
+
+1352
+01:50:18,291 --> 01:50:19,051
+When you apply
+
+1353
+01:50:19,051 --> 01:50:20,431
+natural logaritmik function
+
+1354
+01:50:20,431 --> 01:50:23,491
+when you
+
+1355
+01:50:23,491 --> 01:50:25,131
+derivate both sides of this equality
+
+1356
+01:50:25,131 --> 01:50:25,371
+til
+
+1357
+01:50:30,644 --> 01:50:32,444
+Gördünüz mü arkadaşlar? Ne oldu?
+
+1358
+01:50:33,524 --> 01:50:34,384
+Y üstü
+
+1359
+01:50:34,384 --> 01:50:36,043
+eşittir. Y
+
+1360
+01:50:36,043 --> 01:50:38,003
+A üzeri X çarpı L'en A.
+
+1361
+01:50:38,583 --> 01:50:40,604
+Bakın hiç ezber yapmanıza gerek yok.
+
+1362
+01:50:41,844 --> 01:50:42,644
+Sadece L'en X
+
+1363
+01:50:42,644 --> 01:50:44,724
+ve Y üzeri X'i bilmeniz yeterli türev olarak.
+
+1364
+01:50:45,204 --> 01:50:45,904
+Tamam mı gençler?
+
+1365
+01:50:47,503 --> 01:50:48,123
+Ok. It is
+
+1366
+01:50:48,123 --> 01:50:50,244
+sub-eşittin O derivation of exponential
+
+1367
+01:50:50,244 --> 01:50:52,444
+X and derivation of natural logaritmic
+
+1368
+01:50:52,444 --> 01:50:54,043
+X. So all other
+
+1369
+01:50:54,043 --> 01:50:56,104
+formulas, derivation formulas are
+
+1370
+01:50:56,104 --> 01:50:57,184
+based on two
+
+1371
+01:50:57,184 --> 01:50:58,623
+fundamental
+
+1372
+01:50:58,623 --> 01:51:00,944
+formula. Ok.
+
+1373
+01:51:04,884 --> 01:51:06,304
+Sorusu olan yok galiba.
+
+1374
+01:51:08,863 --> 01:51:10,224
+Sorusu olan yoksa
+
+1375
+01:51:10,224 --> 01:51:13,644
+hemen ana şeyimize dönelim.
+
+1376
+01:51:15,184 --> 01:51:16,083
+Stop, share
+
+1377
+01:51:16,083 --> 01:51:18,844
+Sorry
+
+1378
+01:51:32,340 --> 01:51:40,960
+Evet, anlattım arkadaşlar buraları size. Buradan devam etmedim. Hızlı bir şekilde bitirmek için.
+
+1379
+01:51:42,980 --> 01:51:52,100
+Okay, let me talk about this. Önce neyse biraz uygulama yapalım. Soru çözelim, alıştırma yapalım. Ondan sonra bundan bahsedelim.
+
+1380
+01:51:54,239 --> 01:51:56,100
+Okay, let me talk about...
+
+1381
+01:52:00,115 --> 01:52:02,676
+any derivation. Okay, share screen.
+
+1382
+01:52:03,956 --> 01:52:04,355
+Any.
+
+1383
+01:52:06,916 --> 01:52:09,956
+So, how can we compute its derivation?
+
+1384
+01:52:17,555 --> 01:52:20,155
+Let's try to update this derivation.
+
+1385
+01:52:22,076 --> 01:52:24,535
+So, attention here, this is not usual function.
+
+1386
+01:52:25,195 --> 01:52:26,675
+The base depends on x.
+
+1387
+01:52:27,355 --> 01:52:28,995
+Exponent depends on x.
+
+1388
+01:52:29,555 --> 01:52:31,235
+So, this is not usual function.
+
+1389
+01:52:31,235 --> 01:52:39,495
+But we may transform this interesting function to some well-known usual function.
+
+1390
+01:52:39,735 --> 01:52:41,815
+By using natural logaritmic function.
+
+1391
+01:52:41,815 --> 01:52:49,615
+Doğal logaritmic function kullanarak bunu klasik bilinen bir fonksiyona dönüştürebilirsiniz.
+
+1392
+01:52:56,435 --> 01:53:07,375
+Önce türevini değil, önce doğal logaritma uygulayacaksın. Eşitliğin sağına ve soluna, nuran. Böyle bir şey yapamazsın. This is not true.
+
+1393
+01:53:08,735 --> 01:53:16,975
+y' prime is equal to x to x minus 1 times sum to write this, so this is mistake. Ok?
+
+1394
+01:53:19,395 --> 01:53:21,775
+Ezberden hemen oraya bir şeyler yazmayacaksınız.
+
+1395
+01:53:21,775 --> 01:53:31,536
+First of all, you need to apply natural logaritmic function in order to transform this problem into well-known problem.
+
+1396
+01:53:33,935 --> 01:53:34,815
+Of course.
+
+1397
+01:53:36,215 --> 01:53:38,635
+Yapsın bakayım herkes, her iki tarafın el elini alarak.
+
+1398
+01:53:53,268 --> 01:54:00,387
+Okay. First of all, we apply natural logaritmic function to both sides of this equality.
+
+1399
+01:54:07,252 --> 01:54:11,292
+Now we are ready to derivate both sides of this equality with respect to x.
+
+1400
+01:54:11,292 --> 01:54:12,892
+Y' over y.
+
+1401
+01:54:14,932 --> 01:54:25,712
+Derivation of this with respect to x by the product rule 1 times ln x plus x times derivation of ln x 1 over x.
+
+1402
+01:54:26,212 --> 01:54:34,832
+Now we need to write y' in terms of x.
+
+1403
+01:54:34,832 --> 01:54:40,292
+x to x times ln x plus 1.
+
+1404
+01:54:41,292 --> 01:54:47,132
+So let's compute y' e.
+
+1405
+01:54:48,032 --> 01:54:53,032
+The answer is y' e.
+
+1406
+01:54:54,132 --> 01:54:59,872
+e to e times ln e plus 1.
+
+1407
+01:55:00,712 --> 01:55:01,892
+ln e is 1.
+
+1408
+01:55:02,252 --> 01:55:03,912
+Two types e to e.
+
+1409
+01:55:03,912 --> 01:55:05,112
+The answer is this.
+
+1410
+01:55:05,592 --> 01:55:05,772
+Okay.
+
+1411
+01:55:06,612 --> 01:55:08,231
+This is transcendental function.
+
+1412
+01:55:08,352 --> 01:55:11,272
+Logaritmic function is a type of transcendental function.
+
+1413
+01:55:11,512 --> 01:55:11,692
+Okay.
+
+1414
+01:55:13,192 --> 01:55:13,572
+Now.
+
+1415
+01:55:16,672 --> 01:55:18,092
+Let me stop this here.
+
+1416
+01:55:18,212 --> 01:55:18,352
+Okay.
+
+1417
+01:55:18,452 --> 01:55:19,072
+Have a break.
+
+1418
+01:55:19,312 --> 01:55:20,412
+Bir ara verelim arkadaşlar.
+
+1419
+01:55:20,592 --> 01:55:21,072
+10 dakika.
+
+1420
+01:55:22,432 --> 01:55:23,752
+Aradan sonra devam edeceğiz.
+
+1421
+01:55:24,012 --> 01:55:25,252
+Zihnimizi biraz toplayalım.
+
+1422
+01:55:25,432 --> 01:55:26,092
+Soru çözeceğiz.
+
+1423
+01:55:26,812 --> 01:55:27,672
+Break 10 nits.
+
+1424
+01:55:27,672 --> 01:55:33,392
+Öğrendiklerimizi pekiştirmek için biraz soru çözeceğiz.
+
+1425
+01:55:33,392 --> 01:55:48,292
+Okay.
+
+1426
+01:55:37,395 --> 01:55:45,115
+zihninizde hiçbir şey boşlukta kalmasın. Aradan sonra devam edeceğiz. 10 dakika sonra görüşürüz.
+
+1427
+02:10:04,148 --> 02:10:05,608
+Evet, merhaba gençler.
+
+1428
+02:10:15,412 --> 02:10:21,391
+Okay, let me talk about some theorem. So this theorem is very important.
+
+1429
+02:10:23,912 --> 02:10:31,252
+You may see such question, you may see some questions whose solutions are based on this theorem.
+
+1430
+02:10:34,192 --> 02:10:35,851
+Okay, suppose that
+
+1431
+02:10:40,819 --> 02:10:48,500
+F' is differentiable at the point, at the point A, and this...
+
+1432
+02:10:55,283 --> 02:11:14,783
+derivation value is non-zero. Then there exists, then there is one open interval, open interval, i containing,
+
+1433
+02:11:18,260 --> 02:11:19,619
+containing
+
+1434
+02:11:22,820 --> 02:11:24,020
+size that
+
+1435
+02:11:27,796 --> 02:11:32,596
+size that f, restriction of f onto i.
+
+1436
+02:11:36,851 --> 02:11:39,192
+Ne demek istiyor?
+
+1437
+02:11:39,271 --> 02:11:40,692
+Türkçe'ye çevirelim arkadaşlar.
+
+1438
+02:11:40,971 --> 02:11:42,831
+Hepiniz zaten İngilizce hazırlık gördünüz.
+
+1439
+02:11:44,271 --> 02:11:45,631
+Eğer bir noktada
+
+1440
+02:11:45,631 --> 02:11:47,551
+bir fonksiyonun türevi
+
+1441
+02:11:47,551 --> 02:11:49,192
+sıfırdan farklı ise
+
+1442
+02:11:49,192 --> 02:11:51,612
+söz konusu o noktayı
+
+1443
+02:11:51,612 --> 02:11:53,511
+içeren öyle bir I aralığı
+
+1444
+02:11:53,511 --> 02:11:54,572
+bulabilirsiniz ki
+
+1445
+02:11:54,572 --> 02:11:56,492
+I'dan F I'ya
+
+1446
+02:11:56,492 --> 02:11:59,291
+fonksiyonu terslenebilirdir.
+
+1447
+02:11:59,992 --> 02:12:01,551
+Ve işin ilginç tarafı
+
+1448
+02:12:01,551 --> 02:12:03,452
+AND
+
+1449
+02:12:03,452 --> 02:12:33,431
+İngilizce hazırlık
+
+1450
+02:12:08,532 --> 02:12:09,672
+f inverse
+
+1451
+02:12:13,235 --> 02:12:23,235
+from f of i to i is also differentiable.
+
+1452
+02:12:28,819 --> 02:12:36,019
+at the point f' as follows.
+
+1453
+02:12:42,323 --> 02:13:05,643
+derivation of f inverse, at the point f of a, is equal to 1 over f' of a. So let me prove this. Proof, and the proof is very easy. Proof.
+
+1454
+02:13:10,323 --> 02:13:18,323
+So by the inverse property F inverse composite F x results in x.
+
+1455
+02:13:19,323 --> 02:13:24,323
+Okay also you can write this F composite F inverse x.
+
+1456
+02:13:24,323 --> 02:13:28,323
+So when you derivate both sides of this equality with respect to x.
+
+1457
+02:13:29,323 --> 02:13:31,323
+So we are going to obtain this.
+
+1458
+02:13:31,323 --> 02:13:34,323
+So let me clear all the lines.
+
+1459
+02:13:34,323 --> 02:13:42,323
+Okay so let me write this F inverse composite F of x is equal to F of x.
+
+1460
+02:13:42,323 --> 02:13:44,323
+Sorry not F of x.
+
+1461
+02:13:44,323 --> 02:13:57,323
+So F composite F inverse x.
+
+1462
+02:13:57,323 --> 02:13:58,323
+We know this.
+
+1463
+02:13:58,323 --> 02:14:04,323
+So let me derivate this equality with respect to x.
+
+1464
+02:14:04,323 --> 02:14:06,323
+By using chain rule.
+
+1465
+02:14:06,323 --> 02:14:12,323
+Derivation of F inverse with respect to F of x.
+
+1466
+02:14:12,323 --> 02:14:17,323
+Times derivation of F with respect to x.
+
+1467
+02:14:17,323 --> 02:14:21,323
+Is equal to derivation of x with respect to x1.
+
+1468
+02:14:21,323 --> 02:14:26,323
+So this implies that derivation of F inverse.
+
+1469
+02:14:26,323 --> 02:14:29,323
+With respect to F of x.
+
+1470
+02:14:29,323 --> 02:14:34,323
+Is equal to 1 over.
+
+1471
+02:14:34,323 --> 02:14:36,323
+We can write this.
+
+1472
+02:14:36,323 --> 02:14:39,323
+Because of the assumption given in the theorem.
+
+1473
+02:14:39,323 --> 02:14:41,323
+So we know that.
+
+1474
+02:14:41,323 --> 02:14:42,323
+So if.
+
+1475
+02:14:42,323 --> 02:14:47,323
+F prime of a non-zero.
+
+1476
+02:14:47,323 --> 02:14:50,323
+This is hypothesis given in the equation.
+
+1477
+02:14:50,323 --> 02:14:52,323
+Take in take out this condition.
+
+1478
+02:14:52,323 --> 02:15:20,323
+We can write this.
+
+1479
+02:14:58,739 --> 02:15:11,219
+Otherwise, we cannot write this. Because 1 over infinite. So 1 over 0, infinite. You cannot talk about derivation. Okay? Without this condition, you cannot write this quotient.
+
+1480
+02:15:12,159 --> 02:15:25,380
+Dikkat edin, f üstü a sıfırdan farklı olmak zorunda. Yoksa fonksiyonun tersini f a'daki türevinden bahsedemeyiz. Anlaşıldı değil mi? Neden f üstü a sıfırdan farklı olması gerektiği?
+
+1481
+02:15:31,380 --> 02:15:31,819
+Evet.
+
+1482
+02:15:36,756 --> 02:15:46,516
+Okay, now let me solve some problems about this theorem, very important theorem.
+
+1483
+02:15:49,716 --> 02:15:58,516
+So look at this example. So this example is very simple. Let me write this.
+
+1484
+02:16:03,315 --> 02:16:05,315
+Bakın, bu simple example.
+
+1485
+02:16:05,315 --> 02:16:08,315
+Bu, bu, f'ı x'ı,
+
+1486
+02:16:08,315 --> 02:16:38,315
+bu, bu
+
+1487
+02:16:38,315 --> 02:17:08,296
+So, first of all, we need to compute, we need to compute, we know this, f inverse, this is y0, in fact, this is f of x0, is equal to 1 over f prime of x0, okay, now, so here, so this is y0, so this is y0, look at here, so this is y0, 3, this is y0, 3, this is y0,
+
+1488
+02:17:08,315 --> 02:17:38,296
+Sorry, sorry, sorry, sorry, sorry, bunu burada diyor değil mi arkadaşlar, yanlış olmasın, yanlış oldu, bir dakika, kafa, soruyu anlamadığınızdan, okumadan, yapınca böyle oluyor, okay, now look at that, the point 1, 3 on the graph of, graph of f, so this is the graph, this point is on the graph of f inverse, so this is y0,
+
+1489
+02:17:38,315 --> 02:18:01,015
+y0, 3, okay, now, so this corresponds to some f of x0, okay, f of x0, that is 1, that is 1, we need to replace their position, 1, 3, can you see that, 3, 1, 1, 3, so we need to compute, so x0 is 1, so this is x0,
+
+1490
+02:18:01,015 --> 02:18:23,495
+So this is y0, because of the fact that 3, 1 pair is on the graph of f inverse, okay, now, so that's why we need to compute f derivation, so here, so x0 is 1, now, by using this inverse property for derivation, 1 over,
+
+1491
+02:18:23,495 --> 02:18:47,716
+So, f prime of 1, f prime of 1, 5 over 2, f inverse, derivation at the point 3, okay, is equal to 1 over f prime of 1, the answer is 2 over 5, okay, we need to take multiplicative inverse of f prime of x0, tamam arkadaşlar, var mı burada anlaşmayan bir yer?
+
+1492
+02:18:47,716 --> 02:18:51,155
+Yok değil mi anlaşmayan bir yer?
+
+1493
+02:18:52,716 --> 02:18:53,815
+Yok, yok.
+
+1494
+02:18:54,716 --> 02:19:01,255
+Let me stop this share and let's see some, bakalım, anlatmadığın konu kaldı mı?
+
+1495
+02:19:03,956 --> 02:19:04,675
+Okey.
+
+1496
+02:19:06,415 --> 02:19:07,476
+Yok gibi.
+
+1497
+02:19:08,476 --> 02:19:10,636
+Anlatmadığımız konuları, hepsini anlattık.
+
+1498
+02:19:10,636 --> 02:19:14,755
+Birkaç soru çözelim, iyice zihnimizde.
+
+1499
+02:19:17,876 --> 02:19:18,796
+Şekillensin.
+
+1500
+02:19:24,691 --> 02:19:28,411
+Bunları çözersiniz arkadaşlar. Bunlar basit şeyler. Anlattım bunları.
+
+1501
+02:19:30,331 --> 02:19:33,371
+Okey. İperboliklerden yarın bahsedeceğim.
+
+1502
+02:19:38,804 --> 02:19:43,244
+hiperbolik fonksiyonlardan yarın bahsederiz. Şuradan biraz soru çözelim, bitirelim.
+
+1503
+02:19:44,164 --> 02:19:46,404
+Yok da şey yapmayalım, kafanızı bulandırmayalım.
+
+1504
+02:19:47,523 --> 02:19:49,824
+Okay, let's solve some exercises.
+
+1505
+02:19:53,940 --> 02:19:55,899
+Herkes yapsın bakalım arkadaşlar.
+
+1506
+02:19:58,300 --> 02:19:59,319
+Burayı görüyorsunuz değil mi?
+
+1507
+02:20:01,739 --> 02:20:03,520
+Let's stay with x2.
+
+1508
+02:20:05,980 --> 02:20:11,480
+Let's solve this.
+
+1509
+02:20:11,800 --> 02:20:13,440
+Bunları çözelim. Çözün bakalım arkadaşlar.
+
+1510
+02:20:13,440 --> 02:20:16,440
+And this and this.
+
+1511
+02:20:17,819 --> 02:20:18,060
+Evet.
+
+1512
+02:20:20,620 --> 02:20:23,399
+Birkaç tane alıştırma yapalım bitelim dersi.
+
+1513
+02:21:04,531 --> 02:21:05,531
+ok.
+
+1514
+02:21:06,531 --> 02:21:07,531
+last song
+
+1515
+02:21:08,731 --> 02:21:09,731
+87
+
+1516
+02:21:14,739 --> 02:21:21,280
+In order to derivate such function, first of all, we need to apply natural logarithmic function.
+
+1517
+02:21:23,479 --> 02:21:27,239
+Let's derivate both sides of this equality with respect to y.
+
+1518
+02:21:29,959 --> 02:21:36,940
+Minus sine x times lnx plus cosine x over x.
+
+1519
+02:21:37,579 --> 02:21:43,079
+Now, so, after simplifying this, we are going to obtain derivation function.
+
+1520
+02:21:43,079 --> 02:21:44,979
+Okay, now this.
+
+1521
+02:21:45,799 --> 02:21:47,119
+Now, what about this?
+
+1522
+02:21:48,799 --> 02:21:49,739
+Let's solve this.
+
+1523
+02:21:52,799 --> 02:21:54,520
+Now, this is simple one.
+
+1524
+02:21:54,879 --> 02:22:05,860
+So, derivation of this, x to, this is constant pi minus 1, plus derivation of p to x.
+
+1525
+02:22:06,739 --> 02:22:11,819
+This is explanation function, p to x times ln pi.
+
+1526
+02:22:11,979 --> 02:22:12,780
+Sorry, not p.
+
+1527
+02:22:13,079 --> 02:22:43,059
+Okay, so this is the answer.
+
+1528
+02:22:33,012 --> 02:22:49,012
+Do not forget to put this pi. Okay, let's derivate this. First of all, we need to apply natural logaritmic function to both sides of this equality.
+
+1529
+02:22:56,051 --> 02:23:05,471
+lnx. Let's derivate both sides of this equality with respect to x. y' y' y, which is the derivation of left-hand side.
+
+1530
+02:23:06,111 --> 02:23:17,431
+Derivation of right-hand side, 10 times x to 9 times lnx plus x to 10 over derivation of lnx, x.
+
+1531
+02:23:18,891 --> 02:23:20,971
+Okay, so we have x to 9.
+
+1532
+02:23:22,311 --> 02:23:25,931
+Any questions? After simplifying this, you are going to think these derivations.
+
+1533
+02:23:26,051 --> 02:23:26,871
+Sorusu olan var mı?
+
+1534
+02:23:27,211 --> 02:23:28,891
+Ben de her şekilde bunu hesaplarsınız.
+
+1535
+02:23:33,716 --> 02:23:37,656
+Okay, let me solve this basic example.
+
+1536
+02:23:51,347 --> 02:24:07,288
+Look at this basic example. So here, so y is equal to ln x to x², when you apply logarithmic, natural logarithmic function to both sides of this equality, so we obtain this.
+
+1537
+02:24:11,347 --> 02:24:16,987
+Now, let's derivate both sides of this equality with respect to y, sorry, with respect to x.
+
+1538
+02:24:17,987 --> 02:24:27,847
+Now, derivation of x squared 2x times ln ln x plus the first term x squared times derivation of ln ln x.
+
+1539
+02:24:28,268 --> 02:24:32,048
+First of all, we derivate argument of ln, which is 1 over x.
+
+1540
+02:24:32,827 --> 02:24:35,747
+Okay, now over ln x.
+
+1541
+02:24:37,247 --> 02:24:38,208
+Any question?
+
+1542
+02:24:38,208 --> 02:24:40,108
+So, this then this simplifies.
+
+1543
+02:24:40,327 --> 02:24:41,647
+So, we have x.
+
+1544
+02:24:41,888 --> 02:24:43,087
+X over ln x.
+
+1545
+02:24:43,968 --> 02:24:45,307
+So, Rusova, you got all that.
+
+1546
+02:24:48,755 --> 02:24:49,715
+let's go on
+
+1547
+02:25:01,043 --> 02:25:04,244
+Okay, let me solve, let me ask you this question.
+
+1548
+02:25:44,979 --> 02:25:45,500
+Evet.
+
+1549
+02:25:48,500 --> 02:25:56,659
+d y bölü d x'inlik eşittir, 1 y eşittir, 1 d 2 türev'inin varsa tabii ki olmak zorunda değil, kırılma olabilir grafikte.
+
+1550
+02:25:57,879 --> 02:25:58,939
+Bulun bakalım.
+
+1551
+02:26:00,879 --> 02:26:02,340
+Nasıl bulacaksınız?
+
+1552
+02:26:03,899 --> 02:26:04,760
+Basit bir soru.
+
+1553
+02:26:15,379 --> 02:26:16,799
+Bekliyorum cevabınızı.
+
+1554
+02:26:39,763 --> 02:26:40,263
+Evet.
+
+1555
+02:27:18,067 --> 02:27:20,887
+Okay, [öğrenci] found minus one.
+
+1556
+02:27:21,787 --> 02:27:22,527
+Is that correct?
+
+1557
+02:27:23,167 --> 02:27:27,327
+So, [öğrenci] found no derivation.
+
+1558
+02:27:28,387 --> 02:27:35,380
+Let's check out.
+
+1559
+02:27:38,868 --> 02:27:44,068
+Bu, bu
+
+1560
+02:27:55,219 --> 02:28:00,719
+Let's derivate both sides of this equality with respect to x. So how can we derivate this?
+
+1561
+02:28:07,347 --> 02:28:10,028
+So, let's derivate this with respect to x.
+
+1562
+02:28:11,528 --> 02:28:15,028
+Variation of this, let me write d over dx.
+
+1563
+02:28:35,636 --> 02:28:36,636
+bu, 0.
+
+1564
+02:28:39,036 --> 02:28:44,136
+Now, attention here, y depends on x. Here, so how can we derivate this?
+
+1565
+02:28:46,236 --> 02:29:02,935
+So let me write here, so capital Y. Now, so in order to derivate this with respect to x, so attention here, y depends on x here. y depends on x. So that's why we need to apply
+
+1566
+02:29:06,291 --> 02:29:07,291
+this.
+
+1567
+02:29:07,291 --> 02:29:17,291
+When you derivate both sides of this equality with respect to x, derivation of y with respect to x,
+
+1568
+02:29:17,291 --> 02:29:29,291
+times y over x, y' over y. So y' so this is y'
+
+1569
+02:29:34,548 --> 02:29:36,548
+this is the sorry
+
+1570
+02:29:37,908 --> 02:29:48,788
+evet, turdan arkadaşlar y üstünü arıyorum ben. y üstü yani bunun x'e göre türevi arkadaşlar. this is y prime, sorry. this is y prime
+
+1571
+02:29:55,540 --> 02:30:20,460
+So, this is dy over dx. Attention here. We are looking for this. y' prime y' prime is equal to y times y, lowercase y prime times lmx plus y over x.
+
+1572
+02:30:20,460 --> 02:30:43,520
+if we substitute x1, y1, x yerine 1, y yerine 1 yazarsak arkadaşlar, y yerine 1, burası 1 olur bakın, büyük y 1 değerini alır, burası 1, burası m olur, buna m diyelim, lm1 0,
+
+1573
+02:30:47,188 --> 02:30:52,907
+Burası 1 olur, burası 1 olur. Gördünüz mü arkadaşlar? Burası 1 oldu.
+
+1574
+02:30:54,847 --> 02:30:56,128
+Burası 1 oldu.
+
+1575
+02:30:59,956 --> 02:31:23,275
+işlem hatası yapmadık değil mi? So this is 1. So at the point, x1, y1, so this is 1. So what about y to x? Let's derivate this. So let me clear oldura. Oh sorry. Yanlışlıkla şeye bastık.
+
+1576
+02:31:23,275 --> 02:31:30,335
+y üzeri x'i bunun türevini alırsak, tekrardan yazayım. x üzeri y
+
+1577
+02:31:35,092 --> 02:31:36,412
+Y üzeri X.
+
+1578
+02:31:37,352 --> 02:31:39,032
+Bunun türevini alırsam sıfır.
+
+1579
+02:31:39,792 --> 02:31:40,252
+Tamam mı?
+
+1580
+02:31:40,772 --> 02:31:41,672
+Ne yapıyorduk arkadaşlar?
+
+1581
+02:31:43,132 --> 02:31:44,332
+Bunu hesaplamıştık.
+
+1582
+02:31:44,792 --> 02:31:46,772
+X eşittir bir, Y eşittir
+
+1583
+02:31:46,772 --> 02:31:48,891
+birdeki değeri bir mi bulmuştuk?
+
+1584
+02:31:49,852 --> 02:31:50,551
+Bir bulduk.
+
+1585
+02:31:50,551 --> 02:31:52,391
+Peki bunun türevi nedir?
+
+1586
+02:31:52,731 --> 02:31:53,612
+Bunu hesaplayalım.
+
+1587
+02:31:54,471 --> 02:31:56,292
+Y üzeri X'e A diyelim.
+
+1588
+02:31:57,311 --> 02:31:58,792
+Eşitler iki tarafına logaritmik
+
+1589
+02:31:58,792 --> 02:31:59,852
+fonksiyonu uyguladım.
+
+1590
+02:32:01,012 --> 02:32:01,652
+L'en X
+
+1591
+02:32:01,652 --> 02:32:04,672
+Çağ, L'en X nereden geldi?
+
+1592
+02:32:05,092 --> 02:32:06,391
+L'en X değil arkadaşlar.
+
+1593
+02:32:06,811 --> 02:32:07,292
+Şuradan.
+
+1594
+02:32:08,032 --> 02:32:08,332
+Okay.
+
+1595
+02:32:09,072 --> 02:32:11,212
+So X times L and Y
+
+1596
+02:32:11,212 --> 02:32:13,252
+is equal to L and A.
+
+1597
+02:32:13,971 --> 02:32:16,072
+So 1 times L and Y
+
+1598
+02:32:16,072 --> 02:32:16,971
+plus
+
+1599
+02:32:16,971 --> 02:32:19,731
+X times Y prime
+
+1600
+02:32:19,731 --> 02:32:21,912
+over Y
+
+1601
+02:32:21,912 --> 02:32:24,311
+is equal to
+
+1602
+02:32:24,311 --> 02:32:26,672
+A prime over A.
+
+1603
+02:32:29,092 --> 02:32:29,452
+So
+
+1604
+02:32:29,452 --> 02:32:31,832
+when you substitute X1
+
+1605
+02:32:31,832 --> 02:32:34,332
+so here A prime
+
+1606
+02:32:34,332 --> 02:32:37,432
+A times
+
+1607
+02:32:37,432 --> 02:32:39,532
+L and A
+
+1608
+02:32:39,532 --> 02:32:41,891
+plus X times Y prime
+
+1609
+02:32:41,891 --> 02:32:42,672
+over Y
+
+1610
+02:32:42,672 --> 02:32:44,252
+then you substitute
+
+1611
+02:32:44,252 --> 02:32:47,231
+X1
+
+1612
+02:32:47,231 --> 02:32:48,432
+Y1
+
+1613
+02:32:48,432 --> 02:32:48,872
+here.
+
+1614
+02:32:49,551 --> 02:32:49,592
+So
+
+1615
+02:32:49,592 --> 02:32:50,652
+A
+
+1616
+02:32:50,652 --> 02:32:51,852
+X1
+
+1617
+02:32:51,852 --> 02:32:53,112
+Y1
+
+1618
+02:32:53,112 --> 02:32:54,532
+is equal to
+
+1619
+02:32:54,532 --> 02:32:54,932
+1.
+
+1620
+02:32:55,332 --> 02:32:56,512
+So this is 1.
+
+1621
+02:32:56,891 --> 02:32:57,712
+L and 1
+
+1622
+02:32:57,712 --> 02:32:58,231
+0.
+
+1623
+02:32:58,231 --> 02:32:59,952
+X1
+
+1624
+02:32:59,952 --> 02:33:00,872
+Y1
+
+1625
+02:33:00,872 --> 02:33:01,692
+So 1
+
+1626
+02:33:01,692 --> 02:33:02,092
+1
+
+1627
+02:33:02,092 --> 02:33:03,212
+So this is M.
+
+1628
+02:33:03,332 --> 02:33:04,492
+Let's say this is M.
+
+1629
+02:33:05,292 --> 02:33:05,592
+Okay.
+
+1630
+02:33:06,172 --> 02:33:06,692
+Now
+
+1631
+02:33:06,692 --> 02:33:08,432
+so we have this
+
+1632
+02:33:08,432 --> 02:33:09,092
+M
+
+1633
+02:33:09,092 --> 02:33:11,572
+1 plus
+
+1634
+02:33:11,572 --> 02:33:13,332
+so this is
+
+1635
+02:33:13,332 --> 02:33:14,832
+M
+
+1636
+02:33:14,832 --> 02:33:16,332
+is equal to 0.
+
+1637
+02:33:16,332 --> 02:33:17,852
+now M
+
+1638
+02:33:17,852 --> 02:33:19,272
+is equal to
+
+1639
+02:33:19,272 --> 02:33:19,731
+DY
+
+1640
+02:33:19,731 --> 02:33:21,292
+over DX
+
+1641
+02:33:21,292 --> 02:33:22,932
+at the point
+
+1642
+02:33:22,932 --> 02:33:23,852
+X1
+
+1643
+02:33:23,852 --> 02:33:24,872
+Y1
+
+1644
+02:33:24,872 --> 02:33:26,092
+is
+
+1645
+02:33:26,092 --> 02:33:27,231
+minus 1.
+
+1646
+02:33:29,731 --> 02:33:30,492
+Okay.
+
+1647
+02:33:31,231 --> 02:33:32,032
+Is there an equation?
+
+1648
+02:33:32,432 --> 02:33:33,352
+Sorusulamu
+
+1649
+02:33:33,352 --> 02:33:33,612
+money.
+
+1650
+02:33:33,612 --> 02:33:33,712
+Money.
+
+1651
+02:33:38,036 --> 02:33:41,476
+Sorusu olan yok galiba. Herkes x1 buldu mu?
+
+1652
+02:33:44,636 --> 02:33:51,376
+Evet. Formül kuralı. Formül tamam. Test sınavı olursa yapabilirsin. Sıkıntı değil. Test sınavı da nasıl bulursam bul.
+
+1653
+02:33:53,796 --> 02:33:57,175
+Evet. Herkes buldu galiba bu x1'i.
+
+1654
+02:34:00,979 --> 02:34:13,979
+Güzel bir soru. Bu tarz sorular test sınavlarına gelebilir. İstiyorsanız ben size öğretmedim. Çünkü gelecek dönemin konusu. O formüle de yapabilirsiniz. Kapatıyorum burayı, siliyorum.
+
+1655
+02:34:17,119 --> 02:34:18,399
+Hocam bir şey söyleyeyim mi?
+
+1656
+02:34:19,000 --> 02:34:19,359
+Sor.
+
+1657
+02:34:20,439 --> 02:34:24,719
+Hocam sınavda illa bu yoldan mı gitmemiz gerek?
+
+1658
+02:34:24,719 --> 02:34:34,340
+Yok. Test sınavı. Çoktan seçmeli sınavlarda. Yeter ki sonuca ulaş. Nasıl ulaşırsan ulaş. İster şıkları eleyerek git.
+
+1659
+02:34:34,979 --> 02:34:42,840
+Klasik olursa tabii ki o zaman kabul etmezler. Orada belirtilen yöntemle yaparsan ama sınavlar klasik olmayacak. Büyük ihtimal test olacak.
+
+1660
+02:34:43,799 --> 02:34:45,059
+Anladım hocam. Tamamdır.
+
+1661
+02:34:45,059 --> 02:34:45,500
+Evet.
+
+1662
+02:34:46,359 --> 02:34:49,059
+Ok. Let's solve this problem.
+
+1663
+02:35:04,531 --> 02:35:09,031
+Compute derivation value of y with respect to x at the point.
+
+1664
+02:35:17,012 --> 02:35:19,012
+let me write x is
+
+1665
+02:35:22,611 --> 02:35:25,011
+Öyle bir değer verelim ki çoğulsun arkadaşlar.
+
+1666
+02:35:27,131 --> 02:35:29,571
+Pi over 2, x yerine
+
+1667
+02:35:29,571 --> 02:35:32,611
+pi bölü 2 yazdım. 1 oldu.
+
+1668
+02:35:32,751 --> 02:35:34,771
+y gördüğümüz yere de
+
+1669
+02:35:34,771 --> 02:35:35,631
+ne yazalım?
+
+1670
+02:35:38,451 --> 02:35:40,351
+Uygun bir değer yazmam lazım.
+
+1671
+02:35:40,491 --> 02:35:41,911
+Eşitliğin sağlanması lazım.
+
+1672
+02:35:44,551 --> 02:35:46,691
+Bulamadım. O zaman şöyle yapıyorum arkadaşlar.
+
+1673
+02:35:46,691 --> 02:35:47,271
+Bir dakika.
+
+1674
+02:35:58,739 --> 02:35:59,680
+Şöyle yapalım.
+
+1675
+02:36:04,979 --> 02:36:08,760
+x gördüğümüz yere pi bölü 2 yazdım. y gördüğümüz yere de
+
+1676
+02:36:08,760 --> 02:36:16,379
+2 çarpı x gördüğümüz yere
+
+1677
+02:36:16,379 --> 02:36:19,979
+pi bölü
+
+1678
+02:36:19,979 --> 02:36:28,340
+x yazsam olur mu ya? Olmaz. Ne yazacağım? Eşitliğin sağlanmasını istiyorum arkadaşlar. Zihnimden örnek yazmaya çalışıyorum.
+
+1679
+02:36:29,340 --> 02:36:31,600
+Olmadı. Şuraya bir tane ne yazalım?
+
+1680
+02:36:35,412 --> 02:36:42,871
+Uygun bir değer yazacağım. Eşitlik sağlansın. Zihnimden yazmaya çalışıyorum. Y gördüğünüz gibi ne yazarsak eşitlik sağlanır burada.
+
+1681
+02:36:45,112 --> 02:36:51,852
+Burası y değerini bulacağım. Y değeri de ne olsun? 2 olsun. x'e bağlı bir şey olsun.
+
+1682
+02:37:00,595 --> 02:37:04,015
+2 bölü pi çarpı x diyelim.
+
+1683
+02:37:04,735 --> 02:37:05,876
+Tamam mı? Böyle yapalım.
+
+1684
+02:37:07,456 --> 02:37:07,755
+Evet.
+
+1685
+02:37:08,775 --> 02:37:09,536
+Tamam mı gençler?
+
+1686
+02:37:10,935 --> 02:37:11,475
+Böyle olsun.
+
+1687
+02:37:11,956 --> 02:37:14,055
+x gördüğümüz yere pi bölü 2 yazarsak,
+
+1688
+02:37:14,855 --> 02:37:16,275
+y gördüğümüz yere de
+
+1689
+02:37:16,275 --> 02:37:17,695
+ne yazarsak?
+
+1690
+02:37:18,155 --> 02:37:19,335
+1 yazarsak
+
+1691
+02:37:19,335 --> 02:37:22,055
+eşitlik sağlanıyor. Doğru mu?
+
+1692
+02:37:22,835 --> 02:37:23,115
+Evet.
+
+1693
+02:37:24,055 --> 02:37:24,515
+If any
+
+1694
+02:37:24,515 --> 02:37:27,716
+varsa
+
+1695
+02:37:31,860 --> 02:37:35,600
+çok bir şey olmadı ama istediğim gibi olmadı ama neyse bunu yapalım.
+
+1696
+02:37:49,652 --> 02:37:52,432
+Hocam, ilk yazdığınızda y'ye sır vererek oluyor.
+
+1697
+02:37:53,131 --> 02:37:53,672
+Oluyor mu?
+
+1698
+02:37:54,031 --> 02:37:54,391
+Evet.
+
+1699
+02:37:54,471 --> 02:37:55,772
+Bir tane daha soru yazalım.
+
+1700
+02:37:57,012 --> 02:38:00,272
+Y üzeri, ama oradan hiç gelmeme durumu vardır.
+
+1701
+02:38:01,311 --> 02:38:02,711
+X üzeri sinüs, y.
+
+1702
+02:38:03,852 --> 02:38:07,231
+O zaman bu a şıkkı olsun, bu da b şıkkı olsun.
+
+1703
+02:38:08,592 --> 02:38:10,152
+dy bölü dx.
+
+1704
+02:38:11,731 --> 02:38:14,172
+x gördüğünüz yere pi bölü 2.
+
+1705
+02:38:14,172 --> 02:38:21,852
+y gördüğünüz yere sıfır yazarsak
+
+1706
+02:38:21,852 --> 02:38:25,832
+olur mu ki?
+
+1707
+02:38:26,572 --> 02:38:27,451
+Olmaz işte.
+
+1708
+02:38:28,412 --> 02:38:30,252
+Hocam, sin y üzeri x'ti.
+
+1709
+02:38:30,951 --> 02:38:32,291
+Sin y üzeri x miydi?
+
+1710
+02:38:32,492 --> 02:38:33,131
+Tamam.
+
+1711
+02:38:35,291 --> 02:38:37,352
+Sin y üzeri x olursa o zaman
+
+1712
+02:38:37,352 --> 02:38:39,631
+olur gibi.
+
+1713
+02:38:39,852 --> 02:38:40,031
+Evet.
+
+1714
+02:38:41,131 --> 02:38:43,611
+Sin y üzeri
+
+1715
+02:38:43,611 --> 02:38:46,692
+Evet.
+
+1716
+02:38:47,031 --> 02:38:47,791
+O zaman olur.
+
+1717
+02:38:49,311 --> 02:38:49,852
+If any.
+
+1718
+02:38:49,852 --> 02:38:52,672
+Evet.
+
+1719
+02:38:53,832 --> 02:38:54,432
+Yapın bakalım.
+
+1720
+02:39:16,724 --> 02:39:19,844
+Okay, let's solve item b. Item b yapalım.
+
+1721
+02:39:22,484 --> 02:39:28,724
+So in order to solve such questions, so we apply natural logaritmic function to both sides of this equality.
+
+1722
+02:39:35,636 --> 02:40:05,396
+So, let's derivate both sides of this equality with respect to x. Derivation of sin x, cos x times ln y, plus sin x times, derivation of ln y with respect to x, y' over y, is equal to 1 times ln sin y, plus x times derivation of ln sin y, cos y times y' over,
+
+1723
+02:40:05,636 --> 02:40:17,636
+This is y' sine y. Okay, now let's substitute, let's substitute, let me use different color.
+
+1724
+02:40:17,636 --> 02:40:34,636
+Here, x is equal to pi over 2, y0. So, you cannot substitute y0 here, because of this fact. Okay, now look at here.
+
+1725
+02:40:34,636 --> 02:40:40,636
+because you are going to be different. Because you are going to update some in the terminal form. Can you see that?
+
+1726
+02:40:40,636 --> 02:40:42,636
+Can you see that?
+
+1727
+02:40:46,548 --> 02:41:06,248
+Ve y0'a y0
+
+1728
+02:41:11,123 --> 02:41:25,843
+Dikkat edin arkadaşlar. Burada y gördüğünüz yere 0 yerleştiremiyoruz. Logaritmik fonksiyonunda tanımsızlık getiriyor. O yüzden ne yapıyoruz? Onu o şekilde almıyoruz. Tamam mı gençler?
+
+1729
+02:41:28,423 --> 02:41:32,064
+Evet. Geçiyorum. Şurayı siliyorum.
+
+1730
+02:41:37,940 --> 02:41:45,500
+y yerine sıfır koyamıyorsunuz. Başka bir değer bulmanız lazım. Başka değer bulursanız olur. Ama ben şu an göremedim.
+
+1731
+02:41:50,804 --> 02:42:00,804
+Okay, let's solve this problem. So let's derivate both sides of this. First of all, we take the natural logaritmic of this equation.
+
+1732
+02:42:06,004 --> 02:42:17,944
+Now derivation of this cosine x times ln y plus sine x times y prime over y is equal to 2 over pi times x.
+
+1733
+02:42:17,944 --> 02:42:25,604
+So we substitute x pi over 2 y1.
+
+1734
+02:42:26,144 --> 02:42:29,804
+X pi over 2 y1.
+
+1735
+02:42:30,344 --> 02:42:32,104
+Okay, so this is 0.
+
+1736
+02:42:32,744 --> 02:42:34,204
+So this is 1.
+
+1737
+02:42:34,484 --> 02:42:35,484
+So this is n.
+
+1738
+02:42:36,004 --> 02:42:41,244
+So m is equal to when you substitute this m is equal to 1.
+
+1739
+02:42:42,344 --> 02:42:44,764
+Okay, generally in the test exam you may see.
+
+1740
+02:42:44,764 --> 02:42:46,044
+Hocam bir şey sorabilir miyim?
+
+1741
+02:42:47,044 --> 02:42:50,564
+Eşitliğin karşı tarafını da elenli yapmamız gerekmiyor muydu?
+
+1742
+02:42:50,584 --> 02:42:52,544
+Of course, of course unuttuk.
+
+1743
+02:42:53,624 --> 02:42:54,344
+Of course.
+
+1744
+02:42:55,204 --> 02:42:57,724
+Neydi arkadaşlar? Sildim bak yine yalnız elim kayıyor.
+
+1745
+02:42:57,844 --> 02:43:00,984
+Hiç sevmedim bu white board'un uygulamasını.
+
+1746
+02:43:01,904 --> 02:43:03,664
+Ne olarak vermiştik?
+
+1747
+02:43:03,664 --> 02:43:05,044
+Y üzeri sine x.
+
+1748
+02:43:05,044 --> 02:43:06,724
+Y üzeri sine x mi?
+
+1749
+02:43:07,324 --> 02:43:07,644
+Evet.
+
+1750
+02:43:08,004 --> 02:43:10,024
+Eşittir 2 bölü pi çarpı x.
+
+1751
+02:43:11,164 --> 02:43:11,804
+Evet.
+
+1752
+02:43:12,764 --> 02:43:17,424
+Sine x çarpı elen y eşittir 2 bölü pi.
+
+1753
+02:43:18,144 --> 02:43:19,524
+Tabii ki orayı unuttuk.
+
+1754
+02:43:20,024 --> 02:43:22,004
+Elen 2 bölü pi çarpı x.
+
+1755
+02:43:22,004 --> 02:43:23,984
+O da ne olur?
+
+1756
+02:43:24,864 --> 02:43:25,963
+Türevini alırsak.
+
+1757
+02:43:28,963 --> 02:43:36,264
+Sinis x çarpı y üstü bölü y eşittir 2 bölü pi çarpı x.
+
+1758
+02:43:36,684 --> 02:43:38,463
+Sine türevi 2 bölü pi gelir.
+
+1759
+02:43:38,944 --> 02:43:40,463
+Bölü ne geliyor?
+
+1760
+02:43:40,684 --> 02:43:43,463
+2 bölü pi çarpı x.
+
+1761
+02:43:43,624 --> 02:43:45,324
+Bundan sadece 1 bölü x gelir.
+
+1762
+02:43:45,324 --> 02:43:49,144
+x gördüğümüz yere ne yazmıştık?
+
+1763
+02:43:49,144 --> 02:43:49,824
+2.
+
+1764
+02:43:49,963 --> 02:43:51,144
+Pi bölü 2.
+
+1765
+02:43:51,704 --> 02:43:54,184
+Y gördüğümüz yere 1 yazarsak.
+
+1766
+02:43:54,324 --> 02:43:54,904
+Burası 0.
+
+1767
+02:43:55,984 --> 02:43:57,704
+Burası 1.
+
+1768
+02:43:58,204 --> 02:44:00,684
+Burası m oldu.
+
+1769
+02:44:00,924 --> 02:44:02,024
+M eşittir.
+
+1770
+02:44:02,524 --> 02:44:03,184
+Ne geldi?
+
+1771
+02:44:03,884 --> 02:44:07,884
+1 bölü x gördüğümüz yere pi bölü 2 yazarsak.
+
+1772
+02:44:07,884 --> 02:44:10,244
+Cevap 2 bölü pi olur.
+
+1773
+02:44:11,184 --> 02:44:11,624
+Tamam mı?
+
+1774
+02:44:12,504 --> 02:44:13,604
+Y üstü.
+
+1775
+02:44:15,724 --> 02:44:16,324
+Ne dedik?
+
+1776
+02:44:16,484 --> 02:44:19,384
+X gördüğümüz yere pi bölü 2 bölü pi.
+
+1777
+02:44:20,284 --> 02:44:25,704
+Y gördüğümüz yere 1 yazdığımızda buna m dersek.
+
+1778
+02:44:25,844 --> 02:44:26,724
+M'imiz ne geldi?
+
+1779
+02:44:27,044 --> 02:44:28,624
+2 bölü pi olarak geldi.
+
+1780
+02:44:28,944 --> 02:44:29,624
+Tamam mı gençler?
+
+1781
+02:44:29,804 --> 02:44:30,704
+Var mı anlaşımdan bir yer?
+
+1782
+02:44:32,264 --> 02:44:33,164
+Var mı sorusu olarak?
+
+1783
+02:44:33,164 --> 02:44:33,744
+Yok hocam.
+
+1784
+02:44:35,904 --> 02:44:37,484
+Türevini alarak gidiyorsunuz.
+
+1785
+02:44:37,484 --> 02:44:39,404
+Logaritmasını alarak türev alıyorsunuz.
+
+1786
+02:44:39,444 --> 02:44:40,463
+Cevabı buluyorsunuz.
+
+1787
+02:44:40,724 --> 02:44:40,924
+Evet.
+
+1788
+02:44:41,104 --> 02:44:41,324
+Neyse.
+
+1789
+02:44:41,424 --> 02:44:42,364
+Bugünlük yeter bu kadar.
+
+1790
+02:44:42,524 --> 02:44:43,544
+Benim zihnim yoruldu.
+
+1791
+02:44:43,684 --> 02:44:46,584
+Sabahtan beri baya bir yorulduk.
+
+1792
+02:44:47,724 --> 02:44:48,784
+Artık burada bırakalım.
+
+1793
+02:44:50,444 --> 02:44:52,364
+Sorunuz yoksa bitirelim dersi arkadaşlar.
+
+1794
+02:44:52,604 --> 02:44:54,244
+If you don't have any question,
+
+1795
+02:44:55,344 --> 02:44:56,584
+so let's finish our lecture.
+
+1796
+02:45:02,291 --> 02:45:03,551
+Okay, see you tomorrow.

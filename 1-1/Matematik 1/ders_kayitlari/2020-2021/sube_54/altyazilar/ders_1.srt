@@ -1,0 +1,8079 @@
+1
+00:00:07,636 --> 00:00:10,496
+Evet, merhaba arkadaşlar. Sesim geliyor mu?
+
+2
+00:00:30,739 --> 00:00:34,859
+Evet. Birazcık bekleyelim. Katılım artsın.
+
+3
+00:00:45,780 --> 00:00:47,859
+Beyaz tahtayı görebiliyorsunuz değil mi arkadaşlar?
+
+4
+00:01:00,468 --> 00:01:01,468
+bir daha.
+
+5
+00:01:12,403 --> 00:01:16,024
+Evet, birkaç dakika daha bekleyelim. Katılım olur belki.
+
+6
+00:04:02,259 --> 00:04:09,979
+Evet arkadaşlar, tanışalım. Dersimiz İngilizce olacak. İlk başta Türkçe konuşalım dedik. Evet, sesim geliyor değil mi arkadaşlar?
+
+7
+00:04:14,388 --> 00:04:16,388
+86. Evet, güzel.
+
+8
+00:04:17,247 --> 00:04:18,908
+Okay, let me introduce myself.
+
+9
+00:04:19,468 --> 00:04:20,828
+My name is
+
+10
+00:04:20,828 --> 00:04:23,288
+Muhtalip Özavşar.
+
+11
+00:04:27,411 --> 00:04:41,411
+The quote of this lecture, Mat 1071, which is related to the theory of single variable function.
+
+12
+00:04:44,451 --> 00:04:50,131
+Theory of single variable functions.
+
+13
+00:04:56,915 --> 00:05:02,915
+Y is f of x
+
+14
+00:05:02,915 --> 00:05:08,915
+So var x is independent variable, unique variable and y is dependent variable. Okay?
+
+15
+00:05:08,915 --> 00:05:10,915
+Now
+
+16
+00:05:13,555 --> 00:05:26,115
+Let me introduce main topics, main titles. Okay, so we start by introducing definitional function and some basic definitions about functions.
+
+17
+00:05:28,315 --> 00:05:29,995
+Single variable functions.
+
+18
+00:05:31,195 --> 00:05:32,195
+Limit.
+
+19
+00:05:37,939 --> 00:05:38,740
+continuity.
+
+20
+00:05:45,524 --> 00:05:51,524
+derivisiyon ve integrasyon.
+
+21
+00:05:55,252 --> 00:06:04,211
+Okay, there are some kinds of functions. Polinomial functions, rational functions.
+
+22
+00:06:07,540 --> 00:06:09,540
+trigonometrik functions,
+
+23
+00:06:12,540 --> 00:06:14,540
+algebraic functions,
+
+24
+00:06:20,627 --> 00:06:42,627
+Okay, those are basic functions, but also there are transcendental functions, logarithmic functions, exponential functions, and inverse trigonometric functions.
+
+25
+00:06:46,132 --> 00:06:49,831
+So at the beginning we are going to learn basic functions.
+
+26
+00:06:49,951 --> 00:06:51,372
+Those are basic functions.
+
+27
+00:06:52,572 --> 00:06:55,872
+At the beginning we are going to learn basic functions.
+
+28
+00:06:56,232 --> 00:06:59,771
+Then we are going to learn transcendental function.
+
+29
+00:07:02,891 --> 00:07:04,612
+Aşkın Funksiyonlar.
+
+30
+00:07:06,211 --> 00:07:07,091
+Okay.
+
+31
+00:07:09,211 --> 00:07:10,132
+Now,
+
+32
+00:07:10,132 --> 00:07:19,651
+So we may follow this source, Thomas calculus.
+
+33
+00:07:21,271 --> 00:07:22,851
+But this is not mandatory.
+
+34
+00:07:23,412 --> 00:07:28,292
+You may study those main titles from other books.
+
+35
+00:07:28,552 --> 00:07:28,771
+Okay.
+
+36
+00:07:29,012 --> 00:07:31,792
+But so we may follow this Thomas calculus.
+
+37
+00:07:33,971 --> 00:07:34,732
+Okay.
+
+38
+00:07:35,132 --> 00:07:38,271
+So possibly you are going to have one midterm exam.
+
+39
+00:07:39,271 --> 00:07:39,992
+Exam.
+
+40
+00:07:40,132 --> 00:07:45,812
+One midterm exam.
+
+41
+00:07:47,512 --> 00:07:48,072
+Exam.
+
+42
+00:07:48,572 --> 00:07:50,872
+This will affect your grade.
+
+43
+00:07:52,612 --> 00:07:55,231
+By 30%.
+
+44
+00:07:55,231 --> 00:07:58,132
+And final exam.
+
+45
+00:08:00,132 --> 00:08:02,731
+Final exam will affect your grade.
+
+46
+00:08:04,192 --> 00:08:05,951
+By 70%.
+
+47
+00:08:05,951 --> 00:08:06,891
+Okay.
+
+48
+00:08:07,331 --> 00:08:08,132
+Suppose that
+
+49
+00:08:08,132 --> 00:08:10,052
+You will fail.
+
+50
+00:08:11,572 --> 00:08:12,552
+In that case,
+
+51
+00:08:12,891 --> 00:08:15,012
+You can take bütünleme exam.
+
+52
+00:08:15,012 --> 00:08:16,752
+Mainly make-up exam.
+
+53
+00:08:16,951 --> 00:08:17,132
+Okay.
+
+54
+00:08:17,351 --> 00:08:18,372
+Let me write this.
+
+55
+00:08:19,252 --> 00:08:19,851
+In Turkish,
+
+56
+00:08:20,072 --> 00:08:21,591
+Let me say bütünleme.
+
+57
+00:08:22,872 --> 00:08:23,231
+Okay.
+
+58
+00:08:25,451 --> 00:08:26,552
+Make-up exam.
+
+59
+00:08:26,552 --> 00:08:33,932
+Okay.
+
+60
+00:09:03,932 --> 00:09:06,052
+So what is the mathematical definition?
+
+61
+00:09:06,052 --> 00:09:07,652
+What is the definition of success?
+
+62
+00:09:07,652 --> 00:09:08,652
+success?
+
+63
+00:09:11,112 --> 00:09:12,652
+Birazcık konuşalım.
+
+64
+00:09:12,652 --> 00:09:37,652
+What is the definition of success?
+
+65
+00:09:21,683 --> 00:09:21,863
+Evet.
+
+66
+00:09:24,504 --> 00:09:25,583
+May I ask something?
+
+67
+00:09:26,663 --> 00:09:27,004
+What?
+
+68
+00:09:27,583 --> 00:09:28,703
+May I ask something?
+
+69
+00:09:30,004 --> 00:09:30,823
+Yes, of course.
+
+70
+00:09:34,743 --> 00:09:35,504
+Wait.
+
+71
+00:09:36,903 --> 00:09:39,903
+Hocam, hangi şeyini kullanacağız, baskısını kullanacağız kitabın?
+
+72
+00:09:40,683 --> 00:09:42,624
+Yani son baskısı neyse onu kullanacağız.
+
+73
+00:09:50,259 --> 00:09:54,259
+Bu konuda, bu konuda, bu konuda, yöntemizde.
+
+74
+00:09:58,707 --> 00:10:01,307
+Nedir arkadaşlar? Başarının tanımı nedir sizce?
+
+75
+00:10:02,607 --> 00:10:03,307
+Sizce diyorum.
+
+76
+00:10:10,676 --> 00:10:11,876
+Düşünüm, matematik.
+
+77
+00:10:11,876 --> 00:10:12,956
+Accomplish your aim.
+
+78
+00:10:14,516 --> 00:10:16,496
+Accomplish, achieving your goals.
+
+79
+00:10:17,156 --> 00:10:17,396
+Okay.
+
+80
+00:10:17,596 --> 00:10:20,276
+I think this answer is not true.
+
+81
+00:10:21,956 --> 00:10:25,176
+Achieving, obtaining goals, achieving.
+
+82
+00:10:26,096 --> 00:10:26,475
+Okay.
+
+83
+00:10:26,636 --> 00:10:28,855
+This is not true answer in my opinion.
+
+84
+00:10:29,235 --> 00:10:29,516
+Okay.
+
+85
+00:10:34,131 --> 00:10:52,051
+x kare artı 3x, f'
+
+86
+00:10:52,115 --> 00:10:54,235
+Başarılı olmak, zengin olmak mı?
+
+87
+00:10:58,975 --> 00:11:02,696
+Mutlu olmana olanak sağlayan bir şey yapmak.
+
+88
+00:11:04,556 --> 00:11:05,395
+Evet, tamam, güzel.
+
+89
+00:11:06,056 --> 00:11:07,495
+Herkes farklı bir tanım söylüyor.
+
+90
+00:11:08,615 --> 00:11:11,456
+As you see, everyone has different, distinct type definition.
+
+91
+00:11:11,635 --> 00:11:15,135
+As you see, this is subjective definition, relative definition.
+
+92
+00:11:16,216 --> 00:11:18,096
+But let me ask you this question.
+
+93
+00:11:22,707 --> 00:11:26,707
+What is the mathematical definition?
+
+94
+00:11:36,179 --> 00:12:06,120
+x'
+
+95
+00:11:41,844 --> 00:11:43,903
+give such definition that
+
+96
+00:11:43,903 --> 00:11:45,704
+every
+
+97
+00:11:45,704 --> 00:11:47,364
+every definitions
+
+98
+00:11:47,364 --> 00:11:48,764
+for
+
+99
+00:11:48,764 --> 00:11:49,624
+success
+
+100
+00:11:49,624 --> 00:11:55,564
+are contained by this general definition, matematical definition. Öyle bir tanım verin ki
+
+101
+00:11:55,564 --> 00:11:59,504
+herkesin tanımı sizin verdiğiniz bu tanım tarafından
+
+102
+00:11:59,504 --> 00:12:00,204
+kapsansın.
+
+103
+00:12:01,204 --> 00:12:01,964
+Tek bir cümle.
+
+104
+00:12:10,484 --> 00:12:10,984
+Evet.
+
+105
+00:12:19,028 --> 00:12:21,788
+bu ket sıfırdan bire değişmesi.
+
+106
+00:12:23,008 --> 00:12:24,128
+Yani tam şey olmuyor.
+
+107
+00:12:25,548 --> 00:12:27,908
+Matematiksel tanım istiyorum daha böyle.
+
+108
+00:12:29,228 --> 00:12:31,548
+Peki, şu soruyu sorayım size.
+
+109
+00:12:35,283 --> 00:12:37,283
+What is
+
+110
+00:12:37,843 --> 00:12:39,843
+Average velocity
+
+111
+00:12:45,043 --> 00:12:46,484
+Ne alaka diyeceksiniz?
+
+112
+00:12:48,423 --> 00:12:50,103
+Baya bir alaka var işte.
+
+113
+00:12:51,443 --> 00:12:51,723
+Evet.
+
+114
+00:12:54,843 --> 00:12:56,583
+Herkes biliyor değil mi bunun tanımını?
+
+115
+00:13:02,292 --> 00:13:05,331
+Evet, ortalama hız. Tanımı nedir?
+
+116
+00:13:06,831 --> 00:13:07,831
+Heh, good.
+
+117
+00:13:10,272 --> 00:13:16,912
+Okay, considering this average velocity definition, I think you can give the mathematical definition of success.
+
+118
+00:13:19,912 --> 00:13:20,552
+So,
+
+119
+00:13:24,132 --> 00:13:25,711
+instant standing velocity,
+
+120
+00:13:29,392 --> 00:13:30,112
+anlık hız,
+
+121
+00:13:32,292 --> 00:13:34,451
+Okay, we can do this.
+
+122
+00:13:34,451 --> 00:13:35,112
+Average
+
+123
+00:13:35,112 --> 00:13:37,632
+success.
+
+124
+00:13:40,331 --> 00:13:41,772
+So, instant standing
+
+125
+00:13:41,772 --> 00:14:01,951
+...
+
+126
+00:13:46,196 --> 00:13:48,196
+Instance 10 is success.
+
+127
+00:13:49,596 --> 00:13:53,995
+What is average success? What is instant 10 is success?
+
+128
+00:13:57,620 --> 00:13:58,960
+Evet, şimdi düşünün bakalım.
+
+129
+00:14:04,115 --> 00:14:07,875
+Nasıl tanımlarsınız? Ortalama başarı, anlık başarı.
+
+130
+00:14:16,307 --> 00:14:16,867
+Good.
+
+131
+00:14:18,528 --> 00:14:18,827
+Tamam.
+
+132
+00:14:20,288 --> 00:14:23,607
+Daha matematiksel. Yaklaştırdım. Bayağı ipuçları verdim size.
+
+133
+00:14:25,548 --> 00:14:25,867
+Evet.
+
+134
+00:14:27,288 --> 00:14:30,307
+Okay. So, let me ask you this question. Do you think...
+
+135
+00:14:36,659 --> 00:14:48,419
+Sox'is here, sox'is depends on, depends on many parameters. Sox'is depends on many parameters.
+
+136
+00:14:50,659 --> 00:14:57,779
+Isn't that? Sox'is depends on time. Sox'is in fact depends on responsibilities.
+
+137
+00:14:57,779 --> 00:15:11,939
+Okay. Sox'is associated with responsibilities. Responsibilities change. Okay. Change.
+
+138
+00:15:14,179 --> 00:15:21,620
+Depending on person. Okay. Depending on conditions. Okay. There are many parameters. Variable 1,
+
+139
+00:15:21,620 --> 00:15:34,099
+variable 2. Okay. There are many variables for responsibilities. But which one is the main variable for responsibility?
+
+140
+00:15:35,139 --> 00:15:45,860
+There are many variables for responsibility. Okay. But which one is main prime variable?
+
+141
+00:15:45,860 --> 00:15:55,699
+Sorumluluk. Sorumluluk birçok parametreye bağlıdır. Ama ana, asal değişken, ana değişken parametre nedir sizce?
+
+142
+00:15:55,699 --> 00:15:57,339
+Bunu düşünün arkadaşlar.
+
+143
+00:15:59,339 --> 00:15:59,899
+Evet.
+
+144
+00:16:03,731 --> 00:16:23,451
+Evet, sorumluluk için ana değişken. Zaman. Evet, güzel. Birçok şey için zamandır arkadaşlar. O zaman şimdi düşünün. Nasıl tanımlayacağız yukarıdaki ortalamanızı alırsak. O zaman bakın, siliyorum.
+
+145
+00:16:23,451 --> 00:16:25,491
+Clear all driving.
+
+146
+00:16:27,291 --> 00:16:29,451
+Ok, so. Let's...
+
+147
+00:16:37,331 --> 00:16:40,331
+Let's suppose that this amount
+
+148
+00:16:44,052 --> 00:16:47,052
+...amount of responsibility...
+
+149
+00:16:50,932 --> 00:17:20,932
+done by someone or some company or some student, whatever you like. At the moment, t. So average success for this someone or some company,
+
+150
+00:17:20,932 --> 00:17:45,432
+delta r over delta t, delta r, r t minus r t0 over t minus t0. Okay, let me write this over the time interval from t0 to t. Okay.
+
+151
+00:17:45,432 --> 00:18:01,932
+Okay, so this is the average success of somebody or some company. Okay. Over the time interval. Okay. So this is the average success. So what about instance turning success?
+
+152
+00:18:06,099 --> 00:18:06,579
+Evet.
+
+153
+00:18:08,619 --> 00:18:10,699
+Neresi anlaşılmıyor belirliyle?
+
+154
+00:18:11,539 --> 00:18:13,779
+Ortalama başarı dedik.
+
+155
+00:18:15,240 --> 00:18:23,299
+T anında bir kişi tarafından veya bir şirket tarafından yerine getirilen sorumlulukların miktarı RT olsun dedik.
+
+156
+00:18:23,959 --> 00:18:31,000
+O zaman T0'dan T'ye kadar olan geçen zamanda ortalama başarı nedir dedik.
+
+157
+00:18:31,899 --> 00:18:35,719
+Delta R bölü delta T0'dır dedik.
+
+158
+00:18:36,099 --> 00:18:36,599
+Nedir?
+
+159
+00:18:37,379 --> 00:18:40,419
+Şu fark bölü T0.
+
+160
+00:18:41,319 --> 00:18:42,359
+Geçen zaman.
+
+161
+00:18:43,079 --> 00:18:43,480
+Doğru mu?
+
+162
+00:18:45,019 --> 00:18:46,579
+İşte ortalama başarı budur.
+
+163
+00:18:46,740 --> 00:18:51,759
+T0 anından T anına kadar olan geçen zaman üzerindeki şu fark.
+
+164
+00:18:52,500 --> 00:18:55,139
+Ve orantılarsan bunu bulmuş oluyorsun.
+
+165
+00:18:55,240 --> 00:18:56,099
+Ortalama başarı.
+
+166
+00:18:56,240 --> 00:18:57,079
+Şimdi anlı kız.
+
+167
+00:18:58,359 --> 00:18:59,699
+What is the instantaneous?
+
+168
+00:19:03,859 --> 00:19:04,619
+Instantaneous.
+
+169
+00:19:08,692 --> 00:19:12,251
+instance 10 is success. Anlık başarı nedir?
+
+170
+00:19:12,991 --> 00:19:13,852
+At the moment,
+
+171
+00:19:14,572 --> 00:19:17,531
+at the moment,
+
+172
+00:19:19,231 --> 00:19:19,971
+t0.
+
+173
+00:19:22,112 --> 00:19:22,951
+Evet.
+
+174
+00:19:24,791 --> 00:19:26,072
+Nedir arkadaşlar?
+
+175
+00:19:26,971 --> 00:19:27,971
+Ne yapacağım sizce burada?
+
+176
+00:19:28,791 --> 00:19:30,251
+Anlık başarı hesaplamak için.
+
+177
+00:19:33,192 --> 00:19:34,471
+Of course.
+
+178
+00:19:39,796 --> 00:19:49,216
+güzel. Ok, ok, so limit, so we need to write this limit in order to compute instance 10 is velocity.
+
+179
+00:19:51,076 --> 00:19:59,456
+We choose this t as some values which are sufficiently close t0. We need to use limit concept.
+
+180
+00:19:59,456 --> 00:20:23,696
+as t goes to t0. Ok, so this rt minus rt0 over t minus t0. Ok, this t tends to be t0. Ok, as long as this t tends to be t0, this means that you need to use limit concept here.
+
+181
+00:20:23,696 --> 00:20:32,655
+So, and so we need to consider we need to use this average success. Ok, now so you are going to obtain instance 10 is
+
+182
+00:20:35,936 --> 00:20:41,855
+success. So is the derivation of derivation of
+
+183
+00:20:44,016 --> 00:20:52,336
+instance 10 is derivation means instance 10 is rate of change of some function at the moment t0. Derivation of responsibility function.
+
+184
+00:20:52,336 --> 00:20:56,416
+responsibility function.
+
+185
+00:20:57,776 --> 00:21:01,895
+Gördüğünüz gibi sorumluluk fonksiyonun türevi bize neyi veriyormuş arkadaşlar?
+
+186
+00:21:03,576 --> 00:21:04,256
+Birisi size
+
+187
+00:21:04,256 --> 00:21:06,976
+başarının tanımı nedir diye sorarsa
+
+188
+00:21:06,976 --> 00:21:09,736
+direkt mühendisle karşınızdaki
+
+189
+00:21:09,736 --> 00:21:11,236
+vereceğiniz cevap
+
+190
+00:21:11,236 --> 00:21:13,236
+sorumluluk fonksiyonun türevidir.
+
+191
+00:21:13,496 --> 00:21:15,155
+Eğer sorumluluk fonksiyonun türevi
+
+192
+00:21:15,155 --> 00:21:16,836
+pozitif olursa
+
+193
+00:21:16,836 --> 00:21:18,836
+bu kişi başarılıdır demek.
+
+194
+00:21:19,176 --> 00:21:20,236
+Ama negatifse daima
+
+195
+00:21:20,236 --> 00:21:22,196
+bu kişi başarısızdır demek.
+
+196
+00:21:22,336 --> 00:21:24,336
+dolayısıyla başarılı bir sonuç değil.
+
+197
+00:21:24,336 --> 00:21:25,336
+Başarılı bir sonuç değildir.
+
+198
+00:21:25,336 --> 00:21:26,336
+Başarılı bir süreçtir arkadaşlar.
+
+199
+00:21:26,336 --> 00:21:27,336
+As you see
+
+200
+00:21:27,336 --> 00:21:29,336
+the success is not some
+
+201
+00:21:29,336 --> 00:21:30,336
+goal
+
+202
+00:21:30,336 --> 00:21:33,336
+is not to have
+
+203
+00:21:33,336 --> 00:21:34,336
+goals
+
+204
+00:21:34,336 --> 00:21:35,336
+ok
+
+205
+00:21:35,336 --> 00:21:37,336
+success is some kind of process
+
+206
+00:21:37,336 --> 00:21:38,336
+ok
+
+207
+00:21:38,336 --> 00:21:40,336
+not to obtain goals
+
+208
+00:21:40,336 --> 00:21:43,336
+amaçlara erişmek değildir arkadaşlar başarı.
+
+209
+00:21:43,336 --> 00:21:44,336
+Başarı
+
+210
+00:21:44,336 --> 00:21:45,336
+başarı
+
+211
+00:21:45,336 --> 00:21:47,336
+birim zamanında yerine getirilen
+
+212
+00:21:47,336 --> 00:21:50,336
+maddi manevi sorumlulukları miktarıdır arkadaşlar.
+
+213
+00:21:50,336 --> 00:21:52,336
+işte maddi manevi sorumlulukları
+
+214
+00:21:52,336 --> 00:21:53,336
+belirleme işi
+
+215
+00:21:53,336 --> 00:21:56,336
+insanın sahip olduğu bir yetenektir.
+
+216
+00:21:56,336 --> 00:21:58,336
+Başka bir varlık bunu yapamaz arkadaşlar.
+
+217
+00:21:58,336 --> 00:22:00,336
+Sadece insanoğlu
+
+218
+00:22:00,336 --> 00:22:02,336
+maddi manevi sorumluluklarını belirlemekle
+
+219
+00:22:02,336 --> 00:22:04,336
+nedir arkadaşlar?
+
+220
+00:22:04,336 --> 00:22:05,336
+donatılmıştır.
+
+221
+00:22:05,336 --> 00:22:07,336
+başka varlıklar
+
+222
+00:22:07,336 --> 00:22:10,336
+varlıklar
+
+223
+00:22:10,336 --> 00:22:12,336
+var mı sorusu olan
+
+224
+00:22:12,336 --> 00:22:13,336
+var mı sorusu olan?
+
+225
+00:22:18,804 --> 00:22:26,384
+Evet, gördüğünüz gibi arkadaşlar, as you see, we can define every concept by using mathematics.
+
+226
+00:22:27,104 --> 00:22:30,403
+We can define every concept by using mathematics.
+
+227
+00:22:30,804 --> 00:22:33,284
+Okay, so this is just motivation. This is not course.
+
+228
+00:22:33,284 --> 00:22:38,364
+Okay, that's why, okay, you may forget many formulas.
+
+229
+00:22:39,244 --> 00:22:46,544
+Okay, it is not important to memorize formulas, but it is very important to understand philosophy behind every formula.
+
+230
+00:22:46,544 --> 00:22:52,384
+Okay, your goal is to understand philosophy behind each formula.
+
+231
+00:22:53,104 --> 00:22:55,284
+Okay, you don't need to memorize formulas.
+
+232
+00:22:55,444 --> 00:22:57,024
+Formüle rezbelemek zorunda değilsiniz.
+
+233
+00:22:57,784 --> 00:23:04,524
+Arkadaşlar, formüllerin arkasında yatan o felsefeyi, mantığı anlamaya odaklanacaksınız.
+
+234
+00:23:04,984 --> 00:23:08,304
+Bunu yaptığınız an iyi bir matematik eğitimi almış olursunuz.
+
+235
+00:23:08,304 --> 00:23:13,884
+Bana sorsanız ki şu matematik formülü nedir diye, yani hemen söyle, ben söyleyemem arkadaşlar.
+
+236
+00:23:14,163 --> 00:23:15,923
+Çünkü ben öyle bir eğitim almadım.
+
+237
+00:23:15,923 --> 00:23:20,584
+Formülü nasıl çıkartabilirim, bu ne demek istiyor, bu ne demek istiyor, onun üzerine eğitim aldım.
+
+238
+00:23:20,584 --> 00:23:25,403
+Sakın bana arkadaşlar, şu nedir hocam hemen söyle, ben formülü ezberleyemiyorum arkadaşlar.
+
+239
+00:23:26,044 --> 00:23:27,684
+Öyle bir yetinim yok, size söyleyeyim.
+
+240
+00:23:27,764 --> 00:23:28,204
+Tamam arkadaşlar?
+
+241
+00:23:30,964 --> 00:23:33,084
+Evet, sorumluluk fonksiyonunun türevi.
+
+242
+00:23:35,484 --> 00:23:39,724
+Success is the derivation function of responsibility function.
+
+243
+00:23:39,884 --> 00:23:40,084
+Okay?
+
+244
+00:23:41,564 --> 00:23:43,504
+Evet, bunu da unutmayın.
+
+245
+00:23:43,504 --> 00:24:13,484
+sadece insanoğlu arkadaşlar,
+
+246
+00:24:04,980 --> 00:24:06,279
+Evet devam edelim.
+
+247
+00:24:06,519 --> 00:24:07,500
+Dersimize başlayalım.
+
+248
+00:24:08,059 --> 00:24:10,880
+Bu dersteki sorumluluklar, bu derse katılacaksınız.
+
+249
+00:24:11,099 --> 00:24:11,819
+Dinleyeceksiniz.
+
+250
+00:24:12,000 --> 00:24:12,559
+Tamam arkadaşlar.
+
+251
+00:24:12,680 --> 00:24:16,380
+Ekranın karşısına geçip ya hoca nasıl olsa ders anlatıyor.
+
+252
+00:24:16,440 --> 00:24:18,360
+Beni görmüyor deyip sakın arkadaşlar.
+
+253
+00:24:18,360 --> 00:24:19,720
+Böyle bir şey yapmayın.
+
+254
+00:24:20,220 --> 00:24:22,299
+Basit görünebilir size anlattığım şeyler.
+
+255
+00:24:22,900 --> 00:24:25,700
+Ama muhakkak onu ileride kullanacaksınızdır.
+
+256
+00:24:25,799 --> 00:24:27,019
+Basit deyip küçümsemeyin.
+
+257
+00:24:27,460 --> 00:24:30,740
+Bilmiyormuş gibi ben bilmiyorum mantığıyla yaklaşın.
+
+258
+00:24:30,860 --> 00:24:31,500
+Tamam arkadaşlar.
+
+259
+00:24:32,039 --> 00:24:33,360
+Sakın küçümsemeyin hiçbir şeyi.
+
+260
+00:24:33,360 --> 00:24:36,019
+küçümsediğiniz anda hapı yutarsınız.
+
+261
+00:24:36,839 --> 00:24:37,680
+Onu söyleyeyim size.
+
+262
+00:24:39,839 --> 00:24:40,120
+Evet.
+
+263
+00:24:42,480 --> 00:24:43,259
+Var mı sorusu olan?
+
+264
+00:24:43,360 --> 00:24:44,079
+Derse başlayacağım.
+
+265
+00:24:44,180 --> 00:24:44,900
+İzerelik o için.
+
+266
+00:24:44,900 --> 00:24:48,900
+Bu sadece bir motivasyon.
+
+267
+00:24:50,779 --> 00:24:51,279
+Tura.
+
+268
+00:24:53,980 --> 00:24:56,940
+Yani biz neden bu kavramları öğretiyoruz?
+
+269
+00:24:57,079 --> 00:24:58,140
+Limit kavramı var.
+
+270
+00:24:58,240 --> 00:24:59,400
+Süreklilik kavramı var.
+
+271
+00:24:59,500 --> 00:25:00,559
+Türev kavramı var.
+
+272
+00:25:01,360 --> 00:25:03,200
+İnteklilik kavramı var.
+
+273
+00:25:03,360 --> 00:25:04,860
+Bunlar arkadaşlar.
+
+274
+00:25:05,380 --> 00:25:06,839
+Kullanılan kavramlar.
+
+275
+00:25:07,220 --> 00:25:08,400
+Hayatın her alanında.
+
+276
+00:25:08,740 --> 00:25:11,380
+Özellikle mühendisliklerde kullanılan kavramlar.
+
+277
+00:25:12,099 --> 00:25:13,259
+Ona göre.
+
+278
+00:25:13,480 --> 00:25:14,019
+Tamam mı arkadaşlar?
+
+279
+00:25:14,279 --> 00:25:15,220
+E-mail adresim var.
+
+280
+00:25:15,319 --> 00:25:17,599
+Mutlali Bözavşar diye yazarsan çıkar zaten.
+
+281
+00:25:18,480 --> 00:25:18,860
+Tamam mı?
+
+282
+00:25:18,860 --> 00:25:24,099
+Thomas Kalkulus'un konuları oradan çalışırsınız diye.
+
+283
+00:25:24,180 --> 00:25:24,860
+Ama gerek yok.
+
+284
+00:25:24,980 --> 00:25:27,079
+Ben AVS'le paylaştım arkadaşlar.
+
+285
+00:25:27,539 --> 00:25:29,759
+Şifrem de [şifre].
+
+286
+00:25:30,759 --> 00:25:32,839
+Oradan şifreye girerek arkadaşlar.
+
+287
+00:25:34,839 --> 00:25:38,960
+My password in order to obtain lecture note.
+
+288
+00:25:39,140 --> 00:25:40,140
+[şifre].
+
+289
+00:25:45,395 --> 00:25:47,235
+Bu diye hatırlıyorum. Bir deneyin bakayım.
+
+290
+00:25:47,475 --> 00:25:48,796
+Ama siz de girerseniz
+
+291
+00:25:48,796 --> 00:25:54,635
+[şifre] ile ders notlarını indirebilirsiniz diye hatırlıyordum.
+
+292
+00:25:55,015 --> 00:25:57,015
+Geçtiğimiz yaz döneminde. Tamam arkadaşlar?
+
+293
+00:25:57,695 --> 00:25:58,576
+This is password.
+
+294
+00:26:01,755 --> 00:26:02,915
+In order to download
+
+295
+00:26:02,915 --> 00:26:05,056
+lecture notes. Okay?
+
+296
+00:26:19,284 --> 00:26:41,544
+yok, buradan devam etmeyeceğim. Şimdi hemen, ne yapacağım, sen neden yazılar zor okunuyor? Bilmiyorum, yazı çirkin olduğundan anlıyor. Evet, devam edelim. Ders notumu paylaşıyorum şimdi arkadaşlar. Stop share. So, let me share another lecture notes.
+
+297
+00:26:45,491 --> 00:26:46,051
+ok?
+
+298
+00:27:03,443 --> 00:27:04,384
+Niye gelmedi?
+
+299
+00:27:05,903 --> 00:27:08,124
+Uygulama penceresini paylaş dedim.
+
+300
+00:27:31,124 --> 00:27:33,604
+Evet, şu an functions kısmını görüyor musunuz arkadaşlar?
+
+301
+00:27:37,332 --> 00:27:38,632
+Sesim geliyor mu gençler?
+
+302
+00:27:39,532 --> 00:27:41,451
+Geliyor hocam.
+
+303
+00:27:41,992 --> 00:27:44,632
+Şu an paylaştığım dosyayı gördünüz mü?
+
+304
+00:28:02,099 --> 00:28:16,139
+Şimdi paylaşayım. Biraz geç geldi. Evet, tamam. Şimdi görüyor musunuz? Evet. Evet, tamam. Zoom biraz geç aldıları şeyini. Dosyayı. Evet.
+
+305
+00:28:16,139 --> 00:28:37,439
+Okay, so let's introduce basic definition, the function. So what is function? Function, in fact, is a rule, okay, is a rule assigning to each element of some dx, okay, a unique value, okay, denoted by f of x.
+
+306
+00:28:37,439 --> 00:28:52,599
+So f of x is contained by codomain, okay, or range, okay. Now x is contained by domain, okay. Let me illustrate this figure. So consider this figure.
+
+307
+00:28:56,115 --> 00:28:59,556
+So we have some input x, so we have some rules.
+
+308
+00:29:00,655 --> 00:29:07,256
+Okay, when you apply these rules, okay, this input x, you are going to obtain some output f of x.
+
+309
+00:29:07,256 --> 00:29:13,776
+Okay, f of x, okay, range of, some people use image of f, okay.
+
+310
+00:29:14,215 --> 00:29:22,796
+So x is contained by domain of f, okay.
+
+311
+00:29:22,796 --> 00:29:25,195
+Okay, f of x, the output.
+
+312
+00:29:25,735 --> 00:29:27,695
+Now attention here, so look at that.
+
+313
+00:29:28,076 --> 00:29:29,276
+So this is domain.
+
+314
+00:29:30,155 --> 00:29:32,596
+So in fact, so we have here co-domain.
+
+315
+00:29:32,596 --> 00:29:39,556
+So image of f, range of f, some people use image of f or range of f.
+
+316
+00:29:39,915 --> 00:29:45,155
+So this is the co-domain, dialer kumensaklash, co-domain.
+
+317
+00:29:46,375 --> 00:29:48,316
+Contained by co-domain.
+
+318
+00:29:49,455 --> 00:29:51,296
+Okay, now look at here.
+
+319
+00:29:51,296 --> 00:29:57,996
+So this x is assigned to only one element in the co-domain or range.
+
+320
+00:29:58,195 --> 00:30:04,996
+Okay, now, so two distinct inputs may be assigned to same output.
+
+321
+00:30:05,316 --> 00:30:06,336
+Okay, this is good.
+
+322
+00:30:06,836 --> 00:30:10,935
+But one single, okay, look at, you cannot write this.
+
+323
+00:30:10,935 --> 00:30:17,516
+For example, a, f of x, let's say this is b.
+
+324
+00:30:17,516 --> 00:30:29,756
+So if you have this case, so this means that, so this means that a is equal to b.
+
+325
+00:30:29,836 --> 00:30:33,235
+Otherwise, this is contradiction to the definition of function.
+
+326
+00:30:33,435 --> 00:30:44,215
+We know that one element taken from domain must be assigned to only one single element living in co-domain.
+
+327
+00:30:44,215 --> 00:30:50,615
+Okay, yani tanım kümesindeki bir eleman, değerler kümesindeki yalnızca bir elemanla eşleştirir.
+
+328
+00:30:50,855 --> 00:30:57,855
+Eğer farklı bir elemanla eşleşmiş gibi yazarsanız, aslında oradaki çıktılar aynı olmak zorunda.
+
+329
+00:30:58,076 --> 00:30:59,615
+Yoksa fonksiyon tanımına aykırı olur.
+
+330
+00:30:59,615 --> 00:31:02,316
+Ama iki farklı, iki farklı girdi.
+
+331
+00:31:03,115 --> 00:31:09,816
+Okay, so as you see, two distinct type inputs may be assigned to same, same.
+
+332
+00:31:13,779 --> 00:31:17,940
+output. Okay, so where x1 is different from x2. Okay, this is good.
+
+333
+00:31:21,428 --> 00:31:39,008
+This is okay for the definition of function. Okay. But if you write this, this is mistake. Okay. So this is the contradiction to spirit of definition of function. But this must be equal to B. Attention here.
+
+334
+00:31:40,708 --> 00:31:50,948
+Dikkat edin arkadaşlar, liseden öğreniyorsunuz zaten. Okay. So vertical line test. So we can verify some curve.
+
+335
+00:31:51,428 --> 00:31:55,868
+Okay. So let me introduce the graph of any function. So what is the graph of any function?
+
+336
+00:31:56,888 --> 00:31:58,128
+Graph of f.
+
+337
+00:31:59,888 --> 00:32:00,928
+Graph of f
+
+338
+00:32:00,928 --> 00:32:05,148
+is a set consisting of x, y pairs.
+
+339
+00:32:05,728 --> 00:32:07,488
+Okay. So where
+
+340
+00:32:07,488 --> 00:32:11,807
+second coordinate is given by f of x.
+
+341
+00:32:12,968 --> 00:32:15,488
+So actually this is the subset of
+
+342
+00:32:15,488 --> 00:32:16,988
+plane
+
+343
+00:32:16,988 --> 00:32:19,208
+or something like that.
+
+344
+00:32:19,208 --> 00:32:46,668
+So we can see the graph of
+
+345
+00:32:51,476 --> 00:33:13,116
+This is the graph of this function y is equal to f of x. So let me define domain and codomain. So if you take the orthogonal projection of this graph onto horizontal x's,
+
+346
+00:33:16,819 --> 00:33:30,779
+Here, as you see, we obtain this interval. So this is domain. Orthogonal projection of this graph results in domain of f.
+
+347
+00:33:34,359 --> 00:33:45,980
+Orthogonal projection of this graph onto vertical line here.
+
+348
+00:33:46,819 --> 00:34:02,639
+So this is the range. Okay? Range of f, image of f, image of f. So image of f is given by this definition.
+
+349
+00:34:05,639 --> 00:34:15,199
+Consisting of f of x such that x is contained by domain of f. Okay? Any questions?
+
+350
+00:34:21,043 --> 00:34:25,043
+Şimdi, vertical line test.
+
+351
+00:34:25,043 --> 00:34:28,043
+Given some curve on the plate,
+
+352
+00:34:28,043 --> 00:34:31,043
+we can verify whether this curve
+
+353
+00:34:31,043 --> 00:34:33,043
+corresponds to the graph of any function
+
+354
+00:34:33,043 --> 00:34:36,043
+of the form yf or not.
+
+355
+00:34:36,043 --> 00:34:40,043
+Ok, so consider this graph,
+
+356
+00:34:40,043 --> 00:34:43,043
+consider this curve on the plate.
+
+357
+00:34:43,043 --> 00:34:46,043
+Do you think such graph corresponds to the graph
+
+358
+00:34:46,043 --> 00:34:49,043
+of some function of the form yf .
+
+359
+00:34:49,043 --> 00:34:52,043
+So, look at here.
+
+360
+00:34:52,043 --> 00:34:55,043
+If you write x,
+
+361
+00:34:55,043 --> 00:34:59,043
+so let's write this y1,
+
+362
+00:34:59,043 --> 00:35:01,043
+let's write this y2.
+
+363
+00:35:01,043 --> 00:35:05,043
+As you see, f of x,
+
+364
+00:35:05,043 --> 00:35:11,043
+y1, f of x, y2.
+
+365
+00:35:11,043 --> 00:35:15,043
+So as you see, y1, y2, they are different elements.
+
+366
+00:35:15,043 --> 00:35:18,043
+So this is contradiction to definition of,
+
+367
+00:35:18,043 --> 00:35:20,043
+ok, function.
+
+368
+00:35:20,043 --> 00:35:23,043
+So that's why does not correspond.
+
+369
+00:35:23,043 --> 00:35:27,043
+Such curve does not correspond.
+
+370
+00:35:27,043 --> 00:35:41,043
+and,
+
+371
+00:35:31,764 --> 00:35:43,443
+The graph of f' function of the form yf of x.
+
+372
+00:35:44,064 --> 00:35:44,284
+Okay?
+
+373
+00:35:46,224 --> 00:35:47,284
+Attention here.
+
+374
+00:35:49,264 --> 00:36:00,084
+According to vertical line test, as you see, this vertical line intercepts its graph at two distinct points on the graph.
+
+375
+00:36:00,084 --> 00:36:04,764
+That's why this is not graph of any function of the form yf of x.
+
+376
+00:36:04,824 --> 00:36:05,844
+So what about this?
+
+377
+00:36:06,443 --> 00:36:14,264
+If you sketch any vertical line, as you see, for every vertical line, as you see,
+
+378
+00:36:15,844 --> 00:36:18,864
+sorry, but it's not vertical line.
+
+379
+00:36:28,148 --> 00:36:30,788
+ok, let me use different color.
+
+380
+00:36:34,835 --> 00:36:48,335
+If you sketch any vertical line, and you see at each vertical line, so we have always only one interception point. Can you see that?
+
+381
+00:36:50,335 --> 00:36:54,715
+There is always one interception point.
+
+382
+00:36:54,715 --> 00:36:58,875
+That's why such curve
+
+383
+00:36:58,875 --> 00:37:02,955
+corresponds to graph of
+
+384
+00:37:02,955 --> 00:37:06,395
+any function of the form y f of x.
+
+385
+00:37:06,395 --> 00:37:07,195
+Okay?
+
+386
+00:37:11,411 --> 00:37:17,931
+Now look at this example and see for every single vertical line,
+
+387
+00:37:23,507 --> 00:37:35,447
+We have always one single interception points. Daima bir tane kesit grafikle dikey doğrunun ortak noktası yalnızca bir tane oluyor.
+
+388
+00:37:35,947 --> 00:37:48,007
+Okay, as you see, according to the vertical line test, okay, this graph corresponds to the graph of any function of the form y f of x.
+
+389
+00:37:48,788 --> 00:37:49,507
+Okay.
+
+390
+00:37:49,507 --> 00:38:00,847
+What about this example? Do you think such curve corresponds to the graph of any function of the form y f of x?
+
+391
+00:38:01,607 --> 00:38:04,268
+Such total curve corresponds to
+
+392
+00:38:04,268 --> 00:38:10,087
+graph of any function of the form y f of x.
+
+393
+00:38:10,147 --> 00:38:12,788
+Öyle bir grafik sizce karşılık gelir mi arkadaşlar?
+
+394
+00:38:14,407 --> 00:38:15,288
+Gelmez değil mi?
+
+395
+00:38:16,788 --> 00:38:17,827
+Sesim geliyor değil mi arkadaşlar?
+
+396
+00:38:23,188 --> 00:38:54,188
+Evet.
+
+397
+00:38:32,947 --> 00:39:02,427
+According to vertical line test, such total curve, the total curve, bütün eğri arkadaşlar, does not correspond to graph of a function.
+
+398
+00:39:09,043 --> 00:39:09,643
+or
+
+399
+00:39:14,771 --> 00:39:43,351
+ok. But consider this. So in fact this is circle. Suppose that this is a circular curve with radius 1. Consider this algebraic equation corresponds to this curve. Ok. Now let's try to express y in terms of x² or x.
+
+400
+00:39:43,351 --> 00:39:45,851
+So as you see we have two options.
+
+401
+00:39:50,579 --> 00:40:01,380
+upper semicircle. So this is the rule. This is the rule for upper semicircle. Okay. Now, so y minus.
+
+402
+00:40:05,204 --> 00:40:07,204
+1-x².
+
+403
+00:40:07,204 --> 00:40:08,204
+Ok.
+
+404
+00:40:08,204 --> 00:40:11,204
+Aten here, let me use this.
+
+405
+00:40:14,579 --> 00:40:22,579
+This is the upper semicircle on which y coordinates on which y coordinates positive.
+
+406
+00:40:24,980 --> 00:40:27,579
+Okay, let me use other color.
+
+407
+00:40:31,347 --> 00:40:39,347
+So consider this lower semicircle on which y-coordinates is negative.
+
+408
+00:40:39,347 --> 00:40:50,347
+Okay, now as you see, but its local part, its local part corresponds to the graph of any function of the form yf .
+
+409
+00:40:50,347 --> 00:40:53,347
+Okay, can you see that?
+
+410
+00:40:53,347 --> 00:41:03,347
+So this, according to the vertical line test, this lower semicircle corresponds to the graph of any function of the form yf .
+
+411
+00:41:03,347 --> 00:41:08,347
+Upper semicircle corresponds to the graph of any function of the form yf .
+
+412
+00:41:08,347 --> 00:41:11,347
+So what about other cases?
+
+413
+00:41:11,347 --> 00:41:13,347
+So consider this case.
+
+414
+00:41:20,179 --> 00:41:23,379
+Evet, right hand side semicircle, left hand side semicircle.
+
+415
+00:41:23,379 --> 00:41:28,179
+If you try to express x in terms of y,
+
+416
+00:41:28,179 --> 00:41:37,379
+so this is the right hand side semicircle x plus 1 minus y square.
+
+417
+00:41:37,379 --> 00:41:38,379
+Can you see that?
+
+418
+00:41:38,379 --> 00:41:46,980
+And this is x minus minus 1 minus y square.
+
+419
+00:41:46,980 --> 00:41:55,779
+As you see such graph corresponds to the graph of any function of the form x g of y,
+
+420
+00:41:55,779 --> 00:41:59,379
+but not of the form y f of x.
+
+421
+00:41:59,379 --> 00:42:07,579
+As you see left hand side semicircle corresponds to the graph of any function of the form x g of y.
+
+422
+00:42:07,579 --> 00:42:08,579
+Gördünüz mü arkadaşlar?
+
+423
+00:42:08,579 --> 00:42:12,779
+Yani siz aslında size bir grafik verilirse, bir eğri verilirse,
+
+424
+00:42:12,779 --> 00:42:17,980
+o eğrinin bazı yerel kısımları y eşittir fx şeklinde bir fonksiyonun grafiğine karşılık gelir.
+
+425
+00:42:17,980 --> 00:42:23,980
+Bazı kısımları da x eşittir gy şeklinde bir fonksiyonun grafiğine karşılık gelir.
+
+426
+00:42:23,980 --> 00:42:26,779
+Mesela örneğin, for example consider this one.
+
+427
+00:42:26,779 --> 00:42:33,980
+So this total graph, okay, okay, this total graph, so consider this part.
+
+428
+00:42:33,980 --> 00:42:45,779
+This part corresponds to, corresponds to graph of any function of the form x g of y or y f of x.
+
+429
+00:42:45,779 --> 00:43:15,779
+Bak!
+
+430
+00:42:50,835 --> 00:43:08,735
+such local parts, okay, consider this part, these local parts corresponds to graph of any function of the form x, g of y, or not, this is a different issue, let me write g1, g2, okay, not.
+
+431
+00:43:14,068 --> 00:43:15,688
+Okey. Dikkat edin arkadaşlar.
+
+432
+00:43:15,848 --> 00:43:17,928
+Böyle bir parça y eşittir
+
+433
+00:43:17,928 --> 00:43:20,128
+f şeklinde bir fonksiyonun grafine karşılık
+
+434
+00:43:20,128 --> 00:43:21,628
+gelmez. X eşittir
+
+435
+00:43:21,628 --> 00:43:24,148
+gy şeklinde bir fonksiyonun grafine karşılık
+
+436
+00:43:24,148 --> 00:43:25,188
+gelir. Tamam mı arkadaşlar?
+
+437
+00:43:27,128 --> 00:43:27,968
+Dikkat edin ona.
+
+438
+00:43:28,268 --> 00:43:29,268
+Şöyle bir parça
+
+439
+00:43:29,268 --> 00:43:32,148
+şekle göre
+
+440
+00:43:32,148 --> 00:43:33,128
+konuşuyorum tabii ki.
+
+441
+00:43:34,648 --> 00:43:35,968
+Consider this local part.
+
+442
+00:43:36,968 --> 00:43:38,368
+This local part
+
+443
+00:43:38,368 --> 00:43:40,368
+corresponds to the graph of any function
+
+444
+00:43:40,368 --> 00:43:41,068
+of the form.
+
+445
+00:43:41,068 --> 00:43:44,148
+y f of x or
+
+446
+00:43:44,148 --> 00:43:46,668
+x is equal to
+
+447
+00:43:46,668 --> 00:43:48,828
+g of y. Her ikisinde
+
+448
+00:43:48,828 --> 00:43:50,468
+hem y eşittir f şeklinde hem
+
+449
+00:43:50,468 --> 00:43:52,568
+x eşittir gy şeklinde bir
+
+450
+00:43:52,568 --> 00:43:54,628
+fonksiyonun grafine karşılık gelebilir
+
+451
+00:43:54,628 --> 00:43:56,588
+arkadaşlar. Dikkat edin ama tamamını
+
+452
+00:43:56,588 --> 00:43:58,328
+düşünürsek tamamı
+
+453
+00:43:58,328 --> 00:44:00,708
+hiçbir şekilde ne x eşittir
+
+454
+00:44:00,708 --> 00:44:02,807
+gy ne eşittir f şeklinde
+
+455
+00:44:02,807 --> 00:44:04,708
+bir fonksiyonun grafine karşılık gelmiyor.
+
+456
+00:44:04,888 --> 00:44:05,368
+Tamam mı arkadaşlar?
+
+457
+00:44:06,548 --> 00:44:08,108
+Bunlar önemli arkadaşlar.
+
+458
+00:44:09,228 --> 00:44:10,568
+Okey. Consider this basic
+
+459
+00:44:10,568 --> 00:44:11,088
+example.
+
+460
+00:44:11,888 --> 00:44:13,848
+So y x square plus one
+
+461
+00:44:13,848 --> 00:44:14,528
+as you see
+
+462
+00:44:14,528 --> 00:44:15,588
+this total graph
+
+463
+00:44:15,588 --> 00:44:16,428
+corresponds to
+
+464
+00:44:16,428 --> 00:44:18,048
+graph of any function of the form.
+
+465
+00:44:18,488 --> 00:44:20,028
+y is equal to x square plus one
+
+466
+00:44:20,028 --> 00:44:21,628
+according to the vertical line test.
+
+467
+00:44:21,748 --> 00:44:23,068
+But this total graph
+
+468
+00:44:23,068 --> 00:44:24,628
+does not correspond to
+
+469
+00:44:24,628 --> 00:44:26,408
+graph of any function of the form.
+
+470
+00:44:26,568 --> 00:44:28,448
+x is equal to
+
+471
+00:44:28,448 --> 00:44:30,108
+g of y. Dikkat edin arkadaşlar.
+
+472
+00:44:30,328 --> 00:44:31,807
+Bu grafin tamamı
+
+473
+00:44:31,807 --> 00:44:33,448
+x eşittir gy şeklinde bir
+
+474
+00:44:33,448 --> 00:44:35,248
+fonksiyonun grafine karşılık gelmez.
+
+475
+00:44:35,248 --> 00:44:37,128
+Bazı yerel kısımları karşılık
+
+476
+00:44:37,128 --> 00:44:37,488
+gelmez. Zaten
+
+477
+00:44:37,488 --> 00:44:39,428
+x'i yanlış çekersem arkadaşlar
+
+478
+00:44:39,428 --> 00:44:39,828
+buradan
+
+479
+00:44:39,828 --> 00:44:42,868
+let's try to express x in terms of
+
+480
+00:44:42,868 --> 00:44:45,728
+y.
+
+481
+00:44:45,728 --> 00:44:52,888
+x plus x plus square root y minus one
+
+482
+00:44:52,888 --> 00:44:55,268
+x minus. So this is x plus
+
+483
+00:44:55,268 --> 00:44:59,548
+right hand right hand side x plus
+
+484
+00:44:59,548 --> 00:45:05,728
+left hand side
+
+485
+00:45:05,728 --> 00:45:13,188
+x minus minus square root y minus one.
+
+486
+00:45:14,108 --> 00:45:15,208
+Okay. Is that clear?
+
+487
+00:45:15,828 --> 00:45:17,128
+So if you take the orthogonal
+
+488
+00:45:17,128 --> 00:45:18,908
+projection of this total graph
+
+489
+00:45:18,908 --> 00:45:21,188
+onto vertical axis
+
+490
+00:45:21,188 --> 00:45:23,108
+so we have obtained for this
+
+491
+00:45:23,108 --> 00:45:24,228
+function. Okay.
+
+492
+00:45:26,548 --> 00:45:27,888
+y f of x
+
+493
+00:45:27,888 --> 00:45:29,928
+the graph of orthogonal
+
+494
+00:45:29,928 --> 00:45:32,348
+projection of this y f of x
+
+495
+00:45:32,348 --> 00:45:33,668
+results in range
+
+496
+00:45:33,668 --> 00:45:36,188
+range image of f
+
+497
+00:45:36,188 --> 00:45:37,828
+and if you take the orthogonal
+
+498
+00:45:37,828 --> 00:45:39,628
+projection of this graph onto
+
+499
+00:45:39,628 --> 00:45:41,528
+horizontal axis we are going to
+
+500
+00:45:41,528 --> 00:45:42,628
+obtain
+
+501
+00:45:42,628 --> 00:45:43,228
+okay
+
+502
+00:45:43,228 --> 00:45:45,508
+domain. In fact this is a function
+
+503
+00:45:45,508 --> 00:45:46,368
+of this form
+
+504
+00:45:46,368 --> 00:45:47,528
+domain
+
+505
+00:45:47,528 --> 00:45:50,028
+the set of all real numbers
+
+506
+00:45:50,028 --> 00:45:51,508
+the domain means the
+
+507
+00:45:51,508 --> 00:45:54,028
+the set of all possible inputs
+
+508
+00:45:54,028 --> 00:45:55,788
+making sense for this rule
+
+509
+00:45:55,788 --> 00:45:56,928
+okay
+
+510
+00:45:56,928 --> 00:45:57,848
+now
+
+511
+00:45:57,848 --> 00:46:00,608
+you can write this
+
+512
+00:46:00,608 --> 00:46:02,388
+okay so this is the co-domain
+
+513
+00:46:02,388 --> 00:46:03,528
+but
+
+514
+00:46:03,528 --> 00:46:04,807
+okay range
+
+515
+00:46:04,807 --> 00:46:05,588
+image
+
+516
+00:46:05,588 --> 00:46:06,888
+okay so image
+
+517
+00:46:06,888 --> 00:46:07,428
+this
+
+518
+00:46:07,428 --> 00:46:09,368
+now x
+
+519
+00:46:09,368 --> 00:46:11,748
+f of x
+
+520
+00:46:11,748 --> 00:46:15,688
+x square plus
+
+521
+00:46:15,688 --> 00:46:16,128
+one
+
+522
+00:46:16,128 --> 00:46:16,688
+where
+
+523
+00:46:16,688 --> 00:46:18,168
+image or range
+
+524
+00:46:18,168 --> 00:46:46,488
+image or
+
+525
+00:46:21,619 --> 00:46:26,559
+ok, this, from 1 to infinite.
+
+526
+00:46:27,460 --> 00:46:30,019
+ok, is that clear? Var mı ulaşmayan diye?
+
+527
+00:46:31,179 --> 00:46:32,639
+işin mantığını anladınız galiba.
+
+528
+00:46:38,132 --> 00:46:46,132
+Ok, consider this case. So in this case, as you see, in fact, we have obtained some upper semicircle.
+
+529
+00:46:46,132 --> 00:46:51,132
+So let's try to obtain domain for this function.
+
+530
+00:46:51,132 --> 00:46:58,132
+If you take the orthogonal projection of this curve, circular curve, upper semicircle onto horizontal axis,
+
+531
+00:46:58,132 --> 00:47:05,132
+we are going to obtain domain, which is the set of all possible input making sense for this rule according to
+
+532
+00:47:05,132 --> 00:47:11,132
+Ok, definition of square root. So in order to make sense for this square root,
+
+533
+00:47:11,132 --> 00:47:20,132
+so this argument must be positive or zero. If you solve this inequality, you are going to obtain this interval.
+
+534
+00:47:20,132 --> 00:47:27,132
+Can you see that? So this interval here. If you take the orthogonal projection of this curve,
+
+535
+00:47:27,132 --> 00:47:30,132
+as you see, we are going to obtain this domain.
+
+536
+00:47:30,132 --> 00:47:34,132
+Gördünüz mü? Geometrik olarak aslında şurada siz eşitsizliği çözerken,
+
+537
+00:47:34,132 --> 00:47:36,132
+aslında ne yapmış oluyorsunuz?
+
+538
+00:47:36,132 --> 00:47:42,132
+Hem tanım kümesini belirlemiş oluyorsunuz, cebisel olarak, hem de geometrik olarak aslında o cismin,
+
+539
+00:47:42,132 --> 00:47:45,132
+daha doğrusu eğrinin, dikiz düşümünü almış oluyorsunuz.
+
+540
+00:47:45,132 --> 00:47:50,132
+Ona dikkat edin. Rangeini hesaplarken, rangeinde de zaten alabileceği maksimum minimum değerleri
+
+541
+00:47:50,132 --> 00:47:53,132
+göz önünde bulunduruyorsunuz. O da nedir arkadaşlar?
+
+542
+00:47:53,132 --> 00:47:59,132
+0 ile 3 arasında, pardon, 0 ile 2 arasında bir değer olacak range.
+
+543
+00:47:59,132 --> 00:48:02,132
+Tamam arkadaşlar? Görüntü kümesi. Var mı anlaşma en biye?
+
+544
+00:48:02,132 --> 00:48:04,132
+Yok galiba.
+
+545
+00:48:05,132 --> 00:48:07,132
+Consider this example.
+
+546
+00:48:07,132 --> 00:48:37,132
+Bakın, bu da
+
+547
+00:48:37,132 --> 00:48:42,731
+Is this statement, is this notation true or false?
+
+548
+00:48:43,952 --> 00:48:49,072
+Bir böyle sıfır sonsuz ifadesi gösterimi doğru mu, yanlış mı? Düşünün bakayım.
+
+549
+00:48:52,596 --> 00:48:54,036
+Oradasınız değil mi gençler?
+
+550
+00:48:56,416 --> 00:49:00,615
+1 bölü 0 eşittir sonsuz gösterimi doğru mu yanlış mı?
+
+551
+00:49:06,931 --> 00:49:07,391
+Evet.
+
+552
+00:49:08,871 --> 00:49:11,131
+Ne öğrendiniz lisede? Nasıl öğrettiler size?
+
+553
+00:49:23,188 --> 00:49:25,927
+Evet, belirsiz diye öğrettiler. Güzel, güzel.
+
+554
+00:49:29,780 --> 00:49:35,019
+Belirsiz. Peki yorumlamak lazım mı? O şekilde değil de başka bir şekilde nasıl yazabiliriz?
+
+555
+00:49:36,000 --> 00:49:39,940
+Belirsiz. Daha belirli hale getirmek istiyorum ben onu.
+
+556
+00:49:46,356 --> 00:49:57,856
+Yani bu böyle bir şey, 1 bölü sıfır sonsuz ifadesi arkadaşlar. Yanlış, 1 bölü sıfır eşittir sonsuz yazarsanız yanlış olur. Baya bir yanlış olur. Dikkat edeceksiniz orada.
+
+557
+00:49:57,856 --> 00:50:16,916
+Ok, so it's false notation. False. Ok. But we know this. 1 over 0 dot 01.
+
+558
+00:50:21,108 --> 00:50:22,108
+Sufficiently
+
+559
+00:50:22,108 --> 00:50:26,108
+Larger
+
+560
+00:50:26,108 --> 00:50:27,428
+Okay
+
+561
+00:50:27,428 --> 00:50:29,628
+Now according to this idea
+
+562
+00:50:29,628 --> 00:50:30,668
+We can do this
+
+563
+00:50:30,668 --> 00:50:32,248
+1 over
+
+564
+00:50:32,248 --> 00:50:33,788
+Okay
+
+565
+00:50:33,788 --> 00:50:36,428
+1 over 0 plus
+
+566
+00:50:36,428 --> 00:50:38,448
+This is also not true
+
+567
+00:50:38,448 --> 00:50:40,827
+But we may consider this
+
+568
+00:50:40,827 --> 00:50:42,008
+1 over 0 plus
+
+569
+00:50:42,008 --> 00:50:43,508
+Sufficiently larger
+
+570
+00:50:43,508 --> 00:50:46,148
+Sufficiently
+
+571
+00:50:46,148 --> 00:50:48,408
+Larger
+
+572
+00:50:48,408 --> 00:50:49,408
+Let's say
+
+573
+00:50:49,408 --> 00:50:51,327
+Infinite
+
+574
+00:50:51,327 --> 00:50:52,528
+Okay
+
+575
+00:50:52,528 --> 00:50:55,088
+So where 0 plus means
+
+576
+00:50:55,088 --> 00:50:57,408
+0 plus means
+
+577
+00:50:57,408 --> 00:50:58,748
+Some number
+
+578
+00:50:58,748 --> 00:51:00,028
+Positive number
+
+579
+00:51:00,028 --> 00:51:02,307
+Which is sufficient to close 0
+
+580
+00:51:02,307 --> 00:51:03,188
+Okay
+
+581
+00:51:03,188 --> 00:51:05,508
+Something like that
+
+582
+00:51:05,508 --> 00:51:07,508
+Some number
+
+583
+00:51:07,508 --> 00:51:08,728
+Positive number
+
+584
+00:51:08,728 --> 00:51:10,608
+Which is sufficient to close 0
+
+585
+00:51:10,608 --> 00:51:11,307
+Okay
+
+586
+00:51:11,307 --> 00:51:12,807
+Similarly
+
+587
+00:51:12,807 --> 00:51:17,368
+1 over 0 minus
+
+588
+00:51:17,368 --> 00:51:18,628
+0 minus means
+
+589
+00:51:18,628 --> 00:51:19,768
+Some number
+
+590
+00:51:19,768 --> 00:51:20,748
+Negative number
+
+591
+00:51:20,748 --> 00:51:23,048
+Which is sufficient to close 0
+
+592
+00:51:23,048 --> 00:51:23,648
+Okay
+
+593
+00:51:23,648 --> 00:51:26,508
+Now in that case
+
+594
+00:51:26,508 --> 00:51:27,508
+We are going to update
+
+595
+00:51:27,508 --> 00:51:28,748
+Minus infinite
+
+596
+00:51:28,748 --> 00:51:29,388
+Okay
+
+597
+00:51:29,388 --> 00:51:30,488
+We can do this somehow
+
+598
+00:51:30,488 --> 00:51:30,968
+Okay
+
+599
+00:51:30,968 --> 00:51:31,948
+Now
+
+600
+00:51:31,948 --> 00:51:34,168
+So look at this rule
+
+601
+00:51:34,168 --> 00:51:36,368
+1 over
+
+602
+00:51:36,368 --> 00:51:37,368
+1
+
+603
+00:51:37,368 --> 00:51:39,068
+If we approach
+
+604
+00:51:39,068 --> 00:51:41,288
+1 from right hand side
+
+605
+00:51:41,288 --> 00:51:44,388
+But you approach always
+
+606
+00:51:44,388 --> 00:51:45,888
+But you cannot catch 1
+
+607
+00:51:45,888 --> 00:51:46,347
+Okay
+
+608
+00:51:46,347 --> 00:51:48,008
+So if you substitute here
+
+609
+00:51:48,008 --> 00:51:49,388
+1 dot
+
+610
+00:51:49,388 --> 00:51:52,128
+0 0 0 0 0 0 0 0 1
+
+611
+00:51:52,128 --> 00:51:53,128
+And you see 1 dot
+
+612
+00:51:53,128 --> 00:51:53,928
+1 plus
+
+613
+00:51:53,928 --> 00:51:54,307
+Okay
+
+614
+00:51:54,307 --> 00:51:58,508
+We approach
+
+615
+00:51:58,508 --> 00:52:02,028
+1 from right hand side
+
+616
+00:52:02,028 --> 00:52:04,008
+Okay
+
+617
+00:52:04,008 --> 00:52:06,868
+You approach 1 from right hand side
+
+618
+00:52:06,868 --> 00:52:08,068
+This means that
+
+619
+00:52:08,068 --> 00:52:09,628
+You substitute here
+
+620
+00:52:09,628 --> 00:52:11,668
+Some value
+
+621
+00:52:11,668 --> 00:52:13,528
+Which is sufficient to close 1
+
+622
+00:52:13,528 --> 00:52:14,768
+But bigger than 1
+
+623
+00:52:14,768 --> 00:52:15,388
+Okay
+
+624
+00:52:15,388 --> 00:52:16,827
+So in that case
+
+625
+00:52:16,827 --> 00:52:18,248
+In that case
+
+626
+00:52:18,248 --> 00:52:19,948
+You are going to obtain
+
+627
+00:52:19,948 --> 00:52:22,108
+Something like that
+
+628
+00:52:22,108 --> 00:52:23,327
+1 over 0 plus
+
+629
+00:52:23,327 --> 00:52:24,488
+So that is infinite
+
+630
+00:52:24,488 --> 00:52:25,128
+In fact
+
+631
+00:52:25,128 --> 00:52:25,788
+Okay
+
+632
+00:52:25,788 --> 00:52:28,048
+So as long as you approach 1
+
+633
+00:52:28,048 --> 00:52:29,847
+From right hand side
+
+634
+00:52:29,847 --> 00:52:31,548
+1 over u minus 1
+
+635
+00:52:31,548 --> 00:52:32,288
+Okay
+
+636
+00:52:32,288 --> 00:52:33,888
+Go up infinitely
+
+637
+00:52:33,888 --> 00:52:35,048
+Okay
+
+638
+00:52:35,048 --> 00:52:36,668
+Because of this infinite
+
+639
+00:52:36,668 --> 00:52:37,248
+Okay
+
+640
+00:52:37,248 --> 00:52:39,788
+Now as long as you approach 1
+
+641
+00:52:39,788 --> 00:52:41,228
+From left hand side
+
+642
+00:52:41,228 --> 00:52:43,307
+1 over u minus 1
+
+643
+00:52:43,307 --> 00:52:44,208
+Okay
+
+644
+00:52:44,208 --> 00:52:45,608
+Approach
+
+645
+00:52:45,608 --> 00:52:47,828
+Not approach
+
+646
+00:52:47,828 --> 00:52:49,268
+Goes down infinitely
+
+647
+00:52:49,268 --> 00:52:49,868
+Okay
+
+648
+00:52:49,868 --> 00:52:53,008
+Any question about this?
+
+649
+00:52:54,908 --> 00:52:56,108
+Look at here
+
+650
+00:52:56,108 --> 00:52:57,328
+If you take the
+
+651
+00:52:57,328 --> 00:52:58,208
+If you take
+
+652
+00:52:58,208 --> 00:53:00,788
+If you take the projection
+
+653
+00:53:00,788 --> 00:53:02,168
+Of this
+
+654
+00:53:02,168 --> 00:53:03,888
+If you take the orthogonal projection
+
+655
+00:53:03,888 --> 00:53:04,568
+Of this graph
+
+656
+00:53:04,568 --> 00:53:06,628
+Onto
+
+657
+00:53:06,628 --> 00:53:08,428
+Vertical axis
+
+658
+00:53:08,428 --> 00:53:09,928
+Image of this
+
+659
+00:53:09,928 --> 00:53:12,568
+The set of all real numbers
+
+660
+00:53:12,568 --> 00:53:13,468
+But domain
+
+661
+00:53:13,468 --> 00:53:15,708
+Let me write this
+
+662
+00:53:15,708 --> 00:53:16,408
+F
+
+663
+00:53:16,408 --> 00:53:18,468
+Domain
+
+664
+00:53:18,468 --> 00:53:21,048
+The set of all possible inputs
+
+665
+00:53:21,048 --> 00:53:24,528
+We exclude 1
+
+666
+00:53:24,528 --> 00:53:25,528
+As you see
+
+667
+00:53:25,528 --> 00:53:26,347
+This is domain
+
+668
+00:53:26,347 --> 00:53:28,888
+And this is R
+
+669
+00:53:28,888 --> 00:53:29,968
+Okay
+
+670
+00:53:29,968 --> 00:53:31,568
+Taking this U
+
+671
+00:53:31,568 --> 00:53:33,108
+1 over
+
+672
+00:53:33,108 --> 00:53:36,608
+U minus 1
+
+673
+00:53:36,608 --> 00:53:38,608
+Range
+
+674
+00:53:38,608 --> 00:53:39,968
+Range of
+
+675
+00:53:39,968 --> 00:53:40,448
+L
+
+676
+00:53:40,448 --> 00:53:41,148
+So
+
+677
+00:53:41,148 --> 00:53:41,608
+Consisted
+
+678
+00:53:41,608 --> 00:53:42,748
+Orthogonal projection
+
+679
+00:53:42,748 --> 00:53:43,548
+Of this graph
+
+680
+00:53:43,548 --> 00:53:45,168
+The set of all real numbers
+
+681
+00:53:45,168 --> 00:53:46,128
+Okay
+
+682
+00:53:46,128 --> 00:53:47,827
+An equation
+
+683
+00:53:47,827 --> 00:53:49,648
+Sorusu olan var mı arkadaşlar?
+
+684
+00:53:52,908 --> 00:53:54,568
+Sorusu olan yok galiba
+
+685
+00:53:54,568 --> 00:53:55,608
+Geçiyorum
+
+686
+00:53:55,608 --> 00:54:20,668
+And this is R
+
+687
+00:54:01,972 --> 00:54:03,192
+Ya da bir ara verelim.
+
+688
+00:54:03,512 --> 00:54:04,812
+Have a break for 10 minutes.
+
+689
+00:54:07,232 --> 00:54:07,752
+Evet.
+
+690
+00:54:11,347 --> 00:54:16,067
+Ara veriyoruz arkadaşlar. 10 dakika ara. Bugün dersimiz 3 saat miydi gençler?
+
+691
+00:54:17,367 --> 00:54:18,347
+Chat kısmını...
+
+692
+00:54:24,052 --> 00:54:24,552
+güzel.
+
+693
+00:54:28,884 --> 00:54:31,284
+5 dakika ara olmaz ya, biraz dinlenin.
+
+694
+00:54:34,284 --> 00:54:35,364
+Of course.
+
+695
+00:54:41,588 --> 00:54:42,048
+Evet.
+
+696
+00:54:50,387 --> 00:54:52,387
+Tamam yazmaya çalışırım.
+
+697
+00:54:53,927 --> 00:54:54,387
+Şurayda.
+
+698
+01:05:01,076 --> 01:05:02,275
+Evet, merhaba gençler.
+
+699
+01:05:09,396 --> 01:05:10,756
+sesim geliyor değil mi gençler?
+
+700
+01:05:15,123 --> 01:05:16,203
+Evet, başlayalım.
+
+701
+01:05:24,788 --> 01:05:33,668
+Okay, let me introduce types of functions. Algebraic, sorry, algebraic operations on the functions.
+
+702
+01:05:36,628 --> 01:05:41,668
+So, addition of two functions is given by this definition.
+
+703
+01:05:44,467 --> 01:05:48,467
+ve bu rule bu.
+
+704
+01:05:48,467 --> 01:06:18,467
+Bu, bu
+
+705
+01:06:18,467 --> 01:06:48,467
+After using this machine G, okay, we apply the machine F to output G, okay, now, so we have this F composite G of X, okay, in fact, this is the chain of machines, iki tane makinenin arka arkaya arkadaşlar, ne olması, bir girdiğe uygulanması, tamam mı arkadaşlar, önce X, önce ne yapıyor, G uygulanıyor, X'e, daha sonra F uygulanıyor, bu
+
+706
+01:06:48,467 --> 01:07:18,047
+F composite G şeklinde, okay, so attention here, so in order to talk about this composition, the range of G, intersection, intersection of range of G and domain of F must be non-empty, otherwise we cannot talk about this composition, okay, so look at here, so look at this X2 input, when you apply G function into X2, as you see with
+
+707
+01:07:18,467 --> 01:07:32,407
+have this output, so as you see this output is not contained by domain of F, that's why we cannot define F composition at the point this output, okay, but this is very important.
+
+708
+01:07:36,532 --> 01:08:06,532
+Şimdi bu örneğin bu örneğin f'e 3x²-x ve g'e 1x
+
+709
+01:08:06,532 --> 01:08:36,532
+So in this case argument is 1x'e 1x'
+
+710
+01:08:36,532 --> 01:08:53,212
+g. So this is the answer. Similarly we can compute g of x. So in that case f of x is argument of g. So we substitute f of x into x given in the g rule.
+
+711
+01:08:53,212 --> 01:09:03,731
+So this is the answer. As you see they are different. As you see f composite g not equal to g composite f. Not commutative.
+
+712
+01:09:03,731 --> 01:09:17,912
+Okay. Now consider this simple example. Look at this graph. So let's compute f of g or f composite g of 5.
+
+713
+01:09:17,912 --> 01:09:27,992
+So g of 5. So 5 here. So this is the graph of g. And you see g of 5 according to graph 1.
+
+714
+01:09:27,992 --> 01:09:40,132
+g of 5. G of 5. 1. f of 1. f of 1. Let's count with 1. f of 1. 6. Okay. So this is the 6.
+
+715
+01:09:40,132 --> 01:09:46,652
+Similarly you can compute other values. Okay. By using this table. By using this graph.
+
+716
+01:09:46,652 --> 01:10:08,332
+So those are simple examples. So let me talk about symmetry. So look at this graph. As you see this graph has a symmetry about origin. As you see. So minus x y and x y are on the graph.
+
+717
+01:10:08,332 --> 01:10:28,332
+So let me talk about symmetry. So let me talk about symmetry.
+
+718
+01:10:28,332 --> 01:10:30,332
+So let me talk about symmetry. So let me talk about symmetry. So let me talk about symmetry.
+
+719
+01:10:30,332 --> 01:10:32,332
+So let me talk about symmetry. So let me talk about symmetry.
+
+720
+01:10:32,332 --> 01:10:34,332
+So let me talk about symmetry. So let me talk about symmetry. So let me talk about symmetry.
+
+721
+01:10:11,859 --> 01:10:22,179
+ok, graph of f. That's why the graph of f has symmetry about vertical axis y. ok?
+
+722
+01:10:24,579 --> 01:10:35,219
+So this means that so if you say y is f of x, as you see f of x is equal to f of minus x.
+
+723
+01:10:35,219 --> 01:10:56,420
+Okay, for all x domain of f. But this domain of f, which must be symmetric, symmetric about the origin.
+
+724
+01:10:56,420 --> 01:11:06,739
+Attention here. Domain of f, so if you take the orthogonal projection of this graph.
+
+725
+01:11:11,347 --> 01:11:16,488
+As you see, domain of f must be symmetric about origin.
+
+726
+01:11:17,007 --> 01:11:17,268
+Okay.
+
+727
+01:11:19,068 --> 01:11:25,228
+Domain of f must be symmetric about the origin.
+
+728
+01:11:25,368 --> 01:11:27,488
+Otherwise, we cannot talk about this symmetric.
+
+729
+01:11:28,688 --> 01:11:29,667
+Dikkat edin arkadaşlar.
+
+730
+01:11:36,692 --> 01:11:38,051
+So look at this graph.
+
+731
+01:11:38,271 --> 01:11:43,612
+As you see, this graph has a symmetry about horizontal axis, x-axis.
+
+732
+01:11:44,452 --> 01:11:51,572
+So, but in this case, such graph we know that corresponds to graph of any function of this form,
+
+733
+01:11:51,671 --> 01:11:54,631
+not of the form y is equal to f of x.
+
+734
+01:11:54,931 --> 01:12:04,612
+According to vertical line test, okay, such graph corresponds to graph of any function of the form x is equal to f of y.
+
+735
+01:12:04,612 --> 01:12:08,712
+Not of the form y is equal to f of x, okay?
+
+736
+01:12:10,212 --> 01:12:23,171
+Now as you see, so xy and x-y are on the graph.
+
+737
+01:12:27,171 --> 01:12:27,891
+Graph.
+
+738
+01:12:27,891 --> 01:12:34,572
+Okay, dikkatleyin arkadaşlar.
+
+739
+01:12:36,992 --> 01:12:38,771
+O zaman burada da ne oluyor arkadaşlar?
+
+740
+01:12:39,051 --> 01:12:42,311
+f of y is equal to f of minus y.
+
+741
+01:12:42,311 --> 01:13:01,072
+Okay.
+
+742
+01:12:46,515 --> 01:12:48,315
+Evet. Biriniz kapasın arkadaşlar.
+
+743
+01:12:48,655 --> 01:12:49,275
+Sesi geliyor.
+
+744
+01:12:50,576 --> 01:12:51,915
+Dışarıdan sesler geliyor.
+
+745
+01:12:53,135 --> 01:12:53,875
+Mikrofonu.
+
+746
+01:12:55,555 --> 01:12:55,875
+Evet.
+
+747
+01:12:58,576 --> 01:13:00,215
+Var mı buraya kadar anlaşma enbiyem?
+
+748
+01:13:00,576 --> 01:13:02,735
+Xx'lerine göre simetrikten bahsedelim.
+
+749
+01:13:04,355 --> 01:13:06,475
+Okey. Now another kind of
+
+750
+01:13:06,475 --> 01:13:06,995
+simetri.
+
+751
+01:13:08,435 --> 01:13:10,415
+Look at here. In this case
+
+752
+01:13:10,415 --> 01:13:11,815
+so we have simetri
+
+753
+01:13:11,815 --> 01:13:15,655
+with respect to origin.
+
+754
+01:13:16,515 --> 01:13:18,576
+In this case
+
+755
+01:13:18,576 --> 01:13:19,655
+let's see
+
+756
+01:13:19,655 --> 01:13:21,135
+such
+
+757
+01:13:38,963 --> 01:13:43,623
+x, and see, so we have this, this.
+
+758
+01:13:47,699 --> 01:14:17,679
+ok? So this is symmetry about origin. Ok? Now let me introduce definitions. So even function. Ok. Even function holds this condition for all x living in the domain. f of minus x is equal to f of x. Namely, its graph has a symmetry about y.
+
+759
+01:14:17,699 --> 01:14:35,699
+y-x's. Ok? Cheat function. So for example, y-x square. y-x square is an even function. Because holding... Oh, this is not symmetric. Ok. Güzel çizme alışık. Kalemden dolayı bir gün çizemiyoruz.
+
+760
+01:14:37,319 --> 01:14:39,920
+Şöyle biraz daha güzel çizme alışık. Ok.
+
+761
+01:14:43,796 --> 01:15:03,056
+So, this is the even function. As you see, f of minus x, you can see this, this is minus x, this is x. f of x is equal to f of minus x.
+
+762
+01:15:03,056 --> 01:15:14,336
+Okay, so, even function, if this graph has a symmetry about y-axis, as you see, so, cosin x, recall the graph of cosin x.
+
+763
+01:15:18,387 --> 01:15:20,728
+we call the graph of cosinx.
+
+764
+01:15:22,287 --> 01:15:25,207
+as you see, cosinx has a symmetry about
+
+765
+01:15:25,207 --> 01:15:29,127
+y-axis. That's why cosinx is
+
+766
+01:15:29,127 --> 01:15:30,587
+an even function.
+
+767
+01:15:33,307 --> 01:15:33,867
+Evet.
+
+768
+01:15:34,488 --> 01:15:37,068
+Çok sesler geliyor arkadaşlar dışarıdan.
+
+769
+01:15:40,587 --> 01:15:42,648
+Gerçi ben trigonometrik fonksiyonları
+
+770
+01:15:42,648 --> 01:15:43,948
+artık anlatmadım ben ya.
+
+771
+01:15:44,787 --> 01:15:46,347
+O sin'i vermeyelim. Bir dakika.
+
+772
+01:15:46,347 --> 01:15:48,108
+trigonometrik yandı.
+
+773
+01:15:49,908 --> 01:15:50,287
+Okey.
+
+774
+01:15:50,688 --> 01:15:51,568
+Let's go on.
+
+775
+01:15:53,667 --> 01:15:56,108
+Hocam siz de kapatabiliyorsunuz arkadaşlar mikrofonu.
+
+776
+01:15:58,327 --> 01:15:58,807
+Bir dakika.
+
+777
+01:15:59,287 --> 01:16:00,268
+Hangi arkadaş ki o?
+
+778
+01:16:00,367 --> 01:16:01,367
+Bir sürü arkadaş var.
+
+779
+01:16:02,507 --> 01:16:03,268
+Galiba şimdi.
+
+780
+01:16:04,268 --> 01:16:06,787
+Ben şimdi tek tek arkadaşları nasıl bulacağım?
+
+781
+01:16:06,948 --> 01:16:08,448
+Herkesinkini kapatmam lazım.
+
+782
+01:16:10,228 --> 01:16:10,867
+Evet.
+
+783
+01:16:11,268 --> 01:16:13,488
+Bazı arkadaşlar maalesef sorunsuzluklar,
+
+784
+01:16:13,807 --> 01:16:14,967
+sorunsuzluğu diz boyu.
+
+785
+01:16:14,967 --> 01:16:16,728
+demek ki dersin başında değil.
+
+786
+01:16:16,728 --> 01:16:18,927
+Evet.
+
+787
+01:16:18,927 --> 01:16:20,108
+Devam.
+
+788
+01:16:20,108 --> 01:16:39,867
+Evet.
+
+789
+01:16:24,627 --> 01:16:33,627
+anode funksiyon, anode funksiyon, alt funksiyon, holds this condition, f of minus x is equal to minus f of x.
+
+790
+01:16:33,887 --> 01:16:46,527
+So in fact, so its graph has a simetri about origin. So for example, for example, y x cube.
+
+791
+01:16:49,908 --> 01:16:50,908
+y
+
+792
+01:16:50,908 --> 01:16:51,908
+x
+
+793
+01:16:51,908 --> 01:16:52,908
+cube
+
+794
+01:16:52,908 --> 01:16:57,908
+as you see its graph has a symmetry about origin
+
+795
+01:16:57,908 --> 01:17:03,908
+f of minus x is equal to minus f of x
+
+796
+01:17:03,908 --> 01:17:04,908
+okay
+
+797
+01:17:04,908 --> 01:17:06,908
+now as you see
+
+798
+01:17:06,908 --> 01:17:08,908
+if
+
+799
+01:17:08,908 --> 01:17:12,908
+the power is some odd integer
+
+800
+01:17:12,908 --> 01:17:14,908
+we can say that
+
+801
+01:17:14,908 --> 01:17:16,908
+okay so this is
+
+802
+01:17:16,908 --> 01:17:18,908
+odd function
+
+803
+01:17:18,908 --> 01:17:19,908
+okay
+
+804
+01:17:25,427 --> 01:17:36,807
+So, another example for odd function. Look at this example. As you see, f of x, f of minus x is equal to f of x.
+
+805
+01:17:38,587 --> 01:17:48,028
+So, as you see, so this is mine, sorry. So, this graph has a symmetry about origin. Can you see that?
+
+806
+01:17:49,387 --> 01:17:54,867
+The symmetry of this, this, symmetry of this, this. Okay. Attention here.
+
+807
+01:18:00,212 --> 01:18:07,892
+Look at this example, there is no asymmetry. So this is neither an even nor odd function. Okay.
+
+808
+01:18:07,892 --> 01:18:12,772
+Now I see because of this. Okay, one. Okay.
+
+809
+01:18:20,372 --> 01:18:22,972
+Okay, let me introduce types of functions.
+
+810
+01:18:23,632 --> 01:18:25,072
+Basic functions.
+
+811
+01:18:25,692 --> 01:18:27,811
+The first one, polynomial functions.
+
+812
+01:18:28,132 --> 01:18:32,292
+So where n is some integer, okay, a positive integer.
+
+813
+01:18:33,292 --> 01:18:36,132
+And a n, a sub n minus 1.
+
+814
+01:18:36,432 --> 01:18:39,092
+So those are coefficients, real numbers.
+
+815
+01:18:40,092 --> 01:18:45,592
+So such function is called the polynomial of degree n.
+
+816
+01:18:46,052 --> 01:18:49,992
+So in order to say this is degree of, this is of degree n.
+
+817
+01:18:49,992 --> 01:18:53,332
+So this leading term, this is called leading term.
+
+818
+01:18:54,532 --> 01:18:57,052
+X to n, leading term.
+
+819
+01:18:57,952 --> 01:19:05,872
+The leading monomial, leading monomial is called leading term.
+
+820
+01:19:07,332 --> 01:19:11,292
+And you see, this coefficient must be non-zero.
+
+821
+01:19:11,851 --> 01:19:14,832
+Okay, otherwise this is not of degree n.
+
+822
+01:19:15,832 --> 01:19:19,532
+Dikkat edin, a n, 0'dan farklı olması lazım, ençı dereceden olması için.
+
+823
+01:19:19,532 --> 01:19:19,952
+Tamam.
+
+824
+01:19:20,392 --> 01:19:26,072
+The domain of polynomials are the set of all real numbers.
+
+825
+01:19:27,172 --> 01:19:29,452
+They are defined everywhere.
+
+826
+01:19:30,192 --> 01:19:30,351
+Okay.
+
+827
+01:19:30,892 --> 01:19:36,032
+Domain of polynomial function, the set of all real numbers.
+
+828
+01:19:36,292 --> 01:19:37,672
+They are defined everywhere.
+
+829
+01:19:37,672 --> 01:19:49,231
+So second kind of basic function, rational function, can be obtained by quotient of two given polynomial function.
+
+830
+01:19:49,231 --> 01:19:50,231
+Okay.
+
+831
+01:19:50,231 --> 01:19:53,392
+Now domain of rational functions.
+
+832
+01:19:53,392 --> 01:19:54,231
+Okay.
+
+833
+01:19:54,231 --> 01:19:55,452
+Now domain of rational functions.
+
+834
+01:19:56,979 --> 01:19:59,979
+set of all real numbers minus
+
+835
+01:20:05,555 --> 01:20:10,555
+x is root root of q.
+
+836
+01:20:12,555 --> 01:20:19,555
+So we exclude root of q from the set of ordinary numbers.
+
+837
+01:20:21,555 --> 01:20:24,555
+Consider this example.
+
+838
+01:20:24,555 --> 01:20:27,555
+So what is the domain of f?
+
+839
+01:20:27,555 --> 01:20:32,555
+So we need to exclude root of this denominator polynomial.
+
+840
+01:20:32,555 --> 01:20:37,555
+Of course we need some calculator or computer in order to compute its root.
+
+841
+01:20:37,555 --> 01:20:44,555
+Okay, it's root approximately 0.75.
+
+842
+01:20:44,555 --> 01:20:46,555
+So we need to exclude this root.
+
+843
+01:20:46,555 --> 01:20:47,555
+Okay.
+
+844
+01:20:47,555 --> 01:20:50,555
+As you see, you don't need to sketch this graph.
+
+845
+01:20:50,555 --> 01:20:55,555
+But if you use some computer algebraic system,
+
+846
+01:20:55,555 --> 01:20:58,555
+okay, you can plot this graph something like that.
+
+847
+01:20:58,555 --> 01:20:59,555
+like that.
+
+848
+01:20:59,555 --> 01:21:11,555
+And you see domain of this r minus 0.75.
+
+849
+01:21:11,555 --> 01:21:26,555
+0.75.
+
+850
+01:21:14,131 --> 01:21:16,131
+0.75
+
+851
+01:21:18,131 --> 01:21:20,131
+Ok
+
+852
+01:21:20,131 --> 01:21:22,131
+Another kind of basic functions
+
+853
+01:21:22,131 --> 01:21:24,131
+algebraic functions
+
+854
+01:21:24,131 --> 01:21:26,131
+So when you apply
+
+855
+01:21:26,131 --> 01:21:28,131
+square root symbol into any
+
+856
+01:21:30,131 --> 01:21:32,131
+Polynomial functions
+
+857
+01:21:32,131 --> 01:21:34,131
+you are going to obtain some algebraic function
+
+858
+01:21:34,131 --> 01:21:36,131
+but also product of some algebraic functions
+
+859
+01:21:36,131 --> 01:21:38,131
+and polynomial functions
+
+860
+01:21:38,131 --> 01:21:40,131
+is also another
+
+861
+01:21:40,131 --> 01:21:42,131
+algebraic function
+
+862
+01:21:42,131 --> 01:21:44,131
+Ok, dikkat edin. Yani bir
+
+863
+01:21:44,131 --> 01:21:46,131
+polinoma kare kök uygularsanız
+
+864
+01:21:46,131 --> 01:21:48,131
+bir cebirsel fonksiyon ödü dersiniz
+
+865
+01:21:48,131 --> 01:21:50,131
+veya cebirsel bir fonksiyonla
+
+866
+01:21:50,131 --> 01:21:52,131
+bir polinomun çarpımı yine
+
+867
+01:21:52,131 --> 01:21:54,131
+bir cebirsel fonksiyon olur arkadaşlar
+
+868
+01:21:54,131 --> 01:21:56,131
+ona dikkat edin.
+
+869
+01:21:58,131 --> 01:22:02,131
+Let me introduce final kind of function
+
+870
+01:22:02,131 --> 01:22:04,131
+piece by function
+
+871
+01:22:04,131 --> 01:22:06,131
+piece by defined function
+
+872
+01:22:06,131 --> 01:22:08,131
+So in this case we consider
+
+873
+01:22:08,131 --> 01:22:10,131
+different rules on
+
+874
+01:22:10,131 --> 01:22:12,131
+different local parts of domain
+
+875
+01:22:12,131 --> 01:22:14,131
+Whenever x is smaller than 2
+
+876
+01:22:14,131 --> 01:22:16,131
+g of x is
+
+877
+01:22:16,131 --> 01:22:18,131
+given by the first rule x
+
+878
+01:22:18,131 --> 01:22:20,131
+so at the point x2
+
+879
+01:22:20,131 --> 01:22:22,131
+so g takes 3 value
+
+880
+01:22:22,131 --> 01:22:24,131
+whenever x is bigger than 2
+
+881
+01:22:24,131 --> 01:22:26,131
+g of x is given by this rule
+
+882
+01:22:26,131 --> 01:22:28,131
+so if you try to sketch its graph
+
+883
+01:22:28,131 --> 01:22:30,131
+something like that
+
+884
+01:22:30,131 --> 01:22:32,131
+ok, can you see that?
+
+885
+01:22:32,131 --> 01:22:34,131
+Can you see that?
+
+886
+01:22:34,131 --> 01:22:36,131
+Simple one
+
+887
+01:22:38,131 --> 01:22:42,131
+So what about this piece by defined function
+
+888
+01:22:42,131 --> 01:22:44,131
+whenever x is different from 2
+
+889
+01:22:44,131 --> 01:22:46,131
+we use this rational function
+
+890
+01:22:46,131 --> 01:22:50,131
+so at the point x2
+
+891
+01:22:50,131 --> 01:22:52,131
+it takes 1
+
+892
+01:22:52,131 --> 01:22:54,131
+look at here, so something like that
+
+893
+01:22:54,131 --> 01:22:56,131
+so but this function is not
+
+894
+01:22:56,131 --> 01:23:00,131
+same function by this
+
+895
+01:23:00,131 --> 01:23:04,131
+x-2
+
+896
+01:23:04,131 --> 01:23:06,131
+x-3
+
+897
+01:23:06,131 --> 01:23:08,131
+x-2
+
+898
+01:23:08,131 --> 01:23:10,131
+x-3 ve aynı
+
+899
+01:23:10,131 --> 01:23:12,131
+fonksiyon değillerdi arkadaşlar
+
+900
+01:23:12,131 --> 01:23:14,131
+dikkatinizi çekerim
+
+901
+01:23:14,131 --> 01:23:16,131
+sadece özdeş
+
+902
+01:23:16,131 --> 01:23:17,131
+so attention here
+
+903
+01:23:17,131 --> 01:23:20,131
+those are not same function but
+
+904
+01:23:20,131 --> 01:23:24,131
+so we have this identical relation
+
+905
+01:23:28,148 --> 01:23:44,087
+x kare artı 2x, x minus 3, whenever x different from 2.
+
+906
+01:23:44,768 --> 01:23:50,148
+Dikkat edin. x kare eksi 5x artı 6 bölü x eksi 2, x eksi 3'e özdeştirir.
+
+907
+01:23:51,148 --> 01:23:54,847
+Sadeleştirirsiniz orada. Ama fonksiyon olarak onlar aynı fonksiyon değil.
+
+908
+01:23:54,988 --> 01:23:57,608
+Çünkü grafikleri farklı çıkacak. Dikkatinizi çekelim.
+
+909
+01:23:57,608 --> 01:23:58,248
+Tamam mı arkadaşlar?
+
+910
+01:23:58,768 --> 01:24:01,568
+They are not the same functions because their graphs are different.
+
+911
+01:24:01,768 --> 01:24:05,248
+Okay, but their rules are identical to each other.
+
+912
+01:24:05,328 --> 01:24:05,648
+Okay?
+
+913
+01:24:06,268 --> 01:24:07,047
+Under this one.
+
+914
+01:24:11,155 --> 01:24:18,515
+So another important kind of important example of piecewise defiant function absolute x.
+
+915
+01:24:18,515 --> 01:24:30,576
+So in fact general form of this f of x given by this rule whenever f of x bigger than or equal to 0.
+
+916
+01:24:31,376 --> 01:24:40,416
+So this is f of x. Whenever f of x is negative so this is minus f of x.
+
+917
+01:24:40,416 --> 01:24:46,536
+So as you see at each case absolute f of x is always positive or 0.
+
+918
+01:24:46,536 --> 01:24:55,256
+So in fact if you twist the graph of f of x you are going to obtain the graph of absolute of f of x.
+
+919
+01:24:55,496 --> 01:25:04,095
+So this is the graph of yx.
+
+920
+01:25:04,095 --> 01:25:11,975
+So if you twist this local part below the x-axis.
+
+921
+01:25:11,975 --> 01:25:19,095
+Okay if you take the symmetry of this local part below the x-axis with respect to horizontal axis we are going to obtain this.
+
+922
+01:25:19,095 --> 01:25:21,095
+Okay now.
+
+923
+01:25:21,095 --> 01:25:44,095
+Now.
+
+924
+01:25:26,228 --> 01:25:33,228
+Şimdi, bu
+
+925
+01:25:38,387 --> 01:25:47,887
+If this is the graph of f of x, then the graph of absolute of f of x,
+
+926
+01:26:00,948 --> 01:26:13,748
+So we take the symmetry of this. This is the graph of absolute of f of x. Okay. End equation.
+
+927
+01:26:13,748 --> 01:26:18,028
+Soru soruan var mı? Yok.
+
+928
+01:26:18,588 --> 01:26:21,168
+Düzek. Abunları geçiyorum.
+
+929
+01:26:22,168 --> 01:26:25,968
+Okay. Let me introduce trigonometric functions.
+
+930
+01:26:25,968 --> 01:26:30,328
+So we have sine trigonometric function.
+
+931
+01:26:31,328 --> 01:26:32,188
+Cosine
+
+932
+01:26:32,188 --> 01:26:34,788
+Tangent
+
+933
+01:26:34,788 --> 01:26:39,148
+Cotangent
+
+934
+01:26:42,579 --> 01:26:46,579
+Cosecund,
+
+935
+01:26:46,579 --> 01:26:50,579
+Ok, let me use this notation.
+
+936
+01:26:52,579 --> 01:26:54,579
+Cosecund
+
+937
+01:26:54,579 --> 01:26:58,579
+And secund.
+
+938
+01:26:58,579 --> 01:27:02,579
+Ok, so those are trigonometric functions,
+
+939
+01:27:02,579 --> 01:27:06,579
+not inverse trigonometric functions, trigonometric functions.
+
+940
+01:27:06,579 --> 01:27:08,579
+Ok, let me
+
+941
+01:27:08,579 --> 01:27:12,579
+talk about radian measure. So what does it mean?
+
+942
+01:27:12,579 --> 01:27:14,579
+So those are degrees.
+
+943
+01:27:14,579 --> 01:27:18,579
+Ok, so what is the definition of radian?
+
+944
+01:27:18,579 --> 01:27:22,579
+Radian measure of some angle theta is given by this.
+
+945
+01:27:22,579 --> 01:27:24,579
+What does it mean?
+
+946
+01:27:24,579 --> 01:27:26,579
+So this is the arc length.
+
+947
+01:27:26,579 --> 01:27:28,579
+Arc length.
+
+948
+01:27:28,579 --> 01:27:33,579
+S over radius R results in radian measure of theta.
+
+949
+01:27:33,579 --> 01:27:37,579
+Ok, so as you see, radian is
+
+950
+01:27:37,579 --> 01:27:39,579
+some real number, not degree.
+
+951
+01:27:39,579 --> 01:27:41,579
+Attention here.
+
+952
+01:27:43,579 --> 01:27:45,579
+Radian orda arkadaşlar.
+
+953
+01:27:45,579 --> 01:27:46,579
+Bilev der.
+
+954
+01:27:46,579 --> 01:27:47,579
+Umar dikkat edin.
+
+955
+01:27:47,579 --> 01:27:49,579
+Ok, so we know this from high school.
+
+956
+01:27:49,579 --> 01:27:53,579
+Sine theta is opposite side over hypotenuse.
+
+957
+01:27:53,579 --> 01:27:56,579
+Cosine theta is edgekin side over hypotenuse.
+
+958
+01:27:56,579 --> 01:28:00,579
+Similarly tangent theta opposite side over edgekin.
+
+959
+01:28:00,579 --> 01:28:02,579
+Ok.
+
+960
+01:28:04,948 --> 01:28:15,208
+Okay, let me illustrate rules of those trigonometrik functions.
+
+961
+01:28:15,208 --> 01:28:23,307
+How to compute sine, cosine, cotangent, tanjant, and second values.
+
+962
+01:28:23,307 --> 01:28:26,387
+This is just illustration, okay?
+
+963
+01:28:30,131 --> 01:28:33,131
+İlk önce, let me arayın.
+
+964
+01:28:34,131 --> 01:28:38,131
+Consider some unit circle. Suppose that this is unit circle.
+
+965
+01:28:46,868 --> 01:28:48,868
+This is unit circle.
+
+966
+01:28:50,868 --> 01:28:52,868
+So this is cosin.
+
+967
+01:28:52,868 --> 01:28:54,868
+This is cosin x's.
+
+968
+01:28:54,868 --> 01:28:56,868
+Positive cosin.
+
+969
+01:28:56,868 --> 01:28:58,868
+From 0 to infinite
+
+970
+01:28:58,868 --> 01:29:00,868
+on the horizontal line.
+
+971
+01:29:00,868 --> 01:29:02,868
+So this is positive cosin.
+
+972
+01:29:02,868 --> 01:29:04,868
+On the horizontal line
+
+973
+01:29:04,868 --> 01:29:06,868
+from 0 to minus infinite
+
+974
+01:29:06,868 --> 01:29:08,868
+is called negative cosin.
+
+975
+01:29:08,868 --> 01:29:10,868
+Okay, on the vertical line
+
+976
+01:29:10,868 --> 01:29:12,868
+from 0 to infinite
+
+977
+01:29:12,868 --> 01:29:14,868
+is called positive sin.
+
+978
+01:29:14,868 --> 01:29:16,868
+Okay, on the vertical line
+
+979
+01:29:16,868 --> 01:29:18,868
+from 0 to minus infinite
+
+980
+01:29:18,868 --> 01:29:20,868
+is called minus sin.
+
+981
+01:29:20,868 --> 01:29:22,868
+Okay, minus sin
+
+982
+01:29:22,868 --> 01:29:24,868
+minus negative cosin.
+
+983
+01:29:24,868 --> 01:29:26,868
+Okay, now look at here.
+
+984
+01:29:26,868 --> 01:29:28,868
+So let's take some
+
+985
+01:29:28,868 --> 01:29:30,868
+line, vertical line,
+
+986
+01:29:30,868 --> 01:29:32,868
+which is tangent to circle,
+
+987
+01:29:32,868 --> 01:29:34,868
+unit circle at the point 1, 0.
+
+988
+01:29:34,868 --> 01:29:38,868
+So this is tangent axis,
+
+989
+01:29:38,868 --> 01:29:42,868
+tangent axis,
+
+990
+01:29:42,868 --> 01:29:48,868
+from 1, from 1, 0 point to infinite
+
+991
+01:29:48,868 --> 01:29:50,868
+is called positive tangent.
+
+992
+01:29:50,868 --> 01:29:56,868
+Okay, from 1, 0 point to negative infinite
+
+993
+01:29:56,868 --> 01:29:58,868
+is called negative tangent.
+
+994
+01:29:58,868 --> 01:30:02,868
+Similarly, we can secate some line,
+
+995
+01:30:02,868 --> 01:30:04,868
+horizontal line,
+
+996
+01:30:04,868 --> 01:30:06,868
+which is tangent to unit circle at the point 0, 1.
+
+997
+01:30:06,868 --> 01:30:08,868
+from 0, 1 point to infinite
+
+998
+01:30:08,868 --> 01:30:10,868
+on this tangent line
+
+999
+01:30:10,868 --> 01:30:14,868
+is called positive cotangent.
+
+1000
+01:30:14,868 --> 01:30:16,868
+Okay, from 0, 1 point to minus infinite
+
+1001
+01:30:16,868 --> 01:30:18,868
+on this tangent line
+
+1002
+01:30:18,868 --> 01:30:20,868
+is called negative cotangent.
+
+1003
+01:30:20,868 --> 01:30:22,868
+Okay, from 0, 1 point to minus infinite
+
+1004
+01:30:22,868 --> 01:30:24,868
+on this tangent line
+
+1005
+01:30:24,868 --> 01:30:26,868
+is called negative cotangent.
+
+1006
+01:30:26,868 --> 01:30:30,868
+Okay, and similarly you can define secant theta values
+
+1007
+01:30:30,868 --> 01:30:32,868
+somewhere here.
+
+1008
+01:30:32,868 --> 01:30:42,868
+Okay, this can be called secant theta.
+
+1009
+01:30:42,868 --> 01:30:44,868
+Okay, now,
+
+1010
+01:30:44,868 --> 01:30:48,868
+so how can we compute sin theta cos theta?
+
+1011
+01:30:48,868 --> 01:30:50,868
+Suppose that we have some bar
+
+1012
+01:30:50,868 --> 01:30:52,868
+rotating around origin.
+
+1013
+01:30:52,868 --> 01:30:56,868
+So actually we have some angle.
+
+1014
+01:30:56,868 --> 01:30:58,868
+This is positive value.
+
+1015
+01:30:58,868 --> 01:31:04,868
+Okay, so we rotate this bar from this level.
+
+1016
+01:31:04,868 --> 01:31:06,868
+Okay, this level.
+
+1017
+01:31:06,868 --> 01:31:10,868
+Okay, now sin theta,
+
+1018
+01:31:10,868 --> 01:31:12,868
+consider the end point of this bar
+
+1019
+01:31:12,868 --> 01:31:14,868
+rotating around origin.
+
+1020
+01:31:14,868 --> 01:31:16,868
+So if you take the orthogonal projection
+
+1021
+01:31:16,868 --> 01:31:18,868
+orthogonal projection of this bar
+
+1022
+01:31:18,868 --> 01:31:21,868
+onto cosine axis,
+
+1023
+01:31:21,868 --> 01:31:24,868
+this is the cosine theta.
+
+1024
+01:31:24,868 --> 01:31:28,868
+Okay, this, this, this.
+
+1025
+01:31:28,868 --> 01:31:31,868
+Okay, if you take the orthogonal projection
+
+1026
+01:31:31,868 --> 01:31:35,868
+of this end point onto positive side,
+
+1027
+01:31:35,868 --> 01:31:39,868
+this distance is called sine theta.
+
+1028
+01:31:39,868 --> 01:31:40,868
+Okay.
+
+1029
+01:31:40,868 --> 01:31:42,868
+Now as you see,
+
+1030
+01:31:42,868 --> 01:31:46,868
+those projections are on the positive axis.
+
+1031
+01:31:46,868 --> 01:31:48,868
+Okay, those values are positive.
+
+1032
+01:31:48,868 --> 01:31:49,868
+Okay.
+
+1033
+01:31:49,868 --> 01:31:53,868
+Now let's consider the extension of this bar.
+
+1034
+01:31:53,868 --> 01:31:57,868
+So actually we have some interception point here.
+
+1035
+01:31:57,868 --> 01:31:59,868
+Let's compute distance between this point
+
+1036
+01:31:59,868 --> 01:32:00,868
+and this point.
+
+1037
+01:32:00,868 --> 01:32:04,868
+And since this line segment on the positive tangent,
+
+1038
+01:32:04,868 --> 01:32:06,868
+so this is positive.
+
+1039
+01:32:06,868 --> 01:32:11,868
+Okay, so attention here by using the similarity between triangles.
+
+1040
+01:32:11,868 --> 01:32:16,868
+So tangent theta here, nothing else than this.
+
+1041
+01:32:16,868 --> 01:32:19,868
+Sine theta over cosine theta.
+
+1042
+01:32:19,868 --> 01:32:24,868
+Tangent theta is identical to sine theta over cosine theta.
+
+1043
+01:32:24,868 --> 01:32:27,868
+Okay, similarly, when you go on here,
+
+1044
+01:32:27,868 --> 01:32:29,868
+if you consider the extension of this bar.
+
+1045
+01:32:29,868 --> 01:32:31,868
+So if you compute this distance,
+
+1046
+01:32:31,868 --> 01:32:35,868
+you are going to obtain cotangent value of theta.
+
+1047
+01:32:35,868 --> 01:32:36,868
+And then you are going to obtain the same theta.
+
+1048
+01:32:36,868 --> 01:32:52,868
+So if you are going to obtain the same theta.
+
+1049
+01:32:37,268 --> 01:33:06,328
+Since this line segment on the positive cotangent, or, okay, this is also positive cotangent theta, positive. Okay. Now, so similarly, so this cotangent theta, according to similarity between triangles, so cosine theta over sine theta. We cannot be in this. Okay. Now consider other cases. Let me write this.
+
+1050
+01:33:07,268 --> 01:33:11,528
+Buraya kadar anlaşmayayım bir yer var mı arkadaşlar? Hocam biz anlamadık dediğiniz yer var mı?
+
+1051
+01:33:15,220 --> 01:33:16,420
+yok değil mi?
+
+1052
+01:33:25,811 --> 01:33:28,532
+Evet, sileyim şöyle, hemdeki şeyden kalma.
+
+1053
+01:33:35,859 --> 01:33:37,920
+Evet, siz de birazcık dinlenmiş olun.
+
+1054
+01:33:52,180 --> 01:33:52,520
+ok.
+
+1055
+01:33:56,404 --> 01:33:59,404
+Let's compute some particular values.
+
+1056
+01:34:04,435 --> 01:34:05,675
+Lansk'ın putu, say.
+
+1057
+01:34:09,524 --> 01:34:15,884
+sinüs, let me sketch again, unicircle.
+
+1058
+01:34:22,484 --> 01:34:27,484
+So this is the, let's say this is the source of some light.
+
+1059
+01:34:28,484 --> 01:34:38,484
+Okay, from this source to infinite, so this is called theta, theta pi, theta zero ray.
+
+1060
+01:34:40,484 --> 01:34:44,484
+From zero, from this source to go up.
+
+1061
+01:34:44,484 --> 01:34:49,484
+Okay, so this is called theta pi over two ray.
+
+1062
+01:34:49,484 --> 01:34:59,484
+Okay, from zero to minus infinite, let's call this is theta pi ray.
+
+1063
+01:35:02,484 --> 01:35:14,484
+So from this source zero to minus infinite on this vertical line is called theta three pi over two.
+
+1064
+01:35:14,484 --> 01:35:25,484
+Okay, so theta zero ray is equivalent to, equivalent to theta two pi ray.
+
+1065
+01:35:25,484 --> 01:35:27,484
+Okay.
+
+1066
+01:35:30,484 --> 01:35:36,484
+Dikkat edin arkadaşlar, theta zero ışını ile theta three pi ışını farklı zamanlarda çıkıyor ışık kaynağından, doğru mu?
+
+1067
+01:35:36,484 --> 01:35:39,484
+Ama aynı yolu takip ediyor.
+
+1068
+01:35:39,484 --> 01:35:45,484
+İkisi de ışın, ama birbirine denk ışınlar, farklı ışınlar ama denk ışınlarmış gibi düşüneceksiniz.
+
+1069
+01:35:45,484 --> 01:35:46,484
+Tamam mı?
+
+1070
+01:35:46,484 --> 01:35:47,484
+Aynı zamanda bu nedir?
+
+1071
+01:35:47,484 --> 01:35:51,484
+Pozitif kosinüs, bu da negatif kosinüs ekseni olarak düşünebilirsiniz.
+
+1072
+01:35:51,484 --> 01:35:52,484
+Tamam.
+
+1073
+01:35:52,484 --> 01:36:11,484
+Birçok çemberimizi çizeceğim.
+
+1074
+01:35:59,188 --> 01:36:05,427
+let Mr. Cage, unit, circle.
+
+1075
+01:36:09,460 --> 01:36:34,859
+Okay. At the position, at the position, θ0, can you see that orthogonal projection of this bar, 0. Sin0, can you see that? Sin0, according to this definition, sin0, orthogonal projection, this is positive sign, this is negative sign, according to this projection, sin0, 0.
+
+1076
+01:36:34,859 --> 01:36:43,239
+Okay. Sin0, pi over 4. So, pi over 4, something like that. Okay.
+
+1077
+01:36:47,091 --> 01:36:51,851
+So we have this ray, theta pi over 4 ray.
+
+1078
+01:36:53,211 --> 01:37:04,751
+So in that case, so if by using the Pi-de-Korium theorem, this is the triangle, so you can compute by the Pi-de-Korium theorem, this.
+
+1079
+01:37:09,619 --> 01:37:28,420
+At this position, sin pi over 2, as you see at this position, orthogonal projection of this point, end point on the side, is on the positive side.
+
+1080
+01:37:28,420 --> 01:37:32,340
+And this distance between this end point and this origin is 1.
+
+1081
+01:37:32,340 --> 01:37:51,039
+Okay. Now at the position, theta pi, ray, end point of, end point, orthogonal projection of end point of this bar onto sin axis is 0.
+
+1082
+01:37:52,319 --> 01:38:02,140
+As you see, we go on something like that, finally sin 2 pi is also 0.
+
+1083
+01:38:02,340 --> 01:38:07,380
+Okay. Now as you see, we have some periodic rule.
+
+1084
+01:38:08,260 --> 01:38:09,800
+Okay. It repeats itself.
+
+1085
+01:38:11,359 --> 01:38:16,019
+Okay. So what about tangent function? How can we compute tangent values?
+
+1086
+01:38:16,640 --> 01:38:18,819
+Okay. Similarly, you can compute cosine.
+
+1087
+01:38:20,399 --> 01:38:25,000
+Cosine 0 at the position, theta 0, cosine 0.
+
+1088
+01:38:25,899 --> 01:38:27,479
+As you see, this distance is 1.
+
+1089
+01:38:27,479 --> 01:38:31,239
+Cosine pi over 2.
+
+1090
+01:38:32,519 --> 01:38:38,199
+This distance, so orthogonal projection of this end point onto cosine axis is 0.
+
+1091
+01:38:39,079 --> 01:38:39,819
+Can you see that?
+
+1092
+01:38:40,519 --> 01:38:41,619
+Cosine pi.
+
+1093
+01:38:44,519 --> 01:38:46,739
+Cosine pi minus 1.
+
+1094
+01:38:46,739 --> 01:38:47,899
+Okay. Let me write here.
+
+1095
+01:38:47,899 --> 01:38:52,760
+Cosine 3 pi over 2 is minus 1.
+
+1096
+01:38:53,220 --> 01:38:54,840
+Also, you can write this bar.
+
+1097
+01:38:54,920 --> 01:39:00,659
+In this direction, if you rotate this bar in the reverse direction,
+
+1098
+01:39:00,960 --> 01:39:05,640
+so in this direction, you are going to obtain minus theta minus pi over 2.
+
+1099
+01:39:05,640 --> 01:39:11,199
+In fact, this is equivalent to theta is equal to minus pi over 2.
+
+1100
+01:39:11,559 --> 01:39:11,800
+Okay.
+
+1101
+01:39:12,279 --> 01:39:19,840
+So, sin pi over minus pi over 2 is equal to minus 1.
+
+1102
+01:39:20,239 --> 01:39:20,579
+Okay.
+
+1103
+01:39:22,579 --> 01:39:24,619
+Dikkat edin. Bunları biliyorsunuz zaten.
+
+1104
+01:39:24,779 --> 01:39:30,559
+Ben sadece birim çember üzerinde nasıl bulunur onu göstermiş oldum arkadaşlar.
+
+1105
+01:39:30,739 --> 01:39:32,000
+Ezgare yapmanıza gerek yok.
+
+1106
+01:39:32,000 --> 01:39:34,859
+Diğer açıları da benzer şekilde hesaplayabilirsiniz.
+
+1107
+01:39:35,680 --> 01:39:37,760
+Şimdi tangent'ı göstereyim size.
+
+1108
+01:39:40,319 --> 01:39:41,899
+Şunları, evet.
+
+1109
+01:39:42,019 --> 01:39:43,939
+Tangent'ı şuradan göstereyim arkadaşlar.
+
+1110
+01:39:44,979 --> 01:39:46,300
+Şimdi tangent'ı geliyorum.
+
+1111
+01:39:47,239 --> 01:39:49,199
+Buradan farklı bir paylaşma yapacağım arkadaşlar.
+
+1112
+01:39:49,559 --> 01:39:51,119
+Şimdilik bunu stop share diyorum.
+
+1113
+01:39:53,239 --> 01:39:53,479
+Okay.
+
+1114
+01:39:53,639 --> 01:39:56,000
+Consider tangent.
+
+1115
+01:39:56,000 --> 01:39:56,680
+Tangent.
+
+1116
+01:39:56,680 --> 01:40:01,979
+Consider unit circle.
+
+1117
+01:40:01,979 --> 01:40:04,720
+Tamam.
+
+1118
+01:40:11,091 --> 01:40:13,091
+Bu, bu tanent ekses.
+
+1119
+01:40:23,315 --> 01:40:27,715
+Okay, this is positive tangent, this is negative tangent.
+
+1120
+01:40:30,115 --> 01:40:31,315
+Okay, attention here.
+
+1121
+01:40:33,956 --> 01:40:48,755
+So at the position theta 0, we know that tangent 0, sin 0 over cosin 0, answer is 0. Okay.
+
+1122
+01:40:48,755 --> 01:41:04,295
+At this position, tangent pi over 4, by this identical relation, sin pi over 4, over cosin pi over 4, answer is 1.
+
+1123
+01:41:04,695 --> 01:41:04,996
+Okay.
+
+1124
+01:41:06,095 --> 01:41:07,815
+Now, so what about this?
+
+1125
+01:41:07,895 --> 01:41:10,935
+As long as you approach pi over 2,
+
+1126
+01:41:12,975 --> 01:41:16,416
+attention, as long as you approach pi over 2,
+
+1127
+01:41:23,155 --> 01:41:53,135
+Let's suppose that pi over 4. Consider this extension. Okay. As long as you approach, let me write here pi over 2 smaller than, okay, pi over 2. Let's substitute some value which is sufficient to close pi over 2 but smaller than pi over 2.
+
+1128
+01:41:53,155 --> 01:42:09,216
+You are going to obtain sufficiently, sufficiently larger value. Is that correct? Okay. Now as you see,
+
+1129
+01:42:13,524 --> 01:42:43,524
+Bu, bu
+
+1130
+01:42:43,524 --> 01:43:00,804
+Dikkat edin arkadaşlar. Bunları dikkate alarak biz onların grafiklerini çizebiliriz. Tamam mı arkadaşlar? Şimdi önce bazı özleşiklerden bahsedelim. Let me talk about trigonometric identities. Okay, tangent theta, we can obtain this by using similarity between triangles.
+
+1131
+01:43:00,804 --> 01:43:24,804
+Okay, now in fact, so by using some complex numbers so we can prove this.
+
+1132
+01:43:24,804 --> 01:43:36,804
+Okay, now in fact, so by using some complex numbers so we can prove this but I think you didn't see complex numbers in the high school.
+
+1133
+01:43:36,804 --> 01:43:41,804
+Arkadaşlar, karmaşık sayılar çok detaylı görmediniz siz değil mi lisede?
+
+1134
+01:43:41,804 --> 01:43:46,804
+Görmüş olsaydınız hemen bu nereden nasıl geliyor hemen gösterecektim.
+
+1135
+01:43:46,804 --> 01:43:52,804
+O yüzden anlatamıyorum. Mecburen şöyle bunu merak ediyorsanız bakarsınız.
+
+1136
+01:43:52,804 --> 01:44:00,804
+Ya da o yukarıdaki birim çemberden arkadaşlar ya da üçgenlerin cosinist teoreminden falan faydalanarak gösterebilirsiniz.
+
+1137
+01:44:00,804 --> 01:44:02,804
+By using cosin theorem.
+
+1138
+01:44:02,804 --> 01:44:06,804
+Okay, now you can compute, you can show this is true.
+
+1139
+01:44:06,804 --> 01:44:12,804
+Okay, sin a plus b is equal to sin a times cos b plus cos a times sin b.
+
+1140
+01:44:12,804 --> 01:44:16,804
+So when you substitute minus b into this first formula.
+
+1141
+01:44:16,804 --> 01:44:22,804
+So sin a cos minus b plus cos a sin minus b.
+
+1142
+01:44:22,804 --> 01:44:32,804
+Okay, now we know that we are going to show that cos is even function cos minus b is equal to cos b.
+
+1143
+01:44:32,804 --> 01:44:36,804
+By using unit circle illustration we can show this.
+
+1144
+01:44:36,804 --> 01:44:38,804
+And sin minus b is equal to minus sin b.
+
+1145
+01:44:38,804 --> 01:44:42,804
+That's why sin function is odd function.
+
+1146
+01:44:42,804 --> 01:44:45,804
+We can show this by using unit circle illustration.
+
+1147
+01:44:45,804 --> 01:44:46,804
+Okay.
+
+1148
+01:44:46,804 --> 01:44:54,804
+Now similarly cos a plus b cos a cos b minus sin a sin b cos a minus b.
+
+1149
+01:44:54,804 --> 01:45:00,804
+When you substitute minus b into this b we are going to obtain this expression.
+
+1150
+01:45:00,804 --> 01:45:01,804
+Okay.
+
+1151
+01:45:01,804 --> 01:45:08,804
+Now, so let's compute sin 2 theta by using the first formula.
+
+1152
+01:45:08,804 --> 01:45:10,804
+Edition formula we have this.
+
+1153
+01:45:10,804 --> 01:45:15,804
+Cosine 2 theta by using this main formula.
+
+1154
+01:45:15,804 --> 01:45:16,804
+formula.
+
+1155
+01:45:16,804 --> 01:45:30,804
+So let's compute sin 2 theta by using the first formula.
+
+1156
+01:45:20,115 --> 01:45:49,676
+So we can obtain this. When you substitute pi-tecorium theorem, sin squared plus cos squared 1, okay, and as you see, we can express sin squared theta and cos squared theta in terms of cos to theta in this form, okay? You don't need to memorize all formulas. It is sufficient to learn this formula and this formula. Okay, all other formulas can be obtained by using these two formulas and pi-tecorium theorem.
+
+1157
+01:45:49,676 --> 01:46:11,475
+3 tane formül bilmeniz arkadaşlar yeterli. Bu trigonometrik özelliklerle alakalı diğer kuralları bilmek istiyorsanız bu 3 formül bilmeniz yeterli. Tamam mı arkadaşlar? Diğerleri zaten çıkartılıyor. Period neydi arkadaşlar? Let me introduce definition of period. So, consider this equality.
+
+1158
+01:46:15,380 --> 01:46:15,940
+Okay.
+
+1159
+01:46:17,699 --> 01:46:32,659
+There may be infinitely many t values satisfying this equality, but the minimum value of such t satisfying this equality is called period of this function.
+
+1160
+01:46:32,659 --> 01:46:33,079
+Okay.
+
+1161
+01:46:33,480 --> 01:46:41,940
+The minimum, minimum positive t.
+
+1162
+01:46:41,940 --> 01:46:43,060
+Okay.
+
+1163
+01:46:43,239 --> 01:46:48,880
+Satisfying this equality is called period of this function.
+
+1164
+01:46:49,239 --> 01:46:49,480
+Okay.
+
+1165
+01:46:49,880 --> 01:46:54,539
+So consider the rule of sine, cosine, second, cosecant.
+
+1166
+01:46:54,539 --> 01:46:59,760
+As you see, 2 pi is the period of sine.
+
+1167
+01:47:00,440 --> 01:47:03,239
+2 pi is the period of second function.
+
+1168
+01:47:03,900 --> 01:47:04,020
+Okay.
+
+1169
+01:47:05,260 --> 01:47:08,880
+And consider the definition of tangent, cotangent.
+
+1170
+01:47:09,520 --> 01:47:09,680
+Okay.
+
+1171
+01:47:09,840 --> 01:47:11,659
+Period of tangent is pi.
+
+1172
+01:47:11,940 --> 01:47:41,920
+And period of tangent is pi.
+
+1173
+01:47:37,427 --> 01:48:07,427
+Şimdi, şimdi
+
+1174
+01:48:07,427 --> 01:48:37,427
+consider, şimdi
+
+1175
+01:48:37,427 --> 01:50:37,427
+şimdi, şimdi
+
+1176
+01:50:55,796 --> 01:50:56,296
+Evet.
+
+1177
+01:50:57,716 --> 01:50:58,756
+Bir ara verelim.
+
+1178
+01:51:07,764 --> 01:51:09,344
+Avesiste var, [öğrenci].
+
+1179
+01:51:11,003 --> 01:51:12,764
+Ders notları Avesiste var.
+
+1180
+01:51:12,984 --> 01:51:18,123
+[şifre] passwordu ile girip Avesisten indirebilirsin bu notları.
+
+1181
+01:51:21,716 --> 01:51:24,436
+Tamam, aradan sonra Türkçe anlatırım [öğrenci].
+
+1182
+01:51:29,011 --> 01:51:30,631
+Bir ara veredim 10 dakika.
+
+1183
+02:03:05,332 --> 02:03:09,192
+Evet, merhaba arkadaşlar. 10 dakika doldu galiba.
+
+1184
+02:03:10,932 --> 02:03:11,652
+Merhaba hocam.
+
+1185
+02:03:14,792 --> 02:03:18,792
+Evet, Türkçe. Bir üstünden geçelim.
+
+1186
+02:03:26,355 --> 02:03:26,876
+Evet.
+
+1187
+02:03:29,615 --> 02:03:31,615
+Şimdi arkadaşlar sinüsün
+
+1188
+02:03:31,615 --> 02:03:33,515
+nasıl tanımlandığını
+
+1189
+02:03:33,515 --> 02:03:36,235
+birim çember üzerinde göstermiştik.
+
+1190
+02:03:37,795 --> 02:03:40,055
+Sinüsün eksi 1 ile artı 1 arasında
+
+1191
+02:03:40,055 --> 02:03:41,916
+salınım yapan bir fonksiyon olduğunu
+
+1192
+02:03:41,916 --> 02:03:43,195
+biliyoruz. Çünkü sinüs
+
+1193
+02:03:43,195 --> 02:03:46,135
+bir periyodik fonksiyondur.
+
+1194
+02:03:46,235 --> 02:03:49,315
+Periyodik 2 pi olan bir fonksiyondur.
+
+1195
+02:03:49,855 --> 02:03:51,055
+Zaten görebiliyorsunuz.
+
+1196
+02:03:51,655 --> 02:03:53,515
+Tekrarlıyor her 2 pi uzunlukta
+
+1197
+02:03:53,515 --> 02:03:55,635
+değerleri, y değerleri
+
+1198
+02:03:55,635 --> 02:03:56,275
+birbirine.
+
+1199
+02:03:56,355 --> 02:03:57,996
+Dikkat edin arkadaşlar.
+
+1200
+02:03:58,956 --> 02:04:01,076
+Şimdi kosekant eta 1 bölü sin
+
+1201
+02:04:01,076 --> 02:04:02,536
+teta olarak tanımlanmıştı.
+
+1202
+02:04:03,175 --> 02:04:05,015
+Şimdi ben sinüs burada
+
+1203
+02:04:05,015 --> 02:04:07,355
+1 bölü sin teta. Sinüs
+
+1204
+02:04:07,355 --> 02:04:09,135
+pi değil de pi'ye
+
+1205
+02:04:09,135 --> 02:04:11,275
+çok yakın ama pi'den küçük bir
+
+1206
+02:04:11,275 --> 02:04:12,835
+değer yazdığında
+
+1207
+02:04:12,835 --> 02:04:15,335
+şurada sinüsün argümeni olarak.
+
+1208
+02:04:16,015 --> 02:04:17,355
+O zaman ne yaparım
+
+1209
+02:04:17,355 --> 02:04:18,895
+arkadaşlar? Sıfıra çok yakın
+
+1210
+02:04:18,895 --> 02:04:21,376
+pozitif bir sayı
+
+1211
+02:04:21,376 --> 02:04:23,475
+yakalarım. 1 bölü sıfıra çok yakın
+
+1212
+02:04:23,475 --> 02:04:25,435
+pozitif bir sayı yeterince
+
+1213
+02:04:25,435 --> 02:04:26,435
+büyük bir sayı olur.
+
+1214
+02:04:26,895 --> 02:04:28,036
+Dolayısıyla bakın pi'ye
+
+1215
+02:04:28,036 --> 02:04:29,335
+soldan yaklaşırken
+
+1216
+02:04:29,335 --> 02:04:31,235
+x değerleri ya da teta değerleri
+
+1217
+02:04:31,235 --> 02:04:33,335
+y değerleri ne olacak arkadaşlar?
+
+1218
+02:04:34,115 --> 02:04:35,956
+Yani 1 bölü sin teta değerleri
+
+1219
+02:04:35,956 --> 02:04:38,595
+koat. Yukarıya doğru çıkacaktır arkadaşlar.
+
+1220
+02:04:39,456 --> 02:04:39,935
+Dikkat edin.
+
+1221
+02:04:39,996 --> 02:04:41,115
+Yeterince büyüyecektir.
+
+1222
+02:04:41,115 --> 02:04:42,115
+tamam mı?
+
+1223
+02:04:43,015 --> 02:04:46,416
+Şimdi pi'ye sağdan yaklaşırsam bu sefer
+
+1224
+02:04:46,416 --> 02:04:47,916
+bakın 1 bölü sinüs
+
+1225
+02:04:47,916 --> 02:04:49,395
+pi
+
+1226
+02:04:49,395 --> 02:04:52,335
+şurada pi artı yazıyorum.
+
+1227
+02:04:52,795 --> 02:04:53,855
+Yani pi'ye çok yakın ama
+
+1228
+02:04:53,855 --> 02:04:55,775
+pi'den büyük bir değer yerleştirdiğimde
+
+1229
+02:04:55,775 --> 02:04:56,835
+bu sefer
+
+1230
+02:04:56,835 --> 02:04:58,775
+negatif olacaktır.
+
+1231
+02:04:58,895 --> 02:04:59,996
+Üçüncü bölgedeyimdir.
+
+1232
+02:05:00,095 --> 02:05:00,755
+Doğru mu arkadaşlar?
+
+1233
+02:05:01,635 --> 02:05:03,795
+Üçüncü bölgede sinüs değeri negatif olur.
+
+1234
+02:05:03,895 --> 02:05:05,615
+Bu da 1 bölü sıfır eksi.
+
+1235
+02:05:05,615 --> 02:05:08,615
+Yani yeterli küçük bir sayı yakalarım.
+
+1236
+02:05:09,496 --> 02:05:10,295
+O zaman bakın
+
+1237
+02:05:10,295 --> 02:05:11,615
+pi'ye sağdan yaklaşırken
+
+1238
+02:05:12,235 --> 02:05:14,615
+1 bölü sin teta değerleri
+
+1239
+02:05:15,195 --> 02:05:16,895
+aşağı doğru inecek.
+
+1240
+02:05:16,996 --> 02:05:18,515
+Eksi sonsuz gibi davranacaktır.
+
+1241
+02:05:18,835 --> 02:05:19,235
+Dikkat edin.
+
+1242
+02:05:19,295 --> 02:05:20,095
+3 pi bölü 2'de
+
+1243
+02:05:20,095 --> 02:05:20,615
+pi bölü 2'de
+
+1244
+02:05:21,315 --> 02:05:22,456
+buraların olacaktır hep
+
+1245
+02:05:22,456 --> 02:05:24,076
+teta olacaklardır grafikler.
+
+1246
+02:05:24,255 --> 02:05:25,615
+Y eşit sinüs teta'nın grafiğiyle
+
+1247
+02:05:26,215 --> 02:05:28,695
+kosekant teta'nın grafikleri
+
+1248
+02:05:28,695 --> 02:05:29,536
+birbirine dokunacak.
+
+1249
+02:05:29,916 --> 02:05:30,635
+5 pi bölü 2'de
+
+1250
+02:05:30,635 --> 02:05:31,395
+3 pi bölü 2'de
+
+1251
+02:05:31,395 --> 02:05:32,155
+pi bölü 2'de
+
+1252
+02:05:32,155 --> 02:05:33,835
+aynı değer alacaklar oralarda.
+
+1253
+02:05:34,295 --> 02:05:34,615
+Tamam mı?
+
+1254
+02:05:34,615 --> 02:05:36,456
+grafikler bu şekilde bulunur.
+
+1255
+02:05:36,555 --> 02:05:37,775
+Sintetayı biliyorsanız
+
+1256
+02:05:37,775 --> 02:05:39,835
+kosekant teta'nın grafiğini de
+
+1257
+02:05:39,835 --> 02:05:41,376
+zaten hemen bulabilirsiniz.
+
+1258
+02:05:42,115 --> 02:05:42,815
+Ona dikkat edin.
+
+1259
+02:05:42,916 --> 02:05:43,295
+Tamam mı?
+
+1260
+02:05:44,115 --> 02:06:11,876
+Evet.
+
+1261
+02:05:50,131 --> 02:05:55,131
+bu sadece bir birçok, ok? İntroda.
+
+1262
+02:06:02,899 --> 02:06:06,599
+Okay, now consider the graph of cosine theta.
+
+1263
+02:06:08,339 --> 02:06:10,920
+Sorry, cosine theta.
+
+1264
+02:06:11,579 --> 02:06:22,019
+So recall the definition of cosine at the position theta 0, cosine 1 here at the position pi over 2, cosine pi over 2, 0.
+
+1265
+02:06:22,299 --> 02:06:25,259
+Okay, so this is the graph of y cosine theta.
+
+1266
+02:06:26,079 --> 02:06:29,639
+So cosine is the definition of second theta, 1 over cosine theta.
+
+1267
+02:06:29,639 --> 02:06:40,439
+So in this case, the graph of second theta and cosine theta are tangent to each other at those points.
+
+1268
+02:06:40,679 --> 02:06:40,859
+Okay.
+
+1269
+02:06:42,539 --> 02:06:43,599
+Can you see that?
+
+1270
+02:06:49,043 --> 02:06:54,043
+Now, graph of trigonometrik function, tanjant, θ.
+
+1271
+02:06:54,043 --> 02:06:57,043
+So, we know that period of tanjant is pi.
+
+1272
+02:06:57,043 --> 02:07:02,043
+So, this means that its graph, okay, repeats itself.
+
+1273
+02:07:02,043 --> 02:07:05,043
+Now, consider the tanjant axis.
+
+1274
+02:07:05,043 --> 02:07:08,043
+So, let me write this part.
+
+1275
+02:07:10,676 --> 02:07:17,516
+So recall the tangent axis on the unit circle illustration.
+
+1276
+02:07:19,016 --> 02:07:28,196
+Birinç ember gösteriminde arkadaşlar, tanjan eksenini düşünürseniz, grafiğin neden böyle olması gerektiğini görebilirsiniz.
+
+1277
+02:07:33,779 --> 02:07:36,779
+Okay, let's consider the unit circle illustration.
+
+1278
+02:07:42,804 --> 02:07:44,804
+So this is the unit circle.
+
+1279
+02:07:46,804 --> 02:07:48,804
+So this is the tangent axis.
+
+1280
+02:07:50,804 --> 02:07:53,804
+So this is the positive tangent.
+
+1281
+02:07:54,804 --> 02:07:56,804
+So this is the negative tangent.
+
+1282
+02:08:00,804 --> 02:08:01,804
+Okay.
+
+1283
+02:08:01,804 --> 02:08:04,804
+Look at that. At the position theta 0,
+
+1284
+02:08:05,804 --> 02:08:07,804
+sine 0 over cosine 0.
+
+1285
+02:08:07,804 --> 02:08:09,804
+So tangent 0, 0.
+
+1286
+02:08:09,804 --> 02:08:12,804
+But as long as you approach,
+
+1287
+02:08:12,804 --> 02:08:15,804
+as long as you approach pi over 2,
+
+1288
+02:08:15,804 --> 02:08:18,804
+this is the pi over 2 ray.
+
+1289
+02:08:19,804 --> 02:08:20,804
+Okay.
+
+1290
+02:08:20,804 --> 02:08:22,804
+Now as you see,
+
+1291
+02:08:24,804 --> 02:08:27,804
+consider these extensions and consider this interception points.
+
+1292
+02:08:27,804 --> 02:08:31,804
+And at each case, try to compute these distances.
+
+1293
+02:08:31,804 --> 02:08:36,804
+As long as you approach pi over 2 from left-hand side,
+
+1294
+02:08:36,804 --> 02:08:37,804
+left-hand side.
+
+1295
+02:08:37,804 --> 02:08:39,804
+So the distance is getting increasing.
+
+1296
+02:08:39,804 --> 02:08:40,804
+Can you see that?
+
+1297
+02:08:40,804 --> 02:08:43,804
+As long as you approach pi over 2 from left-hand side,
+
+1298
+02:08:43,804 --> 02:08:45,804
+y values go up infinitely.
+
+1299
+02:08:45,804 --> 02:08:46,804
+Can you see that?
+
+1300
+02:08:47,804 --> 02:08:48,804
+Okay.
+
+1301
+02:08:48,804 --> 02:08:50,804
+On the positive tangent axis.
+
+1302
+02:08:51,804 --> 02:08:52,804
+But look at here.
+
+1303
+02:08:52,804 --> 02:08:57,804
+This is theta is equal to minus pi over 2.
+
+1304
+02:08:57,804 --> 02:08:59,804
+So in this case,
+
+1305
+02:08:59,804 --> 02:09:03,804
+as long as you approach minus pi over 2.
+
+1306
+02:09:03,804 --> 02:09:04,804
+Okay.
+
+1307
+02:09:04,804 --> 02:09:09,804
+From right-hand side here, as you see,
+
+1308
+02:09:09,804 --> 02:09:10,804
+here as you see.
+
+1309
+02:09:10,804 --> 02:09:11,804
+Here as you see.
+
+1310
+02:09:14,355 --> 02:09:20,876
+So this interception point goes down infinitely. Can you see that this goes down infinitely? Okay?
+
+1311
+02:09:21,876 --> 02:09:28,916
+Now, since this is periodic function, this graph repeats itself of this form. Okay?
+
+1312
+02:09:30,695 --> 02:09:33,595
+Periodik olduğundan birbirini tekrarlar arkadaşlar grafik.
+
+1313
+02:09:34,335 --> 02:09:38,335
+Sadece bir döngüde çizmemiz yeterli.
+
+1314
+02:09:38,335 --> 02:09:43,376
+Bir döngüde çizdikten sonra, yani eksi p bölükinden p bölükine çizdiğinizde zaten
+
+1315
+02:09:43,376 --> 02:09:50,135
+eksi sonsuza, dikkat edin, y ekseni üzerindeki bütün değerleri zaten örtmüş oluyorum.
+
+1316
+02:09:50,255 --> 02:09:56,775
+As you see, if you sketch the graph of this tangent from minus pi over 2 pi over 2,
+
+1317
+02:09:57,496 --> 02:10:01,855
+and as you see, the graph, ortakonel projection of the tangent theta,
+
+1318
+02:10:01,855 --> 02:10:08,095
+covers all vertical y-axis, okay, vertical y-axis,
+
+1319
+02:10:08,095 --> 02:10:08,215
+vertical y-axis,
+
+1320
+02:10:13,492 --> 02:10:23,192
+Okey. Now, similarly, we can sketch graph of trigonometric function, cotangent theta, in fact, so we change their position. Okey.
+
+1321
+02:10:25,672 --> 02:10:29,632
+Dikkat edin arkadaşlar. Ne yapıyoruz? Şunu pi bölü 2 için yapıyorum. Aynı şeyi.
+
+1322
+02:10:31,152 --> 02:10:36,431
+Sadece şunların yer simetriklerini alıyormuş gibi düşünüyorum arkadaşlar. Şöyle. Gördünüz mü?
+
+1323
+02:10:36,431 --> 02:10:48,212
+As you see, by using the graph of tangent, we can sketch the graph of cotangent because we know that cotangent time tangent is equal to 1.
+
+1324
+02:10:49,072 --> 02:10:49,332
+Okey.
+
+1325
+02:10:50,832 --> 02:10:54,672
+Cotangent time tangent is equal to 1.
+
+1326
+02:10:55,112 --> 02:10:55,412
+Sor.
+
+1327
+02:10:56,452 --> 02:10:56,952
+Barkın.
+
+1328
+02:11:02,707 --> 02:11:06,987
+Barkın soru soracağım dedin, sormadın. Neyse. Devam.
+
+1329
+02:11:09,327 --> 02:11:11,887
+Hocam tanırsam yazmaya çalışıyorum için şu anda.
+
+1330
+02:11:12,107 --> 02:11:17,507
+Ya ben arkadaşlar yazıları tek tek kontrol edemiyorum, şekile odaklanıyorum. O öyle çok sıkıntı oluyor.
+
+1331
+02:11:17,927 --> 02:11:21,427
+Sesli bağlanın, soru sormak isteyen varsa sesli bağlanın sorsun. Tamam mı?
+
+1332
+02:11:24,687 --> 02:11:26,467
+Çetin sürekli kontrol edemiyorum ben.
+
+1333
+02:11:28,567 --> 02:11:30,547
+Hocam geliyor mu sesim acaba?
+
+1334
+02:11:30,547 --> 02:11:35,247
+Hocam şey, tanjant sağ tarafta var ya eksin.
+
+1335
+02:11:35,527 --> 02:11:37,567
+Neden bir tane daha yoktu ondan sol tarafta?
+
+1336
+02:11:39,127 --> 02:11:41,647
+Nasıl sol tarafta? Var, devam ediyor, birbirini tekrarlıyor.
+
+1337
+02:11:42,927 --> 02:11:44,287
+Böyle tekrarlıyor.
+
+1338
+02:11:45,327 --> 02:11:47,527
+Şöyle, böyle geldi ya.
+
+1339
+02:11:47,887 --> 02:11:48,987
+Şurada bir tane daha var.
+
+1340
+02:11:49,307 --> 02:11:52,467
+Şekil, yer yeterli olmadığından çizemedik.
+
+1341
+02:11:52,627 --> 02:11:54,587
+Sonsuz tane böyle birbirini tekrarlıyor.
+
+1342
+02:11:56,687 --> 02:11:57,567
+Tamam mı?
+
+1343
+02:11:58,387 --> 02:12:00,247
+Bunlar birbirini tekrarlıyor, merak etme.
+
+1344
+02:12:00,247 --> 02:12:30,228
+Hep birbirini tekrarlıyor.
+
+1345
+02:12:22,771 --> 02:12:25,072
+Ok, şekil çizmeyin arkadaşlar.
+
+1346
+02:12:26,511 --> 02:12:30,792
+Now let me introduce definition of limits. So what does mean limit?
+
+1347
+02:12:33,192 --> 02:12:37,412
+So let me talk about this notation. What does it tell us?
+
+1348
+02:12:40,492 --> 02:12:41,171
+Ok.
+
+1349
+02:12:43,171 --> 02:12:45,612
+So this means, this is just notation.
+
+1350
+02:12:46,192 --> 02:12:47,391
+This is just notation.
+
+1351
+02:12:47,391 --> 02:12:53,152
+This notation means, as x goes to a, f of x
+
+1352
+02:12:53,152 --> 02:12:55,391
+approach l.
+
+1353
+02:12:56,351 --> 02:12:58,692
+Ok, so this l must be unique.
+
+1354
+02:13:03,956 --> 02:13:33,895
+ve süreklik, f'
+
+1355
+02:13:08,467 --> 02:13:32,467
+Okay? Otherwise, we say that there is no limit of f at the point A. Okay? As x goes to A, these f of x values approach L, we say that f has limit at the point A. But this L must be unique and final. Okay? So...
+
+1356
+02:13:35,380 --> 02:13:51,260
+Consider these examples. There are three types, three cases about this limit notation. Let me explain these cases on this example.
+
+1357
+02:13:51,260 --> 02:14:04,539
+Okay. The first case, so look at here. The first case, so at the point 1, f is defined, f of 1. Can you see that?
+
+1358
+02:14:07,180 --> 02:14:16,400
+f of 1, according to this graph, f of 1 is defined at the point, sorry, f is defined at the point 1.
+
+1359
+02:14:20,500 --> 02:14:47,800
+f of 1, 2. Okay. But, as x goes to 1, f of x approach 2. They are different statements. Can you see that? So this is the value of f at the point 1, which is 2. But this statement, this notation says that,
+
+1360
+02:14:47,800 --> 02:14:58,939
+as x goes to 1, f of x approach 2. Okay? As you see, those are different statements. Dikkat edin arkadaşlar.
+
+1361
+02:14:59,680 --> 02:15:07,840
+f 1 eşittir 2, yani f'nin bir noktasına aldığı değer 2 demektir. Limit x 1'e giderken f x eşittir 2 ise ne demektir?
+
+1362
+02:15:08,300 --> 02:15:16,039
+x 1'e yaklaşırken f x değerleri 2'ye yaklaşıyor demek. Bakın, sözel olarak ifadeleri farklı bunlar. Tamam mı arkadaşlar?
+
+1363
+02:15:17,800 --> 02:15:24,500
+f of x? Okay. Okay. So f of 2, look at f of 2, f of 2, 5.
+
+1364
+02:15:28,787 --> 02:15:30,787
+bu graph
+
+1365
+02:15:30,787 --> 02:15:32,787
+bu hala bir hala
+
+1366
+02:15:32,787 --> 02:15:36,787
+f as long as x approach 2
+
+1367
+02:15:36,787 --> 02:15:39,787
+as long as x approach 2
+
+1368
+02:15:39,787 --> 02:15:42,787
+f approach
+
+1369
+02:15:42,787 --> 02:15:44,787
+from left or right
+
+1370
+02:15:44,787 --> 02:15:45,787
+can you see that
+
+1371
+02:15:45,787 --> 02:15:47,787
+as long as you approach 2
+
+1372
+02:15:47,787 --> 02:15:50,787
+f approach 3
+
+1373
+02:15:50,787 --> 02:15:53,787
+can you see that
+
+1374
+02:15:53,787 --> 02:15:55,787
+so as you see
+
+1375
+02:15:55,787 --> 02:15:56,787
+even if f
+
+1376
+02:15:56,787 --> 02:15:59,787
+value of f at the point 2
+
+1377
+02:15:59,787 --> 02:16:01,787
+is different from
+
+1378
+02:16:01,787 --> 02:16:02,787
+okay
+
+1379
+02:16:02,787 --> 02:16:03,787
+this limit
+
+1380
+02:16:03,787 --> 02:16:05,787
+okay it has limit
+
+1381
+02:16:05,787 --> 02:16:06,787
+the function has limit
+
+1382
+02:16:06,787 --> 02:16:07,787
+at the point 2
+
+1383
+02:16:07,787 --> 02:16:10,787
+the limit of f at the point 2 is 3
+
+1384
+02:16:10,787 --> 02:16:14,787
+but the value of f at the point 2 is 5
+
+1385
+02:16:14,787 --> 02:16:15,787
+okay
+
+1386
+02:16:15,787 --> 02:16:18,787
+we can say that f has limit at the point 2
+
+1387
+02:16:18,787 --> 02:16:20,787
+the limit value is 3
+
+1388
+02:16:20,787 --> 02:16:22,787
+that is unique value
+
+1389
+02:16:22,787 --> 02:16:23,787
+and find number
+
+1390
+02:16:23,787 --> 02:16:25,787
+so what about this
+
+1391
+02:16:25,787 --> 02:16:27,787
+f of 3
+
+1392
+02:16:27,787 --> 02:16:28,787
+according to the graph
+
+1393
+02:16:28,787 --> 02:16:30,787
+is not defined
+
+1394
+02:16:30,787 --> 02:16:32,788
+can you see that
+
+1395
+02:16:32,788 --> 02:16:33,788
+is not defined
+
+1396
+02:16:33,788 --> 02:16:36,788
+even if f is not defined at the point 3
+
+1397
+02:16:36,788 --> 02:16:37,788
+but
+
+1398
+02:16:37,788 --> 02:16:39,788
+f has limit at the point 3
+
+1399
+02:16:39,788 --> 02:16:42,788
+because as long as x approach 3
+
+1400
+02:16:42,788 --> 02:16:44,788
+can you see that
+
+1401
+02:16:44,788 --> 02:16:47,788
+f of x values approach 4
+
+1402
+02:16:47,788 --> 02:16:50,788
+gördünüz mü arkadaşlar
+
+1403
+02:16:50,788 --> 02:16:51,788
+bakın
+
+1404
+02:16:51,788 --> 02:16:53,788
+fonksiyon o noktada tanımlı ise
+
+1405
+02:16:53,788 --> 02:16:55,788
+f1 eşittir 2 oldu
+
+1406
+02:16:56,788 --> 02:16:57,788
+ne oldu
+
+1407
+02:16:57,788 --> 02:16:58,788
+limit değeri
+
+1408
+02:16:58,788 --> 02:16:59,788
+limit x1'e giderken fx
+
+1409
+02:16:59,788 --> 02:17:00,788
+o da 2'ye eşit olabilir
+
+1410
+02:17:00,788 --> 02:17:02,788
+ama olmak zorunda değil
+
+1411
+02:17:03,788 --> 02:17:05,788
+fonksiyon o noktada tanımlı
+
+1412
+02:17:05,788 --> 02:17:06,788
+değeri
+
+1413
+02:17:06,788 --> 02:17:08,788
+5 geldi f2 5
+
+1414
+02:17:08,788 --> 02:17:09,788
+ama ne oldu arkadaşlar
+
+1415
+02:17:09,788 --> 02:17:11,788
+x2'ye yaklaşırken
+
+1416
+02:17:11,788 --> 02:17:12,788
+ne oldu
+
+1417
+02:17:12,788 --> 02:17:13,788
+f
+
+1418
+02:17:13,788 --> 02:17:14,788
+x değerleri
+
+1419
+02:17:14,788 --> 02:17:15,788
+3'e yaklaştı
+
+1420
+02:17:15,788 --> 02:17:16,788
+yani limiti var
+
+1421
+02:17:16,788 --> 02:17:17,788
+fonksiyonun 3
+
+1422
+02:17:17,788 --> 02:17:19,788
+ama fonksiyon o noktadaki değeri 5
+
+1423
+02:17:19,788 --> 02:17:20,788
+limiti yok diyemiyorsunuz
+
+1424
+02:17:20,788 --> 02:17:21,788
+limiti var
+
+1425
+02:17:21,788 --> 02:17:22,788
+ben her şekilde
+
+1426
+02:17:22,788 --> 02:17:24,788
+f o noktada tanımlı olmasa bile
+
+1427
+02:17:24,788 --> 02:17:26,788
+bir noktada tanımlı olmasa bile
+
+1428
+02:17:26,788 --> 02:17:28,788
+o noktaya doğru yaklaşırken
+
+1429
+02:17:28,788 --> 02:17:30,788
+fonksiyonun yaklaştığı bir değer olabilir
+
+1430
+02:17:30,788 --> 02:17:31,788
+örnek bu
+
+1431
+02:17:31,788 --> 02:17:34,788
+x3'e giderken fx eşittir 4 mesela
+
+1432
+02:17:34,788 --> 02:17:35,788
+tamam mı arkadaşlar
+
+1433
+02:17:35,788 --> 02:17:38,788
+gördüğünüz gibi 3 farklı durumdan bahsettim
+
+1434
+02:17:38,788 --> 02:17:40,788
+limitin olmasına dair
+
+1435
+02:17:40,788 --> 02:17:41,788
+tamam mı
+
+1436
+02:17:41,788 --> 02:17:47,788
+x3'e giderken fx eşittir 4
+
+1437
+02:17:47,316 --> 02:17:54,275
+Ok, let's compute limits of any function from a table.
+
+1438
+02:17:54,275 --> 02:17:57,156
+Ok, look at this example.
+
+1439
+02:17:57,156 --> 02:18:03,076
+f given by this rule, square root of x minus 1 over x minus 1.
+
+1440
+02:18:03,076 --> 02:18:10,115
+So there are some input values written on this first, on the second row.
+
+1441
+02:18:10,115 --> 02:18:15,396
+Ok, and so we have output values on the final row.
+
+1442
+02:18:15,396 --> 02:18:24,436
+Ok, now as long as these input values approach 1 from left or right, can you see that?
+
+1443
+02:18:24,436 --> 02:18:30,356
+So output values approach 1 over 2.
+
+1444
+02:18:30,356 --> 02:18:32,115
+Can you see that?
+
+1445
+02:18:32,115 --> 02:18:36,996
+So how can we show this by using algebraic operations?
+
+1446
+02:18:36,996 --> 02:18:42,996
+So by some manipulations, algebraic manipulations,
+
+1447
+02:18:42,996 --> 02:18:49,316
+Ok, we can obtain some expressions which are identical to the first rule.
+
+1448
+02:18:49,316 --> 02:18:52,036
+So we consider,
+
+1449
+02:18:52,036 --> 02:18:54,996
+Ok, so in fact we multiply and divide its conjugate.
+
+1450
+02:18:54,996 --> 02:18:58,195
+Conjugate of this expression, square root of x plus 1
+
+1451
+02:18:58,916 --> 02:19:02,516
+and divide by its conjugate square root of x plus 1.
+
+1452
+02:19:02,516 --> 02:19:05,156
+Nothing changed from the identical point of v.
+
+1453
+02:19:05,156 --> 02:19:10,596
+Ok, now this denominator is x minus 1 and denominator is this.
+
+1454
+02:19:10,596 --> 02:19:14,195
+As you see, we can obtain some equivalent form.
+
+1455
+02:19:14,195 --> 02:19:19,556
+1 over square root of x plus 1.
+
+1456
+02:19:19,556 --> 02:19:22,596
+Even if they are different functions,
+
+1457
+02:19:22,596 --> 02:19:27,396
+since their rules are identical to each other,
+
+1458
+02:19:27,396 --> 02:19:33,716
+and their limits at the point 1 are same.
+
+1459
+02:19:33,716 --> 02:19:37,396
+Ok, it is sufficient to use this rule.
+
+1460
+02:19:37,396 --> 02:19:40,996
+But if you substitute directly 1 here,
+
+1461
+02:19:40,996 --> 02:19:44,756
+so just try to substitute directly 1 here,
+
+1462
+02:19:44,756 --> 02:19:49,476
+you are going to obtain 0 over 0 in the terminal form.
+
+1463
+02:19:49,476 --> 02:19:51,796
+So this is indefinite for computer.
+
+1464
+02:19:51,796 --> 02:19:53,716
+Ok, but for computer,
+
+1465
+02:19:54,436 --> 02:19:57,556
+Ok, this is not in the terminal form.
+
+1466
+02:19:57,556 --> 02:19:59,956
+1 over square root of x plus 1.
+
+1467
+02:19:59,956 --> 02:20:03,156
+We can just directly substitute x1 here,
+
+1468
+02:20:03,156 --> 02:20:04,916
+and we can compute its limit.
+
+1469
+02:20:04,916 --> 02:20:06,436
+Ok, as x goes to 1,
+
+1470
+02:20:06,996 --> 02:20:09,716
+its limit, there is no in the terminal form.
+
+1471
+02:20:09,716 --> 02:20:11,716
+The answer is 1 over 2.
+
+1472
+02:20:11,716 --> 02:20:14,275
+Ok, so this means that this expression
+
+1473
+02:20:14,275 --> 02:20:15,716
+approaches 1 over 2.
+
+1474
+02:20:16,356 --> 02:20:16,676
+Ok?
+
+1475
+02:20:21,332 --> 02:20:23,112
+So let me introduce another example.
+
+1476
+02:20:23,971 --> 02:20:25,551
+Okay so do not use
+
+1477
+02:20:25,551 --> 02:20:27,471
+L'hôpital rule. There are some such
+
+1478
+02:20:27,471 --> 02:20:29,452
+questions. There are such
+
+1479
+02:20:29,452 --> 02:20:31,652
+there are such questions that
+
+1480
+02:20:31,652 --> 02:20:33,572
+you cannot apply
+
+1481
+02:20:33,572 --> 02:20:35,551
+L'hôpital rule. Okay L'hôpital rule
+
+1482
+02:20:35,551 --> 02:20:37,432
+cannot be applied. Yani öyle
+
+1483
+02:20:37,432 --> 02:20:39,231
+sorular var kadarki L'hôpital kuralı
+
+1484
+02:20:39,231 --> 02:20:41,452
+hiç bir şeye yaramaz. O yüzden
+
+1485
+02:20:41,452 --> 02:20:43,231
+bu temel kuralları da öğrenin.
+
+1486
+02:20:43,791 --> 02:20:45,252
+Diğer yöntemleri. Ama ben
+
+1487
+02:20:45,252 --> 02:20:47,332
+bütün soruları L'hôpital ile çözerim mantığıyla
+
+1488
+02:20:47,332 --> 02:20:48,272
+hareket ederseniz
+
+1489
+02:20:48,272 --> 02:20:49,971
+işiniz yaş.
+
+1490
+02:20:51,332 --> 02:20:52,832
+Okay now
+
+1491
+02:20:52,832 --> 02:20:55,372
+so how can we solve this limit
+
+1492
+02:20:55,372 --> 02:20:57,471
+problem without using L'hôpital
+
+1493
+02:20:57,471 --> 02:20:57,912
+rule?
+
+1494
+02:20:59,652 --> 02:21:00,492
+So look at that.
+
+1495
+02:21:01,492 --> 02:21:03,471
+Just try to substitute x phi
+
+1496
+02:21:03,471 --> 02:21:05,391
+into this rule. So as you see
+
+1497
+02:21:05,391 --> 02:21:07,592
+we are going to obtain indefinite form
+
+1498
+02:21:07,592 --> 02:21:08,832
+indeterminate form
+
+1499
+02:21:08,832 --> 02:21:11,072
+0 over 0.
+
+1500
+02:21:11,211 --> 02:21:13,352
+Is that correct? 0 bölü 0 geliyor.
+
+1501
+02:21:13,452 --> 02:21:14,051
+Doğru mu arkadaşlar?
+
+1502
+02:21:14,852 --> 02:21:16,211
+25. Evet.
+
+1503
+02:21:17,072 --> 02:21:18,291
+0 bölü 0 bölü 0.
+
+1504
+02:21:18,711 --> 02:21:20,231
+So how can we
+
+1505
+02:21:20,231 --> 02:21:21,992
+how can we obtain
+
+1506
+02:21:21,992 --> 02:21:22,832
+some equivalent?
+
+1507
+02:21:22,832 --> 02:21:40,272
+How can we obtain some equivalent?
+
+1508
+02:21:29,907 --> 02:21:33,487
+Limit problem. We apply conjugate method.
+
+1509
+02:21:35,287 --> 02:21:39,547
+We multiply and divide by its conjugate. Let me use different color.
+
+1510
+02:21:40,587 --> 02:21:44,147
+4 plus conjugate of this nominator, this.
+
+1511
+02:21:46,047 --> 02:21:48,047
+Okay, over.
+
+1512
+02:21:48,547 --> 02:21:50,547
+So,
+
+1513
+02:21:50,547 --> 02:21:52,547
+Let me turn back the formal color.
+
+1514
+02:21:53,547 --> 02:21:56,667
+Okay, x squared minus this.
+
+1515
+02:22:03,507 --> 02:22:06,067
+Ok, so I think the answer exists here.
+
+1516
+02:22:06,067 --> 02:22:14,048
+Ok, now as you see if you apply conjugate method, we multiply and divide by conjugate of the denominator.
+
+1517
+02:22:14,647 --> 02:22:16,667
+So as you see we have this expression.
+
+1518
+02:22:16,807 --> 02:22:19,768
+As you see, now here we do not compute limit.
+
+1519
+02:22:20,147 --> 02:22:25,688
+So we just try to obtain some rule which is equivalent to the former rule.
+
+1520
+02:22:25,967 --> 02:22:28,128
+Ok, we just manipulate on this rule.
+
+1521
+02:22:28,128 --> 02:22:37,067
+If you manipulate on this expression, algebraic expression, finally we are going to obtain this.
+
+1522
+02:22:37,887 --> 02:22:44,567
+So at this position you can directly substitute 5 because there are some factors.
+
+1523
+02:22:45,567 --> 02:22:47,247
+Ok, can be simplified.
+
+1524
+02:22:47,827 --> 02:22:53,147
+Those factors result in indeterminate form at the beginning.
+
+1525
+02:22:53,147 --> 02:23:01,927
+Ok, so by this manipulation we try to eliminate factors resulting in indeterminate form.
+
+1526
+02:23:02,048 --> 02:23:08,487
+Ok, yani bu manipülasyonlarla amacımız belirsizliği veren çarpanları elimine etmek, elemek.
+
+1527
+02:23:08,868 --> 02:23:12,208
+Tamam mı arkadaşlar? Basitleştirerek denk bir ifade bulma.
+
+1528
+02:23:12,747 --> 02:23:14,768
+Böylelikle cevap ne olur arkadaşlar?
+
+1529
+02:23:15,708 --> 02:23:18,448
+Eksi 1 bölü 8 olarak bulunur.
+
+1530
+02:23:18,688 --> 02:23:19,208
+Tamam mı arkadaşlar?
+
+1531
+02:23:19,208 --> 02:23:22,948
+Evet. Herhalde sorusu olan yok.
+
+1532
+02:23:23,048 --> 02:23:24,747
+Sorusu olan varsa sesli bağlansın.
+
+1533
+02:23:24,747 --> 02:23:49,307
+Sorusu olan yok.
+
+1534
+02:23:28,948 --> 02:23:31,108
+Ok, next question.
+
+1535
+02:23:32,308 --> 02:23:41,308
+So suppose that M is the slope of tangent line, the graph of this at the point minus 3 minus 9.
+
+1536
+02:23:41,907 --> 02:23:44,548
+Express this slope as a limit.
+
+1537
+02:23:45,028 --> 02:23:46,587
+Ok, so the answer is here.
+
+1538
+02:23:47,188 --> 02:23:49,708
+So let me write it here.
+
+1539
+02:23:50,347 --> 02:23:56,208
+So let's suppose that this is the graph of function, the graph of function Y F of X.
+
+1540
+02:23:56,208 --> 02:23:58,048
+So this is the tangent line.
+
+1541
+02:23:59,608 --> 02:24:00,948
+Tangent line.
+
+1542
+02:24:02,148 --> 02:24:07,427
+So we can sketch here some triangle here.
+
+1543
+02:24:09,128 --> 02:24:18,208
+Slope of this tangent line, tangent theta, given by delta F over delta X.
+
+1544
+02:24:18,507 --> 02:24:24,907
+In fact, this is the average rate of change of F over the interval X0X.
+
+1545
+02:24:24,907 --> 02:24:27,327
+Ok, something like average success.
+
+1546
+02:24:27,827 --> 02:24:33,868
+Ok, so this is nothing else than F of X minus F of X0 over X minus X0.
+
+1547
+02:24:35,167 --> 02:24:44,427
+So, as long as you approach X0 on these X-axis,
+
+1548
+02:24:44,427 --> 02:24:50,587
+This means that you make this triangle sufficiently smaller.
+
+1549
+02:24:51,087 --> 02:24:54,468
+Ok, yani siz X'leri X0'a yaklaştırmanız demek,
+
+1550
+02:24:55,667 --> 02:25:00,427
+o gördüğünüz üçgeni sonsuz küçüklükte bir üçgene dönüştürüyorsunuz.
+
+1551
+02:25:01,608 --> 02:25:02,768
+Burada anlaşma embiye var mı?
+
+1552
+02:25:04,768 --> 02:25:06,747
+Var mı burada anlaşma embiye gençler?
+
+1553
+02:25:06,747 --> 02:25:22,667
+Var mı burada anlaşma embiye var mı?
+
+1554
+02:25:11,476 --> 02:25:14,676
+Ropital kullanılmıyor. Ben şu an size türev filan öğretmedim.
+
+1555
+02:25:14,935 --> 02:25:15,576
+Tamam mı arkadaşlar?
+
+1556
+02:25:16,355 --> 02:25:18,435
+Evet. Siz bana odaklanın.
+
+1557
+02:25:18,476 --> 02:25:19,496
+Dediklerime odaklanın.
+
+1558
+02:25:21,336 --> 02:25:22,275
+Ne dedim?
+
+1559
+02:25:23,416 --> 02:25:23,855
+Bakın.
+
+1560
+02:25:24,636 --> 02:25:25,976
+Normalde orada ne yaptım?
+
+1561
+02:25:26,036 --> 02:25:27,916
+Bir fx-fx0 farkı.
+
+1562
+02:25:27,976 --> 02:25:30,496
+Bir de x-x0 farkı oluşturdum.
+
+1563
+02:25:31,115 --> 02:25:32,115
+Orada bir üçgen oluştu.
+
+1564
+02:25:33,496 --> 02:25:34,115
+Ne yaptık?
+
+1565
+02:25:34,516 --> 02:25:36,576
+O üçgenin zaten eğimi
+
+1566
+02:25:36,576 --> 02:25:37,556
+Doğru mu arkadaşlar?
+
+1567
+02:25:37,556 --> 02:25:39,816
+Oradaki teta açısının tanjantı
+
+1568
+02:25:39,816 --> 02:25:41,876
+Bana o tet doğrunun
+
+1569
+02:25:41,876 --> 02:25:43,156
+Eğimini verir.
+
+1570
+02:25:44,195 --> 02:25:45,516
+Y eşittir fx bu.
+
+1571
+02:25:47,456 --> 02:25:47,916
+O zaman
+
+1572
+02:25:47,916 --> 02:25:50,275
+Tanjantı teta fx-fx0
+
+1573
+02:25:50,275 --> 02:25:51,916
+Bölü x-x0. Ortalama
+
+1574
+02:25:51,916 --> 02:25:53,716
+Başarı gibi. Ortalama hız gibi.
+
+1575
+02:25:55,115 --> 02:25:55,756
+Bunu diyor ki
+
+1576
+02:25:55,756 --> 02:25:57,476
+O tet doğrunun eğimini
+
+1577
+02:25:57,476 --> 02:25:59,836
+Bir limit olarak ifade et diyor.
+
+1578
+02:26:00,716 --> 02:26:01,695
+Şimdi bakın arkadaşlar
+
+1579
+02:26:01,695 --> 02:26:04,156
+Ne yaparım ben o zaman?
+
+1580
+02:26:04,836 --> 02:26:05,896
+X'leri x0'a
+
+1581
+02:26:05,896 --> 02:26:07,316
+Yeterince yaklaştırırsam
+
+1582
+02:26:07,316 --> 02:26:10,096
+X'leri x0'a yeterince yaklaştırırsam
+
+1583
+02:26:10,096 --> 02:26:10,896
+Şurada
+
+1584
+02:26:10,896 --> 02:26:15,115
+Üçgenler küçülecek fark ettiniz mi?
+
+1585
+02:26:16,916 --> 02:26:19,456
+As long as you approach x0
+
+1586
+02:26:19,456 --> 02:26:21,096
+From right or left
+
+1587
+02:26:21,096 --> 02:26:23,076
+So this triangle
+
+1588
+02:26:23,076 --> 02:26:24,435
+Is getting
+
+1589
+02:26:24,435 --> 02:26:25,796
+Smaller.
+
+1590
+02:26:26,236 --> 02:26:26,536
+Okay?
+
+1591
+02:26:27,376 --> 02:26:28,376
+Is getting smaller.
+
+1592
+02:26:28,516 --> 02:26:30,996
+Something like
+
+1593
+02:26:30,996 --> 02:26:34,355
+As
+
+1594
+02:26:34,355 --> 02:26:37,115
+X goes to x0
+
+1595
+02:26:37,115 --> 02:26:38,836
+Okay?
+
+1596
+02:26:40,036 --> 02:26:40,296
+So
+
+1597
+02:26:40,296 --> 02:26:42,296
+This triangle
+
+1598
+02:26:42,296 --> 02:26:43,355
+The triangle
+
+1599
+02:26:43,355 --> 02:26:58,236
+Triangle
+
+1600
+02:26:53,268 --> 02:26:59,847
+Looks like a dot, a point.
+
+1601
+02:27:01,227 --> 02:27:02,288
+Something like that.
+
+1602
+02:27:04,368 --> 02:27:05,147
+Some point.
+
+1603
+02:27:07,868 --> 02:27:08,468
+Point.
+
+1604
+02:27:10,827 --> 02:27:12,268
+Şimdi sorum şu size arkadaşlar.
+
+1605
+02:27:13,108 --> 02:27:14,268
+Noktanın tanımı var mı?
+
+1606
+02:27:15,948 --> 02:27:18,468
+What is the mathematical definition of point?
+
+1607
+02:27:19,747 --> 02:27:21,028
+Noktanın tanımı var mı?
+
+1608
+02:27:21,028 --> 02:27:23,427
+Is there any mathematical definition for point?
+
+1609
+02:27:28,819 --> 02:27:31,379
+Evet, üçgen'den kastım bu zaten.
+
+1610
+02:27:41,876 --> 02:27:44,876
+Yani gittikçe ne olacak arkadaşlar? Bu şekilde
+
+1611
+02:27:44,876 --> 02:27:49,536
+küçülecek arkadaşlar. Dikkat et.
+
+1612
+02:27:52,335 --> 02:27:56,835
+Bir dakika. Şöyle ya. Yanlış oldu. Şekli yanlış çizdim. Bir dakika.
+
+1613
+02:27:59,636 --> 02:28:02,755
+Şekli yanlış çizdim. Orayı düzeltin.
+
+1614
+02:28:07,156 --> 02:28:08,256
+Şekil şöyle olacak.
+
+1615
+02:28:13,108 --> 02:28:13,427
+ok.
+
+1616
+02:28:28,948 --> 02:28:29,528
+çıkayım bu.
+
+1617
+02:28:37,075 --> 02:28:37,795
+şurası
+
+1618
+02:28:37,795 --> 02:28:40,695
+fx
+
+1619
+02:28:40,695 --> 02:28:42,435
+eksi
+
+1620
+02:28:42,435 --> 02:28:44,095
+fx sıfır
+
+1621
+02:28:44,095 --> 02:28:45,355
+burası
+
+1622
+02:28:45,355 --> 02:28:48,195
+x eksi x sıfır
+
+1623
+02:28:48,195 --> 02:28:51,295
+evet, etken bu arkadaşlar. Yanlış çizmeyelim.
+
+1624
+02:28:52,015 --> 02:28:53,215
+Grafikle şey karıştı.
+
+1625
+02:28:54,435 --> 02:28:55,715
+Şöyle olacak. Şurası
+
+1626
+02:28:55,715 --> 02:28:57,715
+tamam
+
+1627
+02:29:01,747 --> 02:29:02,868
+Şuradaki üçgen
+
+1628
+02:29:02,868 --> 02:29:09,427
+nokta gibi olacak arkadaşlar. Şuradaki üçgen var ya
+
+1629
+02:29:09,427 --> 02:29:10,407
+şu
+
+1630
+02:29:16,788 --> 02:29:18,788
+triangle. Okey?
+
+1631
+02:29:27,507 --> 02:29:31,688
+Yani yeterince küçük bir üçgen olacak arkadaşlar. O zaman burada ne olur?
+
+1632
+02:29:32,067 --> 02:29:54,147
+So in this case, by this limit, as x goes to x0, the slope, look at that, so we have this, the slope of this triangle is nothing else than, okay, the slope of this tangent line, nothing else than this limit.
+
+1633
+02:29:54,147 --> 02:29:57,147
+Instanet and rate of change of R. Okay?
+
+1634
+02:29:58,028 --> 02:29:58,327
+Please.
+
+1635
+02:30:03,283 --> 02:30:30,904
+Böyle arkadaşlar. İlk başta şöyle olacaktı. Şöyle. Şurada bir tane üçgen var. Yani böyle düşünebilirsiniz. Şu büyük üçgeni de düşünebilirsiniz. Hiç önemli değil. Fark etmiyorum. Şöyle büyük üçgeni düşünebilirsiniz. Bu daha doğru olur. Bu arkadaşlar. Tamam mı? Evet. Var mı anlaşma en biya?
+
+1636
+02:30:40,404 --> 02:30:42,543
+Güzel. Anlaşmayan bir yer yoksa bu şekilde
+
+1637
+02:30:42,543 --> 02:30:43,824
+ifade edebiliyoruz arkadaşlar.
+
+1638
+02:30:46,824 --> 02:30:48,804
+Şimdi limit kurallarını
+
+1639
+02:30:48,804 --> 02:30:50,444
+da verelim. Fazla uzatmayalım.
+
+1640
+02:30:50,543 --> 02:30:51,084
+Bitireceğim.
+
+1641
+02:30:51,744 --> 02:30:53,904
+Let me talk about limit laws.
+
+1642
+02:30:54,584 --> 02:30:56,384
+Given some two functions
+
+1643
+02:30:56,384 --> 02:30:57,944
+f of x, g of x.
+
+1644
+02:30:58,764 --> 02:31:00,444
+They have limits
+
+1645
+02:31:00,444 --> 02:31:02,703
+at the point
+
+1646
+02:31:02,703 --> 02:31:03,543
+a.
+
+1647
+02:31:05,064 --> 02:31:06,504
+So in that case we can
+
+1648
+02:31:06,504 --> 02:31:08,504
+distribute limit problem, limit
+
+1649
+02:31:08,504 --> 02:31:10,004
+process to addition.
+
+1650
+02:31:10,404 --> 02:31:12,224
+Okay, attention here.
+
+1651
+02:31:12,623 --> 02:31:14,404
+So we can distribute limit process
+
+1652
+02:31:14,404 --> 02:31:15,564
+to difference
+
+1653
+02:31:15,564 --> 02:31:18,164
+by this rule.
+
+1654
+02:31:19,064 --> 02:31:20,404
+Constant multiple rule.
+
+1655
+02:31:21,304 --> 02:31:22,564
+So c is a constant, meaning
+
+1656
+02:31:22,564 --> 02:31:24,863
+that c is independent from limit variable.
+
+1657
+02:31:25,004 --> 02:31:26,064
+Limit variable here
+
+1658
+02:31:26,064 --> 02:31:28,584
+is x. Okay, we can take
+
+1659
+02:31:28,584 --> 02:31:29,304
+out this c.
+
+1660
+02:31:31,224 --> 02:31:32,863
+Now product rule.
+
+1661
+02:31:32,863 --> 02:31:34,644
+We can distribute this limit
+
+1662
+02:31:34,644 --> 02:31:36,084
+to each factor
+
+1663
+02:31:36,084 --> 02:31:36,963
+here.
+
+1664
+02:31:36,963 --> 02:31:41,123
+We can distribute limit
+
+1665
+02:31:41,123 --> 02:31:43,224
+to each factor here.
+
+1666
+02:31:43,824 --> 02:31:45,623
+We can do this distribution
+
+1667
+02:31:45,623 --> 02:31:47,184
+under the condition that
+
+1668
+02:31:47,184 --> 02:31:49,564
+each factor, each term
+
+1669
+02:31:49,564 --> 02:31:51,264
+has limit.
+
+1670
+02:31:51,484 --> 02:31:52,664
+Otherwise we cannot
+
+1671
+02:31:52,664 --> 02:31:53,944
+distribute
+
+1672
+02:31:53,944 --> 02:31:55,944
+this limit process.
+
+1673
+02:31:56,184 --> 02:31:56,363
+Okay.
+
+1674
+02:31:57,084 --> 02:31:58,024
+Power rule.
+
+1675
+02:31:58,783 --> 02:32:01,184
+So by using the product rule
+
+1676
+02:32:01,184 --> 02:32:03,264
+in fact we can obtain power rule.
+
+1677
+02:32:03,264 --> 02:32:08,304
+fractional power rule.
+
+1678
+02:32:09,024 --> 02:32:09,984
+So in this case
+
+1679
+02:32:09,984 --> 02:32:11,224
+we need to put this condition
+
+1680
+02:32:11,224 --> 02:32:12,004
+otherwise
+
+1681
+02:32:12,004 --> 02:32:13,484
+this means that we start
+
+1682
+02:32:13,484 --> 02:32:14,504
+on the complex number.
+
+1683
+02:32:14,924 --> 02:32:15,064
+Okay.
+
+1684
+02:32:15,484 --> 02:32:16,084
+Now
+
+1685
+02:32:16,084 --> 02:32:17,584
+so we can do this.
+
+1686
+02:32:17,924 --> 02:32:18,304
+We can
+
+1687
+02:32:18,304 --> 02:32:20,203
+distribute
+
+1688
+02:32:20,203 --> 02:32:21,264
+this limit process
+
+1689
+02:32:21,264 --> 02:32:22,363
+to this fraction
+
+1690
+02:32:22,363 --> 02:32:23,684
+power.
+
+1691
+02:32:25,264 --> 02:32:26,144
+Okay.
+
+1692
+02:32:26,144 --> 02:32:30,804
+Now those are basic questions.
+
+1693
+02:32:31,324 --> 02:32:32,043
+So as you see
+
+1694
+02:32:32,043 --> 02:32:33,184
+f has limit
+
+1695
+02:32:33,184 --> 02:32:34,224
+at the point 2
+
+1696
+02:32:34,224 --> 02:32:35,824
+g has limit
+
+1697
+02:32:35,824 --> 02:32:37,144
+at the point 2
+
+1698
+02:32:37,144 --> 02:32:38,324
+the as for is 5
+
+1699
+02:32:38,324 --> 02:32:39,184
+the as for is 4
+
+1700
+02:32:39,184 --> 02:32:41,123
+so h has limit
+
+1701
+02:32:41,123 --> 02:32:42,404
+at the point 2
+
+1702
+02:32:42,404 --> 02:32:43,504
+the as for is 8
+
+1703
+02:32:43,504 --> 02:32:45,384
+so by using
+
+1704
+02:32:45,384 --> 02:32:47,244
+okay
+
+1705
+02:32:47,244 --> 02:32:48,944
+rules of limit
+
+1706
+02:32:48,944 --> 02:32:49,924
+we can compute
+
+1707
+02:32:49,924 --> 02:32:50,584
+those limits
+
+1708
+02:32:50,584 --> 02:32:52,344
+similarly
+
+1709
+02:32:52,344 --> 02:32:54,724
+item a
+
+1710
+02:32:54,724 --> 02:32:55,424
+we distribute
+
+1711
+02:32:55,424 --> 02:32:55,984
+limit
+
+1712
+02:32:55,984 --> 02:32:57,484
+into this
+
+1713
+02:32:57,484 --> 02:32:58,463
+part
+
+1714
+02:32:58,463 --> 02:32:59,564
+can you see
+
+1715
+02:32:59,564 --> 02:33:00,304
+that as for is
+
+1716
+02:33:00,304 --> 02:33:01,504
+minus 1 over 8
+
+1717
+02:33:01,504 --> 02:33:02,644
+okay
+
+1718
+02:33:02,644 --> 02:33:03,884
+possibly your exam
+
+1719
+02:33:03,884 --> 02:33:04,604
+will be multiple
+
+1720
+02:33:04,604 --> 02:33:05,404
+choice 1
+
+1721
+02:33:05,404 --> 02:33:07,024
+in my opinion
+
+1722
+02:33:07,024 --> 02:33:08,043
+test
+
+1723
+02:33:08,043 --> 02:33:10,203
+is gonna be
+
+1724
+02:33:10,203 --> 02:33:10,623
+possibly
+
+1725
+02:33:10,623 --> 02:33:12,224
+multiple choice 1
+
+1726
+02:33:12,224 --> 02:33:12,963
+test exam
+
+1727
+02:33:12,963 --> 02:33:13,404
+okay
+
+1728
+02:33:13,404 --> 02:33:14,264
+you may see such
+
+1729
+02:33:14,264 --> 02:33:15,543
+question in the test exam
+
+1730
+02:33:15,543 --> 02:33:16,324
+okay
+
+1731
+02:33:16,324 --> 02:33:18,043
+but this is
+
+1732
+02:33:18,043 --> 02:33:18,744
+simple one
+
+1733
+02:33:18,744 --> 02:33:20,363
+okay
+
+1734
+02:33:20,363 --> 02:33:20,844
+now
+
+1735
+02:33:20,844 --> 02:33:22,164
+so this is the answer
+
+1736
+02:33:22,164 --> 02:33:23,924
+so we distribute
+
+1737
+02:33:23,924 --> 02:33:24,384
+limit
+
+1738
+02:33:24,384 --> 02:33:25,424
+into additional
+
+1739
+02:33:25,424 --> 02:33:26,104
+product
+
+1740
+02:33:26,104 --> 02:33:27,264
+okay
+
+1741
+02:33:27,264 --> 02:33:28,824
+the answer is this
+
+1742
+02:33:28,824 --> 02:33:29,824
+so this is simple
+
+1743
+02:33:29,824 --> 02:33:30,224
+one
+
+1744
+02:33:30,224 --> 02:33:31,623
+according to power
+
+1745
+02:33:31,623 --> 02:33:32,043
+rule
+
+1746
+02:33:32,043 --> 02:33:33,363
+so we
+
+1747
+02:33:33,363 --> 02:33:34,123
+we distribute
+
+1748
+02:33:34,123 --> 02:33:35,324
+this limit process
+
+1749
+02:33:35,324 --> 02:33:36,184
+to product
+
+1750
+02:33:36,184 --> 02:33:37,043
+this factor
+
+1751
+02:33:37,043 --> 02:33:38,543
+okay
+
+1752
+02:33:38,543 --> 02:33:39,724
+the answer is this
+
+1753
+02:33:39,724 --> 02:33:41,924
+okay
+
+1754
+02:33:41,924 --> 02:33:45,684
+any question
+
+1755
+02:33:45,684 --> 02:33:46,304
+about this
+
+1756
+02:33:46,304 --> 02:33:47,024
+simple equation
+
+1757
+02:33:47,024 --> 02:33:48,724
+okay
+
+1758
+02:33:48,724 --> 02:33:50,224
+now
+
+1759
+02:33:50,224 --> 02:33:50,944
+let me
+
+1760
+02:33:50,944 --> 02:33:54,684
+oh sorry
+
+1761
+02:33:54,684 --> 02:33:59,623
+let me ask you
+
+1762
+02:33:59,623 --> 02:34:00,283
+some
+
+1763
+02:34:00,283 --> 02:34:01,463
+kind of
+
+1764
+02:34:01,463 --> 02:34:02,024
+question
+
+1765
+02:34:02,024 --> 02:34:03,184
+which may
+
+1766
+02:34:03,184 --> 02:34:03,724
+exist
+
+1767
+02:34:03,724 --> 02:34:04,184
+in the
+
+1768
+02:34:04,184 --> 02:34:04,564
+classical
+
+1769
+02:34:04,564 --> 02:34:05,363
+type exam
+
+1770
+02:34:05,363 --> 02:34:06,844
+so first of all
+
+1771
+02:34:06,844 --> 02:34:07,324
+let me
+
+1772
+02:34:07,324 --> 02:34:09,304
+let me talk about
+
+1773
+02:34:09,304 --> 02:34:09,924
+some logical
+
+1774
+02:34:09,924 --> 02:34:10,524
+statements
+
+1775
+02:34:10,524 --> 02:34:11,283
+focus on
+
+1776
+02:34:11,283 --> 02:34:11,484
+the
+
+1777
+02:34:11,484 --> 02:34:12,283
+focus on
+
+1778
+02:34:12,283 --> 02:34:12,984
+the approach
+
+1779
+02:34:12,984 --> 02:34:13,604
+use it
+
+1780
+02:34:13,604 --> 02:34:15,344
+in this
+
+1781
+02:34:15,344 --> 02:34:15,764
+question
+
+1782
+02:34:15,764 --> 02:34:20,824
+okay
+
+1783
+02:34:29,108 --> 02:34:40,608
+Klasik sınavda, test sınavda doğrudan böyle bir soru gelmez ama burada kullandığım bir mantığı hoca tutar, test sınavında kullanılması gerekecek şekilde sorabilir.
+
+1784
+02:34:41,888 --> 02:34:43,308
+Buradaki mantığa odaklanalım.
+
+1785
+02:34:43,708 --> 02:34:43,927
+Ok.
+
+1786
+02:34:46,468 --> 02:34:47,528
+Now let me further.
+
+1787
+02:34:48,067 --> 02:34:48,368
+Ok.
+
+1788
+02:34:48,608 --> 02:34:49,048
+Logic.
+
+1789
+02:34:49,427 --> 02:34:50,888
+So let me talk about some logic.
+
+1790
+02:34:52,788 --> 02:34:53,167
+Logic.
+
+1791
+02:34:54,247 --> 02:34:55,507
+So everyone knows this.
+
+1792
+02:34:57,507 --> 02:35:03,907
+Negation of truth.
+
+1793
+02:35:03,907 --> 02:35:06,087
+False.
+
+1794
+02:35:10,515 --> 02:35:40,456
+negatif, f'
+
+1795
+02:35:16,051 --> 02:35:16,551
+true.
+
+1796
+02:35:19,551 --> 02:35:20,891
+Okay, we know this.
+
+1797
+02:35:21,971 --> 02:35:23,611
+So, P is logical statement.
+
+1798
+02:35:26,111 --> 02:35:28,231
+Let's say this is logical statement.
+
+1799
+02:35:29,371 --> 02:35:30,391
+I think everyone
+
+1800
+02:35:30,391 --> 02:35:34,211
+took logical topic
+
+1801
+02:35:34,211 --> 02:35:36,011
+in high school.
+
+1802
+02:35:36,011 --> 02:35:39,611
+Lisede arkadaşlar, mantık gördünüz değil mi? Az bir şey.
+
+1803
+02:35:40,271 --> 02:35:41,152
+Logical statement.
+
+1804
+02:35:47,796 --> 02:36:17,736
+If you apply negation operation double times, you are going to obtain logical statements. Okay? If you apply logical statement, if you apply negation, this prime means negation operation. Okay? Now double times, double times negation operation results.
+
+1805
+02:36:17,736 --> 02:36:45,736
+in this identity function. Okay? Now, so look at this. Suppose that f has non-zero limit value at the point c and g has zero limit at the point c. So this is hypothesis given in the equation. Okay, those are informations given in the equation. Our goal is to obtain
+
+1806
+02:36:45,736 --> 02:36:57,736
+and the limit. This limit. This limit does not exist. Let's say this is p statement. Logical statements. Logical statements.
+
+1807
+02:36:57,736 --> 02:36:59,736
+Logical statements.
+
+1808
+02:37:02,131 --> 02:37:16,131
+Okay. Now our goal is to show that this logical statement is true. Goal is to show that so we have...
+
+1809
+02:37:19,092 --> 02:37:22,092
+bu informasyon,
+
+1810
+02:37:22,092 --> 02:37:24,092
+hypothesis 1,
+
+1811
+02:37:24,092 --> 02:37:26,092
+hypothesis 2.
+
+1812
+02:37:26,092 --> 02:37:29,092
+We have hypothesis 1,
+
+1813
+02:37:29,092 --> 02:37:31,092
+hypothesis 2.
+
+1814
+02:37:31,092 --> 02:37:33,092
+The goal
+
+1815
+02:37:33,092 --> 02:37:39,092
+is to show that
+
+1816
+02:37:43,123 --> 02:37:44,123
+P is true.
+
+1817
+02:37:46,843 --> 02:37:47,283
+Okay.
+
+1818
+02:37:51,316 --> 02:37:54,376
+Evet. Nasıl gösteririz?
+
+1819
+02:37:57,216 --> 02:38:02,576
+Biz ifadenin doğru olduğunu nasıl gösteririz?
+
+1820
+02:38:04,636 --> 02:38:06,996
+Birçok yöntem var mankıtsal olarak.
+
+1821
+02:38:06,996 --> 02:38:13,976
+Önce o ifadenin değili, aksi yani aksinin doğru olduğunu kabul ederim.
+
+1822
+02:38:14,775 --> 02:38:15,556
+Anlatabiliyor muyum?
+
+1823
+02:38:16,275 --> 02:38:20,996
+Aksinin doğru olduğunu kabul ettiğinde eğer sizin ifadeniz doğruysa,
+
+1824
+02:38:21,556 --> 02:38:24,736
+aksini doğru kabul ettiğinizden dolayı bir çeliş gel diyeceksiniz.
+
+1825
+02:38:25,556 --> 02:38:30,476
+O zaman sizin kabulünüz, çeliş gel de derseniz sizin kabulünüz yanlıştır.
+
+1826
+02:38:31,156 --> 02:38:35,016
+Kabulümüzün değili, o zaman doğal olarak şuradaki mantığa göre ne olacaktır?
+
+1827
+02:38:35,016 --> 02:38:36,516
+Doğru olacaktır.
+
+1828
+02:38:37,236 --> 02:38:38,736
+Contradition method.
+
+1829
+02:38:39,275 --> 02:38:43,396
+Let's prove that this is true by the contradiction method.
+
+1830
+02:38:43,396 --> 02:38:52,516
+Contradition method says that, assume that negation of this P is true.
+
+1831
+02:38:53,136 --> 02:39:20,556
+Contradition method.
+
+1832
+02:38:58,868 --> 02:39:10,108
+x kare artı 2x, f'
+
+1833
+02:39:04,500 --> 02:39:18,620
+method. Assume that, assume that, p negation, is true.
+
+1834
+02:39:24,468 --> 02:39:26,268
+Tamam mı? O zaman ne olur arkadaşlar?
+
+1835
+02:39:28,148 --> 02:39:34,468
+If you have some contradiction...
+
+1836
+02:39:40,115 --> 02:39:42,316
+then the assumption
+
+1837
+02:39:46,164 --> 02:40:16,144
+x kare artı 2x, f'
+
+1838
+02:39:51,763 --> 02:39:52,963
+is false.
+
+1839
+02:39:54,243 --> 02:39:58,384
+If assumption is false, negation of your assumption is true.
+
+1840
+02:39:58,884 --> 02:39:59,063
+Okay?
+
+1841
+02:40:00,243 --> 02:40:03,643
+Eğer sizin kabulünüz yanlış ise, şuradaki mantığa göre,
+
+1842
+02:40:04,384 --> 02:40:05,463
+by this star
+
+1843
+02:40:05,463 --> 02:40:09,523
+property, logical property,
+
+1844
+02:40:10,523 --> 02:40:12,403
+the negation of your assumption is false.
+
+1845
+02:40:12,503 --> 02:40:15,203
+The negation of your assumptions, according to this rule,
+
+1846
+02:40:15,203 --> 02:40:18,203
+is nothing else than your statement.
+
+1847
+02:40:19,343 --> 02:40:19,603
+Okay?
+
+1848
+02:40:24,180 --> 02:40:25,180
+yani
+
+1849
+02:40:29,843 --> 02:40:34,884
+Yani bunu dememe gerek yok.
+
+1850
+02:40:35,023 --> 02:40:36,543
+Burada anlaşmayayım bir yer var mı arkadaşlar?
+
+1851
+02:40:37,523 --> 02:40:38,683
+Burayı anladınız. Doğru mu?
+
+1852
+02:40:39,283 --> 02:40:40,163
+Yöntemi anladınız.
+
+1853
+02:40:41,543 --> 02:40:42,183
+Şimdi bakın.
+
+1854
+02:40:42,803 --> 02:40:44,563
+By the contradiction method
+
+1855
+02:40:44,563 --> 02:40:47,023
+we assume that
+
+1856
+02:40:47,023 --> 02:40:49,903
+negation of
+
+1857
+02:40:49,903 --> 02:40:51,703
+P is true.
+
+1858
+02:40:52,563 --> 02:40:52,703
+Okay.
+
+1859
+02:40:52,703 --> 02:40:55,423
+So negation of this
+
+1860
+02:40:55,423 --> 02:40:58,823
+negation of this
+
+1861
+02:40:58,823 --> 02:41:00,643
+statement this limit exists.
+
+1862
+02:41:01,843 --> 02:41:02,503
+As you see
+
+1863
+02:41:02,503 --> 02:41:04,983
+assume that negation of
+
+1864
+02:41:04,983 --> 02:41:06,703
+P
+
+1865
+02:41:06,703 --> 02:41:08,163
+is true.
+
+1866
+02:41:08,503 --> 02:41:10,563
+Meaning that limit as x goes to c
+
+1867
+02:41:10,563 --> 02:41:12,043
+f of x over g of x
+
+1868
+02:41:12,043 --> 02:41:12,823
+exists.
+
+1869
+02:41:14,123 --> 02:41:16,483
+In this case we have some unique number
+
+1870
+02:41:16,483 --> 02:41:18,103
+finite number.
+
+1871
+02:41:18,683 --> 02:41:20,663
+Now by using the product
+
+1872
+02:41:20,663 --> 02:41:21,983
+rules by using
+
+1873
+02:41:21,983 --> 02:41:23,963
+the product rule for limits
+
+1874
+02:41:23,963 --> 02:41:26,143
+so we can write this
+
+1875
+02:41:26,143 --> 02:41:28,183
+limit as x goes to c f of x
+
+1876
+02:41:28,183 --> 02:41:29,183
+we can write this
+
+1877
+02:41:29,183 --> 02:41:30,683
+nothing change as you see.
+
+1878
+02:41:31,363 --> 02:41:34,023
+So by using the product rule for limits
+
+1879
+02:41:34,023 --> 02:41:35,603
+so we know that
+
+1880
+02:41:35,603 --> 02:41:36,983
+so this is
+
+1881
+02:41:36,983 --> 02:41:38,283
+this is some l
+
+1882
+02:41:38,283 --> 02:41:39,884
+this exists we know that
+
+1883
+02:41:39,884 --> 02:41:40,723
+so we know that
+
+1884
+02:41:40,723 --> 02:41:41,963
+hypothesis 2
+
+1885
+02:41:41,963 --> 02:41:44,123
+okay so this is 0
+
+1886
+02:41:44,123 --> 02:41:46,123
+so n-spread 0
+
+1887
+02:41:46,123 --> 02:41:49,123
+but according to hypothesis 1
+
+1888
+02:41:49,123 --> 02:41:52,683
+f has non-zero limit
+
+1889
+02:41:52,683 --> 02:41:53,183
+but
+
+1890
+02:41:53,183 --> 02:41:54,103
+so
+
+1891
+02:41:54,103 --> 02:41:56,123
+you see we have 0 limit
+
+1892
+02:41:56,123 --> 02:41:57,743
+so this is the contradiction
+
+1893
+02:41:57,743 --> 02:41:59,583
+to information given in the
+
+1894
+02:41:59,583 --> 02:41:59,963
+equation.
+
+1895
+02:42:01,303 --> 02:42:02,303
+That's why
+
+1896
+02:42:02,303 --> 02:42:03,563
+your assumption
+
+1897
+02:42:03,563 --> 02:42:04,643
+is false.
+
+1898
+02:42:05,683 --> 02:42:06,003
+Okay.
+
+1899
+02:42:06,103 --> 02:42:07,523
+Your assumption is false.
+
+1900
+02:42:08,103 --> 02:42:08,643
+That's why
+
+1901
+02:42:08,643 --> 02:42:10,343
+your goal
+
+1902
+02:42:10,343 --> 02:42:11,123
+is true.
+
+1903
+02:42:11,543 --> 02:42:11,903
+Okay.
+
+1904
+02:42:11,983 --> 02:42:12,623
+According to
+
+1905
+02:42:12,623 --> 02:42:13,643
+contradiction method.
+
+1906
+02:42:13,643 --> 02:42:15,183
+okay.
+
+1907
+02:42:17,603 --> 02:42:18,363
+Is there any question?
+
+1908
+02:42:19,903 --> 02:42:21,083
+Soru soran var mı?
+
+1909
+02:42:22,303 --> 02:42:23,343
+Hocam ben bu yöntemi
+
+1910
+02:42:23,343 --> 02:42:24,263
+anlamadım dediğimiz yer
+
+1911
+02:42:24,263 --> 02:42:24,683
+var mı?
+
+1912
+02:42:26,884 --> 02:42:27,683
+Anlamam değilseniz
+
+1913
+02:42:27,683 --> 02:42:28,583
+metafor yapacağım.
+
+1914
+02:42:30,483 --> 02:42:41,443
+Evet.
+
+1915
+02:42:38,260 --> 02:42:39,760
+sorusu olan yok herhalde.
+
+1916
+02:42:43,860 --> 02:43:13,620
+Arkadaşlar, şöyle anlatayım size. Önünüzde bir sürü ne var? Tünel var. Metafor yapayım hadi size. Ne yaparsınız? Tünellerden birinin sizi dışarıya çıkartacağını ya da karşı tarafa geçireceğini kabul edersiniz. Girersiniz o tünere, yürümeye başlarsınız. Daha sonra önünüze kocaman bir kaya çıkar. Tünelin ucu yok, kapalı yani. O zaman nasıl bir sonuç çıkar?
+
+1917
+02:43:13,860 --> 02:43:16,600
+kabulünüz yanlış. Anlatabiliyor muyum?
+
+1918
+02:43:17,180 --> 02:43:31,760
+Kabulümüz neydi? Bu tünelin sizi karşı tarafa geçireceğiydi. Demek ki kabulümüz yanlışmış. O zaman kabulümüzün değili doğru. Yani o tünelin dışındaki diğer tünellerden biri bizi dışı sonuca ulaştıracak. Tamam mı arkadaşlar?
+
+1919
+02:43:33,700 --> 02:43:36,480
+Var mı anlaşmaya bir yer? Anladınız mı metaforu?
+
+1920
+02:43:45,203 --> 02:43:50,904
+Ok, let me use some metaphor. Ok, so let me use some metaphors here.
+
+1921
+02:43:53,603 --> 02:43:56,904
+So let me share whiteboard.
+
+1922
+02:43:58,703 --> 02:44:00,703
+So let me clear all.
+
+1923
+02:44:01,203 --> 02:44:13,703
+So there are many tunnels. Tunnel 1, ok, Tunnel 2, Tunnel 3, and Tunnel F. Ok, so...
+
+1924
+02:44:18,515 --> 02:44:19,056
+ok.
+
+1925
+02:44:24,531 --> 02:44:30,031
+Tunnel 1, Tunnel 2, Tunnel 3, Tunnel N.
+
+1926
+02:44:30,031 --> 02:44:33,031
+Tunnel N. Tunnel N tunnels in front of you.
+
+1927
+02:44:33,031 --> 02:44:35,031
+Okay, so one of them.
+
+1928
+02:44:35,031 --> 02:44:36,531
+Okay.
+
+1929
+02:44:45,780 --> 02:44:49,060
+P, statement.
+
+1930
+02:44:51,060 --> 02:44:53,579
+So this is your assumption.
+
+1931
+02:44:53,579 --> 02:44:57,340
+Assumption.
+
+1932
+02:44:58,860 --> 02:45:02,620
+The tunnel.
+
+1933
+02:45:06,932 --> 02:45:08,532
+Tunnel böyle mi yazıyor arkadaşlar?
+
+1934
+02:45:09,092 --> 02:45:12,032
+The tunnel is open.
+
+1935
+02:45:14,252 --> 02:45:16,332
+Okay, so this is your assumption.
+
+1936
+02:45:18,672 --> 02:45:20,872
+You enter this tunnel one and
+
+1937
+02:45:20,872 --> 02:45:25,872
+you walk on this tunnel.
+
+1938
+02:45:26,372 --> 02:45:27,672
+So finally you see that
+
+1939
+02:45:27,672 --> 02:45:30,332
+there is some block here.
+
+1940
+02:45:31,192 --> 02:45:33,891
+Okay, so you see that there is some block here.
+
+1941
+02:45:33,891 --> 02:45:35,212
+You cannot go on anymore.
+
+1942
+02:45:35,212 --> 02:45:36,811
+So this means that
+
+1943
+02:45:36,811 --> 02:45:38,672
+your assumption is
+
+1944
+02:45:38,672 --> 02:45:41,672
+your assumption is false.
+
+1945
+02:45:42,512 --> 02:45:44,391
+Okay, there is some contradiction.
+
+1946
+02:45:44,891 --> 02:45:46,872
+Okay, so this means that
+
+1947
+02:45:46,872 --> 02:45:49,532
+negation of
+
+1948
+02:45:49,532 --> 02:45:54,132
+negation of your assumption is true.
+
+1949
+02:45:55,412 --> 02:45:57,432
+Assumption. Tunnel is open.
+
+1950
+02:46:00,652 --> 02:46:01,452
+Assumption.
+
+1951
+02:46:01,672 --> 02:46:03,012
+Negation of assumption.
+
+1952
+02:46:08,180 --> 02:46:09,059
+one of
+
+1953
+02:46:09,059 --> 02:46:13,360
+two, three
+
+1954
+02:46:13,360 --> 02:46:15,739
+and
+
+1955
+02:46:15,739 --> 02:46:17,399
+tunnels
+
+1956
+02:46:17,399 --> 02:46:19,540
+is open.
+
+1957
+02:46:21,120 --> 02:46:21,920
+Okay?
+
+1958
+02:46:23,239 --> 02:46:25,159
+So you got this result.
+
+1959
+02:46:26,180 --> 02:46:28,000
+Yani arkadaşlar sizin kabulünüz,
+
+1960
+02:46:28,600 --> 02:46:29,720
+bir şey kabul ettik.
+
+1961
+02:46:30,720 --> 02:46:32,739
+Dedik ki, birinci tünel,
+
+1962
+02:46:32,960 --> 02:46:35,100
+the tunnel one,
+
+1963
+02:46:35,800 --> 02:46:37,659
+birinci tünel açık olsun dedim.
+
+1964
+02:46:37,659 --> 02:46:39,520
+girdim, girdim, girdim, girdim, bir baktım.
+
+1965
+02:46:39,520 --> 02:46:41,420
+Aaa kapalıymış, çelişki elde ettim.
+
+1966
+02:46:42,059 --> 02:46:45,059
+Kendin de çeliştin, direkt kabulün kendisiyle zaten direkt çelişki elde ediyorsun.
+
+1967
+02:46:45,559 --> 02:46:47,200
+O zaman kabulün değili doğrudur.
+
+1968
+02:46:48,120 --> 02:46:48,819
+Anlatabiliyor muyum?
+
+1969
+02:46:49,460 --> 02:46:50,739
+O zaman kabulün değili nedir?
+
+1970
+02:46:50,819 --> 02:46:53,239
+2, 3 nokta nokta M tünellerinden biri.
+
+1971
+02:46:53,819 --> 02:46:54,420
+Bir açıktır.
+
+1972
+02:46:54,920 --> 02:46:56,819
+Bu işte arkadaşlar, yaptığımız şey bu aslında.
+
+1973
+02:46:56,960 --> 02:46:57,659
+Farklı bir şey yok.
+
+1974
+02:46:58,340 --> 02:46:59,139
+Ne yaptım ben orada?
+
+1975
+02:47:00,180 --> 02:47:01,180
+Yaptığımız şey şu.
+
+1976
+02:47:04,724 --> 02:47:07,984
+stopshare 2x, stopshare.
+
+1977
+02:47:16,948 --> 02:47:18,948
+Ne yaptık biz burada?
+
+1978
+02:47:19,948 --> 02:47:21,948
+So this is statement P.
+
+1979
+02:47:21,948 --> 02:47:23,948
+This is a logical statement.
+
+1980
+02:47:23,948 --> 02:47:28,948
+So this statement P.
+
+1981
+02:47:28,948 --> 02:47:30,948
+Our goal is to show that this is true.
+
+1982
+02:47:30,948 --> 02:47:34,948
+But we suppose that negation of this statement is true.
+
+1983
+02:47:34,948 --> 02:47:36,948
+Okay, this is an assumption.
+
+1984
+02:47:36,948 --> 02:47:39,948
+Okay, our assumption is this.
+
+1985
+02:47:39,948 --> 02:47:42,948
+Negation of this statement is true.
+
+1986
+02:47:42,948 --> 02:47:50,948
+So according to this assumption, as you see, we got some contradiction.
+
+1987
+02:47:50,948 --> 02:47:58,948
+So then we can say that this assumption is false.
+
+1988
+02:47:58,948 --> 02:48:04,948
+If this assumption is false, then negation of this assumption is true.
+
+1989
+02:48:04,948 --> 02:48:05,948
+Okay?
+
+1990
+02:48:05,948 --> 02:48:10,948
+Negation of this assumption is nothing else than P.
+
+1991
+02:48:10,948 --> 02:48:12,948
+Because negation of this.
+
+1992
+02:48:12,948 --> 02:48:16,948
+Okay, negation of negation double negation P.
+
+1993
+02:48:16,948 --> 02:48:18,948
+According to this rule.
+
+1994
+02:48:18,948 --> 02:48:19,948
+Can you see that?
+
+1995
+02:48:19,948 --> 02:48:24,948
+Okay, we suppose that negation of P is true.
+
+1996
+02:48:24,948 --> 02:48:28,948
+In this case, so by following this assumption, we have this.
+
+1997
+02:48:28,948 --> 02:48:32,948
+By the product rule, we have this.
+
+1998
+02:48:32,948 --> 02:48:56,948
+And then we have this.
+
+1999
+02:48:56,948 --> 02:48:58,948
+That's why negation of our assumption is true.
+
+2000
+02:48:58,948 --> 02:49:02,948
+Negation of our assumption is nothing else than P.
+
+2001
+02:49:02,948 --> 02:49:03,948
+So this is P.
+
+2002
+02:49:03,948 --> 02:49:04,948
+Okay?
+
+2003
+02:49:04,948 --> 02:49:07,948
+Artık anlaşılmıştır herhalde.
+
+2004
+02:49:07,948 --> 02:49:08,948
+Evet.
+
+2005
+02:49:08,948 --> 02:49:10,948
+Bugünlük yeter arkadaşlar.
+
+2006
+02:49:10,948 --> 02:49:13,948
+Çelişki bulma yöntemi.
+
+2007
+02:49:13,948 --> 02:49:15,948
+Contradiction metoduyla arkadaşlar.
+
+2008
+02:49:15,948 --> 02:49:17,948
+Siz bir şeyi doğrulayabilirsiniz.
+
+2009
+02:49:17,948 --> 02:49:19,948
+Test sınavında özellikle.
+
+2010
+02:49:19,948 --> 02:49:23,948
+Yani test sınavında A, B, C, D şıklar eleyeceksiniz.
+
+2011
+02:49:23,948 --> 02:49:25,948
+Baktığınız çok karmaşık şeyler var.
+
+2012
+02:49:25,948 --> 02:49:29,948
+Doğru kabul ettiğinizde bir tanesini şıkların çelişki elde ediyorsanız.
+
+2013
+02:49:29,948 --> 02:49:31,948
+Demek ki şıkkınız doğru değil.
+
+2014
+02:49:31,948 --> 02:49:32,948
+Tamam mı arkadaşlar?
+
+2015
+02:49:32,948 --> 02:49:33,948
+Bu kadar basit.
+
+2016
+02:49:33,948 --> 02:49:37,948
+Mantık kullanırsanız şıkları eleyebilirsiniz.
+
+2017
+02:49:38,948 --> 02:49:40,948
+Benim anlatacaklarım bu kadar arkadaşlar.
+
+2018
+02:49:40,948 --> 02:49:41,948
+Haftaya değil.
+
+2019
+02:49:41,948 --> 02:49:43,948
+Yarın mı bizim dersimiz?
+
+2020
+02:49:43,948 --> 02:49:44,948
+Yarın görüşmek üzere.
