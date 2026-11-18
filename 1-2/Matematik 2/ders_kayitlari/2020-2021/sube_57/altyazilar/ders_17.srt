@@ -1,0 +1,3083 @@
+1
+00:00:01,556 --> 00:00:02,336
+Good morning.
+
+2
+00:00:13,204 --> 00:00:17,044
+1, 2, 1, 1, so let's wait 2 more minutes.
+
+3
+00:00:19,524 --> 00:00:19,923
+Okay.
+
+4
+00:00:48,787 --> 00:00:50,487
+Günaydın, günaydın [öğrenci].
+
+5
+00:00:52,347 --> 00:00:52,987
+Bu arada,
+
+6
+00:00:53,987 --> 00:01:01,027
+WhatsApp grubunda tartışıyordunuz, konular nereye kadar diye, ben de şöyle göstereyim.
+
+7
+00:01:01,787 --> 00:01:04,507
+Bize gelen konu listesi bu.
+
+8
+00:01:05,768 --> 00:01:07,128
+Yani 7. haftada,
+
+9
+00:01:08,587 --> 00:01:10,548
+Limiting Yokluğu için test,
+
+10
+00:01:11,147 --> 00:01:12,967
+Birleşikli Fonksiyonlarımız beklediği,
+
+11
+00:01:14,388 --> 00:01:15,287
+bu şekilde.
+
+12
+00:01:16,227 --> 00:01:17,487
+Konularımız buraya kadar.
+
+13
+00:01:18,787 --> 00:01:19,987
+Şöyle bakın,
+
+14
+00:01:20,108 --> 00:01:22,727
+Resmi Çekil istiyorsunuz arkadaşlarınızı da söylersin.
+
+15
+00:01:22,847 --> 00:01:23,847
+Bize gelen liste bu.
+
+16
+00:01:25,328 --> 00:01:26,768
+İki değişkenli fonksiyonlarda,
+
+17
+00:01:26,908 --> 00:01:28,668
+Limit Süreklilik yazmış.
+
+18
+00:01:28,807 --> 00:01:30,908
+Limit Yokluğu için çift yol testi.
+
+19
+00:01:31,487 --> 00:01:33,048
+Birleşikli fonksiyonların sürekliliği.
+
+20
+00:01:33,048 --> 00:01:35,287
+Yani sürekliliği sonuna kadar olarak düşünün.
+
+21
+00:01:35,628 --> 00:01:37,048
+Aslında süreklilik de bir şey yok.
+
+22
+00:01:37,328 --> 00:01:38,427
+Çünkü sürekli olması için,
+
+23
+00:01:38,507 --> 00:01:40,567
+Limiting olması, o nokta eşit olması gerekiyor.
+
+24
+00:01:40,628 --> 00:01:42,768
+Onun dışında var, onun dışındakiler yok.
+
+25
+00:01:43,507 --> 00:01:43,688
+Tamam?
+
+26
+00:01:44,427 --> 00:01:45,807
+Aslında konularımız buraya kadar.
+
+27
+00:01:49,236 --> 00:01:59,636
+sürekli sonun gibi düşünebilirsiniz. Ben şeyleri bulamadım. Ders notlarımı daha bir tane şöyle yapayım.
+
+28
+00:02:04,436 --> 00:02:06,096
+içeriğinden açmak istiyoruz.
+
+29
+00:02:15,348 --> 00:02:17,548
+Şu an görüyor musunuz benim açtığım isteğim?
+
+30
+00:02:29,587 --> 00:02:34,507
+Yaşya kadar, 7'nin sonuna kadar, yani kısmi türeve kadar.
+
+31
+00:02:37,207 --> 00:02:38,507
+Kısmi türeve kadar.
+
+32
+00:02:42,419 --> 00:02:46,099
+Kısmi türeve kadar olarak düşünebilirsiniz.
+
+33
+00:02:51,187 --> 00:02:58,507
+Dediğim gibi öncelik lütfen soruları çözmeye çalışın. Yani sorular öyle, bazı sorular öyle çok çok kolay değil.
+
+34
+00:03:00,287 --> 00:03:07,687
+Testte geçen sene 20 soru vardı. Bu sene bilmiyorum, bu ihtimalle 20 mi, yatık 25 mi olur bilmiyorum. Onunla ilgili bize bir bilgi verilmedi daha.
+
+35
+00:03:09,127 --> 00:03:15,287
+Ama zaman alan şeyler şöyle söyleyeyim hatta. Açayım ben test sampulu bu arada.
+
+36
+00:03:24,372 --> 00:03:26,372
+Bu da
+
+37
+00:03:30,996 --> 00:03:33,396
+Mesela burada gruplar vardı.
+
+38
+00:03:33,556 --> 00:03:37,195
+Mesela bu bir, bu ikinci sorusu muydu artık bilmiyorum.
+
+39
+00:03:38,576 --> 00:03:40,456
+Sorulardan zaten anlarsınız.
+
+40
+00:03:42,036 --> 00:03:43,576
+Mesela 3, 4.
+
+41
+00:03:45,276 --> 00:03:46,876
+Bunlar tek tek gruptu.
+
+42
+00:03:47,376 --> 00:03:49,496
+Bu mesela 5 diğer grubun sorusu.
+
+43
+00:03:49,616 --> 00:03:52,636
+Fark ederseniz zaten ikinci soruyla aynı neredeyse benzer yani.
+
+44
+00:03:53,536 --> 00:03:55,156
+6 da öyle, 7 de öyle.
+
+45
+00:03:56,156 --> 00:03:57,496
+Mesela sonra 8 geliyor mesela.
+
+46
+00:03:57,496 --> 00:03:59,436
+Bunlar hep vize sorularıydı.
+
+47
+00:04:00,996 --> 00:04:03,096
+9 mesela muadiliydi.
+
+48
+00:04:03,596 --> 00:04:05,156
+Zaten ona göre koydum ondan sonra.
+
+49
+00:04:05,355 --> 00:04:05,676
+Mesela 10.
+
+50
+00:04:06,936 --> 00:04:08,536
+İşte 11, 10'un muadiliydi.
+
+51
+00:04:09,256 --> 00:04:10,256
+İşte 12.
+
+52
+00:04:11,376 --> 00:04:13,355
+Mesela bu şeyler de bu şekilde.
+
+53
+00:04:13,636 --> 00:04:16,036
+Sorular hemen hemen onların aynı şeyleri.
+
+54
+00:04:16,776 --> 00:04:21,016
+Ama mesela dediğim gibi soruları bilmiyorum çözüp çözmediğinizi.
+
+55
+00:04:21,136 --> 00:04:23,536
+Mesela 3 öyle çok kolay bir soru değil mesela.
+
+56
+00:04:25,915 --> 00:04:27,456
+3 öyle kolay bir soru değil.
+
+57
+00:04:28,056 --> 00:04:30,456
+Onun gibi mesela çözebiliyorsunuz.
+
+58
+00:04:30,456 --> 00:04:32,475
+Güzel o zaman bayağı anlamışsınız demektir.
+
+59
+00:04:33,795 --> 00:04:36,756
+Onun dışında bunları yaparsınız diye düşünüyorum.
+
+60
+00:04:38,556 --> 00:04:40,235
+Şeyi çözeceğim mesela sonra.
+
+61
+00:04:40,375 --> 00:04:40,896
+Mesela bunu
+
+62
+00:04:40,896 --> 00:04:46,576
+O tarz bir soru görmeniz için belki zorlanabilirsiniz.
+
+63
+00:04:46,576 --> 00:04:49,475
+Ondan sonra.
+
+64
+00:04:50,036 --> 00:04:52,875
+Mesela 15 de kolay.
+
+65
+00:04:53,675 --> 00:04:54,816
+16, 17.
+
+66
+00:04:55,235 --> 00:04:55,956
+Mesela şey.
+
+67
+00:04:56,156 --> 00:04:58,096
+Mesela 18.
+
+68
+00:05:00,415 --> 00:05:02,056
+Daha şey.
+
+69
+00:05:02,336 --> 00:05:04,036
+Biraz daha zorlayabilecek sizi.
+
+70
+00:05:04,795 --> 00:05:06,436
+Normalde şeyden yapabiliyoruz.
+
+71
+00:05:06,716 --> 00:05:07,776
+Ama öyle gitme.
+
+72
+00:05:07,936 --> 00:05:10,016
+İşte mesela 1 bölü 1-x'ten gidip.
+
+73
+00:05:10,495 --> 00:05:11,676
+Bunu elde edebilirsiniz.
+
+74
+00:05:11,855 --> 00:05:13,495
+Ama öyle gidip elde ettiğiniz zaman.
+
+75
+00:05:13,495 --> 00:05:15,716
+Mesela şöyle bir şey geliyor ben.
+
+76
+00:05:15,836 --> 00:05:16,855
+İlk başta onu denemiştim.
+
+77
+00:05:16,956 --> 00:05:18,436
+Mesela x kare x küp.
+
+78
+00:05:18,576 --> 00:05:19,855
+İşte x kare artı.
+
+79
+00:05:20,196 --> 00:05:21,716
+1'in kuvveti gibi.
+
+80
+00:05:21,896 --> 00:05:23,036
+Ama burada öyle bir şey yok.
+
+81
+00:05:23,136 --> 00:05:25,396
+O yüzden biraz daha farklı düşünmek gerekiyor.
+
+82
+00:05:26,256 --> 00:05:27,076
+Oradan sonra.
+
+83
+00:05:27,276 --> 00:05:28,056
+Mesela bu da öyle.
+
+84
+00:05:29,336 --> 00:05:29,656
+Bakın.
+
+85
+00:05:29,776 --> 00:05:30,636
+Sum dediği için.
+
+86
+00:05:30,636 --> 00:05:33,196
+Şunu aklınızda tutun.
+
+87
+00:05:33,556 --> 00:05:35,716
+Biz nelerin sum'unu bulabiliyorduk.
+
+88
+00:05:36,156 --> 00:05:36,855
+Teleskopik.
+
+89
+00:05:39,276 --> 00:05:40,836
+Ve geometrik.
+
+90
+00:05:42,396 --> 00:05:44,135
+Diğerlerine gelen olarak bulamıyorduk.
+
+91
+00:05:44,676 --> 00:05:45,735
+O zaman ne yapacaksınız?
+
+92
+00:05:46,196 --> 00:05:48,615
+Yapabiliyorsanız geometriye dönüştürebilirsiniz.
+
+93
+00:05:49,056 --> 00:05:49,956
+Ya da teleskopiye.
+
+94
+00:05:50,216 --> 00:05:51,176
+Açık sorunuza bağlı.
+
+95
+00:05:52,036 --> 00:05:54,375
+Yapamıyorsanız başka bir yol düşünmeniz gerekir.
+
+96
+00:05:54,456 --> 00:05:54,896
+Nedir o?
+
+97
+00:05:54,896 --> 00:05:58,776
+Biz fonksiyonları hatırlarsanız.
+
+98
+00:05:58,936 --> 00:06:00,296
+Mesela dün göstermiştim.
+
+99
+00:06:00,375 --> 00:06:01,756
+1 bölü 1 eksi x'in.
+
+100
+00:06:01,916 --> 00:06:04,516
+Bu ana başlangıç noktamız zaten.
+
+101
+00:06:04,676 --> 00:06:05,896
+Mesela bunun bu olduğunu biliyorum.
+
+102
+00:06:06,816 --> 00:06:09,956
+Dolayısıyla burada x yerine bazı değerler yazarak.
+
+103
+00:06:10,756 --> 00:06:12,975
+Değilini bu fonksiyondan bulabilirim.
+
+104
+00:06:13,615 --> 00:06:14,516
+Ya da diyelim ki.
+
+105
+00:06:15,016 --> 00:06:17,676
+1 bölü 1 artı x kareyi biliyorum.
+
+106
+00:06:18,396 --> 00:06:18,936
+Neydi bu?
+
+107
+00:06:19,776 --> 00:06:20,036
+İşte.
+
+108
+00:06:20,755 --> 00:06:22,316
+Eksi 1 üzeri n.
+
+109
+00:06:22,316 --> 00:06:23,896
+X üzeri 2 n de bu.
+
+110
+00:06:24,896 --> 00:06:30,995
+Mesela burada x yerine 3 olarak ya da 1 bölü 3 olarak şunu bulabiliyorsunuz.
+
+111
+00:06:31,076 --> 00:06:32,536
+Mesela eksi 1 üzeri n.
+
+112
+00:06:33,216 --> 00:06:35,776
+1 bölü 3 üzeri 2 n.
+
+113
+00:06:36,495 --> 00:06:37,016
+Nedir?
+
+114
+00:06:37,156 --> 00:06:40,156
+1 bölü 1 artı 1 bölü 9 mesela.
+
+115
+00:06:41,536 --> 00:06:45,456
+Bu tarz şeyler yaparak toplamları bulabilirsiniz.
+
+116
+00:06:45,676 --> 00:06:48,176
+Eğer sorunuz bununla iki tanesine uymuyorsa.
+
+117
+00:06:49,056 --> 00:06:51,115
+O yüzden bu tarz şeyleri düşünebilirsiniz.
+
+118
+00:06:51,115 --> 00:06:53,396
+Bu tarz toplam sorularında.
+
+119
+00:06:53,396 --> 00:06:54,855
+Mesela bunlar kolay.
+
+120
+00:06:55,855 --> 00:06:58,056
+Bunlarda da zorlanacağınızı düşünmüyorum.
+
+121
+00:06:59,296 --> 00:07:00,396
+Bunlar da kolay.
+
+122
+00:07:02,016 --> 00:07:06,016
+Yani diğerlerinde böyle çok çok zorlayabilecek şeyler fazla yok.
+
+123
+00:07:06,456 --> 00:07:07,316
+Bakıyorum bir daha.
+
+124
+00:07:10,056 --> 00:07:10,336
+Yok.
+
+125
+00:07:10,556 --> 00:07:11,776
+Yani bunları yapabilirsiniz.
+
+126
+00:07:11,956 --> 00:07:15,136
+Dimin sorularında da zaten zorlanabileceğiniz çok bir şey yok.
+
+127
+00:07:15,136 --> 00:07:19,176
+Bununla ilgili sürekli ilgili statement sorusu var.
+
+128
+00:07:19,176 --> 00:07:32,676
+Bakın.
+
+129
+00:07:20,468 --> 00:07:23,088
+Yani onun dışında yaparsınız.
+
+130
+00:07:23,188 --> 00:07:29,828
+Mesela buradaki sorular artık şu 39-40'dan sonrakiler falan artık şey.
+
+131
+00:07:30,048 --> 00:07:35,728
+Şunlar da finalde sorulmuş olan sorulardır mesela.
+
+132
+00:07:35,968 --> 00:07:38,427
+Finalin kısmında olan sorularda fazla yok zaten.
+
+133
+00:07:38,968 --> 00:07:42,068
+Daha final biliyorsunuz biraz daha diğer konular aralıklı olabiliyor.
+
+134
+00:07:42,468 --> 00:07:46,328
+Ama dediğim gibi sorularda zorlanabileceğiniz seri sorularıdır.
+
+135
+00:07:46,328 --> 00:07:53,487
+Yani bir çok vektör değişkenli fonksiyonlarda ya da limite falan öyle çok çok zorlanmasınız ama
+
+136
+00:07:53,487 --> 00:07:57,328
+seri konusunda biraz daha aralık vermemiz gerekecek uygulamada.
+
+137
+00:07:58,148 --> 00:07:59,768
+Dediğim gibi çarşamba uygulama yapacağım.
+
+138
+00:08:00,548 --> 00:08:01,448
+Baktık yetişmiyor.
+
+139
+00:08:01,568 --> 00:08:03,028
+Belki perşembe de yapabiliriz.
+
+140
+00:08:03,088 --> 00:08:05,768
+Ya da cuma size uyuyan bir saatte de ekstri yapabiliriz.
+
+141
+00:08:07,208 --> 00:08:10,328
+Ama o zamana kadar önemli olan sizin çözmeniz.
+
+142
+00:08:10,948 --> 00:08:13,528
+Çünkü bu sorulara verilen süre en fazla bir saat.
+
+143
+00:08:14,088 --> 00:08:15,628
+Belki 50 dakika bilemiyorum.
+
+144
+00:08:15,628 --> 00:08:17,908
+Ama maksimum bir saat veriyorlar.
+
+145
+00:08:18,608 --> 00:08:21,628
+Dolayısıyla bir panikleme yaşayabilirsiniz.
+
+146
+00:08:22,487 --> 00:08:26,008
+Onun için de bol bol soru çözüp soru çeşitlerini görebilmeniz lazım.
+
+147
+00:08:26,528 --> 00:08:28,848
+Ve sınavlarda da gruplandırma yapılıyor.
+
+148
+00:08:28,988 --> 00:08:31,868
+Hiç kimse böyle kopya çekerim otururum muhabbetine hiç girmeyin.
+
+149
+00:08:32,208 --> 00:08:32,947
+Böyle bir şey yok.
+
+150
+00:08:34,228 --> 00:08:36,708
+Çünkü sınavlarda gruplandırılıyor.
+
+151
+00:08:36,847 --> 00:08:38,868
+Hatta geçen dönem daha da gruplandırılmış.
+
+152
+00:08:39,008 --> 00:08:41,208
+Dolayısıyla herkes kendi başına.
+
+153
+00:08:41,207 --> 00:08:45,728
+Ve zaten bunlar sonra size konu olarak da lazım olacak.
+
+154
+00:08:45,988 --> 00:08:48,628
+Yani kendi öğrenmenizin amacı o zaten.
+
+155
+00:08:48,888 --> 00:08:50,207
+Yani bunu dersi geçeyim şey değil.
+
+156
+00:08:50,307 --> 00:08:54,668
+Bunlara özellikle mesela kısmet üre birçok yerde karşınıza gelecek.
+
+157
+00:08:54,988 --> 00:08:59,048
+Mesela ben başka bir mühendisliği kısmet üre diferansiyel reklamlara giriyorum.
+
+158
+00:08:59,048 --> 00:09:00,548
+Nümerik analiz derslerine giriyorum.
+
+159
+00:09:00,687 --> 00:09:03,067
+Bunlar hepsi kullanılıyor onlardan.
+
+160
+00:09:03,707 --> 00:09:05,048
+Sizin de kendi bölümünüzde.
+
+161
+00:09:05,807 --> 00:09:07,668
+Mesela dün konuşmuştuk sanırım.
+
+162
+00:09:08,408 --> 00:09:09,488
+Akışkanlar mekaniği.
+
+163
+00:09:09,548 --> 00:09:12,108
+Akışkanlar mekaniğinde kısmet üre kullanılıyor.
+
+164
+00:09:12,567 --> 00:09:14,008
+Diferansiyel reklam kullanılıyor.
+
+165
+00:09:14,148 --> 00:09:18,868
+Kısmet üre birçok yerde karşınıza çıkacaktır.
+
+166
+00:09:20,327 --> 00:09:20,608
+Evet.
+
+167
+00:09:21,528 --> 00:09:22,728
+Başlayalım isterseniz.
+
+168
+00:09:23,687 --> 00:09:25,847
+Fazla bir konu yapmayacağım bugün zaten.
+
+169
+00:09:26,128 --> 00:09:27,187
+Biraz daha ilerleyelim.
+
+170
+00:09:27,187 --> 00:09:28,347
+Evet.
+
+171
+00:09:28,567 --> 00:09:31,327
+So today our subject is directional derivative.
+
+172
+00:09:32,327 --> 00:09:32,648
+Sorry.
+
+173
+00:09:32,888 --> 00:09:35,228
+Directional derivative and gradient vector.
+
+174
+00:09:36,327 --> 00:09:38,748
+I said that in three-dimensional system.
+
+175
+00:09:39,148 --> 00:09:44,347
+We can have infinitely different ways for derivation.
+
+176
+00:09:46,368 --> 00:09:49,988
+So if we have a spatial derivation.
+
+177
+00:09:50,107 --> 00:09:51,768
+If we have a spatial direction.
+
+178
+00:09:52,327 --> 00:09:55,408
+We can take derivation in this direction.
+
+179
+00:09:55,408 --> 00:09:58,187
+So the derivative of f.
+
+180
+00:09:58,788 --> 00:10:01,988
+It has spatial point P0, X0, Y0.
+
+181
+00:10:02,368 --> 00:10:06,148
+In the direction of the unit factor.
+
+182
+00:10:06,868 --> 00:10:09,847
+U is U1E plus U2G.
+
+183
+00:10:09,847 --> 00:10:39,847
+is U1E plus U1E plus U1E plus U1E plus U1E plus U1E plus U1E plus U1E plus U1E plus U1E plus U1E plus U1E plus U1E plus U1E plus U1E plus U1E plus U1E plus U1E plus U1E plus U1E plus U1E plus U1E plus U1E plus U1E plus U1E plus U1E plus U1E plus U1E plus U1E plus U1E plus U1E plus U1E plus U1E plus U1E plus U1E plus U1E plus U1E plus U1E plus U1E plus U1E plus U1E plus U1E plus U1E plus U1E plus U1E plus U1E plus U1E plus U1E plus U1E plus U1E plus U1E plus U1E plus U1E plus U1E plus U1E plus
+
+184
+00:10:39,847 --> 00:11:12,067
+U1E plus U1E plus U1E plus U1E plus U1E plus U1E plus U1E plus U1E plus U1E plus U1E plus U1E plus U1E plus U1E plus U1E plus U1E plus U1E plus U1E plus U1E plus U1E plus U1E plus U1E plus U1E plus U1E plus U1E plus U1E plus U1E plus U1E plus U1E plus U1E plus U1E plus U1E plus U1E plus U1E plus U1E plus U1E plus U1E plus U1E plus U1E plus U1E plus U1E plus U1E plus U1E plus U1E plus U1E plus U1E plus U1E plus U1E plus U1E plus U1E plus U1E plus U1E plus U1E plus U1E plus U1E plus U1E plus U
+
+185
+00:11:17,203 --> 00:11:30,823
+So, if you want to take x, y, z, z, okay, if you want to in this direction, it is fx, but I want to take the derivation in this direction.
+
+186
+00:11:30,823 --> 00:11:38,683
+For example, I want to make an increase to x and y, so it is called directional derivative.
+
+187
+00:11:38,683 --> 00:11:48,403
+So, in the directional derivative here, you will write df over ds.
+
+188
+00:11:52,500 --> 00:11:57,220
+For your function f, for your point p, 0.
+
+189
+00:11:58,320 --> 00:12:02,440
+You will give s goes to 0.
+
+190
+00:12:03,279 --> 00:12:06,039
+You will give an increase to your function.
+
+191
+00:12:06,600 --> 00:12:09,440
+Our function's point is x, 0, y, 0.
+
+192
+00:12:11,059 --> 00:12:15,039
+Minus, you will give increase to x and y terms.
+
+193
+00:12:15,039 --> 00:12:25,039
+It will be x, 0, plus s, u, 1, comma, y, 0, plus s, u, 2.
+
+194
+00:12:25,139 --> 00:12:26,580
+What is u, 1, and u, 2?
+
+195
+00:12:27,299 --> 00:12:33,460
+u is your direction, the unit vector in your direction.
+
+196
+00:12:33,659 --> 00:12:35,419
+It will be u, 1, and u, 2.
+
+197
+00:12:36,860 --> 00:12:38,120
+It is u, okay?
+
+198
+00:12:39,320 --> 00:12:43,659
+But this vector has to be unit vector.
+
+199
+00:12:45,039 --> 00:13:15,019
+If it is called directional derivative.
+
+200
+00:13:15,039 --> 00:13:17,039
+This is your function, this is your function.
+
+201
+00:13:17,039 --> 00:13:21,299
+This is your function outside, you will write at the point p, 0.
+
+202
+00:13:21,299 --> 00:13:23,100
+We mostly use this expression.
+
+203
+00:13:23,100 --> 00:13:25,220
+Okay.
+
+204
+00:13:25,220 --> 00:13:29,379
+So let's see an example.
+
+205
+00:13:46,292 --> 00:13:53,492
+Using the definition, find the derivative of f at the point p0 in the direction of the unit vector.
+
+206
+00:13:53,652 --> 00:13:59,992
+In this question, they give the unit vector. If they don't, you have to find the unit vector in that direction.
+
+207
+00:13:59,992 --> 00:14:13,831
+So, we will find d u f at the point p0 will be limit s goes to 0.
+
+208
+00:14:17,395 --> 00:14:47,336
+F, what is your point? 1, 2, minus, I will give an increasement, 1 plus S product, what is U1? U1 is this, 1 over square root 2, this is S, comma, 2 plus S product, U2 is this, 1 over 2, square root 2, over S.
+
+209
+00:14:47,395 --> 00:14:53,975
+Okay, so let's write this information in our function.
+
+210
+00:14:58,868 --> 00:15:01,927
+Limit, s goes to zero.
+
+211
+00:15:03,408 --> 00:15:03,968
+Sorry.
+
+212
+00:15:06,608 --> 00:15:15,408
+So, I will write x, instead of x, I will write 1 plus s over square root 2.
+
+213
+00:15:15,408 --> 00:15:30,848
+So, I will take 1 plus s over square root 2, square plus x.
+
+214
+00:15:34,676 --> 00:15:50,896
+Product y is 2 plus s over square root 2 minus, what is f1 comma 2, 1 square plus 2, it is minus 3 over s.
+
+215
+00:15:52,896 --> 00:15:56,796
+So, limit s goes to 0.
+
+216
+00:16:00,467 --> 00:16:12,387
+If we open the square root, square, 1 plus s square over 2 plus 2s over square root 2.
+
+217
+00:16:12,387 --> 00:16:34,587
+The other one plus, it will be 2 plus s over square root 2 plus 2s square root 2 plus s square over 2 minus 3 over s.
+
+218
+00:16:34,587 --> 00:16:48,727
+So, we can cancel 2, 3 minus 3, limit s goes to 0.
+
+219
+00:16:51,727 --> 00:17:01,327
+I will have 1, 1, it will be s square, 2, 4, 5.
+
+220
+00:17:05,107 --> 00:17:08,367
+5s over square root 2 over s.
+
+221
+00:17:09,807 --> 00:17:13,107
+So, I can cancel 1s for everyone.
+
+222
+00:17:14,347 --> 00:17:16,667
+1, 1, 1.
+
+223
+00:17:16,967 --> 00:17:21,607
+If s goes to 0, it will be 5 over square root 2.
+
+224
+00:17:21,748 --> 00:17:27,827
+This is our direction derivative in the direction of u at the point p 0.
+
+225
+00:17:27,827 --> 00:17:28,847
+Okay?
+
+226
+00:17:29,268 --> 00:17:39,567
+So, we will give increasement to x and y terms in the direction of u, but u has to be unique, as unique vector.
+
+227
+00:17:40,028 --> 00:17:40,268
+Okay?
+
+228
+00:17:42,107 --> 00:17:42,748
+Okay.
+
+229
+00:17:43,048 --> 00:17:44,567
+So, you can find this.
+
+230
+00:17:46,748 --> 00:17:51,248
+If they give, for example, if they give in this direction.
+
+231
+00:17:57,652 --> 00:18:04,852
+Bu, eğer bu formulağe, bu direksiyonun değil, çünkü bu direksiyonun değil.
+
+232
+00:18:04,852 --> 00:18:34,852
+Bu, eğer bu, eğer bu, eğer bu, eğer bu, eğer bu, eğer bu, eğer bu, eğer bu, eğer bu, eğer bu, eğer bu, eğer bu, eğer bu, eğer bu, eğer bu, eğer bu, eğer bu, eğer bu, eğer bu, eğer bu, eğer bu, eğer bu, eğer bu, eğer bu, eğer bu, eğer bu, eğer bu, eğer bu, eğer bu, eğer bu, eğer bu, eğer bu, eğer bu, eğer bu, eğer bu, eğer bu, eğer bu, eğer bu, eğer bu, eğer bu, eğer bu, eğer bu, eğer bu, eğer bu, eğer bu, eğer bu, eğer bu, eğer bu, eğer bu, eğer bu, eğer bu, eğer bu, eğer bu, eğer bu, eğer bu, e
+
+233
+00:18:34,852 --> 00:18:42,032
+But we have a different presentation for the unit for the directional derivative.
+
+234
+00:18:42,812 --> 00:18:47,892
+It is similar in the derivative you have formal definition and you can take derivation directly.
+
+235
+00:18:48,032 --> 00:18:48,751
+It is the same.
+
+236
+00:18:49,552 --> 00:18:51,771
+For this we will use gradient vector.
+
+237
+00:18:52,032 --> 00:18:53,231
+What is gradient vector?
+
+238
+00:18:53,352 --> 00:18:54,832
+You see I think in physics.
+
+239
+00:18:56,052 --> 00:19:03,751
+The gradient vector or gradient of the f function at a point p0 x0 is nabla f.
+
+240
+00:19:04,852 --> 00:19:05,572
+Okay.
+
+241
+00:19:06,471 --> 00:19:14,711
+Nabla f is derivation of your function with respect to x, derivation of your function with respect to y.
+
+242
+00:19:14,812 --> 00:19:17,592
+This is gradient f for any point.
+
+243
+00:19:18,792 --> 00:19:26,231
+So if you have two independent variables, so nabla f will be this.
+
+244
+00:19:26,372 --> 00:19:33,912
+If you have f x, y, z, then nabla f will be
+
+245
+00:19:34,852 --> 00:19:42,471
+derivation of f with respect to x, derivation of f with respect to y, derivation of f with respect to z.
+
+246
+00:19:42,592 --> 00:19:45,812
+You will have three different parts.
+
+247
+00:19:46,511 --> 00:19:48,172
+So this is called nabla f.
+
+248
+00:19:48,412 --> 00:19:50,392
+It is given in any point.
+
+249
+00:19:50,392 --> 00:19:57,112
+If you want to find 4p0, you will write in your solution.
+
+250
+00:19:58,152 --> 00:19:58,451
+Okay.
+
+251
+00:19:58,451 --> 00:20:01,632
+So this is the nabla.
+
+252
+00:20:01,912 --> 00:20:04,192
+Nabla is the financial vector operator.
+
+253
+00:20:05,072 --> 00:20:12,892
+It means that you will take your function's derivation with respect to your independent variable.
+
+254
+00:20:13,092 --> 00:20:17,692
+In our question, in our function, we have two independent variable x and y.
+
+255
+00:20:17,692 --> 00:20:23,132
+So nabla means that d over dx e product d over dy j.
+
+256
+00:20:23,612 --> 00:20:55,652
+So the result will be a vector.
+
+257
+00:20:29,844 --> 00:20:33,744
+For example, if your function is this, let's find Nabla F.
+
+258
+00:20:34,703 --> 00:20:37,724
+Derivation of F with respect to Y is 2X.
+
+259
+00:20:39,163 --> 00:20:41,963
+Derivation of F with respect to Y is 2Y.
+
+260
+00:20:42,903 --> 00:20:49,584
+So it is 2XE plus 2YG.
+
+261
+00:20:50,504 --> 00:20:52,544
+It is for any point.
+
+262
+00:20:52,544 --> 00:20:56,923
+If you want to find a spatial point, you will write X and Y.
+
+263
+00:20:56,923 --> 00:21:00,604
+So Nabla F will be a vector.
+
+264
+00:21:03,264 --> 00:21:03,524
+Okay.
+
+265
+00:21:07,304 --> 00:21:10,764
+The directional derivative is a dot product, actually.
+
+266
+00:21:11,384 --> 00:21:15,144
+If F, X, Y is a differentiable in an open interval,
+
+267
+00:21:15,144 --> 00:21:20,024
+if you can take derivation of your function at the point P0,
+
+268
+00:21:20,024 --> 00:21:29,504
+then your directional derivative, D, U, F at the point P0
+
+269
+00:21:29,504 --> 00:21:34,463
+will be Nabla F product U.
+
+270
+00:21:34,644 --> 00:21:35,304
+What is that?
+
+271
+00:21:35,484 --> 00:21:39,203
+It is F, X, F, Y.
+
+272
+00:21:40,203 --> 00:21:41,284
+What is U?
+
+273
+00:21:41,403 --> 00:21:43,624
+U is U1, U2.
+
+274
+00:21:43,624 --> 00:21:47,284
+Okay.
+
+275
+00:21:48,284 --> 00:21:54,584
+So it will be the other definition for the directional derivative.
+
+276
+00:21:55,084 --> 00:21:57,703
+When you find Nabla F at the point P0,
+
+277
+00:21:57,844 --> 00:21:59,443
+and if you product with U,
+
+278
+00:21:59,624 --> 00:22:02,443
+the result will be also your directional derivative.
+
+279
+00:22:02,443 --> 00:22:07,484
+And we must use this definition especially.
+
+280
+00:22:08,903 --> 00:22:10,124
+Daha çok bunu kullanıyoruz.
+
+281
+00:22:10,244 --> 00:22:11,644
+İki tanımımız var.
+
+282
+00:22:13,304 --> 00:22:15,683
+Sorularda tabii ki bu daha kolay hemen çıkıyor.
+
+283
+00:22:15,864 --> 00:22:18,403
+Burada limitli yapmak kompleks,
+
+284
+00:22:18,403 --> 00:22:21,364
+yani fonksiyonları çok karmaşıksa tabii ki zor olacaktır.
+
+285
+00:22:22,963 --> 00:22:23,084
+Okay.
+
+286
+00:22:24,244 --> 00:22:25,764
+So let's look at here.
+
+287
+00:22:25,764 --> 00:22:30,183
+Find the derivative of F at the point P0,
+
+288
+00:22:30,423 --> 00:22:32,004
+and they give the direction.
+
+289
+00:22:32,443 --> 00:22:34,104
+First, I want to start with here.
+
+290
+00:22:35,124 --> 00:22:37,703
+You can see that it is not unit vector.
+
+291
+00:22:38,124 --> 00:22:41,284
+So I want to find the unit vector in this direction.
+
+292
+00:22:41,284 --> 00:22:46,163
+First, I have to divide our vector to it is length.
+
+293
+00:22:47,663 --> 00:22:48,864
+So what is length?
+
+294
+00:22:49,084 --> 00:22:50,183
+Let me write here.
+
+295
+00:22:50,183 --> 00:22:56,024
+It is 9 plus 16.
+
+296
+00:22:56,163 --> 00:22:57,443
+It is 5.
+
+297
+00:22:58,084 --> 00:23:01,604
+So I need to take 3 over 5,
+
+298
+00:23:02,683 --> 00:23:06,004
+comma, minus 4 over 5.
+
+299
+00:23:06,144 --> 00:23:07,764
+I have to use this direction.
+
+300
+00:23:08,504 --> 00:23:12,244
+So the directional derivative of F
+
+301
+00:23:12,244 --> 00:23:14,364
+in the direction of V,
+
+302
+00:23:15,663 --> 00:23:18,824
+F at the point P0,
+
+303
+00:23:18,824 --> 00:23:21,564
+will be NABLA F
+
+304
+00:23:21,564 --> 00:23:24,364
+at the point P0
+
+305
+00:23:24,364 --> 00:23:26,864
+product V vector.
+
+306
+00:23:27,344 --> 00:23:28,524
+V vector is this.
+
+307
+00:23:28,764 --> 00:23:28,844
+Okay.
+
+308
+00:23:30,544 --> 00:23:32,584
+Let's find first NABLA F.
+
+309
+00:23:33,463 --> 00:23:34,364
+NABLA F,
+
+310
+00:23:34,724 --> 00:23:36,044
+in your function,
+
+311
+00:23:36,183 --> 00:23:37,463
+you have two variables,
+
+312
+00:23:37,824 --> 00:23:39,024
+two independent variables.
+
+313
+00:23:39,384 --> 00:23:40,923
+So I will have two pyes.
+
+314
+00:23:41,504 --> 00:23:43,524
+First, let us take derivation of F
+
+315
+00:23:43,524 --> 00:23:44,604
+with respect to X.
+
+316
+00:23:44,983 --> 00:23:46,943
+It is e to the power y.
+
+317
+00:23:46,943 --> 00:23:49,604
+In the second function,
+
+318
+00:23:49,804 --> 00:23:51,284
+I will take derivation inside
+
+319
+00:23:51,284 --> 00:23:52,344
+with respect to X.
+
+320
+00:23:52,443 --> 00:23:53,064
+It is y.
+
+321
+00:23:55,084 --> 00:23:56,524
+Derivation of cosine function
+
+322
+00:23:56,524 --> 00:23:59,984
+is minus sine xy.
+
+323
+00:23:59,984 --> 00:24:00,984
+So I will take derivation of F
+
+324
+00:24:00,984 --> 00:24:01,784
+in the second function.
+
+325
+00:24:01,784 --> 00:24:02,984
+So I will take derivation of F
+
+326
+00:24:02,984 --> 00:24:03,784
+in the second function.
+
+327
+00:24:03,784 --> 00:24:04,984
+So I will take derivation of F
+
+328
+00:24:04,984 --> 00:24:05,784
+in the second function.
+
+329
+00:24:05,784 --> 00:24:06,784
+So I will take derivation of F
+
+330
+00:24:06,784 --> 00:24:07,244
+in the second function.
+
+331
+00:24:07,244 --> 00:24:08,984
+So I will take derivation of F
+
+332
+00:24:08,984 --> 00:24:09,624
+in the second function.
+
+333
+00:24:09,624 --> 00:24:10,984
+So I will take derivation of F
+
+334
+00:24:10,984 --> 00:24:11,564
+in the second function.
+
+335
+00:24:11,564 --> 00:24:12,984
+So I will take derivation of F
+
+336
+00:24:12,984 --> 00:24:13,564
+in the second function.
+
+337
+00:24:13,564 --> 00:24:14,984
+So I will take derivation of F
+
+338
+00:24:14,984 --> 00:24:15,564
+in the second function.
+
+339
+00:24:15,564 --> 00:24:16,984
+So I will take derivation of F
+
+340
+00:24:02,259 --> 00:24:09,900
+And here, in the next part, we will take derivation with respect to y, x e to the power y.
+
+341
+00:24:10,779 --> 00:24:19,359
+Derivation inside with respect to y will be x, but it will be minus x, sin x, y.
+
+342
+00:24:19,519 --> 00:24:23,480
+This is nabla f for any point, but we have a special point.
+
+343
+00:24:23,480 --> 00:24:26,980
+We will find nabla f at the point p0.
+
+344
+00:24:26,980 --> 00:24:33,240
+So, it will be x is 2, y is 0.
+
+345
+00:24:33,500 --> 00:24:37,839
+I will have 1 minus 0.
+
+346
+00:24:37,960 --> 00:24:39,639
+It will be 1, comma.
+
+347
+00:24:40,839 --> 00:24:48,119
+x is 2, 2 minus sin 0.
+
+348
+00:24:48,259 --> 00:24:48,880
+It is 0.
+
+349
+00:24:48,980 --> 00:24:49,779
+It will be 2.
+
+350
+00:24:50,500 --> 00:24:53,359
+This is our nabla f for p0.
+
+351
+00:24:53,359 --> 00:25:23,339
+Now, let us write dvf for the point p0.
+
+352
+00:25:23,359 --> 00:25:53,339
+and we will find nabla f for the point p0.
+
+353
+00:25:37,715 --> 00:25:38,335
+Ok.
+
+354
+00:25:45,715 --> 00:25:56,235
+Okay, now this, we have some properties about directional derivative, especially, yeah, this part is important.
+
+355
+00:25:57,235 --> 00:26:01,635
+So, let's use the properties of dot product.
+
+356
+00:26:01,795 --> 00:26:06,695
+We say that directional derivative is the product of Nabla f product u, okay?
+
+357
+00:26:07,975 --> 00:26:12,235
+So, what is Nabla f product u if we use the dot product's property?
+
+358
+00:26:12,235 --> 00:26:23,995
+It is the length of Nabla f, the length of u product, the angle between Nabla f and u, cosine theta.
+
+359
+00:26:24,395 --> 00:26:27,535
+I know that this is unit vector, so the length will be 1.
+
+360
+00:26:27,535 --> 00:26:34,775
+So, I can say that duf also equals to Nabla f length product cosine theta, okay?
+
+361
+00:26:35,755 --> 00:26:40,755
+So, we have some properties about here.
+
+362
+00:26:44,339 --> 00:26:49,500
+We have two vectors and there is an angle between them.
+
+363
+00:26:49,779 --> 00:26:52,199
+For example, let us take this is Nabla F.
+
+364
+00:26:53,199 --> 00:26:54,199
+This is U.
+
+365
+00:26:55,559 --> 00:26:57,439
+Okay, it is theta.
+
+366
+00:26:59,259 --> 00:27:11,439
+If the angle between Nabla F and U, if the theta is zero, it means that Nabla F and U is in the same direction.
+
+367
+00:27:11,439 --> 00:27:25,460
+So, if theta is zero, then F increases more rapidly than theta is zero and U is the direction of Nabla F.
+
+368
+00:27:25,619 --> 00:27:31,579
+Yani eğer bunun ikisinin arasındaki açı aynıysa ne yapacaktır?
+
+369
+00:27:31,899 --> 00:27:39,919
+Fonksiyon en hızlı şekilde, ikisi de aynı yönde olduğu için en hızlı şekilde Nabla F yönünde artacaktır.
+
+370
+00:27:39,919 --> 00:27:43,059
+Nabla F yönünde artacaktır.
+
+371
+00:27:43,459 --> 00:27:52,799
+So, F increases more rapidly in this direction and what about the increasement?
+
+372
+00:27:52,939 --> 00:27:57,679
+The increasement will be Nabla F, the length of Nabla F.
+
+373
+00:27:57,679 --> 00:28:03,639
+Yani bu yönde en hızlı şekilde artacaktır ve maksimum değeri de ne kadar olacaktır?
+
+374
+00:28:03,740 --> 00:28:05,099
+Nabla F'in uzunluğu kadar.
+
+375
+00:28:05,099 --> 00:28:15,500
+Similarly, if the direction is the opposite, if it is Nabla F, if it is U,
+
+376
+00:28:15,500 --> 00:28:23,619
+then F decreases more rapidly in the direction of Nabla F.
+
+377
+00:28:23,619 --> 00:28:36,919
+And in this direction, the minimum value of the increasement will be the length of Nabla F, but it will be max.
+
+378
+00:28:37,460 --> 00:28:39,679
+Nabla F yönünde en hızlı artar.
+
+379
+00:28:39,679 --> 00:28:42,899
+arttı, yani maksimum değeri Nabla F'in uzunluğu kadar.
+
+380
+00:28:42,899 --> 00:28:51,740
+En hızlı eksi Nabla F yönünde azalır ve minimum değeri eksi Nabla F'in uzunluğu kadardır.
+
+381
+00:28:51,740 --> 00:28:53,740
+Nabla F'in uzunluğu kadar.
+
+382
+00:28:53,740 --> 00:28:57,740
+And what about zero change if Nabla F'in uzunluğu kadar?
+
+383
+00:28:57,740 --> 00:29:01,740
+If Nabla F'in uzunluğu kadar.
+
+384
+00:29:01,740 --> 00:29:06,740
+And if your U is in this direction or this direction?
+
+385
+00:29:06,740 --> 00:29:16,740
+If Nabla F'in uzunluğu kadar.
+
+386
+00:29:16,740 --> 00:29:20,740
+If u is in this direction or this direction?
+
+387
+00:29:10,771 --> 00:29:26,831
+Then you will have zero change. Okay? If u is orthogonal to your gradient f, it can be this or this one. In that case, you will have zero change in your function.
+
+388
+00:29:29,231 --> 00:29:39,731
+So the change will be zero. Because what is that? If the angle is pi over two or three pi over two, then nabla f will be zero.
+
+389
+00:29:39,731 --> 00:29:43,111
+It means that you will have zero change. Okay?
+
+390
+00:29:44,152 --> 00:29:58,731
+Çok kolay aslında. Sınavda, finalde bu tarz bir şey gelebilir. İşte der ki, bu fonksiyonun işte maksimum aldığı değer nedir? Hangi vektör bunu işte maksimum yapar gibi sorular gelebilir.
+
+391
+00:30:00,192 --> 00:30:06,731
+Okay. So, we have f function and they are asking...
+
+392
+00:30:13,299 --> 00:30:22,000
+At which direction f increases most rapidly, f decreases most rapidly, and what is the zero change?
+
+393
+00:30:22,980 --> 00:30:25,519
+We know that firstly we have to find nubla f.
+
+394
+00:30:27,079 --> 00:30:29,460
+What is nubla f for our function?
+
+395
+00:30:30,119 --> 00:30:32,940
+Derivation of f with respect to x will be x.
+
+396
+00:30:33,680 --> 00:30:36,419
+Derivation of y will be 1 over 2.
+
+397
+00:30:38,839 --> 00:30:43,039
+And they give a spatial point at the point 1 comma 1.
+
+398
+00:30:43,299 --> 00:30:47,559
+It is 1 comma 1 over 2.
+
+399
+00:30:50,019 --> 00:30:50,319
+Okay.
+
+400
+00:30:51,279 --> 00:30:58,319
+So in a, we know that increases most rapidly in the direction of nubla f.
+
+401
+00:30:59,679 --> 00:31:08,319
+So 1 comma 1 over 2 in this direction increases most rapidly.
+
+402
+00:31:10,319 --> 00:31:12,559
+And what is the maximum value?
+
+403
+00:31:12,559 --> 00:31:18,159
+The maximum value will be the length of nubla f.
+
+404
+00:31:18,500 --> 00:31:22,559
+It is 1 plus 1 over 4.
+
+405
+00:31:24,559 --> 00:31:26,299
+Squared 5 over 2.
+
+406
+00:31:27,579 --> 00:31:34,740
+In b, decreases most rapidly in the direction of nubla f decreases.
+
+407
+00:31:34,740 --> 00:31:40,179
+So it will be minus 1 comma minus 1 over 2.
+
+408
+00:31:40,179 --> 00:31:47,039
+It decreases most rapidly.
+
+409
+00:31:47,740 --> 00:31:49,279
+What is the minimum value?
+
+410
+00:31:49,460 --> 00:31:52,539
+The minimum value is minus the length of nubla f.
+
+411
+00:31:52,539 --> 00:31:57,200
+It is minus square root 5 over 2.
+
+412
+00:31:57,200 --> 00:32:01,859
+So c is different.
+
+413
+00:32:02,799 --> 00:32:06,220
+Because in c, we can have two different directions.
+
+414
+00:32:06,220 --> 00:32:12,480
+Because at the pi over 2 and 3 pi over 2, we have zero change.
+
+415
+00:32:12,480 --> 00:32:19,279
+So let us assume that our u vector is u1 and u2.
+
+416
+00:32:19,279 --> 00:32:21,879
+Okay.
+
+417
+00:32:21,879 --> 00:32:31,240
+So I know that if I product nubla f at the point p and u, this product will be zero.
+
+418
+00:32:31,240 --> 00:32:32,240
+Okay.
+
+419
+00:32:32,240 --> 00:32:36,240
+So 1 comma 1 over 2.
+
+420
+00:32:36,240 --> 00:32:37,240
+Product.
+
+421
+00:32:37,240 --> 00:32:40,460
+Let us take u1, u2.
+
+422
+00:32:40,460 --> 00:32:43,119
+Will be zero.
+
+423
+00:32:43,119 --> 00:32:50,240
+So I have u1 plus u2 over 2 is zero.
+
+424
+00:32:50,240 --> 00:32:52,500
+I have one equation.
+
+425
+00:32:52,500 --> 00:32:55,399
+But I have two unknown terms.
+
+426
+00:32:55,559 --> 00:32:57,159
+I don't know u1 and u2.
+
+427
+00:32:57,500 --> 00:32:59,259
+What else I can make?
+
+428
+00:33:08,915 --> 00:33:15,515
+I need to find one equation, but how can you find one more equation? From which information?
+
+429
+00:33:30,132 --> 00:33:31,971
+Ne about this vector?
+
+430
+00:33:46,259 --> 00:33:54,319
+If you remember the definition of the directional derivative, what did I say about this vector?
+
+431
+00:33:55,440 --> 00:34:02,559
+I said that it has an important property. It has to be what?
+
+432
+00:34:07,955 --> 00:34:16,115
+Yönlü türev bu konunun adı. Yönlü türevde ben size bununla ilgili bir şey söyledim kaç sefer. Önemli bir özelliğinin olması gerektiğiyle ilgili.
+
+433
+00:34:22,835 --> 00:34:27,135
+Orada mısınız? Düşünüyor musunuz yoksa gidip yattınız mı?
+
+434
+00:34:29,415 --> 00:34:31,755
+Evet, uzunluğu 1 olması gerekiyor.
+
+435
+00:34:31,895 --> 00:34:33,255
+It has to be unit vector.
+
+436
+00:34:33,435 --> 00:34:40,075
+So I can say that u1 squared plus u2 squared has to be 1.
+
+437
+00:34:40,335 --> 00:34:42,315
+This is the second equation.
+
+438
+00:34:42,555 --> 00:34:46,775
+From these equations, we can determine u1 and u2.
+
+439
+00:34:46,775 --> 00:34:53,435
+So I can say that u1 is minus u2 over 2.
+
+440
+00:34:54,235 --> 00:34:56,555
+And let us write in the first equation.
+
+441
+00:34:57,195 --> 00:35:05,475
+u2 over 4 plus u2 squared will be 1.
+
+442
+00:35:06,115 --> 00:35:08,055
+So I will have 5.
+
+443
+00:35:08,555 --> 00:35:11,295
+u2 squared will be 4.
+
+444
+00:35:11,295 --> 00:35:18,555
+So u2 squared will be 4 over 5.
+
+445
+00:35:18,555 --> 00:35:25,455
+So u2 will be plus or minus 2 over square root 5.
+
+446
+00:35:26,455 --> 00:35:31,755
+Okay, so if u2 is positive 1,
+
+447
+00:35:31,755 --> 00:35:36,755
+then our u vector will be
+
+448
+00:35:36,755 --> 00:36:06,735
+u1 over square root 5.
+
+449
+00:36:06,735 --> 00:36:36,715
+So in these directions, it will be negative.
+
+450
+00:36:46,036 --> 00:36:55,416
+Tamam. Şimdi, gradiyan ve tanciğinin kürslerinden bahsedelim. Kürsler ve kontrol kürslerinden bahsediyoruz.
+
+451
+00:36:56,416 --> 00:36:58,416
+Hatırlıyor musunuz bunları ne oldukları?
+
+452
+00:36:58,416 --> 00:37:01,215
+In 3-dimensional system
+
+453
+00:37:05,556 --> 00:37:13,635
+okay if you have this kind of curves for fx function for example fxy
+
+454
+00:37:15,155 --> 00:37:23,076
+equals 51 for example when you see this function in the xy plane it will be level curve
+
+455
+00:37:25,715 --> 00:37:34,996
+okay if you sketch this line if z is 51 here it is called contour
+
+456
+00:37:35,556 --> 00:37:38,675
+okay
+
+457
+00:37:38,675 --> 00:37:49,076
+xy'de çizdiğinizde level oluyor onu z artık z'si kaçtı onu yukarı taşıdığınızda da contour curve oluyor
+
+458
+00:37:50,916 --> 00:38:02,115
+okay if our fxy function is a differentiable function and has a constant value c along the smooth curve
+
+459
+00:38:02,115 --> 00:38:10,275
+they are talking about this one this okay for c here for example for this example it is 51
+
+460
+00:38:10,275 --> 00:38:20,516
+then i can say that according to this smooth curve the
+
+461
+00:38:23,316 --> 00:38:34,516
+differentiating both sides of this equation i can say that nabla f and dr over dt will be zero what is dr
+
+462
+00:38:34,516 --> 00:38:40,675
+r is the position vector okay r is the position vector of your curve
+
+463
+00:38:40,675 --> 00:39:00,836
+so what does it mean it means that nabla f is normal to the tangent vector of your curve for
+
+464
+00:39:00,836 --> 00:39:08,996
+for example this is your curve in this point in any point what is dr over dt dr over dt is this
+
+465
+00:39:08,996 --> 00:39:15,155
+is this nedir bu t nabla f is this
+
+466
+00:39:15,155 --> 00:39:17,155
+is this
+
+467
+00:39:17,155 --> 00:39:37,155
+is
+
+468
+00:39:19,347 --> 00:39:37,148
+So, this angle will be 90. So, I can say that it is, this nabla f is the normal to the kör. Her zaman nabla f sizin elinizdeki elinize diktir.
+
+469
+00:39:37,148 --> 00:39:39,628
+Okay?
+
+470
+00:39:41,847 --> 00:39:45,587
+So, you can see that, for example, this is contour curve.
+
+471
+00:39:46,208 --> 00:39:50,987
+In any point, in these points, I know that dr over dt is this.
+
+472
+00:39:51,427 --> 00:39:56,248
+Nabla f will be always orthogonal to your curve.
+
+473
+00:39:56,527 --> 00:39:58,487
+So, the angle will be 90.
+
+474
+00:39:59,447 --> 00:40:02,228
+So, why is nabla f is important?
+
+475
+00:40:02,228 --> 00:40:06,208
+What, why?
+
+476
+00:40:06,367 --> 00:40:12,067
+Because if you want to sketch a plane, for example,
+
+477
+00:40:13,128 --> 00:40:17,087
+you have a curve, you have a curve, okay?
+
+478
+00:40:17,248 --> 00:40:24,268
+And you want to find what is the plane touching to this point, okay?
+
+479
+00:40:25,507 --> 00:40:26,188
+Sure, it is.
+
+480
+00:40:27,467 --> 00:40:28,608
+It's touch here.
+
+481
+00:40:28,608 --> 00:40:58,587
+So, I want to find the plane touching from this point.
+
+482
+00:40:44,659 --> 00:40:47,679
+ortogonal to our curve.
+
+483
+00:40:48,460 --> 00:40:50,379
+So I can use nabla f.
+
+484
+00:40:50,379 --> 00:40:53,659
+What do you need to write a plane equation?
+
+485
+00:40:54,159 --> 00:40:58,739
+I need normal vector to our plane and I need a point.
+
+486
+00:40:59,219 --> 00:41:05,500
+If I have this two information, I can write our plane equation.
+
+487
+00:41:05,739 --> 00:41:13,799
+Here we will take nabla f instead of n because nabla f will be orthogonal to our curve
+
+488
+00:41:13,799 --> 00:41:16,659
+and it will also orthogonal to our plane.
+
+489
+00:41:16,659 --> 00:41:19,539
+So it is very easy.
+
+490
+00:41:21,799 --> 00:41:27,259
+For example, bakın bu teğet düzlem.
+
+491
+00:41:29,019 --> 00:41:31,639
+Doğru ve düzlemi karıştırmayın.
+
+492
+00:41:31,799 --> 00:41:35,359
+O herhangi bir şey için bulunabilen bir şey.
+
+493
+00:41:35,819 --> 00:41:41,839
+Ama burada bu eğriye teğet olan düzlemi bulacağız.
+
+494
+00:41:42,299 --> 00:41:43,440
+Normal düzlem değil.
+
+495
+00:41:43,799 --> 00:41:45,480
+Okay.
+
+496
+00:41:46,139 --> 00:41:50,039
+For example, you have a sphere, for example.
+
+497
+00:41:51,119 --> 00:41:51,420
+Okay.
+
+498
+00:41:52,219 --> 00:41:56,139
+And I want to find the tangent plane like this.
+
+499
+00:41:58,059 --> 00:42:01,799
+So for this, it will be enough to find nabla f.
+
+500
+00:42:02,859 --> 00:42:08,659
+Because nabla f is orthogonal to our curve and it is also orthogonal to our plane.
+
+501
+00:42:08,659 --> 00:42:11,279
+This is called tangent plane.
+
+502
+00:42:11,279 --> 00:42:11,659
+Okay.
+
+503
+00:42:11,659 --> 00:42:17,519
+So for this, it will be enough to find the tangent plane.
+
+504
+00:42:15,284 --> 00:42:16,463
+of f.
+
+505
+00:42:17,344 --> 00:42:17,644
+Okay?
+
+506
+00:42:18,644 --> 00:42:22,104
+So, we say that we need to determine Nabla f.
+
+507
+00:42:22,644 --> 00:42:23,983
+What is our Nabla f?
+
+508
+00:42:24,104 --> 00:42:25,644
+Our function is this.
+
+509
+00:42:28,364 --> 00:42:33,304
+And Nabla f, derivation of x will be x over 2.
+
+510
+00:42:34,104 --> 00:42:36,344
+Derivation of y will be 2y.
+
+511
+00:42:37,684 --> 00:42:44,244
+But I need to find Nabla f at the point minus 2 comma 1.
+
+512
+00:42:45,284 --> 00:42:52,023
+So, it will be minus 1 comma 2.
+
+513
+00:42:55,064 --> 00:43:03,423
+So, our tangent plane will be minus 1 product x minus minus 2.
+
+514
+00:43:05,104 --> 00:43:10,864
+Plus 2 product y minus 1 will be 0.
+
+515
+00:43:10,864 --> 00:43:11,644
+Okay?
+
+516
+00:43:12,724 --> 00:43:12,864
+This is...
+
+517
+00:43:12,864 --> 00:43:13,364
+Okay?
+
+518
+00:43:13,364 --> 00:43:14,864
+This is...
+
+519
+00:43:14,864 --> 00:43:17,104
+Now, f here.
+
+520
+00:43:18,403 --> 00:43:19,684
+This is 2 here.
+
+521
+00:43:21,463 --> 00:43:25,704
+This one and this one are the components of your point.
+
+522
+00:43:26,644 --> 00:43:29,864
+So, it will be minus x...
+
+523
+00:43:31,204 --> 00:43:33,864
+Minus 2 plus 2y...
+
+524
+00:43:33,864 --> 00:43:36,244
+Minus 2 will be 0.
+
+525
+00:43:36,244 --> 00:43:38,244
+So, it is...
+
+526
+00:43:38,244 --> 00:43:43,244
+X minus x plus 2y...
+
+527
+00:43:43,244 --> 00:43:46,503
+Minus 2y will be 4.
+
+528
+00:43:47,244 --> 00:43:49,124
+This is tangent plane.
+
+529
+00:43:49,124 --> 00:43:50,764
+Okay?
+
+530
+00:43:55,155 --> 00:43:55,476
+Ok.
+
+531
+00:44:01,907 --> 00:44:24,307
+Here we have some algebraic rules for gradients. It is similar with the normal sum subtractional product with the function. If you want to take the nabla f of f plus or minus g, it will be nabla f, the same sign nabla g.
+
+532
+00:44:24,307 --> 00:44:44,407
+If you want to product with a constant, you can write constant outside of the gradient. If you want to take nabla gradient of f product g, it is the same, the first function's gradient product, the second one, plus the second one product, the first one.
+
+533
+00:44:44,407 --> 00:44:45,768
+Okay.
+
+534
+00:44:45,768 --> 00:45:09,648
+Okay. Now we can talk about three variables. They are the same. It is not different. You will have one more term, key. If you want, I talk about nabla f, if you have three variables, it will be nabla f will be fx, f1, fz.
+
+535
+00:45:11,648 --> 00:45:12,208
+Okay.
+
+536
+00:45:34,324 --> 00:45:39,463
+Okay, here let's find the directional derivative.
+
+537
+00:45:39,463 --> 00:45:47,963
+We will find duf, sorry dv, very good okay, at the point p0.
+
+538
+00:45:48,824 --> 00:45:51,084
+First of all, we have to find numle f.
+
+539
+00:45:52,063 --> 00:45:53,344
+We have three variables.
+
+540
+00:45:54,084 --> 00:46:00,764
+Firstly, we will take derivation with respect to x will be 3x squared minus y squared.
+
+541
+00:46:00,764 --> 00:46:06,584
+Derivation with respect to y will be minus 2xy.
+
+542
+00:46:07,784 --> 00:46:10,483
+Derivation with respect to z will be minus 1.
+
+543
+00:46:10,903 --> 00:46:12,664
+This is numle f at any point.
+
+544
+00:46:13,244 --> 00:46:16,724
+But we need to find numle f at the point p0.
+
+545
+00:46:19,503 --> 00:46:30,043
+So x and y are 1, z is 0, it is 2x is 1 than 2, x is 1 than 2, x is 1 than 1.
+
+546
+00:46:30,764 --> 00:46:31,884
+This is numle f.
+
+547
+00:46:32,724 --> 00:46:35,684
+After that, I have to look at the vector.
+
+548
+00:46:35,943 --> 00:46:37,523
+It is unit vector or not.
+
+549
+00:46:37,584 --> 00:46:38,503
+It is not unit.
+
+550
+00:46:38,903 --> 00:46:42,864
+So I have to divide v with the length of v.
+
+551
+00:46:46,063 --> 00:46:48,344
+It will be, hemen buradan buladım.
+
+552
+00:46:48,344 --> 00:47:18,344
+dot, docus, ot is, alt is alt is, alt is alt
+
+553
+00:47:18,344 --> 00:47:27,364
+alt is alt
+
+554
+00:47:33,588 --> 00:47:48,488
+So, it will be 4 over 7 plus 6 over 7 minus 6 over 7. It will be 4 over 7.
+
+555
+00:47:49,868 --> 00:48:03,327
+Okay, let's find increases most rapidly in the direction of Nabla F. So, in this direction, we will have
+
+556
+00:48:03,327 --> 00:48:17,608
+most increasing and maximum value will be the length of Nabla F. It will be
+
+557
+00:48:17,608 --> 00:48:22,088
+kaç bulduk?
+
+558
+00:48:26,888 --> 00:48:31,368
+It will be 4 plus 4 plus 1.
+
+559
+00:48:32,428 --> 00:48:34,048
+It will be 3.
+
+560
+00:48:35,128 --> 00:48:43,128
+In the second one, let us find in this direction, it is minus 2, 2, 1.
+
+561
+00:48:43,128 --> 00:48:50,908
+It will be most decreasing and minimum value will be minus 3.
+
+562
+00:48:53,908 --> 00:48:55,608
+Okay, bunu soruyordu.
+
+563
+00:48:56,088 --> 00:48:57,888
+Hemen bakayım başka neler vardı.
+
+564
+00:49:02,291 --> 00:49:03,211
+O kadar sonmuş.
+
+565
+00:49:06,211 --> 00:49:06,891
+Okey.
+
+566
+00:49:08,652 --> 00:49:10,632
+Buna da bakalım.
+
+567
+00:49:17,940 --> 00:49:20,539
+Ara vermeyeceğim. Bunu da verip bugün bitireceğim.
+
+568
+00:49:21,960 --> 00:49:31,760
+Okay, we say that we can find tangent planes and also we can find normal lines at this point using the nabla f.
+
+569
+00:49:31,960 --> 00:49:45,079
+If we have three-dimensional system, okay, if we have f x y z equals c, then we know that nabla f is orthogonal to our surface.
+
+570
+00:49:45,079 --> 00:49:51,619
+And using the nabla f, we can find tangent plane and normal line.
+
+571
+00:49:53,639 --> 00:49:57,780
+Okay, let me explain in this one, in the example.
+
+572
+00:50:04,211 --> 00:50:07,692
+Okay, this is our surface.
+
+573
+00:50:09,052 --> 00:50:12,532
+X square plus Y square plus Z minus 9.
+
+574
+00:50:12,532 --> 00:50:12,931
+Okay.
+
+575
+00:50:17,588 --> 00:50:20,148
+Let's sketch randomly.
+
+576
+00:50:21,028 --> 00:50:23,827
+Yani bunun şeklini bilmenize gerek yok.
+
+577
+00:50:23,988 --> 00:50:25,768
+Diyelim ki şöyle bir şey.
+
+578
+00:50:26,788 --> 00:50:26,968
+Okay.
+
+579
+00:50:27,748 --> 00:50:29,108
+And this is our point.
+
+580
+00:50:29,908 --> 00:50:33,208
+And they are asking what is the tangent plane and normal line?
+
+581
+00:50:33,768 --> 00:50:36,588
+So if I want to find this tangent plane,
+
+582
+00:50:37,708 --> 00:50:40,108
+what do you need for a plane equation?
+
+583
+00:50:40,307 --> 00:50:42,568
+I need n, normal.
+
+584
+00:50:42,568 --> 00:50:50,768
+And I said that nabla f at the point p0 will be your normal.
+
+585
+00:50:50,988 --> 00:50:52,228
+Because this is 90.
+
+586
+00:50:52,848 --> 00:50:56,208
+So let us find nabla f for this function.
+
+587
+00:50:58,088 --> 00:51:03,408
+It is 2x, 2y, 1.
+
+588
+00:51:04,668 --> 00:51:07,008
+This is nabla f for at any point.
+
+589
+00:51:07,128 --> 00:51:09,327
+But we have point for p0.
+
+590
+00:51:09,327 --> 00:51:15,168
+For p0 will be x is 1, it will be 2.
+
+591
+00:51:15,288 --> 00:51:17,307
+Y is 2, it will be 4, comma 1.
+
+592
+00:51:18,668 --> 00:51:23,408
+So I need a normal vector.
+
+593
+00:51:23,608 --> 00:51:24,548
+I have nabla f.
+
+594
+00:51:24,728 --> 00:51:26,288
+I have p0 point.
+
+595
+00:51:26,288 --> 00:51:33,128
+So I can write tangent plane.
+
+596
+00:51:35,448 --> 00:51:46,608
+Will be x minus y minus z minus will be 0.
+
+597
+00:51:46,608 --> 00:51:49,807
+Now, inside of the parenthesis,
+
+598
+00:51:49,888 --> 00:51:52,448
+I will write the components of the point.
+
+599
+00:51:52,628 --> 00:51:56,347
+It is 1, 2, 4.
+
+600
+00:51:57,588 --> 00:52:02,108
+Outside, I will write the components of your normal vector.
+
+601
+00:52:02,268 --> 00:52:03,128
+It is nabla f.
+
+602
+00:52:03,128 --> 00:52:07,368
+It is 2, 4, 1.
+
+603
+00:52:08,448 --> 00:52:19,928
+So we will have 2x plus 4y plus z will be x on dirt on dirt.
+
+604
+00:52:20,288 --> 00:52:25,468
+This is the tangent plane of your surface at the point p0.
+
+605
+00:52:25,468 --> 00:52:26,568
+Okay?
+
+606
+00:52:28,508 --> 00:52:30,748
+And what about the normal line?
+
+607
+00:52:31,548 --> 00:52:34,448
+They are asking what is normal line for this point?
+
+608
+00:52:35,168 --> 00:52:36,088
+This is tangent.
+
+609
+00:52:37,088 --> 00:52:39,448
+This is normal line.
+
+610
+00:52:39,868 --> 00:52:42,648
+What do you need for a line equation?
+
+611
+00:52:42,648 --> 00:52:46,788
+I need one point on your line.
+
+612
+00:52:47,968 --> 00:52:52,188
+And I need a vector which is parallel to your line.
+
+613
+00:52:52,788 --> 00:52:58,468
+And you can see that nabla f is parallel to our normal, to our line.
+
+614
+00:52:58,807 --> 00:53:03,468
+So I can use nabla f at the point p0.
+
+615
+00:53:03,928 --> 00:53:07,648
+But you know that we will write our line equation parametrically.
+
+616
+00:53:07,788 --> 00:53:08,368
+What is that?
+
+617
+00:53:08,368 --> 00:53:11,268
+That x, y, z.
+
+618
+00:53:12,648 --> 00:53:15,268
+What about the point on the line?
+
+619
+00:53:15,768 --> 00:53:18,988
+I know that this point is on your line.
+
+620
+00:53:19,528 --> 00:53:21,768
+So I can take as 1, 2, 4.
+
+621
+00:53:23,508 --> 00:53:25,847
+1, 2, 4.
+
+622
+00:53:26,468 --> 00:53:27,068
+Plus.
+
+623
+00:53:28,008 --> 00:53:30,088
+I will have a parameter t.
+
+624
+00:53:31,648 --> 00:53:39,288
+And in the last part, I will write the components of the vector which is parallel to our line.
+
+625
+00:53:39,288 --> 00:53:40,528
+It is nabla f.
+
+626
+00:53:40,588 --> 00:53:42,468
+What is the components of nabla f?
+
+627
+00:53:42,648 --> 00:53:46,368
+At the point p0, 2, 4, 1.
+
+628
+00:53:47,188 --> 00:53:53,968
+This is the normal line for your function.
+
+629
+00:53:55,668 --> 00:53:56,008
+Okay?
+
+630
+00:53:56,668 --> 00:54:00,508
+So nabla f is orthogonal to your tangent plane.
+
+631
+00:54:01,048 --> 00:54:04,788
+And nabla f is parallel to your normal line.
+
+632
+00:54:04,788 --> 00:54:09,728
+Using the nabla f, we can find tangent plane and normal line.
+
+633
+00:54:14,268 --> 00:54:14,807
+Okay.
+
+634
+00:54:14,807 --> 00:54:28,347
+So nabla f is parallel to your angle.
+
+635
+00:54:20,500 --> 00:54:29,340
+But, sometimes, they can give your function differently.
+
+636
+00:54:30,400 --> 00:54:36,000
+Yesterday, I talked about a function can be given explicitly or implicitly.
+
+637
+00:54:38,739 --> 00:54:46,000
+In this example, your function is given implicitly.
+
+638
+00:54:46,000 --> 00:54:47,079
+Okay?
+
+639
+00:54:48,079 --> 00:54:51,599
+They write all the functions in the same place.
+
+640
+00:54:51,739 --> 00:54:57,260
+But, if it is given explicitly, what can you do?
+
+641
+00:55:01,043 --> 00:55:36,043
+Evet.
+
+642
+00:55:24,083 --> 00:55:28,023
+Then find nabla f from this function.
+
+643
+00:55:28,163 --> 00:55:29,163
+What is nabla f?
+
+644
+00:55:30,423 --> 00:55:37,943
+Derivation of x will be minus cosine y plus y e to the power x.
+
+645
+00:55:40,223 --> 00:55:48,263
+Derivation of f with respect to y will be x sine y plus exponent function.
+
+646
+00:55:49,043 --> 00:55:50,483
+Derivation of z will be 1.
+
+647
+00:55:51,783 --> 00:55:53,223
+So what is nabla f?
+
+648
+00:55:53,223 --> 00:55:58,783
+And in the equation, sometimes they don't give z, for example.
+
+649
+00:55:59,623 --> 00:56:00,923
+They give this point.
+
+650
+00:56:01,563 --> 00:56:03,364
+But you need to find z.
+
+651
+00:56:03,864 --> 00:56:10,003
+For this case, you will write x and y in your function and you can determine z.
+
+652
+00:56:10,423 --> 00:56:12,023
+But in this problem, they give.
+
+653
+00:56:12,743 --> 00:56:15,463
+So what is nabla f at the point P0?
+
+654
+00:56:15,463 --> 00:56:24,543
+Cosine 0 will be this point x1, 0, 1, 1.
+
+655
+00:56:25,603 --> 00:56:28,844
+So what is tangent plane?
+
+656
+00:56:30,923 --> 00:56:42,463
+Tangent plane will be x minus y minus z minus.
+
+657
+00:56:42,463 --> 00:56:44,083
+Will be 0.
+
+658
+00:56:44,983 --> 00:56:48,403
+Inside, we will write the components of the point.
+
+659
+00:56:50,023 --> 00:56:52,483
+0, 0, 0.
+
+660
+00:56:52,483 --> 00:56:59,063
+Outside, we will write the components of nabla f minus plus 1.
+
+661
+00:56:59,063 --> 00:57:05,763
+So minus x plus y plus z will be 0.
+
+662
+00:57:07,364 --> 00:57:09,783
+This is the tangent plane.
+
+663
+00:57:09,903 --> 00:57:11,183
+Let's write normal line.
+
+664
+00:57:11,183 --> 00:57:12,183
+And then we will write the components of the point.
+
+665
+00:57:12,183 --> 00:57:12,743
+So what is the tangent plane?
+
+666
+00:57:12,743 --> 00:57:30,743
+Let's write the components of the point.
+
+667
+00:57:14,804 --> 00:57:19,324
+It will be x, y, z.
+
+668
+00:57:20,324 --> 00:57:23,204
+First we will write the components of our point.
+
+669
+00:57:23,204 --> 00:57:31,364
+Our point is 0, 0, 0 plus t.
+
+670
+00:57:33,443 --> 00:57:38,724
+And here we will write the components of our normal vector.
+
+671
+00:57:38,983 --> 00:57:42,744
+It is minus 1, 1, 1.
+
+672
+00:57:42,744 --> 00:57:45,244
+This is the normal line.
+
+673
+00:57:46,423 --> 00:57:46,724
+Okay?
+
+674
+00:57:58,164 --> 00:58:00,484
+Let's look at this example after this.
+
+675
+00:58:00,524 --> 00:58:01,564
+I will finish for today.
+
+676
+00:58:01,724 --> 00:58:01,824
+Okay.
+
+677
+00:58:02,664 --> 00:58:10,164
+So the surface, fxyz, x2 plus y2 minus 2, it is a cylinder.
+
+678
+00:58:11,044 --> 00:58:13,124
+And we have a gx function.
+
+679
+00:58:13,124 --> 00:58:13,984
+It is a plane.
+
+680
+00:58:14,584 --> 00:58:17,544
+Means on an ellipse e.
+
+681
+00:58:18,324 --> 00:58:19,444
+They cut here.
+
+682
+00:58:19,724 --> 00:58:23,084
+And in that case, we will have an ellipse.
+
+683
+00:58:24,164 --> 00:58:24,304
+Okay.
+
+684
+00:58:24,304 --> 00:58:32,324
+Find the parametric equations of the line tangent to e at the point p0.
+
+685
+00:58:33,804 --> 00:58:35,604
+We have an ellipse.
+
+686
+00:58:36,524 --> 00:58:43,924
+And find the parametric equations for the line tangent to e.
+
+687
+00:58:44,744 --> 00:58:45,644
+Yani şuradaki.
+
+688
+00:58:46,364 --> 00:58:49,744
+I will finish after this example.
+
+689
+00:58:50,784 --> 00:58:51,044
+Okay.
+
+690
+00:58:51,144 --> 00:58:53,684
+If you want, let's finish here.
+
+691
+00:58:54,304 --> 00:58:57,544
+We can talk this example next week.
+
+692
+00:58:58,224 --> 00:59:02,864
+And next week değil, sınavdan sonraki hafta artık, perşembe.
+
+693
+00:59:03,403 --> 00:59:05,264
+O zaman buna devam edelim olmazsa.
+
+694
+00:59:05,344 --> 00:59:06,884
+Çünkü buradan biraz daha devam edeceğim.
+
+695
+00:59:07,244 --> 00:59:07,544
+Okay.
+
+696
+00:59:07,604 --> 00:59:08,984
+I want to finish for today.
+
+697
+00:59:08,984 --> 00:59:18,244
+So next week, I will make application lesson on Wednesday at the lesson time.
+
+698
+00:59:18,244 --> 00:59:27,084
+You can connect with your lesson connection.
+
+699
+00:59:27,423 --> 00:59:27,564
+Okay.
+
+700
+00:59:28,524 --> 00:59:31,184
+And please talk to your friends.
+
+701
+00:59:31,304 --> 00:59:38,264
+If someone wants to attend to the application lesson, send email or you can write WhatsApp.
+
+702
+00:59:38,264 --> 00:59:40,984
+I can add this people.
+
+703
+00:59:40,984 --> 00:59:41,324
+Okay.
+
+704
+00:59:41,924 --> 00:59:46,784
+Arkadaşlar haftaya çarşamba bir de ders saatinde.
+
+705
+00:59:46,904 --> 00:59:49,124
+Dersimiz zaten bizim otomatikman tanımlanıyor.
+
+706
+00:59:49,804 --> 00:59:51,644
+O yüzden sistemimizde gözükecek.
+
+707
+00:59:52,504 --> 00:59:55,464
+Çarşamba günü bir de uygulama dersi yapacağım.
+
+708
+00:59:55,944 --> 00:59:59,604
+Artık yetmezse gerekirse diğer günlerden birinde de devam edebiliriz.
+
+709
+01:00:00,904 --> 01:00:03,864
+Derse yani uygulamaya katılmak isteyen arkadaşlarınız olabilir.
+
+710
+01:00:03,864 --> 01:00:05,664
+Benim eski öğrencilerim de oluyor bazen.
+
+711
+01:00:06,324 --> 01:00:11,104
+Eğer öyle kişiler varsa lütfen bana ya WhatsApp'tan yazın ya da bana mail atsınlar.
+
+712
+01:00:11,184 --> 01:00:14,384
+Ben onlara ona göre link ekleyip şey yapıp göndereyim.
+
+713
+01:00:14,584 --> 01:00:15,684
+Onlar da katılabilirler.
+
+714
+01:00:16,644 --> 01:00:17,664
+Var mı sorunuz arkadaşlar?
+
+715
+01:00:18,284 --> 01:00:19,024
+Hocam hocam.
+
+716
+01:00:19,064 --> 01:00:19,384
+Efendim?
+
+717
+01:00:20,904 --> 01:00:25,484
+Ya ben herhalde orayı biraz da kaçırdım bilmiyorum ama hani mostly increase kısmı yapmıştık ya.
+
+718
+01:00:25,864 --> 01:00:26,244
+Evet.
+
+719
+01:00:26,644 --> 01:00:30,864
+Orada birebir değil de iki iki noktası hani birebir de niye maksimum?
+
+720
+01:00:31,584 --> 01:00:32,624
+Birebir.
+
+721
+01:00:32,624 --> 01:00:34,104
+Bir saniye.
+
+722
+01:00:35,704 --> 01:00:38,904
+Örnekte miydi yoksa genel olarak hangi örnekteydi?
+
+723
+01:00:39,124 --> 01:00:40,384
+Bir iki üç maddeli.
+
+724
+01:00:40,584 --> 01:00:41,004
+Üç maddeli.
+
+725
+01:00:41,544 --> 01:00:41,804
+Bu mu?
+
+726
+01:00:43,404 --> 01:00:43,984
+Evet.
+
+727
+01:00:44,104 --> 01:00:45,584
+Şu hani most repeat lead.
+
+728
+01:00:46,144 --> 01:00:46,484
+Evet.
+
+729
+01:00:47,124 --> 01:00:50,364
+Bu noktanın özellikle burada verilmiş ya.
+
+730
+01:00:50,904 --> 01:00:51,164
+Evet.
+
+731
+01:00:52,044 --> 01:00:53,404
+Bu ikiye iki noktası olsaydı.
+
+732
+01:00:54,364 --> 01:00:55,004
+Tamam.
+
+733
+01:00:55,164 --> 01:00:58,044
+İkiye iki noktası olsaydı Nabla F'in ona göre değişecekti.
+
+734
+01:00:58,044 --> 01:01:02,604
+Çünkü Nabla F'in genel hali bu.
+
+735
+01:01:03,664 --> 01:01:05,004
+Ne zaman en çok artıyor?
+
+736
+01:01:05,124 --> 01:01:06,423
+O noktayı yerine yazdığında.
+
+737
+01:01:06,544 --> 01:01:12,104
+Bir bir noktası değil de iki iki olsaydı o zaman iki virgül iki yönünde maksimum artardı.
+
+738
+01:01:12,104 --> 01:01:14,864
+Yani şöyle düşün.
+
+739
+01:01:15,324 --> 01:01:19,964
+Senin bir araban var ve rüzgar da sana müdahale ediyor.
+
+740
+01:01:20,644 --> 01:01:23,524
+Şimdi en hızlı nasıl hızlanırsın?
+
+741
+01:01:23,524 --> 01:01:26,564
+Eğer rüzgar da seninle aynı yönde olursa ne yapacak?
+
+742
+01:01:26,664 --> 01:01:28,064
+Sana bir itici kuvvet uygulayacak.
+
+743
+01:01:28,204 --> 01:01:29,664
+Sonuçta en hızlı artacaksın.
+
+744
+01:01:30,144 --> 01:01:31,864
+Onunla aynı yönde olursa artar.
+
+745
+01:01:33,464 --> 01:01:36,564
+Azalma düşünürsen seni geri doğru çekerse ne yapacaksın?
+
+746
+01:01:36,684 --> 01:01:39,124
+Sen gitmeye çalışırken o seni geri çekmeye çalışacak.
+
+747
+01:01:39,544 --> 01:01:40,484
+O zaman ne yapacaksın?
+
+748
+01:01:40,784 --> 01:01:41,424
+Yavaşlayacaksın.
+
+749
+01:01:41,624 --> 01:01:45,264
+O zaman da eksinabla F yönünde en hızlı azalma oluyor.
+
+750
+01:01:45,924 --> 01:01:51,564
+Hiç azalma yani hiçbir değişim olmasını istiyorsan o zaman ya yukarı ya da aşağı yönlü olması lazım ki
+
+751
+01:01:51,564 --> 01:01:53,464
+senin hareket ettiremesi.
+
+752
+01:01:54,931 --> 01:01:58,451
+O noktaya göre de değişiyor.
+
+753
+01:01:58,571 --> 01:02:00,451
+Bir bir noktası da ben kendim verdim.
+
+754
+01:02:00,831 --> 01:02:04,511
+Ama diyelim ki 3-4 noktası olursa nabla f'in yönü değişecektir.
+
+755
+01:02:04,891 --> 01:02:10,471
+Ama her zaman en hızlı aynı yönde, ikisi aynı yöndeyse en hızlı artar.
+
+756
+01:02:10,951 --> 01:02:14,731
+Biri eksi yöndeyse eksi nabla f yönünde de en hızlı azalır.
+
+757
+01:02:14,831 --> 01:02:15,951
+Her zaman bu böyledir.
+
+758
+01:02:17,551 --> 01:02:18,131
+Anladın mı?
+
+759
+01:02:18,611 --> 01:02:19,211
+Anladım.
+
+760
+01:02:19,611 --> 01:02:19,831
+Tamam.
+
+761
+01:02:20,371 --> 01:02:21,911
+Var mı arkadaşlar başka sorumuz?
+
+762
+01:02:21,911 --> 01:02:24,591
+Tamam.
+
+763
+01:02:24,791 --> 01:02:27,931
+So if you don't have another question, let's finish for today.
+
+764
+01:02:28,171 --> 01:02:31,991
+Next week on Wednesday at 1 o'clock, we will see again.
+
+765
+01:02:32,431 --> 01:02:38,751
+Please, until that time, review your subjects, especially serious.
+
+766
+01:02:39,692 --> 01:02:42,711
+And please try to solve the test questions.
+
+767
+01:02:43,051 --> 01:02:46,751
+If you have any problem or any question, you can write from WhatsApp.
+
+768
+01:02:46,971 --> 01:02:47,192
+Okay?
+
+769
+01:02:48,231 --> 01:02:48,692
+Okay.
+
+770
+01:02:48,771 --> 01:02:50,171
+Have a good weekend to everyone.
+
+771
+01:02:50,171 --> 01:02:50,891
+Bye-bye.
