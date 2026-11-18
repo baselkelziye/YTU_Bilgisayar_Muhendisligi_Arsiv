@@ -28,3 +28,4 @@
 | 38 | Güz | İsmail Doğru | [sube_38/](sube_38/) |
 | 39 | Güz | Sibel Atmaca | [sube_39/](sube_39/) |
 | 40 | Güz | Ebru Osborne | [sube_40/](sube_40/) |
+| 41 | Güz | Kılıç (adı bulunamadı) | [sube_41/](sube_41/) |
