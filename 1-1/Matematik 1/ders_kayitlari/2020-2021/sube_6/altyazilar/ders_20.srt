@@ -1,0 +1,1899 @@
+1
+00:08:36,755 --> 00:08:38,415
+Merhaba arkadaşlar, sesim geliyor mu?
+
+2
+00:08:53,779 --> 00:09:01,519
+En son integral işliyorduk ve sinüs ve kosinüs ifadelerle ilgili bazı durumları gördük.
+
+3
+00:09:02,439 --> 00:09:12,259
+Aynı zamanda sinüs ve kosinüs ifadeleri bazı tipte integrallerin çözümünde de kullanıyoruz.
+
+4
+00:09:13,480 --> 00:09:16,319
+Bunlardan bir tanesi de karaköklü ifadeler.
+
+5
+00:09:16,319 --> 00:09:26,579
+Karaköklü ifadelerdeki karakökün içerisine karakökten dışarı çıkamak için sinüs, tanjant ve sekant ifadelerini kullanıyoruz.
+
+6
+00:09:27,959 --> 00:09:29,319
+Mesela bize...
+
+7
+00:09:33,587 --> 00:09:36,127
+a kare eksi x kare şeklinde bir ifade verdi.
+
+8
+00:09:36,908 --> 00:09:37,327
+Ya da
+
+9
+00:09:40,724 --> 00:09:51,244
+a kare artı x kare şeklinde bir ifade verdi. Ya da x kare x a kare şeklinde bir ifade verdi. Bunlar kara köklü ifadeler. İntegrenini almak zor. Ancak bununla beraber
+
+10
+00:09:51,244 --> 00:10:08,444
+biz eğer x eşittir a semüs tete dönüşüm yaparsak, x yerine a semüs tete yazarsak, bu a kare x kare ifadesini kara kökün içerisinden çıkarmak kolay.
+
+11
+00:10:08,444 --> 00:10:14,804
+sınav konularıyla ilgili bilgi vereyim arkadaşlar. 11. haftanın sonuna kadar.
+
+12
+00:10:20,179 --> 00:10:21,859
+Sınav tarihlerimiz belli oldu.
+
+13
+00:10:55,028 --> 00:10:58,207
+Sınav tarihleri burada arkadaşlar.
+
+14
+00:11:18,676 --> 00:11:24,876
+Google'a Mat 1071 Bolum'a yazın. Orada zaten dersin hafta hafta konuları çıkıyor.
+
+15
+00:11:26,396 --> 00:11:26,716
+Burada
+
+16
+00:11:36,916 --> 00:11:44,016
+konularda 11. haftanın, teşekkürler, 11. haftanın sonuna kadar.
+
+17
+00:11:52,467 --> 00:11:54,827
+Burada 11. haftanın sonuna kadar sorumlusunuz.
+
+18
+00:12:06,580 --> 00:12:21,259
+Yani belirli integraller için ortalama değer teoremi, kalkülüsün temel teoremi, temel teorem kısım 1, temel teorem kısım 2, integrasyon teknikleri, yerine koyma tekniği kısmı integrasyon, trigonometrik integraller ve indirgenme formülleri.
+
+19
+00:12:24,692 --> 00:12:48,871
+Trigonometrik değişken dönüşümleri, tanjant, theta bölü 2, burada şu an yaptığımızdan bahsediyor. x eşittir a tanjant, theta ve tanjant, pardon, tanjant x bölü 2 dönüşümü yapacağız en son konu olarak. Bu Föy'de ondan bahsediyor. Değişken değiştirme, rasyonel fonksiyonların kısmı iki sırlarla integrasyonu.
+
+20
+00:12:48,871 --> 00:12:58,871
+Bunlar da 12. haftanın konuları. Sonra da zaten belirli integralin uygulamalarına geçilecek. Belirli integralin uygulamalarında da
+
+21
+00:12:58,871 --> 00:13:09,272
+Yüzden bölgelerin alanların hesabı, iki eğri arasındaki alan, döner cisimlerin hacimleri, yay uzunluğu bu şekilde devam edecek.
+
+22
+00:13:15,572 --> 00:13:17,652
+Evet, tabii ki çalışma soruları vereceğim.
+
+23
+00:13:59,956 --> 00:14:04,056
+Panoloji'nin sayfasında da uygulamalar var arkadaşlar. Onlara da bakabilirsiniz.
+
+24
+00:14:28,500 --> 00:14:31,220
+ilk konulardan soru gelebilir mi? Gelebilir tabii ki.
+
+25
+00:14:32,360 --> 00:14:34,779
+Bütün konulardan sorumlusunuz şu ana kadar işlenen.
+
+26
+00:14:35,399 --> 00:14:37,139
+Ama daha çok son konulardan gelir.
+
+27
+00:14:41,460 --> 00:14:46,340
+Bunları hocam uygulamalarını da paylaşayım. Onun arada bakın arkadaşlar, örnek soru olarak.
+
+28
+00:16:35,412 --> 00:16:37,612
+Sınavla ilgili başka sorunuz var mı arkadaşlar?
+
+29
+00:16:45,235 --> 00:16:47,196
+Şimdi değişken dönüşümler dönelim.
+
+30
+00:16:48,135 --> 00:16:49,755
+Trigonometrik değişken dönüşümlerine.
+
+31
+00:16:55,124 --> 00:17:00,244
+Diyelim ki bize integralde a kare eksi x kare şeklinde bir ifade verdi, kare kök içerisinde.
+
+32
+00:17:01,704 --> 00:17:09,024
+Böyle durumlarda, yani bu şekilde bir terim içeren bir integralde, integrasyonla a kare eksi x kare ifadesini
+
+33
+00:17:12,852 --> 00:17:17,372
+x eşitir a sintete dönüşümüyle kare kökün içerisinden çıkarmak mümkün.
+
+34
+00:17:18,451 --> 00:17:25,772
+Yani x yerine a sintete yazdığımız zaman a kare x x kare ifadesi a kare x a kare sin kare tete oluyor.
+
+35
+00:17:27,292 --> 00:17:29,492
+A kare parantezinde burası nedir arkadaşlar?
+
+36
+00:17:29,492 --> 00:17:31,692
+A kare parantezinde.
+
+37
+00:17:37,044 --> 00:17:38,663
+1-sinkare tetadır.
+
+38
+00:17:40,324 --> 00:17:42,884
+Peki, 1-sinkare tetadır arkadaşlar?
+
+39
+00:18:05,971 --> 00:18:07,912
+Nedir 1x'in kare teta arkadaşlar?
+
+40
+00:18:10,951 --> 00:18:13,112
+Kos kare teta'dır değil mi?
+
+41
+00:18:14,331 --> 00:18:15,471
+A kare kos kare teta.
+
+42
+00:18:30,163 --> 00:18:34,364
+Burası kare kök, burası da kare kök. E bunu olarak çıkar dışarı arkadaşlar.
+
+43
+00:19:14,516 --> 00:19:16,936
+Bu da dışarı a cos theta olarak çıkar.
+
+44
+00:19:17,536 --> 00:19:18,396
+Karaköğün dışına.
+
+45
+00:19:19,635 --> 00:19:21,436
+Bakın burası zaten a cos theta.
+
+46
+00:19:22,536 --> 00:19:23,875
+Bu da a cos theta'dır.
+
+47
+00:19:26,396 --> 00:19:32,596
+Ve x eşittir a sin theta olunca, dx'de, yani x'in türevini alıyoruz.
+
+48
+00:19:33,875 --> 00:19:35,615
+a sin theta'nın türevini alıyoruz.
+
+49
+00:19:35,836 --> 00:19:37,556
+a cos theta, d theta oluyor.
+
+50
+00:19:38,615 --> 00:19:41,756
+dx yerine de a cos theta, d theta yazıyoruz.
+
+51
+00:19:41,756 --> 00:19:42,456
+integralde.
+
+52
+00:19:44,056 --> 00:19:45,615
+Dolayısıyla ne yapmış oluyoruz burada?
+
+53
+00:19:47,456 --> 00:19:49,176
+a kare eksi x kare ifadesini
+
+54
+00:19:49,176 --> 00:19:51,936
+kare kökünün dışına almış oluyoruz.
+
+55
+00:19:53,496 --> 00:19:56,296
+dx'i de theta cinsinden yazdığımız zaman
+
+56
+00:19:56,296 --> 00:19:58,375
+d theta cinsinden
+
+57
+00:20:02,036 --> 00:20:08,635
+x yerine teta yazmış oluyoruz. x eşittir, a sin teta dönüşümünü yapmış oluyoruz.
+
+58
+00:20:10,355 --> 00:20:16,676
+Ve aynı zamanda teta yerine de integral çözdükten sonra arksinüs x bölü a yazmamız gerekiyor.
+
+59
+00:20:17,316 --> 00:20:30,316
+Veya integral çözdükten sonra karşımıza sin teta, kosinüs teta, tanjant teta geldiğinde de şu üçgeni düşüneceğiz.
+
+60
+00:20:30,316 --> 00:20:31,936
+Bu üçgen nedir?
+
+61
+00:20:33,096 --> 00:20:35,336
+90 derecelik teta açılı bir üçgen.
+
+62
+00:20:36,135 --> 00:20:38,176
+Biz x eşittir, a sin teta demiştik.
+
+63
+00:20:38,796 --> 00:20:40,956
+Sin teta nedir? x bölü a'dır.
+
+64
+00:20:44,016 --> 00:20:47,596
+Sinüs tetası x bölü a olan dik üçgeni çiziyoruz.
+
+65
+00:20:48,916 --> 00:20:50,936
+Neden? Kosinüs tetayı bulacağız.
+
+66
+00:20:51,096 --> 00:20:52,796
+Kosinüs teta nedir bu durumda?
+
+67
+00:20:57,940 --> 00:21:20,559
+Nedir kosinüs teta arkadaşlar? Burada bu üçgeni baz alırsak. Sinüs teta karşı bölü hipotenüs. Yani x bölü a imiş. Bu kenarda kök içinde a kare eksi x kare. Kosinüs teta nedir? Komşu bölü hipotenüs. Yani kök içinde a kare eksi x kare bölü a.
+
+68
+00:21:20,559 --> 00:21:32,279
+A kare eksi x kare bölü a.
+
+69
+00:21:39,251 --> 00:21:40,672
+Tamam mı arkadaşlar burası?
+
+70
+00:21:42,271 --> 00:21:44,991
+Şimdi bunu sonra da görelim. Nasıl yapıyoruz?
+
+71
+00:21:50,996 --> 00:21:52,016
+Burayı siliyorum.
+
+72
+00:22:01,044 --> 00:22:02,644
+Şu iki soru bununla ilgili.
+
+73
+00:22:05,204 --> 00:22:07,264
+Kökbeşin karesi x x kare burası.
+
+74
+00:22:09,264 --> 00:22:09,944
+Üzeri
+
+75
+00:22:09,944 --> 00:22:14,024
+3 bölü 2.
+
+76
+00:22:14,804 --> 00:22:15,104
+Yani
+
+77
+00:22:15,104 --> 00:22:19,344
+aslında kökbeşin karesi
+
+78
+00:22:26,228 --> 00:22:27,368
+x kare
+
+79
+00:22:36,019 --> 00:22:49,940
+x'nin küpünün kare kükü. Değil mi arkadaşlar? Bu şekilde. 5-x kare üzeri 3 bölü 2 ifadesi aslında kök 5'in karısı. x'nin küpünün kare kükü.
+
+80
+00:22:52,619 --> 00:22:58,119
+Bakın, a kare x' x kare şeklinde bir ifade var burada. O zaman bu ifadeyi kullanacağız.
+
+81
+00:22:58,119 --> 00:23:04,859
+kullanalım. x eşittir, a sintata dönüşümü yapıyorduk.
+
+82
+00:23:04,960 --> 00:23:09,379
+a'mız ne? Kök 5. x eşittir, kök 5 sintata dönüşümü yapacağız.
+
+83
+00:23:09,920 --> 00:23:12,000
+x eşittir, kök 5 sintata dönüşümü yaptık.
+
+84
+00:23:13,500 --> 00:23:14,359
+dx nedir?
+
+85
+00:23:15,680 --> 00:23:18,599
+Kök 5, cos theta, d tetadır.
+
+86
+00:23:18,599 --> 00:23:20,099
+Aynı zamanda
+
+87
+00:23:20,099 --> 00:23:28,420
+kösz
+
+88
+00:23:23,700 --> 00:23:25,759
+Kök içinde 5 eksi x kare nedir?
+
+89
+00:23:27,460 --> 00:23:28,440
+5 eksi x kare.
+
+90
+00:23:29,860 --> 00:23:32,799
+5 eksi kök 5 sin tata'nın karesi.
+
+91
+00:23:33,380 --> 00:23:34,680
+5 sin kare tata değil mi?
+
+92
+00:23:35,200 --> 00:23:36,720
+5 eksi 5 sin kare tata.
+
+93
+00:23:37,000 --> 00:23:40,279
+Yani 5 parantezinde 1 eksi sin kare tata.
+
+94
+00:23:42,980 --> 00:23:45,720
+1 eksi sin kare tata kos kare tata'dır.
+
+95
+00:23:45,720 --> 00:23:51,700
+Bu da kök 5 kos tata olarak dışarı çıkar kare kökte.
+
+96
+00:23:53,700 --> 00:23:58,480
+Bakın kare kök 5 eksi x kare kök 5 kos tata.
+
+97
+00:23:59,779 --> 00:24:01,640
+Bu ifadenin küpünü almalıydık.
+
+98
+00:24:02,940 --> 00:24:05,200
+Yani şu üçü dışarıda taşıyabiliriz.
+
+99
+00:24:06,080 --> 00:24:08,480
+Bu ifadenin küpünü alacağız.
+
+100
+00:24:09,700 --> 00:24:13,100
+O zaman 5 kök 5 de kök 5 kos tata'nın küpü nedir?
+
+101
+00:24:13,400 --> 00:24:14,320
+Bunun küpünü alalım.
+
+102
+00:24:15,980 --> 00:24:21,420
+5 kök 5
+
+103
+00:24:21,420 --> 00:24:23,539
+kos küp
+
+104
+00:24:23,700 --> 00:24:27,019
+Venni verði vinmerkadesslar.
+
+105
+00:24:27,019 --> 00:24:29,460
+Kos küpüttetunar.
+
+106
+00:24:36,756 --> 00:24:42,696
+5 kök 5 cos3tta.
+
+107
+00:24:44,855 --> 00:24:47,696
+dx yerine de kök 5 cos3tta dtta yazıyoruz.
+
+108
+00:24:52,372 --> 00:24:54,332
+O zaman kök 5 ile kök 5 gitti.
+
+109
+00:24:55,172 --> 00:24:57,272
+Cos theta ile cos küp gitti.
+
+110
+00:24:57,491 --> 00:24:58,512
+Cos kare kaldı burada.
+
+111
+00:24:59,872 --> 00:25:01,991
+Yani 1 bölü 5'i dışarı çıkartırsak.
+
+112
+00:25:03,052 --> 00:25:03,852
+Payda da 5 var.
+
+113
+00:25:03,971 --> 00:25:05,172
+Bunu dışarı çıkartırsak.
+
+114
+00:25:05,332 --> 00:25:06,352
+Sekant kare theta.
+
+115
+00:25:07,132 --> 00:25:08,172
+D theta kaldı.
+
+116
+00:25:08,612 --> 00:25:09,532
+Bu integral nedir?
+
+117
+00:25:10,192 --> 00:25:11,172
+Tanjantın türevi neydi?
+
+118
+00:25:11,332 --> 00:25:12,012
+Sekant kareydi.
+
+119
+00:25:12,072 --> 00:25:12,892
+1 bölü cos kareydi.
+
+120
+00:25:13,852 --> 00:25:15,012
+1 bölü cos kare kaldı.
+
+121
+00:25:15,132 --> 00:25:15,951
+Sekant kare dedik.
+
+122
+00:25:16,711 --> 00:25:19,032
+Bu da integralden tanjant theta olarak çıkar.
+
+123
+00:25:19,032 --> 00:25:20,072
+Sekant kare theta.
+
+124
+00:25:20,352 --> 00:25:21,211
+Tanjant theta'dır.
+
+125
+00:25:21,211 --> 00:25:23,312
+1 bölü 5 tanjant theta artı c oldu.
+
+126
+00:25:25,152 --> 00:25:27,772
+Bu tanjant theta'yı nasıl elde ediyorduk biz?
+
+127
+00:25:31,632 --> 00:25:33,332
+Tanjant theta'yı şöyle elde ediyoruz.
+
+128
+00:25:35,992 --> 00:25:38,892
+Tanjant theta için bir üçgen çiziyorduk.
+
+129
+00:25:41,512 --> 00:25:42,492
+Biz bakın.
+
+130
+00:25:42,971 --> 00:25:45,231
+X eşitli kök 5 sinteta dönüşümü yaptık.
+
+131
+00:25:46,052 --> 00:25:47,471
+O zaman benim sintetam ne?
+
+132
+00:25:53,460 --> 00:25:54,840
+x bölü kök 5
+
+133
+00:25:54,840 --> 00:25:56,779
+Bilmiyorum arkadaşlar.
+
+134
+00:26:08,051 --> 00:26:17,311
+sin teta x bölü kök 5, yani karşı bölü hipotenüs. x bölü kök 5, karşı bölü hipotenüs arkadaşlar.
+
+135
+00:26:18,511 --> 00:26:30,771
+sin teta x bölü kök 5 ise, bu dik üçgenle hipotenüs kök 5, karşı kenar x, o zaman bu kenar,
+
+136
+00:26:34,516 --> 00:26:36,316
+Kök içinde 5xx kare olur.
+
+137
+00:26:37,635 --> 00:26:43,756
+O zaman tanjant teta ne olur? Karşı bölü komşu. Yani x bölü kök içinde 5xx kare olur.
+
+138
+00:26:44,976 --> 00:26:47,976
+Tanjant teta'yı da buradan yazdık arkadaşlar.
+
+139
+00:26:48,236 --> 00:26:49,536
+Bu soruda anlaşılmayan bir yer var mı?
+
+140
+00:28:42,548 --> 00:28:58,768
+Şimdi diğer örneğe bakalım. Bunda da 1-x kare şeklinde bir ifade var. x eşittir 1 sinteta dönüşümü yapacağız. a kare 1'miş çünkü. a kare eksi x kare var. a kare 1. x eşittir sinteta dönüşümü yapacağız.
+
+141
+00:28:58,768 --> 00:29:05,928
+d x eşittir cos theta d theta olacak.
+
+142
+00:29:07,028 --> 00:29:10,488
+Kök içinde 1-x kare de dolayısıyla ne olacak? 1-sin kare theta.
+
+143
+00:29:11,208 --> 00:29:14,087
+Kök içinde cos kare theta. cos theta olarak dışarı çıkacak.
+
+144
+00:29:20,084 --> 00:29:38,564
+Yani x kare dx bölü kök içinde 1-x x kare integralinde x kare yerine x yerine sin theta yazdığımız için sin kare theta, 1-x kare de kök içinde 1-x kare yerine kos theta, dx yerine de kos theta d theta yazacağız arkadaşlar.
+
+145
+00:29:38,564 --> 00:30:04,644
+Kos theta, dx. Bu kos theta'lar birbirini götürdü. Sin kare dx kaldı. Böyle ifadeleri nasıl çözüyordum? Kos kareli sin kareli ifadeleri basitleştiriyordum. 1-x 2 theta bölü 2 yazacağım bunun yerine. Bu da theta bölü 2. Bakın artık x'e göre değil integrasyon, theta'ya göre. Yani 1 bölü 2 dx ya da integral dx, theta olarak çıkacak.
+
+146
+00:30:09,715 --> 00:30:11,995
+Çünkü integral dx neydi? x'ti.
+
+147
+00:30:13,415 --> 00:30:15,295
+Integral dteta da teta olacak.
+
+148
+00:30:16,675 --> 00:30:19,815
+Yani integrali teta cinsinden alıyorum arkadaşlar.
+
+149
+00:30:21,995 --> 00:30:28,315
+Dolayısıyla cos2teta bölü 2 integralinde sin2teta bölü 4 olarak alacağım.
+
+150
+00:30:29,675 --> 00:30:30,795
+Artı c.
+
+151
+00:30:30,795 --> 00:30:39,295
+teta bölü 2 eksi sin2teta yerine 2 sin2teta costeta yazdım.
+
+152
+00:30:47,188 --> 00:30:51,807
+sin teta, kos teta bölü 2 oldu burası. Şimdi bunları yerine yazacağım.
+
+153
+00:30:52,768 --> 00:31:03,508
+teta'ya ne demiştim? sin teta x bölü 1'de, bakın karşı bölü hipotenüs, karşısı x hipotenüsü 1, komşu kenarda kökçene 1-x kare olacak.
+
+154
+00:31:04,668 --> 00:31:11,488
+teta zaten x eşittir sin teta olduğu için teta aksinüs x. teta yerine aksinüs x yazdım.
+
+155
+00:31:11,488 --> 00:31:19,868
+sin teta ve kos teta yerine de, sin teta yerine x bölü 1, kos teta yerine kökçene 1-x kare bölü 1 olacak.
+
+156
+00:31:20,708 --> 00:31:24,488
+x bölü 1, kökçene 1-x kare bölü 1 arkadaşlar.
+
+157
+00:31:24,688 --> 00:31:25,708
+sin teta ve kos teta.
+
+158
+00:31:27,088 --> 00:31:28,668
+zaten payda da 2 vardı.
+
+159
+00:31:29,168 --> 00:31:31,628
+1 bölü 2 de çarpım olarak geldi başıma.
+
+160
+00:31:32,768 --> 00:31:39,528
+Dolayısıyla, burası arksinüs x bölü 2, x 1 bölü 2, x kökçene 1-x kare artı c olarak elde edilir arkadaşlar.
+
+161
+00:32:42,708 --> 00:32:48,788
+Bu sorularla ilgili anlaşılmayan bir kısım var mı arkadaşlar? Trigonometrik dönüşümlerle ilgili.
+
+162
+00:32:53,619 --> 00:32:55,939
+Anlaşıldı diyenler bire bassın yorumlardan.
+
+163
+00:33:01,907 --> 00:33:02,847
+Teşekkürler.
+
+164
+00:35:20,019 --> 00:35:22,019
+Şimdi diğer dönüşüme bakalım.
+
+165
+00:35:25,844 --> 00:35:27,684
+Herhalde anlaşılmayan bir kısım yok.
+
+166
+00:35:34,963 --> 00:35:37,864
+x eşittir a tanjant tete dönüşümü.
+
+167
+00:35:41,268 --> 00:35:52,228
+Eğer integralde bize kök içinde a kare artı x kare ya da kök içinde olmayabilir a kare artı x kare şeklinde ifade varsa.
+
+168
+00:35:53,387 --> 00:35:58,487
+Bu ifadeyi basitleştirmenin bir yolu x eşitir a tanjant tete demek.
+
+169
+00:35:59,867 --> 00:36:11,188
+x eşitir a tanjant tete dediğimiz zaman kök içinde a kare artı x kare ifadesi a kare artı a kare tanjant kare tete oluyor.
+
+170
+00:36:11,268 --> 00:36:14,487
+a kare parantezinde bir artı tanjant tete.
+
+171
+00:36:14,487 --> 00:36:16,088
+1 artı tanjant kare tete neydi?
+
+172
+00:36:16,768 --> 00:36:18,907
+1 artı tanjant kare tete.
+
+173
+00:36:59,699 --> 00:37:01,919
+a kare parantezine 1 artı tan kare tatada,
+
+174
+00:37:01,919 --> 00:37:05,480
+1 artı,
+
+175
+00:37:12,500 --> 00:37:13,699
+x kare, kos kare
+
+176
+00:37:31,987 --> 00:37:37,627
+Yani kos kare artı sin kare bölü kos kare, o da 1 bölü kos kare, oradan sekant kare olacak.
+
+177
+00:37:38,768 --> 00:37:45,707
+Yani sekant kare teta, o da a sekant teta olarak dışarı çıkıyor integralden.
+
+178
+00:37:45,707 --> 00:37:52,788
+x eşitir a tanjant teta'nın türevini alırsak da dx eşitir a sekant kare teta, d teta oluyor.
+
+179
+00:37:52,788 --> 00:38:02,627
+Ve bunu integral çözdükten sonra sinüs ve kosinüsü belirlemek istersek de, teta açılı bir dik üçgen çiziyoruz.
+
+180
+00:38:05,607 --> 00:38:09,887
+Bakın, tanjant teta x bölü a, karşı bölü komşu x bölü a olacak.
+
+181
+00:38:10,047 --> 00:38:12,007
+Hipotenüs de kök içinde x kare artı a kare.
+
+182
+00:38:12,007 --> 00:38:19,347
+Mesela bu üçgen çizgü kare artı a kare olacak.
+
+183
+00:38:20,347 --> 00:38:23,248
+Kosinüsü a bölü kök içinde x kare artı a kare olacak.
+
+184
+00:38:24,487 --> 00:38:27,447
+Tanjantı da zaten x bölü a olarak biz belirledik.
+
+185
+00:38:28,127 --> 00:38:29,827
+Burada anlaşılmayan bir şey var mı arkadaşlar?
+
+186
+00:40:58,068 --> 00:41:03,228
+Şimdi burada anlaşılmayan bir şey yoksa x eşitir a tanjantı tıra dönüşümüyle ilgili sorulara bakalım.
+
+187
+00:41:08,148 --> 00:41:10,288
+x eşit A tanjant ya da dönüşümünde.
+
+188
+00:41:14,675 --> 00:41:17,456
+x kare artı a kare ile ifadeler bulunuyor.
+
+189
+00:41:19,056 --> 00:41:21,295
+Bakın bu iki soru da bununla ilgili.
+
+190
+00:41:29,012 --> 00:41:32,372
+dx bölü, mesela burada
+
+191
+00:41:40,019 --> 00:41:41,880
+Kök içinde 4 artı x kare var.
+
+192
+00:41:46,483 --> 00:41:49,203
+Kök içinde olmasaydı ar tanjant falan diyebilirdik.
+
+193
+00:41:49,304 --> 00:41:54,744
+Ancak kare kök içerisinde ve arksinus x falan gibi bir ifade değil.
+
+194
+00:41:54,864 --> 00:41:55,784
+4 artı x kare.
+
+195
+00:41:56,503 --> 00:42:02,264
+Bunu dönüştürmek için x eşittir 2 tanjant eta dönüşümünü yapacağız.
+
+196
+00:42:02,963 --> 00:42:05,623
+Yani bunu kare kökün içerisinden kurtarmamız lazım.
+
+197
+00:42:06,903 --> 00:42:09,003
+Mesela u desek yine çıkmıyor.
+
+198
+00:42:09,143 --> 00:42:10,543
+u kare desek yine çıkmıyor.
+
+199
+00:42:10,824 --> 00:42:14,264
+Yani bunu kare kökün içerisinden çıkarmamız çok zor.
+
+200
+00:42:14,264 --> 00:42:17,884
+Ancak x eşittir 2 tanjant eta dönüşümünü yaptığımız zaman
+
+201
+00:42:17,884 --> 00:42:22,483
+dx eşittir 2 sekant kare teta d teta diyoruz.
+
+202
+00:42:23,824 --> 00:42:25,304
+Tanjantın türevi sekant kare.
+
+203
+00:42:26,543 --> 00:42:28,844
+Kök içinde 4 artı x kare de 4 artı
+
+204
+00:42:28,844 --> 00:42:33,884
+2'nin karesi tanjant kare teta.
+
+205
+00:42:34,403 --> 00:42:36,583
+Yani 4 çarpı 1 artı tan kare teta.
+
+206
+00:42:36,784 --> 00:42:39,143
+4 çarpı sekant kare teta.
+
+207
+00:42:39,443 --> 00:42:42,264
+O da kare kökün içerisinden 2 sekant eta olarak dışarı çıkıyor.
+
+208
+00:42:42,264 --> 00:42:45,884
+Kare kök 4 artı x kare yerine 2 sekant eta yazdım.
+
+209
+00:42:48,884 --> 00:42:50,603
+Diğerine de bakın
+
+210
+00:42:50,603 --> 00:42:55,884
+2 sekant kare d teta yazdım.
+
+211
+00:42:57,884 --> 00:42:58,943
+Ne oldu?
+
+212
+00:42:59,344 --> 00:43:02,503
+Bu sekant karenin karesiyle buradaki sekant gitti.
+
+213
+00:43:03,143 --> 00:43:04,284
+İkiler gitti.
+
+214
+00:43:05,023 --> 00:43:05,583
+Ne kaldı?
+
+215
+00:43:05,943 --> 00:43:08,143
+Sekant teta d teta kaldı.
+
+216
+00:43:08,943 --> 00:43:10,563
+İntegral sekant teta d teta.
+
+217
+00:43:10,563 --> 00:43:15,623
+Bunu çözmek için de sekant teta artı tanjant teta ile çarpıp bölüyordum ifadeyi.
+
+218
+00:43:39,923 --> 00:43:48,483
+Bununla çarptığımızda sekant teta artı tanjant teta sekant teta çarpı sekant teta artı tanjant teta sekant teta artı tanjant teta'nın türevi oluyor.
+
+219
+00:43:49,304 --> 00:43:51,563
+Bölü sekant teta artı tanjant teta oluyor.
+
+220
+00:43:52,063 --> 00:43:57,903
+Yani sekant teta artı tanjant teta'nın türevi bölü bu ifadenin türevi bölü bu ifade oluyor.
+
+221
+00:43:58,443 --> 00:44:01,923
+O da elen sekant teta artı tanjant teta olarak dışarı çıkıyor arkadaşlar.
+
+222
+00:44:02,943 --> 00:44:06,083
+Şimdi sekant teta ve tanjant teta'yı da yerine yazmam lazım.
+
+223
+00:44:06,083 --> 00:44:12,143
+Bu bir sonuç değil çünkü ben teta dönüşümü yaptım ama bana integral x cinsinden verilmiş.
+
+224
+00:44:12,244 --> 00:44:13,943
+Tekrar x'e dönüştürmem lazım.
+
+225
+00:44:16,304 --> 00:44:21,824
+Tanjant teta x bölü 2 ile karşı bölü komşu x bölü 2 olacak.
+
+226
+00:44:22,043 --> 00:44:23,943
+Hipotenüs de kök içine 4 artı x kare.
+
+227
+00:44:24,724 --> 00:44:27,384
+Sekant teta yerine kosinüs teta nedir?
+
+228
+00:44:27,503 --> 00:44:29,224
+2 bölü kök içine 4 artı x kare.
+
+229
+00:44:30,364 --> 00:44:31,844
+E sekant teta nedir?
+
+230
+00:44:31,943 --> 00:44:34,403
+Tam tersi kök 4 artı x kare bölü 2'dir.
+
+231
+00:44:34,403 --> 00:44:39,003
+Tanjant teta zaten en başta dönüşümde verdiğim x bölü 2'dir.
+
+232
+00:44:39,324 --> 00:44:42,023
+Tanjant teta yerine de x bölü 2 yazdım arkadaşlar.
+
+233
+00:44:42,224 --> 00:44:47,063
+Yani elen kök içine 4 artı x kare bölü 2 artı x bölü 2 artı c olarak elde etmiş oldum.
+
+234
+00:44:47,143 --> 00:44:48,204
+Burada anlaşılmayan bir şey var mı?
+
+235
+00:44:48,204 --> 00:44:48,643
+Tanjant teta yerine de x bölü 2 artı x bölü 2 artı x bölü 2 artı x bölü 2 artı x bölü 2 artı x bölü 2 artı x bölü 2 artı x bölü 2 artı x bölü 2 artı x bölü 2 artı x bölü 2 artı x bölü 2 artı x bölü 2 artı x bölü 2 artı x bölü 2 artı x bölü 2 artı x bölü 2 artı x bölü 2 artı x bölü 2 artı x bölü 2 artı x bölü 2 artı x bölü 2 artı x bölü 2 artı x bölü 2 artı x bölü 2 artı x bölü 2 artı x bölü 2 artı x bölü 2 artı x bölü 2 artı x bölü 2 artı x bölü 2 artı x bölü 2 artı x bölü 2 artı x bölü 2 artı x bölü 2 artı x bölü
+
+236
+00:48:00,307 --> 00:48:02,728
+Bu soruda 1 artı 9x kare vermiş.
+
+237
+00:48:03,327 --> 00:48:05,568
+Yani 3x'in karesi gibi düşüneceğiz burayı.
+
+238
+00:48:07,208 --> 00:48:08,168
+3x eşittir.
+
+239
+00:48:09,027 --> 00:48:10,168
+A tanjant teta.
+
+240
+00:48:10,268 --> 00:48:11,027
+A'mızı ne? 1.
+
+241
+00:48:11,628 --> 00:48:13,588
+3x eşittir tanjant teta diyoruz.
+
+242
+00:48:15,168 --> 00:48:17,367
+Dolayısıyla 3dx eşittir.
+
+243
+00:48:17,628 --> 00:48:19,608
+Sekant kare teta d teta oldu.
+
+244
+00:48:19,847 --> 00:48:20,827
+Türevini aldık.
+
+245
+00:48:21,088 --> 00:48:22,027
+3dx eşittir.
+
+246
+00:48:22,168 --> 00:48:24,487
+Tanjant teta'nın türevü sekant kare teta d teta.
+
+247
+00:48:24,487 --> 00:48:30,827
+1 artı 9x kare yerine de sekant kare teta yazıyorum.
+
+248
+00:48:30,947 --> 00:48:32,507
+Çünkü bakın 1 artı 9x kare
+
+249
+00:48:32,507 --> 00:48:38,168
+1 artı tanjant kare teta oluyor.
+
+250
+00:48:38,588 --> 00:48:41,467
+1 artı tan kare teta da sekant kare teta idi.
+
+251
+00:48:42,588 --> 00:48:46,108
+1 artı 9x kare yerine sekant kare teta yazdım.
+
+252
+00:48:46,168 --> 00:48:46,967
+Bunun karesini almış.
+
+253
+00:48:47,027 --> 00:48:49,088
+Sekant karenin karesi sekant 4 teta.
+
+254
+00:48:49,887 --> 00:48:53,248
+Yukarıda dx yerine de sekant kare teta d teta yazdım.
+
+255
+00:48:53,248 --> 00:48:56,047
+Bakın burada kare köklü bir ifade yok.
+
+256
+00:48:57,168 --> 00:49:00,387
+1 artı 9x karenin kare kökü değil karesini almış.
+
+257
+00:49:01,208 --> 00:49:01,768
+Ne demiştik?
+
+258
+00:49:01,827 --> 00:49:04,347
+A kare artı x kare kare kök içinde olabilir.
+
+259
+00:49:04,967 --> 00:49:10,288
+Ya da integralin içerisinde A kare artı x kare ile ifadeler olabilir.
+
+260
+00:49:11,668 --> 00:49:14,847
+A kare artı x kare ile ifadeler olabilir.
+
+261
+00:49:15,827 --> 00:49:19,867
+Dolayısıyla bakın sekant kare teta gider.
+
+262
+00:49:20,628 --> 00:49:22,387
+Burası 2 olur.
+
+263
+00:49:23,248 --> 00:49:25,847
+1 bölü sekant kare teta olur.
+
+264
+00:49:26,047 --> 00:49:29,068
+Yani 1 bölü sekant kare de kos karedir.
+
+265
+00:49:29,248 --> 00:49:30,327
+1 bölü 3 var başta.
+
+266
+00:49:30,748 --> 00:49:32,268
+Kos kare teta d teta olur.
+
+267
+00:49:32,367 --> 00:49:33,748
+Kos kareyi nasıl hesaplıyorduk?
+
+268
+00:49:34,407 --> 00:49:35,248
+Kos kare yerine
+
+269
+00:49:35,248 --> 00:49:40,547
+1 artı kos 2 teta bölü 2 yazıyorduk arkadaşlar.
+
+270
+00:49:42,208 --> 00:49:44,628
+1 artı kos 2 teta bölü 2 yazıyorduk.
+
+271
+00:49:44,628 --> 00:49:48,927
+1 bölü 6 parantezinde
+
+272
+00:49:48,927 --> 00:49:53,527
+1 bölü 3 şart 1 bölü 2 1 bölü 6 oldu.
+
+273
+00:49:54,588 --> 00:49:57,688
+1 d teta teta olarak dışarı çıkar.
+
+274
+00:49:58,547 --> 00:50:01,907
+Kos 2 teta bölü 2 de sin 2 teta bölü.
+
+275
+00:50:02,447 --> 00:50:04,688
+Kos 2 teta da sin 2 teta bölü 2 olur.
+
+276
+00:50:04,688 --> 00:50:08,188
+1 bölü 3 şart 1 bölü 2'yi 1 bölü 6 olarak dışarı çıkardım.
+
+277
+00:50:09,088 --> 00:50:13,588
+Kos 2 teta yerine de sin 2 teta bölü 2 yazdım arkadaşlar.
+
+278
+00:50:14,887 --> 00:50:17,088
+Burası teta bölü 6.
+
+279
+00:50:19,088 --> 00:50:20,327
+1 bölü 6'yı dağıtıyorum.
+
+280
+00:50:20,907 --> 00:50:24,487
+Sin 2 teta yerine de 2 sin teta kos teta yazdığım zaman 2'ler gitti.
+
+281
+00:50:24,487 --> 00:50:27,847
+1 bölü 6 sin teta kos teta oldu burası.
+
+282
+00:50:27,847 --> 00:50:30,228
+Üçgenimi oluşturayım.
+
+283
+00:50:31,387 --> 00:50:33,228
+Tanjant teta 3x bölü 1.
+
+284
+00:50:33,847 --> 00:50:35,748
+Yani karşı kenar 3x.
+
+285
+00:50:36,248 --> 00:50:37,487
+Komşu kenar 1.
+
+286
+00:50:37,987 --> 00:50:40,427
+Hipotenüs de kök içinde 1 artı 9x kare olacak.
+
+287
+00:50:42,768 --> 00:50:43,347
+Teta'm ne?
+
+288
+00:50:44,007 --> 00:50:48,228
+Art tanjant 3x olacak.
+
+289
+00:50:51,307 --> 00:50:53,447
+Teta art tanjant 3x olacak.
+
+290
+00:50:53,648 --> 00:50:55,628
+Teta yerine art tanjant 3x yazdım.
+
+291
+00:50:55,688 --> 00:50:56,248
+Bölü 6.
+
+292
+00:50:56,248 --> 00:51:10,847
+Artı 1 bölü 6 parantezinde sin 3 teta yerine karşı bölü hipotenüs 3x bölü kök içinde 1 artı 9x kare çarpı kosün 3 teta yerine de 1 bölü kök içine 1 artı 9x kare yazacağım.
+
+293
+00:51:12,128 --> 00:51:13,327
+Artı c.
+
+294
+00:51:51,860 --> 00:52:01,840
+Evet, bu soruda anlaşılmayan bir kısım var mı? Biraz daha farklı verilmiş soru. 1 artı 9x kare. Aynı zamanda karesi var. Kara köklü bir ifade değil. Bu tarzda da verilebilir.
+
+295
+00:54:50,387 --> 00:55:04,847
+Evet, anlaşılmayan bir kısım yoksa burayı da geçiyorum. Son olarak da bir dönüşümüz daha var. x kare x'i a kare içeri. Bakın bu a kare x x kareden daha farklı.
+
+296
+00:55:04,847 --> 00:55:07,347
+a kare x x karede
+
+297
+00:55:07,347 --> 00:55:14,087
+a kare x x karede x eşitir a sinteta kullanıyorduk.
+
+298
+00:55:14,668 --> 00:55:16,047
+Burası x kare x a kare.
+
+299
+00:55:16,288 --> 00:55:18,867
+Kare kürk içerisinde x kare x a kare
+
+300
+00:55:24,788 --> 00:55:31,467
+Bu durumlarda x eşit a secant teta, secant teta o zaman ne olacak arkadaşlar?
+
+301
+00:55:50,195 --> 00:55:55,096
+secant theta eşittir.
+
+302
+00:55:57,795 --> 00:56:00,155
+Şu an sesim geliyor mu arkadaşlar?
+
+303
+00:56:01,315 --> 00:56:03,695
+Secant theta eşittir. x bölü a olacak.
+
+304
+00:56:08,083 --> 00:56:34,203
+Sekant teta işte x bölü alacağım. Kosinüs teta nedir o zaman arkadaşlar? Kosinüs teta a bölü x'tir değil mi? Kosinüs teta a bölü x'tir. Bakın kosinüs tetası a bölü pardon teta deyince a bölü x olan bir dik üçgen çiziyorum. Kosinüs teta bakın komşu bölü hipotenüs a bölü x'miş.
+
+305
+00:56:34,203 --> 00:56:52,203
+Bu kenar o zaman kökçinin x kare x'a akar olur. Dolayısıyla bunun sinüs tetası, kosinüs tetası, tanjant tetası kolaylıkla bulunur. Yani integrasyonu çözdükten sonra tanjant teta, sin teta, kos teta, kotanjant teta yerine yazabilirim.
+
+306
+00:56:53,763 --> 00:57:02,203
+İşlem kolaylığı için de tetayı 0 pi bölü 2 çeşitiyoruz. Bunun nedeni de zaten kare köklü ifadenin içerisinin pozitif olmasını sağlamak.
+
+307
+00:57:04,203 --> 00:57:34,183
+Şimdi kökçinin x kare x'a çözdük.
+
+308
+00:57:37,204 --> 00:57:57,144
+artı 1, sekant kare, teta. Demek ki o zaman sekant kare, eksi 1 nedir? Sekant kare, teta, eksi 1 nedir? Tanjant karedir. Bu da kare kök içinden a tanjant teta olarak çıkar. Yani a tanjant, tetadır burası.
+
+309
+00:57:57,144 --> 00:58:01,624
+x eşittir a sekant teta ise
+
+310
+00:58:05,876 --> 00:58:15,836
+x eşittir a sekant teta ise, dx eşittir a sekant teta, tanjant teta, d teta olur. Sekantın türevini aldık.
+
+311
+00:58:21,043 --> 00:58:31,163
+Üçgeni de çizdiğimiz zaman artık integralin çözümüne ulaşmış olur. Yani integral çözüp çıkan sonucu bu üçgene göre yazarız, tetaları.
+
+312
+00:58:32,203 --> 00:58:43,364
+Yine eğer secant theta varsa x bölü a yazarız. x varsa da, theta varsa da pardon, arc secant x bölü a yazarız.
+
+313
+00:58:43,364 --> 00:58:48,183
+Bakın, theta da arc secant x bölü a yazarız. Çünkü secant theta x bölü a yazarız.
+
+314
+00:58:49,263 --> 00:58:51,943
+Theta da arc secant x bölü a yazarız arkadaşlar.
+
+315
+00:58:57,907 --> 00:58:59,427
+Şimdi bunu örnek üzerinde görelim.
+
+316
+00:59:05,331 --> 00:59:33,451
+Kök içinde x kare eksi 4 ifadesi var bakın. x çarpı kök içinde x kare eksi 4 ifadesi var. Burası x kare eksi a kare şeklinde ifade. a2, x eşittir, 2 sekant teta dönüşümü yapacağım o zaman. dx ne olacak? 2 sekant teta, tanjant teta, d teta. Sekant teta'nın türevi neydi? Sekant teta, tanjant teta'ydı.
+
+317
+00:59:33,451 --> 00:59:36,471
+bir bölü kosinüsün türevini alın.
+
+318
+00:59:42,291 --> 00:59:45,132
+secant theta neydi? 1 bölü kosuz.
+
+319
+00:59:53,331 --> 01:00:14,071
+Şimdi bunun türevini alalım. Bakın, secant tethanın türevi, 1 bölü, kosinüsün türevi. Yani aslında, kosinüs teta üzeri, eksi 1'in türevi değil mi arkadaşlar?
+
+320
+01:00:23,411 --> 01:00:24,571
+Nedir bu arkadaşlar?
+
+321
+01:00:29,139 --> 01:00:30,159
+Nedir bu türev?
+
+322
+01:00:32,000 --> 01:00:34,440
+Kosinüs teta üzeri eksi birin türevi nedir arkadaşlar?
+
+323
+01:00:35,500 --> 01:00:36,279
+Ar mı yazabilen?
+
+324
+01:00:37,879 --> 01:00:38,879
+Yorumlardan yazın.
+
+325
+01:00:41,619 --> 01:00:43,559
+Kosinüs teta üzeri eksi birin türevi.
+
+326
+01:00:47,380 --> 01:00:49,000
+x ne olacak?
+
+327
+01:00:55,764 --> 01:00:56,604
+yok mu yapan?
+
+328
+01:01:02,835 --> 01:01:03,635
+Her neyse.
+
+329
+01:01:06,255 --> 01:01:08,035
+Kosinüs teta üzeri eksi birin türevi.
+
+330
+01:01:08,855 --> 01:01:10,635
+Öncelikle kosinüs teta üzeri.
+
+331
+01:01:13,275 --> 01:01:15,035
+Kosinüs teta üzeri.
+
+332
+01:01:48,500 --> 01:02:01,860
+kosinüs theta üzeri, eksi 2, eksi 1, eksi 1, eksi 1 de başa gelecek, eksi çarpı, bir de içerisinin türevi.
+
+333
+01:02:02,320 --> 01:02:04,860
+Değil mi? Kosinüs theta'nın türevi.
+
+334
+01:02:10,260 --> 01:02:22,180
+Kosinüs tethanın türevi nedir arkadaşlar? Sin tethanın türevi kosinüstü. Kosinüsün türevi eksi sinüs teta. Değil mi? Eksi sinüs teta.
+
+335
+01:02:22,540 --> 01:02:32,640
+Buradan ne elde ettik? Eksi eksi artı oldu. Bu eksi bu eksiyi artı yaptı. Ve ne oldu? Sin teta bölü kos kare teta oldu.
+
+336
+01:02:33,640 --> 01:02:36,560
+Bakın sin teta bölü kos kare teta oldu.
+
+337
+01:02:41,844 --> 01:02:43,503
+bölü kos kare tet oldu.
+
+338
+01:02:49,172 --> 01:02:52,992
+Yani sin theta bölük os theta çarpı 1 bölük os theta.
+
+339
+01:02:53,992 --> 01:02:55,192
+1 bölük os theta.
+
+340
+01:02:59,188 --> 01:03:04,228
+çarpı sin teta belükos teta.
+
+341
+01:03:14,228 --> 01:03:15,967
+sin tü tabeli, kos tü.
+
+342
+01:03:24,244 --> 01:03:28,724
+1 bölükos tete nedir? Sekant tete bakın. Yazdık buraya.
+
+343
+01:03:30,664 --> 01:03:37,344
+Sin bölükos da tanjant tete oldu. Yani sekant tete, tanjant tete, d tete oluyor sekant tete'nin türevi.
+
+344
+01:03:37,504 --> 01:03:39,423
+Sekant tete'nin türevi anlaşıldı mı arkadaşlar?
+
+345
+01:03:43,476 --> 01:03:49,576
+Ve böylelikle kök içinde x kare eksi 4 yerine de 4 çarpı sekant kare teta eksi 1.
+
+346
+01:03:49,936 --> 01:03:51,396
+2 tanjant teta çıktı bu da.
+
+347
+01:03:51,496 --> 01:03:56,736
+Sekant kare teta eksi 1 de 1 bölü kos kare eksi 1.
+
+348
+01:03:57,796 --> 01:04:01,396
+Buradan da tanjant kare teta olduğunu söylemiştik.
+
+349
+01:04:02,215 --> 01:04:04,236
+Tanjant kare teta artı 1 sekant kareydi.
+
+350
+01:04:04,856 --> 01:04:07,096
+Sekant kare teta eksi 1 de tanjant tetadır.
+
+351
+01:04:07,796 --> 01:04:12,076
+Dolayısıyla bu da 2 tanjant teta olarak kare kökünün dışına çıktı.
+
+352
+01:04:12,076 --> 01:04:13,675
+Ben ne yaptım arkadaşlar?
+
+353
+01:04:13,836 --> 01:04:17,816
+Kare köklü ifadedeki x kare eksi 4'ü kare kökten kurtardım.
+
+354
+01:04:18,456 --> 01:04:21,236
+2 tanjant teta olarak kare kökten kurtardım bunu.
+
+355
+01:04:21,816 --> 01:04:24,576
+Yukarısı 2 sekant teta tanjant teta d teta oldu.
+
+356
+01:04:25,316 --> 01:04:35,436
+Aşağısı x çarpı olduğu için x 2 sekant teta x çarpı 2 tanjant teta da bu kare köklü ifade arkadaşlar.
+
+357
+01:04:35,556 --> 01:04:36,596
+Kök içinde x kare eksi 4.
+
+358
+01:04:37,356 --> 01:04:39,956
+Sekant teta ve tanjant tetalar birbirini götürdü.
+
+359
+01:04:42,076 --> 01:04:44,195
+Bu ikiler birbirini götürdü.
+
+360
+01:04:45,635 --> 01:04:46,956
+Ne kaldı? 1 bölü 2.
+
+361
+01:04:47,916 --> 01:04:49,496
+Yani d teta bölü 2.
+
+362
+01:04:49,956 --> 01:04:51,496
+Bu da teta bölü 2 olarak çıkar.
+
+363
+01:04:51,976 --> 01:04:53,576
+Ya da 1 bölü 2 teta olarak çıkar.
+
+364
+01:04:56,016 --> 01:04:57,296
+Teta yerine ne yazacağım?
+
+365
+01:04:57,936 --> 01:04:59,175
+Sekant teta x bölü 2.
+
+366
+01:04:59,896 --> 01:05:03,916
+Teta da arg sekant x bölü 2 olacak arkadaşlar.
+
+367
+01:05:05,036 --> 01:05:06,256
+Arg sekant x bölü 2.
+
+368
+01:05:06,256 --> 01:05:07,096
+At...
+
+369
+01:05:07,096 --> 01:05:08,436
+Ahem.
+
+370
+01:05:14,099 --> 01:05:21,739
+Burada arc secant değil de sinüs, kosinüs, kotanjan, tanjant ifaden olsaydı ne olacaktı? Şöyle bir üçgen çizecektim.
+
+371
+01:05:22,559 --> 01:05:39,579
+Theta açılı. Thetanın kosinüsü, secant theta bakın x bölü 2. Kosinüs theta 2 bölü x o zaman. 2 bölü x. Burası ne olacak karakök içerisinde? Ne olacak bunun içerisinde arkadaşlar?
+
+372
+01:05:39,579 --> 01:05:42,339
+yazabilir misiniz yorumlara?
+
+373
+01:05:42,339 --> 01:05:43,339
+Ayy.
+
+374
+01:05:52,980 --> 01:05:53,900
+Yok mu bilen?
+
+375
+01:06:00,532 --> 01:06:12,452
+Teşekkürler. x kare eksi 4 olacak değil mi arkadaşlar? x kare eksi 4. Çok güzel. Kök içinde x kare eksi 4 olacak.
+
+376
+01:06:16,532 --> 01:06:29,312
+Bakın arkadaşlar, eğer sinüs, kosinüs olsaydı, buradaki mesaj sinüs olsaydı, sin theta yerine kökşinin x kare eksi 4 bölü x yazacaktık. Kosinüs olsaydı 2 bölü kökşinin x kare eksi 4 yazacaktık.
+
+377
+01:06:29,312 --> 01:06:50,532
+kotanjant olsaydı, tanjant olsaydı, dik üçgendeki köşelere bakıp, kenarlara bakıp, hipotenüse bakıp, kenar uzunluklarına, hipotenüsün uzunluğuna göre kosinüs, sinüs, tanjant ve kotanjantı belirleyecektik arkadaşlar.
+
+378
+01:08:13,172 --> 01:08:15,331
+Sonra da anlaşılabilen bir kısım var mı arkadaşlar?
+
+379
+01:08:33,876 --> 01:08:41,036
+Artık bundan sonra dönüşümler anlaşıldıysa, rasyonel fonksiyonların basit kesirlerle integrasyonuna geçeceğiz.
+
+380
+01:08:41,655 --> 01:08:47,275
+Basit kesirlere ayırma konusunu işleyeceğiz. Daha sonra da tanjant x bölü 2 dönüşümüne bakacağız.
+
+381
+01:08:47,896 --> 01:08:49,936
+Basit kesirlere ayırmada şunu yapıyoruz.
+
+382
+01:08:51,275 --> 01:08:51,876
+Diyelim ki bize...
+
+383
+01:08:55,764 --> 01:08:59,644
+5x-3 bölü x kare eksi 2x-3 şeklinde bir ifade verdi.
+
+384
+01:09:00,743 --> 01:09:06,364
+Bu ifadeyi a bölü x artı 1 artı b bölü x-3 şeklinde yazmaya çalışıyoruz.
+
+385
+01:09:07,003 --> 01:09:09,043
+Bu şekilde yazmaya çalışmamın amacı nedir?
+
+386
+01:09:10,184 --> 01:09:13,404
+Ben 5x-3 bölü x kare eksi 2x-3'ü
+
+387
+01:09:13,404 --> 01:09:16,404
+integralini çözerken
+
+388
+01:09:16,404 --> 01:09:19,003
+elenli olarak ifade edemem.
+
+389
+01:09:19,304 --> 01:09:21,984
+Bunun türevini alsak mesela x kare eksi 2x'in türevi
+
+390
+01:09:21,984 --> 01:09:25,604
+2x-2 olur ama burada 5x-3 var.
+
+391
+01:09:25,764 --> 01:09:27,884
+Yani bunu düzenlemek falan uzun iş.
+
+392
+01:09:27,944 --> 01:09:29,904
+Ama bunun yerine bu ifadeyi
+
+393
+01:09:29,904 --> 01:09:33,564
+eğer bu alttaki ifade paydaki ifade çarpanlarına ayrılıyorsa
+
+394
+01:09:33,564 --> 01:09:36,944
+a bölü x artı 1 artı b bölü x-3 şeklinde
+
+395
+01:09:36,944 --> 01:09:39,764
+a ve b gibi belirsiz katsayılarla
+
+396
+01:09:39,764 --> 01:09:44,224
+belirsiz katsayıları daha sonra belirleyeceğim.
+
+397
+01:09:45,144 --> 01:09:46,724
+Belirsiz katsayılarla ayırarak
+
+398
+01:09:46,724 --> 01:09:50,024
+burayı elen x artı 1 a çarpı elen x artı 1
+
+399
+01:09:50,024 --> 01:09:52,123
+b çarpı elen x-3 şeklinde yazarak
+
+400
+01:09:52,123 --> 01:09:54,304
+integralini çözebiliyorum.
+
+401
+01:09:54,304 --> 01:09:55,944
+Biz bu yönteme
+
+402
+01:09:55,944 --> 01:09:58,543
+rasyonel fonksiyonların basit kesirlerle
+
+403
+01:09:58,543 --> 01:10:00,444
+integrasyonu ya da
+
+404
+01:10:00,444 --> 01:10:02,024
+basit kesirler yöntemi
+
+405
+01:10:02,024 --> 01:10:03,543
+basit kesirleri ayırma
+
+406
+01:10:03,543 --> 01:10:05,543
+belirsiz katsayılar metodu
+
+407
+01:10:05,543 --> 01:10:07,543
+belirsiz katsayılar yöntemi diyoruz.
+
+408
+01:10:11,507 --> 01:10:17,587
+Bunun yapılabilmesi için de px bölü qx şeklinde rasyonel fonksiyon olmalı.
+
+409
+01:10:18,028 --> 01:10:22,967
+px neydi? Polinom. qx de bir polinomdu. Rasyonel fonksiyonları bu şekilde ifade etmiştik.
+
+410
+01:10:23,867 --> 01:10:29,108
+Bunun için px'in derecesi qx'in derecesinden küçük olmalı.
+
+411
+01:10:33,300 --> 01:10:46,779
+Küçük değilse de eğer bu yöntemi uygulayacaksam da polinom bölmesi yaparak payın derecesini paydadan küçük hale getirmeye çalışırım arkadaşlar.
+
+412
+01:10:47,440 --> 01:10:52,000
+Bunu yaparak payın derecesini paydadan küçük hale getirmeye çalışıyorum.
+
+413
+01:11:05,108 --> 01:11:14,988
+Diyelim ki, paydadan bahsediyorum, paydadaki polinomun bir çarpanı x eksi R olsun.
+
+414
+01:11:16,668 --> 01:11:18,688
+Bir çarpanı x eksi R olsun.
+
+415
+01:11:20,628 --> 01:11:29,188
+x eksi R üzeri M, Q x'i bölen, x eksi R'nin en büyük kuvveti olsun.
+
+416
+01:11:29,188 --> 01:11:36,528
+Bu takdirde, bu çarpan için M tane kısmi kesenin toplamı yazılır.
+
+417
+01:11:37,847 --> 01:11:39,368
+x eksi R üzeri M
+
+418
+01:13:05,268 --> 01:13:09,467
+M tane kısmi keserin toplamı olarak yazabiliriz bu takdirde.
+
+419
+01:13:09,988 --> 01:13:17,927
+Yani x-r üzeri m çarpanı için en büyük kuvvet buydu.
+
+420
+01:13:18,667 --> 01:13:23,688
+Mesela x-r üzeri x-r'nin küpüne bölüyoruz ya da x-r'nin karesine bölüyoruz.
+
+421
+01:13:24,648 --> 01:13:26,467
+En çok çarpabileceğimiz ifade bu.
+
+422
+01:13:26,467 --> 01:13:34,467
+Bu takdirde a1 bölü x-r, a2 bölü x-r'nin karesi artı am bölü x-r üzeri m diyoruz.
+
+423
+01:13:35,268 --> 01:13:39,288
+Yani çarpanları ayrılabilen bir ifade var paydada.
+
+424
+01:13:39,788 --> 01:13:41,387
+Mesela x-r'nin küpü var.
+
+425
+01:13:41,988 --> 01:13:46,887
+x-r'nin küpü varsa paydada payda x gibi bir ifade.
+
+426
+01:13:46,988 --> 01:13:48,547
+ax artı b gibi bir ifade.
+
+427
+01:13:48,547 --> 01:13:59,807
+Bu durumda a1 bölü x-r artı a2 bölü x-r'nin karesi artı a3 bölü x-r'nin küpü yazıyoruz.
+
+428
+01:14:00,528 --> 01:14:03,108
+Ve a1, a2, a3'ü buluyoruz.
+
+429
+01:14:05,268 --> 01:14:07,948
+Eğer bir durum daha var.
+
+430
+01:14:09,228 --> 01:14:10,707
+Basit keserler ayırma yönteminde.
+
+431
+01:14:11,347 --> 01:14:19,667
+İkinci durumdaysa paydadaki ifade yani bu polinom, qx polinomu.
+
+432
+01:14:20,408 --> 01:14:25,108
+x-r artı px artı q üzeri n şeklinde yazılabiliyorsa ancak.
+
+433
+01:14:25,768 --> 01:14:28,408
+Yani burası çarpanlara ayrılamıyor diyelim ki.
+
+434
+01:14:28,408 --> 01:14:29,707
+Mesela neydi?
+
+435
+01:14:32,167 --> 01:14:36,207
+ax kare artı bx artı c ifadesi yukarıda çarpanlarına ayrılabiliyordu.
+
+436
+01:14:36,507 --> 01:14:39,368
+Yani x-a çarpı x-b şeklinde yazılabiliyordu.
+
+437
+01:14:39,988 --> 01:14:41,228
+Ama burada ayrılamıyoruz.
+
+438
+01:14:41,228 --> 01:14:44,847
+Yani x kare artı 3x artı 1 gibi bir ifade.
+
+439
+01:14:44,967 --> 01:14:47,047
+Yani çarpanlarına ayrılamayan bir ifade var.
+
+440
+01:14:48,108 --> 01:14:56,268
+Bu durumda da bakın x kare artı px artı q varsa, x kare artı px artı q'nun karesi varsa, küpü varsa vs.
+
+441
+01:14:56,408 --> 01:14:58,807
+kaçıncı kuvvetine kadar alınmışsa artık soruda.
+
+442
+01:14:59,868 --> 01:15:00,967
+Ona kadar alıyoruz.
+
+443
+01:15:00,967 --> 01:15:04,627
+Ve burada şöyle bir özel durum var.
+
+444
+01:15:04,747 --> 01:15:07,268
+Normalde x-r ise yukarıda a1 oluyordu.
+
+445
+01:15:07,627 --> 01:15:09,608
+a1 a2 kat sayılarını buluyorduk.
+
+446
+01:15:10,188 --> 01:15:10,688
+Burada bakın.
+
+447
+01:15:11,188 --> 01:15:13,908
+ax kare artı bx artı c şeklinde ifade varsa.
+
+448
+01:15:13,988 --> 01:15:15,948
+Burada x kare artı px artı q vermiş.
+
+449
+01:15:16,007 --> 01:15:18,387
+x kare artı px artı q şeklinde bir ifade varsa.
+
+450
+01:15:19,087 --> 01:15:22,127
+Yukarıya b1x artı c1 şeklinde yazıyoruz.
+
+451
+01:15:22,408 --> 01:15:24,288
+Yani ax artı b şeklinde yazıyoruz.
+
+452
+01:15:24,948 --> 01:15:26,927
+Burada b1'i ve c1'i bulmalıyız.
+
+453
+01:15:26,927 --> 01:15:29,488
+Burayı b2x artı c2 olarak yazıyoruz.
+
+454
+01:15:29,488 --> 01:15:33,627
+Yani birden fazlaysa, x kare artı px artı q'nun karesi, küpü varsa da
+
+455
+01:15:33,627 --> 01:15:36,728
+diğer kat sayıları yine b2'yi, c2'yi buluyoruz.
+
+456
+01:15:36,788 --> 01:15:39,028
+İki tane kat sayı buluyoruz arkadaşlar.
+
+457
+01:15:39,728 --> 01:15:40,988
+Buradan haftaya devam edelim.
+
+458
+01:15:41,807 --> 01:15:42,728
+Sorusu olan var mı?
+
+459
+01:15:43,927 --> 01:15:47,908
+Bu konu biraz daha örneklerle kafanıza oturacak.
+
+460
+01:15:49,247 --> 01:15:50,247
+Birkaç yöntem daha var.
+
+461
+01:15:50,347 --> 01:15:52,467
+Daha bu başlangıç bitiremedik.
+
+462
+01:15:53,167 --> 01:15:54,427
+Yani mesela şöyle ki
+
+463
+01:15:55,188 --> 01:15:58,408
+5x-3 bölü x kare eksi 2x-3 ifadesini
+
+464
+01:15:58,408 --> 01:16:01,368
+a bölü x-3 artı b bölü x artı 1 şeklinde yazıyoruz.
+
+465
+01:16:01,547 --> 01:16:02,747
+a'yı ve b'yi buluyoruz.
+
+466
+01:16:03,228 --> 01:16:05,587
+Ve elen olarak integrele hesaplıyoruz.
+
+467
+01:16:07,167 --> 01:16:08,507
+Birkaç çeşidi daha var.
+
+468
+01:16:09,507 --> 01:16:10,547
+Bunları haftaya diyorum.
+
+469
+01:16:10,667 --> 01:16:11,768
+Yarın devam edelim.
+
+470
+01:16:12,307 --> 01:16:13,547
+Sorusu olan var mı arkadaşlar?
+
+471
+01:16:15,247 --> 01:16:16,667
+Dinlediğiniz için, katıldığınız için
+
+472
+01:16:16,667 --> 01:16:18,047
+çok teşekkürler arkadaşlar.
+
+473
+01:16:18,268 --> 01:16:18,988
+Kendinize iyi bakın.
+
+474
+01:16:19,967 --> 01:16:22,408
+Eğer sorusu olan yoksa dersi sonlandırıyorum.
+
+475
+01:16:22,408 --> 01:16:24,627
+Hepinize iyi günler diliyorum.
