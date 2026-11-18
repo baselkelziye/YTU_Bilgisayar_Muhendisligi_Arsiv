@@ -13,3 +13,4 @@
 | 26 | Bahar | Kılıç (adı bulunamadı) | [sube_26/](sube_26/) |
 | 28 | Bahar | Bulunamadı | [sube_28/](sube_28/) |
 | 29 | Bahar | Bulunamadı | [sube_29/](sube_29/) |
+| 33 | Bahar | Bulunamadı | [sube_33/](sube_33/) |
