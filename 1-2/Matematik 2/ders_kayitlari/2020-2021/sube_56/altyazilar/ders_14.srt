@@ -1,0 +1,1919 @@
+1
+00:00:13,651 --> 00:00:17,652
+Good morning to everyone. I hope you are all fine and healthy.
+
+2
+00:00:20,891 --> 00:00:27,652
+Now I turn off my camera and my voice. A couple of minutes later, I will start the lesson.
+
+3
+00:05:50,675 --> 00:05:57,555
+Evet, şimdi başlayalım.
+
+4
+00:05:57,555 --> 00:06:04,276
+Bu, aslında, bu sayede birçok birçok olduğunu bilmiyorsanız,
+
+5
+00:06:04,276 --> 00:06:10,276
+birçok birçok olduğunu biliyorum.
+
+6
+00:06:10,276 --> 00:06:16,596
+Birçok birçok birçok olduğunu bilmiyorsanız,
+
+7
+00:06:16,596 --> 00:06:46,596
+ve f'ı x'ı
+
+8
+00:06:46,596 --> 00:07:09,596
+The last hand side expression multiply with dx and divide by dx. We have the omega over dx times dx over dt.
+
+9
+00:07:09,596 --> 00:07:19,115
+This is the chain rule for function of a single variable. Okay. For functions of several variables
+
+10
+00:07:19,115 --> 00:07:31,795
+actually it's valid the same formula but we will add some variables because there are several variables
+
+11
+00:07:31,795 --> 00:07:41,156
+and we go the same way. For functions of several variables the chain rule has more than one form
+
+12
+00:07:41,156 --> 00:07:52,115
+which depends on how many independent and intermediate variables are involved. Let's start with functions
+
+13
+00:07:52,115 --> 00:08:02,035
+of two variables. A chain rule for functions of one independent variable and two intermediate variables.
+
+14
+00:08:04,355 --> 00:08:15,956
+If omega is f is differentiable, x is xt, y is yt are differentiable functions also.
+
+15
+00:08:15,956 --> 00:08:30,995
+Then the composite omega f is a differentiable function of t and the derivative d omega over dt is dx.
+
+16
+00:08:32,435 --> 00:08:43,155
+The inside, let's check it. Yes, the inside derivative is x prime t times
+
+17
+00:08:43,155 --> 00:09:03,155
+with respect to x derivative fx plus again the derivative yt y prime t here times df over dy.
+
+18
+00:09:03,155 --> 00:09:17,716
+Or you can write delta f over delta x times dx over dt plus delta f over delta y times dy over dt.
+
+19
+00:09:18,596 --> 00:09:28,196
+So here we are careful because our function is omega fx and y.
+
+20
+00:09:28,196 --> 00:09:34,836
+So our function omega or f a function of two variables.
+
+21
+00:09:35,556 --> 00:09:43,395
+So our derivative is not ordinary derivative. So this is partial derivative.
+
+22
+00:09:44,036 --> 00:09:56,196
+So the first one is let me write
+
+23
+00:09:49,076 --> 00:10:06,676
+d omega over dt, the first derivative equivicta respect to first component, dx over dt, times delta f over delta x.
+
+24
+00:10:06,676 --> 00:10:16,036
+Yes, because this notation is delta, because this is not ordinary derivative, this is partial derivative, plus
+
+25
+00:10:16,036 --> 00:10:33,656
+d y over dt, times, yes, the derivative with respect to second component, f y or delta f over delta y.
+
+26
+00:10:33,656 --> 00:10:43,656
+Okay, so you just need to be careful. If your function is, your function has two independent,
+
+27
+00:10:45,016 --> 00:10:57,895
+yes, variable like x and y, so your derivative will be partial. If your function has one variable,
+
+28
+00:10:57,896 --> 00:11:05,256
+so your derivative will be partial. So your derivative will be ordinary derivative, okay? That's all.
+
+29
+00:11:13,587 --> 00:11:21,267
+Often we write delta omega over delta x for the partial derivative delta f or delta x.
+
+30
+00:11:21,908 --> 00:11:32,788
+So we can rewrite the chain rule in theorem in the form d omega over dt is delta omega over delta x
+
+31
+00:11:32,788 --> 00:11:43,187
+times dx over dt delta omega over delta y times dy over dt. To remember the chain rule
+
+32
+00:11:43,187 --> 00:11:56,147
+pink picture the diagram below to find the omega over dt start at omega okay because omega is the first
+
+33
+00:11:56,707 --> 00:12:10,788
+dependent value and read down each rule to t okay so we need to find a way start with omega at the top
+
+34
+00:12:10,788 --> 00:12:15,507
+okay and we'll end with the t
+
+35
+00:12:18,707 --> 00:12:27,668
+this is independent value okay and multiplying derivatives along the way then add products
+
+36
+00:12:27,668 --> 00:12:40,707
+that's all it's very simple so let's write the branch diagram for chain rule okay so we start
+
+37
+00:12:40,707 --> 00:12:55,187
+with the omega our omega depends on x and y so omega is dependent variable okay so depends on x and y
+
+38
+00:12:55,827 --> 00:13:08,307
+okay we have a route from omega to x so this means uh this is two variable functions uh so the
+
+39
+00:13:08,307 --> 00:13:26,627
+derivative is partial delta omega over delta x and delta omega over delta y and uh x depends on t and y depends on also t so from x to t
+
+40
+00:13:26,627 --> 00:13:40,627
+from x to t there is only one derivative and this derivative is ordinary derivative okay so this x and y are called intermediate variables
+
+41
+00:13:40,627 --> 00:13:52,067
+so the last one is t dependent variable so we have a route from omega to t okay
+
+42
+00:13:52,067 --> 00:13:55,427
+so the last one is t dependent variable so we have a route from omega to t
+
+43
+00:13:55,427 --> 00:14:08,307
+t and the next one is t dependent variable so we have a route from omega to t
+
+44
+00:14:08,307 --> 00:14:10,307
+and the next one is t dependent variable so we have a route from omega to t
+
+45
+00:14:10,307 --> 00:14:16,307
+t and the next one is t dependent variable so we have a route from omega to t
+
+46
+00:14:02,004 --> 00:14:07,644
+The branch diagram provides a convenient way to remember the chain rule.
+
+47
+00:14:07,644 --> 00:14:29,484
+Use the chain rule to find the derivative of omega with respect to, this means maybe you understand, maybe you know, with, in a short form with respect to, okay?
+
+48
+00:14:29,484 --> 00:14:34,764
+You will find lots of plays in this lecture notes.
+
+49
+00:14:38,323 --> 00:14:46,323
+Okay, the derivative of omega is xy with respect to t along the path.
+
+50
+00:14:48,323 --> 00:14:53,323
+X is cosine t, y is sine t. What is the derivative?
+
+51
+00:14:54,323 --> 00:14:57,323
+While you add t is pi over 2.
+
+52
+00:14:57,323 --> 00:15:01,323
+Okay, so let's start with our
+
+53
+00:15:01,323 --> 00:15:10,323
+dependent variable. Dependent variable depends on x and y.
+
+54
+00:15:11,323 --> 00:15:20,323
+This is dependent variable. Okay, the this are intermediate
+
+55
+00:15:21,323 --> 00:15:30,323
+intermediate variables. Okay, and also it's depends on t and t.
+
+56
+00:15:31,323 --> 00:15:39,323
+Y depends on t. Okay, so we have our root from omega to t.
+
+57
+00:15:40,323 --> 00:15:53,323
+Let's write it d omega over dt is equal to the first one delta omega over delta x will be partial.
+
+58
+00:15:53,323 --> 00:15:58,323
+Times the second one will be ordinary.
+
+59
+00:15:58,323 --> 00:16:08,323
+Plus, again, the first one will be partial and ordinary.
+
+60
+00:16:08,323 --> 00:16:13,323
+Okay, so do you have any question about the formula?
+
+61
+00:16:14,323 --> 00:16:19,323
+Okay, so I like to erase this part.
+
+62
+00:16:20,323 --> 00:16:50,323
+Okay.
+
+63
+00:16:28,467 --> 00:16:29,007
+Evet.
+
+64
+00:16:33,395 --> 00:16:50,035
+dx, yes. This equals to the omega, delta omega over delta x is y. dx over dt is minus sin t.
+
+65
+00:16:50,035 --> 00:17:04,875
+dx, d omega, delta omega over delta y is x times dy over dt is cosine t.
+
+66
+00:17:05,935 --> 00:17:14,415
+This equals to, we know that x, y is sine t. This is sine, and this is cosine.
+
+67
+00:17:14,415 --> 00:17:20,755
+So, this means cosine squared minus sine squared.
+
+68
+00:17:21,915 --> 00:17:30,375
+This is cosine 2t. We are looking for the value t is pi over 2.
+
+69
+00:17:31,296 --> 00:17:41,536
+This means, yes, the value at the point pi over 2 minus 1.
+
+70
+00:17:41,536 --> 00:17:44,915
+Okay. Question?
+
+71
+00:17:44,915 --> 00:17:49,076
+Okay.
+
+72
+00:17:57,011 --> 00:18:15,011
+Of course, we can check the result with a more direct calculation. As a function of t, omega is equal to x, y, x is equal to cosine, and y is equal to sine.
+
+73
+00:18:15,011 --> 00:18:28,251
+So, this equals to one half sine 2t. If you take the derivative of omega, this is cosine 2t, and the value is minus one.
+
+74
+00:18:29,632 --> 00:18:30,311
+Okay.
+
+75
+00:18:32,451 --> 00:18:35,071
+Functions of three variables.
+
+76
+00:18:36,891 --> 00:18:40,432
+Oh, let me say something about the exam.
+
+77
+00:18:40,432 --> 00:18:47,451
+Your exam will be at the end of the seventh week.
+
+78
+00:18:47,811 --> 00:18:48,211
+Okay.
+
+79
+00:18:48,531 --> 00:18:53,432
+Your exam will be at the end of...
+
+80
+00:18:56,192 --> 00:18:57,271
+Sorry.
+
+81
+00:18:58,491 --> 00:18:59,071
+Until.
+
+82
+00:19:03,251 --> 00:19:09,971
+ve sene
+
+83
+00:19:15,284 --> 00:19:19,484
+İlk adı, 7th week.
+
+84
+00:19:25,875 --> 00:19:26,235
+Ok?
+
+85
+00:19:36,372 --> 00:19:39,372
+Functions of three variables.
+
+86
+00:19:41,272 --> 00:19:46,572
+Yes, this is the chain rule for the functions.
+
+87
+00:19:47,572 --> 00:19:53,471
+One independent variable and three intermediate variables.
+
+88
+00:19:53,471 --> 00:19:55,672
+Actually, it is the same formula.
+
+89
+00:19:55,672 --> 00:20:07,772
+Only we add the independent value, the intermediate values, the only we added.
+
+90
+00:20:07,772 --> 00:20:13,872
+Okay, so we will arrange with this new variable.
+
+91
+00:20:13,872 --> 00:20:16,971
+We will arrange the formula.
+
+92
+00:20:16,971 --> 00:20:24,072
+Okay, Omega is fxyz is the parenchable function.
+
+93
+00:20:24,072 --> 00:20:28,572
+x, y, z are differentiable functions of t.
+
+94
+00:20:28,572 --> 00:20:32,572
+Then Omega is differentiable function of t.
+
+95
+00:20:32,572 --> 00:20:35,572
+d omega over dt.
+
+96
+00:20:35,572 --> 00:20:40,572
+Delta Omega over Delta x times dx over dt.
+
+97
+00:20:40,572 --> 00:20:44,572
+Delta Omega over Delta y times dy over dt.
+
+98
+00:20:44,572 --> 00:20:49,572
+Delta Omega over Delta z times dc over dt.
+
+99
+00:20:49,572 --> 00:20:57,072
+Actually, we have three roots from Omega to t instead of two.
+
+100
+00:20:57,072 --> 00:21:01,072
+Finding d Omega over dt is still the same.
+
+101
+00:21:01,072 --> 00:21:03,072
+It's exactly the same.
+
+102
+00:21:03,072 --> 00:21:06,072
+Only we add the variable z.
+
+103
+00:21:06,072 --> 00:21:13,072
+Read down each root and multiplying derivatives along the way, then add it.
+
+104
+00:21:13,072 --> 00:21:17,572
+Yes, the first one is Omega.
+
+105
+00:21:17,572 --> 00:21:20,572
+Omega is dependent variable.
+
+106
+00:21:20,572 --> 00:21:26,572
+Okay, and depends on x, y and z.
+
+107
+00:21:26,572 --> 00:21:27,572
+Okay.
+
+108
+00:21:27,572 --> 00:21:33,572
+And the derivatives are, these are partial derivatives.
+
+109
+00:21:33,572 --> 00:21:43,072
+Delta Omega over Delta x, Delta Omega over Delta y, and Delta Omega over Delta z.
+
+110
+00:21:43,072 --> 00:21:52,072
+So, the second derivative x, y and z intermediate variables.
+
+111
+00:21:52,072 --> 00:22:01,572
+And dx over dt, dy over dt, and dz over dt are ordinary derivatives.
+
+112
+00:22:01,572 --> 00:22:02,572
+Okay.
+
+113
+00:22:02,572 --> 00:22:09,072
+Let's have an example.
+
+114
+00:22:09,072 --> 00:22:19,072
+Find the Omega over dt if Omega is x, y plus z.
+
+115
+00:22:19,072 --> 00:22:26,072
+So, this means Omega is the dependent variable.
+
+116
+00:22:26,072 --> 00:22:33,572
+At the top, depends on x, y and z.
+
+117
+00:22:33,572 --> 00:22:34,572
+Okay.
+
+118
+00:22:34,572 --> 00:22:40,572
+And x depends on x, y, z depends on t.
+
+119
+00:22:40,572 --> 00:22:47,072
+So, we need a row from Omega to t.
+
+120
+00:22:47,072 --> 00:23:04,072
+The Omega over dt first derivative is Delta Omega to Delta x times dx over dt plus Delta Omega
+
+121
+00:23:04,072 --> 00:23:10,572
+over Delta y times dx over dt.
+
+122
+00:23:10,572 --> 00:23:12,572
+Last, the last one.
+
+123
+00:23:12,572 --> 00:23:21,572
+Delta Omega over Delta z times dx over dt.
+
+124
+00:23:21,572 --> 00:23:22,572
+Okay.
+
+125
+00:23:22,572 --> 00:23:24,572
+So, this is our formula.
+
+126
+00:23:24,572 --> 00:23:28,572
+I like to erase this part.
+
+127
+00:23:28,572 --> 00:23:29,072
+Okay.
+
+128
+00:23:29,072 --> 00:23:31,072
+So, this is our formula.
+
+129
+00:23:31,072 --> 00:23:33,072
+Okay.
+
+130
+00:23:33,072 --> 00:23:35,072
+So, this is our formula.
+
+131
+00:23:35,072 --> 00:23:37,072
+Okay.
+
+132
+00:23:37,072 --> 00:23:39,072
+So, this is our formula.
+
+133
+00:23:39,072 --> 00:23:40,072
+Okay.
+
+134
+00:23:40,072 --> 00:23:41,072
+So, this is our formula.
+
+135
+00:23:41,072 --> 00:23:42,072
+Okay.
+
+136
+00:23:42,072 --> 00:23:43,072
+So, this is our formula.
+
+137
+00:23:43,072 --> 00:23:44,072
+Okay.
+
+138
+00:23:44,072 --> 00:23:45,072
+So, this is our formula.
+
+139
+00:23:45,072 --> 00:23:46,072
+Okay.
+
+140
+00:23:46,072 --> 00:23:47,072
+So, this is our formula.
+
+141
+00:23:47,072 --> 00:23:48,072
+Okay.
+
+142
+00:23:48,072 --> 00:23:49,072
+So, this is our formula.
+
+143
+00:23:49,072 --> 00:23:50,072
+Okay.
+
+144
+00:23:50,072 --> 00:23:51,072
+So, this is our formula.
+
+145
+00:23:51,072 --> 00:23:52,072
+Okay.
+
+146
+00:23:52,072 --> 00:23:53,072
+So, this is our formula.
+
+147
+00:23:53,072 --> 00:23:54,072
+Okay.
+
+148
+00:23:54,072 --> 00:23:55,072
+So, this is our formula.
+
+149
+00:23:55,072 --> 00:23:56,072
+Okay.
+
+150
+00:23:56,072 --> 00:23:57,072
+So, this is our formula.
+
+151
+00:23:57,072 --> 00:23:58,072
+Okay.
+
+152
+00:23:32,500 --> 00:23:51,339
+Okay, so let's start with the omega over the x, the derivative with respect to x is y times the x over dt is minus sine t.
+
+153
+00:23:51,339 --> 00:24:15,660
+d omega over the y, x times the y over dt, this one, cosine t, d omega over the z, 1 times the z over the t is 1.
+
+154
+00:24:15,660 --> 00:24:35,839
+So, and also we know that y is sine t, x is cosine t, so this means cosine square minus sine square plus 1 at the value t is 0.
+
+155
+00:24:35,839 --> 00:24:39,819
+This is 1 plus 1 is 2.
+
+156
+00:24:41,180 --> 00:24:43,099
+The value is 2.
+
+157
+00:24:43,319 --> 00:24:44,519
+Do you have any question?
+
+158
+00:24:59,731 --> 00:25:08,851
+Ok. Functions defined on surfaces. Chain rule for two independent variables and three intermediate variables.
+
+159
+00:25:09,392 --> 00:25:24,791
+Suppose that omega depends on x, y, z. X depends on rs. Y depends on rs. Z depends on key rs.
+
+160
+00:25:24,791 --> 00:25:36,971
+If all four functions are differentiable, then omega has the partial derivative with respect to rs given by the formula.
+
+161
+00:25:36,971 --> 00:25:55,872
+Let's have the branch diagram. At the top we have omega. Omega depends on x, y, z. And x depends on rs.
+
+162
+00:25:55,872 --> 00:26:09,231
+Y depends on rs. And z depends on rs. So we are looking for the derivative from top to the bottom.
+
+163
+00:26:09,231 --> 00:26:18,831
+So the first one will be delta omega. This is actually partial derivatives. Delta omega over delta r.
+
+164
+00:26:19,711 --> 00:26:32,912
+The first one is, let's change the color. Delta omega over delta x times delta x over delta r.
+
+165
+00:26:32,912 --> 00:26:40,311
+Delta omega over delta y times delta y over delta r.
+
+166
+00:26:41,192 --> 00:26:48,031
+Okay. And the last one, delta omega over delta z, delta z over delta r.
+
+167
+00:26:48,672 --> 00:26:57,571
+Okay. So let's change the color. The second one is the derivative delta omega over delta s.
+
+168
+00:26:57,571 --> 00:27:04,211
+Actually, this is the partial because at the end we have two independent values.
+
+169
+00:27:06,291 --> 00:27:20,692
+Delta omega over delta x times delta x over delta s. Delta omega over delta y times delta y over delta s.
+
+170
+00:27:20,692 --> 00:27:33,092
+Delta omega over delta z times delta z over delta s. Okay. So this is on the right hand side.
+
+171
+00:27:33,892 --> 00:27:44,211
+We have branch diagram for partial derivatives. And on the left hand side we have this formulas.
+
+172
+00:27:48,147 --> 00:27:48,707
+Evet.
+
+173
+00:27:55,284 --> 00:27:58,403
+Evet, ok. Let's do our example.
+
+174
+00:27:59,684 --> 00:28:07,804
+Express delta omega over delta r and delta omega over delta s in terms of r and s.
+
+175
+00:28:07,804 --> 00:28:22,424
+If omega is x plus 2y plus z square, x is r over s, y is r square plus ln s, z is 2r.
+
+176
+00:28:22,424 --> 00:28:27,664
+Ok, so here, let's write it.
+
+177
+00:28:27,664 --> 00:28:46,964
+At the top we have omega, omega depends on x, y and z and x depends on rs, rs and c is only r.
+
+178
+00:28:46,964 --> 00:29:13,964
+Ok, so the first one, delta omega over delta r, delta omega over delta x times delta x over delta r plus delta omega over delta y, delta y over delta r plus delta omega over delta z plus z.
+
+179
+00:29:13,964 --> 00:29:20,964
+plus z plus z over dr because there is only one value.
+
+180
+00:29:20,964 --> 00:29:28,964
+Ok, only r. Ok, so delta omega over delta r.
+
+181
+00:29:28,964 --> 00:29:40,964
+Delta omega over delta x is 1 times delta x over delta r is 1 over s.
+
+182
+00:29:40,964 --> 00:29:49,964
+delta omega over delta y is 2 times delta y over delta r is 2r plus 2z times 2.
+
+183
+00:29:49,964 --> 00:30:09,964
+So this means 1 over s plus 4r plus 4z.
+
+184
+00:30:09,964 --> 00:30:11,964
+Actually z is 2r.
+
+185
+00:30:11,964 --> 00:30:20,964
+This is 1s plus.
+
+186
+00:30:20,964 --> 00:30:22,964
+This is 12r.
+
+187
+00:30:22,964 --> 00:30:25,964
+This is the first derivative.
+
+188
+00:30:25,964 --> 00:30:27,964
+Ok.
+
+189
+00:30:27,964 --> 00:30:33,964
+Let's check it from the answer.
+
+190
+00:30:33,964 --> 00:30:37,964
+Yes, 1s plus 12r.
+
+191
+00:30:37,964 --> 00:30:46,964
+And actually it is the same with the delta omega over delta s.
+
+192
+00:30:46,964 --> 00:30:49,964
+The first derivatives are the same.
+
+193
+00:30:49,964 --> 00:30:54,964
+1 and 2 and 2z.
+
+194
+00:30:54,964 --> 00:30:59,964
+The second derivative with respect to s.
+
+195
+00:30:59,964 --> 00:31:04,964
+x is r over s.
+
+196
+00:31:04,964 --> 00:31:08,964
+The derivative is minus r over s squared.
+
+197
+00:31:08,964 --> 00:31:11,964
+And y is.
+
+198
+00:31:11,964 --> 00:31:14,964
+What was y?
+
+199
+00:31:14,964 --> 00:31:16,964
+Is it?
+
+200
+00:31:30,099 --> 00:31:41,779
+Evet, y is r² plus lns, and z is 2r.
+
+201
+00:31:43,399 --> 00:31:47,159
+Okay, let's go back to the answer.
+
+202
+00:31:47,159 --> 00:32:07,839
+Yes, the first derivatives are the same, and the second derivatives with respect to s, the second one will be 1 over s plus 2 z times 0.
+
+203
+00:32:09,059 --> 00:32:12,959
+So you can easily find it. Do you have any question?
+
+204
+00:32:12,959 --> 00:32:29,779
+Okay, if f is a function of two intermediate variables instead of three, each equation in theorem 7 becomes correspondingly one term shorter.
+
+205
+00:32:29,779 --> 00:32:51,000
+Okay, so it's very clear. If omega is f x, y, x is g, rs, and y is h, rs, we have, at the top we have omega, and this is intermediate values x and y,
+
+206
+00:32:51,000 --> 00:33:07,939
+and this x belongs to rs, okay, so we are looking for the partial derivatives delta omega over delta r, and delta omega over delta s, okay.
+
+207
+00:33:07,939 --> 00:33:10,379
+Okay, so
+
+208
+00:33:14,195 --> 00:33:30,695
+Evet, delta omega over delta r, delta omega over delta x times delta x over delta r plus delta omega over delta y times delta y over delta r.
+
+209
+00:33:30,695 --> 00:33:33,455
+And this is the second one.
+
+210
+00:33:34,735 --> 00:33:37,935
+Yes, we have an example here.
+
+211
+00:33:37,935 --> 00:33:53,995
+Express delta omega over delta r. We have omega at the top. Omega depends on x and y. X depends on r and s.
+
+212
+00:33:53,995 --> 00:34:10,135
+Okay, so from top to the bottom, delta omega over delta r, for example, delta omega over delta x, delta x over delta r.
+
+213
+00:34:10,135 --> 00:34:17,155
+Delta omega over delta y, delta y over delta r.
+
+214
+00:34:17,695 --> 00:34:21,715
+Okay, delta omega over delta x is 2x.
+
+215
+00:34:22,815 --> 00:34:25,755
+Delta x over delta r is 1.
+
+216
+00:34:27,215 --> 00:34:30,195
+Delta omega over delta y is 2y.
+
+217
+00:34:31,516 --> 00:34:33,996
+Delta y over delta r is 1.
+
+218
+00:34:33,996 --> 00:34:39,355
+This is, this means 2x plus y is 2.
+
+219
+00:34:39,496 --> 00:34:40,675
+What is x?
+
+220
+00:34:41,275 --> 00:34:42,755
+R minus s.
+
+221
+00:34:42,976 --> 00:34:43,976
+What is y?
+
+222
+00:34:44,235 --> 00:34:45,435
+R plus s.
+
+223
+00:34:46,375 --> 00:34:49,255
+This is 4r.
+
+224
+00:34:49,835 --> 00:34:50,155
+Okay.
+
+225
+00:34:52,295 --> 00:34:54,335
+And the second one.
+
+226
+00:34:54,335 --> 00:34:54,415
+Okay.
+
+227
+00:35:04,755 --> 00:35:17,255
+Delta Omega over Delta S, Delta Omega over Delta X 2 X, Delta X over Delta S minus 1 plus.
+
+228
+00:35:28,788 --> 00:35:29,548
+Excuse me.
+
+229
+00:35:32,724 --> 00:35:37,943
+Plus, delta omega over delta y,
+
+230
+00:35:39,084 --> 00:35:55,104
+times, delta y over delta s is 1. This means 2 minus x minus r plus s plus r plus s is 4s.
+
+231
+00:35:55,104 --> 00:36:03,824
+Okay. It is very simple algorithm. You can easily find. Okay.
+
+232
+00:36:13,652 --> 00:36:22,152
+If omega is x, omega depends on x, and x depends on R and S,
+
+233
+00:36:22,152 --> 00:36:29,412
+then we have delta omega over delta R, d omega over dx.
+
+234
+00:36:29,692 --> 00:36:31,251
+This is ordinary derivative.
+
+235
+00:36:31,512 --> 00:36:33,612
+The second one is the partial.
+
+236
+00:36:34,412 --> 00:36:38,811
+The first one is ordinary, and the second one is the partial.
+
+237
+00:36:38,811 --> 00:36:47,492
+This means omega depends on x, x depends on R and S.
+
+238
+00:36:47,831 --> 00:36:48,012
+Okay.
+
+239
+00:36:49,032 --> 00:37:01,311
+So we have mentioned in semester one the formula about the implicit differentiation,
+
+240
+00:37:02,211 --> 00:37:06,132
+or you can take the both side differentiation.
+
+241
+00:37:06,132 --> 00:37:06,791
+Okay.
+
+242
+00:37:06,791 --> 00:37:14,851
+So actually we have the same formula for multivariable functions.
+
+243
+00:37:15,132 --> 00:37:18,112
+Actually we focus on two variable functions.
+
+244
+00:37:18,371 --> 00:37:18,452
+Okay.
+
+245
+00:37:18,992 --> 00:37:28,132
+The two variable chain rule in theorem leads to a formula that takes some of the algebra out of implicit differentiation.
+
+246
+00:37:28,132 --> 00:37:47,652
+Suppose that the function capital F is differentiable, and the equation capital F is 0 defines y implicitly as a differentiable function of x, say y is hx.
+
+247
+00:37:47,652 --> 00:37:59,932
+Since omega is capital F is 0, the derivative d omega over dx must be 0.
+
+248
+00:37:59,932 --> 00:38:07,532
+So if you take the derivative of both sides, you will find this result.
+
+249
+00:38:07,532 --> 00:38:08,271
+Okay.
+
+250
+00:38:08,271 --> 00:38:13,492
+Compete the derivative from the chain rule.
+
+251
+00:38:13,492 --> 00:38:14,492
+Okay.
+
+252
+00:38:14,492 --> 00:38:21,112
+So we have omega depends on x and y.
+
+253
+00:38:21,112 --> 00:38:23,112
+Okay.
+
+254
+00:38:23,112 --> 00:38:34,612
+And also y is belongs to y is the function with the x variable.
+
+255
+00:38:34,612 --> 00:38:35,612
+Okay.
+
+256
+00:38:35,612 --> 00:38:40,092
+So x depends on x and dx over dx is 1 we know.
+
+257
+00:38:40,092 --> 00:38:44,672
+D y over dx you can write over h prime.
+
+258
+00:38:44,672 --> 00:38:48,672
+So what is the derivative?
+
+259
+00:38:48,672 --> 00:38:49,672
+Okay.
+
+260
+00:38:49,672 --> 00:38:51,672
+Let's find together.
+
+261
+00:38:51,672 --> 00:38:56,672
+F, x, y is 0.
+
+262
+00:38:56,672 --> 00:39:00,672
+Let's take the derivative with respect to x.
+
+263
+00:39:00,672 --> 00:39:01,672
+Okay.
+
+264
+00:39:01,672 --> 00:39:13,672
+The first, the inside of the function with respect to first variable, 1 times capital X plus.
+
+265
+00:39:13,672 --> 00:39:25,672
+And also the inside of the function, the derivative is dy over dx times f, y is 0.
+
+266
+00:39:25,672 --> 00:39:34,672
+So if you leave dy over dx alone, this is minus capital F over capital Y.
+
+267
+00:39:34,672 --> 00:39:43,672
+Here capital V assume that the denominator is not equal to 0.
+
+268
+00:39:43,672 --> 00:39:46,672
+Okay.
+
+269
+00:39:46,672 --> 00:39:54,672
+So yes, this is the result dy over dx is minus fx over fy.
+
+270
+00:39:54,672 --> 00:39:55,672
+Okay.
+
+271
+00:39:55,672 --> 00:39:57,672
+And this is the theorem statement.
+
+272
+00:39:57,672 --> 00:40:02,672
+A formula for implicit differentiation.
+
+273
+00:40:02,672 --> 00:40:07,672
+Suppose that fx, y, just a second please.
+
+274
+00:40:07,672 --> 00:40:11,672
+Some sounds outside.
+
+275
+00:40:11,672 --> 00:40:24,672
+Okay.
+
+276
+00:40:29,780 --> 00:40:40,260
+So a capital Fxy is differentiable and the equation Fxy defines y as a differentiable function of x.
+
+277
+00:40:40,900 --> 00:40:49,780
+Then at any point where fy is not equal to zero dy over dx is minus fx over fy.
+
+278
+00:40:49,780 --> 00:41:11,160
+Okay, so the z over delta z over delta x delta z over delta y at the point origin if x cubed plus d squared plus y exponential xc plus z cosine y is zero.
+
+279
+00:41:11,160 --> 00:41:14,640
+Okay, let's find this derivative.
+
+280
+00:41:14,640 --> 00:41:35,960
+This means cx is equal to minus fx over fc and cy is equals to minus fy over fc.
+
+281
+00:41:35,960 --> 00:41:37,880
+Okay, we have these formulas.
+
+282
+00:41:39,340 --> 00:41:44,000
+So first I need fx, fy and fc.
+
+283
+00:41:44,540 --> 00:41:49,260
+Okay, so what is this is capital F.
+
+284
+00:41:49,260 --> 00:41:50,260
+Okay, so what is this is capital Fx?
+
+285
+00:41:50,260 --> 00:42:07,260
+Okay, so what is this capital Fx?
+
+286
+00:41:59,572 --> 00:42:18,532
+0. And suppose that c is the xy. Okay? So what is fx? 3x² plus x here.
+
+287
+00:42:18,532 --> 00:42:38,612
+yz exponential xc. Yes. What is fy? We have exponential xc minus the sin z, sin y, sorry.
+
+288
+00:42:38,612 --> 00:43:05,172
+And what is fc? fc is 2c xy exponential xc cos y. Okay? We have all the derivatives. Only we need to substitute these expressions in the formula. That's all. Okay?
+
+289
+00:43:05,172 --> 00:43:31,672
+Yes. And we need to write the origin. The origin zx is equal to 0 over 1 is 0. And the second one is this value is 1. And also this is 1. 1 over 1 is. And also we have minus 1. Okay?
+
+290
+00:43:31,672 --> 00:43:59,231
+So yes. This is the chain. Okay? So let's have a break for 10 minutes. Then I will solve some problems. Okay? Now I turn on my camera and my voice. 10 minutes later I will back. Okay?
+
+291
+00:43:59,231 --> 00:44:00,231
+10 minutes later I will solve some problems. Okay?
+
+292
+00:44:00,231 --> 00:44:07,231
+10 minutes later I will solve some problems. Okay? So let's have a break for 10 minutes later.
+
+293
+00:44:07,231 --> 00:44:15,231
+10 minutes later. So let's have a break for 10 minutes later.
+
+294
+00:59:14,547 --> 00:59:26,707
+Okay, let's start the review questions. Review questions is about parametri coordinates,
+
+295
+00:59:28,227 --> 00:59:33,987
+planes and lines. Okay, let's check the first one.
+
+296
+00:59:33,987 --> 00:59:52,147
+Okay, find the arc length of the given curve, which is the direction of increasing of t. Okay,
+
+297
+00:59:53,107 --> 01:00:00,627
+so we have a formula for this one. The arc length, let's open the pen.
+
+298
+01:00:00,627 --> 01:00:08,307
+We have a formula for arc length. We can say l from a to b,
+
+299
+01:00:12,067 --> 01:00:25,747
+r prime t, d t. Okay, so here x or you can write the arc length r prime
+
+300
+01:00:25,747 --> 01:00:40,067
+is square root x prime squared y prime squared and z prime squared d t. Okay,
+
+301
+01:00:40,067 --> 01:00:51,507
+so here x is one half t minus one squared. So let's write it. This is the formula.
+
+302
+01:00:51,507 --> 01:00:51,947
+Okay, so here x is one half t. Okay, so here x is one half t. Okay, so here x is one half t. Okay, so here x is one half t. Okay, so here x is one half t. Okay, so here x is one half t. Okay, so here x is one half t. Okay, so here x is one half t. Okay, so here x is one half t. Okay, so here x is one half t. Okay, so here x is one half t. Okay, so here x is one half t. Okay, so here x is one half t. Okay, so here x is one half t. Okay, so here x is one half t. Okay, so here x is one half t. Okay, so here x is one half t. Okay, so here x is one half t. Okay, so here x is one half t. Okay, so here x is one half t. Okay, so here x is one half t. Okay, so here x is one half t. Okay, so
+
+303
+01:00:55,284 --> 01:01:09,864
+R' t'ye kadar, ilk olarak, 1.5' times 2 t'ye kadar, 1.2'ye kadar,
+
+304
+01:01:09,864 --> 01:01:23,244
+plus the second one, the square root 3 over 2 times 2 t minus 2.
+
+305
+01:01:23,244 --> 01:01:38,644
+If you take the common parenthesis of 2, you have square root 3 t minus 1 squared.
+
+306
+01:01:38,644 --> 01:01:47,304
+Plus, the last one, the last coefficient is 1, the derivative is 0.
+
+307
+01:01:47,304 --> 01:01:56,584
+So, this means this is 3, this is 1, 4, t minus 1 squared, okay?
+
+308
+01:01:57,644 --> 01:02:07,564
+And, yes, the length, let's view right here, and squared, okay?
+
+309
+01:02:07,564 --> 01:02:23,564
+So, the length R' t is equal to, we can say, times square root t minus 1 squared.
+
+310
+01:02:24,124 --> 01:02:29,664
+This equals to 2 absolute value t minus 1, okay?
+
+311
+01:02:29,664 --> 01:02:39,164
+So, we will substitute this expression in this formula, in the arc length formula, okay?
+
+312
+01:02:39,704 --> 01:02:45,023
+So, I need to erase this part, okay?
+
+313
+01:02:45,024 --> 01:02:57,423
+So, the arc length is from, t is from 0 to, let me say, we don't know,
+
+314
+01:02:58,224 --> 01:03:08,284
+we don't have a certain boundary, upper, upper bound and the lower bound for the integral, okay?
+
+315
+01:03:08,284 --> 01:03:19,204
+So, let's rewrite here, t from 2, t minus 1, dt, okay?
+
+316
+01:03:20,204 --> 01:03:24,344
+So, this is absolute value, actually.
+
+317
+01:03:25,744 --> 01:03:37,403
+t is 1, t minus 1, you can use the table method or it depends on you.
+
+318
+01:03:37,403 --> 01:03:46,824
+So, let's rewrite if t is between 0, 1, okay?
+
+319
+01:03:48,264 --> 01:03:51,104
+So, this will be minus.
+
+320
+01:03:52,304 --> 01:04:00,624
+So, this means from 0 to t, 2 times 1 minus t dt, okay?
+
+321
+01:04:00,624 --> 01:04:04,043
+So, you can evaluate this simple integral.
+
+322
+01:04:04,043 --> 01:04:11,684
+The second option is t is greater or equal than 1.
+
+323
+01:04:11,684 --> 01:04:16,503
+So, from 0 to t.
+
+324
+01:04:20,083 --> 01:04:50,083
+Bu adı varı
+
+325
+01:04:50,083 --> 01:05:13,523
+0 1 so the absolute value here let's open the pen yes the absolute value will take the negative value okay so the integral value is 1 minus 1 minus t squared okay if t is greater than 1
+
+326
+01:05:13,523 --> 01:05:23,683
+we took greater or equal than 1 it's it's doesn't matter okay just only one point um
+
+327
+01:05:25,683 --> 01:05:41,283
+sd will take the positive value from zero to one okay uh from zero to one plus one to t okay
+
+328
+01:05:41,283 --> 01:06:01,443
+so we have two integrals so you can easily evaluate the integral so do you have any question
+
+329
+01:05:56,724 --> 01:06:02,423
+Can you hear my voice clearly? Can you write to me please?
+
+330
+01:06:05,423 --> 01:06:09,443
+Okay. So, okay, thank you.
+
+331
+01:06:13,204 --> 01:06:16,423
+Ok, let's check the second one.
+
+332
+01:06:18,903 --> 01:06:25,844
+Yes, this is the curve which is given in parametric coordinates.
+
+333
+01:06:25,844 --> 01:06:32,584
+Xt is t cubed, yt is 1 minus t squared, 2, 3 halves.
+
+334
+01:06:32,884 --> 01:06:37,744
+T is between minus 1 and 1.
+
+335
+01:06:37,744 --> 01:06:46,804
+Find the arc length of the given, actually these are the exam questions.
+
+336
+01:06:46,804 --> 01:06:52,304
+You can easily evaluate it, only you need to take the derivatives.
+
+337
+01:06:52,304 --> 01:06:54,304
+Ok, I don't saw it.
+
+338
+01:06:54,304 --> 01:06:59,864
+Ok, so you can easily find that this is 3 units.
+
+339
+01:06:59,864 --> 01:07:05,464
+Ok, so this one is about the planes.
+
+340
+01:07:05,464 --> 01:07:11,903
+And yes, this is the, yes.
+
+341
+01:07:11,903 --> 01:07:18,224
+Actually, this question is from the last year.
+
+342
+01:07:18,224 --> 01:07:24,024
+Ok, and this is from final exam.
+
+343
+01:07:24,024 --> 01:07:27,244
+Ok, let's read it.
+
+344
+01:07:27,244 --> 01:07:36,244
+The equations are x plus y is 1 and y plus z is 2.
+
+345
+01:07:36,244 --> 01:07:40,564
+The intersection, this is the intersection line.
+
+346
+01:07:40,564 --> 01:07:44,004
+And we have also line.
+
+347
+01:07:44,004 --> 01:07:52,564
+The parametric coordinates x is 1 minus t, y is 2 plus t and z is 1 plus 2t.
+
+348
+01:07:52,564 --> 01:08:03,564
+Let's find the angle between two, oops, between two lines.
+
+349
+01:08:03,564 --> 01:08:12,004
+Ok, so first one is the intersection line.
+
+350
+01:08:12,004 --> 01:08:18,003
+Ok, oops, just a second please.
+
+351
+01:08:18,003 --> 01:08:22,444
+Yes, let's change the color.
+
+352
+01:08:22,444 --> 01:08:25,444
+We are looking for this line.
+
+353
+01:08:25,444 --> 01:08:29,444
+Ok, second one is the line.
+
+354
+01:08:29,444 --> 01:08:33,043
+Let's make it green.
+
+355
+01:08:33,043 --> 01:08:34,043
+Just an example.
+
+356
+01:08:34,043 --> 01:08:38,444
+This one, let me say L1, L2.
+
+357
+01:08:38,444 --> 01:08:44,884
+We are looking for the angle between these two lines.
+
+358
+01:08:44,884 --> 01:08:55,324
+Ok, so if we like to find the angle between two lines, we need to find the angle between
+
+359
+01:08:55,324 --> 01:08:56,684
+direction vectors.
+
+360
+01:08:56,684 --> 01:09:06,684
+Ok, so first we need to find v1 and second we need to find v2.
+
+361
+01:09:06,684 --> 01:09:14,684
+Ok, so we can find the angle between two vectors.
+
+362
+01:09:14,684 --> 01:09:25,364
+So actually we have, we can find here v2, the direction vector is the coefficient of t's.
+
+363
+01:09:25,364 --> 01:09:28,804
+This means minus 1, 1 and 2.
+
+364
+01:09:28,804 --> 01:09:35,163
+Ok, now we are looking for the intersection lines.
+
+365
+01:09:35,163 --> 01:09:40,163
+So the first one x plus y is 1.
+
+366
+01:09:40,163 --> 01:09:45,163
+The second one is y plus z is 2.
+
+367
+01:09:45,163 --> 01:09:50,163
+Ok, we are looking for the intersection line.
+
+368
+01:09:50,163 --> 01:09:53,163
+So y is, here is y is common.
+
+369
+01:09:53,163 --> 01:09:57,163
+As we say, y is t.
+
+370
+01:09:57,163 --> 01:10:01,163
+x is 1 minus t.
+
+371
+01:10:01,163 --> 01:10:07,163
+And c is 2 minus t.
+
+372
+01:10:07,163 --> 01:10:08,163
+And c is 1 minus t.
+
+373
+01:10:08,163 --> 01:10:12,163
+Yes, actually we have, we won.
+
+374
+01:10:12,163 --> 01:10:31,164
+So, we are looking for the intersection line.
+
+375
+01:10:12,532 --> 01:10:24,431
+Direction vector is the coefficients of t's minus 1, 1 and minus 1.
+
+376
+01:10:24,431 --> 01:10:44,431
+So, other part is very simple. What is the cosine theta? Cosine theta v1 times v2, this is dot product, over the length v1.
+
+377
+01:10:44,431 --> 01:10:59,431
+Just a second please. The length of v1 times the length of v2. Okay, so we will use this formula.
+
+378
+01:10:59,431 --> 01:11:07,431
+Okay, so the first one is the dot. What is the dot product?
+
+379
+01:11:07,431 --> 01:11:26,431
+V1 times v2 is 1 plus 1 minus 2. This equals to 0.
+
+380
+01:11:26,431 --> 01:11:35,431
+Actually, if the dot product is 0, we know that the angle is pi over 2.
+
+381
+01:11:35,431 --> 01:11:38,431
+Okay, question?
+
+382
+01:11:38,431 --> 01:12:01,431
+Okay, so the dot product is the dot product.
+
+383
+01:11:41,492 --> 01:11:43,492
+Okay, let's...
+
+384
+01:11:45,492 --> 01:11:48,492
+Oh, just a second please. I need my cable.
+
+385
+01:12:20,148 --> 01:12:21,148
+Evet.
+
+386
+01:12:23,068 --> 01:12:26,587
+Yani, θ'a yi'ye veriyor.
+
+387
+01:12:31,123 --> 01:12:46,823
+Okay, the second one is find the equations passing through the point P and orthogonal to the xy plane.
+
+388
+01:12:47,323 --> 01:12:54,823
+Okay, so we are looking for an equation of line.
+
+389
+01:12:54,823 --> 01:13:03,823
+For a line, we need a point which is given here and also direction vector.
+
+390
+01:13:03,823 --> 01:13:17,823
+So if this line is perpendicular to the xy, like this one.
+
+391
+01:13:17,823 --> 01:13:24,823
+Okay, like this one, we can take the direction vector.
+
+392
+01:13:24,823 --> 01:13:30,523
+We can take the direction as a direction vector key.
+
+393
+01:13:31,043 --> 01:13:33,623
+Okay, so we have a direction vector.
+
+394
+01:13:33,923 --> 01:13:35,163
+We have a point.
+
+395
+01:13:35,163 --> 01:13:39,884
+So we can write the parametric equations.
+
+396
+01:13:39,884 --> 01:13:56,783
+Also, this means x is 1, y is 1, z is minus 2 plus t.
+
+397
+01:13:56,783 --> 01:14:01,003
+Or you can write in standard form.
+
+398
+01:14:01,903 --> 01:14:13,463
+So it's not y minus 1 over z plus 2 over 1 is equal to t.
+
+399
+01:14:13,563 --> 01:14:16,943
+Actually, we don't prefer this kind of writing.
+
+400
+01:14:16,943 --> 01:14:24,663
+So we will write x is 1, y is 1, z is minus 2 plus t.
+
+401
+01:14:25,224 --> 01:14:31,903
+Okay, we don't prefer that kind of because over 0, it doesn't look good.
+
+402
+01:14:32,144 --> 01:14:34,663
+Okay, so do you have any question?
+
+403
+01:14:38,387 --> 01:14:38,927
+Okay.
+
+404
+01:14:50,003 --> 01:14:54,003
+Evet, bir soru var. Evet, bir soru var.
+
+405
+01:14:54,003 --> 01:14:58,003
+Bir soru var.
+
+406
+01:14:58,003 --> 01:15:01,003
+Bu parlametrik eşitliği
+
+407
+01:15:01,003 --> 01:15:03,003
+de bir line,
+
+408
+01:15:03,003 --> 01:15:05,003
+ve bir noktada
+
+409
+01:15:05,003 --> 01:15:09,003
+bir noktada
+
+410
+01:15:09,003 --> 01:15:11,003
+ve
+
+411
+01:15:11,003 --> 01:17:53,963
+bir noktada
+
+412
+01:17:53,963 --> 01:17:55,963
+y is
+
+413
+01:17:55,963 --> 01:17:56,963
+minus 1
+
+414
+01:17:56,963 --> 01:17:59,963
+minus 2t
+
+415
+01:17:59,963 --> 01:18:01,963
+z is
+
+416
+01:18:01,963 --> 01:18:04,963
+minus 1
+
+417
+01:18:04,963 --> 01:18:08,963
+minus 2t
+
+418
+01:18:08,963 --> 01:18:09,963
+ok
+
+419
+01:18:09,963 --> 01:18:13,963
+so this is the parametric equations
+
+420
+01:18:13,963 --> 01:18:15,963
+of
+
+421
+01:18:15,963 --> 01:18:18,963
+this line
+
+422
+01:18:18,963 --> 01:18:20,963
+ok
+
+423
+01:18:20,963 --> 01:18:22,963
+and
+
+424
+01:18:22,963 --> 01:18:23,963
+we have
+
+425
+01:18:23,963 --> 01:18:24,963
+the last one
+
+426
+01:18:24,963 --> 01:18:29,963
+find the plane equation
+
+427
+01:18:29,963 --> 01:18:32,963
+which is passing through
+
+428
+01:18:32,963 --> 01:18:36,963
+1 1 1 and 0 to 3
+
+429
+01:18:36,963 --> 01:18:47,963
+and also orthogonal to the plane x minus 2y plus 3 z
+
+430
+01:18:47,963 --> 01:19:15,963
+and also
+
+431
+01:18:49,716 --> 01:18:57,496
+Okay, so we need to write the plane equation.
+
+432
+01:18:58,076 --> 01:19:00,236
+So we need two things.
+
+433
+01:19:00,456 --> 01:19:04,056
+First, one point and second, normal vector.
+
+434
+01:19:04,056 --> 01:19:12,576
+Okay, so our, let's say that, oops, sorry.
+
+435
+01:19:12,576 --> 01:19:24,856
+This, let me say, this will be our plane, which are looking for the plane P.
+
+436
+01:19:24,856 --> 01:19:43,176
+But this plane is, let me change the color, perpendicular to the, to this, to this plane.
+
+437
+01:19:43,776 --> 01:19:52,336
+Okay, so we have a normal vector for the, the green one.
+
+438
+01:19:52,336 --> 01:19:56,636
+The normal vector is one minus two, three.
+
+439
+01:19:56,916 --> 01:19:59,096
+Okay, let me say N1.
+
+440
+01:19:59,496 --> 01:20:05,356
+And we are looking for a normal vector for the pink one.
+
+441
+01:20:05,796 --> 01:20:21,776
+Okay, so actually we know that if two planes are perpendicular, this normal N1 is parallel to the pink plane.
+
+442
+01:20:21,776 --> 01:20:24,916
+Okay, so, but I need one more vector.
+
+443
+01:20:24,916 --> 01:20:29,796
+Okay, so I can write a vector from these two points.
+
+444
+01:20:29,976 --> 01:20:33,536
+Let me say P, P0.
+
+445
+01:20:34,155 --> 01:20:41,836
+P, P0 is minus one and one and two.
+
+446
+01:20:41,836 --> 01:20:49,115
+Okay, we have, we have a vector here.
+
+447
+01:20:50,736 --> 01:20:53,816
+Let me say P, P0.
+
+448
+01:20:54,476 --> 01:21:05,576
+Okay, so we have two vectors actually on, let me say the pink one.
+
+449
+01:21:05,576 --> 01:21:09,496
+First one is P, P0.
+
+450
+01:21:09,876 --> 01:21:13,876
+Okay, the second one is N1.
+
+451
+01:21:13,876 --> 01:21:19,655
+So we are looking for a vector which will be normal to the pink one.
+
+452
+01:21:20,436 --> 01:21:28,356
+So we, if we find the cross product, we can find the vector F.
+
+453
+01:21:28,356 --> 01:21:34,396
+Okay, so this will be, let's find the cross product.
+
+454
+01:21:34,896 --> 01:21:42,276
+Okay, so the cross product is, yes, here, 7i plus 5g plus k.
+
+455
+01:21:42,276 --> 01:21:49,636
+So you can easily find the plane equation.
+
+456
+01:21:50,516 --> 01:21:56,316
+Yes, here is the normal for the pink one.
+
+457
+01:21:56,476 --> 01:21:57,655
+Here is the point.
+
+458
+01:21:57,655 --> 01:22:13,776
+So 7 times x minus 1, 5 times y minus 1, 1 times z minus 1 is equal to 0.
+
+459
+01:22:14,816 --> 01:22:17,536
+Okay, so do you have any question?
+
+460
+01:22:19,436 --> 01:22:19,856
+Okay.
+
+461
+01:22:19,856 --> 01:22:25,416
+So it's enough for today.
+
+462
+01:22:25,416 --> 01:22:26,096
+Okay.
+
+463
+01:22:27,296 --> 01:22:28,916
+So I upload.
+
+464
+01:22:29,652 --> 01:22:52,212
+to the system, okay, two files about parametric equations, lines and planes, okay. So please solve these questions because these questions were about the exams, also exam questions, the previous exam questions.
+
+465
+01:22:52,212 --> 01:23:18,931
+So it will be very useful for you. Actually, I am also preparing the other part of the exam. So I hope you will have a fine day of the rest of the day. Okay. So see you next week. Okay. Bye bye.
+
+466
+01:23:22,212 --> 01:23:23,131
+You're welcome.
+
+467
+01:23:26,676 --> 01:23:37,576
+I'm repeating again. Your exam will be until the end of the seventh week, okay?
+
+468
+01:23:39,256 --> 01:23:49,276
+So you will have lots of time because the exam will be next week.
+
+469
+01:23:53,363 --> 01:24:00,203
+I don't know. I didn't take any message from my department, [öğrenci].
+
+470
+01:24:05,203 --> 01:24:12,523
+Çünkü bizim için 17 May'a,
+
+471
+01:24:15,923 --> 01:24:16,403
+ama,
+
+472
+01:24:17,523 --> 01:24:20,203
+ve,
+
+473
+01:24:20,203 --> 01:24:24,203
+bir süreçten sonra,
+
+474
+01:24:24,203 --> 01:24:25,203
+ve,
+
+475
+01:24:25,203 --> 01:24:29,203
+bir süreçten sonra,
+
+476
+01:24:29,203 --> 01:24:31,203
+ok?
+
+477
+01:24:31,203 --> 01:24:32,203
+Ama,
+
+478
+01:24:32,203 --> 01:24:33,203
+bilmiyorum.
+
+479
+01:24:37,876 --> 01:24:38,876
+Tamam mı?
+
+480
+01:24:38,876 --> 01:24:39,876
+Görüşmek üzere.
