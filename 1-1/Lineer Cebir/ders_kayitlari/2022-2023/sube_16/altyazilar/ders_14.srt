@@ -1,0 +1,1663 @@
+1
+00:03:01,300 --> 00:03:02,380
+Aydın, dağız, tamamı.
+
+2
+00:03:27,955 --> 00:03:33,575
+Bugün iki kişiyiz, üç kişiyiz galiba. Son ders de. Olsun.
+
+3
+00:03:53,620 --> 00:03:57,340
+Evet, fikirlerse pena olmaz, gelmezlerse de sansun olmaz.
+
+4
+00:04:02,228 --> 00:04:13,628
+Şimdi geçen hafta geçiş matrislerinden bahsetmiştik, koordinat vektörlerinden. Bu konu biraz böyle karışık gibi duruyor. Ondan hızlıca böyle bir tekrar etmek istiyorum.
+
+5
+00:04:15,647 --> 00:04:22,968
+Türkçe anlatmamın bir şeyi var mı sizler için? En azından iki kişi var burada. Gerçi daha sonra dinleyenler için problem olabilir ama.
+
+6
+00:04:24,548 --> 00:04:27,608
+Neyse, en azından üzücü Türkçe. Geçin.
+
+7
+00:04:40,500 --> 00:04:44,300
+Sırada bazlarımız vardı. Sırada baz dediğimizde,
+
+8
+00:05:02,771 --> 00:05:20,091
+Eğer s bazında vektörlerin yerleri değiştirilince, mesela burada v1, v2, vn diye gidiyor. Bu eğer v2, v1, vn gibi gitseydi, bu da v vektör uzayının diğer bir bazı olacaktı. İşte sırası değiştirilince vektörlere buna sıralı baz deniyor.
+
+9
+00:05:22,752 --> 00:05:32,192
+İki tane sıralı baz alıyoruz arkadaşlar. S ve t. Vektör uzayının birden çok bazı olabiliyordu ama aynı sayıda vektör içermek zorunda.
+
+10
+00:05:43,252 --> 00:05:52,711
+Şimdi amacımız bu iki tane baz arasında bir ilişki bulabilir miyiz? Ya da bu iki baz arasında nasıl bir ilişki vardır? Bunu arıyoruz.
+
+11
+00:05:59,923 --> 00:06:06,163
+ve vektör uzayının iki tane sıralı bazını aldım. S ve T sıralı bazını aldım.
+
+12
+00:06:07,823 --> 00:06:15,063
+Biz biliyoruz ki eğer bir küme bir vektör uzayı için baz oluşturuyorsa
+
+13
+00:06:19,220 --> 00:06:32,460
+Bu vektör uzayındaki her bir V vektörü, bu bazıların vektörlerinin bir lineer kombinasyonu olarak tek türlü yasılabiliyor.
+
+14
+00:06:33,580 --> 00:06:41,200
+Şimdi bazın elemanları da vektör uzayının vektörleri olduklarında şöyle yapıyoruz arkadaşlar.
+
+15
+00:06:41,620 --> 00:06:42,460
+Her bir...
+
+16
+00:06:45,651 --> 00:06:48,891
+S bazından T bazına geçmek için
+
+17
+00:06:52,468 --> 00:06:53,448
+S bazından
+
+18
+00:06:58,771 --> 00:07:10,051
+t bazına geçmek için, s'nin her bir vektörünü, t bazının vektörlerinin lineer kombinasyonu olarak yazıyoruz.
+
+19
+00:07:12,632 --> 00:07:15,411
+t sol tarafta olduğu için şöyle yazayım.
+
+20
+00:08:05,716 --> 00:08:27,615
+Bu şekilde, S'nin bütün vektörlerini, S bazının vektörlerini niler kombinasyonu olarak yazdığımızda elde ettiğimiz kas sayılar, bize geçiş maddesinin üstünlerini veriyor.
+
+21
+00:09:00,724 --> 00:09:21,384
+Aslında bunları biz ne demiştik? Mesela c2, c1, c1, c2, c1
+
+22
+00:09:28,436 --> 00:09:31,516
+T bazına göre.
+
+23
+00:09:36,884 --> 00:09:41,283
+B1 vektörünün t bazına göre, koordinat vektörü,
+
+24
+00:09:51,668 --> 00:09:59,927
+İşte bütün bu V1, V2, VN'lerin koordinat vektörlerini sütun olarak kabul eden maddi.
+
+25
+00:10:09,971 --> 00:10:12,471
+S bazından T bazına geçiş matrisi.
+
+26
+00:10:39,827 --> 00:10:43,247
+S bazından T bazına, geçiş matrisi.
+
+27
+00:10:50,419 --> 00:10:54,099
+Bazen sorularda, sınavlarda şu şekilde veriliyor.
+
+28
+00:10:55,699 --> 00:10:58,339
+Lineer kombinasyonu olarak direkt veriliyor.
+
+29
+00:10:58,479 --> 00:11:07,879
+Sizin sadece yapmanız gereken şuradaki kas sayıları sütun olarak alıp matris'e yazmanız.
+
+30
+00:11:11,572 --> 00:11:17,572
+Şöyle bir algoritma ile de bunu aklınızda tutabilirsiniz. Bu kolay olur sizin için de.
+
+31
+00:11:23,412 --> 00:11:40,012
+S bazından T bazına geçiş maddesini bulmanız için arkadaşlar, zaten bu sembolü göstermemizin nedeni, aklımızda kolay kalsın diye, T bazının vektörlerini sol tarafa yazıyorsunuz arkadaşlar. Neler bunlar? W'lardı.
+
+32
+00:11:50,803 --> 00:11:58,004
+Daha sonra S basının vektörlerini sağ tarafa yazıyorsunuz.
+
+33
+00:12:10,004 --> 00:12:13,324
+Daha sonra buraya elementer satır işlemleri uyguluyorsunuz.
+
+34
+00:12:24,244 --> 00:12:36,984
+Son tarafta, lineer maçısı elde ediliyor. Sağ tarafta da, S bazından, S bazından, geçiş maçısı.
+
+35
+00:13:06,067 --> 00:13:06,447
+Tamam.
+
+36
+00:13:30,836 --> 00:13:32,735
+Okey, let us, so amedip duydum.
+
+37
+00:15:25,299 --> 00:15:33,379
+Arkadaşlar, kusura bakmayın, okulun Wi-Fi'sında problem var. Şimdi kabloyu taktım. Nereden itibaren gitti, tam anlayamadım ama.
+
+38
+00:15:35,839 --> 00:15:38,719
+Hocam, tam örneklere geçiyordunuz, o sırada gittik.
+
+39
+00:15:47,539 --> 00:16:04,120
+Ok, let us look at the example. We are working on, or we consider the vector space P1, which is the vector space of all polynomials of degree 1 and smaller than 1 with a 0 polynomial.
+
+40
+00:16:58,163 --> 00:16:58,803
+Tiyuan
+
+41
+00:17:03,059 --> 00:17:10,059
+vektör vektör konuları,
+
+42
+00:17:19,155 --> 00:17:24,155
+Degrees, daha az, daha az, daha az, daha az, daha az 0 konularını işleyeceğiz.
+
+43
+00:17:36,564 --> 00:17:38,564
+ve hafet ol
+
+44
+00:17:42,579 --> 00:17:45,379
+Ordu pages for P1.
+
+45
+00:17:54,036 --> 00:18:02,036
+Since the dimension of P1 is 2, each basis have 2 letters.
+
+46
+00:18:33,491 --> 00:18:35,392
+Mi 1, Mi 2.
+
+47
+00:18:39,380 --> 00:19:04,580
+t, t-3, t-1, t-1, t-1. V1 is t, v2 is t-3, w1 is t-1, w2 is t-1.
+
+48
+00:19:11,092 --> 00:19:12,252
+Let us find
+
+49
+00:19:20,596 --> 00:19:30,195
+The transition matris from C basis to S basis.
+
+50
+00:19:37,587 --> 00:19:38,907
+Asteşim matris.
+
+51
+00:20:00,084 --> 00:20:09,423
+So, write the vektörs of S on the left, V1 and V2.
+
+52
+00:20:18,163 --> 00:20:23,124
+And write the vektör of t on the right.
+
+53
+00:20:30,548 --> 00:20:42,968
+So, we have this linear system, v1, 1, 0, v2, 1, negative 3.
+
+54
+00:20:47,188 --> 00:20:55,108
+W1, 1, negative 1, W2, 1, 1.
+
+55
+00:20:58,068 --> 00:21:06,068
+And by using elementable operations, we can put this matrix into the reduced row action form.
+
+56
+00:21:17,619 --> 00:21:22,219
+We can multiply rho 2 by negative 1 over 3.
+
+57
+00:21:46,324 --> 00:21:53,224
+Rol 1, 1 over 3, negative 1 over 3.
+
+58
+00:21:55,524 --> 00:22:02,224
+Now, multiplying Rol 2 by negative 1 and add it to Rol 1 gives...
+
+59
+00:22:21,268 --> 00:22:30,387
+1, 0, 1-1 over 3, 2 over 3.
+
+60
+00:22:37,107 --> 00:22:40,367
+1 plus 1 over 3, which is 4 over 3.
+
+61
+00:22:58,548 --> 00:23:09,347
+This is transition matrix from S basis to, sorry, T basis to S basis.
+
+62
+00:23:17,395 --> 00:23:21,836
+station matris from T-basis to S-basis.
+
+63
+00:23:32,948 --> 00:23:40,948
+Now, we will talk about a very important topic, which is related to eigenvalues and eigenvektörs.
+
+64
+00:23:44,564 --> 00:23:57,264
+Again, we work on matrices, especially square matrices of type m by n, or order m.
+
+65
+00:24:11,955 --> 00:24:13,675
+A is M by M matrix.
+
+66
+00:24:23,347 --> 00:24:41,367
+If we have this equation for the matrix A, A times X is equal to lambda times X, where X is a vector and lambda is a scalar,
+
+67
+00:24:41,367 --> 00:24:49,048
+then the scalar lambda is called
+
+68
+00:24:49,048 --> 00:24:53,887
+Aragomoreal of A, matris A.
+
+69
+00:25:05,652 --> 00:25:12,852
+vektör x is called eigenvektör.
+
+70
+00:25:18,963 --> 00:25:24,364
+of a which corresponds to the eigen value lambda.
+
+71
+00:25:27,988 --> 00:25:42,948
+Okay. So if this equation holds for a n by n matrix A, where x is a vector and lambda is a scalar, then lambda is called
+
+72
+00:25:46,067 --> 00:25:51,748
+an eigenvalue or characteristic value of matrix A.
+
+73
+00:26:01,940 --> 00:26:03,940
+ve non-zero vektörs,
+
+74
+00:26:03,940 --> 00:26:07,940
+because if we take x as a zero vektör,
+
+75
+00:26:07,940 --> 00:26:09,940
+this equation always falls,
+
+76
+00:26:09,940 --> 00:26:15,940
+so it does not mean full.
+
+77
+00:26:15,940 --> 00:26:19,940
+Therefore, x must be non-zero.
+
+78
+00:26:19,940 --> 00:26:27,940
+The non-zero vektör x is called the eigenvektör
+
+79
+00:26:27,940 --> 00:26:33,940
+of a associated with the eigenvalue lambda.
+
+80
+00:26:40,531 --> 00:26:44,531
+Actually, we can write this equation.
+
+81
+00:26:50,612 --> 00:26:57,812
+Lambda x minus a times x is equal to zero.
+
+82
+00:26:59,772 --> 00:27:04,312
+Taking the parenthesis of x,
+
+83
+00:27:04,312 --> 00:27:12,471
+we have lambda times since a is a matrix.
+
+84
+00:27:12,471 --> 00:27:32,652
+So we need to write lambda times identematics minus a times x is equal to zero.
+
+85
+00:27:34,132 --> 00:27:35,372
+Actually, zero is a vector.
+
+86
+00:27:35,372 --> 00:27:35,951
+Yes.
+
+87
+00:27:35,951 --> 00:27:46,652
+So to find the eigenvalues and also eigenvectors of a matrix,
+
+88
+00:27:46,652 --> 00:27:49,951
+we use this equation.
+
+89
+00:28:14,996 --> 00:28:16,236
+Look at the example.
+
+90
+00:28:21,299 --> 00:28:26,339
+Bu hermetik A, 1, 1, negative 2, 4, 3, 4, 4, 4, 4, 4, 4, 4, 4, 5, 5, 6, 7, 8, 9, 9, 10,
+
+91
+00:29:12,948 --> 00:29:14,948
+Ve hemen kipsi ek.
+
+92
+00:29:20,915 --> 00:29:24,475
+1, 1, negative 2, 4.
+
+93
+00:29:36,596 --> 00:29:47,476
+Now, let us find the eigenvalues and corresponding eigenvektörs of this matrix. So, we need to find
+
+94
+00:29:50,516 --> 00:30:01,476
+the vectors x and scalar lambda such that a times x is equal to lambda times x.
+
+95
+00:30:05,395 --> 00:30:24,355
+Or, lambda times identi matrix minus A times x is equal to zero. So let us set this equation.
+
+96
+00:30:29,428 --> 00:30:32,768
+One more time, since a is two by two,
+
+97
+00:30:38,708 --> 00:30:39,268
+Say
+
+98
+00:30:51,251 --> 00:31:02,291
+Since a is 2 by 2, x must be x1 and x2 is equal to
+
+99
+00:31:19,635 --> 00:31:20,155
+0.
+
+100
+00:31:21,355 --> 00:31:24,135
+So, we have Lambda minus 1.
+
+101
+00:31:29,299 --> 00:31:38,299
+Negative 1, 0, positive 2, lambda minus 4.
+
+102
+00:31:52,884 --> 00:31:56,884
+Bu, bu sistemimizin bu sistemimizin.
+
+103
+00:32:06,548 --> 00:32:09,147
+Evet, let us try it first, then.
+
+104
+00:32:34,644 --> 00:32:59,084
+Now, we need to solve this homogeneal system. Writing the automatic matrix of this homogeneal system, we have lambda minus 1, negative 1, 2, lambda minus 4, 0, 0.
+
+105
+00:33:07,188 --> 00:33:10,968
+Sorry, before this, before this.
+
+106
+00:33:16,019 --> 00:33:37,359
+Since x must be different from 0, because we are looking for non-zero vector x, so this homogenous system must have infinitely many solutions, not 0 solution.
+
+107
+00:33:47,731 --> 00:34:01,932
+Because if lambda minus lambda times identif matrix minus A is singular matrix, which means that this homogenous system have infinitely many solutions.
+
+108
+00:34:02,932 --> 00:34:17,431
+If lambda times identif matrix minus A is non-singular, then this homogenous system have only trivial or zero solution.
+
+109
+00:34:17,731 --> 00:34:22,692
+So lambda times identif matrix minus A must be singular.
+
+110
+00:34:22,692 --> 00:34:32,951
+So it means that this matrix has to be singular.
+
+111
+00:34:40,148 --> 00:34:42,387
+Or, determinant,
+
+112
+00:34:47,155 --> 00:34:49,476
+must be equal to zero.
+
+113
+00:35:03,315 --> 00:35:12,835
+Which is lambda minus 1 times lambda minus 4 plus 2. And this has to be equal to 0.
+
+114
+00:35:15,715 --> 00:35:18,835
+Then we have lambda square.
+
+115
+00:35:22,452 --> 00:35:26,572
+Minus negatif 4 lambda, negatif 5 lambda.
+
+116
+00:35:30,356 --> 00:35:36,676
+6, 6, 0.
+
+117
+00:35:37,856 --> 00:35:43,376
+So, we need to find the roots of this equation.
+
+118
+00:35:44,376 --> 00:35:46,376
+This is the...
+
+119
+00:35:51,731 --> 00:35:56,771
+Faktorizasyonu 6, bu kadar 6'da, negatif 5'de,
+
+120
+00:36:03,891 --> 00:36:05,891
+Negative two, negative three.
+
+121
+00:36:09,684 --> 00:36:17,584
+So, it means that this equation is lambda minus 2 times lambda minus 3 is equal to 0.
+
+122
+00:36:18,284 --> 00:36:27,384
+So, we have the eigenvalues of the matrix A as lambda 1 is 2 and lambda 2 is 3.
+
+123
+00:36:29,984 --> 00:36:38,684
+Now, we need to find the eigenvector associated with each eigenvalue of this matrix.
+
+124
+00:36:47,123 --> 00:36:48,323
+Bu, ayı kanlı vektör.
+
+125
+00:36:52,820 --> 00:36:53,940
+Vesveşir YouTube 3.
+
+126
+00:36:57,940 --> 00:37:00,740
+Lambda 1 is equal to 2.
+
+127
+00:37:02,740 --> 00:37:08,340
+We write Lambda in its place in this equation.
+
+128
+00:37:13,652 --> 00:37:18,192
+And Sol, X.
+
+129
+00:37:27,059 --> 00:37:36,619
+Writing Lambda 1 as 2, we have in this equation 2 minus 1, negative 1.
+
+130
+00:37:50,579 --> 00:37:55,860
+2, 2-4,
+
+131
+00:37:58,079 --> 00:38:02,579
+times x1, x2, is equal to 0.
+
+132
+00:38:10,547 --> 00:38:22,027
+So, we have this linear equation homogenous system, which is negative x1, negative x2 is 0.
+
+133
+00:38:27,635 --> 00:38:45,396
+2x1-2x2-2x2-0. Therefore, it means that x1 is negative x2.
+
+134
+00:38:59,443 --> 00:39:03,003
+This is not negative x1, this is x1.
+
+135
+00:39:13,619 --> 00:39:19,839
+X1 is equal to X2 and X2 is free, say R.
+
+136
+00:39:26,356 --> 00:39:48,236
+So, the solution for this homogenous system is for the vector that satisfies this equation is x, which is r, r, and r is any real number.
+
+137
+00:39:52,436 --> 00:40:01,376
+İgonevektör associated with lambda 1 is equal to 2 is a vector such that x is equal to rr.
+
+138
+00:40:01,376 --> 00:40:12,916
+For example, x is one eigenvektör associated with lambda 1 is equal to 2.
+
+139
+00:40:12,916 --> 00:40:25,655
+And to find another eigenvektör associated with lambda 2 is equal to 3 is
+
+140
+00:40:45,076 --> 00:40:50,076
+Şimdi, Lambda'a 3'a yerleştirelim.
+
+141
+00:40:50,076 --> 00:40:52,076
+Yani 2-3.
+
+142
+00:40:59,668 --> 00:41:16,568
+Negative 1, 2, 2 minus, sorry, 3 minus, 3 minus, 3 minus 1, negative 1, 2, 3 minus 4.
+
+143
+00:41:34,387 --> 00:41:45,708
+So, we have this homogenous system for this, sorry, we have the automatic matrix of this homogenous system like this.
+
+144
+00:41:57,300 --> 00:42:02,280
+ve bu matrixı bu
+
+145
+00:42:02,280 --> 00:42:04,300
+ve bu formu için
+
+146
+00:42:04,300 --> 00:42:06,300
+bu formu için
+
+147
+00:42:06,300 --> 00:42:08,300
+çünkü
+
+148
+00:42:08,300 --> 00:42:12,300
+2x1
+
+149
+00:42:12,300 --> 00:42:14,300
+2
+
+150
+00:42:14,300 --> 00:42:16,300
+x2
+
+151
+00:42:18,300 --> 00:42:19,300
+or
+
+152
+00:42:19,300 --> 00:42:20,300
+x1
+
+153
+00:42:20,300 --> 00:42:22,300
+x2
+
+154
+00:42:22,300 --> 00:42:29,300
+ve
+
+155
+00:42:29,300 --> 00:42:30,300
+t
+
+156
+00:42:30,300 --> 00:42:32,300
+ve
+
+157
+00:42:32,300 --> 00:42:33,300
+t
+
+158
+00:42:33,300 --> 00:42:34,300
+ve
+
+159
+00:42:34,300 --> 00:42:35,300
+t
+
+160
+00:42:35,300 --> 00:42:37,300
+ve
+
+161
+00:42:37,300 --> 00:43:08,300
+t
+
+162
+00:42:53,043 --> 00:43:08,563
+Or, for example, let me take T as 2, we have 1, 2 is the eigenvektör associated with lambda 2 is 3.
+
+163
+00:43:14,036 --> 00:43:21,316
+Okey. Arkadaşlar, anlaştırma bir şey var mı bunda? Varsın sorun.
+
+164
+00:43:33,876 --> 00:43:36,656
+10 dakika ara verelim, sonra tanımlanıp devam edelim.
+
+165
+00:57:32,307 --> 00:57:40,367
+Hello again. Now we will give the definition of the characteristic polynomial and also characteristic equation of the matrix.
+
+166
+00:57:46,835 --> 00:58:04,075
+and by n matrix A we have and the determinant of lambda times ident matrix minus A, which is this matrix, is called the characteristic polynomial of A.
+
+167
+00:58:10,867 --> 00:58:21,507
+Determinant of a matrix, lambda times i-matrix minus A is called the characteristic polynomial of A.
+
+168
+00:58:21,507 --> 00:58:37,628
+And the equation, which is denoted by P lambda, determinant lambda times i-matrix A is equal to 0 is called the characteristic equation.
+
+169
+00:58:42,931 --> 00:58:54,091
+If we set the matrix lambda times identity matrix minus A and find its determinant, then it's called the characteristic polynomial.
+
+170
+00:58:54,871 --> 00:59:05,571
+And if we set this equation or this polynomial is equal to zero, then it's called the characteristic equation of A.
+
+171
+00:59:07,791 --> 00:59:11,131
+And about the characteristic polynomial,
+
+172
+00:59:12,931 --> 00:59:14,491
+We have
+
+173
+00:59:19,635 --> 00:59:21,516
+a polynomial of degree n,
+
+174
+00:59:22,516 --> 00:59:25,036
+which is a polynomial of lambda.
+
+175
+00:59:26,755 --> 00:59:30,775
+And if we said lambda is equal to 0,
+
+176
+00:59:32,695 --> 00:59:37,295
+then determined negative a is equal to a n.
+
+177
+00:59:37,896 --> 00:59:41,556
+So the constant term for the characteristic polynomial,
+
+178
+00:59:41,556 --> 00:59:42,875
+which is a n,
+
+179
+00:59:43,076 --> 00:59:48,655
+is equal to negative 1 to the n times determined a.
+
+180
+00:59:48,655 --> 00:59:53,615
+And also a1 is equal to negative trace a.
+
+181
+00:59:53,976 --> 00:59:56,175
+These two equations are important.
+
+182
+00:59:56,996 --> 00:59:57,715
+More properties.
+
+183
+01:00:08,179 --> 01:00:16,239
+We will find eigenvalues and also the eigenvektörs by using the characteristic equation.
+
+184
+01:00:20,692 --> 01:00:21,952
+For this example,
+
+185
+01:00:25,715 --> 01:00:37,395
+Look at the theorem. It says the eigenvalues of a matrix A are the rules of the characteristic polynomial of A.
+
+186
+01:00:38,715 --> 01:00:49,056
+So it means that if you want to find the eigenvalues of a matrix, then you need to find the characteristic polynomial,
+
+187
+01:00:49,056 --> 01:01:01,295
+which is lambda times identematics, determinant of lambda times identematics minus A, and find its roots.
+
+188
+01:01:27,443 --> 01:01:32,943
+Ok, let us find the eigenvalues and associated eigenvektörs of the matrix.
+
+189
+01:01:36,596 --> 01:01:39,675
+A, this matris.
+
+190
+01:01:42,155 --> 01:01:48,235
+Let us find the eigenvalues and eigenvektors of this matris.
+
+191
+01:01:53,811 --> 01:02:01,291
+So, first of all, we need to find the roots of the characteristic polynomial, which are the eigenvektors of A.
+
+192
+01:02:01,291 --> 01:02:02,891
+So,
+
+193
+01:02:09,907 --> 01:02:11,027
+You can find
+
+194
+01:02:27,347 --> 01:02:38,108
+Setting Determine, formula times identematics minus a is equal to zero.
+
+195
+01:02:44,884 --> 01:02:53,704
+1, 2, negative 1, 1, 0, 1, 2, negative 4, negative 4, 5.
+
+196
+01:03:37,972 --> 01:03:45,772
+Number, minus one, minus two, one.
+
+197
+01:03:51,123 --> 01:03:52,243
+101
+
+198
+01:03:57,268 --> 01:04:07,048
+101, so negative 1, lambda, negative 1.
+
+199
+01:04:12,916 --> 01:04:14,356
+4, negative 4, 5.
+
+200
+01:04:15,615 --> 01:04:17,256
+So, negative 4, 4.
+
+201
+01:04:22,931 --> 01:04:24,291
+Lama en spaz.
+
+202
+01:04:28,980 --> 01:04:40,920
+So, we need to find the term of these 3x3 matris. We can use rule of Sarus. Lambda minus.
+
+203
+01:04:45,940 --> 01:04:52,539
+1 x, lambda x, lambda minus 5.
+
+204
+01:04:59,315 --> 01:05:00,615
+Merkleyin, netif eight.
+
+205
+01:05:11,987 --> 01:05:12,788
+Minus
+
+206
+01:05:16,148 --> 01:05:18,148
+Plus 4 times lambda
+
+207
+01:05:23,027 --> 01:05:44,517
+minus two times lambda minus five and plus four times lambda minus one. So the characteristic polynomial of this matrix is
+
+208
+01:05:57,556 --> 01:05:57,996
+Okay.
+
+209
+01:06:13,268 --> 01:06:15,427
+Lambda minus 1 times
+
+210
+01:06:15,427 --> 01:06:19,327
+Lambda sükar minus 5 Lambda
+
+211
+01:06:22,996 --> 01:06:41,476
+Minus 12, plus 4 Lambda, minus 2 Lambda, plus 10, plus 4 Lambda, minus 4.
+
+212
+01:06:41,476 --> 01:06:45,896
+So we have Lambda cube.
+
+213
+01:06:51,860 --> 01:07:12,880
+Negative 5 Lambda squared, negative Lambda squared, so negative 6 Lambda squared, we have 5 Lambda here, so 9 Lambda, 7 Lambda, 11 Lambda.
+
+214
+01:07:17,523 --> 01:07:24,344
+vekansans, 12, 12, 12, 6.
+
+215
+01:07:25,864 --> 01:07:33,023
+So, the eigen, sorry, characteristic polynomial of this matrix is this one.
+
+216
+01:07:34,243 --> 01:07:42,203
+And to find the eigenvalues, we need to find the roots of the characteristic equation.
+
+217
+01:07:42,203 --> 01:07:45,943
+So, setting this equation as 0.
+
+218
+01:07:52,947 --> 01:08:05,228
+Lambda cubed minus 6 times Lambda squared plus 11 Lambda minus 6 is equal to 0.
+
+219
+01:08:05,228 --> 01:08:10,867
+So we need to find the roots of this equation.
+
+220
+01:08:11,667 --> 01:08:22,387
+Since this equation is a cubic equation, first of all, we need to find one of the roots of
+
+221
+01:08:22,387 --> 01:08:23,907
+this equation.
+
+222
+01:08:24,907 --> 01:08:29,108
+So let us first try one or negative one.
+
+223
+01:08:30,068 --> 01:08:41,127
+And then the factors of this may be negative two, three, or two, negative two, three.
+
+224
+01:08:41,547 --> 01:08:44,648
+But let us first of all write one.
+
+225
+01:08:49,300 --> 01:08:55,420
+1 minus 6 plus 11 minus 6.
+
+226
+01:08:59,420 --> 01:09:02,460
+This is 0.
+
+227
+01:09:03,460 --> 01:09:07,340
+So, Lambda is equal to 1.
+
+228
+01:09:09,260 --> 01:09:14,900
+Is a root for the equation.
+
+229
+01:09:19,507 --> 01:09:20,547
+It means that
+
+230
+01:09:27,091 --> 01:09:32,091
+It means that we can divide this polynomial.
+
+231
+01:09:44,340 --> 01:09:45,760
+So, lambda minus 1.
+
+232
+01:09:47,300 --> 01:09:49,260
+For finding other rules.
+
+233
+01:09:53,108 --> 01:09:59,028
+So we need lambda cube, so we need to multiply lambda by lambda square.
+
+234
+01:10:01,068 --> 01:10:06,488
+Lambda square, lambda cube, minus lambda square.
+
+235
+01:10:16,340 --> 01:10:29,140
+So, this is 0, negative 5 Lambda square, plus 11 Lambda, minus 6.
+
+236
+01:10:29,779 --> 01:10:35,739
+We need negative 5 Lambda square, so we need to multiply Lambda by negative 5 Lambda.
+
+237
+01:10:38,239 --> 01:10:40,640
+Negative 5 Lambda square.
+
+238
+01:10:45,108 --> 01:10:47,268
+Plus 5 lambda
+
+239
+01:10:51,347 --> 01:11:20,347
+0, 6, Lambda minus 6. So we need 6 Lambda. We need to multiply Lambda by positive 6, which gives 6 Lambda minus 6. So we have 0. It means that Lambda cubed minus 6 Lambda squared.
+
+240
+01:11:29,716 --> 01:11:32,516
+plus 11 lambda minus 6
+
+241
+01:11:32,516 --> 01:11:35,596
+is equal to
+
+242
+01:11:35,596 --> 01:11:38,276
+lambda minus 1
+
+243
+01:11:51,315 --> 01:11:58,916
+Times, lambda square, minus 5 lambda.
+
+244
+01:12:02,515 --> 01:12:18,036
+plus 6. So we can factorize this equation since this is an equation of order 2, negative 2, negative 3.
+
+245
+01:12:18,595 --> 01:12:27,635
+Therefore, we have lambda minus 1 times lambda minus 2 times lambda minus 3.
+
+246
+01:12:32,115 --> 01:12:36,076
+So, the iconomelius of this matrix
+
+247
+01:12:40,020 --> 01:12:53,340
+are the roots of the characteristic equation, which are lambda 1, 1, lambda 2, 2,
+
+248
+01:13:00,051 --> 01:13:04,351
+Lambda 3, 3.
+
+249
+01:13:08,340 --> 01:13:16,659
+Now let us find the eigenvektör associated with each eigenvektör.
+
+250
+01:13:17,659 --> 01:13:26,539
+I will only find the eigenvektör associated with lambda 1, and the others are the same, or similar, sorry.
+
+251
+01:13:27,940 --> 01:13:33,060
+So to find an eigenvektör, say x1,
+
+252
+01:13:57,619 --> 01:13:59,619
+find the item like this.
+
+253
+01:14:11,891 --> 01:14:13,091
+Susüçü tuttü.
+
+254
+01:14:20,787 --> 01:14:22,907
+Bounder 1 is equal to 1.
+
+255
+01:14:31,923 --> 01:14:33,323
+Bir sassu çütüt.
+
+256
+01:14:43,539 --> 01:14:45,779
+Lineer is equal to 1.
+
+257
+01:14:50,771 --> 01:14:52,931
+Keen, delikreşen.
+
+258
+01:14:57,587 --> 01:15:05,907
+Lambda times identifix minus a times x is equal to zero.
+
+259
+01:15:08,188 --> 01:15:18,707
+So, it means that since lambda is one, and the matrix a is here, okay,
+
+260
+01:15:25,811 --> 01:15:48,291
+Lambda minus 1, negative 2, 1, negative 1, Lambda, negative 1, negative 4, 4, Lambda minus, sorry, sorry, sorry, okay, Lambda minus 5.
+
+261
+01:15:48,291 --> 01:15:55,631
+We only change Lambda as 1, so this is 0.
+
+262
+01:16:03,283 --> 01:16:04,223
+Lambda is 1.
+
+263
+01:16:15,412 --> 01:16:17,932
+Siz de aykın vektör, associatif iklamda var.
+
+264
+01:16:26,003 --> 01:16:34,644
+So, we need to solve this homogenee system, putting this matrix into the reduced row echelon form.
+
+265
+01:16:36,243 --> 01:16:48,323
+We can write this matrix by multiplying this by negative 1, 1, negative 1, 1,
+
+266
+01:16:48,323 --> 01:17:01,604
+And dividing this by negative 1 over 2, 0, 1, negative 1 over 2, 0.
+
+267
+01:17:02,724 --> 01:17:15,123
+And dividing this by negative 1 over 4, we have negative 1, 1, 0.
+
+268
+01:17:24,595 --> 01:17:49,765
+Şimdi, bu ve bu ve bu bir
+
+269
+01:17:56,724 --> 01:18:06,524
+So, it means that we have infinite minus solutions, x3 is free.
+
+270
+01:18:10,131 --> 01:18:34,891
+x1 minus x2 plus x3 is equal to zero. And x2 is equal to x3 over two. And x3 is equal to r, where r is in a real number. Therefore, the solution for this homogeneous system is that,
+
+271
+01:18:39,507 --> 01:18:50,467
+x1 is x2 minus x3, and x2 is equal to x3 over 2, so we have negative.
+
+272
+01:18:57,876 --> 01:18:59,876
+negative x3 over 2.
+
+273
+01:19:02,275 --> 01:19:11,876
+So, the solution or the eigenvector associated with lambda 1 is x1 which is negative.
+
+274
+01:19:15,923 --> 01:19:26,524
+R over 2, x2, which is R over 2, and x3, which is R, where R is in real number.
+
+275
+01:19:35,604 --> 01:19:38,043
+Writing or taking R as true
+
+276
+01:19:44,051 --> 01:19:52,051
+İgone vector associated with 1,1 is negative 1,1,2.
+
+277
+01:19:54,731 --> 01:20:02,051
+And we can also find the other eigenvectors associated with other eigenvalues by the similar fashion.
+
+278
+01:21:07,315 --> 01:21:16,355
+We can also find the solution here. Solution for Lambda 2 and Lambda 3.
+
+279
+01:21:33,684 --> 01:21:46,644
+İngilizce, may, can, complex numbers, but in our course, we don't think the complex eigenvalues.
+
+280
+01:21:47,923 --> 01:21:52,884
+Here the procedure to find the eigenvalues and eigenvectors of a matrix.
+
+281
+01:21:54,963 --> 01:21:56,804
+We have already done this.
+
+282
+01:22:21,716 --> 01:22:24,416
+Determine the roots of the characteristic polynomial.
+
+283
+01:22:25,916 --> 01:22:37,016
+These are the eigenvalues of A and write each eigenvalue on its place on the equation, this equation,
+
+284
+01:22:38,236 --> 01:22:44,416
+and find the eigenvectors by finding solution to the homogenesis.
+
+285
+01:22:44,416 --> 01:22:45,216
+Okay.
+
+286
+01:22:47,216 --> 01:22:57,195
+Here, I will give a very important property that says, this is very, very important.
+
+287
+01:23:05,460 --> 01:23:20,460
+If you have an upper or lower triangular matrix, then the eigenvalues of this matrix are the elements on the main diagonal.
+
+288
+01:23:20,460 --> 01:23:33,859
+For example, if you have A as matrix 1305,
+
+289
+01:24:28,307 --> 01:24:51,507
+Okay, this is upper triangular matrix, and if you want to find the eigenvalues of this matrix, no need to find the roots of the characteristic equation, since this is on the form of upper triangular matrix, these are
+
+290
+01:25:00,627 --> 01:25:04,627
+eigenvalues of A.
+
+291
+01:25:06,387 --> 01:25:09,987
+So, this property is very very important.
+
+292
+01:25:12,067 --> 01:25:12,867
+And also,
+
+293
+01:25:15,427 --> 01:25:16,228
+and also,
+
+294
+01:25:17,667 --> 01:25:18,228
+for,
+
+295
+01:25:29,652 --> 01:25:32,091
+If A is true by two matris,
+
+296
+01:25:45,235 --> 01:25:50,555
+Say, A, B, C, D.
+
+297
+01:25:54,420 --> 01:25:54,980
+Then,
+
+298
+01:25:58,644 --> 01:26:02,204
+The characteristic polynomial of this matrix will be,
+
+299
+01:26:03,564 --> 01:26:04,003
+Bir lambda.
+
+300
+01:26:14,420 --> 01:26:24,420
+which is determinant lambda times 2 by 2 identematics.
+
+301
+01:26:54,707 --> 01:26:55,207
+Son.
+
+302
+01:27:01,811 --> 01:27:04,771
+Lambda minus A, negative B
+
+303
+01:27:15,731 --> 01:27:16,851
+Negative C,
+
+304
+01:27:19,652 --> 01:27:20,711
+Thumbna minus D.
+
+305
+01:27:28,275 --> 01:27:38,275
+So, the characteristic polynomial is equal to lambda minus A, lambda minus B.
+
+306
+01:27:41,876 --> 01:28:11,876
+plus sorry minus e times c or we can write this equation one was you cash a times c a plus d times lambda plus a d minus bc
+
+307
+01:28:11,876 --> 01:28:19,876
+now a plus d is the trace of a
+
+308
+01:28:42,036 --> 01:28:45,636
+1, 2, 3, 8, times
+
+309
+01:28:49,140 --> 01:28:49,700
+Lambda.
+
+310
+01:28:51,460 --> 01:28:56,980
+And AD minus BC is the determinant of A, so plus
+
+311
+01:29:00,595 --> 01:29:04,355
+Determinant A. Bu, bu, is also important.
+
+312
+01:29:04,355 --> 01:29:06,355
+For 2x2 matris,
+
+313
+01:29:08,515 --> 01:29:15,475
+if you know the trace and also the determinant of the matris for 2x2 matris,
+
+314
+01:29:15,475 --> 01:29:16,595
+you can write
+
+315
+01:29:18,595 --> 01:29:22,355
+the characteristic polynomial of the matris.
+
+316
+01:29:22,915 --> 01:29:23,635
+Okay.
+
+317
+01:29:31,155 --> 01:29:35,155
+Now we will talk about Cayley-Hamilton theorem.
+
+318
+01:29:36,756 --> 01:29:45,555
+The Cayley-Hamilton theorem says every n by n matrix A satisfies its characteristic polynomial.
+
+319
+01:29:46,055 --> 01:29:54,155
+So, if a matrix A has the characteristic polynomial P lambda,
+
+320
+01:29:55,155 --> 01:29:59,956
+then writing the matrix instead of lambda,
+
+321
+01:30:05,332 --> 01:30:08,652
+This equation also satisfies.
+
+322
+01:30:14,804 --> 01:30:30,804
+vek
+
+323
+01:30:36,916 --> 01:30:49,036
+By using Cayley-Hamilton theorem, find the inverse of the matrix A and find A to the power of 5.
+
+324
+01:30:51,756 --> 01:30:52,275
+So.
+
+325
+01:31:01,747 --> 01:31:05,747
+We will use Kaley-Hamilton theorem.
+
+326
+01:31:05,747 --> 01:31:13,747
+So we need to find first of all the characteristic polynomial of this matrix, 1, 0, 5.
+
+327
+01:31:20,372 --> 01:31:21,771
+Ok, let us take.
+
+328
+01:31:27,604 --> 01:31:28,604
+İzmetliğiniz.
+
+329
+01:32:02,163 --> 01:32:11,703
+A2.5.0.
+
+330
+01:32:16,083 --> 01:32:17,783
+İngilizce, hamilton tab.
+
+331
+01:32:22,868 --> 01:32:26,868
+Here, since this is a lower triangular matrix,
+
+332
+01:32:41,524 --> 01:32:56,844
+Since this is a lower triangular matrix, λ1 is equal to 1, λ2 is equal to 0, and λ3 is equal to 3.
+
+333
+01:32:56,844 --> 01:33:03,244
+So we can find the characteristic polynomial easily.
+
+334
+01:33:03,244 --> 01:33:14,864
+t λ is equal to λ times λ-1 times λ-3.
+
+335
+01:33:18,355 --> 01:33:31,715
+Or, lambda square minus lambda, times lambda minus 3, or lambda cube.
+
+336
+01:33:36,020 --> 01:33:45,020
+Evet, bu noktada bu noktada 0'ı, bu noktada bu noktada.
+
+337
+01:33:47,020 --> 01:33:53,020
+Bu noktada bu noktada, bu noktada 0'ı.
+
+338
+01:33:53,020 --> 01:33:56,020
+Çünkü bu noktada, bu noktada 0'ı?
+
+339
+01:33:56,020 --> 01:34:00,020
+Evet, bu noktada bu noktada 0'ı.
+
+340
+01:34:00,020 --> 01:34:10,020
+Bu noktada, bu noktada 0'ı, bu noktada 0'ı.
+
+341
+01:34:10,020 --> 01:34:21,020
+Bu noktada 0'ı, bu noktada 0'ı.
+
+342
+01:34:21,020 --> 01:34:23,020
+0'ı, bu noktada 0'ı.
+
+343
+01:34:23,020 --> 01:34:45,020
+Bu noktada 0'ı, bu noktada 0'ı.
+
+344
+01:34:36,180 --> 01:34:36,680
+Okay.
+
+345
+01:34:44,467 --> 01:34:46,327
+1, must beker, minus 1.
+
+346
+01:34:51,220 --> 01:35:01,220
+lambda minus 3, lambda küp, 3 lambda square.
+
+347
+01:35:05,300 --> 01:35:06,140
+Lambda cube,
+
+348
+01:35:08,539 --> 01:35:14,140
+negative 3, lambda square,
+
+349
+01:35:18,036 --> 01:35:19,475
+Negative Lambda
+
+350
+01:35:19,475 --> 01:35:23,475
+Plus 3
+
+351
+01:35:31,060 --> 01:35:41,539
+So, the Cayley-Hamilton theorem says, every matrix, every n by n matrix satisfies its characteristic equation.
+
+352
+01:35:41,539 --> 01:35:45,180
+So, from Cayley-Hamilton theorem.
+
+353
+01:36:03,220 --> 01:36:33,220
+A3-3A2-A3-
+
+354
+01:36:33,220 --> 01:36:45,800
+So, first of all, write this equation as A3-A
+
+355
+01:36:49,811 --> 01:36:50,291
+Sorry.
+
+356
+01:36:52,551 --> 01:37:06,572
+3 times identifix is equal to negative a cubed plus 3a squared plus a.
+
+357
+01:37:07,671 --> 01:37:12,631
+Multiplying both sides by a inverse to find a inverse,
+
+358
+01:37:12,631 --> 01:37:28,631
+we have 3a inverse is equal to negative a squared plus 3a plus identifix.
+
+359
+01:37:30,891 --> 01:37:33,372
+Since we need a inverse,
+
+360
+01:37:34,652 --> 01:37:40,011
+by multiplying each side by 1 over 3,
+
+361
+01:37:40,011 --> 01:37:57,271
+a inverse is equal to 1 over 3 times negative a squared plus 3a plus identifix.
+
+362
+01:37:57,271 --> 01:38:06,671
+So let us find a squared 3 times a plus identifix.
+
+363
+01:38:22,515 --> 01:38:23,395
+A, time to stay.
+
+364
+01:38:55,988 --> 01:38:59,528
+Gives, one.
+
+365
+01:39:03,828 --> 01:39:15,488
+0, 0, 0, and negative 2, 2, 0.
+
+366
+01:39:20,819 --> 01:39:30,239
+Negative 2, positive 2, 0, 0, 0, 1.
+
+367
+01:39:35,636 --> 01:39:45,076
+0, and the last row, 1, 4, 5.
+
+368
+01:39:49,268 --> 01:39:51,768
+1, 4, 5, 0.
+
+369
+01:39:55,268 --> 01:39:58,108
+And this is 0, 2.
+
+370
+01:40:01,652 --> 01:40:02,971
+And this is zero.
+
+371
+01:40:06,252 --> 01:40:07,771
+So this is a square.
+
+372
+01:40:14,868 --> 01:40:18,968
+Negative a square is negative 1 0 0.
+
+373
+01:40:29,492 --> 01:40:30,492
+Zero,
+
+374
+01:40:33,372 --> 01:40:34,992
+Mega Tifu on zero.
+
+375
+01:40:40,275 --> 01:40:42,675
+Negative 5, negative 2, 0.
+
+376
+01:40:44,475 --> 01:40:46,515
+Plus 3 times A.
+
+377
+01:40:54,707 --> 01:40:57,027
+3-0-0...
+
+378
+01:41:07,923 --> 01:41:10,344
+Plus, identimetriks.
+
+379
+01:41:17,652 --> 01:41:39,652
+A-Universen is equal to 2, 3, 1, 0, 0, negative 6, negative 2.
+
+380
+01:41:43,507 --> 01:41:54,007
+Negative 1, negative 4, negative 3, negative 1, 0
+
+381
+01:41:57,492 --> 01:42:13,572
+So, negative 2 over 3, negative 8 over 3, and 10 over 3.
+
+382
+01:42:22,771 --> 01:42:26,771
+A inverse.
+
+383
+01:42:26,771 --> 01:42:31,771
+Ok, now let us find A to the 5.
+
+384
+01:42:31,771 --> 01:42:37,771
+Again, we use this equation to find A to the 5.
+
+385
+01:42:37,771 --> 01:42:42,771
+So from here we have A cube.
+
+386
+01:42:47,507 --> 01:43:00,287
+Minus 3 a square, minus a is equal to, sorry, a cube is equal to.
+
+387
+01:43:05,171 --> 01:43:10,411
+3A2 plus A minus 3 times identif.
+
+388
+01:43:11,451 --> 01:43:13,531
+We are looking for A to the 5.
+
+389
+01:43:13,692 --> 01:43:17,571
+So multiplying first both sides by A.
+
+390
+01:43:17,571 --> 01:43:32,911
+We have A to the 4 is equal to 3 times A3 plus A2 minus 3 times A.
+
+391
+01:43:32,911 --> 01:43:36,911
+And we know that A3 is equal to...
+
+392
+01:43:41,555 --> 01:44:01,675
+This, writing a cube in its place, we have 9a² plus 3a minus 9 ident matrix plus a².
+
+393
+01:44:05,716 --> 01:44:07,016
+plus 3A.
+
+394
+01:44:08,536 --> 01:44:12,036
+So, A to 4 is equal to
+
+395
+01:44:21,268 --> 01:44:22,747
+Sen ödeyi şükür.
+
+396
+01:44:29,524 --> 01:44:59,503
+plus 68 minus 9 identifedir. Now again, multiplying both sides by 8, we have a to the 5 is equal to 10a cubed plus 6a squared minus 9 times a.
+
+397
+01:44:59,524 --> 01:45:18,524
+writing a cubed in its place, we have a to the 5 is equal to 10 times a cubed, 30a squared, sorry, plus 10a minus 30 identifedir.
+
+398
+01:45:18,524 --> 01:45:26,344
+plus 6a squared minus 9a.
+
+399
+01:45:26,344 --> 01:45:55,344
+so
+
+400
+01:45:47,188 --> 01:45:48,387
+plus 8
+
+401
+01:45:48,387 --> 01:45:52,427
+minus
+
+402
+01:45:52,427 --> 01:45:55,007
+30
+
+403
+01:45:55,007 --> 01:45:58,087
+pi-dat matris.
+
+404
+01:46:03,412 --> 01:46:07,692
+Writing is cash, which we have already found here.
+
+405
+01:46:13,268 --> 01:46:23,328
+A, writing the matrices in their pieces here, you can easily find A to the 5, by using KB Hamilton term.
+
+406
+01:46:25,188 --> 01:46:41,328
+Evet arkadaşlar, bütün konular bitti. Dersimiz de bitti. Bu dönemlik bu kadar. Son dersti maalesef.
+
+407
+01:46:41,328 --> 01:46:49,507
+Bu notları ben yükleyeceğim yine ders duvarına, oradan bulabilirsiniz. Var mı sormak istediğiniz bir şey, söylemek istediğiniz bir şey?
+
+408
+01:46:52,648 --> 01:46:58,648
+Teşekkürler hocam. Hocam şey, finalde baştan sona kapsıyor değil mi?
+
+409
+01:46:59,408 --> 01:47:04,988
+Tabii, baştan sona kapsıyor ama hiç sorulmadık konulara öncelik vermeniz daha akıllıcı olur değil mi yani?
+
+410
+01:47:05,408 --> 01:47:08,387
+Öyle de hani final olduğu için sorayım dedim.
+
+411
+01:47:08,387 --> 01:47:09,387
+Evet, aynen öyle.
+
+412
+01:47:09,387 --> 01:47:21,927
+Evet, aynen öyle. Baştan sona kapsıyor ama ilk vizeden sonraki konulara önce çalışın, ağırlık verin. Ondan sonra diğerlerine de zamanınız kalırsa bakarsınız.
+
+413
+01:47:23,108 --> 01:47:23,608
+Sağ olun efendim.
+
+414
+01:47:24,467 --> 01:47:24,648
+Tamam.
+
+415
+01:47:26,328 --> 01:47:30,387
+Peki arkadaşlar, hepinize çok teşekkür ediyorum. Başarılar diliyorum.
+
+416
+01:47:30,387 --> 01:48:00,368
+Tekrar görüşmek üzere.

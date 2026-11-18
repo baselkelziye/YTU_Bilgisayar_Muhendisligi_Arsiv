@@ -1,0 +1,2095 @@
+1
+00:04:03,924 --> 00:04:04,724
+Can you hear me?
+
+2
+00:04:16,019 --> 00:04:31,819
+Okay. Today we will learn finding inverse of the matrics by using determinant. And also we will learn some very important properties of determinant.
+
+3
+00:04:33,579 --> 00:04:45,500
+We will use these properties in the exam. And I want to show you some sample exam equations also, if you have any time.
+
+4
+00:04:52,084 --> 00:04:58,444
+At the end of the last lecture, we saw this example.
+
+5
+00:05:00,603 --> 00:05:04,644
+We find the determinant by using cofactor expansion.
+
+6
+00:05:11,379 --> 00:05:13,639
+Now we get to the another example.
+
+7
+00:05:20,339 --> 00:05:29,739
+We want to compute the determinant of 4x4 matrix, and it is not possible by using rule of Sarbus.
+
+8
+00:05:29,739 --> 00:05:35,359
+So it means that we have to use cofactor expansion.
+
+9
+00:05:36,479 --> 00:05:42,479
+We will choose a row or a column which has the largest number of zeros.
+
+10
+00:05:42,479 --> 00:05:59,519
+but before beginning or applying cofactor expansion, actually, you can do some calculations to make the determinant easier.
+
+11
+00:05:59,519 --> 00:06:07,919
+For example, in this example, you can directly use cofactor expansion,
+
+12
+00:06:07,919 --> 00:06:17,679
+along to the row of 3 because it includes two zeros.
+
+13
+00:06:17,679 --> 00:06:34,799
+But if we add column 1, if we multiply column 1 with 3 and add it to the column 4,
+
+14
+00:06:34,799 --> 00:06:42,560
+you will see that this entry 0, you will see that this makes this entry 0.
+
+15
+00:06:42,560 --> 00:06:54,560
+So we have three zeros here, then it is easier to compute the determinant of this matrix.
+
+16
+00:06:54,559 --> 00:06:55,559
+So before starting the cofactor expansion.
+
+17
+00:06:55,559 --> 00:07:14,319
+So before starting the cofactor expansion, we multiply the first column by 3 and add it to the column 4.
+
+18
+00:07:14,319 --> 00:07:24,319
+So this is 7, this is negative 9.
+
+19
+00:07:24,319 --> 00:07:30,319
+and this is 0, and this is 0, and this is 9.
+
+20
+00:07:30,319 --> 00:07:38,319
+And from the properties of the determinant, this does not change the value of the determinant.
+
+21
+00:07:38,319 --> 00:07:44,319
+So you can do this.
+
+22
+00:07:43,764 --> 00:08:08,764
+Now, we are looking for the determinant of this matrix and we are, we look to the rows and columns of the matrix. Row 3 includes three zeros. So, we expand this determinant along to the row 3. Determinant is equal to one times.
+
+23
+00:08:15,156 --> 00:08:18,435
+determinant is equal to one times
+
+24
+00:08:18,435 --> 00:08:21,555
+one is
+
+25
+00:08:26,612 --> 00:08:49,012
+on the row 3 and column 1, so 3 plus 1, times the determinant of the matrix, that we delete the row and the column that 1 occurs.
+
+26
+00:08:49,012 --> 00:09:10,992
+so 2, negative 3, 7, 2, 1, negative 9, and 0, negative 2, 9.
+
+27
+00:09:23,700 --> 00:09:32,080
+So now we have 3x3 determinant and we can compute this determinant by using rule of Sarus.
+
+28
+00:09:32,500 --> 00:09:46,360
+But still you can use cofactor expansion, for example, for this determinant along to column 1 or rule 3.
+
+29
+00:09:46,540 --> 00:09:48,940
+But no need to use cofactor expansion.
+
+30
+00:09:49,800 --> 00:09:50,780
+This is positive.
+
+31
+00:09:50,780 --> 00:09:58,480
+If, okay, we only find the determinant by using rule of Sarus, it is 18.
+
+32
+00:09:58,480 --> 00:10:20,580
+18.
+
+33
+00:10:06,644 --> 00:10:19,764
+It is 18 minus 28, 0 plus 54.
+
+34
+00:10:24,083 --> 00:10:24,943
+Minus
+
+35
+00:10:35,059 --> 00:10:37,059
+So, it is...
+
+36
+00:10:50,803 --> 00:10:52,323
+72 minus
+
+37
+00:10:56,947 --> 00:10:57,908
+Veçiz 8.
+
+38
+00:11:02,196 --> 00:11:26,816
+And here also, we can multiply Rho 2, Rho 1 by negative 1 and add it to the Rho 2 gives 0 to 0 and you can expand this determinant along to the column 1 so you will get the same result.
+
+39
+00:11:26,816 --> 00:11:32,716
+Okay, now we will find the determinant of 3x3 matrix by rule of Sarus.
+
+40
+00:11:42,323 --> 00:11:52,323
+But here, we find the determinant by using four-factor expression. I want to show you a sample example question.
+
+41
+00:12:01,427 --> 00:12:03,408
+Okay, question four.
+
+42
+00:12:21,172 --> 00:12:44,812
+We have one, two, three, four, five, five by five matrix. The size is huge. And we are looking for the determinant of this matrix. So we need to use cofactor expansion. And we are looking for a row or column that have the largest number of zeros.
+
+43
+00:12:48,692 --> 00:12:54,152
+So row 2 includes, sorry, row 2 includes 1, 2, 3, 4, 0's.
+
+44
+00:12:55,591 --> 00:13:06,052
+So we can expand this determinant along to the row 2.
+
+45
+00:13:12,052 --> 00:13:13,731
+Laplace Expansion
+
+46
+00:13:22,163 --> 00:13:33,583
+So, 0 x 0 x 0 x 0 x 0 x all of this 0 and 7 x.
+
+47
+00:13:40,148 --> 00:13:42,888
+7 is on row 2.
+
+48
+00:13:47,379 --> 00:13:48,439
+Kolum 5
+
+49
+00:13:52,340 --> 00:14:00,840
+...times the term of the matrix that we delete this row and this column.
+
+50
+00:14:02,840 --> 00:14:11,980
+So it leaves, it remains to 0, 0, negative 3.
+
+51
+00:14:14,700 --> 00:14:21,040
+Negative 3, 2, 0, negative 1.
+
+52
+00:14:22,340 --> 00:14:27,840
+So negative 1, negative 2, negative 1, 1.
+
+53
+00:14:29,840 --> 00:14:34,040
+And 0, 0, 0, 4.
+
+54
+00:14:37,040 --> 00:14:43,440
+Again, we need to compute the determinant of matrix with size 4 by 4.
+
+55
+00:14:43,440 --> 00:14:50,940
+So we only compute this determinant by using cofactor expansion.
+
+56
+00:14:50,940 --> 00:15:02,940
+And looking at the rows and columns, row 4 includes the largest number of zeros.
+
+57
+00:15:02,940 --> 00:15:09,440
+So let us apply Laplace expansion.
+
+58
+00:15:12,440 --> 00:15:13,940
+I don't grow 4.
+
+59
+00:15:13,940 --> 00:15:35,440
+So let us apply the matrix.
+
+60
+00:15:22,740 --> 00:15:27,840
+So, we hear as a coefficient negative 7.
+
+61
+00:15:31,892 --> 00:15:46,292
+Negative seven times, zero zero zero, four times, four is on row four and column four.
+
+62
+00:15:50,451 --> 00:17:15,451
+bu
+
+63
+00:17:05,268 --> 00:17:12,908
+So we have, this is positive 4, negative 28.
+
+64
+00:17:16,627 --> 00:17:23,627
+x , x ,
+
+65
+00:17:23,627 --> 00:17:58,627
+x ,
+
+66
+00:17:58,627 --> 00:18:04,627
+x
+
+67
+00:17:59,796 --> 00:18:15,556
+This is positive 1, negative 28 times 4, which is...
+
+68
+00:18:22,675 --> 00:18:23,475
+102.
+
+69
+00:18:28,500 --> 00:18:35,140
+But there is no 112 on the choices because these are sample questions.
+
+70
+00:18:40,884 --> 00:18:42,163
+The correct answer is
+
+71
+00:18:42,163 --> 00:18:43,943
+banal alır tutulur.
+
+72
+00:18:44,764 --> 00:18:46,723
+Hocam Türkçe bir şey sorabilir miyim?
+
+73
+00:18:46,804 --> 00:18:47,064
+Sor.
+
+74
+00:18:48,584 --> 00:18:50,764
+Hocam öncelikle bunu
+
+75
+00:18:50,764 --> 00:18:52,644
+bir eşelon forma getirsek
+
+76
+00:18:52,644 --> 00:18:55,044
+ondan sonra expansion yapsak
+
+77
+00:18:55,044 --> 00:18:57,264
+en son main diagonal'dan
+
+78
+00:18:57,264 --> 00:19:00,703
+determinantını bulsak
+
+79
+00:19:00,703 --> 00:19:02,144
+böyle daha kolay olmaz mı?
+
+80
+00:19:02,144 --> 00:19:04,864
+Eşelon formuna getirdiğim maddisle
+
+81
+00:19:04,864 --> 00:19:06,423
+diğer maddis aynı mı?
+
+82
+00:19:07,423 --> 00:19:09,304
+Biz hiç şöyle bir şey söyledik mi?
+
+83
+00:19:09,304 --> 00:19:12,703
+senin eşelon forma getirdiğim maddiste
+
+84
+00:19:12,703 --> 00:19:14,644
+ilk baştaki maddis ne oluyor?
+
+85
+00:19:14,743 --> 00:19:15,683
+Birbirine denk diyor.
+
+86
+00:19:16,243 --> 00:19:17,943
+Peki denk diye tanımladık.
+
+87
+00:19:18,223 --> 00:19:20,864
+Biz denk maddislerin determinantları aynıdır
+
+88
+00:19:20,864 --> 00:19:21,824
+diye bir şey söyledik mi?
+
+89
+00:19:22,284 --> 00:19:24,203
+Yok söylemedik. Onu da sormuş oldum zaten.
+
+90
+00:19:24,384 --> 00:19:26,503
+Sakın öyle bir şey yapma. İyi ki de sordun.
+
+91
+00:19:27,044 --> 00:19:28,084
+Öyle bir şey yapmıyoruz.
+
+92
+00:19:28,764 --> 00:19:30,703
+Yine eşelon forma getirebilirsin
+
+93
+00:19:30,703 --> 00:19:33,003
+ama determinant olarak düşüneceksin.
+
+94
+00:19:33,203 --> 00:19:33,824
+Tamam mı?
+
+95
+00:19:34,483 --> 00:19:36,743
+Determinant olarak işlemleri yapacaksa
+
+96
+00:19:36,743 --> 00:19:38,743
+determinantın özelliklerini kullanacaksın.
+
+97
+00:19:38,743 --> 00:19:41,364
+mesela iki tane satırı yer değiştirdiğin zaman
+
+98
+00:19:41,364 --> 00:19:43,423
+maddiste ne yapıyordu?
+
+99
+00:19:43,524 --> 00:19:44,983
+Hiçbir şey ifade etmiyordu.
+
+100
+00:19:45,104 --> 00:19:46,584
+Yani aynı denk maddis elde ediyordu.
+
+101
+00:19:47,003 --> 00:19:49,624
+Ama determinantta iki satırın yerini değiştirdiğin zaman
+
+102
+00:19:49,624 --> 00:19:50,064
+ne yapıyor?
+
+103
+00:19:50,503 --> 00:19:52,743
+Determinant önüne eksi işaret alıyor.
+
+104
+00:19:53,264 --> 00:19:54,784
+O yüzden birbirine denk değil yani.
+
+105
+00:19:55,564 --> 00:19:56,264
+Tamam hocam.
+
+106
+00:19:56,384 --> 00:19:56,564
+Sağ olun.
+
+107
+00:19:56,604 --> 00:19:59,264
+Yapabilirsin ama determinantın özelliklerini kullanarak.
+
+108
+00:19:59,804 --> 00:20:00,403
+Ama ben tavsiye etmemiz...
+
+109
+00:20:00,403 --> 00:20:01,403
+İyi ki sormuşum hocam.
+
+110
+00:20:01,764 --> 00:20:02,203
+Yoksa karıştırdım.
+
+111
+00:20:02,203 --> 00:20:03,644
+İyi ki sormuşum. Afiyet.
+
+112
+00:20:03,644 --> 00:20:29,264
+İyi ki sormuşum hocam.
+
+113
+00:20:14,644 --> 00:20:17,243
+Now turn back to the lecture.
+
+114
+00:20:18,443 --> 00:20:25,243
+Now we will learn finding inverse of a matrix by using determinant.
+
+115
+00:20:30,963 --> 00:20:42,063
+Determinant of the matrix is defined by the expression of the matrix along to the row or column.
+
+116
+00:20:42,063 --> 00:20:57,364
+For example, determinant A is equal to A, I1, A, I1, which is the cofactor of this entry, and some of the
+
+117
+00:20:57,364 --> 00:21:06,884
+multiplication of each entry with their cofactors. And we say this is the determinant of the matrix
+
+118
+00:21:08,163 --> 00:21:18,884
+along to the I2. But the nature equation occurs here that if we have this sum, look at this sum,
+
+119
+00:21:18,884 --> 00:21:24,403
+if I and K are different.
+
+120
+00:21:28,531 --> 00:21:30,891
+Then we have zero.
+
+121
+00:21:38,451 --> 00:21:40,412
+Bu seorene is also important.
+
+122
+00:21:41,612 --> 00:21:45,332
+For example, let us see how it works.
+
+123
+00:21:50,324 --> 00:21:52,324
+We have this matrix.
+
+124
+00:21:57,324 --> 00:22:05,324
+Let us expand the determinant of this matrix along to the row tree.
+
+125
+00:22:12,147 --> 00:22:17,367
+Because determinant A can be computed by
+
+126
+00:22:21,619 --> 00:22:25,739
+4 times, 4 is,
+
+127
+00:22:31,508 --> 00:22:32,508
+831
+
+128
+00:22:37,203 --> 00:22:41,604
+Orta, maybe it is for Committer, right?
+
+129
+00:22:45,491 --> 00:22:46,491
+A31
+
+130
+00:22:50,195 --> 00:23:08,195
+A31 plus A32 plus A33 plus A33 plus A33.
+
+131
+00:23:08,195 --> 00:23:18,755
+This gives the determinant of the matrix and now if these and these are different.
+
+132
+00:23:29,652 --> 00:23:40,771
+If these are different, we have a31, a21 plus a32, a22 plus a33, a23.
+
+133
+00:23:43,332 --> 00:23:47,812
+Let us first find a21, the cofactor of a21.
+
+134
+00:23:51,604 --> 00:23:54,723
+The cofactor of A21 is
+
+135
+00:23:54,723 --> 00:24:05,764
+A21 is equal to negative 1 to the 2 plus 1
+
+136
+00:24:05,764 --> 00:24:16,024
+Determinant, we erase row 2 and column 1
+
+137
+00:24:24,627 --> 00:24:38,947
+Which is negative 4 minus 15, negative 19, and in front of the term we have negative sign, so it is 19.
+
+138
+00:24:40,847 --> 00:24:42,807
+So A21 is 19.
+
+139
+00:24:42,807 --> 00:24:56,747
+And similar to this, calculating A22 and A23, we have this sum gives 0.
+
+140
+00:24:57,747 --> 00:25:00,467
+Okay, this is also important.
+
+141
+00:25:04,948 --> 00:25:24,228
+Now, we summarize our results here. If in this summation i is equal to k, that gives determinant a. If i is different from k, then this sum is 0.
+
+142
+00:25:38,804 --> 00:26:07,044
+Now we have the definition of a joint matrix. This is also important. We have a square matrix A, which is n by n. Then, a joint matrix of A, which is denoted by a joint A, is the matrix whose ij entry is the cofactor of cofactor
+
+143
+00:26:07,044 --> 00:26:24,864
+Aji of Aji. Actually, you can think this matrix as find the cofactor of each entry on the matrix.
+
+144
+00:26:59,155 --> 00:27:05,155
+İçinize, it is easy to remember in such way. And take its transpose.
+
+145
+00:27:05,155 --> 00:27:10,155
+Okay, this is the adjoint matrix of the matrix.
+
+146
+00:27:10,155 --> 00:27:21,155
+The transpose of the cofactors matrix of each entry. A11, A12, A1N, A21, A22.
+
+147
+00:27:21,155 --> 00:27:31,155
+So, take the transpose. We use this matrix, the adjoint matrix, in calculating universe of the matrix.
+
+148
+00:28:14,259 --> 00:28:21,140
+Now we have the matrix A and we want to find its adjoint matrix.
+
+149
+00:28:36,180 --> 00:28:40,180
+So, we need to find the cofactors of each entry.
+
+150
+00:29:05,683 --> 00:29:32,884
+First of all, let us find the cofactors of each entry. A11, negative 1 to the 2, negative 1 to the 1 plus 1, and delay to row 1 and column 1, 6, 2, 0, negative 3. So it is positive, negative 18.
+
+151
+00:29:35,683 --> 00:29:50,483
+A12, negative 1 to the 1 plus 2. Delay to row 1 and column 2, 5, 2, 1, negative 3.
+
+152
+00:29:53,283 --> 00:29:54,884
+Negative, so
+
+153
+00:29:58,963 --> 00:30:03,183
+Negative 15, negative 17, so it is 17.
+
+154
+00:30:09,683 --> 00:30:10,803
+A13?
+
+155
+00:30:14,675 --> 00:30:22,836
+Negatif 1 to the 4, delayed row 1 and column 3, 5, 6, 1, 0.
+
+156
+00:30:25,415 --> 00:30:29,275
+So it is positive 0, negative 6.
+
+157
+00:30:30,935 --> 00:30:43,895
+And other cofactors, A2, 1, negative 1 to the 3, delayed row 2 and column 1.
+
+158
+00:30:44,675 --> 00:30:56,355
+Negative 1, 1, row 2, column 1, 0, negative 3.
+
+159
+00:30:58,035 --> 00:31:00,355
+Please follow the calculations.
+
+160
+00:31:00,975 --> 00:31:07,635
+Maybe I can make an error, so we will find a wrong answer.
+
+161
+00:31:08,355 --> 00:31:11,895
+Negative 1, negative 6.
+
+162
+00:31:18,708 --> 00:31:44,948
+A22, 1-4, lineer, Rho2, and column 2, 3-1-1, 3-1-3, so it is negative 10. Can you follow the calculations?
+
+163
+00:31:57,715 --> 00:32:18,596
+Okay, negative 1 to 5. Now delete row 2 and column 3. 3 negative 2, 1 0, which gives negative 2.
+
+164
+00:32:23,539 --> 00:32:24,899
+And the last column.
+
+165
+00:32:30,836 --> 00:32:49,536
+A31, negative 1 to the 4, dene to row 3, and column 1, negative 2, 1, 6, 2, it is negative 10.
+
+166
+00:32:53,940 --> 00:33:20,700
+A32, negatif 1 to the 5, delay, row 3 and column 2, 3, 1, 5, 2, so 6, 1, negatif 1, and the last entry of the adjoint matrix, A33, negatif 1 to the 6,
+
+167
+00:33:20,700 --> 00:33:38,340
+play row 3 and column 3, 3, negatif 2, 5, 6, which gives 18 plus 10, 28.
+
+168
+00:33:40,480 --> 00:33:44,039
+So, the adjoint matrix of A
+
+169
+00:34:09,108 --> 00:34:11,827
+Please do not forget to take the transpose.
+
+170
+00:34:17,172 --> 00:34:17,891
+A11
+
+171
+00:34:21,811 --> 00:34:31,311
+A12, A13, A21,
+
+172
+00:34:37,876 --> 00:34:41,956
+E tu tu, e tu tri.
+
+173
+00:34:45,844 --> 00:34:48,804
+Last column, negative 10.
+
+174
+00:34:52,436 --> 00:34:54,996
+Negatif 1 and 28.
+
+175
+00:34:58,036 --> 00:35:00,196
+This is the adjoint matrix of A.
+
+176
+00:35:02,115 --> 00:35:06,196
+Let us check if this is correct or not.
+
+177
+00:35:18,612 --> 00:35:23,892
+Evet, it's correct. So, the adjuvant matrix of A is this matrix.
+
+178
+00:35:26,751 --> 00:35:27,112
+Okay.
+
+179
+00:35:29,331 --> 00:35:32,612
+Any problem? Any question? Does it make sense?
+
+180
+00:35:50,804 --> 00:35:53,804
+This theorem is very very important.
+
+181
+00:35:55,804 --> 00:36:00,804
+If you have a square matrix of size n by n,
+
+182
+00:36:00,804 --> 00:36:06,804
+then A times its joint matrix
+
+183
+00:36:07,804 --> 00:36:16,804
+is equal to determined A times n by n identity matrix.
+
+184
+00:36:16,804 --> 00:36:20,804
+This property is very very very important.
+
+185
+00:36:29,427 --> 00:36:31,427
+Çünkü bu anlamda bu anlamda bu anlamda
+
+186
+00:36:31,427 --> 00:36:33,427
+bu anlamda
+
+187
+00:36:33,427 --> 00:36:35,427
+metriksiyonu
+
+188
+00:36:35,427 --> 00:36:37,427
+Bu,
+
+189
+00:36:37,427 --> 00:36:39,427
+bu anlamda
+
+190
+00:36:39,427 --> 00:36:41,427
+adjoint metriksiyonu
+
+191
+00:36:41,427 --> 00:36:43,427
+bu metriksiyonu
+
+192
+00:36:43,427 --> 00:36:45,427
+Bu,
+
+193
+00:36:45,427 --> 00:36:47,427
+adjointe A'
+
+194
+00:36:54,036 --> 00:37:06,036
+You will find this matrix which is equal to negative 94 times identif matrix.
+
+195
+00:37:06,036 --> 00:37:15,036
+So this is the determinant of A. Please check if it is determined A or not.
+
+196
+00:37:37,043 --> 00:37:40,043
+Eğer bir determinante matrisi, bu nezir,
+
+197
+00:37:44,436 --> 00:37:59,376
+Or, if A is non-singular, invertible, then its inverse is equal to 1 over determinant A times the adjoint matris of the matris.
+
+198
+00:38:05,364 --> 00:38:07,824
+A inverse is equal to.
+
+199
+00:38:11,539 --> 00:38:14,900
+1 over determinant A times L joint A.
+
+200
+00:38:16,639 --> 00:38:20,460
+And again, consider the matrix in previous example.
+
+201
+00:38:21,940 --> 00:38:29,279
+We have concluded that determinant A is negative for the line force, which is not zero.
+
+202
+00:38:29,279 --> 00:38:32,599
+So we can talk about the inverse of the matrix A.
+
+203
+00:38:38,132 --> 00:38:43,731
+A inverse is equal to one over determinant A times a joint A.
+
+204
+00:38:45,851 --> 00:38:53,932
+We have already found the joint A and determinant A, so A inverse is this matrix.
+
+205
+00:39:05,043 --> 00:39:10,563
+You have to know these statements which are equivalent to each other.
+
+206
+00:39:12,783 --> 00:39:18,563
+If we have schematics of order n, then these three statements are equivalent.
+
+207
+00:39:21,743 --> 00:39:25,443
+A is non-singular, non-singular means A is invertible.
+
+208
+00:39:27,023 --> 00:39:28,063
+A has an inverse.
+
+209
+00:39:28,983 --> 00:39:32,583
+Then, determinant A is different from 0.
+
+210
+00:39:32,583 --> 00:39:45,603
+And the reduced role echelon form of the matrix is equal to the n by n identity matrix.
+
+211
+00:39:47,923 --> 00:39:51,384
+Okay, this summary, these statements are very important.
+
+212
+00:39:52,183 --> 00:39:53,683
+To get to the examples, sorry,
+
+213
+00:39:57,063 --> 00:39:58,344
+Exam questions again.
+
+214
+00:40:57,364 --> 00:40:59,364
+Bakın, 7.
+
+215
+00:41:06,708 --> 00:41:10,108
+We have a matrix A, which is a non-singular.
+
+216
+00:41:11,568 --> 00:41:19,148
+Then we are looking for a joint matrix of A.
+
+217
+00:41:24,148 --> 00:41:24,668
+Matpiti.
+
+218
+00:41:36,628 --> 00:41:47,448
+Arkadaşlar, bu sorular benim sorularım. Geçmiş dönemde sınavlarda ben sordum bunları. Ve de birçok öğrenci bana çok kızmıştır büyük ihtimalle bu sorulardan dolayı.
+
+219
+00:41:48,347 --> 00:41:54,128
+Sebebi de şu, şimdi burayı biraz Türkçe konuşmak istiyorum ki biraz daha rahat konuşayım.
+
+220
+00:41:56,847 --> 00:42:05,827
+Şimdi mesela burada adjoink, A'nın tersini bulmak isteseniz, önce A'nın tersini bulacaksınız.
+
+221
+00:42:06,628 --> 00:42:13,528
+A'nın tersini bulmak için de önce A'nın engeo etini bulacaksınız. Sonra A'nın determinantını bulacaksınız.
+
+222
+00:42:14,588 --> 00:42:20,928
+Sonra o bulduğunuz maddesi, bir de engeo etini bulacaksınız. Yani bu en az 20 dakika sürer.
+
+223
+00:42:22,248 --> 00:42:26,827
+Bir test sınav için 20 dakikalık soru sorulmaz size. Demek ki burada başka bir şey var.
+
+224
+00:42:32,788 --> 00:42:37,827
+Ne düşünüyorsunuz? Konuşun bakalım. Biraz da siz konuşun. Nasıl bulursunuz?
+
+225
+00:42:49,139 --> 00:42:59,139
+Eğer kendinize bilgilerin arasını bulabilirsiniz, ilk önce bilgilerin arasını bulabilirsiniz.
+
+226
+00:42:59,139 --> 00:43:02,250
+Bu, bu
+
+227
+00:43:10,068 --> 00:43:26,688
+1 over determinant A, times adjoint A. This means that you have to find the determinant of A, and you have to find the adjoint of the matrix A.
+
+228
+00:43:26,688 --> 00:43:44,728
+A. Then finding this inverse matrix, you have to find the adjoint of A inverse, which means that you have to find the cofactors of each entry in A inverse, but it takes a lot of time.
+
+229
+00:43:44,728 --> 00:43:53,108
+Okay, no need to compute A inverse.
+
+230
+00:43:53,108 --> 00:43:55,388
+What?
+
+231
+00:43:56,828 --> 00:43:57,408
+Oops.
+
+232
+00:44:02,612 --> 00:44:11,552
+Çünkü, we have a theorem, we have a theorem that says,
+
+233
+00:44:24,179 --> 00:44:25,299
+Same term, sorry.
+
+234
+00:44:39,123 --> 00:44:41,923
+So, adjuint A
+
+235
+00:44:46,036 --> 00:44:55,416
+A is equal to determinant A times A inverse.
+
+236
+00:44:55,416 --> 00:45:00,655
+But we are looking for adjoint A inverse.
+
+237
+00:45:00,655 --> 00:45:08,796
+It means that we only replace A by A inverse.
+
+238
+00:45:19,603 --> 00:45:21,743
+So, it follows from here that
+
+239
+00:45:26,164 --> 00:45:40,424
+A joint A inverse is equal to determinant A inverse times A inverse inverse.
+
+240
+00:45:45,748 --> 00:45:52,907
+So, a joint A inverse is equal to what is determined A inverse?
+
+241
+00:45:54,907 --> 00:45:55,807
+Did you remember?
+
+242
+00:46:02,228 --> 00:46:04,548
+Atasızı'lı fermanent of AUS.
+
+243
+00:46:25,427 --> 00:46:36,587
+Okay, it is 1 over the terminal A, and the inverse of A inverse is equal to A.
+
+244
+00:46:42,132 --> 00:47:03,851
+So, we have the matrix A. We only need determinant A, which you can easily find by using rule of Sallus. Zero. Determinant A is zero. Negative two.
+
+245
+00:47:08,275 --> 00:47:09,335
+Tüm araçtan.
+
+246
+00:47:13,427 --> 00:47:13,987
+Zero.
+
+247
+00:47:20,788 --> 00:47:22,788
+Merke Fos...
+
+248
+00:47:29,108 --> 00:47:36,888
+Zero, positive four, sorry, and negative six.
+
+249
+00:47:47,923 --> 00:47:52,503
+Is it correct? I don't think so, it is correct.
+
+250
+00:48:05,172 --> 00:48:08,932
+Zero, negative two,
+
+251
+00:48:12,467 --> 00:48:28,987
+oh, it is 18, 0, plus 4, minus 6.
+
+252
+00:48:37,012 --> 00:48:40,652
+So determinant of A is 14.
+
+253
+00:48:42,412 --> 00:48:52,452
+So a joint A universe is equal to A over determinant A, or actually it is more convenient to write
+
+254
+00:48:52,452 --> 00:48:58,672
+1 over determinant A times the matrix A.
+
+255
+00:48:58,672 --> 00:49:06,751
+So it means that we multiply each entry of A by 1 over determinant A, 1 over 14.
+
+256
+00:49:07,332 --> 00:49:11,572
+So negative 1 over 14, 1 over 14, 3 over 14.
+
+257
+00:49:13,272 --> 00:49:17,592
+And 2 over 14, which is 1 over 7, 0.
+
+258
+00:49:18,992 --> 00:49:22,112
+Negative 1 over 7, so the correct answer is B.
+
+259
+00:49:25,112 --> 00:49:25,972
+This is okay?
+
+260
+00:49:38,579 --> 00:49:39,639
+Evet, fakma.
+
+261
+00:49:45,652 --> 00:49:49,251
+programın iki kez adjointi şu mu oluyor?
+
+262
+00:49:57,556 --> 00:50:00,536
+Böyle bir yorumda bulunamasın çünkü o çok farklı bir maddi soruyor.
+
+263
+00:50:03,175 --> 00:50:04,596
+Bu nasıl A eşit olsun?
+
+264
+00:50:09,492 --> 00:50:10,211
+Olmaz.
+
+265
+00:50:16,052 --> 00:50:18,392
+[öğrenci] determinantı Sarus'la aldım.
+
+266
+00:50:20,532 --> 00:50:22,132
+Sarus kuralını kullandım.
+
+267
+00:50:22,332 --> 00:50:23,172
+Ben böyle kullanıyorum.
+
+268
+00:50:25,612 --> 00:50:26,291
+Şöyle.
+
+269
+00:50:27,251 --> 00:50:28,352
+Hemen hızlıca tekrar edeyim.
+
+270
+00:50:28,432 --> 00:50:29,692
+Söylemiştim. Sen yoktun herhalde.
+
+271
+00:50:30,612 --> 00:50:32,731
+Önce main diagonaldakileri
+
+272
+00:50:32,731 --> 00:50:34,172
+çarpıyorsun. Daha sonra
+
+273
+00:50:34,172 --> 00:50:35,552
+buna yakın olan
+
+274
+00:50:35,552 --> 00:50:38,231
+iki tane ile uzak
+
+275
+00:50:38,231 --> 00:50:39,072
+olanı çarpıyorsun.
+
+276
+00:50:40,472 --> 00:50:41,392
+Sonra altta
+
+277
+00:50:41,392 --> 00:50:43,952
+yakın olan iki tane ile
+
+278
+00:50:43,952 --> 00:50:46,092
+uzak olanın üsttekini
+
+279
+00:50:46,092 --> 00:50:48,192
+çarpıyorsun. Bunları
+
+280
+00:50:48,192 --> 00:50:50,532
+topluyorsun. Sonra aynı şeyi
+
+281
+00:50:50,532 --> 00:50:52,231
+ters diagonal için
+
+282
+00:50:52,231 --> 00:50:52,672
+yapıyorsun.
+
+283
+00:50:54,291 --> 00:50:54,992
+Bunu çarptın.
+
+284
+00:50:56,472 --> 00:50:58,231
+Yukarıda yakın olan iki tanesiyle
+
+285
+00:50:58,231 --> 00:51:00,452
+aşağıda uzak olan bir tanesini çarpıyorsun.
+
+286
+00:51:01,872 --> 00:51:02,112
+Sonra
+
+287
+00:51:02,112 --> 00:51:03,972
+aşağıda yakın olan iki tanesiyle
+
+288
+00:51:03,972 --> 00:51:06,012
+yukarıda uzak olan
+
+289
+00:51:06,012 --> 00:51:07,771
+tek kalanı çarpıyorsun.
+
+290
+00:51:07,992 --> 00:51:08,952
+Bunları da çıkartıyorsun.
+
+291
+00:51:10,392 --> 00:51:12,231
+Ama yani Sarus kuralı.
+
+292
+00:51:12,711 --> 00:51:13,711
+Sen nasıl uyguluyorsan öyle.
+
+293
+00:51:13,952 --> 00:51:32,592
+bir tanesiyle
+
+294
+00:51:22,708 --> 00:51:25,548
+Bakın sorular böyle yani, sınav soruları böyle arkadaşlar, kolay değil.
+
+295
+00:51:26,468 --> 00:51:32,768
+Gerçi bu dönem ben hazırlamıyorum da yani yine de çok kolay olmaz. Aslında kolay ama kolay değil yani.
+
+296
+00:51:35,347 --> 00:51:38,708
+Okay, let us take a 10 minutes break and we will continue with...
+
+297
+00:51:49,043 --> 00:51:50,263
+Question 13.
+
+298
+01:12:28,212 --> 01:12:36,552
+Hello again, sorry for the late. Now, this question is very important. Look at the 13.
+
+299
+01:12:44,500 --> 01:12:57,319
+We have a matrix A, which is 4x4, and we are looking for which of the statements about the matrix A are correct.
+
+300
+01:12:59,180 --> 01:13:02,720
+The first one says A has an inverse.
+
+301
+01:13:04,399 --> 01:13:09,939
+Two says the reduced row eşelon form of the matrix A is 4x4, are that the matrix.
+
+302
+01:13:09,939 --> 01:13:15,520
+And three says a joint A times the matrix A is equal to this matrix.
+
+303
+01:13:17,199 --> 01:13:24,619
+Actually, it is not easy to solve this question without knowing
+
+304
+01:13:28,692 --> 01:13:30,692
+This expression
+
+305
+01:13:33,619 --> 01:13:39,059
+Çünkü, we know that if the determinant of the matrix is different from 0,
+
+306
+01:13:39,699 --> 01:13:46,180
+then it is non-singular, means it is invertible, it has an inverse.
+
+307
+01:13:47,619 --> 01:13:54,180
+And if the determinant A is different from 0, or if the matrix is invertible,
+
+308
+01:13:54,180 --> 01:14:01,539
+then its reduced row echelon form is equivalent to the n by n identifix.
+
+309
+01:14:01,539 --> 01:14:06,819
+So, what does it mean?
+
+310
+01:14:08,180 --> 01:14:19,059
+It means that for the statements 1 and 2, it is only enough to find the determinant of A.
+
+311
+01:14:19,779 --> 01:14:27,699
+Because if you find the determinant of the matrix is non-zero, then it has an inverse
+
+312
+01:14:27,699 --> 01:14:35,140
+and the reduced row echelon form of matrix A is 4 by 4 identifix.
+
+313
+01:14:38,019 --> 01:14:39,300
+And what about 3?
+
+314
+01:14:42,340 --> 01:14:49,699
+In 3, actually, it is no need to find the joint of A because in turn, we know
+
+315
+01:14:49,699 --> 01:14:57,140
+a joint A times A is equal to the determinant of A times
+
+316
+01:14:59,059 --> 01:15:00,180
+identifix.
+
+317
+01:15:00,180 --> 01:15:01,460
+So again,
+
+318
+01:15:03,380 --> 01:15:11,140
+if you find the determinant A and if it is 60, then this is also correct.
+
+319
+01:15:11,140 --> 01:15:20,659
+So this question is only or this question can be solved by only finding the determinant of the matrix.
+
+320
+01:15:22,099 --> 01:15:32,659
+Okay, so let us find the determinant.
+
+321
+01:15:32,564 --> 01:15:41,564
+Since this is 4x4, choose the largest numbers of zeros. Let us choose column 4.
+
+322
+01:15:54,771 --> 01:16:00,511
+Expand along to the column 4, or row 4.
+
+323
+01:16:07,028 --> 01:16:18,908
+Terminant a is equal to 1 times negative 1 to the, this is on the, 1 is on the row 4 and column 1, so 4 plus 1.
+
+324
+01:16:24,307 --> 01:16:26,307
+vektör konularını işleyeceğiz.
+
+325
+01:16:26,307 --> 01:16:32,627
+Ve
+
+326
+01:16:32,627 --> 01:16:34,627
+vektör konularını işleyeceğiz.
+
+327
+01:16:37,908 --> 01:16:44,048
+Negative 1, 1, 0 to 5.
+
+328
+01:16:50,100 --> 01:16:51,800
+Negative two zero zero.
+
+329
+01:17:04,659 --> 01:17:08,340
+Plus, negative 4 times.
+
+330
+01:17:15,347 --> 01:17:18,688
+4 is on row 4 and column 2.
+
+331
+01:17:25,363 --> 01:17:35,884
+x determinant of the matrix, dati, delay, row 4, and column 2, 0, negative 1, 1.
+
+332
+01:17:45,235 --> 01:17:46,695
+Negative two, two, two.
+
+333
+01:18:00,020 --> 01:18:02,440
+3, 0, 0.
+
+334
+01:18:09,939 --> 01:18:24,359
+So, you can also find these determinants, since these are 3-by-tremeticis, by using rule of SARS, but we have 3 0s here, also we have 3 0s here.
+
+335
+01:18:24,359 --> 01:18:47,960
+This is negative 1 times negative 2 times negative 2 is on row 2, row 3 and column 1, creating this and this, we have negative 1, 1, 2, 5 plus
+
+336
+01:18:47,960 --> 01:19:10,839
+So, it is
+
+337
+01:19:14,836 --> 01:19:15,756
+So, times.
+
+338
+01:19:22,195 --> 01:19:25,695
+Negative 5, negative 7.
+
+339
+01:19:28,595 --> 01:19:33,376
+Plus, this is negative.
+
+340
+01:19:38,996 --> 01:19:39,996
+11 x
+
+341
+01:19:39,996 --> 01:19:45,716
+negative 5, negative 7.
+
+342
+01:19:54,452 --> 01:19:57,372
+84 minus 14
+
+343
+01:20:05,108 --> 01:20:06,328
+Gees, sementir.
+
+344
+01:20:10,707 --> 01:20:14,927
+Right? Negative 2, 2.
+
+345
+01:20:16,987 --> 01:20:17,728
+Okay.
+
+346
+01:20:19,407 --> 01:20:20,087
+12.
+
+347
+01:20:29,908 --> 01:20:59,788
+Okay, so determinant of A is different from 0. It means that the matrix is invertible. So it has an inverse. And the reduced solution for mathematics is 4x4 identifix. And a joint A times A is equal to 70, 0, 0, 70, 70, 70.
+
+348
+01:20:59,788 --> 01:21:03,548
+So this is not correct. 1 and 2.
+
+349
+01:21:07,731 --> 01:21:08,072
+Ok.
+
+350
+01:21:11,796 --> 01:21:12,496
+Any questions?
+
+351
+01:22:02,323 --> 01:22:07,203
+Now we give the alternative definition for the rank of the matrix.
+
+352
+01:22:07,203 --> 01:22:17,083
+This is also very important because we can also determine the rank of the matrix by using its determinant.
+
+353
+01:22:17,083 --> 01:22:34,723
+Actually, we previously defined the rank of a matrix that the rank of a matrix is the number of the non-zero rows of each row echelon form.
+
+354
+01:22:34,723 --> 01:22:47,223
+So to find the rank of a matrix, actually, you have to put this matrix in row echelon form and determine its rank.
+
+355
+01:22:47,223 --> 01:23:01,723
+Actually, it is not easy to put a matrix in row echelon form, but this definition says...
+
+356
+01:23:01,723 --> 01:23:07,723
+To get to the alternative definition for the rank of a matrix.
+
+357
+01:23:07,723 --> 01:23:30,723
+The rank of a matrix A, say R, is R, where R is the size of the largest non-zero R by R submetrics with non-zero.
+
+358
+01:23:30,723 --> 01:23:59,723
+Non-zero determinant.
+
+359
+01:23:36,404 --> 01:23:58,484
+So, this definition says, if you want to determine the rank of a matrix, first of all, construct the largest non-zero m by n or r by r submetrics and find the determinant.
+
+360
+01:23:58,484 --> 01:24:08,384
+If the determinant is non-zero, then the rank is the size of this non-zero submetrics.
+
+361
+01:24:11,444 --> 01:24:21,464
+For example, look at the example. We have 1, 2, 3, 4, 5, 1, 2, 3, 4, 5. We have 5 by 5 matrix.
+
+362
+01:24:25,203 --> 01:24:32,543
+So, the largest non-zero, r by r, submatrix, is 5 by 5.
+
+363
+01:24:33,783 --> 01:24:38,283
+So, we have to find the determinant of this matrix.
+
+364
+01:24:39,243 --> 01:24:43,083
+Can we say the determinant of this matrix easily?
+
+365
+01:24:43,724 --> 01:24:45,003
+What is the determinant of A?
+
+366
+01:24:53,140 --> 01:25:22,980
+Thank you [öğrenci]. It is zero because this matrix includes zero column. So we can discard the column 5 since it has all zero elements. We can skip this column. Okay. Now look at the column 3.
+
+367
+01:25:23,140 --> 01:25:33,140
+Column 3 is a linear combination of or the sum of column 1 and column 2.
+
+368
+01:25:40,372 --> 01:25:46,372
+2 plus 1, 3, 5, 0, 1, 1.
+
+369
+01:25:46,372 --> 01:25:58,372
+So it means that if we take the term of any matrix that includes these three columns, it will be zero.
+
+370
+01:25:58,372 --> 01:26:00,372
+Okay.
+
+371
+01:26:00,372 --> 01:26:05,372
+So we skip this column.
+
+372
+01:26:05,372 --> 01:26:10,372
+Now, we only have
+
+373
+01:26:10,372 --> 01:26:12,372
+this matrix.
+
+374
+01:26:12,372 --> 01:26:17,372
+It is 1, 2, 3, 4, 5
+
+375
+01:26:17,372 --> 01:26:20,372
+by 3.
+
+376
+01:26:20,372 --> 01:26:24,372
+So we have to look at
+
+377
+01:26:24,372 --> 01:26:28,372
+all the terms of sub matrices with
+
+378
+01:26:28,372 --> 01:26:30,372
+3 by 3.
+
+379
+01:26:35,764 --> 01:26:36,104
+One
+
+380
+01:26:40,083 --> 01:27:07,043
+3, 1, 2, 3. We have to look all of the terms of 3 by 3 matrices. As here. And actually, surprisingly, all of the matrices of size 3 have the determinant 0. This example is a very special example.
+
+381
+01:27:07,043 --> 01:27:24,323
+So it means that the rank of this matrix is smaller than 3. Now, since we look at all 3 by 3 matrices, the terms are 0. Now, look at 2 by 2 sub matrices.
+
+382
+01:27:29,844 --> 01:27:42,884
+For example, this one, 4 minus 3, it is 1, so it is non-zero, it means that the rank of this matrix is 2.
+
+383
+01:27:48,212 --> 01:27:48,512
+Ok?
+
+384
+01:27:52,595 --> 01:27:54,535
+Okay, I have a question for you.
+
+385
+01:28:06,323 --> 01:28:06,884
+If
+
+386
+01:28:11,412 --> 01:28:15,532
+A is n, m by n,
+
+387
+01:28:20,083 --> 01:28:21,224
+Simulam atış.
+
+388
+01:28:33,043 --> 01:28:34,443
+What is the rank of A?
+
+389
+01:28:55,731 --> 01:28:56,851
+Olamaz [öğrenci].
+
+390
+01:29:03,091 --> 01:29:09,491
+Look at the definition, alternative definition of rank. It says rank of the matrix is
+
+391
+01:29:12,051 --> 01:29:19,491
+the size of the largest non-zero submatrix with non-zero determinant.
+
+392
+01:29:26,515 --> 01:29:35,875
+Since A is non-singular or invertible, we know that its determinant is?
+
+393
+01:29:40,595 --> 01:29:42,595
+Differen from 0.
+
+394
+01:29:43,595 --> 01:29:46,595
+Since the determinant is different from 0,
+
+395
+01:29:51,380 --> 01:29:59,380
+The rank of the matrix A is the size of A, which is n.
+
+396
+01:30:04,532 --> 01:30:05,011
+Ok.
+
+397
+01:30:13,011 --> 01:30:13,911
+Is it okay?
+
+398
+01:30:16,072 --> 01:30:17,271
+Are you sleeping?
+
+399
+01:30:32,948 --> 01:30:34,968
+Evet, [öğrenci], it is full rank.
+
+400
+01:30:45,716 --> 01:30:48,416
+Now let us talk about linear equation systems.
+
+401
+01:30:56,564 --> 01:31:08,184
+We use linear equation systems in practical problems in engineering, in economics, and in our social sciences.
+
+402
+01:31:10,604 --> 01:31:18,224
+Remember that the equation a1, x1 plus a2, x2 plus an x1 is equal to b.
+
+403
+01:31:18,224 --> 01:31:34,904
+The equation and here x1, x2 and xn are unknowns or variables and a1, a2, an are constants.
+
+404
+01:31:35,904 --> 01:31:37,524
+This is called the linear equation.
+
+405
+01:31:47,475 --> 01:31:55,635
+In application, we know a1, a2, an, which are constants.
+
+406
+01:31:58,036 --> 01:32:08,496
+And we also know b, and we are looking for x1, x2 to the xn, which satisfies this equation.
+
+407
+01:32:08,496 --> 01:32:28,815
+And the numbers s1 to the xn, say solution to the linear equation, if we write x1 as s1, x2 as s2, and xn as sn, this equation satisfies.
+
+408
+01:32:28,815 --> 01:32:38,496
+Then, the solution to the linear equation is s1, x2 to the xn.
+
+409
+01:32:38,496 --> 01:32:40,036
+For example,
+
+410
+01:32:43,796 --> 01:32:47,796
+This is a linear equation with two unknowns.
+
+411
+01:32:47,796 --> 01:32:58,796
+Since x12 and x23 and x3-4 satisfies this equation,
+
+412
+01:32:58,796 --> 01:33:06,796
+2, 3 and negative 4 are solutions for this linear equation.
+
+413
+01:33:06,796 --> 01:33:17,796
+Now, let us expand the linear equation to the linear equation system.
+
+414
+01:33:17,796 --> 01:33:27,796
+The system of M linear equations in N unknowns includes x1 to the xn,
+
+415
+01:33:27,796 --> 01:33:35,796
+N unknowns and it has M linear equations.
+
+416
+01:33:35,796 --> 01:33:44,796
+1, 2 to the M and each equation have N unknowns.
+
+417
+01:33:50,292 --> 01:33:53,012
+Again, a solution to the linear system.
+
+418
+01:33:56,916 --> 01:34:15,735
+is a sequence of numbers s1 to the sn, where we write x1 as s1, and x2 as s2, and the others, satisfies this linear equation system, or satisfies all of these equations.
+
+419
+01:34:19,956 --> 01:34:25,195
+Now, these definitions are very important because
+
+420
+01:34:30,963 --> 01:34:46,963
+If the linear system has no solution, it means that you cannot find the unknowns x1, x2 to the xn such that this linear equation system satisfied.
+
+421
+01:34:47,743 --> 01:34:57,064
+So, there is no solution for the linear system and it is said this system is inconsistent.
+
+422
+01:34:57,064 --> 01:35:06,344
+If there is no solution, then the system is said to be inconsistent.
+
+423
+01:35:06,344 --> 01:35:11,144
+If it has a solution, then it is called.
+
+424
+01:35:15,347 --> 01:35:16,408
+Consistent
+
+425
+01:35:20,404 --> 01:35:34,444
+If on the right side of the linear equation system, if these b1, b2, and dm are all zero, then the system is called homogenous system.
+
+426
+01:35:44,115 --> 01:35:45,855
+For homogeneal systems,
+
+427
+01:36:03,539 --> 01:36:16,739
+Homogeneous systems, if we take x1 as 0, x2 as 0, and xn as 0, these equations always false.
+
+428
+01:36:18,019 --> 01:36:29,539
+So, the solution for homogenous system where all unknowns are 0 is called trivial solution.
+
+429
+01:36:38,771 --> 01:36:49,492
+Romo-Mijaniş sistem, if all solutions are 0, then it is called trivial solution.
+
+430
+01:36:51,011 --> 01:37:04,931
+If the solution includes at least one non-zero solution, then it is called non-trivial solution.
+
+431
+01:37:09,619 --> 01:37:09,960
+Ok?
+
+432
+01:37:15,507 --> 01:37:23,507
+Consider we have another linear equation system with R equations in unknowns.
+
+433
+01:37:24,507 --> 01:37:30,507
+If this system and the previous system in line
+
+434
+01:37:32,507 --> 01:37:34,507
+have the same solutions,
+
+435
+01:37:36,507 --> 01:37:37,507
+then
+
+436
+01:37:39,507 --> 01:37:44,507
+it is said these two systems are equivalent.
+
+437
+01:37:45,507 --> 01:37:54,507
+So systems are saved in a column if they have exactly the same solutions.
+
+438
+01:37:59,828 --> 01:38:14,508
+For example, the linear system x1-3 x2 is equal to negative 7 and 2x1 plus x2 is 7, has only solution 2 and 3.
+
+439
+01:38:15,428 --> 01:38:25,868
+The linear system, this linear system has also the solution 2 and 3, therefore 11 and 12 are equivalent.
+
+440
+01:38:29,876 --> 01:38:30,896
+Please wait a second.
+
+441
+01:39:02,131 --> 01:39:06,291
+We learn how to solve linear equation systems.
+
+442
+01:39:08,791 --> 01:39:13,471
+Consider we have a linear system of m equations in n unknowns.
+
+443
+01:39:17,779 --> 01:39:23,960
+We are looking for x1, x2, xn that satisfies these all equations.
+
+444
+01:39:26,960 --> 01:39:31,960
+These are the coefficients of the equations.
+
+445
+01:39:35,796 --> 01:39:38,576
+ve know these coefficients.
+
+446
+01:39:43,604 --> 01:39:46,104
+We also know B1 to the Bm.
+
+447
+01:39:48,124 --> 01:39:56,984
+If you write all of these coefficients to a matrix A11, A12 to the A1n in order,
+
+448
+01:39:57,984 --> 01:40:04,003
+think that these are the first row, second and mpro.
+
+449
+01:40:04,963 --> 01:40:06,984
+So we have the matrix A.
+
+450
+01:40:08,744 --> 01:40:12,024
+X is the matrix of unknowns.
+
+451
+01:40:12,024 --> 01:40:15,284
+We have X1 to the Xn unknowns.
+
+452
+01:40:16,824 --> 01:40:26,344
+And the bold phase B is the matrix, which includes the numbers on the right side of the equation.
+
+453
+01:40:27,444 --> 01:40:40,204
+So we can write the linear system of m equations in n nouns as AX is equal to B.
+
+454
+01:40:42,024 --> 01:40:46,344
+Here A is called the coefficient matrix.
+
+455
+01:40:46,344 --> 01:40:57,224
+And the amount of m
+
+456
+01:40:57,224 --> 01:40:59,224
+is the amount of m
+
+457
+01:40:59,224 --> 01:41:05,224
+that is the amount of m
+
+458
+01:40:54,996 --> 01:40:58,695
+A is called the coefficient matrix of the linear system.
+
+459
+01:41:03,923 --> 01:41:04,264
+Ok?
+
+460
+01:41:10,739 --> 01:41:12,139
+Hocam tekrarla edilir misiniz?
+
+461
+01:41:12,319 --> 01:41:12,659
+Efendim.
+
+462
+01:41:15,139 --> 01:41:17,099
+Tekrarla edilir misiniz diye salmıştım.
+
+463
+01:41:20,884 --> 01:41:23,463
+Elimizde bu lineer denklem sistemi var.
+
+464
+01:41:28,979 --> 01:41:35,739
+A maddesi bu iliner denklem sisteminin denklemlerinin kas sayılarından oluşuyor.
+
+465
+01:41:35,939 --> 01:41:37,299
+Bunu ilk satıra yazıyorum.
+
+466
+01:41:37,299 --> 01:41:37,519
+A1, A
+
+467
+01:42:07,299 --> 01:42:07,339
+A1, A1
+
+468
+01:42:10,387 --> 01:42:25,608
+Ya da eşittir B dersem, şu yukarıdaki, lineer denklem sistemini elde etmiş olurum. Yani lineer denklem sistemini matrisler kullanarak bu formda yazabilirim, onu söyleyeyim.
+
+469
+01:42:26,747 --> 01:42:28,148
+Tamamdır, teşekkür ederim.
+
+470
+01:42:28,148 --> 01:42:28,427
+Tamam.
+
+471
+01:42:29,807 --> 01:42:33,707
+So here A is the coefficient matrix of the system.
+
+472
+01:42:33,707 --> 01:42:44,287
+Now, we add the numbers on the right side of the linear equation system on the coefficient matrix.
+
+473
+01:42:45,287 --> 01:42:45,927
+And
+
+474
+01:42:50,739 --> 01:42:58,219
+Numbers on the right side of the linear equation system as a column on the coefficient matrix.
+
+475
+01:42:59,319 --> 01:43:03,479
+Then, this matrix is called the augmented matrix.
+
+476
+01:43:16,916 --> 01:43:19,076
+A is called the coefficient matrix.
+
+477
+01:43:19,976 --> 01:43:30,296
+And joining column B to the right side of the coefficient matrix, we have another matrix which is called the augmented matrix.
+
+478
+01:43:34,739 --> 01:43:48,519
+This is called the augmented matrix. And we will use the augmented matrix for solving the equation systems and we denote or write the augmented matrix as A.
+
+479
+01:43:52,404 --> 01:43:53,724
+dash b.
+
+480
+01:43:56,004 --> 01:43:56,764
+Okay.
+
+481
+01:43:59,084 --> 01:44:02,964
+If we have a homogenous system, homogenous system means
+
+482
+01:44:02,964 --> 01:44:08,464
+the numbers on the right side of the linear equation system are of zero,
+
+483
+01:44:09,224 --> 01:44:10,864
+then we have again,
+
+484
+01:44:12,284 --> 01:44:18,804
+or we can write this system by using the coefficient matrix and unknown matrix x.
+
+485
+01:44:18,804 --> 01:44:23,644
+So, a times x is equal to zero.
+
+486
+01:44:29,619 --> 01:44:36,819
+Consider the augmented matrix of the linear equation system, AB.
+
+487
+01:44:38,019 --> 01:44:48,340
+Using elemental row operations, we put this matrix into a reduced row echelon form or row echelon form.
+
+488
+01:44:49,539 --> 01:44:52,819
+Then we have a matrix CD.
+
+489
+01:45:16,020 --> 01:45:18,420
+We put this matrix into the
+
+490
+01:45:25,587 --> 01:45:29,827
+Reduced row echelon form, or row echelon form.
+
+491
+01:45:31,947 --> 01:45:35,108
+Now, this is very important.
+
+492
+01:45:37,247 --> 01:45:45,108
+After putting the matrix of the matrix of the linear equation system,
+
+493
+01:45:45,108 --> 01:45:55,768
+we check the rank, rank of C, and the rank of all matrix CD.
+
+494
+01:46:01,908 --> 01:46:04,508
+We have three statements here.
+
+495
+01:46:06,948 --> 01:46:19,887
+If the rank of C is not equal to the rank of CD, then the system is inconsistent.
+
+496
+01:46:21,108 --> 01:46:23,408
+So it means that there is no solution.
+
+497
+01:46:31,347 --> 01:46:45,948
+If rank of C is equal to rank of CD, say rank is R, then we have a solution or the system has a solution or the system is consistent.
+
+498
+01:46:48,927 --> 01:46:58,948
+In this case, if rank is equal to the number of unknowns, we have only one solution or unique solution.
+
+499
+01:47:15,028 --> 01:47:28,948
+If rank is smaller than the number of unknowns, then we have infinitely many solutions with respect to the n-r arbitrary variables.
+
+500
+01:47:30,708 --> 01:47:43,148
+And this is called solving linear system using Gauss-Jordan reduction or solving linear systems via equivalent matrices.
+
+501
+01:47:45,028 --> 01:47:48,847
+Let us see this in examples.
+
+502
+01:48:01,076 --> 01:48:08,076
+We have the numer system with 1, 2, 3 equations.
+
+503
+01:48:13,908 --> 01:48:19,828
+Unowns are X, Y, and Z in three unknowns.
+
+504
+01:48:24,564 --> 01:48:34,064
+So, we want to solve this linear system, or we wonder if the system has a solution, or if it is consistent or inconsistent.
+
+505
+01:48:35,724 --> 01:48:41,404
+First of all, we have to write the automatic matrix of this linear system.
+
+506
+01:48:45,460 --> 01:49:01,579
+First of all, construct the coefficient matrix. A, coefficient matrix of this linear system consists of the coefficients of unknowns. The coefficient of x is 1.
+
+507
+01:49:01,579 --> 01:49:07,060
+First, we talk about the first equation.
+
+508
+01:49:08,159 --> 01:49:12,399
+The coefficient of x is 1. The coefficient of y
+
+509
+01:49:17,971 --> 01:49:22,931
+Y'e 2, z'e 3.
+
+510
+01:49:26,331 --> 01:49:32,291
+And for the second equation, we write
+
+511
+01:49:32,291 --> 01:49:43,791
+the coefficient of x is 2, the coefficient of y is negative 1, and the coefficient of z is 1.
+
+512
+01:49:43,791 --> 01:49:57,431
+And the last equation, the coefficient of x is 3, the coefficient of y, there is no y here, so it means that the coefficient of y is 0.
+
+513
+01:50:00,152 --> 01:50:03,652
+And the coefficient of z is negative 1.
+
+514
+01:50:03,652 --> 01:50:07,011
+and joining
+
+515
+01:50:07,011 --> 01:50:12,331
+the matrix B, which is
+
+516
+01:50:12,331 --> 01:50:13,471
+9,
+
+517
+01:50:13,471 --> 01:50:15,771
+8,
+
+518
+01:50:15,771 --> 01:50:16,652
+3.
+
+519
+01:50:21,460 --> 01:50:36,659
+So, this is the augmented matrix AB. And now, using elemental row operations, we put this matrix into the row echelon form or reduced row echelon form.
+
+520
+01:50:38,899 --> 01:50:43,060
+We have to make this and this zero.
+
+521
+01:50:43,060 --> 01:50:43,420
+So,
+
+522
+01:50:56,564 --> 01:51:03,244
+Ok, let us solve this example next week. Do you have any questions or comments?
+
+523
+01:51:07,731 --> 01:51:13,011
+I will also put these notes to your lesson wall and we can find the notes in your lesson wall.
+
+524
+01:51:15,332 --> 01:51:28,612
+Any questions? Comments? No? Peki arkadaşlar, görüşmek üzere. Ben de size nice day'ler diliyorum, dümsemle. Haftaya görüşürüz.

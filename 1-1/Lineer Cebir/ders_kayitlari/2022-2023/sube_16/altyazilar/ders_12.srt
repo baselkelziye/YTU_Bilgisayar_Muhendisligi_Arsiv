@@ -1,0 +1,1815 @@
+1
+00:01:58,451 --> 00:01:59,531
+Arkadaşlar, merhaba.
+
+2
+00:02:16,147 --> 00:02:17,268
+Siz mi yörelim mi?
+
+3
+00:02:27,060 --> 00:02:27,539
+Çeş.
+
+4
+00:02:44,979 --> 00:03:05,219
+Bugün vektör uzaylarından devam edeceğiz. Alt vektör uzaylarıyla beraber. Biraz soyut kavramlar ama önemli sınavda özellikle finalde karşınıza sorular çıkar bu konularla alakalı.
+
+5
+00:03:05,219 --> 00:03:13,719
+O yüzden anlamadığınız bir yer olursa ya da sormak istediğiniz bir şey lütfen çekinmeden Türkçe'ye inince olarak sormak.
+
+6
+00:03:17,939 --> 00:03:32,939
+Last week, we introduced vector spaces. Now, we will talk about subspaces. Actually, a subspace is again...
+
+7
+00:08:17,043 --> 00:08:36,683
+If a set v satisfies 10 conditions from each comes to operations, o plus and all that, then we call the set v as a vector space.
+
+8
+00:08:36,683 --> 00:08:43,323
+Now, we will define subspace of a vector space.
+
+9
+00:08:43,323 --> 00:08:45,644
+We have a vector space v.
+
+10
+00:08:47,043 --> 00:08:49,443
+We have a vector space.
+
+11
+00:08:54,163 --> 00:09:24,163
+ve bu ve
+
+12
+00:09:56,692 --> 00:10:08,371
+So, instead of this, we have a theorem that gives a subset of a vector space is a subspace or not.
+
+13
+00:10:13,844 --> 00:10:16,844
+We have a vector space V.
+
+14
+00:10:16,844 --> 00:10:22,844
+W is the subset of the vector space V.
+
+15
+00:10:22,844 --> 00:10:29,844
+And V is a vector space with respect to the O addition.
+
+16
+00:10:29,844 --> 00:10:33,844
+And all that.
+
+17
+00:10:33,844 --> 00:10:41,844
+If W satisfies these two conditions,
+
+18
+00:10:43,844 --> 00:10:47,844
+then it is a subspace of V.
+
+19
+00:10:58,772 --> 00:11:09,712
+W, the subspace of V, if and only if, take two vectors or elements in W,
+
+20
+00:11:17,043 --> 00:11:22,384
+Then, W must be closed under addition.
+
+21
+00:11:26,451 --> 00:11:56,432
+It means that for two vectors in W, U and V, U O plus V must be in W, and for a real number C and a vector or element in W, C O dot V, or U, sorry, must be, again,
+
+22
+00:11:56,451 --> 00:12:01,871
+in W, so W must be closed under edition.
+
+23
+00:12:10,035 --> 00:12:18,035
+Also, w must be closed under multiplication.
+
+24
+00:12:21,035 --> 00:12:22,035
+Okay.
+
+25
+00:12:23,035 --> 00:12:37,035
+So, if you want to show that a subset of a vector space is a subspace, then you use this term, this is very important.
+
+26
+00:12:40,788 --> 00:12:50,008
+Or, you have to show that W satisfies all the conditions of vector space.
+
+27
+00:12:51,628 --> 00:12:51,868
+Okay.
+
+28
+00:12:54,927 --> 00:12:59,488
+Arkadaşlar, şimdi alt vektör uzayından bahsediyoruz.
+
+29
+00:12:59,488 --> 00:13:13,608
+Bir V kümesinin vektör uzayı olabilmesi demek, iki tane işleme göre, bunlara vektörel toplama ve vektörel çarpım dedik.
+
+30
+00:13:16,028 --> 00:13:24,707
+İlk işleme ve ikinci işleme göre beşer tane özellik şart vardı. Bunların hepsini sağlaması gerekiyor.
+
+31
+00:13:24,707 --> 00:13:27,847
+Alt uzay içinde
+
+32
+00:13:31,475 --> 00:13:51,936
+W alt kümesi eğer V'nin, W alt kümesinin alt uzay olmadığını bilmek istiyorsanız, tanım olarak şunu yapmanız lazım, W'un da bu 10 özelliği sağladığını göstermeniz gerekiyor.
+
+33
+00:13:51,936 --> 00:13:57,135
+Ancak bu tabii çok kolay değil, yani uzun bir işlem.
+
+34
+00:13:59,176 --> 00:14:12,875
+Bunun yerine, bu teorin 184'te şunu söylüyor, eğer siz W'nun, V vektör uzayının işlemlerine göre, toplamaya göre kapalı olduğunu, çarpmaya göre kapalı olduğunu,
+
+35
+00:14:13,176 --> 00:14:20,375
+görürseniz ya da gösterirseniz, bu W'nun, V vektör uzayının, bir alt uzayı olduğu anlamına gelir.
+
+36
+00:14:21,936 --> 00:14:23,515
+Yani bunu kullanacağız.
+
+37
+00:14:23,515 --> 00:14:25,875
+Çok genel olarak ekstrem durumlar aç.
+
+38
+00:14:26,216 --> 00:14:26,635
+Tamam mı?
+
+39
+00:14:30,515 --> 00:14:40,075
+Okay, we have an example here. It says, every vector space, this is also very important because it says,
+
+40
+00:14:46,259 --> 00:14:52,259
+Ayrı vektör space, at least two subspaces.
+
+41
+00:14:52,259 --> 00:14:58,259
+So, every vector space has two subspaces.
+
+42
+00:14:58,259 --> 00:15:05,259
+One of them is itself, because every set is a subset of itself.
+
+43
+00:15:05,259 --> 00:15:11,259
+So, itself and the subspace, consisting only to zero vectors.
+
+44
+00:15:16,052 --> 00:15:23,372
+Heron-vektör space has at least two subspaces itself and zero subspace.
+
+45
+00:15:24,992 --> 00:15:29,951
+This subspace is called the zero subspace of V.
+
+46
+00:15:33,748 --> 00:15:46,648
+Now, let P2 be the set of, the set of polynomials of degree smaller than 2 or equal to 2 with the 0 polynomial.
+
+47
+00:15:49,148 --> 00:15:57,728
+And P2 is subset of the set of all polynomials.
+
+48
+00:16:03,316 --> 00:16:25,115
+We can also show that P2 is a subspace of P by using this theorem. It is closed under polynomial addition and it's closed under the multiplication of a polynomial by a scalar.
+
+49
+00:16:25,115 --> 00:16:41,596
+So, the set of all polynomials of degree 2 or equal to 2 with 0 polynomial is a subspace of the set P which is the set of all polynomials.
+
+50
+00:16:41,596 --> 00:16:57,516
+In general, the set Pn which is the set of all polynomials of degree smaller than or equal to n with the 0 polynomial is a subspace of P.
+
+51
+00:16:58,436 --> 00:17:04,076
+And also Pn is a subspace of Pn plus 1.
+
+52
+00:17:11,539 --> 00:17:25,819
+Okay, look at another example. It says, if v is a set of all polynomials of degree exactly two.
+
+53
+00:17:34,548 --> 00:17:50,708
+it consists of all polynomials, say Px, such that the degree of these polynomials are exactly equal to two.
+
+54
+00:17:53,587 --> 00:17:59,827
+V is actually a subset of all polynomials, which is P.
+
+55
+00:17:59,827 --> 00:18:07,028
+P, so, is V a subspace of P?
+
+56
+00:18:09,107 --> 00:18:09,827
+What we think?
+
+57
+00:18:19,443 --> 00:18:35,803
+V kümesi olarak derecesi tam olarak iki eşit olan bütün polinomların kümesini aldım. Yani V kümesi derecesi iki olan polinomların kümesi. Bu da bütün polinomların kümesi olan P'nin bir alt kümesi.
+
+58
+00:18:35,803 --> 00:18:37,403
+soru şu.
+
+59
+00:18:39,223 --> 00:18:41,243
+V, P'nin bir alt uzayı mıdır?
+
+60
+00:18:44,243 --> 00:18:45,503
+Ne diyorsunuz?
+
+61
+00:18:48,303 --> 00:18:50,043
+Alt uzayı mıdır, değil midir?
+
+62
+00:18:56,980 --> 00:18:59,220
+Ne yapacağız arkadaşlar? Teoremi uygulayacağız.
+
+63
+00:19:00,460 --> 00:19:03,339
+Yani, V içinden iki tane polinom alacaksınız.
+
+64
+00:19:50,771 --> 00:19:59,851
+V kümesi, ölü polinomlardan oluşuyor ki, bu polinomların dereceleri 2.
+
+65
+00:20:08,468 --> 00:20:12,488
+Ve de bütün kononların kümesi olan T'nin alt kümesi.
+
+66
+00:20:13,128 --> 00:20:21,428
+Şimdi V'nin, T'nin bir alt uzayı olmadığını kontrol edeceğim.
+
+67
+00:20:23,248 --> 00:20:26,567
+Bunun için alt uzay testi ya da işte teoremi kullanacağız.
+
+68
+00:20:26,567 --> 00:20:30,128
+O da şunu diyor, V'den iki tane eleman al diyor.
+
+69
+00:20:31,608 --> 00:20:32,848
+TQ diyelim bunlara.
+
+70
+00:20:32,848 --> 00:20:40,228
+Birincisi toplamaya göre kapalı mı bu?
+
+71
+00:20:42,608 --> 00:20:48,608
+İkincisi de bir C, R sayısı ve V'den aldığım bir tane eleman için.
+
+72
+00:20:53,460 --> 00:20:55,460
+Scalar çarpım,
+
+73
+00:20:57,460 --> 00:20:59,460
+növenin içine düşer.
+
+74
+00:21:06,420 --> 00:21:23,840
+Okay, since we consist of polynomials of degree exactly equal to 2, take two elements, t of x and q of x, which are elements of v.
+
+75
+00:21:25,840 --> 00:21:26,420
+So,
+
+76
+00:21:30,836 --> 00:21:44,556
+We are looking for if P of x or plus P of x again including pi b.
+
+77
+00:21:44,556 --> 00:22:12,336
+But if we choose, for example, P of x as 2t square plus t plus 1, which is an element of b, and P of x as an negative 2t square minus 3t plus 3.
+
+78
+00:22:16,276 --> 00:22:19,916
+Q of x, o plus q of x.
+
+79
+00:22:21,976 --> 00:22:26,796
+Or the polynomials, o addition means the addition of polynomials.
+
+80
+00:22:26,796 --> 00:22:34,776
+So, we add the terms which have the same degree.
+
+81
+00:22:34,776 --> 00:22:52,776
+So, p of x plus q of x is equal to negative 2t plus 4, which is a polynomial of degree 1.
+
+82
+00:22:52,776 --> 00:22:58,596
+So, it is not included in v.
+
+83
+00:22:58,596 --> 00:23:06,536
+Therefore, v is not a subspace of p.
+
+84
+00:23:10,355 --> 00:23:10,715
+Ok.
+
+85
+00:23:20,915 --> 00:23:33,635
+So the set of all polynomials of degree exactly equal to 2 is not a subspace of the vector space of all polynomials.
+
+86
+00:23:36,195 --> 00:23:43,875
+Now we have another example. We have a set w, the set of all vectors in R cube of the form.
+
+87
+00:24:02,451 --> 00:24:15,652
+W is the set of all vectors in R-cube of the form AB, AB, AB plus B.
+
+88
+00:24:19,316 --> 00:24:49,296
+ve 3 ayı
+
+89
+00:24:26,900 --> 00:24:40,500
+Then, now we are looking for if w is a subspace of r cubed.
+
+90
+00:24:43,923 --> 00:24:55,483
+Again, we use the theorem, we need to show that w is closed under addition and w is closed under multiplication.
+
+91
+00:24:55,483 --> 00:25:22,624
+For this, take two elements in w, say u, a1, e1, a1 plus p1, and v, a2, b2, a2 plus p2.
+
+92
+00:25:25,483 --> 00:25:34,223
+These are elements in w because these are of the form of these matrix or vectors.
+
+93
+00:25:34,223 --> 00:25:37,543
+So these are elements of w.
+
+94
+00:25:38,403 --> 00:25:50,403
+Now, first, we are looking for if uO plus v is included in w.
+
+95
+00:25:54,900 --> 00:26:20,900
+uO plus v. We know that vektör al addition is defined as the addition of matrices over r³, so uO plus v is equal to a1 plus a2, a1 plus b2,
+
+96
+00:26:24,756 --> 00:26:33,115
+A1 plus, A2 plus, B1 plus, B2.
+
+97
+00:26:38,355 --> 00:26:41,256
+If we say a1 plus a2 as
+
+98
+00:26:50,291 --> 00:26:53,291
+ve b1 plus b2 as b.
+
+99
+00:26:54,291 --> 00:27:03,291
+Then, on the last row, we have a plus b, which is on the form of the entries of w.
+
+100
+00:27:03,291 --> 00:27:08,291
+So, this addition is an element of w.
+
+101
+00:27:08,291 --> 00:27:13,291
+So, the first condition for the theorem, satisfied.
+
+102
+00:27:13,291 --> 00:27:17,291
+And for the second condition...
+
+103
+00:27:17,291 --> 00:27:37,291
+...
+
+104
+00:27:21,971 --> 00:27:26,852
+4, C, Scalar C, and
+
+105
+00:27:38,132 --> 00:27:40,932
+u in w.
+
+106
+00:27:42,852 --> 00:27:50,852
+We are looking for if c o dot u is in w.
+
+107
+00:27:53,251 --> 00:27:54,211
+Again, since
+
+108
+00:27:57,251 --> 00:28:05,092
+we are working on our cube, o dot is defined as the scalar multiplication of matrices.
+
+109
+00:28:05,092 --> 00:28:10,772
+So, c o dot u is equal to
+
+110
+00:28:13,172 --> 00:28:24,932
+c times a1, c times b1, and c times a1 plus c times b1.
+
+111
+00:28:24,932 --> 00:28:27,251
+So,
+
+112
+00:28:28,612 --> 00:28:35,251
+the last row is equal to the summation of the first and second row.
+
+113
+00:28:35,251 --> 00:28:35,491
+So,
+
+114
+00:28:36,451 --> 00:28:39,092
+this is also the element of w.
+
+115
+00:28:42,132 --> 00:28:42,692
+Therefore,
+
+116
+00:28:43,572 --> 00:28:44,772
+we can compute that
+
+117
+00:28:46,211 --> 00:28:48,451
+w is a subspace of
+
+118
+00:28:49,892 --> 00:28:50,451
+r cube.
+
+119
+00:29:11,380 --> 00:29:21,380
+We can also use notations instead of O plus and O dot as usual addition and usual multiplication.
+
+120
+00:29:21,380 --> 00:29:22,380
+Okay.
+
+121
+00:29:27,700 --> 00:29:37,000
+The conditions in the theorem, the two conditions in the theorem can be combined as in a first condition, as one condition, sorry.
+
+122
+00:29:38,940 --> 00:29:42,740
+W non-emptive subset W of a vector space V.
+
+123
+00:29:48,723 --> 00:30:05,403
+is a subspace of v if and only if c times u plus d times v is in w. Here c and d are real numbers, u and v are vectors in w.
+
+124
+00:30:05,403 --> 00:30:20,163
+but I don't recommend you to use this term actually. It is easy to use this in two conditions.
+
+125
+00:30:22,303 --> 00:30:33,884
+u plus v is in w and c times u.
+
+126
+00:30:38,291 --> 00:30:40,491
+is in W.
+
+127
+00:30:41,731 --> 00:30:42,251
+Okey.
+
+128
+00:30:45,211 --> 00:30:47,611
+Arkadaşlar, sorunuz var mı? Bakın alt uzaylar önemli.
+
+129
+00:30:48,711 --> 00:30:51,231
+Alt uzay olup olmamayla alakalı bir problemimiz var mı?
+
+130
+00:30:52,811 --> 00:30:53,791
+Anlaşılıyor mu bunlar?
+
+131
+00:30:57,231 --> 00:30:58,251
+Anlaşılmayan bir şey var mı?
+
+132
+00:31:28,723 --> 00:31:36,803
+Now, let's be a vector space and take V1 to the VK, the vectors in V.
+
+133
+00:31:38,483 --> 00:31:46,543
+A vector again in V is called the linear combination of the vectors V1 to the VK.
+
+134
+00:31:46,543 --> 00:32:00,763
+If we can write this vector V as this sum and A1 to the AK are real numbers.
+
+135
+00:32:01,423 --> 00:32:12,403
+If a vector in a vector space can be written as the summation of the multiplication of the vectors with real numbers,
+
+136
+00:32:12,403 --> 00:32:18,403
+then it's called or this vector is set the linear combination of the others.
+
+137
+00:32:18,963 --> 00:32:27,323
+For example, in R3, we have V1, V2 and V3.
+
+138
+00:32:27,323 --> 00:32:29,083
+These are vectors in R3.
+
+139
+00:32:29,563 --> 00:32:35,403
+Actually, in R3, these vectors can be given as...
+
+140
+00:32:35,403 --> 00:32:39,903
+We can give these vectors like this.
+
+141
+00:32:39,903 --> 00:32:44,403
+V1 as 1, 2, 1.
+
+142
+00:32:44,403 --> 00:32:49,403
+V2, 1, 0, 2.
+
+143
+00:32:49,403 --> 00:32:54,403
+And V3 as 1, 1, 0.
+
+144
+00:32:54,403 --> 00:33:04,403
+We can give the vectors in R3 like this or like as a column matrix.
+
+145
+00:33:04,403 --> 00:33:05,403
+Okay.
+
+146
+00:33:06,403 --> 00:33:15,403
+We have three vectors in R3 and we are looking for if the vector V is the linear combination of these three vectors.
+
+147
+00:33:15,403 --> 00:33:24,403
+So, we are looking for or if we can find the scaleless A1.
+
+148
+00:33:24,403 --> 00:33:25,403
+And we are looking for if the vector V1 is the same.
+
+149
+00:33:25,403 --> 00:33:37,403
+So, we are looking for if the vector V1 is the same.
+
+150
+00:33:28,180 --> 00:33:34,840
+A2 and A3, such that V is equal to
+
+151
+00:33:39,604 --> 00:33:55,163
+A1 times V1 plus A2 times V2 plus A3 times V3, then V is linear combination of V1, V2 and V3.
+
+152
+00:33:55,163 --> 00:34:01,804
+Okay, let us write all the vectors in their places.
+
+153
+00:34:02,683 --> 00:34:09,463
+So we have A1, V1, A2, V2, A3, V3 is equal to this vector.
+
+154
+00:34:10,324 --> 00:34:13,304
+So we have linear equation.
+
+155
+00:34:15,903 --> 00:34:23,284
+We must, we have to solve this linear equation and we know
+
+156
+00:34:23,284 --> 00:34:26,344
+how to solve a linear equation system.
+
+157
+00:34:32,820 --> 00:34:33,820
+Right the...
+
+158
+00:34:40,179 --> 00:35:00,519
+Augmented matris of this linear equation system, 1, 2, 1, 1, 0, 2, and 1, 1, 2, sorry, 1, 1, 0.
+
+159
+00:35:06,579 --> 00:35:11,099
+tersine, on the right side of the equation, 2, 1, 5.
+
+160
+00:35:19,956 --> 00:35:22,675
+Actually, this is V1.
+
+161
+00:35:23,816 --> 00:35:26,276
+This is V2 and this is V3.
+
+162
+00:35:29,175 --> 00:35:32,876
+And solving this linear equation system,
+
+163
+00:35:33,576 --> 00:35:40,675
+you will see that A1 is 1, A2 is 2 and A3 is negative 1.
+
+164
+00:35:42,456 --> 00:35:47,836
+So it means that V is a linear combination of the vectors V1, V2 and V3.
+
+165
+00:35:47,836 --> 00:36:02,476
+So V is equal to A times V1, A is 1, so V1 plus 2 times V2 and negative 1 times V3 or minus V3.
+
+166
+00:36:03,816 --> 00:36:06,476
+We can check if it is true or not.
+
+167
+00:36:06,476 --> 00:36:09,135
+Since V is 215,
+
+168
+00:36:09,135 --> 00:36:11,135
+We can check if it is true or not.
+
+169
+00:36:11,135 --> 00:36:35,135
+So V3 is a linear combination of the vectors V3.
+
+170
+00:36:17,108 --> 00:36:45,268
+1 times v1, v1 is 1, 2, 1, plus 2 times v2, 2, 0, 4, minus v3, 1, 1, 0, so 3, minus 1,
+
+171
+00:36:47,108 --> 00:36:55,528
+2, 2, minus 1, 1, and 1 plus 4, 5.
+
+172
+00:36:55,528 --> 00:36:57,888
+OK.
+
+173
+00:37:07,635 --> 00:37:12,635
+Now we will define the span and the spanning set of a vector space.
+
+174
+00:37:14,635 --> 00:37:23,635
+We have a set S consisting of the vectors of vector space V.
+
+175
+00:37:29,268 --> 00:37:43,708
+The set of all vectors in V that includes the linear combination of the vectors in S is denoted by span S or a set generated by S.
+
+176
+00:37:48,115 --> 00:38:02,795
+S, or the set generated by S is called the set of all linear combinations of the vectors of a vector space.
+
+177
+00:38:02,795 --> 00:38:07,456
+And we will call it later the spanning set of vector space.
+
+178
+00:38:08,516 --> 00:38:11,715
+Now consider S.
+
+179
+00:38:15,956 --> 00:38:20,195
+A sub-set of 2 by 3 matrices.
+
+180
+00:38:20,195 --> 00:38:23,716
+S includes 1, 2, 3, 4 vectors.
+
+181
+00:38:24,836 --> 00:38:31,716
+And this set is a sub-set of M2, 3.
+
+182
+00:38:32,996 --> 00:38:37,716
+The vector space of all matrices of size 2 by 3.
+
+183
+00:38:39,155 --> 00:38:42,675
+Now, what is span S?
+
+184
+00:38:42,675 --> 00:38:44,836
+Span S means
+
+185
+00:38:45,956 --> 00:38:50,115
+the set of all vectors in M2 by 3.
+
+186
+00:38:52,596 --> 00:38:56,356
+That are linear combinations of the vectors in S.
+
+187
+00:38:56,356 --> 00:39:07,876
+So, span S is equal to A times, say this is V1, V2, V3 and V4.
+
+188
+00:39:07,876 --> 00:39:16,036
+So, A times V1 plus, B times V2 plus, C times V3 plus, D times V4.
+
+189
+00:39:16,036 --> 00:39:30,036
+So, we have span S includes the matrices of the form AB00CD and ABCD are all three numbers.
+
+190
+00:39:45,043 --> 00:39:47,983
+This theorem is very, very, very important.
+
+191
+00:39:50,983 --> 00:39:52,983
+It says...
+
+192
+00:40:00,000 --> 00:40:06,119
+It says span s is the subspace of a vector space.
+
+193
+00:40:20,275 --> 00:40:25,715
+Span S is a subspace of a vector space.
+
+194
+00:40:26,295 --> 00:40:27,915
+This is very, very important.
+
+195
+00:40:28,475 --> 00:40:44,576
+You will see a question in the final exam related to this, or maybe the same property that says Span S is a subspace of a vector space.
+
+196
+00:40:44,975 --> 00:40:46,076
+So this is very important.
+
+197
+00:40:56,628 --> 00:41:04,408
+If span S is equal to the, sorry, sorry.
+
+198
+00:41:05,448 --> 00:41:13,408
+If every vector in a vector space V is a linear combination of the vectors in the set S,
+
+199
+00:41:14,488 --> 00:41:20,148
+then the set S is called the spinning set,
+
+200
+00:41:20,148 --> 00:41:28,968
+or V is spent or generated by the set S.
+
+201
+00:41:38,771 --> 00:41:43,672
+In this case, S is called the spanning set of V.
+
+202
+00:41:50,068 --> 00:41:51,768
+if span s
+
+203
+00:41:55,572 --> 00:42:04,692
+is equal to the whole vector space V, then S is
+
+204
+00:42:09,204 --> 00:42:10,104
+Mrs. Pink said,
+
+205
+00:42:16,724 --> 00:42:27,124
+Or, V is generated by, or spent by.
+
+206
+00:42:33,876 --> 00:42:35,876
+Bu önemli.
+
+207
+00:42:35,876 --> 00:42:41,876
+Now, look at the example.
+
+208
+00:42:41,876 --> 00:42:47,876
+In our cube, we have two vectors, v1 and v2.
+
+209
+00:42:47,876 --> 00:42:59,876
+We are looking for if the vector v belongs to the span or spanning set of v1 and v2.
+
+210
+00:43:12,692 --> 00:43:35,692
+So, it means that, it means that we are looking for scalars such that v is equal to a1 times v1 plus a2 times v2. If we can find the scalars...
+
+211
+00:43:38,996 --> 00:43:48,796
+a1 and a2, then we can conclude that the vector v belongs to span v1 and v2.
+
+212
+00:43:50,496 --> 00:44:05,796
+Writing the vectors in their places and solving the corresponding linear equation system, you will see that a1 is 2 and a2 is 3.
+
+213
+00:44:05,796 --> 00:44:11,796
+So it means that v belongs to span v1 and v2.
+
+214
+00:44:22,579 --> 00:44:52,559
+İzlal
+
+215
+00:45:36,052 --> 00:45:45,332
+P2, P2 is the set of all polynomials of degree 2 and equal to 2 with a 0 polynomial.
+
+216
+00:45:46,332 --> 00:46:03,052
+We have four vectors, we want to do before, and we are looking for if the vectors V is a linear combination of, or we are looking for,
+
+217
+00:46:03,052 --> 00:46:14,332
+whether vector V belongs to the span V1 to V4.
+
+218
+00:46:14,332 --> 00:46:19,332
+Determine, we do the vectors.
+
+219
+00:46:25,907 --> 00:46:26,907
+Oui,
+
+220
+00:46:28,407 --> 00:46:28,907
+Lüksonu
+
+221
+00:46:37,876 --> 00:46:44,676
+v1, v2, v3, v4.
+
+222
+00:46:47,156 --> 00:46:50,676
+So, if you can find scalars...
+
+223
+00:47:16,340 --> 00:47:24,980
+A1, A2, A3, A4, such that
+
+224
+00:47:32,052 --> 00:47:36,291
+V is equal to A1 plus B1 plus.
+
+225
+00:47:41,907 --> 00:47:49,947
+a2 v2 plus a3 v3 plus a4 v4.
+
+226
+00:47:50,947 --> 00:48:06,827
+If we can find the scalars a1 to a4 such that b is equal to the linear combination of these four vectors, then we can compute that this vector belongs to the span v1 to v4.
+
+227
+00:48:06,827 --> 00:48:14,147
+Okay, substituting for v1, v2, v3 and v4, we have
+
+228
+00:48:14,147 --> 00:48:18,107
+a1
+
+229
+00:48:18,107 --> 00:48:35,367
+v1 is 2t squared
+
+230
+00:48:30,164 --> 00:48:31,164
+vektör
+
+231
+00:48:49,876 --> 00:48:50,876
+vefos
+
+232
+00:49:01,715 --> 00:49:09,295
+V is equal to V. V is t squared plus t plus 2.
+
+233
+00:49:13,972 --> 00:49:20,372
+So, we have from here, 2A1.
+
+234
+00:49:30,452 --> 00:49:38,532
+2A1 plus A2 plus 5A3
+
+235
+00:49:43,476 --> 00:49:44,856
+Minus e4,
+
+236
+00:49:47,796 --> 00:49:49,175
+times tsker,
+
+237
+00:49:57,268 --> 00:49:57,987
+A1,
+
+238
+00:50:01,168 --> 00:50:02,447
+negative 2, A2.
+
+239
+00:50:06,643 --> 00:50:18,243
+And negative 5A3, negative 3A4, t.
+
+240
+00:50:22,579 --> 00:50:25,519
+Plus, constants.
+
+241
+00:50:29,811 --> 00:50:30,692
+2A1.
+
+242
+00:50:35,956 --> 00:50:48,836
+0 plus 2A3 minus 2A4 is equal to
+
+243
+00:51:01,940 --> 00:51:05,539
+t2 plus t plus 2.
+
+244
+00:51:06,900 --> 00:51:19,539
+Now, two polynomials agree for all values of t only if the coefficients
+
+245
+00:51:26,291 --> 00:51:31,052
+The coefficients of respective powers of t agree.
+
+246
+00:51:31,052 --> 00:51:34,251
+So, we have this linear system.
+
+247
+00:51:37,251 --> 00:51:46,251
+This has to be 1.
+
+248
+00:51:46,251 --> 00:51:50,132
+And this has to be 2.
+
+249
+00:51:54,963 --> 00:52:03,103
+2A1 plus A2 plus 5A3 minus A4 is equal to 1.
+
+250
+00:52:09,364 --> 00:52:10,043
+Eyvam.
+
+251
+00:52:15,572 --> 00:52:30,132
+Minus 2A2, minus 5A3, minus 3A4 is equal to 1. At the last one, 2A1,
+
+252
+00:52:36,500 --> 00:52:50,260
+plus 2A3 minus 2A4 is equal to 2. So, solving this linear equation system,
+
+253
+00:52:59,507 --> 00:53:04,627
+Ok, solving this linear equation system.
+
+254
+00:53:12,340 --> 00:53:18,140
+Then, we have this reduced row eşelon form of the augmented matrix.
+
+255
+00:53:18,940 --> 00:53:26,700
+So, from here, you see that the rank of the matrix CD is not equal to the rank of C.
+
+256
+00:53:27,260 --> 00:53:29,620
+So, this system is inconsistent.
+
+257
+00:53:30,480 --> 00:53:33,300
+It means that there is no solution.
+
+258
+00:53:34,300 --> 00:53:41,300
+So, V is not, V does not belong to the.
+
+259
+00:53:41,300 --> 00:53:43,880
+Spend, we want to do it for.
+
+260
+00:53:53,076 --> 00:53:53,436
+Okey?
+
+261
+00:54:13,876 --> 00:54:28,556
+So, in general, to determine whether a specific vector v belongs to the span s, we investigate the consistency of appropriate linear system.
+
+262
+00:54:31,436 --> 00:54:37,436
+We will continue with the example 200 after tamil spread.
+
+263
+01:09:07,220 --> 01:09:08,220
+Hello again.
+
+264
+01:09:10,220 --> 01:09:12,220
+Now look at the example 200.
+
+265
+01:09:13,820 --> 01:09:16,220
+V is a vector space R cube.
+
+266
+01:09:18,820 --> 01:09:21,220
+And we have three vectors V1 to V3.
+
+267
+01:09:23,020 --> 01:09:25,220
+And we are looking for,
+
+268
+01:09:26,820 --> 01:09:35,860
+we are looking for a vector V such that this vector is linear combination of these three vectors.
+
+269
+01:09:38,220 --> 01:09:39,220
+It means that
+
+270
+01:09:40,220 --> 01:09:41,220
+to find
+
+271
+01:09:44,220 --> 01:09:46,220
+the spinning set of V
+
+272
+01:09:46,220 --> 01:10:05,220
+V
+
+273
+01:09:50,484 --> 01:09:52,044
+We need to find
+
+274
+01:09:56,051 --> 01:09:59,431
+An arbitrary vektör in R3, say B.
+
+275
+01:10:03,859 --> 01:10:08,960
+such that V is the linear combination of these three vectors.
+
+276
+01:10:11,079 --> 01:10:17,119
+So, writing V1, V2, and V3 in their places,
+
+277
+01:10:18,639 --> 01:10:24,119
+we have this linear equation system and this system is consistent.
+
+278
+01:10:24,839 --> 01:10:33,159
+So, it means that the vectors V1, V2, and V3
+
+279
+01:10:33,159 --> 01:10:36,259
+are generated
+
+280
+01:10:36,259 --> 01:10:39,019
+or sorry,
+
+281
+01:10:39,559 --> 01:10:41,599
+the vectors V1, V2, and V3
+
+282
+01:10:41,599 --> 01:10:42,979
+generate
+
+283
+01:10:42,979 --> 01:10:45,819
+the whole vector space R3
+
+284
+01:10:45,819 --> 01:10:47,759
+or R3 is generated
+
+285
+01:10:47,759 --> 01:10:50,179
+by V1, V2, and V3.
+
+286
+01:10:50,179 --> 01:11:17,279
+or
+
+287
+01:11:01,876 --> 01:11:14,576
+As an another example, now we have the vector space P2, which is the vector space of all polynomials of degree 2 and smaller than 2 with a zero polynomial.
+
+288
+01:11:14,576 --> 01:11:19,195
+We have two vectors V1, V2.
+
+289
+01:11:19,195 --> 01:11:37,596
+Thus, V1 and V2 span all the vector space V. Or can we generate the whole vector space P2 by using V1 and V2?
+
+290
+01:11:37,596 --> 01:11:45,596
+So for this, take an arbitrary vector V in P2.
+
+291
+01:11:45,596 --> 01:11:50,596
+So we need to choose a polynomial of degree 2.
+
+292
+01:12:00,083 --> 01:12:10,224
+We are looking for the constants for scalars A1 and A2 such that A1 times V1 plus A2 times V2 is equal to V.
+
+293
+01:12:32,243 --> 01:12:32,783
+Y2.
+
+294
+01:12:44,307 --> 01:12:53,307
+Now we have two other definitions, linear independence and linear...
+
+295
+01:12:57,140 --> 01:13:05,140
+Vektor Spaces V
+
+296
+01:13:05,140 --> 01:13:07,140
+Vektor Spaces
+
+297
+01:13:07,140 --> 01:13:37,119
+Vektor Spaces V
+
+298
+01:13:18,484 --> 01:13:21,104
+If there exists
+
+299
+01:13:24,916 --> 01:13:27,996
+A1, A2 to the AK, cannot
+
+300
+01:14:37,108 --> 01:14:46,427
+Evet arkadaşlar, okulda, internette bir problem var. En son nerede kaldım bilmiyorum ama. Yani nerede gitti?
+
+301
+01:14:46,868 --> 01:14:51,148
+Lineer Independence'ı şey yapıyordunuz.
+
+302
+01:14:52,507 --> 01:14:53,828
+Onun tanımında mı kaldı?
+
+303
+01:14:54,148 --> 01:14:54,448
+Hı hı.
+
+304
+01:14:54,448 --> 01:14:55,208
+Tamam.
+
+305
+01:15:04,692 --> 01:15:15,011
+Lineer independence, and dependence of vectors, we have again a vector space V, and we have K vectors, V1 to VK.
+
+306
+01:15:15,011 --> 01:15:20,011
+We set this equation.
+
+307
+01:15:28,372 --> 01:15:44,712
+A1, V1 plus, A2, V2 plus, A3, V3, A, K, VK, is equal to zero.
+
+308
+01:15:44,712 --> 01:15:56,792
+If this equation hopes for constants A1 to the A, K, some of them are non-zero,
+
+309
+01:15:58,372 --> 01:16:02,592
+or at least one of them is non-zero, if
+
+310
+01:16:06,228 --> 01:16:08,228
+At least...
+
+311
+01:16:11,636 --> 01:16:19,396
+1 of say a i is not zero, then
+
+312
+01:16:22,836 --> 01:16:26,856
+V1 to the VK are, lineer dependents.
+
+313
+01:16:34,547 --> 01:16:35,967
+Lineer de tanıç, sorry.
+
+314
+01:16:45,108 --> 01:17:01,507
+If this equation holds for all a i r 0, then we want to be k r linearly independent.
+
+315
+01:17:07,060 --> 01:17:07,380
+Ok.
+
+316
+01:17:13,203 --> 01:17:20,243
+for the set that corresponds to the vectors or that includes these vectors we also say
+
+317
+01:17:20,243 --> 01:17:27,683
+a set is linearly dependent or linearly independent for linearly dependency or
+
+318
+01:17:27,683 --> 01:17:36,163
+independency we set this equation first and we are looking for the
+
+319
+01:17:36,163 --> 01:17:42,963
+corresponding linear system is consistent or inconsistent
+
+320
+01:17:45,923 --> 01:17:54,243
+then we will find these cicadas if all of them are zero then the vectors are linearly independent
+
+321
+01:17:54,963 --> 01:18:00,804
+if at least one of them is non-zero then
+
+322
+01:18:00,804 --> 01:18:05,443
+the vectors are linearly dependent
+
+323
+01:18:07,764 --> 01:18:15,683
+now let us check the vectors in r cube v1 to the v3 are linearly independent or dependent
+
+324
+01:18:17,523 --> 01:18:17,764
+so
+
+325
+01:18:20,243 --> 01:18:23,923
+a1 v1 plus a2
+
+326
+01:18:25,923 --> 01:18:26,884
+b2 plus
+
+327
+01:19:12,243 --> 01:19:16,783
+V3, V3 is equal to zero.
+
+328
+01:19:21,684 --> 01:19:29,684
+Yani, bir homogeniyse sistem ve bilgisayar sistemler hepimizin bir solucu var.
+
+329
+01:19:34,676 --> 01:19:47,936
+So, it concludes from here that if this homogenous system have only zero solution, then the vectors are linearly independent.
+
+330
+01:19:49,056 --> 01:19:55,876
+If it have infinitely many solutions, then the vectors are linearly dependent.
+
+331
+01:19:57,696 --> 01:20:01,536
+So, we have this.
+
+332
+01:20:14,579 --> 01:20:27,319
+We have this homogenous system, and solving this homogenous system, we put this augmented matrix into the reduced row eşelon form.
+
+333
+01:20:28,039 --> 01:20:37,159
+So, from here we see that this system has infinitely many solutions.
+
+334
+01:20:40,100 --> 01:20:44,319
+So, the vectors are linearly dependent.
+
+335
+01:20:44,579 --> 01:20:47,779
+Because we found that
+
+336
+01:20:51,828 --> 01:20:53,108
+A1
+
+337
+01:20:56,692 --> 01:21:13,591
+A2, A3. Since 4K is different from 0, we can find A1, A2, A3 are all non-zero, then it means that these vectors are linearly dependent.
+
+338
+01:21:18,612 --> 01:21:41,672
+Now, another example says, we have four vectors, sorry, three vectors in R to the 4. We can also give the vectors in R to the 4 as a row matrices or like this. It doesn't matter.
+
+339
+01:21:47,347 --> 01:21:54,868
+Now we are looking for if these three vectors are linearly dependent or linearly independent, we set the equation.
+
+340
+01:21:55,868 --> 01:22:13,747
+A1 v1 plus A2 v2 plus A3 v3 is equal to zero. And we have this homogenous system. Solving this homogenous system, we see that all A1, A2, A3 are zero.
+
+341
+01:22:13,747 --> 01:22:20,108
+So it means that it means that the vectors are linearly independent.
+
+342
+01:23:06,387 --> 01:23:08,387
+Look at the example.
+
+343
+01:23:09,827 --> 01:23:22,787
+We have three vectors in M22. M22 is vector space of all matrices of size 2 by 2.
+
+344
+01:23:24,867 --> 01:23:33,188
+And we want to show that if these three vectors are linearly dependent or independent.
+
+345
+01:23:33,188 --> 01:23:38,547
+So, for this again, we set the equation.
+
+346
+01:23:46,228 --> 01:23:55,788
+A1, V1 plus A2, V2 plus A3, V3 is equal to zero.
+
+347
+01:23:55,788 --> 01:23:57,948
+So,
+
+348
+01:24:03,155 --> 01:24:06,756
+A1, B1 is 2x2 matris.
+
+349
+01:24:26,899 --> 01:24:35,719
+0 means 0 vektör, so 0 vektör in M22 is 2 by 2, 0 matris.
+
+350
+01:24:39,283 --> 01:24:44,283
+So, from the equation of or equal to of matrisis, we have...
+
+351
+01:24:48,692 --> 01:24:49,572
+A1
+
+352
+01:24:55,572 --> 01:24:57,692
+2A1 plus A2
+
+353
+01:25:01,524 --> 01:25:07,524
+0, is equal to 0, and A1 plus...
+
+354
+01:25:11,507 --> 01:25:12,507
+4A2
+
+355
+01:25:19,636 --> 01:25:22,436
+Minus 383
+
+356
+01:25:26,931 --> 01:25:33,931
+0, vektör uzay,
+
+357
+01:25:53,716 --> 01:26:00,176
+entry 0, A2, minus 2A3, A3, is equal to zero.
+
+358
+01:26:00,655 --> 01:26:06,496
+So we have again, a homogenous system, and we have to solve this homogenous system.
+
+359
+01:26:10,100 --> 01:26:17,760
+Write the automatic matrix of this system, gives to 101.
+
+360
+01:26:21,492 --> 01:26:23,492
+1210
+
+361
+01:26:29,492 --> 01:26:38,032
+0, negatif 3, negatif 2, 1.
+
+362
+01:26:41,492 --> 01:26:45,212
+ve right-side of the equation is called 0.
+
+363
+01:26:49,395 --> 01:26:52,595
+Putting this matrix into the reduced row eşelon form.
+
+364
+01:26:55,699 --> 01:27:05,139
+We can interchange, we can put row4 as a row1.
+
+365
+01:27:09,939 --> 01:27:12,039
+Rho 3 as a Rho 2.
+
+366
+01:27:50,420 --> 01:28:01,640
+Bu, bu
+
+367
+01:28:12,020 --> 01:28:15,180
+0, 2,
+
+368
+01:28:17,420 --> 01:28:19,340
+negative 1, negative 4,
+
+369
+01:28:21,340 --> 01:28:21,900
+0.
+
+370
+01:28:22,820 --> 01:28:27,220
+Multiply this by negative 2 and add it to the row 4, we have 0,
+
+371
+01:28:28,620 --> 01:28:29,340
+1,
+
+372
+01:28:30,140 --> 01:28:31,060
+negative 2,
+
+373
+01:28:34,707 --> 01:28:38,567
+0, since this...
+
+374
+01:28:44,083 --> 01:28:54,083
+This row and this row are the same. If you multiply this by negative one and add it to this row, this all makes zero.
+
+375
+01:29:22,836 --> 01:29:36,615
+Oh, this is also, this is also the twice times rho2, so this is also zero, or we can make this also zero.
+
+376
+01:29:49,492 --> 01:30:05,832
+So from here we have a1 plus a3 is equal to 0 and a2 minus 2 a3.
+
+377
+01:30:12,595 --> 01:30:13,475
+Is Ciro?
+
+378
+01:30:18,836 --> 01:30:41,275
+If you say a3 as k, k is a green number, then the solution for this system is a1 is negative a3, so negative k, and a2 is 2a3, 2k, and k.
+
+379
+01:30:42,876 --> 01:30:45,756
+So this system has infinitely many solutions.
+
+380
+01:30:55,507 --> 01:31:00,667
+So, these vektörs are generally dependent.
+
+381
+01:31:06,644 --> 01:31:11,144
+since the system had infinitely many solutions.
+
+382
+01:31:11,144 --> 01:31:13,244
+OK.
+
+383
+01:31:13,244 --> 01:31:18,744
+So, vektörs are linearly dependent.
+
+384
+01:31:28,372 --> 01:31:57,092
+What about the vectors in P2? We have V1, V2 and V3. Again set A1, V1 plus A2, V2 plus A3, V3 is equal to zero polynomial. So A1, T2 plus C plus 2.
+
+385
+01:32:18,515 --> 01:32:20,515
+Yani 0.
+
+386
+01:32:20,515 --> 01:32:24,515
+Yani A1
+
+387
+01:32:24,515 --> 01:32:30,515
+plus 2A2
+
+388
+01:32:33,908 --> 01:32:55,748
+plus 3a3, t2 plus a1 plus a2 plus 2a3 times t plus the constants 2a1.
+
+389
+01:32:59,315 --> 01:33:00,595
+Plus A2.
+
+390
+01:33:04,275 --> 01:33:05,655
+2A3,
+
+391
+01:33:05,655 --> 01:33:09,036
+is equal to zero.
+
+392
+01:33:09,836 --> 01:33:10,036
+So,
+
+393
+01:33:11,315 --> 01:33:13,135
+A1 plus 2A2 plus
+
+394
+01:33:13,135 --> 01:33:15,055
+3A3 is zero.
+
+395
+01:33:21,427 --> 01:33:28,188
+This is zero, this is zero, and this is zero.
+
+396
+01:33:33,876 --> 01:33:36,115
+So, we have this homogenous system.
+
+397
+01:33:38,036 --> 01:33:47,235
+And solving this homogenous system, we will see that this system has infinitely many solutions.
+
+398
+01:33:47,235 --> 01:33:52,275
+Therefore, the vectors are linearly dependent.
+
+399
+01:33:58,804 --> 01:34:03,804
+Bu teorema çok önemli, çünkü bu teorema diyor ki,
+
+400
+01:34:09,043 --> 01:34:20,203
+We can determine the linear independence or dependence of vectors by using determinant.
+
+401
+01:34:21,644 --> 01:34:38,644
+But here it is important to note that we take n vectors and the vector space also must have the same number of vectors.
+
+402
+01:34:39,043 --> 01:34:43,884
+We will call these later base elements.
+
+403
+01:34:45,203 --> 01:34:50,483
+But now we take n vectors in R to the n.
+
+404
+01:34:51,943 --> 01:34:59,243
+So the number of unknowns is equal to the number of equations.
+
+405
+01:35:00,844 --> 01:35:03,783
+And we write the vectors.
+
+406
+01:35:07,475 --> 01:35:18,996
+as a columns or rows of a matrix. And if the determinant of this matrix is non zero, then
+
+407
+01:35:22,355 --> 01:35:26,195
+these vectors are linearly independent.
+
+408
+01:35:28,915 --> 01:35:29,235
+Okay.
+
+409
+01:35:34,195 --> 01:35:41,576
+Now, the set S includes one, two, three vectors.
+
+410
+01:35:48,307 --> 01:35:50,807
+ve çalışmaların arıcılık.
+
+411
+01:35:52,967 --> 01:35:56,328
+Eğer bu noktaların arıcılıkları ile ilgili birçok
+
+412
+01:35:56,328 --> 01:35:58,768
+arıcılıkları ile ilgili birçok
+
+413
+01:35:58,768 --> 01:36:01,568
+bu noktaların arıcılıkları ile ilgili
+
+414
+01:36:01,568 --> 01:36:15,307
+arıcılıkları ile ilgili birçok olarak
+
+415
+01:36:15,307 --> 01:36:25,307
+ve bu noktaların arıcılıkları ile ilgili birçok olarak
+
+416
+01:36:25,307 --> 01:36:44,307
+arıcılıkları ile ilgili birçok olarak
+
+417
+01:36:37,747 --> 01:36:40,207
+These conditions are very very important.
+
+418
+01:36:57,203 --> 01:37:15,243
+The theorem says, we have two subsets of a vector space, S1 and S2 are subsets, and we know that S1 is a subset of S2.
+
+419
+01:37:15,923 --> 01:37:20,823
+These are subsets of a vector space, say with.
+
+420
+01:37:20,823 --> 01:37:29,183
+Now, if I say the small one.
+
+421
+01:37:33,684 --> 01:37:35,684
+and the big one.
+
+422
+01:37:35,684 --> 01:37:36,684
+Okay.
+
+423
+01:37:36,684 --> 01:37:42,684
+If the small one is linearly dependent,
+
+424
+01:37:42,684 --> 01:37:46,684
+if the small one is linearly dependent,
+
+425
+01:37:46,684 --> 01:37:50,684
+the big one is also linearly dependent.
+
+426
+01:37:54,003 --> 01:37:59,163
+If small one is linearly dependent, so the big one is linearly dependent.
+
+427
+01:38:00,043 --> 01:38:08,663
+If the big one is linearly independent, so the small one is linearly independent.
+
+428
+01:38:08,823 --> 01:38:16,663
+So we can maybe write the big one is related to linearly independence.
+
+429
+01:38:23,988 --> 01:38:30,068
+And small one is related to dependence.
+
+430
+01:38:33,716 --> 01:38:38,016
+If the small one is linearly dependent, then the big one is also linearly dependent.
+
+431
+01:38:38,736 --> 01:38:45,756
+If the big one is linearly independent, then the small one is linearly independent.
+
+432
+01:38:52,404 --> 01:38:55,404
+Bu konuları da önemli bir konuları.
+
+433
+01:38:59,475 --> 01:39:10,475
+It says the set consists of only zero vector is linearly dependent.
+
+434
+01:39:10,475 --> 01:39:18,475
+Why? Because 5 times 0 is again 0.
+
+435
+01:39:18,475 --> 01:39:31,475
+But 5 is different from 0, therefore the vector 0 is linearly dependent.
+
+436
+01:39:31,475 --> 01:39:46,475
+And if a set S contains the 0 vector, then this set must be linearly dependent because
+
+437
+01:39:46,475 --> 01:39:54,475
+you can find a scalars different from 0 because we have a 0 vector like here.
+
+438
+01:39:54,475 --> 01:39:59,475
+5 is different from 0.
+
+439
+01:39:59,475 --> 01:40:09,475
+A set of vectors consisting of a single non-zero vectors is linearly independent.
+
+440
+01:40:09,475 --> 01:40:21,475
+For the vectors in a vector space, if any two of them are equal, then these vectors are linearly dependent.
+
+441
+01:40:21,475 --> 01:40:24,475
+5 is different from the vector space.
+
+442
+01:40:24,475 --> 01:40:27,475
+6 is different from the vector space.
+
+443
+01:40:27,475 --> 01:40:31,475
+7 is different from the vector space.
+
+444
+01:40:31,475 --> 01:40:35,475
+8 is different from the vector space.
+
+445
+01:40:35,475 --> 01:40:42,475
+9 is different from the vector space.
+
+446
+01:40:42,475 --> 01:40:43,475
+10 is different from the vector space.
+
+447
+01:40:26,739 --> 01:40:34,099
+If two of them are equal, then these vectors are linearly dependent.
+
+448
+01:40:43,028 --> 01:41:10,148
+And this theorem says, if you can find a vector, say vj, among these vectors v1 to vn, such that the vectors are, the vector is the linear combination of the preceding vectors, then these vectors are linearly dependent.
+
+449
+01:41:10,148 --> 01:41:28,868
+For example, in R3, take v1, v2, v3, and v4, we can easily see that v4 is the linear combination of these three vectors.
+
+450
+01:41:31,608 --> 01:41:36,368
+So, these vectors are linearly dependent.
+
+451
+01:41:51,060 --> 01:42:00,640
+Ok, today is enough. We will continue with basis and dimension next week. Do you have any questions, comments, or other things?
+
+452
+01:42:02,640 --> 01:42:03,900
+Arkadaşlar, so, so, amano.
+
+453
+01:42:18,452 --> 01:42:23,472
+Peki, yoksa bu notları yine ders duvarınıza yüklterim birazdan. Oradan ulaşabilirsiniz.
+
+454
+01:42:25,952 --> 01:42:28,632
+Haftaya görüşmek üzere arkadaşlar. Kendinize dikkat edin.

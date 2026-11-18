@@ -1,0 +1,2039 @@
+1
+00:00:32,692 --> 00:00:33,752
+Arkadaşlar, menele var.
+
+2
+00:00:46,164 --> 00:00:47,923
+Biraz geciktim, kusura bakmayın.
+
+3
+00:00:49,524 --> 00:00:51,124
+Ama niye geciktim, bir sorun.
+
+4
+00:00:53,984 --> 00:00:55,904
+Soruyor musunuz, neden geciktim?
+
+5
+00:00:59,347 --> 00:01:00,987
+Oralım hocam. Tövbe etsin.
+
+6
+00:01:01,548 --> 00:01:01,927
+Efendim?
+
+7
+00:01:04,328 --> 00:01:05,548
+Hocam ben şey sandım.
+
+8
+00:01:05,807 --> 00:01:07,227
+Sınıfta yayın açtınız da
+
+9
+00:01:07,227 --> 00:01:09,128
+bizi unuttunuz sandım. Bravo.
+
+10
+00:01:09,608 --> 00:01:10,807
+Kim o? Konuşan?
+
+11
+00:01:12,268 --> 00:01:12,947
+[öğrenci].
+
+12
+00:01:13,548 --> 00:01:15,268
+[öğrenci]. Öyle olmadı da şöyle
+
+13
+00:01:15,268 --> 00:01:16,168
+sınıfa gittim.
+
+14
+00:01:17,527 --> 00:01:19,287
+Yayını açacaktım oradan ama sınıfta
+
+15
+00:01:19,287 --> 00:01:21,507
+hiç kimse olmadığı için biraz bekledim.
+
+16
+00:01:23,128 --> 00:01:25,487
+Sonra dedim sınıfta şey olmasın.
+
+17
+00:01:25,668 --> 00:01:26,927
+Yani kendi kendime böyle
+
+18
+00:01:26,927 --> 00:01:29,807
+çok hoş bir şey olmadı.
+
+19
+00:01:29,888 --> 00:01:31,548
+Ofisime geldim. O yüzden böyle
+
+20
+00:01:31,548 --> 00:01:33,487
+geçittim. Kusura bakmayın. Yani sınıfa
+
+21
+00:01:33,487 --> 00:01:35,287
+gittim. Sonra geldim. Kimse yoktu.
+
+22
+00:01:36,628 --> 00:01:37,548
+Bu arada derse
+
+23
+00:01:37,548 --> 00:01:39,508
+yüz yüze gelmek isteyen
+
+24
+00:01:39,508 --> 00:01:40,287
+var mı aranızda?
+
+25
+00:01:44,052 --> 00:01:48,752
+Hocama ilerleyen haftalarda katılmayı düşünüyorum. Bu kaçışım vardı yoğundu.
+
+26
+00:01:49,072 --> 00:01:51,132
+Ne kadar ilerleyen haftalarda?
+
+27
+00:01:52,792 --> 00:01:54,432
+Hemen haftaya da olabilir.
+
+28
+00:01:58,516 --> 00:02:16,676
+Vize'den sonra diyor [öğrenci]'da. Peki. Yani şöyle, onu bir şeye oturtmamız lazım şundan dolayı. Şimdi ben oraya gidip, sınıf uzakta, o yüzden 15 dakikamız gitti. Neyse, bir derse başlayalım da sonra konuşuruz.
+
+29
+00:02:16,676 --> 00:02:36,415
+Şurada mail atarım size, derse katılmak isteyenler varsa bana geri dönüş yapsın diye. Ona göre, çünkü sınıfta yani online olarak yapmak çok şey değil. Masa küçük. Yani sınıfta yüz yüze de yapmam lazım. Hatta kamerayı açıp belki tahtaya döndürmem lazım falan. Her neyse.
+
+30
+00:02:38,695 --> 00:02:40,896
+[öğrenci] haftaya katılmayı düşünüyormuş.
+
+31
+00:02:44,692 --> 00:02:48,331
+Peki haftaya da bir sınıfa gideriz bakalım kimler gelmiş gelmemiş.
+
+32
+00:03:08,532 --> 00:03:11,772
+Okay, let us continue to linear equation systems.
+
+33
+00:03:11,772 --> 00:03:13,772
+Last week...
+
+34
+00:03:18,099 --> 00:03:28,639
+We gain linear equations with m-equation in each n unknowns, and we represent these linear equations by a matrix.
+
+35
+00:03:41,364 --> 00:03:57,364
+Actually, a linear location of M equations in N unknowns is given by these M equations in each N unknowns.
+
+36
+00:04:01,651 --> 00:04:09,512
+In this system, a11, a12, a1n, and all a's are coefficients.
+
+37
+00:04:10,151 --> 00:04:12,091
+And we know these coefficients.
+
+38
+00:04:13,512 --> 00:04:15,731
+x1 to the xn are unknowns.
+
+39
+00:04:15,731 --> 00:04:21,252
+And we want to know or we want to solve these linear equations.
+
+40
+00:04:21,611 --> 00:04:27,192
+Means we want to know what are x1 to the xn.
+
+41
+00:04:27,551 --> 00:04:29,572
+Also we know b1 to the bn.
+
+42
+00:04:29,572 --> 00:04:36,111
+If you have this linear equation system, we can write this system by using matrices.
+
+43
+00:04:37,111 --> 00:04:40,831
+A times x is equal to b.
+
+44
+00:04:41,271 --> 00:04:46,291
+Here, a is called the coefficient matrix of the linear system.
+
+45
+00:04:47,052 --> 00:04:49,491
+x is the matrix of unknowns.
+
+46
+00:04:49,911 --> 00:04:56,991
+And b is the matrix that consists of the entries on the right side of the equation.
+
+47
+00:04:59,572 --> 00:05:10,331
+And to solve this linear equation system, we form the automatic matrix of this system.
+
+48
+00:05:10,331 --> 00:05:19,692
+Altman matrix means we join the matrix b on the right side of the coefficient matrix.
+
+49
+00:05:19,692 --> 00:05:27,371
+And this is called the automatic matrix of the linear system.
+
+50
+00:05:27,371 --> 00:05:46,911
+And this is called the matrix of the linear system.
+
+51
+00:05:42,963 --> 00:05:54,124
+Then, by using elemental row operations, we put these matrix into the row echelon form or reduced row echelon form.
+
+52
+00:06:06,740 --> 00:06:22,860
+We conclude if the rank of the matrix C, which we obtained by using elemental robotations or which is equivalent to the matrix A,
+
+53
+00:06:23,939 --> 00:06:33,699
+if the rank of C is equal to the rank of CD, then we say that this linear system is consistent.
+
+54
+00:06:33,699 --> 00:06:37,699
+Consistent means it has a solution.
+
+55
+00:06:38,300 --> 00:06:50,980
+If the rank of C is not equal to rank of CD, then we cannot find the unknowns X1 to the Xn means the system is inconsistent or there is no solution.
+
+56
+00:06:52,439 --> 00:07:00,939
+In the case where the rank of C is equal to rank of CD, say the rank is R, then we have two cases.
+
+57
+00:07:00,939 --> 00:07:04,439
+In this case, the system is consistent.
+
+58
+00:07:05,740 --> 00:07:12,220
+And if the rank is equal to the number of unknowns, then the system has a unique solution.
+
+59
+00:07:12,220 --> 00:07:25,700
+If the rank is smaller than the number of unknowns, then we have infinite solutions with respect to the M minus R arbitrary variables.
+
+60
+00:07:25,700 --> 00:07:34,660
+And this is called the Gauss-Jordan reduction or Gauss-Jordan elimination.
+
+61
+00:07:34,660 --> 00:07:41,700
+Or in some books, it's called solving linear systems via the equivalent matrices.
+
+62
+00:07:41,700 --> 00:07:58,700
+And this is called the Gauss-Jordan elimination.
+
+63
+00:07:46,291 --> 00:07:47,851
+Now, look at the examples.
+
+64
+00:08:29,459 --> 00:08:37,539
+We want to solve this linear equation system, means find x, y, and z.
+
+65
+00:08:48,052 --> 00:08:50,272
+There are three animals.
+
+66
+00:08:53,844 --> 00:09:03,844
+X, Y, Z ve 1, 2, 3 eşitliği var.
+
+67
+00:09:12,275 --> 00:09:20,515
+So, first of all, we have to form the augmented matrix of this linear equation system.
+
+68
+00:09:33,299 --> 00:09:48,259
+Ağugmented matrix consists of the coefficient matrix of the system with the matrix on the right side of the linear equation system.
+
+69
+00:09:48,259 --> 00:09:56,459
+So, now what is the coefficient matrix of this system?
+
+70
+00:10:01,427 --> 00:10:08,427
+Öncelikle, be careful to write the coefficients in the correct order.
+
+71
+00:10:08,427 --> 00:10:19,427
+I mean, write the coefficients of x on the first column, write the coefficients of y on the second column,
+
+72
+00:10:19,427 --> 00:10:27,427
+and write the coefficients of z on the last column of the coefficient vectors.
+
+73
+00:10:31,539 --> 00:10:56,259
+So, what are the coefficients of x? 1, 2, 3. And the coefficients of y? 2, negative 1.
+
+74
+00:10:56,259 --> 00:11:13,559
+And there is no y on the third equation, so the coefficients of y is 0, and z 3, 1, negative 1.
+
+75
+00:11:13,559 --> 00:11:28,299
+And join the matrix, the color matrix B on the right side, which is 9, 8, 3.
+
+76
+00:11:28,299 --> 00:11:29,399
+Now,
+
+77
+00:11:33,524 --> 00:11:44,583
+We form the augmented matrix. By using elementary row operations, we will put this matrix into the row eşelon form or previous row eşelon form.
+
+78
+00:11:46,604 --> 00:11:53,823
+We have one here, so we have leaning one here. We want to make two and three zero.
+
+79
+00:11:53,823 --> 00:12:06,584
+So we have to multiply row one by negative two and add it to the second row.
+
+80
+00:12:08,724 --> 00:12:19,923
+To make three zero, we multiply one by negative three and add it to the row three.
+
+81
+00:12:26,803 --> 00:12:50,144
+1, 2, 3, 9, now, negative 2 plus 2, 0, negative 4, negative 5, negative 6, negative 5, negative 18, negative 10.
+
+82
+00:12:54,388 --> 00:12:57,888
+0, negative 6.
+
+83
+00:13:02,323 --> 00:13:03,323
+Negative 10
+
+84
+00:13:11,187 --> 00:13:12,567
+Negative 24.
+
+85
+00:13:23,124 --> 00:13:30,644
+To make negative 5, 1, actually we can multiply rho 2 by negative 1 over 5.
+
+86
+00:13:54,323 --> 00:13:58,423
+Rote 2, bölge 1 over 5.
+
+87
+00:14:02,292 --> 00:14:04,892
+And also, okay.
+
+88
+00:14:10,292 --> 00:14:13,192
+1, 2, 3
+
+89
+00:14:24,340 --> 00:14:38,840
+0, 1, 1, 2, 0, negative 6, negative 10, negative 24.
+
+90
+00:14:46,292 --> 00:15:10,772
+Now we have reading one on row one. We have reading one in row two. Now we want to make this zero and this one. Okay. So we have to multiply one bit six.
+
+91
+00:15:16,947 --> 00:15:21,587
+Multipline, grow two by six.
+
+92
+00:15:26,740 --> 00:15:37,580
+ve ekranı
+
+93
+00:15:41,491 --> 00:16:03,491
+9, 0, 1, 1, 2, 0, 0, negative 4, ve multiply this by 6, so negative 12.
+
+94
+00:16:08,947 --> 00:16:13,947
+Now to make this 0, multiply rule 3 by negative 1 over 4.
+
+95
+00:16:56,563 --> 00:17:01,123
+This matrix is in row eşelon form.
+
+96
+00:17:05,715 --> 00:17:11,435
+Looking at the row echelon form of a matris, we can talk about its rank.
+
+97
+00:17:12,775 --> 00:17:20,255
+Now, this matris is in row echelon form.
+
+98
+00:17:30,804 --> 00:17:36,584
+This is matrix C and this is D.
+
+99
+00:17:39,304 --> 00:17:41,844
+What is the rank of C?
+
+100
+00:17:48,948 --> 00:17:49,948
+Wat is er enkel C?
+
+101
+00:17:55,476 --> 00:17:58,956
+3, çünkü matris C,
+
+102
+00:18:00,596 --> 00:18:02,316
+which is in a row eşelon form,
+
+103
+00:18:02,956 --> 00:18:05,796
+there are 3 non-zero rows,
+
+104
+00:18:05,996 --> 00:18:07,436
+so the rank is 3.
+
+105
+00:18:07,716 --> 00:18:08,676
+Thank you [öğrenci].
+
+106
+00:18:10,356 --> 00:18:13,756
+And also, in the matris CD,
+
+107
+00:18:14,436 --> 00:18:15,436
+the whole matris,
+
+108
+00:18:21,428 --> 00:18:23,888
+The rank is again 3.
+
+109
+00:18:26,568 --> 00:18:29,908
+So, it means that the system is
+
+110
+00:18:34,355 --> 00:18:35,415
+Consistent
+
+111
+00:18:40,819 --> 00:18:44,059
+Consistent means there is a solution.
+
+112
+00:18:56,147 --> 00:19:01,947
+And if we have a solution, we have two subcases.
+
+113
+00:19:03,987 --> 00:19:05,907
+This is R.
+
+114
+00:19:06,927 --> 00:19:13,467
+Since R is equal to N, N is the number of unknowns.
+
+115
+00:19:15,967 --> 00:19:16,807
+So,
+
+116
+00:19:21,268 --> 00:19:23,827
+There is a unique solution.
+
+117
+00:19:33,811 --> 00:19:45,531
+So, it means that we can find the unknowns x, y, and z, and these are units.
+
+118
+00:19:46,931 --> 00:19:57,911
+This linear equation system holds for only one values of x, one values of y, and one values of z.
+
+119
+00:19:57,911 --> 00:20:15,871
+And to find x, y, and z, actually, we can use this row echelon form, or, since these are the coefficients of x, y, and z,
+
+120
+00:20:28,435 --> 00:20:29,375
+Siskold
+
+121
+00:20:34,771 --> 00:20:42,611
+Gauss eliminasyonu, the name of the method is not important, but it's called Gauss elimination.
+
+122
+00:20:53,907 --> 00:20:55,907
+Blue back substitution.
+
+123
+00:21:05,491 --> 00:21:06,731
+En roll echelon form.
+
+124
+00:21:16,019 --> 00:21:22,339
+It means, look at the row eşelon form, we have x times 0 plus
+
+125
+00:21:26,644 --> 00:21:35,763
+y times 0 plus z times 1 is equal to 3.
+
+126
+00:21:36,544 --> 00:21:41,983
+So it follows from here that z is 3.
+
+127
+00:21:43,104 --> 00:21:44,864
+And look at the second row.
+
+128
+00:21:51,635 --> 00:22:05,036
+We have y plus x times 0 plus y times 1 plus z times 1 is equal to 2.
+
+129
+00:22:08,564 --> 00:22:20,804
+Y plus Z is equal to 2. We have already known Z is 3. So Y is negative 1.
+
+130
+00:22:24,044 --> 00:22:26,403
+You write this by using row 2.
+
+131
+00:22:32,500 --> 00:22:43,059
+And look at the rule one. We have x times one plus two times y plus three times z.
+
+132
+00:23:10,579 --> 00:23:15,579
+vektör
+
+133
+00:23:14,867 --> 00:23:17,867
+Y'e negatif 1,
+
+134
+00:23:17,867 --> 00:23:20,867
+x-2
+
+135
+00:23:20,867 --> 00:23:22,867
+plus 9
+
+136
+00:23:22,867 --> 00:23:24,867
+is equal to 9
+
+137
+00:23:24,867 --> 00:23:26,867
+means
+
+138
+00:23:26,867 --> 00:23:28,867
+x is 2.
+
+139
+00:23:30,867 --> 00:23:34,867
+We write this by row 1.
+
+140
+00:23:36,867 --> 00:23:39,867
+So we have all the unknowns.
+
+141
+00:23:39,867 --> 00:23:42,867
+It means that the solution for the system
+
+142
+00:23:49,044 --> 00:23:59,684
+x is 2, y is negative 1, and z is 3.
+
+143
+00:24:01,764 --> 00:24:12,484
+This is called Gauss elimination and we can put this matrix into the reduced roll echelon form.
+
+144
+00:24:24,948 --> 00:24:26,008
+Anto, 3 line.
+
+145
+00:24:53,332 --> 00:24:53,852
+Suri.
+
+146
+00:25:03,635 --> 00:25:11,796
+To put this matrix into the reduced row echelon form, we can find the solution directly.
+
+147
+00:25:14,276 --> 00:25:19,796
+So, multiply row 2 by negative 2 and add it to the row 1.
+
+148
+00:25:27,251 --> 00:25:28,011
+Evet.
+
+149
+00:25:32,211 --> 00:25:33,211
+Okay.
+
+150
+00:25:35,571 --> 00:25:40,211
+So, we have 1, 0, 1,
+
+151
+00:25:42,211 --> 00:25:46,811
+b-mattı type is y-2, negative 4, 5,
+
+152
+00:25:49,412 --> 00:25:51,412
+0, 1, 1, 2,
+
+153
+00:25:53,412 --> 00:25:59,811
+0, 0, 1. Now, we have to make this and this 0.
+
+154
+00:26:03,508 --> 00:26:07,988
+Bu, this, multiply rho 3 by negative 1.
+
+155
+00:26:12,147 --> 00:26:17,107
+add it to the row 2 and row 1.
+
+156
+00:26:30,355 --> 00:26:55,756
+So we have 1, 0, 0, we must define negative 1, so we have 2, we have 1, 0, 1, 0, negative 1, 0, 0, 1, 3.
+
+157
+00:26:55,756 --> 00:27:06,476
+So it follows from here that x is 2.
+
+158
+00:27:15,092 --> 00:27:17,012
+y is negative 1
+
+159
+00:27:17,012 --> 00:27:20,392
+and
+
+160
+00:27:23,892 --> 00:27:24,912
+Z is
+
+161
+00:27:29,076 --> 00:27:29,496
+3
+
+162
+00:27:48,115 --> 00:28:00,915
+Okay, and this is called Gauss-Jordan reduction. Name is not important, but if you put the matrix in reduced-to-eventil form, then it is called
+
+163
+00:28:04,403 --> 00:28:05,844
+Gauss, Jordan Reduction.
+
+164
+00:28:15,604 --> 00:28:29,104
+Is it okay? Any questions? Comments? Clear hocam. Is it clear? Yes.
+
+165
+00:28:33,523 --> 00:28:38,083
+So we have found that x is 2, y is negative 1 and z is 3.
+
+166
+00:28:39,923 --> 00:28:41,343
+We get to the another example.
+
+167
+00:28:43,543 --> 00:28:44,923
+So the unit system.
+
+168
+00:28:48,103 --> 00:28:52,263
+So we have to form the augmented matrix.
+
+169
+00:28:53,683 --> 00:28:59,163
+The coefficient matrix is, the matrix A is the coefficient matrix.
+
+170
+00:28:59,163 --> 00:29:15,483
+1, 1, 2, there is no x on the second row, so 0, 2, 7, and 3, 3, 6.
+
+171
+00:29:20,403 --> 00:29:37,064
+This is the coefficient matrix, joining the matrix, columnatrix B on the right side, we have the augmented matrix, and using elemental row operations, put this matrix into the reduced row echelon form.
+
+172
+00:29:37,064 --> 00:29:56,483
+Actually, you can easily see from here that if you multiply row 1 by 3, we have, this is, sorry, negative 3, we have 0, 0, 0, 0.
+
+173
+00:29:59,483 --> 00:30:03,084
+And multiplying row 2 by 1 over 2.
+
+174
+00:30:20,915 --> 00:30:24,235
+Bu, eşelon form of this matrix is this one.
+
+175
+00:30:25,855 --> 00:30:30,915
+So, what can we say about the solution?
+
+176
+00:30:32,915 --> 00:30:34,836
+What is the rank of C?
+
+177
+00:30:43,347 --> 00:30:44,347
+2.
+
+178
+00:30:46,347 --> 00:30:48,347
+And what about rank of CD?
+
+179
+00:30:51,347 --> 00:30:53,347
+It is still 2.
+
+180
+00:30:57,748 --> 00:31:01,307
+Bu yüzden sistem sistem sisteminde de bir şekilde
+
+181
+00:31:01,988 --> 00:31:03,548
+Ama şimdi,
+
+182
+00:31:03,548 --> 00:31:04,988
+bu renk
+
+183
+00:31:04,988 --> 00:31:08,748
+daha küçük
+
+184
+00:31:08,748 --> 00:31:10,748
+anlonslar.
+
+185
+00:31:14,036 --> 00:31:25,196
+Since n is 3, there are 3 unknowns, x, y, and z, which is greater than rank, which is 2.
+
+186
+00:31:25,196 --> 00:31:27,196
+There are...
+
+187
+00:31:33,556 --> 00:31:34,956
+Infiniti-mini solutions.
+
+188
+00:31:44,307 --> 00:31:45,587
+With respect to
+
+189
+00:31:51,700 --> 00:31:56,539
+3 minus 2, 1 variable.
+
+190
+00:32:07,059 --> 00:32:21,059
+Okay, now the reduced row eşelon form of the matrix is like this. So from here, you see that Z is free.
+
+191
+00:32:24,788 --> 00:32:42,788
+Because x minus 3 over 2 z is equal to negative 1. And from second row, we have y plus...
+
+192
+00:32:45,683 --> 00:32:48,183
+7 over 2, z is 2.
+
+193
+00:32:58,708 --> 00:33:12,108
+Z is free, and the other solutions, X and Y, depends on the values of Z. So we say Z is any real number, say T.
+
+194
+00:33:15,988 --> 00:33:29,388
+So, it follows from here that y is equal to 2 minus 7 over 2 t.
+
+195
+00:33:31,388 --> 00:33:36,188
+So, it is 4.
+
+196
+00:33:49,556 --> 00:33:57,556
+Y is 2 minus 7 over t, and z is...
+
+197
+00:34:03,763 --> 00:34:24,003
+Z is, sorry, X is, I'm sorry, X is 3 over 2 t, 3 over 2 t, minus 1, and Z is t.
+
+198
+00:34:24,003 --> 00:34:41,563
+Actually, to make this and this more, X and Y more easier, we can take T s, T s, 2 k, or 2 t.
+
+199
+00:34:49,940 --> 00:35:07,940
+If we take Z as 2t, then y is equal to 2 minus 5t. And this is...
+
+200
+00:35:13,172 --> 00:35:21,592
+3t-1, and z is 2t, where t is alien number.
+
+201
+00:35:21,592 --> 00:35:23,751
+Okay.
+
+202
+00:35:28,371 --> 00:35:46,891
+You can write like this or you can take Zs2t. These are the same. So there are infinitely many solutions because the solutions are depends on the values of R. R is any real numbers.
+
+203
+00:35:51,027 --> 00:36:19,107
+Now, for this linear system, we have the automatic matrix, we put this matrix into the reduced rotation form, and we have the matrix CD like this. And since the rank of the matrix C is 2, but the rank of the matrix CD is 3, it means that this system is inconsistent,
+
+204
+00:36:19,107 --> 00:36:26,067
+so there is no solution. You can also see there is no solution from row 3, because
+
+205
+00:36:26,067 --> 00:36:30,627
+this is the coefficient x, this is y,
+
+206
+00:36:33,187 --> 00:36:35,467
+x times 0 plus
+
+207
+00:36:35,467 --> 00:36:39,087
+y times 0
+
+208
+00:36:39,087 --> 00:37:02,047
+x
+
+209
+00:36:44,884 --> 00:36:52,884
+is equal to 11, can never be satisfied for this system is inconsistent.
+
+210
+00:36:52,884 --> 00:36:55,043
+OK.
+
+211
+00:37:09,460 --> 00:37:16,659
+Ok, let us continue with homogeneal systems after 8 minutes break. We will continue at 2.
+
+212
+00:48:35,603 --> 00:49:04,223
+Hello again. Now, we will talk about homogenous systems. Now we know that for homogenous system, the numbers on the right side of the equations are all zero. So we have the augmented matrix, sorry, yes, the augmented matrix of this linear system, homogenous system is like this, a zero.
+
+213
+00:49:04,223 --> 00:49:32,023
+When we put this matrix into the row echelon or reduced row echelon form, we have a matrix C0. So it follows from here that for homogenous systems, since we always have the rank C is equal to rank C0, homogenous system always has a solution.
+
+214
+00:49:37,715 --> 00:49:42,635
+If rank is equal to number of unknowns,
+
+215
+00:49:49,300 --> 00:49:57,300
+Then the system has only zero solution, or we call this solution as a trivial solution.
+
+216
+00:49:59,700 --> 00:50:09,300
+If rank is smaller than n, then the homogeneous system has non-trivial solution.
+
+217
+00:50:14,867 --> 00:50:15,248
+Ok.
+
+218
+00:50:19,635 --> 00:50:30,635
+Actually, we can note from here that if the determinant of...
+
+219
+00:50:33,972 --> 00:50:41,972
+Coefficient Matrix of the homogenous system is non-zero.
+
+220
+00:50:49,204 --> 00:50:54,284
+If the determinant of the coefficient matrix of the system
+
+221
+00:51:01,972 --> 00:51:08,852
+is not zero and it means that it means that the matrix a
+
+222
+00:51:11,972 --> 00:51:21,172
+has the full rank or the rank of the matrix a is n so
+
+223
+00:51:21,172 --> 00:51:32,292
+to find for a homogeneous system if it has a trivial solution or non-trivial solution
+
+224
+00:51:33,812 --> 00:51:37,092
+you can look at the determinant of the coefficient matrix
+
+225
+00:51:39,972 --> 00:51:49,572
+and if the terminal of a is zero then it means that the rank of a is smaller than
+
+226
+00:51:49,572 --> 00:52:11,572
+the number of unknowns therefore the homogeneous system have infinitely many solutions okay
+
+227
+00:52:08,211 --> 00:52:09,572
+Arkadaşlar bakın bu önemli.
+
+228
+00:52:11,231 --> 00:52:23,152
+Homojen sistemlerde determinanta bakarak sistemin tek çözümünün yani sıfır çözümünün ya da sonsuz çözümünün olmadığına bakabiliyorsunuz, söyleyebiliyorsunuz.
+
+229
+00:52:23,931 --> 00:52:25,472
+Tamam mı? Bu önemli yani. Yazın şöyle.
+
+230
+00:52:25,472 --> 00:52:55,451
+Bakın bu örneği gibi.
+
+231
+00:52:55,472 --> 00:52:57,751
+Which is equal to the number of unknowns.
+
+232
+00:53:01,715 --> 00:53:10,695
+Then the system has only unique solution, or trivial solution, or zero solution. X, Y, Z are all zero.
+
+233
+00:53:14,996 --> 00:53:40,296
+This theorem is also very important. It says, if you have a Hobogini system of M linear equations in N unknowns, then this system has infinitely many solutions or non-trivial solution if the number of the equations is smaller than the number of unknowns.
+
+234
+00:53:45,235 --> 00:53:45,596
+Ok.
+
+235
+00:53:55,219 --> 00:54:08,419
+Now we give another method for solving equation systems, but this method used only for
+
+236
+00:54:17,940 --> 00:54:19,179
+N-equations
+
+237
+00:54:19,179 --> 00:54:23,260
+N-unknones
+
+238
+00:54:30,164 --> 00:54:40,364
+ve özellikler için, kremestrol olarak, denemiyizde, vekocent matrixı, bir zeyden.
+
+239
+00:54:45,172 --> 00:54:53,172
+We have an equations with an unknowns. We set
+
+240
+00:54:56,083 --> 00:54:58,884
+A times x is equal to b.
+
+241
+00:55:00,683 --> 00:55:05,844
+If the determinant of the coefficient matrix, which is A,
+
+242
+00:55:09,972 --> 00:55:37,132
+is non-zero, then the system has the unique solution and we can find the unknowns x1 to the xn using the determinant of a and determinant of a i. Here, for example, a1 is the matrix
+
+243
+00:55:39,972 --> 00:55:53,412
+we interchange or replace the first column of the matrix a, coefficient matrix a with the column matrix b.
+
+244
+00:55:55,572 --> 00:56:00,772
+To find x2, we interchange
+
+245
+00:56:02,612 --> 00:56:09,252
+column 2 with column matrix b and find its determinant.
+
+246
+00:56:09,972 --> 00:56:11,492
+okay.
+
+247
+00:56:15,284 --> 00:56:24,804
+Actually, we can also find or solve the linear system by N equations in N-unmose using Gauss-Jordan reduction.
+
+248
+00:56:26,364 --> 00:56:28,324
+But this is another method.
+
+249
+00:56:28,864 --> 00:56:33,084
+It is important for you to know what is Kramas rule.
+
+250
+00:56:34,224 --> 00:56:38,443
+Because we will see it later in some questions.
+
+251
+00:56:38,443 --> 00:56:46,644
+It is not easy to find or put the matrix in row-assion or reduced row-assion.
+
+252
+00:56:47,244 --> 00:56:56,564
+Now, we have the linear system which has 1, 2, 3 equations and x1, x2, x3, 3 unknowns.
+
+253
+00:56:57,084 --> 00:57:02,884
+So, we can solve this system by using Kramas rule.
+
+254
+00:57:02,884 --> 00:57:08,644
+But first of all, we have to check if the determinant of the coefficient matrix is non-zero.
+
+255
+00:57:09,804 --> 00:57:14,943
+The coefficient matrix is negative 2, 3, negative 1 and so on.
+
+256
+00:57:15,003 --> 00:57:16,644
+So, the determinant is negative 2.
+
+257
+00:57:17,463 --> 00:57:22,003
+So, we can solve this linear system by using Kramas rule.
+
+258
+00:57:22,003 --> 00:57:32,403
+And x1 is equal to determinant A1 over determinant A.
+
+259
+00:57:34,884 --> 00:57:38,403
+And what is the matrix A1?
+
+260
+00:57:40,084 --> 00:57:46,003
+A1 is the matrix that we interchange the first column of...
+
+261
+00:57:49,364 --> 00:58:16,043
+Matrix A by column matrix B. So, 1, 4, negative 3. And the remaining two columns are the same. 3, 2, negative 1, negative 1, negative 1, 1. And we have to find the determinant of this matrix.
+
+262
+00:58:34,420 --> 00:58:36,420
+And using rule of Sarus, we have to...
+
+263
+00:58:40,755 --> 00:58:46,675
+2 plus 9 plus 4
+
+264
+00:58:55,699 --> 00:59:03,179
+minus 6, minus 12, and minus 1.
+
+265
+00:59:04,859 --> 00:59:14,859
+So it is 15, minus 19, negative 4.
+
+266
+00:59:14,859 --> 00:59:26,019
+It means that x1 is negative 4 over, determinant a is negative 2, which is 2.
+
+267
+00:59:30,003 --> 00:59:46,563
+Okay. And also you can find x2 by calculating the determinant of a2, which we interchange column a by the metric to column matrix b.
+
+268
+00:59:50,579 --> 00:59:51,759
+Törmontov.
+
+269
+00:59:56,788 --> 01:00:11,068
+A2 is negative 6. At the, for the last unknown, which is X3, we interchange column 3 by the column matrix P.
+
+270
+01:00:15,891 --> 01:00:22,891
+vektör uzayları,
+
+271
+01:00:22,891 --> 01:00:24,891
+ok.
+
+272
+01:00:39,188 --> 01:01:00,688
+Kramers rule is applicable only to the case in which we have n equations in n-ammos, and the coefficient matrix A is non-singular, or the determinant of A is non-zero.
+
+273
+01:01:00,688 --> 01:01:11,468
+If you want to solve a linear system of n equations and n-ammos, but the coefficient matrix is singular,
+
+274
+01:01:14,048 --> 01:01:19,468
+then we must use Gauss elimination or Gauss selection matrix.
+
+275
+01:01:19,468 --> 01:01:35,168
+And for n is greater than 4, the Kramers rule is not efficient because we need to compute the determinant of the matrices, its size greater than 4 is not easy.
+
+276
+01:01:35,907 --> 01:01:47,387
+So, for the systems which have the size greater than 4, it is better to use the Gauss elimination or Gauss-Jordan reduction.
+
+277
+01:01:49,468 --> 01:01:50,468
+Okay.
+
+278
+01:02:03,027 --> 01:02:03,887
+It says
+
+279
+01:02:20,596 --> 01:02:26,576
+If we have an n by n matrix A, then it is five statements are equivalent.
+
+280
+01:02:27,976 --> 01:02:45,576
+If A is non-singular, non-singular means A is invertible, A has an inverse, then determinant A is non-zero, and A is low equivalent to the identity matrix,
+
+281
+01:02:45,576 --> 01:02:55,996
+and the homogenous system A x zero has only the trivial solution or zero solution,
+
+282
+01:02:57,335 --> 01:03:02,036
+and the linear system A x is equal to B has a unique solution.
+
+283
+01:03:03,755 --> 01:03:08,596
+These five statements are very, very, very important.
+
+284
+01:03:10,596 --> 01:03:11,275
+Okay.
+
+285
+01:03:31,411 --> 01:03:33,411
+Look at the 19.
+
+286
+01:03:36,211 --> 01:03:42,611
+For what values of A does the following linear system have a unique solution?
+
+287
+01:03:50,099 --> 01:03:56,259
+Actually, if you don't know this statement,
+
+288
+01:04:05,076 --> 01:04:11,655
+You try to put this matrix, the coefficient matrix, one, one.
+
+289
+01:04:17,076 --> 01:04:17,576
+1.
+
+290
+01:04:20,576 --> 01:04:21,076
+Okay.
+
+291
+01:04:21,635 --> 01:04:23,876
+What do you think about this question?
+
+292
+01:04:24,416 --> 01:04:25,596
+How can you solve this one?
+
+293
+01:04:29,523 --> 01:04:33,304
+For what release of A does the lineer system have a unique solution?
+
+294
+01:05:01,204 --> 01:05:02,744
+Evet, arkadaşlar, uyuyor musunuz yani?
+
+295
+01:05:13,139 --> 01:05:14,079
+Uyumaya marma.
+
+296
+01:05:21,811 --> 01:05:29,871
+Peki, nasıl çözersiniz bu soruyu, bu sınav sorusu? Sınavda çıktı böyle bir soru, ne yapacaksınız?
+
+297
+01:05:52,916 --> 01:05:53,436
+Ok.
+
+298
+01:05:58,452 --> 01:06:09,952
+This conclusion says, if the determinant of the coefficient matrix of a linear system is non-zero, then this system has a unique solution.
+
+299
+01:06:09,952 --> 01:06:33,852
+So, if only look at the determinant of the coefficient matrix of this linear system, which is 1, 1, negative 1, 1, 2, 1, 1, 1, h2 minus 5.
+
+300
+01:06:40,275 --> 01:06:46,855
+Eğer bu noktör konuları, bu noktör konuları, bu noktör konuları, ileride bir solution.
+
+301
+01:06:50,483 --> 01:06:58,563
+So, 2 times htr minus 5.
+
+302
+01:07:04,244 --> 01:07:05,364
+Plus 1,
+
+303
+01:07:06,644 --> 01:07:08,764
+minus 1,
+
+304
+01:07:09,764 --> 01:07:11,483
+plus 2,
+
+305
+01:07:20,148 --> 01:07:31,327
+Minus 2, minus 1, minus eşekar, minus 5.
+
+306
+01:07:54,675 --> 01:08:09,996
+We want, this is not equal to zero, so we have only one h2 minus five, is this zero, one, so
+
+307
+01:08:17,235 --> 01:08:26,195
+hkel is not equal to, first, a is not equal to,
+
+308
+01:08:29,555 --> 01:08:34,635
+Negative 2 or positive 2. So the correct answer is B.
+
+309
+01:08:36,735 --> 01:08:37,055
+Okay.
+
+310
+01:08:41,939 --> 01:08:42,559
+Oldu mu?
+
+311
+01:08:52,916 --> 01:08:53,916
+Peki.
+
+312
+01:08:55,916 --> 01:08:57,916
+What about equation 16?
+
+313
+01:08:58,916 --> 01:09:06,916
+We have a 4x4 matrix A with real entries and we know that A is invertible.
+
+314
+01:09:07,916 --> 01:09:10,916
+A is non-singular.
+
+315
+01:09:14,612 --> 01:09:15,332
+Vartabı.
+
+316
+01:09:19,699 --> 01:09:21,699
+4x4 matriks.
+
+317
+01:09:29,300 --> 01:09:33,800
+ve geçen bir şey, hepimizin gerçekleşmesi, ne düşünüyorsunuz?
+
+318
+01:09:44,115 --> 01:09:51,496
+We cannot say anything about the determinant of non-singular matrix.
+
+319
+01:09:58,612 --> 01:09:59,152
+So.
+
+320
+01:10:03,796 --> 01:10:10,036
+We know that if the determinant of a matrix is non-zero,
+
+321
+01:10:15,859 --> 01:10:17,859
+Then it is invertible.
+
+322
+01:10:20,259 --> 01:10:31,859
+And it has the food rank, so rank of a is equal to since this is 4 by 4, 4, so the correct answer is b.
+
+323
+01:10:57,876 --> 01:11:02,496
+If the rank of the matrix is 2, what is A?
+
+324
+01:11:19,859 --> 01:11:43,259
+Actually, you can put this matrix into the row echelon form, and you consider one of the rows is 0, and you can find A, but you also have the alternative definition for the rank of a matrix.
+
+325
+01:11:43,259 --> 01:11:53,960
+Since the rank is 2, and since the size of the matrix is 3 by 3, it follows from here that
+
+326
+01:11:57,395 --> 01:12:04,115
+Rank of this matrix is, sorry, the determinant of this matrix is zero.
+
+327
+01:12:14,739 --> 01:12:43,539
+Because if this determinant is non-zero, it means that the rank of the matrix is 3. Since the matrix rank of the matrix is 2, the size of the sub matrices of this matrix with non-zero determinant is 2. So it follows that, for example,
+
+328
+01:12:44,739 --> 01:13:13,659
+what is the rank of this matrix, sorry, determinant of this matrix? This is 1 plus 1, which is 2. So it is non-zero, so the rank is 2. But the determinant of 3 by 3 matrix, which is the same matrix, is 0. So find the determinant, which is A times 1 minus A.
+
+329
+01:13:14,739 --> 01:13:22,739
+minus 1 plus 2 plus 2 plus 2.
+
+330
+01:13:39,412 --> 01:13:59,332
+is zero. So we have a minus hcash plus four minus one minus a minus a is zero.
+
+331
+01:14:05,363 --> 01:14:13,243
+eşekar, minus a, plus 3.
+
+332
+01:14:23,764 --> 01:14:33,463
+Negative A to cash, minus A, plus 3, is 0.
+
+333
+01:14:37,811 --> 01:14:43,011
+I think I wrote something wrong here.
+
+334
+01:14:43,011 --> 01:14:45,811
+Or? Okay.
+
+335
+01:14:45,811 --> 01:14:49,811
+Yan parantezi açarken eksiği dağıtmıyor muhtum sonra.
+
+336
+01:14:51,811 --> 01:15:01,811
+This is negative one, positive one, positive a sorry, thank you.
+
+337
+01:15:01,811 --> 01:15:03,811
+So we have...
+
+338
+01:15:09,939 --> 01:15:16,039
+Or, h2r minus a minus 3 is equal to 0.
+
+339
+01:15:20,519 --> 01:15:24,099
+Hocam bir tane daha eksi birimizin olması lazım sanırım.
+
+340
+01:15:25,139 --> 01:15:26,399
+Tek arkadaşım dediği gibi.
+
+341
+01:15:27,719 --> 01:15:28,359
+Atladınız mı?
+
+342
+01:15:28,379 --> 01:15:29,059
+Şurada mı? Nerede?
+
+343
+01:15:30,539 --> 01:15:31,559
+Şurada mı unutmuşum?
+
+344
+01:15:31,559 --> 01:15:36,039
+4 eksi bir, bir tane de eksi bir olacak.
+
+345
+01:15:36,639 --> 01:15:37,079
+Şurada mı?
+
+346
+01:15:42,963 --> 01:15:46,604
+4-1, o-1 nereden gelişti? Şuradan geldi o, 4-1.
+
+347
+01:15:49,264 --> 01:15:52,384
+Onun sol tarafında da eksi 1 artı 4 var ya.
+
+348
+01:15:55,243 --> 01:15:56,583
+Şu doğrudan, şu yazdığımız.
+
+349
+01:15:58,724 --> 01:16:00,923
+A-A2
+
+350
+01:16:00,923 --> 01:16:04,123
+4
+
+351
+01:16:04,123 --> 01:16:06,423
+Plus 3
+
+352
+01:16:06,423 --> 01:16:07,583
+Minus 1
+
+353
+01:16:07,583 --> 01:16:10,644
+Plus A
+
+354
+01:16:10,644 --> 01:16:11,663
+Minus A
+
+355
+01:16:11,663 --> 01:16:12,663
+Is 0
+
+356
+01:16:12,663 --> 01:16:42,644
+So,
+
+357
+01:16:51,828 --> 01:16:52,428
+Oldu mu?
+
+358
+01:17:04,051 --> 01:17:04,891
+Okay, 10.
+
+359
+01:17:10,515 --> 01:17:13,076
+Find the solutions to the homogeneous system.
+
+360
+01:17:24,884 --> 01:17:27,884
+We have two equations.
+
+361
+01:17:32,532 --> 01:17:34,532
+3 unknowns.
+
+362
+01:17:34,532 --> 01:17:39,532
+So it follows from the fact that the homogenous system has
+
+363
+01:17:39,532 --> 01:17:42,532
+infinitely many solutions.
+
+364
+01:17:42,532 --> 01:17:49,532
+So this is incorrect.
+
+365
+01:17:49,532 --> 01:17:54,532
+Now let us find the solution for this system.
+
+366
+01:17:54,532 --> 01:18:00,532
+Write the Augmented Matrix.
+
+367
+01:18:20,083 --> 01:18:25,283
+Multiplying row 1 by negative 4, negative 2, we have
+
+368
+01:18:35,796 --> 01:18:41,376
+0, 8, negative 5,
+
+369
+01:18:54,036 --> 01:19:02,195
+İmdatı etisip ay, negatif 4, 8, negatif 5, positif 5.
+
+370
+01:19:10,707 --> 01:19:12,867
+Negative 28, negative.
+
+371
+01:19:17,108 --> 01:19:19,108
+18, 0.
+
+372
+01:19:26,547 --> 01:19:39,327
+We multiply this by negative 2. So 0, 4, 1, negative 4.
+
+373
+01:19:48,724 --> 01:19:50,824
+Hocam ben ne yapmadım burada ne yaptığımızı.
+
+374
+01:19:51,324 --> 01:19:51,644
+Nasıl?
+
+375
+01:19:52,684 --> 01:19:54,123
+Neyle neyi çarptığımızı anlamadım.
+
+376
+01:19:55,304 --> 01:19:56,144
+Birinci satıra.
+
+377
+01:20:02,387 --> 01:20:05,268
+Eksi 2 ile çarpıp 2'ye ekledik.
+
+378
+01:20:11,923 --> 01:20:25,243
+So, we can write actually here by using pek substitution or let us multiply first row by 1 over 4.
+
+379
+01:20:49,332 --> 01:21:01,012
+Now, we can use the back substitution since x3 is free, say x3 is equal to k.
+
+380
+01:21:01,012 --> 01:21:14,271
+So, x2 is equal to 4x3, which is 4 times k.
+
+381
+01:21:14,271 --> 01:21:39,352
+And from row 1, we have x1 minus 1 over 2x2, which is 2k plus 7 over 4k is equal to 0.
+
+382
+01:21:39,352 --> 01:21:47,192
+So, x1 is equal to negative, sorry, positive.
+
+383
+01:21:51,315 --> 01:21:52,315
+K over 4.
+
+384
+01:21:54,315 --> 01:21:59,836
+X2 is 2K, and X3 is K.
+
+385
+01:22:02,715 --> 01:22:09,235
+K is the real number, so what is the correct answer?
+
+386
+01:22:12,475 --> 01:22:19,275
+X1 K over 4, X2 4K, and X3 K, which is B.
+
+387
+01:22:33,684 --> 01:22:35,684
+Look at the equation line,
+
+388
+01:22:37,684 --> 01:22:44,684
+for which value of k, the linear system corresponding to the old mathematics is inconsistent?
+
+389
+01:22:58,195 --> 01:22:59,355
+So, what do you think?
+
+390
+01:23:12,692 --> 01:23:39,572
+Actually, in this equation, if you consider or if you want to find the determinant of the coefficient matrix and set is 0, then this does not work for this linear system because remember the Kramer's method.
+
+391
+01:23:39,572 --> 01:23:44,072
+We can only we can only.
+
+392
+01:23:44,072 --> 01:24:03,072
+Conclude if the terminal of the coefficient matrix is non zero, then it has the system has a unique solution for linear systems, not homogeneous systems for linear systems.
+
+393
+01:24:03,072 --> 01:24:11,072
+If the terminal of the coefficient matrix is zero, we cannot say anything about the solution.
+
+394
+01:24:11,072 --> 01:24:13,072
+So.
+
+395
+01:24:13,072 --> 01:24:24,072
+It means that we put we have to put this matrix into the relational form and look at its rank.
+
+396
+01:24:24,072 --> 01:24:31,072
+So we can interchange row one and two.
+
+397
+01:24:31,072 --> 01:24:32,072
+One.
+
+398
+01:24:32,072 --> 01:24:33,072
+Two.
+
+399
+01:24:33,072 --> 01:24:34,072
+Negative one.
+
+400
+01:24:34,072 --> 01:24:35,072
+One.
+
+401
+01:24:35,072 --> 01:24:36,072
+Two.
+
+402
+01:24:36,072 --> 01:24:37,072
+Negative one.
+
+403
+01:24:37,072 --> 01:24:38,072
+One.
+
+404
+01:24:38,072 --> 01:24:39,072
+Negative one.
+
+405
+01:24:39,072 --> 01:25:04,072
+One.
+
+406
+01:24:45,363 --> 01:24:59,963
+Negative 1. And we can multiply this row by negative 2 and add it to this row. This row gives 0, negative 3.
+
+407
+01:25:03,507 --> 01:25:07,587
+Forç, zero.
+
+408
+01:25:12,595 --> 01:25:12,995
+3
+
+409
+01:25:19,891 --> 01:25:32,391
+And multiply this by negative 4 and add it to the row 3 gives 0, negative 3.
+
+410
+01:25:36,372 --> 01:25:37,372
+2
+
+411
+01:25:37,372 --> 01:25:39,372
+3
+
+412
+01:25:39,372 --> 01:25:42,372
+4
+
+413
+01:25:53,684 --> 01:25:55,684
+K-4.
+
+414
+01:26:06,100 --> 01:26:06,680
+6
+
+415
+01:26:16,083 --> 01:26:24,884
+Now, we want that this system is inconsistent. So, the rank of C
+
+416
+01:26:29,235 --> 01:26:32,836
+is different from rank of CD.
+
+417
+01:26:33,836 --> 01:26:44,836
+So it follows that if this row and this row are the same,
+
+418
+01:26:48,243 --> 01:27:00,243
+It means that if k is 4, then we have adding this row to the this row we have.
+
+419
+01:27:16,115 --> 01:27:26,956
+0, 0, 0, 0, 3.
+
+420
+01:27:28,895 --> 01:27:36,115
+And the rank of C is 2, but the rank of CD is...
+
+421
+01:27:41,363 --> 01:27:44,823
+3. Therefore, sistem is inconsistent.
+
+422
+01:27:50,292 --> 01:27:52,152
+Hocam bir şey sorayım kızım.
+
+423
+01:27:52,592 --> 01:27:53,712
+Bir şey anlamadım.
+
+424
+01:27:53,712 --> 01:27:59,731
+Şu en son sonuçları da eşit olması gerekmez miydi?
+
+425
+01:27:59,972 --> 01:28:01,712
+Kendimi çözerken de onu karıştırdım.
+
+426
+01:28:02,372 --> 01:28:03,812
+Hangisi sonuçları? Anlamadım.
+
+427
+01:28:05,972 --> 01:28:08,231
+Eşit olması gerekiyor diyoruz ya.
+
+428
+01:28:08,932 --> 01:28:10,132
+Değil eşit olması gerekiyor.
+
+429
+01:28:11,492 --> 01:28:13,872
+Inconsistent olurken iki row.
+
+430
+01:28:13,952 --> 01:28:15,972
+Hayır eşit olması gerekiyor derken.
+
+431
+01:28:16,692 --> 01:28:18,832
+Şimdi ben bir tane sıfır satırı arıyorum.
+
+432
+01:28:18,832 --> 01:28:22,192
+Bir tane sıfır satırı olursa rankı diğerinden farklı olacak.
+
+433
+01:28:22,192 --> 01:28:24,872
+Şimdi burada eksi üç, eksi üç, dört dört var.
+
+434
+01:28:25,472 --> 01:28:27,872
+Burası da sıfır olursa bu ikisi aynı olur.
+
+435
+01:28:28,432 --> 01:28:31,392
+Aynı olur derken bundan çıkarttırsam sıfır elde ederim.
+
+436
+01:28:31,492 --> 01:28:32,652
+Burası sıfır olur sadece.
+
+437
+01:28:35,252 --> 01:28:36,972
+Yani aynı olması sıfır yapmak için.
+
+438
+01:28:39,271 --> 01:28:42,892
+İki satır aynı olursa birini diğerinden çıkarttırsam ne olur?
+
+439
+01:28:43,912 --> 01:28:45,092
+Sıfır satır elde ederim.
+
+440
+01:28:45,252 --> 01:28:47,731
+Sıfır satır elde edersem de rank bir tane düşmüş olur.
+
+441
+01:28:48,832 --> 01:28:50,672
+O yüzden.
+
+442
+01:28:53,592 --> 01:28:56,731
+Yani şunu, şu satırı sıfır yapabilmek için.
+
+443
+01:29:25,555 --> 01:29:27,155
+Tamam, turn back to the lecture.
+
+444
+01:29:27,935 --> 01:29:32,715
+And the last method for solving linear equation system is that
+
+445
+01:29:32,715 --> 01:29:39,455
+we have again N equations in N unknowns.
+
+446
+01:29:40,835 --> 01:29:49,195
+And we set or form the matrix equation AX is equal to B.
+
+447
+01:29:50,695 --> 01:29:55,255
+Then if the determinant of the coefficient matrix is non-zero,
+
+448
+01:29:55,555 --> 01:29:59,615
+then the coefficient matrix is invertible.
+
+449
+01:30:01,215 --> 01:30:03,795
+So we can find the inverse of A.
+
+450
+01:30:05,975 --> 01:30:15,915
+By multiplying each side of the equation AX is equal to B on the left by A inverse.
+
+451
+01:30:15,915 --> 01:30:19,095
+A inverse times A is equal to the matrix.
+
+452
+01:30:19,375 --> 01:30:23,235
+And the matrix times A matrix gives itself.
+
+453
+01:30:23,235 --> 01:30:29,895
+So X is equal to A inverse times matrix B.
+
+454
+01:30:29,895 --> 01:30:41,015
+So we can solve linear equation systems by using the inverse matrix of a coefficient matrix part.
+
+455
+01:30:41,475 --> 01:30:49,895
+To do this, first of all, we need a linear equation system with N equations in N unknowns.
+
+456
+01:30:49,895 --> 01:30:56,135
+And the determinant of the coefficient matrix must be non-zero.
+
+457
+01:31:02,547 --> 01:31:06,547
+So, the following linear system by using the inverse of the coefficient matrix.
+
+458
+01:31:09,268 --> 01:31:17,587
+So, let us first write the coefficient matrix A, which is this matrix, and find A inverse.
+
+459
+01:31:19,108 --> 01:31:26,707
+We have a formula, A inverse is equal to 1 over determinant A times a joint A. So A inverse is this matrix.
+
+460
+01:31:26,707 --> 01:31:30,247
+Then X.
+
+461
+01:31:33,811 --> 01:31:38,311
+Actually, we need to first check the determinant A is non-zero.
+
+462
+01:31:39,952 --> 01:31:43,872
+Since we use the inverse of the coefficient matrix, it is non-zero.
+
+463
+01:31:44,051 --> 01:31:44,192
+Okay.
+
+464
+01:31:45,231 --> 01:31:57,391
+And x is equal to a inverse times the matrix B, which gives x is 11 over 3, y is 7 over 3, and z is negative 17 over 3.
+
+465
+01:31:57,391 --> 01:32:09,612
+Actually, this method is not efficient because you need to find the inverse of the matrix.
+
+466
+01:32:09,612 --> 01:32:17,032
+The inverse of the matrix needs, you have to know the adjoint matrix and also the determinant of the matrix.
+
+467
+01:32:17,751 --> 01:32:26,671
+So this method is not actually, this matrix is not efficient.
+
+468
+01:32:27,391 --> 01:32:32,192
+This method is not easy to find.
+
+469
+01:32:37,460 --> 01:32:43,279
+Önemli değil [öğrenci]. Ben de dedim ne oldu bu çocuk verdiğim cevabı beğenmedi herhalde. Peki.
+
+470
+01:33:25,747 --> 01:33:27,947
+We can do 20, question 20.
+
+471
+01:33:30,967 --> 01:33:37,467
+A is a non-singular matrix, and its inverse is given by like this.
+
+472
+01:33:39,347 --> 01:33:43,687
+And the matrix P is given by this column matrix.
+
+473
+01:33:44,507 --> 01:33:48,327
+Which of the following is the solution of the linear system?
+
+474
+01:33:49,507 --> 01:33:52,607
+A transpose times X is equal to B.
+
+475
+01:34:15,731 --> 01:34:18,231
+Actually, we need X.
+
+476
+01:34:20,231 --> 01:34:21,391
+So.
+
+477
+01:34:25,427 --> 01:34:27,268
+To find x
+
+478
+01:34:33,076 --> 01:34:36,355
+We have to multiply both sides with
+
+479
+01:34:48,372 --> 01:34:53,231
+A transpose inverse on the left.
+
+480
+01:35:11,315 --> 01:35:21,815
+X is equal to A transpose inverse is A inverse transpose times B.
+
+481
+01:35:21,815 --> 01:35:23,815
+We have A inverse.
+
+482
+01:35:25,576 --> 01:35:39,376
+So X is equal to A inverse transpose for 1, 0 times B.
+
+483
+01:35:41,315 --> 01:36:08,315
+So X is equal to A.
+
+484
+01:36:08,315 --> 01:36:10,315
+So today is enough.
+
+485
+01:36:10,315 --> 01:36:14,315
+Do you have any questions, comments or other things?
+
+486
+01:36:14,315 --> 01:36:16,315
+Welcome, dear friends.
+
+487
+01:36:16,315 --> 01:36:22,315
+Thank you.
+
+488
+01:36:20,532 --> 01:36:25,952
+Teşekkürler hocam. Hocam, sınavlarla alakalı bir duyuru geçirmedi sınavlarla.
+
+489
+01:36:25,971 --> 01:36:28,112
+Sınavlar online olacak arkadaşlar.
+
+490
+01:36:28,872 --> 01:36:31,532
+Yok süresi bakımından, 8. hafta mı?
+
+491
+01:36:31,572 --> 01:36:31,851
+Yoksa.
+
+492
+01:36:32,872 --> 01:36:34,252
+Hangi haftaya tekabül edecek?
+
+493
+01:36:34,752 --> 01:36:41,952
+Sınavlar 8. haftada görünüyor normalde. Yani önümüzdeki hafta değil, ondan sonraki hafta. Değil mi? 6. haftadayız biz.
+
+494
+01:36:41,952 --> 01:36:51,332
+Önümüzdeki hafta değil, ondan sonraki hafta. Ama büyük ihtimalle, bugün işlediğimiz konuya kadar olur sınav, onu söyleyeyim şimdiden.
+
+495
+01:36:51,811 --> 01:36:55,332
+Yine ben şey yaparım, duyurularda da duyarsınız ya da ben de söylerim.
+
+496
+01:36:56,092 --> 01:37:00,292
+Yani ilk sınav bugün işlediğimiz konuya kadar olacak, büyük ihtimalle.
+
+497
+01:37:00,292 --> 01:37:03,292
+20 soruluk.
+
+498
+01:37:03,292 --> 01:37:03,931
+Aynı buna benzer.
+
+499
+01:37:03,931 --> 01:37:06,712
+Şu çözdüğüm sorulara benzer.
+
+500
+01:37:06,832 --> 01:37:09,931
+20 soruluk test sorusu.
+
+501
+01:37:10,092 --> 01:37:12,731
+Çoktan seçmeli test sınavı oluyor.
+
+502
+01:37:15,431 --> 01:37:20,252
+Sınavlar online olacağı için arkadaşlar, o yüzden biraz dikkat etmeniz gerekecek.
+
+503
+01:37:21,032 --> 01:37:24,832
+Sorular çok kolay olmayabilir.
+
+504
+01:37:24,832 --> 01:37:54,811
+O yüzden lütfen sorular.
+
+505
+01:37:50,323 --> 01:38:10,303
+Bazı temel şeyleri, özellikleri bilmiyorsanız, sizi çok uğraştırır sorular. Ama biliyorsanız da çok kolay sınavı yaparsınız. Sınavı düşünmeyin. Yani ne derse katılıyorsanız zaten halledersiniz bir şekilde. Ben önümüzdeki haftada örnek sorular yine hazırlamaya çalışırım size. Yine sormak istediğiniz bir şey olursa sorarsınız.
+
+506
+01:38:10,303 --> 01:38:22,344
+Sınav tarihi tam belli değil ama sekizinci hafta oluyor genelde. Yani önümüzdeki hafta değil. Zaten önümüzdeki hafta olsaydı bu haftadan duyurulurdu. Ondan sonraki hafta olacak.
+
+507
+01:38:24,683 --> 01:38:29,003
+Tarihinde size söylerler. Söyleriz. Bölümden de takip edersiniz. Tamam mı?
+
+508
+01:38:31,543 --> 01:38:32,723
+Var mı sorusu olan?
+
+509
+01:38:36,243 --> 01:38:36,844
+Yok mu?
+
+510
+01:38:37,923 --> 01:38:40,983
+Peki arkadaşlar, dikkat edin kendinize haftaya görüşmek üzere.
