@@ -1,0 +1,7927 @@
+1
+00:00:06,772 --> 00:00:08,092
+Evet, merhaba gençler.
+
+2
+00:00:09,891 --> 00:00:10,612
+Nasılsınız?
+
+3
+00:00:16,339 --> 00:00:18,000
+İyiyiz hocam, siz nasılsınız?
+
+4
+00:00:18,559 --> 00:00:27,359
+Neredeyiz? Evet. Geçen hafta biz final konularından birazcık bahsetmiştik değil mi arkadaşlar?
+
+5
+00:00:29,219 --> 00:00:35,060
+Rasyonel fonksiyonların integralleri diye. Doğru mu? Yanlış mı hatırlıyorum?
+
+6
+00:00:38,120 --> 00:00:44,000
+Birazcık o rasyonel fonksiyonların integrallerinde anlatmadığım kısımlar var. Onlardan bahsedelim.
+
+7
+00:00:44,000 --> 00:00:47,500
+Ondan sonra soru çözelim.
+
+8
+00:00:48,579 --> 00:00:52,460
+Yine geçen hafta çözemediğimiz sorular vardı kalemden dolayı.
+
+9
+00:00:53,019 --> 00:00:54,140
+Kalemimiz bozulmuştu.
+
+10
+00:00:55,159 --> 00:00:57,299
+Ama önce o final konusunu iyice bitirelim.
+
+11
+00:00:58,019 --> 00:01:00,280
+Rasyonel fonksiyonların integralleri.
+
+12
+00:01:03,280 --> 00:01:04,159
+Evet.
+
+13
+00:01:07,120 --> 00:01:10,280
+Birkaç dakika bekleyelim. Herkes katılabilsin dersi.
+
+14
+00:01:10,280 --> 00:01:15,780
+O esnada ben de bakayım.
+
+15
+00:01:15,780 --> 00:01:15,819
+Bakayım.
+
+16
+00:01:15,819 --> 00:01:17,500
+Evet.
+
+17
+00:01:49,140 --> 00:01:51,700
+görebiliyorsunuz değil mi arkadaşlar beyaz tahtayı?
+
+18
+00:01:56,243 --> 00:02:00,823
+Tamam, güzel. Evet, bir hatırlatma olması için bir soru yazalım.
+
+19
+00:02:01,703 --> 00:02:03,584
+Okay, let me write some question.
+
+20
+00:02:17,876 --> 00:02:18,376
+ok.
+
+21
+00:02:27,156 --> 00:02:31,956
+Let's try to solve this indefinite integration problem.
+
+22
+00:02:44,211 --> 00:03:14,211
+Bu, bu
+
+23
+00:03:14,211 --> 00:03:21,632
+Ama öyle bir değişken dönüşümü yapabilirsiniz ki siz bu problemi bir rasyonel fonksiyonun integrali problemine dönüştürebilirsiniz.
+
+24
+00:03:22,791 --> 00:03:29,991
+Ne tarz bir değişken dönüşümü bizim işimizi görür? Bunu düşüneceksiniz bu tarz sorularda.
+
+25
+00:03:32,991 --> 00:03:33,551
+Evet.
+
+26
+00:03:42,388 --> 00:03:49,108
+Gördünüz mü gençler? Hangi değişken dönüşümün yapılması gerekir? Evet. Okey.
+
+27
+00:03:49,968 --> 00:03:53,388
+Now, if you do change of variable...
+
+28
+00:03:56,948 --> 00:04:02,087
+Exponential t u if you differentiate both sides of this equality.
+
+29
+00:04:03,248 --> 00:04:04,948
+So we need to obtain this.
+
+30
+00:04:05,367 --> 00:04:06,388
+We obtain this.
+
+31
+00:04:07,188 --> 00:04:10,688
+Now but so we don't have exponential t d t.
+
+32
+00:04:10,848 --> 00:04:13,508
+So that's why we multiply by exponential t.
+
+33
+00:04:14,307 --> 00:04:16,507
+And divide by exponential t.
+
+34
+00:04:16,507 --> 00:04:19,427
+Let me use blue color again.
+
+35
+00:04:19,828 --> 00:04:21,828
+So exponent d t.
+
+36
+00:04:22,048 --> 00:04:26,508
+Let me write here d t over exponential t.
+
+37
+00:04:26,947 --> 00:04:32,247
+2 t plus 2 exponential t plus 1.
+
+38
+00:04:32,348 --> 00:04:34,648
+Let me use red color again.
+
+39
+00:04:35,288 --> 00:04:35,508
+Okay.
+
+40
+00:04:35,648 --> 00:04:36,947
+Exponential t.
+
+41
+00:04:37,388 --> 00:04:37,708
+Okay.
+
+42
+00:04:37,848 --> 00:04:39,088
+Exponential t.
+
+43
+00:04:39,388 --> 00:04:40,768
+So let me open parenthesis.
+
+44
+00:04:40,947 --> 00:04:41,108
+Okay.
+
+45
+00:04:41,108 --> 00:04:46,048
+Now, so by this change of variable, look at here.
+
+46
+00:04:46,208 --> 00:04:50,388
+So this is d u.
+
+47
+00:04:51,288 --> 00:04:51,927
+Okay.
+
+48
+00:04:51,927 --> 00:04:57,888
+So d u integration of d u over exponential t.
+
+49
+00:04:58,448 --> 00:04:59,048
+Look at here.
+
+50
+00:04:59,148 --> 00:05:03,067
+So if you distribute this exponential t u, you don't need to distribute this.
+
+51
+00:05:03,487 --> 00:05:04,908
+And this is u square.
+
+52
+00:05:05,168 --> 00:05:09,268
+Now u square plus 2 u plus 1.
+
+53
+00:05:09,268 --> 00:05:11,567
+U plus 1 square.
+
+54
+00:05:11,888 --> 00:05:12,567
+Is that correct?
+
+55
+00:05:13,408 --> 00:05:14,548
+We will obtain this.
+
+56
+00:05:14,888 --> 00:05:16,908
+But this is a rational function.
+
+57
+00:05:17,687 --> 00:05:24,487
+So in order to compute integration of 1 over u times u plus 1 square.
+
+58
+00:05:24,487 --> 00:05:29,708
+So we need to express this rational function in terms of basic fractions.
+
+59
+00:05:30,288 --> 00:05:31,008
+Look at here.
+
+60
+00:05:31,088 --> 00:05:33,927
+So look at this first factor in the denominator.
+
+61
+00:05:34,248 --> 00:05:34,447
+U.
+
+62
+00:05:34,687 --> 00:05:38,628
+U has real root but not multiple root.
+
+63
+00:05:38,748 --> 00:05:40,187
+So a over u.
+
+64
+00:05:40,307 --> 00:05:43,028
+That's why we write this fraction by u factor.
+
+65
+00:05:43,028 --> 00:05:46,127
+and plus focus on this u plus 1.
+
+66
+00:05:46,208 --> 00:05:48,348
+U plus 1 has real root.
+
+67
+00:05:48,528 --> 00:05:49,548
+It has real root.
+
+68
+00:05:50,008 --> 00:05:53,207
+But because of these two, it is multiple real root.
+
+69
+00:05:53,288 --> 00:05:54,668
+It has multiple real root.
+
+70
+00:05:55,127 --> 00:06:00,508
+That's why we need to write d over u plus 1 for the first layer.
+
+71
+00:06:01,168 --> 00:06:03,788
+And since we have two multiple root here.
+
+72
+00:06:04,268 --> 00:06:08,388
+So we need to write this c over u plus 1 square.
+
+73
+00:06:08,927 --> 00:06:09,087
+Okay.
+
+74
+00:06:09,707 --> 00:06:10,908
+Now attention here.
+
+75
+00:06:10,908 --> 00:06:17,528
+So we can immediately obtain the value of a because of the fact that
+
+76
+00:06:17,528 --> 00:06:20,608
+so u has real root but not multiple root.
+
+77
+00:06:20,708 --> 00:06:22,908
+By ignoring u at the left-hand side.
+
+78
+00:06:23,187 --> 00:06:29,528
+And by substituting the root of u, interesting part, at the left-hand side,
+
+79
+00:06:29,708 --> 00:06:32,408
+we have obtained a value as 1.
+
+80
+00:06:32,528 --> 00:06:32,768
+Okay.
+
+81
+00:06:32,827 --> 00:06:37,788
+But we cannot do the same approach for d and c
+
+82
+00:06:37,788 --> 00:06:41,388
+because of the fact that u plus 1 has multiple root.
+
+83
+00:06:41,508 --> 00:06:41,728
+Okay.
+
+84
+00:06:42,108 --> 00:06:45,707
+Now, for this reason, so we need to expand each fraction.
+
+85
+00:06:46,108 --> 00:06:46,408
+Okay.
+
+86
+00:06:46,408 --> 00:06:54,788
+So we need to expand each fraction by u plus 1 square.
+
+87
+00:06:55,528 --> 00:06:59,927
+So we need to expand this fraction by u plus 1 times u.
+
+88
+00:07:00,187 --> 00:07:02,468
+We need to expand this fraction by u.
+
+89
+00:07:02,687 --> 00:07:02,927
+Okay.
+
+90
+00:07:02,927 --> 00:07:03,368
+Is that correct?
+
+91
+00:07:03,368 --> 00:07:09,848
+So 1 is equal to a times u plus 1.
+
+92
+00:07:09,988 --> 00:07:13,028
+So take into account this 1 at the left-hand side.
+
+93
+00:07:13,208 --> 00:07:16,268
+And by using the results coming from expansion,
+
+94
+00:07:16,548 --> 00:07:26,988
+u plus 1 square plus and b times u plus 1 times u plus u.
+
+95
+00:07:26,987 --> 00:07:27,367
+Okay.
+
+96
+00:07:27,447 --> 00:07:29,048
+So this is homework for you.
+
+97
+00:07:29,108 --> 00:07:29,807
+Let's compute.
+
+98
+00:07:29,967 --> 00:07:32,508
+So we know the value of a.
+
+99
+00:07:33,567 --> 00:07:34,288
+A, B, C.
+
+100
+00:07:34,628 --> 00:07:35,548
+This is your task.
+
+101
+00:07:35,687 --> 00:07:35,987
+Okay.
+
+102
+00:07:36,247 --> 00:07:37,228
+To compute A, B, C.
+
+103
+00:07:37,228 --> 00:07:37,768
+Okay.
+
+104
+00:07:38,367 --> 00:07:42,128
+Now, so finally, you can directly integrate i.
+
+105
+00:07:42,247 --> 00:07:44,028
+Let's say this is i integration.
+
+106
+00:07:44,028 --> 00:07:45,447
+i integration.
+
+107
+00:07:45,628 --> 00:07:47,327
+Integration of 1 over u.
+
+108
+00:07:47,888 --> 00:07:52,987
+So a times ln absolute over u.
+
+109
+00:07:54,004 --> 00:08:12,283
+and the b times ln absolute u plus 1 and minus, okay, so integration of this, c is a constant, minus c over u plus 1, okay, so plus constant term.
+
+110
+00:08:13,564 --> 00:08:23,403
+Okay, after obtaining a, b, c, unknown, okay, so by substituting this integration result, okay, you can obtain the answer.
+
+111
+00:08:24,004 --> 00:08:26,804
+Is there any question? Sorusu olan var mı?
+
+112
+00:08:29,704 --> 00:08:33,803
+Herhalde anlaşıldı. U gördüğümüz yere tabii ki e üzeri t yazmayı unutmuyoruz.
+
+113
+00:08:33,903 --> 00:08:38,744
+Okay, do not forget to turn back by using exponential t is equal to u.
+
+114
+00:08:39,844 --> 00:08:43,464
+Okay. Devam. Herhalde anlaşıldı.
+
+115
+00:08:43,464 --> 00:08:43,964
+Okay.
+
+116
+00:08:47,796 --> 00:09:17,756
+Okay, let's consider this problem x kare artı 1. So, attention, so, degree of this polynomial 2, degree of this polynomial 2, okay, monomial is 2. So, in such cases, in such cases, in order to express x kare artı x kare artı 1, in terms of basic fractions,
+
+117
+00:09:17,756 --> 00:09:25,156
+Okay, we need to do change of variable. We need to do, sorry, we need to apply caution algorithm for polynomials.
+
+118
+00:09:29,779 --> 00:09:31,299
+Okay, so we can do that.
+
+119
+00:09:31,379 --> 00:09:32,860
+So we multiply by 1.
+
+120
+00:09:33,059 --> 00:09:36,839
+So in order to cancel this term, 1 times x².
+
+121
+00:09:36,959 --> 00:09:39,720
+Let's multiply x² plus 1 by 1.
+
+122
+00:09:39,779 --> 00:09:41,500
+x² plus 1.
+
+123
+00:09:42,079 --> 00:09:44,319
+As you see, we obtain x² minus x².
+
+124
+00:09:44,419 --> 00:09:45,419
+0 minus 1.
+
+125
+00:09:46,220 --> 00:09:49,120
+So the degree of resting term 0.
+
+126
+00:09:49,679 --> 00:09:51,439
+And degree of this term 2.
+
+127
+00:09:51,439 --> 00:09:54,059
+So as you see, 0 is smaller than 2.
+
+128
+00:09:54,120 --> 00:09:55,259
+That's why we stop there.
+
+129
+00:09:55,679 --> 00:09:56,720
+So we can write this.
+
+130
+00:09:56,720 --> 00:10:02,579
+x² is equal to 1 times x² plus 1 minus 1.
+
+131
+00:10:02,679 --> 00:10:03,539
+So we can write this.
+
+132
+00:10:03,620 --> 00:10:11,559
+If you divide both sides of this quality by x² plus 1.
+
+133
+00:10:11,699 --> 00:10:15,799
+So we are going to obtain this 1 minus 1 over x².
+
+134
+00:10:16,620 --> 00:10:20,100
+Okay, now as you see, instead of integrating this,
+
+135
+00:10:20,100 --> 00:10:21,659
+so we need to integrate this.
+
+136
+00:10:21,860 --> 00:10:26,620
+Okay, now if we integrate 1x.
+
+137
+00:10:26,720 --> 00:10:28,779
+So if you integrate this,
+
+138
+00:10:29,120 --> 00:10:33,639
+so we are going to obtain r tangent x plus,
+
+139
+00:10:33,779 --> 00:10:34,659
+let me put this here.
+
+140
+00:10:34,939 --> 00:10:35,860
+So second method,
+
+141
+00:10:36,399 --> 00:10:38,379
+in order to compute with i integration,
+
+142
+00:10:38,860 --> 00:10:39,699
+second method,
+
+143
+00:10:39,860 --> 00:10:44,019
+you don't need to apply a quotient algorithm for polynomials
+
+144
+00:10:44,019 --> 00:10:47,159
+inside spatial cases.
+
+145
+00:10:47,159 --> 00:10:49,779
+Okay, now look at here.
+
+146
+00:10:49,779 --> 00:10:54,620
+So we add one term and we subtract one term,
+
+147
+00:10:55,019 --> 00:10:56,579
+x² plus 1.
+
+148
+00:10:57,620 --> 00:10:59,679
+Okay, so we can write this.
+
+149
+00:11:00,559 --> 00:11:03,959
+Okay, so if you divide x² plus 1 by x² plus 1,
+
+150
+00:11:04,039 --> 00:11:08,360
+we have 1 minus x² plus 1.
+
+151
+00:11:08,360 --> 00:11:09,079
+as you see,
+
+152
+00:11:09,899 --> 00:11:14,599
+so this is nothing else than quotient algorithm for polynomials.
+
+153
+00:11:14,779 --> 00:11:16,019
+Okay, now dx.
+
+154
+00:11:16,500 --> 00:11:17,799
+So integration of this,
+
+155
+00:11:19,220 --> 00:11:20,740
+integration of 1x,
+
+156
+00:11:20,839 --> 00:11:23,279
+integration of 1 over x² plus 1,
+
+157
+00:11:24,419 --> 00:11:25,919
+r tangent x.
+
+158
+00:11:26,059 --> 00:11:26,699
+Is that clear?
+
+159
+00:11:27,019 --> 00:11:27,740
+Can you hear me, friends?
+
+160
+00:11:28,299 --> 00:11:28,740
+Can you hear me?
+
+161
+00:11:28,740 --> 00:11:31,600
+Okay, let's go on.
+
+162
+00:11:48,307 --> 00:11:49,567
+Let's compute this.
+
+163
+00:12:11,412 --> 00:12:12,412
+Ok.
+
+164
+00:12:12,412 --> 00:12:16,412
+What can we do in such cases?
+
+165
+00:12:22,772 --> 00:12:24,552
+Okay, let's try to solve this problem.
+
+166
+00:12:26,951 --> 00:12:27,331
+Now,
+
+167
+00:12:31,316 --> 00:13:01,296
+So we can distribute this problem x cubed over, look at here if you distribute this x cubed plus x cubed plus x plus x squared plus 1 plus let me put here dx, integration of this dx over x plus 1 times x squared plus 1.
+
+168
+00:13:01,316 --> 00:13:21,416
+So attention here, so this is a polynomial degree of 3, this is a polynomial degree of 3, and as you see, so this is not a usual rational function, but so we have 1 here, so this is a polynomial degree of 0, and this is a polynomial degree of 3, so this is a usual fraction.
+
+169
+00:13:21,416 --> 00:13:29,136
+Okay, let's say this is i integration, so let's say this is i2, let's say this is i1, okay.
+
+170
+00:13:29,136 --> 00:13:44,635
+Now i2, i2, for i2 we need to write this, for i2 we need to express, we need to express this x plus 1, x squared plus 1.
+
+171
+00:13:44,636 --> 00:13:57,196
+So we can express this in terms of basic fractions, a over x plus 1 plus, so b x plus c over x squared plus 1.
+
+172
+00:13:57,416 --> 00:13:57,936
+Gördünüz mü arkadaşlar?
+
+173
+00:13:58,056 --> 00:14:02,056
+Tabii sınav da bu kadar uzun gelmez ama ben yazdım olayı daha iyi anlayasınız diye.
+
+174
+00:14:02,516 --> 00:14:02,875
+Tamam mı?
+
+175
+00:14:03,276 --> 00:14:04,115
+Ne yapıyoruz arkadaşlar?
+
+176
+00:14:04,115 --> 00:14:14,296
+So taking take on 1 at the left hand side, 1 is equal to, let's expand this fraction by x squared plus 1, let's expand this fraction by x plus 1.
+
+177
+00:14:14,855 --> 00:14:19,196
+Okay, now bunları yaptınız arkadaşlar.
+
+178
+00:14:19,196 --> 00:14:40,916
+Abc buldunuz, i2 integration, after obtaining abc, so i2 integration, a times ln absolute of x plus 1 and plus b times b over 2 times ln x squared plus 1 because of this x.
+
+179
+00:14:40,916 --> 00:14:48,496
+Okay, look at here, so if, because of this c, and plus c times r tangent x.
+
+180
+00:14:49,196 --> 00:14:51,956
+Okay, last constant term, this is i2.
+
+181
+00:14:52,615 --> 00:15:08,496
+Okay, homework for you, let's compute abc values by using, okay, by using this trigonometric, sorry, by using this identical relation and solving the system of equations, so you can obtain abc constants.
+
+182
+00:15:08,496 --> 00:15:11,316
+Okay, now let's compute i1.
+
+183
+00:15:11,895 --> 00:15:13,355
+So how can we compute i1?
+
+184
+00:15:13,456 --> 00:15:18,936
+So look at here, i1, i1 in the i1 integration, so degree of x cubed.
+
+185
+00:15:19,196 --> 00:15:22,576
+is equal to degree of denominators polynomial.
+
+186
+00:15:22,855 --> 00:15:26,916
+That's why you need to apply caution algorithm for polynomials.
+
+187
+00:15:27,016 --> 00:15:31,156
+Bakın, pi'daki polinomun derecesi, pi'daki polinomun derecesine eşit olduğundan,
+
+188
+00:15:31,436 --> 00:15:34,235
+basit kesirleri ayrıştırmanız doğrudan mümkün değil.
+
+189
+00:15:34,836 --> 00:15:36,056
+Mantıken, doğru mu?
+
+190
+00:15:36,336 --> 00:15:39,375
+Dikkat ederseniz, basit kesirleri ayrıştırma yöntemine dikkat edin.
+
+191
+00:15:39,375 --> 00:15:44,756
+Pi'daki polinomun derecesi, pi'daki polinomun derecesinden bir küçük olacak şekilde.
+
+192
+00:15:47,756 --> 00:15:56,635
+O yüzden, bu şekilde rasyonel bir fonksiyon görürseniz, pi'daki polinomun derecesi, pi'daki polinomun derecesinden büyük veya eşit durumu görürseniz,
+
+193
+00:15:56,956 --> 00:15:58,916
+dolayısıyla polinom bölmesi yapmak zorundasınız.
+
+194
+00:15:58,916 --> 00:16:01,316
+Yoksa basit kesirlerin mantığını işletemezsiniz.
+
+195
+00:16:01,615 --> 00:16:02,936
+Anlaşıldı galiba, değil mi?
+
+196
+00:16:03,256 --> 00:16:05,076
+Neden polinom bölmesi yapmamız gerekti?
+
+197
+00:16:05,975 --> 00:16:07,716
+Evet, ne yapıyoruz?
+
+198
+00:16:07,716 --> 00:16:17,135
+Ok, in order to express this rational function, x cube over x cube plus, x square plus, x plus 1,
+
+199
+00:16:17,456 --> 00:16:27,256
+in terms of basic fraction, we need to do, we need to apply quotient algorithm for polynomials.
+
+200
+00:16:36,083 --> 00:16:36,563
+Evet.
+
+201
+00:16:38,323 --> 00:16:40,303
+Aslında onu başka bir yoldan da
+
+202
+00:16:40,303 --> 00:16:42,423
+yapabilirsiniz. Şimdi onu göstermeyeceğim.
+
+203
+00:16:42,623 --> 00:16:44,463
+Şimdi bakın. Ne yapıyorum?
+
+204
+00:16:44,563 --> 00:16:45,863
+Bölüyorum. Polon bölmesi yapıyorum.
+
+205
+00:16:45,983 --> 00:16:47,983
+Bir ile çarpın. Hemen göreceksiniz zaten.
+
+206
+00:16:48,243 --> 00:16:48,803
+X küp
+
+207
+00:16:48,803 --> 00:16:51,723
+artı x kare
+
+208
+00:16:51,723 --> 00:16:54,403
+artı x artı
+
+209
+00:16:54,403 --> 00:16:56,143
+bir çıkartırsam
+
+210
+00:16:56,143 --> 00:16:57,743
+eksi x kare
+
+211
+00:16:57,743 --> 00:16:59,143
+eksi x
+
+212
+00:16:59,143 --> 00:17:00,703
+eksi bir.
+
+213
+00:17:01,063 --> 00:17:03,043
+Degree of resting term
+
+214
+00:17:03,043 --> 00:17:05,203
+is smaller than degree of
+
+215
+00:17:05,203 --> 00:17:07,463
+this polynomial. That's why we stop there.
+
+216
+00:17:08,063 --> 00:17:09,604
+Aslında çarpanları ayırarak
+
+217
+00:17:09,604 --> 00:17:11,523
+çarpanları ayırmış oluyorsunuz arkadaşlar.
+
+218
+00:17:11,683 --> 00:17:13,703
+Dikkat edin. Bir şeyler elde ediyorsunuz.
+
+219
+00:17:14,124 --> 00:17:15,783
+X küp eşittir.
+
+220
+00:17:16,203 --> 00:17:17,423
+Ya da x küp bölü
+
+221
+00:17:17,423 --> 00:17:19,983
+x küp artı x kare
+
+222
+00:17:19,983 --> 00:17:21,423
+artı x artı bir
+
+223
+00:17:21,423 --> 00:17:22,124
+bir oldu.
+
+224
+00:17:27,543 --> 00:17:29,283
+X küp bölü
+
+225
+00:17:29,283 --> 00:17:31,903
+x küp
+
+226
+00:17:31,903 --> 00:17:33,023
+artı
+
+227
+00:17:33,023 --> 00:17:34,023
+x küp
+
+228
+00:17:34,023 --> 00:17:35,283
+x küp artı
+
+229
+00:17:35,283 --> 00:17:36,443
+x küp artı bir
+
+230
+00:17:36,443 --> 00:17:38,104
+eşittir.
+
+231
+00:17:38,903 --> 00:17:39,763
+Ne geliyor arkadaşlar?
+
+232
+00:17:40,023 --> 00:17:41,063
+Bir eksi
+
+233
+00:17:41,063 --> 00:17:42,624
+x küp
+
+234
+00:17:42,624 --> 00:17:42,943
+kare
+
+235
+00:17:42,943 --> 00:17:43,624
+eksi
+
+236
+00:17:43,624 --> 00:17:44,624
+x küp
+
+237
+00:17:44,624 --> 00:18:08,624
+yi
+
+238
+00:17:47,476 --> 00:18:07,376
+x eksi 1 bölü x küp artı x kare artı x artı 1. Doğru mu arkadaşlar? Böyle bir şey yakaladım. Tabii burada artı şöyle yapalım. Şurayı eksi yapalım. Eksi olduğundan şuralar artı oldu. Şöyle yapalım.
+
+239
+00:18:07,376 --> 00:18:08,216
+Evet.
+
+240
+00:18:11,176 --> 00:18:20,656
+Fark ettiniz mi? Şurası zaten nedir? Benim bildiğim bir şey. Bu kadar uzatmaya gerek yok. Polinom bölmesini göstermek için aslında yaptım.
+
+241
+00:18:27,923 --> 00:18:39,903
+Bunu ben çözebilirim. Bu şekilde integral almak zor. Bunu çözmek kolay değil arkadaşlar. Biraz absürt bir değer geldi. Şu an göremedim hemen.
+
+242
+00:18:43,571 --> 00:18:44,091
+Evet.
+
+243
+00:18:46,811 --> 00:18:53,751
+Şunu tekrardan nasıl yapabiliriz arkadaşlar? Bu biraz zor integral geldi. Kafamdan rastgele soru yazdım.
+
+244
+00:19:04,339 --> 00:19:06,679
+Bunun integralini almak kolay değil arkadaşlar.
+
+245
+00:19:07,899 --> 00:19:10,939
+Çıkmayabilir de hemen. Biraz zaman gerektirir.
+
+246
+00:19:22,771 --> 00:19:24,932
+Evet, ben göremedim integralini.
+
+247
+00:19:29,844 --> 00:19:35,764
+Buradan gelmiyor arkadaşlar. Ben göremedim. Diğer yoldan deneyi. Buradan biraz sıkıntı yaşadık.
+
+248
+00:19:42,344 --> 00:19:50,644
+Göremedim. Bir dakika. Ben genel yoldan yapayım. Özel yoldan yapayım. Yanlış mı gittik acaba? Bir işlem hatası mı yaptık?
+
+249
+00:19:50,644 --> 00:19:58,104
+Okey. So, let's write this. x küp plus one minus one.
+
+250
+00:20:00,324 --> 00:20:03,364
+Buradan da gelmiyor ki. Aynı şeye çıkıyor.
+
+251
+00:20:11,731 --> 00:20:35,612
+Buradan da aynı şey. Hocam, başta x küp artı 1'i açsak, öyle yapsak daha kolay olmuyor mu? x küp artı 1'i nasıl açacaksın? x artı 1 çarpı. Aynen. x kare eksi x artı 1. Sonra x artı 1'ler götürmüyor mu? Yok, olmuyor öyle ya. Nasıl oluyor? Öyle bir şey olmuyor. Senin bildiğin gibi değil. O şekilde olmuyor.
+
+252
+00:20:35,612 --> 00:20:42,612
+Yani x küp artı 1'in içinde şey olmuyor.
+
+253
+00:20:47,796 --> 00:20:49,996
+Bu kolay bir şekilde gelmiyor arkadaşlar.
+
+254
+00:20:53,875 --> 00:20:55,355
+Yok, o şekilde olmuyor.
+
+255
+00:20:56,855 --> 00:21:02,895
+Evet, ben arkadaşlar bunu geçiyorum. Bu zor bir integral. Öyle kolay gelmiyor. Göremedik.
+
+256
+00:21:04,276 --> 00:21:07,995
+x kub artı 1'in açılımını yaparsan orada bir artı bir eksili bir şeyler gelecek.
+
+257
+00:21:10,135 --> 00:21:11,336
+O yüzden olmuyor.
+
+258
+00:21:14,155 --> 00:21:14,715
+Evet.
+
+259
+00:21:15,615 --> 00:21:18,256
+Not so easy. This is not so easy. Integrate this.
+
+260
+00:21:18,635 --> 00:21:22,475
+Başka bir problem yazayım arkadaşlar. Bu kolay değil. Zor bir integral geldi.
+
+261
+00:21:23,875 --> 00:21:26,016
+Başka bir şey yazalım.
+
+262
+00:21:31,700 --> 00:21:34,160
+Hocam sadeleştirme yaptığımız için mi olmuyor?
+
+263
+00:21:34,720 --> 00:21:35,000
+Nasıl?
+
+264
+00:21:37,039 --> 00:21:38,860
+Sadeleştirme yaptığımız için mi olmuyor?
+
+265
+00:21:39,500 --> 00:21:40,220
+Onun dediği yok.
+
+266
+00:21:40,220 --> 00:21:42,400
+Sadeleştirme nasıl sadeleştirme yapacaksın?
+
+267
+00:21:42,759 --> 00:21:44,940
+Hani x artı 1'i götüreceğiz ya.
+
+268
+00:21:47,759 --> 00:21:49,160
+Oradan çıkıyor gibi geldi bana.
+
+269
+00:21:50,220 --> 00:21:52,380
+Bir dakika x kübü artı 1 nedir?
+
+270
+00:21:52,680 --> 00:21:55,299
+x kübü artı 1'i nasıl yazabiliyorduk?
+
+271
+00:21:55,980 --> 00:21:59,360
+x artı 1 çarpı x kare eksi x artı 1 şeklinde.
+
+272
+00:21:59,360 --> 00:22:01,220
+Bir dakika oradan geliyor mu?
+
+273
+00:22:01,220 --> 00:22:02,500
+x kübü artı 1.
+
+274
+00:22:02,600 --> 00:22:11,200
+x artı 1 çarpı x kare eksi x artı 1.
+
+275
+00:22:11,660 --> 00:22:13,100
+Eksi x artı 1.
+
+276
+00:22:13,680 --> 00:22:13,900
+Evet.
+
+277
+00:22:14,980 --> 00:22:16,620
+Bu şekilde tamam.
+
+278
+00:22:17,240 --> 00:22:19,160
+Onu oradan yazarsan ne oluyor o zaman?
+
+279
+00:22:20,940 --> 00:22:22,720
+Bakalım geliyor mu?
+
+280
+00:22:22,720 --> 00:22:27,500
+x kübü artı 1 yazar.
+
+281
+00:22:27,500 --> 00:22:29,279
+x artı 1 çarpı.
+
+282
+00:22:29,279 --> 00:22:31,920
+x kare eksi x artı 1.
+
+283
+00:22:32,200 --> 00:22:32,420
+Evet.
+
+284
+00:22:33,000 --> 00:22:34,240
+Oradan basitleşiyor.
+
+285
+00:22:34,340 --> 00:22:34,640
+Doğru.
+
+286
+00:22:35,320 --> 00:22:36,799
+x artı 1 çarpı.
+
+287
+00:22:36,940 --> 00:22:38,980
+Polinom bölmesi yapınca niye gelmedi?
+
+288
+00:22:39,100 --> 00:22:41,579
+Biz bir yerde hata mı yaptık polinom bölmesi yapınca?
+
+289
+00:22:42,320 --> 00:22:42,960
+Bu şekilde.
+
+290
+00:22:43,960 --> 00:22:44,559
+Diyorsunuz.
+
+291
+00:22:45,240 --> 00:22:45,940
+Böyle geldi.
+
+292
+00:22:46,279 --> 00:22:46,640
+Doğru mu?
+
+293
+00:22:46,640 --> 00:22:49,880
+Evet hocam.
+
+294
+00:22:50,079 --> 00:22:51,640
+Sonra direkt çıkıyor buradan zaten.
+
+295
+00:22:52,460 --> 00:22:52,920
+Bir dakika.
+
+296
+00:22:52,920 --> 00:22:55,100
+x kare artı 1 şeklinde yazsak.
+
+297
+00:22:55,100 --> 00:22:57,380
+Evet.
+
+298
+00:22:57,660 --> 00:22:58,340
+Buradan geliyor.
+
+299
+00:22:59,759 --> 00:23:03,019
+Polinom bölmesini yapınca gelmesi lazım normalde doğrudan.
+
+300
+00:23:03,120 --> 00:23:03,940
+Niye gelmedi?
+
+301
+00:23:04,100 --> 00:23:05,940
+Kafam karıştı bak.
+
+302
+00:23:07,200 --> 00:23:08,200
+x kare artı 1.
+
+303
+00:23:08,600 --> 00:23:11,240
+Polinom bölmesi yaparsak yapmaya da gerek yok.
+
+304
+00:23:11,519 --> 00:23:12,279
+Şuradan zaten.
+
+305
+00:23:12,960 --> 00:23:13,559
+Doğru.
+
+306
+00:23:14,000 --> 00:23:15,880
+Şurayı zaten birlikte düşünürseniz.
+
+307
+00:23:15,880 --> 00:23:20,080
+1 dx bölü x kare artı 1 eksi.
+
+308
+00:23:21,080 --> 00:23:24,539
+x dx bölü x kare artı 1.
+
+309
+00:23:24,539 --> 00:23:25,140
+Evet.
+
+310
+00:23:25,259 --> 00:23:28,820
+Polinom bölmesine de gerek kalmadan yapabiliyoruz.
+
+311
+00:23:28,920 --> 00:23:30,900
+Ama polinom bölmesiyle de gelmesi lazım.
+
+312
+00:23:31,000 --> 00:23:32,120
+Bunu niye yakalayamadık biz?
+
+313
+00:23:32,559 --> 00:23:34,080
+Şurada çarpanlara mı ayıracaktık yine?
+
+314
+00:23:37,580 --> 00:23:38,080
+Evet.
+
+315
+00:23:38,559 --> 00:23:39,480
+Bu şekilde geliyormuş.
+
+316
+00:23:39,759 --> 00:23:39,900
+Tamam.
+
+317
+00:23:41,480 --> 00:23:42,120
+Sıkıntı yok.
+
+318
+00:23:45,120 --> 00:23:46,180
+Var mı problem?
+
+319
+00:23:46,180 --> 00:23:46,279
+Problem.
+
+320
+00:23:46,279 --> 00:24:13,779
+Evet.
+
+321
+00:23:54,387 --> 00:23:57,347
+Evet. Devam edelim.
+
+322
+00:23:59,528 --> 00:24:02,187
+Hocam, integral tamamı 1 olmayacak mı?
+
+323
+00:24:02,867 --> 00:24:03,227
+Nasıl?
+
+324
+00:24:03,667 --> 00:24:05,028
+Sanki doğru yazmadık.
+
+325
+00:24:08,147 --> 00:24:09,327
+Şurası doğru değil mi?
+
+326
+00:24:11,127 --> 00:24:13,887
+Bu şekilde bir eksi x bölü x kare artı 1 oluyor.
+
+327
+00:24:19,059 --> 00:24:29,240
+Tamam, bu bu şekilde. 1 bölü 2 ln x kare artı 1. Bu da art tancant x. Yanlış giden ne var? Yanlış yok. Şu an öyle.
+
+328
+00:24:30,700 --> 00:24:32,960
+x kare artı 1 şey sadeleşiyor.
+
+329
+00:24:35,700 --> 00:24:42,799
+x kare artı 1 nerede sadeleşiyor? Yani şu I1'i diyorsunuz şu zaman. I2 ile I1'in toplamı I'mız.
+
+330
+00:24:46,387 --> 00:24:54,867
+Ben anlamadım arkadaşlar. Burada tamam bunu yakaladık. x kare artı 1'ler. 1 geliyor zaten. Ha şurası 1 geliyordu. Doğru.
+
+331
+00:24:56,507 --> 00:24:58,687
+Aynen. Şurayı dükkast ediyorsunuz. Tamam.
+
+332
+00:25:01,288 --> 00:25:04,567
+Artık silgi nerede?
+
+333
+00:25:07,627 --> 00:25:09,347
+Doğru söylüyorsunuz.
+
+334
+00:25:10,847 --> 00:25:14,907
+x kare artı 1'i sadeleşince dx oluyor.
+
+335
+00:25:16,387 --> 00:25:18,347
+Şurası x oluyor.
+
+336
+00:25:19,347 --> 00:25:19,567
+Evet.
+
+337
+00:25:22,167 --> 00:25:22,927
+Okey.
+
+338
+00:25:23,528 --> 00:25:24,247
+Let's go on.
+
+339
+00:25:34,291 --> 00:25:35,751
+Let's solve this problem.
+
+340
+00:25:35,751 --> 00:25:38,291
+Exponential 3t dk
+
+341
+00:25:38,291 --> 00:25:41,091
+over
+
+342
+00:25:41,091 --> 00:25:43,871
+exponential t
+
+343
+00:25:43,871 --> 00:25:46,551
+exponential
+
+344
+00:25:46,551 --> 00:25:49,172
+2t
+
+345
+00:25:49,172 --> 00:25:51,591
+not exponential tt, sorry.
+
+346
+00:25:52,791 --> 00:25:53,751
+Şöyle olsun.
+
+347
+00:25:54,111 --> 00:25:54,871
+Hatta olmasın.
+
+348
+00:25:54,871 --> 00:25:57,971
+Exponential 3t, exponential 2t
+
+349
+00:25:57,971 --> 00:25:59,371
+minus
+
+350
+00:25:59,371 --> 00:26:02,311
+exponential 2 times
+
+351
+00:26:02,311 --> 00:26:03,851
+exponential t
+
+352
+00:26:03,851 --> 00:26:05,192
+plus 1.
+
+353
+00:26:05,192 --> 00:26:06,932
+OK, let's compute this problem.
+
+354
+00:27:00,915 --> 00:27:07,975
+Evet, ne yapacağız arkadaşlar? Hangi değişken dönüşümü ya da doğrudan polinom bölmesi de yapabilirsiniz. Ama bu daha rahat görmek için.
+
+355
+00:27:07,975 --> 00:27:10,695
+Let's do this change of variable.
+
+356
+00:27:15,571 --> 00:27:16,771
+So, this is du.
+
+357
+00:27:19,891 --> 00:27:28,251
+Okay, so if you factorize this, exponential 2t, exponential t, so let's put et.
+
+358
+00:27:29,051 --> 00:27:33,651
+So, exponential t is equal to u, so this is transformed into u square.
+
+359
+00:27:33,651 --> 00:27:37,291
+Okay, so this is transformed into du.
+
+360
+00:27:37,291 --> 00:27:48,671
+So, this is transformed into u square du over, so u square minus 2 u plus 1.
+
+361
+00:27:49,091 --> 00:27:54,571
+Okay, so as you see, we have some polynomial, degree of 2 here.
+
+362
+00:27:54,692 --> 00:27:57,531
+So, we have some polynomial, degree of 2.
+
+363
+00:27:57,531 --> 00:28:05,651
+So, that's why, so you need to do polynomial quotient algorithm for polynomials.
+
+364
+00:28:05,651 --> 00:28:11,731
+Ya da burada, ya da burada ne yapacaksınız, bir şeyleri ekleyip çıkartacaksınız, hangisi kolayınıza geliyorsa, bir şekilde yapın.
+
+365
+00:28:13,251 --> 00:28:17,271
+Let's divide u square by u square minus 2 u plus 1.
+
+366
+00:28:17,271 --> 00:28:24,431
+So, 1, so multiply by 1, u square minus 2 u plus 1.
+
+367
+00:28:24,551 --> 00:28:25,411
+Let's subtract.
+
+368
+00:28:29,011 --> 00:28:33,591
+So u2 minus u2 0.
+
+369
+00:28:34,471 --> 00:28:36,912
+And 0 minus minus 2u.
+
+370
+00:28:37,271 --> 00:28:39,751
+2u minus 1.
+
+371
+00:28:39,951 --> 00:28:42,531
+So actually this is degree of 1.
+
+372
+00:28:42,692 --> 00:28:43,851
+So this is degree of 2.
+
+373
+00:28:43,971 --> 00:28:44,711
+We stop there.
+
+374
+00:28:44,711 --> 00:28:47,971
+But that's why u2 is equal to.
+
+375
+00:28:48,711 --> 00:28:50,511
+Sorry u2 over.
+
+376
+00:28:51,071 --> 00:28:56,451
+U2 over.
+
+377
+00:28:56,451 --> 00:28:59,231
+U2 minus 2u plus 1.
+
+378
+00:28:59,351 --> 00:29:00,471
+Is equal to.
+
+379
+00:29:00,912 --> 00:29:04,091
+1 plus 2u minus 1.
+
+380
+00:29:04,551 --> 00:29:04,951
+Over.
+
+381
+00:29:05,451 --> 00:29:11,031
+U2 minus 2u plus 1.
+
+382
+00:29:11,031 --> 00:29:12,351
+So we have this.
+
+383
+00:29:12,991 --> 00:29:14,152
+Now attention here.
+
+384
+00:29:15,692 --> 00:29:18,751
+So if you integrate both sides to this equality.
+
+385
+00:29:21,751 --> 00:29:23,551
+I integration.
+
+386
+00:29:24,551 --> 00:29:26,091
+Integration of 1.
+
+387
+00:29:26,091 --> 00:29:26,711
+U.
+
+388
+00:29:27,511 --> 00:29:29,371
+And integration of.
+
+389
+00:29:29,711 --> 00:29:31,531
+2u minus 1.
+
+390
+00:29:32,111 --> 00:29:32,511
+Du.
+
+391
+00:29:33,051 --> 00:29:33,432
+Over.
+
+392
+00:29:34,211 --> 00:29:35,611
+So look at here.
+
+393
+00:29:35,711 --> 00:29:37,211
+So this is the square of.
+
+394
+00:29:37,311 --> 00:29:38,291
+U minus 1.
+
+395
+00:29:39,471 --> 00:29:39,811
+Okay.
+
+396
+00:29:40,311 --> 00:29:41,351
+Now that's why.
+
+397
+00:29:42,172 --> 00:29:43,471
+So we can.
+
+398
+00:29:44,251 --> 00:29:44,871
+Express.
+
+399
+00:29:45,211 --> 00:29:46,391
+2u minus 1.
+
+400
+00:29:46,471 --> 00:29:46,851
+Over.
+
+401
+00:29:47,011 --> 00:29:48,531
+U minus 1.
+
+402
+00:29:48,692 --> 00:29:49,051
+Square.
+
+403
+00:29:49,051 --> 00:29:52,531
+In terms of.
+
+404
+00:29:52,531 --> 00:29:53,791
+A minus.
+
+405
+00:29:54,331 --> 00:29:55,011
+A over.
+
+406
+00:29:55,011 --> 00:29:56,251
+U minus 1.
+
+407
+00:29:56,451 --> 00:29:56,811
+Plus.
+
+408
+00:29:57,491 --> 00:29:58,511
+B over.
+
+409
+00:29:58,791 --> 00:30:00,192
+U minus 1.
+
+410
+00:30:00,192 --> 00:30:00,672
+Square.
+
+411
+00:30:00,672 --> 00:30:01,192
+Okay.
+
+412
+00:30:02,031 --> 00:30:03,251
+Now expand this.
+
+413
+00:30:04,051 --> 00:30:04,851
+Term by.
+
+414
+00:30:04,971 --> 00:30:06,132
+U minus 1.
+
+415
+00:30:06,672 --> 00:30:07,731
+Bu şekilde arkadaşlar.
+
+416
+00:30:08,811 --> 00:30:09,371
+Bunu da.
+
+417
+00:30:10,831 --> 00:30:13,331
+1 ile genişletecek olursanız.
+
+418
+00:30:13,331 --> 00:30:14,672
+2u.
+
+419
+00:30:14,851 --> 00:30:16,371
+Eksi 1.
+
+420
+00:30:16,951 --> 00:30:17,871
+Eşit.
+
+421
+00:30:18,871 --> 00:30:18,912
+U.
+
+422
+00:30:18,912 --> 00:30:19,851
+Eksi A.
+
+423
+00:30:20,291 --> 00:30:20,672
+Burada.
+
+424
+00:30:21,291 --> 00:30:22,371
+B gelir arkadaşlar.
+
+425
+00:30:22,611 --> 00:30:23,071
+Buradan.
+
+426
+00:30:23,291 --> 00:30:24,011
+Öleşiklerden.
+
+427
+00:30:24,111 --> 00:30:24,751
+A 2 mi geliyor?
+
+428
+00:30:25,271 --> 00:30:25,851
+A 2.
+
+429
+00:30:26,451 --> 00:30:27,551
+B'miz de.
+
+430
+00:30:27,951 --> 00:30:28,511
+1 gelir.
+
+431
+00:30:29,271 --> 00:30:29,711
+Okay.
+
+432
+00:30:29,951 --> 00:30:31,071
+By solving this.
+
+433
+00:30:31,611 --> 00:30:32,392
+By using.
+
+434
+00:30:32,831 --> 00:30:33,871
+Identical relation.
+
+435
+00:30:34,051 --> 00:30:35,311
+Coming from this equality.
+
+436
+00:30:35,531 --> 00:30:36,932
+We can obtain A 2.
+
+437
+00:30:37,491 --> 00:30:38,192
+A is 2.
+
+438
+00:30:38,331 --> 00:30:39,371
+And B is 1.
+
+439
+00:30:39,612 --> 00:30:39,831
+Okay.
+
+440
+00:30:39,831 --> 00:30:40,091
+So.
+
+441
+00:30:40,672 --> 00:30:41,511
+This integration.
+
+442
+00:30:42,111 --> 00:30:42,851
+So that's why.
+
+443
+00:30:43,652 --> 00:30:44,412
+U plus.
+
+444
+00:30:44,511 --> 00:30:45,211
+This integration.
+
+445
+00:30:45,531 --> 00:30:46,871
+Is a colon to this.
+
+446
+00:30:47,351 --> 00:30:48,432
+So A is 2.
+
+447
+00:30:48,652 --> 00:30:49,132
+Times.
+
+448
+00:30:49,311 --> 00:30:49,771
+And then.
+
+449
+00:30:49,891 --> 00:30:50,331
+Absolute.
+
+450
+00:30:50,331 --> 00:30:50,632
+So.
+
+451
+00:30:50,731 --> 00:30:51,851
+U minus 1.
+
+452
+00:30:52,432 --> 00:30:53,611
+And B is 1.
+
+453
+00:30:54,091 --> 00:30:54,491
+And.
+
+454
+00:30:55,211 --> 00:30:55,351
+So.
+
+455
+00:30:56,991 --> 00:30:57,912
+Integration of.
+
+456
+00:30:58,011 --> 00:30:58,391
+1 over.
+
+457
+00:30:58,451 --> 00:30:59,192
+U minus 1.
+
+458
+00:30:59,271 --> 00:30:59,551
+Square.
+
+459
+00:30:59,891 --> 00:31:02,531
+Minus.
+
+460
+00:31:03,051 --> 00:31:03,932
+1 over.
+
+461
+00:31:04,311 --> 00:31:06,071
+U minus 1.
+
+462
+00:31:06,451 --> 00:31:06,711
+And.
+
+463
+00:31:06,932 --> 00:31:07,451
+Plus.
+
+464
+00:31:07,971 --> 00:31:08,172
+U.
+
+465
+00:31:08,412 --> 00:31:09,471
+I believe.
+
+466
+00:31:09,531 --> 00:31:09,711
+This.
+
+467
+00:31:09,831 --> 00:31:12,152
+U is equal to.
+
+468
+00:31:12,611 --> 00:31:13,471
+Expecial T.
+
+469
+00:31:13,912 --> 00:31:14,152
+Okay.
+
+470
+00:31:14,652 --> 00:31:15,351
+Var mı suda sola?
+
+471
+00:31:16,091 --> 00:31:17,031
+Anlaşımın bir yer var mı?
+
+472
+00:31:17,692 --> 00:31:17,932
+Yok.
+
+473
+00:31:18,031 --> 00:31:20,471
+Sınavlarda gelebilecek soru tipleri bunlar işte zaten arkadaşlar.
+
+474
+00:31:21,891 --> 00:31:23,531
+Başka bir tane daha vardı.
+
+475
+00:31:23,731 --> 00:31:25,172
+Soru tipi çıkmış bir soru.
+
+476
+00:31:25,311 --> 00:31:26,152
+Onu göstereyim.
+
+477
+00:31:26,932 --> 00:31:28,551
+Çıkmış sorular üzerinden gidelim.
+
+478
+00:31:28,551 --> 00:31:34,231
+Evet.
+
+479
+00:31:34,832 --> 00:31:36,271
+Bir soru arıyorum.
+
+480
+00:31:45,428 --> 00:31:45,988
+Okay.
+
+481
+00:31:47,688 --> 00:31:49,188
+Let's solve this problem.
+
+482
+00:31:52,248 --> 00:32:10,148
+So, cosinq t over sinq t minus sinq t minus 6 sin t.
+
+483
+00:32:10,148 --> 00:32:11,928
+So, what can we do?
+
+484
+00:32:12,428 --> 00:32:19,868
+In order to transform this problem into integration problem for some rational functions.
+
+485
+00:32:20,208 --> 00:32:20,428
+Okay.
+
+486
+00:32:22,108 --> 00:32:26,888
+Evet, bu problemi rasyonel fonksiyonların integrali problemine dönüştüreceksiniz.
+
+487
+00:32:27,528 --> 00:32:31,968
+Bunun için ilk önce bir klasik değişken dönüşümü yapacaksınız.
+
+488
+00:32:31,968 --> 00:32:32,807
+Okay.
+
+489
+00:32:32,928 --> 00:32:35,408
+Which part of this integral function must be you?
+
+490
+00:32:35,408 --> 00:32:42,948
+In order to transform this problem into problem of rational functions.
+
+491
+00:32:49,491 --> 00:32:52,251
+Of course. Herkes uygulasın bakayım.
+
+492
+00:32:53,652 --> 00:32:57,491
+Kalem oynatın. İşlem yapmazsanız, pratik kazanamazsınız.
+
+493
+00:32:57,491 --> 00:33:01,231
+Bol bol kalem oynatmak lazım. Yoksa unutabiliyor insan.
+
+494
+00:33:03,211 --> 00:33:04,551
+Bol bol işlem yapın arkadaşlar.
+
+495
+00:33:38,483 --> 00:33:40,203
+Evet, bunu okuyor musunuz?
+
+496
+00:33:40,203 --> 00:33:42,203
+Biraz işlem gerektiriyor.
+
+497
+00:33:56,627 --> 00:33:58,947
+Evet, hadi yapalım beraber.
+
+498
+00:34:00,587 --> 00:34:06,907
+Okay, first of all, so we do this change of variable.
+
+499
+00:34:07,788 --> 00:34:11,648
+We transfer our problem in problem operation function.
+
+500
+00:34:13,967 --> 00:34:18,307
+So, cosin t dt is equal to du.
+
+501
+00:34:19,307 --> 00:34:20,807
+Now, we substitute this.
+
+502
+00:34:20,807 --> 00:34:28,768
+So, we factorize this, first of all, cosin squared t, cosin t, let me put it here.
+
+503
+00:34:29,347 --> 00:34:33,168
+So, this is 1 minus sin squared t.
+
+504
+00:34:33,168 --> 00:34:46,387
+Okay, now if you substitute sin t into integral function, we have u squared and the cosin dt, this is du.
+
+505
+00:34:47,268 --> 00:34:49,967
+So, this is 1 minus u squared, attention here.
+
+506
+00:34:50,807 --> 00:34:52,347
+1 minus u squared, sorry.
+
+507
+00:34:52,547 --> 00:34:54,087
+So, this is 1 minus square.
+
+508
+00:34:54,847 --> 00:35:06,668
+1 minus u squared times du over, so let's consider this u cubed minus u squared minus 6u.
+
+509
+00:35:06,668 --> 00:35:11,307
+Okay, now, so as you see, we have some rational function.
+
+510
+00:35:11,527 --> 00:35:15,248
+That's why we need to express this rational function.
+
+511
+00:35:15,248 --> 00:35:31,188
+in terms of basic fraction, 1 minus u squared over, if you take common factor, u squared minus u minus 6.
+
+512
+00:35:31,188 --> 00:35:38,567
+Okay, now, as you see, 1 minus u squared over, u times, so this is u minus.
+
+513
+00:35:38,567 --> 00:36:08,567
+x3, x3
+
+514
+00:36:08,567 --> 00:36:11,867
+So we write this basic fraction.
+
+515
+00:36:12,607 --> 00:36:15,807
+So for this factor, we need to write this basic fraction.
+
+516
+00:36:17,107 --> 00:36:20,487
+And for this factor, we need to write this basic fraction.
+
+517
+00:36:20,927 --> 00:36:22,748
+Look at here, attention here.
+
+518
+00:36:23,168 --> 00:36:26,788
+So each factor in the denominator has real root.
+
+519
+00:36:26,907 --> 00:36:28,208
+There is no multiple root.
+
+520
+00:36:28,668 --> 00:36:30,168
+That means different color here.
+
+521
+00:36:30,627 --> 00:36:31,407
+So look at here.
+
+522
+00:36:31,407 --> 00:36:34,228
+So by ignoring u at the left-hand side
+
+523
+00:36:34,228 --> 00:36:38,367
+and substituting root of u, which is zero, interesting part,
+
+524
+00:36:38,567 --> 00:36:46,148
+a is equal to 1 over, okay, minus 3, okay, 1 over minus 6, okay.
+
+525
+00:36:46,587 --> 00:36:51,107
+Let's compute, let's compute the value of b.
+
+526
+00:36:51,648 --> 00:36:55,248
+So taking into account the root of u minus 3, which is 3,
+
+527
+00:36:55,788 --> 00:36:59,228
+and ignoring u minus 3 at the left-hand side
+
+528
+00:36:59,228 --> 00:37:02,288
+and substituting 3 into rest and resting part.
+
+529
+00:37:02,288 --> 00:37:03,387
+Ne geliyor arkadaşlar?
+
+530
+00:37:03,648 --> 00:37:04,268
+Eksi 8 mi?
+
+531
+00:37:04,347 --> 00:37:05,788
+Eksi 8 bölü.
+
+532
+00:37:05,788 --> 00:37:11,668
+U gördüğümüz yere 3 yazarsak, 3 buradan, 5, 8, 8 bölü 15 geldi, doğru mu?
+
+533
+00:37:12,047 --> 00:37:13,047
+Şimdi c yapalım.
+
+534
+00:37:13,228 --> 00:37:19,467
+Okay, by considering this factor,
+
+535
+00:37:20,527 --> 00:37:22,547
+so it has minus 2 root,
+
+536
+00:37:23,327 --> 00:37:26,648
+and ignoring this part at the left-hand side,
+
+537
+00:37:26,887 --> 00:37:29,867
+substitute minus 2 interesting part.
+
+538
+00:37:29,867 --> 00:37:35,027
+So 1 minus, okay, 4 over,
+
+539
+00:37:36,027 --> 00:37:38,608
+eksi 2 yazıyoruz arkadaşlar.
+
+540
+00:37:38,847 --> 00:37:41,768
+Eksi 2 buradan, eksi 5, ne yapı, art 10 mu yapıyor?
+
+541
+00:37:42,108 --> 00:37:42,967
+Eksi 3, 4, 10.
+
+542
+00:37:42,967 --> 00:37:45,087
+Okay, now as you see,
+
+543
+00:37:45,087 --> 00:37:49,407
+I integration,
+
+544
+00:37:49,407 --> 00:37:52,248
+my integration,
+
+545
+00:37:52,248 --> 00:37:52,268
+my flow,
+
+546
+00:37:52,947 --> 00:37:54,967
+and after the flow u,
+
+547
+00:37:54,967 --> 00:38:10,967
+you,
+
+548
+00:37:55,539 --> 00:37:57,239
+u is sine t.
+
+549
+00:37:59,300 --> 00:38:07,679
+B is minus 8 over 15 times ln absolute of u minus 3, u is sine t.
+
+550
+00:38:08,880 --> 00:38:16,539
+And c is minus 3 over 10 times ln of absolute of u plus 2,
+
+551
+00:38:16,539 --> 00:38:22,300
+u is sine t plus 2 and plus constant.
+
+552
+00:38:22,739 --> 00:38:24,119
+Okay, is there any question?
+
+553
+00:38:24,119 --> 00:38:26,279
+Basit bir soruymuş, güzel bir soru.
+
+554
+00:38:26,480 --> 00:38:28,300
+Yani sınavda zaten böyle sorular gelir.
+
+555
+00:38:29,099 --> 00:38:30,719
+Bundan daha zor gelir mi bilmiyorum.
+
+556
+00:38:31,719 --> 00:38:32,739
+Mantık bu arkadaşlar.
+
+557
+00:38:33,380 --> 00:38:33,599
+Evet.
+
+558
+00:38:35,199 --> 00:38:37,739
+Şimdi herhalde anlaşıldı.
+
+559
+00:38:40,239 --> 00:38:41,920
+Bir tane örnek çörelim.
+
+560
+00:38:41,920 --> 00:38:42,639
+Belirli link.
+
+561
+00:38:43,000 --> 00:38:44,920
+Yani kalı.
+
+562
+00:38:49,320 --> 00:38:52,019
+Some function f of x.
+
+563
+00:39:11,635 --> 00:39:12,135
+Evet.
+
+564
+00:39:15,443 --> 00:39:17,284
+şurayı pi bölü 4 yazalım.
+
+565
+00:39:22,356 --> 00:39:25,936
+Evet, eksi pi bölü 4'ten pi bölü 4'e arkadaşlar böyle.
+
+566
+00:39:38,036 --> 00:39:39,036
+P7
+
+567
+00:39:47,923 --> 00:39:49,264
+Evet, öyle bir problem.
+
+568
+00:39:59,027 --> 00:40:03,347
+Ok, now compute disintegration.
+
+569
+00:40:04,847 --> 00:40:05,647
+From
+
+570
+00:40:09,588 --> 00:40:17,888
+x kare artı 2x, f'
+
+571
+00:40:17,888 --> 00:40:19,388
+f'
+
+572
+00:40:19,388 --> 00:40:22,888
+Sınavlarda böyle sorular. Finalde böyle bir soru görebilirsiniz.
+
+573
+00:40:28,340 --> 00:40:29,860
+Evet, bulsun bakalım herkes.
+
+574
+00:40:32,600 --> 00:40:33,940
+Bekliyorum cevabınızı.
+
+575
+00:40:41,907 --> 00:40:45,007
+Tamam [öğrenci], çözeceğim şimdi onu. Önce bunu çözelim.
+
+576
+00:40:57,396 --> 00:41:00,296
+Evet. Düşünün bakalım bu soruyu.
+
+577
+00:41:03,731 --> 00:41:05,931
+Bunlar final konuları. Unutmayın.
+
+578
+00:41:05,931 --> 00:41:07,052
+Do not forget.
+
+579
+00:41:08,371 --> 00:41:11,911
+These topics are those of final exam.
+
+580
+00:41:13,231 --> 00:41:13,552
+Okay.
+
+581
+00:41:14,411 --> 00:41:16,711
+Now, let's all together.
+
+582
+00:41:22,996 --> 00:41:34,596
+from, let me use black color, from minus pi over, let me take a look, from minus pi over 4 to pi over 4.
+
+583
+00:41:38,612 --> 00:41:44,472
+So, we need to use this rule, 1 over x square plus 1 dx.
+
+584
+00:41:46,231 --> 00:41:53,112
+And from pi over 4 to pi, we need to use this.
+
+585
+00:41:53,992 --> 00:42:00,932
+x times x square plus 1 dx.
+
+586
+00:42:01,632 --> 00:42:02,112
+Okay.
+
+587
+00:42:04,632 --> 00:42:07,112
+Okay, so let's say this is i1.
+
+588
+00:42:08,612 --> 00:42:11,032
+Let's say this is i2.
+
+589
+00:42:13,472 --> 00:42:15,291
+So, i1 is simple.
+
+590
+00:42:16,872 --> 00:42:18,291
+i1 is...
+
+591
+00:42:21,940 --> 00:42:27,599
+R tan x, so from minus pi over 4 to pi over 4.
+
+592
+00:42:28,639 --> 00:42:32,360
+So R tan pi over 4, 1.
+
+593
+00:42:33,019 --> 00:42:37,860
+Okay, minus R tan minus pi over 4, minus 1.
+
+594
+00:42:38,200 --> 00:42:39,360
+So the answer is 2.
+
+595
+00:42:39,559 --> 00:42:40,240
+I want 2.
+
+596
+00:42:40,820 --> 00:42:42,740
+Let's compute I2.
+
+597
+00:42:44,840 --> 00:42:47,079
+In order to compute I2,
+
+598
+00:42:47,079 --> 00:42:52,920
+so we need to address this ratio of fraction
+
+599
+00:42:52,920 --> 00:42:56,079
+in terms of some basic fractions.
+
+600
+00:42:57,240 --> 00:43:01,420
+So this is degree of, this is degree of 2.
+
+601
+00:43:02,200 --> 00:43:04,980
+Okay, now, so, and it has complex root.
+
+602
+00:43:05,119 --> 00:43:07,880
+That's why we need to write here some polynomial degree of 1.
+
+603
+00:43:09,659 --> 00:43:14,000
+And we expand this by x squared plus 1.
+
+604
+00:43:14,000 --> 00:43:15,539
+We expand this by x.
+
+605
+00:43:15,539 --> 00:43:24,740
+So 1, 1 is equal to ax squared plus a plus bx squared plus cx.
+
+606
+00:43:24,920 --> 00:43:28,119
+So we know that a directly, a0.
+
+607
+00:43:28,240 --> 00:43:28,820
+Can you see that?
+
+608
+00:43:29,099 --> 00:43:33,840
+So by ignoring this, so, and substituting x0, interesting term,
+
+609
+00:43:34,059 --> 00:43:34,740
+a is 1.
+
+610
+00:43:34,820 --> 00:43:35,900
+We know this a is 1.
+
+611
+00:43:36,539 --> 00:43:40,579
+So coefficient of x squared at the left-hand side here,
+
+612
+00:43:40,700 --> 00:43:41,920
+0 times x squared.
+
+613
+00:43:41,920 --> 00:43:43,059
+So this is 0.
+
+614
+00:43:43,579 --> 00:43:46,880
+And the coefficient of x term at the left-hand side, 0.
+
+615
+00:43:47,480 --> 00:43:49,720
+And coefficient of constant term.
+
+616
+00:43:49,880 --> 00:43:52,079
+Okay, so a, a is 1.
+
+617
+00:43:52,240 --> 00:43:54,659
+So as you see, a is 1.
+
+618
+00:43:54,659 --> 00:43:57,400
+So a is 1.
+
+619
+00:43:57,820 --> 00:43:58,960
+And b is 1.
+
+620
+00:43:59,579 --> 00:44:00,840
+b is minus 1.
+
+621
+00:44:01,420 --> 00:44:02,740
+So that's why,
+
+622
+00:44:03,860 --> 00:44:06,119
+i2 integration,
+
+623
+00:44:06,539 --> 00:44:08,579
+integration of 1 over x,
+
+624
+00:44:08,940 --> 00:44:10,420
+ln absolute of x.
+
+625
+00:44:10,420 --> 00:44:40,400
+x squared plus 1.
+
+626
+00:44:40,420 --> 00:44:40,920
+y.
+
+627
+00:44:42,480 --> 00:44:45,599
+Evet, pi bölüden piye.
+
+628
+00:44:46,000 --> 00:44:47,240
+Bunları hesaplıyorsunuz arkadaşlar.
+
+629
+00:44:47,380 --> 00:44:48,820
+Absürt değerler gelecek tabii ki.
+
+630
+00:44:49,039 --> 00:44:50,240
+Hele çok uygun değerler olmaz.
+
+631
+00:44:50,380 --> 00:44:51,699
+Zihnimizden yazdığından dolayı.
+
+632
+00:44:52,880 --> 00:44:54,699
+Böyle, eksi 1 bölü 2.
+
+633
+00:44:56,199 --> 00:44:58,320
+ln pi kare artı 1.
+
+634
+00:44:58,440 --> 00:45:00,940
+Sınavda tabii ki daha uygun değerler verirler.
+
+635
+00:45:01,940 --> 00:45:03,880
+Eksi ln ne gelecek?
+
+636
+00:45:04,119 --> 00:45:05,619
+Pi kare bölü 16.
+
+637
+00:45:05,619 --> 00:45:07,639
+artı artı 1.
+
+638
+00:45:08,579 --> 00:45:08,920
+Evet.
+
+639
+00:45:09,920 --> 00:45:12,440
+i1 ile i2'nin toplamı arkadaşlar.
+
+640
+00:45:12,639 --> 00:45:13,240
+Değerler böyle.
+
+641
+00:45:13,680 --> 00:45:14,280
+Yanlış değil.
+
+642
+00:45:14,480 --> 00:45:15,320
+Sonuç biraz şey.
+
+643
+00:45:17,320 --> 00:45:17,880
+Evet.
+
+644
+00:45:18,059 --> 00:45:18,860
+Var mı sorusu olan?
+
+645
+00:45:19,740 --> 00:45:21,019
+Sorusu olan yok galiba.
+
+646
+00:45:21,019 --> 00:45:22,960
+Şimdi [öğrenci]'ın da sorusunu çözelim.
+
+647
+00:45:23,000 --> 00:45:24,180
+Bir ara verelim ondan sonra.
+
+648
+00:45:24,680 --> 00:45:25,639
+Neredeydin [öğrenci]?
+
+649
+00:45:25,740 --> 00:45:26,599
+Sen ne sormuştun?
+
+650
+00:45:27,519 --> 00:45:27,780
+Evet.
+
+651
+00:45:28,400 --> 00:45:29,700
+[öğrenci] diyor ki arkadaşlar.
+
+652
+00:45:30,519 --> 00:45:31,360
+Şöyle bir soru.
+
+653
+00:45:31,360 --> 00:45:33,860
+xdx x kare artı x artı 1'in integrali.
+
+654
+00:45:33,960 --> 00:45:34,159
+Okey.
+
+655
+00:45:34,260 --> 00:45:35,059
+Let's compute.
+
+656
+00:45:39,027 --> 00:46:06,147
+equation of [öğrenci] x kare artı 2x, f' squared plus x plus 1. So in such cases, attention here. So first of all, focus on this quadratic expression. So this quadratic expression has no real root because of the fact that a discriminant of this quadratic expression is negative.
+
+657
+00:46:06,147 --> 00:46:13,267
+b square minus 4ac is negative. So this means that this integration is associated with arctangent. Okay.
+
+658
+00:46:14,227 --> 00:46:17,887
+Dikkat edin. x kare artı x artı 1'in ney var arkadaşlar? Şey yok.
+
+659
+00:46:19,487 --> 00:46:22,307
+İki tane yol var. The first method.
+
+660
+00:46:23,827 --> 00:46:25,667
+Okay. The first method.
+
+661
+00:46:30,643 --> 00:47:58,643
+Yükselen İçinçlerine baktığınızı
+
+662
+00:47:58,643 --> 00:48:00,643
+Yükselen İçinçlerine baktığınız
+
+663
+00:48:00,643 --> 00:48:30,643
+Yükselen İçinçlerine baktığınızı
+
+664
+00:48:30,643 --> 00:50:20,643
+Yükselençlerine baktığınızı
+
+665
+00:50:20,643 --> 00:50:22,643
+1 over square root of
+
+666
+00:50:22,643 --> 00:50:26,643
+1 over square root of 3
+
+667
+00:50:26,643 --> 00:50:28,643
+So times
+
+668
+00:50:28,643 --> 00:50:30,643
+Arctangent
+
+669
+00:50:29,936 --> 00:50:32,496
+T, arketagin T over A.
+
+670
+00:50:32,896 --> 00:50:34,436
+T over A.
+
+671
+00:50:34,556 --> 00:50:35,996
+T is, let me use
+
+672
+00:50:35,996 --> 00:50:37,756
+the formal variable.
+
+673
+00:50:39,175 --> 00:50:40,115
+T is
+
+674
+00:50:40,115 --> 00:50:42,856
+X plus 1 over 2.
+
+675
+00:50:43,396 --> 00:50:44,876
+Okay, so X plus
+
+676
+00:50:44,876 --> 00:50:46,516
+1 over 2
+
+677
+00:50:46,516 --> 00:50:48,496
+over A.
+
+678
+00:50:48,836 --> 00:50:50,256
+So according to this formula,
+
+679
+00:50:50,536 --> 00:50:52,596
+A here, A is
+
+680
+00:50:52,596 --> 00:50:53,976
+this, this is A.
+
+681
+00:50:56,276 --> 00:50:58,135
+Square root of
+
+682
+00:50:58,135 --> 00:50:59,135
+3 over A.
+
+683
+00:50:59,135 --> 00:51:01,516
+Okay, so this is J integration.
+
+684
+00:51:02,056 --> 00:51:02,196
+Okay.
+
+685
+00:51:03,056 --> 00:51:04,155
+Herhalde anlaşıldı.
+
+686
+00:51:06,635 --> 00:51:08,216
+Artı konstant
+
+687
+00:51:08,216 --> 00:51:09,736
+artı konstant
+
+688
+00:51:09,736 --> 00:51:10,655
+Okay.
+
+689
+00:51:15,380 --> 00:51:17,180
+Var mı sorusu olan başka?
+
+690
+00:51:17,780 --> 00:51:18,200
+Geçiyorum.
+
+691
+00:51:20,380 --> 00:51:21,880
+Hocam benim bir sorum var.
+
+692
+00:51:22,579 --> 00:51:23,180
+Sor.
+
+693
+00:51:23,420 --> 00:51:25,780
+Şimdi hocam x artı 1 bölü 2 yazdık ya.
+
+694
+00:51:26,320 --> 00:51:30,240
+Yani aklımıza nasıl böyle bir denklem geldi?
+
+695
+00:51:31,559 --> 00:51:32,019
+Neden?
+
+696
+00:51:32,440 --> 00:51:34,900
+Ben en başta ne demiştim?
+
+697
+00:51:34,980 --> 00:51:35,680
+Neydi senin ismi?
+
+698
+00:51:35,820 --> 00:51:37,760
+En başta ne demiştim?
+
+699
+00:51:37,840 --> 00:51:43,680
+Bir kuadratik ifadenin diskriminantı negatif ise bu ark tanjantla ilişkilidir.
+
+700
+00:51:43,780 --> 00:51:44,980
+Bu formüle ilişkilidir.
+
+701
+00:51:45,119 --> 00:52:15,119
+Tamam mı?
+
+702
+00:51:59,476 --> 00:52:18,476
+consider this discriminant. Let's suppose that discriminant b square minus 4ac. Let's suppose that 0 then. So your problem is associated with this. Okay? Anlaşıldı hocam. Tamam, sağ olun.
+
+703
+00:52:18,956 --> 00:52:25,655
+Yani o yüzden ben onu ne yapıyorum? Bir şeylerin karesi şunla. Tekar artı akareye benzetmeye çalışıyorum.
+
+704
+00:52:25,655 --> 00:52:29,516
+Bunun diskriminantı negatif olduğundan dolayı.
+
+705
+00:52:29,635 --> 00:52:31,195
+B kare eksi 4ac. Tamam?
+
+706
+00:52:32,916 --> 00:52:33,215
+Evet.
+
+707
+00:52:36,788 --> 00:52:38,007
+Var mı başka sorusu olan?
+
+708
+00:52:42,867 --> 00:52:44,607
+sorusu olan yoksa bir ara verelim.
+
+709
+00:52:44,688 --> 00:52:44,867
+Okey.
+
+710
+00:52:45,447 --> 00:52:46,648
+Hemen break 15 minutes.
+
+711
+00:52:46,847 --> 00:52:48,288
+Biraz zihnimizi dinlendirelim.
+
+712
+00:52:48,407 --> 00:52:49,887
+Sabahtan beri ders anlatıyoruz.
+
+713
+00:52:50,567 --> 00:52:51,387
+Zihnim yoruldu.
+
+714
+00:52:51,927 --> 00:52:53,688
+Arkadaşlar, siz de ders dinliyorsunuzdur.
+
+715
+00:52:54,628 --> 00:52:55,748
+Umarım dinliyorsunuzdur.
+
+716
+00:52:56,148 --> 00:52:56,927
+Bazı arkadaşlar
+
+717
+00:52:56,927 --> 00:52:59,587
+kaçamak yapıyorlar.
+
+718
+00:53:00,128 --> 00:53:00,347
+Evet.
+
+719
+00:53:01,347 --> 00:53:02,887
+Görüşürüz arkadaşlar 15 dakika sonra.
+
+720
+01:13:41,363 --> 01:13:42,603
+Evet, şimdi soru çözelim.
+
+721
+01:13:45,023 --> 01:13:47,043
+Geçen hafta çözemediğimiz sorulara bakalım.
+
+722
+01:13:57,043 --> 01:14:02,043
+Okay, so let's start by these questions, the former six questions.
+
+723
+01:14:03,243 --> 01:14:06,903
+They are topic of first midterm exam, we solved that.
+
+724
+01:14:07,344 --> 01:14:08,184
+Now what about this?
+
+725
+01:14:09,443 --> 01:14:11,604
+Well, first of all, let me erase this part.
+
+726
+01:14:16,372 --> 01:14:26,311
+Okay, so which of the following statement is correct for the function given by f of x?
+
+727
+01:14:39,283 --> 01:14:44,804
+Bunu arkadaşlar tekrardan çözmek istiyorum. Çözememiştik iyi. Kalem olmadığından dolayı.
+
+728
+01:14:44,804 --> 01:14:54,403
+Okay, consider this function in order to talk about increases and decreases of f and local external value.
+
+729
+01:14:54,403 --> 01:15:01,923
+We need to derivate this function derivation of this to x over x square minus 1.
+
+730
+01:15:01,923 --> 01:15:07,123
+So as you see, basically this derivation function has three factors.
+
+731
+01:15:07,123 --> 01:15:19,603
+So each factor has real root. So the 2x has zero root and x minus 1 has 1 root and x plus 1 has minus 1 root.
+
+732
+01:15:20,243 --> 01:15:32,804
+So if you substitute, okay, so plus if you substitute x square bigger than 1 into integral derivation function, we have plus sine minus and plus and minus.
+
+733
+01:15:32,804 --> 01:15:39,763
+Okay, now, so f has a local minimum value at 0.00.
+
+734
+01:15:39,763 --> 01:15:48,643
+That is mistake because of the fact that at the left hand side of 0, f is increasing and at the right hand side of 0, f is decreasing.
+
+735
+01:15:48,643 --> 01:15:53,923
+That's why this is false. So this is not up. This must be concave down.
+
+736
+01:15:53,923 --> 01:16:01,603
+So, and the function f is increased on its domain. Not true, as you see, not always positive.
+
+737
+01:16:02,804 --> 01:16:09,763
+Okay, this is the sine table of derivation function. Okay, so this is also false.
+
+738
+01:16:09,763 --> 01:16:14,323
+So, and the range of f is a set of all real numbers. Not true. Look at here.
+
+739
+01:16:16,403 --> 01:16:18,243
+Dikkat edin arkadaşlar, bu da doğru değil.
+
+740
+01:16:20,323 --> 01:16:22,403
+Ne yapıyoruz arkadaşlar? Devam ediyoruz.
+
+741
+01:16:24,723 --> 01:16:33,443
+So the function f decreasing on its domain. Is that true? Not true because of this plus minus plus minus 4 derivation function.
+
+742
+01:16:33,443 --> 01:16:39,443
+So what about this? Its graph is concave down over its domain.
+
+743
+01:16:40,243 --> 01:16:48,083
+So if you derivate second order derivation, if you obtain second order derivation, so by using quotient rule for derivation.
+
+744
+01:16:48,083 --> 01:16:57,683
+So we have this, as you see, so this is always positive. Okay, and this is negative. This is always positive.
+
+745
+01:16:58,163 --> 01:17:08,243
+So the, as you see, second order derivation is always negative, implying that its graph is always concave down. Okay, dikkat edin.
+
+746
+01:17:08,243 --> 01:17:16,323
+Bu tarz sorularla karşılaşma ihtimaliniz var. Hem finalde hem şeyde. Aşağı konkav, yukarı konkav, artanlık, azalanlık.
+
+747
+01:17:16,884 --> 01:17:19,123
+Bunlar standart. So, okay.
+
+748
+01:17:20,403 --> 01:17:22,723
+So we solved this problem before.
+
+749
+01:17:23,043 --> 01:17:24,363
+We solved this problem before.
+
+750
+01:17:24,643 --> 01:17:26,304
+Bunları arkadaşlar çözmüştük daha önce.
+
+751
+01:17:26,583 --> 01:17:28,243
+We solved this problem before.
+
+752
+01:17:28,243 --> 01:17:30,643
+Okay.
+
+753
+01:17:30,643 --> 01:17:32,643
+So let's solve this problem.
+
+754
+01:17:32,643 --> 01:17:39,603
+So you may see such question in the final exam or the upcoming exam.
+
+755
+01:17:39,603 --> 01:17:39,923
+Okay.
+
+756
+01:17:39,923 --> 01:17:44,403
+Now, so which are the following values are external values of this.
+
+757
+01:17:44,403 --> 01:17:55,283
+So in order to obtain external values, we first compute critical points derivation of x square minus x minus 1.
+
+758
+01:17:55,283 --> 01:18:09,083
+So 2x minus 1 times x minus 2 minus the first term x square minus x minus 1 times derivation of x minus 1.
+
+759
+01:18:09,203 --> 01:18:11,043
+x minus 2, sorry, 1 over.
+
+760
+01:18:11,663 --> 01:18:14,643
+So x minus 2 square.
+
+761
+01:18:14,903 --> 01:18:16,804
+Let's simplify denominator here.
+
+762
+01:18:17,344 --> 01:18:21,483
+So as you see, 2x square, if you distribute this, 2x square.
+
+763
+01:18:21,483 --> 01:18:33,483
+Let me expand this to x square minus 4x minus x plus 2 minus x square plus x plus 1.
+
+764
+01:18:33,963 --> 01:18:34,363
+Okay.
+
+765
+01:18:34,443 --> 01:18:36,483
+You don't need to write this, but let's write this.
+
+766
+01:18:36,483 --> 01:18:37,532
+Okay.
+
+767
+01:18:38,032 --> 01:18:40,251
+Now, so this is, this and this.
+
+768
+01:18:41,371 --> 01:18:41,851
+Okay.
+
+769
+01:18:42,351 --> 01:18:43,411
+We have x squared.
+
+770
+01:18:44,551 --> 01:18:44,871
+Here.
+
+771
+01:18:45,331 --> 01:18:46,152
+So, here.
+
+772
+01:18:46,791 --> 01:18:48,692
+Minus 4x.
+
+773
+01:18:51,811 --> 01:18:53,371
+İşte mataz yapıyoruz değil mi arkadaşlar?
+
+774
+01:18:53,612 --> 01:18:54,631
+Plus 3.
+
+775
+01:18:55,851 --> 01:18:56,291
+Okay.
+
+776
+01:18:56,532 --> 01:18:58,791
+So, x minus 2 squared.
+
+777
+01:18:58,791 --> 01:19:06,791
+If you factorize this, now we are going to obtain x minus 3 times x minus.
+
+778
+01:19:07,011 --> 01:19:07,652
+1.
+
+779
+01:19:08,192 --> 01:19:08,911
+Okay.
+
+780
+01:19:09,131 --> 01:19:10,572
+x minus 2 squared.
+
+781
+01:19:11,471 --> 01:19:14,551
+Now, so we have two critical points.
+
+782
+01:19:14,711 --> 01:19:17,152
+Critical point 1.
+
+783
+01:19:17,631 --> 01:19:21,511
+Critical point 2 is 3.
+
+784
+01:19:23,211 --> 01:19:23,612
+Okay.
+
+785
+01:19:23,612 --> 01:19:35,192
+So, those are critical points because of the fact that those are the set of only numbers except for 2.
+
+786
+01:19:35,192 --> 01:19:38,731
+Now, so local extreme values.
+
+787
+01:19:40,591 --> 01:19:45,411
+Because in our list, this is always positive attention here.
+
+788
+01:19:45,411 --> 01:19:50,692
+So, if you see, if you investigate sine table of derivation function.
+
+789
+01:19:51,891 --> 01:19:57,192
+So, at right hand side of 3, derivation function has positive sign here, negative.
+
+790
+01:19:57,192 --> 01:19:57,951
+So, here.
+
+791
+01:19:58,471 --> 01:20:03,171
+So, as you see, we have local max at 0.1.
+
+792
+01:20:03,591 --> 01:20:03,991
+Here.
+
+793
+01:20:04,771 --> 01:20:06,431
+Local mean at 0.3.
+
+794
+01:20:06,971 --> 01:20:07,192
+Okay.
+
+795
+01:20:07,311 --> 01:20:08,911
+F of 1, F of 3.
+
+796
+01:20:09,192 --> 01:20:10,192
+F of 3.
+
+797
+01:20:10,751 --> 01:20:11,251
+Okay.
+
+798
+01:20:11,931 --> 01:20:12,791
+Extreme values.
+
+799
+01:20:12,951 --> 01:20:15,032
+F of 1 and F of 3 here.
+
+800
+01:20:15,431 --> 01:20:15,692
+Okay.
+
+801
+01:20:15,692 --> 01:20:18,251
+Değerlerini yerine yerleştiriyorsunuz arkadaşlar.
+
+802
+01:20:18,532 --> 01:20:19,871
+Değerleri hesaplıyorsunuz.
+
+803
+01:20:20,211 --> 01:20:23,271
+F1 ile F3'ü hesaplıyorsunuz.
+
+804
+01:20:24,731 --> 01:20:26,471
+Doğrucu şeyler geliyor mu arkadaşlar?
+
+805
+01:20:26,631 --> 01:20:27,851
+1 ile 5 gelmesi lazım.
+
+806
+01:20:28,851 --> 01:20:29,072
+Okay.
+
+807
+01:20:29,791 --> 01:20:32,631
+Now, you may see such question in the next midterm exam.
+
+808
+01:20:32,891 --> 01:20:34,911
+We solved this problem before.
+
+809
+01:20:34,911 --> 01:20:41,831
+Now, so, this is about logarithmic limit.
+
+810
+01:20:42,572 --> 01:20:44,271
+So, we solved this problem before.
+
+811
+01:20:45,771 --> 01:20:46,371
+Okay.
+
+812
+01:20:46,451 --> 01:20:50,011
+So, this is about L'Hopital's rule and chain rule.
+
+813
+01:20:50,532 --> 01:20:52,192
+We solved this problem before.
+
+814
+01:20:52,831 --> 01:20:55,192
+And so, we solved this problem before.
+
+815
+01:20:56,051 --> 01:21:01,891
+Now, so, this is also about L'Hopital's rule.
+
+816
+01:21:01,891 --> 01:21:11,211
+And, okay, you may see linearization problem, which is combined with fundamental theorem.
+
+817
+01:21:11,491 --> 01:21:11,652
+Okay.
+
+818
+01:21:11,671 --> 01:21:12,692
+We solved this problem.
+
+819
+01:21:12,831 --> 01:21:13,831
+Study linearization.
+
+820
+01:21:14,271 --> 01:21:14,491
+Okay.
+
+821
+01:21:14,551 --> 01:21:18,891
+So, you need to study all topics from beginning to end.
+
+822
+01:21:19,831 --> 01:21:20,072
+Okay.
+
+823
+01:21:20,652 --> 01:21:22,411
+Now, so, what about this?
+
+824
+01:21:22,411 --> 01:21:24,371
+So, this is, okay.
+
+825
+01:21:24,551 --> 01:21:27,211
+So, I think we talked about this last week.
+
+826
+01:21:27,331 --> 01:21:29,851
+But, so, we need to solve this problem again.
+
+827
+01:21:29,851 --> 01:21:52,072
+So, your goal is to obtain some proper X values at which tangent line is parallel to the second line, namely short connecting the endpoints of, okay, some graph at point X1 and X10.
+
+828
+01:21:52,072 --> 01:21:52,431
+Okay.
+
+829
+01:21:52,431 --> 01:21:53,532
+So, let me write here.
+
+830
+01:21:54,112 --> 01:22:04,391
+So, this is the application of geometric interpretation of, so, let's say, suppose this one, let's say it's 10.
+
+831
+01:22:04,771 --> 01:22:07,551
+So, F of 1 somewhere here.
+
+832
+01:22:07,671 --> 01:22:09,311
+F of 10 somewhere here.
+
+833
+01:22:09,391 --> 01:22:10,771
+So, without considering this.
+
+834
+01:22:10,871 --> 01:22:11,032
+Okay.
+
+835
+01:22:11,032 --> 01:22:15,471
+So, for any function, for any function, we can write this.
+
+836
+01:22:15,572 --> 01:22:16,692
+So, this is the chart.
+
+837
+01:22:17,671 --> 01:22:19,211
+Let me use different color.
+
+838
+01:22:19,371 --> 01:22:22,091
+This is the chart's name, the second line.
+
+839
+01:22:22,251 --> 01:22:22,511
+Okay.
+
+840
+01:22:23,391 --> 01:22:26,551
+So, this is our chart, name, the second line.
+
+841
+01:22:27,291 --> 01:22:35,971
+The slope of this, slope of this chart, second line.
+
+842
+01:22:35,971 --> 01:23:05,951
+So, this is the chart.
+
+843
+01:22:36,435 --> 01:22:57,355
+Results in average rate of change of f. Okay. So 10 minus 1. Okay. So is equal to f'c. So there must be some property. Let me use some different color here.
+
+844
+01:22:57,355 --> 01:23:23,715
+As you see, this tangent line is parallel to this chart. Okay. So your goal is to obtain this c value. By using this rule, x square minus 8x, 2c minus 8 is equal to f of 10. Ne oldu arkadaşlar? 100 f, 100 ne geliyor? 20 mi geliyor? 20.
+
+845
+01:23:23,715 --> 01:23:50,975
+x kare x, f'i f'i f'imiz ne geliyor? F of 1 minus 7 over 9. As you see, 2c is equal to ne geliyor? 11. So this implies that c is this.
+
+846
+01:23:50,975 --> 01:24:04,355
+But in the, okay. So this is not true, I think. So this is 5 over, I think. This is 5 over, let me say, this is 5 over, 11, 2, pardon. Şunların bir tanesini 11, 2, pardon. Şunların bir tanesini 11, 2 yazın arkadaşlar, tamam.
+
+847
+01:24:05,435 --> 01:24:05,815
+Okay.
+
+848
+01:24:08,515 --> 01:24:19,795
+Gördünüz mü arkadaşlar? C işte, 1, 11, 2 noktasında attığımız t, 1, f1, f1, f10, f10 noktalarını birleştiren kirişe paralel oluyor.
+
+849
+01:24:19,795 --> 01:24:49,775
+Evet.
+
+850
+01:25:01,011 --> 01:25:03,011
+Bir dakikanızı rica edeceğim arkadaşlar.
+
+851
+01:25:03,931 --> 01:25:06,511
+Tablet modundan çıkmam lazım. Sıkıntı yaşıyorum.
+
+852
+01:25:09,291 --> 01:25:11,511
+Tablet modundan hemen çıkmıyor. Evet.
+
+853
+01:25:24,500 --> 01:25:54,479
+x kare artı 2x, f'
+
+854
+01:25:40,435 --> 01:25:40,855
+ok.
+
+855
+01:25:44,851 --> 01:25:45,851
+bir şekilde.
+
+856
+01:25:47,851 --> 01:25:50,851
+OK, can you see my sharing now?
+
+857
+01:26:03,636 --> 01:26:09,256
+Okay, let's solve this problem. Problem 1. Question 1.
+
+858
+01:26:14,195 --> 01:26:37,576
+So, we have some function g, okay, so which has first and second order derivations. So, this is a very important condition. And second condition, if g of x has local maximum value at 2.4, then which can be, okay, which of the following statements can be said about this f?
+
+859
+01:26:37,576 --> 01:26:48,515
+So, let me illustrate this f? By some table. So, at point x4, let me look.
+
+860
+01:26:48,515 --> 01:26:59,416
+So, at right-hand side of 4, somewhere here, okay, somewhere here, so we have plus a local maximum, okay, so not local,
+
+861
+01:26:59,416 --> 01:27:07,115
+but it must be negative. Okay, now,
+
+862
+01:27:07,576 --> 01:27:37,555
+local maximum,
+
+863
+01:27:37,576 --> 01:27:41,975
+now, then which of the following statements about f of x can be said.
+
+864
+01:27:42,855 --> 01:27:47,475
+Evet, düşünün bakayım, çözün, böyle sorularla karşılaşabilirsiniz. Güzel bir soru.
+
+865
+01:27:50,475 --> 01:27:54,695
+Evet, bekliyorum, herkes düşünsün. Güzel bir yorum sorusu.
+
+866
+01:27:56,635 --> 01:27:58,195
+Gerçekten D mi? Neden D?
+
+867
+01:28:07,380 --> 01:28:08,380
+ne denn?
+
+868
+01:28:13,268 --> 01:28:13,927
+ve dinleyin.
+
+869
+01:28:56,404 --> 01:29:04,844
+So, first of all, we need to derivate f, derivation of f,
+
+870
+01:29:06,844 --> 01:29:16,204
+exponential minus g of x squared times derivation of g.
+
+871
+01:29:17,424 --> 01:29:20,104
+We forget minus, sorry.
+
+872
+01:29:22,164 --> 01:29:25,024
+Do not forget to put minus.
+
+873
+01:29:26,404 --> 01:29:31,284
+And derivation of this.
+
+874
+01:29:33,604 --> 01:29:37,104
+And derivation of x squared to x.
+
+875
+01:29:38,064 --> 01:29:42,624
+So, we have this derivation function of f.
+
+876
+01:29:43,244 --> 01:29:43,564
+Okay.
+
+877
+01:29:44,264 --> 01:29:46,964
+Now, so let me write here.
+
+878
+01:29:46,964 --> 01:29:59,804
+So, this is minus, exponential minus g of x squared times g prime of x squared times 2x.
+
+879
+01:30:00,664 --> 01:30:01,004
+Okay.
+
+880
+01:30:01,684 --> 01:30:07,544
+Now, taking into account this derivation function, so we need to comment on each option.
+
+881
+01:30:07,544 --> 01:30:13,664
+Let me use red color here.
+
+882
+01:30:14,664 --> 01:30:22,304
+So, in the option A, f has a local minimum at the point x4.
+
+883
+01:30:23,004 --> 01:30:24,744
+At the point x4.
+
+884
+01:30:24,744 --> 01:30:31,964
+So, if you substitute x4 here, or if you substitute some x values bigger than 4, okay.
+
+885
+01:30:31,964 --> 01:30:35,924
+Now, you are going to obtain some expression.
+
+886
+01:30:37,764 --> 01:30:38,104
+Okay.
+
+887
+01:30:38,204 --> 01:30:40,624
+Here, g prime of 12.
+
+888
+01:30:40,844 --> 01:30:41,584
+Okay.
+
+889
+01:30:42,044 --> 01:30:43,844
+So, g prime of 16.
+
+890
+01:30:43,984 --> 01:30:45,944
+Somewhere here.
+
+891
+01:30:46,064 --> 01:30:47,424
+g prime of 16.
+
+892
+01:30:47,984 --> 01:30:49,324
+So, but look at here.
+
+893
+01:30:49,784 --> 01:30:51,044
+16 somewhere here.
+
+894
+01:30:51,464 --> 01:30:52,384
+For the g prime.
+
+895
+01:30:52,724 --> 01:30:53,424
+So, 16.
+
+896
+01:30:53,424 --> 01:30:55,344
+G prime of 16.
+
+897
+01:30:55,344 --> 01:30:55,504
+16.
+
+898
+01:30:55,504 --> 01:30:58,044
+But we are not sure about.
+
+899
+01:30:58,144 --> 01:30:59,724
+We are not sure about.
+
+900
+01:31:00,784 --> 01:31:05,924
+Sign of g prime around 16.
+
+901
+01:31:06,204 --> 01:31:07,144
+Dikkat edin arkadaşlar.
+
+902
+01:31:07,384 --> 01:31:11,644
+x yerine f'nin türevinde x yerine 4 veya 4'e yakın bir değer.
+
+903
+01:31:11,824 --> 01:31:13,444
+Sağında veya solunda fark etmez.
+
+904
+01:31:14,044 --> 01:31:17,024
+4'e yakın bir değer koyduğumuzda ne buluyoruz?
+
+905
+01:31:17,024 --> 01:31:24,264
+16'ın yakın civarlarındaki x değerleri için g üstünün işaretinden emin değiliz.
+
+906
+01:31:24,804 --> 01:31:30,184
+Ama 4'ün civarındaki x değerleri için g üstünün işaretini biliyoruz.
+
+907
+01:31:30,364 --> 01:31:34,004
+4'ün hemen sağında g üstü negatif.
+
+908
+01:31:34,304 --> 01:31:35,744
+Hemen solunda pozitif.
+
+909
+01:31:35,844 --> 01:31:36,984
+Şu bilgiden dolayı.
+
+910
+01:31:37,444 --> 01:31:42,604
+Ama 16'ın civarında g üstünün işaretini bilmiyoruz.
+
+911
+01:31:42,604 --> 01:31:48,264
+We are not sure about the sign of g prime around 60.
+
+912
+01:31:48,724 --> 01:31:49,024
+Okay.
+
+913
+01:31:49,024 --> 01:31:52,704
+We can substitute x4 or some x5 is bigger than 4.
+
+914
+01:31:53,164 --> 01:31:53,424
+Okay.
+
+915
+01:31:53,424 --> 01:31:56,024
+We are very close to 4.
+
+916
+01:31:56,344 --> 01:31:59,484
+But you are going to obtain some x g prime of 16.
+
+917
+01:31:59,644 --> 01:32:00,564
+Something like that.
+
+918
+01:32:00,684 --> 01:32:02,764
+But so that's why we are not sure about this.
+
+919
+01:32:02,804 --> 01:32:03,944
+This is not always true.
+
+920
+01:32:04,544 --> 01:32:04,824
+Okay.
+
+921
+01:32:05,204 --> 01:32:06,284
+Not always true.
+
+922
+01:32:06,924 --> 01:32:07,784
+So similarly.
+
+923
+01:32:08,444 --> 01:32:10,384
+So we are not sure about this.
+
+924
+01:32:10,804 --> 01:32:11,044
+Okay.
+
+925
+01:32:11,044 --> 01:32:15,464
+Now f has a local maximum at the point x2.
+
+926
+01:32:15,564 --> 01:32:16,624
+Let's comment on this.
+
+927
+01:32:16,924 --> 01:32:21,884
+So if you substitute f as a local maximum at the point 2.
+
+928
+01:32:22,204 --> 01:32:25,584
+If you substitute x2 or some x values,
+
+929
+01:32:25,904 --> 01:32:29,004
+which are very close to from left or right.
+
+930
+01:32:29,464 --> 01:32:29,784
+Okay.
+
+931
+01:32:30,144 --> 01:32:31,084
+You are going to obtain,
+
+932
+01:32:31,584 --> 01:32:33,944
+you are going to obtain somewhere here,
+
+933
+01:32:34,684 --> 01:32:37,804
+g prime of some x values.
+
+934
+01:32:37,804 --> 01:32:38,504
+for example,
+
+935
+01:32:38,704 --> 01:32:41,324
+this some x values.
+
+936
+01:32:41,544 --> 01:32:41,664
+Okay.
+
+937
+01:32:41,724 --> 01:32:43,824
+So let's write here something like that.
+
+938
+01:32:44,324 --> 01:32:44,504
+So,
+
+939
+01:32:45,704 --> 01:32:46,184
+okay.
+
+940
+01:32:46,244 --> 01:32:47,404
+Let me use this notation.
+
+941
+01:32:47,684 --> 01:32:51,504
+Daha iyi anlamanız için şöyle bir saçma bir notasyon kullanacağım ama mecburum.
+
+942
+01:32:51,504 --> 01:32:52,264
+Okay.
+
+943
+01:32:52,264 --> 01:32:52,964
+Now,
+
+944
+01:32:52,964 --> 01:32:54,464
+so we have...
+
+945
+01:32:54,464 --> 01:33:17,344
+So we have...
+
+946
+01:32:57,332 --> 01:33:02,932
+So we have some A values which are really closed for from left or right.
+
+947
+01:33:03,212 --> 01:33:03,512
+Okay.
+
+948
+01:33:04,132 --> 01:33:05,092
+From left or right.
+
+949
+01:33:05,192 --> 01:33:07,072
+Şurayı kullanmak daha doğru olur aslında.
+
+950
+01:33:09,192 --> 01:33:10,271
+Şöyle yapalım.
+
+951
+01:33:10,552 --> 01:33:11,632
+Daha iyi anlamanız için.
+
+952
+01:33:13,731 --> 01:33:15,372
+Ama niye gelmedi bu?
+
+953
+01:33:15,832 --> 01:33:17,372
+Evet silmeye çalışıyorum arkadaşlar.
+
+954
+01:33:18,472 --> 01:33:18,672
+Okay.
+
+955
+01:33:18,672 --> 01:33:21,811
+Let me use this notation for.
+
+956
+01:33:23,892 --> 01:33:24,412
+Okay.
+
+957
+01:33:24,412 --> 01:33:27,452
+4.
+
+958
+01:33:29,452 --> 01:33:30,052
+Plus.
+
+959
+01:33:30,352 --> 01:33:31,852
+G prime 4 plus.
+
+960
+01:33:31,992 --> 01:33:32,932
+4 to plus.
+
+961
+01:33:33,072 --> 01:33:34,132
+4 to plus means.
+
+962
+01:33:34,592 --> 01:33:38,792
+So we have some 4 values which are very closed for from right hand side.
+
+963
+01:33:39,172 --> 01:33:42,612
+So in that case we have negative sign for this G prime.
+
+964
+01:33:43,292 --> 01:33:43,532
+Okay.
+
+965
+01:33:43,632 --> 01:33:48,012
+So this is negative.
+
+966
+01:33:48,512 --> 01:33:48,832
+Okay.
+
+967
+01:33:48,952 --> 01:33:50,052
+And we have positive.
+
+968
+01:33:50,052 --> 01:33:51,912
+And so this is positive.
+
+969
+01:33:52,271 --> 01:33:52,811
+Can you see that?
+
+970
+01:33:52,811 --> 01:33:55,572
+So at right hand side of 2.
+
+971
+01:33:56,252 --> 01:33:59,192
+So here at right hand side of 2.
+
+972
+01:33:59,392 --> 01:34:01,612
+F prime is positive.
+
+973
+01:34:02,192 --> 01:34:02,572
+Okay.
+
+974
+01:34:03,271 --> 01:34:03,832
+Positive.
+
+975
+01:34:03,972 --> 01:34:04,892
+Let me write here.
+
+976
+01:34:04,892 --> 01:34:22,432
+Okay.
+
+977
+01:34:11,220 --> 01:34:15,060
+f' at right-hand side of 2.
+
+978
+01:34:16,260 --> 01:34:20,260
+So f' is positive somewhere here.
+
+979
+01:34:26,579 --> 01:34:29,460
+Because of this fact negative, so this is negative.
+
+980
+01:34:30,260 --> 01:34:35,100
+So this is positive and this is negative and this is positive.
+
+981
+01:34:35,439 --> 01:34:37,559
+Attention here, that's why we have this.
+
+982
+01:34:37,559 --> 01:34:44,239
+At the left hand side of 2, so we are going to obtain G prime.
+
+983
+01:34:44,380 --> 01:34:46,859
+G prime, let me use different color here.
+
+984
+01:34:48,500 --> 01:34:54,039
+G prime for negative.
+
+985
+01:34:54,039 --> 01:34:59,180
+At the left hand side of 2, okay, now we have, so this is positive.
+
+986
+01:34:59,300 --> 01:34:59,960
+Look at here.
+
+987
+01:35:01,380 --> 01:35:04,880
+Left hand side of 4, G prime is positive.
+
+988
+01:35:05,880 --> 01:35:06,960
+And this is positive.
+
+989
+01:35:08,199 --> 01:35:09,059
+So this is negative.
+
+990
+01:35:09,659 --> 01:35:11,699
+Okay, so this is always positive.
+
+991
+01:35:11,840 --> 01:35:13,479
+Positive, so we have negative.
+
+992
+01:35:13,880 --> 01:35:18,220
+So F prime takes negative value at the left hand side of 2.
+
+993
+01:35:19,079 --> 01:35:24,019
+Okay, now F has a local maximum at the point X.
+
+994
+01:35:24,039 --> 01:35:28,340
+2 according to this concentration, decreasing, increasing.
+
+995
+01:35:29,000 --> 01:35:30,260
+So this is a mistake.
+
+996
+01:35:30,960 --> 01:35:32,220
+So this is true.
+
+997
+01:35:32,720 --> 01:35:33,439
+This is true.
+
+998
+01:35:33,600 --> 01:35:35,739
+Okay, so because of this minus 2.
+
+999
+01:35:36,800 --> 01:35:38,340
+X 2 de bakın arkadaşlar.
+
+1000
+01:35:38,600 --> 01:35:40,140
+X 2'nin hemen sağında.
+
+1001
+01:35:40,140 --> 01:35:43,899
+Similarly, if you substitute minus 2 into here.
+
+1002
+01:35:44,399 --> 01:35:50,640
+So you are going to obtain this from left, from right, from left side.
+
+1003
+01:35:50,899 --> 01:35:52,019
+Minus 2.
+
+1004
+01:35:52,500 --> 01:35:53,939
+You are going to obtain this case.
+
+1005
+01:35:54,100 --> 01:35:55,479
+And you are going to obtain this.
+
+1006
+01:35:55,899 --> 01:35:57,119
+So according to this.
+
+1007
+01:35:57,479 --> 01:35:59,000
+Okay, so we got this D.
+
+1008
+01:35:59,279 --> 01:35:59,519
+Okay.
+
+1009
+01:36:00,319 --> 01:36:01,260
+Now F is D.
+
+1010
+01:36:01,260 --> 01:36:02,600
+Tamam arkadaşlar.
+
+1011
+01:36:02,720 --> 01:36:03,579
+Türkçe açıklıyorum.
+
+1012
+01:36:04,100 --> 01:36:04,519
+Bakın.
+
+1013
+01:36:05,559 --> 01:36:10,220
+G, X 3'i 4'te bir yerel maksimuma sahip olduğundan.
+
+1014
+01:36:10,479 --> 01:36:11,859
+4'ün hemen sağında.
+
+1015
+01:36:11,979 --> 01:36:13,539
+Burası 4 artık bir düştü.
+
+1016
+01:36:13,739 --> 01:36:14,960
+4'ün hemen sağında.
+
+1017
+01:36:15,819 --> 01:36:17,180
+G üstü negatiftir.
+
+1018
+01:36:17,380 --> 01:36:18,479
+4'ün hemen solunda.
+
+1019
+01:36:18,600 --> 01:36:19,699
+Burası da 4 eksi.
+
+1020
+01:36:19,819 --> 01:36:21,439
+Hemen solundaki 4 değer.
+
+1021
+01:36:21,600 --> 01:36:22,920
+4'e yakın değerler için.
+
+1022
+01:36:23,399 --> 01:36:24,340
+G üstü de ne oluyor?
+
+1023
+01:36:24,479 --> 01:36:25,600
+Pozitif oluyormuş.
+
+1024
+01:36:26,439 --> 01:36:26,680
+Şimdi.
+
+1025
+01:36:26,680 --> 01:36:27,800
+Bakıyorum.
+
+1026
+01:36:27,960 --> 01:36:29,059
+A gitti, B gitti.
+
+1027
+01:36:29,159 --> 01:36:30,279
+Neden A gitti, B gitti?
+
+1028
+01:36:30,399 --> 01:36:31,920
+X yerine 4 yazdığımda.
+
+1029
+01:36:32,340 --> 01:36:33,000
+Türev fonksü.
+
+1030
+01:36:33,019 --> 01:36:33,920
+F'nin türevinde.
+
+1031
+01:36:34,399 --> 01:36:34,920
+Ne yapıyoruz?
+
+1032
+01:36:35,199 --> 01:36:38,659
+16'ya yakın değerlerin civarında çalışıyoruz demektir.
+
+1033
+01:36:39,059 --> 01:36:40,960
+Ama 16'nın civarında ben.
+
+1034
+01:36:41,840 --> 01:36:42,880
+Dikkat edin arkadaşlar.
+
+1035
+01:36:43,199 --> 01:36:46,399
+G üstünün işaretinin ne olduğunu bilmiyorum.
+
+1036
+01:36:46,559 --> 01:36:47,300
+Emin değilim.
+
+1037
+01:36:47,559 --> 01:36:50,059
+Verilen bilgiden kesin bir bilgi çıkartamıyorum.
+
+1038
+01:36:50,059 --> 01:36:52,279
+O yüzden A ve B'ler gitti.
+
+1039
+01:36:53,420 --> 01:36:55,239
+X eşittir 2 yerleştirdim.
+
+1040
+01:36:55,239 --> 01:36:59,140
+Ya da X eşittir 2'den büyük 2'ye yakın değerler yerleştirdiğimde.
+
+1041
+01:36:59,500 --> 01:37:00,340
+Türev fonksiyonunda.
+
+1042
+01:37:00,399 --> 01:37:01,340
+F'nin türevinde.
+
+1043
+01:37:01,819 --> 01:37:02,159
+Ne oluyor?
+
+1044
+01:37:02,399 --> 01:37:04,659
+G 4 üzeri artı.
+
+1045
+01:37:04,720 --> 01:37:06,000
+Yani 4'e yakın değerler.
+
+1046
+01:37:06,059 --> 01:37:06,880
+4'ün sağında.
+
+1047
+01:37:07,640 --> 01:37:08,840
+4'ün hemen sağında.
+
+1048
+01:37:08,960 --> 01:37:10,319
+G üstü negatiftir.
+
+1049
+01:37:11,460 --> 01:37:12,180
+Dikkat edin.
+
+1050
+01:37:12,819 --> 01:37:13,519
+Hemen solunda.
+
+1051
+01:37:13,640 --> 01:37:15,399
+G üstü pozitiftir.
+
+1052
+01:37:15,579 --> 01:37:15,880
+4'ün.
+
+1053
+01:37:15,880 --> 01:37:17,680
+X yerine 2 yazarsam.
+
+1054
+01:37:17,760 --> 01:37:19,579
+2'den büyük değerler yazarsam.
+
+1055
+01:37:19,739 --> 01:37:20,699
+X yerine burada.
+
+1056
+01:37:21,239 --> 01:37:22,039
+Bunu yakalarım.
+
+1057
+01:37:22,039 --> 01:37:25,539
+O zaman burada işimi çözmüyor.
+
+1058
+01:37:25,680 --> 01:37:26,439
+Eksi artı.
+
+1059
+01:37:26,539 --> 01:37:27,880
+2'nin hemen sağında artı.
+
+1060
+01:37:27,979 --> 01:37:29,920
+Hemen solunda eksi elde ediyorum.
+
+1061
+01:37:30,019 --> 01:37:31,119
+X yerine 2 yazdığımda.
+
+1062
+01:37:31,619 --> 01:37:33,880
+O da yerel minimum değer verir.
+
+1063
+01:37:34,019 --> 01:37:34,779
+C şıkkı gitti.
+
+1064
+01:37:35,340 --> 01:37:36,039
+D şıkkı.
+
+1065
+01:37:36,359 --> 01:37:36,659
+Ne oluyor?
+
+1066
+01:37:36,859 --> 01:37:37,359
+X eşittir.
+
+1067
+01:37:37,420 --> 01:37:40,100
+Eksi 2'den büyük değerler yazarsam.
+
+1068
+01:37:40,559 --> 01:37:40,920
+Ne olur?
+
+1069
+01:37:42,300 --> 01:37:43,319
+Hemen ne oluyor arkadaşlar?
+
+1070
+01:37:43,579 --> 01:37:44,500
+Eksi 2'ye bakın.
+
+1071
+01:37:44,619 --> 01:37:45,140
+İdikkat edin.
+
+1072
+01:37:45,239 --> 01:37:46,739
+Aynı eksi 2 yapıyorum.
+
+1073
+01:37:46,899 --> 01:37:47,239
+Bakalım.
+
+1074
+01:37:47,319 --> 01:37:48,199
+Eksi 2'ye yapalım.
+
+1075
+01:37:48,340 --> 01:37:48,939
+Eksi 2.
+
+1076
+01:37:48,939 --> 01:37:54,439
+Eksi 2'den hemen sağında değerler yazarsam.
+
+1077
+01:37:55,479 --> 01:37:56,119
+Arkadaşlar.
+
+1078
+01:37:56,220 --> 01:37:58,159
+O zaman şeyin soluna geçmiş oluyor.
+
+1079
+01:37:58,399 --> 01:37:59,559
+G eksi 4.
+
+1080
+01:37:59,640 --> 01:38:00,439
+Bunu yazarsam.
+
+1081
+01:38:00,539 --> 01:38:00,859
+Arkadaşlar.
+
+1082
+01:38:00,899 --> 01:38:01,479
+Eksi 2.
+
+1083
+01:38:01,680 --> 01:38:02,739
+Sağ değerini yazarsam.
+
+1084
+01:38:03,019 --> 01:38:03,260
+Ne oluyor?
+
+1085
+01:38:03,380 --> 01:38:04,479
+G 4.
+
+1086
+01:38:05,380 --> 01:38:07,239
+Solundaki değerleri yakalamış oluyorum.
+
+1087
+01:38:07,359 --> 01:38:08,479
+Bu da ne oldu arkadaşlar?
+
+1088
+01:38:09,199 --> 01:38:09,939
+O da negatif.
+
+1089
+01:38:10,079 --> 01:38:10,899
+Pozitif oluyordu.
+
+1090
+01:38:10,979 --> 01:38:11,239
+Doğru mu?
+
+1091
+01:38:11,319 --> 01:38:11,500
+Pardon.
+
+1092
+01:38:11,659 --> 01:38:12,380
+Pozitif oluyordu.
+
+1093
+01:38:12,460 --> 01:38:12,579
+Evet.
+
+1094
+01:38:13,079 --> 01:38:14,500
+Pozitif oluyordu oradan.
+
+1095
+01:38:14,600 --> 01:38:15,559
+Oradan ne yapıyorsunuz?
+
+1096
+01:38:15,559 --> 01:38:17,600
+Aynı yorumu yapıyorsunuz arkadaşım.
+
+1097
+01:38:17,600 --> 01:38:20,019
+Şurayı eksiki yaparsan cevap D'yi buluyorsun.
+
+1098
+01:38:20,159 --> 01:38:20,380
+Tamam mı?
+
+1099
+01:38:21,500 --> 01:38:21,760
+Evet.
+
+1100
+01:38:21,880 --> 01:38:22,579
+Var mı sorusu olan?
+
+1101
+01:38:22,579 --> 01:38:47,640
+Evet.
+
+1102
+01:38:28,435 --> 01:38:30,375
+Evet, sorusu olan yoksa geçiyorum.
+
+1103
+01:38:36,659 --> 01:38:37,859
+Şuna da eksi 2.
+
+1104
+01:38:39,000 --> 01:38:40,739
+Ne kadip yazdığımızda arkadaşlar
+
+1105
+01:38:40,739 --> 01:38:42,539
+G 4 üstü yapıyorsun.
+
+1106
+01:38:43,539 --> 01:38:44,420
+Buradan cevap
+
+1107
+01:38:44,420 --> 01:38:45,920
+denizli gelecek. Evet.
+
+1108
+01:38:46,659 --> 01:38:48,119
+Okey. Let's solve this problem.
+
+1109
+01:39:05,908 --> 01:39:08,108
+Bekleyin, arkadaşlar sizin çözmeniz istiyorum.
+
+1110
+01:39:09,387 --> 01:39:13,548
+Let f be a continuous and differentiable function such that
+
+1111
+01:39:13,548 --> 01:39:19,048
+definite integration from 1 to 3, a prime of x is 1.
+
+1112
+01:39:19,248 --> 01:39:23,548
+So we have this definite integration as 1, and this is 1.
+
+1113
+01:39:23,988 --> 01:39:26,908
+Then what is the value of integration of this?
+
+1114
+01:39:26,908 --> 01:39:33,088
+You may see such question in the final exam or next exam.
+
+1115
+01:39:33,088 --> 01:39:37,868
+Evet, düşünün bakayım böyle soruları nasıl çözebiliriz?
+
+1116
+01:39:40,008 --> 01:39:41,528
+Ben de bir yoklama yapayım.
+
+1117
+01:39:41,807 --> 01:39:45,448
+Siz bunu çözerken bakalım kimler burada?
+
+1118
+01:39:48,148 --> 01:39:49,628
+Soru soralım arkadaşlara.
+
+1119
+01:39:51,628 --> 01:39:53,668
+Biraz düşünün ondan sonra soru soracağım.
+
+1120
+01:39:53,788 --> 01:39:54,768
+Hem de yoklama yapacağım.
+
+1121
+01:39:55,968 --> 01:39:57,328
+[öğrenci] burada mısın?
+
+1122
+01:40:04,115 --> 01:40:11,036
+[öğrenci]. [öğrenci] burada değil. Anlaşılan.
+
+1123
+01:40:19,731 --> 01:40:21,532
+[öğrenci], burada mısın [öğrenci]?
+
+1124
+01:40:25,652 --> 01:40:26,891
+[öğrenci].
+
+1125
+01:40:28,712 --> 01:40:30,072
+O da burada değil.
+
+1126
+01:40:31,192 --> 01:40:35,252
+Evet [öğrenci], problemi gördün mü? Ne düşünüyorsun problem hakkında?
+
+1127
+01:40:37,952 --> 01:40:43,731
+Sence nasıl çözebiliriz? Hangi yöntemleri kullanmamız gerekir? Şöyle verilen bilgilere bir bak bakayım [öğrenci].
+
+1128
+01:40:45,192 --> 01:40:47,372
+Güzel, değişken değiştirerek. Çok harika.
+
+1129
+01:40:48,332 --> 01:40:50,992
+Evet, [öğrenci]. Burada mısın [öğrenci]?
+
+1130
+01:40:54,547 --> 01:41:11,347
+Evet. [öğrenci] dedi ki değişken dönüşümü yapmamız gerekir. Sadece değişken dönüşümü yapmak yeterli değil. Bir tane daha yöntem kullanacaksın. Sence şöyle bir bak bakayım verilen bilgilere. Sence hangi yöntemi daha kullanmamız gerekir?
+
+1131
+01:41:14,407 --> 01:41:20,327
+Yöntem diyorum. [öğrenci]. Şöyle bir bak bakayım verilen bilgilere.
+
+1132
+01:41:26,420 --> 01:41:32,100
+Verilen bilgilere bakarsak, hangi yöntemleri kullanmamız gerektiğini görebiliyoruz.
+
+1133
+01:41:33,539 --> 01:41:34,579
+[öğrenci], iyi bak.
+
+1134
+01:41:35,840 --> 01:41:36,699
+Tamam, düşün.
+
+1135
+01:41:40,960 --> 01:41:43,319
+[öğrenci], burada mısın [öğrenci]?
+
+1136
+01:41:46,963 --> 01:41:48,163
+[öğrenci]
+
+1137
+01:41:53,652 --> 01:42:16,631
+Evet, düşündün mü? Değişken dönüşümünden başka bir tane daha yöntem kullanmamız lazım. [öğrenci]. Öğrendiğimiz integrallere ile alakalı öğrendiğimiz yöntemleri hatırlayın. Ne vardı [öğrenci]? Yöntemler. Düşün bakayım hangi yöntemleri? Değişken dönüşümü yapıyorduk. Başka ne öğrenmiştik? İkinci vizeye dahil olan konulardan. Ne öğrenmiştik?
+
+1138
+01:42:21,716 --> 01:42:23,136
+Evet orada mısın [öğrenci]?
+
+1139
+01:42:25,216 --> 01:42:27,376
+Hangi yöntemleri öğrendik arkadaşlar?
+
+1140
+01:42:27,576 --> 01:42:30,036
+İki tane temel integral alma yöntemi öğrendik.
+
+1141
+01:42:30,556 --> 01:42:32,336
+Belirsizliği integral hesaplama yöntemi.
+
+1142
+01:42:33,036 --> 01:42:34,716
+En temeli neydi?
+
+1143
+01:42:36,136 --> 01:42:37,856
+En temeli değişken dönüşümü.
+
+1144
+01:42:37,936 --> 01:42:39,036
+Yerine koyma yöntemi.
+
+1145
+01:42:39,256 --> 01:42:41,155
+Diğeri de kısmi integrasyon.
+
+1146
+01:42:41,236 --> 01:42:42,496
+Başka bir şey görmedik ki.
+
+1147
+01:42:43,176 --> 01:42:44,716
+İkinci vizeye dahil olanlar bunlar.
+
+1148
+01:42:46,356 --> 01:42:48,436
+Rasyonel fonksiyonların integralleri yok.
+
+1149
+01:42:49,195 --> 01:42:49,536
+Doğru mu?
+
+1150
+01:42:49,536 --> 01:42:54,836
+Öyle temel basit integraller, basit değişken dönüşümleriyle elde edilebilen integraller.
+
+1151
+01:42:55,356 --> 01:42:55,536
+Tamam mı?
+
+1152
+01:42:56,296 --> 01:42:56,615
+Evet.
+
+1153
+01:42:57,036 --> 01:42:57,896
+[öğrenci] güzel.
+
+1154
+01:42:58,236 --> 01:42:59,836
+Sana sormadım ama sen cevap verdin.
+
+1155
+01:43:00,356 --> 01:43:02,376
+Kısmi integrasyonunu da uygulayacaksınız.
+
+1156
+01:43:02,516 --> 01:43:05,436
+Hem değişken dönüşümü hem de kısmı iste.
+
+1157
+01:43:05,516 --> 01:43:07,176
+Ama hangisine değişken dönüşümü?
+
+1158
+01:43:07,676 --> 01:43:10,376
+Verilen integrallerden hangisine değişken dönüşümü?
+
+1159
+01:43:10,896 --> 01:43:13,416
+Hangisine kısmi integrasyon uygulayacağız?
+
+1160
+01:43:13,556 --> 01:43:16,216
+Şimdi bu sorun üzerine düştüğünüzü lazım.
+
+1161
+01:43:17,436 --> 01:43:18,336
+Evet düşük bakalım.
+
+1162
+01:43:18,336 --> 01:43:20,695
+[öğrenci].
+
+1163
+01:43:20,695 --> 01:43:21,316
+[öğrenci].
+
+1164
+01:43:25,844 --> 01:43:30,163
+[öğrenci], burada değil herhalde [öğrenci]. [öğrenci], [öğrenci] burada mısın?
+
+1165
+01:43:34,739 --> 01:43:38,699
+[öğrenci], [öğrenci] da burada değil. Herkes arazi olmuş.
+
+1166
+01:43:40,199 --> 01:43:41,399
+[öğrenci]
+
+1167
+01:43:45,779 --> 01:43:46,279
+Evet.
+
+1168
+01:43:46,460 --> 01:43:47,859
+[öğrenci] de burada değil.
+
+1169
+01:43:47,960 --> 01:43:50,239
+[öğrenci]. Burada mı [öğrenci]?
+
+1170
+01:43:53,079 --> 01:43:53,659
+[öğrenci].
+
+1171
+01:43:54,119 --> 01:43:56,359
+Evet. [öğrenci]. Sence hangisine?
+
+1172
+01:43:56,439 --> 01:43:57,719
+Orada üç tane bilgi var.
+
+1173
+01:43:57,819 --> 01:43:58,960
+Bir, iki, üç.
+
+1174
+01:44:00,059 --> 01:44:00,639
+Kaçıncı
+
+1175
+01:44:00,639 --> 01:44:03,880
+integrale
+
+1176
+01:44:03,880 --> 01:44:05,779
+kısmı integrasyon uygulayacağım? Kaçıncı
+
+1177
+01:44:05,779 --> 01:44:08,159
+integrale değişken dönüşümü
+
+1178
+01:44:08,159 --> 01:44:08,699
+uygulayacağım?
+
+1179
+01:44:09,679 --> 01:44:10,719
+[öğrenci]. Düşün bakalım.
+
+1180
+01:44:11,759 --> 01:44:13,719
+Evet. Kısmı integrasyon üçüncüye
+
+1181
+01:44:13,719 --> 01:44:15,679
+uygulanmalı. Çok güzel. Herkesin
+
+1182
+01:44:15,679 --> 01:44:17,960
+önünde kağıt kalem olsun. Üçüncüye
+
+1183
+01:44:17,960 --> 01:44:19,880
+kısmı integrasyon uygulayın. Birinci ve
+
+1184
+01:44:19,880 --> 01:44:21,779
+ikinciye. Zaten birinciye
+
+1185
+01:44:21,779 --> 01:44:23,819
+doğrudan integral alacaksınız. Birinciye
+
+1186
+01:44:23,819 --> 01:44:25,939
+değişken dönüşümü yok. Dikkat edin.
+
+1187
+01:44:26,559 --> 01:44:27,579
+Birinciye doğrudan
+
+1188
+01:44:27,579 --> 01:44:29,219
+integral alacaksınız.
+
+1189
+01:44:30,059 --> 01:44:32,039
+Belli bir değer bulacaksınız F'ye bağlı.
+
+1190
+01:44:32,739 --> 01:44:33,800
+İkinciye değişken
+
+1191
+01:44:33,800 --> 01:44:35,759
+dönüşümü. Üçüncüye de
+
+1192
+01:44:35,759 --> 01:44:37,719
+kısmı integrasyon. Herkes
+
+1193
+01:44:37,719 --> 01:44:39,519
+gördü mü neden öyle olması gerektiğini?
+
+1194
+01:44:42,239 --> 01:44:42,439
+Evet.
+
+1195
+01:44:42,439 --> 01:44:45,880
+[öğrenci]. Burada mısın [öğrenci]?
+
+1196
+01:44:45,880 --> 01:45:13,159
+[öğrenci].
+
+1197
+01:44:54,836 --> 01:45:11,596
+[öğrenci], [öğrenci] yazıyordu orada. Neyse sen de [öğrenci]sün, sen de buradasın. Güzel. [öğrenci], [öğrenci], [öğrenci] burada mı [öğrenci]?
+
+1198
+01:45:15,091 --> 01:45:16,112
+[öğrenci].
+
+1199
+01:45:16,591 --> 01:45:17,771
+Burada [öğrenci].
+
+1200
+01:45:26,292 --> 01:45:27,512
+[öğrenci]
+
+1201
+01:45:31,988 --> 01:45:38,708
+Güzel. [öğrenci] burada yokmuş. [öğrenci]. Burada mı [öğrenci]?
+
+1202
+01:45:43,283 --> 01:45:46,263
+Evet, çoğu kişi yok burada. [öğrenci] burada mı?
+
+1203
+01:45:51,091 --> 01:45:57,851
+Evet. [öğrenci] burada mı? [öğrenci], [öğrenci], [öğrenci].
+
+1204
+01:45:59,871 --> 01:46:00,931
+Buradayım hocam.
+
+1205
+01:46:01,411 --> 01:46:10,911
+Tamam. Evet. Şimdi arkadaşlar bu alanı dar, bu alan yetmez bana. Şimdi siz soruları yazdınız galiba kağıdınıza. Ben şimdi whiteboard paylaşıyorum.
+
+1206
+01:46:11,791 --> 01:46:19,371
+Bana söyleyin, whiteboarddan yapalım. Ya da buradan yapalım, şeyin whiteboardundan. Soruları söyleyin arkadaşlar bana.
+
+1207
+01:46:23,891 --> 01:46:25,112
+Şu an görüyorsunuz değil mi?
+
+1208
+01:46:30,996 --> 01:46:34,115
+Görüyoruz hocam. Şey görüyoruz ama soru ekranını.
+
+1209
+01:46:34,695 --> 01:46:42,516
+Soru ekranını görüyorsunuz. Stop share. O zaman share screen. Soruları yazmıştınız değil mi? Bana söyleyin. Oradan çözeceğim. Alamıyorum direkt.
+
+1210
+01:46:50,068 --> 01:46:50,547
+Evet.
+
+1211
+01:46:52,688 --> 01:46:53,128
+Şimdi
+
+1212
+01:46:53,128 --> 01:46:55,427
+neydi?
+
+1213
+01:46:56,868 --> 01:46:57,828
+Kaçaydı?
+
+1214
+01:46:59,347 --> 01:47:00,288
+1'den 3'e kadar
+
+1215
+01:47:00,288 --> 01:47:01,408
+f'nin türevinde x.
+
+1216
+01:47:02,128 --> 01:47:03,608
+1'den 3'e kadar
+
+1217
+01:47:03,608 --> 01:47:05,868
+f'ye üstü x, d x
+
+1218
+01:47:05,868 --> 01:47:07,887
+1 miydi? Evet.
+
+1219
+01:47:08,887 --> 01:47:09,768
+Bu ne demektir?
+
+1220
+01:47:11,128 --> 01:47:12,307
+f'nin türevi
+
+1221
+01:47:12,307 --> 01:47:14,288
+f'dir. The derivation of
+
+1222
+01:47:14,288 --> 01:47:16,368
+f results in f' prime of x
+
+1223
+01:47:16,368 --> 01:47:17,788
+by the fundamental
+
+1224
+01:47:17,788 --> 01:47:19,927
+theorem part 2
+
+1225
+01:47:19,927 --> 01:47:22,108
+so we have this information.
+
+1226
+01:47:22,927 --> 01:47:23,108
+Okay.
+
+1227
+01:47:24,288 --> 01:47:26,387
+Now so let's write this.
+
+1228
+01:47:30,771 --> 01:47:32,912
+We are going to use this information.
+
+1229
+01:47:33,072 --> 01:47:34,431
+Second information neydi?
+
+1230
+01:47:34,551 --> 01:47:35,771
+O da birdi doğru mu?
+
+1231
+01:47:36,271 --> 01:47:36,631
+Evet.
+
+1232
+01:47:37,711 --> 01:47:39,032
+Neydi kaçtan kaçaydı?
+
+1233
+01:47:39,431 --> 01:47:40,532
+O da birden içe kadar.
+
+1234
+01:47:41,572 --> 01:47:43,231
+fx çarpı fn'in terevinde x.
+
+1235
+01:47:46,532 --> 01:47:47,091
+Okay.
+
+1236
+01:47:48,011 --> 01:47:50,591
+Now for this we need to do change of variable.
+
+1237
+01:47:51,152 --> 01:47:52,751
+So let me use different color here.
+
+1238
+01:47:54,851 --> 01:47:58,372
+So let's say this is f of x u.
+
+1239
+01:47:58,372 --> 01:48:01,431
+So this is du.
+
+1240
+01:48:02,891 --> 01:48:06,251
+So if you say f of x is equal to u.
+
+1241
+01:48:06,792 --> 01:48:13,332
+So by changing limits of integration by using this transformation.
+
+1242
+01:48:13,992 --> 01:48:15,351
+So this is x0.
+
+1243
+01:48:16,131 --> 01:48:17,992
+So this is x1.
+
+1244
+01:48:18,271 --> 01:48:22,572
+So u0 is f of x0.
+
+1245
+01:48:23,211 --> 01:48:24,492
+f of 1.
+
+1246
+01:48:24,492 --> 01:48:29,532
+So u1 is f of x1.
+
+1247
+01:48:29,872 --> 01:48:31,011
+f of 3.
+
+1248
+01:48:32,011 --> 01:48:32,351
+Okay.
+
+1249
+01:48:33,011 --> 01:48:35,152
+u du.
+
+1250
+01:48:35,771 --> 01:48:36,771
+So we have this.
+
+1251
+01:48:36,851 --> 01:48:40,492
+If you integrate this, use u2 over 2.
+
+1252
+01:48:40,492 --> 01:48:44,591
+So by applying fundamental theorem part 2.
+
+1253
+01:48:45,412 --> 01:48:50,251
+Now so we are going to obtain f of 3 square.
+
+1254
+01:48:51,051 --> 01:48:53,072
+So let me write so this formula.
+
+1255
+01:48:53,072 --> 01:49:01,832
+f of 3 f of 1 times f of 3 plus f of 1 over 2.
+
+1256
+01:49:01,832 --> 01:49:04,591
+So we have is equal to 1.
+
+1257
+01:49:04,792 --> 01:49:07,271
+So we know that this is 1.
+
+1258
+01:49:08,112 --> 01:49:18,671
+So this implies that f of 3 plus f of 1 is equal to 2.
+
+1259
+01:49:18,671 --> 01:49:19,572
+Okay.
+
+1260
+01:49:19,971 --> 01:49:24,171
+So we have to solve this and this together.
+
+1261
+01:49:24,711 --> 01:49:28,492
+So this implies that f of 3.
+
+1262
+01:49:28,931 --> 01:49:36,412
+So f of 3 is equal to 3 over 2.
+
+1263
+01:49:36,591 --> 01:49:36,931
+Okay.
+
+1264
+01:49:37,431 --> 01:49:38,271
+f of 1.
+
+1265
+01:49:39,631 --> 01:49:41,112
+1 over 3.
+
+1266
+01:49:41,252 --> 01:49:41,952
+Is that correct?
+
+1267
+01:49:41,952 --> 01:49:44,792
+To obtain this.
+
+1268
+01:49:46,252 --> 01:49:47,792
+Var mı başka bilgi?
+
+1269
+01:49:47,851 --> 01:49:49,391
+Diğer bilgiyi kullanacağız şimdi.
+
+1270
+01:49:49,992 --> 01:49:52,131
+Let's use other information.
+
+1271
+01:49:52,872 --> 01:49:53,192
+Neydi?
+
+1272
+01:49:53,271 --> 01:49:54,112
+Söyleyin arkadaşlar.
+
+1273
+01:49:55,152 --> 01:49:57,091
+x kare çarpı f'nin trevinde x.
+
+1274
+01:49:57,332 --> 01:49:58,072
+Sınırlar aynı.
+
+1275
+01:49:58,551 --> 01:49:59,271
+Bu da 1 eşit.
+
+1276
+01:50:00,131 --> 01:50:01,311
+1 eşittir.
+
+1277
+01:50:02,171 --> 01:50:03,011
+1'den 3'e.
+
+1278
+01:50:03,131 --> 01:50:03,471
+Doğru mu?
+
+1279
+01:50:04,292 --> 01:50:04,652
+Evet.
+
+1280
+01:50:05,332 --> 01:50:06,731
+x fx.
+
+1281
+01:50:08,591 --> 01:50:09,591
+Başka dx mi?
+
+1282
+01:50:09,591 --> 01:50:14,332
+x kare çarpı f'nin trevinde.
+
+1283
+01:50:16,032 --> 01:50:16,591
+Okay.
+
+1284
+01:50:17,011 --> 01:50:18,011
+So we got it.
+
+1285
+01:50:18,591 --> 01:50:21,351
+Now, so for this we need to apply.
+
+1286
+01:50:22,131 --> 01:50:23,091
+We need to apply.
+
+1287
+01:50:27,188 --> 01:50:39,188
+Partial integration method, let's say u is equal to x equal to f of x d x d u.
+
+1288
+01:50:39,847 --> 01:50:46,427
+So if you differentiate both sides of this equality to x d x d u and f of x,
+
+1289
+01:50:46,427 --> 01:50:49,507
+if we integrate both sides of the differential relation, we have this.
+
+1290
+01:50:49,507 --> 01:50:58,667
+So this is u times v, 1 is equal to, this is equal to, from u times v, x squared times f of x,
+
+1291
+01:50:58,748 --> 01:51:07,208
+but you need to substitute upper bound and lower bound, okay, minus integration from 1 to 3.
+
+1292
+01:51:07,208 --> 01:51:19,568
+So 2 times v d u, so let me write 2 here.
+
+1293
+01:51:20,568 --> 01:51:30,307
+Write it as 2, x f of x d x.
+
+1294
+01:51:30,307 --> 01:51:31,108
+Is that correct?
+
+1295
+01:51:32,448 --> 01:51:32,587
+Yes.
+
+1296
+01:51:33,068 --> 01:51:36,967
+So here we have here.
+
+1297
+01:51:37,667 --> 01:51:52,268
+So as you see, 1 is equal to, if you substitute this, 9 times f of 3 minus f of 1 minus 2 times from 1 to 3,
+
+1298
+01:51:52,908 --> 01:51:55,788
+x of x times f of x d x.
+
+1299
+01:51:55,788 --> 01:51:58,507
+So you need to compute this integration.
+
+1300
+01:51:58,507 --> 01:52:07,608
+So we know this, 1, 9 times 3 over 2 minus 1 over 2, okay, and i integration.
+
+1301
+01:52:07,927 --> 01:52:11,728
+So by solving this problem, we can compute i.
+
+1302
+01:52:12,068 --> 01:52:13,007
+Var mı anlaşımın bir yer?
+
+1303
+01:52:13,208 --> 01:52:15,228
+Is there any question about this?
+
+1304
+01:52:15,967 --> 01:52:19,467
+Bu kısmı integralde neden şey u'ya x kare verdik?
+
+1305
+01:52:20,127 --> 01:52:22,188
+Orada labtoya göre gidiyorduk ya ben onu anlamadım.
+
+1306
+01:52:22,807 --> 01:52:23,868
+F'i biliyor musun sen?
+
+1307
+01:52:24,547 --> 01:52:25,208
+F'i bilmiyorum.
+
+1308
+01:52:25,208 --> 01:52:30,568
+Labtineyi orada kombinasyondaki bütün fonksiyon tiplerini bilirsen işe yarar.
+
+1309
+01:52:31,068 --> 01:52:36,148
+Orada ben x d x'i bende sorudan x f x'in integrali istendiğinden, doğru mu?
+
+1310
+01:52:36,847 --> 01:52:37,087
+Evet.
+
+1311
+01:52:37,087 --> 01:52:42,408
+X f x'in integrali istendiğinden o yüzden x kareye u diyorum ki x f x d x integralini elde edebileyim.
+
+1312
+01:52:42,488 --> 01:52:42,887
+Anladın mı?
+
+1313
+01:52:43,167 --> 01:52:44,047
+Tamam, tamam.
+
+1314
+01:52:44,307 --> 01:52:44,648
+Sağ olun.
+
+1315
+01:52:45,768 --> 01:52:46,087
+Evet.
+
+1316
+01:52:46,087 --> 01:52:48,587
+Share screen.
+
+1317
+01:52:56,884 --> 01:53:05,684
+Okay, now I think you can see my sharing. So this is the topic of, this is the topic of final exam, which is about
+
+1318
+01:53:05,684 --> 01:53:15,863
+the story of volume of solid revolutions. So what about this question? So this question is very nice, I think.
+
+1319
+01:53:16,283 --> 01:53:21,904
+So let's try to solve this problem. So last week we couldn't solve such problem because of the fact that
+
+1320
+01:53:21,904 --> 01:53:27,503
+my pen was broken. Now today we can solve such problem.
+
+1321
+01:53:29,863 --> 01:53:40,404
+Okay, what is the value of definite integration of x times g of 3x squared dx from 1 to 2 for some continuous function g such that
+
+1322
+01:53:40,404 --> 01:53:49,724
+definite integration from 0 to 3 g of x dx 7 and definite integration of g of 2x from 0 to 6 is 5.
+
+1323
+01:53:49,724 --> 01:54:19,703
+Okay, let's try to solve this problem.
+
+1324
+01:54:23,988 --> 01:54:34,988
+Şöyle bir bakın bakalım soruya. Ne yaparsak, ne yaparsak istenilen sonucu elde ederiz. Verilen bilgileri kullanabiliriz.
+
+1325
+01:54:34,988 --> 01:54:46,387
+Which kind of methods must be used in order to substitute given informations into our solution?
+
+1326
+01:54:46,387 --> 01:54:55,208
+Öyle bir yöntem kullanmalısınız ki bizim elimizde olan bilgileri çözüme dahil edebilelim.
+
+1327
+01:54:57,008 --> 01:54:57,967
+Hangi yöntemler?
+
+1328
+01:54:59,708 --> 01:55:01,328
+İki tane var yöntem. Ne?
+
+1329
+01:55:02,128 --> 01:55:05,048
+Substitution method, integration by parts.
+
+1330
+01:55:05,168 --> 01:55:07,128
+So we have basically two methods.
+
+1331
+01:55:08,068 --> 01:55:08,288
+Okay?
+
+1332
+01:55:08,908 --> 01:55:12,028
+Which are associated with second midterm exam.
+
+1333
+01:55:12,807 --> 01:55:14,128
+There is no extra method.
+
+1334
+01:55:14,488 --> 01:55:15,448
+You need to study.
+
+1335
+01:55:16,387 --> 01:55:46,368
+İki tane yöntem.
+
+1336
+01:55:40,659 --> 01:55:52,840
+Evet, ilker atılan. Madem öyle, düşün bakayım şu dördüncü soruyu. Sence hangi yöntemi kullanacağız ilker? Dördüncü soruyu çözüyoruz. Bir bak bakalım dördüncü soruya.
+
+1337
+01:55:56,851 --> 01:56:22,671
+1'den 2'ye x g 3x kare dx integral hesaplayacaksın. g ile alakalı aşağıdaki integraller verilmiş. Buna göre 1'den 2'ye x g 3x kare dx integral hesaplanacak. Böyle sorularda şu soruyu soracaksın. Hangi yöntemi kullanırsam benim elimdeki bilgiler çözüme dahil edilebilir sorusunu [öğrenci]. Sordun mu bu soruyu kendine? Cevap bulabildin mi?
+
+1338
+01:56:31,796 --> 01:56:33,115
+Evet, orada mısın [öğrenci]?
+
+1339
+01:56:38,899 --> 01:56:41,439
+[öğrenci] orada değil, yine tuvalete gitmiş anlaşılan.
+
+1340
+01:56:52,115 --> 01:56:57,676
+Bir an önce şu salgın biter de, yüz yüze, güzel güzel ders işleriz.
+
+1341
+01:57:01,108 --> 01:57:01,568
+Evet.
+
+1342
+01:57:08,275 --> 01:57:12,036
+Denemak'in kısmi, integrasyon yöntemini işine yarıyor mu?
+
+1343
+01:57:14,115 --> 01:57:18,576
+Yoksa verilen bilgilerden başka, daha karmaşık ifadeler mi geliyor [öğrenci]?
+
+1344
+01:57:56,819 --> 01:58:04,380
+Okay, now so because of this fact that if you differentiate this
+
+1345
+01:58:04,380 --> 01:58:12,939
+x dx, okay so that's why so it is better to apply substitution method in such cases.
+
+1346
+01:58:12,939 --> 01:58:23,519
+So let's apply substitution method 3x squared 3x squared is equal to u 6x dx is equal to u.
+
+1347
+01:58:23,519 --> 01:58:29,739
+Now so this i integration so this is this i integration.
+
+1348
+01:58:32,219 --> 01:58:43,079
+i integration is equal to so by using this transformation we can change bounds of integration u 0 is 3.
+
+1349
+01:58:43,880 --> 01:58:52,500
+u 0 is 3 if you substitute x 0 into this transformation if you substitute x 1 into this transformation we obtain u 1.
+
+1350
+01:58:53,519 --> 01:58:57,199
+as 12 okay from 3 to 12.
+
+1351
+01:58:58,699 --> 01:59:10,199
+x dx 1 over 1 over 6 du and so g of u g of u du is that correct.
+
+1352
+01:59:10,199 --> 01:59:55,199
+x dx 1 over 6.
+
+1353
+01:59:42,836 --> 01:59:44,996
+işlem hatası yapmadık galiba.
+
+1354
+01:59:46,136 --> 01:59:46,416
+Okay.
+
+1355
+01:59:46,856 --> 01:59:49,136
+Now, let's consider this problem.
+
+1356
+01:59:50,396 --> 01:59:54,256
+So, if you do the change of variable 2x is equal to t,
+
+1357
+01:59:55,496 --> 01:59:59,275
+2dx, 2dx is equal to t.
+
+1358
+02:00:00,036 --> 02:00:07,216
+So, in this case, 5 is equal to from, from, 0, from, 0.
+
+1359
+02:00:07,216 --> 02:00:14,396
+If you substitute x, 0, 0, x, 0, 0 into this transformation, we are going to obtain, okay, 0.
+
+1360
+02:00:14,676 --> 02:00:22,536
+And if you substitute x, 1, 6 into this transformation, we will got 12 as upper bound for this integration.
+
+1361
+02:00:23,195 --> 02:00:34,176
+And 1 over 2, 1 over 2, g of, g of t, okay, dt.
+
+1362
+02:00:39,283 --> 02:01:08,063
+Very good, 5. So, okay, so 5 is equal to 1 over 2. We use property of definite integration from 0 to 3, g of t dt, plus from 3 to 12, g of t dt. Okay, so is that clear? Now we know this. Let me use different color.
+
+1363
+02:01:09,283 --> 02:01:14,683
+We know this. This is given in the equation 7.
+
+1364
+02:01:17,083 --> 02:01:19,103
+As we can compute this.
+
+1365
+02:01:20,363 --> 02:01:24,483
+Ne oluyor arkadaşlar? 7 bölü 2. 5-7 bölü 2 geliyor bu. Doğru mu?
+
+1366
+02:01:25,103 --> 02:01:29,283
+This is 5 minus...
+
+1367
+02:01:31,403 --> 02:01:34,543
+Evet, bir bölü 2'si var bir de orada arkadaşlar. Unutmayın.
+
+1368
+02:01:35,384 --> 02:01:36,983
+Şu an alanım dar yazamıyorum.
+
+1369
+02:01:36,983 --> 02:01:39,923
+Tamam, buradan bunu bulduktan sonra.
+
+1370
+02:01:39,923 --> 02:01:42,183
+Find this and substitute here.
+
+1371
+02:01:43,384 --> 02:01:44,543
+Substitute here.
+
+1372
+02:01:45,263 --> 02:01:45,503
+Okay?
+
+1373
+02:01:46,063 --> 02:01:48,384
+And finally you are going to obtain answer to be.
+
+1374
+02:01:49,023 --> 02:01:51,043
+Evet, işlem hatası yoksa böyle.
+
+1375
+02:01:51,723 --> 02:01:52,643
+Var mı anlaşımın bir yer?
+
+1376
+02:01:53,163 --> 02:01:54,443
+Hocam bir şey sorabilir miyim?
+
+1377
+02:01:54,743 --> 02:01:54,983
+Sor.
+
+1378
+02:01:55,683 --> 02:02:00,023
+Şey, değişkenler farklı olduğuna göre yani...
+
+1379
+02:02:00,023 --> 02:02:00,683
+Fark etmez.
+
+1380
+02:02:01,683 --> 02:02:03,403
+Fark etmez. Bak, göstereyim sana.
+
+1381
+02:02:03,403 --> 02:02:24,403
+Fark etmez.
+
+1382
+02:02:16,787 --> 02:02:17,907
+a'dan b'yi yapalım.
+
+1383
+02:02:18,047 --> 02:02:33,027
+from a to b, f to b, d t, is equal to from a to b, f of m, d m.
+
+1384
+02:02:34,247 --> 02:02:35,547
+Birbirine eşittir. Neden?
+
+1385
+02:02:48,212 --> 02:02:52,732
+Gördün mü? Değişken dönüşüm ile ne oldu? Bak.
+
+1386
+02:02:54,792 --> 02:02:59,292
+Basit bir ispat yaptım sana. Genel bir ispat.
+
+1387
+02:03:00,292 --> 02:03:01,312
+Anladım hocam.
+
+1388
+02:03:06,195 --> 02:03:34,576
+Okay, let's go on. Stop this here. Okay, so let's share next page. Next question. So this is about final exam, not topic of second midterm exam. Okay. Oh, so this is a very nice question. Think about this question. What can we do here? So we have some function f satisfying this function.
+
+1389
+02:03:36,195 --> 02:03:42,536
+conditions. Then what is the value of f' at the point 8?
+
+1390
+02:03:46,931 --> 02:03:50,072
+So, attention here. You must use
+
+1391
+02:03:50,072 --> 02:04:01,751
+Procure of this function given equation. If you apply f product of two positive values, you obtain addition of
+
+1392
+02:04:01,751 --> 02:04:08,831
+Addition of values of f at the each product. Dikkat edin. Çarpıma uygulayınca f'yi
+
+1393
+02:04:08,831 --> 02:04:15,891
+F altındaki görüntülerin toplamını elde ediyorsunuz. Böyle bir özelliğe sahip f.
+
+1394
+02:04:15,891 --> 02:04:23,992
+Bex için çirik 2'ye giderken fx bölü x eksi 2 limiti 4 imiş. Bunu göz önünde bulundurarak
+
+1395
+02:04:23,992 --> 02:04:30,152
+f üstü 8'in türevinin 1 olduğunu bulun bakalım. Gerçekten 1 mi? Görebiliyor muyuz?
+
+1396
+02:04:33,652 --> 02:04:39,332
+Evet, nasıl buldun [öğrenci]? Anlat bakalım. Sesli bağlanıp anlatabilirsin bize.
+
+1397
+02:04:41,252 --> 02:04:44,252
+Hangi yöntemleri kullandın [öğrenci]? Which method?
+
+1398
+02:04:54,771 --> 02:04:55,811
+Sesin geliyor mu?
+
+1399
+02:04:56,292 --> 02:04:56,692
+Geliyor.
+
+1400
+02:04:57,452 --> 02:05:08,091
+Ben şöyle yaptım, 6x×2, 2 koyunca 0 alıyor ya, o zaman fx'in ikili x×2 vardır dedim, birbirini sadeleştirsin diye. x artı 2'dir fx.
+
+1401
+02:05:11,699 --> 02:05:13,539
+Tamam. Yani f'in türevinin
+
+1402
+02:05:13,539 --> 02:05:14,659
+ikideki değerinin
+
+1403
+02:05:14,659 --> 02:05:16,460
+ne olduğunu biliyorsun?
+
+1404
+02:05:19,340 --> 02:05:21,679
+Yani sen özel bir fonksiyon mu seçtin?
+
+1405
+02:05:22,699 --> 02:05:23,460
+Yani ben...
+
+1406
+02:05:23,460 --> 02:05:25,659
+x kare artı
+
+1407
+02:05:25,659 --> 02:05:27,460
+x kare eksi 4 mü dedin?
+
+1408
+02:05:28,260 --> 02:05:29,439
+x artı 2 dedim.
+
+1409
+02:05:29,439 --> 02:05:33,059
+F'e x artı 2 dedin.
+
+1410
+02:05:33,119 --> 02:05:35,479
+F'e x artı 2 dersen olmaz ki. Nasıl oluyor?
+
+1411
+02:05:36,439 --> 02:05:37,059
+Evet.
+
+1412
+02:05:37,380 --> 02:05:39,319
+x kare eksi 4
+
+1413
+02:05:39,319 --> 02:05:40,380
+x artı 4 dedim.
+
+1414
+02:05:41,699 --> 02:05:43,659
+Peki şu özelliği sağlar mı?
+
+1415
+02:05:52,148 --> 02:05:53,248
+Tesadüf olmuş.
+
+1416
+02:05:54,268 --> 02:05:55,127
+Öyle mi bilmiyorum.
+
+1417
+02:05:56,028 --> 02:05:59,507
+f'e x kare eksi 4 dersen bilmiyorum.
+
+1418
+02:06:00,188 --> 02:06:03,708
+f'e x kare eksi 4x artı 4.
+
+1419
+02:06:05,528 --> 02:06:08,807
+Sağlıyor mu özelliği peki? x kare eksi 4x artı 4.
+
+1420
+02:06:09,467 --> 02:06:12,368
+Bilmiyorum. İlk yapımda bir sağlığı da şu an sizle konuşabilirim.
+
+1421
+02:06:14,427 --> 02:06:21,448
+Evet, tamam. Mikrofonunu kapat. Dikkat etmek lazım. Sana verilen kuralları kullanman lazım. Özellikleri.
+
+1422
+02:06:22,148 --> 02:06:23,228
+Evet.
+
+1423
+02:06:28,819 --> 02:06:34,439
+Ne yapıyoruz? Bulan var mı gençler? Basit bir soru aslında. Sadece verilen bilgileri kullanacaksınız. Birinci ve ikinci maddedeki.
+
+1424
+02:06:37,739 --> 02:06:40,019
+Okay. Let's solve together.
+
+1425
+02:06:42,059 --> 02:06:55,340
+Now, by using this information, look at that. So if x, as x approaching 2, if f of x approach some non-zero term, so you cannot write this equality.
+
+1426
+02:06:55,340 --> 02:07:11,559
+That's why as x goes to 2, f of x must approach 0. F of x must approach 0 in order to obtain, okay, so this limit result. In order to apply L'Hopita's rule, okay, so this must approach 0.
+
+1427
+02:07:11,559 --> 02:07:23,880
+This is approach 0. By L'Hopita's rule, okay, by L'Hopita's rule, this information says that f prime of x, so f prime of 2 is equal to 4.
+
+1428
+02:07:24,559 --> 02:07:27,219
+Okay, we can obtain this information.
+
+1429
+02:07:28,299 --> 02:07:31,819
+Dikkat edin, x2'ye yaklaşırken fx 0'a yaklaşmak zorunda.
+
+1430
+02:07:32,119 --> 02:07:36,099
+Sıfırdan farklı bir değere yaklaşırsa 4 olmaz o. Artı sonsuz, x sonsuz olur.
+
+1431
+02:07:36,420 --> 02:07:38,880
+Bir çelişki elde edersiniz. Bir kere bu yorumu yapacaksınız.
+
+1432
+02:07:38,880 --> 02:07:44,399
+Tamam mı gençler? Yani x2'ye yaklaşırken fx 0'a yaklaşırsa, xx2 de 0'a yaklaşır.
+
+1433
+02:07:44,460 --> 02:07:48,119
+0 bölü 0 belirsizli. L'Hopita'da uygularsanız fx 2 eşitli 4 bulunur.
+
+1434
+02:07:48,380 --> 02:07:50,039
+Tamam mı? Şimdi bunu kullanalım.
+
+1435
+02:07:50,099 --> 02:07:51,759
+How can we use this information?
+
+1436
+02:07:52,719 --> 02:08:00,899
+Now, so in order to obtain this, so we know this, and we know this 2 cube is equal to 8.
+
+1437
+02:08:00,899 --> 02:08:05,279
+So that's why, so let's try to obtain f of x cube.
+
+1438
+02:08:05,960 --> 02:08:10,319
+f of x cube, f of x square times x.
+
+1439
+02:08:10,979 --> 02:08:17,659
+So this is, according to this property, so this is equal to f of x square plus f of x.
+
+1440
+02:08:17,659 --> 02:08:25,259
+Similarly, you can write this f of x plus f of x plus f of x.
+
+1441
+02:08:25,859 --> 02:08:30,059
+Okay, now so 3, 3 f of x.
+
+1442
+02:08:30,059 --> 02:08:34,559
+So f of x cube is equal to 3 f of x.
+
+1443
+02:08:34,819 --> 02:08:38,219
+If we derivate both sides of this equality with respect to x,
+
+1444
+02:08:38,659 --> 02:08:43,019
+f prime of x square times derivation of x cube,
+
+1445
+02:08:43,019 --> 02:08:52,000
+3 x square is equal to derivation of right hand side 3 times f prime of x.
+
+1446
+02:08:52,319 --> 02:08:56,639
+So when you substitute x2, so we are going to obtain f prime of 8 times.
+
+1447
+02:08:57,059 --> 02:08:59,739
+X yine 2 yazarsanız arkadaşlar, şu 3'ler gitti zaten.
+
+1448
+02:09:00,380 --> 02:09:01,939
+X yine 2 yazarsak, 4.
+
+1449
+02:09:02,739 --> 02:09:05,019
+f üstü 2, o da 4.
+
+1450
+02:09:05,799 --> 02:09:07,139
+4'ler sadeleşir.
+
+1451
+02:09:07,399 --> 02:09:08,399
+f üstü 8.
+
+1452
+02:09:09,840 --> 02:09:10,859
+Bu da 4 ya arkadaşlar.
+
+1453
+02:09:13,019 --> 02:09:14,239
+bu şekilde.
+
+1454
+02:09:14,840 --> 02:09:15,759
+Tamam yoruz arkadaşlar.
+
+1455
+02:09:16,479 --> 02:09:19,059
+4'ler sadeleşirse f üstü 8.
+
+1456
+02:09:19,319 --> 02:09:20,819
+1 olarak bulunur.
+
+1457
+02:09:21,739 --> 02:09:22,539
+Bizleri ne koyduk için?
+
+1458
+02:09:22,719 --> 02:09:23,299
+Soru soru var mı?
+
+1459
+02:09:36,435 --> 02:09:36,915
+Tamam.
+
+1460
+02:09:37,135 --> 02:09:38,435
+Bu konuda ne?
+
+1461
+02:09:39,555 --> 02:09:41,475
+Bu konuda çalışalım.
+
+1462
+02:10:03,123 --> 02:10:05,163
+Nasıl çözeceğiz bunu? Dikkat edin.
+
+1463
+02:10:07,163 --> 02:10:14,344
+Böyle çok uzun bir integral fonksiyonu varsa özellikleri düşüneceksiniz. Integralin özellikleri.
+
+1464
+02:10:14,443 --> 02:10:20,123
+When you see such more complicated integral function than the usual function,
+
+1465
+02:10:20,943 --> 02:10:24,783
+so you must recall properties of definite integration.
+
+1466
+02:10:28,467 --> 02:10:38,967
+Of course, [öğrenci]. First of all, try to identify odd functions contained by integrant function.
+
+1467
+02:10:38,967 --> 02:10:48,307
+Okay, which part of this addition, addition in the integrant function is odd? Think about that.
+
+1468
+02:10:54,644 --> 02:10:56,784
+Okay, so look at here.
+
+1469
+02:10:56,944 --> 02:11:05,024
+So this is, so cosine x even function and cosine cube even.
+
+1470
+02:11:05,724 --> 02:11:07,224
+So this is odd.
+
+1471
+02:11:08,444 --> 02:11:12,043
+The product of odd times even, this is odd.
+
+1472
+02:11:12,824 --> 02:11:14,164
+Okay, so this is odd.
+
+1473
+02:11:15,284 --> 02:11:16,944
+So this is odd.
+
+1474
+02:11:19,764 --> 02:11:20,404
+Okay.
+
+1475
+02:11:24,644 --> 02:11:30,284
+So this even because of this two sine x is odd.
+
+1476
+02:11:30,623 --> 02:11:32,104
+The odd times odd is even.
+
+1477
+02:11:33,204 --> 02:11:34,664
+Okay, so this is odd.
+
+1478
+02:11:35,664 --> 02:11:38,104
+Odd times even is odd.
+
+1479
+02:11:39,764 --> 02:11:42,904
+Okay, now, so this is even.
+
+1480
+02:11:43,684 --> 02:11:46,123
+So this is odd.
+
+1481
+02:11:46,484 --> 02:11:50,064
+Odd times even is odd.
+
+1482
+02:11:50,064 --> 02:11:56,304
+So as you see, all expressions are odd function except for three.
+
+1483
+02:11:56,944 --> 02:12:03,284
+Okay, now, so if you distribute this, so you are going to obtain this from minus two to.
+
+1484
+02:12:03,704 --> 02:12:05,164
+So we got this directly.
+
+1485
+02:12:06,064 --> 02:12:08,104
+Okay, is that true?
+
+1486
+02:12:08,104 --> 02:12:18,064
+Now, so we know that from minus a to a odd function, odd function dx is zero.
+
+1487
+02:12:18,064 --> 02:12:18,583
+Okay.
+
+1488
+02:12:19,384 --> 02:12:24,684
+Now, so three x or minus two to, what are you guys?
+
+1489
+02:12:25,744 --> 02:12:30,844
+Three, six, x, x, six, 12.
+
+1490
+02:12:30,844 --> 02:12:35,104
+Hocam, bir şey sorabilir miyim?
+
+1491
+02:12:35,604 --> 02:12:35,804
+Sure.
+
+1492
+02:12:36,884 --> 02:12:41,864
+Hocam, şimdi odd x even, even vermesi gerekmiyor mu, yoksa ben mi yanlış, biliyorum.
+
+1493
+02:12:42,204 --> 02:12:44,104
+Sen tam sayılarla karıştırma.
+
+1494
+02:12:44,184 --> 02:12:45,604
+Do not confuse integer.
+
+1495
+02:12:46,284 --> 02:12:46,503
+Okay.
+
+1496
+02:12:46,604 --> 02:12:46,984
+Okay, tamam.
+
+1497
+02:12:47,984 --> 02:12:49,543
+This is odd function.
+
+1498
+02:12:50,064 --> 02:12:51,164
+Not odd integer.
+
+1499
+02:12:51,484 --> 02:12:55,984
+Odd integer not identical to odd function.
+
+1500
+02:12:57,204 --> 02:12:57,503
+Okay.
+
+1501
+02:12:57,503 --> 02:13:01,804
+Stadi definition of odd integer.
+
+1502
+02:13:02,364 --> 02:13:04,284
+Stadi definition of odd function.
+
+1503
+02:13:04,423 --> 02:13:05,984
+They are not equivalent definition.
+
+1504
+02:13:06,623 --> 02:13:06,744
+Tamam.
+
+1505
+02:13:09,384 --> 02:13:14,144
+Teg, teg, tamsayılarla, teg, tchif funksiyonları, kavramları birbirine karıştırmayın.
+
+1506
+02:13:16,644 --> 02:13:17,244
+Okay.
+
+1507
+02:13:18,164 --> 02:13:22,344
+So, this is nothing else than application of L'Opitas rule.
+
+1508
+02:13:22,824 --> 02:13:25,043
+You can, you can solve this problem.
+
+1509
+02:13:25,224 --> 02:13:26,963
+Let's apply L'Opitas rule.
+
+1510
+02:13:27,503 --> 02:13:30,123
+Okay.
+
+1511
+02:13:30,324 --> 02:13:31,164
+So, very nice.
+
+1512
+02:13:31,423 --> 02:13:31,904
+Okay.
+
+1513
+02:13:32,284 --> 02:13:38,324
+So, I talked about this such problem.
+
+1514
+02:13:38,704 --> 02:13:48,204
+So, you may see some problem, which is combination of linearization method and fundamental theorem, part one.
+
+1515
+02:13:48,204 --> 02:13:51,524
+Fundamental theorem is very important topic.
+
+1516
+02:13:52,204 --> 02:13:52,503
+Okay.
+
+1517
+02:13:52,864 --> 02:13:53,604
+From now on.
+
+1518
+02:13:56,484 --> 02:13:56,824
+Okay.
+
+1519
+02:13:56,884 --> 02:13:58,564
+Let's try to solve this problem.
+
+1520
+02:13:59,864 --> 02:14:01,064
+Recall the definition.
+
+1521
+02:14:01,204 --> 02:14:06,264
+Recall the fundamental theorem, part one, and its generalization.
+
+1522
+02:14:06,264 --> 02:14:08,923
+Onun genelleştirilme işini de hatırlayın arkadaşlar.
+
+1523
+02:14:09,144 --> 02:14:11,484
+Derste anlatmıştık nasıl olduğunu.
+
+1524
+02:14:12,224 --> 02:14:29,444
+Evet.
+
+1525
+02:14:38,612 --> 02:14:40,811
+Bulun bakalım, bekliyorum cevabınızı.
+
+1526
+02:15:14,515 --> 02:15:18,695
+Evet. A olarak belirlediniz mi cevabı?
+
+1527
+02:15:22,100 --> 02:15:26,060
+Bakın dikkat edin yine integral fonksiyonumuz çok karışık görülüyor.
+
+1528
+02:15:28,060 --> 02:15:29,500
+Gözünüzü korkutmasın.
+
+1529
+02:15:30,100 --> 02:15:32,720
+Belirli integralin özelliklerini düşünecek olursanız
+
+1530
+02:15:32,720 --> 02:15:37,200
+basitleştiriyor işinizi bu durum.
+
+1531
+02:15:43,091 --> 02:15:43,531
+Evet.
+
+1532
+02:15:45,971 --> 02:15:50,431
+Buldu mu? Bulan var mı? Teyit eden var mı? Cevabın x 3x artı 9 olduğunu.
+
+1533
+02:15:52,631 --> 02:16:02,331
+Aşağıdaki farkımız söz konusu belirli integral ile tanımlanan bir de ekstradan 1 artı x var ve x x 2 çarpanı var kasay olarak.
+
+1534
+02:16:02,951 --> 02:16:05,051
+Bu fonksiyonu lineleştirilmiş halidir.
+
+1535
+02:16:10,484 --> 02:16:10,984
+Evet.
+
+1536
+02:16:17,939 --> 02:16:20,539
+Okay, let's recall linearization formula.
+
+1537
+02:16:22,219 --> 02:16:24,419
+So linearization formula,
+
+1538
+02:16:25,199 --> 02:16:27,879
+h of x nonlinear function
+
+1539
+02:16:27,879 --> 02:16:29,559
+approximates
+
+1540
+02:16:29,559 --> 02:16:31,939
+h of a
+
+1541
+02:16:31,939 --> 02:16:33,260
+plus
+
+1542
+02:16:33,260 --> 02:16:35,719
+h prime of a
+
+1543
+02:16:35,719 --> 02:16:36,920
+times
+
+1544
+02:16:36,920 --> 02:16:39,159
+x minus a.
+
+1545
+02:16:39,779 --> 02:16:42,439
+Okay, so our a value
+
+1546
+02:16:42,439 --> 02:16:43,000
+is 2.
+
+1547
+02:16:44,000 --> 02:16:45,659
+So we need to
+
+1548
+02:16:45,659 --> 02:16:47,600
+compute h of 2
+
+1549
+02:16:47,600 --> 02:16:49,199
+h of 2.
+
+1550
+02:16:49,859 --> 02:16:51,979
+Let me compute h of 2 here.
+
+1551
+02:16:52,180 --> 02:16:53,979
+h of 2 is equal to
+
+1552
+02:16:53,979 --> 02:16:56,299
+1 plus 2 plus
+
+1553
+02:16:56,299 --> 02:16:58,139
+so if you substitute
+
+1554
+02:16:58,139 --> 02:16:59,979
+x 2 here, we have 0.
+
+1555
+02:17:00,939 --> 02:17:02,020
+Okay, h of
+
+1556
+02:17:02,020 --> 02:17:03,859
+2 is 3. Okay.
+
+1557
+02:17:04,500 --> 02:17:06,119
+Now h of 2 is
+
+1558
+02:17:06,119 --> 02:17:07,680
+3, so this is 3.
+
+1559
+02:17:09,619 --> 02:17:10,260
+Plus.
+
+1560
+02:17:10,619 --> 02:17:12,239
+We need to compute h prime
+
+1561
+02:17:12,239 --> 02:17:14,279
+of 2. So let's
+
+1562
+02:17:14,279 --> 02:17:15,739
+compute h prime of 2.
+
+1563
+02:17:15,739 --> 02:17:17,619
+h prime of x
+
+1564
+02:17:17,619 --> 02:17:19,940
+is equal to derivation of
+
+1565
+02:17:19,940 --> 02:17:20,940
+1 plus x
+
+1566
+02:17:20,940 --> 02:17:22,119
+1
+
+1567
+02:17:22,119 --> 02:17:23,479
+plus
+
+1568
+02:17:23,479 --> 02:17:25,680
+derivation by the product rule
+
+1569
+02:17:25,680 --> 02:17:26,579
+for derivation
+
+1570
+02:17:26,579 --> 02:17:27,279
+by the
+
+1571
+02:17:27,279 --> 02:17:30,219
+okay, derivation of x minus 2
+
+1572
+02:17:30,219 --> 02:17:32,539
+1 times second term
+
+1573
+02:17:32,539 --> 02:17:34,379
+from minus 2 to x
+
+1574
+02:17:34,379 --> 02:17:35,600
+sine t
+
+1575
+02:17:35,600 --> 02:17:36,600
+to
+
+1576
+02:17:36,600 --> 02:17:38,600
+2019
+
+1577
+02:17:38,600 --> 02:17:39,600
+times
+
+1578
+02:17:39,600 --> 02:17:42,600
+cosine t
+
+1579
+02:17:42,600 --> 02:17:43,600
+so
+
+1580
+02:17:43,600 --> 02:17:44,600
+2020
+
+1581
+02:17:44,600 --> 02:17:45,600
+minus 1
+
+1582
+02:17:45,600 --> 02:17:47,600
+dt
+
+1583
+02:17:47,600 --> 02:17:48,600
+plus
+
+1584
+02:17:48,600 --> 02:17:49,600
+the first term
+
+1585
+02:17:49,600 --> 02:17:53,920
+x minus 2
+
+1586
+02:17:53,920 --> 02:17:54,920
+plus
+
+1587
+02:17:54,920 --> 02:17:55,059
+x minus 2
+
+1588
+02:17:55,059 --> 02:17:55,799
+times
+
+1589
+02:17:55,799 --> 02:17:57,139
+derivation of this
+
+1590
+02:17:57,139 --> 02:17:59,799
+derivation of this term
+
+1591
+02:17:59,799 --> 02:18:01,979
+by the fundamental theorem
+
+1592
+02:18:01,979 --> 02:18:03,299
+part 1
+
+1593
+02:18:03,299 --> 02:18:05,520
+so derivation of this
+
+1594
+02:18:05,520 --> 02:18:06,639
+sine x
+
+1595
+02:18:06,639 --> 02:18:07,920
+2
+
+1596
+02:18:07,920 --> 02:18:10,059
+bu arkadaşlar
+
+1597
+02:18:10,059 --> 02:18:11,420
+çarpı cos
+
+1598
+02:18:11,420 --> 02:18:12,420
+şunu parantezde
+
+1599
+02:18:12,420 --> 02:18:12,779
+açalım.
+
+1600
+02:18:13,439 --> 02:18:13,659
+Cos
+
+1601
+02:18:13,659 --> 02:18:14,139
+x
+
+1602
+02:18:14,139 --> 02:18:14,619
+üzeri
+
+1603
+02:18:14,619 --> 02:18:15,379
+2020
+
+1604
+02:18:15,379 --> 02:18:17,959
+x'i 1
+
+1605
+02:18:17,959 --> 02:18:18,340
+gelir.
+
+1606
+02:18:19,239 --> 02:18:20,219
+Okay, if you
+
+1607
+02:18:20,219 --> 02:18:20,799
+substitute
+
+1608
+02:18:20,799 --> 02:18:24,039
+x
+
+1609
+02:18:24,039 --> 02:18:24,420
+2
+
+1610
+02:18:24,420 --> 02:18:25,239
+here
+
+1611
+02:18:25,239 --> 02:18:26,379
+okay
+
+1612
+02:18:26,379 --> 02:18:27,840
+now
+
+1613
+02:18:27,840 --> 02:18:28,340
+if you
+
+1614
+02:18:28,340 --> 02:18:28,859
+substitute
+
+1615
+02:18:28,859 --> 02:18:29,260
+x
+
+1616
+02:18:29,260 --> 02:18:29,479
+2
+
+1617
+02:18:29,479 --> 02:18:30,139
+so this is
+
+1618
+02:18:30,139 --> 02:18:30,879
+odd function.
+
+1619
+02:18:31,000 --> 02:18:31,719
+Can you see that?
+
+1620
+02:18:31,879 --> 02:18:32,739
+So this is odd.
+
+1621
+02:18:32,739 --> 02:18:36,059
+for odd function
+
+1622
+02:18:36,059 --> 02:18:36,840
+from minus
+
+1623
+02:18:36,840 --> 02:18:37,539
+a to
+
+1624
+02:18:37,539 --> 02:18:37,939
+a
+
+1625
+02:18:37,939 --> 02:18:38,299
+if you
+
+1626
+02:18:38,299 --> 02:18:38,719
+substitute
+
+1627
+02:18:38,719 --> 02:18:39,119
+here
+
+1628
+02:18:39,119 --> 02:18:39,439
+2
+
+1629
+02:18:39,439 --> 02:18:39,920
+this is
+
+1630
+02:18:39,920 --> 02:18:40,239
+0.
+
+1631
+02:18:41,000 --> 02:18:41,760
+Okay, so this is
+
+1632
+02:18:41,760 --> 02:18:42,459
+also 0.
+
+1633
+02:18:42,779 --> 02:18:43,439
+So h
+
+1634
+02:18:43,439 --> 02:18:44,739
+prime of 2
+
+1635
+02:18:44,739 --> 02:18:45,779
+is equal to 1.
+
+1636
+02:18:46,319 --> 02:18:48,079
+Okay, as you see
+
+1637
+02:18:48,079 --> 02:18:49,459
+h prime of 2
+
+1638
+02:18:49,459 --> 02:18:50,600
+is equal to 1
+
+1639
+02:18:50,600 --> 02:18:52,579
+1 times
+
+1640
+02:18:52,579 --> 02:18:53,180
+işte
+
+1641
+02:18:53,180 --> 02:18:54,039
+hatası yapmadık
+
+1642
+02:18:54,039 --> 02:18:54,520
+değil mi arkadaşlar?
+
+1643
+02:18:55,559 --> 02:18:55,859
+x
+
+1644
+02:18:55,859 --> 02:18:56,500
+eksi
+
+1645
+02:18:56,500 --> 02:18:57,539
+bir yerde
+
+1646
+02:18:57,539 --> 02:18:58,239
+hata yaptık
+
+1647
+02:18:58,239 --> 02:18:58,619
+sanki.
+
+1648
+02:18:59,579 --> 02:18:59,859
+x
+
+1649
+02:18:59,859 --> 02:19:00,260
+eksi
+
+1650
+02:19:00,260 --> 02:19:01,239
+a
+
+1651
+02:19:01,239 --> 02:19:01,799
+a'mız
+
+1652
+02:19:01,799 --> 02:19:02,079
+2
+
+1653
+02:19:02,079 --> 02:19:05,920
+nerede
+
+1654
+02:19:05,920 --> 02:19:06,260
+hata
+
+1655
+02:19:06,260 --> 02:19:06,659
+yaptık?
+
+1656
+02:19:15,219 --> 02:19:25,139
+x kare artı 1 kalıyor. Evet, x kare artı 1'i unuttuk. Doğru. Evet, doğru söylüyorsun. Orada zihnim, x kare artı 1'i niye dahil ediyoruz ona?
+
+1657
+02:19:25,139 --> 02:19:34,459
+Artık yorulduk. Okey. Okey, so we have this. X kare artı 1'i unutmayalım arkadaşlar.
+
+1658
+02:19:34,459 --> 02:19:46,479
+So this is 0 integration of this from minus 2 to dt. So we have this. O da ne olur arkadaşlar?
+
+1659
+02:19:47,559 --> 02:19:55,479
+X kare artı 1'i unutmayalım. 4 mi geliyor? 4, eksi 3 geldi. Okey, so this is minus 3.
+
+1660
+02:20:01,971 --> 02:20:04,012
+3 plus minus 3.
+
+1661
+02:20:04,332 --> 02:20:05,471
+Okay, so we have this.
+
+1662
+02:20:05,971 --> 02:20:09,592
+3 minus 3x plus 6.
+
+1663
+02:20:10,111 --> 02:20:12,231
+Okay, 9 minus 3x.
+
+1664
+02:20:12,691 --> 02:20:13,592
+Okay, is that correct?
+
+1665
+02:20:13,992 --> 02:20:17,512
+9 minus 3x.
+
+1666
+02:20:17,512 --> 02:20:18,631
+Adana'yı bedelen.
+
+1667
+02:20:21,031 --> 02:20:21,912
+Evet.
+
+1668
+02:20:22,731 --> 02:20:25,092
+X ile integralini alırken dikkat edelim.
+
+1669
+02:20:25,551 --> 02:20:25,711
+Evet.
+
+1670
+02:20:26,611 --> 02:20:26,971
+Okay.
+
+1671
+02:20:26,971 --> 02:20:33,752
+So, this is about final exam.
+
+1672
+02:20:34,451 --> 02:20:36,931
+Not topical term exam.
+
+1673
+02:20:37,412 --> 02:20:38,311
+Okay, so very nice.
+
+1674
+02:20:38,391 --> 02:20:39,652
+So, this question is very important.
+
+1675
+02:20:41,271 --> 02:20:44,572
+Think about this problem.
+
+1676
+02:20:54,579 --> 02:20:59,600
+Bir çoğu bu soruyu arkadaşlar cevap sıfır diye atlayacak üzerine.
+
+1677
+02:20:59,959 --> 02:21:01,139
+O zaten o bir tuzak.
+
+1678
+02:21:01,639 --> 02:21:02,559
+Okay, attention here.
+
+1679
+02:21:02,739 --> 02:21:04,879
+The option E, zero is a trap for you.
+
+1680
+02:21:05,680 --> 02:21:07,280
+Okay, the answer is not zero.
+
+1681
+02:21:07,899 --> 02:21:11,500
+The answer looks like zero but not actually zero.
+
+1682
+02:21:12,719 --> 02:21:13,860
+So look at here.
+
+1683
+02:21:14,079 --> 02:21:15,719
+So look at this.
+
+1684
+02:21:15,840 --> 02:21:17,260
+So this is nothing else than.
+
+1685
+02:21:17,260 --> 02:21:24,319
+So this limit is very similar to spirit of Riemann's sum.
+
+1686
+02:21:24,319 --> 02:21:25,280
+Riemann's sum.
+
+1687
+02:21:25,399 --> 02:21:26,399
+You need to apply.
+
+1688
+02:21:26,520 --> 02:21:28,239
+You need to apply Riemann's sum.
+
+1689
+02:21:29,340 --> 02:21:32,360
+So this is definition of definite integration.
+
+1690
+02:21:33,420 --> 02:21:36,780
+So if you take the limit of Riemann's sum as N goes to.
+
+1691
+02:21:36,899 --> 02:21:37,420
+Oh, sorry.
+
+1692
+02:21:37,539 --> 02:21:39,039
+This must be attention here.
+
+1693
+02:21:39,100 --> 02:21:39,360
+Sorry.
+
+1694
+02:21:40,100 --> 02:21:41,200
+It must be N.
+
+1695
+02:21:42,200 --> 02:21:43,219
+Okay, it's not X.
+
+1696
+02:21:44,260 --> 02:21:44,479
+N.
+
+1697
+02:21:46,159 --> 02:21:47,899
+As N goes to infinite.
+
+1698
+02:21:47,899 --> 02:21:49,399
+N sum integer.
+
+1699
+02:21:50,500 --> 02:21:51,959
+We need to express this.
+
+1700
+02:21:51,959 --> 02:21:53,239
+N integer.
+
+1701
+02:21:53,479 --> 02:21:54,200
+Let me write it.
+
+1702
+02:21:54,340 --> 02:21:58,420
+Let N be an integer.
+
+1703
+02:21:59,180 --> 02:22:00,180
+Integer.
+
+1704
+02:22:01,079 --> 02:22:02,159
+Positive integer.
+
+1705
+02:22:02,399 --> 02:22:02,559
+Okay.
+
+1706
+02:22:05,059 --> 02:22:08,039
+Let N be an integer variable.
+
+1707
+02:22:08,719 --> 02:22:10,079
+As N goes to infinite.
+
+1708
+02:22:10,079 --> 02:22:13,760
+So this limit of this finite sum.
+
+1709
+02:22:15,180 --> 02:22:16,159
+Evet, düşünün bakalım.
+
+1710
+02:22:16,280 --> 02:22:16,819
+Ne yapacağız?
+
+1711
+02:22:18,139 --> 02:22:19,940
+Riemann integraline benzetmeye çalışayım.
+
+1712
+02:22:20,020 --> 02:22:20,979
+Size ipucu vereyim.
+
+1713
+02:22:21,219 --> 02:22:21,879
+Öyle düşünün.
+
+1714
+02:22:22,780 --> 02:22:23,639
+Şuraları silelim.
+
+1715
+02:22:23,639 --> 02:22:38,340
+Lütfen.
+
+1716
+02:22:28,211 --> 02:22:30,152
+Okay recall the Riemann sum.
+
+1717
+02:22:31,391 --> 02:22:36,332
+From A to B definite integration of F
+
+1718
+02:22:36,332 --> 02:22:42,511
+is limit of as n goes to infinite.
+
+1719
+02:22:43,731 --> 02:22:46,332
+So we increase the number of rectangles.
+
+1720
+02:22:47,431 --> 02:22:52,752
+So we start by K1 goes to n
+
+1721
+02:22:52,752 --> 02:22:59,912
+F of XK times delta X, delta XK.
+
+1722
+02:23:00,871 --> 02:23:00,992
+Okay.
+
+1723
+02:23:03,191 --> 02:23:10,391
+Delta X, delta X is given by generally by this
+
+1724
+02:23:10,391 --> 02:23:14,752
+B minus A over n which is the sub,
+
+1725
+02:23:14,992 --> 02:23:17,611
+which is the length of sub, each sub interval.
+
+1726
+02:23:17,931 --> 02:23:20,631
+They have the same length.
+
+1727
+02:23:20,631 --> 02:23:27,832
+Okay, so XK is equal to A plus K times B minus A over n.
+
+1728
+02:23:28,371 --> 02:23:28,652
+Okay.
+
+1729
+02:23:29,252 --> 02:23:30,931
+Take out this consideration.
+
+1730
+02:23:31,631 --> 02:23:33,752
+So let's try to make some similarity
+
+1731
+02:23:33,752 --> 02:23:35,631
+between definition of definite integration
+
+1732
+02:23:36,171 --> 02:23:38,811
+and this given problem.
+
+1733
+02:23:39,131 --> 02:23:39,211
+Okay.
+
+1734
+02:23:40,031 --> 02:23:41,971
+By using sigma notation,
+
+1735
+02:23:42,111 --> 02:23:44,992
+let's try to express this finite sum
+
+1736
+02:23:44,992 --> 02:23:46,811
+by using sigma notation.
+
+1737
+02:23:48,131 --> 02:23:49,832
+Otherwise you cannot see.
+
+1738
+02:23:49,832 --> 02:23:52,211
+sigma notation'u kullanarak
+
+1739
+02:23:52,211 --> 02:23:56,011
+o toplamı arkadaşlar ifade edin.
+
+1740
+02:23:56,572 --> 02:23:59,072
+Daha sonra orada delta X'in
+
+1741
+02:23:59,072 --> 02:24:00,931
+delta X'i görmeniz lazım.
+
+1742
+02:24:01,492 --> 02:24:03,291
+Bir düzenleme yapmak zorundasınız.
+
+1743
+02:24:03,431 --> 02:24:04,832
+Sigma notation'undaki ifadenin
+
+1744
+02:24:05,671 --> 02:24:07,711
+düzenlemesi gerekir.
+
+1745
+02:24:08,451 --> 02:24:09,492
+Düzenlenmesi gerekir.
+
+1746
+02:24:09,551 --> 02:24:10,231
+Ona dikkat edin.
+
+1747
+02:24:10,431 --> 02:24:10,832
+Tamam mı?
+
+1748
+02:24:12,631 --> 02:24:13,371
+Gören var mı?
+
+1749
+02:24:13,791 --> 02:24:14,412
+Bulan var mı?
+
+1750
+02:24:14,412 --> 02:24:32,711
+Bir düzenlenmesi gerekir.
+
+1751
+02:24:22,868 --> 02:24:24,148
+Evet, ok.
+
+1752
+02:24:25,488 --> 02:24:27,888
+Let me express this.
+
+1753
+02:24:27,888 --> 02:24:34,148
+So, this is equal to, this limit is equal to limit as n goes to infinity.
+
+1754
+02:24:35,468 --> 02:24:41,268
+Let me write here from k starts by 1 goes to n.
+
+1755
+02:24:41,927 --> 02:24:44,968
+Attention here, constant, constant, constant, constant.
+
+1756
+02:24:44,968 --> 02:24:48,087
+Okay, so, see it changed here.
+
+1757
+02:24:48,468 --> 02:24:56,048
+So, we write here n over n square plus, okay, k square.
+
+1758
+02:24:57,608 --> 02:25:00,728
+If you substitute k1, we are going to obtain the first term.
+
+1759
+02:25:00,808 --> 02:25:03,888
+If you substitute k2, we are going to obtain this term.
+
+1760
+02:25:03,968 --> 02:25:06,268
+If you substitute k3, we are going to obtain this.
+
+1761
+02:25:06,327 --> 02:25:09,427
+And if you substitute kn, we are going to obtain last term.
+
+1762
+02:25:09,528 --> 02:25:14,048
+As you see, this notation, this representation by sigma notation is true.
+
+1763
+02:25:14,968 --> 02:25:19,368
+Now, so, in order to obtain this f of xk delta x, so, we need to go on.
+
+1764
+02:25:20,068 --> 02:25:23,667
+Okay, limit as n goes to infinity.
+
+1765
+02:25:25,568 --> 02:25:29,128
+So, let me write here.
+
+1766
+02:25:30,388 --> 02:25:32,308
+So, look at here.
+
+1767
+02:25:34,068 --> 02:25:37,007
+So, delta x contains 1 over n.
+
+1768
+02:25:37,448 --> 02:25:38,847
+So, 1 over n.
+
+1769
+02:25:39,247 --> 02:25:40,988
+So, b minus a over n.
+
+1770
+02:25:40,988 --> 02:25:45,688
+Okay, if you take the common factor n square here, look at here.
+
+1771
+02:25:45,688 --> 02:25:46,087
+Okay.
+
+1772
+02:25:46,087 --> 02:26:08,688
+So, here.
+
+1773
+02:25:49,587 --> 02:25:58,268
+n over, if you take the common factor n square here, you know that n is constant with respect to the variable of sigma.
+
+1774
+02:25:58,827 --> 02:26:03,827
+The variable of sigma k, that's why we need to take common factor n square in the denominator.
+
+1775
+02:26:04,647 --> 02:26:08,167
+1 plus k over n square.
+
+1776
+02:26:09,307 --> 02:26:11,647
+Neden n kare parantezini aldım?
+
+1777
+02:26:11,647 --> 02:26:15,347
+Ben biliyorum ki n, n'e bağlı olan ifadeler nedir?
+
+1778
+02:26:15,487 --> 02:26:18,327
+Sabit k değişkenine göre, sigma değişkenine göre.
+
+1779
+02:26:18,327 --> 02:26:22,628
+Dolayısıyla çarpım durumuna getireceğim ki onu dışarıya alabileyim rahat bir şekilde.
+
+1780
+02:26:23,167 --> 02:26:24,667
+Hatırlarsanız böyle yapıyorduk.
+
+1781
+02:26:25,747 --> 02:26:30,688
+Okay, now, so 1 over n, as you see we have 1 over n here.
+
+1782
+02:26:31,427 --> 02:26:32,387
+1 over n.
+
+1783
+02:26:34,727 --> 02:26:39,708
+So let me express this limit as n goes to infinite.
+
+1784
+02:26:39,708 --> 02:26:42,587
+So we have this.
+
+1785
+02:26:42,587 --> 02:26:51,948
+1 over 1 plus k over n square times 1 over n.
+
+1786
+02:26:52,727 --> 02:26:55,368
+So look at here, so we can do this.
+
+1787
+02:26:55,948 --> 02:26:57,708
+So let's say this is delta x.
+
+1788
+02:26:57,708 --> 02:27:04,108
+Okay, if you write this delta x, look at here, 1 over n.
+
+1789
+02:27:04,227 --> 02:27:07,747
+Let's suppose that b is 1, a is 0.
+
+1790
+02:27:08,768 --> 02:27:15,307
+If you suppose b is 1, a is 0, you can obtain delta x as 1 over n here.
+
+1791
+02:27:15,307 --> 02:27:16,227
+So that's good.
+
+1792
+02:27:16,567 --> 02:27:20,727
+Now, if you substitute a is 0, b is 1.
+
+1793
+02:27:20,948 --> 02:27:24,448
+So xk is, xk is k over n.
+
+1794
+02:27:24,788 --> 02:27:25,887
+So this is xk.
+
+1795
+02:27:26,448 --> 02:27:27,708
+This is xk.
+
+1796
+02:27:28,208 --> 02:27:32,307
+Now, as you see, we obtain this limit as n goes to infinite.
+
+1797
+02:27:32,307 --> 02:27:36,147
+So k start by 1 goes to n.
+
+1798
+02:27:36,268 --> 02:27:41,108
+1 over 1 plus xk square delta x.
+
+1799
+02:27:41,188 --> 02:27:42,327
+Delta x 1 over n.
+
+1800
+02:27:42,868 --> 02:27:43,688
+Delta x.
+
+1801
+02:27:44,227 --> 02:27:44,528
+Okay.
+
+1802
+02:27:45,067 --> 02:27:48,667
+Now, so this is nothing else than according to f of xk.
+
+1803
+02:27:48,667 --> 02:27:52,128
+So this is f of xk.
+
+1804
+02:27:53,268 --> 02:27:57,208
+f of xk, 1 over 1 plus xk square.
+
+1805
+02:27:57,727 --> 02:28:05,667
+So this means that, this means that f of x is 1 over 1 plus x square.
+
+1806
+02:28:06,208 --> 02:28:07,427
+So a is 0.
+
+1807
+02:28:07,628 --> 02:28:08,448
+Attention here.
+
+1808
+02:28:08,847 --> 02:28:09,708
+b is 1.
+
+1809
+02:28:10,047 --> 02:28:13,067
+So this is nothing else than integration from 0 to 1.
+
+1810
+02:28:13,147 --> 02:28:15,708
+1 over 1 plus x square dx.
+
+1811
+02:28:16,547 --> 02:28:17,108
+Okay.
+
+1812
+02:28:17,108 --> 02:28:20,467
+So this is the 1.
+
+1813
+02:28:20,628 --> 02:28:21,288
+r tangent.
+
+1814
+02:28:21,647 --> 02:28:23,847
+This is equal to r tangent.
+
+1815
+02:28:24,327 --> 02:28:27,188
+r tangent x from 0 to 1.
+
+1816
+02:28:27,708 --> 02:28:30,727
+r tangent 1 minus r tangent 0.
+
+1817
+02:28:30,907 --> 02:28:33,227
+r tangent 1 pi over 4.
+
+1818
+02:28:33,747 --> 02:28:35,227
+As far as pi over 4.
+
+1819
+02:28:35,227 --> 02:28:35,847
+Okay.
+
+1820
+02:28:37,427 --> 02:28:38,407
+Var mı ulaşmen bir yer?
+
+1821
+02:28:42,388 --> 02:28:44,488
+Sorusu olan var mı gençler? Orada mısınız?
+
+1822
+02:28:48,500 --> 02:28:57,059
+Bu tarz soruları böyle çözeceksiniz. Finalde veya önümüzdeki sınavda hocalardan biri sorabilir. Anlaşıldı galiba. Böyle sorular.
+
+1823
+02:28:57,860 --> 02:28:59,840
+Okey. Let's solve this problem.
+
+1824
+02:29:05,652 --> 02:29:35,631
+Let me write this part. So as you see, this equation is the combination of, this equation is combination of a fundamental theorem with implicit derivation rule. So look at here. So this means that this equation implies that y depends on x. We suppose that y depends on x, but the y function is given by implicit form, not x plus x.
+
+1825
+02:29:35,652 --> 02:29:36,311
+Let's hit form.
+
+1826
+02:29:44,340 --> 02:30:00,200
+Okay. Yani şöyle yapabilirsiniz arkadaşlar. Okay. First of all, consider this. We know that dy over dx is equal to 1 over dx over dy. Okay. You can do that.
+
+1827
+02:30:00,200 --> 02:30:29,540
+Now, so as you see, x depends on y because of this fact. So if we differentiate x with respect to y, by using fundamental theorem, we are going to obtain this 1 over square root of 1 plus 4y square. Okay. Now the answer is this. 1 plus 4y square. We are going to obtain this.
+
+1828
+02:30:30,200 --> 02:30:48,680
+Dikkat edin. Dikkat edin. Dikkat edin. Dikkat edin. Bu şekilde y'nin x'e göre türev. Ama bu şekilde kafa karışacak. Ben öteki türlü uzun yoldan yapayım. Bakın arkadaşlar. Hiç yapmayalım. Kafanız karışacak yoksa. Uzun yoldan yapayım.
+
+1829
+02:30:53,716 --> 02:30:55,996
+Okay, let me use general method.
+
+1830
+02:30:58,935 --> 02:31:05,396
+Okay, now, so this means that y depends on x.
+
+1831
+02:31:05,876 --> 02:31:08,296
+So, this means that y depends on x.
+
+1832
+02:31:09,115 --> 02:31:11,056
+So, let me write this.
+
+1833
+02:31:11,236 --> 02:31:13,476
+This means that y depends on x.
+
+1834
+02:31:14,416 --> 02:31:16,355
+Y depends on x.
+
+1835
+02:31:17,256 --> 02:31:21,015
+Okay, by substituting this, x is,
+
+1836
+02:31:21,015 --> 02:31:26,456
+if you derivate both sides of this equality,
+
+1837
+02:31:27,095 --> 02:31:27,296
+okay,
+
+1838
+02:31:28,675 --> 02:31:30,355
+I depends on x here.
+
+1839
+02:31:30,716 --> 02:31:34,175
+If you derivate both sides of this equality with respect to x,
+
+1840
+02:31:34,296 --> 02:31:39,716
+derivation of x with respect to x1 is equal to derivation of right-hand side with respect to x,
+
+1841
+02:31:39,716 --> 02:31:41,796
+we substitute yx,
+
+1842
+02:31:42,316 --> 02:31:49,896
+1 plus 4 times yx squared times y prime of x.
+
+1843
+02:31:49,896 --> 02:31:53,296
+by digitization of fundamental theorem part one.
+
+1844
+02:31:53,396 --> 02:32:02,476
+This implies that y prime x dy over dx is square root of 1 plus 4 y square.
+
+1845
+02:32:02,956 --> 02:32:04,816
+Okay, now we have this.
+
+1846
+02:32:05,736 --> 02:32:08,195
+Now, we know that y depends on x.
+
+1847
+02:32:08,996 --> 02:32:14,236
+So, if you derivate d prime,
+
+1848
+02:32:14,355 --> 02:32:17,656
+you are going to obtain dy and y double prime x.
+
+1849
+02:32:17,656 --> 02:32:18,256
+So,
+
+1850
+02:32:18,256 --> 02:32:18,756
+okay,
+
+1851
+02:32:19,896 --> 02:32:22,916
+So, we know that y depends on x.
+
+1852
+02:32:23,636 --> 02:32:25,076
+So, that's why we write this.
+
+1853
+02:32:25,796 --> 02:32:28,896
+1 plus 4 y square.
+
+1854
+02:32:29,336 --> 02:32:29,536
+Okay.
+
+1855
+02:32:30,256 --> 02:32:34,515
+Now, if you substitute y prime x into this second order derivation,
+
+1856
+02:32:35,195 --> 02:32:35,456
+okay,
+
+1857
+02:32:35,836 --> 02:32:37,656
+you are going to obtain 4 y.
+
+1858
+02:32:39,336 --> 02:32:40,916
+Answer is 4 y.
+
+1859
+02:32:41,576 --> 02:32:42,136
+Tamam mı arkadaşlar?
+
+1860
+02:32:43,095 --> 02:32:44,136
+Ama şimdi bir yer var mı?
+
+1861
+02:32:44,136 --> 02:32:45,355
+Yok.
+
+1862
+02:32:45,355 --> 02:32:48,236
+Böyle sorularla karşılaşabilirsiniz önümüzdeki sınavda.
+
+1863
+02:32:49,036 --> 02:32:49,275
+Okay.
+
+1864
+02:32:51,956 --> 02:32:53,336
+Now, consider this.
+
+1865
+02:32:53,416 --> 02:32:55,576
+So, this is not topic of second midterm exam,
+
+1866
+02:32:55,675 --> 02:32:57,216
+but this is topic of final exam.
+
+1867
+02:32:58,275 --> 02:33:03,216
+Which of the following basic fractions are used to compute the integration?
+
+1868
+02:33:03,216 --> 02:33:04,435
+Evet.
+
+1869
+02:33:04,435 --> 02:33:07,355
+Böyle bir soru sorulmuş.
+
+1870
+02:33:07,996 --> 02:33:10,355
+Basit kesirleri ayrıştırma ile alakalı.
+
+1871
+02:33:10,876 --> 02:33:11,656
+Bunu da çözelim.
+
+1872
+02:33:11,716 --> 02:33:13,556
+Final sınavı için çözelim bunu.
+
+1873
+02:33:13,695 --> 02:33:15,916
+Let's solve this problem for final exam.
+
+1874
+02:33:16,036 --> 02:33:17,396
+Not second midterm exam.
+
+1875
+02:33:19,095 --> 02:33:19,336
+Evet.
+
+1876
+02:33:19,336 --> 02:33:21,476
+Herkes A olduğunu gördü mü?
+
+1877
+02:33:21,476 --> 02:33:38,095
+Evet.
+
+1878
+02:33:32,659 --> 02:33:40,379
+Okay, so this is topic of final exam, attention here, not upcoming exam.
+
+1879
+02:33:41,200 --> 02:33:43,039
+So let's write this.
+
+1880
+02:33:45,600 --> 02:33:47,520
+X cubed minus X.
+
+1881
+02:33:48,399 --> 02:33:49,799
+So let's factorize this.
+
+1882
+02:33:49,799 --> 02:33:58,579
+If you take the common factor X, X squared minus 1, X minus 1 times X plus 1 over, okay,
+
+1883
+02:33:58,579 --> 02:34:08,100
+X squared plus 1 times X minus 1 squared, X minus 1 squared, and this and this simplified,
+
+1884
+02:34:08,340 --> 02:34:10,920
+we have only X minus 1 factor here.
+
+1885
+02:34:11,559 --> 02:34:15,760
+Okay, so X squared plus 1 has no real root, so we need to write this.
+
+1886
+02:34:15,760 --> 02:34:20,760
+A X plus B over X squared plus 1.
+
+1887
+02:34:20,920 --> 02:34:25,020
+So we have only X minus 1, C over X minus 1.
+
+1888
+02:34:25,180 --> 02:34:27,680
+So only we have this.
+
+1889
+02:34:27,680 --> 02:34:28,280
+Okay.
+
+1890
+02:34:30,500 --> 02:34:32,479
+Yeah, the X oldu arkadaşlar.
+
+1891
+02:34:33,260 --> 02:34:33,399
+Evet.
+
+1892
+02:34:33,719 --> 02:34:36,600
+Bunlarla en basit halde bu şekilde hesaplayabilirsiniz.
+
+1893
+02:34:37,239 --> 02:34:37,700
+Tamam mı?
+
+1894
+02:34:38,079 --> 02:34:38,559
+Geçiyorum.
+
+1895
+02:34:41,239 --> 02:34:45,600
+Okay, so this is about implicit derivation rule.
+
+1896
+02:34:45,920 --> 02:34:47,979
+I think you can manage to solve this problem.
+
+1897
+02:34:48,299 --> 02:34:49,039
+So this is easy.
+
+1898
+02:34:53,971 --> 02:35:21,451
+Okay, so this is the topic of, this is the topic of final exam. Improper integrations, convergence, divergence of integration is topic of final exam, not topic of next midterm exam. Okay, what is the inflection point of this function? This is a very nice question. So this is the topic of, this is the topic of second midterm exam. Let's try to solve this problem.
+
+1899
+02:35:25,620 --> 02:35:34,160
+Evet, paylaşıyorum soruları arkadaşlar. Videoları izlemiyorlar daha sonra. Videoları izlersiniz, önünüze kağıt kalemi alırsınız, görürsünüz.
+
+1900
+02:35:41,747 --> 02:35:42,207
+Evet.
+
+1901
+02:35:54,164 --> 02:35:57,784
+Evet. Hüküm noktasını hesaplayın bakayım. L'in x bölü x'i.
+
+1902
+02:36:07,636 --> 02:36:11,636
+Nasıl saplacağız? Büküm noktasını. How can we compute inflection point?
+
+1903
+02:36:12,636 --> 02:36:15,536
+So, let's recall the definition of inflection point.
+
+1904
+02:36:15,676 --> 02:36:21,515
+Inflection point, a point at which second order derivation changes its sign.
+
+1905
+02:36:24,716 --> 02:36:29,275
+That's why we need to obtain sign table of second order derivation.
+
+1906
+02:36:33,492 --> 02:36:34,852
+Evet, buldu mu herkes?
+
+1907
+02:36:35,971 --> 02:36:36,731
+2. türevi
+
+1908
+02:37:47,443 --> 02:38:07,443
+Okay, let's solve first order derivation. y' prime derivation of lnx1 over x times denominator minus lnx times derivation of x1 over the square of this. Let me simplify this.
+
+1909
+02:38:11,283 --> 02:38:15,463
+Okay, let's derivate second order, let's obtain second order derivation.
+
+1910
+02:38:16,103 --> 02:38:21,884
+So derivation of 1 minus lnx minus 1 over x times x square.
+
+1911
+02:38:22,683 --> 02:38:25,263
+Okay, plus, not plus, sorry.
+
+1912
+02:38:28,423 --> 02:38:40,263
+Minus, minus 1 minus lnx times derivation of x square to x over square of denominator x to 4.
+
+1913
+02:38:40,263 --> 02:38:41,703
+Let's simplify this.
+
+1914
+02:38:42,503 --> 02:38:58,243
+Minus x, okay, minus 2x plus 2x lnx over x to 4.
+
+1915
+02:38:58,824 --> 02:38:59,404
+Tamam mı arkadaşlar?
+
+1916
+02:39:00,603 --> 02:39:02,904
+X parantezini alırsam ne geliyor?
+
+1917
+02:39:02,904 --> 02:39:10,224
+2 çarpı lnx eksi 3 bölü x küp.
+
+1918
+02:39:10,263 --> 02:39:16,404
+Okay, so let's try to obtain this.
+
+1919
+02:39:16,623 --> 02:39:24,703
+Okay, so if I obtain the second order derivation, 2 times lnx minus 3 is equal to 0.
+
+1920
+02:39:24,703 --> 02:39:28,724
+So x is equal to exponential 3 over 2.
+
+1921
+02:39:29,443 --> 02:39:31,384
+Okay, so focus on x cube.
+
+1922
+02:39:31,384 --> 02:39:43,384
+So now if we sketch the sign table of second order derivation, so we have this exponential.
+
+1923
+02:39:43,384 --> 02:39:44,804
+Thank you for the show.
+
+1924
+02:39:44,804 --> 02:39:55,003
+Thank you.
+
+1925
+02:39:48,979 --> 02:39:51,159
+exponential 3 over 2.
+
+1926
+02:39:51,699 --> 02:39:53,100
+And we have 0 here.
+
+1927
+02:39:54,799 --> 02:40:01,299
+So because of this x kub, this x kub also affects the sign of second order derivation.
+
+1928
+02:40:05,119 --> 02:40:07,840
+Bunun sağında, pozitif.
+
+1929
+02:40:10,579 --> 02:40:12,159
+Bunun burada negatif.
+
+1930
+02:40:13,180 --> 02:40:15,000
+Tamam, burada zaten tanımlı değil.
+
+1931
+02:40:15,680 --> 02:40:17,760
+At the left hand side of this 0.
+
+1932
+02:40:17,760 --> 02:40:22,100
+So this function is not well defined because of this fact.
+
+1933
+02:40:22,219 --> 02:40:23,579
+x must be positive.
+
+1934
+02:40:23,739 --> 02:40:24,459
+Attention here.
+
+1935
+02:40:25,479 --> 02:40:25,739
+So,
+
+1936
+02:40:27,020 --> 02:40:27,959
+so as you see,
+
+1937
+02:40:28,219 --> 02:40:29,479
+second order derivation,
+
+1938
+02:40:29,659 --> 02:40:31,739
+change is sine at the point
+
+1939
+02:40:31,739 --> 02:40:33,260
+exponential 3 over 2
+
+1940
+02:40:33,260 --> 02:40:34,600
+from minus to plus.
+
+1941
+02:40:35,319 --> 02:40:37,859
+That's why this is an inflection point.
+
+1942
+02:40:37,859 --> 02:40:38,420
+Okay.
+
+1943
+02:40:40,260 --> 02:40:42,000
+Exponential 3 over 2.
+
+1944
+02:40:46,515 --> 02:40:48,515
+Evet, bu soruları.
+
+1945
+02:40:48,515 --> 02:40:50,515
+Evet.
+
+1946
+02:40:50,515 --> 02:40:57,515
+Ark length, this is the topic of final exam, not topic of second midterm exam.
+
+1947
+02:40:57,515 --> 02:41:00,515
+We are going to solve this problem later.
+
+1948
+02:41:00,515 --> 02:41:02,515
+Okay, before the final exam.
+
+1949
+02:41:02,515 --> 02:41:10,515
+Also, this is about final exam, not topic of, okay, not topic of second midterm exam.
+
+1950
+02:41:10,515 --> 02:41:13,515
+We are going to solve this problem later.
+
+1951
+02:41:13,515 --> 02:41:17,515
+Volume of solid, not topic of final exam.
+
+1952
+02:41:17,515 --> 02:41:22,515
+Okay, now velocity, particle, maximum velocity.
+
+1953
+02:41:22,515 --> 02:41:25,515
+Okay, so this is the topic of final exam.
+
+1954
+02:41:25,515 --> 02:41:26,515
+Okay.
+
+1955
+02:41:26,515 --> 02:41:28,515
+Is there any question?
+
+1956
+02:41:28,515 --> 02:41:31,515
+Sorusu olan var mı?
+
+1957
+02:41:34,515 --> 02:41:35,515
+Yok.
+
+1958
+02:41:36,515 --> 02:41:38,515
+Evet, başka sorular sorabilirsiniz.
+
+1959
+02:41:38,515 --> 02:41:41,515
+Sorusu olan varsa hemen çözebiliriz.
+
+1960
+02:41:41,515 --> 02:41:43,515
+Tabii ki ikinci bizdenin konularla alakalı.
+
+1961
+02:41:43,515 --> 02:41:45,515
+İşlemediğimiz konulardan soru sormayın bana.
+
+1962
+02:41:45,515 --> 02:41:47,515
+Evet.
+
+1963
+02:41:47,515 --> 02:41:49,515
+İkinci bizdenin konuları arkadaşlar dikkat edin.
+
+1964
+02:41:49,515 --> 02:41:53,515
+Birinci bizdenin çıkmasını unduğumuz ama çıkmayan soru tipleri.
+
+1965
+02:41:53,515 --> 02:41:55,515
+Bunlardan gelebilir.
+
+1966
+02:41:55,515 --> 02:41:59,515
+İkinci bizdenin konularıyla birinci bizdenin konuları harmanlanıp sorulabilir.
+
+1967
+02:41:59,515 --> 02:42:03,515
+Yani birinci bizdenin konularını kesinlikle küçümsemeyin.
+
+1968
+02:42:03,515 --> 02:42:07,515
+Evet, dört dört yanlış bir doğruyu götürecek diye biliyorum.
+
+1969
+02:42:07,515 --> 02:42:09,515
+Biri bizdenin olduğu gibi o şekilde olacak.
+
+1970
+02:42:09,515 --> 02:42:10,515
+Tamam, gençler.
+
+1971
+02:42:10,515 --> 02:42:12,515
+Sınavımız zaten ne zamandı?
+
+1972
+02:42:12,515 --> 02:42:14,515
+Cuma günü saat kaçtaydı?
+
+1973
+02:42:14,515 --> 02:42:16,515
+Cuma saat dörtte miydi?
+
+1974
+02:42:16,515 --> 02:42:17,515
+Ne demiştik?
+
+1975
+02:42:17,515 --> 02:42:19,515
+İnternette web sayfasında yazıyordu.
+
+1976
+02:42:19,515 --> 02:42:21,515
+Hatırlanmıyorum.
+
+1977
+02:42:21,515 --> 02:42:23,515
+Siz bakın arkadaşlar web sayfasında.
+
+1978
+02:42:35,956 --> 02:42:36,415
+Evet.
+
+1979
+02:42:43,731 --> 02:42:46,231
+sorulara gene dönebiliyorsunuz diyebiliyorum.
+
+1980
+02:42:54,004 --> 02:42:56,244
+Evet, sorunuz yoksa kapatıyorum arkadaşlar.
+
+1981
+02:42:58,284 --> 02:42:59,204
+Dersi bitiriyorum.
+
+1982
+02:43:04,500 --> 02:43:07,579
+Evet, görüşmek üzere. Kendinize iyi bakın. İyi çalışmalar.

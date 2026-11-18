@@ -1,0 +1,4243 @@
+1
+00:00:02,867 --> 00:00:04,307
+Evet, merhaba gençler.
+
+2
+00:00:31,987 --> 00:00:33,527
+Sesim geliyor değil mi arkadaşlar?
+
+3
+00:00:46,195 --> 00:00:49,995
+Evet, nasılsınız gençler? Çalışıyorsunuz değil mi? Yarınki sınavımız için.
+
+4
+00:01:03,764 --> 00:01:05,024
+Biz de iyiyiz çok şükür.
+
+5
+00:01:13,203 --> 00:01:19,423
+Evet, biz dün en son rasyonel fonksiyonların integrallerini işlemiştik değil mi arkadaşlar? Final konularından.
+
+6
+00:01:22,063 --> 00:01:29,963
+Trigonometrik değişken dönemlerinden bahsetmedik galiba. Trigonometrik substitutions. Bugün onlardan bahsedeceğim.
+
+7
+00:01:31,763 --> 00:01:35,663
+Evet, birkaç dakika bekleyelim. Herkes derse katılabilsin.
+
+8
+00:02:12,147 --> 00:02:17,067
+Okay, so let me write title, trigonometric substitutions.
+
+9
+00:02:28,276 --> 00:02:30,276
+yürürüz ve belirli integral sıfırdan bire.
+
+10
+00:02:35,604 --> 00:02:41,364
+trigonometrik substitutions. Okay, so first of all, let's recall that we know that
+
+11
+00:02:45,876 --> 00:02:59,536
+We know that derivation of arcsine, let's start by this command, derivation of arcsine is 1 over square root of 1 minus 8.
+
+12
+00:03:03,891 --> 00:03:05,752
+Ok, focus on this term.
+
+13
+00:03:06,711 --> 00:03:09,512
+So, focus on this expression.
+
+14
+00:03:09,951 --> 00:03:10,711
+Look at here.
+
+15
+00:03:10,711 --> 00:03:11,391
+So,
+
+16
+00:03:14,252 --> 00:03:16,352
+but there are some problems
+
+17
+00:03:16,352 --> 00:03:18,991
+containing
+
+18
+00:03:18,991 --> 00:03:20,951
+such terms.
+
+19
+00:03:21,211 --> 00:03:22,752
+Okay, now for example,
+
+20
+00:03:23,371 --> 00:03:26,472
+suppose that you have some integration problem
+
+21
+00:03:26,472 --> 00:03:28,151
+containing this
+
+22
+00:03:28,151 --> 00:03:30,292
+a square minus
+
+23
+00:03:30,292 --> 00:03:32,331
+x square. Suppose that
+
+24
+00:03:32,331 --> 00:03:34,252
+your integration problem, your
+
+25
+00:03:34,252 --> 00:03:36,292
+integral function contains
+
+26
+00:03:36,292 --> 00:03:37,491
+such expression.
+
+27
+00:03:37,771 --> 00:03:40,372
+So, as you see, this is the spatial case.
+
+28
+00:03:40,471 --> 00:03:42,391
+It's the spatial case of this.
+
+29
+00:03:42,912 --> 00:03:44,572
+Okay, if you take
+
+30
+00:03:44,572 --> 00:03:49,771
+a is equal to 1,
+
+31
+00:03:50,171 --> 00:03:52,091
+you are going to obtain this spatial case.
+
+32
+00:03:52,271 --> 00:03:54,312
+So, now let me ask you some question.
+
+33
+00:03:54,971 --> 00:03:56,171
+So, what kind of
+
+34
+00:03:56,171 --> 00:03:58,412
+trigonometric
+
+35
+00:03:58,412 --> 00:03:59,752
+transformation
+
+36
+00:03:59,752 --> 00:04:01,931
+can transform
+
+37
+00:04:01,931 --> 00:04:03,091
+this expression
+
+38
+00:04:03,091 --> 00:04:03,951
+into some
+
+39
+00:04:03,951 --> 00:04:05,231
+trigonometric expression.
+
+40
+00:04:05,231 --> 00:04:06,391
+So, look at here.
+
+41
+00:04:06,871 --> 00:04:07,812
+So, because of this fact,
+
+42
+00:04:07,971 --> 00:04:08,671
+okay, so it is
+
+43
+00:04:08,671 --> 00:04:11,572
+it is better to
+
+44
+00:04:11,572 --> 00:04:13,171
+apply this
+
+45
+00:04:13,171 --> 00:04:14,512
+trigonometric substitution.
+
+46
+00:04:14,711 --> 00:04:15,292
+Let's say
+
+47
+00:04:15,292 --> 00:04:15,711
+that
+
+48
+00:04:15,711 --> 00:04:17,891
+x is equal to
+
+49
+00:04:17,891 --> 00:04:18,792
+a times
+
+50
+00:04:18,792 --> 00:04:20,192
+sine t.
+
+51
+00:04:20,192 --> 00:04:22,432
+So, look at here.
+
+52
+00:04:22,632 --> 00:04:23,531
+So, we choose
+
+53
+00:04:23,531 --> 00:04:24,812
+these a coefficients
+
+54
+00:04:24,812 --> 00:04:25,651
+in order to
+
+55
+00:04:25,651 --> 00:04:26,411
+if you substitute
+
+56
+00:04:26,411 --> 00:04:26,891
+this
+
+57
+00:04:26,891 --> 00:04:28,911
+x is equal to
+
+58
+00:04:28,911 --> 00:04:29,891
+a times sine t,
+
+59
+00:04:29,951 --> 00:04:30,771
+you are going to obtain
+
+60
+00:04:30,771 --> 00:04:31,611
+a square.
+
+61
+00:04:31,771 --> 00:04:33,052
+Okay, coming from
+
+62
+00:04:33,052 --> 00:04:33,911
+x square.
+
+63
+00:04:34,351 --> 00:04:35,012
+And as you see,
+
+64
+00:04:35,072 --> 00:04:36,052
+we can easily take
+
+65
+00:04:36,052 --> 00:04:36,792
+common factor
+
+66
+00:04:36,792 --> 00:04:37,432
+a square.
+
+67
+00:04:38,091 --> 00:04:39,192
+So, look at here.
+
+68
+00:04:39,252 --> 00:04:40,072
+When you do this
+
+69
+00:04:40,072 --> 00:04:41,932
+change of variable,
+
+70
+00:04:42,591 --> 00:04:43,531
+you are
+
+71
+00:04:43,531 --> 00:04:44,831
+going to obtain
+
+72
+00:04:44,831 --> 00:04:45,451
+some
+
+73
+00:04:45,451 --> 00:04:47,192
+differential relations
+
+74
+00:04:47,192 --> 00:04:48,692
+a times
+
+75
+00:04:48,692 --> 00:04:50,411
+cosine t
+
+76
+00:04:50,411 --> 00:04:51,692
+dt.
+
+77
+00:04:52,351 --> 00:04:52,971
+Now, if you
+
+78
+00:04:52,971 --> 00:04:53,812
+substitute this
+
+79
+00:04:53,812 --> 00:04:54,672
+into this
+
+80
+00:04:54,672 --> 00:04:55,231
+expression,
+
+81
+00:04:55,411 --> 00:04:55,951
+look at here.
+
+82
+00:04:56,031 --> 00:04:56,572
+We are going to
+
+83
+00:04:56,572 --> 00:04:56,932
+obtain
+
+84
+00:04:56,932 --> 00:04:57,812
+this
+
+85
+00:04:57,812 --> 00:04:58,771
+a square
+
+86
+00:04:58,771 --> 00:04:59,692
+minus
+
+87
+00:04:59,692 --> 00:05:00,771
+a square
+
+88
+00:05:00,771 --> 00:05:02,211
+sine
+
+89
+00:05:02,211 --> 00:05:02,871
+square
+
+90
+00:05:02,871 --> 00:05:03,491
+t.
+
+91
+00:05:03,991 --> 00:05:04,672
+Now, let's
+
+92
+00:05:04,672 --> 00:05:05,692
+simplify this
+
+93
+00:05:05,692 --> 00:05:06,151
+expression.
+
+94
+00:05:06,312 --> 00:05:06,692
+If you take
+
+95
+00:05:06,692 --> 00:05:07,091
+the common
+
+96
+00:05:07,091 --> 00:05:07,692
+factor,
+
+97
+00:05:08,172 --> 00:05:08,792
+if you take
+
+98
+00:05:08,792 --> 00:05:09,271
+the common
+
+99
+00:05:09,271 --> 00:05:09,971
+factor
+
+100
+00:05:09,971 --> 00:05:12,252
+a square,
+
+101
+00:05:12,451 --> 00:05:12,991
+we are going to
+
+102
+00:05:12,991 --> 00:05:13,491
+obtain this
+
+103
+00:05:13,491 --> 00:05:14,211
+1 minus
+
+104
+00:05:14,211 --> 00:05:14,911
+sine square
+
+105
+00:05:14,911 --> 00:05:15,271
+t.
+
+106
+00:05:15,271 --> 00:05:16,552
+Okay, so in
+
+107
+00:05:16,552 --> 00:05:17,271
+fact, so we
+
+108
+00:05:17,271 --> 00:05:17,991
+have this.
+
+109
+00:05:18,651 --> 00:05:19,331
+Now, suppose
+
+110
+00:05:19,331 --> 00:05:20,871
+that a is
+
+111
+00:05:20,871 --> 00:05:21,471
+positively
+
+112
+00:05:21,471 --> 00:05:22,411
+defined and
+
+113
+00:05:22,411 --> 00:05:23,411
+we study on
+
+114
+00:05:23,411 --> 00:05:24,151
+some domain
+
+115
+00:05:24,151 --> 00:05:24,651
+where
+
+116
+00:05:24,651 --> 00:05:26,231
+cosine is
+
+117
+00:05:26,231 --> 00:05:26,672
+positive.
+
+118
+00:05:27,031 --> 00:05:27,751
+So, in that
+
+119
+00:05:27,751 --> 00:05:28,531
+case, we can
+
+120
+00:05:28,531 --> 00:05:29,251
+write this
+
+121
+00:05:29,251 --> 00:05:30,651
+by this
+
+122
+00:05:30,651 --> 00:05:31,151
+assumption.
+
+123
+00:05:32,231 --> 00:05:33,831
+Now, I
+
+124
+00:05:33,831 --> 00:05:34,792
+suppose that a
+
+125
+00:05:34,792 --> 00:05:35,692
+is positive
+
+126
+00:05:35,692 --> 00:05:37,052
+and we study
+
+127
+00:05:37,052 --> 00:05:37,711
+on some
+
+128
+00:05:37,711 --> 00:05:38,512
+domain
+
+129
+00:05:38,512 --> 00:05:39,751
+where
+
+130
+00:05:39,751 --> 00:05:41,132
+cosine t
+
+131
+00:05:41,132 --> 00:05:42,031
+is positive
+
+132
+00:05:42,031 --> 00:05:42,591
+or equal
+
+133
+00:05:42,591 --> 00:05:43,012
+to 0.
+
+134
+00:05:43,211 --> 00:05:44,031
+Okay, now,
+
+135
+00:05:44,032 --> 00:05:46,091
+as you
+
+136
+00:05:46,091 --> 00:05:47,012
+see, by
+
+137
+00:05:47,012 --> 00:05:47,992
+using these
+
+138
+00:05:47,992 --> 00:05:49,012
+transformations,
+
+139
+00:05:49,471 --> 00:05:50,292
+by using
+
+140
+00:05:50,292 --> 00:05:50,632
+this
+
+141
+00:05:50,632 --> 00:05:51,612
+transformation,
+
+142
+00:05:52,471 --> 00:05:52,971
+we can
+
+143
+00:05:52,971 --> 00:05:53,772
+transform,
+
+144
+00:05:55,132 --> 00:05:56,072
+we can
+
+145
+00:05:56,072 --> 00:05:56,652
+transform
+
+146
+00:05:56,652 --> 00:05:57,351
+our
+
+147
+00:05:57,351 --> 00:05:58,231
+problem.
+
+148
+00:05:58,711 --> 00:05:59,391
+So, for
+
+149
+00:05:59,391 --> 00:05:59,772
+example,
+
+150
+00:05:59,971 --> 00:06:00,391
+look at
+
+151
+00:06:00,391 --> 00:06:01,132
+this example.
+
+152
+00:06:02,132 --> 00:06:02,652
+If you are
+
+153
+00:06:02,652 --> 00:06:03,152
+asked to
+
+154
+00:06:03,152 --> 00:06:04,231
+compute this,
+
+155
+00:06:05,272 --> 00:06:06,211
+so 4
+
+156
+00:06:06,211 --> 00:06:06,971
+minus
+
+157
+00:06:06,971 --> 00:06:07,512
+x
+
+158
+00:06:07,512 --> 00:06:08,112
+square,
+
+159
+00:06:08,711 --> 00:06:09,072
+as you
+
+160
+00:06:09,072 --> 00:06:09,532
+see, your
+
+161
+00:06:09,532 --> 00:06:10,012
+integral
+
+162
+00:06:10,012 --> 00:06:10,812
+function
+
+163
+00:06:10,812 --> 00:06:12,292
+contains
+
+164
+00:06:12,292 --> 00:06:13,512
+square root
+
+165
+00:06:13,512 --> 00:06:13,992
+of 4
+
+166
+00:06:13,992 --> 00:06:14,731
+minus x
+
+167
+00:06:14,731 --> 00:06:15,192
+square.
+
+168
+00:06:15,652 --> 00:06:16,471
+Now, in
+
+169
+00:06:16,471 --> 00:06:16,932
+order to
+
+170
+00:06:16,932 --> 00:06:17,492
+transform
+
+171
+00:06:17,492 --> 00:06:18,432
+this
+
+172
+00:06:18,432 --> 00:06:19,351
+problem
+
+173
+00:06:19,351 --> 00:06:20,032
+into a
+
+174
+00:06:20,032 --> 00:06:20,492
+trigonometric
+
+175
+00:06:20,492 --> 00:06:21,812
+functions
+
+176
+00:06:21,812 --> 00:06:22,512
+integration
+
+177
+00:06:22,512 --> 00:06:23,072
+problem,
+
+178
+00:06:23,231 --> 00:06:23,812
+so we do
+
+179
+00:06:23,812 --> 00:06:24,512
+this change
+
+180
+00:06:24,512 --> 00:06:24,772
+of
+
+181
+00:06:24,772 --> 00:06:25,932
+variable
+
+182
+00:06:25,932 --> 00:06:28,091
+sine t.
+
+183
+00:06:29,032 --> 00:06:29,331
+Okay.
+
+184
+00:06:30,272 --> 00:06:31,192
+Now, as you
+
+185
+00:06:31,192 --> 00:06:32,192
+see, so
+
+186
+00:06:32,192 --> 00:06:33,152
+dx is
+
+187
+00:06:33,152 --> 00:06:34,192
+equal to
+
+188
+00:06:34,192 --> 00:06:35,851
+2 times
+
+189
+00:06:35,851 --> 00:06:37,312
+cosine t
+
+190
+00:06:37,312 --> 00:06:37,912
+dt.
+
+191
+00:06:38,572 --> 00:06:39,091
+So, if
+
+192
+00:06:39,091 --> 00:06:39,752
+you substitute
+
+193
+00:06:39,752 --> 00:06:41,451
+this, we
+
+194
+00:06:41,451 --> 00:06:41,831
+are going
+
+195
+00:06:41,831 --> 00:06:42,351
+to obtain
+
+196
+00:06:42,351 --> 00:06:42,872
+this.
+
+197
+00:06:43,372 --> 00:06:43,752
+Okay.
+
+198
+00:06:43,912 --> 00:06:44,451
+If 2
+
+199
+00:06:44,451 --> 00:06:46,052
+times, this
+
+200
+00:06:46,052 --> 00:06:47,292
+is transformed
+
+201
+00:06:47,292 --> 00:06:49,272
+into cosine
+
+202
+00:06:49,272 --> 00:06:51,112
+t times,
+
+203
+00:06:51,672 --> 00:06:52,872
+and this
+
+204
+00:06:52,872 --> 00:06:53,932
+is equal
+
+205
+00:06:53,932 --> 00:06:54,612
+to 2
+
+206
+00:06:54,612 --> 00:06:55,292
+times
+
+207
+00:06:55,292 --> 00:06:57,072
+cosine t.
+
+208
+00:06:57,432 --> 00:06:57,732
+Okay.
+
+209
+00:06:57,932 --> 00:06:58,552
+So, this
+
+210
+00:06:58,552 --> 00:06:59,312
+is 2
+
+211
+00:06:59,312 --> 00:06:59,831
+times
+
+212
+00:06:59,831 --> 00:07:01,552
+cosine t.
+
+213
+00:07:02,451 --> 00:07:32,451
+Bu, dx'in ikiye kadar 2'ye kadar 2'ye kadar 2'ye kadar 2'ye kadar 2'ye kadar 2'ye kadar 2'ye kadar 2'ye kadar 2'ye kadar 2'ye kadar 2'ye kadar 2'ye kadar 2'ye kadar 2'ye kadar 2'ye kadar 2'ye kadar 2'ye kadar 2'ye kadar 2'ye kadar 2'ye kadar 2'ye kadar 2'ye kadar 2'ye kadar 2'ye kadar 2'ye kadar 2'ye kadar 2'ye kadar 2'ye kadar 2'ye kadar 2'ye kadar 2'ye kadar 2'ye kadar 2'ye kadar 2'ye kadar 2'ye kadar 2'ye kadar 2'ye kadar 2'ye kadar 2'ye kadar 2'ye kadar 2'ye kadar 2'ye kadar 2'ye kadar 2'ye kadar 2'ye kadar 2'ye kadar 2'ye kadar 2'ye kadar 2'ye kadar 2'ye kadar 2'ye kadar 2'ye kadar 2'ye kadar 2'
+
+214
+00:07:32,451 --> 00:07:32,951
+metrik identik
+
+215
+00:07:32,951 --> 00:10:09,251
+ve kan
+
+216
+00:10:09,451 --> 00:10:10,451
+x
+
+217
+00:10:10,451 --> 00:10:11,451
+over
+
+218
+00:10:11,451 --> 00:10:12,451
+ok
+
+219
+00:10:12,451 --> 00:10:13,451
+so
+
+220
+00:10:13,451 --> 00:10:14,451
+two times
+
+221
+00:10:14,451 --> 00:10:15,451
+arc
+
+222
+00:10:15,451 --> 00:10:16,451
+sine
+
+223
+00:10:16,451 --> 00:10:18,451
+x
+
+224
+00:10:18,451 --> 00:10:19,451
+over
+
+225
+00:10:19,451 --> 00:10:20,451
+two
+
+226
+00:10:20,451 --> 00:10:21,451
+plus
+
+227
+00:10:21,451 --> 00:10:22,451
+one over
+
+228
+00:10:22,451 --> 00:10:23,451
+two
+
+229
+00:10:23,451 --> 00:10:24,451
+arkadaşlar
+
+230
+00:10:24,451 --> 00:10:25,451
+bir bölü dört
+
+231
+00:10:25,451 --> 00:10:49,451
+bir de
+
+232
+00:10:49,451 --> 00:10:50,451
+yok galiba
+
+233
+00:10:50,451 --> 00:10:51,451
+gayet
+
+234
+00:10:51,451 --> 00:10:52,451
+anlaşılır
+
+235
+00:10:52,451 --> 00:10:53,451
+bir soru
+
+236
+00:10:53,451 --> 00:11:19,451
+bir de
+
+237
+00:10:58,388 --> 00:11:00,427
+Evet.
+
+238
+00:11:00,427 --> 00:11:01,268
+Şimdi devam edelim.
+
+239
+00:11:03,908 --> 00:11:04,548
+Şimdi,
+
+240
+00:11:05,588 --> 00:11:06,468
+ok,
+
+241
+00:11:06,687 --> 00:11:08,187
+let's solve this example.
+
+242
+00:11:13,268 --> 00:11:21,868
+You may see such integration problem in the course of differential equations. That's why please try to learn this method.
+
+243
+00:11:26,355 --> 00:11:49,716
+Fransiyel denklemler dersinde bu tarz integrallerle çok sık karşılaşacaksınız. O yüzden arkadaşlar bu yöntemi iyi öğrenin. Fransiyel denklemleri muhtemelen çoğunuz gelecek yıl alacak. Gelecek yılda yüz yüze eğitim olacağını umut ediyoruz. İnşallah. Evet, bunu çözmeye çalışın bakayım.
+
+244
+00:11:49,716 --> 00:12:11,615
+Let's try to solve this problem. As you see, integrant function contains square root of x square minus x square. So in order to transform this problem into trigonometric integrations problem, so we need to do some trigonometric substitution, some proper trigonometric substitution.
+
+245
+00:12:11,615 --> 00:12:24,836
+Evet, yapın bakalım arkadaşlar. Bekliyorum. Birazcık kalem oynatın. Birkaç dakika bekliyorum. Bunu herkesin yapması lazım. Öğrenip öğrenmediğimizi kontrol edelim lütfen.
+
+246
+00:12:29,395 --> 00:12:39,596
+Evet. Ben de o esnada bir yoklama alayım. [öğrenci]. Burada mısın [öğrenci]? Çete direkt yazabilirsiniz arkadaşlar.
+
+247
+00:12:47,668 --> 00:13:15,207
+x kare artı 2x, f' [öğrenci] artı 2x, [öğrenci], you are here, [öğrenci], [öğrenci], [öğrenci], [öğrenci], you are here, [öğrenci], [öğrenci], [öğrenci], you are here, [öğrenci],
+
+248
+00:13:15,207 --> 00:13:32,707
+[öğrenci], [öğrenci], [öğrenci], [öğrenci], [öğrenci], [öğrenci], not here, ok buradasın, güzel.
+
+249
+00:13:33,488 --> 00:13:37,768
+[öğrenci], [öğrenci], burada mısın [öğrenci]?
+
+250
+00:13:39,048 --> 00:13:41,908
+Evet, yapıyorsunuz değil mi gençler? [öğrenci],
+
+251
+00:13:46,035 --> 00:13:47,175
+[öğrenci]
+
+252
+00:13:51,124 --> 00:14:11,403
+[öğrenci], [öğrenci], burada tamam, [öğrenci] dedik, [öğrenci], [öğrenci], burada mısın [öğrenci]? Çocuğu musun [öğrenci]? Nasıl bir değişken dönüşümü yapacağız [öğrenci]? Böyle bir problem için. Ne yapacağız [öğrenci]?
+
+253
+00:14:15,860 --> 00:14:17,860
+sesli bağlanıp konuşabilirsin [öğrenci].
+
+254
+00:14:25,299 --> 00:14:27,500
+Evet, dersi dinliyorsun değil mi [öğrenci]?
+
+255
+00:14:30,639 --> 00:14:41,279
+Kare güçünde a kare eksi x kare ifadesini içeren integral problemlerinde hangi değişken dönüşümünü kullanacaktık arkadaşlar?
+
+256
+00:14:44,019 --> 00:14:48,399
+x eşittir a sin t. Tamam mı [öğrenci]?
+
+257
+00:14:49,279 --> 00:14:50,919
+Şimdi bunu kullanarak çöz bakalım.
+
+258
+00:14:51,120 --> 00:14:53,279
+[öğrenci], burada mısın [öğrenci]?
+
+259
+00:14:55,299 --> 00:14:56,819
+[öğrenci].
+
+260
+00:14:57,899 --> 00:14:59,859
+Evet, [öğrenci].
+
+261
+00:15:02,019 --> 00:15:03,779
+[öğrenci] buldun mu bir şeyler?
+
+262
+00:15:04,000 --> 00:15:07,179
+Trigonometrik probleme dönüştürebildin mi bu problemi?
+
+263
+00:15:07,620 --> 00:15:12,779
+Trigonometrik fonksiyonun integralli problemine dönüşmesi lazım bu problem.
+
+264
+00:15:13,779 --> 00:15:15,120
+Ne buldun?
+
+265
+00:15:15,459 --> 00:15:19,740
+Trigonometrik integrant fonksiyonu trigonometrik olarak ne buldun [öğrenci]?
+
+266
+00:15:26,676 --> 00:15:39,456
+[öğrenci]. Okay, [öğrenci], are you here, [öğrenci]? Okay, can you transform this problem into problem of trigonometric function, [öğrenci]?
+
+267
+00:15:46,227 --> 00:16:00,668
+Which kind of transformation is the best one? As you see, your integral function contains radical of a² minus x². So, which trigonometric substitution must be applied to this problem?
+
+268
+00:16:01,947 --> 00:16:08,548
+[öğrenci], [öğrenci]. Are you here, [öğrenci]?
+
+269
+00:16:08,548 --> 00:16:17,407
+[öğrenci]. [öğrenci], not here. [öğrenci]. Are you here, [öğrenci]?
+
+270
+00:16:22,515 --> 00:16:38,375
+[öğrenci], [öğrenci], not here. [öğrenci], [öğrenci], not here. [öğrenci], [öğrenci], ok. Buldun mu [öğrenci]?
+
+271
+00:16:44,724 --> 00:16:45,084
+Evet.
+
+272
+00:16:48,755 --> 00:16:49,875
+Şurada şimşek
+
+273
+00:16:53,971 --> 00:16:56,211
+[öğrenci].
+
+274
+00:16:56,251 --> 00:16:57,211
+Buradayım hocam.
+
+275
+00:16:58,151 --> 00:16:59,771
+Tamam, şurada buradasın.
+
+276
+00:17:00,231 --> 00:17:01,292
+[öğrenci].
+
+277
+00:17:03,412 --> 00:17:04,271
+Burada mısın [öğrenci]?
+
+278
+00:17:06,551 --> 00:17:06,951
+Evet.
+
+279
+00:17:09,031 --> 00:17:10,451
+[öğrenci].
+
+280
+00:17:10,652 --> 00:17:11,412
+Burada mısın [öğrenci]?
+
+281
+00:17:15,316 --> 00:17:34,076
+Evet. [öğrenci], [öğrenci]. [öğrenci]. A-K-Y-N-D-Z-H-Y yazılmış. Evet, [öğrenci].
+
+282
+00:17:37,135 --> 00:17:43,016
+[öğrenci] burada. [öğrenci] burada mı?
+
+283
+00:17:45,316 --> 00:17:45,816
+E.
+
+284
+00:17:46,996 --> 00:17:47,496
+Evet.
+
+285
+00:17:47,496 --> 00:18:17,135
+E.
+
+286
+00:17:55,380 --> 00:18:12,760
+We know that, so as you see your function contains this, x is equal to 1 times sine t and dx is equal to cosine t dt.
+
+287
+00:18:12,760 --> 00:18:39,500
+If you substitute these equations into this problem, x is equal to sine t, so we have sine squared t coming from x squared times, we have cosine t coming from the square root of 1 minus x squared and times cosine t dt is coming from the dx.
+
+288
+00:18:39,500 --> 00:18:56,760
+Okay, is that clear? Is there any question about this writing? Now look at here, so what can we do? So we have this sine t times whole sine t and square of this and dt.
+
+289
+00:18:56,760 --> 00:19:12,240
+So we know that, let me follow from here, we know that sine t times cosine t is equal to 1 over 2 sine 2t and square of this.
+
+290
+00:19:12,240 --> 00:19:21,180
+Okay, let's go on. Okay, now 1 over 4, 1 over 4 sine square 2t.
+
+291
+00:19:21,180 --> 00:19:31,820
+Okay, now as you see, so we have trigonometric expression. Okay, with power 2, we can reduce this. Let me follow from here.
+
+292
+00:19:31,820 --> 00:19:51,560
+So we know that sine, let me use this color here, sine square a is equal to 1 minus cosine a over 2 by using this trigonometric identical relation.
+
+293
+00:19:51,560 --> 00:20:06,560
+So we can transform our problem into another problem. So we can transform our problem into another problem. So 1 over 1 minus cosine a is 2t, cosine 4t over 2 dt.
+
+294
+00:20:06,560 --> 00:20:23,100
+As you see, 1 over 1 over 4, sine 4t. Okay, and plus c.
+
+295
+00:20:23,100 --> 00:20:41,000
+Okay, now so our actual variable in the original problem is x. That's why we need to turn back. Okay, now by using, so let's write this x is equal to sine t.
+
+296
+00:20:41,840 --> 00:20:51,340
+By using this trigonometric substitution, so we have, so this is not, okay, 90 derece gibi olmadı arkadaşlar.
+
+297
+00:20:55,092 --> 00:20:55,451
+Okay.
+
+298
+00:20:57,672 --> 00:20:59,892
+Now consider this.
+
+299
+00:21:02,211 --> 00:21:04,632
+Now we have some angle t.
+
+300
+00:21:05,412 --> 00:21:06,951
+So this is x.
+
+301
+00:21:07,252 --> 00:21:08,552
+So this is y.
+
+302
+00:21:08,772 --> 00:21:09,112
+1.
+
+303
+00:21:09,292 --> 00:21:11,152
+This is by pi t'chirin theorem.
+
+304
+00:21:11,632 --> 00:21:13,951
+1 square root of 1 minus x square.
+
+305
+00:21:14,512 --> 00:21:14,951
+Okay.
+
+306
+00:21:15,211 --> 00:21:18,652
+Sine 40.
+
+307
+00:21:19,232 --> 00:21:21,152
+Let's write sine 40.
+
+308
+00:21:21,852 --> 00:21:22,732
+Sine 40.
+
+309
+00:21:22,732 --> 00:21:24,692
+Nasıl yazar sine 40 arkadaşlar?
+
+310
+00:21:25,092 --> 00:21:54,092
+Sine 40.
+
+311
+00:21:29,652 --> 00:21:30,832
+Böyle yazsak olur mu?
+
+312
+00:21:33,612 --> 00:21:37,912
+Sinüs 2t çarpı kosinüs 2t. Doğru mu?
+
+313
+00:21:38,711 --> 00:21:45,812
+Yani iki tane sinüs 2t çarpı kosinüs 2t. Daha sonra sinüs 2t'yi de yazarsınız.
+
+314
+00:21:47,032 --> 00:21:48,112
+Sinüs 2t.
+
+315
+00:21:51,112 --> 00:21:55,672
+2 çarpı sinüs t çarpı kosinüs.
+
+316
+00:21:55,672 --> 00:21:57,211
+Let's substitute this.
+
+317
+00:21:57,932 --> 00:22:00,092
+And cosin 2t.
+
+318
+00:22:01,751 --> 00:22:05,251
+Cosin square t minus sin square t.
+
+319
+00:22:06,011 --> 00:22:07,991
+Okay, by using this triangle,
+
+320
+00:22:08,852 --> 00:22:11,592
+so we can compute sin t, which is x,
+
+321
+00:22:11,692 --> 00:22:13,652
+and we can compute cosin t,
+
+322
+00:22:14,211 --> 00:22:16,372
+which is square root of 1 minus x square.
+
+323
+00:22:16,792 --> 00:22:18,471
+And so we can compute this.
+
+324
+00:22:18,572 --> 00:22:20,532
+And by substituting this here
+
+325
+00:22:20,532 --> 00:22:22,652
+and here,
+
+326
+00:22:22,652 --> 00:22:23,652
+so we can compute sin 4t in terms of x.
+
+327
+00:22:23,652 --> 00:22:27,092
+So we can compute sin 4t in terms of x.
+
+328
+00:22:27,092 --> 00:22:31,132
+Okay, so let's substitute results.
+
+329
+00:22:32,172 --> 00:22:34,211
+Okay, obtain here into this expression.
+
+330
+00:22:34,491 --> 00:22:39,392
+And so t is equal to arc sin x.
+
+331
+00:22:39,652 --> 00:22:41,451
+Okay, so this is homework for you.
+
+332
+00:22:41,731 --> 00:22:42,592
+Homework for you.
+
+333
+00:22:44,011 --> 00:22:45,112
+Var mı Nashembiye?
+
+334
+00:22:46,812 --> 00:22:48,372
+Soru soran var mı gençler?
+
+335
+00:22:48,672 --> 00:22:49,711
+Güzel bir soruymuş.
+
+336
+00:22:56,596 --> 00:22:56,955
+Evet.
+
+337
+00:23:13,268 --> 00:23:21,768
+Okay, let me introduce another kind of trigonometrik substitution.
+
+338
+00:23:25,523 --> 00:23:28,923
+Evet, ilk önce, bu problemi ile başlayalım.
+
+339
+00:23:28,923 --> 00:23:30,923
+Yani, ne yapalım?
+
+340
+00:23:40,180 --> 00:24:07,660
+Okay, let's try to solve this problem. Okay, so this is very similar to, this is very similar to square root of a square minus b square. Okay, so square root of a square minus x square. So which kind of trigonometric substitution is the best one in order to transform this problem into trigonometric function integration problem? Okay.
+
+341
+00:24:07,660 --> 00:24:11,580
+Ne yapacağız arkadaşlar? Düşünün bakalım.
+
+342
+00:24:14,120 --> 00:24:27,360
+Nasıl bir değişken dönüşümü, trigonometrik değişken dönüşümü yaparsak bu söz konusu problem bilinen anlamda bir trigonometrik fonksiyonun integrali problemine dönüşür.
+
+343
+00:24:28,039 --> 00:24:29,960
+Sorumuzu bu şekilde düşünüyoruz.
+
+344
+00:24:31,160 --> 00:24:31,400
+Evet.
+
+345
+00:24:51,220 --> 00:24:52,120
+Aynen öyle.
+
+346
+00:24:53,680 --> 00:24:54,579
+Okay, so.
+
+347
+00:24:59,284 --> 00:25:07,284
+As you see, in order to take the common factor here, we need to do this change of variable.
+
+348
+00:25:08,164 --> 00:25:11,244
+X is equal to 2 over 3.
+
+349
+00:25:11,403 --> 00:25:14,024
+If you substitute, x is equal to 2 over 3.
+
+350
+00:25:14,184 --> 00:25:14,844
+Somewhere here.
+
+351
+00:25:15,184 --> 00:25:15,744
+Look at here.
+
+352
+00:25:15,744 --> 00:25:18,464
+So, we are going to obtain 4 over 9.
+
+353
+00:25:18,903 --> 00:25:21,244
+So, 9 are simplified.
+
+354
+00:25:21,944 --> 00:25:23,744
+And we have 4 coefficients.
+
+355
+00:25:24,184 --> 00:25:24,684
+Okay, here.
+
+356
+00:25:24,804 --> 00:25:26,544
+And we can take out common factors.
+
+357
+00:25:26,544 --> 00:25:31,104
+So, that's why it is better to do this change of variable.
+
+358
+00:25:31,444 --> 00:25:31,704
+Okay.
+
+359
+00:25:32,584 --> 00:25:35,364
+Now, so, this is a simple one.
+
+360
+00:25:35,364 --> 00:25:43,544
+So, dx is equal to 2 over 3 cos t dt.
+
+361
+00:25:44,004 --> 00:25:56,524
+So, if you substitute these results into your problem, you are going to obtain, let me write here, 4 minus 9 times 4 over 9 sin squared.
+
+362
+00:25:56,544 --> 00:25:57,024
+t.
+
+363
+00:25:57,024 --> 00:26:03,084
+And dx is 2 over 3 cos t dt.
+
+364
+00:26:03,704 --> 00:26:05,924
+Okay, now let me follow from here.
+
+365
+00:26:06,304 --> 00:26:09,804
+So, if you take the common factor 4 here.
+
+366
+00:26:10,124 --> 00:26:12,004
+So, you are going to obtain 2.
+
+367
+00:26:12,364 --> 00:26:14,244
+And 1 minus sin squared t.
+
+368
+00:26:14,504 --> 00:26:15,903
+Square root of 1 minus.
+
+369
+00:26:16,564 --> 00:26:20,044
+Okay, sin squared t is identical to cos t.
+
+370
+00:26:20,044 --> 00:26:24,364
+And 2 over 3 cos t dt.
+
+371
+00:26:24,584 --> 00:26:25,304
+Is that correct?
+
+372
+00:26:25,484 --> 00:26:26,324
+Is there any mistake?
+
+373
+00:26:27,124 --> 00:26:27,464
+Okay.
+
+374
+00:26:27,644 --> 00:26:29,444
+4 over 3.
+
+375
+00:26:29,903 --> 00:26:34,084
+And so, we have cos square t dt.
+
+376
+00:26:34,844 --> 00:26:37,104
+Now, as you see, let me follow from here.
+
+377
+00:26:37,104 --> 00:26:39,724
+So, 4 over 3.
+
+378
+00:26:40,284 --> 00:26:48,344
+So, let me write this cos square t in terms of cos 2t and 1.
+
+379
+00:26:48,524 --> 00:26:59,684
+So, in this way, as you see, we have this integration of 1t plus integration of cos 2t, 1 over 2 sin 2t.
+
+380
+00:27:00,004 --> 00:27:00,204
+Okay.
+
+381
+00:27:00,684 --> 00:27:01,884
+And plus c.
+
+382
+00:27:01,884 --> 00:27:06,424
+Now, so, again, we need to turn back.
+
+383
+00:27:07,364 --> 00:27:08,104
+Okay, here.
+
+384
+00:27:08,264 --> 00:27:10,164
+So, we have this.
+
+385
+00:27:11,264 --> 00:27:13,484
+Okay, take into account this.
+
+386
+00:27:13,484 --> 00:27:24,184
+Sin 2t is equal to 3x over 2.
+
+387
+00:27:24,524 --> 00:27:28,704
+Sin 2t is 3x over 2.
+
+388
+00:27:29,264 --> 00:27:30,304
+3x.
+
+389
+00:27:31,304 --> 00:27:32,564
+So, this must be 2.
+
+390
+00:27:32,784 --> 00:27:34,224
+So, this is the distances.
+
+391
+00:27:34,484 --> 00:27:38,324
+4 minus 9x squared.
+
+392
+00:27:38,324 --> 00:27:39,124
+Square root of 1.
+
+393
+00:27:39,124 --> 00:27:39,344
+Okay.
+
+394
+00:27:39,864 --> 00:27:50,444
+So, by using this triangle, so, and by writing sin 2t in terms of sin t and cos sin t, you can write this integrant problem.
+
+395
+00:27:50,644 --> 00:27:54,024
+So, you can write this anti-derivation in terms of x.
+
+396
+00:27:54,224 --> 00:27:54,644
+Tamam, arkadaşlar.
+
+397
+00:27:54,784 --> 00:27:55,524
+Homework for you.
+
+398
+00:27:56,004 --> 00:27:57,304
+Bundan sonrasını yaparsınız arkadaşlar.
+
+399
+00:27:58,224 --> 00:28:03,484
+Biliyorsunuz, klasik bir şekilde hemen trigonometrik şeylerle, öz eşitlerle bulabilirsiniz.
+
+400
+00:28:03,784 --> 00:28:03,903
+Evet.
+
+401
+00:28:03,903 --> 00:28:05,624
+Var mı sorusu olan?
+
+402
+00:28:08,144 --> 00:28:09,204
+Sorusu olan var mı?
+
+403
+00:28:16,500 --> 00:28:16,819
+ok.
+
+404
+00:28:21,268 --> 00:28:22,508
+let's go on
+
+405
+00:28:26,708 --> 00:28:29,028
+Next type,
+
+406
+00:28:29,208 --> 00:28:30,408
+econometric substitution.
+
+407
+00:28:30,748 --> 00:28:32,608
+So let's recall the derivation of
+
+408
+00:28:32,608 --> 00:28:33,788
+arc secant.
+
+409
+00:28:34,048 --> 00:28:36,768
+Let's recall the derivation of arc secant x.
+
+410
+00:28:36,988 --> 00:28:38,968
+Is there anybody who recalls
+
+411
+00:28:38,968 --> 00:28:41,448
+the derivation of arc secant x?
+
+412
+00:28:41,448 --> 00:28:43,368
+Bir yere bakmadan hatırlayamıyor.
+
+413
+00:28:43,368 --> 00:28:45,948
+Var mı? Hatırlayamıyorsanız nasıl çıkartacağınızı
+
+414
+00:28:45,948 --> 00:28:46,648
+biliyorsunuz.
+
+415
+00:28:47,248 --> 00:28:49,168
+Onu da göstermiştik.
+
+416
+00:28:49,248 --> 00:28:50,708
+Çünkü secantın türevini biliyorduk.
+
+417
+00:28:50,788 --> 00:28:52,208
+Secantın türevini biliyorsak
+
+418
+00:28:52,208 --> 00:28:55,388
+f'ye bileşik f'nin tersi özdeştik
+
+419
+00:28:55,388 --> 00:28:56,228
+fonksiyonudur.
+
+420
+00:28:56,228 --> 00:28:58,788
+Oradan hareket ederek arc secantın türevini
+
+421
+00:28:58,788 --> 00:28:59,888
+bulabiliyordunuz.
+
+422
+00:29:00,448 --> 00:29:03,128
+Bir bölü neydi arkadaşlar?
+
+423
+00:29:03,448 --> 00:29:06,848
+x çarpı kare kük içinde neydi?
+
+424
+00:29:08,228 --> 00:29:10,388
+x kare eksi bir.
+
+425
+00:29:10,388 --> 00:29:12,388
+Okay, so focus on this term.
+
+426
+00:29:15,728 --> 00:29:17,448
+Okay, as you see,
+
+427
+00:29:18,248 --> 00:29:20,548
+so this fact says that
+
+428
+00:29:20,548 --> 00:29:22,248
+if you see such expression,
+
+429
+00:29:22,668 --> 00:29:23,768
+look at here,
+
+430
+00:29:23,768 --> 00:29:25,908
+so x square
+
+431
+00:29:25,908 --> 00:29:28,368
+minus a square.
+
+432
+00:29:28,368 --> 00:29:30,548
+So this is very similar to
+
+433
+00:29:30,548 --> 00:29:32,728
+very similar to square root of
+
+434
+00:29:32,728 --> 00:29:34,288
+a square minus x square
+
+435
+00:29:34,288 --> 00:29:35,508
+but do not confuse
+
+436
+00:29:35,508 --> 00:29:37,468
+this expression with the
+
+437
+00:29:37,468 --> 00:29:39,088
+square root of
+
+438
+00:29:39,088 --> 00:29:40,388
+a square minus x square.
+
+439
+00:29:40,388 --> 00:29:41,048
+dikkat edin.
+
+440
+00:29:41,048 --> 00:29:41,068
+Dikkat edin.
+
+441
+00:29:41,228 --> 00:29:42,848
+Kare kük içinde x kare eksi a kare
+
+442
+00:29:42,848 --> 00:29:45,548
+ile kare kük içinde a kare eksi x kareyi
+
+443
+00:29:45,548 --> 00:29:46,768
+birbiriyle karıştırmayın.
+
+444
+00:29:46,868 --> 00:29:50,068
+Arc secantın türevi içinde kare kük içinde x kare eksi a kare var.
+
+445
+00:29:50,728 --> 00:29:51,248
+Dikkat edin.
+
+446
+00:29:51,248 --> 00:29:52,468
+O zaman, as you see,
+
+447
+00:29:52,948 --> 00:29:55,968
+so this is special case.
+
+448
+00:29:56,848 --> 00:29:58,827
+So we would take a one.
+
+449
+00:29:59,048 --> 00:30:01,268
+So that's why if you do,
+
+450
+00:30:01,788 --> 00:30:04,468
+if you see such expression,
+
+451
+00:30:04,648 --> 00:30:06,168
+it is better to do this
+
+452
+00:30:06,168 --> 00:30:08,588
+kind of trigonometric substitution
+
+453
+00:30:08,588 --> 00:30:09,528
+because of this fact.
+
+454
+00:30:09,668 --> 00:30:11,368
+Okay, second t.
+
+455
+00:30:11,768 --> 00:30:11,968
+Okay.
+
+456
+00:30:12,307 --> 00:30:13,648
+Derek bu için soru soru var mı?
+
+457
+00:30:13,688 --> 00:30:15,068
+Neden böyle yapmamız gerektiğini
+
+458
+00:30:15,068 --> 00:30:17,428
+görüyorsunuz ipuçlarını göz önünde bulundurarak
+
+459
+00:30:17,428 --> 00:30:19,448
+böyle yapmamız gerektiğini
+
+460
+00:30:19,448 --> 00:30:20,928
+hemen anlayabiliyoruz.
+
+461
+00:30:21,528 --> 00:30:22,048
+Dikkat edin.
+
+462
+00:30:22,608 --> 00:30:24,548
+Okay, so this implies that
+
+463
+00:30:24,548 --> 00:30:27,008
+dx is equal to
+
+464
+00:30:27,008 --> 00:30:29,567
+a times derivation of second,
+
+465
+00:30:29,807 --> 00:30:32,388
+second t times tangent t
+
+466
+00:30:32,388 --> 00:30:34,567
+e t.
+
+467
+00:30:34,788 --> 00:30:36,928
+We need to put this differential dt
+
+468
+00:30:36,928 --> 00:30:39,128
+corresponding to t.
+
+469
+00:30:39,648 --> 00:30:41,928
+Okay, now so when you substitute
+
+470
+00:30:41,928 --> 00:30:46,048
+this transformation into our expression,
+
+471
+00:30:46,048 --> 00:30:47,827
+we are going to obtain this.
+
+472
+00:30:48,728 --> 00:30:51,668
+So a square second square t
+
+473
+00:30:51,668 --> 00:30:53,628
+minus a square.
+
+474
+00:30:54,208 --> 00:30:56,188
+Let's suppose that a is positive
+
+475
+00:30:56,188 --> 00:30:59,168
+and we study on some domain
+
+476
+00:30:59,168 --> 00:31:00,948
+where second is positive.
+
+477
+00:31:01,508 --> 00:31:03,088
+Okay, so we have this
+
+478
+00:31:03,088 --> 00:31:06,688
+a times second square t
+
+479
+00:31:06,688 --> 00:31:08,307
+minus one.
+
+480
+00:31:08,468 --> 00:31:09,568
+So this is nothing else
+
+481
+00:31:09,568 --> 00:31:11,327
+than tangent square t.
+
+482
+00:31:12,048 --> 00:31:15,028
+Tangent square t.
+
+483
+00:31:15,028 --> 00:31:15,908
+Sorry.
+
+484
+00:31:16,408 --> 00:31:17,988
+We study on some domain
+
+485
+00:31:17,988 --> 00:31:18,388
+where
+
+486
+00:31:18,388 --> 00:31:20,428
+tangent t is positive.
+
+487
+00:31:20,788 --> 00:31:21,088
+Okay.
+
+488
+00:31:21,408 --> 00:31:22,827
+Tangent t'nin pozitif olduğu
+
+489
+00:31:22,827 --> 00:31:23,908
+bir bölgede üzerine
+
+490
+00:31:23,908 --> 00:31:24,528
+çalışıyoruz.
+
+491
+00:31:25,208 --> 00:31:26,448
+Normalde mutlak değer
+
+492
+00:31:26,448 --> 00:31:27,668
+tangent t diye çıkar.
+
+493
+00:31:28,468 --> 00:31:29,548
+Ama böyle öyle
+
+494
+00:31:29,548 --> 00:31:30,608
+o kabul ile
+
+495
+00:31:30,608 --> 00:31:31,588
+bunun böyle olması
+
+496
+00:31:31,588 --> 00:31:32,448
+gerektiğini görüyorum.
+
+497
+00:31:32,588 --> 00:31:33,088
+Tamam mı arkadaşlar?
+
+498
+00:31:33,708 --> 00:31:33,868
+Evet.
+
+499
+00:31:34,968 --> 00:31:36,708
+Okay, taking into account this
+
+500
+00:31:36,708 --> 00:31:37,728
+fact.
+
+501
+00:31:37,728 --> 00:32:05,228
+Okay.
+
+502
+00:31:42,483 --> 00:31:43,884
+Bir dakika sonra çözelim.
+
+503
+00:31:49,748 --> 00:31:51,388
+Okay, let's solve this problem.
+
+504
+00:31:55,892 --> 00:31:57,892
+Bu bir simple bir şey.
+
+505
+00:31:57,892 --> 00:32:09,892
+Dx over x times squared 1 minus, sorry, x squared minus 1.
+
+506
+00:32:09,892 --> 00:32:16,892
+So, this is equal to arg secund x.
+
+507
+00:32:16,892 --> 00:32:20,892
+So, you can find out this by using this trigonometric substitution,
+
+508
+00:32:20,892 --> 00:32:24,892
+but you don't need to apply, okay, this trigonometric substitution.
+
+509
+00:32:24,892 --> 00:32:30,892
+We know that derivation of arg secund x is equal to 1 over x times square root of x squared minus 1.
+
+510
+00:32:30,892 --> 00:32:33,892
+Okay, so you verify this.
+
+511
+00:32:33,892 --> 00:32:35,892
+Verify this problem.
+
+512
+00:32:35,892 --> 00:32:37,892
+So, this is homework for you.
+
+513
+00:32:37,892 --> 00:32:39,892
+Let me write here.
+
+514
+00:32:39,892 --> 00:32:42,892
+So, this is homework for you.
+
+515
+00:32:42,892 --> 00:32:44,892
+Do not confuse these and these.
+
+516
+00:32:44,892 --> 00:32:49,892
+Okay, x times, look at here, 1 minus square root of 1 minus x squared.
+
+517
+00:32:49,892 --> 00:32:55,892
+For such integral problem, you need to apply sin trigonometric substitution.
+
+518
+00:32:55,892 --> 00:32:56,892
+x is equal to sine t.
+
+519
+00:32:56,892 --> 00:33:00,892
+Okay, x is equal to sine t.
+
+520
+00:33:00,892 --> 00:33:03,892
+Zor bir integral gelebilir burada arkadaşlar.
+
+521
+00:33:03,892 --> 00:33:04,892
+Ama an önce zor gelmiyor.
+
+522
+00:33:04,892 --> 00:33:05,892
+Bunu yapabilirsiniz.
+
+523
+00:33:05,892 --> 00:33:08,892
+I think you can manage to solve this problem.
+
+524
+00:33:08,892 --> 00:33:09,892
+Okay.
+
+525
+00:33:09,892 --> 00:33:14,892
+So, let me write this problem.
+
+526
+00:33:14,892 --> 00:33:15,892
+So, look at here.
+
+527
+00:33:15,892 --> 00:33:18,892
+So, if you write this.
+
+528
+00:33:18,892 --> 00:33:20,892
+Okay, so we know this.
+
+529
+00:33:20,892 --> 00:33:23,892
+So, 1 minus x square, square root of 1 minus x square.
+
+530
+00:33:23,892 --> 00:33:28,892
+So, this is easily, we know that this is arg sine x.
+
+531
+00:33:28,892 --> 00:33:29,892
+Okay.
+
+532
+00:33:29,892 --> 00:33:30,892
+But do not confuse this.
+
+533
+00:33:30,892 --> 00:33:31,892
+Look at here.
+
+534
+00:33:31,892 --> 00:33:35,892
+If you put here.
+
+535
+00:33:35,892 --> 00:33:37,892
+X square minus 1.
+
+536
+00:33:37,892 --> 00:33:40,892
+So, substitutors made this mistake, unfortunately.
+
+537
+00:33:40,892 --> 00:33:42,892
+They directly write this.
+
+538
+00:33:42,892 --> 00:33:45,892
+Substitute write here arg secant x.
+
+539
+00:33:45,892 --> 00:33:47,892
+Okay, so this is a mistake.
+
+540
+00:33:47,892 --> 00:33:54,892
+So, as you see in this case, as you see in our integral function contains square root of x square minus 1.
+
+541
+00:33:54,892 --> 00:33:57,892
+That's why it is better to do.
+
+542
+00:33:57,892 --> 00:34:01,892
+It is better to do this trigonometric substitution.
+
+543
+00:34:01,892 --> 00:34:02,892
+Second t.
+
+544
+00:34:02,892 --> 00:34:05,892
+Okay, if you do this trigonometric substitution.
+
+545
+00:34:05,892 --> 00:34:12,891
+The x is equal to second t tangent t dt.
+
+546
+00:34:12,891 --> 00:34:17,891
+When you substitute x is equal to second t into our problem.
+
+547
+00:34:17,891 --> 00:34:21,891
+The x is equal to second t tangent.
+
+548
+00:34:21,891 --> 00:34:22,891
+Sorry.
+
+549
+00:34:22,891 --> 00:34:29,891
+Tangent t dt over.
+
+550
+00:34:29,891 --> 00:34:37,891
+And if you transform this by using this, we are going to obtain tangent t.
+
+551
+00:34:37,891 --> 00:34:40,891
+In fact, so we obtain absolute tangent t.
+
+552
+00:34:40,891 --> 00:34:42,891
+If you put some bounds here.
+
+553
+00:34:42,891 --> 00:34:45,891
+So, that's why in this case, you need to put some tangent t here.
+
+554
+00:34:45,891 --> 00:34:46,891
+Okay.
+
+555
+00:34:46,891 --> 00:34:50,891
+But I do not refer to write the absolute tangent t here.
+
+556
+00:34:50,891 --> 00:34:51,891
+Okay, so that's why.
+
+557
+00:34:51,891 --> 00:34:53,891
+Let me turn back.
+
+558
+00:34:53,891 --> 00:34:54,891
+Okay, so.
+
+559
+00:34:54,891 --> 00:34:58,891
+Tangent t.
+
+560
+00:34:58,891 --> 00:35:25,891
+Okay, now.
+
+561
+00:35:07,059 --> 00:35:35,039
+So let's go on. So this and this simplify. So we got d t. So we know how to integrate this. We mentioned about this before. So in order to obtain indefinite integration of second t, so we multiply and divide by second t plus tangent t.
+
+562
+00:35:37,059 --> 00:36:02,659
+Okay, recall this case. If you say this is u and this is du, if we differentiate u, you are going to obtain du. Du over u is equal to, u over u is equal to ln absolute of second, okay, u second t plus tangent t plus c.
+
+563
+00:36:02,659 --> 00:36:12,659
+So let's consider this. So this means that cosine t is equal to 1 over x.
+
+564
+00:36:14,659 --> 00:36:17,039
+Take into account this.
+
+565
+00:36:17,039 --> 00:36:31,579
+So we have some angle t here for which cosine t 1 over x. So this distance is by pi decorum theorem x square minus 1 radical of x square minus 1.
+
+566
+00:36:31,579 --> 00:36:53,039
+Okay, now by using this triangle, so you can find out second t. So we have already second t. Second t is x plus tangent t. Tangent t opposite side over next side square root of x square minus 1 plus c.
+
+567
+00:36:53,039 --> 00:36:53,800
+Okay, okay.
+
+568
+00:36:53,800 --> 00:36:57,519
+Okay, izlenenik o için sorusu olan var mı gençler?
+
+569
+00:36:59,759 --> 00:37:00,800
+Herhalde anlaşıldı.
+
+570
+00:37:00,800 --> 00:37:30,559
+Okay.
+
+571
+00:37:05,427 --> 00:37:06,027
+Evet.
+
+572
+00:37:07,647 --> 00:37:08,788
+Let's go on.
+
+573
+00:37:19,188 --> 00:37:19,768
+ok.
+
+574
+00:37:24,724 --> 00:37:26,724
+Okay, let's try to solve this.
+
+575
+00:37:38,291 --> 00:37:40,092
+Ok, please try to solve this problem.
+
+576
+00:37:41,291 --> 00:37:42,971
+Herkes bunu çözmek için uğraşsın
+
+577
+00:37:42,971 --> 00:37:43,652
+bakayım gençler.
+
+578
+00:37:44,692 --> 00:37:46,632
+Öğrenip öğrenmediğinizi kontrol edin.
+
+579
+00:37:47,451 --> 00:37:48,431
+Pratiklik yapın.
+
+580
+00:37:48,592 --> 00:37:49,291
+Pratik kazanın.
+
+581
+00:37:49,291 --> 00:37:50,572
+Evet.
+
+582
+00:38:00,244 --> 00:38:06,204
+Okay, this is your task. Please try to find out this indefinite integration.
+
+583
+00:38:13,619 --> 00:38:15,000
+Bekliyorum arkadaşlar.
+
+584
+00:38:21,300 --> 00:38:35,800
+Herkes dönüştürsün bakalım nasıl bir trigonometrik fonksiyonun integrali problemi gelecek. Şu haliyle bir trigonometrik fonksiyona sahip değiliz. Integral fonksiyonu trigonometrik bir fonksiyon değil.
+
+585
+00:38:50,612 --> 00:38:51,032
+Evet.
+
+586
+00:39:01,588 --> 00:39:05,968
+Dikkat edin. Kare kök içinde x kare eksi 1.
+
+587
+00:39:08,008 --> 00:39:12,668
+Zihniniz karışabilir. x eşittir sinüs t dönüşümü yaparsanız hata verecektir.
+
+588
+00:39:13,188 --> 00:39:17,448
+Çünkü x eşittir sinüs t yaparsanız kare kök içinde negatif bir değer elde edeceksiniz.
+
+589
+00:39:17,807 --> 00:39:21,348
+Bu da bir çelişki meydana getirir. Çünkü biz karmaşık sayılarda çalışmıyoruz.
+
+590
+00:39:21,348 --> 00:39:23,288
+Real sayılarda çalışıyoruz.
+
+591
+00:39:23,827 --> 00:39:27,708
+x yerine sinüs t yazdığınızda bir çelişki elde edeceksiniz.
+
+592
+00:39:27,708 --> 00:39:33,108
+O yüzden x yerine sekant t dönüşümü yazmanız sizi sonuca götürecektir.
+
+593
+00:39:33,327 --> 00:39:35,068
+Sinüs t değil. Dikkat edin.
+
+594
+00:39:35,428 --> 00:39:36,988
+Yenekle karıştırıyor öğrenciler.
+
+595
+00:39:38,648 --> 00:39:43,848
+Yanlış yaparsanız, yanlış tünele girerseniz bir çelişki elde edeceğinizi biliyor olmanız lazım.
+
+596
+00:39:44,988 --> 00:39:47,648
+O yüzden yanlış yaptığınızı anlarsınız.
+
+597
+00:39:50,388 --> 00:39:51,148
+Evet.
+
+598
+00:39:53,188 --> 00:39:53,848
+Buldu mu herkes?
+
+599
+00:40:25,588 --> 00:40:27,728
+Evet, ok, let's find out together.
+
+600
+00:40:30,768 --> 00:40:32,168
+Let's make it bigger.
+
+601
+00:40:34,928 --> 00:40:39,268
+Ok, so let's do this change of variable.
+
+602
+00:40:39,388 --> 00:40:40,327
+Let's do this mistake.
+
+603
+00:40:40,327 --> 00:40:46,327
+X is equal to sine t.
+
+604
+00:40:46,488 --> 00:40:50,388
+If you do this, focus on this term.
+
+605
+00:40:50,548 --> 00:40:52,548
+If you try to transform this term,
+
+606
+00:40:52,548 --> 00:40:58,288
+so you are going to obtain sine squared t minus 1.
+
+607
+00:40:58,648 --> 00:41:08,388
+So this is equal to minus cosine squared t.
+
+608
+00:41:08,388 --> 00:41:09,968
+Oh, wow, what about this?
+
+609
+00:41:10,008 --> 00:41:10,928
+So this is positive.
+
+610
+00:41:11,388 --> 00:41:12,968
+So this is always negative.
+
+611
+00:41:13,368 --> 00:41:15,988
+So we are going to obtain some complex numbers.
+
+612
+00:41:16,948 --> 00:41:19,807
+Ok, so this means that this is not true.
+
+613
+00:41:19,807 --> 00:41:24,528
+Ok, so that's why we need to do this change of variable.
+
+614
+00:41:24,688 --> 00:41:26,548
+X is equal to
+
+615
+00:41:26,548 --> 00:41:30,748
+second t.
+
+616
+00:41:31,327 --> 00:41:32,468
+Ok, so this is the best way.
+
+617
+00:41:33,288 --> 00:41:36,347
+So dx is equal to second t
+
+618
+00:41:36,347 --> 00:41:38,868
+times tangent t
+
+619
+00:41:38,868 --> 00:41:41,347
+dt.
+
+620
+00:41:41,348 --> 00:41:51,728
+Ok, if you substitute x is sine t and dx into our problem, dx can be written in terms of second t.
+
+621
+00:41:51,728 --> 00:41:52,968
+Sorry for that.
+
+622
+00:41:52,968 --> 00:41:58,307
+Second t times tangent t times dt.
+
+623
+00:41:59,088 --> 00:42:00,548
+Ok, over.
+
+624
+00:42:00,548 --> 00:42:10,928
+So if you substitute this quantity into equal to, we are going to obtain second square t.
+
+625
+00:42:10,928 --> 00:42:16,708
+If you substitute second t into this expression, we are going to obtain tangent t.
+
+626
+00:42:16,708 --> 00:42:21,428
+Ok, now so this and this simplified, this and this simplified.
+
+627
+00:42:21,428 --> 00:42:24,288
+We have one over second t.
+
+628
+00:42:24,288 --> 00:42:27,348
+Second t is one over cosine t.
+
+629
+00:42:27,348 --> 00:42:33,428
+Ok, so if you simplify this, we got this.
+
+630
+00:42:33,428 --> 00:42:38,588
+Now we are looking for some function whose derivation is cosine t.
+
+631
+00:42:38,588 --> 00:42:41,108
+That is nothing else than sine t.
+
+632
+00:42:41,108 --> 00:42:51,908
+Ok, now so this is this implies that cosine t is equal to one over x.
+
+633
+00:42:51,908 --> 00:42:54,908
+Ok, one over x.
+
+634
+00:42:54,908 --> 00:42:58,908
+Ok, this implies that, so if you sketch some triangle here.
+
+635
+00:42:58,908 --> 00:43:08,908
+Ok, now so this implies that, so if you sketch some triangle here.
+
+636
+00:43:05,427 --> 00:43:34,047
+So, we have some angle t. Let me show this t here. And so, by using the definition of cosine, opposite side, so sorry, next side over this. And this is the length of this side. Okay, square root of x square minus 1. Is that correct? Now, so if you turn back by using this triangle, so you are going to obtain.
+
+637
+00:43:34,047 --> 00:43:44,167
+Ne geliyor arkadaşlar? Sinüs t dediğimizde hemen bulabiliriz. Yanlış yapmadık değil mi? Sinüs t. Evet.
+
+638
+00:43:49,172 --> 00:43:51,952
+So, this is the answer. The last C.
+
+639
+00:43:53,952 --> 00:43:55,831
+Evet. Var mı sorusu olan?
+
+640
+00:44:03,603 --> 00:44:04,043
+ok.
+
+641
+00:44:29,876 --> 00:44:33,276
+5-3, oh, sorry.
+
+642
+00:44:39,635 --> 00:45:08,056
+5x²-4. Okay. So as you see, this is very similar to radical of x²-a². But so in this case, coefficient of x² is not 1. But by taking some proper common factor, you can handle with this problem, I think. Or you can directly write some proper substitution method.
+
+643
+00:45:08,056 --> 00:45:13,215
+We need to put some here and second t. Okay.
+
+644
+00:45:14,596 --> 00:45:27,556
+Ne olacak arkadaşlar? Ne yapmam lazım oraya? Ki uygun ortak çarpan parantezini alabileyim. Okay. So 2 over 2 over square root of 5. Okay.
+
+645
+00:45:28,396 --> 00:45:34,916
+Yaratığımız gibi x eşittir. 2 bölü. Kare kökü 5 yazarsam. Doğru değil mi? Ne yapıyorum?
+
+646
+00:45:34,916 --> 00:45:35,916
+Orada 5 yazarsam. Orada 5 yazarsam. Orada 5 yazarsam.
+
+647
+00:45:54,420 --> 00:46:07,420
+Okay. So, let's talk about the next type of trigonometric substitution. We know that the derivation of r-tangent contains...
+
+648
+00:46:13,364 --> 00:46:28,144
+Sorry, sorry, sorry, sorry. There is no x squared. So x squared plus 1. Okay, now by using this back, okay, so consider this one.
+
+649
+00:46:32,532 --> 00:46:36,452
+As you see, we have some similarity, but there is no square root here.
+
+650
+00:46:36,652 --> 00:46:38,771
+So, but somehow we have some similarity.
+
+651
+00:46:38,771 --> 00:46:44,292
+So, if you see such expression, attention here.
+
+652
+00:46:44,771 --> 00:46:50,332
+So, it is better to do this change of variable a times tangent t.
+
+653
+00:46:50,792 --> 00:46:50,992
+Okay.
+
+654
+00:46:50,992 --> 00:47:01,072
+Now, dx is equal to a times second square t times dt.
+
+655
+00:47:01,972 --> 00:47:04,872
+Derivation of tangent t is second square t.
+
+656
+00:47:05,592 --> 00:47:12,771
+Now, when you substitute x a tangent t into this expression, we are going to obtain here.
+
+657
+00:47:12,771 --> 00:47:18,932
+So, a square tangent square t plus a square.
+
+658
+00:47:18,932 --> 00:47:23,231
+And suppose that a is positively defined.
+
+659
+00:47:23,812 --> 00:47:24,012
+Okay.
+
+660
+00:47:24,632 --> 00:47:31,112
+Now, so we got this one plus tangent square t.
+
+661
+00:47:31,532 --> 00:47:35,852
+So, this is nothing else than second square t.
+
+662
+00:47:35,852 --> 00:47:40,751
+And we suppose that second t is positively defined.
+
+663
+00:47:41,072 --> 00:47:43,512
+So, we have this second t.
+
+664
+00:47:43,892 --> 00:47:45,472
+Now, second t'in positive.
+
+665
+00:47:45,472 --> 00:47:48,711
+Anlumlu olduğu bir bölgede çalıştığımızı farz edelim.
+
+666
+00:47:49,231 --> 00:47:50,512
+Mutlak değer olarak çıkartıyoruz.
+
+667
+00:47:50,592 --> 00:47:54,652
+Ama normalde pozitif bölgede çalıştığımızı farz edersek böyle karşımıza gelir.
+
+668
+00:47:55,032 --> 00:47:55,192
+Evet.
+
+669
+00:47:56,472 --> 00:47:57,172
+Okay.
+
+670
+00:47:57,672 --> 00:48:00,731
+Now, this is simple one.
+
+671
+00:48:00,852 --> 00:48:05,292
+So, everyone can manage this.
+
+672
+00:48:05,292 --> 00:48:08,652
+So, I don't have to compute this.
+
+673
+00:48:09,492 --> 00:48:16,852
+So, if you do, if you do this change of variable a tangent t, as you see, so we are going to obtain this.
+
+674
+00:48:16,852 --> 00:48:24,072
+The x is equal to a times second square t dt over.
+
+675
+00:48:24,072 --> 00:48:27,352
+So, we are going to obtain a times, okay.
+
+676
+00:48:27,892 --> 00:48:33,532
+Second square, a square, sorry, a square times second square t.
+
+677
+00:48:33,892 --> 00:48:34,251
+Okay.
+
+678
+00:48:34,251 --> 00:48:38,472
+So, we are going to obtain 1 over a second t.
+
+679
+00:48:39,032 --> 00:48:40,172
+No, not second t.
+
+680
+00:48:40,271 --> 00:48:40,512
+Sorry.
+
+681
+00:48:41,192 --> 00:48:41,992
+Only dt.
+
+682
+00:48:42,612 --> 00:48:44,372
+We have only dt here.
+
+683
+00:48:44,372 --> 00:48:47,231
+So, 1 over a t.
+
+684
+00:48:47,612 --> 00:48:55,832
+And t is equal to, by using this, t is equal to r tangent x over a.
+
+685
+00:48:56,092 --> 00:48:56,372
+Okay.
+
+686
+00:48:57,492 --> 00:48:58,132
+Can you see that?
+
+687
+00:48:58,231 --> 00:48:59,292
+So, what about this?
+
+688
+00:49:00,112 --> 00:49:01,892
+Let me use different color here.
+
+689
+00:49:03,192 --> 00:49:04,512
+So, what about this?
+
+690
+00:49:04,692 --> 00:49:09,012
+Let's try to find out this integration.
+
+691
+00:49:09,012 --> 00:49:09,332
+Okay.
+
+692
+00:49:13,268 --> 00:49:20,608
+ok, let's try to find out this integration. Herkes bunu bulmak için uğraşsın arkadaşlar. Bekliyorum.
+
+693
+00:49:20,608 --> 00:49:27,608
+It is your task. Please try to find out this indefinite integration problem.
+
+694
+00:49:42,771 --> 00:49:43,311
+Evet.
+
+695
+00:49:44,731 --> 00:49:45,891
+Biliyorsunuz değil mi gençler?
+
+696
+00:50:22,164 --> 00:50:23,704
+Evet, bu bir o zaman.
+
+697
+00:50:35,027 --> 00:50:48,307
+ne buldunuz? Bulan var mı? Bu kadar zor olmasa gerek ya. Şimdi çoktan buluyor olmanız lazım. En fazla 20-30 saniye ile çıkması lazım.
+
+698
+00:50:54,867 --> 00:50:55,367
+Evet.
+
+699
+00:51:00,532 --> 00:51:02,532
+ok, let's find out.
+
+700
+00:51:02,532 --> 00:51:03,532
+now
+
+701
+00:51:12,788 --> 00:51:20,467
+X is equal to 8 times second square t dt.
+
+702
+00:51:21,007 --> 00:51:23,907
+When you substitute is obtained results, so we transform our problem.
+
+703
+00:51:23,907 --> 00:51:31,847
+The X is 8 times second, 8 times second square t dt over.
+
+704
+00:51:32,407 --> 00:51:37,748
+So if you transform this by using this, so we are going to obtain 8 times,
+
+705
+00:51:37,748 --> 00:51:43,407
+8 times second t.
+
+706
+00:51:43,768 --> 00:51:45,268
+Okay, so this is simplified.
+
+707
+00:51:45,268 --> 00:51:49,268
+So we have second t dt.
+
+708
+00:51:49,887 --> 00:51:57,648
+So this is nothing else than ln of absolute of second t plus tangent t.
+
+709
+00:51:58,068 --> 00:52:00,128
+Okay, and plus c.
+
+710
+00:52:00,748 --> 00:52:02,188
+So look at here.
+
+711
+00:52:02,367 --> 00:52:03,648
+So we have this.
+
+712
+00:52:03,648 --> 00:52:11,307
+So this means that we have some angle t for which tangent t x over a.
+
+713
+00:52:11,307 --> 00:52:17,228
+And this is here.
+
+714
+00:52:18,188 --> 00:52:26,467
+Second t, we know that second t is 1 over cosine t.
+
+715
+00:52:27,108 --> 00:52:30,248
+Cosine t is this.
+
+716
+00:52:30,248 --> 00:52:31,788
+Değil mi arkadaşlar?
+
+717
+00:52:34,788 --> 00:52:40,628
+Yani buradan kare kök içinde x kare artı a kare bölü a.
+
+718
+00:52:41,128 --> 00:52:42,407
+Hata yapmayalım.
+
+719
+00:52:43,048 --> 00:52:44,148
+tangent t de belli.
+
+720
+00:52:45,208 --> 00:53:06,288
+So, ln second t.
+
+721
+00:52:51,635 --> 00:52:54,976
+Radical of x plus x squared over a.
+
+722
+00:52:55,536 --> 00:52:56,635
+Tangent t.
+
+723
+00:52:57,155 --> 00:52:58,896
+Tangent t x over a.
+
+724
+00:53:00,396 --> 00:53:00,916
+Last c.
+
+725
+00:53:01,355 --> 00:53:01,635
+Okay.
+
+726
+00:53:09,076 --> 00:53:10,856
+Ok, now let's go.
+
+727
+00:53:27,891 --> 00:53:28,951
+ok, homework
+
+728
+00:53:38,164 --> 00:54:04,884
+Okay, what can we do? Okay, so positively, you are going to obtain, so let me write here, you are going to obtain this integration problem. So let's find out this. Second cube t, dt. Okay, you may use induction formula, so reduction formula, sorry, reduction formula for
+
+729
+00:54:04,884 --> 00:54:34,864
+Second and to t, dt. Okay, use reduction formula in order to find out this. Tamam arkadaşlar, indirgeme formüllerinden bahsetmiştik. Böyle bir şey var. Bakın, bu şekilde soruları çözünce aslında birden fazla konuyu öğrenmiş oluyorsunuz. Soru çözmek, böyle güzel soruları çözmek aslında birden fazla konuyu çalışmak anlamına gelir.
+
+730
+00:54:34,884 --> 00:54:38,104
+Tamam mı geçtik? Evet.
+
+731
+00:54:38,104 --> 00:54:38,224
+Evet.
+
+732
+00:54:43,347 --> 00:54:45,688
+Bir tane örnek yapalım. Herkes yapsın.
+
+733
+00:54:46,128 --> 00:54:47,847
+Exercise is about this.
+
+734
+00:54:49,248 --> 00:54:51,507
+Let's try to find out
+
+735
+00:54:51,507 --> 00:54:55,007
+this problem.
+
+736
+00:54:58,248 --> 00:55:00,228
+Radikal of 4 minus
+
+737
+00:55:00,228 --> 00:55:04,807
+Evet, herkes çözün bakalım.
+
+738
+00:55:28,275 --> 00:55:30,775
+Ne tarz bir değişken dönüşümü
+
+739
+00:55:30,775 --> 00:55:31,935
+uygulanması gerekiyor?
+
+740
+00:55:32,015 --> 00:55:34,096
+Which kind of trigonometric substitution
+
+741
+00:55:34,096 --> 00:55:37,355
+must be applied to this problem
+
+742
+00:55:37,355 --> 00:55:39,115
+in order to transform
+
+743
+00:55:39,115 --> 00:55:40,435
+this problem into
+
+744
+00:55:40,435 --> 00:55:42,935
+integration problem of some
+
+745
+00:55:42,935 --> 00:55:44,096
+trigonometric function?
+
+746
+00:55:47,195 --> 00:55:48,655
+Evet. Herkes çözsün.
+
+747
+00:55:48,715 --> 00:55:50,455
+Ana vermeyeceğim arkadaşlar. Blog yapacağım.
+
+748
+00:55:51,495 --> 00:55:52,995
+Bitireceğim. Erken bitiririm.
+
+749
+00:55:53,115 --> 00:55:54,735
+Siz sınava yönelik çalışırsınız.
+
+750
+00:55:56,635 --> 00:55:57,275
+Biraz erken
+
+751
+00:55:57,275 --> 00:55:57,955
+bitiririz.
+
+752
+00:56:02,675 --> 00:56:05,016
+Evet, yap bakayım [öğrenci].
+
+753
+00:56:06,795 --> 00:56:09,076
+Hep [öğrenci], [öğrenci].
+
+754
+00:56:09,695 --> 00:56:14,135
+Diğer arkadaşlar, çözüyor mu arkadaşlar? Çözmek için uğraşıyor musunuz gençler?
+
+755
+00:56:18,643 --> 00:56:20,403
+[öğrenci].
+
+756
+00:56:24,423 --> 00:56:25,183
+[öğrenci].
+
+757
+00:56:27,903 --> 00:56:30,863
+[öğrenci] burada bile değil. [öğrenci], çözüyor musun [öğrenci]?
+
+758
+00:56:37,811 --> 00:56:39,092
+yaren de yok.
+
+759
+00:56:43,891 --> 00:56:48,211
+Evet, [öğrenci]. Nasıl bir değişken dönüşümü yapacağız? x eşittir.
+
+760
+00:56:49,051 --> 00:56:58,511
+Sizi t bölü 2 değişken dönüşümünü yap bakayım [öğrenci]. Ne tarz bir trigonometrik fonksiyonu, integral problemi hallediyorsun? Onu gör.
+
+761
+00:57:00,631 --> 00:57:01,711
+Ne çıkıyor sonuçta?
+
+762
+00:57:25,012 --> 00:57:46,432
+Evet. Biraz bekleyelim. Herkes öğrenip öğrenmediğini teyit etsin. Lisede gösterdiler mi arkadaşlar? Müfredattan kaldırıldı mı? Bu trigonometrik dövüşümler var mı? Anlatıldı mı? Kaldırıldı hocam var. Yok değil mi? Vardı kaldırıldı. Evet, evet.
+
+763
+00:57:53,300 --> 00:57:56,320
+iyi kaldırılması daha iyi olmuş. Burada öğreniyorsunuz işte.
+
+764
+00:58:07,315 --> 00:58:10,195
+integralin mantığı anlatılıyor. Bence daha güzel.
+
+765
+00:58:11,615 --> 00:58:13,755
+Önceden direkt formüller ezberletiliyordu.
+
+766
+00:58:14,975 --> 00:58:18,655
+Ezberleyerek gidiyordunuz. Daha sonra öğrendiğinizi zannediyordunuz.
+
+767
+00:58:19,096 --> 00:58:23,755
+Sıkıntı oluyordu. Sadece işin mantığını öğrenmeniz lisede yeterli bence.
+
+768
+00:58:24,255 --> 00:58:25,155
+Daha sağlıklı.
+
+769
+00:58:45,523 --> 00:58:49,563
+Evet.
+
+770
+00:58:49,884 --> 00:58:51,163
+Şimdi, as you see,
+
+771
+00:58:51,663 --> 00:58:52,864
+we have some
+
+772
+00:58:52,864 --> 00:58:54,023
+expression
+
+773
+00:58:54,023 --> 00:58:57,123
+here.
+
+774
+00:58:58,463 --> 00:58:59,203
+Now, so actually
+
+775
+00:58:59,203 --> 00:59:00,784
+this is very similar to radical
+
+776
+00:59:00,784 --> 00:59:03,103
+of 1 minus x squared. That's why it is
+
+777
+00:59:03,103 --> 00:59:05,103
+better to do this change of
+
+778
+00:59:05,103 --> 00:59:06,864
+variable 1 over 2
+
+779
+00:59:06,864 --> 00:59:08,003
+sine
+
+780
+00:59:08,003 --> 00:59:09,543
+t.
+
+781
+00:59:10,923 --> 00:59:12,663
+This implies that
+
+782
+00:59:12,663 --> 00:59:14,943
+dx is equal to
+
+783
+00:59:14,943 --> 00:59:16,683
+1 over 2
+
+784
+00:59:16,683 --> 00:59:18,723
+cosine t dt.
+
+785
+00:59:19,003 --> 00:59:20,364
+When you substitute this,
+
+786
+00:59:23,143 --> 00:59:24,884
+dx is 1 over
+
+787
+00:59:24,884 --> 00:59:27,003
+2 cosine
+
+788
+00:59:27,003 --> 00:59:29,003
+t dt
+
+789
+00:59:29,003 --> 00:59:31,263
+over
+
+790
+00:59:31,263 --> 00:59:32,683
+x is
+
+791
+00:59:32,683 --> 00:59:34,003
+1 over 2
+
+792
+00:59:34,003 --> 00:59:35,784
+sine t.
+
+793
+00:59:36,784 --> 00:59:38,903
+And this is transformed into
+
+794
+00:59:38,903 --> 00:59:40,963
+look at here. So let me
+
+795
+00:59:40,963 --> 00:59:42,963
+here.
+
+796
+00:59:42,963 --> 00:59:44,324
+So 4 minus
+
+797
+00:59:44,324 --> 00:59:47,304
+as you see, if you substitute
+
+798
+00:59:47,304 --> 00:59:47,864
+this,
+
+799
+00:59:48,063 --> 00:59:48,983
+1 over 4,
+
+800
+00:59:49,103 --> 00:59:50,903
+4 sine
+
+801
+00:59:50,903 --> 00:59:52,663
+square t.
+
+802
+00:59:53,563 --> 00:59:54,603
+Now, these are
+
+803
+00:59:54,603 --> 00:59:55,344
+this simplified.
+
+804
+00:59:56,103 --> 00:59:56,864
+So we got
+
+805
+00:59:56,864 --> 00:59:59,003
+cosine t
+
+806
+00:59:59,003 --> 00:59:59,943
+dt
+
+807
+00:59:59,943 --> 01:00:01,143
+over
+
+808
+01:00:01,143 --> 01:00:03,284
+sine t
+
+809
+01:00:03,284 --> 01:00:04,443
+times.
+
+810
+01:00:04,443 --> 01:00:08,183
+OK, so this is 2 times.
+
+811
+01:00:08,183 --> 01:00:09,483
+Suppose that we study on some
+
+812
+01:00:09,483 --> 01:00:11,223
+positive domain for sine t.
+
+813
+01:00:11,223 --> 01:00:11,543
+OK.
+
+814
+01:00:12,143 --> 01:00:12,784
+Oh, sorry.
+
+815
+01:00:13,043 --> 01:00:14,344
+Cosine t, that must be
+
+816
+01:00:14,344 --> 01:00:15,123
+cosine t.
+
+817
+01:00:17,764 --> 01:00:18,784
+That's a mistake.
+
+818
+01:00:18,784 --> 01:00:21,304
+OK, 1 minus sine
+
+819
+01:00:21,304 --> 01:00:21,784
+square t.
+
+820
+01:00:21,784 --> 01:00:22,384
+Cosine
+
+821
+01:00:22,384 --> 01:00:23,163
+square t.
+
+822
+01:00:23,683 --> 01:00:25,023
+OK, so we got this.
+
+823
+01:00:25,663 --> 01:00:27,163
+And these are this simplified.
+
+824
+01:00:27,603 --> 01:00:28,623
+1 over 2
+
+825
+01:00:28,623 --> 01:00:31,824
+cosecant
+
+826
+01:00:31,824 --> 01:00:32,563
+t
+
+827
+01:00:32,563 --> 01:00:33,364
+dt.
+
+828
+01:00:33,884 --> 01:00:35,203
+OK, now
+
+829
+01:00:35,203 --> 01:00:37,403
+so if you multiply
+
+830
+01:00:37,403 --> 01:00:38,844
+and divide by
+
+831
+01:00:38,844 --> 01:00:40,344
+cosecant t
+
+832
+01:00:40,344 --> 01:00:40,784
+plus
+
+833
+01:00:40,784 --> 01:00:41,844
+cotangent t.
+
+834
+01:00:42,223 --> 01:00:43,583
+So we are going to obtain
+
+835
+01:00:43,583 --> 01:00:46,003
+minus 1 over 2
+
+836
+01:00:46,003 --> 01:00:47,543
+natural logarithmic
+
+837
+01:00:47,543 --> 01:00:48,923
+absolute of
+
+838
+01:00:48,923 --> 01:00:51,784
+cosecant t
+
+839
+01:00:51,784 --> 01:00:52,923
+plus
+
+840
+01:00:52,923 --> 01:00:55,603
+cotangent t.
+
+841
+01:00:55,723 --> 01:00:56,364
+OK, so there is
+
+842
+01:00:56,364 --> 01:00:56,864
+this
+
+843
+01:00:56,864 --> 01:00:58,903
+must be positive.
+
+844
+01:00:59,364 --> 01:00:59,864
+Attention
+
+845
+01:00:59,864 --> 01:01:01,163
+cotangent t.
+
+846
+01:01:03,083 --> 01:01:04,183
+OK, plus
+
+847
+01:01:04,183 --> 01:01:05,583
+the constant term.
+
+848
+01:01:06,023 --> 01:01:06,983
+OK, now
+
+849
+01:01:06,983 --> 01:01:08,083
+we need to turn back.
+
+850
+01:01:09,183 --> 01:01:10,603
+So by using
+
+851
+01:01:10,603 --> 01:01:11,423
+this
+
+852
+01:01:11,423 --> 01:01:13,643
+and
+
+853
+01:01:13,643 --> 01:01:14,243
+see
+
+854
+01:01:14,243 --> 01:01:17,723
+we have some
+
+855
+01:01:17,723 --> 01:01:18,663
+angle t
+
+856
+01:01:18,663 --> 01:01:19,543
+for which
+
+857
+01:01:19,543 --> 01:01:20,663
+sine t
+
+858
+01:01:20,663 --> 01:01:21,423
+2x
+
+859
+01:01:21,423 --> 01:01:22,203
+sine t
+
+860
+01:01:22,203 --> 01:01:22,723
+2x
+
+861
+01:01:22,723 --> 01:01:23,123
+opposite
+
+862
+01:01:23,123 --> 01:01:23,804
+side
+
+863
+01:01:23,804 --> 01:01:24,844
+is
+
+864
+01:01:24,844 --> 01:01:26,403
+because
+
+865
+01:01:26,403 --> 01:01:26,603
+in
+
+866
+01:01:26,603 --> 01:01:26,844
+the
+
+867
+01:01:26,844 --> 01:01:27,264
+star
+
+868
+01:01:27,264 --> 01:01:27,523
+would
+
+869
+01:01:27,523 --> 01:01:27,723
+on
+
+870
+01:01:27,723 --> 01:01:28,003
+no
+
+871
+01:01:28,003 --> 01:01:28,203
+you
+
+872
+01:01:28,203 --> 01:01:30,203
+be
+
+873
+01:01:30,203 --> 01:01:30,663
+exit
+
+874
+01:01:30,663 --> 01:01:31,143
+dirty
+
+875
+01:01:31,143 --> 01:01:31,523
+sky
+
+876
+01:01:31,523 --> 01:01:31,783
+no
+
+877
+01:01:31,783 --> 01:02:29,844
+OK.
+
+878
+01:02:27,956 --> 01:02:28,516
+Bakayım.
+
+879
+01:02:29,175 --> 01:02:32,115
+Sorular var mı? Onları da çözelim, bitirelim.
+
+880
+01:02:33,336 --> 01:02:37,596
+Hates final öncesi yine çıkması muhtemelen soru tarzlarını göreceğiz.
+
+881
+01:02:52,947 --> 01:02:53,947
+Okay.
+
+882
+01:02:56,547 --> 01:02:58,947
+Let's try to solve this problem.
+
+883
+01:02:59,947 --> 01:03:00,947
+x
+
+884
+01:03:01,947 --> 01:03:02,947
+over
+
+885
+01:03:02,947 --> 01:03:03,947
+square root of
+
+886
+01:03:11,092 --> 01:03:13,672
+Okay, let's try solve this problem.
+
+887
+01:03:15,492 --> 01:03:16,672
+What can we do?
+
+888
+01:03:22,452 --> 01:03:29,872
+Attention here, the argument of radical's radical symbol is a quadratic expression.
+
+889
+01:03:30,712 --> 01:03:47,232
+If the discriminant of quadratic expression is negative, so we can transform that quadratic expression into u square plus x square, which is associated with rtangent.
+
+890
+01:03:47,232 --> 01:03:58,472
+Dikkat edin, kare kök içindeki ifade, kvadratik bir ifade. Bunun diskriminantı eğer negatif ise, o zaman u kare artı akare şeklinde yazılabilir.
+
+891
+01:03:59,812 --> 01:04:05,512
+Bunun göz önünde bulunacaksınız. Zaten u kare artı akareli bir ifade görürseniz, zaten bu tancantla ilişkiliydi.
+
+892
+01:04:05,612 --> 01:04:09,252
+Daha sonra tancant trigonometrik dönüşümü yaparak problemi çözebilirsiniz.
+
+893
+01:04:09,252 --> 01:04:15,252
+İlk önce bakın, zihninizde yol haritanızı belirliyorsunuz.
+
+894
+01:04:15,252 --> 01:04:19,072
+Çözüm için yol haritası belirliyorsunuz. Ondan sonra işlemler için yola çıkıyorsunuz.
+
+895
+01:04:19,172 --> 01:04:23,812
+Doğru mu? Yol haritası, dikkat edin. Planınızı yapmadan yola çıkarsanız sıkıntı yaşarsınız.
+
+896
+01:04:24,452 --> 01:04:24,572
+Evet.
+
+897
+01:04:31,443 --> 01:04:32,443
+Anlaşıl edilme.
+
+898
+01:04:35,683 --> 01:04:36,284
+Okay.
+
+899
+01:04:37,804 --> 01:04:41,764
+So look at here, so we can express, so let me use different color here.
+
+900
+01:04:43,563 --> 01:04:45,403
+So C is discriminant of.
+
+901
+01:04:48,916 --> 01:05:14,556
+So, discriminant b squared minus 4ac, 4, a is 1, c is this. This is negative. This means that, so this expression is coming from x plus 2 squared.
+
+902
+01:05:14,556 --> 01:05:30,456
+And so we have 4 term coming from this expression and we have this 4. So we write this. So look at here. So as you see, we can write this dx over.
+
+903
+01:05:34,643 --> 01:05:36,223
+x plus 2
+
+904
+01:05:36,223 --> 01:05:38,563
+square plus
+
+905
+01:05:38,563 --> 01:05:39,903
+2 square.
+
+906
+01:05:40,543 --> 01:05:43,063
+Now, in this case
+
+907
+01:05:43,063 --> 01:05:44,523
+we can do this.
+
+908
+01:05:44,623 --> 01:05:46,823
+x plus 2 is equal to
+
+909
+01:05:46,823 --> 01:05:48,903
+2 times tangent t.
+
+910
+01:05:49,003 --> 01:05:50,643
+We do this change of variable.
+
+911
+01:05:51,263 --> 01:05:53,123
+In this case, dx
+
+912
+01:05:53,123 --> 01:05:55,083
+is equal to
+
+913
+01:05:55,083 --> 01:05:56,343
+2 times
+
+914
+01:05:56,343 --> 01:05:58,923
+second square t
+
+915
+01:05:58,923 --> 01:05:59,843
+dt.
+
+916
+01:06:00,963 --> 01:06:02,603
+Now, if you substitute
+
+917
+01:06:02,603 --> 01:06:04,403
+this, 2
+
+918
+01:06:04,403 --> 01:06:06,823
+times second square t
+
+919
+01:06:06,823 --> 01:06:07,823
+dt
+
+920
+01:06:07,823 --> 01:06:10,963
+over, so if you
+
+921
+01:06:10,963 --> 01:06:12,763
+substitute this into
+
+922
+01:06:12,763 --> 01:06:14,183
+this expression,
+
+923
+01:06:15,043 --> 01:06:16,183
+so you are going to obtain,
+
+924
+01:06:16,563 --> 01:06:18,523
+dikkat edin arkadaşlar, 2 times
+
+925
+01:06:18,523 --> 01:06:22,063
+ne geliyor oradan?
+
+926
+01:06:22,483 --> 01:06:25,023
+1 artı tangent kareti
+
+927
+01:06:25,023 --> 01:06:26,883
+t geliyor, o da second t'dir.
+
+928
+01:06:26,963 --> 01:06:27,843
+Doğru mu arkadaşlar?
+
+929
+01:06:29,843 --> 01:06:31,923
+And this and this simplify.
+
+930
+01:06:32,763 --> 01:06:33,943
+We are going to obtain
+
+931
+01:06:33,943 --> 01:06:36,203
+second t
+
+932
+01:06:36,203 --> 01:06:37,143
+dt.
+
+933
+01:06:39,143 --> 01:06:40,823
+Okay, so this is
+
+934
+01:06:40,823 --> 01:06:42,943
+natural logarithmic
+
+935
+01:06:42,943 --> 01:06:44,323
+second t
+
+936
+01:06:44,323 --> 01:06:45,423
+plus
+
+937
+01:06:45,423 --> 01:06:46,903
+tangent t.
+
+938
+01:06:47,283 --> 01:06:48,623
+So you need to turn back
+
+939
+01:06:48,623 --> 01:06:50,283
+this expression in terms of
+
+940
+01:06:50,283 --> 01:06:50,763
+x.
+
+941
+01:06:51,303 --> 01:06:52,403
+So by using
+
+942
+01:06:52,403 --> 01:06:54,503
+this transformation,
+
+943
+01:06:55,043 --> 01:06:56,283
+we can illustrate
+
+944
+01:06:56,283 --> 01:06:57,783
+some triangle here
+
+945
+01:06:57,783 --> 01:06:59,663
+where we have
+
+946
+01:06:59,663 --> 01:07:00,043
+some t
+
+947
+01:07:00,043 --> 01:07:00,663
+where we have some t
+
+948
+01:07:00,663 --> 01:07:01,523
+for which
+
+949
+01:07:01,523 --> 01:07:02,583
+tangent t
+
+950
+01:07:02,583 --> 01:07:04,423
+x plus
+
+951
+01:07:04,423 --> 01:07:05,003
+2
+
+952
+01:07:05,003 --> 01:07:06,103
+over 2
+
+953
+01:07:06,103 --> 01:07:07,523
+and this is
+
+954
+01:07:07,523 --> 01:07:08,403
+the length
+
+955
+01:07:08,403 --> 01:07:09,523
+of this second
+
+956
+01:07:09,523 --> 01:07:09,983
+line.
+
+957
+01:07:10,703 --> 01:07:11,983
+Okay, so this is
+
+958
+01:07:11,983 --> 01:07:13,483
+4 plus
+
+959
+01:07:13,483 --> 01:07:14,543
+x plus
+
+960
+01:07:14,543 --> 01:07:15,443
+2 square.
+
+961
+01:07:16,083 --> 01:07:16,223
+Okay,
+
+962
+01:07:17,223 --> 01:07:18,343
+now by using
+
+963
+01:07:18,343 --> 01:07:19,523
+this triangle,
+
+964
+01:07:20,623 --> 01:07:21,403
+you can
+
+965
+01:07:21,403 --> 01:07:21,783
+express
+
+966
+01:07:22,423 --> 01:07:24,083
+each term
+
+967
+01:07:24,083 --> 01:07:26,403
+in terms of
+
+968
+01:07:26,403 --> 01:07:55,803
+x.
+
+969
+01:07:38,036 --> 01:07:38,496
+Evet.
+
+970
+01:07:46,739 --> 01:07:59,179
+Okey, let me do this final example. Bu da son örneğimiz olsun. Erken bitirelim birazcık. Ondan sonra arkadaşlar, ders çalışın gidip sınava yönelik çalışabilirsiniz.
+
+971
+01:07:59,179 --> 01:08:06,059
+Okey, let me make it smaller. So bigger, sorry.
+
+972
+01:08:06,059 --> 01:08:32,079
+Okay, so we have this integration problem. dx over x plus 1 cube squared of x squared plus 2x minus 3.
+
+973
+01:08:32,079 --> 01:08:58,599
+Okay, so let's consider this problem. Okay, if you see that minus expression, okay, so this means that positively you are going to apply second or sine. Which one? Second t substitution or sine t. Which one? Second mu? Sinüs mü? Hangisi uygulanacak?
+
+974
+01:09:02,771 --> 01:09:04,372
+Of course, it must be second.
+
+975
+01:09:06,051 --> 01:09:15,452
+But so, first of all, first of all, you need to express quadratic expression in the form u square minus a square.
+
+976
+01:09:15,631 --> 01:09:20,572
+u is some x plus a. u is somehow x plus a.
+
+977
+01:09:21,492 --> 01:09:23,952
+That is, orada u kare x kare formatını yazacaksınız.
+
+978
+01:09:23,952 --> 01:09:26,211
+Orada u x artı a şeklinde olacak.
+
+979
+01:09:26,952 --> 01:09:27,211
+Evet.
+
+980
+01:10:00,212 --> 01:10:01,452
+Evet, buldum herkes.
+
+981
+01:10:03,052 --> 01:10:04,212
+Biraz işlem gerektiriyor.
+
+982
+01:10:04,292 --> 01:10:06,152
+Hadi beraber yapalım. Bir an önce bitirelim.
+
+983
+01:10:09,432 --> 01:10:12,212
+Now, first of all, let's try to...
+
+984
+01:10:13,212 --> 01:10:15,032
+Let me use black color.
+
+985
+01:10:15,572 --> 01:10:26,912
+First, we try to express this quadratic expression in terms of this x plus 1.
+
+986
+01:10:26,912 --> 01:10:31,912
+So, x squared plus 2x can be obtained from x plus 1 squared.
+
+987
+01:10:32,812 --> 01:10:35,032
+Okay, so we have extra term 1.
+
+988
+01:10:35,212 --> 01:10:39,032
+So, we have this minus 4 in order to obtain minus 3.
+
+989
+01:10:39,552 --> 01:10:43,692
+So, we need to subtract minus 4 from x plus 1 squared.
+
+990
+01:10:43,872 --> 01:10:52,272
+Okay, now, so this is x plus 1 squared minus 4, 2 squared.
+
+991
+01:10:52,272 --> 01:10:58,372
+Okay, now, so that's why it is better to do u squared plus u squared plus a squared.
+
+992
+01:10:58,952 --> 01:11:05,352
+So, x plus 1, that is u, is equal to 2 times second t.
+
+993
+01:11:05,492 --> 01:11:09,012
+So, okay, this is our proper transformation.
+
+994
+01:11:10,052 --> 01:11:11,972
+Now, so this means that...
+
+995
+01:11:11,972 --> 01:11:13,832
+So, okay, let me use different color.
+
+996
+01:11:13,952 --> 01:11:15,312
+So, different notation, sorry.
+
+997
+01:11:15,312 --> 01:11:18,252
+Let's use second t.
+
+998
+01:11:18,452 --> 01:11:28,732
+So, in that case, dx is equal to 2 times second t times tangent t times d theta.
+
+999
+01:11:28,892 --> 01:11:29,412
+Is that correct?
+
+1000
+01:11:29,952 --> 01:11:31,152
+Let's substitute this.
+
+1001
+01:11:31,432 --> 01:11:39,432
+Vx is equal to 2 times second theta times tangent theta times d theta.
+
+1002
+01:11:39,432 --> 01:11:41,112
+Do not forget to put d theta.
+
+1003
+01:11:41,112 --> 01:11:44,452
+over x plus 1 cubed.
+
+1004
+01:11:44,692 --> 01:11:50,052
+So, we use, we substitute this transformation into x plus 1 cubed.
+
+1005
+01:11:50,192 --> 01:11:54,952
+So, we are going to obtain 8 second cube theta times.
+
+1006
+01:11:55,072 --> 01:11:59,192
+If you substitute here, so you are going to obtain 2 times.
+
+1007
+01:11:59,512 --> 01:12:01,372
+Okay, 2 times.
+
+1008
+01:12:01,492 --> 01:12:02,412
+Ne buluyorduk arkadaşlar?
+
+1009
+01:12:02,652 --> 01:12:03,292
+tangent theta.
+
+1010
+01:12:04,292 --> 01:12:05,112
+Evet.
+
+1011
+01:12:08,979 --> 01:12:12,439
+Yeni yazarsanız bu şekilde geliyor arkadaşlar.
+
+1012
+01:12:13,439 --> 01:12:15,659
+Okay now so this and this simplify.
+
+1013
+01:12:16,199 --> 01:12:17,739
+This and this simplify.
+
+1014
+01:12:18,359 --> 01:12:21,039
+So 1 over 4, 1 over 8.
+
+1015
+01:12:22,959 --> 01:12:24,619
+1 over 8.
+
+1016
+01:12:26,399 --> 01:12:30,619
+Second 1 over, second square theta.
+
+1017
+01:12:31,679 --> 01:12:32,459
+Me theta.
+
+1018
+01:12:33,419 --> 01:12:35,339
+Okay 1 over 8.
+
+1019
+01:12:35,339 --> 01:12:41,279
+So cosine square t at t theta, t theta.
+
+1020
+01:12:41,899 --> 01:12:42,599
+Is that correct?
+
+1021
+01:12:43,239 --> 01:12:47,539
+So that is equal to 1 over 8, 1 over 2.
+
+1022
+01:12:48,059 --> 01:12:53,919
+Okay integration of 1 plus cosine 2 theta.
+
+1023
+01:12:55,139 --> 01:12:59,500
+In theta, 1 over 16.
+
+1024
+01:12:59,500 --> 01:13:05,739
+Integration of 1 theta plus 1 over 2 sine 2 theta.
+
+1025
+01:13:05,739 --> 01:13:06,519
+Okay.
+
+1026
+01:13:07,859 --> 01:13:11,739
+Bunları arkadaşlar yaptıktan sonra ne yapıyorsunuz?
+
+1027
+01:13:12,079 --> 01:13:13,739
+Şunu geliyorsunuz.
+
+1028
+01:13:13,839 --> 01:13:15,839
+By using this.
+
+1029
+01:13:15,839 --> 01:13:18,839
+Dikkat edin burdan.
+
+1030
+01:13:18,959 --> 01:13:28,019
+By using this we obtain that cosine theta is 2 over x plus 1.
+
+1031
+01:13:28,179 --> 01:13:31,899
+This implies that we have some triangle here.
+
+1032
+01:13:31,899 --> 01:13:41,459
+So we have some angle theta for which cosine theta 2 over x plus 1.
+
+1033
+01:13:41,839 --> 01:13:49,259
+But this distance is 4 minus, oh sorry, x plus 1 square minus 4.
+
+1034
+01:13:49,899 --> 01:13:55,259
+By using this triangle so you can express each term in terms of x.
+
+1035
+01:13:55,259 --> 01:13:58,339
+Okay, so constant term homework for you.
+
+1036
+01:13:58,799 --> 01:13:58,939
+Evet.
+
+1037
+01:13:59,699 --> 01:14:01,239
+Gerisini siz yaparsınız arkadaşlar.
+
+1038
+01:14:02,099 --> 01:14:05,439
+Sorunuz var mı?
+
+1039
+01:14:05,500 --> 01:14:06,239
+Is there any question?
+
+1040
+01:14:07,379 --> 01:14:08,299
+Hocam ben anlamadım.
+
+1041
+01:14:08,559 --> 01:14:10,579
+Bu konuda hiçbir şey anlamadım dediğiniz yer var mı?
+
+1042
+01:14:12,819 --> 01:14:14,359
+Herkes anlamıştır umarım.
+
+1043
+01:14:14,759 --> 01:14:15,859
+Oradasınız değil mi gençler?
+
+1044
+01:14:15,979 --> 01:14:16,779
+Herkes orada umarım.
+
+1045
+01:14:17,919 --> 01:14:19,359
+Hepinize başarılar diliyorum.
+
+1046
+01:14:20,299 --> 01:14:21,259
+Yarınki sınavda.
+
+1047
+01:14:21,899 --> 01:14:24,479
+Dediğimiz gibi arkadaşlar işin mantığını öğrenin.
+
+1048
+01:14:25,259 --> 01:14:26,759
+Belli başlı mantık var.
+
+1049
+01:14:26,879 --> 01:14:29,799
+O mantıkları öğrenirseniz yaparsınız.
+
+1050
+01:14:30,139 --> 01:14:34,079
+Tanımların arkasında yatan o şeyi ruha kavramaya çalışın.
+
+1051
+01:14:35,399 --> 01:14:38,299
+Dediğimiz gibi ağırlıklı birinci vizeden sonraki konular gelir.
+
+1052
+01:14:38,459 --> 01:14:40,879
+Ama birinci vizedeki konular da önemli.
+
+1053
+01:14:41,599 --> 01:14:42,279
+Ne yapılabilir?
+
+1054
+01:14:42,559 --> 01:14:45,759
+Birinci vizenin konularıyla ikinci vizenin konuları birleştirilebilir.
+
+1055
+01:14:46,099 --> 01:14:46,779
+Tamam mı gençler?
+
+1056
+01:14:48,000 --> 01:14:48,299
+Evet.
+
+1057
+01:14:48,559 --> 01:14:50,179
+Bir mantıkçaklarım bu kadar.
+
+1058
+01:14:51,299 --> 01:14:52,459
+Size başarılar diliyorum.
+
+1059
+01:14:52,459 --> 01:14:53,319
+Kendinize iyi bakın.
+
+1060
+01:14:53,479 --> 01:14:54,839
+Sorunuz yoksa bitirelim ders.
+
+1061
+01:15:14,323 --> 01:15:16,563
+Evet. İyi günler arkadaşlar.

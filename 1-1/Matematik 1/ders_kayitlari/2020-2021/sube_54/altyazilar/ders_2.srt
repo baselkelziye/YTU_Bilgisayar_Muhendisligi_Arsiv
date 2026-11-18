@@ -1,0 +1,4831 @@
+1
+00:00:06,932 --> 00:00:09,512
+Evet, merhaba arkadaşlar. Sesim geliyor mu?
+
+2
+00:00:38,740 --> 00:00:50,240
+Evet, seste sıkıntı yok galiba. Paylaşımımızı yapalım. Birkaç dakika daha bekleyelim arkadaşlar. Dersimizi 10 dakika fazla işleyeceğiz.
+
+3
+00:00:56,595 --> 00:00:59,055
+10 dakika geç başladığımız için arkadaşlar.
+
+4
+00:01:04,531 --> 00:01:07,471
+Birkaç dakika daha bekleyelim. Herkes katılabilirsin.
+
+5
+00:02:07,987 --> 00:02:08,548
+Evet.
+
+6
+00:02:11,888 --> 00:02:13,848
+Paylaşımımı yapıyorum arkadaşlar.
+
+7
+00:02:20,692 --> 00:02:24,692
+Tamam, benim ekranımda, benim ekranımda?
+
+8
+00:02:27,692 --> 00:02:28,692
+Evet.
+
+9
+00:02:28,692 --> 00:02:29,692
+Tamam, iyi.
+
+10
+00:02:34,292 --> 00:02:39,292
+Şimdi, let me go on introducing some topics.
+
+11
+00:02:41,292 --> 00:02:46,292
+So, today, we are going to learn one-sided limits, Sandebiç Theorem,
+
+12
+00:02:46,292 --> 00:02:50,292
+and some asymptotes, vertical asymptotes, horizontal asymptotes.
+
+13
+00:02:50,292 --> 00:02:54,292
+Okay, let's start introducing one-sided limits.
+
+14
+00:02:58,036 --> 00:02:59,036
+Evet.
+
+15
+00:02:59,036 --> 00:03:10,436
+So, as you see in this case, so we approach limit point from right hand side so consider this line x axis, so we have some point a.
+
+16
+00:03:11,695 --> 00:03:20,156
+Okay, so we approach these a from right hand side as long as you approach a from right hand side okay we.
+
+17
+00:03:20,156 --> 00:03:36,656
+You know this process by this notation okay as X calls to a from right hand side, so we investigate behavior of f of X values and see so again this must be unique number and find it number.
+
+18
+00:03:36,656 --> 00:03:58,376
+Otherwise, we cannot say okay the existence of right right side to limit okay now, this is the definition of right side to limit so similarly we can define left sided limit so if there is some finite unique number okay as long as you approach a from left hand side f of X approach these.
+
+19
+00:03:59,656 --> 00:04:01,376
+And value okay.
+
+20
+00:04:01,376 --> 00:04:01,876
+Okay.
+
+21
+00:04:04,556 --> 00:04:17,036
+Now, so, of course, there is some relation between the existence of limit and one side limits so in order to say some function has limit at the point a.
+
+22
+00:04:22,067 --> 00:04:35,267
+So, right hand side limit and left hand side limit must exist and those values must be same value, okay?
+
+23
+00:04:37,267 --> 00:04:37,767
+This.
+
+24
+00:04:40,367 --> 00:04:52,067
+Okay, consider this basic simple example. So according to this graph, okay, as x goes to 2 from left hand side, as x goes to 2 from left hand side, so in this case we approach
+
+25
+00:04:52,067 --> 00:05:01,067
+2 on the x-axis, okay, from left hand side, as you see f of x values approach 4, okay, so this is the 4.
+
+26
+00:05:02,267 --> 00:05:19,067
+So as x goes to 2 from right hand side, so in this case we approach 2 from right hand side, in this case, okay, now f g of x values approach somewhere here 1, okay.
+
+27
+00:05:19,067 --> 00:05:28,067
+Now, so this is the 1. So as you see those values are different. That's why we say that does not exist. Okay, so.
+
+28
+00:05:29,067 --> 00:05:38,067
+Does not exist. So even if one side limit exists, okay, but the limit does not exist.
+
+29
+00:05:38,067 --> 00:05:39,627
+So, let's take a look at the 1. So, let's take a look at the 1. So, let's take a look at the 1. So, let's take a look at the 1. So, let's take a look at the 1. So, let's take a look at the 1. So, let's take a look at the 1. So, let's take a look at the 1. So, let's take a look at the 1. So, let's take a look at the 1. So, let's take a look at the 1. So, let's take a look at the 1. So, let's take a look at the 1. So, let's take a look at the 1. So, let's take a look at the 1. So, let's take a look at the 1. So, let's take a look at the 1. So, let's take a look at the 1. So, let's take a look at the 1. So, let's take a look at the 1. So, let
+
+30
+00:05:44,531 --> 00:05:48,531
+Şimdi, bir örneğin bir örnek olarak.
+
+31
+00:05:48,531 --> 00:07:13,531
+Yükselen
+
+32
+00:07:05,363 --> 00:07:20,363
+Now as x goes to 100 so the answer is 20. Okay from left or right. So you are going to obtain the same value. That's why this exists. Okay. Exist.
+
+33
+00:07:23,363 --> 00:07:34,363
+Exist. Okay any question about this simple question? Okay let's see another theorem. This Sandvich theorem is very important.
+
+34
+00:07:36,363 --> 00:07:39,363
+We are going to use this theorem.
+
+35
+00:07:39,363 --> 00:08:03,363
+Currently. Okay. Now, so in order to apply Sandvich theorem, there are some conditions, preconditions. The first condition. So you have some orderings between functions. We have three functions f of x, g of x and h of x. Okay, so you have this ordering for all values of x. Okay.
+
+36
+00:08:03,363 --> 00:08:10,363
+For all values of x containing. Okay. Containing some.
+
+37
+00:08:10,363 --> 00:08:15,363
+For all x. Let me like this. So we have some.
+
+38
+00:08:15,363 --> 00:08:19,363
+interval. Okay, for all x.
+
+39
+00:08:19,363 --> 00:08:46,364
+living in this interval containing a. Okay, so you have this ordering. But second condition. So this, look at this, this is upper, this is lower bound for this g of x. So h of x is upper bound. Okay, upper bound on this interval. Can you see that? So if upper bound and lower bound approach the same value, then this g of x midterm must approach the same value.
+
+40
+00:08:46,364 --> 00:08:49,364
+At attention. Look at this graph. Okay.
+
+41
+00:08:49,364 --> 00:08:58,364
+Okay. So this is very important property. Let me introduce some examples. Okay, for example, this.
+
+42
+00:08:58,364 --> 00:09:25,364
+Consider this example. Okay, using the Sandvich theorem or squeezing theorem so we can show that these are true. So let's show that these are true. So let me let me write this so we know that so this is sine x bigger than
+
+43
+00:09:28,052 --> 00:09:35,692
+Okay, bigger than or equal to minus x, smaller than or equal to x.
+
+44
+00:09:36,392 --> 00:09:40,252
+Okay, for all x.
+
+45
+00:09:40,992 --> 00:09:45,932
+Okay, so consider this interval 0.
+
+46
+00:09:45,932 --> 00:09:49,552
+Let's choose some interval here, open interval.
+
+47
+00:09:50,412 --> 00:09:51,711
+Okay, now what?
+
+48
+00:09:51,892 --> 00:09:54,211
+So for example, minus 1 plus 1.
+
+49
+00:09:54,312 --> 00:09:57,412
+So we study on, okay, such open interval.
+
+50
+00:09:57,412 --> 00:10:02,552
+So on that open interval, we have this ordering.
+
+51
+00:10:02,932 --> 00:10:05,512
+Okay, so let me write this is i interval.
+
+52
+00:10:06,072 --> 00:10:08,072
+Minus 1 plus 1.
+
+53
+00:10:08,552 --> 00:10:11,552
+Okay, now for all x minus of i.
+
+54
+00:10:11,652 --> 00:10:12,812
+So we have this ordering.
+
+55
+00:10:13,552 --> 00:10:23,272
+Okay, now so as you see, as long as x approach 0, so this lower bound goes to 0.
+
+56
+00:10:23,272 --> 00:10:27,152
+And as long as x goes to, okay, 0.
+
+57
+00:10:27,572 --> 00:10:28,831
+So we can write this.
+
+58
+00:10:31,412 --> 00:10:37,831
+So according to Sandvich's theorem, this midterm must approach 0.
+
+59
+00:10:38,012 --> 00:10:39,272
+Okay, so this is the proof.
+
+60
+00:10:39,971 --> 00:10:42,012
+Okay, any question about this theorem?
+
+61
+00:10:42,012 --> 00:10:44,331
+Hocam bir şey sorabilir miyim?
+
+62
+00:10:45,112 --> 00:10:45,372
+Sor.
+
+63
+00:10:46,652 --> 00:10:49,192
+Sandvich's theoremindeki mantık nereden geliyor acaba?
+
+64
+00:10:50,352 --> 00:10:52,112
+Yani arada kalanın canı çıksın.
+
+65
+00:10:52,872 --> 00:10:54,091
+Let's have a call.
+
+66
+00:10:54,432 --> 00:10:55,792
+Yani şöyle arkadaşlar.
+
+67
+00:10:56,892 --> 00:10:58,231
+2 tane ne oluyor?
+
+68
+00:10:58,772 --> 00:10:59,912
+3 tane eğri var.
+
+69
+00:11:00,211 --> 00:11:01,231
+Türkçe açıklayayım.
+
+70
+00:11:01,912 --> 00:11:03,352
+3 tane eğri var.
+
+71
+00:11:03,792 --> 00:11:04,272
+Ne yapıyorsun?
+
+72
+00:11:04,272 --> 00:11:08,512
+Belli bir aralıkta şu eşitsizliğe sahibim.
+
+73
+00:11:08,632 --> 00:11:12,312
+Yani hx değerleri gx'den büyük.
+
+74
+00:11:12,451 --> 00:11:14,951
+gx değerleri de fx değerinden büyük.
+
+75
+00:11:15,091 --> 00:11:15,451
+Doğru mu?
+
+76
+00:11:16,032 --> 00:11:23,072
+Şimdi o zaman üstte kalan l'ye yaklaşırsa, altta kalan da l'ye yaklaşırsa, ikisi de sıkıştırıyor.
+
+77
+00:11:23,252 --> 00:11:24,731
+f alttan sıkıştırıyor.
+
+78
+00:11:25,192 --> 00:11:26,591
+h de üstten sıkıştırıyor.
+
+79
+00:11:26,672 --> 00:11:28,112
+O zaman arada kalan da ne olacak?
+
+80
+00:11:28,971 --> 00:11:29,692
+Anlatabiliyor muyum?
+
+81
+00:11:30,091 --> 00:11:30,632
+Evet hocam.
+
+82
+00:11:30,711 --> 00:11:31,772
+L'ye yakın sayacak.
+
+83
+00:11:31,772 --> 00:11:32,451
+Tamam mı?
+
+84
+00:11:32,512 --> 00:11:33,772
+Arada kalanın canı çıksın.
+
+85
+00:11:34,272 --> 00:11:35,091
+Teşekkürler.
+
+86
+00:11:35,231 --> 00:11:35,491
+Evet.
+
+87
+00:11:36,372 --> 00:11:37,412
+Var mı anlaşmayan bir yer?
+
+88
+00:11:41,395 --> 00:12:00,716
+Okay, let's go on. So similarly we can do, we can show that this is true by using squeezing theorem. Okay, so in order to prove that this limit true, so again we need to create some ordering, okay, for some functions.
+
+89
+00:12:00,716 --> 00:12:25,475
+So let's choose f of x absolute minus absolute x, g of x sine x, so h of x sine h of x is absolute x. So we study on this interval, attention here. So in this case, if you study on this interval, as you see, we have this ordering. So this ordering is very important.
+
+90
+00:12:25,475 --> 00:12:31,535
+Okay, this is the, this is not, okay, so this is our solution. Okay.
+
+91
+00:12:33,355 --> 00:12:40,315
+Bunu yaptık arkadaşlar. Ben x'i bir ile bir aldım. Orada çok şey yapmaz. Aynı cevap zaten. Okay, so this is item b.
+
+92
+00:12:41,395 --> 00:12:42,695
+This is item b.
+
+93
+00:12:44,295 --> 00:12:50,755
+In the item b, so we have this f of x, we have this g of x, h of x this. Okay.
+
+94
+00:12:50,755 --> 00:12:58,375
+Now in this case, so we have this ordering for item b. Look at here. So we have this ordering.
+
+95
+00:12:59,495 --> 00:13:09,815
+So look at this graph. So in this case, again, we take limits as x goes to 0, 0 goes to 0.
+
+96
+00:13:10,375 --> 00:13:14,155
+As x goes to 0, absolute x goes to 0.
+
+97
+00:13:14,635 --> 00:13:16,355
+Bir dakika arkadaşlar, şu kapıyı kapatay.
+
+98
+00:13:25,779 --> 00:13:29,480
+Kusura bakmayın, [kişisel bilgi], ses geliyor.
+
+99
+00:13:31,819 --> 00:13:33,360
+Uzaktan eğitimin handikapları.
+
+100
+00:13:34,199 --> 00:13:41,939
+Okay, now, as x goes to 0, upper bound goes to 0, lower bound goes to 0, according to sandwich theorem.
+
+101
+00:13:41,939 --> 00:13:52,799
+So this 1-cosin x, L'gc limit, as x goes to 0, 1-cosin x goes to 0, according to sandwich theorem.
+
+102
+00:13:52,799 --> 00:13:56,959
+Sandwich theorem.
+
+103
+00:13:56,959 --> 00:13:57,959
+So we can write this.
+
+104
+00:13:57,959 --> 00:14:08,959
+So when you distribute limit process to each term, so 1-limit, as x goes to 0, cosine x, 0.
+
+105
+00:14:08,959 --> 00:14:18,179
+Okay, so this constant 1, minus, okay, so we have this, this limit, as x goes to 0, cosine x.
+
+106
+00:14:18,179 --> 00:14:21,839
+So this is the proof by using sandwich theorem.
+
+107
+00:14:21,839 --> 00:14:22,519
+Okay.
+
+108
+00:14:26,580 --> 00:14:32,060
+Now let me solve another question by using squeezing theorem.
+
+109
+00:14:33,460 --> 00:14:34,620
+Look at here.
+
+110
+00:14:34,800 --> 00:14:36,240
+So we have some hypothesis.
+
+111
+00:14:36,940 --> 00:14:37,920
+Let me write this.
+
+112
+00:14:38,000 --> 00:14:39,800
+We have this information.
+
+113
+00:14:40,180 --> 00:14:42,160
+Okay, this hypothesis 1.
+
+114
+00:14:43,540 --> 00:14:45,360
+Also we have this.
+
+115
+00:14:46,139 --> 00:14:48,180
+This is hypothesis 2.
+
+116
+00:14:48,180 --> 00:14:51,580
+So this means that g of x osculates between.
+
+117
+00:14:51,580 --> 00:15:08,900
+So this condition means the graph of g of x osculates between y k line and y minus k line.
+
+118
+00:15:09,120 --> 00:15:10,460
+So okay, something like that.
+
+119
+00:15:10,940 --> 00:15:16,140
+Okay, so this is the graph of g of x.
+
+120
+00:15:16,379 --> 00:15:18,040
+Okay, so this is the second condition.
+
+121
+00:15:18,040 --> 00:15:19,820
+So we have those informations.
+
+122
+00:15:19,820 --> 00:15:22,960
+Our goal is to show that.
+
+123
+00:15:24,060 --> 00:15:29,740
+So the product of these functions limit is 0 as x goes to c.
+
+124
+00:15:30,120 --> 00:15:32,920
+Okay, now okay, so we can see solution here.
+
+125
+00:15:33,019 --> 00:15:35,500
+So by using the rule of absolute function.
+
+126
+00:15:36,019 --> 00:15:36,780
+Look at here.
+
+127
+00:15:37,060 --> 00:15:39,360
+So this is well known from high school.
+
+128
+00:15:40,000 --> 00:15:44,080
+Okay, now so we know that by using hypothesis 2.
+
+129
+00:15:44,080 --> 00:15:47,740
+we know that absolute of g of x is smaller than k.
+
+130
+00:15:48,000 --> 00:15:50,860
+So as you see, we got bigger expression.
+
+131
+00:15:51,460 --> 00:15:51,900
+The formula.
+
+132
+00:15:52,480 --> 00:15:58,140
+So in that case, so as you see, by using the properties of absolute function.
+
+133
+00:15:58,280 --> 00:15:59,420
+So we have this ordering.
+
+134
+00:15:59,700 --> 00:16:01,960
+This is necessary to apply.
+
+135
+00:16:04,540 --> 00:16:05,580
+Sandwich Theorem.
+
+136
+00:16:05,580 --> 00:16:07,420
+Look at upper bound.
+
+137
+00:16:07,860 --> 00:16:09,360
+As you see, upper bound.
+
+138
+00:16:09,900 --> 00:16:14,900
+Upper bound goes to 0 according to hypothesis 1.
+
+139
+00:16:15,440 --> 00:16:20,660
+Hypothesis 1 says that limit as x goes to c, a f of x goes to 0.
+
+140
+00:16:21,140 --> 00:16:23,680
+Now, so this goes to 0.
+
+141
+00:16:23,680 --> 00:16:27,220
+Okay, so lower bound is also goes to 0.
+
+142
+00:16:27,700 --> 00:16:32,380
+As you see, according to Sandwich Theorem, this midterm goes to 0.
+
+143
+00:16:32,500 --> 00:16:35,800
+Okay, now so this is the proof.
+
+144
+00:16:36,160 --> 00:16:37,759
+Okay, this is the proof.
+
+145
+00:16:38,940 --> 00:16:40,800
+Any way to find this solution?
+
+146
+00:16:41,080 --> 00:16:41,820
+Var mı sorusu olan?
+
+147
+00:16:42,440 --> 00:16:43,660
+Alt sınır, dikkat edin.
+
+148
+00:16:43,800 --> 00:16:46,740
+Sandwich Theorem'i uygulayabilmeniz için ne olması lazım?
+
+149
+00:16:46,840 --> 00:16:49,240
+Önce bir eşitsizlik elde etmeniz lazım.
+
+150
+00:16:49,340 --> 00:16:50,680
+Bir sıralama elde etmeniz lazım.
+
+151
+00:16:50,780 --> 00:16:52,100
+Üç fonksiyonun ondan sonra.
+
+152
+00:16:52,100 --> 00:16:53,980
+Tamam mı? Evet.
+
+153
+00:16:55,560 --> 00:16:57,140
+Burada bir tane basit bir soru.
+
+154
+00:16:57,220 --> 00:16:58,420
+Another simple question.
+
+155
+00:16:59,120 --> 00:17:03,220
+So, our goal is to find out some a constant.
+
+156
+00:17:03,780 --> 00:17:09,259
+Okay, such that this function has a limit at the point minus 1.
+
+157
+00:17:09,480 --> 00:17:15,600
+Okay, so we know that some function has limit at the point minus 1.
+
+158
+00:17:15,700 --> 00:17:21,579
+If and only if left hand side limit and right hand side limit must be same.
+
+159
+00:17:22,100 --> 00:17:31,759
+So, from the LTC, as x goes to minus 1 from left hand side, so we need to use the first rule, x square minus 5x.
+
+160
+00:17:31,759 --> 00:17:39,140
+As x goes to minus 1 from right hand side, we need to use the second rule for this piece by to find function.
+
+161
+00:17:39,519 --> 00:17:42,200
+So, as you see, we have these algebraic equations.
+
+162
+00:17:42,620 --> 00:17:45,799
+Okay, there is no indeterminate form at left hand side here.
+
+163
+00:17:45,880 --> 00:17:48,660
+And there is no indeterminate form at right hand side here.
+
+164
+00:17:48,660 --> 00:17:52,360
+So, finally, you got this algebraic simple equation.
+
+165
+00:17:52,559 --> 00:17:55,000
+Okay, so the answer is minus 30.
+
+166
+00:17:55,200 --> 00:17:56,579
+Okay, so this is simple question.
+
+167
+00:17:56,579 --> 00:18:16,579
+Okay, so this is the first rule.
+
+168
+00:18:01,044 --> 00:18:07,044
+Tamam, birçok çalışmalar var. Bu çok önemli bir formül.
+
+169
+00:18:10,355 --> 00:18:15,236
+You learned this in high school.
+
+170
+00:18:18,236 --> 00:18:20,115
+Okay, this is a very important formula.
+
+171
+00:18:20,276 --> 00:18:22,115
+You can do this without L'Hôpital.
+
+172
+00:18:22,355 --> 00:18:25,215
+Okay, without L'Hôpital, you can do this.
+
+173
+00:18:26,615 --> 00:18:27,615
+Okay, my pen.
+
+174
+00:18:27,776 --> 00:18:27,975
+Okay.
+
+175
+00:18:29,475 --> 00:18:31,175
+Without L'Hôpital, you can do this.
+
+176
+00:18:31,375 --> 00:18:32,516
+So, this is a simple one.
+
+177
+00:18:32,776 --> 00:18:37,215
+So, x to 5, 2 to 5 over x minus 2.
+
+178
+00:18:37,336 --> 00:18:39,475
+So, let me put your limit notation here.
+
+179
+00:18:39,475 --> 00:18:49,875
+So, by using limit as x goes to 2, as you see, x minus 2 times by using this factorization.
+
+180
+00:18:51,056 --> 00:18:52,915
+Dikkat edin arkadaşlar, x üzeri 4.
+
+181
+00:18:53,036 --> 00:18:53,736
+Böyle gidiyor.
+
+182
+00:18:53,855 --> 00:18:56,736
+Yaptığımızda bunları tek tek yapabilirsiniz.
+
+183
+00:18:56,955 --> 00:19:03,756
+Okay, by using this formula, you can obtain those limits.
+
+184
+00:19:03,935 --> 00:19:04,175
+Okay.
+
+185
+00:19:05,215 --> 00:19:05,816
+Dikkat edin arkadaşlar.
+
+186
+00:19:05,816 --> 00:19:08,276
+Bunlar basit olduğu için alıştırma bunlar sadece.
+
+187
+00:19:08,276 --> 00:19:09,496
+cevaplarını vermiyorum.
+
+188
+00:19:09,655 --> 00:19:10,516
+Çünkü çok basit bunlar.
+
+189
+00:19:10,635 --> 00:19:12,736
+Ama bunlarla pratik yapmış oluyorsunuz.
+
+190
+00:19:12,816 --> 00:19:12,955
+Okay.
+
+191
+00:19:13,715 --> 00:19:18,675
+Please, try to solve these problems by using this factorization formula.
+
+192
+00:19:18,756 --> 00:19:18,976
+Okay.
+
+193
+00:19:20,135 --> 00:19:21,175
+This is just practice.
+
+194
+00:19:24,336 --> 00:19:24,976
+Okay.
+
+195
+00:19:25,096 --> 00:19:26,276
+Limits involving conjugates.
+
+196
+00:19:26,996 --> 00:19:28,516
+So, let me solve one of them.
+
+197
+00:19:28,516 --> 00:19:31,455
+Let's solve this one.
+
+198
+00:19:32,615 --> 00:19:34,975
+Limit as x goes to 1.
+
+199
+00:19:35,435 --> 00:19:39,935
+x minus 1 times the conjugate of this term.
+
+200
+00:19:40,476 --> 00:19:40,735
+Okay.
+
+201
+00:19:40,735 --> 00:19:44,316
+Now, let me open parenthesis.
+
+202
+00:19:44,316 --> 00:19:48,635
+4x plus 5 square root of this term.
+
+203
+00:19:48,796 --> 00:19:50,955
+Plus 3 over.
+
+204
+00:19:51,475 --> 00:19:51,915
+Okay.
+
+205
+00:19:52,215 --> 00:19:56,776
+So, when you multiply this term by its conjugate, you are going to obtain this term.
+
+206
+00:19:56,935 --> 00:19:57,635
+A minus.
+
+207
+00:19:58,316 --> 00:20:00,115
+A square minus b square.
+
+208
+00:20:00,735 --> 00:20:04,235
+4x plus 5 minus 9.
+
+209
+00:20:04,235 --> 00:20:05,056
+Can you see that?
+
+210
+00:20:05,395 --> 00:20:07,395
+So, this and this cancel it.
+
+211
+00:20:07,536 --> 00:20:09,635
+So, we have this.
+
+212
+00:20:10,016 --> 00:20:12,375
+The answer is 1 over 4 times.
+
+213
+00:20:12,475 --> 00:20:13,536
+And x goes to 1.
+
+214
+00:20:14,036 --> 00:20:14,296
+This.
+
+215
+00:20:14,435 --> 00:20:16,096
+The answer is 3 over 2.
+
+216
+00:20:16,355 --> 00:20:16,635
+Okay.
+
+217
+00:20:16,836 --> 00:20:18,155
+Ad you see, without L'Opitas.
+
+218
+00:20:18,615 --> 00:20:21,655
+By conjugate method, you can obtain this limit.
+
+219
+00:20:23,235 --> 00:20:23,516
+Okay.
+
+220
+00:20:23,615 --> 00:20:26,135
+Similarly, you can solve this problem.
+
+221
+00:20:26,516 --> 00:20:27,076
+Multiply.
+
+222
+00:20:27,076 --> 00:20:27,996
+Okay.
+
+223
+00:20:28,076 --> 00:20:30,615
+Expand this rule by its conjugate.
+
+224
+00:20:30,976 --> 00:20:31,175
+Okay.
+
+225
+00:20:31,256 --> 00:20:33,296
+Expand this rule by its conjugate.
+
+226
+00:20:33,935 --> 00:20:34,235
+Okay.
+
+227
+00:20:34,316 --> 00:20:35,536
+Those are simple questions.
+
+228
+00:20:36,655 --> 00:20:39,536
+Sınavlarda böyle sorular arkadaşlar doğrudan böyle gelmez.
+
+229
+00:20:40,195 --> 00:20:46,895
+Sadece praktik arkadaşlar içinde barındıran bu tarz ifadeleri, çözümleri içinde barındıran sorular gelir.
+
+230
+00:20:47,056 --> 00:20:47,195
+Okay.
+
+231
+00:20:48,355 --> 00:20:51,395
+Now, infinite limits.
+
+232
+00:20:51,395 --> 00:20:51,675
+Sorry.
+
+233
+00:20:54,195 --> 00:20:55,115
+Infinite limits.
+
+234
+00:20:55,115 --> 00:20:59,135
+So, let's choose some constant limit point.
+
+235
+00:20:59,336 --> 00:21:00,215
+A is a constant.
+
+236
+00:21:00,536 --> 00:21:02,155
+Limit as x goes to A.
+
+237
+00:21:02,796 --> 00:21:04,596
+F of x goes to infinity.
+
+238
+00:21:04,755 --> 00:21:10,395
+So, as you see, as x goes to A from right-hand side, F of x go up infinitely.
+
+239
+00:21:10,955 --> 00:21:16,536
+As x goes to A from left-hand side, F of x go up infinitely.
+
+240
+00:21:16,796 --> 00:21:17,516
+So, here.
+
+241
+00:21:19,735 --> 00:21:20,796
+Now, look at here.
+
+242
+00:21:20,796 --> 00:21:26,016
+As long as you approach A, the graph of F of x looks like this vertical line.
+
+243
+00:21:26,256 --> 00:21:26,556
+Okay.
+
+244
+00:21:26,976 --> 00:21:32,476
+Similarly, if you approach A from left-hand side, its graph looks like this vertical line.
+
+245
+00:21:32,476 --> 00:21:34,695
+Okay.
+
+246
+00:21:34,695 --> 00:21:42,955
+Similarly, as long as you approach A from left-hand side, so, as you see, this graph goes down infinitely.
+
+247
+00:21:43,395 --> 00:21:45,375
+So, this graph goes down infinitely.
+
+248
+00:21:45,375 --> 00:22:00,135
+Okay.
+
+249
+00:21:49,523 --> 00:22:07,223
+So, those are simple examples. So, look at this example. Limit point is finite number 1. So, this means that limit as x goes to 1, x over x squared minus 1.
+
+250
+00:22:07,223 --> 00:22:26,763
+Okay, let me use different color here. So, 2, attention here, 2. Since 2 is even power, denominator is always positive as long as x approach 1. Okay, now as long as x approach 1, so this denominator is always approaching 1.
+
+251
+00:22:26,763 --> 00:22:50,343
+Okay, so, but what about this denominator? So, this as long as x approach 1, so this approach 0 from left or right? 0 from left or right. Okay, so this is square of this. Okay, this is always 1 over 0 plus the answer is infinite. Okay, so we can do this.
+
+252
+00:22:50,343 --> 00:23:07,423
+From left or right? This x goes to 1 means this x goes to 1 means x approach 1 from left or x goes to 1 from right. Okay, any question?
+
+253
+00:23:07,423 --> 00:23:37,403
+Okay, similarly, limit as x goes to 1, as x goes to minus 1, x over x squared minus 1 squared. Similarly, so this is minus 1. So, again, this denominator. Okay, so this is 0 plus or 0 minus square.
+
+254
+00:23:37,423 --> 00:23:57,423
+Okay, now minus 1 over 0. Okay, now minus 1 over 0. Because of this even power, this is always 0 plus. So, now answer is minus infinite. Okay, now, so we can forecast. We can predict this graph somehow. It's graph something like that.
+
+255
+00:24:00,884 --> 00:24:08,644
+So, we have some limit point x1 somewhere here. So, we have another limit point here, minus 1.
+
+256
+00:24:09,544 --> 00:24:20,584
+Okay. As long as x, as long as you approach 1 from left or right, f of x, the graph of this function, go up infinitely.
+
+257
+00:24:21,644 --> 00:24:23,044
+Something like that. Okay.
+
+258
+00:24:23,044 --> 00:24:31,483
+So, let me in a different color. As long as you approach minus 1. Okay.
+
+259
+00:24:32,784 --> 00:24:37,644
+f of x goes down infinitely. Minus infinity. Okay.
+
+260
+00:24:40,703 --> 00:24:42,743
+Any question? Zoru solan var mı?
+
+261
+00:24:52,403 --> 00:24:56,403
+Tamam, bu birbiri var.
+
+262
+00:24:56,403 --> 00:25:10,403
+Bu, bu birbiri var.
+
+263
+00:25:10,403 --> 00:25:16,403
+Tamam, bu birbiri var.
+
+264
+00:25:16,403 --> 00:25:22,403
+Tamam, şimdi hazırlayalım.
+
+265
+00:25:22,403 --> 00:25:26,403
+Tamam, bu birbiri var.
+
+266
+00:25:26,403 --> 00:25:34,403
+Bu, bu birbiri var.
+
+267
+00:25:34,403 --> 00:25:38,403
+Tamam, bu birbiri var.
+
+268
+00:25:38,403 --> 00:25:44,403
+Bu, bu birbiri var.
+
+269
+00:25:44,403 --> 00:25:48,403
+Vertical Asymptot.
+
+270
+00:25:48,403 --> 00:25:49,403
+Asymptot.
+
+271
+00:25:49,403 --> 00:25:53,403
+This means that the graph of function looks like this vertical line.
+
+272
+00:25:53,403 --> 00:25:55,403
+As long as you approach a.
+
+273
+00:25:55,403 --> 00:25:56,403
+Dikkat edin.
+
+274
+00:25:56,403 --> 00:25:59,403
+x eşittir a'ya sağ veya sol fark etmez.
+
+275
+00:25:59,403 --> 00:26:02,403
+En az bir tanesinden, bir yönden yaklaştığınızda
+
+276
+00:26:02,403 --> 00:26:06,403
+fonksiyonun grafiği eğer bir düz doğruymuş gibi davranırsa
+
+277
+00:26:06,403 --> 00:26:09,403
+yani ona benzemeye çalışırsa, asintotik davranırsa
+
+278
+00:26:09,403 --> 00:26:12,403
+o zaman o düz doğruya, dikey doğruya
+
+279
+00:26:12,403 --> 00:26:14,403
+ne yapacağız arkadaşlar?
+
+280
+00:26:14,403 --> 00:26:15,403
+Dikey Asymptot adını vereceğiz.
+
+281
+00:26:15,403 --> 00:26:17,403
+Oradaki asimtottan kasıt
+
+282
+00:26:17,403 --> 00:26:19,403
+fonksiyon asla onunla aynı değil.
+
+283
+00:26:19,403 --> 00:26:22,403
+Ama ona benzemeye çalışıyor manasında kullanılır.
+
+284
+00:26:22,403 --> 00:26:23,403
+Tamam mı arkadaşlar?
+
+285
+00:26:23,403 --> 00:26:25,403
+Dikey Asymptot'tan kasıt odur.
+
+286
+00:26:25,403 --> 00:26:26,403
+Tamam mı?
+
+287
+00:26:26,403 --> 00:26:27,403
+Evet.
+
+288
+00:26:28,403 --> 00:26:31,403
+Var mı sorusu olan Dikey Asymptot tanımı ile alakalı?
+
+289
+00:26:32,403 --> 00:26:34,403
+Sesli bağlanabilirsiniz.
+
+290
+00:26:34,403 --> 00:26:36,403
+Ben chatleri kontrol edemiyorum.
+
+291
+00:26:38,403 --> 00:26:39,403
+Evet.
+
+292
+00:26:39,403 --> 00:26:41,403
+Devam edelim.
+
+293
+00:26:41,403 --> 00:27:09,403
+Evet.
+
+294
+00:26:45,652 --> 00:26:51,211
+chatleri kontrol edemiyorum arkadaşlar. Ben ders anlatmaktan. Sesli bağlanı söyleyin bana.
+
+295
+00:26:52,011 --> 00:26:54,432
+Okey. Ne yapayım?
+
+296
+00:26:54,912 --> 00:26:55,832
+Hocam, merhaba.
+
+297
+00:26:56,231 --> 00:26:56,572
+Merhaba.
+
+298
+00:26:57,392 --> 00:27:09,011
+Benim şu anda dersle alakalı bir sorum yok ama ben başka bir şey soracağım. Ben bu dersi ikinci kez alıyorum. Yani alttan alıyorum şu anda. Daha önceden geçmiştim. Siz benim için devam zorunluluğu arıyor musunuz?
+
+299
+00:27:10,352 --> 00:27:14,692
+Yani normalde sistem devam zorunluğu istiyor. Anlatabiliyor muyum?
+
+300
+00:27:15,652 --> 00:27:26,271
+Sisteme girmen lazım. Önceden böyle bir şey yoktu. Önceden böyle bir şey yoktu. Kaldırılmıştı. Alttan alanlar için devam zorunluluğu var. Sistem bunu istiyor. Tamam mı?
+
+301
+00:27:26,771 --> 00:27:42,192
+Ama bana kalsa yani bir daha dersi dinlemen tavsiye ederim. Anlatabiliyor muyum? Ama genellikle dinlemeyenler, ikinci defa, üçüncü defa alanlar dersi geçemiyor. Yine kalıyor. Yükseltmek için alsa dahi. O yüzden dinlemenizi tavsiye ederim.
+
+302
+00:27:43,052 --> 00:27:44,112
+Tamam hocam. Sağ olun.
+
+303
+00:27:56,051 --> 00:28:26,051
+Evet, bu örneğin örneğin, bu örneğin, bu örneğin, bu örneğin, x-2'e x-1²'e x-3'e x-
+
+304
+00:28:26,051 --> 00:28:56,051
+Okay, so f of x go up infinite. Okay, f of x go up infinite because this is negative. As x goes to 1 from left and right, so x-2'e x-3'e x-
+
+305
+00:28:56,051 --> 00:29:23,891
+So we have such graph. Now similarly as x goes to 3 from right hand side, let me erase this part. As x goes to 3 right hand side, so in this case, so this is positive. Okay, as x goes to 3 from right hand side, this is also positive. Okay, so this is always positive approaching 0 plus. So this is positive.
+
+306
+00:29:23,891 --> 00:29:52,951
+Okay, so this is positive. 1 over 0 plus. Can you see that? So as you see, as x goes to 3, f of x go up infinitely. Similarly, as x goes to 3 from left hand side, we are going to obtain 1 over 0 minus. So it goes down infinitely. So as you see, so this x-3 line, x-3 line is a horizontal asymptote from left or right. Doesn't matter. Okay? Similarly, x1 is a horizontal asymptote from left or right.
+
+307
+00:29:53,891 --> 00:29:54,891
+As x-3 line is a horizontal asymptote from left or right. So this is a horizontal asymptote from left or right.
+
+308
+00:29:54,891 --> 00:30:00,891
+So this is a horizontal asymptote from left or right. So this is a horizontal asymptote from left or right.
+
+309
+00:30:00,891 --> 00:30:01,891
+So this is a horizontal asymptote from left or right. So this is a horizontal asymptote from left or right. So this is a horizontal asymptote from left or right. So this is a horizontal.
+
+310
+00:30:01,891 --> 00:30:01,961
+So this is a horizontal asymptote from left or right. So this is a horizontal asymptote from left or right. So this is a horizontal asymptote from left or right. So this is a horizontal asymptote from left or right. So this is a horizontal asymptote from left or right. So this is a horizontal asymptote from left or right. So this is a horizontal asymptote from left or right. So this is a horizontal asymptote from left or right. So this is a horizontal asymptote from left or right. So this is a horizontal asymptote from left or right. So this is a horizontal asymptote from left or right. So this is a horizontal asymptote from left or right. So this is a horizontal asymptote from left or right. So this is a horizontal asymptote from left or right. So this is a horizontal asymptote from left or right. So this is a horizontal asymptote from left or right. So this is a horizontal asymptote from left or right. So this is a horizontal asymptote from left or right. So this is a horizontal
+
+311
+00:30:09,140 --> 00:30:38,320
+Hocam. Okay. Similarly, we can investigate existence of vertical asymptote at minus 4. As x goes to minus 4 from right-hand side, we can compute. But first of all, we need to simplify this expression. So we need to factorize this expression. As you see, we have this. So we have some terms can be simplified. So after simplifying this rule, so as x goes to minus 4 from right-hand side,
+
+312
+00:30:39,140 --> 00:30:58,320
+see this is always positive. Okay. So this is always approaching 0 minus. Okay. So the answer is 1 over 0 minus or some positive constant over 0 minus approach minus infinity. Okay. That's why x minus 4 is a vertical asymptote from right. Okay.
+
+313
+00:31:07,124 --> 00:31:30,044
+Now, we need to investigate behavior of f of x. Okay, as long as x goes to infinite. But as long as x goes to infinite, if f of x approaches some finite number, so this is very important. So in that case, we say that the graph f of x looks like some horizontal line, something like that.
+
+314
+00:31:30,044 --> 00:31:53,144
+and as you see, so at infinite, at infinite. So the graph looks like this horizontal line at infinite. So this y line, y is equal to L line, is called a horizontal asymptote for f of x at infinite. Okay?
+
+315
+00:32:00,788 --> 00:32:05,268
+As you see, this horizontal asymptote may be like that.
+
+316
+00:32:05,988 --> 00:32:12,008
+As you see, this graph approach this horizontal line from below.
+
+317
+00:32:12,008 --> 00:32:18,647
+Okay, so here, so this graph approach this horizontal line here, above.
+
+318
+00:32:20,788 --> 00:32:22,587
+And look at this example.
+
+319
+00:32:23,468 --> 00:32:27,407
+So as x goes to minus infinite, let's compute this limit.
+
+320
+00:32:27,407 --> 00:32:34,188
+When you compute this limit, constant term over unbounded expression goes to 0, the answer is 2.
+
+321
+00:32:34,668 --> 00:32:41,627
+Okay, y2 line is a horizontal asymptote for this function.
+
+322
+00:32:41,867 --> 00:32:44,208
+Okay, 2 plus 10 over x square.
+
+323
+00:32:44,528 --> 00:32:48,468
+2 artı 10 bölü x kare için y eşittir 2 doğrusu bir yatay asymptottur.
+
+324
+00:32:48,468 --> 00:32:53,347
+Yani bizim fonksiyonun grafiği y eşittir 2 artı 10 bölü x kare gibi davranacak.
+
+325
+00:32:53,347 --> 00:32:57,748
+Pardon, y eşittir 2 artı 10 bölü x kare y eşittir 2 doğrusu gibi davranacak.
+
+326
+00:32:57,988 --> 00:32:58,708
+Eksi sonsuzda.
+
+327
+00:32:58,907 --> 00:33:02,448
+Bender şekilde artı sonsuzda da aynı sonucu yakalarsınız arkadaşlar.
+
+328
+00:33:02,728 --> 00:33:03,028
+Tamam mı?
+
+329
+00:33:03,748 --> 00:33:04,948
+Hocam bir şey sorabilir miyim?
+
+330
+00:33:05,248 --> 00:33:05,468
+Sor.
+
+331
+00:33:05,468 --> 00:33:14,827
+Bu 10 bölü x kare derken bu x yerine sonsuz koyduğumuz için yani paydayı sonsuzlaştırdığı için mi 0 olarak kabul ediyoruz?
+
+332
+00:33:14,867 --> 00:33:15,288
+Tabii ki.
+
+333
+00:33:15,648 --> 00:33:17,648
+10 bölü sonsuzun karesi.
+
+334
+00:33:17,708 --> 00:33:18,708
+Eksi sonsuzun karesi.
+
+335
+00:33:18,807 --> 00:33:20,768
+Sabit bölü sonlu bir değer ne olur?
+
+336
+00:33:21,188 --> 00:33:22,827
+Sabit bölü sonsuz bir değer ne olur?
+
+337
+00:33:22,887 --> 00:33:24,347
+Ya da yeterince büyük bir değer ne olur?
+
+338
+00:33:25,528 --> 00:33:26,008
+Constant.
+
+339
+00:33:28,008 --> 00:33:30,688
+Constant over sufficiently larger number.
+
+340
+00:33:31,228 --> 00:33:31,587
+Ne olur?
+
+341
+00:33:32,788 --> 00:33:33,928
+0 olarak kabul ediyoruz.
+
+342
+00:33:33,928 --> 00:33:34,827
+0'a yakınsa.
+
+343
+00:33:36,087 --> 00:33:36,528
+Anladım.
+
+344
+00:33:36,668 --> 00:33:36,827
+Tamam.
+
+345
+00:33:36,928 --> 00:33:37,387
+Teşekkür ederim.
+
+346
+00:33:37,387 --> 00:33:37,528
+Tamam.
+
+347
+00:33:38,208 --> 00:33:42,528
+Senin hesap makinen yaparken mesela biri 1 milyona bölsen ne yapar?
+
+348
+00:33:43,387 --> 00:33:47,988
+Eğer hesap makinası çok kuvvetliyse bütün virgilden sonraki bütün şeyleri verir.
+
+349
+00:33:48,347 --> 00:33:50,988
+Ama kuvvetli değilse sana direkt 0 der.
+
+350
+00:33:51,407 --> 00:33:51,788
+Doğru mu?
+
+351
+00:33:53,788 --> 00:33:54,948
+Yani 0'a yakın bir değer.
+
+352
+00:33:55,048 --> 00:33:56,067
+Ya da E'li bir şey söylüyor.
+
+353
+00:33:56,127 --> 00:33:58,488
+E üzeri işte E'li gösterimler var.
+
+354
+00:33:58,928 --> 00:34:00,288
+0'a çok yakın manasında.
+
+355
+00:34:02,627 --> 00:34:02,867
+Evet.
+
+356
+00:34:09,108 --> 00:34:10,648
+ok, let's go on.
+
+357
+00:34:21,268 --> 00:34:32,148
+As you see, as long as x approach, x goes to infinite, okay, so this approach 0 as x goes to infinite.
+
+358
+00:34:32,148 --> 00:34:41,947
+So that's why, so its graph looks like y2 line for sufficiently larger x values, okay.
+
+359
+00:34:41,947 --> 00:34:51,387
+Similarly, so its graph looks like this y2 line for sufficiently small x values, okay.
+
+360
+00:34:52,827 --> 00:35:00,507
+Now, so consider this case.
+
+361
+00:35:01,947 --> 00:35:06,987
+Now, for this case, let's investigate existence of horizontal asymptote.
+
+362
+00:35:06,987 --> 00:35:11,628
+So, in that case, we use Sandwich theorem.
+
+363
+00:35:11,628 --> 00:35:18,668
+So we know that sin x bounded by minus 1 and plus 1.
+
+364
+00:35:18,668 --> 00:35:24,748
+Okay, now we can divide both sides of this inequality by this expression.
+
+365
+00:35:24,748 --> 00:35:26,108
+So we have this.
+
+366
+00:35:26,108 --> 00:35:31,628
+As x goes to infinite, as x goes to infinite,
+
+367
+00:35:31,628 --> 00:35:59,307
+So it's graph.
+
+368
+00:35:59,307 --> 00:36:01,307
+The graph.
+
+369
+00:36:01,307 --> 00:36:04,588
+The graph of this function, something like that.
+
+370
+00:36:04,588 --> 00:36:13,307
+Okay, the graph of this 5 plus sin x over square root of x.
+
+371
+00:36:13,307 --> 00:36:27,307
+So, this is 5 plus sin x over square root of x.
+
+372
+00:36:14,195 --> 00:36:17,235
+Ok, looks like this Wi-Fi line.
+
+373
+00:36:21,523 --> 00:36:23,443
+Enikoy için sorusu olan var mı?
+
+374
+00:36:25,503 --> 00:36:27,123
+Sorusu olan yok galiba.
+
+375
+00:36:27,623 --> 00:36:28,463
+Olayı anladınız.
+
+376
+00:36:28,563 --> 00:36:30,543
+Derefin şeklini pek anlayamadım ben.
+
+377
+00:36:31,143 --> 00:36:31,943
+Neresini anlattım?
+
+378
+00:36:32,683 --> 00:36:34,023
+O dalgalanmayı.
+
+379
+00:36:35,643 --> 00:36:37,643
+Dalgalanma, sinüs nasıl bir fonksiyondu?
+
+380
+00:36:38,163 --> 00:36:39,304
+Aa evet tamam tamam.
+
+381
+00:36:39,743 --> 00:36:39,963
+Tamam.
+
+382
+00:36:40,423 --> 00:36:44,983
+Şimdi arkadaşlar bu dalgalanma, mesela trend derler ya, trend analizi.
+
+383
+00:36:46,203 --> 00:36:47,123
+Machine learning.
+
+384
+00:36:48,263 --> 00:36:49,884
+Duydunuz mu hiç machine learning diye bir şey?
+
+385
+00:36:55,219 --> 00:36:55,699
+Evet.
+
+386
+00:36:56,599 --> 00:37:17,239
+Uydunuz değil mi? Machine Learning. Machine Learning ne yapar arkadaşlar? Siz makineye bir şey öğretirsiniz. O trendleri tespit eder. Identify prediction. Tahmin vardır. Prediction trends. Tamam mı? Ondan sonra classifications.
+
+387
+00:37:17,239 --> 00:37:30,719
+Classifications. Sınıflandırma yapar verileri. Yani data mining. Data mining. Veri işleme. Veri analizi uygulamasıdır arkadaşlar.
+
+388
+00:37:31,379 --> 00:37:35,319
+Şimdi siz ne yapıyorsunuz? Bir trend belirleyeceksiniz. Mesela şöyle bir şey.
+
+389
+00:37:39,380 --> 00:37:41,380
+Tamam, bu trend.
+
+390
+00:37:43,380 --> 00:37:47,380
+Bu trendin bir periodik bir süreçte.
+
+391
+00:37:48,380 --> 00:37:49,380
+Can you see that?
+
+392
+00:37:49,380 --> 00:37:51,380
+There are some periodik bir süreçte.
+
+393
+00:37:51,380 --> 00:37:56,380
+Along this line.
+
+394
+00:37:58,380 --> 00:38:01,380
+This is something like that.
+
+395
+00:38:01,380 --> 00:38:07,380
+As you see, we have some trend line.
+
+396
+00:38:07,380 --> 00:38:08,380
+Trend line.
+
+397
+00:38:08,380 --> 00:38:13,380
+But there are some data surrounding this trend line.
+
+398
+00:38:13,380 --> 00:38:17,380
+So, some periodik functions. Can you see that?
+
+399
+00:38:17,380 --> 00:38:19,380
+Gördünüz mü? Siz makineyi eğiteceksiniz.
+
+400
+00:38:19,380 --> 00:38:24,380
+İşte o makine, o trend doğrusu etrafındaki periodik fonksiyonu tespit edecek.
+
+401
+00:38:24,380 --> 00:38:26,380
+En az hatayla.
+
+402
+00:38:26,380 --> 00:38:29,380
+İşte buna makine öğrenmesi denir. Tamam mı?
+
+403
+00:38:29,380 --> 00:38:31,380
+İleride belki kullanırsınız.
+
+404
+00:38:31,380 --> 00:38:33,380
+Ama bu şurada atlaşılır.
+
+405
+00:38:33,380 --> 00:38:35,380
+Derste böyle bir şey yok.
+
+406
+00:38:35,380 --> 00:38:37,380
+Tamam mı gençler? Evet.
+
+407
+00:38:37,380 --> 00:38:38,380
+Sadece bir girer.
+
+408
+00:38:38,380 --> 00:38:40,380
+Bir şey söyledim mi?
+
+409
+00:38:40,380 --> 00:38:44,380
+Limitte hatırladığım kadarıyla
+
+410
+00:38:44,380 --> 00:38:47,380
+böyle sinüstür, kosünüstür yazarken
+
+411
+00:38:47,380 --> 00:38:52,380
+değişkenin kat sayılarını alıp onu şey yapıyorduk.
+
+412
+00:38:52,380 --> 00:38:55,380
+Şu an tam oturtamıyorum. Göreli çok oldu da.
+
+413
+00:38:55,380 --> 00:39:00,380
+Yani şu an öğrenmiş olduk. Neyi öğrenmiş olduk?
+
+414
+00:39:00,380 --> 00:39:02,380
+Sandiviş teoremini gösterdim ben.
+
+415
+00:39:02,380 --> 00:39:04,380
+Şimdi sen o eski bilgilerini unut.
+
+416
+00:39:04,380 --> 00:39:06,380
+Hiç bilmiyormuş gibi düşün artık.
+
+417
+00:39:06,380 --> 00:39:08,380
+Sıfırdan alıp. Şu ana kadar anlattıklarımı anladın mı?
+
+418
+00:39:08,380 --> 00:39:09,380
+Hı hı hı.
+
+419
+00:39:09,380 --> 00:39:11,380
+Tamam o zaman boşver. Geçmiş bilgi.
+
+420
+00:39:11,380 --> 00:39:14,380
+Bir şeyi önerirken arkadaşlar bildiğiniz bilgileri bir kenara koyun.
+
+421
+00:39:14,380 --> 00:39:15,380
+Tamam.
+
+422
+00:39:15,380 --> 00:39:20,380
+Yoksa sizi engeller ol. Daha sonra bildikleri, öğrendiklerinizle bildiklerinizi ondan sonra birleştirin. En son.
+
+423
+00:39:20,380 --> 00:39:22,380
+Şimdi onları bir kenara bırakın.
+
+424
+00:39:22,380 --> 00:39:25,380
+Tamam hocam. Teşekkür ederim.
+
+425
+00:39:25,380 --> 00:40:38,380
+Tamam.
+
+426
+00:40:41,972 --> 00:40:52,372
+Şimdi bu, if you have some monomials with integer, ok, positive integer, even positive integer,
+
+427
+00:40:52,372 --> 00:41:01,172
+so as x goes to plus minus infinite since n is positive even integer, so x to n goes to infinite, ok?
+
+428
+00:41:02,052 --> 00:41:05,092
+Now similarly, so something like that, ok?
+
+429
+00:41:05,092 --> 00:41:14,692
+Now similarly, if you choose some positive integer but it is odd, in that case since n is odd,
+
+430
+00:41:14,692 --> 00:41:20,772
+as x goes to infinite, x to n goes to infinite, but so if you ignore this minus,
+
+431
+00:41:20,772 --> 00:41:27,732
+so as x goes to minus infinite, x to n goes to minus infinite, minus infinite times minus without infinite, ok?
+
+432
+00:41:28,211 --> 00:41:34,532
+Now, so here, something like that, so those are graphs of such functions.
+
+433
+00:41:34,532 --> 00:41:35,172
+Can you see that?
+
+434
+00:41:36,211 --> 00:41:40,852
+It goes to minus infinite, in this case as x goes to infinite,
+
+435
+00:41:41,892 --> 00:41:45,332
+x to seven goes to minus infinite, ok, goes down.
+
+436
+00:41:45,972 --> 00:41:53,492
+As x goes to infinite, x to three go up infinitely, x to five go up infinitely, ok?
+
+437
+00:41:53,492 --> 00:41:55,332
+x to seven go up infinitely.
+
+438
+00:41:59,731 --> 00:42:06,092
+Okay, let me summarize everything we have learned so far.
+
+439
+00:42:06,592 --> 00:42:11,931
+So we choose some positive integer and so consider polynomial function.
+
+440
+00:42:12,132 --> 00:42:13,992
+Otherwise, this is not polynomial function.
+
+441
+00:42:14,411 --> 00:42:16,771
+This is called a polynomial degree of n.
+
+442
+00:42:17,291 --> 00:42:22,811
+So in order to say this is a polynomial degree of n, the coefficient of leading term must be non-zero.
+
+443
+00:42:23,072 --> 00:42:25,231
+Okay, so this three condition.
+
+444
+00:42:25,231 --> 00:42:27,072
+So look at that.
+
+445
+00:42:27,072 --> 00:42:31,592
+So we focus on the leading term here, x to n.
+
+446
+00:42:31,851 --> 00:42:38,391
+As x goes to plus minus infinite, x to n goes to infinite if n is even.
+
+447
+00:42:38,612 --> 00:42:41,931
+Similarly, as x goes to infinite, x to n goes to infinite.
+
+448
+00:42:42,271 --> 00:42:46,311
+As x goes to minus infinite, x to n goes to minus infinite if n is odd.
+
+449
+00:42:46,711 --> 00:42:54,711
+Okay, now, so as x goes to plus minus infinite, this goes to, since this is some monomial,
+
+450
+00:42:54,711 --> 00:43:00,411
+1 to infinite or 1 to 1 over minus infinite, this approach 0.
+
+451
+00:43:00,572 --> 00:43:09,052
+Okay, so 1 over infinite or 1 over minus infinite approach 0 minus approach 0 plus.
+
+452
+00:43:09,052 --> 00:43:30,751
+Okay.
+
+453
+00:43:16,403 --> 00:43:27,704
+Now, so look at that. If you are given some polynomial, something like that, polynomial is the addition of many monomials, okay?
+
+454
+00:43:28,844 --> 00:43:36,364
+Now, in that case, as x goes to plus minus infinite Px, so plus infinite or minus infinite.
+
+455
+00:43:36,563 --> 00:43:42,523
+So, this depends on the degree of monomial, okay, and the sign of leading coefficient, a x.
+
+456
+00:43:42,523 --> 00:43:50,304
+So, look at this example. So, 3x to 4 minus 6x squared plus x minus 10.
+
+457
+00:43:50,543 --> 00:43:56,264
+So, first of all, we need to choose leading term. So, leading term here, 3x to 4.
+
+458
+00:43:56,384 --> 00:44:03,903
+So, you may ignore other terms. So, just focus on the leading term. Limit as x goes to infinite, 3x to 4.
+
+459
+00:44:04,324 --> 00:44:08,384
+So, we can ignore this. So, the answer is, so, infinite, okay?
+
+460
+00:44:08,384 --> 00:44:14,523
+So, this approach infinite. You can directly obtain this infinite result by ignoring other terms.
+
+461
+00:44:14,643 --> 00:44:18,324
+We just focus on leading term, okay?
+
+462
+00:44:18,784 --> 00:44:25,324
+Now, similarly, so as x goes to minus infinite, similarly, we focus on the leading term and its coefficient.
+
+463
+00:44:26,083 --> 00:44:32,603
+Okay? Now, 3x to 4, 3 times minus infinite to 4. So, this is infinite, okay?
+
+464
+00:44:32,603 --> 00:44:39,043
+Now, so consider other examples. So, we just focus on this leading term.
+
+465
+00:44:39,483 --> 00:44:45,344
+Okay? Limit as x goes to infinite. So, minus 2x to 3.
+
+466
+00:44:45,744 --> 00:44:51,903
+Okay? So, minus 2 times. So, infinite to 3. Infinite. The answer is minus infinite.
+
+467
+00:44:52,184 --> 00:44:53,463
+Can you see that? Okay?
+
+468
+00:44:53,463 --> 00:44:55,963
+Okay? Now, let's focus on this leading term.
+
+469
+00:44:56,284 --> 00:45:03,144
+So, for this limit, as x goes to minus infinite, minus 2 times x to 3.
+
+470
+00:45:03,483 --> 00:45:08,543
+Okay? Minus 2 times. Okay? Minus infinite to 3.
+
+471
+00:45:08,764 --> 00:45:10,724
+So, this is minus infinite.
+
+472
+00:45:11,324 --> 00:45:15,023
+Minus 2 times minus infinite. The answer is infinite.
+
+473
+00:45:15,224 --> 00:45:16,443
+Okay? So, this is infinite.
+
+474
+00:45:16,884 --> 00:45:18,264
+Okay? Any question?
+
+475
+00:45:20,103 --> 00:45:21,023
+Var mı soru soru?
+
+476
+00:45:21,023 --> 00:45:38,443
+Var mı soru?
+
+477
+00:45:29,780 --> 00:45:33,360
+Evet, birkaç tane şunu da vereyim, ara verelim ondan sonra değerli arkadaşlar.
+
+478
+00:45:33,660 --> 00:45:38,960
+Okay, after introducing this theorem, so let's have some break.
+
+479
+00:45:39,440 --> 00:45:41,820
+Okay, so let's investigate ant behavior.
+
+480
+00:45:41,980 --> 00:45:44,040
+Ant behavior means horizontal asymptote.
+
+481
+00:45:44,200 --> 00:45:50,840
+Okay, now you are given some rational functions, which means that so we have the quotient of two given polynomials.
+
+482
+00:45:51,120 --> 00:45:55,640
+Okay, now px and qx, q of x are polynomial functions.
+
+483
+00:45:55,640 --> 00:45:59,760
+So look at that, the coefficients of leading terms are non-zero.
+
+484
+00:46:00,440 --> 00:46:02,720
+So this is a simple one.
+
+485
+00:46:02,920 --> 00:46:06,260
+Okay, let me introduce some examples here.
+
+486
+00:46:06,800 --> 00:46:23,480
+Limit as x goes to infinite, for example, 3x2, x2 plus 2x over 4x3 plus 3x2 plus 2.
+
+487
+00:46:23,480 --> 00:46:26,880
+Okay, so this is some example for this case.
+
+488
+00:46:27,140 --> 00:46:33,300
+So as you see, degree of denominator, smaller than degree of denominator.
+
+489
+00:46:33,860 --> 00:46:34,540
+So look at that.
+
+490
+00:46:34,640 --> 00:46:39,000
+If you choose, if you take, well, you don't need to memorize this.
+
+491
+00:46:39,180 --> 00:46:40,640
+Limit as x goes to infinite.
+
+492
+00:46:40,640 --> 00:46:49,600
+If you take common factor here, x2, okay, 3 plus 2 over x.
+
+493
+00:46:51,600 --> 00:46:52,100
+Over.
+
+494
+00:46:52,600 --> 00:47:02,340
+So if you choose this x2, common factor 4x plus 3 plus 2 over x2.
+
+495
+00:47:02,340 --> 00:47:03,380
+Look at that.
+
+496
+00:47:03,420 --> 00:47:10,600
+So this common factor, this common factor, cancel, simplify.
+
+497
+00:47:11,060 --> 00:47:12,280
+You have one.
+
+498
+00:47:12,760 --> 00:47:14,680
+So this goes, and x goes to infinite.
+
+499
+00:47:14,820 --> 00:47:19,120
+This goes to zero because constant over unbounded expression.
+
+500
+00:47:19,700 --> 00:47:21,680
+Okay, so this goes to zero.
+
+501
+00:47:22,160 --> 00:47:23,640
+Okay, so this is constant.
+
+502
+00:47:23,640 --> 00:47:25,700
+So this goes to infinite.
+
+503
+00:47:26,220 --> 00:47:28,060
+Infinite plus constant infinite.
+
+504
+00:47:28,480 --> 00:47:30,640
+The answer is 3 over infinite.
+
+505
+00:47:31,660 --> 00:47:32,800
+Constant over infinite.
+
+506
+00:47:32,920 --> 00:47:33,720
+The answer is zero.
+
+507
+00:47:33,920 --> 00:47:35,260
+Okay, so this is item A.
+
+508
+00:47:35,760 --> 00:47:37,240
+Okay, you don't need to memorize this.
+
+509
+00:47:37,820 --> 00:47:39,700
+Or you may use minus infinite.
+
+510
+00:47:40,380 --> 00:47:40,539
+Okay.
+
+511
+00:47:42,060 --> 00:47:42,760
+Var mı anlaşmıyor?
+
+512
+00:47:42,760 --> 00:47:48,880
+Payın derecesi paydayan küçük olursa aslında ortak çarpan parantezini aldığımızda zaten görebiliyoruz arkadaşlar.
+
+513
+00:47:49,320 --> 00:47:50,880
+Fx sıfıra doğru yaklaşır.
+
+514
+00:47:50,980 --> 00:47:53,039
+Dolayısıyla y eşit sıfır bir yatay asımdottur.
+
+515
+00:47:53,039 --> 00:47:54,080
+Ona dikkat edin.
+
+516
+00:47:54,160 --> 00:47:54,740
+Bende şekilde.
+
+517
+00:47:55,360 --> 00:47:59,080
+Okay, if you consider converse of this expression.
+
+518
+00:47:59,620 --> 00:48:05,519
+In that case, okay, so you are going to obtain this or this depending on the coefficient of leading terms.
+
+519
+00:48:05,700 --> 00:48:08,380
+Okay, so this minus infinite or plus infinite.
+
+520
+00:48:09,180 --> 00:48:11,780
+Okay, let me introduce some example.
+
+521
+00:48:12,780 --> 00:48:15,160
+Limit as x goes to infinite.
+
+522
+00:48:15,720 --> 00:48:20,160
+4x cubed plus 3x squared plus 2 over.
+
+523
+00:48:20,160 --> 00:48:23,740
+Okay, 3x squared plus 2x.
+
+524
+00:48:23,860 --> 00:48:25,160
+So in fact, that, that, that.
+
+525
+00:48:25,260 --> 00:48:27,160
+So we are going to obtain infinite over 3.
+
+526
+00:48:28,240 --> 00:48:29,560
+Okay, the answer is infinite.
+
+527
+00:48:29,780 --> 00:48:31,320
+So we reverse their position.
+
+528
+00:48:31,760 --> 00:48:33,160
+We are going to obtain infinite.
+
+529
+00:48:34,160 --> 00:48:37,820
+Okay, so those are reverse of each other.
+
+530
+00:48:37,980 --> 00:48:39,260
+Birbirlerinin tersi arkadaşlar.
+
+531
+00:48:39,260 --> 00:48:42,539
+Item A is the reverse of item C.
+
+532
+00:48:42,960 --> 00:48:43,160
+Okay.
+
+533
+00:48:44,360 --> 00:48:57,080
+Now, if the coefficient, if degrees of nominator and denominator are same, in that case, we take the ratio of coefficients of leading terms.
+
+534
+00:48:57,080 --> 00:48:58,960
+Okay, in denominator and denominator.
+
+535
+00:48:59,460 --> 00:49:03,060
+Okay, we can, we can show some example for this.
+
+536
+00:49:07,476 --> 00:49:24,796
+Let me introduce here. Limit as x goes to infinite 3x² plus 4x plus 5 over 6x² plus 2x plus 1.
+
+537
+00:49:24,796 --> 00:49:37,496
+So if you take the common factor x², you can divide denominator by x² by x². You are going to obtain this.
+
+538
+00:49:40,195 --> 00:49:49,476
+Pay ve paydayı x² ile bölün arkadaşlar. Ya da öyle yapın. Doğru yaptım değil mi? İşlem hatası yapmayalım.
+
+539
+00:49:49,476 --> 00:50:07,175
+As you see, as long as x approach x approach infinite, this goes to 0, this approach 0, this approach 0, this approach 0.
+
+540
+00:50:07,175 --> 00:50:15,336
+The answer is 3 over 6. The answer is 1 over 2. As you see, this is item C. So item D.
+
+541
+00:50:15,336 --> 00:50:18,675
+Sorry. Can you see that?
+
+542
+00:50:19,476 --> 00:50:20,715
+So this is AM.
+
+543
+00:50:22,416 --> 00:50:23,695
+This is BM.
+
+544
+00:50:25,516 --> 00:50:26,596
+Var mı sorusu olan?
+
+545
+00:50:28,215 --> 00:50:32,416
+Sorusu olan yoksa ara verelim. Let's have a break.
+
+546
+00:50:34,115 --> 00:50:58,016
+10 dakika ara.
+
+547
+00:51:01,907 --> 00:51:13,127
+Arkadaşlar, sistem normalde 1'de başladık, 3'e kadar devam ediyor. Normalde 14.50'de bitiriyorduk. Biz tam 3'de bitireceğiz. Tamam mı arkadaşlar?
+
+548
+00:52:52,052 --> 00:52:53,052
+Evet.
+
+549
+01:00:37,619 --> 01:00:38,920
+Evet, merhaba arkadaşlar.
+
+550
+01:00:42,835 --> 01:00:44,835
+dersimizi başlatalım.
+
+551
+01:00:54,195 --> 01:00:57,395
+sesim geliyor değil mi? Sesleri sıkıntı yok galiba.
+
+552
+01:00:57,395 --> 01:00:58,415
+Geliyor geliyor hocam evet.
+
+553
+01:00:58,596 --> 01:01:02,775
+Tamam. Okey. Now, so let's see this example.
+
+554
+01:01:08,083 --> 01:01:14,303
+Şimdi bu denominiere değil, bu algebibe bir algebibe bir algebibe.
+
+555
+01:01:14,303 --> 01:01:19,083
+Yani bu konusunda, bu konusunda, bu konusunda,
+
+556
+01:01:19,083 --> 01:01:34,083
+bu konusunda, bu konusunda, bu konusunda,
+
+557
+01:01:34,083 --> 01:01:39,083
+bu konusunda, bu konusunda, bu konusunda, bu konusunda,
+
+558
+01:01:39,083 --> 01:02:01,083
+bu konusunda, bu konusunda, bu konusunda,
+
+559
+01:02:01,083 --> 01:02:04,083
+bu konusunda, bu konusunda, bu konusunda, bu konusunda,
+
+560
+01:02:04,083 --> 01:02:12,083
+bu konusunda, bu konusunda, bu konusunda, bu konusunda, bu konusunda,
+
+561
+01:02:12,083 --> 01:02:14,083
+bu konusunda, bu konusunda, bu konusunda, bu konusunda, bu konusunda, bu konusunda,
+
+562
+01:02:14,083 --> 01:02:44,083
+bu konusunda, bu konusunda, bu konusunda, bu konusunda, bu konusunda, bu konusunda, bu konusunda, bu konusunda, bu konusunda, bu konusunda, bu konusunda, bu konusunda, bu konusunda, bu konusunda, bu konusunda, bu konusunda, bu konusunda, bu konusunda, bu konusunda, bu konusunda, bu konusunda, bu konusunda, bu konusunda, bu konusunda, bu konusunda, bu konusunda, bu konusunda, bu konusunda, bu konusunda, bu konusunda, bu konusunda, bu konusunda, bu konusunda, bu konusunda, bu konusunda, bu konusunda, bu konusunda, bu konusunda, bu konusunda, bu konusunda, bu konusunda, bu konusunda, bu konusunda, bu konusunda, bu
+
+563
+01:02:44,083 --> 01:02:59,583
+so we have this, so this is minus 10, attention here because of this fact, now again this goes to 0, this goes to 0, this goes to 0, this goes to 0, this goes to 0, as x goes to minus infinity, okay, the answer is minus 2.
+
+564
+01:02:59,583 --> 01:03:21,183
+Okay, let's see, it's graph, as x goes to infinite, this graph looks like this horizontal line, y2 line, as x goes to minus infinity, this graph looks like horizontal line, minus 2 line, okay?
+
+565
+01:03:25,844 --> 01:03:30,624
+Okay, those are basic examples, simple examples.
+
+566
+01:03:30,824 --> 01:03:33,704
+So this simple, this approach for you.
+
+567
+01:03:34,184 --> 01:03:38,704
+Okay, so this goes to zero, this goes to zero, as x goes to infinite.
+
+568
+01:03:38,903 --> 01:03:40,063
+So this is five.
+
+569
+01:03:40,744 --> 01:03:43,503
+Okay, again, so look at here.
+
+570
+01:03:43,503 --> 01:03:52,043
+So in that case, so we write this 3 over x squared, 2x over x squared, 2 over x.
+
+571
+01:03:52,684 --> 01:03:54,563
+Okay, and plus four.
+
+572
+01:03:54,563 --> 01:04:04,543
+So as x goes to infinite, this goes to zero, this goes to zero, and so constant.
+
+573
+01:04:04,724 --> 01:04:05,704
+So answer is four.
+
+574
+01:04:06,304 --> 01:04:10,003
+Okay, so this goes to zero, this goes to five.
+
+575
+01:04:10,164 --> 01:04:15,903
+Okay, this is constant because, okay, now here, so we have Sandwich theorem here.
+
+576
+01:04:16,043 --> 01:04:19,304
+So we know this sine x cubed.
+
+577
+01:04:19,304 --> 01:04:25,023
+We know that that is always bigger than minus one and smaller than plus one.
+
+578
+01:04:25,344 --> 01:04:28,684
+If you take the power of this sine x cubed.
+
+579
+01:04:28,684 --> 01:04:34,043
+So power bigger than or zero.
+
+580
+01:04:34,043 --> 01:04:35,804
+Okay, so we have this.
+
+581
+01:04:36,083 --> 01:04:38,664
+So if you divide both sides.
+
+582
+01:04:38,664 --> 01:04:42,284
+Can you see that?
+
+583
+01:04:42,744 --> 01:04:43,983
+Now we have this.
+
+584
+01:04:44,483 --> 01:04:46,543
+So this is zero.
+
+585
+01:04:46,724 --> 01:04:49,543
+This goes to zero.
+
+586
+01:04:49,543 --> 01:04:51,604
+As x goes to infinite.
+
+587
+01:04:51,884 --> 01:04:54,664
+Okay, or minus infinite.
+
+588
+01:04:55,224 --> 01:04:58,244
+So according to Sandwich theorem, this goes to zero.
+
+589
+01:04:58,604 --> 01:04:59,324
+Can you see that?
+
+590
+01:04:59,704 --> 01:05:01,023
+So this goes to zero.
+
+591
+01:05:01,023 --> 01:05:02,284
+Answer is five.
+
+592
+01:05:02,284 --> 01:05:04,724
+Okay, now similarly.
+
+593
+01:05:05,583 --> 01:05:07,483
+So by using Sandwich theorem.
+
+594
+01:05:08,923 --> 01:05:10,083
+Sandwich theorem.
+
+595
+01:05:11,204 --> 01:05:12,744
+You can compute it.
+
+596
+01:05:12,804 --> 01:05:14,043
+This is homework for you.
+
+597
+01:05:15,784 --> 01:05:17,344
+Okay.
+
+598
+01:05:17,664 --> 01:05:18,264
+Similarly.
+
+599
+01:05:19,664 --> 01:05:21,063
+This must be zero.
+
+600
+01:05:21,344 --> 01:05:21,644
+Okay.
+
+601
+01:05:21,844 --> 01:05:22,824
+By Sandwich theorem.
+
+602
+01:05:24,563 --> 01:05:26,264
+Var mı başka soru soru?
+
+603
+01:05:26,264 --> 01:05:30,043
+Okay.
+
+604
+01:05:30,463 --> 01:05:32,324
+When you see such questions.
+
+605
+01:05:34,824 --> 01:05:35,624
+Okay.
+
+606
+01:05:35,744 --> 01:05:37,083
+So we divide.
+
+607
+01:05:37,684 --> 01:05:40,164
+Burada arkadaşlar x cubed parantezini alabilirsiniz.
+
+608
+01:05:41,003 --> 01:05:42,983
+4 artı 1 bölü.
+
+609
+01:05:43,443 --> 01:05:44,523
+x cubed.
+
+610
+01:05:45,604 --> 01:05:47,423
+Böyle x cubed parantezini alabilirsiniz.
+
+611
+01:05:47,884 --> 01:05:49,983
+Aşağıda x cubed parantezini aldığımızda.
+
+612
+01:05:50,583 --> 01:05:51,443
+2 artı.
+
+613
+01:05:51,523 --> 01:05:53,503
+Şurayı x cubed parantezini aldık arkadaşlar.
+
+614
+01:05:53,684 --> 01:05:55,003
+Şurası içeride.
+
+615
+01:05:55,003 --> 01:05:56,324
+Ne olur?
+
+616
+01:05:56,443 --> 01:05:57,164
+10'a 6.
+
+617
+01:05:57,523 --> 01:05:59,244
+Dışarıda zaten x cubed diye çıktı.
+
+618
+01:05:59,844 --> 01:06:01,164
+x sonsuza giderken ama.
+
+619
+01:06:01,284 --> 01:06:01,804
+Dikkat edelim.
+
+620
+01:06:02,483 --> 01:06:06,764
+x sonsuza giderken farklı.
+
+621
+01:06:07,784 --> 01:06:08,644
+Look at that.
+
+622
+01:06:08,864 --> 01:06:10,483
+As x goes to plus infinite.
+
+623
+01:06:11,124 --> 01:06:14,443
+So if you take common factor under the squared symbol.
+
+624
+01:06:14,844 --> 01:06:15,523
+x to 6.
+
+625
+01:06:15,624 --> 01:06:17,503
+You are going to obtain absolute of x cubed.
+
+626
+01:06:17,884 --> 01:06:19,443
+Since as x goes to infinite.
+
+627
+01:06:19,563 --> 01:06:22,364
+Absolute of x cubed is x cubed.
+
+628
+01:06:22,364 --> 01:06:22,664
+Okay.
+
+629
+01:06:22,804 --> 01:06:23,604
+So this is plus.
+
+630
+01:06:23,724 --> 01:06:24,324
+Not minus.
+
+631
+01:06:24,604 --> 01:06:24,724
+Okay.
+
+632
+01:06:25,003 --> 01:06:25,483
+Now.
+
+633
+01:06:25,483 --> 01:06:26,543
+1 over.
+
+634
+01:06:26,543 --> 01:06:29,104
+x to 6.
+
+635
+01:06:29,543 --> 01:06:29,804
+Okay.
+
+636
+01:06:32,124 --> 01:06:32,483
+Now.
+
+637
+01:06:32,604 --> 01:06:33,784
+So this did simplify.
+
+638
+01:06:34,563 --> 01:06:35,824
+So this goes to.
+
+639
+01:06:38,324 --> 01:06:41,983
+This goes to 0.
+
+640
+01:06:42,324 --> 01:06:43,204
+The answer is.
+
+641
+01:06:43,583 --> 01:06:44,744
+4 over.
+
+642
+01:06:45,443 --> 01:06:46,503
+2 over.
+
+643
+01:06:47,043 --> 01:06:47,604
+4.
+
+644
+01:06:48,003 --> 01:06:49,583
+The answer is 2 over 3.
+
+645
+01:06:49,583 --> 01:06:50,483
+Okay.
+
+646
+01:06:50,483 --> 01:06:51,943
+Obviously without L'Hopitas.
+
+647
+01:06:52,144 --> 01:06:52,903
+We can do that.
+
+648
+01:06:53,644 --> 01:06:53,903
+Okay.
+
+649
+01:06:54,003 --> 01:06:54,963
+Similarly you can.
+
+650
+01:06:55,644 --> 01:06:56,983
+Solve other problems.
+
+651
+01:06:58,284 --> 01:06:58,483
+Okay.
+
+652
+01:06:58,483 --> 01:06:59,523
+Inceleyin arkadaşlar.
+
+653
+01:07:02,224 --> 01:07:02,864
+Muhtemelen.
+
+654
+01:07:03,284 --> 01:07:04,204
+Ötekinde arkadaşlar.
+
+655
+01:07:05,144 --> 01:07:05,384
+Okay.
+
+656
+01:07:05,463 --> 01:07:07,543
+Possibly as x goes to minus infinite.
+
+657
+01:07:07,644 --> 01:07:08,543
+You are going to obtain.
+
+658
+01:07:08,884 --> 01:07:10,903
+4 over 2 minus 4.
+
+659
+01:07:11,463 --> 01:07:11,764
+Okay.
+
+660
+01:07:12,224 --> 01:07:14,583
+4 over 2 minus 4.
+
+661
+01:07:14,664 --> 01:07:15,764
+And for his minus 2.
+
+662
+01:07:16,164 --> 01:07:16,443
+Okay.
+
+663
+01:07:16,503 --> 01:07:18,023
+As x goes to minus infinite.
+
+664
+01:07:18,164 --> 01:07:21,304
+Possibly you are going to obtain limit as minus 2.
+
+665
+01:07:21,304 --> 01:07:21,903
+for this.
+
+666
+01:07:22,104 --> 01:07:22,344
+Okay.
+
+667
+01:07:23,423 --> 01:07:24,463
+So other ones.
+
+668
+01:07:24,563 --> 01:07:25,483
+Homework for you.
+
+669
+01:07:27,059 --> 01:07:29,059
+var mı sorusu olan?
+
+670
+01:07:29,059 --> 01:07:37,059
+Okay, in such cases, when you see such cases, so multiply its conjugate and divide by its conjugate.
+
+671
+01:07:37,059 --> 01:07:55,059
+Okay, 4x times 3x minus square root 9x square plus 1 and its conjugate 3x plus square root of 9x square plus 1 over
+
+672
+01:07:55,059 --> 01:08:00,059
+So we multiply and divide, it's conjugate.
+
+673
+01:08:04,052 --> 01:08:11,731
+Okay now manipulate on this expression a minus b times a plus b is identical to a square minus b
+
+674
+01:08:11,731 --> 01:08:16,851
+square. Okay you are going to obtain some expression something like that okay or something like that.
+
+675
+01:08:17,652 --> 01:08:26,612
+Okay now homework for you. Okay. Evet kırdüncü soru gibi sorular çıkar.
+
+676
+01:08:26,612 --> 01:08:35,332
+You may see such question in the exam. In the test exam in the multiple choice one.
+
+677
+01:08:37,891 --> 01:08:42,452
+Hepsini bileceksiniz arkadaşlar bu çıkar mı şu çıkar mı diye bir şey yok. Ben hepsini öğretiyorum.
+
+678
+01:08:43,492 --> 01:08:46,132
+Direkt çıkmaz dolaylı yoldan çıkar. Okay.
+
+679
+01:08:49,092 --> 01:08:56,452
+Horizontal and vertical as I'm taught. So let's try to solve this. Let's investigate
+
+680
+01:08:57,572 --> 01:09:03,572
+Let's investigate vertical asymptote O and horizontal asymptote O. Okay this is your test. Try to solve this.
+
+681
+01:09:05,252 --> 01:09:05,572
+Okay.
+
+682
+01:09:07,572 --> 01:09:12,851
+So given okay let me construct structural equation in the test exam.
+
+683
+01:09:14,372 --> 01:09:15,412
+Carefully listen to me.
+
+684
+01:09:16,692 --> 01:09:19,412
+Given this function f of x.
+
+685
+01:09:19,412 --> 01:09:23,492
+Then which of the following statements
+
+686
+01:09:24,931 --> 01:09:27,172
+are true? Item A
+
+687
+01:09:28,212 --> 01:09:31,492
+This function has vertical asymptote. Item B
+
+688
+01:09:31,492 --> 01:09:39,252
+This function has horizontal asymptote. Something like that. Okay. This is the structure of
+
+689
+01:09:39,252 --> 01:09:40,452
+equation
+
+690
+01:09:40,452 --> 01:09:43,891
+in the multiple choice one. Test exam.
+
+691
+01:09:43,891 --> 01:09:44,851
+Okay. Okay.
+
+692
+01:09:44,851 --> 01:09:47,811
+Okay. Dikkat edin. Test sınavında böyle sorular gelebilir.
+
+693
+01:09:48,372 --> 01:09:59,252
+Fonksiyonu verir. Bu fonksiyonla alakalı aşağıdakilerden hangileri doğrudur ya da hangisi doğrudur tarzında sorularla muhatap olabilirsiniz.
+
+694
+01:09:59,252 --> 01:10:11,092
+Evet. Yapın bakalım Melide bu soruya. Bir bakın bakalım. Bekliyorum. Önünüzde kağıt kalem olsun. Birazcık sizi artık yavaş yavaş dahil edeceğiz. Bundan sonra top sizde olacak.
+
+695
+01:10:11,092 --> 01:10:11,172
+Top sizde olacak.
+
+696
+01:10:11,172 --> 01:10:18,212
+Top sizde olacak. Konularda baya ilerledik. Biraz daha konu işleyip. Top sizde olacak.
+
+697
+01:10:18,212 --> 01:10:19,212
+Tamam. Tamam.
+
+698
+01:10:19,212 --> 01:10:19,931
+Sorusu ne şimdi?
+
+699
+01:10:21,471 --> 01:10:23,132
+Dedim ya. Soru veriliyor.
+
+700
+01:10:23,771 --> 01:10:26,092
+Yok yok. İkisi neye göre şey yapacağız?
+
+701
+01:10:26,971 --> 01:10:36,532
+Horizontal asymptote var mı yok mu? Dike asymptote var mı yok mu? Bunu inceleyeceksin. Sorusu bu. Verilen bu fonksiyonla alakalı aşağıdaki ifadelerden hangileri doğrudur?
+
+702
+01:10:37,192 --> 01:10:40,872
+Yatay asymptote vardır. Dike asymptote vardır. Doğru mu yanlış mı? Belirle.
+
+703
+01:10:41,372 --> 01:10:41,612
+Tamam.
+
+704
+01:10:41,612 --> 01:10:53,492
+Siz alıştınız tabi test sınavında. Direkt sorucuk hemen önünüze gelsin. Ben söylüyorum size. Beni dinleyin ondan sonra. Soruyu çözmeye çalışın.
+
+705
+01:11:19,828 --> 01:11:22,248
+Evet. Bekliyorum cevaplarınızı.
+
+706
+01:11:25,188 --> 01:11:27,468
+2 bölü 3 ne buldun [öğrenci]?
+
+707
+01:11:30,307 --> 01:11:34,307
+Hocam dikey asim toplulardan birini ben bir diye düşünüyorum ama.
+
+708
+01:11:34,888 --> 01:11:35,228
+Nasıl?
+
+709
+01:11:35,828 --> 01:11:38,048
+Bir olabilir mi dikeylerden biri?
+
+710
+01:11:38,807 --> 01:11:39,828
+Varsa başka bilmiyorum.
+
+711
+01:11:42,228 --> 01:11:43,068
+Evet.
+
+712
+01:11:44,488 --> 01:11:45,988
+Bakın arkadaşlar [öğrenci].
+
+713
+01:11:46,988 --> 01:11:49,228
+Dike asim totun tanımını iyi hatırla.
+
+714
+01:11:49,648 --> 01:11:51,528
+Asim tot ne manaya geliyordu [öğrenci]?
+
+715
+01:11:51,928 --> 01:11:52,928
+[öğrenci] sen de dinle.
+
+716
+01:11:53,388 --> 01:11:55,468
+Diğer arkadaşlar da dinlesin.
+
+717
+01:11:55,568 --> 01:11:58,948
+Böyle bir hata yapacağınızı bildiğim için bu soruyu yapıyorum.
+
+718
+01:12:02,408 --> 01:12:04,688
+Neden x eşittir bir asim tot?
+
+719
+01:12:05,208 --> 01:12:06,588
+Nasıl bir asim tot peki?
+
+720
+01:12:06,688 --> 01:12:08,168
+Dikey mi diyorsun x eşittir biri?
+
+721
+01:12:09,208 --> 01:12:12,248
+Dikey olabilmesi için ne olması lazımdı ilk er?
+
+722
+01:12:12,628 --> 01:12:14,528
+Hepiniz aynı hatayı yapıyorsunuz bak.
+
+723
+01:12:15,188 --> 01:12:17,807
+Kavramları iyi oturtturmanız lazım zihninizde.
+
+724
+01:12:17,807 --> 01:12:21,268
+Asim tot bir şeyin bir şeye benzemesi gibi düşünebilirsiniz.
+
+725
+01:12:21,268 --> 01:12:23,288
+Kelime anlamı olarak terminolojik olarak.
+
+726
+01:12:24,248 --> 01:12:24,668
+Tamam mı?
+
+727
+01:12:25,068 --> 01:12:34,608
+Şimdi dikey asim tot o zaman sonlu bir değere yaklaşırken fonksiyonun grafiği o dik bir doğruya benzemeye çalışacak.
+
+728
+01:12:34,728 --> 01:12:36,328
+Dik bir doğruya benzemeye çalışacak.
+
+729
+01:12:36,328 --> 01:12:37,548
+Yani onu kesmeyecek.
+
+730
+01:12:37,968 --> 01:12:39,208
+Asla onu kesmeyecek.
+
+731
+01:12:39,628 --> 01:12:40,348
+Anlatabiliyor muyum?
+
+732
+01:12:41,708 --> 01:12:43,948
+Böyle davranması lazım.
+
+733
+01:12:44,348 --> 01:12:46,748
+Yatay esim tot da siz ne yapacaksınız?
+
+734
+01:12:47,208 --> 01:12:58,268
+x eksen üzerinde yeterince sağa veya sola ilerlediğinizde fonksiyonunuzun grafiği yatay bir doğruymuş gibi davranırsa o zaman yatay esim tot var deriz.
+
+735
+01:12:58,268 --> 01:13:00,488
+Yani kavramsal olarak bu.
+
+736
+01:13:01,028 --> 01:13:03,248
+Ama biz bunu matematiğsel olarak ne yapıyoruz?
+
+737
+01:13:03,328 --> 01:13:04,928
+Limitle belirliyoruz.
+
+738
+01:13:05,868 --> 01:13:08,048
+Evet dikleşip sonsuza gidecek.
+
+739
+01:13:08,828 --> 01:13:09,648
+Eksi sonsuza gidecek.
+
+740
+01:13:09,688 --> 01:13:11,888
+Ya yukarı çıkacak ya aşağı doğru inecek.
+
+741
+01:13:13,168 --> 01:13:14,328
+Sonsuzdan kastımız o.
+
+742
+01:13:14,328 --> 01:13:25,788
+x eşittir 1'e yaklaşırken fonksiyon x eşittir 1 doğrusu gibi davranması demek ona yaklaşırken yukarıya doğru sıçraması veya aşağı doğru inmesi.
+
+743
+01:13:25,908 --> 01:13:28,248
+Yukarıya doğru tırmanması veya aşağı doğru inmesi.
+
+744
+01:13:29,328 --> 01:13:29,528
+Evet.
+
+745
+01:13:31,008 --> 01:13:31,628
+Oluyor mu peki?
+
+746
+01:13:31,688 --> 01:13:35,188
+Yüce eşittir 1'e yaklaşırken bulduğunuz cevap sonsuz veya eksi sonsuz mu oluyor?
+
+747
+01:13:35,848 --> 01:13:36,988
+Hocam bir şey sorabilir miyim?
+
+748
+01:13:38,568 --> 01:13:43,168
+Dike asim tot olması için belirsizlik olması da sağlamıyor mu bu şartı?
+
+749
+01:13:43,168 --> 01:13:46,708
+Yani mesela 0 bölü 0 olsa orada da asim tot var diyemez mi?
+
+750
+01:13:46,928 --> 01:13:51,208
+Belirsizlik adı üzerinde belirsizlik işte onun açıklığa kavuşturman lazım.
+
+751
+01:13:51,328 --> 01:13:52,408
+Limitini hesaplayacaksın.
+
+752
+01:13:52,608 --> 01:13:54,128
+Var mı yok mu oradan göreceksin.
+
+753
+01:13:56,508 --> 01:13:56,728
+Tamam.
+
+754
+01:14:00,048 --> 01:14:00,688
+Evet.
+
+755
+01:14:01,548 --> 01:14:03,788
+Bak herkes eşittir 1'e dike asim tot demiş.
+
+756
+01:14:04,468 --> 01:14:06,148
+Bakalım gerçekten dike asim tot mu?
+
+757
+01:14:07,528 --> 01:14:08,168
+Okey.
+
+758
+01:14:08,288 --> 01:14:10,268
+Let's investigate vertical asim tot.
+
+759
+01:14:10,948 --> 01:14:13,148
+Existence of vertical asim tot for this limit.
+
+760
+01:14:13,168 --> 01:14:17,888
+As x goes to 1 from left or right.
+
+761
+01:14:18,468 --> 01:14:20,148
+Let me write this.
+
+762
+01:14:20,768 --> 01:14:33,128
+X2 plus 2x plus 6 minus 3 over x minus 1.
+
+763
+01:14:33,128 --> 01:14:34,228
+So attention.
+
+764
+01:14:34,388 --> 01:14:37,828
+As x goes to 1, you are going to obtain indeterminant form.
+
+765
+01:14:38,468 --> 01:14:39,248
+0 over 0.
+
+766
+01:14:39,248 --> 01:14:44,788
+But in order to escape from this indeterminant form.
+
+767
+01:14:44,788 --> 01:14:48,328
+So we multiply and divide its conjugate.
+
+768
+01:14:48,328 --> 01:14:48,928
+8.
+
+769
+01:14:48,928 --> 01:14:50,428
+9.
+
+770
+01:14:50,428 --> 01:15:10,128
+10.
+
+771
+01:15:16,692 --> 01:15:20,931
+Okay, so this limit problem is equivalent to formal one.
+
+772
+01:15:23,731 --> 01:15:32,051
+Let me do this step by step. a minus b times a plus b is identical to a square minus b square. So we have this.
+
+773
+01:15:40,884 --> 01:15:49,823
+uzun uzun yapıyorum ben. Şimdi test sınav olsa bu kadar uzun uzun yapmam. Siz anlayın bütün adımları, işlemleri, kalem bazen.
+
+774
+01:15:51,224 --> 01:16:06,363
+OK. So, we have this. So, this is minus, minus three. So, when you factorize this, you are going to obtain,
+
+775
+01:16:06,363 --> 01:16:14,524
+let me use a different color, you are going to obtain, x minus one.
+
+776
+01:16:14,524 --> 01:16:14,564
+x minus one.
+
+777
+01:16:18,452 --> 01:16:22,891
+x x minus
+
+778
+01:16:22,891 --> 01:16:26,891
+ne geldi arkadaşlar?
+
+779
+01:16:27,811 --> 01:16:28,771
+artı 3 mu geliyor?
+
+780
+01:16:29,972 --> 01:16:31,472
+yok, tam tersi.
+
+781
+01:16:32,472 --> 01:16:33,612
+evet, doğru.
+
+782
+01:16:34,092 --> 01:16:35,492
+x artı 3 geliyor.
+
+783
+01:16:35,492 --> 01:16:36,372
+Okey.
+
+784
+01:16:41,555 --> 01:16:45,555
+Limit as x goes to 1, x plus 3 over...
+
+785
+01:16:50,963 --> 01:17:00,823
+x bire giderken ne gelir arkadaşlar? 4 buradan. Buradan ne geliyor? 8, 3, 4 bölü 6, 2 bölü 3 mü geldi?
+
+786
+01:17:02,743 --> 01:17:03,083
+Okey.
+
+787
+01:17:04,764 --> 01:17:08,283
+So, which of the following statements true? Item A.
+
+788
+01:17:13,140 --> 01:17:15,140
+vertical asimptone. Is that correct?
+
+789
+01:17:19,347 --> 01:17:20,547
+Doğru mu bu arkadaşlar?
+
+790
+01:17:23,247 --> 01:17:25,327
+No? Okay. Good.
+
+791
+01:17:27,847 --> 01:17:29,087
+Second statement.
+
+792
+01:17:35,155 --> 01:17:37,155
+vertikal asimptone. Is that correct?
+
+793
+01:17:42,452 --> 01:17:53,792
+No, this is not true. This is false. False. False. Item 3.
+
+794
+01:17:58,131 --> 01:18:03,131
+Let me use blue color again. Item 3.
+
+795
+01:18:09,140 --> 01:18:10,600
+horizontal asymptote.
+
+796
+01:18:12,440 --> 01:18:13,140
+Is that correct?
+
+797
+01:18:16,916 --> 01:18:24,916
+Evet, ezbere gitmeyin arkadaşlar. Ezbere gidersen apı yuttunuz. Doğru mu [öğrenci] abi? Is that horizon to the asymptote?
+
+798
+01:18:28,051 --> 01:18:47,612
+In order to talk about horizontal asymptote, x must be sufficiently larger. x variable, limit variable, must be approaching sufficiently larger number. But in this case, limit point is some finite number. Okay, that's why we cannot talk about horizontal asymptote.
+
+799
+01:18:47,612 --> 01:18:59,491
+So, what is the asymptote? Is the investigation behavior of function at plus infinite or minus infinite. So, this is also false, not true.
+
+800
+01:19:01,572 --> 01:19:09,371
+Eğer mantıkların kavramını, ruhunu anlamadıysanız, tuzağa düşersiniz. Bu da gitti. Anlatabiliyor muyum?
+
+801
+01:19:10,171 --> 01:19:17,251
+So, in order to talk about vertical asymptote, limit point must be finite number. Okay, this is good.
+
+802
+01:19:17,612 --> 01:19:34,612
+But as x goes to some infinite number. But as x goes to finite number. But as x goes to finite number, f of x must go to some infinite number or minus infinite, but not infinite. Not infinite. Not infinite. That's why there is no vertical asymptote. Okay? There is... Okay, so this is not horizontal asymptote.
+
+803
+01:19:37,051 --> 01:19:45,652
+So, in order to investigate the existence of horizontal asymptote, you need to investigate this limit. This one.
+
+804
+01:19:59,220 --> 01:20:26,000
+If you take the common factor x, supposedly you are going to obtain 1. So let's investigate this. So item 4, y is equal to 1 gelecek muhtemelen arkadaşlar. x kare parantezini alırsak buradan x diye çıkar. 1 diye gelir buradan. x kare 0 0 0 1 1 0 0 1 gelecek muhtemelen. Evet. Okay.
+
+805
+01:20:26,000 --> 01:20:37,560
+Line horizontal asimptot. Horizontal asimptot. So I think this is true. Okay. Var mı sorusunlar?
+
+806
+01:20:40,240 --> 01:20:44,600
+Hocam şu son kısmı bir daha tekrar edebilir misiniz? Horizontal asimptot ile alakalı mı?
+
+807
+01:20:48,979 --> 01:20:51,299
+Son kısmına kası. Horizontal asymptote.
+
+808
+01:20:51,439 --> 01:20:54,579
+Okay. So in order to compute horizontal asymptote,
+
+809
+01:20:54,919 --> 01:20:59,959
+we investigate behavior of our graph at infinite or minus infinite.
+
+810
+01:20:59,959 --> 01:21:02,319
+As x goes to infinite, okay.
+
+811
+01:21:02,799 --> 01:21:04,639
+Now, so we compute this limit.
+
+812
+01:21:04,819 --> 01:21:07,139
+If you take the common factor here, x,
+
+813
+01:21:07,219 --> 01:21:11,679
+if you divide nominator and denominator by x, okay.
+
+814
+01:21:12,159 --> 01:21:15,699
+After manipulating on the expression by dividing, okay,
+
+815
+01:21:15,699 --> 01:21:19,559
+this nominator and denominator by x,
+
+816
+01:21:19,639 --> 01:21:21,139
+you are going to obtain one, okay.
+
+817
+01:21:21,919 --> 01:21:25,419
+Now, so this is the horizontal asymptote.
+
+818
+01:21:25,419 --> 01:21:27,419
+This means that as x goes to infinite,
+
+819
+01:21:27,599 --> 01:21:31,919
+graph looks like this horizontal line, y one line, okay.
+
+820
+01:21:33,959 --> 01:21:35,419
+Hocam, bir şey sorabilir miyim?
+
+821
+01:21:35,439 --> 01:21:36,239
+Var mı anlaşmıyor miyim?
+
+822
+01:21:36,879 --> 01:21:39,739
+Hocam, mesela horizontal asymptote bulmak için
+
+823
+01:21:39,739 --> 01:21:43,379
+sonsuza gittiğine, giderkenki davranışına baktık ya,
+
+824
+01:21:43,379 --> 01:21:43,819
+limitin.
+
+825
+01:21:45,179 --> 01:21:48,279
+Yani, mesela bunu değer vererek de yapabilir miyiz peki
+
+826
+01:21:48,279 --> 01:21:49,299
+farklı fonksiyonlarda?
+
+827
+01:21:50,439 --> 01:21:52,159
+Yani, o değerden sonra mesela...
+
+828
+01:21:52,159 --> 01:21:52,939
+Değer vererek diye bir şey yok.
+
+829
+01:21:53,059 --> 01:21:55,079
+X sonsuz, bana sonsuz bir değer söyle.
+
+830
+01:21:55,319 --> 01:21:56,859
+Sonsuz, belirsiz gibi bir şeydir.
+
+831
+01:21:57,379 --> 01:21:59,859
+Yani, o yüzden x'i sonsuza, yeterince büyük diyoruz.
+
+832
+01:21:59,919 --> 01:22:01,339
+Değer vermek diye bir şey yok orada.
+
+833
+01:22:01,839 --> 01:22:02,079
+Tamam.
+
+834
+01:22:02,219 --> 01:22:03,379
+Anlatabiliyor muyum?
+
+835
+01:22:03,379 --> 01:22:03,399
+Anlatabiliyor muyum.
+
+836
+01:22:03,399 --> 01:22:04,979
+Yeterince büyük, büyük bir değer.
+
+837
+01:22:05,099 --> 01:22:06,819
+Sen o değer verirsen yanlış çıkabilir.
+
+838
+01:22:06,939 --> 01:22:08,659
+Mesela bir değer verdim, bir milyon verdim,
+
+839
+01:22:08,719 --> 01:22:09,539
+burada iki çıkabilir.
+
+840
+01:22:09,539 --> 01:22:13,519
+Ama bir milyar verdiğinde o, atıyorum, bir buçuk çıkacak.
+
+841
+01:22:13,859 --> 01:22:14,959
+Yanıltır biz yani.
+
+842
+01:22:15,239 --> 01:22:16,119
+Yanıltır tabii ki.
+
+843
+01:22:16,199 --> 01:22:17,159
+O yüzden ben ne yapacağım?
+
+844
+01:22:17,259 --> 01:22:18,759
+Mecburen cebisel işlem yapacağım.
+
+845
+01:22:19,459 --> 01:22:21,179
+Örneğiyle ispat doğrulama olmaz.
+
+846
+01:22:21,559 --> 01:22:22,779
+Tamam.
+
+847
+01:22:22,779 --> 01:22:26,199
+Tamam, you cannot prove something by giving some particular example.
+
+848
+01:22:26,359 --> 01:22:26,559
+Tamam.
+
+849
+01:22:26,919 --> 01:22:31,619
+But you can't disprove any claim by giving some particular example.
+
+850
+01:22:31,879 --> 01:22:33,179
+Örneğiyle doğrulama olmaz.
+
+851
+01:22:33,319 --> 01:22:34,319
+Örneğiyle çürütme olur.
+
+852
+01:22:34,419 --> 01:22:35,439
+Bunu hiçbir zaman unutmayın.
+
+853
+01:22:35,579 --> 01:22:36,759
+Bilimin en temel kanunu.
+
+854
+01:22:37,399 --> 01:22:38,679
+Mantığın en temel kanunu.
+
+855
+01:22:38,679 --> 01:22:39,339
+Sakın ha.
+
+856
+01:22:39,659 --> 01:22:41,139
+Örneğiyle doğrulama yapmayın.
+
+857
+01:22:42,259 --> 01:22:42,599
+Hocam.
+
+858
+01:22:44,079 --> 01:22:44,359
+Evet.
+
+859
+01:22:45,039 --> 01:22:46,039
+Benim de bir sorum var da.
+
+860
+01:22:46,179 --> 01:22:47,500
+Şimdi biz daha...
+
+861
+01:22:47,500 --> 01:22:48,879
+Sesim çok kıt geliyor ya.
+
+862
+01:22:49,119 --> 01:22:49,739
+Hiç alamıyorum.
+
+863
+01:22:50,279 --> 01:22:50,819
+Tamam hocam.
+
+864
+01:22:50,879 --> 01:22:52,159
+Biraz daha yüksek sesle konuşayım.
+
+865
+01:22:52,319 --> 01:22:58,419
+Şimdi biz sorunun direkt en başında x eşitir 1 için 0 bölü 0 belirsizliğini bulduk.
+
+866
+01:22:59,819 --> 01:23:03,739
+Sonrasında o belirsizliği bir şekilde ortadan kaldırdık.
+
+867
+01:23:03,739 --> 01:23:10,639
+Kaldırdıktan sonra da limitte x yerine 1 yazdığımızda 4 bölü 6 yani 2 bölü 3 geldiğini bulduk.
+
+868
+01:23:12,439 --> 01:23:15,079
+O zaman 2 bölü 3'ün asimtot olması gerekmez mi?
+
+869
+01:23:15,139 --> 01:23:16,579
+Ben burada burayı anlayamadım.
+
+870
+01:23:18,579 --> 01:23:19,619
+Asimtot değil o.
+
+871
+01:23:19,719 --> 01:23:20,919
+Fonksiyonun limit değeri.
+
+872
+01:23:21,039 --> 01:23:23,439
+Yani şöyle grafik ile izah edim ben sana.
+
+873
+01:23:23,439 --> 01:23:26,119
+Evet hocam grafik çizerseniz çok güzel olur.
+
+874
+01:23:26,779 --> 01:23:36,119
+Grafik ile yani bu fonksiyon sen x1'e yaklaşırken x1'e yaklaşırken bu fonksiyon nereye yaklaşacak?
+
+875
+01:23:36,539 --> 01:23:38,599
+Bak böyle tam o noktada tanımlı da değil.
+
+876
+01:23:39,419 --> 01:23:42,479
+x1'e yaklaşırken bu fonksiyon 2 bölü 3'e yaklaşacak.
+
+877
+01:23:43,439 --> 01:23:45,439
+Can you see any asimtotik behavior here?
+
+878
+01:23:45,959 --> 01:23:48,019
+Burada herhangi bir asimtotik davranış görüyor musun?
+
+879
+01:23:48,219 --> 01:23:49,619
+Asimtotik davranış ne demek?
+
+880
+01:23:50,139 --> 01:23:51,539
+Benzemesi demek bir şeye.
+
+881
+01:23:51,539 --> 01:23:53,719
+Bir şeye benziyor mu? Benzemiyor.
+
+882
+01:23:55,919 --> 01:24:00,439
+Asimtotik davranması demek ya bu düz doğru x eşittir 1'e benzeyecek.
+
+883
+01:24:01,059 --> 01:24:03,019
+Ya x eşittir 2 bölü 3'e benzeyecek.
+
+884
+01:24:03,899 --> 01:24:05,559
+Benziyor mu x eşittir 2 bölü 3'e?
+
+885
+01:24:06,159 --> 01:24:08,159
+Ya da y eşittir 2 bölü 3'e benzeyecek.
+
+886
+01:24:08,279 --> 01:24:08,819
+Benziyor mu?
+
+887
+01:24:10,159 --> 01:24:11,319
+Grafik benziyor mu?
+
+888
+01:24:11,559 --> 01:24:12,859
+Benzemiyor. O onun limiti.
+
+889
+01:24:13,279 --> 01:24:14,079
+Benzemesi demek.
+
+890
+01:24:14,199 --> 01:24:16,739
+Bak ben yukarıda grafikle size anlattım her şeyi.
+
+891
+01:24:17,239 --> 01:24:18,659
+Her şeyi grafikle anlattım.
+
+892
+01:24:18,659 --> 01:24:21,659
+Dedim ki bak yatay asimtot.
+
+893
+01:24:21,779 --> 01:24:23,479
+Bunu zihninize kazıyacaksınız.
+
+894
+01:24:23,979 --> 01:24:24,919
+Olmazsa olmaz.
+
+895
+01:24:26,059 --> 01:24:27,659
+X'leri yeterince büyük seçtiğimizde
+
+896
+01:24:28,239 --> 01:24:32,579
+sizin grafiğiniz y eşittir l gibi davranırsa yatay asimtot.
+
+897
+01:24:33,000 --> 01:24:33,619
+Anlatabiliyor muyum?
+
+898
+01:24:33,839 --> 01:24:36,539
+Burada x sonsuza gider veya x sonsuza giderse.
+
+899
+01:24:37,079 --> 01:24:38,659
+Ondan sonra sonu bir değere giderken
+
+900
+01:24:38,659 --> 01:25:04,659
+x sonsuza giderken
+
+901
+01:24:39,956 --> 01:24:57,676
+Mesela burada a gibi sonu bir değere yaklaşırken eğer fonksiyonunuz artık bu x eşittir a doğrusu gibi davranırsa, ona benziyor m çalışırsa o zaman bu x eşittir a bir dikey asimptom olur. Tamam mı? Anlaşıldı mı? Evet hocam anlaşıldı.
+
+902
+01:24:57,676 --> 01:25:25,556
+Onları zıklıyorum. Grafikler ile zihninizi oturtturacaksınız kavramları. Yani ben orada anlatırken siz genellikle lise bilgilerinizi ben biliyorum sizin psikolojinizi. O geçmiş bilgileri unutun arkadaşlar. Benim size burada anlattığım şeylere, grafiklere falan çok dikkat edin. O grafiklerle, görselleştirmeleriyle zihninize canlandırın kavramları. Yoksa çok hata yaparsınız. Direkt cebirsel işlemler yaparsanız. Evet devam ediyoruz.
+
+903
+01:25:41,011 --> 01:25:46,011
+Bu formal tanımı arkadaşlar müfredada dahil ama tesis sınavında bu gelmez arkadaşlar.
+
+904
+01:25:46,231 --> 01:25:52,612
+Ok, in the test exam you cannot see such questions. So this is the precise definition of limit.
+
+905
+01:25:53,471 --> 01:25:59,371
+Ok, ok, but let me talk about this briefly. What does it mean? Let's try to solve this.
+
+906
+01:26:00,751 --> 01:26:03,911
+Let's try solve this inequality. You are going to obtain this.
+
+907
+01:26:14,323 --> 01:26:44,323
+Bu, bu
+
+908
+01:26:44,323 --> 01:27:12,723
+F of X bigger than L, okay, it's not equal, L minus epsilon, F of X, L plus epsilon, and see, this means that F of X lives between L minus epsilon and center is L and L plus epsilon, okay, now again we have some open interval which reduce epsilon,
+
+909
+01:27:12,723 --> 01:27:31,923
+centered at the point L, okay, now consider these open intervals containing L and A, F of X lives on this open interval, X variable, limit variables lives on this open interval, okay, so what does it mean?
+
+910
+01:27:32,923 --> 01:27:41,723
+So, let me sketch some, let me sketch some graph here.
+
+911
+01:27:42,723 --> 01:28:12,543
+So, generally we use this, let epsilon positive be an arbitrary, an arbitrary, real number, real number, the goal find, goal to find delta, find delta, holding this condition, holding this condition, making this statement true.
+
+912
+01:28:12,543 --> 01:28:32,003
+F of X minus L smaller than epsilon, when ever, whenever X lives between A minus delta, A plus delta.
+
+913
+01:28:32,003 --> 01:28:33,683
+Yani ne demek arkadaşlar?
+
+914
+01:28:34,203 --> 01:28:42,763
+Size, bu diyor ki, ispat yani, limitin var mı yok mu, fonksiyonun limiti, L'ye yakınsıyor mu yakınsıyor mu yakınsıyor mu, bilgisayara tespit ettireceksiniz.
+
+915
+01:28:42,963 --> 01:28:46,743
+Göreviniz, bilgisayara bunu tespit ettirmeyin.
+
+916
+01:28:46,943 --> 01:28:51,763
+Yani Fx gerçekten L'ye yakınsıyor mu yakınsıyor mu, bu yakınsama konusu çok önemli arkadaşlar.
+
+917
+01:28:52,503 --> 01:28:52,903
+Tamam mı?
+
+918
+01:28:52,903 --> 01:28:55,263
+Bunu bilgisayar tespit edebilir.
+
+919
+01:28:55,603 --> 01:28:56,503
+Nasıl tespit edebilir?
+
+920
+01:28:56,804 --> 01:29:05,943
+Epsilon'un keyfi olarak girdiğinizde, bilgisayara atıyorum 0.001 olarak girdiğinizde, bilgisayarın amacı şu olacak.
+
+921
+01:29:05,943 --> 01:29:19,743
+Girdiğiniz her keyfi epsilon değeri için, şunu, şu önermeyi doğru yapan, bu önermeyi sağlayan, doğru yapan bir delta, epsilon'a bağlı bir delta bulabiliyorsa, o zaman bilgisayar size diyecek ki, tamam.
+
+922
+01:29:19,743 --> 01:29:27,623
+Fx gerçekten x'ler, x'ler A'ya yaklaşırken, Fx gerçekten L'ye yaklaşır diye size cevap verecek, tamam mı?
+
+923
+01:29:28,103 --> 01:29:28,743
+Amaç bu.
+
+924
+01:29:29,103 --> 01:29:33,503
+Peki bunu görsel olarak nasıl gösterebiliriz?
+
+925
+01:29:33,543 --> 01:29:39,463
+Şimdi burada, look at this, we have some A value.
+
+926
+01:29:40,163 --> 01:29:43,844
+So our goal is to approach this A.
+
+927
+01:29:49,235 --> 01:29:57,235
+Now we need to show that so computer need to show that computer need to show that need to.
+
+928
+01:29:57,235 --> 01:30:12,235
+Prove that and X goes to a f of X approach at OK now just input some positive some positive arbitrary number OK epsilon.
+
+929
+01:30:12,235 --> 01:30:39,235
+So as somewhere here so this is Alma L plus epsilon so after after inserting some positive number arbitrary so this is L minus epsilon OK your goal the task of computer is to find that is to find some delta satisfying this condition OK now since epsilon arbitrary.
+
+930
+01:30:39,235 --> 01:30:44,235
+So for example, you may choose you may choose epsilon.
+
+931
+01:30:44,235 --> 01:30:48,235
+Zero dot zero zero zero zero zero one something like that.
+
+932
+01:30:48,235 --> 01:30:56,235
+So now so this means that effort X somewhere here or somewhere here. OK.
+
+933
+01:30:56,235 --> 01:31:11,235
+So if you choose if you substitute this this means that f of X approach at OK f of X is sufficient when near after choosing such absolute numbers because we know that absolute means arbitrary.
+
+934
+01:31:11,235 --> 01:31:20,235
+But your goal is to find out some delta existence of delta depending on delta depends on epsilon.
+
+935
+01:31:20,235 --> 01:31:33,235
+If you can find out such delta holding this condition whenever X is sufficient the near a f of X is sufficient the near OK.
+
+936
+01:31:33,235 --> 01:31:47,235
+So if you can say that computer can say that that is true as X goes to a as X as X leaves sufficiently near a f of X.
+
+937
+01:31:47,235 --> 01:31:58,235
+OK now so let me introduce some example consider this example.
+
+938
+01:31:58,235 --> 01:32:02,235
+So the task of computer show that this is true.
+
+939
+01:32:02,235 --> 01:32:05,235
+Şimdi bilgisayar bunu ispat edecek arkadaşlar.
+
+940
+01:32:05,235 --> 01:32:07,235
+Yani tamam siz görüyorsunuz bunun cevabı bir de.
+
+941
+01:32:07,235 --> 01:32:09,235
+X dörde giderken bunu göremeyen var mı?
+
+942
+01:32:09,235 --> 01:32:10,235
+Yok.
+
+943
+01:32:10,235 --> 01:32:13,235
+Ama makine öğrenmesi orada bir yapay zeka yapmak istiyorsunuz.
+
+944
+01:32:13,235 --> 01:32:14,235
+Tamam arkadaşlar.
+
+945
+01:32:14,235 --> 01:32:17,235
+OK you need to create some artificial intelligence.
+
+946
+01:32:17,235 --> 01:32:18,235
+OK.
+
+947
+01:32:18,235 --> 01:32:22,235
+Your task is to teach is to train some computer.
+
+948
+01:32:22,235 --> 01:32:25,235
+Some computer can prove that this is true or not.
+
+949
+01:32:25,235 --> 01:32:26,235
+OK.
+
+950
+01:32:26,235 --> 01:32:29,235
+So this is f of X.
+
+951
+01:32:29,235 --> 01:32:31,235
+So this is L.
+
+952
+01:32:31,235 --> 01:32:32,235
+OK.
+
+953
+01:32:32,235 --> 01:32:34,235
+We input those informations into computer.
+
+954
+01:32:34,235 --> 01:32:35,235
+OK.
+
+955
+01:32:35,235 --> 01:32:36,235
+We know this.
+
+956
+01:32:36,235 --> 01:32:38,235
+So let's just focus on this.
+
+957
+01:32:38,235 --> 01:32:39,235
+Let me use this part.
+
+958
+01:32:39,235 --> 01:32:40,235
+OK.
+
+959
+01:32:40,235 --> 01:32:41,235
+Look at here.
+
+960
+01:32:41,235 --> 01:32:43,235
+So epsilon arbitrary.
+
+961
+01:32:43,235 --> 01:32:44,235
+OK.
+
+962
+01:32:44,235 --> 01:32:46,235
+So input some epsilon arbitrary.
+
+963
+01:32:46,235 --> 01:32:49,235
+So just take this f of X L absolute.
+
+964
+01:32:49,235 --> 01:32:50,235
+Can you see that?
+
+965
+01:32:50,235 --> 01:32:51,235
+So we have this.
+
+966
+01:32:51,235 --> 01:32:52,235
+OK.
+
+967
+01:32:52,235 --> 01:32:53,235
+So we can write this.
+
+968
+01:32:53,235 --> 01:33:19,235
+So let me write this part.
+
+969
+01:33:01,203 --> 01:33:13,543
+Dikkat edin arkadaşlar. Bunları siliyorum. Test sınavında çıkmaz böyle bir şey. Ama ileride belki işinize yarar diye anlatıyorum bunu. Belki aranızda ileride makine öğrenmesi çalışmak isteyen olur.
+
+970
+01:33:17,043 --> 01:33:18,403
+teorik olarak tabii ki
+
+971
+01:33:22,323 --> 01:33:22,823
+ok.
+
+972
+01:33:31,859 --> 01:33:46,859
+Ok, so we know this f , 4x minus 15 minus L1.
+
+973
+01:33:46,859 --> 01:33:50,859
+So since Absalom is arbitrary, we can go on.
+
+974
+01:33:50,859 --> 01:33:59,859
+Ok, so we have 4x minus this is minus 15. Ok, minus this.
+
+975
+01:33:59,859 --> 01:34:03,859
+If you take common factor 4, x minus 4.
+
+976
+01:34:03,859 --> 01:34:11,859
+Since Absalom arbitrary, we can choose some Absalom.
+
+977
+01:34:11,859 --> 01:34:19,859
+Ok, satisfy this condition. Ok, because of the fact that Absalom is arbitrary, we can choose such Absalom.
+
+978
+01:34:19,859 --> 01:34:24,859
+Absalom keyfi olduğundan dolayı ben böyle bir Absalom seçebilirim.
+
+979
+01:34:24,859 --> 01:34:31,859
+Yani Absalom 4x x eksi 4'ü mutlak değerinden büyük olacak şekilde bir Absalom seçtirebilirim bilgisayara.
+
+980
+01:34:31,859 --> 01:34:32,859
+Tamam mı arkadaşlar?
+
+981
+01:34:32,859 --> 01:34:35,859
+Ondan sonra amacımız Delta bulmak.
+
+982
+01:34:35,859 --> 01:34:50,859
+So, the goal is to find out Delta making this statement.
+
+983
+01:34:50,859 --> 01:34:52,859
+This statement.
+
+984
+01:34:58,420 --> 01:35:01,039
+For x minus this.
+
+985
+01:35:01,579 --> 01:35:03,100
+F of x minus l.
+
+986
+01:35:03,819 --> 01:35:05,720
+Smaller than epsilon.
+
+987
+01:35:06,600 --> 01:35:07,079
+Whenever
+
+988
+01:35:07,079 --> 01:35:10,739
+x minus
+
+989
+01:35:10,739 --> 01:35:12,079
+Let me write this.
+
+990
+01:35:12,100 --> 01:35:14,100
+This is f of x minus l.
+
+991
+01:35:14,460 --> 01:35:15,699
+X minus a.
+
+992
+01:35:17,060 --> 01:35:18,060
+Smaller than
+
+993
+01:35:18,060 --> 01:35:19,880
+true.
+
+994
+01:35:21,260 --> 01:35:22,180
+Bilgisayar
+
+995
+01:35:22,180 --> 01:35:23,319
+ne yapacak arkadaşlar?
+
+996
+01:35:24,180 --> 01:35:25,980
+Şu önermeyi doğru yapan
+
+997
+01:35:25,980 --> 01:35:27,220
+bir delta bulacak.
+
+998
+01:35:27,220 --> 01:35:29,079
+Seçtiği epsilon'a bağlı olarak.
+
+999
+01:35:29,199 --> 01:35:29,760
+Tamam mı arkadaşlar?
+
+1000
+01:35:30,619 --> 01:35:32,180
+Seçtiği epsilon'a bağlı olarak
+
+1001
+01:35:32,180 --> 01:35:34,539
+bir delta bulabilecek.
+
+1002
+01:35:35,060 --> 01:35:36,039
+Gerçekten bakın.
+
+1003
+01:35:36,640 --> 01:35:37,720
+Ben şunu çözersem.
+
+1004
+01:35:37,720 --> 01:35:39,539
+If you choose this inequality.
+
+1005
+01:35:40,500 --> 01:35:41,440
+If you choose
+
+1006
+01:35:41,440 --> 01:35:42,920
+this inequality.
+
+1007
+01:35:45,500 --> 01:35:47,340
+So is that true?
+
+1008
+01:35:47,579 --> 01:35:48,480
+We can write this.
+
+1009
+01:35:49,600 --> 01:35:51,399
+So now as you see
+
+1010
+01:35:51,399 --> 01:35:53,579
+computer can find out this.
+
+1011
+01:35:54,180 --> 01:35:55,020
+This is delta.
+
+1012
+01:35:55,020 --> 01:35:57,159
+As you see
+
+1013
+01:35:57,159 --> 01:35:58,180
+we can find out
+
+1014
+01:35:58,180 --> 01:35:59,180
+and making this
+
+1015
+01:35:59,180 --> 01:36:01,279
+this
+
+1016
+01:36:01,279 --> 01:36:02,260
+implication
+
+1017
+01:36:02,260 --> 01:36:02,980
+this statement
+
+1018
+01:36:02,980 --> 01:36:03,579
+is true.
+
+1019
+01:36:03,880 --> 01:36:04,600
+This is delta
+
+1020
+01:36:04,600 --> 01:36:05,420
+and computer
+
+1021
+01:36:05,420 --> 01:36:06,279
+says that
+
+1022
+01:36:06,279 --> 01:36:07,520
+computer
+
+1023
+01:36:07,520 --> 01:36:08,739
+says that
+
+1024
+01:36:08,739 --> 01:36:10,800
+is
+
+1025
+01:36:10,800 --> 01:36:10,880
+it
+
+1026
+01:36:10,880 --> 01:36:11,380
+is
+
+1027
+01:36:11,380 --> 01:36:11,880
+it
+
+1028
+01:36:11,880 --> 01:36:12,380
+is
+
+1029
+01:36:12,380 --> 01:36:12,940
+it
+
+1030
+01:36:12,940 --> 01:36:13,800
+is
+
+1031
+01:36:13,800 --> 01:36:14,199
+it
+
+1032
+01:36:14,199 --> 01:36:14,699
+is
+
+1033
+01:36:14,699 --> 01:36:15,199
+it
+
+1034
+01:36:15,199 --> 01:36:15,300
+is
+
+1035
+01:36:15,300 --> 01:36:15,800
+it
+
+1036
+01:36:15,800 --> 01:36:15,880
+is
+
+1037
+01:36:15,880 --> 01:36:16,199
+it
+
+1038
+01:36:16,199 --> 01:36:16,279
+is
+
+1039
+01:36:16,279 --> 01:36:16,699
+it
+
+1040
+01:36:16,699 --> 01:36:17,199
+is
+
+1041
+01:36:17,199 --> 01:36:17,840
+it
+
+1042
+01:36:17,840 --> 01:36:18,199
+is
+
+1043
+01:36:18,199 --> 01:36:18,699
+it
+
+1044
+01:36:13,524 --> 01:36:30,064
+This limit is true. Limit as x goes to a, a is 1, f of x, ok. Neydi arkadaşlar? 1 mi demiştik? 4'e gidiysem, pardon. As x goes to 4, f of x goes to 1, is true.
+
+1045
+01:36:32,003 --> 01:36:43,284
+Diyecek size. Evet, böyle bir şey arkadaşlar. Sınavda, test sınavında böyle sorular gelmez. Ama ileride belki bu mantığı kullanırsınız bir yerde diye anlattım ben size.
+
+1046
+01:36:43,524 --> 01:36:50,923
+Tamam mı? Devam edelim. Var mı sorusu olan? An equation about this precise definition for limit?
+
+1047
+01:36:58,644 --> 01:37:00,824
+Sorusu olan yok. Sesim geliyor değil mi arkadaşlar?
+
+1048
+01:37:02,344 --> 01:37:03,664
+Ses, soluk gitti ya.
+
+1049
+01:37:05,444 --> 01:37:06,024
+Geliyor hocam.
+
+1050
+01:37:07,304 --> 01:37:11,164
+Evet. Sistem bizi atmadı değil mi? Tamam. Güzel. Sorusu olan yok galiba.
+
+1051
+01:37:15,412 --> 01:37:17,972
+Evet, let me introduce continuity.
+
+1052
+01:37:21,811 --> 01:37:26,131
+Okay, so continuity at the point.
+
+1053
+01:37:27,332 --> 01:37:35,971
+Okay, x. Look at this example. If you try to plot this graph by using some computer algebra system,
+
+1054
+01:37:37,291 --> 01:37:45,091
+some computer program. So we can see that there is some hole here or on the graph.
+
+1055
+01:37:47,011 --> 01:37:48,091
+On the graph.
+
+1056
+01:37:48,091 --> 01:37:53,291
+At the position. At the position x. Okay.
+
+1057
+01:37:57,747 --> 01:38:03,867
+Şimdi, bu kadar da bir kere var.
+
+1058
+01:38:03,867 --> 01:38:05,867
+Bu, bu kere var.
+
+1059
+01:38:06,387 --> 01:38:08,867
+Şimdi, bu kere var.
+
+1060
+01:38:10,607 --> 01:38:55,627
+Bu, bu kere var.
+
+1061
+01:38:55,627 --> 01:38:56,627
+A.
+
+1062
+01:38:56,627 --> 01:38:57,627
+Okey.
+
+1063
+01:38:57,627 --> 01:38:58,627
+Dikkat edin.
+
+1064
+01:38:58,627 --> 01:39:00,627
+Funksiyon noktada tanımlı olacak.
+
+1065
+01:39:00,627 --> 01:39:02,627
+O noktadaki limiti mevcut olacak.
+
+1066
+01:39:02,627 --> 01:39:04,627
+Ve o noktadaki limitinin değeri,
+
+1067
+01:39:04,627 --> 01:39:07,627
+Funksiyon noktadaki değerine eşit olacak.
+
+1068
+01:39:07,627 --> 01:39:08,627
+Tamam mı?
+
+1069
+01:39:08,627 --> 01:39:09,627
+Dikkat edin.
+
+1070
+01:39:09,627 --> 01:39:12,627
+Okey, let's see this basic example.
+
+1071
+01:39:12,627 --> 01:39:15,627
+Well, what can we say continuity of this graph?
+
+1072
+01:39:15,627 --> 01:39:16,627
+So, okay.
+
+1073
+01:39:16,627 --> 01:39:17,627
+Look at here.
+
+1074
+01:39:17,627 --> 01:39:18,627
+So at the point one.
+
+1075
+01:39:18,627 --> 01:39:21,627
+So there is some hole.
+
+1076
+01:39:21,627 --> 01:39:23,627
+Of course the limit exists limit.
+
+1077
+01:39:23,627 --> 01:39:25,627
+As x goes to one.
+
+1078
+01:39:25,627 --> 01:39:29,627
+As you see f of x according to this graph.
+
+1079
+01:39:29,627 --> 01:39:32,627
+F of x approach zero.
+
+1080
+01:39:32,627 --> 01:39:33,627
+Okay.
+
+1081
+01:39:33,627 --> 01:39:34,627
+Limit exists.
+
+1082
+01:39:34,627 --> 01:39:38,627
+But at that point function is not defined.
+
+1083
+01:39:38,627 --> 01:39:39,627
+Not defined.
+
+1084
+01:39:39,627 --> 01:39:42,627
+That's why there is some hole on the graph.
+
+1085
+01:39:42,627 --> 01:39:43,627
+At the point one.
+
+1086
+01:39:43,627 --> 01:39:44,627
+Not continuous.
+
+1087
+01:39:44,627 --> 01:39:45,627
+This is discontinuity.
+
+1088
+01:39:45,627 --> 01:39:53,627
+X one is a discontinuity point.
+
+1089
+01:39:53,627 --> 01:39:55,627
+Discontinuity point.
+
+1090
+01:39:55,627 --> 01:39:56,627
+Okay.
+
+1091
+01:39:56,627 --> 01:39:59,627
+Similarly, look at this two.
+
+1092
+01:39:59,627 --> 01:40:03,627
+Limit as x goes to two.
+
+1093
+01:40:03,627 --> 01:40:07,627
+Again, f of x, f of x values.
+
+1094
+01:40:07,627 --> 01:40:09,627
+And x goes to two from left or right.
+
+1095
+01:40:09,627 --> 01:40:10,627
+F of x values.
+
+1096
+01:40:10,627 --> 01:40:11,627
+Can you see that?
+
+1097
+01:40:11,627 --> 01:40:13,627
+F of x values approach one.
+
+1098
+01:40:13,627 --> 01:40:15,627
+Again, it has limit.
+
+1099
+01:40:15,627 --> 01:40:21,627
+But f of two is well defined.
+
+1100
+01:40:21,627 --> 01:40:22,627
+Three.
+
+1101
+01:40:22,627 --> 01:40:26,627
+So limit value is not equal to value function at that point.
+
+1102
+01:40:26,627 --> 01:40:29,627
+Again, there is some hole on the graph.
+
+1103
+01:40:29,627 --> 01:40:31,627
+Again, x two.
+
+1104
+01:40:31,627 --> 01:40:34,627
+Is a discontinuity point.
+
+1105
+01:40:34,627 --> 01:40:36,627
+Discontinuity point.
+
+1106
+01:40:36,627 --> 01:40:39,627
+So look at another example.
+
+1107
+01:40:39,627 --> 01:40:40,627
+Okay.
+
+1108
+01:40:40,627 --> 01:40:42,627
+So look at this three.
+
+1109
+01:40:42,627 --> 01:40:45,627
+This is also discontinuity point.
+
+1110
+01:40:45,627 --> 01:40:49,627
+As you see, there is some break on the graph.
+
+1111
+01:40:49,627 --> 01:40:50,627
+Okay.
+
+1112
+01:40:50,627 --> 01:40:51,627
+Limit.
+
+1113
+01:40:51,627 --> 01:40:55,627
+As x goes to three from right hand side.
+
+1114
+01:40:55,627 --> 01:40:56,627
+Can you see that?
+
+1115
+01:40:56,627 --> 01:40:58,627
+So f of x.
+
+1116
+01:40:58,627 --> 01:40:59,627
+F of x.
+
+1117
+01:40:59,627 --> 01:41:01,627
+According to this graph.
+
+1118
+01:41:01,627 --> 01:41:03,627
+F of x approach one.
+
+1119
+01:41:03,627 --> 01:41:04,627
+Limit.
+
+1120
+01:41:04,627 --> 01:41:10,627
+As x goes to three from left hand side.
+
+1121
+01:41:10,627 --> 01:41:12,627
+F of x goes to two.
+
+1122
+01:41:12,627 --> 01:41:21,627
+As she sees left hand side limit and right hand side limit different.
+
+1123
+01:41:21,627 --> 01:41:22,627
+They are different.
+
+1124
+01:41:22,627 --> 01:41:23,627
+No limit.
+
+1125
+01:41:23,627 --> 01:41:29,627
+Even if our function is defined at that point.
+
+1126
+01:41:29,627 --> 01:41:30,627
+Okay.
+
+1127
+01:41:30,627 --> 01:41:33,627
+So x three is a discontinuity point.
+
+1128
+01:41:33,627 --> 01:41:34,627
+Our function.
+
+1129
+01:41:34,627 --> 01:41:37,627
+Not continuous at that point.
+
+1130
+01:41:37,627 --> 01:41:38,627
+In this case.
+
+1131
+01:41:38,627 --> 01:41:40,627
+There is no limit.
+
+1132
+01:41:40,627 --> 01:41:41,627
+Okay.
+
+1133
+01:41:41,627 --> 01:41:42,627
+Look at this example.
+
+1134
+01:41:42,627 --> 01:41:46,627
+So in this case limit as x goes to five.
+
+1135
+01:41:46,627 --> 01:41:47,627
+F of x.
+
+1136
+01:41:47,627 --> 01:41:48,627
+Go up infinitely.
+
+1137
+01:41:48,627 --> 01:41:50,627
+Okay.
+
+1138
+01:41:50,627 --> 01:41:52,627
+So there is no limit again.
+
+1139
+01:41:52,627 --> 01:42:17,627
+Not continuous.
+
+1140
+01:41:56,148 --> 01:42:01,108
+But x5 is a discontinuity point, infinite discontinuity.
+
+1141
+01:42:01,108 --> 01:42:04,948
+Okay, now we will explain the type of discontinuities.
+
+1142
+01:42:04,948 --> 01:42:09,748
+So this is infinite discontinuity because x goes to 5 from left to right.
+
+1143
+01:42:09,748 --> 01:42:13,748
+So f of x goes up infinitely or goes down infinitely.
+
+1144
+01:42:13,748 --> 01:42:17,188
+Okay, now, so this is infinite discontinuity.
+
+1145
+01:42:17,188 --> 01:42:19,347
+This is jumping discontinuity.
+
+1146
+01:42:19,347 --> 01:42:24,148
+From left to right you have distinct limit values, different limit values.
+
+1147
+01:42:24,148 --> 01:42:30,948
+This means that extra is jumping discontinuity because we have some distance for which we can jump.
+
+1148
+01:42:30,948 --> 01:42:32,148
+Okay, finite distance.
+
+1149
+01:42:32,148 --> 01:42:34,547
+Okay, so this is jumping discontinuity.
+
+1150
+01:42:34,547 --> 01:42:36,948
+Now, so here removable discontinuity.
+
+1151
+01:42:36,948 --> 01:42:40,948
+Okay, I will explain those types next week.
+
+1152
+01:42:40,948 --> 01:42:42,948
+Var mı anlaşmıyor mi?
+
+1153
+01:42:42,948 --> 01:42:46,948
+Süreklilikle alakalı, süreksizlik tipleriyle alakalı anlaşmıyor mi?
+
+1154
+01:42:46,948 --> 01:42:48,948
+Yok galiba.
+
+1155
+01:42:48,948 --> 01:42:51,948
+Son şu örneği yapacağım, bitireceğim arkadaşlar.
+
+1156
+01:42:51,948 --> 01:43:18,748
+Son şu örneği yapı.
+
+1157
+01:42:58,579 --> 01:43:01,260
+Ok, let's investigate continuity of this.
+
+1158
+01:43:01,939 --> 01:43:03,500
+Ok, what can we do for this?
+
+1159
+01:43:03,859 --> 01:43:05,619
+So, look at here.
+
+1160
+01:43:05,899 --> 01:43:08,579
+So, this is continuous everywhere.
+
+1161
+01:43:09,460 --> 01:43:11,140
+Ok, but except for x0.
+
+1162
+01:43:11,140 --> 01:43:17,140
+But let's investigate continuity of this function at the point x0.
+
+1163
+01:43:17,659 --> 01:43:19,939
+We need to investigate this is true or not.
+
+1164
+01:43:20,939 --> 01:43:22,059
+f of 0, 0.
+
+1165
+01:43:22,699 --> 01:43:26,140
+Ok, limit as x goes to 0.
+
+1166
+01:43:26,140 --> 01:43:29,579
+As x goes to 0, we approach 0 from left or right.
+
+1167
+01:43:30,019 --> 01:43:32,819
+x is never equal to 0.
+
+1168
+01:43:33,239 --> 01:43:35,739
+But x is sufficient to close 0.
+
+1169
+01:43:35,859 --> 01:43:37,659
+In that case, we need to use this rule.
+
+1170
+01:43:37,659 --> 01:43:42,039
+Ok, so x times sine 1 over x.
+
+1171
+01:43:42,920 --> 01:43:44,019
+Ok, let's go on.
+
+1172
+01:43:44,439 --> 01:43:46,699
+Limit as x goes to 0.
+
+1173
+01:43:47,159 --> 01:43:50,600
+In order to solve this, we need to manipulate on this expression.
+
+1174
+01:43:50,600 --> 01:43:59,920
+Ok, let me do some change of variable here in order to make similarity between this limit problem and the well-known expression.
+
+1175
+01:43:59,920 --> 01:44:03,500
+So, we can do this change of variable 1 over x.
+
+1176
+01:44:03,500 --> 01:44:05,220
+Let's say 1 over x t.
+
+1177
+01:44:05,819 --> 01:44:09,439
+So, this t goes to, let me, we have two options.
+
+1178
+01:44:10,019 --> 01:44:19,199
+t goes to plus infinite as x goes to 0 from right hand side.
+
+1179
+01:44:19,199 --> 01:44:27,559
+So, this t goes to minus infinite as x goes to 0 minus from left hand side.
+
+1180
+01:44:27,699 --> 01:44:38,539
+Ok, now, so actually by applying this change of variable, this limit problem is transformed into a new equivalent limit problem.
+
+1181
+01:44:38,680 --> 01:44:44,680
+Limit as t goes to infinite or minus infinite.
+
+1182
+01:44:44,680 --> 01:44:48,559
+So, we have this limit problem.
+
+1183
+01:44:49,420 --> 01:44:55,600
+Ok, now look at, as t goes to infinite, we call the graph of sine t.
+
+1184
+01:44:56,340 --> 01:44:58,199
+We call the graph of sine t.
+
+1185
+01:44:58,300 --> 01:44:59,760
+Let's say this is t axis.
+
+1186
+01:45:00,460 --> 01:45:03,600
+So, it is bounded function.
+
+1187
+01:45:04,199 --> 01:45:05,600
+This is bounded function.
+
+1188
+01:45:07,180 --> 01:45:09,819
+Bounded by minus 1 and plus 1.
+
+1189
+01:45:10,699 --> 01:45:13,260
+Attention here, as t goes to infinite.
+
+1190
+01:45:13,260 --> 01:45:17,779
+Ok, bounded expression over unbounded expression t.
+
+1191
+01:45:17,880 --> 01:45:20,220
+As t goes to infinite, t goes to infinite.
+
+1192
+01:45:20,640 --> 01:45:22,059
+So, this is unbounded.
+
+1193
+01:45:24,539 --> 01:45:27,539
+Ok, so this is unbounded, something like that.
+
+1194
+01:45:28,319 --> 01:45:30,199
+Ok, now bounded.
+
+1195
+01:45:32,399 --> 01:45:34,300
+As t goes to infinite.
+
+1196
+01:45:34,439 --> 01:45:35,300
+Attention here.
+
+1197
+01:45:36,680 --> 01:45:38,399
+So, this is unbounded.
+
+1198
+01:45:38,399 --> 01:45:45,559
+So, bounded over unbounded expression as t goes to infinite.
+
+1199
+01:45:46,039 --> 01:45:50,399
+According to Sandwich's theorem, this goes to 0.
+
+1200
+01:45:50,880 --> 01:45:52,559
+Ok, so this goes to, that is true.
+
+1201
+01:45:53,359 --> 01:45:55,760
+Ok, according to Sandwich's theorem, we can do that.
+
+1202
+01:45:55,819 --> 01:45:56,279
+That's true.
+
+1203
+01:45:56,579 --> 01:46:02,840
+So, that's why h function, piecewise defined function, is continuous at the point 0.
+
+1204
+01:46:02,840 --> 01:46:04,979
+Ok, an equation.
+
+1205
+01:46:04,979 --> 01:46:06,680
+So, I'm sorry, so long.
+
+1206
+01:46:21,076 --> 01:46:23,536
+Evet, sorusu olan yoksa dersi bitirelim arkadaşlar.
+
+1207
+01:46:26,716 --> 01:46:29,036
+Haftaya görüşmek üzere değerli arkadaşlar.
+
+1208
+01:46:29,315 --> 01:46:30,055
+See you next week.
