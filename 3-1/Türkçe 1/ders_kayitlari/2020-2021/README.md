@@ -20,3 +20,4 @@
 | 31 | Güz | Cemile İnan | [sube_31/](sube_31/) |
 | 37 | Güz | Arzuhan Kocabaş | [sube_37/](sube_37/) |
 | 38 | Güz | Zeliha Çelen Boztilki | [sube_38/](sube_38/) |
+| 39 | Güz | Arzuhan Kocabaş | [sube_39/](sube_39/) |
