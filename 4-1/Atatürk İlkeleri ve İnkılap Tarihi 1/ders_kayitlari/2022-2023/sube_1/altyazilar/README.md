@@ -1,6 +1,6 @@
 # Atatürk İlkeleri ve İnkılap Tarihi I Ders Kayıtları Altyazıları
 
-Bu klasör, 2022-2023 eğitim öğretim yılı Güz dönemindeki Atatürk İlkeleri ve İnkılap Tarihi I (ATA1031 - 1. şube) ders kayıtlarının altyazılarını içerir.
+Bu klasör, 2022-2023 eğitim öğretim yılı Güz dönemindeki Atatürk İlkeleri ve İnkılap Tarihi I (ATA1031 - 1. şube) ders kayıtlarının altyazılarını içerir. Aynı yılın diğer şube ya da dönem kayıtları bir üst klasördedir (`../`).
 
 * **Dersi Veren Akademisyen:** Şebnem Gelmedi
 
