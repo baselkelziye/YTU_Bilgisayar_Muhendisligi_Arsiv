@@ -1,0 +1,6427 @@
+1
+00:01:27,156 --> 00:01:28,115
+Merhaba arkadaşlar.
+
+2
+00:01:32,659 --> 00:01:33,939
+Nasılsınız görüşmeyeli?
+
+3
+00:01:34,060 --> 00:01:34,700
+Nasılsınız?
+
+4
+00:01:36,200 --> 00:01:37,519
+Teşekkürler, ben de iyiyim.
+
+5
+00:01:39,319 --> 00:01:40,979
+Her şey yolundadır umarım.
+
+6
+00:01:41,579 --> 00:01:44,379
+Yolunda hocam ya, aynı, bildiğiniz gibi.
+
+7
+00:01:45,379 --> 00:01:45,979
+Evet, aynı.
+
+8
+00:01:51,188 --> 00:01:53,968
+Evet, bu haftayı Taylor McLaren ile açacağız.
+
+9
+00:01:54,927 --> 00:01:57,448
+Sonrasında parametrik denklemlerle devam edeceğiz.
+
+10
+00:01:57,668 --> 00:01:59,728
+Kısa bir özet vermek istiyorum hızlıca.
+
+11
+00:02:00,608 --> 00:02:05,008
+Taylor McLaren'de de birkaç önemli nokta var.
+
+12
+00:02:05,128 --> 00:02:06,328
+Kullanım alanlarını göreceğiz.
+
+13
+00:02:06,468 --> 00:02:08,968
+Önce genel yapılarını ve nasıl açacağımızı öğreneceğiz.
+
+14
+00:02:09,068 --> 00:02:10,147
+Nasıl genelleştireceğimizi.
+
+15
+00:02:10,728 --> 00:02:15,687
+Sonrasında kullanım alanlarını da gördükten sonra parametrik denklemlerle devam edeceğiz.
+
+16
+00:02:15,687 --> 00:02:21,707
+Parametrik denklemleri genel bir bakış açısı sağladıktan sonra kutupsal koordinatları geçmemiz gerekecek çünkü.
+
+17
+00:02:23,147 --> 00:02:35,728
+Ve bu hafta büyük ihtimalle parametrik denklemler üzerlerinde yay uzunlukları hesaplama alan hesapları gibi bazı hesaplamaları yaptıktan sonra bir parametrizasyon çeşidi olacak.
+
+18
+00:02:35,987 --> 00:02:39,168
+Yeni bir koordinat sistemi olan polar koordinat sistemine devam edeceğiz.
+
+19
+00:02:39,268 --> 00:02:40,168
+Onu bir sonraki hafta.
+
+20
+00:02:41,487 --> 00:02:42,747
+O şekilde devam edecek.
+
+21
+00:02:42,747 --> 00:02:47,987
+Geçen hafta da kuvvet serilerini tamamlamıştık.
+
+22
+00:02:48,028 --> 00:02:50,367
+Alternatif serilerle kuvvet serilerini tamamlamıştık.
+
+23
+00:02:52,268 --> 00:02:58,807
+Kuvvet serilerini işlemler kısmına özellikle yakınsaklık ve ıraksaklığı tamam.
+
+24
+00:02:59,288 --> 00:03:02,508
+Ama işlemler kısmına dikkat etmenizi isterim.
+
+25
+00:03:02,908 --> 00:03:07,028
+Onlarla ilgili mümkün mertebe soru araştırıp çözmenizi, egzersiz yapmanızı öneririm.
+
+26
+00:03:07,948 --> 00:03:10,348
+Biz beraber de uygulama tabii ki yapacağız ama şu anda değil.
+
+27
+00:03:10,348 --> 00:03:15,168
+O yüzden siz de arada buldu bulabildikçe soru çözün mutlaka.
+
+28
+00:03:16,487 --> 00:03:18,328
+En azından sorularımızı tekrar edin.
+
+29
+00:03:19,908 --> 00:03:21,288
+O konu önemli.
+
+30
+00:03:22,548 --> 00:03:23,848
+Çok da kolay değil tabii ki.
+
+31
+00:03:24,147 --> 00:03:27,447
+İşlemler ve tahmin etmek, yeni bir siteri elde etmeye çalışmak,
+
+32
+00:03:27,448 --> 00:03:32,668
+onun fonksiyon hali veya kuvvet serisi açılımlarını bulmak.
+
+33
+00:03:35,328 --> 00:03:38,068
+Üzerinde hali uygulama gerektiren bir konu bence.
+
+34
+00:03:40,448 --> 00:03:41,708
+Sorusu olan var mı?
+
+35
+00:03:42,068 --> 00:03:48,427
+Önce konularla ilgili derse başlamadan önce anlamadığınız bir yer, tekrar etmemi istediğiniz bir yer.
+
+36
+00:03:52,211 --> 00:03:53,451
+Tamam mıyız hepimiz?
+
+37
+00:04:00,852 --> 00:04:05,731
+O zaman konumuzla başlayalım.
+
+38
+00:04:06,312 --> 00:04:07,192
+Taylor Maclaurin.
+
+39
+00:04:09,111 --> 00:04:10,951
+Have you ever heard about it?
+
+40
+00:04:12,611 --> 00:04:13,652
+Taylor Maclaurin?
+
+41
+00:04:14,512 --> 00:04:17,951
+Or is it the first time you met with this topic?
+
+42
+00:04:21,843 --> 00:04:28,183
+Why do we continue after power series? Why do we continue with the Taylor and Maclaurin series?
+
+43
+00:04:28,363 --> 00:04:32,524
+Okay, possibly this is the first time you met with the Taylor and Maclaurin series.
+
+44
+00:04:32,963 --> 00:04:35,403
+These are specific power series, in fact.
+
+45
+00:04:36,183 --> 00:04:41,843
+They have specific names and specific areas to use them.
+
+46
+00:04:42,743 --> 00:04:43,463
+You will learn.
+
+47
+00:04:44,144 --> 00:04:46,324
+So let's start with the definition of them.
+
+48
+00:04:51,411 --> 00:05:07,572
+As you see here, once you look up to this definition, you see a power series here. Power series, x minus a to k ev hal. And the other, cn, or ck, you can just think index is k here, 0 to infinity.
+
+49
+00:05:08,431 --> 00:05:16,791
+Once you consider this form, you will see that this is in fact a power series. Let's see, what kind of a power series is it?
+
+50
+00:05:16,791 --> 00:05:26,891
+F is a function with derivatives of all orders throughout same interval, some interval, I'm sorry, containing a as an interior point.
+
+51
+00:05:28,111 --> 00:05:31,591
+What is a here in this power series?
+
+52
+00:05:33,631 --> 00:05:34,551
+What is a?
+
+53
+00:05:40,244 --> 00:05:43,224
+İndir Power Series, what is it called?
+
+54
+00:05:54,579 --> 00:05:55,579
+Evet.
+
+55
+00:05:55,579 --> 00:05:57,579
+Bu A'ın adı?
+
+56
+00:05:57,579 --> 00:05:59,579
+Bu bir adı var.
+
+57
+00:05:59,579 --> 00:06:01,579
+Bu adı?
+
+58
+00:06:06,036 --> 00:06:09,276
+Evet, [öğrenci], bu da doğru.
+
+59
+00:06:09,276 --> 00:06:12,276
+Bu da doğru.
+
+60
+00:06:12,276 --> 00:06:14,235
+Çünkü bu da doğru.
+
+61
+00:06:14,235 --> 00:07:33,276
+Bu da doğru.
+
+62
+00:10:00,000 --> 00:10:07,759
+Maclaurin series are generated, again a function f, but center is 0 at Maclaurin series. That's the difference only.
+
+63
+00:10:09,080 --> 00:10:20,120
+So Maclaurin series is again a Taylor series at the point 0, but if you are asked to have a Maclaurin series, you need to just directly understand that center is 0 always for Maclaurin series.
+
+64
+00:10:20,639 --> 00:10:27,480
+No point you need. You need to directly guess that the point, that means the center is always 0 for Maclaurin series.
+
+65
+00:10:27,480 --> 00:10:33,360
+That's why Maclaurin series at the same time are Taylor series at the point 0.
+
+66
+00:10:33,759 --> 00:10:36,940
+Taylor series because at any real number we can evaluate.
+
+67
+00:10:39,200 --> 00:10:40,240
+Any question?
+
+68
+00:10:43,960 --> 00:10:47,159
+No, not a subset. Directly it is a Taylor series.
+
+69
+00:10:48,919 --> 00:10:52,620
+A specific Taylor series you can just think because it is at the point 0.
+
+70
+00:10:52,960 --> 00:10:55,980
+Any Taylor series at the point 0 becomes a Maclaurin.
+
+71
+00:11:00,403 --> 00:11:00,764
+Ok.
+
+72
+00:11:07,508 --> 00:11:22,788
+Ander. So, for Maclaurin, we have again this form on a0. And because of having center 0, the terms are easier. Because x minus 0, we have only the powers of x.
+
+73
+00:11:23,608 --> 00:11:35,668
+So, kth order derivative of f at the point 0 divided with k factorial times kth power of x. That's all for the general form of a Maclaurin series generated by f.
+
+74
+00:11:37,508 --> 00:11:51,148
+Look. So, this is the end term. And of course, infinite series, they are. So, this is at the same time, the Mac-Tylor series generated by f at the point 0.
+
+75
+00:11:55,860 --> 00:12:00,899
+Bu, bu form, bu form, bu form, bu form,
+
+76
+00:12:00,899 --> 00:12:01,860
+bu form, bu form, bu form,
+
+77
+00:12:01,860 --> 00:12:09,860
+bu form, bu form,
+
+78
+00:12:09,860 --> 00:12:23,860
+bu form, bu form, bu form,
+
+79
+00:12:23,860 --> 00:12:53,860
+bu form, bu form, bu form, bu form, bu form, bu form, bu form, bu form, bu form, bu form, bu form, bu form, bu form, bu form, bu form, bu form, bu form, bu form, bu form, bu form, bu form, bu form, bu form, bu form, bu form, bu form, bu form, bu form, bu form, bu form, bu form, bu form, bu form, bu form, bu form, bu form, bu form, bu form, bu form, bu form, bu form, bu form, bu form, bu form, bu form, bu form, bu form, bu form, bu form, bu form, bu form, bu form, bu form, bu form, bu form, bu form, bu form, bu form, bu form, bu form, bu form, bu form, bu form, bu form, bu form, bu form, bu form, bu form, bu form, bu form, bu form, bu form, bu form, bu form, bu
+
+80
+00:12:53,860 --> 00:13:13,299
+Maybe you can think, not always, you can not always write, okay, for example, for this question, okay, one over x is equal to this function, this power series, no, not always, under some conditions, in, if we are working in the
+
+81
+00:13:13,299 --> 00:13:22,720
+convergent interval, for example, interval of convergence, if the real numbers are coming from,
+
+82
+00:13:22,720 --> 00:13:30,340
+under some conditions, our Taylor series expansion is equal to the function itself, just remember the power series,
+
+83
+00:13:31,039 --> 00:13:42,000
+we defined some functions, for example, one over one minus x, which is the geometric series, sum of a geometric series at the point a is one, and the ratio is x,
+
+84
+00:13:42,220 --> 00:13:52,420
+and one x is between minus one and one, this power series is equal to one over one minus x, for the any other real number outside of this interval of convergence,
+
+85
+00:13:52,720 --> 00:14:09,360
+We cannot say that, okay, this is a power series, I'm sorry, a power, specific power series, at the same time geometric series, but it is not always equal to a over one minus r, only under some convergence conditions, we have this equivalence.
+
+86
+00:14:09,360 --> 00:14:11,360
+I hope you understand me.
+
+87
+00:14:12,360 --> 00:14:21,420
+Write a function, write a power series expansion or Tyler McLaurin generated by a function is not always equal to the function itself.
+
+88
+00:14:22,200 --> 00:14:29,360
+Under some conditions or in the interval of convergence, we can write, okay, this power series expansion is equal to this function.
+
+89
+00:14:29,360 --> 00:14:32,360
+It's not easy to write.
+
+90
+00:14:32,360 --> 00:14:33,360
+It's not easy to understand.
+
+91
+00:14:33,360 --> 00:14:36,360
+Does this equation hold or not?
+
+92
+00:14:36,360 --> 00:14:37,360
+Okay.
+
+93
+00:14:37,360 --> 00:14:46,360
+For example, for this series, for this example, you will see that Tyler series by one over x at the point two, we will write generated by one over x.
+
+94
+00:14:46,360 --> 00:14:48,360
+And then we will just see.
+
+95
+00:14:48,360 --> 00:15:00,360
+If anywhere, if we have such a point, just getting this Tyler series is equal to one over x, equal to means converge to one over x, the sum of it is one over x.
+
+96
+00:15:00,360 --> 00:15:01,360
+Let's see.
+
+97
+00:15:01,360 --> 00:15:06,360
+Firstly, we need to write the Tyler series generated by one over x at the point two.
+
+98
+00:15:06,360 --> 00:15:14,360
+So we need f two, f prime of two, second order derivative of two, and order derivative at the point two in order to generalize it.
+
+99
+00:15:14,360 --> 00:15:16,360
+If it is possible, of course, not always.
+
+100
+00:15:16,360 --> 00:15:18,360
+Let's see.
+
+101
+00:15:18,360 --> 00:15:20,360
+This is our function.
+
+102
+00:15:20,360 --> 00:15:22,360
+f two also we need.
+
+103
+00:15:22,360 --> 00:15:26,360
+Derivator minus one over x square.
+
+104
+00:15:26,360 --> 00:15:29,360
+Value of it minus one over four.
+
+105
+00:15:29,360 --> 00:15:33,360
+Second order derivative, two over x cube.
+
+106
+00:15:33,360 --> 00:15:37,360
+Value one over two to three.
+
+107
+00:15:37,360 --> 00:15:41,360
+Third order derivative, minus six over x to four.
+
+108
+00:15:41,360 --> 00:16:07,360
+One over x cube.
+
+109
+00:15:41,716 --> 00:16:11,716
+ve 0.2'ye 0.2'ye 0.2'ye 0.4'ye 0.
+
+110
+00:16:11,716 --> 00:16:41,716
+0.4'ye 0
+
+111
+00:16:41,716 --> 00:16:46,375
+and order minus 1 to n and factorial over x to n plus 1.
+
+112
+00:16:46,735 --> 00:16:52,135
+So corresponding to the values of the function of these derivative functions at the point 2 becomes
+
+113
+00:16:52,135 --> 00:16:57,895
+minus 1 to n over 2 to n plus 1 easily.
+
+114
+00:16:58,375 --> 00:16:58,655
+Okay.
+
+115
+00:16:59,076 --> 00:17:00,796
+As you see from these values.
+
+116
+00:17:02,115 --> 00:17:09,036
+So the Taylor series is, which is generated by 1 over x at the point 2,
+
+117
+00:17:09,036 --> 00:17:13,576
+can be shown with these formalization and with these terms.
+
+118
+00:17:14,536 --> 00:17:15,836
+First, we need f2.
+
+119
+00:17:16,236 --> 00:17:17,875
+f' of 2 x minus 2.
+
+120
+00:17:18,256 --> 00:17:24,736
+Second order of f at the point 2 divided by 2 factorial times the second power of x minus 2.
+
+121
+00:17:25,655 --> 00:17:32,496
+And order derivative at the point 2 divided by n factorial times n power of x minus 2.
+
+122
+00:17:32,895 --> 00:17:33,496
+Blah, blah, blah, blah.
+
+123
+00:17:33,675 --> 00:17:36,915
+This is the general term, of course, and term you need to understand.
+
+124
+00:17:36,915 --> 00:17:45,215
+So f2, 1 over 2, these values, corresponding values, and term the general form.
+
+125
+00:17:45,635 --> 00:17:45,796
+Okay.
+
+126
+00:17:46,956 --> 00:17:48,976
+Why do we need to generalize it?
+
+127
+00:17:49,036 --> 00:17:52,496
+Because we need to understand, is this a specific series?
+
+128
+00:17:52,635 --> 00:17:57,256
+Otherwise, we cannot understand it is convergent or converges to a function.
+
+129
+00:17:57,415 --> 00:17:58,215
+We cannot understand.
+
+130
+00:17:58,316 --> 00:17:59,695
+Not an easy one.
+
+131
+00:17:59,695 --> 00:18:03,816
+We see that this is a geometric series at the same time.
+
+132
+00:18:04,836 --> 00:18:07,935
+And as you see, this is a geometric series.
+
+133
+00:18:09,155 --> 00:18:10,355
+A is the 1 over 2.
+
+134
+00:18:11,355 --> 00:18:15,036
+And R is minus x over 2 over 2.
+
+135
+00:18:15,375 --> 00:18:18,175
+Because positive, negative, positive, negative will continue.
+
+136
+00:18:18,596 --> 00:18:20,016
+So it's negative.
+
+137
+00:18:20,016 --> 00:18:25,615
+And we have the powers of x minus 2 over 2.
+
+138
+00:18:26,976 --> 00:18:27,395
+Okay.
+
+139
+00:18:27,556 --> 00:18:30,236
+And the ratio is 1 over 2.
+
+140
+00:18:31,316 --> 00:18:32,076
+Now look.
+
+141
+00:18:32,576 --> 00:18:37,236
+When it is convergent.
+
+142
+00:18:39,316 --> 00:18:40,155
+Geometric series.
+
+143
+00:18:40,155 --> 00:18:54,496
+And we have the powers of x.
+
+144
+00:18:47,092 --> 00:18:51,092
+Tell me, how will you understand after specifying the ge...
+
+145
+00:18:51,092 --> 00:18:53,092
+Okay, this is the geometric series and so...
+
+146
+00:18:57,299 --> 00:19:27,299
+Bu, P'leri, P'leri, P'leri, 1'i birçok, bu,
+
+147
+00:19:27,299 --> 00:19:57,299
+bu, bu
+
+148
+00:19:57,299 --> 00:20:57,299
+Bu, bu
+
+149
+00:20:57,299 --> 00:21:00,279
+Also x minus 2 is less than 2
+
+150
+00:21:00,279 --> 00:21:01,799
+You have to be careful
+
+151
+00:21:01,799 --> 00:21:04,960
+That means it's like having a square
+
+152
+00:21:04,960 --> 00:21:07,559
+Having a ball centered at 2
+
+153
+00:21:07,559 --> 00:21:09,639
+With the radius 2 as you see
+
+154
+00:21:09,639 --> 00:21:12,920
+On a specific circle
+
+155
+00:21:12,920 --> 00:21:14,859
+And in the insider points
+
+156
+00:21:14,859 --> 00:21:17,119
+Which is centered at the point 2
+
+157
+00:21:17,119 --> 00:21:18,099
+With the radius 2
+
+158
+00:21:18,099 --> 00:21:19,899
+Only in these topics
+
+159
+00:21:19,899 --> 00:21:21,259
+In these points
+
+160
+00:21:21,259 --> 00:21:23,899
+This Tyler series is convergent
+
+161
+00:21:23,899 --> 00:21:25,139
+And it is
+
+162
+00:21:25,139 --> 00:21:27,179
+Equal to the function
+
+163
+00:21:27,179 --> 00:21:28,019
+1 over x
+
+164
+00:21:31,635 --> 00:21:34,076
+Do you understand me? Is it okay?
+
+165
+00:21:44,915 --> 00:21:49,995
+You can ask me if you don't understand or I can repeat it.
+
+166
+00:21:56,819 --> 00:22:07,740
+Ah, it's the, [öğrenci], because once we have the geometric series, when it is less than one, absolutely convergent.
+
+167
+00:22:08,019 --> 00:22:15,799
+When it is absolutely less than one, it is convergent. That's why I get the absolute value of r, x minus two, less than two. Okay, that's all.
+
+168
+00:22:18,099 --> 00:22:26,000
+And for the real numbers, satisfying this inequality, we have this function as equal to this Taylor series expansion.
+
+169
+00:22:26,000 --> 00:22:36,519
+Not always. Once you generate a Taylor or Maclaurin series, it doesn't mean that always this series is equal to the function itself, not always.
+
+170
+00:22:37,099 --> 00:22:38,819
+Under some conditions and sometimes.
+
+171
+00:22:40,299 --> 00:22:40,819
+Okay.
+
+172
+00:22:46,003 --> 00:22:46,723
+Any question?
+
+173
+00:22:56,596 --> 00:23:26,596
+Bu, bu
+
+174
+00:23:26,596 --> 00:23:56,036
+Let's talk about the Tyler polynomials. Tyler polynomials PN we show, polynomials of order N become a first N terms of a Tyler series. That's why they are called Tyler polynomials like a finite number. Let F be a function with derivatives of order K for K is 1 to N as you see on a specific
+
+175
+00:23:56,596 --> 00:24:12,855
+integer. In some interval containing A as an interior point, then for any integer N from 0 to N, the Tyler polynomial of order N generated by F at the point X is A is the polynomial as shown.
+
+176
+00:24:14,455 --> 00:24:25,135
+That means you can just think that it is first N terms of a Tyler series makes and order Tyler polynomials.
+
+177
+00:24:26,596 --> 00:24:35,655
+Okay. If it was 2 for example, only these three terms we will have come up to second order derivative.
+
+178
+00:24:36,836 --> 00:24:46,135
+Here PN shows the N order. Lastly, N order derivative term we have in the sum. It's not going to infinity.
+
+179
+00:24:48,836 --> 00:24:50,836
+For any N we may have. Okay.
+
+180
+00:24:55,443 --> 00:24:59,243
+Of course, integers here, and these ants are integers.
+
+181
+00:25:03,092 --> 00:25:09,972
+E to x is a to x is a to x.
+
+182
+00:25:09,972 --> 00:25:27,652
+E to x is a to x.
+
+183
+00:25:27,652 --> 00:25:35,652
+At the same time while we are working on at the point zero, it is at the same time Baclaurin
+
+184
+00:25:35,652 --> 00:25:39,092
+series of a to x.
+
+185
+00:25:39,092 --> 00:25:40,612
+Let's see.
+
+186
+00:25:40,612 --> 00:25:48,132
+Since and order derivative of f is equal to again E to x and at any order of f at the
+
+187
+00:25:48,132 --> 00:25:50,772
+point zero it results one.
+
+188
+00:25:50,772 --> 00:25:59,652
+So we can easily write the Taylor series generated by E to x at the point zero is this.
+
+189
+00:25:59,652 --> 00:26:07,211
+Clearly f zero f prime of zero x second order derivative of f at the point zero divided by
+
+190
+00:26:07,211 --> 00:26:10,832
+two factorial times x squared blah blah blah.
+
+191
+00:26:10,832 --> 00:26:18,112
+So the terms will be one x x squared over two factorial x cubed over three factorial x to
+
+192
+00:26:18,112 --> 00:26:22,292
+over n factorial this is the general form of it.
+
+193
+00:26:22,292 --> 00:26:30,352
+So this Taylor series can be written k is zero to infinity x to k over k factorial.
+
+194
+00:26:30,352 --> 00:26:30,872
+Easily.
+
+195
+00:26:34,259 --> 00:26:42,119
+Again, I want to say that this is also the Maclaurin series for e to x because it is at the center 0.
+
+196
+00:26:47,635 --> 00:27:00,615
+What about the Taylor polynomial? The Taylor polynomial of order n at x0 is, come up only up to n term, 1, x, x square over 2 factorial, x square over 3 factorial, blah, blah, blah.
+
+197
+00:27:01,135 --> 00:27:14,875
+Come up to x to n over n factorial, last n term we write, so Pnx, last n term I mean. It's like a first n part of the Taylor series.
+
+198
+00:27:17,635 --> 00:27:20,175
+And we finish at the point n.
+
+199
+00:27:24,980 --> 00:27:33,440
+What about this example? Find the Taylor series and the Taylor polynomials generated by fx, cosx, at the point zero.
+
+200
+00:27:41,107 --> 00:27:45,107
+I want you to try to write the Taylor series and the Taylor polynomials.
+
+201
+00:27:45,567 --> 00:27:56,567
+And also I want you to write the f and the derivatives of f and according to the different derivatives of f, I need you to generalize them.
+
+202
+00:27:57,127 --> 00:28:05,387
+And then write me what is the general form of the Taylor series and the Taylor polynomials and what happens at the derivatives of cosine x at the point 0.
+
+203
+00:28:07,307 --> 00:28:08,567
+I'm waiting for you.
+
+204
+00:29:22,195 --> 00:29:32,115
+Have you written the derivatives? Generalize them, write the general formula about the derivatives of f, cosin x.
+
+205
+00:29:43,955 --> 00:29:45,195
+Bir kere, full about the orders.
+
+206
+00:29:47,775 --> 00:29:49,115
+Which order, which function?
+
+207
+00:29:50,275 --> 00:29:51,275
+Positivity, negativity.
+
+208
+00:29:55,124 --> 00:30:22,963
+vek
+
+209
+00:32:09,587 --> 00:32:15,587
+Evet, tamam.
+
+210
+00:32:15,587 --> 00:32:35,587
+Tamam.
+
+211
+00:32:39,923 --> 00:32:47,683
+And for any n you have this case, shevalyor, at the same time. And the values at the same time, at the point zero.
+
+212
+00:33:09,940 --> 00:33:10,820
+Anyone else?
+
+213
+00:33:12,600 --> 00:33:13,279
+Writing test?
+
+214
+00:33:17,395 --> 00:33:20,395
+Okay. Okay, thank you.
+
+215
+00:33:21,336 --> 00:33:21,935
+Anyone?
+
+216
+00:33:29,491 --> 00:33:30,451
+Kudun çıdan,
+
+217
+00:33:32,031 --> 00:33:33,071
+durabletimiz onlayı.
+
+218
+00:33:39,892 --> 00:33:41,072
+What about the others?
+
+219
+00:33:44,432 --> 00:33:48,231
+I think all of you know the derivatives of cosine x and sine x.
+
+220
+00:33:48,892 --> 00:33:50,572
+You will just be careful, that's all.
+
+221
+00:33:51,731 --> 00:33:52,092
+Okay.
+
+222
+00:33:54,572 --> 00:33:56,272
+Only [öğrenci].
+
+223
+00:33:56,872 --> 00:33:57,852
+What about the others?
+
+224
+00:34:02,804 --> 00:34:06,884
+Tamam. Generalize it. Yes or no? Esge?
+
+225
+00:34:16,148 --> 00:34:16,548
+Okay.
+
+226
+00:34:18,768 --> 00:34:19,887
+So, let's see.
+
+227
+00:34:20,408 --> 00:34:21,068
+Thank you.
+
+228
+00:34:22,028 --> 00:34:23,288
+Let's see the solution.
+
+229
+00:34:25,288 --> 00:34:31,448
+Here, it's important to write the old and ever orders of the derivative.
+
+230
+00:34:31,448 --> 00:34:41,327
+Because first order minus sine x, second order minus cosine, third order sine, fourth order cosine.
+
+231
+00:34:41,327 --> 00:34:49,548
+So, old powers, I'm sorry, old orders of the derivative, we have sine x.
+
+232
+00:34:51,148 --> 00:34:55,228
+Even order derivatives, cosine x.
+
+233
+00:34:55,228 --> 00:34:59,568
+And they are positive, negative, positive, negative in them.
+
+234
+00:35:00,307 --> 00:35:03,968
+So, n here, n plus 1.
+
+235
+00:35:05,008 --> 00:35:05,307
+Okay.
+
+236
+00:35:06,028 --> 00:35:09,508
+So, orders 2n and 2n plus 1, you need to write.
+
+237
+00:35:09,508 --> 00:35:16,988
+And corresponding, the values are, of course, at the point 0 for cosine x minus 1, 2n, it becomes.
+
+238
+00:35:18,268 --> 00:35:20,508
+For sine x, it's directly 0.
+
+239
+00:35:20,508 --> 00:35:27,887
+So, once we have the old order derivatives at the point 0, always results 0.
+
+240
+00:35:28,748 --> 00:35:28,887
+Okay.
+
+241
+00:35:30,008 --> 00:35:33,248
+These generalizations you need to do.
+
+242
+00:35:34,208 --> 00:35:38,168
+So, let's write the Tyler series and Tyler polynomials.
+
+243
+00:35:39,508 --> 00:35:50,108
+Tyler series generated by f at the point 0 is f0, f prime of 0x, a second order derivative at the point 0, divided by 2 factorial times x squared, blah, blah, blah.
+
+244
+00:35:50,508 --> 00:35:51,648
+And this is the end term.
+
+245
+00:35:51,928 --> 00:35:53,088
+It is at the point 0.
+
+246
+00:35:53,088 --> 00:35:56,608
+So, at the same time, it's Maclaurin series generated by cosine x.
+
+247
+00:35:57,688 --> 00:35:59,788
+So, write the corresponding values.
+
+248
+00:36:00,228 --> 00:36:00,988
+So, get 1.
+
+249
+00:36:02,988 --> 00:36:05,068
+Old orders, results 0.
+
+250
+00:36:05,468 --> 00:36:09,728
+So, we will have only event orders and event powers left.
+
+251
+00:36:10,168 --> 00:36:11,988
+Bölebilir miyim burada, kusura bakmayın?
+
+252
+00:36:12,008 --> 00:36:12,628
+Yes, you may.
+
+253
+00:36:12,807 --> 00:36:12,928
+No.
+
+254
+00:36:12,928 --> 00:36:13,847
+No problem.
+
+255
+00:36:13,847 --> 00:36:21,387
+We have used here.
+
+256
+00:36:22,228 --> 00:36:24,008
+We write the corresponding values because.
+
+257
+00:36:24,847 --> 00:36:26,008
+Haa, tamam.
+
+258
+00:36:26,228 --> 00:36:26,488
+Anladım.
+
+259
+00:36:26,708 --> 00:36:28,408
+Yani sadece ilk şeyleri bulmak için.
+
+260
+00:36:28,508 --> 00:36:28,968
+Tamam, anladım.
+
+261
+00:36:30,128 --> 00:36:31,168
+Tamam, tamam.
+
+262
+00:36:31,168 --> 00:36:32,847
+And then write general form of it.
+
+263
+00:36:33,568 --> 00:36:34,048
+Because.
+
+264
+00:36:35,528 --> 00:36:37,867
+For old orders.
+
+265
+00:36:38,448 --> 00:36:39,768
+1, 3, 5, 7.
+
+266
+00:36:40,128 --> 00:36:40,887
+Old orders.
+
+267
+00:36:41,228 --> 00:36:42,228
+We have 0 because.
+
+268
+00:36:42,728 --> 00:36:44,208
+The values, the derivative sign.
+
+269
+00:36:44,428 --> 00:36:45,867
+At the point 0, it becomes 0.
+
+270
+00:36:46,068 --> 00:36:47,208
+So, we will have only.
+
+271
+00:36:48,088 --> 00:36:51,347
+X ile çarpmak yerine, cos x sin x ile yaptım.
+
+272
+00:36:51,448 --> 00:36:52,768
+Yani siz x ile türettiniz.
+
+273
+00:36:52,908 --> 00:36:56,688
+x, x kare, x küp, x üzeri n diye gitti ya burada sizin yaptığınızda.
+
+274
+00:36:56,748 --> 00:36:57,867
+Benim havağım o galiba.
+
+275
+00:36:58,307 --> 00:37:00,748
+Ben sin x cos x diye gittim burada.
+
+276
+00:37:01,648 --> 00:37:01,968
+No.
+
+277
+00:37:02,307 --> 00:37:04,428
+We use f only for derivatives.
+
+278
+00:37:04,807 --> 00:37:07,048
+Look, here always x minus a to n.
+
+279
+00:37:07,708 --> 00:37:09,188
+Because it's the power series.
+
+280
+00:37:09,668 --> 00:37:09,928
+Tamam.
+
+281
+00:37:10,367 --> 00:37:13,288
+And at the point 0 here, so x minus 0.
+
+282
+00:37:13,688 --> 00:37:14,008
+Mm-hmm.
+
+283
+00:37:14,327 --> 00:37:14,608
+Okay.
+
+284
+00:37:15,008 --> 00:37:15,208
+Tamam.
+
+285
+00:37:15,208 --> 00:37:17,608
+For example, for the other one, no problem.
+
+286
+00:37:18,668 --> 00:37:19,628
+Any other example?
+
+287
+00:37:19,788 --> 00:37:24,188
+For example, for at the point 2, x minus 2 and the powers of x minus 2.
+
+288
+00:37:24,768 --> 00:37:24,968
+Tamam.
+
+289
+00:37:25,128 --> 00:37:27,327
+Coefficient is related with the function f.
+
+290
+00:37:27,807 --> 00:37:29,568
+And the derivatives at the center.
+
+291
+00:37:29,827 --> 00:37:29,968
+Okay.
+
+292
+00:37:30,387 --> 00:37:30,867
+Tamamdır.
+
+293
+00:37:31,168 --> 00:37:31,988
+Okay.
+
+294
+00:37:32,068 --> 00:37:33,248
+This is the general form.
+
+295
+00:37:34,048 --> 00:37:34,528
+And then.
+
+296
+00:37:36,327 --> 00:37:38,268
+So, write the values.
+
+297
+00:37:38,367 --> 00:37:45,387
+As you see, we have the even powers and even orders and the values at the point 0 divided with the n factorial.
+
+298
+00:37:45,387 --> 00:37:48,768
+So, we have the general form is 0 to infinity.
+
+299
+00:37:49,428 --> 00:37:52,208
+And look, we have 1 minus x squared over 4.
+
+300
+00:37:52,528 --> 00:37:53,948
+2, I'm sorry, 2 factorial.
+
+301
+00:37:54,307 --> 00:37:56,268
+Plus x to 4 over 4 factorial.
+
+302
+00:37:57,108 --> 00:38:02,048
+And for n term, minus 1 to n x to 2n over 2n factorial always.
+
+303
+00:38:02,048 --> 00:38:05,928
+And then, we have the best.
+
+304
+00:38:02,643 --> 00:38:13,683
+Çünkü altın k
+
+305
+00:38:43,683 --> 00:38:47,003
+Ve 0.0 x to 5 over 5!
+
+306
+00:38:47,323 --> 00:38:54,063
+That means 2n plus 1 becomes 0 because of the having the derivatives at the point 0.
+
+307
+00:38:54,443 --> 00:38:58,483
+Because for these derivatives 2n plus 1, sin x we have.
+
+308
+00:38:58,803 --> 00:39:01,723
+And sin x becomes 0 at the point 0.
+
+309
+00:39:01,843 --> 00:39:07,543
+That's why these old orders of f at the point 0 becomes 0.
+
+310
+00:39:07,543 --> 00:39:16,503
+That's why in this Tyler series expression we will have only the even orders and even powers of f.
+
+311
+00:39:16,503 --> 00:39:18,743
+Okay.
+
+312
+00:39:19,563 --> 00:39:22,243
+What happened when we use N?
+
+313
+00:39:22,243 --> 00:39:25,243
+Thank you.
+
+314
+00:39:25,780 --> 00:39:26,780
+Ne?
+
+315
+00:39:26,780 --> 00:39:28,780
+I couldn't understand your question.
+
+316
+00:39:28,780 --> 00:39:31,780
+I can't understand this question.
+
+317
+00:39:31,780 --> 00:39:34,780
+We can repeat it.
+
+318
+00:39:34,780 --> 00:39:36,780
+No, no.
+
+319
+00:39:36,780 --> 00:39:37,780
+Really?
+
+320
+00:39:37,780 --> 00:39:38,780
+No problem.
+
+321
+00:39:38,780 --> 00:39:40,780
+I can make you understand.
+
+322
+00:39:40,780 --> 00:39:43,780
+I'm sorry, but I couldn't understand your problem.
+
+323
+00:39:43,780 --> 00:39:47,780
+So if you want, I can repeat it one by one.
+
+324
+00:39:47,780 --> 00:39:49,780
+Let's look from the beginning.
+
+325
+00:39:49,780 --> 00:39:51,780
+This is our function.
+
+326
+00:39:51,780 --> 00:40:03,780
+We need to take the derivatives and also correspondingly, we need to get the derivatives at the point zero because this Tyler studies is us at the point zero.
+
+327
+00:40:03,780 --> 00:40:06,780
+That is, it's a Maclaurin at the same time.
+
+328
+00:40:06,780 --> 00:40:07,780
+Okay.
+
+329
+00:40:07,780 --> 00:40:09,780
+And we need to write them.
+
+330
+00:40:09,780 --> 00:40:10,780
+Derivatives we need to get.
+
+331
+00:40:10,780 --> 00:40:15,780
+And also we need to just evaluate the corresponding values of them at the point zero.
+
+332
+00:40:15,780 --> 00:40:18,780
+First derivative minus sign.
+
+333
+00:40:18,780 --> 00:40:20,780
+Second derivative minus cosine.
+
+334
+00:40:20,780 --> 00:40:22,780
+Third derivative sine x.
+
+335
+00:40:22,780 --> 00:40:26,780
+I hope you don't have any problem about having the derivatives of cosine x.
+
+336
+00:40:26,780 --> 00:40:28,780
+Sine cosine, sine cosine.
+
+337
+00:40:28,780 --> 00:40:31,780
+Derivatives and also correspondingly the integration also.
+
+338
+00:40:31,780 --> 00:40:34,780
+You have to be careful about positivity and negativity.
+
+339
+00:40:34,780 --> 00:40:37,780
+Cosine x will always have the derivative minus sine x.
+
+340
+00:40:37,780 --> 00:40:38,780
+Okay.
+
+341
+00:40:38,780 --> 00:40:45,780
+And that also, you know that sine function becomes zero at the point zero.
+
+342
+00:40:45,780 --> 00:40:49,780
+And since we have two n plus one order.
+
+343
+00:40:49,780 --> 00:40:54,780
+Two n plus one order of f, including sine x.
+
+344
+00:40:54,780 --> 00:40:58,780
+That's why it becomes zero because sine zero is zero.
+
+345
+00:40:58,780 --> 00:41:08,780
+We will have only the even order of the derivative of the function f at the point zero, which results minus one to n.
+
+346
+00:41:08,780 --> 00:41:11,780
+Here n is the even power.
+
+347
+00:41:11,780 --> 00:41:12,780
+Even number.
+
+348
+00:41:12,780 --> 00:41:19,780
+One order of f, including sine x.
+
+349
+00:41:16,596 --> 00:41:46,596
+Ve bu formu bir
+
+350
+00:41:46,596 --> 00:42:38,635
+bir bir
+
+351
+00:42:45,364 --> 00:42:49,543
+Please tell me if you need any other extra information or explanation about it.
+
+352
+00:42:51,003 --> 00:42:53,704
+If you have any confusion about it, please tell me.
+
+353
+00:42:58,291 --> 00:43:01,711
+Any of you has a problem with it?
+
+354
+00:43:03,711 --> 00:43:05,132
+Are you okay?
+
+355
+00:43:05,692 --> 00:43:06,911
+Clearly understand it.
+
+356
+00:43:08,911 --> 00:43:09,271
+Okay.
+
+357
+00:43:10,991 --> 00:43:13,592
+So, I will continue.
+
+358
+00:43:13,592 --> 00:43:13,931
+Okay.
+
+359
+00:43:18,963 --> 00:43:22,903
+Evet, bu liste de frequently used Tyler series.
+
+360
+00:43:25,403 --> 00:43:29,103
+These are really frequently used Tyler series.
+
+361
+00:43:29,103 --> 00:43:33,563
+We use much more these functions and the Tyler expansions of them.
+
+362
+00:43:33,943 --> 00:43:37,083
+And as you see, of course, once we have a power series,
+
+363
+00:43:37,603 --> 00:43:41,844
+specifically Tyler here, has a function form
+
+364
+00:43:41,844 --> 00:43:45,163
+or function form has a Tyler series expansion
+
+365
+00:43:45,163 --> 00:43:46,643
+or a power series expansion,
+
+366
+00:43:46,643 --> 00:43:49,923
+must be given with the interval of convergence.
+
+367
+00:43:49,923 --> 00:43:53,003
+Of course, as I said many times, many times,
+
+368
+00:43:53,804 --> 00:43:57,824
+always talking about any power series, you have to be careful.
+
+369
+00:43:58,224 --> 00:44:00,864
+If it is a KOTF function, you have to be careful.
+
+370
+00:44:01,403 --> 00:44:03,264
+Interval of convergence must be given.
+
+371
+00:44:04,304 --> 00:44:08,023
+If it is also all the real line, no problem,
+
+372
+00:44:08,103 --> 00:44:09,864
+it must be given because we cannot understand
+
+373
+00:44:09,864 --> 00:44:12,923
+for which values of X we have this function form of it
+
+374
+00:44:12,923 --> 00:44:15,884
+or for which values of X this function X
+
+375
+00:44:15,884 --> 00:44:18,143
+is having this power series expansion
+
+376
+00:44:18,143 --> 00:44:21,143
+in which condition they are same, they are equivalent.
+
+377
+00:44:21,683 --> 00:44:23,563
+That's why this is very, very important.
+
+378
+00:44:24,503 --> 00:44:24,603
+Okay.
+
+379
+00:44:26,244 --> 00:44:28,903
+So, let's see.
+
+380
+00:44:30,663 --> 00:44:31,983
+Attaver, I couldn't understand.
+
+381
+00:44:32,123 --> 00:44:32,784
+How do you feel?
+
+382
+00:44:33,744 --> 00:44:35,543
+From this figure, I couldn't understand.
+
+383
+00:44:35,903 --> 00:44:37,304
+Are you happy or confused?
+
+384
+00:44:37,304 --> 00:44:39,963
+or shocked?
+
+385
+00:44:41,963 --> 00:44:42,784
+Not happy?
+
+386
+00:44:42,983 --> 00:44:43,543
+Okay.
+
+387
+00:44:46,043 --> 00:44:48,163
+You don't need to remember all of them.
+
+388
+00:44:48,623 --> 00:44:52,103
+I'll just tell you, these are important Tyler series.
+
+389
+00:44:52,324 --> 00:44:54,304
+So, sometimes write them down
+
+390
+00:44:54,304 --> 00:44:56,703
+and you can easily remember them.
+
+391
+00:44:56,703 --> 00:44:58,583
+or if it is needed,
+
+392
+00:44:59,423 --> 00:45:03,043
+these expansions will be given you.
+
+393
+00:45:03,963 --> 00:45:04,563
+Don't worry.
+
+394
+00:45:04,643 --> 00:45:06,203
+You don't need to memorize all of them.
+
+395
+00:45:06,264 --> 00:45:07,643
+Of course not.
+
+396
+00:45:08,344 --> 00:45:10,103
+Not easy to remember all of them.
+
+397
+00:45:10,463 --> 00:45:12,923
+But I think you need to remember
+
+398
+00:45:12,923 --> 00:45:14,543
+the first one.
+
+399
+00:45:14,703 --> 00:45:15,483
+For me, please,
+
+400
+00:45:15,703 --> 00:45:17,903
+don't forget the geometric series,
+
+401
+00:45:18,023 --> 00:45:19,983
+which is the power series at the same time here.
+
+402
+00:45:20,643 --> 00:45:21,943
+Please don't forget this.
+
+403
+00:45:21,943 --> 00:45:23,423
+n is 0 to infinity,
+
+404
+00:45:23,603 --> 00:45:24,143
+x to n.
+
+405
+00:45:24,864 --> 00:45:26,523
+When x is less than 1,
+
+406
+00:45:26,583 --> 00:45:27,063
+absolutely,
+
+407
+00:45:27,563 --> 00:45:29,244
+is 1 over 1 minus x
+
+408
+00:45:29,244 --> 00:45:30,244
+and having this one.
+
+409
+00:45:30,764 --> 00:45:32,324
+Please, don't forget this one.
+
+410
+00:45:34,483 --> 00:45:36,364
+I think you need to directly remember
+
+411
+00:45:36,364 --> 00:45:38,324
+always, basically,
+
+412
+00:45:39,244 --> 00:45:40,844
+geometric series and x to n.
+
+413
+00:45:41,023 --> 00:45:41,244
+Please.
+
+414
+00:45:41,884 --> 00:45:43,703
+This is the alternating form of it.
+
+415
+00:45:44,563 --> 00:45:45,663
+1 over 1 plus x.
+
+416
+00:45:45,744 --> 00:45:46,384
+We did before.
+
+417
+00:45:47,384 --> 00:45:49,284
+e to x, maybe easily you can remember
+
+418
+00:45:49,284 --> 00:45:50,583
+x to n over n factorial.
+
+419
+00:45:50,583 --> 00:45:52,324
+and others,
+
+420
+00:45:52,443 --> 00:45:52,804
+of course,
+
+421
+00:45:52,844 --> 00:45:53,744
+not easy to remember.
+
+422
+00:45:54,384 --> 00:45:55,344
+But just note that,
+
+423
+00:45:55,543 --> 00:45:56,023
+note them.
+
+424
+00:45:56,603 --> 00:45:57,603
+Sometimes look at them
+
+425
+00:45:57,603 --> 00:45:59,023
+and while you are using them
+
+426
+00:45:59,023 --> 00:46:00,023
+again and again,
+
+427
+00:46:00,503 --> 00:46:00,943
+you can,
+
+428
+00:46:01,163 --> 00:46:01,483
+I think,
+
+429
+00:46:01,543 --> 00:46:02,523
+be familiar with them.
+
+430
+00:46:02,603 --> 00:46:03,003
+Don't worry.
+
+431
+00:46:03,523 --> 00:46:06,304
+These are so useful series.
+
+432
+00:46:08,083 --> 00:46:09,003
+Intervals are given.
+
+433
+00:46:09,864 --> 00:46:10,364
+Of course,
+
+434
+00:46:10,903 --> 00:46:12,003
+interval of convergence
+
+435
+00:46:12,003 --> 00:46:13,103
+they are given.
+
+436
+00:46:14,003 --> 00:46:15,623
+These two of them,
+
+437
+00:46:16,103 --> 00:46:17,203
+first two of them,
+
+438
+00:46:17,443 --> 00:46:18,523
+geometric,
+
+439
+00:46:18,523 --> 00:46:20,864
+as absolutely less than 1.
+
+440
+00:46:21,703 --> 00:46:22,304
+e to x,
+
+441
+00:46:23,224 --> 00:46:23,663
+easy,
+
+442
+00:46:23,804 --> 00:46:24,824
+but so useful.
+
+443
+00:46:25,264 --> 00:46:26,503
+And for any real number,
+
+444
+00:46:26,963 --> 00:46:28,244
+we have this expansion.
+
+445
+00:46:28,683 --> 00:46:30,083
+So e to x is a nice function,
+
+446
+00:46:30,163 --> 00:46:30,503
+I think.
+
+447
+00:46:31,163 --> 00:46:31,663
+And again,
+
+448
+00:46:31,724 --> 00:46:32,583
+for any real number,
+
+449
+00:46:32,703 --> 00:46:33,983
+sine x and cosine x,
+
+450
+00:46:34,043 --> 00:46:36,344
+having these power series expansions.
+
+451
+00:46:37,784 --> 00:46:40,183
+And we have x plus 1
+
+452
+00:46:40,183 --> 00:46:42,003
+while having the integration of it.
+
+453
+00:46:42,063 --> 00:46:42,804
+We did it before,
+
+454
+00:46:42,804 --> 00:46:43,543
+if you remember.
+
+455
+00:46:44,103 --> 00:46:44,884
+And that's why it's
+
+456
+00:46:44,884 --> 00:46:46,364
+between minus 1 and 1.
+
+457
+00:46:46,483 --> 00:46:46,844
+Also,
+
+458
+00:46:47,023 --> 00:46:48,523
+1 is a calculated time.
+
+459
+00:46:49,183 --> 00:46:50,143
+1 is also included,
+
+460
+00:46:50,463 --> 00:46:52,423
+this power series expansion.
+
+461
+00:46:52,603 --> 00:46:53,003
+And also,
+
+462
+00:46:53,203 --> 00:46:53,384
+lastly,
+
+463
+00:46:53,503 --> 00:46:54,603
+for arctangent x,
+
+464
+00:46:54,824 --> 00:46:55,864
+we have this one.
+
+465
+00:46:56,023 --> 00:46:57,083
+And we did it again,
+
+466
+00:46:57,244 --> 00:46:58,083
+arctangent x.
+
+467
+00:46:58,443 --> 00:46:59,123
+We did this.
+
+468
+00:46:59,483 --> 00:47:00,864
+While we have such a function,
+
+469
+00:47:01,224 --> 00:47:02,744
+just look up the exercises.
+
+470
+00:47:02,943 --> 00:47:03,224
+Again,
+
+471
+00:47:03,443 --> 00:47:04,563
+like the germative series,
+
+472
+00:47:04,663 --> 00:47:05,523
+when it is less than
+
+473
+00:47:05,523 --> 00:47:06,264
+an equal to 1,
+
+474
+00:47:06,264 --> 00:47:07,703
+absolutely,
+
+475
+00:47:08,403 --> 00:47:10,384
+we have this one easily.
+
+476
+00:47:10,523 --> 00:47:11,563
+They are so useful.
+
+477
+00:47:12,583 --> 00:47:13,764
+I think it's very important
+
+478
+00:47:13,764 --> 00:47:14,264
+to know
+
+479
+00:47:14,264 --> 00:47:16,503
+once we have a power series
+
+480
+00:47:16,503 --> 00:47:18,304
+and it's equal to a function.
+
+481
+00:47:18,835 --> 00:47:22,835
+Bu sayesinde de son olarak Tyler-Seresi ve Maclaurin-Seresi
+
+482
+00:47:22,835 --> 00:47:26,835
+Bu sayesinde de son olarak yaslaya ve Maclaurin-Seresi
+
+483
+00:47:26,835 --> 00:49:26,835
+Oluflerine Maclaurin-Seresi
+
+484
+00:49:12,467 --> 00:49:14,768
+Why we are using the non-series?
+
+485
+00:49:16,887 --> 00:49:18,047
+What does it mean?
+
+486
+00:49:19,607 --> 00:49:20,987
+Or why it is useful?
+
+487
+00:49:21,607 --> 00:49:21,807
+Why?
+
+488
+00:49:25,331 --> 00:49:30,931
+Efendim, if I ask you, don't see the example, just see the function, for example a.
+
+489
+00:49:31,411 --> 00:49:34,132
+1 over 3 times 2x plus x times cosine x.
+
+490
+00:49:34,571 --> 00:49:40,451
+If I ask you, please write the Taylor series expansion of this function at a point,
+
+491
+00:49:42,011 --> 00:49:43,391
+what will you write?
+
+492
+00:49:44,491 --> 00:49:46,331
+Or how will you do it?
+
+493
+00:49:56,724 --> 00:49:59,104
+You have just learned what to do?
+
+494
+00:50:04,436 --> 00:50:14,436
+Evet, semvalin, yorunlar, get the derivatives, and evaluate the derivatives at the specific point, which is the center, and so write the term, term by term.
+
+495
+00:50:20,244 --> 00:50:22,844
+Normal, bu ne basic way.
+
+496
+00:50:23,804 --> 00:50:25,884
+Yes, [öğrenci], you're right, well done.
+
+497
+00:50:26,443 --> 00:50:29,284
+It's a long process, I think so, such a long process.
+
+498
+00:50:30,024 --> 00:50:32,664
+Very nice comment on it.
+
+499
+00:50:33,443 --> 00:50:35,664
+So, we are using known series.
+
+500
+00:50:35,844 --> 00:50:37,204
+Which is the known series here?
+
+501
+00:50:37,584 --> 00:50:40,804
+For example, which one we can use for this function at A?
+
+502
+00:50:44,340 --> 00:50:49,340
+E to X, E to X,
+
+503
+00:50:49,340 --> 00:51:42,340
+E to X,
+
+504
+00:51:42,340 --> 00:51:47,340
+remaining in the intersection of the,
+
+505
+00:51:47,340 --> 00:51:49,340
+there in terms of convergence,
+
+506
+00:51:49,340 --> 00:51:52,340
+we can easily do it by the operations of power series,
+
+507
+00:51:52,340 --> 00:51:53,340
+because Tyler series,
+
+508
+00:51:53,340 --> 00:51:55,340
+they can the power series.
+
+509
+00:51:55,340 --> 00:51:57,340
+We can just add them,
+
+510
+00:51:57,340 --> 00:51:58,340
+subtracting them,
+
+511
+00:51:58,340 --> 00:51:59,340
+multiplying them,
+
+512
+00:51:59,340 --> 00:52:01,340
+we can easily do.
+
+513
+00:52:01,340 --> 00:52:02,340
+Okay.
+
+514
+00:52:02,340 --> 00:52:04,340
+That's why we are using.
+
+515
+00:52:04,340 --> 00:52:05,340
+Look,
+
+516
+00:52:05,340 --> 00:52:06,340
+in the first one,
+
+517
+00:52:06,340 --> 00:52:10,340
+2X is 2X,
+
+518
+00:52:10,340 --> 00:52:11,340
+no problem,
+
+519
+00:52:11,340 --> 00:52:12,340
+but we know,
+
+520
+00:52:12,340 --> 00:52:15,340
+power series form of the cosine X,
+
+521
+00:52:15,340 --> 00:52:16,340
+that means,
+
+522
+00:52:16,340 --> 00:52:17,340
+Maclaurin of cosine X,
+
+523
+00:52:17,340 --> 00:52:18,340
+as you see,
+
+524
+00:52:18,340 --> 00:52:19,340
+Maclaurin,
+
+525
+00:52:19,340 --> 00:52:21,340
+at 0.0 because,
+
+526
+00:52:21,340 --> 00:52:23,340
+and just multiply with X.
+
+527
+00:52:23,340 --> 00:52:24,340
+Yes,
+
+528
+00:52:24,340 --> 00:52:27,340
+we can multiply a power series with X,
+
+529
+00:52:27,340 --> 00:52:29,340
+with a custom multiple,
+
+530
+00:52:29,340 --> 00:52:30,340
+no problem.
+
+531
+00:52:30,340 --> 00:52:31,340
+We know that,
+
+532
+00:52:31,340 --> 00:52:35,340
+cosine X has this power series expansion for any real number.
+
+533
+00:52:35,340 --> 00:52:38,340
+So we can again multiply with X,
+
+534
+00:52:38,340 --> 00:52:41,340
+divide or multiply with the finite number.
+
+535
+00:52:41,340 --> 00:52:42,340
+Again,
+
+536
+00:52:42,340 --> 00:52:45,340
+we are still remaining in the same interval of convergence.
+
+537
+00:52:45,340 --> 00:52:52,340
+So we can easily have the power series expansion of this function by using the power series expansion of cosine X,
+
+538
+00:52:52,340 --> 00:52:54,340
+by having the algebraic operations,
+
+539
+00:52:54,340 --> 00:52:55,340
+that's all.
+
+540
+00:52:55,340 --> 00:52:56,340
+Easily.
+
+541
+00:52:56,340 --> 00:53:02,340
+2X plus 3 over plus 1 over 3 times X times cosine X.
+
+542
+00:53:02,340 --> 00:53:04,340
+Do the finite operations and it's okay.
+
+543
+00:53:04,340 --> 00:53:07,340
+It's very easy and short.
+
+544
+00:53:07,340 --> 00:53:09,340
+Okay.
+
+545
+00:53:09,340 --> 00:53:11,340
+For example,
+
+546
+00:53:11,340 --> 00:53:18,340
+this is the first application of the using power series of known functions.
+
+547
+00:53:18,340 --> 00:53:19,340
+and the other functions.
+
+548
+00:53:19,340 --> 00:53:20,340
+So,
+
+549
+00:53:20,340 --> 00:53:21,340
+this is the first application of the using power series.
+
+550
+00:53:21,340 --> 00:53:22,340
+So,
+
+551
+00:53:22,340 --> 00:53:23,340
+this is the first application of the using power series.
+
+552
+00:53:23,340 --> 00:53:24,340
+So,
+
+553
+00:53:24,340 --> 00:53:25,340
+this is the first application of the using power series.
+
+554
+00:53:25,340 --> 00:53:26,340
+So,
+
+555
+00:53:26,340 --> 00:53:27,340
+this is the first application of the using power series.
+
+556
+00:53:27,340 --> 00:53:28,340
+So,
+
+557
+00:53:28,340 --> 00:53:29,340
+this is the first application of the using power series.
+
+558
+00:53:29,340 --> 00:53:30,340
+So,
+
+559
+00:53:30,340 --> 00:53:31,340
+this is the first application of the using power series.
+
+560
+00:53:31,340 --> 00:53:32,340
+So,
+
+561
+00:53:32,340 --> 00:53:33,340
+this is the first application of the using power series.
+
+562
+00:53:33,340 --> 00:53:34,340
+So,
+
+563
+00:53:34,340 --> 00:53:35,340
+this is the first application of the using power series.
+
+564
+00:53:35,340 --> 00:53:36,340
+So,
+
+565
+00:53:36,340 --> 00:53:37,340
+this is the first application of the using power series.
+
+566
+00:53:37,340 --> 00:53:38,340
+So,
+
+567
+00:53:38,340 --> 00:53:39,340
+this is the first application of the using power series.
+
+568
+00:53:39,340 --> 00:53:40,340
+So,
+
+569
+00:53:40,340 --> 00:53:41,340
+this is the first application of the using power series.
+
+570
+00:53:41,340 --> 00:53:42,340
+So,
+
+571
+00:53:42,340 --> 00:53:43,340
+this is the first application of the using power series.
+
+572
+00:53:43,340 --> 00:53:44,340
+So,
+
+573
+00:53:30,099 --> 00:53:30,880
+Are you okay?
+
+574
+00:53:45,427 --> 00:53:48,167
+Okay, continue with the second one.
+
+575
+00:53:49,507 --> 00:53:50,367
+It's again easy.
+
+576
+00:53:50,827 --> 00:53:52,067
+E to x and cosine x.
+
+577
+00:53:52,147 --> 00:53:54,407
+E to x, cosine x.
+
+578
+00:53:54,967 --> 00:53:58,347
+We know how to multiply two different series.
+
+579
+00:53:58,907 --> 00:53:59,567
+Yes, we know.
+
+580
+00:53:59,847 --> 00:54:01,367
+Term by term we can multiply.
+
+581
+00:54:02,587 --> 00:54:07,927
+And first, for example, first three or four terms is enough to write.
+
+582
+00:54:09,147 --> 00:54:10,807
+So this is e to x.
+
+583
+00:54:11,987 --> 00:54:14,807
+Which has the general term x to n over n factorial.
+
+584
+00:54:16,188 --> 00:54:20,748
+And for cosine x minus one to k, it's the 2k or 2k factorial.
+
+585
+00:54:20,927 --> 00:54:21,367
+We did it.
+
+586
+00:54:21,807 --> 00:54:23,807
+Just multiply term by term.
+
+587
+00:54:24,067 --> 00:54:25,567
+You can start at any part.
+
+588
+00:54:25,667 --> 00:54:26,288
+It doesn't matter.
+
+589
+00:54:27,027 --> 00:54:31,327
+For multiplying one with these terms or multiplying one with these terms.
+
+590
+00:54:31,527 --> 00:54:32,327
+It doesn't matter.
+
+591
+00:54:33,647 --> 00:54:35,127
+So do the needed operations.
+
+592
+00:54:35,587 --> 00:54:36,627
+It's starting from here.
+
+593
+00:54:37,087 --> 00:54:41,748
+One times this minus x squared over two times this.
+
+594
+00:54:41,748 --> 00:54:46,708
+plus x to 4 over 4 times 4 factorial times this series.
+
+595
+00:54:47,248 --> 00:54:48,248
+No problem.
+
+596
+00:54:48,967 --> 00:54:51,567
+Anywhere you can start with the multiplication.
+
+597
+00:54:51,907 --> 00:54:52,427
+It doesn't matter.
+
+598
+00:54:52,567 --> 00:54:53,248
+It's invariant.
+
+599
+00:54:54,027 --> 00:54:55,927
+So just write.
+
+600
+00:54:56,387 --> 00:54:57,127
+Item mistaken.
+
+601
+00:54:57,127 --> 00:55:00,768
+It was 6 minus x cubed over 6.
+
+602
+00:55:01,587 --> 00:55:06,228
+And 1x minus x cubed over 6 minus x to 4 over 6.
+
+603
+00:55:06,887 --> 00:55:07,367
+Ula, ula, ula.
+
+604
+00:55:08,047 --> 00:55:13,307
+For first, custom term, x term, x cubed and x to 4.
+
+605
+00:55:13,987 --> 00:55:15,228
+For first terms.
+
+606
+00:55:15,228 --> 00:55:15,907
+Okay.
+
+607
+00:55:16,547 --> 00:55:17,527
+We got this result.
+
+608
+00:55:17,527 --> 00:55:17,728
+Okay.
+
+609
+00:55:17,728 --> 00:55:17,788
+We got this result.
+
+610
+00:55:17,788 --> 00:55:18,027
+Okay.
+
+611
+00:55:18,027 --> 00:55:18,087
+We got this result.
+
+612
+00:55:18,087 --> 00:55:18,167
+Okay.
+
+613
+00:55:18,167 --> 00:55:18,728
+We got this result.
+
+614
+00:55:18,728 --> 00:55:18,788
+Okay.
+
+615
+00:55:18,788 --> 00:55:19,667
+We got this result.
+
+616
+00:55:19,667 --> 00:55:19,728
+Okay.
+
+617
+00:55:19,728 --> 00:55:20,728
+We got this result.
+
+618
+00:55:20,728 --> 00:55:21,728
+Okay.
+
+619
+00:55:21,728 --> 00:55:22,728
+We got this result.
+
+620
+00:55:22,728 --> 00:55:23,728
+Okay.
+
+621
+00:55:23,728 --> 00:55:24,728
+We got this result.
+
+622
+00:55:24,728 --> 00:55:25,728
+Okay.
+
+623
+00:55:25,728 --> 00:55:26,728
+We got this result.
+
+624
+00:55:26,728 --> 00:55:27,728
+Okay.
+
+625
+00:55:27,728 --> 00:55:28,728
+We got this result.
+
+626
+00:55:28,728 --> 00:55:29,728
+Okay.
+
+627
+00:55:29,728 --> 00:55:30,728
+We got this result.
+
+628
+00:55:30,728 --> 00:55:31,728
+Okay.
+
+629
+00:55:31,728 --> 00:55:32,728
+We got this result.
+
+630
+00:55:32,728 --> 00:55:33,728
+Okay.
+
+631
+00:55:33,728 --> 00:55:34,728
+We got this result.
+
+632
+00:55:34,728 --> 00:55:35,728
+Okay.
+
+633
+00:55:35,728 --> 00:55:36,728
+We got this result.
+
+634
+00:55:36,728 --> 00:55:37,728
+Okay.
+
+635
+00:55:37,728 --> 00:55:38,728
+We got this result.
+
+636
+00:55:38,728 --> 00:55:39,728
+Okay.
+
+637
+00:55:39,728 --> 00:55:40,728
+We got this result.
+
+638
+00:55:40,728 --> 00:55:41,728
+Okay.
+
+639
+00:55:41,728 --> 00:55:42,728
+We got this result.
+
+640
+00:55:42,728 --> 00:55:43,728
+Okay.
+
+641
+00:55:43,728 --> 00:55:44,728
+We got this result.
+
+642
+00:55:23,827 --> 00:55:26,367
+I think it's clear and easy what to do.
+
+643
+00:55:26,947 --> 00:55:31,688
+Just substitute the power series expansion to a new function.
+
+644
+00:55:32,327 --> 00:55:33,427
+Just substituting it.
+
+645
+00:55:34,188 --> 00:55:40,168
+If you need any multiplication, subtraction, and addition, no problem.
+
+646
+00:55:40,268 --> 00:55:41,088
+You can do it.
+
+647
+00:55:41,728 --> 00:55:48,788
+And you need to remember, you have to remain in the intersection of their interval of convergences.
+
+648
+00:55:51,588 --> 00:55:52,807
+Yes, you have to be careful.
+
+649
+00:55:52,807 --> 00:55:56,668
+You have to be careful about the operations and the terms.
+
+650
+00:55:56,668 --> 00:55:56,987
+You have to be careful.
+
+651
+00:56:02,643 --> 00:56:05,563
+Bu, birçok bir kısım, birçok bir kısım var.
+
+652
+00:56:06,163 --> 00:56:11,023
+Birçok bir kısım var.
+
+653
+00:56:11,023 --> 00:56:12,583
+Ve bu kısım var.
+
+654
+00:56:12,823 --> 00:56:15,143
+Bu kısım var.
+
+655
+00:56:16,063 --> 00:56:20,123
+Kısım var.
+
+656
+00:56:21,123 --> 00:56:22,243
+Ve no kısım var.
+
+657
+00:56:23,043 --> 00:56:23,923
+Ve kısım var.
+
+658
+00:56:23,923 --> 00:56:25,143
+Kısım var.
+
+659
+00:56:26,683 --> 00:56:27,283
+5.
+
+660
+00:56:27,863 --> 00:56:31,023
+Kısım var.
+
+661
+00:56:31,023 --> 00:56:32,963
+4 over 4, for example.
+
+662
+00:56:35,963 --> 00:56:36,883
+This is positive.
+
+663
+00:56:36,983 --> 00:56:37,383
+I'm sorry.
+
+664
+00:56:38,563 --> 00:56:40,063
+Negative becomes positive.
+
+665
+00:56:42,803 --> 00:56:44,203
+You have to be careful.
+
+666
+00:56:45,923 --> 00:56:46,443
+I'm sorry.
+
+667
+00:56:48,343 --> 00:56:53,243
+If you are okay, let's continue with the second application of it.
+
+668
+00:56:53,703 --> 00:56:55,623
+Evolating non-elementary integrals.
+
+669
+00:56:57,003 --> 00:57:01,003
+Power series gives us solution to the non-elementary integrals.
+
+670
+00:57:01,023 --> 00:57:05,163
+You know the non-elementary integrals?
+
+671
+00:57:06,983 --> 00:57:09,083
+Yes, you know I think mathematics one.
+
+672
+00:57:10,083 --> 00:57:14,283
+We cannot evaluate sometimes an integral with fundamental methods.
+
+673
+00:57:15,283 --> 00:57:17,543
+So we need other methods.
+
+674
+00:57:17,543 --> 00:57:21,583
+like having, for example, series expansions.
+
+675
+00:57:22,283 --> 00:57:24,783
+To use like numerical solutions.
+
+676
+00:57:25,323 --> 00:57:28,384
+It's series solution.
+
+677
+00:57:28,703 --> 00:57:32,884
+We may have for non-elementary integrals using the power series expansion of them.
+
+678
+00:57:33,543 --> 00:57:34,203
+For example,
+
+679
+00:57:34,203 --> 00:57:36,963
+sine x squared.
+
+680
+00:57:36,963 --> 00:57:38,063
+Sine x squared.
+
+681
+00:57:38,063 --> 00:57:39,103
+Sine x squared you cannot integrate.
+
+682
+00:57:39,623 --> 00:57:41,763
+Because it needs x with it.
+
+683
+00:57:41,903 --> 00:57:42,703
+But we don't have.
+
+684
+00:57:43,363 --> 00:57:44,843
+And it's the indefinite integral.
+
+685
+00:57:45,703 --> 00:57:47,123
+So nothing to do here.
+
+686
+00:57:47,963 --> 00:57:50,963
+So sine x squared dx is a non-elementary integral.
+
+687
+00:57:50,963 --> 00:57:54,463
+And we will just write it as a power series.
+
+688
+00:57:54,603 --> 00:57:57,723
+That means the solution will be a power series expansion, of course.
+
+689
+00:58:00,023 --> 00:58:03,003
+Look, sine x having this series expansion.
+
+690
+00:58:03,523 --> 00:58:05,663
+x minus x cubed over 3 factorial.
+
+691
+00:58:05,923 --> 00:58:07,723
+Plus x to 5 over 5 factorial.
+
+692
+00:58:07,863 --> 00:58:08,363
+And etc.
+
+693
+00:58:08,363 --> 00:58:10,543
+We need x squared.
+
+694
+00:58:11,003 --> 00:58:11,203
+Okay.
+
+695
+00:58:11,363 --> 00:58:13,123
+Substitute x squared for x.
+
+696
+00:58:13,723 --> 00:58:15,003
+Sine x squared.
+
+697
+00:58:15,543 --> 00:58:16,203
+X squared.
+
+698
+00:58:16,503 --> 00:58:19,023
+Minus x to 6 over 3 factorial.
+
+699
+00:58:19,523 --> 00:58:20,483
+x to 10.
+
+700
+00:58:21,163 --> 00:58:22,203
+x to 14.
+
+701
+00:58:22,523 --> 00:58:23,363
+x to 18.
+
+702
+00:58:25,384 --> 00:58:25,943
+Okay.
+
+703
+00:58:26,303 --> 00:58:27,323
+Again, positive, negative.
+
+704
+00:58:27,503 --> 00:58:28,143
+Positive, negative.
+
+705
+00:58:28,903 --> 00:58:30,884
+And we have sine x squared.
+
+706
+00:58:31,223 --> 00:58:35,023
+Now, you know, for power series, we can have term-by-term integration.
+
+707
+00:58:35,023 --> 00:58:35,783
+It's possible.
+
+708
+00:58:35,783 --> 00:58:40,043
+So let's integrate this power series term-by-term.
+
+709
+00:58:40,483 --> 00:58:43,023
+Because we need the integration of sine x squared.
+
+710
+00:58:43,384 --> 00:58:44,384
+But as a power series.
+
+711
+00:58:44,583 --> 00:58:46,763
+Because we have only this way for this one.
+
+712
+00:58:47,343 --> 00:58:47,863
+Solution.
+
+713
+00:58:48,503 --> 00:58:48,763
+Okay.
+
+714
+00:58:49,483 --> 00:58:50,143
+Term-by-term.
+
+715
+00:58:50,483 --> 00:58:51,063
+x squared.
+
+716
+00:58:51,643 --> 00:58:52,884
+Integration of x squared.
+
+717
+00:58:53,863 --> 00:58:54,743
+x cubed over 3.
+
+718
+00:58:55,503 --> 00:58:58,163
+Integration of x to 6 over 3 factorial.
+
+719
+00:58:59,123 --> 00:59:02,063
+Minus x to 7 over 7 times 3 factorial.
+
+720
+00:59:02,863 --> 00:59:04,703
+x to 10 over 5 factorial.
+
+721
+00:59:04,703 --> 00:59:08,043
+x to 11 over 11 times 5 factorial.
+
+722
+00:59:08,283 --> 00:59:08,823
+And et cetera.
+
+723
+00:59:09,483 --> 00:59:10,243
+And plus c.
+
+724
+00:59:10,603 --> 00:59:12,343
+And arbitrary constant to the integration.
+
+725
+00:59:12,983 --> 00:59:15,103
+So we just express this integration.
+
+726
+00:59:15,663 --> 00:59:17,303
+As a power series expansion.
+
+727
+00:59:17,303 --> 00:59:18,303
+And we're going to be able to do that.
+
+728
+00:59:18,303 --> 00:59:29,803
+So we're going to be able to do that.
+
+729
+00:59:24,052 --> 00:59:24,952
+Are you okay?
+
+730
+00:59:48,052 --> 00:59:50,472
+Okay, I think so.
+
+731
+00:59:52,172 --> 01:00:01,612
+We are using expansion of sin x to solve or evaluate non-elementary integral, which is sin x squared x.
+
+732
+01:00:02,932 --> 01:00:03,231
+Okay.
+
+733
+01:00:05,332 --> 01:00:07,032
+What about the next one?
+
+734
+01:00:07,832 --> 01:00:16,952
+Also, we can use power series expansions, or Taylor-Maclaurin, to evaluate intermediate indeterminant form.
+
+735
+01:00:16,952 --> 01:00:18,932
+I'm sorry, indeterminate forms.
+
+736
+01:00:19,592 --> 01:00:21,152
+For limits, for example.
+
+737
+01:00:27,347 --> 01:00:31,027
+Bu bir alternatif bir metodoluz.
+
+738
+01:00:31,027 --> 01:00:33,587
+Bu bir metodoluz, ama bu bir metodoluz,
+
+739
+01:00:33,587 --> 01:00:35,507
+ama bu konuda,
+
+740
+01:00:35,507 --> 01:00:37,587
+bu konuda,
+
+741
+01:00:37,587 --> 01:00:39,347
+Tyler-Mackler-Series'in ve
+
+742
+01:00:40,708 --> 01:00:42,307
+yazı ve yazı ve yazı
+
+743
+01:00:42,307 --> 01:00:45,268
+yazı ve yazı yazı.
+
+744
+01:00:46,547 --> 01:00:48,547
+Bu, bir metodoluz,
+
+745
+01:00:49,268 --> 01:01:25,507
+bir metodoluz,
+
+746
+01:01:25,507 --> 01:01:27,507
+ve 1 over x
+
+747
+01:01:27,507 --> 01:01:29,507
+over 1,
+
+748
+01:01:29,507 --> 01:01:31,507
+1x is going to 1,
+
+749
+01:01:31,507 --> 01:01:33,507
+isn't it?
+
+750
+01:01:33,507 --> 01:01:35,507
+Bu metodoluz,
+
+751
+01:01:35,507 --> 01:02:17,507
+bir metodoluz,
+
+752
+01:02:17,507 --> 01:02:19,507
+write lnx as the Tyler series
+
+753
+01:02:19,507 --> 01:02:21,507
+in powers of x minus 1.
+
+754
+01:02:21,507 --> 01:02:23,507
+This can be accomplished
+
+755
+01:02:23,507 --> 01:02:25,507
+by calculating the Tyler series
+
+756
+01:02:25,507 --> 01:02:29,507
+generated by lnx at the point x is 1.
+
+757
+01:02:29,507 --> 01:02:31,507
+So let's see.
+
+758
+01:02:31,507 --> 01:02:32,507
+ln plus x,
+
+759
+01:02:32,507 --> 01:02:33,507
+we did it before.
+
+760
+01:02:33,507 --> 01:02:34,507
+x,
+
+761
+01:02:34,507 --> 01:02:36,507
+x to x square over 2,
+
+762
+01:02:36,507 --> 01:02:37,507
+x cube over 3,
+
+763
+01:02:37,507 --> 01:02:38,507
+positive, negative,
+
+764
+01:02:38,507 --> 01:02:39,507
+positive, negative.
+
+765
+01:02:39,507 --> 01:02:43,507
+We can have lnx by writing x is x minus 1.
+
+766
+01:02:43,507 --> 01:02:45,507
+And so lnx is this.
+
+767
+01:02:49,108 --> 01:03:04,908
+And divide it with x minus 1 easily. Divide x minus 1, 1. x minus 1 divide with x minus 1, so minus x minus 1 over 2. Divide with x minus 1, x minus 1, all square over 3, and etc.
+
+768
+01:03:04,908 --> 01:03:16,248
+So, this limit results, when x is going to 1, these are going to 0. Not an indeterminate form you have, and only the first term is 1, the others are going to 0.
+
+769
+01:03:16,608 --> 01:03:22,068
+So, limit is, we need it to be, it's again equal to 1, like we did in the L'Opital rule.
+
+770
+01:03:22,428 --> 01:03:29,788
+So, this is another way, while using the power series expansion of the function, while we have indeterminate forms in the limits.
+
+771
+01:03:52,884 --> 01:03:53,764
+Are you okay?
+
+772
+01:04:10,132 --> 01:04:10,692
+Any question?
+
+773
+01:04:16,820 --> 01:04:20,039
+Okay, any of you, any questions? You can ask me please.
+
+774
+01:04:31,603 --> 01:04:33,143
+Tamam, devam edelim.
+
+775
+01:04:44,500 --> 01:04:52,880
+Ah, yes, we may have a break. If you want short or long, it's up to you. Yes, if you got tired, we can have.
+
+776
+01:05:02,516 --> 01:05:03,776
+15 minutes is enough?
+
+777
+01:05:05,635 --> 01:05:06,615
+What do you think?
+
+778
+01:05:10,867 --> 01:05:11,228
+Ok.
+
+779
+01:05:20,148 --> 01:05:23,588
+If you want, another 10 minutes later we may have.
+
+780
+01:05:26,788 --> 01:05:28,548
+You decide, it doesn't matter for me.
+
+781
+01:05:29,668 --> 01:05:33,188
+Okay, so let's have 10 minutes.
+
+782
+01:17:37,652 --> 01:17:39,792
+Hi again, shall we continue if you're okay?
+
+783
+01:17:54,260 --> 01:17:54,539
+Ok.
+
+784
+01:17:59,475 --> 01:18:01,475
+I think this question is okay.
+
+785
+01:18:01,475 --> 01:18:07,475
+We are using the power series, or Tyler-Maclaurin series,
+
+786
+01:18:07,475 --> 01:18:11,475
+for using power series expansion of some other functions
+
+787
+01:18:11,475 --> 01:18:15,475
+which is generated by some addition multiplication of non-series.
+
+788
+01:18:15,475 --> 01:18:20,475
+Or we can use them by having the solution of nanoelemetry integrals,
+
+789
+01:18:20,475 --> 01:18:24,475
+or while solving the intermediate forms.
+
+790
+01:18:24,475 --> 01:18:27,475
+Okay, replications.
+
+791
+01:18:27,475 --> 01:18:30,475
+What's next example?
+
+792
+01:18:30,475 --> 01:18:33,475
+For example, once we have limit indexes going to zero,
+
+793
+01:18:33,475 --> 01:18:37,475
+sine x minus tangent x over x cube.
+
+794
+01:18:37,475 --> 01:18:41,475
+sine 0, 0, 0 over 0, 0 over 0.
+
+795
+01:18:41,475 --> 01:18:44,475
+You can, of course, solve it with the Levitin rule,
+
+796
+01:18:44,475 --> 01:18:56,475
+or while using the solution expansion of power series of sine and cosine x at the point zero.
+
+797
+01:18:56,475 --> 01:19:08,475
+And we have the first sine x minus tangent x, as you see, and divided with x cube.
+
+798
+01:19:08,475 --> 01:19:14,475
+So as you see, we have the, how can I say, x cube.
+
+799
+01:19:14,475 --> 01:19:16,475
+The least power x cube.
+
+800
+01:19:16,475 --> 01:19:21,475
+And we have in the denominator x cube already, which means from this constellation,
+
+801
+01:19:21,475 --> 01:19:27,475
+which means that no element, no indeterminate form we have left after division,
+
+802
+01:19:27,475 --> 01:19:30,475
+which means results, the finite limit.
+
+803
+01:19:30,475 --> 01:19:35,475
+Because the terms, the other terms here, going to zero, when x is going to zero,
+
+804
+01:19:35,475 --> 01:19:38,475
+on the left, Carson term is minus 1 over 2,
+
+805
+01:19:38,475 --> 01:19:41,475
+which is the result of this limit easily,
+
+806
+01:19:41,475 --> 01:19:47,475
+with sine x and tangent x and the power series expansions of them at the point zero.
+
+807
+01:20:03,604 --> 01:20:05,364
+I think it's okay, it's clear.
+
+808
+01:20:13,108 --> 01:20:13,488
+Hmm.
+
+809
+01:20:21,844 --> 01:20:25,064
+I'm not sure, maybe a little bit harder, possibly.
+
+810
+01:20:26,064 --> 01:20:38,524
+But the main idea is this, using a power series expansions of some functions for non-elementary integrals or indeterminate forms, in my opinion.
+
+811
+01:20:43,123 --> 01:20:44,804
+I think, of course, a little bit harder.
+
+812
+01:20:45,523 --> 01:20:46,603
+For example, this one.
+
+813
+01:20:51,667 --> 01:20:55,647
+When x is going to 0, function is 1 over sin x minus 1 over x.
+
+814
+01:20:56,247 --> 01:20:57,447
+What do we have here?
+
+815
+01:20:57,787 --> 01:20:59,407
+Which indeterminate form tell me?
+
+816
+01:21:00,367 --> 01:21:03,947
+Once you substitute x is 0, that means when x is approaching 0,
+
+817
+01:21:05,327 --> 01:21:07,147
+what happens to the function here?
+
+818
+01:21:14,292 --> 01:21:15,692
+Winix is 0.
+
+819
+01:21:17,372 --> 01:21:19,852
+What does this function converge?
+
+820
+01:21:21,412 --> 01:21:22,092
+What do you think?
+
+821
+01:21:27,891 --> 01:21:28,511
+Tell me.
+
+822
+01:21:37,076 --> 01:21:39,176
+1 over sin x at the point 0.
+
+823
+01:21:40,235 --> 01:21:41,475
+Okay, yes, you're right.
+
+824
+01:21:42,176 --> 01:21:43,336
+Exactly, it must be.
+
+825
+01:21:44,015 --> 01:21:47,435
+But my question was, what is the indeterminate form here?
+
+826
+01:21:48,015 --> 01:21:48,676
+Yes, you're right.
+
+827
+01:21:49,195 --> 01:21:50,855
+What is the indeterminate form here?
+
+828
+01:21:52,456 --> 01:21:55,355
+1 over sin x minus 1 over x at the point 0.
+
+829
+01:22:11,539 --> 01:22:24,060
+No, once you put x is 0, what happens? I'm just asking. 1 over sin 0, 0. 1 over 0, infinity. Infinity negative infinity. Infinity minus infinity, I mean.
+
+830
+01:22:26,539 --> 01:22:35,199
+Okay, once you put x is 0, this expression is going to infinity minus infinity, which is one of the indeterminate forms.
+
+831
+01:22:35,199 --> 01:22:45,539
+And remember, once we have infinity minus infinity, we were just aimed to make it 0 over 0, infinity over infinity, while having the multiplication like [öğrenci] says.
+
+832
+01:22:45,680 --> 01:22:47,159
+Yes, we need to do it.
+
+833
+01:22:50,019 --> 01:22:56,140
+And then, using the solution of sin x, solution mean, I mean, power series expansion.
+
+834
+01:22:57,039 --> 01:23:01,979
+Using the power series expansion of sin x, will we evaluate it easily?
+
+835
+01:23:01,979 --> 01:23:07,439
+x minus sin x over x minus sin x over x times sin x.
+
+836
+01:23:07,439 --> 01:23:10,060
+Write them using sin x.
+
+837
+01:23:25,908 --> 01:23:26,368
+Lesti.
+
+838
+01:23:31,028 --> 01:23:32,088
+Sin x is this.
+
+839
+01:23:32,528 --> 01:23:36,208
+x minus x cube over 3 factorial plus x to 5 over 5 factorial.
+
+840
+01:23:36,828 --> 01:23:38,528
+Negative, positive, negative, positive, negative.
+
+841
+01:23:39,608 --> 01:23:44,048
+And write x minus sin x over x times sin x.
+
+842
+01:23:44,048 --> 01:23:49,048
+That means just get subtraction of minus sin x and then multiply with x.
+
+843
+01:23:49,828 --> 01:23:50,148
+Okay.
+
+844
+01:23:50,908 --> 01:23:51,568
+And get this.
+
+845
+01:23:52,148 --> 01:23:56,988
+And then do the needed operations and see what we have left after this division.
+
+846
+01:23:56,988 --> 01:24:02,608
+x minus x plus x cube over 3 factorial minus x to 5 over 5 factorial.
+
+847
+01:24:03,068 --> 01:24:06,408
+And in the denominator, we just multiply the sin x with x.
+
+848
+01:24:06,488 --> 01:24:07,448
+So we get this series.
+
+849
+01:24:08,548 --> 01:24:08,828
+And then.
+
+850
+01:24:09,828 --> 01:24:13,007
+Of course, as much as possible, write this simple form of it.
+
+851
+01:24:13,007 --> 01:24:16,408
+And we have a common power of x, which is x squared.
+
+852
+01:24:18,108 --> 01:24:20,128
+And here x cube is the least power.
+
+853
+01:24:21,007 --> 01:24:25,828
+So just grouping of x cube of the numerator and x square of the denominator.
+
+854
+01:24:25,828 --> 01:24:27,748
+And see the cancellations.
+
+855
+01:24:29,068 --> 01:24:39,828
+And as you see here, we have x times 1 over 3 factorial minus x squared over 5 factorial over in the denominator.
+
+856
+01:24:40,788 --> 01:24:45,268
+1 minus x squared over 3 factorial plus x cube over 5 factorial.
+
+857
+01:24:46,268 --> 01:24:46,588
+So.
+
+858
+01:24:47,248 --> 01:24:48,028
+Now think.
+
+859
+01:24:48,368 --> 01:24:49,648
+X is going to 0.
+
+860
+01:24:50,408 --> 01:24:53,307
+The denominator is going to 1.
+
+861
+01:24:53,307 --> 01:24:55,248
+So no indeterminate form.
+
+862
+01:24:55,668 --> 01:24:57,268
+Numerator is only going to 0.
+
+863
+01:24:57,708 --> 01:24:59,467
+So this limit results 0.
+
+864
+01:24:59,467 --> 01:25:02,967
+So.
+
+865
+01:25:05,235 --> 01:25:10,015
+Here, when x is going to 0, it's going to 0, but 1, Mihael.
+
+866
+01:25:10,355 --> 01:25:14,076
+So 1 minus 0 plus 0, denominator is 1.
+
+867
+01:25:15,175 --> 01:25:18,195
+Numerator is 0 times 1 over 3 factorial.
+
+868
+01:25:19,036 --> 01:25:22,095
+So 0 over 1, 0.
+
+869
+01:25:22,916 --> 01:25:25,355
+It's a finite real number.
+
+870
+01:25:39,028 --> 01:25:51,467
+Şimdi sin x'ı
+
+871
+01:26:13,460 --> 01:26:14,020
+Any question?
+
+872
+01:26:31,731 --> 01:26:32,631
+Evet, I think so.
+
+873
+01:26:33,631 --> 01:26:35,152
+It was not so hard.
+
+874
+01:26:36,231 --> 01:26:36,771
+So continue.
+
+875
+01:26:38,631 --> 01:26:52,952
+For example, show that ln 1 plus x over 1 minus x is equal to 2 times x plus x cubed over 3 plus x to 5 over 5 plus blah, blah, blah.
+
+876
+01:26:55,332 --> 01:27:00,051
+Now, can you show that this function is equal to this power series form?
+
+877
+01:27:01,731 --> 01:27:06,192
+ln 1 plus x over 1 minus x.
+
+878
+01:27:14,612 --> 01:27:41,391
+Evet, you need to know. And you know, we did. And for example, last week we did ln 1 plus x, we know. Also you can make ln 1 minus x. You can evaluate. You can evaluate all of them from the geometric series. 1 over 1 minus x is equal to, and 0 to infinity, x to n, that's all. You can easily write.
+
+879
+01:27:45,363 --> 01:27:49,884
+Or, if you know the formula of ln 1 plus x and ln 1 minus x, you will see.
+
+880
+01:27:50,703 --> 01:27:53,223
+But, I advise you to evaluate them.
+
+881
+01:27:54,263 --> 01:28:02,083
+ln x plus 1, or maybe you know ln 1 minus x, using it x plus 1, you can make it.
+
+882
+01:28:11,283 --> 01:28:15,344
+1 over 1 minus x, ve geometrik serisi, you can evaluate all of them.
+
+883
+01:28:15,583 --> 01:28:17,143
+Yes, yes, of course.
+
+884
+01:28:24,819 --> 01:28:26,819
+Evet, ben bekliyorum.
+
+885
+01:28:29,059 --> 01:28:33,699
+Evet, evet.
+
+886
+01:30:43,028 --> 01:30:44,248
+I'm waiting for you.
+
+887
+01:30:46,768 --> 01:30:48,467
+Tell me if you have any problem.
+
+888
+01:30:50,708 --> 01:30:51,748
+Just ask me.
+
+889
+01:31:11,060 --> 01:31:27,440
+Ok, and you can get 1 over, that means ln 1 minus x, easily, easier, because you know 1 over 1 minus x, and by integrating, you can get ln 1 minus x.
+
+890
+01:31:29,440 --> 01:31:35,980
+And then just get the substraction, you will see that directly, this function you will have, two times of this expression.
+
+891
+01:32:04,564 --> 01:32:08,224
+Well done, [öğrenci]. So, anyone else could do it?
+
+892
+01:32:28,692 --> 01:32:29,631
+Anyone else?
+
+893
+01:33:01,011 --> 01:33:02,011
+Really?
+
+894
+01:33:03,011 --> 01:33:08,011
+That means do you have a mistake about the calculation item, positive negative mistake it can be.
+
+895
+01:33:08,011 --> 01:33:12,011
+And if we get the ln 1 plus x and 1 minus x, it's okay.
+
+896
+01:33:12,011 --> 01:33:13,011
+Well done.
+
+897
+01:33:14,011 --> 01:33:15,011
+Anyone else?
+
+898
+01:33:17,011 --> 01:33:18,011
+Any of you?
+
+899
+01:33:35,667 --> 01:33:36,907
+Solestiydi solution.
+
+900
+01:33:38,047 --> 01:33:38,467
+Look.
+
+901
+01:33:42,547 --> 01:33:50,547
+You know, this ln plus x is this. 1 over 1 minus x, always you need to remember, don't forget.
+
+902
+01:33:50,547 --> 01:33:54,547
+And starting with it, you can find these both functions easily.
+
+903
+01:33:54,547 --> 01:34:03,547
+For 1 over 1 minus x, geometric series for this interval, always x to n, and integrate, and get x to n over n plus 1.
+
+904
+01:34:03,547 --> 01:34:07,547
+But negative ln minus x, because x is minus 1 here.
+
+905
+01:34:07,547 --> 01:34:14,547
+So, by multiplying with them with minus 1, you get the power series expansion of ln 1 minus x.
+
+906
+01:34:14,547 --> 01:34:19,547
+What is ln 1 plus x? Just a positive negative alternative of it.
+
+907
+01:34:19,547 --> 01:34:26,547
+So, once you get the subtraction of them, you will have this power series easily.
+
+908
+01:34:52,051 --> 01:34:52,771
+Any question?
+
+909
+01:34:58,228 --> 01:35:00,087
+Hocam Türkçe bir şey sorabilir miyim burada?
+
+910
+01:35:00,448 --> 01:35:01,328
+Tabii tabii.
+
+911
+01:35:01,927 --> 01:35:04,307
+Elen bir eksi x'de bir artı x'in
+
+912
+01:35:04,307 --> 01:35:05,467
+formülü biliyoruz ya.
+
+913
+01:35:05,988 --> 01:35:08,188
+x yerine eksi x yaparak da aynı şeyi
+
+914
+01:35:08,188 --> 01:35:09,948
+yapamaz mıyız? Bir eksi eksi x.
+
+915
+01:35:09,967 --> 01:35:11,288
+Yapabilirsiniz. Tabii ki.
+
+916
+01:35:11,288 --> 01:35:14,108
+Ben öyle yaptım.
+
+917
+01:35:14,507 --> 01:35:15,248
+Şeyden bakıp
+
+918
+01:35:15,248 --> 01:35:17,948
+formüle bakıp devamını getirerek
+
+919
+01:35:17,948 --> 01:35:19,707
+yerine eksi x yazıp. Kesinlikle.
+
+920
+01:35:19,948 --> 01:35:22,167
+Tabii ki. Aynen öyle.
+
+921
+01:35:22,248 --> 01:35:24,868
+Hepsi doğru.
+
+922
+01:35:25,587 --> 01:35:27,228
+X yerine değiştirebilirsiniz.
+
+923
+01:35:27,228 --> 01:35:28,667
+x ile çarpabilirsiniz.
+
+924
+01:35:28,788 --> 01:35:30,667
+Bölebilirsiniz. Sıfırdan farklı bir sayı için.
+
+925
+01:35:31,127 --> 01:35:34,068
+Katsayı her zaman yapabilirsiniz.
+
+926
+01:35:34,627 --> 01:35:35,948
+Ama benim demek istediğim
+
+927
+01:35:35,948 --> 01:35:36,908
+şunu hiç unutmayın lütfen.
+
+928
+01:35:36,908 --> 01:35:38,667
+Yani bir bölü bir eksi x
+
+929
+01:35:38,667 --> 01:35:41,347
+kuvvet serisi, geometrik seri
+
+930
+01:35:41,347 --> 01:35:42,927
+bu aralıkta yani her zaman
+
+931
+01:35:42,927 --> 01:35:44,768
+bundan bu iki fonksiyonu
+
+932
+01:35:44,768 --> 01:35:46,768
+hiçbir şey bilmeden bulabilirsiniz. Sırf bunu bilirim.
+
+933
+01:35:46,868 --> 01:35:47,568
+Onu demek istedim ben.
+
+934
+01:35:48,467 --> 01:35:51,047
+Yani yararlı kullanılabilir.
+
+935
+01:35:51,547 --> 01:35:52,087
+Teşekkür ederim.
+
+936
+01:35:52,547 --> 01:35:54,748
+Hiç aklınızdan çıkmasın. Rica ederim.
+
+937
+01:35:55,608 --> 01:35:56,108
+Tamamdır.
+
+938
+01:35:57,228 --> 01:35:59,948
+Başka sorusu olmaz.
+
+939
+01:36:01,887 --> 01:36:03,047
+Anlaşılmayan bir yer var mı?
+
+940
+01:36:06,627 --> 01:36:07,408
+[öğrenci].
+
+941
+01:36:07,627 --> 01:36:08,707
+We have negativity
+
+942
+01:36:08,707 --> 01:36:10,307
+because integration of
+
+943
+01:36:10,307 --> 01:36:11,528
+1 over 1 minus x
+
+944
+01:36:11,528 --> 01:36:13,528
+is minus ln 1 minus x.
+
+945
+01:36:14,807 --> 01:36:16,108
+From integration of
+
+946
+01:36:16,108 --> 01:36:17,887
+this function
+
+947
+01:36:17,887 --> 01:36:18,648
+because
+
+948
+01:36:18,648 --> 01:36:20,068
+minus x we have.
+
+949
+01:36:20,167 --> 01:36:20,568
+Just think.
+
+950
+01:36:20,568 --> 01:36:23,967
+think of ln 1 minus x
+
+951
+01:36:23,967 --> 01:36:25,007
+was derivative of it
+
+952
+01:36:25,007 --> 01:36:26,427
+minus ln
+
+953
+01:36:26,427 --> 01:36:27,547
+I'm sorry
+
+954
+01:36:27,547 --> 01:36:28,667
+minus 1 over
+
+955
+01:36:28,667 --> 01:36:29,608
+1 minus x
+
+956
+01:36:29,608 --> 01:36:29,967
+we have.
+
+957
+01:36:29,967 --> 01:36:31,467
+So integration of it
+
+958
+01:36:31,467 --> 01:36:32,188
+positive 1
+
+959
+01:36:32,188 --> 01:36:33,748
+will result negative derivative.
+
+960
+01:36:34,167 --> 01:36:34,307
+Okay.
+
+961
+01:36:34,887 --> 01:36:35,328
+That's all.
+
+962
+01:36:35,328 --> 01:36:36,328
+bir şey.
+
+963
+01:36:36,328 --> 01:36:39,228
+Bir şey.
+
+964
+01:36:41,011 --> 01:37:02,091
+I think you are okay. Also, this is the Euler's identity, if you need it. It is used for some, how can I say, for formulas, we are using Euler's identity, so I need to write here e2 i theta, theta is any real number, cosine theta plus i sine theta.
+
+965
+01:37:06,547 --> 01:37:13,547
+Bu konuda bu konuda,
+
+966
+01:37:13,547 --> 01:37:18,547
+bu konuda,
+
+967
+01:37:18,547 --> 01:37:20,547
+ve maklorene ve maklorene gibi,
+
+968
+01:37:20,547 --> 01:37:22,547
+bu konuda,
+
+969
+01:37:22,547 --> 01:37:26,547
+maklorene ve maklorene gibi,
+
+970
+01:37:26,547 --> 01:37:28,547
+ve bu konuda,
+
+971
+01:37:28,547 --> 01:37:58,547
+ve maklorene ve maklorene ve maklorene ve maklorene ve maklorene ve maklorene ve maklorene ve maklorene ve maklorene ve maklorene ve maklorene ve maklorene ve maklorene ve maklorene ve maklorene ve maklorene ve maklorene ve maklorene ve maklorene ve maklorene ve maklorene ve maklorene ve maklorene ve maklorene ve maklorene ve maklorene ve maklorene ve maklorene ve maklorene ve maklorene ve maklorene ve maklorene ve maklorene ve maklorene ve maklorene ve maklorene ve maklorene ve maklorene ve maklorene ve maklorene ve maklorene ve maklorene ve maklorene ve maklorene ve makl
+
+972
+01:37:58,547 --> 01:38:28,547
+ve maklorene ve maklorene ve maklorene ve maklorene ve maklorene ve maklorene ve maklorene ve maklorene ve maklorene ve maklorene ve maklorene ve maklorene ve maklorene ve maklorene ve maklorene ve maklorene ve maklorene ve maklorene ve maklorene ve maklorene ve maklorene ve maklorene ve maklorene ve maklorene ve maklorene ve maklorene ve maklorene ve maklorene ve maklorene ve maklorene ve maklorene ve maklorene ve maklorene ve maklorene ve maklorene ve maklorene ve maklorene ve maklorene ve maklorene ve maklorene ve maklorene ve maklorene ve maklorene ve maklorene ve
+
+973
+01:38:28,547 --> 01:38:58,547
+maklorene ve maklorene ve maklorene ve maklorene ve maklorene ve maklorene ve maklorene ve maklorene ve maklorene ve maklorene ve maklorene ve maklorene ve maklorene ve maklorene ve maklorene ve maklorene ve maklorene ve maklorene ve maklorene ve maklorene ve maklorene ve maklorene ve maklorene ve maklorene ve maklorene ve maklorene ve maklorene ve maklorene ve maklorene ve maklorene ve maklorene ve maklorene ve maklorene ve maklorene ve maklorene ve maklorene ve maklorene ve maklorene ve maklorene ve maklorene ve maklorene ve maklorene ve maklorene ve maklorene ve mak
+
+974
+01:38:58,547 --> 01:39:00,197
+ve maklorene ve maklorene ve maklorene ve maklorene ve maklorene ve maklorene ve maklorene ve maklorene ve maklorene ve maklorene ve maklorene ve maklorene ve maklorene ve maklorene ve maklorene ve maklorene ve maklorene ve maklorene ve maklorene ve maklorene ve maklorene ve maklorene ve maklorene ve maklorene ve maklorene ve maklorene ve maklorene ve maklorene ve maklorene ve maklorene ve maklorene ve maklorene ve maklorene ve maklorene ve maklorene ve maklorene ve maklorene ve maklorene ve maklorene ve maklorene ve maklorene ve maklorene ve maklorene ve maklorene ve
+
+975
+01:39:06,387 --> 01:39:07,347
+What do you think?
+
+976
+01:39:08,528 --> 01:39:09,207
+Any question?
+
+977
+01:39:45,235 --> 01:39:53,435
+Are you all okay? Will you tell me anything about this topic? Or I will continue with the next topic. Okay.
+
+978
+01:39:55,756 --> 01:39:59,155
+Okay. If you have no problem, so I want to continue.
+
+979
+01:40:01,675 --> 01:40:07,715
+Let me have the new presentation for you. Wait for me.
+
+980
+01:40:09,076 --> 01:40:13,355
+The next topic will be the parametric equations. Yes.
+
+981
+01:40:22,228 --> 01:40:27,707
+Parametrik equations, I think it's a nice topic for you.
+
+982
+01:40:28,268 --> 01:40:37,368
+And while you are learning the parametrik equations, you can easily understand the polar forms and polar equations or polar coordinate system, in my opinion.
+
+983
+01:40:37,728 --> 01:40:41,068
+Because we are just trying to parametrization of it.
+
+984
+01:40:41,068 --> 01:40:53,028
+And while we are using in Cartesian form, x and y, x-axis and y-axis and the Cartesian form of R-square, I'm talking about the second dimension, two-dimensional real plane.
+
+985
+01:40:53,728 --> 01:40:55,667
+And we are working on x and y.
+
+986
+01:40:55,788 --> 01:40:57,007
+The variables are x and y.
+
+987
+01:40:57,127 --> 01:40:59,148
+That means these are parameters of x and y.
+
+988
+01:40:59,587 --> 01:41:08,248
+What if we have belonging x and y according to one common parameter, one or more?
+
+989
+01:41:08,248 --> 01:41:10,688
+For this topic only, we will use only one parameter.
+
+990
+01:41:10,927 --> 01:41:12,587
+Later, we will have more parameters.
+
+991
+01:41:13,828 --> 01:41:16,828
+In polar coordinate system, we will have R-enteta, for example.
+
+992
+01:41:17,347 --> 01:41:26,568
+But here, we will first learn how can we write the parametrization of a curve or parametric equations of a line, curve or equation.
+
+993
+01:41:28,587 --> 01:41:31,127
+Parametric means belonging to a parameter.
+
+994
+01:41:31,127 --> 01:41:40,927
+And since, again, I want to say we are working on the two-dimensional Euclidean space, Cartesian space, I'm working, R-square.
+
+995
+01:41:41,228 --> 01:41:43,127
+So x and y we have.
+
+996
+01:41:43,788 --> 01:41:45,967
+And because we have x-axis and y-axis.
+
+997
+01:41:45,967 --> 01:42:02,188
+And in order to show the destination of a point on real line, I'm sorry, real plane, we need the distances, the vertical distances to the coordinate axis, which is x and y, in order to show the form of the point x and y.
+
+998
+01:42:02,188 --> 01:42:08,728
+Now we are doing x and y belonging to another parameter t, a common parameter we are using.
+
+999
+01:42:09,148 --> 01:42:12,488
+And we specify x and y according to that new parameter.
+
+1000
+01:42:13,387 --> 01:42:18,087
+And let's see which conditions we have to parametrization.
+
+1001
+01:42:19,887 --> 01:42:20,387
+Let's read.
+
+1002
+01:42:20,387 --> 01:42:41,108
+If x and y are given as functions, x and y is the functions of t, over an interval i of t values, that means where the values of t coming, that interval of t, then set of points, f t, g t, defined by these equations is a parametric curve.
+
+1003
+01:42:41,868 --> 01:42:45,307
+That means, for example, we have y is x squared, a parabola.
+
+1004
+01:42:45,807 --> 01:42:48,268
+But now you will just parametrizate it.
+
+1005
+01:42:48,268 --> 01:42:52,387
+You will just write x and y belonging to a parameter t.
+
+1006
+01:42:52,747 --> 01:42:55,507
+But again, geometrically, you have the same parabola.
+
+1007
+01:42:55,927 --> 01:42:57,568
+But the definition will be different.
+
+1008
+01:42:58,528 --> 01:43:00,547
+So it will be a parametric curve.
+
+1009
+01:43:00,608 --> 01:43:06,547
+For example, if you write x and y separately belonging to a parameter t.
+
+1010
+01:43:07,207 --> 01:43:09,408
+Without writing y is x squared.
+
+1011
+01:43:09,847 --> 01:43:14,007
+Y is x squared is the Cartesian form of a parabola on R squared.
+
+1012
+01:43:14,007 --> 01:43:20,028
+What if we have written x and y belonging to a parameter t as the functions of t?
+
+1013
+01:43:20,847 --> 01:43:25,988
+And again, shows the same parabola in the exercises you will see and understand the clearer thing.
+
+1014
+01:43:26,507 --> 01:43:29,127
+So it is a parametric curve.
+
+1015
+01:43:29,207 --> 01:43:30,587
+It becomes a parametric curve.
+
+1016
+01:43:30,587 --> 01:43:33,307
+And the equations are parametric equations here.
+
+1017
+01:43:33,408 --> 01:43:34,028
+F and t.
+
+1018
+01:43:34,847 --> 01:43:35,228
+I'm sorry.
+
+1019
+01:43:35,307 --> 01:43:35,847
+F and g.
+
+1020
+01:43:37,408 --> 01:43:44,228
+That means new functions of t to express x and y becomes parametric equations.
+
+1021
+01:43:44,387 --> 01:43:45,427
+Ft and gt.
+
+1022
+01:43:45,427 --> 01:43:49,467
+The variable t is a parameter for the curve.
+
+1023
+01:43:49,908 --> 01:43:50,047
+Okay.
+
+1024
+01:43:50,167 --> 01:43:51,307
+This is the parameter t.
+
+1025
+01:43:52,087 --> 01:43:57,847
+And it's domain we need because we need to understand for which values of t we have this parametrization.
+
+1026
+01:43:57,988 --> 01:44:00,708
+That's why the interval of parameter must be given.
+
+1027
+01:44:00,708 --> 01:44:09,368
+If i, that means this interval, is the set of the parameters coming, is a closed interval like this,
+
+1028
+01:44:09,828 --> 01:44:16,948
+the point f8gA is the initial point of the curve and fBgB is the terminal point.
+
+1029
+01:44:16,948 --> 01:44:20,908
+It means that we are starting at A and finishing at B.
+
+1030
+01:44:20,908 --> 01:44:50,887
+So, let's see.
+
+1031
+01:44:21,587 --> 01:44:51,587
+parametrizizmizde parçalık parametrizizmizde parçalık parametrizmizde parçalık parametrizmizde parçalık parametrizmizde parçalık parametrizmizde parçalık parametrizmizde parçalık parametrizmizde parçalık parametrizmizde parçalık parametrizmizde parçalık parametrizmizde parçalık parametrizmizde parçalık parametrizmizde parçalık parametrizmizde parçalık parametrizmizde parçalık parametrizmizde parçalık parametrizmizde parçalık parametrizmizde parçalık parametrizmizde parçalık parametrizmizde parçalık parametrizmizde parçalık parametrizmizde parçalık param
+
+1032
+01:44:51,587 --> 01:45:51,587
+parametrizmizde parçalık parametrizmizde parçalık parametrizmizde parçalık parametrizmizde parçalık parametrizmizde parçalık parametrizmizde parçalık parametrizmizde parçalık parametrizmizde parçalık parametrizmizde parçalık parametrizmizde parçalık parametrizmizde parçalık parametrizmizde parçalık parametrizmizde parçalık parametrizmizde parçalık parametrizmizde parçalık parametrizmizde parçalık parametrizmizde parçalık parametrizmizde parçalık parametrizmizde parçalık parametrizmizde parçalık parametrizmizde parçalık parametrizmizde parçalık param
+
+1033
+01:45:51,587 --> 01:45:53,007
+given Cartesian equation.
+
+1034
+01:45:53,007 --> 01:46:09,768
+But now while having the parametrizmizde parçalık parametrizmizde parçalık parametrizmizde parçalık parametrizmizde parçalık parametrizmizde parçalık parametrizmizde parçalık parametrizmizde parçalık parametrizmizde parçalık parametrizmizde parçalık parametrizmizde parçalık parametrizmizde parçalık parametrizmizde parçalık parametrizmizde parçalık parametrizmizde parçalık parametrizmizde parçalık parametrizmizde parçalık parametrizmizde parçalık parametrizmizde parçalık parametrizmizde parçalık parametrizmizde parçalık parametrizmizde parçalık parametrizmizde
+
+1035
+01:46:15,828 --> 01:47:15,828
+Bu, bu
+
+1036
+01:47:15,828 --> 01:47:20,068
+This is the form of the equation or curve or whatever it is.
+
+1037
+01:47:21,228 --> 01:47:25,068
+As you see, it's a parabola, you know, x is y minus 1 all square.
+
+1038
+01:47:25,528 --> 01:47:27,948
+This parabola, but is it full of them?
+
+1039
+01:47:28,468 --> 01:47:30,868
+Be careful about the interval of parameter.
+
+1040
+01:47:31,408 --> 01:47:36,928
+It says for any parameter, for any real number we have, which means any point, yes.
+
+1041
+01:47:37,188 --> 01:47:41,428
+So for parabola, all of them, every point on it.
+
+1042
+01:47:41,807 --> 01:47:43,048
+I mean, every point on it.
+
+1043
+01:47:43,048 --> 01:47:47,708
+For negative infinity minus infinity,
+
+1044
+01:47:48,708 --> 01:47:51,548
+we have x is infinity going to infinity.
+
+1045
+01:47:51,688 --> 01:47:52,848
+Y is negative infinity.
+
+1046
+01:47:54,428 --> 01:47:59,648
+And for t is positive infinity, again, it's t square because x is going to positive infinity.
+
+1047
+01:47:59,888 --> 01:48:01,228
+Y is going to positive infinity.
+
+1048
+01:48:02,708 --> 01:48:07,807
+So when x is coming from positive infinity, y is negative infinity.
+
+1049
+01:48:08,728 --> 01:48:13,008
+And how can I say the initial point, but they are infinities.
+
+1050
+01:48:13,048 --> 01:48:18,828
+So the all infinite points in it, on the parabola, we have on this parameterization.
+
+1051
+01:48:19,928 --> 01:48:21,708
+So this curve must be sketched.
+
+1052
+01:48:21,948 --> 01:48:26,288
+Not only this one is going to infinity, of course, the branch of the parabola continues.
+
+1053
+01:48:26,428 --> 01:48:27,228
+They're going to infinity.
+
+1054
+01:48:28,568 --> 01:48:28,908
+Okay.
+
+1055
+01:48:30,807 --> 01:48:32,088
+And this is the pick point.
+
+1056
+01:48:32,088 --> 01:48:49,588
+So this curve is going to be the same.
+
+1057
+01:48:40,115 --> 01:48:41,576
+Are you okay with this exercise?
+
+1058
+01:48:45,652 --> 01:48:55,872
+Miss, I don't understand the t part. When the t goes to negative infinity, the x goes to negative infinity, y goes to negative infinity. I don't understand that part.
+
+1059
+01:48:57,452 --> 01:48:59,931
+It's because of the formulas, given formulas.
+
+1060
+01:49:00,971 --> 01:49:10,011
+Yes, because of the formulas. Because, yes, x is t squared, x is always positive. So that's why this part, as you see, not this part we have, x is always positive.
+
+1061
+01:49:10,511 --> 01:49:10,811
+Okay.
+
+1062
+01:49:10,992 --> 01:49:14,072
+Why can be positive or negative? Okay, you can understand.
+
+1063
+01:49:14,492 --> 01:49:15,072
+Thank you so much.
+
+1064
+01:49:15,072 --> 01:49:17,551
+That's all. That's all. That's enough for you. Okay. Not at all.
+
+1065
+01:49:19,771 --> 01:49:20,811
+Any more questions?
+
+1066
+01:49:37,684 --> 01:49:42,644
+Let's see the other exercise. These are nice exercises.
+
+1067
+01:49:42,644 --> 01:49:46,003
+It says, for example, graph deferimetric curves.
+
+1068
+01:49:46,003 --> 01:49:51,764
+In the first one, x is a cos t, y sin t.
+
+1069
+01:49:51,764 --> 01:49:55,524
+I think you can easily understand when x is cos t and y sin t,
+
+1070
+01:49:55,524 --> 01:49:58,644
+it's the parameterization of the unit circle.
+
+1071
+01:49:58,644 --> 01:50:02,804
+Like in polar form, you will understand it clearly, I think, easily.
+
+1072
+01:50:02,804 --> 01:50:07,524
+At cos t sin t, which means x square plus y square is 1.
+
+1073
+01:50:07,524 --> 01:50:11,684
+A circle and the unit circle, because it has the radius 1,
+
+1074
+01:50:11,684 --> 01:50:15,844
+and also specifically the t is between 0 to 2 pi means,
+
+1075
+01:50:15,844 --> 01:50:20,244
+start at 0 to 2 pi. Here the parameters angle,
+
+1076
+01:50:20,244 --> 01:50:25,444
+if you see cosine and sine angles, so 0 to 2 pi, the full circle.
+
+1077
+01:50:27,444 --> 01:50:30,003
+The unit circle represents the unit circle.
+
+1078
+01:50:30,003 --> 01:50:33,444
+This parameterization on that interval, okay, easily.
+
+1079
+01:50:34,083 --> 01:50:37,043
+And you can, if you want, you can evaluate the initial point,
+
+1080
+01:50:37,043 --> 01:50:39,524
+terminal point in order to make you understand.
+
+1081
+01:50:39,524 --> 01:50:41,284
+Maybe it's up to you.
+
+1082
+01:50:41,284 --> 01:50:44,963
+But of course, initial point, when at the point t is 0.
+
+1083
+01:50:44,963 --> 01:50:48,324
+The point t is 0 means, I mean, when in fact,
+
+1084
+01:50:48,324 --> 01:50:51,364
+it's the angle cos 0 and sin 0.
+
+1085
+01:50:51,364 --> 01:50:55,604
+And while we are at the point 0, cos 0 is 1, sin 0 is 0.
+
+1086
+01:50:55,604 --> 01:50:56,804
+So we are at this point.
+
+1087
+01:50:58,484 --> 01:51:02,163
+x is 0, I'm sorry, x is 1 way 0.
+
+1088
+01:51:02,163 --> 01:51:03,684
+What if we have 2 pi?
+
+1089
+01:51:03,684 --> 01:51:05,604
+At 2 pi again, we have the same values.
+
+1090
+01:51:06,564 --> 01:51:09,684
+Because we are starting and finished at the same point
+
+1091
+01:51:09,684 --> 01:51:12,163
+to make a unit circle or any circle.
+
+1092
+01:51:12,804 --> 01:51:16,564
+So in cosine 2 pi again, we have 1 and sin 2 pi 0.
+
+1093
+01:51:16,564 --> 01:51:20,163
+So start here and finish here.
+
+1094
+01:51:20,163 --> 01:51:24,324
+So it traces the entire circle on counterclockwise.
+
+1095
+01:51:24,324 --> 01:51:28,884
+Counterclockwise means just the negative direction of the clock.
+
+1096
+01:51:30,003 --> 01:51:31,204
+I hope you understand me.
+
+1097
+01:51:32,244 --> 01:51:36,564
+Counterclockwise.
+
+1098
+01:51:37,811 --> 01:51:39,171
+Saat yönünün tersi.
+
+1099
+01:51:41,032 --> 01:51:41,291
+Okey.
+
+1100
+01:51:52,372 --> 01:51:54,372
+So once you have a parametrization,
+
+1101
+01:51:56,972 --> 01:51:59,092
+and if you are asked to understand,
+
+1102
+01:51:59,472 --> 01:52:00,552
+or if you are asked to say,
+
+1103
+01:52:01,172 --> 01:52:02,952
+which equation is it,
+
+1104
+01:52:03,052 --> 01:52:04,932
+or will you sketch it, or graph it,
+
+1105
+01:52:05,052 --> 01:52:07,032
+or tell me which one is it,
+
+1106
+01:52:07,271 --> 01:52:08,512
+in order to understand it,
+
+1107
+01:52:08,532 --> 01:52:10,112
+you need to write the Cartesian form of it.
+
+1108
+01:52:10,512 --> 01:52:13,572
+Cartesian form means you need only one equation,
+
+1109
+01:52:13,892 --> 01:52:16,092
+which is not including any parameter.
+
+1110
+01:52:16,572 --> 01:52:18,672
+You need to write an equation between y and x
+
+1111
+01:52:18,672 --> 01:52:19,472
+with no parameter,
+
+1112
+01:52:20,112 --> 01:52:21,392
+a custom number you may have.
+
+1113
+01:52:22,372 --> 01:52:24,892
+In order to understand what is it in fact,
+
+1114
+01:52:25,252 --> 01:52:26,832
+because it's the parametric form of it.
+
+1115
+01:52:26,932 --> 01:52:28,832
+Once you have cos sine t and sine t,
+
+1116
+01:52:28,872 --> 01:52:32,392
+of course, you will directly take x squared plus y squared is one.
+
+1117
+01:52:32,851 --> 01:52:35,072
+As you see, one x squared plus y squared is one,
+
+1118
+01:52:35,152 --> 01:52:36,372
+no parameter you have,
+
+1119
+01:52:36,652 --> 01:52:38,672
+and one equation with x and y only,
+
+1120
+01:52:39,172 --> 01:52:40,872
+which means, of course, all of you know
+
+1121
+01:52:40,872 --> 01:52:42,252
+that this is the unit circle.
+
+1122
+01:52:42,692 --> 01:52:44,372
+This is the Cartesian form of it.
+
+1123
+01:52:45,552 --> 01:52:47,892
+This is the Cartesian form of a unit circle.
+
+1124
+01:52:47,892 --> 01:52:50,112
+This is the parametric form
+
+1125
+01:52:50,112 --> 01:52:52,872
+to show where Cartesian is unit circle again,
+
+1126
+01:52:53,311 --> 01:52:55,512
+cos sine t, sine t on this interval.
+
+1127
+01:52:56,652 --> 01:52:58,612
+Again, it shows the unit circle,
+
+1128
+01:52:58,832 --> 01:53:00,252
+but parametrically it is given.
+
+1129
+01:53:01,512 --> 01:53:02,592
+Do you understand the differences?
+
+1130
+01:53:02,592 --> 01:53:05,832
+We are just making the parametrization,
+
+1131
+01:53:06,052 --> 01:53:11,692
+because you are used to always work on the Cartesian form of the circles,
+
+1132
+01:53:12,372 --> 01:53:13,771
+curves, lines.
+
+1133
+01:53:14,712 --> 01:53:16,612
+Of course, in Cartesian form you are using,
+
+1134
+01:53:17,032 --> 01:53:20,632
+but now you are using and trying to start to learn
+
+1135
+01:53:20,632 --> 01:53:25,432
+some different ways to show the same geometrical sets,
+
+1136
+01:53:25,432 --> 01:53:27,112
+but in different definitions.
+
+1137
+01:53:27,452 --> 01:53:29,231
+For example, parametric forms.
+
+1138
+01:53:30,311 --> 01:53:32,192
+Again, the circle, the unit circle you have,
+
+1139
+01:53:32,492 --> 01:53:36,152
+but if you want to show it with different ways,
+
+1140
+01:53:36,252 --> 01:53:37,992
+for example, parametrization is nice.
+
+1141
+01:53:38,252 --> 01:53:39,112
+If you tell me,
+
+1142
+01:53:39,252 --> 01:53:41,132
+what if we have cos sine t and sine t?
+
+1143
+01:53:41,672 --> 01:53:42,512
+Yes, you're right.
+
+1144
+01:53:42,612 --> 01:53:43,872
+Again, you have the unit circle,
+
+1145
+01:53:43,932 --> 01:53:45,032
+I will tell you.
+
+1146
+01:53:45,572 --> 01:53:45,712
+Okay.
+
+1147
+01:53:48,372 --> 01:53:51,112
+So if that parametrization is nice.
+
+1148
+01:53:51,112 --> 01:53:52,231
+Huh.
+
+1149
+01:53:56,243 --> 01:54:10,243
+Bu şekilde, bu şekilde.
+
+1150
+01:54:10,243 --> 01:54:12,243
+Bu şekilde, bu şekilde, bu şekilde.
+
+1151
+01:54:12,243 --> 01:54:16,243
+Bu şekilde, bu şekilde.
+
+1152
+01:54:16,243 --> 01:54:18,243
+Bu şekilde.
+
+1153
+01:54:18,243 --> 01:54:27,243
+Bu şekilde, bu şekilde.
+
+1154
+01:54:27,243 --> 01:54:55,243
+Bu şekilde.
+
+1155
+01:54:33,716 --> 01:54:34,776
+Do you understand it?
+
+1156
+01:54:37,896 --> 01:54:41,736
+Why don't we do it to the right side?
+
+1157
+01:54:42,876 --> 01:54:48,096
+I mean, you started the point one and start circling by to the left.
+
+1158
+01:54:48,476 --> 01:54:50,816
+Why don't we do it to the right side?
+
+1159
+01:54:53,136 --> 01:55:03,096
+Because on polar coordinate system, we have only initial ray, only this ray, and also this is the polar.
+
+1160
+01:55:03,716 --> 01:55:05,316
+Okay, because of the origin.
+
+1161
+01:55:05,936 --> 01:55:06,236
+Okay.
+
+1162
+01:55:06,496 --> 01:55:11,655
+Yes, because of polar system, and polar system starts here, always continues this way.
+
+1163
+01:55:11,916 --> 01:55:12,176
+Okay.
+
+1164
+01:55:12,176 --> 01:55:12,536
+You're right.
+
+1165
+01:55:12,876 --> 01:55:13,655
+Okay, thank you.
+
+1166
+01:55:14,636 --> 01:55:15,195
+Not at all.
+
+1167
+01:55:17,576 --> 01:55:19,036
+These are very nice questions.
+
+1168
+01:55:19,155 --> 01:55:20,096
+What about the others?
+
+1169
+01:55:20,276 --> 01:55:21,655
+Do you have any question about it?
+
+1170
+01:55:21,896 --> 01:55:22,556
+Are you okay?
+
+1171
+01:55:22,556 --> 01:55:22,676
+Okay.
+
+1172
+01:55:33,091 --> 01:55:35,091
+Bu bir soru, bir soru.
+
+1173
+01:55:35,091 --> 01:55:37,091
+Bir soru, bir soru.
+
+1174
+01:55:37,091 --> 01:55:39,091
+Tamam, devam edelim.
+
+1175
+01:55:39,091 --> 01:55:41,091
+Bir soru, y'e sin t.
+
+1176
+01:55:41,091 --> 01:55:43,091
+Y'e sin t.
+
+1177
+01:55:43,091 --> 01:55:45,091
+T'ye 0-2 pi.
+
+1178
+01:55:45,091 --> 01:55:47,091
+Şimdi, bu bir soru?
+
+1179
+01:55:47,091 --> 01:55:49,091
+Bu bir soru?
+
+1180
+01:55:49,091 --> 01:55:51,091
+Bir cartesan form.
+
+1181
+01:55:51,091 --> 01:55:53,091
+Bir cartesan bir soru.
+
+1182
+01:55:53,091 --> 01:55:55,091
+X'e sin t.
+
+1183
+01:55:55,091 --> 01:55:57,091
+Y'e sin t.
+
+1184
+01:55:57,091 --> 01:55:59,091
+2 pi.
+
+1185
+01:56:09,684 --> 01:56:21,404
+Evet, well done, [öğrenci], you're right, completely. It's a circle again, with a radius a. Of course, once we have x square plus y square, yes, a square we will have.
+
+1186
+01:56:21,604 --> 01:56:36,864
+So it's again a circle, centered at the origin, but with a radius a. Again, it traces the entire circle, again counterclockwise. And again, the starting point t0, we will have only not one a here.
+
+1187
+01:56:36,864 --> 01:56:46,524
+a, and starting and finishing at the same point because 0, 2, 2 pi again, it shows the full circle. Let's see.
+
+1188
+01:56:49,908 --> 01:56:50,908
+Evet.
+
+1189
+01:56:53,908 --> 01:56:55,908
+Initial point t0,
+
+1190
+01:56:55,908 --> 01:56:58,908
+and the terminal point for t is 2pi,
+
+1191
+01:56:58,908 --> 01:56:59,908
+a0, a0, yes.
+
+1192
+01:56:59,908 --> 01:57:01,908
+Starting here again,
+
+1193
+01:57:01,908 --> 01:57:04,908
+and continuously t0 here,
+
+1194
+01:57:04,908 --> 01:57:07,908
+t is pi over 2, t is pi,
+
+1195
+01:57:07,908 --> 01:57:09,908
+3pi over 2, and 2pi.
+
+1196
+01:57:09,908 --> 01:57:10,908
+OK.
+
+1197
+01:57:10,908 --> 01:57:13,908
+And finishes here, 0 to 2pi.
+
+1198
+01:57:13,908 --> 01:57:15,908
+And so, angle angle,
+
+1199
+01:57:15,908 --> 01:57:18,908
+while we are changing the angle 0 to 2pi,
+
+1200
+01:57:18,908 --> 01:57:21,908
+point by point, we just get the full circle,
+
+1201
+01:57:21,908 --> 01:57:24,908
+centered at origin with the radius a.
+
+1202
+01:57:27,908 --> 01:57:28,908
+I think it's easy.
+
+1203
+01:57:43,859 --> 01:57:46,579
+And so I want to continue with the next exercise.
+
+1204
+01:57:47,299 --> 01:57:50,019
+If we have no problem, now tell me.
+
+1205
+01:57:50,739 --> 01:57:52,659
+It says graph the parametric curve.
+
+1206
+01:57:53,699 --> 01:57:55,460
+The curve is given parametrically.
+
+1207
+01:57:56,259 --> 01:57:59,219
+Can you understand which curve is it?
+
+1208
+01:58:00,259 --> 01:58:03,139
+I think you need to first write it in cartesian form
+
+1209
+01:58:03,139 --> 01:58:04,979
+and then you will say, ah, okay, we know this.
+
+1210
+01:58:05,779 --> 01:58:08,259
+We know this curve and you can easily sketch.
+
+1211
+01:58:08,259 --> 01:58:12,019
+And also you have to be careful about the interval of parameter.
+
+1212
+01:58:12,019 --> 01:58:13,859
+Maybe not the full one.
+
+1213
+01:58:16,179 --> 01:58:19,859
+In this exercise, t was between 0 to 2 pi.
+
+1214
+01:58:19,859 --> 01:58:22,420
+That's why we have the full circular.
+
+1215
+01:58:23,779 --> 01:58:25,779
+What do we have on this curve?
+
+1216
+01:58:25,779 --> 01:58:26,979
+Whatever it is, tell me.
+
+1217
+01:58:28,099 --> 01:58:30,179
+X is square root t, y is t.
+
+1218
+01:58:30,899 --> 01:58:31,460
+So what?
+
+1219
+01:58:34,019 --> 01:58:38,099
+Eliminate t between x and y and write with only one equation
+
+1220
+01:58:38,099 --> 01:58:40,739
+between x and y and the cartesian form of it.
+
+1221
+01:58:40,739 --> 01:58:42,579
+And then you can use a little sketch,
+
+1222
+01:58:42,579 --> 01:58:46,420
+but also nicely careful about the interval of parameter.
+
+1223
+01:58:46,420 --> 01:58:48,259
+So what?
+
+1224
+01:58:48,259 --> 01:59:11,859
+I'm going to use a little sketch.
+
+1225
+01:58:50,036 --> 01:58:51,615
+And tell me, what is it?
+
+1226
+01:58:53,216 --> 01:58:56,395
+It's the cure that you are so much familiar with.
+
+1227
+01:58:57,756 --> 01:58:58,315
+Yes.
+
+1228
+01:59:01,811 --> 01:59:02,811
+Evet, doğru.
+
+1229
+01:59:02,811 --> 01:59:03,811
+Bu ne?
+
+1230
+01:59:07,252 --> 01:59:08,432
+On Cartesian Play.
+
+1231
+01:59:17,235 --> 01:59:18,235
+Evet, evet.
+
+1232
+01:59:18,735 --> 01:59:20,235
+Yani, bu şekilde bir parabolu.
+
+1233
+01:59:20,235 --> 01:59:21,235
+Onlar, bir de.
+
+1234
+01:59:21,235 --> 01:59:22,235
+Evet, bu parabolu.
+
+1235
+01:59:22,235 --> 01:59:23,235
+Bu parabolu.
+
+1236
+01:59:23,235 --> 01:59:24,235
+Şehir, bu parabolu.
+
+1237
+01:59:24,235 --> 01:59:47,235
+Bu parabolu.
+
+1238
+01:59:44,115 --> 01:59:46,836
+Parabolas generally have two branches.
+
+1239
+01:59:48,796 --> 01:59:51,115
+Both of them are included in this parametrization.
+
+1240
+01:59:54,676 --> 01:59:55,496
+What do you think?
+
+1241
+01:59:56,496 --> 01:59:57,655
+Sketch it and don't think.
+
+1242
+02:00:03,060 --> 02:00:10,280
+Well done [öğrenci]. Why? You're right.
+
+1243
+02:00:12,760 --> 02:00:15,980
+She says only the right part. I think so.
+
+1244
+02:00:23,731 --> 02:00:33,572
+Evet, t is positive only, not negative parts we can have.
+
+1245
+02:00:35,851 --> 02:00:39,452
+Because x is n square root t, that's why it's positive always.
+
+1246
+02:00:39,992 --> 02:00:42,211
+Because of the form of a parametrization.
+
+1247
+02:00:42,811 --> 02:00:43,412
+Yes, all right.
+
+1248
+02:00:43,931 --> 02:00:44,591
+Anyone else?
+
+1249
+02:00:58,228 --> 02:01:01,347
+Doğru da sizinle ilgili
+
+1250
+02:01:08,020 --> 02:01:11,580
+Evet, so let's see.
+
+1251
+02:01:13,300 --> 02:01:13,840
+Look,
+
+1252
+02:01:15,920 --> 02:01:23,020
+Clearly, you get that your voice x square is a parabola, and t is 0 to infinity.
+
+1253
+02:01:25,420 --> 02:01:30,480
+Also, you can understand from definition of x's in the square root t, of course, t must be positive.
+
+1254
+02:01:31,080 --> 02:01:32,340
+So they are both positive.
+
+1255
+02:01:34,060 --> 02:01:37,280
+So, not the negative part is included.
+
+1256
+02:01:38,020 --> 02:01:42,900
+If we have minus plus square root t, we will have the other branch.
+
+1257
+02:01:44,140 --> 02:01:45,260
+But only the right one.
+
+1258
+02:01:48,692 --> 02:01:49,051
+Tamam.
+
+1259
+02:01:51,032 --> 02:01:54,532
+So, initial point for T0, 0, 0.
+
+1260
+02:01:54,931 --> 02:01:57,231
+Terminal point, going to infinity.
+
+1261
+02:01:57,532 --> 02:01:59,091
+They are both positive, that's why.
+
+1262
+02:01:59,372 --> 02:02:03,271
+So, 0, 0, 2, positive infinity for both of them.
+
+1263
+02:02:03,591 --> 02:02:05,452
+So, only the right branch of the parabola.
+
+1264
+02:02:06,231 --> 02:02:10,792
+The left one is not included because X can be only positive.
+
+1265
+02:02:11,412 --> 02:02:17,171
+If it was minus plus, we would sketch also the left branch of the parabola.
+
+1266
+02:02:17,171 --> 02:02:18,612
+You have to be careful.
+
+1267
+02:02:19,692 --> 02:02:21,171
+Hocam, bir şey sorabilir miyim burada?
+
+1268
+02:02:21,591 --> 02:02:22,431
+Yes, of course.
+
+1269
+02:02:22,431 --> 02:02:28,091
+Peki, bunun mesela bir parabolik eğri olduğunu karar verdiğimiz şey ne olabilir?
+
+1270
+02:02:28,612 --> 02:02:29,252
+Yani bu etken.
+
+1271
+02:02:32,192 --> 02:02:32,792
+Yani tamam, biz...
+
+1272
+02:02:32,792 --> 02:02:34,032
+Y'şitir X kare olduğu için.
+
+1273
+02:02:34,252 --> 02:02:41,431
+...biliyoruz ama hani mesela ne bileyim küp falan gelse ya da işte dördüncü kuvvetinden bir şey gelse...
+
+1274
+02:02:42,431 --> 02:02:45,952
+...ki parabolik mi olduğunu anlayabileceğimiz bir şey olacak mı yani?
+
+1275
+02:02:45,952 --> 02:02:49,391
+Tamamen denklemine bağlı.
+
+1276
+02:02:50,051 --> 02:02:51,011
+Yani denklemden denklem...
+
+1277
+02:02:51,011 --> 02:02:51,692
+Sizin hani...
+
+1278
+02:02:52,692 --> 02:02:53,572
+Ne diyorsunuz?
+
+1279
+02:02:55,572 --> 02:02:57,091
+Anlayamadım, sesin kesildi.
+
+1280
+02:02:57,131 --> 02:02:59,851
+Denklemden denkleme göre değişebilir mi diyorsunuz yani?
+
+1281
+02:02:59,851 --> 02:03:07,752
+Tamamen parametrik denklemlerin verilişine ve kartezyen denkleminin kuvvetine, tipine bağlı.
+
+1282
+02:03:07,872 --> 02:03:09,671
+Yani tabii ki Y'şitir X kare.
+
+1283
+02:03:09,752 --> 02:03:14,712
+Siz şimdi şöyle düşün, şeydesiniz, kartezyen düzlemdesiniz.
+
+1284
+02:03:14,851 --> 02:03:17,231
+O yüzden bu şekilde bir denkleminiz olacak.
+
+1285
+02:03:17,231 --> 02:03:23,112
+Anladım, anladım ama yani demek istediğim şey şu.
+
+1286
+02:03:23,252 --> 02:03:26,072
+Biz Y'şitir X kareyi parabolik olduğunu biliyoruz.
+
+1287
+02:03:26,652 --> 02:03:27,311
+Bilmesek nasıl?
+
+1288
+02:03:28,671 --> 02:03:33,671
+Parametrik denklem verip bu neye aittir diye sorulacağını çok zannetmiyorum aslında ama...
+
+1289
+02:03:33,671 --> 02:03:41,271
+Tamamen denklemin tipine bağlı olarak geometrik yeri neresidir bu noktaların?
+
+1290
+02:03:41,551 --> 02:03:42,511
+Geometrik yeri neresidir?
+
+1291
+02:03:42,591 --> 02:03:45,492
+Y'şitir X kareyi ise evet bir paraboldür gibi düşüneceksiniz.
+
+1292
+02:03:45,612 --> 02:03:46,032
+Sadece bu.
+
+1293
+02:03:46,511 --> 02:03:48,051
+Tamam, daha detaya gerek yok.
+
+1294
+02:03:48,072 --> 02:03:49,492
+Ama burada farklı hiçbir şey yok.
+
+1295
+02:03:49,631 --> 02:03:49,952
+Hayır hayır.
+
+1296
+02:03:50,671 --> 02:03:51,212
+Tamam, peki.
+
+1297
+02:03:51,212 --> 02:04:21,171
+Evet.
+
+1298
+02:03:58,884 --> 02:04:00,884
+Evet, şimdi, ne yapalım.
+
+1299
+02:04:00,884 --> 02:04:02,884
+Ve ne yapalım.
+
+1300
+02:04:05,427 --> 02:04:10,127
+And how will you write the cartes in form of x and y? With no parameter, tell me.
+
+1301
+02:04:12,387 --> 02:04:13,528
+I'm waiting for you.
+
+1302
+02:04:34,707 --> 02:04:40,867
+Bu bir diğer formu, bir kürteki kartezin planı.
+
+1303
+02:05:41,460 --> 02:05:43,659
+What you have? Ah, I'm sorry.
+
+1304
+02:05:47,100 --> 02:05:50,060
+You can do it. Just try.
+
+1305
+02:05:51,300 --> 02:05:54,480
+How will you eliminate T between X and Y?
+
+1306
+02:05:55,579 --> 02:05:57,180
+Just try to make it disappear.
+
+1307
+02:05:57,939 --> 02:06:00,720
+Just try, you will find it. I trust you.
+
+1308
+02:06:40,916 --> 02:06:44,496
+Ah, yes, you're right, [öğrenci]. What is it? What do you think?
+
+1309
+02:06:46,115 --> 02:06:53,476
+x²-4 is y². That means x²-y² is equal to 4. You're right. What is it?
+
+1310
+02:06:55,855 --> 02:06:56,416
+Geometrically.
+
+1311
+02:07:00,212 --> 02:07:00,972
+Esnotuz?
+
+1312
+02:07:30,260 --> 02:07:32,520
+Now, can you hear me clearly?
+
+1313
+02:07:34,079 --> 02:07:36,380
+I think there is a problem with the connection.
+
+1314
+02:07:38,960 --> 02:07:40,840
+Okay, of course, this is not a circle.
+
+1315
+02:07:43,820 --> 02:07:46,060
+Don't tell me the circle, of course not.
+
+1316
+02:07:46,659 --> 02:07:49,699
+X square minus y square is a square.
+
+1317
+02:07:50,520 --> 02:07:52,220
+So what's the alternative form?
+
+1318
+02:07:54,960 --> 02:07:55,880
+What do you think?
+
+1319
+02:08:06,163 --> 02:08:08,184
+Any of you know that, please.
+
+1320
+02:08:14,068 --> 02:08:20,568
+But here, x²-y²-4, not positive 1.
+
+1321
+02:08:24,500 --> 02:08:27,779
+Okay, it's the cult of force. So think, what is it?
+
+1322
+02:08:34,836 --> 02:08:35,615
+No, not.
+
+1323
+02:08:38,456 --> 02:08:43,756
+In ellipse, x² over a² plus y² over b² is equal to 1.
+
+1324
+02:08:46,576 --> 02:08:47,716
+Not a parabola.
+
+1325
+02:08:52,020 --> 02:09:04,120
+Yes, yes, you're right. I know. Yes. It's hyperbola, isn't it?
+
+1326
+02:09:30,292 --> 02:09:31,872
+X plus voice t-square.
+
+1327
+02:09:36,532 --> 02:09:39,052
+[öğrenci], what is your question? I couldn't understand.
+
+1328
+02:09:39,212 --> 02:09:39,771
+Ha, okay.
+
+1329
+02:09:40,971 --> 02:09:42,731
+So, so what? No problem.
+
+1330
+02:09:42,952 --> 02:09:43,731
+2t, yes.
+
+1331
+02:09:44,452 --> 02:09:45,731
+X plus y is 2t.
+
+1332
+02:09:46,931 --> 02:09:49,072
+So x minus y is 2 over t.
+
+1333
+02:09:50,032 --> 02:09:54,752
+So between these equations, let's eliminate t.
+
+1334
+02:09:55,992 --> 02:09:59,032
+For example, you can write t is 2 over x minus y.
+
+1335
+02:09:59,471 --> 02:10:01,952
+Or you can write t is x plus y over 2.
+
+1336
+02:10:01,952 --> 02:10:07,292
+And substitute in other equation and write only an equation with x and y.
+
+1337
+02:10:08,011 --> 02:10:12,212
+So you get x squared minus y squared is equal to 4.
+
+1338
+02:10:13,112 --> 02:10:14,112
+Are you okay up to now?
+
+1339
+02:10:15,792 --> 02:10:16,931
+I think it's clear.
+
+1340
+02:10:17,492 --> 02:10:19,912
+And then you need to just think, what is it?
+
+1341
+02:10:20,811 --> 02:10:21,672
+It's hyperbola.
+
+1342
+02:10:23,532 --> 02:10:24,912
+Negativity because we have.
+
+1343
+02:10:27,811 --> 02:10:31,172
+And, but here, t is positive.
+
+1344
+02:10:31,952 --> 02:10:34,851
+So x is positive.
+
+1345
+02:10:35,332 --> 02:10:38,032
+So the negative part is not included.
+
+1346
+02:10:39,632 --> 02:10:42,292
+So, under like in the previous parabola,
+
+1347
+02:10:42,752 --> 02:10:44,912
+only the right branch of the parabola was included.
+
+1348
+02:10:45,252 --> 02:10:49,391
+And here, only the right hand branch of this hyperbola is included
+
+1349
+02:10:49,391 --> 02:10:51,492
+because of how parameter is positive.
+
+1350
+02:10:52,032 --> 02:10:54,112
+Only positive values we have.
+
+1351
+02:10:54,891 --> 02:10:56,492
+It's the kind of parameterization.
+
+1352
+02:10:56,692 --> 02:10:58,471
+It's still the only thing with the question.
+
+1353
+02:10:58,471 --> 02:10:59,572
+Okay.
+
+1354
+02:11:00,891 --> 02:11:02,672
+So, you have to be careful.
+
+1355
+02:11:03,172 --> 02:11:06,231
+This is not included because t is positive.
+
+1356
+02:11:06,931 --> 02:11:10,172
+If t was negative, we can have the negative part of it.
+
+1357
+02:11:11,172 --> 02:11:13,351
+And so, only this part.
+
+1358
+02:11:15,132 --> 02:11:16,132
+Are you okay?
+
+1359
+02:11:16,132 --> 02:11:35,072
+Okay.
+
+1360
+02:11:22,644 --> 02:11:34,524
+Also, I want to ask you a question. Can we have two different or more different parametrization belonging to the same curve? Can we have? What do you think?
+
+1361
+02:11:38,739 --> 02:11:42,739
+Bir parametrik, bir kürtü var,
+
+1362
+02:11:42,739 --> 02:11:45,739
+ama daha fazla bir parametriz,
+
+1363
+02:11:45,739 --> 02:11:47,739
+bir parametriz, bir parametriz.
+
+1364
+02:11:47,739 --> 02:11:50,739
+Bu da?
+
+1365
+02:11:50,739 --> 02:11:52,739
+Bir parametriz, bir parametriz,
+
+1366
+02:11:52,739 --> 02:11:53,739
+bir parametriz,
+
+1367
+02:11:53,739 --> 02:11:54,739
+bir kürtü?
+
+1368
+02:11:54,739 --> 02:11:55,739
+Bu da?
+
+1369
+02:12:11,796 --> 02:12:28,235
+Hocam, ben o ikinci kısmı anlamadım. Siz bir kere çıkardınız, diğer kısımda topladınız. Oraya kadar anladım. Yani 2x eşittir t, doğru mu?
+
+1370
+02:12:34,228 --> 02:12:37,228
+Yani siz şimdi bu sol taraftı...
+
+1371
+02:12:37,228 --> 02:12:45,927
+Evet. Şimdi şöyle, x'in ve y'yi tek tek çözmeye çalışmayın. Böyle bir durumda x ve y arasında parametreyi yok etmeye çalışacaksınız.
+
+1372
+02:12:46,047 --> 02:12:51,688
+Tek yapmanız o. Çünkü karteziyen denklemde x'in ve y'nin bir arada olduğu tek bir denkleme ihtiyacınız var.
+
+1373
+02:12:52,307 --> 02:12:55,288
+Artık parametre olmamalı. Ne olduğunu anlayabilmeniz için.
+
+1374
+02:12:55,988 --> 02:12:57,448
+Tamam da sol taraftı olsun.
+
+1375
+02:12:57,448 --> 02:12:59,047
+Çünkü siz karteziyen dizilerindeki her şeyi biliyorsunuz.
+
+1376
+02:12:59,047 --> 02:13:01,788
+Şöyle bunları bir topladık.
+
+1377
+02:13:01,788 --> 02:13:04,587
+Bir çıkarttık. Bunlar geldi mi? Tamam mı oraya kadar?
+
+1378
+02:13:04,788 --> 02:13:08,068
+Tamam. Oraya kadar tamam. Pardon sağ ol.
+
+1379
+02:13:08,068 --> 02:13:09,627
+Oraya kadar tamam. Şimdi...
+
+1380
+02:13:09,627 --> 02:13:11,868
+Tamam. O zaman benim neye ihtiyacım var?
+
+1381
+02:13:12,047 --> 02:13:13,828
+X'i ve y'yi benim yalnız bırakmam.
+
+1382
+02:13:13,927 --> 02:13:15,927
+Yani t'siz bir şekilde yazmam lazım.
+
+1383
+02:13:16,068 --> 02:13:17,148
+T'yi istemiyorum artık.
+
+1384
+02:13:17,768 --> 02:13:20,167
+Ne yaparım? Bir tanesini de çekip diğerini de yerine yazarım.
+
+1385
+02:13:20,768 --> 02:13:22,347
+Buradan ister buradan çekin t'yi.
+
+1386
+02:13:22,667 --> 02:13:23,467
+Ne yapmışım bakayım?
+
+1387
+02:13:24,368 --> 02:13:26,188
+Evet buradan çekmişim. Mesela t nedir?
+
+1388
+02:13:26,188 --> 02:13:27,307
+X artı y bölü 2.
+
+1389
+02:13:27,307 --> 02:13:30,887
+Bu x artı y bölü 2'yi t yerine burada yerine yazarım.
+
+1390
+02:13:31,248 --> 02:13:33,108
+X eksiye eşittir 2 bölü.
+
+1391
+02:13:33,507 --> 02:13:34,547
+Tamam. Anladım.
+
+1392
+02:13:34,728 --> 02:13:35,887
+X artı y bölü 2.
+
+1393
+02:13:36,408 --> 02:13:36,707
+Tamam mı?
+
+1394
+02:13:37,007 --> 02:13:38,148
+Tamam anladım. Teşekkür ederim.
+
+1395
+02:13:38,167 --> 02:13:40,467
+Sadece yok etmeye çalışmak. Rica ederim.
+
+1396
+02:13:40,467 --> 02:13:40,847
+Tamam.
+
+1397
+02:13:45,363 --> 02:14:04,563
+Şunu da söyleyeyim o zaman. Parametrize ederken kartezyen eğrileri, yani kartezyen denklem dediğimiz sadece x ve y'ye bağlı olan denklemler, bizim her zaman bildiğimiz ve çalıştırılması, re karede çalışıyoruz. Siz bunları biliyorsunuz. Çünkü x ve y düzleminde çalışıyorsunuz. Parametrizasyonu ilk defa görüyorsunuz.
+
+1398
+02:14:04,563 --> 02:14:08,563
+x ve y'yi belli bir parametreye bağlı olarak yazıyorum. Demek ki parametrize...
+
+1399
+02:14:20,243 --> 02:14:33,823
+Çünkü t'lerin aldığı değere göre, denklimini yazdığımız eğrinin bir kısmı veya tamamı veya durumuna göre bağlı olarak hangi parçalarının ifade edildiği, hangisinin gösterildiği önemli.
+
+1400
+02:14:33,823 --> 02:14:42,603
+O yüzden t'yi yok ettikten sonra, yani karteziyen halini yazdıktan sonra parametre aralığına dikkat edin.
+
+1401
+02:14:42,603 --> 02:14:47,603
+hangi parametreler için, parametrin hangi real aralığı için bu karteziyen denk...
+
+1402
+02:14:51,956 --> 02:15:15,235
+Sol kolu yoktu çünkü parametre pozitifti sadece. Parametrizasyon da ona göre yapılmıştı. İkisi de pozitifti. X'in negatif kısmı yoktu. Burada da öyle T pozitif alınmış. T pozitif olduğu sürece X hiçbir zaman negatif olmuyor. Yani bu hiperbolun sol tarafındaki parça hiçbir zaman yok. Sadece sağ taraftaki parça var gibi. Parametrizasyon sadece bu parçaya ait.
+
+1403
+02:15:15,235 --> 02:15:41,815
+İki parçayı da yani bu noktaların X kare, X diye karıştırıp dördü içeren tüm noktaların kümesini aslında almıyoruz. Sadece bir kısmını alıyor bu parametrizasyon. Yani parametrizasyonu siz değiştirebilirsiniz. İstediğiniz parçayı dahil alacak şekilde, hepsini dahil alacak şekilde. Bu yaptığınız parametrizasyona bağlı bir şey. Aldığınız parametre aralığına bağlı bir şey. Ve son olarak şunu sormuştum. Tek bir denklemin birden fazla parametrizasyonu mümkün olabilir mi sizce?
+
+1404
+02:15:41,815 --> 02:15:43,815
+Farklı şekillerde parametrizasyonu mümkün olabilir mi sizce?
+
+1405
+02:15:43,815 --> 02:15:46,016
+Farklı şekillerde parametrize edebilir miyiz bireyriği?
+
+1406
+02:15:51,155 --> 02:15:51,735
+Sizce?
+
+1407
+02:16:05,076 --> 02:16:26,636
+Evet, yapabiliriz. Farklı parametrizasyonlar her zaman mevcut olabilir demeyelim ama mevcut olduğu durumlar vardır. Bir eğriniz sadece bir tane parametrizasyon olabilir dememize gerek yok. Bu genel bir durum değildir. Farklı denklem tipleri ve parametre aralıklarıyla bir eğriye ait farklı parametrizasyonlar bulabiliriz. Bu da buna dair bir örnek.
+
+1408
+02:16:26,636 --> 02:16:38,775
+Şimdi bu soruyu size yönetmek istiyorum. X kare eksiye kareştir 4 hiperbolün ve sağ kolu için farklı parametrizasyonlar bulabilir misiniz?
+
+1409
+02:16:55,540 --> 02:17:05,820
+Can you find the other parametrizations for giving again x squared minus y squared is 4 and while changing the parametri interval you can again make it included on the right hand branch for example.
+
+1410
+02:17:12,147 --> 02:17:21,107
+Just think the functions once we have the substraction of the second power's results for, just think a little bit. Can you guess, what can it be?
+
+1411
+02:17:28,724 --> 02:17:29,804
+Do you have any idea?
+
+1412
+02:17:30,963 --> 02:17:31,363
+Okay.
+
+1413
+02:17:32,804 --> 02:17:33,484
+Let me look.
+
+1414
+02:17:40,884 --> 02:17:53,623
+Ah, yes. You will just think now, how can I write x and y belonging to a parameter t? In that case, I will have x²-y² is 4. That will be the parametrizization of u.
+
+1415
+02:17:57,556 --> 02:18:08,956
+Let me just guess which functions to write here. For example, if it was, ha, yes, it's the basic one at the back, you're right. If we say t for x and the other one will be,
+
+1416
+02:18:13,139 --> 02:18:20,119
+Asa basic and easiest one, just say one of them is t, the other one, just write according to the equation as given Cartesian form.
+
+1417
+02:18:20,719 --> 02:18:23,779
+This will be the parametrization easily. You can find one of them.
+
+1418
+02:18:24,519 --> 02:18:31,279
+So if you say x is t, what is y? t squared, yes, t squared minus 4.
+
+1419
+02:18:31,719 --> 02:18:35,699
+Okay, this is a parametrization, for example. What about the interval of parameter?
+
+1420
+02:18:35,699 --> 02:18:46,079
+In order to get x and t positive always. I'm sorry, only the positive part of x, y can be positive or negative. I'm sorry.
+
+1421
+02:18:47,500 --> 02:18:49,219
+Right part of the hyperbola.
+
+1422
+02:18:53,172 --> 02:18:55,832
+Well done. That's a nice answer.
+
+1423
+02:19:04,115 --> 02:19:10,896
+Always, you need to give the interval of parameter with the parametric equations. Don't forget.
+
+1424
+02:19:15,924 --> 02:19:22,404
+You can just think x is t, y is t squared minus 4.
+
+1425
+02:19:28,435 --> 02:19:28,835
+Maybe.
+
+1426
+02:19:34,451 --> 02:19:35,152
+Let's see.
+
+1427
+02:19:37,211 --> 02:19:38,691
+Now you will understand, I think.
+
+1428
+02:19:38,931 --> 02:19:39,211
+Look.
+
+1429
+02:19:45,139 --> 02:19:48,059
+Bu örneğin y tıya.
+
+1430
+02:19:48,059 --> 02:19:49,059
+Y tıya.
+
+1431
+02:19:49,059 --> 02:19:50,779
+Bu örneğin,
+
+1432
+02:19:50,779 --> 02:19:53,340
+çünkü [öğrenci],
+
+1433
+02:19:53,340 --> 02:19:56,219
+bu örneğin y tıya.
+
+1434
+02:19:56,219 --> 02:19:58,219
+Y tıya.
+
+1435
+02:19:58,219 --> 02:19:59,659
+Tıya minus 4.
+
+1436
+02:19:59,659 --> 02:20:03,659
+Y tıya.
+
+1437
+02:20:03,659 --> 02:20:05,659
+Yani tıya.
+
+1438
+02:20:05,659 --> 02:20:48,659
+Y tıya.
+
+1439
+02:20:57,492 --> 02:21:03,772
+So, y t, x, and square root 4 plus t square.
+
+1440
+02:21:05,272 --> 02:21:16,451
+It will be, for any t, for any t, positive, negative, any real number t, again right hand branch, because x is always positive here.
+
+1441
+02:21:17,131 --> 02:21:23,291
+Because the square root will not result never negative, so positive, x is always positive.
+
+1442
+02:21:23,291 --> 02:21:28,072
+4 is positive or negative, which means this part, again.
+
+1443
+02:21:28,072 --> 02:21:29,131
+Okay.
+
+1444
+02:21:34,515 --> 02:21:38,915
+What about another parametrization? Can you guess? We have also the third one.
+
+1445
+02:21:40,095 --> 02:21:44,315
+Alternatively, which is making x squared minus y squared is 4.
+
+1446
+02:21:46,895 --> 02:21:51,716
+While using the trigonometric functions. Can you guess?
+
+1447
+02:22:17,299 --> 02:22:18,420
+Let's see it together.
+
+1448
+02:22:19,420 --> 02:22:26,639
+For example, x is 2 second theta, t y is 2 tangent t. t or theta, it doesn't matter, you can write.
+
+1449
+02:22:27,420 --> 02:22:33,879
+And again, x square minus y square is 4, because second square is 1 plus tangent square t.
+
+1450
+02:22:35,759 --> 02:22:45,379
+And so, once you give this parametrization, these forms, you will have again x square minus y square results 4.
+
+1451
+02:22:45,379 --> 02:22:58,799
+But in order to get, again, right branch, right-hand branch of the hyperbola, you need to get t's between minus pi over 2 to pi over 2 to get the x is positive.
+
+1452
+02:23:00,079 --> 02:23:02,319
+That's why we have this, okay?
+
+1453
+02:23:03,539 --> 02:23:06,319
+Between these angles, we will have x is positive.
+
+1454
+02:23:08,479 --> 02:23:09,679
+What is any value?
+
+1455
+02:23:10,840 --> 02:23:12,399
+Positive and negative together.
+
+1456
+02:23:28,691 --> 02:23:33,611
+Are you okay with parametrizations?
+
+1457
+02:23:47,763 --> 02:23:50,603
+Any questions, please, if you have any questions, ask me now.
+
+1458
+02:23:59,827 --> 02:24:03,827
+Ok, ok, so, continue.
+
+1459
+02:24:07,956 --> 02:24:15,255
+Şimdi, arya tanı, arya tanı, derivata. Derivata in parametrik form.
+
+1460
+02:24:16,255 --> 02:24:23,255
+Ve sonra, arya tanı, arya tanı, arya tanı, arya tanı.
+
+1461
+02:24:23,255 --> 02:24:25,255
+Ve arya tanı, arya tanı.
+
+1462
+02:24:25,255 --> 02:24:27,255
+Lastly, we will evaluate.
+
+1463
+02:24:30,255 --> 02:24:36,255
+A parametrized curve x is f t, y is g t is differentiable at t.
+
+1464
+02:24:36,255 --> 02:24:42,255
+If f and g are differentiable at t, of course, these functions are important.
+
+1465
+02:24:42,255 --> 02:24:50,255
+At a point on the differentiable parametrized curve, where y is also a differentiable function of x,
+
+1466
+02:24:50,255 --> 02:25:20,255
+the derivatives dy dx
+
+1467
+02:25:20,255 --> 02:26:12,556
+dx dx
+
+1468
+02:26:16,340 --> 02:26:18,340
+ve parametrik form
+
+1469
+02:26:18,340 --> 02:26:21,340
+if it is given Cartesian
+
+1470
+02:26:21,340 --> 02:26:24,340
+of course you will just get the derivative directly
+
+1471
+02:26:24,340 --> 02:26:26,340
+but if it is given parametric form
+
+1472
+02:26:26,340 --> 02:26:28,340
+x and y with respect to t
+
+1473
+02:26:28,340 --> 02:26:31,340
+so this formula you need to use
+
+1474
+02:26:31,340 --> 02:26:33,340
+don't forget
+
+1475
+02:26:40,020 --> 02:26:45,100
+Evet, diğerlerle ilgili soru var, bu da
+
+1476
+02:26:45,100 --> 02:26:47,100
+yöntemlerle ilgili soru var, yöntemlerle ilgili soru var mı?
+
+1477
+02:26:47,100 --> 02:26:49,100
+Bu soru var mı?
+
+1478
+02:27:01,363 --> 02:27:03,203
+Evet, evet, of course.
+
+1479
+02:27:03,203 --> 02:27:10,123
+Oh no, differential equations you are talking about. No, of course not.
+
+1480
+02:27:10,123 --> 02:27:16,003
+But here you don't need the differential equations, you need only differentiability.
+
+1481
+02:27:16,003 --> 02:27:19,363
+That means having continuous derivatives. That's enough for you.
+
+1482
+02:27:20,564 --> 02:27:24,083
+Later you will see in this topic, in this lecture, you will see
+
+1483
+02:27:26,644 --> 02:27:30,404
+chain rule and general chain rule for several variable functions.
+
+1484
+02:27:30,404 --> 02:27:36,003
+And then you will understand why we have chain rule, but it's not related with the differentiability.
+
+1485
+02:27:37,203 --> 02:27:37,523
+Okay.
+
+1486
+02:27:40,243 --> 02:27:42,484
+And then let's continue.
+
+1487
+02:27:45,443 --> 02:27:49,363
+What about the second order derivative of y with respect to x?
+
+1488
+02:27:49,363 --> 02:27:51,203
+d squared x dy x squared.
+
+1489
+02:27:52,163 --> 02:27:58,243
+If the equations x and y define y as a twice-differentiable function means
+
+1490
+02:27:58,243 --> 02:28:03,043
+it has the second order derivative defined.
+
+1491
+02:28:03,043 --> 02:28:03,363
+Okay.
+
+1492
+02:28:03,363 --> 02:28:10,243
+So at any point where dx dt is different from 0 and y prime is dy dx,
+
+1493
+02:28:10,804 --> 02:28:15,843
+we have for the second order derivative of y with respect to x with this formalization.
+
+1494
+02:28:15,843 --> 02:28:18,404
+dy prime dt over dx dt.
+
+1495
+02:28:18,404 --> 02:28:23,443
+Again dx dt in the denominator, but here the derivative of y prime with respect to t.
+
+1496
+02:28:23,443 --> 02:28:29,843
+You have to be careful because in this first one, dy dt over dx dt.
+
+1497
+02:28:29,843 --> 02:28:35,043
+Second one, second order, dy prime over dt over dx dt.
+
+1498
+02:28:35,043 --> 02:28:40,243
+That means derivative of y prime with respect to t over dx dt.
+
+1499
+02:28:40,243 --> 02:28:45,843
+And then you have to be careful because of the other derivative of y prime with respect to t.
+
+1500
+02:28:45,843 --> 02:29:01,843
+And then you have to be careful because of the derivative of y prime with respect to t.
+
+1501
+02:28:58,227 --> 02:28:59,927
+Then, let's continue.
+
+1502
+02:29:01,867 --> 02:29:03,268
+What about this example?
+
+1503
+02:29:04,387 --> 02:29:06,467
+It says, find the tangent to the curve.
+
+1504
+02:29:07,687 --> 02:29:16,187
+Second t tangent t, t is between minus pi over 2 to pi over 2 at the point squared 1 and 1, squared 2 and 1.
+
+1505
+02:29:17,487 --> 02:29:21,707
+Find the tangent means write the equation of tangent line, it says.
+
+1506
+02:29:25,387 --> 02:29:27,268
+To write the tangent line,
+
+1507
+02:29:31,059 --> 02:29:32,059
+Ne?
+
+1508
+02:29:35,987 --> 02:29:37,188
+Tanja'n tutukyalı.
+
+1509
+02:29:43,763 --> 02:29:48,843
+What does it mean? What do you need for this question? Will you understand it?
+
+1510
+02:30:03,123 --> 02:30:29,283
+Evet, think basic. On katlı zim plana, what do we need to write the line equation in two-dimensional real plane? What do we need? A point and a slope. Isn't it? We need a point and a slope, yes. But how can we get the slope of the tangent line?
+
+1511
+02:30:29,283 --> 02:30:36,324
+What's the relation with our curve and the tangent line given parametrically?
+
+1512
+02:30:54,388 --> 02:30:56,468
+Evet, well done. [öğrenci].
+
+1513
+02:30:57,188 --> 02:31:00,388
+The derivative of the curve at that point,
+
+1514
+02:31:02,388 --> 02:31:07,108
+because it is, the tangent line is tangent to the curve at the specific point.
+
+1515
+02:31:07,508 --> 02:31:12,788
+That means the slope of the tangent line is equal to the derivative of the curve at that point.
+
+1516
+02:31:13,508 --> 02:31:17,347
+So, we need to evaluate the derivative of the curve,
+
+1517
+02:31:18,068 --> 02:31:21,988
+exosecundi with tangenti at the point, square root 2 and 1.
+
+1518
+02:31:21,988 --> 02:31:24,468
+So, how will you evaluate it?
+
+1519
+02:31:25,268 --> 02:31:30,228
+It says dy dx is equal to dy dt over dx dt.
+
+1520
+02:31:30,948 --> 02:31:31,428
+What is it?
+
+1521
+02:31:33,188 --> 02:31:35,347
+dy dt over dx dt.
+
+1522
+02:31:58,195 --> 02:31:59,755
+Let's see the solution for this one.
+
+1523
+02:31:59,755 --> 02:32:02,155
+Okay.
+
+1524
+02:32:03,476 --> 02:32:04,155
+D y d t.
+
+1525
+02:32:05,075 --> 02:32:06,636
+Y is tangent t.
+
+1526
+02:32:07,355 --> 02:32:09,155
+So derivative of second square t.
+
+1527
+02:32:10,195 --> 02:32:11,956
+X is second t.
+
+1528
+02:32:12,236 --> 02:32:14,155
+Derivative of second t tangent t.
+
+1529
+02:32:14,755 --> 02:32:17,835
+So, d y d x is second t or tangent t.
+
+1530
+02:32:18,636 --> 02:32:19,915
+We need the value of it.
+
+1531
+02:32:27,796 --> 02:32:57,796
+2' ve 1'e 1
+
+1532
+02:32:57,796 --> 02:33:27,796
+2'e 1'
+
+1533
+02:33:27,796 --> 02:33:53,605
+1'e 1'
+
+1534
+02:34:21,139 --> 02:34:32,079
+Are you okay? Do you understand it? Any question? Anyone else? Okay.
+
+1535
+02:34:38,804 --> 02:34:41,103
+Okay. Any question?
+
+1536
+02:34:47,507 --> 02:34:58,147
+I think so. I also feel tired, but we have four minutes left. So one more question and then we will be okay. Don't worry.
+
+1537
+02:34:59,188 --> 02:35:07,907
+Yes, this is the last question of today. It says find the second order derivative as a function of
+
+1538
+02:35:07,907 --> 02:35:21,587
+as a function of t, possibly. If x is t minus t squared, who is t minus t cubed? Now just write it.
+
+1539
+02:35:23,507 --> 02:35:32,467
+What was the formula for d squared y dx squared? Let's note it down. I will be back. Look,
+
+1540
+02:35:32,467 --> 02:35:38,147
+this one. Dy prime over d t over dx dt.
+
+1541
+02:35:41,427 --> 02:35:45,007
+What is dy dx? dy dt over dx dt.
+
+1542
+02:35:46,587 --> 02:35:55,847
+First, evaluate y'r'in, and then get the derivative of it with respect to t, divide with dx dt, it will be second order derivative of y with respect to x.
+
+1543
+02:35:56,147 --> 02:35:57,807
+Okay, let's do it.
+
+1544
+02:36:13,940 --> 02:36:35,819
+Y' y dx'e y' y dx'e y' y
+
+1545
+02:36:47,347 --> 02:36:51,727
+Aşya vallur, yürsuk uygun.
+
+1546
+02:36:58,355 --> 02:36:58,755
+No.
+
+1547
+02:37:01,175 --> 02:37:04,456
+First, you need to evaluate y' and then
+
+1548
+02:37:15,540 --> 02:37:18,140
+Çünkü, bu problemi de anlamıyor.
+
+1549
+02:37:19,140 --> 02:37:20,500
+Çünkü, burada yapıyoruz.
+
+1550
+02:37:22,180 --> 02:37:26,500
+Hocam, aslında y fonksiyonun ikinci türevini almıyor musunuz?
+
+1551
+02:37:27,060 --> 02:37:28,180
+Evet, ama,
+
+1552
+02:37:28,180 --> 02:37:30,180
+bu formula diyor ki,
+
+1553
+02:37:30,180 --> 02:37:30,440
+bakın,
+
+1554
+02:37:30,440 --> 02:37:31,440
+look,
+
+1555
+02:37:32,440 --> 02:37:33,800
+dy prime means,
+
+1556
+02:37:33,800 --> 02:37:35,240
+here y prime is this.
+
+1557
+02:37:36,360 --> 02:37:37,640
+Firstly, you need to do it.
+
+1558
+02:37:38,840 --> 02:37:40,200
+Okay, with respect to t.
+
+1559
+02:37:41,480 --> 02:37:42,680
+Not only the,
+
+1560
+02:37:42,680 --> 02:37:46,440
+I think you understand that only y prime here we have.
+
+1561
+02:37:47,160 --> 02:37:49,800
+So, second derivative divided by dx dt.
+
+1562
+02:37:49,800 --> 02:37:52,040
+No, that's why you get the same mistake.
+
+1563
+02:37:52,680 --> 02:37:53,160
+It's not.
+
+1564
+02:37:54,440 --> 02:37:56,680
+Firstly, you need to evaluate this,
+
+1565
+02:37:56,680 --> 02:37:57,880
+I'm sorry, this one,
+
+1566
+02:37:57,880 --> 02:38:00,680
+with respect to t,
+
+1567
+02:38:00,680 --> 02:38:03,160
+and then dx dt.
+
+1568
+02:38:03,160 --> 02:38:03,400
+Look.
+
+1569
+02:38:04,840 --> 02:38:05,960
+So, let's see it together.
+
+1570
+02:38:07,480 --> 02:38:08,120
+Look.
+
+1571
+02:38:08,120 --> 02:38:09,560
+Firstly, y prime.
+
+1572
+02:38:12,040 --> 02:38:12,760
+dy dx.
+
+1573
+02:38:12,760 --> 02:38:14,200
+What is dy dx?
+
+1574
+02:38:14,840 --> 02:38:16,600
+dy dt over dx dt.
+
+1575
+02:38:18,760 --> 02:38:21,000
+y t minus t cube,
+
+1576
+02:38:21,000 --> 02:38:23,240
+so 1 minus 3t square.
+
+1577
+02:38:23,240 --> 02:38:25,000
+x was t minus t square,
+
+1578
+02:38:25,000 --> 02:38:26,440
+so 1 minus 2t.
+
+1579
+02:38:26,440 --> 02:38:29,560
+Now, d square y dx square,
+
+1580
+02:38:29,560 --> 02:38:30,600
+dy prime dt.
+
+1581
+02:38:30,600 --> 02:38:32,040
+That is derivative of this one,
+
+1582
+02:38:32,040 --> 02:38:32,840
+not only y.
+
+1583
+02:38:33,320 --> 02:38:35,960
+Derivative of this one with respect to t,
+
+1584
+02:38:36,520 --> 02:38:38,280
+divide with dx dt.
+
+1585
+02:38:38,840 --> 02:38:41,080
+Derivative of this expression with respect to t.
+
+1586
+02:38:41,880 --> 02:38:43,080
+Derivative of numerator,
+
+1587
+02:38:43,640 --> 02:38:45,720
+minus 60 times denominator,
+
+1588
+02:38:45,720 --> 02:38:48,280
+1 minus 2t minus
+
+1589
+02:38:50,440 --> 02:38:52,200
+derivative of denominator,
+
+1590
+02:38:52,200 --> 02:38:53,400
+which is minus 2,
+
+1591
+02:38:53,400 --> 02:38:56,360
+so plus 2 times numerator,
+
+1592
+02:38:56,360 --> 02:38:59,000
+divided with the second power of the denominator,
+
+1593
+02:38:59,000 --> 02:39:00,680
+1 minus 2t o square,
+
+1594
+02:39:01,480 --> 02:39:03,480
+divide with dx dt.
+
+1595
+02:39:03,480 --> 02:39:05,320
+dx dt is 1 minus 2t.
+
+1596
+02:39:05,320 --> 02:39:10,760
+Now, have you seen your problem?
+
+1597
+02:39:10,760 --> 02:39:12,440
+Are you okay?
+
+1598
+02:39:12,440 --> 02:39:29,160
+You're okay.
+
+1599
+02:39:17,236 --> 02:39:24,076
+Ok, well done. So don't do it directly. Because it's again parametrically, you cannot get the derivative of y directly put here.
+
+1600
+02:39:24,676 --> 02:39:36,256
+dy dt doesn't mean that only this part, this is y prime, not this one. dy dt is not y prime. y prime is dy dx, that means this form.
+
+1601
+02:39:36,256 --> 02:39:36,936
+Ok.
+
+1602
+02:39:41,716 --> 02:39:51,916
+Are you all okay about this topic, Taylor Maclaurin and parametrik equations? What do you think? Any questions do you have?
+
+1603
+02:39:54,636 --> 02:40:08,056
+I know, yes, I think so. It's not so hard. And I know that you get all tired and want to be okay about everything. So we will continue tomorrow.
+
+1604
+02:40:08,056 --> 02:40:15,976
+And thank you so much for your patience and the participations. Maybe, yes, it's possible.
+
+1605
+02:40:18,136 --> 02:40:24,935
+And I thank you. And take care. And see you tomorrow.
+
+1606
+02:40:31,443 --> 02:40:32,263
+I think you.
+
+1607
+02:40:33,083 --> 02:40:35,804
+Yes, all of you, please stay healthy and happy.

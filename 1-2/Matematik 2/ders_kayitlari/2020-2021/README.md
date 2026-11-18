@@ -23,3 +23,4 @@
 | 50 | Bahar | İsmail (soyadı bulunamadı) | [sube_50/](sube_50/) |
 | 51 | Bahar | Emre Kolotoğlu | [sube_51/](sube_51/) |
 | 52 | Bahar | Muttalip Özavşar | [sube_52/](sube_52/) |
+| 53 | Bahar | Elif Demir | [sube_53/](sube_53/) |

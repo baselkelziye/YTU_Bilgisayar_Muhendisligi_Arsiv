@@ -1,0 +1,4503 @@
+1
+00:02:27,156 --> 00:02:34,036
+Arkadaşlar, merhaba. Teşekkür ederim [öğrenci]. İyiyim, sen nasılsın? Ve hepiniz nasılsınız? Umarım hepiniz iyisinizdir.
+
+2
+00:02:50,003 --> 00:03:05,183
+Çok güzel. Önümüzdeki hafta dönemi tamamlıyoruz biliyorsunuz. Bugün de iki katlı integrallere devam edeceğiz. Getirebildiğim kadar bugün devam edelim.
+
+3
+00:03:05,563 --> 00:03:17,524
+Sonrasında vaktimiz yettiğince uygulama yaparız. Hatta önümüzdeki hafta ekstra derste yapabiliriz bence. Size uyarsa uyanlar gelir, kayıt oluşturulur yine isteyenler takip eder.
+
+4
+00:03:17,524 --> 00:03:27,303
+sonradan da dinleyebilirsiniz. Yine toplantı sekmeleri içerisinde telafi dersi başlıkla ben size daha önceden söylerim. Mutlaka saatini, gününü konuşuruz.
+
+5
+00:03:27,723 --> 00:03:31,783
+Ekstra uygulama elimde ne kadar soru varsa hepsini beraber yapmaya çalışırız.
+
+6
+00:03:57,044 --> 00:03:59,044
+Öncelikle bir de şunu söylemek istiyorum arkadaşlar.
+
+7
+00:03:59,204 --> 00:04:05,064
+İki katlı integralleri hızlıca şöyle bir toparlamamı ister misiniz?
+
+8
+00:04:05,564 --> 00:04:07,364
+Bir açıklama yapmamı ister misiniz Türkçe?
+
+9
+00:04:07,784 --> 00:04:10,484
+Sınırları hakkında, anlamı hakkında.
+
+10
+00:04:11,104 --> 00:04:14,424
+Aslında ben dün yapmak istedim ama zamanımız bu şekilde oldu.
+
+11
+00:04:17,424 --> 00:04:18,103
+Evet.
+
+12
+00:04:19,903 --> 00:04:25,903
+Sizde böyle eksik kalan yerler varsa şöyle tamamlanmış olsun ve sizde temeli iyi bir şekilde otursun istiyorum.
+
+13
+00:04:25,903 --> 00:04:32,264
+Aksi takdirde polar, katlılar da polarlar ve değişken dönüşümlerinde belki sıkıntı çekebilirsiniz.
+
+14
+00:04:34,244 --> 00:04:39,204
+Şöyle ben size o zaman hızlıca bir Türkçe tekrar edeceğim.
+
+15
+00:04:40,223 --> 00:04:41,423
+Dün yaptıklarımızla ilgili.
+
+16
+00:04:43,223 --> 00:04:48,564
+Şimdi şöyle ki iki katlı integralleri neden kullanıyoruz?
+
+17
+00:04:48,744 --> 00:04:50,704
+Daha doğrusu neden var diye düşünebiliriz.
+
+18
+00:04:50,804 --> 00:04:52,903
+Her zaman bir şeyin bir başlangıç noktası var.
+
+19
+00:04:52,903 --> 00:04:57,463
+İntegrali neden kullandığımız gibi aslında operatör olarak yani daha doğrusu işlem olarak.
+
+20
+00:04:59,764 --> 00:05:02,064
+Şimdi tek katlı integralleri üzerine konuşacağım.
+
+21
+00:05:02,184 --> 00:05:03,564
+Sonrasında iki katlıya geçeceğim.
+
+22
+00:05:06,144 --> 00:05:12,903
+R karede yani x-y düzleminde iki boyutlu bir uzaydaki bir düzlemdeki bir alan hesabı aslında ihtiyacımız olan.
+
+23
+00:05:12,903 --> 00:05:18,864
+Ve bu alan hesabını yaparken eğer bu geometrik bir şekil değilse tabii ki olmak zorunda değil.
+
+24
+00:05:19,484 --> 00:05:27,224
+Bir eğrinin bir pozitif bir fonksiyon eğrisinin altında kalan alanın hesaplanmasıyla ilgili bir durum aslında bu.
+
+25
+00:05:27,283 --> 00:05:28,304
+Bu yüzden integral var.
+
+26
+00:05:28,403 --> 00:05:32,903
+İntegre etmek aslında anlam olarak bir araya getirmek, bütünleştirmek demektir.
+
+27
+00:05:32,903 --> 00:05:35,343
+Biz ne yapıyoruz tek katlı integralde?
+
+28
+00:05:35,403 --> 00:05:36,843
+Bir alan hacmi hesaplamak istiyoruz.
+
+29
+00:05:37,004 --> 00:05:37,744
+Çok özür dilerim.
+
+30
+00:05:38,124 --> 00:05:39,843
+Bir bölgenin alanını hesaplamak istiyoruz.
+
+31
+00:05:40,764 --> 00:05:43,024
+Ve onu nasıl hesaplarız diye düşünüyoruz.
+
+32
+00:05:43,184 --> 00:05:44,163
+Belli bir formülü yok.
+
+33
+00:05:44,704 --> 00:05:46,923
+O zaman demek ki bir işlem bulmamız lazım.
+
+34
+00:05:47,843 --> 00:05:48,304
+Ne yapıyoruz?
+
+35
+00:05:48,403 --> 00:05:53,304
+Bölge ilk önce AB aralığına tanımlı bir fx fonksiyonunu düşünün.
+
+36
+00:05:53,864 --> 00:05:56,564
+AB aralığını en tane alt aralıklara bölüyoruz.
+
+37
+00:05:56,564 --> 00:06:00,584
+Yani aslında bölgeyi dikdörtgene benzer şekillere bölüyoruz aslında.
+
+38
+00:06:01,124 --> 00:06:03,684
+Üstleri düz olmadığı için tam bir dikdörtgen olmuyor hiçbir zaman.
+
+39
+00:06:04,644 --> 00:06:05,183
+Ne yapıyoruz?
+
+40
+00:06:05,384 --> 00:06:06,224
+Biz neyi biliyoruz?
+
+41
+00:06:06,283 --> 00:06:08,144
+Dikdörtgenin alanı hesaplamayı biliyoruz çünkü.
+
+42
+00:06:08,364 --> 00:06:09,923
+İşte kare alanı hesaplamayı biliyoruz.
+
+43
+00:06:10,004 --> 00:06:11,423
+Üçgen alanı hesaplamayı biliyoruz.
+
+44
+00:06:11,504 --> 00:06:13,004
+Çember alanı hesaplamayı biliyoruz.
+
+45
+00:06:13,724 --> 00:06:16,084
+Burada dikdörtgenleri kullanıyoruz.
+
+46
+00:06:17,043 --> 00:06:20,324
+Ve her bir dikdörtgenin, şöyle söyleyeyim.
+
+47
+00:06:21,563 --> 00:06:24,704
+AB aralığını alt aralıklara böldüğümüzde en tane alt aralık oluyor.
+
+48
+00:06:24,704 --> 00:06:29,264
+Yani aslında en tane alt aralık eşit de böleseniz farklı da böleseniz fark etmez.
+
+49
+00:06:30,423 --> 00:06:32,923
+Oluşan her bir dikdörtgenin alanı nasıl bulurum?
+
+50
+00:06:33,384 --> 00:06:38,024
+İşte taban alanı, çok pardon, iki ayrıtının çarpımı diyelim.
+
+51
+00:06:39,303 --> 00:06:43,543
+Ayrıtlarından bir tanesi zaten alt aralıkların uzunlukları, genişlikleri.
+
+52
+00:06:44,043 --> 00:06:45,264
+Yükseklikleri nereden geliyor?
+
+53
+00:06:45,384 --> 00:06:48,923
+Yani diğer uzunluğun ayrıtı da fonksiyonun o noktadaki değerinden.
+
+54
+00:06:49,084 --> 00:06:49,683
+Hangi noktada?
+
+55
+00:06:49,824 --> 00:06:53,204
+Her bir alt aralığın üzerinde bir tane nokta seçiyoruz rastgele.
+
+56
+00:06:53,204 --> 00:06:59,984
+Tabi ki matematik birden hatırlarsanız bunların seçimine bağlı alt ve üst reyman toplamları üzerine konuşmuştuk.
+
+57
+00:07:00,084 --> 00:07:01,303
+Oraya hiç girmemize gerek yok.
+
+58
+00:07:01,543 --> 00:07:07,084
+Çünkü hangi alt aralıkları bölerseniz bölün, hangi noktayı seçerseniz seçin.
+
+59
+00:07:07,364 --> 00:07:13,324
+O fonksiyon o aralıkla integr edilebiliyorsa zaten limit durumunda en sonunda giderken hepsi aynı değere yakınlayacaktır.
+
+60
+00:07:13,384 --> 00:07:14,264
+O yüzden hiçbir sıkıntı yok.
+
+61
+00:07:14,463 --> 00:07:18,144
+İstediğimiz partition dediğimiz alt aralıkları bölme işlemi.
+
+62
+00:07:18,744 --> 00:07:19,744
+Alt aralıkları böldük.
+
+63
+00:07:19,744 --> 00:07:25,064
+Her bir alt aralığın genişliğini hesapladık ve her bir alt aralığın içerisinde bir tane nokta belirledik.
+
+64
+00:07:25,704 --> 00:07:30,484
+Ve o noktanın fonksiyondaki aldığı değer her bir dikdörtgenin uzun olan ayrıtını verir.
+
+65
+00:07:31,224 --> 00:07:36,663
+Ben iki ayrıtı çarptığımda yani her bir alt aralığın genişliğiyle yüksekliğini çarptığımda her bir dikdörtgenin,
+
+66
+00:07:37,304 --> 00:07:41,504
+daha doğrusu dikdörtgene yakın olan cisimleri, ben onu dikdörtgen düşünüyorum.
+
+67
+00:07:41,644 --> 00:07:46,783
+Ama aslında eğriye diyen yerleri eğri olduğu için dikdörtgen tam olarak dikdörtgen değil.
+
+68
+00:07:47,475 --> 00:07:50,935
+Ve bunların toplamını aldığımda işte en tane dikdörtgenim var.
+
+69
+00:07:51,175 --> 00:07:53,855
+Toplamlarını aldım, alanlarını hesapladım, toplamını aldım.
+
+70
+00:07:53,956 --> 00:07:56,875
+Bu benim gerçek alanıma sadece yakınsıyacaktır.
+
+71
+00:07:56,956 --> 00:07:58,656
+Çünkü hesaplayamadığım yerler var.
+
+72
+00:07:59,196 --> 00:08:01,716
+Çünkü ben onu böldüğümde hepsi aslında dikdörtgene dönüşmüyor.
+
+73
+00:08:01,836 --> 00:08:04,415
+Fazla olan yerler var, küçük eksik olan yerler var.
+
+74
+00:08:05,255 --> 00:08:07,536
+O yüzden bu ne zaman gerçekleşir?
+
+75
+00:08:07,776 --> 00:08:12,036
+Öyle bir bölünme yaparım ki sonsuz tane dikdörtgen elde edersem
+
+76
+00:08:12,036 --> 00:08:16,156
+ve hatta yani eni sonsuza götürmemizin nedeni o bölünmelerin
+
+77
+00:08:16,156 --> 00:08:18,315
+elde ettiğim alt aralıkların sayısı.
+
+78
+00:08:18,776 --> 00:08:22,235
+Onu ben sonsuza kadar götürecek ve her bir alt aralığın genişliği
+
+79
+00:08:22,235 --> 00:08:25,795
+sıfıra gidecek kadar yani o kadar artık küçük bölüyorum ki
+
+80
+00:08:25,795 --> 00:08:29,196
+yukarıdaki dikdörtgenler artık benim eğrime yaklaşıyor.
+
+81
+00:08:30,295 --> 00:08:32,936
+O yüzden de bunun sonsuza gittiği zaman
+
+82
+00:08:32,936 --> 00:08:36,735
+ve her bir alt aralığın genişliği de sıfıra gittiği zaman
+
+83
+00:08:36,735 --> 00:08:38,076
+bu gerçek değere eşit olur.
+
+84
+00:08:38,076 --> 00:08:43,456
+İşte burada integre etmek o aralıkların, o dikdörtgenlerin toplamını
+
+85
+00:08:43,456 --> 00:08:46,875
+gerçek alana eşit olacak şekilde bütünleştirmek anlamına gelir.
+
+86
+00:08:46,995 --> 00:08:48,296
+O yüzden en sonsuza gider.
+
+87
+00:08:48,676 --> 00:08:53,515
+Orada bir riman toplamı dediğimiz işte fx çarpı delta x'ler aslında.
+
+88
+00:08:54,036 --> 00:08:57,495
+Onların toplamı ama eni sonsuza götürdüğümde sonsuz tane terim oluyor.
+
+89
+00:08:58,135 --> 00:09:01,615
+Ve aslında bu operatör olarak, operasyon olarak da
+
+90
+00:09:01,615 --> 00:09:05,316
+o fonksiyonun o aralıkta verilen aralıktaki integral ile eşit oluyor.
+
+91
+00:09:05,316 --> 00:09:07,216
+Ve bana o bölgenin alanını veriyor.
+
+92
+00:09:07,615 --> 00:09:09,495
+Pozitif bir fonksiyon için konuşuyorum.
+
+93
+00:09:09,495 --> 00:09:11,775
+Burada iki katlı da ne oluyor?
+
+94
+00:09:12,775 --> 00:09:15,076
+İki katlı integrallerde ne yapıyoruz?
+
+95
+00:09:15,255 --> 00:09:16,456
+Bir boyut yukarı çıktık.
+
+96
+00:09:16,796 --> 00:09:19,696
+Tek katlı integraller tek değişkenli fonksiyonlarda tanımlıydı.
+
+97
+00:09:20,056 --> 00:09:22,655
+Ve tek katlı integrali bir aralık üzerinde hesaplarsınız.
+
+98
+00:09:22,895 --> 00:09:25,536
+Peki çift katlı olduğunda ne oluyor iki katlı integrallerde?
+
+99
+00:09:26,395 --> 00:09:27,895
+Öncelikle bölgesi değişiyor.
+
+100
+00:09:28,036 --> 00:09:30,415
+Tek katlı integral nasıl bir aralık üzerinde tanımlıysa
+
+101
+00:09:30,415 --> 00:09:33,255
+iki katlı integralde iki boyutlu bir düzey,
+
+102
+00:09:33,456 --> 00:09:35,255
+daha doğrusu bir düzlerin üzerinde tanımlı oluyor.
+
+103
+00:09:35,255 --> 00:09:38,336
+Yani şurada gördüğünüz şu bölge üzerinde.
+
+104
+00:09:38,475 --> 00:09:40,635
+Artık aralıkta değilim, iki kata geçtiğim için
+
+105
+00:09:40,635 --> 00:09:44,235
+benim integrasyon bölgem var artık.
+
+106
+00:09:44,336 --> 00:09:45,395
+İntegrasyon alanım yok.
+
+107
+00:09:45,696 --> 00:09:47,275
+Pardon, aralığım yok.
+
+108
+00:09:47,836 --> 00:09:50,635
+Tek katlı da aralık var da iki katlı da bölge var.
+
+109
+00:09:50,875 --> 00:09:52,115
+Yani iki boyutlu.
+
+110
+00:09:53,375 --> 00:09:53,796
+Neden?
+
+111
+00:09:54,135 --> 00:09:55,316
+Fonksiyonun da iki değişkenli.
+
+112
+00:09:55,316 --> 00:10:00,056
+Aynı zamanda bir pozitif fonksiyonun iki katlı integrali
+
+113
+00:10:00,056 --> 00:10:06,276
+fonksiyonla integre ettiğim bölge arasında kalan cismin hacmini verir.
+
+114
+00:10:07,015 --> 00:10:09,175
+Pozitif bir fonksiyon için konuşuyorum tekrar.
+
+115
+00:10:11,276 --> 00:10:14,975
+O zaman bu da şöyle bir ihtiyaçtan doğdu diyebiliriz.
+
+116
+00:10:15,336 --> 00:10:17,936
+İki katlı integralde bir hacim hesabı için doğmuş olabilir.
+
+117
+00:10:17,936 --> 00:10:22,436
+Evet, nasıl bir hacminiz var, nasıl bir cisimimiz var?
+
+118
+00:10:22,536 --> 00:10:25,276
+Solid dediğimiz o katı cisimden bahsediyoruz.
+
+119
+00:10:25,415 --> 00:10:28,556
+Yani uzayda bir yer kaplayan, bir hacim kaplayan bir cisimden bahsediyoruz.
+
+120
+00:10:29,415 --> 00:10:30,576
+Bu cisim nasıl oluşuyor?
+
+121
+00:10:31,096 --> 00:10:33,216
+İki değişkenli fonksiyonun yüzeyi biliyorsunuz.
+
+122
+00:10:33,276 --> 00:10:35,936
+İki değişkenli fonksiyonu bir yüzeyi gösterir re küpte.
+
+123
+00:10:36,536 --> 00:10:40,456
+İki değişken artı z değerleri toplamda üç değişken.
+
+124
+00:10:40,576 --> 00:10:42,655
+Yani üç boyutlu bir uzayda bunu çizebilirsiniz.
+
+125
+00:10:42,776 --> 00:10:43,855
+Ve bir yüzeyi gösterir.
+
+126
+00:10:43,855 --> 00:10:49,735
+Bu yüzeyi nerede integre edersen ikisi arasındaki cismin hacmini verir.
+
+127
+00:10:50,675 --> 00:10:51,395
+Bunu unutmayın.
+
+128
+00:10:52,076 --> 00:10:53,196
+Ben böyle bir cismim var.
+
+129
+00:10:53,495 --> 00:10:55,076
+Bu tanım kümem diyelim.
+
+130
+00:10:55,436 --> 00:10:56,296
+Bu da görüntüsü.
+
+131
+00:10:57,355 --> 00:11:00,155
+Buradaki noktalara karşılık z değerleri var.
+
+132
+00:11:00,755 --> 00:11:04,536
+Bu top surface dediğim tepedeki yüzeyim.
+
+133
+00:11:05,056 --> 00:11:06,276
+Bu da base region.
+
+134
+00:11:06,716 --> 00:11:09,355
+Yani nasıl diyelim?
+
+135
+00:11:09,735 --> 00:11:10,816
+Taban bölgesi diyelim.
+
+136
+00:11:10,816 --> 00:11:14,296
+Pozitif bir fonksiyonum var.
+
+137
+00:11:14,596 --> 00:11:16,255
+Bu cismin hacmini nasıl hesaplarım?
+
+138
+00:11:16,895 --> 00:11:19,255
+Alan hesaplarken küçük dikdörtgenlere bölmüştüm.
+
+139
+00:11:19,375 --> 00:11:21,536
+Çünkü iki boyutlu bir yüzeydeydim.
+
+140
+00:11:21,635 --> 00:11:22,936
+Şu an üç boyutlu uzaydayım.
+
+141
+00:11:23,355 --> 00:11:24,316
+Cismi ne yaparsınız?
+
+142
+00:11:25,276 --> 00:11:26,655
+Dilim dilim doğradığınızı düşünün.
+
+143
+00:11:26,755 --> 00:11:28,276
+Ama dikdörtgenlere bölüyorsunuz.
+
+144
+00:11:28,995 --> 00:11:32,675
+Bir x'e dik, bir y'ye dik şekilde dilimlediğinizi düşünün.
+
+145
+00:11:33,196 --> 00:11:34,375
+Yani neler oluşuyor?
+
+146
+00:11:34,375 --> 00:11:37,415
+Küçük küçük dik, dikdörtgenler prizmaları oluşuyor.
+
+147
+00:11:38,415 --> 00:11:54,415
+Bir x'e dikdörtgenler.
+
+148
+00:11:38,035 --> 00:11:42,615
+İşte ben de orada nasıl dikdörtgenleri bölgüslem burada 3 boyutlu dikdörtgenler prizmaları var.
+
+149
+00:11:43,115 --> 00:11:52,615
+Üst tarafı fonksiyonumuzun yüzeyine de, alt tarafı integrasyon bölgemizde olan dikdörtgenler, vertical rectangular boxes dediğim onlardı.
+
+150
+00:11:53,435 --> 00:11:57,955
+Dikdörtgenler prizmam var ve her birinin hacmini hesaplayıp toplamını integre edeceğim.
+
+151
+00:11:57,955 --> 00:12:01,495
+Daha doğrusu toplamını sonsuza gönderdiğimde integrasyon eşit olacak.
+
+152
+00:12:02,215 --> 00:12:03,335
+Bunları nasıl yapabilirim?
+
+153
+00:12:03,335 --> 00:12:10,995
+Bu tarz hacimlerin daha doğrusu bu rectangular boxların hacimleri nasıl hesaplanır?
+
+154
+00:12:11,075 --> 00:12:12,515
+Taban alanımız çarpı yükseklik.
+
+155
+00:12:13,355 --> 00:12:15,215
+Taban alanımız delta ak'lar.
+
+156
+00:12:15,675 --> 00:12:18,815
+Yani xk çarpı delta x çarpı delta y.
+
+157
+00:12:19,275 --> 00:12:21,995
+Yani iki katlı integraldeki dx dy oradan geliyor.
+
+158
+00:12:22,435 --> 00:12:25,315
+Yine içlerinden bir tane hep yöntemimiz aynı.
+
+159
+00:12:25,555 --> 00:12:31,375
+Parçala, bölgeyi integrasyon bölgesinin içinden nokta seç, fonksiyonu hesapla bunları çarp ve topla.
+
+160
+00:12:31,375 --> 00:12:33,455
+Burada sadece iki boyutlu.
+
+161
+00:12:33,955 --> 00:12:36,195
+Yani üçüncü boyuta geçiyorum iki değişken olduğum için.
+
+162
+00:12:37,096 --> 00:12:39,475
+Taban alanımı dikdörtgenlere böldüm.
+
+163
+00:12:40,395 --> 00:12:43,195
+Her bir küçük dikdörtgen bölgede bir tane nokta seçiyorum.
+
+164
+00:12:43,375 --> 00:12:44,895
+Bu noktayı fonksiyonunda hesaplıyorum.
+
+165
+00:12:45,015 --> 00:12:48,515
+Bu her bir dikdörtgenler prizmasının yüksekliğini oluşturacak.
+
+166
+00:12:49,075 --> 00:12:53,915
+Böylece taban alanı çarp yükseklik dediğimde o böldüğüm her küçük dilimin hacmini hesaplıyorum.
+
+167
+00:12:53,915 --> 00:12:58,355
+Bu en tane bölünme, en tane dikdörtgenler prizmasına böldüğümüzü düşünelim.
+
+168
+00:12:58,955 --> 00:13:02,875
+Bunların toplamı benim gerçek hacmiye sadece bir yaklaşımdır.
+
+169
+00:13:03,255 --> 00:13:11,635
+Bunun gerçek hacmi eşit olması için de yine eni sonsuza yani her bir box'ların taban alanına sıfıra götürmem.
+
+170
+00:13:11,735 --> 00:13:14,395
+Yani o kadar küçük bölüyorum ki artık gerçek değeri oluşuyor.
+
+171
+00:13:15,275 --> 00:13:16,775
+Yani yine bir integrasyon var.
+
+172
+00:13:16,775 --> 00:13:27,975
+Demek ki pozitif bir fonksiyonu nerede iki katlı integral alırsam, nerede iki katlı integre edersem o ikisi arasındaki cismin hacmini verir her zaman.
+
+173
+00:13:28,395 --> 00:13:29,675
+Bu en temel bilgidir.
+
+174
+00:13:29,815 --> 00:13:32,315
+Bunu bilmezseniz ne yaptığınızı bilmiyorsunuz demektir.
+
+175
+00:13:32,675 --> 00:13:37,655
+Size bir hacim sorusu sorulduğunda neyi integre edeceğim, nerede ne yapacağım diye düşünüyorsunuz.
+
+176
+00:13:37,715 --> 00:13:38,775
+Her zaman şunu düşüneceksin.
+
+177
+00:13:38,775 --> 00:13:44,055
+Bir fonksiyonu nerede integre ediyorsam, iki katlı integralde size bölge vermek zorunda.
+
+178
+00:13:44,055 --> 00:13:48,975
+Nerede integre ediyorsam ikisi arasında kalan cismin hacmini verir.
+
+179
+00:13:49,515 --> 00:13:51,455
+Size zaten pozitif bir fonksiyon verilecektir.
+
+180
+00:13:51,515 --> 00:13:52,535
+O konuda hiçbir sıkıntı yok.
+
+181
+00:13:53,475 --> 00:13:55,115
+Tabii şöyle bir şey de olacak daha sonra.
+
+182
+00:13:55,235 --> 00:14:00,395
+Hacimleri hesaplarken iki farklı yüzey arasındaki hacimleri de hesaplayacağız ayrıca.
+
+183
+00:14:00,495 --> 00:14:01,415
+Bu temel bilgi.
+
+184
+00:14:02,875 --> 00:14:08,135
+O yüzden dikdörtgenleri böldüm.
+
+185
+00:14:08,635 --> 00:14:10,735
+Küçük dikdörtgenleri alanlarını hesapladım.
+
+186
+00:14:10,836 --> 00:14:12,096
+İşlerinden nokta seçtim.
+
+187
+00:14:12,096 --> 00:14:15,336
+Noktaları fonksiyonlarda hesapladım ve bunları çarptım.
+
+188
+00:14:15,435 --> 00:14:20,635
+Bunların her biri bu birer hacmin, cismin hacmi.
+
+189
+00:14:21,055 --> 00:14:23,135
+Bunların hepsi en tane yaptım diyelim ki.
+
+190
+00:14:23,895 --> 00:14:27,895
+Bu ene de sonsuza gönderdiğimde işte buradaki hacmi veriyorum.
+
+191
+00:14:28,695 --> 00:14:31,015
+Peki hesaplamalarda nasıl, ne yapacağız?
+
+192
+00:14:32,075 --> 00:14:35,435
+Taban alanınız, dikdörtgensel bir bölge ise en kolay zaten.
+
+193
+00:14:35,435 --> 00:14:41,375
+X, A'dan B'ye, Y, C'den D'ye yani sabit sayılar var ki o bir dikdörtgene dönüşüyor.
+
+194
+00:14:42,375 --> 00:14:48,055
+A, B, C'de real sayıları arasında ise bir rectangle'a ricamınız varsa en kolay iki katlı integraller.
+
+195
+00:14:48,195 --> 00:14:49,455
+Sınırları yazmak çok kolay.
+
+196
+00:14:49,935 --> 00:14:51,055
+Her zaman şuna bakacaksınız.
+
+197
+00:14:51,175 --> 00:14:52,555
+En son neye göre integre ediyorum?
+
+198
+00:14:52,675 --> 00:14:52,995
+D'ye.
+
+199
+00:14:53,395 --> 00:14:57,195
+Demek ki bu integral aslında ilk yazdığımız ama en son yapacağımız işlem.
+
+200
+00:14:57,195 --> 00:15:01,315
+bu Y'nin sınırları buna ait olacak, X'in sınırları da buna ait olacak.
+
+201
+00:15:01,475 --> 00:15:02,355
+Öyle düşüneceksiniz.
+
+202
+00:15:03,155 --> 00:15:07,495
+Her integral, her iki katlı integral iki farklı şekilde yazılabilir ama çözülebilir mi?
+
+203
+00:15:07,895 --> 00:15:09,615
+Bazen çözülebilir, bazen çözülemez.
+
+204
+00:15:12,375 --> 00:15:18,155
+Dünkü örneklerimizde olduğu gibi integrasyon sırasını değiştirmemiz bazen bize kolaylık sağlayabilir.
+
+205
+00:15:18,155 --> 00:15:28,815
+O yüzden dikdörtgensel bir bölge dışında non-victangular dediğimiz herhangi bir bölge yani dikdörtgen değil, kare değil, üçgen değil herhangi bir bölge olduğunda
+
+206
+00:15:30,676 --> 00:15:34,056
+Fubini teoremi stronger formu kullanacaksınız.
+
+207
+00:15:34,336 --> 00:15:35,256
+Yani bakacaksınız.
+
+208
+00:15:35,416 --> 00:15:37,376
+Bu x'e göre mi düzgün, y'ye göre mi düzgün.
+
+209
+00:15:37,436 --> 00:15:38,396
+İlk önce bunu belirleyin.
+
+210
+00:15:39,596 --> 00:15:41,475
+İkisine göre düzgün ise ikisini de yapabilirsiniz.
+
+211
+00:15:41,616 --> 00:15:42,436
+Birini seçebilirsiniz.
+
+212
+00:15:42,576 --> 00:15:43,016
+Fark etmez.
+
+213
+00:15:43,096 --> 00:15:46,716
+Biz genelde hemen x'e göre bakmaya alışkımız.
+
+214
+00:15:46,855 --> 00:15:47,496
+Hiç fark etmez.
+
+215
+00:15:47,576 --> 00:15:48,556
+Y'ye göre de yapabilirsiniz.
+
+216
+00:15:49,296 --> 00:15:54,016
+Bölgem zaten size iki katlı integrada ikisinin hacmini çizmenize gerek yok.
+
+217
+00:15:54,016 --> 00:15:56,816
+Sadece siz integrasyon bölgesini çizin.
+
+218
+00:15:56,916 --> 00:15:58,475
+Eğer onu çizmezseniz yanlış olur.
+
+219
+00:15:58,596 --> 00:16:00,076
+Bunu çizmeden sınırı yazmak yok.
+
+220
+00:16:01,016 --> 00:16:02,936
+Sadece rektangular ise yazabilirsiniz.
+
+221
+00:16:03,136 --> 00:16:04,736
+Direkt A'dan B'ye C'den D'ye ise.
+
+222
+00:16:05,355 --> 00:16:09,816
+Ama onun dışındaki herhangi bir bölge ise hemen bölgenizi çizin.
+
+223
+00:16:09,996 --> 00:16:11,216
+Bakın x'e göre düzgün mü?
+
+224
+00:16:11,276 --> 00:16:11,836
+Nasıl anlıyorum?
+
+225
+00:16:11,956 --> 00:16:13,615
+Hemen x'e bir tane dik çizgi çiziyorum.
+
+226
+00:16:14,216 --> 00:16:16,636
+Bu çizgiyi bütün alan boyunca gezdiriyorum.
+
+227
+00:16:16,756 --> 00:16:18,316
+Buradan başlayıp sonuna kadar.
+
+228
+00:16:19,036 --> 00:16:20,016
+Üstte hep aynı yeri.
+
+229
+00:16:20,076 --> 00:16:21,296
+Üstteki yeri hiç değişmiyorsa.
+
+230
+00:16:21,836 --> 00:16:23,216
+Alttaki yeri hiç değişmiyorsa.
+
+231
+00:16:23,216 --> 00:16:24,936
+Yani hep iki aynı eğri arasında.
+
+232
+00:16:25,076 --> 00:16:27,536
+İki aynı dediğim üstteki hep aynı kalacak.
+
+233
+00:16:27,656 --> 00:16:29,776
+Altta üstte aynı olmaz zaten.
+
+234
+00:16:29,855 --> 00:16:30,216
+Öyle bir şey.
+
+235
+00:16:31,236 --> 00:16:31,936
+Üstteki değişmiyor.
+
+236
+00:16:32,016 --> 00:16:32,896
+Alttaki değişmiyorsa.
+
+237
+00:16:33,836 --> 00:16:34,596
+Düzgün bölgedir.
+
+238
+00:16:34,676 --> 00:16:35,596
+Düzgün bölgesi.
+
+239
+00:16:36,076 --> 00:16:38,596
+Buradaki integraliniz bir integralle çözülür.
+
+240
+00:16:38,975 --> 00:16:40,236
+Tek integral yazarsınız.
+
+241
+00:16:40,236 --> 00:16:42,136
+Veya y'ye göre baktınız.
+
+242
+00:16:42,236 --> 00:16:45,736
+Y'ye göre bakarken de y'ye dik bir tane kesit alıyorsunuz.
+
+243
+00:16:45,796 --> 00:16:47,536
+Bunu bütün bölgede gezdiriyorsunuz.
+
+244
+00:16:47,796 --> 00:16:48,615
+Sağda hep aynı.
+
+245
+00:16:48,716 --> 00:16:51,115
+Solda da hep aynı eğri varsa eğri veya doğru.
+
+246
+00:16:51,636 --> 00:16:54,456
+Demek ki düzgün bölge derseniz yine aynı işlemleri yaparsınız.
+
+247
+00:16:54,456 --> 00:16:56,056
+Diyelim ki x'e göre düzgün.
+
+248
+00:16:56,056 --> 00:16:58,176
+Hemen şuraya en son x'i yazacaksınız.
+
+249
+00:16:58,176 --> 00:16:59,736
+X'e göre düzgün bölge aldım.
+
+250
+00:16:59,796 --> 00:17:00,256
+D'ye dx.
+
+251
+00:17:00,376 --> 00:17:01,316
+İlk önce bunu yazıyoruz.
+
+252
+00:17:01,916 --> 00:17:02,736
+Fonksiyonu yazdınız.
+
+253
+00:17:02,836 --> 00:17:03,796
+D'ye dx yazdınız.
+
+254
+00:17:04,596 --> 00:17:05,635
+Bu şu integral.
+
+255
+00:17:05,796 --> 00:17:07,635
+İlk diyorum ama aslında ilk hesapladığımız bu.
+
+256
+00:17:07,756 --> 00:17:09,216
+Artık onu siz kendiniz ayarlayın.
+
+257
+00:17:09,556 --> 00:17:10,615
+En dıştaki integral değil.
+
+258
+00:17:11,115 --> 00:17:15,016
+En dıştaki integral her zaman sabit sayılardan oluşacak.
+
+259
+00:17:15,135 --> 00:17:16,756
+Buraya fonksiyon yazarsanız bitti.
+
+260
+00:17:17,355 --> 00:17:18,436
+Buraya fonksiyon yazılmıyor.
+
+261
+00:17:18,556 --> 00:17:19,796
+Bunlar sabit sayılar olacak.
+
+262
+00:17:20,316 --> 00:17:20,956
+Hangi sayılar?
+
+263
+00:17:21,516 --> 00:17:23,956
+En sona yazdığınız eksenden gelecek.
+
+264
+00:17:24,115 --> 00:17:24,736
+Dx mesela.
+
+265
+00:17:24,916 --> 00:17:26,016
+X'e göre düzgün seçmişim.
+
+266
+00:17:26,096 --> 00:17:28,895
+X ekseni üzerinde bölgeyi üz düşürüyorum.
+
+267
+00:17:28,996 --> 00:17:29,895
+Hangi noktalar arasında?
+
+268
+00:17:30,016 --> 00:17:31,056
+Bölge sıfırdan bire kadar.
+
+269
+00:17:31,736 --> 00:17:33,056
+En dıştaki integralimiz bu.
+
+270
+00:17:33,056 --> 00:17:34,375
+En içine yazıyorum.
+
+271
+00:17:34,736 --> 00:17:35,596
+Y'nin sınırları.
+
+272
+00:17:36,036 --> 00:17:37,756
+Kesit nereden nereye gidiyor?
+
+273
+00:17:37,756 --> 00:17:40,476
+Y eşittir sıfırdan Y eşittir x'e gidiyor.
+
+274
+00:17:40,576 --> 00:17:41,556
+Demek ki sıfırdan x'e.
+
+275
+00:17:41,855 --> 00:17:44,175
+Yani x'e göre düzgün bölge seçerek yaptıysam.
+
+276
+00:17:44,615 --> 00:17:47,016
+Buraya hiçbir sınıra ben y gibi bir şey yazamam.
+
+277
+00:17:47,516 --> 00:17:48,375
+X'den oluşacak.
+
+278
+00:17:48,836 --> 00:17:50,675
+En dıştaki de sabit sayılardan oluşacak.
+
+279
+00:17:50,756 --> 00:17:52,016
+O da eksen üzerinden gelecek.
+
+280
+00:17:52,976 --> 00:17:53,416
+Tamam mı?
+
+281
+00:17:53,976 --> 00:17:54,916
+Ve y eşittir.
+
+282
+00:17:55,016 --> 00:17:55,916
+Sıfır, y eşittir.
+
+283
+00:17:56,016 --> 00:17:57,756
+Buraya y yazmıyoruz kesinlikle.
+
+284
+00:17:59,196 --> 00:18:00,276
+X cinsinden yazıyoruz.
+
+285
+00:18:00,276 --> 00:18:02,736
+Buraya y'li bir şey yazarsak zaten mantık hatası.
+
+286
+00:18:03,135 --> 00:18:04,276
+Bu integral y'ye göre hesaplanacak.
+
+287
+00:18:05,216 --> 00:18:07,276
+Y'ye göre integre ederken de x'leri sabit düşünüyorum.
+
+288
+00:18:07,756 --> 00:18:09,936
+Y'ye göre integre ediyorum.
+
+289
+00:18:10,336 --> 00:18:12,635
+Ve sınırlarda yine y yazarsam y'nin yerine
+
+290
+00:18:12,635 --> 00:18:16,216
+en dıştaki integralim yine y'ler ve x'ler kalacaktır.
+
+291
+00:18:16,256 --> 00:18:17,476
+X'e göre integre etmem lazım.
+
+292
+00:18:17,596 --> 00:18:19,216
+Buradan hata yaptığınızı anlayabilirsiniz.
+
+293
+00:18:21,875 --> 00:18:22,056
+Ve
+
+294
+00:18:22,056 --> 00:18:24,635
+y'ye göre integre ettiniz.
+
+295
+00:18:24,896 --> 00:18:26,576
+Sınırları y'ye yerine yazacaksınız.
+
+296
+00:18:26,696 --> 00:18:27,756
+X'lere dokunmak yok.
+
+297
+00:18:28,596 --> 00:18:30,436
+Diğer değişkene dokunmak yok.
+
+298
+00:18:30,536 --> 00:18:32,096
+Hiçbir şey yapmıyoruz diğer değişkene.
+
+299
+00:18:32,496 --> 00:18:33,756
+Sabit gibi düşünüyoruz.
+
+300
+00:18:34,496 --> 00:18:36,716
+Neyi göre integre ettiysek sınırları ona yazıyoruz.
+
+301
+00:18:36,716 --> 00:18:38,816
+Bu en büyük yapılan hatalardan biri.
+
+302
+00:18:39,316 --> 00:18:40,736
+Ve sınırlara y'leri yazmak.
+
+303
+00:18:40,816 --> 00:18:41,776
+En büyük hatalardan biri.
+
+304
+00:18:42,456 --> 00:18:44,175
+X'e göre düzgün bölge seçtikten sonra.
+
+305
+00:18:44,996 --> 00:18:46,395
+Yere sık sıkıntı yok.
+
+306
+00:18:47,496 --> 00:18:48,796
+Y'ye göre yaparken de aynı.
+
+307
+00:18:48,895 --> 00:18:49,836
+Y'ye göre düzgün bölge.
+
+308
+00:18:49,895 --> 00:18:51,195
+Demek ki hemen şunu yazıyorum.
+
+309
+00:18:51,395 --> 00:18:52,436
+3-x-x-x'ye.
+
+310
+00:18:52,476 --> 00:18:53,796
+Dx-d'ye yazacağım bir kere.
+
+311
+00:18:54,395 --> 00:18:55,036
+Neye göre seçtim?
+
+312
+00:18:55,096 --> 00:18:56,336
+Y'ye göre düzgün bölge seçtim.
+
+313
+00:18:56,915 --> 00:18:58,635
+O zaman en dıştaki integral ne olacak?
+
+314
+00:18:59,056 --> 00:19:00,016
+Y ekseninden gelecek.
+
+315
+00:19:00,135 --> 00:19:03,175
+Y ekseninden bakıyorum bölgeyi y eksenine izliştirdim.
+
+316
+00:19:03,175 --> 00:19:04,395
+Nereden dediği sıfırdan biri.
+
+317
+00:19:04,776 --> 00:19:06,416
+Demek ki en dışa sıfırdan biri yazacağım.
+
+318
+00:19:06,596 --> 00:19:09,875
+İç tarafa da x'in sınırları ama y cinsinden yazacağım.
+
+319
+00:19:09,976 --> 00:19:11,796
+Çünkü en son y'ye göre integre etmem lazım.
+
+320
+00:19:12,175 --> 00:19:13,556
+Buraya x yazmak yok artık.
+
+321
+00:19:13,655 --> 00:19:14,476
+Dx-d'ye çünkü.
+
+322
+00:19:15,336 --> 00:19:16,056
+X eşittir.
+
+323
+00:19:16,135 --> 00:19:16,936
+Y, x eşittir.
+
+324
+00:19:17,036 --> 00:19:17,916
+Yani y'den biri.
+
+325
+00:19:17,996 --> 00:19:19,175
+Buraya x yazdığıma bakmayın.
+
+326
+00:19:19,175 --> 00:19:23,056
+x'i y cinsinden ifade ettiğimi vurgulamak için bu şekilde yazdım.
+
+327
+00:19:24,135 --> 00:19:26,375
+Ve yine ilk önce x'e göre integre ediyorum.
+
+328
+00:19:26,556 --> 00:19:27,976
+Y'lere hiçbir şekilde dokunmuyorum.
+
+329
+00:19:27,976 --> 00:19:57,956
+Y'lere geçti.
+
+330
+00:19:28,336 --> 00:19:33,336
+x'e göre integre ettim, y'ler sabit, sınırları da sadece x'li değerlere yazıyorum.
+
+331
+00:19:33,796 --> 00:19:36,955
+Sonrasında benim elimde sadece sabit ve y'li fonksiyonlar kalmalı.
+
+332
+00:19:37,296 --> 00:19:43,256
+Evet, sonrası tek katlı proper ve definis bir integral zaten sonucu hesaplıyor olmanız lazım.
+
+333
+00:19:45,855 --> 00:19:47,695
+Peki bölgem düzgün değilse?
+
+334
+00:19:52,564 --> 00:19:53,584
+Şurada olduğu gibi.
+
+335
+00:19:55,304 --> 00:19:57,903
+Bu int bu bölgeye bakın x'e göre baktığınızda.
+
+336
+00:19:58,624 --> 00:19:59,604
+Kiddik kesit aldım.
+
+337
+00:20:00,464 --> 00:20:02,084
+Şuraya kadar geldim her şey normal.
+
+338
+00:20:02,224 --> 00:20:08,624
+Üstte parabol altta x ekseni ama 1 bölü 2'den sonra üstte yine parabol ama altta artık x ekseni yok bölgeyi sınırlandıran.
+
+339
+00:20:09,124 --> 00:20:11,183
+4 x eksi 2 eğrisi doğrusu var.
+
+340
+00:20:12,204 --> 00:20:14,264
+Bu bölge x ekseniyle göre düzgün değil.
+
+341
+00:20:15,124 --> 00:20:16,024
+O yüzden ne yaparım?
+
+342
+00:20:16,304 --> 00:20:18,524
+Düzgün bölge yok saydığınızda hemen diğer eksene bakın.
+
+343
+00:20:18,524 --> 00:20:21,204
+Düzgün olmayan bölgeyle mecbur değilseniz uğraşmayın.
+
+344
+00:20:21,204 --> 00:20:22,884
+Ama mecbur kalabilirsiniz.
+
+345
+00:20:23,084 --> 00:20:31,064
+Özellikle ona göre yazın deniliyorsa bu sizin o bölgeyi işte sumut parçaları bölmeniz ve ona göre incelemeniz istendiği içindir.
+
+346
+00:20:31,684 --> 00:20:32,663
+Hemen diğerine bakarım.
+
+347
+00:20:32,764 --> 00:20:33,644
+Y'ye göre düzgün mü?
+
+348
+00:20:33,704 --> 00:20:35,304
+Evet düzgün demek ki y'ye göre yazacağım.
+
+349
+00:20:36,324 --> 00:20:43,544
+Ama bana illa ki şu denilirse bunu x'e göre yaz denilirse o zaman da düzgün parçaları ayıracağım.
+
+350
+00:20:43,684 --> 00:20:45,144
+Düzgün bölge parçalarını ayıracağım.
+
+351
+00:20:45,144 --> 00:20:51,124
+Yani düzgün bölge nerede bozuluyorsa eğri nerede değişiyorsa belli bir noktadan sonra değişiyor çünkü.
+
+352
+00:20:51,584 --> 00:20:53,744
+O noktada hemen parçaları ayıracağım.
+
+353
+00:20:53,884 --> 00:20:55,344
+Genelde iki parça yeterli oluyor.
+
+354
+00:20:55,484 --> 00:20:58,423
+Yani bir noktada değişiyor düzgün bölge.
+
+355
+00:20:58,884 --> 00:21:02,624
+Bir bölü iki de şurada ayırıyorum ve iki parçada integrali yazmam lazım.
+
+356
+00:21:03,423 --> 00:21:08,104
+Yani sizin düzgün olmayan bir bölgeniz varsa en az iki tane integraliniz olacak anlamına gelir.
+
+357
+00:21:09,104 --> 00:21:32,604
+Bir bölge.
+
+358
+00:21:11,667 --> 00:21:18,187
+İki katlı integral ile alan da hesaplanır. Orada da fonksiyon olarak biri alıyoruz sadece.
+
+359
+00:21:20,507 --> 00:21:26,787
+Bakın burada da x'e göre düzgün ama y'ye göre düzgün değil. Y'ye göre de düzgün olmayı için şu noktadan itibaren oluyor.
+
+360
+00:21:26,947 --> 00:21:34,187
+Altta parabol, sağda ve solda daha doğrusu parabolin iki farklı kolları. Dikkat edin. Burada da şu var.
+
+361
+00:21:34,407 --> 00:21:40,807
+y eşitir x kare. Bu şu demek olur. x cinsi, x'i y cinsinden yazdığımda iki farklı denklem çıkacak.
+
+362
+00:21:40,807 --> 00:21:50,027
+ama y'yi y'yi x cinsinden tek bir eğri var. O yüzden burada şu bölgeyi y'ye göre yazarken artı ve eksi kollar geliyor.
+
+363
+00:21:50,027 --> 00:21:54,307
+Yani iki farklı artı kök y, eksi kök y. Bunlara dikkat edin.
+
+364
+00:21:56,327 --> 00:22:00,048
+Ve ortalama değerde kalmıştık en son. Şimdi tamam mıyız?
+
+365
+00:22:03,207 --> 00:22:06,527
+Çok hızlı olmadı ama söylemek istediklerim bunlardı.
+
+366
+00:22:16,915 --> 00:22:21,155
+Okay, so continue with the next exercise.
+
+367
+00:22:21,695 --> 00:22:22,576
+Did you do it?
+
+368
+00:22:26,067 --> 00:22:37,167
+It's about the average value of f x square plus y square over the triangle, which has the corners or the cast points 0, 0, 1, 0, 1, and 1.
+
+369
+00:22:38,127 --> 00:22:42,208
+Look, this is the region of integration.
+
+370
+00:22:43,107 --> 00:22:50,627
+And the average value of a function on the region is evaluated by the double integral of that function on the region or divided with the area.
+
+371
+00:22:51,528 --> 00:22:55,187
+Of course, this area must be an easy area for you.
+
+372
+00:22:55,187 --> 00:22:58,087
+And so first you can evaluate the region of R.
+
+373
+00:22:59,208 --> 00:23:02,627
+And since it's a triangle, it's very easy to evaluate, 1 over 2.
+
+374
+00:23:03,307 --> 00:23:05,528
+And what about the double integral of f over R?
+
+375
+00:23:06,307 --> 00:23:09,847
+It's a smooth region also both with respect to x and y.
+
+376
+00:23:09,968 --> 00:23:10,688
+It's up to you.
+
+377
+00:23:10,748 --> 00:23:12,288
+You can do it with two ways.
+
+378
+00:23:13,407 --> 00:23:16,688
+Here you will see that it's written with respect to x, so dy dx.
+
+379
+00:23:17,728 --> 00:23:22,688
+And 0 to 1, 0 to x, x square plus y square dy dx.
+
+380
+00:23:23,508 --> 00:23:24,728
+And evaluate it.
+
+381
+00:23:25,188 --> 00:23:29,508
+First, integrate with respect to y and the next and get 2 over 3.
+
+382
+00:23:29,508 --> 00:23:46,508
+And then you can do it with respect to x.
+
+383
+00:23:43,155 --> 00:23:46,635
+Bu bir şey yok.
+
+384
+00:23:47,556 --> 00:23:49,635
+Şimdi bir sonraki bir şey.
+
+385
+00:23:50,076 --> 00:23:53,275
+Şimdi de birçok birçok.
+
+386
+00:23:53,275 --> 00:23:55,536
+İnteklisinde birçok olarak.
+
+387
+00:23:55,935 --> 00:23:57,836
+Ve birçok birçok.
+
+388
+00:24:07,635 --> 00:24:13,755
+Polar forms are so important, double integrals in polar form.
+
+389
+00:24:18,836 --> 00:24:22,395
+Şimdi, bu kadar bir kısım var.
+
+390
+00:24:23,036 --> 00:24:24,736
+Polar formları da iki integrası var.
+
+391
+00:24:25,435 --> 00:24:29,556
+Çünkü, sadece kartesan iki integrası var.
+
+392
+00:24:29,556 --> 00:24:31,375
+Bu da iki integrası var.
+
+393
+00:24:32,096 --> 00:24:36,816
+Çünkü, bu da iki integrası var.
+
+394
+00:24:37,216 --> 00:24:39,796
+Bu da iki integrası var.
+
+395
+00:24:40,976 --> 00:24:43,776
+Daha sonra, bu da iki integrası var.
+
+396
+00:24:43,776 --> 00:24:50,216
+Bu da iki integrası var.
+
+397
+00:24:50,216 --> 00:24:52,215
+Polar integrası var.
+
+398
+00:24:52,215 --> 00:28:36,215
+Bu da iki integrası var.
+
+399
+00:28:18,355 --> 00:28:29,355
+It says find the limits of integration for integrating Frθ, any function, over the region R that lies inside the cardoid and outside the circle R is 1.
+
+400
+00:28:30,256 --> 00:28:35,395
+Cardoid 1 plus cosine θ and circle R is 1.
+
+401
+00:28:35,395 --> 00:28:40,036
+It says the region is inside the cardoid, outside the circle.
+
+402
+00:28:40,215 --> 00:28:47,056
+So this region, you are familiar with these kinds of regions in polar coordinate system.
+
+403
+00:28:47,596 --> 00:28:48,435
+You know what to do.
+
+404
+00:28:49,236 --> 00:28:56,895
+And you know also how to evaluate the area of a polar region with normal single integrals.
+
+405
+00:28:57,016 --> 00:28:59,776
+But here we can do it with double integrals also.
+
+406
+00:29:02,195 --> 00:29:04,976
+And here this is an evaluation.
+
+407
+00:29:04,975 --> 00:29:06,355
+This is not an area calculation.
+
+408
+00:29:06,556 --> 00:29:11,135
+This is an integration of a function in terms of R and θ over that region.
+
+409
+00:29:11,215 --> 00:29:14,235
+That means this region R is the region of integral in polar form.
+
+410
+00:29:15,096 --> 00:29:19,695
+And it is between circle to cardoid, as you see, between circle and cardoid.
+
+411
+00:29:20,576 --> 00:29:23,336
+Between which angles we have this region?
+
+412
+00:29:23,816 --> 00:29:26,516
+As you see, minus pi over 2 to pi over 2.
+
+413
+00:29:27,355 --> 00:29:28,355
+So alpha to beta.
+
+414
+00:29:29,076 --> 00:29:30,536
+Alpha, beta.
+
+415
+00:29:31,235 --> 00:29:34,455
+Once you specify alpha to beta, you need to just log.
+
+416
+00:29:34,976 --> 00:29:36,556
+What are the distances?
+
+417
+00:29:36,556 --> 00:29:42,556
+Which functions makes the boundaries of the distances from the origin of that region is important?
+
+418
+00:29:43,316 --> 00:29:43,776
+The race.
+
+419
+00:29:43,895 --> 00:29:48,855
+That's why we just sketched the race in order to understand what are the distances from the origin.
+
+420
+00:29:49,316 --> 00:29:52,895
+Which functions specifies the distances from the origin in polar system?
+
+421
+00:29:53,276 --> 00:29:54,016
+This is important.
+
+422
+00:29:54,016 --> 00:29:59,296
+And these rays, as you see, starts at circle, finishes at cardoid.
+
+423
+00:29:59,455 --> 00:30:02,516
+Circle to cardoid.
+
+424
+00:30:02,996 --> 00:30:05,355
+So circle, cardoid.
+
+425
+00:30:06,115 --> 00:30:07,355
+Circle is lower limit.
+
+426
+00:30:08,235 --> 00:30:09,536
+Cardoid is upper limit.
+
+427
+00:30:09,796 --> 00:30:11,875
+In terms of theta, always theta.
+
+428
+00:30:12,316 --> 00:30:13,435
+Theta must be written here.
+
+429
+00:30:13,516 --> 00:30:14,796
+Never write R here.
+
+430
+00:30:15,215 --> 00:30:17,476
+Because lastly, you will integrate with respect to theta.
+
+431
+00:30:17,635 --> 00:30:18,036
+Always.
+
+432
+00:30:18,036 --> 00:30:20,096
+That's why always this form.
+
+433
+00:30:20,756 --> 00:30:22,355
+Minus pi over 2 to pi over 2.
+
+434
+00:30:22,736 --> 00:30:24,195
+1 to 1 plus cosin theta.
+
+435
+00:30:24,375 --> 00:30:25,496
+Whatever it is.
+
+436
+00:30:25,955 --> 00:30:26,796
+R dr d theta.
+
+437
+00:30:27,536 --> 00:30:28,135
+Are you okay?
+
+438
+00:30:29,056 --> 00:30:29,976
+Do you understand it?
+
+439
+00:30:31,735 --> 00:30:35,435
+The way of specifying the limits of a double integral in polar form is this.
+
+440
+00:30:36,016 --> 00:30:38,395
+First, specify the angles of the region.
+
+441
+00:30:38,915 --> 00:30:41,375
+It stars and finishes with which angles.
+
+442
+00:30:41,796 --> 00:30:43,756
+That means between which rays we have.
+
+443
+00:30:43,756 --> 00:30:46,855
+and also how can I measure the distances from the origin.
+
+444
+00:30:47,355 --> 00:30:49,516
+These will be the limits of the second integral.
+
+445
+00:30:53,044 --> 00:30:53,364
+Ok.
+
+446
+00:30:59,380 --> 00:31:05,380
+Also, we know how to evaluate an aria in polar coordinate system with a single integral.
+
+447
+00:31:05,800 --> 00:31:06,620
+We did it before.
+
+448
+00:31:07,260 --> 00:31:11,100
+But here, alternatively, like we did in the Cartesian system,
+
+449
+00:31:11,440 --> 00:31:14,440
+also we can evaluate the aria of it with a double integral
+
+450
+00:31:14,440 --> 00:31:17,440
+by specifying as a function, again, 1.
+
+451
+00:31:18,060 --> 00:31:20,420
+1, rdrteta is fixed.
+
+452
+00:31:20,920 --> 00:31:24,860
+So again, like Cartesian system, we can evaluate the aria with a double integral
+
+453
+00:31:24,860 --> 00:31:26,380
+by writing the function as 1.
+
+454
+00:31:26,660 --> 00:31:28,880
+And the other part is okay.
+
+455
+00:31:29,380 --> 00:31:33,000
+In Cartesian system, only on r dx dy we have.
+
+456
+00:31:33,260 --> 00:31:37,580
+And on polar system, rdrteta with the function 1, okay, on r.
+
+457
+00:31:38,460 --> 00:31:41,920
+Again, alpha to beta, g1 to g2, rdrteta.
+
+458
+00:31:43,000 --> 00:31:48,040
+And this is the aria of the closed and bounded region r in the polar coordinate plane.
+
+459
+00:31:50,720 --> 00:31:56,900
+For example, it says find the aria of the region that lies inside the cardoid,
+
+460
+00:31:56,900 --> 00:32:00,020
+outside r is 1.
+
+461
+00:32:00,520 --> 00:32:02,600
+But it's aria.
+
+462
+00:32:04,020 --> 00:32:06,020
+Normally, you can do it with two ways.
+
+463
+00:32:07,140 --> 00:32:10,360
+Sketch the region and with a single integral, you can do it.
+
+464
+00:32:10,360 --> 00:32:19,160
+Just remember the formalization of the aria of a polar region with a single integral,
+
+465
+00:32:19,280 --> 00:32:20,860
+alpha to beta r square d theta.
+
+466
+00:32:21,520 --> 00:32:23,800
+But here with a double integral, we will do it.
+
+467
+00:32:24,160 --> 00:32:29,820
+We did it probably in the polar coordinate system part, chapter.
+
+468
+00:32:29,820 --> 00:32:33,120
+But here, it's related with a double integral chapter.
+
+469
+00:32:33,320 --> 00:32:34,980
+So we will do it with a double integral.
+
+470
+00:32:35,360 --> 00:32:37,940
+But in polar form, so write the function as 1.
+
+471
+00:32:38,580 --> 00:32:39,780
+r dr d theta.
+
+472
+00:32:40,300 --> 00:32:43,780
+Now, I want you to sketch it and then write the limits.
+
+473
+00:32:43,780 --> 00:32:47,260
+And that's all it.
+
+474
+00:32:48,900 --> 00:32:50,360
+A few minutes, I'm giving you.
+
+475
+00:34:59,795 --> 00:35:07,315
+2. 2. 2. 5. 4. [öğrenci].
+
+476
+00:35:09,235 --> 00:35:12,995
+Let's see. The shape is okay. I think the region is okay.
+
+477
+00:35:14,115 --> 00:35:22,995
+And again, like Cartesian integrals, again we did it in the polar coordinate system
+
+478
+00:35:22,995 --> 00:35:28,195
+and evaluating the R with single integral. We evaluate half of the, if we have symmetric parts,
+
+479
+00:35:28,195 --> 00:35:34,675
+half of it and multiply with 2. Again you can do it. Okay. And so here just regulate the first part,
+
+480
+00:35:35,475 --> 00:35:41,635
+this part, and multiply with 2. So for the first part, integral related area
+
+481
+00:35:42,275 --> 00:35:51,076
+formalization is 1 times rdrd theta. Function is 1. Angles are 0 to pi over 2 for the first part,
+
+482
+00:35:51,076 --> 00:35:57,635
+zero, 2 times, 0 to pi over 2. Circle to Cartesian. Circle to Cartesian. Circle,
+
+483
+00:35:57,635 --> 00:36:03,955
+Cartesian. In terms of theta. Rdrd theta. And then the rest of it is easy calculation.
+
+484
+00:36:05,395 --> 00:36:12,515
+First of it, respect to R. So R square over 2. 2 will be cancelled. R square. 1 plus cosine theta.
+
+485
+00:36:12,515 --> 00:36:22,195
+Square minus 1 limits. Written to R. And then we have left in the integral 2 cosine theta plus cosine
+
+486
+00:36:22,195 --> 00:36:28,515
+square theta in terms of theta. Now the rest of it is a single and a proper integral. For 2 cosine
+
+487
+00:36:28,515 --> 00:36:34,675
+theta, we have 2 sine theta. And cosine square, you know, we use the half angle rules and write 1 plus
+
+488
+00:36:34,675 --> 00:36:43,875
+cosine 2 theta over 2. Integrate it. Theta plus 1 over 2 sine 2 theta. Write the limit 0 to pi over 2, 0 to pi over 2.
+
+489
+00:36:43,875 --> 00:36:47,875
+And then you will have 2 plus pi over 4.
+
+490
+00:36:55,635 --> 00:37:00,835
+Are you okay? Do you understand how we write the limits of integral of a polar double integral?
+
+491
+00:37:03,476 --> 00:37:08,755
+Please don't forget to sketch the rays. Always once we define the area
+
+492
+00:37:10,036 --> 00:37:13,875
+or any double integral on the area, please be careful.
+
+493
+00:37:14,436 --> 00:37:19,235
+Firstly, look between which angles you have the region and then sketch.
+
+494
+00:37:19,235 --> 00:37:25,396
+Sketch these kinds of rays and then see the rays starts where, finishes where.
+
+495
+00:37:28,755 --> 00:37:33,795
+Starting and finishing curves will be in terms of theta, will be the limits of integral.
+
+496
+00:37:35,956 --> 00:37:38,436
+Okay, nice. Let's continue.
+
+497
+00:37:41,715 --> 00:37:47,235
+Later we will have exercises, let's see, changing cartesian integrals into polar integrals.
+
+498
+00:37:47,235 --> 00:37:54,675
+Now we learn how to write directly a polar integral of a region in polar coordinate system.
+
+499
+00:37:54,675 --> 00:37:59,556
+But now let's learn how can we transform the cartesian integral into polar one.
+
+500
+00:38:00,436 --> 00:38:00,916
+Let's see.
+
+501
+00:38:03,155 --> 00:38:08,115
+The procedure for changing the cartesian integral into a polar integral has two steps.
+
+502
+00:38:10,355 --> 00:38:15,235
+Firstly, substitute x's are cosine to the v's are sine to the, you know, these relations we have
+
+503
+00:38:15,235 --> 00:38:17,155
+between two different coordinate system.
+
+504
+00:38:18,195 --> 00:38:26,596
+And replace dx dy by r dr d theta. First you change the function and then change dx dy. Function is a fixed one.
+
+505
+00:38:26,596 --> 00:38:31,476
+But write it in terms of r and theta by using these equations between them.
+
+506
+00:38:31,476 --> 00:38:34,436
+X's are cosine to the v's are sine to the substitute in the function.
+
+507
+00:38:35,235 --> 00:38:42,195
+Nextly, dx dy will be replaced by r dr d theta. It's fixed. R is fixed here. Don't forget.
+
+508
+00:38:42,195 --> 00:38:47,155
+Always don't forget to write r dr d theta. And here.
+
+509
+00:38:49,315 --> 00:38:55,635
+And then polar limits of integration for the boundary of r will be written in the double integral in polar form.
+
+510
+00:38:56,115 --> 00:38:58,436
+And so the cartesian integral becomes this.
+
+511
+00:38:58,436 --> 00:39:09,476
+And r normally we have in the second one g. Now I want to ask you a question. For single integrals, once you give a substitution,
+
+512
+00:39:12,596 --> 00:39:20,355
+are the limits of integration changed once we use a substitution in cartesian single integrals?
+
+513
+00:39:20,355 --> 00:39:41,476
+And then we have to ask you a question.
+
+514
+00:39:23,635 --> 00:39:31,255
+İnteklisiyle değişti.
+
+515
+00:39:35,476 --> 00:39:41,996
+I mean, is it becoming different once we use a substitution in single integris?
+
+516
+00:39:56,436 --> 00:40:01,655
+İntegrals, the function that you integrate and also the region of integration.
+
+517
+00:40:01,655 --> 00:40:05,576
+Don't forget, these two important concepts you have, parameters.
+
+518
+00:40:06,776 --> 00:40:11,516
+The function that you integrate and the interval or region.
+
+519
+00:40:13,056 --> 00:40:17,356
+Single integrals are evaluated on an interval.
+
+520
+00:40:17,996 --> 00:40:20,556
+For example, a to b, fx dx.
+
+521
+00:40:21,476 --> 00:40:23,096
+Okay, so an integral you have.
+
+522
+00:40:23,096 --> 00:40:30,236
+In double integral, because of having a double integral twice, that's why you have a two-dimensional region.
+
+523
+00:40:30,836 --> 00:40:32,576
+This is the region of the double integral.
+
+524
+00:40:33,135 --> 00:40:35,135
+In triple integrals, we have surfaces.
+
+525
+00:40:36,476 --> 00:40:38,675
+Don't worry, you will not see the triple integrals.
+
+526
+00:40:38,796 --> 00:40:40,216
+It will be very hard for you, I think.
+
+527
+00:40:40,996 --> 00:40:50,196
+But double integral, that means according to double integration, that means integration twice, we need a region, not an interval.
+
+528
+00:40:51,036 --> 00:40:51,876
+That's why.
+
+529
+00:40:53,096 --> 00:41:01,476
+So, I want to ask you, once we have a substitution in a single integral, are the limits of integration changed?
+
+530
+00:41:07,443 --> 00:41:09,043
+Don't you understand my question?
+
+531
+00:41:24,403 --> 00:41:28,103
+Tek katlı bir integre ile dönüşüm verdiğinizde sınırlarınız değişir mi arkadaşlar?
+
+532
+00:41:28,804 --> 00:41:29,603
+Böyle sorayım o zaman.
+
+533
+00:41:30,143 --> 00:41:32,284
+Sınırlarımız değişiyor mu dönüşüm verdiğinizde?
+
+534
+00:41:32,784 --> 00:41:34,483
+Substitution dediğimiz dönüşüm vermek.
+
+535
+00:41:35,003 --> 00:41:37,523
+Değişken dönüştürmek, yerine koymak.
+
+536
+00:41:37,864 --> 00:41:38,844
+Bunun bir sürü isimleri var.
+
+537
+00:41:39,724 --> 00:41:41,304
+Mesela x kareye t diyorsunuz.
+
+538
+00:41:42,204 --> 00:41:44,304
+İntegrili kolaylaştırmak adına hep dönüşüm vererek.
+
+539
+00:41:45,003 --> 00:41:47,204
+Evet [öğrenci] kesinlikle değişmesi tabii ki gerekiyor.
+
+540
+00:41:47,284 --> 00:41:48,164
+Bunu demeye çalışıyorum.
+
+541
+00:41:49,063 --> 00:41:53,003
+Değişken dönüşümü yaptığınızda bir substitution verdiğinizde evet değişir.
+
+542
+00:41:53,003 --> 00:41:55,824
+O zaman burada da ben bir dönüşüm yapıyorum değil mi?
+
+543
+00:41:56,923 --> 00:41:58,403
+Kartezyandan polara geçiyorum.
+
+544
+00:42:00,043 --> 00:42:03,244
+Tek katlı integralde interval değişiyor, aralık değişiyor.
+
+545
+00:42:03,364 --> 00:42:05,784
+İki katlı integralde de bölgeniz değişecek demektir.
+
+546
+00:42:06,764 --> 00:42:06,963
+Değil mi?
+
+547
+00:42:07,443 --> 00:42:08,684
+Genel olarak böyle düşünün.
+
+548
+00:42:09,324 --> 00:42:12,324
+Oraya bir değişken dönüşüm veriyorsam bölgemin de değişiyor olması lazım.
+
+549
+00:42:13,164 --> 00:42:14,423
+Ama polarda bu olmuyor.
+
+550
+00:42:15,103 --> 00:42:17,224
+Polarda bölge aynı kalıyor demek istediğim bu.
+
+551
+00:42:17,543 --> 00:42:18,704
+Polarda bölge değişmez.
+
+552
+00:42:19,103 --> 00:42:21,063
+Fonksiyon ve diferansiyelleriniz değişir.
+
+553
+00:42:21,344 --> 00:42:22,204
+Bölge aynı kalır.
+
+554
+00:42:22,204 --> 00:42:24,643
+Sadece bölgeyi tanımlayan eğriler değişir.
+
+555
+00:42:25,583 --> 00:42:26,704
+Limitleriniz değişir.
+
+556
+00:42:27,164 --> 00:42:28,264
+Ama bölge aynıdır.
+
+557
+00:42:28,844 --> 00:42:31,204
+Bundan sonra göreceğimiz, bu konu bittikten sonra göreceğimiz
+
+558
+00:42:32,324 --> 00:42:37,884
+ihkatli integrallerdeki değişken dönüşümlerini göreceksiniz ki bölge de tamamen değişiyor.
+
+559
+00:42:37,983 --> 00:42:40,304
+Çünkü bunun için yapıyoruz bölgeyi kolaylaştırmak adına.
+
+560
+00:42:40,304 --> 00:42:46,543
+Ama polarda polar sistemle koordinat sistemlerinin arasındaki ilişkiden kaynaklanan bir durum.
+
+561
+00:42:46,764 --> 00:42:47,423
+Bölgemiz aynı.
+
+562
+00:42:48,083 --> 00:42:52,164
+Sadece onu ifade edecek şeklimiz değişiyor ve integralliğimizin sınırları değişecek.
+
+563
+00:42:53,523 --> 00:42:54,704
+Bölge aynı kalacak.
+
+564
+00:42:54,963 --> 00:42:57,364
+Tamamen.
+
+565
+00:42:57,364 --> 00:42:59,804
+Bu konu bittikten sonra görevli bir bölgeyi tanımlayan değişir.
+
+566
+00:42:59,804 --> 00:43:01,804
+Bölge aynı kalı.
+
+567
+00:43:01,804 --> 00:43:02,804
+Körnede aynı kalı.
+
+568
+00:43:02,804 --> 00:43:25,804
+Bölge aynı kalı.
+
+569
+00:43:25,804 --> 00:43:34,804
+R is the semicircular region bounded by the x-axis and the curve y-square root 1-x-square.
+
+570
+00:43:34,804 --> 00:43:37,804
+Whatever you have in the integration, it doesn't matter.
+
+571
+00:43:37,804 --> 00:43:38,804
+Any function you may have.
+
+572
+00:43:38,804 --> 00:43:44,804
+It says return it, transform it into polar form and then solve it.
+
+573
+00:43:48,115 --> 00:44:18,115
+Normalde, bu soruları soruları soruları soruları soruları soruları soruları soruları soruları soruları soruları soruları soruları soruları soruları soruları soruları soruları soruları soruları soruları soruları soruları soruları soruları soruları soruları soruları soruları soruları soruları soruları soruları soruları soruları soruları soruları soruları soruları soruları soruları soruları soruları soruları soruları soruları soruları soruları soruları soruları soruları soruları soruları soruları soruları soruları soruları soruları soruları soruları soruları soruları soruları soruları soruları soruları soruları soruları soruları soruları soruları soruları soruları
+
+574
+00:44:18,115 --> 00:44:46,275
+y2 is a2 for example what is the polar form of it it is r is a only so it becomes so easy only a custom just think the integration of x2 plus y2 also just think the integration of a custom number which one is easier of course the second one that means the polar form of a circle always that's why because of it we use once we have the semicircular or full circle or a part of a circular regions
+
+575
+00:44:46,275 --> 00:45:03,076
+we just prefer polar transformation to make the integration easier and quick okay don't forget this is important as you see specifically here x2 plus y2 at the same time becoming very easier in polar form and also the region is circular
+
+576
+00:45:03,076 --> 00:45:15,016
+is it okay up to now do you understand why do we need to use the polar transformation in order to make the integration easier okay and then
+
+577
+00:45:15,016 --> 00:45:23,175
+if you have this equation what do you think what is in the square root 1 minus x2
+
+578
+00:45:23,175 --> 00:45:28,056
+is the question of what whose equation is this
+
+579
+00:45:32,596 --> 00:45:34,956
+ve nedenle bu sqrt
+
+580
+00:45:46,036 --> 00:45:49,215
+Isn't it equal to x squared plus y squared is equal to 1?
+
+581
+00:45:50,695 --> 00:45:51,576
+A circle again.
+
+582
+00:45:52,056 --> 00:45:52,576
+Isn't it?
+
+583
+00:45:59,123 --> 00:46:07,963
+Bu, yi'nin bu formu? Y'nin squared 1 minus x squared. Is it equal to x squared plus y squared is equal to 1?
+
+584
+00:46:08,363 --> 00:46:11,543
+What is the differences between these two equations? What do you think?
+
+585
+00:46:22,867 --> 00:46:24,208
+Please, don't you have an idea?
+
+586
+00:46:33,523 --> 00:46:39,083
+Ah, yes [öğrenci], we will do it of course once we transform the Cartesian function into polar 1 of course.
+
+587
+00:46:39,603 --> 00:46:41,683
+X square plus y square will be r square.
+
+588
+00:46:42,163 --> 00:46:44,723
+But I want to ask you about the region of integral.
+
+589
+00:46:45,023 --> 00:46:46,784
+Why it is given in this form?
+
+590
+00:46:47,603 --> 00:46:53,023
+What is the difference of this equation once we compare with x square plus y square is equal to 1?
+
+591
+00:46:53,663 --> 00:46:54,563
+Aren't they same?
+
+592
+00:46:55,623 --> 00:46:56,423
+What do you think?
+
+593
+00:47:11,027 --> 00:47:12,147
+Okay, anyone else?
+
+594
+00:47:22,708 --> 00:47:29,968
+Okay, now we can think that this equation normally equal to x square plus y square is equal to 1.
+
+595
+00:47:29,968 --> 00:47:30,468
+A circle.
+
+596
+00:47:31,847 --> 00:47:32,947
+Yes, [öğrenci], you're right.
+
+597
+00:47:34,228 --> 00:47:39,488
+Only a part of it because here normally y is given in the square root.
+
+598
+00:47:39,488 --> 00:47:46,468
+That means square root means normally the full circle minus plus must be written here.
+
+599
+00:47:47,288 --> 00:47:50,148
+That means the bottom part and top part.
+
+600
+00:47:50,148 --> 00:47:55,668
+Top and bottom of a circle just cut into two parts with x-axis.
+
+601
+00:47:56,927 --> 00:47:59,508
+y positive the biggest part.
+
+602
+00:47:59,688 --> 00:48:02,108
+I'm sorry, the top part.
+
+603
+00:48:02,708 --> 00:48:08,588
+The other one when y is negative minus square root 1 minus x square gives the bottom part.
+
+604
+00:48:09,528 --> 00:48:12,347
+That's why be careful about these definitions.
+
+605
+00:48:12,568 --> 00:48:14,968
+That means this is only when y is positive.
+
+606
+00:48:15,947 --> 00:48:18,367
+So when y is positive, only one part of the circle.
+
+607
+00:48:18,367 --> 00:48:19,867
+That's why it is semicircular.
+
+608
+00:48:20,008 --> 00:48:22,508
+That means semicircular means half of the circle.
+
+609
+00:48:23,068 --> 00:48:24,628
+Okay, so be careful.
+
+610
+00:48:25,568 --> 00:48:26,847
+Once you sketch the region.
+
+611
+00:48:27,387 --> 00:48:28,588
+So this region you have.
+
+612
+00:48:29,608 --> 00:48:30,568
+And now last thing.
+
+613
+00:48:31,208 --> 00:48:33,387
+The integral will be transformed to polar one.
+
+614
+00:48:34,028 --> 00:48:36,867
+And on, again, the same region but in polar form.
+
+615
+00:48:37,048 --> 00:48:38,668
+E to x square plus y square.
+
+616
+00:48:38,668 --> 00:48:43,427
+What is x square plus y square in polar form when x's are cosine theta, y's are sine theta?
+
+617
+00:48:44,387 --> 00:48:45,568
+It's equal to r square.
+
+618
+00:48:46,168 --> 00:48:47,128
+E to r square.
+
+619
+00:48:47,728 --> 00:48:51,288
+D y dx will be replaced with always r dr d theta.
+
+620
+00:48:51,367 --> 00:48:52,288
+Always in this order.
+
+621
+00:48:52,948 --> 00:48:55,668
+So e to r square r dr d theta.
+
+622
+00:48:56,427 --> 00:48:59,248
+Will make the integration much more easier.
+
+623
+00:48:59,807 --> 00:49:00,807
+What about the limits?
+
+624
+00:49:01,288 --> 00:49:01,907
+This region.
+
+625
+00:49:02,268 --> 00:49:03,788
+First, specify the angles.
+
+626
+00:49:04,347 --> 00:49:06,148
+Our region is between which angles?
+
+627
+00:49:06,148 --> 00:49:10,008
+Zero to pi.
+
+628
+00:49:10,367 --> 00:49:11,327
+What about next?
+
+629
+00:49:11,508 --> 00:49:12,988
+Next, let's sketch the regions.
+
+630
+00:49:13,288 --> 00:49:13,628
+I'm sorry.
+
+631
+00:49:14,387 --> 00:49:16,228
+Sketch the rays to trace the region.
+
+632
+00:49:17,927 --> 00:49:18,447
+Trace.
+
+633
+00:49:18,887 --> 00:49:19,407
+Look.
+
+634
+00:49:20,728 --> 00:49:23,447
+Zero to circle.
+
+635
+00:49:23,568 --> 00:49:24,488
+What about the distances?
+
+636
+00:49:24,668 --> 00:49:26,148
+Because I'm just trying to measure.
+
+637
+00:49:26,588 --> 00:49:31,867
+Which function makes the evaluation of the distances of this region from the origin?
+
+638
+00:49:31,867 --> 00:49:34,028
+It starts here.
+
+639
+00:49:34,168 --> 00:49:34,427
+Zero.
+
+640
+00:49:34,788 --> 00:49:36,188
+That means it's starting from zero.
+
+641
+00:49:36,508 --> 00:49:37,448
+Zero to circle.
+
+642
+00:49:38,148 --> 00:49:38,387
+Okay.
+
+643
+00:49:39,068 --> 00:49:39,948
+Zero to circle.
+
+644
+00:49:40,048 --> 00:49:41,387
+What is the equation of circle?
+
+645
+00:49:41,827 --> 00:49:42,068
+Here.
+
+646
+00:49:42,927 --> 00:49:44,748
+Is x square plus y square is one?
+
+647
+00:49:45,008 --> 00:49:46,128
+That means r is one.
+
+648
+00:49:46,528 --> 00:49:51,628
+That's why for circular regions, integrations becomes so much easier.
+
+649
+00:49:51,628 --> 00:49:55,268
+That's why it's so useful for you.
+
+650
+00:49:55,988 --> 00:49:57,968
+And the easy calculation you will have.
+
+651
+00:49:59,048 --> 00:49:59,968
+Very easier.
+
+652
+00:50:00,688 --> 00:50:01,068
+And then.
+
+653
+00:50:01,367 --> 00:50:03,048
+First, integrate with respect to r.
+
+654
+00:50:03,588 --> 00:50:07,248
+And specifically having r squared and r together with the differential.
+
+655
+00:50:07,807 --> 00:50:08,887
+It's an easy integral.
+
+656
+00:50:09,268 --> 00:50:10,927
+1 over 2 e to r squared.
+
+657
+00:50:11,028 --> 00:50:11,608
+Zero to 1.
+
+658
+00:50:11,608 --> 00:50:13,427
+And then d theta.
+
+659
+00:50:14,588 --> 00:50:15,628
+Zero to pi.
+
+660
+00:50:16,387 --> 00:50:17,628
+It's the custom number.
+
+661
+00:50:18,128 --> 00:50:19,088
+Multiply with pi.
+
+662
+00:50:19,407 --> 00:50:20,347
+This is the solution.
+
+663
+00:50:20,988 --> 00:50:24,588
+Now, do you understand how we specify the region?
+
+664
+00:50:24,887 --> 00:50:27,427
+How we write down limits of integral in polar form?
+
+665
+00:50:27,508 --> 00:50:31,427
+And transform a Cartesian integral into polar one in double.
+
+666
+00:50:36,019 --> 00:50:48,800
+Any question up to now. I think it's not so hard. Easy. Just be careful. Be careful about some important points that I have given you.
+
+667
+00:54:12,403 --> 00:54:26,534
+Evet, [öğrenci], şimdi bu çizgi y
+
+668
+00:55:26,516 --> 00:55:31,496
+Okay, we will look. It's enough to write limits of integral writing if you are okay.
+
+669
+00:55:38,003 --> 00:55:38,543
+Listi.
+
+670
+00:55:43,891 --> 00:55:44,771
+Anyone else?
+
+671
+00:55:51,635 --> 00:55:53,936
+Now let's check your limits.
+
+672
+00:55:59,155 --> 00:56:11,476
+Y is 0, is it 2? It was 2, I'm sorry. I told that it was 1. Here it was 2.
+
+673
+00:56:12,675 --> 00:56:17,476
+Y is 0, y is 2, x is 0, x is square root 2y minus y square.
+
+674
+00:56:18,755 --> 00:56:27,956
+Must be. And here x square is, in order to write in polar form, we need to just write
+
+675
+00:56:27,956 --> 00:56:36,755
+x square plus y square is 2y, this circle. Okay, but it says that just the positive part of x,
+
+676
+00:56:36,755 --> 00:56:44,675
+so the right hand side part, semicircular region again, a function is x square plus y square, so
+
+677
+00:56:44,675 --> 00:56:51,715
+r square. dx dy r dr d theta, that means integral is r cube dr d theta. What about the limits?
+
+678
+00:56:51,715 --> 00:56:59,556
+This region only half of the circle, so 0 to pi over 2, 0 to pi over 2. What about the race?
+
+679
+00:57:00,115 --> 00:57:08,115
+Race starting 0 finishes at circle. 0 to circle, 0 to circle, but which circle is it? Iris 2 sin theta,
+
+680
+00:57:08,115 --> 00:57:12,675
+is the equation of this circle. It's not centered at origin, that's why such an equation it has.
+
+681
+00:57:12,675 --> 00:57:31,076
+0 to 2 sin theta will be the limits of integral. Is it okay for you?
+
+682
+00:57:29,972 --> 00:57:32,072
+Okay, any questions?
+
+683
+00:57:46,420 --> 00:58:01,480
+Okay, so continue with the next one. Just write the polar form of it. Write the integral d on the x square plus y square dx divided in polar form where d is x square plus y square is 2x. Let's do it.
+
+684
+00:58:54,068 --> 00:58:57,548
+İlk önce, skerim ve yazın, kısmi türev ve katlı ilimine yazın.
+
+685
+01:01:01,492 --> 01:01:03,492
+ve polifle
+
+686
+01:01:10,036 --> 01:01:11,255
+According to your region.
+
+687
+01:01:12,356 --> 01:01:15,076
+Probably not because it's not centered at origin.
+
+688
+01:01:15,755 --> 01:01:17,916
+So it cannot be 0 to 2 pi, I think.
+
+689
+01:01:20,396 --> 01:01:22,456
+X square plus y square is 2x.
+
+690
+01:01:28,244 --> 01:01:29,364
+Be careful about the region.
+
+691
+01:02:12,947 --> 01:02:16,427
+If you want to see the solution, we'll see it together.
+
+692
+01:02:33,715 --> 01:02:36,596
+Ok, now let's see.
+
+693
+01:02:41,588 --> 01:02:44,468
+Now, be careful about the circle, please.
+
+694
+01:02:53,364 --> 01:03:03,624
+Bu, x² plus y² is 2x. Be careful, 2x. So, it is the circle centered at 1, 0, and with the radius 1.
+
+695
+01:03:04,724 --> 01:03:08,184
+And the polar form of this circle is r is 2 cos theta.
+
+696
+01:03:09,364 --> 01:03:16,603
+What about the angles? As you see, this circle, minus pi over 2, 2 pi over 2 angles.
+
+697
+01:03:16,603 --> 01:03:29,903
+And what about the radius? Sketch it to trace all the region. Start 0 to circle, 0 to circle, 0 to circle, 0 to circle, 0 to circle, up to this point.
+
+698
+01:03:30,523 --> 01:03:36,963
+So, 0 to circle, x² plus y² is 2x, but in polar form, 2 cos theta.
+
+699
+01:03:36,963 --> 01:03:38,324
+What about the function? What about the function? X²?
+
+700
+01:03:38,324 --> 01:03:45,903
+What about the function? X² plus y² corresponds to r². The x dy corresponds to r dr d theta.
+
+701
+01:03:45,903 --> 01:03:49,103
+So, this is the polar form of this double integral.
+
+702
+01:04:19,251 --> 01:04:20,311
+Okay, nice.
+
+703
+01:04:21,092 --> 01:04:22,152
+What about this one?
+
+704
+01:04:23,851 --> 01:04:25,211
+Could you sketch it?
+
+705
+01:04:25,731 --> 01:04:27,132
+First specify the region.
+
+706
+01:04:30,612 --> 01:04:33,052
+Çekçen ve write the polar form.
+
+707
+01:05:03,699 --> 01:05:11,699
+İnteklal altyazı mı?
+
+708
+01:05:34,483 --> 01:05:36,384
+İlk olarak, bir şeyin var.
+
+709
+01:05:37,523 --> 01:05:42,223
+X 0, x 1, y 0, y 0, y 0, y 1-x².
+
+710
+01:05:42,304 --> 01:05:44,703
+Be careful, bu definiçin önemli.
+
+711
+01:05:45,603 --> 01:05:50,123
+Y is equal to square root 1-x².
+
+712
+01:06:42,643 --> 01:06:46,703
+R³, drd tata, yes.
+
+713
+01:06:47,623 --> 01:06:52,123
+Inner limit is 0 to 1, outer limit is 0 to pi.
+
+714
+01:06:53,583 --> 01:06:54,543
+Okay, it's possible.
+
+715
+01:06:57,263 --> 01:07:01,743
+0 to pi means, not the full circle, I'm just trying to understand.
+
+716
+01:07:02,083 --> 01:07:02,943
+Is it right, [öğrenci]?
+
+717
+01:07:04,323 --> 01:07:05,443
+Yes, you're right.
+
+718
+01:07:06,043 --> 01:07:06,703
+Anyone else?
+
+719
+01:07:07,883 --> 01:07:09,643
+[öğrenci], can you do it?
+
+720
+01:07:12,643 --> 01:07:14,583
+Shall I wait for you or continue?
+
+721
+01:07:27,956 --> 01:07:29,276
+Okay, thank you.
+
+722
+01:07:29,996 --> 01:07:30,615
+Let's see.
+
+723
+01:07:33,476 --> 01:07:33,996
+Yes.
+
+724
+01:07:34,516 --> 01:07:35,396
+Again, be careful.
+
+725
+01:07:35,576 --> 01:07:37,836
+Normally, you can understand this is a circle.
+
+726
+01:07:38,436 --> 01:07:43,936
+But it is not given in x squared plus y squared is equal to 1.
+
+727
+01:07:43,936 --> 01:07:49,456
+It's given that y is equal to square root 1 minus x squared means that y is positive.
+
+728
+01:07:50,476 --> 01:07:52,476
+That means just the positive part of y.
+
+729
+01:07:52,576 --> 01:07:53,655
+That means semicircle.
+
+730
+01:07:54,536 --> 01:07:57,816
+Also, the limit says that x is 0, x is 1.
+
+731
+01:07:58,516 --> 01:07:59,816
+x is 0, x is 1.
+
+732
+01:08:00,036 --> 01:08:02,296
+That means only the quarter of the circle.
+
+733
+01:08:02,976 --> 01:08:04,936
+A quarter of the circle in the first quadrant.
+
+734
+01:08:05,996 --> 01:08:07,596
+So, only this region.
+
+735
+01:08:07,675 --> 01:08:08,816
+Be careful about the limits.
+
+736
+01:08:09,276 --> 01:08:11,876
+x is 0, x is 1, y is 0, and this circle.
+
+737
+01:08:11,976 --> 01:08:13,716
+But this is the positive part.
+
+738
+01:08:13,836 --> 01:08:14,956
+Normally, semicircle.
+
+739
+01:08:15,456 --> 01:08:18,136
+But x says that x is only between 0 and 1.
+
+740
+01:08:18,615 --> 01:08:19,315
+0 to 1.
+
+741
+01:08:19,735 --> 01:08:23,855
+That's why this quarter circle you will have as the region.
+
+742
+01:08:25,376 --> 01:08:27,815
+What about the corresponding limits?
+
+743
+01:08:27,956 --> 01:08:28,716
+In polar form.
+
+744
+01:08:29,235 --> 01:08:32,336
+As you see, this quarter starts 0 to pi over 2.
+
+745
+01:08:32,615 --> 01:08:33,716
+0 to pi over 2.
+
+746
+01:08:34,115 --> 01:08:37,296
+And what about the rates and distances from pole?
+
+747
+01:08:37,815 --> 01:08:40,615
+0 to circle.
+
+748
+01:08:41,115 --> 01:08:42,576
+This circle has the equation.
+
+749
+01:08:42,576 --> 01:08:44,336
+R is 1 is centered at the origin.
+
+750
+01:08:45,395 --> 01:08:47,815
+That's why the limit is 0 to pi over 2.
+
+751
+01:08:47,916 --> 01:08:48,576
+0 to 1.
+
+752
+01:08:48,815 --> 01:08:49,536
+R cubed.
+
+753
+01:08:49,895 --> 01:08:50,596
+Dr d theta.
+
+754
+01:08:52,155 --> 01:08:53,096
+Now, is it okay?
+
+755
+01:08:53,275 --> 01:08:54,735
+Be careful about the region.
+
+756
+01:08:57,735 --> 01:08:58,536
+X and 1.
+
+757
+01:08:58,536 --> 01:08:59,536
+0 to circle.
+
+758
+01:08:59,536 --> 01:09:07,815
+I'm going to go to the region.
+
+759
+01:09:07,220 --> 01:09:07,640
+Ok.
+
+760
+01:09:15,315 --> 01:09:16,315
+Şimdi devam edelim.
+
+761
+01:09:16,315 --> 01:09:18,315
+Ve bu sorunla kolay.
+
+762
+01:09:18,315 --> 01:09:21,315
+0 to pi over 2 0 to 1 r³ dr dθ.
+
+763
+01:09:21,315 --> 01:09:23,315
+İntekle birlikte r.
+
+764
+01:09:23,315 --> 01:09:26,315
+R to 4 over 4 0 to 1 dθ.
+
+765
+01:09:26,315 --> 01:09:33,315
+Ve bu sorunla 1 over 4.
+
+766
+01:09:33,315 --> 01:09:43,315
+Bu sorunla 1 over 4.
+
+767
+01:09:45,908 --> 01:09:50,908
+Şimdi bu sorunlar ve polar integrası ile ilgili olan polar integrası ile ilgili.
+
+768
+01:09:51,528 --> 01:09:55,387
+Bu sorunlar için çok daha çok sorunlar.
+
+769
+01:09:55,387 --> 01:09:57,468
+Bu sorunlar için çok iyi sorunlar.
+
+770
+01:09:57,468 --> 01:09:58,807
+Bu sorunlar için teşekkür ederim.
+
+771
+01:10:00,128 --> 01:10:02,048
+Bu sorunlar için.
+
+772
+01:10:03,148 --> 01:10:03,428
+Ok.
+
+773
+01:10:04,488 --> 01:10:08,168
+Bu sorunlar için bir sorunlar.
+
+774
+01:10:08,408 --> 01:10:10,208
+Subtirtisinin ve double integrası ile ilgili.
+
+775
+01:10:10,968 --> 01:10:11,508
+Let's see.
+
+776
+01:10:12,608 --> 01:10:13,608
+Bu sorunlar.
+
+777
+01:10:15,908 --> 01:10:45,908
+Bu sorunlar için bir sorunlar için bir sorunlar için bir sorunlar için bir sorunlar için bir sorunlar için bir sorunlar için bir sorunlar için bir sorunlar için bir sorunlar için bir sorunlar için bir sorunlar için bir sorunlar için bir sorunlar için bir sorunlar için bir sorunlar için bir sorunlar için bir sorunlar için bir sorunlar için bir sorunlar için bir sorunlar için bir sorunlar için bir sorunlar için bir sorunlar için bir sorunlar için bir sorunlar için bir sorunlar için bir sorunlar için bir sorunlar için bir sorunlar için bir sorunlar için bir sorunlar için bir sorunlar için bir sorunlar için bir sorunlar için bir sorunlar için bir sorunlar için bir sorunlar için bir sorunlar için bir sorunlar için bir sorunlar için bir sorunlar için bir sorunlar için bir sorunlar için bir sorun
+
+778
+01:10:45,908 --> 01:11:45,908
+bir sorunlar için bir sorunlar için bir sorunlar için bir sorunlar için bir sorunlar için bir sorunlar için bir sorunlar için bir sorunlar için bir sorunlar için bir sorunlar için bir sorunlar için bir sorunlar için bir sorunlar için bir sorunlar için bir sorunlar için bir sorunlar için bir sorunlar için bir sorunlar için bir sorunlar için bir sorunlar için bir sorunlar için bir sorunlar için bir sorunlar için bir sorunlar için bir sorunlar için bir sorunlar için bir sorunlar için bir sorunlar için bir sorunlar için bir sorunlar için bir sorunlar için bir sorunlar için bir sorunlar için bir sorunlar için bir sorunlar için bir sorunlar için bir sorunlar için bir sorunlar için bir sorunlar için bir sorunlar için bir sorunlar için bir sorunlar için bir sorunlar için bir sorunlar için bir
+
+779
+01:11:45,908 --> 01:12:15,908
+sorunlar için bir sorunlar için bir sorunlar için bir sorunlar için bir sorunlar için bir sorunlar için bir sorunlar için bir sorunlar için bir sorunlar için bir sorunlar için bir sorunlar için bir sorunlar için bir sorunlar için bir sorunlar için bir sorunlar için bir sorunlar için bir sorunlar için bir sorunlar için bir sorunlar için bir sorunlar için bir sorunlar için bir sorunlar için bir sorunlar için bir sorunlar için bir sorunlar için bir sorunlar için bir sorunlar için bir sorunlar için bir sorunlar için bir sorunlar için bir sorunlar için bir sorunlar için bir sorunlar için bir sorunlar için bir sorunlar için bir sorunlar için bir sorunlar için bir sorunlar için bir sorunlar için bir sorunlar için bir sorunlar için bir sorunlar için bir sorunlar için bir sorunlar için bir sor
+
+780
+01:12:15,908 --> 01:12:45,908
+bir sorunlar için bir sorunlar için bir sorunlar için bir sorunlar için bir sorunlar için bir sorunlar için bir sorunlar için bir sorunlar için bir sorunlar için bir sorunlar için bir sorunlar için bir sorunlar için bir sorunlar için bir sorunlar için bir sorunlar için bir sorunlar için bir sorunlar için bir sorunlar için bir sorunlar için bir sorunlar için bir sorunlar için bir sorunlar için bir sorunlar için bir sorunlar için bir sorunlar için bir sorunlar için bir sorunlar için bir sorunlar için bir sorunlar için bir sorunlar için bir sorunlar için bir sorunlar için bir sorunlar için bir sorunlar için bir sorunlar için bir sorunlar için bir sorunlar için bir sorunlar için bir sorunlar için bir sorunlar için bir sorunlar için bir sorunlar için bir sorunlar için bir sorunlar için bir
+
+781
+01:12:45,908 --> 01:12:58,028
+bu sorunlar için bir sorunlar için bir sorunlar için bir sorunlar için bir sorunlar için bir sorunlar için bir sorunlar için bir sorunlar için bir sorunlar için bir sorunlar için bir sorunlar için bir sorunlar için bir sorunlar için bir sorunlar için bir sorunlar için bir sorunlar için bir sorunlar için bir sorunlar için bir sorunlar için bir sorunlar için bir sorunlar için bir sorunlar için bir sorunlar için bir sorunlar için bir sorunlar için bir sorunlar için bir sorunlar için bir sorunlar için bir sorunlar için bir sorunlar için bir sorunlar için bir sorunlar için bir sorunlar için bir sorunlar için bir sorunlar için bir sorunlar için bir sorunlar için bir sorunlar için bir sorunlar için bir sorunlar için bir sorunlar için bir sorunlar için bir sorunlar için bir sorunlar için bir
+
+782
+01:13:11,796 --> 01:13:18,796
+ve
+
+783
+01:13:15,956 --> 01:13:17,256
+Function will be changed.
+
+784
+01:13:17,815 --> 01:13:18,956
+Also be careful.
+
+785
+01:13:19,756 --> 01:13:23,876
+Dx dy will be replaced with Jacobian dudv.
+
+786
+01:13:24,096 --> 01:13:25,275
+What is this Jacobian?
+
+787
+01:13:26,815 --> 01:13:28,016
+You can ask me.
+
+788
+01:13:29,596 --> 01:13:31,556
+This is the Jacobian determinant.
+
+789
+01:13:31,976 --> 01:13:35,676
+Or shortly you can say Jacobian.
+
+790
+01:13:36,216 --> 01:13:37,976
+Of the coordinate transformation.
+
+791
+01:13:38,296 --> 01:13:40,516
+Now we are just making the coordinate transformation.
+
+792
+01:13:41,395 --> 01:13:43,756
+X is guv, y is huv.
+
+793
+01:13:43,756 --> 01:13:49,016
+Jacobian of x and y with respect to u and v.
+
+794
+01:13:49,916 --> 01:13:54,576
+So it includes the partial derivatives of x and y with respect to u and v.
+
+795
+01:13:55,155 --> 01:13:57,256
+So it gives the Jacobian.
+
+796
+01:13:58,275 --> 01:14:03,155
+That means once you have a transformation or substitution in a double integral.
+
+797
+01:14:03,395 --> 01:14:04,735
+You need to evaluate the Jacobian.
+
+798
+01:14:05,976 --> 01:14:09,895
+Jacobian of your original variables with respect to new variables.
+
+799
+01:14:09,895 --> 01:14:12,735
+Of x and y with respect to u and v for example.
+
+800
+01:14:12,735 --> 01:14:13,615
+Okay.
+
+801
+01:14:14,395 --> 01:14:16,115
+And so this Jacobian.
+
+802
+01:14:16,496 --> 01:14:18,556
+Why do we need to use Jacobian lespy?
+
+803
+01:14:18,976 --> 01:14:24,056
+Jacobian measures how much the transformation is expanding or contracting the area.
+
+804
+01:14:25,336 --> 01:14:27,695
+Because we have an area R.
+
+805
+01:14:28,996 --> 01:14:30,056
+Integration region.
+
+806
+01:14:30,735 --> 01:14:32,756
+But give a substitution makes a G.
+
+807
+01:14:32,756 --> 01:14:35,716
+They are completely different regions.
+
+808
+01:14:36,275 --> 01:14:38,076
+Different from the polar substitution.
+
+809
+01:14:38,315 --> 01:14:41,695
+In polar substitution we have always the same region.
+
+810
+01:14:42,076 --> 01:14:45,716
+But here for any other substitution the region is changed.
+
+811
+01:14:46,556 --> 01:14:49,456
+In order to measure how much does it change.
+
+812
+01:14:50,136 --> 01:14:52,016
+We need to multiply with the Jacobian.
+
+813
+01:14:52,496 --> 01:14:53,275
+That's why.
+
+814
+01:14:53,996 --> 01:14:55,576
+In polar coordinate system.
+
+815
+01:14:55,576 --> 01:14:59,496
+I said that why do we need to multiply with R, D, R, D, Theta.
+
+816
+01:14:59,615 --> 01:15:00,355
+You will understand.
+
+817
+01:15:00,756 --> 01:15:04,336
+Because it's the Jacobian of x and y with respect to R and Theta.
+
+818
+01:15:04,735 --> 01:15:05,456
+Now you will see.
+
+819
+01:15:07,136 --> 01:15:14,235
+And again I want to say Jacobian measures measures how much we are contracting or expanding the region.
+
+820
+01:15:14,235 --> 01:15:17,655
+For example it's G and becoming R or R to G.
+
+821
+01:15:18,275 --> 01:15:19,235
+A different region.
+
+822
+01:15:20,496 --> 01:15:23,716
+So Jacobian is used to get the same integrals.
+
+823
+01:15:23,976 --> 01:15:25,596
+In order to make the integration equal.
+
+824
+01:15:25,956 --> 01:15:28,355
+We need to multiply with the Jacobian.
+
+825
+01:15:47,956 --> 01:15:58,376
+For example, it says find the Jacobian for the polar coordinate transformation, x is r cos sin theta, y is r sin theta, and write the Cartesian integral as a polar integral.
+
+826
+01:15:59,076 --> 01:16:07,996
+Without it, we know what to do, but let's see why do we need to multiply with r, because it's the Jacobian of x and y with respect to r and theta.
+
+827
+01:16:07,996 --> 01:16:13,076
+For any substitution, we need to multiply with the Jacobian integral with the differentials.
+
+828
+01:16:13,556 --> 01:16:18,256
+The x, dy will be transformed with or replaced with Jacobian du db.
+
+829
+01:16:18,836 --> 01:16:23,176
+Here, you and we are r and theta, and let's see the Jacobian, Jacobian of r and theta.
+
+830
+01:16:23,855 --> 01:16:28,395
+dx, dr, dx, d theta, dy, dr, dy, d theta is the determinant.
+
+831
+01:16:28,615 --> 01:16:34,376
+And evaluated, dx, dr is cos sin theta, dx, d theta is minus r sin theta.
+
+832
+01:16:34,376 --> 01:16:40,815
+dy, dr is sin theta, dy, d theta is r cos theta.
+
+833
+01:16:41,836 --> 01:16:47,876
+So, Jacobian is equal to r cos square plus r sin square equal to r.
+
+834
+01:16:48,216 --> 01:16:59,155
+That's why for polar integration or for polar transformation, we always use dx, dy will be replaced with r, dr, d theta, because it's the Jacobian of this transformation.
+
+835
+01:17:00,435 --> 01:17:02,056
+Now, are you okay? Do you understand it?
+
+836
+01:17:02,056 --> 01:17:03,456
+Why it's happening this?
+
+837
+01:17:55,283 --> 01:17:56,583
+And so, let's continue.
+
+838
+01:18:00,500 --> 01:18:05,199
+Let's see step by step, how can we make the substitution in double integral.
+
+839
+01:18:05,479 --> 01:18:06,880
+It says, evaluate this integral.
+
+840
+01:18:07,640 --> 01:18:12,340
+By applying the transformation u and v, as is, u and v are given.
+
+841
+01:18:13,520 --> 01:18:17,180
+2x minus y over 2, v is y over 2.
+
+842
+01:18:18,199 --> 01:18:22,399
+Now in this exercise, we will see step by step, what do we need to do.
+
+843
+01:18:26,003 --> 01:18:26,764
+Let's see.
+
+844
+01:18:29,463 --> 01:18:30,024
+Firstly,
+
+845
+01:18:30,743 --> 01:18:32,304
+first sketch the original region.
+
+846
+01:18:33,163 --> 01:18:33,724
+What is it?
+
+847
+01:18:35,724 --> 01:18:36,623
+Y is 0,
+
+848
+01:18:36,764 --> 01:18:37,403
+y is 4,
+
+849
+01:18:38,884 --> 01:18:39,923
+x is y over 2,
+
+850
+01:18:40,003 --> 01:18:41,903
+x is y over 2 plus 1.
+
+851
+01:18:42,503 --> 01:18:44,224
+Okay, first sketch the original region,
+
+852
+01:18:44,344 --> 01:18:45,323
+such a region you have.
+
+853
+01:18:47,064 --> 01:18:47,384
+And,
+
+854
+01:18:48,963 --> 01:18:50,203
+first you can think,
+
+855
+01:18:50,443 --> 01:18:52,064
+why do we need to make a substitution
+
+856
+01:18:52,064 --> 01:18:52,903
+in double integral?
+
+857
+01:18:53,323 --> 01:18:54,863
+In order to make it easier.
+
+858
+01:18:54,863 --> 01:18:56,963
+First, in order to make the region
+
+859
+01:18:56,963 --> 01:18:58,283
+as much as possible easier,
+
+860
+01:18:58,283 --> 01:19:01,823
+because when the region is becoming easier,
+
+861
+01:19:02,243 --> 01:19:03,564
+so the limits will be easier,
+
+862
+01:19:03,764 --> 01:19:06,323
+and so that the double integral
+
+863
+01:19:06,323 --> 01:19:07,583
+will be easier to evaluate.
+
+864
+01:19:07,863 --> 01:19:09,243
+Okay, that's why we are doing this.
+
+865
+01:19:10,104 --> 01:19:11,384
+Such a region you have,
+
+866
+01:19:12,344 --> 01:19:13,644
+but after the transformation,
+
+867
+01:19:13,903 --> 01:19:14,283
+as you see,
+
+868
+01:19:14,323 --> 01:19:16,083
+it's becoming so much easier,
+
+869
+01:19:16,184 --> 01:19:18,463
+because it's becoming a rectangular region,
+
+870
+01:19:18,684 --> 01:19:21,163
+which is the easiest form of a double integral.
+
+871
+01:19:21,283 --> 01:19:24,163
+That's why we are using this substitution,
+
+872
+01:19:24,163 --> 01:19:24,884
+of course.
+
+873
+01:19:25,443 --> 01:19:26,483
+You need to just make,
+
+874
+01:19:26,623 --> 01:19:28,524
+or use a proper substitution,
+
+875
+01:19:28,703 --> 01:19:29,844
+in order to make it easier,
+
+876
+01:19:29,943 --> 01:19:30,983
+not any substitution.
+
+877
+01:19:32,384 --> 01:19:33,764
+The substitution says that
+
+878
+01:19:33,764 --> 01:19:35,443
+u is 2x minus y over 2,
+
+879
+01:19:35,943 --> 01:19:36,823
+v is y over 2.
+
+880
+01:19:38,003 --> 01:19:39,443
+So, first specify,
+
+881
+01:19:39,623 --> 01:19:41,743
+which boundary lines or curves we have,
+
+882
+01:19:41,844 --> 01:19:42,363
+y is 0,
+
+883
+01:19:42,463 --> 01:19:43,104
+y is 4,
+
+884
+01:19:43,983 --> 01:19:44,724
+y is 2x,
+
+885
+01:19:44,783 --> 01:19:45,983
+and y is 2x minus 2.
+
+886
+01:19:46,583 --> 01:19:47,483
+For y is 0,
+
+887
+01:19:47,884 --> 01:19:48,644
+v is 0,
+
+888
+01:19:48,644 --> 01:19:51,344
+y is 4,
+
+889
+01:19:51,423 --> 01:19:52,064
+v is 2,
+
+890
+01:19:53,363 --> 01:19:53,823
+and then,
+
+891
+01:19:56,363 --> 01:19:56,863
+u is,
+
+892
+01:19:57,184 --> 01:19:58,363
+when y is 2x,
+
+893
+01:19:58,564 --> 01:19:59,144
+u is 0,
+
+894
+01:19:59,243 --> 01:20:00,703
+when y is 2x minus 2,
+
+895
+01:20:00,764 --> 01:20:01,304
+u is 1.
+
+896
+01:20:01,363 --> 01:20:02,363
+We just substitute here,
+
+897
+01:20:02,463 --> 01:20:02,604
+okay?
+
+898
+01:20:03,764 --> 01:20:04,483
+Make them a cue.
+
+899
+01:20:05,764 --> 01:20:06,184
+And then,
+
+900
+01:20:07,344 --> 01:20:07,703
+so,
+
+901
+01:20:08,083 --> 01:20:09,844
+look at the new boundary curves,
+
+902
+01:20:09,923 --> 01:20:11,104
+or lines of the new region.
+
+903
+01:20:11,644 --> 01:20:12,224
+v is 0,
+
+904
+01:20:12,304 --> 01:20:12,923
+v is 2,
+
+905
+01:20:13,144 --> 01:20:13,703
+u is 0,
+
+906
+01:20:13,703 --> 01:20:14,323
+u is 1.
+
+907
+01:20:15,104 --> 01:20:16,043
+u and v,
+
+908
+01:20:16,384 --> 01:20:16,884
+again,
+
+909
+01:20:17,363 --> 01:20:19,064
+perpendicular coordinate system,
+
+910
+01:20:19,123 --> 01:20:19,604
+u and v.
+
+911
+01:20:20,823 --> 01:20:21,163
+And,
+
+912
+01:20:21,823 --> 01:20:23,644
+once we have the limits of u and v,
+
+913
+01:20:23,743 --> 01:20:24,963
+in terms of only custom numbers,
+
+914
+01:20:25,064 --> 01:20:26,104
+it's a rectangular region.
+
+915
+01:20:27,783 --> 01:20:28,863
+v is 0,
+
+916
+01:20:29,764 --> 01:20:30,844
+v is 2,
+
+917
+01:20:31,623 --> 01:20:32,423
+u is 0,
+
+918
+01:20:32,524 --> 01:20:33,163
+u is 1,
+
+919
+01:20:33,403 --> 01:20:35,644
+which is the easiest form of a double integral.
+
+920
+01:20:36,203 --> 01:20:36,463
+But,
+
+921
+01:20:36,923 --> 01:20:37,503
+firstly,
+
+922
+01:20:37,724 --> 01:20:40,363
+before writing the double integral in new form,
+
+923
+01:20:40,923 --> 01:20:42,304
+you need to evaluate Jacobi.
+
+924
+01:20:42,503 --> 01:20:43,043
+That means,
+
+925
+01:20:43,043 --> 01:20:45,043
+first sketch the original region,
+
+926
+01:20:45,323 --> 01:20:46,064
+and then,
+
+927
+01:20:46,423 --> 01:20:47,903
+transform the boundary curves,
+
+928
+01:20:48,003 --> 01:20:49,224
+in terms of new variables,
+
+929
+01:20:49,724 --> 01:20:50,863
+sketch the new region,
+
+930
+01:20:51,304 --> 01:20:51,663
+and then,
+
+931
+01:20:51,764 --> 01:20:52,184
+secondly,
+
+932
+01:20:52,663 --> 01:20:53,863
+evaluate the Jacobian,
+
+933
+01:20:54,003 --> 01:20:54,543
+don't forget.
+
+934
+01:20:55,943 --> 01:20:58,144
+The Jacobian of x and y,
+
+935
+01:20:58,264 --> 01:21:00,003
+first write the original variables,
+
+936
+01:21:00,184 --> 01:21:00,543
+and then,
+
+937
+01:21:00,903 --> 01:21:01,564
+new variables,
+
+938
+01:21:01,663 --> 01:21:02,023
+u and v.
+
+939
+01:21:02,184 --> 01:21:02,323
+So,
+
+940
+01:21:02,983 --> 01:21:05,423
+the Jacobian of x and y,
+
+941
+01:21:05,503 --> 01:21:06,804
+with respect to u and v,
+
+942
+01:21:06,923 --> 01:21:07,064
+so,
+
+943
+01:21:07,104 --> 01:21:08,523
+including these partial derivatives,
+
+944
+01:21:08,684 --> 01:21:09,003
+dx,
+
+945
+01:21:09,163 --> 01:21:09,724
+du, dx,
+
+946
+01:21:09,783 --> 01:21:10,003
+dv,
+
+947
+01:21:10,423 --> 01:21:11,023
+dy, du,
+
+948
+01:21:11,123 --> 01:21:11,724
+dy, dv.
+
+949
+01:21:11,724 --> 01:21:12,123
+But,
+
+950
+01:21:12,123 --> 01:21:12,724
+here,
+
+951
+01:21:14,144 --> 01:21:15,083
+when,
+
+952
+01:21:15,283 --> 01:21:18,604
+u and v are given in terms of x and y,
+
+953
+01:21:20,224 --> 01:21:22,184
+these partial derivatives easier.
+
+954
+01:21:23,844 --> 01:21:26,264
+du, dx, du, dy, dv, dx, dv, dy,
+
+955
+01:21:26,403 --> 01:21:27,903
+just the corners of that.
+
+956
+01:21:27,903 --> 01:21:29,144
+So,
+
+957
+01:21:29,144 --> 01:21:30,344
+evaluating the Jacobian,
+
+958
+01:21:31,064 --> 01:21:41,604
+d,
+
+959
+01:21:41,604 --> 01:21:44,283
+partial derivatives becomes easier.
+
+960
+01:21:44,283 --> 01:21:45,443
+Because dx, du,
+
+961
+01:21:45,443 --> 01:21:57,144
+d,
+
+962
+01:21:57,144 --> 01:21:57,644
+d, d,
+
+963
+01:21:57,644 --> 01:22:27,344
+d,
+
+964
+01:22:21,395 --> 01:22:25,536
+Absolute value of the Jacobin always written in the double integral with a substitution.
+
+965
+01:22:27,335 --> 01:22:29,895
+And then, it results 2.
+
+966
+01:22:33,971 --> 01:22:40,431
+İntegral is, since it is a rectangular region, you can write du db or dv du.
+
+967
+01:22:41,032 --> 01:22:47,791
+New form of the function u, 2x minus y over 2 is u, Jacobian du db.
+
+968
+01:22:48,371 --> 01:22:57,051
+Okay, 0 to 2, 0 to 1 of the boundaries of u and v, so it's clearly two very easier form of it.
+
+969
+01:23:07,220 --> 01:23:09,060
+Are you okay? Do you understand that?
+
+970
+01:23:23,347 --> 01:23:26,188
+Evet, çünkü bu kadar kolay değil, biliyorum.
+
+971
+01:23:30,676 --> 01:23:31,615
+What about this one?
+
+972
+01:23:33,615 --> 01:23:36,155
+It says, evaluate the integral r.
+
+973
+01:23:37,556 --> 01:23:42,516
+On r dx dy, integral is 1 dx dy over r.
+
+974
+01:23:42,655 --> 01:23:47,696
+R is y is x, y is 4x, x y is 1, x y is 9.
+
+975
+01:23:48,216 --> 01:23:53,476
+In the first quadrant, with a proper transformation, also the transformation is not given here.
+
+976
+01:23:54,556 --> 01:23:58,396
+You need to specify a proper transformation in order to make your region easier.
+
+977
+01:23:58,396 --> 01:24:01,416
+and also, in that case, the integration is here.
+
+978
+01:24:04,476 --> 01:24:08,896
+Can you guess any transformation to make this region easier?
+
+979
+01:24:09,556 --> 01:24:12,676
+Y is x, y is 4x, x y is 1, x y is 9.
+
+980
+01:24:13,336 --> 01:24:28,115
+Can you guess?
+
+981
+01:24:47,155 --> 01:24:54,155
+Bu, sadece bu bölümde de
+
+982
+01:24:54,155 --> 01:25:02,155
+bu bölümde de bu bölümde
+
+983
+01:25:02,155 --> 01:25:05,155
+çok daha iyi bir
+
+984
+01:25:05,155 --> 01:25:07,155
+bu bölümde
+
+985
+01:25:07,155 --> 01:25:09,155
+Bu bölümde de bu bölümde
+
+986
+01:25:09,155 --> 01:25:39,155
+bu bölümde de bu bölümde
+
+987
+01:25:20,243 --> 01:25:29,183
+For example, y is x is 1, y over x is 1, y over x is 4 here, and x y is 1, x y is 9.
+
+988
+01:25:29,723 --> 01:25:36,823
+So if we give the transformation to y over x and x times y, it will become a rectangular region.
+
+989
+01:25:37,043 --> 01:25:37,764
+Don't you think so?
+
+990
+01:25:38,503 --> 01:25:44,403
+The transformation must be given in form that y over x and x times y.
+
+991
+01:25:45,723 --> 01:25:48,804
+One of them will be u, the other one will be v, it doesn't matter.
+
+992
+01:25:48,804 --> 01:25:52,183
+In that case, it becomes a rectangular region.
+
+993
+01:25:52,384 --> 01:25:53,063
+Don't you think so?
+
+994
+01:26:06,739 --> 01:26:17,760
+Y over x is 1, y over x is 4, x y is 1, x y is 9, azuz is not an easy region.
+
+995
+01:26:18,519 --> 01:26:22,039
+It's very hard to specify the limits, it's not a smooth region because
+
+996
+01:26:30,836 --> 01:27:00,836
+Bu, y'e y'
+
+997
+01:27:00,836 --> 01:27:10,496
+What about the Jacobian? Jacobian of u and v, that means Jacobian of x and y with respect to u and v.
+
+998
+01:27:10,496 --> 01:27:18,115
+Always we are writing new variables here. Jacobian of u and v means Jacobian determinant of x and y with respect to u and v.
+
+999
+01:27:18,115 --> 01:27:23,496
+And it's including normally dx du dx dv dy dy dy dy dy.
+
+1000
+01:27:23,496 --> 01:27:53,496
+But if the partial derivatives are easier in the form that du dx du dy
+
+1001
+01:27:53,496 --> 01:28:00,556
+dy dy
+
+1002
+01:28:03,891 --> 01:28:06,831
+If you don't understand, please write me or ask me.
+
+1003
+01:28:09,532 --> 01:28:14,731
+And then, partial derivative of u with respect to x.
+
+1004
+01:28:16,912 --> 01:28:21,711
+u is y over x, so derivative of u with respect to x minus y over x squared.
+
+1005
+01:28:23,412 --> 01:28:26,771
+du dy with respect to y, 1 over x.
+
+1006
+01:28:28,931 --> 01:28:31,471
+Second row, dv dx, dv dy.
+
+1007
+01:28:31,471 --> 01:28:36,891
+dv dx is y, dv dy is x, so y and x, yes.
+
+1008
+01:28:37,412 --> 01:28:38,591
+What about this determinant?
+
+1009
+01:28:39,492 --> 01:28:44,431
+Minus y over x squared times y, minus y over x, minus y over x.
+
+1010
+01:28:44,871 --> 01:28:50,532
+So, as you see, minus x over 2y, negative, but just get the absolute value.
+
+1011
+01:28:50,952 --> 01:28:55,692
+If it is possible, you can just transform into new variables or hold it in this form
+
+1012
+01:28:55,692 --> 01:29:02,011
+and then get the division and cancellation with the function that you transform.
+
+1013
+01:29:02,371 --> 01:29:03,152
+It's possible.
+
+1014
+01:29:05,551 --> 01:29:08,771
+y over x is u, so x over y, 1 over u.
+
+1015
+01:29:08,931 --> 01:29:09,091
+Okay.
+
+1016
+01:29:09,551 --> 01:29:13,271
+And the absolute one, 1 over 2u, will be right in the integral.
+
+1017
+01:29:13,271 --> 01:29:18,051
+The integral was 1 times dx dy, so the Jacobian du dv is enough.
+
+1018
+01:29:18,631 --> 01:29:21,231
+This is the original region.
+
+1019
+01:29:21,371 --> 01:29:22,591
+This is the new region, g.
+
+1020
+01:29:23,492 --> 01:29:24,912
+It's a non-rectangular region.
+
+1021
+01:29:25,011 --> 01:29:26,551
+It's the rectangular region.
+
+1022
+01:29:27,032 --> 01:29:29,652
+That's why it's becoming so much easier, I said.
+
+1023
+01:29:30,671 --> 01:29:31,831
+On g, 1 over u.
+
+1024
+01:29:32,431 --> 01:29:35,931
+du dv or dv du, it's up to you because it's rectangular so much.
+
+1025
+01:29:36,091 --> 01:29:37,152
+Both of them are easy.
+
+1026
+01:29:37,152 --> 01:29:45,912
+du dv, so v is 1 to 9, and then u, 1 to 4, 1 over 2u du dv.
+
+1027
+01:29:48,072 --> 01:29:48,811
+And then.
+
+1028
+01:29:50,711 --> 01:29:52,211
+First, with respect to u.
+
+1029
+01:29:54,371 --> 01:29:58,351
+1 over 2 ln u, 1 to 4 dv.
+
+1030
+01:29:59,311 --> 01:30:06,591
+Substitute the points 1 and 4 to u, 1 over 2 times ln 4 minus ln 1 dv, ln 4 dv.
+
+1031
+01:30:06,591 --> 01:30:07,431
+ln 1 is 0.
+
+1032
+01:30:08,091 --> 01:30:12,912
+So the integral 1 to 9 ln 4 over 2 dv only.
+
+1033
+01:30:13,251 --> 01:30:13,811
+No function.
+
+1034
+01:30:14,032 --> 01:30:14,251
+v.
+
+1035
+01:30:14,851 --> 01:30:17,412
+So 1 to 9, so 9 minus 1.
+
+1036
+01:30:17,851 --> 01:30:21,471
+8 times 1 over 2 ln 4 results for ln 4.
+
+1037
+01:30:25,971 --> 01:30:27,612
+Now, do you understand the steps?
+
+1038
+01:30:28,811 --> 01:30:33,431
+If you don't understand, please write me or tell me and I will repeat it for you.
+
+1039
+01:30:47,188 --> 01:30:55,507
+Oh, really? Okay, so nice. Do you understand why do we need to do it? Just multiplicating the inverse? Okay, well done.
+
+1040
+01:31:01,492 --> 01:31:05,792
+So, this question is for you. Try to do it.
+
+1041
+01:31:07,311 --> 01:31:14,492
+Firstly, let's think. It says, evlate integral with a proper integral, I'm sorry, with a proper transformation.
+
+1042
+01:31:15,712 --> 01:31:20,971
+x minus y is 1, x minus y is 3, x minus y is 1, x minus y is 4.
+
+1043
+01:31:22,052 --> 01:31:27,172
+And sketch it and see it's not an easy region.
+
+1044
+01:31:27,811 --> 01:31:30,912
+How can we make it easier with a proper transformation?
+
+1045
+01:31:31,492 --> 01:31:34,231
+Now, I want to ask you, let's think about it together.
+
+1046
+01:31:34,912 --> 01:31:42,092
+What kind of a substitution we need to find in order to make it the first of the region is easier and then specifically the double integral?
+
+1047
+01:31:45,152 --> 01:31:47,572
+What kind of a substitution we need to write here?
+
+1048
+01:31:49,492 --> 01:31:52,311
+I think you can see it. It's so easy here.
+
+1049
+01:31:52,311 --> 01:32:00,092
+It's shown here in R. It says that please give me a transformation for the functions are so, I think, significant.
+
+1050
+01:32:04,659 --> 01:32:05,460
+Ne düşünüyorsun?
+
+1051
+01:32:20,020 --> 01:32:23,020
+ne tür bir transformasyon yapacağız?
+
+1052
+01:32:35,028 --> 01:32:39,048
+Evet, bir tane var x x y, I think so [öğrenci].
+
+1053
+01:32:39,268 --> 01:32:40,268
+Peki, bir tane var mı?
+
+1054
+01:33:28,948 --> 01:33:48,188
+Evet, of course, you're right. You're completely right. Yes, well done, girls. Yes, x minus y and x times y. If I give the transformation to these functions, firstly, my region will be rectangular and so much easier a double integral you will have. Yes, you're right. Thank you.
+
+1055
+01:33:48,188 --> 01:34:02,648
+And I want you to evaluate the Jacobian, please. Jacobian of you and we that you have written. That means dx y over d u v. Jacobian.
+
+1056
+01:34:26,420 --> 01:34:30,020
+Jacobin of u and v is equal to dx y over duv.
+
+1057
+01:34:30,920 --> 01:34:38,539
+But to make it easy, you can just add 1 over duv with respect to x and y.
+
+1058
+01:34:39,060 --> 01:34:50,140
+That means 1 over determinant du dx du dy, dv dx dx dy, that the equation that is written for you.
+
+1059
+01:34:51,079 --> 01:34:54,060
+x minus y is u, x times y is v.
+
+1060
+01:35:25,235 --> 01:35:27,655
+Okay, well done, [öğrenci], let's see.
+
+1061
+01:35:29,876 --> 01:35:32,536
+This is the original region, this is the new region.
+
+1062
+01:35:32,876 --> 01:35:35,296
+Okay, what about the Jacobian?
+
+1063
+01:35:35,735 --> 01:35:37,155
+Yes, thank you, you're right.
+
+1064
+01:35:37,256 --> 01:35:38,576
+1 over x plus y.
+
+1065
+01:35:39,355 --> 01:35:42,395
+And so, the corresponding double integral, a new form.
+
+1066
+01:35:43,675 --> 01:35:46,055
+Please, wait for me.
+
+1067
+01:36:03,891 --> 01:36:06,431
+1 over x plus y is related to Jacobian.
+
+1068
+01:36:07,572 --> 01:36:08,791
+What about the integral?
+
+1069
+01:36:10,351 --> 01:36:12,072
+First, you need to change the function.
+
+1070
+01:36:13,131 --> 01:36:16,671
+The x dy, Jacobian times du dv, and then write the limits.
+
+1071
+01:36:17,391 --> 01:36:19,091
+x squared minus y squared.
+
+1072
+01:36:19,551 --> 01:36:22,692
+You have written x minus y and x plus y.
+
+1073
+01:36:23,992 --> 01:36:26,871
+But you give the transformation to, where is it?
+
+1074
+01:36:27,112 --> 01:36:29,612
+x minus y is u, x times y is v.
+
+1075
+01:36:29,811 --> 01:36:31,072
+So what is x plus y?
+
+1076
+01:36:31,072 --> 01:36:34,351
+See, this is very important.
+
+1077
+01:36:34,591 --> 01:36:42,171
+Sometimes Jacobian and the function that you can have some difficulty about writing in terms of new variables, they may be cancelled.
+
+1078
+01:36:42,751 --> 01:36:50,091
+So sometimes it's nice to write the form of the Jacobian with respect to older variables.
+
+1079
+01:36:50,311 --> 01:36:50,971
+It is possible.
+
+1080
+01:36:51,511 --> 01:36:55,032
+In that case, resulting in this cancellation is becoming so easy.
+
+1081
+01:36:55,171 --> 01:36:57,572
+x minus y is u, du dv.
+
+1082
+01:36:57,992 --> 01:36:59,952
+Okay, do you understand this step?
+
+1083
+01:37:01,072 --> 01:37:04,492
+That means we didn't transform it.
+
+1084
+01:37:04,671 --> 01:37:10,291
+And also, 1 over x plus y is hard to transform in terms of u and v, and they will be cancelled.
+
+1085
+01:37:10,831 --> 01:37:11,871
+So it's very nice.
+
+1086
+01:37:11,952 --> 01:37:15,211
+You will have an integral on x minus y du dv.
+
+1087
+01:37:15,211 --> 01:37:22,011
+And the rest of it is just specify the limits of a rectangular region.
+
+1088
+01:37:22,631 --> 01:37:26,412
+You can just know both of them are easier.
+
+1089
+01:37:26,631 --> 01:37:27,791
+Do you dv or dv du?
+
+1090
+01:37:27,912 --> 01:37:30,711
+It's up to you because x minus y is u.
+
+1091
+01:37:30,931 --> 01:37:33,631
+U dv du is a very, very easier integral.
+
+1092
+01:37:33,631 --> 01:37:35,551
+If we write dv du.
+
+1093
+01:37:35,551 --> 01:37:42,471
+U was 1 to 3.
+
+1094
+01:37:42,471 --> 01:37:44,891
+V was 1 to 4.
+
+1095
+01:37:44,891 --> 01:37:46,171
+1 to 3.
+
+1096
+01:37:46,311 --> 01:37:47,072
+1 to 4.
+
+1097
+01:37:47,231 --> 01:37:48,612
+U dv du.
+
+1098
+01:37:48,612 --> 01:37:52,591
+Integral of u with respect to v.
+
+1099
+01:37:52,591 --> 01:37:54,112
+U times v.
+
+1100
+01:37:54,112 --> 01:37:55,152
+1 to 4.
+
+1101
+01:37:55,152 --> 01:37:57,952
+And u is the custom for v.
+
+1102
+01:37:58,072 --> 01:37:59,291
+So don't hold u.
+
+1103
+01:37:59,831 --> 01:38:00,751
+U is fixed.
+
+1104
+01:38:01,351 --> 01:38:02,271
+And 4 minus 1.
+
+1105
+01:38:02,652 --> 01:38:04,032
+For v, we need to write.
+
+1106
+01:38:04,131 --> 01:38:04,791
+So 3u.
+
+1107
+01:38:04,791 --> 01:38:07,192
+Now 3u with respect to u.
+
+1108
+01:38:07,371 --> 01:38:08,072
+3 over 2.
+
+1109
+01:38:08,351 --> 01:38:08,931
+U squared.
+
+1110
+01:38:09,251 --> 01:38:09,851
+1 to 3.
+
+1111
+01:38:10,311 --> 01:38:11,331
+Results 12.
+
+1112
+01:38:25,460 --> 01:38:27,460
+Evet, bu da.
+
+1113
+01:38:29,460 --> 01:38:31,460
+Bu da, bu da.
+
+1114
+01:38:31,460 --> 01:38:34,460
+Ve bu da diğerlerle ilgili
+
+1115
+01:38:34,460 --> 01:38:37,460
+ve bu da
+
+1116
+01:38:37,460 --> 01:38:39,460
+sonrasında
+
+1117
+01:38:39,460 --> 01:38:41,460
+ve bu da
+
+1118
+01:38:41,460 --> 01:38:43,460
+sonrasında.
+
+1119
+01:38:43,460 --> 01:38:49,460
+Bu da, bu da.
+
+1120
+01:38:49,460 --> 01:38:51,460
+Ve sonra, bu da.
+
+1121
+01:38:51,460 --> 01:38:55,460
+Bu da.
+
+1122
+01:38:55,460 --> 01:38:57,460
+Ve sonra, bu da.
+
+1123
+01:38:57,460 --> 01:39:01,460
+Evet, bu da.
+
+1124
+01:39:01,460 --> 01:39:57,460
+Bu da.
+
+1125
+01:39:55,315 --> 01:40:13,155
+And so, I want to thank you for your participations. Thank you so much. And next week, we will be together for the last one. And so, have a nice weekend and see you next week. Take care.
+
+1126
+01:40:16,948 --> 01:40:17,488
+See you.
