@@ -1,0 +1,3823 @@
+1
+00:01:52,819 --> 00:01:53,979
+İyi günler arkadaşlar.
+
+2
+00:01:58,292 --> 00:02:06,632
+Bugünkü dersimize başlamadan evvel konuşmak istiyor musunuz? Söylemek istediğiniz bir husus var mı?
+
+3
+00:02:10,644 --> 00:02:12,584
+Yok herhalde. O zaman başlayalım.
+
+4
+00:02:13,544 --> 00:02:17,843
+Bugün bir iki tane örnek yapacağım en son işlediğimiz konularla ilgili.
+
+5
+00:02:18,764 --> 00:02:21,104
+Daha sonra son konumuza başlayacağız.
+
+6
+00:02:21,743 --> 00:02:25,563
+Özdeğer, özvektörler kısmına başlayacağız ve bugün dersimizi bitireceğiz inşallah.
+
+7
+00:02:27,304 --> 00:02:27,764
+Pekala.
+
+8
+00:02:29,524 --> 00:02:34,564
+Geçen dersimizde gördüğümüz konuyla ilgili bir iki tane örnek çözeceğimi söylemiştim.
+
+9
+00:02:34,564 --> 00:02:35,604
+Onlardan birisi şu.
+
+10
+00:02:35,604 --> 00:02:40,984
+R küp vektör uzayında üç tane vektör verilmiş.
+
+11
+00:02:41,604 --> 00:02:42,283
+A, B, C.
+
+12
+00:02:42,944 --> 00:02:44,944
+C'nin indislerinden birisi K.
+
+13
+00:02:45,843 --> 00:02:46,683
+Şöyle bir sorumuz.
+
+14
+00:02:47,624 --> 00:02:52,184
+Bu üç vektörün lineer bağımlı olması için K ne olmalıdır?
+
+15
+00:02:53,044 --> 00:02:53,304
+Diyoruz.
+
+16
+00:02:53,304 --> 00:03:00,704
+İkinci şıkta da bu İ'de bulduğumuz K değerine göre vektörler arasındaki bağıntıyı yazınız.
+
+17
+00:03:00,704 --> 00:03:06,064
+Bu üç vektör arasındaki bağıntıyı yazınız diye bir sorumuz var.
+
+18
+00:03:07,104 --> 00:03:09,324
+Şimdi bunu çözelim.
+
+19
+00:03:17,364 --> 00:03:29,743
+Önce i'yi yapacağız. Burada üç tane vektör verilmiş. Dolayısıyla bu üç vektörün lineer bağımlı olması için rank ne olmalı?
+
+20
+00:03:29,743 --> 00:03:52,984
+Üçten küçük olmalı değil mi? Her satıra verilen vektörlerin koordinatlarını yazarak elde ettiğimiz matrisin rangından bahsediyoruz tabii ki. Eğer rank üç olursa ne olur? Lineer bağımsız olur. Lineer bağımlı olması için rankın üçten küçük olması gerekir.
+
+21
+00:03:52,984 --> 00:04:08,403
+Önce A matrisimizi yazıyoruz arkadaşlar. Her satıra verilen vektörlerin koordinatlarını yazdık. Sonra bu matrisin A matrisinin rangını konuşabilecek hale getiriyoruz.
+
+22
+00:04:08,403 --> 00:04:22,223
+Yani satırca eşelon forma getiriyoruz. O zaman sıfırdan farklı satırların sayısı bize rangı veriyordu. İşte bu satırca eşelon forma gelmiş durumu A matrisinin.
+
+23
+00:04:22,223 --> 00:04:37,223
+Buraya baktığımız zaman bu rangın üçten küçük olması şuradaki K artı üçe bağlı. Eğer K artı üç sıfırdan farklıysa rank üç olacaktır.
+
+24
+00:04:37,223 --> 00:04:54,764
+K artı üç sıfırdan pardon sıfıra eşitse K artı üç rank iki olacaktır. K artı üç sıfır ve eşit değilse o zaman da rank üç olacak.
+
+25
+00:04:54,764 --> 00:05:04,264
+Biz ne istiyoruz? Rangın üçten küçük olmasını. Zaten şu matrise baktığımız zaman şuradan matrisin rangı bir kere ikili garanti.
+
+26
+00:05:05,064 --> 00:05:16,144
+Yani üçten küçük olunca iki olabilir bunun rangı. O zaman rangın iki olması için K artı üç değeri ne olmalı? Sıfır olmalı.
+
+27
+00:05:16,644 --> 00:05:23,384
+O zaman K ne olmalı? Eksi üç olmalı. Demek ki K eşit eksi üç için bu vektörler lineer bağımlıymış.
+
+28
+00:05:23,384 --> 00:05:35,264
+Eğer sorum şöyle olsaydı bu üç vektörün lineer bağımsız olması için K ne olmalıdır deseydi o zaman da diyecektik yine bu K artı üç sıfırdan farklı olmalı.
+
+29
+00:05:35,384 --> 00:05:41,384
+Yani K eksi üçten farklı olmalıdır diyecektik. Öyle bir soruyla karşılaşsaydık.
+
+30
+00:05:42,584 --> 00:05:49,644
+Şimdi bu sorunun ikinci şıkkında bulduğumuz değer yani K eşit eksi üç değerine göre vektörler arasındaki bağıntı yazınız.
+
+31
+00:05:49,644 --> 00:05:55,423
+K yerine eksi üç yazdığım zaman bu üç vektör ne olacak arkadaşlar? Lineer bağımlı olacaklar.
+
+32
+00:05:55,903 --> 00:06:04,963
+Dolayısıyla aralarında bir bağıntı elde edeceğiz. Yani şu ifade bu ifade K'ların hepsi birden sıfır olmadan sağlanacak demektir.
+
+33
+00:06:05,463 --> 00:06:13,644
+Dolayısıyla bu ifadeyi bize ABC arasında bir bağıntı verecektir.
+
+34
+00:06:13,644 --> 00:06:23,144
+Şimdi burada ABC vektörlerini yazdım. Bakın şurada K yerine de eksi üç yazdık. Değil mi?
+
+35
+00:06:23,764 --> 00:06:29,024
+Sonra bunu düzenlediğimiz zaman bir homojen lineer denklem sistemi çıkar karşımıza.
+
+36
+00:06:30,303 --> 00:06:31,843
+Bu denklem sistemini çözeceğiz.
+
+37
+00:06:31,844 --> 00:06:36,804
+Tabii burada tek çözüm sıfır çözümünden farklı çözüm halini elde edeceğiz.
+
+38
+00:06:36,944 --> 00:06:40,444
+Çünkü üç faktör ne oldu? Lineer bağımlı oldu.
+
+39
+00:06:41,124 --> 00:06:56,344
+Bunu çözdüğümüz zaman arkadaşlar bu kas sayılar maddesini homojen lineer denklem sisteminde kas sayılar maddesini satırca indirgenmiş eşron forma getirdikten sonra
+
+40
+00:06:56,344 --> 00:06:58,984
+şu
+
+41
+00:06:58,740 --> 00:07:18,500
+Denklemi elde edilir. Burada tabii bir keyfi değişkene bağlı. Şuradan sonsuz çözüm var. O keyfi değişkeni de mesela K3'ü seçebiliriz. Diğerlerini seçemez miyiz? Elbette seçeriz ama burada hemen K1 ile K2'yi hızlıca K3'ün cinsinden yazabildiğimiz için K3'ü keyfi seçebiliriz.
+
+42
+00:07:18,500 --> 00:07:40,120
+Hatta K3 yerine de bir yazarsak K3'e bağlı olarak K1'i 3, K2'yi de eksi 2 buluruz. Getirip şuradaki denklemimizde biraz önce oluşturduğumuz şu denklemde yerine yazarsak bu bulduğumuz K değerlerini bu ifadeyi buluruz arkadaşlar. Dolayısıyla bu üç vektör arasındaki bağıntıyı bulmuş olduk.
+
+43
+00:07:40,120 --> 00:07:58,120
+Bir diğer sorumuzda yine R küp uzayında çalışıyoruz. Üç tane vektörden oluşan bir küme var. Bu kümenin lineer bağımsız olmasını sağlayan A değerini bulunuz.
+
+44
+00:07:58,120 --> 00:08:10,899
+Biraz önceki soruya benziyor değil mi? A maddesini oluşturdum. Bu A maddesini nasıl oluşturdum? Her satıra S'deki vektörlerin koordinatlarını yazarak oluşturdum.
+
+45
+00:08:10,899 --> 00:08:22,879
+Tamam mı? Sonra bu A maddesini rankları konuşabileceğimiz hale getiriyoruz. Şu hale geldiği zaman ranklar hakkında konuşabiliriz artık.
+
+46
+00:08:23,279 --> 00:08:28,519
+Değil mi? Ranklar hakkında konuşabiliriz. Şurada A var ama o bizi çok etkilemez.
+
+47
+00:08:28,519 --> 00:08:40,879
+O hemen tabii o A değerini hemen bir yapabilir miyiz yapamaz mıyız? Aşağıdaki A değerine de bağlı bu.
+
+48
+00:08:41,960 --> 00:08:51,600
+Şimdi burada bulduğumuz şu değer var. Bu üç vektörün lineer bağımsız olması için rangının ne olması lazım? Üçten küçük olması lazım.
+
+49
+00:08:51,600 --> 00:09:00,740
+Pardon. Lineer bağımsız olmasını sorduğuna göre rang ne olması lazım? Üç olması lazım.
+
+50
+00:09:01,299 --> 00:09:10,279
+Rank bu maddesinin rangı üç olması lazım. Eğer üçse bu maddesinin rangı bu üç vektör lineer bağımsızdır deriz.
+
+51
+00:09:11,319 --> 00:09:15,319
+Bunun rangın üç olması da neyle mümkündür arkadaşlar?
+
+52
+00:09:15,320 --> 00:09:23,759
+Bir eksi A karenin farklı sıfır ve
+
+53
+00:09:23,759 --> 00:09:30,680
+Şurası önemli bizim için değil mi? A'nın da sıfırdan farklı olması durumunda mümkün.
+
+54
+00:09:31,420 --> 00:09:35,420
+Bu ikisini sağlayan değer olmalı. A değeri.
+
+55
+00:09:36,139 --> 00:09:36,980
+Tamam mı arkadaşlar?
+
+56
+00:09:36,980 --> 00:09:40,899
+Buradan A'yı ne buluruz? Şuradan.
+
+57
+00:09:43,360 --> 00:09:44,420
+A'yı
+
+58
+00:09:44,420 --> 00:09:50,740
+A farklı artı eksi bir buluruz.
+
+59
+00:09:52,220 --> 00:09:53,639
+O zaman A
+
+60
+00:09:53,639 --> 00:09:54,139
+A
+
+61
+00:09:54,139 --> 00:09:57,580
+Artı eksi birden de farklı olacak.
+
+62
+00:09:59,019 --> 00:10:01,500
+Sıfırdan da farklı olacak bu soru için.
+
+63
+00:10:02,340 --> 00:10:02,740
+Belki
+
+64
+00:10:02,740 --> 00:10:05,320
+Belki şunu da şöyle de yazabiliriz.
+
+65
+00:10:05,379 --> 00:10:06,019
+A eleman
+
+66
+00:10:06,019 --> 00:10:08,720
+Real sayılardan
+
+67
+00:10:08,720 --> 00:10:11,680
+Eksi bir
+
+68
+00:10:11,680 --> 00:10:12,899
+Sıfır
+
+69
+00:10:12,899 --> 00:10:15,299
+Biri çıkarttığımız zaman
+
+70
+00:10:15,299 --> 00:10:19,519
+Diğer real sayılardan birisi olabilir diyoruz.
+
+71
+00:10:20,180 --> 00:10:22,340
+Bu soru farklı yoldan şöyle de yapılabilir.
+
+72
+00:10:22,879 --> 00:10:26,720
+Bu kat sayılar maddesinin determinantı sıfırdan farklı olacak şekilde
+
+73
+00:10:26,720 --> 00:10:29,559
+A'yı belirleyebiliriz.
+
+74
+00:10:29,559 --> 00:10:31,700
+Yine aynı sonucu buluruz arkadaşlar.
+
+75
+00:10:32,740 --> 00:10:33,620
+Peki.
+
+76
+00:10:34,080 --> 00:10:34,340
+Şimdi
+
+77
+00:10:34,340 --> 00:10:39,340
+Son bölümümüz öz değer öz vektörler konusuna geçiyoruz.
+
+78
+00:10:41,100 --> 00:10:42,159
+Şimdi
+
+79
+00:10:42,159 --> 00:10:44,159
+Bir matrizimiz var.
+
+80
+00:10:44,899 --> 00:10:45,480
+Bu matriz
+
+81
+00:10:45,480 --> 00:10:51,460
+N çarpı N kare matrizi
+
+82
+00:10:51,460 --> 00:10:54,100
+Sonra
+
+83
+00:10:54,100 --> 00:10:56,000
+Bir X
+
+84
+00:10:57,000 --> 00:10:59,659
+Bir
+
+85
+00:10:56,447 --> 00:11:07,107
+matrisin, bu bir x vektörü olarak düşünelim bunu. Bu şekilde matris olarak verdiğimizi düşünelim. Sonra bir ifademiz var bakın.
+
+86
+00:11:08,567 --> 00:11:16,487
+A x eşit lambda x.
+
+87
+00:11:21,683 --> 00:11:33,103
+Bu denklemi sağlayan, bu en son söylediğimiz denklemi sağlayan lambda değerlerine, biz A matrisinin öz değerleri deriz.
+
+88
+00:11:34,483 --> 00:11:45,043
+Bu eşitliği sağlayan lambda değerlerine A matrisinin öz değerleri, bir başka deyişle karakteristik değerleri deriz.
+
+89
+00:11:46,644 --> 00:11:49,943
+Bu lambayı nasıl bulacağız? Şimdi onun üzerinde duralım.
+
+90
+00:11:49,943 --> 00:12:00,183
+Bu denklemden iki tarafa eksi lambda x'i eklersek, matrislerde işlem yapıyormuşuz gibi düşünebilirsiniz.
+
+91
+00:12:01,423 --> 00:12:07,124
+Şunu buluruz, iki tarafa eksi lambda x matrisini ekleyerek bunu buluruz.
+
+92
+00:12:07,124 --> 00:12:22,264
+Daha sonra iki matrisin x'i çarpımdan x'i dışarı alarak, daha doğrusu matrislerdeki çarpmanın toplama işlemi üzerine dağılma özelliğini kullanarak,
+
+93
+00:12:22,264 --> 00:12:29,743
+bu matrislerde toplama çarpma işlemini söyledikten sonra verdiğimiz bir özellik.
+
+94
+00:12:31,003 --> 00:12:39,443
+Matrislerde çarpma işleminin toplama işleminin üzerine dağılma özelliğini uygulayarak, en son şunu elde ederiz arkadaşlar.
+
+95
+00:12:40,723 --> 00:12:41,884
+Bu denklemi elde ederiz.
+
+96
+00:12:41,884 --> 00:12:47,644
+Tabii bu denklem bir homojen denklem sistemi verecek bize.
+
+97
+00:12:48,243 --> 00:12:57,583
+Bu a değerini işte lambda ile i'yi çarparak, x'i yerine koyarak buradan denklem elde ederiz.
+
+98
+00:12:57,663 --> 00:12:58,823
+Bir denklem sistemi elde ederiz.
+
+99
+00:12:58,903 --> 00:13:01,063
+Bu da homojen değer denklem sistemidir.
+
+100
+00:13:01,063 --> 00:13:08,384
+Bu sistemin, tabii lambda burada bilinmeyen, biz lambdayı bulmak istiyoruz.
+
+101
+00:13:08,483 --> 00:13:15,183
+Bu sistemin sıfırdan farklı çözümünün, yani sıfırdan farklı lambda değerinin olması için,
+
+102
+00:13:15,823 --> 00:13:19,083
+kat sayılar matrisinin determinantı sıfıra eşit olmalıdır.
+
+103
+00:13:19,803 --> 00:13:22,863
+Şimdi homojen denklem sisteminde çözüm öyleydi ya,
+
+104
+00:13:23,403 --> 00:13:27,503
+eğer kat sayılar matrisinin determinantı sıfırsa tek çözüm sıfır çözümüydü.
+
+105
+00:13:27,504 --> 00:13:34,163
+Pardon, kat sayılar matrisinin determinantı sıfırdan farklıysa,
+
+106
+00:13:34,743 --> 00:13:36,764
+o zaman tek çözüm sıfır çözümü vardı.
+
+107
+00:13:36,923 --> 00:13:41,003
+Eğer kat sayılar matrisinin determinantı sıfıra eşitse,
+
+108
+00:13:41,604 --> 00:13:44,683
+o zaman sıfırın dışında da çözüm var idi.
+
+109
+00:13:45,903 --> 00:13:50,624
+Tabii biz buna kremer sisteminde,
+
+110
+00:13:50,624 --> 00:13:58,783
+bir de kat sayılar matrisinin tersinin kullanarak çözümlerde bunun üzerinde durmuştuk.
+
+111
+00:13:59,223 --> 00:14:01,483
+Tabii orada mesela kremer sisteminde diyorduk ki,
+
+112
+00:14:01,483 --> 00:14:05,483
+kat sayılar matrisinin determinantı sıfırsa kremer'e göre yapılamaz bu diyorduk.
+
+113
+00:14:06,083 --> 00:14:07,223
+Şeye göre yapılır diyorduk,
+
+114
+00:14:08,423 --> 00:14:11,624
+arttırılmış kat sayılar matrisiyle çözüm yapılır diyorduk.
+
+115
+00:14:11,624 --> 00:14:12,563
+Aynı oradaki gibi,
+
+116
+00:14:13,644 --> 00:14:18,583
+burada bu homojen denklem sisteminde sıfırdan farklı çözümün olması için,
+
+117
+00:14:18,723 --> 00:14:21,483
+sıfırdan farklı lambdanın bulunabilmesi için,
+
+118
+00:14:22,723 --> 00:14:24,343
+bu kat sayılar matrisinin,
+
+119
+00:14:24,903 --> 00:14:28,463
+tabii şimdi kat sayılar matrisimiz bu oldu,
+
+120
+00:14:28,963 --> 00:14:30,443
+a-lambdax oldu,
+
+121
+00:14:30,543 --> 00:14:33,063
+onun determinantı sıfıra eşit olmalı.
+
+122
+00:14:33,063 --> 00:14:42,323
+Bu eşitliği sağlayan lambda değeri bize A matrisinin öz değerini,
+
+123
+00:14:42,743 --> 00:14:44,864
+karakteristik değerini verir.
+
+124
+00:14:44,864 --> 00:14:48,743
+Tabii burada şu determinantı açtığımız zaman,
+
+125
+00:14:49,423 --> 00:14:51,803
+karşımıza bir polinom çıkacak.
+
+126
+00:14:51,923 --> 00:14:58,243
+Çünkü şuradaki açılımda şu çarpanlardan dolayı,
+
+127
+00:14:58,364 --> 00:14:59,463
+lambdaya bağlı,
+
+128
+00:14:59,903 --> 00:15:02,923
+lambdaya göre eninci dereceden bir polinom çıkacak.
+
+129
+00:15:03,063 --> 00:15:07,603
+bu eşitliğin sol tarafında.
+
+130
+00:15:08,384 --> 00:15:08,583
+Değil mi?
+
+131
+00:15:09,203 --> 00:15:11,243
+Lambdaya bağlı eninci dereceden polinom,
+
+132
+00:15:11,303 --> 00:15:12,283
+eşit sıfır çıkacak.
+
+133
+00:15:12,943 --> 00:15:16,043
+Bu lambdaya bağlı eninci dereceden polinoma,
+
+134
+00:15:16,283 --> 00:15:20,683
+biz A matrisinin karakteristik polinomu diyoruz.
+
+135
+00:15:24,467 --> 00:15:36,127
+Ve bu denklemede, tabi bu denklem, şurada polinom var, eşit sıfır.
+
+136
+00:15:36,247 --> 00:15:37,487
+Bu denklemede ne diyoruz?
+
+137
+00:15:37,908 --> 00:15:40,427
+A matrisinin karakteristik denklemi diyoruz.
+
+138
+00:15:41,587 --> 00:15:44,307
+Karakteristik denklem şöyle bir denklem olacak arkadaşlar.
+
+139
+00:15:44,827 --> 00:15:47,967
+Biz bunu şöyle P lambda olarak gösterelim.
+
+140
+00:15:48,168 --> 00:15:53,107
+Lambda'ya bağlı bir polinom, karakteristik polinom.
+
+141
+00:15:53,107 --> 00:15:58,627
+Tabi bunu da sıfır eşitlersek o da bize karakteristik denklemi verecek.
+
+142
+00:15:59,327 --> 00:16:04,987
+Tabi bu en ince dereceden bir polinom olduğu için bu polinomun en tane kökü var.
+
+143
+00:16:05,168 --> 00:16:10,528
+Bunların gerçel ya da karmaşık olduğunu söylüyoruz.
+
+144
+00:16:11,487 --> 00:16:14,168
+Yani hepsi real olmak zorunda değil.
+
+145
+00:16:14,168 --> 00:16:24,387
+Bazıları da değer olmayabilir ama toplamda en tane kökü vardır bu polinomun.
+
+146
+00:16:25,028 --> 00:16:28,307
+Ayrıca bu polinomda, yani karakteristik polinomda,
+
+147
+00:16:29,107 --> 00:16:31,788
+A1 kas sayısı, şu kas sayı,
+
+148
+00:16:32,447 --> 00:16:39,847
+A1 kas sayısı bize A matrisinin izinin eksilisini verecek.
+
+149
+00:16:39,847 --> 00:16:40,507
+İz A'ya.
+
+150
+00:16:41,528 --> 00:16:42,788
+Karamatris de iz neydi?
+
+151
+00:16:43,067 --> 00:16:45,987
+Birinci köşegen üzerindeki elemanların toplamıydı.
+
+152
+00:16:46,227 --> 00:16:50,048
+İşte onların toplamının eksi işaretlisi olacak A1.
+
+153
+00:16:51,028 --> 00:16:54,167
+Sonra en son şu sabit kas sayı bu polinomda,
+
+154
+00:16:54,907 --> 00:16:55,567
+şuna eşit olacak.
+
+155
+00:16:56,627 --> 00:16:57,867
+Eksi bir üzeri N,
+
+156
+00:16:58,127 --> 00:17:01,327
+determinant A'ya eşit olacak.
+
+157
+00:17:01,327 --> 00:17:04,187
+Şimdi bununla ilgili bir örnek verelim arkadaşlar.
+
+158
+00:17:04,748 --> 00:17:05,347
+İşte matris.
+
+159
+00:17:06,707 --> 00:17:08,427
+Üçüncü dereceden bir kare matris.
+
+160
+00:17:09,008 --> 00:17:15,107
+Bu matrise karşılık gelen öz değerleri ve karakteristik denklemi diye bir sorumuz var.
+
+161
+00:17:15,667 --> 00:17:18,427
+Hemen şu determinanti oluşturuyoruz.
+
+162
+00:17:18,687 --> 00:17:21,988
+A eksi lambda I determinantını oluşturuyoruz.
+
+163
+00:17:22,488 --> 00:17:23,467
+A matrisi burada.
+
+164
+00:17:24,548 --> 00:17:26,288
+A'dan neyi çıkartacağız?
+
+165
+00:17:27,167 --> 00:17:28,288
+Lambda I'ya.
+
+166
+00:17:28,887 --> 00:17:29,807
+Lambda I nedir?
+
+167
+00:17:29,807 --> 00:17:32,667
+Birim matrisi lambda ile çarpacaksınız.
+
+168
+00:17:34,107 --> 00:17:37,587
+Yani burada lambda I nedir artık?
+
+169
+00:17:38,607 --> 00:17:42,427
+Lambda 0 0 0 lambda 0.
+
+170
+00:17:45,367 --> 00:17:49,347
+Evet A'dan bunu çıkartırsanız şu determinantı bulursunuz.
+
+171
+00:17:50,067 --> 00:17:51,748
+Bu determinantı açmak istiyoruz.
+
+172
+00:17:52,327 --> 00:17:54,708
+Determinant özelliklerini kullanabilirsiniz.
+
+173
+00:17:54,708 --> 00:18:04,147
+Mesela şurada 2 eksi şu birinci satırdan dolayı 2 eksi lambda parantezini alırsınız.
+
+174
+00:18:04,147 --> 00:18:11,187
+Velhasılık bunu açtığınız zaman sonunda şöyle bir denklem elde edersiniz arkadaşlar.
+
+175
+00:18:11,927 --> 00:18:16,567
+Bize lambda değerlerini sordukları için buradan lambdayı bulacağız.
+
+176
+00:18:16,567 --> 00:18:26,147
+Bu eşitlik ya 2 eksi lambda eşit 0 iken ya da lambda kare e artı 5 lambda artı 9 eşit 0 iken sağlanır.
+
+177
+00:18:26,208 --> 00:18:30,708
+Dolayısıyla şu birinciden lambda 3'ü 2 olarak buluruz.
+
+178
+00:18:30,887 --> 00:18:34,167
+Şuradan da lambda 1 ile lambda 2'yi şu şekilde bulabiliriz.
+
+179
+00:18:34,167 --> 00:18:40,947
+Bunlar verilen A matrisinin öz değerleri ya da karakteristik değerleridir.
+
+180
+00:18:42,147 --> 00:18:50,188
+Buna göre buna göre A matrisinin karakteristik denklemine dersek işte şu eşit 0 şu denklem.
+
+181
+00:18:50,187 --> 00:18:51,127
+Şu denklem.
+
+182
+00:18:51,508 --> 00:19:08,548
+Bunu düzenlediğimiz zaman bunu düzenlediğimiz zaman gördüğünüz gibi gördüğünüz gibi tabii bunu lambda küpün pozitif olmasını istiyorsak eksi 1 ile çarparız iki tarafa.
+
+183
+00:19:08,548 --> 00:19:22,827
+ne olur lambda küp artı 3 lambda kare eksi lambda eksi 18 eşit 0 şeklinde de ifade edebiliriz.
+
+184
+00:19:23,539 --> 00:19:27,359
+Karakteristik denklem de budur arkadaşlar.
+
+185
+00:19:36,819 --> 00:19:37,339
+Evet.
+
+186
+00:19:45,460 --> 00:19:49,460
+Şimdi de bir A matrisinin...
+
+187
+00:19:57,491 --> 00:20:04,652
+Verildiği zaman bu A madrize karşılık gelen öz değerler, öz vektörler ne demek?
+
+188
+00:20:05,392 --> 00:20:06,672
+Onlar üzerinde duralım.
+
+189
+00:20:07,211 --> 00:20:09,031
+Yine bir A kare madrisimiz var.
+
+190
+00:20:10,711 --> 00:20:14,091
+Lambda da A'nın bir öz değeri olsun.
+
+191
+00:20:14,091 --> 00:20:18,251
+Biraz önceki gibi öz değeri bulduğumuzu düşünelim.
+
+192
+00:20:18,251 --> 00:20:30,751
+Şu denklemi sağlayan, şimdi bulduğumuz öz değeri bu lambda yerine yazıyoruz.
+
+193
+00:20:32,612 --> 00:20:35,351
+Mesela biraz önce kaç tane öz değer bulmuştuk örneğimizde?
+
+194
+00:20:36,351 --> 00:20:39,251
+Üç tane öz değer vardı.
+
+195
+00:20:40,291 --> 00:20:44,771
+İşte onlardan birini getirip burada yerine yazıyoruz.
+
+196
+00:20:44,771 --> 00:20:49,771
+İşte bu AX eşit lambda bir diyelim o yazdığımız öz değerde.
+
+197
+00:20:50,471 --> 00:21:04,511
+Lambda bir X denklemini sağlayan X vektörüne, şuradaki X vektörüne lambda öz değerine karşılık gelen öz vektör ya da karakteristik vektör diyoruz.
+
+198
+00:21:05,771 --> 00:21:07,091
+Tamam mı arkadaşlar?
+
+199
+00:21:08,311 --> 00:21:11,991
+Şimdi bunu örnekle görelim.
+
+200
+00:21:11,991 --> 00:21:14,112
+İşte bir A maddesi verdik.
+
+201
+00:21:14,771 --> 00:21:20,231
+Bunun öz değerlerini ve bunlara karşılık gelen öz vektörleri bulun diye bir sorumuz var.
+
+202
+00:21:21,071 --> 00:21:24,932
+Karakteristik denklemini yazarsak şunu oluşturacağız.
+
+203
+00:21:25,751 --> 00:21:30,051
+Buradan işte karakteristik denklem bu.
+
+204
+00:21:30,731 --> 00:21:34,211
+Bunu çözerseniz arkadaşlar iki tane öz değer bulursunuz.
+
+205
+00:21:34,331 --> 00:21:37,652
+Bakın lambda bir bu, lambda iki bu.
+
+206
+00:21:37,652 --> 00:21:42,531
+Şimdi her birine karşılık bir öz vektör var.
+
+207
+00:21:42,531 --> 00:21:46,692
+Ya da karakteristik var her bir lambda değerine karşılık.
+
+208
+00:21:47,271 --> 00:21:52,591
+Lambda bir eksi üç için öz vektörü bulacak olursak,
+
+209
+00:21:52,591 --> 00:21:58,031
+buradan A eksi lambda I,
+
+210
+00:21:58,031 --> 00:22:00,091
+lambda I,
+
+211
+00:22:00,091 --> 00:22:00,692
+tabii
+
+212
+00:22:00,692 --> 00:22:01,192
+bir şey.
+
+213
+00:22:01,192 --> 00:22:23,751
+Evet.
+
+214
+00:22:09,268 --> 00:22:20,827
+Biz biraz önce tanımımıza bunu sağlayan X vektörü, lambda'yı yerine yazarak bunu sağlayan X vektörüne biz lambda bir değerine karşılık gelen öz vektör demiştik.
+
+215
+00:22:20,827 --> 00:22:26,367
+Tabi buradan şuna da geçiş yapabiliriz artık şu denkleme değil mi?
+
+216
+00:22:27,067 --> 00:22:29,087
+Buradan şu denkleme geçiş yapabiliriz.
+
+217
+00:22:29,668 --> 00:22:36,307
+Burada gerekli olan şu kas sayılar bunun bu neticede bir denklem sistemi oluşturacak.
+
+218
+00:22:36,307 --> 00:22:45,307
+Bu denklem sisteminin kas sayılar maddesinin de o da lambda a eksi lambda bir ı yazacak olursak budur.
+
+219
+00:22:46,307 --> 00:22:57,208
+Hemen şurada lambda değerine yazarak, eksi üç yazarak bulabilirsiniz.
+
+220
+00:22:57,208 --> 00:23:07,208
+Tabi burada lambda yerine şurada eksi var, eksi üç yazarsanız hemen ne olur?
+
+221
+00:23:07,208 --> 00:23:15,208
+Altı olur, iki olur, üç olur ve eksi iki artı üç olacak bir olur. Bunu buluruz.
+
+222
+00:23:15,208 --> 00:23:24,208
+X vektörümüz de bu. X bir, X bir, iki. Sonra şu denklemden şunu yazarım.
+
+223
+00:23:24,208 --> 00:23:28,208
+Benim amacım burada X'i bulmak. Tamam mı?
+
+224
+00:23:28,208 --> 00:23:35,807
+Yani X vektörü de X bir, X iki koordinatlarına bağlı tabi ki. X bir, X iki koordinatlarını bulacağım.
+
+225
+00:23:35,807 --> 00:23:42,408
+Buradan elde ettiğim lineer denklem sistemini çözersem bir keyfi değişkene bağlı sonsuz çocuğum var.
+
+226
+00:23:43,728 --> 00:23:48,548
+Burada mesela lambda biri bir seçerek, lambda iki, eksi üç olunur.
+
+227
+00:23:49,107 --> 00:23:55,528
+Dolayısıyla, dolayısıyla lambda bir, eksi üç özlerine karşılık gelen öz vektör bu olur.
+
+228
+00:23:55,528 --> 00:23:56,468
+Bu olur.
+
+229
+00:23:56,468 --> 00:24:01,788
+Aslında burada şunu da yazabiliriz. Şurada.
+
+230
+00:24:05,067 --> 00:24:13,168
+Tabi biz bir tane öz vektörü aldık. Bu lambda şey X bire bir alarak, X iki böyle bularak bulduk.
+
+231
+00:24:15,448 --> 00:24:19,228
+Değişik değerler alırsak yine vektörler buluruz.
+
+232
+00:24:19,228 --> 00:24:21,387
+Ama bunların hepsi şu kümeden olacak.
+
+233
+00:24:21,548 --> 00:24:28,448
+Mesela bunun çözüm uzayı, çözüm uzayı dersek şöyle olacak arkadaşlar.
+
+234
+00:24:31,228 --> 00:24:34,827
+X bir, X iki olacak ya.
+
+235
+00:24:35,567 --> 00:24:36,628
+Şuraya X bir diyelim.
+
+236
+00:24:38,668 --> 00:24:40,628
+Şurası da eksi üç X bir oldu.
+
+237
+00:24:40,628 --> 00:24:48,807
+Öyle ki X bir eleman real sayı.
+
+238
+00:24:50,587 --> 00:24:53,827
+Tabi X bire değerler verdikçe bulursunuz.
+
+239
+00:24:53,948 --> 00:25:02,648
+Dolayısıyla, dolayısıyla lambda bir, eksi üçe karşılık gelen, gelen öz vektörler hep bu kümenin elemanıdır.
+
+240
+00:25:03,847 --> 00:25:04,768
+Bu kümenin elemanıdır.
+
+241
+00:25:05,708 --> 00:25:08,528
+Bir tanesi bu.
+
+242
+00:25:08,528 --> 00:25:15,627
+Bu kümenin elemanıdır ama şöyle dersek doğru olmaz.
+
+243
+00:25:16,028 --> 00:25:22,708
+Lambda bir, eksi üç değerine karşılık sonsuz tane öz vektör karşılık gelir dersek olmaz.
+
+244
+00:25:23,907 --> 00:25:25,067
+Hani birbirine bağlıdır.
+
+245
+00:25:25,188 --> 00:25:29,168
+Yani bunlar, bunlar bu şeyler hep birbirine bağlıdır.
+
+246
+00:25:29,268 --> 00:25:31,327
+Hatta şöyle de yazabiliriz bakımını.
+
+247
+00:25:32,907 --> 00:25:34,268
+Bu vektörü.
+
+248
+00:25:34,268 --> 00:25:41,367
+Şöyle lambda bir parantezinde bir, eksi üç olarak yazarız.
+
+249
+00:25:42,208 --> 00:25:42,668
+Tamam mı?
+
+250
+00:25:42,668 --> 00:25:51,768
+Dolayısıyla lambda bir'e değer verdikçe hep bulursunuz ama bunlar, bunlar tamamen birbirinden ayrı değillerdir.
+
+251
+00:25:52,948 --> 00:25:53,128
+Değil mi?
+
+252
+00:25:53,208 --> 00:25:54,807
+Birbirinin katıdırlar.
+
+253
+00:25:55,248 --> 00:25:55,887
+Katıdırlar.
+
+254
+00:25:57,387 --> 00:25:58,468
+Öyle düşünmemiz lazım.
+
+255
+00:25:59,528 --> 00:26:03,148
+Yani bazen bize tek bir tanesini sorarlar.
+
+256
+00:26:03,248 --> 00:26:04,548
+Böyle söyleriz.
+
+257
+00:26:05,548 --> 00:26:19,648
+Bir tanesini soruyor.
+
+258
+00:26:05,076 --> 00:26:12,935
+Ya da şunu da sorabilirler. Lambda 1, eksi 3 özdeğerine karşılık gelen özvektör uzayı deniyor buna da arkadaşlar.
+
+259
+00:26:14,336 --> 00:26:22,655
+Yani bu neticede bir alt vektör uzayıdır, R karenin. Buna özvektör uzayı da denir.
+
+260
+00:26:23,596 --> 00:26:32,115
+İşte o özvektör uzayından aldığımız bir eleman, mesela bu, lambda 1, eksi 3 özdeğerine karşılık gelen özvektör olarak yazılabilir.
+
+261
+00:26:35,076 --> 00:26:41,875
+Tabii burada, burada mesela teste bu, x1 olmayabilir de başka olabilirdi.
+
+262
+00:26:42,395 --> 00:26:45,596
+Bakacaksınız o verilenler şu şekilde yazılabiliyor mu arkadaşlar?
+
+263
+00:26:46,996 --> 00:26:50,956
+Yani, 1, eksi 3'ün bir katı mı? Ona bakmak lazım.
+
+264
+00:26:51,996 --> 00:27:00,316
+Hani biz burada taktık, x1'e 1 vererek hemen bunu bulduk ya, cevap şıkları arasında o olmayabilir.
+
+265
+00:27:00,316 --> 00:27:01,316
+ne olabilir?
+
+266
+00:27:01,316 --> 00:27:01,976
+Ne olabilir?
+
+267
+00:27:01,976 --> 00:27:05,596
+2, eksi 6 olabilir.
+
+268
+00:27:05,596 --> 00:27:06,435
+Değil mi?
+
+269
+00:27:06,435 --> 00:27:10,456
+İşte orada şu devreye giriyor.
+
+270
+00:27:10,456 --> 00:27:11,456
+Buna uygun mu?
+
+271
+00:27:12,456 --> 00:27:14,236
+Buna uygunsa tamam.
+
+272
+00:27:14,635 --> 00:27:15,435
+Onu işareteceğiz.
+
+273
+00:27:15,516 --> 00:27:16,195
+Burası önemli.
+
+274
+00:27:17,635 --> 00:27:22,195
+Şimdi biz iki tane özdeğer bulmuştuk.
+
+275
+00:27:22,516 --> 00:27:25,276
+Diğer özdeğere karşılık gelen özvektörü de bulalım.
+
+276
+00:27:25,276 --> 00:27:55,256
+işte lambda 2,
+
+277
+00:27:55,276 --> 00:27:55,776
+bir dakika.
+
+278
+00:27:55,776 --> 00:27:58,256
+Evet.
+
+279
+00:28:14,324 --> 00:28:16,784
+Şöyle bakın, x2 yazıyorum.
+
+280
+00:28:18,464 --> 00:28:21,443
+2, 1.
+
+281
+00:28:28,788 --> 00:28:45,528
+Şimdi, bu nedir? 2x2 ve x2. İşte bunu böyle yazıyorum. Buna uygun bir vektör seçiyoruz. Mesela x2'ye 1 yazarak şunu buluyoruz. Bir tanesi budur.
+
+282
+00:28:46,748 --> 00:28:57,708
+Lambda 2 eşit 4 özlerine karşılık gelen özvektör, bunu alabilirsiniz. Bunun yerine, bunun yerine şu özellikte olan istediğiniz vektörleri alabilirsiniz.
+
+283
+00:29:03,124 --> 00:29:23,183
+Evet, bir başka sorumuz şu şekilde. Bir tane A matrisimiz var, bakın, böyle. Bu matrisin özdeğerlerini ve bunlara karşılık gelen özvektörleri bulunuyoruz. Burada yine aynı karakteristik denklemi yazdığımız zaman, biraz öncekilere farklı bir durum karşımıza çıkıyor.
+
+284
+00:29:23,183 --> 00:29:43,183
+Bu denklem sistemini, bu en son elde ettiğimiz denklemi pardon, denklemi çözdüğümüz zaman, bunun kökleri real değil. Böyle karmaşık. Olsun. Karmaşık olduğu zaman da yine biz özdeğerlerini ve bunlara karşılık gelen özvektörleri bulabiliriz.
+
+285
+00:29:43,183 --> 00:29:50,183
+Şimdi lambda bir özvektörleri bulabiliriz.
+
+286
+00:29:50,183 --> 00:30:09,923
+Şimdi lambda bir özvektörleri bulmak istiyorsak, yine bunu yazacağız. Lambda bir yerine bir artı iki i yazacağız. Sonra bunu oluşturuyoruz. İlk ve x vektörümüz de bu. Sonra bir homojen denklem elde ediyoruz. Bu çarptığımız zaman. Bunu çözdüğümüz zaman, yine
+
+287
+00:30:09,923 --> 00:30:18,864
+x bir diğerine x bir diğerine x bir diğerine x bir birbirine bağlı sonsuz çözüm durumu var.
+
+288
+00:30:18,923 --> 00:30:33,524
+Buna bakarak, burada mesela lambda ikiye bir yazarak, lambda biri de eksiği bularak, lambda bir, bir artı ikiyi özdeğerine karşılık gelen özvektörü şu şekilde alabilirsiniz.
+
+289
+00:30:34,923 --> 00:30:35,723
+Tamam mı arkadaşlar?
+
+290
+00:30:35,723 --> 00:30:44,723
+Burada tabii. Burada tabii yine uzaydan da bahsedebiliriz. Bunun çözüm uzayı veya özvektör uzayı.
+
+291
+00:30:44,723 --> 00:30:51,824
+Lambda bir'e karşılık gelen özvektör uzayı. Mesela onu da yazmak istersek nasıl yazacağız?
+
+292
+00:30:52,723 --> 00:30:54,324
+Şöyle yazacağız.
+
+293
+00:31:01,203 --> 00:31:03,303
+Şurada x2 olacak.
+
+294
+00:31:05,403 --> 00:31:06,803
+Eksi i.
+
+295
+00:31:14,900 --> 00:31:15,380
+İkseyki.
+
+296
+00:31:27,124 --> 00:31:34,663
+Tabi burada, lambda 2'yi de, kompleks sayı olarak alabiliriz.
+
+297
+00:31:35,223 --> 00:31:41,663
+Şimdi şunu biraz daha düzenlersek, şöyle yazabiliriz.
+
+298
+00:31:44,764 --> 00:31:54,824
+Eksi, iyi, eksi, iyi dışarı çıkar tamam da, veya şöyle yapalım.
+
+299
+00:32:01,299 --> 00:32:04,319
+x2'yi dışarı alırsam, şöyle olur.
+
+300
+00:32:10,387 --> 00:32:11,207
+Öyle de olur.
+
+301
+00:32:14,227 --> 00:32:14,627
+Şimdi,
+
+302
+00:32:15,167 --> 00:32:20,247
+geçen haftaki konularımızda da şey yaparsak,
+
+303
+00:32:21,647 --> 00:32:23,627
+bu soruda veya önceki soruda,
+
+304
+00:32:24,447 --> 00:32:24,667
+hep,
+
+305
+00:32:26,768 --> 00:32:28,788
+mesela şu uzayı yazmak istersek,
+
+306
+00:32:30,507 --> 00:32:31,307
+şu olacak değil mi?
+
+307
+00:32:32,747 --> 00:32:34,028
+2, 1 olacak.
+
+308
+00:32:34,347 --> 00:32:35,147
+Bu vektörün,
+
+309
+00:32:35,147 --> 00:32:36,627
+bu vektörün,
+
+310
+00:32:37,167 --> 00:32:38,087
+gerdiği uzay,
+
+311
+00:32:38,087 --> 00:32:39,827
+2, 1 vektörünün,
+
+312
+00:32:39,887 --> 00:32:41,327
+gerdiği uzay olacak bu uzay.
+
+313
+00:32:41,867 --> 00:32:42,087
+Değil mi?
+
+314
+00:32:43,687 --> 00:32:45,487
+Aynı şekilde burada da,
+
+315
+00:32:46,407 --> 00:32:46,727
+şunun,
+
+316
+00:32:47,227 --> 00:32:49,367
+şunun gerdiği uzay.
+
+317
+00:32:49,967 --> 00:32:50,967
+Bunun her elemanı,
+
+318
+00:32:51,227 --> 00:32:51,807
+her elemanı,
+
+319
+00:32:51,887 --> 00:32:53,087
+mesela şu elemanı,
+
+320
+00:32:53,907 --> 00:32:54,687
+x1'e,
+
+321
+00:32:54,807 --> 00:32:55,687
+şey,
+
+322
+00:32:55,847 --> 00:32:56,347
+x2'ye,
+
+323
+00:32:56,347 --> 00:32:57,647
+1 alarak elde ettiğimiz,
+
+324
+00:32:58,647 --> 00:33:00,627
+şu,
+
+325
+00:33:02,247 --> 00:33:04,747
+lambda 1 özlerine karşılık gelen özvektör olacak.
+
+326
+00:33:05,567 --> 00:33:05,927
+Mesela,
+
+327
+00:33:05,927 --> 00:33:08,528
+x2'ye,
+
+328
+00:33:08,528 --> 00:33:10,028
+2'ye alabilirsiniz.
+
+329
+00:33:11,207 --> 00:33:12,247
+Benzer şekilde,
+
+330
+00:33:12,247 --> 00:33:12,667
+diğer,
+
+331
+00:33:12,667 --> 00:33:13,467
+öz,
+
+332
+00:33:15,467 --> 00:33:16,548
+değer'e karşılık gelen,
+
+333
+00:33:16,747 --> 00:33:17,927
+öz,
+
+334
+00:33:18,667 --> 00:33:19,667
+vektör de bulunabilir.
+
+335
+00:33:19,947 --> 00:33:20,627
+Aynı şekilde.
+
+336
+00:33:21,707 --> 00:33:22,087
+Burada da,
+
+337
+00:33:22,167 --> 00:33:23,347
+en sona geldiğimiz zaman,
+
+338
+00:33:24,007 --> 00:33:24,987
+aradaki ilişki,
+
+339
+00:33:25,427 --> 00:33:25,947
+şu olacak,
+
+340
+00:33:26,707 --> 00:33:27,007
+ilişki,
+
+341
+00:33:27,087 --> 00:33:27,667
+şu olacak.
+
+342
+00:33:28,327 --> 00:33:28,747
+Dolayısıyla,
+
+343
+00:33:28,807 --> 00:33:30,307
+bir tanesini yazmak istiyorsak,
+
+344
+00:33:30,407 --> 00:33:31,827
+lambda 2'ye 1 vererek,
+
+345
+00:33:32,387 --> 00:33:33,147
+lambda i'yi,
+
+346
+00:33:33,147 --> 00:33:35,147
+lambda 2'ye,
+
+347
+00:33:35,147 --> 00:33:35,887
+iyi bularak,
+
+348
+00:33:36,687 --> 00:33:40,647
+lambda 2 özlerine karşı gelen özvektör,
+
+349
+00:33:40,887 --> 00:33:42,028
+bunu buluruz.
+
+350
+00:33:42,028 --> 00:33:51,288
+bu,
+
+351
+00:33:50,163 --> 00:34:15,503
+Evet. Bu biraz önce bahsettiğimiz karakteristik denklemle başka işler de yapabiliyoruz arkadaşlar. Onu da şu teoremle söyleyeceğiz. Bu teoremin özel bir ismi de var. Kiley Hamilton teoremi. Bu teorem şunu söylüyor. Her matris kendisinin karakteristik denklemini sağlar.
+
+352
+00:34:28,148 --> 00:34:44,948
+Yani A kare matriz ve A'nın karakteristik denklemi şöyle bulduysak eninci dereceden bir eşitlik, solda eninci dereceden bir polinom var, eşit sıfır.
+
+353
+00:34:44,948 --> 00:34:59,048
+Bu ise A'nın karakteristik denklemi, pardon, A'nın karakteristik denklemi buysa, Kiley Hamilton diyor ki buradaki lambda yerine A yazdığımız zaman bu denklem sağlanır diyor.
+
+354
+00:34:59,148 --> 00:35:08,728
+Yani burada bakın lambda yerine A'yı koyduğumuz zaman bu eşitlik elde ediliyor, bu vardır diyor Kiley Hamilton teoremi.
+
+355
+00:35:09,827 --> 00:35:14,588
+Bu Kiley Hamilton teoremini şuralarda yer alabiliriz.
+
+356
+00:35:14,588 --> 00:35:23,608
+Mesela bir maddesin tersini bulabiliriz, bir de bir maddesin kuvvetlerini hesaplayabiliriz.
+
+357
+00:35:23,908 --> 00:35:25,968
+Kiley Hamilton teoremini kullanarak.
+
+358
+00:35:26,648 --> 00:35:27,807
+Bunları nasıl yapacağız?
+
+359
+00:35:27,908 --> 00:35:32,628
+Mesela bir maddesin tersini Kiley Hamilton teoremini göre nasıl bulacağız?
+
+360
+00:35:32,768 --> 00:35:34,108
+Şimdi onun üzerinde duralım.
+
+361
+00:35:36,248 --> 00:35:40,708
+Tabii bir A kare matrizinin tersinden bahsedebilmemiz için her şeyden önce ne olacak?
+
+362
+00:35:40,708 --> 00:35:45,108
+Bir kere A matrizi, kare matrizi olacak.
+
+363
+00:35:45,367 --> 00:35:47,768
+Sonra determinantı da sıfırdan farklı olacak.
+
+364
+00:35:48,867 --> 00:35:55,228
+Determinantı farklıysa, sıfırdan farklıysa şu AN, polinomdaki AN kat sayısı,
+
+365
+00:35:56,028 --> 00:35:57,948
+eksi bir üzeri en determinant A'ydi.
+
+366
+00:35:58,228 --> 00:35:59,708
+Bu sıfırdan farklı olur.
+
+367
+00:35:59,708 --> 00:36:03,928
+Yani şuradaki AN sıfırdan farklı olur.
+
+368
+00:36:06,367 --> 00:36:12,528
+Dolayısıyla biz bu eşitlikten, bu eşitlikten,
+
+369
+00:36:12,528 --> 00:36:20,048
+burada da var zaten, bu eşitlikten, şunu yazabiliriz.
+
+370
+00:36:20,387 --> 00:36:23,248
+AN sıfırdan da şunu yazarız önce.
+
+371
+00:36:24,208 --> 00:36:32,188
+AN, I, N'i diğer tarafa veya AN, I, N'i kalsın, diğerlerini diğer tarafa götürürüz.
+
+372
+00:36:32,188 --> 00:36:40,268
+AN de sıfırdan farklı olduğu için, şuradaki AN, bu sıfırdan farklı olduğu için bu katsayı,
+
+373
+00:36:40,908 --> 00:36:43,968
+eşitliğin iki yanını, eşitliğin iki yanını,
+
+374
+00:36:45,408 --> 00:36:51,568
+bir bölü AN, A üzeri eksi bir ile çarpabiliriz.
+
+375
+00:36:52,708 --> 00:37:01,108
+AN sıfırdan farklı olduğu için, şu ifade mevcuttur.
+
+376
+00:37:01,108 --> 00:37:06,008
+AN, küçük AN sıfırdan farklı olduğu için, bu ifade mevcuttur.
+
+377
+00:37:06,548 --> 00:37:08,608
+A üzeri eksi bir de var tabii ki.
+
+378
+00:37:09,288 --> 00:37:13,788
+Eşitliğin iki yanını çarptığımız zaman, sol tarafta A üzeri eksi bir kalır arkadaşlar.
+
+379
+00:37:15,928 --> 00:37:23,508
+Sağ tarafta da bakın, şu A gidecek, eksi bir bölü AN'ye gelecek,
+
+380
+00:37:23,948 --> 00:37:25,327
+sonra geriye kalan parantez.
+
+381
+00:37:25,327 --> 00:37:32,327
+İşte bu şekilde biz A maddesinin tersini bulabiliyoruz.
+
+382
+00:37:36,275 --> 00:37:48,315
+Örnek 6.1'de bir A maddesi var. Onun tersini Kaylee Hamilton teoremiyle bulalım. 6.1 örneğimiz neredeydi?
+
+383
+00:37:53,844 --> 00:37:57,124
+Evet. Şu A matrisi.
+
+384
+00:37:59,463 --> 00:38:06,483
+Bunu, bunun tersini bulalım. 1, 0, 5.
+
+385
+00:38:07,563 --> 00:38:12,844
+Tabi burada karakteristik denklem şuydu.
+
+386
+00:38:15,023 --> 00:38:22,264
+Kayday Hamilton'un teoremine göre A matrisi verilen A matrisi bu karakteristik denklemi sağlayacak.
+
+387
+00:38:29,268 --> 00:38:34,467
+karakteristik denklem buydu. Hani lambda yerine
+
+388
+00:38:34,467 --> 00:38:38,387
+x'li yazmışız burada. Fark etmez. Yani x'in yerine
+
+389
+00:38:38,387 --> 00:38:40,907
+A matrisi yazacağımız için.
+
+390
+00:38:42,728 --> 00:38:45,887
+Kayda Hamilton teoremine göre bu denklemde
+
+391
+00:38:45,887 --> 00:38:49,847
+A matrisini yazdığımız zaman eşitlik bozulmaz.
+
+392
+00:38:50,487 --> 00:38:54,248
+Sonra ne yapıyoruz? Her iki tarafı
+
+393
+00:38:54,248 --> 00:38:57,288
+A üzeri eksi birle çarpıyoruz. Bakın.
+
+394
+00:38:59,268 --> 00:39:03,108
+Tabi buradan buraya geçerken x yerine A yazdığımız zaman
+
+395
+00:39:03,108 --> 00:39:06,887
+şu 18'in yanında ne var? 18'in yanında da
+
+396
+00:39:06,887 --> 00:39:08,447
+I N olacak.
+
+397
+00:39:10,288 --> 00:39:13,088
+Her iki tarafı A üzeri eksi birle çarparsam
+
+398
+00:39:13,088 --> 00:39:17,048
+şuradan A'ların birileri gider. Şurada I yerine
+
+399
+00:39:17,048 --> 00:39:19,807
+orada da A üzeri eksi birle çarparsam bunu elde edelim.
+
+400
+00:39:21,447 --> 00:39:23,807
+Burada şunun dışındakileri
+
+401
+00:39:23,807 --> 00:39:25,327
+diğer tarafa götürelim arkadaşlar.
+
+402
+00:39:25,327 --> 00:39:28,168
+sonra da
+
+403
+00:39:28,168 --> 00:39:31,608
+18'de eşitliğin iki tarafını
+
+404
+00:39:31,608 --> 00:39:33,788
+bölersek şunu elde ederiz.
+
+405
+00:39:37,228 --> 00:39:37,548
+Burada
+
+406
+00:39:37,548 --> 00:39:39,887
+burada A kareyi
+
+407
+00:39:39,887 --> 00:39:41,867
+işte A şu
+
+408
+00:39:41,867 --> 00:39:43,007
+A şu
+
+409
+00:39:43,007 --> 00:39:45,628
+A kareyi alıp buraya yazıyoruz.
+
+410
+00:39:45,628 --> 00:39:46,947
+tamam mı?
+
+411
+00:39:47,608 --> 00:39:48,788
+Sonra artı 3A
+
+412
+00:39:48,788 --> 00:39:50,168
+sonra eksi I
+
+413
+00:39:50,168 --> 00:39:51,307
+eksi
+
+414
+00:39:51,307 --> 00:39:54,628
+sonra buradaki işlemi yapıyoruz kısacası.
+
+415
+00:39:54,807 --> 00:39:56,608
+İşlemi yaptığımız zaman bunu vuruyoruz.
+
+416
+00:39:58,048 --> 00:39:58,967
+A üzeri eksi biri
+
+417
+00:39:58,967 --> 00:40:01,608
+bu şekilde bulabiliriz.
+
+418
+00:40:02,188 --> 00:40:03,048
+A üzeri eksi biri
+
+419
+00:40:03,048 --> 00:40:04,327
+bu şekilde bulabiliriz.
+
+420
+00:40:04,327 --> 00:40:07,608
+tabi daha önceden de hatırlattığım gibi size
+
+421
+00:40:07,608 --> 00:40:08,907
+eee bu
+
+422
+00:40:08,907 --> 00:40:09,807
+matrisinin
+
+423
+00:40:09,807 --> 00:40:11,248
+tersinde her zaman
+
+424
+00:40:11,248 --> 00:40:13,268
+sağlama yapmakta yarar var.
+
+425
+00:40:13,268 --> 00:40:14,768
+eee
+
+426
+00:40:14,768 --> 00:40:17,407
+A madrisiyle bulduğumuz madrisi çarptığımız zaman
+
+427
+00:40:17,407 --> 00:40:18,987
+birim madrisi elde etmemiz lazım.
+
+428
+00:40:19,108 --> 00:40:19,987
+Bu sağlamayı
+
+429
+00:40:19,987 --> 00:40:21,108
+eee
+
+430
+00:40:21,108 --> 00:40:22,108
+yapmamız gerekir.
+
+431
+00:40:22,108 --> 00:40:24,748
+Biraz önce dedik yine
+
+432
+00:40:24,748 --> 00:40:26,867
+Kayday Hamilton teoremiden
+
+433
+00:40:26,867 --> 00:40:27,728
+eee
+
+434
+00:40:27,728 --> 00:40:29,048
+bir madrisin kuvvetini de
+
+435
+00:40:29,048 --> 00:40:30,327
+bulabiliriz dedik.
+
+436
+00:40:30,327 --> 00:40:31,327
+eee
+
+437
+00:40:31,327 --> 00:40:33,427
+örneğin
+
+438
+00:40:33,427 --> 00:40:35,048
+eee
+
+439
+00:40:35,048 --> 00:40:35,268
+bu
+
+440
+00:40:35,268 --> 00:40:37,347
+çalıştığımız madrisi
+
+441
+00:40:37,347 --> 00:40:37,668
+o da
+
+442
+00:40:37,668 --> 00:40:38,487
+şurada
+
+443
+00:40:38,487 --> 00:40:41,048
+şu madris değil mi?
+
+444
+00:40:42,128 --> 00:40:43,688
+Bu madris de A madrisi.
+
+445
+00:40:44,688 --> 00:40:46,128
+Bu madrisin
+
+446
+00:40:46,128 --> 00:40:47,068
+eee
+
+447
+00:40:47,068 --> 00:40:48,327
+beşinci kuvvetini bulalım.
+
+448
+00:40:48,788 --> 00:40:50,528
+Kayday Hamilton teoremini kullanarak
+
+449
+00:40:50,528 --> 00:40:52,708
+karakteristik denklem buydu.
+
+450
+00:40:53,588 --> 00:40:55,708
+A madrisi bu karakteristik denklemi
+
+451
+00:40:55,708 --> 00:40:56,588
+sağlar.
+
+452
+00:40:58,148 --> 00:40:58,648
+A
+
+453
+00:40:58,648 --> 00:40:59,748
+yazıyoruz.
+
+454
+00:40:59,927 --> 00:41:00,947
+X yerine A yazıyoruz.
+
+455
+00:41:01,068 --> 00:41:02,528
+A küpü yalnız başına bırakıyoruz.
+
+456
+00:41:02,628 --> 00:41:02,987
+Bu sefer
+
+457
+00:41:02,987 --> 00:41:04,188
+eee
+
+458
+00:41:04,188 --> 00:41:06,007
+A'nın kuvvetini bulacağımız için
+
+459
+00:41:06,007 --> 00:41:07,347
+eee
+
+460
+00:41:07,347 --> 00:41:07,987
+burada
+
+461
+00:41:07,987 --> 00:41:09,108
+bu denklemde
+
+462
+00:41:09,108 --> 00:41:10,487
+X yerine A yazarak
+
+463
+00:41:10,487 --> 00:41:11,708
+A küplü terim var.
+
+464
+00:41:12,387 --> 00:41:14,648
+A küpü yalnız başına bıraktığımız zaman
+
+465
+00:41:14,648 --> 00:41:16,467
+eee
+
+466
+00:41:16,467 --> 00:41:17,507
+eksi üç A kare
+
+467
+00:41:17,507 --> 00:41:21,728
+eee
+
+468
+00:41:21,728 --> 00:41:22,548
+evet burada bir
+
+469
+00:41:22,548 --> 00:41:24,688
+sanki
+
+470
+00:41:24,688 --> 00:41:26,268
+hatamız var gibi şu
+
+471
+00:41:26,268 --> 00:41:27,108
+denklem
+
+472
+00:41:27,108 --> 00:41:29,688
+evet
+
+473
+00:41:29,688 --> 00:41:54,688
+o
+
+474
+00:41:33,780 --> 00:41:38,640
+A küpü
+
+475
+00:41:38,640 --> 00:41:40,780
+diğer tarafta
+
+476
+00:41:40,780 --> 00:41:43,780
+A küpü kendi başına götürüyoruz.
+
+477
+00:41:44,800 --> 00:41:45,880
+Önde eksi olduğu için
+
+478
+00:41:45,880 --> 00:41:48,060
+eşitliğin sağ tarafına geçirirsek
+
+479
+00:41:48,060 --> 00:41:50,320
+A küpü. Bunu elde ederiz.
+
+480
+00:41:50,700 --> 00:41:51,780
+Şimdi bakın ne yapıyoruz?
+
+481
+00:41:52,780 --> 00:41:53,780
+Her iki yanı
+
+482
+00:41:54,480 --> 00:41:55,760
+A ile çarptığımız zaman
+
+483
+00:41:55,760 --> 00:41:56,760
+A dördü buluruz.
+
+484
+00:41:58,220 --> 00:41:58,980
+Solda.
+
+485
+00:41:59,740 --> 00:42:00,200
+Sağda
+
+486
+00:42:00,200 --> 00:42:02,260
+bunu buluruz.
+
+487
+00:42:03,060 --> 00:42:03,480
+Tamam mı?
+
+488
+00:42:04,600 --> 00:42:07,800
+A küp yerine de şunu yazıyoruz arkadaşlar.
+
+489
+00:42:08,019 --> 00:42:09,100
+Bakın A küp buna eşit.
+
+490
+00:42:10,560 --> 00:42:10,980
+Şurada
+
+491
+00:42:10,980 --> 00:42:13,900
+A küp yerine bunu yazıyoruz.
+
+492
+00:42:14,460 --> 00:42:14,920
+Yazdık.
+
+493
+00:42:16,200 --> 00:42:17,560
+Sonra bunu düzenliyoruz.
+
+494
+00:42:17,800 --> 00:42:19,100
+Artık düzenlediğimiz zaman
+
+495
+00:42:19,100 --> 00:42:22,120
+A kareye bağlı bir ifade karşımıza çıkacak.
+
+496
+00:42:22,760 --> 00:42:23,519
+Şimdi ne yapacağız?
+
+497
+00:42:23,900 --> 00:42:26,260
+Yine A ile çarpacağız eşitliğin iki tarafını.
+
+498
+00:42:28,300 --> 00:42:29,900
+Solda A üzeri 5'i bulacağız.
+
+499
+00:42:30,860 --> 00:42:31,840
+Sağda da bunu.
+
+500
+00:42:31,840 --> 00:42:35,640
+Sonra A küpü biraz önceki gibi yerine yazacağız.
+
+501
+00:42:36,640 --> 00:42:37,160
+Sonra düzenliyoruz.
+
+502
+00:42:37,160 --> 00:42:39,080
+Düzenlediğimiz zaman
+
+503
+00:42:39,080 --> 00:42:40,580
+bunu buluruz.
+
+504
+00:42:41,220 --> 00:42:41,760
+Bunu buluruz.
+
+505
+00:42:41,760 --> 00:42:43,560
+O zaman ne yapacağız?
+
+506
+00:42:43,560 --> 00:42:45,760
+A kareyi hesaplayacağız.
+
+507
+00:42:46,360 --> 00:42:47,600
+Getirip yerine yazacağız.
+
+508
+00:42:49,020 --> 00:42:49,620
+A kare bu.
+
+509
+00:42:50,380 --> 00:42:51,460
+Getirip yerine yazdık.
+
+510
+00:42:53,300 --> 00:42:53,960
+Sonra A
+
+511
+00:42:53,960 --> 00:42:57,540
+44 A maddesini yazdık.
+
+512
+00:42:57,540 --> 00:42:59,580
+Sonra artı 180
+
+513
+00:42:59,580 --> 00:43:01,560
+birim maddesi.
+
+514
+00:43:02,380 --> 00:43:03,720
+Buradaki işlemleri
+
+515
+00:43:03,720 --> 00:43:05,280
+dikkatlice tabii ki
+
+516
+00:43:05,280 --> 00:43:07,060
+yaptığımız zaman
+
+517
+00:43:07,060 --> 00:43:10,660
+A üzeri 5 olarak
+
+518
+00:43:10,660 --> 00:43:14,940
+bunu buluruz.
+
+519
+00:43:14,940 --> 00:43:29,580
+Bu.
+
+520
+00:43:19,603 --> 00:43:38,263
+Tabii, biz A üzeri 5'i nasıl da buluyoruz? Zaten bu soruda A kareyi bulacağız. Ondan sonra A'yı, A kareyi A kareyle çarparsınız. Değil mi? A kareyi A kareyle çarparsınız.
+
+521
+00:43:38,263 --> 00:43:48,163
+A üzeri 4'ü bulursunuz. Sonra da bu A üzeri 4'ü de A ile çarparsanız A üzeri 5'i de bulabilirsiniz. Böyle yapabilirsiniz.
+
+522
+00:43:49,323 --> 00:43:55,163
+Ama Kiley Hamilton teoremini kullanarak yapmak istiyorsak, bu gösterdiğimiz gibi yapılmalı.
+
+523
+00:43:55,903 --> 00:44:04,443
+Ama test, mesela testte A üzeri 5 ile ilgili bir şey varsa, en kolayınıza hangisi geliyorsa, onunla yapabilirsiniz.
+
+524
+00:44:08,596 --> 00:44:13,416
+Peki, şimdi bu konumuzla ilgili örnekler yapalım.
+
+525
+00:44:16,936 --> 00:44:21,635
+Bazı soruları, sonra siz bakın.
+
+526
+00:44:21,835 --> 00:44:26,115
+Mesela bu birinci soru, daha önce yaptığımızda benziyor.
+
+527
+00:44:27,235 --> 00:44:31,315
+Zor değil, ikinci mertebeden bir maddis var.
+
+528
+00:44:31,396 --> 00:44:34,135
+Bunun öz değerini, öz vektörlerini bulununuz diyor.
+
+529
+00:44:34,856 --> 00:44:37,735
+Tabii siz daha sonra buna uğraşabilirsiniz.
+
+530
+00:44:38,596 --> 00:44:41,356
+Burada da zaten göreceksiniz.
+
+531
+00:44:41,356 --> 00:44:43,155
+Buna da bakarsınız.
+
+532
+00:44:44,016 --> 00:44:44,876
+Bunu şöyle geçelim.
+
+533
+00:44:46,556 --> 00:44:52,536
+İkinci sorumuz, maddisin öz değerlerini, öz vektörlerini bulun.
+
+534
+00:44:53,516 --> 00:44:57,275
+Bakalım, ilginç olan yerlerde biraz fazla durabiliriz.
+
+535
+00:44:57,815 --> 00:45:01,215
+Yine karakteristik denklemi yazacağız.
+
+536
+00:45:01,815 --> 00:45:03,655
+Karakteristik denklemde,
+
+537
+00:45:03,655 --> 00:45:09,376
+A eksi lambda I'nın determinantı eşit sıfırdan elde edilecek.
+
+538
+00:45:10,016 --> 00:45:11,976
+İşte elde ettiğimiz zaman şu bulur.
+
+539
+00:45:12,215 --> 00:45:13,456
+Buradan da ne buluyoruz?
+
+540
+00:45:13,496 --> 00:45:16,496
+Bakın, üç tane lambda değerini buluyoruz.
+
+541
+00:45:16,496 --> 00:45:23,076
+Sonra bu lambda değerine karşılık gelen öz vektörleri soruyorlar bile.
+
+542
+00:45:23,315 --> 00:45:25,715
+Lambda 1 eşit 4 için.
+
+543
+00:45:26,576 --> 00:45:28,556
+A eksi 4 I değil mi?
+
+544
+00:45:29,076 --> 00:45:33,856
+A eksi lambda I yerine A eksi şimdi 4 I matrisini buluyorum.
+
+545
+00:45:33,856 --> 00:45:35,896
+Sonra vektörümüz bu.
+
+546
+00:45:37,456 --> 00:45:43,275
+Şu eşitlikten homojen lineer denklem sistemi çıkıyor karşımıza.
+
+547
+00:45:43,336 --> 00:45:45,155
+Bunu çözeceğiz.
+
+548
+00:45:45,775 --> 00:45:47,255
+Bakın çözdüğümüz zaman bu olur.
+
+549
+00:45:48,755 --> 00:45:55,956
+Ve burada, burada lambda 1 eşit sıfır, lambda 2 de lambda 3 olur.
+
+550
+00:45:56,115 --> 00:45:58,556
+Lambda 3'ü keyfi değişken seçebilirsiniz bir tane.
+
+551
+00:45:58,556 --> 00:46:03,456
+veya lambda 2'yi de seçebilirsiniz.
+
+552
+00:46:03,775 --> 00:46:05,135
+Lambda 2'yi de seçebilirsiniz.
+
+553
+00:46:05,255 --> 00:46:05,815
+Fark etmez.
+
+554
+00:46:06,416 --> 00:46:08,476
+Burada lambda 2'yi seçmişiz.
+
+555
+00:46:08,536 --> 00:46:10,996
+Lambda 2'ye değer verdiğimiz zaman lambda 3 bu olur.
+
+556
+00:46:15,715 --> 00:46:17,295
+Bu da lambda 1 olacak.
+
+557
+00:46:18,115 --> 00:46:20,635
+Lambda 1 de sıfır olunur.
+
+558
+00:46:21,635 --> 00:46:24,815
+Dolayısıyla şu öz vektörü buluruz.
+
+559
+00:46:24,815 --> 00:46:31,516
+Burada lambda 2 eşit lambda 3.
+
+560
+00:46:32,675 --> 00:46:36,855
+Şunlar birbirine eşit öz değerler.
+
+561
+00:46:39,695 --> 00:46:43,036
+Ona karşılık gelen öz vektörü bulalım şimdi.
+
+562
+00:46:44,936 --> 00:46:47,735
+Yine denklemimizi oluşturduk.
+
+563
+00:46:47,735 --> 00:46:55,456
+Buradan şu denklemi daha sonrasında da bu homojen niner denklem sistemi karşımıza çıktı.
+
+564
+00:46:56,315 --> 00:47:03,815
+Bunu çözdüğümüz zaman, çözdüğümüz zaman, lambda 2'yi keyfi değişken seçebilirsiniz.
+
+565
+00:47:04,896 --> 00:47:07,815
+Dolayısıyla lambda 2'ye bir değene vererek lambda 3 bu olur.
+
+566
+00:47:07,815 --> 00:47:13,215
+lambda 1 bu olur.
+
+567
+00:47:13,396 --> 00:47:15,155
+Lambda 3 de sıfır olarak bulunur.
+
+568
+00:47:16,096 --> 00:47:22,315
+Dolayısıyla lambda 2 eşit lambda 3 eksi 2 öz değerine karşılık gelen öz vektör.
+
+569
+00:47:23,456 --> 00:47:25,536
+Bunu alacağız.
+
+570
+00:47:25,536 --> 00:47:30,675
+Burada bir ilginçlik var.
+
+571
+00:47:30,755 --> 00:47:31,036
+O da ne?
+
+572
+00:47:31,396 --> 00:47:33,996
+Birbirine eşit 2 öz değer var.
+
+573
+00:47:34,295 --> 00:47:39,016
+Burada lambda 2 ile lambda 3 birbirine eşit öz değerler.
+
+574
+00:47:39,635 --> 00:47:43,855
+Bunlara karşılık bir öz vektör bulmuş olduk.
+
+575
+00:47:43,855 --> 00:47:55,295
+Ancak bazı durumlarda birbirine eşit 2 öz değere karşılık lineer bağımsız 2 öz vektörde bulunabilir diyoruz.
+
+576
+00:47:56,115 --> 00:48:07,115
+Yani birbirine eşit lambda 2 eşit lambda 3 olduğu zaman bazen bu birbirine eşit 2 öz değere karşılık gelen
+
+577
+00:48:07,552 --> 00:48:10,751
+Dineğer bağımsız iki öz vektör de bulunabilir.
+
+578
+00:48:11,312 --> 00:48:13,972
+Şimdi bununla ilgili bir örnek.
+
+579
+00:48:14,912 --> 00:48:15,791
+A maddesi bu.
+
+580
+00:48:16,372 --> 00:48:18,432
+Bunun öz değerlerini, öz vektörlerini bulalım.
+
+581
+00:48:19,251 --> 00:48:26,972
+Burada bakın bulduğumuz zaman en son şurası birbirine eşit iki öz değer var.
+
+582
+00:48:27,332 --> 00:48:28,992
+Bir de lambda 3 var.
+
+583
+00:48:31,032 --> 00:48:36,812
+Biz lambda 1 eşit, lambda 2 eşit 3 öz değerine karşılık gelen öz vektörü bulalım.
+
+584
+00:48:36,812 --> 00:48:39,132
+Yine aynı yol takip ediliyor.
+
+585
+00:48:40,032 --> 00:48:41,332
+Bunu oluşturacağız.
+
+586
+00:48:43,632 --> 00:48:46,392
+Homojen linear denklem sistemini elde ettik.
+
+587
+00:48:47,271 --> 00:48:51,532
+Bunu çözdüğümüz zaman arkadaşlar şunu elde ediyoruz.
+
+588
+00:48:51,632 --> 00:48:52,892
+Bu da bize şunu verir.
+
+589
+00:48:54,112 --> 00:48:55,812
+Buradan bunu yazarız.
+
+590
+00:48:56,332 --> 00:48:57,132
+Bunu yazarız.
+
+591
+00:48:58,112 --> 00:49:00,572
+Dolayısıyla x vektörü şu olur.
+
+592
+00:49:02,251 --> 00:49:04,352
+Dolayısıyla bunu da şöyle yazarsınız.
+
+593
+00:49:04,352 --> 00:49:08,751
+Aslında bu bizim şeye de uygun.
+
+594
+00:49:09,132 --> 00:49:13,032
+Bakın mesela burada çözüm uzayı deseydik.
+
+595
+00:49:13,552 --> 00:49:15,672
+Nasıl olacaktı çözüm uzayı?
+
+596
+00:49:16,672 --> 00:49:19,352
+Şuraya mesela lambda 2
+
+597
+00:49:19,352 --> 00:49:22,632
+eksi 2
+
+598
+00:49:22,632 --> 00:49:24,291
+1
+
+599
+00:49:24,291 --> 00:49:25,132
+0
+
+600
+00:49:25,132 --> 00:49:28,132
+artı
+
+601
+00:49:28,132 --> 00:49:30,452
+x3
+
+602
+00:49:30,452 --> 00:49:33,612
+3
+
+603
+00:49:33,612 --> 00:49:34,672
+0
+
+604
+00:49:34,672 --> 00:49:35,432
+1
+
+605
+00:49:35,432 --> 00:49:39,291
+sonra işte
+
+606
+00:49:39,291 --> 00:49:42,472
+x2 x3
+
+607
+00:49:42,472 --> 00:49:44,172
+ne deriz?
+
+608
+00:49:44,632 --> 00:49:45,811
+Real sayı deriz.
+
+609
+00:49:45,812 --> 00:49:47,132
+Şimdi
+
+610
+00:49:47,132 --> 00:49:50,192
+burada
+
+611
+00:49:50,192 --> 00:49:51,672
+mesela bir
+
+612
+00:49:51,672 --> 00:49:56,072
+bu birbirine eşit öz değerlere karşılık.
+
+613
+00:49:56,632 --> 00:49:57,052
+Bir tane
+
+614
+00:49:57,052 --> 00:49:58,832
+değil de
+
+615
+00:49:58,832 --> 00:50:01,152
+iki tane vektör bulduk.
+
+616
+00:50:01,231 --> 00:50:03,152
+Ve bu iki vektör de linear bağımsızdır.
+
+617
+00:50:03,271 --> 00:50:03,512
+Bakın.
+
+618
+00:50:03,992 --> 00:50:07,012
+Linear bağımsız iki vektör olarak bunları buluyoruz.
+
+619
+00:50:07,012 --> 00:50:08,332
+Tabii burada yine
+
+620
+00:50:08,332 --> 00:50:12,731
+x2'ye x3'e sayı vererek.
+
+621
+00:50:13,852 --> 00:50:14,552
+Ama aslında
+
+622
+00:50:14,552 --> 00:50:15,372
+aslında
+
+623
+00:50:15,372 --> 00:50:16,912
+başka
+
+624
+00:50:16,912 --> 00:50:18,532
+değer veremez miyiz?
+
+625
+00:50:18,592 --> 00:50:19,592
+x2 ile x3'e
+
+626
+00:50:19,592 --> 00:50:20,512
+elbette veririz.
+
+627
+00:50:20,612 --> 00:50:21,392
+Her seferinde
+
+628
+00:50:21,392 --> 00:50:23,251
+yine iki tane vektör bulacağız
+
+629
+00:50:23,251 --> 00:50:24,152
+linear bağımsız.
+
+630
+00:50:25,112 --> 00:50:26,512
+Bakın bu örneğimizde de
+
+631
+00:50:26,512 --> 00:50:28,652
+birbirine eşit iki öz değer vardı.
+
+632
+00:50:29,652 --> 00:50:29,852
+Ve
+
+633
+00:50:29,852 --> 00:50:31,452
+buna karşılık iki tane
+
+634
+00:50:31,452 --> 00:50:34,352
+linear bağımsız öz vektör bulduk.
+
+635
+00:50:34,352 --> 00:50:37,512
+ve onlar da yine bu çözüm uzayı.
+
+636
+00:50:39,012 --> 00:50:39,612
+Buna biz
+
+637
+00:50:39,612 --> 00:50:40,972
+daha mücreden de söylemiştim.
+
+638
+00:50:41,792 --> 00:50:42,012
+Alt
+
+639
+00:50:42,012 --> 00:50:45,711
+öz uzay diyoruz.
+
+640
+00:50:46,132 --> 00:50:46,692
+Öz uzay.
+
+641
+00:50:48,312 --> 00:50:49,112
+Lambda
+
+642
+00:50:49,112 --> 00:50:50,472
+2
+
+643
+00:50:50,472 --> 00:50:51,012
+lambda
+
+644
+00:50:51,012 --> 00:50:51,392
+3
+
+645
+00:50:51,392 --> 00:50:53,912
+eşit 3 öz değerine karşılık gelen
+
+646
+00:50:53,912 --> 00:50:54,632
+çözüm
+
+647
+00:50:54,632 --> 00:50:56,231
+uzayı
+
+648
+00:50:56,231 --> 00:50:57,172
+öz uzay
+
+649
+00:50:57,172 --> 00:50:58,251
+diyoruz.
+
+650
+00:51:00,392 --> 00:51:01,152
+Ve
+
+651
+00:51:01,152 --> 00:51:03,072
+buradaki iki tane vektör de hep
+
+652
+00:51:03,072 --> 00:51:04,452
+linear bağımsızdır arkadaşlar.
+
+653
+00:51:05,271 --> 00:51:06,251
+Linear bağımsızdır.
+
+654
+00:51:11,572 --> 00:51:12,372
+Peki.
+
+655
+00:51:13,372 --> 00:51:14,012
+Diğer
+
+656
+00:51:14,012 --> 00:51:16,792
+öz değerimiz de
+
+657
+00:51:16,792 --> 00:51:17,872
+eksi 5'te.
+
+658
+00:51:17,872 --> 00:51:19,532
+aynı şekilde
+
+659
+00:51:19,532 --> 00:51:19,832
+ona
+
+660
+00:51:19,832 --> 00:51:20,751
+ona da
+
+661
+00:51:20,751 --> 00:51:24,032
+ondan da elde ettiğimiz bir
+
+662
+00:51:24,032 --> 00:51:26,251
+öz vektör olacak.
+
+663
+00:51:26,412 --> 00:51:26,572
+O da
+
+664
+00:51:26,572 --> 00:51:27,072
+bu.
+
+665
+00:51:27,072 --> 00:51:27,211
+Bu
+
+666
+00:51:27,211 --> 00:51:30,211
+bir
+
+667
+00:51:31,956 --> 00:51:51,195
+Peki, pekala bir A matrisimiz var. Özdeğerini, özvektörlerini hesaplayınız. Şöyle gidelim. İlginç bir durum var mı? Biraz önceki gibi yine katlı kök hali var. Tamam mı? Birinci köke göre normal yoldan bulabilirsiniz.
+
+668
+00:51:51,195 --> 00:52:09,376
+özvektörü. Şuna bakalım. Acaba iki tane mi vektör çıkacak? Bir tane mi? Bunu düzenlediğimiz zaman bu olur. Ve buradan denklem sistemini yazınca
+
+669
+00:52:13,907 --> 00:52:21,847
+Ve buradan yine benzer, biraz önceki de benzer şekilde iki tane vektör bulabiliyoruz.
+
+670
+00:52:21,967 --> 00:52:25,967
+Değer vererek x2'ye, x3'ye değer vererek iki tane bunu buluyoruz.
+
+671
+00:52:26,027 --> 00:52:29,327
+Ama unutmayın deminki gibi çözüm uzayını yazmakta yarar var.
+
+672
+00:52:29,327 --> 00:52:34,607
+Mesela bu olmaz da cevap şıklarının arasında ne olur?
+
+673
+00:52:35,027 --> 00:52:35,487
+Şu olur.
+
+674
+00:52:37,067 --> 00:52:39,748
+Eksi 2, 2, 0.
+
+675
+00:52:39,748 --> 00:52:44,547
+Şuna da ne verelim? 3 verelim.
+
+676
+00:52:45,447 --> 00:52:47,847
+Eksi 3, 0, 3.
+
+677
+00:52:49,668 --> 00:52:50,967
+Mesela denir ki ne?
+
+678
+00:52:50,967 --> 00:52:58,768
+Lambda 2, lambda 3 öz değerine karşılık, o da eşit, x2 öz değerine karşılık gelen öz vektörler nelerdir?
+
+679
+00:53:00,228 --> 00:53:01,047
+Bu olmayabilir.
+
+680
+00:53:02,228 --> 00:53:02,768
+Bu olabilir.
+
+681
+00:53:03,007 --> 00:53:05,807
+İşte onu hep çözüm uzayına uyuyor mu ona bakmak lazım.
+
+682
+00:53:21,331 --> 00:53:27,652
+Peki, bir başka sorumuz var. Burada, bu birazcık değişik, şurada bir K var.
+
+683
+00:53:31,112 --> 00:53:37,632
+A şıkkında bu sorunun A matrisinin özdeğeri, lambda 1 eşit 1 olduğuna göre K değerini bulunuz diyor.
+
+684
+00:53:38,711 --> 00:53:44,592
+Bulunan bu K değerine göre, lambda eşit 1 özdeğerine karşı gelen özvektörü bulunuz.
+
+685
+00:53:44,592 --> 00:53:52,612
+Lambda 1 eşit 1 özdeğer olduğu için, şunu yazabiliriz.
+
+686
+00:53:52,692 --> 00:53:58,092
+Burada, lambda 1 yerine 1 yazarsınız.
+
+687
+00:53:58,092 --> 00:53:59,951
+1 yazarsınız.
+
+688
+00:54:03,860 --> 00:54:12,400
+Sonra bunu düzenlersiniz arkadaşlar. Bu K'ya bağlı bir ifade çıkar. K12 olarak bulunur.
+
+689
+00:54:13,340 --> 00:54:26,360
+K12 olarak bulunur. Sonra lambda bir özdeğerine karşılık gelen K'nın bu değeri için, işte yazlık K'nın değerini özvektörü bulun diyorlar.
+
+690
+00:54:26,940 --> 00:54:29,400
+Aynı şekilde öncekiler gibi yapılır bu soru.
+
+691
+00:54:33,523 --> 00:54:42,183
+Evet, bu birazcık değişik gibi gözüküyor. A ikinci mertebeden kare matris. İzi verilmiş bu matrisin, bir de determinantı verilmiş bu matrisin.
+
+692
+00:54:43,324 --> 00:54:53,344
+A matrisinin öz değerlerini bulunuyor. A matrisi şu anda bilinmiyor. İkinci mertebeden olduğunu biliyoruz ama kendisini bilmiyoruz. Bu şekilde yazalım.
+
+693
+00:54:53,344 --> 00:55:03,763
+İzi verilmiş. İzi neydi? Şu elemanların toplamıydı. İşte bu 8 olarak verilmiş. Bir de determinant A verilmiş.
+
+694
+00:55:16,596 --> 00:55:45,755
+Determinant A'da şu, 12 olarak verilmiş. Şimdi A matrisine karşılık gelen özdeğeri bulalım. Şu, eşit 0 olacak. Burada yazarsak, A-Lambda, I'yı bu olur. İlge tapta. Bunu düzenlediğimiz zaman, determinant açtığımız zaman bu olur. Eşit 0. Sonra bunu elde ederiz.
+
+695
+00:55:46,596 --> 00:56:05,576
+Şimdi verilenleri yazacağız. Mesela A11 artı A22 8. Bunun yerine ne yazılır arkadaşlar? Arkadaşlar 8 yazılır. Sonra şunun yerine A11 A22 eksi A12. Şunları bir araya getirdiğimizi düşünün. Onun yerine 12 yazacağız.
+
+696
+00:56:09,556 --> 00:56:20,816
+İşte yazdık. Sonra bu denklemi elde ederiz. Bu denklemi de çözersek, iki tane kökü var bu denklemin. Lambda bir eşit iki, lambda iki eşit altı olur.
+
+697
+00:56:26,452 --> 00:56:38,272
+Tabii bunu şöyle yaptık. A'yı bilmediğimiz için ikinci mertebeden bir matris alarak, yazarak bulduk.
+
+698
+00:56:39,132 --> 00:56:48,672
+Tabii burada izi ve determinantı kullandık. Onları kullanarak karakteristik denklemi şu şekilde de elde edebilirdik arkadaşlar.
+
+699
+00:56:51,052 --> 00:56:54,672
+Şu karakteristik denklemi elde ettik ya, bunu şöyle de elde edebilirdik.
+
+700
+00:56:56,452 --> 00:57:00,912
+Karakteristik poliyonum buydu. İlk konunun girişinde söylemiştim.
+
+701
+00:57:01,692 --> 00:57:07,532
+Şu A1 kat sayısı, eksi izi eşitti arkadaşlar. Şu A neydi? Şuna eşitti.
+
+702
+00:57:08,652 --> 00:57:13,792
+Direkt bambunları da yazarak, değil mi? İz, izi verilmişti bunun zaten.
+
+703
+00:57:15,372 --> 00:57:19,712
+Sonra da iz nasıl verilmişti? 8 olarak, değil mi?
+
+704
+00:57:21,152 --> 00:57:22,112
+Determiant da 12.
+
+705
+00:57:22,112 --> 00:57:29,232
+O zaman, o zaman, o zaman, o zaman, o zaman, o zaman, şuraya eksi 8 yazacaksınız.
+
+706
+00:57:30,732 --> 00:57:34,912
+Determiantın yerine de, A ne'nin yerine de, tabii burada, ne kaç?
+
+707
+00:57:35,072 --> 00:57:35,572
+N 3.
+
+708
+00:57:36,932 --> 00:57:37,672
+Pardon, N 2.
+
+709
+00:57:38,452 --> 00:57:38,852
+N 2.
+
+710
+00:57:39,852 --> 00:57:42,232
+A 2'nin yerine, A 1'in yerine,
+
+711
+00:57:43,232 --> 00:57:45,752
+eksi 8, A 2'nin yerine de 12 yazarak,
+
+712
+00:57:45,752 --> 00:57:49,672
+hemen elde edebilirdik karakteristik denklemi.
+
+713
+00:57:49,672 --> 00:58:19,652
+A 2'nin yerine, A 2'nin yerine,
+
+714
+00:57:58,708 --> 00:58:11,307
+Tabii burada, bunların da çözümü, çözümü, lambda 1, 2, lambda 2, 6 olarak bulunur.
+
+715
+00:58:12,788 --> 00:58:17,887
+Evet, şu soru da değişik bir soru, ona da bakalım.
+
+716
+00:58:17,887 --> 00:58:22,367
+A matrisi en inci mertebeden bir kare matris.
+
+717
+00:58:23,907 --> 00:58:27,008
+A'nın bir tekil matris olması için.
+
+718
+00:58:27,468 --> 00:58:31,088
+Tekil matris dediğimiz tersi olmayan matris.
+
+719
+00:58:32,628 --> 00:58:33,088
+Tamam mı?
+
+720
+00:58:35,228 --> 00:58:38,008
+Bazen singüler matris de denir.
+
+721
+00:58:41,556 --> 00:58:45,936
+bazen
+
+722
+00:58:45,936 --> 00:58:48,416
+tabi tersi olan matrize de
+
+723
+00:58:48,416 --> 00:58:50,496
+regüler matriz denir.
+
+724
+00:58:50,615 --> 00:58:51,476
+Tersi olmayanlara
+
+725
+00:58:51,476 --> 00:58:54,215
+singüler matriz denir.
+
+726
+00:58:55,255 --> 00:58:56,635
+Tabi tersi olmayınca da
+
+727
+00:58:56,635 --> 00:58:58,576
+determinantın ne olacak o matrizin?
+
+728
+00:58:58,576 --> 00:58:59,795
+Sıfıra eşit olacak.
+
+729
+00:59:01,956 --> 00:59:02,755
+Demek ki
+
+730
+00:59:02,755 --> 00:59:03,996
+A'nın determinantının
+
+731
+00:59:03,996 --> 00:59:06,516
+sıfıra eşit olması öyle de söyleyebiliriz.
+
+732
+00:59:06,615 --> 00:59:08,916
+Gerek ve yeter koşul A'nın bir özdeğerinin
+
+733
+00:59:08,916 --> 00:59:10,655
+lambda eşit sıfır olmasıdır.
+
+734
+00:59:10,655 --> 00:59:11,615
+gösteriniz diyor.
+
+735
+00:59:13,695 --> 00:59:15,195
+Bunu gösterelim şimdi.
+
+736
+00:59:16,755 --> 00:59:18,456
+En ince mertebeden bir A kare
+
+737
+00:59:18,456 --> 00:59:20,456
+matrizin karakteristik polinomu
+
+738
+00:59:20,456 --> 00:59:21,856
+bu.
+
+739
+00:59:23,556 --> 00:59:24,076
+Burada
+
+740
+00:59:24,076 --> 00:59:25,715
+A'n şurası
+
+741
+00:59:26,376 --> 00:59:27,675
+eksi bir üzeri
+
+742
+00:59:27,675 --> 00:59:29,036
+yani determinant A'ydi.
+
+743
+00:59:29,416 --> 00:59:31,476
+A tekildi ise determinant A sıfır
+
+744
+00:59:31,476 --> 00:59:33,336
+olacağından A'n ne olur arkadaşlar?
+
+745
+00:59:34,316 --> 00:59:35,896
+Şu karakteristik polinomda
+
+746
+00:59:35,896 --> 00:59:37,675
+ya da karakteristik
+
+747
+00:59:37,675 --> 00:59:38,755
+denklemde
+
+748
+00:59:38,755 --> 00:59:40,295
+karakteristik denklemde
+
+749
+00:59:40,295 --> 00:59:40,795
+A'n
+
+750
+00:59:40,795 --> 00:59:41,856
+sıfır olur.
+
+751
+00:59:42,016 --> 00:59:43,056
+A'n sıfır olunca
+
+752
+00:59:43,056 --> 00:59:44,215
+ııı
+
+753
+00:59:44,215 --> 00:59:44,655
+şurada
+
+754
+00:59:44,655 --> 00:59:46,115
+artı sıfır
+
+755
+00:59:46,115 --> 00:59:46,615
+olacak.
+
+756
+00:59:46,615 --> 00:59:48,556
+ııı
+
+757
+00:59:48,556 --> 00:59:49,456
+o zaman
+
+758
+00:59:49,456 --> 00:59:51,316
+sol tarafta hep
+
+759
+00:59:51,316 --> 00:59:52,735
+lambdalı terimler var.
+
+760
+00:59:52,856 --> 00:59:54,056
+Lambda parantezini alırsak
+
+761
+00:59:54,056 --> 00:59:54,816
+sol tarafı
+
+762
+00:59:54,816 --> 00:59:55,816
+bu olur.
+
+763
+00:59:56,036 --> 00:59:57,476
+Buradan da kökleri bulurken
+
+764
+00:59:57,476 --> 00:59:58,956
+ııı
+
+765
+00:59:58,956 --> 01:00:00,416
+lambda değerlerinden biri
+
+766
+01:00:00,416 --> 01:00:01,316
+lambda bir
+
+767
+01:00:01,316 --> 01:00:01,856
+değil mi?
+
+768
+01:00:02,056 --> 01:00:02,215
+Şu
+
+769
+01:00:02,215 --> 01:00:03,715
+eşit sıfırdan
+
+770
+01:00:03,715 --> 01:00:05,076
+bulabiliriz.
+
+771
+01:00:05,076 --> 01:00:06,456
+ııı
+
+772
+01:00:06,456 --> 01:00:08,255
+burada gerek ve yeter koşul
+
+773
+01:00:08,255 --> 01:00:09,036
+dediğine göre
+
+774
+01:00:09,036 --> 01:00:10,215
+diğer tarafı da
+
+775
+01:00:10,215 --> 01:00:11,376
+göstermemiz lazım.
+
+776
+01:00:12,695 --> 01:00:14,175
+Diğer tarafı gösterirken de
+
+777
+01:00:14,175 --> 01:00:15,195
+lambda eşit sıfır
+
+778
+01:00:15,195 --> 01:00:15,775
+alarak
+
+779
+01:00:15,775 --> 01:00:16,916
+A'nın
+
+780
+01:00:16,916 --> 01:00:18,115
+determinantının sıfır
+
+781
+01:00:18,115 --> 01:00:18,715
+olduğunu yani
+
+782
+01:00:18,715 --> 01:00:19,675
+A'nın tekil olduğunu
+
+783
+01:00:19,675 --> 01:00:20,295
+göreceğiz.
+
+784
+01:00:20,295 --> 01:00:21,615
+ııı
+
+785
+01:00:21,615 --> 01:00:24,036
+lambda eşit sıfır
+
+786
+01:00:24,036 --> 01:00:25,275
+A madresi için
+
+787
+01:00:25,275 --> 01:00:26,436
+bir özdeğer ise
+
+788
+01:00:26,436 --> 01:00:28,135
+buradan
+
+789
+01:00:28,135 --> 01:00:29,615
+ııı
+
+790
+01:00:29,615 --> 01:00:31,416
+şu denklemde
+
+791
+01:00:31,416 --> 01:00:32,755
+karakteristik denklemde
+
+792
+01:00:32,755 --> 01:00:33,655
+yerine yazarsak
+
+793
+01:00:33,655 --> 01:00:34,376
+lambda yerine
+
+794
+01:00:34,376 --> 01:00:35,896
+determinant A
+
+795
+01:00:35,896 --> 01:00:37,135
+eşit sıfır olur.
+
+796
+01:00:37,255 --> 01:00:38,195
+Yani A madresi
+
+797
+01:00:38,195 --> 01:00:39,215
+tekil madresi olur.
+
+798
+01:00:39,215 --> 01:00:41,215
+A'nın
+
+799
+01:00:41,215 --> 01:00:42,215
+ııı
+
+800
+01:00:42,215 --> 01:00:43,175
+A'nın
+
+801
+01:00:43,476 --> 01:00:49,175
+Evet, bu 8. sorunun benzerini yaptık. Siz sonra yaparsınız.
+
+802
+01:00:52,947 --> 01:00:55,687
+Evet, buna bakalım. Şu değişik bir soru.
+
+803
+01:00:57,547 --> 01:01:03,208
+Bir üçgen matrisin özdeğerlerinin matrisin köşegen elemanlarına eşit olduğunu gösteriniz.
+
+804
+01:01:04,208 --> 01:01:07,288
+İşte bir alt üçgen matris.
+
+805
+01:01:08,987 --> 01:01:16,167
+Buradan karakteristik denklemi yazarsak, bu olur.
+
+806
+01:01:16,847 --> 01:01:20,987
+Bu determinantı açacak olursanız da şunu elde edersiniz.
+
+807
+01:01:20,987 --> 01:01:23,587
+Bunu elde edersiniz.
+
+808
+01:01:24,728 --> 01:01:29,768
+Buradan da denklemi çözerseniz, sıfıra eşitleyerek.
+
+809
+01:01:44,500 --> 01:01:53,500
+Bunları tek tek sıfır eşit derseniz, a11-Lambda eşit sıfır.
+
+810
+01:02:02,547 --> 01:02:22,367
+Buradan da lambda değerlerini bulabiliriz. Lambda 1, A11 olur. Lambda 2, A22, Lambda N, A, N, N olur. Eğer üst üçgen matris alsaydık, yine benzer şekilde özdeğerlerin köşegen elemanlarına eşit olduğunu gösterebilirdik.
+
+811
+01:02:27,507 --> 01:02:48,147
+Pekala. Şimdi yine bir değişik bir sorumuz var. A, regüler matris. Yani tersi olan bir matrismiş A. Bir başka deyişle, determinantı sıfırdan farklı matris değil mi? Regüler olduğu için. Bunları biliyoruz. Lambda, A'nın sıfırdan farklı bir özdeğeri olsun.
+
+812
+01:02:54,739 --> 01:03:00,739
+1 bölü lambdanın, a üzeri eksi 1 matrisinin özdeğeri olduğunu gösteriniz.
+
+813
+01:03:05,139 --> 01:03:10,059
+Evet, bunu yapalım. Şimdi, lambda a'nın öz değeri ise, şunu yazabiliyoruz.
+
+814
+01:03:11,420 --> 01:03:23,440
+Buradan a üzeri eksi bir ile iki tarafı çarparsak, şimdi a regüler matris olduğu için tersi olan bir matris, çarptığımız zaman, şunu, bunu arkadaşlar,
+
+815
+01:03:26,139 --> 01:03:28,980
+buradan da şunu elde edebilirsiniz.
+
+816
+01:03:33,364 --> 01:03:37,164
+Sonra, lambda parantezinde böyle yazarız.
+
+817
+01:03:39,704 --> 01:03:43,304
+Lambda, a'nın sıfırdan farklı bir özdeğeri idi.
+
+818
+01:03:43,963 --> 01:03:48,864
+Sıfırdan farklı olduğu için, lambda bile bölersek iki tarafı bu olur.
+
+819
+01:03:49,624 --> 01:03:49,963
+Bu olur.
+
+820
+01:03:51,144 --> 01:03:53,644
+Buradan da, bakın şuradaki değer.
+
+821
+01:03:56,583 --> 01:03:57,543
+Şu değer.
+
+822
+01:03:57,543 --> 01:04:06,144
+Bir bölü lambda, a üzeri eksi birin özdeğeri elde edilir.
+
+823
+01:04:07,324 --> 01:04:13,124
+Daha doğrusu, bir bölü lambdanın, a üzeri eksi birin bir özdeğeri olduğu elde edilir.
+
+824
+01:04:16,003 --> 01:04:16,644
+Evet.
+
+825
+01:04:17,864 --> 01:04:19,384
+Şimdi bir başka sorumuz var.
+
+826
+01:04:20,503 --> 01:04:22,784
+A matrisi idem potent matris ise,
+
+827
+01:04:24,304 --> 01:04:26,503
+yani a kare a'ya eşit ise,
+
+828
+01:04:31,443 --> 01:04:38,043
+A'nın özdeğerlerinin sıfır veya bir olduğunu gösteriniz.
+
+829
+01:04:39,284 --> 01:04:44,543
+A matris, idone, patent matris ise karesi kendisine eşitlemektir.
+
+830
+01:04:49,563 --> 01:04:53,463
+Lambda'nın A'nın sıfırdan farklı bir özdeğeri olsun.
+
+831
+01:04:54,103 --> 01:04:57,324
+Biz şunu göstereceğiz. A'nın özdeğerleri ya sıfırdır ya da birdir.
+
+832
+01:04:57,324 --> 01:05:07,443
+Sıfır ise tamam. Sıfırdan farklı ise özdeğer, lambda sıfırdan farklı bir özdeğerse o zaman mutlaka bire eşit olması gerekir.
+
+833
+01:05:08,264 --> 01:05:09,583
+Bunu göstereceğiz.
+
+834
+01:05:10,244 --> 01:05:13,443
+Lambda A'nın sıfırdan farklı bir özdeğeri ise
+
+835
+01:05:13,443 --> 01:05:17,324
+şu eşitliğimizden
+
+836
+01:05:17,324 --> 01:05:22,824
+iki tarafı A ile çarparız.
+
+837
+01:05:22,824 --> 01:05:24,324
+Bunu buluruz.
+
+838
+01:05:24,324 --> 01:05:27,423
+sonra
+
+839
+01:05:27,423 --> 01:05:54,304
+lambda A'nın
+
+840
+01:05:45,811 --> 01:05:51,911
+A matrisi idem potent A kare A'ya eşit olduğu için A kare yerine A yazarısınız.
+
+841
+01:05:53,072 --> 01:05:54,451
+Sonra bu eşitlik bulunur.
+
+842
+01:05:55,391 --> 01:05:57,351
+Bu denklem sistemi elde edilir.
+
+843
+01:05:57,351 --> 01:06:09,271
+Bu sistemin sıfırdan farklı çözümünün olabilmesi için burada bir homojen lineer denklem sistemi var.
+
+844
+01:06:10,572 --> 01:06:12,632
+Kas sayılar matrisi de şurası bakın.
+
+845
+01:06:12,632 --> 01:06:17,391
+Bunun sıfırdan farklı çözümünün olması için ne olması lazım?
+
+846
+01:06:18,092 --> 01:06:22,871
+Kas sayılar matrisinin determinantı sıfıra eşit olması lazım homojen lineer denklem sisteminde.
+
+847
+01:06:22,871 --> 01:06:28,211
+Yani determinant A eksi lambda A sıfıra eşit olmalı arkadaşlar.
+
+848
+01:06:29,451 --> 01:06:32,092
+Bu determinantı zihninizde canlandırın.
+
+849
+01:06:33,351 --> 01:06:40,891
+Bir eksi lambdayı dışarı alabilirsiniz.
+
+850
+01:06:42,632 --> 01:06:44,751
+Bu eşit sıfır.
+
+851
+01:06:46,491 --> 01:06:50,411
+Buradan da buradan da bir eksi lambda.
+
+852
+01:06:51,351 --> 01:06:58,231
+Şimdi iki sayının bunlar determinant A da bir sayı.
+
+853
+01:06:58,572 --> 01:06:59,971
+Bir eksi lambda da bir sayı.
+
+854
+01:07:00,031 --> 01:07:01,152
+İki sayının çarpımı sıfır.
+
+855
+01:07:01,251 --> 01:07:07,911
+O zaman bir eksi lambda eşit sıfır ya da determinant A sıfır olması gerekir.
+
+856
+01:07:07,911 --> 01:07:09,551
+Tamam mı arkadaşlar?
+
+857
+01:07:11,152 --> 01:07:15,451
+Eğer bir eksi lambda sıfır ise lambda eşit bir bulunur.
+
+858
+01:07:15,991 --> 01:07:16,431
+Bir bulunur.
+
+859
+01:07:17,311 --> 01:07:29,951
+Eğer determinant A da sıfır ise biraz önce göstermiştik ya tekil matrisse de öz vektörü sıfırdır demiştik.
+
+860
+01:07:29,951 --> 01:07:39,351
+Oradan da determinant A'nın sıfır olması durumunda da lambda'nın sıfır olduğu sonucuna varız.
+
+861
+01:07:39,351 --> 01:07:53,011
+Yani idem potent matrisin öz değerleri ya sıfır oluyor ya da bir olur deriz.
+
+862
+01:07:56,788 --> 01:08:10,128
+Yine değişik bir soru. A matrisi, mil potent matris de A'nın özdeğerlerinin sadece sıfır olduğunu gösterir. Sıfırdan farklı özdeğeri olmayacağını göstereceğiz.
+
+863
+01:08:19,828 --> 01:08:29,248
+Peki, nil potent matrisler neydi? Bir kuvveti sıfıra eşitse, mesela K büyük sıfır için AK eşit sıfır olsun.
+
+864
+01:08:30,688 --> 01:08:39,788
+Nil potent matris olduğu için A matrisi. Lambda'da A'nın bir özdeğeri olsun. Lambda'nın biz sıfıra eşit olduğunu göstereceğiz.
+
+865
+01:08:40,868 --> 01:08:48,888
+Yine karakteristik denklemden bunu yazabiliriz. AX eşit lambda X.
+
+866
+01:08:49,828 --> 01:08:51,928
+Burada
+
+867
+01:08:51,928 --> 01:08:58,128
+Eşitliğin iki tarafını A üzeri K-1 ile çarpıyorum arkadaşlar.
+
+868
+01:08:58,988 --> 01:08:59,588
+Çarptım.
+
+869
+01:09:02,468 --> 01:09:02,868
+Şurada
+
+870
+01:09:02,868 --> 01:09:04,828
+Sağ tarafta
+
+871
+01:09:04,828 --> 01:09:09,928
+Pardon, sol tarafta
+
+872
+01:09:15,380 --> 01:09:37,260
+Şurada birleşme özelliğini uygularsak ne olur? Şurası a üzeri k eksi bir çarpı a, x olur. Şurası da a üzeri k'dır. O da sıfır olur. Sağ tarafta da şu vardı. Bunu da düzenlersek bu eşit sıfır olur.
+
+873
+01:09:48,916 --> 01:10:02,256
+Buradan, buradan, bu bir homojen lineer denklem sistemi. Bu sistemin sıfırdan farklı çözümün olabilmesi için kat sayılar matrisinin determinantı sıfır olmalı.
+
+874
+01:10:03,636 --> 01:10:12,716
+Buradan lambdayı dışarı alarak, lambda eşit sıfır veya a üzeri k-1'in determinantı sıfır olmalı deriz.
+
+875
+01:10:18,739 --> 01:10:31,659
+Eğer lambda sıfırdan farklıysa, daha önceki örneklerimizden determinant A da sıfırdan farklı.
+
+876
+01:10:36,239 --> 01:10:45,319
+Dolayısıyla, bu determinant A sıfırdan farklı olduğu için, bu da sıfırdan farklıdır.
+
+877
+01:10:45,319 --> 01:10:48,699
+Bunu yazmak istersek nasıl yazarız arkadaşlar?
+
+878
+01:10:49,019 --> 01:10:49,859
+Bu determinantı.
+
+879
+01:10:50,739 --> 01:10:53,739
+Determinant A çarpı determinant A.
+
+880
+01:10:54,840 --> 01:10:59,960
+Bunlar sıfırdan farklıysa, bu da sıfırdan farklıdır.
+
+881
+01:11:00,880 --> 01:11:06,139
+O halde, mil potent madrisinin özdeğeri sadece sıfırdır diyoruz.
+
+882
+01:11:16,115 --> 01:11:16,595
+Evet.
+
+883
+01:11:36,819 --> 01:11:41,659
+Peki, şimdi bir, şöyle bir sorumuz var, bunu siz düşünün birazcık.
+
+884
+01:11:42,979 --> 01:11:49,460
+A ile A'nın transpozesinin özdeğerlerinin aynı olduğunu gösteriniz. Sorumuz bu.
+
+885
+01:11:49,460 --> 01:12:02,199
+Bir A matrisi var, kare matris. Bu A matrisi ile A'nın transpozesinin özdeğerlerinin aynı olduğunu gösteriniz. Sorumuz bu.
+
+886
+01:13:47,764 --> 01:13:58,324
+Pekala. Lambda, lambda, A'nın özdeğeri olsun. O zaman şöyle yazabiliriz arkadaşlar.
+
+887
+01:14:03,572 --> 01:14:16,271
+A-Lamda-I matrisinin, şu matrisin, transpozesini aldığımız zaman, transpozenin özelliklerinden, bu şuna eşittir.
+
+888
+01:14:21,747 --> 01:14:26,667
+Burada iki tarafın determinantını aldığım zaman, şunu yazarım.
+
+889
+01:14:29,807 --> 01:14:32,487
+Transpozen determinantı kendisine eşit olduğu için.
+
+890
+01:14:42,131 --> 01:14:49,152
+Şunun yerine, şunun yerine, şuradaki eşit olanı yazıyorum bakın buraya.
+
+891
+01:14:54,068 --> 01:14:55,068
+Burası duruyor.
+
+892
+01:14:58,931 --> 01:15:02,351
+Dolayısıyla şu eşitliği elde etmişim.
+
+893
+01:15:03,791 --> 01:15:04,831
+Elde etmiş oldum.
+
+894
+01:15:05,291 --> 01:15:15,152
+Bu da bize, bakın, şu lambda, A'nın transpozesinin lambdasını şöyle buluyoruz.
+
+895
+01:15:15,511 --> 01:15:22,731
+Bu eşit sıfıra yazarak, A'nın özdeğerini de böyle buluyoruz.
+
+896
+01:15:22,731 --> 01:15:34,652
+A'nın transpozesinin özdeğerini şu birinciden eşit sıfır yazarak, A'nın özdeğerini de şu ikinciden sıfıra eşitleyerek buluyoruz.
+
+897
+01:15:34,711 --> 01:15:45,591
+Dolayısıyla, A'nın transpozesiyle A'nın, A maddesinin özdeğerleri aynıdır deriz.
+
+898
+01:15:45,591 --> 01:15:47,511
+Aynıdır deriz.
+
+899
+01:15:53,555 --> 01:16:05,115
+Peki, şu soruyu düşününüz. Siz benzerlerini yaptık. Kiley Hamilton teoremini kullanarak A üzeri 9'u hesaplayınız.
+
+900
+01:16:36,659 --> 01:16:51,099
+Önce karakteristik denklem bulunacak, değil mi? Karakteristik denklem bulunacak. Lambda A eksi lambda I eşit sıfırdan karakteristik denklemi buluyoruz. Karakteristik denklem bu.
+
+901
+01:16:51,099 --> 01:17:03,279
+Kayleigh Hamilton teoremi ne diyordu? A matrisi kendi karakteristik denklemini sağlar. Burada lambda yerine A matrisini yazabilirsiniz, bu sağlanır. İşte yazdık.
+
+902
+01:17:03,279 --> 01:17:18,939
+A küpü bulalım. A küp nedir? A kare çarpı A, 7A, A kare. Bunu A ile çarparsanız 7A kare olur.
+
+903
+01:17:23,891 --> 01:17:29,591
+Sonra a kare yerine 7a yazarsak, 7'nin karesi a olur.
+
+904
+01:17:30,551 --> 01:17:33,471
+a üzeri 4 eşittir.
+
+905
+01:17:34,631 --> 01:17:37,511
+Şurada eşitliğin iki tarafını a ile çarpıyorsunuz.
+
+906
+01:17:37,551 --> 01:17:37,992
+Şurada bakın.
+
+907
+01:17:39,271 --> 01:17:40,452
+7a küp olur.
+
+908
+01:17:40,692 --> 01:17:44,511
+Biraz önce a küpü değerinin 7a kare olduğunu bulduk.
+
+909
+01:17:44,612 --> 01:17:46,351
+Onu hemen şurada yazıyorum.
+
+910
+01:17:47,572 --> 01:17:48,331
+7'nin küpü a.
+
+911
+01:17:49,112 --> 01:17:52,412
+Sonra a üzeri 5 böyle olur.
+
+912
+01:17:52,412 --> 01:17:54,032
+Bu şekilde devam ederek
+
+913
+01:17:54,032 --> 01:17:59,072
+a üzeri 9'un
+
+914
+01:17:59,072 --> 01:18:03,471
+7 üzeri 8a
+
+915
+01:18:03,471 --> 01:18:06,072
+olduğunu, yani buna eşit olduğunu
+
+916
+01:18:06,072 --> 01:18:07,731
+bulabilirsiniz.
+
+917
+01:18:07,731 --> 01:18:08,731
+8a.
+
+918
+01:18:08,731 --> 01:18:09,431
+9a.
+
+919
+01:18:09,431 --> 01:18:10,532
+10.
+
+920
+01:18:10,532 --> 01:18:11,471
+11.
+
+921
+01:18:11,471 --> 01:18:18,431
+12.
+
+922
+01:18:15,028 --> 01:18:32,427
+Peki, bir benzer sorumuz da burada duruyor. Buna da siz sonra bakarsınız. Ben burada dersi bitirmek istiyorum arkadaşlar. Eğer bana sorunuz varsa buyurun sorun, söylemek istediğiniz bir husus varsa sizi dinlerim.
+
+923
+01:18:36,532 --> 01:18:38,452
+Galiba, buyurun.
+
+924
+01:18:39,132 --> 01:18:44,511
+Laf sözünüzü buldum hocam, özür dilerim de. Haftaya sınav oluyoruz, daha ders yok değil mi hocam, bitiyor.
+
+925
+01:18:45,192 --> 01:18:53,311
+Şimdi iki tane bu sınav gruptan mazeret sınavına girecek arkadaşlar var. Onların galiba cuma günüydü.
+
+926
+01:18:54,992 --> 01:18:56,672
+Sen finali söylüyorsun değil mi?
+
+927
+01:18:56,992 --> 01:18:57,511
+Evet hocam.
+
+928
+01:18:57,872 --> 01:19:05,511
+Dersimiz bu son dersimizdi. Bundan sonra önümüzdeki hafta final haftası. Sizin finaliniz galiba çarşamba mıydı arkadaşlar?
+
+929
+01:19:06,532 --> 01:19:07,372
+Bir bakayım.
+
+930
+01:19:07,372 --> 01:19:07,872
+Evet hocam.
+
+931
+01:19:08,752 --> 01:19:09,891
+Sarşamba imiş, evet hocam.
+
+932
+01:19:10,792 --> 01:19:20,112
+Önümüzdeki hafta final var. Sonra bütünleme olacak. Bugün son dersimizi yaptık.
+
+933
+01:19:21,832 --> 01:19:23,851
+Hocam, her şey için çok teşekkür ederiz.
+
+934
+01:19:23,872 --> 01:19:33,132
+[kişisel bilgi]
+
+935
+01:19:33,132 --> 01:19:37,132
+Yani matematik.
+
+936
+01:19:37,132 --> 01:19:39,572
+Onu da söyleyeyim.
+
+937
+01:19:39,572 --> 01:19:47,992
+Matematik bölümünün sayfasında servis dersi lineer C1 için mazeret sınavı ne zaman olacak?
+
+938
+01:19:48,231 --> 01:19:50,112
+Kimler mazeret sınavına girecek?
+
+939
+01:19:50,771 --> 01:19:53,072
+İşte bütünleme tarihi, final tarihleri hep yazılı.
+
+940
+01:19:53,952 --> 01:19:57,292
+Bana chatten yazı yazan arkadaşım oradan kontrol etsin.
+
+941
+01:19:57,292 --> 01:19:59,292
+Benim hatı, benim hatı yazı yazın.
+
+942
+01:19:59,292 --> 01:20:03,152
+İki kişi olduğu için bu sınıfta isimlerden birisinin siz olduğunu düşünüyorum.
+
+943
+01:20:03,891 --> 01:20:07,152
+Siz herhalde bölüme attınız mail.
+
+944
+01:20:07,412 --> 01:20:08,592
+Bana atmamışsınızdır.
+
+945
+01:20:11,992 --> 01:20:14,431
+Yani sizin isminizi ben şeyde gördüm.
+
+946
+01:20:14,632 --> 01:20:18,471
+Bölümün web sitesinde yayınlanan listede gördüm.
+
+947
+01:20:18,692 --> 01:20:20,492
+Siz de bir oraya kontrol edin isterseniz.
+
+948
+01:20:20,492 --> 01:20:50,471
+mazeret sınavı da cuma günü galiba.
+
+949
+01:20:50,471 --> 01:20:51,471
+başarılar diliyorum.
+
+950
+01:20:51,471 --> 01:20:52,712
+İnşallah güzel notlar alırsınız.
+
+951
+01:20:52,712 --> 01:20:55,891
+Sizin hemen hepiniz birinci sınıfsınız.
+
+952
+01:20:57,452 --> 01:20:59,052
+Başarılarınızın devamını da diliyorum.
+
+953
+01:21:01,931 --> 01:21:02,612
+Hoşçakalın.
+
+954
+01:21:02,931 --> 01:21:03,872
+Sağlıkla kalın arkadaşlar.
+
+955
+01:21:04,971 --> 01:21:05,752
+Çok sağ olun.
+
+956
+01:21:05,811 --> 01:21:09,311
+İyi günler.
