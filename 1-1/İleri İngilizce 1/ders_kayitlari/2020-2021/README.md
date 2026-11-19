@@ -8,6 +8,7 @@
 | 2 | Güz | Dilek Yıldırım | [sube_2/](sube_2/) |
 | 3 | Güz | Bulunamadı | [sube_3/](sube_3/) |
 | 4 | Güz | Kılıç (adı bulunamadı) | [sube_4/](sube_4/) |
+| 6 | Güz | Bulunamadı | [sube_6/](sube_6/) |
 | 10 | Güz | Cemile Güler | [sube_10/](sube_10/) |
 | 12 | Güz | Hande Güner | [sube_12/](sube_12/) |
 | 14 | Güz | Esra Keskin Korumaz | [sube_14/](sube_14/) |
