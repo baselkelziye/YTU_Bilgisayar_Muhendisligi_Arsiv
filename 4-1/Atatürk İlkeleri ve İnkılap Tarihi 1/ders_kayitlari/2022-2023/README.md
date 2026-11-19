@@ -9,3 +9,4 @@
 | 13 | Güz | Gülsema Lüyer | [sube_13/](sube_13/) |
 | 16 | Güz | Gülsema Lüyer | [sube_16/](sube_16/) |
 | 20 | Güz | Şebnem (soyadı bulunamadı) | [sube_20/](sube_20/) |
+| 22 | Güz | Gülsema Lüyer | [sube_22/](sube_22/) |
