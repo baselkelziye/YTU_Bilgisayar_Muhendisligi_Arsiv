@@ -4,5 +4,5 @@
 
 | Şube | Dönem | Hoca | Klasör |
 | :---: | :---: | :--- | :--- |
-| 1 | Güz | Dr. Furkan Çakmak | [sube_1/](sube_1/) |
+| 1 | Güz | Dr. Erkan Uslu | [sube_1/](sube_1/) |
 | 2 | Güz | Dr. Furkan Çakmak | [sube_2/](sube_2/) |
