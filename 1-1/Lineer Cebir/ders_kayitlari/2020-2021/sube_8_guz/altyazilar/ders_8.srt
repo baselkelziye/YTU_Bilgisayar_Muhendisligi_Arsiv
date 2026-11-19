@@ -1,0 +1,4679 @@
+1
+00:00:16,243 --> 00:00:17,384
+İyi günler arkadaşlar.
+
+2
+00:00:54,579 --> 00:01:09,900
+Herkese iyi günler. Bugün dersimize başlamadan evvel konuşmak isteyen ya da sınavlarla ilgili bir şeyler söylemek istiyorsanız buyurun sizi dinleyebilirim.
+
+3
+00:01:20,531 --> 00:01:41,572
+Evet, kimse bir şey söylemek istemiyor. O zaman dersimize başlayacağız. Sesim geliyor herhalde. Birisi... Evet hocam geliyor. Peki. Bugün yeni bir konuya başlayacağız arkadaşlar. Vektörler konusuna başlayacağız.
+
+4
+00:01:47,635 --> 00:01:58,536
+Bundan sonraki bölümde de vektörlerin cebirsel yapısından da bahsedeceğiz. Bu bölümde biraz daha analitik yapısından bahsedeceğiz.
+
+5
+00:02:01,676 --> 00:02:05,115
+Vektörü tanımlayarak dersimize başlayalım o zaman.
+
+6
+00:02:11,731 --> 00:02:29,491
+Vektörü şu şekilde tanımlayabiliriz arkadaşlar. Başlangıç ve bitim noktaları bulunan belli bir doğrultusu yönü ve uzunluğu olan doğru parçasına biz vektör diyoruz.
+
+7
+00:02:31,091 --> 00:02:35,192
+Bakın, burada bir AB vektörü görüyorsunuz.
+
+8
+00:02:35,192 --> 00:02:40,812
+AB vektörü. Bu tanımı sağlıyor mu? Ona bakalım.
+
+9
+00:02:41,731 --> 00:02:57,512
+Burada başlangıç noktası A, bitim noktası B, doğrultusu X'ye doğrultusunda, yönü de A'dan B'ye ve uzunluğu AB doğru parçasının uzunluğu.
+
+10
+00:02:58,512 --> 00:03:01,591
+Belki de şöyle yazsak daha iyi olur.
+
+11
+00:03:01,591 --> 00:03:06,432
+Olan bir A vektörü.
+
+12
+00:03:09,876 --> 00:03:12,616
+Ya da AB vektörü görüyorsunuz.
+
+13
+00:03:14,355 --> 00:03:22,456
+Vektörleri böyle ya başlangıç ve bitim noktalarıyla beraber AB vektörü diye veya küçük bir harfle A vektörü şeklinde gösteririz.
+
+14
+00:03:22,816 --> 00:03:34,575
+Bir vektörün uzunluğuna biz modülü de deriz ve onu şu şekilde iki çizgi arasında A vektörü şeklinde gösteririz.
+
+15
+00:03:34,575 --> 00:03:40,496
+Bu arada uzunluğu sıfır olan vektöre de sıfır vektörü diyoruz.
+
+16
+00:03:40,855 --> 00:03:45,496
+İşlem yapabilmek için bu sıfır vektöründen de bahsedebilmemiz lazım.
+
+17
+00:03:46,156 --> 00:03:50,635
+Ve onu da böyle sıfırın üzerinde vektör işaretiyle gösteririz.
+
+18
+00:03:51,975 --> 00:03:56,576
+Ancak şunu bilmeliyiz sıfır vektörünün doğrultu ve yönü belirsizdir.
+
+19
+00:03:57,536 --> 00:03:59,036
+Ama uzunluğu sıfır.
+
+20
+00:03:59,036 --> 00:04:07,536
+Eğer doğrultuları, yönleri, uzunlukları eşitse iki vektörün bu vektörlere biz eşit vektörler deriz.
+
+21
+00:04:08,256 --> 00:04:12,176
+Eğer A ve B vektörleri eşitse onu böyle yazacağız.
+
+22
+00:04:13,795 --> 00:04:18,036
+Şimdi iki vektör verildiği zaman onların toplamı üzerinde duralım.
+
+23
+00:04:19,795 --> 00:04:21,036
+Burada iki kuraldan bahsedeceğiz.
+
+24
+00:04:21,696 --> 00:04:24,036
+Birinci olarak paralel kenar kuralı.
+
+25
+00:04:25,036 --> 00:04:28,436
+A ve B vektörleri verilsin bize.
+
+26
+00:04:29,036 --> 00:04:38,415
+Biz bunları öteleme ile başlangıç noktaları aynı olacak şekilde bir araya getirebiliriz.
+
+27
+00:04:39,596 --> 00:04:49,396
+Ve bu şekilde getirdiğimiz zaman A ve B vektörleri üzerine kurulan paralel kenarın köşegenine biz A ve B vektörlerin toplamı diyoruz.
+
+28
+00:04:49,396 --> 00:04:49,896
+Şöyle.
+
+29
+00:04:51,235 --> 00:04:56,615
+Başlangıç noktaları aynı olacak şekilde ötelediğimiz zaman burada bir A vektörü var.
+
+30
+00:04:57,896 --> 00:05:00,836
+Burada bakın bir B vektörü var.
+
+31
+00:05:00,836 --> 00:05:08,776
+Bu iki vektörün oluşturduğu meydana getirdiği bir paralel kenar var.
+
+32
+00:05:09,376 --> 00:05:12,676
+Bunun köşegeni, işte şu köşegenden bahsediyorum.
+
+33
+00:05:12,675 --> 00:05:23,956
+Bu C vektörü ile gösterirsek C vektörü A ve B vektörlerin toplamıdır.
+
+34
+00:05:23,956 --> 00:05:29,416
+Ya da bunu şöyle de söyleyebiliriz.
+
+35
+00:05:29,475 --> 00:05:30,436
+Üçgen kuralıyla.
+
+36
+00:05:39,636 --> 00:05:55,136
+Bu sefer de üçgen kuralında şunu yapıyoruz. A ve B vektörlerinin A'nın bitim noktası B vektörünün başlangıç noktası olacak şekilde öteleyerek.
+
+37
+00:05:55,816 --> 00:06:06,496
+Şimdi A vektörü burada. A'nın bitim noktası A noktası. B'yi öyle öteliyoruz ki B'nin başlangıç noktası A olacak şekilde öteliyoruz.
+
+38
+00:06:06,496 --> 00:06:08,996
+İşte bu vektör, B vektörü.
+
+39
+00:06:12,819 --> 00:06:34,279
+Bu durumda A vektörünün başlangıç noktası, işte şurayı, ve B'nin bitim noktası, C noktası kabul eden bu yeni elde ettiğimiz vektör, bu iki vektörün toplamıdır diyoruz.
+
+40
+00:06:35,659 --> 00:06:41,459
+Şekilsel olarak bu şekilde söyleyebiliriz iki vektörün toplamını.
+
+41
+00:06:41,459 --> 00:06:47,879
+Eğer ikiden fazla, örneğin K tane vektörün toplamından bahsedeceksek, o zaman ne yapacağız?
+
+42
+00:06:48,219 --> 00:06:52,920
+Önce A1 ile A2'yi toplarız, elde edin ile A3'ü toplarız.
+
+43
+00:06:52,980 --> 00:06:58,100
+Bu şekilde K tane vektörün toplamından da bahsedilebilir.
+
+44
+00:06:59,659 --> 00:07:02,959
+Şimdi de bir skalerle bir vektörün çarpımından bahsedelim.
+
+45
+00:07:03,180 --> 00:07:06,839
+Bir A vektörü verilsin, bir de K gibi skaler verilsin.
+
+46
+00:07:06,839 --> 00:07:13,779
+Bunların çarpımı, bunların çarpımı K A şeklinde gösterilir.
+
+47
+00:07:14,439 --> 00:07:16,259
+Bu da yine bir vektördür.
+
+48
+00:07:17,259 --> 00:07:18,120
+Bir vektördür.
+
+49
+00:07:18,800 --> 00:07:23,139
+Bu vektör, A vektörü ile aynı doğrultuya sahip bir vektördür.
+
+50
+00:07:23,139 --> 00:07:32,540
+Eğer K pozitifse, bu K çarpı A vektörünün yönü, A'nın yönü ile aynıdır.
+
+51
+00:07:34,120 --> 00:07:45,000
+Eğer bu K skaleri negatifse, negatifse o zaman K A'nın yönü, A'nın yönünün zıt yönüdür diyoruz.
+
+52
+00:07:45,000 --> 00:07:50,899
+Bunun uzunluğu nedir dersek, bunun uzunluğu da şuna eşittir.
+
+53
+00:07:51,340 --> 00:07:59,779
+K çarpı A vektörünün uzunluğu, K'nın uzunluğu dediğimiz K'nın mutlak değeri, o bir sayı, skaler.
+
+54
+00:07:59,879 --> 00:08:03,879
+K'nın mutlak değeri çarpı A vektörünün uzunluğu.
+
+55
+00:08:03,879 --> 00:08:06,439
+A vektörünün uzunluğu şeklinde söyleriz.
+
+56
+00:08:06,439 --> 00:08:12,120
+Tabii burada K bir sayı, özel olarak K'yı eksi bir seçebiliriz.
+
+57
+00:08:12,879 --> 00:08:15,539
+O zaman eksi bir çarpı A'dan bahsedilebilir.
+
+58
+00:08:15,699 --> 00:08:19,600
+Onu da biz gösterim olarak eksi A şeklinde gösterebiliriz.
+
+59
+00:08:20,779 --> 00:08:26,220
+Bu da yine A vektörü ile aynı doğrultuya, aynı uzunluğa, değil mi?
+
+60
+00:08:26,220 --> 00:08:30,199
+Burada uzunluğu aldığımız zaman mutlak değer eksi birden bir gelecek.
+
+61
+00:08:30,500 --> 00:08:34,840
+Aynı uzunluğa ve zıt yöne sahip bir vektördür.
+
+62
+00:08:34,840 --> 00:08:44,019
+Bu eksi A vektörü, A vektörü ile aynı doğrultuda, aynı uzunlukta ama zıt yönde bir vektördür.
+
+63
+00:08:45,019 --> 00:08:50,319
+Bunu kullanarak, bu yeni söylediğimizi kullanarak iki vektörün farkından da bahsedilebilir.
+
+64
+00:08:51,259 --> 00:08:55,600
+Biraz önce eksi A vektöründen bahsetmiştik.
+
+65
+00:08:55,700 --> 00:08:57,759
+Yani eksi B vektöründen bahsetmiştik.
+
+66
+00:08:57,860 --> 00:09:02,319
+Eksi B vektörü ile A vektörünün toplamını kısaca şöyle gösterebiliriz.
+
+67
+00:09:02,319 --> 00:09:09,180
+A eksi B vektörü şeklinde gösterebiliriz ve bunlara A ve B vektörlerin farkı deriz.
+
+68
+00:09:09,779 --> 00:09:10,440
+Farkı deriz.
+
+69
+00:09:11,279 --> 00:09:13,960
+Bu şekilde tanımlanabilir iki vektörün farkı.
+
+70
+00:09:14,720 --> 00:09:16,159
+Ve şunu söylemek mümkün.
+
+71
+00:09:16,680 --> 00:09:20,100
+A eksi A sıfır vektörüdür.
+
+72
+00:09:20,940 --> 00:09:22,539
+Sıfır vektörü deriz.
+
+73
+00:09:22,539 --> 00:09:29,039
+Buraya kadar vektörlerin toplamı ve bir vektörün bir skalerle çarpımından bahsettik.
+
+74
+00:09:29,180 --> 00:09:32,500
+Bunları kullanarak bazı özelliklerden bahsedebiliriz.
+
+75
+00:09:33,600 --> 00:09:34,840
+Üç tane vektörümüz var.
+
+76
+00:09:36,200 --> 00:09:37,899
+İki tane de skalerimiz var.
+
+77
+00:09:38,759 --> 00:09:41,799
+O zaman şu özelliklerin sağlandığını söyleyebiliriz.
+
+78
+00:09:41,799 --> 00:09:45,220
+A vektörü artı B vektörü.
+
+79
+00:09:45,420 --> 00:09:47,580
+B vektörü artı A vektörün eşittir.
+
+80
+00:09:47,700 --> 00:09:53,660
+Yani vektörlerin toplamının değişme özelliği vardır diyoruz.
+
+81
+00:09:53,659 --> 00:10:00,139
+Yine bu üç vektörle ilgili şu özelliği de söyleyebiliriz.
+
+82
+00:10:01,259 --> 00:10:04,519
+A artı B artı C eşittir.
+
+83
+00:10:05,039 --> 00:10:07,740
+A artı B artı C vektörü.
+
+84
+00:10:07,740 --> 00:10:12,120
+Yani toplama işleminin birleşme özelliği de sağlanır.
+
+85
+00:10:13,524 --> 00:10:22,923
+K skalerimizi kullanarak K skalerinin A artı B ile çarpılması şuna eşit.
+
+86
+00:10:23,484 --> 00:10:28,244
+K, şurası A olacak onu düzeltelim.
+
+87
+00:10:28,624 --> 00:10:29,663
+Şurası da B olacak.
+
+88
+00:10:30,504 --> 00:10:31,203
+B vektörü.
+
+89
+00:10:32,344 --> 00:10:36,803
+K çarpı A vektörü artı K çarpı B vektörü.
+
+90
+00:10:36,803 --> 00:10:44,344
+Yani skalerin vektörlerin toplanma üzerine dağılma özelliği olduğunu söyleyebiliriz.
+
+91
+00:10:46,283 --> 00:10:49,524
+İki skalerin toplamı K artı T.
+
+92
+00:10:50,043 --> 00:10:51,823
+Bunu A vektörü ile çarpmak demek.
+
+93
+00:10:52,183 --> 00:10:55,323
+K çarpı A vektörü artı T çarpı A vektörü demek.
+
+94
+00:10:55,323 --> 00:11:07,403
+Bu da iki skalerin vektörle çarpımı dağılma özelliği denebilir buna da.
+
+95
+00:11:08,504 --> 00:11:15,344
+Yine bu skalerlerle beraber vektörle ilgili şu son özelliği de verebiliriz.
+
+96
+00:11:15,884 --> 00:11:18,504
+K çarpı T çarpı A.
+
+97
+00:11:18,504 --> 00:11:24,903
+Bunu isterseniz T çarpı K çarpı A vektörü diye de yazabilirsiniz.
+
+98
+00:11:25,323 --> 00:11:30,744
+İsterseniz de K çarpı T A vektörü yazabilirsiniz.
+
+99
+00:11:31,943 --> 00:11:34,043
+Bu özellikler veriliyor.
+
+100
+00:11:35,163 --> 00:11:40,703
+Şimdi ileride de zaman zaman geçecek olan bir kavramdan bahsedelim.
+
+101
+00:11:41,803 --> 00:11:46,803
+Uzunluğu 1 olan vektöre biz birim vektör diyoruz.
+
+102
+00:11:46,803 --> 00:11:49,724
+Uzunluğu 1 ise vektöre birim vektör diyoruz.
+
+103
+00:11:50,663 --> 00:11:52,443
+Bize bir A vektörü verdiler.
+
+104
+00:11:52,663 --> 00:11:54,703
+Bunun uzunluğu da sıfırdan farklı.
+
+105
+00:11:55,323 --> 00:12:06,043
+Bunu biz bu A vektörünü bir bölü A'nın uzunluğuyla çarparsak,
+
+106
+00:12:07,043 --> 00:12:09,004
+bununla çarparsak,
+
+107
+00:12:11,744 --> 00:12:13,803
+bir vektör elde ederiz elbette.
+
+108
+00:12:13,803 --> 00:12:19,864
+Ve bunun uzunluğunu aldığınız zaman, bu son elde ettiğimiz vektörün uzunluğunu aldığınız zaman o da 1 çıkar.
+
+109
+00:12:21,104 --> 00:12:22,283
+Yani birim vektördür.
+
+110
+00:12:22,844 --> 00:12:25,024
+Ama biz buna özel bir isim veriyoruz.
+
+111
+00:12:25,183 --> 00:12:28,104
+Yani hatta bunu şöyle U ile de gösterirsek,
+
+112
+00:12:28,484 --> 00:12:32,303
+U ile de bir bölü A'nın uzunluğu çarpı A vektörü,
+
+113
+00:12:32,463 --> 00:12:34,923
+bir vektör, uzunluğu bir olan vektör.
+
+114
+00:12:34,923 --> 00:12:38,803
+İşte bu vektöre biz özel bir şey isim veriyoruz.
+
+115
+00:12:38,943 --> 00:12:46,764
+Bakın, vektörü A vektörü ile aynı doğrultu ve yönündeki birim vektörüdür.
+
+116
+00:12:46,764 --> 00:12:52,524
+Yani her A vektörü ile ilgili bunu söyleyebiliriz.
+
+117
+00:12:52,764 --> 00:12:57,344
+Sıfırdan farklı, uzunluğu sıfırdan farklı olan her A vektörü için,
+
+118
+00:12:57,764 --> 00:12:59,364
+A vektörü için,
+
+119
+00:13:00,864 --> 00:13:02,764
+o A'nın yönü ve doğrultusundaki,
+
+120
+00:13:04,764 --> 00:13:08,864
+aynı yön ve doğrultudaki birim vektörden bahsedebiliriz bu şekilde.
+
+121
+00:13:08,864 --> 00:13:13,744
+Şimdi vektörlerin analitik ifadesi üzerinde duralım.
+
+122
+00:13:14,324 --> 00:13:16,124
+Önce düzlemde duruyoruz.
+
+123
+00:13:17,063 --> 00:13:22,043
+Düzlemde X, O, Y koordinat sistemini göz önüne alalım.
+
+124
+00:13:23,364 --> 00:13:27,584
+Ve burada bir A noktası var bakın.
+
+125
+00:13:29,163 --> 00:13:32,303
+X, Y birleşenleri.
+
+126
+00:13:32,303 --> 00:13:39,324
+X ekseni üzerindeki birim vektörü İ ile gösterelim.
+
+127
+00:13:40,004 --> 00:13:45,604
+Yani buradaki İ'yi uzunluğu 1 olan vektör.
+
+128
+00:13:46,644 --> 00:13:50,124
+Y ekseni doğrultusunda,
+
+129
+00:13:50,463 --> 00:13:55,543
+yani ekseni üzerindeki birim vektörü de J ile gösterelim.
+
+130
+00:13:57,144 --> 00:13:58,663
+Birim vektörü olduğu için,
+
+131
+00:13:59,104 --> 00:14:00,543
+onun da uzunluğu,
+
+132
+00:14:00,543 --> 00:14:02,683
+yani modülü,
+
+133
+00:14:03,244 --> 00:14:05,524
+uzunluğu başka bir şekilde nasıl soruyoruz?
+
+134
+00:14:05,584 --> 00:14:06,043
+Modülü.
+
+135
+00:14:06,824 --> 00:14:07,703
+Modülü 1.
+
+136
+00:14:07,703 --> 00:14:35,703
+Modülü.
+
+137
+00:14:09,940 --> 00:14:24,960
+Burada A noktası var. A noktasıyla başlangıç noktasını birlikte düşündüğümüz zaman O A vektöründen bahsedebilirim ben. Bunu da şöyle küçük A ile gösterelim.
+
+138
+00:14:29,524 --> 00:14:32,083
+ve o a vektörü neye eşittir?
+
+139
+00:14:32,464 --> 00:14:32,724
+Burada
+
+140
+00:14:38,067 --> 00:14:46,148
+OB vektörü, biraz önce üçgen kuralından veya paralel kenar kuralından da söyleyebiliriz.
+
+141
+00:14:47,207 --> 00:14:49,567
+Hatta paralel kenar kuralından da söyleyebiliriz.
+
+142
+00:14:50,528 --> 00:14:54,288
+Artı OC vektörü, değil mi?
+
+143
+00:14:57,028 --> 00:15:00,107
+Bu da, şuraya A'yı da yazalım isterseniz.
+
+144
+00:15:01,967 --> 00:15:03,408
+OB ne? OB.
+
+145
+00:15:03,408 --> 00:15:13,687
+Şimdi, şuranın uzunluğu, OB'nin uzunluğu, X kadardır.
+
+146
+00:15:13,987 --> 00:15:14,207
+Değil mi?
+
+147
+00:15:14,807 --> 00:15:21,307
+A noktasının, apsisi X olduğu için, OB uzunluğu X kadardır.
+
+148
+00:15:21,768 --> 00:15:22,487
+X kadardır.
+
+149
+00:15:22,947 --> 00:15:24,567
+Burada bir de İ birim vektörü var.
+
+150
+00:15:25,028 --> 00:15:26,467
+Dolayısıyla bunu şöyle yazabiliriz.
+
+151
+00:15:26,587 --> 00:15:27,987
+X çarpı İ vektörü.
+
+152
+00:15:27,987 --> 00:15:57,967
+Benzer şekilde O, G çarpı İ vektörü.
+
+153
+00:15:41,491 --> 00:15:43,072
+Y çarpı
+
+154
+00:15:43,072 --> 00:15:45,911
+Y şeklinde ifade edebiliriz.
+
+155
+00:15:47,072 --> 00:15:47,671
+Bu şekilde
+
+156
+00:15:47,671 --> 00:15:49,572
+söylüyoruz.
+
+157
+00:15:49,611 --> 00:15:51,251
+Düzlemde bir
+
+158
+00:15:51,251 --> 00:15:53,251
+A vektörünün
+
+159
+00:15:53,251 --> 00:15:54,771
+analitik ifadesini
+
+160
+00:15:54,771 --> 00:15:57,111
+bu şekilde söylüyoruz.
+
+161
+00:15:58,391 --> 00:15:58,951
+Ve burada
+
+162
+00:15:58,951 --> 00:16:00,991
+başlangıç noktası
+
+163
+00:16:00,991 --> 00:16:02,432
+olan
+
+164
+00:16:02,432 --> 00:16:04,871
+başlangıç noktası, vektörün
+
+165
+00:16:04,871 --> 00:16:06,631
+başlangıç noktası bu
+
+166
+00:16:06,631 --> 00:16:08,231
+O noktası yani
+
+167
+00:16:08,231 --> 00:16:10,911
+X, O, Y, Z düzlemindeki O
+
+168
+00:16:10,911 --> 00:16:12,331
+noktası
+
+169
+00:16:12,331 --> 00:16:15,091
+yani sıfır sıfır noktası
+
+170
+00:16:15,091 --> 00:16:16,371
+olduğu zaman o şekilde
+
+171
+00:16:16,371 --> 00:16:18,231
+öteleyerek elde ettiğimiz
+
+172
+00:16:18,231 --> 00:16:20,211
+vektörlere
+
+173
+00:16:20,211 --> 00:16:22,851
+yer vektörü diyoruz. A noktasının
+
+174
+00:16:22,851 --> 00:16:23,991
+yer vektörü diyoruz.
+
+175
+00:16:24,751 --> 00:16:26,711
+Yani A noktasının yer vektörü ne yapıyoruz?
+
+176
+00:16:27,371 --> 00:16:28,851
+Orijinle birleştirerek
+
+177
+00:16:28,851 --> 00:16:30,572
+elde ettiğimiz vektör.
+
+178
+00:16:32,371 --> 00:16:32,631
+Evet.
+
+179
+00:16:32,731 --> 00:16:34,051
+Burada biraz önceki
+
+180
+00:16:34,051 --> 00:16:36,771
+elde ettiğimiz
+
+181
+00:16:36,771 --> 00:16:37,631
+ifade var.
+
+182
+00:16:38,891 --> 00:16:40,631
+Burada bu X, Y vektörü
+
+183
+00:16:40,911 --> 00:16:43,192
+Y, J vektörlerine
+
+184
+00:16:43,192 --> 00:16:44,091
+A vektörünün
+
+185
+00:16:44,791 --> 00:16:46,172
+X ekseni
+
+186
+00:16:46,172 --> 00:16:48,091
+Y ekseni doğrultularındaki
+
+187
+00:16:48,651 --> 00:16:50,751
+bileşen vektörleri denir.
+
+188
+00:16:50,831 --> 00:16:52,471
+Yani X, Y'ye
+
+189
+00:16:52,471 --> 00:16:54,231
+A'nın X ekseni
+
+190
+00:16:54,231 --> 00:16:56,331
+doğrultusundaki bileşen vektörü
+
+191
+00:16:56,331 --> 00:16:56,731
+diyoruz.
+
+192
+00:16:57,672 --> 00:16:58,371
+Bu X'e
+
+193
+00:16:58,371 --> 00:16:59,371
+X'e
+
+194
+00:16:59,371 --> 00:17:01,692
+X bir sayı tabi
+
+195
+00:17:01,692 --> 00:17:03,031
+İ'nin önündeki
+
+196
+00:17:03,031 --> 00:17:05,692
+X'e ve Y'ye
+
+197
+00:17:05,692 --> 00:17:08,091
+sırasıyla A vektörünün
+
+198
+00:17:08,091 --> 00:17:08,932
+X, Y
+
+199
+00:17:08,932 --> 00:17:10,412
+doğrultusundaki bileşenleri
+
+200
+00:17:10,412 --> 00:17:10,711
+denir.
+
+201
+00:17:10,711 --> 00:17:11,692
+X'e
+
+202
+00:17:11,692 --> 00:17:13,192
+X ekseni
+
+203
+00:17:13,192 --> 00:17:14,652
+doğrultusundaki bileşeni
+
+204
+00:17:14,652 --> 00:17:16,132
+Y'ye de
+
+205
+00:17:16,132 --> 00:17:17,811
+A noktasının
+
+206
+00:17:17,811 --> 00:17:18,751
+A vektörünün
+
+207
+00:17:18,751 --> 00:17:19,132
+ya da
+
+208
+00:17:19,132 --> 00:17:20,011
+A vektörünün
+
+209
+00:17:20,011 --> 00:17:20,351
+diyelim
+
+210
+00:17:20,351 --> 00:17:23,991
+Y doğrultusundaki bileşeni
+
+211
+00:17:23,991 --> 00:17:25,791
+diyoruz.
+
+212
+00:17:25,791 --> 00:17:27,692
+Bu söylediğimizi
+
+213
+00:17:27,692 --> 00:17:28,632
+uzayda görecek
+
+214
+00:17:28,632 --> 00:17:29,071
+olsak
+
+215
+00:17:29,071 --> 00:17:30,871
+bu sefer X, O, Y, Z
+
+216
+00:17:30,871 --> 00:17:32,751
+dik koordinat sistemini
+
+217
+00:17:32,751 --> 00:17:33,591
+göz önüne alıyoruz
+
+218
+00:17:33,591 --> 00:17:35,192
+ve
+
+219
+00:17:35,192 --> 00:17:37,071
+bir A noktası var
+
+220
+00:17:37,071 --> 00:17:38,511
+A noktası var
+
+221
+00:17:38,511 --> 00:17:39,051
+ve yine
+
+222
+00:17:39,051 --> 00:17:39,771
+X ekseni
+
+223
+00:17:39,771 --> 00:17:40,471
+Y ekseni
+
+224
+00:17:40,471 --> 00:17:40,871
+ve
+
+225
+00:17:40,871 --> 00:17:42,811
+Z ekseni
+
+226
+00:17:42,811 --> 00:17:44,251
+üzerindeki
+
+227
+00:17:44,251 --> 00:17:45,331
+birim vektörler de
+
+228
+00:17:45,331 --> 00:17:46,871
+İ, J, K'larla
+
+229
+00:17:46,871 --> 00:17:47,531
+gösterelim.
+
+230
+00:17:47,771 --> 00:17:47,951
+Yani
+
+231
+00:17:47,951 --> 00:17:48,331
+İ
+
+232
+00:17:48,331 --> 00:17:51,571
+J
+
+233
+00:17:51,571 --> 00:17:53,791
+bunlar birim vektörler
+
+234
+00:17:53,791 --> 00:17:58,051
+şunlarla gösterelim
+
+235
+00:17:58,051 --> 00:17:59,491
+ve
+
+236
+00:17:59,491 --> 00:18:00,951
+bu
+
+237
+00:18:00,951 --> 00:18:01,851
+İ, J, K'ya
+
+238
+00:18:01,851 --> 00:18:02,811
+biz
+
+239
+00:18:02,811 --> 00:18:05,211
+Kartezyen
+
+240
+00:18:05,211 --> 00:18:06,451
+baz vektörleri de
+
+241
+00:18:06,451 --> 00:18:06,872
+deriz.
+
+242
+00:18:07,771 --> 00:18:08,291
+Biraz önce
+
+243
+00:18:08,291 --> 00:18:09,132
+düzlemde de
+
+244
+00:18:09,132 --> 00:18:09,851
+İ, J'ye
+
+245
+00:18:09,851 --> 00:18:10,652
+Kartezyen
+
+246
+00:18:10,652 --> 00:18:11,511
+baz vektörleri
+
+247
+00:18:11,511 --> 00:18:12,011
+diyorduk.
+
+248
+00:18:12,152 --> 00:18:12,652
+Burada da
+
+249
+00:18:12,652 --> 00:18:13,491
+uzayda da
+
+250
+00:18:13,491 --> 00:18:14,771
+İ, J, K'ya
+
+251
+00:18:14,771 --> 00:18:16,031
+Kartezyen
+
+252
+00:18:16,031 --> 00:18:17,291
+baz vektörleri
+
+253
+00:18:17,291 --> 00:18:18,251
+diyoruz.
+
+254
+00:18:19,211 --> 00:18:20,011
+Uzayda bir
+
+255
+00:18:20,011 --> 00:18:20,971
+A noktasını
+
+256
+00:18:20,971 --> 00:18:22,372
+ele aldığımız zaman
+
+257
+00:18:22,372 --> 00:18:22,652
+bir
+
+258
+00:18:22,652 --> 00:18:25,011
+O, A vektöründen
+
+259
+00:18:25,011 --> 00:18:25,851
+bahsediyoruz.
+
+260
+00:18:26,371 --> 00:18:27,331
+Bir yer vektörü
+
+261
+00:18:27,331 --> 00:18:27,571
+yine
+
+262
+00:18:27,571 --> 00:18:28,612
+O, A
+
+263
+00:18:28,612 --> 00:18:29,951
+vektörü
+
+264
+00:18:29,951 --> 00:18:31,471
+A noktasının
+
+265
+00:18:31,471 --> 00:18:33,251
+bir yer vektörü
+
+266
+00:18:33,251 --> 00:18:35,211
+ve burada
+
+267
+00:18:35,211 --> 00:18:36,371
+şunları da
+
+268
+00:18:36,371 --> 00:18:37,991
+söyleyebiliriz.
+
+269
+00:18:38,632 --> 00:18:39,471
+O, B vektörü
+
+270
+00:18:39,471 --> 00:18:40,511
+bakın şuradaki vektör
+
+271
+00:18:40,511 --> 00:18:41,491
+nedir?
+
+272
+00:18:42,152 --> 00:18:42,912
+X çarpı
+
+273
+00:18:42,912 --> 00:18:43,612
+İ'dir.
+
+274
+00:18:45,112 --> 00:18:45,652
+O, C vektörü
+
+275
+00:18:46,451 --> 00:18:48,152
+O,
+
+276
+00:18:48,451 --> 00:18:49,731
+Y çarpı
+
+277
+00:18:49,731 --> 00:18:50,071
+İ'dir.
+
+278
+00:18:50,211 --> 00:18:50,612
+Bir de
+
+279
+00:18:50,612 --> 00:18:51,632
+ne var?
+
+280
+00:18:52,632 --> 00:18:54,192
+D, A vektörü
+
+281
+00:18:54,192 --> 00:18:54,451
+var.
+
+282
+00:18:56,451 --> 00:18:57,551
+Şu vektör
+
+283
+00:18:58,551 --> 00:19:02,331
+Bir de
+
+284
+00:19:01,556 --> 00:19:15,796
+Bu da tabii OE'ye paralel bir vektör. Bunu da yazmak istersek K'yı kullanarak ve Z'yi kullanarak ZK şeklinde yazabiliriz.
+
+285
+00:19:17,415 --> 00:19:28,635
+Bu durumda A vektörü, şu vektör nasıl yazılır? Şöyle yazılır OE vektörü.
+
+286
+00:19:28,635 --> 00:19:31,655
+OD, işte OD.
+
+287
+00:19:35,412 --> 00:19:54,192
+OD artı DA değil mi? DA şeklinde yazabiliriz. OD'yi de düzlemde düşünürsek, OD'de neye eşittir arkadaşlar? OB artı OC'ye eşittir. Onu da yazdım.
+
+288
+00:19:54,192 --> 00:20:12,231
+Şimdi burada OB, OC ve DA yerine biraz önceki ifadeleri yazarsak, yani X, İ, Y, İ, Z, K yazarsak, sonuçta bunu elde ederiz.
+
+289
+00:20:12,231 --> 00:20:25,592
+Burada yine biraz önceki gibi X, İ vektörü, Y, İ, J vektörü ve Z, K vektörlerine sırasıyla A vektörünün X, Y, Z eksenleri doğrultusundaki bileşen vektörleri diyoruz.
+
+290
+00:20:30,579 --> 00:20:45,779
+Ve x, y, z sayılarına da a vektörünün x ekseni, y ekseni, z ekseni doğrultusundaki bileşenleri diyoruz.
+
+291
+00:20:47,059 --> 00:20:53,000
+Ve bir vektörün böyle i, j, k'larla ifadesine de kartezyen baz cinsinden ifadesi deriz.
+
+292
+00:20:53,000 --> 00:21:07,319
+Bu kartezyen baz cinsinden ifade edilen vektörün bileşenleri cinsinden, bakın böyle de yazabiliriz, böyle de yazabiliriz, böyle de yazabiliriz.
+
+293
+00:21:07,319 --> 00:21:13,579
+Bunların hepsi, hepsi aynı. Aynı a vektörünün değişik gösterimleridir.
+
+294
+00:21:19,412 --> 00:21:40,932
+Yine burada, şurası dik açı arkadaşlar. Bu OA vektörünün uzunluğunu bulmak istiyorum ben. Ama şu dik üçgeni, hangi dik üçgeni? Düşüneceğiz.
+
+295
+00:21:40,932 --> 00:21:51,692
+O, D, A. Bu üçgeni düşünürsek, bu dik üçgen. Burada hipotenüsün uzunluğu OA'nın uzunluğudur. Değil mi?
+
+296
+00:21:51,692 --> 00:21:58,471
+Bunun uzunluğunun karesi nedir? Dik kenarların karesinin toplamına eşittir.
+
+297
+00:21:58,471 --> 00:22:16,192
+OD'nin karesi. Burada psikor bağıntısından bunu yazıyoruz. Burada bakın.
+
+298
+00:22:16,192 --> 00:22:17,192
+yine OD'nin karesi.
+
+299
+00:22:17,192 --> 00:22:18,192
+Yine OD'nin karesi.
+
+300
+00:22:18,192 --> 00:22:25,652
+Yine OD ile düzlemde dik üçgenden yine psikor bağıntısını kullanarak
+
+301
+00:22:25,652 --> 00:22:31,092
+OB'nin karesi, OC'nin karesi yazabiliriz.
+
+302
+00:22:35,251 --> 00:22:41,811
+Ve buradan şunu elde ederiz biz o a'nın karesi olarak.
+
+303
+00:22:44,491 --> 00:22:48,432
+O b dediğimiz x değil mi?
+
+304
+00:22:48,611 --> 00:22:55,771
+Şurası x uzunluğunda, burası x uzunluğunda, burası y uzunluğunda, şurası da z uzunluğunda.
+
+305
+00:22:55,932 --> 00:22:58,531
+A noktasının koordinatları x, y, z olduğu için.
+
+306
+00:22:58,531 --> 00:23:08,231
+Dolayısıyla o b'nin karesi yerine x kare, o c'nin karesi yerine o c'nin uzunluğu y olduğu için.
+
+307
+00:23:09,892 --> 00:23:13,371
+Daha doğrusu şöyle de diyebiliriz.
+
+308
+00:23:14,551 --> 00:23:20,172
+O c vektörü y çarpı j değil mi?
+
+309
+00:23:20,172 --> 00:23:26,831
+y çarpı j, y çarpı j'nin uzunluğunun karesi.
+
+310
+00:23:27,311 --> 00:23:28,611
+Karesi olduğu için y kare.
+
+311
+00:23:30,031 --> 00:23:34,091
+z kare, x artı y kare artı z kare olur.
+
+312
+00:23:34,611 --> 00:23:36,652
+o a'nın uzunluğunun karesi.
+
+313
+00:23:36,751 --> 00:23:41,672
+Buradan da o a'nın uzunluğunu bulabiliriz.
+
+314
+00:23:42,271 --> 00:23:43,412
+Kare kökünü alırız bunların.
+
+315
+00:23:44,771 --> 00:23:47,831
+Bunların kare kökünü alırız.
+
+316
+00:23:47,831 --> 00:23:59,711
+Biraz önce iki vektörün toplamından şekilsel olarak paralel kenarı ve üçgen kuralı şeklinde bahsetmiştik.
+
+317
+00:24:00,632 --> 00:24:11,392
+Burada a ve b vektörleri eğer kartezyen baz cinsinden ifade edilmiş derse toplamı da şu şekilde söyleyebiliriz arkadaşlar.
+
+318
+00:24:12,031 --> 00:24:13,031
+Toplamı.
+
+319
+00:24:13,851 --> 00:24:17,251
+Karşılıklı birleşenlerin toplamıyla elde edilen yeni vektör.
+
+320
+00:24:17,831 --> 00:24:19,591
+a ve b vektörleri bakın.
+
+321
+00:24:20,711 --> 00:24:24,152
+Kartezyen baz vektörler cinsinden verilmiş.
+
+322
+00:24:24,211 --> 00:24:25,132
+O zaman a artı b.
+
+323
+00:24:26,331 --> 00:24:28,711
+i'nin önündekilerin toplamı x1 artı x2.
+
+324
+00:24:29,711 --> 00:24:33,412
+i vektörü artı j'nin önündeki y1 artı y2.
+
+325
+00:24:34,291 --> 00:24:36,211
+j vektörü artı z1 artı z2.
+
+326
+00:24:36,471 --> 00:24:39,831
+k vektörü bu şekilde toplamı yazabiliriz.
+
+327
+00:24:39,831 --> 00:24:47,871
+skalerle bir vektörün çarpımı da yine bu ifade tarzıyla söyleyebiliriz.
+
+328
+00:24:47,871 --> 00:24:55,172
+o da bütün birleşenlerin k ile çarpılmasıyla elde edilen vektördür.
+
+329
+00:24:59,059 --> 00:25:04,059
+Ve biraz önce bir teoremle özellik vermiştik beş tane kadar.
+
+330
+00:25:04,059 --> 00:25:25,879
+Onları bu yeni ifade tarzıyla, kartezyen baz vektörleri cinsiyle ifade tarzını kullanarak, işte buradaki tanımlarını kullanarak görebilirsiniz o özelliklerin sağlandığını.
+
+331
+00:25:25,879 --> 00:25:30,799
+Şimdi bir örnek yapalım. Bir tane vektörümüz var, A vektörü bakın.
+
+332
+00:25:32,159 --> 00:25:34,359
+Kartezyen baz vektörleri cinsinden verilmiş.
+
+333
+00:25:35,679 --> 00:25:38,899
+Yine B aynı şekilde.
+
+334
+00:25:39,759 --> 00:25:42,299
+Kartezyen baz vektörleri cinsinden verilmiş.
+
+335
+00:25:43,059 --> 00:25:45,319
+Bunların toplamı, bunların toplamı nedir?
+
+336
+00:25:45,319 --> 00:25:49,299
+3 artı, eksi 4, eksi 1 eder.
+
+337
+00:25:52,852 --> 00:25:54,292
+İsterseniz yazalım şöyle.
+
+338
+00:25:56,612 --> 00:25:58,152
+Artı B vektörü.
+
+339
+00:26:00,732 --> 00:26:02,211
+3 artı
+
+340
+00:26:02,211 --> 00:26:04,092
+eksi 4
+
+341
+00:26:04,092 --> 00:26:06,112
+iyi olacak. Değil mi?
+
+342
+00:26:07,172 --> 00:26:07,652
+Sonra
+
+343
+00:26:07,652 --> 00:26:09,892
+2
+
+344
+00:26:09,892 --> 00:26:12,772
+artı
+
+345
+00:26:12,772 --> 00:26:14,112
+eksi 3
+
+346
+00:26:14,112 --> 00:26:15,892
+j
+
+347
+00:26:15,892 --> 00:26:18,172
+sonra artı diyeceğiz.
+
+348
+00:26:19,752 --> 00:26:20,572
+Eksi 5
+
+349
+00:26:20,572 --> 00:26:22,471
+artı 7
+
+350
+00:26:22,471 --> 00:26:24,972
+bu vektör.
+
+351
+00:26:26,492 --> 00:26:27,852
+Burası eksi 1 eder.
+
+352
+00:26:27,852 --> 00:26:30,132
+Eksi iyi. Burası eksi 1 eder.
+
+353
+00:26:30,552 --> 00:26:31,092
+Eksi j.
+
+354
+00:26:31,711 --> 00:26:33,951
+Şurayı düzenleyelim. Burası 2
+
+355
+00:26:33,951 --> 00:26:35,951
+olacak. Bu şekilde
+
+356
+00:26:35,951 --> 00:26:36,752
+buluruz.
+
+357
+00:26:37,692 --> 00:26:39,852
+2 ile a'yı çarparsak
+
+358
+00:26:39,852 --> 00:26:43,892
+bileşenleri 2 ile
+
+359
+00:26:43,892 --> 00:26:45,592
+çarpacağız. 2 kere 3 6
+
+360
+00:26:45,592 --> 00:26:47,912
+iyi.
+
+361
+00:26:48,912 --> 00:26:49,652
+Artı
+
+362
+00:26:49,652 --> 00:26:52,052
+4 j
+
+363
+00:26:52,052 --> 00:26:52,772
+değil mi?
+
+364
+00:26:53,772 --> 00:26:54,632
+Eksi
+
+365
+00:26:54,632 --> 00:26:57,812
+10 k.
+
+366
+00:26:59,772 --> 00:27:00,892
+Benzer şekilde
+
+367
+00:27:00,892 --> 00:27:03,472
+b'yi 3 ile çarparak
+
+368
+00:27:03,472 --> 00:27:05,872
+2 a artı 3 b'yi
+
+369
+00:27:05,872 --> 00:27:09,252
+böyle hem toplama hem skaler çarpımı
+
+370
+00:27:09,252 --> 00:27:10,252
+birlikte kullanarak
+
+371
+00:27:10,252 --> 00:27:11,292
+bulunabilir.
+
+372
+00:27:11,292 --> 00:27:16,552
+2 vektörler arasında
+
+373
+00:27:16,552 --> 00:27:18,412
+2 vektör arasındaki
+
+374
+00:27:18,412 --> 00:27:19,752
+bir işlem olarak
+
+375
+00:27:19,752 --> 00:27:22,932
+yeni bir işlemden
+
+376
+00:27:22,932 --> 00:27:23,572
+bahsedeceğiz.
+
+377
+00:27:23,672 --> 00:27:25,272
+2 vektörün skaler çarpımı
+
+378
+00:27:25,272 --> 00:27:26,292
+bir başka deyişte
+
+379
+00:27:26,292 --> 00:27:27,152
+iç çarpımı.
+
+380
+00:27:28,451 --> 00:27:29,092
+Burada bakın
+
+381
+00:27:29,092 --> 00:27:30,592
+2 tane e vektörümüz var.
+
+382
+00:27:30,692 --> 00:27:31,492
+a vektörü ve
+
+383
+00:27:31,492 --> 00:27:33,832
+b vektörü var.
+
+384
+00:27:34,692 --> 00:27:35,672
+Bunların arasındaki
+
+385
+00:27:35,672 --> 00:27:37,352
+açı da tt açısı.
+
+386
+00:27:37,352 --> 00:27:38,512
+ama
+
+387
+00:27:38,512 --> 00:27:40,532
+0 ile
+
+388
+00:27:40,532 --> 00:27:41,711
+pi arasındaki
+
+389
+00:27:41,711 --> 00:27:44,112
+açılarını düşünüyoruz.
+
+390
+00:27:44,672 --> 00:27:45,892
+0 ile pi arasındaki
+
+391
+00:27:45,892 --> 00:27:47,052
+arasındaki
+
+392
+00:27:47,052 --> 00:27:48,772
+açıyı düşünüyoruz.
+
+393
+00:27:50,272 --> 00:27:51,532
+a ile ve vektörü
+
+394
+00:27:51,532 --> 00:27:52,652
+arasındaki.
+
+395
+00:27:52,652 --> 00:27:54,772
+bu iki vektörün
+
+396
+00:27:54,772 --> 00:27:56,672
+skaler çarpımı
+
+397
+00:27:56,672 --> 00:27:57,412
+ya da iç çarpımı
+
+398
+00:27:57,412 --> 00:27:58,832
+şu şekilde gösterilir arkadaşlar.
+
+399
+00:27:59,052 --> 00:27:59,632
+Araya bir
+
+400
+00:27:59,632 --> 00:28:01,892
+çarpı işareti koyarak.
+
+401
+00:28:03,412 --> 00:28:03,992
+Bu da şudur.
+
+402
+00:28:06,572 --> 00:28:07,392
+a'nın uzunluğu
+
+403
+00:28:07,392 --> 00:28:07,951
+çarpı
+
+404
+00:28:07,951 --> 00:28:08,951
+b'nin uzunluğu
+
+405
+00:28:08,951 --> 00:28:09,792
+çarpı
+
+406
+00:28:09,792 --> 00:28:10,472
+kosünüs theta.
+
+407
+00:28:12,872 --> 00:28:14,872
+Bu şekilde hesaplanır.
+
+408
+00:28:16,112 --> 00:28:16,352
+Tabii
+
+409
+00:28:16,352 --> 00:28:17,731
+a'nın uzunluğu
+
+410
+00:28:17,731 --> 00:28:18,112
+bir sayı
+
+411
+00:28:18,112 --> 00:28:18,752
+b'nin uzunluğu
+
+412
+00:28:18,752 --> 00:28:19,132
+bir sayı
+
+413
+00:28:19,132 --> 00:28:19,932
+kosünüs theta da
+
+414
+00:28:19,932 --> 00:28:21,272
+elbette bir sayı.
+
+415
+00:28:21,272 --> 00:28:24,152
+dolayısıyla
+
+416
+00:28:24,152 --> 00:28:25,211
+iki vektörün
+
+417
+00:28:25,211 --> 00:28:26,452
+skaler çarpımının
+
+418
+00:28:26,452 --> 00:28:27,952
+bir sayı olduğunu
+
+419
+00:28:27,952 --> 00:28:29,252
+söyleriz.
+
+420
+00:28:30,452 --> 00:28:30,952
+Söyleriz.
+
+421
+00:28:31,852 --> 00:28:32,112
+Bu
+
+422
+00:28:32,112 --> 00:28:32,952
+tanımı
+
+423
+00:28:32,952 --> 00:28:35,492
+kullanarak
+
+424
+00:28:35,492 --> 00:28:36,172
+biraz önce
+
+425
+00:28:36,172 --> 00:28:37,532
+uzayda
+
+426
+00:28:37,532 --> 00:28:38,232
+IJK
+
+427
+00:28:38,232 --> 00:28:40,272
+kartezen baz vektörlerinden
+
+428
+00:28:40,272 --> 00:28:40,992
+bahsetmiştik.
+
+429
+00:28:41,072 --> 00:28:42,012
+Bunların uzunlukları
+
+430
+00:28:42,012 --> 00:28:42,552
+birdi.
+
+431
+00:28:43,092 --> 00:28:43,252
+Değil mi?
+
+432
+00:28:44,352 --> 00:28:45,032
+Ve oradaki
+
+433
+00:28:45,032 --> 00:28:45,711
+IJK
+
+434
+00:28:45,711 --> 00:28:46,812
+arasındaki açılar
+
+435
+00:28:46,812 --> 00:28:47,192
+nedir?
+
+436
+00:28:47,392 --> 00:28:48,432
+90 derecedir.
+
+437
+00:28:48,432 --> 00:28:50,512
+ve
+
+438
+00:28:50,512 --> 00:28:53,612
+90 derece
+
+439
+00:28:53,612 --> 00:28:55,052
+aralandaki
+
+440
+00:28:55,052 --> 00:28:55,852
+90 derece
+
+441
+00:28:55,852 --> 00:28:56,612
+kosünüs 90
+
+442
+00:28:56,612 --> 00:28:57,072
+sıfır.
+
+443
+00:28:57,572 --> 00:28:57,852
+I ile
+
+444
+00:28:57,852 --> 00:28:58,772
+I'nin arasındaki
+
+445
+00:28:58,772 --> 00:28:59,892
+açı da sıfırdır.
+
+446
+00:29:00,172 --> 00:29:00,972
+Kosünüs sıfırında
+
+447
+00:29:00,972 --> 00:29:02,252
+bir olduğunu dikkate alarak
+
+448
+00:29:02,252 --> 00:29:03,732
+şunları söyleyebiliriz.
+
+449
+00:29:03,792 --> 00:29:04,492
+Bakın
+
+450
+00:29:04,492 --> 00:29:07,432
+IK
+
+451
+00:29:07,432 --> 00:29:08,512
+bu
+
+452
+00:29:08,512 --> 00:29:10,192
+IK'ye
+
+453
+00:29:10,192 --> 00:29:10,912
+I çarpı
+
+454
+00:29:10,912 --> 00:29:11,172
+I
+
+455
+00:29:11,172 --> 00:29:12,772
+skaler çarpım
+
+456
+00:29:12,772 --> 00:29:13,612
+yani
+
+457
+00:29:13,612 --> 00:29:14,872
+iç çarpım
+
+458
+00:29:14,872 --> 00:29:16,052
+I vektörü
+
+459
+00:29:16,052 --> 00:29:16,492
+çarpı
+
+460
+00:29:16,492 --> 00:29:17,432
+I vektörü
+
+461
+00:29:17,432 --> 00:29:18,892
+bu 1'e eşittir.
+
+462
+00:29:18,992 --> 00:29:19,932
+Niye 1'e eşittir?
+
+463
+00:29:20,252 --> 00:29:21,132
+Biraz önceki tanımı
+
+464
+00:29:21,132 --> 00:29:21,872
+kullanırsak
+
+465
+00:29:21,872 --> 00:29:23,852
+şurada gösterelim.
+
+466
+00:29:25,332 --> 00:29:25,732
+Ne olacak?
+
+467
+00:29:25,852 --> 00:29:29,852
+I'nin uzunluğu
+
+468
+00:29:29,852 --> 00:29:32,552
+aradaki açının
+
+469
+00:29:32,552 --> 00:29:34,512
+kosünüsü
+
+470
+00:29:34,512 --> 00:29:35,392
+0
+
+471
+00:29:35,392 --> 00:29:37,012
+değil mi?
+
+472
+00:29:37,711 --> 00:29:38,312
+Bunlar hep
+
+473
+00:29:38,312 --> 00:29:40,211
+1'dir
+
+474
+00:29:40,211 --> 00:29:40,812
+onun için
+
+475
+00:29:40,812 --> 00:29:41,132
+1
+
+476
+00:29:41,132 --> 00:29:43,012
+benzer şekilde
+
+477
+00:29:43,012 --> 00:29:44,012
+J kare
+
+478
+00:29:44,012 --> 00:29:44,972
+1'e eşit
+
+479
+00:29:44,972 --> 00:29:45,892
+K kare
+
+480
+00:29:45,892 --> 00:29:46,652
+1'e eşit
+
+481
+00:29:46,652 --> 00:29:48,211
+I ve J'yi
+
+482
+00:29:48,211 --> 00:29:48,612
+şarap
+
+483
+00:29:48,612 --> 00:29:57,472
+1'e eşit
+
+484
+00:29:53,523 --> 00:30:05,983
+Yine i'nin uzunluğu, i'nin uzunluğu, i ile j arasındaki açı 90 derece, kosünüs 90 yazıyoruz.
+
+485
+00:30:06,583 --> 00:30:19,883
+Tabii kosünüs 90 sıfır olduğu için i ile j'nin çarpımı sıfırdır, i ile k'nın çarpımı sıfırdır, j ile k'nın çarpımı sıfırdır.
+
+486
+00:30:19,883 --> 00:30:31,083
+Bu bilgiler yardımıyla iki vektör kartezyen baz cinsinden ifade edildiyse, bu iki vektörün skaler çarpımı şu şekilde söyleriz.
+
+487
+00:30:32,623 --> 00:30:36,843
+İşte iki tane vektör kartezyen baz cinsinden verilmiş.
+
+488
+00:30:39,143 --> 00:30:40,263
+Yazdık yerlerine bakın.
+
+489
+00:30:42,143 --> 00:30:44,743
+Burada şunu yapabilirsiniz bakın.
+
+490
+00:30:44,743 --> 00:30:46,243
+şu ifadeyle
+
+491
+00:30:46,243 --> 00:30:49,243
+bunu.
+
+492
+00:30:53,203 --> 00:30:55,884
+Sonra, burayı.
+
+493
+00:31:03,412 --> 00:31:04,572
+Burayı çarpacaksınız.
+
+494
+00:31:05,312 --> 00:31:07,991
+Tabi X1i ile
+
+495
+00:31:07,991 --> 00:31:10,372
+X2i'nin çarpımı
+
+496
+00:31:10,372 --> 00:31:13,132
+i kare
+
+497
+00:31:13,132 --> 00:31:16,372
+1'e eşit olduğu için
+
+498
+00:31:16,372 --> 00:31:17,211
+nedir o?
+
+499
+00:31:17,711 --> 00:31:19,392
+X1 çarpı X2'dir.
+
+500
+00:31:20,672 --> 00:31:22,632
+Ama X1i ile
+
+501
+00:31:22,632 --> 00:31:24,471
+Y2j'nin çarpımı
+
+502
+00:31:24,471 --> 00:31:25,991
+i ile j'nin çarpımı
+
+503
+00:31:25,991 --> 00:31:28,231
+skaler çarpımı
+
+504
+00:31:28,231 --> 00:31:29,412
+ya da iç çarpımı 0.
+
+505
+00:31:30,412 --> 00:31:31,491
+Onun için yazmıyoruz onu.
+
+506
+00:31:31,491 --> 00:31:33,132
+X1i ile
+
+507
+00:31:33,132 --> 00:31:35,332
+Z2k'nın çarpımı
+
+508
+00:31:35,332 --> 00:31:38,032
+i ile k'nın çarpımı 0 olduğundan
+
+509
+00:31:38,032 --> 00:31:38,552
+yazılmıyor.
+
+510
+00:31:39,971 --> 00:31:41,872
+Ve diğerleri. Bu sefer şununla
+
+511
+00:31:41,872 --> 00:31:44,312
+bunları çarparsınız.
+
+512
+00:31:45,372 --> 00:31:46,211
+Buradan da
+
+513
+00:31:46,211 --> 00:31:48,312
+Y1 çarpı Y2 gelir.
+
+514
+00:31:49,072 --> 00:31:49,991
+Z1 çarpı
+
+515
+00:31:49,991 --> 00:31:50,652
+Z2 gelir.
+
+516
+00:31:52,471 --> 00:31:54,092
+Dolayısıyla iki vektörün
+
+517
+00:31:54,092 --> 00:31:55,932
+skaler çarpımında
+
+518
+00:31:55,932 --> 00:31:56,991
+böyle
+
+519
+00:31:56,991 --> 00:32:00,112
+elde edebiliriz. Bu da gördüğünüz gibi
+
+520
+00:32:00,112 --> 00:32:01,572
+bir sayı.
+
+521
+00:32:04,072 --> 00:32:04,711
+Yine
+
+522
+00:32:04,711 --> 00:32:06,491
+şunu yapabiliriz.
+
+523
+00:32:06,532 --> 00:32:07,592
+A'yı kendisiyle
+
+524
+00:32:07,592 --> 00:32:08,872
+skaler çarparsak
+
+525
+00:32:08,872 --> 00:32:09,872
+A eğer buysa
+
+526
+00:32:09,872 --> 00:32:11,532
+kendisiyle skaler çarparsak
+
+527
+00:32:11,532 --> 00:32:12,771
+bunu buluruz. Bu da nedir?
+
+528
+00:32:13,172 --> 00:32:13,991
+Şunu eşitler.
+
+529
+00:32:16,231 --> 00:32:16,592
+Bu da
+
+530
+00:32:16,592 --> 00:32:18,652
+A'nın
+
+531
+00:32:19,211 --> 00:32:20,572
+uzunluğunun karesidir.
+
+532
+00:32:20,572 --> 00:32:23,412
+A'nın uzunluğunun karesidir.
+
+533
+00:32:23,491 --> 00:32:23,971
+Biraz önce
+
+534
+00:32:23,971 --> 00:32:26,092
+A vektörünün uzunluğundan
+
+535
+00:32:26,092 --> 00:32:26,932
+bahsetmiştik.
+
+536
+00:32:27,412 --> 00:32:28,192
+O kare kök içinde
+
+537
+00:32:28,192 --> 00:32:30,552
+X kare artı Y kare artı Z kareydi.
+
+538
+00:32:32,552 --> 00:32:33,312
+Dolayısıyla
+
+539
+00:32:33,312 --> 00:32:35,152
+A çarpı A
+
+540
+00:32:35,152 --> 00:32:37,092
+iç çarpım
+
+541
+00:32:37,092 --> 00:32:38,731
+A'nın uzunluğunun
+
+542
+00:32:38,731 --> 00:32:40,312
+karesi olur.
+
+543
+00:32:40,312 --> 00:32:42,592
+Bu
+
+544
+00:32:42,592 --> 00:32:44,451
+yeni çarpımız
+
+545
+00:32:44,451 --> 00:32:45,552
+iki vektörün
+
+546
+00:32:45,552 --> 00:32:46,912
+skaler çarpımı
+
+547
+00:32:46,912 --> 00:32:48,132
+daha önce
+
+548
+00:32:48,132 --> 00:32:49,251
+bir vektörle
+
+549
+00:32:49,251 --> 00:32:50,552
+skalerin çarpımı
+
+550
+00:32:50,552 --> 00:32:51,511
+ve iki vektörün
+
+551
+00:32:51,511 --> 00:32:52,192
+toplamını
+
+552
+00:32:52,192 --> 00:32:53,632
+bunların hepsini
+
+553
+00:32:53,632 --> 00:32:54,532
+kullanarak
+
+554
+00:32:54,532 --> 00:32:56,211
+bazı özelliklerden
+
+555
+00:32:56,211 --> 00:32:57,152
+bahsedebiliriz.
+
+556
+00:32:57,532 --> 00:32:58,632
+Üç tane vektörümüz var.
+
+557
+00:32:59,192 --> 00:33:00,032
+Kares skaleri var.
+
+558
+00:33:00,132 --> 00:33:01,132
+Şunları söyleyebiliriz.
+
+559
+00:33:01,132 --> 00:33:04,271
+A çarpı B
+
+560
+00:33:04,271 --> 00:33:05,852
+iç çarpım
+
+561
+00:33:05,852 --> 00:33:07,672
+eşit B çarpı A'dır.
+
+562
+00:33:07,951 --> 00:33:08,211
+Yani
+
+563
+00:33:08,211 --> 00:33:09,451
+iç çarpımın
+
+564
+00:33:09,451 --> 00:33:10,731
+değişme özelliği vardır.
+
+565
+00:33:12,112 --> 00:33:12,392
+Sonra
+
+566
+00:33:12,392 --> 00:33:16,451
+bu iç çarpımın
+
+567
+00:33:16,451 --> 00:33:17,392
+vektörlerin
+
+568
+00:33:17,392 --> 00:33:18,372
+toplama üzerine
+
+569
+00:33:18,372 --> 00:33:19,592
+dağılma özelliği vardır.
+
+570
+00:33:19,711 --> 00:33:20,172
+Şu şekilde
+
+571
+00:33:20,172 --> 00:33:21,892
+A çarpı B
+
+572
+00:33:21,892 --> 00:33:22,412
+artı
+
+573
+00:33:22,412 --> 00:33:23,352
+A çarpı C.
+
+574
+00:33:24,951 --> 00:33:25,672
+İki vektörün
+
+575
+00:33:25,672 --> 00:33:26,451
+skalerle
+
+576
+00:33:26,451 --> 00:33:27,552
+çarpımı
+
+577
+00:33:27,552 --> 00:33:30,112
+iki vektörün
+
+578
+00:33:30,112 --> 00:33:31,632
+iç çarpımının
+
+579
+00:33:31,632 --> 00:33:33,211
+skalerle çarpımını
+
+580
+00:33:33,211 --> 00:33:34,612
+şöyle yazabiliriz.
+
+581
+00:33:34,692 --> 00:33:34,971
+Bakın
+
+582
+00:33:34,971 --> 00:33:37,451
+bunları
+
+583
+00:33:37,451 --> 00:33:38,432
+biraz önce
+
+584
+00:33:38,432 --> 00:33:40,192
+söylemiştik ya
+
+585
+00:33:40,192 --> 00:33:41,292
+şu
+
+586
+00:33:41,292 --> 00:33:42,392
+şu tanımı
+
+587
+00:33:42,392 --> 00:33:45,332
+tanımı kullanarak
+
+588
+00:33:45,332 --> 00:33:46,251
+kolaylıkla
+
+589
+00:33:46,251 --> 00:33:47,312
+görebilirsiniz.
+
+590
+00:33:48,832 --> 00:33:49,352
+Ayrıca
+
+591
+00:33:49,352 --> 00:33:50,251
+ayrıca
+
+592
+00:33:50,251 --> 00:33:53,072
+iki vektörün
+
+593
+00:33:53,072 --> 00:33:54,251
+arasındaki açı
+
+594
+00:33:54,251 --> 00:33:55,751
+doksan derece ise
+
+595
+00:33:55,751 --> 00:33:58,052
+hemen
+
+596
+00:33:58,052 --> 00:33:58,971
+şuradan
+
+597
+00:33:58,971 --> 00:34:01,491
+kosünüs
+
+598
+00:34:01,491 --> 00:34:02,251
+şurada
+
+599
+00:34:02,251 --> 00:34:02,971
+kosünüs
+
+600
+00:34:02,971 --> 00:34:04,672
+sıfır olacağı için
+
+601
+00:34:04,672 --> 00:34:07,152
+birbirine dik olan
+
+602
+00:34:07,152 --> 00:34:09,211
+vektörlerin
+
+603
+00:34:09,211 --> 00:34:10,251
+skaler
+
+604
+00:34:10,251 --> 00:34:11,231
+çarpımı
+
+605
+00:34:11,231 --> 00:34:12,492
+ne olur?
+
+606
+00:34:13,351 --> 00:34:13,992
+Sıfır olur.
+
+607
+00:34:14,672 --> 00:34:14,992
+Değil mi?
+
+608
+00:34:16,652 --> 00:34:17,811
+Biz buna
+
+609
+00:34:17,811 --> 00:34:18,811
+diklik şartı da
+
+610
+00:34:18,811 --> 00:34:19,331
+diyoruz.
+
+611
+00:34:20,932 --> 00:34:22,291
+Diklik şartı.
+
+612
+00:34:23,092 --> 00:34:24,052
+Mesela şöyle bir soru
+
+613
+00:34:24,052 --> 00:34:24,412
+olacak.
+
+614
+00:34:24,552 --> 00:34:25,192
+Diyeceğiz ki ne?
+
+615
+00:34:25,192 --> 00:34:27,472
+bu iki vektörün
+
+616
+00:34:27,472 --> 00:34:28,592
+birbirine dik olması
+
+617
+00:34:28,592 --> 00:34:29,532
+için şu
+
+618
+00:34:29,532 --> 00:34:30,891
+değerlerden
+
+619
+00:34:30,891 --> 00:34:32,652
+şu değerler
+
+620
+00:34:32,652 --> 00:34:33,492
+neye eşit olmalı
+
+621
+00:34:33,492 --> 00:34:33,932
+gibi
+
+622
+00:34:33,932 --> 00:34:35,512
+veya şu bilinmeye
+
+623
+00:34:35,512 --> 00:34:36,331
+ne olmalıdır
+
+624
+00:34:36,331 --> 00:34:37,172
+gibi sorular olabilir.
+
+625
+00:34:37,311 --> 00:34:37,711
+İşte buna
+
+626
+00:34:37,711 --> 00:34:38,692
+biz diklik şartı
+
+627
+00:34:38,692 --> 00:34:39,711
+diyoruz.
+
+628
+00:34:39,711 --> 00:34:40,711
+a ile b'nin
+
+629
+00:34:40,711 --> 00:34:41,512
+iç çarpımının
+
+630
+00:34:41,512 --> 00:34:42,172
+sıfır olması.
+
+631
+00:34:43,592 --> 00:34:43,791
+Bu
+
+632
+00:34:43,791 --> 00:34:45,612
+iç çarpımla ilgili
+
+633
+00:34:45,612 --> 00:34:47,251
+şu eşitsizlikten
+
+634
+00:34:47,251 --> 00:34:48,092
+bahsedilebilir.
+
+635
+00:34:48,492 --> 00:34:48,831
+Biz buna
+
+636
+00:34:48,831 --> 00:34:50,072
+şivarze eşitsizliği
+
+637
+00:34:50,072 --> 00:34:50,592
+diyoruz.
+
+638
+00:34:52,992 --> 00:34:53,811
+Toplamla ilgili
+
+639
+00:34:53,811 --> 00:34:56,072
+bir eşitsizlik de
+
+640
+00:34:56,072 --> 00:34:57,492
+uzunluklarıyla ilgili
+
+641
+00:34:57,492 --> 00:34:58,172
+tabii ki
+
+642
+00:34:58,172 --> 00:34:59,391
+üçgen eşitsizliği
+
+643
+00:34:59,391 --> 00:35:00,192
+diyoruz.
+
+644
+00:35:01,300 --> 00:35:06,880
+A artı B'nin modülü, küçük eşit A'nın modülü artı B'nin modülü.
+
+645
+00:35:07,440 --> 00:35:18,300
+Bir sorumuz var burada. Uzunluğu 2 ve 3 olan iki tane vektörden bahsediyoruz ve bunların aralarındaki açı 60 derecelik bir açıysa,
+
+646
+00:35:19,700 --> 00:35:29,300
+bu iki vektörün skaler çarpımı nedir diye sorarsak, işte ilk söylediğimiz tanımı kullanıyoruz.
+
+647
+00:35:29,300 --> 00:35:34,080
+A'nın modülü çarpı B'nin modülü, çarpı kosünüs tete.
+
+648
+00:35:34,500 --> 00:35:35,740
+Uzunluklar verilmiş.
+
+649
+00:35:36,480 --> 00:35:41,300
+Kosünüs 60 bir bölü 2, 6 çarpı bir bölü 2 eşit 3 bulunur.
+
+650
+00:35:42,960 --> 00:35:46,680
+Eser sınavda testlerde bu sorulabilecek soru, değil mi?
+
+651
+00:35:50,228 --> 00:36:07,228
+Şimdi bir başka sorumuz. Bakın iki tane vektör var. Kartezyen baz cinsinden ifade edilmiş. Bu vektörde bir C bilinmeyenin var. Eğer bu iki vektör birbirine dikse C ne olmalıdır diye soruyoruz.
+
+652
+00:36:07,228 --> 00:36:28,668
+Diklik şartı neydi? İki vektörün iç çarpımının sıfıra eşit olması idi. Çarpalım iki vektörü. Karşılıklı bileşenleri çarpacağız. Bir çarpı iki. Sonra eksi iki çarpı C.
+
+653
+00:36:28,668 --> 00:36:43,467
+İşte. Sonra artı üç çarpı bir. K'nın kat sayısı bir. O da üç eder. Bu sıfır olacakmış. Buradan C'yi çekersek beş bölü iki buluruz.
+
+654
+00:36:47,572 --> 00:36:48,832
+Bir başka sorumuz.
+
+655
+00:36:49,972 --> 00:36:54,672
+Bakın A ve B yaptıklarını şimdi bu bileşenler cinsinden vermişiz bakın.
+
+656
+00:36:55,032 --> 00:36:57,152
+Böyle de yazabiliyoruz vektörleri.
+
+657
+00:36:58,332 --> 00:37:00,791
+Bunların arasındaki teta açısını bulalım.
+
+658
+00:37:02,072 --> 00:37:05,452
+İki vektörün iç çarpımının tanımını hatırlarsak
+
+659
+00:37:05,452 --> 00:37:10,052
+A çarpı B, A'nın uzunluğu çarpı B'nin uzunluğu çarpı kosinüs teta.
+
+660
+00:37:11,012 --> 00:37:12,892
+Buradan kosinüs tetayı çekebilirsiniz.
+
+661
+00:37:13,652 --> 00:37:16,652
+Değil mi? Kosinüs tetanı çekerseniz bu olur.
+
+662
+00:37:17,572 --> 00:37:20,012
+İki vektörü skaler çarparsak
+
+663
+00:37:20,012 --> 00:37:23,892
+eksi bir çarpı bir, eksi bir.
+
+664
+00:37:25,172 --> 00:37:27,251
+İki çarpı iki, dört.
+
+665
+00:37:27,852 --> 00:37:28,332
+İşte burada.
+
+666
+00:37:29,731 --> 00:37:31,771
+Bir çarpı üç, üç.
+
+667
+00:37:33,092 --> 00:37:36,012
+Ve bunların uzunlukları, A'nın uzunluğu
+
+668
+00:37:36,012 --> 00:37:42,112
+kare kök içinde eksi birin karesi, artı ikinin karesi, artı birin karesi.
+
+669
+00:37:42,832 --> 00:37:46,052
+B'nin uzunluğu kare kök içinde birin karesi,
+
+670
+00:37:46,052 --> 00:37:49,492
+artı ikinin karesi, artı üçün karesi yazdık.
+
+671
+00:37:49,492 --> 00:37:50,092
+Yazdık.
+
+672
+00:37:51,132 --> 00:37:52,251
+Sonra düzenledik.
+
+673
+00:37:52,932 --> 00:37:53,251
+Düzenledik.
+
+674
+00:37:53,332 --> 00:37:54,251
+Kısaltma yapıyoruz.
+
+675
+00:37:56,412 --> 00:37:59,372
+Altıyla kare kök altıyı kısaltırsınız.
+
+676
+00:37:59,472 --> 00:38:00,771
+Yukarıda kök altı kalır.
+
+677
+00:38:02,412 --> 00:38:03,852
+Sonra şöyle olur.
+
+678
+00:38:03,932 --> 00:38:04,572
+Altı bölüyor.
+
+679
+00:38:05,112 --> 00:38:06,192
+On dört olur.
+
+680
+00:38:07,432 --> 00:38:09,032
+Sonra sadeleştirme yaparsanız,
+
+681
+00:38:09,251 --> 00:38:10,572
+üç bölü yedi olur.
+
+682
+00:38:10,751 --> 00:38:12,332
+Kosinüs teta üç bölü yedi.
+
+683
+00:38:12,332 --> 00:38:16,231
+Teta nedir dersek, buradan teta'yı da çekerseniz,
+
+684
+00:38:16,372 --> 00:38:21,112
+art kosinüs kare kök içinde üç bölü yedi bulursunuz.
+
+685
+00:38:24,512 --> 00:38:29,032
+Vektörlerle ilgili bir başka çarpmadan da bahsedebiliriz arkadaşlar.
+
+686
+00:38:29,032 --> 00:38:35,132
+Ona vektörel çarpım diyoruz.
+
+687
+00:38:35,532 --> 00:38:36,892
+Vektörel çarpım diyoruz.
+
+688
+00:38:38,672 --> 00:38:42,172
+Ve iki vektörün vektörel çarpımını da şöyle tanımlayacağız.
+
+689
+00:38:42,352 --> 00:38:44,112
+İki vektörün vektörel çarpımını,
+
+690
+00:38:45,192 --> 00:38:46,952
+işte burada bakın A vektörü var.
+
+691
+00:38:46,952 --> 00:38:52,172
+Bir de B vektörü var.
+
+692
+00:38:55,711 --> 00:38:57,652
+Bu iki vektörün vektörel çarpımı,
+
+693
+00:38:57,791 --> 00:38:59,771
+bu vektörlerin belirlediği,
+
+694
+00:39:00,452 --> 00:39:02,231
+belirlediği düzleme,
+
+695
+00:39:03,352 --> 00:39:04,452
+o şu düzleme bakın,
+
+696
+00:39:06,952 --> 00:39:07,592
+bu düzleme,
+
+697
+00:39:08,291 --> 00:39:10,532
+dik doğrultuda bir vektördür.
+
+698
+00:39:11,751 --> 00:39:14,372
+Yani C vektörü gibi bir vektördür.
+
+699
+00:39:14,372 --> 00:39:20,472
+Eğer A ve B vektörlerinin vektörel çarpımı C vektörüyse,
+
+700
+00:39:21,052 --> 00:39:22,852
+onu şöyle gösteriyoruz bakın.
+
+701
+00:39:23,472 --> 00:39:24,512
+Vektörel çarpımı,
+
+702
+00:39:25,412 --> 00:39:28,192
+A ile B'nin arasına ters B koyarak
+
+703
+00:39:28,192 --> 00:39:33,592
+veya çarpı koyarak
+
+704
+00:39:33,592 --> 00:39:35,832
+bu şekilde gösteriyoruz.
+
+705
+00:39:36,832 --> 00:39:39,092
+Ve biraz önce söylediğimiz gibi,
+
+706
+00:39:39,092 --> 00:39:42,532
+bu C vektörü hem A'ya diktir,
+
+707
+00:39:42,532 --> 00:39:45,291
+hem de B'ye diktir.
+
+708
+00:39:48,492 --> 00:39:50,652
+Eğer şurada bir,
+
+709
+00:39:51,352 --> 00:39:53,532
+bu şeklimizdeki C vektörünün
+
+710
+00:39:54,872 --> 00:39:56,912
+doğrultu ve yönünde
+
+711
+00:39:56,912 --> 00:39:59,532
+bir U birim vektörü alırsak,
+
+712
+00:40:02,392 --> 00:40:03,912
+C'nin doğrultu ve yönündeki
+
+713
+00:40:03,912 --> 00:40:07,492
+bir birim vektör U olmak üzere,
+
+714
+00:40:07,492 --> 00:40:10,132
+bunu başlarda söylemiştik,
+
+715
+00:40:10,211 --> 00:40:12,392
+uzunluğu bir olan vektör,
+
+716
+00:40:12,811 --> 00:40:15,092
+C doğrultu yönündeki vektör.
+
+717
+00:40:16,432 --> 00:40:17,592
+O zaman,
+
+718
+00:40:18,092 --> 00:40:19,711
+iki vektörün vektörel çarpımı
+
+719
+00:40:19,711 --> 00:40:21,211
+şöyle tanımlıyoruz arkadaşlar,
+
+720
+00:40:21,612 --> 00:40:22,372
+şöyle tanımlıyoruz.
+
+721
+00:40:24,132 --> 00:40:25,392
+A'nın uzunluğu,
+
+722
+00:40:25,492 --> 00:40:26,832
+çarpı B'nin uzunluğu,
+
+723
+00:40:27,231 --> 00:40:28,872
+sonra aradaki açının sünüsü,
+
+724
+00:40:29,532 --> 00:40:31,492
+sonra da U vektörü.
+
+725
+00:40:31,492 --> 00:40:33,492
+U vektörü.
+
+726
+00:40:35,332 --> 00:40:36,492
+Yani şu kısım,
+
+727
+00:40:37,152 --> 00:40:38,512
+şu kısım U'nun
+
+728
+00:40:38,512 --> 00:40:40,771
+kat sayısı olmuş oluyor,
+
+729
+00:40:40,972 --> 00:40:41,172
+değil mi?
+
+730
+00:40:41,271 --> 00:40:43,251
+Önündeki kat sayı olmuş oluyor.
+
+731
+00:40:44,244 --> 00:41:05,084
+Buradaki seçtiğimiz teta da yine a ve b vektörleri arasındaki sıfırla pi arasındaki olan açı olmak üzere. Böyle tanımlıyoruz ve bu tanıma baktığınız zaman şunu hemen görebiliyorsunuz değil mi? Bu a ve b vektörlerinin vektörel çarpımı bir vektör.
+
+732
+00:41:05,084 --> 00:41:20,044
+İç çarpımda bir sayı çıkıyordu ama vektörel çarpımda netice yine bir vektör çıkıyor. Bunu gözlemliyoruz.
+
+733
+00:41:22,044 --> 00:41:34,644
+Peki. Şimdi bu vektörel çarpımı kullanarak bazı özelliklerden bahsedelim. Yine üç vektör alalım. Bir de k skalerimiz olsun.
+
+734
+00:41:35,084 --> 00:42:05,064
+Vektörel çarpımda bir vektör.
+
+735
+00:41:45,331 --> 00:41:47,771
+A vektörel çarpım B vektörü.
+
+736
+00:41:50,471 --> 00:41:55,092
+Eksi B vektörü vektörel çarpım A vektörüdür.
+
+737
+00:41:56,251 --> 00:42:02,351
+Değişme özelliği yok ama böyle bir zıt işaretli olma durumu söz konusu.
+
+738
+00:42:02,351 --> 00:42:08,632
+Bunu biraz sonra bir özelliği söyleyince tekrar hatırlarız.
+
+739
+00:42:08,791 --> 00:42:10,791
+O zaman daha güzel göreceğiz.
+
+740
+00:42:10,791 --> 00:42:19,851
+Sonra bu vektörel çarpımın vektörlerin toplama işlemi üzerine dağılma özelliğinden bahsedebiliriz.
+
+741
+00:42:19,851 --> 00:42:36,011
+Yani A vektörel çarpım B vektörü artı C vektörü demek A vektörel çarpım B vektörü artı A vektörel çarpım C vektörü şeklinde söyleriz.
+
+742
+00:42:36,011 --> 00:42:46,351
+Skalerle vektörel çarpımı düşünürsek K çarpı A vektörü çarpı vektörel çarpım B vektörü demek.
+
+743
+00:42:47,771 --> 00:42:49,071
+Sadece bunlardan birini çarpıyoruz.
+
+744
+00:42:49,071 --> 00:42:50,072
+B vektörü çarpıyoruz.
+
+745
+00:42:50,072 --> 00:42:59,112
+Ya A'yı çarpıyoruz skalerle sonra vektörel çarpım diğeri ya da B'yi çarpıyoruz vektörel çarpım diğeri.
+
+746
+00:43:03,539 --> 00:43:04,039
+Evet.
+
+747
+00:43:08,788 --> 00:43:30,568
+Eğer C, A ile B'nin vektörel çarpımı, teta da bu iki vektör arasındaki açı ise, o zaman uzunluğu, C'nin uzunluğu, yani A vektörel çarpımı B'nin uzunluğu, A'nın uzunluğu, B'nin uzunluğu, sinüs teta olur.
+
+748
+00:43:40,467 --> 00:43:45,387
+Şurada ilk verdiğimiz tanıma bakarsak, ilk verdiğimiz tanım şuydu zaten.
+
+749
+00:43:58,291 --> 00:43:59,692
+Burası bir sayı.
+
+750
+00:44:01,831 --> 00:44:03,951
+Bir K gibi, değil mi?
+
+751
+00:44:05,351 --> 00:44:06,172
+K gibi.
+
+752
+00:44:07,552 --> 00:44:14,431
+İlk başlarda bir vektörün uzunluğunu hatırlarsanız, o neydi?
+
+753
+00:44:15,471 --> 00:44:23,431
+Bu K U'nun uzunluğu, o da K'nın mutlak değeri U'nun uzunluğuydu.
+
+754
+00:44:24,751 --> 00:44:25,791
+Değil mi?
+
+755
+00:44:25,791 --> 00:44:30,092
+Şimdi, K dediğimiz ifade bu.
+
+756
+00:44:30,211 --> 00:44:32,931
+Zaten burası pozitif bir sayı.
+
+757
+00:44:33,871 --> 00:44:36,172
+Bu K, B'nin uzunluğu pozitif bir sayı.
+
+758
+00:44:36,692 --> 00:44:43,572
+Sinüs teta da teta sıfırla pi aralarında değiştiği için, o da pozitif bir sayı olduğu için, bu K'nın mutlak değeri nedir?
+
+759
+00:44:44,751 --> 00:44:46,431
+K'dır.
+
+760
+00:44:47,391 --> 00:44:50,311
+U vektörü de birim vektörü olduğu için onun uzunluğu birdir.
+
+761
+00:44:50,531 --> 00:44:51,491
+Dolayısıyla bu ne olur?
+
+762
+00:44:52,971 --> 00:44:54,011
+A'nın uzunluğu.
+
+763
+00:44:54,011 --> 00:44:56,672
+B'nin uzunluğu.
+
+764
+00:44:58,431 --> 00:44:59,411
+Sünüs teta olur.
+
+765
+00:45:02,963 --> 00:45:19,083
+Ayrıca burada önemli bir özellikten bahsedeceğiz. Bu A çarpı, A vektörel çarpın B'nin uzunluğu, böyle herhangi bir şey değil, A ve B vektörleri üzerine kurulan paralel kenarının alanına eşit.
+
+766
+00:45:19,083 --> 00:45:33,643
+Biraz önce şeklimize, bakın, burada A ve B vektörleri üzerine kurulan paralel kenar şu oluyor, bakın.
+
+767
+00:45:36,423 --> 00:45:41,043
+Toplamı tanımlarken de bahsetmiştik bu paralel kenarda.
+
+768
+00:45:41,764 --> 00:45:47,523
+İşte bunun alanı, bunun alanı bu A ve B vektörlerin vektörel çarpımına eşit.
+
+769
+00:45:52,980 --> 00:46:05,380
+Ayrıca i, j, k, kartezyen bas vektörleriyle ilgili de şunları söyleyebiliriz kendi aralarındaki çarpımla ilgili olarak.
+
+770
+00:46:05,780 --> 00:46:16,420
+i vektörüyle i vektörünü vektörel çarparsak i ile i'nin arasındaki açı sıfır olduğu için sinüs sıfırda sıfıra eşit olduğundan ne olacaktır?
+
+771
+00:46:16,740 --> 00:46:17,559
+Sıfır olacaktır.
+
+772
+00:46:17,639 --> 00:46:18,320
+Sıfır vektörü.
+
+773
+00:46:18,559 --> 00:46:19,760
+Pardon sıfır vektörü.
+
+774
+00:46:19,760 --> 00:46:29,099
+j ile j'nin vektörel çarpımı benzer şekilde k ile k'nın vektörel çarpımı hep sıfır vektörüne eşit olacaktır.
+
+775
+00:46:30,519 --> 00:46:43,340
+i ile j'nin vektörel çarpımına bakacak olursak o da i'nin uzunluğu çarpı j'nin uzunluğu çarpı sinüs doksan çarpı
+
+776
+00:46:43,340 --> 00:46:49,420
+z ekseni diyebiliriz.
+
+777
+00:46:49,460 --> 00:46:52,719
+z ekseni doğrultu yönündeki prim vektörü o da k vektörü idi.
+
+778
+00:46:52,719 --> 00:46:59,280
+dolayısıyla 1 çarpı 1 çarpı 1 çarpı k vektörü k vektörünü verir.
+
+779
+00:47:01,159 --> 00:47:04,159
+i ile j'nin vektörel çarpımı k vektörüne eşit.
+
+780
+00:47:04,380 --> 00:47:10,880
+j ile k'ninki i, k vektörü ile i'nin vektörün çarpımı da j vektörüne eşittir.
+
+781
+00:47:10,880 --> 00:47:28,480
+eğer iki vektör birbirine eşitse veya a vektörü b vektörüne paralel ise o zaman bu iki vektör arasındaki açı sıfır olacak.
+
+782
+00:47:28,480 --> 00:47:29,159
+değil mi?
+
+783
+00:47:30,039 --> 00:47:31,840
+sıfır olunca ne olacak?
+
+784
+00:47:32,639 --> 00:47:34,400
+sinüs teta sıfır olacak.
+
+785
+00:47:34,940 --> 00:47:38,840
+o zaman vektörel çarpım sıfır vektör olacak.
+
+786
+00:47:40,460 --> 00:47:42,280
+sıfır vektör olacak.
+
+787
+00:47:43,099 --> 00:47:47,240
+biz buna iki vektörün paralellik şartı deriz.
+
+788
+00:47:49,840 --> 00:47:53,360
+yani iki vektörün paralellik şartı neymiş arkadaşlar?
+
+789
+00:47:53,360 --> 00:47:59,039
+a vektörü ile b vektörünün vektörel çarpımının sıfır olmasıdır.
+
+790
+00:48:00,460 --> 00:48:05,639
+hani problemde paralel olması için şu ne olmalıdır dersek
+
+791
+00:48:05,639 --> 00:48:13,000
+a ile b'nin vektörel çarpımını sıfır vektörü alarak işlem yapacağız.
+
+792
+00:48:15,699 --> 00:48:21,720
+sıfır vektörü ile a vektörünün vektörel çarpımı sıfır vektörüdür.
+
+793
+00:48:21,720 --> 00:48:23,780
+çünkü sıfır vektörünün uzunluğu sıfır idi.
+
+794
+00:48:25,699 --> 00:48:32,760
+eğer a ile b'yi kartezyen baz cinsinden ifade edersek
+
+795
+00:48:32,760 --> 00:48:37,500
+o zaman o zaman a ile b'nin vektörel çarpımı
+
+796
+00:48:37,500 --> 00:48:41,179
+şu determinantla hesaplanır.
+
+797
+00:48:41,579 --> 00:48:43,599
+birinci satıra determinatta
+
+798
+00:48:43,599 --> 00:48:48,420
+ijk vektörlerini yazıyoruz.
+
+799
+00:48:48,420 --> 00:48:50,260
+ikinci satıra
+
+800
+00:48:50,260 --> 00:48:54,000
+a'nın bileşenlerini yazıyoruz.
+
+801
+00:48:54,780 --> 00:48:55,960
+üçüncü satıra da
+
+802
+00:48:55,960 --> 00:49:00,300
+b'nin bileşenlerini yazıyoruz.
+
+803
+00:49:00,380 --> 00:49:02,900
+bu determinantı açarsanız
+
+804
+00:49:02,900 --> 00:49:04,480
+ijk cinsinden
+
+805
+00:49:04,480 --> 00:49:07,159
+bir ifade karşınıza çıkacak.
+
+806
+00:49:07,280 --> 00:49:07,739
+işte o
+
+807
+00:49:07,739 --> 00:49:10,880
+a ile b vektörünün
+
+808
+00:49:10,880 --> 00:49:11,739
+vektörel
+
+809
+00:49:11,739 --> 00:49:14,079
+çarpımı olacak arkadaşlar.
+
+810
+00:49:14,079 --> 00:49:19,480
+bu yeni verdiğimiz özellikle
+
+811
+00:49:19,480 --> 00:49:22,780
+biraz önceki özellikleri daha güzel görebilirsiniz.
+
+812
+00:49:22,920 --> 00:49:23,239
+örneğin
+
+813
+00:49:23,239 --> 00:49:26,159
+a vektörel çarpımı b
+
+814
+00:49:26,159 --> 00:49:28,699
+eksi b vektörel çarpımı a idi.
+
+815
+00:49:28,920 --> 00:49:29,780
+o ne olmuş oldu?
+
+816
+00:49:29,960 --> 00:49:31,539
+determinantta iki satır
+
+817
+00:49:31,539 --> 00:49:32,079
+değil mi?
+
+818
+00:49:32,119 --> 00:49:32,820
+şu iki satır
+
+819
+00:49:32,820 --> 00:49:34,260
+yer değiştirince
+
+820
+00:49:34,260 --> 00:49:37,059
+determinant işaret değiştiriyor demiştik.
+
+821
+00:49:37,059 --> 00:49:41,519
+sonra mesela şu üçüncü özellik
+
+822
+00:49:41,519 --> 00:49:42,699
+k ile
+
+823
+00:49:42,699 --> 00:49:45,199
+determinantı çarpmak demek
+
+824
+00:49:45,199 --> 00:49:45,900
+k ile
+
+825
+00:49:45,900 --> 00:49:48,300
+determinantın bir satırını
+
+826
+00:49:48,300 --> 00:49:50,260
+çarpmak demek değil mi?
+
+827
+00:49:50,800 --> 00:49:51,059
+bunlar
+
+828
+00:49:51,059 --> 00:50:13,559
+tamam mı?
+
+829
+00:49:51,668 --> 00:49:52,768
+Görülebilirler.
+
+830
+00:49:54,907 --> 00:50:15,168
+Şimdi bir örneğimiz var. Mesela bu en son söylediğimiz özellikle iki vektörü vektörel çarpalım. İşte bir U vektörü, bir B vektörü böyle bileşenleri cinsinden verilmiş. Bunların vektörel çarpımı, ona da W dersek, birinci satıra IGK vektörlerini yazdım.
+
+831
+00:50:15,168 --> 00:50:28,048
+İkinci satıra U'nun bileşenlerini yazdım. Üçüncü satıra da B'nin bileşenlerini yazdım. Sonra bu determinantı açacağız. Değil mi?
+
+832
+00:50:28,788 --> 00:50:43,488
+I çarpı, I'nin bulunduğu satır üstünü kapattık. Eksi bir çarpı üç. Eksi iki çarpı iki. O eksi yedi eder. Eksi yedi iyi. Bu şekilde J'nin katsayısı, K'nın katsayısı bulabiliriz.
+
+833
+00:50:43,488 --> 00:50:47,407
+Biz bunu bileşenler. Biz bunu bileşenler. Biz bunu bileşenler cinsinden direkt böyle de yazabiliriz.
+
+834
+00:50:47,407 --> 00:50:48,268
+Bu şekilde yazabiliriz.
+
+835
+00:50:57,235 --> 00:51:00,036
+Bakın burada bir başka örneğimiz var.
+
+836
+00:51:00,996 --> 00:51:02,096
+Bir başka örneğimiz var.
+
+837
+00:51:03,255 --> 00:51:05,935
+A vektörü verilmiş.
+
+838
+00:51:07,295 --> 00:51:09,735
+B vektörü verilmiş.
+
+839
+00:51:09,855 --> 00:51:11,096
+İki tane vektörümüz var.
+
+840
+00:51:14,771 --> 00:51:17,771
+Bunların biraz önce...
+
+841
+00:51:26,996 --> 00:51:28,996
+Bu, iki soruda...
+
+842
+00:51:33,364 --> 00:51:38,744
+Neyse biraz önceki sorudaki gibi çarpabilirsiniz.
+
+843
+00:51:39,003 --> 00:51:39,923
+Vektörel çarpım.
+
+844
+00:51:40,244 --> 00:51:41,644
+Böyle bir vektör bulacaksınız.
+
+845
+00:51:42,083 --> 00:51:43,284
+Siz sonra yapın görün.
+
+846
+00:51:44,284 --> 00:51:50,884
+Ama önce B ile B'yi yazarak çarparsanız B'yi de bunu bulacaksınız.
+
+847
+00:51:51,704 --> 00:51:52,144
+Tamam mı?
+
+848
+00:51:54,224 --> 00:51:56,864
+Ve burada şunu görüyorsunuzdur herhalde.
+
+849
+00:51:56,864 --> 00:51:58,824
+Birbirine kesinlikle eşit değil ama.
+
+850
+00:52:00,244 --> 00:52:01,804
+A vektörel çarpım.
+
+851
+00:52:01,963 --> 00:52:03,224
+B vektörel çarpım.
+
+852
+00:52:03,364 --> 00:52:05,264
+Eksi.
+
+853
+00:52:07,324 --> 00:52:11,523
+B vektörel çarpım A'yı da görüyorsunuz değil mi?
+
+854
+00:52:12,543 --> 00:52:14,184
+Eksi 1 ile çarpılmışı.
+
+855
+00:52:14,903 --> 00:52:16,844
+Eksi 35 var, 35 var.
+
+856
+00:52:17,443 --> 00:52:19,144
+15 var, eksi 15 var.
+
+857
+00:52:19,844 --> 00:52:21,324
+2 var, eksi 2 var.
+
+858
+00:52:23,824 --> 00:52:27,744
+Şimdi de bir başka soru.
+
+859
+00:52:29,563 --> 00:52:32,124
+İki tane vektörümüz var.
+
+860
+00:52:32,124 --> 00:52:35,324
+Bu iki vektör arasındaki açıyı bulacağız.
+
+861
+00:52:35,324 --> 00:52:47,043
+biraz önceki özelliklerde iki vektörün vektörel çarpımının uzunluğu buna eşitti arkadaşlar.
+
+862
+00:52:48,144 --> 00:52:49,264
+Buradan yararlanacağız.
+
+863
+00:52:49,264 --> 00:52:52,003
+Burada neleri bulmamız gerekiyor?
+
+864
+00:52:52,164 --> 00:52:54,563
+İki vektörün vektörel çarpımını bir kere bulacağız.
+
+865
+00:52:55,264 --> 00:52:56,244
+Onun uzunluğu lazım.
+
+866
+00:52:57,124 --> 00:52:59,063
+A'nın uzunluğu, B'nin uzunluğu lazım.
+
+867
+00:52:59,864 --> 00:53:03,503
+İşte iki vektörün vektörel çarpımını yine aynı yolda yapıyoruz.
+
+868
+00:53:03,503 --> 00:53:07,264
+Bu, bunun uzunluğu nedir?
+
+869
+00:53:12,596 --> 00:53:39,635
+Karakük içinde, eksi birin karesi, değil mi? Artı üçün karesi, artı eksi birin karesi. Bu da nedir? Dokuz, on, on birdir. İşte yazdık on bir buraya. Sonra buradan sinüs tetayı çekince, altta da A'nın uzunluğu, B'nin uzunluğu var. A'nın uzunluğu bu. İkinin karesi artı birin karesi artı birin.
+
+870
+00:53:39,635 --> 00:54:05,936
+B'nin uzunluğu, birin karesi artı sıfırın karesi artı eksi birin karesi. Bunları çarparsak bunu buluruz. Buradan da, buradan da tetayı nasıl yazarsınız? Arksinüs, kök on bir, iki çarpı kök üç. Bunu biraz daha düzenleyebilirsiniz isterseniz. Aynı kare kök içinde yazabilirsiniz. Bunlar size kalmış.
+
+871
+00:54:05,936 --> 00:54:10,936
+Şimdi bir başka sorumuz var.
+
+872
+00:54:10,936 --> 00:54:11,135
+Arkadaşlar.
+
+873
+00:54:11,135 --> 00:54:11,155
+Şimdi bir başka sorumuz var arkadaşlar.
+
+874
+00:54:20,692 --> 00:54:37,331
+Üç tane noktamız var. İşte burada bir nokta, iki nokta, üç nokta. Bu ABC üçgenin alanını bulalım diyoruz. ABC üçgenin alanını bulalım diyoruz.
+
+875
+00:54:42,068 --> 00:54:49,848
+Bu tabii, AB, D, C paralel kenarının yarısıdır.
+
+876
+00:54:49,848 --> 00:54:51,428
+AB, C üçgenin alanı.
+
+877
+00:54:53,048 --> 00:54:56,588
+Onu yazdık. İşte burada yarısı.
+
+878
+00:54:58,307 --> 00:55:04,008
+Biraz önce paralel kenarın alanından özelliklerde bahsetmiştik.
+
+879
+00:55:04,088 --> 00:55:05,848
+AB vektörü,
+
+880
+00:55:05,848 --> 00:55:16,807
+AC vektörü üzerine kurulan paralel kenarın alanı, bunların vektörel çarpımının uzunluğu idi.
+
+881
+00:55:17,348 --> 00:55:18,588
+Onu da yazdım buraya.
+
+882
+00:55:19,128 --> 00:55:21,028
+Tabii üçgenin bulunacağımız için bir bölü iki.
+
+883
+00:55:26,068 --> 00:55:28,068
+Şimdi AB vektörünü yazacağım.
+
+884
+00:55:29,228 --> 00:55:30,208
+AB vektörünü.
+
+885
+00:55:33,940 --> 00:55:38,720
+AB vektörü, B-A vektörü.
+
+886
+00:55:40,619 --> 00:55:45,880
+Şimdi, belki bu yeni gelebilir size. Onu biraz açıklayalım.
+
+887
+00:56:12,628 --> 00:56:30,988
+Şimdi burada şunları yapabiliriz. Bakın şuna A vektörü diyelim, buna da B vektörü diyelim. Şunu yasabiliriz herhalde.
+
+888
+00:56:34,771 --> 00:56:35,612
+Şöyle yazalım.
+
+889
+00:56:35,931 --> 00:56:37,011
+A vektörü
+
+890
+00:56:37,011 --> 00:56:40,011
+artı A B vektörü
+
+891
+00:56:40,011 --> 00:56:42,291
+eşit B vektörü.
+
+892
+00:56:43,491 --> 00:56:44,391
+Buradan da
+
+893
+00:56:44,391 --> 00:56:46,112
+B vektörünü
+
+894
+00:56:46,112 --> 00:56:47,391
+yazacak olursak
+
+895
+00:56:47,391 --> 00:56:49,971
+veya A B vektörünü
+
+896
+00:56:49,971 --> 00:56:50,811
+yazayım değil mi? O da
+
+897
+00:56:50,811 --> 00:56:53,152
+onunla ilgileniyoruz zaten biz.
+
+898
+00:56:54,451 --> 00:56:55,532
+A B vektörü
+
+899
+00:56:55,532 --> 00:56:57,172
+ne olur arkadaşlar?
+
+900
+00:56:58,072 --> 00:56:59,411
+B vektörü
+
+901
+00:56:59,411 --> 00:57:01,592
+eksi A vektörü.
+
+902
+00:57:02,271 --> 00:57:03,132
+Bu ne demekti?
+
+903
+00:57:03,132 --> 00:57:05,431
+B vektörü
+
+904
+00:57:05,431 --> 00:57:07,132
+artı eksi
+
+905
+00:57:07,132 --> 00:57:08,592
+bir çarpı A vektörü.
+
+906
+00:57:11,072 --> 00:57:13,132
+Mesela benim
+
+907
+00:57:13,132 --> 00:57:15,132
+koordinatları
+
+908
+00:57:15,132 --> 00:57:16,451
+B1, B2,
+
+909
+00:57:18,032 --> 00:57:19,132
+B3 ise
+
+910
+00:57:19,132 --> 00:57:22,431
+bununki de
+
+911
+00:57:22,431 --> 00:57:24,211
+A1,
+
+912
+00:57:24,851 --> 00:57:27,231
+A2, A3 ise
+
+913
+00:57:27,231 --> 00:57:29,911
+ne olacak?
+
+914
+00:57:30,672 --> 00:57:31,072
+Şurada
+
+915
+00:57:31,072 --> 00:57:33,371
+B1, B2,
+
+916
+00:57:33,371 --> 00:57:34,931
+B3 var.
+
+917
+00:57:35,471 --> 00:57:36,072
+Sonra artı
+
+918
+00:57:36,072 --> 00:57:57,072
+artı
+
+919
+00:57:40,371 --> 00:57:57,672
+eksi a1, eksi a2, eksi a3. Buradan da ne olur? B1 eksi a1. B2 eksi a2.
+
+920
+00:58:01,235 --> 00:58:03,496
+B3 eksi A3 olur.
+
+921
+00:58:05,996 --> 00:58:06,955
+Bakın.
+
+922
+00:58:07,775 --> 00:58:09,635
+A, B vektörünü yazarken
+
+923
+00:58:09,635 --> 00:58:13,576
+B'nin, ikinci olan B'nin
+
+924
+00:58:13,576 --> 00:58:17,455
+bileşenlerinden A'nın bileşenlerini
+
+925
+00:58:17,455 --> 00:58:19,496
+çıkartarak elde ediyoruz.
+
+926
+00:58:20,576 --> 00:58:21,615
+Bir A, B vektörü.
+
+927
+00:58:21,675 --> 00:58:23,795
+A ve B noktalara verildiyse
+
+928
+00:58:23,795 --> 00:58:26,415
+A, B vektörünü böyle yazıyoruz.
+
+929
+00:58:26,655 --> 00:58:27,395
+Tamam mı arkadaşlar?
+
+930
+00:58:28,755 --> 00:58:30,556
+Şimdi burada da onu yapıyoruz.
+
+931
+00:58:31,235 --> 00:58:33,375
+A, B vektörünü işte B'den A'yı
+
+932
+00:58:33,375 --> 00:58:35,315
+çıkartarak elde ettiğimiz ya da
+
+933
+00:58:35,315 --> 00:58:36,955
+A'nın, B'nin
+
+934
+00:58:36,955 --> 00:58:39,615
+bileşenlerinden
+
+935
+00:58:39,615 --> 00:58:41,655
+A'nın bileşenlerini çıkartarak
+
+936
+00:58:41,655 --> 00:58:44,135
+sonra bunu yazıyorum.
+
+937
+00:58:45,775 --> 00:58:47,576
+Sonra bunları vektörel
+
+938
+00:58:47,576 --> 00:58:48,475
+çarpacağız değil mi?
+
+939
+00:58:49,076 --> 00:58:49,955
+Vektörel çarpım.
+
+940
+00:58:50,835 --> 00:58:52,655
+İşte İ, J, K'yı yazdık.
+
+941
+00:58:52,655 --> 00:58:53,895
+Birinci satıra
+
+942
+00:58:53,895 --> 00:58:56,655
+A, B'nin
+
+943
+00:58:56,655 --> 00:59:02,056
+İ, J, K'yı yazdık.
+
+944
+00:59:02,056 --> 00:59:03,875
+Eksi bir, bir, eksi bir.
+
+945
+00:59:05,335 --> 00:59:08,016
+Sonra A, C'ninkileri yazdık.
+
+946
+00:59:08,096 --> 00:59:09,315
+Üç sıfır, eksi bir.
+
+947
+00:59:10,175 --> 00:59:12,115
+Bunu determinanta hesaplarsanız
+
+948
+00:59:12,115 --> 00:59:13,835
+böyle bir vektör bulursunuz.
+
+949
+00:59:14,715 --> 00:59:15,635
+Bunun uzunluğu da
+
+950
+00:59:15,635 --> 00:59:17,815
+bunun uzunluğu lazım bize.
+
+951
+00:59:17,815 --> 00:59:20,655
+kara kök içinde
+
+952
+00:59:20,655 --> 00:59:22,295
+eksi bir'in karesi,
+
+953
+00:59:22,635 --> 00:59:23,795
+eksi dördün karesi,
+
+954
+00:59:24,056 --> 00:59:25,175
+eksi üçün karesi.
+
+955
+00:59:25,635 --> 00:59:26,795
+Bunları da toplarsak
+
+956
+00:59:26,795 --> 00:59:28,475
+kök yirmi altı eder.
+
+957
+00:59:29,516 --> 00:59:31,955
+Ve biz üçgenin alanını
+
+958
+00:59:31,955 --> 00:59:33,036
+istiyorduk değil mi?
+
+959
+00:59:34,295 --> 00:59:35,435
+A, B, C üçgenini
+
+960
+00:59:35,435 --> 00:59:36,315
+demiştik değil mi?
+
+961
+00:59:36,375 --> 00:59:37,715
+A, B, C üçgeninin alanını.
+
+962
+00:59:37,715 --> 00:59:39,655
+O zaman
+
+963
+00:59:39,655 --> 00:59:44,915
+S, A, B, C üçgeninin alanı
+
+964
+00:59:44,915 --> 00:59:46,615
+bir bölü iki
+
+965
+00:59:46,615 --> 00:59:48,375
+paralel kenarın alanı olur.
+
+966
+00:59:48,715 --> 00:59:50,695
+Yani buna eşit olur.
+
+967
+01:00:01,043 --> 01:00:11,643
+Şimdi de 3 vektör verildiği zaman karışık çarpım ya da karma çarpım dediğimiz çarpımdan bahsedeceğiz.
+
+968
+01:00:12,824 --> 01:00:17,463
+Bu 3 vektörün bakın B ile C vektörel çarpım var.
+
+969
+01:00:18,543 --> 01:00:22,583
+A vektörü de bunlarla skaler çarpım oluyor.
+
+970
+01:00:22,583 --> 01:00:32,283
+İşte bu bunun neticesi de skaler çarpımı olduğu için en son bir sayıdır değil mi?
+
+971
+01:00:32,523 --> 01:00:33,103
+Bir sayıdır.
+
+972
+01:00:33,643 --> 01:00:42,203
+İşte bu sayı veya bu değere bu 3 vektörün karışık çarpımı ya da karma çarpımı diyoruz.
+
+973
+01:00:44,503 --> 01:00:49,403
+Bu çarpımla ilgili de şu özelliklerden bahsedebiliriz arkadaşlar.
+
+974
+01:00:49,403 --> 01:01:02,243
+Eğer bu 3 vektör kartezyen baz şeklinde verildiyse, bileşenleri şeklinde de verilse fark etmez.
+
+975
+01:01:02,903 --> 01:01:07,763
+Bu 3 vektörün karma çarpımı şu determinanta eşit.
+
+976
+01:01:07,763 --> 01:01:09,783
+Bakın 1. vektör A'ydı.
+
+977
+01:01:10,183 --> 01:01:23,263
+1. satıra determinanın A'nın bileşenlerini, 2. satıra B'nin bileşenlerini, 3. satıra C'nin bileşenlerini yazarak elde ettiğimiz determinantın değerine eşittir.
+
+978
+01:01:24,263 --> 01:01:26,763
+Determinantın değerine eşittir.
+
+979
+01:01:26,763 --> 01:01:32,763
+Ve şunları söyleyebiliriz.
+
+980
+01:01:33,903 --> 01:01:40,403
+Bu şimdiki yaptığımız, verdiğimiz ifadede kullanılarak kolaylıkla görülebilir.
+
+981
+01:01:41,163 --> 01:01:43,023
+Bu şimdiki söyleyeceğimiz özelliklere.
+
+982
+01:01:44,063 --> 01:01:48,243
+Bu karma çarpımı şöyle de ifade etmek mümkün.
+
+983
+01:01:48,243 --> 01:01:56,203
+A, B vektörel çarpım C'yi, B, C vektörel çarpım A şeklinde yazabilirsiniz.
+
+984
+01:01:57,703 --> 01:01:59,344
+Şöyle de yazabiliriz.
+
+985
+01:01:59,844 --> 01:02:00,043
+Değil mi?
+
+986
+01:02:00,864 --> 01:02:03,523
+Bunlar yine aynı determinanta satır değişimi.
+
+987
+01:02:03,523 --> 01:02:08,223
+Şunda ne olur?
+
+988
+01:02:08,324 --> 01:02:17,603
+Önce B'nin satırı, B'nin bileşenleri, 2. satıra C'ninkiler, 3. satıra A'ninkiler.
+
+989
+01:02:18,983 --> 01:02:24,563
+Buradaki değişikliğimleri düşünürseniz, eksi, eksi gelecek tekrar öne, tekrar artı olacak.
+
+990
+01:02:24,563 --> 01:02:29,743
+Benzer şekilde C çarpı A çarpı, vektörel çarpım B.
+
+991
+01:02:30,324 --> 01:02:31,703
+Bunu elde edebilirsiniz.
+
+992
+01:02:33,523 --> 01:02:35,743
+Ve şu eşitlikten bahsedebiliriz bakın.
+
+993
+01:02:37,963 --> 01:02:39,943
+Bu da yine determinant özelliklerinden,
+
+994
+01:02:40,344 --> 01:02:44,163
+determinant özelliklerinden demeyelim de,
+
+995
+01:02:45,844 --> 01:02:48,403
+skaler çarpımdan dolayı,
+
+996
+01:02:50,443 --> 01:02:51,304
+öyle demeyelim,
+
+997
+01:02:52,463 --> 01:02:55,304
+karıştıracağız, karıştırırız aksi takdirde.
+
+998
+01:02:56,183 --> 01:02:57,763
+Yani şöyle düşünebiliriz.
+
+999
+01:02:58,083 --> 01:03:03,163
+Bu parantezi sola doğru kaydırabiliyoruz ama bu şekilde kaydırıyoruz.
+
+1000
+01:03:03,523 --> 01:03:05,523
+Bu şekilde kaydırıyoruz.
+
+1001
+01:03:06,963 --> 01:03:08,884
+Şeklinde söyleyebiliriz.
+
+1002
+01:03:14,579 --> 01:03:33,159
+Pekala. Şimdi burada aynı vektörel çarpımda paralel kenarın alanıyla ilgili bir şey söylemiştik. Burada da 3 vektörün oluşturduğu paralel yüzlü var. O da şu.
+
+1003
+01:03:33,159 --> 01:03:38,380
+A vektörümüz şu olsun.
+
+1004
+01:03:41,500 --> 01:03:43,460
+B vektörümüz de bu olsun.
+
+1005
+01:03:46,639 --> 01:03:48,840
+C de şu vektör olsun. Tamam mı?
+
+1006
+01:03:50,599 --> 01:03:52,699
+Bu 3 vektör bir paralel yüzlü
+
+1007
+01:03:52,699 --> 01:03:54,480
+oluşturur.
+
+1008
+01:03:59,764 --> 01:04:01,503
+O da şudur.
+
+1009
+01:04:14,643 --> 01:04:16,803
+Böyle bir paralel yüzlü oluşturur.
+
+1010
+01:04:17,903 --> 01:04:25,863
+İşte bunun hacmi bu karma çarpımla, bu üç vektörün karma çarpımıyla elde edilir.
+
+1011
+01:04:27,023 --> 01:04:31,863
+A çarpı, B vektörü, vektörel çarpım, C vektörü.
+
+1012
+01:04:33,183 --> 01:04:38,863
+Bu üç vektörün üzerine kurulan paralel yüzlünün hacmidir deriz.
+
+1013
+01:04:40,863 --> 01:04:43,363
+Yalnız burada şunu da söylememiz lazım.
+
+1014
+01:04:43,363 --> 01:04:48,183
+Bakın neticede şöyle bir determinant hesaplayacağız.
+
+1015
+01:04:50,203 --> 01:04:52,563
+Paralel yüzlünün hacmini bulurken.
+
+1016
+01:04:54,003 --> 01:04:56,263
+Burada şuna dikkat etmek lazım.
+
+1017
+01:04:59,403 --> 01:05:09,943
+Bu çarpımla paralel yüzlünün hacmini tıpa tıp birbirine eşit şeklinde düşünmeyelim.
+
+1018
+01:05:09,943 --> 01:05:12,363
+Çünkü bazen bu eksi çıkabilir arkadaşlar.
+
+1019
+01:05:13,363 --> 01:05:17,403
+Çünkü bu determinantdan dolayı, determinantdan dolayı eksi çıkabilir.
+
+1020
+01:05:17,943 --> 01:05:22,983
+Eğer karma çarpımı bulacaksak bu determinantın değeri neyse onu yazmamız lazım.
+
+1021
+01:05:24,043 --> 01:05:29,483
+Ama hacmi bulacaksak eğer eksi çıkarsa da hacmi eksi olmaz deyip mutlak değerini alacağız.
+
+1022
+01:05:29,483 --> 01:05:34,543
+Burada bu söylediğimle ilgili bir örneğimiz var.
+
+1023
+01:05:34,623 --> 01:05:36,023
+Bakın üç tane vektörümüz var.
+
+1024
+01:05:37,023 --> 01:05:38,983
+Birleşenler cizminden verilmiş.
+
+1025
+01:05:39,103 --> 01:05:43,543
+Bu üç vektör üzerine kurulan paralel yüzlünün hacmini bulun diyorlar.
+
+1026
+01:05:44,203 --> 01:05:46,683
+Bu determinantı hesaplayacağız.
+
+1027
+01:05:47,863 --> 01:05:49,923
+Bunu hesapladığınız zaman eksi on bir çıkıyor.
+
+1028
+01:05:49,923 --> 01:05:51,243
+O zaman diyeceğiz ki ne?
+
+1029
+01:05:51,343 --> 01:05:52,103
+V diyeceğiz.
+
+1030
+01:05:52,243 --> 01:05:53,363
+On birdir diyeceğiz.
+
+1031
+01:05:55,403 --> 01:05:58,323
+Ama bize sadece şeyi sorsalardı.
+
+1032
+01:05:59,003 --> 01:06:03,163
+Bu üç vektörün karma çarpımını bulunur deselerdi.
+
+1033
+01:06:03,643 --> 01:06:04,923
+Biz eksi on bir yazacaktık.
+
+1034
+01:06:04,923 --> 01:06:09,343
+Tamam mı?
+
+1035
+01:06:09,743 --> 01:06:10,703
+Buna dikkat edelim.
+
+1036
+01:06:12,263 --> 01:06:13,823
+Şimdi bir başka çarpım.
+
+1037
+01:06:14,003 --> 01:06:20,103
+Yine üç vektörle yapabileceğimiz bir başka çarpımdan bahsedeceğiz.
+
+1038
+01:06:21,223 --> 01:06:24,763
+Verilen üç vektörün şu şekildeki.
+
+1039
+01:06:25,503 --> 01:06:28,463
+Yani A ile vektörel çarpım yapıyoruz.
+
+1040
+01:06:28,703 --> 01:06:28,983
+Neyi?
+
+1041
+01:06:29,543 --> 01:06:31,023
+B vektörel çarpım C'yi.
+
+1042
+01:06:31,023 --> 01:06:36,223
+İşte buna biz bu üç vektörün iki kat vektörel çarpımı diyoruz.
+
+1043
+01:06:37,563 --> 01:06:43,243
+Ve iki kat vektörel çarpımının neticesinde de yine bir vektör elde ederiz.
+
+1044
+01:06:43,703 --> 01:06:46,783
+Çünkü en son vektörel çarpım yapıyoruz.
+
+1045
+01:06:46,903 --> 01:06:49,823
+Vektörel çarpımının neticesinde vektör elde ediyorduk.
+
+1046
+01:06:51,763 --> 01:06:55,063
+Bu iki kat vektörel çarpımla da ilgili şu özellik var arkadaşlar.
+
+1047
+01:06:56,983 --> 01:06:59,743
+A vektörel çarpım B vektörel çarpım C.
+
+1048
+01:06:59,743 --> 01:07:00,943
+Şuna eşit bakın.
+
+1049
+01:07:00,943 --> 01:07:17,603
+Bakın.
+
+1050
+01:07:05,492 --> 01:07:24,652
+Yani skaler çarpımı, A ile C'nin skaler çarpımı, sonra B'nin skaler çarpımı, eksi A ile B'nin skaler çarpımı, sonra C'nin skaler çarpımıdır. Böylelikle daha kolay hesaplayabiliriz değil mi bu vektörü? Skaler çarpımı, hemen karşılıklı birleşenleri çarpıyorduk.
+
+1051
+01:07:24,652 --> 01:07:47,372
+Yani şurada, B'nin kat sayısını hemen bulabilirsiniz. C'nin kat sayısını bulup, iki vektörün sonra farkını alacaksınız. Ya da, önce B ile C'yi vektöre çarpımı yapacaksınız, determinant kullanarak. Ondan sonra tekrar bulduğunuz vektörü A ile yine determinant kullanarak çarpabilirsiniz.
+
+1052
+01:07:47,372 --> 01:08:01,472
+Şunu söyleyebiliriz. Şunu söyleyebiliriz. Şunu söyleyebiliriz. Şunu söyleyebiliriz. Genelde eşit değildir bunlar. Yani parantezi bir kaydırdığımız zaman eşit olmaz. Mesela bunu görebileceğimiz bir örnek var. Üç tane vektörümüz var.
+
+1053
+01:08:03,972 --> 01:08:14,231
+Bunun bu eşitliğin olmadığını görelim. A ile B'yi vektörel çarparsak, bu olur.
+
+1054
+01:08:14,231 --> 01:08:16,132
+Bu olur.
+
+1055
+01:08:17,372 --> 01:08:46,832
+Sonra bununla.
+
+1056
+01:08:54,644 --> 01:09:07,923
+13'yi artı 29'yi artı 26 kaydı. Diğeri de 3'yi eksi 3'yi artı 3K buluyoruz ve bunlar bir M eşit değiller.
+
+1057
+01:09:09,824 --> 01:09:13,583
+Evet, dersimizin geri kalan kısmında birkaç tane örnek yapalım.
+
+1058
+01:09:18,484 --> 01:09:23,584
+E ve F noktaların yer vektörleri şöyle verilsin.
+
+1059
+01:09:23,584 --> 01:09:26,923
+Ve bunların arasında
+
+1060
+01:09:30,899 --> 01:09:33,719
+Daha doğrusu, bir C ve D
+
+1061
+01:09:40,500 --> 01:09:43,840
+noktalarından bahsediyoruz. Şöyle diyelim.
+
+1062
+01:09:46,060 --> 01:09:49,239
+E, C vektörü eşit 3, E, F vektörü.
+
+1063
+01:09:53,043 --> 01:10:03,043
+FD vektörü eşit 2 FE vektörleri veriliyor.
+
+1064
+01:10:04,323 --> 01:10:13,463
+Burada OE E vektörü, OFF vektörü yer vektörleri. Bu şekilde bunlar veriliyor.
+
+1065
+01:10:13,463 --> 01:10:29,184
+Burada biz bu ifadedeki C ve D noktalarının yer vektörlerini, yani O, C, O, D'den bahsediyoruz.
+
+1066
+01:10:29,344 --> 01:10:39,963
+Bunların yer vektörlerini E ve F, şu verilen E ve F vektörleri cinsinden bulun diye söyleniyor bize.
+
+1067
+01:10:44,180 --> 01:10:50,079
+Biraz önce bunu açıklamıştım ben, hatırlarsanız.
+
+1068
+01:10:50,900 --> 01:10:57,060
+E, F vektörü O, F eksi O, E, E'ye eşitlemiştik.
+
+1069
+01:10:59,860 --> 01:11:03,060
+Bu da F eksi E'dir.
+
+1070
+01:11:04,280 --> 01:11:08,180
+O, F yerine F, O, E yerine E yazarsak F eksi E olur.
+
+1071
+01:11:08,180 --> 01:11:16,840
+C ve D noktaların yer vektörleri de C ve sırasıyla D olsun.
+
+1072
+01:11:19,240 --> 01:11:32,900
+E, C'yi yazacak olursam, E, C'yi, o da ikinci noktanın yer vektörü, sonra birinci noktanın yer vektörü buna eşit.
+
+1073
+01:11:32,900 --> 01:11:42,180
+F'de D eksi F vektörü bunları şu ifadede yazıyoruz.
+
+1074
+01:11:42,980 --> 01:11:45,960
+E, C, 3, E, F'di.
+
+1075
+01:11:47,060 --> 01:11:51,400
+E, C, şuradan C eksi E olur.
+
+1076
+01:11:52,539 --> 01:11:58,579
+Sonra 3 çarpı, 3 çarpı, F eksi E, onu da şuradan yazıyoruz.
+
+1077
+01:11:58,579 --> 01:12:07,740
+Dolayısıyla C vektörünü bakın E ve F cinsinden yazmış olduk.
+
+1078
+01:12:10,480 --> 01:12:14,360
+F'de buna eşit.
+
+1079
+01:12:15,680 --> 01:12:17,920
+Şuradan verilmişti.
+
+1080
+01:12:17,920 --> 01:12:24,180
+D eksi F olduğunu söylemiştik F'de'nin.
+
+1081
+01:12:26,100 --> 01:12:29,100
+2 çarpı, 2 çarpı E eksi F'ye.
+
+1082
+01:12:32,435 --> 01:13:00,715
+fe'yi de bulmak lazım. fe'yi de şuradaki gibi hemen bulabilirsiniz. Bu da nedir? fe, e, e-e. Onu yazdık. Sonra 2e, eksi 2f, eksi f'yi de öbür tarafa götürürsek, şunu buluruz. Bu şekilde yapılabilir.
+
+1083
+01:13:10,003 --> 01:13:28,304
+Peki, şöyle bir sorumuz var arkadaşlar. U ve 3 tane vektörümüz var. U ve W. Onların arasında şu bağıntılar var. Bunların 3'ünün toplamı 0 vektör. Bunların kendileriyle skaler çarpımı 1.
+
+1084
+01:13:28,304 --> 01:13:43,644
+1. Şunları bulun diyoruz. B ile W, V'nin skaler çarpımını, W ile U'nun skaler çarpımını, U ile V'nin skaler çarpımı nedir? Diye soruyoruz.
+
+1085
+01:13:44,403 --> 01:13:55,043
+Siz bunu 1-2 dakika düşünün bakalım. Yapmaya çalışın bilgilerimize göre. Bu verilen 2 tane de bağıntı var. O bağıntılar kullanılarak yapılması gerekiyor.
+
+1086
+01:13:55,043 --> 01:14:01,043
+Evet, size biraz düşünme süresi tanıyorum. Siz yapmaya çalışınız.
+
+1087
+01:15:15,923 --> 01:15:17,743
+Evet biraz düşünülürsiniz herhalde.
+
+1088
+01:15:19,064 --> 01:15:27,163
+Şimdi şu verilen ilk ifadede bu ifadenin iki yanını hem U ile çarpıyoruz bir değer buluyoruz.
+
+1089
+01:15:27,163 --> 01:15:31,463
+Tabi U ile U'nun çarpımının bir olduğunu da kullanacağız.
+
+1090
+01:15:31,583 --> 01:15:32,764
+Biraz sonra şurada verilmiş.
+
+1091
+01:15:33,823 --> 01:15:35,323
+Sonra V ile çarpıyoruz.
+
+1092
+01:15:35,423 --> 01:15:36,224
+Sonra da W ile.
+
+1093
+01:15:36,403 --> 01:15:37,524
+Bakın U ile çarptık.
+
+1094
+01:15:38,463 --> 01:15:39,844
+V ile çarptık.
+
+1095
+01:15:40,604 --> 01:15:43,384
+W ile çarptık verilen ifadeyi.
+
+1096
+01:15:43,863 --> 01:15:44,844
+Verilen ifade neydi?
+
+1097
+01:15:44,844 --> 01:15:48,184
+U artı V artı W sıfır vektörü idi.
+
+1098
+01:15:49,323 --> 01:15:58,583
+Burada U ile U'nun çarpımının V ile V'nin çarpımını ve W ile W'nun çarpımı yerine bir yazarsak.
+
+1099
+01:15:59,743 --> 01:16:04,224
+Sonra şu denklem sistemine indirgeriz.
+
+1100
+01:16:05,944 --> 01:16:09,463
+Tabi bunu normal denklem sistemlerin çözümü gibi de çözebilirsiniz.
+
+1101
+01:16:09,463 --> 01:16:19,283
+Ya da o denklem sistemlerinin çözümünde yaptığımız şeyleri daha hızlı yaparak şöyle yapabiliriz.
+
+1102
+01:16:19,724 --> 01:16:21,903
+Burada birinci denklemle ikinci denkleme bakın.
+
+1103
+01:16:23,264 --> 01:16:25,804
+Şöyle taraf tarafa topladığımız zaman ne olur?
+
+1104
+01:16:25,804 --> 01:16:29,203
+İki tane U çarpı V olur.
+
+1105
+01:16:30,144 --> 01:16:31,384
+U ile V'nin çarpımı.
+
+1106
+01:16:31,463 --> 01:16:32,524
+V ile U'nun çarpımı.
+
+1107
+01:16:32,583 --> 01:16:34,024
+Skalert çarpımlar birbirine eşitti.
+
+1108
+01:16:35,283 --> 01:16:36,963
+Değişme özelliği vardı yani.
+
+1109
+01:16:38,043 --> 01:16:40,823
+Sonra U çarpı V duruyor.
+
+1110
+01:16:40,884 --> 01:16:42,024
+Bir de V çarpı W.
+
+1111
+01:16:42,644 --> 01:16:43,543
+U çarpı W.
+
+1112
+01:16:43,764 --> 01:16:44,743
+V çarpı W.
+
+1113
+01:16:44,743 --> 01:16:50,564
+Bunlar iki denklemi toplamımız için şunu da toplarsak eksi iki eder.
+
+1114
+01:16:51,444 --> 01:16:51,604
+Tamam.
+
+1115
+01:16:53,623 --> 01:16:56,264
+Buradan da şunu yazabiliriz.
+
+1116
+01:16:58,823 --> 01:17:06,543
+İki tane U çarpı V şu ifadenin yerine bu ifadenin yerine üçüncü denklemden.
+
+1117
+01:17:07,083 --> 01:17:07,984
+Değil mi?
+
+1118
+01:17:08,344 --> 01:17:11,064
+Üçüncü denklemden eksi bir yazarsınız.
+
+1119
+01:17:11,064 --> 01:17:14,363
+Eşit eksi iki.
+
+1120
+01:17:15,144 --> 01:17:17,684
+Buradan U çarpı V'yi bulursunuz.
+
+1121
+01:17:18,703 --> 01:17:21,503
+Benzer şekilde diğerlerini de bulabiliriz.
+
+1122
+01:17:28,564 --> 01:17:32,824
+Şimdi bu soruyu size bırakarak geçiyorum ben.
+
+1123
+01:17:33,164 --> 01:17:34,584
+Bunu siz bakabilirsiniz.
+
+1124
+01:17:35,364 --> 01:17:36,744
+Üçüncü soruyu geçelim.
+
+1125
+01:17:38,423 --> 01:17:39,824
+Bunu almış oldunuz.
+
+1126
+01:17:40,923 --> 01:17:41,764
+Şu soruya bakalım.
+
+1127
+01:17:42,224 --> 01:17:47,364
+Bu iki vektörün toplamına paralel olan birim vektörü bulununuz diyor.
+
+1128
+01:17:48,664 --> 01:17:51,024
+İki tane vektörümüz var bunların toplamına paralel.
+
+1129
+01:17:52,264 --> 01:17:53,604
+Buna A vektörü diyelim.
+
+1130
+01:17:53,604 --> 01:17:55,624
+Bunların toplamı olan vektöre.
+
+1131
+01:17:55,624 --> 01:18:01,564
+Toplarsak karşılıklı birleşenleri toplayarak toplam vektörünü elde edebiliriz.
+
+1132
+01:18:02,904 --> 01:18:10,144
+Bakın bu A vektörü doğrultusundaki birim vektörü bulacağız.
+
+1133
+01:18:10,284 --> 01:18:11,704
+Doğrultusundaki birim vektörü.
+
+1134
+01:18:12,264 --> 01:18:14,124
+Onu da yine başlarda söylemiştik.
+
+1135
+01:18:14,224 --> 01:18:15,444
+Şundan buluyorduk değil mi?
+
+1136
+01:18:15,604 --> 01:18:19,204
+Bir bölü A'nın modülü çarpı A vektörü.
+
+1137
+01:18:19,204 --> 01:18:22,144
+A'nın modülünü bulmamız gerekiyor.
+
+1138
+01:18:22,824 --> 01:18:25,564
+Üçün karesi artı ikinin karesi artı birin karesi.
+
+1139
+01:18:25,624 --> 01:18:26,944
+Karepik içinde.
+
+1140
+01:18:27,784 --> 01:18:29,423
+A'nın modülü on dört olur.
+
+1141
+01:18:31,684 --> 01:18:36,304
+Buradan da vektörü bu şekilde alabiliriz.
+
+1142
+01:18:37,364 --> 01:18:39,364
+Buraya artı eksi yazdık.
+
+1143
+01:18:40,304 --> 01:18:42,164
+Niye artı eksi yazdık?
+
+1144
+01:18:42,164 --> 01:18:49,764
+Çünkü bu U ile V'nin yönündeki birim vektörü olur.
+
+1145
+01:18:49,824 --> 01:18:51,344
+Bir de ters yöndeki değil mi?
+
+1146
+01:18:52,204 --> 01:18:52,944
+Ters yöndeki.
+
+1147
+01:18:53,564 --> 01:19:00,644
+Eğer U ile V'nin yönündeki aynı yöndeki deseydik direktman birini alırdık.
+
+1148
+01:19:00,704 --> 01:19:06,984
+Ama burada doğrultusu U ile V vektörünün toplamının doğrultusunda.
+
+1149
+01:19:06,984 --> 01:19:11,064
+O zaman U artı V'nin yönünde de olabilir bu bir vektör.
+
+1150
+01:19:11,543 --> 01:19:12,784
+Bunun ters yönünde de olabilir.
+
+1151
+01:19:12,884 --> 01:19:15,284
+Onun için artı eksiği de buraya koymuş olduk arkadaşlar.
+
+1152
+01:19:15,284 --> 01:19:21,484
+Bir başka sorumuz var.
+
+1153
+01:19:22,484 --> 01:19:23,844
+İki tane vektörümüz var bakın.
+
+1154
+01:19:25,184 --> 01:19:26,404
+U vektörü ve V vektörü.
+
+1155
+01:19:26,463 --> 01:19:30,543
+Bunların aralarındaki açıyı bulalım diye sorumuz var.
+
+1156
+01:19:30,543 --> 01:19:35,564
+Skalier çarpımda kosünüs tetayı bulabiliyorduk değil mi?
+
+1157
+01:19:36,304 --> 01:19:37,064
+Kosünüs tetayı.
+
+1158
+01:19:37,824 --> 01:19:39,864
+U ile V'nin skalier çarpımı neydi?
+
+1159
+01:19:39,963 --> 01:19:42,604
+U'nun uzunluğu, V'nin uzunluğu sonra kosünüs tetaydı.
+
+1160
+01:19:43,503 --> 01:19:44,684
+İşte U'nun uzunluğu burada.
+
+1161
+01:19:45,484 --> 01:19:46,423
+Hemen bulabilirsiniz.
+
+1162
+01:19:48,524 --> 01:19:49,904
+V'nin uzunluğunu buluyoruz.
+
+1163
+01:19:50,003 --> 01:19:53,444
+U ile V'nin skalier çarpımını yazdık.
+
+1164
+01:19:53,444 --> 01:20:05,344
+U çarpı ve eşit U'nun modülü, V'nin modülü kosünüs tetaydı.
+
+1165
+01:20:06,444 --> 01:20:09,904
+Buradan tetayı çekebilirsiniz.
+
+1166
+01:20:16,595 --> 01:20:37,155
+Teta'yı çektiğiniz zaman şu olur. U ile V'nin skaler çarpımı eksi 4 bulmuştuk, yazdık. Sonra uzunluklarını yazıyoruz. Düzenlediğimiz zaman bu olur. Buradan da tabii teta'yı ark kosünüs eksi 4 bölü kare kök üzeri 4 olarak bulabiliriz.
+
+1167
+01:20:37,815 --> 01:20:45,135
+Ben burada dersimi bitirmek istiyorum arkadaşlar. Sorunuz varsa bana buyurun sorunuz.
+
+1168
+01:20:49,363 --> 01:21:11,263
+Var mı? Anlaşılmayan yer. Peki [öğrenci], teşekkür ederim cevap yazdığın için. [öğrenci] sana da, [öğrenci] sana da. O zaman gelecek ders görüşürüz. Hepinize iyi dersler, iyi günler diliyorum arkadaşlar. Hoşçakalın.
+
+1169
+01:21:12,863 --> 01:21:13,803
+İyi günler hocam.
+
+1170
+01:21:14,263 --> 01:21:14,803
+İyi günler.
