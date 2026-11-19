@@ -6,4 +6,4 @@
 | :---: | :---: | :--- | :--- |
 | 1 | Güz | Yunus Emre Selçuk | [sube_1/](sube_1/) |
 | 2 | Güz | Prof. Dr. M. Fatih Amasyalı | [sube_2/](sube_2/) |
-| 3 | Güz | Yunus Emre Selçuk | [sube_3/](sube_3/) |
+| 3 | Güz | Dr. Yunus Emre Selçuk | [sube_3/](sube_3/) |
