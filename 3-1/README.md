@@ -246,6 +246,8 @@
 - 📄 **Ders Kayıtları:** [Mikroişlemci Sistemleri Ders Kayıtları Altyazıları](./Mikroi%C5%9Flemci%20Sistemleri%20ve%20Assembly%20Dili/Mikroi%C5%9Flemci%20Sistemleri/ders_kayitlari/2020-2021/) ✨
 - 📄 **Ders Kayıtları:** [Mikroişlemci Sistemleri ve Assembly Dili Ders Kayıtları Altyazıları](./Mikroi%C5%9Flemci%20Sistemleri%20ve%20Assembly%20Dili/ders_kayitlari/) ✨
 - 📄 **Not:** [El yazısı not](./Mikroi%C5%9Flemci%20Sistemleri%20ve%20Assembly%20Dili/Mikroi%C5%9Flemci%20Sistemleri/slaytlar_notlar/2022/notlar) ✨
+- 📄 **Not:** [Enes Utku Selbes'in 2025 Notu](./Mikroi%C5%9Flemci%20Sistemleri%20ve%20Assembly%20Dili/slaytlar_notlar/2025/enes_utku_selbes) ✨
+- 📄 **Not:** [Mert Güler'in 2025 El Yazısı Mikroişlemci Notu](./Mikroi%C5%9Flemci%20Sistemleri%20ve%20Assembly%20Dili/slaytlar_notlar/2025/mert_guler/not.pdf) ✨
 - 📄 **Not:** [Nasırın el yazısı alt seviye notu](./Mikroi%C5%9Flemci%20Sistemleri%20ve%20Assembly%20Dili/alt%20seviye%20programlama/slaytlar_notlar/2021/nas%C4%B1r%20el%20yaz%C4%B1s%C4%B1.pdf) render edilemiyorsa indirin... ✨
 - 📄 [Genel Çıkmış Sorular](https://drive.google.com/drive/folders/1imIiwx0xxIPWREGP-YqotnFdUku8Ealf)
   - ℹ️ Kaynaklar öğrenciler tarafından oluşturulmuştur. Bundan dolayı içeriklerin doğruluğu garanti edilemez.
