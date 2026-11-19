@@ -14,3 +14,4 @@
 | 28 | Bahar | Bulunamadı | [sube_28/](sube_28/) |
 | 29 | Bahar | Bulunamadı | [sube_29/](sube_29/) |
 | 33 | Bahar | Bulunamadı | [sube_33/](sube_33/) |
+| 35 | Bahar | Filiz (soyadı bulunamadı) | [sube_35/](sube_35/) |
