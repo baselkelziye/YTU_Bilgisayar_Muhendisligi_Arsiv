@@ -1,0 +1,8095 @@
+1
+00:08:34,707 --> 00:08:36,727
+Merhaba arkadaşlar, nasılsınız?
+
+2
+00:08:38,648 --> 00:08:40,168
+Merhaba hocam, iyisi nasılsınız?
+
+3
+00:08:40,427 --> 00:08:41,767
+Teşekkür ederim, sağ olun.
+
+4
+00:08:42,747 --> 00:08:53,487
+Geçen haftaki en son yaptığımız derste, düzlemde, 3 boyutlu uzayda daha doğrusu, doğrular ve düzlemler konusuna başladık.
+
+5
+00:08:53,607 --> 00:08:56,247
+Doğrunun denklemini verdik, düzleminin denklemini verdik.
+
+6
+00:08:56,247 --> 00:08:59,987
+Onları tekrar hatırlatayım isterseniz dersin başında.
+
+7
+00:08:59,987 --> 00:09:11,727
+Daha sonra uzayda birbirine gören düzlemlerin konumunu ve bir doğrunun düzleme göre konumu nasıl olur, onları yorumlamaya çalışacağız.
+
+8
+00:09:12,007 --> 00:09:19,408
+Ve daha sonra da iki tane düzlemin ara kesit doğrusunu nasıl belirleyebiliriz, ondan söz edeceğiz.
+
+9
+00:09:19,408 --> 00:09:26,288
+Tabii bunlar biraz da iki tane dektörün vektörel çarpımıyla da ilişkili olacak bazı durumlarda.
+
+10
+00:09:26,288 --> 00:09:30,327
+Öncelikle doğru ve düzleminin, doğru ve düzleminin, doğru ve düzleminin, denklemini tekrar hatırlayalım.
+
+11
+00:09:30,467 --> 00:09:31,387
+Nasıl elde etmiştik?
+
+12
+00:09:31,987 --> 00:09:34,867
+Şuraya uzayda doğru diyelim.
+
+13
+00:09:35,827 --> 00:09:40,187
+Uzayda doğrunun parametrik denklemi.
+
+14
+00:09:47,668 --> 00:10:02,807
+Ne vardı? Elimizde 0 noktasından P0'a doğru bir R0 vektörümüz vardı, konum vektörü ve P'ye doğru da, şurası da P noktası olsun.
+
+15
+00:10:02,807 --> 00:10:13,008
+Biraz daha uzatayım bunu. P noktası, koordinatlarını da yazalım. Şurası X, Y, Z ile verilmiş. P0 noktası, onu biraz daha geriye yazayım.
+
+16
+00:10:17,668 --> 00:10:22,288
+P0 noktası da X0, Y0, Z0 ile verilmiş.
+
+17
+00:10:26,836 --> 00:10:28,495
+Yerine denk ettiremedik ama.
+
+18
+00:10:29,196 --> 00:10:34,816
+Şurada P0'dan P'ye doğru bir tane doğru geçiyor.
+
+19
+00:10:34,936 --> 00:10:36,536
+Ona L doğrusu diyeceğiz.
+
+20
+00:10:36,676 --> 00:10:38,796
+O doğrunun parametrik denklemini bulmak istiyoruz.
+
+21
+00:10:38,796 --> 00:10:46,056
+Fakat tam olarak tabii L'nin bir de doğrultu vektörü var elimizde.
+
+22
+00:10:46,255 --> 00:10:49,296
+Doğrultu vektöründe V ile gösterelim.
+
+23
+00:10:49,475 --> 00:10:52,196
+V'nin koordinatları ABC olsun.
+
+24
+00:10:52,196 --> 00:11:00,836
+Bu şekilde bir geometrik durum var elimizde.
+
+25
+00:11:01,716 --> 00:11:07,475
+Şimdi iki tane vektörün toplamını düşünürsek de burası R vektörü diyeceğiz.
+
+26
+00:11:08,196 --> 00:11:09,735
+Şurası R0 vektörü.
+
+27
+00:11:10,656 --> 00:11:13,056
+İki vektörün farkını almak için ne yapıyorduk?
+
+28
+00:11:13,235 --> 00:11:16,596
+Bir tane vektörü eksi 1 ile çarpıp diğerini de toplamamız lazım.
+
+29
+00:11:16,755 --> 00:11:21,196
+Dolayısıyla R-R0 vektörüne baktığımız zaman
+
+30
+00:11:21,196 --> 00:11:23,115
+R-R0 vektörü.
+
+31
+00:11:23,895 --> 00:11:24,755
+Bu eşittir.
+
+32
+00:11:25,395 --> 00:11:26,375
+Fark vektör olacak.
+
+33
+00:11:26,556 --> 00:11:27,156
+Yani ne yapacağız?
+
+34
+00:11:27,255 --> 00:11:28,716
+R0'ı ters çevireceğiz.
+
+35
+00:11:28,716 --> 00:11:33,655
+Şu okum yönü R'nin başlangıç noktasına gelmesi lazım.
+
+36
+00:11:34,536 --> 00:11:35,755
+Bu bir toplam aslında.
+
+37
+00:11:35,936 --> 00:11:37,596
+Peki bu toplam neye eşit?
+
+38
+00:11:37,936 --> 00:11:39,296
+Aslında bileşkelerine eşit.
+
+39
+00:11:39,436 --> 00:11:47,516
+Yani şu R'nin bitişiyle R0'ın bitişiyle R'nin bitişini birleştiren R vektörüne paralel bir vektör olacak.
+
+40
+00:11:47,676 --> 00:11:48,615
+Tam olarak boyu o mu?
+
+41
+00:11:49,416 --> 00:11:50,375
+Ondan emin değiliz.
+
+42
+00:11:50,375 --> 00:11:54,676
+O yüzden şuraya T çarpı V diyeceğiz.
+
+43
+00:11:54,676 --> 00:12:01,635
+Buradan R'yi vektörlerdeki işlemlerden hareketle şu şekilde yazabiliriz.
+
+44
+00:12:01,716 --> 00:12:02,635
+Yalnız bırakabiliriz.
+
+45
+00:12:02,696 --> 00:12:04,855
+R0 vektörünü karşı tarafa atabilirim.
+
+46
+00:12:04,916 --> 00:12:05,755
+Buradan hepsi vektör.
+
+47
+00:12:05,855 --> 00:12:06,916
+Sağ tarafta bir vektör.
+
+48
+00:12:07,255 --> 00:12:08,216
+Üç boyutlu uzayda.
+
+49
+00:12:08,216 --> 00:12:15,176
+R0 artı T çarpı V şeklinde bir vektör elde etmiş olduk.
+
+50
+00:12:15,176 --> 00:12:45,176
+Buna biz L doğrusunu vektörden vektörden vektörden vektörden vektörden vektörden vektörden vektörden vektörden vektörden vektörden vektörden vektörden vektörden vektörden vektörden vektörden vektörden vektörden vektörden vektörden vektörden vektörden vektörden vektörden vektörden vektörden vektörden vektörden vektörden vektörden vektörden vektörden vektörden vektörden vektörden vektörden vektörden vektörden vektörden vektörden vektörden vektörden vektörden vektörden vektörden vektörden vektörden vektörden vektörden vektörden vektörden vektörden vekt
+
+51
+00:12:45,176 --> 00:12:46,176
+Z0 Z0 olacak.
+
+52
+00:12:46,596 --> 00:12:49,395
+Burası da X0 Z0
+
+53
+00:12:49,395 --> 00:12:53,256
+Pardon Y0 demem gerekiyor şuraya
+
+54
+00:12:53,256 --> 00:12:57,336
+Y0 Z0
+
+55
+00:12:57,336 --> 00:12:59,995
+Artı T çarpı ABC
+
+56
+00:12:59,995 --> 00:13:03,115
+Bir vektörün bir skalerle çarpılması
+
+57
+00:13:03,115 --> 00:13:05,756
+Burada T dediğimiz şey herhangi bir real sayı
+
+58
+00:13:05,756 --> 00:13:06,975
+K2 bir real sayı
+
+59
+00:13:06,975 --> 00:13:09,655
+O zaman
+
+60
+00:13:09,655 --> 00:13:11,995
+Şuraya yazacak olursak
+
+61
+00:13:11,995 --> 00:13:15,036
+Karşılıklı iki vektörün eşitliğinde
+
+62
+00:13:15,036 --> 00:13:16,196
+Sağ tarafı topladım
+
+63
+00:13:16,196 --> 00:13:18,235
+X0 artı T çarpı Y0
+
+64
+00:13:18,235 --> 00:13:20,836
+İkinci koordinat Y0 artı T çarpı ve
+
+65
+00:13:20,836 --> 00:13:23,235
+Z0 artı T çarpı C şeklinde oldu
+
+66
+00:13:23,235 --> 00:13:25,036
+O zaman birleşen birleşen eşitlikten
+
+67
+00:13:25,036 --> 00:13:26,475
+X eşittir
+
+68
+00:13:26,475 --> 00:13:29,756
+X0 artı A çarpı T
+
+69
+00:13:29,756 --> 00:13:32,076
+Y eşittir
+
+70
+00:13:32,076 --> 00:13:33,296
+Y0 artı
+
+71
+00:13:33,296 --> 00:13:35,395
+B çarpı T ve
+
+72
+00:13:35,395 --> 00:13:37,276
+Z eşittir
+
+73
+00:13:37,276 --> 00:13:39,716
+Z0 artı C çarpı T oldu
+
+74
+00:13:39,716 --> 00:13:42,756
+Burada T'nin real sayı olduğunu belirtmiştik
+
+75
+00:13:42,756 --> 00:13:44,556
+Dolayısıyla bu ifadeye
+
+76
+00:13:44,556 --> 00:13:48,176
+Biz L'nin L doğrusunun parametrik denklemi diyeceğiz
+
+77
+00:13:48,176 --> 00:13:50,355
+L doğrusunun parametrik denklemi
+
+78
+00:13:50,355 --> 00:13:51,456
+Eğer
+
+79
+00:13:51,456 --> 00:13:55,355
+L üzerinde bir doğru parçası işaretlemek istersek
+
+80
+00:13:55,355 --> 00:13:57,056
+T'yi sınırlandırmamız lazım
+
+81
+00:13:57,056 --> 00:13:58,475
+T değeri
+
+82
+00:13:58,475 --> 00:13:59,255
+Bunu da
+
+83
+00:13:59,255 --> 00:14:01,596
+0 ile 1 aralığında aldığımız zaman
+
+84
+00:14:01,596 --> 00:14:03,735
+Başlangıç ve bitiş noktasını vermiş olacağız
+
+85
+00:14:03,735 --> 00:14:05,635
+Bu da bize bir doğru parçası verecek
+
+86
+00:14:05,635 --> 00:14:07,836
+Bir de uzayda
+
+87
+00:14:07,836 --> 00:14:12,135
+Düzlemden söz edebiliriz
+
+88
+00:14:12,135 --> 00:14:14,176
+Düzlem denklemi diyelim
+
+89
+00:14:14,176 --> 00:14:21,076
+Düzlemden söz
+
+90
+00:14:17,395 --> 00:14:30,075
+Düzleme geçmeden önce şöyle bir nokta daha belirtelim. Bir doğru denklemi elde edebilmek için bizim iki tane noktaya ya da buna alternatif olarak bir tane nokta ve bir doğrultuya ihtiyacımız var.
+
+91
+00:14:30,075 --> 00:14:38,995
+Bunları da şuraya yazalım. Bir, iki tane nokta, başını da yazalım. Başını da yazalım, anlamlı olsun.
+
+92
+00:14:38,995 --> 00:14:52,695
+Bir doğru denklemi elde edebilmek için, bir doğru denklemi için diyelim, uzatmayalım. Bir, iki tane nokta.
+
+93
+00:14:56,500 --> 00:15:02,659
+İkinci olarak da bir nokta ve bir doğrultu.
+
+94
+00:15:05,139 --> 00:15:08,519
+Bir doğrultudan kastımız yeşille gösterdiğimiz vektör.
+
+95
+00:15:09,179 --> 00:15:11,299
+Ve ihtiyacımız var. Gerekir diye.
+
+96
+00:15:13,659 --> 00:15:19,240
+Düzlem için, düzlemin denklemini oluştururken, şöyle bir düzlemimiz olsun.
+
+97
+00:15:23,508 --> 00:15:27,008
+Düzlem üzerinde bir P0 noktası seçtik yine.
+
+98
+00:15:27,948 --> 00:15:31,548
+X0, Y0, Z0 koordinatlarına ya da birleşenlerine sahip.
+
+99
+00:15:31,668 --> 00:15:33,208
+Koordinat dememem gerekiyor orada.
+
+100
+00:15:35,468 --> 00:15:38,687
+Ve düzlem üzerinde keyfi bir tane P noktası seçiyorum.
+
+101
+00:15:39,728 --> 00:15:40,948
+Birleşenler X, Y, Z.
+
+102
+00:15:41,108 --> 00:15:41,628
+Bu ne demek?
+
+103
+00:15:41,768 --> 00:15:44,708
+Düzlem üzerindeki her bir noktayı tarayabilirim.
+
+104
+00:15:44,868 --> 00:15:46,608
+Yani X, Y, Z keyfi değerler alıyor.
+
+105
+00:15:46,728 --> 00:15:48,508
+Tabii düzlem içinde kalma koşuluyla.
+
+106
+00:15:48,948 --> 00:15:50,348
+Sınırlarının dışına çıkmıyorum.
+
+107
+00:15:50,348 --> 00:16:00,848
+Düzlemin denklemini belirleyebilmek için de bizim bir normal vektöre ihtiyacımız var.
+
+108
+00:16:01,028 --> 00:16:02,307
+Şunu ne ile gösterelim?
+
+109
+00:16:02,408 --> 00:16:04,648
+Tabii yönü aşağı doğru da olabilir bu neyinin.
+
+110
+00:16:05,248 --> 00:16:06,508
+Şöyle de X, Y diyelim.
+
+111
+00:16:07,268 --> 00:16:09,268
+Bunlardan herhangi biri olabilir.
+
+112
+00:16:10,028 --> 00:16:12,448
+Koordinatları şöyle büyük harflerle göstermiştik.
+
+113
+00:16:12,648 --> 00:16:13,488
+Onunla uyumlu olsun.
+
+114
+00:16:13,628 --> 00:16:14,888
+A, B, C ile gösterelim.
+
+115
+00:16:14,968 --> 00:16:17,548
+Ya da aşağıda X, Y, X, Y, X, C şeklinde olabilir.
+
+116
+00:16:17,548 --> 00:16:24,927
+Bu normal vektör dediğimiz şey düzlemin her noktasında düzleme dik olan bir vektör.
+
+117
+00:16:25,908 --> 00:16:36,988
+Düzlemin her noktasında düzleme dikse özel olarak P0'ı P'ye birleştiren, P0 noktasını P noktasına birleştiren vektöre de dik olacak değil mi?
+
+118
+00:16:36,988 --> 00:16:42,368
+Birbirine dik olan iki vektörün İ çarpımı sıfır olduğunda o zaman şu denklemi çözersek,
+
+119
+00:16:43,567 --> 00:16:50,088
+N, İ çarpı P0 P vektörü dersem bunun sonucu sıfır olacaktır.
+
+120
+00:16:51,348 --> 00:16:56,067
+Düzlemin denklemini oluşturabilmek için o zaman P0 P vektörünü belirlemem yeterli.
+
+121
+00:16:56,067 --> 00:17:05,148
+Onu da belirlediğimizde N çarpı, N belliydi zaten, İ çarpım tabii buradaki çarpı dediğim şey,
+
+122
+00:17:05,728 --> 00:17:11,208
+X eksi X0, Y eksi Y0, Z eksi Z0.
+
+123
+00:17:11,288 --> 00:17:14,048
+İki tane nokta varsa onlardan bir vektör elde edebiliyorum.
+
+124
+00:17:14,148 --> 00:17:16,067
+Vektörler konusunda bundan bahsetmiştik.
+
+125
+00:17:16,067 --> 00:17:20,327
+O zaman açık yazdığımızda N'nin koordinatları ABC idi.
+
+126
+00:17:21,367 --> 00:17:27,928
+İ çarpım, X eksi X0, Y eksi Y0 ve Z eksi Z0.
+
+127
+00:17:28,048 --> 00:17:29,448
+Tabii şuna sıfıra eşitlemem lazım.
+
+128
+00:17:29,587 --> 00:17:30,827
+Neden? Çünkü birbirine dik.
+
+129
+00:17:31,307 --> 00:17:33,067
+Dik iki tane vektörün...
+
+130
+00:17:33,067 --> 00:17:34,548
+...
+
+131
+00:17:37,556 --> 00:17:39,036
+Şurayı eksik bıraktım.
+
+132
+00:17:39,756 --> 00:17:40,355
+Kafam biraz
+
+133
+00:17:40,355 --> 00:17:42,756
+başka yerlerde sanki.
+
+134
+00:17:44,296 --> 00:17:45,635
+z eksi z sıfır.
+
+135
+00:17:47,155 --> 00:17:48,736
+Eşittir sıfır diyeceğiz.
+
+136
+00:17:49,236 --> 00:17:50,855
+İ çarpımı yaptığımızda
+
+137
+00:17:50,855 --> 00:17:52,496
+a çarpı x eksi x sıfır
+
+138
+00:17:52,496 --> 00:17:54,915
+artı b çarpı
+
+139
+00:17:54,915 --> 00:17:57,415
+y eksi y sıfır
+
+140
+00:17:57,415 --> 00:17:59,615
+artı c çarpı
+
+141
+00:17:59,615 --> 00:18:01,316
+z eksi z sıfır
+
+142
+00:18:01,316 --> 00:18:03,196
+eşittir sıfır. Buradan da
+
+143
+00:18:03,196 --> 00:18:05,276
+bilinmeyenleri
+
+144
+00:18:05,276 --> 00:18:07,355
+bir tarafa toplayıp sabitleri
+
+145
+00:18:07,355 --> 00:18:08,855
+sağ tarafa attığımızda
+
+146
+00:18:08,855 --> 00:18:11,536
+ax artı b y
+
+147
+00:18:11,536 --> 00:18:13,436
+artı c z eşittir.
+
+148
+00:18:13,556 --> 00:18:15,135
+Sağ tarafta da şöyle bir şey olacak.
+
+149
+00:18:16,036 --> 00:18:17,316
+a çarpı x sıfır.
+
+150
+00:18:17,355 --> 00:18:19,716
+x sıfır bir skaler. Sonuçta noktanın
+
+151
+00:18:20,336 --> 00:18:21,316
+değerleri belli olacak.
+
+152
+00:18:21,436 --> 00:18:23,216
+Bu belli bir nokta. Buna ihtiyacımız var.
+
+153
+00:18:23,655 --> 00:18:25,675
+ax sıfır artı
+
+154
+00:18:25,675 --> 00:18:27,956
+b y sıfır artı c z sıfır
+
+155
+00:18:27,956 --> 00:18:29,675
+şeklinde. Buna da totalde
+
+156
+00:18:29,675 --> 00:18:31,556
+biz ne demiştik? D gibi bir
+
+157
+00:18:31,556 --> 00:18:33,496
+değer demiştik. Düzlemde
+
+158
+00:18:33,496 --> 00:18:35,516
+çok pardon düzlem diyorum.
+
+159
+00:18:35,615 --> 00:18:37,155
+3 boyutlu uzayda
+
+160
+00:18:37,355 --> 00:18:40,496
+bir noktası ve normali bilinen
+
+161
+00:18:40,496 --> 00:18:43,596
+düzlemin denklemini genel anlamda bu şekilde
+
+162
+00:18:43,596 --> 00:18:45,875
+verebiliriz. Eğer elimizde
+
+163
+00:18:45,875 --> 00:18:48,635
+bir normal vektör yoksa
+
+164
+00:18:48,635 --> 00:18:52,476
+alternatif olarak şundan da bahsedeyim.
+
+165
+00:18:53,036 --> 00:18:55,756
+Bir nokta ve bir normal vektör varsa
+
+166
+00:18:55,756 --> 00:18:58,516
+biz düzlem denklemi elde edebiliriz.
+
+167
+00:18:58,516 --> 00:19:01,536
+onu da şuraya yazalım. Bir düzlem elde edebilmek için.
+
+168
+00:19:01,655 --> 00:19:02,336
+Bir düzlem
+
+169
+00:19:02,336 --> 00:19:04,756
+denklemi
+
+170
+00:19:04,756 --> 00:19:09,576
+için. Birinci olarak
+
+171
+00:19:09,576 --> 00:19:12,236
+burada tanımda verildiği haliyle
+
+172
+00:19:12,236 --> 00:19:14,375
+bir
+
+173
+00:19:14,375 --> 00:19:16,916
+p sıfır noktası
+
+174
+00:19:16,916 --> 00:19:18,696
+noktası
+
+175
+00:19:18,696 --> 00:19:19,175
+veya
+
+176
+00:19:19,175 --> 00:19:20,875
+veya dedim
+
+177
+00:19:20,875 --> 00:19:22,016
+yanlış söyledim.
+
+178
+00:19:22,796 --> 00:19:23,615
+Dikkatli
+
+179
+00:19:23,615 --> 00:19:25,916
+takip edin arkadaşlar. Hatalarımı lütfen
+
+180
+00:19:25,916 --> 00:19:26,556
+söyleyin.
+
+181
+00:19:27,115 --> 00:19:28,456
+Kendi hatalarımı kendim
+
+182
+00:19:28,456 --> 00:19:29,056
+yakalıyorum.
+
+183
+00:19:29,796 --> 00:19:30,556
+Noktası
+
+184
+00:19:30,556 --> 00:19:31,016
+ve
+
+185
+00:19:31,016 --> 00:19:32,516
+bir p sıfır noktası ve
+
+186
+00:19:32,516 --> 00:19:32,976
+bir ne
+
+187
+00:19:32,976 --> 00:19:33,936
+normali.
+
+188
+00:19:35,655 --> 00:19:36,696
+Normalden kastımız
+
+189
+00:19:36,696 --> 00:19:38,915
+düzleme her noktada dik olan bir vektör.
+
+190
+00:19:39,436 --> 00:19:41,496
+Eğer normal yoksa elimizde peki
+
+191
+00:19:41,496 --> 00:19:43,375
+nasıl biz düzlem
+
+192
+00:19:43,375 --> 00:19:45,115
+denklemi elde edebiliriz?
+
+193
+00:19:45,256 --> 00:19:46,316
+İkinci olarak o zaman
+
+194
+00:19:46,316 --> 00:19:47,675
+üç tane nokta.
+
+195
+00:19:48,936 --> 00:19:50,496
+Üç tane nokta.
+
+196
+00:19:51,556 --> 00:19:52,756
+Üç tane nokta varsa
+
+197
+00:19:52,756 --> 00:19:54,916
+düzlemin denklemini nasıl teşkil edeceğiz?
+
+198
+00:19:55,115 --> 00:19:57,576
+Normali bu üç nokta yardımıyla oluşturacağız.
+
+199
+00:19:58,115 --> 00:20:00,036
+Şöyle bir düzlem var elimizde yine.
+
+200
+00:20:03,700 --> 00:20:06,120
+Düzlem üzerinde 3 tane noktamız var.
+
+201
+00:20:06,759 --> 00:20:11,740
+Şurası P0 olsun, şurası P1 olsun ve P2 olsun.
+
+202
+00:20:14,019 --> 00:20:20,259
+Noktalardan herhangi birini biz başlangıç noktası kabul ederek vektörler oluşturabiliriz.
+
+203
+00:20:20,319 --> 00:20:24,160
+Biz böyle bir tercih yapalım.
+
+204
+00:20:24,259 --> 00:20:26,220
+P0'ı kesişim noktası kabul edelim.
+
+205
+00:20:26,220 --> 00:20:31,080
+Şurası P0, biraz da alta yazalım.
+
+206
+00:20:31,080 --> 00:20:36,559
+P0, P1 vektörü, şurası P0, P2 vektörü.
+
+207
+00:20:36,900 --> 00:20:49,200
+Dolayısıyla yine vektörler konusundan hatırlayacağımız üzere 2 tane vektörün vektörel çarpımı o 2 vektörün her ikisine de dik olan 3. bir vektör oluşturuyordu.
+
+208
+00:20:49,680 --> 00:20:50,900
+Biz buna da ne diyelim?
+
+209
+00:20:51,100 --> 00:20:51,900
+Ne eşittir?
+
+210
+00:20:52,620 --> 00:20:54,960
+P0, ters yazmam lazım.
+
+211
+00:20:55,100 --> 00:20:59,860
+P0, P2 vektörel çarpım P0, P1.
+
+212
+00:20:59,860 --> 00:21:00,579
+Bu doğru oldu.
+
+213
+00:21:00,580 --> 00:21:01,980
+Sağ el kuralı geçerliydi.
+
+214
+00:21:02,059 --> 00:21:07,700
+Ya da zıt yönde, eksi yönde, eksi ne diyelim biz ona da?
+
+215
+00:21:08,579 --> 00:21:09,920
+Bunu da tercih edebiliriz.
+
+216
+00:21:10,000 --> 00:21:13,360
+Normal vektör olarak sonuçta o da düzlemin her noktasına dik.
+
+217
+00:21:14,880 --> 00:21:16,620
+Bu da ne eşit olacak?
+
+218
+00:21:16,620 --> 00:21:46,620
+P0, P1 vektörü
+
+219
+00:21:46,620 --> 00:22:00,039
+uzayda bir düzlem oluşturabilmek için bir nokta ve bir normal vektöre ihtiyacımız var ya da buna alternatif olarak üç tane noktamız varsa biz bir düzlem denklemi oluşturabiliriz sevgili arkadaşlar.
+
+220
+00:22:00,259 --> 00:22:02,240
+Burada sormak istediğiniz bir şey var mı?
+
+221
+00:22:03,759 --> 00:22:06,340
+Geçen haftanın son dersinde özetlemiş olduk.
+
+222
+00:22:06,440 --> 00:22:09,920
+Vektörler konusunu oraya girmeyeceğim.
+
+223
+00:22:10,059 --> 00:22:12,200
+Geriye doğru her şeyi özetlersek zaten.
+
+224
+00:22:13,160 --> 00:22:14,640
+Eğer bir şey yoksa devam edelim.
+
+225
+00:22:14,640 --> 00:22:18,480
+Uzayda paralel ve kesecen doğrular ve düzlemler.
+
+226
+00:22:18,900 --> 00:22:23,380
+Şimdi bu durumu biz talih ederken nereyle ilgileneceğiz?
+
+227
+00:22:24,079 --> 00:22:25,160
+Düzlemler için.
+
+228
+00:22:25,740 --> 00:22:29,420
+Eğer iki tane düzlem paralelse birbirine
+
+229
+00:22:29,420 --> 00:22:32,279
+Şimdi bir tane düzlem çizeyim.
+
+230
+00:22:34,779 --> 00:22:36,880
+Şurası D1 düzlemi olsun.
+
+231
+00:22:37,380 --> 00:22:41,160
+D1 düzleminin tabii ki bir tane N1 normali olacak.
+
+232
+00:22:41,160 --> 00:22:46,380
+Yani düzlemin her noktasında düzleme dik olan bir normal vektör.
+
+233
+00:22:47,019 --> 00:22:49,500
+Bir tane daha düzlem çizelim buna paralel.
+
+234
+00:22:49,720 --> 00:22:50,700
+D2 düzlemi.
+
+235
+00:22:51,539 --> 00:22:53,680
+D2 düzlemini çizdiğimizde
+
+236
+00:22:53,680 --> 00:22:57,960
+D2'nin de bir tane normal vektörü olacak.
+
+237
+00:22:57,960 --> 00:23:01,420
+Eğer D1 paralel D2 ise
+
+238
+00:23:01,420 --> 00:23:03,799
+Bu neyi zorunlu kılacak?
+
+239
+00:23:04,140 --> 00:23:07,200
+Normallerinin de birbirine paralel olmasını zorunlu kılacak.
+
+240
+00:23:07,880 --> 00:23:09,220
+Eğer normaller paralelse
+
+241
+00:23:09,220 --> 00:23:11,960
+Tabii bunu çift tarafı gerektirme olarak yazabiliriz.
+
+242
+00:23:12,980 --> 00:23:16,400
+İki düzlemin normalleri paralelse düzlemler paralel.
+
+243
+00:23:16,559 --> 00:23:19,620
+İki düzlem paralelse normalleri paralel olmak zorunda.
+
+244
+00:23:19,620 --> 00:23:43,620
+İki düzlemler.
+
+245
+00:23:23,892 --> 00:23:28,272
+Paralel olmayan iki düzden bir doğru boyunca kesişir.
+
+246
+00:23:28,711 --> 00:23:30,532
+İki düzden birbirine paralel değilse,
+
+247
+00:23:30,612 --> 00:23:33,451
+şimdi doğruların birbirine göre durumunu düşündüğümüzde
+
+248
+00:23:33,451 --> 00:23:36,852
+iki tane doğru, şöyle yapalım,
+
+249
+00:23:37,112 --> 00:23:39,251
+bir ya paraleldir birbirine,
+
+250
+00:23:39,471 --> 00:23:41,572
+şuraları L1, L2 diyelim,
+
+251
+00:23:42,532 --> 00:23:46,772
+L1 paralel, L1 paraleldir, L2.
+
+252
+00:23:46,971 --> 00:23:50,432
+İkinci olarak tek noktada kesişi olabilirler.
+
+253
+00:23:51,292 --> 00:23:53,192
+Şuraya L1 diyelim, şuraya L2.
+
+254
+00:23:53,192 --> 00:23:55,632
+Noktamız da P0 noktası olsun.
+
+255
+00:23:56,172 --> 00:23:59,572
+L1 kesişim L2 eşittir, P0 noktasıdır.
+
+256
+00:24:00,292 --> 00:24:05,312
+Tabi bu hangi uzaydaysa noktanın bileşenleri o kadar olacak.
+
+257
+00:24:05,471 --> 00:24:10,471
+R karede ise iki tane koordinatı olan ya da bileşeni olan bir nokta,
+
+258
+00:24:10,552 --> 00:24:12,072
+R küpte ise üç tane bileşeni.
+
+259
+00:24:12,072 --> 00:24:13,032
+Bu şekilde.
+
+260
+00:24:14,251 --> 00:24:21,612
+Üçüncü olarak da çakışık olabilir doğrular.
+
+261
+00:24:22,032 --> 00:24:22,292
+Değil mi?
+
+262
+00:24:22,292 --> 00:24:23,612
+Çakışık olabilir.
+
+263
+00:24:23,771 --> 00:24:25,471
+Başka bir durum söz konusu olamaz.
+
+264
+00:24:27,771 --> 00:24:32,072
+Peki uzayda tabi bu söylediğim şey iki boyutlu uzayda geçerli.
+
+265
+00:24:32,271 --> 00:24:33,251
+Çakışıklık durumu.
+
+266
+00:24:33,471 --> 00:24:34,692
+Yani L1 eşittir.
+
+267
+00:24:34,692 --> 00:24:38,172
+K çarpı L2 şeklinde bir katı olur.
+
+268
+00:24:38,172 --> 00:24:39,012
+Çakışıklık bu.
+
+269
+00:24:39,012 --> 00:24:42,892
+Bu R karede geçerli.
+
+270
+00:24:44,192 --> 00:24:51,012
+Boyut 3'ten büyükse birbirine ne paralel olur, ne kesişen olur, ne çakışık olur.
+
+271
+00:24:51,112 --> 00:24:52,612
+Böyle durumlar söz konusu olabilir.
+
+272
+00:24:52,612 --> 00:25:00,132
+Demek ki 3 boyut 3 ve daha büyükse doğruların birbirlerine göre durumları çok özel bir hal alıyor.
+
+273
+00:25:00,332 --> 00:25:04,032
+Ama iki boyutlu uzayda bunları kesin olarak söyleyebiliriz.
+
+274
+00:25:04,032 --> 00:25:10,012
+Ama biz doğruları linear denklemler olarak düşünürsek tabi bu her uzayda geçerli olacak.
+
+275
+00:25:10,152 --> 00:25:13,552
+Paralel olduğu durum sistemin ne olması?
+
+276
+00:25:13,672 --> 00:25:17,852
+Tutarsız olması, çözümün olmaması, tek noktada kesişmesi unique solution.
+
+277
+00:25:17,991 --> 00:25:23,471
+Yani tek çözümün olması ve çakışık olması da parametreye bağlı sonsuz tane çözümün olması demek.
+
+278
+00:25:23,471 --> 00:25:33,491
+Bu doğruları biz linear denklemler olarak düşünürsek bir denklem sisteminin çözümlerine yönelik yapacağımız genel geometrik yorum olacaktır.
+
+279
+00:25:34,032 --> 00:25:43,572
+Fakat geometrik bir yorum olarak doğruların birbirine göre konumunu biz genel anlamda en boyutlu uzayda düşündüğümüzde sadece R karede bunları söyleyebiliriz.
+
+280
+00:25:44,711 --> 00:25:50,832
+Boyut büyüdüğü zaman doğrular birbiriyle kesişmek zorunda değil, birbirine paralel olmak zorunda değil.
+
+281
+00:25:50,832 --> 00:25:56,192
+Tamam. Şimdi düzlemleri aslında biz değerlendiriyorduk birbirine göre.
+
+282
+00:25:56,672 --> 00:25:59,711
+Düzlemler birinci olarak paralelse normalleri paralel.
+
+283
+00:25:59,792 --> 00:26:05,092
+İkinci olarak iki düzlem bir nokta boyunca kesişemez diyeceğiz.
+
+284
+00:26:05,211 --> 00:26:11,751
+Eğer kesişiyorsa iki düzlem bu düzlemlerin kesişimi bunun için çok güzel bir çizimim vardı.
+
+285
+00:26:12,412 --> 00:26:14,412
+Ya da güzel değil, çok güzel değildir belki.
+
+286
+00:26:15,052 --> 00:26:15,751
+Şöyle yapalım.
+
+287
+00:26:15,751 --> 00:26:21,932
+Burada şeye çok dikkat etmedim.
+
+288
+00:26:22,292 --> 00:26:22,971
+Ne derler?
+
+289
+00:26:24,492 --> 00:26:26,152
+Projeksiyona çok dikkat etmedim.
+
+290
+00:26:32,019 --> 00:26:33,319
+Aşağıdan gelmiş olsun.
+
+291
+00:26:33,539 --> 00:26:34,480
+Şuradan tamamlayalım.
+
+292
+00:26:35,059 --> 00:26:37,539
+Bu iki tane doğru kesişiyor varsayalım.
+
+293
+00:26:38,240 --> 00:26:42,639
+Kesişiyorsa şöyle bir doğru boyunca kesişecektir.
+
+294
+00:26:43,059 --> 00:26:43,960
+Doğru boyunca.
+
+295
+00:26:45,200 --> 00:26:46,420
+L doğrusu diyelim.
+
+296
+00:26:46,559 --> 00:26:50,839
+Tabii yine D1, D2 düzlemlerimiz var.
+
+297
+00:26:50,839 --> 00:26:55,680
+Peki bu L doğrusunu nasıl tespit edebiliriz, tayin edebiliriz?
+
+298
+00:26:56,259 --> 00:27:00,279
+Yine doğrularımızın neyi olacaktır arkadaşlar?
+
+299
+00:27:00,279 --> 00:27:06,220
+Normal doğrularımızın diyorum, düzlemlerimizin normal vektörleri olacaktır.
+
+300
+00:27:07,039 --> 00:27:11,319
+Normal vektörleri kullanarak doğrunun doğrultusunu bulabilirim.
+
+301
+00:27:11,420 --> 00:27:15,619
+Ve tabii ki kesişimde olacağı için bir tane de nokta bulabilirim.
+
+302
+00:27:15,980 --> 00:27:18,700
+Şurada doğru üzerinde bir nokta buldum kesişimde.
+
+303
+00:27:18,700 --> 00:27:21,279
+Bu ne demek kesişimde bir nokta?
+
+304
+00:27:21,379 --> 00:27:28,619
+Her iki düzlemin de denklemini sağlayan bir nokta.
+
+305
+00:27:28,619 --> 00:27:33,000
+Yani demek ki iki tane denklem var elimde.
+
+306
+00:27:33,240 --> 00:27:36,940
+İki denklem sonuçta düzlem denklemi.
+
+307
+00:27:37,079 --> 00:27:39,460
+Üç tane bilinmeyene bağlı bir lineer denklemdi.
+
+308
+00:27:40,359 --> 00:27:48,200
+Orada herhangi bir değerini ben keyfi bir sayı alarak sonuçta üç tane bilinmeyen iki denklem varsa parametreye bağlı sonsuz çözüm var.
+
+309
+00:27:48,200 --> 00:27:54,059
+Parametreyi ben belli keyfi bir değer alarak iki parametreye bağlı tek bir çözüm elde edebilirim.
+
+310
+00:27:54,400 --> 00:27:55,160
+Öyle düşünerek.
+
+311
+00:27:55,519 --> 00:28:02,880
+X ve Y'yi seçtiğimiz parametreye bağlı ya da Z'yi seçtikse herhangi bir tanesini ben sabit kabul edebilirim.
+
+312
+00:28:02,940 --> 00:28:05,900
+Sıfır vererek bu denklemleri basitleştirecektir.
+
+313
+00:28:06,319 --> 00:28:08,920
+Orada kesişimde bir P0 noktası bulduk biz.
+
+314
+00:28:09,039 --> 00:28:11,859
+Yani iki tane düzlemin denklemini ne yaptık?
+
+315
+00:28:11,920 --> 00:28:12,660
+Ortak çözdük.
+
+316
+00:28:12,660 --> 00:28:13,660
+Şuraya D1 diyelim.
+
+317
+00:28:13,759 --> 00:28:14,799
+Diğerine D2 demişiz.
+
+318
+00:28:15,599 --> 00:28:17,180
+Kesişimde bir nokta buldum.
+
+319
+00:28:17,259 --> 00:28:18,139
+Neye ihtiyacım var?
+
+320
+00:28:18,220 --> 00:28:19,039
+Bir de doğrultuya.
+
+321
+00:28:19,539 --> 00:28:23,619
+Yani L1 doğrultusuna paralel olan bir doğrultu.
+
+322
+00:28:23,680 --> 00:28:25,240
+O da ne olacaktır?
+
+323
+00:28:26,779 --> 00:28:29,319
+Tabii ki N1 ile N2'nin.
+
+324
+00:28:29,799 --> 00:28:31,000
+Onu yazmayı unutmuşum.
+
+325
+00:28:31,099 --> 00:28:33,379
+Şurası N2 normal olacak.
+
+326
+00:28:34,900 --> 00:28:36,779
+Şurası da N1 aslında.
+
+327
+00:28:37,379 --> 00:28:38,879
+Bunların vektörel çarpımı.
+
+328
+00:28:40,059 --> 00:28:41,400
+Hangi yönden aldıysak tabii.
+
+329
+00:28:44,980 --> 00:28:46,240
+Kırmızı almayı çalışıyorum.
+
+330
+00:28:47,380 --> 00:28:49,200
+Şurada kırmızı aldık.
+
+331
+00:28:52,059 --> 00:28:59,519
+N2 çarpı, N2 çarpı, N1 vektörel çarpımı bizim doğrumuzun doğrultu vektörü olacaktır.
+
+332
+00:28:59,599 --> 00:29:02,599
+Tabi N1 çarpı, N2 de alabilirsiniz. Negatif yolu olacak.
+
+333
+00:29:02,799 --> 00:29:06,259
+Yani bu tercihler her zaman söz konusu arkadaşlar.
+
+334
+00:29:06,759 --> 00:29:11,019
+Demek ki iki doğru, iki tane düzden bir doğru boyunca kesişir.
+
+335
+00:29:11,019 --> 00:29:17,240
+Bu kesişim doğrusunu tayin edebilmek için ya da belirleyebilmek için, denklemini bulabilmek için de
+
+336
+00:29:17,240 --> 00:29:21,500
+iki tane düzlemin kesişiminde bir nokta bulacağız.
+
+337
+00:29:21,740 --> 00:29:23,759
+Bunun için iki düzlemi ortak çözeceğiz.
+
+338
+00:29:24,240 --> 00:29:27,799
+İkinci olarak da bir doğrultu vektörüne ihtiyacımız var.
+
+339
+00:29:27,920 --> 00:29:34,599
+Bunu da düzlemlerin, normal vektörlerinin vektörel çarpımı yardımıyla elde edeceğiz.
+
+340
+00:29:34,599 --> 00:29:35,819
+Bu da bir durum.
+
+341
+00:29:36,420 --> 00:29:40,400
+İki tane düzlemin birbirine göre ikinci durumu.
+
+342
+00:29:44,788 --> 00:29:47,847
+Bir de şöyle bir çıkarında bulunabiliriz arkadaşlar.
+
+343
+00:29:49,208 --> 00:29:51,508
+Burada biz belli bir açıyla kesiştirdik.
+
+344
+00:29:51,607 --> 00:29:55,367
+Özel olarak sanki 90 derece gibi almışız burada.
+
+345
+00:29:56,367 --> 00:30:02,548
+Sanki 90 derece olduğunu varsayarsak burada herhangi bir alfa dereceyle kesişiyordur düzlemler.
+
+346
+00:30:02,548 --> 00:30:11,807
+Eğer özel olarak alfamız bizim pi bölü 2 ise yani 90 derece ise bu durumda düzlemler birbirine diktir demektir.
+
+347
+00:30:11,887 --> 00:30:14,288
+Düzlemlerin dik olmasını da neyle ölçmüş olacağız?
+
+348
+00:30:14,288 --> 00:30:16,127
+Şu aradaki açı da alfa olacaktır.
+
+349
+00:30:16,228 --> 00:30:19,748
+Normallerin arasındaki açı da alfa olacaktır.
+
+350
+00:30:20,387 --> 00:30:25,607
+Dolayısıyla normalleri her birbirine dikse iki düzlem de birbirine diktir.
+
+351
+00:30:25,688 --> 00:30:27,387
+İkinci bir sonuç olarak şöyle yazalım.
+
+352
+00:30:27,887 --> 00:30:32,928
+D1, farklı farklı renkler biraz girinti edici olabiliyor.
+
+353
+00:30:33,067 --> 00:30:34,468
+D1, dik.
+
+354
+00:30:35,248 --> 00:30:37,887
+D2, yine gerek ve yeter koşu.
+
+355
+00:30:38,508 --> 00:30:41,387
+N1, dik N2.
+
+356
+00:30:41,387 --> 00:30:46,407
+Dikli, şeyle gösteriyoruz, perp işaretiyle gösteriyoruz.
+
+357
+00:30:47,448 --> 00:30:50,867
+İki tane düzlem birbirine dikse normalleri birbirine diktir.
+
+358
+00:30:51,067 --> 00:30:54,387
+Normalleri dik olan iki düzlem birbirine diktir şeklinde.
+
+359
+00:30:54,847 --> 00:30:55,768
+İkinci bir sonuç.
+
+360
+00:30:56,127 --> 00:30:59,708
+Açı arasında geometrik olarak biraz düşündüğümüzde hemen çıkacak sonuçlar.
+
+361
+00:31:00,488 --> 00:31:01,827
+Burada bir şey daha var mıydı?
+
+362
+00:31:02,307 --> 00:31:04,708
+İki düzlem arasındaki açıyı nasıl bulabiliriz?
+
+363
+00:31:04,708 --> 00:31:12,347
+Bunu istersek vektörel çarpım yardımıyla bulabiliriz, istersek skaler çarpım yardımıyla bulabiliriz arkadaşlar.
+
+364
+00:31:14,788 --> 00:31:19,988
+İki tane düzlem arasındaki açıyı bulmak için iç çarpımı da kullanabiliriz.
+
+365
+00:31:20,327 --> 00:31:21,168
+İç çarpım neydi?
+
+366
+00:31:21,168 --> 00:31:32,347
+Burada N1 ile N2'nin N1 vektörel çarpımı N2, iki tane düzlemin normal vektörlerinin iç çarpımı.
+
+367
+00:31:33,028 --> 00:31:34,788
+Kavramlar çok karışıyor bugün bende.
+
+368
+00:31:34,788 --> 00:31:45,428
+N1'in boyu çarpı, tabi bunlar skaler çarpı, N2'nin boyu çarpı aralarındaki açının kosünüsü idi.
+
+369
+00:31:45,528 --> 00:31:46,048
+Kosünüs teta.
+
+370
+00:31:46,127 --> 00:31:54,347
+Buradan kosünüs teta'yı çektiğimizde N1 ile N2'nin iç çarpımı bölü boyları olacaktır.
+
+371
+00:31:55,927 --> 00:31:59,748
+Her iki tarafın arkını alırsak teta'yı buradan çözebiliriz.
+
+372
+00:31:59,748 --> 00:32:06,148
+Ya da vektörel çarpım N1 ile N2'nin, tabi sırayı değiştirebiliriz burada hiç önemi yok.
+
+373
+00:32:07,587 --> 00:32:15,127
+N1 ile N2'nin vektörel çarpımını bulmak için de şöyle bir birim vektör diyelim, onu ne ile gösterelim.
+
+374
+00:32:15,248 --> 00:32:17,688
+N1'in vektörü, boyu bir olan herhangi bir vektör.
+
+375
+00:32:17,788 --> 00:32:26,728
+Çarpı, N1'in boyu çarpı, N2'nin boyu çarpı, aralarındaki açının sinüsü şeklinde de burada sinüsü çekerek hesaplayabiliriz.
+
+376
+00:32:26,728 --> 00:32:29,407
+Bunda arkadaşlar, tabi açı hesaplıyoruz.
+
+377
+00:32:30,008 --> 00:32:33,347
+Açı hesapladığımıza göre şu neyi silmeliyim.
+
+378
+00:32:33,988 --> 00:32:41,627
+Vektörel çarpımı böyle ifade ediyorduk ve şurayı da vektörel çarpımın boyu olarak almalıyım.
+
+379
+00:32:41,748 --> 00:32:42,188
+Şimdi oldu.
+
+380
+00:32:42,887 --> 00:32:49,728
+N1 ile N2'nin boyu çarpı, aralarındaki açının sinüsü, burada sinüsü yalnız bıraktığında sinüs teta eşittir.
+
+381
+00:32:49,728 --> 00:32:58,907
+vektörün, vektörel çarpım vektörünün boyu bölü, bileşen vektörlerinin boyu şeklinde yazabiliriz arkadaşlar.
+
+382
+00:33:00,228 --> 00:33:04,607
+İki tane düzlem arasındaki açıyı da bu şekilde bulabiliriz.
+
+383
+00:33:04,607 --> 00:33:08,488
+Bir de bir doğrunun bir düzleme göre konumu.
+
+384
+00:33:08,627 --> 00:33:10,268
+Doğru düzleme paralel olabilir.
+
+385
+00:33:11,907 --> 00:33:17,008
+Doğru düzleme paralel ise eğer, şurada şekiller üzerinden düşünelim.
+
+386
+00:33:18,008 --> 00:33:20,407
+D1 yeşille çizdiğimiz D1'i düşünelim.
+
+387
+00:33:20,508 --> 00:33:21,407
+Burada bir doğru var.
+
+388
+00:33:21,887 --> 00:33:28,508
+Doğru düzleme paralel ise demek ki doğrunun doğrultu vektörü N1'e dik olmak zorunda.
+
+389
+00:33:28,508 --> 00:33:30,708
+O zaman sonucu şöyle yazalım.
+
+390
+00:33:33,587 --> 00:33:35,188
+D1 mi demiştik ona?
+
+391
+00:33:36,768 --> 00:33:37,648
+D1'miş.
+
+392
+00:33:37,988 --> 00:33:39,307
+Şurası da L1 olsun.
+
+393
+00:33:40,427 --> 00:33:41,688
+L1 demişiz zaten.
+
+394
+00:33:41,768 --> 00:33:42,468
+L2 olsun.
+
+395
+00:33:43,284 --> 00:33:45,804
+Şurası da L2 doğrusu olsun.
+
+396
+00:33:48,624 --> 00:33:51,864
+D2 paralel L2 ise
+
+397
+00:33:51,864 --> 00:33:55,964
+L2 diktir.
+
+398
+00:33:56,544 --> 00:33:58,744
+Şunun doğrultu vektörü V olsun.
+
+399
+00:33:59,044 --> 00:34:01,064
+Ona V diyelim. V'ye dik olmak zorunda.
+
+400
+00:34:01,524 --> 00:34:04,184
+Eğer bir doğrunun doğrultu vektörü
+
+401
+00:34:04,184 --> 00:34:06,184
+düzlemin normal vektörüne dikse
+
+402
+00:34:06,184 --> 00:34:08,003
+o zaman doğru düzleme paraleldir.
+
+403
+00:34:08,003 --> 00:34:08,804
+Eğer
+
+404
+00:34:08,804 --> 00:34:12,523
+hatta şunu ancak ve ancak diyelim
+
+405
+00:34:12,523 --> 00:34:14,564
+yukarıdan bahsus olarak
+
+406
+00:34:14,564 --> 00:34:15,423
+şurada
+
+407
+00:34:15,423 --> 00:34:17,864
+D diyelim. Bir D düzlemi.
+
+408
+00:34:18,423 --> 00:34:21,304
+Eğer D düzlemi bir L doğrusuna dikse
+
+409
+00:34:21,304 --> 00:34:23,564
+olması için ya da
+
+410
+00:34:23,564 --> 00:34:25,943
+gerek ve yeter koşul nedir sizce arkadaşlar?
+
+411
+00:34:27,344 --> 00:34:29,503
+Bir doğrunun bir düzleme dik olması için
+
+412
+00:34:29,503 --> 00:34:30,784
+gerek ve yeter koşul
+
+413
+00:34:30,784 --> 00:34:32,003
+ne olabilir?
+
+414
+00:34:33,644 --> 00:34:34,624
+Kimler deneyim diyor.
+
+415
+00:34:36,244 --> 00:34:37,943
+Paralel olması mı?
+
+416
+00:34:38,684 --> 00:34:40,744
+Evet. Yani düzlemin
+
+417
+00:34:40,744 --> 00:34:41,824
+doğrunun
+
+418
+00:34:41,824 --> 00:34:43,864
+doğrunun doğrultu vektörünün
+
+419
+00:34:44,923 --> 00:34:47,284
+düzlemin normal vektörüne paralel olması
+
+420
+00:34:47,284 --> 00:34:47,983
+gerekir.
+
+421
+00:34:48,044 --> 00:34:49,124
+Onda N diyelim.
+
+422
+00:34:49,264 --> 00:34:49,443
+N
+
+423
+00:34:49,443 --> 00:34:51,184
+Şunlar oklarını unutuyorum.
+
+424
+00:34:52,304 --> 00:34:53,384
+N paraleldir.
+
+425
+00:34:53,824 --> 00:34:54,463
+V diyelim.
+
+426
+00:34:55,204 --> 00:34:55,544
+Ya da
+
+427
+00:34:55,544 --> 00:34:57,164
+V üstü diyelim.
+
+428
+00:34:57,423 --> 00:34:58,604
+Yukarıda V'yi kullandık.
+
+429
+00:34:58,983 --> 00:35:01,184
+Sonuçta şu V farklı bir doğru gibi düşündük.
+
+430
+00:35:01,644 --> 00:35:01,844
+Evet.
+
+431
+00:35:02,204 --> 00:35:05,144
+Bir doğrunun bir düzleme dik olabilmesi için de
+
+432
+00:35:05,144 --> 00:35:07,983
+doğrunun doğrultu vektörünün düzlemin
+
+433
+00:35:07,983 --> 00:35:11,084
+normal vektörüne paralel olması gerekir.
+
+434
+00:35:11,084 --> 00:35:14,443
+bir doğru peki bir düzlem ile
+
+435
+00:35:14,443 --> 00:35:16,064
+nasıl kesişebilir?
+
+436
+00:35:16,164 --> 00:35:18,744
+Eğer kesişiyorsa bu kesişim nedir arkadaşlar?
+
+437
+00:35:20,864 --> 00:35:23,624
+Bir doğru bir düzlemde kesişiyorsa.
+
+438
+00:35:24,624 --> 00:35:25,483
+Tek bir nokta.
+
+439
+00:35:25,724 --> 00:35:27,684
+Değil mi? Tek bir nokta boyunca kesişir.
+
+440
+00:35:27,684 --> 00:35:29,744
+O zaman şöyle yazalım.
+
+441
+00:35:29,963 --> 00:35:30,324
+Eğer
+
+442
+00:35:30,324 --> 00:35:33,664
+D düzlemi
+
+443
+00:35:33,664 --> 00:35:37,544
+ve L doğrusu
+
+444
+00:35:37,544 --> 00:35:43,584
+kesişiyorsa
+
+445
+00:35:43,584 --> 00:35:45,144
+Doğru olarak da kesişmez mi?
+
+446
+00:35:46,824 --> 00:35:47,384
+Evet.
+
+447
+00:35:47,564 --> 00:35:48,364
+Doğru olarak da.
+
+448
+00:35:48,443 --> 00:35:49,364
+Yani doğru şey.
+
+449
+00:35:49,584 --> 00:35:50,584
+Burada iki durum var.
+
+450
+00:35:51,284 --> 00:35:51,483
+Çok
+
+451
+00:35:51,483 --> 00:35:54,084
+hatırlatma için teşekkür ederim.
+
+452
+00:35:54,864 --> 00:35:55,483
+Kesişiyorsa
+
+453
+00:35:55,483 --> 00:35:56,384
+iki durum var.
+
+454
+00:35:56,384 --> 00:35:57,164
+Birincisi
+
+455
+00:35:57,164 --> 00:35:59,003
+D
+
+456
+00:35:59,003 --> 00:36:00,003
+ara kesit
+
+457
+00:36:00,003 --> 00:36:00,564
+L
+
+458
+00:36:00,564 --> 00:36:01,804
+eşittir.
+
+459
+00:36:02,043 --> 00:36:03,564
+Bir P sıfır noktası.
+
+460
+00:36:04,503 --> 00:36:05,923
+Küme içinde gösterelim.
+
+461
+00:36:05,923 --> 00:36:07,684
+İkinci olarak da
+
+462
+00:36:07,684 --> 00:36:08,384
+D
+
+463
+00:36:08,384 --> 00:36:09,284
+ara kesit
+
+464
+00:36:09,284 --> 00:36:09,644
+L
+
+465
+00:36:09,644 --> 00:36:10,344
+eşittir.
+
+466
+00:36:10,664 --> 00:36:10,824
+L
+
+467
+00:36:10,824 --> 00:36:11,304
+olması.
+
+468
+00:36:11,604 --> 00:36:13,524
+Arkadaşımızın bize hatırlattığı
+
+469
+00:36:13,524 --> 00:36:14,443
+teşekkür ediyoruz.
+
+470
+00:36:15,003 --> 00:36:15,284
+Eğer
+
+471
+00:36:15,284 --> 00:36:17,544
+doğru düzlemin
+
+472
+00:36:17,544 --> 00:36:18,244
+içindeyse
+
+473
+00:36:18,244 --> 00:36:19,064
+yine tabii ki
+
+474
+00:36:19,064 --> 00:36:19,544
+kesişir.
+
+475
+00:36:19,684 --> 00:36:20,244
+Burada ama
+
+476
+00:36:20,244 --> 00:36:22,104
+doğrunun bütün
+
+477
+00:36:22,104 --> 00:36:22,824
+noktaları
+
+478
+00:36:22,824 --> 00:36:23,943
+düzlemin içindedir.
+
+479
+00:36:25,124 --> 00:36:25,724
+Bu iki durum
+
+480
+00:36:25,724 --> 00:36:26,684
+söz konusu olur.
+
+481
+00:36:27,324 --> 00:36:27,644
+Yani
+
+482
+00:36:27,644 --> 00:36:28,724
+ikinci durum
+
+483
+00:36:28,724 --> 00:36:29,664
+çok ilginç değil.
+
+484
+00:36:29,864 --> 00:36:30,024
+Neden?
+
+485
+00:36:30,384 --> 00:36:31,704
+Doğru üzerindeki her nokta
+
+486
+00:36:31,704 --> 00:36:32,983
+düzlem denklemini sağlar.
+
+487
+00:36:32,983 --> 00:36:33,983
+Fakat tek noktada
+
+488
+00:36:33,983 --> 00:36:34,983
+kesiştiği zaman
+
+489
+00:36:34,983 --> 00:36:36,084
+o noktayı bulmak için
+
+490
+00:36:36,084 --> 00:36:36,983
+ne yapmamız lazım?
+
+491
+00:36:37,864 --> 00:36:38,943
+Doğrunun parametrik
+
+492
+00:36:38,943 --> 00:36:39,704
+denklemini
+
+493
+00:36:39,704 --> 00:36:40,064
+orada
+
+494
+00:36:40,064 --> 00:36:42,144
+düzlem denklemini
+
+495
+00:36:42,144 --> 00:36:42,864
+orada x, y, z
+
+496
+00:36:42,864 --> 00:36:43,844
+koordinatlarımız var.
+
+497
+00:36:43,963 --> 00:36:44,384
+Sonuçta biz
+
+498
+00:36:44,384 --> 00:36:45,884
+B3 için konuşuyoruz bunu.
+
+499
+00:36:46,483 --> 00:36:46,724
+Tabii
+
+500
+00:36:46,724 --> 00:36:47,864
+V, n de olabilir.
+
+501
+00:36:48,003 --> 00:36:48,724
+Hiç önemli değil.
+
+502
+00:36:49,144 --> 00:36:50,124
+İlgili koordinatı
+
+503
+00:36:50,124 --> 00:36:50,824
+T cinsinden
+
+504
+00:36:50,824 --> 00:36:51,624
+parametrik olarak
+
+505
+00:36:51,624 --> 00:36:52,604
+yerine yazdığımızda
+
+506
+00:36:52,604 --> 00:36:53,503
+tek bir parametre.
+
+507
+00:36:53,564 --> 00:36:54,524
+Onu çözebiliriz.
+
+508
+00:36:55,024 --> 00:36:55,624
+Bulduğumuzda
+
+509
+00:36:55,624 --> 00:36:57,184
+onu yerine yazarsak
+
+510
+00:36:57,184 --> 00:36:57,884
+T'yi doğru
+
+511
+00:36:57,884 --> 00:36:58,483
+denkleminde
+
+512
+00:36:58,483 --> 00:36:59,084
+noktamızı
+
+513
+00:36:59,084 --> 00:36:59,784
+bulmuş olacağız.
+
+514
+00:37:00,064 --> 00:37:00,564
+Arkadaşlar
+
+515
+00:37:00,564 --> 00:37:01,624
+kesişim noktasını.
+
+516
+00:37:02,124 --> 00:37:02,423
+Eğer
+
+517
+00:37:02,423 --> 00:37:04,184
+doğru düzlemin
+
+518
+00:37:04,184 --> 00:37:05,423
+içindeyse zaten
+
+519
+00:37:05,423 --> 00:37:06,384
+sonsuz tane
+
+520
+00:37:06,384 --> 00:37:07,064
+çözüm olan
+
+521
+00:37:07,064 --> 00:37:08,104
+bir denklem sistemi
+
+522
+00:37:08,104 --> 00:37:09,344
+bulmuş olacağız.
+
+523
+00:37:13,396 --> 00:37:15,056
+Sanırım birçok şeyden söz ettik.
+
+524
+00:37:15,115 --> 00:37:17,716
+Şimdi bunlarla ilgili sorular çözmeye çalışalım.
+
+525
+00:37:17,856 --> 00:37:21,856
+Ne demiş? Normal vektörle dik olan iki düzlem birbirine diktir.
+
+526
+00:37:21,996 --> 00:37:25,416
+İki düzlem arasındaki açı ile normal vektörler arasındaki açı aynıdır.
+
+527
+00:37:26,016 --> 00:37:26,996
+Ondan da söz ettik.
+
+528
+00:37:27,076 --> 00:37:32,016
+Bir düzlemin normali ve bir doğrultu vektörü V olmak üzere buna dair
+
+529
+00:37:32,016 --> 00:37:37,876
+eğer doğrultuyla normal paralel ise doğru düzleme dik.
+
+530
+00:37:37,876 --> 00:37:43,876
+Eğer doğrultu normaline dikse doğru düzleme paraleldir.
+
+531
+00:37:44,796 --> 00:37:45,896
+Bunlardan söz ettik.
+
+532
+00:37:46,356 --> 00:37:48,316
+Şimdi örneklerimize başlayabiliriz.
+
+533
+00:37:48,836 --> 00:37:51,056
+Bundan sonra bir de kesişim doğrusu ondan da söz ettim.
+
+534
+00:37:51,096 --> 00:37:53,135
+Ondan da doğrudan örneğe geçebiliriz arkadaşlar.
+
+535
+00:37:55,656 --> 00:37:57,016
+Elimizde bir düzlem var.
+
+536
+00:37:57,676 --> 00:37:59,756
+Düzleme normal vektörünü hemen yazalım.
+
+537
+00:38:00,176 --> 00:38:01,336
+Ne dediğimiz şey?
+
+538
+00:38:01,956 --> 00:38:06,156
+X'in kat sayısı 1, Y'nin kat sayısı 3 ve Z'nin kat sayısı 1.
+
+539
+00:38:06,156 --> 00:38:09,796
+Demek ki normal vektörümüz düzlemin normal vektörü 1, 3, 1.
+
+540
+00:38:10,276 --> 00:38:10,516
+Tamam.
+
+541
+00:38:11,396 --> 00:38:13,276
+Doğrunu doğrultu vektörünü de yazalım.
+
+542
+00:38:13,476 --> 00:38:16,516
+V, T'nin kat sayılarından oluşacak sıralı bir şekilde yazacağız.
+
+543
+00:38:16,656 --> 00:38:20,276
+Eksi 2, A, V, Eksi 1.
+
+544
+00:38:21,296 --> 00:38:21,956
+Soru neymiş?
+
+545
+00:38:23,056 --> 00:38:24,436
+Şuna D düzlemi diyelim.
+
+546
+00:38:26,135 --> 00:38:30,655
+D düzleminin L doğrusuna paralel olması için A, N olmalıdır.
+
+547
+00:38:31,336 --> 00:38:34,556
+Doğru düzleme paralel ise N, V'ye dik olması lazım.
+
+548
+00:38:34,556 --> 00:38:43,676
+O zaman R, N, dik, V ise D paralel L olur.
+
+549
+00:38:45,436 --> 00:38:48,115
+O zaman dik olmasının koşulu neydi?
+
+550
+00:38:49,896 --> 00:38:57,096
+N, dik, V ise N ile V'nin iç şarpını sıfır olmak zorunda.
+
+551
+00:38:57,096 --> 00:38:59,656
+Buradan hareketle bunu çözebiliriz.
+
+552
+00:38:59,716 --> 00:39:01,115
+Sonuçta tek bir bilinmeyen var.
+
+553
+00:39:01,576 --> 00:39:08,596
+Eğer birden fazla bilinmeyen varsa burada deneme yanılma yerine istediğimiz değerleri vererek böyle bir vektör bulabiliriz.
+
+554
+00:39:08,676 --> 00:39:10,256
+Tabii unique olmaz bu.
+
+555
+00:39:11,516 --> 00:39:13,856
+Ama şu anda A'yı tek türlü olarak belirleyeceğiz.
+
+556
+00:39:13,856 --> 00:39:19,376
+Yerine yazdığımızda bunları iç çarpım yapacağız.
+
+557
+00:39:19,536 --> 00:39:20,696
+Dolayısıyla ne olacak?
+
+558
+00:39:20,836 --> 00:39:29,316
+1 çarpı eksi 2, eksi 2, artı 3 çarpı A, 3 A, 1 çarpı eksi 1, eksi 1 eşittir 0.
+
+559
+00:39:30,636 --> 00:39:36,576
+Buradan 3 A eşittir 3 ve A eşittir 1 olmuş oldu.
+
+560
+00:39:36,576 --> 00:39:42,336
+O zaman A'yı biz 1 olarak alırsak demek ki doğru düzleme paralel olacak.
+
+561
+00:39:42,776 --> 00:39:44,056
+Gerçekten dik oluyor mu?
+
+562
+00:39:44,136 --> 00:39:45,876
+Sınamaya çalışalım.
+
+563
+00:39:46,016 --> 00:39:51,816
+Eksi 2 çarpı 1, eksi 2, artı 3, eksi 1, 0 olmuş oldu.
+
+564
+00:39:51,896 --> 00:39:53,396
+Gerçekten de dik olmuş oldu.
+
+565
+00:39:56,036 --> 00:40:00,376
+Doğrunun doğrultusu düzlemin normalinde dik olmuş oldu.
+
+566
+00:40:00,976 --> 00:40:02,596
+Var mı sormak istediğiniz bir şey arkadaşlar?
+
+567
+00:40:02,816 --> 00:40:05,036
+Soruyla ilgili biraz basit bir soru bu.
+
+568
+00:40:06,576 --> 00:40:12,336
+Bütün bu şeyleri bir anda hafızanızda tutmanız mümkün olmayabilir.
+
+569
+00:40:12,476 --> 00:40:14,136
+Bunları ezberlemeyin arkadaşlar.
+
+570
+00:40:15,596 --> 00:40:16,556
+Yorum yapabilin.
+
+571
+00:40:17,716 --> 00:40:19,615
+Yorum yaparak bunları hatırlayın tekrar.
+
+572
+00:40:19,736 --> 00:40:23,076
+Yukarıda yaptığım şeyleri sizler de yapabilirsiniz.
+
+573
+00:40:23,276 --> 00:40:25,476
+Yani iki tane düzlem birbirine göre nasıl olabilir?
+
+574
+00:40:26,236 --> 00:40:28,496
+Bir doğru bir düzleme göre nasıl olabilir?
+
+575
+00:40:28,636 --> 00:40:32,636
+Bunları düşünerek, tanımlarını da tabii birlikte düşünerek
+
+576
+00:40:32,636 --> 00:40:34,956
+bütün bu sonuçları sizler de çıkarabilirsiniz.
+
+577
+00:40:34,956 --> 00:40:36,816
+O yüzden bunları ezberlemeyin.
+
+578
+00:40:44,371 --> 00:40:46,091
+İki düzlemin kesişim doğrusu.
+
+579
+00:40:46,172 --> 00:40:47,431
+Bundan çoktan bahsettik.
+
+580
+00:40:47,751 --> 00:40:49,211
+Bunda doğrudan örneğe geçeceğim.
+
+581
+00:40:49,331 --> 00:40:50,951
+Tabi buradaki şekli de görelim.
+
+582
+00:40:51,831 --> 00:40:53,811
+İki tane düzleminiz var.
+
+583
+00:40:54,791 --> 00:40:58,471
+Tabi biraz perspektif verilebilirdi belki D1 düzlemine de.
+
+584
+00:40:59,031 --> 00:41:00,192
+Kesişim doğrusu var.
+
+585
+00:41:00,471 --> 00:41:01,551
+Ona L doğrusu dedik.
+
+586
+00:41:01,632 --> 00:41:02,652
+Mavi ile çizdiğimiz.
+
+587
+00:41:03,511 --> 00:41:05,971
+Turuncu düzlemin bir normal vektörü var.
+
+588
+00:41:06,051 --> 00:41:08,051
+Yeşil düzlemin bir normal vektörü var.
+
+589
+00:41:08,672 --> 00:41:11,911
+Amacımız L doğrusunu tayin etmek, belirlemek.
+
+590
+00:41:11,911 --> 00:41:14,411
+Onun parametrik denklemini vermek.
+
+591
+00:41:14,931 --> 00:41:16,632
+Bir tane noktaya ihtiyacımız var.
+
+592
+00:41:16,731 --> 00:41:18,791
+Nokta doğru üzerinde herhangi bir yerde olabilir.
+
+593
+00:41:19,011 --> 00:41:20,531
+Özel olarak şurayı seçelim.
+
+594
+00:41:21,351 --> 00:41:23,211
+Seçtiğimizde bir P0 noktası.
+
+595
+00:41:23,311 --> 00:41:27,331
+O P0 her iki düzlemi sağlayan bir nokta olacak.
+
+596
+00:41:28,071 --> 00:41:33,051
+Ve doğrultuyu da iki tane normal vektörünü vektörel çarparak.
+
+597
+00:41:33,132 --> 00:41:34,172
+Sırası hiç önemli değil.
+
+598
+00:41:34,291 --> 00:41:35,751
+Herhangi birini alabiliriz.
+
+599
+00:41:36,132 --> 00:41:41,611
+Dolayısıyla bir doğrunun denklemi için gerekli olan doğrultuyu da elde etmiş olacağız bu şekilde.
+
+600
+00:41:41,911 --> 00:41:49,311
+Şurada dişne çürüğü ile işaretlediğimiz N2 ile N1'in vektörel çarpını ters yönde de alabiliriz.
+
+601
+00:41:49,611 --> 00:41:52,311
+Yani N1 ile N2'nin vektörel çarpını ters yönde olacak.
+
+602
+00:41:52,451 --> 00:41:53,231
+Onu da alabiliriz.
+
+603
+00:41:54,031 --> 00:41:55,672
+Hemen bir örnek yapalım bununla ilgili.
+
+604
+00:41:55,851 --> 00:41:58,051
+D1 ve D2 düzlemleri var elimizde.
+
+605
+00:41:58,051 --> 00:42:05,291
+D1'in normal vektörü onları alt alta yazayım ki vektörel çarpımı yapmak rahat olsun.
+
+606
+00:42:05,612 --> 00:42:06,652
+N1 diyelim ona.
+
+607
+00:42:07,172 --> 00:42:10,112
+N1, 1, 2, eksi 1 olacak.
+
+608
+00:42:10,711 --> 00:42:14,331
+N2 de D2 düzleminin normal vektörü.
+
+609
+00:42:14,891 --> 00:42:18,612
+2, eksi 1 ve 1 olacak.
+
+610
+00:42:18,611 --> 00:42:26,791
+Vektörel çarpmak istediğimizde N1 çarpı N2 yazdığım sıraya uygun olduğu için ben bunu tercih ediyorum.
+
+611
+00:42:26,931 --> 00:42:28,591
+N2 çarpı N1'e de bakılabilir.
+
+612
+00:42:29,331 --> 00:42:32,611
+Verdiğimiz tarımlardan herhangi birini kullanabiliriz.
+
+613
+00:42:32,612 --> 00:42:37,571
+2, eksi 1, eksi 1, 1.
+
+614
+00:42:38,451 --> 00:42:40,371
+Sonra ne yapıyorduk? Bunları şifte ediyorduk.
+
+615
+00:42:40,551 --> 00:42:42,571
+Eksi 1, 1, 1, 2.
+
+616
+00:42:43,711 --> 00:42:48,091
+2 çarpı 2'lik karesel matrizlerin determinantını hesaplamamız gerekir.
+
+617
+00:42:48,491 --> 00:42:50,612
+1, 2, 2'ye eksi 1.
+
+618
+00:42:53,431 --> 00:43:00,251
+Bunu da hesapladığımızda 2 çarpı 1, eksi 1, 1 gelecek buradan.
+
+619
+00:43:00,251 --> 00:43:02,211
+Eksi 1 çarpı eksi 1 artı 1.
+
+620
+00:43:02,391 --> 00:43:04,811
+Bir de determinantan bir eksimiz var.
+
+621
+00:43:05,291 --> 00:43:09,511
+Eksi 1 çarpı 2, eksi 2, eksi 1, eksi 3.
+
+622
+00:43:10,951 --> 00:43:15,172
+Ve 1 çarpı eksi 1, eksi 1, eksi 4, eksi 5.
+
+623
+00:43:16,411 --> 00:43:17,571
+Eksilisini de alabiliriz.
+
+624
+00:43:17,631 --> 00:43:19,831
+Yani şu vektörü de alabiliriz.
+
+625
+00:43:19,991 --> 00:43:21,551
+Parantez üstünde yazalım onu da.
+
+626
+00:43:22,091 --> 00:43:25,531
+Eksi 1, 3, 5 vektörünü de alabiliriz.
+
+627
+00:43:25,612 --> 00:43:27,011
+Bu da ne olacaktır?
+
+628
+00:43:27,071 --> 00:43:28,451
+N2 çarpı N1 olacak.
+
+629
+00:43:30,251 --> 00:43:33,831
+Parantezi yazmayabilirmişiz.
+
+630
+00:43:33,971 --> 00:43:36,172
+Tamam.
+
+631
+00:43:38,900 --> 00:43:46,220
+Ara kesit doğrusunun parametrik denklemini bulun. Bunlardan herhangi birini biz V olarak seçebiliriz. Hadi şuna V dedik.
+
+632
+00:43:47,880 --> 00:43:54,160
+Doğrultumuz belli. Bir noktaya ihtiyacımız var. Noktayı da iki tane düzlemi beraber çözerek bulabiliriz.
+
+633
+00:43:54,160 --> 00:44:00,000
+Özel olarak bir P0 noktası için şöyle diyelim, kesişimde bulunan bir P0 noktası için.
+
+634
+00:44:05,427 --> 00:44:06,427
+Kesişimde
+
+635
+00:44:06,427 --> 00:44:08,327
+yer alan
+
+636
+00:44:08,327 --> 00:44:10,107
+bir
+
+637
+00:44:10,107 --> 00:44:12,887
+P0 noktası için
+
+638
+00:44:12,887 --> 00:44:16,327
+kesişimde derken
+
+639
+00:44:16,327 --> 00:44:17,887
+iki düzlemin kesişiminde
+
+640
+00:44:17,887 --> 00:44:20,708
+özel olarak
+
+641
+00:44:20,708 --> 00:44:23,228
+Z'yi biz sıfır alalım ki
+
+642
+00:44:23,228 --> 00:44:25,827
+daha basit şeyler gelsin.
+
+643
+00:44:26,627 --> 00:44:27,487
+Uğraşmayalım.
+
+644
+00:44:27,587 --> 00:44:28,627
+Z sıfır olsun.
+
+645
+00:44:29,967 --> 00:44:31,127
+Sonuçta burada iki tane
+
+646
+00:44:31,127 --> 00:44:33,447
+denklem. Üç tane bilinmeyen
+
+647
+00:44:33,447 --> 00:44:35,268
+var. 3-2
+
+648
+00:44:35,268 --> 00:44:37,288
+bir parametreye bağlı sonsuz tane
+
+649
+00:44:37,288 --> 00:44:39,288
+çözüm var. Genel çözüm de verebiliriz burada
+
+650
+00:44:39,288 --> 00:44:41,307
+ama biz spesifik bir çözüm bulmak istiyoruz.
+
+651
+00:44:41,867 --> 00:44:43,507
+Z'yi sıfır almamızda hiçbir mahsur
+
+652
+00:44:43,507 --> 00:44:44,607
+yok. Aldığımızda
+
+653
+00:44:44,607 --> 00:44:46,527
+denklemlerimiz şu ayı alacak.
+
+654
+00:44:46,768 --> 00:44:48,847
+X artı iki tane Y eşittir. 3
+
+655
+00:44:48,847 --> 00:44:51,007
+birinci düzlemden
+
+656
+00:44:51,007 --> 00:44:53,127
+ikinci düzlemden de iki tane X
+
+657
+00:44:53,127 --> 00:44:55,647
+eksiye eşittir.
+
+658
+00:44:56,167 --> 00:44:57,067
+1 olmuş oldu.
+
+659
+00:44:58,067 --> 00:44:59,047
+İkinci denklemi
+
+660
+00:44:59,047 --> 00:45:00,788
+ikiyle çarpıp toplarsak
+
+661
+00:45:00,788 --> 00:45:02,768
+ne olacak? 5 tane
+
+662
+00:45:02,768 --> 00:45:04,907
+X belki de
+
+663
+00:45:04,907 --> 00:45:06,688
+sıfır almak çok akıllıca
+
+664
+00:45:06,688 --> 00:45:08,067
+değildi. X'i sıfır alalım.
+
+665
+00:45:08,947 --> 00:45:10,887
+Burada tam sayı olmayan
+
+666
+00:45:10,887 --> 00:45:12,268
+şeyler çıkacak gibi geliyor.
+
+667
+00:45:13,047 --> 00:45:14,147
+X'i sıfır aldığımızda
+
+668
+00:45:14,147 --> 00:45:14,688
+ikiye
+
+669
+00:45:14,688 --> 00:45:15,467
+eksiye
+
+670
+00:45:15,467 --> 00:45:16,967
+evet bu daha mantıklı
+
+671
+00:45:16,967 --> 00:45:17,688
+arkadaşlar.
+
+672
+00:45:18,587 --> 00:45:19,867
+Benim tercihim güzel olmadı.
+
+673
+00:45:20,087 --> 00:45:21,288
+Rasyonel sayılar çıkacak.
+
+674
+00:45:21,427 --> 00:45:22,087
+Hani hesaplayınca
+
+675
+00:45:22,087 --> 00:45:23,708
+orada böyle beşli bir şeyler gelecek.
+
+676
+00:45:24,367 --> 00:45:25,467
+Çok bir şey
+
+677
+00:45:25,467 --> 00:45:26,307
+olmayacak. Onlar
+
+678
+00:45:26,307 --> 00:45:27,547
+sempatik sayılar olmayacak.
+
+679
+00:45:27,647 --> 00:45:28,268
+O da bir çözüm.
+
+680
+00:45:28,527 --> 00:45:29,208
+Önemli değil ama
+
+681
+00:45:29,208 --> 00:45:30,647
+biz tam sayı olsun
+
+682
+00:45:30,647 --> 00:45:32,027
+daha güzel görürsün istiyoruz.
+
+683
+00:45:32,027 --> 00:45:33,728
+X'i sıfır aldığımızda
+
+684
+00:45:33,728 --> 00:45:34,547
+iki tane Y
+
+685
+00:45:34,547 --> 00:45:36,047
+eksi Z
+
+686
+00:45:36,047 --> 00:45:36,647
+eşittir.
+
+687
+00:45:36,768 --> 00:45:37,987
+3 ve
+
+688
+00:45:37,987 --> 00:45:39,387
+eksi Y
+
+689
+00:45:39,387 --> 00:45:41,268
+artı Z
+
+690
+00:45:41,268 --> 00:45:41,867
+eşittir.
+
+691
+00:45:41,947 --> 00:45:42,327
+1 oldu.
+
+692
+00:45:42,447 --> 00:45:43,567
+Taraf tarafa toplarsam
+
+693
+00:45:43,567 --> 00:45:44,228
+hemen buradan
+
+694
+00:45:44,228 --> 00:45:45,647
+Y eşittir.
+
+695
+00:45:45,807 --> 00:45:46,407
+4.
+
+696
+00:45:47,087 --> 00:45:47,647
+Y'yi yerine
+
+697
+00:45:47,647 --> 00:45:48,627
+yazdığım zaman
+
+698
+00:45:48,627 --> 00:45:50,688
+Z eşittir.
+
+699
+00:45:50,688 --> 00:45:53,527
+5 oldu.
+
+700
+00:45:53,527 --> 00:45:54,288
+5 değil
+
+701
+00:45:54,288 --> 00:45:55,248
+Z eşittir.
+
+702
+00:45:55,307 --> 00:45:55,768
+5 oldu.
+
+703
+00:45:56,127 --> 00:45:56,567
+Dolayısıyla
+
+704
+00:45:56,567 --> 00:45:57,667
+P sıfır noktam
+
+705
+00:45:57,667 --> 00:45:58,387
+zaten
+
+706
+00:45:58,387 --> 00:46:00,208
+X'i tayin etmiştik.
+
+707
+00:46:00,387 --> 00:46:00,667
+0
+
+708
+00:46:00,667 --> 00:46:02,447
+Y değeri 4
+
+709
+00:46:02,447 --> 00:46:03,807
+ve Z değeri de
+
+710
+00:46:03,807 --> 00:46:05,087
+5 olmuş oldu.
+
+711
+00:46:05,208 --> 00:46:06,027
+Eğer işlem hatası
+
+712
+00:46:06,027 --> 00:46:06,867
+yapmadıysam.
+
+713
+00:46:08,907 --> 00:46:09,387
+Artık
+
+714
+00:46:09,387 --> 00:46:11,487
+kesişim doğrusunu
+
+715
+00:46:11,487 --> 00:46:12,567
+iki tane düzlemin
+
+716
+00:46:12,567 --> 00:46:13,527
+D1 ve D2
+
+717
+00:46:13,527 --> 00:46:14,427
+düzlemlerinin
+
+718
+00:46:14,427 --> 00:46:16,067
+kesişim doğrusunu
+
+719
+00:46:16,067 --> 00:46:18,208
+yazabiliriz.
+
+720
+00:46:18,748 --> 00:46:19,487
+Kesişim doğrusunun
+
+721
+00:46:19,487 --> 00:46:20,587
+parametrik denklemini
+
+722
+00:46:20,587 --> 00:46:21,307
+yazabiliriz.
+
+723
+00:46:22,307 --> 00:46:22,967
+X eşittir.
+
+724
+00:46:23,047 --> 00:46:23,847
+X sıfır değerin
+
+725
+00:46:23,847 --> 00:46:24,947
+şurası X sıfır
+
+726
+00:46:24,947 --> 00:46:26,047
+Y sıfır
+
+727
+00:46:26,047 --> 00:46:26,887
+Z sıfır
+
+728
+00:46:26,887 --> 00:46:28,087
+şurası da
+
+729
+00:46:28,087 --> 00:46:29,228
+A B C olarak
+
+730
+00:46:29,228 --> 00:46:30,527
+düşüneceğim.
+
+731
+00:46:30,627 --> 00:46:31,307
+Değerler olacak.
+
+732
+00:46:31,867 --> 00:46:32,807
+0 artı
+
+733
+00:46:32,807 --> 00:46:34,347
+1 çarpı
+
+734
+00:46:34,347 --> 00:46:34,647
+T
+
+735
+00:46:34,647 --> 00:46:35,607
+yani
+
+736
+00:46:35,607 --> 00:46:36,327
+T oldu.
+
+737
+00:46:36,987 --> 00:46:37,887
+Y eşittir.
+
+738
+00:46:38,487 --> 00:46:39,947
+4 artı
+
+739
+00:46:39,947 --> 00:46:40,447
+ya da
+
+740
+00:46:40,447 --> 00:46:40,867
+eksi
+
+741
+00:46:40,867 --> 00:46:43,967
+böyle yapalım.
+
+742
+00:46:44,807 --> 00:46:45,167
+Eksi
+
+743
+00:46:45,167 --> 00:46:45,788
+3 tane
+
+744
+00:46:45,788 --> 00:46:46,147
+T
+
+745
+00:46:46,147 --> 00:46:47,248
+ve
+
+746
+00:46:47,248 --> 00:46:48,347
+Z eşittir.
+
+747
+00:46:48,347 --> 00:46:49,487
+Z değeri
+
+748
+00:46:49,487 --> 00:46:50,067
+5
+
+749
+00:46:50,067 --> 00:46:52,268
+5 eksi
+
+750
+00:46:52,268 --> 00:46:53,607
+5 tane
+
+751
+00:46:53,607 --> 00:46:53,967
+T.
+
+752
+00:46:54,427 --> 00:46:55,007
+Aynı şekilde
+
+753
+00:46:55,007 --> 00:46:56,847
+V'yi
+
+754
+00:46:56,847 --> 00:46:58,967
+N2 çarpı
+
+755
+00:46:58,967 --> 00:46:59,288
+N1
+
+756
+00:46:59,288 --> 00:46:59,788
+alarak da
+
+757
+00:46:59,788 --> 00:47:00,547
+oluşturabilirdik.
+
+758
+00:47:00,627 --> 00:47:01,688
+Ya da alternatif olarak
+
+759
+00:47:01,688 --> 00:47:02,127
+bu da
+
+760
+00:47:02,127 --> 00:47:03,907
+şu olabilir.
+
+761
+00:47:06,087 --> 00:47:07,167
+Parantez içinde
+
+762
+00:47:07,167 --> 00:47:08,288
+eşittir diyelim.
+
+763
+00:47:08,987 --> 00:47:09,527
+Neden?
+
+764
+00:47:09,907 --> 00:47:10,768
+Şimdi biz böyle bir
+
+765
+00:47:10,768 --> 00:47:11,527
+L seçtik.
+
+766
+00:47:11,627 --> 00:47:12,788
+O L1 gibi bir şey
+
+767
+00:47:12,788 --> 00:47:13,027
+olacak.
+
+768
+00:47:13,167 --> 00:47:13,447
+Ama yine
+
+769
+00:47:13,447 --> 00:47:14,447
+kesişim doğrusu.
+
+770
+00:47:14,447 --> 00:47:16,228
+X eşittir.
+
+771
+00:47:16,907 --> 00:47:17,627
+Aynı şekilde
+
+772
+00:47:17,627 --> 00:47:18,248
+şurası
+
+773
+00:47:18,248 --> 00:47:19,027
+eksi
+
+774
+00:47:19,027 --> 00:47:19,307
+T.
+
+775
+00:47:19,768 --> 00:47:20,768
+Eksilisini alacağım.
+
+776
+00:47:20,887 --> 00:47:21,307
+Başka bir şey
+
+777
+00:47:21,307 --> 00:47:21,867
+yapmayacağım.
+
+778
+00:47:22,647 --> 00:47:23,667
+Y eşittir.
+
+779
+00:47:24,427 --> 00:47:25,867
+4 artı
+
+780
+00:47:25,867 --> 00:47:26,387
+3 T
+
+781
+00:47:26,387 --> 00:47:27,667
+ve Z eşittir.
+
+782
+00:47:28,327 --> 00:47:29,367
+5 artı
+
+783
+00:47:29,367 --> 00:47:30,347
+5 T.
+
+784
+00:47:32,987 --> 00:47:33,708
+Takip edebiliyor
+
+785
+00:47:33,708 --> 00:47:34,447
+muyuz arkadaşlar?
+
+786
+00:47:35,728 --> 00:47:36,347
+Hocam ben şu
+
+787
+00:47:36,347 --> 00:47:37,288
+ikinci matrisi nasıl
+
+788
+00:47:37,288 --> 00:47:38,407
+bulduğumuzu kaçırdım ama
+
+789
+00:47:38,407 --> 00:47:39,447
+bir daha anlatabilir misiniz?
+
+790
+00:47:39,967 --> 00:47:40,768
+Ortadaki matrisi.
+
+791
+00:47:40,768 --> 00:47:41,107
+Şunu.
+
+792
+00:47:41,107 --> 00:47:44,347
+şöyle tanımı verdiğimizde
+
+793
+00:47:44,347 --> 00:47:44,667
+biz
+
+794
+00:47:44,667 --> 00:47:47,387
+vektörel çarpımın
+
+795
+00:47:47,387 --> 00:47:50,547
+3x3 matrisin
+
+796
+00:47:50,547 --> 00:47:51,627
+determinanta olduğunu
+
+797
+00:47:51,627 --> 00:47:52,427
+söylemiştik.
+
+798
+00:47:52,547 --> 00:47:53,367
+Yani ilk satırlarda
+
+799
+00:47:53,367 --> 00:47:54,167
+vektörler var.
+
+800
+00:47:54,288 --> 00:47:54,967
+IJK
+
+801
+00:47:54,967 --> 00:47:56,307
+Hamilton
+
+802
+00:47:56,307 --> 00:47:58,947
+vektörleri var.
+
+803
+00:47:59,467 --> 00:47:59,927
+Şurası
+
+804
+00:47:59,927 --> 00:48:01,407
+işte U vektörümüz olsun.
+
+805
+00:48:01,587 --> 00:48:03,208
+U vektörünün
+
+806
+00:48:03,208 --> 00:48:03,827
+birleşenleri
+
+807
+00:48:03,827 --> 00:48:04,248
+U1
+
+808
+00:48:04,248 --> 00:48:27,148
+U2
+
+809
+00:48:05,280 --> 00:48:11,180
+U3 ve V vektörünün de bileşenleri V1, V2, V3.
+
+810
+00:48:11,640 --> 00:48:14,860
+Şuraya U1, U2, U3 yazıyoruz.
+
+811
+00:48:15,180 --> 00:48:17,320
+V1, V2, V3.
+
+812
+00:48:17,700 --> 00:48:22,440
+Buradan birinci satıra göre Laplace açılımı uyguluyoruz.
+
+813
+00:48:22,480 --> 00:48:23,360
+Birinci satıra göre.
+
+814
+00:48:23,519 --> 00:48:25,860
+Yani o zaman ne yapmam lazım?
+
+815
+00:48:26,019 --> 00:48:27,940
+I'ye, J, Y, V, K'ya göre açmam lazım.
+
+816
+00:48:28,060 --> 00:48:32,160
+Onları açtığımızda tam olarak yukarıdaki o desen ortaya çıkıyor.
+
+817
+00:48:32,160 --> 00:48:33,280
+Bu daha pratik.
+
+818
+00:48:33,280 --> 00:48:40,019
+Yani determinatta uğraşmaktansa 3 artmışlük maddesinin determinantıyla şunu da alt alta yazdım ben.
+
+819
+00:48:40,480 --> 00:48:42,220
+Nasıl yaptığımı onu söyleyeyim.
+
+820
+00:48:42,600 --> 00:48:43,440
+Ortadan başladım.
+
+821
+00:48:43,540 --> 00:48:44,660
+Şurayı aldım öncelikle.
+
+822
+00:48:46,140 --> 00:48:46,900
+Ortadan başladım.
+
+823
+00:48:47,019 --> 00:48:49,620
+Birincisi 2'ye eksi 1, eksi 1'e 1.
+
+824
+00:48:50,060 --> 00:48:52,460
+Sonra sağa doğru bir shift yaptım.
+
+825
+00:48:53,720 --> 00:48:59,420
+Yani başta bir circle üzerindeymiş gibi, bir silindir üzerindeymiş gibi bir shift yaptım.
+
+826
+00:48:59,500 --> 00:49:01,100
+Sağa doğru bir right shift yaptım.
+
+827
+00:49:01,100 --> 00:49:01,560
+Ne oldu?
+
+828
+00:49:01,560 --> 00:49:10,780
+Shift yaparsam ilk kolun, ikinci matrisin ilk kolunu ya da determinantin ilk kolunu bir önceki olacak.
+
+829
+00:49:10,920 --> 00:49:11,840
+Şurası eksi 1'e 1.
+
+830
+00:49:12,000 --> 00:49:13,360
+Sonra başa sardı 1, 2.
+
+831
+00:49:13,780 --> 00:49:14,920
+Eksi 1'e 1, 1, 2.
+
+832
+00:49:15,420 --> 00:49:19,220
+Ve son olarak da üçüncüyü de bitirdiğim yerden alıyorum her zaman.
+
+833
+00:49:19,340 --> 00:49:19,800
+1, 2.
+
+834
+00:49:20,220 --> 00:49:22,080
+Sonra yani aslında şunu almış oldum.
+
+835
+00:49:22,080 --> 00:49:24,080
+1, 2, 2'ye eksi 1.
+
+836
+00:49:24,519 --> 00:49:25,080
+Oldu mu şimdi?
+
+837
+00:49:25,680 --> 00:49:26,480
+Evet hocam oldu.
+
+838
+00:49:26,560 --> 00:49:27,000
+Teşekkür ederim.
+
+839
+00:49:27,480 --> 00:49:28,280
+Tanımdan geliyor.
+
+840
+00:49:28,440 --> 00:49:31,560
+Yani o pratik bir yöntem olarak bunu kullanabilirsiniz.
+
+841
+00:49:31,740 --> 00:49:34,080
+Ya da isteyen de şuradan uzun uzadıya.
+
+842
+00:49:34,800 --> 00:49:35,900
+Uzun uzadıya da değil.
+
+843
+00:49:35,940 --> 00:49:37,360
+Çok uzun da değil açıkçası.
+
+844
+00:49:38,360 --> 00:49:40,120
+Determiantı kullanarak hesaplayabilir.
+
+845
+00:49:41,320 --> 00:49:43,120
+Vektoral çarpım ama iyi bilmeniz lazım.
+
+846
+00:49:43,220 --> 00:49:44,080
+Bu karşınıza çıkacak arkadaşlar.
+
+847
+00:49:44,080 --> 00:49:47,920
+Hocam burada x'e 0 verme sebebini anlayamadım.
+
+848
+00:49:48,480 --> 00:49:50,580
+Şöyle ben z'yi başta 0 aldım.
+
+849
+00:49:50,800 --> 00:49:52,480
+Sempatik olmayan değerler çıktı.
+
+850
+00:49:52,640 --> 00:49:54,600
+Yani rasyonel ifadeler çıkacaktı.
+
+851
+00:49:55,160 --> 00:49:57,800
+Basit kesir olmayan rasyonel ifadeler.
+
+852
+00:49:58,400 --> 00:50:00,280
+Dolayısıyla ben onlarla uğraşmak istemedim.
+
+853
+00:50:00,380 --> 00:50:03,160
+Yani noktamın bileşenlerinin tam sayı olmasını istedim.
+
+854
+00:50:03,539 --> 00:50:07,740
+Sonuçta iki tane düzlemin kesişiminde sonsuz tane nokta var.
+
+855
+00:50:07,740 --> 00:50:09,600
+Yani şöyle iki tane düzlem düşünürsek.
+
+856
+00:50:10,120 --> 00:50:13,660
+Burada kesişimde sonsuz tane nokta var.
+
+857
+00:50:13,660 --> 00:50:14,600
+şu doğru üzerinde.
+
+858
+00:50:15,160 --> 00:50:16,360
+Bir tanesi bana yetiyor.
+
+859
+00:50:17,140 --> 00:50:20,200
+Z'yi 0 aldığımda hoşnut olmadığım değerler vardı.
+
+860
+00:50:20,300 --> 00:50:25,400
+X'i 0 aldığımızda daha sempatik çözümü daha rahat olan iki değişkenli,
+
+861
+00:50:25,880 --> 00:50:28,720
+iki tane bilim yerine bir dinler denklem sistemi.
+
+862
+00:50:28,800 --> 00:50:29,780
+Onu çözmek daha rahat.
+
+863
+00:50:30,120 --> 00:50:31,660
+O yüzden öyle tercih edelim.
+
+864
+00:50:31,660 --> 00:50:37,080
+Hocam hiçbiri 0'dan geçmiyor olsaydı ne diyebilirdik?
+
+865
+00:50:38,460 --> 00:50:39,280
+Hayır şöyle.
+
+866
+00:50:40,240 --> 00:50:42,940
+Esasında biraz dinlerce bir burada hatırlatayım.
+
+867
+00:50:42,940 --> 00:50:45,680
+Elimizde bir denklem sistemi var aslında.
+
+868
+00:50:45,960 --> 00:50:47,160
+Yani düzlem dediğimiz şey.
+
+869
+00:50:47,280 --> 00:50:49,100
+Üç tane bilinmeyeni olan bir denklem.
+
+870
+00:50:49,180 --> 00:50:49,880
+Diner denklem.
+
+871
+00:50:50,020 --> 00:50:52,120
+Yani x artı 2y.
+
+872
+00:50:53,160 --> 00:50:55,940
+Eksi sizin o söylediğiniz durumun olması mümkün değil.
+
+873
+00:50:56,560 --> 00:50:56,820
+3.
+
+874
+00:50:57,380 --> 00:50:58,500
+Şurası da 2x.
+
+875
+00:50:59,500 --> 00:51:00,160
+Eksi y.
+
+876
+00:51:01,200 --> 00:51:01,980
+Artı z.
+
+877
+00:51:02,240 --> 00:51:02,980
+Eşittir 1.
+
+878
+00:51:03,380 --> 00:51:05,620
+İki tane denklem.
+
+879
+00:51:05,720 --> 00:51:06,860
+Üç tane bilinmeyen var.
+
+880
+00:51:06,860 --> 00:51:08,680
+Bu denklemler birbirinin katı değil.
+
+881
+00:51:09,680 --> 00:51:11,260
+Birbirinden bağımsız denklemler.
+
+882
+00:51:11,360 --> 00:51:12,200
+Diner bağımsız.
+
+883
+00:51:12,200 --> 00:51:16,360
+O yüzden 3 eksi bilinmeyen sayısı eksi denklem sayısı.
+
+884
+00:51:16,780 --> 00:51:18,920
+Bir parametreye bağlı sonsuz çözüm var.
+
+885
+00:51:19,580 --> 00:51:21,220
+Bunu da şey yapabiliriz aslında.
+
+886
+00:51:21,440 --> 00:51:24,800
+Şunu genişletilmiş kat sayılar maddesini yazarak.
+
+887
+00:51:25,100 --> 00:51:25,240
+Değil mi?
+
+888
+00:51:25,320 --> 00:51:26,660
+1, 2, 2, eksi 1.
+
+889
+00:51:27,200 --> 00:51:30,220
+Sonra şurada eksi 1, 1 var.
+
+890
+00:51:30,400 --> 00:51:32,220
+Şuraya da 3, 1 ekledik.
+
+891
+00:51:32,220 --> 00:51:40,440
+Bunu Redistro ve Eşelon forma getirdiğimizde orada sistemi tekrar yazıp iki tane parametreye bağlı çözümlerimizi yazacağız.
+
+892
+00:51:40,560 --> 00:51:42,920
+Orada iki tane parametre olacak sonsuz tane çözüm.
+
+893
+00:51:42,960 --> 00:51:44,880
+Onunla uzun uğraşmak istemiyorum.
+
+894
+00:51:45,360 --> 00:51:46,000
+Ben ne yaptım?
+
+895
+00:51:46,080 --> 00:51:47,520
+Spesifik bir durumunu aldım bunun.
+
+896
+00:51:47,640 --> 00:51:50,500
+Yani sizin o söylediğiniz durum söz konusu değil.
+
+897
+00:51:50,560 --> 00:51:53,740
+Bazen sıfır alınca da sempatik olmayan şeyler ortaya çıkabilir.
+
+898
+00:51:53,840 --> 00:51:54,680
+Onu da söylemiş olayım.
+
+899
+00:51:54,800 --> 00:52:08,280
+Bu keyfinize kalmış. İstediğiniz değeri verebilirsiniz. İstediğiniz değişkene x'i de, y'i de, z'yi de istediğiniz bir şey alabilirsiniz. Geriye kalan diğer iki değişkene göre iki tane denklem, iki bilinmeyen onları çözmeniz lazım.
+
+900
+00:52:09,680 --> 00:52:15,660
+Ya da en genel anlamda hiç o işe girmeden genel çözüm bulursunuz. Oradan istediğiniz bir tane çözümü alırsınız.
+
+901
+00:52:19,188 --> 00:52:20,068
+Herhalde olmuştur.
+
+902
+00:52:26,228 --> 00:52:33,347
+Konu az kaldı sanki. Bitirelim, öyle bir ara verelim. Sonra vektör terli fonksiyonlarla devam edelim.
+
+903
+00:52:34,447 --> 00:52:40,947
+Evet, çözdük. Şimdi düzlemlerinin ara kesit doğrusuna paralel bir vektör.
+
+904
+00:52:40,947 --> 00:52:48,228
+Tabi burada sınavlar yüz yüze yapılırken gerçekten öyle düşündürücü, zorlayıcı sorular sorulabiliyordu.
+
+905
+00:52:48,688 --> 00:52:53,967
+Yani dolan başlı, birebir kendini göstermeyen sorular sorulabiliyordu.
+
+906
+00:52:53,967 --> 00:53:00,467
+Şu anda yaptığımız işte bir önceki soru birinci seviye bir soruysa, üçüncü, dördüncü seviye sorular gelebiliyordu.
+
+907
+00:53:00,588 --> 00:53:12,768
+Yani zorluk derecesi olarak orada hani isteneni soruyu anlamak ve çözebilmek için daha iyi konuları özümsemiş olmak gerekiyor ve çokça örnek çözmüş olmak gerekiyor.
+
+908
+00:53:12,867 --> 00:53:16,628
+Ya da farklı örnekler görmüş olmak gerekiyor olabilirdi.
+
+909
+00:53:16,768 --> 00:53:19,867
+Fakat şimdi test sınavlarında tabii yine böyle sorular sorulabilir.
+
+910
+00:53:19,867 --> 00:53:49,847
+Ama o kadar uzun zaman uzun zaman alacak sorulamıyor.
+
+911
+00:53:49,867 --> 00:53:51,867
+Bu arada ikinci vizyonun zaman alacak sorulamıyor.
+
+912
+00:53:51,867 --> 00:53:54,288
+Bu arada ikinci vizyoniz sanırım mayısın sonuna doğru yapılacak.
+
+913
+00:53:54,387 --> 00:53:57,568
+Bu da ikinci vize demişim vize sınavımız bir tane vize olacak.
+
+914
+00:53:58,148 --> 00:54:00,387
+Bu da sınavın çok kapsamlı olacağını gösterir.
+
+915
+00:54:00,427 --> 00:54:06,288
+Aslında vize diye olacağınız sınav final ağırlığında bir sınav olacağı için çok fazla konuyu kapsayacak.
+
+916
+00:54:06,947 --> 00:54:09,367
+Onu da bilmenizi isterim arkadaşlar.
+
+917
+00:54:09,367 --> 00:54:39,347
+Soruya bakalım.
+
+918
+00:54:39,367 --> 00:54:45,367
+İki tane düzden kesiştirmeye çalışalım.
+
+919
+00:54:45,367 --> 00:54:52,367
+Bu da l doğrusu.
+
+920
+00:54:52,367 --> 00:54:53,367
+Bu l doğrusu.
+
+921
+00:54:53,367 --> 00:54:57,367
+Bu l doğrusuna paralel bir vektör istiyor benden aslında n1 ve n2'nin.
+
+922
+00:54:57,367 --> 00:55:01,367
+Şuraya tek renk kullanma güzel olmadı.
+
+923
+00:55:01,367 --> 00:55:03,367
+Şuraya n1 diyelim.
+
+924
+00:55:03,367 --> 00:55:05,367
+Şurası da n2 olsun.
+
+925
+00:55:05,367 --> 00:55:07,367
+Bunların vektörel çarpımı.
+
+926
+00:55:07,367 --> 00:55:09,367
+Aslında işimizi görüyor.
+
+927
+00:55:09,367 --> 00:55:11,367
+n1 ve n2'nin ya da şuraya n2 çarpı n1 diyelim.
+
+928
+00:55:11,367 --> 00:55:13,367
+Şuan da n1, n2 de alabilirim.
+
+929
+00:55:13,367 --> 00:55:15,367
+vektörektör çarpını bulmamız.
+
+930
+00:55:15,367 --> 00:55:17,367
+Vektörektör çarpını bulmamız isteniyor.
+
+931
+00:55:17,367 --> 00:55:19,367
+Vektörel çarpını bulmamız isteniyor.
+
+932
+00:55:19,367 --> 00:55:21,367
+Ve keşke alt altta yazmış olsaydım.
+
+933
+00:55:21,367 --> 00:55:23,367
+Şöyle altına getirelim.
+
+934
+00:55:23,367 --> 00:55:25,367
+Eksi yedi, eksi bir ve bir.
+
+935
+00:55:25,367 --> 00:55:29,367
+N1 çarpını n2.
+
+936
+00:55:29,367 --> 00:55:34,367
+vektörektör çarpını da bu şekilde daha da pekiştirmiş oluyoruz.
+
+937
+00:55:34,367 --> 00:55:36,367
+Ortadan başlıyoruz her zaman arkadaşlar.
+
+938
+00:55:36,367 --> 00:55:41,367
+Bir birim hep sağa kayıyorum ve bir circle üzerindeymiş gibi düşünüyorum.
+
+939
+00:55:41,367 --> 00:55:43,367
+2'ye eksi bir.
+
+940
+00:55:43,367 --> 00:55:44,367
+Önceki ilanım değil mi?
+
+941
+00:55:44,367 --> 00:55:45,367
+Farklı.
+
+942
+00:55:45,367 --> 00:55:48,367
+Eksi bir'e bir.
+
+943
+00:55:48,367 --> 00:55:49,367
+Sonra bir shift yaptım.
+
+944
+00:55:49,367 --> 00:55:54,367
+Eksi bir'e sonuncusunun sonuncu sütun, ilk sütun oldu.
+
+945
+00:55:54,367 --> 00:55:55,367
+Bir.
+
+946
+00:55:55,367 --> 00:56:00,367
+geldi ikinci sütun için 4-7.
+
+947
+00:56:00,367 --> 00:56:01,367
+Şurada 4-7.
+
+948
+00:56:01,367 --> 00:56:02,367
+Ortadakine geçtik.
+
+949
+00:56:02,367 --> 00:56:03,367
+2'ye eksi bir.
+
+950
+00:56:03,367 --> 00:56:04,367
+Yani başa sardık aslında.
+
+951
+00:56:04,367 --> 00:56:06,367
+2-1, 2-1.
+
+952
+00:56:06,367 --> 00:56:08,367
+Circle tamamlandı.
+
+953
+00:56:08,367 --> 00:56:09,367
+Kapatabiliriz bunu.
+
+954
+00:56:09,367 --> 00:56:14,367
+Vektörel çarpını sadece R3'te tanımlı bir ikili işlem.
+
+955
+00:56:15,367 --> 00:56:17,367
+Sonucu da bir vektör.
+
+956
+00:56:17,492 --> 00:56:35,832
+Hesapladığımızda 2 çarpı 1, 2, eksi 1, 1 olmuş oldu. Eksi 1 çarpı eksi 1, 1 olacak. Bir eksimiz determinat tanımından geliyor. Eksi 1 çarpı eksi 7, 7, eksi 4 olacak, 3 olacak.
+
+957
+00:56:35,832 --> 00:56:50,272
+4 çarpı eksi 1, eksi 4. Şurada eksi 14 var. Başında bir eksi olacak, artı 14, eksi 4, artı 14, eksi 10 olmuş oldu.
+
+958
+00:56:51,772 --> 00:57:00,112
+Özel olarak bu vektör, vektöre eğer v dersek, v vektörü ara kesik doğrultusunun doğrultusunda paralel bir vektör olmuş olacak.
+
+959
+00:57:02,512 --> 00:57:04,372
+Bakalım başka sorumuz var mı?
+
+960
+00:57:08,148 --> 00:57:09,588
+Hocam artı 10 değil miydi?
+
+961
+00:57:11,367 --> 00:57:15,788
+Artı 10 mu? Evet, artı 10 olması gerekiyordu. Ben etki 10 yazmışım. Teşekkür ederim.
+
+962
+00:57:16,728 --> 00:57:20,468
+Evet, artı 10 olması lazım. Şunu artı yapalım. Ya da onu sileyim ben.
+
+963
+00:57:23,923 --> 00:57:25,923
+Evet, tamam tamam.
+
+964
+00:57:27,923 --> 00:57:28,923
+Şekil.
+
+965
+00:57:34,420 --> 00:57:35,579
+Güzel bir soru olabilir.
+
+966
+00:57:36,760 --> 00:57:37,220
+Değil.
+
+967
+00:57:37,780 --> 00:57:40,380
+Bu da birebir tanımın bir uygulaması gibi
+
+968
+00:57:40,380 --> 00:57:42,519
+düşünebiliriz. Bir doğru var.
+
+969
+00:57:42,599 --> 00:57:44,400
+Parametrik olarak verilmiş.
+
+970
+00:57:45,139 --> 00:57:46,420
+T parametrisine göre.
+
+971
+00:57:46,980 --> 00:57:48,539
+Bir D1 düzlemimiz var.
+
+972
+00:57:48,680 --> 00:57:50,619
+Düzlemi, düzlemiyle
+
+973
+00:57:50,619 --> 00:57:52,340
+doğrunun kesiştiği noktayı
+
+974
+00:57:52,340 --> 00:57:54,000
+bulunuz. Eğer
+
+975
+00:57:54,000 --> 00:57:56,420
+doğru düzlemin içindeyse
+
+976
+00:57:56,420 --> 00:57:58,480
+doğru üzerindeki
+
+977
+00:57:58,480 --> 00:58:00,340
+her nokta düzlemi sağlar. Fakat
+
+978
+00:58:00,340 --> 00:58:02,519
+tek, eğer böyle bir durum
+
+979
+00:58:02,519 --> 00:58:04,039
+yoksa tek bir noktada kesişir.
+
+980
+00:58:04,039 --> 00:58:05,559
+Bunun için ne yapmamız lazım?
+
+981
+00:58:06,079 --> 00:58:08,280
+X değeri belli. Burada X yerine yazacağım.
+
+982
+00:58:08,380 --> 00:58:10,000
+Yani X yerine T yazacağım.
+
+983
+00:58:10,639 --> 00:58:11,940
+Şöyle diyelim. Düzlem
+
+984
+00:58:11,940 --> 00:58:12,760
+denkleminde
+
+985
+00:58:12,760 --> 00:58:14,740
+düzlem
+
+986
+00:58:14,740 --> 00:58:20,240
+denkleminde parametre değişimi
+
+987
+00:58:20,240 --> 00:58:22,480
+yapılırsa, parametre
+
+988
+00:58:22,480 --> 00:58:24,240
+yerine yazılırsa, parametre
+
+989
+00:58:24,240 --> 00:58:26,200
+ya da
+
+990
+00:58:26,200 --> 00:58:27,880
+yerine değil de yazılırsa diyelim.
+
+991
+00:58:28,380 --> 00:58:30,400
+Yani sanki orada bir yeri varmış gibi.
+
+992
+00:58:30,400 --> 00:58:32,280
+Parametre yazılırsa, parametre
+
+993
+00:58:32,280 --> 00:59:13,280
+yazılırsa, parametre
+
+994
+00:59:13,280 --> 00:59:17,280
+yazılırsa
+
+995
+00:59:17,280 --> 00:59:18,280
+eksi on beş
+
+996
+00:59:18,280 --> 00:59:20,280
+eşittir
+
+997
+00:59:20,280 --> 00:59:21,280
+iki
+
+998
+00:59:21,280 --> 00:59:23,280
+buradan da
+
+999
+00:59:23,280 --> 00:59:24,280
+eksi altı t artı
+
+1000
+00:59:24,280 --> 00:59:25,280
+altı de bunlar
+
+1001
+00:59:25,280 --> 00:59:27,280
+birbirini yok etti
+
+1002
+00:59:27,280 --> 00:59:30,280
+üç tane t eşittir
+
+1003
+00:59:30,280 --> 00:59:31,280
+yedi var
+
+1004
+00:59:31,280 --> 00:59:32,280
+karşı tarafı eksi yedi
+
+1005
+00:59:32,280 --> 00:59:33,280
+dokuz olacak
+
+1006
+00:59:33,280 --> 00:59:34,280
+yani
+
+1007
+00:59:34,280 --> 00:59:36,280
+t değeri eşittir
+
+1008
+00:59:36,280 --> 00:59:37,280
+üç olmuşum
+
+1009
+00:59:37,280 --> 00:59:38,280
+yapmam gereken
+
+1010
+00:59:38,280 --> 00:59:39,280
+doğru denkleminde
+
+1011
+00:59:39,280 --> 00:59:40,280
+t'yi yerine yazmak
+
+1012
+00:59:40,280 --> 00:59:41,280
+o zaman
+
+1013
+00:59:41,280 --> 00:59:42,280
+x değeri eşittir
+
+1014
+00:59:42,280 --> 00:59:43,280
+üç
+
+1015
+00:59:43,280 --> 00:59:45,280
+y değeri eşittir
+
+1016
+00:59:45,280 --> 00:59:47,280
+4 eksi
+
+1017
+00:59:47,280 --> 00:59:48,280
+9'dan
+
+1018
+00:59:48,280 --> 00:59:49,280
+eksi 5
+
+1019
+00:59:49,280 --> 00:59:51,280
+ve z değeri de
+
+1020
+00:59:51,280 --> 00:59:52,280
+5 eksi
+
+1021
+00:59:52,280 --> 00:59:53,280
+6'dan
+
+1022
+00:59:53,280 --> 00:59:54,280
+eksi 1
+
+1023
+00:59:54,280 --> 00:59:55,280
+olmuş oldu
+
+1024
+00:59:55,280 --> 00:59:56,280
+demek ki
+
+1025
+00:59:56,280 --> 00:59:57,280
+doğru
+
+1026
+00:59:57,280 --> 00:59:58,280
+p sıfır
+
+1027
+00:59:58,280 --> 00:59:59,280
+dediğimiz noktada
+
+1028
+00:59:59,280 --> 01:00:00,280
+hatta şuraya x sıfır
+
+1029
+01:00:00,280 --> 01:00:01,280
+y sıfır
+
+1030
+01:00:01,280 --> 01:00:02,280
+z sıfır
+
+1031
+01:00:02,280 --> 01:00:03,280
+diyelim
+
+1032
+01:00:03,280 --> 01:00:04,280
+p sıfır
+
+1033
+01:00:04,280 --> 01:00:05,280
+üç
+
+1034
+01:00:05,280 --> 01:00:07,280
+eksi beş
+
+1035
+01:00:07,280 --> 01:00:08,280
+eksi bir noktasında
+
+1036
+01:00:08,280 --> 01:00:09,280
+kesici olmuş
+
+1037
+01:00:09,280 --> 01:00:10,280
+yani
+
+1038
+01:00:10,280 --> 01:00:12,280
+d bir
+
+1039
+01:00:12,280 --> 01:00:13,280
+kesişim
+
+1040
+01:00:13,280 --> 01:00:14,280
+l eşittir
+
+1041
+01:00:14,280 --> 01:00:17,280
+nokta olarak yazalım
+
+1042
+01:00:17,280 --> 01:00:18,280
+d
+
+1043
+01:00:18,280 --> 01:00:19,280
+0
+
+1044
+01:00:19,280 --> 01:00:20,280
+3
+
+1045
+01:00:20,280 --> 01:00:21,280
+eksi beş
+
+1046
+01:00:21,280 --> 01:00:22,280
+eksi bir
+
+1047
+01:00:22,280 --> 01:00:24,280
+imiş
+
+1048
+01:00:24,280 --> 01:00:51,280
+l
+
+1049
+01:00:29,108 --> 01:00:30,288
+Ben soru arkadaşım.
+
+1050
+01:00:34,835 --> 01:00:38,596
+Bu şekilde doğru ve düzlem konusunu da tamamlamış olduk.
+
+1051
+01:00:38,775 --> 01:00:40,755
+Yani aslında bu yardımcı bir konu.
+
+1052
+01:00:41,415 --> 01:00:52,975
+Karşımıza çıkacağı yer yönlü türev ve bir yüzeyin tert düzlemi normal doğrusunu belirlerken kullanacağımız bilgiler var burada.
+
+1053
+01:00:53,175 --> 01:00:57,115
+Fakat konu içinden de birebir sınavlarda sorular soruluyor.
+
+1054
+01:00:57,115 --> 01:01:05,815
+Doğrunun düzleme göre durumu, düzlemlerin bilgilerine göre durumlarıyla ilgili ya da denklem bulmayla ilgili sorular sorulabiliyor.
+
+1055
+01:01:06,935 --> 01:01:12,575
+Bu konuyla ilgili bir uygulamamız vardı.
+
+1056
+01:01:14,495 --> 01:01:17,695
+Bugün onun cevap anahtarını da paylaşırım ya da yarın paylaşırım.
+
+1057
+01:01:17,795 --> 01:01:18,875
+Çünkü konu bitmiş olacak.
+
+1058
+01:01:19,395 --> 01:01:21,335
+Vektör değerli fonksiyonları da bitirelim.
+
+1059
+01:01:21,475 --> 01:01:22,415
+Onu da paylaşırım.
+
+1060
+01:01:23,195 --> 01:01:26,075
+Bugün vektör değerli fonksiyonları göreceğiz.
+
+1061
+01:01:26,075 --> 01:01:27,775
+İkinci dersimizde.
+
+1062
+01:01:27,775 --> 01:01:28,635
+Şimdi ara verelim.
+
+1063
+01:01:29,355 --> 01:01:31,755
+Yarın da iki değişkenli fonksiyonlara.
+
+1064
+01:01:31,975 --> 01:01:34,415
+Asıl kalkın uz ikiye geçmiş olacağız.
+
+1065
+01:01:34,555 --> 01:01:38,475
+Yani şu ana kadar gördüğümüz konular çoğunlukla farklı derslerden.
+
+1066
+01:01:39,255 --> 01:01:41,235
+Doğru düzlem konusu analitik geometriden.
+
+1067
+01:01:41,635 --> 01:01:45,955
+Ama bu derste ihtiyarımız olan vektörler nerce birden aldığımız konular.
+
+1068
+01:01:46,495 --> 01:01:51,175
+Öncesinde seriler, diziler onlar aslında mat bir konusu.
+
+1069
+01:01:51,635 --> 01:01:53,835
+Riman toplamından önce verilmesi gerekiyor.
+
+1070
+01:01:53,835 --> 01:01:58,175
+Şu anda asıl iki değişkenli kalkın uzun.
+
+1071
+01:01:58,175 --> 01:02:05,195
+Şu anda yarın vektör değerli fonksiyonları da bitireceğimizi düşünüyorum.
+
+1072
+01:02:05,295 --> 01:02:06,155
+Uzun bir konu değil.
+
+1073
+01:02:06,815 --> 01:02:09,255
+Yarın iki değişkenli fonksiyonlarla devam edeceğiz.
+
+1074
+01:02:09,755 --> 01:02:11,576
+Ben ara boyunca burada olacağım arkadaşlar.
+
+1075
+01:02:11,795 --> 01:02:13,235
+Sorularınızı sorabilirsiniz.
+
+1076
+01:02:13,235 --> 01:02:15,235
+10 dakika ara boyunca.
+
+1077
+01:02:15,235 --> 01:02:15,995
+10 dakika ara verelim.
+
+1078
+01:10:36,916 --> 01:10:38,436
+Tekrar merhaba arkadaşlar.
+
+1079
+01:10:40,315 --> 01:10:44,296
+Vektör değerli fonksiyonlar aslında çok özet olarak anlatılacak.
+
+1080
+01:10:44,476 --> 01:10:47,336
+Yani bu konu öyle derinlemesine anlatılmayacak.
+
+1081
+01:10:47,456 --> 01:10:52,416
+Çünkü vektör değerli fonksiyonlarla ilgili değersel integraller konusu var.
+
+1082
+01:10:53,076 --> 01:10:54,855
+Vektör alanları konusu var.
+
+1083
+01:10:55,655 --> 01:10:58,916
+İşte tam vektör alanları biraz şeye giriyor.
+
+1084
+01:10:59,296 --> 01:11:00,996
+Elektrik alanı falan giriyor.
+
+1085
+01:11:01,615 --> 01:11:03,756
+Bu konular biraz fiziğin kapsamı içinde.
+
+1086
+01:11:03,756 --> 01:11:10,496
+Sadece burada temel matematiksel özelliklerle yönelik bazı özelliklerden söz edeceğiz.
+
+1087
+01:11:10,615 --> 01:11:12,056
+Vektör değerli fonksiyonların.
+
+1088
+01:11:12,996 --> 01:11:15,016
+Aslında parametrik denklemleri gördük.
+
+1089
+01:11:15,855 --> 01:11:26,836
+Ki bu fonksiyonlar esasında Türev'in ilk çıkış sebebinde sorulan temel sorunun da bir bakıma cevabının belki sonucu.
+
+1090
+01:11:26,836 --> 01:11:33,976
+İlk Türev tanımı niçin tanımlandı diye soracak olursak
+
+1091
+01:11:33,976 --> 01:11:41,275
+bir noktadan bir noktaya hareket eden bir hareketlerin anlık hızını nasıl bulabiliriz?
+
+1092
+01:11:41,315 --> 01:11:44,275
+Ya da anlık hızı nedir sorusunun aslında cevabı Türev.
+
+1093
+01:11:44,836 --> 01:11:47,836
+Ki bu limitin ortaya çıkmasına sebep oldu.
+
+1094
+01:11:47,836 --> 01:11:53,716
+Limit kavramı, matematikteki limit kavramının temel çıkış sebeplerinden biri de bu.
+
+1095
+01:11:56,096 --> 01:11:59,815
+Ona yeri geldiğinde belki değineceğim bu Türev'in yorumuna.
+
+1096
+01:12:00,735 --> 01:12:05,895
+Tanımları olacak ve bu fonksiyonlarla ilgili limit, süreklilik, Türev kavramları,
+
+1097
+01:12:05,895 --> 01:12:12,136
+konum hız iğme fonksiyonları, bunlar vektörel fonksiyonlar,
+
+1098
+01:12:12,756 --> 01:12:17,476
+Türev alma kuralları, burada vektör olduğu için vektör değerli fonksiyonlar,
+
+1099
+01:12:18,336 --> 01:12:23,036
+vektörel çarpımın türevi, skaler çarpımın türevi gibi durumları düşünmemiz gerekecek.
+
+1100
+01:12:23,376 --> 01:12:26,296
+Bunları sadece özellik olarak göreceğiz, detaylarına girmeyeceğiz.
+
+1101
+01:12:26,296 --> 01:12:32,636
+Ve bir uzay eğrisi boyunca yay uzunluğu kavramı.
+
+1102
+01:12:32,695 --> 01:12:39,176
+Bu da bir hareketlinin, havada hareket eden bir cismin izlediği yolun uzunluğu aslında.
+
+1103
+01:12:39,395 --> 01:12:41,916
+Yani bu doğrusal bir yol olmak sorun da değil.
+
+1104
+01:12:42,036 --> 01:12:48,395
+Eliptik olabilir, parabolik olabilir, helis eğrisi boyunca olabilir, üç boyutlu.
+
+1105
+01:12:49,256 --> 01:12:54,056
+Dolayısıyla peki bir vektör değerli fonksiyon nedir?
+
+1106
+01:12:54,056 --> 01:12:59,536
+Vektör değerli fonksiyonların vektör olduğu için yine üzerinde okla gösteriliyor.
+
+1107
+01:12:59,655 --> 01:13:01,396
+Bir T parametresine bağlı.
+
+1108
+01:13:01,916 --> 01:13:08,876
+Tabi burada A noktasından B noktasına hareket eden aslında bir hareketlinin konum vektörü.
+
+1109
+01:13:09,796 --> 01:13:15,096
+Koordinatları, X, Y, Z koordinatları, koordinat sayısı arttırılabilir.
+
+1110
+01:13:15,235 --> 01:13:16,996
+E1, E2, E ne kadar gidebilir?
+
+1111
+01:13:17,115 --> 01:13:18,815
+Hiç önemli değil. Burada üç boyutlar edilmiş.
+
+1112
+01:13:19,636 --> 01:13:24,016
+Zamanın bir fonksiyonu aslında her bir, her bir koordinatının konumunu.
+
+1113
+01:13:24,056 --> 01:13:26,756
+Zamanın bir fonksiyon olarak düşünüyoruz.
+
+1114
+01:13:26,836 --> 01:13:30,735
+Dolayısıyla RT'lerin biz türevinden söz edeceğiz.
+
+1115
+01:13:30,855 --> 01:13:31,996
+Limitinden, sürekliğinden.
+
+1116
+01:13:32,076 --> 01:13:37,636
+Bu tamamen birleşen fonksiyonlarına bağlı olmuş olacak ki bu da maddirin konusu esasında.
+
+1117
+01:13:37,916 --> 01:13:39,756
+Bütün oradaki kurallar geçerli olacak.
+
+1118
+01:13:40,376 --> 01:13:44,296
+Bu şekildeki bir fonksiyona biz vektör değerli fonksiyon diyoruz.
+
+1119
+01:13:44,296 --> 01:13:47,996
+Tabi burada sıfır anındaki konumu, t eşittir sıfır.
+
+1120
+01:13:48,076 --> 01:13:49,235
+Şurası sıfır anı.
+
+1121
+01:13:49,876 --> 01:13:52,195
+Sonra şuraya t eşittir bir anı diyelim.
+
+1122
+01:13:53,815 --> 01:13:54,836
+T eşittir sıfır.
+
+1123
+01:13:55,355 --> 01:13:56,355
+T eşittir bir.
+
+1124
+01:13:57,615 --> 01:14:02,716
+Geçen zamana karşılık her zaman bir korun vektörü karşılık gelecek.
+
+1125
+01:14:02,916 --> 01:14:04,275
+Tabi bunları sıklaştırabiliriz.
+
+1126
+01:14:04,355 --> 01:14:05,855
+Bütünüyle dolduracak aslında.
+
+1127
+01:14:06,576 --> 01:14:08,216
+T eşittir diskret almış olalım.
+
+1128
+01:14:08,216 --> 01:14:11,615
+T eşittir iki arada sonsuz tane real sayı var her biri için.
+
+1129
+01:14:11,775 --> 01:14:16,216
+Sonuçta zaman skaler bir büyüklük ve o real sayılarla eşleştirebiliriz.
+
+1130
+01:14:17,076 --> 01:14:19,996
+Dilediğimiz kadar zamanı küçültebiliriz matematiksel olarak.
+
+1131
+01:14:20,636 --> 01:14:24,256
+Fakat gerçek dünyada bu o kadar da mümkün değil.
+
+1132
+01:14:24,396 --> 01:14:27,256
+Sonsuz küçültemeyiz zamanı.
+
+1133
+01:14:27,336 --> 01:14:30,695
+Öyle bir imkanımız yok bizim içinde yaşadığımız dünyada.
+
+1134
+01:14:32,115 --> 01:14:34,115
+Şuraya biz diskret almış olalım.
+
+1135
+01:14:34,216 --> 01:14:35,935
+T3 falan. Şuraya
+
+1136
+01:14:35,935 --> 01:14:38,235
+T0 anındaki
+
+1137
+01:14:38,235 --> 01:14:40,296
+konumunu vermiş olduk.
+
+1138
+01:14:40,355 --> 01:14:42,435
+Burada bir helis eğrisine
+
+1139
+01:14:42,435 --> 01:14:44,355
+benzer bir eli üzerinde hareket
+
+1140
+01:14:44,355 --> 01:14:46,076
+ediyormuş gibi ya da böyle bir planör
+
+1141
+01:14:46,076 --> 01:14:48,155
+uçuşu şeyler çizebilir falan
+
+1142
+01:14:48,155 --> 01:14:49,355
+sortiler yaparak
+
+1143
+01:14:49,355 --> 01:14:54,155
+bir noktadan bir noktaya hareket eden
+
+1144
+01:14:54,155 --> 01:14:55,916
+bir hareketlinin konumunu bize
+
+1145
+01:14:55,916 --> 01:14:58,416
+zamana bağlı olarak verilen fonksiyonlara
+
+1146
+01:14:58,416 --> 01:15:00,115
+vektör değerli fonksiyon diyoruz.
+
+1147
+01:15:00,115 --> 01:15:03,815
+Limiti nasıl olur? Limit tamamen
+
+1148
+01:15:03,815 --> 01:15:06,115
+bileşen fonksiyonlarına bağlı olacak.
+
+1149
+01:15:06,275 --> 01:15:08,055
+Elimizde bir vektör değerli
+
+1150
+01:15:08,055 --> 01:15:10,055
+fonksiyonu olsun. Buradaki bütün kuralları
+
+1151
+01:15:10,055 --> 01:15:11,836
+R3'teymiş gibi düşüneceğiz. Fakat
+
+1152
+01:15:11,836 --> 01:15:13,815
+bunlar R'ye genelleştirilebilir.
+
+1153
+01:15:14,916 --> 01:15:15,836
+İlginç değil onlar.
+
+1154
+01:15:15,996 --> 01:15:17,855
+Önemli olan bir yerde tanımlamak bunları
+
+1155
+01:15:17,855 --> 01:15:19,956
+diyerek ona paralel gidecek.
+
+1156
+01:15:20,336 --> 01:15:20,695
+Sadece
+
+1157
+01:15:20,695 --> 01:15:23,855
+bileşen sayısı artacak.
+
+1158
+01:15:25,876 --> 01:15:28,216
+Elimizde bir R vektörü
+
+1159
+01:15:28,216 --> 01:15:30,055
+var. Bileşenlere F, T
+
+1160
+01:15:30,055 --> 01:15:31,836
+G, T ve H, T şeklinde
+
+1161
+01:15:31,836 --> 01:15:34,256
+tabi bu vektör dediğimiz için
+
+1162
+01:15:34,256 --> 01:15:37,216
+şu notasyonda da yazabiliriz.
+
+1163
+01:15:37,296 --> 01:15:37,716
+F, T
+
+1164
+01:15:37,716 --> 01:15:41,916
+G, T ve H, T şeklinde de yazabiliriz.
+
+1165
+01:15:42,515 --> 01:15:43,775
+Bazen bu kolaylık sağlar.
+
+1166
+01:15:43,876 --> 01:15:45,796
+İnci, K'yı her zaman yazmaktansa
+
+1167
+01:15:45,796 --> 01:15:47,756
+bunu yazmak daha pratikte olabilir.
+
+1168
+01:15:47,756 --> 01:15:49,536
+bir L vektörü var.
+
+1169
+01:15:49,536 --> 01:15:52,155
+elimizde tabi L bir skaler bileşen bir vektör.
+
+1170
+01:15:52,216 --> 01:15:55,155
+Dikkat ederseniz L1, L2, L3 şeklinde.
+
+1171
+01:15:55,155 --> 01:16:00,216
+RT fonksiyonun yani bu konum vektörü aslında.
+
+1172
+01:16:00,895 --> 01:16:14,015
+Konum vektörünün T0 arındaki limitinin L olabilmesi demek aslında bileşen fonksiyonların T0'da F, T'nin L1'e, G, T'nin D2'ye ve H, T'nin D3'e yakınsaması demek.
+
+1173
+01:16:14,015 --> 01:16:26,315
+Bu limiti de gösterirken biz T, T0'a yaklaşırken hani belli bir zamana yaklaşırkenki limit değerimiz ayrı ayrı bileşenlerin T0'daki limitlerine eşit olacak.
+
+1174
+01:16:26,775 --> 01:16:32,115
+Bunları yine dediğim gibi şöyle aralarına girgi koyarak da yazabilirsiniz.
+
+1175
+01:16:32,256 --> 01:16:33,636
+I, J, K'yı atabilirsiniz.
+
+1176
+01:16:33,855 --> 01:16:35,115
+Tamamen bir notasyon.
+
+1177
+01:16:36,155 --> 01:16:43,376
+Limit kavramı tek değişkenli fonksiyonların bir noktadaki limitine bağlı olarak tanımlanıyor.
+
+1178
+01:16:43,376 --> 01:16:47,676
+Limitin olabilmesi için bileşen fonksiyonların o noktada limitlerinin olması gerekir.
+
+1179
+01:16:48,235 --> 01:16:52,435
+En az bir tanesinin limiti yoksa RT'nin T0'da limiti yoktur diyeceğiz.
+
+1180
+01:16:57,427 --> 01:17:09,648
+Bir örneğimiz var. tp bölü 4'e giderken rt'nin limiti nedir diye sormuş bize. Aslında limit noktasında tanımlı olduğu için doğrudan fonksiyonun değerine eşit.
+
+1181
+01:17:09,648 --> 01:17:21,247
+Yani tabii tanımsızlık yok burada. O yüzden limit tp bölü 4'e yaklaşırken rt vektör değerli fonksiyonun limiti o da eşittir.
+
+1182
+01:17:21,247 --> 01:17:23,988
+ayrı ayrı birleşen fonksiyonların limiti değil mi?
+
+1183
+01:17:25,448 --> 01:17:29,948
+tp bölü 4'e giderken ben şöyle vektör noktasyonda yazayım.
+
+1184
+01:17:30,467 --> 01:17:31,228
+Cosinus t
+
+1185
+01:17:34,996 --> 01:17:41,056
+Burada t0 değerimiz, pi bölü 4, sin 3 t ve t.
+
+1186
+01:17:46,068 --> 01:17:53,528
+Eğer bir belirsizlik olması halinde tek değişkenli fonksiyonlara uyguladığımız bütün limit kurallarını buraya da uygulayabiliriz.
+
+1187
+01:17:53,728 --> 01:17:57,128
+Limitlerde kullandığımız bütün argümanları burada da kullanabiliriz.
+
+1188
+01:17:57,168 --> 01:18:01,347
+Çünkü bileşenler zaten real değerli, real değişkenli fonksiyonlar.
+
+1189
+01:18:01,547 --> 01:18:02,967
+Tek değişkenli fonksiyonlar.
+
+1190
+01:18:02,967 --> 01:18:16,948
+Burada limitlere baktığımızda kosinus pi bölü 4, kök 2 bölü 2, sinüs aynı şekilde kök 2 bölü 2 ve şurada da pi bölü 4 değeri var.
+
+1191
+01:18:22,612 --> 01:18:28,072
+Aslında bunlar 3 boyutlu uzayda bir silindir ifade ediyor. Kosüniste, siniste ve t değerleri.
+
+1192
+01:18:29,212 --> 01:18:40,192
+t z ekseni boyunca yükselmeyi gösterecek. x'te, siniste, kosüniste de çember üzerindeki noktalar. Bunlar yukarı doğru bir helis eğisi boyunca.
+
+1193
+01:18:40,192 --> 01:18:46,572
+Aslında bu helis eğisi. Z eksen etrafında bir yay çizerek yukarı çıkıyor. Buyurun.
+
+1194
+01:18:47,351 --> 01:18:49,832
+Baştaki pi bölü 2 yanlışlıkla mı yazmıştınız?
+
+1195
+01:18:49,832 --> 01:18:51,612
+Yanlış yazdım evet.
+
+1196
+01:18:52,332 --> 01:18:55,412
+Pi bölü 4 yazdım içeriye ama şurası pi bölü 4 olması lazım.
+
+1197
+01:18:56,212 --> 01:18:59,152
+Sabah 4 saat ders anlattım aralıksız.
+
+1198
+01:18:59,712 --> 01:19:02,672
+Şimdi bu ders, bir de Ramazan faktörü var.
+
+1199
+01:19:04,132 --> 01:19:04,492
+O yüzden
+
+1200
+01:19:04,492 --> 01:19:07,652
+Olabilir hocam.
+
+1201
+01:19:07,752 --> 01:19:07,971
+Evet.
+
+1202
+01:19:12,311 --> 01:19:13,292
+Teşekkür ederim.
+
+1203
+01:19:13,391 --> 01:19:15,712
+Bu dersin süreklilik kavramı nasıl olacak burada?
+
+1204
+01:19:16,372 --> 01:19:19,252
+Bir tek değişkenli fonksiyon sürekliliğini hatırlayalım.
+
+1205
+01:19:19,252 --> 01:19:21,252
+Fx fonksiyonu ne zaman sürekli oluyordur.
+
+1206
+01:19:21,252 --> 01:19:28,252
+Fx'in x0'da sürekli olması için tabii x0 dediğimiz şey,
+
+1207
+01:19:28,252 --> 01:19:32,252
+tanım kümesinin bir elemanı.
+
+1208
+01:19:32,252 --> 01:19:50,252
+Fx fonksiyonunun
+
+1209
+01:19:39,604 --> 01:19:49,604
+x0 eleman df diyelim ona, domain f noktasında sürekli olabilmesi için
+
+1210
+01:19:56,467 --> 01:20:06,827
+Hatta şunu df parantez içine alayım. Herhangi bir x0 noktası diyelim. Neden? Çünkü tanımı verirken zaten onu kullanacağız. Şöyle yapayım.
+
+1211
+01:20:08,447 --> 01:20:20,148
+Birincisi x0'da tanımlı olması lazım. 1, fx0 tanımlı. Bu ne demek? fx0 df'in elemanı olması lazım.
+
+1212
+01:20:20,148 --> 01:20:25,228
+İkincisi limit xx0'a yaklaşırken
+
+1213
+01:20:30,931 --> 01:20:31,911
+fx'in
+
+1214
+01:20:31,911 --> 01:20:34,192
+mevcut olması gerekir.
+
+1215
+01:20:36,331 --> 01:20:37,631
+Ve üçüncü olarak da
+
+1216
+01:20:37,631 --> 01:20:38,992
+limit
+
+1217
+01:20:38,992 --> 01:20:40,711
+x
+
+1218
+01:20:40,711 --> 01:20:42,271
+x0'a
+
+1219
+01:20:42,271 --> 01:20:43,231
+derken
+
+1220
+01:20:43,231 --> 01:20:46,431
+fx eşit de
+
+1221
+01:20:46,431 --> 01:20:48,511
+fx0 olması lazım. Ve limit
+
+1222
+01:20:48,511 --> 01:20:50,692
+değerinin fonksiyon noktadaki değerine eşit olması
+
+1223
+01:20:50,692 --> 01:20:52,291
+lazım. Bunların üçünü aynı anda şöyle
+
+1224
+01:20:52,291 --> 01:20:54,351
+yani şu üçüncü madde aslında hepsini
+
+1225
+01:20:54,351 --> 01:20:56,452
+vermiş oluyor bize. Sadece üçüncü madde de
+
+1226
+01:20:56,452 --> 01:20:58,711
+x0 noktasındaki süreklilik için yeterli.
+
+1227
+01:20:59,131 --> 01:21:00,032
+Fonksiyon noktada
+
+1228
+01:21:00,032 --> 01:21:02,631
+noktada tanımlı limiti
+
+1229
+01:21:02,631 --> 01:21:04,532
+var. Limit değeri fonksiyon
+
+1230
+01:21:04,532 --> 01:21:06,532
+noktadaki değerine eşitse bu durumda
+
+1231
+01:21:07,391 --> 01:21:08,711
+fx fonksiyonu x0
+
+1232
+01:21:08,711 --> 01:21:10,391
+noktasında süreklidir deriz. Eğer
+
+1233
+01:21:10,391 --> 01:21:12,612
+tanım kümesindeki her bir noktada
+
+1234
+01:21:12,612 --> 01:21:14,671
+süreklilik varsa fonksiyona süreklidir
+
+1235
+01:21:14,671 --> 01:21:15,671
+diyorduk.
+
+1236
+01:21:16,331 --> 01:21:18,591
+Bir vektör değerli fonksiyonun
+
+1237
+01:21:18,591 --> 01:21:20,112
+sürekli olabilmesi için de
+
+1238
+01:21:20,112 --> 01:21:21,251
+ne olması lazım?
+
+1239
+01:21:24,391 --> 01:21:26,692
+RT'nin t0'daki limitinin
+
+1240
+01:21:26,692 --> 01:21:28,731
+t0'daki değerine eşit olması
+
+1241
+01:21:28,731 --> 01:21:31,331
+lazım. Bu da aslında bileşen fonksiyonların
+
+1242
+01:21:31,331 --> 01:21:33,231
+her birinin t0 noktasında
+
+1243
+01:21:33,231 --> 01:21:35,231
+sürekli olması demek. Yani
+
+1244
+01:21:35,231 --> 01:21:38,131
+tanımlı limitin mevcut limitin fonksiyonun
+
+1245
+01:21:38,131 --> 01:21:39,871
+tanımlı olduğu değere eşit olması demek.
+
+1246
+01:21:40,291 --> 01:21:43,171
+Yukarıda verdiğimiz o madde ya üç madde ya da
+
+1247
+01:21:43,171 --> 01:21:44,711
+aslında üçüncü madde bunu sağlıyor.
+
+1248
+01:21:44,831 --> 01:21:47,331
+Sadece üçüncü madde. Her bir bileşen fonksiyonu
+
+1249
+01:21:47,331 --> 01:21:49,931
+için t0'daki sağlanması gerekiyor.
+
+1250
+01:21:50,431 --> 01:21:52,511
+Koşullar sağlanıyorsa ya da şu
+
+1251
+01:21:52,511 --> 01:21:54,192
+tek maddeyi de verdiğimiz
+
+1252
+01:21:54,192 --> 01:21:55,871
+t0'a giderken
+
+1253
+01:21:55,871 --> 01:21:58,032
+RT limiti olacak. Yani
+
+1254
+01:21:58,032 --> 01:22:01,051
+rektör değerli fonksiyon limiti olacak ve bu
+
+1255
+01:22:01,051 --> 01:22:02,831
+t0'ın
+
+1256
+01:22:02,831 --> 01:22:04,671
+bu anlık zamanın
+
+1257
+01:22:04,671 --> 01:22:06,152
+R'deki görüntüsüne yani
+
+1258
+01:22:06,152 --> 01:22:08,171
+konumuna eşit olması gerekir.
+
+1259
+01:22:12,083 --> 01:22:26,063
+Süreklilik de böyle. Noktada süreklilik de tabii. Genel anlamda süreklilik. Tanım kümesindeki her bir noktada fonksiyon sürekli ise bu durumda süreklidir deyeceğiz arkadaşlar. Bunlar MatBiri'de biraz hatırlatmış oluyor aslında bize.
+
+1260
+01:22:27,724 --> 01:22:39,604
+Türev nasıl olacak? Şimdi türevden biraz bahsedelim. Yine tek değişkenli bir fonksiyon türevi. Yani bu konu biraz önemli olduğu için ilk çıktığı yer aslında türevin arkasındaki motivasyon bu.
+
+1261
+01:22:39,604 --> 01:22:45,003
+fakat ilerleyen zamanlarda hemen hemen hemen her yerde uygulama alanı var.
+
+1262
+01:22:45,104 --> 01:22:50,804
+Mühendisliğin adeta ayrılmaz bir parçası şu anda türev kavramı.
+
+1263
+01:22:50,884 --> 01:22:54,923
+Nerede bir değişim varsa, ölçmek istediğimiz bir şey varsa türev orada var.
+
+1264
+01:22:55,323 --> 01:23:02,344
+Aslında değişimi, değişim oranını veriyor bize. Yani değişimi ölçebilme imkanı veriyor bize türev.
+
+1265
+01:23:02,443 --> 01:23:08,463
+Elimizde sürekli bir fx fonksiyon olsun. Yani diyeceksiniz ki bu limit süreklilik niye var? Türevi tanımlayabilmek için.
+
+1266
+01:23:09,604 --> 01:23:42,604
+fx fonksiyon olsun.
+
+1267
+01:23:42,604 --> 01:23:48,304
+Yani yola eşitir, hız, yola eşitir, hız çarpı zaman.
+
+1268
+01:23:48,304 --> 01:23:48,323
+Yola eşitir, hız çarpı zaman.
+
+1269
+01:23:48,323 --> 01:23:50,903
+Yukarı yazsam daha iyi olur. Şöyle yol diyelim.
+
+1270
+01:23:50,903 --> 01:23:54,764
+Ve hız, t de zamanı gösteriyor.
+
+1271
+01:23:55,104 --> 01:23:55,403
+Zaman.
+
+1272
+01:23:57,003 --> 01:23:59,063
+Ben buradan hızı çekebilirim.
+
+1273
+01:23:59,063 --> 01:24:02,563
+Ben buradan.
+
+1274
+01:24:04,372 --> 01:24:05,412
+Hız eşittir.
+
+1275
+01:24:06,452 --> 01:24:07,252
+Yol bölü zaman.
+
+1276
+01:24:08,172 --> 01:24:10,912
+Eğer geçen zaman yoksa anlık hızı benler istiyor.
+
+1277
+01:24:11,572 --> 01:24:13,612
+Anlık hız demek geçen zaman yok.
+
+1278
+01:24:14,152 --> 01:24:15,932
+Yani çok küçük bir zaman bu.
+
+1279
+01:24:16,512 --> 01:24:18,192
+Dolayısıyla gidilen yol yok.
+
+1280
+01:24:18,692 --> 01:24:20,092
+Belirsiz bir durum var burada.
+
+1281
+01:24:20,172 --> 01:24:22,032
+Bunun içinden nasıl çıkabiliriz?
+
+1282
+01:24:22,432 --> 01:24:25,372
+Limit burada bizim imdadımıza yetişiyor.
+
+1283
+01:24:26,892 --> 01:24:28,552
+Fonksiyonumuz fx fonksiyonu.
+
+1284
+01:24:28,612 --> 01:24:30,672
+Biz burada hız gibi düşünebiliriz.
+
+1285
+01:24:30,731 --> 01:24:31,752
+X gibi düşünebiliriz.
+
+1286
+01:24:31,752 --> 01:24:35,692
+Yani istediğimiz şey aslında zamana bağlı bir fonksiyon.
+
+1287
+01:24:35,912 --> 01:24:38,432
+Yani hız ve zamana bağlı bir fonksiyon.
+
+1288
+01:24:38,512 --> 01:24:40,152
+İki değişken bir fonksiyon aslında o.
+
+1289
+01:24:41,192 --> 01:24:42,752
+Dolayısıyla fx fonksiyonu.
+
+1290
+01:24:44,752 --> 01:24:46,172
+Yukarısını da kullanalım.
+
+1291
+01:24:48,172 --> 01:24:49,752
+X0 noktasındaki türevini.
+
+1292
+01:24:51,892 --> 01:24:53,932
+Şurada geometrik olarak yazalım.
+
+1293
+01:24:54,032 --> 01:24:54,752
+Elimizde bir.
+
+1294
+01:24:56,972 --> 01:24:58,672
+X noktası olsun.
+
+1295
+01:24:58,851 --> 01:25:00,332
+Ya da X0 noktası.
+
+1296
+01:25:00,332 --> 01:25:03,192
+X0'ı delta X kadar arttırdık.
+
+1297
+01:25:03,311 --> 01:25:03,552
+Şuraya.
+
+1298
+01:25:04,592 --> 01:25:07,572
+X0 artı epsilon diye.
+
+1299
+01:25:07,672 --> 01:25:08,792
+Çok küçük arttırdık.
+
+1300
+01:25:10,372 --> 01:25:12,632
+Yani delta X dediğimiz şey delta X.
+
+1301
+01:25:14,092 --> 01:25:15,811
+X0 artı epsilon.
+
+1302
+01:25:16,172 --> 01:25:17,012
+Eksi X0.
+
+1303
+01:25:17,271 --> 01:25:19,412
+Yani şu iki nokta arasındaki uzaklığa eşit.
+
+1304
+01:25:19,412 --> 01:25:22,492
+T de diyebilirdim buraya.
+
+1305
+01:25:22,632 --> 01:25:23,771
+Yani epsilon gibi bir şey.
+
+1306
+01:25:23,892 --> 01:25:27,192
+Bu sıfır olmayan sıfıra çok yakın pozitif bir değer.
+
+1307
+01:25:28,012 --> 01:25:29,192
+Şurada bir eğilimiz var.
+
+1308
+01:25:30,112 --> 01:25:30,712
+TXX.
+
+1309
+01:25:30,712 --> 01:25:32,992
+Dolayısıyla.
+
+1310
+01:25:32,992 --> 01:25:34,351
+Fx0 yazarsam.
+
+1311
+01:25:34,731 --> 01:25:35,752
+Şurada Y ekseni üzerinde.
+
+1312
+01:25:35,851 --> 01:25:36,932
+Fx0'ı mı olacak?
+
+1313
+01:25:38,152 --> 01:25:38,752
+Y ekseni.
+
+1314
+01:25:41,752 --> 01:25:43,372
+Artan bir fonksiyon aldım.
+
+1315
+01:25:43,452 --> 01:25:43,832
+Özel.
+
+1316
+01:25:44,092 --> 01:25:45,311
+Daha rahat görebilmek için.
+
+1317
+01:25:45,452 --> 01:25:45,752
+Fonksiyon.
+
+1318
+01:25:45,811 --> 01:25:46,972
+Herhangi azalan da olabilir.
+
+1319
+01:25:47,212 --> 01:25:48,832
+Birinci bölgede olmak zorunda da değil.
+
+1320
+01:25:48,912 --> 01:25:49,271
+Grafik.
+
+1321
+01:25:49,932 --> 01:25:51,192
+Sadece tanımı vermek için.
+
+1322
+01:25:51,672 --> 01:25:52,771
+X0 artı epsilon.
+
+1323
+01:25:52,771 --> 01:25:53,532
+şeklinde.
+
+1324
+01:25:54,811 --> 01:25:55,532
+Bir nokta var.
+
+1325
+01:25:57,012 --> 01:25:58,652
+Baktığımızda arkadaşlar.
+
+1326
+01:25:59,672 --> 01:26:01,512
+Şu orana bakmak istiyoruz.
+
+1327
+01:26:04,231 --> 01:26:06,532
+Şuraya delta X diyelim.
+
+1328
+01:26:07,311 --> 01:26:07,892
+Delta X.
+
+1329
+01:26:07,892 --> 01:26:09,492
+Şurada ne olacak?
+
+1330
+01:26:09,612 --> 01:26:10,452
+Delta Y olacak.
+
+1331
+01:26:11,452 --> 01:26:18,771
+Yani bağımsız değişkendeki değişime karşılık bağımlı değişkendeki değişim oranına bakacağım.
+
+1332
+01:26:19,572 --> 01:26:20,212
+Esasında.
+
+1333
+01:26:20,652 --> 01:26:21,112
+Tam olarak.
+
+1334
+01:26:21,112 --> 01:26:22,811
+Kürem dediğimiz kavram.
+
+1335
+01:26:22,972 --> 01:26:23,452
+Limit.
+
+1336
+01:26:24,292 --> 01:26:25,132
+Delta X.
+
+1337
+01:26:25,932 --> 01:26:27,072
+Sıfıra giderken.
+
+1338
+01:26:30,392 --> 01:26:32,712
+Ya da.
+
+1339
+01:26:34,652 --> 01:26:36,311
+Şuraya X değeri diyeyim.
+
+1340
+01:26:37,692 --> 01:26:39,252
+Daha şey olsun.
+
+1341
+01:26:41,271 --> 01:26:42,952
+Hepsini ortadan kaldıralım.
+
+1342
+01:26:44,552 --> 01:26:45,832
+Şuraya X diyelim.
+
+1343
+01:26:46,252 --> 01:26:47,832
+Şurası da X eksi X sıfıra olsun.
+
+1344
+01:26:48,432 --> 01:26:49,212
+X eksi X sıfıra.
+
+1345
+01:26:49,271 --> 01:26:49,972
+Delta X dedi.
+
+1346
+01:26:49,972 --> 01:26:51,612
+Yani X'teki değişim aslında.
+
+1347
+01:26:52,652 --> 01:26:55,712
+X, X sıfıra giderken.
+
+1348
+01:26:56,432 --> 01:26:59,851
+F, X, eksi.
+
+1349
+01:27:00,492 --> 01:27:01,492
+F, X sıfır.
+
+1350
+01:27:02,252 --> 01:27:02,932
+Bölü.
+
+1351
+01:27:03,672 --> 01:27:04,811
+X eksi X sıfır.
+
+1352
+01:27:05,432 --> 01:27:06,332
+Oranına bakacağım.
+
+1353
+01:27:06,472 --> 01:27:06,672
+Yani.
+
+1354
+01:27:07,252 --> 01:27:10,972
+Bunun yerine biz yol fonksiyonunu yazdığımızda.
+
+1355
+01:27:10,972 --> 01:27:13,132
+X'i de zaman olarak aldığımızda.
+
+1356
+01:27:13,132 --> 01:27:13,492
+Şuraya.
+
+1357
+01:27:13,492 --> 01:27:15,092
+Yine.
+
+1358
+01:27:15,092 --> 01:27:16,351
+Şurası da X'te olsun.
+
+1359
+01:27:16,351 --> 01:27:18,512
+X'te olsun.
+
+1360
+01:27:18,512 --> 01:27:29,012
+Yine.
+
+1361
+01:27:29,012 --> 01:27:31,952
+Dolayısıyla onların oranı tam olarak bana anlık hızı verecek.
+
+1362
+01:27:32,612 --> 01:27:32,811
+Yani.
+
+1363
+01:27:33,092 --> 01:27:33,972
+Fiziksel olarak.
+
+1364
+01:27:34,572 --> 01:27:36,752
+Türev kavramının çıkış noktası bu.
+
+1365
+01:27:37,752 --> 01:27:41,372
+Zamandaki küçük değişime karşılık.
+
+1366
+01:27:42,972 --> 01:27:47,172
+Konumdaki küçük değişimi alıp onların oranını hesaplıyorum.
+
+1367
+01:27:47,292 --> 01:27:48,771
+Bu bana aslında anlık hızı veriyor.
+
+1368
+01:27:48,952 --> 01:27:53,092
+Yani fiziksel olarak anlık hızı biz nasıl buluruz sorusunun cevabıdır türev.
+
+1369
+01:27:53,972 --> 01:27:55,572
+Tam olarak bu türev olmuş oldu.
+
+1370
+01:27:55,652 --> 01:27:56,231
+Yani Fx.
+
+1371
+01:27:56,612 --> 01:27:58,231
+X sıfır noktasında tanımlı.
+
+1372
+01:27:58,231 --> 01:27:59,452
+Sürekli bir fonksiyon.
+
+1373
+01:28:00,192 --> 01:28:02,811
+Şunu şöyle de yazabiliriz.
+
+1374
+01:28:02,811 --> 01:28:03,811
+Limit.
+
+1375
+01:28:04,095 --> 01:28:15,295
+x-x0'a h diyerek, x-x0 notasyonda kolaylık olsun diye, h0'a yaklaşırken, fx-x artı h.
+
+1376
+01:28:18,771 --> 01:28:31,572
+fx artı h, eksi fx, böyle, ya da x0 artı h, şuraya x0 diyelim, x0 noktasındaki türeve bakıyoruz, böyle h şeklinde bir limit.
+
+1377
+01:28:32,731 --> 01:28:39,351
+Bu limitin sonucu, eğer varsa, fx fonksiyonunun x0 noktasındaki türevine eşit olmuş olacak.
+
+1378
+01:28:39,351 --> 01:28:44,912
+Ki o da aslında, şurada x noktası x0'a doğru yaklaşacak.
+
+1379
+01:28:44,912 --> 01:28:48,872
+aslında tam olarak, bizi nereye götürecek?
+
+1380
+01:28:48,952 --> 01:28:51,011
+Ama hiçbir zaman, x, x0 olmayacak.
+
+1381
+01:28:52,332 --> 01:29:00,072
+Yaklaşıp, yaklaştırdığımızda, şu sekant evlerini birleştirdiğimizde, yani x ile x0 noktalarını birleştirdiğimizde, sürekli doğrular oluşacak.
+
+1382
+01:29:00,171 --> 01:29:00,992
+Doğrular, doğrular.
+
+1383
+01:29:00,992 --> 01:29:06,912
+En son, ulaşacağımız yer, x0 noktasından geçen ve e'liye,
+
+1384
+01:29:07,211 --> 01:29:07,971
+hiç açı seyredim.
+
+1385
+01:29:11,475 --> 01:29:15,955
+Ve e ile x0 noktasında t olan doğru olmuş olacak.
+
+1386
+01:29:16,076 --> 01:29:17,415
+Yani doğrunun eğimi aslında.
+
+1387
+01:29:18,555 --> 01:29:20,235
+Tam olarak şuraya bir doğru çizdik.
+
+1388
+01:29:21,635 --> 01:29:27,755
+xx0 o kadar yaklaşacak ki xx0 olursa bir noktada sonsuz tane doğru var geometrik olarak.
+
+1389
+01:29:27,935 --> 01:29:29,455
+Bu tanımsız bir durum.
+
+1390
+01:29:29,775 --> 01:29:31,955
+Hiçbir zaman xx0 eşit olmayacak.
+
+1391
+01:29:32,095 --> 01:29:34,275
+Yani geçen küçük bir zaman var aslında orada.
+
+1392
+01:29:34,795 --> 01:29:37,735
+Dolayısıyla hala iki nokta var bir doğru belirler bu.
+
+1393
+01:29:37,735 --> 01:29:43,335
+x0 noktasındaki t doğrusunun eğimine denk geliyor.
+
+1394
+01:29:43,595 --> 01:29:44,895
+Yani geometrik olarak türel.
+
+1395
+01:29:45,076 --> 01:29:47,335
+Bunlar sonradan ortaya çıkan şeyler.
+
+1396
+01:29:47,335 --> 01:29:51,135
+İlk çıkış noktası anlık bir hareketli var.
+
+1397
+01:29:51,295 --> 01:29:55,415
+Bunun a noktasından b noktasından hareket eden bir hareketli var.
+
+1398
+01:29:55,895 --> 01:29:56,576
+Bir cisim var.
+
+1399
+01:29:56,675 --> 01:30:00,595
+Biz bunun anlık hızını t0 anındaki hızını merak ediyoruz.
+
+1400
+01:30:00,715 --> 01:30:01,835
+Bunu nasıl bulabiliriz?
+
+1401
+01:30:02,895 --> 01:30:06,395
+Bildiğimiz yöntemlerle düşündüğümüzde geçen yol yok.
+
+1402
+01:30:06,395 --> 01:30:08,595
+Dolayısıyla girilen yol yok.
+
+1403
+01:30:08,695 --> 01:30:09,555
+Geçen zaman yok.
+
+1404
+01:30:10,155 --> 01:30:12,355
+Bu oran anlamsız bir durum var burada.
+
+1405
+01:30:12,515 --> 01:30:13,515
+Tanımsız bir durum var.
+
+1406
+01:30:13,615 --> 01:30:14,915
+Bunu nasıl aşarız?
+
+1407
+01:30:15,015 --> 01:30:15,895
+Limit kavramıyla.
+
+1408
+01:30:16,315 --> 01:30:19,315
+Yani öyle bir düşüneceğiz ki küçücük bir zaman geçecek.
+
+1409
+01:30:19,435 --> 01:30:23,395
+Bu zaman o kadar küçük ki 0'a çok yakın ama 0 değil.
+
+1410
+01:30:24,335 --> 01:30:26,875
+Bu bizim tanımımızı anlamlı hale getiriyor.
+
+1411
+01:30:27,795 --> 01:30:30,855
+Türel kavramının motivasyonu da buradan geliyor arkadaşlar.
+
+1412
+01:30:30,855 --> 01:30:34,135
+Evet.
+
+1413
+01:30:35,195 --> 01:30:39,135
+Bu bilgiden sonra türel kavramını artık burada yerine yazabiliriz.
+
+1414
+01:30:39,675 --> 01:30:45,155
+RT fonksiyonu bir, ki asıl kullanılan fonksiyonu da bu zaten.
+
+1415
+01:30:45,975 --> 01:30:46,755
+Kanunlar kendili.
+
+1416
+01:30:46,755 --> 01:30:50,415
+Biz türevi üstüyle gösteriyoruz.
+
+1417
+01:30:50,475 --> 01:30:51,755
+Birinci mertebe türevi.
+
+1418
+01:30:52,415 --> 01:30:54,036
+Üstü de gösteriyoruz.
+
+1419
+01:30:54,036 --> 01:31:02,055
+Ya da Taylor-McDonough'ın serilerinde gördüğünüz üzere orada F'nin neyinci mertebeden üzerinde bunun kuvvetle karışmaması için
+
+1420
+01:31:02,055 --> 01:31:08,415
+bileşge fonksiyonu ardışık olarak uygulamak şeklinde düşünülmesin diye ne yapıyorduk?
+
+1421
+01:31:08,835 --> 01:31:10,475
+Parantez içinde neyle gösteriyoruz?
+
+1422
+01:31:10,655 --> 01:31:12,855
+Burada bir yazarsak birinci mertebe türe olacak.
+
+1423
+01:31:12,996 --> 01:31:15,335
+Ya da doğrudan böyle prime ile gösteriyoruz.
+
+1424
+01:31:15,435 --> 01:31:16,555
+Üstüyle gösteriyoruz.
+
+1425
+01:31:17,055 --> 01:31:19,155
+Diğer bir notasyonun da aslında değişim.
+
+1426
+01:31:19,155 --> 01:31:22,555
+R'deki değişimin T'deki değişime oranı şeklinde.
+
+1427
+01:31:22,675 --> 01:31:24,576
+Budaki D onu gösteriyor.
+
+1428
+01:31:25,815 --> 01:31:26,895
+Differansiyeli gösteriyor.
+
+1429
+01:31:26,975 --> 01:31:27,975
+Değişimleri gösteriyor.
+
+1430
+01:31:28,055 --> 01:31:29,615
+Küçük değişimlerin birbirine oranı.
+
+1431
+01:31:29,615 --> 01:31:34,076
+Delta T dediğimiz şey zamandaki küçük değişim.
+
+1432
+01:31:34,415 --> 01:31:37,655
+Delta T sıfıra giderken, zamandaki değişim sıfıra giderken
+
+1433
+01:31:37,655 --> 01:31:43,996
+o küçücük zamanın fonksiyonunda oluşturduğu o zamanki konum eksi.
+
+1434
+01:31:44,695 --> 01:31:47,395
+İlk zamandaki konum yani konumda bir değişim var.
+
+1435
+01:31:47,395 --> 01:31:52,775
+Totalde aslında yukarıyı delta ne olarak yazabiliriz bunun?
+
+1436
+01:31:52,895 --> 01:31:54,715
+Delta RT olarak yazabiliriz.
+
+1437
+01:31:54,815 --> 01:31:56,655
+Evet delta RT olarak yazabiliriz.
+
+1438
+01:31:56,655 --> 01:31:58,996
+Delta RT bölü delta T oranı.
+
+1439
+01:31:59,536 --> 01:32:00,675
+Bu da neye eşit olacak?
+
+1440
+01:32:00,795 --> 01:32:04,895
+Bileşen fonksiyonlarının ayrı ayrı türevlerini, tek değişkenli fonksiyonlar,
+
+1441
+01:32:05,536 --> 01:32:11,155
+tek değişkenli fonksiyonlardaki türev alma kuralları geçerli, limitte olduğu gibi,
+
+1442
+01:32:11,275 --> 01:32:12,456
+sürekli olduğu gibi.
+
+1443
+01:32:13,195 --> 01:32:16,956
+Bileşen fonksiyonlarının ayrı ayrı birinci mertebe türevlerini alacağız.
+
+1444
+01:32:17,115 --> 01:32:20,715
+Onları iyika yön vektörleriyle çarpacağız.
+
+1445
+01:32:20,715 --> 01:32:26,135
+Çünkü vektörel bir büyüklük hız dediğimiz şey bir yön olması gerekiyor.
+
+1446
+01:32:26,215 --> 01:32:28,695
+Buradaki i, j, k'lar da bize yönü veriyor.
+
+1447
+01:32:28,855 --> 01:32:32,295
+Vektörel büyüklüğe uygun şekilde yönü vermiş oluyorlar.
+
+1448
+01:32:32,715 --> 01:32:33,555
+Arkadaşlar var mı?
+
+1449
+01:32:33,595 --> 01:32:34,755
+Sormak istediğiniz bir soru.
+
+1450
+01:32:39,507 --> 01:32:41,507
+Noktadaki türevi verdik biz.
+
+1451
+01:32:41,807 --> 01:32:43,447
+T0 anındaki türevi verdik.
+
+1452
+01:32:43,447 --> 01:32:50,127
+Genel anlamda tanım kümesindeki her bir T'de fonksiyon türevliyse o zaman türevlenebilir fonksiyon diyoruz.
+
+1453
+01:32:50,587 --> 01:32:53,547
+Ve özel bir koşul olarak bu bir eğriydi sonuçta.
+
+1454
+01:32:53,627 --> 01:32:55,707
+RT dediğimiz şey bir eğriydi.
+
+1455
+01:32:55,827 --> 01:33:02,747
+Eğer bir eğrinin türevi sürekli ve hiçbir zaman sıfır olmuyorsa biz bu eğriye düzgün eğri diyoruz arkadaşlar.
+
+1456
+01:33:03,247 --> 01:33:08,268
+Ya da bunun diğer bir ifadesi bileşen fonksiyonları aynı anda hepsi sıfır olmuyorsa.
+
+1457
+01:33:08,268 --> 01:33:15,487
+Yani sonuçta totalde r füsi t'nin sıfırdan farklı olması demek bileşen fonksiyonların aynı anda sıfır olmaması.
+
+1458
+01:33:15,587 --> 01:33:18,707
+En az bir tanesinin sıfırdan farklı olması demek.
+
+1459
+01:33:19,167 --> 01:33:21,407
+Dolayısıyla buna da düzgün eğri diyoruz.
+
+1460
+01:33:21,487 --> 01:33:28,207
+Düzgün eğrilerin eğrisel integralleri alırken özel bir yeri var düzgün eğrilerin.
+
+1461
+01:33:28,307 --> 01:33:29,907
+Fakat bu dersin kapsamı dışında.
+
+1462
+01:33:29,987 --> 01:33:32,287
+Burada sadece tanımından söz ettik.
+
+1463
+01:33:32,287 --> 01:33:36,827
+Bir de konum hız ilme ile ilgili bunlar arasındaki ilişkiyi vereceğiz.
+
+1464
+01:33:36,827 --> 01:33:39,887
+Türev özellikleri ve dersi kapatacağım arkadaşlar.
+
+1465
+01:33:42,487 --> 01:33:47,967
+Elimizde RT ile hareketli cismin T ağındaki konumunu vermiş olalım.
+
+1466
+01:33:48,747 --> 01:33:53,907
+X bileşeni, Y bileşeni ve Z bileşenleri ayrı ayrı tek değişkenli fonksiyonlar.
+
+1467
+01:33:54,047 --> 01:33:55,648
+Aslında zamanın fonksiyonları.
+
+1468
+01:33:55,648 --> 01:33:59,927
+Hız dediğimiz şey, hız konumu zamana göre birinci türevi.
+
+1469
+01:34:00,167 --> 01:34:11,627
+Bu türev ile daha doğrusu hızı biz konumu zamana göre türeterek elde edebiliriz.
+
+1470
+01:34:12,167 --> 01:34:17,587
+Aynı zamanda iki kez türetirsek bunu, yani konumu zamana göre iki kez türetirsek ivmeye ulaşırız.
+
+1471
+01:34:17,587 --> 01:34:23,127
+Ya da hızı zamana göre bir kez türetirsek yine ivmeye ulaşırız arkadaşlar.
+
+1472
+01:34:23,927 --> 01:34:28,587
+Sürat dediğimiz şey, hızın, hızın, hız bir vektördü.
+
+1473
+01:34:29,407 --> 01:34:30,327
+Aslında boyuna eşit.
+
+1474
+01:34:30,427 --> 01:34:35,167
+Hızın boyunu aldığımızda, normunu aldığımızda bize anlık süratı vermiş olacak.
+
+1475
+01:34:35,347 --> 01:34:35,747
+Sürat.
+
+1476
+01:34:41,076 --> 01:34:50,555
+İvme, hızın zamana göre, ikinci türevi ya da konumun zamana göre, ikinci türevi ya da hızın zamana göre, birinci türevinden oluşur.
+
+1477
+01:34:51,055 --> 01:34:58,055
+Sürat ve hızın, normu bu skaler bir büyüklük. Sürat dediğimiz şey, skaler bir büyüklük.
+
+1478
+01:34:58,055 --> 01:35:10,515
+Eğer süratı biz, birim vektörle çarparsak, yani sürat demliğimiz kavramı, ve vektörü, yani hız vektörü, şunu sileyim,
+
+1479
+01:35:11,076 --> 01:35:19,796
+hız vektörü, bölü, hız vektörünün boyu. Bununla çarparsak, bu birim vektör aslında, hız vektörü yönünde birim vektörü.
+
+1480
+01:35:19,855 --> 01:35:26,036
+Çünkü boyu bir olacak. Bunu ben süratle çarparsam, neyi elde ederim? Hızı elde etmiş olurum.
+
+1481
+01:35:26,036 --> 01:35:29,876
+Yani süratin skaler bir büyüklük olduğunu görmüş oluyoruz arkadaşlar.
+
+1482
+01:35:31,036 --> 01:35:36,015
+Süratten hıza geçerken, arabayla giderken bizim göstergede gördüğümüz şey sürat.
+
+1483
+01:35:36,395 --> 01:35:40,376
+O skaler bir büyüklük. Fakat hızımız bizim.
+
+1484
+01:35:40,376 --> 01:35:48,155
+aslında şiddetimizin aslında, aslında şiddeti yani normu sürat'e eşit olan, bir yönü olan bir fiziksel büyüklük.
+
+1485
+01:35:48,155 --> 01:35:50,496
+Mektörel bir büyüklük olmuş olacak.
+
+1486
+01:35:50,876 --> 01:35:55,515
+Hız ve sürat arasındaki farkı da bu şekilde vurgulamış olduk.
+
+1487
+01:36:00,275 --> 01:36:07,975
+Hız vektörünü biz normalize ettiğimizde buna da birim t anındaki birim t vektör diyoruz.
+
+1488
+01:36:08,055 --> 01:36:12,876
+Neden? Çünkü hız konumun zamana göre birinci türeviydi.
+
+1489
+01:36:13,055 --> 01:36:23,695
+Dolayısıyla hız herhangi bir andaki hız konum vektörünün herhangi bir andaki t doğrusunun eğilini verecek bize.
+
+1490
+01:36:23,695 --> 01:36:31,095
+Dolayısıyla hızı normalize ettiğimizde buna özel olarak birim t vektör demiş oluyoruz.
+
+1491
+01:36:31,275 --> 01:36:33,695
+Zaten birinci türev hızlı o.
+
+1492
+01:36:34,255 --> 01:36:36,715
+Konum vektörünün birinci türevi bize hızı veriyordu.
+
+1493
+01:36:37,416 --> 01:36:42,076
+Hızı normalize ettiğimizde birim bir vektör elde etmiş olacağız.
+
+1494
+01:36:42,255 --> 01:36:44,855
+Buna da birim t vektör deniyor.
+
+1495
+01:36:47,456 --> 01:36:49,296
+Bundan bahsettik zaten.
+
+1496
+01:36:49,296 --> 01:36:52,576
+Birim t vektörle biz iki yönü verecek bize.
+
+1497
+01:36:52,576 --> 01:36:55,576
+Birim t vektörden kastımız boyu bir sadece yön.
+
+1498
+01:36:55,695 --> 01:37:01,296
+Bunun skaler büyüklüğe bir etkisi yokken süratle çarptığımızda birebir bize V'yi verecek.
+
+1499
+01:37:01,695 --> 01:37:06,135
+Ama şu zaten eğer birim olmasaydı burada şeyi vermeyecekti bize.
+
+1500
+01:37:06,235 --> 01:37:07,975
+Tam olarak hızı vermemiş olacaktı.
+
+1501
+01:37:09,475 --> 01:37:11,315
+Burada sesimi duyabiliyor musunuz arkadaşlar?
+
+1502
+01:37:13,595 --> 01:37:14,076
+Evet hocam.
+
+1503
+01:37:14,435 --> 01:37:18,255
+Elektrik kesildi gibi bir silah sesi geldi.
+
+1504
+01:37:19,836 --> 01:37:21,376
+Şimdi buradan bakalım.
+
+1505
+01:37:21,376 --> 01:37:23,836
+Yine helis, helis evisi değil.
+
+1506
+01:37:25,115 --> 01:37:26,036
+Başka bir evi bu.
+
+1507
+01:37:26,855 --> 01:37:27,296
+Rtp.
+
+1508
+01:37:27,376 --> 01:37:32,675
+İki tane kosünüs t'yi, iki tane sinüs t'yi ve beş tane kosünüs kare tk şeklinde verilmiş.
+
+1509
+01:37:32,775 --> 01:37:36,515
+P bölü 4 anındaki hızını, süratini ve ivmesini bulun.
+
+1510
+01:37:36,935 --> 01:37:40,036
+Hızını bulmak için birinci mertebe türevini alacağız.
+
+1511
+01:37:40,155 --> 01:37:41,715
+T yerine P bölü 4 yazacağız.
+
+1512
+01:37:42,195 --> 01:37:46,755
+Süratı bulmak için P bölü 4 anındaki vektörün biz boyunu bulacağız.
+
+1513
+01:37:46,755 --> 01:37:48,416
+O skaler bir büyüklük olacak.
+
+1514
+01:37:48,576 --> 01:37:53,296
+İvmeyi bulmak için de hızın zamana göre ikinci türevini alacağız.
+
+1515
+01:37:53,695 --> 01:38:01,395
+Ya da konumun zamanı, hızın zamana göre birinci türevini, konumun zamana göre ikinci türevini alarak yine T, P bölü 4 yazmamız lazım.
+
+1516
+01:38:01,395 --> 01:38:05,615
+Yani belli bir andaki ivmesinden söz ediyor.
+
+1517
+01:38:05,956 --> 01:38:06,796
+Bakalım bunlara.
+
+1518
+01:38:07,336 --> 01:38:08,916
+R üstü t, y bakalım.
+
+1519
+01:38:10,195 --> 01:38:10,895
+R üstü t.
+
+1520
+01:38:10,996 --> 01:38:13,395
+Önce kürevi hesaplayalım.
+
+1521
+01:38:13,595 --> 01:38:16,855
+Sonra eksi iki tane şöyle yazalım.
+
+1522
+01:38:16,935 --> 01:38:18,435
+Eksi iki tane kosünüs t.
+
+1523
+01:38:20,695 --> 01:38:22,175
+İki tane sinüs t yazıyorum.
+
+1524
+01:38:22,515 --> 01:38:26,815
+Eksi iki tane sinüs t.
+
+1525
+01:38:26,815 --> 01:38:30,956
+Şuradan iki tane sinüs t, iki tane kosünüs t.
+
+1526
+01:38:32,135 --> 01:38:35,775
+Beş tane kosünüs kareti.
+
+1527
+01:38:35,876 --> 01:38:37,235
+Onu da şöyle yazabiliriz.
+
+1528
+01:38:37,895 --> 01:38:38,815
+On çarpı.
+
+1529
+01:38:40,595 --> 01:38:41,815
+Hatta eksi on çarpı.
+
+1530
+01:38:43,595 --> 01:38:47,055
+Üstünün türevi, bileşke, basit bileşke kuralını işleteceğiz burada.
+
+1531
+01:38:47,275 --> 01:38:49,296
+Üstünü başa getirdik ve içinin türevi.
+
+1532
+01:38:49,815 --> 01:38:50,876
+Kendisi tabi var.
+
+1533
+01:38:50,876 --> 01:38:52,735
+Kosünüs t çarpı.
+
+1534
+01:38:53,215 --> 01:38:54,315
+Buradan sinüs t gerçek.
+
+1535
+01:38:54,315 --> 01:38:59,536
+Bunu iki tane kosünüs t, sin iki t olacak.
+
+1536
+01:38:59,755 --> 01:39:03,095
+Yani eksi beş sin iki t olarak da yazabiliriz bunu.
+
+1537
+01:39:03,296 --> 01:39:04,076
+O da eşittir.
+
+1538
+01:39:07,496 --> 01:39:10,296
+Eksi iki sinüs t.
+
+1539
+01:39:11,496 --> 01:39:13,416
+İki tane kosünüs t.
+
+1540
+01:39:13,576 --> 01:39:18,175
+Ve şurada eksi beş sin iki t olarak da yazabiliriz.
+
+1541
+01:39:18,175 --> 01:39:20,815
+Evet.
+
+1542
+01:39:21,815 --> 01:39:26,076
+R üstü t'ye biz, r üstü t'ye pi bölü dört yazarsak.
+
+1543
+01:39:27,555 --> 01:39:28,796
+O da eşittir.
+
+1544
+01:39:30,996 --> 01:39:32,095
+Eksi kök iki.
+
+1545
+01:39:34,015 --> 01:39:35,175
+Kök iki bölü iki.
+
+1546
+01:39:35,635 --> 01:39:36,655
+İkiler sadeleşti.
+
+1547
+01:39:36,695 --> 01:39:37,416
+Eksi kök iki.
+
+1548
+01:39:37,956 --> 01:39:40,775
+İki tane kosünüs de şuradan kök iki geldi.
+
+1549
+01:39:40,775 --> 01:39:45,296
+Ve eksi on tane ya da eksi beş tane sinüs iki t.
+
+1550
+01:39:46,055 --> 01:39:47,435
+Pi bölü iki yazmış.
+
+1551
+01:39:47,555 --> 01:39:48,675
+Pi bölü dört yazmıştık.
+
+1552
+01:39:48,755 --> 01:39:49,615
+Sinüs pi bölü iki.
+
+1553
+01:39:49,695 --> 01:39:50,975
+Bu da öyle hesaplamak daha rahat.
+
+1554
+01:39:51,095 --> 01:39:51,496
+Bir olacak.
+
+1555
+01:39:51,615 --> 01:39:53,195
+Şuradan da eksi beş gelmiş oldu.
+
+1556
+01:39:53,755 --> 01:39:55,956
+Bu bizim hızımız olmuş oldu.
+
+1557
+01:39:56,055 --> 01:39:56,796
+Yani v.
+
+1558
+01:39:58,255 --> 01:39:59,355
+Pi bölü dört.
+
+1559
+01:39:59,355 --> 01:40:02,095
+Bir.
+
+1560
+01:40:00,000 --> 01:40:01,760
+Vt aslında bu. Vp bölü 4.
+
+1561
+01:40:02,020 --> 01:40:03,500
+Tp bölü 4 anındaki
+
+1562
+01:40:03,500 --> 01:40:05,180
+hızı bulmuş olduk.
+
+1563
+01:40:05,680 --> 01:40:07,159
+Süratimiz t eşittir.
+
+1564
+01:40:07,220 --> 01:40:08,819
+P bölü 4 anındaki sürat
+
+1565
+01:40:08,819 --> 01:40:11,340
+hız vektörünün
+
+1566
+01:40:11,340 --> 01:40:13,100
+boyuna eşit olacak.
+
+1567
+01:40:13,340 --> 01:40:14,699
+O zaman sürat
+
+1568
+01:40:14,699 --> 01:40:16,939
+eşittir.
+
+1569
+01:40:16,939 --> 01:40:19,539
+Norm Vp bölü 4
+
+1570
+01:40:19,539 --> 01:40:21,279
+buradan
+
+1571
+01:40:21,279 --> 01:40:23,579
+kare kök içerisinde
+
+1572
+01:40:23,579 --> 01:40:25,159
+bileşenlerin karelerinin
+
+1573
+01:40:25,159 --> 01:40:26,800
+toplamının kare kökü
+
+1574
+01:40:26,800 --> 01:40:28,420
+2 artı
+
+1575
+01:40:28,420 --> 01:40:30,800
+2 artı 25
+
+1576
+01:40:30,800 --> 01:40:33,859
+bu da kare kök
+
+1577
+01:40:33,859 --> 01:40:35,979
+içerisinde 29'a eşit oluyor.
+
+1578
+01:40:36,100 --> 01:40:37,500
+Ki bu skaler bir
+
+1579
+01:40:37,500 --> 01:40:39,560
+büyüklük yani bu metre bölü saniye
+
+1580
+01:40:39,560 --> 01:40:41,520
+artık neyse kilometre bölü saniye
+
+1581
+01:40:41,520 --> 01:40:43,779
+hız neyse ya da kilometre bölü saat
+
+1582
+01:40:43,779 --> 01:40:46,079
+falan bu cinsten ifade edilebilir.
+
+1583
+01:40:47,619 --> 01:40:48,420
+Ve
+
+1584
+01:40:48,420 --> 01:40:49,920
+ivmemize bakalım.
+
+1585
+01:40:50,079 --> 01:40:51,720
+İvme R2 üstü
+
+1586
+01:40:51,720 --> 01:40:53,220
+T'ye bakalım öncelikle.
+
+1587
+01:40:54,279 --> 01:40:55,659
+Şu ikinci kısmı alırsak
+
+1588
+01:40:55,659 --> 01:40:57,659
+daha kolay hesaplarız gibi geliyor.
+
+1589
+01:40:57,659 --> 01:40:59,180
+eksi 2 tane
+
+1590
+01:40:59,180 --> 01:41:01,819
+kosünüs T
+
+1591
+01:41:01,819 --> 01:41:02,699
+eksi 2 tane
+
+1592
+01:41:02,699 --> 01:41:03,439
+sinüs T
+
+1593
+01:41:03,439 --> 01:41:04,939
+ve
+
+1594
+01:41:04,939 --> 01:41:07,600
+eksi 10 tane
+
+1595
+01:41:07,600 --> 01:41:08,939
+kosünüs 2T
+
+1596
+01:41:08,939 --> 01:41:10,779
+içinin türevi
+
+1597
+01:41:10,779 --> 01:41:12,279
+çarpı
+
+1598
+01:41:12,279 --> 01:41:13,800
+kendisinin türevi
+
+1599
+01:41:13,800 --> 01:41:14,680
+çarpı içinin türevi
+
+1600
+01:41:14,680 --> 01:41:15,300
+ya da şurada
+
+1601
+01:41:15,300 --> 01:41:17,479
+bir değişken dönüşümü
+
+1602
+01:41:17,479 --> 01:41:18,079
+yapabiliriz.
+
+1603
+01:41:18,180 --> 01:41:18,319
+Yani
+
+1604
+01:41:18,319 --> 01:41:20,319
+U'ya 2T dersek
+
+1605
+01:41:20,319 --> 01:41:22,399
+oradan
+
+1606
+01:41:22,399 --> 01:41:23,079
+içeriden
+
+1607
+01:41:23,079 --> 01:41:23,979
+2 geliyor.
+
+1608
+01:41:23,979 --> 01:41:24,600
+dolayısıyla
+
+1609
+01:41:24,600 --> 01:41:25,619
+eksi 10
+
+1610
+01:41:25,619 --> 01:41:26,560
+çarpı
+
+1611
+01:41:26,560 --> 01:41:27,859
+kosünüs
+
+1612
+01:41:27,859 --> 01:41:28,920
+2T
+
+1613
+01:41:28,920 --> 01:41:29,420
+şeklinde
+
+1614
+01:41:29,420 --> 01:41:30,020
+bulmuş olduk.
+
+1615
+01:41:30,020 --> 01:41:30,500
+Burada da
+
+1616
+01:41:30,500 --> 01:41:31,460
+V2 üstüne
+
+1617
+01:41:31,460 --> 01:41:32,460
+biz
+
+1618
+01:41:32,460 --> 01:41:33,720
+P bölü 4
+
+1619
+01:41:33,720 --> 01:41:34,560
+yazarsak
+
+1620
+01:41:34,560 --> 01:41:36,439
+bu da eşittir.
+
+1621
+01:41:36,439 --> 01:41:39,960
+yine eksi
+
+1622
+01:41:39,960 --> 01:41:40,619
+kök 2
+
+1623
+01:41:40,619 --> 01:41:42,659
+eksi kök 2
+
+1624
+01:41:42,659 --> 01:41:43,720
+ve 0
+
+1625
+01:41:43,720 --> 01:41:44,640
+gelmiş oldu.
+
+1626
+01:41:45,199 --> 01:41:46,039
+Konum ve
+
+1627
+01:41:46,039 --> 01:41:47,899
+ivme
+
+1628
+01:41:47,899 --> 01:41:48,840
+vektörlerinin
+
+1629
+01:41:48,840 --> 01:41:49,560
+birbirine göre
+
+1630
+01:41:49,560 --> 01:41:50,220
+konumunu ben
+
+1631
+01:41:50,220 --> 01:41:50,880
+merak ettim.
+
+1632
+01:41:50,960 --> 01:41:51,899
+Bakalım nasıl oluyor?
+
+1633
+01:41:51,899 --> 01:41:53,520
+3 boyutlu
+
+1634
+01:41:53,520 --> 01:41:54,880
+uzayda
+
+1635
+01:41:54,880 --> 01:41:55,699
+bunları çizelim.
+
+1636
+01:41:56,600 --> 01:41:57,739
+Genelde şöyle bir
+
+1637
+01:41:57,739 --> 01:41:58,859
+referans vardı.
+
+1638
+01:41:58,979 --> 01:42:00,119
+Tabi bu keyfinize göre
+
+1639
+01:42:00,119 --> 01:42:01,020
+istediğiniz gibi
+
+1640
+01:42:01,020 --> 01:42:02,600
+çizebilirsiniz.
+
+1641
+01:42:02,979 --> 01:42:03,720
+Pozitif X
+
+1642
+01:42:03,720 --> 01:42:04,600
+size doğru
+
+1643
+01:42:04,600 --> 01:42:05,859
+pozitif Y
+
+1644
+01:42:05,859 --> 01:42:06,579
+sağa doğru
+
+1645
+01:42:06,579 --> 01:42:07,460
+ve pozitif Z
+
+1646
+01:42:07,460 --> 01:42:08,279
+de yukarı doğru
+
+1647
+01:42:08,279 --> 01:42:09,539
+gibi düşünüp
+
+1648
+01:42:09,539 --> 01:42:10,640
+üst
+
+1649
+01:42:10,640 --> 01:42:11,939
+çeyreklerden
+
+1650
+01:42:11,939 --> 01:42:12,560
+bir tanesini
+
+1651
+01:42:12,560 --> 01:42:13,399
+oluşturduk.
+
+1652
+01:42:14,020 --> 01:42:14,899
+Aşağı doğru da
+
+1653
+01:42:14,899 --> 01:42:15,119
+yine
+
+1654
+01:42:15,119 --> 01:42:15,979
+üstte toplam
+
+1655
+01:42:15,979 --> 01:42:16,840
+4 tane çeyrek
+
+1656
+01:42:16,840 --> 01:42:18,020
+altta 4 tane çeyrek
+
+1657
+01:42:18,020 --> 01:42:19,159
+toplam 8 tane
+
+1658
+01:42:19,159 --> 01:42:19,680
+bunlara
+
+1659
+01:42:19,680 --> 01:42:20,600
+kvadrant deniyor.
+
+1660
+01:42:20,600 --> 01:42:22,119
+Dolayısıyla
+
+1661
+01:42:22,119 --> 01:42:22,880
+üst çeyrek
+
+1662
+01:42:22,880 --> 01:42:23,659
+alt çeyrekler
+
+1663
+01:42:23,659 --> 01:42:23,840
+falan
+
+1664
+01:42:23,840 --> 01:42:24,760
+toplam 8 tane
+
+1665
+01:42:24,760 --> 01:42:25,779
+parçadan oluşuyor.
+
+1666
+01:42:26,159 --> 01:42:27,560
+Yani negatif yönler de
+
+1667
+01:42:27,560 --> 01:42:28,399
+şu arkaya doğru
+
+1668
+01:42:28,399 --> 01:42:29,380
+X'i arkaya doğru
+
+1669
+01:42:29,380 --> 01:42:30,000
+götüreceğim.
+
+1670
+01:42:30,579 --> 01:42:31,260
+Z'si
+
+1671
+01:42:31,260 --> 01:42:33,760
+aşağı doğru gelecek.
+
+1672
+01:42:33,920 --> 01:42:34,479
+Tabi neye göre
+
+1673
+01:42:34,479 --> 01:42:34,840
+aşağıya
+
+1674
+01:42:34,840 --> 01:42:35,520
+ekrana göre
+
+1675
+01:42:35,520 --> 01:42:37,279
+ve Y'yi de
+
+1676
+01:42:37,279 --> 01:42:38,100
+sol tarafa doğru
+
+1677
+01:42:38,100 --> 01:42:38,800
+götürüyoruz.
+
+1678
+01:42:39,239 --> 01:42:40,060
+Dolayısıyla buradan
+
+1679
+01:42:40,060 --> 01:42:40,779
+vektörlerimizi
+
+1680
+01:42:40,779 --> 01:42:41,619
+çizebiliriz.
+
+1681
+01:42:42,119 --> 01:42:42,460
+Kök 2
+
+1682
+01:42:42,460 --> 01:42:43,720
+1.4 gibi bir şey
+
+1683
+01:42:43,720 --> 01:42:44,180
+sanki.
+
+1684
+01:42:44,899 --> 01:42:45,899
+Onu 2'ye yakın
+
+1685
+01:42:45,899 --> 01:42:46,840
+bir şey de çizebiliriz.
+
+1686
+01:42:46,920 --> 01:42:47,319
+Önemli değil.
+
+1687
+01:42:47,380 --> 01:42:47,720
+Önce
+
+1688
+01:42:47,720 --> 01:42:49,880
+P bölü 4'teki
+
+1689
+01:42:49,880 --> 01:42:51,119
+hız vektörünü
+
+1690
+01:42:51,119 --> 01:42:51,539
+çizelim.
+
+1691
+01:42:52,100 --> 01:42:52,500
+Eksi
+
+1692
+01:42:52,500 --> 01:42:53,579
+kök 2
+
+1693
+01:42:53,579 --> 01:42:54,460
+eksi kök 2
+
+1694
+01:42:54,460 --> 01:42:54,979
+yani
+
+1695
+01:42:54,979 --> 01:42:55,880
+neresi olacak?
+
+1696
+01:42:56,000 --> 01:42:56,920
+Şurası ve şurası.
+
+1697
+01:42:58,859 --> 01:42:59,479
+Yukarı doğru
+
+1698
+01:42:59,479 --> 01:42:59,779
+onu
+
+1699
+01:42:59,779 --> 01:43:00,880
+nerede birleştireceğiz?
+
+1700
+01:43:00,979 --> 01:43:01,539
+5'e doğru
+
+1701
+01:43:01,539 --> 01:43:02,239
+yani şurada
+
+1702
+01:43:02,239 --> 01:43:03,340
+eksi 5 dersek
+
+1703
+01:43:03,340 --> 01:43:04,619
+birleştireceğiz
+
+1704
+01:43:04,619 --> 01:43:05,260
+şurayla.
+
+1705
+01:43:06,260 --> 01:43:07,420
+Şu kesişim noktasını
+
+1706
+01:43:07,420 --> 01:43:08,460
+yukarıda birleştireceğiz.
+
+1707
+01:43:08,560 --> 01:43:09,060
+O vektörü
+
+1708
+01:43:09,060 --> 01:43:09,520
+çizelim.
+
+1709
+01:43:11,279 --> 01:43:11,760
+Kırmızı
+
+1710
+01:43:11,760 --> 01:43:12,220
+İ gibi
+
+1711
+01:43:12,220 --> 01:43:14,060
+şöyle bir
+
+1712
+01:43:14,060 --> 01:43:14,539
+vektör.
+
+1713
+01:43:14,680 --> 01:43:15,680
+Bu bizim
+
+1714
+01:43:15,680 --> 01:43:18,239
+2 bölü 4
+
+1715
+01:43:18,239 --> 01:43:18,720
+arındaki
+
+1716
+01:43:18,720 --> 01:43:19,680
+hız vektörü.
+
+1717
+01:43:21,140 --> 01:43:22,239
+2 bölü 4
+
+1718
+01:43:22,239 --> 01:43:22,640
+arındaki
+
+1719
+01:43:22,640 --> 01:43:23,680
+hız vektörü.
+
+1720
+01:43:24,880 --> 01:43:25,640
+Tabii onu
+
+1721
+01:43:25,640 --> 01:43:27,760
+gösterelim biraz.
+
+1722
+01:43:27,880 --> 01:43:28,279
+Yoksa
+
+1723
+01:43:28,279 --> 01:43:29,739
+yanlış 2 boyut
+
+1724
+01:43:29,739 --> 01:43:30,640
+gibi düşünebilir.
+
+1725
+01:43:31,039 --> 01:43:31,300
+Şöyle
+
+1726
+01:43:31,300 --> 01:43:31,779
+yapalım.
+
+1727
+01:43:32,779 --> 01:43:33,119
+Şöyle
+
+1728
+01:43:33,119 --> 01:43:33,619
+yapalım.
+
+1729
+01:43:33,819 --> 01:43:34,199
+Şöyle
+
+1730
+01:43:34,199 --> 01:43:34,699
+yapalım.
+
+1731
+01:43:35,680 --> 01:43:36,239
+Hocam
+
+1732
+01:43:36,239 --> 01:43:36,659
+z'yi
+
+1733
+01:43:36,659 --> 01:43:37,300
+yukarı doğru
+
+1734
+01:43:37,300 --> 01:43:37,859
+eksi mi
+
+1735
+01:43:37,859 --> 01:43:38,300
+aldık?
+
+1736
+01:43:38,600 --> 01:43:38,979
+Çok
+
+1737
+01:43:38,979 --> 01:43:39,359
+vardı.
+
+1738
+01:43:40,020 --> 01:43:40,220
+Çok
+
+1739
+01:43:40,220 --> 01:43:40,520
+vardı.
+
+1740
+01:43:41,520 --> 01:43:41,819
+Yanlış
+
+1741
+01:43:41,819 --> 01:43:42,380
+yaptım ben.
+
+1742
+01:43:43,619 --> 01:43:44,079
+Eksi 5
+
+1743
+01:43:44,079 --> 01:43:44,659
+aşağı doğru
+
+1744
+01:43:44,659 --> 01:43:45,539
+olması gerekiyordu.
+
+1745
+01:43:46,699 --> 01:43:46,920
+Tamam.
+
+1746
+01:43:48,340 --> 01:43:48,739
+Şöyle
+
+1747
+01:43:48,739 --> 01:43:49,100
+almam
+
+1748
+01:43:49,100 --> 01:43:49,739
+gerekiyor.
+
+1749
+01:43:51,819 --> 01:43:52,380
+Eksi 5
+
+1750
+01:43:52,380 --> 01:43:53,140
+şuralarda
+
+1751
+01:43:53,140 --> 01:43:53,539
+bir yerde
+
+1752
+01:43:53,539 --> 01:43:54,239
+olursa
+
+1753
+01:43:54,239 --> 01:43:55,239
+var.
+
+1754
+01:43:55,399 --> 01:43:55,659
+Evet.
+
+1755
+01:43:56,404 --> 01:44:05,964
+Tabanı belirledik, sonra yukarı doğru çıkacağız. Yani şu nokta, orjinden o noktaya doğru bir vektör, konum vektör.
+
+1756
+01:44:06,324 --> 01:44:07,804
+Şurası V'miz oldu. Tamam.
+
+1757
+01:44:08,904 --> 01:44:12,364
+Pi bölü 4 anındaki V vektörü. Teşekkür ederim uyarınız için.
+
+1758
+01:44:14,804 --> 01:44:18,064
+Şimdi, R2 üstüne bakalım.
+
+1759
+01:44:18,624 --> 01:44:22,464
+Eksi kök 2, eksi kök 2, sıfır. Yani tam olarak,
+
+1760
+01:44:25,204 --> 01:44:25,884
+şurası.
+
+1761
+01:44:31,636 --> 01:44:43,276
+Evet, eksi kök 2. Aaaa, ben bir hata yaptım. Şurada işareti göz ardı etmişim. Yani böyle zaten düzgün olmaması gerekiyordu. Bunlardan bir tanesi pozitif olacak. Yeniden çiziyorum ben.
+
+1762
+01:44:45,916 --> 01:44:47,615
+Bugün benim bazı görüntü.
+
+1763
+01:44:52,148 --> 01:44:55,748
+X'i eksi kök 2, şurası doğru.
+
+1764
+01:44:57,127 --> 01:44:58,627
+Şurası, şurası doğru.
+
+1765
+01:44:58,768 --> 01:45:00,788
+Eksi kök 2, Y'si kök 2.
+
+1766
+01:45:01,007 --> 01:45:02,347
+Yani şuraya gelmem lazım.
+
+1767
+01:45:03,627 --> 01:45:06,307
+Şurası, tam olarak şu nokta.
+
+1768
+01:45:07,127 --> 01:45:09,828
+Ve Z'si de eksi 5'te aşağı doğru götürelim onu.
+
+1769
+01:45:10,627 --> 01:45:12,007
+Şuralarda bir yerde olsun.
+
+1770
+01:45:12,288 --> 01:45:13,108
+Biraz da uzatalım.
+
+1771
+01:45:13,108 --> 01:45:14,807
+Evet, şimdi düzeltmiş oldum.
+
+1772
+01:45:21,652 --> 01:45:32,332
+Bu bizim hız vektörümüz, V vektörü. Konum vektörüne baktığım, ivme vektörüne baktığımız zaman, eksi kök 2, eksi kök 2, yani şuraya çizmiştik onu.
+
+1773
+01:45:33,011 --> 01:45:37,271
+Tam olarak bu tabii ki düzlemde, düzlemde şu vektör.
+
+1774
+01:45:48,564 --> 01:46:01,784
+Burası da bizim A diyelim, A vektörü. Dikkat ederseniz yani hızla ivme vektörleri arasında bir ilişki çok kuramadık. Burada ne olması gerekiyor tabii?
+
+1775
+01:46:01,784 --> 01:46:16,024
+Hani ivmenin hıza dik olduğu durumda, aralarındaki açının pi olduğu durumda neler olur gibi. Sanki burada z ekseninde varmış gibi görünüyor ama ben çok güzel çizemedim.
+
+1776
+01:46:16,024 --> 01:46:29,484
+aslında bu x, y, z, y, z uzayında. Öyle değil. Böyle bir grafikte çizmiş olduk. Örneğe uygun olarak.
+
+1777
+01:46:29,844 --> 01:46:40,463
+Belki bir helis ya da helis diyemeyiz ama helissel bir evli diyebiliriz. Sonuçta burada z de 5 koskareye bağlı, koskare p'ye bağlı.
+
+1778
+01:46:49,684 --> 01:46:51,484
+Hesaptamalar doğru gibi görünüyor.
+
+1779
+01:46:54,996 --> 01:46:57,695
+Türev alma kuralları. Bunlar hızlıca bahsedeceğim.
+
+1780
+01:46:57,855 --> 01:47:05,855
+Bunlardan çok karşınıza bunlar çıkar mı emin değilim ama yine de hızlıca bakmakta fayda var.
+
+1781
+01:47:06,336 --> 01:47:12,176
+Tabii RT ve ST'lerin vektör değerli fonksiyonlar olduğunu göz ardı etmememiz gerekir.
+
+1782
+01:47:12,256 --> 01:47:13,756
+Yani her birinin bileşenleri var.
+
+1783
+01:47:14,216 --> 01:47:16,916
+Boyut neyse artık biz 3 boyutta verdik tanımımızı.
+
+1784
+01:47:17,756 --> 01:47:18,636
+M boyutta olabilir.
+
+1785
+01:47:19,036 --> 01:47:21,155
+Yani M boyutluysa en tane bileşen var.
+
+1786
+01:47:21,155 --> 01:47:24,416
+Her bir bileşen T'ye bağlı bir fonksiyon gibi düşüneceğiz.
+
+1787
+01:47:25,235 --> 01:47:33,775
+Toplam ve farkın türevi tıpkı tek değişkenli fonksiyonlarda olduğu gibi bileşenlerin ayrı ayrı türevlerin toplamı ve farkına eşit.
+
+1788
+01:47:34,036 --> 01:47:38,355
+Yani toplam ve farkın türevi ayrı ayrı bileşenlerin türevlerin toplamı ve farkına eşit.
+
+1789
+01:47:40,056 --> 01:47:42,876
+Fonksiyonun özelliğini tabii göz ardı etmememiz lazım.
+
+1790
+01:47:43,016 --> 01:47:44,416
+Vektör değerli bir fonksiyon.
+
+1791
+01:47:45,056 --> 01:47:49,516
+Burası burada biraz özel düşünmemiz lazım.
+
+1792
+01:47:49,516 --> 01:47:52,115
+F'te skaler değerli bir fonksiyon.
+
+1793
+01:47:52,615 --> 01:47:54,676
+RT vektör değerli bir fonksiyon.
+
+1794
+01:47:54,676 --> 01:47:58,815
+Aslında RT'nin her bir bileşenini ben F't ile çarpmış oluyorum.
+
+1795
+01:47:59,315 --> 01:48:01,355
+Ve buradaki bileşen değil çarpma aslında.
+
+1796
+01:48:02,975 --> 01:48:04,956
+RT'nin şöyle olduğunu düşünürsek.
+
+1797
+01:48:05,256 --> 01:48:05,636
+RT.
+
+1798
+01:48:08,596 --> 01:48:10,355
+Şuraya F'teyi kullanmışız.
+
+1799
+01:48:10,536 --> 01:48:11,536
+Değiştirelim yerleri.
+
+1800
+01:48:11,636 --> 01:48:12,096
+G't.
+
+1801
+01:48:12,096 --> 01:48:14,235
+H't.
+
+1802
+01:48:14,235 --> 01:48:17,096
+Bir de S't diyelim.
+
+1803
+01:48:17,376 --> 01:48:21,376
+S't'yi de orada kullanmıştık ama şuraya harf kaldı.
+
+1804
+01:48:21,496 --> 01:48:23,876
+K't diyelim.
+
+1805
+01:48:24,576 --> 01:48:27,456
+F't çarpı RT dediğimiz şey
+
+1806
+01:48:27,456 --> 01:48:32,256
+aslında bir vektörün bir skalerle çarpılması olacak arkadaşlar.
+
+1807
+01:48:32,355 --> 01:48:33,336
+Onu umurlamak istiyorum.
+
+1808
+01:48:33,695 --> 01:48:35,176
+Yani içeriye şurası ne olacak?
+
+1809
+01:48:35,836 --> 01:48:37,676
+F't, y't.
+
+1810
+01:48:38,855 --> 01:48:40,296
+Şurası F't, h't.
+
+1811
+01:48:40,296 --> 01:48:44,416
+ve F't, k't olacak olarak.
+
+1812
+01:48:44,876 --> 01:48:55,155
+Dolayısıyla bir skaler fonksiyon ile bir vektör değerli fonksiyon ile vektör değerli bir fonksiyon çarpımının türevi.
+
+1813
+01:48:55,155 --> 01:48:58,076
+Burada yine çarpım kuralı geçerli aslında.
+
+1814
+01:48:58,516 --> 01:49:02,855
+Birincinin türevi çarpı ikinci artı ikincinin türevi çarpı birinci gibi.
+
+1815
+01:49:03,056 --> 01:49:08,056
+Ama göz ardı etmememiz gereken ikinci dediğimiz şey vektör değerli bir fonksiyon.
+
+1816
+01:49:09,256 --> 01:49:09,576
+Evet.
+
+1817
+01:49:11,296 --> 01:49:12,695
+Çarpım kuralını işletiyoruz.
+
+1818
+01:49:13,336 --> 01:49:15,195
+Burada iç çarpım var.
+
+1819
+01:49:15,596 --> 01:49:18,456
+Vektör olduğu için vektörleri iç çarpabiliriz.
+
+1820
+01:49:18,556 --> 01:49:23,475
+İki tane vektör değerli fonksiyonun iç çarpımının türevi yine çarpım kuralı.
+
+1821
+01:49:23,475 --> 01:49:25,235
+Birincinin türevi çarpı ikinci.
+
+1822
+01:49:25,336 --> 01:49:27,456
+Tabi bu çarpıdan kastımız iç çarpım.
+
+1823
+01:49:27,515 --> 01:49:29,456
+Burada bol bir dat var aslında.
+
+1824
+01:49:29,596 --> 01:49:30,655
+Şurada hiçbir şey yazmadım.
+
+1825
+01:49:30,735 --> 01:49:31,756
+Bu skaler çarpımdı.
+
+1826
+01:49:31,815 --> 01:49:33,235
+Vektörlerin skaler çarpımı.
+
+1827
+01:49:33,676 --> 01:49:35,155
+Geçen hafta bunlardan bahsettik.
+
+1828
+01:49:35,775 --> 01:49:37,655
+Bu iç çarpım.
+
+1829
+01:49:39,336 --> 01:49:41,155
+Yukarıdaki skaler ile çarpma.
+
+1830
+01:49:41,256 --> 01:49:43,056
+Bu skaler çarpım ya da iç çarpım.
+
+1831
+01:49:43,235 --> 01:49:43,676
+Öyle diyelim.
+
+1832
+01:49:43,775 --> 01:49:44,716
+Karşıçlık olmasın.
+
+1833
+01:49:45,155 --> 01:49:46,975
+Yine çarpımın kuralı.
+
+1834
+01:49:47,036 --> 01:49:50,235
+Birincinin türevi çarpı ikinci artı ikincinin türevi çarpı birinci.
+
+1835
+01:49:51,315 --> 01:49:53,456
+Vektörel çarpımlarının türevi de aynı şey.
+
+1836
+01:49:53,475 --> 01:49:54,916
+Yine çarpım kuralı.
+
+1837
+01:49:55,015 --> 01:49:58,115
+Fakat buradaki çarpım artık vektörel çarpım.
+
+1838
+01:49:58,216 --> 01:49:59,596
+Yani kros çarpım kullanılır.
+
+1839
+01:50:00,315 --> 01:50:01,855
+Bunlar tabi biraz komplike olacak.
+
+1840
+01:50:01,996 --> 01:50:04,115
+Bunlar hesaplarken öyle göründüğü gibi değiller.
+
+1841
+01:50:04,256 --> 01:50:06,115
+İki tane vektör değerli fonksiyon alır.
+
+1842
+01:50:06,176 --> 01:50:09,996
+Tabi bu dördüncüyü sadece biz R3'te yapabiliriz.
+
+1843
+01:50:10,096 --> 01:50:12,096
+Bu diğerleri herhangi bir boyutta yapılabilir.
+
+1844
+01:50:12,256 --> 01:50:15,556
+Dördüncü sadece R3 uzayında yapılabilir.
+
+1845
+01:50:15,956 --> 01:50:18,096
+Üç boyutlu öktik uzayında yapılabilir.
+
+1846
+01:50:18,096 --> 01:50:21,576
+Yani üç tane bileşen olmak zorunda.
+
+1847
+01:50:22,155 --> 01:50:24,015
+Her bir vektör değerli fonksiyonda.
+
+1848
+01:50:25,636 --> 01:50:31,195
+Bunları yaparken tabi şurada iki tane vektörel çarpım hesaplamamız gerekiyor.
+
+1849
+01:50:31,775 --> 01:50:34,536
+Vektör vektör toplamı yine bir vektör olmuş oldu.
+
+1850
+01:50:34,636 --> 01:50:35,556
+Sonuç bir vektör.
+
+1851
+01:50:35,556 --> 01:50:38,435
+Yukarıdakine baktığımız zaman iç çarpım.
+
+1852
+01:50:38,832 --> 01:50:42,112
+İki tane vektörün iç çarpımı bir skaler oluyordu.
+
+1853
+01:50:42,212 --> 01:50:43,892
+Tabi burada skaler bir fonksiyon olacak.
+
+1854
+01:50:44,032 --> 01:50:45,912
+Şu formda bir skaler fonksiyon olacak.
+
+1855
+01:50:46,492 --> 01:50:49,032
+Dolayısıyla şurası bir skaler, şurası bir skaler.
+
+1856
+01:50:49,192 --> 01:50:51,271
+Skaler değerli fonksiyon daha doğrusu.
+
+1857
+01:50:51,632 --> 01:50:54,472
+Topladığımızda sonuç yine skaler değerli bir fonksiyon olacak.
+
+1858
+01:50:55,012 --> 01:51:01,112
+Yukarısı bir vektörü bir skaler değerli fonksiyon ile skaler ile çarptık.
+
+1859
+01:51:01,192 --> 01:51:02,892
+Dolayısıyla sonuç bir vektör olacak.
+
+1860
+01:51:03,032 --> 01:51:03,912
+Şurası vektör.
+
+1861
+01:51:05,172 --> 01:51:07,532
+Vektör değerli fonksiyon diyelim.
+
+1862
+01:51:07,532 --> 01:51:09,731
+Şuraya skaler fonksiyon diyelim.
+
+1863
+01:51:09,892 --> 01:51:10,832
+Skaler fonksiyon.
+
+1864
+01:51:11,212 --> 01:51:14,771
+Burası yine vektör değerli fonksiyon olacak falan.
+
+1865
+01:51:15,392 --> 01:51:16,512
+Şu sonuç ne olacak?
+
+1866
+01:51:16,932 --> 01:51:18,952
+Vektör değerli fonksiyon olacak.
+
+1867
+01:51:19,432 --> 01:51:21,112
+Böyle ince ayrıntılar var.
+
+1868
+01:51:21,212 --> 01:51:22,311
+Cebirsel işlemler var.
+
+1869
+01:51:22,432 --> 01:51:24,572
+Bunları dikkate almamız gerekir.
+
+1870
+01:51:24,972 --> 01:51:27,952
+Bileşkenin türevi nasıl olur?
+
+1871
+01:51:28,552 --> 01:51:30,032
+Basit zincir kuralı.
+
+1872
+01:51:30,112 --> 01:51:32,332
+İçinin türevi çarpı kendisinin türevi.
+
+1873
+01:51:32,952 --> 01:51:35,092
+İçi bir skaler değerli fonksiyon.
+
+1874
+01:51:35,092 --> 01:51:37,332
+Yine kendisi vektör değerli bir fonksiyon.
+
+1875
+01:51:37,332 --> 01:51:40,652
+Bunları göz önünde bulundurmamız gerekir.
+
+1876
+01:51:41,352 --> 01:51:42,731
+Şurada şık bir ispat var.
+
+1877
+01:51:42,832 --> 01:51:46,172
+Bunu iki değişken fonksiyonları verdikten sonra
+
+1878
+01:51:46,172 --> 01:51:48,792
+gradient vektörü nedir?
+
+1879
+01:51:50,212 --> 01:51:51,372
+Yüzeye diktir.
+
+1880
+01:51:51,372 --> 01:51:58,072
+Yüzeyin seviye eğrisini her noktada diktir gibi bir sonuç var.
+
+1881
+01:51:58,692 --> 01:52:03,352
+Onu t-düzlem ya da normal doğruyu belirlerken kullandığımız bir sonuç.
+
+1882
+01:52:03,771 --> 01:52:04,692
+Biraz buna benziyor.
+
+1883
+01:52:04,771 --> 01:52:06,612
+Ispatında bu bilgi kullanılıyor aslında.
+
+1884
+01:52:06,612 --> 01:52:14,032
+Eğer bir vektör değerli fonksiyonun sonucu bir sabit ise dikkat ederseniz vektör değerli fonksiyon t'ye bağlı.
+
+1885
+01:52:14,092 --> 01:52:22,132
+Ama doğrunu aldığımızda t'den kurtuluyorsak, t hiç yoksa sadece sabit varsa bu durumda vektör değerli fonksiyon,
+
+1886
+01:52:22,132 --> 01:52:31,612
+yani bu konum fonksiyonu hız fonksiyonuyla birbirine diktir gibi bir sonuç çıkarıyoruz.
+
+1887
+01:52:31,771 --> 01:52:33,832
+Ispatı da şık bir ispatı var aslında.
+
+1888
+01:52:34,472 --> 01:52:36,212
+Bakalım şöyle iç çarptığımızda,
+
+1889
+01:52:37,192 --> 01:52:39,692
+sol tarafta ben R ile RT'yi iç çarptım.
+
+1890
+01:52:39,692 --> 01:52:42,811
+kendisiyle pardon, RT'yi kendisiyle iç çarptım.
+
+1891
+01:52:42,852 --> 01:52:43,352
+Bu ne demek?
+
+1892
+01:52:43,712 --> 01:52:45,052
+C'nin karesi demek yani.
+
+1893
+01:52:45,552 --> 01:52:47,752
+Çünkü RT'yi biz bir yerde C olarak düşündük.
+
+1894
+01:52:47,852 --> 01:52:48,731
+RT, C olsun.
+
+1895
+01:52:49,231 --> 01:52:50,172
+Sabit kabul ettik.
+
+1896
+01:52:50,572 --> 01:52:52,692
+RT eşittir C gibi bir sabit olsun.
+
+1897
+01:52:53,172 --> 01:52:54,432
+Kendisiyle iç çarptığımızda,
+
+1898
+01:52:54,492 --> 01:52:58,652
+iç çarptım derken sağ tarafta zaten skaler var ama onları birbiriyle çarpacağız.
+
+1899
+01:52:58,731 --> 01:53:00,912
+Ama sol tarafta iç çarptığım bir skaler olacak zaten.
+
+1900
+01:53:00,912 --> 01:53:03,012
+Ben buraya çarpma işlemi koyamam araya.
+
+1901
+01:53:03,212 --> 01:53:07,972
+Yani iki tane fonksiyonu birbiriyle çarpıyormuşum gibi öyle bir şey olamaz.
+
+1902
+01:53:08,552 --> 01:53:08,972
+Neden?
+
+1903
+01:53:08,972 --> 01:53:12,292
+Çünkü sağ taraf skaler olduğu için bu skaler çarpım olmak zorunda,
+
+1904
+01:53:12,412 --> 01:53:16,072
+yani iç çarpım olmak zorunda karşılıklı birleşenleri çarpıp toplamam gerekiyor.
+
+1905
+01:53:16,192 --> 01:53:16,412
+Tamam.
+
+1906
+01:53:16,932 --> 01:53:19,912
+Bunu yaptığımızda şimdi türev alalım.
+
+1907
+01:53:20,012 --> 01:53:21,432
+Her iki tarafın türevini alalım.
+
+1908
+01:53:21,752 --> 01:53:23,332
+Şuranın da, şuranın da türevini alalım.
+
+1909
+01:53:23,412 --> 01:53:24,932
+Sabit'in türevi sıfır olacak değil mi?
+
+1910
+01:53:24,972 --> 01:53:26,492
+Onu hemen şuraya yazabiliriz.
+
+1911
+01:53:26,552 --> 01:53:27,612
+Sabit'in türevi sıfır.
+
+1912
+01:53:27,672 --> 01:53:28,292
+Onu biliyoruz.
+
+1913
+01:53:28,752 --> 01:53:30,972
+Tanımı kullanarak çok rahat ispatlayabiliriz.
+
+1914
+01:53:31,512 --> 01:53:34,292
+Şuranın türevini aldığımızda birincinin türevi çarpı ikinci,
+
+1915
+01:53:34,372 --> 01:53:35,912
+artı ikincinin türevi çarpı birinci.
+
+1916
+01:53:35,992 --> 01:53:37,012
+İkisi de aynı şey olacak.
+
+1917
+01:53:37,271 --> 01:53:38,332
+Değişmen olduğu için,
+
+1918
+01:53:38,332 --> 01:53:39,692
+iç çarpım,
+
+1919
+01:53:39,972 --> 01:53:41,112
+re üstü t çarpı re t,
+
+1920
+01:53:41,192 --> 01:53:41,952
+re t re üstü t.
+
+1921
+01:53:42,012 --> 01:53:44,852
+Bunu re t çarpı re üstü t olarak yazabilirim.
+
+1922
+01:53:44,932 --> 01:53:45,792
+Böyle yeniden düzenlem.
+
+1923
+01:53:45,852 --> 01:53:46,332
+Çünkü değişmeliydi.
+
+1924
+01:53:47,192 --> 01:53:50,432
+Geçen hafta rektörler konusunda gördük iç çarpımın değişmeli olduğunu.
+
+1925
+01:53:51,072 --> 01:53:52,092
+Sıfıra eşitse,
+
+1926
+01:53:52,632 --> 01:53:54,532
+iki sıfır olamayacağına göre,
+
+1927
+01:53:54,652 --> 01:53:56,492
+iki eşitli sıfır olamayacağına göre,
+
+1928
+01:53:56,912 --> 01:53:58,271
+re t çarpı re üstü t,
+
+1929
+01:53:58,372 --> 01:53:59,992
+iç çarpımı sıfır olmak zorunda.
+
+1930
+01:53:59,992 --> 01:54:03,231
+İ çarpımın özelliğinden bir iç çarpım sıfırsa,
+
+1931
+01:54:03,731 --> 01:54:06,271
+bileşen vektörleri birbirine dik olmak zorunda.
+
+1932
+01:54:06,332 --> 01:54:09,192
+Aradaki açı ne olmak zorunda?
+
+1933
+01:54:09,912 --> 01:54:11,692
+90 derece olmak zorunda.
+
+1934
+01:54:12,092 --> 01:54:13,771
+Bu şekilde ispatı da vermiş olduk.
+
+1935
+01:54:13,832 --> 01:54:14,792
+Bakalım, bakit nerede?
+
+1936
+01:54:15,512 --> 01:54:17,332
+Biraz aşmışsınız gibi arkadaşlar.
+
+1937
+01:54:17,332 --> 01:54:21,172
+Hızlı bir şekilde yay uzunluğunu da verelim, bitirelim.
+
+1938
+01:54:21,652 --> 01:54:23,452
+Sizi biraz sıktığımın farkındayım.
+
+1939
+01:54:23,572 --> 01:54:25,032
+Kendimi de yorduğumun farkındayım.
+
+1940
+01:54:25,132 --> 01:54:26,231
+Ama şunu hızlıca bitirelim.
+
+1941
+01:54:27,072 --> 01:54:28,052
+Yay uzunluğu.
+
+1942
+01:54:28,724 --> 01:54:36,604
+Parametrik denklemlerdeki yay uzunluğu, kutupsal koordinatlardaki yay uzunluğu, tek değişkenli fonksiyonlardaki yay uzunluğu ona çok benziyor.
+
+1943
+01:54:36,684 --> 01:54:38,564
+Hatta parametriye daha çok benziyor.
+
+1944
+01:54:38,904 --> 01:54:40,583
+Yine 3 boyutlu uzayda verdik bunu.
+
+1945
+01:54:41,003 --> 01:54:44,003
+Boyutu arttırırsanız kök içindeki bileşen sayısı artacak.
+
+1946
+01:54:44,904 --> 01:54:49,083
+Ayrı ayrı bileşenlerinin, türevlerinin karesinin toplamının kare kökü.
+
+1947
+01:54:49,123 --> 01:54:50,043
+Aslında bu ne demek?
+
+1948
+01:54:50,524 --> 01:54:52,224
+RT'nin normunu al demek.
+
+1949
+01:54:52,423 --> 01:54:53,324
+Norm neydi?
+
+1950
+01:54:53,384 --> 01:54:55,884
+Bileşenlerin, karevlerin toplamının kare köküydü.
+
+1951
+01:54:55,884 --> 01:54:59,583
+Yani A noktasından B noktasına zamanı sınırladım.
+
+1952
+01:54:59,703 --> 01:55:00,744
+Parametriyi sınırladım.
+
+1953
+01:55:00,864 --> 01:55:08,184
+A noktasından B noktasına süretin, aslında bu süret gibi süreti türet demek.
+
+1954
+01:55:08,344 --> 01:55:11,003
+Yani buradan tabii T'ye bağlı bir şey çıkabilir.
+
+1955
+01:55:11,123 --> 01:55:11,663
+Çıkmayabilir.
+
+1956
+01:55:11,923 --> 01:55:12,984
+Sabit bir şey de olabilir.
+
+1957
+01:55:13,163 --> 01:55:14,663
+T'ye bağlı bir şey de çıkabilir.
+
+1958
+01:55:15,104 --> 01:55:17,744
+Parametre aralığında negatif pozitif değer alabilir.
+
+1959
+01:55:18,163 --> 01:55:18,684
+Anlayabilir.
+
+1960
+01:55:18,804 --> 01:55:20,904
+Bunları düşünmemiz gerekiyor hesaplarken.
+
+1961
+01:55:21,364 --> 01:55:22,543
+Hızlıca bir örnek yapalım.
+
+1962
+01:55:22,543 --> 01:55:25,284
+Hemen Hennis ehlisi geldi örnek için.
+
+1963
+01:55:25,884 --> 01:55:32,784
+0 ile 2P aralığında Hennis ehlisinin bu ehliye, biz Hennis ehlisi diyoruz.
+
+1964
+01:55:32,884 --> 01:55:33,864
+Hennis ehlisi.
+
+1965
+01:55:35,663 --> 01:55:41,184
+Hennis ehlisinin boyunu, 0 ile 2P aralığındaki boyunu bulalım.
+
+1966
+01:55:41,744 --> 01:55:42,764
+Neye bakmam lazım?
+
+1967
+01:55:42,764 --> 01:55:47,364
+0'dan 2P'ye, burada bir simetri yok.
+
+1968
+01:55:47,543 --> 01:55:50,463
+Ve üstü T, DT.
+
+1969
+01:55:51,043 --> 01:55:51,844
+O da eşittir.
+
+1970
+01:55:51,844 --> 01:55:56,264
+0'dan 2P'ye, 0'dan 2P'ye, türevi almış olalım.
+
+1971
+01:55:56,484 --> 01:55:57,324
+Kare kök içinde.
+
+1972
+01:55:57,944 --> 01:56:06,724
+Kosünüsün türevi, eksi sinüs yani sin kare T, artı sinüsün kosünüs, kosünüs kare T, artı T'nin türevi 1, DT.
+
+1973
+01:56:06,724 --> 01:56:09,864
+Sin kare, kosünüs kare toplamı 1 yapar.
+
+1974
+01:56:09,923 --> 01:56:12,384
+Buradan da kök 2'yi ben dışarı alabilirim.
+
+1975
+01:56:12,503 --> 01:56:13,864
+Sabit T'den bağımsız.
+
+1976
+01:56:13,864 --> 01:56:16,623
+0'dan 2P'ye, DT oldu.
+
+1977
+01:56:16,703 --> 01:56:18,944
+Buradan T gelecek yani eşittir.
+
+1978
+01:56:19,324 --> 01:56:21,104
+Kök 2 çarpı T, nereden nereye?
+
+1979
+01:56:21,224 --> 01:56:22,384
+0'dan 2P'ye.
+
+1980
+01:56:22,764 --> 01:56:28,623
+Buradan da üst sınırda 2 kök 2'ye, P birim gelmiş oldu.
+
+1981
+01:56:29,623 --> 01:56:38,623
+Parametrik ehlinin, daha doğrusu vektör değerli fonksiyonun,
+
+1982
+01:56:38,703 --> 01:56:42,824
+AB aralığındaki yay uzunluğunda bu şekilde hesapları sevdi arkadaşlar.
+
+1983
+01:56:42,824 --> 01:56:46,484
+Bir tane daha örneğim yoktu sanki, öyle hatırlıyorum.
+
+1984
+01:56:46,984 --> 01:56:48,024
+Evet, bitmiş.
+
+1985
+01:56:48,244 --> 01:56:49,064
+Bunu hızlıca geçtik.
+
+1986
+01:56:49,144 --> 01:56:52,163
+Zaten bu konu o kadar çok büyük ehemli olan bir konu değil.
+
+1987
+01:56:52,684 --> 01:56:53,744
+O yüzden hızlıca geçtim.
+
+1988
+01:56:53,904 --> 01:56:56,944
+Yani bu geçen haftayla bu hafta yardımcı konulardı.
+
+1989
+01:56:57,543 --> 01:57:00,824
+Asıl mat 2 dersi yarın başlayacak.
+
+1990
+01:57:00,923 --> 01:57:02,284
+2 değişkenli fonksiyonlar.
+
+1991
+01:57:02,503 --> 01:57:03,844
+Ama bu şu anlama gelmiyor.
+
+1992
+01:57:04,324 --> 01:57:07,244
+HES sınavlarında bunlarla ilgili sorularla karşılaşmayacaksınız.
+
+1993
+01:57:07,404 --> 01:57:07,684
+Hayır.
+
+1994
+01:57:08,123 --> 01:57:11,304
+HES olduğu için bütün bu konularla ilgili sorular karşınıza çıkacak.
+
+1995
+01:57:11,304 --> 01:57:13,644
+Hatta belki ayrıntılar da olabilecek.
+
+1996
+01:57:14,043 --> 01:57:16,724
+Dolayısıyla bu konuları göz ardı etmeyin arkadaşlar.
+
+1997
+01:57:16,963 --> 01:57:17,644
+Bunları da bakın.
+
+1998
+01:57:18,163 --> 01:57:20,564
+Verdiğimiz uzunlamalarda çözmeye çalışın.
+
+1999
+01:57:21,003 --> 01:57:23,444
+Var mı eklemek istediğiniz, sormak istediğiniz bir şey?
+
+2000
+01:57:27,412 --> 01:57:38,192
+Dolayısıyla ilgili üçüncü uygulamanın cevap anahtarını da paylaşacağım. Dördüncü uygulamayı da web sayfasından paylaşacağım. Sabırla dinlediğiniz için teşekkür ederim.
+
+2001
+01:57:38,192 --> 01:57:40,152
+Hocam, bize tarih belli oldu mu?
+
+2002
+01:57:40,512 --> 01:57:50,311
+Bize tarih belli, evet. Matematik bölümünün web sayfasından bakın sanki Mayıs ayının sonuna doğruydu. Onu hemen bakalım hatta, söyleyelim. Şuradan hemen bakalım.
+
+2003
+01:57:56,083 --> 01:58:08,604
+Yani vize final gibi olacak aslında. Neden? Çünkü vize bir tane vize olacak. Etkinliği %60 olduğu için servis dersleri, yeni içi. Bütün sınavlar açıklanmış zaten.
+
+2004
+01:58:08,604 --> 01:58:19,903
+Yani final açıklanmış mı? Hayır, finaller açıklanmamış. Uyduruyorum bunu biraz. Matiki dersi gibi bu. Binlerce bir. Mat 72 saniye.
+
+2005
+01:58:19,903 --> 01:58:36,384
+Evet, birinci yılı. 17 Mayıs, Pazartesi günü 6 ile 8 saatleri arasında olacak arkadaşlar. 17 Mayıs, Pazartesi saat 18'de 20 arası. Zaten sisteme tanımlandığında size bir bilgilendirme meyili gelecektir diye düşünüyorum.
+
+2006
+01:58:36,384 --> 01:58:47,543
+Bu sınavın mazereti de arkadaşlar 8 Haziran salı günü yine 6 ile 8 saatleri arasında yapılacak akşam.
+
+2007
+01:58:47,543 --> 01:58:55,363
+Yani mazereti de. Yani mazereti de. Yani mazereti de. Yani mazereti de o tarihte olacak. O yüzden mazereti olanlar bunlar ne olabilir?
+
+2008
+01:58:56,163 --> 01:59:02,543
+Çok mazeret oluyor olmayı sınavlarda ama artık bir doğrulama istiyorlar. Kendi bölümümüzden ya da matematik bölümünden.
+
+2009
+01:59:02,543 --> 01:59:09,783
+İşte sisteme giremedim, internet yoktu, elektrikler kesildi. Ondan sonra böyle şeyler.
+
+2010
+01:59:09,783 --> 01:59:11,783
+sınavda bir şey anlatılırlar.
+
+2011
+01:59:11,783 --> 01:59:13,783
+Bir şey anlatılırlar.
+
+2012
+01:59:13,783 --> 01:59:19,003
+Dört öğrenci, otdünün öğrencileri, bir hikaye var.
+
+2013
+01:59:19,003 --> 01:59:20,844
+Sınava gelmişler.
+
+2014
+01:59:20,844 --> 01:59:23,323
+Geç kalmışlar böyle.
+
+2015
+01:59:23,323 --> 01:59:26,104
+İşte hocada ne oldu?
+
+2016
+01:59:26,104 --> 01:59:29,483
+Biz arabayla gelirken lastik patladı. Dört kişiler.
+
+2017
+01:59:29,483 --> 01:59:33,344
+Hocada tabii herhalde işletme falan ünlü bir hoca.
+
+2018
+01:59:33,344 --> 01:59:36,304
+Belki bulabilirsiniz internette. Tam detaylarını hatırlamıyorum.
+
+2019
+01:59:36,304 --> 01:59:38,304
+sordu onlara işte arabanın.
+
+2020
+01:59:38,304 --> 01:59:41,304
+Sordu onlara işte arabanın hangi lastiği patladı diye sormuş.
+
+2021
+01:59:41,304 --> 01:59:43,304
+Tabii bunlar onu düşünememişler aralarında.
+
+2022
+01:59:43,304 --> 01:59:51,304
+O yüzden mazeret uyduracaksanız sağlam, matematiksel bir mazeret olsun, altyapısı sağlam olsun.
+
+2023
+01:59:51,304 --> 01:59:54,304
+Sabırla dinlediğiniz için teşekkür ediyorum.
+
+2024
+01:59:54,304 --> 01:59:57,304
+Hoşçakalın. Yarın görüşmek üzere arkadaşlar.
