@@ -1,0 +1,10391 @@
+1
+00:04:47,187 --> 00:04:48,307
+Günaydın arkadaşlar.
+
+2
+00:04:50,348 --> 00:04:51,447
+Günaydın hocam. Merhaba.
+
+3
+00:04:52,247 --> 00:04:56,027
+Merhabalar. Biraz bekledim katılım sayısı artsın diye.
+
+4
+00:04:57,608 --> 00:05:02,168
+Dün Tyler ve McLaurin serilerinin uygulamalarında kalmıştık.
+
+5
+00:05:03,707 --> 00:05:06,927
+Elementar olmayan integrallerin hesaplanmasında kullanılabiliyordu.
+
+6
+00:05:09,087 --> 00:05:14,987
+Belirsiz şekil olarak görmek istemediğimiz limitleri çözmek için kullanılıyordu.
+
+7
+00:05:14,987 --> 00:05:19,788
+Limitlerle ilgili örnekler yapmaya başlamıştık.
+
+8
+00:05:20,307 --> 00:05:22,507
+Ekranda gördüğünüz örnekte kalmıştık.
+
+9
+00:05:23,187 --> 00:05:24,847
+İki tane de örnek yapacağız.
+
+10
+00:05:25,567 --> 00:05:27,608
+Seri konusunu bitireceğiz artık.
+
+11
+00:05:27,747 --> 00:05:32,827
+Parametrik denklemler ve kutupsal koordinatlar konularıyla devam edeceğiz.
+
+12
+00:05:32,947 --> 00:05:34,587
+Öncelikle parametrik denklemler.
+
+13
+00:05:34,587 --> 00:05:35,947
+Kısa bir konu zaten.
+
+14
+00:05:37,387 --> 00:05:43,487
+Sonrasında da parametrik denklemler vektör değerli fonksiyonlar konusunda karşımıza çıkacak.
+
+15
+00:05:43,487 --> 00:05:45,408
+Sanırım 6. haftanın konusu.
+
+16
+00:05:47,067 --> 00:05:50,627
+Ve kutupsal koordinatlar biraz uzunca bir konu olacak.
+
+17
+00:05:51,048 --> 00:05:54,467
+İki katlı integrallerde de tekrar karşımıza çıkacak.
+
+18
+00:05:55,967 --> 00:06:01,987
+İntegral hesaplarken bir değişken dönüşüm olarak kutupsal koordinatları da göreceğiz tekrar.
+
+19
+00:06:03,447 --> 00:06:04,747
+Örneğimizde devam edelim.
+
+20
+00:06:04,747 --> 00:06:08,967
+x0'a giderken sinüs x eksi tanjant x bölü x küp.
+
+21
+00:06:09,028 --> 00:06:10,387
+Biz bunu sanki yaptık.
+
+22
+00:06:10,887 --> 00:06:12,168
+Evet biz bu örneği çözdük.
+
+23
+00:06:12,307 --> 00:06:13,267
+Evet çözdük hocam.
+
+24
+00:06:13,387 --> 00:06:14,668
+Evet bu örneği çözdük.
+
+25
+00:06:14,668 --> 00:06:22,528
+İntro.
+
+26
+00:06:23,283 --> 00:06:37,983
+1 bölü sinüs x eksi, 1 bölü x limiti x sıfıra giderken, 1 bölü sinüs x, 1 bölü sıfır sonsuz, eksi 1 bölü x, yine 1 bölü sıfır sonsuz, sonsuz eksi, sonsuz belirsizliği.
+
+27
+00:06:38,483 --> 00:06:45,783
+Mat bir dersinde o belirsiz şekillerde, sonsuz eksi, sonsuz varsa bunu sonsuz bölü sonsuz ya da sıfır bölü sıfıra dönüştürüp,
+
+28
+00:06:45,783 --> 00:06:52,644
+repital kuralından çözebiliyorduk. Fakat burada repital kullanmamızı istemiyor.
+
+29
+00:06:53,163 --> 00:06:56,163
+O yüzden kuvvet serisi açılımı kullanacağız.
+
+30
+00:06:56,624 --> 00:07:02,443
+Bunun için öncelikle payda eşitleyerek, şurada payda eşitleyerek limitimizi daha
+
+31
+00:07:02,443 --> 00:07:09,103
+işlem uygulayabileceğimiz bir forma getirelim.
+
+32
+00:07:12,103 --> 00:07:13,843
+x eksi sinüs x,
+
+33
+00:07:13,843 --> 00:07:17,803
+x eksi x bölü x,
+
+34
+00:07:17,803 --> 00:07:22,163
+x eksi x,
+
+35
+00:07:26,963 --> 00:07:46,723
+Şimdi baktığımızda, sıfır bölü sıfır belirsizliğine indirgenmiş oldu. Burada pay ve paydan ayrı ayrı türevi alınarak limit değeri bulunabilir. Belki sağlama amaçlı da o yapılabilir. Fakat bizim burada yapacağımız seri kullanma, sinüs x'in serisini biliyoruz.
+
+36
+00:07:46,723 --> 00:07:59,764
+x eksi, x'in küpü böyle açık yazıyorum. Çünkü açık yazarsak burada daha rahat işlem yaparız. Kapalı form üzerinde işlem yapmamız kolay olmaz.
+
+37
+00:08:00,343 --> 00:08:10,963
+3 faktör yer, artı x üzeri 5, böyle 5 faktör yer, eksi x üzeri 7, böyle 7 faktör yer, artı bu şekilde devam ediyor.
+
+38
+00:08:10,963 --> 00:08:27,303
+Yani kapalı formda yazacak olursak, n sıfırdan sonsuza, eksi x'in serisi, n çarpı x üzeri, 2n artı 1 bölüm, 2n artı 1 faktör yer.
+
+39
+00:08:27,923 --> 00:08:33,104
+Kosünüs serisinin türevini alarak elde etmiştik. İfadelerin hepsini yerine yazalım.
+
+40
+00:08:38,004 --> 00:08:43,484
+x eksi, sinüs serisi, ilk üç serimin yazmam yeterli, hepsini yazmamıza gerek yok.
+
+41
+00:08:43,484 --> 00:08:54,964
+x eksi, x'in kübü bölü 3 faktölyel, artı x üzeri 5 bölü, 5 faktölyel, eksi. Bu şekilde devam edelim.
+
+42
+00:08:54,964 --> 00:09:10,663
+x eksi, x kübü bölü 3 faktölyel, artı x üzeri 5 bölü 5 faktölyel, eksi.
+
+43
+00:09:12,443 --> 00:09:19,084
+Bu kadar terim bizim için yeterli. Tanımsız durumdan kurtarırsak limiti alacağız. Amaç tanımsız durumdan kurtarmak.
+
+44
+00:09:19,084 --> 00:09:24,484
+Onun için biraz işlem yapacağız. Yukarıda x'ler birbirini sadeleştiriyor. Şuradan devam edeyim.
+
+45
+00:09:28,403 --> 00:09:36,124
+eksi x artı x var. Eksi ile çarpalım sinüs serisini. Ve işlemi yaptıktan sonra, şu x'lerden kurtulacağız.
+
+46
+00:09:46,100 --> 00:09:47,960
+Yapalım bakalım işlemlerimizi.
+
+47
+00:09:48,680 --> 00:09:49,580
+X küp
+
+48
+00:09:49,580 --> 00:09:51,700
+bölüm
+
+49
+00:09:51,700 --> 00:09:54,200
+3 faktöryel
+
+50
+00:09:54,200 --> 00:09:56,639
+artı
+
+51
+00:09:56,639 --> 00:09:58,200
+eksi olacak o.
+
+52
+00:09:58,899 --> 00:10:00,100
+İşaretler değişti.
+
+53
+00:10:02,019 --> 00:10:02,460
+Eksi
+
+54
+00:10:02,460 --> 00:10:04,600
+x üzeri 5 bölüm
+
+55
+00:10:04,600 --> 00:10:06,700
+5 faktöryel artı
+
+56
+00:10:06,700 --> 00:10:08,500
+bu şekilde devam ediyor.
+
+57
+00:10:08,500 --> 00:10:10,779
+Bölüm aşağıya
+
+58
+00:10:10,779 --> 00:10:14,740
+x parantezine alalım.
+
+59
+00:10:14,740 --> 00:10:16,180
+Yani
+
+60
+00:10:16,180 --> 00:10:18,480
+seriden x'i dışarı alalım.
+
+61
+00:10:18,940 --> 00:10:20,740
+x kare çarpı
+
+62
+00:10:20,740 --> 00:10:22,080
+içeride
+
+63
+00:10:22,080 --> 00:10:23,620
+1 eksi
+
+64
+00:10:23,620 --> 00:10:26,820
+x'in karesi bölümüş faktöryel
+
+65
+00:10:26,820 --> 00:10:28,340
+artı
+
+66
+00:10:28,340 --> 00:10:30,600
+x'in dördüncü kuvveti
+
+67
+00:10:30,600 --> 00:10:32,300
+bölüm 5 faktöryel şeklinde
+
+68
+00:10:32,300 --> 00:10:34,039
+eksi böyle bir
+
+69
+00:10:34,039 --> 00:10:36,259
+ifade var. Şimdi
+
+70
+00:10:36,259 --> 00:10:38,560
+baktığımızda yukarıda x küp
+
+71
+00:10:38,560 --> 00:10:40,060
+parantezini alabilirim.
+
+72
+00:10:40,740 --> 00:10:42,420
+Yani şöyle bir adım daha yazalım
+
+73
+00:10:42,420 --> 00:10:44,180
+onu. Eşittir.
+
+74
+00:10:44,740 --> 00:10:45,399
+limit
+
+75
+00:10:45,399 --> 00:10:47,720
+x sıfıra giderken
+
+76
+00:10:47,720 --> 00:10:49,680
+x küp parantezinde
+
+77
+00:10:49,680 --> 00:10:51,399
+1 bölüm
+
+78
+00:10:51,399 --> 00:10:53,240
+3 faktöryel
+
+79
+00:10:53,240 --> 00:10:54,379
+eksi
+
+80
+00:10:54,379 --> 00:10:56,860
+x kare bölüm
+
+81
+00:10:56,860 --> 00:10:58,820
+5 faktöryel
+
+82
+00:10:58,820 --> 00:10:59,480
+artı
+
+83
+00:10:59,480 --> 00:11:02,019
+ve aşağıda da
+
+84
+00:11:02,019 --> 00:11:04,440
+x kare parantezinde
+
+85
+00:11:04,440 --> 00:11:05,320
+bir ifade vardı.
+
+86
+00:11:05,320 --> 00:11:06,519
+x kare çarpı
+
+87
+00:11:06,519 --> 00:11:07,720
+1 eksi
+
+88
+00:11:07,720 --> 00:11:09,620
+x kare bölü
+
+89
+00:11:09,620 --> 00:11:10,259
+3 faktöryel
+
+90
+00:11:10,259 --> 00:11:12,379
+gerisi bizi çok ilgilendirmiyor
+
+91
+00:11:12,379 --> 00:11:13,460
+açıkçası.
+
+92
+00:11:14,360 --> 00:11:14,860
+Artık
+
+93
+00:11:14,860 --> 00:11:16,160
+limiti alabiliriz.
+
+94
+00:11:16,759 --> 00:11:17,600
+x küpü
+
+95
+00:11:17,600 --> 00:11:19,039
+sadeleştirdiğimizde
+
+96
+00:11:19,039 --> 00:11:20,399
+aşağıya x kareleri
+
+97
+00:11:20,399 --> 00:11:21,580
+sadeleştirdiğimizde
+
+98
+00:11:21,580 --> 00:11:22,680
+şurayı sileyim.
+
+99
+00:11:23,300 --> 00:11:23,720
+Yukarıda
+
+100
+00:11:23,720 --> 00:11:24,779
+sadece x kalacak.
+
+101
+00:11:24,779 --> 00:11:27,540
+bir adım
+
+102
+00:11:27,540 --> 00:11:28,620
+bir daha yazmamak için
+
+103
+00:11:28,620 --> 00:11:29,400
+böyle bir
+
+104
+00:11:29,400 --> 00:11:30,540
+işlem yapalım.
+
+105
+00:11:31,720 --> 00:11:32,400
+Aşağısı
+
+106
+00:11:32,400 --> 00:11:33,660
+x yerine
+
+107
+00:11:33,660 --> 00:11:34,639
+sıfır yazdığımızda
+
+108
+00:11:34,639 --> 00:11:35,160
+1 var.
+
+109
+00:11:35,279 --> 00:11:36,019
+Tanımsızlıktan
+
+110
+00:11:36,019 --> 00:11:36,700
+kurtuldum.
+
+111
+00:11:37,300 --> 00:11:38,180
+Sıfır çarpı
+
+112
+00:11:38,180 --> 00:11:39,160
+üst tarafta
+
+113
+00:11:39,160 --> 00:11:40,120
+şeyler var.
+
+114
+00:11:40,620 --> 00:11:41,200
+Sıfır çarpı
+
+115
+00:11:41,200 --> 00:11:42,379
+aslında 1 bölü 6 var.
+
+116
+00:11:42,540 --> 00:11:42,879
+Dolayısıyla
+
+117
+00:11:42,879 --> 00:11:43,420
+sonuç
+
+118
+00:11:43,420 --> 00:11:44,740
+sıfır olmuş oldu.
+
+119
+00:11:44,980 --> 00:11:45,120
+Yani
+
+120
+00:11:45,120 --> 00:11:45,940
+belirsizlikten
+
+121
+00:11:45,940 --> 00:11:46,879
+kurtulmuş oldu.
+
+122
+00:11:53,203 --> 00:11:55,743
+Takip edebildiniz mi arkadaşlar? Pardon sorularınız.
+
+123
+00:12:01,203 --> 00:12:04,203
+Tamam o zaman. Bir tane daha örneğimiz var. Onu da
+
+124
+00:12:04,203 --> 00:12:17,983
+şurada çözümde açık olarak yapmışız zaten. Ben bunu yine güncelledim. Bu arada birinci uygulamanızın cevap anahtarını web sayfasına koydum.
+
+125
+00:12:23,892 --> 00:12:36,432
+Burada hayli seri kullanmamız gerekecek. E üzeri 2x var. Helen 1 artı x küp var. Ve kosinus 3x var. Şimdi bu serileri elde etmemiz lazım öncelikle.
+
+126
+00:12:36,432 --> 00:12:53,332
+E üzeri x serisini yazalım. E üzeri x eşittir. 1 artı x artı x üzeri n bölü n faktöriyel şeklindeydi. x kare bölü 2 faktöriyel. Hatta şunları yazalım.
+
+127
+00:12:57,268 --> 00:13:00,468
+Artı x küp bölü 3 faktör yer.
+
+128
+00:13:02,468 --> 00:13:06,708
+Buradan hareketle en üzeri 2x'i elde etmek için ne yapmam lazım?
+
+129
+00:13:06,868 --> 00:13:10,548
+x yerine 2x yazmam gerekiyor.
+
+130
+00:13:10,848 --> 00:13:12,288
+Dönüşümü yapmam gerekiyor.
+
+131
+00:13:12,288 --> 00:13:35,528
+E üzeri 2x eşittir 1 artı 2x artı 2x'in parantez karelik bölü 2 artı 2x'in parantez küpü bölü 6.
+
+132
+00:13:35,947 --> 00:13:38,628
+Böyle açık yazalım işlem yapacağımız için bunlarla.
+
+133
+00:13:38,908 --> 00:13:40,288
+E üzeri 2x'i oluşturduk.
+
+134
+00:13:40,288 --> 00:13:44,908
+Şimdi ln 1 artı x küpü oluşturalım.
+
+135
+00:13:46,067 --> 00:13:48,288
+ln x serisini elde etmiştik.
+
+136
+00:13:51,268 --> 00:13:59,807
+Kuvvet serisini çok pardon geometrik seriyi kullanarak 1 artı ln x'i elde etmiştik.
+
+137
+00:13:59,868 --> 00:14:01,048
+x yerine x yazdık.
+
+138
+00:14:01,148 --> 00:14:04,008
+Sonra el tarafın integralini alarak elde etmiştik.
+
+139
+00:14:04,008 --> 00:14:11,927
+bu seride alternatif seriydi yine x eksi x'in karesi bölü 2.
+
+140
+00:14:12,567 --> 00:14:17,248
+Burada da x'leri n artı 1 bölü n artı 1 ifadesi çıkıyordu.
+
+141
+00:14:18,728 --> 00:14:23,548
+x'leri n artı 1 bölü n artı 1 artı ve alternatif şekilde ilerliyor.
+
+142
+00:14:23,548 --> 00:14:30,448
+x küp bölü 3 eksi x'leri 4 bölü 4 falan bu şekilde ilerliyor.
+
+143
+00:14:30,827 --> 00:14:31,908
+Yeterli bizim için.
+
+144
+00:14:33,028 --> 00:14:38,548
+Dolayısıyla burada da x yerine x küp dönüşümü yaparsak, x yerine x'in kübünü yazarsak,
+
+145
+00:14:38,548 --> 00:14:43,708
+ln 1 artı x'in kübü eşittir.
+
+146
+00:14:45,508 --> 00:14:59,468
+x küp eksi x'leri 6 bölü 2 artı x'leri 9 bölü 3 eksi bu şekilde devam ediyor.
+
+147
+00:14:59,827 --> 00:15:00,488
+Bu da yeterli.
+
+148
+00:15:00,567 --> 00:15:03,708
+Üç terimi yazmak herhalde yetiyor bu limitler hesaplardır.
+
+149
+00:15:03,908 --> 00:15:05,688
+Çok fazla oyla açmaya gerek yok.
+
+150
+00:15:05,688 --> 00:15:08,208
+Şimdi hangi seri kaldı?
+
+151
+00:15:08,827 --> 00:15:10,348
+Kosünüs 3x.
+
+152
+00:15:10,528 --> 00:15:11,748
+Kosünüs x'i biliyorum.
+
+153
+00:15:12,668 --> 00:15:14,768
+Kosünüs x eşitti.
+
+154
+00:15:15,508 --> 00:15:18,548
+Çift kuvvetlerde değer alıyordu.
+
+155
+00:15:18,668 --> 00:15:20,067
+Tek kuvvetlerde sıfırdı.
+
+156
+00:15:21,168 --> 00:15:22,028
+Eksi 1 üzeri n.
+
+157
+00:15:22,108 --> 00:15:24,827
+Eksi 2n bölü 2n faktoryal şeklinde gidiyordu.
+
+158
+00:15:25,508 --> 00:15:31,288
+1 eksi x kare bölü 2 faktoryal.
+
+159
+00:15:31,288 --> 00:15:37,807
+Artı x'leri 4 bölü 4 faktoryal.
+
+160
+00:15:37,908 --> 00:15:40,108
+Eksi bu şekilde devam ediyor.
+
+161
+00:15:40,108 --> 00:15:46,668
+Buradan da yapmamız gereken şey x yerine 3x yazmak.
+
+162
+00:15:46,888 --> 00:15:48,168
+Seriyi elde edebilmek için.
+
+163
+00:15:48,288 --> 00:15:49,248
+Kosünüs 3x.
+
+164
+00:15:50,188 --> 00:15:53,188
+Bunlar bulmaca gibi öyle zorlu olan şeyler değil arkadaşlar.
+
+165
+00:15:53,408 --> 00:15:54,608
+Yani şablonları biliyorsanız.
+
+166
+00:15:54,748 --> 00:15:58,768
+Tabii sıfırdan her bir seriyi elde etmeye çalışırsanız
+
+167
+00:15:58,768 --> 00:16:02,307
+işten uzayacak.
+
+168
+00:16:02,848 --> 00:16:04,848
+Bütün o türevleri almak, seriyi elde etmek.
+
+169
+00:16:05,048 --> 00:16:07,187
+Yani aslında burada Mekdor'un serileri.
+
+170
+00:16:07,508 --> 00:16:08,888
+Hep sıfır civarındaki seriler.
+
+171
+00:16:09,468 --> 00:16:13,827
+Fakat hazır olarak verdiğimiz Mekdor'un serilerinin şablonunu hatırlarsanız
+
+172
+00:16:13,827 --> 00:16:16,348
+çok rahat bir şekilde ilerleyeceksiniz.
+
+173
+00:16:16,448 --> 00:16:22,327
+Yoksa tek tek bu serilerin türevleri yardımıyla işte genel bir organizasyon elde edip
+
+174
+00:16:22,327 --> 00:16:24,567
+oradan ilk terimlerini yazmanız gerekecek.
+
+175
+00:16:25,108 --> 00:16:27,668
+Hatırlamazsanız yapacak başka bir şey yok.
+
+176
+00:16:27,988 --> 00:16:29,228
+Mecbur yolu izleyeceksiniz.
+
+177
+00:16:29,228 --> 00:16:45,028
+1 eksi 3x'in karesi bölü 2 faktöryel artı 3x'in 4. kuvveti bölü 4 faktöryel eksi.
+
+178
+00:16:45,848 --> 00:16:47,008
+Bu şekilde devam ediyor.
+
+179
+00:16:47,628 --> 00:16:49,228
+Şimdi bütün bunları yerine yazalım.
+
+180
+00:16:49,748 --> 00:16:50,548
+Açık formda.
+
+181
+00:16:52,228 --> 00:16:53,388
+O zaman limitimiz.
+
+182
+00:16:55,155 --> 00:16:59,815
+x sıfıra giderken, e üzeri 2x yerine serisini yazıyorum.
+
+183
+00:17:13,523 --> 00:17:28,523
+1 artı 2x artı 4x kare diyelim. 4x kare böyle 2 hatta oraya 2x kare yazabilirim.
+
+184
+00:17:32,523 --> 00:17:37,203
+2x kare artı bu şekilde yeterli bu kadar.
+
+185
+00:17:38,243 --> 00:17:40,263
+Çok pardon bir şeyi unuttum.
+
+186
+00:17:40,263 --> 00:17:45,903
+e üzeri 2x eksi 1 var. Şu 1'i de silmem gerekiyor.
+
+187
+00:17:46,803 --> 00:17:48,403
+O yüzden şuradan silelim.
+
+188
+00:17:49,003 --> 00:17:50,243
+1'i de silmem gerekiyor.
+
+189
+00:17:51,183 --> 00:17:52,823
+Daha düzenli yazalım.
+
+190
+00:17:57,556 --> 00:18:19,796
+Şurada artı birimiz var, eksi bir olduğu için birden kurtuluyorum. Seriden biri çıkardık. Dolayısıyla bir yok artık. 2x artı iki tane x kare. 8 bölü 6'dan 4 bölü 3 x küp artı 4 bölü 3 x küp artı bu şekilde devam ediyor.
+
+191
+00:18:19,796 --> 00:18:48,296
+Sonra yazmam gereken şey, elem 1 artı x küp serisi. Hemen ikinci sıradaki x'in kübü, eksi x üzeri 6 bölü 2 artı x üzeri 9 bölü 3. Eksiyle gidecek ama önemli değil. Zaten yazmayacağım onları. Şöyle eksi dedik bıraktık burada. Yukarıda bir çarpma işlemi yapacağız.
+
+192
+00:18:48,296 --> 00:19:00,296
+Tabii bunu sonsuza kadar. Tabii bunu sonsuza kadar. Hayır. İşimizi haklık. Hayır. İşimizi halledecek kadar. Belirsizlikten kurtulacak kadar. Sinif serisini kendisiyle çarpmışız. Pardon. Kosinif serisini kendisiyle çarpmışız.
+
+193
+00:19:00,296 --> 00:19:17,395
+Bir eksi. Şurada bakarsak 9x kare bölü 2. Bir tane daha yazalım. Artı 81.
+
+194
+00:19:18,296 --> 00:19:50,296
+İçerisi.
+
+195
+00:19:50,296 --> 00:19:52,296
+Bir tane daha yazalım.
+
+196
+00:19:55,892 --> 00:20:01,792
+Sadeleştirme yapmaya çalışacağız ve belirsiz durumdan kurtarmaya çalışacağız seriyi.
+
+197
+00:20:06,099 --> 00:20:08,439
+Bu arada bir şeyi unuttum ben yine.
+
+198
+00:20:09,079 --> 00:20:14,359
+Paydaya baktığımızda şurada bir eksi kosünüs serisi var arkadaşlar.
+
+199
+00:20:14,659 --> 00:20:18,240
+Demek ki şu birileri yine silmem lazım ve işaretleri değiştirmem lazım.
+
+200
+00:20:27,316 --> 00:20:28,296
+Aşağıda çünkü,
+
+201
+00:20:29,336 --> 00:20:33,056
+Şöyle işaret eksi olması lazım.
+
+202
+00:20:34,596 --> 00:20:36,256
+Bakalım, kosimiz,
+
+203
+00:20:36,816 --> 00:20:38,076
+Evet, şurası eksi olacak.
+
+204
+00:20:41,196 --> 00:20:42,796
+Şurası artı.
+
+205
+00:20:44,476 --> 00:20:47,056
+Evet, şurası eksi, şurası artı.
+
+206
+00:20:48,155 --> 00:20:48,415
+Tamam.
+
+207
+00:20:50,615 --> 00:20:54,556
+Birileri unutursak işler biraz zor hale gelebiliyor.
+
+208
+00:20:55,556 --> 00:20:56,895
+Şimdi bakalım,
+
+209
+00:20:57,316 --> 00:20:58,516
+Pay ve payda da,
+
+210
+00:20:59,355 --> 00:21:01,115
+Ortak parantez olarak ne var?
+
+211
+00:21:01,395 --> 00:21:02,796
+X, X'in kuvveti olarak.
+
+212
+00:21:03,855 --> 00:21:04,956
+2X var burada.
+
+213
+00:21:05,875 --> 00:21:07,296
+Şurada, X küp var.
+
+214
+00:21:07,395 --> 00:21:09,436
+Yani en küçük derece, X'leri 4 gelecek.
+
+215
+00:21:09,635 --> 00:21:10,276
+Başka bir şey yok.
+
+216
+00:21:10,355 --> 00:21:12,036
+Çünkü iki tarafı da sabit yok.
+
+217
+00:21:12,655 --> 00:21:14,236
+En küçük derece, X'leri 4.
+
+218
+00:21:15,135 --> 00:21:17,236
+X'leri 4 parantezini alabiliriz.
+
+219
+00:21:19,155 --> 00:21:20,836
+Hatta biraz çarpalım, yukarıyı.
+
+220
+00:21:21,796 --> 00:21:22,615
+Çarpmış olalım.
+
+221
+00:21:23,216 --> 00:21:24,155
+O da eşittir.
+
+222
+00:21:24,855 --> 00:21:26,016
+Burayı biraz kısaltayım ben.
+
+223
+00:21:26,016 --> 00:21:27,496
+[öğrenci].
+
+224
+00:21:27,496 --> 00:21:33,675
+Sırma City.
+
+225
+00:21:41,107 --> 00:22:10,528
+yapalım. Limit, x sıfıra giderken, üstte çarpma işlemi yaptık. İki tane, iki tane x üzeri dört. Sonra, bundan sonraki derece ne olabilir? x üzeri dört başka bir şekilde elde edebilir miyim? Çok mümkün görünmüyor. 2x kare ile x küpü çarptığımızda derece beş olacak. Şunu çarptığımızda derece altı olacak. Yani, iki x üzeri dörden küçük derece dört.
+
+226
+00:22:11,107 --> 00:22:15,107
+Sonraki derece ne olacak?
+
+227
+00:22:15,107 --> 00:22:22,107
+2x kare ile x küpü çarptığımızda, oradan da artı iki tane x üzeri beş gelecek.
+
+228
+00:22:22,107 --> 00:22:27,107
+İki tane x üzeri beş.
+
+229
+00:22:27,107 --> 00:22:38,107
+Artı mı geliyor? Evet, artı geliyor. Sonra bir şeyler daha. Artı ya da eksi çok önemli değil.
+
+230
+00:22:42,132 --> 00:22:50,032
+Aşağıya baktığımızda, aşağıya da çarptığımızda, onda birkaç tane işlemini yapalım.
+
+231
+00:22:50,751 --> 00:23:00,132
+9 tane x kare, 9 bölü 2 x kare, 9 bölü x kare, 81 bölü 4, x'in dördüncü kuvveti.
+
+232
+00:23:01,632 --> 00:23:09,412
+Daha sonra elde edeceğim derece, 9 bölü x kare çarp, şu ifade tersten, bunun iki tane olacak.
+
+233
+00:23:09,412 --> 00:23:20,812
+9 bölü 2 x kare çarp, 81, eksi 81 bölü 4, x seri 4, 2 ile çarpılmış hali olacak.
+
+234
+00:23:24,564 --> 00:23:26,324
+729 bölü 4 oluyor.
+
+235
+00:23:26,504 --> 00:23:27,144
+24 oluyor.
+
+236
+00:23:27,864 --> 00:23:28,644
+Değil mi?
+
+237
+00:23:29,903 --> 00:23:31,444
+2 ile çarptığında da
+
+238
+00:23:31,444 --> 00:23:33,423
+9'un altında 2 gidiyor. Direkt 9'da
+
+239
+00:23:33,423 --> 00:23:35,423
+80 ile çarptığında. Hatta şey
+
+240
+00:23:35,423 --> 00:23:36,403
+yapalım. Biz
+
+241
+00:23:36,403 --> 00:23:39,124
+bu ifadeyi
+
+242
+00:23:39,124 --> 00:23:41,124
+yerinde şöyle bırakalım. Yani
+
+243
+00:23:41,124 --> 00:23:43,644
+kareymiş gibi bırakalım. Sadece parantezi
+
+244
+00:23:43,644 --> 00:23:45,244
+alalım. Her iki tarafı
+
+245
+00:23:45,244 --> 00:23:47,244
+x kare parantezine alalım.
+
+246
+00:23:47,344 --> 00:23:49,204
+Her iki bileşeni. Bunlar kalsın burada.
+
+247
+00:23:49,364 --> 00:23:49,944
+Şöyle yapalım.
+
+248
+00:23:51,324 --> 00:23:53,444
+İşlem yapmakla uğraşmayalım.
+
+249
+00:23:53,444 --> 00:23:54,784
+uzatmayalım.
+
+250
+00:23:55,304 --> 00:23:57,264
+Şu alt tarafı x kare
+
+251
+00:23:57,264 --> 00:23:59,264
+parantezin her bir parçadan x kareyi
+
+252
+00:23:59,264 --> 00:24:00,844
+dışarı çıkaralım. Totalde.
+
+253
+00:24:01,344 --> 00:24:03,484
+x üzeri 4 çarpı
+
+254
+00:24:03,484 --> 00:24:04,484
+ne kalacak?
+
+255
+00:24:05,284 --> 00:24:06,524
+9 bölü 2
+
+256
+00:24:06,524 --> 00:24:09,163
+eksi
+
+257
+00:24:09,163 --> 00:24:11,344
+birinci parçadan x kare aldım.
+
+258
+00:24:11,403 --> 00:24:13,264
+İkinci parçadan yine x kare
+
+259
+00:24:13,264 --> 00:24:15,004
+aldım. 81
+
+260
+00:24:15,004 --> 00:24:16,584
+bölü 24
+
+261
+00:24:16,584 --> 00:24:19,364
+x kare artı
+
+262
+00:24:19,364 --> 00:24:20,624
+devam ediyor.
+
+263
+00:24:21,784 --> 00:24:22,524
+Aynı şekilde
+
+264
+00:24:22,524 --> 00:24:24,524
+aynı ifadeyi tekrar ediyorum.
+
+265
+00:24:24,644 --> 00:24:25,423
+9 bölü 2
+
+266
+00:24:25,423 --> 00:24:26,044
+eksi
+
+267
+00:24:26,044 --> 00:24:27,004
+81
+
+268
+00:24:27,004 --> 00:24:28,344
+bölü 24
+
+269
+00:24:28,344 --> 00:24:29,704
+x kare
+
+270
+00:24:29,704 --> 00:24:30,764
+artı
+
+271
+00:24:30,764 --> 00:24:32,004
+bu şekilde devam ediyor.
+
+272
+00:24:32,224 --> 00:24:33,344
+Bu işimi görür artık.
+
+273
+00:24:33,903 --> 00:24:35,163
+Yukarıda x üzeri 4 var.
+
+274
+00:24:35,584 --> 00:24:36,544
+x üzeri 4'leri
+
+275
+00:24:36,544 --> 00:24:37,744
+sadeleştirebilirim.
+
+276
+00:24:39,403 --> 00:24:40,184
+Limit x
+
+277
+00:24:40,184 --> 00:24:41,423
+sıfıra giderken
+
+278
+00:24:41,423 --> 00:24:42,923
+x üzeri 4
+
+279
+00:24:42,923 --> 00:24:45,923
+parantezine alalım yukarıya.
+
+280
+00:24:45,923 --> 00:24:47,124
+x üzeri 4
+
+281
+00:24:47,124 --> 00:24:49,443
+2
+
+282
+00:24:49,443 --> 00:24:51,144
+artı
+
+283
+00:24:51,144 --> 00:24:52,364
+2x
+
+284
+00:24:52,364 --> 00:24:55,084
+artı ya da eksi bir şeyler.
+
+285
+00:24:55,244 --> 00:24:56,923
+Oraya artı yazdım ben.
+
+286
+00:24:57,244 --> 00:24:58,064
+Aşağıda da
+
+287
+00:24:58,064 --> 00:24:59,744
+x üzeri 4
+
+288
+00:24:59,744 --> 00:25:01,304
+çarpı
+
+289
+00:25:01,304 --> 00:25:02,504
+9 bölü 2
+
+290
+00:25:02,504 --> 00:25:04,244
+eksi
+
+291
+00:25:04,244 --> 00:25:06,624
+81 bölü 24
+
+292
+00:25:06,624 --> 00:25:07,384
+x kare
+
+293
+00:25:07,384 --> 00:25:09,684
+parantezine aldığımız için
+
+294
+00:25:09,684 --> 00:25:11,024
+burada x kareler kalmıştı.
+
+295
+00:25:11,024 --> 00:25:11,884
+artı bir şeyler
+
+296
+00:25:11,884 --> 00:25:13,144
+çarpı yine
+
+297
+00:25:13,144 --> 00:25:14,663
+9 bölü 2
+
+298
+00:25:14,663 --> 00:25:17,344
+eksi 81 bölü 24
+
+299
+00:25:17,344 --> 00:25:18,984
+x kare
+
+300
+00:25:18,984 --> 00:25:21,704
+şurası artıyla devam edecek.
+
+301
+00:25:21,984 --> 00:25:22,864
+Böyle devam ediyor.
+
+302
+00:25:23,444 --> 00:25:25,403
+Şimdi artık işlem yapabiliriz.
+
+303
+00:25:25,464 --> 00:25:26,244
+x üzeri 4'leri
+
+304
+00:25:26,244 --> 00:25:27,444
+sadeleştirdiğinde
+
+305
+00:25:27,444 --> 00:25:29,244
+x üzeri 4'lerden
+
+306
+00:25:29,244 --> 00:25:30,024
+kurtulduğunda
+
+307
+00:25:30,024 --> 00:25:32,244
+ve x gördüğüm yere
+
+308
+00:25:32,244 --> 00:25:33,364
+sıfır yazdığında
+
+309
+00:25:33,364 --> 00:25:34,704
+tabii aşağıda
+
+310
+00:25:34,704 --> 00:25:36,124
+sabitler beni ilgilendiriyor.
+
+311
+00:25:36,204 --> 00:25:37,644
+x'li ifade ihtiva edenler
+
+312
+00:25:37,644 --> 00:25:38,524
+beni ilgilendirmiyor.
+
+313
+00:25:38,524 --> 00:25:39,744
+9 bölü 2 çarpı
+
+314
+00:25:39,744 --> 00:25:40,484
+9 bölü 2
+
+315
+00:25:40,484 --> 00:25:41,724
+81 bölü 4
+
+316
+00:25:41,724 --> 00:25:43,684
+yani sonuç itibariyle
+
+317
+00:25:43,684 --> 00:25:44,564
+kalan şey
+
+318
+00:25:44,564 --> 00:25:45,764
+ne olacaktır?
+
+319
+00:25:48,364 --> 00:25:49,864
+2 bölü
+
+320
+00:25:49,864 --> 00:25:52,524
+81 bölü
+
+321
+00:25:52,524 --> 00:25:54,244
+4
+
+322
+00:25:54,244 --> 00:25:55,204
+buradan da
+
+323
+00:25:55,204 --> 00:25:56,644
+8 bölü
+
+324
+00:25:56,644 --> 00:25:58,644
+81 elde ediyoruz.
+
+325
+00:25:59,004 --> 00:26:00,484
+Her işlem hatası yapmadıysam.
+
+326
+00:26:05,491 --> 00:26:28,192
+Bütün Maclaurin serileri neredeyse verdiğimiz örnek serileri içinde kullanabildiğimiz, tabii sinüs yok içinde, bir de at tanjant yok, tanjant yok. Gerçi tanjantı vermemiştik zaten. Tanjantın seri açılımını bulmak, bölme işlemiyle yapmıştık onu. Formül kullanarak çok kolay görünmüyor. Tek tek o türevleri hesaplamak lazım.
+
+327
+00:26:28,192 --> 00:26:36,231
+Sanırım bu bizim son örneğimizdi. Bakalım bir tane daha örnek var mı? Şuradan şeyini kontrol edelim. Cevabı.
+
+328
+00:26:44,564 --> 00:26:55,744
+serileri yazdık. Evet, bu son örneğimizmiş arkadaşlar. Bu konuyla ilgili. Şimdi ben eğer bununla ilgili sormak istediğiniz soru yoksa, parametrik denklemler konusuna başlayalım.
+
+329
+00:26:58,044 --> 00:27:03,423
+Ara vermek için henüz erken. 5-10 dakika ders yaparız. Öyle veririz arkadaşlar. Olur mu?
+
+330
+00:27:14,740 --> 00:27:15,940
+Bu çok kısa bir konu.
+
+331
+00:27:16,059 --> 00:27:19,839
+Öyle çok fazla karşımıza çıkan bir konu da değildi.
+
+332
+00:27:20,460 --> 00:27:24,380
+Fakat sınavlar test olunca buna ilgili sorular geliyor.
+
+333
+00:27:25,079 --> 00:27:26,500
+Sorular ne türlü olabiliyor?
+
+334
+00:27:27,059 --> 00:27:39,000
+Türev hesaplamayla ilgili, yay uzunluğu hesaplamayla ilgili sorular gelebiliyor parametrik denklemler konusunda.
+
+335
+00:27:39,000 --> 00:27:43,980
+O yüzden artık şu anda matiki dersinde bütün konular önemli.
+
+336
+00:27:43,980 --> 00:27:46,180
+Daha az önemli diyemeyeceğiz.
+
+337
+00:27:46,259 --> 00:27:47,700
+Çünkü her yerden soru soruluyor.
+
+338
+00:27:47,779 --> 00:27:51,019
+Soru sayısı fazla olduğu için her yerden soru soruluyor.
+
+339
+00:27:51,579 --> 00:27:54,380
+Burada öncelikle parametrik denklemlerin tanımını vereceğiz.
+
+340
+00:27:55,579 --> 00:27:58,180
+Grafikleri, kaç tane grafik örneği var.
+
+341
+00:28:00,319 --> 00:28:02,559
+Daha sonra parametrik bir eğri de türevler.
+
+342
+00:28:02,700 --> 00:28:05,779
+Özellikle türevde bir trik durumu var burada.
+
+343
+00:28:05,940 --> 00:28:07,799
+Onu göz ardı etmememiz gerekiyor.
+
+344
+00:28:07,940 --> 00:28:09,720
+Çoğu zaman öğrenciler hataya düşüyor.
+
+345
+00:28:09,720 --> 00:28:15,539
+Ve parametrik bir eğrinin belli bir kesitinin yay uzunluğu.
+
+346
+00:28:16,120 --> 00:28:18,839
+Onu da formülü verdikten sonra örneğimiz var bir tane.
+
+347
+00:28:19,720 --> 00:28:21,019
+Konuyla bitirmiş olacağız.
+
+348
+00:28:21,120 --> 00:28:22,620
+Çok uzun bir konu değil zaten.
+
+349
+00:28:22,860 --> 00:28:23,519
+Kısa bir konu.
+
+350
+00:28:24,420 --> 00:28:25,880
+Hocam bir şey sorabilir miyim?
+
+351
+00:28:26,240 --> 00:28:27,519
+Buyurun.
+
+352
+00:28:27,519 --> 00:28:30,400
+Youtube'da bir video görmüştüm de.
+
+353
+00:28:30,860 --> 00:28:31,880
+Bu alternatif seriydi.
+
+354
+00:28:31,960 --> 00:28:34,299
+Eksi bir üzeri en eksi bir diyordu.
+
+355
+00:28:35,099 --> 00:28:36,880
+An var işte yanında da bir şeyler var.
+
+356
+00:28:37,599 --> 00:28:41,119
+Bunun yakınsak mı şartlı yakınsak mı olduğuna bakarken.
+
+357
+00:28:43,019 --> 00:28:45,380
+Eksi bir üzeri en eksi biri normal almış.
+
+358
+00:28:45,519 --> 00:28:46,440
+Diğeri pozitifti.
+
+359
+00:28:48,039 --> 00:28:49,900
+Mutlak yakınsak değildi.
+
+360
+00:28:49,980 --> 00:28:52,519
+Bu şartlı yakınsaktır demişti.
+
+361
+00:28:52,519 --> 00:28:57,920
+Ama şartlı yakınsak olabilmesi için pozitif olması gerekiyordu değil mi?
+
+362
+00:28:58,000 --> 00:28:59,819
+A enin her değeri için.
+
+363
+00:29:00,740 --> 00:29:03,160
+Evet pozitif değerli olması lazım.
+
+364
+00:29:03,960 --> 00:29:05,700
+Ve azalan olması lazım.
+
+365
+00:29:06,000 --> 00:29:07,740
+O pozitiflik zaten şeyden geliyor.
+
+366
+00:29:07,980 --> 00:29:09,539
+İşareti attığımızda geliyor.
+
+367
+00:29:09,660 --> 00:29:10,920
+Ben sadece ne demiştim?
+
+368
+00:29:11,599 --> 00:29:13,400
+Şartlı yakınsaklıkta limit.
+
+369
+00:29:14,079 --> 00:29:17,660
+En sonsuza giderken an sıfır olacak.
+
+370
+00:29:17,660 --> 00:29:19,799
+Bir de türe i diyelim.
+
+371
+00:29:19,960 --> 00:29:25,160
+İki i olarak an artı bir küçük an olacak.
+
+372
+00:29:25,400 --> 00:29:26,680
+Ya da küçük eşit an olacak.
+
+373
+00:29:26,819 --> 00:29:28,059
+Eşitlik de gelebilir burada.
+
+374
+00:29:28,759 --> 00:29:30,960
+Tabi serimizin genel formu neydi?
+
+375
+00:29:33,460 --> 00:29:34,319
+Ne eşittir?
+
+376
+00:29:34,819 --> 00:29:35,500
+Nereden başladı?
+
+377
+00:29:35,579 --> 00:29:36,240
+Çok önemli değil.
+
+378
+00:29:36,319 --> 00:29:37,200
+Birden başlatalım.
+
+379
+00:29:37,259 --> 00:29:38,519
+Biz genelde öyle yaptık.
+
+380
+00:29:39,480 --> 00:29:40,880
+Şöyle an diyelim.
+
+381
+00:29:40,980 --> 00:29:43,319
+Ya da bu indistleri hiç yazmamıza da gerek yok.
+
+382
+00:29:43,319 --> 00:29:45,319
+Hatta eksi bir üzeri.
+
+383
+00:29:47,660 --> 00:29:48,559
+Şöyle yapalım.
+
+384
+00:29:48,640 --> 00:29:49,660
+Sıfırdan başlasın.
+
+385
+00:29:49,779 --> 00:29:51,000
+Eksi bir üzeri en.
+
+386
+00:29:51,539 --> 00:29:53,740
+A en şeklinde yazmış olduk.
+
+387
+00:29:53,840 --> 00:29:55,640
+Zaten işareti ayrı tutuyoruz burada.
+
+388
+00:29:55,720 --> 00:29:58,120
+Eksi bir üzerini yok saydığınızda
+
+389
+00:29:58,120 --> 00:30:00,860
+biz işlem yaparken sadece şu a eni ele alıyorduk.
+
+390
+00:30:01,220 --> 00:30:01,860
+Sizin seviyesi.
+
+391
+00:30:02,400 --> 00:30:05,120
+A en negatifse demek istedim yani.
+
+392
+00:30:05,960 --> 00:30:08,599
+O zaman şey almak lazım.
+
+393
+00:30:08,720 --> 00:30:11,059
+Tabi negatifse de yine bu koşula bakılabilir.
+
+394
+00:30:11,059 --> 00:30:11,980
+A en artı bir.
+
+395
+00:30:13,120 --> 00:30:14,759
+Böyle a en karşılaştırılabilir.
+
+396
+00:30:14,920 --> 00:30:16,460
+Onu karşılaştırabilirsiniz yine.
+
+397
+00:30:16,460 --> 00:30:19,759
+Yani negatif olup olması çok da önemli.
+
+398
+00:30:19,779 --> 00:30:20,319
+Değil.
+
+399
+00:30:20,400 --> 00:30:20,599
+Aynen.
+
+400
+00:30:20,759 --> 00:30:22,299
+Şu iki koşula bakmamız lazım.
+
+401
+00:30:22,599 --> 00:30:25,119
+Hani limit a en sıfır olacak.
+
+402
+00:30:25,740 --> 00:30:29,940
+Ve ardışık terimler indist büyüdükçe terim küçülecek.
+
+403
+00:30:30,119 --> 00:30:32,539
+Böyle bir şey varsa yine olur.
+
+404
+00:30:33,039 --> 00:30:33,380
+Tamam mı?
+
+405
+00:30:33,720 --> 00:30:38,059
+A en yani diğer türlü negatif olunca koşulu sağlamaz diye düşündüm de.
+
+406
+00:30:38,299 --> 00:30:38,860
+Yok yok.
+
+407
+00:30:38,860 --> 00:30:43,960
+Yani ben şey sanki bu hep pozitifmiş gibi öyle söylemiş olabilirim ama
+
+408
+00:30:43,960 --> 00:30:46,079
+yani kural şey olmak zorunda değil.
+
+409
+00:30:47,079 --> 00:30:49,420
+Her zaman pozitif olmak zorunda değil orası.
+
+410
+00:30:51,480 --> 00:30:52,039
+Koşullar.
+
+411
+00:30:52,079 --> 00:30:53,559
+İki tane koşul sağlanınca.
+
+412
+00:30:53,960 --> 00:30:56,200
+Ama şey bazıları şunu da veriyor.
+
+413
+00:30:56,400 --> 00:31:00,360
+Üçüncü olarak pozitif terimli diyorlar.
+
+414
+00:31:00,460 --> 00:31:02,299
+Yani a en büyük sıfır diyor.
+
+415
+00:31:02,799 --> 00:31:04,200
+Onu da ekliyorlar açıkçası.
+
+416
+00:31:04,200 --> 00:31:07,759
+Bazı kitaplar ben onu vermedim ama ona bir daha bakalım.
+
+417
+00:31:08,799 --> 00:31:09,119
+Fakat
+
+418
+00:31:09,619 --> 00:31:19,059
+Eksi biri ayrı düşündükten sonra A'ın üzerinde yine şu iki koşul sağlanıyorsa yine yani şartı yakınsaktır o. Sonuçta şartlar sağlanmış oluyor.
+
+419
+00:31:21,519 --> 00:31:24,559
+Anladım hocam o negatif işi biraz kafam karıştırmıştı da.
+
+420
+00:31:24,559 --> 00:31:25,000
+Evet.
+
+421
+00:31:28,099 --> 00:31:35,079
+Parametrik denklem dediğimiz şey nedir arkadaşlar? Öncelikle şuraları sivereyim.
+
+422
+00:31:35,919 --> 00:31:36,859
+Kulana çıksınızı.
+
+423
+00:31:52,596 --> 00:32:10,836
+Bir real değerli, tek değerli, tek değişkenli fonksiyonu, fx fonksiyonu nereden tanımlıyoruz? R'den re'ye tanımlanıyor. Real değerli, real değişkenli. Ve fonksiyon şöyle gösteriliyor. y eşittir, fx şeklinde.
+
+424
+00:32:10,836 --> 00:32:35,776
+Burada grafiğini çizmeye çalıştığımızda xfx ikillerinden oluşuyor grafik. Bu xfx nokta çiftlerini birleştirdiğimizde grafiği oluşuyor. Dikkat ederseniz bağımsız bir değişken var. Ve şu ifadede y ile bağımlı bir değişken var değil mi? Şuraya bağımsız değişken.
+
+425
+00:32:41,652 --> 00:32:43,192
+Y de bağlı değişken.
+
+426
+00:32:48,051 --> 00:32:49,871
+y x'e bağlı değil mi?
+
+427
+00:32:50,531 --> 00:32:51,911
+Bir örnek yazacak olursak
+
+428
+00:32:51,911 --> 00:32:54,111
+işte fx eşittir
+
+429
+00:32:54,111 --> 00:32:55,131
+y o da eşittir.
+
+430
+00:32:56,031 --> 00:32:57,551
+x küp eksi bir mesela.
+
+431
+00:32:58,411 --> 00:33:00,031
+Bir örnek. Böyle iki de
+
+432
+00:33:00,031 --> 00:33:00,471
+değilim.
+
+433
+00:33:02,031 --> 00:33:03,311
+Böyle bir örnek mesela.
+
+434
+00:33:03,791 --> 00:33:06,051
+y'nin değerlerini x belirliyor.
+
+435
+00:33:06,771 --> 00:33:07,831
+Parametrik denklemler
+
+436
+00:33:07,831 --> 00:33:08,891
+konusu nereden geldi?
+
+437
+00:33:09,551 --> 00:33:11,651
+O yüzden bu örneğiyle diyorum. Fakat
+
+438
+00:33:11,651 --> 00:33:12,351
+bazen
+
+439
+00:33:12,351 --> 00:33:17,651
+öyle durumlar olabilir ki
+
+440
+00:33:17,651 --> 00:33:20,291
+mesela konum dediğimiz şey.
+
+441
+00:33:20,611 --> 00:33:22,192
+Bir hareketlinin konumu
+
+442
+00:33:22,192 --> 00:33:23,571
+ya da hızını veren
+
+443
+00:33:23,571 --> 00:33:24,771
+denklem.
+
+444
+00:33:26,432 --> 00:33:28,151
+Her bir değişken
+
+445
+00:33:28,151 --> 00:33:30,011
+her bir değişken. İki
+
+446
+00:33:30,011 --> 00:33:32,151
+değişkenli için bunu r kare değilmiş
+
+447
+00:33:32,151 --> 00:33:33,391
+gibi düşüneceğim ama bu
+
+448
+00:33:33,391 --> 00:33:35,692
+r n'e genelleştirilebilir.
+
+449
+00:33:36,591 --> 00:33:37,831
+Değişkenlerin her biri
+
+450
+00:33:37,831 --> 00:33:40,451
+bir parametreye
+
+451
+00:33:40,451 --> 00:33:42,111
+bağlı fonksiyon olabilir. İşte şuraya
+
+452
+00:33:42,111 --> 00:33:44,331
+ft diyelim. Şurası da gt.
+
+453
+00:33:44,831 --> 00:33:46,151
+Genelde t olarak kullanılır.
+
+454
+00:33:46,151 --> 00:33:48,251
+t, time'ın t'si yani zamandan
+
+455
+00:33:48,251 --> 00:33:48,692
+gidiyor.
+
+456
+00:33:49,551 --> 00:33:52,192
+Yani benim koordinatlarım ya da
+
+457
+00:33:52,192 --> 00:33:53,931
+birleşenlerim
+
+458
+00:33:53,931 --> 00:33:55,011
+koordinat
+
+459
+00:33:55,011 --> 00:33:57,631
+düzleminde ya da uzayında artık
+
+460
+00:33:57,631 --> 00:33:59,511
+hangi boyutta ise burada bir düzlem
+
+461
+00:33:59,511 --> 00:33:59,931
+aldık.
+
+462
+00:34:00,931 --> 00:34:01,751
+Bir t
+
+463
+00:34:01,751 --> 00:34:03,551
+değişkenle bağlı olabilir.
+
+464
+00:34:04,011 --> 00:34:06,151
+Yani bunlar arasındaki ilişki t
+
+465
+00:34:06,151 --> 00:34:06,931
+aslında. Tabii
+
+466
+00:34:06,931 --> 00:34:09,331
+buradan kartezyen koordinatlara
+
+467
+00:34:09,331 --> 00:34:10,572
+geçiş sağlanır.
+
+468
+00:34:10,891 --> 00:34:12,771
+Kartezyen koordinatlardan buraya da
+
+469
+00:34:12,771 --> 00:34:13,672
+geçiş sağlanır.
+
+470
+00:34:14,931 --> 00:34:16,811
+Fakat biz ikisini de
+
+471
+00:34:16,811 --> 00:34:18,811
+bir değişkene bağlı ifade etmek
+
+472
+00:34:18,811 --> 00:34:20,152
+isteyebiliriz. Yani yine
+
+473
+00:34:20,152 --> 00:34:22,811
+şurası x ve şurası y gibi
+
+474
+00:34:22,811 --> 00:34:25,152
+düşünülebilir. Arasında bir ilişki
+
+475
+00:34:25,152 --> 00:34:26,771
+kurulabilir. Fakat
+
+476
+00:34:26,771 --> 00:34:28,971
+fizikçiler özellikle böyle
+
+477
+00:34:28,971 --> 00:34:30,152
+görmekte yani
+
+478
+00:34:30,152 --> 00:34:32,652
+onlar için daha
+
+479
+00:34:32,652 --> 00:34:34,612
+elverişli oluyor. Zamanın
+
+480
+00:34:34,612 --> 00:34:36,632
+fonksiyonu gibi her bir koordinatı
+
+481
+00:34:36,632 --> 00:34:38,451
+zamanın bir fonksiyonu olarak
+
+482
+00:34:38,451 --> 00:34:41,031
+görmek. Parametrik tenklem konusu bu.
+
+483
+00:34:41,031 --> 00:34:42,672
+aslında bir değişken dönüşümü.
+
+484
+00:34:44,791 --> 00:34:46,592
+Ve parametrik denklemlerden biz
+
+485
+00:34:46,592 --> 00:34:48,072
+kartezyen koordinatlara geçiş
+
+486
+00:34:48,072 --> 00:34:48,831
+sağlayabiliriz.
+
+487
+00:34:49,251 --> 00:34:51,031
+Kartezyen koordinatlardan da
+
+488
+00:34:51,031 --> 00:34:53,511
+parametrik denklemlere her zaman
+
+489
+00:34:53,511 --> 00:34:55,172
+geçiş sağlayabiliriz arkadaşlar.
+
+490
+00:35:01,844 --> 00:35:05,963
+Peki nedir? Daha detaylı tanımını verecek olursak.
+
+491
+00:35:07,124 --> 00:35:21,284
+T ayırı r sayı olmak üzere ki bu zaman genelde işte konum denklemini düşündüğümüzde ya da konum fonksiyonunu düşündüğümüzde
+
+492
+00:35:21,284 --> 00:35:23,563
+zamana bağlı bir fonksiyon.
+
+493
+00:35:23,563 --> 00:35:27,983
+X ve Y koordinatları zamana bağlı değişiyor.
+
+494
+00:35:28,144 --> 00:35:31,023
+Konum değiştirdikçe yer değiştiriyor.
+
+495
+00:35:31,023 --> 00:35:34,503
+Dolayısıyla yer grafiği de denilebilir ona.
+
+496
+00:35:34,583 --> 00:35:36,144
+Yer denklemi de denilebilir.
+
+497
+00:35:36,284 --> 00:35:37,704
+Parametreye bağlı ifade ediliyor.
+
+498
+00:35:38,204 --> 00:35:39,384
+X'i Ft dedik.
+
+499
+00:35:40,003 --> 00:35:41,304
+Y'ye Gt dedik.
+
+500
+00:35:41,604 --> 00:35:42,124
+Bu şekilde.
+
+501
+00:35:42,604 --> 00:35:47,023
+Demek ki ben burada X ve Y'yi T cinsinden ifade edebiliyorum.
+
+502
+00:35:47,184 --> 00:35:50,403
+O zaman X ile Y arasında ilişki her zaman kurulabilir.
+
+503
+00:35:50,403 --> 00:35:59,403
+Yani T'yi ortadan çıkarıp doğrudan X'i Y'ye bağlı olarak ya da Y'yi X'e bağlı olarak ifade edebiliriz.
+
+504
+00:35:59,403 --> 00:36:01,884
+O geçiş var her zaman.
+
+505
+00:36:01,884 --> 00:36:10,083
+Büzdendeki bir nokta çiftini artık T'ye bağlı fonksiyonlar olarak ifade ediyoruz.
+
+506
+00:36:10,664 --> 00:36:15,503
+Ve bu noktaların hepsini biz birleştirdiğimizde bir eğri oluşur.
+
+507
+00:36:15,604 --> 00:36:18,864
+Tabii bu eğride yön kavramı da söz konusu.
+
+508
+00:36:19,003 --> 00:36:22,104
+Hangi yöne gittiğiniz T'nin değerlerine bağlı.
+
+509
+00:36:22,104 --> 00:36:25,083
+Tabii burada T bazen bir aralıkta verilebilir.
+
+510
+00:36:25,264 --> 00:36:28,443
+A küçük eşittir, T küçük eşittir, B şeklinde verilebilir.
+
+511
+00:36:28,563 --> 00:36:32,023
+Ya da büsbütün böyle serbest bırakılabilir, free olabilir.
+
+512
+00:36:33,523 --> 00:36:36,784
+T'ye bağlı olarak T A'dan B'ye değişiyor.
+
+513
+00:36:36,884 --> 00:36:40,844
+Buna bağlı olarak başlangıç noktası, bitiş noktası olabilir eğride.
+
+514
+00:36:40,844 --> 00:36:42,624
+Ve bir yön tayin edebiliriz.
+
+515
+00:36:42,624 --> 00:36:46,624
+Bu bizi vektör değerli fonksiyonlara götürüyor.
+
+516
+00:36:46,784 --> 00:36:49,764
+Yön kavramı varsa vektörel büyüklüklere götürüyor.
+
+517
+00:36:50,204 --> 00:36:55,624
+Evet parametrik denklemler vektörel büyüklüklü ifade etmek için elverişli bir parametrizasyon.
+
+518
+00:36:57,043 --> 00:37:03,184
+Burada X eşittir FT ve Y eşittir GT'ye eğrinin parametre denklemleri deniyor.
+
+519
+00:37:03,184 --> 00:37:10,023
+Genelde şöyle süslü parantezde işte X eşittir FT açık formda yazılır.
+
+520
+00:37:10,164 --> 00:37:13,244
+T eşittir GT şeklinde yazılır.
+
+521
+00:37:14,104 --> 00:37:16,824
+Koordinatlar ayrı ayrı fonksiyon olarak verilir.
+
+522
+00:37:17,164 --> 00:37:19,443
+T'ye eğrinin parametresi deniyor.
+
+523
+00:37:19,543 --> 00:37:25,963
+Buradaki parametremiz T ve bazen T bir sınırlı aralıkta tutulabilir arkadaşlar.
+
+524
+00:37:25,963 --> 00:37:30,704
+Ayrıca eğer biz T'yi burada varmış ola.
+
+525
+00:37:31,144 --> 00:37:38,304
+T'yi sınırlı bir aralıkta kapalı bir aralıkta tutarsak uç noktalar bizim başlangıç ve bitiş noktalarını verecek.
+
+526
+00:37:38,304 --> 00:37:43,144
+Sol uç nokta T'nin başlangıç noktası eğrinin başlangıç noktasını verecek.
+
+527
+00:37:43,264 --> 00:37:44,644
+F A G A'yı denk geliyor.
+
+528
+00:37:45,104 --> 00:37:55,563
+Eğrinin başlangıç noktası ve ben T yerine B yazdığımda da aralığın en sağ tarafında yazdığımda da bitiş noktasını elde etmiş olacağım.
+
+529
+00:37:56,144 --> 00:37:57,364
+Başlangıç ve bitiş noktası.
+
+530
+00:37:57,463 --> 00:38:02,304
+Bu eğer eğriyi sınırlı tutuyorsam T kapalı bir aralıktaysa.
+
+531
+00:38:03,384 --> 00:38:08,644
+Tabii açık aralık alırsak başlangıç ve bitiş noktasını hiçbir zaman tam olarak yazamayacağız.
+
+532
+00:38:08,983 --> 00:38:13,664
+Yani ne olur başlangıç ve bitiş noktaları eğriye dahil olmamış olur.
+
+533
+00:38:13,784 --> 00:38:17,563
+Şöyle boşluk yapmak gerekecek eğer açık aralık olursak.
+
+534
+00:38:17,923 --> 00:38:20,604
+Fakat kapalı aralık olunca buraların içini doldurabiliriz.
+
+535
+00:38:20,844 --> 00:38:22,104
+Eğriye dahil olmuş olacak.
+
+536
+00:38:22,104 --> 00:38:26,724
+Ve buna bağlı olarak bir yönde tayin edebiliriz.
+
+537
+00:38:27,523 --> 00:38:28,864
+Burada bir örneğimiz var.
+
+538
+00:38:29,884 --> 00:38:33,083
+Başlangıç noktası A, bitiş noktası B.
+
+539
+00:38:33,664 --> 00:38:35,543
+A'dan B'ye bir yöntayin edilmiş.
+
+540
+00:38:36,124 --> 00:38:37,844
+Keyfi bir nokta var eğri üzerinde.
+
+541
+00:38:37,923 --> 00:38:38,963
+Şurada F'de G'de.
+
+542
+00:38:39,043 --> 00:38:40,884
+T değiştikçe noktamız değişecek.
+
+543
+00:38:40,884 --> 00:38:43,784
+Aslında bu neye karşılık geliyor?
+
+544
+00:38:43,923 --> 00:38:47,384
+Verdiğiniz zamana karşılık A hali T'şitir.
+
+545
+00:38:47,463 --> 00:38:48,344
+Sıfır zamanı.
+
+546
+00:38:48,804 --> 00:38:50,083
+Hareketsiz olduğu zaman.
+
+547
+00:38:50,083 --> 00:38:51,724
+A, bitiş noktası B.
+
+548
+00:38:53,139 --> 00:38:57,299
+İşte THD bir anında araba şurada ya da cisim şurada diyelim.
+
+549
+00:38:57,559 --> 00:38:58,619
+Neyse hareketli.
+
+550
+00:38:58,980 --> 00:39:00,139
+THD 2 de şurada.
+
+551
+00:39:00,239 --> 00:39:01,379
+THD 3 de şurada.
+
+552
+00:39:01,379 --> 00:39:15,119
+Ki bu uzay görevlerinde de aslında o gönderilen uzay aracının yörüngesini takip etmede sonuçta bir yörüngede hareket ediyor.
+
+553
+00:39:15,199 --> 00:39:15,879
+Bir göm var.
+
+554
+00:39:16,199 --> 00:39:18,440
+Dolayısıyla orada fektörel bir büyüklük var.
+
+555
+00:39:19,259 --> 00:39:20,279
+Orada kullanılabilir.
+
+556
+00:39:20,279 --> 00:39:25,319
+Belki orada tam olarak konumunu uzaya gönderilen araçlarda şey yapılıyor.
+
+557
+00:39:25,319 --> 00:39:30,679
+Belli zamanlarda TCM'ler yapılıyor.
+
+558
+00:39:30,819 --> 00:39:36,579
+Yani onun izini düzeltme, kontrol etme manevraları yapılıyor.
+
+559
+00:39:36,859 --> 00:39:38,539
+Onlar doğrusal da gitmiyor zaten.
+
+560
+00:39:38,699 --> 00:39:39,559
+Şöyle diyelim.
+
+561
+00:39:40,759 --> 00:39:42,819
+Bir yörünge üzerinde hareket ediyorlar.
+
+562
+00:39:43,019 --> 00:39:44,179
+Biraz üzgün olmadı.
+
+563
+00:39:44,440 --> 00:39:45,440
+Dünyadan başladı.
+
+564
+00:39:46,000 --> 00:39:48,319
+Yörünge üzerinde elitik bir yörünge.
+
+565
+00:39:48,319 --> 00:39:53,199
+Daha doğrusu Helis-Helis'ine benziyen bir yörünge üzerinde hareket ediyor.
+
+566
+00:39:53,579 --> 00:39:55,619
+Tabii sapmalar olabiliyor.
+
+567
+00:39:55,739 --> 00:40:05,659
+Belli noktalarda şöyle peş peşe manevralar yaparak orada üzerindeki o küçük roketlerle manevralar yaparak tam olarak hedefine doğru yönlendiriliyor.
+
+568
+00:40:05,659 --> 00:40:06,779
+Belli noktalarda.
+
+569
+00:40:06,779 --> 00:40:18,819
+Bu ince hesapları yapabilmek için tam olarak gönderdiğiniz cismin artık uzay aracının hızı çok dakik bir şekilde bilinmesi gerekiyor.
+
+570
+00:40:18,960 --> 00:40:22,199
+Ve zamanınızı da çok dakik ölçmeniz gerekiyor.
+
+571
+00:40:22,319 --> 00:40:28,199
+Yani bizim kolumuzdaki saatlerden çok daha iyi saatlerinizin atomik saatlerinin olması gerekiyor.
+
+572
+00:40:28,199 --> 00:40:31,440
+Çünkü yüksek hızlarda ilerleyebiliyor atmosferin dışında.
+
+573
+00:40:32,480 --> 00:40:36,539
+O yüzden burada da tam olarak parametrik bir eğri var, bir yön var.
+
+574
+00:40:37,579 --> 00:40:46,579
+Zamanın belli noktalarına karşılık işte cisim bir yerde, artık uzay aracı bir yerde ve belli yerlerde müdahale etmek gerekebiliyor.
+
+575
+00:40:46,679 --> 00:40:47,940
+Yörüngeyi değiştirmek için.
+
+576
+00:40:48,619 --> 00:40:49,460
+O da zaman tabii.
+
+577
+00:40:49,460 --> 00:40:51,539
+Hangi zamanda ben müdahale edeceğim buna?
+
+578
+00:40:51,839 --> 00:40:56,339
+Yani buna işe yarar derseniz bu güzel bir örnek gibi düşünülebilir arkadaşlar.
+
+579
+00:40:56,679 --> 00:41:00,219
+Tabii kontrol mühendislerini çok ilgilendiriyor mu?
+
+580
+00:41:00,900 --> 00:41:01,819
+İlgilendiriyor olabilir.
+
+581
+00:41:02,159 --> 00:41:04,299
+NASA'da çalışacaklarsa ilgilendiriyor olabilir.
+
+582
+00:41:08,980 --> 00:41:14,740
+Ya da Türkiye Uzay Ajansı'nda çalışacaklarsa ilgilendiriyor olabilir.
+
+583
+00:41:16,059 --> 00:41:17,380
+Bakalım notta ne diyor?
+
+584
+00:41:17,460 --> 00:41:24,500
+X, Y düzleminde A noktasında B noktasında hareket eden bir cismin izlediği yolda koordinatlar her zaman tek bir fonksiyon tarafından belirlenmeyebilir.
+
+585
+00:41:26,980 --> 00:41:31,179
+Yani aslında bu geçiş her zaman var.
+
+586
+00:41:31,900 --> 00:41:38,500
+Parametrik bir eğri varsa ben karteziyen koordinatlara geçiş sağlayabilirim.
+
+587
+00:41:38,500 --> 00:41:42,740
+Bunun olmadığı örnek, şu anda benim elimde böyle bir örnek yok açıkçası.
+
+588
+00:41:43,059 --> 00:41:44,099
+Demek ki olabiliyormuş.
+
+589
+00:41:44,260 --> 00:41:45,780
+Onu bakmak lazım.
+
+590
+00:41:46,079 --> 00:41:47,519
+Üzerinde biraz düşünmek lazım.
+
+591
+00:41:47,679 --> 00:41:49,079
+Hangi durumlarda olmaz bu?
+
+592
+00:41:49,559 --> 00:41:55,760
+Çünkü elimde parametrik bir denklem varsa karteziyen koordinatlara geçiş yapabiliriz.
+
+593
+00:41:55,900 --> 00:41:57,300
+Yani T'yi bypass edebiliriz.
+
+594
+00:41:57,579 --> 00:41:59,679
+Ya da çoğu zaman belki de bazen mümkün olmuyor.
+
+595
+00:42:00,059 --> 00:42:05,000
+T'nin değerlerine bağlı olarak o geçişi sağlayamıyor olabiliriz.
+
+596
+00:42:06,300 --> 00:42:07,400
+Örneğimiz var bir tane.
+
+597
+00:42:08,500 --> 00:42:12,300
+Hatta şunu şöyle alt alta yazarsak daha güzel olur.
+
+598
+00:42:13,000 --> 00:42:15,320
+X eşittir T'nin karesi.
+
+599
+00:42:16,260 --> 00:42:18,840
+Y eşittir T artı bir şeklinde.
+
+600
+00:42:18,940 --> 00:42:20,599
+Tabi burada nasıl geçiş sağlayacağız?
+
+601
+00:42:21,940 --> 00:42:23,159
+Mesela şunu yapabiliriz.
+
+602
+00:42:23,220 --> 00:42:24,360
+T'yi yalnız bırakarak.
+
+603
+00:42:25,360 --> 00:42:26,360
+T eşittir.
+
+604
+00:42:27,139 --> 00:42:28,740
+Y eksi bir oldu.
+
+605
+00:42:28,740 --> 00:42:31,320
+Karesini alırsam o zaman.
+
+606
+00:42:31,960 --> 00:42:32,780
+X eşittir.
+
+607
+00:42:33,519 --> 00:42:34,559
+Y eksi birin karesi.
+
+608
+00:42:35,559 --> 00:42:37,880
+Buradan y'yi de yalnız bırakabilirsiniz.
+
+609
+00:42:38,500 --> 00:42:39,440
+Ne yapmış olduk?
+
+610
+00:42:39,539 --> 00:42:42,960
+X'i y'ye bağlı bir fonksiyon olarak ifade ettik.
+
+611
+00:42:43,320 --> 00:42:46,340
+Y'yi de x'e bağlı bir fonksiyon olarak ifade edebiliriz.
+
+612
+00:42:46,340 --> 00:42:51,820
+Her iki tarafın kare kökünü alıp ondan sonra bilek dediğimizde ne olacak?
+
+613
+00:42:52,260 --> 00:42:53,159
+Şurası artı eksi.
+
+614
+00:42:53,159 --> 00:42:54,630
+Y'yi de y
+
+615
+00:42:57,876 --> 00:43:04,976
+Kök x, biri de karşıya atarsak, 1 artı eksi, kök x şeklinde y'yi de yalnız bırakabilirim burada.
+
+616
+00:43:05,416 --> 00:43:09,896
+Yani parametrik olarak verilmişti, herhangi bir parametre aralığı da verilmiyor.
+
+617
+00:43:09,996 --> 00:43:17,176
+Bütün real sayılar için t, free, dolayısıyla y'yi x'e bağlı olarak, x'i y'ye bağlı olarak ifade edebiliriz.
+
+618
+00:43:26,324 --> 00:43:43,903
+Ya da şunu da yapabiliriz. Her iki tarafın kare kökünü alırsak, t eşittir, şurada, t eşittir, artı eksi, kök x olacak. O zaman t yerine yazarsam, yani şurada ifade geliyor zaten.
+
+619
+00:43:44,824 --> 00:43:51,884
+x'i baz alarak da y'yi bulabilirim. Şurada, yani birini aldığınızda diğeri çıkıyor zaten. Bunun grafiğini çizmeye çalışalım.
+
+620
+00:43:51,884 --> 00:43:53,983
+Tabii bir yön olacak burada.
+
+621
+00:44:03,188 --> 00:44:04,788
+Şurada t değerim olsun.
+
+622
+00:44:05,927 --> 00:44:06,948
+Ayrılık değerler alacağım.
+
+623
+00:44:07,048 --> 00:44:08,108
+Şurada x değeri olsun.
+
+624
+00:44:08,208 --> 00:44:10,048
+Ona karşılık ve y değeri olsun.
+
+625
+00:44:11,948 --> 00:44:13,708
+Herhangi bir yerde hesaplayabilirim bunları.
+
+626
+00:44:15,048 --> 00:44:16,148
+Nereden başlayalım?
+
+627
+00:44:17,948 --> 00:44:18,407
+Şurada
+
+628
+00:44:18,407 --> 00:44:21,347
+eksi 4'ten başlayalım mesela.
+
+629
+00:44:21,508 --> 00:44:22,867
+T'miz eksi 4 olunca
+
+630
+00:44:22,867 --> 00:44:23,588
+x değeri
+
+631
+00:44:23,588 --> 00:44:26,628
+pardon 16 oluyor.
+
+632
+00:44:26,728 --> 00:44:27,628
+Pozitif değer alıyor.
+
+633
+00:44:27,628 --> 00:44:28,867
+x değeri 16.
+
+634
+00:44:29,748 --> 00:44:31,468
+y değeri de
+
+635
+00:44:31,468 --> 00:44:34,068
+eksi 4 aldığımızda
+
+636
+00:44:34,068 --> 00:44:36,327
+y değeri de eksi 3 oluyor.
+
+637
+00:44:37,788 --> 00:44:40,288
+Eksi 3 alırsak
+
+638
+00:44:40,288 --> 00:44:42,528
+şurası 9
+
+639
+00:44:42,528 --> 00:44:46,088
+aslında ben nokta çiftleri elde ediyorum.
+
+640
+00:44:46,327 --> 00:44:47,668
+x, y nokta çiftleri
+
+641
+00:44:47,668 --> 00:44:50,407
+onları işaretleyip birleştirdiğimizde
+
+642
+00:44:50,407 --> 00:44:51,927
+tabi belki biraz da
+
+643
+00:44:51,927 --> 00:44:53,048
+sıklaştırmak lazım.
+
+644
+00:44:54,448 --> 00:44:55,768
+Eksi 3 aldığımızda
+
+645
+00:44:55,768 --> 00:44:57,688
+y'miz eksi 2.
+
+646
+00:44:58,548 --> 00:45:00,248
+Sonra eksi 2 aldığımızda
+
+647
+00:45:00,248 --> 00:45:01,407
+t kare
+
+648
+00:45:01,407 --> 00:45:03,168
+burası 4 olacak.
+
+649
+00:45:03,968 --> 00:45:05,068
+Eksi 2, eksi 1.
+
+650
+00:45:06,367 --> 00:45:07,988
+Eksi 1 aldığımızda
+
+651
+00:45:07,988 --> 00:45:09,148
+1 oldu.
+
+652
+00:45:09,948 --> 00:45:11,407
+x'i 1 aldığımızda 0 oldu.
+
+653
+00:45:12,347 --> 00:45:13,728
+1'e 0 noktası.
+
+654
+00:45:15,168 --> 00:45:17,148
+Yani x eksen üzerinde bir nokta.
+
+655
+00:45:17,148 --> 00:45:20,628
+0 aldığımızda
+
+656
+00:45:20,628 --> 00:45:22,568
+0, 1 oldu.
+
+657
+00:45:22,688 --> 00:45:24,548
+0'a 1'e eksen üzerinde bir nokta.
+
+658
+00:45:25,168 --> 00:45:26,887
+Aynen simetrik olarak gidelim.
+
+659
+00:45:26,887 --> 00:45:28,488
+1 aldığımızda
+
+660
+00:45:28,488 --> 00:45:30,668
+1, 2.
+
+661
+00:45:30,668 --> 00:45:32,268
+2 aldığımızda
+
+662
+00:45:32,268 --> 00:45:34,068
+4,
+
+663
+00:45:34,068 --> 00:45:38,268
+2 aldığımızda
+
+664
+00:45:38,268 --> 00:45:38,688
+3
+
+665
+00:45:38,688 --> 00:45:39,347
+şurası.
+
+666
+00:45:41,968 --> 00:45:43,208
+3 aldığımızda
+
+667
+00:45:43,208 --> 00:45:44,528
+9,
+
+668
+00:45:45,407 --> 00:45:46,748
+3 aldığımızda
+
+669
+00:45:46,748 --> 00:45:47,648
+4.
+
+670
+00:45:48,288 --> 00:45:49,608
+4 alalım, bitirelim.
+
+671
+00:45:49,688 --> 00:45:50,407
+Eksi 4'ten başlamıştık.
+
+672
+00:45:51,688 --> 00:45:52,508
+9 birimlik,
+
+673
+00:45:52,708 --> 00:45:53,827
+9 tane değer için,
+
+674
+00:45:54,548 --> 00:45:55,268
+ayıbık değer için
+
+675
+00:45:55,268 --> 00:45:56,448
+hesaplamış olalım bunları.
+
+676
+00:45:56,568 --> 00:45:58,488
+Sonra birleştirip grafik yapmaya çalışacağız.
+
+677
+00:45:58,488 --> 00:46:00,588
+16 ve 5.
+
+678
+00:46:01,347 --> 00:46:02,268
+Bütün bu noktaları,
+
+679
+00:46:02,608 --> 00:46:03,768
+şurada nokta çiftleri var.
+
+680
+00:46:04,387 --> 00:46:05,088
+16'ya
+
+681
+00:46:05,088 --> 00:46:06,688
+eksi 3.
+
+682
+00:46:08,088 --> 00:46:09,048
+9'a
+
+683
+00:46:09,048 --> 00:46:10,448
+eksi 2.
+
+684
+00:46:10,927 --> 00:46:13,208
+Bunları eksende işaretleyelim.
+
+685
+00:46:13,668 --> 00:46:15,728
+Koordinat ekseninde işaretleyelim.
+
+686
+00:46:17,648 --> 00:46:20,248
+Tabii şurası başlangıç noktası oldu benim için.
+
+687
+00:46:23,608 --> 00:46:25,728
+Ama şeyi free bıraktık zaten.
+
+688
+00:46:26,867 --> 00:46:28,307
+Bu x eksenimiz olsun.
+
+689
+00:46:28,488 --> 00:46:31,248
+y eksenimiz olsun.
+
+690
+00:46:31,907 --> 00:46:33,208
+Noktalardan başlayalım da.
+
+691
+00:46:33,268 --> 00:46:35,288
+Öyle bir güzel işaretlemeliyiz ki
+
+692
+00:46:35,288 --> 00:46:38,668
+x'i
+
+693
+00:46:38,668 --> 00:46:39,827
+16
+
+694
+00:46:39,827 --> 00:46:42,568
+y'si
+
+695
+00:46:42,568 --> 00:46:43,188
+eksi 3
+
+696
+00:46:43,188 --> 00:46:44,548
+y
+
+697
+00:46:44,548 --> 00:46:46,108
+nereden nereye değişiyor?
+
+698
+00:46:46,228 --> 00:46:48,128
+Eksi 3 ile 5 aralığında.
+
+699
+00:46:48,648 --> 00:46:50,628
+Bunu belki biraz daha yukarı götürmek gerekir.
+
+700
+00:46:50,748 --> 00:46:51,068
+Şöyle
+
+701
+00:46:51,068 --> 00:46:52,008
+1
+
+702
+00:46:52,008 --> 00:46:52,488
+2
+
+703
+00:46:52,488 --> 00:46:53,668
+3
+
+704
+00:46:53,668 --> 00:46:54,648
+4
+
+705
+00:46:54,648 --> 00:46:55,327
+5
+
+706
+00:46:55,327 --> 00:46:55,807
+diyelim.
+
+707
+00:46:55,807 --> 00:46:57,248
+1
+
+708
+00:46:57,248 --> 00:46:58,168
+2
+
+709
+00:46:58,168 --> 00:46:58,648
+3
+
+710
+00:46:58,648 --> 00:46:59,628
+eksi 3 olsun.
+
+711
+00:46:59,788 --> 00:47:00,128
+Şurası
+
+712
+00:47:00,128 --> 00:47:01,867
+5 olsun.
+
+713
+00:47:05,188 --> 00:47:06,688
+Eksi 3'e 16.
+
+714
+00:47:07,068 --> 00:47:09,508
+16'yı da tabii şu an kabala bir şey yapalım.
+
+715
+00:47:09,608 --> 00:47:10,248
+5 olsun.
+
+716
+00:47:10,628 --> 00:47:11,288
+10 olsun.
+
+717
+00:47:11,288 --> 00:47:12,548
+15 olsun.
+
+718
+00:47:12,548 --> 00:47:14,387
+Oranlamaya çalıştım.
+
+719
+00:47:14,468 --> 00:47:14,968
+x ve y
+
+720
+00:47:14,968 --> 00:47:17,307
+aynı oranlarda değil.
+
+721
+00:47:17,387 --> 00:47:17,668
+16
+
+722
+00:47:17,668 --> 00:47:18,768
+şuralarda bir yerde.
+
+723
+00:47:19,528 --> 00:47:20,688
+16'ya eksi 3.
+
+724
+00:47:20,927 --> 00:47:21,228
+Yani
+
+725
+00:47:21,228 --> 00:47:22,568
+şurası.
+
+726
+00:47:22,708 --> 00:47:24,048
+Turuncuyla işaretliyorum.
+
+727
+00:47:26,048 --> 00:47:26,548
+Şurası.
+
+728
+00:47:27,728 --> 00:47:28,568
+Tahminen bir yer.
+
+729
+00:47:28,827 --> 00:47:29,168
+Şurada.
+
+730
+00:47:29,168 --> 00:47:30,347
+16
+
+731
+00:47:30,347 --> 00:47:31,068
+eksi 3.
+
+732
+00:47:31,628 --> 00:47:32,008
+Sonra
+
+733
+00:47:32,008 --> 00:47:33,488
+9'a
+
+734
+00:47:33,488 --> 00:47:34,708
+eksi 2.
+
+735
+00:47:35,068 --> 00:47:36,148
+Eksi 2 şurası.
+
+736
+00:47:36,268 --> 00:47:36,887
+9'da
+
+737
+00:47:36,887 --> 00:47:38,188
+şurada bir yerde.
+
+738
+00:47:39,288 --> 00:47:40,288
+10 dedik şuraya.
+
+739
+00:47:40,988 --> 00:47:42,128
+9'da şurada bir yerde.
+
+740
+00:47:43,347 --> 00:47:45,568
+Çok güzel orantılı bir şey çizemeyebilirim.
+
+741
+00:47:45,668 --> 00:47:46,367
+Fakat yani
+
+742
+00:47:46,367 --> 00:47:48,268
+diğer noktaları.
+
+743
+00:47:48,387 --> 00:47:50,748
+4'e eksi 1.
+
+744
+00:47:51,168 --> 00:47:52,168
+Şurada bir yerde.
+
+745
+00:47:53,307 --> 00:47:54,248
+4'e eksi 1.
+
+746
+00:47:55,108 --> 00:47:55,628
+Sonra
+
+747
+00:47:55,628 --> 00:47:56,867
+1'e 0.
+
+748
+00:47:57,427 --> 00:47:58,508
+1'e 0 şurası.
+
+749
+00:47:59,168 --> 00:48:00,208
+diyebiliriz.
+
+750
+00:48:00,768 --> 00:48:01,668
+0'a 1.
+
+751
+00:48:02,048 --> 00:48:02,448
+Şurası.
+
+752
+00:48:06,452 --> 00:48:14,832
+Eğer biz noktalarımızı sıklaştırırsak, daha da yoğun bir şekilde noktalar olacak. Daha kesin bir grafik çizebilme şansımız olacak.
+
+753
+00:48:15,972 --> 00:48:22,912
+1'e 2, 1'e 2, şurası. Biraz da aşağıda verilmesi gerekiyordu.
+
+754
+00:48:23,592 --> 00:48:26,392
+4'e 3, 4'e 3, şurada.
+
+755
+00:48:26,392 --> 00:48:28,972
+4'e 3, evet.
+
+756
+00:48:30,032 --> 00:48:34,812
+9'a 4, 9, 4. Şuraya gelmem gerekiyor.
+
+757
+00:48:34,812 --> 00:48:36,392
+9'a 4, 9'a 4.
+
+758
+00:48:37,392 --> 00:48:39,212
+Ve 16'ya 5.
+
+759
+00:48:39,532 --> 00:48:42,392
+16'yi şurası olarak düşünmüştük.
+
+760
+00:48:42,472 --> 00:48:43,552
+Tam 5'in hizasında.
+
+761
+00:48:43,832 --> 00:48:44,632
+16'ya 5.
+
+762
+00:48:45,372 --> 00:48:45,572
+Evet.
+
+763
+00:48:47,372 --> 00:48:50,832
+Dikkat ederseniz, sayılar büyüdükçe noktalar birbirinden uzaklaşıyor.
+
+764
+00:48:50,932 --> 00:48:53,032
+Şimdi yapacağımız şey bu noktaları birleştirmek.
+
+765
+00:48:53,372 --> 00:48:54,692
+Farklı bir renkle yapalım bunu.
+
+766
+00:48:56,212 --> 00:48:57,452
+Görünen bir renk olsun.
+
+767
+00:48:57,532 --> 00:48:58,332
+Hadi yeşil olsun.
+
+768
+00:49:06,643 --> 00:49:09,203
+Aslında bu ne arkadaşlar? Parabol.
+
+769
+00:49:10,043 --> 00:49:11,643
+Tepe noktası...
+
+770
+00:49:14,771 --> 00:49:23,612
+Şöyle gidiyor. Tabii bizim bir de yönümüz var. Yönü detaylı etmemiz lazım. Yön. Buradan başladık.
+
+771
+00:49:28,755 --> 00:49:33,655
+Her yerde yönümüzü, yazdığımız noktalarda yönü de belirleyelim.
+
+772
+00:49:35,775 --> 00:49:36,895
+Şöyle bir yön.
+
+773
+00:49:37,955 --> 00:49:48,556
+Aslında y eşittir, artı eksi, y eşittir, artı eksi, kök x artı birden.
+
+774
+00:49:48,855 --> 00:49:50,655
+Bunu yine yazabiliriz bu parabolu.
+
+775
+00:49:51,435 --> 00:49:56,855
+Alt parça, eksi aldığınızda alt parçayı verecek, artı aldığınızda üst parçayı verecek size.
+
+776
+00:49:56,855 --> 00:50:00,275
+Dolayısıyla karteziyen olarak da yazılabiliriz.
+
+777
+00:50:00,355 --> 00:50:03,855
+Fakat karteziyen olarak grafiği çizdiğimizde bir yön olmayacak.
+
+778
+00:50:03,975 --> 00:50:05,775
+Burada yön tayin etmiş oluyor.
+
+779
+00:50:07,435 --> 00:50:07,715
+Evet.
+
+780
+00:50:09,835 --> 00:50:10,755
+Tamam sorularınız.
+
+781
+00:50:10,935 --> 00:50:11,556
+Şuraya yazalım.
+
+782
+00:50:11,675 --> 00:50:12,096
+On beş.
+
+783
+00:50:14,036 --> 00:50:14,415
+On.
+
+784
+00:50:15,415 --> 00:50:15,875
+Beş.
+
+785
+00:50:20,596 --> 00:50:44,255
+Çizmiştim ben tıksla. Çizmek bayağı zaman mağalı. Bu tip grafikleri tıksla çizmek kolay iş değil. Onlar binamik grafikle, kodla yazılıyor. Yani noktaları birleştirirken böyle bir eğim vermeniz gerekiyor. Üzerine o şeyleri yazmak, noktaları falan, noktaları. Geçen sene bunlarla çok zaman harcamıştım.
+
+786
+00:50:44,255 --> 00:51:01,175
+İyi ki yapmışız. Şu an rahat rahat kullanıyoruz. Daha temiz, daha güzel hali var burada arkadaşlar. Burada bir nokta sonradan başlamışız, bitirmişiz. Tabi bu sonsuza gidiyor. Aslında şunlar uzatılabilir. Şu şekilde uzatılabilir.
+
+787
+00:51:01,175 --> 00:51:31,155
+parametre bir noktaları.
+
+788
+00:51:31,155 --> 00:51:35,155
+Buna bağlı olarak aslında ifade ediyoruz. Buna bağlı olarak aslında ifade ediyoruz.
+
+789
+00:51:35,155 --> 00:51:39,516
+Gerçi onu yazamayız işte. T, y, x, y, y değil de. Ama x, y aslında.
+
+790
+00:51:39,516 --> 00:51:48,155
+x koordinatı t kare, y koordinatı t artı bir olacak. Yani şuralarda x ve y'nin olması doğru. Bir sorun yok. Ben buralara bir yere t koyamam.
+
+791
+00:51:48,155 --> 00:51:51,476
+Çünkü hem x, t'ye bağlı hem y, t'ye bağlı.
+
+792
+00:51:51,476 --> 00:51:52,476
+bir ara.
+
+793
+00:51:52,476 --> 00:51:53,476
+Bir ara.
+
+794
+00:51:53,476 --> 00:51:55,476
+Bir ara verelim arkadaşlar.
+
+795
+00:51:55,476 --> 00:51:56,476
+Arkadaşlar.
+
+796
+00:51:56,476 --> 00:51:58,476
+10 dakika ara verelim. Ben buradayım.
+
+797
+00:51:58,476 --> 00:52:00,476
+Sorularınız olursa sorabilirsiniz.
+
+798
+00:52:00,476 --> 00:52:03,476
+Aradan sonra görüşmek üzere.
+
+799
+00:52:03,476 --> 00:52:11,476
+görüşmek üzere.
+
+800
+01:05:37,300 --> 01:05:38,620
+Merhaba arkadaşlar.
+
+801
+01:05:39,880 --> 01:05:41,560
+[öğrenci] programı ben biliyorum.
+
+802
+01:05:41,820 --> 01:05:43,240
+Fakat şöyle ki
+
+803
+01:05:43,240 --> 01:05:44,920
+daha başka programlar da var.
+
+804
+01:05:45,140 --> 01:05:46,920
+Çizim yapmak için. Yani çokça
+
+805
+01:05:46,920 --> 01:05:49,400
+matematika var, Science Bookplace var,
+
+806
+01:05:49,519 --> 01:05:50,940
+Maple var, Matlab var.
+
+807
+01:05:51,880 --> 01:05:52,620
+Çok fazla
+
+808
+01:05:52,620 --> 01:05:54,560
+programlar öyle. Fakat
+
+809
+01:05:54,560 --> 01:05:56,920
+burada amacım görsel olarak da
+
+810
+01:05:56,920 --> 01:05:58,920
+görüntü kalitesinin iyi olması.
+
+811
+01:05:59,500 --> 01:06:01,140
+Basıldığı zaman güzel çıkması.
+
+812
+01:06:02,000 --> 01:06:03,080
+Oradan resim alıp
+
+813
+01:06:03,080 --> 01:06:05,220
+buraya koymak durumundasınız. Resimler de
+
+814
+01:06:05,220 --> 01:06:07,180
+PDF'e dönüşünce görüntü
+
+815
+01:06:07,180 --> 01:06:09,220
+kalitesi bozuluyor. Şu anda
+
+816
+01:06:09,220 --> 01:06:10,960
+ekranda gördüğünüz aslında yazı,
+
+817
+01:06:11,060 --> 01:06:13,160
+metni gibi. Yani resim falan
+
+818
+01:06:13,160 --> 01:06:15,240
+değil. Her noktası piksel
+
+819
+01:06:15,240 --> 01:06:17,300
+piksel, yazı metni gibi işlenmiş.
+
+820
+01:06:17,519 --> 01:06:19,320
+Tıksın öyle bir güzelliği
+
+821
+01:06:19,320 --> 01:06:21,380
+var. Çizim yapmak zor ama
+
+822
+01:06:21,380 --> 01:06:23,400
+çok kaliteli ve
+
+823
+01:06:23,400 --> 01:06:25,240
+çok gerçekçi
+
+824
+01:06:25,240 --> 01:06:27,519
+şeyler veriyor. Çizimler
+
+825
+01:06:27,519 --> 01:06:29,140
+verebiliyor. Dinamik çizimler de
+
+826
+01:06:29,140 --> 01:06:30,680
+verebiliyor. İleriki
+
+827
+01:06:30,680 --> 01:06:33,539
+derslerde göreceksiniz. Üç boyutlu
+
+828
+01:06:33,539 --> 01:06:34,880
+çizimler falan da var.
+
+829
+01:06:35,700 --> 01:06:37,039
+Onları çoğu yerde yapmak
+
+830
+01:06:37,039 --> 01:06:40,140
+çok açıkçası güzel sonuçlar elde etmek.
+
+831
+01:06:40,140 --> 01:06:42,200
+Belki mimari programlarda
+
+832
+01:06:42,200 --> 01:06:43,580
+işte AutoCAD'de falan
+
+833
+01:06:43,580 --> 01:06:45,280
+çizimler yapılabilir.
+
+834
+01:06:45,600 --> 01:06:47,860
+Fakat onlar sonuç itibariyle şey oluyor.
+
+835
+01:06:49,360 --> 01:06:50,740
+Render'ını aldığınızda
+
+836
+01:06:50,740 --> 01:06:52,800
+solid bir şey oluyor. Dinamik değil yani.
+
+837
+01:06:53,039 --> 01:06:54,539
+Bunlar dinamik çizimler.
+
+838
+01:06:56,280 --> 01:06:57,860
+Resmini buraya koymak zorundasınız.
+
+839
+01:06:58,100 --> 01:06:59,360
+Resim olunca
+
+840
+01:06:59,360 --> 01:07:00,860
+görüntü kalitesi bozuluyor.
+
+841
+01:07:00,860 --> 01:07:05,120
+örneklerle devam edelim.
+
+842
+01:07:05,120 --> 01:07:06,760
+Bir tane daha örnek yapalım.
+
+843
+01:07:06,900 --> 01:07:08,120
+Bu grafik çizimiyle ilgili.
+
+844
+01:07:10,620 --> 01:07:12,840
+T parametresi 0 ile 2 pi aralığında
+
+845
+01:07:12,840 --> 01:07:13,820
+sınırlandırılmış.
+
+846
+01:07:13,820 --> 01:07:17,200
+x'i a cosinus'te y sa sinus'te
+
+847
+01:07:17,200 --> 01:07:18,980
+ile verilen eğrinin
+
+848
+01:07:18,980 --> 01:07:21,760
+grafiğini bulunuz.
+
+849
+01:07:22,360 --> 01:07:23,000
+Burada öncelikle
+
+850
+01:07:23,000 --> 01:07:24,900
+kartezi koordinatlarda nasıl bir şey
+
+851
+01:07:24,900 --> 01:07:25,539
+onu görelim.
+
+852
+01:07:28,760 --> 01:07:30,539
+cosinus'te ve sinus'te olduğu için
+
+853
+01:07:30,539 --> 01:07:31,980
+ben her iki tarafın karesini alıp
+
+854
+01:07:31,980 --> 01:07:32,840
+toplamak istiyorum.
+
+855
+01:07:32,840 --> 01:07:33,780
+yani x kare
+
+856
+01:07:33,780 --> 01:07:35,260
+artı y kare
+
+857
+01:07:35,260 --> 01:07:37,680
+bir hesaplamak istediğimizde
+
+858
+01:07:37,680 --> 01:07:39,000
+a kare
+
+859
+01:07:39,000 --> 01:07:40,780
+cos karete
+
+860
+01:07:40,780 --> 01:07:43,440
+artı
+
+861
+01:07:43,440 --> 01:07:44,180
+a kare
+
+862
+01:07:44,180 --> 01:07:46,700
+sin karete olacak.
+
+863
+01:07:46,840 --> 01:07:48,500
+Bunu da a kare parantezine alırsam
+
+864
+01:07:48,500 --> 01:07:51,240
+cos karete artı sin karete
+
+865
+01:07:51,240 --> 01:07:55,260
+burası 1
+
+866
+01:07:55,260 --> 01:07:58,260
+maddirden biliyoruz.
+
+867
+01:07:58,840 --> 01:08:00,060
+Sonuç itibariyle ne oldu?
+
+868
+01:08:00,560 --> 01:08:01,080
+a kare oldu.
+
+869
+01:08:01,080 --> 01:08:02,660
+Yani yarı çapı
+
+870
+01:08:02,660 --> 01:08:05,060
+a olan çember.
+
+871
+01:08:05,940 --> 01:08:07,460
+Bunu çok daha çizebiliriz artık.
+
+872
+01:08:08,340 --> 01:08:09,640
+x kare artı y kare
+
+873
+01:08:09,640 --> 01:08:10,940
+eşittir.
+
+874
+01:08:12,000 --> 01:08:12,280
+Okey.
+
+875
+01:08:15,764 --> 01:08:23,743
+Hatta bunu kutupsal koordinatlara dönüş yaptığımızda şu ifade R'ye denk gelecek. R'eştir A. Kutupsal koordinatlarda işler bu kadar kolay.
+
+876
+01:08:24,144 --> 01:08:29,144
+Şimdi grafiğini çizmeye çalışalım. Yukarıda yaptığımız gibi yapalım. Parametreler atayarak.
+
+877
+01:08:31,984 --> 01:08:33,884
+Hocam, x ile y'nin neden kareşini aldık?
+
+878
+01:08:35,163 --> 01:08:41,984
+Trigometrik fonksiyonlar var. Amacım, birim çemberdeki şu eşitliği kullanmaktı.
+
+879
+01:08:41,984 --> 01:08:46,684
+Yani cos kareti artı sin kareti eşitliği bir özdeşliğini kullanmaktı amacım.
+
+880
+01:08:47,623 --> 01:08:48,203
+Tamamdır.
+
+881
+01:08:48,444 --> 01:08:51,663
+Yani trigometrik t'lerden kurtulmuş oluyorum bu şekilde.
+
+882
+01:08:51,884 --> 01:08:57,064
+Ama ne yaptık? Parametrikten karteziyene geçiş sağlamış olduk.
+
+883
+01:08:57,144 --> 01:09:00,604
+Artık tamamen x ile y'ye bağlı bir renklem var elinde.
+
+884
+01:09:01,284 --> 01:09:03,163
+Şuraya t dedik. İsteyelim.
+
+885
+01:09:04,203 --> 01:09:05,764
+Burası da y olsun.
+
+886
+01:09:08,264 --> 01:09:09,463
+Nereden başlayalım?
+
+887
+01:09:09,463 --> 01:09:11,463
+0 ile 2 pi aralık.
+
+888
+01:09:11,463 --> 01:09:12,484
+O zaman t'ye 0 verelim.
+
+889
+01:09:12,484 --> 01:09:17,804
+x'im a çarpı cos t, cos 0 1, a oldu.
+
+890
+01:09:18,423 --> 01:09:21,083
+a çarpı sin 0, sin 0 0 0.
+
+891
+01:09:23,243 --> 01:09:25,224
+Pi bölü 2 ile devam edelim.
+
+892
+01:09:25,404 --> 01:09:27,384
+Rahat hesaplayabildiğimiz değerlere bakalım.
+
+893
+01:09:27,583 --> 01:09:27,864
+0
+
+894
+01:09:27,864 --> 01:09:32,884
+pi bölü 2 yazdığımızda a olacak.
+
+895
+01:09:33,663 --> 01:09:34,384
+Pi yazalım.
+
+896
+01:09:34,864 --> 01:09:37,904
+Pi yazdığımızda cos p eksi 1,
+
+897
+01:09:37,904 --> 01:09:39,904
+eksi 1 çarpı sin 0 0 0 olacak.
+
+898
+01:09:39,904 --> 01:09:44,644
+a çarpı sin 0 0 olacak.
+
+899
+01:09:44,644 --> 01:09:46,144
+a çarpı sin 0 0.
+
+900
+01:09:46,583 --> 01:09:51,123
+3 pi bölü 2.
+
+901
+01:09:53,503 --> 01:09:56,364
+3 pi bölü 2 yazdığımızda x 0 olacak.
+
+902
+01:09:56,543 --> 01:09:57,944
+y'imiz eksi a olacak.
+
+903
+01:09:58,844 --> 01:10:01,543
+Ve 2 pi yazarsak buraya bir daha başa saracak.
+
+904
+01:10:01,764 --> 01:10:05,743
+2 pi yazdığımızda a'ya 0 olmuş oldu.
+
+905
+01:10:05,743 --> 01:10:07,743
+yapacağımız bu noktaları bir daha başa saracak.
+
+906
+01:10:07,743 --> 01:10:08,743
+bu noktaları birleştirmek.
+
+907
+01:10:08,743 --> 01:10:10,984
+yönde tayin etmiş oldu.
+
+908
+01:10:10,984 --> 01:10:11,743
+bu noktaları birleştirmek.
+
+909
+01:10:11,743 --> 01:10:12,743
+yönde tayin etmiş oldu.
+
+910
+01:10:12,743 --> 01:10:13,743
+bu noktaları birleştirmek.
+
+911
+01:10:13,743 --> 01:10:14,743
+yönde tayin etmiş oldu.
+
+912
+01:10:14,743 --> 01:10:15,743
+bu noktaları birleştirmek.
+
+913
+01:10:15,743 --> 01:10:16,743
+yönde tayin etmiş oldu.
+
+914
+01:10:16,743 --> 01:10:17,743
+bu noktaları birleştirmek.
+
+915
+01:10:17,743 --> 01:10:18,743
+yönde tayin etmiş oldu.
+
+916
+01:10:18,743 --> 01:10:19,743
+bu noktaları birleştirmek.
+
+917
+01:10:17,171 --> 01:10:22,651
+Şöyle noktalarımız, ilk bulduğumuz nokta, a'ya sıfır.
+
+918
+01:10:25,051 --> 01:10:28,651
+Sonra, sıfıra a.
+
+919
+01:10:32,435 --> 01:10:42,795
+Sonra, eksi a'ya sıfır ve sıfıra eksi a.
+
+920
+01:10:44,935 --> 01:10:47,895
+Noktaları birleştireceğiz fakat ara değerleri almadık.
+
+921
+01:10:48,255 --> 01:10:52,675
+Sanki burada bir kare varmış gibi çizmemiz gerekecek şu anda ama öyle değil.
+
+922
+01:10:52,775 --> 01:10:56,155
+Ara değerleri de aldığımızda şu arada sonsuz tane açı alabiliriz.
+
+923
+01:10:56,155 --> 01:10:59,015
+Rahat hesaplıya bildiklerimizi aldık.
+
+924
+01:10:59,015 --> 01:11:03,595
+Şurada bir yerde yarı çapı a olan içenler.
+
+925
+01:11:03,675 --> 01:11:06,875
+Şurada yine bir a'yı verecek şekilde bir açı bulabiliriz sürekli.
+
+926
+01:11:06,996 --> 01:11:08,095
+Şurada da aynı şekilde.
+
+927
+01:11:08,695 --> 01:11:10,375
+Bütün bu noktalar birleşmiş olacak.
+
+928
+01:11:10,496 --> 01:11:14,496
+O yüzden bunu birleştirirken şu anda yanıltıcı olmasın.
+
+929
+01:11:14,735 --> 01:11:16,036
+Yani kare gibi birleştirmeyeceğim.
+
+930
+01:11:16,155 --> 01:11:17,815
+Onlar doğrusal olarak birleşmiyor.
+
+931
+01:11:18,295 --> 01:11:23,435
+Diğer ara değerleri de verip belki daha güzel bir şekil elde edilebilir.
+
+932
+01:11:23,435 --> 01:11:25,875
+Peki yönümüz nereden nereye?
+
+933
+01:11:25,875 --> 01:11:55,855
+Saat yönümüzde saat yönümüzde.
+
+934
+01:11:35,028 --> 01:11:45,887
+Neden? Başlangıç noktamız A'ya 0, bir sonraki nokta 0'a A oldu. En son geldik başlangıç noktasına, geri başladığımız yere geldik. Aslında bu kapalı bir eğri.
+
+935
+01:11:47,788 --> 01:11:54,847
+Kapalı bir eğri. Bunun üzerinde yine integraller hesaplanabiliyor. Koşik teoremleri var. Ona dair çok şık teoremler var.
+
+936
+01:11:56,028 --> 01:12:02,548
+Merkezi orjin olan, yarı çapı A olan çember, yönlendirilmiş çember esasında.
+
+937
+01:12:13,076 --> 01:12:14,855
+Burada daha güzel çizilmiş
+
+938
+01:12:14,855 --> 01:12:16,115
+resim var yine.
+
+939
+01:12:17,355 --> 01:12:17,836
+Tıksla.
+
+940
+01:12:21,496 --> 01:12:24,435
+Bu tarz sorular da karşımıza çıkabiliyor.
+
+941
+01:12:27,496 --> 01:12:29,096
+Parametrik olarak
+
+942
+01:12:29,096 --> 01:12:31,395
+verilen bir eğri
+
+943
+01:12:31,395 --> 01:12:33,055
+kutupsal koordinatlarda ya da
+
+944
+01:12:33,055 --> 01:12:35,496
+kartezyen koordinatlarda, dik koordinatlarda
+
+945
+01:12:35,496 --> 01:12:37,055
+ifade ediniz diyor. Yani
+
+946
+01:12:37,055 --> 01:12:39,355
+T parametresinden kurtulun
+
+947
+01:12:39,355 --> 01:12:41,036
+şeklinde sorular olabiliyor.
+
+948
+01:12:41,036 --> 01:12:44,256
+X, 1-3 tane
+
+949
+01:12:44,256 --> 01:12:46,076
+kosünüstte olarak verilmiş.
+
+950
+01:12:46,975 --> 01:12:47,695
+Kosünüstte.
+
+951
+01:12:48,115 --> 01:12:49,036
+Ve Y'miz de
+
+952
+01:12:49,036 --> 01:12:51,916
+2 artı sinüste
+
+953
+01:12:51,916 --> 01:12:53,935
+olarak verilmiş. Yapacağım
+
+954
+01:12:53,935 --> 01:12:55,815
+şey X ve Y'yi yalnız bırakmak.
+
+955
+01:12:56,275 --> 01:12:57,876
+Daha doğrusu kosünüstte sinüsü yalnız
+
+956
+01:12:57,876 --> 01:12:59,876
+bırakıp onların karelerini alıp toplamak
+
+957
+01:12:59,876 --> 01:13:02,015
+yaparsam kurtulacağım T'den.
+
+958
+01:13:02,576 --> 01:13:03,256
+Yani bizim
+
+959
+01:13:03,256 --> 01:13:05,515
+anahtar nokta burası. Ben bu
+
+960
+01:13:05,515 --> 01:13:07,735
+trigonometrikse eğer tabii
+
+961
+01:13:07,735 --> 01:13:09,716
+nasıl kurtulurum T'lerden?
+
+962
+01:13:09,716 --> 01:13:12,216
+değilse 4 işlem, kök alma gibi
+
+963
+01:13:12,216 --> 01:13:14,136
+işlemler yaparak kurtulmaya çalışacağız.
+
+964
+01:13:14,275 --> 01:13:16,315
+İlk örnekte olduğu gibi
+
+965
+01:13:16,315 --> 01:13:18,496
+işte X eşittir, T kare eşittir, T artı bir
+
+966
+01:13:18,496 --> 01:13:19,475
+şeklinde verilmişti.
+
+967
+01:13:21,596 --> 01:13:22,536
+İşlem kullanarak
+
+968
+01:13:22,536 --> 01:13:24,655
+tamamen
+
+969
+01:13:24,655 --> 01:13:25,676
+X ve Y'ye bağlı
+
+970
+01:13:25,676 --> 01:13:27,395
+denklem elde etmeye çalışacağız.
+
+971
+01:13:27,395 --> 01:13:29,895
+Burada kosünüstte'yi yalnız bıraktığında
+
+972
+01:13:30,456 --> 01:13:32,036
+eşittir.
+
+973
+01:13:32,975 --> 01:13:33,895
+X eksi bir
+
+974
+01:13:33,895 --> 01:13:35,676
+daha
+
+975
+01:13:35,676 --> 01:13:37,296
+karşı tarafa atmam lazım.
+
+976
+01:13:37,376 --> 01:13:38,355
+Bir eksi x olacak.
+
+977
+01:13:38,975 --> 01:13:40,315
+Bir eksi x bölü 3 olacak.
+
+978
+01:13:42,815 --> 01:13:43,836
+Bir eksi x
+
+979
+01:13:43,836 --> 01:13:44,756
+bölü 3.
+
+980
+01:13:45,935 --> 01:13:48,395
+Benzer şekilde sinüsü yalnız bırakırsak
+
+981
+01:13:48,395 --> 01:13:49,115
+sinüsü T
+
+982
+01:13:49,115 --> 01:13:50,496
+eşittir.
+
+983
+01:13:50,496 --> 01:13:52,636
+Y eksi 2 oldu.
+
+984
+01:13:53,435 --> 01:13:54,176
+Y eksi 2.
+
+985
+01:13:54,876 --> 01:13:56,256
+Şimdi her iki tarafın karesini
+
+986
+01:13:56,256 --> 01:13:57,435
+alıp toplayalım.
+
+987
+01:13:58,155 --> 01:13:59,596
+Bir eşittir.
+
+988
+01:14:00,876 --> 01:14:02,916
+Kosünüstü kare T artı
+
+989
+01:14:02,916 --> 01:14:04,395
+sinüsü kare T.
+
+990
+01:14:04,496 --> 01:14:05,256
+O da eşittir.
+
+991
+01:14:05,935 --> 01:14:07,336
+İfadelerin karelerini alalım.
+
+992
+01:14:07,435 --> 01:14:08,636
+Bir eksi x
+
+993
+01:14:08,636 --> 01:14:10,496
+bölü
+
+994
+01:14:10,496 --> 01:14:12,676
+3'ün karesi
+
+995
+01:14:12,676 --> 01:14:13,996
+artı
+
+996
+01:14:13,996 --> 01:14:15,836
+Y eksi 2'nin
+
+997
+01:14:15,836 --> 01:14:17,275
+karesi.
+
+998
+01:14:19,435 --> 01:14:20,956
+Yani açık yazacak olursak
+
+999
+01:14:20,956 --> 01:14:22,956
+bir eksi x
+
+1000
+01:14:22,956 --> 01:14:25,496
+içeride olduğu için
+
+1001
+01:14:25,496 --> 01:14:26,596
+x eksi 1 olarak da
+
+1002
+01:14:26,596 --> 01:14:27,556
+yazabilirsiniz bunu.
+
+1003
+01:14:27,716 --> 01:14:28,296
+Kare olup
+
+1004
+01:14:28,296 --> 01:14:29,556
+karesini aldığımız için
+
+1005
+01:14:29,556 --> 01:14:30,695
+artık bir anlam yok bunu.
+
+1006
+01:14:31,916 --> 01:14:32,596
+Forma
+
+1007
+01:14:32,596 --> 01:14:34,036
+düzgün forma getirelim.
+
+1008
+01:14:34,256 --> 01:14:35,556
+Elips ortaya çıktı.
+
+1009
+01:14:35,655 --> 01:14:36,876
+x eksi 1 bölü
+
+1010
+01:14:36,876 --> 01:14:37,895
+3'ün
+
+1011
+01:14:37,895 --> 01:14:38,855
+hatta
+
+1012
+01:14:38,855 --> 01:14:39,676
+şöyle yapalım.
+
+1013
+01:14:45,524 --> 01:14:54,164
+x-1'in karesi bölü 9, artı y-2'nin karesi eşittir 1. Bir elips denklemini.
+
+1014
+01:14:54,804 --> 01:15:01,244
+x'i kestiği noktalar, artı eksi 3, y'yi kestiği noktalar, artı eksi 1. Böyle bir elipsi.
+
+1015
+01:15:01,324 --> 01:15:06,044
+x ekseni boyunca bir elips denklemi ortaya çıktı. Yani şöyle bir şey.
+
+1016
+01:15:07,764 --> 01:15:09,344
+Tabii, yön Taylor bilebilir yine.
+
+1017
+01:15:13,140 --> 01:15:14,460
+Vardı bu soru arkadaşlar.
+
+1018
+01:15:17,039 --> 01:15:18,780
+Bu konu zor bir konu değil.
+
+1019
+01:15:20,320 --> 01:15:23,100
+Çok fazla şey yapmaya da gerek yok açıkçası.
+
+1020
+01:15:28,404 --> 01:15:31,704
+Asıl önemli olan konumun türev alma.
+
+1021
+01:15:32,564 --> 01:15:38,484
+Burada x'i biz t'ye bağlı olarak ifade etmiştik.
+
+1022
+01:15:38,544 --> 01:15:42,604
+x eşittir gt ya da ft de demiş olabiliriz.
+
+1023
+01:15:44,704 --> 01:15:46,224
+Kutasyonlarımız uyumlu olsun.
+
+1024
+01:15:46,824 --> 01:15:49,044
+y eşittir gt.
+
+1025
+01:15:49,044 --> 01:15:54,104
+Eğer burada ft ve gt fonksiyonları t'ye bağlı olarak küretilebiliyorsa
+
+1026
+01:15:54,104 --> 01:15:58,384
+x'i y'ye bağlı ya da y'i x'e bağlı olarak küretebilmem lazım.
+
+1027
+01:15:58,604 --> 01:16:04,864
+Dolayısıyla bu durumda d y bölüde x, y'nin x'e göre türevi nedir?
+
+1028
+01:16:05,024 --> 01:16:09,404
+Bunun bir bölüsünü aldığınızda x'in y'ye göre türevini elde etmiş olursunuz.
+
+1029
+01:16:09,604 --> 01:16:15,104
+Aslında bir değişkenin başka bir değişkene göre değişim oranını merak ediyoruz.
+
+1030
+01:16:18,104 --> 01:16:20,104
+Türevi nasıl hesaplayabiliriz?
+
+1031
+01:16:20,184 --> 01:16:21,964
+Hatta buna biz y üssü diyelim.
+
+1032
+01:16:24,104 --> 01:16:26,284
+Öyle gördük çünkü.
+
+1033
+01:16:29,284 --> 01:16:31,724
+Y üssü eşittir bu ifade olsun.
+
+1034
+01:16:32,564 --> 01:16:34,324
+Burada bir Ali Cengiz oyunu yapacağız.
+
+1035
+01:16:35,364 --> 01:16:36,264
+O da eşittir.
+
+1036
+01:16:37,804 --> 01:16:38,884
+d y bölü
+
+1037
+01:16:38,884 --> 01:16:41,224
+d t çarpı
+
+1038
+01:16:41,224 --> 01:16:42,784
+d t bölü
+
+1039
+01:16:42,784 --> 01:16:43,824
+d x.
+
+1040
+01:16:43,824 --> 01:16:45,384
+Cebilsel bir işlem yaptık.
+
+1041
+01:16:45,644 --> 01:16:47,244
+Araya t'yi koyduk.
+
+1042
+01:16:47,264 --> 01:16:48,284
+Aslında yok gibi.
+
+1043
+01:16:49,664 --> 01:16:50,724
+Sadeleştirebilirsiniz bunları.
+
+1044
+01:16:50,724 --> 01:16:55,064
+y'nin t'ye göre t'nin x'e göre türevini aldık.
+
+1045
+01:16:56,904 --> 01:16:59,344
+Ya da basit zincir gibi de düşünülebilir.
+
+1046
+01:17:00,144 --> 01:17:04,004
+Ve bunu biraz daha düzenlersek o da eşittir.
+
+1047
+01:17:04,904 --> 01:17:07,904
+d y bölü d t bölü
+
+1048
+01:17:07,904 --> 01:17:09,964
+d x bölü
+
+1049
+01:17:09,964 --> 01:17:12,184
+d t olarak yazabiliriz.
+
+1050
+01:17:12,184 --> 01:17:15,084
+Bu da bana tam olarak neyi veriyor?
+
+1051
+01:17:16,364 --> 01:17:17,764
+y dediğim şey
+
+1052
+01:17:17,764 --> 01:17:18,784
+g t idi.
+
+1053
+01:17:19,604 --> 01:17:19,924
+Yani
+
+1054
+01:17:19,924 --> 01:17:21,644
+g'nin t'ye göre türevi
+
+1055
+01:17:21,644 --> 01:17:22,964
+g üssü t
+
+1056
+01:17:22,964 --> 01:17:24,704
+bölü
+
+1057
+01:17:24,704 --> 01:17:26,744
+x'in t'ye göre türevi
+
+1058
+01:17:26,744 --> 01:17:28,004
+x f t idi
+
+1059
+01:17:28,004 --> 01:17:30,784
+f üssü
+
+1060
+01:17:30,784 --> 01:17:31,524
+t.
+
+1061
+01:17:32,944 --> 01:17:33,584
+Burada
+
+1062
+01:17:33,584 --> 01:17:35,184
+ilginç bir durum yok gibi.
+
+1063
+01:17:35,564 --> 01:17:37,344
+Yaptığımız bir trik yaptık burada.
+
+1064
+01:17:37,964 --> 01:17:39,144
+Araya t'yi koyduk.
+
+1065
+01:17:39,144 --> 01:17:40,704
+t değişkenli koyduk.
+
+1066
+01:17:40,704 --> 01:17:41,484
+dikrasi olarak.
+
+1067
+01:17:43,224 --> 01:17:43,904
+Fakat
+
+1068
+01:17:43,904 --> 01:17:46,804
+genelde burada karışılan bir durum var.
+
+1069
+01:17:47,044 --> 01:17:48,824
+O ikinci türevde ortaya çıkıyor.
+
+1070
+01:17:51,264 --> 01:17:54,704
+y iki üssü
+
+1071
+01:17:54,704 --> 01:17:56,244
+o da eşittir.
+
+1072
+01:17:57,124 --> 01:17:58,864
+Buradaki notasyonla devam edelim.
+
+1073
+01:17:59,024 --> 01:18:00,704
+d y üssü
+
+1074
+01:18:00,704 --> 01:18:01,704
+bölü
+
+1075
+01:18:01,704 --> 01:18:04,164
+d x olacaktır değil mi?
+
+1076
+01:18:04,164 --> 01:18:07,464
+ya da
+
+1077
+01:18:07,464 --> 01:18:08,904
+şöyle de yazabilirsiniz.
+
+1078
+01:18:09,064 --> 01:18:09,864
+O da eşittir.
+
+1079
+01:18:10,864 --> 01:18:11,124
+d
+
+1080
+01:18:11,124 --> 01:18:15,404
+kare y bölü
+
+1081
+01:18:15,404 --> 01:18:17,584
+d x'in karesi
+
+1082
+01:18:17,584 --> 01:18:18,164
+şeklinde.
+
+1083
+01:18:18,164 --> 01:18:21,184
+notasyon olarak
+
+1084
+01:18:21,184 --> 01:18:22,344
+böyle de gösterilebilir.
+
+1085
+01:18:23,344 --> 01:18:24,364
+Bu da eşittir.
+
+1086
+01:18:24,624 --> 01:18:25,344
+Aynı şeyleri
+
+1087
+01:18:25,344 --> 01:18:26,364
+burada da uygulayalım.
+
+1088
+01:18:26,804 --> 01:18:27,864
+d y üssü
+
+1089
+01:18:27,864 --> 01:18:28,944
+bölü
+
+1090
+01:18:28,944 --> 01:18:30,524
+d t
+
+1091
+01:18:30,524 --> 01:18:31,444
+çarpı
+
+1092
+01:18:31,444 --> 01:18:33,364
+d t bölü
+
+1093
+01:18:33,364 --> 01:18:34,224
+d x.
+
+1094
+01:18:35,264 --> 01:18:35,904
+Yine
+
+1095
+01:18:35,904 --> 01:18:37,664
+paydayı alalım.
+
+1096
+01:18:38,044 --> 01:18:39,084
+d t bölü d x
+
+1097
+01:18:39,084 --> 01:18:39,944
+ifadesini
+
+1098
+01:18:39,944 --> 01:18:40,844
+ters dönecek
+
+1099
+01:18:40,844 --> 01:18:42,164
+paydayı aldığımızda.
+
+1100
+01:18:42,164 --> 01:18:44,364
+d y üssü
+
+1101
+01:18:44,364 --> 01:18:45,284
+bölü
+
+1102
+01:18:45,284 --> 01:18:46,724
+d t
+
+1103
+01:18:46,724 --> 01:18:48,164
+bölü
+
+1104
+01:18:48,164 --> 01:18:49,744
+d x bölü
+
+1105
+01:18:49,744 --> 01:18:50,104
+d t
+
+1106
+01:18:50,104 --> 01:18:50,384
+oldu.
+
+1107
+01:18:52,824 --> 01:18:53,384
+Ve burada
+
+1108
+01:18:53,384 --> 01:18:54,584
+o da eşittir.
+
+1109
+01:18:54,864 --> 01:18:55,024
+Tabii
+
+1110
+01:18:55,024 --> 01:18:58,064
+şurada f üssü
+
+1111
+01:18:58,064 --> 01:18:58,324
+t
+
+1112
+01:18:58,324 --> 01:19:01,484
+farklı sıfır
+
+1113
+01:19:01,484 --> 01:19:02,264
+dememiz lazım.
+
+1114
+01:19:02,444 --> 01:19:03,884
+Onu belirtmemiz gerekiyor.
+
+1115
+01:19:04,004 --> 01:19:04,524
+Yoksa ama
+
+1116
+01:19:04,524 --> 01:19:05,004
+hüsü olur.
+
+1117
+01:19:06,544 --> 01:19:07,264
+Burası da
+
+1118
+01:19:07,264 --> 01:19:08,564
+y üssünün
+
+1119
+01:19:08,564 --> 01:19:09,264
+t'ye göre
+
+1120
+01:19:09,264 --> 01:19:11,124
+kürevini alacağız.
+
+1121
+01:19:11,304 --> 01:19:11,764
+Yani aslında
+
+1122
+01:19:11,764 --> 01:19:12,724
+y'nin t'ye göre
+
+1123
+01:19:12,724 --> 01:19:13,524
+ikinci türevini
+
+1124
+01:19:13,524 --> 01:19:14,344
+alacağız.
+
+1125
+01:19:14,904 --> 01:19:15,244
+O zaman
+
+1126
+01:19:15,244 --> 01:19:16,244
+y iki üssü
+
+1127
+01:19:16,244 --> 01:19:16,524
+olacak.
+
+1128
+01:19:16,804 --> 01:19:17,924
+y iki üssü
+
+1129
+01:19:17,924 --> 01:19:18,564
+t
+
+1130
+01:19:18,564 --> 01:19:19,824
+bölü
+
+1131
+01:19:19,824 --> 01:19:20,984
+aşağıda
+
+1132
+01:19:20,984 --> 01:19:22,044
+ne var?
+
+1133
+01:19:22,204 --> 01:19:22,664
+Sadece
+
+1134
+01:19:22,664 --> 01:19:24,804
+d x'in t'ye göre
+
+1135
+01:19:24,804 --> 01:19:25,184
+türevi
+
+1136
+01:19:25,184 --> 01:19:25,984
+x'in t'ye göre
+
+1137
+01:19:25,984 --> 01:19:26,464
+türevi
+
+1138
+01:19:26,863 --> 01:19:42,943
+F'nin T'ye göre türevi, F üstü T. Buradaki trik de tam olarak bu arkadaşlar. Yani her defasında parametrik türev aldığımızda paydayı her zaman X'in T'ye göre türevine bölmemiz lazım.
+
+1139
+01:19:42,943 --> 01:19:54,683
+Yani burada bölümü türevi yok. Öyle bir yanılgıya düşmememiz gerekiyor. Buradaki trik de bu açıkçası. Ya da öğrencilerin göz ardı ettiği şey. Normalde bölüm türevi gibi düşünüp,
+
+1140
+01:19:56,863 --> 01:20:10,023
+hataya düşebiliyorlar ama öyle değil. Aslında yukarıya G'nin ikinci türevini aldık. Sonra bir daha X'in, yani F'nin türevine bölmüş olduk. Her defasında X'in T'ye göre türevini bölmemiz gerekiyor.
+
+1141
+01:20:10,183 --> 01:20:16,723
+Parametrik türev alırken. Şurada da yine T üstü T'nin sıfırdan farklı olduğunu söylemeliyiz.
+
+1142
+01:20:18,203 --> 01:20:19,283
+Bank soru.
+
+1143
+01:20:29,524 --> 01:20:38,044
+Buna ilgili örneğimiz olacak. Sınavlarda karşınıza çıkıyor parametrik eğiliminin t doğrusu karşınıza çıkıyor.
+
+1144
+01:20:45,268 --> 01:20:46,608
+Bunlar geçebiliriz.
+
+1145
+01:20:47,747 --> 01:20:49,307
+Bak artık tekrar yıkıyoruz.
+
+1146
+01:20:50,528 --> 01:20:50,788
+Evet.
+
+1147
+01:20:55,220 --> 01:20:57,980
+Hocam bu konunun serilerle falan bir bağlantısı var mı?
+
+1148
+01:20:58,180 --> 01:21:02,420
+Yok yok. Seriler bitirdik. Seriler alakasız artık bundan sonraki şeyler.
+
+1149
+01:21:03,079 --> 01:21:07,039
+Şöyle alakalı aslında seri konusu bir yerde söylemiştim sanki.
+
+1150
+01:21:07,619 --> 01:21:11,400
+Riemann toplamlarından önce verilmesi gereken bir konu seri konusu.
+
+1151
+01:21:11,740 --> 01:21:16,440
+Riemann toplamlarından önce. Neden? Çünkü Riemann toplamı aslında seri toplamı.
+
+1152
+01:21:16,440 --> 01:21:20,800
+Yani belirli integral aslında bir serinin yakın satı değeri bulmakla ilgili.
+
+1153
+01:21:21,619 --> 01:21:23,800
+Orada verilmesi gerekir diye düşünüyorum.
+
+1154
+01:21:23,800 --> 01:21:27,619
+Fakat şeyden önce veriliyor burada konu.
+
+1155
+01:21:28,680 --> 01:21:30,820
+Tabii başka uygulamaları da var serilerin.
+
+1156
+01:21:30,920 --> 01:21:35,340
+Daha genel nümerik yaklaşımlarda uygulamaları var.
+
+1157
+01:21:36,240 --> 01:21:37,860
+Başka yerlerde de uygulamaları var.
+
+1158
+01:21:38,420 --> 01:21:44,079
+Belirsiz elemater olmayan türevde limitler ve integrallerin hesaplanması.
+
+1159
+01:21:44,079 --> 01:21:45,199
+Aynı şekilde türevde öyle.
+
+1160
+01:21:48,079 --> 01:21:52,079
+Konserlerle bilgisi yok. Peşine gelmesi çok...
+
+1161
+01:21:53,800 --> 01:21:57,500
+Bilinçli bir şey de değil. Açıkçası çok daha fazla konu vardı MAT2'de.
+
+1162
+01:21:58,119 --> 01:22:01,520
+Bundan iki sene önce falan bayağı bir konular kırpıldı.
+
+1163
+01:22:01,760 --> 01:22:04,000
+Eksiltildi. Çok çok fazla konu vardı.
+
+1164
+01:22:05,159 --> 01:22:06,500
+Yetişmiyordu o konular.
+
+1165
+01:22:06,619 --> 01:22:07,880
+MAT1 çok makul.
+
+1166
+01:22:08,020 --> 01:22:10,300
+Yani süresi içinde rahat bir şekilde yetişiyor.
+
+1167
+01:22:10,400 --> 01:22:12,360
+Fakat MAT2 hala konular fazla.
+
+1168
+01:22:12,360 --> 01:22:14,500
+Evet hocam. Bolonadan baktım.
+
+1169
+01:22:14,960 --> 01:22:16,579
+Çok çok kalabalık yani.
+
+1170
+01:22:16,820 --> 01:22:18,400
+Ben şeyle paylaştım aslında.
+
+1171
+01:22:18,820 --> 01:22:22,400
+Web sayfamda paylaştım ilk ders hakkında bilgiler konusunda.
+
+1172
+01:22:22,539 --> 01:22:24,480
+Bütün konuları hafta hafta paylaştım bu arada.
+
+1173
+01:22:24,940 --> 01:22:27,340
+Gözünüz biraz ürkebilir onları gördüğünüzde ama
+
+1174
+01:22:27,340 --> 01:22:30,579
+yani hepsi bağlantılı konular da değil.
+
+1175
+01:22:30,740 --> 01:22:32,520
+Mesela biz bu parametriklerden sonra
+
+1176
+01:22:32,520 --> 01:22:35,079
+kutupsal koordinatlara geçeceğiz.
+
+1177
+01:22:35,180 --> 01:22:36,699
+Arada bir vektörleri göreceğiz.
+
+1178
+01:22:37,159 --> 01:22:38,140
+Linerci 1 konusu.
+
+1179
+01:22:38,220 --> 01:22:41,220
+Linerci 1'de birebir anlattığımız konuyu burada anlatacağız falan.
+
+1180
+01:22:41,220 --> 01:22:44,500
+Sonra vektör değerli fonksiyonlar konusu var.
+
+1181
+01:22:44,600 --> 01:22:47,420
+Aslında vektörel analizden
+
+1182
+01:22:47,420 --> 01:22:49,039
+ondan sonra analiz 4'den
+
+1183
+01:22:49,039 --> 01:22:50,740
+Linerci 1'den
+
+1184
+01:22:50,740 --> 01:22:53,260
+analiz 1'den birçok konu bir arada.
+
+1185
+01:22:53,720 --> 01:22:54,240
+Öyle diyeyim.
+
+1186
+01:22:57,420 --> 01:22:59,740
+Yine parametrik bir eğrimiz var.
+
+1187
+01:22:59,840 --> 01:23:02,000
+X eşitir sekante, Y eşitir tanjante
+
+1188
+01:23:02,000 --> 01:23:03,680
+ve T'nin parametre aralığı
+
+1189
+01:23:03,680 --> 01:23:05,860
+eksi P bölü 2 ile P bölü 2 aralığında
+
+1190
+01:23:05,860 --> 01:23:08,440
+yani Y ekseni üzerinde değer alıyor T.
+
+1191
+01:23:11,220 --> 01:23:13,440
+Eksi P bölü 2, P bölü 2 aralığında
+
+1192
+01:23:13,440 --> 01:23:15,560
+parametrik eğilinin
+
+1193
+01:23:15,560 --> 01:23:18,780
+hatta Y ekseni demeyelim ona.
+
+1194
+01:23:18,960 --> 01:23:20,199
+Sonuçta bunlar real sayılar.
+
+1195
+01:23:20,539 --> 01:23:21,920
+Sayı doğrusu üzerinde bir aralık.
+
+1196
+01:23:22,060 --> 01:23:22,880
+Kapalı bir aralık.
+
+1197
+01:23:23,619 --> 01:23:25,500
+Kök 2, 1 noktasındaki
+
+1198
+01:23:25,500 --> 01:23:27,400
+T doğrusunun denklemini bulalım.
+
+1199
+01:23:27,600 --> 01:23:29,199
+T doğrusu neydi arkadaşlar?
+
+1200
+01:23:30,039 --> 01:23:31,560
+T doğrusu
+
+1201
+01:23:31,560 --> 01:23:33,680
+eğilinin bir noktadaki
+
+1202
+01:23:33,680 --> 01:23:36,760
+ki o noktada verilmiş.
+
+1203
+01:23:36,900 --> 01:23:37,720
+Kök 2'ye 1.
+
+1204
+01:23:38,079 --> 01:23:39,159
+Tahminen neresidir?
+
+1205
+01:23:39,720 --> 01:23:40,340
+Çizelim.
+
+1206
+01:23:41,960 --> 01:23:44,340
+Tabii eğiliği ben tam olarak çizemeyeceğim.
+
+1207
+01:23:44,460 --> 01:23:46,380
+Onu çizmek biraz komplike olabilir.
+
+1208
+01:23:47,140 --> 01:23:48,659
+Sadece o noktayı yazacağız.
+
+1209
+01:23:49,280 --> 01:23:50,320
+Kök 2'ye 1 şöyle.
+
+1210
+01:23:50,480 --> 01:23:50,900
+1 diyelim.
+
+1211
+01:23:50,980 --> 01:23:51,860
+Kök 2 şurası.
+
+1212
+01:23:52,280 --> 01:23:53,079
+T noktada tabii
+
+1213
+01:23:53,079 --> 01:23:54,960
+konkarlılık yukarı mı aşağı mı bilmiyoruz.
+
+1214
+01:23:55,000 --> 01:23:56,180
+Burada bir T doğrusu var.
+
+1215
+01:23:56,260 --> 01:23:57,980
+Onun eğilini de pozitif mi negatif mi
+
+1216
+01:23:57,980 --> 01:23:59,180
+onu da bilmiyoruz açıkçası.
+
+1217
+01:23:59,180 --> 01:24:01,640
+Yani o herhangi bir yönde olabilir.
+
+1218
+01:24:01,780 --> 01:24:03,020
+Amacımız o eğiliği bulmak.
+
+1219
+01:24:04,460 --> 01:24:05,440
+Grafiği çizmekte
+
+1220
+01:24:05,440 --> 01:24:07,020
+baya bir uğraşmak lazım.
+
+1221
+01:24:07,400 --> 01:24:08,680
+Sonlu değer vereceğiz.
+
+1222
+01:24:08,760 --> 01:24:09,800
+Onları birleştireceğiz falan.
+
+1223
+01:24:09,840 --> 01:24:11,200
+O kadar da uğraşmaya gerek yok.
+
+1224
+01:24:11,740 --> 01:24:12,659
+Sonlu değer verip
+
+1225
+01:24:12,659 --> 01:24:14,079
+onları birleştireceğiz.
+
+1226
+01:24:14,320 --> 01:24:15,680
+Ne kadar sıklaştırırsak
+
+1227
+01:24:15,680 --> 01:24:16,940
+grafiğimiz o kadar
+
+1228
+01:24:16,940 --> 01:24:19,760
+amaca uygun olacak.
+
+1229
+01:24:20,840 --> 01:24:22,840
+Dolayısıyla eğime ihtiyacım var.
+
+1230
+01:24:23,820 --> 01:24:24,560
+Nokta belli.
+
+1231
+01:24:24,800 --> 01:24:26,079
+Tüğe P0 dersek
+
+1232
+01:24:26,079 --> 01:24:27,579
+P0 noktası
+
+1233
+01:24:27,579 --> 01:24:30,460
+kök 2'ye 1 olarak
+
+1234
+01:24:30,460 --> 01:24:31,200
+verilmiş zaten.
+
+1235
+01:24:31,340 --> 01:24:31,659
+O zaman
+
+1236
+01:24:31,659 --> 01:24:33,000
+Y eksi
+
+1237
+01:24:33,000 --> 01:24:34,140
+kök 2
+
+1238
+01:24:34,140 --> 01:24:35,400
+Pardon.
+
+1239
+01:24:35,760 --> 01:24:36,520
+Yanlış yaptım.
+
+1240
+01:24:38,340 --> 01:24:38,760
+Y eksi
+
+1241
+01:24:38,760 --> 01:24:39,520
+Y sıfır.
+
+1242
+01:24:40,039 --> 01:24:40,560
+Y eksi
+
+1243
+01:24:40,560 --> 01:24:41,800
+Hadi yazalım da.
+
+1244
+01:24:43,260 --> 01:24:44,640
+Genel anlamda yazalım.
+
+1245
+01:24:44,760 --> 01:24:45,220
+P0
+
+1246
+01:24:45,220 --> 01:24:45,539
+X0
+
+1247
+01:24:45,539 --> 01:24:45,980
+Y0
+
+1248
+01:24:45,980 --> 01:24:46,280
+olsun.
+
+1249
+01:24:47,039 --> 01:24:47,780
+Onu sonra yerine
+
+1250
+01:24:47,780 --> 01:24:48,300
+yazarız.
+
+1251
+01:24:48,380 --> 01:24:49,220
+P noktası değil.
+
+1252
+01:24:49,980 --> 01:24:51,119
+Sonra P0
+
+1253
+01:24:51,119 --> 01:24:51,619
+deriz ona.
+
+1254
+01:24:52,275 --> 01:25:18,255
+x0, y0 noktası, x0, y0 noktasındaki t doğrusunu şöyle buluyorduk ki, e-y0, t'in eğimi çarpı x-x0. Burada x0, kök 2, y0, 1 olarak verilmiş. O zaman kilit nokta, mt'yi bulmak. mt neydi? O da eşittir. d'ye bölü, dx'de t0 yazıp, çarpı x-x0.
+
+1255
+01:25:18,255 --> 01:25:30,695
+yani y0'ye göre türevini alacağım. Orada p0 noktasını, böyle p0 diyelim, p0 noktasını yazacağım. Elimde bir sayı olacak artık. O eğim olacak.
+
+1256
+01:25:32,916 --> 01:25:38,695
+O zaman yapmamız gereken şey, bu parametrik eğilimi türevini hesaplamak.
+
+1257
+01:25:40,916 --> 01:25:42,115
+d'ye bölü,
+
+1258
+01:25:43,115 --> 01:25:45,095
+bu da şöyle diyelim, mt eşittir.
+
+1259
+01:25:48,467 --> 01:25:53,268
+mt genel anlamda bulalım. Eşittir.
+
+1260
+01:25:54,688 --> 01:25:59,228
+Ya da şöyle ps4 yazalım. mt ps4. ps4 noktasındaki e'yi eşittir.
+
+1261
+01:25:59,927 --> 01:26:07,188
+d'ye bölge x noktada bunu ifade etmek için dik bir çizgi altına ps4 yazıyoruz.
+
+1262
+01:26:07,188 --> 01:26:12,747
+Bu arada [öğrenci] önerim için teşekkür ederim. Şimdi aklıma geldi. Teşekkür etmeyi unutmuşum.
+
+1263
+01:26:13,688 --> 01:26:15,407
+Çok teşekkür ederim paylaşım için.
+
+1264
+01:26:20,627 --> 01:26:22,047
+Önce türeni hesaplayalım.
+
+1265
+01:26:22,167 --> 01:26:23,768
+Sonra P0'i yerleştiririz.
+
+1266
+01:26:24,007 --> 01:26:25,188
+Bunu da yaparken
+
+1267
+01:26:25,188 --> 01:26:28,207
+DY bölü
+
+1268
+01:26:28,207 --> 01:26:28,707
+DT
+
+1269
+01:26:28,707 --> 01:26:30,587
+bölü
+
+1270
+01:26:30,587 --> 01:26:32,527
+DX bölü DT
+
+1271
+01:26:32,527 --> 01:26:35,087
+yazalım.
+
+1272
+01:26:36,847 --> 01:26:38,207
+Olduğu halinde
+
+1273
+01:26:38,207 --> 01:26:40,707
+P0 noktasında bunu değerlendireceğiz.
+
+1274
+01:26:41,447 --> 01:26:42,247
+DY bölü
+
+1275
+01:26:42,247 --> 01:26:43,887
+DT. Tanjant T var.
+
+1276
+01:26:44,247 --> 01:26:46,387
+Hatırlamıyor olabilirsiniz. Buradan beraber
+
+1277
+01:26:46,387 --> 01:26:48,447
+pratik yapmış oluruz. Hesaplayalım
+
+1278
+01:26:48,447 --> 01:26:50,207
+onları. Ne oluyor diye.
+
+1279
+01:26:50,627 --> 01:26:53,107
+O tip şeyleri
+
+1280
+01:26:53,107 --> 01:26:55,188
+ezberlemeyin arkadaşlar. Zihninizi
+
+1281
+01:26:55,188 --> 01:26:56,887
+böyle formülle şununla
+
+1282
+01:26:56,887 --> 01:26:58,887
+bununla hiç meşgul etmeyin. Ben çoğu zaman
+
+1283
+01:26:58,887 --> 01:27:01,007
+hatırlamıyorum. Sıfırdan bir daha hesaplıyorum.
+
+1284
+01:27:01,887 --> 01:27:03,207
+Tanjant dediğimiz şey
+
+1285
+01:27:03,207 --> 01:27:04,067
+Tanjant T
+
+1286
+01:27:04,067 --> 01:27:06,987
+Sin üst T bölü kosün üst T
+
+1287
+01:27:06,987 --> 01:27:10,787
+Dolayısıyla türevini
+
+1288
+01:27:10,787 --> 01:27:12,607
+almak istediğimiz her iki tarafın ise
+
+1289
+01:27:12,607 --> 01:27:14,127
+türevi
+
+1290
+01:27:14,127 --> 01:27:15,907
+Y'ye diyelim.
+
+1291
+01:27:17,188 --> 01:27:19,148
+Y üstü. T'ye göre
+
+1292
+01:27:19,148 --> 01:27:20,407
+türevi alacağım burada tabii.
+
+1293
+01:27:20,627 --> 01:27:21,847
+Y üstünün kompleksi bu.
+
+1294
+01:27:22,547 --> 01:27:25,047
+Bölüm türevi olacak. Birincinin türevi çarpı
+
+1295
+01:27:25,047 --> 01:27:27,307
+ikinci. Eksi ikincinin türevi çarpı
+
+1296
+01:27:27,307 --> 01:27:29,207
+birinci. Bölü ikincinin karesi. Birincinin
+
+1297
+01:27:29,207 --> 01:27:30,827
+türevi kosünüs çarpı kosünüs
+
+1298
+01:27:30,827 --> 01:27:31,407
+kos kare
+
+1299
+01:27:31,407 --> 01:27:33,067
+T
+
+1300
+01:27:33,067 --> 01:27:34,268
+Eksi
+
+1301
+01:27:34,268 --> 01:27:36,487
+Kosünüsün türevi
+
+1302
+01:27:36,487 --> 01:27:37,207
+Eksi sinüs
+
+1303
+01:27:37,207 --> 01:27:45,787
+Eksi çarpı
+
+1304
+01:27:45,787 --> 01:27:47,167
+Bunu da eşittir
+
+1305
+01:27:47,167 --> 01:27:48,587
+Bir bölü
+
+1306
+01:27:48,587 --> 01:27:50,927
+Kos karete olarak yazarız
+
+1307
+01:27:50,927 --> 01:27:51,947
+Bu da eşittir
+
+1308
+01:27:51,947 --> 01:27:53,127
+Sekant karete aslında
+
+1309
+01:27:53,127 --> 01:27:54,268
+Sekant karete değil mi?
+
+1310
+01:27:54,347 --> 01:27:56,167
+Zaten sekant bir bölü kosünüs ili
+
+1311
+01:27:56,167 --> 01:27:57,367
+Sekant
+
+1312
+01:27:57,367 --> 01:27:59,407
+Bir bölü kos yazabiliriz
+
+1313
+01:27:59,407 --> 01:28:00,688
+Bir bölü kosünüs ili
+
+1314
+01:28:00,688 --> 01:28:03,228
+Şimdi sekantın türevine bakalım
+
+1315
+01:28:03,228 --> 01:28:05,127
+Aynı mantığı izleyeceğim
+
+1316
+01:28:05,127 --> 01:28:06,087
+X eşittir
+
+1317
+01:28:06,087 --> 01:28:09,228
+Sonra sileyim ben bunu
+
+1318
+01:28:09,228 --> 01:28:11,427
+Şurada yer lazım
+
+1319
+01:28:11,427 --> 01:28:12,347
+Şuraya yazın
+
+1320
+01:28:12,347 --> 01:28:14,847
+X eşittir sekant'ti
+
+1321
+01:28:14,847 --> 01:28:15,987
+X eşittir
+
+1322
+01:28:15,987 --> 01:28:16,907
+X üstü
+
+1323
+01:28:16,907 --> 01:28:20,207
+Hatta ona bir bölü kosünüs de diyelim
+
+1324
+01:28:20,207 --> 01:28:22,827
+A rahat türevine alırız
+
+1325
+01:28:26,323 --> 01:28:30,203
+1 bölü cos t ise x üstü diyelim.
+
+1326
+01:28:30,443 --> 01:28:32,844
+Burada x üstüden kastım t'ye göre türev farkı.
+
+1327
+01:28:33,163 --> 01:28:34,523
+Notasyonlar karışmasın.
+
+1328
+01:28:35,143 --> 01:28:36,323
+Yine bölümün türevi.
+
+1329
+01:28:36,323 --> 01:28:38,583
+Birincinin türevi 0 çarpı ikinci.
+
+1330
+01:28:38,703 --> 01:28:41,403
+0 eksi ikincinin türevi çarpı birinci.
+
+1331
+01:28:41,983 --> 01:28:43,523
+Eksi sinüs çarpı eksi.
+
+1332
+01:28:43,863 --> 01:28:45,223
+Artı sinüs çarpı bir.
+
+1333
+01:28:45,403 --> 01:28:47,083
+Yani sinüs t.
+
+1334
+01:28:47,603 --> 01:28:50,083
+Bölü ikincinin karesi cos kare t.
+
+1335
+01:28:50,344 --> 01:28:51,283
+Buradan da ne geldi?
+
+1336
+01:28:51,423 --> 01:28:54,043
+Tanjam t çarpı sekant t geldi.
+
+1337
+01:28:54,363 --> 01:28:54,583
+Değil mi?
+
+1338
+01:28:54,583 --> 01:28:56,344
+Sin bölü cos tanjam.
+
+1339
+01:28:56,523 --> 01:28:57,963
+Bir tane 1 bölü cos mu kaldı?
+
+1340
+01:28:58,023 --> 01:28:58,803
+O da sekant idi.
+
+1341
+01:28:59,223 --> 01:29:00,763
+O zaman türevimizi hesapladık.
+
+1342
+01:29:01,523 --> 01:29:02,483
+Şuradan devam edeyim.
+
+1343
+01:29:04,723 --> 01:29:07,223
+D'ye bölü dt'yi şurada bulmuştuk.
+
+1344
+01:29:07,303 --> 01:29:08,163
+Sekant kare t.
+
+1345
+01:29:09,863 --> 01:29:12,303
+Sekant kare t bölü.
+
+1346
+01:29:13,323 --> 01:29:16,943
+Sekant t çarpı tanjam t.
+
+1347
+01:29:18,043 --> 01:29:22,363
+Burada p0 noktasını yazmam lazım.
+
+1348
+01:29:22,723 --> 01:29:24,483
+Burada işte bir durum var.
+
+1349
+01:29:24,583 --> 01:29:27,143
+t'yi yazmam lazım.
+
+1350
+01:29:27,243 --> 01:29:28,323
+O zaman t'yi bulmalıyım.
+
+1351
+01:29:28,463 --> 01:29:31,303
+Yani elimde x ve y değerleri var aslında.
+
+1352
+01:29:31,643 --> 01:29:33,303
+Şurası x0, şurası y0.
+
+1353
+01:29:33,423 --> 01:29:36,663
+Onları yerine yazarak onlara karşılık gelen t değerini bulmam lazım.
+
+1354
+01:29:37,003 --> 01:29:37,223
+Değil mi?
+
+1355
+01:29:37,503 --> 01:29:39,263
+Herhangi bir denklemde yazmam yeterli.
+
+1356
+01:29:39,263 --> 01:29:44,483
+Ya x yerine kök 2 yazarak çözerim bunu ya da y yerine 1 yazarak çözerim.
+
+1357
+01:29:44,643 --> 01:29:46,263
+İkisi de aynı şey olacak zaten.
+
+1358
+01:29:46,263 --> 01:29:49,263
+O zaman p0 bulmak için.
+
+1359
+01:29:49,263 --> 01:29:51,423
+Şurada yapalım onu.
+
+1360
+01:29:51,423 --> 01:30:06,023
+p0 değerini veren t'yi bulalım diyeyim.
+
+1361
+01:30:06,023 --> 01:30:07,823
+Böyle bağlayalım.
+
+1362
+01:30:08,423 --> 01:30:15,743
+O zaman kök 2 eşittir sekante veya aşağıda yerim yok karantez olarak yazalım.
+
+1363
+01:30:15,903 --> 01:30:17,103
+1 eşittir tanjantı.
+
+1364
+01:30:18,243 --> 01:30:19,103
+Bu ikisinden biri.
+
+1365
+01:30:19,103 --> 01:30:22,683
+Bana baktığımızda tanjantta nerede bir olur?
+
+1366
+01:30:22,943 --> 01:30:23,723
+t eşittir.
+
+1367
+01:30:24,183 --> 01:30:25,563
+p bölü 4'te olur değil mi?
+
+1368
+01:30:26,323 --> 01:30:33,083
+Aynı zamanda tanjanta pardon t'ye p bölü 4 yazdığımda sekant bir bölü kosünüs idi.
+
+1369
+01:30:33,903 --> 01:30:35,263
+Yukarıda bir yerde yazmıştır.
+
+1370
+01:30:35,443 --> 01:30:36,483
+Bir bölü kosünüs idi.
+
+1371
+01:30:36,603 --> 01:30:39,023
+Bir bölü bir bölü kök 2 kök 2 olarak gelecek.
+
+1372
+01:30:39,423 --> 01:30:41,923
+Dolayısıyla p0 eşittir.
+
+1373
+01:30:42,043 --> 01:30:43,403
+Pardon p0 demeyelim.
+
+1374
+01:30:44,003 --> 01:30:45,344
+Oraya artık t yazayım ben.
+
+1375
+01:30:46,503 --> 01:30:46,884
+Buraya.
+
+1376
+01:30:46,884 --> 01:30:48,344
+Bunu diyelim.
+
+1377
+01:30:49,103 --> 01:30:52,363
+Ya da t0 diyelim.
+
+1378
+01:30:52,783 --> 01:30:54,483
+Aslında p0 burada mantıklı.
+
+1379
+01:30:55,203 --> 01:30:56,583
+Şurada da p0 mantıklı.
+
+1380
+01:30:56,663 --> 01:30:57,743
+Burada artık t diyelim.
+
+1381
+01:30:57,943 --> 01:30:59,203
+Ve t0 diyelim oraya.
+
+1382
+01:30:59,723 --> 01:31:00,543
+p bölü 4.
+
+1383
+01:31:02,123 --> 01:31:04,763
+Bir nokta sonuçta t0 diyebiliriz.
+
+1384
+01:31:05,623 --> 01:31:06,983
+t dediğim gibi sorun yok.
+
+1385
+01:31:07,663 --> 01:31:10,384
+Yerine yazdığımızda o zaman eğimi bulmuş olacağız.
+
+1386
+01:31:11,243 --> 01:31:14,583
+Sekant kare p bölü 4.
+
+1387
+01:31:14,583 --> 01:31:16,844
+Sekant p bölü 4 zaten kök 2 idi.
+
+1388
+01:31:16,844 --> 01:31:18,583
+Kök 2'nin karesi.
+
+1389
+01:31:18,643 --> 01:31:20,304
+Hatta bunları sadeleştire de biliriz.
+
+1390
+01:31:20,423 --> 01:31:21,603
+Bir tane sekant gidiyor.
+
+1391
+01:31:22,103 --> 01:31:24,943
+O zaman kök 2 bölü.
+
+1392
+01:31:25,143 --> 01:31:26,543
+Sekantın bir tanesi sadeleşti.
+
+1393
+01:31:26,623 --> 01:31:28,323
+Tanjant p bölü 4 1 idi.
+
+1394
+01:31:28,823 --> 01:31:29,643
+Bu da eşittir.
+
+1395
+01:31:30,103 --> 01:31:31,203
+Kök 2 olmuş oldu.
+
+1396
+01:31:31,903 --> 01:31:32,143
+Tamam.
+
+1397
+01:31:32,563 --> 01:31:33,783
+Şuraya hemen yerine yazalım.
+
+1398
+01:31:33,783 --> 01:31:34,783
+İse diyelim.
+
+1399
+01:31:36,583 --> 01:31:38,083
+Y eksi y sıtır.
+
+1400
+01:31:38,403 --> 01:31:41,243
+Yani y eksi bir eşittir.
+
+1401
+01:31:41,423 --> 01:31:42,203
+Eğimi bulduk.
+
+1402
+01:31:42,623 --> 01:31:43,723
+Kök 2 çarpı.
+
+1403
+01:31:44,163 --> 01:31:45,183
+X eksi x sıtır.
+
+1404
+01:31:45,863 --> 01:31:47,503
+X eksi kök 2.
+
+1405
+01:31:47,863 --> 01:31:49,523
+İsteyen biraz daha düzenleyebilirim.
+
+1406
+01:31:49,583 --> 01:31:50,344
+Y eşittir.
+
+1407
+01:31:51,263 --> 01:31:52,663
+Kök 2 x.
+
+1408
+01:31:52,663 --> 01:31:55,123
+Kök 2 çarpı.
+
+1409
+01:31:55,183 --> 01:31:56,023
+Kök 2 burası.
+
+1410
+01:31:56,643 --> 01:31:57,763
+Eksi 2 oldu.
+
+1411
+01:31:58,823 --> 01:31:59,823
+Karşıyı geçti.
+
+1412
+01:31:59,863 --> 01:32:00,683
+Bir eksi 1 olmuş.
+
+1413
+01:32:01,463 --> 01:32:05,623
+Bu şekilde bize verilen parametrik elvinin.
+
+1414
+01:32:05,623 --> 01:32:08,863
+p sıfır noktasındaki ama kartezyen olarak verilmiş nokta.
+
+1415
+01:32:08,923 --> 01:32:09,543
+Burası önemli.
+
+1416
+01:32:10,123 --> 01:32:11,223
+Şöyle de gelebilirdi.
+
+1417
+01:32:11,384 --> 01:32:12,123
+T eşittir.
+
+1418
+01:32:12,263 --> 01:32:17,243
+Teta noktasındaki t doğrusunu bulmuş şeklinde.
+
+1419
+01:32:17,344 --> 01:32:19,344
+Yani bizi uğraştırmak istemeyebilirdi.
+
+1420
+01:32:19,884 --> 01:32:21,283
+Fakat uğraştırmak istese.
+
+1421
+01:32:21,807 --> 01:32:29,047
+Yani bunu yeni gören bir öğrenci şöyle düşünecek ya tamam da ben bu P0'ı nereye yazacağım benim türevlerim?
+
+1422
+01:32:29,847 --> 01:32:30,927
+T'ye bağlı.
+
+1423
+01:32:31,547 --> 01:32:33,828
+Tabii şöyle bir yol izleyebilir. Ne yapar?
+
+1424
+01:32:33,927 --> 01:32:37,108
+Arc sekantları alır T yerine X'e bağlı bir şeyler.
+
+1425
+01:32:37,268 --> 01:32:41,207
+Onları yerine yazabilirsiniz ama işiniz çok karmaşık hale gelir.
+
+1426
+01:32:41,627 --> 01:32:42,547
+Onu da söylemiş o adam.
+
+1427
+01:32:42,847 --> 01:32:44,167
+Var sorularınız arkadaşlar.
+
+1428
+01:32:49,971 --> 01:32:51,311
+O zaman devam edelim.
+
+1429
+01:33:02,003 --> 01:33:04,503
+Burada da ikinci türevi istiyor bizden.
+
+1430
+01:33:05,144 --> 01:33:09,644
+Parametrik eğrisi için d kare y bölü d x kare türevini istiyor.
+
+1431
+01:33:10,524 --> 01:33:13,243
+Öncelikle d y bölü d x'i bulalım.
+
+1432
+01:33:13,604 --> 01:33:15,463
+Y üstü eşittir.
+
+1433
+01:33:16,463 --> 01:33:18,783
+d y bölü d x.
+
+1434
+01:33:19,783 --> 01:33:22,724
+Türev yazarken arkadaşlar hangi değişkeni?
+
+1435
+01:33:22,783 --> 01:33:26,483
+Bu birinci türev ama neye göre birinci türev sorusunu sormamız lazım.
+
+1436
+01:33:26,604 --> 01:33:29,024
+Burada kim bağımlı kim bağımsız?
+
+1437
+01:33:29,743 --> 01:33:30,623
+Bunu sormamız gerekiyor.
+
+1438
+01:33:30,623 --> 01:33:34,583
+Yukarıda x'in türevin x üstü dedim.
+
+1439
+01:33:34,684 --> 01:33:37,024
+Aslında orada x'in t'ye göre türevini almış oldum.
+
+1440
+01:33:37,243 --> 01:33:38,203
+İşte y üstü dedim.
+
+1441
+01:33:38,604 --> 01:33:39,384
+y'nin t'ye göre.
+
+1442
+01:33:39,503 --> 01:33:41,483
+Bir de aslında y üstünü bir daha kullandım.
+
+1443
+01:33:41,863 --> 01:33:43,503
+x'in y'ye göre türevi.
+
+1444
+01:33:43,764 --> 01:33:45,524
+Pardon y'nin x'e göre türevi.
+
+1445
+01:33:45,524 --> 01:33:50,403
+O yüzden notasyon olarak aşina olduğumuz için direkt üstü koyuyorum.
+
+1446
+01:33:50,483 --> 01:33:54,423
+Birinci türev yerine ama neye göre birinci türev sorusu çok önemli her zaman.
+
+1447
+01:33:55,224 --> 01:33:57,724
+Burada y üstümden kastım.
+
+1448
+01:33:58,003 --> 01:33:59,323
+y'nin x'e göre türevi.
+
+1449
+01:34:00,623 --> 01:34:03,283
+Bu da nasıl ifade ediliyordu?
+
+1450
+01:34:03,283 --> 01:34:07,644
+y'nin t'ye göre türevi.
+
+1451
+01:34:08,743 --> 01:34:10,323
+Şöyle yazabiliriz bunu.
+
+1452
+01:34:11,043 --> 01:34:16,144
+y üstü t bölü x üstü t.
+
+1453
+01:34:16,344 --> 01:34:22,264
+Bu da fonksiyonlar verilmediği için notasyon uydurdum.
+
+1454
+01:34:22,264 --> 01:34:25,163
+Yani bu y üstü ile bu y üstü bir değil.
+
+1455
+01:34:25,764 --> 01:34:31,264
+Kafanız karışacaksa yukarıda biz x'i f t ile y'yi g t ile göstermiştik.
+
+1456
+01:34:31,823 --> 01:34:32,543
+Hadi öyle yapalım.
+
+1457
+01:34:32,663 --> 01:34:33,804
+Şurası g üstü t.
+
+1458
+01:34:33,804 --> 01:34:57,463
+Evet.
+
+1459
+01:34:38,003 --> 01:34:39,503
+Şurası da f üstü t olacak.
+
+1460
+01:34:42,043 --> 01:34:42,703
+G üstü t.
+
+1461
+01:34:43,283 --> 01:34:44,403
+F üstü de şuraya
+
+1462
+01:34:44,403 --> 01:34:47,543
+ft diyelim. Eşiktir f t.
+
+1463
+01:34:48,443 --> 01:34:49,963
+Böyle eşittir g t diyelim.
+
+1464
+01:34:50,943 --> 01:34:51,524
+Açık olsun.
+
+1465
+01:34:51,524 --> 01:34:52,224
+Tamam.
+
+1466
+01:34:53,524 --> 01:34:54,804
+O zaman y üstün
+
+1467
+01:34:54,804 --> 01:34:57,224
+1
+
+1468
+01:34:57,224 --> 01:34:59,863
+eksi 3 tane t'nin
+
+1469
+01:34:59,863 --> 01:35:03,524
+karesi
+
+1470
+01:35:03,524 --> 01:35:04,184
+bölü
+
+1471
+01:35:04,184 --> 01:35:05,703
+şurada
+
+1472
+01:35:05,703 --> 01:35:08,583
+1 eksi 2 tane t.
+
+1473
+01:35:09,783 --> 01:35:11,043
+Birinci türevi bulduk.
+
+1474
+01:35:11,363 --> 01:35:12,243
+Burada sorun yok.
+
+1475
+01:35:13,064 --> 01:35:14,583
+İkinci türevi bulalım.
+
+1476
+01:35:15,184 --> 01:35:16,043
+y 2 üstü
+
+1477
+01:35:16,043 --> 01:35:18,123
+eşittir.
+
+1478
+01:35:18,363 --> 01:35:19,443
+d kare
+
+1479
+01:35:19,443 --> 01:35:20,823
+y bölü
+
+1480
+01:35:20,823 --> 01:35:23,884
+dx'in karesi o da eşittir.
+
+1481
+01:35:24,724 --> 01:35:26,144
+dy üstü bölü
+
+1482
+01:35:26,144 --> 01:35:28,503
+dx o da eşittir.
+
+1483
+01:35:29,043 --> 01:35:30,043
+Artık bu yeni fonksiyonu
+
+1484
+01:35:30,764 --> 01:35:32,443
+şuna g üstü
+
+1485
+01:35:32,443 --> 01:35:33,703
+diyelim. Şu ifade
+
+1486
+01:35:33,703 --> 01:35:34,823
+g üstü olsun.
+
+1487
+01:35:35,703 --> 01:35:37,043
+g üstü
+
+1488
+01:35:37,043 --> 01:35:39,003
+t diyelim buna.
+
+1489
+01:35:39,483 --> 01:35:41,043
+A işte g üstü t değil.
+
+1490
+01:35:41,283 --> 01:35:42,003
+Bunun başka bir şey
+
+1491
+01:35:42,003 --> 01:35:42,583
+denem lazım.
+
+1492
+01:35:42,783 --> 01:35:44,243
+h t değil.
+
+1493
+01:35:44,703 --> 01:35:45,043
+h t
+
+1494
+01:35:45,043 --> 01:35:46,283
+daha mantıklı olur.
+
+1495
+01:35:46,863 --> 01:35:47,323
+h t
+
+1496
+01:35:47,323 --> 01:35:48,863
+o zaman
+
+1497
+01:35:48,863 --> 01:35:50,443
+h üstü
+
+1498
+01:35:50,443 --> 01:35:51,783
+t bölü
+
+1499
+01:35:51,783 --> 01:35:52,203
+yine
+
+1500
+01:35:52,203 --> 01:35:53,743
+f üstü t'ye
+
+1501
+01:35:53,743 --> 01:35:54,503
+bakmam lazım.
+
+1502
+01:35:54,503 --> 01:35:55,844
+h üstü
+
+1503
+01:35:55,844 --> 01:35:59,423
+h üstü t'yi
+
+1504
+01:35:59,423 --> 01:35:59,863
+bir yerde
+
+1505
+01:35:59,863 --> 01:36:00,884
+hesaplayalım o zaman.
+
+1506
+01:36:01,043 --> 01:36:01,804
+Bölümün türevi
+
+1507
+01:36:01,804 --> 01:36:02,304
+bölü
+
+1508
+01:36:02,304 --> 01:36:04,144
+payda aynı olacak yine.
+
+1509
+01:36:04,264 --> 01:36:05,144
+1 eksi 2 t'ye
+
+1510
+01:36:05,144 --> 01:36:05,903
+bir daha böleceğim.
+
+1511
+01:36:06,224 --> 01:36:06,463
+Fakat
+
+1512
+01:36:06,463 --> 01:36:08,024
+h üstü t için
+
+1513
+01:36:08,024 --> 01:36:08,804
+bölümün türevini
+
+1514
+01:36:08,804 --> 01:36:09,423
+almam lazım.
+
+1515
+01:36:09,583 --> 01:36:10,283
+O da eşittir.
+
+1516
+01:36:11,923 --> 01:36:12,844
+Birincinin türevi
+
+1517
+01:36:12,844 --> 01:36:13,264
+çarpı
+
+1518
+01:36:13,264 --> 01:36:13,764
+ikinci
+
+1519
+01:36:13,764 --> 01:36:14,403
+oradan
+
+1520
+01:36:14,403 --> 01:36:17,583
+eksi 6 tane t
+
+1521
+01:36:17,583 --> 01:36:18,583
+çarpı
+
+1522
+01:36:18,583 --> 01:36:19,344
+1 eksi
+
+1523
+01:36:19,344 --> 01:36:20,304
+2 tane t
+
+1524
+01:36:20,304 --> 01:36:21,264
+eksi
+
+1525
+01:36:21,264 --> 01:36:23,323
+ikincinin türevi
+
+1526
+01:36:23,323 --> 01:36:24,224
+çarpı birinci
+
+1527
+01:36:24,224 --> 01:36:25,323
+eksi dedik.
+
+1528
+01:36:25,724 --> 01:36:27,064
+Bir eksi şuradan geldi.
+
+1529
+01:36:27,724 --> 01:36:29,043
+1 eksi 2 t'nin türevi
+
+1530
+01:36:29,043 --> 01:36:29,684
+eksi 2
+
+1531
+01:36:29,684 --> 01:36:31,344
+artı
+
+1532
+01:36:31,344 --> 01:36:33,583
+2 çarpı
+
+1533
+01:36:33,583 --> 01:36:35,224
+1 eksi 3
+
+1534
+01:36:35,224 --> 01:36:36,184
+tekrar
+
+1535
+01:36:36,184 --> 01:36:37,344
+bölüm
+
+1536
+01:36:37,884 --> 01:36:40,663
+1 eksi
+
+1537
+01:36:40,663 --> 01:36:41,423
+2 t'nin
+
+1538
+01:36:41,423 --> 01:36:42,783
+parantez karesi
+
+1539
+01:36:42,783 --> 01:36:43,363
+1 eksi
+
+1540
+01:36:43,363 --> 01:36:45,043
+2 t'nin
+
+1541
+01:36:45,043 --> 01:36:46,623
+parantez karesi
+
+1542
+01:36:46,623 --> 01:36:48,224
+bu h üstü t
+
+1543
+01:36:48,224 --> 01:36:49,264
+bölüm
+
+1544
+01:36:49,264 --> 01:36:50,384
+unutmamam
+
+1545
+01:36:50,384 --> 01:36:51,184
+gereken şey
+
+1546
+01:36:51,184 --> 01:36:52,283
+f üstü t
+
+1547
+01:36:52,283 --> 01:36:53,023
+f üstü t yine
+
+1548
+01:36:53,023 --> 01:36:53,903
+başa geliyorum.
+
+1549
+01:36:54,363 --> 01:36:55,243
+1 eksi 2 t
+
+1550
+01:36:55,243 --> 01:36:57,043
+1 eksi
+
+1551
+01:36:57,043 --> 01:36:58,443
+2 t
+
+1552
+01:36:58,443 --> 01:37:00,804
+bu işlemler yapılabilir.
+
+1553
+01:37:00,903 --> 01:37:01,703
+Paydayı 3 olarak
+
+1554
+01:37:01,703 --> 01:37:02,363
+geçer falan.
+
+1555
+01:37:02,443 --> 01:37:02,743
+Yukarısı
+
+1556
+01:37:02,743 --> 01:37:03,804
+sadeleştirilir.
+
+1557
+01:37:08,467 --> 01:37:10,967
+Sen yapayalım halini yazabiliriz orada.
+
+1558
+01:37:17,043 --> 01:37:33,363
+Onu da sadeleştirdiğimizde yukarıdaki ifadeleri, 6 tane t kare, 6 tane t kare, eksi 6 tane t, artı 2 bölüm, faydalı ifade kübü olacak.
+
+1559
+01:37:33,363 --> 01:37:41,363
+1 eksi 2 tane t'nin kübü. Yukarıyı ne yaptık? Dağıttık, topladık işlemleri yaptık.
+
+1560
+01:37:41,363 --> 01:37:48,663
+Şurada 12 tane t kare geliyor. 6 tane t kare şurada var, eksi ile ise 6 tane t kare oldu.
+
+1561
+01:37:49,323 --> 01:37:59,403
+Sonra 6t ifadesi şuradan geliyor, eksi 6t. Eksi 6t çarp 1, bir de artı 2'miz var, o da şuradan geliyor.
+
+1562
+01:38:09,363 --> 01:38:17,123
+Parametrik eğrinin yay uzunluğu, bunu da bitirip diğer dersimizde kutuksal koordinatlara başlayalım arkadaşlar.
+
+1563
+01:38:17,343 --> 01:38:19,384
+O konu biraz uzunca bu hafta bitmeyecek.
+
+1564
+01:38:21,843 --> 01:38:26,343
+Yay uzunluğunda kartezyen koordinatlardaki yay uzunluğuyla aslında aynı.
+
+1565
+01:38:26,583 --> 01:38:29,103
+Tabi burada parametre aralığı sınırlandırılmış.
+
+1566
+01:38:31,243 --> 01:38:37,523
+Kartezyen koordinatlardaki yay uzunluğunu AB aralığında A'dan B'ye nasıl hesaplıyorduk?
+
+1567
+01:38:37,523 --> 01:38:44,003
+Kök içinde 1 artı y üstünün karesi dx olarak hesaplıyorduk.
+
+1568
+01:38:44,103 --> 01:38:54,503
+Bu tamamen eğride hipotenüsler çizerek, eğri altında hipotenüsler oluşturarak hipotenüs uzunluklarını şunları birleştire birleştire.
+
+1569
+01:38:54,623 --> 01:38:56,843
+Tabi şuralar delta x'lerimiz.
+
+1570
+01:38:56,943 --> 01:39:03,323
+Delta x'ler sıfıra yaklaştığı zaman eğri üzerindeki bütün noktaları adeta birleştirmiş gibi oluyorduk.
+
+1571
+01:39:03,323 --> 01:39:06,603
+Şurada bir tane daha hipotenüs var, bir tane daha şöyle.
+
+1572
+01:39:06,603 --> 01:39:09,483
+O hipotenüsleri birleştire birleştire.
+
+1573
+01:39:10,083 --> 01:39:16,403
+Aralığı biz delta x'i sıfıra yaklaştırdığımızda bu bizim bölüntü sayısının sonsuza gitmesi demek.
+
+1574
+01:39:16,863 --> 01:39:20,943
+Dolayısıyla tam olarak eğrinin uzunluğunu ölçmüş oluyorduk.
+
+1575
+01:39:21,343 --> 01:39:30,303
+Aslında oradan karte alınmış bir yay uzunluğu denklemi ve bir tek değişkenli fonksiyonların yay uzunluğundan geliyor.
+
+1576
+01:39:30,303 --> 01:39:33,863
+Aynı mantık sadece ilgili değişkenleri yerine yazıyoruz.
+
+1577
+01:39:34,923 --> 01:39:38,623
+Bunları yerine yazdığımızda elimizde bir para eğri olsun.
+
+1578
+01:39:39,843 --> 01:39:45,003
+Tabi yay uzunluğunu hesaplarken ay genelde kısıtlı verir.
+
+1579
+01:39:45,183 --> 01:39:46,643
+Ay ile b aralığına verir.
+
+1580
+01:39:46,643 --> 01:39:50,183
+Fakat bazen trikli soru sorulmak istenirse burada önemli husus.
+
+1581
+01:39:50,623 --> 01:39:53,243
+T'nin bir ucu bağımsız bırakılabilir.
+
+1582
+01:39:53,483 --> 01:39:58,343
+Yani T'yi şöyle A küçük eşit T küçük eşit X diyebilir.
+
+1583
+01:39:58,463 --> 01:40:00,183
+Burada X herhangi real sayı falan.
+
+1584
+01:40:00,603 --> 01:40:04,303
+Başlaymış noktasını işte A dediğim sıfırdan başlatır X'e kadar der.
+
+1585
+01:40:04,743 --> 01:40:07,663
+Ya da bunu sonsuza kadar da alabilir.
+
+1586
+01:40:08,023 --> 01:40:10,303
+Yani aslında bu halde X her şeyi alabiliyor.
+
+1587
+01:40:10,423 --> 01:40:12,763
+Dolayısıyla örtük olarak sonsuza gidiyor.
+
+1588
+01:40:12,763 --> 01:40:14,903
+Burada bir sonlu durumu ele almak lazım.
+
+1589
+01:40:15,003 --> 01:40:18,043
+Bir de sonsuza gittiği zaman improper bir integral ortaya çıkıyor.
+
+1590
+01:40:18,103 --> 01:40:20,003
+Onu mimik durumda hesaplamamız gerekiyor.
+
+1591
+01:40:20,303 --> 01:40:22,623
+Yani o eğri uzunluğunu bölmek gerekiyor artık.
+
+1592
+01:40:23,083 --> 01:40:28,163
+Sonlu durum bir de bir ucun sonsuza gittiği durumda hesaplamak gerekebilir.
+
+1593
+01:40:28,583 --> 01:40:31,583
+Geçmiş yıllarda sınavlara da böyle sorular sorulmuştu.
+
+1594
+01:40:31,583 --> 01:40:37,923
+Fakat biz burada sınırlı bir aralıkta verilmiş gibi ele alacağız.
+
+1595
+01:40:37,923 --> 01:40:47,563
+A, B aralığında T parametresi X koordinatı T'nin bir fonksiyonu FT, Y koordinatı G'nin bir fonksiyonu verdiğimiz haliyle.
+
+1596
+01:40:47,563 --> 01:40:50,863
+Başlangıç ve bitiş noktaları B'li.
+
+1597
+01:40:50,963 --> 01:40:53,223
+F, A, G, A, F, B, G, B.
+
+1598
+01:40:53,343 --> 01:40:54,523
+Başlangıç bitiş noktaları.
+
+1599
+01:40:54,603 --> 01:40:58,384
+Bu durumda E'nin yay uzunluğunu B ile gösterelim onu.
+
+1600
+01:40:58,463 --> 01:40:59,623
+A'dan B'ye bir integral.
+
+1601
+01:41:00,363 --> 01:41:06,243
+X'in T'ye göre türevinin karesi artı Y'nin T'ye göre türevinin karesi çartı DT.
+
+1602
+01:41:06,243 --> 01:41:10,263
+Burada yukarıda yazdım tamamen formülden ortaya çıkıyor bunlar.
+
+1603
+01:41:10,403 --> 01:41:12,763
+Yani A'dan biz onu B'den C'ye diyelim.
+
+1604
+01:41:13,323 --> 01:41:14,903
+Değişebilir çünkü kök içinde.
+
+1605
+01:41:15,803 --> 01:41:20,223
+1 artı Y üstünün karesi DX.
+
+1606
+01:41:21,843 --> 01:41:29,543
+Şurada X yerine biz FT dedik.
+
+1607
+01:41:30,403 --> 01:41:33,023
+Y yerine GT dedik.
+
+1608
+01:41:33,023 --> 01:41:38,243
+Dolayısıyla bu ifadeleri yerine yazdığımızda DT'yi elde etmek için ne yapmamız lazım?
+
+1609
+01:41:38,443 --> 01:41:44,923
+DT yerine yani DX dediğimiz şey aslında F'ü T, F'ü T, DT imiş.
+
+1610
+01:41:45,203 --> 01:41:46,123
+Onu yazmamız lazım.
+
+1611
+01:41:46,243 --> 01:41:51,183
+İçeriden tabi parantezlere falan uygun işlemler yaparak bu forma getirebiliriz.
+
+1612
+01:41:51,183 --> 01:41:55,483
+Şu herhalde FT'yi bir şekilde kök dışına.
+
+1613
+01:41:59,380 --> 01:42:00,960
+DT'yi yalnız bırakmak için
+
+1614
+01:42:00,960 --> 01:42:02,119
+şeylere bölmek gerekir.
+
+1615
+01:42:02,539 --> 01:42:04,500
+Şu 1 o yüzden F T'ü kare
+
+1616
+01:42:04,500 --> 01:42:06,180
+olacak içeri geçtiği için.
+
+1617
+01:42:06,380 --> 01:42:07,600
+Öyle oldu. Şurası
+
+1618
+01:42:07,600 --> 01:42:10,260
+G üstü T kare niye kaldı?
+
+1619
+01:42:10,340 --> 01:42:12,720
+Burada aslında G üstü dediğimiz şey
+
+1620
+01:42:12,720 --> 01:42:15,199
+G üstü T
+
+1621
+01:42:15,199 --> 01:42:16,380
+böyle F üstü T'ydi.
+
+1622
+01:42:17,039 --> 01:42:18,560
+Sonra F üstü T'yi içeri
+
+1623
+01:42:18,560 --> 01:42:20,720
+aldığımızda çarpacağız burada. Paydadan gitti.
+
+1624
+01:42:20,840 --> 01:42:22,819
+Şuraya 1 ile çarptığımızda F üstü T kare
+
+1625
+01:42:22,819 --> 01:42:24,619
+geldi. Sıfatı da bu kadar basit yani.
+
+1626
+01:42:24,980 --> 01:42:27,039
+Tamamen tek değişkenli
+
+1627
+01:42:27,039 --> 01:42:27,840
+fonksiyonların
+
+1628
+01:42:27,840 --> 01:42:31,380
+şeyleri bir yazalım
+
+1629
+01:42:31,380 --> 01:42:32,659
+onu yazalım açık olsun.
+
+1630
+01:42:33,140 --> 01:42:35,520
+Şu formülden hareket ettik simreleri yazmayacağım
+
+1631
+01:42:35,520 --> 01:42:36,340
+zaten belli.
+
+1632
+01:42:37,640 --> 01:42:39,359
+Eşittir. İntekral
+
+1633
+01:42:39,359 --> 01:42:40,619
+kök içinde
+
+1634
+01:42:40,619 --> 01:42:43,400
+1 artı
+
+1635
+01:42:43,400 --> 01:42:45,600
+G üstü T'nin
+
+1636
+01:42:45,600 --> 01:42:49,199
+karesi bölü
+
+1637
+01:42:49,199 --> 01:42:50,960
+F üstü T'nin
+
+1638
+01:42:50,960 --> 01:42:53,340
+parantez karesi
+
+1639
+01:42:53,340 --> 01:42:54,920
+çarpı
+
+1640
+01:42:54,920 --> 01:42:56,579
+F üstü T
+
+1641
+01:42:56,579 --> 01:42:58,140
+çarpı
+
+1642
+01:42:58,140 --> 01:42:58,560
+DT.
+
+1643
+01:42:59,000 --> 01:43:00,060
+Değişken dönüşümü yaptım.
+
+1644
+01:43:00,199 --> 01:43:00,920
+Başka bir şey yok.
+
+1645
+01:43:01,199 --> 01:43:02,720
+F üstü T'yi kök içine alırsam
+
+1646
+01:43:02,720 --> 01:43:03,680
+kare olarak gelecek.
+
+1647
+01:43:03,819 --> 01:43:05,140
+Şu sadeleşecek ifade.
+
+1648
+01:43:05,940 --> 01:43:07,940
+Sonuç itibariyle sınırlar da belli artık.
+
+1649
+01:43:08,039 --> 01:43:08,880
+T'nin sınırları
+
+1650
+01:43:08,880 --> 01:43:09,680
+A'dan B'ye
+
+1651
+01:43:09,680 --> 01:43:12,380
+şurada yine A'dan B'ye yazabilirim.
+
+1652
+01:43:12,500 --> 01:43:14,560
+Ama yukarıda şurada daha farklı şeyler.
+
+1653
+01:43:14,560 --> 01:43:15,840
+Yani C'den D'ye diyebiliriz.
+
+1654
+01:43:15,880 --> 01:43:16,539
+Onu bilmiyoruz.
+
+1655
+01:43:16,900 --> 01:43:17,680
+Bulması lazım.
+
+1656
+01:43:18,380 --> 01:43:19,000
+Kök içinde
+
+1657
+01:43:19,000 --> 01:43:21,300
+F T'yi içeri aldığında
+
+1658
+01:43:21,300 --> 01:43:22,500
+1 ile çarptığımızda
+
+1659
+01:43:22,500 --> 01:43:23,940
+F üstü T'nin
+
+1660
+01:43:23,940 --> 01:43:25,159
+şöyle yazalım.
+
+1661
+01:43:25,260 --> 01:43:25,859
+Karesi
+
+1662
+01:43:25,859 --> 01:43:26,680
+artı
+
+1663
+01:43:26,680 --> 01:43:27,900
+şurayı da çarptığımızda
+
+1664
+01:43:27,900 --> 01:43:28,699
+sadeleşecek.
+
+1665
+01:43:28,940 --> 01:43:29,900
+Sadece G üstü
+
+1666
+01:43:29,900 --> 01:43:31,819
+T'nin karesi kaldı.
+
+1667
+01:43:32,060 --> 01:43:32,440
+Çarpı
+
+1668
+01:43:32,440 --> 01:43:32,900
+B T.
+
+1669
+01:43:33,260 --> 01:43:33,440
+Yani
+
+1670
+01:43:33,440 --> 01:43:35,800
+ıspatında böyle rahat bir şekilde yapabiliriz.
+
+1671
+01:43:36,119 --> 01:43:36,659
+Parametrik
+
+1672
+01:43:36,659 --> 01:43:37,020
+aslında
+
+1673
+01:43:37,020 --> 01:43:37,900
+kartezgeninden
+
+1674
+01:43:37,900 --> 01:43:38,880
+ne yaptık?
+
+1675
+01:43:39,020 --> 01:43:40,300
+Adapte etmiş olduk.
+
+1676
+01:43:40,300 --> 01:43:44,079
+Buna ilgili bir örneğimiz var.
+
+1677
+01:43:44,640 --> 01:43:45,600
+Örneğimizi yapalım.
+
+1678
+01:43:46,600 --> 01:43:47,460
+Sonra bir ara verelim.
+
+1679
+01:43:47,600 --> 01:43:48,279
+Aradan sonra
+
+1680
+01:43:48,279 --> 01:43:51,380
+kutupsal koordinatlarla
+
+1681
+01:43:51,380 --> 01:43:52,260
+devam edeceğiz.
+
+1682
+01:43:59,220 --> 01:44:01,320
+Formülümüzü şuraya tekrar yazalım.
+
+1683
+01:44:01,460 --> 01:44:03,100
+L eşittir. A'dan B'ye.
+
+1684
+01:44:03,220 --> 01:44:05,300
+A değeri sıfır. B değeri
+
+1685
+01:44:05,300 --> 01:44:07,140
+2P. Sıfırdan
+
+1686
+01:44:07,140 --> 01:44:09,400
+2P'ye. Kök içinde
+
+1687
+01:44:09,400 --> 01:44:15,199
+şu ifade yani
+
+1688
+01:44:15,199 --> 01:44:17,400
+F'nin türevinin karesi.
+
+1689
+01:44:18,140 --> 01:44:19,119
+Onları yazalım.
+
+1690
+01:44:19,280 --> 01:44:20,039
+F üstü
+
+1691
+01:44:20,039 --> 01:44:21,400
+T'nin
+
+1692
+01:44:21,400 --> 01:44:24,020
+karesi artı
+
+1693
+01:44:24,020 --> 01:44:26,119
+Y üstü T'nin
+
+1694
+01:44:26,119 --> 01:44:27,280
+karesi
+
+1695
+01:44:27,280 --> 01:44:29,000
+çarpı D'dir.
+
+1696
+01:44:29,880 --> 01:44:32,039
+Yapmam gereken F üstü T'yi
+
+1697
+01:44:32,039 --> 01:44:33,699
+hesabı. Burada
+
+1698
+01:44:33,699 --> 01:44:35,900
+bu tip sorularda bizi uğraştıran
+
+1699
+01:44:35,900 --> 01:44:37,980
+ikinci durum kök içinden kurtarmak.
+
+1700
+01:44:38,520 --> 01:44:39,980
+İntegral hesaplayabilmek için
+
+1701
+01:44:39,980 --> 01:44:41,840
+kök içinden. Bunun için de bazen
+
+1702
+01:44:41,840 --> 01:44:43,659
+manipülasyon yapmak gerekebilir. Eğer
+
+1703
+01:44:43,659 --> 01:44:45,699
+tamamen T'ye bağlı şeylerse
+
+1704
+01:44:45,699 --> 01:44:48,380
+ekleme çıkarma yaparak onu tam kare
+
+1705
+01:44:48,380 --> 01:44:49,960
+haline getirmeye çalışabiliriz.
+
+1706
+01:44:50,360 --> 01:44:52,300
+Trigonometrik bir ifade ise
+
+1707
+01:44:52,300 --> 01:44:54,240
+trigonometrik özdeşlikleri
+
+1708
+01:44:54,240 --> 01:44:56,340
+kullanarak tam kare
+
+1709
+01:44:56,340 --> 01:44:57,500
+haline getirip kökten
+
+1710
+01:44:57,500 --> 01:44:59,240
+kurtarmaya çalışmalıyız.
+
+1711
+01:44:59,820 --> 01:45:01,480
+Böyle trikler çıkabiliyor.
+
+1712
+01:45:01,619 --> 01:45:02,180
+İkincisi
+
+1713
+01:45:02,180 --> 01:45:02,980
+eğer
+
+1714
+01:45:02,980 --> 01:45:04,100
+T'nin yine
+
+1715
+01:45:04,100 --> 01:45:06,180
+hatta üçüncü önemli husus
+
+1716
+01:45:06,180 --> 01:45:08,440
+T'nin parametre aralığında
+
+1717
+01:45:08,440 --> 01:45:10,380
+pozitif negatif değerler alıyorsa
+
+1718
+01:45:10,380 --> 01:45:12,320
+mutlak değer olarak bunu düşünmeliyim.
+
+1719
+01:45:12,320 --> 01:45:14,820
+yani şu köklü ifade köklü ifade olduğu için
+
+1720
+01:45:14,820 --> 01:45:16,940
+bu örnekte öyle bir durum yok.
+
+1721
+01:45:17,440 --> 01:45:20,740
+T'nin parametre aralığında pozitif negatif değerler alıyorsa
+
+1722
+01:45:20,740 --> 01:45:23,140
+kesinlikle bunu kök dışına çıkarırken
+
+1723
+01:45:23,140 --> 01:45:27,000
+mutlak değer içinde çıkarıp ona göre düşünmeliyim.
+
+1724
+01:45:27,000 --> 01:45:27,560
+düşünmeliyim.
+
+1725
+01:45:27,560 --> 01:45:31,680
+O zaman integralı kırılma noktalarında bölmemiz gerekecek.
+
+1726
+01:45:32,060 --> 01:45:33,619
+Pozitif olduğu değerlerde eksiyle
+
+1727
+01:45:33,619 --> 01:45:35,680
+pardon negatif olduğu değerlerde eksiyle
+
+1728
+01:45:35,680 --> 01:45:37,740
+çarpıp kök dışına çıkaracağız ya da
+
+1729
+01:45:37,740 --> 01:45:40,119
+pozitif olduğu yerlerde de aynen çıkaracağız.
+
+1730
+01:45:40,460 --> 01:45:42,680
+İki parçalı ya da buna bağlı olarak
+
+1731
+01:45:42,680 --> 01:45:43,780
+belki birkaç parçalı
+
+1732
+01:45:43,780 --> 01:45:45,079
+integraller çıkabilir.
+
+1733
+01:45:46,079 --> 01:45:47,740
+E'nin D uzunluğunu hesaplarken.
+
+1734
+01:45:47,740 --> 01:45:48,900
+O zaman
+
+1735
+01:45:48,900 --> 01:45:51,619
+F üstü T değerini bulalım.
+
+1736
+01:45:51,760 --> 01:45:52,960
+F üstü T eşittir.
+
+1737
+01:45:53,520 --> 01:45:54,800
+Eksi R çarpı
+
+1738
+01:45:54,800 --> 01:45:56,039
+kosinüs
+
+1739
+01:45:56,039 --> 01:45:58,060
+simüs T
+
+1740
+01:45:58,060 --> 01:46:00,480
+eksi R çarpı simüs T
+
+1741
+01:46:00,480 --> 01:46:04,060
+G üstü T
+
+1742
+01:46:04,060 --> 01:46:05,860
+Basit bir soru bu.
+
+1743
+01:46:06,560 --> 01:46:08,039
+Fakat sınavlarda
+
+1744
+01:46:08,039 --> 01:46:11,940
+böyle sorular gelmiyordu.
+
+1745
+01:46:12,159 --> 01:46:13,280
+Örgün öğretimdeyken
+
+1746
+01:46:13,280 --> 01:46:15,140
+böyle basit sorular sorulmuyor.
+
+1747
+01:46:15,140 --> 01:46:15,600
+çok iyi.
+
+1748
+01:46:15,700 --> 01:46:17,560
+Genelde böyle yay uzunluğuyla ilgili
+
+1749
+01:46:17,560 --> 01:46:18,720
+karmaşık sorular.
+
+1750
+01:46:19,039 --> 01:46:21,079
+Hem türevler alırken zorluk çıkaran
+
+1751
+01:46:21,079 --> 01:46:23,060
+kök içinden kurtarırken zorluklar
+
+1752
+01:46:23,060 --> 01:46:26,460
+sınırlarda pozitif negatif değer alabilecek
+
+1753
+01:46:26,460 --> 01:46:28,480
+yani öğrenciyi düşünmeye sevk edecek
+
+1754
+01:46:28,480 --> 01:46:30,480
+daha komplike sorular soruluyordu.
+
+1755
+01:46:31,119 --> 01:46:31,980
+Onu söylemiş olalım.
+
+1756
+01:46:32,300 --> 01:46:33,579
+R çarpı kosinüs T
+
+1757
+01:46:33,579 --> 01:46:35,480
+her ikisinin biz karesini alırsak
+
+1758
+01:46:36,200 --> 01:46:40,159
+F üstü T'nin karesi artı
+
+1759
+01:46:40,159 --> 01:46:43,480
+Y üstü T'nin karesi
+
+1760
+01:46:43,480 --> 01:46:44,700
+o da eşittir.
+
+1761
+01:46:45,140 --> 01:46:47,300
+R kare
+
+1762
+01:46:47,300 --> 01:46:50,180
+sin karete artı
+
+1763
+01:46:50,180 --> 01:46:50,780
+R kare
+
+1764
+01:46:50,780 --> 01:46:52,500
+kos karete
+
+1765
+01:46:52,500 --> 01:46:55,079
+bunu da R kare parantezini aldığımız zaman
+
+1766
+01:46:55,079 --> 01:46:56,940
+R kare olarak karşımıza çıktı.
+
+1767
+01:46:58,180 --> 01:46:58,720
+Aslında bu
+
+1768
+01:46:58,720 --> 01:47:01,320
+yarı çapı R olan çember arkadaşlar.
+
+1769
+01:47:01,320 --> 01:47:04,480
+x'in ve y'nin ayrı ayrı karesini alıp toplarsanız
+
+1770
+01:47:04,480 --> 01:47:06,400
+x kare artı Y kare işte R kare
+
+1771
+01:47:06,400 --> 01:47:06,960
+çemberi
+
+1772
+01:47:06,960 --> 01:47:10,119
+çemberi yarı çapı R olan çemberi
+
+1773
+01:47:10,119 --> 01:47:11,400
+o zaman R eşittir.
+
+1774
+01:47:11,400 --> 01:47:13,560
+integral sıfırdan
+
+1775
+01:47:13,560 --> 01:47:15,039
+sıfırdan 2P'ye
+
+1776
+01:47:15,039 --> 01:47:18,480
+dolayısıyla yarı çapı R olan çemberin
+
+1777
+01:47:18,480 --> 01:47:19,360
+y uzunluğu nedir?
+
+1778
+01:47:19,440 --> 01:47:20,079
+çevresidir.
+
+1779
+01:47:20,200 --> 01:47:21,180
+2P R olacak.
+
+1780
+01:47:21,940 --> 01:47:23,420
+Onu da ispatlamış oluyorum.
+
+1781
+01:47:24,440 --> 01:47:25,320
+Neden çevre,
+
+1782
+01:47:25,560 --> 01:47:27,440
+çemberin çevresi 2P R?
+
+1783
+01:47:27,440 --> 01:47:28,760
+Evet.
+
+1784
+01:47:29,460 --> 01:47:30,140
+Kök içinde
+
+1785
+01:47:30,140 --> 01:47:32,240
+R'nin karesi
+
+1786
+01:47:32,240 --> 01:47:34,079
+D T.
+
+1787
+01:47:34,440 --> 01:47:34,800
+R
+
+1788
+01:47:34,800 --> 01:47:36,840
+T'den bağımsız.
+
+1789
+01:47:37,360 --> 01:47:38,340
+Bunu dışarı alabilirim.
+
+1790
+01:47:38,400 --> 01:47:39,880
+Mutlak değer olarak almam lazım.
+
+1791
+01:47:40,079 --> 01:47:41,020
+Fakat zaten
+
+1792
+01:47:41,020 --> 01:47:44,220
+pozitif olarak almam lazım.
+
+1793
+01:47:44,360 --> 01:47:45,539
+Yarı çapı olduğu için
+
+1794
+01:47:45,539 --> 01:47:49,199
+dışarıya pozitif olarak çıkacak.
+
+1795
+01:47:49,200 --> 01:47:50,659
+bu R çarpı
+
+1796
+01:47:50,659 --> 01:47:51,520
+şöyle sıfırdan
+
+1797
+01:47:51,520 --> 01:47:52,880
+2P'ye
+
+1798
+01:47:53,460 --> 01:48:15,380
+D, T olarak yazalım. Neden? Çünkü R ile T arasında bir ilişki yok. R bir sabit. Herhangi bir sabit. O da eşittir. R çarpı T sıfırdan 2P'ye o da eşittir. 2P'ye birim yazalım. 2P'ye birim. Çemberin, yarı çapırı L olan çemberin çevre uzunluğu.
+
+1799
+01:48:15,380 --> 01:48:24,399
+Basit bir örnekti. Daha komplike sanırım ödevlerde var böyle bir örnek. Ya da birkaç tane de olabilir. Bilmiyorum.
+
+1800
+01:48:25,859 --> 01:48:36,680
+Kurtarmaya çalışırken kök içinde trigonometrik eşitlik kullanmanız gerekecek. Özneşitlik kullanmanız gerekecek. Sanırım bu konunun son sorusuydu.
+
+1801
+01:48:38,060 --> 01:48:45,239
+Yine bir ara verelim arkadaşlar. Sonra ben de o arada sunumunu yenileyim. Kutupsal koordinatlarla devam edelim. Olur mu?
+
+1802
+01:48:45,380 --> 01:48:48,220
+Bugün 3D'ye bir ara. Bugün 3D'ye katılım yok. Herhalde konu basit diye.
+
+1803
+01:48:50,039 --> 01:48:51,460
+Yine bir 10 dakika ara verelim.
+
+1804
+01:48:51,460 --> 01:48:51,500
+Şimdi 10 dakika ara verelim.
+
+1805
+01:48:57,395 --> 01:48:58,855
+Çok hızlı mı ilerliyoruz?
+
+1806
+01:49:02,868 --> 01:49:04,668
+Aslında çok değil hocam yani.
+
+1807
+01:49:05,788 --> 01:49:07,508
+Yani takip edebiliyorsunuz, sorun yok.
+
+1808
+01:49:08,088 --> 01:49:08,368
+Evet.
+
+1809
+01:49:08,928 --> 01:49:09,168
+Tamam.
+
+1810
+01:49:09,307 --> 01:49:14,048
+Bir de bunları daha önceden gördüğümüz için en azından türev bir altyapımız var. Yani seriler biraz daha garip gelmişti.
+
+1811
+01:49:14,288 --> 01:49:14,388
+Evet.
+
+1812
+01:49:16,268 --> 01:49:20,608
+Nerede gördünüz? Mat 1'de mi gördünüz? Parametrik denklemler mat 1'de? Göstereyim mi?
+
+1813
+01:49:20,668 --> 01:49:22,648
+Evet, ben parametrik denklemleri lisede gördüm.
+
+1814
+01:49:22,868 --> 01:49:23,807
+Ha, lisede gördünüz.
+
+1815
+01:49:23,968 --> 01:49:24,148
+Evet.
+
+1816
+01:49:25,188 --> 01:49:27,847
+Lise müfredatında parametrik denklemler var mı?
+
+1817
+01:49:28,648 --> 01:49:31,508
+Yurt dışında okudum hocam ben. Orada vardı, kaldırmamıştı yani.
+
+1818
+01:49:31,508 --> 01:49:32,508
+Nerede okudunuz.
+
+1819
+01:49:32,508 --> 01:49:34,368
+Ben Suudi Arabistan'da okudum.
+
+1820
+01:49:34,368 --> 01:49:34,908
+Evet.
+
+1821
+01:49:35,668 --> 01:49:36,988
+İyi yani şanslısınız.
+
+1822
+01:49:37,568 --> 01:49:39,628
+Evet, o konuda öyle oldu.
+
+1823
+01:50:29,971 --> 01:50:31,791
+Tamam, hemen yüklüyorum katmanı.
+
+1824
+01:50:54,707 --> 01:51:21,187
+Arkadaşlar, bu sunumlarda ve uygulamalarda, cevap anahtarlarında herhangi bir hata görürseniz, çok ayıklamaya çalıştım ben bunları. Arkadaşlarımdan dönüp de aldım sağ olsunlar geçmiş dönemlerde. Lütfen onları bana yazın ki içerikler daha, hala hatalar görüyorum mesela ben. Hesaplama hataları olabiliyor, yazım hataları olabiliyor. Onları bana yazabilirseniz çok memnun olurum.
+
+1825
+01:52:16,627 --> 01:52:23,807
+Sunum ağrısı seviyledim arkadaşlar, 5. haftanın konusunu. Oradan yitemeliyorsanız, sunumdan takip ediyorsanız.
+
+1826
+02:04:53,300 --> 02:04:58,560
+Merhaba arkadaşlar. Sayımız giderek azalıyor. İyice azalmadan başlayalım.
+
+1827
+02:04:59,739 --> 02:05:06,159
+Aslında beşinci haftanın konusu ama bir haftamız şeyle gideceği için bayram tatiliyle.
+
+1828
+02:05:06,440 --> 02:05:12,380
+Sanki başka bir resim tatili daha vardı. O günlerde ders yapamıyordu maalesef.
+
+1829
+02:05:12,480 --> 02:05:16,060
+Online'da olsa. O yüzden biraz ileri geçmemiz gerekiyor.
+
+1830
+02:05:16,140 --> 02:05:20,300
+Bir de sınav öncesi açıkçası biz çıkmış sınav çözmeyi planlıyorum.
+
+1831
+02:05:20,300 --> 02:05:23,720
+Eğer zaman bize izin verirse.
+
+1832
+02:05:26,000 --> 02:05:29,420
+Dolayısıyla önümüzdeki haftanın konusuna başlayacağız.
+
+1833
+02:05:29,640 --> 02:05:32,960
+Kutupsal koordinatlar konusu. Biraz etraflıca işleyeceğiz bu konuyu.
+
+1834
+02:05:33,520 --> 02:05:35,360
+Sınavlar da karşınıza çıkıyor.
+
+1835
+02:05:38,539 --> 02:05:48,720
+Dönemin sonuna doğru katlı integralleri gördüğümüzde iki katlı integrallerde bir değişken dönüşüm yöntemi olarak da kutupsal koordinat yöntemini göreceğiz.
+
+1836
+02:05:48,720 --> 02:05:52,300
+Fakat alan konusu var. Burada da yapacağız.
+
+1837
+02:05:52,420 --> 02:05:54,140
+Onu iki katlı integrallerde de.
+
+1838
+02:05:54,460 --> 02:05:57,640
+Bunlar farklı bakış açıları, farklı konseptler.
+
+1839
+02:05:57,680 --> 02:05:59,820
+O yüzden karıştırmamamız gerekiyor.
+
+1840
+02:06:00,420 --> 02:06:03,779
+Bu konu muhtemelen birinci vize de bununla ilgili sorular sordur.
+
+1841
+02:06:03,860 --> 02:06:05,140
+Alan hesabıyla ilgili falan.
+
+1842
+02:06:05,380 --> 02:06:06,420
+Yay uzunluğu işte.
+
+1843
+02:06:07,140 --> 02:06:09,020
+Denklemleri dönüştürmesiyle ilgili.
+
+1844
+02:06:09,020 --> 02:06:14,940
+İki katlı integraller konusundaki bağlamıyla buradaki bağlamı farklı şeyler.
+
+1845
+02:06:15,300 --> 02:06:16,720
+Onu not etmiş olalım.
+
+1846
+02:06:17,220 --> 02:06:19,980
+Hangi konuları göreceğiz bu konu başlığı altında?
+
+1847
+02:06:20,579 --> 02:06:23,300
+Öncelikle kutupsal koordinatları tanıtacağız.
+
+1848
+02:06:23,940 --> 02:06:28,100
+Bazı durumlarda bu koordinat sistemi çok elverişli hale geliyor.
+
+1849
+02:06:28,100 --> 02:06:33,619
+Bir anda denklemler çok basit hale indirgenebiliyor ki onları göreceğiz.
+
+1850
+02:06:33,940 --> 02:06:39,020
+Çember denkleme, doğru denkleme nasıl daha basit bir hale geliyor bu koordinat sisteminde.
+
+1851
+02:06:40,119 --> 02:06:43,779
+Ve belki de dünyamızın yapısıyla da daha uyumlu.
+
+1852
+02:06:43,880 --> 02:06:47,880
+İşte bunun geneleştirilmiş hali üç boyutta küresel koordinatlar.
+
+1853
+02:06:47,880 --> 02:06:57,079
+Daha kullanışlı, gerçek, nasıl diyeyim, doğayla daha uyumlu bir koordinat sistemi gibi.
+
+1854
+02:06:57,159 --> 02:06:58,680
+Hani öyle denilebilir açıkçası.
+
+1855
+02:06:59,680 --> 02:07:02,980
+Kutupsal denklemler ve bazı özel tip denklemleri göreceğiz.
+
+1856
+02:07:03,119 --> 02:07:05,199
+Bütün denklemleri tabii görmek mümkün.
+
+1857
+02:07:05,199 --> 02:07:10,260
+Aslında üç sınıf, çember, doğru ve bölge olarak denklemleri göreceğiz.
+
+1858
+02:07:10,739 --> 02:07:15,500
+Kutupsal koordinatlar ile kartezi koordinatlar arasında bir ilişki var.
+
+1859
+02:07:15,600 --> 02:07:16,699
+Geçiş sağlanabiliyor.
+
+1860
+02:07:16,699 --> 02:07:18,520
+Bunlar arasında geçiş var.
+
+1861
+02:07:20,199 --> 02:07:27,180
+Bazen kartezi koordinatlarda karmaşık olan bir şeyi siz kutupsal koordinatlara taşıdığınızda bir anda basit hale geliyor.
+
+1862
+02:07:28,420 --> 02:07:32,260
+O yüzden integrallik hesaplarken bölge dönüşümü yapılır.
+
+1863
+02:07:32,260 --> 02:07:40,320
+Yani çembersel ifadeler içeriyorsa bir bölge onu kutupsal koordinatlara taşımak işimizi kolaylaştırır.
+
+1864
+02:07:41,539 --> 02:07:45,140
+Tıpkı parametrik denklemlerde olduğu gibi iki taraflı bir geçiş var.
+
+1865
+02:07:46,699 --> 02:07:49,699
+Kutupsal koordinatlarda simetrilerden bahsedeceğiz.
+
+1866
+02:07:49,820 --> 02:07:51,920
+Bu simetriler üç tane temel simetri var.
+
+1867
+02:07:52,039 --> 02:07:54,680
+Her biri iki ana başlık altında inceleniyor.
+
+1868
+02:07:55,420 --> 02:07:58,640
+Bir tanesini bulduğumuzda zaten işimizi kolaylaştırıyor.
+
+1869
+02:07:58,760 --> 02:07:59,980
+Simetrileri niye ararız?
+
+1870
+02:08:00,079 --> 02:08:01,520
+Bütünüyle uğraşmak istemiyoruz.
+
+1871
+02:08:02,480 --> 02:08:03,920
+İş yükümüzü azaltmak istiyoruz.
+
+1872
+02:08:04,039 --> 02:08:05,659
+Simetri varsa yarısıyla uğraş.
+
+1873
+02:08:05,739 --> 02:08:07,600
+Diğer yarısına bakmana gerek yok.
+
+1874
+02:08:07,940 --> 02:08:08,840
+Onun aynısı olacak.
+
+1875
+02:08:08,920 --> 02:08:10,060
+Kopyası olacak çünkü.
+
+1876
+02:08:10,060 --> 02:08:15,239
+O yüzden simetrileri göreceğiz kutupsal koordinatlarda simetriler.
+
+1877
+02:08:15,300 --> 02:08:18,360
+Bu simetriler grafik çizimi için tabii ki gerekli olacak bize.
+
+1878
+02:08:20,480 --> 02:08:27,560
+Esasında bizim matbirdeki o türev konusundan sonra bize verilen bir fonksiyonun tam olarak grafiğini çizmek.
+
+1879
+02:08:27,659 --> 02:08:28,980
+Aslında bir türev uygulaması.
+
+1880
+02:08:29,659 --> 02:08:31,400
+Altı yedi tane madde halinde.
+
+1881
+02:08:31,900 --> 02:08:34,100
+Onları yaptıktan sonra işte ne yapıyoruz?
+
+1882
+02:08:34,260 --> 02:08:36,279
+Fonksiyonun tanım kümesini belirliyoruz.
+
+1883
+02:08:36,280 --> 02:08:39,500
+Çünkü grafiği tanım kümesi içerisinde çizeceğiz.
+
+1884
+02:08:40,060 --> 02:08:43,699
+Ondan sonra fonksiyonun tanımsız olduğu noktalar varsa onları buluyoruz.
+
+1885
+02:08:43,760 --> 02:08:45,880
+Onlar bizim düşe asintotlarımız olacak.
+
+1886
+02:08:46,079 --> 02:08:47,920
+Varsa yatay asintotları buluyoruz.
+
+1887
+02:08:49,652 --> 02:08:54,311
+Türev yardımıyla fonksiyonun artan azalan olduğu yerlerini belirliyoruz.
+
+1888
+02:08:54,391 --> 02:09:00,771
+Birinci türev yardımıyla, ikinci türev yardımıyla konkallık yönlerini belirliyoruz.
+
+1889
+02:09:00,771 --> 02:09:11,572
+Sonra bütün bu bilgileri tablolarda düzenleyerek o tabloya bağlı kalarak grafiğimizi tam olarak çizebiliyoruz.
+
+1890
+02:09:11,992 --> 02:09:15,391
+Fakat kutupsal koordinatlarda maalesef böyle bir teknik yok.
+
+1891
+02:09:15,391 --> 02:09:21,271
+Bu simetrilerden yararlanarak, bazı değerleri yerine yazarak daha pratik yöntemler var açıkçası.
+
+1892
+02:09:21,271 --> 02:09:29,372
+Kartezyen'den çizip onu kutupsal koordinatlara taşımak gibi öyle pratik yöntemler var.
+
+1893
+02:09:29,511 --> 02:09:31,332
+Fakat biz burada o yöntemi anlatmayacağız.
+
+1894
+02:09:31,891 --> 02:09:35,731
+Ki zaten grafik çizimiyle çok fazla işimiz de olmayacak açıkçası.
+
+1895
+02:09:35,872 --> 02:09:41,011
+Eskiden lemniskatlar, limaçoğunlar, kardiyotlar, yonca yaprakları vardı.
+
+1896
+02:09:41,532 --> 02:09:44,311
+Fakat onların neredeyse tamamı müfredatlar çıkarıldı.
+
+1897
+02:09:44,311 --> 02:09:53,311
+Artık siz işte 3 yapraklı, 3 yonca yaprağı, 3 dallı yonca yaprağı, 4 dallı yonca yaprağı falan böyle şeylerle uğraşmayacaksınız.
+
+1898
+02:09:53,931 --> 02:09:56,311
+Ya da limaçoğunlar, lemniskatlar falan.
+
+1899
+02:09:56,431 --> 02:09:59,492
+Sadece kardiyot var, çember var, doğrular var.
+
+1900
+02:09:59,891 --> 02:10:01,692
+Onların da grafikleri belli zaten.
+
+1901
+02:10:02,152 --> 02:10:05,672
+Ama yine de biz bu grafik çizimi için gerekli bilgiyi vereceğiz.
+
+1902
+02:10:06,152 --> 02:10:08,032
+Çünkü biraz meşakkatli bir iş.
+
+1903
+02:10:08,152 --> 02:10:11,832
+Kutupsal koordinatlarda grafik çizmek biraz meşakkatli bir iş.
+
+1904
+02:10:11,832 --> 02:10:18,072
+Pratik yöntem, belki o verilebilir ama müfredatta olmadığı için onun üzerinde durmuyoruz.
+
+1905
+02:10:18,172 --> 02:10:20,351
+O karteziyende çiziliyor, sonra taşınıyor falan.
+
+1906
+02:10:20,452 --> 02:10:22,652
+Onun da da karmaşıklıklar olabiliyor bu arada.
+
+1907
+02:10:23,811 --> 02:10:29,032
+Daha sonra grafik çiziminden sonra alan hesabı, alan nasıl oluyor?
+
+1908
+02:10:29,172 --> 02:10:32,992
+Tabii onun için bir alan formülü çıkaracağız.
+
+1909
+02:10:32,992 --> 02:10:36,752
+Daha sonra yay uzunluğu, kutsal bir eğilimin yay uzunluğu.
+
+1910
+02:10:37,271 --> 02:10:38,832
+Bu şeye benzer açıkçası.
+
+1911
+02:10:39,652 --> 02:10:41,292
+Parametriklere çok benzer.
+
+1912
+02:10:41,912 --> 02:10:45,252
+Ve kutsal koordinat konusu bitmiş olacak arkadaşlar.
+
+1913
+02:10:45,551 --> 02:10:47,811
+Biz bu hafta sanırım şeye geliriz.
+
+1914
+02:10:47,912 --> 02:10:50,212
+Üçüncü maddeye kadar gelebiliriz.
+
+1915
+02:10:50,471 --> 02:10:52,152
+Yani oraya kadar gelebiliriz.
+
+1916
+02:10:52,231 --> 02:10:56,431
+Diğerleri haftaya kalacak belki iki ders daha konuyla harcarız.
+
+1917
+02:10:57,072 --> 02:10:58,492
+İki saat daha demek istedim.
+
+1918
+02:10:58,492 --> 02:11:03,372
+Peki kutupsal koordinat sistemi nedir ya da kutupsal gösterim nedir?
+
+1919
+02:11:04,351 --> 02:11:09,452
+Normalde karteziyen koordinatlarda aslında karteziyen koordinattan kastım dik koordinat sistemi.
+
+1920
+02:11:09,851 --> 02:11:16,712
+Yani burada eksenler arasında ben dik çizemesem de y ve x eksenleri arasında bu bizim işimizi kolaylaştırdığı için
+
+1921
+02:11:16,712 --> 02:11:21,971
+açıyı, teta'yı biz pi bölü 2 alarak dik koordinat sisteminde kullanırız.
+
+1922
+02:11:22,091 --> 02:11:24,692
+Bu herkesin hayatına manumaya girmiştir.
+
+1923
+02:11:24,692 --> 02:11:29,992
+Fakat burada aslında sonsuz tane koordinat sistemi, karteziyen koordinat sistemi oluşturulabilir.
+
+1924
+02:11:30,112 --> 02:11:39,332
+Teta'yı herhangi bir açı alarak siz bir koordinat sistemi teşkil edebilirsiniz ki bu da ötelemelere ve dönmelere karşılık gelecek dik koordinat sisteminde.
+
+1925
+02:11:39,811 --> 02:11:43,952
+Bazen dik koordinat sistemi çok kullanışlı olmaz.
+
+1926
+02:11:44,431 --> 02:11:47,752
+Fonksiyonlarımız, denklemlerimiz karmaşık görünür.
+
+1927
+02:11:48,172 --> 02:11:51,692
+Onları bir çemberin üzerinde yer alıyormuş gibi düşünebiliriz.
+
+1928
+02:11:51,692 --> 02:11:53,832
+Bir çember üzerinde.
+
+1929
+02:11:54,112 --> 02:11:55,931
+Hayır burada referans noktalarımız olacak.
+
+1930
+02:11:56,452 --> 02:11:58,612
+Dik koordinat sisteminde referans noktamız ne?
+
+1931
+02:11:58,792 --> 02:11:59,872
+Bir orjinimiz var.
+
+1932
+02:12:00,212 --> 02:12:00,431
+Değil mi?
+
+1933
+02:12:00,672 --> 02:12:02,412
+Orjin ve eksenler var.
+
+1934
+02:12:02,492 --> 02:12:04,952
+Bir noktayı x y nokta çiftliği ile ifade ediyoruz.
+
+1935
+02:12:05,332 --> 02:12:07,351
+x ekseni boyunca kaç birim geldim?
+
+1936
+02:12:07,771 --> 02:12:09,572
+y ekseni boyunca kaç birim geldim?
+
+1937
+02:12:09,631 --> 02:12:12,131
+Onların kesişiminde x y noktası yer alacak.
+
+1938
+02:12:12,292 --> 02:12:14,091
+Şöyle x 0, y 0 diyelim.
+
+1939
+02:12:14,311 --> 02:12:14,931
+Daha güzel olsun.
+
+1940
+02:12:15,091 --> 02:12:16,252
+x 0, y 0 olsun.
+
+1941
+02:12:16,731 --> 02:12:16,992
+Değil mi?
+
+1942
+02:12:16,992 --> 02:12:22,172
+Aynı şekilde kututsal olarak da gösterebiliriz.
+
+1943
+02:12:22,572 --> 02:12:26,872
+Bunun için de referans noktamız yine bir kutup merkezi dediğimiz bir nokta olacak.
+
+1944
+02:12:27,011 --> 02:12:30,912
+Ki belki de dünyanın geometrik şeklinden esinlenilerek bu isimlendirme yapıldı.
+
+1945
+02:12:30,912 --> 02:12:52,532
+kutup ekseni
+
+1946
+02:12:32,884 --> 02:12:35,503
+Tam olarak teta eşitir sıfırdan geçen açı.
+
+1947
+02:12:35,703 --> 02:12:36,703
+Teta eşitir sıfır.
+
+1948
+02:12:37,123 --> 02:12:43,524
+Kutup merkezi dediğimiz yani her bir noktayı biz bir r teta ikilisiyle ifade edeceğiz.
+
+1949
+02:12:43,743 --> 02:12:47,524
+Kutup merkezine olan uzaklık ve kutup ekseniyle yaptığı açı cinsinden.
+
+1950
+02:12:47,524 --> 02:12:49,384
+Oraya p r teta.
+
+1951
+02:12:49,463 --> 02:12:54,003
+Birinci sıraya r'yi kutup merkezine olan şuraya kutup merkezi diyelim.
+
+1952
+02:12:54,844 --> 02:12:56,003
+Kutup merkezi.
+
+1953
+02:12:57,823 --> 02:12:59,644
+Şurası da kutup ekseni.
+
+1954
+02:12:59,644 --> 02:13:04,863
+Kutup ekseni.
+
+1955
+02:13:05,203 --> 02:13:08,304
+Tabi şuraya tetayı yazmamıyım ki anlamda olsun.
+
+1956
+02:13:08,604 --> 02:13:10,844
+Böyle teta ifadesini yazıyoruz.
+
+1957
+02:13:11,543 --> 02:13:20,804
+Kutup merkezine olan uzaklığı ve kutup ekseniyle yaptığı açı cinsinden her bir noktayı ifade edebiliriz.
+
+1958
+02:13:20,984 --> 02:13:21,783
+Adresleyebiliriz.
+
+1959
+02:13:21,783 --> 02:13:30,724
+Tabi burada teta iki pi'de bir başa sardığı için sonsuz tane gösterim olabilir bir nokta için.
+
+1960
+02:13:31,064 --> 02:13:33,743
+Sonsuz tane ama esas periyodu içinde bu unique.
+
+1961
+02:13:33,743 --> 02:13:42,823
+Aslında kutup eksenleri ya da kutup sistemleri diyelim.
+
+1962
+02:13:43,024 --> 02:13:44,583
+Koordinat sistemleri daha doğrusu.
+
+1963
+02:13:44,663 --> 02:13:49,064
+Koordinat sistemleri aslında bir adresleme yapabilme olanları bize tanıyor.
+
+1964
+02:13:49,243 --> 02:13:49,524
+Değil mi?
+
+1965
+02:13:49,724 --> 02:13:52,904
+Nasıl ki işte bir ülkenin vatandaşlarına bir vatandaşlık numarası var.
+
+1966
+02:13:53,264 --> 02:13:56,043
+O onu unique olarak temsil ediyor.
+
+1967
+02:13:56,184 --> 02:13:57,623
+Ya da parmak izi falan işte.
+
+1968
+02:13:58,024 --> 02:14:00,184
+Unique olarak ifade ediyor birini.
+
+1969
+02:14:00,184 --> 02:14:02,543
+Bir insanın yüzü falan gözleri işte.
+
+1970
+02:14:02,844 --> 02:14:03,144
+Neyse.
+
+1971
+02:14:04,623 --> 02:14:10,423
+Kutupsal koordinat sistemleri de bu şekilde bize yön bulmamızı, ölçüm yapmamızı,
+
+1972
+02:14:10,524 --> 02:14:15,764
+işte gösterimde bulmamızı, daha karmaşık şeyleri, daha basit hale getirmemizi olanak tanıyor.
+
+1973
+02:14:16,524 --> 02:14:19,104
+Sayısız koordinat sistemi var arkadaşlar.
+
+1974
+02:14:19,583 --> 02:14:22,743
+Parabolik koordinat sistemleri, parabolik koordinat sistemleri,
+
+1975
+02:14:22,743 --> 02:14:29,184
+işte kutupsal, küresel, silindirik, çokça hatta işte kartezyen koordinat sistemini,
+
+1976
+02:14:29,484 --> 02:14:33,224
+sistemi bile sayısız sistem türetebilirsiniz.
+
+1977
+02:14:33,384 --> 02:14:37,904
+Burada ötelemeler ve dönmeler yardımıyla, eksenler arasındaki açıları değiştirerek.
+
+1978
+02:14:38,344 --> 02:14:42,104
+Bir tarafta kare olan, diğer tarafta paralel kenara dönüşür falan.
+
+1979
+02:14:42,104 --> 02:14:47,503
+Böyle ya da işte bir koordinat sistemindeki doğru, diğer koordinat sisteminde ne bileyim atıyorum,
+
+1980
+02:14:47,623 --> 02:14:51,104
+çember gibi görünebilir ya da çember, tuhaf başka bir şekil gibi görünebilir.
+
+1981
+02:14:52,064 --> 02:14:55,083
+O yüzden hatta metriyi değiştirdiğimizde,
+
+1982
+02:14:55,163 --> 02:15:00,844
+burada metrik, alışık olduğumuz öplik metriyi, bakkalın metre hesabı,
+
+1983
+02:15:01,083 --> 02:15:05,264
+o metriyi dönüştür, değiştirdiğimizde bambaşka şeyler ortaya çıkıyor ki,
+
+1984
+02:15:05,264 --> 02:15:10,463
+normalde eskiden, yıllardır işte, yok bilin.
+
+1985
+02:15:11,123 --> 02:15:14,224
+Elementleri sanırım milattan önce 300'lerde yazıldı.
+
+1986
+02:15:15,264 --> 02:15:18,663
+Hala öklük geometrisi liselerde ders olarak okutuluyor.
+
+1987
+02:15:18,804 --> 02:15:28,043
+Fakat şu anda Einstein'la birlikte şu relativiteyle birlikte farklı geometriler bilim dünyasıyla tanıştı değil mi?
+
+1988
+02:15:28,043 --> 02:15:35,844
+Yani mesela Riemann geometrisi ondan sonra daha farklı Lorenz geometrisi falan farklı farklı geometriler ortaya çıktı.
+
+1989
+02:15:35,844 --> 02:15:42,243
+Niye? Çünkü biz daha karmaşık yapıları anlamak için daha karmaşık matematiğe ve geometriğe ihtiyacımız var.
+
+1990
+02:15:42,764 --> 02:15:50,503
+Artık Newton anlamındaki o yasalar Benez'larda ve yüklüklerde çok da anlamlı olmuyor değil mi?
+
+1991
+02:15:50,503 --> 02:16:01,063
+Hız arttığı zaman ya da siz maddeyi çok küçülttüğünüz zaman güne kadar atom modeli, biz lisede gördüğümüz atom modeli merkezde bir çekirdek var.
+
+1992
+02:16:01,063 --> 02:16:05,304
+İşte etrafında yüklü elektronlar, protonlar, yüksüz nötronlar var.
+
+1993
+02:16:05,403 --> 02:16:09,144
+Şu anda artık atomun yapısı bile farklı bir model var.
+
+1994
+02:16:09,543 --> 02:16:12,983
+Atom parçalanamaz deniyordu, parçalanabiliyor.
+
+1995
+02:16:13,483 --> 02:16:18,043
+Atom en küçük parçacıklar işte protonlar, nötronlar da deniyordu.
+
+1996
+02:16:18,043 --> 02:16:23,123
+Hayır, daha küçük altyapı şeyler var, alt parçacıklar var.
+
+1997
+02:16:23,283 --> 02:16:30,503
+İşte X mesela teorik olarak bu hatta Sörn'te gözlemlendi işte o deneyle birlikte falan.
+
+1998
+02:16:30,503 --> 02:16:38,423
+Yani insanoğlunun daha karmaşık olanı, daha ileri görebilmesi için kendine yeni yeni basamaklar yapması gerekiyor.
+
+1999
+02:16:39,564 --> 02:16:46,724
+Şu anda gördüğünüz model matematikte bu anlamda insanoğlunun ufkunu daha ilerlere taşımasına olanak tanıyor.
+
+2000
+02:16:46,943 --> 02:16:52,003
+Bunlar yıllarca insanoğlunun biriktirdikleri bir miras şeklinde nesilden nesile aktarıldır.
+
+2001
+02:16:52,484 --> 02:16:53,703
+Biriktirdiği şeyler.
+
+2002
+02:16:54,064 --> 02:16:56,644
+Hayatımızı hep kolaylaştırma eğilimindeyiz.
+
+2003
+02:16:56,644 --> 02:16:58,523
+İnsan bilimi büker, ne yapar?
+
+2004
+02:16:58,603 --> 02:17:01,283
+Kendi amacına uygun bir şekilde manipüle etmeye çalışır.
+
+2005
+02:17:01,564 --> 02:17:02,123
+Aslında bu.
+
+2006
+02:17:02,564 --> 02:17:08,863
+Yani mutlak gerçek nedir açıkçası çok hani onu söyleyebilme imkanımız yok.
+
+2007
+02:17:08,863 --> 02:17:19,543
+Fakat insanoğlu her zaman matematiği de bu şekilde kendi amacı için daha doğrusu hayatını kolaylaştırmak için onu uygun bir şekilde kullanıyor.
+
+2008
+02:17:20,463 --> 02:17:21,003
+Öyle diyelim.
+
+2009
+02:17:21,783 --> 02:17:26,183
+Kutupsal koordinat sistemi de bu şekilde ortaya çıkmış.
+
+2010
+02:17:26,904 --> 02:17:30,863
+Koordinat sistemlerinden bir tanesi bu dersin konteksi içerisinde işimizi kolaylaştıracak.
+
+2011
+02:17:30,863 --> 02:17:39,443
+Özellikle iki katlı integrallerde ve tek katlı integrallerde de yine burada bize ne yapacak?
+
+2012
+02:17:39,523 --> 02:17:40,484
+Kolaylık sağlayacak.
+
+2013
+02:17:41,503 --> 02:17:42,203
+Şunlara geçeyim.
+
+2014
+02:17:42,283 --> 02:17:43,103
+Bahsettim zaten.
+
+2015
+02:17:43,603 --> 02:17:51,783
+Bir noktayı, her bir noktayı biz bir kutup merkezine olan uzaklık ve kutup ekseniyle yaptığı açı cinsinden ifade edebiliriz.
+
+2016
+02:17:51,783 --> 02:18:05,384
+Kutup merkezi R'nin sıfır olduğu yer, R eşittir sıfır durumu, her teta açısı için kutup merkezidir.
+
+2017
+02:18:09,492 --> 02:18:20,891
+merkezidir. Ve teta eşittir sıfır durumuna, teta eşittir sıfır hali de, hali de diyelim, kutup eksenini ifade eder.
+
+2018
+02:18:21,572 --> 02:18:33,012
+Tabi burada R sıfırdan farklı, R'yi de belki büyük sıfır almamız lazım. Kutup eksenini ifade eder.
+
+2019
+02:18:33,891 --> 02:18:37,551
+Yani referans noktalarımızın olması gerekiyor. Neye göre, kime göre, değil mi?
+
+2020
+02:18:43,379 --> 02:18:45,319
+Terminolojiyi burada görüyoruz.
+
+2021
+02:18:46,879 --> 02:18:52,099
+Kutupsal koordinatları da böyle usturlak gibi açıkçası tam olarak bu.
+
+2022
+02:18:53,099 --> 02:18:56,099
+Meridyenler ve paraleller varmış gibi üzerinde.
+
+2023
+02:18:56,239 --> 02:18:59,299
+Bu iki boyutta, üç boyutta olduğu zaman küre yüzeyi gibi düşüneceğiz.
+
+2024
+02:19:00,099 --> 02:19:02,699
+Açılar, açılar konabilir de, konmayabilir de.
+
+2025
+02:19:03,039 --> 02:19:06,179
+İşimizi kolaylaştırmak için açı sıklığı arttırılabilir.
+
+2026
+02:19:06,359 --> 02:19:08,420
+15'er, 15'er artan açılarlar.
+
+2027
+02:19:08,639 --> 02:19:12,199
+Bunu ben notlarımda kullanıyorum.
+
+2028
+02:19:12,199 --> 02:19:14,199
+Thomas'ta böyle bir şey yok diye biliyorum.
+
+2029
+02:19:14,299 --> 02:19:15,939
+Var mı bilmiyorum, emin değilim açıkçası.
+
+2030
+02:19:17,299 --> 02:19:21,839
+Yani size gelen sorularda böyle şekillerle karşılaşmazsınız.
+
+2031
+02:19:21,959 --> 02:19:24,279
+Böyle kutup sistemiyle karşılaşmazsınız.
+
+2032
+02:19:24,379 --> 02:19:27,699
+Ama ben öğrenmeyi kolaylaştırmak için bunları adapte ettim buraya.
+
+2033
+02:19:27,959 --> 02:19:33,739
+Yine tıkstan apararak oradaki kutupsal koordinatlar kütüphanesinde bunları kullandım.
+
+2034
+02:19:34,339 --> 02:19:37,439
+Dikkat ederseniz maviyle çizdiğimiz yer kutup ekseni.
+
+2035
+02:19:37,439 --> 02:19:42,599
+Mavi nokta kutup merkezi, onu sıfırla orijin gibi düşünebiliriz.
+
+2036
+02:19:43,179 --> 02:19:49,139
+Ve turuncuyla, turuncuya kadar iki mavi nokta arasında R mesafe var.
+
+2037
+02:19:49,259 --> 02:19:53,079
+Ve yaptığı açıda 30 derecelik bir açı yapmış mesela burası için.
+
+2038
+02:19:53,439 --> 02:19:54,619
+Ama keşke bir nokta aslında.
+
+2039
+02:19:54,779 --> 02:19:57,359
+Ben 30 derece olsun değil de herhangi bir noktayı.
+
+2040
+02:19:57,359 --> 02:20:01,579
+Açı genelde burada, genelde demin saat yönünün tersine ilerler.
+
+2041
+02:20:01,699 --> 02:20:02,859
+Yani buradaki anlaşma olur.
+
+2042
+02:20:03,319 --> 02:20:04,519
+Saat yönünün tersi.
+
+2043
+02:20:05,559 --> 02:20:08,179
+Saat yönüne ilerlediğimizde o negatif yön oluyor.
+
+2044
+02:20:08,439 --> 02:20:12,019
+Pozitif yön, kutupsal koordinatlar da saat yönünün tersidir.
+
+2045
+02:20:13,619 --> 02:20:18,659
+Her bir noktayı biz PR-Teta ikilisiyle, yani R-Teta ikilisiyle ifade edebiliriz.
+
+2046
+02:20:18,659 --> 02:20:25,979
+Fakat Teta eğer periyot aralığında değilse, sıfırla iki pi aralığında değilse, sonsuz tane bir nokta için sonsuz tane gösterin mümkün.
+
+2047
+02:20:26,420 --> 02:20:31,819
+Periyot aralığına sınırladığımızda, sonuçta çemberde iki pi kadar ilerlediğinizde başa sarılacaksınız.
+
+2048
+02:20:31,899 --> 02:20:37,259
+Sıfırla iki pi aralığında alırsak biz açıyı, o zaman noktayı unik olarak ifade etmiş oluruz.
+
+2049
+02:20:38,799 --> 02:20:39,939
+R orijini olan uzaklık.
+
+2050
+02:20:40,019 --> 02:20:43,339
+Teta x ekseniyle demiş burada ama kutup ekseni diyoruz orada.
+
+2051
+02:20:43,420 --> 02:20:45,159
+Artık x ekseni yok, burada x'ye yok.
+
+2052
+02:20:45,159 --> 02:20:55,039
+R eşitli sıfır kutup merkezi, teta eşitli sıfır da R'nin sıfırdan farklı olduğu durumda kutup ekseni olarak tanımlanıyor.
+
+2053
+02:20:55,159 --> 02:20:57,679
+Bu referansları iyi bilmemiz lazım arkadaşlar.
+
+2054
+02:20:58,420 --> 02:21:00,399
+Ve kabulleri iyi bilmemiz lazım.
+
+2055
+02:21:00,519 --> 02:21:03,500
+Yoksa ileride grafik çizerken falan karmaşa yaşayabiliyoruz.
+
+2056
+02:21:04,199 --> 02:21:06,539
+Mesela eksi R gibi bir kavram da var burada.
+
+2057
+02:21:06,639 --> 02:21:07,679
+Birazdan onlar da gelecek.
+
+2058
+02:21:08,359 --> 02:21:12,799
+Bir noktayı sonsuz farklı şekilde ifade edebiliriz açıdan dolayı.
+
+2059
+02:21:12,799 --> 02:21:16,819
+R eşitli sıfır ise teta aşısı ne olursa olsun, R, teta kutup merkezidir.
+
+2060
+02:21:17,219 --> 02:21:20,579
+Yani hiç mesafe yoksa kutup merkezinde oluyor.
+
+2061
+02:21:21,939 --> 02:21:23,619
+Ve önemli bir husus.
+
+2062
+02:21:23,819 --> 02:21:25,079
+Burayı biraz açıklayalım.
+
+2063
+02:21:25,939 --> 02:21:31,259
+Eğer R sonuçta uzaklık pozitif olması lazım.
+
+2064
+02:21:31,699 --> 02:21:35,879
+Peki R'nin negatif olduğu durumda biz neyi anlayacağız kutupsal koordinatlarda?
+
+2065
+02:21:35,879 --> 02:21:38,619
+Şu, bizim referans noktamız neydi?
+
+2066
+02:21:39,059 --> 02:21:44,639
+Saat yönünün tersine R birim, yani pozitif R ve teta dediğimiz şey,
+
+2067
+02:21:44,839 --> 02:21:51,119
+saat yönünün tersine bir açı ve kutup merkeziyle yaptığımız,
+
+2068
+02:21:51,439 --> 02:21:54,079
+kutup merkezine olan bir uzaklığı ifade ediyordu.
+
+2069
+02:21:54,179 --> 02:21:58,099
+Eğer ben R'yi negatif düşünürsem, tam olarak bu noktanın,
+
+2070
+02:21:58,099 --> 02:22:04,519
+ters yönün istikametteki, 180 derece zıtındaki noktayı düşüneceğim.
+
+2071
+02:22:04,759 --> 02:22:06,239
+Bu da ne yapacak bana?
+
+2072
+02:22:06,579 --> 02:22:10,659
+Yani R'yi negatif yapabilmek için bizim teta'ya pi eklememiz lazım arkadaşlar.
+
+2073
+02:22:11,159 --> 02:22:14,139
+Teta'ya pi eklediğimizde R'yi negatif yaparız.
+
+2074
+02:22:14,399 --> 02:22:17,519
+Negatif değil aslında bu, negatif yönde anlamına geliyor.
+
+2075
+02:22:17,519 --> 02:22:23,559
+Yani teta'nın negatif yönünde bir uzaklık, teta'nın negatif yönünde bir uzaklık,
+
+2076
+02:22:23,659 --> 02:22:26,819
+teta'nın zıt yönünde bir uzaklık olarak düşünebiliriz bunu.
+
+2077
+02:22:27,079 --> 02:22:30,779
+Yani yine yarı çap, R negatif olmuyor esasında.
+
+2078
+02:22:30,859 --> 02:22:32,519
+Yine mutlak değerini almış oluyoruz onu.
+
+2079
+02:22:33,099 --> 02:22:38,199
+O yüzden negatif açı demek, yani R'nin negatif olması demek,
+
+2080
+02:22:39,139 --> 02:22:41,519
+öncelikle P, R, teta'yı işaretliyoruz.
+
+2081
+02:22:42,227 --> 02:23:06,567
+Pozitif bir noktaymış gibi, V de pozitifmiş gibi, sonra ona pi derece ekleyip, onun tam zıt yönünü, daha doğrusu zıt yön, zıt yön olarak düşünebiliriz. Sonuçta burada bir yönden bahsedilebilir mi? Evet, var. Dolayısıyla tam olarak zıddını almış olacak. Yani negatif açı theta'ya pi ekliyoruz. Burası çok önemli bir nokta ve genelde öğrenciler karışıyor.
+
+2082
+02:23:06,567 --> 02:23:22,827
+Ve negatif açı ne demek peki? Saat yönünde hareket ne demek? O zaman saat yönünün tersi, yani eğer theta'nın başında eksi varsa, V aynen kalıyor. Fakat saat yönüne hareket ediyorum.
+
+2083
+02:23:23,407 --> 02:23:35,347
+Noktayı ona göre işaretliyorum. Yani orijinal olan V mesafe ve saat yönünde theta kadar ilerliyorum. Eksi açı da bu demek. Negatif açı da tam olarak bu demek arkadaşlar.
+
+2084
+02:23:40,788 --> 02:23:42,888
+Burada bazı noktalar var.
+
+2085
+02:23:43,167 --> 02:23:46,028
+Noktalarını kutupsal koordinat sisteminde gösterelim demiş.
+
+2086
+02:23:46,368 --> 02:23:47,868
+Güzel bir şeklim var onu açacağım.
+
+2087
+02:23:47,868 --> 02:23:54,448
+Şimdi hep açılarımız tabii farklı açılar varmış.
+
+2088
+02:23:54,507 --> 02:23:55,708
+Hep pozitif diyecektim değil.
+
+2089
+02:23:56,087 --> 02:24:02,288
+Birincisi basit haliyle iki birim ve pi bölü üç altmış derecelik açı yapacak.
+
+2090
+02:24:02,448 --> 02:24:05,507
+Yani çizecek olursak şöyle daha güzeli var.
+
+2091
+02:24:06,688 --> 02:24:08,268
+Üç parçayı bölersek şurası.
+
+2092
+02:24:08,268 --> 02:24:11,648
+Şurası kutup merkezi gibi düşündürse.
+
+2093
+02:24:12,128 --> 02:24:12,948
+İki birim diyelim.
+
+2094
+02:24:12,948 --> 02:24:15,788
+İki birim ve pi bölü üç açısı.
+
+2095
+02:24:16,148 --> 02:24:16,908
+Şuraya denk geliyor.
+
+2096
+02:24:17,167 --> 02:24:17,988
+Pi bölü üç açı.
+
+2097
+02:24:18,247 --> 02:24:19,328
+Eksen üzerinde düşünürsen.
+
+2098
+02:24:19,468 --> 02:24:22,028
+P ikiye pi bölü üç diyebiliriz.
+
+2099
+02:24:23,208 --> 02:24:26,048
+İkincisinde eksi bire pi bölü dört.
+
+2100
+02:24:26,188 --> 02:24:28,048
+Tam ortası olacak buranın.
+
+2101
+02:24:29,488 --> 02:24:31,908
+Bir o da şurada bir yerde olacak.
+
+2102
+02:24:32,288 --> 02:24:34,108
+Pi bölü dört onun zıttını almam lazım.
+
+2103
+02:24:34,268 --> 02:24:35,808
+Yani şurada bir yerde.
+
+2104
+02:24:35,808 --> 02:24:40,688
+Şurası p eksi bire pi bölü dört.
+
+2105
+02:24:41,688 --> 02:24:43,068
+Hocam bir şey sorabilir miyim?
+
+2106
+02:24:43,427 --> 02:24:43,728
+Buyurun.
+
+2107
+02:24:44,408 --> 02:24:50,148
+Bu eksi bir x eksenine olan uzaklığı mı yoksa o direkt uzunluğu mu?
+
+2108
+02:24:50,488 --> 02:24:50,688
+Doğru.
+
+2109
+02:24:50,728 --> 02:24:51,188
+Hayır hayır hayır.
+
+2110
+02:24:51,288 --> 02:24:53,268
+X ekseniyle hiç ilgisi yok bunların.
+
+2111
+02:24:53,268 --> 02:24:55,828
+Tamamen r ve teta cinsinden.
+
+2112
+02:24:55,927 --> 02:24:56,488
+Şurası r.
+
+2113
+02:24:57,148 --> 02:24:58,148
+Kutup merkeziyle.
+
+2114
+02:24:58,148 --> 02:25:00,347
+Y ekseni yok burada.
+
+2115
+02:25:00,628 --> 02:25:01,568
+Kutup merkezi var.
+
+2116
+02:25:01,667 --> 02:25:02,368
+Kutup ekseni var.
+
+2117
+02:25:02,488 --> 02:25:03,988
+İki tane referans noktamız var.
+
+2118
+02:25:04,908 --> 02:25:05,888
+Şurası da teta.
+
+2119
+02:25:06,228 --> 02:25:09,448
+Teta kutup ekseniyle yaptığı pozitif yönde yaptığı açı.
+
+2120
+02:25:09,768 --> 02:25:11,587
+R de kutup merkezinde olan uzaklık.
+
+2121
+02:25:13,108 --> 02:25:14,747
+O yüzden eksi birden kastımız.
+
+2122
+02:25:15,128 --> 02:25:16,228
+Hemen şuraya başa dönelim.
+
+2123
+02:25:16,308 --> 02:25:17,808
+Onu iyi oturtmamız gerekiyor.
+
+2124
+02:25:17,808 --> 02:25:22,507
+Eksi uzaklıkta yarı çap.
+
+2125
+02:25:22,688 --> 02:25:23,688
+Buna yarı çap diyoruz.
+
+2126
+02:25:23,768 --> 02:25:24,828
+R'ye radyos'tan geliyor.
+
+2127
+02:25:25,488 --> 02:25:26,347
+Yarı çap.
+
+2128
+02:25:26,548 --> 02:25:28,927
+Eksi yarı çapı konumlandırmak için.
+
+2129
+02:25:29,007 --> 02:25:30,087
+Yerini tayin etmek için.
+
+2130
+02:25:30,167 --> 02:25:31,927
+Önce pozitifmiş gibi düşünüyoruz.
+
+2131
+02:25:32,288 --> 02:25:35,988
+Sonra bulduğumuz noktanın tam olarak 180 derece.
+
+2132
+02:25:36,908 --> 02:25:37,948
+Neyine gidiyoruz?
+
+2133
+02:25:38,087 --> 02:25:39,328
+O zıttığına gidiyoruz işte.
+
+2134
+02:25:39,328 --> 02:25:41,028
+Tam olarak açıya.
+
+2135
+02:25:41,108 --> 02:25:41,808
+R'yi belirliyorum.
+
+2136
+02:25:41,908 --> 02:25:43,988
+Açısına 180 derece.
+
+2137
+02:25:44,087 --> 02:25:46,007
+Pi derece ekleyip noktaya gelmiş oluyor.
+
+2138
+02:25:46,007 --> 02:25:48,328
+Burası çok önemli bir nokta.
+
+2139
+02:25:49,587 --> 02:25:52,007
+Negatif yönde açı da zaten basit.
+
+2140
+02:25:53,228 --> 02:25:56,507
+Üçüncü noktamız P3-P bölü 6.
+
+2141
+02:25:57,007 --> 02:26:01,007
+Burada eksi P bölü 6 30 derece negatif yönde geleceğim.
+
+2142
+02:26:01,208 --> 02:26:02,528
+3 biraz daha uzun olacak.
+
+2143
+02:26:02,708 --> 02:26:03,828
+Yani şuralarda bir yerde.
+
+2144
+02:26:04,288 --> 02:26:05,708
+Şuraya P bölü 6 diyelim.
+
+2145
+02:26:06,208 --> 02:26:07,568
+P bölü 6 derece açı yaptık.
+
+2146
+02:26:07,568 --> 02:26:08,268
+Kutup ekseni.
+
+2147
+02:26:08,388 --> 02:26:08,708
+Şurası.
+
+2148
+02:26:09,087 --> 02:26:10,007
+Kutup ekseni.
+
+2149
+02:26:10,488 --> 02:26:12,608
+Şurası da kutup merkezi.
+
+2150
+02:26:12,847 --> 02:26:14,328
+Tabii böyle şeyler yazacaksak.
+
+2151
+02:26:14,328 --> 02:26:16,688
+Şuraya P bölü 2 demem lazım.
+
+2152
+02:26:16,948 --> 02:26:19,308
+X ekseni dediğimiz şey de 0 derece.
+
+2153
+02:26:19,408 --> 02:26:20,308
+Teta eşittir 0.
+
+2154
+02:26:20,648 --> 02:26:22,427
+Y ekseni teta eşittir P bölü 2.
+
+2155
+02:26:22,908 --> 02:26:23,868
+Gibi düşünebiliriz.
+
+2156
+02:26:25,448 --> 02:26:27,808
+Daha güzel çizim şerleri var burada.
+
+2157
+02:26:28,368 --> 02:26:29,648
+Onlara renkler atadık.
+
+2158
+02:26:31,708 --> 02:26:33,328
+Noktalar orada görülüyor zaten.
+
+2159
+02:26:33,328 --> 02:26:34,847
+Turuncuyla birinci noktayı.
+
+2160
+02:26:35,488 --> 02:26:36,608
+Kırmızıyla ikinci noktayı.
+
+2161
+02:26:36,688 --> 02:26:38,628
+Yeşille de üçüncü noktayı gösterdik.
+
+2162
+02:26:38,628 --> 02:26:42,808
+Bu şekilde daha anlaşılır bir gösterim veriyoruz.
+
+2163
+02:26:43,328 --> 02:26:45,468
+Var mı burada sorma titrediniz arkadaşlar?
+
+2164
+02:26:46,408 --> 02:26:47,448
+Adresleme yapıyoruz.
+
+2165
+02:26:48,288 --> 02:26:49,087
+Uzaklık.
+
+2166
+02:26:50,007 --> 02:26:56,507
+Kutup merkezinde olan uzaklık ve kutup ekseniyle yaptığı pozitif yöndeki açı cinsinden adresleme yapıyoruz.
+
+2167
+02:26:57,328 --> 02:26:57,568
+Tamam.
+
+2168
+02:26:57,568 --> 02:27:08,648
+Bazı temel denklemler göreceğiz ve ne kadar yalın göründüklerini sizler de ikna olacaksınız.
+
+2169
+02:27:08,888 --> 02:27:09,927
+Reştirak, çember.
+
+2170
+02:27:11,768 --> 02:27:17,488
+Biz kutupsal koordinatlarla kartesiyen koordinatlar arasındaki ilişkiyi vermedik.
+
+2171
+02:27:18,308 --> 02:27:20,788
+Verdiğimizde bunun neden böyle olduğunu göreceğiz.
+
+2172
+02:27:21,628 --> 02:27:23,408
+Orada bir kurgu yapıyoruz.
+
+2173
+02:27:23,408 --> 02:27:25,208
+Re nedir?
+
+2174
+02:27:25,888 --> 02:27:28,128
+Ondan sonra teta tam olarak nedir?
+
+2175
+02:27:28,808 --> 02:27:30,488
+Onlar ilişkilendirilebilir.
+
+2176
+02:27:30,587 --> 02:27:31,228
+X ve Y ile.
+
+2177
+02:27:31,448 --> 02:27:32,388
+İlişkilendirilmiş.
+
+2178
+02:27:32,427 --> 02:27:33,007
+Onu göreceğiz.
+
+2179
+02:27:34,308 --> 02:27:38,128
+Reştir A ile ifade ettiğimiz eğri.
+
+2180
+02:27:38,128 --> 02:27:58,128
+İlşkilendirilmiş.
+
+2181
+02:27:38,675 --> 02:27:41,716
+Kutupsal koordinatlarda bir çember ifade eder.
+
+2182
+02:27:41,855 --> 02:27:43,175
+Yarı çapı A olan çember.
+
+2183
+02:27:45,255 --> 02:27:46,555
+Merkezi tabii orjin.
+
+2184
+02:27:46,655 --> 02:27:49,876
+Merkezini değiştirirsek değişir bu ifade.
+
+2185
+02:27:50,335 --> 02:27:52,755
+İşte kosünüs ve sinüs ile çarpmamız gerekecek.
+
+2186
+02:27:52,876 --> 02:27:55,495
+Sinüs ekseni üzerindeyse kosünüs ekseni üzerindeyse
+
+2187
+02:27:55,495 --> 02:27:58,415
+aslında burada kutup ekseni dediğimiz kosünüs ekseni
+
+2188
+02:27:58,415 --> 02:28:02,036
+pi bölü 2 ile sinüs ekseni gibi düşünülüyor.
+
+2189
+02:28:02,315 --> 02:28:03,095
+Öyle bir durum var.
+
+2190
+02:28:06,036 --> 02:28:08,115
+Yarı çapı 1 olan çember turuncu.
+
+2191
+02:28:08,115 --> 02:28:11,735
+Yarı çapı 2 olan çember yeşil olan ve yarı çapı 3 olan mavi çember.
+
+2192
+02:28:11,975 --> 02:28:15,115
+Bu şekilde dikkat ederseniz şurada bir birim uzaklıkta.
+
+2193
+02:28:15,275 --> 02:28:16,855
+Bir birim, iki birim, üç birim.
+
+2194
+02:28:17,095 --> 02:28:19,115
+Bu her yerde aynı artı çember üzerinde.
+
+2195
+02:28:21,376 --> 02:28:22,395
+Ve doğru.
+
+2196
+02:28:22,735 --> 02:28:25,296
+Doğruyu da sadece açı cinsinden ifade ediyoruz.
+
+2197
+02:28:25,475 --> 02:28:26,355
+Teta eşitir alfa.
+
+2198
+02:28:27,435 --> 02:28:29,095
+Doğru da çok yalın, çok basit.
+
+2199
+02:28:29,775 --> 02:28:31,376
+Burada bazı doğrular var.
+
+2200
+02:28:31,456 --> 02:28:33,555
+Mesela teta 1 pi bölü 4 doğrusu.
+
+2201
+02:28:33,555 --> 02:28:36,855
+Tam olarak 45 derecede geçen doğrulu.
+
+2202
+02:28:36,855 --> 02:28:39,095
+Tabii ki artı eksi sonsuza uzanıyor aslında.
+
+2203
+02:28:39,655 --> 02:28:41,135
+Yani bir bitme noktası yok.
+
+2204
+02:28:41,195 --> 02:28:42,456
+O yüzden otlarla gösterdik.
+
+2205
+02:28:42,515 --> 02:28:43,216
+Bir yerde bitiyor.
+
+2206
+02:28:44,415 --> 02:28:46,555
+Dışın bir altındaki çember de bitiyor.
+
+2207
+02:28:47,015 --> 02:28:53,615
+Fakat bu sonsuza kadar gibi bu bizim kutup sistemini kısıtlaması.
+
+2208
+02:28:53,716 --> 02:28:55,355
+Onları sonsuza kadar uzatamıyoruz.
+
+2209
+02:28:55,355 --> 02:29:00,915
+4 birim gibi çizmişiz gibi burada ama yok aslında.
+
+2210
+02:29:01,015 --> 02:29:02,135
+Bu sınırlara dayanmış.
+
+2211
+02:29:02,235 --> 02:29:04,735
+Gösterebildiğini gösteriyorum anlamında.
+
+2212
+02:29:05,855 --> 02:29:08,635
+Teta 2 turuncuyla tabii ne demiş o?
+
+2213
+02:29:08,695 --> 02:29:09,296
+Pi bölü 3.
+
+2214
+02:29:09,555 --> 02:29:11,895
+Yani 60 derecede geçen doğru.
+
+2215
+02:29:12,435 --> 02:29:14,275
+Aynı şekilde teta 3, 2 pi bölü 3.
+
+2216
+02:29:14,335 --> 02:29:15,775
+De 120 derecede geçen doğru.
+
+2217
+02:29:16,216 --> 02:29:17,735
+Onu kırmzıyla göstermişiz.
+
+2218
+02:29:17,815 --> 02:29:19,255
+Ve yeşil ile 3 pi boyu 4.
+
+2219
+02:29:19,575 --> 02:29:21,255
+O da 135 dereceden geçiyor.
+
+2220
+02:29:21,255 --> 02:29:25,095
+Çember ve doğru çok basit.
+
+2221
+02:29:25,175 --> 02:29:27,755
+Onların görünümleri çok basit.
+
+2222
+02:29:28,195 --> 02:29:30,315
+Ve onların grafiklerini çizmek de çok kolay.
+
+2223
+02:29:31,216 --> 02:29:37,915
+Dolayısıyla çemberler ve doğruların kesişiminden oluşan alanları belirlemek çok kolay.
+
+2224
+02:29:39,376 --> 02:29:42,296
+Bir bölge olabilir.
+
+2225
+02:29:42,296 --> 02:29:46,716
+Bu tam da bahsettiğim çemberler ve doğruların kesiştiği.
+
+2226
+02:29:46,716 --> 02:29:51,415
+Yarı çapı bir hariç bir kesikli çizgi olacak burada.
+
+2227
+02:29:51,796 --> 02:29:54,315
+İki dahil çemberlerin arasında.
+
+2228
+02:29:54,755 --> 02:29:56,555
+Yani bir disk alan gibi şöyle.
+
+2229
+02:29:56,855 --> 02:29:59,195
+Fakat bir olan yer kesikli çizgi olacak.
+
+2230
+02:29:59,315 --> 02:30:00,796
+Şurayı kesik kesik göstereceğiz.
+
+2231
+02:30:00,995 --> 02:30:04,055
+Ve açılarımız sıfırdan başlıyor.
+
+2232
+02:30:04,155 --> 02:30:04,775
+Sıfır dahil.
+
+2233
+02:30:04,855 --> 02:30:06,075
+Şurası dahil olacak.
+
+2234
+02:30:06,575 --> 02:30:07,935
+Sıfır derece kutup ekseni.
+
+2235
+02:30:07,935 --> 02:30:10,935
+2 pi bölü 3 120'ye kadar gidecek.
+
+2236
+02:30:11,716 --> 02:30:13,175
+2 pi bölü 3 dahil.
+
+2237
+02:30:13,315 --> 02:30:14,935
+Yani şurayı da yine kesikli çizeceğim.
+
+2238
+02:30:14,935 --> 02:30:19,735
+Mesela geçen dönem birebir bu soruyu hatta ben sormuştum.
+
+2239
+02:30:19,815 --> 02:30:22,435
+Sınavda hangi bizeydi hatırlamıyorum.
+
+2240
+02:30:23,216 --> 02:30:26,095
+Bu soruyu böyle şekliyle birlikte sormuştum.
+
+2241
+02:30:27,835 --> 02:30:28,755
+Benim sorum böyleydi.
+
+2242
+02:30:29,015 --> 02:30:32,335
+Birkaç tane daha sorun vardı ama bir tanesi böyle bir bölgeydi.
+
+2243
+02:30:33,435 --> 02:30:34,435
+Bölgeyi belirledik.
+
+2244
+02:30:35,075 --> 02:30:35,755
+Şeklindeydi.
+
+2245
+02:30:38,695 --> 02:30:42,615
+Dolayısıyla bölgede kutupsal koordinatlarda ifade edilebilir.
+
+2246
+02:30:42,615 --> 02:30:48,975
+Tabii neyin dahil olduğunu, neyin dahil olmadığını sınırlara bakarak iyi tespit etmemiz lazım.
+
+2247
+02:30:49,155 --> 02:30:50,216
+Şurada eşitlik yok.
+
+2248
+02:30:50,475 --> 02:30:51,036
+Şurada var.
+
+2249
+02:30:51,775 --> 02:30:53,036
+Alt açıda eşitlik var.
+
+2250
+02:30:53,175 --> 02:30:53,815
+Üst açıda yok.
+
+2251
+02:30:53,915 --> 02:30:55,575
+O yüzden kutup ekseni dahil ettik.
+
+2252
+02:30:55,716 --> 02:30:58,915
+Fakat 120 dereceden geçen doğruluğu dahil etmedik.
+
+2253
+02:30:58,915 --> 02:31:04,095
+Hatta şekli birebir böyleydi sorunun.
+
+2254
+02:31:04,095 --> 02:31:07,876
+Bazı doğru parçalar.
+
+2255
+02:31:08,075 --> 02:31:10,075
+Doğru parçalarını nasıl ifade ediyoruz?
+
+2256
+02:31:12,055 --> 02:31:14,796
+Sadece R'yi kısıtlayarak, Teta'yı sabit alarak.
+
+2257
+02:31:14,915 --> 02:31:19,415
+Teta sabit ve R kısıtlanmışsa doğru parçalar, yani ışınlar elde ederiz.
+
+2258
+02:31:21,075 --> 02:31:25,315
+Tabii orada uç noktalarda hangisi dahil, hangisi dahil değil, onlar da önemli.
+
+2259
+02:31:26,036 --> 02:31:28,975
+Dahil olmayanları içi boş çemberlerle gösterdik.
+
+2260
+02:31:29,075 --> 02:31:31,376
+Dahil olanları içi dolu noktalarla gösterdik.
+
+2261
+02:31:31,435 --> 02:31:33,115
+Ya da yine dahilelerle gösterdi.
+
+2262
+02:31:33,115 --> 02:31:34,115
+Evet.
+
+2263
+02:31:33,843 --> 02:32:01,323
+Burada da bazı doğru parçalar var. Dikkat ederseniz uçlarında oklar yok artık. Çünkü kısıtlandı. Birini maviye düşünelim. Eksi 3 ile 4 aralığında diyor. Tetamız da pi bölü 4. Doğrudan pi bölü 4, 45 üzerinde. Eksi 3'den başlayacak. Yani 3 üzerinden geçecek esasında. O da eksi gibi bir durum yok. Eksi dediğimiz açının zıt yönü. Eksi 3 o dahil değil. İçi boş ve sonra 4'e kadar geliyor. 4'ün içi dolu.
+
+2264
+02:32:01,323 --> 02:32:18,603
+Turuncu ile gösterdiğimiz. Eksi 2 ile 2 aralığında açımızda pi bölü 3. Yani 60 derece. Tam olarak 60'da. 3 noktalarda 2 noktası dahil. Eksi 2 noktası dahil değil. Diğer doğrularda aynı şekilde yorumlanabilir.
+
+2265
+02:32:23,156 --> 02:32:28,016
+Ve doğruların kısıtladığı bölge bunu nasıl ifade edebiliriz?
+
+2266
+02:32:28,076 --> 02:32:29,796
+Theta 1 ve theta 2 doğruları.
+
+2267
+02:32:30,236 --> 02:32:36,856
+Theta 1 pi bölü 6, theta 2 pi bölü doğruları.
+
+2268
+02:32:37,156 --> 02:32:39,036
+Onu kırmızı ve mavi ile gösterdik.
+
+2269
+02:32:40,696 --> 02:32:47,816
+Eğer şöyle bir açı verebilirse pi bölü 6 dahil, pi bölü 4 dahil değil şeklinde
+
+2270
+02:32:47,816 --> 02:32:51,456
+bu bize iki tane doğruların kısıtladığı bölgeyi veriyor.
+
+2271
+02:32:51,456 --> 02:32:55,976
+Yani açıya dair herhangi bir şey yoksa iki doğru tarafından kısıtlanan bölge.
+
+2272
+02:32:56,316 --> 02:32:57,256
+Açı dedim ben.
+
+2273
+02:32:57,536 --> 02:33:04,036
+Yarı çapa dair herhangi bir bilgi yoksa sadece iki tane açı arasında kısıtlanan bir bölge varsa
+
+2274
+02:33:04,036 --> 02:33:08,496
+ya da bir değer varsa, bir açı varsa bu bize doğrular tarafından.
+
+2275
+02:33:08,836 --> 02:33:11,076
+Çünkü theta'nın kendisi zaten doğruydu.
+
+2276
+02:33:11,716 --> 02:33:16,615
+Uç noktalardaki doğrular tarafından sınırlanan bölgeyi anlayacağız burada.
+
+2277
+02:33:16,615 --> 02:33:23,216
+Tabii pi bölü 6 dahil yani 30 derece dahil, 45 derece dahil değil.
+
+2278
+02:33:23,856 --> 02:33:25,056
+Bu şekilde bir bölge.
+
+2279
+02:33:25,176 --> 02:33:29,056
+Bazen alan hesaplarında bunlar karşımıza çıkabilir.
+
+2280
+02:33:36,595 --> 02:33:38,815
+Sanki bu konuyu da işleyebiliriz.
+
+2281
+02:33:38,895 --> 02:33:42,376
+Kutupsal koordinatlarla kartezyen koordinatlar arasındaki ilişki.
+
+2282
+02:33:43,095 --> 02:33:44,255
+O ilişkiyi de verelim.
+
+2283
+02:33:45,055 --> 02:33:48,755
+X kare artı, Y kare eşit tabi şekli göstereyim ki bunlar anlamda olsun.
+
+2284
+02:33:48,895 --> 02:33:50,155
+Şurada güzel bir şeklimiz var.
+
+2285
+02:33:51,235 --> 02:33:52,536
+Şekil üzerinden konuşalım.
+
+2286
+02:33:54,195 --> 02:33:57,435
+X noktasını X'e sıfır olarak yazabiliriz.
+
+2287
+02:33:57,435 --> 02:33:58,775
+X ekseni üzerinde.
+
+2288
+02:34:00,415 --> 02:34:02,655
+Kartezyen koordinatlarda noktalarmış gibi.
+
+2289
+02:34:02,815 --> 02:34:06,195
+Ve Y noktasını da sıfıra Y olarak gösterebiliriz.
+
+2290
+02:34:06,876 --> 02:34:11,055
+Dolayısıyla tam olarak şu PR, Teta değil aslında bu.
+
+2291
+02:34:11,735 --> 02:34:14,456
+Yani öyle de düşünebiliriz eşleştirme yaptığımız için.
+
+2292
+02:34:14,555 --> 02:34:16,755
+Burada Teta P bölü 2 dedik, Teta sıfır dedik.
+
+2293
+02:34:17,155 --> 02:34:19,115
+Onu X gibi düşündük, Y gibi düşündük.
+
+2294
+02:34:19,456 --> 02:34:22,415
+Dolayısıyla böyle bir korrespondence tanımlanabilir.
+
+2295
+02:34:22,835 --> 02:34:25,155
+Yani karşılıklı eşleşme tanımlanabilir.
+
+2296
+02:34:25,155 --> 02:34:32,036
+X, Y noktasının orijini olan uzaklığı R olsun.
+
+2297
+02:34:32,595 --> 02:34:35,075
+Pisagur teoreminden, tabi şurası dik olduğu için
+
+2298
+02:34:35,075 --> 02:34:38,615
+Pisagur teoreminden, şurası X birim, şurası Y birim.
+
+2299
+02:34:39,055 --> 02:34:41,935
+X'in karesi artı Y'nin karesi, R'nin karesini verecek bana.
+
+2300
+02:34:42,395 --> 02:34:44,335
+Bu birinci ilişki.
+
+2301
+02:34:44,335 --> 02:34:48,255
+R ile X'i yarısında bir ilişki kurdum.
+
+2302
+02:34:48,355 --> 02:34:50,495
+Teta ile yine X'i yarısında bir ilişki kuracağız.
+
+2303
+02:34:52,755 --> 02:34:54,975
+Tanjant Teta bana Y bölü X'i verecek değil mi?
+
+2304
+02:34:55,055 --> 02:34:57,095
+Karşı bölü komşu, tanjant.
+
+2305
+02:34:57,515 --> 02:35:00,055
+Bunu tabi kosmüsl olarak da yazabilirsiniz.
+
+2306
+02:35:00,475 --> 02:35:01,876
+R ile de ilişki verilebilirsiniz.
+
+2307
+02:35:01,876 --> 02:35:04,296
+Fakat genelde açıyı biz böyle buluyoruz.
+
+2308
+02:35:04,355 --> 02:35:05,775
+Tanjant çizimden buluyoruz.
+
+2309
+02:35:05,835 --> 02:35:06,456
+Y bölü X.
+
+2310
+02:35:08,015 --> 02:35:10,695
+Arkını alırsanız Teta'yı bulacaksınız değil mi?
+
+2311
+02:35:10,935 --> 02:35:13,815
+O zaman Teta'yı artı tanjant Y bölü X.
+
+2312
+02:35:14,995 --> 02:35:15,735
+R'yi bulduk.
+
+2313
+02:35:15,876 --> 02:35:17,216
+X kare artı Y kare.
+
+2314
+02:35:17,216 --> 02:35:18,835
+N'in kare kökü.
+
+2315
+02:35:19,636 --> 02:35:20,415
+Teta'yı bulduk.
+
+2316
+02:35:20,555 --> 02:35:21,895
+Arkı tanjant Y bölü X.
+
+2317
+02:35:22,335 --> 02:35:27,536
+Dolayısıyla karteziyen koordinatlardan kutupsal koordinatlara geçiş sağladık.
+
+2318
+02:35:28,415 --> 02:35:30,595
+Hakik X'ye değil, R Teta var.
+
+2319
+02:35:30,956 --> 02:35:35,895
+Her bir noktayı bana verilen X'ye noktasını ben şeye map edebilirim.
+
+2320
+02:35:35,895 --> 02:35:44,475
+X'ye noktasını bu şekilde R Teta'ya ne yapabilirim?
+
+2321
+02:35:44,855 --> 02:35:45,796
+Map edebilirim.
+
+2322
+02:35:45,796 --> 02:35:47,595
+Taşıyabilirim.
+
+2323
+02:35:49,615 --> 02:35:51,675
+Burada sinüs ve kosünüs içinde.
+
+2324
+02:35:52,855 --> 02:35:54,155
+Y bölü R.
+
+2325
+02:35:54,575 --> 02:35:59,975
+Ya da zaten doğrudan kutupsal koordinatların ifadeleri şunlardı.
+
+2326
+02:36:00,615 --> 02:36:01,975
+Sinüs Teta neydi?
+
+2327
+02:36:02,475 --> 02:36:04,335
+Karşı bölü hipotenüs Y bölü R.
+
+2328
+02:36:04,335 --> 02:36:10,595
+Oradan sinüsü, Y'yi yalnız bırakırsam R çarpı sinüs Teta ve X eşit R çarpı kosünüs Teta.
+
+2329
+02:36:11,235 --> 02:36:14,595
+Esas ilişki esasında bu güçlü ilişki.
+
+2330
+02:36:14,595 --> 02:36:25,775
+X yerine R kosünüs Teta, Y yerine R sinüs Teta dönüşümü, değişken dönüşümü yaptığında karteziyen denklemler bir anda kutupsal denkleme dönüşecek.
+
+2331
+02:36:25,775 --> 02:36:27,995
+Aradaki ilişki tam olarak bu arkadaşlar.
+
+2332
+02:36:27,995 --> 02:36:29,995
+Çember verildi.
+
+2333
+02:36:29,995 --> 02:36:34,235
+Bu çember neden A oluyor?
+
+2334
+02:36:34,235 --> 02:36:34,735
+Bakalım.
+
+2335
+02:36:34,735 --> 02:36:37,175
+Çemberin kutupsal denklemini bulalım.
+
+2336
+02:36:37,175 --> 02:36:44,895
+X gördüğüm yere R çarpı kosünüs Teta artı Y gördüğüm yere R çarpı sinüs Teta.
+
+2337
+02:36:45,015 --> 02:36:46,935
+Tabii karelerini almam gerekiyor burası için.
+
+2338
+02:36:47,355 --> 02:36:48,355
+Karelerini alalım.
+
+2339
+02:36:50,255 --> 02:36:51,895
+Eşittir A kare ilmiş.
+
+2340
+02:36:51,895 --> 02:37:02,495
+Burada R'nin karesi kosünüs Teta artı R'nin karesi sinüs Teta eşittir A'nın karesi oldu.
+
+2341
+02:37:02,956 --> 02:37:10,876
+R kare parantezini alırsam R kare parantezinde kosünüs Teta artı sinüs Teta eşittir A kare olur.
+
+2342
+02:37:10,876 --> 02:37:12,835
+Bu ifade trigonometrik.
+
+2343
+02:37:13,396 --> 02:37:15,476
+Yine eşitliklerden bir
+
+2344
+02:37:15,476 --> 02:37:17,716
+Pisagor. Birim çemberdeki Pisagor'dan
+
+2345
+02:37:17,716 --> 02:37:19,596
+kosmü, sinüs, kareleri toplamı
+
+2346
+02:37:19,596 --> 02:37:21,516
+bir verecek. Ispatlı da çok
+
+2347
+02:37:21,516 --> 02:37:23,256
+basit. Dolayısıyla
+
+2348
+02:37:23,256 --> 02:37:25,256
+R kare eşittir A kare. R
+
+2349
+02:37:25,256 --> 02:37:26,916
+yarı çap pozitif olduğu için
+
+2350
+02:37:26,916 --> 02:37:29,056
+R eşittir A yazıyor.
+
+2351
+02:37:29,496 --> 02:37:31,076
+R eşittir A çember
+
+2352
+02:37:31,076 --> 02:37:33,176
+mekkanı. Çok daha basit. Yani orjin
+
+2353
+02:37:33,176 --> 02:37:35,336
+merkezli yarı çapı A olan
+
+2354
+02:37:35,336 --> 02:37:37,336
+çemberin kutupsal koordinatlardaki
+
+2355
+02:37:37,976 --> 02:37:39,376
+görüntüsün R eşittir A.
+
+2356
+02:37:39,376 --> 02:37:41,016
+Tabii şöyle bir şey de olabilirdi.
+
+2357
+02:37:41,536 --> 02:37:45,736
+X eksi
+
+2358
+02:37:45,736 --> 02:37:49,236
+B diyelim. Karesi
+
+2359
+02:37:49,236 --> 02:37:50,916
+artı Y eksi
+
+2360
+02:37:50,916 --> 02:37:52,636
+C'nin karesi eşittir.
+
+2361
+02:37:53,296 --> 02:37:55,216
+D kare deseydi. Yani
+
+2362
+02:37:55,216 --> 02:37:57,516
+merkezi B'ye C olan
+
+2363
+02:37:57,516 --> 02:37:58,976
+B'ye C noktası olan
+
+2364
+02:37:58,976 --> 02:38:01,036
+çember. Ne yapacağız? Aynı
+
+2365
+02:38:01,036 --> 02:38:03,036
+değişken dönüşümleriyle bunun nasıl
+
+2366
+02:38:03,036 --> 02:38:05,056
+göründüğünü çok rahat bir şekilde
+
+2367
+02:38:05,056 --> 02:38:05,796
+görebiliriz.
+
+2368
+02:38:10,868 --> 02:38:12,788
+Evet hemen öyle bir örneğimiz de var.
+
+2369
+02:38:13,628 --> 02:38:16,408
+Kutupsal denklemini bularak grafiğini çiziniz.
+
+2370
+02:38:17,908 --> 02:38:22,028
+Bir çember ama bu çemberin merkezi orjin değil.
+
+2371
+02:38:22,648 --> 02:38:24,388
+Çember olacağı aşikar.
+
+2372
+02:38:24,667 --> 02:38:27,968
+Grafiğinin de kutupsal koordinatlarda da çember olacağı aşikar.
+
+2373
+02:38:27,968 --> 02:38:31,228
+Şöyle bir invariantlık var.
+
+2374
+02:38:31,427 --> 02:38:34,847
+Kutupsal koordinatlarda çemberin görüntüsü, pardon.
+
+2375
+02:38:35,247 --> 02:38:39,268
+Karteziyen koordinatlarda çemberin görüntüsü kutupsal koordinatlarda yine çemberdir.
+
+2376
+02:38:39,268 --> 02:38:40,968
+Çember çember olmaya devam eder.
+
+2377
+02:38:42,827 --> 02:38:44,728
+Hemen yazalım yerine.
+
+2378
+02:38:45,908 --> 02:38:47,628
+X gördüğümüz yere
+
+2379
+02:38:47,628 --> 02:38:53,827
+R kosünüs teta yani R kare kosünüs kare teta
+
+2380
+02:38:53,827 --> 02:38:55,988
+artı şuraya da
+
+2381
+02:38:55,988 --> 02:38:59,408
+açalım ifadeyi. Önce açalım sonra yerine yazalım.
+
+2382
+02:38:59,827 --> 02:39:01,128
+O daha pratik olur.
+
+2383
+02:39:03,548 --> 02:39:05,888
+X kare artı
+
+2384
+02:39:05,888 --> 02:39:07,927
+y kare eksi 4y
+
+2385
+02:39:07,927 --> 02:39:11,728
+artı 4 eşittir 4 oldu.
+
+2386
+02:39:12,028 --> 02:39:13,648
+4 der birbirini sıfırladı.
+
+2387
+02:39:14,448 --> 02:39:14,968
+Buradan
+
+2388
+02:39:14,968 --> 02:39:18,208
+X kare artı y kareye doğrudan
+
+2389
+02:39:18,208 --> 02:39:19,507
+R kare yazabiliriz.
+
+2390
+02:39:19,888 --> 02:39:22,148
+R kare eşittir 4 tane
+
+2391
+02:39:22,148 --> 02:39:23,888
+R
+
+2392
+02:39:23,888 --> 02:39:25,488
+sinif
+
+2393
+02:39:25,488 --> 02:39:26,368
+Y
+
+2394
+02:39:26,368 --> 02:39:27,548
+R sinif teta idi.
+
+2395
+02:39:28,347 --> 02:39:29,068
+Buna da yazayım.
+
+2396
+02:39:29,068 --> 02:39:30,827
+X eşittir R çarpı
+
+2397
+02:39:30,827 --> 02:39:31,747
+kosünüs teta
+
+2398
+02:39:31,747 --> 02:39:33,847
+Y eşittir R çarpı
+
+2399
+02:39:33,847 --> 02:39:34,568
+sinif teta.
+
+2400
+02:39:35,388 --> 02:39:35,908
+Her zaman
+
+2401
+02:39:35,908 --> 02:39:37,788
+bu değişken dönüşümü yapıyoruz.
+
+2402
+02:39:39,667 --> 02:39:41,048
+Yerlerine yazıp açtığımda
+
+2403
+02:39:41,048 --> 02:39:42,028
+X kare artı Y kareden
+
+2404
+02:39:42,028 --> 02:39:42,808
+R kare geldi.
+
+2405
+02:39:43,048 --> 02:39:43,488
+4'ler
+
+2406
+02:39:43,488 --> 02:39:44,288
+sadeleşti.
+
+2407
+02:39:44,368 --> 02:39:45,708
+Her iki tarafta var eşitliğin.
+
+2408
+02:39:46,087 --> 02:39:47,347
+4y'yi karşıya attım.
+
+2409
+02:39:47,448 --> 02:39:48,268
+4 çarpı
+
+2410
+02:39:48,268 --> 02:39:49,388
+R çarpı
+
+2411
+02:39:49,388 --> 02:39:50,507
+sinif teta.
+
+2412
+02:39:51,028 --> 02:39:51,408
+Burada
+
+2413
+02:39:51,408 --> 02:39:52,708
+R'lerin bir tanesini
+
+2414
+02:39:52,708 --> 02:39:53,747
+sadeleştirirsek
+
+2415
+02:39:53,747 --> 02:39:54,768
+R eşittir
+
+2416
+02:39:54,768 --> 02:39:56,108
+4 tane
+
+2417
+02:39:56,108 --> 02:39:57,488
+sinif teta.
+
+2418
+02:39:57,768 --> 02:39:58,948
+Demek ki
+
+2419
+02:39:58,948 --> 02:40:00,568
+Y ekseni üzerinde
+
+2420
+02:40:00,568 --> 02:40:02,568
+merkezi bulunan bir çemberi
+
+2421
+02:40:02,568 --> 02:40:03,927
+sinife bağlı ifade ediyor.
+
+2422
+02:40:07,763 --> 02:40:14,583
+Aslında genel anlamda R eşittir A çarpı sinüs teta olarak ifade ederiz.
+
+2423
+02:40:14,643 --> 02:40:19,023
+Eğer şurada A varsa genel anlamda R eşittir A çarpı sinüs teta.
+
+2424
+02:40:19,023 --> 02:40:29,963
+Benzer şekilde kosünüs ekseni üzerinde olan ya da X ekseni üzerinde merkezi olan bir çemberi de R eşittir A çarpı kosünüs teta olarak ifade edebiliyoruz.
+
+2425
+02:40:29,983 --> 02:40:30,523
+Yine basit.
+
+2426
+02:40:31,384 --> 02:40:32,463
+Sadece kosünüs geldi.
+
+2427
+02:40:32,583 --> 02:40:33,923
+Kosünüs sürekli bir fonksiyon.
+
+2428
+02:40:33,923 --> 02:40:38,043
+Sonuçta işimizi kolaylaştırır.
+
+2429
+02:40:39,243 --> 02:40:39,483
+Evet.
+
+2430
+02:40:40,163 --> 02:40:41,443
+Çemberin grafiği peki?
+
+2431
+02:40:42,443 --> 02:40:46,463
+Yani bu çemberin grafiğini çizmek artık zor değil ki zaten bu haliyle bile.
+
+2432
+02:40:46,463 --> 02:40:49,563
+Merkezi sıfıra iki, yarı çapı iki olan çember.
+
+2433
+02:40:49,903 --> 02:40:51,083
+Çapı dört birim olacak.
+
+2434
+02:40:52,023 --> 02:40:57,563
+Aynı şekilde bu şekil kutupsal koordinatlara da taşınmış oldu.
+
+2435
+02:40:58,343 --> 02:41:00,223
+Pi bölü iki boyunca bir çember olacak.
+
+2436
+02:41:01,363 --> 02:41:02,963
+Pi bölü iki boyunca bir çember.
+
+2437
+02:41:03,923 --> 02:41:13,163
+Grafik çizme için o kuralları verdiğimizde tabi bunların kutupsal koordinatlardaki çizimleri daha rahat olacak.
+
+2438
+02:41:14,384 --> 02:41:16,043
+Çemberi çizmek zor değil.
+
+2439
+02:41:18,843 --> 02:41:21,003
+Orijindeki çember zaten çok basit.
+
+2440
+02:41:21,243 --> 02:41:26,203
+Orijinde olmayan, merkezi orijinde olmayan çemberi çizmek de kolay olacak.
+
+2441
+02:41:26,203 --> 02:41:31,223
+Burada bir tane daha kutupsal, yani x ekseni üzerinde bir çember.
+
+2442
+02:41:31,963 --> 02:41:35,543
+Merkezi üçe sıfır olan çember.
+
+2443
+02:41:35,543 --> 02:41:46,943
+Burayı da açtığımızda, x'in karesi, eksi altı tane x artı dokuz artı y'nin karesi eşittir.
+
+2444
+02:41:47,603 --> 02:41:48,083
+Dokuz.
+
+2445
+02:41:48,083 --> 02:41:53,823
+Biraz da sağlayan, x kare artı y kare eşittir.
+
+2446
+02:41:54,423 --> 02:41:56,123
+Altı x olarak yazdık.
+
+2447
+02:41:56,463 --> 02:42:01,123
+X kare y kareyi yerine yazdığımızda, x eşittir r çarpı kosünüs teta.
+
+2448
+02:42:01,123 --> 02:42:04,703
+y eşittir r çarpı sinüs teta.
+
+2449
+02:42:05,203 --> 02:42:07,143
+Buradan r kare eşittir.
+
+2450
+02:42:07,323 --> 02:42:11,543
+Altı tane r kosünüs teta.
+
+2451
+02:42:12,304 --> 02:42:14,703
+Dolayısıyla r eşittir.
+
+2452
+02:42:15,523 --> 02:42:18,003
+Altı kosünüs teta çemberi.
+
+2453
+02:42:18,063 --> 02:42:22,523
+Bu da kosünüs ekseni üzerinde bir çember olacak.
+
+2454
+02:42:23,603 --> 02:42:24,963
+Şuradan hemen şeklini açalım.
+
+2455
+02:42:26,563 --> 02:42:28,403
+Kırmızıyla çizdiğimiz çember.
+
+2456
+02:42:28,403 --> 02:42:32,463
+Çapı altı birim, yarı çapı üç birim olan çember.
+
+2457
+02:42:35,183 --> 02:42:37,304
+Çapı nasıl buluruz arkadaşlar?
+
+2458
+02:42:37,503 --> 02:42:44,683
+x ekseni üzerinde olduğu için teta'yı, teta eşittir, sıfır alırsanız size çapını verecek.
+
+2459
+02:42:45,103 --> 02:42:48,523
+Dolayısıyla bu ifadenin yarısı yarı çapı olmuş olacak.
+
+2460
+02:42:49,343 --> 02:42:57,403
+Aynı şekilde pi bölü iki üzerindeyse, sinüs varsa oraya da pi bölü iki yazarak çapını hesaplayabilirsiniz.
+
+2461
+02:42:57,403 --> 02:43:00,703
+Çapı kutuksal koordinatlar dersiniz.
+
+2462
+02:43:02,403 --> 02:43:03,843
+Ve bazı denklemler var.
+
+2463
+02:43:03,923 --> 02:43:06,203
+Bunları da verip bitirelim münki dersimiz arkadaşlar.
+
+2464
+02:43:06,384 --> 02:43:07,304
+Standart formda.
+
+2465
+02:43:10,623 --> 02:43:12,543
+Bazıları iyice komplike hale gelecek.
+
+2466
+02:43:12,543 --> 02:43:24,063
+Onları yapmak için burada r yerine, bunu kartezyen koordinatlarda yazmak için r yerine kök içinde x kare artı y kare yazmam lazım arkadaşlar.
+
+2467
+02:43:24,223 --> 02:43:26,023
+Çünkü r kare eşittir, x kare artı y kareydi.
+
+2468
+02:43:26,103 --> 02:43:33,083
+Çarpı, kosünüs teta yerine de x bölü r yazmam lazım.
+
+2469
+02:43:33,083 --> 02:43:38,283
+x bölü, x bölü kök içinde x kare artı y kare.
+
+2470
+02:43:38,783 --> 02:43:40,023
+Bu ifadeyi yazmam lazım.
+
+2471
+02:43:40,143 --> 02:43:43,983
+Dolayısıyla o zaman r ve teta'dan kurtulmuş olacak.
+
+2472
+02:43:45,283 --> 02:43:46,743
+Hocam bir şey sorabilir miyim?
+
+2473
+02:43:46,963 --> 02:43:47,363
+Buyurun.
+
+2474
+02:43:47,903 --> 02:43:53,343
+Üstteki grafiklerde neden şeyden geçti, orijinden geçti onu anlayamadım.
+
+2475
+02:43:54,143 --> 02:43:55,523
+Şu grafikte mi mesela?
+
+2476
+02:43:55,663 --> 02:43:55,843
+Aynen.
+
+2477
+02:43:55,843 --> 02:43:57,703
+Ne orijinden geçti?
+
+2478
+02:43:59,683 --> 02:44:01,643
+Çember değil mi?
+
+2479
+02:44:02,031 --> 02:44:03,591
+Aynen. Çemberin
+
+2480
+02:44:03,591 --> 02:44:05,431
+başlangıç noktası. Şöyle ki
+
+2481
+02:44:05,431 --> 02:44:07,591
+zaten çemberin kendi
+
+2482
+02:44:07,591 --> 02:44:09,191
+hali de şurada. İlk
+
+2483
+02:44:09,191 --> 02:44:11,171
+karteziyen koordinatlardaki hali
+
+2484
+02:44:11,171 --> 02:44:12,691
+o şekilde
+
+2485
+02:44:12,691 --> 02:44:15,391
+şurada y diyelim.
+
+2486
+02:44:15,652 --> 02:44:16,531
+Değil mi?
+
+2487
+02:44:17,311 --> 02:44:19,031
+x-3 yani merkezi
+
+2488
+02:44:19,031 --> 02:44:21,671
+zaten şuraya 3 dersek
+
+2489
+02:44:21,671 --> 02:44:22,891
+0'a 3
+
+2490
+02:44:22,891 --> 02:44:25,431
+pardon 3'e 0 merkez
+
+2491
+02:44:25,431 --> 02:44:27,311
+şurası zaten 3'e 0 yarı çapı da
+
+2492
+02:44:27,311 --> 02:44:29,411
+3. 3 birim o zaman mecbur
+
+2493
+02:44:29,411 --> 02:44:31,291
+şeyden geçecek. Yani zaten
+
+2494
+02:44:31,291 --> 02:44:33,411
+çemberin şekli bu. Aynen aynen
+
+2495
+02:44:33,411 --> 02:44:35,191
+hocam. Değil mi? Ondan dolayı.
+
+2496
+02:44:35,411 --> 02:44:37,572
+Zaten şekil değişmiyor. Çemberde
+
+2497
+02:44:37,572 --> 02:44:39,231
+karteziyen neyse kutup
+
+2498
+02:44:39,231 --> 02:44:41,451
+saldırı da aynı şekilde met ediyor. Sadece
+
+2499
+02:44:41,451 --> 02:44:43,411
+koordinat sistemini dönüştürüyor ve
+
+2500
+02:44:43,411 --> 02:44:45,311
+çemberin denklemini ciddi
+
+2501
+02:44:45,311 --> 02:44:47,271
+şekilde basitleştiriyor.
+
+2502
+02:44:47,911 --> 02:44:49,271
+Reştir 6 tane kosmüste
+
+2503
+02:44:49,271 --> 02:44:51,611
+tahtı ama şu yukarıdaki daha karışık açtığınız
+
+2504
+02:44:51,611 --> 02:44:53,572
+tahtta. Burada bazı
+
+2505
+02:44:54,931 --> 02:44:57,652
+kutupsal
+
+2506
+02:44:57,652 --> 02:44:59,671
+denklemler onların karteziyen karşılıkları
+
+2507
+02:44:59,671 --> 02:45:01,731
+var. İlkini hesaplayalım şurada
+
+2508
+02:45:01,731 --> 02:45:03,851
+re yerine re eşittir. Kök içinde
+
+2509
+02:45:03,851 --> 02:45:05,991
+x kare artı y kare
+
+2510
+02:45:05,991 --> 02:45:07,851
+kosünüs teta
+
+2511
+02:45:07,851 --> 02:45:09,551
+yerine x bölü
+
+2512
+02:45:09,551 --> 02:45:11,931
+re idi. R neydi? Kök içinde x kare
+
+2513
+02:45:11,931 --> 02:45:13,671
+artı y kare. Dolayısıyla
+
+2514
+02:45:13,671 --> 02:45:14,791
+bunları yerine yazarsak
+
+2515
+02:45:14,791 --> 02:45:20,231
+ne olacak?
+
+2516
+02:45:21,111 --> 02:45:22,851
+Kök içinde? Kökler sadeleşecek
+
+2517
+02:45:22,851 --> 02:45:24,771
+x eşittir 2. Hani uzatmak istemiyorum
+
+2518
+02:45:24,771 --> 02:45:27,111
+orayı. Kökler sadeleşecek çarptığınız zaman
+
+2519
+02:45:27,111 --> 02:45:28,411
+x eşittir 2 doğrusu.
+
+2520
+02:45:28,671 --> 02:45:29,491
+Burada da tam
+
+2521
+02:45:29,491 --> 02:45:33,011
+tersi bir durum oldu gibi.
+
+2522
+02:45:33,851 --> 02:45:34,891
+Re cos theta
+
+2523
+02:45:34,891 --> 02:45:37,072
+eşittir 2 de bu nasıl bir şey?
+
+2524
+02:45:37,072 --> 02:45:38,671
+Re eşittir 2 bölü
+
+2525
+02:45:38,671 --> 02:45:40,771
+kosünüs teta olan
+
+2526
+02:45:40,771 --> 02:45:42,811
+çember esasında. Çember de değil.
+
+2527
+02:45:42,811 --> 02:45:45,551
+bir eğri. Bunun
+
+2528
+02:45:45,551 --> 02:45:47,811
+karteziyen koordinatlardaki
+
+2529
+02:45:47,811 --> 02:45:50,691
+karşılığı bir doğru. Çok daha basit.
+
+2530
+02:45:53,031 --> 02:45:55,072
+Zaten bu tip şeyleri
+
+2531
+02:45:55,072 --> 02:45:57,591
+kutupsal koordinatlarda çizmek
+
+2532
+02:45:57,591 --> 02:46:00,391
+bazen olanaklı olmayabiliyor.
+
+2533
+02:46:00,791 --> 02:46:02,152
+Neden? Çünkü
+
+2534
+02:46:02,152 --> 02:46:03,451
+theta'nın
+
+2535
+02:46:03,451 --> 02:46:07,011
+pi bölü 2'nin katları olduğu yerlerde
+
+2536
+02:46:07,011 --> 02:46:08,631
+tanımsızlıklar ortaya çıkacak.
+
+2537
+02:46:09,471 --> 02:46:10,311
+Böyle bir durum var.
+
+2538
+02:46:10,311 --> 02:46:29,311
+kutup
+
+2539
+02:46:15,956 --> 02:46:21,275
+Biraz daha re kare cos theta sin theta eşittir 4 şeklinde.
+
+2540
+02:46:21,355 --> 02:46:23,515
+Yine yerine yazıp işlemleri yapmamız lazım.
+
+2541
+02:46:23,656 --> 02:46:24,816
+Karışık şeyler gelebilir.
+
+2542
+02:46:25,615 --> 02:46:27,736
+Burada da x çarpı eşittir 4 mesela.
+
+2543
+02:46:28,036 --> 02:46:29,956
+Sağ tarafta daha basit, daha yalı.
+
+2544
+02:46:30,835 --> 02:46:31,855
+Bir hiperbol gibi.
+
+2545
+02:46:34,835 --> 02:46:38,515
+Re kare cos kare theta eksi re kare sin kare theta eşittir 1.
+
+2546
+02:46:38,736 --> 02:46:42,056
+Açtığımızda onda x kare eksiye kare hiperbolu çıkıyor.
+
+2547
+02:46:43,255 --> 02:46:45,675
+x kare eksiye kare eşittir 1 hiperbolu.
+
+2548
+02:46:45,956 --> 02:46:50,915
+1 artı 2 tane re cos theta.
+
+2549
+02:46:51,615 --> 02:46:52,775
+Bunları hep açmak lazım.
+
+2550
+02:46:53,316 --> 02:46:55,775
+Y kare eksi 3 x kare eksi 4 x eksi 1.
+
+2551
+02:46:56,255 --> 02:46:58,636
+Yani yerine yazıp işlem yapmanız lazım.
+
+2552
+02:46:58,876 --> 02:47:01,915
+Kareler alarak, kökler alarak işlem yapmanız lazım.
+
+2553
+02:47:01,915 --> 02:47:03,175
+Ben onları tek tek yapmıyorum.
+
+2554
+02:47:03,316 --> 02:47:04,796
+Sadece bir örnek olarak koydum.
+
+2555
+02:47:06,015 --> 02:47:07,896
+Mesela şurada çok basit görünüyor.
+
+2556
+02:47:07,976 --> 02:47:09,515
+Re eşittir 1 eksi cos theta.
+
+2557
+02:47:10,496 --> 02:47:15,036
+Ama sağ tarafta 2 değişkenli bir polinom.
+
+2558
+02:47:15,036 --> 02:47:16,036
+Değil mi?
+
+2559
+02:47:16,656 --> 02:47:17,716
+2 değişkenli bir polinom.
+
+2560
+02:47:17,796 --> 02:47:21,956
+Derecesi 4 olan 2 değişkenli bir polinom.
+
+2561
+02:47:22,855 --> 02:47:25,595
+Tabi burada derece farklı bir şey deniyor.
+
+2562
+02:47:25,855 --> 02:47:27,855
+Burada x'in derecesi, y'nin derecesi.
+
+2563
+02:47:28,236 --> 02:47:29,656
+Beraber x'inin derecesi.
+
+2564
+02:47:29,816 --> 02:47:31,355
+Ama en büyük derece 4 sonuçta.
+
+2565
+02:47:31,355 --> 02:47:35,775
+Sol tarafta basitken, sağ tarafta çok karmaşık hale geldi.
+
+2566
+02:47:35,855 --> 02:47:42,296
+Ama ilk örnekler, ilk 2 örnek sağ tarafta daha basit, sol tarafta biraz daha karışık gibi duruyor.
+
+2567
+02:47:42,656 --> 02:47:47,136
+O yüzden kesin olarak kutupsal koordinatlar bizim işimizi kolaylaştırır.
+
+2568
+02:47:47,136 --> 02:47:53,876
+Kutupsal koordinatların işimizi kolaylaştırdığı yer, kartezyen denklemlerde çembersel ifadeler varsa,
+
+2569
+02:47:54,076 --> 02:47:58,976
+yani x kare artı y kare ihtiva ediyorsa, kesinlikle kutupsal koordinatlar işimizi kolaylaştırır.
+
+2570
+02:47:59,435 --> 02:48:01,355
+Aksi durumda kolaylaştırmayabilir.
+
+2571
+02:48:02,015 --> 02:48:05,956
+Diyeceksiniz ki şurada x kare eksi y kare var ama arada eksi var.
+
+2572
+02:48:06,056 --> 02:48:07,056
+Çembersel değil bu.
+
+2573
+02:48:07,556 --> 02:48:08,355
+Hiperbolik bir şey.
+
+2574
+02:48:08,355 --> 02:48:15,996
+Çemberler ve paraboller de nispeten işe yarar.
+
+2575
+02:48:16,556 --> 02:48:18,335
+2 tane a kosmüs teta.
+
+2576
+02:48:19,156 --> 02:48:25,976
+Bu da zaten merkezi a'ya 0, yarı çapı a olan çember.
+
+2577
+02:48:26,896 --> 02:48:29,195
+Y üzerindeki hali var mı diye bakacağız.
+
+2578
+02:48:29,355 --> 02:48:29,576
+Yok.
+
+2579
+02:48:30,576 --> 02:48:30,695
+Tamam.
+
+2580
+02:48:31,216 --> 02:48:32,675
+4 çarpı kosmüs teta.
+
+2581
+02:48:33,275 --> 02:48:34,956
+Yukarıdakinin aslında özel hali.
+
+2582
+02:48:34,956 --> 02:48:38,095
+A yerine 2 yazdığımızda oluşan çember.
+
+2583
+02:48:38,355 --> 02:48:41,456
+Çemberler her halde sol tarafta daha basit.
+
+2584
+02:48:42,376 --> 02:48:44,775
+Burada bırakalım arkadaşlar simetriler.
+
+2585
+02:48:44,876 --> 02:48:46,456
+Çünkü ara vermeyelim bu konuya.
+
+2586
+02:48:46,556 --> 02:48:49,595
+Simetri konusu biraz şey gelebilir nasıl diyeyim.
+
+2587
+02:48:49,775 --> 02:48:50,956
+Birbirine benziyor.
+
+2588
+02:48:52,015 --> 02:48:53,335
+Tam olarak ne yaptık burada.
+
+2589
+02:48:53,615 --> 02:48:54,915
+İyi takip etmek gerekiyor.
+
+2590
+02:48:55,396 --> 02:48:56,996
+O yüzden simetriler de bırakalım.
+
+2591
+02:48:57,136 --> 02:49:00,415
+Haftaya simetriler ve grafik çizimleriyle devam edeceğiz.
+
+2592
+02:49:00,415 --> 02:49:03,695
+Alan, hacim, pardon alan, yay uzunluğu, hacim yok.
+
+2593
+02:49:04,216 --> 02:49:06,775
+Alan ve yay uzunluğuyla devam edeceğiz.
+
+2594
+02:49:08,355 --> 02:49:10,935
+Bu ders çok etkileşimli geçmedi.
+
+2595
+02:49:11,716 --> 02:49:13,275
+Var mı sorularınız arkadaşlar?
+
+2596
+02:49:17,843 --> 02:49:27,063
+Sor yok herhalde. O zaman sabırla dinlediğiniz için teşekkür ediyorum. Haftaya görüşmek üzere. Hoşçakalın.
+
+2597
+02:49:27,663 --> 02:49:28,683
+Görüşmek üzere hocam.
+
+2598
+02:49:33,940 --> 02:49:56,579
+Bu arada arkadaşlar, ikinci uygulamanın da artık sorularını çözebileceksiniz. Çünkü parametrik netlemleri verdim, kutupsal koordinatları verdim, yani bir kısmını verdik. Dolayısıyla oradaki soruları da çözebileceksiniz. Onları da lütfen çözmeye çalışın. Vakitli yaparsak rahat ederiz, konuları birik dinleyelim. Görüşmek üzere.
