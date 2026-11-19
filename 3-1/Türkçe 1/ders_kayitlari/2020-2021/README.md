@@ -22,3 +22,4 @@
 | 37 | Güz | Arzuhan Kocabaş | [sube_37/](sube_37/) |
 | 38 | Güz | Zeliha Çelen Boztilki | [sube_38/](sube_38/) |
 | 39 | Güz | Arzuhan Kocabaş | [sube_39/](sube_39/) |
+| 40 | Güz | Hilal Tufan | [sube_40/](sube_40/) |
