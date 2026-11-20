@@ -1,6 +1,6 @@
 # Ders 7 Genişletilmiş Notu: Sınıflandırma ve Karar Ağaçları
 
-> Bu not, ders kaydının altyazısından hazırlanmış ayrıntılı ders notudur. Kısa tekrar için aynı dersin kısa notuna bakın. Kayıtta dersin ikinci saati (00:00:00-01:37:00) birinci saatinden (01:38:00 sonrası) önce yer alır; not, dersin anlatım sırasını izler.
+> Bu not, ders kaydının altyazısından hazırlanmış ayrıntılı ders notudur. Kısa tekrar için aynı dersin kısa notuna bakın. Kayıt iki parçadır; arşivde parçalar ters sırada birleştirildiği için altyazıdaki sıra düzeltildi ve saat damgaları düzeltilmiş altyazıya göredir.
 
 ## İçindekiler
 
@@ -33,7 +33,7 @@ Slayttaki listede yapay sinir ağlarının hem sınıflandırıcılar hem tahmin
 
 ## 2. Sınıflandırma: İki Adımlı Süreç
 
-Sınıflandırma iki adımda yapılır (ekrandan, 01:45:00):
+Sınıflandırma iki adımda yapılır (ekrandan, 00:07:45):
 
 - **Model oluşturma (model construction):** Her örneğin (tuple ya da sample, yani verideki her satır) önceden belirlenmiş bir sınıfa ait olduğu varsayılır; bunu sınıf etiketi özniteliği belirler. Model oluşturmakta kullanılan örneklerin kümesi **eğitim kümesidir** (training set). Model sınıflandırma kuralları, karar ağacı ya da matematiksel formüller biçiminde gösterilebilir.
 - **Model kullanımı (model usage):** Model gelecekteki ya da etiketi bilinmeyen nesneleri sınıflandırmakta kullanılır. Önce modelin doğruluğu tahmin edilir: test örneğinin bilinen etiketi modelin verdiği sonuçla karşılaştırılır. Doğruluk oranı, test kümesinde doğru sınıflanan örneklerin yüzdesidir. Test kümesi eğitim kümesinden bağımsız olmalıdır, yoksa aşırı uyum oluşur. Doğruluk kabul edilebilirse model yeni verileri sınıflandırmakta kullanılır.
@@ -62,20 +62,20 @@ Model kötü çalışıyorsa "kötü" neye göre ölçülür? İki sınıflı ve
 
 ### 2.3 Tümevarım ve tümdengelim
 
-Slaytta genel yaklaşım şöyle gösterilir (ekrandan, 02:00:00): eğitim kümesinden (Attrib1, Attrib2, Attrib3 ve Class sütunlu 10 satır) bir öğrenme algoritmasıyla model öğrenilir; bu adıma **induction** (tümevarım, çıkarım) denir. Sonra model, sınıfı "?" olan test kümesine (satır 11-15) uygulanır; bu adıma **deduction** (tümdengelim) denir.
+Slaytta genel yaklaşım şöyle gösterilir (ekrandan, 00:22:45): eğitim kümesinden (Attrib1, Attrib2, Attrib3 ve Class sütunlu 10 satır) bir öğrenme algoritmasıyla model öğrenilir; bu adıma **induction** (tümevarım, çıkarım) denir. Sonra model, sınıfı "?" olan test kümesine (satır 11-15) uygulanır; bu adıma **deduction** (tümdengelim) denir.
 
-> **Ders sonrası not:** Hoca anlatırken iki adım için de "induction" terimini söyledi. Slayttaki doğru eşleme şöyledir: modeli eğitim kümesinden öğrenmek induction, modeli test kümesine uygulamak deduction'dır (ekrandan, 02:00:00).
+> **Ders sonrası not:** Hoca anlatırken iki adım için de "induction" terimini söyledi. Slayttaki doğru eşleme şöyledir: modeli eğitim kümesinden öğrenmek induction, modeli test kümesine uygulamak deduction'dır (ekrandan, 00:22:45).
 
 ## 3. Karar Ağacı
 
-Karar ağacı akış diyagramına benzeyen bir ağaçtır. İkili ağaç olmak zorunda değildir. Slayttaki tanım şöyledir (ekrandan, 02:05:00):
+Karar ağacı akış diyagramına benzeyen bir ağaçtır. İkili ağaç olmak zorunda değildir. Slayttaki tanım şöyledir (ekrandan, 00:27:45):
 
 - Karar ağaçları örnekleri kökten bir yaprağa doğru indirerek sınıflandırır; yaprak örneğin sınıfını verir.
 - Her iç düğüm örneğin bir özniteliğini test eder.
 - Bir düğümden inen her dal o özniteliğin olası değerlerinden birine karşılık gelir.
 - Her yaprak bir sınıf atar.
 
-Kitaptaki örnek, gelen bir müşterinin bilgisayar alıp almayacağını tahmin eder. Ağacın kökünde `age?` vardır. `<=30` dalında `student?` sorulur (no ise no, yes ise yes); `31..40` dalı doğrudan `yes` yaprağıdır; `>40` dalında `credit_rating?` sorulur (excellent ise no, fair ise yes). (age = <=30, income = low, student = no, credit_rating = fair) örneği bu ağaçta önce `<=30` dalına, sonra `student = no` dalına iner ve negatif sınıflanır (ekrandan, 02:05:00).
+Kitaptaki örnek, gelen bir müşterinin bilgisayar alıp almayacağını tahmin eder. Ağacın kökünde `age?` vardır. `<=30` dalında `student?` sorulur (no ise no, yes ise yes); `31..40` dalı doğrudan `yes` yaprağıdır; `>40` dalında `credit_rating?` sorulur (excellent ise no, fair ise yes). (age = <=30, income = low, student = no, credit_rating = fair) örneği bu ağaçta önce `<=30` dalına, sonra `student = no` dalına iner ve negatif sınıflanır (ekrandan, 00:27:45).
 
 Ağacı oluştururken akla gelen sorular şunlardır: Köke hangi öznitelik konacak? Yüzlerce öznitelik varsa sonraki düğümlere hangileri, hangi sırayla konacak? Ağaç çok yüksek olmamalıdır, çünkü yükseklik arttıkça karar vermek uzun sürer; ama yükseklik doğruluğu artırıyorsa buna razı olunabilir.
 
@@ -87,7 +87,7 @@ Slayttaki "karar ağacı, öznitelik değerleri üzerindeki kısıtların birle�
 
 ## 4. Karar Ağacı Oluşturma Algoritması
 
-Slayttaki genel algoritma şöyledir (ekrandan, 00:25:00):
+Slayttaki genel algoritma şöyledir (ekrandan, 01:15:10):
 
 ```text
 Generate_Decision_Tree(D, attribute_list)
@@ -123,7 +123,7 @@ Algoritmanın durma koşulları iki tanedir: bakılacak örnek kalmaması ya da 
 
 ## 5. Bölme Ölçütü ve Bölme Türleri
 
-Slayttaki tasarım soruları (ekrandan, 02:20:00):
+Slayttaki tasarım soruları (ekrandan, 00:42:45):
 
 - **Eğitim örnekleri nasıl bölünmeli?**
   - Test koşulunu belirleme yöntemi (splitting criterion): öznitelik tipine bağlıdır.
@@ -136,7 +136,7 @@ Ağaç büyüdükçe çok başarılı ama çok büyük modeller elde edilebilir;
 
 Öznitelikler ikili, nominal, sıralı (ordinal) ya da sürekli olabilir. Bölmenin kaç yollu olacağı da öznitelikteki değer sayısına bağlıdır. Öznitelik iki değer alıyorsa (öğrenci mi: evet/hayır) yapılan bölmeye **ikili bölme** (binary ya da two-way split) denir. İkiden çok değer varsa **çok yollu bölme** (multi-way split) denir. Bir algoritma çok yollu bölmeye izin verebilir ya da yalnız ikili bölme yapabilir. Tek bir karar ağacı oluşturma yöntemi yoktur: CART (classification and regression trees), ID3, C4.5 gibi algoritmalar öznitelik tipine göre ve Gini indeksi mi entropi mi kullandıklarına göre farklılaşır.
 
-> **Ders sonrası not:** Hoca tahtaya algoritma adlarını CART, ID3 ve "ID4.5" diye yazdı (ekrandan, 00:35:00). Algoritmanın doğru adı C4.5'tir; slaytta da C4.5 geçer (ekrandan, 00:45:00).
+> **Ders sonrası not:** Hoca tahtaya algoritma adlarını CART, ID3 ve "ID4.5" diye yazdı (ekrandan, 01:25:10). Algoritmanın doğru adı C4.5'tir; slaytta da C4.5 geçer (ekrandan, 01:35:10).
 
 Bir öğrenci, çok yollu bölmenin ağacı daha kısa tuttuğunu sordu. **Cevap:** Böyle bir garanti yoktur. Bir dal hemen yes yaprağına bağlandığında ağaç kısa görünür, ama başka dallar yeniden dallanabilir. Çok yollu bölme her zaman köke yakın yapraklar vermez.
 
@@ -155,9 +155,9 @@ Derste bir soru da tartışıldı: bir öznitelik verinin %99'unu bir dala, %1'i
 
 Algoritma açgözlü (greedy) yaklaşımla çalışır. Açgözlü algoritma adım adım ilerler ve her adımda bir ölçüye göre o anki en iyi seçeneği alır; global en iyiye bakmaz. Bu yüzden bulunan ağaç gerçekten en iyi ağaç olmayabilir, ama hızlı çalışır ve iyi bir ağaç verir.
 
-Slayttaki ilke şöyledir (ekrandan, 02:25:00): homojen (daha saf) sınıf dağılımına sahip düğümler tercih edilir. [5+,5-] homojen değildir ve safsızlığı (impurity) yüksektir; [9+,1-] homojendir ve safsızlığı düşüktür. Saflık (purity) safsızlığın tersidir. Bu yüzden düğüm safsızlığını ölçen bir ölçüye ihtiyaç vardır: entropi, Gini indeksi, yanlış sınıflama hatası gibi.
+Slayttaki ilke şöyledir (ekrandan, 00:47:45): homojen (daha saf) sınıf dağılımına sahip düğümler tercih edilir. [5+,5-] homojen değildir ve safsızlığı (impurity) yüksektir; [9+,1-] homojendir ve safsızlığı düşüktür. Saflık (purity) safsızlığın tersidir. Bu yüzden düğüm safsızlığını ölçen bir ölçüye ihtiyaç vardır: entropi, Gini indeksi, yanlış sınıflama hatası gibi.
 
-En iyi bölmeyi bulma adımları şunlardır (ekrandan, 00:05:00):
+En iyi bölmeyi bulma adımları şunlardır (ekrandan, 00:55:10):
 
 1. Bölmeden önce safsızlık ölçüsünü (P) hesapla. Kökte henüz hiçbir özniteliğe bakmadan, yalnız sınıf dağılımı [9+,5-] üzerinden hesaplanır.
 2. Bölmeden sonraki safsızlığı (M) hesapla: her çocuk düğümün safsızlığını bul; M, çocukların ağırlıklı safsızlığıdır.
@@ -173,7 +173,7 @@ Safsızlığı hesaplamanın üç yolu işlendi: bilgi kazancı (information gai
 
 Entropi bilgi kuramından gelir. Bu kuram sinyaller ve veri için geliştirilmiştir ve verinin dağılımına bakarak veriyi daha az bitle nasıl gösterebileceğimizi inceler. Kuramın ayrıntısına girilmedi.
 
-Pozitif ve negatif örnekler içeren bir S kümesinin entropisi şöyledir (ekrandan, 00:10:00):
+Pozitif ve negatif örnekler içeren bir S kümesinin entropisi şöyledir (ekrandan, 01:00:10):
 
 $$\text{Entropy}(S) = -p_+\log_2 p_+ - p_-\log_2 p_-$$
 
@@ -195,7 +195,7 @@ Sınıf yalnız yes/no olmak zorunda değildir; A, B, C, D gibi birden çok sın
 
 ### 7.2 Beklenen bilgi ve bilgi kazancı
 
-Slayttaki genel tanımlar şunlardır (ekrandan, 00:15:00):
+Slayttaki genel tanımlar şunlardır (ekrandan, 01:05:10):
 
 - En yüksek bilgi kazancı olan öznitelik seçilir.
 - $p_i$, D'deki rastgele bir örneğin $C_i$ sınıfına ait olma olasılığıdır ve $|C_{i,D}|/|D|$ ile tahmin edilir.
@@ -215,7 +215,7 @@ $\text{Info}(D)$, hiçbir öznitelik kullanmadan önce düğümdeki verinin taş
 
 ### 7.3 Örnek veri kümesi
 
-Slayttaki 14 satırlık veri şöyledir (ekrandan, 00:20:00):
+Slayttaki 14 satırlık veri şöyledir (ekrandan, 01:10:10):
 
 | age | income | student | credit_rating | buys_computer |
 |---|---|---|---|---|
@@ -238,7 +238,7 @@ Age burada sürekli değil, üç ayrık (sıralı) değer olarak verilmiştir.
 
 ### 7.4 Köke ne konacak?
 
-**Bölmeden önce:** 9 pozitif, 5 negatif örnek vardır, D: [9+,5-] (ekrandan, 00:20:00).
+**Bölmeden önce:** 9 pozitif, 5 negatif örnek vardır, D: [9+,5-] (ekrandan, 01:10:10).
 
 $$\text{Info}(D) = -\frac{9}{14}\log_2\frac{9}{14} - \frac{5}{14}\log_2\frac{5}{14} = 0.940$$
 
@@ -276,7 +276,7 @@ Bütün değerler python ile doğrulandı ($\text{Info}_{age}=0.6935$, $\text{In
 
 ### 7.5 Alt düğümler
 
-Kök age olduktan sonra her dal için en iyi öznitelik aranır (ekrandan, 02:15:00). `<=30` dalındaki 5 satır şöyledir:
+Kök age olduktan sonra her dal için en iyi öznitelik aranır (ekrandan, 00:37:45). `<=30` dalındaki 5 satır şöyledir:
 
 | age | income | student | credit_rating | buys_computer |
 |---|---|---|---|---|
@@ -310,7 +310,7 @@ Gerçek hayatta böyle olmaz: kurulan model eğitim kümesinin kendisi üzerinde
 
 ## 8. Algoritmanın Özyinelemeli İşleyişi
 
-Algoritma örnek veri üzerinden yeniden izlendi (ekrandan, 00:30:00). Önce bir düğüm oluşturulur. `31..40` dalındaki [4+,0-] bölümü ilk `if`'e girer ve yaprak olur. İkinci `if`'e (öznitelik listesi boş) nadiren girilir: bütün öznitelikler yol üzerinde kullanılmış ama düğüm hâlâ tam ayrılmamışsa çoğunluk oylaması yapılır.
+Algoritma örnek veri üzerinden yeniden izlendi (ekrandan, 01:20:10). Önce bir düğüm oluşturulur. `31..40` dalındaki [4+,0-] bölümü ilk `if`'e girer ve yaprak olur. İkinci `if`'e (öznitelik listesi boş) nadiren girilir: bütün öznitelikler yol üzerinde kullanılmış ama düğüm hâlâ tam ayrılmamışsa çoğunluk oylaması yapılır.
 
 En iyi öznitelik bulunup düğüme konduktan sonra öznitelik listeden çıkarılır ve for döngüsü başlar. Döngü önce $j=1$ için $D_1$ ile ve güncellenmiş öznitelik listesiyle fonksiyonu çağırır. Bu çağrı da kendi içinde en iyi özniteliği bulur, onu listeden çıkarır ve kendi çocukları için çağrı yapar. $D_2$ ancak $D_1$'den başlayan bütün alt ağaç bittikten sonra işlenir. Yani bu kod derinlik öncelikli (depth-first) ilerler: önce bir dalı en alta kadar indirir, sonra öteki dala geçer.
 
@@ -322,7 +322,7 @@ Derste bir öğrenci, kullanılan özniteliğin farklı bir dalda yeniden kullan
 
 Öznitelik sürekli ise önce değerler küçükten büyüğe sıralanır ve tekil değerler bulunur (veride aynı değer birçok kez geçebilir). Sonra sınıfın değiştiği yerlere bakılır.
 
-Slayttaki örnek (ekrandan, 00:40:00):
+Slayttaki örnek (ekrandan, 01:30:10):
 
 | Temperature | 40 | 48 | 60 | 72 | 80 | 90 |
 |---|---|---|---|---|---|---|
@@ -336,7 +336,7 @@ Bu eşiklerden $\text{Temperature}_{>54}$ ve $\text{Temperature}_{>85}$ adlı ye
 
 ## 10. Kazanç Oranı
 
-Bilgi kazancında çocukların entropisi, düğüme düşen örnek sayısıyla ağırlıklandırılır. Bir dala çok sayıda örnek düşüyorsa o dal sonucu baskılayabilir; çok sayıda farklı değer olduğunda da hesap iyi çalışmaz. Slayttaki ifade şöyledir (ekrandan, 00:45:00):
+Bilgi kazancında çocukların entropisi, düğüme düşen örnek sayısıyla ağırlıklandırılır. Bir dala çok sayıda örnek düşüyorsa o dal sonucu baskılayabilir; çok sayıda farklı değer olduğunda da hesap iyi çalışmaz. Slayttaki ifade şöyledir (ekrandan, 01:35:10):
 
 - Bilgi kazancı ölçüsü çok sayıda değeri olan özniteliklere doğru yanlıdır.
 - Bazı karar ağacı algoritmaları (C4.5 gibi) bu sorunu aşmak için **kazanç oranını** (gain ratio) kullanır; bu, bilgi kazancının normalize edilmesidir.
@@ -347,7 +347,7 @@ $$\text{GainRatio}(A) = \frac{\text{Gain}(A)}{\text{SplitInfo}_A(D)}$$
 
 SplitInfo, entropi formülüne benzer ama sınıflara bakmaz: verinin dallara nasıl dağıldığını, yani kaça kaç bölündüğünü ölçer. Bilgi kazancında her dal kendi içindeki sınıf oranlarıyla (örneğin [2+,3-] için 2/5 ve 3/5) değerlendiriliyordu. SplitInfo'da ise dalların toplam içindeki payları (her dalın örnek sayısı / ebeveyndeki örnek sayısı) kullanılır ve kazanç bununla bölünür.
 
-**Income örneği (ekrandan, 00:45:00):** Income low, medium, high dallarına 4, 6 ve 4 örnek düşürür.
+**Income örneği (ekrandan, 01:35:10):** Income low, medium, high dallarına 4, 6 ve 4 örnek düşürür.
 
 $$\text{SplitInfo}_{income}(D) = -\frac{4}{14}\log_2\frac{4}{14} - \frac{6}{14}\log_2\frac{6}{14} - \frac{4}{14}\log_2\frac{4}{14} = 1.557$$
 
@@ -373,7 +373,7 @@ Yani Gini de dağılımın nasıl olduğuna bakar: homojen dağılım sıfıra y
 
 ### 11.2 Bölme sonrası Gini
 
-Bir ebeveyn düğüm $k$ çocuğa bölündüğünde (ekrandan, 00:50:00):
+Bir ebeveyn düğüm $k$ çocuğa bölündüğünde (ekrandan, 01:40:10):
 
 $$\text{GINI}_{split} = \sum_{i=1}^{k} \frac{n_i}{n}\,\text{GINI}(i)$$
 
@@ -383,11 +383,11 @@ $$\text{GAIN} = \text{GINI}(parent) - \text{GINI}_{split}$$
 
 Çocukların ağırlıklı ortalama Gini'sini en küçük yapan öznitelik seçilir. Gini indeksi CART, SLIQ, SPRINT gibi karar ağacı algoritmalarında kullanılır. Avantajı daha hızlı çalışmasıdır: logaritma gibi işlemler içermez, yalnız oranlar ve basit toplama, çarpma vardır.
 
-> **Ders sonrası not:** Hoca Gini kullanan algoritmaları "TIIT gibi ya da Sprint gibi" diye söyledi (altyazıdaki biçimiyle); slaytta CART, SLIQ ve SPRINT yazar (ekrandan, 00:50:00).
+> **Ders sonrası not:** Hoca Gini kullanan algoritmaları "TIIT gibi ya da Sprint gibi" diye söyledi (altyazıdaki biçimiyle); slaytta CART, SLIQ ve SPRINT yazar (ekrandan, 01:40:10).
 
 ### 11.3 İkili öznitelik örneği
 
-Ebeveynde C0 sınıfından 6, C1 sınıfından 6 örnek vardır; $\text{Gini} = 0.500$. İki ikili öznitelik, A ve B, deneniyor (ekrandan, 00:55:00).
+Ebeveynde C0 sınıfından 6, C1 sınıfından 6 örnek vardır; $\text{Gini} = 0.500$. İki ikili öznitelik, A ve B, deneniyor (ekrandan, 01:45:10).
 
 **A ile bölme:** Node N1'e C0'dan 4, C1'den 3 örnek; Node N2'ye C0'dan 2, C1'den 3 örnek düşer.
 
@@ -411,13 +411,13 @@ Değerler python ile doğrulandı (0.4857 ve 0.3714). B'nin ağırlıklı Gini's
 
 ### 11.4 Sürekli öznitelik örneği
 
-Sürekli öznitelikte değerler sıralanır ve Gini indeksi en küçük olan bölme konumu seçilir (ekrandan, 01:10:00). Slayttaki veride sınıf sütunu Cheat (hile yaptı mı), öznitelik Annual Income'dır:
+Sürekli öznitelikte değerler sıralanır ve Gini indeksi en küçük olan bölme konumu seçilir (ekrandan, 02:00:10). Slayttaki veride sınıf sütunu Cheat (hile yaptı mı), öznitelik Annual Income'dır:
 
 | Annual Income | 60 | 70 | 75 | 85 | 90 | 95 | 100 | 120 | 125 | 220 |
 |---|---|---|---|---|---|---|---|---|---|---|
 | Cheat | No | No | No | Yes | Yes | Yes | No | No | No | No |
 
-Bölme konumları komşu değerlerin arasına konur. Her konum için `<=` ve `>` tarafındaki Yes/No sayıları ve ağırlıklı Gini şöyledir (ekrandan, 01:10:00):
+Bölme konumları komşu değerlerin arasına konur. Her konum için `<=` ve `>` tarafındaki Yes/No sayıları ve ağırlıklı Gini şöyledir (ekrandan, 02:00:10):
 
 | Konum | 55 | 65 | 72 | 80 | 87 | 92 | 97 | 110 | 122 | 172 | 230 |
 |---|---|---|---|---|---|---|---|---|---|---|---|
@@ -431,7 +431,7 @@ Hoca önce sınıfın değiştiği ilk yere, 75 ile 85 arasındaki 80 konumuna b
 
 ## 12. Diğer Öznitelik Seçme Ölçüleri
 
-Slayttaki diğer ölçüler şunlardır (ekrandan, 01:15:00):
+Slayttaki diğer ölçüler şunlardır (ekrandan, 02:05:10):
 
 - **CHAID:** Popüler bir karar ağacı algoritmasıdır; ölçüsü $\chi^2$ bağımsızlık testine dayanır.
 - **G-istatistiği:** $\chi^2$ dağılımına yakın bir yaklaşıklığı vardır.
@@ -460,7 +460,7 @@ Model eğitim verisinde çok iyi çalışıyor ama test verisinde iyi çalışm�
 
 > **Hocanın vurgusu:** Aşırı uyum olup olmadığını anlamak için yalnız test hatasına bakılmaz, eğitim hatasına da bakılır. Eğitim hatasının %1-3 kadar düşük olması normaldir; aradaki fark açıldıkça aşırı uyum var demektir.
 
-Slayttaki tanımlar ve grafik şöyledir (ekrandan, 01:20:00):
+Slayttaki tanımlar ve grafik şöyledir (ekrandan, 02:10:10):
 
 - Aşırı uyum, modelin eğitim verisine çok iyi uyduğu ama görülmemiş veriye kötü genelleştiği durumdur.
 - Karmaşık modellerin aşırı uyum yapma olasılığı basit modellerinkinden yüksektir.
@@ -468,12 +468,12 @@ Slayttaki tanımlar ve grafik şöyledir (ekrandan, 01:20:00):
 
 Grafikte yatay eksen düğüm sayısı (0-300), dikey eksen hata yüzdesidir (%5-45). Düğüm sayısı arttıkça eğitim hatası (düz çizgi) sürekli azalır ve yaklaşık %9'a kadar iner. Test hatası (kesikli çizgi) başta azalır, yaklaşık 100-150 düğümde %32 dolaylarında en düşük düzeye gelir, sonra dalgalanır ve yaklaşık 180 düğümden sonra yeniden artar; dikey kesikli çizgi "Overfitting" bölgesinin başlangıcını gösterir. İstenen şey, test hatasının eğitim hatasına yaklaşarak gitmesidir.
 
-Aşırı uyumun nedenleri (ekrandan, 01:20:00):
+Aşırı uyumun nedenleri (ekrandan, 02:10:10):
 
 - **Gürültü (noise):** Eğitim verisinde gürültü olabilir.
 - **Yetersiz örnek (insufficient examples):** Eğitim kümesi az olabilir. Örneğin 100 satırlık veriyle kurulan ağaç, 2000-3000 satırla daha iyi öğrenebilirdi; az veride entropi ya da Gini hesaplanırken sayılar küçük kaldığı için hata çıkar.
 
-<!-- BELİRSİZ: 01:20:29-01:22:56 arasındaki soru-cevap altyazıda büyük ölçüde bozuk; sorunun tam metni çıkarılamadı, aşağıdaki biçim hocanın anlaşılır cümlelerinden kuruldu. -->
+<!-- BELİRSİZ: 02:10:39-02:13:06 arasındaki soru-cevap altyazıda büyük ölçüde bozuk; sorunun tam metni çıkarılamadı, aşağıdaki biçim hocanın anlaşılır cümlelerinden kuruldu. -->
 
 **Soru:** Eğitim verisi artarsa (satır sayısı) ağaç hep büyür mü? **Cevap:** Hayır; her düğümde en iyi öznitelik seçildiği için satır sayısı ağacın büyüklüğünü doğrudan artırmaz. Ayrıca belli bir noktadan sonra eğitim hatası düz gitmeye başlar ve ne eklenirse eklensin azalmaz. Gürültü yüzünden dallar sıfıra sıfır ayrılamaz. Öznitelikler tekrar tekrar kullanılırsa çok büyük ağaçlar oluşur ve bu daha çok aşırı uyuma yol açar.
 
@@ -481,13 +481,13 @@ Aşırı uyumun nedenleri (ekrandan, 01:20:00):
 
 ### 13.2 Uzayı bölme çizimi
 
-Hoca aşırı uyumu iki boyutlu bir çizimle anlattı (ekrandan, 01:25:00). Yatay ve dikey eksenler iki öznitelik (x ve y) gibi düşünülür. Uzaya iki sınıfı temsil eden mavi ve kırmızı noktalar dağıtılır; birkaç nokta da gürültü olarak öteki sınıfın bölgesine konur.
+Hoca aşırı uyumu iki boyutlu bir çizimle anlattı (ekrandan, 02:15:10). Yatay ve dikey eksenler iki öznitelik (x ve y) gibi düşünülür. Uzaya iki sınıfı temsil eden mavi ve kırmızı noktalar dağıtılır; birkaç nokta da gürültü olarak öteki sınıfın bölgesine konur.
 
 Karar ağacının her düğümü aslında uzayı bir özniteliğe göre ikiye böler: "x şundan büyük olanlar ve küçük olanlar" gibi. Birinci düğüm uzayı bir dikey çizgiyle ikiye ayırır. İkinci düğüm bir taraftaki mavileri ayırmak için yeni bir çizgi çeker, üçüncüsü bir başka çizgi çeker. Sonraki düğümler geriye kalan iki mavi nokta için, sonra da tek bir kırmızı gürültü noktası için uzayı yeniden böler. Ağaç büyüdükçe bölmeler gürültü noktalarını tek tek ayırmaya başlar. Böylece ağaç eğitim verisindeki gürültüyü de öğrenir ve gürültüye göre hassaslaşır.
 
 ### 13.3 Budama
 
-Aşırı uyumdan kaçınmanın iki yolu vardır (ekrandan, 01:20:00):
+Aşırı uyumdan kaçınmanın iki yolu vardır (ekrandan, 02:10:10):
 
 - **Ön budama (prepruning):** Ağaç oluşumu erkenden durdurulur. Bir düğümü bölmek iyilik ölçüsünün belli bir eşiğin altına düşmesine yol açacaksa düğüm bölünmez. Örneğin Gini indeksi bir noktadan sonra iyileşmiyorsa dallanma durdurulur. Burada budama yapılmaz; ağaç tam oluşmadan büyümesi bir koşulla kesilir.
 - **Son budama (postpruning):** Önce tam büyümüş bir ağaç kurulur. Bu ağaç gürültüyü de öğrenir; son dallanmalar çoğunlukla gürültüye özel dallardır. Örneğin bir düğümde 999 örnek bir sınıftan, 1 örnek gürültüyse, yalnız o tek örnek için bir düğüm daha açılmıştır. Son budamada bu dallar tam ağaçtan kesilir ve giderek daha çok budanmış bir ağaç dizisi elde edilir.
@@ -500,7 +500,7 @@ Eğitim sırasında hata eğrilerini adım adım çizmek, modelin nasıl öğren
 
 Aynı hatayı veren iki ağaçtan basit olanı tercih etmek çoğu zaman daha iyidir; eksik uyum olmadığından eminseniz basit model seçilir. Aşırı uyumda genellikle daha karmaşık, daha büyük ağaçlar ortaya çıkar ve eğitim hatası tek başına pek bir şey söylemez.
 
-Slaytlarda genelleme hatasının tahmin edilmesine (iyimser ve kötümser yaklaşım, azaltılmış hata budaması) ilişkin bir bölüm de vardır (ekrandan, 01:30:00); hoca bu bölümü anlatmadan geçti.
+Slaytlarda genelleme hatasının tahmin edilmesine (iyimser ve kötümser yaklaşım, azaltılmış hata budaması) ilişkin bir bölüm de vardır (ekrandan, 02:20:10); hoca bu bölümü anlatmadan geçti.
 
 ## 14. Karar Ağaçlarının Güçlü ve Zayıf Yanları
 
@@ -518,9 +518,9 @@ Slaytlarda genelleme hatasının tahmin edilmesine (iyimser ve kötümser yakla�
 - Paralelleştirmeye uygun değildir. Çok büyük veride bellek hatası alınabilir; algoritmalar genellikle ölçeklenebilir değildir. RainForest ve SPRINT gibi daha yeni ve ölçeklenebilir algoritmalar bu sorun üzerinde çalışır.
 - Her karar sınırında tek bir öznitelik vardır.
 
-Slayttaki örnek bunu gösterir (ekrandan, 01:35:00). Soldaki veri kümesi eksenlere paralel çizgilerle ayrılabildiği için karar ağacı bunu kolayca öğrenir: kökte `x < 0.43?`, sonra Yes dalında `y < 0.47?`, No dalında `y < 0.33?` sorulur; dört yaprağa sırasıyla (4 üçgen, 0 daire), (0 üçgen, 4 daire), (0 üçgen, 3 daire) ve (4 üçgen, 0 daire) düşer. Sağdaki veride ise sınıflar köşegen bir doğruyla ayrılır. Burada test koşulunun birden çok özniteliği içermesi gerekir; karar ağacı bu tür bir veri kümesiyle başa çıkamaz. Eksenlere paralel bölmelerle köşegeni ancak çok sayıda basamakla yaklaşık olarak izleyebilir. Sınırın daha yüksek dereceli bir polinomla gösterilen bir eğri olduğu verilerde durum daha da kötüdür.
+Slayttaki örnek bunu gösterir (ekrandan, 02:25:10). Soldaki veri kümesi eksenlere paralel çizgilerle ayrılabildiği için karar ağacı bunu kolayca öğrenir: kökte `x < 0.43?`, sonra Yes dalında `y < 0.47?`, No dalında `y < 0.33?` sorulur; dört yaprağa sırasıyla (4 üçgen, 0 daire), (0 üçgen, 4 daire), (0 üçgen, 3 daire) ve (4 üçgen, 0 daire) düşer. Sağdaki veride ise sınıflar köşegen bir doğruyla ayrılır. Burada test koşulunun birden çok özniteliği içermesi gerekir; karar ağacı bu tür bir veri kümesiyle başa çıkamaz. Eksenlere paralel bölmelerle köşegeni ancak çok sayıda basamakla yaklaşık olarak izleyebilir. Sınırın daha yüksek dereceli bir polinomla gösterilen bir eğri olduğu verilerde durum daha da kötüdür.
 
-> **Ders sonrası not:** Hoca "karar ağaçları hep lineer ayırır, lineer ayrılabilen verilerde iyi çalışır" dedi. Daha doğru ifade şudur: karar ağacının her bölmesi tek bir özniteliğe dayandığı için sınırlar eksenlere paraleldir. Slayttaki sağ örnekte veri lineer olarak ayrılabilir (tek bir köşegen doğru yeter), ama doğru eğik olduğu için karar ağacı onu iyi temsil edemez (ekrandan, 01:35:00).
+> **Ders sonrası not:** Hoca "karar ağaçları hep lineer ayırır, lineer ayrılabilen verilerde iyi çalışır" dedi. Daha doğru ifade şudur: karar ağacının her bölmesi tek bir özniteliğe dayandığı için sınırlar eksenlere paraleldir. Slayttaki sağ örnekte veri lineer olarak ayrılabilir (tek bir köşegen doğru yeter), ama doğru eğik olduğu için karar ağacı onu iyi temsil edemez (ekrandan, 02:25:10).
 
 Ağaçtaki her düğüm (örneğin `x < 0.43?`) tek başına küçük bir sınıflandırıcı gibi düşünülebilir.
 
@@ -532,13 +532,13 @@ Hoca derste şu soruyu sordu: karar ağaçları sınıflandırma için kullanıl
 
 ### Soru 1: Entropi değerleri
 
-(derste sözlü, 00:11:08) [12+,5-], [8+,8-] ve [8+,0-] kümelerinin entropisi nedir? Hangisi en homojendir?
+(derste sözlü, 01:01:18) [12+,5-], [8+,8-] ve [8+,0-] kümelerinin entropisi nedir? Hangisi en homojendir?
 
 **Çözüm:** [12+,5-] için $-\frac{12}{17}\log_2\frac{12}{17} - \frac{5}{17}\log_2\frac{5}{17} \approx 0.874$; [8+,8-] için 1; [8+,0-] için 0. En homojen olan [8+,0-]'dır, entropisi en küçük değer olan 0'dır. (Derste ilk değer "0.8 küsur" diye söylendi; tam değer python ile hesaplandı.)
 
 ### Soru 2: Kök özniteliğini bilgi kazancıyla seçme
 
-(ekrandan, 00:20:00) Bölüm 7.3'teki 14 satırlık veride (9 yes, 5 no) age, income, student ve credit_rating özniteliklerinin bilgi kazancını hesaplayın. Köke hangi öznitelik konur?
+(ekrandan, 01:10:10) Bölüm 7.3'teki 14 satırlık veride (9 yes, 5 no) age, income, student ve credit_rating özniteliklerinin bilgi kazancını hesaplayın. Köke hangi öznitelik konur?
 
 **Çözüm (derste verildi):**
 
@@ -552,19 +552,19 @@ En büyük kazanç age'dedir; kök age olur.
 
 ### Soru 3: Alt düğümlerde en iyi öznitelik
 
-(ekrandan, 02:15:00) Kök age olduktan sonra `<=30` ve `>40` dallarında (bölüm 7.5'teki tablolar) hangi öznitelikle bölünmelidir?
+(ekrandan, 00:37:45) Kök age olduktan sonra `<=30` ve `>40` dallarında (bölüm 7.5'teki tablolar) hangi öznitelikle bölünmelidir?
 
 **Çözüm:** Derste gözle sayılarak çözüldü. `<=30` dalında student = no olan 3 örneğin hepsi no, student = yes olan 2 örneğin hepsi yes'tir; student dalı tam ayırır. `>40` dalında credit_rating = fair olan 3 örneğin hepsi yes, excellent olan 2 örneğin hepsi no'dur; credit_rating dalı tam ayırır. Sayısal karşılığı (derste verilmedi, python ile hesaplandı): iki dalda da $\text{Info} = \text{Info}([2,3]) = 0.971$ ve seçilen özniteliğin bölmeden sonraki bilgisi 0 olduğu için kazanç 0.971'dir; bu, o dalda alınabilecek en büyük kazançtır.
 
 ### Soru 4: Örnek sınıflandırma
 
-(ekrandan, 02:05:00) Karar ağacında kök age; `<=30` dalında student (no ise no, yes ise yes); `31..40` dalında yes; `>40` dalında credit_rating (excellent ise no, fair ise yes) sorulmaktadır. (age = <=30, income = low, student = no, credit_rating = fair) örneği nasıl sınıflanır?
+(ekrandan, 00:27:45) Karar ağacında kök age; `<=30` dalında student (no ise no, yes ise yes); `31..40` dalında yes; `>40` dalında credit_rating (excellent ise no, fair ise yes) sorulmaktadır. (age = <=30, income = low, student = no, credit_rating = fair) örneği nasıl sınıflanır?
 
 **Çözüm (derste verildi):** age = `<=30` dalına inilir, student = no olduğu için no yaprağına ulaşılır. Örnek negatif sınıflanır. Income ve credit_rating bu yolda hiç sorulmaz.
 
 ### Soru 5: Sürekli öznitelikte aday eşikler
 
-(ekrandan, 00:40:00) Temperature değerleri 40, 48, 60, 72, 80, 90; sınıflar No, No, Yes, Yes, Yes, No. Aday eşikler nelerdir ve hangisi daha iyidir?
+(ekrandan, 01:30:10) Temperature değerleri 40, 48, 60, 72, 80, 90; sınıflar No, No, Yes, Yes, Yes, No. Aday eşikler nelerdir ve hangisi daha iyidir?
 
 **Çözüm:** Aday eşikler sınıfın değiştiği yerlerin orta noktalarıdır: $(48+60)/2 = 54$ ve $(80+90)/2 = 85$ (derste verildi).
 
@@ -572,7 +572,7 @@ En büyük kazanç age'dedir; kök age olur.
 
 ### Soru 6: Kazanç oranı
 
-(ekrandan, 00:45:00) Income özniteliği 14 örneği 4, 6, 4 olarak üç dala ayırıyor ve bilgi kazancı 0.029'dur. SplitInfo ve kazanç oranını hesaplayın.
+(ekrandan, 01:35:10) Income özniteliği 14 örneği 4, 6, 4 olarak üç dala ayırıyor ve bilgi kazancı 0.029'dur. SplitInfo ve kazanç oranını hesaplayın.
 
 **Çözüm (derste verildi):**
 
@@ -582,37 +582,37 @@ $$\text{GainRatio}(income) = 0.029 / 1.557 = 0.019$$
 
 ### Soru 7: İkili öznitelikte Gini
 
-(ekrandan, 00:55:00) Ebeveynde C0 = 6, C1 = 6. A özniteliği N1 = (C0: 4, C1: 3), N2 = (C0: 2, C1: 3); B özniteliği N1 = (C0: 1, C1: 4), N2 = (C0: 5, C1: 2) verir. Hangi öznitelik seçilir?
+(ekrandan, 01:45:10) Ebeveynde C0 = 6, C1 = 6. A özniteliği N1 = (C0: 4, C1: 3), N2 = (C0: 2, C1: 3); B özniteliği N1 = (C0: 1, C1: 4), N2 = (C0: 5, C1: 2) verir. Hangi öznitelik seçilir?
 
 **Çözüm (derste verildi):** $\text{Gini}(parent) = 0.5$. A için $\text{Gini}(N1) = 0.49$, $\text{Gini}(N2) = 0.48$, $\text{Gini}_{splitA} = \frac{7}{12}(0.49) + \frac{5}{12}(0.48) = 0.486$. B için $\text{Gini}(N1) = 0.32$, $\text{Gini}(N2) = 0.408$, $\text{Gini}_{splitB} = \frac{5}{12}(0.32) + \frac{7}{12}(0.408) = 0.371$. Ağırlıklı Gini'yi en küçük yapan B seçilir.
 
 ### Soru 8: Sürekli öznitelikte Gini ile bölme
 
-(ekrandan, 01:10:00) Bölüm 11.4'teki Annual Income ve Cheat verisinde en iyi bölme konumu nedir?
+(ekrandan, 02:00:10) Bölüm 11.4'teki Annual Income ve Cheat verisinde en iyi bölme konumu nedir?
 
 **Çözüm (derste verildi):** Sınıfın değiştiği konumlara bakılır. 80 konumunda `<=` tarafı [0 Yes, 3 No], `>` tarafı [3 Yes, 4 No]'dur ve ağırlıklı Gini $\frac{3}{10}(0) + \frac{7}{10}\left(1 - (3/7)^2 - (4/7)^2\right) = 0.343$ olur. 97 konumunda `<=` tarafı [3 Yes, 3 No], `>` tarafı [0 Yes, 4 No]'dur ve ağırlıklı Gini $\frac{6}{10}(0.5) + \frac{4}{10}(0) = 0.300$ olur (ara adımlar eklendi). En küçük Gini 97'dedir; bölme Annual Income <= 97 ve > 97 diye yapılır.
 
 ### Soru 9: Bilgi kazancı negatif olabilir mi?
 
-(derste sözlü, 00:36:58) Bilgi kazancı negatif çıkabilir mi?
+(derste sözlü, 01:27:08) Bilgi kazancı negatif çıkabilir mi?
 
 **Cevap (derste verildi):** Hayır. Bölme sonrası bilgi, çocukların entropilerinin örnek sayılarıyla ağırlıklandırılmış ortalamasıdır ve ebeveyndeki dağılım bu çocuklardan oluşur; bu yüzden bölme sonrası değer ebeveynin entropisini aşmaz.
 
 ### Soru 10: Dengesiz bölme
 
-(derste sözlü, 02:13:33) Bir öznitelik verinin %99'unu bir dala, %1'ini öteki dala atıyorsa bu iyi bir bölme midir?
+(derste sözlü, 00:36:18) Bir öznitelik verinin %99'unu bir dala, %1'ini öteki dala atıyorsa bu iyi bir bölme midir?
 
 **Cevap (derste verildi):** Bölmenin iyiliği dallara düşen örnek sayısıyla değil, her dalın içindeki sınıf dağılımının ne kadar homojen olduğuyla ölçülür. Dallarda sınıflar karışık kalıyorsa bölme iyi değildir; dallar saf ise iyidir. Bu, entropi ya da Gini gibi bir safsızlık ölçüsüyle sayısal olarak belirlenir.
 
 ### Soru 11: Rastgele tahminin doğruluğu
 
-(derste sözlü, 01:58:05) Bir sınıflandırma modeli en kötü ne kadar doğruluk verir?
+(derste sözlü, 00:20:50) Bir sınıflandırma modeli en kötü ne kadar doğruluk verir?
 
 **Cevap (derste verildi):** İki sınıflı ve dengeli bir problemde hiç model kurmadan rastgele artı ya da eksi demek bile yaklaşık %50 doğruluk verir. Sınıf dağılımı dengesizse bu taban değer farklıdır. Bu yüzden %60 gibi doğruluklar başarı sayılmaz.
 
 ### Soru 12: Karar ağacıyla sürekli değer tahmini
 
-(derste sözlü, 01:34:53) Karar ağaçları yapraklarda sürekli değer üretmek (regresyon yapmak) için nasıl kullanılır?
+(derste sözlü, 02:25:03) Karar ağaçları yapraklarda sürekli değer üretmek (regresyon yapmak) için nasıl kullanılır?
 
 > **Çözüm (derste verilmedi):** Derste yalnız "sınıf yerine aralıklarla çalışılır" diye kısa bir cevap verildi ve konu araştırılmak üzere bırakıldı. Regresyon ağaçlarında (örneğin CART'ın regresyon kipi) her yaprak, büyük olasılıkla o yaprağa düşen eğitim örneklerinin hedef değerlerinin ortalamasını tahmin olarak verir. Bölme ölçütü olarak entropi ya da Gini yerine, bölme sonrası hedef değişkenin varyansındaki (ya da ortalama kare hatasındaki) azalma kullanılır.
 
