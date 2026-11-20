@@ -1,0 +1,151 @@
+# Ders 5 Çalışma Özeti
+
+## Genel Konular
+
+- İzolasyon ve sınırlama ilkesi (confinement principle)
+  - Önceki dersteki en az yetki ilkesinin (principle of least privilege) devamıdır. En az yetkiyle birlikte parçaların birbirinden ayrılması (separation, isolation, compartmentalization) ve çok katmanlı savunma gerekir.
+  - Confinement, bir uygulamanın hareket alanını sınırlamak, onu sınırları belirli bir "hücre"ye koymak demektir.
+  - Tanım: kötü davranan bir uygulamanın sistemin geri kalanına zarar verememesini sağlamak (ensure misbehaving app cannot harm rest of system) (ekrandan, 00:15:00).
+- Güvenilmeyen kod çalıştırma ihtiyacı (ekrandan, 00:10:00)
+  - İnternetten gelen programlar: masaüstü ve mobil uygulamalar, JavaScript, tarayıcı eklentileri. Çoğu, güvenli olup olmadığı sorgulanmadan yüklenir ve çalıştırılır.
+  - Dışa açık uygulamalar: tarayıcı, PDF görüntüleyici, Outlook. Sürekli yamalanırlar ama zafiyetler kalır ya da bir düzeltme yeni bir zafiyet doğurur.
+  - Eski (legacy) servisler: sendmail (SMTP ile alan adları arası e-posta), bind (DNS sunucusu). Tasarımdan gelen sorunlar nedeniyle yeni sürümlerde de hata çıkar.
+  - Honeypot: saldırganların yöntemlerini gözlemek için kurulan tuzak sistem. Saldırganın bu sistemden dışarı çıkamaması gerekir.
+  - Hedef: uygulama kötü davranırsa onu sonlandırmak (kill it). Bu da sonuçta bir hizmet engelleme (denial of service) durumu doğurur.
+- Sınırlama seviyeleri
+  - Donanım seviyesi (air gap): uygulamalar fiziksel olarak ayrı makinelerde ve ayrı ağlarda çalışır (ekrandan, 00:15:00).
+  - Sanal makineler: tek donanım üzerinde hypervisor ile birden fazla işletim sistemi yalıtılır.
+  - Süreç seviyesi: System Call Interposition (SCI) ile tek işletim sistemi içinde bir süreç yalıtılır (ekrandan, 00:20:00).
+  - Thread seviyesi: aynı adres alanını paylaşan thread'ler Software Fault Isolation (SFI) ile yalıtılır.
+  - Uygulama seviyesi: tarayıcıdaki JavaScript ya da WebAssembly gibi aktif kodun tarayıcının diğer bileşenlerinden yalıtılması.
+- Referans monitörü (reference monitor) (ekrandan, 00:25:00)
+  - Uygulamalardan gelen bütün istekler ondan geçer (mediates requests); sınırlamayı uygular, belirlenmiş koruma politikasını işletir.
+  - Her zaman çağrılmalıdır: hiçbir istek onu atlayamaz (bypass edilemez).
+  - Kurcalamaya dayanıklıdır (tamperproof): öldürülemez; öldürülürse izlediği süreç de öldürülür.
+  - Satır satır analiz edilip doğrulanabilecek kadar küçük olmalıdır.
+  - İşletim sistemindeki sistem çağrısı kavramının (servis almanın tek yolu) genelleştirilmiş, güvenlik odaklı hâlidir.
+- chroot
+  - En eski sınırlama örneğidir. Unix'te hem sistem çağrısı hem komuttur. Bir uygulamanın dosya sistemindeki kök dizinini verilen dizine ayarlar.
+  - Örnek: root olarak `chroot /tmp/guest`, ardından `su guest`. İlki kök dizini `/tmp/guest` yapar, ikincisi etkin kullanıcı kimliğini (EUID) guest'e çevirir.
+  - İşletim sistemi guest sürecinin her dosya erişiminin başına `/tmp/guest` ekler; `/etc/passwd` açılmak istenirse aslında `/tmp/guest/etc/passwd` açılır.
+  - Sınırlama yalnız dosya sistemi içindir; ağ erişimini kısıtlamaz (ekrandan, 00:30:00).
+- Jailkit (ekrandan, 00:30:00)
+  - Sorun: `ls`, `ps`, `vi` gibi yardımcı programların hücrenin içinde bulunması gerekir. Bunlar kopyalanmalı ya da sembolik link ile bağlanmalıdır.
+  - `jk_init`: hücre ortamını oluşturur. `jk_check`: değiştirilmiş program ve herkesin yazabildiği dizin gibi güvenlik sorunlarını denetler. `jk_lsh`: hücre içinde kullanılacak kısıtlı kabuk.
+- Hücreden kaçış
+  - İlk dönemde `../../` ile üst dizine çıkılarak hücreden kaçılabiliyordu; işletim sistemleri bunu yamaladı.
+  - chroot yalnız root tarafından çalıştırılabilmelidir. Aksi hâlde hücredeki uygulama kendi alanında `/aaa/etc/passwd` dosyasını root için istediği şifreyle oluşturur, `chroot /aaa` ve `su root` ile root olur.
+  - Root olarak hücreye girip root olarak çalışmaya devam etmek, kısıtın anlamını büyük ölçüde ortadan kaldırır.
+- FreeBSD jail (ekrandan, 00:35:00)
+  - chroot'tan daha güçlüdür. Çalıştırma biçimi: `jail jail-path hostname IP-addr cmd`.
+  - Sağlamlaştırılmış chroot çağırır (`../../` kaçışı yok); yalnız belirtilen IP adresi ve yetkili portlarla soket bağlayabilir; yalnız hücre içindeki süreçlerle haberleşebilir; root kısıtlanır (ör. kernel modülü yükleyemez).
+- chroot ve jail'in sınırları
+  - İkisi de "ya hep ya hiç" çalışır, ince ayar yaptırmaz. Tarayıcı gibi her yere erişmesi gereken uygulamalar için uygun değildir (ör. Gmail'de dosya eki eklemek).
+  - chroot ağ erişimini kısıtlamaz; uygulama yerel ağdaki sistemlere saldırabilir ya da işletim sistemini çökertmeye çalışabilir.
+- Sandbox (kum havuzu)
+  - Patlayıcı testlerinde patlamanın etkisini sönümleyen kum havuzu benzetmesi. chroot da jail de birer sandbox'tır; sandboxing bir izolasyon yapıldığı anlamına gelir.
+- System Call Interposition (SCI)
+  - Zarar verebilecek sistem çağrıları: `unlink`, yazma kipinde `open`, `write`, `socket`, `bind`, `connect`, `send` (yedi çağrı).
+  - Fikir: uygulamanın sistem çağrılarını izle, yapmaması gerekeni engelle.
+  - Üç uygulama biçimi: tamamen kernel içinde (ör. Linux seccomp), tamamen kullanıcı alanında (program shepherding), karma (hibrit). <!-- BELİRSİZ: hibrit örneğin adı altyazıda "sister is" diye geçiyor; büyük olasılıkla Systrace -->
+- ptrace tabanlı SCI (Janus, 1996)
+  - Monitör süreç, `ptrace` ile izlenen uygulamaya bağlanır. Uygulama sistem çağrısı yapınca kernel monitörü uyandırır ve çağrı ayrıntılarını verir; monitör izin verir ya da uygulamayı öldürür.
+  - Politika dosyası örneği (PDF okuyucu için) (ekrandan, 00:50:00): `path allow /tmp/*`, `path deny /etc/passwd`, `network deny all`. Önerilen varsayılan politikalar vardır, gerektiğinde daha kısıtlı yapılabilir.
+  - Karmaşıklıklar (ekrandan, 00:55:00): uygulama fork ederse monitör de fork etmeli; monitör çökerse uygulama öldürülmeli; monitör CWD, UID, EUID, GID gibi bütün işletim sistemi durumunu tutmalı.
+  - ptrace sorunları (ekrandan, 01:00:00): ya bütün çağrılar izlenir ya hiçbiri (ör. `close` izlemek gereksiz); monitör uygulamayı öldürmeden çağrıyı iptal edemez.
+- Yarış durumu ve TOCTOU (ekrandan, 01:00:00)
+  - Sembolik link `me -> mydata.dat` iken süreç 1 `open("me")` yapar, monitör denetleyip onaylar, süreç 2 linki `me -> /etc/passwd` olarak değiştirir, işletim sistemi `open("me")` çağrısını yürütür ve aslında `/etc/passwd` açılır.
+  - Sebep: denetim ile kullanım atomik değildir. Bu hataya Time of Check, Time of Use (TOCTOU) denir.
+- Linux'ta SCI: seccomp-bpf (ekrandan, 01:05:00)
+  - Süreçlerin sistem çağrılarını filtreleyen Linux kernel olanağıdır. Filtre BPF dilinde yazılır (BPFC derleyicisi). Chromium'da ve Docker konteynerlerinde kullanılır.
+  - Chrome renderer süreci başlarken `prctl(PR_SET_SECCOMP, SECCOMP_MODE_FILTER, &bpf_policy)` ile filtreyi kernel'e yükler. Monitör kernel'in içine taşınmış olur.
+  - BPF filtreleri (ekrandan, 01:10:00): yüklenen filtre kaldırılamaz ve her sistem çağrısında hepsi çalışır; fork edilen çocuk bütün filtreleri miras alır; `execve` çağrılsa da filtreler korunur.
+  - Filtre girdisi: sistem çağrısı numarası, argümanlar ve mimari. Dönüş: süreci öldür, belirli bir hata numarası döndür ya da izin ver.
+  - Filtreden önce `prctl(PR_SET_NO_NEW_PRIVS, 1)` çağrılır: sonraki exec'te setuid/setgid yok sayılır, saldırgan yetki yükseltemez.
+- Docker ve seccomp-bpf (ekrandan, 01:15:00)
+  - Konteyner süreç seviyesinde izolasyondur. Konteyneri başlatan (Docker engine) BPF politikasını belirler; varsayılan politika `ptrace` dahil pek çok çağrıyı engeller.
+  - Nginx örneğinde filtre JSON dosyası olarak verilir; varsayılan engelle, `accept` gibi gerekli çağrılara izin ver.
+- Ostia: en az kernel desteğiyle SCI (ekrandan, 01:20:00)
+  - İzlenen sistem çağrıları uygulamaya kapalıdır; uygun değilse uygulama öldürülmez, çağrı hata koduyla döner.
+  - Çağrı, izin verip vermeyeceğine karar veren bir ajana devredilir. Bu, standart libc'nin önüne konan bir libc stub ile uygulama değiştirilmeden yapılır. Kernel'e girip çıkmak gerekmez, bir fonksiyon çağrısı gibidir.
+- Sanal makineler (ekrandan, 01:35:00)
+  - Donanım, isteğe bağlı host OS, hypervisor (VMM) ve onun üzerinde sanal makineler. Örnek: NSA NetTop, tek donanımda hem gizli hem gizli olmayan veriyi işler.
+  - VM kavramı 1960'lardan beri vardır; 2000'e kadar IBM'e özgüydü; VMware ile PC ve Intel mimarisine yayıldı, bulut altyapısının temeli oldu.
+  - Güvenlik varsayımı: saldırgan misafir işletim sistemini ele geçirebilir ama hypervisor'ı, host OS'u ve diğer VM'leri ele geçiremez. Bu yüzden hypervisor küçük, basit ve analiz edilebilir olmalıdır.
+- Gizli kanal (covert channel) (ekrandan, 01:40:00 ve 01:45:00)
+  - Yalıtılmış bileşenler arasında istenmeyen haberleşme kanalıdır; gizli veriyi açık bileşene sızdırabilir.
+  - Örnek: Classified VM'deki malware bir bit gönderecekse, $b=1$ için 01:00'de yoğun CPU hesabı yapar, $b=0$ için hiçbir şey yapmaz. Public VM'deki listener 01:00'de yoğun hesap yapıp bitiş süresini ölçer; süre eşikten büyükse $b=1$.
+  - Kaynaklar: işlemci yükü, önbellek içeriği, kesme gecikmesi, dosya kilidi. Hepsini kaldırmak zordur; sızıntı fark edilmedikçe kanal bilinmez.
+- Pratikte VM izolasyonu (ekrandan, 01:50:00)
+  - Bulut: farklı müşterilerin VM'leri aynı makinede Xen hypervisor (Type 1, host OS yok) üzerinde çalışır. Hypervisor VM'leri yalıtmalıdır ama bir miktar bilgi sızar.
+  - Son kullanıcı: Qubes OS her şeyi Xen üzerinde ayrı VM olarak çalıştırır; tek kullanımlık (disposable) VM, şifre kasası (vault) VM, Tor VM.
+- Hypervisor tespiti (ekrandan, 01:55:00 ve 02:00:00)
+  - Malware hypervisor'ı fark edip tersine mühendislikten kaçmak için çalışmayabilir; donanıma bağlı yazılım ve DRM sistemleri VM'de çalışmayı reddedebilir.
+  - Red pill teknikleri: VMware eski i440bx yonga setini taklit eder ama 8 GB RAM, çift CPU bildirir; hypervisor zaman gecikmesi farkları yaratır (önbellek davranışı değişir); TLB'yi misafir OS ile paylaştığı için misafir küçülmüş TLB'yi fark edebilir.
+  - VM'de çalışan tarayıcıdaki kötü niyetli JavaScript, render süresinden ortamı fark edip normal davranabilir. Bu yüzden statik analiz önemlidir.
+  - Mükemmel hypervisor yoktur; odak uyumluluk ve performanstır, tam şeffaflık (transparency) yoktur.
+- Software Fault Isolation (SFI) (ekrandan, 02:05:00)
+  - Hedef: aynı adres alanındaki uygulamaları sınırlamak. Kernel modülü kernel'i, native kütüphaneler JVM'i bozmamalıdır.
+  - Basit çözüm ayrı adres alanlarıdır ama sık haberleşen uygulamalarda her mesaj bağlam değişimi gerektirdiği için yavaştır.
+  - Yöntem: süreç belleği thread'lere göre kod ve veri segmentlerine bölünür. Güvenli olmayan komutlar (jump, call, load, store) derleme sırasında guard komutlarıyla korunur.
+- Segment eşleme tekniği (ekrandan, 02:10:00)
+  - MIPS için tasarlandı (çok register var). `dr1` ve `dr2` program tarafından kullanılmayan ayrılmış register'lardır; derleyici yokmuş gibi davranır. `dr2` segment kimliğini tutar.
+  - Dolaylı bir load öncesinde adres `dr1`'e alınır, sağa kaydırılarak segment kimliği çıkarılır, `dr2` ile karşılaştırılır; eşit değilse yazılım kesmesi (trap) oluşur.
+  - Address sandboxing: adresin segment kısmı maskelenip `dr2` ile OR'lanır, kontrol yerine doğrudan doğru segmente zorlanır. Daha az komut gerektirir; hata ayıklama için birinci, üretim için ikinci yöntem uygundur.
+  - Dolaylı jump'lar da guard ile korunur. Cross-domain call'larda call ve return'ler denetimden sonra branch'e dönüştürülür.
+- SFI özeti (ekrandan, 02:15:00)
+  - Performans genelde iyidir: `mpeg_play` için %4 yavaşlama.
+  - x86'da uygulamak zordur: değişken uzunlukta komutlar (guard'ın yeri belirsiz), az register, belleği etkileyen çok komut (daha çok guard).
+
+## Hocanın Özellikle Vurguladığı Kısımlar
+
+- chroot yalnız dosya sistemini kısıtlar
+  - Hoca bunu "basa basa" vurguladı: chroot ağ erişimine hiçbir kısıt getirmez.
+- Referans monitörü atlanamamalı ve korunmalı
+  - Monitör çalışmıyorsa ya da atlanabiliyorsa uygulamanın iyi mi kötü mü davrandığını anlamanın yolu kalmaz. Monitör durursa izlenen uygulamalar da durmalıdır.
+- Time of Check, Time of Use
+  - Hoca "bunu unutmayın lütfen" dedi. Denetim ile kullanım atomik değilse araya giren başka bir süreç onayı anlamsız kılar.
+- Kurallar çok önemli
+  - Hangi yöntem kullanılırsa kullanılsın, politika kuralları doğru tanımlanmamışsa yöntem işe yaramaz.
+- Gizli kanallar ciddi tehlikedir
+  - Çoğu zaman güvenlik açığı yaşanmadan fark edilmezler.
+- Tam izolasyon amaç değildir
+  - Uygulamaların haberleşmesi gerekir; önemli olan haberleşmenin öngörülen ve bilinen kanallardan yapılmasıdır.
+- Gözü kapalı chroot ya da jail kullanıp problemi çözdüm denemez; eksikleri bilinmelidir.
+
+## Kısa Tekrar Notları
+
+- Confinement: kötü davranan uygulama sistemin geri kalanına zarar veremez.
+- Seviyeler: air gap, sanal makine, süreç (SCI), thread (SFI), uygulama (tarayıcıdaki JavaScript).
+- Referans monitörü: her isteği aracılar, her zaman çağrılır, kurcalanamaz, küçük ve doğrulanabilir.
+- chroot: kök dizini değiştirir, yalnız root çalıştırabilmeli, ağı kısıtlamaz. Jailkit hücre ortamını kurar.
+- FreeBSD jail: sağlam chroot, IP/port kısıtı, hücre dışı süreçlerle haberleşme yok, root kernel modülü yükleyemez.
+- Tehlikeli yedi çağrı: `unlink`, yazma kipinde `open`, `write`, `socket`, `bind`, `connect`, `send`.
+- ptrace SCI: her çağrıda kernel monitörü uyandırır; fork, durum takibi ve performans sorunları; TOCTOU yarışı.
+- seccomp-bpf: filtre kernel'de; kaldırılamaz, fork ve execve'de korunur; dönüş kill / errno / allow; önce `PR_SET_NO_NEW_PRIVS`.
+- Docker varsayılan seccomp politikası `ptrace` dahil pek çok çağrıyı engeller.
+- Ostia: libc stub ile çağrılar ajana gider; reddedilirse hata kodu döner.
+- Hypervisor varsayımı: VM'den çıkılamaz. Gizli kanal: CPU yükü ile bit sızdırma.
+- Red pill: i440bx + 8 GB RAM tutarsızlığı, zaman farkları, küçülmüş TLB.
+- SFI: aynı adres alanında segment eşleme ya da address sandboxing; `mpeg_play` %4 yavaşlama; x86'da zor.
+
+## Detaylı Açıklamalar
+
+- Neden sınırlama gerekir?
+  - Her uygulamada hata olabileceğini ve uygulamaların güvenli olup olmadığını kesin bilemediğimizi biliyoruz. Mobil uygulamalar, web'den gelen JavaScript ve tarayıcı eklentileri günlük hayatta sorgulanmadan çalıştırılıyor. Tarayıcı, PDF okuyucu, e-posta istemcisi gibi dışa açık uygulamalar sürekli yamalanıyor ama zafiyetler kalıyor; sendmail ve bind gibi eski servislerde tasarımdan gelen sorunlar yeni sürümlerde de sürüyor. Honeypot'ta ise saldırganı bilerek içeri alıyoruz ve dışarı çıkmamasını istiyoruz. Kötü davranan bir uygulama için yapılabilecek tek şey onu sonlandırmaktır. Hoca bunun da başa döndürdüğünü belirtti: başarısız bir saldırı da, saldırıyı yakalayıp uygulamayı durdurmamız da sonuçta hizmet engellemeye yol açar.
+- Air gap ve sanal makine
+  - Air gap'te DNS ve e-posta sunucusu ayrı makinelerde ve ayrı ağlarda çalışır; birinden diğerine geçmek neredeyse imkânsızdır. Ama pahalıdır, her makine en yüksek yüke göre boyutlandırıldığı için donanım çoğu zaman boşta kalır, her güncelleme her makinede ayrı yapılır ve iç ağların da ayrılması yönetimi çok karmaşık hâle getirir. Bu, güvenlik için yapının basit olmasını isteyen KISS ilkesine ters düşer. Sanal makineler aynı ayrımı tek donanım üzerinde hypervisor ile sağlar; donanım ve yazılım tedbirleriyle bu yalıtımın fiziksel air gap'e denk olması hedeflenir.
+- chroot'un çalışması ve kaçış
+  - `chroot /tmp/guest` ve `su guest` sonrası guest kullanıcısı adına yapılan bütün dosya erişimlerinin başına işletim sistemi `/tmp/guest` ekler. Hücrenin içinde `ls` gibi çalıştırılabilir dosyalar bulunmadığından bunlar kopyalanmalı ya da sembolik linkle bağlanmalıdır; Jailkit bu işi otomatikleştirir. chroot herkes tarafından çalıştırılabilseydi, hücredeki süreç kendi alanında sahte bir `etc/passwd` oluşturup chroot ile oraya geçerek `su root` ile root olabilirdi. Hoca bu hatanın bir Unix sürümünde görüldüğünü söyledi. <!-- BELİRSİZ: altyazıda "altı sürevi 4.0" geçiyor; büyük olasılıkla Ultrix 4.0 -->
+- ptrace ile SCI ve TOCTOU
+  - Janus yaklaşımında monitör, hata ayıklamada kullanılan `ptrace` ile uygulamaya bağlanır ve uyur. Uygulama sistem çağrısı yapınca kernel önce izleyen bir süreç olup olmadığına bakar, monitörü uyandırır, monitör kural dosyasına göre karar verir ve kernel'e bildirir; kernel uygulamayı ya öldürür ya da sürdürür. Sorunlar: fork eden sunucularda monitör de fork etmek zorunda kalır, süreç sayısı ikiye katlanır ve performansın kabaca yarısı gider; monitör CWD ve kullanıcı kimliklerini kendisi de izlemek zorundadır; `ptrace` yalnız tehlikeli yedi çağrıyı değil hepsini yönlendirir. En önemlisi güvenlik sorunudur: denetim ile kullanım arasındaki boşlukta başka bir süreç sembolik linki `/etc/passwd`'ye çevirebilir. Hoca, yorumlanan (Python, Perl, PHP) uygulamalar daha yavaş çalıştığı için bu yarışın onlarda daha olası olduğunu, derlenmiş C/C++ uygulamalarında da daha düşük olasılıkla mümkün olduğunu söyledi.
+- seccomp-bpf
+  - Uygulamanın yapacağı sistem çağrıları önceden belirlenebildiği için yalnız gerekenlere izin veren bir filtre yazılır ve kernel'e gömülür. Chrome, renderer süreçlerini başlatırken bu filtreyi yükler; renderer filtrede olmayan bir çağrı ya da parametre kullanırsa kernel süreci öldürür. Filtre bir kez yüklenince kaldırılamaz, fork ve execve ile kurtulunamaz. `PR_SET_NO_NEW_PRIVS` setuid/setgid ile yetki devralmayı (impersonation) kapatır. Hocanın gösterdiği politika örneğinde dosya ne olursa olsun yazma kipinde `open` yapılırsa süreç öldürülüyordu. Docker da Nginx gibi bir konteyneri başlatmadan önce JSON ile verilen kuralları aynı yolla kernel'e bildirir; böylece ptrace'teki kernel'e girip çıkma ve monitörü fork etme sorunları ortadan kalkar.
+- Gizli kanal örneği
+  - Sosyal mühendislikle kapalı bir laboratuvara USB bellek üzerinden malware sokulduğu senaryoda malware ile Public VM'deki listener'ı aynı kişi yazmıştır. İlk dönem PC sanallaştırmasında VM'ler arasında işlemci gücü paylaştırılmadığı için bir VM'in yoğun hesabı diğerinin işini yavaşlatır. Listener aynı işi her gece aynı saatte yapar, bitiş süresini eşikle karşılaştırarak gelen biti çözer.
+- Hypervisor tespiti: iyi ve kötü yönler
+  - Hypervisor araya giren bir yazılım olduğundan donanımı farklı gösterir ve bare metal'e göre gecikme ekler; bu yüzden fark edilebilir. DRM örneğinde VM ortamında ekrana açık olarak gönderilen görüntüyü almak çok kolay olduğundan DRM yazılımının hypervisor'ı fark etmesi işimize gelir. Kötü niyetli siteleri VM'deki tarayıcıyla tarayan bir sistemde ise sayfadaki JavaScript'in ortamı fark edip normal davranması aleyhimizedir.
+- SFI'nin mantığı
+  - Kernel içindeki aygıt sürücüleri ve JVM'deki native kütüphaneler aynı adres alanında çalışır; birindeki hata bütün yapıyı çökertir. Ayrı süreçlere bölmek süreçler arası haberleşme yüzünden yavaştır. SFI, adres içeren komutların (call, jump, load, store) önüne derleyicinin guard eklemesiyle thread'leri aynı adres alanında birbirinden ayırır; kod yüklenirken guard'ların varlığı da doğrulanmalıdır. MIPS gibi RISC işlemcilerde eşit uzunlukta komutlar ve bol register olduğundan kolaydır; klasik x86'da yalnız dört genel register (AX, BX, CX, DX) olduğu ve neredeyse her komutun bir işleneni bellek olabildiği için zordur.
+
+* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
