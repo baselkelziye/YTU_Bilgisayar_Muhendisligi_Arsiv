@@ -2,7 +2,7 @@
 
 Bu klasör, 2020-2021 eğitim öğretim yılı Güz dönemindeki Derin Öğrenme ve Yapay Sinir Ağları (BLM5135 - 1. şube) ders kayıtlarının altyazılarını içerir.
 
-* **Dersi Veren Akademisyen:** Bulunamadı
+* **Dersi Veren Akademisyen:** Prof. Dr. Sırma Yavuz
 
 Kayıt arşivindeki ilk ders kaydı 7 Ekim 2020 Çarşamba gününe aittir. Dosya adlarındaki `ders_x.srt` ifadesinde `x`, ders haftasını değil, ilgili kaydın kayıt arşivindeki ders sıra numarasını gösterir. Tarihler YTÜ Video Ambarı kayıt tablosundan alınmıştır. Altyazılardaki öğrenci adları `[öğrenci]` ile maskelenmiştir.
 
