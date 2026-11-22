@@ -1,0 +1,3287 @@
+1
+00:03:13,972 --> 00:03:15,628
+Merhaba arkadaşlar.
+
+2
+00:03:21,044 --> 00:03:22,324
+Sesim geliyor mu?
+
+3
+00:03:30,548 --> 00:03:36,427
+Tamamdır. Biraz daha bekleyeceğiz. 6-7 gibi dersimize başlıyoruz arkadaşlar.
+
+4
+00:06:30,644 --> 00:06:34,564
+Evet arkadaşlar, hepinize tekrar merhabalar.
+
+5
+00:06:36,744 --> 00:06:44,444
+Geçen hafta sürekli sistemlerde konvolüsyon kavramını görmüştük. Ses geliyor değil mi şu anda?
+
+6
+00:06:46,463 --> 00:06:48,783
+Seste herhangi problem yoksa devam edelim.
+
+7
+00:06:54,163 --> 00:07:02,084
+Şimdi, bu haftada ayrık zamanlı sistemlerde konvolüsyon işlemine bakacağız.
+
+8
+00:07:03,024 --> 00:07:06,743
+Geçen hafta hatırlıyorsanız bir sistem tanımı yapmıştık.
+
+9
+00:07:08,063 --> 00:07:13,563
+XT işareti, sürekli XT işareti, YT işaretine dönüştürülüyordu.
+
+10
+00:07:13,563 --> 00:07:18,283
+Buradaki sistemin cevabı ise
+
+11
+00:07:18,687 --> 00:07:37,528
+Bizi HT olarak tanımlamıştık. Bu iki sürekli fonksiyonun birbiriyle XT ve de HT'nin bunlar sürekli fonksiyonlardır. Şu şekilde örnekler vermiştik.
+
+12
+00:07:45,300 --> 00:07:46,300
+XT
+
+13
+00:07:46,300 --> 00:07:50,180
+Ondan sonra
+
+14
+00:07:50,180 --> 00:07:52,080
+XT
+
+15
+00:07:52,080 --> 00:07:53,899
+H
+
+16
+00:07:53,899 --> 00:07:56,199
+Burada
+
+17
+00:07:56,199 --> 00:07:58,019
+K-T
+
+18
+00:07:58,019 --> 00:07:59,500
+DK
+
+19
+00:07:59,500 --> 00:08:02,160
+Şeklinde tanımlamalar vermiştik.
+
+20
+00:08:10,612 --> 00:08:20,612
+O konuda bir bilgilendirme yapayım sizlere. Bizim ilk dersin başında da söylemiştim. İlk vize haftamızda vizemiz olmayacak.
+
+21
+00:08:20,612 --> 00:08:27,612
+Vize iki hafta, normalde ikinci vize haftasının da belirlenmesi lazım.
+
+22
+00:08:27,791 --> 00:08:52,011
+Fakat bu dönem sadece tek bir vize haftası tanımlandı. O da 8. hafta olan önümüzdeki haftaya bir vize haftası tanımlandı. Bizim için değişen bir şey yok. Biz 12. haftada kendi belirleyeceğimiz bir zamanda sınavımızı yapacağız arkadaşlar. Şu anda daha konuların başındayız. Dediğim gibi dersin ilk tanıtımında da bahsetmiştim.
+
+23
+00:08:53,172 --> 00:09:12,412
+Bizim ilk vizemiz yerine ödevlerimiz geçecek diye. Bu ödevlerin haricinde, işte sizin katılma oranları da önemli tabii ki. İkinci vize haftasında, daha doğrusu onu biz vereceğiz, 12. hafta olacak diye tahmin ediyorum. Orada bir sınav yaparız.
+
+24
+00:09:15,491 --> 00:09:19,512
+Bu hafta ilk ödevimizi vererek ödevleri başlatıyoruz arkadaşlar.
+
+25
+00:09:23,412 --> 00:09:30,572
+Net derken dersimizin işlenme sırasında ödevleri vereceğim. Dersleri takip etmeniz gerekiyor arkadaşlar.
+
+26
+00:09:30,572 --> 00:09:38,572
+Ödevleri de Sistem üzerinden tanımlayacağım. Örneğin sizlerin karşısında tanımlıyorum bunları.
+
+27
+00:09:38,572 --> 00:09:50,091
+Bu dersle alakalı olarak kontrol paneli mesela bu hafta dersler sınavlar dediğimizde kontrol paneline gelelim.
+
+28
+00:09:52,179 --> 00:10:01,939
+Bu hafta ödev tanımımızı buradan yapacağız. Sistem üzerinden ödevleri vereceksiniz arkadaşlar. Onu da anlatacağım daha sonrasında.
+
+29
+00:10:04,419 --> 00:10:10,179
+Evet, sürekli zamanı görmüştük. Dediğim gibi bizim...
+
+30
+00:10:10,868 --> 00:10:37,948
+Birim impuls yanıtımıza, yani bizim sistemimize normalde HT'miz neydi bizim? Şuradaki HT'miz. Bir birim impuls işareti uygulanıyordu. Tabi bu teorik bir işaretti. Anlık bir darbe uygulanıyordu. Şöyle bir, şöyle ok şeklinde gösteriliyor. Impuls fonksiyonu şöyle ok şeklinde gösteriliyor sürekli halde arkadaşlar.
+
+31
+00:10:39,412 --> 00:10:47,471
+Sadece T0 anında var olup yok olan bir sinyal. Altında kalan alan ise 1 olarak düşünüyoruz bunu.
+
+32
+00:10:47,992 --> 00:10:51,731
+Biz bunu nasıl genişleştirmiş, anlatmıştık ilk başta impulsu?
+
+33
+00:10:51,731 --> 00:11:01,731
+Şöyle bir dikdörtgen fonksiyon, eksi to bölü 2 ile to bölü 2 arasındaki bir...
+
+34
+00:11:02,676 --> 00:11:20,676
+kare dalga diyelim, biraz daha gerçeklenebilir. Belli bir anda var, ondan sonra yok şeklinde. Daha sonra buradaki to'lar sıfıra doğru ilerlettiğimizde bu impuls işaretinin teorik olarak elde edilebileceğinden bahsetmiştik.
+
+35
+00:11:22,676 --> 00:11:26,676
+Şimdi tekrar impuls-response kavramına
+
+36
+00:11:28,211 --> 00:11:56,192
+Ayrık fonksiyonlarda gelelim. Ayrık zamanda ise biliyorsunuz aynı şeyler geçerli. Biliyorsunuz sayısal işaret işleme dersinden farklı olarak sinyal ve sistemler dersinde verdiğimiz konuları hem sürekli hem de ayrık zamanlı olarak ardı ardına ayrı ayrı işliyoruz. Burada da bir XN işaretimiz olacak. XN işaretimiz ne?
+
+37
+00:11:56,211 --> 00:12:18,111
+Neydi bizim arkadaşlar? Bizim örneklenmiş işaretimizde, yani sürekli halden örneklerini aldığımız işaretti. Artık zaman indisi yok. Ne vardı arkadaşlar artık? En indisi, birinci örnek, sıfırıncı örnek, birinci örnek gibi. Sürekli değildi, ayrıktı.
+
+38
+00:12:18,803 --> 00:12:29,803
+Şimdi bu sistemde de artık girişe bir birim impuls uygulanıyor. Bu şeyden farklı olarak şöyle ok şeklinde değil de
+
+39
+00:12:31,803 --> 00:12:38,803
+T0 anında, şöyle N0 anında veya indisinde
+
+40
+00:12:40,436 --> 00:13:00,436
+Genliği bir olan darbe fonksiyonu olarak tanımlanıyor. Sistemin buna vermiş olduğu cevap da Aşen olarak adlandırılıyor. Yn'de Xn ve de Aşenin konvolüsyonu şeklinde tanımlanıyor.
+
+41
+00:13:00,755 --> 00:13:12,255
+Şimdi buradaki ayrık zamanda XM ve HM konvolüsyonunu anladıktan sonra sürekli tekrar üzerinden geçtiğinizde size biraz daha kolay gelecektir.
+
+42
+00:13:12,255 --> 00:13:15,255
+Şimdi onu bir...
+
+43
+00:13:15,700 --> 00:13:42,480
+Önce teorik altyapısını bir oluşturmaya çalışalım. Sonra ikinci kısımda, dersimizin ikinci kısmında biraz daha örnekler üzerinden gideceğiz. Ve de kendi konvolüsyon programımızı yazmanızı isteyeceğim. Metlab'de veya Python üzerinde yaparak bu işlemi tamamlayacağız. Bu haftaki dersimizi tamamlayıp önümüzdeki hafta artık frekans domeyni de işaretlerin işlenmesi kısmına gireceğiz.
+
+44
+00:13:44,467 --> 00:13:50,947
+LTI sistem neydi arkadaşlar? Linear Time Inverient, doğrusal zamanda değişmez sistemler.
+
+45
+00:13:52,647 --> 00:14:00,008
+Ayrık zamanda linear time invariant sistemler.
+
+46
+00:14:00,500 --> 00:14:23,759
+Fark denklemleri şeklinde anlatılabilir. Şu şekilde Yn'ler sistemlerin çıktıları bir önceki çıktısı, n- büyük n önceki çıktısı veya buna giriş olarak verilen Xn, daha önceki Xn girişleri M kadar önceki girdiler verilebilir. Dikkat edin arkadaşlar.
+
+47
+00:14:24,288 --> 00:14:36,067
+Şuradaki her bir gecikmiş cevap aslında neye değerlendiriyor? Hafızada bir yerde saklanılması lazım. Bu tarz sistemlerin hafızalı olması lazım.
+
+48
+00:14:49,587 --> 00:15:08,347
+A0'ın 1, Yn-1'in eksi 1, çünkü karşıya geçtiği zaman eksi 1 olacak.
+
+49
+00:15:13,460 --> 00:15:32,800
+xn-1'in karşılığında ise 1 bölü 2 olduğu bir denklemi ifade ediyor şuradaki yapı. Bunların hepsi yn-1'in, xn-1'in hafızada tutulması lazım. Hafızalı bir sistem oluşuyor burada. Bu genel gösterilme arkadaşlar, fark denklemlerinin.
+
+50
+00:15:34,940 --> 00:15:38,940
+Şimdi burada tanım olarak şunu söylüyorum.
+
+51
+00:15:39,539 --> 00:15:50,339
+Xn girişini Xstation dediği bir uyaran sistemi uyaran yani normalde biz burada tek bir impuls dan bahsedeceğiz.
+
+52
+00:15:54,419 --> 00:16:18,539
+impuls şeklinde verilirse, bu impuls uyaranı diyor veya sisteme birçok girdi impuls şeklinde aslında, impulsun farklı genli kalmışlar şeklinde. Örneğin bu iki ise, iki impuls ne diyeceğiz? xn, iki impuls n dediğimizde, şöyle baktığımızda, xn,
+
+53
+00:16:20,244 --> 00:16:31,004
+İki impuls n dediğimizde aslında şunu kastediyoruz. Genliği iki olan bir impuls fonksiyonundan bahsetmiş oluyoruz.
+
+54
+00:16:31,004 --> 00:16:40,843
+Tabi bunun kaydırılmış halleri. Burada normal bir x'in işaretinden bahsederken örneğin eksi bir, eksi bir, bir buçuk diyelim.
+
+55
+00:16:41,200 --> 00:16:49,380
+Aslında impulsların neleri var arkadaşlar? Kaydırılmış ve genliklerinin değiştirildiği haller var.
+
+56
+00:16:53,524 --> 00:17:00,524
+Şimdi Xn girişi uyaranı için Yn çıkışı
+
+57
+00:17:04,084 --> 00:17:16,023
+Xn girişi olarak verilen impulsların toplamı şeklinde, impulslara verdiği cevabın toplamı şeklinde bulunabiliyor.
+
+58
+00:17:16,023 --> 00:17:29,943
+Şimdi, şurada şunu demiş, eğer Xn unit impulse ise, yani unit impulse demek, genlik değeri 1 olan ise,
+
+59
+00:17:30,675 --> 00:17:39,415
+Sistemi bir birim impulsa verdiği cevabı bilirsek ki bunun adı HN olmuş oluyor.
+
+60
+00:17:40,415 --> 00:17:49,835
+Sistem aslında impulsların shift edilmiş ve genliği değiştirilmiş versiyonlarından oluştuğu için
+
+61
+00:17:49,835 --> 00:17:57,976
+biz sistemin XN uyaranına vermiş olduğu cevabı da bulabiliriz diyor.
+
+62
+00:17:59,604 --> 00:18:26,884
+Şimdi, biz bunu HN olarak tanımladık. Yani, eğer bir sisteme şöyle, XN olarak, Impulse N işareti uygulandığında, çıkıştaki çıkışımız bizim YN, HN olarak, yani birim impulsa cevabı olarak tanımlandı.
+
+63
+00:18:28,147 --> 00:18:46,847
+Şimdi, impuls sisteme sadece N0 anında uygulandığı için ve sisteme uygulanan tek uyaran bu olduğu için, sistem nedensel olarak davranacaktır.
+
+64
+00:18:46,847 --> 00:18:53,847
+Çünkü N0'dan önce herhangi bir output vermeyecektir.
+
+65
+00:18:54,324 --> 00:18:59,903
+Dolayısıyla sistemin nedensel olmasını koşulmuş şekilde tanımlayabiliriz.
+
+66
+00:19:00,064 --> 00:19:12,644
+Hn, oluşan Hn sistem cevabı, n sıfırdan önce, yani girişine herhangi bir uyaran, impuls uygulanmadan önce sıfır olacak.
+
+67
+00:19:18,996 --> 00:19:38,476
+En eşittir sıfırda impuls uygulanıyor, uygulanıyor ve bitiyor. Arkasından bizim girişimiz yok, Extation uyaranımız olmuyor. Enden sonra tabi ki impuls uygulandı ama sistemin buna cevabı devam edebilir. Yani
+
+68
+00:19:38,900 --> 00:19:44,660
+Çünkü bu andaki giriş daha sonraki çıkışları etki elebilir.
+
+69
+00:19:45,360 --> 00:19:55,140
+N0 olduğunda ise fark denklemlerinin çözümü sistemin homojen çözümü olarak adlandırılıyor.
+
+70
+00:19:55,640 --> 00:19:59,380
+Biz fark denklemlerinin çözümlerini görmedik arkadaşlar.
+
+71
+00:20:00,000 --> 00:20:09,360
+Yani fark denklemlerin çözümünde belki matematikte diferansiyel denklemleri olarak homojen çözüm, özel çözüm gibi kavramları anlatılıyor.
+
+72
+00:20:10,139 --> 00:20:11,559
+Biz bunlara çok girmeyeceğiz.
+
+73
+00:20:12,019 --> 00:20:13,820
+Tanımsal olarak bilsek yeterler.
+
+74
+00:20:13,820 --> 00:20:19,820
+Sadece n eşittir sıfırdan önce sistemin aşağıya çıkışı homojen çıkış olarak biliniyor.
+
+75
+00:20:21,011 --> 00:20:31,011
+Veya bunu daha formal bir şekilde yapacak olursak, n büyük eşittir sıfırdan itibaren tanımlı olduğu için bir un fonksiyonuyla tanımlayabiliriz.
+
+76
+00:20:32,331 --> 00:20:35,331
+Şimdi bu kısımları geçiyorum.
+
+77
+00:20:36,112 --> 00:20:37,251
+Bu kısımları geçiyorum.
+
+78
+00:20:37,391 --> 00:20:40,571
+Burada homojen çözümler kısımları filan anlatılmış.
+
+79
+00:20:41,152 --> 00:20:43,251
+Bizlere bunlar lazım değil şu anda.
+
+80
+00:20:43,991 --> 00:20:46,731
+Daha çok bunu sayısal işaret işleme dersinde.
+
+81
+00:20:47,167 --> 00:20:49,547
+Ayrıntılı olarak anlatacağız arkadaşlar.
+
+82
+00:20:51,507 --> 00:20:53,007
+Şuraya geleceğiz.
+
+83
+00:20:54,867 --> 00:20:59,228
+Eğer bir sistemin bilim impulsa cevabı biliniyorsa,
+
+84
+00:21:02,248 --> 00:21:11,007
+LTI bir sistemde herhangi bir keyfi giriş için çıkış cevabı bulunabilir.
+
+85
+00:21:11,007 --> 00:21:14,067
+Hep aklınızda şu olsun arkadaşlar.
+
+86
+00:21:14,932 --> 00:21:25,451
+Xn girişim, herhangi bir sonluk, oksiyon, Yn'i bilmek istiyorum. Sistemi karakterize eden sistemin impuls cevabı.
+
+87
+00:21:26,451 --> 00:21:38,871
+Xn de impulslardan oluştuğu için impulsun cevabını biliyorsak, eğer bu sistemde Linear Time Invariant bir sistemse, çıkışı bulmayı öğreneceğiz bu derste.
+
+88
+00:21:41,811 --> 00:21:43,811
+Şimdi, burada da şunu söylemişim.
+
+89
+00:21:44,851 --> 00:21:49,391
+Keyfi bir giriş, yani ikseni kast ediyor.
+
+90
+00:21:50,291 --> 00:22:00,851
+Aslında diyor, genliğinin ölçeklendiği ve time-shifted, yani zamanda ötelenmiş versiyonlarıdır.
+
+91
+00:22:00,951 --> 00:22:02,751
+Temel olarak impulsun.
+
+92
+00:22:02,751 --> 00:22:05,152
+Doğru, demin de anlatmıştım.
+
+93
+00:22:05,591 --> 00:22:09,331
+Herhangi bir işaret, şöyle ikseni işareti dediğim şey.
+
+94
+00:22:10,067 --> 00:22:33,347
+Aslında temelde baktığımda, değişik olarak impulslar, temel olarak impulsun genliği belli bir değerle çarpılıyor. Örneğin 2 burada. Bu da ne arkadaşlar? Impuls n-1 örneğin. Artık çarpı genlik değeri ne almışsa, aslında bunların toplamı şeklinde xn işaretimizi elde ediyoruz.
+
+95
+00:22:37,140 --> 00:22:53,420
+Bundan dolayı diyor, sistemin cevabı genlik olarak genliğinin ölçeklenip zamanda ötelenmiş impuls cevaplarına cevabın toplamı şeklinde verilir diyor.
+
+96
+00:22:54,760 --> 00:23:00,760
+Örneğin x'en işaretimiz arka arkaya uygulanmış iki tane impuls cevabı olsun.
+
+97
+00:23:02,000 --> 00:23:04,140
+İki tane impuls olsun yani.
+
+98
+00:23:04,596 --> 00:23:28,596
+Eğer tek bir impulsa verilen cevap, AŞEN buysa, ilk buna uygulanacak bir AŞEN, şöyle, ama n-1 anında da tekrar bir impuls uygulandığı için, orada da bir tane cevap verilecek.
+
+99
+00:23:28,596 --> 00:23:32,400
+O yüzden burada toplamsal olarak artıyor cevap.
+
+100
+00:23:32,400 --> 00:23:59,400
+ve azalmaya başlıyor. Normalde sadece bir tane impuls verilseydi, yani şu olsaydı, xn impuls eşittir, impuls n olsaydı sistemin çıktısı bu olacak, yn. Ama ne olmuş? İki tane impuls arka arkaya verilmişse, önce birinci cevap normalde şu şekilde olacak, onu mavi ile çizeyim.
+
+101
+00:23:59,955 --> 00:24:17,056
+Şöyle olacaktı, azalarak giden. Fakat şu anda bir impuls daha geldi. Dolayısıyla orada bir katkıda bulunacak sisteme. İki katına çıkaracak. Toplamsal olarak gidip azalma yapacak. Sistemin cevabı bu hale geliyor.
+
+102
+00:24:21,779 --> 00:24:32,779
+Şimdi bizim sistem uyaranımız, sistem girdimiz, bu slide'da Extation olarak adlandırılıyor arkadaşlar.
+
+103
+00:24:32,779 --> 00:24:37,699
+Xen, input değil de, sistem input değil de Extation kavramını kullanmış.
+
+104
+00:24:38,819 --> 00:24:41,479
+Periyodik ve devamlı bir fonksiyon da olabilir.
+
+105
+00:24:42,379 --> 00:24:46,619
+Belli bir impulsa verdiği cevabı biz biliyorsak,
+
+106
+00:24:47,028 --> 00:24:54,587
+Bizim çıktılarımızı hem periyodik hem de sonlu fonksiyonlar cinsinden hesaplayabiliriz.
+
+107
+00:24:54,668 --> 00:25:06,048
+Yani periyodik giden bir sistem girdisine de olan cevabı veya sistem çıkışını, sistemin cevabını bulabiliriz arkadaşlar.
+
+108
+00:25:08,188 --> 00:25:12,127
+Şimdi, demin de dediğim gibi,
+
+109
+00:25:14,932 --> 00:25:17,512
+Şimdi şunu bilmek lazım.
+
+110
+00:25:18,951 --> 00:25:31,711
+Yn, keyfi bir giriş x'in aslında impuls cevaplarının toplamı şeklinde, aşen toplamı şeklinde ifade edilir demiştik.
+
+111
+00:25:33,272 --> 00:25:38,412
+Veya öncelikli olarak belki şundan bahsetmekte fayda var.
+
+112
+00:25:40,019 --> 00:25:48,860
+Bu yaptıklarımı özetleyecek olursam, başka bir kitaptan daha yararlı olan bir çıktı yazayım öncelikle.
+
+113
+00:25:54,932 --> 00:26:18,932
+Şimdi, bu dediklerini bir irdeleyelim. Şöyle bir sistemimiz var. Girişine, Impulse n uygulandığında bu sistem Diner Time Invariant bir sistem. Bu sistemin çıkışında biz Aşeni elde ediyoruz.
+
+114
+00:26:22,036 --> 00:26:27,135
+Eğer bu sistemde öteleme gerçekleşirse,
+
+115
+00:26:28,536 --> 00:26:31,895
+Sistemde öteleme gerçekleşirse,
+
+116
+00:26:32,475 --> 00:26:34,395
+Linear bir sistem olduğu için,
+
+117
+00:26:36,115 --> 00:26:38,135
+Time Invariant bir sistem olduğu için,
+
+118
+00:26:39,096 --> 00:26:41,875
+Biz h n-1'i elde edeceğiz.
+
+119
+00:26:44,016 --> 00:26:46,996
+Veya bunu daha genel bir şekilde yazacak olsak,
+
+120
+00:26:47,096 --> 00:26:48,296
+Şuraya k diyelim,
+
+121
+00:26:48,915 --> 00:27:15,096
+n-k şekline getiririz. Sistem Time Invariance'ı. Neydi arkadaşlar? Öteleme ile değişmezlik. Sistem girvesi zamanda ötelenirse, sistem çıkışı da zamanda öteleniyordu. Peki, linear bir sistemin diğer bir özelliği neydi arkadaşlar? Belli bir genlik değeri ile çarpılırsa, belli bir genlik değeri ile çarpılırsa,
+
+122
+00:27:15,571 --> 00:27:21,471
+Örneğin bizim şöyle xn değerlerimiz var.
+
+123
+00:27:29,587 --> 00:27:37,188
+Belli bir genlik değeriyle çarpılırsa, çıkışta aynı genlik değeriyle çarpılıyordu arkadaşlar hatırlarsanız.
+
+124
+00:27:37,928 --> 00:27:47,347
+Örneğin biz bu kaydırılmış, K kadar kaydırılmış yerdeki genlik değerini XK olarak adlandıralım.
+
+125
+00:27:47,347 --> 00:27:52,627
+XK, impuls, N-K.
+
+126
+00:27:54,355 --> 00:28:12,175
+Ne olacak? Girde olarak verilir bu sistemi. Aynı xk, h, n-k ile aynı şekilde çıkıştır. Bunlar sabit, skaler değerler. xk, yani x fonksiyonunun k'da aldığı değer gibi düşünebilirsiniz.
+
+127
+00:28:12,175 --> 00:28:21,115
+Yani örneğin şurada x1 eşittir. Örneğin burası 0.5.
+
+128
+00:28:21,567 --> 00:28:37,467
+gibi düşünebilirsiniz veya şurada x2 eşitti eksi 1 gibi düşünebilirsiniz. Yani skaler bir değer alıyor. O değeri koyuyoruz. Linear bir sistem
+
+129
+00:28:40,660 --> 00:28:47,660
+Time Invariant özelliği var. Şurada Time Invariant öteleme ile
+
+130
+00:28:50,160 --> 00:28:53,160
+Değişmezlik özelliği var burada.
+
+131
+00:28:54,500 --> 00:28:57,860
+Hangi sistemleri? Linear Time Invariant sistemleri.
+
+132
+00:28:58,160 --> 00:29:04,160
+Burada Linear bir sistemin ölçeklenebilirlik.
+
+133
+00:29:08,788 --> 00:29:18,428
+veya Homogeneity, yani giriş bir sabitle çarpılırsa çıkışta bir sabitle çarpılıyor demiştik.
+
+134
+00:29:19,268 --> 00:29:28,628
+Artı lineer bir sistemin başka hangi özelliğini var? Lineer sistemin girişi hem şöyle bir özellik de söyleyebiliyoruz.
+
+135
+00:29:29,208 --> 00:29:35,968
+Girişteki işaretler toplanırsa çıkışta da bu sistemin cevapları toplanabilir hale geliyordu.
+
+136
+00:29:36,448 --> 00:29:38,968
+Onu da şu şekilde ifade edebiliriz.
+
+137
+00:29:40,048 --> 00:29:49,088
+Impuls k, eksi sonsuzdan sonsuza kadar, xk, impulse n-k.
+
+138
+00:29:51,088 --> 00:29:59,688
+Yani burada toplama, lineer toplamsallık özelliğini kullandık.
+
+139
+00:30:00,000 --> 00:30:03,360
+Sisteme girdik, her iki tarafı da topluyoruz.
+
+140
+00:30:03,600 --> 00:30:13,220
+Impuls, K, X sonsuzdan sonsuza kadar, Impuls, X, K, H, N-K dedik.
+
+141
+00:30:14,280 --> 00:30:19,500
+Dikkat edin arkadaşlar, önce şurayı bir yorumlayalım sizinle beraber.
+
+142
+00:30:20,420 --> 00:30:22,759
+X, K, N-K neydi arkadaşlar?
+
+143
+00:30:23,980 --> 00:30:26,080
+Aslında şunu söylüyordu bize.
+
+144
+00:30:27,155 --> 00:30:32,535
+Herhangi bir X'en işaretimizden bahsediyoruz size.
+
+145
+00:30:33,955 --> 00:30:39,155
+Örneğin, X'en işareti şu şekilde belirlensin.
+
+146
+00:30:43,155 --> 00:30:47,655
+Burada, XK
+
+147
+00:30:48,180 --> 00:30:59,940
+Baktığımızda aslında birçok impuls'tan oluşuyor. Şöyle baktığımızda, örneğin genlik değerlerini de vereyim bunun. Şuradaki 2 olsun önce, bu 1 olsun, bunun 0,5 olsun.
+
+148
+00:31:01,140 --> 00:31:14,680
+Eksi 0,5, 1, eksi 1 olsun. Şuradaki değerlerde 0,1, 2, eksi 1, eksi 2, eksi 3'teki halleri olsun.
+
+149
+00:31:15,667 --> 00:31:23,267
+Ben baktığımda aslında bu ikideki bir impuls, yani şöyle diyebilir miyim buna?
+
+150
+00:31:24,507 --> 00:31:33,547
+x0 çarpı impuls n eşittir. x0'daki değeri ne bunun? Fonsiyonun.
+
+151
+00:31:34,287 --> 00:31:37,607
+2 impuls n diyebilir miyim arkadaş?
+
+152
+00:31:37,607 --> 00:31:42,467
+Artı. Önce sağa doğru gideyim.
+
+153
+00:31:43,731 --> 00:32:09,731
+Genliği 1. Buna ne diyebilirim arkadaşlar buradaki işareti? Buna x6 indis 0 diyeyim. n olsun bu. x6 indis 1'deki değeri n olsun. Yani şunu yazıyorum. x'in 1'deki değeri çarpı
+
+154
+00:32:09,983 --> 00:32:17,983
+Impuls n-1. Yani impuls 1 kalmış, gelmeyin de x1'deki değeri şeklinde söyleyebilirim.
+
+155
+00:32:17,983 --> 00:32:27,983
+Artı, şimdi şu 0,5 aldığı yeri söyleyeyim. x2'deki değeri ne bunun?
+
+156
+00:32:27,983 --> 00:32:34,983
+Şöyle yapalım, bu 1'deki idi, bu 0'daki idi. 2'deki değeri ise ne?
+
+157
+00:32:36,403 --> 00:32:54,544
+x'in 2'deki değeri, impuls n-2, artı, yani aslında genliği değiştirilmiş, şöyle x0, x1 dalcıya değerlerle beraber değiştirilmiş fonksiyonlar.
+
+158
+00:33:03,316 --> 00:33:09,155
+Buna ne dedik arkadaşlar? Genliği, eksi 0.5'ti. Şöyle tanımlayabilir miyiz bunu?
+
+159
+00:33:10,155 --> 00:33:26,836
+Eksi 1, x, eksi 1'de almış olduğu değer çarpı, impuls, n artı 1. Yani sola kaydılmış bir impulsu 0.5 ile çarptığımızda, çünkü impulsün genliği 1'de neyle çarparsa onun değerini alacaktır.
+
+160
+00:33:29,556 --> 00:33:38,356
+Bir tane daha değerimiz var. x-2'deki değerimizi nasıl yazabiliriz? Bakalım. 1 almış orada.
+
+161
+00:33:40,116 --> 00:33:44,556
+Şurada 1 almış. Yani 2'de 1 değeri almış.
+
+162
+00:33:44,556 --> 00:33:55,276
+Impuls, yani şunu şöyle yazabiliriz. 0.5, x-0.5, impuls n artı 1 değeri.
+
+163
+00:33:59,827 --> 00:34:01,968
+Impuls ne diyeceğiz?
+
+164
+00:34:06,771 --> 00:34:31,851
+x-2'deki hali çarpı impuls n artı 2. x2'deki değeri 1 çarpı impuls n artı 2. Son değerimizde, x-1 aldığı yer 3'te, 3'te de x-1 değeri alıyor. x-3'teki değeri ise
+
+165
+00:34:32,532 --> 00:34:48,372
+x'in eksi 3'te aldığı değer çarpı impuls n artı 3. Bu da eksi 1 çarpı impuls n artı 3. Eksi impuls n artı 3 diyoruz.
+
+166
+00:34:48,372 --> 00:34:57,711
+Gördüğünüz gibi benim aslında burada tanımlamış olduğum işaretine k'ya değer veriyorum.
+
+167
+00:34:58,195 --> 00:35:16,016
+Xn, yani xk buradaki, k ana değişkenim benim. Sonsuzdan sonsuza kadar gidiyor. xk sıfırdan farklı, yani bundan önce hep sıfır biliyorsunuz. İlk nerede değer alıyor? Eksi 3'te değer alıyor. k eksi 3'te değer alacak.
+
+168
+00:35:24,884 --> 00:35:46,123
+n artı 3, peki değeri alacak, artı, k, eksi 2'de de değer alıyor mu? Alıyor. x, eksi 2, artı, impuls, n artı 2, artı, devam ediyorum. x, eksi 1'de değer alıyor.
+
+169
+00:35:52,628 --> 00:36:10,108
+Impuls N şeklinde devam ediyor. Yani bu XK'lar, XK'lar yani buradaki X'endeki XK'lar sıfırdan farklı değer aldığı sürece toplu halde bu şekilde yazılabilir.
+
+170
+00:36:10,568 --> 00:36:17,168
+Dolayısıyla ben ne derim buna? Bu işaretim ne olmuş? Benim XN işaretimi oluşturuyor bu.
+
+171
+00:36:18,452 --> 00:36:21,892
+Burası benim Xn işaretimi oluşturuyor.
+
+172
+00:36:23,212 --> 00:36:30,612
+Peki, benim bu Xn'im impulsların genliği değiştirilmiş ve kaydırılmış haliydi.
+
+173
+00:36:31,132 --> 00:36:36,292
+Sonuçta benim çıkışımsa Yn olarak adlandırılıyor.
+
+174
+00:36:36,292 --> 00:36:36,992
+Şurası.
+
+175
+00:36:38,212 --> 00:36:41,072
+Yn, şöyle yazacak olursam.
+
+176
+00:36:43,188 --> 00:37:07,268
+xk x sonsuzdan sonsuza kadar xk h n-k xa xk girdilerine impuls cevabının kaydırılmış hallerinin toplamı şeklinde topladığımda sistemin çıkışını buluyorum.
+
+177
+00:37:09,427 --> 00:37:11,188
+İmpuls cevabı
+
+178
+00:37:14,516 --> 00:37:39,315
+diyorum, xk işaretinin ayrı ayrı her bir biriminin elemanının yani şunları kastediyorum, hn-k impuls cevabını kaydırılmış haliyle toplanması şeklinde tanıyorum. Buna da arkadaşlar, xn ile hn'in konvolüsyonu adını veriyorum.
+
+179
+00:37:40,563 --> 00:38:00,563
+Ayrık zamanlı konvolüsyon da buydu. Biliyorsunuz, benim, analojiyi kuracak olursak, sürekli zamanda da şu şekildeydi, YT sürekli zamandayım, Sigma yerine integral geliyor. Çünkü sürekli haldeyiz.
+
+180
+00:38:08,175 --> 00:38:10,475
+Önce bir XT işaretim vardı.
+
+181
+00:38:11,255 --> 00:38:12,775
+XK yerine
+
+182
+00:38:13,295 --> 00:38:14,055
+H
+
+183
+00:38:19,188 --> 00:38:23,188
+t-k
+
+184
+00:38:24,688 --> 00:38:27,688
+değişkeni ne buradaki? d-k
+
+185
+00:38:28,188 --> 00:38:29,688
+şeklinde tanımıyorum.
+
+186
+00:38:30,188 --> 00:38:33,188
+Yani burada k değişkeni var.
+
+187
+00:38:34,188 --> 00:38:36,188
+Kaydırılma miktarları.
+
+188
+00:38:36,387 --> 00:38:37,688
+Ben burada
+
+189
+00:38:38,387 --> 00:38:39,688
+sırasıyla
+
+190
+00:38:40,288 --> 00:38:41,988
+ixt'nin
+
+191
+00:38:42,643 --> 00:39:06,543
+İmpulslara vermiş olduğu bilim cevapları toplaya toplaya gidiyordu. Aynı denklem bu Continuous Convolution. Bu da Discrete Convolution olarak adlandırılıyor arkadaşlar.
+
+192
+00:39:09,427 --> 00:39:10,768
+Bu anlaşıldı mı?
+
+193
+00:39:16,467 --> 00:39:17,467
+Evet.
+
+194
+00:39:17,467 --> 00:39:19,467
+Evet hocam anlaşıldı.
+
+195
+00:39:19,467 --> 00:39:24,395
+Tamam. [öğrenci] anlamış. [öğrenci] anladın mı?
+
+196
+00:39:30,324 --> 00:39:30,884
+[kişisel bilgi]
+
+197
+00:39:39,411 --> 00:39:40,952
+[kişisel bilgi]
+
+198
+00:39:51,315 --> 00:39:53,775
+[kişisel bilgi]
+
+199
+00:40:00,148 --> 00:40:01,688
+[kişisel bilgi]
+
+200
+00:40:05,007 --> 00:40:05,887
+Tamamdır.
+
+201
+00:40:07,528 --> 00:40:09,588
+[kişisel bilgi]
+
+202
+00:40:10,128 --> 00:40:10,467
+[kişisel bilgi]
+
+203
+00:40:16,436 --> 00:40:18,155
+[kişisel bilgi]
+
+204
+00:40:21,748 --> 00:40:23,847
+[kişisel bilgi]
+
+205
+00:40:33,396 --> 00:40:35,115
+[kişisel bilgi]
+
+206
+00:40:42,579 --> 00:40:46,079
+[kişisel bilgi]
+
+207
+00:40:46,420 --> 00:40:51,019
+[kişisel bilgi]
+
+208
+00:40:52,300 --> 00:40:54,360
+[kişisel bilgi]
+
+209
+00:40:59,027 --> 00:41:00,971
+[kişisel bilgi]
+
+210
+00:41:06,675 --> 00:41:10,675
+[kişisel bilgi]
+
+211
+00:41:12,775 --> 00:41:13,576
+[kişisel bilgi]
+
+212
+00:41:18,708 --> 00:41:19,827
+[kişisel bilgi]
+
+213
+00:41:23,795 --> 00:41:30,115
+[kişisel bilgi]
+
+214
+00:41:35,188 --> 00:41:40,847
+[kişisel bilgi]
+
+215
+00:41:45,715 --> 00:41:54,275
+[kişisel bilgi]
+
+216
+00:41:57,235 --> 00:41:58,735
+[öğrenci]
+
+217
+00:42:10,708 --> 00:42:17,708
+[kişisel bilgi]
+
+218
+00:42:25,012 --> 00:42:26,212
+[öğrenci]
+
+219
+00:42:30,547 --> 00:42:44,347
+[öğrenci] da anlamış. İçinden herhalde cevap verdi. Sizler bilirsiniz arkadaşlar. Ondan sonra sorular zordu, biz anlamamıştık. Demek yok. Derse katılım şart bildiğiniz gibi.
+
+220
+00:42:46,347 --> 00:42:48,947
+Şimdi ne demiştik?
+
+221
+00:42:50,947 --> 00:42:52,627
+Y-N
+
+222
+00:43:00,211 --> 00:43:25,371
+Evet, zaten bu dersin başında söyledik. Matematik zaten soyut bir bilim. Bu işin biraz daha matematiğini anlamaya çalışıyoruz. Sizlerin de mühendis olarak, hani bu soyut geliyor bunu anlamıyorum demek değil, zaten işin içerisinde matematik soyut bir kavram. Burada soyut olarak anlattığınız şeyleri zamanla ödevler vererek veya ödevler, sorular çözerek.
+
+223
+00:43:25,844 --> 00:43:28,124
+anlamaya çalışıyoruz.
+
+224
+00:43:28,604 --> 00:43:30,124
+Tabi dersi takip etmemek lazım.
+
+225
+00:43:30,264 --> 00:43:32,144
+Ben kitaplar da paylaştım.
+
+226
+00:43:32,144 --> 00:43:35,144
+O kitapları da internette rahatlıkla bulabiliyorsunuz.
+
+227
+00:43:36,403 --> 00:43:37,804
+Çok güzel kitaplar var.
+
+228
+00:43:38,044 --> 00:43:38,824
+Bu alanda yazılmış.
+
+229
+00:43:39,024 --> 00:43:45,943
+Özellikle, daha böyle güzel bir şekilde anlamak isterseniz arkadaşlar.
+
+230
+00:43:51,795 --> 00:43:53,135
+Şu kitabı tavsiye edelim.
+
+231
+00:44:05,460 --> 00:44:12,180
+Ya bu bilgisayarlardaki mikrofon bozukluğu problemi de o kadar yaygınlaştı ki.
+
+232
+00:44:19,123 --> 00:44:29,623
+Bu konu için de mümkün tabii ki. Zaten dev yapacaksınız. Biraz sonra da şey yapacağım. Bakın, Cygnus and Systems, bu şey miydi? MG Roberts'ın.
+
+233
+00:44:30,383 --> 00:44:38,123
+Burada Cygnus and Systems kitabı var. Bu güzel bir kitap. Yani bu anlattığımız konuları anlatıyor.
+
+234
+00:44:38,324 --> 00:44:46,624
+Şurada, bunun Türkçesi de var zannedersen. Evet, şu an anlattığım slide'lar bu kitabın arkadaşlar.
+
+235
+00:44:46,844 --> 00:45:00,224
+Singles and Systems, M.G. Robertson kitabı. Buradan ben anlatıyorum. İnternet üzerinden de bulabiliyorsunuz arkadaşlar.
+
+236
+00:45:02,003 --> 00:45:08,403
+Burada ilginç bir şey, ciltli kapaklı daha ucuz gibi gözüküyor cilt sizine göre.
+
+237
+00:45:11,699 --> 00:45:38,239
+Rica ederim. Şimdi bu kitabı tavsiye ettim arkadaşlar. Onun dışında farklı kitaplar var. Fundamentals of Signals and Systems, Signals and Systems, Oppenheim'un var. Şunlar da kullanılabilir. Ama temelde ben Angie Roberts'ın Slide'ını kullanıyorum şu anda.
+
+238
+00:45:40,179 --> 00:45:42,219
+Hepsinde hemen hemen aynı şeyi anlatılıyor.
+
+239
+00:45:43,000 --> 00:45:45,179
+Yayını tanımlarken ne demiştik arkadaşlar?
+
+240
+00:45:47,099 --> 00:45:48,000
+Önemli olan şu.
+
+241
+00:45:50,739 --> 00:45:53,000
+Burada adım adım gelmiştik.
+
+242
+00:45:54,079 --> 00:45:57,920
+İmpulsa verilen cevabın aşen olduğunu söylemiştik.
+
+243
+00:45:58,019 --> 00:46:00,000
+Kaydırmıştık, toplam sahaya getirmiştik.
+
+244
+00:46:00,000 --> 00:46:03,000
+Sağ tarafta Xn'i bulmuştuk.
+
+245
+00:46:04,467 --> 00:46:19,527
+Kutucuya girmişti. Kutucuyun impulsuna verdiği cevap HN'di. Sonuçta YN'i şununla bulabileceğimizi, bunun da konvolüsyon adına geldiğini söylemiştik. Oradan devam edelim.
+
+246
+00:46:31,411 --> 00:46:32,491
+güzelce yazalım.
+
+247
+00:46:36,092 --> 00:46:40,731
+x, k, h, n-k.
+
+248
+00:46:42,152 --> 00:46:54,072
+Şimdi bu konvolüsyon toplamını göre, yn çıktısının herhangi keyfi bir xn girişi için nasıl bulunabileceğini söylüyor.
+
+249
+00:46:54,072 --> 00:46:57,072
+Konvolüsyon toplamını aşarsak, bakın.
+
+250
+00:46:57,472 --> 00:47:02,472
+x-1'de ilk değerini aldı, sıfırdan farklı aldı diyelim, sonsuz bir toplam.
+
+251
+00:47:02,472 --> 00:47:13,472
+k-1 ise şayet, k-1 ise şuradaki hn-k'daki eksi 1 koy k'nın yerine hn artı 1'deki hali artı.
+
+252
+00:47:13,472 --> 00:47:23,211
+k yerine sıfır koy, x'in sıfırdaki hali yani genlik değeri çarpı hn, k sıfır olduğu için hn.
+
+253
+00:47:24,500 --> 00:47:46,259
+Burada bu toplama, yani şuradaki toplama, sadece x'in sıfırdan farklı olduğu yerdeki inputları, inputlarla ilgili, impuls response'un, kaydılmış impuls response'un toplamını dahil ediyoruz arkadaşlar.
+
+254
+00:47:47,219 --> 00:48:00,439
+Buna da konvolüsyon toplamı deniyor. Şuraya M yazmışım. Mesela ben K kullanmıştım. O M kullanmış. Burada önemli olan M veya K bizim kaydırma miktarımız arkadaşlar.
+
+255
+00:48:01,719 --> 00:48:09,479
+Burada mesela biraz daha somut bir ne vereceğiz? Somut bir örnek vereceğiz.
+
+256
+00:48:12,659 --> 00:48:35,760
+Bu somut örnekte şunu söylüyor öncelikli olarak. Xn diye bir girişimiz varmış. Genliği 2 olan 3 tane impuls'tan oluşuyor. Aslında şöyle de diyebiliriz. Bir kare dalga uygulanıyor sisteme. Şimdi şuraya xn uygulandı.
+
+257
+00:48:38,260 --> 00:48:51,119
+Sistemin impulsa cevabı AŞEN. Bu AŞEN ne arkadaşlar? X'e sadece şu uygulandığında. XN, ImpulseN uygulandığındaki hali.
+
+258
+00:48:54,739 --> 00:48:59,019
+Deminki arkadaşımızın sorusu aslında önemli bir soru, soyut bir kavram burada.
+
+259
+00:48:59,599 --> 00:49:13,659
+Baktığımızda biz bunları temelde işliyoruz ama temelde impulslar nedir, sayı ekseninde örneğin n çeşitli değerler alıyor, bir sisteme giriyor, sistemden çıkışı alıyor.
+
+260
+00:49:14,159 --> 00:49:19,420
+Arkadaşlar, bunlar işin teorik kısmı. Bunlar mesela karşımıza nerede gelecek derseniz.
+
+261
+00:49:22,000 --> 00:49:45,360
+Makine öğrenmesinde, görüntü işlemede, bunların biz şu anda tek boyutta çalışıyoruz ama bunların bir matris yapısı şeklinde piksellerin değerleri olduğunu düşünürüz. X ve Y değişkeni yani biz X, U ve V şeklinde iki boyuta getirildiğini düşünürüz. Buradan dersin adı, bu dersin adı değişiyor, görüntü işlemi oluyor.
+
+262
+00:49:46,195 --> 00:49:52,135
+Kullandığınız o blur filtreleri, yüksek geçen kenar bulma filtreleri hep bu konvolüsyonla yapılıyor.
+
+263
+00:49:52,255 --> 00:49:53,715
+Veya makine öğrenmesini geçtiniz.
+
+264
+00:49:54,095 --> 00:49:56,515
+Çok güncel bir kavram var mesela.
+
+265
+00:49:57,155 --> 00:49:59,755
+Convolution, Noren Network, derin öğrenme.
+
+266
+00:50:00,815 --> 00:50:07,855
+Bakın, sizin bilgisayar mühendisliği açısından, bilgisayar bilimleri açısından en çok kullanacağınız
+
+267
+00:50:08,307 --> 00:50:19,268
+kavramların altyapısında bu sinyal sistemlerden örnekler var. Mesela makine öğrenmesi üzerine derin öğrenme de soruyor arkadaşlar.
+
+268
+00:50:20,268 --> 00:50:31,288
+Convolutional neural network var. Yani konvolüsyonel sinir ağları var. Orada filtreler kullanıyor. İşte bu filtreler bizim aşenlerimiz olmuş oluyor.
+
+269
+00:50:31,827 --> 00:50:35,407
+Hocam niye 3'e 3, 5'e 5 filtre kullanıyoruz? Etkisi nedir?
+
+270
+00:50:35,987 --> 00:50:42,748
+Onu biraz daha mühendis, vari, bakabilmek için bu altyapıyı biraz bilmek gerekiyor arkadaşlar.
+
+271
+00:50:44,447 --> 00:50:49,667
+Şimdi, bu sistemin cevabından çıktısını bulmaya çalışacağız.
+
+272
+00:50:49,768 --> 00:50:51,047
+Bize çıktıyı soruyorlar.
+
+273
+00:50:51,587 --> 00:50:55,887
+X'eni vermişler, H'eni vermişler, Y'eni soruyorlar.
+
+274
+00:50:56,887 --> 00:50:59,367
+Peki biz bunu bulurken ne yapacağız öncelikli olarak?
+
+275
+00:50:59,987 --> 00:51:05,148
+Eğer biz formüle bakacak olursak, formül üzerinden yorumlayalım.
+
+276
+00:51:06,427 --> 00:51:10,708
+Benim formülüm ne olacak? Şöyle baktığımda
+
+277
+00:51:11,987 --> 00:51:16,907
+Yn
+
+278
+00:51:20,244 --> 00:51:29,364
+n-k x-sonsuzdan sonsuza kadar x-k h n-k
+
+279
+00:51:29,364 --> 00:51:41,584
+Demin dediğim gibi aslında impulslardan oluşmuş işaretin kaydırılmış impuls fonksiyonunda çarpılıp toplanması demiştim.
+
+280
+00:51:41,584 --> 00:51:44,924
+Farklı bir şekilde burada bir çözüme gitmiş.
+
+281
+00:51:47,891 --> 00:52:02,211
+H'ı değişkenine M adı vererek tam tersini almış. Eksi diye çarptığında, H-M dediğinde veya buraya N dediği gibi şunu elde etmiş.
+
+282
+00:52:03,331 --> 00:52:08,891
+Bu da benim K yerine M'yi kullanıyor ya arkadaşlar. Ben de onun şeyini kullanayım şöyle.
+
+283
+00:52:10,891 --> 00:52:11,731
+Şurada.
+
+284
+00:52:15,443 --> 00:52:17,443
+Ona benzeteyim şeyimi.
+
+285
+00:52:17,443 --> 00:52:29,443
+M eksi sonsuzdan sonsuza kadar xm h n-m diyeyim.
+
+286
+00:52:29,443 --> 00:52:40,443
+Konvolüsyon formu. Önce eksi m'i bulmuş. Yani burada ne yapılıyor? İkinci, yani impulsp response bir tersine çevriliyor. M ekseninde.
+
+287
+00:52:41,300 --> 00:52:43,820
+Daha sonra n-m demiş örneğin.
+
+288
+00:52:44,520 --> 00:52:49,540
+n-m dediğinde m'in değerine göre, eksi değerleri altı olabilir.
+
+289
+00:52:50,240 --> 00:52:53,540
+Bu eksende sağa sola oynamaya başlıyor.
+
+290
+00:52:54,660 --> 00:52:55,060
+Tamam.
+
+291
+00:52:56,280 --> 00:53:00,400
+Örneğin, xm ilk fonksiyon yerinde sabit dururken.
+
+292
+00:53:01,600 --> 00:53:03,560
+n-1 verdiğimizi düşünün.
+
+293
+00:53:04,880 --> 00:53:05,200
+Yani.
+
+294
+00:53:06,228 --> 00:53:32,228
+n-1 için. Şimdi çıkışı buluyoruz. Yani teker teker buradaki y'ye eksi 1 vermişiz. Ne olacak? Buradaki eksi 1 değeri olmuş olacak n'in. Dolayısıyla tersine bir yorum yapıyorum burada. h-1-m. Yani ters çevrilmiş.
+
+295
+00:53:34,291 --> 00:53:41,971
+Şeyin, eksi emin, ters çevrilmiş halinin, eksi birdeki hali.
+
+296
+00:53:44,611 --> 00:53:45,151
+Öyle değil mi?
+
+297
+00:53:46,011 --> 00:53:48,911
+H, eksi bir eksi emi bulmuş burada.
+
+298
+00:53:49,851 --> 00:53:50,651
+Teker teker.
+
+299
+00:53:51,059 --> 00:54:01,260
+Önce y-1'i bulduracak bize, sonra y-0'ı bulduracak, y-1'i bulduracak gibi x'in değer aldığı bütün alanlarda yapacak bunu.
+
+300
+00:54:01,320 --> 00:54:05,260
+x-1, 0, 1 gibi bütün alanlarda yapacak bunu.
+
+301
+00:54:05,960 --> 00:54:08,840
+Teker teker onları daha sonra toplayacağız.
+
+302
+00:54:09,480 --> 00:54:14,119
+n-1 için ne oluyor arkadaşlar buradaki fonksiyonda?
+
+303
+00:54:15,180 --> 00:54:16,500
+x-1 koyalım yerine.
+
+304
+00:54:18,164 --> 00:54:20,164
+X'emiz sabit duruyor.
+
+305
+00:54:21,364 --> 00:54:24,764
+H, n'imiz tersine çevirdik.
+
+306
+00:54:24,764 --> 00:54:28,364
+Eksi bir kadar kaydırdığımızda bunu buluyoruz.
+
+307
+00:54:29,563 --> 00:54:33,963
+Bu bizim y eksi birimiz.
+
+308
+00:54:35,963 --> 00:54:43,364
+Tam tersine. Bu sefer de sırasıyla eksi bir, sıfır, bir, iki değerlerini bulacağız mesela.
+
+309
+00:54:43,364 --> 00:54:45,364
+Böylelikle y n'i oluşturacağız.
+
+310
+00:54:46,260 --> 00:54:58,260
+Biz buraya çarptığımızda, ne yapıyor burada? XM ile H-1. Bunların kesiştiği yer neresi? Sadece baktığımızda, eksi 1'de kesişiyorlar değil mi?
+
+311
+00:54:58,260 --> 00:55:11,260
+Yani alt altı şey, M'e eksi 1 verdiğimde anca değer alıyorlar. Yani burada eksi 1, X eksi 1 aldığında, H eksi kaçtaki değeri? Eksi 1 artır.
+
+312
+00:55:12,052 --> 00:55:25,552
+Bu değeri ile çarpılıyor. Yani şurada üst üste biniyorlar. Eksi bir, onların altına çizsem ben bunun ne yapacak? Şöyle yapayım.
+
+313
+00:55:30,195 --> 00:55:49,195
+Şöyle yapayım. Ben bunu altına çizsem bunu, burada bir değeri alıyor, burada ise iki değeri alıyor. Bunu buraya çizdim arkadaşlar. H-1-M. Nerede bunlar kesişiyorlar? Burada.
+
+314
+00:55:55,987 --> 00:56:06,487
+Bunun 2, bunun genlik değerine 1, 2x1, 2. Yani burası 2, burası ise 1 değeri alıyor.
+
+315
+00:56:06,487 --> 00:56:15,487
+Buradan ben ne diyeceğim arkadaşlar? y-1, 2 diyorum.
+
+316
+00:56:24,755 --> 00:56:26,995
+H-M
+
+317
+00:56:26,995 --> 00:56:29,275
+Şu şekilde
+
+318
+00:56:29,275 --> 00:56:32,735
+Burası 2, burası 1 geldiğinde
+
+319
+00:56:32,735 --> 00:56:34,295
+Burası H
+
+320
+00:56:34,295 --> 00:56:39,915
+0-M
+
+321
+00:56:39,915 --> 00:56:42,915
+Yani H-M
+
+322
+00:56:42,915 --> 00:56:47,815
+Burada N0 koyduğum zamanki hali
+
+323
+00:56:47,815 --> 00:56:48,995
+Bakın
+
+324
+00:56:49,460 --> 00:56:58,139
+eksi 1'deki kısım birbiriyle çakışıyor ve de sıfırdaki kısım birbiriyle çalışıyor.
+
+325
+00:56:58,139 --> 00:57:10,460
+Burada ne olacak? 2 çarpı 2, 4. 1 çarpı 2, 2'yi alacağız. Bu da y sıfırdaki hali.
+
+326
+00:57:10,460 --> 00:57:16,460
+Ve bunların toplamı da 6. 4 artı 2 eşittir 6.
+
+327
+00:57:17,204 --> 00:57:19,204
+değerini veriyor.
+
+328
+00:57:21,204 --> 00:57:27,204
+Daha sonra n eşittir 1, n eşittir 1 için düşünüyoruz.
+
+329
+00:57:28,204 --> 00:57:41,204
+n eşittir 1 de bu sefer benim fonksiyonum bir yana kaymış oluyor. Artık hangisiyle, şurası ve şurası, şu üçgenle de şu üçgenlik kısımlar çarpılıyor.
+
+330
+00:57:45,619 --> 00:57:49,119
+Y eşittir 1 değerini bulmuş oluyoruz.
+
+331
+00:57:49,119 --> 00:57:51,559
+2x2, 4
+
+332
+00:57:51,559 --> 00:57:54,480
+1x2, 2
+
+333
+00:57:54,480 --> 00:57:56,420
+Burada da Y1 de 6 oluyor.
+
+334
+00:57:57,420 --> 00:58:00,420
+En sonunda neye geldik arkadaşlar?
+
+335
+00:58:01,320 --> 00:58:04,000
+En eşittir 2'ye geldik.
+
+336
+00:58:05,220 --> 00:58:06,460
+Bu sefer de hala
+
+337
+00:58:07,059 --> 00:58:25,380
+Birdeki değeri, bunun birdeki değeri alt alta geldiğinde M-X'in üzerinde, ikisi de M-X üzerinde birbirlerine temas haline ver. 2x2, burada sadece 1'de 4 değeri alıyor. Y2'de 4. Sırasıyla neleri bulduk biz? Y-1'i bulduk.
+
+338
+00:58:26,380 --> 00:58:33,380
+Y0'ı bulduk 6, Y1'i bulduk 6, Y2'yi bulduk 4 bulduk.
+
+339
+00:58:34,068 --> 00:58:40,428
+Dolayısıyla sistem cevabımız, eksi 1'de n eşittir, eksi 1'de 2 almıştı.
+
+340
+00:58:40,988 --> 00:58:49,028
+n eşittir 0'da 6 almıştı, n eşittir 1'de 6 almıştı, n eşittir 2'de 4 almıştı.
+
+341
+00:58:50,148 --> 00:58:58,308
+Bu da eğer böyle bir aşeni böyle olan bir sisteme, şu üçlü impuls kombinasyonu, genliği 2 olarak verildiğinde,
+
+342
+00:59:00,947 --> 00:59:02,847
+Bu şekilde bulunuyor diyor.
+
+343
+00:59:03,128 --> 00:59:14,228
+M-sonsu'dan sonsu'da kadar XMHN-M şeklinde de bulunabilir diyor.
+
+344
+00:59:16,148 --> 00:59:19,568
+Şimdi arkadaşlar bir ara vereceğiz.
+
+345
+00:59:20,628 --> 00:59:22,688
+Bir 15 dakikalık ara verelim.
+
+346
+00:59:23,588 --> 00:59:26,788
+5 çeyrekte anlatmaya devam edeceğiz arkadaşlar.
+
+347
+00:59:30,771 --> 00:59:33,251
+Geldiğimizde sorsa olan varsa sorabilir.
+
+348
+01:15:15,091 --> 01:15:16,291
+Merhabalar arkadaşlar.
+
+349
+01:15:18,412 --> 01:15:19,751
+Sesim geliyor mu?
+
+350
+01:15:21,451 --> 01:15:22,511
+Geliyor hocam.
+
+351
+01:15:23,152 --> 01:15:23,791
+Tamamdır.
+
+352
+01:15:24,832 --> 01:15:27,332
+Dersimize kaldığımız yerden devam edelim.
+
+353
+01:15:29,572 --> 01:15:34,191
+Hem de ödevimizi de anlatmaya başlarız arkadaşlar.
+
+354
+01:15:36,031 --> 01:15:38,271
+Şimdi en son olarak
+
+355
+01:15:40,659 --> 01:15:43,039
+Konvolüsyon toplamında kalmıştık.
+
+356
+01:15:44,180 --> 01:15:46,739
+Şimdi bunun özelliklerine biraz bakacağız.
+
+357
+01:15:47,680 --> 01:16:04,559
+Eğer sistemimizin h-n kısmı sadece bir impulstan belli bir genlikle çarptılmış ve de belli bir ötelenmiş, yani şu şekilde a n-0 kadar kaydırılmış bir h-n'imiz varsa
+
+358
+01:16:05,363 --> 01:16:13,804
+sistem çıkışımız x'nin n0 kadar kaydırılmışının a ile çarpılmışı olmuş oluyor.
+
+359
+01:16:15,603 --> 01:16:24,564
+Onun dışında eğer çıkışımız n0 kadar kaydırılmış, hn0 kadar kaydırılmış ise şayet
+
+360
+01:16:25,583 --> 01:16:31,724
+bizim çıkışta bulacağımız yn fonksiyonu n0 kadar kaydırılmış oluyor arkadaşlar.
+
+361
+01:16:32,435 --> 01:16:43,255
+Şimdi, n-y-1 yani çıkışın bir önceki halinden çıkarılmış halindeyse neyi buluyoruz arkadaşlar?
+
+362
+01:16:44,075 --> 01:16:54,575
+Ya impulse response'un farkı veya girişin n-1 kaydırılmış halindeki farkının konvolüsyonunu bulmuş oluyoruz arkadaşlar.
+
+363
+01:16:57,235 --> 01:17:19,536
+En önemli özelliklerinden biri de Xn ve Yn'i. Burada Yn çıkış değil artık. Xn ve Yn diye iki tane fonksiyon var diyelim. Bunların veya ayrık işaret var diyelim. Bunların yerlerinin değiştirilmesi, yani birinin sabit tutulup öbürkünün ters çevrilmesi, üzerinden geçilmesi arasında hiçbir fark yok.
+
+364
+01:17:25,235 --> 01:17:34,235
+İkili ikili konvolüsyona hangisini alırsanız alın, ondan sonra çıkan sonucu diğer ile konvolüsyonu elde ediyorsunuz.
+
+365
+01:17:34,235 --> 01:17:50,655
+İki tane ayrık işaretin toplamıyla bir z-en işaretinin konvolüsyonunu aldığınız zaman, ayrı ayrı bu işaretlerin konvolüsyonlarının toplamı da aynı sonucu veriyor arkadaşlar.
+
+366
+01:17:53,268 --> 01:17:56,268
+Şimdi ben bu kısmı anlatacağım tekrar.
+
+367
+01:17:56,268 --> 01:18:04,268
+MATLAB'te bugün sizin kullanmanızı isteyeceğim. MATLAB'te veya Python'da konvolüsyon fonksiyonumuz var.
+
+368
+01:18:04,268 --> 01:18:13,268
+X ve HM fonksiyonlarını alıyor. Daha sonra bunların üzerinde konvolüsyon yaparak size çıktıları oluşturuyor.
+
+369
+01:18:13,268 --> 01:18:17,268
+Bunu biraz dersin sonunda anlatayım size.
+
+370
+01:18:18,228 --> 01:18:41,228
+Şimdi Numerical Convolution kısmını geçelim. Stability and Impulse Response. Eğer çıkış fonksiyonunun yani Yn'in Yn çıkısının stabil, durağın olması isteniyorsa, Hn Impulse Response'unun
+
+371
+01:18:41,811 --> 01:18:49,752
+Mutlak değerlerinin toplamının sonlu bir değere varması isteniyor arkadaşlar. Yani, Aşen şu şekilde olmayacak.
+
+372
+01:18:52,752 --> 01:18:59,832
+Aşenin, burada tabii ki biz tersine de gidebiliriz şöyle.
+
+373
+01:19:00,659 --> 01:19:09,539
+Mutlak değerlerin toplamı sonlu bir değere varacak. Eğer bu sonsuza doğru gidiyorsa sonsuza, h-en finite olmayacak, infinite olacak.
+
+374
+01:19:09,539 --> 01:19:15,899
+Bize duran bir çıkış üretmeyecek.
+
+375
+01:19:15,899 --> 01:19:27,539
+Şimdi, eğer bir iki sistem x-en girişi öncelikli olarak bir h-1-en'den geçiyor.
+
+376
+01:19:27,731 --> 01:19:40,051
+Arkasından bir H2n'den geçiyorsa ve sonuç bulunuyorsa arkadaşlar bunu yapmanın kolay yolu, arada tekrar böyle konvolüsyonları hesaplamadan bulmanın yolu.
+
+377
+01:19:40,051 --> 01:19:55,011
+Önce H1 ile H2n'nin konvolüsyonunu alırsınız ve çıkan yeni H3 diyelim H3n ile beraber konvolüsyonu yaparsanız buna kaskat bağlanma diyor.
+
+378
+01:19:55,055 --> 01:20:21,055
+Cascade veya Cascade bağlanma dönüyor. Burada seri bağlamada sadece Sistem impuls cevaplarının konvolüsyonunu bulmak yeterli oluyor. Bunun aynısını şeyde de anlatmıştık hatırlarsanız, sürekli halde de anlatmıştık. Eğer sistemler birbirine paralel bağlıysa arkadaşlar,
+
+379
+01:20:22,228 --> 01:20:49,427
+Şu şekilde gördüğünüz gibi, daha sonra toplanıyorsa ve sonuç yeğeni oluşturuluyorsa, bu durumda da sadece H1 ile H2'yi toplayıp, daha sonra buna Xn ile H toplamın konvolüsyonunu almak yeterli olur. Paralel bağlı sistemlerde bu şekilde toplamsal şekilde elde edilebiliyor.
+
+380
+01:20:51,123 --> 01:21:14,564
+Buraya geçelim. Artık yavaştan hem ödevimizi anlatmaya başlayalım hem de bir soru üzerinde gidelim. Şimdi iki tane Xn girişimizle Hn
+
+381
+01:21:18,228 --> 01:21:19,847
+verilsin bize.
+
+382
+01:21:20,927 --> 01:21:22,528
+Ve bizden istenen
+
+383
+01:21:22,927 --> 01:21:24,228
+Yn
+
+384
+01:21:24,228 --> 01:21:27,228
+nedir? Impulse Response verilmiş bize.
+
+385
+01:21:27,228 --> 01:21:28,728
+Yn nedir?
+
+386
+01:21:29,028 --> 01:21:30,427
+Xn'imiz
+
+387
+01:21:32,927 --> 01:21:34,528
+eksi 1'de
+
+388
+01:21:35,228 --> 01:21:36,728
+1 değer alıyor.
+
+389
+01:21:38,427 --> 01:21:39,728
+0'da
+
+390
+01:21:40,528 --> 01:21:42,028
+2 değer alıyor.
+
+391
+01:21:42,927 --> 01:21:45,028
+1'de 0 değer alıyor.
+
+392
+01:21:46,003 --> 01:21:52,304
+Ve de 2'de de arkadaşlar, eksi bir değeri alıyor. Şöyle çizelim.
+
+393
+01:21:54,003 --> 01:21:55,403
+Eksi bir değeri alıyor.
+
+394
+01:21:57,103 --> 01:22:07,304
+Aşenimiz ise 3, 2 ve 1 değerlerini alıyor. 0, 1, 2 şeklinde.
+
+395
+01:22:08,323 --> 01:22:12,923
+Şimdi, burada bazı notları vermemiz lazım.
+
+396
+01:22:13,619 --> 01:22:20,960
+Şimdi Xn'in bulacağımız Yn fonksiyonunun özellikleri şunlar arkadaşlar.
+
+397
+01:22:22,579 --> 01:22:30,039
+Şimdi bizim bulacağımız konvolüsyon çıktısında Yn'in sınırları ne olacak?
+
+398
+01:22:31,200 --> 01:22:33,260
+Yani sınırlar ne olacak?
+
+399
+01:22:34,520 --> 01:22:36,479
+Nereden başlayacak ve nerede bitecek?
+
+400
+01:22:36,479 --> 01:22:38,039
+Eğer
+
+401
+01:22:40,340 --> 01:22:47,280
+Şöyle diyelim, LX dediğimiz X, N fonksiyonun uzunluğu olsun.
+
+402
+01:22:48,960 --> 01:22:51,540
+X'en fonksiyonun uzunluğu ne arkadaşlar?
+
+403
+01:22:52,159 --> 01:22:54,239
+1, 2, 3, 4.
+
+404
+01:22:55,340 --> 01:23:02,300
+İlk sıfırdan farklı değer aldığı yer ve son sıfırdan farklı aldığı elemanlarının arasındaki uzunluğu.
+
+405
+01:23:02,300 --> 01:23:04,300
+Yani bu 4 uzunluğunda.
+
+406
+01:23:05,060 --> 01:23:06,680
+1, 2, 3, 4.
+
+407
+01:23:07,283 --> 01:23:21,523
+4 tane değer alıyor. Yani şöyle diyelim, eğer dizi şeklinde yazacak olursak, 1, 2, 0, eksi 1 değerlerini alıyor. Length x dediğimiz zaman bu 4 olsun örneğin.
+
+408
+01:23:23,363 --> 01:23:31,163
+Length h ise kaç değer alıyor? 3, 2, 1 değerlerini alıyor. 3 olsun.
+
+409
+01:23:35,188 --> 01:23:37,688
+Her bir konvolüsyonda
+
+410
+01:23:42,963 --> 01:23:44,963
+Konvolüsyon sonucu
+
+411
+01:23:48,180 --> 01:23:55,440
+Konvolüsyon sonucu arkadaşlar, LX artı LH eksi bir uzunluğunda olur.
+
+412
+01:23:56,640 --> 01:24:02,600
+Yani bizim bulacağımız Y'nin, LY'nin uzunluğu ne olacakmış arkadaşlar?
+
+413
+01:24:04,380 --> 01:24:06,079
+Altı uzunluğunda olacakmış.
+
+414
+01:24:08,300 --> 01:24:11,120
+LX artı LH eksi bir olacakmış.
+
+415
+01:24:11,200 --> 01:24:13,579
+Peki, sınırları ne olacak bunun?
+
+416
+01:24:15,444 --> 01:24:23,204
+İlk başladığı yerdeki değerine Mx diyelim, son değerine de Nx diyelim.
+
+417
+01:24:24,064 --> 01:24:32,524
+Haşeninkine de ilk almış olduğu değer Mh, son sıfırdan farklı değer aldığı yere de Nh diyelim.
+
+418
+01:24:34,664 --> 01:24:42,944
+Bizim burada Mx'imiz ve Nx'imizi şöyle çiftler şeklinde gösterecek olursak.
+
+419
+01:24:44,148 --> 01:24:47,648
+eksi 1 ile 2 arasında değer alıyor.
+
+420
+01:24:50,007 --> 01:25:00,548
+MH ile NH ise ikili çiftler şeklinde gösterecek olursak, 0 ile 2 arasında tanımlı ise
+
+421
+01:25:00,548 --> 01:25:05,007
+MYNY
+
+422
+01:25:08,851 --> 01:25:32,251
+N, Y ise arkadaşlar, şu şekilde olacak. Şunların toplamı, MX artı, artı MH, NX artı NH yazacak olursak, eksi bir artı sıfır, eksi bir, iki artı iki, dört.
+
+423
+01:25:33,203 --> 01:25:48,823
+Demek ki bizim bulacağımız konvolüsyon çıkısı, eksi 1 ile 0, 1, 2, 3, 4, eksi 1 ile 4 arasında değerler alacak demek arkadaşlar.
+
+424
+01:25:49,283 --> 01:25:58,923
+Y, N. İki tane şey söyledik. Bakalım kaç tane değer var arasında? 1, 2, 3, 4, 5, 6. Evet, burayı sağlıyor.
+
+425
+01:25:59,891 --> 01:26:12,572
+LX'imiz neydi bizim? 4 artı 3 eksi 1, 6 uzunluklu bir dizi olacakmış. Çıktımız, YN'imiz ve hangi sınırlar arasında yer alacak?
+
+426
+01:26:14,112 --> 01:26:27,131
+İlk fonksiyonun, ilk dizinin eksi 1 ile sıfırını, ilk X'nin ve AŞ'nin sıfırdan farklı ilk değer aldığı İndislerin toplamı, yani eksi 1 ile sıfırın toplamı eksi 1.
+
+427
+01:26:28,659 --> 01:26:44,979
+Yani şurayı topluyoruz ve son sıfırdan değer aldığı, sıfırdan farklı değer aldığı indislerin toplamı, ikisi de ikide en son sıfırdan farklı değer alıyor, eksi 1 ile 4 arasında değer alacakmış. Bu iki özelliği bileceksiniz arkadaşlar.
+
+428
+01:26:46,579 --> 01:26:51,979
+Öncelikli olarak standart şeyimizi kullanalım arkadaşlar.
+
+429
+01:26:58,676 --> 01:27:24,796
+xn, hn'imizi kullanalım. Bu da ne diyordu bize? K eşittir. X sonsuzdan sonsuza kadar xk, hn-k diyordu bize. Şimdi bizim sırasıyla
+
+430
+01:27:25,332 --> 01:27:29,412
+xk ilk ne zaman sıfırdan farklı değer alacak?
+
+431
+01:27:30,752 --> 01:27:32,231
+Eksi bir de değil mi arkadaşlar?
+
+432
+01:27:32,872 --> 01:27:34,391
+x eksi biri yazalım.
+
+433
+01:27:35,332 --> 01:27:36,811
+x eksi biri çizelim önce.
+
+434
+01:27:38,752 --> 01:27:39,752
+k eşittir.
+
+435
+01:27:40,172 --> 01:27:40,792
+Şöyle yapalım.
+
+436
+01:27:40,912 --> 01:27:41,652
+k eşittir.
+
+437
+01:27:41,752 --> 01:27:42,672
+Eksi bir için.
+
+438
+01:27:44,811 --> 01:27:45,811
+Şöyle yapalım.
+
+439
+01:27:47,652 --> 01:27:50,811
+x eksi bir n'i çizelim.
+
+440
+01:27:52,020 --> 01:27:56,920
+Bu da ne işitti arkadaşlar? x'in eksi 1'de almış olduğu değer.
+
+441
+01:27:56,920 --> 01:28:01,520
+Impuls n artı 1 olsun.
+
+442
+01:28:05,108 --> 01:28:31,827
+Burada, bizim değiliz x'in mi olsun şurada, almış olduğu ilk değer şurada, eksi 1'de kaç değer alıyor arkadaşlar? 1 değer alıyor. Peki, bizim y eksi 1 enimiz ne olacak arkadaşlar?
+
+443
+01:28:34,100 --> 01:28:46,020
+x'in eksi 1'de aldığı değer, yani bu 1 değeri, artı k'nın yerine eksi 1 koyduğumuzda ne elde edeceğiz?
+
+444
+01:28:47,360 --> 01:28:51,680
+hn artı 1.
+
+445
+01:28:52,820 --> 01:28:56,820
+hn artı 1 ne olacak arkadaşlar? Bunu belki şurada çizmek lazım.
+
+446
+01:28:57,480 --> 01:28:58,760
+hn artı 1 ise şu.
+
+447
+01:29:00,159 --> 01:29:01,500
+Yana kaydırıyoruz şöyle.
+
+448
+01:29:02,387 --> 01:29:03,568
+Tavrum özür dilerim.
+
+449
+01:29:07,347 --> 01:29:27,667
+H n artı 1 dediğimizde, şunu çizmemiz lazım. H n artı 1 dediğimizde, çizeceğimiz bir ne olacak? Sola ötelenmiş hali olacak. Yani şu. 3, 2 ve 1.
+
+450
+01:29:30,707 --> 01:29:38,707
+Peki, şurada onu da çizmek lazım. İlk için çizeyim ben bunu. İlki için sadece çizeyim. Şöyle.
+
+451
+01:29:40,707 --> 01:29:56,707
+H n artı 1. Çünkü burada kullanıyoruz onu. 3, 2 ve 1 değerini alıyor. Burası ne? Eksi 1, 0 ve 1 değerini alıyor. Eksi 1 ve 0 değerini alıyor.
+
+452
+01:29:57,555 --> 01:30:13,355
+Ne yapıyor? X-1'deyken hangi değer alıyor? 1 değer alıyor. H, n artı 1 ise ne yapmış oluyor arkadaşlar? Bir solu ötelenmiş hali. Yani Y'nin eksi 1'deki hali şu şekilde çizecek olursak arkadaşlar.
+
+453
+01:30:25,492 --> 01:30:34,971
+Çizecek olursak, 3, 2 ve 1 değerini alıyorum.
+
+454
+01:30:37,012 --> 01:30:43,412
+Bunu arada çizdim şimdi arkadaşlar, göstermek için. Kaydırılmış halleri aşenleri yani.
+
+455
+01:30:43,412 --> 01:30:49,811
+Bu sefer, burada K eşittir eksi 1 için demiştim.
+
+456
+01:30:54,387 --> 01:30:55,268
+Sıfır için.
+
+457
+01:30:56,448 --> 01:30:59,528
+Hocam, iki ile bir sıfır olmayacak mı orada değer olmadığı için?
+
+458
+01:31:01,028 --> 01:31:05,847
+Hayır, bu anda çarpmıyoruz. Bu farklı. Biraz sonra farklı bir yöntemi tanıtacağım.
+
+459
+01:31:05,948 --> 01:31:14,708
+Şimdi formüldeki şeyleri anlatıyorum. İki türlü çözüm var. Bir tanesi sırasıyla bu formülde y'ni bulduğumuz kısımlar.
+
+460
+01:31:15,368 --> 01:31:21,528
+Önce k'i bulduğumuzda y-1'ni bulmuş oluyoruz. Yani y'nin eksi birdeki değerini.
+
+461
+01:31:22,260 --> 01:31:47,060
+eksi birdeki YN, yani Y-1 için bunu anladık. En sonunda bunları toplayacağız. Bir de kaydırma metoduyla ikinci bir şekilde anlatacağım. O daha kolay. Zaten onu ödev vereceğim. Bu yöntemle bulmuş olduğum sonuçla kaydırma yaparak verdiğim sonucun aynı olduğunu göstereceğim şu anda sizlere.
+
+462
+01:31:47,412 --> 01:32:02,711
+Formülizasyonda önce y-1'i, eksi 1'de almış olduğu fonksiyonun durumunu anlatıyorum. K-1 için sadece neyi kullanıyorum? K-1 ile hn artı 1'i kullandım. Bu birinci halim.
+
+463
+01:32:10,131 --> 01:32:30,111
+x, 0, n'e koydum. Burada hangi yerde değer alıyor sadece? İki değer alıyor değil mi arkadaşlar? Şöyle. İki değer alıyor. Şunu göstereyim. Peki, benim k, 0 koyduğumda h, n-k, h, n'i direkt çizeceğim.
+
+464
+01:32:31,111 --> 01:32:37,051
+h, n'in aynısıyla neyi çarpacak? y, 0, n'i çizeyim. Burada ne lazım?
+
+465
+01:32:37,488 --> 01:33:02,048
+x'in sıfırdaki değeri, ki bu 2'dir, çarpı hn'in aynısını veriyorum şu anda. Ne yapacağım? Şunları da alt alta çizeyim, en sonunda toplayacağım çünkü. Şöyle çizeyim. Bu da benim y0n'im. Burada ne yapacağım arkadaşlar? Gördüğünüz gibi
+
+466
+01:33:05,043 --> 01:33:22,144
+Aşenin kaydırılmamış hali. 3, 2, 1, 0, 1, 2, x, 1, 0, 1. Sıra geldi. K eşittir.
+
+467
+01:33:27,667 --> 01:33:35,827
+K eşittir 1 için diyorum. K eşittir 1'de kaç alıyordu? K eşittir 1'de şeye bakalım.
+
+468
+01:33:36,567 --> 01:33:41,787
+Sıfır değeri alacağı için, Aşen ile sıfırla çarpılacağı için bir anlamı yok.
+
+469
+01:33:42,527 --> 01:33:51,027
+Yani x sıfır burada çarpan olarak sıfır olarak geldiği zaman bütün Aşen fonksiyonunu sileceği için, x k eşittir 1 için
+
+470
+01:33:51,439 --> 01:33:56,439
+Sonucu çizmeme gerek yok. Direkt 2'ye atlıyorum o durumda.
+
+471
+01:33:58,439 --> 01:34:01,439
+K eşittir 2'ye geçtim. Birinde niye atladım?
+
+472
+01:34:01,439 --> 01:34:17,439
+Çünkü burada çarpan olarak x eşittir 1 için 0 geleceği için 0 çarpı en art eksi 1 olacağı için 0 çarpı yaptığım zaman bütün değerler 0 olacak. O yüzden k eşittir 2'ye geçtim.
+
+473
+01:34:17,684 --> 01:34:20,684
+K-2'de kaç değeri alıyordu arkadaşlar? Bakalım.
+
+474
+01:34:21,503 --> 01:34:22,904
+Eksi 1 değeri alıyordu.
+
+475
+01:34:23,783 --> 01:34:23,904
+Evet.
+
+476
+01:34:25,523 --> 01:34:26,884
+Şöyle hemen çizelim.
+
+477
+01:34:29,763 --> 01:34:30,523
+2'de
+
+478
+01:34:30,523 --> 01:34:33,244
+eksi 1 değeri alıyordu.
+
+479
+01:34:33,603 --> 01:34:33,984
+X
+
+480
+01:34:33,984 --> 01:34:35,703
+2'deki
+
+481
+01:34:35,703 --> 01:34:36,904
+değeri.
+
+482
+01:34:38,123 --> 01:34:39,324
+Burası da N.
+
+483
+01:34:41,203 --> 01:34:43,084
+Buradan çizelim.
+
+484
+01:34:44,500 --> 01:34:55,739
+Y2N'i çizelim. Y2N için X'in 2'deki değeri çarpı HN-2.
+
+485
+01:34:58,319 --> 01:35:02,500
+Bunu çizelim. Burası kaçtı arkadaşlar?
+
+486
+01:35:02,920 --> 01:35:07,739
+HN-2'de iki yana kaymış hali olacak.
+
+487
+01:35:12,243 --> 01:35:37,723
+Şurası 0, eksi 3, eksi 2 ve eksi 1. Burası da 2, 3 ve 4. Şimdi buradan itibaren bir toplama işlemi yapalım. Buradaki bütün değerler için x-1n, x0n,
+
+488
+01:35:38,676 --> 01:35:55,036
+x2n, ki bunu şöyle yazabiliriz, x'in sıfırdaki hali, çarpı impuls n değeri, burası ne olacak? x'in ikideki değeri çarpı impuls n-2 olacak.
+
+489
+01:35:55,036 --> 01:36:04,435
+Hepsini topladığımızda, bu bize neyi veriyor arkadaşlar? Bizim iksenimizi verecek.
+
+490
+01:36:06,836 --> 01:36:28,016
+xn yani burada kaç değeri alıyordu? 1 değeri, burada 2 değeri alıyordu, burada 0 değeri alıyordu ve de en sonunda şurada da eksi 2'deki değeri, eksi 2'deki değeri de eksi 1 değer alıyordu.
+
+491
+01:36:32,948 --> 01:36:46,748
+Burada bir toplama yapalım. Yani şurada bir toplama yapalım. Sırasıyla y-1'i, y-0 n'i ve y-2 n'i topladığımızda, arkadaşlar ilk nerede değer alacak bu?
+
+492
+01:36:50,644 --> 01:36:51,583
+Şöyle yapalım.
+
+493
+01:36:53,684 --> 01:37:00,463
+İlk aldığı değer ne bunun? 3. Kaçta? Eksi 1'de. Eksi 1'de başka değer var mı altındakilerde?
+
+494
+01:37:01,903 --> 01:37:08,104
+Eksi 1'de yok. İlk değeri o yüzden bunun 3.
+
+495
+01:37:09,983 --> 01:37:17,304
+Sonra sıfırdaki değerleri toplayalım. 2, 3, 5. Burada da sıfır var.
+
+496
+01:37:18,163 --> 01:37:19,543
+İkinci alacağım değer
+
+497
+01:37:19,543 --> 01:37:21,503
+5
+
+498
+01:37:28,756 --> 01:37:30,756
+V0N'de
+
+499
+01:37:32,756 --> 01:37:37,756
+Her iki ile çarpmamız lazım. Evet, iyi hatırlattın onu. Doğru söyledin.
+
+500
+01:37:37,756 --> 01:37:45,756
+Burada bu değer 2 olduğu için burası 6, burası 4, burası da 2.
+
+501
+01:37:45,756 --> 01:37:52,756
+Hatırlattığın için teşekkür ediyorum. Hangi arkadaşımız hatırlatmıştı göremedim.
+
+502
+01:37:52,756 --> 01:37:55,756
+Evet, dikkatli dinleyicin için teşekkürler [öğrenci].
+
+503
+01:37:56,500 --> 01:38:01,779
+Burada 2 ile çarpıyorduk. Özür dilerim onu tekrar hesaplamamız lazım.
+
+504
+01:38:05,140 --> 01:38:07,779
+Burada 6 değerimiz var bizim.
+
+505
+01:38:09,940 --> 01:38:13,619
+Evet, şu değeri ona göre güncelleyelim.
+
+506
+01:38:13,619 --> 01:38:14,619
+Şöyle.
+
+507
+01:38:16,060 --> 01:38:20,460
+6, 2 daha.
+
+508
+01:38:20,800 --> 01:38:25,800
+Bizim, şurayı böyle sileyim. Güzelce, 8 çünkü biraz daha uzakta.
+
+509
+01:38:28,000 --> 01:38:30,800
+Şurada, 8.
+
+510
+01:38:31,500 --> 01:38:32,800
+Sıfırda,
+
+511
+01:38:35,399 --> 01:38:37,000
+8 değerini alıyor.
+
+512
+01:38:38,100 --> 01:38:43,399
+Ondan sonra, 1'de ne var? 1, artı 4, 5.
+
+513
+01:38:47,188 --> 01:38:48,688
+Burada 5 değeri alıyor.
+
+514
+01:38:50,027 --> 01:38:53,228
+Ondan sonra, 2'de ne değeri alıyor?
+
+515
+01:38:53,427 --> 01:39:06,427
+Burada 0, burada 2, 2-3'de, 2-3'de, 2-3'de, eksi 1, 2'de, eksi 1 değer alıyor.
+
+516
+01:39:08,067 --> 01:39:10,947
+3'e gelelim. Artık bunlar 3'te değer almıyorlar.
+
+517
+01:39:12,367 --> 01:39:13,547
+Eksi 2 ve eksi 1.
+
+518
+01:39:14,420 --> 01:39:40,579
+eksi 2 ve eksi 1 değerleri alıyor. İndisler neler? Eksi 1, 0, 1, 2, 3 ve 4. Bakın arkadaşlar ne demiştik? Yen hangi değerler arasında yer alacaktı? Eksi 1 ile 4 arasında. Doğru mu? Bak bu yaptığım konvolüsyon formülüne göre alt alta, teker teker.
+
+519
+01:39:41,171 --> 01:39:48,671
+Oradaki konvolüsyon formülünü açık açık yazıp en sonunda topladım. Yani şu sigma işlemini yaptım ben şurada aslında.
+
+520
+01:39:50,491 --> 01:39:53,111
+Şimdi bunun kolay yolunu öğreteceğim size.
+
+521
+01:39:56,051 --> 01:40:02,331
+Şimdi, eksi 1 ile 4 arasında mı? Evet, eksi 1 ile 4 arasında değerler aldı.
+
+522
+01:40:03,347 --> 01:40:21,748
+Dediğim gibi bu uzun yolu, formülü teker teker kaydırılmış halleriyle x'in genliklerini çarpa çarpa, Aşe'nin almış olduğu yani impulsun o sırasıyla şunlara vermiş olduğu cevapları buluyorum, onları taraf tarafa topluyorum. Bunu buldum.
+
+523
+01:40:21,748 --> 01:40:29,168
+Şimdi daha kolay bir yöntemi var bunun. Benim ikinci yol.
+
+524
+01:40:30,355 --> 01:40:34,507
+Kaydırma
+
+525
+01:40:38,131 --> 01:40:45,952
+Şimdi ödeviniz buradan başlıyor arkadaşım. Buradan itibaren ödevi dinleyelim. Ödev bir konvolüsyon.
+
+526
+01:40:51,091 --> 01:40:53,091
+Karı yönden buna.
+
+527
+01:40:54,292 --> 01:40:56,292
+Evet, buradan itibaren dikkat dinleyelim.
+
+528
+01:40:57,792 --> 01:41:01,792
+Bizim, biraz daha kalın yapayım.
+
+529
+01:41:02,731 --> 01:41:03,731
+İki tane.
+
+530
+01:41:07,091 --> 01:41:18,612
+fonksiyonumuz var. Size iki tane xm ve hm fonksiyonu veriliyor. İlkinin elemanları
+
+531
+01:41:21,844 --> 01:41:48,003
+1, 2, 0 ve eksi 1. Başlangıç değeri eksi 1 ile 2 arasında değer alıyor bu. Aşeniniz ise 3, 2 ve 1 değerlerini alıyor.
+
+532
+01:41:49,971 --> 01:41:53,391
+Bu da arkadaşlar sıfırla iki arasında değer alıyor.
+
+533
+01:41:53,911 --> 01:41:58,631
+Bir kere, bu kaydırma yönteminde şunu bilmeniz lazım arkadaşlar.
+
+534
+01:42:01,351 --> 01:42:04,951
+Başlangıç ve bitişlerin nerede olacağını bilmeniz lazım.
+
+535
+01:42:05,571 --> 01:42:08,291
+Eksi bir ile sıfırı toplayacaksınız.
+
+536
+01:42:09,011 --> 01:42:10,591
+Eksi bir ile başlayacak sonuç.
+
+537
+01:42:10,591 --> 01:42:11,471
+Y.
+
+538
+01:42:13,911 --> 01:42:15,971
+2 artı 2.
+
+539
+01:42:18,292 --> 01:42:20,731
+1, 2, 3, 4.
+
+540
+01:42:21,731 --> 01:42:24,672
+Eksi 1 ile 4 arasında sonuçları vereceğiz.
+
+541
+01:42:26,152 --> 01:42:29,712
+Şimdi, bunu biliyoruz.
+
+542
+01:42:30,752 --> 01:42:36,472
+Zaten hesabımıza bakacağımızda da, LX, LY.
+
+543
+01:42:37,472 --> 01:42:39,832
+Burada kaç? LX, 1, 2, 3, 4.
+
+544
+01:42:40,851 --> 01:42:42,692
+LY, pardon, LH kaç?
+
+545
+01:42:43,444 --> 01:42:57,264
+3, 4 artı 3 eksi 1, 6 uzunluklu olacak. Doğru, 1, 2, 3, 4, 5, 6 uzunluklu. İndislerde iki dizinin başlangıç ve bitiş indislerinin toplamı şeklinde verildi.
+
+546
+01:42:57,264 --> 01:43:09,724
+İlk yaptığım, temelde yaptığımız işlem şu arkadaşlar. İlk dizinin, önce Aşendis'i tersine çevriliyor. Şöyle.
+
+547
+01:43:13,395 --> 01:43:14,395
+Şöyle
+
+548
+01:43:17,395 --> 01:43:18,395
+3
+
+549
+01:43:20,395 --> 01:43:21,395
+2
+
+550
+01:43:22,395 --> 01:43:23,395
+ve 1
+
+551
+01:43:25,595 --> 01:43:26,595
+Şurası
+
+552
+01:43:27,195 --> 01:43:28,595
+eksi k diyelim.
+
+553
+01:43:29,395 --> 01:43:30,395
+Bu çizdiğimiz
+
+554
+01:43:30,996 --> 01:43:32,395
+h
+
+555
+01:43:32,796 --> 01:43:35,595
+n-k'nın
+
+556
+01:43:36,796 --> 01:43:37,996
+genel çözümü.
+
+557
+01:43:38,796 --> 01:43:40,779
+Dikkat edin, burada k
+
+558
+01:43:41,395 --> 01:43:55,395
+K'yı biliyorsunuz K'yı verdiğimiz değer olarak tersine çevirdiğimizde en kadar kaydırabiliyoruz.
+
+559
+01:43:58,771 --> 01:44:00,771
+H, şurası,
+
+560
+01:44:02,271 --> 01:44:04,271
+Şurasını tekrar çizeyim.
+
+561
+01:44:07,667 --> 01:44:34,287
+Şurası n, şurası n-1, şurası n-2 olmak üzere, şurası da n diyeyim, şöyle n, pardon k eksenine göre çiziyorum. Önce h-k'yı çizdiğimde h-k'da ne olacak arkadaşlar önce? Bu tersine dönmüş olacak. Bu h-k'da. Yani şuradaki h-n'e göre.
+
+562
+01:44:34,804 --> 01:44:59,703
+Çizdiğimde. Başına N eklersem, N miktar sola kaymış olacak. Şimdi, bizim yapacağımız işlem burada şu arkadaşlar. Bunu, HN-K'yı yavaşça buraya doğru, sağ tarafa doğru kaydırmaya başlıyoruz arkadaşlar. HN-K'yı.
+
+563
+01:45:00,564 --> 01:45:20,623
+Şimdi ben silerek yapacağım bunu. Gördüğünüz gibi h n-k'yı çizdim. n değerine göre örneğin n'in ilk alacağı değer burada h eksi 1'deki haline bir getireyim bunu. 1 eksi k'daki haline getireyim. Tamam mı arkadaşlar?
+
+564
+01:45:21,364 --> 01:45:27,364
+İlk çarpışacağı yerler bunun n eşittir eksi 1 için değer alacak. Öyle değil mi?
+
+565
+01:45:27,859 --> 01:45:34,979
+n burası eksi 1'e geldiğinde nasıl bir görünüme sahip olacak? Yapacağımız değer şu.
+
+566
+01:45:39,475 --> 01:45:41,975
+Hemen aynı şekilde çiziyorum.
+
+567
+01:45:44,075 --> 01:45:46,555
+Bası K, A, A,
+
+568
+01:45:47,555 --> 01:45:52,195
+eksi 1, eksi K'yı çiziyorum.
+
+569
+01:45:53,675 --> 01:45:54,375
+Bu durumda
+
+570
+01:45:54,375 --> 01:46:01,535
+3, 2 ve 1.
+
+571
+01:46:03,215 --> 01:46:05,895
+Arkadaşlar, nerelerde değer alacak?
+
+572
+01:46:06,287 --> 01:46:32,647
+eksi 1'de, yani ilk alacağı değer bunun, tabii ki çarpıp toplama yapıyorum burada bu yapacağım işlem. 3 çarpı 2, yani şuraya yazıyorum onu da, Y eksi 1 eşittir, X eksi 1 çarpı,
+
+573
+01:46:35,155 --> 01:46:37,555
+Neyi çizmiş oluyorum ondan sonra?
+
+574
+01:46:38,216 --> 01:46:39,376
+H
+
+575
+01:46:39,855 --> 01:46:43,175
+eksi bir eksi k'yı çiziyorum.
+
+576
+01:46:43,775 --> 01:46:44,775
+Değil mi?
+
+577
+01:46:45,336 --> 01:46:50,015
+K da eksi bir değerini, pardon, eksi bir eksi k.
+
+578
+01:46:50,015 --> 01:46:52,296
+İlk hali o olmuş olur.
+
+579
+01:46:52,296 --> 01:46:54,296
+Eksi bir eksi k'yı çizdiğimde
+
+580
+01:46:54,735 --> 01:46:55,735
+bana
+
+581
+01:46:57,175 --> 01:46:59,175
+1 çarpı
+
+582
+01:47:00,627 --> 01:47:09,347
+3 eşittir 3. Demek ki benim ilk alacağım değer, eksi 1'de 3'müş.
+
+583
+01:47:14,228 --> 01:47:30,008
+İkinci çizeceğim fonksiyon arkadaşlar, bu sefer y-1 için çizmiştim bunu. Bu y eşittir eksi 1 için.
+
+584
+01:47:33,248 --> 01:47:37,948
+Özür dilerim ben burada n eşittir eksi 1 için diyecektim.
+
+585
+01:47:42,963 --> 01:47:54,963
+Dedim ya, fonksiyon h n-k sol taraftan sağ tarafa kaydılıyor. Bir sonraki kaydırıldığı kısımda ne olacak arkadaşlar? 3 buraya gelecek.
+
+586
+01:47:54,963 --> 01:48:06,859
+3 buraya gelecek. Bu sefer n eşittir. 0 için yapıyorum. 3 buraya gelecek.
+
+587
+01:48:12,275 --> 01:48:14,275
+3 buraya gelecek.
+
+588
+01:48:16,875 --> 01:48:19,875
+2 bunun altına gelecek.
+
+589
+01:48:20,715 --> 01:48:26,355
+Ve şöyle biraz daha şey yapayım. 3, 2, 1.
+
+590
+01:48:27,375 --> 01:48:28,811
+Şöyle yapayım.
+
+591
+01:48:36,180 --> 01:48:38,180
+Şurayı da çizleyeyim.
+
+592
+01:48:38,180 --> 01:48:44,180
+H-K haline gelmiş oldu.
+
+593
+01:48:44,180 --> 01:48:48,180
+N sıfır olduğu için arkadaşlar, N-K idi ya.
+
+594
+01:48:48,180 --> 01:48:52,180
+Ondan sonra burası da 3 olsun.
+
+595
+01:48:52,180 --> 01:48:56,180
+Şimdi, N eşittir.
+
+596
+01:48:56,180 --> 01:48:58,180
+Burada,
+
+597
+01:48:58,804 --> 01:49:16,304
+n eşittir, eksi 1 için bulmuştum. n eşittir, 0 için buluyorum. y, 0'ın değerini nasıl bulacağım? x, bakın burada çakışanlar neler?
+
+598
+01:49:18,203 --> 01:49:25,203
+eksi 1'deki değerler çarkışıyor. bir de 0'daki değerler çakışıyor.
+
+599
+01:49:25,716 --> 01:49:31,956
+x-1 çarpı, yani bunun direkt değerlerini yazayım.
+
+600
+01:49:33,956 --> 01:49:47,016
+Şöyle, burada değer için, x-1'deki 2 çarpı 1 artı, burada da 3 ile 2 çarpılıyor.
+
+601
+01:49:47,576 --> 01:49:48,636
+3 çarpı 2.
+
+602
+01:49:49,776 --> 01:49:53,036
+Yani, birbirliğinin kaydırdığımda,
+
+603
+01:49:53,427 --> 01:50:19,307
+Birbirlerine değen İndislerin değenleri çarpılıp toplanıyor. 3x2, 3x2, 6. Eksi 1'de de 2x1 var. Toplam kaç etmiş oluyor? 8. Yani benim şuraya çizeceğim n0'da almış olduğu değer 8.
+
+604
+01:50:22,003 --> 01:50:29,003
+Bunun bir adım sonrasında ne yapıyorum arkadaşlar? Bu sefer n eşittir 1 için.
+
+605
+01:50:29,003 --> 01:50:44,939
+n eşittir 1 için. Bu sefer benim 3 değerim nereye geliyor? 1'e geliyor. Şuraları silmem lazım. Şöyle.
+
+606
+01:50:50,355 --> 01:51:17,355
+Burası 3'tü, burası 2, ve eksi 1'de de ne var? 1 var. Şimdi nereler çapışıyor burada gördüğünüz gibi? Eksi 1'deki değerler çapışıyor. Sıfırda değerler var ve de 3 ile 0 çarpılıyor şurada. 1'deki değerler. Buna baktığımda
+
+607
+01:51:17,652 --> 01:51:44,032
+Benim, n eşittir 1 için, y 1 diyeyim. Neler var arkadaşlar? 3 çarpı 0 artı 2 çarpı 2, 2 çarpı 2 artı 1 çarpı 1. Sonuç ne? 4 artı 1, 5. Demek ki benim
+
+608
+01:51:45,203 --> 01:51:48,203
+Birdeki en eşitir bir için değerim
+
+609
+01:51:50,503 --> 01:51:51,703
+5'miş
+
+610
+01:51:54,403 --> 01:51:58,304
+Bir sonraki adımımda arkadaşlar, bir sağa doğru daha kayıyorum.
+
+611
+01:51:59,603 --> 01:52:02,804
+Bu sefer, şurayı sileyim
+
+612
+01:52:11,507 --> 01:52:13,387
+Tüm evi Asyliye.
+
+613
+01:52:17,908 --> 01:52:21,988
+Bir sağa kaydığımda arkadaşlar, şurada
+
+614
+01:52:23,148 --> 01:52:24,148
+3
+
+615
+01:52:27,347 --> 01:52:33,347
+Şurası 3, 2'deki, bunu şöyle yapayım.
+
+616
+01:52:37,747 --> 01:52:38,747
+3
+
+617
+01:52:41,028 --> 01:52:42,028
+2
+
+618
+01:52:43,547 --> 01:52:44,547
+ve 1
+
+619
+01:52:46,827 --> 01:52:51,868
+Nerede arkadaşlar bunlar şey yapıyor? Üst üste binmişler. Burada var.
+
+620
+01:52:52,747 --> 01:52:53,868
+Burada var.
+
+621
+01:52:54,347 --> 01:52:55,347
+Ve burada.
+
+622
+01:52:56,827 --> 01:52:57,948
+Ve burada var.
+
+623
+01:53:13,876 --> 01:53:18,676
+Burada yanlış mı yaptık? 3x0 demiştik. Hayır. Tamamdır.
+
+624
+01:53:20,475 --> 01:53:28,076
+Bundan sonra alacağı değer n eşittir. 2 için yapacağımızda y eşittir. 2'yi hesaplıyoruz.
+
+625
+01:53:30,315 --> 01:53:35,876
+Şimdi benim burada alacağım ilk değer burası kaçtı arkadaşlar? Eksi 1 idi değil mi?
+
+626
+01:53:36,556 --> 01:53:41,076
+Neler şey yapıyor? 2'deki değerinden bahsedelim.
+
+627
+01:53:43,380 --> 01:53:45,380
+3 çarpı
+
+628
+01:53:47,880 --> 01:53:48,880
+benim
+
+629
+01:53:50,180 --> 01:53:51,320
+çarpı sıfır
+
+630
+01:53:52,860 --> 01:53:55,420
+3 çarpı eksi 1
+
+631
+01:53:55,659 --> 01:53:56,699
+şurada
+
+632
+01:53:57,460 --> 01:54:00,619
+2 ile sıfır çarpıldığı zaman artı 2
+
+633
+01:54:00,619 --> 01:54:02,940
+artı 2 çarpı sıfır
+
+634
+01:54:03,900 --> 01:54:04,900
+ve de
+
+635
+01:54:05,020 --> 01:54:06,520
+1 çarpı 3
+
+636
+01:54:10,003 --> 01:54:11,144
+eksi 3
+
+637
+01:54:14,707 --> 01:54:16,707
+1x2, özür dilerim şurası.
+
+638
+01:54:21,427 --> 01:54:36,787
+1 çarpı 2, eksi 3, artı 2, eksi 1. Demek ki benim 2'de, kaç koyayım? Eksi 1 değerine oluyor.
+
+639
+01:54:38,627 --> 01:54:42,988
+Bir sonra kaydırdığımda ise arkadaşlar, adım adım gidiyorum şimdi.
+
+640
+01:54:44,768 --> 01:54:47,287
+Bunu da çiz, kaldırayım. Şöyle.
+
+641
+01:54:52,372 --> 01:54:58,612
+Artık benim 3'üm burada olacak.
+
+642
+01:55:00,872 --> 01:55:04,311
+2'de 2 değerim olacak.
+
+643
+01:55:06,032 --> 01:55:09,292
+1'de ise 1 değerim olacak.
+
+644
+01:55:13,043 --> 01:55:16,043
+Hangileri şu anda temas halinde?
+
+645
+01:55:17,503 --> 01:55:19,384
+Birdekiler temas halinde.
+
+646
+01:55:21,304 --> 01:55:26,663
+X'ende 1 var ama, 1'de 0 var ama, başka bir değer olsaydı çarpılacaktı.
+
+647
+01:55:27,123 --> 01:55:29,923
+Ve de 2'de de şurada bir temas halindeler.
+
+648
+01:55:31,923 --> 01:55:36,863
+Bu durumda n eşittir 3 için sonucu buluyoruz.
+
+649
+01:55:37,460 --> 01:55:40,859
+n eşittir 3 için y3 değerimiz
+
+650
+01:55:40,859 --> 01:55:43,619
+ne diyoruz?
+
+651
+01:55:44,659 --> 01:55:48,059
+0 çarpı 1 artı
+
+652
+01:55:48,059 --> 01:55:50,979
+2 çarpı eksi 1
+
+653
+01:55:50,979 --> 01:55:53,960
+eşittir eksi 2
+
+654
+01:55:53,960 --> 01:55:56,039
+demek ki benim
+
+655
+01:55:56,039 --> 01:56:01,479
+2 dedik buraya, buraya 3 diyelim
+
+656
+01:56:01,479 --> 01:56:03,659
+3'teki değerim
+
+657
+01:56:04,435 --> 01:56:06,188
+eksi 2'müş
+
+658
+01:56:09,716 --> 01:56:12,476
+Bir sefer daha kaydırayım bunu.
+
+659
+01:56:13,615 --> 01:56:16,876
+Bir sefer daha kaydırayım. Şöyle.
+
+660
+01:56:19,716 --> 01:56:23,276
+Bu durumda arkadaşlar, artık yavaş yavaş sona geliyoruz.
+
+661
+01:56:24,155 --> 01:56:25,132
+Bir.
+
+662
+01:56:29,108 --> 01:56:31,427
+Artık 2'de 1 var.
+
+663
+01:56:33,587 --> 01:56:55,108
+Burada hangi değer var? 2 ve 3. Artık buraların indisi 3, 4 filan onları yazmıyorum. Artık sadece 2'de 1 üst üste binme, aynı indisde olma durumu var. O da 2 çarpı eksi 1.
+
+664
+01:56:58,068 --> 01:57:01,367
+Pardon, 1 çarpı eksi 1.
+
+665
+01:57:02,927 --> 01:57:07,047
+N eşittir 4 için, y eşittir 4.
+
+666
+01:57:08,568 --> 01:57:11,948
+1 çarpı eksi 1, o da eksi 1'e eşit.
+
+667
+01:57:15,859 --> 01:57:30,300
+Burada da 4 için, 4 için, 4 için, 4 için, eksi 1.
+
+668
+01:57:34,355 --> 01:57:58,115
+Böylece arkadaşlar, neye geldik? Sonucu bulduk. İlk yaptığım sonuca bir bakayım. 3, 8, 5. Şununla şu birbirine eşit mi? Bakıyorum eşit. Demek ki iki türlü de bulunabilirmiş.
+
+669
+01:57:58,739 --> 01:58:21,659
+Burada, aşenin kaymış halleriyle x'eni çarparak buldum. Burada ise, biraz daha kolay bir yöntemden yola çıktım. Önce ikinci fonksiyonu, yani aşı eksi k yapıp, sonsuzdan buraya doğru getirdim. Her adımda, bir adımda kaydıra kaydıra, ilk değer aldığı yerlerde 3 ile 1'i çarptım.
+
+670
+01:58:22,100 --> 01:58:34,400
+3'ü buldum. Ondan sonra bir daha kaydım. Yani şu halde ilk, şu halde durdurdum. 3, 2, 1. Ondan sonra teker teker her bir seferini bir kaydırarak neyi bulmuş oldum arkadaşlar?
+
+671
+01:58:35,640 --> 01:58:47,140
+Teker teker Y'nin elemanlarını bulmuş oldum. Burada şuna dikkat ediyorum arkadaşlar. Her kaydırdığımda ilgili İndis ile ilgili İndis'teki
+
+672
+01:58:47,604 --> 01:58:58,984
+Genlik değerlerini çarpmış oldum. Sonuçta aynı şeyi bulmuş oldum. Bu da kaydırma yöntemi arkadaşlar. Ben sizden şunu istiyorum. Bu anlaşıldı mı önce onu sorayım.
+
+673
+01:59:00,123 --> 01:59:01,684
+Hocam bir şey sorabilir miyim?
+
+674
+01:59:01,984 --> 01:59:02,203
+Tabii.
+
+675
+01:59:02,203 --> 01:59:10,884
+Siz en başta denklem yazarken kaydırdınız ya HN-K'yı çizdim dediniz. O aslında HK-N değil miydi?
+
+676
+01:59:12,948 --> 01:59:37,028
+HN'i ters çevirip sola ötelediniz ya. Hayır, hayır. Mesela şurada H, şu ya, HN bu ya. Evet. HN. Eksi N desem ben buna ne olacak? Ters çevirilecek. 3, 2, 1. Aynen. Peki H, eksi K desem, ama bu in ise K desem.
+
+677
+01:59:38,452 --> 01:59:39,931
+Yine aynısı olacak.
+
+678
+01:59:40,231 --> 01:59:42,132
+Yine aynısı olacak, öyle değil mi?
+
+679
+01:59:42,632 --> 01:59:50,692
+Ondan sonra H, N-K desem, buraya da K aynısı desem, ne olacak?
+
+680
+01:59:51,152 --> 01:59:56,332
+Artık N'ye vermiş olduğum değerlere göre bunu sağa sola kaydırıyorum demektir.
+
+681
+01:59:56,332 --> 01:59:56,811
+Anladım.
+
+682
+01:59:56,891 --> 01:59:57,992
+Yani bir verdiğim zaman.
+
+683
+01:59:58,572 --> 02:00:00,332
+Ya zaten amacımız da o değil mi?
+
+684
+02:00:00,511 --> 02:00:02,832
+Denklemdeki o şeyden yararlanıyorum ben.
+
+685
+02:00:03,652 --> 02:00:04,268
+Hani...
+
+686
+02:00:04,275 --> 02:00:11,996
+Sırasıyla sen eğer K değişkeni yapıyorsan, N'yi aslında XK'nın üzerini kaydırıp çarpıyorum sırasıyla.
+
+687
+02:00:11,996 --> 02:00:18,296
+K'ya değer verdiğim, N'ye değer verdiğim zaman sırasıyla N'nin elemanlarını bulmuş olurum.
+
+688
+02:00:18,496 --> 02:00:24,796
+Burada ise K'yı değiştirerek, pardon burada N'yi değiştirerek yapmış, K'yı değiştiriyordum.
+
+689
+02:00:25,475 --> 02:00:28,775
+Burada ise N'yi değiştirerek aynı işlemi yapıyorum.
+
+690
+02:00:29,492 --> 02:00:30,591
+Kaydırma da.
+
+691
+02:00:30,591 --> 02:00:40,011
+Geçen hafta sürekli de, dediğim gibi yapmıştınız da, ben gün aynısını yaptım, ama siz sadece değişkenleri şey yapmışsınız, farklı kullanmışsınız.
+
+692
+02:00:40,391 --> 02:00:44,591
+Evet, evet, farklı kullandım. Orada T falan kullanmışımdır belki, şu an tam hatırlayamıyorum ama.
+
+693
+02:00:44,591 --> 02:00:46,372
+Evet hocam, T ile TO kullandınız.
+
+694
+02:00:46,532 --> 02:00:55,492
+Evet, evet, onu kullanmışımdır. Şimdi benim istediğim sizden, bu basit, yani ikinci yöntemi yazılımsal olarak sizin gerçekleştirmeniz.
+
+695
+02:00:56,532 --> 02:01:00,212
+MyCon işlemini gerçekleştirmemiz.
+
+696
+02:01:01,832 --> 02:01:09,532
+X dizisini vereceksiniz, H dizisini vereceksiniz ve bana bunun sonucunda Y dizisini verecek.
+
+697
+02:01:09,672 --> 02:01:14,131
+Tabi ki, programsal olarak bunu yapmak biraz zorlu.
+
+698
+02:01:14,712 --> 02:01:20,212
+Niye? Çünkü X dizisini verdiğinizde X'e örneğin şunu girebiliyorsunuz.
+
+699
+02:01:20,212 --> 02:01:23,631
+1, 2, 0 ve eksi 1.
+
+700
+02:01:24,051 --> 02:01:29,551
+Aşağı neye gireceksiniz? Dizi olarak. 3, 2, 1. Eksiğimiz ne burada?
+
+701
+02:01:34,036 --> 02:01:36,856
+Y'ni düzgün çizmek istiyorsak, eksiğimiz ne?
+
+702
+02:01:39,676 --> 02:01:41,336
+İndisleri tutmuyoruz galiba.
+
+703
+02:01:41,576 --> 02:01:45,615
+Evet, indisleri tutmuyoruz. Ayrıca indisleri istememiz lazım.
+
+704
+02:01:46,256 --> 02:01:51,195
+MX, NX şeklinde bunları da istetmemiz, vermemiz lazım.
+
+705
+02:01:51,396 --> 02:01:59,136
+Yani kaçta kaç arasındaydı o? Eksi 1 ile 2 arasında. Eksi 1, 2. Bunu da istememiz lazım.
+
+706
+02:01:59,836 --> 02:02:01,396
+MH, NH.
+
+707
+02:02:01,971 --> 02:02:15,371
+Bunu da başlangıç ve bitiş halinde 0-2 arasında incelememiz lazım ki, ben bu çizdiğim fonksiyonu düzgün bir şekilde çizdireyim. Ben sizden ne istiyorum ödevde?
+
+708
+02:02:15,371 --> 02:02:29,171
+Önce şöyle bir ikseni güzel çizdirin. Dörde bölün tabloyu. Zannedersem MATLAB'de de Python'da da Subplot.
+
+709
+02:02:29,908 --> 02:02:33,228
+Komutu burada kullanılabilir. İpucı size.
+
+710
+02:02:34,768 --> 02:02:38,347
+Ve de HN kullanabilirsiniz.
+
+711
+02:02:40,148 --> 02:02:43,467
+Burada belki size şöyle bir yardımım bulunabilir.
+
+712
+02:02:53,332 --> 02:02:55,012
+Bir bağlansın bakalım.
+
+713
+02:03:00,020 --> 02:03:10,820
+Bir de biz burada arkadaşlar, sistem fonksiyonunu kullanıyorduk. Yani şu şekilde çizdirebilmek için fonksiyonu, sistem fonksiyonu kullanıyorduk.
+
+714
+02:03:10,820 --> 02:03:15,820
+Ben dersen Python'da da aynı şekilde.
+
+715
+02:03:20,595 --> 02:03:38,595
+Size bir ipucu vereceğim burada. Şimdi benim xn fonksiyonum ne? xn fonksiyonum metleti şöyle verebiliyorum.
+
+716
+02:03:48,532 --> 02:03:54,532
+verdim diyelim. Şimdi ben bunu Sistem X diye çizersem
+
+717
+02:03:58,612 --> 02:04:26,152
+Sistem X diye çizersem, bana şunu verecek. Yani 0'da 1, 2'de eksi 2, ondan sonra birdeki değeri, pardon, 3'de 0, 4'de eksi 1 değeri alan bir fonksiyon çizilecek. Bu benim istediğim bir şey değil. Şöyle bir şey yapabiliyorum arkadaşlar. Örneğin başlangıç ve bitiş indislerini verdirsem şöyle.
+
+718
+02:04:26,899 --> 02:04:36,899
+Yani bu neyden başlıyordu? Eksi birden başlıyordu. İki noktayı sütte koyduğum zaman sırasıyla şunu öğretecek. Eksi birden ikiye kadar gidiyordu.
+
+719
+02:04:36,899 --> 02:04:50,899
+Yani burada ne yaptı aslında? n'e eksi bir, bir arttırarak başlangıç eksi bir sonunu verdim. Teker teker arttırdı o değerleri. Şöyle yaptığınızda sitem fonksiyonunu kullanmıştım ya.
+
+720
+02:04:51,152 --> 02:05:17,872
+n virgül x dediğimde bu sefer indisleri doğru ayarlıyor. Bakın, bu sefer eksi birden başlattı. Gördün mü? Bu şekilde çizdirmenizi istiyorum. Yani indis değerlerim doğru olacak benim. Doğru indislerle olacak. Subplot dediğim zaman, o subplot zannedersem şeyde de kullanılıyor. Arkasından y n'i çizeceksiniz.
+
+721
+02:05:20,692 --> 02:05:26,292
+Ama bu myconv, sizin yazdığınız fonksiyon olacak.
+
+722
+02:05:26,992 --> 02:05:33,492
+Burada da tekrar y'ni çizdireceksiniz ama builtin function'larla
+
+723
+02:05:35,392 --> 02:05:44,292
+Yani conv, metlab'in veya x'i ve h'i vereceksiniz, builtin function'unu vereceksiniz.
+
+724
+02:05:45,619 --> 02:06:07,380
+Şimdi başlangıç ve bitiş değerleri burada da belli değil. Mesela bunu da tekrar indisini ayarlamanız lazım. Bakın, eksi bir. Aşı da değer verelim. Bakın nasıl vuruyormuş bu? Aş, bu da Metlab'de. Bunun şeyini vermiştim değil mi? Metlab'le alakalı bir çalışma dökümanı vermiştim değil mi?
+
+725
+02:06:08,724 --> 02:06:09,324
+3
+
+726
+02:06:09,324 --> 02:06:12,784
+tamam aşı da verdim
+
+727
+02:06:12,784 --> 02:06:14,304
+bakın şöyle yapıyoruz
+
+728
+02:06:14,304 --> 02:06:15,064
+kon
+
+729
+02:06:15,064 --> 02:06:18,784
+y eşittir
+
+730
+02:06:18,784 --> 02:06:20,244
+kon
+
+731
+02:06:20,244 --> 02:06:24,083
+x virgül
+
+732
+02:06:24,083 --> 02:06:25,623
+h dediğim zaman bakın
+
+733
+02:06:26,068 --> 02:06:52,068
+verdiğimiz örneğin aynısını çözecek bize. 3, 8, 5, eksi 1, eksi 2, eksi 4. Tabi bu sadece genlik değerlerini kullandı. Bana ne vermişti normalde? Giriş çıkış değerlerinin ne ile ne arasında olacaktı? n eşittir, eksi 1 ile 4 arasındaydı değil mi? O zaman şöyle çizdireceğim bunu.
+
+734
+02:06:56,180 --> 02:06:59,500
+n, y
+
+735
+02:06:59,500 --> 02:07:03,340
+çizdirdiğimde, bakın,
+
+736
+02:07:03,340 --> 02:07:05,659
+eksi birden başlıyor,
+
+737
+02:07:05,659 --> 02:07:08,300
+8 değer alıyor, 5 değer alıyor,
+
+738
+02:07:08,900 --> 02:07:11,279
+böylece çizdim. Amacım benim burada,
+
+739
+02:07:12,440 --> 02:07:15,380
+size kendi yazdığınız konvolüsyon fonksiyonuyla,
+
+740
+02:07:16,640 --> 02:07:19,539
+ondan sonra bu iltin fonksiyonun aynı olduğunu,
+
+741
+02:07:20,039 --> 02:07:22,119
+tek bir pencerede gösterdirebilmek.
+
+742
+02:07:22,612 --> 02:07:29,011
+Bir de şöyle bir şey yapmak istiyorum. X ve Aş dizileri veriyorsunuz. Sadece bir örnek için yapmayın.
+
+743
+02:07:29,951 --> 02:07:36,192
+Örneğin, eksi de başlayan şöyle bir fonksiyon verin. Öbürki Aş'ta olsun şöyle.
+
+744
+02:07:37,112 --> 02:07:46,531
+Farklı başlangıç ve bitiş, eksili ve artılı olmak üzere farklı başlangıç bitiş yerlerine sahip 3 tane örnek.
+
+745
+02:07:49,376 --> 02:08:16,316
+3 tane X ve AŞ dizisinin herkes farklı yapacak. Önce pdf sayfası, bir de kodunu yazar. Arkasındaki sayfaları da örnek 1, örnek 2, örnek 3. Onu da hemen tanımlayalım. Hiç geciktirmeyelim şöyle. Anında ödevi verelim.
+
+746
+02:08:19,155 --> 02:08:23,755
+Şöyle verelim, yeni diyelim, bakalım bize 60'mi Sistemden.
+
+747
+02:08:25,035 --> 02:08:33,555
+Ödebir konvolüsyon ödevi olsun, değerlendirme kriterimiz, bunu yeni çıkarmışlar anladığım kadarıyla ama.
+
+748
+02:08:34,355 --> 02:08:35,955
+Diğer diyelim buna, neyse.
+
+749
+02:08:36,315 --> 02:08:42,455
+Değerlendirme türü ödev, başlangıç tarihi bugünden itibaren verelim.
+
+750
+02:08:43,215 --> 02:08:45,515
+Tamam 16.08'de başlasın.
+
+751
+02:08:45,844 --> 02:08:58,623
+Ne zaman bitsin arkadaşlar? Haftaya 24'ünde saat gece yarısına kadar 23.59'a kadar
+
+752
+02:09:02,899 --> 02:09:04,875
+23, 59
+
+753
+02:09:08,243 --> 02:09:10,884
+Tamam mıdır arkadaş? 23.59'a kadar.
+
+754
+02:09:11,983 --> 02:09:14,384
+Dosya yüklemiyorum. Açıklama.
+
+755
+02:09:17,083 --> 02:09:24,684
+Derste anlatılan konvolüsyon.
+
+756
+02:09:25,403 --> 02:09:27,144
+Hocam açıklamayı biz göremiyoruz.
+
+757
+02:09:27,844 --> 02:09:28,884
+Göremiyor musunuz?
+
+758
+02:09:29,283 --> 02:09:31,384
+Hatırlarsanız açıklamayı biz göremiyorduk.
+
+759
+02:09:32,243 --> 02:09:34,264
+Peki yenilemişler. O zaman şöyle yapayım.
+
+760
+02:09:34,931 --> 02:09:36,931
+Konvolüsyon ödevi
+
+761
+02:09:36,931 --> 02:09:41,412
+Formatını yazayım. Ödev 1
+
+762
+02:09:41,412 --> 02:09:45,011
+Ad
+
+763
+02:09:45,011 --> 02:09:46,931
+Soyad
+
+764
+02:09:46,931 --> 02:09:48,551
+No
+
+765
+02:09:48,551 --> 02:09:51,771
+Nokta
+
+766
+02:09:51,771 --> 02:09:52,792
+PDF
+
+767
+02:09:52,792 --> 02:09:54,591
+Şeklinde
+
+768
+02:09:54,591 --> 02:09:56,752
+Yüklersiniz. Tamam mı arkadaşlar?
+
+769
+02:09:58,572 --> 02:09:59,872
+Bunu da kaydediyorum.
+
+770
+02:10:00,532 --> 02:10:12,992
+Ben sizin gönderdiğiniz ödevleri buradan göreceğim arkadaşlar. Kimler göndermiş? Dikkat edin, dosyayı upload ettiğinizden, doğru şekilde upload ettiğinizi görün. Boşluk olmasın yani.
+
+771
+02:10:17,427 --> 02:10:22,047
+Tamam mıdır arkadaşlar? Anlaşıldı mı? Sorularınız varsa soruları alalım.
+
+772
+02:10:26,515 --> 02:10:32,515
+Sadece ikinci fonksiyonu ters değiştirip x'in üzerinden geçiyoruz veya
+
+773
+02:10:34,015 --> 02:10:37,855
+tam tersi de yapılabilir. Bir tanesi serbest tutuyor.
+
+774
+02:10:38,995 --> 02:10:42,515
+Evet zaten bunlara cevap verilmiş herhalde.
+
+775
+02:10:43,855 --> 02:10:52,015
+Bir fonksiyon. Bu örneği de pdf'e koyacak mıyız yoksa bunun yanında mı? Bunun yanında üç tane mi yapacağız yoksa?
+
+776
+02:10:52,275 --> 02:10:57,075
+Kendiniz ayrı üç tane değer birliğin.
+
+777
+02:10:58,875 --> 02:10:59,875
+Tamam.
+
+778
+02:11:00,575 --> 02:11:06,875
+Şu metlebin konvolüsyon fonksiyonu acaba, building function'ı şey alıyor mu acaba?
+
+779
+02:11:08,175 --> 02:11:16,875
+Başlangıç bitişten help, call desem, help call desem bakalım.
+
+780
+02:11:25,011 --> 02:11:27,011
+Şöyle kaydırayım bakalım.
+
+781
+02:11:28,211 --> 02:11:30,211
+Shape demiş AB.
+
+782
+02:11:31,011 --> 02:11:36,211
+İşte length result infector, length a artı length b eksi bir demiş ya.
+
+783
+02:11:36,811 --> 02:11:38,412
+Bunu şey yaptık.
+
+784
+02:11:44,083 --> 02:11:44,724
+Evet.
+
+785
+02:11:46,724 --> 02:11:49,163
+Başlangıç bir teşhis sınırını almamış bu.
+
+786
+02:11:49,904 --> 02:11:51,024
+Demek ki öyle bir opsiyon o.
+
+787
+02:11:51,284 --> 02:11:53,264
+Kendiniz vereceksiniz onunla arkadaşlar.
+
+788
+02:11:55,364 --> 02:11:55,764
+Evet.
+
+789
+02:11:56,184 --> 02:11:57,384
+Sorsa olan var mı arkadaşlar?
+
+790
+02:12:00,564 --> 02:12:03,663
+Hocam, PDF grafiklerin SS'lerini koyuyoruz değil mi?
+
+791
+02:12:04,744 --> 02:12:06,764
+Şimdi şöyle yapın arkadaşlar.
+
+792
+02:12:08,212 --> 02:12:20,212
+İlk sayfaya pdf kodu koyduktan sonra, hani benim dediğim bu subplot komutuyla dördünü birden koyabiliyorsunuz. Yani sadece şu subplot, 3 tane subplot çizeceksiniz bana.
+
+793
+02:12:20,212 --> 02:12:34,988
+Farklı xn değerlerine göre nasıl çıklar üretmişsiniz onu göreceğim ben de. Amaç şurada şunu söyleyebilmek, şununla şunun aynı şeyi verdiğini görebilmek.
+
+794
+02:12:35,636 --> 02:12:50,756
+Sizin yazdığınız fonksiyonunda farklı kimisi işte ne bileyim şöyle eksili artılı değerler biraz şaşırtmaya çalışın öbürkünü şuralarda çıkarın mesela öbürkündeyse ne bileyim burada dağıtın mesela
+
+795
+02:12:51,380 --> 02:13:04,680
+Burada mesela iki taraflı olsun, ekside de artıda da elemanları bulunsun gibi bir şeyleri verin bakayım. Sizinki de aynı bu iltiğinin fonksiyonuyla aynı çalışacak mı?
+
+796
+02:13:08,435 --> 02:13:33,495
+Evet, bu haftayla beraber hem sürekli hem de ayrık fonksiyonu görmüş olduk. Şuna dikkat edin arkadaşlar, sürekli konvolüsyonda da biz aslında aynı şeyi yaptık. Örneğin bir tane fonksiyonumuz var sürekli, öbürküsü onun üzerindeydi. Ne yapıyorduk? Bunu ters çeviriyorduk bir tanesini.
+
+797
+02:13:34,100 --> 02:13:49,500
+Şöyle yapıyorduk, şöyle ters çeviriyorduk. Yavaş yavaş bunun üzerinden geçiriyorduk. İlk değer aldığı kısımlar ne oluyordu? Örneğin, eksi 1'deydi bu. Bu da eksi 1'e geldiğinde yavaş yavaş altta kalan alan ne oluyordu? Eksi 1'den itibaren artıyordu.
+
+798
+02:13:49,500 --> 02:13:58,699
+Tamamıyla altına geldiğinde sabit gidiyordu. Ondan sonra sistemden çıkmaya başladığı zaman giderek azalıyordu.
+
+799
+02:13:59,667 --> 02:14:08,227
+Hemen hemen aynı şeyi yapmış oluyoruz. Burada da, eğer biz bunu ayrık şekilde yapsaydık, şöyle ayrık hallerini görmüş olacaktık bunlar.
+
+800
+02:14:09,727 --> 02:14:15,867
+Aynı yaklaşım, birinde sürekli altta kalan alanları topluyoruz. Sürekli de.
+
+801
+02:14:16,287 --> 02:14:23,547
+Burada ise yine altta kalan alanlar ama ayrık değerlerin genlik değerleriyle çarptığımızda o genlik değerleriyle beraber.
+
+802
+02:14:24,083 --> 02:14:26,023
+Altta kalan alanlar olmuş oluyor.
+
+803
+02:14:26,203 --> 02:14:27,503
+Ayrık altta kalanlar oluyor.
+
+804
+02:14:29,543 --> 02:14:31,783
+Evet, [öğrenci] anlaşıldı mı?
+
+805
+02:14:34,663 --> 02:14:35,843
+Anladım hocam.
+
+806
+02:14:36,563 --> 02:14:37,203
+Tamamdır.
+
+807
+02:14:39,563 --> 02:14:41,063
+[öğrenci] anlaşıldı mı?
+
+808
+02:14:42,283 --> 02:14:43,343
+Anlaşıldı hocam.
+
+809
+02:14:44,043 --> 02:14:44,303
+Tamam.
+
+810
+02:14:44,723 --> 02:14:45,403
+[öğrenci]?
+
+811
+02:14:49,587 --> 02:14:50,707
+[öğrenci] anladın mı?
+
+812
+02:14:53,047 --> 02:14:55,067
+[öğrenci] anlaşıldı mı?
+
+813
+02:14:57,387 --> 02:14:58,067
+Tamam.
+
+814
+02:14:59,747 --> 02:15:01,607
+Tamamdır. Ödev de anlaşıldı.
+
+815
+02:15:02,987 --> 02:15:08,487
+Eğer bana sormak istediğiniz soru yoksa bu haftalık dersimiz bu kadar arkadaşlar. Haftaya görüşmek üzere diliyorum [öğrenci].
+
+816
+02:15:09,107 --> 02:15:13,267
+Hepinize iyi haftalar, iyi çalışmalar. Lütfen ödevinizi son güne bırakmayın.
+
+817
+02:15:14,447 --> 02:15:15,447
+Anlaştık mı arkadaşlar?
+
+818
+02:15:16,275 --> 02:15:35,275
+Haftaya görüşmek üzere. Pardon haftaya sınavımız olmayacak. Sınavımız olmadığı için eğer ders tanımlanmazsa ders tanımlanmazsa ders yaparız.
+
+819
+02:15:36,467 --> 02:15:46,587
+Ama tanımlanmamış olursa boştasınız. Ben o zaman duruma göre, şu anda ödev tarihini değiştirmiyorum. Sadece o gün ödevlerinizi verirsiniz yine o gün içerisinde.
+
+820
+02:15:48,187 --> 02:15:50,427
+Kolay gelsin hepinize. Görüşmek üzere arkadaşlar.
+
+821
+02:15:51,367 --> 02:15:52,027
+İyi günler hocam.
+
+822
+02:15:52,327 --> 02:15:53,467
+İyi günler, sağ olasınız.

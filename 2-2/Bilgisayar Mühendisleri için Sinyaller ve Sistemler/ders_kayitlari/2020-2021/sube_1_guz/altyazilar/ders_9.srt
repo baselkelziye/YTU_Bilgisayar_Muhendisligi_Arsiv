@@ -1,0 +1,3423 @@
+1
+00:02:37,460 --> 00:02:38,680
+Merhabalar arkadaşlar.
+
+2
+00:02:41,120 --> 00:02:42,520
+Sesim geliyor mu?
+
+3
+00:02:45,020 --> 00:02:46,640
+Merhaba hocam, geliyor evet.
+
+4
+00:02:48,879 --> 00:02:51,140
+Sınav haftanız nasıl geçti arkadaşlar?
+
+5
+00:02:52,360 --> 00:02:55,920
+Yazabilirsiniz ekrana, kolaylık olması açısından.
+
+6
+00:02:56,620 --> 00:02:57,740
+Sınavlarınız iyi geçti mi?
+
+7
+00:03:05,939 --> 00:03:12,939
+[öğrenci] hangi ders dışında dedi? Zor muydu yoksa sınav sistemi nasıldı?
+
+8
+00:03:18,771 --> 00:03:32,891
+Evet. Klasik sınav mı ağırlıklıydı sınavlarınızda yoksa test usulü sınavlar var mıydı? Yani sistemin hazırladığı, karmaşık, herkese farklı sorulan sınavlar mı vardı? Test vardı, test ağırlıklıydı.
+
+9
+00:03:32,891 --> 00:03:41,891
+Tabi test ağırlıklı olunca bir nebze hızlı geçiyordur. Okuması kolay filan ama şeyi...
+
+10
+00:03:42,195 --> 00:03:47,915
+Sınavın güvenliği belki çok da sağlıklı olmuyordur diye düşünüyorum.
+
+11
+00:03:48,436 --> 00:03:53,355
+Herkes kendi mi yapıyor sınavlarını? Nasıl? Yoksa şikayetleriniz var mı?
+
+12
+00:03:59,891 --> 00:04:02,512
+Evet, süre kontrolü zor oluyor dediğiniz gibi.
+
+13
+00:04:03,491 --> 00:04:04,111
+Öbür türlü.
+
+14
+00:04:04,611 --> 00:04:07,651
+Bizim sınavımız arkadaşlar 12. haftada olacak.
+
+15
+00:04:08,471 --> 00:04:11,091
+30 soru, 60 dakika test vermişler.
+
+16
+00:04:13,411 --> 00:04:17,731
+2 tane de, 2 tane de 25. Süre kontrolü var çok.
+
+17
+00:04:21,267 --> 00:04:31,907
+Evet, test olunca tabii ki biraz daha testi hızlı yapıp onun dışındaki sınavları hızlı yapmak, onlara vakit ayırmak gerekiyor dediğiniz gibi.
+
+18
+00:04:33,107 --> 00:04:38,407
+Evet, soruları geri dönememek maalesef bu dönemin en büyük zorluğu.
+
+19
+00:04:38,907 --> 00:04:47,187
+Klasik sınavların yapılması, klasik sınavlar şeklinde yapılması belki daha mantıklı oluyor eğer uzun süre.
+
+20
+00:04:47,668 --> 00:05:14,687
+sorular soruluyorsa. Bizim dediğim gibi arkadaşlar 12. haftada sınavımız olacak. Klasik bir sınav olacak. Tabii bizim derste gösterdiğimiz bütün kısımları biz farklı kaynaklardan anlatıyoruz. Standart bir slide'ı takip etmiyoruz. Bu derste olduğu gibi arkadaşlar. Hemen hemen hepsini sizlerin de göreceği gibi
+
+21
+00:05:15,348 --> 00:05:16,427
+Sistemde,
+
+22
+00:05:19,788 --> 00:05:21,708
+şurada bizim dersimizin
+
+23
+00:05:21,708 --> 00:05:25,187
+kontrol paneline girdiğimizde
+
+24
+00:05:25,187 --> 00:05:27,988
+dersle alakalı bütün kaynakları
+
+25
+00:05:27,988 --> 00:05:29,788
+ben buraya arkadaşlar
+
+26
+00:05:29,788 --> 00:05:31,408
+yüklüyorum.
+
+27
+00:05:32,248 --> 00:05:33,728
+Şimdi ilk başlarda
+
+28
+00:05:33,728 --> 00:05:38,307
+şu S.A.S. uzantılı
+
+29
+00:05:38,307 --> 00:05:40,708
+PDF'ler üzerinden gidiyorduk.
+
+30
+00:05:41,024 --> 00:06:05,764
+S4'den geldikten sonra en son bir örnek çözme haftamız olmuştu. Onun dışında Metlab ile alakalı bir bilgilendirme yapmışız. Sonra Lecture 5 ile beraber biraz daha o konuları yani konvolüsyon konularına geçtiğimizde biraz daha iyi anlatan MG Roberts'ın Slice'larına geçmiştik. Şu Lecture 5 ile beraber.
+
+31
+00:06:06,387 --> 00:06:22,387
+Şimdi şu SASE uzantı, başlangıç olarak gelen kısımlarda konu anlatımı daha iyi olduğu için M.G. Roberts'ın, Lecture 5 diye adlandırılan slide'lara geçmiştik.
+
+32
+00:06:22,387 --> 00:06:33,967
+Şimdi bu SASE 05'i de yükledim ben. Tabii ki bunun konu anlatım kısmı değil ama buranın soru anlatım kısmının üzerinden biraz geçeceğiz. Bir hatırlatma yapacağım konvolüsyonla alakalı.
+
+33
+00:06:34,387 --> 00:06:52,788
+Ve de Fourier analizi ile alakalı olarak da Lecture 6'ya geçeceğim. Tekrar MG Roberts'ın slide'larını. MG Roberts dediğim nedir? Şu şekilde olan altında MG Roberts'ın konu anlatımı slide kastediyorum.
+
+34
+00:06:53,247 --> 00:07:15,527
+Bir beşinciyi daha değerli topla anlatıyorduk. O yüzden bu kısma geçmiştim. Bu derste konu anlatım kısmında burada ilerleyeceğim. Onun dışında tabii ki bu birazcık matematik ağırlıklı kısımlardayız şimdi. Biraz teorik kısmının yoğun olduğu kısımlardayız. Olabildiğince temel kavramları anlatarak ilerleyeceğiz.
+
+35
+00:07:17,492 --> 00:07:41,172
+Şu kitabı da Signals and Systems, Xiaomi serisinin kitabından da bir özet geçeceğim. Çünkü burada biraz böyle ayrıntılı anlatılmış. Hem böyle matematiksel temellerini biraz anlattıktan sonra tekrar derli toplu bir hale getireceğim. Bütün kaynakları da oraya koydum.
+
+36
+00:07:42,291 --> 00:07:45,291
+Şimdi sizlerin sorusu yoksa
+
+37
+00:07:46,004 --> 00:08:11,984
+Önce konvolüsyonla ilgili kısımda hem bir soru çözelim hem de bu sorudan sonra da önce bir sürekli zaman konvolüsyonuyla alakalı bir hatırlatma yaptıktan sonra sürekli ayrık zamanda Fourier, bir ayrık zamanlık konvolüsyon sorusu sözlükten sonra Fourier yani frekans domenine geçmeye başlayacağız.
+
+38
+00:08:11,984 --> 00:08:13,843
+Sizden sorusu var mı arkadaşlar?
+
+39
+00:08:14,004 --> 00:08:14,828
+Arkadaşlar.
+
+40
+00:08:18,579 --> 00:08:29,639
+Ödevleri şu anda sisteme hemen bir yüklenmiş. Ona da bir bakalım. İsterseniz oradan da bir kimler yüklemiş, kimler yüklememiş bir görelim.
+
+41
+00:08:34,740 --> 00:08:38,039
+Evet, ödevler ve sınavlar kısmına gelelim.
+
+42
+00:08:39,220 --> 00:08:43,120
+Şuradan açalım, gönderilen ödevler kısmına bakalım.
+
+43
+00:08:44,960 --> 00:08:45,240
+Evet.
+
+44
+00:08:48,059 --> 00:08:57,940
+Bazı arkadaşlarımız, mesela şurada sağ tarafta dosya adında pdf uzantılı gözüken arkadaşlar, dosyalarını yüklemiş olan arkadaşlar.
+
+45
+00:08:58,644 --> 00:09:05,163
+Bazı arkadaşlar ise sadece sisteme girmişler ama dosyalarını yüklememişler.
+
+46
+00:09:05,163 --> 00:09:12,443
+Mesela, unutacağım, [öğrenci].
+
+47
+00:09:16,307 --> 00:09:17,847
+[öğrenci].
+
+48
+00:09:23,059 --> 00:09:49,559
+[öğrenci] ve diğer altta kalan arkadaşlar tabii ki sisteme girmemişler. Dediğim gibi arkadaşlar, ödevler bizim için önemli. Buna dikkat edelim. Toplamda dersimizi kaç kişi alıyordu bizim? Toplam kaç kişi var burada? Çok da fazla ödevlere katılımı olmuş. Bunlar sizin vizelerinizi belirleyecek arkadaşlar. Vize ağırlıkları dediğim gibi.
+
+49
+00:09:50,067 --> 00:10:09,347
+%30 yaparız. İlk vizenin yerine geçeceği kısım da bu. %30 da bizim ikinci vize haftası dediğimiz, 12. haftada yapacağımız kısım var. Ondan sonra yıl sonu ise %40. Bunu tekrar bir hatırlatmış olayım. Ödevlerinizi azami dikkati göstereyim arkadaşlar.
+
+50
+00:10:11,248 --> 00:10:12,748
+Hocam başka ödev verecek misiniz?
+
+51
+00:10:13,307 --> 00:10:14,187
+Evet, evet vereceğim.
+
+52
+00:10:15,379 --> 00:10:25,220
+Önümüzdeki haftalarda, şimdi biraz daha teorik altyapıyı güçlendiriyoruz, matematiksel ağırlıkla gidiyoruz ama onun dışında ödevler de vereceğim. 2-3 tane daha ödev vermeyi düşünüyorum.
+
+53
+00:10:28,519 --> 00:10:35,379
+Evet, katılımcı sayımız da 60 kadar olmuş. Dersimize başlayalım. Bir hatırlatma yapmış oluruz.
+
+54
+00:10:38,964 --> 00:10:42,964
+nerelere dikkat etmeniz gerektiğini biraz da anlatmış olursunuz.
+
+55
+00:10:42,964 --> 00:10:48,964
+Şimdi arkadaşlar, konvolüsyonla ilgili kısımlarda biz ne demiştik?
+
+56
+00:10:48,964 --> 00:10:52,964
+En temelde geldiğimizde bir sistemin...
+
+57
+00:11:07,731 --> 00:11:09,791
+Geçmiş dersleri inceleyebilirsin.
+
+58
+00:11:11,791 --> 00:11:15,471
+Evet, bir sistem düşünmüştük.
+
+59
+00:11:19,412 --> 00:11:37,292
+İlk başta bir sistemin cevabından bir XT işaretini uyguladık, çıkışta YT işaretini elde ediyorduk veya XN işaretine girip çıkışta YN işaretini elde edebiyorduk.
+
+60
+00:11:41,395 --> 00:12:04,435
+Ve de değişkeni T olan girdiler, bizim sürekli zamandaki girdi ve çıktılarımızı gösterirken, bizim şu köşeli parantez içerisinde yazdığımız girdi ve çıktılar ve indisi de N dikkat edersiniz. Bunlar ise ayrık zamandaki, ayrık veya diskret.
+
+61
+00:12:05,716 --> 00:12:21,596
+İşaretler için. Şu işaretler ise sürekli işaretlerdir. Biz burada sırasıyla öncelikli olarak HT yani impuls cevabını hem sürekli hem de ayrık zamanda üretmiştik.
+
+62
+00:12:22,131 --> 00:12:40,072
+Verdiğim ödevde de ayrık zamanda bu işleri yapan fonksiyonları yazmanızı ve de standart Built-in Convolution Programı ile karşılaştırma olarak yapmanızı istemiştik.
+
+63
+00:12:41,235 --> 00:12:45,015
+Burada bunların üzerinden bir daha geçeceğiz. Temel olarak şunu söylüyorduk.
+
+64
+00:12:45,735 --> 00:12:54,235
+X, T ve X'en işaretlerimiz sürekli ve ayrık zamanlı olmasına rağmen yaklaşıklılıkla bir impuls işareti,
+
+65
+00:12:54,355 --> 00:12:59,495
+impuls T'lerin birleşiminden oluşan, bunların toplamından oluşan bir işaret olduğunu,
+
+66
+00:12:59,495 --> 00:13:04,715
+X'enin ise aslında ayrık impulsların,
+
+67
+00:13:05,620 --> 00:13:25,399
+Toplamından oluşan bir işaret olduğunu ve de sistemin girişine birim impuls uygulandığı zaman, sistemin uyguladığı cevabı bildiğim zaman, impulsların toplamından oluşan girişleri hesapladığım zaman, çıkış fonksiyonunu bulabileceğimi söylemiştim.
+
+68
+00:13:26,639 --> 00:13:30,360
+Bu fonksiyonlarda arkadaşlar bunu gösteriyor zaten.
+
+69
+00:13:31,792 --> 00:13:45,692
+Konvolüsyon demiştik hatırlarsanız. İki tane dizinin veya iki tane fonksiyonun, sürekli halde fonksiyon diyelim, giriş fonksiyonunun konvolüsyonu şeklinde bulunabileceğini söylemiştik.
+
+70
+00:13:47,831 --> 00:13:57,971
+Şimdi bizim burada yaptığımız, burada bir sürü cevabımız var. Diyoruz ki bizim bir
+
+71
+00:14:02,035 --> 00:14:23,515
+O değişkenin sürekli halde integral giriş fonksiyonumuzla bizim impuls cevabını yani şu kutucuğun impuls cevabını, HT'nin impuls cevabını bilirsek, XT, YT'yi elde etmek için sürekli konvolüsyonlardan yararlandığını söylemiştim.
+
+72
+00:14:28,052 --> 00:14:32,411
+Bununla alakalı ilk kısmı sorular çözmüştük.
+
+73
+00:14:53,392 --> 00:15:09,392
+Bizim burada bir tanesi sıfır iki anında iki genlikli bir girişi ise genliği olan sıfırla bir arasında yer alan impuls cevabımız yani HT'miz.
+
+74
+00:15:14,964 --> 00:15:19,764
+Şimdi nasıl arkadaşlar? Bir ara unstable diye bir uyarı geldi.
+
+75
+00:15:21,464 --> 00:15:23,864
+Evet, şu anda iyi mi?
+
+76
+00:15:26,264 --> 00:15:31,864
+Siz böyle bir kesiklik olduğunda... Evet, tamam.
+
+77
+00:15:32,864 --> 00:15:34,064
+Beni uyarırsınız.
+
+78
+00:15:37,064 --> 00:15:38,764
+Ben de buradan bir saniye...
+
+79
+00:15:59,731 --> 00:16:02,731
+Evet, şu anda nasıl arkadaşlar?
+
+80
+00:16:07,379 --> 00:16:08,779
+Şu an bir problem yok hocam.
+
+81
+00:16:09,480 --> 00:16:24,679
+Tamamdır. Arada olabilir.  bazen düşme böyle bir sorunlar olabiliyor. Tamamdır. Devam edelim.
+
+82
+00:16:26,292 --> 00:16:47,072
+Bileceğiniz konvolüsyon konusunda iki tane temel şey var. Biz sürekli halde ve ayrık halde yapabiliyoruz. Burada kaçıncı slide'ın 23'ten itibaren iki tane fonksiyon vermiş. İki tane fonksiyonu bize konvolüsyona tabi tutmamızı istemiş.
+
+83
+00:16:52,563 --> 00:17:00,683
+Fold'unu yani katlamasını alıp örneğin HD fonksiyonu h-t şöyle yapalım.
+
+84
+00:17:00,683 --> 00:17:18,043
+Fonksiyonlardan birini sabit bırakıp diğerini ters çevirip örneğin h-t ters çevirip ne yapıyorduk?
+
+85
+00:17:18,451 --> 00:17:26,451
+Yavaş yavaş diğer fonksiyon üzerinden geçirip, altta kalan olanların toplamını buluyorduk.
+
+86
+00:17:27,011 --> 00:17:36,532
+Burada da öyle yapmış, sizin en azından sürekli bir fonksiyonun konvolüsyonunu görebilmeniz için bir örnek burada var.
+
+87
+00:17:37,072 --> 00:17:42,471
+Bir tane de bunun arkasında diskret bir örnek çözeceğiz.
+
+88
+00:17:42,471 --> 00:17:44,831
+Şimdi burada ne yapmış?
+
+89
+00:17:45,844 --> 00:18:10,463
+XT fonksiyonu, yani girişi sabit bırakmış. Daha sonra impuls cevabı neyse ters çevirilmiş. Bu ikisi de gerçekleştirilebilir. Hangisi ters çevirilip öbür gün üzerinden geçirmeye çalışıyorsanız ikisi de olabilir arkadaşlar. Daha sonra
+
+90
+00:18:12,211 --> 00:18:22,211
+Yavaş yavaş bundan sonraki adımlarda ayrıklı olduğu gibi ne yapacağız? Bu fonksiyonu buradan ilerletmeye başlayacağız.
+
+91
+00:18:22,211 --> 00:18:33,211
+Yavaş yavaş burada grafik çıktıkları da var. Burada bazı başlangıç ve bitiş sınırlarını göstermek için çizmiş bunu.
+
+92
+00:18:37,971 --> 00:18:45,371
+Genel gösterimiz bu. Neydi bizim YT'yi bulabilmemiz için? YT eşittir.
+
+93
+00:18:45,371 --> 00:18:54,371
+X sonsuzdan sonsuza kadar x to, buradaki to değişkenin adı h.
+
+94
+00:18:54,963 --> 00:19:06,324
+T-TO, D-TO. Yani bu ne demek istiyor ki, TO'nun uçuk ufak adımlarıyla beraber, siz adım adım ne yapın diyor, bunun üzerinden geçireceksiniz diyor.
+
+95
+00:19:06,723 --> 00:19:20,983
+Buradaki şu değişken T ile T'nin değişkeni ise, bizim ilgili çıkışı bulabilmemiz için gerekli HT'deki kaydırma miktarımızı gösteriyor.
+
+96
+00:19:21,619 --> 00:19:43,379
+İlk önce yaklaştık fonksiyonu şuradan. İlk başlarda, ilk çakıştığı yer ne zaman olacak arkadaşlar? Artık sıfırdan itibaren T'ye kadar olan kısımda artık biz fonksiyon overlap yani üst üste girmeye başlıyor. Daha sonra ne yapılıyor arkadaşlar?
+
+97
+00:19:43,935 --> 00:19:50,235
+Tamamıyla fonksiyon 0 ile 2'nin arasında yer alıyor. Bu 1 uzunluğundaydı hatırlarsanız.
+
+98
+00:19:53,235 --> 00:19:58,335
+İçerisinde tamamen girdiği zaman altta kalan alan sabit olarak ilerliyor.
+
+99
+00:19:58,335 --> 00:20:07,335
+Yani şu kısımda veya şu kısımda aynı sonucu üretecek. Daha sonra da artık...
+
+100
+00:20:07,827 --> 00:20:31,768
+Çıkış yapmaya başlayacak. Anbean altta kalan alan, ikisinin altında kalan alan şu kısımlar azalmaya başlayacak. En sonunda şu sınırdan çıktığı andan itibaren ise sıfır verecek. Bununla alakalı soruyu adım adım region region çizmiş burada anlayabilmeniz için.
+
+101
+00:20:32,243 --> 00:20:40,243
+İlk başta burada region 1'de yani ikisinin de altta kalan alanlarının çakışmadığı yerlerde,
+
+102
+00:20:40,243 --> 00:20:53,243
+Şurada şurası, region 1'de t'den yani t sıfırdan küçükken bizim çıktığımız sıfır geliyor.
+
+103
+00:20:53,243 --> 00:20:58,763
+Daha sonra yavaş yavaş h fonksiyon, yani impuls fonksiyon,
+
+104
+00:20:58,963 --> 00:21:03,364
+Yavaş yavaş girmeye başlıyor.
+
+105
+00:21:04,143 --> 00:21:05,923
+Şuradan girmeye başlıyor.
+
+106
+00:21:06,543 --> 00:21:07,683
+Peki bunu nasıl bulacağız?
+
+107
+00:21:08,503 --> 00:21:17,523
+Burada 2 çarpı 3, burada x toumuz 2, ht x toumuz 3.
+
+108
+00:21:17,903 --> 00:21:20,063
+Peki nereden nereye olacak bu?
+
+109
+00:21:20,963 --> 00:21:24,763
+Sıfırdan t'ye kadar olan mesafede olacak.
+
+110
+00:21:25,268 --> 00:21:42,188
+Bunu yapacak olursak, integralle beraber, 6T-6 çarpı sıfır, 6T, demek ki benim YT sıfırla T arasında, sıfırla 1 arasında, yani ikinci bölge sıfırla 1 arasında.
+
+111
+00:21:42,728 --> 00:21:45,248
+Bu nereye kadar girebilir, böyle ilerleyebilir?
+
+112
+00:21:45,715 --> 00:21:56,035
+Tamamıyla şu şekle gelene kadar ilerleyebilir. Tam içine girdiği ana kadar. Burada YT6T'miş. YT6T demek ne oluyor arkadaşlar?
+
+113
+00:21:57,755 --> 00:22:11,775
+Sıfırla bir arasında, şöyle yapacak olursak, bunun altıya bir doğru olmuş olacak.
+
+114
+00:22:12,723 --> 00:22:24,963
+Daha sonra tamamıyla şu bölgenin içinde gezdiği, yani XT'nin içinde davrandığı kısım. Burada ise sabit bir değer üretecek. Burası da 2, burası 3.
+
+115
+00:22:25,407 --> 00:22:51,788
+6 değerini üretecek. Yani burada kaydırırken ne oluyor arkadaşlar? Kademeli olarak altta kalan alan artıyor. Şuradan baktığımızda şöyle ilk başta ne kadar girmiş olacak? Bir kısmı girecek, sonra ilerleyecek bir kısmı, sonra ilerleyecek bir kısmı. Ne zamana kadar bu? 0 ile 1 arasında. Şurada gösterildiği gibi.
+
+116
+00:22:53,236 --> 00:23:00,296
+Burada 6 değerini alacak. En sonunda bunları çizeceğiz. Şu region değerlerine bir dikkat edin.
+
+117
+00:23:00,296 --> 00:23:16,115
+Ve de en sonunda bu sürekli halde arkadaşlar T'nin yani sürelerin hangi sınırlar arasında olduğuna dikkat etmemiz gerekiyor.
+
+118
+00:23:16,115 --> 00:23:17,956
+Daha sonra
+
+119
+00:23:19,092 --> 00:23:23,412
+T, şuradaki T, 2'den büyük değerlerde alacak.
+
+120
+00:23:23,912 --> 00:23:27,452
+Tamamıyla dışına çıktığı zaman, bunun da uzunluğunun 1 olduğunu biliyoruz.
+
+121
+00:23:28,012 --> 00:23:40,772
+2 ile 3 arasında, şöyle bakın, altta kalan alan, her geçen gün T ilerledik, her geçen T miktarı ile beraber gittikçe azalacak.
+
+122
+00:23:40,772 --> 00:23:42,772
+Burada da arkadaşlar,
+
+123
+00:23:43,039 --> 00:23:47,319
+Tekrar bir integral hesabımızı yapmamız lazım.
+
+124
+00:23:48,539 --> 00:23:51,940
+Eksi 6T artı 18'i bulmuşuz.
+
+125
+00:23:51,940 --> 00:23:55,759
+Bu da bir azalmayı gösterecek. Bu da 2 ile 3 arasında.
+
+126
+00:23:56,740 --> 00:24:02,440
+Bakacak olursak, tamamıyla dışına çıktığında, yani T, şuradaki T.
+
+127
+00:24:04,019 --> 00:24:10,779
+3'ten büyük olduğu an, T'nin 3'ten büyük olduğu an şurası olmuş olur, şurası 3, şurası 2'ye denk gelmiş olur.
+
+128
+00:24:11,360 --> 00:24:15,140
+T büyükken 3'ten ise artık 0 veriyor.
+
+129
+00:24:16,400 --> 00:24:20,539
+Baktığımızda sırasıyla burada sonuçlara bir bakalım.
+
+130
+00:24:21,960 --> 00:24:27,519
+Önce ilk başta altta kalan anlar çakışmadığında 0'daydık.
+
+131
+00:24:28,019 --> 00:24:54,919
+Sonra 6T'yi bulduk. 6T nereye kadar gidiyor? 1'e kadar gidiyor arkadaşlar. Bu bir eğri, pardon eğri demişim, doğru. Eğimi 6 olan bir doğru. Ondan sonra 1 ile 2 arasındayken ne yapıyorduk? T 1 ile 2 arasındayken sabit, bunun tamamıyla içindeydi. 6D'yi üretiyor.
+
+132
+00:24:55,392 --> 00:25:15,392
+Daha sonra eksi altı, yine eğimi eksi altı olan bir eğri oluşuyor. Bizim konvolüsyonumuz arkadaşlar, yani YT'miz bu. Sonuç. Bizim LT fonksiyonumuz bu. Bu aslında sizin...
+
+133
+00:25:15,488 --> 00:25:39,548
+Ayrık zamanda yaptığınız konvolüsyon işlemiyle aynı. Orada da örnekler vermiştik ya şöyle, iki tane değer vermiştik. Bir XT demiştik, bir HT demiştik şöyle. Orada da bir tanesi ne yapıyorduk? Ters çeviriyorduk. Daha sonra onu yavaş yavaş ne yapıyorduk? Kaydırıyorduk. Ters çevirdiğimizde
+
+134
+00:25:39,955 --> 00:25:57,115
+Şu hale gelmişti. Ondan sonra üstüne adım adım sokuyorduk. Önce böyleydi. Daha sonra bu bir yana kaydığında burası ve burası şu sondaki siliniyordu. Adım adım kaydıyorduk. Şimdi onunla alakalı bir örnek de vereceğim.
+
+135
+00:26:01,115 --> 00:26:05,855
+Diskrit konvolüsyon, ayı süreklinin aynısı arkadaşlar.
+
+136
+00:26:06,612 --> 00:26:30,612
+Tabii ki notasyonu sadece değişmiş oluyor. Burada da sistem çıktısını bulurken sürekli zamanda hatırlarsanız sistemde sürekli zamanda Impuls T fonksiyonundan yararlanıp çıkışta H T impuls cevabını bulup buna göre sistemin lineer
+
+137
+00:26:30,784 --> 00:26:36,864
+Time Inverient, doğrusal zamanla ötelemeli değişmeyen sistemlerdeki çıkışını hesaplıyorduk.
+
+138
+00:26:37,384 --> 00:26:48,584
+Buradaysa arkadaşlar artık bizim işaretlerimiz şuradaki gibi sürekli değil, sürekli impulsların toplamından değil, ayrık impulsların toplamından oluşuyordu.
+
+139
+00:26:49,183 --> 00:26:52,683
+Ayrık impulslar derken şunu kastettiğimi biliyorsunuz arkadaşlar.
+
+140
+00:26:52,683 --> 00:26:55,824
+Artık Xn dizimiz bizim.
+
+141
+00:26:56,468 --> 00:27:09,468
+teker teker baktığımızda hepsi bir impuls. Tabi genlikleri belli bir katsıyla çarpılmış. Örneğin, artı iki ile çarpılmışsa iki değerinde, eksi bir ile çarpılmışsa eksi bir değerinde.
+
+142
+00:27:09,468 --> 00:27:17,468
+Biliyorsunuz, biner tankiman yaptığı, bizlerde scaling yaptığımızda, yani ölçekleme yaptığımızda ne oluyordu arkadaşlar?
+
+143
+00:27:17,468 --> 00:27:22,252
+Herhangi bir etkisi olmuyordu. Giriş ölçekleniyordu, çıkış da ölçekleniyordu.
+
+144
+00:27:22,355 --> 00:27:24,655
+Dolayısıyla bizim sistemimize bir etkisi yok.
+
+145
+00:27:25,176 --> 00:27:27,895
+Aynı zamanda ne demiştik?
+
+146
+00:27:28,076 --> 00:27:35,395
+Hatırlarsanız bir önceki ders kaydırma yaptığımızda bizim çıkışımız da kaydırılır.
+
+147
+00:27:35,395 --> 00:27:37,516
+Burada yapılan şey şu.
+
+148
+00:27:38,016 --> 00:27:47,895
+Madem öyleyse ben bir impuls'a olan sistemin cevabını biliyorsam ki bunun adı impuls cevabıydı.
+
+149
+00:27:48,276 --> 00:27:49,536
+Aydık olarak.
+
+150
+00:27:50,259 --> 00:27:55,259
+Şimdi ben bu impuls cevabından bunu ötelediğimde de değişmiyor.
+
+151
+00:27:55,659 --> 00:27:58,700
+İmpuls uyguladım girişe, çıkışta aşeni elde ettim.
+
+152
+00:28:00,079 --> 00:28:03,339
+Aynı zamanda bunu belli bir katsayıyla çarpmak.
+
+153
+00:28:03,579 --> 00:28:06,779
+xk, k'ıncı katsı, x'in k'ıncı katsayısı.
+
+154
+00:28:06,879 --> 00:28:10,799
+Örneğin x0 eşittir, burada 2.
+
+155
+00:28:11,299 --> 00:28:14,460
+x örneğin 1, burada eksi 1.
+
+156
+00:28:14,919 --> 00:28:17,019
+Şuraya gelen şey skaler bir değer.
+
+157
+00:28:17,875 --> 00:28:20,875
+Çıkışta aynı şekilde bu skalerle çarpılıyor.
+
+158
+00:28:21,756 --> 00:28:23,976
+Daha sonra bir de biz bunu ne demiştik?
+
+159
+00:28:23,976 --> 00:28:38,195
+Linear Time I'm Mindsler'de giriş toplandığında, girişteki ayrık ayrık bu impulslar toplandığında veya toplu halde verildiğinde de çıkışta sistem değişmez.
+
+160
+00:28:38,316 --> 00:28:43,615
+Ha toplayarak öncelik sisteme vermişsin, ha ayrı ayrı verip çıkışta toplamışsın, aynı şey.
+
+161
+00:28:44,211 --> 00:28:52,211
+Ayrık toplamayı yani sürekli halde biliyorsunuz, bunun integren ile ifade ediyorduk.
+
+162
+00:28:53,112 --> 00:28:57,392
+Diyorduk ki, eksi sonsuzdan sonsuza şeklinde tanıyorduk.
+
+163
+00:28:57,771 --> 00:28:59,711
+Buradaysa artık sigma'yı kullanacağız.
+
+164
+00:28:59,811 --> 00:29:04,231
+Çünkü ayrık değerlerde, k değerimiz integer değerler alıyor.
+
+165
+00:29:05,231 --> 00:29:07,051
+Topladığımızda, bakın bu neydi?
+
+166
+00:29:09,536 --> 00:29:25,076
+xk, impuls n-k. Bu neydi arkadaşlar? Impulsların kaydırılmış ve de belli değerle çarpılmış haliydi. Bu bizim xn dizimizdi. Yavaş yavaş büyüttük bunu, ekledik.
+
+167
+00:29:34,799 --> 00:29:40,379
+İlgili katsayı çarpıyoruz ve topluyoruz şekline getirmiştik.
+
+168
+00:29:41,639 --> 00:29:47,599
+Şimdi burada da güzel bir şey var. Bunu geçen hafta anlatmıştım zaten sizlere.
+
+169
+00:29:48,279 --> 00:29:55,099
+Burada da bir örnek var. Bu örneği de çözüp ondan sonra ilerlemeye başlayalım.
+
+170
+00:29:57,599 --> 00:29:59,400
+Buraya kadar sorusu olan var mı arkadaşlar?
+
+171
+00:30:00,000 --> 00:30:05,759
+Şimdi yapacağımız örnekte Discrete Konvolüsyon örneği.
+
+172
+00:30:11,155 --> 00:30:32,795
+Konvolüsyon arkadaşlar, Türkçeleştirerek evrişim de deniyor. Mesela bu aralar mesela Convolutional Neral Network, derin öğrenme yapılarında çok gözde bir görüntü işleme ve sınıflandırma yöntemi. Buna evrişimsel yapay sinir ağları da deniyor.
+
+173
+00:30:33,236 --> 00:30:39,056
+Son zamanlarda derin öğrenmeyle ilgilenen arkadaşlar varsa, onun da bilgisini vermiş olayım.
+
+174
+00:30:39,056 --> 00:30:46,056
+Burada da insan beynindeki görme yapısının farklı filtrelerin...
+
+175
+00:30:46,291 --> 00:31:07,951
+Cevaplarını toplayarak sistemi, nesneleri tanımladığı varsayımdan yora çıkarak nesneleri, olayları, sahneleri sınıflandırmamızda bize yardımcı özellikleri bu filtreler yardımıyla yani aslında filtre dediğimiz sistemin cevabı olmuş oluyor.
+
+176
+00:31:08,435 --> 00:31:24,755
+Daha sonraki derslerinizde de göreceksiniz, özellikle yüksek lisans ve doktora sırasında, bu bizim aşen fonksiyonlarımız, bizim sistemimizin cevabı, impuls cevapları, bizim filtrelerimizi oluşturacak.
+
+177
+00:31:24,935 --> 00:31:30,195
+Filtreler veya Kernel'lar oluşturacak veya Mask diyorlar.
+
+178
+00:31:30,195 --> 00:31:35,455
+Bu da Image Processing dersinin önemli bir kısmı.
+
+179
+00:31:36,147 --> 00:31:49,048
+Veya Computer Vision bilgisayarla görü dersinin, ki bunlar bilgisayar bilimleri alanının önemli ve de gözde derslerinden iki tanesi.
+
+180
+00:31:49,968 --> 00:31:56,428
+Tabi bunlar artık Machine Learning yani makine öğrenmesi, yapay öğrenme gibi derslerle artık iç içe geçmiş.
+
+181
+00:31:56,816 --> 00:32:07,816
+Ve de bizim Bilgisayar Mühendisliği bölümünün, hani Türkiye'deki diğer bilgisayar mühendisliklerine de baktığımızda güçlü olduğu, sektörde güçlü olduğu yönleri oluşturuyor.
+
+182
+00:32:09,175 --> 00:32:13,655
+Evet, şimdi iki tane giriş fonksiyonumuz.
+
+183
+00:32:13,655 --> 00:32:21,576
+Üç uzunluklu bir dizi, başlangıcı sıfır ve bitişi ikide olan.
+
+184
+00:32:21,872 --> 00:32:29,491
+Hani eğer biz bunu yazmaya çalışsak, x fonksiyonu matematiksel olarak nelerden oluşacak?
+
+185
+00:32:29,491 --> 00:32:34,031
+2, 2 ve 1 diğerinden oluşan bir ereğe.
+
+186
+00:32:34,832 --> 00:32:43,652
+x'in sınırları, x, b diyelim bunalı, x borderları yani, hangi yerde yapı?
+
+187
+00:32:43,832 --> 00:32:45,971
+Sıfır başlangıç, 2 arasında.
+
+188
+00:32:46,708 --> 00:32:48,828
+Zaten verdiğim ödevde bunu yaptınız.
+
+189
+00:32:49,408 --> 00:32:50,608
+H'en neymiş arkadaşlar?
+
+190
+00:32:50,868 --> 00:32:55,408
+H fonksiyonum, bilgisayarlarında yaptığımız an 3'müş.
+
+191
+00:32:55,628 --> 00:32:56,568
+Kaç tane 3'tü?
+
+192
+00:32:57,228 --> 00:32:59,668
+Veya şöyle diyelim, x length diyelim.
+
+193
+00:32:59,768 --> 00:33:02,788
+x, l ise kaç uzunluklu? 3.
+
+194
+00:33:04,148 --> 00:33:05,588
+Yani 3 uzunluklu bir dizi bu.
+
+195
+00:33:06,508 --> 00:33:07,568
+H fonksiyonum ne?
+
+196
+00:33:08,368 --> 00:33:12,548
+3, 3, 3, 3, 3.
+
+197
+00:33:17,076 --> 00:33:19,615
+H'ın borderları ne ile ne arasında?
+
+198
+00:33:20,796 --> 00:33:21,396
+0 ile
+
+199
+00:33:21,396 --> 00:33:24,355
+4 arasında.
+
+200
+00:33:24,776 --> 00:33:27,836
+Toplam 500'ün h'ın length diyelim.
+
+201
+00:33:29,416 --> 00:33:29,756
+5.
+
+202
+00:33:31,596 --> 00:33:35,016
+Vermiş olduğunuz ödevleri zaten bunları çıkarmışsınızdır.
+
+203
+00:33:36,056 --> 00:33:37,196
+Dikkat edin arkadaşlar.
+
+204
+00:33:38,056 --> 00:33:39,916
+İlk problem, burada güzel anlatmış.
+
+205
+00:33:40,319 --> 00:34:00,239
+For this problem, I choose to flip xn demiş. Bu seferkin ise daha küçük boyuta sahip xn'i değiştireyim demiş, flip edeyim demiş. Yani katlayayım manasında söylemiş. Neden? Daha az işlem yapacak bunun için.
+
+206
+00:34:00,756 --> 00:34:12,756
+Burada tabii kendi kişisel fikirlerini de koymuş. Böyle bir kesin karar yapmıyorsunuz. Konvolüsyonda aşenin veya x'in flip edilmesinin hiçbir şeyi yok. İkisinden birine katlayabiliriz.
+
+207
+00:34:12,756 --> 00:34:25,756
+Şimdi x'i ve aşıyı yazdığımızda burada, öncelikli olarak x eksi i deyip şu işareti katlıyoruz.
+
+208
+00:34:29,652 --> 00:34:38,952
+O da şurada gösteriyor. Eksi dediğimiz zaman aslında ne bu? i ekseninde katlanmış oluyor. Şöyle gelmiş oluyor.
+
+209
+00:34:41,172 --> 00:34:49,971
+Şimdi ilk önce benim burada kullandığım temel şey ne? Takip edeceğim şey.
+
+210
+00:34:49,971 --> 00:34:54,931
+Hemen geleyim. Konvolüsyon sonucu.
+
+211
+00:34:56,340 --> 00:34:57,720
+Şu anda bunu yapıyorum.
+
+212
+00:34:59,320 --> 00:35:02,960
+E'yi, impuls yağabını sabit tutuyorum.
+
+213
+00:35:04,100 --> 00:35:05,520
+M'yi ne yapıyorum?
+
+214
+00:35:06,680 --> 00:35:09,560
+Birde ki M'yi değiştiriyorum.
+
+215
+00:35:10,160 --> 00:35:11,380
+Hemen yazalım yanına.
+
+216
+00:35:12,420 --> 00:35:13,340
+Şöyle gelelim.
+
+217
+00:35:15,340 --> 00:35:16,420
+Evet.
+
+218
+00:35:17,268 --> 00:35:25,268
+İlk adımda yaptığım şu, hatırlatma amacıyla tekrar Yn'i nasıl bulacağımızı yapalım. Yn eşittir.
+
+219
+00:35:27,268 --> 00:35:35,268
+M, eksi sonsuzdan sonsuza kadar, h'ı sabit tutuyorum.
+
+220
+00:35:35,268 --> 00:35:44,043
+Hm çarpı x, n-m.
+
+221
+00:35:45,139 --> 00:36:04,739
+Şuradaki x-m dediğim zaman, hani ana değişken burada m ya, eksi m dediğim zaman aslında buradaki bir işaretin eksili hale getirdiğimde katlama yapmış oluyorum. Bakın, burada değişken olarak i demiş. Ben de i diyebilirdim. O zaman yi'yi bulurduk. Şöyle diyelim.
+
+222
+00:36:05,539 --> 00:36:11,739
+n eşittir sıfır göre demişiz. Değişkenimiz burada i yapmış. Bakayım.
+
+223
+00:36:12,371 --> 00:36:20,431
+M'i İ yapmış. Şöyle yapabilirdik. Şuraya İ, buraya da İ de diyebilirdik. Fark etmez. Değişken adı vermekle alakalı.
+
+224
+00:36:21,051 --> 00:36:32,612
+Şimdi biz burada ne istiyoruz Y'ni bulabilmek için? Sırasıyla N'in ayrık değerlerinin hepsinin çıkışını verip sıfır olmayan yerlerini hesaplamak istiyoruz.
+
+225
+00:36:33,492 --> 00:36:38,952
+N sıfır dediğimiz zaman, Y sıfırı bulacağımız zaman şu işlemi yapmamız lazım.
+
+226
+00:36:39,827 --> 00:36:45,128
+M, veya geri alayım, buradakine göre yapayım.
+
+227
+00:36:48,007 --> 00:37:00,488
+I, x sonsuzdan sonsuza kadar, H, I, yani şu fonksiyon, x, artık n'in yerine ne koydum?
+
+228
+00:37:00,908 --> 00:37:02,923
+Sıfır koyduğum için burada sadece...
+
+229
+00:37:03,507 --> 00:37:11,507
+Şu işlemi yapmam lazım. Y'nin, Yn'deki Y'nin sıfırıncı değerini bulabilmek için bunu yapmam gerekiyor.
+
+230
+00:37:12,268 --> 00:37:20,507
+Bunu yapmış, bakıyoruz, bu işlemin sonucunda, bu üç değerinde, bu iki değerinde, çakıştıkları yer şurası.
+
+231
+00:37:21,068 --> 00:37:22,887
+N eşittir, sıfırda çakışıyorlar.
+
+232
+00:37:24,288 --> 00:37:29,427
+HI çarpı X sıfır eksiği demiş, 6 demiş. Demek ki Y sıfırı 6 bulacağız.
+
+233
+00:37:30,516 --> 00:37:56,816
+Devam edelim. Şimdi, en yerine demiş burada. Normalde ben size ne demiştim? Bunu yaptıktan sonra sağa doğru gidin demiştim. Bu bir sola gitmeyi denemiş. Eğer sola gitsem, en yerine, en yerine eksi bir koysam ne olur demiş. Bakın böyle olduğu zaman sınırdan çıktım. Altta kalan hiçbir şey, çakışan hiçbir şey yok. Bu yüzden eksi bir.
+
+234
+00:37:58,228 --> 00:38:25,768
+n eşittir eksi 1 için, bunu genelleme yapmış, n eşittir eksi 1, eksi 2, eksi 3 için, yn daima 0 çıkacak. Her n, 0'dan küçükken demiş. Demek ki, şuralar 0 olacak. İlk aldığı değer n eşittir 0'dayken olacak. Peki, bu geri kalan kısmındaki sonuçlar ne? Benim sağ ilerlememin nedeni o.
+
+235
+00:38:26,143 --> 00:38:50,523
+zaten. Bir sonraki adımda en eşitti bir verdiğinde bu sefer iki tane şey çapışacak. Burada bir eksi i'yi koyacağız. Şurada, şurası ve şurası. Aslında sürekli de yaptığım aynı şeydim. Orada da hatırlarsanız bir tane fonksiyon şöyleydi.
+
+236
+00:38:51,155 --> 00:39:09,396
+Diğeri de bunun içine girmeye başlamıştı. Kesişim noktaları ne oluyordu? Şu altta kalan, kalan değil mi? Tam şurada, şuralar artık birbirlerini kapsıyorlardı. Tabi onlar T sürekli olduğu için
+
+237
+00:39:09,684 --> 00:39:35,403
+Orada matematiksel bir fonksiyon çıkıyor. Y eşittir. 6T çıkmıştı. Hatırladınız mı? Aslında yavaş yavaş altta kalan adan altıyordu. Fakat burada öyle bir şey yok. Her biri diskriteleme oluştu. Bir kaydığı zaman sadece değerleri birbirleriyle çarpmamız yeterli oluyor. Oysa ki buradaki altta kalan alanı bulabilmemiz için adım adım ne oluyordu? Gittikçe artıyordu.
+
+238
+00:39:35,791 --> 00:39:41,471
+Burada X'de, H'de, X'de'nin altına girdikçe altta kalan alan artıyordu.
+
+239
+00:39:41,552 --> 00:39:55,311
+Sürekli olduğu için burada eğimli bir doğrunun giderek artan, belli bir şeyde artan doğrunun değerini çizmiş oluyordu.
+
+240
+00:39:55,311 --> 00:40:02,251
+Bakın, burada ne yaptık? Burası 2, burası da 2, bunlar da 3.
+
+241
+00:40:02,708 --> 00:40:07,708
+2x3, şurada 6 artı 2x3.
+
+242
+00:40:09,107 --> 00:40:11,027
+Altta kalan alanları dikkat edin.
+
+243
+00:40:11,907 --> 00:40:14,007
+Şurada topluyoruz.
+
+244
+00:40:14,087 --> 00:40:18,788
+Altta kalan çarpımdaki altta kalan alanların toplamını yapıyoruz.
+
+245
+00:40:20,547 --> 00:40:27,188
+Buna göre 2x3, 3x2x3, Y1 için 6 artı 6'yı elde ettik.
+
+246
+00:40:28,047 --> 00:40:28,807
+Tamam.
+
+247
+00:40:29,427 --> 00:40:31,587
+Bu sefer Y'ye 2 verelim bakalım.
+
+248
+00:40:32,287 --> 00:40:34,627
+2 verdiğimiz zaman N'e 2 vermemiz lazım.
+
+249
+00:40:35,287 --> 00:40:38,067
+Amacımız Y'ye 2'yi bulabilmek.
+
+250
+00:40:39,027 --> 00:40:42,367
+2 verdiğimiz zaman tamamıyla bunun altına girmiş oldu.
+
+251
+00:40:43,287 --> 00:40:44,907
+Şununla şu çarpılacak.
+
+252
+00:40:45,047 --> 00:40:46,307
+1 ile 3 çarpılacak.
+
+253
+00:40:46,567 --> 00:40:52,427
+1 çarpı 3 artı 2 çarpı 3 artı 2 çarpı 3.
+
+254
+00:40:53,327 --> 00:40:55,187
+Kaç eder burası arkadaşlar?
+
+255
+00:40:55,711 --> 00:41:22,292
+3, 6, 6'da 15 eder. Peki, Eniştir 3'teyken bir yana daha kayıyor ama hala tamamıyla altında olduğu için 1 çarpı 3 artı 2 çarpı 3 artı 2 çarpı 3. Yani şunların değerlerini çarpıyoruz. Burada da 15 geliyor.
+
+256
+00:41:24,052 --> 00:41:32,711
+4 yaptığımızda bakın, Enişte 4 yaptığımızda, şuraya yanlış mı yazmış?
+
+257
+00:41:36,532 --> 00:42:02,211
+3, en eşitir 4 dediğimiz yer, şurası 4 olması lazım. 4-i yaptığımızda, ne olacak arkadaşlar? Artık yine şuralardan alt takat çakışıyorlar. Çünkü indisler aynı şekilde örtüşüyorlar. Burada da 15 değerini elde ediyoruz. En eşitir 5 verdiğimizde,
+
+258
+00:42:03,507 --> 00:42:05,507
+Şurayı da yanlış yapmış.
+
+259
+00:42:06,507 --> 00:42:09,507
+Burası da 5-i olacak artık.
+
+260
+00:42:09,507 --> 00:42:11,507
+Ne olacak arkadaşlar?
+
+261
+00:42:11,507 --> 00:42:15,507
+Şurası 0 ile çarpılıyor. Dolayısıyla buranın bir anlamı yok.
+
+262
+00:42:15,507 --> 00:42:18,507
+Sadece şu 4'tekiler
+
+263
+00:42:19,507 --> 00:42:22,507
+ve de şunlar
+
+264
+00:42:22,507 --> 00:42:25,507
+üst üste değer üretiyorlar.
+
+265
+00:42:25,507 --> 00:42:29,451
+3 çarpı 1 artı
+
+266
+00:42:29,972 --> 00:42:35,532
+3 çarpı 2. Kaç bu arkadaşlar? 9 değerini elde ediyoruz.
+
+267
+00:42:36,532 --> 00:42:45,972
+En eşittir 6 yaptığımızda ise, artık bunlar sıfırla çarpıldığı için değer olarak bir katılımda bulunmuyorlar toplama.
+
+268
+00:42:46,732 --> 00:42:53,672
+Şurada 1 ile 3'ü çarptığımızda 3, ya 6'da 3 olacak.
+
+269
+00:42:54,228 --> 00:43:05,947
+Bir sonrakinde ise, yani biz bunu, şurası yine yanlış yazılmış, 6-i olduğunda ise, ne olacak arkadaşlar? Hepsi sıfırla çarpılacağı için.
+
+270
+00:43:06,804 --> 00:43:11,244
+Artık bir anlamı yok. İstediğimiz kadar, sonsuza kadar gidelim.
+
+271
+00:43:11,963 --> 00:43:17,844
+N büyükse 6'dan, her N büyük 6'dan, YN 0 olarakmış olabiliyor.
+
+272
+00:43:18,663 --> 00:43:28,483
+Peki, bu işlemin sonucunda benim ne ürettim? 6. Bunları yan yana yazdığımda ise neyi bulmuş oldum?
+
+273
+00:43:29,123 --> 00:43:31,284
+YN sonucunu bulmuş oldum.
+
+274
+00:43:31,891 --> 00:43:36,331
+Dikkat edin, X'nin sınırları neydi arkadaşlar?
+
+275
+00:43:37,651 --> 00:43:45,691
+X'nin, X'nin sınırları veya şöyle göstermiştim, X borderları neredeydi?
+
+276
+00:43:46,471 --> 00:43:48,251
+Sıfırla iki arasındaydı.
+
+277
+00:43:49,291 --> 00:43:51,991
+Peki, H'ın borderları neredeydi?
+
+278
+00:43:52,711 --> 00:43:54,131
+Sıfırla dört arasında.
+
+279
+00:43:54,612 --> 00:44:21,851
+Ne demiştik konvolüsyonda? Şu değerler toplanacak. 0, 6 arasında. Yani Y'nin borderları 0 ile 6 arasında olacak. Bakalım 0 ve 6 arasında gerçekten. Şuradaki sınırlar eksi 1, eksi 2 olsaydı yan yana toplaması eksi 3 olurdu. Yani gerçekten sayısal değerlerinin toplanması gerekiyor.
+
+280
+00:44:22,739 --> 00:44:25,179
+Bu da bizim çıkışımız.
+
+281
+00:44:28,299 --> 00:44:33,299
+Bu konvolüsyonla alakalı sorumuzdu arkadaşlar.
+
+282
+00:44:35,179 --> 00:44:38,339
+Zaten ödevde de yapmış olmanız lazım.
+
+283
+00:44:39,139 --> 00:44:44,039
+Tabii ki teknik şeylere takıldığınızda Metlep'le alakalı şeylere girip
+
+284
+00:44:44,467 --> 00:44:51,347
+Oradan büyük ihtimalle subplot veya derste verdiğim şeylerle beraber çözdüğünüzü tahmin ediyorum.
+
+285
+00:44:53,587 --> 00:45:03,447
+Şimdi yavaş yavaş bir işaretin farklı bir uzayda incelemeye başlayacak.
+
+286
+00:45:03,447 --> 00:45:09,288
+Şimdi sürekli zaman başlığımız sürekli zaman.
+
+287
+00:45:11,987 --> 00:45:16,467
+Fourier yöntemleri.
+
+288
+00:45:18,527 --> 00:45:21,047
+Şimdi biz burada neyi kastediyoruz?
+
+289
+00:45:21,867 --> 00:45:33,867
+Şimdi biz hep bugüne kadar girdiğimizde gerek XT, gerekse şöyle, gerekse XN'i analiz ederken
+
+290
+00:45:34,751 --> 00:45:59,751
+Bir sisteme sokuyoruz bunları. Buradaki sistem bizim HT veya HN oluyor. Buraya girdiğimizde bir sonuç elde etmeye çalışıyoruz. Ya YT'yi elde etmeye çalışıyoruz ya da YN elde etmeye çalışıyoruz. Yani sistemin ona verdiği cevap bulabilmek için. Ama yaptığımız işlemler dikkat edin konvolüsyon işlemleri de
+
+291
+00:46:00,148 --> 00:46:06,648
+Ondan sonra konvolüsyon haricinde sürekli ve ayrık konvolüsyon işlem, hep zaman domeninde yaptığımız işler.
+
+292
+00:46:07,728 --> 00:46:16,568
+Gerçek anlamda sinyalin birebir örneklerinden bahsediyoruz veya bunu örnekleyip ayrık elde ediyoruz veya sinyalin kendisini kullanıyoruz.
+
+293
+00:46:17,848 --> 00:46:21,468
+Zaman domeninde yaptığımız şeyler, normalde bu T anındaydı.
+
+294
+00:46:23,155 --> 00:46:37,155
+Örneklediğimiz zaman N indisine dönüşüyordu ama dikkat edin, X'ni bile elde ederken aslında XT'de T'nin yerine NTS koyuyorduk.
+
+295
+00:46:37,155 --> 00:46:49,155
+Yani TS aralıklı olarak şöyle baktığımızda işareti TS yani örnekleme frekansı.
+
+296
+00:46:49,972 --> 00:47:01,231
+TS, 2 TS, 3 TS, TS ise 1 bölü FS, burası örnekleme periyodu.
+
+297
+00:47:05,652 --> 00:47:08,611
+Şu ise örnekleme frekansı.
+
+298
+00:47:12,307 --> 00:47:26,907
+Dikkat edin, burada zamandayken, T yerine NTS koyduğumuzda, yani N'in katları şeklinde, yani X'ini yazarken Analog X işaretinde NTS.
+
+299
+00:47:27,668 --> 00:47:47,668
+n burada bizim Integer indislerimizde 0 koyuyorduk. 1, 2, 3, 4 koyuyorduk. Her birinde TS kadar zıplayarak analog işaretten, sürekli işaretten örnekler toplayarak ilerliyorduk ki böylece bizim x'enimiz oluşuyordu şuradaki.
+
+300
+00:47:53,472 --> 00:48:05,792
+Aslında T'nin ayrık halleriydi bu. O yüzden biz zaman uzayındayız bu ana kadar gördüğümüz yöntemlerde dememin nedeni o.
+
+301
+00:48:07,252 --> 00:48:19,332
+Farklı bir şekilde artık işaretleri inceleyelim. Bu sefer göreceğimiz yöntem adı frekans.
+
+302
+00:48:20,340 --> 00:48:31,900
+yöntemleri veya frekans uzayı kavramına girmeye başlayacağız. Frekans nedir? Frekans analizleri nedir? Bunlara bakacağız öncelikle olarak.
+
+303
+00:48:32,700 --> 00:48:45,100
+Ben biraz daha burada önemli kısımlar var. Bazı İngilizce kısımları sizlere Türkçe'ye çevirerek ve de bazı vurgulamam gereken yerleri adım adım aktararak ilerlemek istiyorum.
+
+304
+00:48:47,699 --> 00:49:13,519
+Şimdi, konvolüsyon yöntemlerinde arkadaşlar, sistemin cevabını altını çizerek bazı kelimeleri uyguluyorum. Linearlik ve de öteleme ile değişmezlik özelliğinden yararlanıyoruz buradaki sistemi. Burası Linear Time Invariant Sistemdi bizim girdiğimiz.
+
+305
+00:49:14,612 --> 00:49:18,432
+XT veya YN demiyorum burada genel olarak.
+
+306
+00:49:20,012 --> 00:49:33,772
+Dolayısıyla biz sonucu bulabilmek için konvolüsyonda ya Sigma veya integral şeklinde linear kombinasyonları, yani ne yapıyorduk sonuçta biz?
+
+307
+00:49:33,772 --> 00:49:40,552
+XT işaretini, XN işaretini böyle XMH.
+
+308
+00:49:41,844 --> 00:49:48,084
+K-N şeklinde çarpıp topluyoruz. Bunları lineer birleştirme deniyor arkadaşlar.
+
+309
+00:49:48,963 --> 00:49:54,304
+İmpuls responslarının lineer birleşimi şeklinde tarif ediliyor.
+
+310
+00:49:55,744 --> 00:50:00,624
+Burada en önemli kavram şuydu konvolüsyonumuzda.
+
+311
+00:50:08,851 --> 00:50:30,132
+Y hesaplarken diyorduk ki, birim impulsu olan cevabı veya impuls N dedik. Ayrık veya sürekli zamanlı. Impuls uyguluyorduk. O impulsu cevabını YT veya YN'i buluyorduk.
+
+312
+00:50:30,132 --> 00:50:31,851
+Şimdi
+
+313
+00:50:33,043 --> 00:50:43,624
+Bunlar da varsayımımız da şuydu. Aslında sonsuz sayıda impuls veya pardon sürekli de sonsuz sayıda impuls
+
+314
+00:50:44,436 --> 00:50:54,696
+Impuls N'de ise, diskrette ise, tanımlı olan, sıfırdan farklı genlik alan, impulsların toplamı şeklinde LSI sistemde çıktığı bulabiliriz demiştim.
+
+315
+00:50:55,036 --> 00:51:01,836
+Ama giriş olarak, impuls response A dediğimiz şey hep impulslara verilen cevapları anlatıyordu.
+
+316
+00:51:03,976 --> 00:51:07,896
+Fourier analizinde, frekans analizinde ise arkadaşlar,
+
+317
+00:51:08,916 --> 00:51:18,396
+İlk derslerde anlattığım, bu sefer sisteme impulslar vermek yerine sinüsler vereceğiz arkadaşlar.
+
+318
+00:51:19,235 --> 00:51:23,815
+Bu sinüslere olan cevabını bulmaya çalışacağız. Peki neden?
+
+319
+00:51:24,947 --> 00:51:32,067
+Ben sonda söyleyeceğimi başta söyleyerek biraz daha sizin kafanızda daha rahat yer etmesini istiyorum.
+
+320
+00:51:32,788 --> 00:51:36,708
+Diyoruz ki, Fourier denilen bir adam var. Şurada gösteriliyor.
+
+321
+00:51:38,128 --> 00:51:43,847
+Şimdi Fourier demiş ki basitçe, ben şimdilik size basitinden bir anlatayım, ondan sonra bir ara vereceğim.
+
+322
+00:51:44,500 --> 00:52:05,219
+Tabi o zamanlar böyle ayrık zamanlı işaretler, ondan sonra görüntüler değil. Fonksiyonlar gibi düşünüyor. Matematiksel fonksiyonlar gibi düşünüyor. Herhangi bir işareti, işaret bile demiyor. Belki ne diyor ona? Fonksiyon diyor. Herhangi bir işaret diyor. Belli aralıklarda diyor.
+
+323
+00:52:12,980 --> 00:52:17,579
+Bunu şeyde de anlatmıştım hatırlarsanız, diskret hale getirmedi.
+
+324
+00:52:18,139 --> 00:52:30,480
+Sonsuz tane sinüsün toplamı şeklinde, şöyle her seferinde yazayım şöyle, sonsuz tane sinüsün toplamı şeklinde yazılabilir diyor.
+
+325
+00:52:31,340 --> 00:52:38,000
+Örneğin f eşittir sıfır, sinüslerin en önemli özelliği neydi arkadaşlar?
+
+326
+00:52:38,708 --> 00:53:05,387
+Şöyle baktığımızda, kosününün omega t artı teta demiştik. Buna açısal frekans, şuna faz demiştik hatırlarsanız. Bunun başında genliği oluyordu böyle. Buna da genlik kat sayısı.
+
+327
+00:53:10,291 --> 00:53:19,491
+Sinüs, kosünüs veya sinüs fark etmez. Theta 90 derece olursa sinüse dönüyor gibi düşünün örneğin. Veya eksi sinüse dönüyor.
+
+328
+00:53:20,751 --> 00:53:24,351
+Dediğimizde kosünüs ve sinüs aslında birbirlerinin faz farklı halleri.
+
+329
+00:53:25,271 --> 00:53:31,152
+Şimdi, alabildikleri değerler de eksi 1 ile artı 1 arasında değişiyor.
+
+330
+00:53:31,152 --> 00:53:35,152
+A genlikle onların boyutunu büyütebiliyoruz.
+
+331
+00:53:38,291 --> 00:53:39,731
+Şu B boyutunda
+
+332
+00:53:39,731 --> 00:53:43,831
+arttırıp azaltabiliyoruz. Peki,
+
+333
+00:53:44,871 --> 00:53:48,472
+bu genlik, demek ki simüsü tanımlayan birinci şey genlik.
+
+334
+00:53:50,271 --> 00:53:51,411
+Bir genliği var.
+
+335
+00:53:52,472 --> 00:53:52,731
+İki,
+
+336
+00:53:53,992 --> 00:53:55,291
+omega dediğimiz şey,
+
+337
+00:53:55,791 --> 00:53:56,891
+iki pi f.
+
+338
+00:53:57,952 --> 00:54:02,552
+Yani, bunun ne kadar salınım gösterdiğini anlatıyor bana.
+
+339
+00:54:03,592 --> 00:54:04,572
+F'i nasıl bulurum?
+
+340
+00:54:05,204 --> 00:54:29,963
+Şöyle, mesela bir sinüsün içinden geçen mesafe, örneğin burası T1 olsun, 1 bölü F1, periyodun tersi frekans olarak açıklanıyor. Peki, sinüsün frekansının artması ne demek? Tx diyeyim şuna, 1 bölü Fx.
+
+341
+00:54:31,987 --> 00:54:50,907
+Yani Tx dediğim şeyle beraber periyod azalıyor. Periyodun azalması demek frekansın artması demek. Frekans birim zamanda olan titreşim sayısı. Daha doğrusu bir çevrimin tamamlanma süresi.
+
+342
+00:54:51,635 --> 00:55:16,655
+Bir çevrimin tamamlanması süresi. Kendini tekrar ediyor sinüsler. Sinüslerin en önemli özelliği periyodik fonksiyonlar olması ve de belli bir T süresinde kendini tekrar etmesi. Frekans yükseldikçe bu T süresi azalıyor. Biz de ne diyoruz? Daha çok titreşimlerinden olduğu için, periyot azaldığı için frekansı artmıştır diyoruz.
+
+343
+00:55:18,132 --> 00:55:20,831
+Üçüncü özelliği ise fazı.
+
+344
+00:55:21,931 --> 00:55:26,391
+Dediğim gibi şu Omega açısal frekans diye geçiyor.
+
+345
+00:55:26,951 --> 00:55:31,112
+Aslında açısal denmesinin nedeni 2 pi ile çarpılması onun.
+
+346
+00:55:31,672 --> 00:55:33,092
+Buradaki ise frekans.
+
+347
+00:55:34,791 --> 00:55:43,451
+Şimdi bu frekans ise genlik, frekans ve faz üçlüsü ile bir sinzoid kendini ifade ediyor.
+
+348
+00:55:43,451 --> 00:55:44,612
+Peki.
+
+349
+00:55:45,460 --> 00:55:52,299
+Hiç böyle şey yapalım. Daha sözel bir ifadeyle. Burada frekansa geçişte şundan yararlanıyoruz arkadaşlar.
+
+350
+00:55:53,380 --> 00:56:08,159
+Herhangi bir fonksiyon, matematiksel ifade, belli aralıklarda kendini oluşturan sonsuz sayıda değişik frekansa sahip sinüzoidin toplamı şeklinde ifade edilebilir.
+
+351
+00:56:08,519 --> 00:56:12,799
+E baştaki ne hocam şurası? Orada bir dalga şey yok, bir çevrim yok.
+
+352
+00:56:13,268 --> 00:56:39,028
+F sıfırdan başlıyor. F'in sıfır olması, frekansın sıfır olması ne manaya geliyor? Herhangi bir çevirimin olmadığı sıfır frekans. O da dahil olmak üzere ne yapıyoruz? Bütün sonsuz sayıda, tabii ki bu teorikte, matematikse olarak, sinizoidal'in birleşiminden koyuyoruz. Örneğin şuraya 2PF ise şurası.
+
+353
+00:56:39,443 --> 00:57:02,543
+Şurası 0 olursa ne olur? 2Pi F, F0T, 0. Tetasında olmadığını düşünün. Kosinus 0, 1 değeri verecek. Genliği neyse, A neyse onu verecek. Yani bu da genellikle DC komponent olarak adlandırılır. Bir işaretin ortalamasını verir.
+
+354
+00:57:03,443 --> 00:57:18,023
+Yani bir işaret, mesela şöyle bir işaretimiz var diyelim. Aslında bu işaret iki kısımdan oluşur. Eşittir. Bir, bir sabit kısmı DC artı bir de onun
+
+355
+00:57:18,228 --> 00:57:43,648
+Sinüzoidal kısmı, bu da AC kısmı. Bu osiloskoplarda görmüşsünüzdür veya ikinci dönem göreceksinizdir. Bir işaret şu şekilde olabilir. Aslında bu bir ortalamanın veya offsetin üzerine, offset de derler buradaki mesafeye veya DC'nin üzerine binmiş bir işarettir. Öyle değil mi? Her AC işaret sıfır ortalamalı olmak zorunda değil. Mesela bu işaretin ortalaması sıfır.
+
+356
+00:57:44,692 --> 00:57:52,032
+Ama şu işaretin ortalaması ise, bunun ortalaması işte bunun DC seviyesine denk geliyor.
+
+357
+00:57:52,751 --> 00:58:02,032
+Bu genel bilgilendirmeyi yaptıktan sonra artık bunu biraz daha matematiksel...
+
+358
+00:58:03,284 --> 00:58:14,143
+... olarak ifade etmeni yönelacağız arkadaşlar. Şimdi bir saatimiz 56.10 gece buluşmak üzere diyoruz. Bir 15 dakikalık ara veriyoruz arkadaşlar.
+
+359
+00:58:15,463 --> 00:58:18,623
+Hocam, önceki sayıda geçebilir misiniz? Bir şeyler yazıyorum ortamda.
+
+360
+00:58:19,483 --> 00:58:20,443
+Efendim, bir şey yok.
+
+361
+00:58:23,987 --> 00:58:24,927
+Teşekkür ederim.
+
+362
+00:58:25,387 --> 00:58:25,907
+Rica ederim.
+
+363
+01:12:52,148 --> 01:12:54,148
+Tekrar merhaba arkadaşlar.
+
+364
+01:13:00,404 --> 01:13:02,404
+Seste bir sorun var mı? Ses nasıl?
+
+365
+01:13:03,824 --> 01:13:04,724
+İyi geliyor hocam.
+
+366
+01:13:05,224 --> 01:13:05,804
+Tamamdır.
+
+367
+01:13:11,380 --> 01:13:32,159
+Şimdi, temel şeyimizi oluşturduk. Dedik ki, eğer bir işaret sonsuz sayıda sinüsten oluşuyorsa şayet, biz bu sefer bu sinyali oluşturan sinüsleri ayrı ayrı versek ve sistemin cevabını bulsak.
+
+368
+01:13:33,420 --> 01:13:39,120
+Yani farklı frekanslardaki impuls veriyorduk. Eskisinde impulsları topluyorduk.
+
+369
+01:13:39,444 --> 01:13:56,644
+Şimdi ise girişe, sistemin girişine bu impulsları versek, farklı frekanslardaki impulsları versek ve de bu sistemlerin buna cevaplarını bulup toplasak böylece farklı bir sunum tarzı elde ediyoruz.
+
+370
+01:13:56,644 --> 01:14:06,844
+Peki, sinüsleri vermek yerine yani kosünüstü bir ifadeyi veya sinüstü bir ifadeyi vermek yerine
+
+371
+01:14:07,859 --> 01:14:17,579
+Kompleks sinüsleri veriyoruz arkadaşlar. Bunun yararını biraz daha sonra öğreneceğiz. Kompleks sinüsoidleri veriyoruz. Kompleks sinüsoid neydi?
+
+372
+01:14:18,359 --> 01:14:34,000
+Hatırlarsanız dersimizin başında da anlatmıştık. E üzeri J omega T şeklindeki ifadeler bizim kompleks sinüs olarak adlandırıyorduk.
+
+373
+01:14:38,420 --> 01:14:51,420
+Kompleks Üstler olarak adlandırıyorduk. Bunun yararı neydi bize? Hem imajinal hem de real kısımdan oluşan bir gösterim sunuyordu. Yani şu şekilde ifade edebiliyorduk.
+
+374
+01:14:51,420 --> 01:15:02,420
+Kosünüs omega t artı, şöyle t sinü farkla yapalım, artı j sinüs omega t.
+
+375
+01:15:03,220 --> 01:15:05,479
+Şunları parantez içine alabiliriz şöyle.
+
+376
+01:15:06,640 --> 01:15:09,200
+Burada dikkat edeceğimiz bir husus var.
+
+377
+01:15:09,739 --> 01:15:11,880
+Bir real kısım var, kosünüstü.
+
+378
+01:15:12,659 --> 01:15:14,600
+Bir de imajinal kısım var.
+
+379
+01:15:14,960 --> 01:15:18,200
+Şurası imajinal, şurası real kısmı.
+
+380
+01:15:18,200 --> 01:15:28,200
+Şuna da e üzeri jx şeklindeki ifadelerde buna da öler eşitliği diyoruz.
+
+381
+01:15:29,971 --> 01:15:35,072
+cos x artı j sin x şeklinde.
+
+382
+01:15:35,488 --> 01:15:40,448
+yapıya da öner eşitliyoruz. Buradaki öner eşitliğini kullandık aslında biz burada.
+
+383
+01:15:41,028 --> 01:15:45,628
+X yerine gelen omega t'yi Kosinus'un ve Sinus'un içine koymuş olduk.
+
+384
+01:15:46,167 --> 01:15:50,828
+Dediğim gibi bir real kısmı var, Kosinus'lü, bir de imajinal kısmı var.
+
+385
+01:15:51,347 --> 01:15:58,347
+Fakat siz bu kompleks üsteliği aslında bir sinüzoidal fonksiyon şeklinde düşünebilirsiniz.
+
+386
+01:15:59,507 --> 01:16:02,048
+Peki, ne demiştik biz?
+
+387
+01:16:02,707 --> 01:16:16,747
+Herhangi bir X, şurada, bu slide'da excitation olarak geçen kelime, herhangi bir sinyalin uyarımı manasında, herhangi bir sistem uyarımı manasında kullanılıyor.
+
+388
+01:16:17,627 --> 01:16:26,467
+Siz bunu excitation'ı function veya signal şeklinde yorumlayabilirsiniz.
+
+389
+01:16:27,988 --> 01:16:50,507
+Herhangi bir fonksiyon, uyaran veya işaret kompleks sinüslerin toplamı şeklinde ifade edilebilir. Nerede? LTI bir sistemde. Bunun cevabı. Girişimiz şu şekilde verilebilir.
+
+390
+01:16:51,859 --> 01:17:11,819
+A1, E, Z, J2, P, T, 1, A2, A3 şeklinde. XT'yi ne oluşturuyorsa, ben burada demin anlatmıştım, dedim ki sonsuz sayıda sinüsten oluşuyor demiştim bir fonksiyon. Fakat gerçekte tabii ki böyle bir şey yok.
+
+391
+01:17:12,340 --> 01:17:37,539
+gerçek işaretlerde şey olarak var tabii ki, hani kavramsal olarak var ama şöyle de ifade etmek lazım. Şöyle bir daha çizecek olursam o kısmı şöyle, şöyle ifade edeyim şunları. Herhangi bir işaret baktığımızda bir işaretimiz şöyle.
+
+392
+01:17:38,420 --> 01:17:57,659
+Bazı bileşenleri olabilir. Örneğin içerisinde şu sinüs olabilir. Fakat daha yüksek bir sinüzoidal, çok küçük genlikli olabilir. Daha yüksek frekans, aşağıya doğru gittikçe frekans arttı. Bazıları olmayabilir, bazı frekanslar o işarette olmayabilir.
+
+393
+01:18:06,707 --> 01:18:14,807
+Arbitrary, herhangi bir işaret manasında, keyfi herhangi bir işaret manasında kullanılıyor.
+
+394
+01:18:16,007 --> 01:18:19,288
+Bazı frekanslar olup bazı frekanslar olmayabilir.
+
+395
+01:18:19,868 --> 01:18:22,368
+Örneğin bazı düşük frekanslardan oluşuyor olabilir.
+
+396
+01:18:23,268 --> 01:18:27,108
+Bazen düşük frekanslar artı bazı yüksek frekanslardan oluşabilir.
+
+397
+01:18:27,108 --> 01:18:29,188
+Bazı aradaki frekanslar yoktur.
+
+398
+01:18:33,332 --> 01:18:53,811
+Bu işaret sonuçta. Rastgele çizdiğimiz bir işaret sonuçta. Ve de bu işaretlerin sonuçta gerçek anlamdaki işaretlerin en sonunda sahip olduğu maksimum bir sinüs vardır. Hani ilk derslerimizde anlatmıştık, gerçek hayat işaretlerinde maksimum bir frekansı var.
+
+399
+01:18:54,159 --> 01:19:14,319
+Bunun üstünde çok yok. Peki, tanımsız olarak herhangi bir işaret sonsuz sayıda ekran oluşabilir diyor. Ses nasıl? Unstable şey geldi bana şu anda. Your connection is unstable dedi. Seste bir girip gelme belki olmuştu ama şu an nasıl?
+
+400
+01:19:16,243 --> 01:19:23,623
+Tamam. Unstable şey geldi bana bir ara, uyarısı geldi. Sizin ekranda da gözüküyor mu o unstable yazdığı zaman?
+
+401
+01:19:24,163 --> 01:19:25,243
+Bizde görünmüyor acaba.
+
+402
+01:19:25,563 --> 01:19:29,623
+Gözükmedi sizde. Anlık oluştu demek ki.
+
+403
+01:19:32,063 --> 01:19:33,943
+Artı, bir şey daha belirteyim.
+
+404
+01:19:34,484 --> 01:20:01,144
+Belli bazı frekanslar olmayabilir dedim. Artı her bir frekansın bu işaretin, ana işaretin katılımı da farklı oluyor. Örneğin bununki DC seviyesi A, bununki diyelim B seviyesinde, bu C seviyesinde, bu D seviyesinde farklı genliklerle, kiminde 1, kiminde 0,1, kiminde 0.001 ile girmiş, kiminin genliği 0 olursa o işaret yok demektir.
+
+405
+01:20:02,963 --> 01:20:10,064
+Zaten şöyle demiş burada, gösterimsel olarak tanımlayabilmek için sistemi.
+
+406
+01:20:11,064 --> 01:20:21,804
+XT demiş, A1E üzeri J omega J2P T1, T2, T3 şeklinde 3 tane kompleks eksponansiyel vermiş.
+
+407
+01:20:21,804 --> 01:20:25,363
+Şöyle düşünün bunu, ne demiştim?
+
+408
+01:20:30,868 --> 01:20:32,648
+F, T,
+
+409
+01:20:35,468 --> 01:20:38,927
+Artı, bir de buna şey de ekleyebiliriz tabii ki, burada göstermiş ama,
+
+410
+01:20:39,688 --> 01:20:40,328
+Artı,
+
+411
+01:20:42,248 --> 01:20:43,948
+Faz ekleyebiliriz belki ama,
+
+412
+01:20:44,368 --> 01:20:46,488
+Şimdilik işi biraz daha karıştırmamak için,
+
+413
+01:20:46,927 --> 01:20:48,108
+Şu kısmı siliyorum.
+
+414
+01:20:49,876 --> 01:21:00,876
+Böyle bir işaret olduğunu düşün. Demek ki ben bir kompleks üsteli yazarken fazını yazmam gerekiyor. Şu T'yi yazmam gerekiyor. Öyle değil mi?
+
+415
+01:21:00,876 --> 01:21:11,876
+Şimdi böyle de yazabilirim bunu. Cos2P, sahip olduğu frekans neyse ona örneğin F1 diyeyim.
+
+416
+01:21:17,235 --> 01:21:44,095
+F2T, yani farklı frekansların birleşiminden oluşuyor. Bunu kompleksde gösterecek olursam, ne diyecektik? Şurası bizim Omega'mızdı, Omega 1, burası Omega 2'miz, E üzeri J Omega 1 artı E üzeri sinyal olarak E üzeri J Omega 1 T diyelim.
+
+417
+01:21:44,564 --> 01:21:48,604
+Artı Omega 2T dedik, artı gidiyor bu şekilde.
+
+418
+01:21:49,363 --> 01:22:02,884
+Omegaları açacak olursam, E üzeri J 2P F1T artı E üzeri J 2P F2T şeklinde açabilirim.
+
+419
+01:22:13,876 --> 01:22:24,755
+T1 artı, yani bölüm şeklinde aşağı inerse, E üzeri J, 2P, T bölü, T2 şeklinde de yazılır.
+
+420
+01:22:25,195 --> 01:22:27,755
+Burada da öyle yapmışlar arkadaşlar gördüğünüz gibi.
+
+421
+01:22:28,636 --> 01:22:35,896
+Kompleks üstelde T1, yani 2P, F1 ya bu, F1 aşağı çekince bölüm olarak gelmiş, T gelmiş.
+
+422
+01:22:36,368 --> 01:23:03,288
+Aslında baktığımızda burası Omega T sadece. Omega 1T diyeyim. Burası Omega 2T. Burası ise J, tabii başlarında J de var. J kompleks üstel olduğunu gösteriyor. Omega 3T şeklinde. Aslında basitleşmiş ifadesi. Peki, frekansı girdik. Bu başlarındaki ne? Aslında bizim şu A1.
+
+423
+01:23:04,243 --> 01:23:10,144
+A1, A2 şeklinde koymuş olduğumuz o kompleks üsterlerin genlikleri.
+
+424
+01:23:11,323 --> 01:23:29,523
+Diyor ki burada, kısaca baktığımızda, değişik genliğe sahip, değişik genlikli, kompleks üsterler, üsterlerin toplamı.
+
+425
+01:23:30,547 --> 01:23:43,307
+Yani matematiksel ifade olarak XT işareti öyle bir işarettir ki değişikkenlikli kompleks üsterlerin toplamı şeklinde ifade edilebilir.
+
+426
+01:23:44,067 --> 01:23:53,148
+Bir sisteme girdiğinde sistem cevabını bulabilirsiniz eğer burayı doğru modelleyebilirseniz.
+
+427
+01:23:55,148 --> 01:23:58,268
+Peki diyor ki
+
+428
+01:23:58,931 --> 01:24:20,171
+Sistem burada. Sen bunun bileşenlerinden birini sisteme soktuğunda, sonuçta bir çıkış elde ediyorsun. B1, EYJ, J2P, T1 şeklinde. Bunun genliğinde bir değişiklik yapıyor. Dikkat edin, frekansında değişiklik yapmıyor. Sadece genliğinde yapıyor.
+
+429
+01:24:20,659 --> 01:24:23,879
+Yani onu alıştırıyor, başka bir işarete dönüşüyor.
+
+430
+01:24:24,680 --> 01:24:31,000
+Alıyor, ikinci bileşenini, ikinci bileşenini sokuyor, üçüncü bileşenini sokuyor.
+
+431
+01:24:31,000 --> 01:24:41,500
+Aynı aslında kaydırılmış sinüsleri, pardon impulsleri soktuğumuz gibi farklı, pardon şunu bir tane bir tane çizmem lazımdı.
+
+432
+01:24:42,163 --> 01:24:59,384
+Şöyle baktığımda, aslında kaydırılmış hallerini sokar gibi. Burada da farklı sinüsleri, nasıl ki buradaki impulsların toplamı işareti oluşturuyorsa, burada da farklı sinüslerin toplamı toplamsal olarak baktığımızda XT'mizi oluşturuyor bizim.
+
+433
+01:25:00,884 --> 01:25:08,623
+Çıkışımızda da bunlar toplanarak, ki sistemin burada Linear Time Invariant olması lazım ki,
+
+434
+01:25:10,003 --> 01:25:21,523
+Gerçekten toplamsallık özelliğini şuradaki linear'den dolayı ve de time invariant ötelemeden dolayı sistem çıktısını oluşturabilsin bizim için.
+
+435
+01:25:22,804 --> 01:25:26,403
+Peki, bu çizim gerçekten benim hoşuma gitti.
+
+436
+01:25:27,984 --> 01:25:34,123
+Gerçekten bir kompleks sinüs nedir?
+
+437
+01:25:35,003 --> 01:25:37,003
+Bunu anlayabilmek için biraz böyle...
+
+438
+01:25:37,492 --> 01:25:55,692
+Güzel bir şekilde çizim. Bunun üzerinde biraz duracağım. Ne demiştim? E üzeri Jx demiştim. Öler açılımından. Demiştim ki cos x artı J sin x demiştim.
+
+439
+01:25:56,791 --> 01:26:02,992
+Şimdi kompleks sin x ise bu x'in yerine benim neyi yerleştirmem lazım?
+
+440
+01:26:03,956 --> 01:26:08,536
+2PFT'yi yerleştirmem lazım.
+
+441
+01:26:09,216 --> 01:26:09,336
+Değil mi?
+
+442
+01:26:10,076 --> 01:26:18,736
+Ki bu şekilde hani E üzeri J 2PFT'yi elde edebileyim.
+
+443
+01:26:19,216 --> 01:26:20,236
+Şunu görebilmek için.
+
+444
+01:26:20,695 --> 01:26:21,855
+Nasıl bir işaret etmiş bu?
+
+445
+01:26:21,855 --> 01:26:26,316
+Artık J sinüs 2PFT.
+
+446
+01:26:26,695 --> 01:26:28,956
+X yerine 2PFT'yi koydum.
+
+447
+01:26:29,256 --> 01:26:29,496
+Tamam.
+
+448
+01:26:30,163 --> 01:26:35,564
+Şimdi benim frekansım 1 olsun.
+
+449
+01:26:37,243 --> 01:26:40,804
+E üzeri J 2PT.
+
+450
+01:26:42,003 --> 01:26:44,064
+Acaba nasıl bir işaret?
+
+451
+01:26:44,963 --> 01:26:56,423
+Çünkü frekans kavramında artık kompleks üsteli veya kompleks üstel demek aslında kompleks sinizoit demektir aynı zamanda.
+
+452
+01:26:56,948 --> 01:27:22,108
+Reeli gerçekten biliyorsunuz zaten. Kosinus omega t artı fi. İşte bu real bir sonuç üretiyor. Veya ayrıca sinüs omega 2 t artı fi 2. Bunlar real çıktılar üretiyorlar. Kompleks sonuç üreten ne demek kompleks? Kompleks sayıları kısaca bir giriş şey yapalım.
+
+453
+01:27:22,515 --> 01:27:47,635
+Z eşitli A artı J5 şeklinde ifade edilen sayılar. Bunlar arkadaşlar iki tane eksende ifade edilebilirler. Bir, bir real kısmı var bunun. Bu A oluyor. Bir de imajinal kısmı var. Bu da B oluyor. Bu da imajinal eksende çizilebiliyor.
+
+454
+01:27:48,307 --> 01:27:53,228
+İkisinin beraber oluşturduğu ortak bir nokta var. Bu da Z noktası.
+
+455
+01:27:55,528 --> 01:27:56,847
+Burası da Z noktası.
+
+456
+01:27:58,528 --> 01:28:03,207
+Şu sayı, dediğim gibi tek bir değer almıyor reeldeki gibi.
+
+457
+01:28:03,747 --> 01:28:05,467
+A eşittir, 3 demiyoruz yani.
+
+458
+01:28:06,568 --> 01:28:14,407
+Z eşittir, bir real kısmı olan, bir de imajinal bileşeni olan bir sayıyı kastediyoruz.
+
+459
+01:28:15,155 --> 01:28:34,336
+Bu sayı şu şekilde de ifade edilir. Bir sonraki derslere yardımcı olması açısından. Şu şekilde ifade edilir. Bu birinci yol. İkinci yol da şu. Bu sayı ifade etmenin yine z'yi ifade etmeye çalışıyoruz diyelim şöyle. Z'yi ifade etmenin ikinci yolu.
+
+460
+01:28:37,811 --> 01:29:01,952
+Bir, aynı noktaya gideceğiz. Bakın, bu kartezyen noktada. Bir, şuradaki R'yi ifade edersiniz. Artı bir de şuradaki TETA'yı, şöyle güzelce çizelim. Artı bir de şuradaki TETA açısını bulduğunuz zaman, ikisiyle beraber aynı noktayı ifade edersiniz.
+
+461
+01:29:04,948 --> 01:29:29,728
+Pisagordan, A kare artı B kare şeklinde bulunur. Buna arkadaşlar şey de deniyor aynı zamanda, Z'nin normu. Şu şekilde, Z'nin normu da deniyor. Yani aslında bir nevi Magnitude veya Amplitude de deniyor.
+
+462
+01:29:30,931 --> 01:29:48,851
+z'nin yani z kompleks sayısının mutlak değer içerisinde gösteriliyor. Aslında Magnitü, gücü malasında. Güç ve polar koordinatlarda vektör gücü, Magnitü ve Theta açısıyla ifade edilebiliyor.
+
+463
+01:29:48,851 --> 01:29:57,531
+Demek ki öncelik olarak şuraya z'yi yazacağız. Artı Theta açısının bulunması lazım. Theta ise
+
+464
+01:29:59,028 --> 01:30:19,448
+Arktanjant, arktanjant veya tanjant üzeri eksi bir de deniyor buna. B bölü A. Tanjant normalde B bölü A'dır ya, tersini bulup doğru teteye elde etmek isterseniz, arktanjant, tanjantın ters fonksiyonunu kullanırsınız.
+
+465
+01:30:26,195 --> 01:30:52,895
+Theta şeklinde gösteriliyor arkadaşlar. İki tür gösterimi var. Birincisi şu kartezyen koordinatlardaki imajinal ve real kısmını ayrı ayrı gösterdiğimiz kısım. İkincisi ise polar koordinatlarda gösterdiğimiz Magnitude ve de şuradaki Theta açısının beraber bulunduğu kısım. Buna polar gösterim deniyor.
+
+466
+01:30:53,395 --> 01:30:57,435
+İkisi de aynı noktayı, yani şurayı ifade ediyor.
+
+467
+01:30:59,355 --> 01:31:06,315
+Şimdi buradan da ona gelelim.
+
+468
+01:31:07,016 --> 01:31:13,735
+Sonuçta biz EZJ2PT dediğimiz zaman aslında bu da bir kompleks sayı üretiyor öyle değil mi?
+
+469
+01:31:13,735 --> 01:31:15,796
+Bu da aynı Z gibi bir sayı.
+
+470
+01:31:16,615 --> 01:31:18,416
+Yani kosünüs.
+
+471
+01:31:19,859 --> 01:31:35,719
+2PiT artı J sinüs 2PiT. Şu kısmı real bileşen artı J imajinal bileşen. Yani burası A artı J B şeklinde.
+
+472
+01:31:35,719 --> 01:31:46,519
+Belki B kısmı bunun sinüs bir şekilde değişim gösterirken A kısmı kosünüs benzer.
+
+473
+01:31:46,768 --> 01:32:12,327
+Tamam. Şimdi T'ye sıfır verdiğimizde, şuraya geri çizmeye çalışalım bakalım. Kafamızda bir canlansın. İki tane eksen olacak bir kere. Bir tanesi imajinal eksen, diğeri ise arkadaşlar real eksen. İki tane eksenimiz var. Artık üç boyutlu düşüneceğiz.
+
+474
+01:32:15,444 --> 01:32:42,024
+T0 iken, E üzeri J2Pi T0 koyduğumuzda, T'nin yerine 0 koyduğumuzda, şuraya 0, buraya da 0 koyduğumuzda, Sinüs 0 kaçtır arkadaşlar? 0 olduğu için imajinal kısmı olmayacak. Kosünüs 0 ise 1 değerini alacak. Bakın, bu gerçekten 1'den başlıyor. Şöyle yapayım.
+
+475
+01:32:43,220 --> 01:32:51,420
+Gerçekten şurada birden başlıyor. Ama T büyümeye başladıkça T sıfırdan farklı bir değer aldı. Örneğin 0.1 aldı.
+
+476
+01:32:53,160 --> 01:33:02,160
+Artık bizim şu sayımız Z sayımız veya E üzeri J 2P T sayısı artık
+
+477
+01:33:02,996 --> 01:33:24,396
+İmajinal bileşende almaya başlar. Yani şu eksende, mavi görmüş olduğunuz eksende bir değer alır. Şurada bir değer alır. Ve de bu aynı bir spiral yay gibi arkadaşlar, uzayda almış olduğu noktaları bileşiyor. Hani nasıl şurada z sayısı uzayda bir nokta almıştı. Bakın.
+
+478
+01:33:26,804 --> 01:33:37,123
+e üzeri j2pt ifadesi de, bakın, aynı şu zeki gibi sarmal bir yapıda şöyle, şu yöne doğru ilerliyor.
+
+479
+01:33:38,163 --> 01:33:43,304
+Reel ve imajinal bileşenleri var burada.
+
+480
+01:33:44,304 --> 01:33:52,443
+Aynı şekilde burada, dikkat edin, e üzeri j2pt.
+
+481
+01:33:53,460 --> 01:34:19,340
+işaretini gösterirken, burada ise E üzeri eksi J2PT işaretini çizmiş. Bakın burada şöyle giderken, Spiral, burada ise tam tersi yönde gidiyor. Tam tersi şekilde kıvrılıyor. Ben baktığımda bunlara, eğer
+
+482
+01:34:19,539 --> 01:34:41,199
+e üzeri j 2 pt ile şurada, e üzeri j 2 pt'nin ifadesi ile şurada e üzeri j pt'yi toplarsam, şuradaki gibi ve ikiye bölersem, kosünüs, real kısmı ifade ediliyor. Bakın,
+
+483
+01:34:45,488 --> 01:34:51,908
+Düzlem olarak da real eksendeki kosümmel yüzey, real yüzeyde sınan yapıyor.
+
+484
+01:34:52,908 --> 01:35:09,048
+Oysa, şuraya baktığımda ise, ben bunları, yani e üzeri j 2 pi t ve de e üzeri j eksi 2 pi t'yi
+
+485
+01:35:10,739 --> 01:35:14,219
+Birini aldım, diğerinden çıkardım, şuradaki gibi.
+
+486
+01:35:15,639 --> 01:35:24,339
+Ve J bölü 2'ye böldüğümde ise, bakın, imajinal eksende, realde hiçbir değer almıyor.
+
+487
+01:35:25,099 --> 01:35:31,719
+İmajinal düzlemde sinüzoidal hareket eden bir bileşen çıkmış oluyor ortaya.
+
+488
+01:35:33,460 --> 01:35:36,939
+Daha basit bir ifadeyle yapacak olursak, E-yüzleri
+
+489
+01:35:37,684 --> 01:35:40,003
+Jx neydi?
+
+490
+01:35:40,863 --> 01:35:44,583
+Kosinus x artı j sinus x'di.
+
+491
+01:35:45,243 --> 01:35:48,123
+E üzeri, eksi jx nedir?
+
+492
+01:35:49,384 --> 01:35:57,563
+Kosinus eksi x artı j sinus eksi x.
+
+493
+01:35:59,003 --> 01:36:01,863
+Peki, şunu sorayım size.
+
+494
+01:36:02,684 --> 01:36:04,163
+Kosinus eksi x nedir?
+
+495
+01:36:05,587 --> 01:36:15,827
+x kadar gitsek cosinus'te, burada da eksi x kadar gitsek, almış olduğu genlik değeri aynıdır.
+
+496
+01:36:15,827 --> 01:36:26,927
+Buna arkadaşlar, even fonksiyon, çift fonksiyon, cosinus, even, çift bir fonksiyondur.
+
+497
+01:36:27,228 --> 01:36:30,047
+Dolayısıyla şöyle yazılabilir.
+
+498
+01:36:30,868 --> 01:36:56,087
+Kosünüs, onlar şöyle deniyor, kosünüs x eşittir, kosünüs x. Burada x kadar gitsem, burada da eksi x kadar gitsem bile, almış olduğun genlik değerleri aynı, şuradaki gibi. Dolayısıyla ne yazabiliyoruz? Kosünüs x yazabiliyoruz. Artı yazmadan önce, şurayı isleyeyim.
+
+499
+01:36:57,844 --> 01:37:25,043
+Peki, sinüs fonksiyonu nasıl bir fonksiyon? Şuraya çizeyim. Şöyle. Bunda mesela x kadar gittin. Burada da eksi x kadar gittin. Almış olduğu genlik değerlerinin mutlak değerleri aynı ama işaretleri ters. Yani buna da odd.
+
+500
+01:37:25,779 --> 01:37:27,692
+Tek fonksiyon deniyor.
+
+501
+01:37:31,028 --> 01:37:40,388
+Yani şöyle demek lazım, sinüs x eşittir, eksi sinüs eksi x.
+
+502
+01:37:41,948 --> 01:37:51,828
+Yani sen eksi yönde gittiğin zaman almış olduğun genlik değeri, eksi a ise buradaysa a'dır.
+
+503
+01:37:54,963 --> 01:38:06,263
+Şurada almış olduğun genlik değeri eksi a ise, burada ise x kadar gittiğinde a alırsın. Mutlak değerleri aynı ama işaretleri farklı.
+
+504
+01:38:07,583 --> 01:38:13,403
+Mutlak değerleri aynı ama işaretleri farklı. Dolayısıyla bunlara da tek fonksiyon deniyor.
+
+505
+01:38:13,403 --> 01:38:18,663
+Dolayısıyla şuraya ne yazmamız lazım arkadaşlar? Artı mı, eksi mi?
+
+506
+01:38:21,811 --> 01:38:23,811
+G...
+
+507
+01:38:27,123 --> 01:38:38,403
+Sinüs, x'in almış olduğu değerin eksilisi olacak bu. O eksilik de dışarı çıkmış oldu.
+
+508
+01:38:38,403 --> 01:38:46,803
+Taraf taraf toplarsak ne oluyor? Ses geldi mi? Sesim şu anda iyi geliyor mu?
+
+509
+01:38:48,403 --> 01:38:52,443
+Gelip geliyor hocam sesiniz. Biraz bekleyin.
+
+510
+01:38:53,844 --> 01:38:55,844
+Şu anda nasıl arkadaşlar?
+
+511
+01:38:57,844 --> 01:38:59,844
+Bir ara ara verdi.
+
+512
+01:39:00,844 --> 01:39:04,844
+Sabitlendiği zaman devam edelim.
+
+513
+01:39:04,844 --> 01:39:07,844
+Şu anda akıyor olması lazım. Tamamdır.
+
+514
+01:39:07,844 --> 01:39:10,844
+Şimdi bunları taraf taraf topladığımızda
+
+515
+01:39:10,844 --> 01:39:19,844
+e üzeri jx artı e üzeri eksi jx eşittir 2 cos x.
+
+516
+01:39:20,851 --> 01:39:46,771
+Cos x eşittir e üzeri gx artı e üzeri eksi gx bölü 2. Burada da bunu yapmışlar arkadaşlar. Şu anda kesinti var mı? Yok hocam. Tamamdır. Evet. Şimdi.
+
+517
+01:39:47,380 --> 01:39:54,979
+Burada da onu yapmış. Peki, eksi yaparsam bu sefer Kosünüs yok ederim. Bu sefer de Sinüs'lüyü çıkarmış olurum.
+
+518
+01:39:54,979 --> 01:39:58,979
+Orayı da yapalım. Eksi yaparsam ne olur?
+
+519
+01:39:58,979 --> 01:40:01,779
+Sinüs x
+
+520
+01:40:02,100 --> 01:40:20,900
+Eşittir, E üzeri Jx, eksi E üzeri eksi Jx bölü 2j olmuş olur. Şuradaki j'den dolayı arkadaşlar, şu kısım imajinal birleşendi. Burada da onu yapmış. Yani kompleks sayıların toplamında diyor,
+
+521
+01:40:21,684 --> 01:40:43,463
+Real kısmı bulmak isterseniz diyor, onun kompleks üstlerin artılısı ve eksilisini toplayın ve ikiye bölün. Eğer imajinal kısmını bulmak istiyorsanız, e-jx'den e-jx'i çıkarın ve ikiye bölün.
+
+522
+01:40:43,891 --> 01:40:46,592
+J2, 2J yani.
+
+523
+01:40:47,372 --> 01:40:53,572
+Ve de kafanızda kompleks üsterler buradan otursun.
+
+524
+01:40:54,351 --> 01:41:03,731
+Fourier, tabii kompleks üster kullanmasının nedeni arkadaşlar, ileriki derslerde daha rahat anlayacağız.
+
+525
+01:41:04,311 --> 01:41:08,692
+Daha genel bir anlatım yapabilmek için Sinyaller konusunda bunu kullanacağız.
+
+526
+01:41:11,891 --> 01:41:35,891
+Bizim işaretimizi ifade etmekte kullanılıyor. Evet, bu kısma kadar geldik. Şimdi bir conceptual overview yapalım. Yani Fourier serisi kavramını biraz anlatmaya çalışacağım. Bu Fourier serisi kavramından da
+
+527
+01:41:35,920 --> 01:41:59,159
+Ayrık, sürekli ve ayrık Fourier dönüşümüne geçeceğim. Önce, Fourier serisi kavramı, Fourier serisi nedir?'den başlayacağım. Ondan sonra, Xiaomi'nin kitabından, bu tabii ki bu göndermiş olduğum, sol üst keseden de gördüğünüz gibi lecture 6 slide'ları. Bu biraz daha böyle fazla derine dalmış.
+
+528
+01:42:02,707 --> 01:42:12,947
+Bir yerden sonra özetleyeceğim. Gösterim olarak güzel, burada şeyler var, şekiller var. Bunları anlattıktan sonra hızlı bir şekilde öbür tarafa doğru kayacağım tekrar arkadaşlar.
+
+529
+01:42:15,667 --> 01:42:25,607
+Şimdi, diyor ki, Fourier serileri diyor, Fourier serileri bir işareti diyor.
+
+530
+01:42:26,547 --> 01:42:34,307
+Sinsoidlerin, yani sinusoidal fonksiyonların toplamı şeklinde ifade etmeyi sağlar diyor.
+
+531
+01:42:35,307 --> 01:42:43,167
+Şimdi elimizde şöyle bir kırmızıyla gösterdiğim bir fonksiyon olsun.
+
+532
+01:42:48,307 --> 01:42:52,688
+Bu fonksiyonun sinizoidal bileşenleri nelerdir?
+
+533
+01:42:54,288 --> 01:42:58,228
+Şimdi, öncelikli olarak şöyle düşüneceğiz.
+
+534
+01:42:59,268 --> 01:43:05,568
+Periyodik bir fonksiyonundan bahsettiğimizi düşüneceğiz.
+
+535
+01:43:06,208 --> 01:43:11,768
+Örneğin, sıfırla T uzunluğunda bir aralıkta gidip gelsin bu.
+
+536
+01:43:16,180 --> 01:43:38,260
+T0'dan T0 artı T'ye kadar gitmiş olsun. Bu işaretin periyodu, işaretin kendi periyodu T şeklinde devam ediyor. Mesela herhangi bir periyodik işaret daha kompleks olarak bir kalp atım işareti çizeyim şöyle.
+
+537
+01:43:40,180 --> 01:43:42,180
+Şöyle daha güzel çizeyim.
+
+538
+01:43:42,180 --> 01:43:47,180
+Eğer birbirinin aynıysa, çünkü kalp işareti, periyodik diye özür dilerim.
+
+539
+01:43:47,180 --> 01:43:50,180
+Daha böyle bir işareti çizeyim.
+
+540
+01:43:54,868 --> 01:43:55,588
+Şunun gibi.
+
+541
+01:43:57,548 --> 01:43:59,748
+Her iki yönde de gittiğini düşün.
+
+542
+01:44:00,668 --> 01:44:02,428
+Bir bilin tekrar ettiğini düşün.
+
+543
+01:44:03,768 --> 01:44:04,408
+Örneğin,
+
+544
+01:44:05,968 --> 01:44:06,448
+eksi
+
+545
+01:44:06,448 --> 01:44:08,768
+t bölü 2 ile
+
+546
+01:44:08,768 --> 01:44:11,048
+t bölü 2 arasındaki işaret
+
+547
+01:44:11,048 --> 01:44:13,668
+t bölü 2 artı
+
+548
+01:44:13,668 --> 01:44:16,988
+t şeklinde
+
+549
+01:44:16,988 --> 01:44:18,188
+gidiyor.
+
+550
+01:44:18,928 --> 01:44:20,728
+Kendini tekrar ediyor bu işaret.
+
+551
+01:44:22,323 --> 01:44:24,323
+Şu kafayı kaçtırmasın.
+
+552
+01:44:38,836 --> 01:45:01,395
+Şurada basitçe bir üçgen dalga benzeri yapıvermişler. Kendini tekrardan, Exact T dedi, normal bizim işaretimiz, bizim yaklaşıklığını yani Fourier bileşenlerini bulacağımız işaret, periyodik bizim periyodik işaretimiz.
+
+553
+01:45:07,091 --> 01:45:20,091
+Deseler ki, the best approximation dashed line signal below using only a constant sadece bir sabit değer yani sıfır frekanslı.
+
+554
+01:45:20,372 --> 01:45:44,452
+sıfır frekans sonucu hatırlıyor musunuz? Bir işareti oluşturan ilk şey F0'dır demiştim. Bir tane DC bileşen vermiştim. Sabit bileşen. Neydi arkadaşlar? Eğer ben üçgene yansıtayım ve elinizde sadece kullanmak için bir constant var. Bu işareti yakınlamak için. Ne kullanmışsınız? Bu işaretin ortalamasını kullanmışsınız.
+
+555
+01:45:45,268 --> 01:45:52,448
+Bu işaretin ortalaması da kaç arkadaşlar? 0, 5, 1 ile 0 arasında gidip gelen bir işaret bu.
+
+556
+01:45:53,248 --> 01:45:59,628
+Eğer bize bu sadece bir şey varsa sabit bir değer kullanabilirsin bu işarete yaklaşmak için de.
+
+557
+01:46:04,212 --> 01:46:08,771
+5'in üzerine sinizoidal bileşenleri eklemeye başlayacağız.
+
+558
+01:46:17,140 --> 01:46:20,340
+Arada bazen gidip gelmeler yaşanıyor.
+
+559
+01:46:24,275 --> 01:46:25,255
+Umarım ses.
+
+560
+01:46:27,355 --> 01:46:29,975
+Hocam bir 30-40 saniye gitti sesiniz.
+
+561
+01:46:30,735 --> 01:46:34,175
+30-40 saniye gitti. Nerede en son duymuştunuz?
+
+562
+01:46:40,212 --> 01:46:42,412
+Ortalamasını aldığımız yerde hocam.
+
+563
+01:46:43,032 --> 01:46:45,052
+Evet, evet. Tamamdır.
+
+564
+01:46:46,932 --> 01:46:56,392
+Şimdi amacımız şu kırmızıyla çizmiş olduğum dash dediği çizgili işarete yaklaşabilmek.
+
+565
+01:46:56,972 --> 01:47:04,872
+Elimize bize sadece sabit bir değer kullanın ve de bu kırmızı fonksiyonun aynısını oluşturun deseler.
+
+566
+01:47:05,292 --> 01:47:06,231
+Elimizdeki f bu.
+
+567
+01:47:07,572 --> 01:47:27,292
+f'imiz bizim bu. Üçgen fonksiyonu. Şimdi sadece bir şey değer verse, f0 değerine sahip yani salınımsız değerini verse, ortalamasını koyarız. Birinci bileşeyin bunun ortalama stir işareti. Şimdi dikkat edin.
+
+568
+01:47:27,292 --> 01:47:30,292
+Burada
+
+569
+01:47:32,724 --> 01:47:35,283
+Hala şeye yaklaşmaya çalışıyoruz.
+
+570
+01:47:37,083 --> 01:47:41,463
+Şu üçgene yakınsamaya çalışıyoruz.
+
+571
+01:47:48,020 --> 01:47:50,520
+Hala bu üçgene yakınsamaya çalışıyoruz.
+
+572
+01:47:53,280 --> 01:48:00,300
+İkinci kullanacağım şey, ikinci bir sinüs kullanırım ben bunun üzerine.
+
+573
+01:48:01,200 --> 01:48:05,020
+Bu sinüste arkadaşlar, nedir şeyin?
+
+574
+01:48:05,540 --> 01:48:09,980
+Bakın burada aslında ortalamanın üzerine 0,5'lik bir sinüs.
+
+575
+01:48:12,060 --> 01:48:13,500
+Diyor ki burada.
+
+576
+01:48:15,475 --> 01:48:22,115
+Çizgili şekilde, çizgilerle ifade edilmiş şu arka plandaki kırmızı kısma diyor.
+
+577
+01:48:23,655 --> 01:48:39,115
+İşarete yakınırsamak için kullanacağınız sabit değer artı gerçek bir sinüs kullanacak olursanız ki temel frekansı aynı olsun.
+
+578
+01:48:39,923 --> 01:48:50,923
+Yani bu işareti oluşturan temel frekans değeri arkadaşlar. Bu temel frekans neyi söylüyor bana? Şuradaki...
+
+579
+01:48:55,796 --> 01:48:56,796
+gelmeyi
+
+580
+01:48:57,395 --> 01:48:58,895
+t0 olan
+
+581
+01:48:59,296 --> 01:49:00,096
+yani
+
+582
+01:49:00,296 --> 01:49:01,296
+1 bölü
+
+583
+01:49:01,796 --> 01:49:03,395
+f0 olan
+
+584
+01:49:03,596 --> 01:49:04,596
+ifade
+
+585
+01:49:06,096 --> 01:49:07,596
+bu f0 olan
+
+586
+01:49:08,296 --> 01:49:09,796
+bir saniye arkadaşlar
+
+587
+01:49:24,275 --> 01:49:42,275
+Şimdi, burada fundamental frekansı dediği şey, temel frekans, yani o işareti oluşturan en temeldeki sinüs. Başladığımızda sinüsü ifade etmeye başladık. İlk böyle sabit değeri koyduk.
+
+588
+01:49:47,412 --> 01:50:09,012
+T'yi, T0 ile T anındaki temel sinüsü, yani üst üste bindiğinde, mavi ile çizeyim orayı, buradaki salınımla, kırmızıyla aynı frekansa sahip, tekrarlamaya sahip olan frekansa, biz temel frekans diyoruz arkadaşlar.
+
+589
+01:50:10,432 --> 01:50:12,432
+Fundamental frekans diyoruz.
+
+590
+01:50:12,819 --> 01:50:21,819
+Dikkat edin, o fundamental frekans da, slaytlarda gördüğümüz gibi fundamental frekansı yakalamak önemli.
+
+591
+01:50:22,639 --> 01:50:39,000
+Çünkü sinizoidal olarak onu koymak, çünkü o T ile, yani fonksiyonun T'si ile yakınlamak için kullanacağımız T0'ın aynı olması ilk başta o işareti yakalayabilmek için önemli.
+
+592
+01:50:41,716 --> 01:50:51,496
+Aynı fonksiyonun fundamental frekansıyla aynı frekansı sahip şu işareti de ekledik üzerine.
+
+593
+01:50:52,756 --> 01:50:58,716
+Bunu ekledikten sonra bakın ortalama değer arttı.
+
+594
+01:51:00,536 --> 01:51:02,176
+Ortalama şuraya geldik pardon.
+
+595
+01:51:02,716 --> 01:51:03,635
+Şu anda yakınsıyoruz.
+
+596
+01:51:03,836 --> 01:51:05,336
+Sadece mavilerle yakınsıyoruz.
+
+597
+01:51:05,336 --> 01:51:05,735
+Bakın.
+
+598
+01:51:06,615 --> 01:51:07,195
+Ama uydu mu?
+
+599
+01:51:07,296 --> 01:51:08,115
+Üst üste bindi mi?
+
+600
+01:51:08,395 --> 01:51:08,576
+Hayır.
+
+601
+01:51:09,171 --> 01:51:14,931
+Demek ki bu üçgeni oluşturan farklı sinüzoidaller de varmış.
+
+602
+01:51:19,507 --> 01:51:21,507
+Aşit line ile gösterilen
+
+603
+01:51:29,460 --> 01:51:33,420
+Çizgilerle gösterilen ana frekans
+
+604
+01:51:33,420 --> 01:51:36,979
+Tamam, bir saniye
+
+605
+01:52:01,587 --> 01:52:03,587
+Şu an ses geliyor mu arkadaşlar?
+
+606
+01:52:11,923 --> 01:52:38,604
+Şimdi, bir tane daha sinüs ekliyorum ben bunun üzerine. Bakın, fundamental frekansına sahip sinüs, deminki sinüs eklendi. Yani şu sinüs eklendi. Şu ana kadar eklediklerine neler? 1-Sabite ekledim. 2-Niye ekledim? Şu sinüsü ekledim. Fundamental frekans sahip. 3-
+
+607
+01:52:39,315 --> 01:52:53,996
+Fundamental Frekans'ın iki katı frekansa sahip bir sinüzoid daha ekledim. Bakın bunu da ekleyince yavaş yavaş orijinal işarete yaklaşmaya başlıyorum.
+
+608
+01:52:53,996 --> 01:52:58,576
+Tabii şöyle baktığımda dümdüz geçen bir çizgi var burada.
+
+609
+01:52:59,220 --> 01:53:09,720
+Ama şu etrafında da hafif dalgalar olan şöyle dikkat ediyorsanız tam birebir değil ama gittikçe üçgene yaklaşıyorum.
+
+610
+01:53:09,720 --> 01:53:11,720
+Şimdi
+
+611
+01:53:15,028 --> 01:53:16,048
+Sırada geldim.
+
+612
+01:53:18,868 --> 01:53:20,908
+Üçüncü bir şey daha ekledim.
+
+613
+01:53:21,148 --> 01:53:26,108
+Bir, şunun frekansı 2F0'dı.
+
+614
+01:53:26,208 --> 01:53:30,028
+Fundamental frekansa burada F0 demiştik şununkine.
+
+615
+01:53:31,068 --> 01:53:32,688
+2F0'u ekledik buna.
+
+616
+01:53:32,868 --> 01:53:34,648
+2F0'luk işareti ekledik.
+
+617
+01:53:35,648 --> 01:53:37,188
+Onu da ekleyince iyice yanaştı.
+
+618
+01:53:40,048 --> 01:53:42,488
+3F0'u eklesek,
+
+619
+01:53:43,859 --> 01:53:56,020
+3F0'ı ekleyeceğiz ama bu 3F0 frekansına sahip bileşen bizim işaretimizin içerisinde yokmuş.
+
+620
+01:53:56,500 --> 01:53:59,960
+F0'ı var, 2F0 var. Şurada şöyle söylüyor.
+
+621
+01:54:03,283 --> 01:54:28,283
+Sabit değer ve 3 sinüzoit ile beraber buna yanaşmayı düşünüyoruz. Fakat bu özel durumda, genel bir durum değil, 3. sinüzoitin genliği 0'mış. Bakın, burada bunun genliği yaklaşık ne kadardı? 0,1 civarındaydı. Bununkine kadardı? 0,5 civarındaydı. Öyle değil mi? Demek ki...
+
+622
+01:54:28,368 --> 01:54:52,608
+3F0'a sahip sinüsün gelmeyi ise 0'mış. Yani şunu söylemeye çalışıyor, Fundamental Frekans'ın 3 katı kadar olan sinüs buna eklenmiyormuş. Eklenirse bozuyormuş şekli veya değil. Demek ki o yok. İçerisinde barındırmıyor.
+
+623
+01:54:56,180 --> 01:55:05,560
+Daha yüksek sayıda fundamental frekansın katlarını sırasıyla ekleyerek yaklaşmaya çalışıyoruz burada.
+
+624
+01:55:06,100 --> 01:55:13,900
+Sinuzoik 4 ise eklenmiş. Belli bir değer de buna. Bakalım iyice yaklaşmış artık şeye.
+
+625
+01:55:16,260 --> 01:55:19,520
+Buradan şuna varabiliyoruz arkadaşlar.
+
+626
+01:55:22,868 --> 01:55:36,768
+Herhangi bir işaretin T0 ve T0T anındaki, siz buna 0 ile T arasındaki de diyebilirsiniz.
+
+627
+01:55:38,588 --> 01:55:44,488
+Sunumu, yani gösterilimi genel olarak şu şekilde ifade edilebilir diyor.
+
+628
+01:55:49,140 --> 01:55:53,100
+Kompleks üsterle çarpılıyor. Dikkat edin burada.
+
+629
+01:55:55,180 --> 01:55:58,000
+E üzeri J 2P
+
+630
+01:55:58,000 --> 01:56:00,840
+K
+
+631
+01:56:00,840 --> 01:56:04,480
+Şöyle yapalım önce. Daha güzel olacak bence.
+
+632
+01:56:16,819 --> 01:56:18,059
+şöyle diyelim
+
+633
+01:56:18,059 --> 01:56:20,059
+şu nedir diye bakacak olursak
+
+634
+01:56:20,059 --> 01:56:21,867
+e üzeri
+
+635
+01:56:32,243 --> 01:56:35,683
+J, iki pi, F
+
+636
+01:56:39,988 --> 01:56:41,568
+K, T
+
+637
+01:56:41,568 --> 01:56:45,408
+Eğer şöyle yazsam daha güzel olacak herhalde.
+
+638
+01:56:46,188 --> 01:56:48,008
+Daha böyle anlaşılır olacaktır.
+
+639
+01:56:48,768 --> 01:56:49,308
+2P
+
+640
+01:56:49,308 --> 01:56:51,408
+K çarpı F
+
+641
+01:56:51,408 --> 01:56:54,068
+çarpı T
+
+642
+01:56:54,068 --> 01:56:57,448
+Bunu şu şekilde yazmış.
+
+643
+01:56:58,608 --> 01:57:00,188
+K dediği
+
+644
+01:57:00,188 --> 01:57:02,808
+F'in, yani temel frekansın
+
+645
+01:57:02,808 --> 01:57:04,068
+K katı kadar
+
+646
+01:57:04,068 --> 01:57:07,268
+olsun demiş. Bakın buradaki değişken
+
+647
+01:57:07,828 --> 01:57:14,408
+Fundamental Frekans'ın katlarını bulmuştuk. Fundamental Frekans neydi? 1 bölü T idi.
+
+648
+01:57:15,707 --> 01:57:25,948
+1 bölü T idi. Bizim, daha doğrusu, gerçekten Fundamental Frekans'ı yakalamak lazımdı ki T ile beraber onları ifade edebilelim.
+
+649
+01:57:27,007 --> 01:57:34,828
+Şimdi ne demiştik ilkinde? Ben burada tabii ki Fundamental Frekans'ı ilk seferinde T0 demiştim.
+
+650
+01:57:35,216 --> 01:57:49,515
+İşaretin T'sine yaklaşırsa, aynı olursa en iyi yaklaşımı vereceğimi söylemiştim. Burada da genel gösterimde ise şunu söylemiş.
+
+651
+01:57:54,452 --> 01:57:58,672
+K katı, 0, 1, 2, 3, 4 şeklinde gidiyorduk.
+
+652
+01:57:59,212 --> 01:58:01,472
+F'in K katlarını koyuyorduk.
+
+653
+01:58:01,892 --> 01:58:03,752
+Tabi burada F'i aşağı almış.
+
+654
+01:58:04,392 --> 01:58:04,872
+Ne yapmış?
+
+655
+01:58:05,352 --> 01:58:12,952
+T üzeri J, 2P, K, T, bölü, şöyle T demiş.
+
+656
+01:58:13,452 --> 01:58:14,812
+O yüzden T buraya gelmiş.
+
+657
+01:58:15,692 --> 01:58:17,072
+Şöyle yapsak daha iyi olacak.
+
+658
+01:58:17,072 --> 01:58:19,052
+Aşağı doğru gözükmesin.
+
+659
+01:58:21,332 --> 01:58:47,652
+Şöyle KT demiş. Bu K'nın değişen değerlerine göre çarpılmış olduğu sinüs. Bu sinüsünde belli genlikleri var. Yani temel frekans, iki katı, üç katı. Hani deminkinde bakmıştık ya, şunda genlik düşüktü, şunda genlik sıfırdı, şunda genlik neydi? Sıfır birdi.
+
+660
+01:58:48,083 --> 01:59:04,423
+Şurada genlik neydi? 0,5'ti. İşte bu kat sayılarsa arkadaşlar, o kat sayılarla beraber ilgili sinüsü toplayıp, çarpıp özür dilerim, çarpıp topladığınızda ana işareti elde ediyorsunuz siz burada.
+
+661
+01:59:07,724 --> 01:59:12,283
+Bir de bunu birazdan başka bir kitaba geçeceğiz. Şöyle gösteriyorlar.
+
+662
+01:59:12,283 --> 01:59:14,344
+XT işareti.
+
+663
+01:59:14,739 --> 01:59:24,299
+K, eksi sonsuzdan sonsuza kadar, CK, nasılsa X işaretinin K'inci kat sayısı demek bu.
+
+664
+01:59:24,839 --> 01:59:32,939
+CK çarpı E üzeri J, 2P, K, T bölü T şeklinde de gösterilir.
+
+665
+01:59:32,939 --> 01:59:41,039
+Önemli olan, şuradaki CK ile CK'yı arkadaşlar, Harmonik fonksiyon,
+
+666
+01:59:41,652 --> 02:00:07,652
+Harmonik fonksiyonun kat sayılması demeleri. Ck eşittir, Cxk aynı şey. K'ıncı kat sayı. Ne deniyormuş buna? Harmonik fonksiyon denir. Ve K'yı da harmonikten var. Şuradaki K ise harmoniğin numarası.
+
+667
+02:00:08,692 --> 02:00:10,212
+Ne demek bu harmonik?
+
+668
+02:00:11,092 --> 02:00:15,692
+Hani ilk başta en temelde işarete benzeyen bir tane şey kullanmıştık.
+
+669
+02:00:16,332 --> 02:00:17,412
+Sinüs kullanmıştık.
+
+670
+02:00:17,912 --> 02:00:20,092
+Daha sonra onun iki katını kullandık şöyle.
+
+671
+02:00:20,852 --> 02:00:22,771
+Sonra bunun üç katını kullandık.
+
+672
+02:00:23,252 --> 02:00:24,472
+Dört katını kullandık.
+
+673
+02:00:24,472 --> 02:00:30,012
+Bunun katları, integer katlarına harmonik dediğimizi düşünelim şimdilik.
+
+674
+02:00:31,731 --> 02:00:33,092
+Harmonik fonksiyonlar
+
+675
+02:00:35,764 --> 02:00:43,083
+Harmonik fonksiyonlar işaretten ortogonallik prensibine göre elde edilirler.
+
+676
+02:00:43,824 --> 02:00:47,604
+Genel gösterimi şu, şu ana kadar geldiğimizde genel gösterim bu.
+
+677
+02:00:48,203 --> 02:00:50,463
+Peki ortogonallik kavramı nedir?
+
+678
+02:00:51,184 --> 02:00:52,444
+Ortogonallik kavramı.
+
+679
+02:00:53,163 --> 02:00:55,864
+Bir 10 dakika ara veriyoruz arkadaşlar.
+
+680
+02:00:56,163 --> 02:00:59,184
+Buradan devam edeceğiz tekrar ortogonallik kavramında.
+
+681
+02:01:00,463 --> 02:01:02,724
+Saat 16.10'da başlıyoruz arkadaşlar.
+
+682
+02:12:41,076 --> 02:12:42,315
+Merhabalar arkadaşlar.
+
+683
+02:12:46,804 --> 02:12:48,684
+Ses nasıl şu anda?
+
+684
+02:12:55,572 --> 02:13:07,631
+Tamamdır. Hızlı bir şekilde devam edelim. Evet. Bu kısımlar arkadaşlar matematiksel kısmı.
+
+685
+02:13:07,988 --> 02:13:25,308
+Biraz üzerinden geçilmesi gereken kısımlar. Sizlere de bunu anlattıktan sonra tekrar bir özel şeklinde bir kitaptan bir parçayla beraber üzerinden geçeceğiz. Ondan sonra sizlerin çalışması için zaman vereceğim önümüzdeki haftaya kadar tekrar.
+
+686
+02:13:34,771 --> 02:13:51,271
+O işaretin tanımlı olmuş olduğu, periyodik işaretin tanımlı olduğu herhangi bir periyot aralığında tanımlamasını yapacak olursak, onun temel frekansa sahip sinizoidallerinin belli K katı kadar
+
+687
+02:13:52,083 --> 02:13:57,184
+Buradaki K bölü T aslında K çarpı F'e denk gelmiş oluyor.
+
+688
+02:13:57,184 --> 02:13:58,623
+Hem de anlattığım gibi.
+
+689
+02:13:59,484 --> 02:14:07,663
+Sinüzoidal katları harmonikli ile çarpılıp belli bir genlik ile çarpılıp toplandığı halidir.
+
+690
+02:14:08,423 --> 02:14:14,503
+Biraz sonra buna da arkadaşlar CK'ya da harmonik fonksiyon.
+
+691
+02:14:14,503 --> 02:14:17,384
+CK'ya harmonik fonksiyon.
+
+692
+02:14:21,043 --> 02:14:41,763
+K'ya ise Harmonik numarası deniyor. Harmonik fonksiyon bir işaretten ortogonallik prensibine göre elde ediliyor. Ortogonallik prensibi nedir bir bakalım.
+
+693
+02:14:43,572 --> 02:14:47,572
+Ortogonallik için birkaç tane temel tanım yapmamız gerekiyor arkadaşlar.
+
+694
+02:14:48,612 --> 02:14:56,791
+Öncelikle bir iç çarpım, inner product denilen iç çarpım kavramından bahsetmemiz lazım.
+
+695
+02:15:07,024 --> 02:15:29,083
+t0 artı t, yani o fonksiyonların tanımlı olmuş olduğu aralıklarda. İki fonksiyonun çarpımı. İkinci fonksiyon, dikkat edin, kompleks bir fonksiyonsa onun eşleniğiyle çarpımı olarak genel bir tanımı var. Eğer bu iç çarpım 0 ise,
+
+696
+02:15:29,652 --> 02:15:37,192
+İki fonksiyonun ortogonal olduğunu söylüyoruz. Nerede? Şu T0, T0, T aralığında.
+
+697
+02:15:38,152 --> 02:15:48,032
+Eğer iki fonksiyonun inner product'ı, iç çarpımı, eğer sıfır ise biz bu fonksiyona ortogonal diyoruz.
+
+698
+02:15:48,952 --> 02:15:51,512
+Şimdi şöyle bir şey düşünelim.
+
+699
+02:15:52,051 --> 02:16:19,391
+İki tane kompleks sinizoidalin ki bu E üzeri J 2PKT bölü T ve 2PQT olsun. Yani burada bir Q var, bir de K kavramı var. Yani T'nin şöyle diyelim K bölü T var. Burada da Q bölü T var. Yukarısına çekersek bunu KF.
+
+700
+02:16:20,307 --> 02:16:29,608
+Buraya çekersek Q, F var. Yani K ve Q gibi iki tane integer sayısı olsun. Onun katları şeklinde verilsin.
+
+701
+02:16:30,608 --> 02:16:33,108
+Şimdi bunları çarptığımızda
+
+702
+02:16:34,324 --> 02:16:50,944
+T0 ve T0 artı T. Aslında bu da kafanızı karıştırmasın. Normalde genellikle 0 ve T aralığında verilir bir fonksiyon işlemleri ama bunu genelleştirmek amacıyla herhangi bir yerde yapılıyormuş gibi.
+
+703
+02:16:50,944 --> 02:16:57,824
+Yani şurası örneğin T0 başlangıç hali aynı şekilde T0 artı T.
+
+704
+02:16:58,548 --> 02:17:06,308
+Yani o fonksiyonun kendini tekrarladığı kısımlar diyelim. Şöyle göstereyim, belki daha mantıklı olacak.
+
+705
+02:17:07,268 --> 02:17:14,328
+Fonksiyon, şöyle göstereyim. Kendini tekrarlasın şu şekilde, şöyle.
+
+706
+02:17:18,324 --> 02:17:43,923
+Şimdi ben burada 0 ile T arasında da yapabilirim. Eğer bu herhangi bir T0 anında başlamışsa, buraya T0 dik olursam, gittiğimde şurası T0 artı T'dir. Herhangi bir periyodikliğini tekrarlamış olduğu aralık olarak düşünün. Ne demiştik? İkinci kompleks fonksiyonun eşleniği.
+
+707
+02:17:44,404 --> 02:17:48,043
+Z'nin eşleniği şu şekilde anlatılıyor arkadaşlar.
+
+708
+02:17:51,043 --> 02:17:59,703
+Z'yi biliyorsunuz A artı J B şeklindeydi. Eşleniği A eksi J B şeklinde gösteriliyor.
+
+709
+02:18:01,004 --> 02:18:08,024
+Bir fonksiyonun baktığımızda şöyle gösterelim.
+
+710
+02:18:11,956 --> 02:18:15,416
+Omega T diyelim.
+
+711
+02:18:16,256 --> 02:18:21,056
+Eğer biz bunun eşleniğini alacak olursak, aslında şunu yapmış oluyoruz.
+
+712
+02:18:21,796 --> 02:18:31,556
+Kosünüs Omega T artı J sinüs Omega T'nin eşleniği.
+
+713
+02:18:31,556 --> 02:18:33,056
+Ne yapıyordu bu aslında?
+
+714
+02:18:34,515 --> 02:18:38,556
+Kosünüs, şöyle baktığımızda.
+
+715
+02:18:43,092 --> 02:19:06,992
+Kosünüs omega t eksi j sinüs omega t haline getiriyorum. Bu da neye eşit arkadaşlar? E üzeri eksi j omega t. Yani e üzeri j ile kompleks bir üstelinin eşleniğini almak demek sadece eksili hale getirmek demek üst kısmı.
+
+716
+02:19:07,412 --> 02:19:14,572
+Çünkü burada eksi koyduğumuz zaman bu kosünüstü kısım ne olacak? Çift fonksiyon olduğu için onu yiyecek.
+
+717
+02:19:15,132 --> 02:19:28,992
+Ot kısmı olan, tek kısmı olan sinisöydel kısmı ise yani imajinal taraflı kısmı ise dışarı çıkacağı için şöyle bir fonksiyonu e üzeri j'li bir e üzeri j x'li ifadenin
+
+718
+02:19:29,396 --> 02:19:36,896
+Konjüge kısmı ise ne diyeceğiz arkadaşlar?
+
+719
+02:19:38,335 --> 02:19:42,335
+E üzeri eksi j x şeklinde ifade edilebilir diyeceğiz.
+
+720
+02:19:43,536 --> 02:19:51,116
+Şimdi burada iki tane fonksiyon verilmiş, iki tane farklı frekansa sahip.
+
+721
+02:19:55,092 --> 02:19:58,072
+Ve de Q katı kadar verilmiş olsun.
+
+722
+02:19:59,512 --> 02:20:01,692
+Şimdi ilkini yazdık buraya.
+
+723
+02:20:01,891 --> 02:20:05,532
+Aynı şuradaki birinci kısımdaki gibi, aynen birinci kısmı yazdık.
+
+724
+02:20:06,211 --> 02:20:09,871
+İkinci fonksiyonun ise neyini almış olduk?
+
+725
+02:20:09,952 --> 02:20:11,972
+Eşleniğini, yani conjugation.
+
+726
+02:20:12,652 --> 02:20:16,572
+Eşlenik veya konjüge.
+
+727
+02:20:19,512 --> 02:20:21,612
+Konjüge halini almış olduk.
+
+728
+02:20:22,739 --> 02:20:27,840
+Aldığımızda bunun eksili halini yazmamız yeterli şu ikinci kısımda.
+
+729
+02:20:27,840 --> 02:20:39,739
+Eksili halini yazdık. Bunları tek bir fonksiyon haline toplarsak, k-qt, geri kalan bütün her şey eşit, k-q ifadesi oluşuyor.
+
+730
+02:20:39,819 --> 02:20:47,000
+Yani k-q çarpı f'lik bir şey oluşuyor burada.
+
+731
+02:20:47,443 --> 02:20:51,443
+Fark kadar kat oluşmuş oluyor.
+
+732
+02:20:51,443 --> 02:20:57,443
+Şimdi, ben burada iki türlü şey düşünebilirim.
+
+733
+02:20:59,103 --> 02:21:11,383
+Eğer KQ'ye eşit ise, KQ ile aynı ise, bu durumda benim inner product'ımın sonucu T verecek.
+
+734
+02:21:15,316 --> 02:21:16,796
+T verecek arkadaşlar.
+
+735
+02:21:23,827 --> 02:21:30,067
+Devriğini de almamız gerekiyor mu hocam çarpmak için? Neyi kastettin acaba burada?
+
+736
+02:21:32,207 --> 02:21:39,207
+Hocam benim bildiğim devriğini de alıyoruz. Çünkü mesela ikiye bir bir matrizimiz olsun.
+
+737
+02:21:39,387 --> 02:21:41,507
+Şimdilik matrizler hakkında konuşmuyoruz.
+
+738
+02:21:41,507 --> 02:21:42,627
+Oradaki hani...
+
+739
+02:21:42,627 --> 02:21:50,927
+Evet evet. Şu anda matriz olarak genellemedik. Sadece skaler değerler üzerinde çalıştığımız için.
+
+740
+02:21:51,412 --> 02:22:01,792
+Hani bu fonksiyonu matrisler şeklinde ifade etmiyoruz şu anda. Sadece sürekli halde çalıştığımız için sadece konjüge diyoruz şu anda.
+
+741
+02:22:05,131 --> 02:22:07,711
+Ama matris olaylarını hiç karıştırmayalım şu anda.
+
+742
+02:22:11,219 --> 02:22:38,219
+Tamam. Şimdi ben şuradaki ifadeyi E üzeri yazdığımda E üzeri J'li ifadeyi açtım. Nasıl açabilirim? Kosünüslü ve de sinüslü kısmı halinde açtım. Eğer KQ'ye eşit ise şurası ne verecektir? 0 verecektir. Kosünüs 0 artı J sinüs 0'dan dolayı ne gidecek? Burası 0 olacak.
+
+743
+02:22:38,656 --> 02:22:40,596
+Kosinus 0'da 1 verecek.
+
+744
+02:22:41,316 --> 02:22:49,195
+T0'dan T'ye kadar, T0 artı T'ye kadar altta kalan alan, T0'dan 1DT aslında burası.
+
+745
+02:22:49,996 --> 02:22:51,076
+T verecek sonuç.
+
+746
+02:22:51,736 --> 02:22:54,316
+K Q'ye eşit değilse, ikinci durum.
+
+747
+02:22:55,376 --> 02:22:59,096
+Bu durumda aynen bu şekilde oluşacak.
+
+748
+02:22:59,956 --> 02:23:01,175
+Dikkat edin arkadaşlar.
+
+749
+02:23:01,843 --> 02:23:15,484
+Belli bir aralıkta, is over a non-zero integer, number of cycles, sıfır olmayan non-zero integer'ler varsa aradaki fark bir integer oluşacaktır burada.
+
+750
+02:23:16,603 --> 02:23:26,843
+Buradaki sinüs ve kosünüslerden, cycle'ların oluşacağı için burası bize neyi verecek? Frekansın tam katını vereceği için.
+
+751
+02:23:27,443 --> 02:23:51,703
+Sıfır sonucu verecek. Sonuç sıfır olacak. KQ'ye eşit değilse. Bu durumda şunu söyleyebiliyoruz. EZJ2PKT artı EZJ2PQT ortogoneldir. Ne zaman? K ve Q eşit olmadığında.
+
+752
+02:23:56,340 --> 02:24:01,180
+Her iki tarafı da Fourier serisi ifadesinde.
+
+753
+02:24:02,500 --> 02:24:06,620
+Şu anda biz şunu CX'i çıkarmaya çalışıyoruz.
+
+754
+02:24:06,700 --> 02:24:13,400
+CXK'yı, CXK veya CK ifadesini bulmaya çalışıyoruz.
+
+755
+02:24:13,860 --> 02:24:18,420
+Burada bunu bulmak için bütün bu ortogonallik ifadesini çıkarmaya çalışıyoruz.
+
+756
+02:24:19,283 --> 02:24:25,763
+Her iki tarafı da e üzeri j 2 p q t bül t'ye q 1 integer olmak üzere çarptık.
+
+757
+02:24:25,763 --> 02:24:30,644
+Her iki tarafı da şu ifade haline geldi.
+
+758
+02:24:30,644 --> 02:24:35,923
+Ondan sonra her iki tarafı da integralini alalım.
+
+759
+02:24:35,923 --> 02:24:41,043
+integralini aldık t0 t artı t aralığında.
+
+760
+02:24:41,043 --> 02:24:45,524
+Aldığımızda integralini ne haline gelecek?
+
+761
+02:24:45,652 --> 02:24:55,471
+Şimdi, ortogonallik ifadesinde hesaba kattığımızda, şurası, şurası da CX, şurası ne verecektir?
+
+762
+02:24:56,612 --> 02:25:04,671
+K eşit değilse Q'ya 0, K Q'ya eşit olduğunda T verecek.
+
+763
+02:25:05,191 --> 02:25:09,471
+Toplama K'nın Q'ya eşit olma durumunda katılma yok.
+
+764
+02:25:10,171 --> 02:25:12,772
+Dolayı şöyle söyleyebilir miyiz?
+
+765
+02:25:14,995 --> 02:25:21,815
+Ben artık K yerine sadece Q koydum. K ile Q aynı şekilde kullanılabilir.
+
+766
+02:25:22,775 --> 02:25:30,915
+Ha K koymuşum buraya, ha Q koymuşum. Şuraya Q koyuyorum. Her iki tarafta da şurada da Q, şurada da Q olsun şeklinde.
+
+767
+02:25:31,775 --> 02:25:39,415
+Bunun C, K, Q çarpı burası T verecek. Ne zaman? Zaten sıfır olmadığı durumlarda verecek.
+
+768
+02:25:42,868 --> 02:25:50,407
+CQ'yu yani CQ'yu yazmaya çalıştığımda şu ifadeyi verecek.
+
+769
+02:25:51,808 --> 02:25:56,507
+Veya bunu genel olarak ifade edecek olursak, CK eşittir.
+
+770
+02:25:57,148 --> 02:25:59,927
+K kullanmışım, HQ kullanmışım.
+
+771
+02:26:00,648 --> 02:26:02,328
+Şu ifadeye eşit olacak.
+
+772
+02:26:02,328 --> 02:26:04,227
+Şimdi ne bu?
+
+773
+02:26:04,328 --> 02:26:09,328
+Bir bölü T tanımlı olduğu aralıkta XT ile
+
+774
+02:26:09,940 --> 02:26:14,440
+Bunun konjüge halinin çarpılmış hali.
+
+775
+02:26:15,840 --> 02:26:26,040
+Şimdi buna arkadaşlar iki türlü, buna Fourier serisi dönüşümleri adı veriliyor.
+
+776
+02:26:26,040 --> 02:26:34,639
+Bu Fourier serisi dönüşümlerinde arkadaşlar, XTI elde edersek, şurada bulmuş olduğumuz
+
+777
+02:26:35,347 --> 02:26:47,268
+İlgili sinüzoideli genlik kat sayısı, CK'yı biliyorsak, onu şuradaki sinüzoidal bileşenle çarpıyoruz.
+
+778
+02:26:48,847 --> 02:26:56,087
+K çarpı F katı kadar her seferinde. Bu K eksiden başlar, sonsuza kadar, eksi sonsuzla sonsuz aralığında.
+
+779
+02:27:00,435 --> 02:27:06,155
+Buradaki kat sayıları bulmak istersek, yani ck'ları bulmak istersek, ne yapıyoruz?
+
+780
+02:27:06,795 --> 02:27:16,775
+Kendi real fonksiyonumuzda, xt ile e üzeri eksi j 2pkt'yi çarpıyoruz.
+
+781
+02:27:17,736 --> 02:27:23,315
+İşaret ve harmonik fonksiyonları, Fourier serisi çiftlerini oluşturuyor.
+
+782
+02:27:23,315 --> 02:27:25,896
+İkisi birbirinden elde edilebiliyor.
+
+783
+02:27:26,963 --> 02:27:35,243
+t ise bu ele aldığım x fonksiyonunun representation time'ı diye geçiyor.
+
+784
+02:27:35,243 --> 02:27:46,963
+Şimdi bu representation time bizim x t işaretinin
+
+785
+02:27:47,507 --> 02:28:11,047
+Fundamental periyoduyla, yani o işareti oluşturan, hani deminki örnekte vermiş olduğum T0 ile T aynı ise şayet, yani X'in periyoduyla seçmiş olduğum aralık aynı ise, bu durumda arkadaşlar,
+
+786
+02:28:13,299 --> 02:28:32,799
+Sürekli zamanlı Fourier serisi gösterimi bütün zamanlar için geçerlidir. Yani T, XT işaretinin fundamental frekansıyla aynıysa, bu bütün T0 ve T aralığında, T0 artı T0 artı T aralığındaki bütün
+
+787
+02:28:33,876 --> 02:28:38,576
+Bulmuş olduğum kat sayılar bütün zaman için geçerlidir periyodik bir fonksiyon için.
+
+788
+02:28:39,355 --> 02:28:45,976
+Bu da bizim işte mühendislik uygulamalarındaki frekans kavramına biraz yaklaşıyoruz artık.
+
+789
+02:28:47,136 --> 02:28:56,316
+Eğer diyor T, X, T'nin periyodu değilse sadece o aralıkta geçerlidir diyor.
+
+790
+02:28:59,443 --> 02:29:23,804
+bulmaya çalışacağız arkadaşlar. Genel bir gösterimi bulmaya çalışacağız. Şimdi, real bir fonksiyonu, gerçek değer alan bir fonksiyonu, sürekli zaman Fourier serisi gösterimi, sürekli zaman Fourier serisi gösterimine baktığımız zaman, herhangi bir ck işaretinin
+
+791
+02:29:24,500 --> 02:29:37,619
+Bu ck işaretinin pardon harmonik fonksiyonu ck harmonik fonksiyonunun eksili harmonik numberdaki değerinin eşleniyor olmuş olduğunu da görüyoruz.
+
+792
+02:29:39,459 --> 02:29:50,139
+Gerçek değerli fonksiyonlarda demek gerçek fonksiyonların değerlerde harmonik fonksiyonların genlikleri eşitken
+
+793
+02:29:53,075 --> 02:30:13,435
+Genlikleri eşitken, fazları ise tek fonksiyondur. Çünkü burada sinüzoiden eşlilik olduğu için, burada kompleks değerler çıkacağı için, bunların genliklerini bulduğumuz zaman, eksi ve eksili frekanslar, artılı frekanslara baktığımız zaman, bunların genlikleri aynı.
+
+794
+02:30:21,716 --> 02:30:23,716
+Tek bir fonksiyon oluşturuyor.
+
+795
+02:30:23,716 --> 02:30:25,716
+Yani şunu demek istiyor.
+
+796
+02:30:25,716 --> 02:30:33,716
+Senin bulmuş olduğun şu ck değeri c-k'nın eşliğine eşittir diyor.
+
+797
+02:30:33,716 --> 02:30:34,716
+Bu ne demek?
+
+798
+02:30:34,716 --> 02:30:38,716
+Sen burada a-jb diye bir değer buldun.
+
+799
+02:30:38,716 --> 02:30:45,600
+Oysa burada bulmuş olduğun değer a-jb olacaktır diyor.
+
+800
+02:30:45,600 --> 02:30:57,060
+Ne zaman? Şu K'yı aynı değerin negatifi seçersen. Kısaca özeti bu. Dolayısıyla frekans kavramında biz bunu göreceğiz arkadaşlar ileride.
+
+801
+02:30:57,760 --> 02:31:08,139
+Belli bir frekansın gösteriminde eksili frekanslar, artılı frekansların gibine simetrik olduğunu göreceğiz. Bu ona gönderme yapıyor şu anda.
+
+802
+02:31:08,680 --> 02:31:11,979
+Biraz matematiği bu yönden bu kısımda biraz arız.
+
+803
+02:31:12,691 --> 02:31:30,211
+Şimdi bundan sonraki kısımda biraz daha sürekli zamanlı Fourier serisi gösterimlerinde biraz daha karmaşık olmayan gösterimleri biraz anlatmak istiyorum.
+
+804
+02:31:30,331 --> 02:31:39,691
+Burada biraz daha çok alta dalmış. Sizlerin biraz öncelikli olarak şu matematiksel kısmı biraz incelemenizi istiyorum.
+
+805
+02:31:40,308 --> 02:31:59,488
+Fakat öncelikle olarak başka bir kitaptan, Signals and Systems kitabımız var. Bu kitapta Chapter 5, bunun Türkçesi de vardı arkadaşlar. Şöyle göstereyim ben size. Şöyle kaydırabilirsem şayet.
+
+806
+02:32:07,603 --> 02:32:09,603
+Başına kaydırmıyorum bunu.
+
+807
+02:32:32,691 --> 02:32:33,871
+bu kayda map ne
+
+808
+02:32:46,036 --> 02:32:48,335
+Kitabımızın başlığını önce göstereyim.
+
+809
+02:33:03,636 --> 02:33:05,956
+Yansı like nedense kaydırmıyor bunu.
+
+810
+02:33:18,067 --> 02:33:19,787
+Anasif kaydırmıyorum.
+
+811
+02:33:31,219 --> 02:33:33,219
+Bunu böyle göstermek yerine.
+
+812
+02:33:55,476 --> 02:34:16,476
+Herhalde. Bu kitabın arkadaşlar Türkçesi de var. Şurada içeriğini de göstereyim size. Dersimizle alakalı temel kısımları anlatmış. Fakat burada ders işleyişi olarak bizimkinden farklı olarak...
+
+813
+02:34:16,659 --> 02:34:38,659
+Sinyaller sistemleri gösterdikten sonra, Linear Time Invariant sistemleri gösterdikten sonra, Chapter 3 ve Chapter 4'te Laplace dönüşümü ve z-transformuna geçmiş. Bu bizim çok istemediğimiz bir şey. Öncelikle frekans kavramlarını ve bunları göstermemiz gerekiyor. Bazı kitaplarda işte bu...
+
+814
+02:34:39,023 --> 02:34:59,123
+Laplace dönüşümünü sürekli halde ve z-dönüşümünü ayrık halde önce gösteriyor. O yüzden biz bu yolu tercih etmedik. Biz direkt Linear Time Invariant sistemlerden sonra Chapter 5'e yani 211'e çıktık arkadaşlar. Bizim farkımız şu anda o.
+
+815
+02:35:04,343 --> 02:35:06,484
+Kitabı kaydıramıyoruz şu anda.
+
+816
+02:35:09,299 --> 02:35:10,979
+Şöyle bir kapayım şunu da.
+
+817
+02:35:46,515 --> 02:35:48,515
+Çözümünün başlıyor şimdi.
+
+818
+02:36:10,739 --> 02:36:27,979
+Evet. Şimdi burada biraz kitabın üstünde devam edeceğim arkadaşlar. Burada biraz daha özet bir bilgi olarak vermişler. Öncelik olarak şunu görmüştük biz. Periyodik işaretlerin
+
+819
+02:36:28,500 --> 02:36:44,799
+Fourier serisi gösterimlerini gördük. Biraz daha burada altyapıyı, genel yaklaşımı anlatmaya çalıştım uzun uza diye. Genel olarak bir periyodik sinyali nasıl tanımlıyoruz arkadaşlar? XT artı T.
+
+820
+02:36:45,716 --> 02:37:06,456
+XT işaretine eşit, yani belli bir periyoddan sonra yine aynı değeri almaya başlıyor. Yani bizim işaretimiz şöyle olduğu zaman, belli bir T zamanından sonra ne yapıyor? Kendini tekrarlamaya başlıyor. 3T diyelim şöyle, kendini tekrarlayarak ilerliyor diyelim.
+
+821
+02:37:11,763 --> 02:37:22,563
+XT'nin, XT işaretinin temel periyodu, yani o işareti oluşturan, hani bizim sorumuzda görmüştük ya şöyle.
+
+822
+02:37:26,644 --> 02:37:36,984
+Onu oluşan temel fonksiyonu ki bu fonksiyonun sinizoidal fonksiyonun frekansı periyodu T0 olsun.
+
+823
+02:37:38,583 --> 02:37:41,783
+Fundamental period T0 olsun.
+
+824
+02:37:46,304 --> 02:37:48,644
+Bu T'nin...
+
+825
+02:37:49,332 --> 02:38:09,711
+En küçük pozitif değerine eşit olduğu durumlarda diyor. Yani 1 bölü T0, F0 fundamental frekansıyı görüştürmek, görüşü sağlamak üzere diyor. Burada görmüş olduğunuz T fonksiyonu ile beraber T eşittir T0 hissediyor.
+
+826
+02:38:15,379 --> 02:38:38,159
+Genel gösterimi, sinüzoidal bir gösterim, cos omega 0 T şeklinde olsun diyor. Burada omega 0 arkadaşlar, ne şeklinde gösteriyor? 2P F0 diye gösterilecek. Buradaki F0 da 1 bölü T0 gösterecek. Benim buradaki işaretimin fundamental frekansı F0.
+
+827
+02:38:39,219 --> 02:38:43,939
+Ve de aynı zamanda kosünüs de yine F0 ile değişiyor.
+
+828
+02:38:44,479 --> 02:38:51,579
+Demin verdiğim işaretlerde arkadaşlar, temel frekanslar üstüne çok daha farklı sayıda frekans binebiliyor.
+
+829
+02:38:51,719 --> 02:39:05,459
+Yani burada tek kosünüs olduğu için aynı ama artı değişik kosünüsler varsa 2 omega 0 T artı 1 bölü 2 kosünüs 5 omega 0 T şeklinde gittiğini düşünün.
+
+830
+02:39:06,355 --> 02:39:14,175
+Şimdi, burada 2PF0 ise arkadaşlar, temel açısal frekans deniyor.
+
+831
+02:39:14,515 --> 02:39:20,536
+Yani benim burada göstermiş olduğum Omega0 ise temel açısal frekans olarak adlandırılıyor.
+
+832
+02:39:21,796 --> 02:39:26,216
+Sözün özü, benim uzun uzun grafiklerle anlattığım şeyde,
+
+833
+02:39:32,020 --> 02:39:38,960
+Kompleks eksponansiyellerle beraber Fourier serisi gösterilimi şu şekilde verilmişti hatırlarsanız.
+
+834
+02:39:39,620 --> 02:39:46,020
+Burada biz CK yerine CK şunu kullanıyorduk.
+
+835
+02:39:46,840 --> 02:39:49,220
+Bence buradaki kullanım çok daha mantıklı.
+
+836
+02:39:49,940 --> 02:39:59,360
+CX işaretinin K'ıncı harmoniğinin kat sayısı olarak kullanılıyordu.
+
+837
+02:40:00,000 --> 02:40:04,500
+Burada şunun harmonik fonksiyon olduğunu düşünün.
+
+838
+02:40:08,115 --> 02:40:14,015
+Bu harmonik fonksiyonun sonucunda elde edilen kat sayı diye düşündük. Ne yapıyorduk bunu?
+
+839
+02:40:14,716 --> 02:40:23,636
+E üzeri J, K, Omega 0. Omega 0'da ise ne yapıyorduk? Dikkat edin. E üzeri J, K, Omega 0, T diyelim.
+
+840
+02:40:23,636 --> 02:40:35,636
+Bunu nasıl gösteriyorduk? E üzeri J, K, 2P, F0, T veya bunu nasıl yazabiliriz? E üzeri...
+
+841
+02:40:36,095 --> 02:40:52,536
+J, 2P, K, T, bölü, T0. Deminkiyle aynı gösterime ulaşmış oldum. Bu biraz daha değerli toplu yazmış bu kısımda arkadaşlar.
+
+842
+02:40:54,536 --> 02:41:00,295
+Şimdi, buradaki CK'lar kompleks Fourier kat sayıları.
+
+843
+02:41:00,672 --> 02:41:19,792
+Kompleks Fourier kat sayıları olarak geçiyor. Demin ispatlamıştık ki, kompleks Fourier kat sayıları arkadaşlar, 1 bölü T0 XT, bu sefer kompleks eşleniyle çarpılıyordu arkadaşlar.
+
+844
+02:41:27,219 --> 02:41:49,299
+Burada kullanmış olduğum şu integral T0 ifadesi şurada, 0 T0 aralığında ölçülebileceği veya hesaplanabileceği gibi, eksit T0 bölü 2 artı T0 bölü 2 aralığında da kullanılabilir.
+
+845
+02:41:52,979 --> 02:42:06,920
+Sınavınız varsa arkadaşlar hemen bitireyim. Şuraya kadar geleyim en azından. Trigonometrik Fourier serilerine kadar geleyim. Ondan sonra ne sınavı vardı arkadaşlar? Herkesin var mı sınavı?
+
+846
+02:42:07,360 --> 02:42:11,040
+Yapısal programlama sınavı var hocam. İkinci sorusu iptal edilmişti.
+
+847
+02:42:12,239 --> 02:42:15,000
+İkinci sorusu mu iptal edilmişti?
+
+848
+02:42:15,239 --> 02:42:17,559
+Evet iptal edilmişti. Tekrar yapıyorlar hocam sınavı.
+
+849
+02:42:18,119 --> 02:42:20,200
+Tamam. Bütün herkes alıyor mu bu grupta?
+
+850
+02:42:23,316 --> 02:42:25,056
+Kaç kişi alıyor burada arkadaşlar?
+
+851
+02:42:30,100 --> 02:42:55,139
+Tamamdır. Tamam. Ben o zaman hiç şey yapmayayım sizden. Buna nasılsa haftaya devam edeceğiz. Dediğim gibi en sonunda şu varmış olduğum yere kadar geliyor. Siz bu kitabı bulursunuz diye tahmin ediyorum arkadaşlar. Bu kısımdan itibaren anlatırım. Siz sınavınıza hazırlanın. 20 dakikadanca sınavınıza hazırlanırsınız. Burada o zaman bırakalım. Haftaya devam ederiz. Olur mu?
+
+852
+02:42:57,587 --> 02:42:58,427
+Tamamdır.
+
+853
+02:43:00,067 --> 02:43:02,788
+Hepinize sınavınıza başarılar diliyorum arkadaşlar.
+
+854
+02:43:03,667 --> 02:43:06,968
+Söyleseydiniz ben buçukta da bırakırdım daha önce şey yapsaydınız.
+
+855
+02:43:09,308 --> 02:43:12,587
+Kolay gelsin hepinize. İyi sınavlar hepinize şimdi.
+
+856
+02:43:23,123 --> 02:43:24,123
+Görüşmek üzere.

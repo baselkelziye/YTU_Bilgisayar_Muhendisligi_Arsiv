@@ -5,4 +5,5 @@
 | Şube | Dönem | Hoca | Klasör |
 | :---: | :---: | :--- | :--- |
 | 1 | Yaz | Dr. Ahmet Elbir | [sube_1/](sube_1/) |
+| 1 | Güz | Doç. Dr. Gökhan Bilgin | [sube_1_guz/](sube_1_guz/) |
 | 2 | Güz | Ahmet Elbir | [sube_2/](sube_2/) |
