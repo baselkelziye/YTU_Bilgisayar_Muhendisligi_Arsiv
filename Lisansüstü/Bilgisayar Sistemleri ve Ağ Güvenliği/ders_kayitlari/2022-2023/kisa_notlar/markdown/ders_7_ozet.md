@@ -1,0 +1,157 @@
+# Ders 7 Çalışma Özeti
+
+## Genel Konular
+
+- Önceki derslerle bağlantı ve güvenlik denetiminin gerekçesi
+  - Önceki derslerde güvenliğin yönetimsel boyutu işlenmişti: örnek bir firma üzerinden risk değerlendirmesi ve risk yönetimi, buna dayanan güvenlik kontrolleri, planları ve prosedürleri, fiziksel ve altyapı güvenliği ve insan kaynakları güvenliği.
+  - Bilgisayar ve ağ güvenliği "kur ve unut" mantığında işleyen bir mekanizma değildir. Saldırganlar sürekli yeni teknolojilerle yeni zayıflıklar arar; bu yüzden kurulan sistemin, planların, prosedürlerin ve kontrollerin doğru işleyip işlemediği sürekli denetlenmeli, sonuçlara göre planlar gözden geçirilip güncellenmelidir.
+  - Hiç saldırı yaşanmayan bir kurumda "bu kadar harcama boşa mı gitti" sorusu doğar; alınan önlemlerin işe yaradığı da güvenlik denetimiyle görülür.
+  - Güvenlik denetimi, uygulanan politika ve prosedürler kadar önemlidir.
+- Dersin içeriği (ekrandan, 00:10:00)
+  - Güvenlik denetim mimarisi, güvenlik denetimi izi, loglama işlevinin uygulanması, denetim izi analizi, güvenlik bilgileri ve olay yönetimi (SIEM).
+- Güvenlik denetimi terminolojisi (RFC 4949) (ekrandan, 00:15:00)
+  - Güvenlik denetimi (security audit): sistem kontrollerinin yeterliliğini belirlemek, yerleşik güvenlik politikası ve prosedürlerine uyumu sağlamak, gizlilik hizmetlerindeki ihlalleri tespit etmek ve karşı önlemler için belirtilen değişiklikleri tavsiye etmek amacıyla bir sistemin kayıtlarının ve faaliyetlerinin bağımsız olarak gözden geçirilmesi ve incelenmesidir.
+  - Temel amaç, güvenlikle ilgili olayları ve eylemleri başlatan ya da bunlara katılan sistem varlıkları için hesap verebilirlik oluşturmaktır. Bunun için denetim izi oluşturmak, kaydetmek ve saldırı ile ihlalleri keşfetmek için incelemek ve analiz etmek üzere araçlara ihtiyaç vardır.
+  - Güvenlik denetimi izi (security audit trail): başlangıcından nihai sonucuna kadar güvenlikle ilgili bir işlemde bir operasyonu, prosedürü veya olayı çevreleyen ya da bunlara yol açan ortamlar ve faaliyetler dizisinin yeniden oluşturulmasını ve incelenmesini sağlamaya yeterli sistem faaliyetlerinin kronolojik kaydıdır.
+- Güvenlik denetim mimarisi (X.816)
+  - Güvenlik denetimi ve alarm modeli: olay ayrıştırıcı (event discriminator) akan olaylardan kaydedilecekleri seçer; seçilen veriler kaydedilir, belli eşikler aşılınca alarm üretilir ve alarma göre aksiyon alınır. Kaydedilen verilerin analizi de (eşik aşılmasa bile anormal aktivite görülürse) alarm üretebilir. Kayıtlar arşive gönderilebilir. <!-- BELİRSİZ: model şeklinin slaytı karelerde yok; bileşen adları yalnız altyazıdan alındı -->
+  - Dağıtık denetim izi modeli: ağdaki her sunucuda (örneğin e-posta sunucusu) kayıt toplayan küçük ajanlar bulunur; loglar belli bir noktada toplanır ve topluca analiz edilir. Sistemi bütüncül incelemenin modelidir.
+  - Güvenlik denetimi işlev akışı: veri üretimi (kullanıcı kimliğiyle birlikte), olay seçimi, olay kaydı (depolama), eşiklere karşı alarm (otomatik yanıt), potansiyel ihlal ve saldırı analizi, denetim incelemesi ve buna dayanan güvenlik planları. <!-- BELİRSİZ: akış diyagramı karelerde yok -->
+- Olay tanımlama: Ortak Kriterlerin (Common Criteria) önerdiği denetlenecek olaylar (ekrandan, 00:20:00)
+  - Nesnelerin tanıtımı (oluşturulması) ve silinmesi (örneğin veritabanında tablo açılması/silinmesi).
+  - Erişim haklarının veya yeteneklerinin dağıtılması veya iptali.
+  - Özne veya nesne güvenlik özniteliklerinde yapılan değişiklikler (örneğin kullanıcının grubunun değişmesi).
+  - Güvenlik yazılımı tarafından gerçekleştirilen politika kontrolleri.
+  - Politika kontrolünü atlamak için erişim haklarının kullanılması.
+  - Tanımlama ve kimlik doğrulama işlevlerinin kullanımı.
+  - Operatör/kullanıcı tarafından gerçekleştirilen güvenlikle ilgili eylemler.
+  - Çıkarılabilir ortamdan/ortama veri alma/verme (flash disk, harici disk).
+  - Liste, korunan sisteme bağlı olarak genişletilebilir.
+- Olay tespiti (ekrandan, 00:25:00)
+  - Uygulamada ve sistem yazılımında uygun kancalar (hook) bulunmalı; izleme yazılımı sisteme ve uygun yerlere eklenmelidir.
+  - Kayıtlar kurcalamaya ve silmeye karşı dayanıklı, güvenli bir depolamada tutulmalıdır.
+  - Analiz araçları eşik alarmının yanında veri eğilimlerini ve anormallikleri araştırmak için de kullanılabilir.
+  - Denetim işlevinin kendi güvenliği için ek bir gereklilik vardır.
+  - Denetim sisteminin işlevsellik (performans) üzerinde etkisi en az olmalıdır.
+- Uygulama yönergesi
+  - Denetim gereksinimleri uygun yönetimle kararlaştırılmalı; kancaların hangi verileri alacağı ve teknik denetim testlerinin kapsamı belirlenmeli ve kontrol edilmelidir.
+  - Denetim testleri salt okunur erişimle sınırlanmalı; bunun dışındaki erişime yalnız sistem dosyalarının yalıtılmış kopyaları üzerinde izin verilmelidir.
+  - Özel veya ek işleme gereksinimleri tanımlanıp kararlaştırılmalıdır.
+  - Sistem kullanılabilirliğini etkileyebilecek testler mesai saatleri dışında yapılmalıdır.
+  - Referans izi oluşturmak için tüm erişimler izlenmeli ve loglanmalıdır.
+- Hangi veriler toplanır
+  - Denetim yazılımının kullanımıyla ilgili olaylar (denetime müdahale olup olmadığını görmek için), sistemdeki güvenlik mekanizmalarıyla ilgili olaylar, güvenlik algılama ve önleme mekanizmalarının kullanacağı veriler, sistem yönetimi ve işletimiyle ilgili olaylar, işletim sistemine erişim, seçilen kritik uygulamalara (finans, ERP) erişim, uzaktan erişim.
+- X.816'da önerilen denetlenebilir öğeler (ekrandan, 00:30:00)
+  - Bağlantıyla ilgili olaylar: bağlantı istekleri, onaylanan bağlantılar, bağlantı kesme istekleri, onaylanan bağlantı kesmeler, bağlantı istatistikleri.
+  - Güvenlik hizmetlerinin kullanımıyla ilgili olaylar: hizmet talepleri, mekanizma kullanımı, güvenlik alarmları.
+  - Yönetimle ilgili olaylar: yönetim işlemleri ve bildirimleri.
+  - En az şu olaylar: giriş redleri, kimlik doğrulama, öznitelik değişikliği, nesne oluşturma, silme ve değiştirme, ayrıcalık kullanımı.
+  - Bireysel güvenlik hizmetleri açısından: kimlik doğrulama (başarılı/başarısız), erişim kontrolü (başarılı/başarısız), inkâr edilemezlik, bütünlük, gizlilik ve denetim hizmetinin kendisiyle ilgili olaylar.
+- ISO 27002'de önerilen izleme alanları
+  - Kullanıcı kimlikleri; sistem faaliyetleri; oturum açma/kapama gibi olayların tarih, saat ve ayrıntıları; mümkünse cihaz kimliği, konumu ve sistem tanımlayıcısı.
+  - Başarılı ve reddedilen sistem erişim girişimleri ile veri ve kaynak erişim girişimleri.
+  - Sistem yapılandırmasındaki değişiklikler, ayrıcalık kullanımı, sistem yardımcı programlarının ve uygulamaların kullanımı.
+  - Erişilen dosyalar ve erişim türü, ağ adresleri ve protokolleri.
+  - Erişim kontrol sisteminin ürettiği alarmlar; antivirüs ve IDS/IPS sistemlerinin devre dışı bırakılma girişimleri; uygulamalarda kullanıcıların yaptığı işlemlerin kayıtları.
+- Denetim izi örnekleri (ekrandan, 00:35:00)
+  - Kimlik doğrulama mesajlarını gösteren sistem logu (konsoldan root girişi, yeniden başlatma, `su root` başarıları).
+  - E-posta teslim sistemine ait uygulama düzeyi denetim kaydı (gönderen, alıcı, boyut, gecikme, durum).
+  - Kullanıcıların çalıştırdığı komutların kronolojik listesi (komut, kullanıcı, terminal, süre, tarih-saat).
+- Fiziksel erişim denetim izleri
+  - Kartlı anahtar ve alarm sistemleri gibi fiziksel erişimi kontrol eden ekipman tarafından üretilir; analiz ve depolama için merkezi bilgisayara gönderilmelidir.
+  - Erişim girişiminin tarihi, saati, konumu, kullanıcısı; geçerli ve geçersiz girişimler; fiziksel ayrıcalıklarda (odaya girme yetkisi gibi) değişiklikler; ihlal durumunda personele mesaj.
+- Denetim verisinin depolanması (RFC 2196, Site Güvenliği El Kitabı)
+  - Ana bilgisayarda okuma/yazma dosyası: kolay, en az kaynak gerektiren ve anında erişilebilen yöntemdir; ancak makineyi ele geçiren saldırgan kayıtlara da erişebilir.
+  - Bir kez yazılıp çok okunan ortam (CD-ROM, DVD-ROM): daha güvenli ama daha az kullanışlı; sürekli ortam ihtiyacı vardır, erişim gecikebilir.
+  - Salt yazılır aygıt (satır yazıcı ile kâğıda kayıt): büyük sistemlerde ayrıntılı denetim için pratik değildir ama kalıcı bir delil oluşturur.
+  - Denetim verisi değiştirilmemeli, silinmemeli, gizliliği korunmalıdır: şifreleme, dijital imza ve erişim kontrolü kullanılabilir.
+- Loglama işlevinin uygulanması (ekrandan, 00:40:00)
+  - Güvenlik denetim tesisinin temeli denetim verilerinin ilk elde edilmesidir; veri yoksa denetim yoktur.
+  - Yazılım, önceden seçilmiş olaylar meydana geldikçe veri toplamayı ve depolamayı tetikleyen kancalar (yakalama noktaları) içermelidir; bu, yazılımın doğasına, yani işletim sistemine ve uygulamaya bağlıdır.
+- Windows olay logu (ekrandan, 00:45:00)
+  - Olay, ilginç bir durumu tanımlayan varlıktır: sayısal bir tanımlama kodu, bir dizi özellik ve isteğe bağlı kullanıcı verisi içerir.
+  - Üç tür log: sistem (sistem uygulamaları ve sürücüler), uygulama (kullanıcı düzeyindeki uygulamalar), güvenlik (slaytta "Windows YSA"; büyük olasılıkla Windows yerel güvenlik yetkilisi).
+  - Olay şeması öğeleri arasında ikili veri, kanal, olay sağlayıcı parametreleri, bilgisayar adı, ilişkili olayları bulmak için iki adet 128 bitlik değer, görev ve zaman bilgisi bulunur.
+  - Örnek kayıt: olay tipi "Success Audit", kaynak "Security", olay kimliği, zaman, kullanıcı, bilgisayar ve "olay logunun temizlenmesi" açıklaması. <!-- BELİRSİZ: örnek kaydın slaytı karelerde yok; altyazıda olay kimliği 512 diye geçiyor -->
+  - Olay kategorileri: hesap oturum açma olayları, hesap yönetimi, dizin hizmeti erişimi, oturum açma olayları, nesne erişimi, politika değişiklikleri, ayrıcalık kullanımı.
+- Unix syslog
+  - `syslog()`: standart sistem yardımcı programlarının başvurduğu ve uygulamaların kullanabildiği API.
+  - `logger`: sistem loguna tek satırlık giriş ekleyen komut.
+  - `/etc/syslog.conf`: olayların loglanmasını ve yönlendirilmesini denetleyen yapılandırma dosyası.
+  - `syslogd`: olayları alıp kaydeden arka plan sistem süreci (daemon).
+- Syslog servisi (ekrandan, 00:50:00)
+  - Temel servisler: ilgili olayları yakalama yolu, depolama imkânı, logları merkezi bir log sunucusuna iletmek için protokol.
+  - Eklenti özellikleri: sağlam filtreleme, log analizi, olay yanıtı, alternatif mesaj formatları, log dosyası şifreleme, veritabanında depolama, oran sınırlaması.
+- Syslog protokolü (ekrandan, 01:10:00)
+  - Ana bilgisayarların log sunucularına IP üzerinden olay bildirimi göndermesini sağlayan aktarım mekanizmasıdır; çok genel bir mesaj formatı sağlar.
+  - Ortak versiyonu University of California Berkeley Software Distribution (BSD) UNIX/TCP/IP uygulamalarında geliştirilmiştir.
+  - BSD syslog mesajı: PRI (tesis/önem derecesi kodu), başlık (zaman damgası, ana bilgisayar adı/IP adresi), mesaj (program adı ve içeriği).
+  - Tesisler (kern, user, mail, daemon, auth, lpr, news, cron, ftp, ntp vb.) ve önem düzeyleri (emergency, alert vb.). <!-- BELİRSİZ: tesis ve önem düzeyi tablosu karelerde yok; liste altyazıdan kısmen çıkarıldı -->
+- Uygulama düzeyi loglama
+  - Ayrıcalıklı uygulamalar güvenlik sorunu yaratır: zafiyetleri istismar edilirse saldırgan uygulamanın yetkileriyle işlem yapar ve bu, sistem düzeyindeki denetim verisiyle yakalanmayabilir.
+  - Bildirilen güvenlik açıklarının büyük kısmı uygulama düzeyindedir; çoğu girdinin denetlenmemesinden doğar (SQL enjeksiyonu, arabellek taşması).
+  - İki yaklaşım: araya yerleştirilebilir kütüphaneler (interposable libraries) ve dinamik ikili yeniden yazma.
+  - Araya yerleştirilebilir kütüphaneler: sistem kütüphaneleri veya uygulama yeniden derlenmeden denetim verisi üretilir; paylaşılan (dinamik bağlı) kütüphane fonksiyonunun önüne log alan bir fonksiyon yerleştirilir.
+  - Dinamik ikili yeniden yazma (ekrandan, 01:15:00): hem statik hem dinamik bağlı programlarda kullanılabilir; derleme sonrası yürütülebilir dosyanın ikili kodunu değiştirir; değişiklik yükleme sırasında yapılır, yalnız bellek görüntüsünü değiştirir, yeniden derleme gerektirmez. Linux'ta yüklenebilir çekirdek modülü ve izleme cini (daemon) ile uygulanmıştır.
+- Denetim izi analizi
+  - Analiz için log girişlerinin bağlamının anlaşılması gerekir; ilgili bilgi aynı logdaki diğer girişlerle, diğer loglarla ve log dışı kaynaklarla korelasyondan bulunur.
+  - Denetim dosyaları düz metin ve kodların karışımıdır; elle ya da otomatik çözülmelidir.
+  - Analizin zamanlaması: olaydan sonra, periyodik olarak, gerçek zamanlı (saldırı tespitinin parçası olarak).
+  - Gözden geçirme; kullanıcıya, nesneye/kaynağa, istisnalara, sistem ya da güvenlik özelliğine göre kayıt seçmeye ve zamana, kaynağa, sıklığa göre filtrelemeye izin verir.
+  - Analiz yaklaşımları: basit uyarı, temel çizgi ile karşılaştırma ve eşikleme, olayları çevreleyen parametrelerin tanımlanması (pencereleme), korelasyon.
+- SIEM (güvenlik bilgileri ve olay yönetimi) (ekrandan, 01:20:00)
+  - Syslog'a benzer ama çok daha karmaşık, merkezi bir log yazılımı paketidir; merkezi, tek tip bir denetim izi deposu ve bir dizi analiz programı sağlar.
+  - Aracısız yapılandırma: SIEM sunucusu log üreten bilgisayarlardan, onlara özel yazılım kurmadan veri alır.
+  - Aracı tabanlı yapılandırma: log üreten bilgisayara kurulan ajan filtreleme, toplama ve normalleştirme yapıp veriyi (neredeyse) gerçek zamanlı SIEM sunucusuna iletir.
+  - SIEM farklı log biçimlerini normalleştirir, çoklu kaynaklardan gelen veriyi analiz eder, olayları ilişkilendirir, önemli olayları tanımlayıp önceliklendirir ve istenirse yanıt başlatır.
+
+## Hocanın Özellikle Vurguladığı Kısımlar
+
+- Güvenlik bir kez kurulup bırakılan bir şey değildir
+  - Saldırganlar sürekli yeni yöntem aradığı için kontrollerin işleyişi sürekli denetlenmeli, planlar güncellenmelidir.
+  - Hiç saldırı olmaması da alınan önlemlerin değerini sorgulatır; denetim, önlemlerin sonuç verdiğini gösterir.
+- Kayıtların kurcalamaya karşı korunması
+  - Loglar saldırganın eriştiği yerde tutulursa, yetkisini yükselten akıllı bir saldırgan ilk iş olarak log kaydını değiştirir.
+  - Bu yüzden kayıtlar değiştirmeye ve silmeye dayanıklı, ayrı ve güvenli bir yerde tutulmalıdır.
+- Denetim sisteminin performansa etkisi en az olmalı
+  - Kuralları işleyecek kapasitesi yetersiz bir güvenlik cihazı ağda darboğaz olur: ağ saniyede cihazın işleyebileceğinden (örneğin 1 milyon paket) fazla paket üretirse fazlası düşürülür ve tam kapasite kullanılamaz.
+  - Küçük işletmede bu sorun olmayabilir, büyük kurumda kritiktir.
+- Kanca benzetmesi
+  - Olay yakalamak balık tutmaya benzer: hedeflenen olaya uygun kanca seçilmeli ve doğru yere konmalıdır; büyük kancayla küçük balık, küçük kancayla büyük balık tutulmaz.
+- Denetim salt okunur olmalıdır
+  - Denetimin amacı sürecin işleyişini değiştirmek değil gözlemek ve aksiyon almaktır; değişiklik gerekiyorsa yalnız yalıtılmış kopyalar üzerinde çalışılmalıdır.
+- Kök neden analizi
+  - Denetim izi, ihlali başlatan ve ona katkı sağlayan nedenleri bulmak içindir; baş ağrısının nedenini bulmaya çalışan bir hekim gibi belirtiden nedene gidilir.
+
+## Kısa Tekrar Notları
+
+- RFC 4949: güvenlik denetimi = kayıtların ve faaliyetlerin bağımsız incelenmesi; denetim izi = olayları yeniden kurmaya yeten kronolojik kayıt.
+- Amaç: güvenlik olaylarını başlatan/katkı sağlayan varlıklar için hesap verebilirlik.
+- X.816: denetim ve alarm modeli (olay ayrıştırıcı, kayıt, eşik alarmı, analiz, arşiv) ve dağıtık model (her düğümde toplayıcı ajan, merkezde analiz).
+- Ortak Kriterler olay listesi: nesne oluşturma/silme, hak dağıtma/iptal, öznitelik değişikliği, politika kontrolleri, kimlik doğrulama, operatör eylemleri, çıkarılabilir ortam.
+- Olay tespiti gereksinimleri: uygun kancalar, kurcalamaya dayanıklı depolama, analiz araçları, denetimin kendi güvenliği, en az performans etkisi.
+- Yönerge: yönetimle uzlaşma, salt okunur erişim, yalıtılmış kopya, mesai dışı test, tüm erişimin loglanması.
+- RFC 2196 depolama seçenekleri: ana bilgisayarda dosya, bir kez yazılan ortam, satır yazıcı; koruma için şifreleme, dijital imza, erişim kontrolü.
+- Windows olay logu: sistem, uygulama, güvenlik logları; olay = sayısal kod + özellikler + isteğe bağlı veri.
+- Unix: `syslog()` API, `logger` komutu, `/etc/syslog.conf`, `syslogd`.
+- BSD syslog mesajı: PRI + başlık (zaman damgası, ana bilgisayar) + mesaj.
+- Uygulama düzeyi loglama: araya yerleştirilebilir kütüphaneler ve dinamik ikili yeniden yazma.
+- Analiz zamanlaması: olay sonrası, periyodik, gerçek zamanlı; yaklaşımlar: basit uyarı, temel çizgi/eşik, pencereleme, korelasyon.
+- SIEM: merkezi, normalleştiren, ilişkilendiren log yönetimi; aracısız ve aracı tabanlı yapılandırma.
+
+## Detaylı Açıklamalar
+
+- Güvenlik denetiminin yeri
+  - Önceki derslerde risk değerlendirmesinden çıkan kontroller, planlar ve prosedürler uygulanmıştı. Bu ders, o kontrollerin gerçekten işleyip işlemediğini görmenin yolunu anlatır. Denetim, normal iş akışından (mesajların, verilerin, süreçlerin akışından) bağımsız olarak sistemin gözlenmesi ve incelenmesidir. Denetimin temel aracı loglamadır: planlara göre belirli olaylar kaydedilir, sonra kayıtlar incelenerek sürecin beklendiği gibi işleyip işlemediği ya da anormal bir aktivite, saldırı girişimi veya gerçekleşmiş bir saldırı olup olmadığı anlaşılır ve olay yönetimi devreye girer.
+- Neyi kaydetmeli
+  - Rutin süreçlerdeki her faaliyet kaydedilmez. Örneğin her e-posta loglanmaz; belli adreslere giden, belli metinleri ya da ekleri içeren e-postalar kaydedilir ve bunlara göre eşikler tanımlanarak alarmlar üretilir. Kaydedilecek olay kümesi Ortak Kriterler, X.816 ve ISO 27002 gibi kaynaklara göre belirlenir ve sistemin ihtiyacına göre genişletilir.
+- Kancalar ve depolama
+  - Olayların yakalanabilmesi için işletim sisteminde ve uygulamada uygun yerlerde kancalar bulunmalıdır; yazılımda böyle bir mekanizma yoksa loglama yapılamaz. Kancaların kaydettiği uzaktan girişler ve yetki yükseltmeleri gibi olaylar, aynı makinede tutulursa saldırgan tarafından silinebilir; bu yüzden kayıtlar ayrı ve dayanıklı bir depoda tutulur. RFC 2196 bu depolama için ana bilgisayardaki dosyayı (kolay ama saldırıya açık), bir kez yazılan optik ortamı (güvenli ama yavaş ve zahmetli) ve satır yazıcıyı (kalıcı delil ama büyük sistemlerde takip edilemez) karşılaştırır.
+- Örnek denetim izleri (ekrandan, 00:35:00)
+  - Slayttaki üç örnek: (a) kimlik doğrulama mesajları içeren sistem logu: tarih-saat, makine (`host1`) ve olay (`login: ROOT LOGIN console`, `shutdown: reboot by root`, `su: 'su root' succeeded for user1 on /dev/ttyp0`, `date: set by user1`); (b) e-posta teslim sisteminin uygulama düzeyi kaydı: mesaj kimliği, `from=<user2@host2>, size=3355, class=0` ve `to=<user1@host1>, delay=00:00:02, stat=Sent` gibi satırlar; (c) kullanıcıların çalıştırdığı komutların kronolojik listesi: `rcp`, `ls`, `clear`, `rpcinfo`, `nroff`, `sh`, `mv`, `col`, `man` komutları, kullanıcı, terminal (`ttyp0`, `ttyp2`), CPU süresi (örneğin `0.02 secs`) ve tarih-saat.
+- Uygulama düzeyi loglama ve kütüphaneler
+  - Ayrıcalıklı bir uygulamadaki zafiyet, girdi denetimi yapılmadığı için (SQL enjeksiyonu, arabellek taşması) sisteme hata yaptırıp uygulamanın yetkileriyle sisteme erişim sağlar. Bu davranış dosya sistemi erişiminin ötesinde olduğu için uygulama düzeyinde log gerekir. Araya yerleştirilebilir kütüphane yaklaşımında, uygulamanın çağırdığı paylaşılan kütüphane fonksiyonunun önüne aynı adlı bir fonksiyon yerleştirilir; bu fonksiyon logu alır ve asıl fonksiyonu çağırır. Kütüphane, programın sanal belleğine yüklenir. Dinamik ikili yeniden yazmada ise yürütülebilir dosyanın bellek görüntüsü yükleme anında değiştirilir; Linux'ta çekirdek modülü ve izleme cini bunu sağlar. <!-- BELİRSİZ: kütüphane araya yerleştirme şeklinin ve örnek fonksiyon kodunun slaytı karelerde yok -->
+- Analiz ve SIEM
+  - Denetim izleri olaydan sonra, periyodik olarak ya da saldırı tespit sisteminin parçası olarak gerçek zamanlı incelenir. En basit yaklaşım ilginç bir olayın gerçekleştiğini bildirmektir. Temel çizgi yaklaşımında olaylar normal kalıplarla karşılaştırılır; kalıp içi normal, kalıp dışı anormal sayılır ve belirli bir eşiği aşan veriler tanımlanır. En karmaşık yaklaşım korelasyondur: birbirinden bağımsız görünen olaylar arasındaki ilişkiyi bularak güvenlik analizi yapar. SIEM, farklı biçimdeki logları normalleştirip tek bir merkezde birleştiren, olayları ilişkilendiren, önceliklendiren ve yanıt başlatabilen gelişmiş bir yazılımdır.
+
+* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
