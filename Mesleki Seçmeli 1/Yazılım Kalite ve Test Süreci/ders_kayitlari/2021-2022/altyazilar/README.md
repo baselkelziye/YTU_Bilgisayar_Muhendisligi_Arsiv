@@ -2,7 +2,7 @@
 
 Bu klasör, 2021-2022 eğitim öğretim yılı Güz dönemindeki Yazılım Kalite ve Test Süreci (BLM4770 - 1. şube) ders kayıtlarının altyazılarını içerir.
 
-* **Dersi Veren Akademisyen:** Oya Kalıpsız
+* **Dersi Veren Akademisyen:** Prof. Dr. Oya Kalıpsız
 
 Kayıt arşivindeki ilk ders kaydı 31 Aralık 2021 Cuma gününe aittir. Dosya adlarındaki `ders_x.srt` ifadesinde `x`, ders haftasını değil, ilgili kaydın kayıt arşivindeki ders sıra numarasını gösterir. Tarihler YTÜ Video Ambarı kayıt tablosundan alınmıştır. Altyazılardaki öğrenci adları `[öğrenci]` ile maskelenmiştir.
 
