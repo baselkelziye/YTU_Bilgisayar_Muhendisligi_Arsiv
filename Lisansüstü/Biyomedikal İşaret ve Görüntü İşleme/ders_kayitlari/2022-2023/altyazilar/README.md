@@ -2,7 +2,7 @@
 
 Bu klasör, 2022-2023 eğitim öğretim yılı Güz dönemindeki Biyomedikal İşaret ve Görüntü İşleme (BLM5104 - 1. şube) ders kayıtlarının altyazılarını içerir.
 
-* **Dersi Veren Akademisyen:** Gökhan Bilgin
+* **Dersi Veren Akademisyen:** Prof. Dr. Gökhan Bilgin
 
 Kayıt arşivindeki ilk ders kaydı 15 Aralık 2022 Perşembe gününe aittir. Dosya adlarındaki `ders_x.srt` ifadesinde `x`, ders haftasını değil, ilgili kaydın kayıt arşivindeki ders sıra numarasını gösterir. Tarihler YTÜ Video Ambarı kayıt tablosundan alınmıştır. Altyazılardaki öğrenci adları `[öğrenci]` ile maskelenmiştir.
 
