@@ -2,7 +2,7 @@
 
 Bu klasör, 2023-2024 eğitim öğretim yılı Bahar dönemindeki Derin Öğrenme ve Yapay Sinir Ağları (BLM5135 - 1. şube) ders kayıtlarının altyazılarını içerir.
 
-* **Dersi Veren Akademisyen:** Hamza Osman İlhan
+* **Dersi Veren Akademisyen:** Doç. Dr. Hamza Osman İlhan
 
 Kayıt arşivindeki ilk ders kaydı 14 Mayıs 2024 Salı gününe aittir. Dosya adlarındaki `ders_x.srt` ifadesinde `x`, ders haftasını değil, ilgili kaydın kayıt arşivindeki ders sıra numarasını gösterir. Tarihler YTÜ Video Ambarı kayıt tablosundan alınmıştır. Altyazılardaki öğrenci adları `[öğrenci]` ile maskelenmiştir.
 
