@@ -2,7 +2,7 @@
 
 Bu klasör, 2021-2022 eğitim öğretim yılı Güz dönemindeki Alt Seviye Programlama (BLM2021 - 3. şube) ders kayıtlarının altyazılarını içerir.
 
-* **Dersi Veren Akademisyen:** Erkan Uslu
+* **Dersi Veren Akademisyen:** Dr. Öğr. Üyesi Erkan Uslu (vizeye kadar), Öğr. Gör. Furkan Çakmak (vizeden sonra)
 
 Kayıt arşivindeki ilk ders kaydı 14 Ekim 2021 Perşembe gününe aittir. Dosya adlarındaki `ders_x.srt` ifadesinde `x`, ders haftasını değil, ilgili kaydın kayıt arşivindeki ders sıra numarasını gösterir. Tarihler YTÜ Video Ambarı kayıt tablosundan alınmıştır. Altyazılardaki öğrenci adları `[öğrenci]` ile maskelenmiştir.
 
