@@ -2,7 +2,7 @@
 
 Bu klasör, 2022-2023 eğitim öğretim yılı Bahar dönemindeki Yazilim Proje Yönetimi (BLM5119 - 1. şube) ders kayıtlarının altyazılarını içerir.
 
-* **Dersi Veren Akademisyen:** Oya Kalıpsız
+* **Dersi Veren Akademisyen:** Prof. Dr. Oya Kalıpsız
 
 Kayıt arşivindeki ilk ders kaydı 28 Şubat 2023 Salı gününe aittir. Dosya adlarındaki `ders_x.srt` ifadesinde `x`, ders haftasını değil, ilgili kaydın kayıt arşivindeki ders sıra numarasını gösterir. Tarihler YTÜ Video Ambarı kayıt tablosundan alınmıştır. Altyazılardaki öğrenci adları `[öğrenci]` ile maskelenmiştir.
 
