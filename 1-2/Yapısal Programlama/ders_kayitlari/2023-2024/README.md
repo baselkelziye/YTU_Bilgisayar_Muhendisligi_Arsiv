@@ -4,5 +4,5 @@
 
 | Şube | Dönem | Hoca | Klasör |
 | :---: | :---: | :--- | :--- |
-| 1 | Bahar | Yunus Emre Selçuk | [sube_1/](sube_1/) |
+| 1 | Bahar | Dr. Öğr. Üyesi Yunus Emre Selçuk | [sube_1/](sube_1/) |
 | 3 | Güz | Yunus Emre Selçuk | [sube_3/](sube_3/) |
