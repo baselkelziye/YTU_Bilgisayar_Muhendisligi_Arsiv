@@ -2,7 +2,7 @@
 
 Bu klasör, 2021-2022 eğitim öğretim yılı Güz dönemindeki Bilgisayar Bilimlerine Giriş (BLM1011 - 3. şube) ders kayıtlarının altyazılarını içerir. Aynı yılın diğer şube ya da dönem kayıtları bir üst klasördedir (`../`).
 
-* **Dersi Veren Akademisyen:** Doç. Dr. M. Amaç Güvensan
+* **Dersi Veren Akademisyen:** Doç. Dr. M. Amaç Güvensan, Dr. Öğr. Üyesi Göksel Biricik
 
 Kayıt arşivindeki ilk ders kaydı 8 Ekim 2021 Cuma gününe aittir. Dosya adlarındaki `ders_x.srt` ifadesinde `x`, ders haftasını değil, ilgili kaydın kayıt arşivindeki ders sıra numarasını gösterir. Tarihler YTÜ Video Ambarı kayıt tablosundan alınmıştır. Altyazılardaki öğrenci adları `[öğrenci]` ile maskelenmiştir.
 
