@@ -1,27 +1,31 @@
-# Seminer Ders Kayıtları
+# Seminer Ders Kayıtları & Çalışma Özetleri
 
 > **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
 
 ### 📋 Genel Bilgiler
 * **Ders:** Seminer (BLM6001)
-* **Hoca:** Songül Varlı
+* **Hoca:** Prof. Dr. Songül Varlı
 * **Dönem:** Bahar
 * **Akademik Yıl:** 2020-2021
 * **Şube:** BLM6001 - 1
 
-Bu dizin, ilgili ders kayıtlarının altyazılarını (.srt) içermektedir. Notlar henüz yazılmamıştır.
+Bu dizin, ilgili ders kayıtlarının altyazılarını ve notu yazılmış dersler için kısa ve genişletilmiş notlarını içermektedir.
+
+* **Kısa not:** Tekrar için. Dersin konuları, hocanın vurguları ve kısa tekrar maddeleri.
+* **Genişletilmiş not:** Dersi izlemeden öğrenmek için. Dersin anlatım akışını baştan sona, örnekleri ve soru-cevaplarıyla anlatır.
+* `altyazilar/`: ders kayıtlarının altyazıları (.srt). Notların PDF'leri `kisa_notlar/` ve `genisletilmis_notlar/` klasörlerinde, markdown kaynakları bu klasörlerin içindeki `markdown/` klasöründedir.
 
 ## 📚 Ders Kayıtları Dizini
 
 Ders numaraları, kayıt arşivindeki ders kaydı sıra numaralarıdır (hafta numarası değildir). Notu olmayan dersler "—" ile gösterilmiştir.
 
-| Ders No | Tarih | Altyazı |
-| :---: | :---: | :---: |
-| **Ders 2** | 18 Mart 2021 Perşembe | [SRT](altyazilar/ders_2.srt) |
-| **Ders 3** | 25 Mart 2021 Perşembe | [SRT](altyazilar/ders_3.srt) |
-| **Ders 4** | 1 Nisan 2021 Perşembe | [SRT](altyazilar/ders_4.srt) |
-| **Ders 8** | 27 Mayıs 2021 Perşembe | [SRT](altyazilar/ders_8.srt) |
-| **Ders 9** | 3 Haziran 2021 Perşembe | [SRT](altyazilar/ders_9.srt) |
+| Ders No | Tarih | Ders İçeriği / Konu Başlıkları | Altyazı | Kısa Not | Genişletilmiş Not |
+| :---: | :---: | :--- | :---: | :---: | :---: |
+| **Ders 2** | 18 Mart 2021 Perşembe |  | [SRT](altyazilar/ders_2.srt) | [Markdown](kisa_notlar/markdown/ders_2_ozet.md) · [PDF](kisa_notlar/ders_2_ozet.pdf) | — |
+| **Ders 3** | 25 Mart 2021 Perşembe | Seminer Konusu, Literatür Erişimi ve Makale Yazımının Temelleri | [SRT](altyazilar/ders_3.srt) | [Markdown](kisa_notlar/markdown/ders_3_ozet.md) · [PDF](kisa_notlar/ders_3_ozet.pdf) | [Markdown](genisletilmis_notlar/markdown/ders_3_genisletilmis.md) · [PDF](genisletilmis_notlar/ders_3_genisletilmis.pdf) |
+| **Ders 4** | 1 Nisan 2021 Perşembe | Makale Hazırlama Teknikleri: Hakemlik, Yayın Etiği, Dergi Seçimi ve Bildiri Sunumu | [SRT](altyazilar/ders_4.srt) | [Markdown](kisa_notlar/markdown/ders_4_ozet.md) · [PDF](kisa_notlar/ders_4_ozet.pdf) | [Markdown](genisletilmis_notlar/markdown/ders_4_genisletilmis.md) · [PDF](genisletilmis_notlar/ders_4_genisletilmis.pdf) |
+| **Ders 8** | 27 Mayıs 2021 Perşembe | Seminer Sunumları: Hata Yüzeyi Analizi ve Tek Hücre RNA Dizileme | [SRT](altyazilar/ders_8.srt) | [Markdown](kisa_notlar/markdown/ders_8_ozet.md) · [PDF](kisa_notlar/ders_8_ozet.pdf) | [Markdown](genisletilmis_notlar/markdown/ders_8_genisletilmis.md) · [PDF](genisletilmis_notlar/ders_8_genisletilmis.pdf) |
+| **Ders 9** | 3 Haziran 2021 Perşembe | Öğrenci Seminer Sunumları: Öneri Sistemleri, Görüntü Manipülasyonu Tespiti ve Çekişmeli Üretici Ağlar | [SRT](altyazilar/ders_9.srt) | [Markdown](kisa_notlar/markdown/ders_9_ozet.md) · [PDF](kisa_notlar/ders_9_ozet.pdf) | [Markdown](genisletilmis_notlar/markdown/ders_9_genisletilmis.md) · [PDF](genisletilmis_notlar/ders_9_genisletilmis.pdf) |
 
 > [!NOTE]
 > 1 numaralı ders kaydı kayıt arşivinde bulunmamaktadır.
