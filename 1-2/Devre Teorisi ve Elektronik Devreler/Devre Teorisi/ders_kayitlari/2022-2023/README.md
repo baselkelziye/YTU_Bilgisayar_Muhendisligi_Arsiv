@@ -4,5 +4,5 @@
 
 | Şube | Dönem | Hoca | Klasör |
 | :---: | :---: | :--- | :--- |
-| 1 | Bahar | ERKAN USLU | [sube_1/](sube_1/) |
+| 1 | Bahar | Dr. Erkan Uslu | [sube_1/](sube_1/) |
 | 2 | Bahar | Hamza Osman İlhan | [sube_2/](sube_2/) |
